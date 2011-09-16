@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<HTML><HEAD>
+  <META NAME='author CONTENT='Laszlo Kiss'>
+  <META NAME='Resource-type' CONTENT='Document'>
+  <META NAME='description' CONTENT='Breviarium Romanum'>
+  <META NAME='keywords' CONTENT='Church tradition, Breviarium, Officium Divinum'>
+  <TITLE>Getstart Divinum Officium</TITLE>
+  <link rel='stylesheet' href='brevi.css' type='text/css'>
+</HEAD>
+<BODY BGCOLOR='#eeeeee' TEXT='#333333'><BR><BR>
+
+<CENTER><FONT SIZE=1>
+<A HREF='new.html'>[What is new]</A>&nbsp;&nbsp;&nbsp;
+<A HREF='credits.html'>[Credits]</A>&nbsp;&nbsp;&nbsp;
+<A HREF='Missing Offices.html'>[Missing offices]</A>&nbsp;&nbsp;&nbsp;
+<A HREF='download.html'>[Download]</A>&nbsp;&nbsp;&nbsp;
+<A HREF='versions.html'>[Versions]</A>&nbsp;&nbsp;&nbsp;
+</FONT></CENTER><BR><BR>
+
+<CENTER><TABLE WIDTH=90% BORDER=0 BGCOLOR='white' CELLSPACING=12><TR><TD>
+
+<H2 ALIGN=CENTER><FONT COLOR=MAROON>HTML generation getting started</FONT></H2>
+
+<FONT SIZE=1>This page describes the HTML generator version of Divinum Officium programlet<BR><BR>
+
+Click <A HREF="http://divinumofficium.com/www/horas/Help/download.html">here</A> to download the latest version with the databases.
+The downloaded file will be unzipped creating Hofficium folder, with officium.exe program
+Hhoras.ini file points to horas subfolder contaning the databases (text files editable
+by any text processor producing ASCII text files). officiumprog folder contains the full
+set of the simbol files, either to this and the other versions.<BR><BR>
+Click <A HREF="Deficiencies.txt"> here </A> for some known problems and deficiences. <BR>BR>
+Click <A HREF="Missing Offices.html" -target="_new">here</A> for the list of missing offices.<BR><BR>
+Please help.<BR><BR></FONT>
+
+The programlet may be started by 
+<UL>
+<LI>Hofficium.exe program using Windows operation system
+<LI>Hofficium.pl in windows system if perl 5.8x is installed, for chant variation
+<LI>LHofficium.pl in non windows systems, if perl 5.8x with Tk implement is installed
+<FONT SIZE=1><BR>The chant refences are omitted from this version.<BR>
+This version could be converted to exacutable by approriate program compatible 
+with t he give system</FONT>
+</UL>
+
+The programlet generates plain html files, into the 
+<PRE>
+$outdir/$year/$month-$day 
+</PRE>
+folder system, 8 files fo each folder 
+
+The programlet comes up with the page:<BR><BR>
+<CENTER><IMG SRC="Hmainpage.gif" ALT="main page"></CENTER><BR><BR>
+
+<UL>
+<LI> Click on the <B>option widgets</B> to select the appropriate variations for the generated files,<BR><BR>
+<LI>click on <B>Options</B> button to select some options and colors etc also for the generated files,
+and after clicking <I>Chant</I> tab to decide wether you want <I>wav</I> files for the
+psalms and for some hymns or not<BR><BR>
+<LI>enter the <B>from</B> and <B>to</B> inclusive dates and the <B>into</B> output folder 
+for the generated files<BR><BR>
+<LI>and finally click <B> Generate offices</B> button to perform the generation.
+</UL><BR>
+
+Maximum 366 folders may be generated at one time, the programlet could generate more than one year folders.<BR><BR>
+
+<B>Browse</B> command call windows explorer to be able to browse the generated files.<BR><BR>
+
+<B>Hints:</B><UL>
+<LI>You may select single language output by selecting the same language either as language 
+for the second column and in Option dialog table as language for the first column.<BR><BR>
+<LI>Set full white backround by setting framecolor to 'white', checking whitebackground
+box and setting border = 0;<BR>
+</UL>
+
+<BR><BR>
+<CENTER><span class=tadmn>T.A.D.M.N.</span><BR><BR>
+
+</TD></TR></TABLE></CENTER></BODY></HTML>
