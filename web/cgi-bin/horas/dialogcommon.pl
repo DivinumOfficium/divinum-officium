@@ -15,7 +15,7 @@ sub getini {
   if (open(INP, "$Bin/$file.ini")) {
     my @initfiles = <INP>;      
     close INP;
-    foreach (@initfiles) {eval($_);}    
+    foreach (@initfiles) { eval($_);}    
   }
 }
 

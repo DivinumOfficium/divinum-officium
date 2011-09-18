@@ -363,7 +363,7 @@ $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/credits.html" TARGET="_NEW">Credits</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="http://divinumofficium.com/www/horas/Help/download.html" TARGET="_NEW">Download</A>
+<A HREF=",,/www/horas/Help/download.html" TARGET="_NEW">Download</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/rubrics.html" TARGET="_NEW">Rubrics</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
@@ -371,7 +371,7 @@ $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
 </FONT>
 </P>
 <P ALIGN=CENTER><FONT SIZE=1>For Tridentine, 1955 or 1960 version 
-<A HREF="http://divinumofficium.com/cgi-bin/horas/officium.pl">click</A> here</FONT></P>
+<A HREF="officium.pl">click</A> here</FONT></P>
 PrintTag
 
   if ($building && $buildscript ) { 
