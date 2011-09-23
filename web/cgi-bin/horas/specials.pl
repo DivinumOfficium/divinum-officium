@@ -28,7 +28,6 @@ sub specials {
   my $i = ($hora =~ /laudes/i) ? ' 2' : ($hora =~ /vespera/i) ? " $vespera" : '';
   if (exists($w{"Special $hora$i"})) {return loadspecial($w{"Special $hora$i"});}
 
-
   our @s = @$s;
   @t = splice(@t, @t);	 
   foreach (@s) {push (@t, $_);}
@@ -929,63 +928,67 @@ sub antetpsalm {
 #*** oration($lang)
 #input language
 # collects and prints the appropriate oratio and commemorationes
-sub oratio {
-  my $lang = shift;	
-  my $month= shift;
-  my $day = shift; 
-  
-  our $addconclusio = '';
+sub oratio
+{
+    my $lang = shift;	
+    my $month= shift;
+    my $day = shift; 
+
+    our $addconclusio = '';
                      
-  my %w = (columnsel($lang)) ? %winner : %winner2;
-  $comment = ($winner =~ /sancti/i) ? 3 : 2;
-  setcomment($label, 'Source', $comment, $lang);        
+    my %w = (columnsel($lang)) ? %winner : %winner2;
+    $comment = ($winner =~ /sancti/i) ? 3 : 2;
+    setcomment($label, 'Source', $comment, $lang);        
 
-  $ind = ($hora =~ /vespera/i) ? $vespera : 2; 	
-  
-  if ($scriptura =~ /Epi1/i && !exists($winner{Oratio}) && 
+    $ind = ($hora =~ /vespera/i) ? $vespera : 2; 	
+
+    if ($scriptura =~ /Epi1/i && !exists($winner{Oratio}) && 
     ($version =~ /(monastic|1960)/i || $day > 13)) {$rule .= 'Oratio Dominica';}   
- 
-  if (($rule =~ /Oratio Dominica/i && (!exists($w{Oratio}) || $hora =~ /Vespera/i)) ||
-      ($winner{Rank} =~ /Quattuor/i && $version !~ /1960/i && $hora =~ /Vespera/i)) { 
-	my $name = "$dayname[0]-0"; 
-    if ($name =~ /(Epi1|Nat)/i) {$name = 'Epi1-0a';}
-	%w = %{setupstring("$datafolder/$lang/$temporaname/$name.txt")};    
-  }
 
-  if ($dayofweek > 0 && exists($w{"OratioW"}) && $rank < 5) {$w = $w{"OratioW"};}
-  else {$w = $w{"Oratio"};} 
-  if ($hora =~ /Matutinum/i && exists($w{'Oratio Matutinum'})) {$w = $w{'Oratio Matutinum'};}
-  if (!$w) {$w = $w{"Oratio $ind"};} 
-  if (!$w) {
-    my %c = (columnsel($lang)) ? %commune : %commune2;
-	my $i = $ind;
-	$w = $c{"Oratio $i"};
-	if (!$w) {$i = 4- $i; $w = $c{"Oratio $i"};}
-	if (!$w) {$w = $c{Oratio};}
-  }
+    if (($rule =~ /Oratio Dominica/i && (!exists($w{Oratio}) || $hora =~ /Vespera/i)) ||
+      ($winner{Rank} =~ /Quattuor/i && $version !~ /1960/i && $hora =~ /Vespera/i))
+    { 
+        my $name = "$dayname[0]-0"; 
+        if ($name =~ /(Epi1|Nat)/i) {$name = 'Epi1-0a';}
+        %w = %{setupstring("$datafolder/$lang/$temporaname/$name.txt")};    
+    }
 
-  if ($hora !~ /Matutinum/i) {setbuild($winner, "Oratio $ind", 'Oratio ord');}
-  my $i = $ind;
-  if (!$w) {
-    if ($i == 2) {$i = 3; $w = $w{"Oratio $i"};}
-    else {$w = $w{'Oratio 2'};} 
-  	if (!$w) {$i = 4 - $i; $w = $w{"Oratio $i"};}
-    if ($w && $hora !~ /Matutinum/i) {setbuild($winner, "Oratio $i", 'try');}
-  }
-   
-  if ($version !~ /Trident/i && $w{Rule} =~ /OPapa([CM])=(.*?)\;/i) {
+    if ($dayofweek > 0 && exists($w{"OratioW"}) && $rank < 5) {$w = $w{"OratioW"};}
+    else {$w = $w{"Oratio"};} 
+    if ($hora =~ /Matutinum/i && exists($w{'Oratio Matutinum'})) {$w = $w{'Oratio Matutinum'};}
+    if (!$w) {$w = $w{"Oratio $ind"};} 
+    if (!$w)
+    {
+        my %c = (columnsel($lang)) ? %commune : %commune2;
+        my $i = $ind;
+        $w = $c{"Oratio $i"};
+        if (!$w) {$i = 4- $i; $w = $c{"Oratio $i"};}
+        if (!$w) {$w = $c{Oratio};}
+    }
+
+    if ($hora !~ /Matutinum/i) {setbuild($winner, "Oratio $ind", 'Oratio ord');}
+    my $i = $ind;
+    if (!$w)
+    {
+        if ($i == 2) {$i = 3; $w = $w{"Oratio $i"};}
+        else {$w = $w{'Oratio 2'};} 
+        if (!$w) {$i = 4 - $i; $w = $w{"Oratio $i"};}
+        if ($w && $hora !~ /Matutinum/i) {setbuild($winner, "Oratio $i", 'try');}
+    }
+
+    if ($version !~ /Trident/i && $w{Rule} =~ /OPapa([CM])=(.*?)\;/i) {
     my $martyr = $1;
-	my $name = $2;
-	my %c = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	my $num = ($name =~ /( et |and|és)/i) ? 91 : 9;
-	$w = $c{"Oratio$num"};	  
-	$w =~ s/ N\.([a-z ]+N\.)*/ $name/;
+    my $name = $2;
+    my %c = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
+    my $num = ($name =~ /( et |and|és)/i) ? 91 : 9;
+    $w = $c{"Oratio$num"};	  
+    $w =~ s/ N\.([a-z ]+N\.)*/ $name/;
     if ($martyr !~ /M/i) {$w =~ s/\(.*?\)//;}
-	else {$w =~ s/[\(\)]//g;} 
-	if ($w && $hora !~ /Matutinum/i) {setbuild2("Oratio Gregem tuum");}
-  }
-  	 		 
-  if (!$w && $commune) { 
+    else {$w =~ s/[\(\)]//g;} 
+    if ($w && $hora !~ /Matutinum/i) {setbuild2("Oratio Gregem tuum");}
+    }
+             
+    if (!$w && $commune) { 
     my %com = (columnsel($lang)) ? %commune : %commune2;    
     my $ti = '';
     $w = $com{"Oratio"};
@@ -994,122 +997,123 @@ sub oratio {
       $w = $com{"Oratio $ind"};
     }
     if ($w && $hora !~ /Matutinum/i) {setbuild2("$commune Oratio$ti");}
- }
+    }
                                 
-  if ($winner =~ /tempora/i && !$w) {   
-     my $name = "$dayname[0]-0";	
-	   %w = %{officestring("$datafolder/$lang/$temporaname/$name.txt")};   
-     $w = $w{Oratio};
-     if (!$w) {$w = $w{'Oratio 2'};}
-     if ($w) {setbuild2("Oratio Dominica");}
-  }
+    if ($winner =~ /tempora/i && !$w)
+    {   
+        my $name = "$dayname[0]-0";	
+        %w = %{officestring("$datafolder/$lang/$temporaname/$name.txt")};   
+        $w = $w{Oratio};
+        if (!$w) {$w = $w{'Oratio 2'};}
+        if ($w) {setbuild2("Oratio Dominica");}
+    }
 
-  #sub unica concl
-  if ($version =~ /1960/ && $rule =~ /sub unica conc/i && $hora =~ /(laudes|vespera)/i) 
+    #sub unica concl
+    if ($version =~ /1960/ && $rule =~ /sub unica conc/i && $hora =~ /(laudes|vespera)/i) 
     {$w =~ s/Commemoratio4/Commemoratio4r/;} 
-  $w = getreference($w, $lang);	 
+    $w = getreference($w, $lang);	 
 
-  #* deletes added commemoratio
-  if (($w =~ /!commemoratio/i && $hora !~ /(laudes|vespera)/i) ||
+    #* deletes added commemoratio
+    if (($w =~ /!commemoratio/i && $hora !~ /(laudes|vespera)/i) ||
     ($hora =~ /laudes/i && $w =~ /!commemoratio/i && $w =~ /(precedenti|sequenti)/i)) {
     $w = $`; 
     $w =~ s/\s*_$\s*//;  
-  }
-  
-  if (!$w) {$w = 'Oratio missing';}
+    }
+
+    if (!$w) {$w = 'Oratio missing';}
                       
-  #* limit oratio
-  if ($rule !~ /Limit.*?Oratio/i) { 
-   if ($priest) {push (@s, "&Dominus_vobiscum");}
-   elsif (!$precesferiales) {push (@s, "&Dominus_vobiscum");}
-   else {   
+    #* limit oratio
+    if ($rule !~ /Limit.*?Oratio/i) { 
+    if ($priest) {push (@s, "&Dominus_vobiscum");}
+    elsif (!$precesferiales) {push (@s, "&Dominus_vobiscum");}
+    else {   
      my %prayer =%{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
      my $text = $prayer{'Dominus'};
      my @text = split("\n", $text);
      push (@s, $text[4]);
      $precesferiales = 0;
-   }          
-   my $oremus = ($lang =~ /Latin/) ? 'Oremus' : translate('Oremus');
-   push (@s, "v. $oremus");
-  }
-  if (($version =~ /1960/ || "$month$day" =~ /1102/) && $w =~ /\&psalm\([0-9]+\)\s*\_\s*/i) 
+    }          
+    my $oremus = ($lang =~ /Latin/) ? 'Oremus' : translate('Oremus');
+    push (@s, "v. $oremus");
+    }
+    if (($version =~ /1960/ || "$month$day" =~ /1102/) && $w =~ /\&psalm\([0-9]+\)\s*\_\s*/i) 
     {$w = "$`\_\n$'";} #triduum 1960  not 1955
 
-  if ($hora =~ /(Laudes|Vespera)/i && $winner{Rule} =~ /Sub unica conc/i) {
+    if ($hora =~ /(Laudes|Vespera)/i && $winner{Rule} =~ /Sub unica conc/i) {
     if ($version !~ /1960/) {
       if ($w =~ /\n\$Per .*?\s*$/) {$addconclusio = $&; $w = $`;}
       if ($w =~ /\n\$Qui .*?\s*$/) {$addconclusio = $&; $w = $`;}
     } else {$w =~ s/\$(Per|Qui) .*?\n//;}
-  }
+    }
 
-  push (@s, $w);
-  if ($rule =~ /omit .*? commemoratio/i) {return;}
-   
-  #*** SET COMMEMORATIONS
-  our %cc = undef;
-  our $ccind = 0;
-  our $octavcount = 0;
+    push (@s, $w);
+    if ($rule =~ /omit .*? commemoratio/i) {return;}
+
+    #*** SET COMMEMORATIONS
+    our %cc = undef;
+    our $ccind = 0;
+    our $octavcount = 0;
 
 
-  #* add commemorated office from Sancti
-  if ($hora =~ /(laudes|vespera)/i && $commemoratio1 && 
+    #* add commemorated office from Sancti
+    if ($hora =~ /(laudes|vespera)/i && $commemoratio1 && 
     ($hora =~ /laudes/i || $version !~ /1960/ || $rank < 6 || $commemoratio1{Rank} =~ /Dominica|;;6/i ||
-	  ($commemoratio1 =~ /Tempora/i && $commemoratio1{Rank} =~ /;;[23]/))) { 
+      ($commemoratio1 =~ /Tempora/i && $commemoratio1{Rank} =~ /;;[23]/))) { 
     $i = getind($commemoratio1, ($hora =~ /laudes/i) ? 2 : 3, $day); 
-	$w = getcommemoratio($commemoratio1, $i, $lang); 
-	my $num = concurrent_office($commemoratio1, 1, $day); 
-	if ($w) {setcc($w, $num, setupstring("$datafolder/$lang/$commemoratio1"));}
-  }
+    $w = getcommemoratio($commemoratio1, $i, $lang); 
+    my $num = concurrent_office($commemoratio1, 1, $day); 
+    if ($w) {setcc($w, $num, setupstring("$datafolder/$lang/$commemoratio1"));}
+    }
 
-  if ($hora =~ /(laudes|vespera)/i && $commemoratio && ($hora =~ /laudes/i || 
+    if ($hora =~ /(laudes|vespera)/i && $commemoratio && ($hora =~ /laudes/i || 
       $version !~ /1960/ || $rank < 6 || $commemoratio{Rank} =~ /(Dominica|;;6)/i ||
-	  ($commemoratio =~ /Tempora/i && $commemoratio{Rank} =~ /;;[23]/))) { 
+      ($commemoratio =~ /Tempora/i && $commemoratio{Rank} =~ /;;[23]/))) { 
     $i = getind($commemoratio, ($hora =~ /laudes/i) ? 2 : $cvespera, $day); 
-	if ($i == 0) {$i = 1;} #Christ the King on 10-31
-	$w = getcommemoratio($commemoratio, $i, $lang);  
-	my $num = concurrent_office($commemoratio, 2, $day);
+    if ($i == 0) {$i = 1;} #Christ the King on 10-31
+    $w = getcommemoratio($commemoratio, $i, $lang);  
+    my $num = concurrent_office($commemoratio, 2, $day);
     if ($w) {setcc($w, $num, setupstring("$datafolder/$lang/$commemoratio"));}
-  } 
-  
-  #transfervigil
-  if ($hora =~ /Laudes/i && $transfervigil ) { 
+    } 
+
+    #transfervigil
+    if ($hora =~ /Laudes/i && $transfervigil ) { 
     if (!(-e "$datafolder/$lang/$transfervigil")) {$transfervigil =~ s/v\.txt/\.txt/;}
     $w = vigilia_commemoratio($transfervigil, $lang); 
     if ($w) {setcc($w, 3, setupstring("$datafolder/$lang/$transfervigil"));}
-  }	                                              
-  
-  #add commemoratio in winner for lauds or first vespers
-	my $ci = $ind;     
+    }	                                              
+
+    #add commemoratio in winner for lauds or first vespers
+    my $ci = $ind;     
 
 
-  if ($hora =~ /laudes/i || ($version !~ /1960/ && ($vespera == 1 || $winner =~ /tempora/i)  || 
+    if ($hora =~ /laudes/i || ($version !~ /1960/ && ($vespera == 1 || $winner =~ /tempora/i)  || 
     exists($winner{'Commemoratio 3'})))  {commemoratio('winner', $ci, $lang); }
 
-  #commemoratio from commemorated office
-	if ($hora =~ /vespera/i) {$ci = 4-$ind;}   
+    #commemoratio from commemorated office
+    if ($hora =~ /vespera/i) {$ci = 4-$ind;}   
 
-  if ($commemoratio && ($version !~ /1960/ && $hora =~ /vespera/i && ($cvespera == 1 || $commemoratio =~ /Tempora/i) || 
-	    $hora =~ /laudes/i)) 
+    if ($commemoratio && ($version !~ /1960/ && $hora =~ /vespera/i && ($cvespera == 1 || $commemoratio =~ /Tempora/i) || 
+        $hora =~ /laudes/i)) 
       {commemoratio('commemoratio', $ci, $lang);}
     if ($commemoratio1 && (($version !~ /1960/ && $hora =~ /vespera/i && $vespera == 3) || 
-	    $hora =~ /laudes/i)) {commemoratio('commemoratio1', $ci, $lang);}   
+        $hora =~ /laudes/i)) {commemoratio('commemoratio1', $ci, $lang);}   
     if ($commemorated && $version !~ /1960/) 
       {commemoratio('commemorated', ($hora =~ /Laudes/i) ? 2 : 1, $lang);}
 
-  if ($dayofweek != 0 && exists($commemoratio{'Oratio Vigilia'}) && $hora =~ /Laudes/i) {
+    if ($dayofweek != 0 && exists($commemoratio{'Oratio Vigilia'}) && $hora =~ /Laudes/i) {
     $w = vigilia_commemoratio($commemoratio, $lang);
     if ($w) {setcc($w, 3, setupstring("$datafolder/$lang/$commemoratio"));}
-  }	                                              
+    }	                                              
 
-  my $key;
-  if ($ordostatus =~ /Ordo/i) { return %cc;}
-  foreach $key (sort keys %cc) { 
+    my $key;
+    if ($ordostatus =~ /Ordo/i) { return %cc;}
+    foreach $key (sort keys %cc) { 
     if (length($s[-1]) > 3) {push(@s, '_');} 
     if ($key >= 900) {push (@s, delconclusio($cc{$key}));  }
-  }   
+    }   
 
-  
-  if ((!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i || $version =~ /(1960|monastic)/i)
+
+    if ((!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i || $version =~ /(1960|monastic)/i)
     && $addconclusio ) {push(@s, $addconclusio); }
 
 }

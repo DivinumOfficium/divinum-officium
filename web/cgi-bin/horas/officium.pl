@@ -183,7 +183,6 @@ $setupsave = printhash(\%setup, 1);
 $setupsave =~ s/\r*\n*//g;
 $setupsave =~ s/\"/\~24/g;	  
 
-
 precedence(); #fills our hashes et variables  
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;                           
@@ -232,7 +231,6 @@ my @local = splice(@local, @local);
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="startup();"> 
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
-
 if ($command =~ /setup/i) {	  
   $pmode = 'setup';
   $command = $';

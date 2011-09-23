@@ -12,74 +12,84 @@ $a = 1;
 # then break the text into units (separated by double newline)
 # resolves the references (formatting characters, prayers hash references and subs) 
 #and prints the result
-sub horas {
-  $command = shift;
-  $hora = $command;	
+sub horas
+{
+    $command = shift;
+    $hora = $command;	
 
-our $canticum = 0;
-our $reciteindex = 0;
-our $recitelimit = 0;
-                   
-$tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;    
-%translate = %{setupstring("$datafolder/$tlang/Psalterium/Translate.txt")}; 
+    our $canticum = 0;
+    our $reciteindex = 0;
+    our $recitelimit = 0;
+                       
+    $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;    
+    %translate = %{setupstring("$datafolder/$tlang/Psalterium/Translate.txt")}; 
 
-%chant = %{setupstring("$datafolder/Latin/Psalterium/Chant.txt")};
+    %chant = %{setupstring("$datafolder/Latin/Psalterium/Chant.txt")};
 
-$column = 1;
-if ($Ck) {$version = $version1; setmdir($version); precedence();}
-@script1 = getordinarium($lang1, $command);
-@script1 = specials(\@script1, $lang1);	
-$column = 2;
-if ($Ck) {$version = $version2; setmdir($version); precedence();}
-@script2 = getordinarium($lang2, $command);	  
-@script2 = specials(\@script2, $lang2);  
+    $column = 1;
+    if ($Ck) {$version = $version1; setmdir($version); precedence();}
+    @script1 = getordinarium($lang1, $command);
+    @script1 = specials(\@script1, $lang1);	
 
-$expandind = 0;
-if (!$Tk && !$Hk) {$expandnum = strictparam('expandnum');}
+    $column = 2;
+    if ($Ck) {$version = $version2; setmdir($version); precedence();}
+    @script2 = getordinarium($lang2, $command);	  
+    @script2 = specials(\@script2, $lang2);  
 
-table_start();
+    $expandind = 0;
+    if (!$Tk && !$Hk) {$expandnum = strictparam('expandnum');}
 
-$ind1 = $ind2 = 0;
-$searchind = 0;
+    table_start();
 
-if ($version !~ /(Monastic|1570|1955|1960)/i) {ante_post('Ante');}
-else {$searchind++;}
+    $ind1 = $ind2 = 0;
+    $searchind = 0;
 
-while ($ind1 < @script1 || $ind2 < @script2) {
-  $expandind++;
-  ($text1, $ind1) = getunit(\@script1, $ind1);
-  ($text2, $ind2) = getunit(\@script2, $ind2); 
-  
+    if ($version !~ /(Monastic|1570|1955|1960)/i) {ante_post('Ante');}
+    else {$searchind++;}
 
-  $column = 1;
-  if ($Ck) {$version = $version1;}
-  $text1 =  resolve_refs($text1, $lang1);  
-  if ($dayname[0] =~ /Quad/i && !Septuagesima_vesp()) {$text1 =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;} 
-    
-  $text1 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;  
+    while ($ind1 < @script1 || $ind2 < @script2)
+    {
+        $expandind++;
+        ($text1, $ind1) = getunit(\@script1, $ind1);
+        ($text2, $ind2) = getunit(\@script2, $ind2); 
 
-  if ($lang1 =~ /Latin/i) {$text1 = jtoi($text1);}
-  if ($text1  && $text1 !~ /^\s+$/) {setcell($text1, $lang1);} 
- 
-   
-  if (!$only) {
-    $column = 2;        
-    if ($Ck) {$version = $version2;}
-    $text2 = resolve_refs($text2, $lang2);    
-    if ($dayname[0] =~ /Quad/i && !Septuagesima_vesp()) {$text2 =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;} 
+        $column = 1;
+        $version = $version1 if $Ck;
+        $text1 =  resolve_refs($text1, $lang1);  
 
- 	$text2 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
-    if ($lang2 =~ /Latin/i) {$text2 = jtoi($text2);}
-    if ($text2  && $text2 !~ /^\s+$/) {setcell($text2, $lang2);}  
- }
-}
+        # Suppress (Alleluia) during Quadrigesima.
+        if ( $dayname[0] =~ /Quad/i && !Septuagesima_vesp() )
+        {
+            $text1 =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;
+        } 
 
-if ($version !~ /(Monastic|1570|1955|1960)/) {ante_post('Post');}
-else {$searchind++;}
+        $text1 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;  
 
-table_end();
+        if ($lang1 =~ /Latin/i) {$text1 = jtoi($text1);}
+        if ($text1  && $text1 !~ /^\s+$/) {setcell($text1, $lang1);} 
 
-if ($column == 1) {$searchind++;}
+        if (!$only)
+        {
+            $column = 2;        
+            if ($Ck) {$version = $version2;}
+            $text2 = resolve_refs($text2, $lang2);    
+            if ($dayname[0] =~ /Quad/i && !Septuagesima_vesp())
+            {
+                $text2 =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;
+            } 
+
+            $text2 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
+            if ($lang2 =~ /Latin/i) {$text2 = jtoi($text2);}
+            if ($text2  && $text2 !~ /^\s+$/) {setcell($text2, $lang2);}  
+        }
+    }
+
+    if ($version !~ /(Monastic|1570|1955|1960)/) {ante_post('Post');}
+    else {$searchind++;}
+
+    table_end();
+
+    if ($column == 1) {$searchind++;}
 }
 
 
@@ -115,7 +125,6 @@ sub resolve_refs {
   my $lang = shift;	 
   my @t = split("\n", $t); 	
 
-					 
   my $t = '';	
 				
   #handles expanding for skeleton
@@ -793,7 +802,7 @@ sub ant_Benedictus {
 }
 
 #*** ant_Magnificat($num, $lang)
-# returns the antiforn for $num=1 the beginning, or =2 for the end
+# returns the antiphon for $num=1 the beginning, or =2 for the end
 sub ant_Magnificat {     
   my $num = shift;   #1=before, 2=after
   my $lang = shift;
@@ -1009,7 +1018,7 @@ sub special {
 
 
 #*** getordinarium($lanf, $command)
-# returns the full pathname of ordinarium for the language and hora
+# returns the ordinarium for the language and hora
 sub getordinarium {
   my $lang = shift;
   my $command = shift;
