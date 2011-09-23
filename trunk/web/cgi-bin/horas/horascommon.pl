@@ -495,6 +495,7 @@ sub getrank {
 
   my @cr = split(';;', $csaint{Rank});         
 
+  # In Festo Sanctae Mariae Sabbato according to the rubrics.
   if ($version !~ /monastic/i && $dayname[0] !~ /(Adv|Quad[0-6])/i && $dayname[0] !~ /Quadp3/i && 
       $testmode !~ /^season$/i) { 
     if ($dayofweek == 6 && $srank !~ /(Vigil|in Octav)/i && $trank[2] < 2 && $srank[2] < 2 && !$transfervigil) { 
@@ -654,12 +655,14 @@ sub getrank {
 	 my $climit1960 = climit1960($sname);  
 	 if ($w{Rule} !~ /omit.*? commemoratio/i && $climit1960  && ($w{Rule} !~ /No commemoratio/i || 
 	   ($svesp == 1 && $hora =~ /vespera/i))) { 
-	   $laudesonly = ($missa) ? '' : ($climit1960 > 1) ? ' Laudes only' : '';
+	   $laudesonly = ($missa) ? '' : ($climit1960 > 1) ? ' ad Laudes tantum' : '';
 	     #(nomatinscomm(\%w)) ? ' Laudes, Vesperas' : '';  
 	   if ($srank[0] =~ /vigil/i && $srank[0] !~ /Epiph/i) {
-	     $laudesonly = ($dayname[0] =~ /(Adv|Quad[0-6])/i) ? ' Mass only' : ' Laudes only';
+	     $laudesonly = ($dayname[0] =~ /(Adv|Quad[0-6])/i) ? ' ad Missam tantum' : ' ad Laudes tantum';
        } 
-	   if ($srank[0]) {$dayname[2] = "Commemoratio$laudesonly: $srank[0]";}
+       # Don't say "Commemoratio in Commemoratione"
+       my $comm = $srank[0] =~ /^In Commemoratione/ ? '' : 'Commemoratio';
+	   if ($srank[0]) {$dayname[2] = "$comm$laudesonly: $srank[0]";}
        if ($version =~ /(monastic|1960)/i && $dayname[2] =~ /Januarii/i) {$dayname[2] = '';}
 	   if (($climit1960 > 1 && ($hora =~ /laudes/i || $missa)) || $climit1960 < 2) {
          $commemoratio = $sname;    
@@ -667,8 +670,6 @@ sub getrank {
          $comrank = $srank[2]; 
          if (($version !~ /1960/ && $crank[2]) || ($crank[2] >= 3 || ($trank[2] == 5 && $crank[2] >= 2)))
 		   {$commemoratio1 = $cname;} 
-
-
        } 
 
 	 } else {
@@ -967,29 +968,50 @@ sub precedence {
     }
     $dayname[1] = $winner{Name}; $dayname[2] = ''; 
   }	  
-  if (!$missa && $winner =~ /C10/) {
-	  if ($month < 2 || ($month == 2 && $day < 3)) {    
-	    $winner{'Ant 1'} = $winner{'Ant 11'};
-		$winner{'Ant 2'} = $winner{'Ant 21'};
-	    $winner2{'Ant 1'} = $winner2{'Ant 11'};
-		$winner2{'Ant 2'} = $winner2{'Ant 21'};
-		$winner{'Oratio'} = $winner{'Oratio 21'};
-	  } elsif ($dayname[0] =~ /Pasc/i) {
-	    $winner{'Ant 1'} = $winner{'Ant 13'};
-		$winner{'Ant 2'} = $winner{'Ant 23'};
-	    $winner2{'Ant 1'} = $winner2{'Ant 13'};
-		$winner2{'Ant 2'} = $winner2{'Ant 23'};
-	  } elsif ($version !~ /1960/ && $month == 9 && $day > 8 && $day < 15) {
-	    my %s = %{setupstring("$datafolder/$lang1/Sancti/09-08.txt")};
-	    my %s2 = %{setupstring("$datafolder/$lang2/Sancti/09-08.txt")};
-		my $key;
-		foreach $key (%s) {
-		  if ($key =~ /(Rank|Name|Rule|Lectio|Benedictio|Ant Matutinum)/i) {next;}
-		  $winner{$key} = $s{$key};
-		  $winner2{$key} = $s2{$key};
+    if (!$missa && $winner =~ /C10/)
+    {
+        if ($month < 2 || ($month == 2 && $day < 3))
+        {    
+            $winner{'Ant 1'} = $winner{'Ant 11'};
+            $winner{'Ant 2'} = $winner{'Ant 21'};
+            $winner2{'Ant 1'} = $winner2{'Ant 11'};
+            $winner2{'Ant 2'} = $winner2{'Ant 21'};
+            $winner{'Oratio'} = $winner{'Oratio 21'};
         }
-      }
-  }
+        elsif ($dayname[0] =~ /Pasc/i)
+        {
+            $winner{'Ant 1'} = $winner{'Ant 13'};
+            $winner{'Ant 2'} = $winner{'Ant 23'};
+            $winner2{'Ant 1'} = $winner2{'Ant 13'};
+            $winner2{'Ant 2'} = $winner2{'Ant 23'};
+        }
+        elsif ( $version !~ /1960/ && $month == 9 && $day > 8 && $day < 15 )
+        {
+            my %s = %{setupstring("$datafolder/$lang1/Sancti/09-08.txt")};
+            my %s2 = %{setupstring("$datafolder/$lang2/Sancti/09-08.txt")};
+            my $key;
+            foreach $key (%s)
+            {
+            if ($key =~ /(Rank|Name|Rule|Lectio|Benedictio|Ant Matutinum)/i) {next;}
+            $winner{$key} = $s{$key};
+            $winner2{$key} = $s2{$key};
+            }
+        }
+
+        # 7/16 version=1960 : partially excepted by BVM de Monte Carmelo   (#5)
+        elsif ( $version =~ /1960/ && $month == 7 && $day == 16 )
+        {
+            my %s = %{setupstring("$datafolder/$lang1/Sancti/07-16.txt")};
+            my %s2 = %{setupstring("$datafolder/$lang2/Sancti/07-16.txt")};
+            my $key;
+            foreach $key (%s)
+            {
+                next unless $key =~ /(Oratio|Ant 2)/i;
+                $winner{$key} = $s{$key};
+                $winner2{$key} = $s2{$key};
+            }
+        }
+    }
  
   if ($vtv && $missa) { 
 	
@@ -1169,8 +1191,11 @@ sub transfered {
 # returns 1 if commemoratio is allowed for 1960 rules
 sub climit1960 {
   my $c = shift;            
+  print STDERR ">>> climit1960($c) {\$version=$version, \$winner=$winner, \$hora=$hora \$rank=$rank}\n";
   if (!$c) {return 0;}
   if ($version !~ /1960/ || $c !~ /sancti/i) {return 1;}
+  # Subsume commemoration in special case 7-16 with Common 10 (BVM in Sabbato)
+  return 0 if $c =~ /7-16/ && $winner =~ /C10/;
   my %w = updaterank(setupstring("$datafolder/Latin/$winner"));
   if ($winner !~ /tempora/i) {return 1;}
   my %c = updaterank(setupstring("$datafolder/Latin/$c"));
