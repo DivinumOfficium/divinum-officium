@@ -231,6 +231,7 @@ my @local = splice(@local, @local);
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="startup();"> 
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
+
 if ($command =~ /setup/i) {	  
   $pmode = 'setup';
   $command = $';
