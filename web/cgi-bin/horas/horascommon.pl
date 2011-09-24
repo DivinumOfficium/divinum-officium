@@ -1191,7 +1191,6 @@ sub transfered {
 # returns 1 if commemoratio is allowed for 1960 rules
 sub climit1960 {
   my $c = shift;            
-  print STDERR ">>> climit1960($c) {\$version=$version, \$winner=$winner, \$hora=$hora \$rank=$rank}\n";
   if (!$c) {return 0;}
   if ($version !~ /1960/ || $c !~ /sancti/i) {return 1;}
   # Subsume commemoration in special case 7-16 with Common 10 (BVM in Sabbato)
