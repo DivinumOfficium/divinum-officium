@@ -9,25 +9,22 @@ use FindBin;
 my $verbose = 1;
 my $trial = 1;
 my $log = "$FindBin::Bin/log";
-my $source = 'https://divinum-officium.googlecode.com/svn/tags';
+my $source = 'https://divinum-officium.googlecode.com/svn/tags/web';
 my $target = '/home1/lzkissne/public_html/divinumofficium';
+my $tag = '';
 my $help = 0;
+
+my $debug = defined $ENV{DEBUG};
 
 sub saydo($)
 {
     my $command = shift;
+    print STDERR "DEBUG: saydo('$command')" if $debug;
+
     print STDERR $command if $verbose;
-    unless ( $trial )
-    {
-        if ( $ENV{DEBUG} )
-        {
-            print STDERR "DEBUG: would $command"
-        }
-        else
-        {
-            system $command unless $trial;
-        }
-    }
+
+    system $command unless $trial;
+    die "fatal: failed $command.\n" unless $? == 0;
 }
 
 sub main()
@@ -35,8 +32,10 @@ sub main()
     # Process command line
 
     my $USAGE = <<END;
-Usage: release_web [options]
+Usage: release_web [options] tag
 Release divinumofficium project from svn to live web site.
+Parameters:
+    tag             tag to install from
 Options:
     --log=path      pathname of log history file (default $log)
     --source=url    url of source tag directory(default $source)
@@ -51,8 +50,10 @@ END
         'trial!' => \$trial,
         'log=s' => \$log,
         'source=s' => \$source,
-        'target=s' => \$target
+        'target=s' => \$target,
         'help' => \$help,
+        'tag=s' => \$tag,
+        'debug' => \$debug,
     ) or eval 
     {
         print STDERR $USAGE;
@@ -65,17 +66,28 @@ END
         exit 0;
     }
 
-    print "This is release_web for divinumofficium.com.";
-    printf 'Options: %sverbose, %strial'."\n\n",
+    unless ( @ARGV == 1 )
+    {
+        print STDERR "error: specify exactly one tag.";
+        print STDERR $USAGE;
+        exit -2;
+    }
+
+    print "This is the release installer for the Divinum Officium Project.";
+    printf 'Options chosen: %sverbose, %strial'."\n\n",
         $verbose ? "" : "no",
         $trial ? "" : "no";
 
-    # Get previous log file
+    die "error: cannot find directory $target\n" unless -d $target;
+    print "info: installing to : $target";
 
+    $tag = $ARGV[0];
+
+    # Read log file
     my $log_data;
     if ( -f $log )
     {
-        open LOG, "<$log" or die "**Error: cannot read log file $log\n";
+        open LOG, "<$log" or die "error: cannot read log file $log\n";
         { local $/; $log_data = <LOG> } # slurp
         close LOG;
     }
@@ -83,25 +95,32 @@ END
     {
         $log_data = '';
     }
-    open LOG, ">>$log" or die "**Error: cannot write log file $log\n";
+    open LOG, ">>$log" or die "error: cannot write log file $log\n";
 
     # Check sanity
-    my @previous = ($log_data =~ /INSTALLED VERSION (.*)/g);
-    die "**Error: cannot determine currently installed version\n" unless @previous;
+    my @previous = ($log_data =~ /INSTALLED (.*)/g);
+    die "error: cannot determine currently installed version\n" unless @previous;
 
-    print $previous[-1];
+    print "info: most recently installed version is $previous[-1]";
+
+    # Get tags
+    print "info: discovering current tags...";
+    my @tags = `svn ls $source/$tag`;
+    die "error: cannot access $source/$tag\n" unless $? == 0 && @tags;
+
+    print "Found @tags";
+
     die;
 
-    chdir $target or die "**Error: cannot change directory to $target\n";
-
-    my $date = '2011-09-16';
-
-    my @files;
-    foreach my $f ( @files )
+    my @urls;
+    foreach my $url ( @urls )
     {
-        next unless $f =~ /$date\/(.*)$/;
-        saydo "svn export $f $1";
+        next unless $url =~ /\/$tag\/(.*)$/;
+        my $path = $1;
+        saydo "svn export $url $target/$path";
     }
+
+    print LOG "INSTALLED $source/$tag";
 }
 
-main()
+main();
