@@ -93,6 +93,7 @@ else {%setup = split(';;;', $setupsave);}
 opendir(DIR, $datafolder); 
 @a = readdir(DIR);
 close DIR;
+@a = sort @a;
 $languages = '';
 foreach $item (@a) {
   if ($item !~ /\./ && (-d "$datafolder/$item") && $item =~ /^[A-Z]/ && $item !~ /help|ordo/i) 

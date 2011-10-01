@@ -1003,13 +1003,17 @@ sub precedence {
         {
             my %s = %{setupstring("$datafolder/$lang1/Sancti/07-16.txt")};
             my %s2 = %{setupstring("$datafolder/$lang2/Sancti/07-16.txt")};
-            my $key;
-            foreach $key (%s)
-            {
-                next unless $key =~ /(Oratio|Ant 2)/i;
-                $winner{$key} = $s{$key};
-                $winner2{$key} = $s2{$key};
-            }
+            my %sc = %{setupstring("$datafolder/$lang1/Commune/C11.txt")};
+            my %sc2 = %{setupstring("$datafolder/$lang2/Commune/C11.txt")};
+
+            $winner{'Oratio'} = $s{'Oratio'};
+            $winner2{'Oratio'} = $s2{'Oratio'};
+
+            $winner{'Versum 2'} = $sc{'Versum 2'};
+            $winner2{'Versum 2'} = $sc2{'Versum 2'};
+
+            $winner{'Ant 2'} = $s{'Ant 2'};
+            $winner2{'Ant 2'} = $s2{'Ant 2'};
         }
     }
  
@@ -1429,15 +1433,24 @@ sub nooctnat {
   return 0;
 }
 
-sub jtoi {
-  my $t = shift;
-  $t =~ s/([aeiou])u([aeiou])/$1v$2/g;
-  $t =~ s/V([bcdfghklmnpqrstvwxyz])/U$1/g;
-  $t =~ s/Qv/Qu/g;
-  $t =~ s/qv/qu/g;
-  if ($version !~ /1960/) {return $t;}
-  $t =~ s/j/i/g;
-  $t =~ s/J/I/g;
-  $t =~ s/H\-Iesu/H-Jesu/g;
-  return $t;
+# substitute i for j (in Latin text)
+sub jtoi
+{
+    my $t = shift;
+    # but not in html tags!
+    my @parts = split(/(<[^<>]*>)/,$t);
+    foreach ( @parts )
+    {
+        next if /^</;
+        s/([aeiou])u([aeiou])/$1v$2/g;
+        s/V([bcdfghklmnpqrstvwxyz])/U$1/g;
+        s/Qv/Qu/g;
+        s/qv/qu/g;
+        next if $version !~ /1960/;
+        s/j/i/g;
+        s/J/I/g;
+        s/H\-Iesu/H-Jesu/g;
+    }
+    $t = join('', @parts);
+    return $t;
 }
