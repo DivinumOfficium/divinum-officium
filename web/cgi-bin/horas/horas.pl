@@ -217,7 +217,7 @@ sub resolve_refs {
 	  }
 
   #connect lines marked by tilde, or but linebrak
-	if ($line =~ /\~/) {$line =~ s/\~//g; $t .= "$line ";}
+	if ($line =~ /\~\s*$/) {$line =~ s/\~\s*$//g; $t .= "$line ";}
 	else {$t .= "$line<BR>\n";}
 
 
