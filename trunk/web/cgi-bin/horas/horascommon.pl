@@ -544,7 +544,7 @@ sub getrank {
     $vespera = $svesp;      
     if ($srank[3] =~ /^(ex|vide)\s*C/i) {  
       $communetype = $1;    
-      if ($version =~ /trident/i && $version !~ /monastic/i && $rank > 2) {$communetype = 'ex';}
+      if ($version =~ /trident/i && $version !~ /monastic/i && $rank >= 2) {$communetype = 'ex';}
       if ($srank[3] =~ /(C[0-9]+[a-z]*)/i) {
 	      $commune = $1;
 	 	  $dayname[1] .= " $communetype $communesname{$commune} [$commune]";
