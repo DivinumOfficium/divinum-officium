@@ -32,7 +32,7 @@ our $Ck = 0;
 our $notes = 0;
 our $missa = 0;
 our $officium = 'officium.pl';
-our $version = 'Divino Afflatu';
+our $version = 'Rubrics 1960';
 @versions = ('Trident 1570', 'Trident 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
 
 #***common variables arrays and hashes
