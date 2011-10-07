@@ -227,60 +227,62 @@ sub resolve_refs {
   $t =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;  
   $t =~ s/<\/P>\s*<BR>/<\/P>/g;   
   return $t;
- }
+}
 
- #*** sub expand($line, $lang, $antline)
- # for & references calls the sub
- # $ references are filled from Psalterium/Prayers file
- # antline to handle redding the beginning of psalm is same as antiphona
- # returns the expanded text or the link
- sub expand {
-   my $line = shift;          
-   my $lang = shift;
-   my $antline = shift;     
-   					 
-   my $title = "";
+#*** sub expand($line, $lang, $antline)
+# for & references calls the sub
+# $ references are filled from Psalterium/Prayers file
+# antline to handle redding the beginning of psalm is same as antiphona
+# returns the expanded text or the link
+sub expand
+{
+    my $line = shift;          
+    my $lang = shift;
+    my $antline = shift;     
 
-   #returns the popup link if not all mode $ for $references
-   if ($expand !~ /all/i && $line =~ /^\s*\$/) 
-     {return setlink($line, 0, $lang);}
+    my $title = "";
 
-   #returns the link or text for & references
-   if ($line =~ /^\s*\&/) {  
-     $line = $';   			 
-     
-     # &[A-Z] popup link if not all
-	   if ($expand !~ /all/i && ($line =~ /^[A-Z]/ || $line =~ /^pater_noster/)) 
-       {return setlink("&$line", 0, $lang);}
-	 
-     # &[a-z] popup links in not all or not psalm
-	 elsif ($expand =~ /nothing/i) {return setlink("&$line", 0, $lang);}
-                                            
-     #actual expansion for & references
-	 #is the beginning of psalm the same as antiphona
-	 if ($antline) {   
-	   $antline =~ s/^\s*Ant\. //i;
-	   $line =~ s/\)\s*$//;
-	   $line = "&$line,\"$lang\",\"$antline\");";	 
-	 }
-	 #sub with parameter
-	 elsif ($line =~ /\)\s*$/) {$line = "&$`,\"$lang\");";}
-     #other subs
-	 else {$line = "&$line(\"$lang\");";}   
+    #returns the popup link if not all mode $ for $references
+    if ($expand !~ /all/i && $line =~ /^\s*\$/) 
+    {return setlink($line, 0, $lang);}
 
-	 my $t = eval($line); 
-     return $t;
-   }
-                     
+    #returns the link or text for & references
+    if ($line =~ /^\s*\&/)
+    {  
+        $line = $';   			 
 
-   #actual expansion for $ references
-   my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
-   $line =~ s/\$//;
-   $line =~ s/\s*$//; 
-   my $text = $prayer{$line};     
-   $line =~ s/\n/\<BR\>\n/g;
-   $line =~ s/\<BR\>\n$/\n/;
-   return $text;
+        # &[A-Z] popup link if not all
+        if ($expand !~ /all/i && ($line =~ /^[A-Z]/ || $line =~ /^pater_noster/)) 
+        {return setlink("&$line", 0, $lang);}
+
+        # &[a-z] popup links in not all or not psalm
+        elsif ($expand =~ /nothing/i) {return setlink("&$line", 0, $lang);}
+                        
+        #actual expansion for & references
+        #is the beginning of psalm the same as antiphona
+        if ($antline)
+        {
+            $antline =~ s/^\s*Ant\. //i;
+            $line =~ s/\)\s*$//;
+            $line = "&$line,\"$lang\",\"$antline\");";	 
+        }
+        #sub with parameter
+        elsif ($line =~ /\)\s*$/) {$line = "&$`,\"$lang\");";}
+        #other subs
+        else {$line = "&$line(\"$lang\");";}   
+
+        my $t = eval($line); 
+        return $t;
+    }
+
+    #actual expansion for $ references
+    my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+    $line =~ s/\$//;
+    $line =~ s/\s*$//; 
+    my $text = $prayer{$line};     
+    $line =~ s/\n/\<BR\>\n/g;
+    $line =~ s/\<BR\>\n$/\n/;
+    return $text;
 }
 
 #*** Pater noster($lang)
@@ -689,7 +691,8 @@ sub special_epi_invit {
 
 #*** setlink($name, $ind, $lang
 # sets a link for expand a skeleton chapter line or to call a popup
-sub setlink {
+sub setlink
+{
   my $name = shift;
   my $ind = shift;
   my $lang = shift;	
@@ -743,7 +746,6 @@ sub setlink {
   }                                   
   elsif ($name !~ /^\#/ && $lang !~ /Latin/i) {$name = translate($name);} 
                              
-
   $name .= $suffix;	 
 
   $name =~ s/[\#\$\&]//g;                             
@@ -773,6 +775,7 @@ sub translate {
   $n = $translate{$n}; 
   if ($name !~ /(omit|elmarad)/i) {$n = $prefix.$n;}
   $n =~ s/\n*$//;
+
   return "$n";
 }
 
