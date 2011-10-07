@@ -1,12 +1,19 @@
 [Rank]
 Festum Beatae Mariae Virginis a Rosario;;Duplex 2 classis;;5;;ex C11
 
+[Rank1960]
+Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex 2 classis;;5;;ex C11
+
+[RankNewcal]
+Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex;;3;;ex C11
+
 [Rule]
 ex C11;
 9 lectiones
 Psalmi Dominica
 Antiphonas horas
 Doxology=Nat
+CPapaM=Marcum
 
 [Ant Vespera]
 Quae est ista, * speciosa sicut columba, quasi rosa plantata super rivos aquarum?;;109
@@ -75,32 +82,7 @@ $Per Dominum
 Solemnitatem Rosarii Virginis Mariae celebremus: * Christum ejus Filium adoremus Dominum.
 
 [Hymnus Matutinum]
-v. Caelestis aulae nuntius,
-Arcana pandens Numinis,
-Plenam salutat gratia
-Dei Parentem Virginem.
-_
-Virgo propinquam sanguine
-Matrem Joannis visitat,
-Qui clausus alvo gestiens
-Adesse Christum nuntiat.
-_
-Verbum, quod ante saecula
-E mente Patris prodiit,
-E Matris alvo Virginis
-Mortalis Infans nascitur.
-_
-Templo puellus sistitur,
-Legique paret Legifer
-Hic se Redemptor paupere
-Pretio redemptus immolat.
-_
-Quem jam dolebat perditum,
-Mox laeta Mater invenit
-Ignota doctis mentibus
-Edisserentem Filium.
-_
-In monte olivis consito
+v. In monte olivis consito
 Redemptor orans, procidit,
 Moeret, pavescit, deficit,
 Sudore manans sanguinis.
@@ -199,7 +181,7 @@ R. Et reginae laudaverunt eam.
 R. Et reginae laudaverunt eam.
 
 [Lectio4]
-Cum Albigensium haeresis per Tolosatium regionem impies grassaretur atque altius in dies radices ageret, sanctus Dominicus, qui nuper Praedicatorum ordinis fundamenta jecerat, ad eam convellendam totus incubuit. Id ut praestaret validius, auxilium beatae Virginis, cujus dignitas illis erroribus impudentissime petebatur, cuique datum est cunctas haereses interimere in universo mundo, enixis precibus imploravit. A qua (ut memoriae proditum est) cum monitus esset ut Rosarium populis praedicaret, velut singulare adversus haereses ac vitia praesidium; mirum est, quanto mentis fervore et quam felici successu injunctum sibi munus sit exsecutus. Est autem Rosarium certa precandi formula, qua quindecim angelicarum salutationum decades, oratione dominica interjecta distinguimus, et ad earum singulas totidem nostrae reparationis mysteria pia meditatione recolimus. Ex eo ergo tempore pius hic orandi modus mirabiliter per sanctum Dominicum promulgari augerique coepit; quem eiusdem institutorem auctoremque fuisse Summi Pontifices apostolicis litteris passim affirmarunt
+Cum Albigensium haeresis per Tolosatium regionem impies grassaretur atque altius in dies radices ageret, sanctus Dominicus, qui nuper Praedicatorum ordinis fundamenta jecerat, ad eam convellendam totus incubuit. Id ut praestaret validius, auxilium beatae Virginis, cujus dignitas illis erroribus impudentissime petebatur, cuique datum est cunctas haereses interimere in universo mundo, enixis precibus imploravit. A qua (ut memoriae proditum est) cum monitus esset ut Rosarium populis praedicaret, velut singulare adversus haereses ac vitia praesidium; mirum est, quanto mentis fervore et quam felici successu injunctum sibi munus sit exsecutus. Est autem Rosarium certa precandi formula, qua quindecim angelicarum salutationum decades, oratione dominica interjecta distinguimus, et ad earum singulas totidem nostrae reparationis mysteria pia meditatione recolimus. Ex eo ergo tempore pius hic orandi modus mirabiliter per sanctum Dominicum promulgari augerique coepit; quem eiusdem institutorem auctoremque fuisse Summi Pontifices apostolicis litteris passim affirmarunt.
 
 [Responsory4]
 R. Tu gloria Jerusalem, tu laelitia Israël, tu honorificentia populi nostri fecisti viriliter:
@@ -220,7 +202,7 @@ R. Submersi sunt in aquis vehementibus, et operuit eos mare.
 Clemens vero undecimus animo reputans insignem pariter victoriam anno millesimo septingentesimo decimo sexto in Hungariae regno a Carolo sexto in imperatorem Romanorum electo de innumeris Turcarum copiis relatam, eo die contigisse quo festum Dedicationis sanctae Mariae ad Nives celebraretur atque eodem ferme tempore, quo sanctissimi Rosarii confratres publicam solemniumque supplicationem in alma Urbe ingenti populi concursu magnaque religione peragentes, fervidas ad Deum preces pro Turcarum depressione funderent, ac potentem opem Deiparae Virginis in auxilium Christianorum humiliter implorarent: eam ob rem, victoriam illam, nec non liberatam paulo post eorumdem Turcarum obsidione Corcyrensem insulam eiusdem beatae Virginis patrocinio pie censuit adscribendam. Quamobrem ut hujus quoque tam insignis beneficii perennis semper et memoria exstaret et gratia, sanctissimi Rosarii festum eadem die eodemque ritu celebrandum ad Ecclesiam universam extendit. Haec omnia Benedictus decimus tertius in Breviario Romano apponi jussit. Leo autem tertius decimus in turbulentissimis Ecclesiae temporibus, diuque prementium malorum saeva tempestate, cunctos in Orbe fideles, iteratis Apostolicis litteris ad Marialis Rosarii, praesertim per Octobrem mensem, frequentiam vehementer incendit, aucto quoque annui festi solemnitatis ritu, additaque Litaniis Lauretanis Reginae sacratissimi Rosarii invocatione, et officio de eadem solemnitate proprio Ecclesiae universae concesso. Sanctissimam ergo Dei Genitricem cultu hoc eidem gratissimo jugiter veneremur ut quae toties Christi fidelibus, Rosarii precibus exorata, terrenos hostes profligare dedit ac perdere, infernos pariter superare concedat.
 
 [Responsory6]
-R. Signum magnum apparuit in caelo mulier amicta sole et luna sub pedibus ejus:
+R. Signum magnum apparuit in caelo: mulier amicta sole et luna sub pedibus ejus:
 * Et in capite ejus corona stellarum duodecim.
 V. Dabitur capiti tuo augmentum gratiarum, et corona inclyta proteget te.
 R. Et in capite ejus corona stellarum duodecim.
@@ -230,7 +212,7 @@ R. Et in capite ejus corona stellarum duodecim.
 [Lectio7]
 Lectio sancti Evangelii secundum Lucam.
 !Luke 1:26-38
-In illo tempore Missus est Angelus Gabriel a Deo in civitatem Galilaeae, cui nomen Nazareth, ad Virginem desponsatam viro, cui nomen erat Joseph de domo David, et nomen Virginis Maria. Et reliqua.
+In illo tempore: Missus est Angelus Gabriel a Deo in civitatem Galilaeae, cui nomen Nazareth, ad Virginem desponsatam viro, cui nomen erat Joseph, de domo David, et nomen Virginis Maria. Et reliqua.
 _
 Homilia sancti Bernardi Abbatis.
 !Sermo de S. Maria.
@@ -259,7 +241,7 @@ Quidquid horum cogito, Deum cogito, et per omnia est Deus meus. Haec ego meditar
 &teDeum
 
 [Ant Laudes]
-Laetare * Virgo Mater; surrexit Christus de sepulcro
+Laetare * Virgo Mater; surrexit Christus de sepulcro.
 Ascendit Deus * in jubilatione, et Dominus in voce tubae.
 Spiritus Domini * replevit orbem terrarum.
 Assumpta est * Maria in caelum; gaudent Angeli; laudantes benedicunt Dominum, alleluia.
@@ -271,7 +253,7 @@ v. In me gratia omnis viae et veritatis, in me omnis spes vitae et virtutis: ego
 $Deo gratias
 
 [Hymnus Laudes]
-v. Jam morte victor obruta
+v. Jam morte, victor, obruta
 Ab inferis Christus redit,
 Fractisque culpae vinculis,
 Caeli recludit limina.
@@ -292,7 +274,7 @@ Excepta caeli jubilo,
 Et angelorum canticis.
 _
 Bis sena cingunt sidera
-Almae parentis verticem
+Almae parentis verticem:
 Throno propinqua Filii
 Cunctis creatis imperat.
 _
@@ -347,7 +329,7 @@ R. In deliciis tuis, sancta Dei Genitrix.
 
 [Capitulum Nona]
 !Sir 24:17-18
-v. Quasi cedrus exaltata sum in Libano et quasi cypressus in monte Sion: quasi palma exaltata sum in Cades, et quasi plantatio rosae in Jericho
+v. Quasi cedrus exaltata sum in Libano et quasi cypressus in monte Sion: quasi palma exaltata sum in Cades, et quasi plantatio rosae in Jericho.
 $Deo gratias
 
 [Responsory Nona]
@@ -356,7 +338,7 @@ R. Speciosa facta es * Et suavis.
 V. In deliciis tuis, sancta Dei Genitrix.
 R. Et suavis
 &Gloria
-R.Speciosa facta es * Et suavis.
+R. Speciosa facta es * Et suavis.
 _
 V. Elegit eam Deus et praeelegit eam.
 R. Et habitare eam fecit in tabernaculo suo.

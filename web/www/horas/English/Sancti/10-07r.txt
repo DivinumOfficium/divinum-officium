@@ -1,12 +1,19 @@
 [Rank]
 Festum Beatae Mariae Virginis a Rosario;;Duplex classis;;5;;ex C11
 
+[Rank1960]
+Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex classis;;5;;ex C11
+
+[RankNewcal]
+Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex;;3;;ex C11
+
 [Rule]
 ex C11;
 9 lectiones
 Psalmi Dominica
 Antiphonas horas
 Doxology=Nat
+CPapaM=Mark;
 
 [Ant Vespera]
 Who is this, * fair as a dove, like a rose-tree planted beside the rivers of waters;;109
@@ -64,11 +71,11 @@ O God, Whose Only-begotten Son, by living, dying, and rising again, hath purchas
 $Per eumdem
 
 [Commemoratio]
-!S. Marci Papae
+!Commemoratio S. Marci Papae
 @Commune/C4:Oratio proper
 _
 $Oremus
-Gratiously hear our supplications, O Lord, and for the sake of thy Blessed Confessor and Bishop Mark, grant to us in thy mercy both pardon and peace.
+Graciously hear our supplications, O Lord, and for the sake of thy Blessed Confessor and Bishop Mark, grant to us in thy mercy both pardon and peace.
 $Per Dominum
 
 [Invit]
