@@ -42,14 +42,18 @@ sub setfont {
   
   my $color = 'green';
   my $font = '{Times} 12';
-  if ($istr =~ /(\#[0-9a-f]+)\s*$/i || $istr =~ /([a-z]+)\s*$/i) {
+  if ($istr =~ /(\#[0-9a-f]+)\s*$/i || $istr =~ /([a-z]+)\s*$/i)
+  {
      $color = $1;        
      $font = $`;      
 	 $color =~ s/\s*$//;
 	 $font =~ s/\s*$//;
   }	
  
-  if (!$text) {return ($font, $color);}
+  if (!$text)
+  {
+      return ($font, $color);
+  }
 
   #here comes set for colors;
   $after = '';						   
