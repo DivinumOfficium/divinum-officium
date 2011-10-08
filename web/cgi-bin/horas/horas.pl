@@ -424,8 +424,8 @@ sub antiphona_finalis {
   return ($t);
 }
 
-#*** psalm($chapter, $lang)  or
-# psalm($chapter, $fromverse, $toverse, $lang)
+#*** psalm($chapter, $lang, $antline)  or
+# psalm($chapter, $fromverse, $toverse, $lang, $antline)
 # selects the text, attaches the head, 
 # sets red color for the introductory comments
 # returns the visible form 
@@ -577,7 +577,7 @@ sub getantcross {
 	$aind++;
 	$item2 = depunct($item2);
 	if (!$item2) {$pind--; next;}  
-	if ($item1 !~ /$item2/) {return $psalmline1;}
+	if ($item1 !~ /$item2/i) {return $psalmline1;}
 	$psalmline .= " $psalmline[$pind-1]";
 	next;
   }
