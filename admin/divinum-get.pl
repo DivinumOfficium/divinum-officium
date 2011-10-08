@@ -11,8 +11,14 @@ my ($y, $m, $d) = Today();
 my @horae = qw/Matutinum Laudes Prima Tertia Sexta Nona Vespera Completorium/;
 my $horae_list = join(' ', @horae);
 
-my @versions = qw/1570 1910 Divino 1955 1960/;
-my $version_list = join(' ', @versions);
+my @versions = (
+    'Trident 1570',
+    'Trident 1910',
+    'Divino Afflatu',
+    'Reduced 1955',
+    'Rubrics 1960'
+);
+my $version_list = join('|', @versions);
 
 my @params = qw/accented browsertime caller expand expandnum lang1 lang2 local
                 notes priest screenheight searchvalue setup testmode votive/;
@@ -28,20 +34,24 @@ Options:
 --to=MM-DD-YYYY     end downloading for this date [default: from-date]
 --dir=DIR           put downlaods into directory DIR [default: current dir]
 --url=BASE          base URL of site to download from
-                    [default: \$DIVINUM_OFFICIUM_URL]
-                    [default default: http://divinumofficium.com]
+                    [default: http://divinumofficium.com]
 --entry=PATH        relative URL of entry point [default: horas/officium.pl]
 --cgi=PARAM=VALUE   query parameters passed directly as P1=V1&P2=V2...
 HORA                [$horae_list]
 VERSION             [$version_list]
+VERSION can be abbreviated as long as it's unambiguous.
 PARAM               [$params_list]
                     or anything else (unchecked)
 VALUE               anything
 
 Download files are named by the hora and date.  Replay tests using divinum-replay.
+Note: the default URL is the live site. The default for divinum-replayh is the 
+environment variable DIVINUM_OFFICIUM_URL.  This allows -get to establish live results
+and -replay to test against a test site.
 USAGE
 
 my $hora;
+my $version_arg;
 my $version;
 my $entry = 'horas/officium.pl';
 my $from = "$m-$d-$y";
@@ -50,12 +60,11 @@ my $dir;
 my $base_url;
 my @cgi = ();
 
-$base_url = $ENV{DIVINUM_OFFICIUM_URL};
-$base_url = 'http://divinumofficium.com' unless $base_url;
+$base_url = 'http://divinumofficium.com';
 
 GetOptions(
     'hora=s' => \$hora,
-    'version=s' => \$version,
+    'version=s' => \$version_arg,
     'from=s' => \$from,
     'to=s' => \$to,
     'dir=s' => \$dir,
@@ -65,7 +74,18 @@ GetOptions(
 
 die $USAGE unless $hora && grep $hora eq $_, @horae;
 
-die $USAGE unless !defined($version) || grep $version eq $_, @versions;
+# Translate version_arg to version
+my $matches = 0;
+for my $v ( @versions )
+{
+    if ( index($v, $version_arg) >= 0 )
+    {
+        $version = $v;
+        $matches = $matches + 1
+    }
+}
+die "error: --version=$version_arg is ambiguous\n" unless $matches < 2;
+die "error: --version=$version_arg is invalid\n" unless $matches == 1;
 
 die "Invalid date $from .\n" unless my ($y1,$m1,$d1) = Decode_Date_US($from);
 $to = $from unless $to;
@@ -82,7 +102,7 @@ if ( $dir )
 while ( Date_to_Days($y1,$m1,$d1) <= Date_to_Days($y2,$m2,$d2) )
 {
     my @result;
-    my $date = "$m1-$d1-$y2";
+    my $date = "$m1-$d1-$y1";
     my @arglist = ();
 
     push @arglist, "command=pray$hora";
@@ -92,12 +112,14 @@ while ( Date_to_Days($y1,$m1,$d1) <= Date_to_Days($y2,$m2,$d2) )
 
     my $args = join('&', @arglist);
     my $url = "$base_url/cgi-bin/$entry?$args";
+    $url =~ s/ /%20/g;
 
     print STDERR "$url\n";
     @result = `curl -s '$url'`;
 
     my $file = "$hora-$date";
     $file = "$file-$version" if $version;
+    $file =~ s/ /_/g;
 
     my $path = $dir ? "$dir/$file" : "$file";
     open OUT, ">$path" or die "Can't write $path\n";
