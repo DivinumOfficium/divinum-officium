@@ -1057,12 +1057,15 @@ sub precedence {
 
 }
 
-#*** monthday($flag)
+#*** monthday($forcetomorrow)
 # returns an empty string or mmn-d format 
 # e.g. 081-1 for monday after the firs Sunday of August
 sub monthday {
-  my $flag = shift;	  
-  $flag = ($tvesp == 1) ? 1 : 0;
+  my $forcetomorrow = shift;
+  my $tomorrow;
+  
+  # Get tomorrow's date if the caller requested it or if we're saying first Vespers.
+  $tomorrow = ($forcetomorrow || $tvesp == 1);
 
   if ($month < 7 || $dayname[0] =~ /Adv/i) {return '';} 
 
@@ -1084,7 +1087,7 @@ sub monthday {
   }
 
   my ($d1, $m1, $y1, $dow) = ($day, $month, $year, $dayofweek);
-  if ($flag) {($d1, $m1, $y1) = nday($day, $month, $year); $dow = ($dayofweek + 1) % 7;}
+  if ($tomorrow) {($d1, $m1, $y1) = nday($day, $month, $year); $dow = ($dayofweek + 1) % 7;}
       
   my $ta = date_to_days( $d1, $m1 - 1, $y1); 
   if ($ta < $ftime[0]) {return '';}
@@ -1096,7 +1099,7 @@ sub monthday {
   my $weeks = floor($tdays / 7); 
   if ($m == 12 && ($weeks > 0 || $version =~ /1960/)) {
     my $t = date_to_days($date1[1],$date1[0]-1,$date1[2]);
-    if ($flag) {$t += 1;}
+    if ($tomorrow) {$t += 1;}
     my $advent1 = getadvent($year);
     my $wdist = floor(($advent1 - $t - 1) / 7);    
     $weeks = 4 - $wdist;  
