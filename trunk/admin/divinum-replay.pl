@@ -59,9 +59,10 @@ foreach my $file ( @ARGV )
         if ( <IN> =~ /^DIVINUM OFFICIUM TEST CASE/ )
         {
             my $url = <IN>;
+            chomp $url;
             my @old_result = <IN>;
             close IN;
-
+            
             # Get new result
             if ( $url =~ /^(.*)(\/cgi-bin.*)/ )
             {
