@@ -1,7 +1,0 @@
-
-RewriteEngine on
-
-RewriteCond %{HTTP_HOST} ^divinumofficium.net$ [OR]
-RewriteCond %{HTTP_HOST} ^www.divinumofficium.net$
-RewriteRule ^/?(.*)$ http://www.divinumofficium.com/$1 [R=301,L]
-
