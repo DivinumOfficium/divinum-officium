@@ -5,6 +5,9 @@ use Getopt::Long;
 use Date::Format;
 use Algorithm::Diff;
 
+my @filters = qw/kalendar hymns titles psalms antiphons html accents ij site urls/;
+my $filters = join(' ', @filters);
+
 my $USAGE = <<USAGE ;
 Run divinumofficium regression tests against a current version.
 Usage: divinum-replay [options] FILE...
@@ -13,44 +16,63 @@ Parameters:
     FILE...         file(s) of tests previously established by divinum-get
 
 Options:
---url=BASE          base URL of site to download current version from
-                    defaults to environment DIVINUM_OFFICIUM_URL if defined
-                    otherwise http://divinumofficium.com
---ignore=IGNORE     suppress differences of type IGNORE.
-                    This option can be specified many times.
---ignore=IJ         Ignore differences between I and J or i and j.
---ignore=accents    Ignore differences between accented and unaccented letters.
---ignore=urls       Completely ignore differences in URLs
+--url=BASE            base URL of site to download current version from
+                      defaults to environment DIVINUM_OFFICIUM_URL if defined
+                      otherwise http://divinumofficium.com
+--filter=[+|-]FILTER  suppress (-) or include only (+) differences of type FILTER
+--update              Update the contents of each FILE... to match current revisions
+                      Doesn't report any differences.  
+                      This option excludes --filter= and --url=.
+                      Warning: copy the FILEs first if you want to keep the old ones.
 
---update            Update the contents of each FILE... to match current revisions
-                    Doesn't report any differences.  
-                    This option excludes --ignore= and --url=.
-                    Warning: copy the FILEs first if you want to keep the old ones.
+Parameters:
+FILTER                one of [$filters]
+                      When + is specified, compare only the filtered content
+                         and ignore everything else.  This is the default.
+                      When - is specified, ignore differences in the filtered content.
+                      The filters are applied in order, e.g.
+                          +hymns,+html       compare only the html presentation of hymns
+                          +psalms,-antiphons compare only psalm textual content
+                      It doesn't make sense to use +ij or +accents.
+                      The filter -site applied first by default unless the site filter
+                      is specified explicitly.
+
+ij                    i vs j in Latin text (-ij only)
+acccents              accents and ligatures in Latin text (-accents only)
+site                  the site specification (from http:// through /cgi-bin) (-site only)
+urls                  URL strings
+html                  HTML and javascript content
+kalendar              Title of day 
+psalms                Psalm content, antiphony, and order
+titles                Titles of things
+antiphons             Psalm and canticle antiphons
 USAGE
 
-my @ignore;
+my $filter = '';
 my $update;
 my $new_base_url;
-my $example_url = 'http://base.url/';
-my @ignores = qw/IJ accents urls /;
 
 GetOptions(
     'url=s' => \$new_base_url,
-    'ignore=s' => \@ignore,
+    'filter=s' => \$filter,
     'update' => \$update
 ) or die $USAGE;
 
-die "Do not specify --update with other options.\n" if $update && ($new_base_url || @ignore);
+die "Do not specify --update with other options.\n" if $update && ($new_base_url || $filter);
 
 $new_base_url = $ENV{DIVINUM_OFFICIUM_URL} unless $new_base_url;
 $new_base_url = 'http://divinumofficium.com' unless $new_base_url;
 
-foreach my $ignore ( @ignore )
+my @filter = split(',', $filter);
+push @filter, '-site' unless $filter =~ /site/;
+
+foreach my $f ( @filter )
 {
-    die "Invalid --ignore=$ignore\n" unless grep $ignore eq $_, @ignores
+    die "Invalid filter: $f\n" unless
+        $f =~ /^[+-]?(.*)/ && grep $1 eq $_, @filters
 }
 
-die "Specify at least one FILE." unless @ARGV;
+die "Specify at least one FILE.\n" unless @ARGV;
 
 foreach my $file ( @ARGV )
 {
@@ -71,7 +93,6 @@ foreach my $file ( @ARGV )
 
                 my $new_url = "$new_base_url$query";
                 print STDERR "$new_url\n";
-                print STDOUT "$new_url\n";
 
                 my @new_result = `curl -s '$new_url'`;
                 unless ( $? == 0 )
@@ -99,59 +120,191 @@ foreach my $file ( @ARGV )
                 else
                 {
 
-                    # Ignore differences in embedded urls.
-                    s/$old_base_url/$example_url/g for @old_result;
-                    s/$new_base_url/$example_url/g for @new_result;
-
                     # Ignore specified differences.
-                    foreach ( @ignore )
+                    foreach ( @filter )
                     {
-                        if ( $_ eq 'IJ' )
+                        my $ignore = /-/;
+                        if ( /site/ )
                         {
-                            # TODO : do this better (!!)
-                            tr/Jj/Ii/ for @old_result, @new_result;
+                            if ( $ignore )
+                            {
+                                # Ignore site specification
+                                s/http:..[^ ]*(cgi-bin|www)./.../g for @old_result, @new_result;
+                            }
+                            else
+                            {
+                                for ( @old_result, @new_result )
+                                {
+                                    $_ = '...' unless /http:..[^ ]*cgi-bin/;
+                                }
+                            }
                         }
-                        elsif ( $_ eq 'accents' )
+
+                        elsif ( /ij/ )
                         {
-                            # Write accented letters back to nonaccented.
-                            tr/·ÈÎÌÛ˙¡…ÀÕ”⁄/aeeiouAEEIOU/ for @old_result, @new_result;
-                            s/Ê/ae/g for @old_result, @new_result;
-                            s/∆/Ae/g for @old_result, @new_result;
+                            if ( $ignore )
+                            {
+                                # TODO : do this better (!!)
+                                tr/Jj/Ii/ for @old_result, @new_result;
+                            }
+                            else
+                            {
+                                print STDERR "warning: skipping $_\n";
+                            }
                         }
-                        elsif ( $_ eq 'urls' )
+
+                        elsif ( /accents/ )
                         {
-                            s/\bhttp:[^ '"]*//g for @old_result, @new_result;
+                            if ( $ignore )
+                            {
+                                # Write accented letters back to nonaccented.
+                                tr/·ÈÎÌÛ˙˝¡…ÀÕ”⁄/aeeiouyAEEIOU/ for @old_result, @new_result;
+                                s/Ê/ae/g for @old_result, @new_result;
+                                s/∆/Ae/g for @old_result, @new_result;
+                            }
+                            else
+                            {
+                                print STDERR "warning: skipping $_\n";
+                            }
+                        }
+
+                        elsif ( /urls/ )
+                        {
+                            for ( @old_result, @new_result )
+                            {
+                                my @bits = split(/(\bhttp:[^ '"]*)/, $_);
+                                for ( @bits )
+                                {
+                                    my $url = /^http/;
+                                    if ( $url == $ignore )
+                                    {
+                                        $_ = '...'
+                                    }
+                                }
+                                $_ = join('',@bits);
+                                $_ = $_ + "\n" unless /\n$/;
+                            }
+                        }
+
+                        elsif ( /html/ )
+                        {
+                            for ( @old_result, @new_result )
+                            {
+                                my @bits = split(/(<[^<>]*>)/, $_);
+                                for ( @bits )
+                                {
+                                    my $html = /^</;
+                                    if ( $html == $ignore )
+                                    {
+                                        $_ = '...'
+                                    }
+                                }
+                                $_ = join('',@bits);
+                                $_ = $_ + "\n" unless /\n$/;
+                            }
+                        }
+
+                        elsif ( /kalendar/ )
+                        {
+                            for ( @old_result, @new_result )
+                            {
+                                # Ad hoc!
+                                my $match = /<FONT COLOR=[^"]/ && !/COLOR=MAROON/ && !/HREF/;
+                                if ( $match == $ignore )
+                                {
+                                    $_ = "...\n"
+                                }
+                            }
+                        }
+
+                        elsif ( /titles/ )
+                        {
+                            for ( @old_result, @new_result )
+                            {
+                                # Ad hoc!
+                                my $match =
+                                    /^<FONT SIZE=\+/ ||
+                                    (/^<FONT COLOR="red"/ && !/Ant\.|\bV\.|\bR./);
+                                if ( $match == $ignore )
+                                {
+                                    $_ = "...\n"
+                                }
+                            }
+                        }
+
+                        else
+                        {
+                            print STDERR "warning: $_ filtering not implemented\n";
                         }
                     }
 
+                    my @new_slice = ();
+                    for ( 0 .. $#new_result )
+                    {
+                        push @new_slice, $_ if $new_result[$_] ne "...\n";
+                    }
+                    @new_result = @new_result[@new_slice];
+
+                    my @old_slice = ();
+                    for ( 0 .. $#old_result )
+                    {
+                        push @old_slice, $_ if $old_result[$_] ne "...\n";
+                    }
+                    @old_result = @old_result[@old_slice];
+
                     # Report differences
-                    #
                     my $diff = Algorithm::Diff->new(\@old_result, \@new_result);
+                    my $printed = 0;
 
                     $diff->Base( 1 );   # Return line numbers, not indices
                     while ( $diff->Next() )
                     {
                         next if $diff->Same();
-                        my $sep = '';
-                        if ( ! $diff->Items(2) )
+                        print STDOUT "\n$new_url\n" unless $printed ++;
+                        my @old = $diff->Items(1);
+                        my @new = $diff->Items(2);
+                        if ( @old && @new )
                         {
-                            printf "%d,%dd%d\n",
-                            $diff->Get(qw( Min1 Max1 Max2 ));
+                            while ( @old || @new )
+                            {
+                                my $old = $old[0];
+                                my $new = $new[0];
+                                chomp $old if $old;
+                                chomp $new if $new;
+                                if ( $old && $new )
+                                {
+                                    chomp $old;
+                                    chomp $new;
+                                    print "CHANGED $old TO $new\n";
+                                }
+                                elsif ( $old )
+                                {
+                                    chomp $old;
+                                    print "REMOVED $old\n";
+                                }
+                                else
+                                {
+                                    chomp $new;
+                                    print "ADDED $new\n";
+                                }
+                                @old = @old[1 .. $#old];
+                                @new = @new[1 .. $#new];
+                            }
                         }
-                        elsif ( ! $diff->Items(1) )
+                        elsif ( @old )
                         {
-                            printf "%da%d,%d\n",
-                            $diff->Get(qw( Max1 Min2 Max2 ));
+                            for ( @old )
+                            {
+                                print "REMOVED $_";
+                            }
                         }
                         else
                         {
-                            $sep = "---\n";
-                            printf "%d,%dc%d,%d\n",
-                            $diff->Get(qw( Min1 Max1 Min2 Max2 ));
+                            for ( @new )
+                            {
+                                print "ADDED $_";
+                            }
                         }
-                        print "OLD $_"   for  $diff->Items(1);
-                        print $sep;
-                        print "NEW $_"   for  $diff->Items(2);
                     }
                 }
             }
@@ -172,6 +325,4 @@ foreach my $file ( @ARGV )
         print STDERR "warning: can't read $file\n";
         next;
     }
-    print "\n";
 }
-
