@@ -21,7 +21,8 @@ sub error {
 # returns $week string list using date1 = mm-dd-yyy string as parameter
 # set $dayofweek
 # next day if $flag
-sub getweek {
+sub getweek
+{
    my $flag = shift;              
                                    
    my $t = date_to_days($date1[1],$date1[0]-1,$year);
