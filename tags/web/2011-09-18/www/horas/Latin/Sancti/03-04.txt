@@ -1,0 +1,72 @@
+[Rank]
+S. Casimiri, confessor;;Semiduplex;;2.1;;vide C5
+
+[Rank1960]
+S. Casimiri;;Duplex;;3;;vide C5
+
+[RankNewcal]
+S. Casimiri;;Semiduplex;;2.1;;vide C5
+
+[Rule]
+vide C5;
+9 lectiones;
+CPapaM=Lucium;
+Lectio1 Quad
+scriptura1960
+
+[Oratio]
+Deus, qui inter regales delicias, et mundi illecebras, sanctum Casimirum~
+virtute constantiae roborasti: quaesumus; ut ejus intercessione fideles tui~
+terrena despiciant, et ad coelestia semper aspirent.
+$Per Dominum
+
+[Commemoratio]
+!Commemoratio S. Lucii I. Papae et Mart
+@Commune/C2:Oratio proper
+_
+$Oremus
+Deus qui nos beati Lucii Martyris tui atque Pontificis annua~
+solemnitate laetificas: concede propitius; ut cujus natalitia colimus,~
+de eiusdem etiam protectione gaudeamus.
+$Per Dominum.
+
+[Lectio1]
+@Commune/C5:Lectio11
+
+[Lectio2]
+@Commune/C5:Lectio21
+
+[Lectio3]
+@Commune/C5:Lectio31
+
+[Lectio4]
+Casimirus, patre Casimiro, matre Elisabetha Austriaca, Polonise regibus ortus, a~
+ pueritia sub optimis magistris, pietate et bonis artibus instructus, juveniles~
+artus aspero domabat cilicio, et assiduis extenuabat jejuniis. Regii spreta~
+lecti mollitie, dura cubabat humo, et clam intempesta nocte, prae foribus~
+templorum pronus in terra divinam exorabat clementiam. In Christi contemplanda~
+passione assiduus, Missarum solemniis adeo erecta in Deum mente solebat adesse,~
+ut extra se rapi videretur.
+
+[Lectio5]
+Catholicam promovere fidem summopere studiit, et Ruthenorum schisma abolere:~
+quapropter Casimirum patrem induxit, ut legem ferret, ne schismatici nova templa~
+ construerent, nec vetera collabentis restaurarent. Erga pauperes et~
+calamitatibus oppressos beneficus et misericors, patris et defensoris egenorum~
+nomen obtinuit. Virginitatem, quam ab incunabulis servavit illaesam, sub extremo~
+ vitae termino fortiter asseruit, dum gravi pressus infirmitate, mori potius~
+quam castitatis jacturam ex medicorum consilio subire, constanter decrevit.
+
+[Lectio6].
+Consummatus in brevi, virtutibus et meritis plenus, praenuntiato mortis die,~
+inter sacerdotum et religiosorum choros' spiritum Deo reddidit, anno aetatis~
+vigesimo quinto. Corpus Vilnam deletum multis claret miraculis. Etenim~
+praeterquam quod puella defuncta vitam, caeci visum, claudi gressum, et varii~
+infirmi sanitatem ad ejus sepulchrum recuperarunt; Lithuanis exiguo numero ad~
+potentissimi hostis insperatam irruptionem trepidantibus in aere apparens,~
+insignem tribuit victoriam. Quibus permotus Leo decimus eumdem Sanctorum~
+catalogo adscripsit.
+
+[Lectio94]
+Casimírus, Polóniæ régis fílius, a puerítia pietáte et bonis ártibus instrúctus, iuveniles artus áspero domábat cilício, et assíduis extenuábat ieiúniis. In Christi contemplánda passióne assíduus, oratiónis spiritum non relaxábat. Cathólicam fidem promovére, et Ruthenórum schisma abolére summópere stúduit. Erga páuperes et calamitátibus oppréssos benéficus et misérciors, patris at defensóris egenórum nomen obtínuit. Virginitátem usque ad extrémum vitæ términum constánter servávit illäsam. Consummátus in brevi, virtútibus et méritis plenus, prænuntiáto mortis die, spíritum Deo réddidit, anno ætátis vigésimo quinto. Eum, miráculis clarum, Leo décimus in Sanctórum númerum réttulit.
+&teDeum
