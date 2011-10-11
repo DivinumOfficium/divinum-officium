@@ -60,8 +60,11 @@ GetOptions(
 
 die "Do not specify --update with other options.\n" if $update && ($new_base_url || $filter);
 
-$new_base_url = $ENV{DIVINUM_OFFICIUM_URL} unless $new_base_url;
-$new_base_url = 'http://divinumofficium.com' unless $new_base_url;
+unless ( $update )
+{
+    $new_base_url = $ENV{DIVINUM_OFFICIUM_URL} unless $new_base_url;
+    $new_base_url = 'http://divinumofficium.com' unless $new_base_url;
+}
 
 my @filter = split(',', $filter);
 push @filter, '-site' unless $filter =~ /site/;
@@ -91,7 +94,7 @@ foreach my $file ( @ARGV )
                 my $old_base_url = $1;
                 my $query = $2;
 
-                my $new_url = "$new_base_url$query";
+                my $new_url = $new_base_url ? "$new_base_url$query" : $url;
                 print STDERR "$new_url\n";
 
                 my @new_result = `curl -s '$new_url'`;
