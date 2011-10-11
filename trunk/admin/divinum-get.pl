@@ -69,6 +69,7 @@ GetOptions(
     'to=s' => \$to,
     'dir=s' => \$dir,
     'url=s' => \$base_url,
+    'entry=s' => \$entry,
     'cgi=s' => \@cgi
 ) or die $USAGE;
 
