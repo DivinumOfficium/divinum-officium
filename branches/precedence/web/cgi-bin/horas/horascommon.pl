@@ -532,10 +532,11 @@ sub getrank {
   if ($srank[2] && ($version !~ /1960/ || $srank[2] > 1.1) && 
     ($srank[2] > $trank[2] || 
     ($srank[2] >= 5 && ($trank[0] =~ /Quattuor/i) || 
-      ($srank[2] >= 5 &&
-        ($version !~ /1960/ || ($hora =~ /(Vespera|Completorium)/i && $tvesp == 1 && $svesp == 3 && $srank[2] == $trank[2])) &&
-        $trank[0] =~ /Dominica/i &&
-        $trank[0] !~ /Nat1/i))) && 
+      ($trank[0] =~ /Dominica/i &&
+        ($srank[2] >= 5 &&
+          ($version !~ /1960/ || ($hora =~ /(Vespera|Completorium)/i && $tvesp == 1 && $svesp == 3 && $srank[2] == $trank[2])) &&
+          $trank[0] !~ /Nat1/i)) ||
+        ($saint{Rule} =~ /Festum Domini/i && (($version !~ /1960/ && ($srank[2] >= 5 || ($srank[2] >= 2 && $trank[2] <= 5))) || ($srank[2] >= 5 && $trank[2] <= 5))))) && 
     ($dayofweek != 6 || $srank[2] >= 2 || $srank =~ /Vigil/i || !$trank[2] || 
     ($vflag && $srank[2] >= $trank[2] && $srank[2] > 1 && $srank[2] < 5 && $dayofweek != 5) ||
     ($dayofweek == 0 && $srank[2] >= 5 )
