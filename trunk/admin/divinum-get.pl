@@ -74,7 +74,7 @@ GetOptions(
 ) or die $USAGE;
 
 die $USAGE unless $hora && grep $hora eq $_, @horae;
-die $USAGE unless $version;
+die $USAGE unless $version_arg;
 
 # Translate version_arg to version
 my $matches = 0;
