@@ -248,6 +248,30 @@ sub setup {
 
 }
 
+# cleanse(s)
+# Return tainted string s cleansed of dangerous characters.
+sub cleanse($)
+{
+    my $str = shift;
+    unless ( $str =~ /^\w*$/ )
+    {
+        # Complex params are generally ;-separated chunks where
+        # a chunk is either an identifier or a quoted string of assorted chars,
+        # possibly preceded by an assignment $id= .
+        @parts = split(/;/, $str);
+        foreach my $part ( @parts )
+        {
+            unless ( $part =~ /^([\w +-]*|'[\w +-]*'|\$\w+='[\w +-]*')$/i )
+            {
+                print STDERR "erasing $part\n";
+                $part = '';
+            }
+        }
+        $str = join(';',@parts)
+    }
+    return $str;
+}
+
 #*** getsetupvalue($name)
 # gets the input values of the table and saves the result as $name item into %setup hash
 # the setup item contains $var='value' duple semicolon ;; separated lines. Value is 
@@ -263,7 +287,7 @@ sub getsetupvalue {
   for ($i = 0; $i < @script; $i++) {
      $script[$i] =~ s/\=/\~\>/;
      my @elems = split('~>', $script[$i]); 
-     my $value = $q->param("I$i");
+     my $value = cleanse($q->param("I$i"));
 	 if (!$value && $value ne '0') {$value = '';}
 	 if ($value =~ /^on$/) {$value = 1;}
 	 $value =~ s/\n/  /g;     
@@ -276,8 +300,6 @@ sub getsetupvalue {
   $setup{$name} = $script;
 }
 
-
-     
 #*** beep()
 # generates a beep sound. Inactive in cgi version
 sub beep {
@@ -287,7 +309,7 @@ sub beep {
 # get the parameter value for name, empty string if undef
 sub strictparam {
    my $pstr = shift;
-   my $v = $q->param($pstr);
+   my $v = cleanse($q->param($pstr));
    if (! defined($v)) {$v = '';}
    return $v;
 }
@@ -318,6 +340,14 @@ sub setfont {
   return "$font$bold$italic$text$italice$bolde</FONT>";
 }
 
+# Fetch and cleanse cookies
+sub fetch_cookies()
+{
+    my %cookies = fetch CGI::Cookie;
+    $_->value(cleanse($_->value)) for values %cookies;
+    return %cookies;
+}
+
 #*** getcookies($cname, $setupname)
 # get the cookie named as cname and sets the values into $setupname group
 # separates the perl scripts from the stack array
@@ -332,7 +362,7 @@ sub getcookies {
   $check = $setup{$checkname};
   $check =~ s/\s//g;
 
-  %cookies = fetch CGI::Cookie;
+  %cookies = fetch_cookies();
   foreach (keys %cookies) {
     my $c = $cookies{$_};
     if ($c->name =~ /$cname/) {$sti = $c->value;}
@@ -412,7 +442,7 @@ sub getcookie1 {
   my $cname = shift;
   my $sti = 0;
 
-  %cookies = fetch CGI::Cookie;
+  %cookies = fetch_cookies();
   foreach (keys %cookies) {
     my $c = $cookies{$_};
     if ($c->name =~ /$cname/) {$sti = $c->value;}
