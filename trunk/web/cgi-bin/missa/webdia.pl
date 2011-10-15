@@ -261,7 +261,7 @@ sub cleanse($)
         @parts = split(/;/, $str);
         foreach my $part ( @parts )
         {
-            unless ( $part =~ /^([\w +-]*|'[\w +-]*'|\$\w+='[\w +-]*')$/i )
+            unless ( $part =~ /^([\w (),+-]*|'[\w (),+-]*'|\$\w+='[\w (),+-]*')$/i )
             {
                 print STDERR "erasing $part\n";
                 $part = '';
