@@ -30,7 +30,7 @@ Initiale font~>$initiale~>Entry~>12;;
 Large font~>$largefont~>Entry~>12;;
 Small font~>$smallfont~>Entry~>12;;
 Title font~>$titlefont~>Entry~>12;;
-Screen height~>$screenheight~>Entry~>12;;
+Screan height~>$screenheight~>Entry~>12;;
 
 #defaults for the widgets, unused
 [general]
