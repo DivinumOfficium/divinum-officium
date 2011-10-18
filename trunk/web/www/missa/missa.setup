@@ -11,9 +11,10 @@ $largefont='+1 bold italic red';;
 $smallfont='1 red';;
 $titlefont='+1 red';;
 $screenheight='1024';;
+$textwidth='80';;
 
 [parameterscheck]
-ttobcccccccn
+ttobcccccccnn
 
 [general]
 $version1='Rubrics 1960';;

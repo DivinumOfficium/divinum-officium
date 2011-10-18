@@ -11,6 +11,7 @@ Large font~>$largefont~>Entry~>12;;
 Small red~>$smallfont~>Entry~>12;;
 Title font~>$titlefont~>Entry~>12;;
 Screen height~>$screenheight~>Entry~>12;;
+Text width percent~>$textwidth~>Entry~>12;;
 
 [general]
 Expand~>$expand~>Optionmenu~>{all,psalms,none,skeleton};;
