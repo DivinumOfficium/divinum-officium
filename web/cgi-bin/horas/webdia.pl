@@ -553,7 +553,14 @@ sub table_start {
     @ctext1 = splice(@ctext1, @ctext1);
     @ctext2 = splice(@ctext2, @ctext2);
   }
-  print "<TABLE BORDER=$border ALIGN=CENTER CELLPADDING=8 WIDTH=80%>";
+  my $width = (
+      $textwidth                &&
+      $textwidth =~ /^[0-9]+$/  &&
+      50 <= $textwidth          &&
+      $textwidth <= 100) ?
+      "$textwidth\%" :
+      '80%';
+  print "<TABLE BORDER=$border ALIGN=CENTER CELLPADDING=8 WIDTH=$width>";
 }
 
 #antepost('$title')

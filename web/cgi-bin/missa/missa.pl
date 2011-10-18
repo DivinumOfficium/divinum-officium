@@ -134,6 +134,12 @@ if ($p) {
   setsetupvalue('parametrs', 11, $screenheight);
 }
 
+$p = strictparam('textwidth');
+if ($p) {
+  $textwidth = $p;
+  setsetupvalue('parametrs', 12, $screenheight);
+}
+
 #expand (all, psalms, nothing, skeleton) parameter
 $flag = 0;
 $p = strictparam('lang2');
