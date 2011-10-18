@@ -948,7 +948,8 @@ sub lect1960 {
     if ($winner{Rank} =~ /ss\./i) {$j++;}  
     $a[3] = $a[$j];
   }
-  if ($rule =~ /Ipsa Virgo Virginum/i) {$a[4] = $a[10];} 
+  if ($rule =~ /Ipsa Virgo Virginum/i || $winner{Rank} =~ /Mari\w*\b\s*Virgin/i) {$a[3] = $a[10];}
+  if ($rule =~ /Quorum Festum/i && !$divaux) {$a[3] = $a[7];}
   $w = $w{'Lectio1'};
   if (!$w) {$w = $s{'Lectio1'};}  
   if ($w =~ /\!(Matt|Mark|Luke|John) [0-9]+\:[0-9]/i) {$a[2] = $benedictio{Evangelica};}
