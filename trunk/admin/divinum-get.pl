@@ -8,7 +8,7 @@ use Date::Calc
 
 my ($y, $m, $d) = Today();
 
-my @horae = qw/Matutinum Laudes Prima Tertia Sexta Nona Vespera Completorium/;
+my @horae = qw/Matutinum Laudes Prima Tertia Sexta Nona Vespera Completorium SanctaMissa/;
 my $horae_list = join(' ', @horae);
 
 my @versions = (
@@ -26,7 +26,7 @@ my $params_list = join(' ', @params);
 
 my $USAGE = <<USAGE ;
 Establish divinumofficium web results for a given hour and a range of dates.
-Usage: divinum-get --hora=HORA [option...]
+Usage: divinum-get [--hora=HORA|--missa] [option...]
 
 Options:
 --version=VERSION   rubric version [no default]
@@ -36,6 +36,7 @@ Options:
 --url=BASE          base URL of site to download from
                     [default: http://divinumofficium.com]
 --entry=PATH        relative URL of entry point [default: horas/officium.pl]
+--missa             uses --entry=missa/missa.pl and --hora=SanctaMissa
 --cgi=PARAM=VALUE   query parameters passed directly as P1=V1&P2=V2...
 HORA                [$horae_list]
 VERSION             [$version_list]
@@ -58,6 +59,7 @@ my $from = "$m-$d-$y";
 my $to;
 my $dir;
 my $base_url;
+my $missa;
 my @cgi = ();
 
 $base_url = 'http://divinumofficium.com';
@@ -70,11 +72,19 @@ GetOptions(
     'dir=s' => \$dir,
     'url=s' => \$base_url,
     'entry=s' => \$entry,
+    'missa' => \$missa,
     'cgi=s' => \@cgi
 ) or die $USAGE;
 
-die $USAGE unless $hora && grep $hora eq $_, @horae;
-die $USAGE unless $version_arg;
+die $USAGE unless $missa || ($hora && grep $hora eq $_, @horae);
+
+if ( $missa )
+{
+    $entry = 'missa/missa.pl';
+    $hora = 'SanctaMissa';
+}
+
+die "A --version must be specified.\n" unless $version_arg;
 
 # Translate version_arg to version
 my $matches = 0;

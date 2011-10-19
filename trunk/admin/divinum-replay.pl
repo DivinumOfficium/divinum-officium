@@ -274,20 +274,16 @@ foreach my $file ( @ARGV )
                                 my $new = $new[0];
                                 chomp $old if $old;
                                 chomp $new if $new;
-                                if ( $old && $new )
+                                if ( defined $old && defined $new )
                                 {
-                                    chomp $old;
-                                    chomp $new;
                                     print "CHANGED $old TO $new\n";
                                 }
-                                elsif ( $old )
+                                elsif ( defined $old )
                                 {
-                                    chomp $old;
                                     print "REMOVED $old\n";
                                 }
-                                else
+                                elsif ( defined $new )
                                 {
-                                    chomp $new;
                                     print "ADDED $new\n";
                                 }
                                 @old = @old[1 .. $#old];
