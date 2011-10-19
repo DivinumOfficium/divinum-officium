@@ -528,16 +528,59 @@ sub getrank {
 
   if ($testmode =~ /seasonal/i && $version =~ /1960/ && $srank[2] < 5 && $dayname[0] =~ /Adv/i) 
     {$srank[2] = 1;}   
+    
+  # Flag to indicate whether office is sanctoral or temporal. Assume the
+  # latter unless we find otherwise.
+  my $sanctoraloffice = 0;
+  
+  # Sort out occurrence and concurrence between the sanctoral and
+  # temporal cycles.
+  
+  # Dispose of some cases in which the office can't be sanctoral:
+  # if we have no sanctoral office, or it was reduced to a
+  # commemoration by Cum nostra.
+  if (!$srank[2] || ($version =~ /(1955|1960)/ && $srank[2] <= 1.1)) {
+    # Office is temporal; flag is correct.
+  }
+  # Simple feasts give way to the office of our Lady on a Saturday.
+  elsif (($dayofweek == 6 || ($dayofweek == 5 && $hora =~ /(Vespera|Completorium)/i)) &&
+    $trank[2] && $srank[2] < 2 && $srank !~ /Vigil/i) {
+   # Office is temporal; flag is correct.
+  }
+  # Main case: If the sanctoral office outranks the temporal, the
+  # former takes precedence.
+  elsif ($srank[2] > $trank[2]) {
+    $sanctoraloffice = 1;
+  }
+  # On some Sundays, the sanctoral office can still win in certain
+  # circumstances, even if it doesn't outrank the Sunday numerically.
+  elsif ($trank[0] =~ /Dominica/i && $dayname[0] !~ /Nat1/i) {
+    if ($version =~ /1960/) {
+      # With the 1960 rubrics, II. cl. feasts of the Lord and all I. cl.
+      # feasts beat II. cl. Sundays.
+      if ($trank[2] <= 5 && ($srank[2] >= 6 || ($srank[2] >= 5 && $saint{Rule} =~ /Festum Domini/i))) {
+        $sanctoraloffice = 1;
+      }
+      # Still in 1960, in concurrence of days of equal rank, the
+      # preceding office takes precedence.
+      elsif ($hora =~ /(Vespera|Completorium)/i && $tvesp == 1 && $svesp == 3 && $srank[2] == $trank[2]) {
+        $sanctoraloffice = 1;
+      }
+    }
+    # Pre-1960, feasts of the Lord of nine lessons take precedence over
+    # a lesser Sunday.
+    elsif ($saint{Rule} =~ /Festum Domini/i && $srank[2] >= 2 && $trank[2] <= 5) {
+      $sanctoraloffice = 1;
+    }
+    # Again pre-1960, doubles of at least the II. cl. (and privileged
+    # octave days) beat all Sundays in concurrence.
+    elsif ($hora =~ /(Vespera|Completorium)/i && ($tvesp != $svesp) && $srank[2] >= 5) {
+      $sanctoraloffice = 1;
+    }
+  }
 
-  #Winner is a saint (> or >= ???)
-  if ($srank[2] && ($version !~ /1960/ || $srank[2] > 1.1) && 
-    ($srank[2] > $trank[2] || 
-	($srank[2] >= 5 && ($trank[0] =~ /Quattuor/i) || 
-	   ($srank[2] >= 5 && $version !~ /1960/ && $trank[0] =~ /Dominica/i && $trank[0] !~ /Nat1/i))) && 
-    ($dayofweek != 6 || $srank[2] >= 2 || $srank =~ /Vigil/i || !$trank[2] || 
-    ($vflag && $srank[2] >= $trank[2] && $srank[2] > 1 && $srank[2] < 5 && $dayofweek != 5) ||
-    ($dayofweek == 0 && $srank[2] >= 5 )
-    || ($version =~ /1960/ && $dayofweek == 6 && $srank[2] >= 5 && $trank[2] < 6))) {   
+  # Office is sanctoral.
+  if ($sanctoraloffice) {   
     $rank = $srank[2];     
 	  $dayname[1] = "$srank[0] $srank[1]"; 
     $winner = $sname;  
@@ -1058,12 +1101,15 @@ sub precedence {
 
 }
 
-#*** monthday($flag)
+#*** monthday($forcetomorrow)
 # returns an empty string or mmn-d format 
 # e.g. 081-1 for monday after the firs Sunday of August
 sub monthday {
-  my $flag = shift;	  
-  $flag = ($tvesp == 1) ? 1 : 0;
+  my $forcetomorrow = shift;
+  my $tomorrow;
+  
+  # Get tomorrow's date if the caller requested it or if we're saying first Vespers.
+  $tomorrow = ($forcetomorrow || $tvesp == 1);
 
   if ($month < 7 || $dayname[0] =~ /Adv/i) {return '';} 
 
@@ -1085,7 +1131,7 @@ sub monthday {
   }
 
   my ($d1, $m1, $y1, $dow) = ($day, $month, $year, $dayofweek);
-  if ($flag) {($d1, $m1, $y1) = nday($day, $month, $year); $dow = ($dayofweek + 1) % 7;}
+  if ($tomorrow) {($d1, $m1, $y1) = nday($day, $month, $year); $dow = ($dayofweek + 1) % 7;}
       
   my $ta = date_to_days( $d1, $m1 - 1, $y1); 
   if ($ta < $ftime[0]) {return '';}
@@ -1097,7 +1143,7 @@ sub monthday {
   my $weeks = floor($tdays / 7); 
   if ($m == 12 && ($weeks > 0 || $version =~ /1960/)) {
     my $t = date_to_days($date1[1],$date1[0]-1,$date1[2]);
-    if ($flag) {$t += 1;}
+    if ($tomorrow) {$t += 1;}
     my $advent1 = getadvent($year);
     my $wdist = floor(($advent1 - $t - 1) / 7);    
     $weeks = 4 - $wdist;  
