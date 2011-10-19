@@ -816,7 +816,6 @@ sub ant_Magnificat {
   }
 								      
   my $v = ($version =~ 1960 && $winner =~ /Sancti/i && $rank < 5) ? 3 : $vespera;
-  if ($version =~ /1960/ && $commune =~ /C[45]a/i && $rank < 5) {$v = 1;}
                    
   my ($a, $c) = getantvers('Ant', $v, $lang);   
   if ($version !~ /Trident/i && $winner{Rule} =~ /OPapaC=([a-z ]*)\;/i && $v == 3) {
