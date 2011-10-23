@@ -1524,7 +1524,7 @@ sub papal_rule($%)
   my ($rule, %params) = @_;
   my $classchar = $params{'commemoration'} ? 'C' : 'O';
   
-  return ($rule =~ /${classchar}Papa([CMD])=([\w\s]*?);/i);
+  return ($rule =~ /${classchar}Papa([CMD])=(.*?);/i);
 }
 
 
