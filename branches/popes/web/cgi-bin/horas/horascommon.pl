@@ -1550,7 +1550,7 @@ sub papal_collect($$;$)
   
   # If we're not a martyr, get rid of the bracketed part; if we are,
   # then just get rid of the brackets themselves.
-  if ($class !~ /M/i) {$collect =~ s/\(.*?\)//;}
+  if ($class !~ /M/i) {$collect =~ s/\s*\(.*?\)//;}
   else {$collect =~ tr/()//d;}
   
   return $collect;
