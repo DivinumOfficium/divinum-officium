@@ -976,16 +976,10 @@ sub oratio
         if ($w && $hora !~ /Matutinum/i) {setbuild($winner, "Oratio $i", 'try');}
     }
 
-    if ($version !~ /Trident/i && $w{Rule} =~ /OPapa([CM])=(.*?)\;/i) {
-    my $martyr = $1;
-    my $name = $2;
-    my %c = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-    my $num = ($name =~ /( et |and|és)/i) ? 91 : 9;
-    $w = $c{"Oratio$num"};	  
-    $w =~ s/ N\.([a-z ]+N\.)*/ $name/;
-    if ($martyr !~ /M/i) {$w =~ s/\(.*?\)//;}
-    else {$w =~ s/[\(\)]//g;} 
-    if ($w && $hora !~ /Matutinum/i) {setbuild2("Oratio Gregem tuum");}
+    # Special processing for Common of Supreme Pontiffs.
+    if ($version !~ /Trident/i && (my ($class, $name) = papal_rule($w{Rule}))) {
+      $w = papal_collect($class, $name);
+      if ($w && $hora !~ /Matutinum/i) {setbuild2("Oratio Gregem tuum");}
     }
              
     if (!$w && $commune) { 
@@ -1306,17 +1300,15 @@ sub getcommemoratio {
   }
   if (!$o) {$o = $w{"Oratio $ind"};}
   if (!$o) {$i = 4 - $ind; $o = $w{"Oratio $i"};}
-  if (!$o) {$o = $c{"Oratio"};}  
+  if (!$o) {$o = $c{"Oratio"};}
+  
+  # Special processing for Common of Supreme Pontiffs.
   my $martyr = '';	
   my %cp = {};	
-  if ($version !~ /Trident/i && $w{Rule} =~ /OPapa([CMD])=([a-z ]*)\;/i) {
-    $martyr = $1;
-	my $name = $2;
+  if ($version !~ /Trident/i && (($martyr, my $name) = papal_rule($w{Rule}))) {
 	%cp = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
 	$o = $cp{'Oratio9'};	  
-	$o =~ s/ N\.([a-z ]+N\.)*/ $name/; 
-    if ($martyr !~ /M/i) {$o =~ s/\(.*?\)//;}
-	else {$o =~ s/[\(\)]//g;}
+	$o = papal_collect($martyr, $name, $o);
   }
   if (!$o) {return '';}
 
@@ -1818,17 +1810,12 @@ sub getrefs {
       }	
 	  
 
-      if ($version !~ /Trident/i && $rule =~ /CPapa([CM])\=([a-z ]*)\;/i) {	
-        my $martyr = $1;
-		my $name = $2;	
-		my %cp = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	    $o = $cp{'Oratio9'};
-	    $o =~ s/ N\.([a-z ]+N\.)*/ $name/;
-        if ($martyr !~ /M/i) {$o =~ s/\(.*?\)//;}
-	    else {$o =~ s/[\(\)]//g;}
+      # Special processing for Common of Supreme Pontiffs.
+      if ($version !~ /Trident/i && $item =~ /Gregem/i && (my ($class, $name) = papal_commem_rule($rule))) {
+		$o = papal_collect($class, $name);
 	    if ($after =~ /!Commem/i) {$after = "$&$'"} else {$after = '';}
 	    $o = "\$Oremus\n" . $o; 
-	  } 
+	  }
 
 	  $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$o" . "_\n$after";  
       next;

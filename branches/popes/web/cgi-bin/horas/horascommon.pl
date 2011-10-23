@@ -1501,3 +1501,57 @@ sub jtoi
     $t = join('', @parts);
     return $t;
 }
+
+
+#*** papal_commem_rule($rule)
+#  Determines whether a rule contains a clause for a commemorated Pope.
+#  Returns a list ($class, $name), as for papal_rule.
+sub papal_commem_rule($)
+{
+  return papal_rule(shift, (commemoration => 1));
+}
+
+#*** papal_rule($rule, %params)
+#  Determines whether a rule contains a clause for the office of a
+#  Pope. If $params{'commemoration'} is true, a commemorated Pope
+#  (only) is checked for; otherwise, only in the office of the day.
+#
+#  Returns a list ($class, $name), where $class is 'C', 'M' or 'D' as
+#  the Pope is a confessor, doctor or martyr, respectively; and $name
+#  is the Pope's name. The empty list is returned if there is no match.
+sub papal_rule($%)
+{
+  my ($rule, %params) = @_;
+  my $classchar = $params{'commemoration'} ? 'C' : 'O';
+  
+  return ($rule =~ /${classchar}Papa([CMD])=([\w\s]*?);/i);
+}
+
+
+#*** papal_collect($class, $name[, $collect])
+#  Returns the collect from the Common of Supreme Pontiffs, where
+#  $class and $name are as returned by papal_rule, and $collect
+#  optionally contains the template (otherwise, it will be read from
+#  the common).
+sub papal_collect($$;$)
+{
+  my ($class, $name, $collect) = @_;
+  
+  # Get the collect from the common, unless the caller gave it to us.
+  unless ($collect)
+  {
+    my %common = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
+    my $num = ($name =~ /( et |and|és)/i) ? 91 : 9;  # Many Popes, or one?
+    $collect = $common{"Oratio$num"};
+  }
+  
+  # Fill in the name(s).
+  $collect =~ s/ N\.([a-z ]+N\.)*/ $name/;
+  
+  # If we're not a martyr, get rid of the bracketed part; if we are,
+  # then just get rid of the brackets themselves.
+  if ($class !~ /M/i) {$collect =~ s/\(.*?\)//;}
+  else {$collect =~ tr/()//d;}
+  
+  return $collect;
+}

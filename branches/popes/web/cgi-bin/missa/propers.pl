@@ -157,14 +157,9 @@ sub oratio {
   if ($dayofweek > 0 && exists($w{$type ."W"})) {$w = $w{$type . "W"};}
   else {$w = $w{$type};}
 
-  if ($version !~ /Trident/i && $w{Rule} =~ /OPapa([CMD])=([a-z ]*)\;/i) {
-    my $martyr = $1;
-	my $name = $2;
-	my %c = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	$w = $c{$type . '9'};	  
-	$w =~ s/ N\.([a-z ]+N\.)*/ $name/;
-    if ($mart !~ /M/i) {$w =~ s/\(.*?\)//;}
-	else {$w =~ s/[\(\)]//;}
+  # Special processing for Common of Supreme Pontiffs.
+  if ($version !~ /Trident/i && (my ($class, $name) = papal_rule($w{Rule}))) {
+	$w = papal_collect($class, $name, $w);
 	setbuild2("$type Gregem tuum");
   }
   	 		 
@@ -398,16 +393,9 @@ sub getcommemoratio {
     else {$o = $w1{$type};}
   }
   
-  my $martyr = '';	
-  my %cp = {};	
-  if ($version !~ /Trident/i && $w{Rule} =~ /OPapa([CMD])=([a-z ]*)\;/i) {
-    $martyr = $1;
-	my $name = $2;
-	my %cp = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	$o = $cp{$type . '9'};	  
-	$o =~ s/ N\.([a-z ]+N\.)*/ $name/;
-    if ($mart !~ /M/i) {$o =~ s/\(.*?\)//;}
-	else {$o =~ s/[\(\)]//;}
+  # Special processing for Common of Supreme Pontiffs.
+  if ($version !~ /Trident/i && (my ($class, $name) = papal_rule($w{Rule}))) {
+	$o = papal_collect($martyr, $name, $o);
   } 
   if (!$o) {return '';}
   
@@ -631,18 +619,15 @@ sub getrefs {
       if ($item !~ /proper/) {
         $o = $s{$item};	 
 		    if (!$o) {$o = "$file:$item missing\n";}
-      }				               
-      if ($version !~ /Trident/i && $rule =~ /CPapa([CMD])\=([a-z ]*)\;/i) {	
-        my $name = $2;	
-		    my %cp = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	      $o = $cp{'Oratio9'};	
-	      $o =~ s/ N\.([a-z ]+N\.)*/ $name/;
-        if ($mart !~ /M/i) {$o =~ s/\(.*?\)//;}
-	      else {$o =~ s/[\(\)]//;}
-	      $after = '';
-	    } 
+      }
+      
+      # Special processing for Common of Supreme Pontiffs.
+      if ($version !~ /Trident/i && $item =~ /Gregem/i && (my ($class, $name) = papal_commem_rule($rule))) {
+		$o = papal_collect($class, $name, $o);
+	    $after = '';
+	  } 
 
-	    $w = $before . $o . $after; 
+	  $w = $before . $o . $after; 
       next;
     }
 		 

@@ -818,11 +818,12 @@ sub ant_Magnificat {
   my $v = ($version =~ 1960 && $winner =~ /Sancti/i && $rank < 5) ? 3 : $vespera;
                    
   my ($a, $c) = getantvers('Ant', $v, $lang);   
-  if ($version !~ /Trident/i && $winner{Rule} =~ /OPapaC=([a-z ]*)\;/i && $v == 3) {
-    my $martyr = $1;
-	  my $name = $2;
-	  my %c = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	  $a = $c{'Ant 9'};	  
+  
+  # Special processing for Common of Supreme Pontiffs. Confessor-Popes
+  # have a common Magnificat antiphon at second Vespers.
+  if ($version !~ /Trident/i && $v == 3 && (my ($class) = papal_rule($winner{Rule})) && $class =~ /C/i) {
+	my %c = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
+	$a = $c{'Ant 9'};	  
   }
   
   if ($month ==12 && ($day > 16 && $day < 24) && $winner =~ /tempora/i) {
