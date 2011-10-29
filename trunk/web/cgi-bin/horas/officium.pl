@@ -83,7 +83,7 @@ $setupsave = strictparam('setup');
 $setupsave =~ s/\~24/\"/g;
 
 our ($lang1, $lang2, $expand, $column, $accented, $local);
-our %translate; #translation of the skeleton label for 2nd language 
+our %translate; #translation of the skeleton labels
 
 #internal script, cookies
 %dialog = %{setupstring("$datafolder/horas.dialog")};
@@ -179,7 +179,7 @@ if ($flag) {
   setcookies('horasgo', 'general');
 }
 if (!$expand) {$expand = 'psalms';}
-if (!$version) {$version = 'Divino Afflatu';}
+if (!$version) {$version = 'Rubrics 1960';}
 if (!$lang2) {$lang2 = 'English';}
 $only = ($lang1 =~ /^$lang2$/i) ? 1 : 0;
 

@@ -30,7 +30,7 @@ our $Tk = 0;
 our $Hk = 0;
 our $Ck = 0;
 our $officium = 'Pofficium.pl';
-our $version = 'Divino Afflatu';
+our $version = 'Rubrics 1960';
 @versions = ('Trident 1570', 'Trident 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
 
 #***common variables arrays and hashes
@@ -158,7 +158,7 @@ if ($flag) {
   setsetup('general', $expand, $version, $lang2, $accented);
   setcookies('horasgp', 'general');
 }
-if (!$version) {$version = 'Divino Afflatu';}
+if (!$version) {$version = 'Rubrics 1960';}
 if (!$lang2) {$lang2 = 'English';}
 $only = ($lang1 =~ $lang2) ? 1 : 0;
 
