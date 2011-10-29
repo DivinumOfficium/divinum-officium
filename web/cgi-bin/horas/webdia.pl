@@ -18,6 +18,7 @@ sub htmlHead {
   my $flag = shift;
   if (!$title) {$title = ' ';}
   print "Content-type: text/html; charset=ISO-8859-1\n\n"; 
+#  print "Content-type: text/html; charset=UTF-8\n\n"; 
 
 
   print << "PrintTag";
@@ -456,13 +457,20 @@ sub getcookie1 {
 
 #*** setcross($line)
 # changes +++, ++ + to crosses in the line
+# +++ is "make a cross with finger and thumb on lips or heart"
+# ++ is "make three crosses with thumb, on forehead, lips, and heart, at the Holy Gospel"
+# + is "make a cross over the forehead and abdomen: cross yourself"
 sub setcross {
   my $line = shift;	
-  my $csubst = "<IMG SRC=$htmlurl/cross3.gif ALIGN=BASELINE ALT=''>";
+  my $csubst;
+  $csubst = "<IMG SRC=$htmlurl/cross3.gif ALIGN=BASELINE ALT=''>";
+#  $csubst = "<font style='color:red'>\x{2716}</font>";
   $line =~ s/\+\+\+/$csubst/g;  
   $csubst = "<IMG SRC=$htmlurl/cross2.gif ALIGN=BASELINE ALT=''>";
+#  $csubst = "<font style='color:red'>\x{271D}</font>";
   $line =~ s/\+\+/$csubst/g;
   $csubst = "<IMG SRC=$htmlurl/cross1.gif ALIGN=BASELINE ALT=''>";
+#  $csubst = "<font style='color:red'>\x{2720}</font>";
   $line =~ s/ \+ / $csubst /g;	 
 
   return $line;

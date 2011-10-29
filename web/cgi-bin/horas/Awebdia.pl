@@ -408,12 +408,12 @@ sub ante_post{
   my $line =  setlink("\$$title", 0, $lang1); 
   $column = 1;
   my $str = 'Divinum Officium';
-  if ($lang1 !~ /Latin/i) {$str = $translate{$str};}
+  $str = $translate{$lang1}{$str};
   setcell("$line", $lang1);
   if (!$only) {
     $column = 2;
     $str = 'Divinum Officium';
-    if ($voicelang !~ /Latin/i) {$str = $translate{$str};}
+    $str = $translate{$voicelang}{$str};
     $line =  setlink("\$$title", 0, $lang2); 
     setcell("$line", $lang2);
   }

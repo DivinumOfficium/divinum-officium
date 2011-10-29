@@ -22,7 +22,9 @@ sub horas
     our $recitelimit = 0;
                        
     $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;    
-    %translate = %{setupstring("$datafolder/$tlang/Psalterium/Translate.txt")}; 
+    our %translate;
+    $translate{$lang1} = setupstring("$datafolder/$lang1/Psalterium/Translate.txt");
+    $translate{$lang2} = setupstring("$datafolder/$lang2/Psalterium/Translate.txt");
 
     %chant = %{setupstring("$datafolder/Latin/Psalterium/Chant.txt")};
 
@@ -123,6 +125,7 @@ sub getunit {
 sub resolve_refs {
   my $t = shift;        
   my $lang = shift;	 
+
   my @t = split("\n", $t); 	
 
   my $t = '';	
@@ -171,7 +174,7 @@ sub resolve_refs {
         my $l = $';
         if ($h =~ /(Benedictio|Absolutio)/) {	 
 	      my $str = $1;		   
-          if ($lang !~ /Latin/i) {$str = $translate{$str};} 
+          $str = translate($str, $lang);
 		  $h =~ s/(Benedictio|Absolutio)/$str/; 
 	    }
         $line = setfont($redfont, $h) . $l;
@@ -460,7 +463,7 @@ sub psalm {
     {$fname =~ s/88/88a/;}      
 
   my $str = 'Psalmus';                        
-  if ($lang !~ /Latin/i) {$str = translate($str);} 
+  $str = translate($str, $lang);
 
   my $pnum;
   if ($column == 1) {	
@@ -693,77 +696,139 @@ sub special_epi_invit {
 # sets a link for expand a skeleton chapter line or to call a popup
 sub setlink
 {
-  my $name = shift;
-  my $ind = shift;
-  my $lang = shift;	
-  my $disabled = ($name =~ /(omit|elmarad)/i) ? 'DISABLED' : ''; 
-  my $smallflag = ($name =~ /(ante|post)/i) ? 1 : 0;  
+    my $name = shift;
+    my $ind = shift;
+    my $lang = shift;	
+    my $disabled = ($name =~ /(omit|elmarad)/i) ? 'DISABLED' : ''; 
+    my $smallflag = ($name =~ /(ante|post)/i) ? 1 : 0;  
                                     
-  $name =~ s/\s*$//;  
-  my $suffix = '';			 
-  if ($name =~ /\{.*?\}/) {
-    $name =~ s/(\{.*?\})//; 
-  	$suffix = $1;
-    $suffix = setfont($smallblack, $suffix); 
-  }    													 
-  if ($name =~ /\&Gloria/ && $rule =~ /Requiem gloria/i) {$name = '$Requiem';}
+    $name =~ s/\s*$//;  
+    my $suffix = '';			 
+    if ($name =~ /\{.*?\}/)
+    {
+        $name =~ s/(\{.*?\})//; 
+        $suffix = $1;
+        $suffix = setfont($smallblack, $suffix); 
+    }    													 
+    if ($name =~ /\&Gloria/ && $rule =~ /Requiem gloria/i )
+    {
+        $name = '$Requiem';
+    }
                              
-  if (($name =~ /\&Gloria$/i && $dayname[0] =~ /Quad6/i && $dayofweek > 3 &&
-   !($version !~ /(1955|1960)/i && $dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i)) ||
-    ($name =~ /\&Gloria[12]/i && $dayname[0] =~ /(Quad[56])/i)
-        && $winner !~ /Sancti/i && $rule !~ /Gloria responsory/i)  {
-     $name = 'Gloria omittitur';    
-     if ($name !~ /^\#/ && $lang !~ /Latin/i) {$name = translate($name);} 
-     return setfont($smallfont, $name);
-  }
+    if (
+        (
+            $name =~ /\&Gloria$/i &&
+            $dayname[0] =~ /Quad6/i &&
+            $dayofweek > 3 &&
+            !(
+                $version !~ /(1955|1960)/i &&
+                $dayofweek == 6 &&
+                $hora =~ /(Vespera|Completorium)/i
+            )
+        ) ||
+        (
+            $name =~ /\&Gloria[12]/i &&
+            $dayname[0] =~ /(Quad[56])/i
+        ) &&
+        $winner !~ /Sancti/i &&
+        $rule !~ /Gloria responsory/i
+    )
+    {
+        $name = 'Gloria omittitur';    
+        if ( $name !~ /^\#/ ) {$name = translate($name, $lang);} 
+        return setfont($smallfont, $name);
+    }
 
-  my $t = linkcode($name, $ind, $lang, $disabled);
-  
-  if ($name =~ /\&Gloria1/i) {$name = "\&gloria";}
-  if ($name =~ /\&Gloria2/i) {$name = "\&Gloria";}
+    my $t = linkcode($name, $ind, $lang, $disabled);
 
-  
-  if (($name =~ /&Dominus_vobiscum1/i && !$priest  && !preces('Dominicales et Feriales')) ||
-  ($name =~ /&Dominus_vobiscum2/i && !$priest )) {
-	$name = 'secunda Domine exaudi omittitur'; 
-  if ($name !~ /^\#/ && $lang !~ /Latin/i) {$name = translate($name);} 
-	return setfont($smallfont, $name);
-  }
-  elsif ($name =~ /&Dominus/i && !$priest) {$name = '&Domine exaudi';}
-  elsif ($name =~ /&Dominus/) {$name =~ s/[12]//;}
-  elsif ($name =~ /&Alleluia/i && $dayname[0] =~ /Quad/i && !Septuagesima_vesp()) 
-    {$name = '&Laus tibi';}
-   
-   
+    $name = "\&gloria" if $name =~ /\&Gloria1/i;
+    $name = "\&Gloria" if $name =~ /\&Gloria2/i;
 
-  if ($name =~ /(Deus in adjutorium|Indulgentiam|Te decet)/i) {$suffix = " + $suffix";}
-  if ($name =~ /Domine labia/i) {$suffix = " ++ $suffix";}
-  
-  if ($name =~ /\&Benedicamus_Domino/i && (($dayname[0] =~ /(Pasc0)/i && 
-     $hora =~ /(Laudes|Vespera)/i) || Septuagesima_vesp())) {  
-     if ($name !~ /^\#/ && $lang !~ /Latin/i) {$name = translate($name);} 
-     $name .= '. Alleluia, alleluia';  
-  }                                   
-  elsif ($name !~ /^\#/ && $lang !~ /Latin/i) {$name = translate($name);} 
-                             
-  $name .= $suffix;	 
+    if (
+        ($name =~ /&Dominus_vobiscum1/i && !$priest  && !preces('Dominicales et Feriales'))
+        || ($name =~ /&Dominus_vobiscum2/i && !$priest ))
+    {
+        $name = 'secunda Domine exaudi omittitur'; 
+        $name = translate($name, $lang) if $name !~ /^\#/;
+        return setfont($smallfont, $name);
+    }
+    elsif ( $name =~ /&Dominus/i && !$priest )
+    {
+        $name = '&Domine exaudi';
+    }
+    elsif ( $name =~ /&Dominus/ )
+    {
+        $name =~ s/[12]//;
+    }
+    elsif ( $name =~ /&Alleluia/i && $dayname[0] =~ /Quad/i && !Septuagesima_vesp() ) 
+    {
+        $name = '&Laus tibi';
+    }
 
-  $name =~ s/[\#\$\&]//g;                             
-  
-  my $after = '';
-  if (!$Tk && $name =~ /\<input/i) {$name = $`; $after = "$&$'";}
-  if ($Tk && $name =~ /\{\^/) {$name = $`; $after = "$&$'";} 
-  
-  if ($disabled || $smallflag) {$name = setfont($smallblack, $name)}
-  elsif ($expand =~ /skeleton/i) {$name = setfont($largefont, substr($name, 0, 1)) . setfont($redfont, substr($name,1));}
-  else  {$name = setfont($largefont, substr($name, 0, 1)) . substr($name, 1); }
-  return "$t$name$after";
+    if ( $name =~ /(Deus in adjutorium|Indulgentiam|Te decet)/i )
+    {
+        $suffix = " + $suffix";
+    }
+    if ( $name =~ /Domine labia/i )
+    {
+        $suffix = " ++ $suffix";
+    }
+
+    if (
+        $name =~ /\&Benedicamus_Domino/i &&
+        (
+            ($dayname[0] =~ /(Pasc0)/i && 
+            $hora =~ /(Laudes|Vespera)/i) || Septuagesima_vesp()
+        )
+    )
+    {  
+        $name = translate($name, $lang) if $name !~ /^\#/;
+        $name .= '. Alleluia, alleluia';  
+    }                                   
+    elsif ( $name !~ /^\#/ )
+    {
+        $name = translate($name, $lang);
+    } 
+
+    $name .= $suffix;	 
+
+    $name =~ s/[\#\$\&]//g;                             
+
+    my $after = '';
+    if ( !$Tk && $name =~ /\<input/i )
+    {
+        $name = $`;
+        $after = "$&$'";
+    }
+    if ( $Tk && $name =~ /\{\^/ )
+    {
+        $name = $`;
+        $after = "$&$'";
+    } 
+
+    if ( $disabled || $smallflag )
+    {
+        $name = setfont($smallblack, $name);
+    }
+    elsif ( $expand =~ /skeleton/i )
+    {
+        $name =
+            setfont($largefont, substr($name, 0, 1)) .
+            setfont($redfont, substr($name,1));
+    }
+    else
+    {
+        $name = setfont($largefont, substr($name, 0, 1)) . substr($name, 1);
+    }
+    return "$t$name$after";
 }
 
 #*** translate($name)
 # return the translated name (called only for column2 if necessary)
 sub translate { 
   my $name = shift;	
+  my $lang = shift;
+
 
   my $n = $name;             
   my $prefix = '';
@@ -771,10 +836,16 @@ sub translate {
   $n =~ s/^\n*//;
   $n =~ s/\n*$//; 
   $n =~ s/\_/ /g;            
-  if (!exists($translate{$n})) {return $name;}
-  $n = $translate{$n}; 
-  if ($name !~ /(omit|elmarad)/i) {$n = $prefix.$n;}
-  $n =~ s/\n*$//;
+  if (!exists($translate{$lang}{$n}))
+  {
+      $n = $name;
+  }
+  else
+  {
+      $n = $translate{$lang}{$n}; 
+      if ($name !~ /(omit|elmarad)/i) {$n = $prefix.$n;}
+      $n =~ s/\n*$//;
+  }
 
   return "$n";
 }
@@ -1025,7 +1096,7 @@ sub getordinarium {
   my $lang = shift;
   my $command = shift;
   
-  my @script = splice(@script, @script);
+  my @script = ();
   my $fname = checkfile($lang, "Ordinarium/$command.txt");
   if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) 
     {$fname =~ s/\.txt/e\.txt/;}

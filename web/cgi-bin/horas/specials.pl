@@ -222,7 +222,7 @@ sub specials {
       my $name = major_getname();	 
 
       my $hymntrans = Hymnus;
-      if (!columnsel($lang) && exists($translate{Hymnus})) {$hymntrans = $translate{Hymnus};}
+      if (!columnsel($lang) && exists($translate{$lang}{Hymnus})) {$hymntrans = $translate{$lang}{Hymnus};}
                                
 	  my $hymn = '';	
       if ($capit =~ /!H[iy]mn/i) {
@@ -491,7 +491,7 @@ sub translate_label {
   my $lang = shift;   
 
   $item =~ s/\s*$//;              
-  if ($lang !~ /Latin/i) {if (exists($translate{$item})) {$item = $translate{$item};}}  
+  if (exists($translate{$lang}{$item})) {$item = $translate{$lang}{$item};}
   $item =~ s/\n//g;   
   return $item;
 }
@@ -1033,7 +1033,7 @@ sub oratio
      push (@s, $text[4]);
      $precesferiales = 0;
     }          
-    my $oremus = ($lang =~ /Latin/) ? 'Oremus' : translate('Oremus');
+    my $oremus = translate('Oremus', $lang);
     push (@s, "v. $oremus");
     }
     if (($version =~ /1960/ || "$month$day" =~ /1102/) && $w =~ /\&psalm\([0-9]+\)\s*\_\s*/i) 

@@ -10,7 +10,6 @@ $a=4;
 # collects and returns psalm 94 with the antipones
 sub invitatorium {
   my $lang = shift; 	
-		
   my %invit = %{setupstring("$datafolder/$lang/Psalterium/Matutinum Special.txt")};
   my $name = ($dayname[0] =~ /Adv[12]/i) ? 'Adv' : ($dayname[0] =~ /Adv[34]/i) ? 'Adv3' :
 	($month == 12 && $day == 24) ? 'Nat24' :
@@ -26,6 +25,7 @@ sub invitatorium {
     $name = 'Invit';
 	  $comment = 0;
   }                           
+
   my $i = ($name =~ /^Invit$/i || $name =~ /Invit Trid/i) ? $dayofweek : 0;   
   if ($i == 0 && $name =~ /^Invit$/i && ($month < 4  || ($monthday && $monthday =~ /^1[0-9][0-9]\-/)))
     {$i = 7;} 
@@ -847,7 +847,7 @@ sub lectio {
 
   #handle verse numbers for passages
   my $item = 'Lectio';
-  if ($lang !~ /Latin/i) {if (exists($translate{$item})) {$item = $translate{$item};}}  
+  if (exists($translate{$lang}{$item})) {$item = $translate{$lang}{$item};}
   $item =~ s/\s*$//;
   $w = "_\n" . setfont($largefont, "$item $num") . "\n$w";	 
   my @w = split("\n", $w);
