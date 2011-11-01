@@ -977,8 +977,8 @@ sub oratio
     }
 
     # Special processing for Common of Supreme Pontiffs.
-    if ($version !~ /Trident/i && (my ($class, $name) = papal_rule($w{Rule}))) {
-      $w = papal_collect($class, $name);
+    if ($version !~ /Trident/i && (my ($plural, $class, $name) = papal_rule($w{Rule}))) {
+      $w = papal_prayer($lang, $plural, $class, $name);
       if ($w && $hora !~ /Matutinum/i) {setbuild2("Oratio Gregem tuum");}
     }
              
@@ -1303,12 +1303,10 @@ sub getcommemoratio {
   if (!$o) {$o = $c{"Oratio"};}
   
   # Special processing for Common of Supreme Pontiffs.
-  my $martyr = '';	
+  my $popeclass = '';	
   my %cp = {};	
-  if ($version !~ /Trident/i && (($martyr, my $name) = papal_rule($w{Rule}))) {
-	%cp = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	$o = $cp{'Oratio9'};	  
-	$o = papal_collect($martyr, $name, $o);
+  if ($version !~ /Trident/i && ((my $plural, $popeclass, my $name) = papal_rule($w{Rule}))) {
+	$o = papal_prayer($lang, $plural, $popeclass, $name);
   }
   if (!$o) {return '';}
 
@@ -1323,7 +1321,7 @@ sub getcommemoratio {
   my $name = $w{Name};  
 
   $a = replaceNdot($a, $lang, $name); 
-  if ($martyr && $martyr =~ /C/ && $ind == 3) {$a = $cp{'Ant 9'};}	
+  if ($popeclass && $popeclass =~ /C/ && $ind == 3) {$a = papal_antiphon_dum_esset($lang);}
 
  if ($wday =~ /tempora/i) {
 	if ($month == 12 && 
@@ -1811,11 +1809,17 @@ sub getrefs {
 	  
 
       # Special processing for Common of Supreme Pontiffs.
-      if ($version !~ /Trident/i && $item =~ /Gregem/i && (my ($class, $name) = papal_commem_rule($rule))) {
-		$o = papal_collect($class, $name);
-	    if ($after =~ /!Commem/i) {$after = "$&$'"} else {$after = '';}
-	    $o = "\$Oremus\n" . $o; 
-	  }
+      if ($version !~ /Trident/i && (my ($plural, $class, $name) = papal_commem_rule($rule))) {
+        if ($item =~ /Gregem/i)
+        {
+          $o = papal_prayer($lang, $plural, $class, $name);
+          if ($after =~ /!Commem/i) {$after = "$&$'"} else {$after = '';}
+          $o = "\$Oremus\n" . $o;
+        }
+        
+        # Confessor-Popes have a common Magnificat antiphon at second Vespers.
+        if ($popeclass && $popeclass =~ /C/ && $ind == 3) {$a = papal_antiphon_dum_esset($lang);}
+      }
 
 	  $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$o" . "_\n$after";  
       next;

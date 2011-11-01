@@ -1516,42 +1516,68 @@ sub papal_commem_rule($)
 #  Pope. If $params{'commemoration'} is true, a commemorated Pope
 #  (only) is checked for; otherwise, only in the office of the day.
 #
-#  Returns a list ($class, $name), where $class is 'C', 'M' or 'D' as
-#  the Pope is a confessor, doctor or martyr, respectively; and $name
-#  is the Pope's name. The empty list is returned if there is no match.
+#  Returns a list ($plural, $class, $name), where $plural is true if
+#  the office is of several Popes; $class is 'C', 'M' or 'D' as the
+#  Pope is a confessor, doctor or martyr, respectively; and $name is
+#  the name(s) of the Pope(s). The empty list is returned if there is
+#  no match.
 sub papal_rule($%)
 {
   my ($rule, %params) = @_;
   my $classchar = $params{'commemoration'} ? 'C' : 'O';
   
-  return ($rule =~ /${classchar}Papa([CMD])=(.*?);/i);
+  return ($rule =~ /${classchar}Papa(e)?([CMD])=(.*?);/i);
 }
 
 
-#*** papal_collect($class, $name[, $collect])
-#  Returns the collect from the Common of Supreme Pontiffs, where
-#  $class and $name are as returned by papal_rule, and $collect
-#  optionally contains the template (otherwise, it will be read from
-#  the common).
-sub papal_collect($$;$)
+#*** papal_prayer($lang, $plural, $class, $name[, $type])
+#  Returns the collect, secret or postcommunion from the Common of
+#  Supreme Pontiffs, where $lang is the language; $plural, $class and
+#  $name are as returned by papal_rule; and $type optionally specifies
+#  the key for the template (otherwise, it will be 'Oratio').
+sub papal_prayer($$$$;$)
 {
-  my ($class, $name, $collect) = @_;
+  my ($lang, $plural, $class, $name, $type) = @_;
+  $type ||= 'Oratio';
   
-  # Get the collect from the common, unless the caller gave it to us.
-  unless ($collect)
+  # Get the prayer from the common.
+  my (%common, $num);
+  my $prayer;
+  our $missa;
+  our ($datafolder, $communename);
+  
+  if ($missa)
   {
-    my %common = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-    my $num = ($name =~ /( et |and|és)/i) ? 91 : 9;  # Many Popes, or one?
-    $collect = $common{"Oratio$num"};
+    %common = %{setupstring("$datafolder/$lang/$communename/C4b.txt")};
+    $num = $plural && $type eq 'Oratio' ? 91 : '';
   }
+  else
+  {
+    %common = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
+    $num = $plural ? 91 : 9;
+  }
+
+  $prayer = $common{"$type$num"};
   
   # Fill in the name(s).
-  $collect =~ s/ N\.([a-z ]+N\.)*/ $name/;
+  $prayer =~ s/ N\.([a-z ]+N\.)*/ $name/;
   
   # If we're not a martyr, get rid of the bracketed part; if we are,
   # then just get rid of the brackets themselves.
-  if ($class !~ /M/i) {$collect =~ s/\s*\(.*?\)//;}
-  else {$collect =~ tr/()//d;}
+  if ($class !~ /M/i) {$prayer =~ s/\s*\((.|~[\s\n\r]*)*?\)//;}
+  else {$prayer =~ tr/()//d;}
   
-  return $collect;
+  return $prayer;
+}
+
+#*** papal_antiphon_dum_esset($lang)
+#  Returns the Magnificat antiphon "Dum esset" from the Common of
+#  Supreme Pontiffs, where $lang is the language.
+sub papal_antiphon_dum_esset($)
+{
+  my $lang = shift;
+  our $datafolder, $communename;
+  
+  my %papalcommon = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
+  return $papalcommon{'Ant 9'};
 }
