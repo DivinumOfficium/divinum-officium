@@ -2,6 +2,7 @@
 S. Elisabeth Viduae;;Duplex;;3;;vide C7a
 
 [Rule]
+CPapaM=Pontiánum;
 vide C7a;
 Gloria
 
@@ -23,6 +24,7 @@ $Per Dominum
 
 [Commemoratio Oratio]
 !Pro S. Pontiano Papa et Martyre
+@Commune/C4b:Oratio proper Gregem
 Infirmitatem nostram respice omnipotens Deus: et quia pondus propriae actionis~
 gravat, beati Pontiani Martyris tui atque Pontificis intercessio gloriosa nos~
 protegat.
@@ -30,10 +32,10 @@ $Per Dominum
 
 [Commemoratio Secreta]
 !Pro S. Pontiano Papa et Martyre
-@Commune/C4b:Secreta
+@Commune/C4b:Secreta Gregem
 
 [Commemoratio Postcommunio]
 !Pro S. Pontiano Papa et Martyre
-@Commune/C4b:Postcommunio
+@Commune/C4b:Postcommunio Gregem
 
 

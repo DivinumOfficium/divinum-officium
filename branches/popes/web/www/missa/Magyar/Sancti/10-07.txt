@@ -8,6 +8,7 @@ Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex 2 classis;;5;;ex C11
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex;;3;;ex C11
 
 [Rule]
+CPapaC=Mark;
 ex C11;
 Gloria
 Credo
@@ -86,6 +87,7 @@ $Qui vivis
 
 [Commemoratio Oratio]
 !For ST. MARK
+@Commune/C4b:Oratio proper Gregem
 Eternal Shepherd, look with favor upon Your flock: safeguard and shelter it~
 forevermore through blessed Mark, Your Supreme Pontiff, whom You constituted~
 shepherd of the whole Church.
@@ -98,6 +100,7 @@ $Per Dominum
 
 [Commemoratio Secreta]
 !For ST. MARK
+@Commune/C4b:Secreta proper Gregem
 Having offered You our gifts, we beseech You, O Lord, mercifully to enlighten~
 Your Church, so that Your flock may everywhere prosper, and its shepherds, under~
 Your guidance, may be rendered acceptable to You.
@@ -110,6 +113,7 @@ $Per Dominum
 
 [Commemoratio Postcommunio]
 !For ST. MARK
+@Commune/C4b:Postcommunio proper Gregem
 Since Your Church has been nourished by sacred food, govern her in Your clemency,~
 we beseech You, O Lord, so that under the guidance of Your almighty rule she may~
 enjoy ever greater freedom and remain steadfast in purity of faith.

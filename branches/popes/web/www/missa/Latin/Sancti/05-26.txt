@@ -4,7 +4,7 @@ S. Philippi Neri Confessoris;;Duplex;;3;;vide C5
 [Rule]
 vide C5;
 9 lectiones
-CPapaM=Eleuthereum;
+CPapaM=Eleuthérium;
 Gloria
 
 [Introitus]
@@ -77,6 +77,7 @@ $Per Dominum
 
 [Commemoratio Oratio]
 !Pro S. Eleutherio
+@Commune/C4b:Oratio proper Gregem
 Gregem tuum, Pastor ætérne, placátus inténde: et, per beátum Eleuthérium~
 Mártyrem tuum atque Summum Pontíficem, perpétua protectióne custódi; quem totíus~
 Ecclésiæ præstitísti esse pastórem.
@@ -84,6 +85,7 @@ $Per Dominum
 
 [Commemoratio Secreta]
 !Pro S. Eleutherio
+@Commune/C4b:Secreta proper Gregem
 Oblátis munéribus, quaesumus, Dómine, Ecclésiam tuam benígnus illúmina: ut, et~
 gregis tui profíciat ubique succéssus, et grati fiant nómini tuo, te gubernánte,~
 pastóres.
@@ -91,6 +93,7 @@ $Per Dominum
 
 [Commemoratio Postcommunio]
 !Pro S. Eleutherio
+@Commune/C4b:Postcommunio proper Gregem
 Refectióne sancta enutrítam gubérna, quaesumus, Dómine, tuam placátus Ecclésiam:~
 ut, poténti moderatióne dirécta, et increménta libertátis accípiat et in~
 religiónis integritáte persístat.

@@ -2,6 +2,7 @@
 S. Alphonsi Mariae de Ligorio Episc. Conf. et Eccles. Doct.;;Duplex;;3;;vide C4a
 
 [Rule]
+CPapaM=Stéphanum;
 vide C4a
 Gloria
 CredoDA
@@ -97,12 +98,12 @@ $Per Dominum
 
 [Commemoratio Oratio]
 !Pro S. Stephano pope, martyr
-@Commune/C4b:Oratio1
+@Commune/C4b:Oratio Gregem
 
 [Commemoratio Secreta]
 !Pro S. Stephano pope, martyr
-@Commune/C4b:Secreta1
+@Commune/C4b:Secreta Gregem
 
 [Commemoratio Postcommunio]
 !Pro S. Stephano pope, martyr
-@Commune/C4b:Postcommunio1
+@Commune/C4b:Postcommunio Gregem
