@@ -5,7 +5,7 @@ use Getopt::Long;
 use Date::Format;
 use Algorithm::Diff;
 
-my @filters = qw/kalendar hymns titles psalms antiphons html accents ij site urls/;
+my @filters = qw/kalendar hymns titles psalms antiphons html accents ij site urls spacing/;
 my $filters = join(' ', @filters);
 
 my $USAGE = <<USAGE ;
@@ -33,19 +33,21 @@ FILTER                one of [$filters]
                       The filters are applied in order, e.g.
                           +hymns,+html       compare only the html presentation of hymns
                           +psalms,-antiphons compare only psalm textual content
-                      It doesn't make sense to use +ij or +accents.
+                      It doesn't make sense to use +ij or +accents or +spacing.
                       The filter -site applied first by default unless the site filter
                       is specified explicitly.
 
-ij                    i vs j in Latin text (-ij only)
-acccents              accents and ligatures in Latin text (-accents only)
+kalendar              Title of day 
+hymns                 Hymns and their titles
+titles                Titles of things
+psalms                Psalm content, antiphony, and order
+antiphons             Psalm and canticle antiphons
+html                  HTML and javascript content
+accents               accents and ligatures in all languages (-accents only)
+ij                    i vs j (-ij only)
 site                  the site specification (from http:// through /cgi-bin) (-site only)
 urls                  URL strings
-html                  HTML and javascript content
-kalendar              Title of day 
-psalms                Psalm content, antiphony, and order
-titles                Titles of things
-antiphons             Psalm and canticle antiphons
+spacing               all white space (-spaces only)
 USAGE
 
 my $filter = '';
@@ -233,6 +235,13 @@ foreach my $file ( @ARGV )
                                     $_ = "...\n"
                                 }
                             }
+                        }
+
+                        elsif ( /spacing/ )
+                        {
+                            s/ +/ /g for @old_result, @new_result;
+                            s/([^\w]) /$1/g for @old_result, @new_result;
+                            s/ ([^\w])/$1/g for @old_result, @new_result;
                         }
 
                         else

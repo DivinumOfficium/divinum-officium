@@ -5,6 +5,13 @@ use FindBin;
 
 $\ = "\n";
 
+# The format of the accent table is an unordered set of lines of the form
+#       plaintextword accentedtextword
+# with exactly one range of whitespace in between.
+# The program looks up words from the left and replaces them with words from the right.
+# If there's no match, but there is a match after downcases the initial letter of the
+# source word, then the replacement is done and then its initial is upcased.
+
 my $Bin = $FindBin::Bin;
 open TABLE, "$Bin/accent_table" or die "Can't read $Bin/accent_table\n";
 my %table;
@@ -17,27 +24,37 @@ my $rank;
 while ( my $line = <> )
 {
     chomp $line;
-    unless ( $rule || $rank || $line =~ /[{&\$[}_@]/ )
+    unless ( $rule || $rank || $line =~ /[{&\$[}_@]/ || $line =~ /^!/ )
     {
 
         my @words = split(/([^a-zA-Z]+)/, $line);
 
         for my $word ( @words )
         {
-            my $accented = $word;
-            $accented =~ tr/A-Z/a-z/ unless $accented =~ /^Mari/;  # María vs mária
+            # Try unnormalized first.
+            # This handles the difference between María and mária.
 
-            my $lowered = $accented ne $word;
-            $accented = $table{$accented};
-            if ( $accented )
+            if ( $table{$word} )
             {
-                if ( $lowered )
+                $word = $table{$word}
+            }
+            else
+            {
+                my $replacement = $word;
+                $replacement =~ tr/A-Z/a-z/;
+
+                my $lowered = $replacement ne $word;
+                $replacement = $table{$replacement};
+                if ( $replacement )
                 {
-                    my $a1 = substr($accented,0,1);
-                    $a1 =~ tr/a-z\x{9c}\x{e6}\x{e1}\x{e9}\x{ed}\x{f3}\x{fa}/A-Z\x{8c}\x{c6}\x{c1}\x{c9}\x{cd}\x{d3}\x{da}/;
-                    $accented = $a1 . substr($accented,1);
+                    if ( $lowered )
+                    {
+                        my $a1 = substr($replacement,0,1);
+                        $a1 =~ tr/a-z\x{9c}\x{e6}\x{e1}\x{e9}\x{ed}\x{f3}\x{fa}/A-Z\x{8c}\x{c6}\x{c1}\x{c9}\x{cd}\x{d3}\x{da}/;
+                        $replacement = $a1 . substr($replacement,1);
+                    }
+                    $word = $replacement;
                 }
-                $word = $accented;
             }
         }
         $line = join('', @words);
