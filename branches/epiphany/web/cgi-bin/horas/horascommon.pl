@@ -879,25 +879,23 @@ sub precedence {
   $rule = $communerule = '';    
     
   if ($winner) {   
-   if ($missa && $missanumber) {
+    if ($missa && $missanumber) {
       my $wm = $winner;
 	  $wm =~ s/\.txt/m$missanumber\.txt/i; 
 	  if ($missanumber && (-e "$datafolder/Latin/$wm")) {$winner = $wm; } 
-   } 
+    } 
 
-   my $flag = ($winner =~ /tempora/i && $tvesp == 1) ? 1 : 0;  
-   %winner = %{officestring("$datafolder/$lang1/$winner", $flag)};  
-   %winner2 = %{officestring("$datafolder/$lang2/$winner", $flag)};
+    my $flag = ($winner =~ /tempora/i && $tvesp == 1) ? 1 : 0;  
+    %winner = %{officestring("$datafolder/$lang1/$winner", $flag)};  
+    %winner2 = %{officestring("$datafolder/$lang2/$winner", $flag)};
 
-   if ($version =~ /1960/ && $missa && $dayname[0] =~ /Epi1/i && $winner =~ /01\-([0-9]+)/ && $1 < 13 && $dayofweek != 0) {
-     my $d = $1;
-	 $rule = $winner{Rule};
-	 $winner = 'Tempora/Epi1-0a.txt';
-     %winner = %{officestring("$datafolder/$lang1/$winner", $flag)};  
-     %winner2 = %{officestring("$datafolder/$lang2/$winner", $flag)};
-	 $winner{Rule} .= $rule; 
-	 if ($d == 11) {$commemoratio == 'Sancti/01-11r.txt';}
-   } 
+    # In the feriae where the octave of the Epiphany used to be, the
+    # Mass is of the Epiphany ('Ecce advenit') before the Sunday, and
+    # of I. Sunday after the Epiphany ('In excelso throno') afterwards.
+    if ($version =~ /1955|1960/ && $missa && $dayname[0] =~ /Epi1/i && $winner =~ /01\-([0-9]+)/ && $1 < 13 && $dayofweek != 0) {
+      $communetype = 'ex';
+      $commune = 'Tempora/Epi1-0a.txt';
+    } 
 
     $rule = $winner{Rule};  
   }
