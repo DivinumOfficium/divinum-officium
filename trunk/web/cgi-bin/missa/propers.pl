@@ -156,23 +156,18 @@ sub oratio {
   
   if ($dayofweek > 0 && exists($w{$type ."W"})) {$w = $w{$type . "W"};}
   else {$w = $w{$type};}
-
-  if ($version !~ /Trident/i && $w{Rule} =~ /OPapa([CMD])=([a-z ]*)\;/i) {
-    my $martyr = $1;
-	my $name = $2;
-	my %c = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	$w = $c{$type . '9'};	  
-	$w =~ s/ N\.([a-z ]+N\.)*/ $name/;
-    if ($mart !~ /M/i) {$w =~ s/\(.*?\)//;}
-	else {$w =~ s/[\(\)]//;}
-	setbuild2("$type Gregem tuum");
-  }
   	 		 
   if (!$w && $commune) { 
     my %com = (columnsel($lang)) ? %commune : %commune2;    
     $w = $com{$type};
     if ($w) {setbuild2("$commune Oratio");}
- }
+  }
+
+  # Special processing for Common of Supreme Pontiffs.
+  if ($version !~ /Trident/i && (my ($plural, $class, $name) = papal_rule($w{Rule}))) {
+	$w = papal_prayer($lang, $plural, $class, $name, $type);
+	setbuild2("$type Gregem tuum");
+  }
                                 
   if ($winner =~ /tempora/i && !$w) {   
      my $name = "$dayname[0]-0";	
@@ -398,16 +393,9 @@ sub getcommemoratio {
     else {$o = $w1{$type};}
   }
   
-  my $martyr = '';	
-  my %cp = {};	
-  if ($version !~ /Trident/i && $w{Rule} =~ /OPapa([CMD])=([a-z ]*)\;/i) {
-    $martyr = $1;
-	my $name = $2;
-	my %cp = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	$o = $cp{$type . '9'};	  
-	$o =~ s/ N\.([a-z ]+N\.)*/ $name/;
-    if ($mart !~ /M/i) {$o =~ s/\(.*?\)//;}
-	else {$o =~ s/[\(\)]//;}
+  # Special processing for Common of Supreme Pontiffs.
+  if ($version !~ /Trident/i && (my ($plural, $class, $name) = papal_rule($w{Rule}))) {
+	$o = papal_prayer($lang, $plural, $class, $name, $type);
   } 
   if (!$o) {return '';}
   
@@ -582,17 +570,16 @@ sub checksuffragium {
   return 1;
 }
 
-#*** getrefs($w, $lang, $ind)
+#*** getrefs($w, $lang, $rule)
 # $w may contain line starting with @ reference
-# filename:commemoratio reference from file/Commemoratio [1|2]
-# filename:oratio proper Ant|Versum $ind from file 
+# filename:(Oratio|Secreta|Postcommunio) (proper)? (Gregem)? from file 
 # filename:item collects item from file
+# $rule contains the rule for the office (used for inserting Popes' names)
 # return the expanded string
 # useable for lectio, responsory, commemoratio
 sub getrefs { 
   my $w = shift;
   my $lang = shift;
-  my $ind = shift;
   my $rule = shift;
   my $file = '';
   my $item = '';
@@ -606,14 +593,11 @@ sub getrefs {
     $after = $';	
     $item =~ s/\s*$//; 
 
-
     %s = %{setupstring("$datafolder/$lang/$file.txt")};	   
     if ($item =~ /(commemoratio|Octava)/i) {
       my $ita = $1;			
       my $a = $s{"$ita"};
-      if (!$a) {$a = $s{"$ita $ind"};}
-      if (!$a) {my $i = ($ind == 2) ? 1 : 2; $a = $s{"$ita $i"};} 
-	    if (!$a) {$a = "$file $item $ind missing\n";}	 
+	  if (!$a) {$a = "$file $item missing\n";}	 
       $flag = 1;
 	  if ($a =~ /\!.*?octava(.*?)\n/i) {
 	    my $oct = $1;
@@ -624,25 +608,28 @@ sub getrefs {
 	  else {$a = '';}  
 	  $w = "$before$a$after";   
       next;
-   }
+    }
                 
-   if ($item =~ /oratio/i ) {  
-      my $o = '';	 
-      if ($item !~ /proper/) {
-        $o = $s{$item};	 
-		    if (!$o) {$o = "$file:$item missing\n";}
-      }				               
-      if ($version !~ /Trident/i && $rule =~ /CPapa([CMD])\=([a-z ]*)\;/i) {	
-        my $name = $2;	
-		    my %cp = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	      $o = $cp{'Oratio9'};	
-	      $o =~ s/ N\.([a-z ]+N\.)*/ $name/;
-        if ($mart !~ /M/i) {$o =~ s/\(.*?\)//;}
-	      else {$o =~ s/[\(\)]//;}
-	      $after = '';
-	    } 
+    if ($item =~ /(oratio)/i || $item =~ /(secreta)/i || $item =~ /(postcommunio)/i) {
+      # Extract the key.
+      my $itemkey = $1;
+      my $o = '';
 
-	    $w = $before . $o . $after; 
+      if ($item !~ /proper/) {
+        $o = $s{$itemkey};
+        if (!$o) {$o = "$file:$item missing\n";}
+      }
+      
+      # Special processing for Common of Supreme Pontiffs.
+      if ($version !~ /Trident/i && $item =~ /Gregem/i && (my ($plural, $class, $name) = papal_commem_rule($rule))) {
+        $o = papal_prayer($lang, $plural, $class, $name, $itemkey);
+
+        # Remove any proper prayer for this commemoration, but leave
+        # those for subsequent ones intact.
+        $after =~ s/.*?^\s*_\s*$/_/sm or $after = '';
+      }
+
+	  $w = $before . $o . $after;
       next;
     }
 		 

@@ -4,7 +4,7 @@ S. Gregorii VII Papae Confessoris;;Duplex;;3;;vide C4b
 [Rule]
 vide C4b;
 9 lectiones
-CPapaM=Urbanum;
+CPapaM=Urban;
 Gloria
 
 [Introitus]
@@ -81,6 +81,7 @@ $Per Dominum
 
 [Commemoratio Oratio]
 !For ST. Urban
+@Commune/C4b:Oratio proper Gregem
 O God, Who firmly established Your Church upon the rock of the apostle and~
 delivered her from the dreadful powers of hell, grant, we beseech You, that~
 through the intercession of blessed Urban, Your Martyr and Supreme Pontiff, she~
@@ -89,6 +90,7 @@ $Per Dominum
 
 [Commemoratio Secreta]
 !For ST. Urban
+@Commune/C4b:Secreta proper Gregem
 In Your loving kindness, O Lord, accept the gifts we joyously offer, and through~
 the intercession of blessed Urban, grant that Your Church may enjoy purity of~
 faith and rejoice in the tranquility of peaceful times.
@@ -96,6 +98,7 @@ $Per Dominum
 
 [Commemoratio Postcommunio]
 !For ST. Urban
+@Commune/C4b:Postcommunio proper Gregem
 Increase within Your Church, we beseech You, O Lord, the gift of grace You have~
 given her, and through the prayers of blessed Urban, Your Martyr and Supreme~
 Pontiff, may flock never fail in obedience to the shepherd nor the shepherd in~
