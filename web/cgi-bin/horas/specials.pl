@@ -976,16 +976,10 @@ sub oratio
         if ($w && $hora !~ /Matutinum/i) {setbuild($winner, "Oratio $i", 'try');}
     }
 
-    if ($version !~ /Trident/i && $w{Rule} =~ /OPapa([CM])=(.*?)\;/i) {
-    my $martyr = $1;
-    my $name = $2;
-    my %c = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-    my $num = ($name =~ /( et |and|és)/i) ? 91 : 9;
-    $w = $c{"Oratio$num"};	  
-    $w =~ s/ N\.([a-z ]+N\.)*/ $name/;
-    if ($martyr !~ /M/i) {$w =~ s/\(.*?\)//;}
-    else {$w =~ s/[\(\)]//g;} 
-    if ($w && $hora !~ /Matutinum/i) {setbuild2("Oratio Gregem tuum");}
+    # Special processing for Common of Supreme Pontiffs.
+    if ($version !~ /Trident/i && (my ($plural, $class, $name) = papal_rule($w{Rule}))) {
+      $w = papal_prayer($lang, $plural, $class, $name);
+      if ($w && $hora !~ /Matutinum/i) {setbuild2("Oratio Gregem tuum");}
     }
              
     if (!$w && $commune) { 
@@ -1306,17 +1300,13 @@ sub getcommemoratio {
   }
   if (!$o) {$o = $w{"Oratio $ind"};}
   if (!$o) {$i = 4 - $ind; $o = $w{"Oratio $i"};}
-  if (!$o) {$o = $c{"Oratio"};}  
-  my $martyr = '';	
+  if (!$o) {$o = $c{"Oratio"};}
+  
+  # Special processing for Common of Supreme Pontiffs.
+  my $popeclass = '';	
   my %cp = {};	
-  if ($version !~ /Trident/i && $w{Rule} =~ /OPapa([CMD])=([a-z ]*)\;/i) {
-    $martyr = $1;
-	my $name = $2;
-	%cp = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	$o = $cp{'Oratio9'};	  
-	$o =~ s/ N\.([a-z ]+N\.)*/ $name/; 
-    if ($martyr !~ /M/i) {$o =~ s/\(.*?\)//;}
-	else {$o =~ s/[\(\)]//g;}
+  if ($version !~ /Trident/i && ((my $plural, $popeclass, my $name) = papal_rule($w{Rule}))) {
+	$o = papal_prayer($lang, $plural, $popeclass, $name);
   }
   if (!$o) {return '';}
 
@@ -1331,7 +1321,7 @@ sub getcommemoratio {
   my $name = $w{Name};  
 
   $a = replaceNdot($a, $lang, $name); 
-  if ($martyr && $martyr =~ /C/ && $ind == 3) {$a = $cp{'Ant 9'};}	
+  if ($popeclass && $popeclass =~ /C/ && $ind == 3) {$a = papal_antiphon_dum_esset($lang);}
 
  if ($wday =~ /tempora/i) {
 	if ($month == 12 && 
@@ -1818,17 +1808,18 @@ sub getrefs {
       }	
 	  
 
-      if ($version !~ /Trident/i && $rule =~ /CPapa([CM])\=([a-z ]*)\;/i) {	
-        my $martyr = $1;
-		my $name = $2;	
-		my %cp = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	    $o = $cp{'Oratio9'};
-	    $o =~ s/ N\.([a-z ]+N\.)*/ $name/;
-        if ($martyr !~ /M/i) {$o =~ s/\(.*?\)//;}
-	    else {$o =~ s/[\(\)]//g;}
-	    if ($after =~ /!Commem/i) {$after = "$&$'"} else {$after = '';}
-	    $o = "\$Oremus\n" . $o; 
-	  } 
+      # Special processing for Common of Supreme Pontiffs.
+      if ($version !~ /Trident/i && (my ($plural, $class, $name) = papal_commem_rule($rule))) {
+        if ($item =~ /Gregem/i)
+        {
+          $o = papal_prayer($lang, $plural, $class, $name);
+          if ($after =~ /!Commem/i) {$after = "$&$'"} else {$after = '';}
+          $o = "\$Oremus\n" . $o;
+        }
+        
+        # Confessor-Popes have a common Magnificat antiphon at second Vespers.
+        if ($popeclass && $popeclass =~ /C/ && $ind == 3) {$a = papal_antiphon_dum_esset($lang);}
+      }
 
 	  $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$o" . "_\n$after";  
       next;

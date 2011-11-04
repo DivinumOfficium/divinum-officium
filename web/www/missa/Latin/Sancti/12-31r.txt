@@ -2,6 +2,7 @@
 Die septima post Nativitatem;;Duplex II class;;5;;ex Sancti/12-30
 
 [Rule]
+CPapaC=Silvéstrum;
 ex Sancti/12-30;
 Gloria
 Credo
@@ -9,22 +10,12 @@ Prefatio=Nat
 
 [Commemoratio Oratio]
 !Pro S. Sylvestri papae
-Gregem tuum, Pastor ætérne, placátus inténde: et, per beátum Silvester (Mártyrem~
-tuum atque) Summum Pontíficem, perpétua protectióne custódi; quem totíus~
-Ecclésiæ præstitísti esse pastórem.
-$Per Dominum
+@Commune/C4b:Oratio Gregem
 
 [Commemoratio Secreta]
 !Pro S. Sylvestri papae
-Oblátis munéribus, quaesumus, Dómine, Ecclésiam tuam benígnus illúmina: ut, et~
-gregis tui profíciat ubique succéssus, et grati fiant nómini tuo, te gubernánte,~
-pastóres.
-$Per Dominum
+@Commune/C4b:Secreta
 
 [Commemoratio Postcommunio]
 !Pro S. Sylvestri papae
-Refectióne sancta enutrítam gubérna, quaesumus, Dómine, tuam placátus Ecclésiam:~
-ut, poténti moderatióne dirécta, et increménta libertátis accípiat et in~
-religiónis integritáte persístat.
-$Per Dominum
-
+@Commune/C4b:Postcommunio

@@ -2,6 +2,7 @@
 Festum Beatae Mariae Virginis a Rosario;;Duplex 2 classis;;5;;ex C11
 
 [Rule]
+CPapaM=Mark;
 ex C11;
 Gloria
 Credo
@@ -97,21 +98,12 @@ $Qui vivis
 
 [Commemoratio Oratio]
 !For St. Mark
-Eternal Shepherd, look with favor upon Your flock: safeguard and shelter it~
-forevermore through blessed Mark, Your Supreme Pontiff, whom You constituted~
-shepherd of the whole Church.
-$Per Dominum
+@Commune/C4b:Oratio Gregem
 
 [Commemoratio Secreta]
 !For St. Mark
-Having offered You our gifts, we beseech You, O Lord, mercifully to enlighten~
-Your Church, so that Your flock may everywhere prosper, and its shepherds, under~
-Your guidance, may be rendered acceptable to You.
-$Per Dominum
+@Commune/C4b:Secreta Gregem
 
 [Commemoratio Postcommunio]
 !For St. Mark
-Since Your Church has been nourished by sacred food, govern her in Your clemency,~
-we beseech You, O Lord, so that under the guidance of Your almighty rule she may~
-enjoy ever greater freedom and remain steadfast in purity of faith.
-$Per Dominum
+@Commune/C4b:Postcommunio Gregem

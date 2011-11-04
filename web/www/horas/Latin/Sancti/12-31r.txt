@@ -4,13 +4,11 @@ Die septima post Nativitatem;;Duplex II class;;5;;ex Sancti/12-25
 [Rule]
 ex Sancti/12-25;
 9 lectiones
+CPapaC=Silvéstrum;
 
 [Commemoratio]
 !Commemoratio Sancti Silvestri papae
-@Commune/C4:Oratio proper
-$Oremus
-Gregem tuum, Pastor æterne, placatus intende: et per beatum Silvestrum Summum Pontificem, perpetua protectione custodi; quem totius Ecclesiæ præstitisti esse pastorem.
-$Per Dominum.
+@Commune/C4:Oratio Gregem
 
 [Lectio1]
 De Epistola ad Romanos.

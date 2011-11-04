@@ -1501,3 +1501,83 @@ sub jtoi
     $t = join('', @parts);
     return $t;
 }
+
+
+#*** papal_commem_rule($rule)
+#  Determines whether a rule contains a clause for a commemorated Pope.
+#  Returns a list ($class, $name), as for papal_rule.
+sub papal_commem_rule($)
+{
+  return papal_rule(shift, (commemoration => 1));
+}
+
+#*** papal_rule($rule, %params)
+#  Determines whether a rule contains a clause for the office of a
+#  Pope. If $params{'commemoration'} is true, a commemorated Pope
+#  (only) is checked for; otherwise, only in the office of the day.
+#
+#  Returns a list ($plural, $class, $name), where $plural is true if
+#  the office is of several Popes; $class is 'C', 'M' or 'D' as the
+#  Pope is a confessor, doctor or martyr, respectively; and $name is
+#  the name(s) of the Pope(s). The empty list is returned if there is
+#  no match.
+sub papal_rule($%)
+{
+  my ($rule, %params) = @_;
+  my $classchar = $params{'commemoration'} ? 'C' : 'O';
+  
+  return ($rule =~ /${classchar}Papa(e)?([CMD])=(.*?);/i);
+}
+
+
+#*** papal_prayer($lang, $plural, $class, $name[, $type])
+#  Returns the collect, secret or postcommunion from the Common of
+#  Supreme Pontiffs, where $lang is the language; $plural, $class and
+#  $name are as returned by papal_rule; and $type optionally specifies
+#  the key for the template (otherwise, it will be 'Oratio').
+sub papal_prayer($$$$;$)
+{
+  my ($lang, $plural, $class, $name, $type) = @_;
+  $type ||= 'Oratio';
+  
+  # Get the prayer from the common.
+  my (%common, $num);
+  my $prayer;
+  our $missa;
+  our ($datafolder, $communename);
+  
+  if ($missa)
+  {
+    %common = %{setupstring("$datafolder/$lang/$communename/C4b.txt")};
+    $num = $plural && $type eq 'Oratio' ? 91 : '';
+  }
+  else
+  {
+    %common = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
+    $num = $plural ? 91 : 9;
+  }
+
+  $prayer = $common{"$type$num"};
+  
+  # Fill in the name(s).
+  $prayer =~ s/ N\.([a-z ]+N\.)*/ $name/;
+  
+  # If we're not a martyr, get rid of the bracketed part; if we are,
+  # then just get rid of the brackets themselves.
+  if ($class !~ /M/i) {$prayer =~ s/\s*\((.|~[\s\n\r]*)*?\)//;}
+  else {$prayer =~ tr/()//d;}
+  
+  return $prayer;
+}
+
+#*** papal_antiphon_dum_esset($lang)
+#  Returns the Magnificat antiphon "Dum esset" from the Common of
+#  Supreme Pontiffs, where $lang is the language.
+sub papal_antiphon_dum_esset($)
+{
+  my $lang = shift;
+  our $datafolder, $communename;
+  
+  my %papalcommon = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
+  return $papalcommon{'Ant 9'};
+}
