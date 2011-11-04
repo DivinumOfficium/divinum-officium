@@ -942,8 +942,15 @@ sub oratio
 
     $ind = ($hora =~ /vespera/i) ? $vespera : 2; 	
 
-    if ($scriptura =~ /Epi1/i && !exists($winner{Oratio}) && 
-    ($version =~ /(monastic|1960)/i || $day > 13)) {$rule .= 'Oratio Dominica';}   
+    # Special handling for days during the suppressed octave of the Epiphany.
+    # Before the Sunday formerly in the octave, the collect of the Epiphany is
+    # said, as in the past; afterwards, the collect of the Sunday is said, in
+    # which case we have to override it.
+    if ($dayname[0] =~ /Epi1/i && $rule =~ /Infra octavam Epiphaniae Domini/i &&
+      $version =~ /(monastic|1955|1960)/i)
+    {
+        $rule .= "Oratio Dominica\n";
+    }
 
     if (($rule =~ /Oratio Dominica/i && (!exists($w{Oratio}) || $hora =~ /Vespera/i)) ||
       ($winner{Rank} =~ /Quattuor/i && $version !~ /1960/i && $hora =~ /Vespera/i))

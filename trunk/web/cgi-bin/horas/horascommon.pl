@@ -498,7 +498,7 @@ sub getrank {
 
   # In Festo Sanctae Mariae Sabbato according to the rubrics.
   if ($version !~ /monastic/i && $dayname[0] !~ /(Adv|Quad[0-6])/i && $dayname[0] !~ /Quadp3/i && 
-      $testmode !~ /^season$/i) { 
+      $testmode !~ /^season$/i && $saint{Rule} !~ /Infra octavam Epiphaniae Domini/i) { 
     if ($dayofweek == 6 && $srank !~ /(Vigil|in Octav)/i && $trank[2] < 2 && $srank[2] < 2 && !$transfervigil) { 
       $tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
       $scriptura = $tname;  
@@ -513,7 +513,8 @@ sub getrank {
     } 
 
 	if ($hora =~ /(Vespera|Completorium)/i && $dayofweek == 5 &&  $crank !~ /;;[2-7]/ && $srank !~ /;;[5-7]/ &&
-        $crank !~ /Vigil/i && $version !~ /1960/  && $saint{Rule} !~ /BMV/i && $trank !~ /;;[2-7]/) { 
+        $crank !~ /Vigil/i && $version !~ /1960/  && $saint{Rule} !~ /BMV/i && $trank !~ /;;[2-7]/ &&
+        $srank !~ /in Octav/i && $saint{Rule} !~ /Infra octavam Epiphaniae Domini/i) { 
       $tempora{Rank} = $trank = 'Sanctae Mariae Sabbato;;Feria;;1.9;;vide C10';  
 	  $tname = "Tempora/C10.txt";  
       if ($version =~ /Trident/i) {
@@ -647,7 +648,8 @@ sub getrank {
 
 
   if ($version !~ /Monastic/i && $dayname[0] !~ /(Adv|Quad[0-6])/i && $srank[2] < 2 && $trank[2] < 2 && 
-    $testmode !~ /^season$/i && (($dayofweek == 6 && $srank !~ /Vigil/i && $trank[2] < 2 && !$transfervigil) || 
+    $testmode !~ /^season$/i && $saint{Rule} !~ /Infra octavam Epiphaniae Domini/i &&
+    (($dayofweek == 6 && $srank !~ /Vigil/i && $trank[2] < 2 && !$transfervigil) || 
        ($hora =~ /Vespera|Completorium/i && $dayofweek ==5 &&  $trank[2] < 2 && $srank[0] !~ /Vigil/i &&
         $csaint{Rank} !~ /Vigil/i && $version !~ /1960/))) {  
       $tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
@@ -877,25 +879,23 @@ sub precedence {
   $rule = $communerule = '';    
     
   if ($winner) {   
-   if ($missa && $missanumber) {
+    if ($missa && $missanumber) {
       my $wm = $winner;
 	  $wm =~ s/\.txt/m$missanumber\.txt/i; 
 	  if ($missanumber && (-e "$datafolder/Latin/$wm")) {$winner = $wm; } 
-   } 
+    } 
 
-   my $flag = ($winner =~ /tempora/i && $tvesp == 1) ? 1 : 0;  
-   %winner = %{officestring("$datafolder/$lang1/$winner", $flag)};  
-   %winner2 = %{officestring("$datafolder/$lang2/$winner", $flag)};
+    my $flag = ($winner =~ /tempora/i && $tvesp == 1) ? 1 : 0;  
+    %winner = %{officestring("$datafolder/$lang1/$winner", $flag)};  
+    %winner2 = %{officestring("$datafolder/$lang2/$winner", $flag)};
 
-   if ($version =~ /1960/ && $missa && $dayname[0] =~ /Epi1/i && $winner =~ /01\-([0-9]+)/ && $1 < 13 && $dayofweek != 0) {
-     my $d = $1;
-	 $rule = $winner{Rule};
-	 $winner = 'Tempora/Epi1-0a.txt';
-     %winner = %{officestring("$datafolder/$lang1/$winner", $flag)};  
-     %winner2 = %{officestring("$datafolder/$lang2/$winner", $flag)};
-	 $winner{Rule} .= $rule; 
-	 if ($d == 11) {$commemoratio == 'Sancti/01-11r.txt';}
-   } 
+    # In the feriae where the octave of the Epiphany used to be, the
+    # Mass is of the Epiphany ('Ecce advenit') before the Sunday, and
+    # of I. Sunday after the Epiphany ('In excelso throno') afterwards.
+    if ($version =~ /1955|1960/ && $missa && $dayname[0] =~ /Epi1/i && $winner =~ /01\-([0-9]+)/ && $1 < 13 && $dayofweek != 0) {
+      $communetype = 'ex';
+      $commune = 'Tempora/Epi1-0a.txt';
+    } 
 
     $rule = $winner{Rule};  
   }
