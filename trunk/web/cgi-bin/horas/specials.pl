@@ -580,21 +580,35 @@ sub psalmi_minor {
      $psalms = chompd($a[2]);  
  
   } elsif ($version =~ /trident/i) {
-     @psalmi = split("\n", $psalmi{Tridentinum});
-     my $i = ($hora =~ /prima/i) ? $dayofweek : ($hora =~ /tertia/i) ? 8 :
-       ($hora =~ /sexta/i) ? 10 : ($hora =~ /nona/i) ? 12 : 14;
-     if ($hora !~ /(prima|completorium)/i && $dayofweek > 0 &&
-       $rule !~ /Psalmi\s*(minores)*\s*Dominica/i && $communerule !~ /Psalmi\s*(minores)*\s*Dominica/i) {$i++;}
-     if ($hora =~ /prima/i && 
-       ($rule =~ /Psalmi\s*(minores)*\s*Dominica/i || $communerule =~ /Psalmi\s*(minores)*\s*Dominica/i)) {$i = 7;}
+    my $daytype = ($dayofweek == 0) ? 'Dominica' : 'Feria';
+    my %psalmlines = split (/\n|=/, $psalmi{Tridentinum});
+    my $psalmkey;
+    
+    if ($hora =~ /Prima/i) {
+      my @days = ('Dominica','Feria II','Feria III','Feria IV','Feria V','Feria VI','Sabbato');
+      
+      # Prime has one form for each day of the week in the temporal
+      # office, and another for feasts and Paschaltide.
 
-     $psalmi[$i] =~ s/\=/\;\;/;
-     my @a = split(';;', $psalmi[$i]);
-     $ant = chompd($a[1]);
-     $psalms = chompd($a[2]);  
- 	 if ($hora =~ /prima/i && $dayofweek == 0 && $winner =~ /tempora/i && $dayname[0] =~ /Quad/i) 
-		{$psalms =~ s/117/92,99/;}	 ##??????
-
+      $psalmkey = 'Prima ' . ((($winner =~ /Sancti/i && $winner{'Rank'} !~ /Vigil/i) || $dayname[0] =~ /Pasc/i)
+        ? 'Festis'
+        : $days[$dayofweek]);
+        
+      # Sunday Prime has a slightly different form from Septuagesima
+      # until Easter.
+      if ($dayofweek == 0 && $dayname[0] =~ /Quad/i) {
+        $psalmkey .= ' SQP';
+      }
+    }
+    else {
+      # Psalmody at the hours is invariable. The antiphon at Terce,
+      # Sext and None is different on Sundays.
+      $psalmkey = ($hora =~ /Completorium/i) ? 'Completorium' : "$hora $daytype";
+    }
+    
+    ($ant, $psalms) = split(';;', $psalmlines{$psalmkey});
+    $ant = chompd($ant);
+    $psalms = chompd($psalms);
   } else {      
     @psalmi = split("\n", $psalmi{$hora});
     my $i = 2 * $dayofweek;   
@@ -697,18 +711,21 @@ sub psalmi_minor {
   $psalms =~ s/\s//g;  	   
   @psalm = split(',', $psalms); 
   
-
-  #prima psalm set for feasts
-  if ($hora =~ /prima/i && $feastflag) {
-    $psalm[0] = 53;
-    setbuild2('First psalm #53'); 
-  }
-  
-  # prima psalm set for laudes 2 sunday
-  if ($hora =~ /prima/i && $laudes == 2 && $dayname[1] =~ /Dominica/i && $version !~ /1960/) { 
-    $psalm[0] = 99;
-    unshift(@psalm, 92);
-    setbuild2("First psalms #99 and  #92"); 
+  # The rules for determining the psalmody at Prime in the Tridentine
+  # rubrics are somewhat simpler.
+  unless ($version =~ /Trident/i) {
+    #prima psalm set for feasts
+    if ($hora =~ /prima/i && $feastflag) {
+      $psalm[0] = 53;
+      setbuild2('First psalm #53'); 
+    }
+    
+    # prima psalm set for laudes 2 sunday
+    if ($hora =~ /prima/i && $laudes == 2 && $dayname[1] =~ /Dominica/i && $version !~ /1960/) { 
+      $psalm[0] = 99;
+      unshift(@psalm, 92);
+      setbuild2("First psalms #99 and  #92"); 
+    }
   }
 
   push (@s, $ant1);
@@ -1486,7 +1503,7 @@ sub tryoldhymn {
 sub getanthoras {
   my $lang = shift;
 
-  my $tflag = ($version =~ /Trident/i && $winner =~ /Sancti/i && $rank >= 2) ? 1 : 0;
+  my $tflag = ($version =~ /Trident/i && $winner =~ /Sancti/i) ? 1 : 0;
   my $ant = '';		 
   if ($rule !~ /Antiphonas horas/i && $communerule !~ /Antiphonas horas/i && !$tflag) {return '';}
   if ($version =~ /(1955|1960)/ && $dayofweek > 0 && $rank < 6) {return '';}
@@ -1494,7 +1511,7 @@ sub getanthoras {
 
   my $w = $w{'Ant Laudes'};	  
   my $c = ($winner =~ /sancti/i) ? 3 : 2;
-  if (!$w  && ($communetype =~ /ex\s*/i)) {
+  if (!$w  && ($communetype =~ /ex\s*/i || $version =~ /Trident/i)) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
     $w = $com{'Ant Laudes'};
 	$c = 4;
