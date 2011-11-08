@@ -55,7 +55,7 @@ our $communename = 'Commune';
 
 #require "ordocommon.pl";
 require "$Bin/../horas/horascommon.pl";
-require "$Bin/dialogcommon.pl";
+require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
 
 $q = new CGI;

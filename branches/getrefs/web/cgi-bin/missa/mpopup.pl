@@ -30,7 +30,7 @@ $q = new CGI;
 
 
 #*** collect standard items
-require "$Bin/dialogcommon.pl";
+require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/ordo.pl";
 #require "$Bin/ordocommon.pl";

@@ -24,7 +24,7 @@ use Time::Local;
 
 $q = new CGI;
 $error = '';
-require "$Bin/dialogcommon.pl";
+require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
 
 #*** collect parameters

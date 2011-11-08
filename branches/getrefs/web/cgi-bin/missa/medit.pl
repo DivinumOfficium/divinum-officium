@@ -31,7 +31,7 @@ our $missa = 1;
 our $error = '';
 $debug = '';
 require "$Bin/webdia.pl";
-require "$Bin/dialogcommon.pl";
+require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/ordo.pl";
 require "$Bin/mcheck.pl";
 require "$Bin/tfertable.pl";

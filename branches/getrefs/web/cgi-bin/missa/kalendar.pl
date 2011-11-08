@@ -58,7 +58,7 @@ our $missa = 1;
 
 #require "$Bin/ordocommon.pl";
 require "$Bin/../horas/horascommon.pl";
-require "$Bin/dialogcommon.pl";
+require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/tfertable.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
