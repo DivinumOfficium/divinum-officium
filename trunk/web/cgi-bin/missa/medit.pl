@@ -124,11 +124,18 @@ if ($savesetup > 1 && $save && $folder1 !~ /program/i) {
   if ($newtext) { 
 	  $newtext =~ s/\r\r/\r/sg;
 	  my $f1 = ($folder1 =~ /tones/) ? $folder1 : "$lang1/$folder1";
+    if ( $ENV{DIVINUM_OFFICIUM_CAN_SAVE} )
+    {
     if (open(OUT, ">$datafolder/$f1/$filename1.txt")) {
         binmode OUT;
         print OUT $newtext;
 	      close OUT;         
       } else {$error = "$datafolder/$f1/$filename1.txt could not be saved"}
+    }
+    else
+    {
+        $error = "File save is disabled."
+    }
   } 
 }
 

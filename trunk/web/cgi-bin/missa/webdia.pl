@@ -453,16 +453,31 @@ sub getcookie1 {
 
 #*** setcross($line)
 # changes +++, ++ + to crosses in the line
-sub setcross {
-  my $line = shift;	
-  my $csubst = "<IMG SRC=$htmlurl/cross3.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/\+\+\+/$csubst/g;  
-  $csubst = "<IMG SRC=$htmlurl/cross2.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/\+\+/$csubst/g;
-  $csubst = "<IMG SRC=$htmlurl/cross1.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/ \+ / $csubst /g;	 
+# Note: the subsitutions are different in the Misssa from the Horas.
+sub setcross
+{
+    my $line = shift;
+    if ( CGI::user_agent("BlackBerry") )
+    {
+        # Use a PLUS SIGN for everything.
+        my $csubst = "<span style='font-size:1.25em;color:red'>+</span>";
+        $line =~ s/\+\+\+/$csubst/g;
+        $line =~ s/\+\+/$csubst/g;
+        $line =~ s/ \+ / $csubst /g;
+    }
+    else
+    {
+        my $csubst = "<span style='font-size:1.25em;color:red'>&#x2628;</span>";
+        $line =~ s/\+\+\+/$csubst/g;
+        # Cross type 2: Latin cross (at the Gospel)
+        my $csubst = "<span style='font-size:1.25em;color:red'>&#x271D;</span>";
+        $line =~ s/\+\+/$csubst/g;
+        # cross type 1: Cross of Jerusalem
+        my $csubst = "<span style='font-size:1.25em;color:red'>&#x2629;</span>";
+        $line =~ s/ \+ / $csubst /g;
+    }
 
-  return $line;
+    return $line;
 }
 
 #*** setcell($text1, $lang1);

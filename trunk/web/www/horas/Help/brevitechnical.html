@@ -124,9 +124,9 @@ list refers to the files described below in cgi-bin/horas folder.
 <A NAME='programs'></A>
 <P ALIGN=CENTER><FONT SIZE=1><A HREF=#Top>Top</A></FONT></P>
 <span class=prmm>Programs</span><BR><BR> 
-Programs are written in Perl 5.3 using limited cgi. I can read better the 
-HTML code, than the cgi subs. See the files itself with some comments using
-<span class=prma>Show files</span> feature for <span class=prma>programs</span> folder<BR><BR>
+The programs are written in Perl 5.6 and generate HTML.  The standalone version uses Tk.
+
+Environment variables:
 
 The following program files are used: 
 <UL>
@@ -136,27 +136,25 @@ also calls other programs<BR><BR>
 also calls other programs<BR><BR>
 <LI> <span class=prma>Aofficium.pl</span> Starts the standalone version. Composes the main image and
 also calls other programs<BR><BR>
-
 <LI><span class=prma>horas.pl</span> common extension of the starting perl files. Interprets the special 
 characters and prints out the officium for the selected hora<BR><BR>
 <LI><span class=prma>special.pl</span> common extension of the starting perl files. Fills up the skeleton
 chapters with the actual content from the databases.<BR><BR> 
 <LI><span class=prma>horascommon.pl</span> common extension of the starting perl files, also used 
 by <B>kalendar</B> and <B>edit</B> top level files.<BR> The file selects the current date,
-and the office for any given date, deciding about the precedencies<BR><BR><BR>
+and the office for any given date, deciding about the precedences.<BR><BR>
 <LI><span class=prma>dialogcommon.pl</span> helper set to interpret the defaults and
 setup.<BR><BR>
 <LI><span class=prma>webdia.pl</span> helper set to generate the dialog table, special html parts
 of the office tables also reads/writes cookies<BR><BR>
 <LI><span class=prma>Awebdia.pl</span> helper for Aofficium, generates the dialog table
 also the office tables, saves reload parameters<BR><BR>
-
 <LI><span class=prma>setup.pl</span> Generates the dialog box to set the parameters 
 for web versions.<BR><BR>
 <LI><span class=prma>setup.pl</span> Generates the dialog box to set the parameters 
 for standalone versions.<BR><BR>
 <LI><span class=prma>popup.pl</span> Generates a popup window if requested by the horas page
-for the web versions.
+for the web versions.<BR><BR>
 <LI><span class=prma>Apopup.pl</span> Generates a popup window if requested by the horas page 
 for the standalone version.
 <BR><BR>
@@ -168,7 +166,6 @@ and makes it possibile to select  a specific date. Uses horascomon.pl and horas.
 for the web versions. Uses horascommon.pl set<BR><BR>
 <LI><span class=prma>Adit.pl</span>. Shows the datebase program and other files
 for the standalone version. Uses horascommon.pl set<BR><BR><BR>
-
 <LI><span class=prma>Files</span> is the collection of the internal databases for the 
 web versions<BR><BR><BR>
 </UL>
