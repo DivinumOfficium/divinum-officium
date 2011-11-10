@@ -140,11 +140,18 @@ if ($savesetup > 1 && $save && $folder1 !~ /program/i) {
   if ($newtext) { 
 	  $newtext =~ s/\r\r/\r/sg;
 	  my $f1 = ($folder1 =~ /tones/) ? $folder1 : "$lang1/$folder1";
+    if ( $ENV{DIVINUM_OFFICIUM_SAVE} )
+    {
     if (open(OUT, ">$datafolder/$f1/$filename1.txt")) {
         binmode OUT;
         print OUT $newtext;
 	      close OUT;         
-      } else {$error = "$datafolder/$f1/$filename1.txt could not be saved"}
+      } else {$error = "$datafolder/$f1/$filename1.txt could not be saved!"}
+    }
+    else
+    {
+        $error = "File save is disabled."
+    }
   } 
 }
 
@@ -635,7 +642,6 @@ sub adjust {
     $j = 0;
     @t = splice(@t, @t);
     for ($i = 0; $i < @o; $i++) {   
-      $o[$i] =~ s/—//g;
       if ($o[$i] !~ /\.\]*\s*$/) {$t[$j] .= chompd($o[$i]) . ' ';}
       else {
         $t[$j] .= $o[$i];  
@@ -729,7 +735,6 @@ sub adjust {
         $t[$i] =~ s/([a-oq-z])ii([a-z][a-z])/$1u$2/ig;
       
       } elsif ($lang =~ /english/i) {
-        $t[$i] =~ s/—//g; 
         $t[$i] =~ s/\"//g;
         $t[$i] =~ s/\[(.*?[\,\.\?\;]+.*?)\]/\($1\)/g;   #[...] to (...)
         $t[$i] =~ s/\s([\;\,\.\?\!])/$1/g;
