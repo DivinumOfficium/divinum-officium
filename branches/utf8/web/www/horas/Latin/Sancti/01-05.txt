@@ -6,13 +6,14 @@ In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
 
 [Rank1960]
 Die Quinta Januarii;;Feria;;1.1;;vide Sancti/12-25
-http://localhost/cgi-bin/horas/edit.pl#
+
 [Rule]
 ex Sancti/01-01;
 9 lectiones
 Psalmi Dominica
 Omit preces
 Feria Te Deum
+CPapaM=Telésphorum;
 
 [Capitulum Vespera]
 !Gal 4:1-2
@@ -38,10 +39,7 @@ $Per Dominum
 
 [Commemoratio]
 !Commemoratio S. Telesphori Papae et Martyris.
-@Commune/C2:Oratio proper
-v. Oremus.
-Gregem tuum, Pastor ætérne, placátus inténde: et per beátum Telésphorum Mártyrem tuum atque Summum Pontíficem, perpétua protectióne custódi; quem totíus Ecclésiæ præstitísti esse pastórem.
-$Per Dominum
+@Commune/C2:Oratio1 Gregem
 
 [Invit]
 Christus natus est nobis: * Venite adoremus.

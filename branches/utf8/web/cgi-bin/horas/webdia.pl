@@ -17,8 +17,8 @@ sub htmlHead {
   my $title = shift;
   my $flag = shift;
   if (!$title) {$title = ' ';}
-  print "Content-type: text/html; charset=ISO-8859-1\n\n"; 
-#  print "Content-type: text/html; charset=UTF-8\n\n"; 
+#  print "Content-type: text/html; charset=ISO-8859-1\n\n"; 
+  print "Content-type: text/html; charset=utf-8\n\n"; 
 
 
   print << "PrintTag";
@@ -135,11 +135,8 @@ sub setup {
         my $loadfile = strictparam('loadfile');
         if ($loadfile) {
           $loadfile =~ s/\.gen//;
-          if (open(INP, "$datafolder/gen/$loadfile.gen")) {
-            my @cm = <INP>;
-            close (INP);
-            $pv = '';
-            foreach(@cm) {$pv .= $_;} 
+          if (@cm = do_read("$datafolder/gen/$loadfile.gen")) {
+            $pv = join('', @cm);
           }
         }
  
@@ -262,7 +259,7 @@ sub cleanse($)
         @parts = split(/;/, $str);
         foreach my $part ( @parts )
         {
-            unless ( $part =~ /^([^'`"\\]*|'[^'`"\\]*'|\$\w+='[^'`"\\]*')$/i )
+            unless ( $part =~ /^([^'`"\\={}()]*|'[^'`"\\]*'|\$\w+='[^'`"\\]*')$/i )
             {
                 #print STDERR "erasing $part\n";
                 $part = '';
@@ -315,6 +312,7 @@ sub strictparam
     my $pstr = shift;
     my $v = cleanse($q->param($pstr));
     $v = '' unless defined $v;
+    print STDERR "strictparam('$pstr')='$v'\n";
 
     return $v;
 }
@@ -460,20 +458,53 @@ sub getcookie1 {
 # +++ is "make a cross with finger and thumb on lips or heart"
 # ++ is "make three crosses with thumb, on forehead, lips, and heart, at the Holy Gospel"
 # + is "make a cross over the forehead and abdomen: cross yourself"
-sub setcross {
-  my $line = shift;	
-  my $csubst;
-  $csubst = "<IMG SRC=$htmlurl/cross3.gif ALIGN=BASELINE ALT=''>";
-#  $csubst = "<font style='color:red'>\x{2716}</font>";
-  $line =~ s/\+\+\+/$csubst/g;  
-  $csubst = "<IMG SRC=$htmlurl/cross2.gif ALIGN=BASELINE ALT=''>";
-#  $csubst = "<font style='color:red'>\x{271D}</font>";
-  $line =~ s/\+\+/$csubst/g;
-  $csubst = "<IMG SRC=$htmlurl/cross1.gif ALIGN=BASELINE ALT=''>";
-#  $csubst = "<font style='color:red'>\x{2720}</font>";
-  $line =~ s/ \+ / $csubst /g;	 
+# This version uses Unicode entities instead of small GIFs.
+sub setcross
+{
+    my $line = shift;
+    if ( CGI::user_agent("BlackBerry") )
+    {
+        # Not enough Unicode for what we really want, below.  Fake it.
+        # cross type 3: COPTIC SMALL LETTER DEI
+        my $csubst = "<span style='color:red; font-size:1.25em'>&#x03EF;</span>";
+        $line =~ s/\+\+\+/$csubst/g;
+        # Cross type 2: DAGGER
+        my $csubst = "<span style='color:red; font-size:1.25em'>&#x2020;</span>";
+        $line =~ s/\+\+/$csubst/g;
+        # Cross type 1: PLUS SIGN
+        my $csubst = "<span style='color:red; font-size:1.25em'>+</span>";
+        $line =~ s/ \+ / $csubst /g;
+    }
+    else
+    {
+        # Cross type 3: Cross of Lorraine
+        my $csubst = "<span style='color:red; font-size:1.25em'>&#x2628;</span>";
+        $line =~ s/\+\+\+/$csubst/g;
+        # Cross type 2: Greek Cross (Cross of Jerusalem)
+        my $csubst = "<span style='color:red; font-size:1.25em'>&#x2720;</span>";
+        $line =~ s/\+\+/$csubst/g;
+        # cross type 1: Latin Cross
+        my $csubst = "<span style='color:red; font-size:1.25em'>&#x271D;</span>";
+        $line =~ s/ \+ / $csubst /g;
+    }
 
-  return $line;
+    return $line;
+}
+
+#*** setcross2($line)   
+# Version (unused) of setcross that uses gifs.
+sub setcross2
+{
+    my $line = shift;	
+    my $csubst;
+    $csubst = "<IMG SRC=$htmlurl/cross3.gif ALIGN=BASELINE ALT=''>";
+    $line =~ s/\+\+\+/$csubst/g;  
+    $csubst = "<IMG SRC=$htmlurl/cross2.gif ALIGN=BASELINE ALT=''>";
+    $line =~ s/\+\+/$csubst/g;
+    $csubst = "<IMG SRC=$htmlurl/cross1.gif ALIGN=BASELINE ALT=''>";
+    $line =~ s/ \+ / $csubst /g;	 
+
+    return $line;
 }
 
 #*** setcell($text1, $lang1);

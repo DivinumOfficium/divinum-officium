@@ -57,6 +57,7 @@ our $temporaname = 'Tempora';
 our $communename = 'Commune';
 
 #*** collect standard items
+require "$Bin/do_read.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
@@ -65,6 +66,8 @@ require "$Bin/horas.pl";
 require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
 require "$Bin/tfertable.pl";
+
+binmode(STDOUT,':encoding(utf-8)');
 
 #*** get parameters
 getini('horas'); #files, colors

@@ -8,6 +8,8 @@
 #use warnings;
 #use strict "refs";
 #use strict "subs";
+
+my @lines;
 my $a = 4;
 
 sub error {
@@ -91,7 +93,7 @@ sub getname {
   if (!@sundaytable) {getsundaytable();}
   my $i = 0;
   for ($i = 0; $i < @sundaytable; $i++) {
-    my $str = chompd($sundaytable[$i]);
+    my $str = $sundaytable[$i];
     if ($str && $str =~ /^$abbr\=(.+)/) {
 	  $str = $1;
 	  if ($str =~ /^\s*\*/) {return "$abbr = $'";}
@@ -105,11 +107,9 @@ sub getname {
 
 #*** getsundaytable()
 # reads sundaytable.txt into @sundaytable
-sub getsundaytable {
-   if (open (NI, "$datafolder/sundaytable.txt")) {
-     @sundaytable = <NI>;
-	 close NI;
-   }
+sub getsundaytable
+{
+    @sundaytable = do_read("$datafolder/sundaytable.txt")
 }
 
 #*** getadvent($year)
@@ -181,9 +181,8 @@ sub getrank {
     : ($version =~ /newcal/i) ? '2009' : ($version =~ /1960/) ? 1960 : 1942;     
   our %kalendar = undef;
   our $kalendarkey = ''; 
-  if (open(INP, "$datafolder/../horas/Latin/Tabulae/K$kalendarname.txt")) {
-    my @a = <INP>;
-    close INP;
+  if ( @a = do_read("$datafolder/../horas/Latin/Tabulae/K$kalendarname.txt"))
+  {
     foreach (@a) {
       my @item = split('=', $_); 
       $kalendar{$item[0]} = $item[1];
@@ -196,11 +195,9 @@ sub getrank {
   # Handle transfers
   my $vtrans = ($version =~ /newcal/i) ? 'newcal' : ($version =~ /(1955|1960)/) ? '1960' : 
    ($version =~ /monastic/i) ? 'M' : ($version =~ /1570/) ? '1570' : ($version =~ /1910/) ? 1910 : 'DA';  
-  if ($vtrans && open(INP, "$datafolder/../horas/Latin/Tabulae/Tr$vtrans.txt")) {
-     my $tr = '';
-     while ($line = <INP>) {$tr .= chompd($line);}
+  if ($vtrans && (@lines = do_read("$datafolder/../horas/Latin/Tabulae/Tr$vtrans.txt"))) {
+     my $tr = join ('', @lines);
      $tr =~ s/\=/\;\;/g;
-     close(INP);
      %transfertemp = split(';;', $tr);      
      $transfertemp = $transfertemp{$sday}; 	
   } else {%transfertemp = undef; $transfertemp = '';} 
@@ -210,10 +207,8 @@ sub getrank {
   $dirgeline = '';	 
   $dirge = 0;		 	 
   if (($tk || $Hk || $savesetup ) && !(-e "$datafolder/../horas/Latin/Tabulae/Tr$vtrans$year.txt")) {tfertable($version, $year, $datafolder);}
-  if (open(INP, "$datafolder/../horas/Latin/Tabulae/Tr$vtrans$year.txt")) {   
-     my $tr = ''; 
-     while ($line = <INP>) {$tr .= chompd($line);}
-     close(INP);
+  if (@lines = do_read("$datafolder/../horas/Latin/Tabulae/Tr$vtrans$year.txt")) {   
+     my $tr = join ('', @lines);
      $tr =~ s/\=/\;\;/g;  	   
      %transfer = split(';;', $tr);	 
      if (exists($transfer{dirge})) {$dirgeline = $transfer{dirge};}  #&& !$caller
@@ -498,7 +493,7 @@ sub getrank {
 
   # In Festo Sanctae Mariae Sabbato according to the rubrics.
   if ($version !~ /monastic/i && $dayname[0] !~ /(Adv|Quad[0-6])/i && $dayname[0] !~ /Quadp3/i && 
-      $testmode !~ /^season$/i) { 
+      $testmode !~ /^season$/i && $saint{Rule} !~ /Infra octavam Epiphaniae Domini/i) { 
     if ($dayofweek == 6 && $srank !~ /(Vigil|in Octav)/i && $trank[2] < 2 && $srank[2] < 2 && !$transfervigil) { 
       $tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
       $scriptura = $tname;  
@@ -513,7 +508,8 @@ sub getrank {
     } 
 
 	if ($hora =~ /(Vespera|Completorium)/i && $dayofweek == 5 &&  $crank !~ /;;[2-7]/ && $srank !~ /;;[5-7]/ &&
-        $crank !~ /Vigil/i && $version !~ /1960/  && $saint{Rule} !~ /BMV/i && $trank !~ /;;[2-7]/) { 
+        $crank !~ /Vigil/i && $version !~ /1960/  && $saint{Rule} !~ /BMV/i && $trank !~ /;;[2-7]/ &&
+        $srank !~ /in Octav/i && $saint{Rule} !~ /Infra octavam Epiphaniae Domini/i) { 
       $tempora{Rank} = $trank = 'Sanctae Mariae Sabbato;;Feria;;1.9;;vide C10';  
 	  $tname = "Tempora/C10.txt";  
       if ($version =~ /Trident/i) {
@@ -647,7 +643,8 @@ sub getrank {
 
 
   if ($version !~ /Monastic/i && $dayname[0] !~ /(Adv|Quad[0-6])/i && $srank[2] < 2 && $trank[2] < 2 && 
-    $testmode !~ /^season$/i && (($dayofweek == 6 && $srank !~ /Vigil/i && $trank[2] < 2 && !$transfervigil) || 
+    $testmode !~ /^season$/i && $saint{Rule} !~ /Infra octavam Epiphaniae Domini/i &&
+    (($dayofweek == 6 && $srank !~ /Vigil/i && $trank[2] < 2 && !$transfervigil) || 
        ($hora =~ /Vespera|Completorium/i && $dayofweek ==5 &&  $trank[2] < 2 && $srank[0] !~ /Vigil/i &&
         $csaint{Rank} !~ /Vigil/i && $version !~ /1960/))) {  
       $tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
@@ -877,25 +874,23 @@ sub precedence {
   $rule = $communerule = '';    
     
   if ($winner) {   
-   if ($missa && $missanumber) {
+    if ($missa && $missanumber) {
       my $wm = $winner;
 	  $wm =~ s/\.txt/m$missanumber\.txt/i; 
 	  if ($missanumber && (-e "$datafolder/Latin/$wm")) {$winner = $wm; } 
-   } 
+    } 
 
-   my $flag = ($winner =~ /tempora/i && $tvesp == 1) ? 1 : 0;  
-   %winner = %{officestring("$datafolder/$lang1/$winner", $flag)};  
-   %winner2 = %{officestring("$datafolder/$lang2/$winner", $flag)};
+    my $flag = ($winner =~ /tempora/i && $tvesp == 1) ? 1 : 0;  
+    %winner = %{officestring("$datafolder/$lang1/$winner", $flag)};  
+    %winner2 = %{officestring("$datafolder/$lang2/$winner", $flag)};
 
-   if ($version =~ /1960/ && $missa && $dayname[0] =~ /Epi1/i && $winner =~ /01\-([0-9]+)/ && $1 < 13 && $dayofweek != 0) {
-     my $d = $1;
-	 $rule = $winner{Rule};
-	 $winner = 'Tempora/Epi1-0a.txt';
-     %winner = %{officestring("$datafolder/$lang1/$winner", $flag)};  
-     %winner2 = %{officestring("$datafolder/$lang2/$winner", $flag)};
-	 $winner{Rule} .= $rule; 
-	 if ($d == 11) {$commemoratio == 'Sancti/01-11r.txt';}
-   } 
+    # In the feriae where the octave of the Epiphany used to be, the
+    # Mass is of the Epiphany ('Ecce advenit') before the Sunday, and
+    # of I. Sunday after the Epiphany ('In excelso throno') afterwards.
+    if ($version =~ /1955|1960/ && $missa && $dayname[0] =~ /Epi1/i && $winner =~ /01\-([0-9]+)/ && $1 < 13 && $dayofweek != 0) {
+      $communetype = 'ex';
+      $commune = 'Tempora/Epi1-0a.txt';
+    } 
 
     $rule = $winner{Rule};  
   }
@@ -1500,4 +1495,84 @@ sub jtoi
     }
     $t = join('', @parts);
     return $t;
+}
+
+
+#*** papal_commem_rule($rule)
+#  Determines whether a rule contains a clause for a commemorated Pope.
+#  Returns a list ($class, $name), as for papal_rule.
+sub papal_commem_rule($)
+{
+  return papal_rule(shift, (commemoration => 1));
+}
+
+#*** papal_rule($rule, %params)
+#  Determines whether a rule contains a clause for the office of a
+#  Pope. If $params{'commemoration'} is true, a commemorated Pope
+#  (only) is checked for; otherwise, only in the office of the day.
+#
+#  Returns a list ($plural, $class, $name), where $plural is true if
+#  the office is of several Popes; $class is 'C', 'M' or 'D' as the
+#  Pope is a confessor, doctor or martyr, respectively; and $name is
+#  the name(s) of the Pope(s). The empty list is returned if there is
+#  no match.
+sub papal_rule($%)
+{
+  my ($rule, %params) = @_;
+  my $classchar = $params{'commemoration'} ? 'C' : 'O';
+  
+  return ($rule =~ /${classchar}Papa(e)?([CMD])=(.*?);/i);
+}
+
+
+#*** papal_prayer($lang, $plural, $class, $name[, $type])
+#  Returns the collect, secret or postcommunion from the Common of
+#  Supreme Pontiffs, where $lang is the language; $plural, $class and
+#  $name are as returned by papal_rule; and $type optionally specifies
+#  the key for the template (otherwise, it will be 'Oratio').
+sub papal_prayer($$$$;$)
+{
+  my ($lang, $plural, $class, $name, $type) = @_;
+  $type ||= 'Oratio';
+  
+  # Get the prayer from the common.
+  my (%common, $num);
+  my $prayer;
+  our $missa;
+  our ($datafolder, $communename);
+  
+  if ($missa)
+  {
+    %common = %{setupstring("$datafolder/$lang/$communename/C4b.txt")};
+    $num = $plural && $type eq 'Oratio' ? 91 : '';
+  }
+  else
+  {
+    %common = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
+    $num = $plural ? 91 : 9;
+  }
+
+  $prayer = $common{"$type$num"};
+  
+  # Fill in the name(s).
+  $prayer =~ s/ N\.([a-z ]+N\.)*/ $name/;
+  
+  # If we're not a martyr, get rid of the bracketed part; if we are,
+  # then just get rid of the brackets themselves.
+  if ($class !~ /M/i) {$prayer =~ s/\s*\((.|~[\s\n\r]*)*?\)//;}
+  else {$prayer =~ tr/()//d;}
+  
+  return $prayer;
+}
+
+#*** papal_antiphon_dum_esset($lang)
+#  Returns the Magnificat antiphon "Dum esset" from the Common of
+#  Supreme Pontiffs, where $lang is the language.
+sub papal_antiphon_dum_esset($)
+{
+  my $lang = shift;
+  our $datafolder, $communename;
+  
+  my %papalcommon = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
+  return $papalcommon{'Ant 9'};
 }

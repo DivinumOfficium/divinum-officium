@@ -29,9 +29,9 @@ sub specials {
   if (exists($w{"Special $hora$i"})) {return loadspecial($w{"Special $hora$i"});}
 
   our @s = @$s;
-  @t = splice(@t, @t);	 
+  @t = ();
   foreach (@s) {push (@t, $_);}
-  @s = splice(@s, @s);
+  @s = ();
   $skipflag = 0;			
   $tind = 0;
 
@@ -580,21 +580,35 @@ sub psalmi_minor {
      $psalms = chompd($a[2]);  
  
   } elsif ($version =~ /trident/i) {
-     @psalmi = split("\n", $psalmi{Tridentinum});
-     my $i = ($hora =~ /prima/i) ? $dayofweek : ($hora =~ /tertia/i) ? 8 :
-       ($hora =~ /sexta/i) ? 10 : ($hora =~ /nona/i) ? 12 : 14;
-     if ($hora !~ /(prima|completorium)/i && $dayofweek > 0 &&
-       $rule !~ /Psalmi\s*(minores)*\s*Dominica/i && $communerule !~ /Psalmi\s*(minores)*\s*Dominica/i) {$i++;}
-     if ($hora =~ /prima/i && 
-       ($rule =~ /Psalmi\s*(minores)*\s*Dominica/i || $communerule =~ /Psalmi\s*(minores)*\s*Dominica/i)) {$i = 7;}
+    my $daytype = ($dayofweek == 0) ? 'Dominica' : 'Feria';
+    my %psalmlines = split (/\n|=/, $psalmi{Tridentinum});
+    my $psalmkey;
+    
+    if ($hora =~ /Prima/i) {
+      my @days = ('Dominica','Feria II','Feria III','Feria IV','Feria V','Feria VI','Sabbato');
+      
+      # Prime has one form for each day of the week in the temporal
+      # office, and another for feasts and Paschaltide.
 
-     $psalmi[$i] =~ s/\=/\;\;/;
-     my @a = split(';;', $psalmi[$i]);
-     $ant = chompd($a[1]);
-     $psalms = chompd($a[2]);  
- 	 if ($hora =~ /prima/i && $dayofweek == 0 && $winner =~ /tempora/i && $dayname[0] =~ /Quad/i) 
-		{$psalms =~ s/117/92,99/;}	 ##??????
-
+      $psalmkey = 'Prima ' . ((($winner =~ /Sancti/i && $winner{'Rank'} !~ /Vigil/i) || $dayname[0] =~ /Pasc/i)
+        ? 'Festis'
+        : $days[$dayofweek]);
+        
+      # Sunday Prime has a slightly different form from Septuagesima
+      # until Easter.
+      if ($dayofweek == 0 && $dayname[0] =~ /Quad/i) {
+        $psalmkey .= ' SQP';
+      }
+    }
+    else {
+      # Psalmody at the hours is invariable. The antiphon at Terce,
+      # Sext and None is different on Sundays.
+      $psalmkey = ($hora =~ /Completorium/i) ? 'Completorium' : "$hora $daytype";
+    }
+    
+    ($ant, $psalms) = split(';;', $psalmlines{$psalmkey});
+    $ant = chompd($ant);
+    $psalms = chompd($psalms);
   } else {      
     @psalmi = split("\n", $psalmi{$hora});
     my $i = 2 * $dayofweek;   
@@ -697,18 +711,21 @@ sub psalmi_minor {
   $psalms =~ s/\s//g;  	   
   @psalm = split(',', $psalms); 
   
-
-  #prima psalm set for feasts
-  if ($hora =~ /prima/i && $feastflag) {
-    $psalm[0] = 53;
-    setbuild2('First psalm #53'); 
-  }
-  
-  # prima psalm set for laudes 2 sunday
-  if ($hora =~ /prima/i && $laudes == 2 && $dayname[1] =~ /Dominica/i && $version !~ /1960/) { 
-    $psalm[0] = 99;
-    unshift(@psalm, 92);
-    setbuild2("First psalms #99 and  #92"); 
+  # The rules for determining the psalmody at Prime in the Tridentine
+  # rubrics are somewhat simpler.
+  unless ($version =~ /Trident/i) {
+    #prima psalm set for feasts
+    if ($hora =~ /prima/i && $feastflag) {
+      $psalm[0] = 53;
+      setbuild2('First psalm #53'); 
+    }
+    
+    # prima psalm set for laudes 2 sunday
+    if ($hora =~ /prima/i && $laudes == 2 && $dayname[1] =~ /Dominica/i && $version !~ /1960/) { 
+      $psalm[0] = 99;
+      unshift(@psalm, 92);
+      setbuild2("First psalms #99 and  #92"); 
+    }
   }
 
   push (@s, $ant1);
@@ -942,8 +959,15 @@ sub oratio
 
     $ind = ($hora =~ /vespera/i) ? $vespera : 2; 	
 
-    if ($scriptura =~ /Epi1/i && !exists($winner{Oratio}) && 
-    ($version =~ /(monastic|1960)/i || $day > 13)) {$rule .= 'Oratio Dominica';}   
+    # Special handling for days during the suppressed octave of the Epiphany.
+    # Before the Sunday formerly in the octave, the collect of the Epiphany is
+    # said, as in the past; afterwards, the collect of the Sunday is said, in
+    # which case we have to override it.
+    if ($dayname[0] =~ /Epi1/i && $rule =~ /Infra octavam Epiphaniae Domini/i &&
+      $version =~ /(monastic|1955|1960)/i)
+    {
+        $rule .= "Oratio Dominica\n";
+    }
 
     if (($rule =~ /Oratio Dominica/i && (!exists($w{Oratio}) || $hora =~ /Vespera/i)) ||
       ($winner{Rank} =~ /Quattuor/i && $version !~ /1960/i && $hora =~ /Vespera/i))
@@ -976,16 +1000,10 @@ sub oratio
         if ($w && $hora !~ /Matutinum/i) {setbuild($winner, "Oratio $i", 'try');}
     }
 
-    if ($version !~ /Trident/i && $w{Rule} =~ /OPapa([CM])=(.*?)\;/i) {
-    my $martyr = $1;
-    my $name = $2;
-    my %c = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-    my $num = ($name =~ /( et |and|és)/i) ? 91 : 9;
-    $w = $c{"Oratio$num"};	  
-    $w =~ s/ N\.([a-z ]+N\.)*/ $name/;
-    if ($martyr !~ /M/i) {$w =~ s/\(.*?\)//;}
-    else {$w =~ s/[\(\)]//g;} 
-    if ($w && $hora !~ /Matutinum/i) {setbuild2("Oratio Gregem tuum");}
+    # Special processing for Common of Supreme Pontiffs.
+    if ($version !~ /Trident/i && (my ($plural, $class, $name) = papal_rule($w{Rule}))) {
+      $w = papal_prayer($lang, $plural, $class, $name);
+      if ($w && $hora !~ /Matutinum/i) {setbuild2("Oratio Gregem tuum");}
     }
              
     if (!$w && $commune) { 
@@ -1306,17 +1324,13 @@ sub getcommemoratio {
   }
   if (!$o) {$o = $w{"Oratio $ind"};}
   if (!$o) {$i = 4 - $ind; $o = $w{"Oratio $i"};}
-  if (!$o) {$o = $c{"Oratio"};}  
-  my $martyr = '';	
+  if (!$o) {$o = $c{"Oratio"};}
+  
+  # Special processing for Common of Supreme Pontiffs.
+  my $popeclass = '';	
   my %cp = {};	
-  if ($version !~ /Trident/i && $w{Rule} =~ /OPapa([CMD])=([a-z ]*)\;/i) {
-    $martyr = $1;
-	my $name = $2;
-	%cp = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	$o = $cp{'Oratio9'};	  
-	$o =~ s/ N\.([a-z ]+N\.)*/ $name/; 
-    if ($martyr !~ /M/i) {$o =~ s/\(.*?\)//;}
-	else {$o =~ s/[\(\)]//g;}
+  if ($version !~ /Trident/i && ((my $plural, $popeclass, my $name) = papal_rule($w{Rule}))) {
+	$o = papal_prayer($lang, $plural, $popeclass, $name);
   }
   if (!$o) {return '';}
 
@@ -1331,7 +1345,7 @@ sub getcommemoratio {
   my $name = $w{Name};  
 
   $a = replaceNdot($a, $lang, $name); 
-  if ($martyr && $martyr =~ /C/ && $ind == 3) {$a = $cp{'Ant 9'};}	
+  if ($popeclass && $popeclass =~ /C/ && $ind == 3) {$a = papal_antiphon_dum_esset($lang);}
 
  if ($wday =~ /tempora/i) {
 	if ($month == 12 && 
@@ -1489,7 +1503,7 @@ sub tryoldhymn {
 sub getanthoras {
   my $lang = shift;
 
-  my $tflag = ($version =~ /Trident/i && $winner =~ /Sancti/i && $rank >= 2) ? 1 : 0;
+  my $tflag = ($version =~ /Trident/i && $winner =~ /Sancti/i) ? 1 : 0;
   my $ant = '';		 
   if ($rule !~ /Antiphonas horas/i && $communerule !~ /Antiphonas horas/i && !$tflag) {return '';}
   if ($version =~ /(1955|1960)/ && $dayofweek > 0 && $rank < 6) {return '';}
@@ -1497,7 +1511,7 @@ sub getanthoras {
 
   my $w = $w{'Ant Laudes'};	  
   my $c = ($winner =~ /sancti/i) ? 3 : 2;
-  if (!$w  && ($communetype =~ /ex\s*/i)) {
+  if (!$w  && ($communetype =~ /ex\s*/i || $version =~ /Trident/i)) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
     $w = $com{'Ant Laudes'};
 	$c = 4;
@@ -1818,17 +1832,18 @@ sub getrefs {
       }	
 	  
 
-      if ($version !~ /Trident/i && $rule =~ /CPapa([CM])\=([a-z ]*)\;/i) {	
-        my $martyr = $1;
-		my $name = $2;	
-		my %cp = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
-	    $o = $cp{'Oratio9'};
-	    $o =~ s/ N\.([a-z ]+N\.)*/ $name/;
-        if ($martyr !~ /M/i) {$o =~ s/\(.*?\)//;}
-	    else {$o =~ s/[\(\)]//g;}
-	    if ($after =~ /!Commem/i) {$after = "$&$'"} else {$after = '';}
-	    $o = "\$Oremus\n" . $o; 
-	  } 
+      # Special processing for Common of Supreme Pontiffs.
+      if ($version !~ /Trident/i && (my ($plural, $class, $name) = papal_commem_rule($rule))) {
+        if ($item =~ /Gregem/i)
+        {
+          $o = papal_prayer($lang, $plural, $class, $name);
+          if ($after =~ /!Commem/i) {$after = "$&$'"} else {$after = '';}
+          $o = "\$Oremus\n" . $o;
+        }
+        
+        # Confessor-Popes have a common Magnificat antiphon at second Vespers.
+        if ($popeclass && $popeclass =~ /C/ && $ind == 3) {$a = papal_antiphon_dum_esset($lang);}
+      }
 
 	  $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$o" . "_\n$after";  
       next;

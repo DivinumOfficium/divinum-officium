@@ -13,6 +13,7 @@ ex Sancti/01-01;
 Psalmi Dominica
 Omit preces
 Feria Te Deum
+CPapaM=Telesphorus;
 
 [Capitulum Vespera]
 !Gal 4:1-2
@@ -37,10 +38,7 @@ $Per Dominum
 
 [Commemoratio]
 !Commemoratio S. Telesphori Papae et Martyris.
-@Commune/C2:Oratio proper
-!Prayer.
-Kérünk Urunk, örök Pásztor, hogy szent Telesphorus vértanud és pápád kozbenjárására, akit Te Egyházad élére tettél, légy irgalmas nyájadhoz.
-$Per Dominum
+@Commune/C2:Oratio1 Gregem
 
 [Invit]
 Christus natus est nobis: * Venite adoremus.

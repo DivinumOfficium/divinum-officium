@@ -13,6 +13,7 @@ ex Sancti/01-01;
 Psalmi Dominica
 Omit preces
 Feria Te Deum
+CPapaM=Telesphorus;
 
 [Capitulum Vespera]
 !Gal 4:1-2
@@ -39,10 +40,7 @@ $Per Dominum
 
 [Commemoratio]
 !Commemoratio S. Telesphori Papae Martyris.
-@Commune/C2:Oratio proper
-$Oremus.
-Look forgivingly on thy flock, Eternal Shepherd, and keep it in thy constant protection, by the intercession of blessed Telesphorus thy Martyr and Sovereign Pontiff, whom thou didst constitute Shepherd of the whole Church.
-$Per Dominum
+@Commune/C2:Oratio1 Gregem
 
 [Invit]
 Christus natus est nobis: * Venite adoremus.

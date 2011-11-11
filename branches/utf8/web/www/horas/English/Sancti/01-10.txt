@@ -2,7 +2,7 @@
 Quinta die infra Octavam Epiphaniae;;Semiduplex;;2;;ex Sancti/01-06
 
 [Rank1960]
-Die Decima Januarii;;Feria;;1.5;;vide Sancti/01-06
+Die Decima Januarii;;Feria;;1.2;;vide Sancti/01-06
 
 [Rule]
 ex Sancti/01-06
@@ -10,6 +10,8 @@ Lectio1 tempora
 Doxology=Epi
 9 lectiones
 Feria Te Deum
+CPapaM=Hyginus;
+Infra octavam Epiphaniae Domini
 
 [Lectio1]
 Lesson from the letter of St Paul the Apostle to the Romans
@@ -130,3 +132,13 @@ All nations shall come * from afar, bringing their gifts with them. Alleluia.
 [Ant 3]
 All they from Saba shall come, * they shall bring gold and Incense. Alleluia,~
 Alleluia.
+
+[Commemoratio 3]
+!Commemoratio S. Hygini Papae et Martyris
+@Commune/C2:Oratio proper Gregem
+$Oremus
+Mercifully consider our weakness, O Almighty God, and whereas by the burden of~
+our sins we are sore let Hyginus your Martyr be mercifully pleased to deliver us from~
+all things which may hurt our bodies, and from all evil thoughts which may~
+defile our souls
+$Per Dominum

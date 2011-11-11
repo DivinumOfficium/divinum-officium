@@ -63,6 +63,8 @@ our $communerule; # $commune{Rank}
 our $duplex; #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex 
              # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
 
+binmode(STDOUT,':encoding(utf-8)');
+
 #*** collect standard items
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
@@ -73,6 +75,7 @@ require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
 require "$Bin/tfertable.pl";
+require "$Bin/do_read.pl";
 
 $q = new CGI;
 

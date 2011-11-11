@@ -30,6 +30,7 @@ our $communename = 'Commune';
 
 our $error = '';
 $debug = '';
+require "$Bin/do_read.pl";
 require "$Bin/webdia.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
@@ -37,6 +38,8 @@ require "$Bin/horas.pl";
 require "$Bin/check.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
 require "$Bin/tfertable.pl";
+
+binmode(STDOUT, ':utf8');
 
 $q = new CGI;
 
@@ -64,13 +67,16 @@ if (!$version) {$version = 'Divino Afflatu';}
 setmdir($version); 
 
 $setupsave = strictparam('setup');
+print STDERR "Got: $setupsave\n";
 $setupsave =~ s/\~24/\"/g;
 %dialog = %{setupstring("$datafolder/horas.dialog")};
 if (!$setupsave) {%setup = %{setupstring("$datafolder/horas.setup")};}
 else {%setup = split(';;;', $setupsave);}
 
+print STDERR "Evalling: $setup{parameters}\n";
 eval($setup{'parameters'});
 eval($setup{'general'});	 
+print STDERR "\$savesetup=$savesetup\n";
 
 $date = strictparam('date'); 
 precedence($date);	       
@@ -140,11 +146,18 @@ if ($savesetup > 1 && $save && $folder1 !~ /program/i) {
   if ($newtext) { 
 	  $newtext =~ s/\r\r/\r/sg;
 	  my $f1 = ($folder1 =~ /tones/) ? $folder1 : "$lang1/$folder1";
+    if ( $ENV{DIVINUM_OFFICIUM_SAVE} )
+    {
     if (open(OUT, ">$datafolder/$f1/$filename1.txt")) {
         binmode OUT;
         print OUT $newtext;
 	      close OUT;         
-      } else {$error = "$datafolder/$f1/$filename1.txt could not be saved"}
+      } else {$error = "$datafolder/$f1/$filename1.txt could not be saved!"}
+    }
+    else
+    {
+        $error = "File save is disabled."
+    }
   } 
 }
 
@@ -191,7 +204,7 @@ if ($folder1) {
 
 #*** collect files for column2
 if ($lang2 !~ /(none|serach)/i) {
-  @files2 = splice(@files2, @files2);
+  @files2 = ();
   $flag = 0;
   $flag1 = 0;
 
@@ -234,22 +247,16 @@ $txlat = $txvern = '';
 $title = ($savesetup > 1 && $folder1 !~ /program/i) ? 'Edit' :'Show';
 $title .= " files";
 if ($skeleton) {$title = 'Skeleton';}
-@txlat = splice(@txlat, @txlat);
-@txvern = splice(@txvern, @txvern);
+
+@txlat = ();
+@txvern = ();
                                            
-  if (open(INP, "$dirname1/$filename1.$ext1")) {
-    @txlat = <INP>;
-    close INP;
-   } elsif ($folder1 =~ /program/ && open(INP, "$Bin/$filename1.$ext1")) {
-	   @txlat = <INP>;
-	   close INP;
-   } else {$error .= "$dirname1/$filename1.$ext1 " .
-      "or $Bin/$filename1 cannot open";}
+(@txlat = do_read("$dirname1/$filename1.$ext1"))                       or
+($folder1 =~ /program/ && (@txlat = do_read("$Bin/$filename1.$ext1"))) or
+($error .= "$dirname1/$filename1.$ext1 or $Bin/$filename1 cannot open")   ;
 
 if ($lang2 !~ /(none|search)/i) {
-  if (open(INP, "$dirname2/$filename2.txt")) {
-    @txvern = <INP>;
-    close INP;
+  if ( @txvern = do_read("$dirname2/$filename2.txt") ) {
   } else {$error .= "$dirname2/$filename2.txt cannot open";}
 } elsif ($lang2 =~ /search/i) {
    if (!$searchtext) {$searchtext = searchrut($sstring, $skey);}
@@ -408,14 +415,14 @@ if (!$skeleton) {
 
   $ln = ($edit1) ? "" : "<BR>";
   foreach $item (@txlat) {
-    $txlat .= "$item$ln";
+    $txlat .= "$item\n$ln";
   }
   
   
   $ln = ($edit1) ? "" : "<BR>";
   if (@txvern) {
     foreach $item (@txvern) {
-      $txvern .= "$item$ln";
+      $txvern .= "$item\n$ln";
     }
   }
   $pind1 = 1;
@@ -426,7 +433,7 @@ if (!$skeleton) {
   else {
      $txlat =~ s/TEXTAREA/TEXT\_AREA/g;
      print "<P ALIGN=CENTER>";
-     print "<TEXTAREA ROWS=$row1 $readonly COLS=$cols NAME=Lat0 WRAP=virtual $width" .
+     print "<TEXTAREA ROWS=$row1 $readonly COLS=\"$cols\" NAME=\"Lat0\" WRAP=virtual $width" .
       " STYLE={FONT-SIZE:120%;$disabled} onclick='changed1=1'>\n";
 	   print "$txlat";
      print "</TEXTAREA></P>\n";
@@ -635,7 +642,6 @@ sub adjust {
     $j = 0;
     @t = splice(@t, @t);
     for ($i = 0; $i < @o; $i++) {   
-      $o[$i] =~ s/—//g;
       if ($o[$i] !~ /\.\]*\s*$/) {$t[$j] .= chompd($o[$i]) . ' ';}
       else {
         $t[$j] .= $o[$i];  
@@ -729,7 +735,6 @@ sub adjust {
         $t[$i] =~ s/([a-oq-z])ii([a-z][a-z])/$1u$2/ig;
       
       } elsif ($lang =~ /english/i) {
-        $t[$i] =~ s/—//g; 
         $t[$i] =~ s/\"//g;
         $t[$i] =~ s/\[(.*?[\,\.\?\;]+.*?)\]/\($1\)/g;   #[...] to (...)
         $t[$i] =~ s/\s([\;\,\.\?\!])/$1/g;
@@ -845,10 +850,8 @@ sub searchrut {
  foreach $fname (@files1) {
    my $filename = ($folder1 =~ /program/i) ?  "$Bin/$fname.pl" :
   	 "$datafolder/$lang1/$folder1/$fname.txt";
-   if (open(INP, $filename)) {
-     $text = '';
-     while ($line = <INP>) {$text .= $line;}     
-     close INP;   		
+   if ( @lines = do_read($filename)) {
+     $text = join('', @lines);
    } else {$error .= "$filename cannot open";}   
    my $num = 0;
    $casesense = 0;

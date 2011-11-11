@@ -11,7 +11,6 @@
 
 my $a = 4;
 
-
 #*** savesetuphash($name, \%setup)
 # saves the referenced setup hash modified by each dialog call
 # into $name.setup file
@@ -707,8 +706,9 @@ sub voicepsalm {
   $psalmfolder = ($accented =~ /plane/i) ? 'psalms' : 'psalms1';   
   $fname=checkfile($lang, "$psalmfolder/Psalm$psnum.txt");
 
-  if (open(INP, $fname)) {
-	  while ($line = <INP>) {
+  my @lines;
+  if (@lines = do_read($fname)) {
+	  foreach $line ( @lines ) {
       if ($line =~ /^\s*([0-9]+)\:([0-9]+)/) {$v = $2;}
       elsif ($line =~ /^\s*([0-9]+)/) {$v = $1;}
       if ($v < $v1) {next;}
@@ -718,7 +718,6 @@ sub voicepsalm {
       $line =~ s/(\(.*?\))//g;
       $t .= $line;
 	}
-    close INP; 		
     if ($psnum != 210 && $nogloria == 0) {$t .= Gloria($lang);} 
 	return $t;
   }
@@ -790,10 +789,8 @@ sub speakit {
     if ($t[$i] =~ /\{\:(.*?)\:\}/) {
 	    $tfile = $1;      
  	    $texttone = '';
-	    if ($tfile =~ /[a-z0-9]/ && open (INP, "$datafolder/tones/$tfile.txt")) {
-		   my $line;
-		   while ($line = <INP>) {$texttone .= $line;};
-	      close INP;
+	    if ($tfile =~ /[a-z0-9]/ && (@lines = do_read("$datafolder/tones/$tfile.txt"))) {
+		   $texttone = join("\n", @lines);
 	      $psalmline = 0;  
       } 
 	  }

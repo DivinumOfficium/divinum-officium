@@ -8,6 +8,7 @@ Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex 2 classis;;5;;ex C11
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex;;3;;ex C11
 
 [Rule]
+CPapaC=Marcum;
 ex C11;
 Gloria
 Credo
@@ -87,6 +88,7 @@ $Qui vivis
 
 [Commemoratio Oratio]
 !Pro S. Marco Papa et Conf.
+@Commune/C4b:Oratio proper Gregem
 Exáudi, Dómine, preces nostras: et, interveniénte beáto Marco Confessóre tuo~
 atque Pontífice, indulgéntiam nobis tríbue placátus et pacem.
 $Per Dominum
@@ -98,6 +100,7 @@ $Per Dominum
 
 [Commemoratio Secreta]
 !Pro S. Marco Papa et Conf.
+@Commune/C4b:Secreta proper Gregem
 Accépta tibi sit, Dómine, sacrátæ plebis oblátio pro tuórum honóre Sanctórum:~
 quorum se méritis de tribulatióne percepísse cognóscit auxílium.
 $Per Dominum
@@ -109,6 +112,7 @@ $Per Dominum
 
 [Commemoratio Postcommunio]
 !Pro S. Marco Papa et Conf.
+@Commune/C4b:Postcommunio proper Gregem
 Da, quaesumus, Dómine, fidélibus pópulis Sanctórum tuórum semper veneratióne~
 lætari: et eórum perpétua supplicatióne muníri.
 $Per Dominum
