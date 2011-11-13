@@ -5,7 +5,7 @@ use Getopt::Long;
 use Date::Format;
 use Algorithm::Diff;
 
-my @filters = qw/kalendar hymns titles psalms antiphons html accents ij site urls spacing/;
+my @filters = qw/kalendar hymns titles psalms antiphons html accents ij site urls punctuation spacing/;
 my $filters = join(' ', @filters);
 
 my $USAGE = <<USAGE ;
@@ -20,6 +20,7 @@ Options:
                       defaults to environment DIVINUM_OFFICIUM_URL if defined
                       otherwise http://divinumofficium.com
 --filter=[+|-]FILTER  suppress (-) or include only (+) differences of type FILTER
+--[no]baulk           Stop reporting differences if the observance doesn't match [default baulk]
 --update              Update the contents of each FILE... to match current revisions
                       Doesn't report any differences.  
                       This option excludes --filter= and --url=.
@@ -47,15 +48,18 @@ accents               accents and ligatures in all languages (-accents only)
 ij                    i vs j (-ij only)
 site                  the site specification (from http:// through /cgi-bin) (-site only)
 urls                  URL strings
+punctuation           presence and type of punctuation in text (-punctuation only)
 spacing               all white space (-spaces only)
 USAGE
 
 my $filter = '';
 my $update;
 my $new_base_url;
+my $baulk = 1;
 
 GetOptions(
     'url=s' => \$new_base_url,
+    'baulk!' => \$baulk,
     'filter=s' => \$filter,
     'update' => \$update
 ) or die $USAGE;
@@ -124,7 +128,6 @@ foreach my $file ( @ARGV )
                 }
                 else
                 {
-
                     # Ignore specified differences.
                     foreach ( @filter )
                     {
@@ -239,9 +242,27 @@ foreach my $file ( @ARGV )
 
                         elsif ( /spacing/ )
                         {
-                            s/ +/ /g for @old_result, @new_result;
-                            s/([^\w]) /$1/g for @old_result, @new_result;
-                            s/ ([^\w])/$1/g for @old_result, @new_result;
+                            for ( @old_result, @new_result )
+                            {
+                                # Capture interword spaces as escape character,
+                                # then remove all spaces,
+                                # then replace the escapes with spaces again.
+                                s/\b +\b/\x{1E}/g;
+                                s/ //g;
+                                s/\x{1E}/ /g;
+                            }
+                        }
+
+                        elsif ( /punctuation/ )
+                        {
+                            # Eliminate punctuation but keep word boundaries.
+                            # Similar to spacing except capture all punctuation
+                            for ( @old_result, @new_result )
+                            {
+                                s/\b[.,!?:;]+\b/\x{1E}/g;
+                                s/[.,!?:;]+//g;
+                                s/\x{1E}/ /g;
+                            }
                         }
 
                         else
@@ -269,7 +290,7 @@ foreach my $file ( @ARGV )
                     my $printed = 0;
 
                     $diff->Base( 1 );   # Return line numbers, not indices
-                    while ( $diff->Next() )
+                    DIFF: while ( $diff->Next() )
                     {
                         next if $diff->Same();
                         print STDOUT "\n$new_url\n" unless $printed ++;
@@ -286,6 +307,13 @@ foreach my $file ( @ARGV )
                                 if ( defined $old && defined $new )
                                 {
                                     print "CHANGED $old TO $new\n";
+
+                                    # cf. /kalendar/ above
+                                    last DIFF if 
+                                        $baulk                      &&
+                                        $old =~ /<FONT COLOR=[^"]/  &&
+                                        $old !~ /COLOR=MAROON/      &&
+                                        $old !~ /HREF/;
                                 }
                                 elsif ( defined $old )
                                 {
