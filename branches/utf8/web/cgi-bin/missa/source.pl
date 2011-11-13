@@ -24,8 +24,11 @@ use Time::Local;
 
 $q = new CGI;
 $error = '';
+require "$Bin/../horas/do_io.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
+
+binmode(STDOUT, ':encoding(utf-8)');
 
 #*** collect parameters
 getini('missa'); #files, colors

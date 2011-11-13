@@ -57,11 +57,13 @@ our $communename = 'Commune';
 our $missa = 1;
 
 #require "$Bin/ordocommon.pl";
+require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/tfertable.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
+binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
 #*** get parameters

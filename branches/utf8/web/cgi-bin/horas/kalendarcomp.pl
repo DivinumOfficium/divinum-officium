@@ -29,6 +29,7 @@ $error = '';
 $debug = '';
 
 #*** collect standard items
+require "$Bin/do_io.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/tfertable.pl";
@@ -82,16 +83,13 @@ for ($i = 0; $i < @months; $i++) {
 %h1 = undef;
 %h2 = undef;
 
-if (open(INP, "$datafolder/Latin/Tabulae/K$year1.txt")) {
-  my @a = <INP>;
-  close INP;
+my @a;
+if (@a = do_read("$datafolder/Latin/Tabulae/K$year1.txt")) {
   foreach $item (@a) {if ($item =~ /=/) {$h1{$`} = $';}}
 } else {$error .= "$datafolder/Latin/Tabulae/K$year1.txt cannot open<BR>";}
 
 if ($year2 !~ /none/i) {
-  if (open(INP, "$datafolder/Latin/Tabulae/K$year2.txt")) {
-    my @a = <INP>;
-    close INP;
+  if (@a = do_read("$datafolder/Latin/Tabulae/K$year2.txt")) {
     foreach $item (@a) {if ($item =~ /=/) {$h2{$`} = $';}}
   } else {$error .= "$datafolder/Latin/Tabulae/K$year2.txt cannot open<BR>";}
 }

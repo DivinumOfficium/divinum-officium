@@ -30,12 +30,14 @@ our $missa = 1;
 
 our $error = '';
 $debug = '';
+require "$Bin/../horas/do_io.pl";
 require "$Bin/webdia.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/ordo.pl";
 require "$Bin/mcheck.pl";
 require "$Bin/tfertable.pl";
 require "$Bin/../horas/horascommon.pl";
+binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
 #*** collect parameters

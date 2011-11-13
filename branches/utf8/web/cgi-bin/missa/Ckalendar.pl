@@ -54,10 +54,12 @@ our $temporaname = 'Tempora';
 our $communename = 'Commune';
 
 #require "ordocommon.pl";
+require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
 
+binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
 #*** get parameters

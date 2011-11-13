@@ -1572,11 +1572,8 @@ sub getseant {
   my $ver = ($version =~ /monastic/i) ? 'M' : ($version =~ /1570/i) ? '1570' : ($version =~ /Trid/i) ? '1910' : 
     ($version =~ /Newcal/) ? 'Newcal' : ($version =~ /1960/) ? '1960' : 'DA';
 
-  if (open(INP, "$datafolder/Latin/Tabulae/Str$ver$year.txt")) { 
-    my $str = '';
-	my $line;
-	while ($line = <INP>) {$str .= $line;}
-	close INP;	  
+  if (my @a = do_read("$datafolder/Latin/Tabulae/Str$ver$year.txt")) { 
+    my $str = join('', @a);
 	$str =~ s/\=/;;/g;
 	$str =~ s/\s*//g;		  
 	my %c = split(';;', $str);	 

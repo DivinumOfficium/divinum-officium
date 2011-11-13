@@ -64,6 +64,7 @@ our $duplex; #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
 
 #*** collect standard items
 #require "$Bin/ordocommon.pl";
+require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
@@ -72,6 +73,7 @@ require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
 require "$Bin/tfertable.pl";
 
+binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
 #get parameters

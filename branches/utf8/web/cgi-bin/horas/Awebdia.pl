@@ -15,21 +15,22 @@ my $a = 4;
 # saves the referenced setup hash modified by each dialog call
 # into $name.setup file
 # called by ondestroy callback of MainWindow
-sub savesetuphash {
-  my $name = shift;
-  my $setup = shift;
-  my %setup = %$setup; 
-  if (open (OUT, ">$datafolder/$name.setup")) {
-     my ($key, $value);
-	 foreach $key (sort keys %setup) {	
-	    print OUT '[' . $key . "]\n";
-		$value = $setup{$key};	
-		$value =~ s/\n//g;
-		$value =~ s/;;/;;\n/g; 
-		print OUT "$value\n";  
-     }
-	 close OUT;
-  }
+sub savesetuphash
+{
+    my $name = shift;
+    my $setup = shift;
+    my %setup = %$setup; 
+    my ($key, $value);
+    my @lines = ();
+    foreach $key (sort keys %setup)
+    {	
+        push @lines, "[$key]\n";
+        $value = $setup{$key};	
+        $value =~ s/\n//g;
+        $value =~ s/;;/;;\n/g; 
+        push @lines, "$value\n";  
+    }
+    do_write("$datafolder/$name.setup", @lines);
 }
 
 #*** setfont($font, $text)

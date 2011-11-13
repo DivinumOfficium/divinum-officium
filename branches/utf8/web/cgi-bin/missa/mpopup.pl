@@ -34,8 +34,11 @@ require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/ordo.pl";
 #require "$Bin/ordocommon.pl";
+require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/tfertable.pl";
+
+binmode(STDOUT, ':encoding(utf-8)');
 
 #*** get parameters
 getini('missa'); #files, colors

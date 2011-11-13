@@ -75,6 +75,7 @@ our $Hk = 0;
 our $Ck = 0;
 our $ordostatus = 'Ordo';
 
+require "$Bin/do_io.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
@@ -84,6 +85,9 @@ require "$Bin/horas.pl";
 require "$Bin/specials.pl";
 
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
+
+binmode(STDOUT, ':encoding(utf-8)');
+
 $q = new CGI;
 
 #*** get parameters

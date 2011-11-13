@@ -54,11 +54,14 @@ our $sanctiname = 'Sancti';
 our $temporaname = 'Tempora';
 our $communename = 'Commune';
 
+require "$Bin/do_io.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
 require "$Bin/tfertable.pl";
+
+binmode(STDOUT, ':encoding(utf-8)');
 
 $q = new CGI;
 

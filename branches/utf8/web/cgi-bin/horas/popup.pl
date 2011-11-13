@@ -57,7 +57,7 @@ our $temporaname = 'Tempora';
 our $communename = 'Commune';
 
 #*** collect standard items
-require "$Bin/do_read.pl";
+require "$Bin/do_io.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";

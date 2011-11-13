@@ -30,7 +30,7 @@ our $communename = 'Commune';
 
 our $error = '';
 $debug = '';
-require "$Bin/do_read.pl";
+require "$Bin/do_io.pl";
 require "$Bin/webdia.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
@@ -39,7 +39,7 @@ require "$Bin/check.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
 require "$Bin/tfertable.pl";
 
-binmode(STDOUT, ':utf8');
+binmode(STDOUT, ':encoding(utf8)');
 
 $q = new CGI;
 
@@ -67,16 +67,13 @@ if (!$version) {$version = 'Divino Afflatu';}
 setmdir($version); 
 
 $setupsave = strictparam('setup');
-print STDERR "Got: $setupsave\n";
 $setupsave =~ s/\~24/\"/g;
 %dialog = %{setupstring("$datafolder/horas.dialog")};
 if (!$setupsave) {%setup = %{setupstring("$datafolder/horas.setup")};}
 else {%setup = split(';;;', $setupsave);}
 
-print STDERR "Evalling: $setup{parameters}\n";
 eval($setup{'parameters'});
 eval($setup{'general'});	 
-print STDERR "\$savesetup=$savesetup\n";
 
 $date = strictparam('date'); 
 precedence($date);	       
@@ -148,10 +145,7 @@ if ($savesetup > 1 && $save && $folder1 !~ /program/i) {
 	  my $f1 = ($folder1 =~ /tones/) ? $folder1 : "$lang1/$folder1";
     if ( $ENV{DIVINUM_OFFICIUM_SAVE} )
     {
-    if (open(OUT, ">$datafolder/$f1/$filename1.txt")) {
-        binmode OUT;
-        print OUT $newtext;
-	      close OUT;         
+    if (do_write("$datafolder/$f1/$filename1.txt", $newtext)) {
       } else {$error = "$datafolder/$f1/$filename1.txt could not be saved!"}
     }
     else

@@ -24,13 +24,23 @@ my $rank;
 while ( my $line = <> )
 {
     chomp $line;
-    unless ( $rule || $rank || $line =~ /[{&\$[}_@]/ || $line =~ /^!/ )
+    unless ( $rule || $rank || $line =~ /^ *[!&#\$\@\[]/ )
     {
+        # Only transcribe the suffix text, not the prefix rules, whatever they are.
+        next unless $line =~ /^([^=]*=|.*{ *:[^{}]*})?([^={}]*)$/;
+        my $prefix = $1 ? $1 : '';
+        my $words = $2;
 
-        my @words = split(/([^a-zA-Z]+)/, $line);
+        my @words = split(/([^a-zA-Z]+)/, $words);
 
+        my $n = 0;
         for my $word ( @words )
         {
+            # First word in some lines is special but unmarked.
+            next if $n == 0 && $word eq 'Benedictio';
+            next if $n == 0 && $word eq 'Absolutio';
+            next if $n == 0 && $word eq 'Antiphona';
+
             # Try unnormalized first.
             # This handles the difference between María and mária.
 
@@ -57,17 +67,26 @@ while ( my $line = <> )
                 }
             }
         }
+        continue
+        {
+            $n = $n + 1
+        }
         $line = join('', @words);
 
         $line =~ s/ae/\x{e6}/g;
         $line =~ s/Ae/\x{c6}/g;
         $line =~ s/oe/\x{9c}/g;
         $line =~ s/Oe/\x{8c}/g;
+
+        $line = $prefix. $line;
     }
     else
     {
         $rule = ($line =~ /\[Rule\]/) || ($rule && $line !~ /^\[/);
         $rank = ($line =~ /\[Rank\]/) || ($rank && $line !~ /^\[/);
     }
+}
+continue
+{
     print $line;
 }

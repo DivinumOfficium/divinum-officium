@@ -66,18 +66,17 @@ sub invitatorium {
     {$fname = checkfile($lang, "Psalterium/Invitatorium4.txt");} 
 
 
-  if (open(INP, $fname)) {
-    my @a = <INP>;
-    close INP;
+  if (my @a = do_read($fname)) {
     
-    foreach $item (@a) {
+    foreach $item ( @a ) {
+      $item = "$item\n";
       if ($item =~ /\$ant2/i) {$item = "$ant2";}
       elsif ($item =~ /\$ant/i) {$item = "$ant";}  
       elsif ($item =~ /\(\*(.*?)\*(.*?)\)/) {$item = $` . setfont($smallfont, "($1) ") . $2 . $';}
 
       if ($dayname[0] =~ /Quad[56]/i && $winner !~ /Sancti/i && $rule !~ /Gloria responsory/i)
         {$item =~ s/\&Gloria/\&Gloria2/i;}
-      push (@s, $item);
+      push (@s, "$item");
     }    
   } else {$error .= "$fname cannnot open";}
 }
@@ -1149,11 +1148,9 @@ sub initiarule {
 
   my $ver = ($version =~ /monastic/i) ? 'M' : ($version =~ /1570/i) ? '1570' : ($version =~ /Trid/) ? '1910' : 
     ($version =~ /1960/) ? '1960' : 'DA';
-  if ($num < 4 && $version !~ /monastic/i && open(INP, "$datafolder/Latin/Tabulae/Str$ver$year.txt")) {
-      my $str = '';
-      $file = '';
-      while ($line = <INP>) {$str .= chompd($line);}
-      close(INP);
+  my @lines;
+  if ($num < 4 && $version !~ /monastic/i && (@lines = do_read("$datafolder/Latin/Tabulae/Str$ver$year.txt"))) {
+      my $str = join('', @lines);
       $str =~ s/\=/\;\;/g;   
       my %str = split(';;', $str);      
       my $key = sprintf("%02i-%02i",$month, $day);  

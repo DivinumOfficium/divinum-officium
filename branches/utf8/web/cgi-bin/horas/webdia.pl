@@ -312,7 +312,6 @@ sub strictparam
     my $pstr = shift;
     my $v = cleanse($q->param($pstr));
     $v = '' unless defined $v;
-    print STDERR "strictparam('$pstr')='$v'\n";
 
     return $v;
 }

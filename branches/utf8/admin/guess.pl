@@ -37,7 +37,7 @@ for my $file ( @ARGV )
 
         if ( $decoded )
         {
-            if ( $decoded =~ /([^\x{0001}-\x{007E}\x{00C0}-\x{00D6}\x{00D8}-\x{00F6}\x{00F8}-\x{024F}\x{2719}-\x{2720}])/ )
+            if ( $decoded =~ /([^\x{01}-\x{1F}\x{20}-\x{7E}\x{AB}\x{BB}\x{A1}\x{BF}\x{BF}-\x{750}\x{1E00}-\x{1FFE}\x{2010}-\x{2021}\x{2719}-\x{2721}])/ )
             {
                 push @nots, 'not utf-8 latin-based text, found '.sprintf('0x%x', ord($1))
             }

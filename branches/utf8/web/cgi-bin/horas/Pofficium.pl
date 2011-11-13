@@ -72,6 +72,8 @@ require "$Bin/specmatins.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
 require "$Bin/tfertable.pl";
 
+binmode(STDOUT,':encoding(utf-8)');
+
 $q = new CGI;
 
 #get parameters
