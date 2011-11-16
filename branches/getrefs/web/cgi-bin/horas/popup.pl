@@ -76,8 +76,8 @@ $command = $hora = strictparam('command');
 $setupsave = strictparam('setup');
 $setupsave =~ s/\~24/\"/g;
 
-%dialog = %{setupstring("$datafolder/horas.dialog")};
-if (!$setupsave) {%setup = %{setupstring("$datafolder/horas.setup")};}
+%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
+if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'horas.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 eval($setup{'parameters'});
@@ -95,7 +95,7 @@ $title =~ s/[\$\&]//;
 $expand = 'all';
 if ($popup =~ /\&/) {$popup =~ s /\s/\_/g;}   
 $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;
-%translate = %{setupstring("$datafolder/$tlang/Psalterium/Translate.txt")};
+%translate = %{setupstring($datafolder, $tlang, 'Psalterium/Translate.txt')};
 
  $text = resolve_refs($popup, $lang1); 
  $t = length($text);

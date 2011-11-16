@@ -29,7 +29,7 @@ sub psalmi_matutinum_monastic {
   $psalmnum1 = $psalmnum2 = -1;
   
   #** reads the set of antiphons-psalms from the psalterium
-  my %psalmi = %{setupstring("$datafolder/$lang/Psalterium/Psalmi matutinum.txt")};  
+  my %psalmi = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi matutinum.txt')};  
   my $dw = $dayofweek;
   if ($winner{Rank} =~ /Dominica/i) {$dw = 0;}	   
   my @psalmi = split("\n", $psalmi{"Daym$dw"});
@@ -173,7 +173,7 @@ sub psalmi_matutinum_monastic {
   } 
 
   my ($w, $c) = getproprium('MM Capitulum', $lang, 0, 1); 
-  my %s = %{setupstring("$datafolder/$lang/Psalterium/Matutinum Special.txt")};  
+  my %s = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};  
 	if (!$w) {
     if ($dayname[0] =~ /(Adv|Quad|Pasc)/i) {
 	    my $name = $1;
@@ -253,7 +253,7 @@ sub legend_monastic {
   #absolutio-benedictio
   push (@s, "\n");
   push (@s, '&pater_noster');
-  my %benedictio = %{setupstring("$datafolder/$lang/Psalterium/Benedictions.txt")};  
+  my %benedictio = %{setupstring($datafolder, $lang, 'Psalterium/Benedictions.txt')};  
   my $i = ($dayofweek == 1 || $dayofweek == 4) ? 1 :
     ($dayofweek == 2 || $dayofweek == 5) ? 2 : 
     ($dayofweek == 3 || $dayofweek == 6) ? 3 : 1;
@@ -287,7 +287,7 @@ sub legend_monastic {
 sub brevis_monastic {
   my $lang = shift; 
 
-  my %b = %{setupstring("$datafolder/$lang/Psalterium/Matutinum special.txt")};
+  my %b = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum special.txt')};
   push(@s, $b{"MM LB$dayofweek"});
 }
 

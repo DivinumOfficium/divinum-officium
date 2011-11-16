@@ -129,46 +129,152 @@ sub setsetup {
   $setup{$name} = $script;
 }
 
-#*** setupstring($fname)
-# loads $Bin/$fname file and 
-#  returns a reference to %ps hash
-# $fname.setup file consists of one or more items
-#   each having the [itemname] headline an
-#   one or more itemlines
-#The hash key is itemname, values are strings
-sub setupstring {
-  my $fname = shift;  
-  my $lang = '';           
-  if ($lang1 && $lang2 && $fname =~ /($lang1|$lang2)\//i) {$fname = checkfile($1, $');}   
-                                      
-  if (open (SETUP, "$fname")) {   
-   my @a = <SETUP>;
-	 close SETUP;	 
-	 my %ps;		
-     foreach (keys %ps) {delete($ps{$_});}
-	 my $i;
-	 my $key = '';
-	 my $value = '';
-	 for ($i = 0; $i <  @a; $i++) {
-	   my $l = $a[$i];
-	   $l= chompd($l);
-	   #$l =~ s/^\s*//;
-	   #$l=~ s/\s*$//;
-	   #if (!$l) {next;}
-     if ($l =~ /^\s*\[([a-z0-9áéíóöõúüûÁÉÓÖÔÚÜÛ\_\- \#]+)\]/i) {
-		  $l = $1;
-	    if ($key) {$ps{$key} = $value;}
-		  $key = $l;        
-      $value = '';
-      next;
-	   }
-	   $value .= "$l\n";
-    } 
-    if ($key) {$ps{$key} = $value; }
-    return \%ps;
-  } else {
-	#print STDERR "$Bin/$fname cannot be opened\n";
-	return "";
+#*** setupstring($basedir, $lang, $fname[, %params])
+# Loads the database file from path "$basedir/$lang/$fname" and returns
+# a reference to a hash whose keys are the section headings and whose
+# values are their contents. If $params{'resolve@'} is true (which it
+# is by default), then most @ directives are resolved and substituted.
+sub setupstring($$$%)
+{
+  my ($basedir, $lang, $fname, %params) = @_;
+  my $fullpath = "$basedir/$lang/$fname";
+  our ($lang1, $lang2, $missa);
+  
+  # Expand @ references unless we've been told not to.
+  $params{'resolve@'} = 1 unless (exists $params{'resolve@'});
+  
+  if ($lang1 && $lang2 && $lang =~ /($lang1|$lang2)/i)
+  {
+    # Fall back to other languages if the specified file doesn't exist.
+    $fullpath = checkfile($1, $fname);
+  }
+
+  open(SETUP, $fullpath) or return '';
+  local $/ = undef;
+  my $filecontents = <SETUP>;
+  close SETUP;
+  
+  # Remove any errant carriage returns. TODO: Normalise all line
+  # endings so as to make this translation redundant.
+  $filecontents =~ tr/\r//d;
+  
+  # Regex for matching section headers.
+  my $sectionregex = qr/^\h*\[([^\]]+)\]\h*\n/m;
+
+  my %sections;
+  
+  # Grab everything before the first section.
+  my ($preamble) = /(.*?)$sectionregex/s;
+
+  # Process each section.
+  while ($filecontents =~ /$sectionregex/gc)
+  {
+    my $key = $1;
+    
+    # Grab everything until the next section or the end of the file.
+    $filecontents =~ /(.*?)(?=$sectionregex)/gsc or $filecontents =~ /(.*)$/gsc;
+    $sections{$key} = $1;
+  }
+  
+  my $inclusionregex = qr/^\s*\@
+    ([^\n:]+)                     # Filename.
+    (?:                           # Keywords, which are
+      (?!:)|                      #   optional; but if present,
+      :((?i:(?!                   #   mustn't contain
+               Gregem|            #     'Gregem' or
+               Commemoratio4)     #     'Commemoratio4'.
+            [^\n:])+?))           #
+    \h*                           # Ignore trailing whitespace.
+    (?::(.*))?                    # Optional substitutions.
+    $
+    /mx;
+  
+  # Do whole-file inclusions. We do these regardless of whether the
+  # 'resolve@' parameter is set.
+  while (my ($incl_fname, undef, $incl_subst) = ($preamble =~ /$inclusionregex/g))
+  {
+    my $incl_sections = get_file_for_inclusion($basedir, $lang, $incl_fname);
+    $sections{$_} = ${$incl_sections}{$_} foreach (keys %{$incl_sections});
+  }
+  
+  # Resolve inclusions in sections if the caller requires it.
+  if ($params{'resolve@'})
+  {
+    foreach my $key (keys %sections)
+    {
+      if ($key !~ /Commemoratio/i || $missa)
+      {
+        $sections{$key} =~ s/$inclusionregex/
+          get_loadtime_inclusion($basedir, $lang,
+          $1,             # Filename.
+          $2 ? $2 : $key, # Keyword.
+          $3,             # Substitutions.
+          $fname)         # Caller's filename.
+          /gex;
+      }
+    }
+  }
+  
+  return \%sections;
+}
+
+# Block for subs using the cache of inclusion files.
+BEGIN
+{
+  my %inclusioncache;
+  
+  #*** get_file_for_inclusion($basedir, $lang, $fname)
+  # Loads the database file from path "$basedir/$lang/$fname" through
+  # the inclusion cache.
+  sub get_file_for_inclusion($$$)
+  {
+    my ($basedir, $lang, $fname) = @_;
+    my $fullpath = "$basedir/$lang/$fname";
+    
+    return $inclusioncache{$fullpath} if (exists $inclusioncache{$fullpath});
+    
+    # Not in cache, so open it, add it to the cache and return it.
+    my $fileref = setupstring($basedir, $lang, "$fname.txt", 'resolve@' => 0);
+    
+    if ($fileref)
+    {
+      $inclusioncache{$fullpath} = $fileref;
+      return $fileref;
+    }
+    else
+    {
+      return '';
+    }
+  }
+}
+
+
+#*** get_loadtime_inclusion($basedir, $lang, $fname, $section, $substitutions, $callerfname)
+# Retrieves the $section section of the file "$basedir/$lang/$fname"
+# and performs the substitutions specified in $substitutions according
+# to the syntax of the @ directive.
+sub get_loadtime_inclusion($$$$$$)
+{
+  my ($basedir, $lang, $fname, $section, $substitutions, $callerfname) = @_;
+  my $sections = get_file_for_inclusion($basedir, $lang, $fname);
+  
+  # Adjust offices of martyrs in Paschaltide to use the special common.
+  if ($dayname[0] =~ /Pasc/i && !$missa && $callerfname !~ /C[23]/)
+  {
+    $fname =~ s/(C[23])(?!p)/$1p/g;
+  }
+  
+  if (exists ${$sections}{$section})
+  {
+    my $text = ${$sections}{$section};
+    
+    # TODO: Substitutions.
+    
+    return $text;
+  }
+  else
+  {
+    return "$fname:$section is missing!";
   }
 }
 
