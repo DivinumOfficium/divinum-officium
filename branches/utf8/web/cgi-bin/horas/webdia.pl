@@ -143,10 +143,7 @@ sub setup {
         my $savefile = strictparam('savefile');
         if ($savefile) {
           $savefile =~ s/\.gen//;
-          if (open OUT, ">$datafolder/gen/$savefile.gen") {
-             print OUT $pv;
-	         close OUT;
-          }
+          do_write("$datafolder/gen/$savefile.gen", $pv);
         }
 
         $input .= "<TEXTAREA NAME=\'I$k\' ID=\'I$k\' COLS=$size[1] ROWS=$size[0]>$pv</TEXTAREA><BR>\n";

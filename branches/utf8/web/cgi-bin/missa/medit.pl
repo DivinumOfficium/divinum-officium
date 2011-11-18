@@ -128,10 +128,7 @@ if ($savesetup > 1 && $save && $folder1 !~ /program/i) {
 	  my $f1 = ($folder1 =~ /tones/) ? $folder1 : "$lang1/$folder1";
     if ( $ENV{DIVINUM_OFFICIUM_CAN_SAVE} )
     {
-    if (open(OUT, ">$datafolder/$f1/$filename1.txt")) {
-        binmode OUT;
-        print OUT $newtext;
-	      close OUT;         
+    if (do_write("$datafolder/$f1/$filename1.txt", $newtext)) {
       } else {$error = "$datafolder/$f1/$filename1.txt could not be saved"}
     }
     else
@@ -223,19 +220,16 @@ $title .= " files";
 @txlat = splice(@txlat, @txlat);
 @txvern = splice(@txvern, @txvern);
                                       
-  if (open(INP, "$dirname1/$filename1.$ext1")) {
-    @txlat = <INP>;
-    close INP;
-   } elsif ($folder1 =~ /program/ && open(INP, "$Bin/$filename1.$ext1")) {
-	   @txlat = <INP>;
-	   close INP;
+  if (@txlat = do_read("$dirname1/$filename1.$ext1")) {
+       $_ = "$_\n" for @txlat;
+   } elsif ($folder1 =~ /program/ && (@txlat = do_read("$Bin/$filename1.$ext1")) {
+       $_ = "$_\n" for @txlat;
    } else {$error .= "$dirname1/$filename1.$ext1 " .
       "or $Bin/$filename1 cannot open";}
 
 if ($lang2 !~ /(none|search)/i) {
-  if (open(INP, "$dirname2/$filename2.txt")) {
-    @txvern = <INP>;
-    close INP;
+  if (@txvern = do_read("$dirname2/$filename2.txt")) {
+        $_ = "$_\n" for @txvern;
   } else {$error .= "$dirname2/$filename2.txt cannot open";}
 } elsif ($lang2 =~ /search/i) {
    if (!$searchtext) {$searchtext = searchrut($sstring, $skey);}
@@ -759,10 +753,7 @@ sub searchrut {
  foreach $fname (@files1) {
    my $filename = ($folder1 =~ /program/i) ?  "$Bin/$fname.pl" :
   	 "$datafolder/$lang1/$folder1/$fname.txt";
-   if (open(INP, $filename)) {
-     $text = '';
-     while ($line = <INP>) {$text .= $line;}     
-     close INP;   		
+   if ($text = join('\n', do_read($filename))) {
    } else {$error .= "$filename cannot open";}   
    my $num = 0;
    if (!$skey) {while (($casesense && $text =~ /$search/g) ||

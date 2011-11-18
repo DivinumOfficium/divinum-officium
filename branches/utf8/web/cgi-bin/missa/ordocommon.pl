@@ -103,10 +103,7 @@ sub getname {
 #*** getsundaytable()
 # reads sundaytable.txt into @sundaytable
 sub getsundaytable {
-   if (open (NI, "$datafolder/sundaytable.txt")) {
-     @sundaytable = <NI>;
-	 close NI;
-   }
+     @sundaytable = do_read("$datafolder/sundaytable.txt");
 }
 
 #*** getadvent($year)
@@ -175,9 +172,7 @@ sub getrank {
     : ($version =~ /newcal/i) ? '2009' : ($version =~ /1960/) ? 1960 : 1942;     
   our %kalendar = undef;
   our $kalendarkey = '';
-  if (open(INP, "$datafolder/../horas/Latin/Tabulae/K$kalendarname.txt")) { 
-    my @a = <INP>;
-    close INP;
+  if (@a = do_read("$datafolder/../horas/Latin/Tabulae/K$kalendarname.txt")) { 
     foreach (@a) {
       my @item = split('=', $_); 
       $kalendar{$item[0]} = $item[1];  
@@ -188,13 +183,12 @@ sub getrank {
   my $sday = get_sday($month, $day, $year);   
 
   # Handle transfers
+  my @trlines;
   my $vtrans = ($version =~ /newcal/i) ? 'newcal' : ($version =~ /(1955|1960)/) ? '1960' : 
    ($version =~ /monastic/i) ? 'M' : ($version =~ /1570/) ? '1570' : ($version =~ /1910/) ? 1910 : 'DA';  
-  if ($vtrans && open(INP, "$datafolder/../horas/Latin/Tabulae/Tr$vtrans.txt")) {
-     my $tr = '';
-     while ($line = <INP>) {$tr .= chompd($line);}
+  if ($vtrans && (@trlines = do_read("$datafolder/../horas/Latin/Tabulae/Tr$vtrans.txt"))) {
+     my $tr = join('', @trlines);
      $tr =~ s/\=/\;\;/g;
-     close(INP);
      %transferspec = split(';;', $tr);      
      $transferspec = $transferspec{$sday}; 	
   } else {%transferspec = undef; $transferspec = '';} 
@@ -203,10 +197,8 @@ sub getrank {
   $dirgeline = '';	 
   $dirge = 0;		 	 
   if (($tk || $Hk) && !(-e "$datafolder/../horas/Latin/Tabulae/Tr$vtrans$year.txt")) {tfertable($version, $year, "$datafolder/../horas");}
-  if (open(INP, "$datafolder/../horas/Latin/Tabulae/Tr$vtrans$year.txt")) {   
-     my $tr = '';
-     while ($line = <INP>) {$tr .= chompd($line);}
-     close(INP);
+  if (@trlines = do_read("$datafolder/../horas/Latin/Tabulae/Tr$vtrans$year.txt")) {   
+     my $tr = join('',@trlines);
      $tr =~ s/\=/\;\;/g;  	   
      %transfer = split(';;', $tr);			
      if (exists($transfer{dirge})) {$dirgeline = $transfer{dirge};}  #&& !$caller

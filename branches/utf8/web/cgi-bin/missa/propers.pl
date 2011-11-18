@@ -196,16 +196,12 @@ sub oratio {
   $ctotalnum = 1;
 
   my $coron = '';
-  if (open(INP, "$datafolder/../horas/Latin/Tabulae/Tr1960.txt")) {
-     my $tr = '';
-     while ($line = <INP>) {$tr .= chompd($line);}
+  if (my $tr = join('', do_read("$datafolder/../horas/Latin/Tabulae/Tr1960.txt"))) {
      $tr =~ s/\=/\;\;/g;
-     close(INP);
      my %tr = split(';;', $tr);
 	 my $mm = sprintf("C%02i-%02i", $month, $day);
 	 if (exists($tr{$mm})) {$coron=$tr{$mm};}
   }
-  
    
   if ($coron) {
     $retvalue =~ s/\$(Per|Qui) .*\n//g; 

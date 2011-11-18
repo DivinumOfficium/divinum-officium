@@ -1,9 +1,14 @@
 #!/usr/bin/perl
+# vim: set encoding=utf-8 :
+
 use strict;
 use warnings;
 use Getopt::Long;
 use Date::Format;
 use Algorithm::Diff;
+use Encoding;
+
+use utf8;
 
 my @filters = qw/kalendar hymns titles psalms antiphons html accents ij site urls punctuation spacing/;
 my $filters = join(' ', @filters);
@@ -20,7 +25,9 @@ Options:
                       defaults to environment DIVINUM_OFFICIUM_URL if defined
                       otherwise http://divinumofficium.com
 --filter=[+|-]FILTER  suppress (-) or include only (+) differences of type FILTER
---[no]baulk           Stop reporting differences if the observance doesn't match [default baulk]
+--[no]baulk           Stop reporting differences if the observance doesn't match [default on]
+--[no]decode          Do all comparisons in the same encoding [default on]
+                      When on, results are reported in UTF-8.
 --update              Update the contents of each FILE... to match current revisions
                       Doesn't report any differences.  
                       This option excludes --filter= and --url=.
@@ -56,13 +63,25 @@ my $filter = '';
 my $update;
 my $new_base_url;
 my $baulk = 1;
+my $decode = 1;
+
+my @encodings = ( Encode::find_encoding('cp1252'), Encode::find_encoding('utf-8') );
+
+sub convert($);
 
 GetOptions(
     'url=s' => \$new_base_url,
     'baulk!' => \$baulk,
+    'decode!' => \$decode,
     'filter=s' => \$filter,
     'update' => \$update
 ) or die $USAGE;
+
+if ( $decode )
+{
+    binmode STDOUT, ':utf8';
+    binmode STDERR, ':utf8';
+}
 
 die "Do not specify --update with other options.\n" if $update && ($new_base_url || $filter);
 
@@ -81,6 +100,11 @@ foreach my $f ( @filter )
         $f =~ /^[+-]?(.*)/ && grep $1 eq $_, @filters
 }
 
+if ( !$decode && grep /-accents/, @filter )
+{
+    print STDERR "warning: ignoring -accents when specified with --nodecode\n";
+}
+
 die "Specify at least one FILE.\n" unless @ARGV;
 
 foreach my $file ( @ARGV )
@@ -91,9 +115,16 @@ foreach my $file ( @ARGV )
         {
             my $url = <IN>;
             chomp $url;
-            my @old_result = <IN>;
+
+            my $old_result;
+            {
+                local $/;
+                # Slurp the rest, for conversion
+                $old_result = <IN>
+            }
             close IN;
-            
+            my @old_result = convert($old_result);
+
             # Get new result
             if ( $url =~ /^(.*)(\/cgi-bin.*)/ )
             {
@@ -103,12 +134,13 @@ foreach my $file ( @ARGV )
                 my $new_url = $new_base_url ? "$new_base_url$query" : $url;
                 print STDERR "$new_url\n";
 
-                my @new_result = `curl -s '$new_url'`;
+                my $new_result = `curl -s '$new_url'`;
                 unless ( $? == 0 )
                 {
                     print STDERR "error: cannot download $new_url\n";
                     next;
                 }
+                my @new_result = convert($new_result);
 
                 if ( $update )
                 {
@@ -161,14 +193,16 @@ foreach my $file ( @ARGV )
                             }
                         }
 
-                        elsif ( /accents/ )
+                        elsif ( /accents/ && $decode )
                         {
                             if ( $ignore )
                             {
                                 # Write accented letters back to nonaccented.
-                                tr/·ÈÎÌÛ˙˝¡…ÀÕ”⁄/aeeiouyAEEIOU/ for @old_result, @new_result;
-                                s/Ê/ae/g for @old_result, @new_result;
-                                s/∆/Ae/g for @old_result, @new_result;
+                                tr/√°√©√´√≠√≥√∫√Ω√Å√â√ã√ç√ì√ö/aeeiouyAEEIOU/ for @old_result, @new_result;
+                                s/√¶/ae/g for @old_result, @new_result;
+                                s/√Ü/Ae/g for @old_result, @new_result;
+                                s/≈ì/oe/g for @old_result, @new_result;
+                                s/≈í/Oe/g for @old_result, @new_result;
                             }
                             else
                             {
@@ -186,11 +220,11 @@ foreach my $file ( @ARGV )
                                     my $url = /^http/;
                                     if ( $url == $ignore )
                                     {
-                                        $_ = '...'
+                                        $_ = ' '
                                     }
                                 }
                                 $_ = join('',@bits);
-                                $_ = $_ + "\n" unless /\n$/;
+                                $_ = "$_\n" unless /\n$/;
                             }
                         }
 
@@ -204,11 +238,11 @@ foreach my $file ( @ARGV )
                                     my $html = /^</;
                                     if ( $html == $ignore )
                                     {
-                                        $_ = '...'
+                                        $_ = ' '
                                     }
                                 }
                                 $_ = join('',@bits);
-                                $_ = $_ + "\n" unless /\n$/;
+                                $_ = "$_\n" unless /\n$/;
                             }
                         }
 
@@ -331,14 +365,14 @@ foreach my $file ( @ARGV )
                         {
                             for ( @old )
                             {
-                                print "REMOVED $_";
+                                print "REMOVED $_\n";
                             }
                         }
                         else
                         {
                             for ( @new )
                             {
-                                print "ADDED $_";
+                                print "ADDED $_\n";
                             }
                         }
                     }
@@ -361,4 +395,29 @@ foreach my $file ( @ARGV )
         print STDERR "warning: can't read $file\n";
         next;
     }
+}
+
+# This procedure converts its argument into internal form and split it into lines
+# using a guessing procedure.
+
+sub convert($)
+{
+    my $data = shift;
+    my $content;
+
+    if ( $decode )
+    {
+        for my $encoding ( @encodings )
+        {
+            # Check for some reasonable characters on conversion.
+            $content = $encoding->decode($data);
+            last if $content =~ /^(?:[\x{01}-\x{1F}\x{20}-\x{7E}\x{AB}\x{BB}\x{A1}\x{BF}\x{BF}-\x{750}\x{1E00}-\x{1FFE}\x{2010}-\x{2021}\x{2719}-\x{2721}])*$/ox;
+        }
+    }
+    else
+    {
+        $content = $data;
+    }
+
+    return split/\n/, $content;
 }

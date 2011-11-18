@@ -100,6 +100,7 @@ if ($popup =~ /\&/) {$popup =~ s /\s/\_/g;}
 $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;
 %translate = %{setupstring("$datafolder/$tlang/Psalterium/Translate.txt")};
 
+ print STDERR "\$popup = $popup\n";
  $text = resolve_refs($popup, $lang1); 
  $t = length($text);
  #$text = resolve_refs($text, $lang1);   

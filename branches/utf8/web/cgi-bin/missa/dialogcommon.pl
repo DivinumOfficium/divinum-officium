@@ -12,9 +12,7 @@ $a=4;
 # the file consists of $var='value' lines
 sub getini {
   my $file = shift;   
-  if (open(INP, "$Bin/$file.ini")) {
-    my @initfiles = <INP>;      
-    close INP;
+  if (my @initfiles = do_read("$Bin/$file.ini")) {
     foreach (@initfiles) {eval($_);}    
   }
 }
@@ -141,9 +139,7 @@ sub setupstring {
   my $lang = '';           
   if ($lang1 && $lang2 && $fname =~ /($lang1|$lang2)\//i) {$fname = checkfile($1, $');}   
                                       
-  if (open (SETUP, "$fname")) {   
-   my @a = <SETUP>;
-	 close SETUP;	 
+  if (my @a = do_read($fname)) {   
 	 my %ps;		
      foreach (keys %ps) {delete($ps{$_});}
 	 my $i;

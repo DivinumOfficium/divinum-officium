@@ -480,8 +480,10 @@ sub psalm {
     if ($num > 150 && $num < 300 && (@lines = do_read($fname)))
     {
         $line = $lines[0];
-        if ($line =~ /^\s*([a-z]+\s+[a-z_]+) /i)
+        print STDERR ">> \$line = '$line'\n";
+        if ($line =~ /\s*([a-z]+\s+[a-z_]+) /i)
         {
+            print STDERR ">>> beep\n";
             $t = setfont($redfont, $1) . settone(1) . $pnum;
         }   
     }
@@ -561,7 +563,7 @@ sub psalm {
 
 
 #*** getantcross($psalmline, $antline)
-# set a	‡ sign if psalmline matches antline
+# set a	DOUBLE DAGGER sign if psalmline matches antline
 # eliminating accents and pintuation 
 sub getantcross {
   my $psalmline = shift;
@@ -576,7 +578,7 @@ sub getantcross {
   $antline = ''; 
 
   while ($aind < @antline) {
-    if ($pind >= @psalmline) { return "$psalmline1 " . setfont($redfont, '‡');}
+    if ($pind >= @psalmline) { return "$psalmline1 " . setfont($redfont, "\x{2021} ");}
 	my $item1 = $psalmline[$pind];
 	$pind++;
 	$item1 = depunct($item1);
@@ -589,7 +591,7 @@ sub getantcross {
 	$psalmline .= " $psalmline[$pind-1]";
 	next;
   }
-  $psalmline .= ' ' . setfont($smallfont, '‡ ');
+  $psalmline .= ' ' . setfont($smallfont, "\x{2021} ");
   while ($pind < @psalmline) {$psalmline .= " $psalmline[$pind]"; $pind++;}
   return $psalmline;
 }

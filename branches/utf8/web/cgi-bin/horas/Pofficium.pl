@@ -62,6 +62,7 @@ our $duplex; #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
              # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
 
 #*** collect standard items
+require "$Bin/do_io.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
@@ -146,6 +147,12 @@ $p = strictparam('screenheight');
 if ($p) {
   $screenheight = $p;
   setsetupvalue('parametrs', 11, $screenheight);
+}
+
+$p = strictparam('textwidth');
+if ($p) {
+  $textwidth = $p;
+  setsetupvalue('parametrs', 11, $textwidth);
 }
 $expand = 'all';
 

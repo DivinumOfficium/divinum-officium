@@ -28,13 +28,14 @@ $fname = ($version =~ /Newcal/i) ? "TrNewcal$kyear" : ($version =~ /1955|1960/) 
 $fname1 = $fname;
 $fname1 =~ s/^Tr/Str/;
 
-  if (open(OUT, ">$dfolder/Latin/Tabulae/$fname.txt")) {
-	foreach $item (@tfer) {print OUT "$item;;\n";}
-	close OUT;
+  my @tfer_out = @tfer;
+  $_ = "$_;;\n" for @tfer_out;
+  if (do_write("$dfolder/Latin/Tabulae/$fname.txt", @tfer_out)) {
   } else {$error .= "$dfolder/Latin/Tabulae/$fname.txt cannot open for output<BR>\n";}
-  if (open(OUT, ">$dfolder/Latin/Tabulae/$fname1.txt")) {
-	foreach $item (@scriptfer) {print OUT "$item;;\n";}
-	close OUT;
+
+  my @scriptfer_out = @scriptfer;
+  $_ = "$_;;\n" for @scriptfer_out;
+  if (do_write("$dfolder/Latin/Tabulae/$fname1.txt", @scriptfer_out)) {
   } else {$error .= "$dfolder/Latin/Tabulae/$fname1.txt cannot open for output<BR>\n";}
 }
 
@@ -62,32 +63,24 @@ my $kalendarname = ($version =~ /1570/) ? 1570 : ($version =~ /Trident/i) ? 1888
   : ($version =~ /newcal/i) ? '2009' : ($version =~ /1960/) ? 1960 : 1942;     
 our %kalendar = undef;
 our $kalendarkey = '';
-if (open(INP, "$dfolder/Latin/Tabulae/K$kalendarname.txt")) {
-  my @a = <INP>;
-  close INP;
+if (@a = do_read("$dfolder/Latin/Tabulae/K$kalendarname.txt")) {
   foreach (@a) {
     my @item = split('=', $_); 
-    $kalendar{$item[0]} = $item[1];
+    $kalendar{$item[0]} = "$item[1]\n";
   }
 } else {error("$dfolder/Latin/Tabulae/$kalendarname.txt cannot open");}
 
 #*** Handle  permanent transfers = Tr<Trid|1960|newcal>.txt
   my $vtrans = ($version =~ /monastic/i) ? 'M' : ($version =~ /newcal/i) ? 'newcal' : 
     ($version =~ /(1955|1960)/) ? '1960' : ($version =~ /1570/) ? '1570' : ($version =~ /Trid/i) ? '1910' : 'DA';  
-  if ($vtrans && open(INP, "$dfolder/Latin/Tabulae/Tr$vtrans.txt")) {
-     my $tr = '';
-     while ($line = <INP>) {$tr .= chompd($line);}
+  if ($vtrans && (my $tr = join('',do_read("$dfolder/Latin/Tabulae/Tr$vtrans.txt")))) {
      $tr =~ s/\=/\;\;/g;
-     close(INP);
      %transferspec = split(';;', $tr);      
      $transferspec = $transferspec{$sday}; 
   } else {%transferspec = undef; $transferspec = '';} 
 
 
-  if (open(INP, "$dfolder/Latin/Tabulae/Tr$vtrans$year.txt")) {
-     my $tr = '';
-     while ($line = <INP>) {$tr .= chompd($line);}
-     close(INP);
+  if (my $tr = join('',do_read("$dfolder/Latin/Tabulae/Tr$vtrans$year.txt"))) {
      $tr =~ s/\=/\;\;/g;   
      %transfer = split(';;', $tr);      
   } else {%transfer = {}; }

@@ -46,15 +46,14 @@ $title = 'Sources';
                                            
 $source = '';
 $line = '';
-if (open(INP, "$datafolder/source.txt")) {
-    while ($line = <INP>) {$source .= "$line<BR>";}
-    close INP;
+if (my @sources = do_read("$datafolder/source.txt")) {
+    $_ = "$_<BR>" for @sources;
+    $source = join('',@sources);
 } else {$error .= "$datafolder/source.txt cannot open";}
 
-@toc = splice(@toc,@toc);
-if (open(INP, "$datafolder/TOC1920.txt")) {
-  @toc = <INP>;
-  close INP;
+my @toc;
+if (@toc = do_read("$datafolder/TOC1920.txt")) {
+  $_ = "$_\n" for @toc;
 } else {$error .= "$datafolder/TOC1920.txt cannot open";}
 
 $setupsave = printhash(\%setup, 1);

@@ -117,10 +117,7 @@ sub gettext {
   my $text = ''; 
 
   my $fname = checkfile($lang, "Ordo/$popup.txt");
-  if (open (INP, $fname)) {
-    my $line;
-	while ($line = <INP>) {$text .= $line;}
-	close INP;
+  if ($text = join('\n', do_read($fname))) {
   } else {$text = "$datafolder/$lang/Ordo/$popup.txt cannot open!";}
   
 
