@@ -180,10 +180,7 @@ sub setupstring($$$%)
     ([^\n:]+)                     # Filename.
     (?:                           # Keywords, which are
       (?!:)|                      #   optional; but if present,
-      :((?i:(?!                   #   mustn't contain
-               Gregem|            #     'Gregem' or
-               Commemoratio4)     #     'Commemoratio4'.
-            [^\n:])+?))           #
+      :((?i:(?!Gregem)[^\n:])+?)) #   mustn't contain 'Gregem'.
     \h*                           # Ignore trailing whitespace.
     (?::(.*))?                    # Optional substitutions.
     $
@@ -205,7 +202,7 @@ sub setupstring($$$%)
       if ($key !~ /Commemoratio/i || $missa)
       {
         $sections{$key} =~ s/$inclusionregex/
-          get_loadtime_inclusion($basedir, $lang,
+          get_loadtime_inclusion(\%sections, $basedir, $lang,
           $1,             # Filename.
           $2 ? $2 : $key, # Keyword.
           $3,             # Substitutions.
@@ -249,14 +246,15 @@ BEGIN
 }
 
 
-#*** get_loadtime_inclusion($basedir, $lang, $fname, $section, $substitutions, $callerfname)
+#*** get_loadtime_inclusion(\%sections, $basedir, $lang, $fname, $section, $substitutions, $callerfname)
 # Retrieves the $section section of the file "$basedir/$lang/$fname"
 # and performs the substitutions specified in $substitutions according
-# to the syntax of the @ directive.
-sub get_loadtime_inclusion($$$$$$)
+# to the syntax of the @ directive. \%sections is the file containing
+# the reference to be expanded, for back references when necessary.
+sub get_loadtime_inclusion(\%$$$$$$)
 {
-  my ($basedir, $lang, $fname, $section, $substitutions, $callerfname) = @_;
-  my $sections = get_file_for_inclusion($basedir, $lang, $fname);
+  my ($sections, $basedir, $lang, $fname, $section, $substitutions, $callerfname) = @_;
+  my $inclfile = get_file_for_inclusion($basedir, $lang, $fname);
   
   # Adjust offices of martyrs in Paschaltide to use the special common.
   if ($dayname[0] =~ /Pasc/i && !$missa && $callerfname !~ /C[23]/)
@@ -264,9 +262,14 @@ sub get_loadtime_inclusion($$$$$$)
     $fname =~ s/(C[23])(?!p)/$1p/g;
   }
   
-  if (exists ${$sections}{$section})
+  # Point to antiphon-and-versicleless version of the commemoration of
+  # St Peter or St Paul under 1960 rubrics. TODO: Use data-file
+  # conditionals to make this unnecessary.
+  $section =~ s/Commemoratio4/Commemoratio4r/ if ($version =~ /1960/ && ${$sections}{'Rule'} =~ /sub unica conc/i);
+    
+  if (exists ${$inclfile}{$section})
   {
-    my $text = ${$sections}{$section};
+    my $text = ${$inclfile}{$section};
     
     # TODO: Substitutions.
     
@@ -297,6 +300,3 @@ sub setuppar {
   $par =~ s/\;+\s*$//;
   return $par;
 }
-
-    
-    
