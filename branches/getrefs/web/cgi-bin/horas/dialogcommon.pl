@@ -150,31 +150,34 @@ sub setupstring($$$%)
   }
 
   open(SETUP, $fullpath) or return '';
-  local $/ = undef;
-  my $filecontents = <SETUP>;
+  my @filelines = <SETUP>;
   close SETUP;
   
-  # Remove any errant carriage returns. TODO: Normalise all line
-  # endings so as to make this translation redundant.
-  $filecontents =~ tr/\r//d;
-  
   # Regex for matching section headers.
-  my $sectionregex = qr/^\h*\[([^\]]+)\]\h*\n/m;
+  my $sectionregex = qr/^\h*\[([^\]]+)\]\h*$/m;
 
   my %sections;
+  my $key = '__preamble';
   
-  # Grab everything before the first section.
-  my ($preamble) = /(.*?)$sectionregex/s;
-
-  # Process each section.
-  while ($filecontents =~ /$sectionregex/gc)
+  foreach my $line (@filelines)
   {
-    my $key = $1;
+    # Fix up line endings. TODO: Remove after UTF-8 support is merged.
+    $line = chompd($line);
     
-    # Grab everything until the next section or the end of the file.
-    $filecontents =~ /(.*?)(?=$sectionregex)/gsc or $filecontents =~ /(.*)$/gsc;
-    $sections{$key} = $1;
+    if ($line =~ /$sectionregex/)
+    {
+      # New section.
+      $key = $1;
+    }
+    else
+    {
+      # Add line to array for later concatenation.
+      push @{$sections{$key}}, "$line\n";
+    }
   }
+  
+  # Flatten sections.
+  $sections{$_} = join '', @{$sections{$_}} foreach (keys %sections);
   
   my $inclusionregex = qr/^\s*\@
     ([^\n:]+)                     # Filename.
@@ -188,11 +191,13 @@ sub setupstring($$$%)
   
   # Do whole-file inclusions. We do these regardless of whether the
   # 'resolve@' parameter is set.
-  while (my ($incl_fname, undef, $incl_subst) = ($preamble =~ /$inclusionregex/g))
+  while (my ($incl_fname, undef, $incl_subst) = ($sections{'__preamble'} =~ /$inclusionregex/g))
   {
     my $incl_sections = get_file_for_inclusion($basedir, $lang, $incl_fname);
-    $sections{$_} = ${$incl_sections}{$_} foreach (keys %{$incl_sections});
+    $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
   }
+  
+  delete $sections{'__preamble'};
   
   # Resolve inclusions in sections if the caller requires it.
   if ($params{'resolve@'})
@@ -216,7 +221,6 @@ sub setupstring($$$%)
 }
 
 # Block for subs using the cache of inclusion files.
-BEGIN
 {
   my %inclusioncache;
   
@@ -300,3 +304,5 @@ sub setuppar {
   $par =~ s/\;+\s*$//;
   return $par;
 }
+
+1;
