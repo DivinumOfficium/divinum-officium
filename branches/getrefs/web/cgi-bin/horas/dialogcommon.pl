@@ -250,6 +250,16 @@ sub setupstring($$$%)
 }
 
 
+#*** do_inclusion_substitutions(\$text, $substitutions)
+# Performs substitutions on $text, where $substitutions contains the
+# substitutions in the syntax of the @ directive.
+sub do_inclusion_substitutions(\$$)
+{
+  my ($text, $substitutions) = @_;
+  eval "\$\$text =~ s'$1'$2'$3" while ($substitutions =~ m{s/([^/]*)/([^/]*)/([gi]*)}g);
+}
+
+
 #*** get_loadtime_inclusion(\%sections, $basedir, $lang, $fname, $section, $substitutions, $callerfname)
 # Retrieves the $section section of the file "$basedir/$lang/$fname"
 # and performs the substitutions specified in $substitutions according
@@ -275,7 +285,7 @@ sub get_loadtime_inclusion(\%$$$$$$)
   {
     my $text = ${$inclfile}{$section};
     
-    # TODO: Substitutions.
+    do_inclusion_substitutions($text, $substitutions);
     
     return $text;
   }
@@ -284,6 +294,7 @@ sub get_loadtime_inclusion(\%$$$$$$)
     return "$fname:$section is missing!";
   }
 }
+
 
 #*** setuppar($par)
 # returns the parameter variables evaluated

@@ -1781,20 +1781,23 @@ sub getrefs {
   my $flag = 0;
   my %s = {};  
                          
-  while ($w =~ /\@([a-z0-9\/\-]+?)\:([a-z0-9 ]*)/i) {
+  while ($w =~ /\@([a-z0-9\/\-]+?)\:([a-z0-9 ]*)(?::(.*))?/i) {
     $before = $`;
     $file = $1; 
     $item = $2;
     $after = $';
-    $item =~ s/\s*$//; 
-
+    my $substitutions = $3;
+    $item =~ s/\s*$//;
+    
     if ($file =~ /^feria$/i) {
       %s = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};
       my $a = chompd($s{"Day$dayofweek Ant $ind"});
       if (!$a) {$a  = "Day$dayofweek Ant $ind missing";}
       my $v = chompd($s{"Day$dayofweek Versum $ind"});
       if (!$v) {$a  = "Day$dayofweek Versus $ind missing";}
-      $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$after";   
+      $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$after";
+      do_inclusion_substitutions($a, $substitutions);
+      do_inclusion_substitutions($v, $substitutions);
       next;
     }
 
@@ -1813,8 +1816,11 @@ sub getrefs {
 		if ($octavam =~ /$oct/) {$flag = 0;}
 		else {$octavam .= $oct;} 
 	  }	
-	  if ($flag) {$a = "_\n$a" . "_\n";}
-	  else {$a = '';}  
+	  if ($flag) {
+        do_inclusion_substitutions($a, $substitutions);
+        $a = "_\n$a" . "_\n";
+      }
+	  else {$a = '';}
 	  $w = "$before$a$after";   
       next;
    }
@@ -1845,6 +1851,9 @@ sub getrefs {
         if ($popeclass && $popeclass =~ /C/ && $ind == 3) {$a = papal_antiphon_dum_esset($lang);}
       }
 
+      do_inclusion_substitutions($a, $substitutions);
+      do_inclusion_substitutions($v, $substitutions);
+      do_inclusion_substitutions($o, $substitutions);
 	  $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$o" . "_\n$after";  
       next;
     }
@@ -1853,9 +1862,10 @@ sub getrefs {
    if ($after && $after !~ /^\s*$/) {$after = "_\n$after";}
    if ($before && $before !~ /^\s*$/) {$before .= "_\n";}	 
    if (!$a) {$a = "$file $item missing\n";}
+   do_inclusion_substitutions($a, $substitutions);
    $w = $before . $a . $after; 
    next;
- }                       
+  }
         
  $w =~ s/\_\n\_/\_/g;
          
