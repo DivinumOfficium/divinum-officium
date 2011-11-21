@@ -1,5 +1,7 @@
 #!/usr/bin/perl
-# ·ÈÌÛˆı˙¸˚¡…  á
+use utf8;
+# vim: set encoding=utf-8 :
+
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office
@@ -64,7 +66,7 @@ sub horas
         # Suppress (Alleluia) during Quadrigesima.
         if ( $dayname[0] =~ /Quad/i && !Septuagesima_vesp() )
         {
-            $text1 =~ s/[(]*allel[u˙][ij]a[\.\,]*[)]*//ig;
+            $text1 =~ s/[(]*allel[u√∫][ij]a[\.\,]*[)]*//ig;
         } 
 
         $text1 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;  
@@ -79,7 +81,7 @@ sub horas
             $text2 = resolve_refs($text2, $lang2);    
             if ($dayname[0] =~ /Quad/i && !Septuagesima_vesp())
             {
-                $text2 =~ s/[(]*allel[u˙][ij]a[\.\,]*[)]*//ig;
+                $text2 =~ s/[(]*allel[u√∫][ij]a[\.\,]*[)]*//ig;
             } 
 
             $text2 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
@@ -115,8 +117,8 @@ sub getunit {
     if (!$t) {next;}
     last;
   }    
-  if ($dayname[0] !~ /Pasc/i) {$t =~ s/\(Allel[u˙][ij]a.*?\)//isg;}
-  else {$t =~ s/\((Allel[u˙][ij]a.*?)\)/$1/isg;}
+  if ($dayname[0] !~ /Pasc/i) {$t =~ s/\(Allel[u√∫][ij]a.*?\)//isg;}
+  else {$t =~ s/\((Allel[u√∫][ij]a.*?)\)/$1/isg;}
 
   return ($t, $ind);
 }
@@ -304,7 +306,7 @@ sub pater_noster {
   $text[6] = "V. $text[6]";
   $text[7] = "R. $text[7]";  
   $text[7] =~ s/~//;
-  $text[8] =~ s/[A¡]men[\.]*//;
+  $text[8] =~ s/[A√Å]men[\.]*//;
   $text = '';
   foreach (@text) {$text .= "$_\n";}    
   return $text; 
@@ -599,12 +601,12 @@ sub getantcross {
 sub depunct {
   my $item = shift;
   $item =~ s/[\.\,\:\?\!\"\'\;\*]//g;
-  $item =~ s/[·¡]/a/g;
-  $item =~ s/[È…]/e/g;
-  $item =~ s/[ÌÌ]/i/g;
-  $item =~ s/[Ûˆı”÷‘]/o/g;
-  $item =~ s/[˙¸˚⁄‹€]/u/g;	  
-  $item =~ s/Ê/ae/g;
+  $item =~ s/[√°√Å]/a/g;
+  $item =~ s/[√©√â]/e/g;
+  $item =~ s/[√≠√≠]/i/g;
+  $item =~ s/[√≥√∂√µ√ì√ñ√î]/o/g;
+  $item =~ s/[√∫√º√ª√ö√ú√õ]/u/g;	  
+  $item =~ s/√¶/ae/g;
   return $item;
 }
 
@@ -870,8 +872,8 @@ sub ant_Benedictus {
     my %v = %{setupstring("$datafolder/$lang/Psalterium/Major Special.txt")};
     $a = $v{"Adv Ant $day" . "L"};    
   }
-  if ($dayname[0] !~ /Pasc/i) {$a =~ s/\(Allel[u˙][ij]a.*?\)//isg;}
-  else {$a =~ s/\((Allel[u˙][ij]a.*?)\)/$1/isg;}
+  if ($dayname[0] !~ /Pasc/i) {$a =~ s/\(Allel[u√∫][ij]a.*?\)//isg;}
+  else {$a =~ s/\((Allel[u√∫][ij]a.*?)\)/$1/isg;}
   
   my @a = split('\*', $a);
   if ($num == 1 && $duplex < 3 && $version !~ /1960/) {return "Ant. $a[0]";}
@@ -905,8 +907,8 @@ sub ant_Magnificat {
 	  $a = $v{"Adv Ant $day"};
     $num = 2;
   }
-  if ($dayname[0] !~ /Pasc/i) {$a =~ s/\(Allel[u˙][ij]a.*?\)//isg;}
-  else {$a =~ s/\((Allel[u˙][ij]a.*?)\)/$1/isg;}
+  if ($dayname[0] !~ /Pasc/i) {$a =~ s/\(Allel[u√∫][ij]a.*?\)//isg;}
+  else {$a =~ s/\((Allel[u√∫][ij]a.*?)\)/$1/isg;}
 
   my @a = split('\*', $a);
   if ($num == 1 && $duplex < 3 && $version !~ /1960/) {return "Ant. $a[0]";}

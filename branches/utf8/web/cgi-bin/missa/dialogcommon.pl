@@ -1,6 +1,8 @@
 #!/usr/bin/perl
+# vim: set encoding=utf-8 :
+use utf8;
 
-#αινσφυϊόϋΑΙ
+#Γ΅Γ©Γ­Γ³Γ¶ΓµΓΊΓΌΓ»ΓΓ‰
 # Name : Laszlo Kiss
 # Date : 01-25-04
 # dialog/setup related subs
@@ -151,7 +153,7 @@ sub setupstring {
 	   #$l =~ s/^\s*//;
 	   #$l=~ s/\s*$//;
 	   #if (!$l) {next;}
-     if ($l =~ /^\s*\[([a-z0-9αινσφυϊόϋΑΙΣΦΤΪάΫ\_\- \#]+)\]/i) {
+     if ($l =~ /^\s*\[([a-z0-9Γ΅Γ©Γ­Γ³Γ¶ΓµΓΊΓΌΓ»ΓΓ‰Γ“Γ–Γ”ΓΓΓ›\_\- \#]+)\]/i) {
 		  $l = $1;
 	    if ($key) {$ps{$key} = $value;}
 		  $key = $l;        

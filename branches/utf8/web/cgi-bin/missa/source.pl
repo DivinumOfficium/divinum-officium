@@ -1,6 +1,8 @@
 #!/usr/bin/perl
+# vim: set encoding=utf-8 :
+use utf8;
 
-#αινσφυϊόϋΑΙ
+#Γ΅Γ©Γ­Γ³Γ¶ΓµΓΊΓΌΓ»ΓΓ‰
 # Name : Laszlo Kiss
 # Date : 02-01-2008
 # Show/edit files

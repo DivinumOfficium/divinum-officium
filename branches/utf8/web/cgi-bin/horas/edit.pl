@@ -1,6 +1,7 @@
 #!/usr/bin/perl
+use utf8;
+# vim: set encoding=utf-8 :
 
-#αινσφυϊόϋΑΙ
 # Name : Laszlo Kiss
 # Date : 02-01-2008
 # Show/edit files
@@ -39,7 +40,7 @@ require "$Bin/check.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
 require "$Bin/tfertable.pl";
 
-binmode(STDOUT, ':encoding(utf8)');
+binmode(STDOUT, ':encoding(utf-8)');
 
 $q = new CGI;
 
@@ -733,7 +734,7 @@ sub adjust {
         $t[$i] =~ s/\[(.*?[\,\.\?\;]+.*?)\]/\($1\)/g;   #[...] to (...)
         $t[$i] =~ s/\s([\;\,\.\?\!])/$1/g;
       
-      } elsif ($lang =~ /magyar/i) { @t = accents(\@t);} #αινσφυϊόϋΑΙ
+      } elsif ($lang =~ /magyar/i) { @t = accents(\@t);}
    }
   } 
 
@@ -788,28 +789,28 @@ sub accents {
   my $t = shift;
   my @t = @$t;
   for ($i=0; $i < @t; $i++) {
-    $t[$i] =~ s/a'/α/g;
-    $t[$i] =~ s/e'/ι/g;
-    $t[$i] =~ s/i'/ν/g;
-    $t[$i] =~ s/o'/σ/g;
-    $t[$i] =~ s/o:/φ/g;
-    $t[$i] =~ s/o"/υ/g;
-    $t[$i] =~ s/u'/ϊ/g;
-    $t[$i] =~ s/u:/ό/g;
-    $t[$i] =~ s/u"/ϋ/g;
-    $t[$i] =~ s/A'/Α/g;
-    $t[$i] =~ s/E'/Ι/g;
-    $t[$i] =~ s/O'/Σ/g;
-    $t[$i] =~ s/O:/Φ/g;   
-    $t[$i] =~ s/O"/Τ/g;   
-    $t[$i] =~ s/U'/Ϊ/g;
-    $t[$i] =~ s/U:/ά/g;
-    $t[$i] =~ s/U"/Ϋ/g;
+    $t[$i] =~ s/a'/Γ΅/g;
+    $t[$i] =~ s/e'/Γ©/g;
+    $t[$i] =~ s/i'/Γ­/g;
+    $t[$i] =~ s/o'/Γ³/g;
+    $t[$i] =~ s/o:/Γ¶/g;
+    $t[$i] =~ s/o"/Γµ/g;
+    $t[$i] =~ s/u'/ΓΊ/g;
+    $t[$i] =~ s/u:/ΓΌ/g;
+    $t[$i] =~ s/u"/Γ»/g;
+    $t[$i] =~ s/A'/Γ/g;
+    $t[$i] =~ s/E'/Γ‰/g;
+    $t[$i] =~ s/O'/Γ“/g;
+    $t[$i] =~ s/O:/Γ–/g;   
+    $t[$i] =~ s/O"/Γ”/g;   
+    $t[$i] =~ s/U'/Γ/g;
+    $t[$i] =~ s/U:/Γ/g;
+    $t[$i] =~ s/U"/Γ›/g;
 
     					 
-	$t[$i] =~ s/&#337;/υ/g;
-    $t[$i] =~ s/&#369;/ϋ/g;
- } #αινσφυϊόϋΑΙ	
+	$t[$i] =~ s/&#337;/Γµ/g;
+    $t[$i] =~ s/&#369;/Γ»/g;
+ }
  return @t;
 }
 
@@ -987,56 +988,55 @@ sub deaccent {
 
   $w =~ s/[!@#$%&*()\-_=+,<.>?'";:0-9 ]//g; 
   
-  $w =~ s/α/a/g;
-  $w =~ s/ι/e/g;
-  $w =~ s/ν/i/g;
-  $w =~ s/σ/o/g;
-  $w =~ s/ϊ/u/g;
-  $w =~ s/Α/A/g;
-  $w =~ s/Ι/E/g;
-  $w =~ s/Ν/I/g;
-  $w =~ s/Σ/O/g;
-  $w =~ s/Ϊ/U/g;
-  $w =~ s/ae/ζ/g;
-  $w =~ s/αe/ζ/g;
-  $w =~ s/oe//g;
-  $w =~ s/σe//g;
-  $w =~ s/Ae/Ζ/g;
-  $w =~ s/Αe/Ζ/g;
-  $w =~ s/Oe//g; 
-  $w =~ s/Σe//g;
-  $w =~ s/ύ/y/g;
-  $w =~ s/([nraeiouαινσφυϊόϋΑΙΣΦΤΪάΫ])i([aeiouαινσφυϊόϋΑΙΣΦΤΪάΫ])/$1j$2/ig;
-  $w =~ s/^i([aeiouAEIOUαινσφυϊόϋΑΙΣΦΤΪάΫ])/j$1/g; 
-  $w =~ s/^I([aeiouAEIOUαινσφυϊόϋΑΙΣΦΤΪάΫ])/J$1/g; 
+  $w =~ s/Γ΅/a/g;
+  $w =~ s/Γ©/e/g;
+  $w =~ s/Γ­/i/g;
+  $w =~ s/Γ³/o/g;
+  $w =~ s/ΓΊ/u/g;
+  $w =~ s/Γ/A/g;
+  $w =~ s/Γ‰/E/g;
+  $w =~ s/Γ/I/g;
+  $w =~ s/Γ“/O/g;
+  $w =~ s/Γ/U/g;
+  $w =~ s/ae/Γ¦/g;
+  $w =~ s/Γ΅e/Γ¦/g;
+  $w =~ s/oe/Ε“/g;
+  $w =~ s/Γ³e/Ε“/g;
+  $w =~ s/Ae/Γ†/g;
+  $w =~ s/Γe/Γ†/g;
+  $w =~ s/Oe/Ε’/g; 
+  $w =~ s/Γ“e/Ε’/g;
+  $w =~ s/Γ½/y/g;
+  $w =~ s/([nraeiouΓ΅Γ©Γ­Γ³Γ¶ΓµΓΊΓΌΓ»ΓΓ‰Γ“Γ–Γ”ΓΓΓ›])i([aeiouΓ΅Γ©Γ­Γ³Γ¶ΓµΓΊΓΌΓ»ΓΓ‰Γ“Γ–Γ”ΓΓΓ›])/$1j$2/ig;
+  $w =~ s/^i([aeiouAEIOUΓ΅Γ©Γ­Γ³Γ¶ΓµΓΊΓΌΓ»ΓΓ‰Γ“Γ–Γ”ΓΓΓ›])/j$1/g; 
+  $w =~ s/^I([aeiouAEIOUΓ΅Γ©Γ­Γ³Γ¶ΓµΓΊΓΌΓ»ΓΓ‰Γ“Γ–Γ”ΓΓΓ›])/J$1/g; 
   return $w;
 }
 
-#αινσφυϊόϋΑΙΣΦΤΪάΫ
 sub putaccents {
   my $t = shift;
   $t =~ s/''/ '/;
   
-  $t =~ s/a'/α/g;
-  $t =~ s/e'/ι/g;
-  $t =~ s/i'/ν/g;
-  $t =~ s/o'/σ/g;
-  $t =~ s/o:/φ/g;
-  $t =~ s/o"/υ/g;
-  $t =~ s/u'/ϊ/g;
-  $t =~ s/u:/ό/g;
-  $t =~ s/u"/ϋ/g;
-  $t =~ s/A'/Α/g;
-  $t =~ s/E'/Ι/g;
-  $t =~ s/&#337;/υ/g;
-  $t =~ s/&#369;/ϋ/g;
-  $t =~ s/O'/Σ/g;
-  $t =~ s/O:'/Φ/g;
-  $t =~ s/O:/Τ/g;
-  $t =~ s/U'/Ϊ/g;
-  $t =~ s/U:/ά/g;
-  $t =~ s/U"/Ϋ/g;
-  $t =~ s/y'/ύ/g;
+  $t =~ s/a'/Γ΅/g;
+  $t =~ s/e'/Γ©/g;
+  $t =~ s/i'/Γ­/g;
+  $t =~ s/o'/Γ³/g;
+  $t =~ s/o:/Γ¶/g;
+  $t =~ s/o"/Γµ/g;
+  $t =~ s/u'/ΓΊ/g;
+  $t =~ s/u:/ΓΌ/g;
+  $t =~ s/u"/Γ»/g;
+  $t =~ s/A'/Γ/g;
+  $t =~ s/E'/Γ‰/g;
+  $t =~ s/&#337;/Γµ/g;
+  $t =~ s/&#369;/Γ»/g;
+  $t =~ s/O'/Γ“/g;
+  $t =~ s/O:'/Γ–/g;
+  $t =~ s/O:/Γ”/g;
+  $t =~ s/U'/Γ/g;
+  $t =~ s/U:/Γ/g;
+  $t =~ s/U"/Γ›/g;
+  $t =~ s/y'/Γ½/g;
 
   return $t;
 }	 

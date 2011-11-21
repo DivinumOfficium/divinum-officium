@@ -1,5 +1,7 @@
 # do_io
-#
+# vim: set encoding=utf-8 :
+use utf8;
+
 # Text-based IO for Divinum Officium Project.
 # 
 # do_read(filename)
@@ -15,12 +17,12 @@
 
 use Encode;
 
-@encodings = ( Encode::find_encoding('cp1252'), Encode::find_encoding('utf-8') );
+my @encodings = ( Encode::find_encoding('cp1252'), Encode::find_encoding('utf-8') );
 
 sub do_read($)
 {
     my $file = shift;
-    my %content;
+    my $content;
 
     if ( open(INP, $file) )
     {
@@ -34,8 +36,9 @@ sub do_read($)
         for my $encoding ( @encodings )
         {
             # Check for characters we want, throughout.
+            # Basically all Latin, Greek, Semitic, plus puncutation and crosses.
             $content = $encoding->decode($data);
-            $decoded = ($content =~ /^(?:[\x{01}-\x{1F}\x{20}-\x{7E}\x{AB}\x{BB}\x{A1}\x{BF}\x{BF}-\x{750}\x{1E00}-\x{1FFE}\x{2010}-\x{2021}\x{2719}-\x{2721}])*$/ox);
+            $decoded = ($content =~ /^(?:[\x{01}-\x{1F} -~«»¡¿À-ݿḀ-῾‐-‡✙-✥])*$/ox);
             last if $decoded;
         }
 

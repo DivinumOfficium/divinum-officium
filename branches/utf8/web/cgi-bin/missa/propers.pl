@@ -1,5 +1,7 @@
 #!/usr/bin/perl
-# áéíóöõúüûÁÉæ ‡
+# vim: set encoding=utf-8 :
+use utf8;
+# Ã¡Ã©Ã­Ã³Ã¶ÃµÃºÃ¼Ã»ÃÃ‰Ã¦ â€¡
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office fills the chapters from ordinarium
@@ -715,7 +717,7 @@ sub replaceNdot {
  }		 	  		  
  if ($name) {
    $name =~ s/[\r\n]//g;
-   $s =~ s/N\. (et|and|és) N\./$name/;
+   $s =~ s/N\. (et|and|Ã©s) N\./$name/;
    $s =~ s/N\./$name/;
  }	 
  return $s;

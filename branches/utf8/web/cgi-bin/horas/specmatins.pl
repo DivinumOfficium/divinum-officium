@@ -1,5 +1,7 @@
 #!/usr/bin/perl
-# áéíóöõúüûÁÉæ
+use utf8;
+# vim: set encoding=utf-8 :
+
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office Matins subroutines
@@ -44,8 +46,8 @@ sub invitatorium {
   $ant = chompd($ant);
   $ant = "Ant. $ant";  
   
-  if ($dayname[0] =~ /Pasc/i && $ant !~ /allel[uú][ij]a/i) {$ant .= " Alleluia.";}
-  if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;} 
+  if ($dayname[0] =~ /Pasc/i && $ant !~ /allel[uÃº][ij]a/i) {$ant .= " Alleluia.";}
+  if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[uÃº][ij]a[\.\,]*[)]*//ig;} 
 
   my @ant = split('\*', $ant);
   $ant =~ s/\s*$//;
@@ -861,9 +863,9 @@ sub lectio {
     $w .= "$item\n";	
   }                                      
             
-  if ($dayname[0] !~ /Pasc/i) {$w =~ s/\(Allel[uú][ij]a.*?\)//isg;}
-  else {$w =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;}
-  if ($dayname[0] =~ /Quad/i) {$w =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;} 
+  if ($dayname[0] !~ /Pasc/i) {$w =~ s/\(Allel[uÃº][ij]a.*?\)//isg;}
+  else {$w =~ s/\((Allel[uÃº][ij]a.*?)\)/$1/isg;}
+  if ($dayname[0] =~ /Quad/i) {$w =~ s/[(]*allel[uÃº][ij]a[\.\,]*[)]*//ig;} 
 
   #handle parentheses in English
   if ($lang =~ /(English|Magyar)/i) {  

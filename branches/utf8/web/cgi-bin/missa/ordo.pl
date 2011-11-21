@@ -1,5 +1,7 @@
 #!/usr/bin/perl
-# áéíóöõúüûÁÉ  ‡
+# vim: set encoding=utf-8 :
+use utf8;
+# Ã¡Ã©Ã­Ã³Ã¶ÃµÃºÃ¼Ã»ÃÃ‰  â€¡
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office
@@ -311,12 +313,12 @@ sub Benedicamus_Domino {
 sub depunct {
   my $item = shift;
   $item =~ s/[\.\,\:\?\!\"\'\;\*]//g;
-  $item =~ s/[áÁ]/a/g;
-  $item =~ s/[éÉ]/e/g;
-  $item =~ s/[íí]/i/g;
-  $item =~ s/[óöõÓÖÔ]/o/g;
-  $item =~ s/[úüûÚÜÛ]/u/g;	  
-  $item =~ s/æ/ae/g;
+  $item =~ s/[Ã¡Ã]/a/g;
+  $item =~ s/[Ã©Ã‰]/e/g;
+  $item =~ s/[Ã­Ã­]/i/g;
+  $item =~ s/[Ã³Ã¶ÃµÃ“Ã–Ã”]/o/g;
+  $item =~ s/[ÃºÃ¼Ã»ÃšÃœÃ›]/u/g;	  
+  $item =~ s/Ã¦/ae/g;
   return $item;
 }
 

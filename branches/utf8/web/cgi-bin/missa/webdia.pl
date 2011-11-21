@@ -1,6 +1,8 @@
 #!/usr/bin/perl
+# vim: set encoding=utf-8 :
+use utf8;
 
-#áéíóöõúüûÁÉ ‡
+#Ã¡Ã©Ã­Ã³Ã¶ÃµÃºÃ¼Ã»ÃÃ‰ â€¡
 # Name : Laszlo Kiss
 # Date : 01-11-04
 # WEB dialogs
@@ -467,6 +469,7 @@ sub setcross
         # cross type 1: Cross of Jerusalem
         my $csubst = "<span style='font-size:1.25em;color:red'>&#x2629;</span>";
         $line =~ s/ \+ / $csubst /g;
+        #$line =~ s/(\pL)\+(\pL)/$1&nbsp;$csubst&nbsp;$2/g;
     }
 
     return $line;

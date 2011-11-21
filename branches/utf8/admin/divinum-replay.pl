@@ -35,15 +35,17 @@ Options:
 
 Parameters:
 FILTER                one of [$filters]
-                      When + is specified, compare only the filtered content
-                         and ignore everything else.  This is the default.
-                      When - is specified, ignore differences in the filtered content.
+                      When + is specified, compare only the content which the filter
+                         matches, and ignore everything else.  This is the default.
+                      When - is specified, erase content the filter matches, so that
+                         differences in it are ignored.
                       The filters are applied in order, e.g.
                           +hymns,+html       compare only the html presentation of hymns
                           +psalms,-antiphons compare only psalm textual content
-                      It doesn't make sense to use +ij or +accents or +spacing.
-                      The filter -site applied first by default unless the site filter
-                      is specified explicitly.
+                      It doesn't make much sense to use +ij or +accents or +spacing,
+                      so these are ignored with a warning.
+                      The filter -site applied first by default, except when the +site
+                      filter is specified explicitly.
 
 kalendar              Title of day 
 hymns                 Hymns and their titles
@@ -53,7 +55,7 @@ antiphons             Psalm and canticle antiphons
 html                  HTML and javascript content
 accents               accents and ligatures in all languages (-accents only)
 ij                    i vs j (-ij only)
-site                  the site specification (from http:// through /cgi-bin) (-site only)
+site                  site specifications (from http:// up to /cgi-bin)
 urls                  URL strings
 punctuation           presence and type of punctuation in text (-punctuation only)
 spacing               all white space (-spaces only)
@@ -132,7 +134,7 @@ foreach my $file ( @ARGV )
                 my $query = $2;
 
                 my $new_url = $new_base_url ? "$new_base_url$query" : $url;
-                print STDERR "$new_url\n";
+                print STDERR "$file\n";
 
                 my $new_result = `curl -s '$new_url'`;
                 unless ( $? == 0 )
@@ -149,7 +151,7 @@ foreach my $file ( @ARGV )
                         my @now = localtime;
                         print OUT "DIVINUM OFFICIUM TEST CASE ". asctime(@now);
                         print OUT "$url\n";
-                        print OUT @new_result;
+                        print OUT "$_\n" for @new_result;
                         close OUT;
                     }
                     else
@@ -189,7 +191,7 @@ foreach my $file ( @ARGV )
                             }
                             else
                             {
-                                print STDERR "warning: skipping $_\n";
+                                print STDERR "warning: skipping filter +$_\n";
                             }
                         }
 
@@ -198,15 +200,18 @@ foreach my $file ( @ARGV )
                             if ( $ignore )
                             {
                                 # Write accented letters back to nonaccented.
-                                tr/áéëíóúýÁÉËÍÓÚ/aeeiouyAEEIOU/ for @old_result, @new_result;
-                                s/æ/ae/g for @old_result, @new_result;
-                                s/Æ/Ae/g for @old_result, @new_result;
-                                s/œ/oe/g for @old_result, @new_result;
-                                s/Œ/Oe/g for @old_result, @new_result;
+                                for ( @old_result, @new_result )
+                                {
+                                    tr/áéëíóúýÁÉËÍÓÚÝ/aeeiouyAEEIOUY/;
+                                    s/[æǽ]/ae/g;
+                                    s/[ÆǼ]/Ae/g;
+                                    s/œ/oe/g;
+                                    s/Œ/Oe/g;
+                                }
                             }
                             else
                             {
-                                print STDERR "warning: skipping $_\n";
+                                print STDERR "warning: skipping filter +$_\n";
                             }
                         }
 

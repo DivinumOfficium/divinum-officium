@@ -1,6 +1,8 @@
 #!/usr/bin/perl
+# vim: set encoding=utf-8 :
+use utf8;
 
-#αινσφυϊόϋΑΙ
+#Γ΅Γ©Γ­Γ³Γ¶ΓµΓΊΓΌΓ»ΓΓ‰
 # Name : Laszlo Kiss
 # Date : 01-25-08
 # horas common files to reconcile tempora & sancti

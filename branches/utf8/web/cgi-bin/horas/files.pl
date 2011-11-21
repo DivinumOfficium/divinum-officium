@@ -1,4 +1,6 @@
 #*** used files not shown as databases
+use utf8;
+# vim: set encoding=utf-8 :
 
 #*** horas.ini (in cgi-bin-horas)
 # loaded as initial preparation

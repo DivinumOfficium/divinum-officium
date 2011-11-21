@@ -1,6 +1,7 @@
 #!/usr/bin/perl
+use utf8;
+# vim: set encoding=utf-8 :
 
-#αινσφυϊόϋΑΙ
 # Name : Laszlo Kiss
 # Date : 01-25-04
 # dialog/setup related subs
@@ -150,7 +151,6 @@ sub setupstring {
 	   #$l =~ s/^\s*//;
 	   #$l=~ s/\s*$//;
 	   #if (!$l) {next;}
-#     if ($l =~ /^\s*\[([a-z0-9αινσφυϊόϋΑΙΣΦΤΪάΫ\_\- \#]+)\]/i) {
       if ($l =~ /^\s*\[([\pL\pN_ #-]+)\]/i) {
             $encoding = $_;
 		  $l = $1;
