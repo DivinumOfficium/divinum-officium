@@ -154,7 +154,7 @@ sub setupstring($$$%)
   close SETUP;
   
   # Regex for matching section headers.
-  my $sectionregex = qr/^\h*\[([^\]]+)\]\h*$/m;
+  my $sectionregex = qr/^\s*\[([^\]]+)\]\s*$/;
 
   my %sections;
   my $key = '__preamble';
@@ -219,7 +219,7 @@ sub setupstring($$$%)
     (?:                           # Keywords, which are
       (?!:)|                      #   optional; but if present,
       :((?i:(?!Gregem)[^\n:])+?)) #   mustn't contain 'Gregem'.
-    \h*                           # Ignore trailing whitespace.
+    [^\S\n\r]*                    # Ignore trailing whitespace.
     (?::(.*))?                    # Optional substitutions.
     $
     /mx;
