@@ -154,7 +154,7 @@ sub setupstring($$$%)
   close SETUP;
   
   # Regex for matching section headers.
-  my $sectionregex = qr/^\s*\[([^\]]+)\]\s*$/;
+  my $sectionregex = qr/^\s*\[([^\]]+)\]/;
 
   my %sections;
   my $key = '__preamble';
