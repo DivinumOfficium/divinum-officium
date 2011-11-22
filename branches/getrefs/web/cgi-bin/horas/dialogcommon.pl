@@ -203,6 +203,7 @@ sub setupstring($$$%)
     {
       # New section.
       $key = $1;
+      $sections{$key} = [];
     }
     else
     {
