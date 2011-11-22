@@ -159,10 +159,45 @@ sub setupstring($$$%)
   my %sections;
   my $key = '__preamble';
   
+  use constant 'COND_NOT_YET_AFFIRMATIVE' => 0;
+  use constant 'COND_AFFIRMATIVE' => 1;
+  use constant 'COND_COMPLETED' => 2;
+  
+  my @conditional_stack;
+  
   foreach my $line (@filelines)
   {
     # Fix up line endings. TODO: Remove after UTF-8 support is merged.
     $line = chompd($line);
+    
+    # Check if we're entering a new conditional block. We do this even
+    # if we're currently within an unsatisfied conditional, to allow
+    # correct nesting.
+    if ($line =~ /^\s*\%if\s+(.*)$/)
+    {
+      # Push the new conditional frame onto the stack.
+      push @conditional_stack,
+        @conditional_stack > 0 && $conditional_stack[-1] != COND_AFFIRMATIVE ? COND_COMPLETED :
+        evaluate_conditional($1) ? COND_AFFIRMATIVE : COND_NOT_YET_AFFIRMATIVE;
+      next;
+    }
+    
+    # Are we in a conditional?
+    if (@conditional_stack > 0)
+    {
+      # Pop the frame off the stack if we've reached the end.
+      if ($line =~ /^\s*\%endif\s*$/) { pop @conditional_stack; next; }
+      
+      # Switch to the next stage in the case of alternation.
+      if ($line =~ /^\s*\%else\s*$/ ||
+        ($line =~ /^\s*\%elsif\s+(.*)$/ && ($conditional_stack[-1] != COND_NOT_YET_AFFIRMATIVE || evaluate_conditional($1))))
+      {
+        $conditional_stack[-1]++;
+        next;
+      }
+      
+      next unless ($conditional_stack[-1] == COND_AFFIRMATIVE);
+    }
     
     if ($line =~ /$sectionregex/)
     {
