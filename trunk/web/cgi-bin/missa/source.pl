@@ -1,6 +1,8 @@
 #!/usr/bin/perl
+# vim: set encoding=utf-8 :
+use utf8;
 
-#·ÈÌÛˆı˙¸˚¡…
+#√°√©√≠√≥√∂√µ√∫√º√ª√Å√â
 # Name : Laszlo Kiss
 # Date : 02-01-2008
 # Show/edit files
@@ -24,8 +26,11 @@ use Time::Local;
 
 $q = new CGI;
 $error = '';
+require "$Bin/../horas/do_io.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
+
+binmode(STDOUT, ':encoding(utf-8)');
 
 #*** collect parameters
 getini('missa'); #files, colors
@@ -43,15 +48,14 @@ $title = 'Sources';
                                            
 $source = '';
 $line = '';
-if (open(INP, "$datafolder/source.txt")) {
-    while ($line = <INP>) {$source .= "$line<BR>";}
-    close INP;
+if (my @sources = do_read("$datafolder/source.txt")) {
+    $_ = "$_<BR>" for @sources;
+    $source = join('',@sources);
 } else {$error .= "$datafolder/source.txt cannot open";}
 
-@toc = splice(@toc,@toc);
-if (open(INP, "$datafolder/TOC1920.txt")) {
-  @toc = <INP>;
-  close INP;
+my @toc;
+if (@toc = do_read("$datafolder/TOC1920.txt")) {
+  $_ = "$_\n" for @toc;
 } else {$error .= "$datafolder/TOC1920.txt cannot open";}
 
 $setupsave = printhash(\%setup, 1);

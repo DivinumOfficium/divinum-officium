@@ -1,8 +1,12 @@
 #!/usr/bin/perl
-# áéíóöõúüûÁÉ  ‡
+use utf8;
+# vim: set encoding=utf-8 :
+
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office
+
+my @lines;
 
 $a = 1;
 
@@ -62,7 +66,7 @@ sub horas
         # Suppress (Alleluia) during Quadrigesima.
         if ( $dayname[0] =~ /Quad/i && !Septuagesima_vesp() )
         {
-            $text1 =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;
+            $text1 =~ s/[(]*allel[uÃº][ij]a[\.\,]*[)]*//ig;
         } 
 
         $text1 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;  
@@ -77,7 +81,7 @@ sub horas
             $text2 = resolve_refs($text2, $lang2);    
             if ($dayname[0] =~ /Quad/i && !Septuagesima_vesp())
             {
-                $text2 =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;
+                $text2 =~ s/[(]*allel[uÃº][ij]a[\.\,]*[)]*//ig;
             } 
 
             $text2 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
@@ -113,8 +117,8 @@ sub getunit {
     if (!$t) {next;}
     last;
   }    
-  if ($dayname[0] !~ /Pasc/i) {$t =~ s/\(Allel[uú][ij]a.*?\)//isg;}
-  else {$t =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;}
+  if ($dayname[0] !~ /Pasc/i) {$t =~ s/\(Allel[uÃº][ij]a.*?\)//isg;}
+  else {$t =~ s/\((Allel[uÃº][ij]a.*?)\)/$1/isg;}
 
   return ($t, $ind);
 }
@@ -302,7 +306,7 @@ sub pater_noster {
   $text[6] = "V. $text[6]";
   $text[7] = "R. $text[7]";  
   $text[7] =~ s/~//;
-  $text[8] =~ s/[AÁ]men[\.]*//;
+  $text[8] =~ s/[AÃ]men[\.]*//;
   $text = '';
   foreach (@text) {$text .= "$_\n";}    
   return $text; 
@@ -475,11 +479,16 @@ sub psalm {
   }
   my $t = '';
   
-  if ($num > 150 && $num < 300 && open(INP, $fname)) {
-     my $line = <INP>;
-     close INP;          
-     if ($line =~ /\s*([a-z]+\s+[a-z_]+) /i) {$t = setfont($redfont, $1) . settone(1) . $pnum;}   
-  }
+    if ($num > 150 && $num < 300 && (@lines = do_read($fname)))
+    {
+        $line = $lines[0];
+        print STDERR ">> \$line = '$line'\n";
+        if ($line =~ /\s*([a-z]+\s+[a-z_]+) /i)
+        {
+            print STDERR ">>> beep\n";
+            $t = setfont($redfont, $1) . settone(1) . $pnum;
+        }   
+    }
   if (!$t) {$t = setfont($redfont,"$str $num") . settone(1) . $pnum; }	
 
   
@@ -510,9 +519,10 @@ sub psalm {
    if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6 && $fname =~ /88/) 
     {$fname =~ s/88/88a/;}      
 
-  if (open(INP, $fname)) {
+
+  if (@lines = do_read($fname)) {
 	my $first = ($antline) ? 1 : 0;
-	while ($line = <INP>) {   
+	foreach $line ( @lines ) {
 	  
 	  if ($line =~ /^\s*([0-9]+)\:([0-9]+)/) {$v = $2;}
       elsif ($line =~ /^\s*([0-9]+)/) {$v = $1;}
@@ -545,7 +555,6 @@ sub psalm {
       
       $t .= "\n$lnum $line $rest";       
     }
-    close INP;	 
     $t .= "\n";
     if ($num != 210 && !$nogloria) {$t .= "\&Gloria\n";}  
 
@@ -556,7 +565,7 @@ sub psalm {
 
 
 #*** getantcross($psalmline, $antline)
-# set a	‡ sign if psalmline matches antline
+# set a	DOUBLE DAGGER sign if psalmline matches antline
 # eliminating accents and pintuation 
 sub getantcross {
   my $psalmline = shift;
@@ -571,7 +580,7 @@ sub getantcross {
   $antline = ''; 
 
   while ($aind < @antline) {
-    if ($pind >= @psalmline) { return "$psalmline1 " . setfont($redfont, '‡');}
+    if ($pind >= @psalmline) { return "$psalmline1 " . setfont($redfont, "\x{2021} ");}
 	my $item1 = $psalmline[$pind];
 	$pind++;
 	$item1 = depunct($item1);
@@ -584,7 +593,7 @@ sub getantcross {
 	$psalmline .= " $psalmline[$pind-1]";
 	next;
   }
-  $psalmline .= ' ' . setfont($smallfont, '‡ ');
+  $psalmline .= ' ' . setfont($smallfont, "\x{2021} ");
   while ($pind < @psalmline) {$psalmline .= " $psalmline[$pind]"; $pind++;}
   return $psalmline;
 }
@@ -592,12 +601,12 @@ sub getantcross {
 sub depunct {
   my $item = shift;
   $item =~ s/[\.\,\:\?\!\"\'\;\*]//g;
-  $item =~ s/[áÁ]/a/g;
-  $item =~ s/[éÉ]/e/g;
-  $item =~ s/[íí]/i/g;
-  $item =~ s/[óöõÓÖÔ]/o/g;
-  $item =~ s/[úüûÚÜÛ]/u/g;	  
-  $item =~ s/æ/ae/g;
+  $item =~ s/[Ã¡Ã]/a/g;
+  $item =~ s/[Ã©Ã‰]/e/g;
+  $item =~ s/[Ã­Ã­]/i/g;
+  $item =~ s/[Ã³Ã¶ÃµÃ“Ã–Ã”]/o/g;
+  $item =~ s/[ÃºÃ¼Ã»ÃšÃœÃ›]/u/g;	  
+  $item =~ s/Ã¦/ae/g;
   return $item;
 }
 
@@ -679,10 +688,7 @@ sub special_epi_invit {
 	my $t = "_\n";
   							  
   $fname = checkfile($lang, "Psalterium/Invitatorium1.txt");
-  if (open(INP, $fname)) {
-    my @a = <INP>;
-    close INP;
-    
+  if (@a = do_read($fname)) {
     foreach $item (@a) {
       if ($item =~ /\$ant2/i) {$item = "$ant2";}
       elsif ($item =~ /\$ant/i) {$item = "$ant";}
@@ -866,8 +872,8 @@ sub ant_Benedictus {
     my %v = %{setupstring("$datafolder/$lang/Psalterium/Major Special.txt")};
     $a = $v{"Adv Ant $day" . "L"};    
   }
-  if ($dayname[0] !~ /Pasc/i) {$a =~ s/\(Allel[uú][ij]a.*?\)//isg;}
-  else {$a =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;}
+  if ($dayname[0] !~ /Pasc/i) {$a =~ s/\(Allel[uÃº][ij]a.*?\)//isg;}
+  else {$a =~ s/\((Allel[uÃº][ij]a.*?)\)/$1/isg;}
   
   my @a = split('\*', $a);
   if ($num == 1 && $duplex < 3 && $version !~ /1960/) {return "Ant. $a[0]";}
@@ -901,8 +907,8 @@ sub ant_Magnificat {
 	  $a = $v{"Adv Ant $day"};
     $num = 2;
   }
-  if ($dayname[0] !~ /Pasc/i) {$a =~ s/\(Allel[uú][ij]a.*?\)//isg;}
-  else {$a =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;}
+  if ($dayname[0] !~ /Pasc/i) {$a =~ s/\(Allel[uÃº][ij]a.*?\)//isg;}
+  else {$a =~ s/\((Allel[uÃº][ij]a.*?)\)/$1/isg;}
 
   my @a = split('\*', $a);
   if ($num == 1 && $duplex < 3 && $version !~ /1960/) {return "Ant. $a[0]";}
@@ -922,18 +928,16 @@ sub canticum {
   $psalmfolder = 'psalms1';   
 
   my $fname = checkfile($lang, "$psalmfolder/Psalm$psnum.txt");    
-  if (open(INP, $fname)) {
-    my @w = <INP>;
-    close INP;
+  if (@w = do_read($fname)) {
     $w[0] =~ s/\!//;  
-    $w .= setfont($redfont, chompd(shift(@w))) . settone(2) . "\n"; 
+    $w .= setfont($redfont, shift(@w)) . settone(2) . "\n"; 
     foreach $item (@w) {
       if ($item =~ /^([0-9]+\:)*([0-9]+) /) {
         my $rest = $';
         my $num = "$1$2";
         $item = setfont($smallfont, $num) . " $rest";   
       }
-      $w .= "$item";
+      $w .= "$item\n";
     }
   return $w;
   } else {return "$w $datafolder/$lang/$psalmfolder/Psalm$psnum.txt not found";}
@@ -977,25 +981,46 @@ sub martyrologium {
   elsif ($version =~ /(1955|1960)/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium2/$fname.txt"))
     {$fname = "$datafolder/Latin/Martyrologium2/$fname.txt";}
   else {$fname = checkfile($lang, "Martyrologium/$fname.txt");}  
-  if (open (INP, "$fname")) {
-    my @a = <INP>;
-    close INP;
-	my ($luna, $mo) = ($year >= 1900 && $year < 2200) ? gregor($m, $d, $y, $lang) : luna($m, $d, $y, $lang);
-	if ($lang =~ /Latin/i) {$a[0] =~ s/\n/ /g; $a[0] .=  $luna;}
-	else {
-	  if ($a[0] =~ /U[p]+on.*?$mo[, ]*/i) {$a[0] = "$luna $'";}
-	  elsif ($a[1] =~ /U[p]+on.*?$mo[, ]*/i) {$a[1] = "$luna $'";}
-	  else {unshift(@a, ($luna, "_\n"));}
-   }
-		
-	my $prefix = "v. ";
-    foreach $line (@a) {
-      if (length($line) > 4) {$t .= "$prefix$line";}
-      else {$t .= $line;}
-      $prefix = "r. ";
-      if ($mobile && $line =~ /\_/) {$t .= "$prefix$mobile"; $mobile = '';}
+    if (my @a = do_read($fname))
+    {
+        my ($luna, $mo) = ($year >= 1900 && $year < 2200) ?
+                gregor($m, $d, $y, $lang) :
+                luna($m, $d, $y, $lang);
+        if ( $lang =~ /Latin/i )
+        {
+            $a[0] .= " $luna"
+        }
+        elsif ( $a[0] =~ /U[p]+on.*?$mo[, ]*/i )
+        {
+            $a[0] = "$luna $'";
+        }
+        elsif ( $a[1] =~ /U[p]+on.*?$mo[, ]*/i )
+        {
+            $a[1] = "$luna $'";
+        }
+        else
+        {
+            unshift(@a, ($luna, "_\n"));
+        }
+            
+        my $prefix = "v. ";
+        foreach $line (@a)
+        {
+            if ( length($line) > 3 )
+            {
+                $t .= "$prefix$line\n";
+            }
+            else
+            {
+                $t .= "$line\n";
+            }
+            $prefix = "r. ";
+            if ( $mobile && $line =~ /\_/ )
+            {
+                $t .= "$prefix$mobile"; $mobile = '';
+            }
+        }
     }
-  }
 
   my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
   $t .= $prayer{Conclmart};
@@ -1106,10 +1131,8 @@ sub getordinarium {
   if ($version =~ /trident/i && $hora =~ /(laudes|vespera)/i && $version !~ /monastic/i) 
     {$fname =~ s/\.txt/Trid\.txt/;}
   if ($version =~ /Monastic/i) {$fname =~ s/\.txt/M\.txt/;}
-  if (open(INP, $fname)) {
-    @script = <INP>;
-    close INP;
-  } else {$error = "$fname cannot open!";}
+  @script = do_read($fname);
+  $error = "$fname cannot open!" unless @script;
   return @script;
 }
 

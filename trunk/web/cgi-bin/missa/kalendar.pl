@@ -1,6 +1,8 @@
 #!/usr/bin/perl
+# vim: set encoding=utf-8 :
+use utf8;
 
-#áéíóöõúüûÁÉ
+#Ã¡Ã©Ã­Ã³Ã¶ÃµÃºÃ¼Ã»ÃÃ‰
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office Kalendarium
@@ -57,11 +59,13 @@ our $communename = 'Commune';
 our $missa = 1;
 
 #require "$Bin/ordocommon.pl";
+require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/tfertable.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
+binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
 #*** get parameters

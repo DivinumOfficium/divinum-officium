@@ -1,6 +1,8 @@
 #!/usr/bin/perl
+# vim: set encoding=utf-8 :
+use utf8;
 
-#·ÈÌÛˆı˙¸˚¡…
+#√°√©√≠√≥√∂√µ√∫√º√ª√Å√â
 # Name : Laszlo Kiss
 # Date : 01-25-04
 # dialog/setup related subs
@@ -12,9 +14,7 @@ $a=4;
 # the file consists of $var='value' lines
 sub getini {
   my $file = shift;   
-  if (open(INP, "$Bin/$file.ini")) {
-    my @initfiles = <INP>;      
-    close INP;
+  if (my @initfiles = do_read("$Bin/$file.ini")) {
     foreach (@initfiles) {eval($_);}    
   }
 }
@@ -141,9 +141,7 @@ sub setupstring {
   my $lang = '';           
   if ($lang1 && $lang2 && $fname =~ /($lang1|$lang2)\//i) {$fname = checkfile($1, $');}   
                                       
-  if (open (SETUP, "$fname")) {   
-   my @a = <SETUP>;
-	 close SETUP;	 
+  if (my @a = do_read($fname)) {   
 	 my %ps;		
      foreach (keys %ps) {delete($ps{$_});}
 	 my $i;
@@ -155,7 +153,7 @@ sub setupstring {
 	   #$l =~ s/^\s*//;
 	   #$l=~ s/\s*$//;
 	   #if (!$l) {next;}
-     if ($l =~ /^\s*\[([a-z0-9·ÈÌÛˆı˙¸˚¡…”÷‘⁄‹€\_\- \#]+)\]/i) {
+     if ($l =~ /^\s*\[([a-z0-9√°√©√≠√≥√∂√µ√∫√º√ª√Å√â√ì√ñ√î√ö√ú√õ\_\- \#]+)\]/i) {
 		  $l = $1;
 	    if ($key) {$ps{$key} = $value;}
 		  $key = $l;        

@@ -1,6 +1,7 @@
 #!/usr/bin/perl
+use utf8;
+# vim: set encoding=utf-8 :
 
-#αινσφυϊόϋΑΙ
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office   popup
@@ -57,6 +58,7 @@ our $temporaname = 'Tempora';
 our $communename = 'Commune';
 
 #*** collect standard items
+require "$Bin/do_io.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
@@ -65,6 +67,8 @@ require "$Bin/horas.pl";
 require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
 require "$Bin/tfertable.pl";
+
+binmode(STDOUT,':encoding(utf-8)');
 
 #*** get parameters
 getini('horas'); #files, colors
@@ -97,6 +101,7 @@ if ($popup =~ /\&/) {$popup =~ s /\s/\_/g;}
 $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;
 %translate = %{setupstring("$datafolder/$tlang/Psalterium/Translate.txt")};
 
+ print STDERR "\$popup = $popup\n";
  $text = resolve_refs($popup, $lang1); 
  $t = length($text);
  #$text = resolve_refs($text, $lang1);   

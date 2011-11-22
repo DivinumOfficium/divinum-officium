@@ -1,5 +1,7 @@
 #!/usr/bin/perl
-# ·ÈÌÛˆı˙¸˚¡…Ê á
+# vim: set encoding=utf-8 :
+use utf8;
+# √°√©√≠√≥√∂√µ√∫√º√ª√Å√â√¶ ‚Ä°
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office fills the chapters from ordinarium
@@ -196,16 +198,12 @@ sub oratio {
   $ctotalnum = 1;
 
   my $coron = '';
-  if (open(INP, "$datafolder/../horas/Latin/Tabulae/Tr1960.txt")) {
-     my $tr = '';
-     while ($line = <INP>) {$tr .= chompd($line);}
+  if (my $tr = join('', do_read("$datafolder/../horas/Latin/Tabulae/Tr1960.txt"))) {
      $tr =~ s/\=/\;\;/g;
-     close(INP);
      my %tr = split(';;', $tr);
 	 my $mm = sprintf("C%02i-%02i", $month, $day);
 	 if (exists($tr{$mm})) {$coron=$tr{$mm};}
   }
-  
    
   if ($coron) {
     $retvalue =~ s/\$(Per|Qui) .*\n//g; 
@@ -719,7 +717,7 @@ sub replaceNdot {
  }		 	  		  
  if ($name) {
    $name =~ s/[\r\n]//g;
-   $s =~ s/N\. (et|and|Ès) N\./$name/;
+   $s =~ s/N\. (et|and|√©s) N\./$name/;
    $s =~ s/N\./$name/;
  }	 
  return $s;

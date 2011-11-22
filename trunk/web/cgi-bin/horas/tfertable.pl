@@ -1,6 +1,7 @@
 #!/usr/bin/perl
+use utf8;
+# vim: set encoding=utf-8 :
 
-#áéíóöõúüûÁÉ
 # Name : Laszlo Kiss
 # Date : 01-25-08
 # horas common files to reconcile tempora & sancti
@@ -27,13 +28,14 @@ $fname = ($version =~ /Newcal/i) ? "TrNewcal$kyearo" : ($version =~ /1955|1960/)
 $fname1 = $fname;
 $fname1 =~ s/^Tr/Str/;  
 
-  if (open(OUT, ">$datafolder/Latin/Tabulae/$fname.txt")) {
-	foreach $item (@tfer) {print OUT "$item;;\n";}
-	close OUT;
+  my @tfer_out = @tfer;
+  $_ = "$_;;\n" for @tfer_out;
+  if (do_write("$datafolder/Latin/Tabulae/$fname.txt", @tfer_out)) {
   } else {$error .= "$datafolder/Latin/Tabulae/$fname.txt cannot open for output<BR>\n";}
-  if (open(OUT, ">$datafolder/Latin/Tabulae/$fname1.txt")) {
-	foreach $item (@scriptfer) {print OUT "$item;;\n";}
-	close OUT;
+
+  my @scriptfer_out = @scriptfer;
+  $_ = "$_;;\n" for @scriptfer_out;
+  if (do_write("$datafolder/Latin/Tabulae/$fname1.txt")) {
   } else {$error .= "$datafolder/Latin/Tabulae/$fname1.txt cannot open for output<BR>\n";}
 }
 
@@ -62,32 +64,26 @@ my $kalendarname = ($version =~ /1570/) ? 1570 : ($version =~ /Trident/i) ? 1888
 our %kalendar = undef;
 our $kalendarkey = '';
 $tempname = ($version =~ /Monastic/i) ? 'TemporaM' : 'Tempora';
-if (open(INP, "$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
-  my @a = <INP>;
-  close INP;
+if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
   foreach (@a) {
     my @item = split('=', $_); 
-    $kalendar{$item[0]} = $item[1];
+    $kalendar{$item[0]} = "$item[1]\n";
   }
 } else {error("$datafolder/Latin/Tabulae/$kalendarname.txt cannot open");}
 
 #*** Handle  permanent transfers = Tr<Trid|1960|newcal>.txt
   my $vtrans = ($version =~ /monastic/i) ? 'M' : ($version =~ /newcal/i) ? 'newcal' : 
     ($version =~ /(1955|1960)/) ? '1960' : ($version =~ /1570/) ? '1570' : ($version =~ /Trid/i) ? '1910' : 'DA';  
-  if ($vtrans && open(INP, "$datafolder/Latin/Tabulae/Tr$vtrans.txt")) {
-     my $tr = '';
-     while ($line = <INP>) {$tr .= chompd($line);}
+  if ($vtrans && (@a = do_read("$datafolder/Latin/Tabulae/Tr$vtrans.txt"))) {
+     my $tr = join('', @a);
      $tr =~ s/\=/\;\;/g;
-     close(INP);
      %transfertemp = split(';;', $tr);   
      $transfertemp = $transfertemp{$sday}; 
   } else {%transfertemp = undef; $transfertemp = '';} 
 
 
-  if (open(INP, "$datafolder/Latin/Tabulae/Tr$vtrans$kyear.txt")) {
-     my $tr = '';
-     while ($line = <INP>) {$tr .= chompd($line);}
-     close(INP);
+  if (@a = do_read("$datafolder/Latin/Tabulae/Tr$vtrans$kyear.txt")) {
+     my $tr = join('',@a);
      $tr =~ s/\=/\;\;/g;   
      %transfer = split(';;', $tr);      
   } else {%transfer = {}; }

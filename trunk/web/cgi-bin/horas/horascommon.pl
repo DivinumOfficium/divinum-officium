@@ -1,6 +1,7 @@
 #!/usr/bin/perl
+use utf8;
+# vim: set encoding=utf-8 :
 
-#αινσφυϊόϋΑΙ
 # Name : Laszlo Kiss
 # Date : 01-25-08
 # horas common files to reconcile tempora & sancti also for missa
@@ -8,6 +9,8 @@
 #use warnings;
 #use strict "refs";
 #use strict "subs";
+
+my @lines;
 my $a = 4;
 
 sub error {
@@ -91,7 +94,7 @@ sub getname {
   if (!@sundaytable) {getsundaytable();}
   my $i = 0;
   for ($i = 0; $i < @sundaytable; $i++) {
-    my $str = chompd($sundaytable[$i]);
+    my $str = $sundaytable[$i];
     if ($str && $str =~ /^$abbr\=(.+)/) {
 	  $str = $1;
 	  if ($str =~ /^\s*\*/) {return "$abbr = $'";}
@@ -105,11 +108,9 @@ sub getname {
 
 #*** getsundaytable()
 # reads sundaytable.txt into @sundaytable
-sub getsundaytable {
-   if (open (NI, "$datafolder/sundaytable.txt")) {
-     @sundaytable = <NI>;
-	 close NI;
-   }
+sub getsundaytable
+{
+    @sundaytable = do_read("$datafolder/sundaytable.txt")
 }
 
 #*** getadvent($year)
@@ -181,9 +182,8 @@ sub getrank {
     : ($version =~ /newcal/i) ? '2009' : ($version =~ /1960/) ? 1960 : 1942;     
   our %kalendar = undef;
   our $kalendarkey = ''; 
-  if (open(INP, "$datafolder/../horas/Latin/Tabulae/K$kalendarname.txt")) {
-    my @a = <INP>;
-    close INP;
+  if ( @a = do_read("$datafolder/../horas/Latin/Tabulae/K$kalendarname.txt"))
+  {
     foreach (@a) {
       my @item = split('=', $_); 
       $kalendar{$item[0]} = $item[1];
@@ -196,11 +196,9 @@ sub getrank {
   # Handle transfers
   my $vtrans = ($version =~ /newcal/i) ? 'newcal' : ($version =~ /(1955|1960)/) ? '1960' : 
    ($version =~ /monastic/i) ? 'M' : ($version =~ /1570/) ? '1570' : ($version =~ /1910/) ? 1910 : 'DA';  
-  if ($vtrans && open(INP, "$datafolder/../horas/Latin/Tabulae/Tr$vtrans.txt")) {
-     my $tr = '';
-     while ($line = <INP>) {$tr .= chompd($line);}
+  if ($vtrans && (@lines = do_read("$datafolder/../horas/Latin/Tabulae/Tr$vtrans.txt"))) {
+     my $tr = join ('', @lines);
      $tr =~ s/\=/\;\;/g;
-     close(INP);
      %transfertemp = split(';;', $tr);      
      $transfertemp = $transfertemp{$sday}; 	
   } else {%transfertemp = undef; $transfertemp = '';} 
@@ -210,10 +208,8 @@ sub getrank {
   $dirgeline = '';	 
   $dirge = 0;		 	 
   if (($tk || $Hk || $savesetup ) && !(-e "$datafolder/../horas/Latin/Tabulae/Tr$vtrans$year.txt")) {tfertable($version, $year, $datafolder);}
-  if (open(INP, "$datafolder/../horas/Latin/Tabulae/Tr$vtrans$year.txt")) {   
-     my $tr = ''; 
-     while ($line = <INP>) {$tr .= chompd($line);}
-     close(INP);
+  if (@lines = do_read("$datafolder/../horas/Latin/Tabulae/Tr$vtrans$year.txt")) {   
+     my $tr = join ('', @lines);
      $tr =~ s/\=/\;\;/g;  	   
      %transfer = split(';;', $tr);	 
      if (exists($transfer{dirge})) {$dirgeline = $transfer{dirge};}  #&& !$caller

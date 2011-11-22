@@ -1,6 +1,10 @@
 #!/usr/bin/perl
+use utf8;
+# vim: set encoding=utf-8 :
+# vim: set encoding=utf-8 :
 
-#áéíóöõúüûÁÉÓÖÔÚÜÛ
+use utf8;
+
 # Name : Laszlo Kiss
 # Date : 09-25-08
 # Tk specific dialogs
@@ -11,26 +15,26 @@
 
 my $a = 4;
 
-
 #*** savesetuphash($name, \%setup)
 # saves the referenced setup hash modified by each dialog call
 # into $name.setup file
 # called by ondestroy callback of MainWindow
-sub savesetuphash {
-  my $name = shift;
-  my $setup = shift;
-  my %setup = %$setup; 
-  if (open (OUT, ">$datafolder/$name.setup")) {
-     my ($key, $value);
-	 foreach $key (sort keys %setup) {	
-	    print OUT '[' . $key . "]\n";
-		$value = $setup{$key};	
-		$value =~ s/\n//g;
-		$value =~ s/;;/;;\n/g; 
-		print OUT "$value\n";  
-     }
-	 close OUT;
-  }
+sub savesetuphash
+{
+    my $name = shift;
+    my $setup = shift;
+    my %setup = %$setup; 
+    my ($key, $value);
+    my @lines = ();
+    foreach $key (sort keys %setup)
+    {	
+        push @lines, "[$key]\n";
+        $value = $setup{$key};	
+        $value =~ s/\n//g;
+        $value =~ s/;;/;;\n/g; 
+        push @lines, "$value\n";  
+    }
+    do_write("$datafolder/$name.setup", @lines);
 }
 
 #*** setfont($font, $text)
@@ -207,7 +211,7 @@ sub setcell_rut {
 	  my $newlinewidth = floor($linewidth * $blackfontsize / $fontsize);
 	
 	  if ($only || $column == $vcol) {  
-	    if ($str =~ /^[a-z]$/i || $str =~ /\%[a-z áéíóöõúüûÁÉÓÖÔÚÜÛ]+\%/i ||
+	    if ($str =~ /^[a-z]$/i || $str =~ /\%[\s\pL]+\%/i ||
 	      $str =~ /([\!\#]H[iy]mn|\&lectio|\&antiphona_finalis)/i) {$speecharray[$cellind] .= $str;}
 		  if ($str =~ /\{\:.*?\:\}/) {$speecharray[$cellind] .= $&;}
 	  }
@@ -264,7 +268,7 @@ sub cellout {
   $text =~ s/\n*$//;
   $text =~ s/\_/ /g;
   $text .= $flag;	      
-  if ($text =~ /\%([a-z áéíóöõúüûÁÉÓÖÔÚÜÛ]+?)\%/i) {	 
+  if ($text =~ /\%([\s\pL]+?)\%/i) {	 
     my $before = $`;
 	  my $str = $1;   
 	  $text = $';	  
@@ -524,7 +528,7 @@ sub voiceit {
   if ($laudescont && $command =~ /laudes/i && $index == 1 && $version !~ /1955|1960/ &&
     $text =~ /lll[0-9]\s*\_\s*/) {$text = $'; $laudescont = 0;}
 
-  if ($hora =~ /matutinum/i && $text =~ /\%[a-z áéíóöõúüûÁÉÓÖÔÚÜÛ]+\%/i) {  
+  if ($hora =~ /matutinum/i && $text =~ /\%[\s\pL]+\%/i) {  
      writetimelog();
      $command = 'Laudes'; 
      $laudescont = 1;
@@ -533,7 +537,7 @@ sub voiceit {
      return;
   }
 
-  if ($hora =~ /(Laudes|Vespera)/i && $text =~ /\%[a-z áéíóöõúüûÁÉÓÖÔÚÜÛ]+\%/i) {  
+  if ($hora =~ /(Laudes|Vespera)/i && $text =~ /\%[\s\pL]+\%/i) {  
      $command = ($hora =~ /Laudes/i) ? 'Matutinum' : 'Vespera'; 
      $date1 = "11-02-$year";
      $laudescont = 1;
@@ -590,7 +594,7 @@ sub voiceit {
       next; 
     }
 
-	  if ($line =~ /(Oremus|Let us pray|Könyörögjünk)/) {	
+	  if ($line =~ /(Oremus|Let us pray|KÃ¶nyÃ¶rÃ¶gjÃ¼nk)/) {	
         push(@o, "jjj0 $line");  
         push(@o, 'jjj0');
 		next; 
@@ -707,8 +711,9 @@ sub voicepsalm {
   $psalmfolder = ($accented =~ /plane/i) ? 'psalms' : 'psalms1';   
   $fname=checkfile($lang, "$psalmfolder/Psalm$psnum.txt");
 
-  if (open(INP, $fname)) {
-	  while ($line = <INP>) {
+  my @lines;
+  if (@lines = do_read($fname)) {
+	  foreach $line ( @lines ) {
       if ($line =~ /^\s*([0-9]+)\:([0-9]+)/) {$v = $2;}
       elsif ($line =~ /^\s*([0-9]+)/) {$v = $1;}
       if ($v < $v1) {next;}
@@ -718,7 +723,6 @@ sub voicepsalm {
       $line =~ s/(\(.*?\))//g;
       $t .= $line;
 	}
-    close INP; 		
     if ($psnum != 210 && $nogloria == 0) {$t .= Gloria($lang);} 
 	return $t;
   }
@@ -729,7 +733,7 @@ sub voicepsalm {
 # do nothing is $voice is not set (no speak mode, SAPI5 is not installed)
 # stops the voice if any
 # speaks the voice, lines alternately, if $vocename1 =~ /$voicename2/i
-# if $voicelang latin then changes ae|oe to é and s to sz for hungarian voice
+# if $voicelang latin then changes ae|oe to Ã© and s to sz for hungarian voice
 sub speakit {       
   if (!$voice) {return;}
   my $text = shift;       
@@ -790,10 +794,8 @@ sub speakit {
     if ($t[$i] =~ /\{\:(.*?)\:\}/) {
 	    $tfile = $1;      
  	    $texttone = '';
-	    if ($tfile =~ /[a-z0-9]/ && open (INP, "$datafolder/tones/$tfile.txt")) {
-		   my $line;
-		   while ($line = <INP>) {$texttone .= $line;};
-	      close INP;
+	    if ($tfile =~ /[a-z0-9]/ && (@lines = do_read("$datafolder/tones/$tfile.txt"))) {
+		   $texttone = join("\n", @lines);
 	      $psalmline = 0;  
       } 
 	  }
@@ -849,10 +851,10 @@ sub modify_voice {
   my $text = shift;
   my $voicename = shift;	
   if ($voicelang =~ /magyar/i) {  
-    if ($text =~ /[áéíóöõôúüûúÁÉÓÖÔÚÜÛ`]/ || length($text) <10 ||
-      $text =~ /(kyrie| az )/i) {
-	    $text =~ s/õ/öö/ig;
-      $text =~ s/û/üü/g;   
+    # TODO this doesn't work with Unicode, but it needs long accents anyway
+    if ( length($text) <10 || $text =~ /(kyrie| az )/i) {
+	    $text =~ s/Ãµ/Ã¶Ã¶/ig;
+      $text =~ s/Ã»/Ã¼Ã¼/g;   
       definevoicelang('Magyar');
 	  }else {definevoicelang('English');}
   }
@@ -871,16 +873,15 @@ sub modify_voice {
     $text =~ s/gn/gny/gi;
     $text =~ s/s/sz/ig;
   
-    #if ($text !~ /áéíóöõúüûÁÉÓÖÔÚÜÛ/) {$text = emphases($text);}
-    $text =~ s/á/a:/ig;
-    $text =~ s/é/e:/ig;
-    $text =~ s/í/i/ig;
-    $text =~ s/ó/o:/ig;
-    $text =~ s/ú/u:/ig;
-	  $text =~ s/Á/a:/ig;
-	  $text =~ s/É/e:/ig;
-	  $text =~ s/Ó/o:/ig;
-	  $text =~ s/Ú/u:/ig;
+    $text =~ s/Ã¡/a:/ig;
+    $text =~ s/Ã©/e:/ig;
+    $text =~ s/Ã­/i/ig;
+    $text =~ s/Ã³/o:/ig;
+    $text =~ s/Ãº/u:/ig;
+	  $text =~ s/Ã/a:/ig;
+	  $text =~ s/Ã‰/e:/ig;
+	  $text =~ s/Ã“/o:/ig;
+	  $text =~ s/Ãš/u:/ig;
  
     $text =~ s/([ao])(\:*)e/e$2/ig;
     $text =~ s/:([a-z])i/$1i/ig;	  
@@ -903,13 +904,13 @@ sub emphases {
 	my $flag = 0;
 	while ($l >= 0) { 
 	  my $s = substr($w, $l, 1);
-	  if ($s =~ /[aeioué]/i && substr($w, $l+1, 1) !~ /[aeioué]/i) {$flag++;}
+	  if ($s =~ /[aeiouÃ©]/i && substr($w, $l+1, 1) !~ /[aeiouÃ©]/i) {$flag++;}
 	  if ($flag == 2) {
-	    if ($s eq 'a') {$s = 'á';}
-	    if ($s eq 'e') {$s = 'é';}
-	    if ($s eq 'i') {$s = 'í';}
-	    if ($s eq 'o') {$s = 'ó';}
-	    if ($s eq 'u') {$s = 'ú';}
+	    if ($s eq 'a') {$s = 'Ã¡';}
+	    if ($s eq 'e') {$s = 'Ã©';}
+	    if ($s eq 'i') {$s = 'Ã­';}
+	    if ($s eq 'o') {$s = 'Ã³';}
+	    if ($s eq 'u') {$s = 'Ãº';}
 	    substr($w, $l, 1) = $s;
 	  }
       $l--;

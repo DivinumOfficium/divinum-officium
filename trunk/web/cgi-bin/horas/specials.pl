@@ -1,5 +1,7 @@
 #!/usr/bin/perl
-# ·ÈÌÛˆı˙¸˚¡…Ê á
+use utf8;
+# vim: set encoding=utf-8 :
+
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office fills the chapters from ordinarium
@@ -29,9 +31,9 @@ sub specials {
   if (exists($w{"Special $hora$i"})) {return loadspecial($w{"Special $hora$i"});}
 
   our @s = @$s;
-  @t = splice(@t, @t);	 
+  @t = ();
   foreach (@s) {push (@t, $_);}
-  @s = splice(@s, @s);
+  @s = ();
   $skipflag = 0;			
   $tind = 0;
 
@@ -701,7 +703,7 @@ sub psalmi_minor {
   } 
 
   if ($ant =~ /\;\;/) {$ant = $`;}
-  if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[u˙][ij]a[\.\,]*[)]*//ig;}
+  if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[u√∫][ij]a[\.\,]*[)]*//ig;}
   if ($ant && $ant !~ /^Ant/i) {$ant = "Ant. $ant";}
 
   my @ant = split( '\*', $ant);
@@ -915,9 +917,9 @@ sub antetpsalm {
       
 
   $ant1 =~ s/\;\;[0-9\;n]+//;
-  if ($dayname[0] !~ /Pasc/i) {$ant1 =~ s/\(Allel[u˙][ij]a.*?\)//isg;}
-  else {$ant1 =~ s/\((Allel[u˙][ij]a.*?)\)/$1/isg;}
-  if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[u˙][ij]a[\.\,]*[)]*//ig;}
+  if ($dayname[0] !~ /Pasc/i) {$ant1 =~ s/\(Allel[u√∫][ij]a.*?\)//isg;}
+  else {$ant1 =~ s/\((Allel[u√∫][ij]a.*?)\)/$1/isg;}
+  if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[u√∫][ij]a[\.\,]*[)]*//ig;}
   if ($ant1) {push (@s, "Ant. $ant1");}
   my $p = $line[1];
   my @p = split(';', $p);
@@ -933,9 +935,9 @@ sub antetpsalm {
   if ($ant) {
     $ant =~ s/\;\;[0-9\;n]+//;
     push (@s, '_');
-    if ($dayname[0] !~ /Pasc/i) {$ant =~ s/\(Allel[u˙][ij]a.*?\)//isg;}
-	else {$ant =~ s/\((Allel[u˙][ij]a.*?)\)/$1/isg;}
-    if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[u˙][ij]a[\.\,]*[)]*//ig;}
+    if ($dayname[0] !~ /Pasc/i) {$ant =~ s/\(Allel[u√∫][ij]a.*?\)//isg;}
+	else {$ant =~ s/\((Allel[u√∫][ij]a.*?)\)/$1/isg;}
+    if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[u√∫][ij]a[\.\,]*[)]*//ig;}
     push (@s, "Ant. $ant");
   }
   push (@s, "\n");
@@ -1543,7 +1545,7 @@ sub getantvers {
   #if (!$w && $ind != 2) {($w, $c) = getproprium("$item 2", $lang, 1, 1);} 
   #if (!$w && $ind == 2) {($w, $c) = getproprium("$item 3", $lang, 1, 1);}
   #if (!$w && $ind == 2) {($w, $c) = getproprium("$item 1", $lang, 1, 1);}
-  if ($w && $dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[u˙][ij]a[\.\,]*[)]*//ig;}
+  if ($w && $dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[u√∫][ij]a[\.\,]*[)]*//ig;}
   if ($w) {return ($w, $c);}  
 					 
   #handle seant
@@ -1556,7 +1558,7 @@ sub getantvers {
   }
 
   $w = getfrompsalterium($item, $ind, $lang);
-  if ($w && $dayname[0] =~ /Quad/i) {$w =~ s/allel[u˙][ij]a[\.\,]*//ig;}
+  if ($w && $dayname[0] =~ /Quad/i) {$w =~ s/allel[u√∫][ij]a[\.\,]*//ig;}
 
 
   if ($w) {setbuild2("$item $ind ex Psalterio");}
@@ -1572,11 +1574,8 @@ sub getseant {
   my $ver = ($version =~ /monastic/i) ? 'M' : ($version =~ /1570/i) ? '1570' : ($version =~ /Trid/i) ? '1910' : 
     ($version =~ /Newcal/) ? 'Newcal' : ($version =~ /1960/) ? '1960' : 'DA';
 
-  if (open(INP, "$datafolder/Latin/Tabulae/Str$ver$year.txt")) { 
-    my $str = '';
-	my $line;
-	while ($line = <INP>) {$str .= $line;}
-	close INP;	  
+  if (my @a = do_read("$datafolder/Latin/Tabulae/Str$ver$year.txt")) { 
+    my $str = join('', @a);
 	$str =~ s/\=/;;/g;
 	$str =~ s/\s*//g;		  
 	my %c = split(';;', $str);	 
@@ -1694,11 +1693,11 @@ sub setalleluia {
      if ($capit[$i] =~ /^V\./ && $flag == 3) {$flag = 4; next;}
 	 if ($capit[$i] =~ /^\&Gloria/i) {$capit[$i] = "$`\&Gloria1$'"; $flag = 2; next;}
      if ($flag == 0) {next;}
-     if ($capit[$i] =~ /(allel[u˙][ij]a)/i || $capit[$i] !~ /[RV]\./i) {next;}
+     if ($capit[$i] =~ /(allel[u√∫][ij]a)/i || $capit[$i] !~ /[RV]\./i) {next;}
      $capit[$i] = chompd($capit[$i]);  
      if ($flag == 4) {$capit[$i] = 'R. Alleluia, alleluia'; $flag = 3;}
-	 elsif ($flag > 1 && $capit[$i] !~ /allel[u˙][ij]a/i) {$capit[$i] .= " alleluia, alleluia\n";}
-     elsif ($capit[$i] !~ /allel[u˙][ij]a/i)  {$capit[$i] .= " alleluia.\n";}
+	 elsif ($flag > 1 && $capit[$i] !~ /allel[u√∫][ij]a/i) {$capit[$i] .= " alleluia, alleluia\n";}
+     elsif ($capit[$i] !~ /allel[u√∫][ij]a/i)  {$capit[$i] .= " alleluia.\n";}
      if ($flag == 2) {$flag = 1;}
   }
   return @capit;
@@ -1743,7 +1742,7 @@ sub doxology {
   }
   
   if (!$hymn) {return ($dox, $dname);}
-  if ($dox && $hymn =~ /\n\s*\*.*?[A¡]men/si) {$hymn = "$`\n$dox";} 
+  if ($dox && $hymn =~ /\n\s*\*.*?[A√Å]men/si) {$hymn = "$`\n$dox";} 
   return $hymn;
 }
 
@@ -1936,7 +1935,7 @@ sub replaceNdot {
  }		 	  		  
  if ($name) {
    $name =~ s/[\r\n]//g;
-   $s =~ s/N\. (et|and|Ès) N\./$name/;
+   $s =~ s/N\. (et|and|√©s) N\./$name/;
    $s =~ s/N\./$name/;
  }	 
  return $s;

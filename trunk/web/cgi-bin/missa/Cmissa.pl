@@ -1,6 +1,8 @@
 #!/usr/bin/perl
+# vim: set encoding=utf-8 :
+use utf8;
 
-#áéíóöõúüûÁÉ
+#Ã¡Ã©Ã­Ã³Ã¶ÃµÃºÃ¼Ã»ÃÃ‰
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office
@@ -70,6 +72,7 @@ our $duplex; #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
 
 #*** collect standard items
 #require "ordocommon.pl";
+require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
@@ -78,6 +81,7 @@ require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
 require "$Bin/tfertable.pl";
 
+binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
 #get parameters

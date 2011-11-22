@@ -1,6 +1,7 @@
 #!/usr/bin/perl
+use utf8;
+# vim: set encoding=utf-8 :
 
-#·ÈÌÛˆı˙¸˚¡…
 # Name : Laszlo Kiss
 # Date : 02-01-2008
 # Show/edit files
@@ -30,6 +31,7 @@ our $communename = 'Commune';
 
 our $error = '';
 $debug = '';
+require "$Bin/do_io.pl";
 require "$Bin/webdia.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
@@ -37,6 +39,8 @@ require "$Bin/horas.pl";
 require "$Bin/check.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
 require "$Bin/tfertable.pl";
+
+binmode(STDOUT, ':encoding(utf-8)');
 
 $q = new CGI;
 
@@ -142,10 +146,7 @@ if ($savesetup > 1 && $save && $folder1 !~ /program/i) {
 	  my $f1 = ($folder1 =~ /tones/) ? $folder1 : "$lang1/$folder1";
     if ( $ENV{DIVINUM_OFFICIUM_SAVE} )
     {
-    if (open(OUT, ">$datafolder/$f1/$filename1.txt")) {
-        binmode OUT;
-        print OUT $newtext;
-	      close OUT;         
+    if (do_write("$datafolder/$f1/$filename1.txt", $newtext)) {
       } else {$error = "$datafolder/$f1/$filename1.txt could not be saved!"}
     }
     else
@@ -198,7 +199,7 @@ if ($folder1) {
 
 #*** collect files for column2
 if ($lang2 !~ /(none|serach)/i) {
-  @files2 = splice(@files2, @files2);
+  @files2 = ();
   $flag = 0;
   $flag1 = 0;
 
@@ -241,22 +242,16 @@ $txlat = $txvern = '';
 $title = ($savesetup > 1 && $folder1 !~ /program/i) ? 'Edit' :'Show';
 $title .= " files";
 if ($skeleton) {$title = 'Skeleton';}
-@txlat = splice(@txlat, @txlat);
-@txvern = splice(@txvern, @txvern);
+
+@txlat = ();
+@txvern = ();
                                            
-  if (open(INP, "$dirname1/$filename1.$ext1")) {
-    @txlat = <INP>;
-    close INP;
-   } elsif ($folder1 =~ /program/ && open(INP, "$Bin/$filename1.$ext1")) {
-	   @txlat = <INP>;
-	   close INP;
-   } else {$error .= "$dirname1/$filename1.$ext1 " .
-      "or $Bin/$filename1 cannot open";}
+(@txlat = do_read("$dirname1/$filename1.$ext1"))                       or
+($folder1 =~ /program/ && (@txlat = do_read("$Bin/$filename1.$ext1"))) or
+($error .= "$dirname1/$filename1.$ext1 or $Bin/$filename1 cannot open")   ;
 
 if ($lang2 !~ /(none|search)/i) {
-  if (open(INP, "$dirname2/$filename2.txt")) {
-    @txvern = <INP>;
-    close INP;
+  if ( @txvern = do_read("$dirname2/$filename2.txt") ) {
   } else {$error .= "$dirname2/$filename2.txt cannot open";}
 } elsif ($lang2 =~ /search/i) {
    if (!$searchtext) {$searchtext = searchrut($sstring, $skey);}
@@ -415,14 +410,14 @@ if (!$skeleton) {
 
   $ln = ($edit1) ? "" : "<BR>";
   foreach $item (@txlat) {
-    $txlat .= "$item$ln";
+    $txlat .= "$item\n$ln";
   }
   
   
   $ln = ($edit1) ? "" : "<BR>";
   if (@txvern) {
     foreach $item (@txvern) {
-      $txvern .= "$item$ln";
+      $txvern .= "$item\n$ln";
     }
   }
   $pind1 = 1;
@@ -433,7 +428,7 @@ if (!$skeleton) {
   else {
      $txlat =~ s/TEXTAREA/TEXT\_AREA/g;
      print "<P ALIGN=CENTER>";
-     print "<TEXTAREA ROWS=$row1 $readonly COLS=$cols NAME=Lat0 WRAP=virtual $width" .
+     print "<TEXTAREA ROWS=$row1 $readonly COLS=\"$cols\" NAME=\"Lat0\" WRAP=virtual $width" .
       " STYLE={FONT-SIZE:120%;$disabled} onclick='changed1=1'>\n";
 	   print "$txlat";
      print "</TEXTAREA></P>\n";
@@ -739,7 +734,7 @@ sub adjust {
         $t[$i] =~ s/\[(.*?[\,\.\?\;]+.*?)\]/\($1\)/g;   #[...] to (...)
         $t[$i] =~ s/\s([\;\,\.\?\!])/$1/g;
       
-      } elsif ($lang =~ /magyar/i) { @t = accents(\@t);} #·ÈÌÛˆı˙¸˚¡…
+      } elsif ($lang =~ /magyar/i) { @t = accents(\@t);}
    }
   } 
 
@@ -794,28 +789,28 @@ sub accents {
   my $t = shift;
   my @t = @$t;
   for ($i=0; $i < @t; $i++) {
-    $t[$i] =~ s/a'/·/g;
-    $t[$i] =~ s/e'/È/g;
-    $t[$i] =~ s/i'/Ì/g;
-    $t[$i] =~ s/o'/Û/g;
-    $t[$i] =~ s/o:/ˆ/g;
-    $t[$i] =~ s/o"/ı/g;
-    $t[$i] =~ s/u'/˙/g;
-    $t[$i] =~ s/u:/¸/g;
-    $t[$i] =~ s/u"/˚/g;
-    $t[$i] =~ s/A'/¡/g;
-    $t[$i] =~ s/E'/…/g;
-    $t[$i] =~ s/O'/”/g;
-    $t[$i] =~ s/O:/÷/g;   
-    $t[$i] =~ s/O"/‘/g;   
-    $t[$i] =~ s/U'/⁄/g;
-    $t[$i] =~ s/U:/‹/g;
-    $t[$i] =~ s/U"/€/g;
+    $t[$i] =~ s/a'/√°/g;
+    $t[$i] =~ s/e'/√©/g;
+    $t[$i] =~ s/i'/√≠/g;
+    $t[$i] =~ s/o'/√≥/g;
+    $t[$i] =~ s/o:/√∂/g;
+    $t[$i] =~ s/o"/√µ/g;
+    $t[$i] =~ s/u'/√∫/g;
+    $t[$i] =~ s/u:/√º/g;
+    $t[$i] =~ s/u"/√ª/g;
+    $t[$i] =~ s/A'/√Å/g;
+    $t[$i] =~ s/E'/√â/g;
+    $t[$i] =~ s/O'/√ì/g;
+    $t[$i] =~ s/O:/√ñ/g;   
+    $t[$i] =~ s/O"/√î/g;   
+    $t[$i] =~ s/U'/√ö/g;
+    $t[$i] =~ s/U:/√ú/g;
+    $t[$i] =~ s/U"/√õ/g;
 
     					 
-	$t[$i] =~ s/&#337;/ı/g;
-    $t[$i] =~ s/&#369;/˚/g;
- } #·ÈÌÛˆı˙¸˚¡…	
+	$t[$i] =~ s/&#337;/√µ/g;
+    $t[$i] =~ s/&#369;/√ª/g;
+ }
  return @t;
 }
 
@@ -850,10 +845,8 @@ sub searchrut {
  foreach $fname (@files1) {
    my $filename = ($folder1 =~ /program/i) ?  "$Bin/$fname.pl" :
   	 "$datafolder/$lang1/$folder1/$fname.txt";
-   if (open(INP, $filename)) {
-     $text = '';
-     while ($line = <INP>) {$text .= $line;}     
-     close INP;   		
+   if ( @lines = do_read($filename)) {
+     $text = join('', @lines);
    } else {$error .= "$filename cannot open";}   
    my $num = 0;
    $casesense = 0;
@@ -995,56 +988,55 @@ sub deaccent {
 
   $w =~ s/[!@#$%&*()\-_=+,<.>?'";:0-9 ]//g; 
   
-  $w =~ s/·/a/g;
-  $w =~ s/È/e/g;
-  $w =~ s/Ì/i/g;
-  $w =~ s/Û/o/g;
-  $w =~ s/˙/u/g;
-  $w =~ s/¡/A/g;
-  $w =~ s/…/E/g;
-  $w =~ s/Õ/I/g;
-  $w =~ s/”/O/g;
-  $w =~ s/⁄/U/g;
-  $w =~ s/ae/Ê/g;
-  $w =~ s/·e/Ê/g;
-  $w =~ s/oe/ú/g;
-  $w =~ s/Ûe/ú/g;
-  $w =~ s/Ae/∆/g;
-  $w =~ s/¡e/∆/g;
-  $w =~ s/Oe/å/g; 
-  $w =~ s/”e/å/g;
-  $w =~ s/˝/y/g;
-  $w =~ s/([nraeiou·ÈÌÛˆı˙¸˚¡…”÷‘⁄‹€])i([aeiou·ÈÌÛˆı˙¸˚¡…”÷‘⁄‹€])/$1j$2/ig;
-  $w =~ s/^i([aeiouAEIOU·ÈÌÛˆı˙¸˚¡…”÷‘⁄‹€])/j$1/g; 
-  $w =~ s/^I([aeiouAEIOU·ÈÌÛˆı˙¸˚¡…”÷‘⁄‹€])/J$1/g; 
+  $w =~ s/√°/a/g;
+  $w =~ s/√©/e/g;
+  $w =~ s/√≠/i/g;
+  $w =~ s/√≥/o/g;
+  $w =~ s/√∫/u/g;
+  $w =~ s/√Å/A/g;
+  $w =~ s/√â/E/g;
+  $w =~ s/√ç/I/g;
+  $w =~ s/√ì/O/g;
+  $w =~ s/√ö/U/g;
+  $w =~ s/ae/√¶/g;
+  $w =~ s/√°e/√¶/g;
+  $w =~ s/oe/≈ì/g;
+  $w =~ s/√≥e/≈ì/g;
+  $w =~ s/Ae/√Ü/g;
+  $w =~ s/√Åe/√Ü/g;
+  $w =~ s/Oe/≈í/g; 
+  $w =~ s/√ìe/≈í/g;
+  $w =~ s/√Ω/y/g;
+  $w =~ s/([nraeiou√°√©√≠√≥√∂√µ√∫√º√ª√Å√â√ì√ñ√î√ö√ú√õ])i([aeiou√°√©√≠√≥√∂√µ√∫√º√ª√Å√â√ì√ñ√î√ö√ú√õ])/$1j$2/ig;
+  $w =~ s/^i([aeiouAEIOU√°√©√≠√≥√∂√µ√∫√º√ª√Å√â√ì√ñ√î√ö√ú√õ])/j$1/g; 
+  $w =~ s/^I([aeiouAEIOU√°√©√≠√≥√∂√µ√∫√º√ª√Å√â√ì√ñ√î√ö√ú√õ])/J$1/g; 
   return $w;
 }
 
-#·ÈÌÛˆı˙¸˚¡…”÷‘⁄‹€
 sub putaccents {
   my $t = shift;
   $t =~ s/''/ '/;
   
-  $t =~ s/a'/·/g;
-  $t =~ s/e'/È/g;
-  $t =~ s/i'/Ì/g;
-  $t =~ s/o'/Û/g;
-  $t =~ s/o:/ˆ/g;
-  $t =~ s/o"/ı/g;
-  $t =~ s/u'/˙/g;
-  $t =~ s/u:/¸/g;
-  $t =~ s/u"/˚/g;
-  $t =~ s/A'/¡/g;
-  $t =~ s/E'/…/g;
-  $t =~ s/&#337;/ı/g;
-  $t =~ s/&#369;/˚/g;
-  $t =~ s/O'/”/g;
-  $t =~ s/O:'/÷/g;
-  $t =~ s/O:/‘/g;
-  $t =~ s/U'/⁄/g;
-  $t =~ s/U:/‹/g;
-  $t =~ s/U"/€/g;
-  $t =~ s/y'/˝/g;
+  $t =~ s/a'/√°/g;
+  $t =~ s/e'/√©/g;
+  $t =~ s/i'/√≠/g;
+  $t =~ s/o'/√≥/g;
+  $t =~ s/o:/√∂/g;
+  $t =~ s/o"/√µ/g;
+  $t =~ s/u'/√∫/g;
+  $t =~ s/u:/√º/g;
+  $t =~ s/u"/√ª/g;
+  $t =~ s/A'/√Å/g;
+  $t =~ s/E'/√â/g;
+  $t =~ s/&#337;/√µ/g;
+  $t =~ s/&#369;/√ª/g;
+  $t =~ s/O'/√ì/g;
+  $t =~ s/O:'/√ñ/g;
+  $t =~ s/O:/√î/g;
+  $t =~ s/U'/√ö/g;
+  $t =~ s/U:/√ú/g;
+  $t =~ s/U"/√õ/g;
+  $t =~ s/y'/√Ω/g;
 
   return $t;
 }	 
