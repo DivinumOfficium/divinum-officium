@@ -1637,7 +1637,8 @@ sub papal_antiphon_dum_esset($)
     
     # Find which season we're in.
     my $vesp_or_comp = ($hora =~ /Vespera/i) || ($hora =~ /Completorium/i);
-    ($_) = split('=', getweek($vesp_or_comp), 1);
+    ($_) = split('=', getweek($vesp_or_comp));
+    warn $_;
     $conditional_values{'season'} = $conditional_values{
       /^Adv/ ?
         ($month == 12 && $day >= 17) ? 'S_ADVENT_GOLDEN' : 'S_ADVENT_A' :
