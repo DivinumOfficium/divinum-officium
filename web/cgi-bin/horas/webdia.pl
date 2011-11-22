@@ -1,6 +1,7 @@
 #!/usr/bin/perl
+use utf8;
+# vim: set encoding=utf-8 :
 
-#αινσφυϊόϋΑΙ ‡
 # Name : Laszlo Kiss
 # Date : 01-11-04
 # WEB dialogs
@@ -17,8 +18,8 @@ sub htmlHead {
   my $title = shift;
   my $flag = shift;
   if (!$title) {$title = ' ';}
-  print "Content-type: text/html; charset=ISO-8859-1\n\n"; 
-#  print "Content-type: text/html; charset=UTF-8\n\n"; 
+#  print "Content-type: text/html; charset=ISO-8859-1\n\n"; 
+  print "Content-type: text/html; charset=utf-8\n\n"; 
 
 
   print << "PrintTag";
@@ -135,21 +136,15 @@ sub setup {
         my $loadfile = strictparam('loadfile');
         if ($loadfile) {
           $loadfile =~ s/\.gen//;
-          if (open(INP, "$datafolder/gen/$loadfile.gen")) {
-            my @cm = <INP>;
-            close (INP);
-            $pv = '';
-            foreach(@cm) {$pv .= $_;} 
+          if (@cm = do_read("$datafolder/gen/$loadfile.gen")) {
+            $pv = join('', @cm);
           }
         }
  
         my $savefile = strictparam('savefile');
         if ($savefile) {
           $savefile =~ s/\.gen//;
-          if (open OUT, ">$datafolder/gen/$savefile.gen") {
-             print OUT $pv;
-	         close OUT;
-          }
+          do_write("$datafolder/gen/$savefile.gen", $pv);
         }
 
         $input .= "<TEXTAREA NAME=\'I$k\' ID=\'I$k\' COLS=$size[1] ROWS=$size[0]>$pv</TEXTAREA><BR>\n";

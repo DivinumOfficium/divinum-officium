@@ -1,5 +1,7 @@
 #!/usr/bin/perl
-# áéíóöõúüûÁÉæ
+use utf8;
+# vim: set encoding=utf-8 :
+
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office Matins subroutines
@@ -44,8 +46,8 @@ sub invitatorium {
   $ant = chompd($ant);
   $ant = "Ant. $ant";  
   
-  if ($dayname[0] =~ /Pasc/i && $ant !~ /allel[uú][ij]a/i) {$ant .= " Alleluia.";}
-  if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;} 
+  if ($dayname[0] =~ /Pasc/i && $ant !~ /allel[uÃº][ij]a/i) {$ant .= " Alleluia.";}
+  if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[uÃº][ij]a[\.\,]*[)]*//ig;} 
 
   my @ant = split('\*', $ant);
   $ant =~ s/\s*$//;
@@ -66,18 +68,17 @@ sub invitatorium {
     {$fname = checkfile($lang, "Psalterium/Invitatorium4.txt");} 
 
 
-  if (open(INP, $fname)) {
-    my @a = <INP>;
-    close INP;
+  if (my @a = do_read($fname)) {
     
-    foreach $item (@a) {
+    foreach $item ( @a ) {
+      $item = "$item\n";
       if ($item =~ /\$ant2/i) {$item = "$ant2";}
       elsif ($item =~ /\$ant/i) {$item = "$ant";}  
       elsif ($item =~ /\(\*(.*?)\*(.*?)\)/) {$item = $` . setfont($smallfont, "($1) ") . $2 . $';}
 
       if ($dayname[0] =~ /Quad[56]/i && $winner !~ /Sancti/i && $rule !~ /Gloria responsory/i)
         {$item =~ s/\&Gloria/\&Gloria2/i;}
-      push (@s, $item);
+      push (@s, "$item");
     }    
   } else {$error .= "$fname cannnot open";}
 }
@@ -862,9 +863,9 @@ sub lectio {
     $w .= "$item\n";	
   }                                      
             
-  if ($dayname[0] !~ /Pasc/i) {$w =~ s/\(Allel[uú][ij]a.*?\)//isg;}
-  else {$w =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;}
-  if ($dayname[0] =~ /Quad/i) {$w =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;} 
+  if ($dayname[0] !~ /Pasc/i) {$w =~ s/\(Allel[uÃº][ij]a.*?\)//isg;}
+  else {$w =~ s/\((Allel[uÃº][ij]a.*?)\)/$1/isg;}
+  if ($dayname[0] =~ /Quad/i) {$w =~ s/[(]*allel[uÃº][ij]a[\.\,]*[)]*//ig;} 
 
   #handle parentheses in English
   if ($lang =~ /(English|Magyar)/i) {  
@@ -1149,11 +1150,9 @@ sub initiarule {
 
   my $ver = ($version =~ /monastic/i) ? 'M' : ($version =~ /1570/i) ? '1570' : ($version =~ /Trid/) ? '1910' : 
     ($version =~ /1960/) ? '1960' : 'DA';
-  if ($num < 4 && $version !~ /monastic/i && open(INP, "$datafolder/Latin/Tabulae/Str$ver$year.txt")) {
-      my $str = '';
-      $file = '';
-      while ($line = <INP>) {$str .= chompd($line);}
-      close(INP);
+  my @lines;
+  if ($num < 4 && $version !~ /monastic/i && (@lines = do_read("$datafolder/Latin/Tabulae/Str$ver$year.txt"))) {
+      my $str = join('', @lines);
       $str =~ s/\=/\;\;/g;   
       my %str = split(';;', $str);      
       my $key = sprintf("%02i-%02i",$month, $day);  

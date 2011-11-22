@@ -1,5 +1,7 @@
 #!/usr/bin/perl
-# αινσφυϊόϋΑΙ
+use utf8;
+# vim: set encoding=utf-8 :
+
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office
@@ -12,9 +14,7 @@ sub check {
   my @r;
                               
   my $rname = ($version =~ /monastic/i) ? 'rulerM' : 'ruler';
-  if (open (INP, "$datafolder/$rname.txt")) {
-     @r = <INP>;
-    close INP;
+  if (@r = do_read("$datafolder/$rname.txt")) {
   } else {return "$datafolder/ruler.txt cannot open";}
 
   my $errs = '';                      

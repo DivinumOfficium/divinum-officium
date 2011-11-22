@@ -1,6 +1,8 @@
 #!/usr/bin/perl
+# vim: set encoding=utf-8 :
+use utf8;
 
-#áéíóöõúüûÁÉ
+#Ã¡Ã©Ã­Ã³Ã¶ÃµÃºÃ¼Ã»ÃÃ‰
 # Name : Laszlo Kiss
 # Date : 02-01-2008
 # Show/edit files
@@ -30,12 +32,14 @@ our $missa = 1;
 
 our $error = '';
 $debug = '';
+require "$Bin/../horas/do_io.pl";
 require "$Bin/webdia.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/ordo.pl";
 require "$Bin/mcheck.pl";
 require "$Bin/tfertable.pl";
 require "$Bin/../horas/horascommon.pl";
+binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
 #*** collect parameters
@@ -126,10 +130,7 @@ if ($savesetup > 1 && $save && $folder1 !~ /program/i) {
 	  my $f1 = ($folder1 =~ /tones/) ? $folder1 : "$lang1/$folder1";
     if ( $ENV{DIVINUM_OFFICIUM_CAN_SAVE} )
     {
-    if (open(OUT, ">$datafolder/$f1/$filename1.txt")) {
-        binmode OUT;
-        print OUT $newtext;
-	      close OUT;         
+    if (do_write("$datafolder/$f1/$filename1.txt", $newtext)) {
       } else {$error = "$datafolder/$f1/$filename1.txt could not be saved"}
     }
     else
@@ -221,19 +222,16 @@ $title .= " files";
 @txlat = splice(@txlat, @txlat);
 @txvern = splice(@txvern, @txvern);
                                       
-  if (open(INP, "$dirname1/$filename1.$ext1")) {
-    @txlat = <INP>;
-    close INP;
-   } elsif ($folder1 =~ /program/ && open(INP, "$Bin/$filename1.$ext1")) {
-	   @txlat = <INP>;
-	   close INP;
+  if (@txlat = do_read("$dirname1/$filename1.$ext1")) {
+       $_ = "$_\n" for @txlat;
+   } elsif ($folder1 =~ /program/ && (@txlat = do_read("$Bin/$filename1.$ext1")) {
+       $_ = "$_\n" for @txlat;
    } else {$error .= "$dirname1/$filename1.$ext1 " .
       "or $Bin/$filename1 cannot open";}
 
 if ($lang2 !~ /(none|search)/i) {
-  if (open(INP, "$dirname2/$filename2.txt")) {
-    @txvern = <INP>;
-    close INP;
+  if (@txvern = do_read("$dirname2/$filename2.txt")) {
+        $_ = "$_\n" for @txvern;
   } else {$error .= "$dirname2/$filename2.txt cannot open";}
 } elsif ($lang2 =~ /search/i) {
    if (!$searchtext) {$searchtext = searchrut($sstring, $skey);}
@@ -701,28 +699,28 @@ sub accents {
   my $t = shift;
   my @t = @$t;
   for ($i=0; $i < @t; $i++) {
-    $t[$i] =~ s/a'/á/g;
-    $t[$i] =~ s/e'/é/g;
-    $t[$i] =~ s/i'/í/g;
-    $t[$i] =~ s/o'/ó/g;
-    $t[$i] =~ s/o:/ö/g;
-    $t[$i] =~ s/o"/õ/g;
-    $t[$i] =~ s/u'/ú/g;
-    $t[$i] =~ s/u:/ü/g;
-    $t[$i] =~ s/u"/û/g;
-    $t[$i] =~ s/A'/Á/g;
-    $t[$i] =~ s/E'/É/g;
-    $t[$i] =~ s/O'/Ó/g;
-    $t[$i] =~ s/O:/Ö/g;   
-    $t[$i] =~ s/O"/Ô/g;   
-    $t[$i] =~ s/U'/Ú/g;
-    $t[$i] =~ s/U:/Ü/g;
-    $t[$i] =~ s/U"/Û/g;
+    $t[$i] =~ s/a'/Ã¡/g;
+    $t[$i] =~ s/e'/Ã©/g;
+    $t[$i] =~ s/i'/Ã­/g;
+    $t[$i] =~ s/o'/Ã³/g;
+    $t[$i] =~ s/o:/Ã¶/g;
+    $t[$i] =~ s/o"/Ãµ/g;
+    $t[$i] =~ s/u'/Ãº/g;
+    $t[$i] =~ s/u:/Ã¼/g;
+    $t[$i] =~ s/u"/Ã»/g;
+    $t[$i] =~ s/A'/Ã/g;
+    $t[$i] =~ s/E'/Ã‰/g;
+    $t[$i] =~ s/O'/Ã“/g;
+    $t[$i] =~ s/O:/Ã–/g;   
+    $t[$i] =~ s/O"/Ã”/g;   
+    $t[$i] =~ s/U'/Ãš/g;
+    $t[$i] =~ s/U:/Ãœ/g;
+    $t[$i] =~ s/U"/Ã›/g;
 
     					 
-	$t[$i] =~ s/&#337;/õ/g;
-    $t[$i] =~ s/&#369;/û/g;
- } #áéíóöõúüûÁÉ	
+	$t[$i] =~ s/&#337;/Ãµ/g;
+    $t[$i] =~ s/&#369;/Ã»/g;
+ } #Ã¡Ã©Ã­Ã³Ã¶ÃµÃºÃ¼Ã»ÃÃ‰	
  return @t;
 }
 
@@ -757,10 +755,7 @@ sub searchrut {
  foreach $fname (@files1) {
    my $filename = ($folder1 =~ /program/i) ?  "$Bin/$fname.pl" :
   	 "$datafolder/$lang1/$folder1/$fname.txt";
-   if (open(INP, $filename)) {
-     $text = '';
-     while ($line = <INP>) {$text .= $line;}     
-     close INP;   		
+   if ($text = join('\n', do_read($filename))) {
    } else {$error .= "$filename cannot open";}   
    my $num = 0;
    if (!$skey) {while (($casesense && $text =~ /$search/g) ||
@@ -829,12 +824,12 @@ sub prefetchL {
   $t =~ s/&#509;/ae/g;
   
   $t =~ s/Oratio Dominica/Aratio Dominica/ig;
-  $t =~ s/Per\s+Dóminum[\.]*/\n\$Per Dominum\n/igs;
+  $t =~ s/Per\s+DÃ³minum[\.]*/\n\$Per Dominum\n/igs;
   $t =~ s/(Introitus|Oratio|Graduale|Sequentia|Offertorium|Secreta|Communio|Postcommunio|Super populum)[\.]*/\n[$1]\n/ig;
-  $t =~ s/Léctio/\[Lectio\]\nLéctio/g;
-  $t =~ s/Sequéntia/\[Evangelium\]\nSequéntia ++/;
+  $t =~ s/LÃ©ctio/\[Lectio\]\nLÃ©ctio/g;
+  $t =~ s/SequÃ©ntia/\[Evangelium\]\nSequÃ©ntia ++/;
   $t =~ s/([a-z]+)\..*?([0-9]+),\s/\n!$1 $2:/ig;
-  $t =~ s/Glória\s*Patri\./\n\&Gloria\n/g;
+  $t =~ s/GlÃ³ria\s*Patri\./\n\&Gloria\n/g;
   $t =~ s/Ps\.\s*/Ps /igs;
   $t =~ s/Aratio Dominica/Oratio Dominica/ig;
   $t =~ s/\[Super populum\]/[Super populum]\n!Oratio super populum/;

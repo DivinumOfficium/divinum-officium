@@ -1,6 +1,8 @@
 #!/usr/bin/perl
+# vim: set encoding=utf-8 :
+use utf8;
 
-#·ÈÌÛˆı˙¸˚¡…
+#√°√©√≠√≥√∂√µ√∫√º√ª√Å√â
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office   popup
@@ -34,8 +36,11 @@ require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/ordo.pl";
 #require "$Bin/ordocommon.pl";
+require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/tfertable.pl";
+
+binmode(STDOUT, ':encoding(utf-8)');
 
 #*** get parameters
 getini('missa'); #files, colors
@@ -114,10 +119,7 @@ sub gettext {
   my $text = ''; 
 
   my $fname = checkfile($lang, "Ordo/$popup.txt");
-  if (open (INP, $fname)) {
-    my $line;
-	while ($line = <INP>) {$text .= $line;}
-	close INP;
+  if ($text = join('\n', do_read($fname))) {
   } else {$text = "$datafolder/$lang/Ordo/$popup.txt cannot open!";}
   
 
