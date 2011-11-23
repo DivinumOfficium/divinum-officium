@@ -34,7 +34,7 @@ my $rank;
 while ( my $line = <> )
 {
     chomp $line;
-    eval { $line = $convert->decode($line, Encode::FB_CROAK) }
+    eval { $line = $convert->decode($line, Encode::FB_CROAK); 1 }
         or die "transcribe: input not UTF-8 on line $.\n";
     unless ( $rule || $rank || $line =~ /^ *[!&#\$\@\[]/ )
     {
