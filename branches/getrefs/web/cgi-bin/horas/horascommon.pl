@@ -1684,6 +1684,12 @@ sub papal_antiphon_dum_esset($)
     $conditional_values{'year'} = $year;
     $conditional_values{'month'} = $month;
     $conditional_values{'day'} = $day;
+    
+    # Check whether we have a common of Popes, as distinct from Martyr-
+    # and Confessor-Bishops. If at some point calendars are decoupled
+    # from rubric sets, the year should also be tested.
+    $conditional_values{'HaveCommonOfPopes'} =
+      ($conditional_values{'rubricset'} >= $conditional_values{'R_DIVINO_AFFLATU'});
   }
   
   
