@@ -304,13 +304,14 @@ sub do_inclusion_substitutions(\$$)
 sub get_loadtime_inclusion(\%$$$$$$)
 {
   my ($sections, $basedir, $lang, $fname, $section, $substitutions, $callerfname) = @_;
-  my $inclfile = get_file_for_inclusion($basedir, $lang, $fname);
   
   # Adjust offices of martyrs in Paschaltide to use the special common.
   if ($dayname[0] =~ /Pasc/i && !$missa && $callerfname !~ /C[23]/)
   {
     $fname =~ s/(C[23])(?!p)/$1p/g;
   }
+  
+  my $inclfile = get_file_for_inclusion($basedir, $lang, $fname);
   
   # Point to antiphon-and-versicleless version of the commemoration of
   # St Peter or St Paul under 1960 rubrics. TODO: Use data-file
