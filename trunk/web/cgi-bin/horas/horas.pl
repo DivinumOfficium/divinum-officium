@@ -565,7 +565,7 @@ sub psalm {
 
 
 #*** getantcross($psalmline, $antline)
-# set a	DOUBLE DAGGER sign if psalmline matches antline
+# set a	‡ sign if psalmline matches antline
 # eliminating accents and pintuation 
 sub getantcross {
   my $psalmline = shift;
@@ -580,7 +580,7 @@ sub getantcross {
   $antline = ''; 
 
   while ($aind < @antline) {
-    if ($pind >= @psalmline) { return "$psalmline1 " . setfont($redfont, "\x{2021} ");}
+    if ($pind >= @psalmline) { return "$psalmline1 " . setfont($redfont, "\x{2021}");}
 	my $item1 = $psalmline[$pind];
 	$pind++;
 	$item1 = depunct($item1);

@@ -43,7 +43,7 @@ while ( my $line = <> )
         my $prefix = $1 ? $1 : '';
         my $words = $2;
 
-        my @words = split(/([^a-zA-Z]+)/, $words);
+        my @words = split(/([^\pL]+)/, $words);
 
         my $n = 0;
         for my $word ( @words )
@@ -53,8 +53,16 @@ while ( my $line = <> )
             next if $n == 0 && $word eq 'Absolutio';
             next if $n == 0 && $word eq 'Antiphona';
 
-            # Try unnormalized first.
+            # Denormalize accents but not case.
             # This handles the difference between María and mária.
+
+            $word =~ tr/áéíóúÁÉÍÓÚ/aeiouAEIOU/;
+            $word =~ s/[æǽ]/ae/g;
+            $word =~ s/[ÆǼ]/Ae/g;
+            $word =~ s/œ/oe/g;
+            $word =~ s/Œ/Oe/g;
+
+            # Try case specific first.
 
             if ( $table{$word} )
             {
