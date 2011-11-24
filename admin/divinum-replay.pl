@@ -146,7 +146,7 @@ foreach my $file ( @ARGV )
 
                 if ( $update )
                 {
-                    if ( open OUT, ">$file" )
+                    if ( open OUT, '>:encoding(utf-8)', "$file" )
                     {
                         my @now = localtime;
                         print OUT "DIVINUM OFFICIUM TEST CASE ". asctime(@now);
@@ -229,7 +229,6 @@ foreach my $file ( @ARGV )
                                     }
                                 }
                                 $_ = join('',@bits);
-                                $_ = "$_\n" unless /\n$/;
                             }
                         }
 
@@ -247,7 +246,6 @@ foreach my $file ( @ARGV )
                                     }
                                 }
                                 $_ = join('',@bits);
-                                $_ = "$_\n" unless /\n$/;
                             }
                         }
 
@@ -259,7 +257,7 @@ foreach my $file ( @ARGV )
                                 my $match = /<FONT COLOR=[^"]/ && !/COLOR=MAROON/ && !/HREF/;
                                 if ( $match == $ignore )
                                 {
-                                    $_ = "...\n"
+                                    $_ = "..."
                                 }
                             }
                         }
@@ -274,7 +272,7 @@ foreach my $file ( @ARGV )
                                     (/^<FONT COLOR="red"/ && !/Ant\.|\bV\.|\bR./);
                                 if ( $match == $ignore )
                                 {
-                                    $_ = "...\n"
+                                    $_ = "..."
                                 }
                             }
                         }
@@ -313,14 +311,14 @@ foreach my $file ( @ARGV )
                     my @new_slice = ();
                     for ( 0 .. $#new_result )
                     {
-                        push @new_slice, $_ if $new_result[$_] ne "...\n";
+                        push @new_slice, $_ if $new_result[$_] ne "...";
                     }
                     @new_result = @new_result[@new_slice];
 
                     my @old_slice = ();
                     for ( 0 .. $#old_result )
                     {
-                        push @old_slice, $_ if $old_result[$_] ne "...\n";
+                        push @old_slice, $_ if $old_result[$_] ne "...";
                     }
                     @old_result = @old_result[@old_slice];
 
