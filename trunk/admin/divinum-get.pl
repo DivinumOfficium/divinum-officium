@@ -219,7 +219,7 @@ while ( Date_to_Days($y1,$m1,$d1) <= Date_to_Days($y2,$m2,$d2) )
     {
         push @arglist, "command=pray$prayer";
         push @arglist, "version=$version" if $version;
-        push @arglist, "date=$date";
+        push @arglist, $entry =~ /Pofficium/? "date1=$date": "date=$date";
     }
     push @arglist, @cgi;
 

@@ -61,6 +61,8 @@ punctuation           presence and type of punctuation in text (-punctuation onl
 spacing               all white space (-spaces only)
 USAGE
 
+sub show_change($$);
+
 my $filter = '';
 my $update;
 my $new_base_url;
@@ -308,6 +310,7 @@ foreach my $file ( @ARGV )
                         }
                     }
 
+                    # Remove lines marked for deletion.
                     my @new_slice = ();
                     for ( 0 .. $#new_result )
                     {
@@ -343,7 +346,7 @@ foreach my $file ( @ARGV )
                                 chomp $new if $new;
                                 if ( defined $old && defined $new )
                                 {
-                                    print "CHANGED $old TO $new\n";
+                                    show_change($old, $new);
 
                                     # cf. /kalendar/ above
                                     last DIFF if 
@@ -423,4 +426,47 @@ sub convert($)
     }
 
     return split/\n/, $content;
+}
+
+sub show_change($$)
+{
+    my $old = shift;
+    my $new = shift;
+    if ( length($old) + length($new) > 100 )
+    {
+        # Subdivide long diffs into words: they're (usually) text.
+
+        my @old_words = split(/\b/, $old);
+        my @new_words = split(/\b/, $new);
+        my $diff = Algorithm::Diff->new(\@old_words, \@new_words);
+
+        # Collect the differences, suppressing long bits of sameness.
+
+        my $old_diff = '';
+        my $new_diff = '';
+
+        $diff->Base(0);
+        while ( $diff->Next() )
+        {
+            if ( $diff->Same() )
+            {
+                my @them = $diff->Items(1);
+                @them = (@them[0..3], ' ... ', @them[-4 .. -1]) if @them > 10;
+                my $them = join('', @them);
+
+                $old_diff .= $them;
+                $new_diff .= $them;
+            }
+            else
+            {
+                $old_diff .= join('', $diff->Items(1));
+                $new_diff .= join('', $diff->Items(2));
+            }
+        }
+        print "CHANGED $old_diff TO $new_diff\n";
+    }
+    else
+    {
+        print "CHANGED $old TO $new\n";
+    }
 }
