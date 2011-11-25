@@ -1,6 +1,8 @@
 #!/usr/bin/perl
+# vim: set encoding=utf-8 :
+use utf8;
 
-#áéíóöõúüûÁÉ ‡
+#Ã¡Ã©Ã­Ã³Ã¶ÃµÃºÃ¼Ã»ÃÃ‰ â€¡
 # Name : Laszlo Kiss
 # Date : 01-11-04
 # WEB dialogs
@@ -17,7 +19,7 @@ sub htmlHead {
   my $title = shift;
   my $flag = shift;
   if (!$title) {$title = ' ';}
-  print "Content-type: text/html; charset=ISO-8859-1\n\n"; 
+  print "Content-type: text/html; charset=utf-8\n\n"; 
 
 
   print << "PrintTag";
@@ -134,21 +136,13 @@ sub setup {
         my $loadfile = strictparam('loadfile');
         if ($loadfile) {
           $loadfile =~ s/\.gen//;
-          if (open(INP, "$datafolder/gen/$loadfile.gen")) {
-            my @cm = <INP>;
-            close (INP);
-            $pv = '';
-            foreach(@cm) {$pv .= $_;} 
-          }
+          $pv = join("\n", do_read("$datafolder/gen/$loadfile.gen"));
         }
  
         my $savefile = strictparam('savefile');
         if ($savefile) {
           $savefile =~ s/\.gen//;
-          if (open OUT, ">$datafolder/gen/$savefile.gen") {
-             print OUT $pv;
-	         close OUT;
-          }
+          do_write("$datafolder/gen/$savefile.gen", $pv);
         }
 
         $input .= "<TEXTAREA NAME=\'I$k\' ID=\'I$k\' COLS=$size[1] ROWS=$size[0]>$pv</TEXTAREA><BR>\n";
@@ -453,16 +447,32 @@ sub getcookie1 {
 
 #*** setcross($line)
 # changes +++, ++ + to crosses in the line
-sub setcross {
-  my $line = shift;	
-  my $csubst = "<IMG SRC=$htmlurl/cross3.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/\+\+\+/$csubst/g;  
-  $csubst = "<IMG SRC=$htmlurl/cross2.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/\+\+/$csubst/g;
-  $csubst = "<IMG SRC=$htmlurl/cross1.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/ \+ / $csubst /g;	 
+# Note: the subsitutions are different in the Misssa from the Horas.
+sub setcross
+{
+    my $line = shift;
+    if ( CGI::user_agent("BlackBerry") )
+    {
+        # Use a PLUS SIGN for everything.
+        my $csubst = "<span style='font-size:1.25em;color:red'>+</span>";
+        $line =~ s/\+\+\+/$csubst/g;
+        $line =~ s/\+\+/$csubst/g;
+        $line =~ s/ \+ / $csubst /g;
+    }
+    else
+    {
+        my $csubst = "<span style='font-size:1.25em;color:red'>&#x2628;</span>";
+        $line =~ s/\+\+\+/$csubst/g;
+        # Cross type 2: Latin cross (at the Gospel)
+        my $csubst = "<span style='font-size:1.25em;color:red'>&#x271D;</span>";
+        $line =~ s/\+\+/$csubst/g;
+        # cross type 1: Cross of Jerusalem
+        my $csubst = "<span style='font-size:1.25em;color:red'>&#x2629;</span>";
+        $line =~ s/ \+ / $csubst /g;
+        #$line =~ s/(\pL)\+(\pL)/$1&nbsp;$csubst&nbsp;$2/g;
+    }
 
-  return $line;
+    return $line;
 }
 
 #*** setcell($text1, $lang1);

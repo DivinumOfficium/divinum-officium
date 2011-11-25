@@ -1,6 +1,8 @@
 #!/usr/bin/perl
+# vim: set encoding=utf-8 :
+use utf8;
 
-#·ÈÌÛˆı˙¸˚¡…
+#√°√©√≠√≥√∂√µ√∫√º√ª√Å√â
 # Name : Laszlo Kiss
 # Date : 03-30-10
 # Sancta Missa
@@ -64,6 +66,7 @@ our $duplex; #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
 
 #*** collect standard items
 #require "$Bin/ordocommon.pl";
+require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
@@ -72,6 +75,7 @@ require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
 require "$Bin/tfertable.pl";
 
+binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
 #get parameters
@@ -174,7 +178,7 @@ $daycolor =   ($commune =~ /(C1[0-9])/) ? "blue" :
    ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" : 
    ($dayname[1] =~ /duplex/i) ? "red" : 
     "grey"; 
-$commentcolor = ($dayname[2] =~ /(Feria)/i) ? 'black' : (/Sabbato/i) ? 'blue' : 'maroon';
+$commentcolor = ($dayname[2] =~ /(Feria)/i) ? 'black' : ($dayname[2] =~ /Sabbato/i) ? 'blue' : 'maroon';
 $comment = ($dayname[2]) ? "<FONT COLOR=$commentcolor SIZE=-1><I>$dayname[2]</I></FONT>" : "";
 
 #prepare main pages

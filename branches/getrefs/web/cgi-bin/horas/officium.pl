@@ -1,6 +1,7 @@
 #!/usr/bin/perl
+use utf8;
+# vim: set encoding=utf-8 :
 
-#αινσφυϊόϋΑΙ
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office
@@ -63,6 +64,8 @@ our $communerule; # $commune{Rank}
 our $duplex; #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex 
              # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
 
+binmode(STDOUT,':encoding(utf-8)');
+
 #*** collect standard items
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
@@ -73,6 +76,7 @@ require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
 require "$Bin/tfertable.pl";
+require "$Bin/do_io.pl";
 
 $q = new CGI;
 
@@ -200,7 +204,7 @@ $daycolor =   ($commune =~ /(C1[0-9])/) ? "blue" :
    ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" : 
    ($dayname[1] =~ /duplex/i) ? "red" : 
     "grey"; 
-$commentcolor = ($dayname[2] =~ /(Feria)/i) ? 'black' : (/Sabbato/i) ? 'blue' : 'maroon';
+$commentcolor = ($dayname[2] =~ /(Feria)/i) ? 'black' : ($dayname[2] =~ /Sabbato/i) ? 'blue' : 'maroon';
 $comment = ($dayname[2]) ? "<FONT COLOR=$commentcolor SIZE=-1><I>$dayname[2]</I></FONT>" : "";
 
 #prepare main pages

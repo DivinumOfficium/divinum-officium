@@ -1,6 +1,7 @@
 #!/usr/bin/perl
+use utf8;
+# vim: set encoding=utf-8 :
 
-#αινσφυϊόϋΑΙ
 # Name : Laszlo Kiss
 # Date : 01-25-04
 # dialog/setup related subs
@@ -10,13 +11,10 @@ $a=4;
 #*** getini(file)
 # loads and interprets .ini file
 # the file consists of $var='value' lines
-sub getini {
-  my $file = shift;   
-  if (open(INP, "$Bin/$file.ini")) {
-    my @initfiles = <INP>;      
-    close INP;
-    foreach (@initfiles) { eval($_);}    
-  }
+sub getini
+{
+    my $file = shift;   
+    eval for do_read("$Bin/$file.ini")
 }
 
 #*** chompd($str) 
@@ -149,12 +147,10 @@ sub setupstring($$$%)
     $fullpath = checkfile($1, $fname);
   }
 
-  open(SETUP, $fullpath) or return '';
-  my @filelines = <SETUP>;
-  close SETUP;
+  my @filelines = do_read($fullpath) or return '';
   
   # Regex for matching section headers.
-  my $sectionregex = qr/^\s*\[([^\]]+)\]/;
+  my $sectionregex = qr/^\s*\[([\pL\pN_ #-]+)\]/i;
 
   my %sections;
   my $key = '__preamble';
@@ -167,9 +163,6 @@ sub setupstring($$$%)
   
   foreach my $line (@filelines)
   {
-    # Fix up line endings. TODO: Remove after UTF-8 support is merged.
-    $line = chompd($line);
-    
     # Check if we're entering a new conditional block. We do this even
     # if we're currently within an unsatisfied conditional, to allow
     # correct nesting.

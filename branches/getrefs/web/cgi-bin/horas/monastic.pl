@@ -1,6 +1,7 @@
 #!/usr/bin/perl
+use utf8;
+# vim: set encoding=utf-8 :
 
-#αινσφυϊόϋΑΙ
 # Name : Laszlo Kiss
 # Date : 01-25-08
 # horas common files to reconcile tempora & sancti
@@ -296,6 +297,7 @@ sub brevis_monastic {
 sub regula {
   my $lang = shift;        
 
+  my @a;
   my $t = setfont($largefont, "Regula") . "\n_\n";
   my $d = $day;
   my $l = leapyear($year);
@@ -303,9 +305,7 @@ sub regula {
 
   $fname = sprintf("%02i-%02i", $month, $d);
   if (!-e "$datafolder/Latin/Regula/$fname.txt") {	  
-    if (open (INP, "$datafolder/Latin/Regula/Regulatable.txt")) {
-	    my @a = <INP>;
-	    close INP;
+    if (@a = do_read("$datafolder/Latin/Regula/Regulatable.txt")) {
 	    my $a;
 	    my %a = undef;
 	    foreach $a (@a) {	 
@@ -318,25 +318,21 @@ sub regula {
 	  } else {return $t;}
   }
   $fname = checkfile($lang, "Regula/$fname.txt");   
-  if (open (INP, "$fname")) {
-    my @a = <INP>;	  
-    close INP;
+  if (@a = do_read($fname)) {
     foreach $line (@a) {
       if ($line =~ /^.*?\#/) {$line = $';}
       if ($line =~ /^\s*$/) {$line = "_$line";}
-	    $t .= $line;
+	    $t .= "$line\n";
     }
   }
 
   if (!$l && $fname =~ /02\-23/ ) {
     $fname = checkfile($lang, "Regula/02-24.txt");  
-    if (open (INP, "$fname")) {
-      my @a = <INP>;	  
-      close INP;
+    if (@a = do_read($fname)) {
       foreach $line (@a) {
         if ($line =~ /^.*?\#/) {$line = $';}
         if ($line =~ /^\s*$/) {$line = "_$line";}
-	      $t .= $line;
+	      $t .= "$line\n";
       }
     }
   }

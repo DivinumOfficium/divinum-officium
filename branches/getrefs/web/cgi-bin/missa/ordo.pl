@@ -1,5 +1,7 @@
 #!/usr/bin/perl
-# ·ÈÌÛˆı˙¸˚¡…  á
+# vim: set encoding=utf-8 :
+use utf8;
+# √°√©√≠√≥√∂√µ√∫√º√ª√Å√â  ‚Ä°
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office
@@ -37,8 +39,8 @@ $searchind = 0;
 ante_post('Ante');
 
 if ($rule =~ /Full text/i) {
-  @script1 = splice(@script1, @script1);
-  @script2 = splice(@script2, @script2);
+  @script1 = ();
+  @script2 = ();
   $rule = 'Prelude';
 }
 
@@ -59,7 +61,6 @@ if ($rule =~ /Post Missam/i) {
    $str = norubr1($str);
    push(@script2, split('_', $str));
 }
-
 
 while ($ind1 < @script1 || $ind2 < @script2) {
   ($text1, $ind1) = getunit(\@script1, $ind1);
@@ -312,12 +313,12 @@ sub Benedicamus_Domino {
 sub depunct {
   my $item = shift;
   $item =~ s/[\.\,\:\?\!\"\'\;\*]//g;
-  $item =~ s/[·¡]/a/g;
-  $item =~ s/[È…]/e/g;
-  $item =~ s/[ÌÌ]/i/g;
-  $item =~ s/[Ûˆı”÷‘]/o/g;
-  $item =~ s/[˙¸˚⁄‹€]/u/g;	  
-  $item =~ s/Ê/ae/g;
+  $item =~ s/[√°√Å]/a/g;
+  $item =~ s/[√©√â]/e/g;
+  $item =~ s/[√≠√≠]/i/g;
+  $item =~ s/[√≥√∂√µ√ì√ñ√î]/o/g;
+  $item =~ s/[√∫√º√ª√ö√ú√õ]/u/g;	  
+  $item =~ s/√¶/ae/g;
   return $item;
 }
 
@@ -347,10 +348,8 @@ sub translate {
 sub getordinarium {
   my $lang = shift; 
   
-  my @script = splice(@script, @script); 
-  if ($Propers && open(INP, "$datafolder/Latin/Ordo/Propers.txt")) {
-    @script = <INP>;
-	close INP; 
+  my @script;
+  if ($Propers && (@script = do_read("$datafolder/Latin/Ordo/Propers.txt"))) {
 	return @script;  
   }
   
@@ -358,9 +357,8 @@ sub getordinarium {
   if ($version =~ /(1967|Newcal)/i) {$fname = 'Ordo67';}
   if ($NewMass) {$fname = ($column == 1) ? $ordos{$version1} : $ordos{$version2}; }
   $fname = checkfile($lang, "Ordo/$fname.txt"); 
-  if (open(INP, $fname)) {
-    @script = <INP>;
-    close INP; 
+  if (@script = do_read($fname)) {
+    $_ = "$_\n" for @script;
   } else {$error = "$fname cannot open!";}
   return @script;
 }
