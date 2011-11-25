@@ -178,8 +178,6 @@ sub oratio {
      if ($w) {setbuild2("$type Dominica");}
   }
 
-  $w = getreference($w, $lang);	 
-
   if (!$w) {$w = 'Oratio missing';}
                       
   if (($version =~ /1960/ || "$month$day" =~ /1102/) && $w =~ /\&psalm\([0-9]+\)\s*\_\s*/i) 
@@ -396,12 +394,7 @@ sub getcommemoratio {
 	$o = papal_prayer($lang, $plural, $class, $name, $type);
   } 
   if (!$o) {return '';}
-  
-  #sub unica concl
-  if ($o && $version =~ /1960/ && $w{Rule} =~ /sub unica conc/i) 
-    {$o =~ s/Commemoratio4/Commemoratio4r/} 
-  $o = getreference($o, $lang); 
-  
+
   $w = "! Commemoratio $rank[0]\nv. $o\n";   
   return $w;
 }
@@ -645,20 +638,6 @@ sub getrefs {
  return $w;
 }
 
-#*** getreference($str, $lang)
-# checks for @... reference
-# returns the expanded text
-sub getreference {
-  my $str = shift;
-  my $lang = shift;       
-  if ($str =~ /\@([a-z0-9 \/\-\:]+)/i) {
-    my $key = $1;        
-    my @key = split(':', $key);    
-    my %v = %{setupstring($datafolder, $lang, "$key[0].txt")};
-    $str=~ s/\@([a-z0-9 \/\-\:]+)/$v{$key[1]}/i; 
-  }
-  return $str;
-}
 
 #*** loadspecial($str)
 # removes second part of antifones for non 1960 versions
@@ -882,10 +861,10 @@ sub graduale {
 
   $t = getitem('Graduale', $lang);
   if (exists($winner{Sequentia})) {$t .= "_\n!!Sequentia\n" . 
-    getreference(getitem('Sequentia', $lang), $lang);}
+    getitem('Sequentia', $lang);}
   elsif ($communerule =~ /Sequentia/i && exists($commune{Sequentia})) {
     my %c = columnsel($lang) ? %commune : %commune2;
-	$t .= "_\n!!Sequentia\n" . getreference($c{Sequentia}, $lang);
+	$t .= "_\n!!Sequentia\n" . $c{Sequentia};
   }
   return $t;
 }

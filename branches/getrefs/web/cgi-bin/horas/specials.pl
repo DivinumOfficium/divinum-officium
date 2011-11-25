@@ -264,9 +264,8 @@ sub specials {
            {($wr, $cr) = getproprium("$hmn Vespera 3", $lang, $seasonalflag, 1);}
          if (!$wr) {($wr, $cr) = getproprium("$hmn $hora", $lang, $seasonalflag, 1);}
          $w =~ s/\s*$//;  	
-                 
-         $wr = getreference($wr, $lang);   
-         if (!$wr) {$wr = $hymn;}
+
+         $wr ||= $hymn;
 
          if ($wr) {$w .= "\n_\n!$hymntrans\n$wr";} 
        }
@@ -1028,11 +1027,6 @@ sub oratio
         if ($w) {setbuild2("Oratio Dominica");}
     }
 
-    #sub unica concl
-    if ($version =~ /1960/ && $rule =~ /sub unica conc/i && $hora =~ /(laudes|vespera)/i) 
-    {$w =~ s/Commemoratio4/Commemoratio4r/;} 
-    $w = getreference($w, $lang);	 
-
     #* deletes added commemoratio
     if (($w =~ /!commemoratio/i && $hora !~ /(laudes|vespera)/i) ||
     ($hora =~ /laudes/i && $w =~ /!commemoratio/i && $w =~ /(precedenti|sequenti)/i)) {
@@ -1336,11 +1330,6 @@ sub getcommemoratio {
   }
   if (!$o) {return '';}
 
-  #sub unica concl
-  if ($o && $version =~ /1960/ && $w{Rule} =~ /sub unica conc/i) 
-    {$o =~ s/Commemoratio4/Commemoratio4r/} 
-  $o = getreference($o, $lang);   
-                               
   my $a = $w{"Ant $ind"};	
   if (!$a) {$i = 4 - $ind; $a = $w{"Ant $i"};}
   if (!$a) {$a = $c{"Ant $ind"};}   
@@ -1392,7 +1381,6 @@ sub vigilia_commemoratio {
   if ($w{Rank} =~ /Vigilia/i) {$w = $w{Oratio};}
   elsif (exists($w{'Oratio Vigilia'})) {$w = $w{'Oratio Vigilia'};} 
   if (!$w) {return '';}
-  else {$w = getreference($w, $lang);}
   my $c = "!Commemoratio Vigilia\n";
   if ($w =~ /\!.*?\n/) {$c = $&; $w = $';}
 

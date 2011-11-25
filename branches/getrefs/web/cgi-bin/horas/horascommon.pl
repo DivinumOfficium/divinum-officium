@@ -954,7 +954,7 @@ sub precedence {
     %commune2 = %{officestring($datafolder, $lang2, $commune)};
     if (exists($commune{Responsory7c})) {
 	  my @a = split("\n", $commune{Responsory7});
-	  my @b = split("\n", getreference($scriptura{Responsory1}, Latin)); 
+	  my @b = split("\n", $scriptura{Responsory1}); 
 	  if ($a[0] =~ /$b[0]/i) {
 	    $commune{Responsory7} = $commune{Responsory7c};
 		$commune2{Responsory7} = $commune2{Responsory7c};
@@ -1337,23 +1337,6 @@ sub nomatinscomm {
   if ($w{Rule} =~ /9 lectiones/i && exists($w{Responsory9})) {return 1;}  
   if ($w{Rule} !~ /9 lectiones/i && exists($w{Responsory3})) {return 1;}
   return 0;
-}
-
-#*** getreference($str, $lang)
-# checks for @... reference
-# returns the expanded text
-sub getreference {
-  my $str = shift;  
-  my $lang = shift;      
-  if ($str =~ /\@([a-z0-9 \/\-\:]+)/i) {
-    my $key = $1;        
-    my @key = split(':', $key);
-	if ($dayname[0] =~ /Pasc/i) {$key[0] =~ s/(C[23])/$1p/;}
-	$key[1] =~ s/\s*$//;   
-    my %v = %{setupstring($datafolder, $lang, "$key[0].txt")}; 
-    $str=~ s/\@([a-z0-9 \/\-\:]+)/$v{$key[1]}/i; 
-  }
-  return $str;
 }
 
 

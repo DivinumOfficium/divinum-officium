@@ -155,7 +155,7 @@ sub psalmi_matutinum_monastic {
     push (@s, "\n");
     if (exists($winner{LectioE})) {   #** set evangelium
       my %w = (columnsel($lang)) ? %winner : %winner2; 
-      my @w = split("\n", getreference($w{LectioE}, $lang));
+      my @w = split("\n", $w{LectioE});
       $w = '';
       foreach $item (@w) {
         if ($item =~ /^([0-9:]+)\s+/) {
