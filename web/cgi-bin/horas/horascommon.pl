@@ -713,13 +713,16 @@ sub getrank {
        } 
        # Don't say "Commemoratio in Commemoratione"
        my $comm = $srank[0] =~ /^In Commemoratione/ ? '' : 'Commemoratio';
-	   if ($srank[0]) {$dayname[2] = "$comm$laudesonly: $srank[0]";}
+	   if ($srank[0])
+       {
+         $dayname[2] = "$comm$laudesonly: $srank[0]";
+         $marian_commem = ($srank[3] =~ /C1[0-9]/);
+       }
        if ($version =~ /(monastic|1960)/i && $dayname[2] =~ /Januarii/i) {$dayname[2] = '';}
 	   if (($climit1960 > 1 && ($hora =~ /laudes/i || $missa)) || $climit1960 < 2) {
          $commemoratio = $sname;    
          $cvespera = $svesp;
          $comrank = $srank[2];
-         $marian_commem = ($srank[3] =~ /C1[0-9]/);
          if (($version !~ /1960/ && $crank[2]) || ($crank[2] >= 3 || ($trank[2] == 5 && $crank[2] >= 2)))
 		   {$commemoratio1 = $cname;} 
        } 
