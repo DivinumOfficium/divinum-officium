@@ -182,8 +182,7 @@ $daycolor =   ($commune =~ /(C1[0-9])/) ? "blue" :
    ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" : 
    ($dayname[1] =~ /duplex/i) ? "red" : 
     "grey"; 
-$commentcolor = ($dayname[2] =~ /(Feria)/i) ? 'black' : ($dayname[2] =~ /Sabbato/i) ? 'blue' : 'maroon';
-$comment = ($dayname[2]) ? "<FONT COLOR=$commentcolor SIZE=-1><I>$dayname[2]</I></FONT>" : "";
+build_comment_line();
 
 #prepare main pages
 my $h = $hora;
@@ -462,8 +461,7 @@ sub headline {
    ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" : 
    ($dayname[1] =~ /duplex/i) ? "red" : 
     "grey"; 
-  $commentcolor = ($dayname[2] =~ /(Feria)/i) ? 'black' : ($dayname[2] =~ /Sabbato/i) ? 'blue' : 'maroon';
-  $comment = ($dayname[2]) ? "<FONT COLOR=$commentcolor SIZE=-1><I>$dayname[2]</I></FONT>" : "";
+  build_comment_line();
   $headline = setheadline();
 	if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
   print "<CENTER><TABLE BORDER=1 CELLPADDING=5><TR>" .
@@ -478,8 +476,7 @@ sub headline {
      ($dayname[1] =~ /duplex/i) ? "red" : 
      ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" : 
       "grey"; 
-    $commentcolor = ($dayname[2] =~ /(Feria)/i) ? 'black' : ($dayname[2] =~ /Sabbato/i) ? 'blue' : 'maroon';
-    $comment = ($dayname[2]) ? "<FONT COLOR=$commentcolor SIZE=-1><I>$dayname[2]</I></FONT>" : "";
+    build_comment_line();
     $headline = setheadline();
 	  if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
     print "<TD $background ALIGN=CENTER WIDTH=$width%>$version2 : <FONT COLOR=$daycolor>$headline</FONT>" .

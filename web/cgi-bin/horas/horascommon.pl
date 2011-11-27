@@ -603,6 +603,9 @@ sub getrank {
 
    if ($hora =~ /vespera/i && $trank[2] =~ /Feria/i) {$trank = ''; @trank = undef;}
    #if ($version =~ /1960/ && $srank[2] >= 6 && $trank[2] < 6) {$tname = $trank = ''; @trank = undef;}
+   
+   # Is the commemoration Marian?
+   our $marian_commem = 0;
 
    if (transfered($tname)) { #&& !$vflag) 
      if ($hora !~ /Completorium/i) {$dayname[2] = "Transfer $trank[0]";}
@@ -610,7 +613,12 @@ sub getrank {
       
   } elsif ($version =~ /1960/ && $winner{Rule} =~ /Festum Domini/i && $trank =~ /Dominica/i) { 
         $trank = ''; @trank = undef; 
-		if ($crank[2] >= 6) {$dayname[2] = "Commemoratio: $crank[0]"; $commemoratio = $cname;} 	 
+		if ($crank[2] >= 6)
+        {
+          $dayname[2] = "Commemoratio: $crank[0]";
+          $commemoratio = $cname;
+          $marian_commem = ($crank[3] =~ /C1[0-9]/);
+        }
   } elsif ($winner =~ /sancti/i && $trank[2] && $trank[2] > 1 && $trank[2] >= $crank[2] && $rank < 7) { 
       if ($hora !~ /Completorium/i && $trank[0] && $winner{Rule} !~ /no commemoratio/i)
 	    {$dayname[2] = "Commemoratio: $trank[0]";  } 
@@ -619,6 +627,7 @@ sub getrank {
       } 
 	  $comrank = $trank[2];
       $cvespera = $tvesp;
+      $marian_commem = ($trank[3] =~ /C1[0-9]/);
 
   } elsif ($crank[2] && ($srank[2] <= 5 || $crank[2] >= 2)) { 
       if ($hora !~ /Completorium/i && $crank[0] && $winner{Rule} !~ /no commemoratio/i) 
@@ -626,8 +635,8 @@ sub getrank {
       $commemoratio1 = ($trank[2] > 1) ? $tname : '';
       $commemoratio = $cname; 
       $comrank = $crank[2]; 
-      $cvespera = 4 - $svesp;    
-    							 
+      $cvespera = 4 - $svesp;
+      $marian_commem = ($crank[3] =~ /C1[0-9]/);
   } elsif ($crank[2] < 6) {$dayname[2] = ''; $commemoratio = '';}  
 
   %w = %{officestring("$datafolder/$lang1/$winner")};      
@@ -709,7 +718,8 @@ sub getrank {
 	   if (($climit1960 > 1 && ($hora =~ /laudes/i || $missa)) || $climit1960 < 2) {
          $commemoratio = $sname;    
          $cvespera = $svesp;
-         $comrank = $srank[2]; 
+         $comrank = $srank[2];
+         $marian_commem = ($srank[3] =~ /C1[0-9]/);
          if (($version !~ /1960/ && $crank[2]) || ($crank[2] >= 3 || ($trank[2] == 5 && $crank[2] >= 2)))
 		   {$commemoratio1 = $cname;} 
        } 
@@ -1576,4 +1586,15 @@ sub papal_antiphon_dum_esset($)
   
   my %papalcommon = %{setupstring("$datafolder/$lang/$communename/C4.txt")};
   return $papalcommon{'Ant 9'};
+}
+
+#*** build_comment_line()
+#  Sets $comment to the HTML for the comment line.
+sub build_comment_line()
+{
+  our @dayname;
+  our ($comment, $marian_commem);
+  
+  my $commentcolor = ($dayname[2] =~ /(Feria)/i) ? 'black' : ($marian_commem && $dayname[2] =~ /^Commem/) ? 'blue' : 'maroon';
+  $comment = ($dayname[2]) ? "<FONT COLOR=$commentcolor SIZE=-1><I>$dayname[2]</I></FONT>" : "";
 }
