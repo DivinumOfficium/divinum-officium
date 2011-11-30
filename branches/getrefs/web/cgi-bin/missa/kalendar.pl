@@ -77,8 +77,8 @@ $date1= strictparam('date1');
 $browsertime = strictparam('browsertime');
 
 #internal script, cookies
-%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
-if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'horas.setup')};}
+%dialog = %{setupstring($datafolder, '', 'missa.dialog')};
+if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'missa.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 $officium = strictparam('officium');

@@ -65,8 +65,8 @@ setmdir($version);
 
 $setupsave = strictparam('setup');
 $setupsave =~ s/\~24/\"/g;
-%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
-if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'horas.setup')};}
+%dialog = %{setupstring($datafolder, '', 'missa.dialog')};
+if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'missa.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 eval($setup{'parameters'});

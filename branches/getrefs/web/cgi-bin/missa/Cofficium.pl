@@ -95,8 +95,8 @@ our $temporaname = 'Tempora';
 our $communename = 'Commune';
 
 #internal script, cookies
-%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
-if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'horas.setup')};}
+%dialog = %{setupstring($datafolder, '', 'missa.dialog')};
+if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'missa.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 if (!$setupsave && !getcookies('missap', 'parameters')) {setcookies('missap', 'parameters');}
