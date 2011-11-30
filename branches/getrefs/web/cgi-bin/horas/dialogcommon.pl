@@ -251,7 +251,7 @@ sub setupstring($$$%)
 
 # Block for subs using the cache of inclusion files.
 {
-  my %inclusioncache;
+  my %inclusion_caches_by_version;
   
   #*** get_file_for_inclusion($basedir, $lang, $fname)
   # Loads the database file from path "$basedir/$lang/$fname" through
@@ -260,15 +260,21 @@ sub setupstring($$$%)
   {
     my ($basedir, $lang, $fname) = @_;
     my $fullpath = "$basedir/$lang/$fname";
+    our $version;
     
-    return $inclusioncache{$fullpath} if (exists $inclusioncache{$fullpath});
+    $inclusion_caches_by_version{$version} = {} unless (exists $inclusion_caches_by_version{$version});
+    
+    # Get hash of cached files for this version.
+    my $inclusioncache = $inclusion_caches_by_version{$version};
+    
+    return ${$inclusioncache}{$fullpath} if (exists ${$inclusioncache}{$fullpath});
     
     # Not in cache, so open it, add it to the cache and return it.
     my $fileref = setupstring($basedir, $lang, "$fname.txt", 'resolve@' => 0);
     
     if ($fileref)
     {
-      $inclusioncache{$fullpath} = $fileref;
+      ${$inclusioncache}{$fullpath} = $fileref;
       return $fileref;
     }
     else
