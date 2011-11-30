@@ -72,7 +72,7 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
 } else {error("$datafolder/Latin/Tabulae/$kalendarname.txt cannot open");}
 
 #*** Handle  permanent transfers = Tr<Trid|1960|newcal>.txt
-  my $vtrans = ($version =~ /monastic/i) ? 'M' : ($version =~ /newcal/i) ? 'newcal' : 
+  my $vtrans = ($version =~ /monastic/i) ? 'M' : ($version =~ /newcal/i) ? 'Newcal' : 
     ($version =~ /(1955|1960)/) ? '1960' : ($version =~ /1570/) ? '1570' : ($version =~ /Trid/i) ? '1910' : 'DA';  
   if ($vtrans && (@a = do_read("$datafolder/Latin/Tabulae/Tr$vtrans.txt"))) {
      my $tr = join('', @a);
