@@ -77,9 +77,10 @@ sub getweek
 
    $n = floor(($t - ($easter + 49)) / 7);  
 
-   if ($n < 24) {return getname(sprintf("Pent%02i", $n));}
+   if ($n < 23) {return getname(sprintf("Pent%02i", $n));}
    my $wdist = floor(($advent1 - $t + 6) / 7);
    if ($wdist < 2) {return "Pent24";}
+   if ($n == 23) {return "Pent23";}
    if ($missa) {return sprintf("PentEpi%1i", 8 - $wdist);}
    else {return sprintf("Epi%1i", 8 - $wdist);}
 
