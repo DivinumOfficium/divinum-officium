@@ -605,8 +605,13 @@ sub getantcross {
 	$psalmline .= " $psalmline[$pind-1]";
 	next;
   }
+  
+  # Skip over any remaining punctuation.
+  $psalmline .= ' ' . $psalmline[$pind++] while ($pind < @psalmline && !depunct($psalmline[$pind]));
+  # Output dagger.
   $psalmline .= ' ' . setfont($smallfont, "\x{2021} ");
-  while ($pind < @psalmline) {$psalmline .= " $psalmline[$pind]"; $pind++;}
+  # Append rest of the verse.
+  $psalmline .= ' ' . $psalmline[$pind++] while ($pind < @psalmline);
   return $psalmline;
 }
 
