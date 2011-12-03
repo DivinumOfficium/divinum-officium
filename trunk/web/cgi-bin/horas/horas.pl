@@ -130,9 +130,7 @@ sub resolve_refs {
   my $t = shift;        
   my $lang = shift;	 
 
-  my @t = split("\n", $t); 	
-
-  my $t = '';	
+  my @t = split("\n", $t);
 				
   #handles expanding for skeleton
   if ($t[0] =~ /#/) {
@@ -146,10 +144,11 @@ sub resolve_refs {
   if ($t[0] =~ /(omit|elmarad)/i) {$t[0] =~ s/^\s*\#/\!\!\!/;}
   else {$t[0] =~ s/^\s*\#/\!\!/;}
 
-
-  #cycle by lines 
-  my $it;
-  for ($it = 0; $it < @t; $it++) {
+  my @resolved_lines;  # Array of blocks expanded from lines.
+  my $prelude = '';    # Preceding continued lines.
+  
+  #cycle by lines
+  for (my $it = 0; $it < @t; $it++) {
     $line = $t[$it];
 
     #$ and & references
@@ -224,16 +223,26 @@ sub resolve_refs {
 	  }
 
   #connect lines marked by tilde, or but linebrak
-	if ($line =~ /\~\s*$/) {$line =~ s/\~\s*$//g; $t .= "$line ";}
-	else {$t .= "$line<BR>\n";}
+    if ($line =~ /(.*)\~\s*$/) {
+      $prelude .= "$1 ";
+    }
+    else {
+      push @resolved_lines, $prelude . $line;
+      $prelude = '';
+    }
 
 
   }  #line by line cycle ends
+  
+  # Concatenate the expansions of the lines with a line break between each.
+  push @resolved_lines, $prelude if $prelude;
+  push @resolved_lines, '';
+  my $resolved_block = join "<BR>\n", @resolved_lines;
 
   #removes occasional double linebreaks
-  $t =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;  
-  $t =~ s/<\/P>\s*<BR>/<\/P>/g;   
-  return $t;
+  $resolved_block =~ s/<BR>\s*<BR>/<BR>/g;
+  $resolved_block =~ s/<\/P>\s*<BR>/<\/P>/g;
+  return $resolved_block;
 }
 
 #*** sub expand($line, $lang, $antline)
