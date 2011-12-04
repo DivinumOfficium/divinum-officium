@@ -580,19 +580,27 @@ sub getrank {
   # Office is sanctoral.
   if ($sanctoraloffice) {   
     $rank = $srank[2];     
-    $dayname[1] = "$srank[0] $srank[1]"; 
+	  $dayname[1] = "$srank[0] $srank[1]"; 
     $winner = $sname;  
     %winner = updaterank(setupstring("$datafolder/$lang1/$winner"));
-    $vespera = $svesp;
-    
-    if (my ($new_communetype, $new_commune) = extract_common($srank[3], $rank))
-    {
-      ($communetype, $commune) = ($new_communetype, $new_commune);
-    }
-   
-    if ($srank[3] =~ /^(ex|vide)\s*(C[0-9]+[a-z]*)/i) {
-      $dayname[1] .= " $communetype $communesname{$commune} [$commune]";
-    }
+    $vespera = $svesp;      
+    if ($srank[3] =~ /^(ex|vide)\s*C/i) {  
+      $communetype = $1;    
+      if ($version =~ /trident/i && $version !~ /monastic/i && $rank >= 2) {$communetype = 'ex';}
+      if ($srank[3] =~ /(C[0-9]+[a-z]*)/i) {
+	      $commune = $1;
+	 	  $dayname[1] .= " $communetype $communesname{$commune} [$commune]";
+      } 
+      my $fname="$datafolder/$lang1/$communename/$commune" . "p.txt";     
+      if ($dayname[0] =~ /Pasc/i && (-e $fname)) 
+      {$commune .= 'p';}
+ 		  if ($commune) {$commune = "$communename/$commune.txt";}
+
+   } elsif ($srank[3] =~ /(ex|vide)\s*Sancti\/(.*)\s*$/i) {
+    $communetype = $1;       
+    $commune = "$sanctiname/$2.txt";  
+    if ($version =~ /trident/i && $version !~ /monastic/i) {$communetype = 'ex';}
+   }  
 
    if ($hora =~ /vespera/i && $trank[2] =~ /Feria/i) {$trank = ''; @trank = undef;}
    #if ($version =~ /1960/ && $srank[2] >= 6 && $trank[2] < 6) {$tname = $trank = ''; @trank = undef;}
@@ -753,50 +761,6 @@ sub getrank {
   if (($month == 12 && $day > 24) || ($month == 1 && $day < 14 && $dayname[0] !~ /Epi/i)) {$dayname[0] = "Nat$day";}   
 
 }
-
-
-#*** extract_common($common_field, $office_rank)
-# Extracts the type and filename of a common referenced by an
-# expression of the form used in rank lines. $common_field is this
-# expression, and $office_rank is the rank of the corresponding office.
-# Returns respectively the type ('ex' or 'vide') and the filename.
-sub extract_common($$)
-{
-  my ($common_field, $office_rank) = @_;
-
-  # These shadow globals.
-  my ($communetype, $commune);
-
-  our ($datafolder, $lang1, $communename, $sanctiname);
-  our $version;
-  our @dayname;
-
-  if ($common_field =~ /^(ex|vide)\s*C/i)
-  {
-    # Genuine common.
-    
-    $communetype = $1;
-    $communetype = 'ex' if ($version =~ /Trident/i && $office_rank >= 2);
-    $commune = $1 if ($common_field =~ /(C[0-9]+[a-z]*)/i);
-
-    my $paschal_fname = "$datafolder/$lang1/$communename/$commune" . 'p.txt';
-    $commune .= 'p' if ($dayname[0] =~ /Pasc/i && (-e $paschal_fname));
-    
-    $commune = "$communename/$commune.txt" if ($commune);
-
-  }
-  elsif ($common_field =~ /(ex|vide)\s*Sancti\/(.*)\s*$/i)
-  {
-    # Another sanctoral office used as a pseudo-common.
-    
-    $communetype = $1;
-    $communetype = 'ex' if ($version =~ /Trident/i);
-    $commune = "$sanctiname/$2.txt";
-  }
-
-  return ($communetype, $commune);
-}
-
 
 #*** next day for vespera
 # input month, day, year
