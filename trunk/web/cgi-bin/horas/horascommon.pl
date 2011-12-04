@@ -585,7 +585,10 @@ sub getrank {
     %winner = updaterank(setupstring("$datafolder/$lang1/$winner"));
     $vespera = $svesp;
     
-    ($communetype, $commune) = extract_common($srank[3], $rank);
+    if (my ($new_communetype, $new_commune) = extract_common($srank[3], $rank))
+    {
+      ($communetype, $commune) = ($new_communetype, $new_commune);
+    }
    
     if ($srank[3] =~ /^(ex|vide)\s*(C[0-9]+[a-z]*)/i) {
       $dayname[1] .= " $communetype $communesname{$commune} [$commune]";
@@ -772,7 +775,8 @@ sub extract_common($$)
   {
     # Genuine common.
     
-    $communetype = ($version =~ /Trident/i && $office_rank >= 2) ? 'ex' : $1;
+    $communetype = $1;
+    $communetype = 'ex' if ($version =~ /Trident/i && $office_rank >= 2);
     $commune = $1 if ($common_field =~ /(C[0-9]+[a-z]*)/i);
 
     my $paschal_fname = "$datafolder/$lang1/$communename/$commune" . 'p.txt';
@@ -785,7 +789,8 @@ sub extract_common($$)
   {
     # Another sanctoral office used as a pseudo-common.
     
-    $communetype = ($version =~ /Trident/i) ? 'ex' : $1;
+    $communetype = $1;
+    $communetype = 'ex' if ($version =~ /Trident/i);
     $commune = "$sanctiname/$2.txt";
   }
 
