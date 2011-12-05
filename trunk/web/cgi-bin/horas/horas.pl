@@ -531,6 +531,8 @@ sub psalm {
    if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6 && $fname =~ /88/) 
     {$fname =~ s/88/88a/;}      
 
+  # Flag to signal that dagger should be prepended to current line.
+  my $prepend_dagger = 0;
 
   if (@lines = do_read($fname)) {
 	my $first = ($antline) ? 1 : 0;
@@ -556,9 +558,23 @@ sub psalm {
 	   
       $rest =~	s/[ ]*//;
 
-	  if ($version !~ /monastic/i && $first && $rest && $rest !~ /^\s*$/) {
-	    $rest = getantcross($rest, $antline); 
-		$first = 0;
+	  if ($version !~ /Monastic/i) {
+        if ($prepend_dagger) {
+          $rest = "\x{2021} $rest";
+          $prepend_dagger = 0;
+        }
+        
+        if ($first && $rest && $rest !~ /^\s*$/) {
+	      $rest = getantcross($rest, $antline);
+        
+          # Put dagger at start of second line if it would otherwise
+          # have come at the end of the first.
+          $prepend_dagger = ($rest =~ s/\x{2021}\s*$//);
+          
+          $first = 0;
+        }
+        
+        $rest =~ s/\x{2021}/setfont($smallfont, "\x{2021}")/e;
 	  }
 
       if ($lang =~ /magyar/i) {$rest = setasterisk($rest);}
@@ -592,7 +608,7 @@ sub getantcross {
   $antline = ''; 
 
   while ($aind < @antline) {
-    if ($pind >= @psalmline) { return "$psalmline1 " . setfont($redfont, "\x{2021}");}
+    if ($pind >= @psalmline) { return "$psalmline1 \x{2021}";}
 	my $item1 = $psalmline[$pind];
 	$pind++;
 	$item1 = depunct($item1);
@@ -609,7 +625,7 @@ sub getantcross {
   # Skip over any remaining punctuation.
   $psalmline .= ' ' . $psalmline[$pind++] while ($pind < @psalmline && !depunct($psalmline[$pind]));
   # Output dagger.
-  $psalmline .= ' ' . setfont($smallfont, "\x{2021} ");
+  $psalmline .= " \x{2021}";
   # Append rest of the verse.
   $psalmline .= ' ' . $psalmline[$pind++] while ($pind < @psalmline);
   return $psalmline;
