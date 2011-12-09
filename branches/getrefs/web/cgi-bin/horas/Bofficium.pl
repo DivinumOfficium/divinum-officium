@@ -175,8 +175,7 @@ $daycolor =   ($commune =~ /(C1[0-9])/) ? "blue" :
    ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" : 
    ($dayname[1] =~ /duplex/i) ? "red" : 
     "grey"; 
-$commentcolor = ($dayname[2] =~ /(Feria)/i) ? 'black' : ($dayname[2] =~ /Sabbato/i) ? 'blue' : 'maroon';
-$comment = ($dayname[2]) ? "<FONT COLOR=$commentcolor SIZE=-1><I>$dayname[2]</I></FONT>" : "";
+build_comment_line();
 
 #prepare main pages
 my $h = $hora;

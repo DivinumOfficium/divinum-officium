@@ -130,9 +130,7 @@ sub resolve_refs {
   my $t = shift;        
   my $lang = shift;	 
 
-  my @t = split("\n", $t); 	
-
-  my $t = '';	
+  my @t = split("\n", $t);
 				
   #handles expanding for skeleton
   if ($t[0] =~ /#/) {
@@ -146,10 +144,11 @@ sub resolve_refs {
   if ($t[0] =~ /(omit|elmarad)/i) {$t[0] =~ s/^\s*\#/\!\!\!/;}
   else {$t[0] =~ s/^\s*\#/\!\!/;}
 
-
-  #cycle by lines 
-  my $it;
-  for ($it = 0; $it < @t; $it++) {
+  my @resolved_lines;  # Array of blocks expanded from lines.
+  my $prelude = '';    # Preceding continued lines.
+  
+  #cycle by lines
+  for (my $it = 0; $it < @t; $it++) {
     $line = $t[$it];
 
     #$ and & references
@@ -159,7 +158,10 @@ sub resolve_refs {
       $line =~ s/^\s+//;   
       #prepares reading the part of common w/ antiphona
 	    if ($line =~ /psalm/ && $t[$it -1] =~ /^\s*Ant\. /i) {   
-	      $line = expand($line, $lang, $t[$it - 1]);  
+	      $line = expand($line, $lang, $t[$it - 1]);
+          
+          # If the psalm has a cross, then so should the antiphon.
+          @resolved_lines[-1] .= setfont($smallfont, " \x{2021}") if $line =~ /\x{2021}/;
 	    } else {$line = expand($line, $lang);}  
                                            
     if ((!$Tk && $line !~ /\<input/i) || ($Tk && $line !~ /\% .*? \%/))
@@ -224,16 +226,26 @@ sub resolve_refs {
 	  }
 
   #connect lines marked by tilde, or but linebrak
-	if ($line =~ /\~\s*$/) {$line =~ s/\~\s*$//g; $t .= "$line ";}
-	else {$t .= "$line<BR>\n";}
+    if ($line =~ /(.*)\~\s*$/) {
+      $prelude .= "$1 ";
+    }
+    else {
+      push @resolved_lines, $prelude . $line;
+      $prelude = '';
+    }
 
 
   }  #line by line cycle ends
+  
+  # Concatenate the expansions of the lines with a line break between each.
+  push @resolved_lines, $prelude if $prelude;
+  push @resolved_lines, '';
+  my $resolved_block = join "<BR>\n", @resolved_lines;
 
   #removes occasional double linebreaks
-  $t =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;  
-  $t =~ s/<\/P>\s*<BR>/<\/P>/g;   
-  return $t;
+  $resolved_block =~ s/<BR>\s*<BR>/<BR>/g;
+  $resolved_block =~ s/<\/P>\s*<BR>/<\/P>/g;
+  return $resolved_block;
 }
 
 #*** sub expand($line, $lang, $antline)
@@ -519,6 +531,8 @@ sub psalm {
    if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6 && $fname =~ /88/) 
     {$fname =~ s/88/88a/;}      
 
+  # Flag to signal that dagger should be prepended to current line.
+  my $prepend_dagger = 0;
 
   if (@lines = do_read($fname)) {
 	my $first = ($antline) ? 1 : 0;
@@ -544,9 +558,23 @@ sub psalm {
 	   
       $rest =~	s/[ ]*//;
 
-	  if ($version !~ /monastic/i && $first && $rest && $rest !~ /^\s*$/) {
-	    $rest = getantcross($rest, $antline); 
-		$first = 0;
+	  if ($version !~ /Monastic/i) {
+        if ($prepend_dagger) {
+          $rest = "\x{2021} $rest";
+          $prepend_dagger = 0;
+        }
+        
+        if ($first && $rest && $rest !~ /^\s*$/) {
+	      $rest = getantcross($rest, $antline);
+        
+          # Put dagger at start of second line if it would otherwise
+          # have come at the end of the first.
+          $prepend_dagger = ($rest =~ s/\x{2021}\s*$//);
+          
+          $first = 0;
+        }
+        
+        $rest =~ s/\x{2021}/setfont($smallfont, "\x{2021}")/e;
 	  }
 
       if ($lang =~ /magyar/i) {$rest = setasterisk($rest);}
@@ -580,7 +608,7 @@ sub getantcross {
   $antline = ''; 
 
   while ($aind < @antline) {
-    if ($pind >= @psalmline) { return "$psalmline1 " . setfont($redfont, "\x{2021}");}
+    if ($pind >= @psalmline) { return "$psalmline1 \x{2021}";}
 	my $item1 = $psalmline[$pind];
 	$pind++;
 	$item1 = depunct($item1);
@@ -593,8 +621,13 @@ sub getantcross {
 	$psalmline .= " $psalmline[$pind-1]";
 	next;
   }
-  $psalmline .= ' ' . setfont($smallfont, "\x{2021} ");
-  while ($pind < @psalmline) {$psalmline .= " $psalmline[$pind]"; $pind++;}
+  
+  # Skip over any remaining punctuation.
+  $psalmline .= ' ' . $psalmline[$pind++] while ($pind < @psalmline && !depunct($psalmline[$pind]));
+  # Output dagger.
+  $psalmline .= " \x{2021}";
+  # Append rest of the verse.
+  $psalmline .= ' ' . $psalmline[$pind++] while ($pind < @psalmline);
   return $psalmline;
 }
 

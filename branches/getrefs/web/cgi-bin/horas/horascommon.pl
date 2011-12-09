@@ -77,9 +77,10 @@ sub getweek
 
    $n = floor(($t - ($easter + 49)) / 7);  
 
-   if ($n < 24) {return getname(sprintf("Pent%02i", $n));}
+   if ($n < 23) {return getname(sprintf("Pent%02i", $n));}
    my $wdist = floor(($advent1 - $t + 6) / 7);
    if ($wdist < 2) {return "Pent24";}
+   if ($n == 23) {return "Pent23";}
    if ($missa) {return sprintf("PentEpi%1i", 8 - $wdist);}
    else {return sprintf("Epi%1i", 8 - $wdist);}
 
@@ -194,7 +195,7 @@ sub getrank {
   my $sday = get_sday($month, $day, $year);   
 
   # Handle transfers
-  my $vtrans = ($version =~ /newcal/i) ? 'newcal' : ($version =~ /(1955|1960)/) ? '1960' : 
+  my $vtrans = ($version =~ /newcal/i) ? 'Newcal' : ($version =~ /(1955|1960)/) ? '1960' : 
    ($version =~ /monastic/i) ? 'M' : ($version =~ /1570/) ? '1570' : ($version =~ /1910/) ? 1910 : 'DA';  
   if ($vtrans && (@lines = do_read("$datafolder/../horas/Latin/Tabulae/Tr$vtrans.txt"))) {
      my $tr = join ('', @lines);
@@ -579,30 +580,25 @@ sub getrank {
   # Office is sanctoral.
   if ($sanctoraloffice) {   
     $rank = $srank[2];     
-	  $dayname[1] = "$srank[0] $srank[1]"; 
+    $dayname[1] = "$srank[0] $srank[1]"; 
     $winner = $sname;  
     %winner = updaterank(setupstring($datafolder, $lang1, $winner));
-    $vespera = $svesp;      
-    if ($srank[3] =~ /^(ex|vide)\s*C/i) {  
-      $communetype = $1;    
-      if ($version =~ /trident/i && $version !~ /monastic/i && $rank >= 2) {$communetype = 'ex';}
-      if ($srank[3] =~ /(C[0-9]+[a-z]*)/i) {
-	      $commune = $1;
-	 	  $dayname[1] .= " $communetype $communesname{$commune} [$commune]";
-      } 
-      my $fname="$datafolder/$lang1/$communename/$commune" . "p.txt";     
-      if ($dayname[0] =~ /Pasc/i && (-e $fname)) 
-      {$commune .= 'p';}
- 		  if ($commune) {$commune = "$communename/$commune.txt";}
-
-   } elsif ($srank[3] =~ /(ex|vide)\s*Sancti\/(.*)\s*$/i) {
-    $communetype = $1;       
-    $commune = "$sanctiname/$2.txt";  
-    if ($version =~ /trident/i && $version !~ /monastic/i) {$communetype = 'ex';}
-   }  
+    $vespera = $svesp;
+    
+    if (my ($new_communetype, $new_commune) = extract_common($srank[3], $rank))
+    {
+      ($communetype, $commune) = ($new_communetype, $new_commune);
+    }
+   
+    if ($srank[3] =~ /^(ex|vide)\s*(C[0-9]+[a-z]*)/i) {
+      $dayname[1] .= " $communetype $communesname{$commune} [$commune]";
+    }
 
    if ($hora =~ /vespera/i && $trank[2] =~ /Feria/i) {$trank = ''; @trank = undef;}
    #if ($version =~ /1960/ && $srank[2] >= 6 && $trank[2] < 6) {$tname = $trank = ''; @trank = undef;}
+   
+   # Is the commemoration Marian?
+   our $marian_commem = 0;
 
    if (transfered($tname)) { #&& !$vflag) 
      if ($hora !~ /Completorium/i) {$dayname[2] = "Transfer $trank[0]";}
@@ -610,7 +606,12 @@ sub getrank {
       
   } elsif ($version =~ /1960/ && $winner{Rule} =~ /Festum Domini/i && $trank =~ /Dominica/i) { 
         $trank = ''; @trank = undef; 
-		if ($crank[2] >= 6) {$dayname[2] = "Commemoratio: $crank[0]"; $commemoratio = $cname;} 	 
+		if ($crank[2] >= 6)
+        {
+          $dayname[2] = "Commemoratio: $crank[0]";
+          $commemoratio = $cname;
+          $marian_commem = ($crank[3] =~ /C1[0-9]/);
+        }
   } elsif ($winner =~ /sancti/i && $trank[2] && $trank[2] > 1 && $trank[2] >= $crank[2] && $rank < 7) { 
       if ($hora !~ /Completorium/i && $trank[0] && $winner{Rule} !~ /no commemoratio/i)
 	    {$dayname[2] = "Commemoratio: $trank[0]";  } 
@@ -619,6 +620,7 @@ sub getrank {
       } 
 	  $comrank = $trank[2];
       $cvespera = $tvesp;
+      $marian_commem = ($trank[3] =~ /C1[0-9]/);
 
   } elsif ($crank[2] && ($srank[2] <= 5 || $crank[2] >= 2)) { 
       if ($hora !~ /Completorium/i && $crank[0] && $winner{Rule} !~ /no commemoratio/i) 
@@ -626,8 +628,8 @@ sub getrank {
       $commemoratio1 = ($trank[2] > 1) ? $tname : '';
       $commemoratio = $cname; 
       $comrank = $crank[2]; 
-      $cvespera = 4 - $svesp;    
-    							 
+      $cvespera = 4 - $svesp;
+      $marian_commem = ($crank[3] =~ /C1[0-9]/);
   } elsif ($crank[2] < 6) {$dayname[2] = ''; $commemoratio = '';}  
 
   %w = %{officestring($datafolder, $lang1, $winner)};      
@@ -704,12 +706,16 @@ sub getrank {
        } 
        # Don't say "Commemoratio in Commemoratione"
        my $comm = $srank[0] =~ /^In Commemoratione/ ? '' : 'Commemoratio';
-	   if ($srank[0]) {$dayname[2] = "$comm$laudesonly: $srank[0]";}
+	   if ($srank[0])
+       {
+         $dayname[2] = "$comm$laudesonly: $srank[0]";
+         $marian_commem = ($srank[3] =~ /C1[0-9]/);
+       }
        if ($version =~ /(monastic|1960)/i && $dayname[2] =~ /Januarii/i) {$dayname[2] = '';}
 	   if (($climit1960 > 1 && ($hora =~ /laudes/i || $missa)) || $climit1960 < 2) {
          $commemoratio = $sname;    
          $cvespera = $svesp;
-         $comrank = $srank[2]; 
+         $comrank = $srank[2];
          if (($version !~ /1960/ && $crank[2]) || ($crank[2] >= 3 || ($trank[2] == 5 && $crank[2] >= 2)))
 		   {$commemoratio1 = $cname;} 
        } 
@@ -747,6 +753,49 @@ sub getrank {
   if (($month == 12 && $day > 24) || ($month == 1 && $day < 14 && $dayname[0] !~ /Epi/i)) {$dayname[0] = "Nat$day";}   
 
 }
+
+
+#*** extract_common($common_field, $office_rank)
+# Extracts the type and filename of a common referenced by an
+# expression of the form used in rank lines. $common_field is this
+# expression, and $office_rank is the rank of the corresponding office.
+# Returns respectively the type ('ex' or 'vide') and the filename.
+sub extract_common($$)
+{
+  my ($common_field, $office_rank) = @_;
+
+  # These shadow globals.
+  my ($communetype, $commune);
+
+  our ($datafolder, $lang1, $communename, $sanctiname);
+  our $version;
+  our @dayname;
+
+  if ($common_field =~ /^(ex|vide)\s*C/i)
+  {
+    # Genuine common.
+    
+    $communetype = $1;
+    $communetype = 'ex' if ($version =~ /Trident/i && $office_rank >= 2);
+    $commune = $1 if ($common_field =~ /(C[0-9]+[a-z]*)/i);
+
+    my $paschal_fname = "$datafolder/$lang1/$communename/$commune" . 'p.txt';
+    $commune .= 'p' if ($dayname[0] =~ /Pasc/i && (-e $paschal_fname));
+    
+    $commune = "$communename/$commune.txt" if ($commune);
+  }
+  elsif ($common_field =~ /(ex|vide)\s*Sancti\/(.*)\s*$/i)
+  {
+    # Another sanctoral office used as a pseudo-common.
+    
+    $communetype = $1;
+    $commune = "$sanctiname/$2.txt";
+    $communetype = 'ex' if ($version =~ /Trident/i);
+  }
+
+  return ($communetype, $commune);
+}
+
 
 #*** next day for vespera
 # input month, day, year
@@ -1689,6 +1738,17 @@ sub papal_antiphon_dum_esset($)
     
     return eval $expression;
   }
+}
+
+#*** build_comment_line()
+#  Sets $comment to the HTML for the comment line.
+sub build_comment_line()
+{
+  our @dayname;
+  our ($comment, $marian_commem);
+  
+  my $commentcolor = ($dayname[2] =~ /(Feria)/i) ? 'black' : ($marian_commem && $dayname[2] =~ /^Commem/) ? 'blue' : 'maroon';
+  $comment = ($dayname[2]) ? "<FONT COLOR=$commentcolor SIZE=-1><I>$dayname[2]</I></FONT>" : "";
 }
 
 1;

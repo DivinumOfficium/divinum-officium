@@ -73,7 +73,7 @@ if (@a = do_read("$dfolder/Latin/Tabulae/K$kalendarname.txt")) {
 } else {error("$dfolder/Latin/Tabulae/$kalendarname.txt cannot open");}
 
 #*** Handle  permanent transfers = Tr<Trid|1960|newcal>.txt
-  my $vtrans = ($version =~ /monastic/i) ? 'M' : ($version =~ /newcal/i) ? 'newcal' : 
+  my $vtrans = ($version =~ /monastic/i) ? 'M' : ($version =~ /newcal/i) ? 'Newcal' : 
     ($version =~ /(1955|1960)/) ? '1960' : ($version =~ /1570/) ? '1570' : ($version =~ /Trid/i) ? '1910' : 'DA';  
   if ($vtrans && (my $tr = join('',do_read("$dfolder/Latin/Tabulae/Tr$vtrans.txt")))) {
      $tr =~ s/\=/\;\;/g;
@@ -146,16 +146,8 @@ if (@a = do_read("$dfolder/Latin/Tabulae/K$kalendarname.txt")) {
         my $t = date_to_days($kday,$kmonth-1,$kyear);
         @d = days_to_date($t + 35);	   
         if ($d[3] > 24) {
-	      push(@tfer, sprintf("%02i-%02i=Tempora/Pent23-0", $kmm1, $kdm1)); 
-	      push(@tfer, sprintf("%02i-%02i=Tempora/Pent24-0", $kmonth, $kday));
-		  my ($i, $km2, $kd2);
-      for ($i = 1; $i < 7; $i++) {   
-	      $km2 = $kmonth;
-        $kd2 = $kday + $i;
-        if ($kd2 > 30) {$kd2 -= 30; $km2++;} 
-        push(@tfer, sprintf("%02i-%02i=Tempora/Pent24-$i", $km2, $kd2));
-		  } 
-        }  
+	      push(@tfer, sprintf("%02i-%02i=Tempora/Pent23-0", $kmm1, $kdm1));
+        }
       }
 
       my $tname = "$dayname[0]-$dayofweek";	 
