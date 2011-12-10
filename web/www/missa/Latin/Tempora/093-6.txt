@@ -5,6 +5,8 @@ Sabbato Quattuor Temporum Septembris;;Feria major;;2
 Sabbato Quattuor Temporum Septembris;;Feria major;;3
 
 [Rule]
+(rubrica 1960) celebranda aut forma longior aut forma brevior
+(si missa brevior et rubrica 1960) LectioL1 
 LectioL5
 
 [Introitus]
@@ -17,7 +19,7 @@ Veníte, exsultémus Dómino: jubilémus Deo, salutári nostro.
 v. Veníte, adorémus Deum et procidámus ante Dóminum, plorémus ante eum, qui~
 fecit nos: quia ipse est Dóminus, Deus noster.
 
-[OratioL1]
+[Oratio]
 V. Flectámus génua. 
 R. Leváte. 
 Omnípotens sempitérne Deus, qui per continéntiam~
@@ -39,7 +41,7 @@ eórum?
 V. Adjuva nos, Deus, salutáris noster: et propter honórem nóminis tui, Dómine,~
 líbera nos.
 
-[OratioL2]
+[OratioL1]
 V. Flectámus génua. 
 R. Leváte. 
 Da nobis, quaesumus, omnípotens Deus: ut,~
@@ -59,7 +61,7 @@ Protéctor noster, áspice, Deus, et réspice super servos tuos.
 V. Dómine,~
 Deus virtútum, exáudi preces servórum tuórum.
 
-[OratioL3]
+[OratioL2]
 V. Flectámus génua. 
 R. Leváte. 
 Tuére, quaesumus, Dómine, fámiliam tuam: ut~
@@ -77,7 +79,7 @@ $Deo gratias
 Convértere, Dómine, aliquántulum, et deprecáre super servos tuos. 
 V. Dómine, refúgium factus es nobis, a generatióne et progénie.
 
-[OratioL4]
+[OratioL3]
 V. Flectámus génua. 
 R. Leváte. 
 Præsta, quaesumus, Dómine, sic nos ab épulis~
@@ -95,7 +97,7 @@ $Deo gratias
 Dirigátur orátio mea sicut incénsum in conspéctu tuo, Dómine.
 V. Elevátio mánuum meárum sacrifícium vespertínum.
 
-[OratioL5]
+[OratioL4]
 V. Flectámus génua. 
 R. Leváte. 
 Ut nobis, Dómine, tríbuis sollémne tibi deférre~
@@ -123,7 +125,7 @@ Glória Patri, et Fílio, et Spirítui Sancto. Et laudábili et glorióso in saecula.
 Sicut erat in princípio, et nunc, et semper: et in saecula sæculórum. Amen. Et laudábili et glorióso in saecula.
 Benedíctus es, Dómine, Deus patrum nostrórum. Et laudábilis et gloriósus in saecula.
 
-[Oratio]
+[OratioL5]
 Deus, qui tribus púeris mitigásti flammas ígnium: concéde propítius; ut nos~
 fámulos tuos non exúrat flamma vitiórum.
 $Per Dominum

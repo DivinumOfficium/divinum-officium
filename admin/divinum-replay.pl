@@ -62,6 +62,7 @@ spacing               all white space (-spaces only)
 USAGE
 
 sub show_change($$);
+sub title_hash($);
 
 my $filter = '';
 my $update;
@@ -164,6 +165,26 @@ foreach my $file ( @ARGV )
                 }
                 else
                 {
+                    # Capture and hash the calendar lines.
+
+                    my $old_kal = '';
+                    for ( @old_result )
+                    {
+                        if ( !$old_kal && /<FONT COLOR=[^"]/ && !/COLOR=MAROON/ && !/HREF/ )
+                        {
+                            $old_kal = title_hash($_)
+                        }
+                    }
+
+                    my $new_kal = '';
+                    for ( @new_result )
+                    {
+                        if ( !$new_kal && /<FONT COLOR=[^"]/ && !/COLOR=MAROON/ && !/HREF/ )
+                        {
+                            $new_kal = title_hash($_)
+                        }
+                    }
+
                     # Ignore specified differences.
                     foreach ( @filter )
                     {
@@ -202,6 +223,7 @@ foreach my $file ( @ARGV )
                             if ( $ignore )
                             {
                                 # Write accented letters back to nonaccented.
+                                # TODO do this for Hungarian as well
                                 for ( @old_result, @new_result )
                                 {
                                     tr/áéëíóúýÁÉËÍÓÚÝ/aeeiouyAEEIOUY/;
@@ -253,6 +275,12 @@ foreach my $file ( @ARGV )
 
                         elsif ( /kalendar/ )
                         {
+                            if ( $ignore )
+                            {
+                                $old_kal = '';
+                                $new_kal = ''
+
+                            }
                             for ( @old_result, @new_result )
                             {
                                 # Ad hoc!
@@ -333,7 +361,7 @@ foreach my $file ( @ARGV )
                     DIFF: while ( $diff->Next() )
                     {
                         next if $diff->Same();
-                        print STDOUT "\n$new_url\n" unless $printed ++;
+                        print "\n$new_url\n" unless $printed ++;
                         my @old = $diff->Items(1);
                         my @new = $diff->Items(2);
                         if ( @old && @new )
@@ -346,14 +374,9 @@ foreach my $file ( @ARGV )
                                 chomp $new if $new;
                                 if ( defined $old && defined $new )
                                 {
-                                    show_change($old, $new);
+                                    my $kal = show_change($old, $new);
 
-                                    # cf. /kalendar/ above
-                                    last DIFF if 
-                                        $baulk                      &&
-                                        $old =~ /<FONT COLOR=[^"]/  &&
-                                        $old !~ /COLOR=MAROON/      &&
-                                        $old !~ /HREF/;
+                                    last DIFF if $baulk && $kal && $old_kal ne $new_kal ;
                                 }
                                 elsif ( defined $old )
                                 {
@@ -432,6 +455,13 @@ sub show_change($$)
 {
     my $old = shift;
     my $new = shift;
+    my $kal = '';
+
+    if ( $old =~ /COLOR=[^"]/ && $old !~ /COLOR=MAROON/ && $old !~ /HREF/ )
+    {
+        $kal = ' CALENDAR'
+    }
+
     if ( length($old) + length($new) > 100 )
     {
         # Subdivide long diffs into words: they're (usually) text.
@@ -463,10 +493,29 @@ sub show_change($$)
                 $new_diff .= join('', $diff->Items(2));
             }
         }
-        print "CHANGED $old_diff TO $new_diff\n";
+        print "CHANGED$kal $old_diff TO $new_diff\n";
     }
     else
     {
-        print "CHANGED $old TO $new\n";
+        print "CHANGED$kal $old TO $new\n";
     }
+    return $kal;
+}
+
+# This routine should reduce a title line to a hash string such that
+# a) spelling or minor differences in nomenclature result in no change in the hash
+# b) sanctoral or computus changes do result in a change in the hash
+# (In [default] --baulk mode, on change of hash, subsequent changes are not reported.)
+# For now, we take the case-independent initial letters of important words.
+sub title_hash($)
+{
+    my $line = shift;
+    $line = $_;
+    $line =~ s/<[^<>]*>//g; # throw away HTML
+    $line =~ s/~.*//g;      # throw away trailing ~ (class of feast)
+    $line =~ s/\b\w{1,3}\b/ /g;  # throw away short words
+    $line =~ s/\b(\w)\w*/$1/g;  # keep only initials anyway
+    $line =~ s/\W//g;   # throw away nonletters
+    $line =~ tr/a-z/A-Z/;   # zap uppercase
+    return $line;
 }

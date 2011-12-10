@@ -711,7 +711,7 @@ sub precedence {
     %winner2 = %{officestring("$datafolder/$lang2/$winner", $flag)};
     $rule = $winner{Rule};
   }
-  			
+
   if ($winner =~ /Sancti/ && $rule =~ /Tempora none/i) {$commemoratio = $scriptura = '';}
   
   if ($commemoratio) {   
@@ -889,7 +889,7 @@ sub transfered {
   my $key;		
   foreach $key (keys %transfer) 
     {if ($key !~ /dirge/i && $transfer{$key} =~ /$str/i && $transfer{$key} !~ /$str\s*a/i  &&
-     $transfer{$key} !~ /\v\s*$/i) {return 1;}
+     $transfer{$key} !~ /v\s*$/i) {return 1;}
   }		 
   if (%transferspec) {
     foreach $key (keys %transferspec) 

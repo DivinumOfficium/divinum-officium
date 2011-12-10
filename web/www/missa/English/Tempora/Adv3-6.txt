@@ -1,16 +1,18 @@
 [Rank]
 Sabbato Quattuor temporum in Adventu;;Feria major;;2
 
-[Rank1960]
+[Rank] (si rubrica 1960)
 Sabbato Quattuor Temporum Adventus;;Feria major;;3
 
-[RankNewcal]
+[Rank] (si rubrica innovata)
 Sabbato infra Hebdomadam III Adventus;;Feria major;;2
 
 [Rule]
 Oratio Dominica
 no Gloria
 no Credo
+(si rubrica 1960 et missa breivor) LectioL1
+(rubrica 1960) celebranda aut forma longior aut forma brevior
 LectioL5
 Suffr=Maria1;Ecclesiae,Papa;;
 
@@ -22,9 +24,10 @@ O Shepherd of Israel, hearken, O Guide of the flock of Joseph!
 &Gloria
 v. Come, O Lord, from Your throne upon the Cherubim; if Your face shine upon us, then we shall be safe.
 
-[OratioL1]
+[Oratio]
 V. Let us kneel.
-R. Arise O God, You Who see how we are troubled by our evil tendencies, mercifully grant that we may find consolation in Your coming.
+R. Arise.
+O God, You Who see how we are troubled by our evil tendencies, mercifully grant that we may find consolation in Your coming.
 $Qui vivis
 
 [LectioL1]
@@ -38,9 +41,10 @@ $Deo Gratias
 At one end of the heavens He comes forth, and His course is to their other end.
 V. The heavens declare the glory of God, and the firmament proclaims His handiwork.
 
-[OratioL2]
+[OratioL1]
 V. Let us kneel.
-R. Arise Grant, we beseech You, almighty God, that we who are heavy-laden under the yoke of sin may be delivered from the bondage of old by the long-awaited new birth of Your only-begotten Son.
+R. Arise.
+Grant, we beseech You, almighty God, that we who are heavy-laden under the yoke of sin may be delivered from the bondage of old by the long-awaited new birth of Your only-begotten Son.
 $Qui tecum
 
 [LectioL2]
@@ -54,9 +58,10 @@ $Deo Gratias
 He has pitched His tent in the sun, and He comes forth like the groom from his bridal chamber.
 V. At one end of the heavens He comes forth, and His course is to their other end.
 
-[OratioL3]
+[OratioL2]
 V. Let us kneel.
-R. Arise Saddened by the guilt of our deeds, we, Your unworthy servants, beseech You, O Lord, to gladden us by the coming of Your only-begotten Son.
+R. Arise.
+Saddened by the guilt of our deeds, we, Your unworthy servants, beseech You, O Lord, to gladden us by the coming of Your only-begotten Son.
 $Qui tecum
 
 [LectioL3]
@@ -70,9 +75,10 @@ $Deo Gratias
 O Lord God of Hosts, restore us; if Your face shine upon us, then we shall be safe.
 V. Rouse Your power, O Lord, and come to save us.
 
-[OratioL4]
+[OratioL3]
 V. Let us kneel.
-R. Arise Grant, we beseech You, almighty God, that the coming festival of Your Son may bring us healing today and rewards eternal.
+R. Arise.
+Grant, we beseech You, almighty God, that the coming festival of Your Son may bring us healing today and rewards eternal.
 $Per eumdem
 
 [LectioL4]
@@ -86,9 +92,10 @@ $Deo Gratias
 Rouse Your power, O Lord, and come to save us.
 V. O Shepherd of Israel, hearken, O Guide of the flock of Joseph! From Your throne upon the Cherubim, shine forth before Ephraim, Benjamin and Manasse.
 
-[OratioL5]
+[OratioL4]
 V. Let us kneel.
-R. Arise Heed in Your mercy, we beseech You, O Lord, the prayers of Your people, that we, who are justly chastised for our sins, may be consoled by the coming of Your goodness.
+R. Arise.
+Heed in Your mercy, we beseech You, O Lord, the prayers of Your people, that we, who are justly chastised for our sins, may be consoled by the coming of Your goodness.
 $Qui vivis
 
 [LectioL5]
@@ -99,7 +106,7 @@ In those day, the Angel of the Lord went down into the furnace with Azaria and h
 !Dan. 3:52-56
 Blessed are You, O Lord, the God of our fathers, praiseworthy  and exalted above all forever. And blessed is Your holy and glorious name, praiseworthy and exalted above all for all ages. Blessed are You in the temple of Your holy glory, praiseworthy and glorious above all forever. Blessed are You on the holy throne of Your kingdom, praiseworthy and exalted above all forever. Blessed are You upon the sceptre of Your divinity, praiseworthy and exalted above all forever. Blessed are You Who look into the depths from Your throne upon the Cherubim, praiseworthy and exalted above all forever. Blessed are You Who walk upon the wings of the wind, and on the waves of the sea, praiseworthy and exalted above all forever. Let all Your Angels and Saints bless You, and praise You and exalt You above all forever. Let the heavens, the earth, the sea and all the things that are in them bless You, and praise You and exalt You above all forever. Glory be to the Father, and to the Son, and to the Holy Spirit, praiseworthy and exalted above all forever. As it was in the beginning, is now, and ever shall be, world without end. Amen. Praiseworthy and exalted above all forever. Blessed are You, O Lord, the God of our father, praiseworthy and exalted above all forever.
 
-[Oratio]
+[OratioL5]
 O God, You Who tempered the flames of fire for the three young men, mercifully grant that the flames of sin may not burn us, Your servants.
 $Per Dominum
 

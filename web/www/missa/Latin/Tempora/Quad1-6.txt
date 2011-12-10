@@ -1,16 +1,18 @@
 [Rank]
-Sabbato Quattuor temporum;;Feria major;;2
+Sabbato Quattuor Temporum Quadrigeismæ;;Feria major;;2
 
-[Rank1960]
-Sabbato Quattuor temporum;;Feria major;;3
+[Rank] (si rubrica 1960)
+Sabbato Quattuor Temporum Quadrigesimæ;;Feria major;;3
 
-[RankNewcal]
+[Rank] (si rubrica innovata)
 Sabbato infra Hebdomadam I in Quadragesima;;Feria major;;2
 
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
 Super popul
+(si rubrica 1960) celebranda aut forma longior aut forma brevior
+(si rubrica 1960 et missa brevior) LectioL1
 LectioL5
 
 [Introitus]
@@ -21,7 +23,7 @@ Dómine, Deus salútis meæ: in die clamávi, et nocte coram te.
 &Gloria
 v. Intret orátio mea in conspéctu tuo: inclína aurem tuam ad precem meam, Dómine.
 
-[OratioL1]
+[Oratio]
 V. Flectámus génua. 
 R. Leváte. 
 Pópulum tuum, quaesumus, Dómine, propítius réspice: atque ab eo flagella tuæ iracúndiæ cleménter avérte.
@@ -38,7 +40,7 @@ $Deo Gratias
 Propítius esto, Dómine, peccátis nostris: ne quando dicant gentes: Ubi est Deus eórum?
 V. Adjuva nos, Deus, salutáris noster: et propter honórem nóminis tui, Dómine, líbera nos.
 
-[OratioL2]
+[OratioL1]
 V. Flectámus génua. R. Leváte. Potéctor noster, áspice, Deus: ut, qui malórum nostrórum póndere prémimur, percépta misericórdia, líbera tibi mente famulémur.
 $Per Dominum
 
@@ -51,10 +53,9 @@ $Deo Gratias
 [GradualeL2]
 !Ps 83:10; 83:9
 Protéctor noster, áspice, Deus, et réspice super servos tuos.
-V.
-Dómine, Deus virtútum, exáudi preces servórum tuórum.
+V.  Dómine, Deus virtútum, exáudi preces servórum tuórum.
 
-[OratioL3]
+[OratioL2]
 V. Flectámus génua. 
 R. Leváte. 
 Adésto, quaesumus, Dómine, supplicatiónibus nostris: ut esse, te largiénte, mereámur et inter próspera húmiles, et inter advérsa secúri.
@@ -71,7 +72,7 @@ $Deo Gratias
 Convértere, Dómine, aliquántulum, et deprecáre super servos tuos.
 V. Dómine, refúgium factus es nobis, a generatióne et progénie.
 
-[OratioL4]
+[OratioL3]
 V. Flectámus génua. 
 R. Leváte. 
 Preces pópuli tui, quaesumus, Dómine, cleménter exáudi: ut, qui juste pro peccátis nostris afflígimur, pro tui nóminis glória misericórditer liberémur.
@@ -88,7 +89,7 @@ $Deo Gratias
 Dirigátur orátio mea sicut incénsum in conspéctu tuo, Dómine. 
 V. Elevátio mánuum meárum sacrifícium vespertínum.
 
-[OratioL5]
+[OratioL4]
 V. Flectámus génua. 
 R. Leváte. 
 Atiónes nostras, quaesumus, Dómine, aspirándo praeveni, et adjuvándo proséquere: ut cuncta nostra orátio et operátio a te semper incípiat, et per te coepta finiátur.
@@ -102,7 +103,7 @@ _
 !Hymnus.
 Dan 3:52-53 Benedíctus es, Dómine, Deus patrum nostrórum. Et laudábilis et gloriósus in saecula. Et benedíctum nomen glóriæ tuæ, quod est sanctum. Et laudábile et gloriósum in saecula. Benedíctus es in templo sancto glóriæ tuæ. Et laudábilis et gloriósus in saecula. Benedíctus es super thronum sanctum regni tui. Et laudábilis et gloriósus in saecula. Benedíctus es super sceptrum divinitátis tuæ. Et laudábilis et gloriósus in saecula. Benedíctus es, qui sedes super Chérubim, íntuens abýssos. Et laudábilis et gloriósus in saecula. Benedíctus es, qui ámbulas super pennas ventórum et super undas maris. Et laudábilis et gloriósus in saecula. Benedícant te omnes Angeli et Sancti tui. Et laudent te et gloríficent in saecula. Benedícant te coeli, terra, mare, et ómnia quæ in eis sunt. Et laudent te et gloríficent in saecula. Glória Patri, et Fílio, et Spirítui Sancto. Et laudábili et glorióso in saecula. Sicut erat in princípio, et nunc, et semper: et in saecula sæculórum. Amen. Et laudábili et glorióso in saecula. Benedíctus es, Dómine, Deus patrum nostrórum. Et laudábilis et gloriósus in saecula.
 
-[Oratio]
+[OratioL5]
 Deus, qui tribus púeris mitigásti flammas ígnium: concéde propítius; ut nos fámulos tuos non exúrat flamma vitiórum.
 $Per Dominum
 

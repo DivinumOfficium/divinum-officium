@@ -1,8 +1,8 @@
 [Rank]
-Sabbato Quattuor temporum in Adventu;;Feria major;;2
+Sabbato Quattuor Temporum in Adventu;;Feria major;;2
 
 [Rank1960]
-Sabbato Quattuor temporum in Adventu;;Feria major;;3
+Sabbato Quattuor Temporum in Adventu;;Feria major;;3
 
 [RankNewcal]
 Sabbato infra Hebdomadam III Adventus;;Feria major;;2
@@ -11,6 +11,8 @@ Sabbato infra Hebdomadam III Adventus;;Feria major;;2
 Oratio Dominica
 no Gloria
 no Credo
+(rubrica 1960 et missa brevior) LectioL1
+(rubrica 1960) celebranda aut forma longior aut forma brevior
 LectioL5
 Suffr=Maria1;Ecclesiae,Papa;;
 
@@ -24,7 +26,7 @@ O Shepherd of Israel, hearken, O Guide of the flock of Joseph!
 v. Come, O Lord, from Your throne upon the Cherubim; if Your face shine upon us,~
 then we shall be safe.
 
-[OratioL1]
+[Oratio]
 V. Let us kneel. 
 R. Arise 
 O God, You Who see how we are troubled by our evil~
@@ -43,7 +45,7 @@ At one end of the heavens He comes forth, and His course is to their other end.
 V. The heavens declare the glory of God, and the firmament proclaims His~
 handiwork.
 
-[OratioL2]
+[OratioL1]
 V. Let us kneel. 
 R. Arise 
 Grant, we beseech You, almighty God, that we who are~
@@ -64,7 +66,7 @@ bridal chamber.
 V. At one end of the heavens He comes forth, and His course is to their other~
 end. 
 
-[OratioL3]
+[OratioL2]
 V. Let us kneel. 
 R. Arise 
 Saddened by the guilt of our deeds, we, Your unworthy~
@@ -84,7 +86,7 @@ O Lord God of Hosts, restore us; if Your face shine upon us, then we shall be~
 safe.
 V. Rouse Your power, O Lord, and come to save us.
 
-[OratioL4]
+[OratioL3]
 V. Let us kneel. 
 R. Arise 
 Grant, we beseech You, almighty God, that the coming~
@@ -103,7 +105,7 @@ Rouse Your power, O Lord, and come to save us.
 V. O Shepherd of Israel, hearken, O Guide of the flock of Joseph! From Your~
 throne upon the Cherubim, shine forth before Ephraim, Benjamin and Manasse.
 
-[OratioL5]
+[OratioL4]
 V. Let us kneel. 
 R. Arise 
 Heed in Your mercy, we beseech You, O Lord, the~
@@ -119,7 +121,8 @@ Az Úr angyala pedig leszálla Azariással és társaival a kemenczébe, és a tûz láng
 !Dan. 3:52-56
 Áldott vagy, Uram, Atyáink Istene! dicséretes, dicsõséges és magasztos mindörökké; és áldott a te dicsõséged szent neve, dicséretes és magasztos mindörökké. Áldott vagy te dicsõséged szent templomában, fölötte dicséretes és fölötte dicsõséges mindörökké. Áldott vagy te országod királyi székében, fölötte dicséretes és fölötte magasztos mindörökké. Áldott vagy te, ki átlátod a mélységeket, és a kerubokon ülsz, dicséretes és magasztos mindörökké. Áldott vagy az ég erõsségében, dicséretes és dicsõséges mindörökké. 
 &#65279;
-[Oratio]
+
+[OratioL5]
 O God, You Who tempered the flames of fire for the three young men, mercifully~
 grant that the flames of sin may not burn us, Your servants.
 $Per Dominum

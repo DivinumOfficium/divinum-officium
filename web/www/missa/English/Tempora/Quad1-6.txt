@@ -1,8 +1,8 @@
 [Rank]
-Sabbato Quattuor temporum;;Feria major;;2
+Sabbato Quattuor Temporum Quadrigesimæ;;Feria major;;2
 
 [Rank1960]
-Sabbato Quattuor temporum;;Feria major;;3
+Sabbato Quattuor Temporum Quadrigesimæ;;Feria major;;3
 
 [RankNewcal]
 Sabbato infra Hebdomadam I in Quadragesima;;Feria major;;2
@@ -11,6 +11,8 @@ Sabbato infra Hebdomadam I in Quadragesima;;Feria major;;2
 no Gloria
 Suffragium=Sanctorum;Vivis;;
 Super popul
+(rubrica 1960) celebranda aut forma longior aut forma brevior
+(rubrica 1960 et missa brevior) LectioL1
 LectioL5
 
 [Introitus]
@@ -21,7 +23,7 @@ O Lord, the God of my salvation, by day I cry out, at night I clamor in Your pre
 &Gloria
 v. Let my prayer come before You; incline Your ear to my call for help, O Lord.
 
-[OratioL1]
+[Oratio]
 V. Let us kneel.
 R. Arise. 
 Look graciously upon Your people, we beseech You, O Lord, and in Your mercy turn away from them the scourges of Your wrath.
@@ -38,7 +40,7 @@ $Deo gratias
 Pardon our sins, O Lord; why should the nations say, Where is their God?
 V. Help us, O God, our Savior; because of the glory of Your name, O Lord, deliver us.
 
-[OratioL2]
+[OratioL1]
 V. Let us kneel.
 R. Arise. 
 Look upon us, O God our protector, so that we who are heavy laden with the burden of our sins, having received Your mercy, may serve You with untroubled minds.
@@ -55,7 +57,7 @@ $Deo gratias
 Behold, O God, our Protector, and look upon Your servants.
 V. O Lord of Hosts, hear the prayer of Your servants.
 
-[OratioL3]
+[OratioL2]
 V. Let us kneel.
 R. Arise. Heed our humble prayers, we beseech You, O Lord, that by Your bounty we may have grace to be humble in prosperity and untroubled in the midst of adversity.
 $Per Dominum
@@ -71,7 +73,7 @@ $Deo gratias
 Return, O Lord! How long? Have pity on Your servants!
 V. O Lord, You have been our refuge through all generations.
 
-[OratioL4]
+[OratioL3]
 V. Let us kneel.
 R. Arise. 
 Have mercy upon us, O God of the universe, and behold us, and show us the light of Your mercies; and put all the nations in dread of You that have not sought after You. Let them know that there is no God beside You, and show forth Your wonders.
@@ -88,7 +90,7 @@ $Deo gratias
 Let my prayer come like incense before You, O Lord.
 V. The lifting up of my hands, like the evening sacrifice.
 
-[OratioL5]
+[OratioL4]
 V. Let us kneel.
 R. Arise. 
 O Lord, we beseech You, precede our actions with Your favor and accompany them by Your help, so that each prayer and work of ours may always begin with You and, once begun, may be accomplished through You.
@@ -103,7 +105,7 @@ _
 !Dan. 3:52-56
 Blessed are You, O Lord, the God of our father, praiseworthy and exalted above all forever. And blessed is Your holy and glorious name, praiseworthy and exalted above all for all ages. Blessed are You in the temple of Your holy glory, praiseworthy and glorious above all forever. Blessed are You on the holy throne of Your kingdom, praiseworthy and exalted above all forever. Blessed are You upon the sceptre of Your divinity, praiseworthy and exalted above all forever. Blessed are You Who look into the depths from Your throne upon the Cherubim, praiseworthy and exalted above all forever. Blessed are You Who walk upon the wings of the wind, and on the waves of the sea, praiseworthy and exalted above all forever. Let all Your Angels and Saints bless You, and praise You and exalt You above all forever. Let the heavens, the earth, the sea and all the things that are in them bless You, and praise you and exalt You above all forever. Glory be to the Father, and to the Son, and to the Holy Spirit, praiseworthy and exalted above all forever. As it was in the beginning, is now, and ever shall be, world without end. Amen. Praiseworthy and exalted above all forever. Blessed are You, O Lord, the God of our father, praiseworthy and exalted above all forever.
 
-[Oratio]
+[OratioL5]
 O God, Who tempered the flames of fire for the three young men, mercifully grant that the flames of sin may burn us, Your servants.
 $Per Dominum
 

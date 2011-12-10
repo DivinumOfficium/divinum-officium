@@ -1,10 +1,12 @@
 [Rank]
 Sabbato Quattuor Temporum Septembris;;Feria major;;2
 
-[Rank1960]
+[Rank] (si rubrica 1960)
 Sabbato Quattuor Temporum Septembris;;Feria major;;3
 
 [Rule]
+(rubrica 1960) celebranda aut forma longior aut forma brevior
+(rubrica 1960 et missa brevior) LectioL1
 LectioL5
 
 [Introitus]
@@ -15,7 +17,7 @@ Come, let us sing joyfully to the Lord; let us acclaim God our Savior.
 &Gloria
 v. Come, let us bow down in worship to God; let us kneel before the Lord. Let us weep before Him Who made us; for He is the Lord our God.
 
-[OratioL1]
+[Oratio]
 V. Let us kneel. 
 R. Arise. 
 Almighty, everlasting God, You Who cure body and soul through healing self-denial, we humbly entreat Your majesty to hear favorably the devout prayer of those who fast, and to grant us help for the present and the future.
@@ -30,7 +32,7 @@ $Deo gratias
 Pardon our sins, O Lord; why should the nations say, Where is their God?
 V. Help us, O God our Savior; because of the glory of Your name, O Lord, deliver us.
 
-[OratioL2]
+[OratioL1]
 V. Let us kneel. 
 R. Arise. 
 Grant us, we beseech You, almighty God, that by fasting we may be filled with Your grace, and by abstinence we may be made stronger than all our enemies.
@@ -46,7 +48,7 @@ $Deo gratias
 Behold, O God, our Protector, and look upon Your servants.
 V. O Lord God of Hosts, hear the prayers of Your servants.
 
-[OratioL3]
+[OratioL2]
 V. Let us kneel. 
 R. Arise. 
 Protect Your people, we beseech You, O Lord, so that we may by Your gift, obtain those means of eternal salvation which we seek through Your inspiration.
@@ -62,7 +64,7 @@ $Deo gratias
 Return, O Lord! How long? Have pity on Your servants.
 V. O Lord, You have been our refuge through all generations.
 
-[OratioL4]
+[OratioL3]
 V. Let us kneel. 
 R. Arise. 
 Grant, we beseech You, almighty God, that we may so fast from bodily food as to abstain also from the sins that beset us.
@@ -78,7 +80,7 @@ $Deo gratias
 Let my prayer come like incense before You, O Lord.
 V. The lifting up of my hands, like the evening sacrifice.
 
-[OratioL5]
+[OratioL4]
 V. Let us kneel. 
 R. Arise. 
 As You give us the grace, O Lord, to offer You our solemn fast, grant us, we beseech You, the support of Your forgiveness.
@@ -92,7 +94,7 @@ _
 !Dan. 3:52-56 
 Blessed are You, O Lord, the God of our fathers, praiseworthy    and exalted above all forever. And blessed is Your holy and glorious name, praiseworthy and  exalted above all for all ages. Blessed are You in the temple of Your holy glory, praiseworthy  and glorious above all forever. Blessed are You on the holy throne of Your kingdom, praiseworthy and exalted above all forever. Blessed are You upon the sceptre of Your divinity, praiseworthy and exalted above all forever. Blessed are You Who look into the depths from Your throne upon the Cherubim, praiseworthy and exalted above all forever. Blessed are You Who walk upon the wings of the wind, and on the waves of the sea, praiseworthy and exalted above all forever. Let all Your Angels and Saints bless You, and praise You and exalt You above all forever. Let the heavens, the earth, the sea and all the things that are in them bless You, and praise You and exalt You above all forever. Glory be to the Father, and to the Son, and to the Holy Spirit, praiseworthy and exalted above all forever. As it was in the beginning, is now, and ever shall be, world without end. Amen. Praiseworthy and exalted above all forever. Blessed are You, O Lord, the God of our father, praiseworthy and exalted above all forever.
 
-[Oratio]
+[OratioL5]
 O God, You Who tempered the flames of fire for the three young men, mercifully grant that the flames of sin may not burn us, Your servants.
 $Per Dominum
 
