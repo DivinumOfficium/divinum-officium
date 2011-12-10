@@ -224,7 +224,7 @@ $title .= " files";
                                       
   if (@txlat = do_read("$dirname1/$filename1.$ext1")) {
        $_ = "$_\n" for @txlat;
-   } elsif ($folder1 =~ /program/ && (@txlat = do_read("$Bin/$filename1.$ext1")) {
+   } elsif ($folder1 =~ /program/ && (@txlat = do_read("$Bin/$filename1.$ext1"))) {
        $_ = "$_\n" for @txlat;
    } else {$error .= "$dirname1/$filename1.$ext1 " .
       "or $Bin/$filename1 cannot open";}

@@ -63,10 +63,10 @@ sub specials {
 	  } else {next;}
     }
 
-    if ($item =~/^\s*#/) {
-      $label = $item;   
+    if ($item =~/^\s*#(.*)/) {
+      $label = $1;
       $label = translate_label($label, $lang);	
-      push (@s, $label);	
+      push (@s, "#$label");	
       next;
     }
 
@@ -114,22 +114,32 @@ sub setcomment {
 
 
 #*** translate_label($label, $lang) 
-# finds the equivalent of the latin label in translate file
-sub translate_label { 
-  my $item = shift;
-  my $lang = shift;   
+# Finds the equivalent of the latin label in translate file
+# Also changes 'Gradual' to 'Alleluja' during the Pascal season.
+# TODO this inefficiently pulls the whole translate file every time!
+sub translate_label
+{ 
+    my $item = shift;
+    my $lang = shift;   
 
-  $item =~ s/\s*$//;              
-  if ($lang !~ /Latin/i) {
-    my %p = %{setupstring("$datafolder/$lang/Ordo/Prayers.txt")};
-	if (exists($p{$item})) {$item = $p{$item};}
-  }
-  if ($item =~ /Gradual/i) {
-    if ($dayname[0] =~ /Quad/i || $winner{Rank} =~ /(Quattuor|Quatuor)/i) {$item = '# Tractus';}
-	elsif ($dayname[0] =~ /Pasc/i && $winner !~ /Defunct/i) {$item = '# Alleluia';}
-  }
-  $item =~ s/\n//g;   
-  return $item;
+    $item =~ s/\s*$//;              
+    if ($lang !~ /Latin/i)
+    {
+        my %p = %{setupstring("$datafolder/$lang/Ordo/Prayers.txt")};
+        $item = exists($p{$item})? $p{$item}: $item;
+    }
+
+    if ($item =~ /Gradual/i)
+    {
+        #if ($dayname[0] =~ /Quad/i || (0 && $winner{Rank} =~ /(Quattuor|Quatuor)/i)) {$item = '# Tractus';}
+        #elsif ($dayname[0] =~ /Pasc/i && $winner !~ /Defunct/i) {$item = '#Alleluia';}
+        if ( $dayname[0] =~ /Pasc/i && $winner !~ /Defunct/i )
+        {
+            $item = $lang =~ /Latin/i ? 'Alleluja' : 'Alleluia';
+        }
+    }
+    $item =~ s/\n//g;   
+    return $item;
 }
 
 
@@ -814,31 +824,40 @@ sub gloriflag {
   return $flag;
 }
 
-sub GloriaL {
-  my $lang = shift; 
-  if ($winner{Rule} !~ /LectioL([0-9])/i) {return '';}
-  my $n = $1; 
-  my $i;
-  my %w = (columnsel($lang) ? %winner : %winner2); 
-  my $s = ''; 
-  for ($i = 1; $i <= $n; $i++) {
-     $s .= "\n#Oratio\[$i\]\n" . "\$Oremus\n";
-     $s .= $w{"OratioL$i"} . "\n_\n";
-     $s .= "\n! " . translate_label('Lectio', $lang) . " [$i]\n";
-     $s .= $w{"LectioL$i"} . "\n_\n";
-     if (exists($w{"GradualeL$i"})) {
-	   $s .= "\n! " . translate_label('Graduale', $lang) . " [$i]\n";
-	   $s .= $w{"GradualeL$i"} . "\n_\n_\n";
-     }
-  }
-  if ($s && $s !~ /^\s*$/) {
-    while ($s =~ /\((.*?)\)/s) { 
-      my $a = setfont($smallfont, $1); 
-      $s = "$`$a$'";
+# This Proper &LectionesTemporum handles ember day readings which precede the Collect
+sub LectionesTemporum
+{
+    my $lang = shift; 
+
+    # Generate nothing unless there's a LectioL rule.
+    return '' if $winner{Rule} !~ /LectioL([0-9])/i;
+    my $n = $1; 
+    my $i;
+    my %w = (columnsel($lang) ? %winner : %winner2); 
+    my $s = ''; 
+    for ($i = 1; $i <= $n; $i++)
+    {
+        $s .= "\n_\n#" . translate_label('Lectio', $lang) . "\n";
+        $s .= $w{"LectioL$i"} . "\n_\n";
+        if ( exists($w{"GradualeL$i"}) )
+        {
+            $s .= "\n#" . translate_label('Graduale', $lang) . "\n";
+            $s .= $w{"GradualeL$i"} . "\n_\n";
+        }
+        $s .= "#" . translate_label('Oratio', $lang) . "\n";
+        $s .= "\$Oremus\n";
+        $s .= $w{"OratioL$i"} . "\n_\n_\n";
     }
-  }
- $s =~ s/#/!!/g;
- return $s; 
+    if ( $s && $s !~ /^\s*$/ )
+    {
+        while ($s =~ /\((.*?)\)/s)
+        { 
+            my $a = setfont($smallfont, $1); 
+            $s = "$`$a$'";
+        }
+    }
+    $s =~ s/#/!!/g;
+    return $s; 
 }
 
 sub GloriaM {
@@ -869,7 +888,6 @@ sub collect {
  my $lang = shift; 
  return oratio($lang, 'Oratio');
 }
-
 
 sub lectio {
   my $lang = shift;

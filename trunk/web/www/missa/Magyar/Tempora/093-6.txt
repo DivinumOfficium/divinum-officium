@@ -5,6 +5,8 @@ Sabbato Quattuor Temporum Septembris;;Feria major;;2
 Sabbato Quattuor Temporum Septembris;;Feria major;;3
 
 [Rule]
+(rubrica 1960) celebranda aut forma longior aut forma brevior
+(si missa brevior et rubrica 1960) LectioL1
 LectioL5
 
 [Introitus]
@@ -15,7 +17,7 @@ Come, let us sing joyfully to the Lord; let us acclaim God our Savior.
 &Gloria
 v. Come, let us bow down in worship to God; let us kneel before the Lord. Let us weep before Him Who made us; for He is the Lord our God.
 
-[OratioL1]
+[Oratio]
 V. Let us kneel. 
 R. Arise. 
 Almighty, everlasting God, You Who cure body and soul through healing self-denial, we humbly entreat Your majesty to hear favorably the devout prayer of those who fast, and to grant us help for the present and the future.
@@ -32,7 +34,7 @@ $Deo gratias
 Pardon our sins, O Lord; why should the nations say, Where is their God?
 V. Help us, O God our Savior; because of the glory of Your name, O Lord, deliver us.
 
-[OratioL2]
+[OratioL1]
 V. Let us kneel. 
 R. Arise. 
 Grant us, we beseech You, almighty God, that by fasting we may be filled with Your grace, and by abstinence we may be made stronger than all our enemies.
@@ -49,7 +51,7 @@ $Deo gratias
 Behold, O God, our Protector, and look upon Your servants.
 V. O Lord God of Hosts, hear the prayers of Your servants.
 
-[OratioL3]
+[OratioL2]
 V. Let us kneel. 
 R. Arise. 
 Protect Your people, we beseech You, O Lord, so that we may by Your gift, obtain those means of eternal salvation which we seek through Your inspiration.
@@ -66,7 +68,7 @@ $Deo gratias
 Return, O Lord! How long? Have pity on Your servants.
 V. O Lord, You have been our refuge through all generations.
 
-[OratioL4]
+[OratioL3]
 V. Let us kneel. 
 R. Arise. 
 Grant, we beseech You, almighty God, that we may so fast from bodily food as to abstain also from the sins that beset us.
@@ -83,7 +85,7 @@ $Deo gratias
 Let my prayer come like incense before You, O Lord.
 V. The lifting up of my hands, like the evening sacrifice.
 
-[OratioL5]
+[OratioL4]
 V. Let us kneel. 
 R. Arise. 
 As You give us the grace, O Lord, to offer You our solemn fast, grant us, we beseech You, the support of Your forgiveness.
@@ -107,7 +109,7 @@ _
 Glória Patri, et Fílio, et Spirítui Sancto. Et laudábili et glorióso in saecula. Sicut erat in princípio, et nunc, et semper: et in saecula sæculórum. Et laudábili et glorióso in saecula. 
 Benedíctus es, Dómine, Deus patrum nostrórum. Et laudábilis et gloriósus in saecula.
 
-[Oratio]
+[OratioL5]
 O God, You Who tempered the flames of fire for the three young men, mercifully grant that the flames of sin may not burn us, Your servants.
 $Per Dominum
 
