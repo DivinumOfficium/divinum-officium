@@ -168,10 +168,8 @@ sub vero($)
 
             next AUTEM unless $subject && $predicate && &$predicate(&$subject());
         }
-        print STDERR "vero=1\n";
         return ($vero=1);
     }
-    print STDERR "vero=0\n";
     return ($vero=0);
 }
 
@@ -237,8 +235,6 @@ sub setupstring($)
                 if ( $l =~ /\]\s*\((.*)\)/ )
                 {
                     $key_condition = $1;
-                    print STDERR "\$new_key = $new_key\n";
-                    print STDERR "\$key_condition = $key_condition\n";
                 }
                 else
                 {
