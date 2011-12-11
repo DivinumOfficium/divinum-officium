@@ -14,7 +14,8 @@ $a = 1;
 # then break the text into units (separated by double newline)
 # resolves the references (formatting characters, prayers hash references and subs) 
 #and prints the result
-sub ordo {
+sub ordo
+{
              
 $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;    
 #???%translate = %{setupstring("$datafolder/$tlang/Ordo/Translate.txt")}; 
@@ -138,7 +139,7 @@ sub resolve_refs {
     $line = $t[$it];
 
     #$ and & references
-    if ($line !~ /(callpopup|rubrics)/i && $line =~ /[\$\&]/) {     #??? was " /[\#\$\&]/) {  
+    if ($line !~ /(callpopup|rubrics)/i && $line =~ /[\$\&]/) {     #??? was " /[\#\$\&]/)   
       $line =~ s/\.//g;   
       $line =~ s/\s+$//;
       $line =~ s/^\s+//;   
