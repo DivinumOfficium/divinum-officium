@@ -1,11 +1,11 @@
 [Rank]
-Beatae Mariae Virginis Guadalupae;;Duplex;;3;;vide C11
+Beatae Mariae Virginis de Guadalupe;;Duplex;;3;;vide C11
 
 [Rank1960]
-Beatae Mariae Virginis Guadalupae;;Duplex;;3;;vide C11
+Beatae Mariae Virginis de Guadalupe;;Duplex;;3;;vide C11
 
 [RankNewcal]
-Beatae Mariae Virginis Guadalupae;;Duplex optional;;2.5;;vide C11
+Beatae Mariae Virginis de Guadalupe;;Duplex optional;;2.5;;vide C11
 
 [Rule]
 vide C11;
@@ -56,6 +56,33 @@ Egressus es * in salutem populi tui, in salutem cum Christo tuo;;96
 Gloriosa * dicta sunt de te, civitas Dei: fundavit te Dominus in montibus sanctis;;97
 V. Filii tui de longe venient.
 R. Et filiae tuae de latere surgent.
+
+[Hymnus Matutinum]
+v. Praeclara custos Virginum,
+Intacta mater Numinis,
+Caelestis aulae janua,
+Spes nostra, caeli gaudium.
+_
+Inter rubeta lilium,
+Columba formossisima,
+Virga e radice germinans
+Nostro medelam vulneri,
+_
+Turris draconi impervia,
+Amica stella naufragis,
+Tuere nos a fraudibus,
+Tuaque luce dirige.
+_
+Erroris umbras discute,
+Syrtes dolosas amove,
+Fluctus tot inter, deviis
+Tutam reclude semitam.
+_
+Jesu, tibi sit gloria,
+Qui natus es de Virgine,
+Cum Patre et almo Spiritu,
+In sempiterna saecula.
+Amen.
 
 [Lectio1]
 De Libro Ecclesiatici
@@ -144,7 +171,7 @@ R. Ut sit ibi nomen meum, et permaneant oculi mei, et cor meum ibi cunctis diebu
 R. Ut sit ibi nomen meum, et permaneant oculi mei, et cor meum ibi cunctis diebus.
 
 [Lectio94]
-Mexici, in colle Tepeyacensi, anno millesimo quingentesimo trigesimo primo Deipara Virgo Maria Joanni Didaco neophyto, uti pie traditur, sese re videndam  praebuit,  eique  ad antistitem Joannem de Zumarraga mandatum dedit, quod et instanter iteravit, de aede sibimet inibi construenda. Episcopus vero signum expetiit. Mox neophytum  patruo morituro sacramenta longinquius ab apparitionis loco quaerentem, tertio visu dignatur alma Mater, a de patrui sanitate serenat, rosasque extra tempus obortas, in eius pallio compositas, ad episcopum deferri iubet. Cuius in conspectu rosis effusis, Mariae imago, ipsi pallio impressa, uti traditur, mirum in modum praesentibus apparuit. Quae in sacello episcopali primum asservata, dein ad exstructam aedem in colle Tepeyacensi translata, denique in magnifico templo excepta est, quo turmatim plebes Mexicanae magis magisque convenire coeperunt, venerationis gratia et frequentiae miraculorum. Ideoque tamquam praesentissimum praesidium Mexicani antistites, universo populo plaudente, beatam Virginem Mariam de Guadalupe in primariam Patronam gentis Mexicanae elegerunt, quod Benedicus decimus quartus apostolica auctoritate rite confirmavit. Leo tertius decimus sacram effigiem aurea corona, Columbi recurrente die, anno millesino octingentesimo nonagesimo quinto per Mexicanum archiepiscopum decoravit. Sanctus vero Pius decimus beatam Virginem Guadalupensem universae Americae Latinae Patronam declaravit.
+Mexici, in colle Tepeyacensi, anno millesimo quingentesimo trigesimo primo Deipara Virgo Maria Joanni Didaco neophyto, uti pie traditur, sese videndam praebuit, eique ad antistitem Joannem de Zumarraga mandatum dedit, quod et instanter iteravit, de aede sibimet inibi construenda. Episcopus vero signum expetiit. Mox neophytum patruo morituro sacramenta longinquius ab apparitionis loco quaerentem, tertio visu dignatur alma Mater, de patrui sanitate serenat, rosasque extra tempus obortas, in eius pallio compositas, ad episcopum deferri iubet. Cuius in conspectu rosis effusis, Mariae imago, ipsi pallio impressa, uti traditur, mirum in modum praesentibus apparuit. Quae in sacello episcopali primum asservata, dein ad exstructam aedem in colle Tepeyacensi translata, denique in magnifico templo excepta est, quo turmatim plebes Mexicanae magis magisque convenire coeperunt, venerationis gratia et frequentiae miraculorum. Ideoque tamquam praesentissimum praesidium Mexicani antistites, universo populo plaudente, beatam Virginem Mariam de Guadalupe in primariam Patronam gentis Mexicanae elegerunt, quod Benedictus decimus quartus apostolica auctoritate rite confirmavit. Leo tertius decimus sacram effigiem aurea corona, Columbi recurrente die, anno millesimo octingentesimo nonagesimo quinto per Mexicanum archiepiscopum decoravit. Sanctus vero Pius decimus beatam Virginem Guadalupensem universae Americae Latinae Patronam declaravit.
 &teDeum
 
 [Lectio7]
@@ -178,11 +205,11 @@ Ineffabili siquidem artificio Spiritus superveniens tantae humilitati magnanimit
 &teDeum.
 
 [Ant Laudes]
-v. Quae est ista * quae processit sicut sol, et formosa tamquam Jerusalem
-Viderunt eam * filiae Sion vernantem in floribus rosarum, et beatissimam praedicaverunt
-Flores apparuerunt * in terra nostra: te laudamus, Sancta Dei Genetrix
-Cantate ei * canticum novum: Annuntiate inter gentes gloriam ejus
-Tu gloria * Jerusalem, tu laetitia Israël, tu honorificentia populi tui
+Quae est ista * quae processit sicut sol, et formosa tamquam Jerusalem?
+Viderunt eam * filiae Sion vernantem in floribus rosarum, et beatissimam praedicaverunt.
+Flores apparuerunt * in terra nostra: te laudamus, Sancta Dei Genetrix.
+Cantate ei * canticum novum: Annuntiate inter gentes gloriam ejus.
+Tu gloria * Jerusalem, tu laetitia Israël, tu honorificentia populi tui.
 
 [Capitulum Laudes]
 !Prov 8:34-35
