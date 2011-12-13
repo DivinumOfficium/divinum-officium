@@ -784,7 +784,8 @@ sub psalmi_major {
 	  ($hora =~ /Laudes/i && ($winner =~ /sancti/i || exists($winner{'Ant Laudes'})) && 
 	   $rule !~ /Feria/i) ? 'C' : $dayofweek;
     @psalmi = split("\n", $psalmi{"Daya$dow $name"});  
-  } 			 
+
+  }
   else { @psalmi = split("\n", $psalmi{"Day$dayofweek $name"});}   
 	                              
   $comment = 0;                                      

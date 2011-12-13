@@ -494,10 +494,8 @@ sub psalm {
     if ($num > 150 && $num < 300 && (@lines = do_read($fname)))
     {
         $line = $lines[0];
-        print STDERR ">> \$line = '$line'\n";
         if ($line =~ /\s*([a-z]+\s+[a-z_]+) /i)
         {
-            print STDERR ">>> beep\n";
             $t = setfont($redfont, $1) . settone(1) . $pnum;
         }   
     }
