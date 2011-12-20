@@ -106,6 +106,73 @@ sub setsetupvalue {
   $setup{$name} = $script;  
 }
 
+our %tempora =
+(
+    Nat => 'Nativitatis',
+    Epi => 'Epiphaniæ',
+    Quad => 'Quadrigesimæ',
+    Pasc => 'Paschali',
+    Pent => 'post Pentecosten',
+);
+
+our %subjects =
+(
+    rubricis    => sub { $version },
+    rubrica     => sub { $version },
+    tempore     => sub { $dayname[0] =~ /(\pL+)/; $tempora{$1} },
+    missa       => sub { $missanumber },
+);
+
+our %predicates =
+(
+    1960        => sub { shift =~ /1960/ },
+    innovata    => sub { shift =~ /NewCal/i },
+    innovatis   => sub { shift =~ /NewCal/i },
+    paschali    => sub { shift =~ /Pasc/i },
+    prima       => sub { shift == 1 },
+    secunda     => sub { shift == 2 },
+    tertia      => sub { shift == 3 },
+    longior     => sub { shift == 1 },
+    brevior     => sub { shift == 2 },
+);
+
+# parse and evaluate a condition
+sub vero($)
+{
+    my $condition = shift;
+    my $vero;
+
+    $condition =~ s/^\s*//;
+    $condition =~ s/\s*$//;
+
+    # The empty condition is _true_ : safer, since previously conditions were's used.
+    return 1 unless $condition;
+
+    # Remove noise words
+    $condition =~ s/\b(est|in|cum|si|sed)\b//g;
+
+    # aut binds tighter than et
+    AUTEM: for ( split /\baut\b/, $condition )
+    {
+        for ( split /\bet\b/ )
+        {
+            my ($subject, $predicate) = split;
+
+            # Subject is optional: defaults to tempore
+            ($predicate, $subject) = ($subject, 'tempore') if not $predicate;
+
+            $predicate = $predicates{$predicate};
+            $subject = $subjects{$subject};
+
+            next AUTEM unless $subject && $predicate && &$predicate(&$subject());
+        }
+        print STDERR "vero=1\n";
+        return ($vero=1);
+    }
+    print STDERR "vero=0\n";
+    return ($vero=0);
+}
+
 #*** setsetup($name, $value1, $value2 ...)
 # set the values into $setup{$name} hash item
 sub setsetup {

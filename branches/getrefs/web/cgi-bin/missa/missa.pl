@@ -287,7 +287,7 @@ PrintTag
 @sel = ();
 @votive = ('hodie');
 if (opendir(DIR, "$datafolder/Latin/Votive")) {
-  @a = readdir(DIR); 
+  @a = sort readdir(DIR); 
   closedir DIR;
   my $item;
   foreach $item (@a) {if ($item =~ /\.txt/i) {$item =~ s/\.txt//i; push(@votive, $item);}} 
@@ -336,8 +336,8 @@ PrintTag
 print "</FONT></P>\n";
 
 #common end for programs
-  if ($error) {print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT><\P>\n";}
-  if ($debug) {print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT><\P>\n";}
+  if ($error) {print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n";}
+  if ($debug) {print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n";}
 
   $command =~ s/(pray|setup)//ig;
 
@@ -361,11 +361,12 @@ PrintTag
 sub headline {
   my $head = shift;
   my $numsel = setmissanumber();
+  $numsel = "<BR><BR>$numsel<BR>" if $numsel;
   
   if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
   print << "PrintTag";
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
-$comment<BR><BR>$numsel &nbsp;&nbsp;
+$comment<BR><BR>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <INPUT TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
@@ -374,6 +375,7 @@ $comment<BR><BR>$numsel &nbsp;&nbsp;
 <A HREF=# onclick="prevnext(1)">&uarr;</A>
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="callkalendar();">Kalendarium</A>
+$numsel
 </P>
 PrintTag
 }
@@ -509,14 +511,39 @@ function prevnext(ch) {
 PrintTag
 } 
 
-sub setmissanumber {
-  if ($winner{Rule} !~ /multiple(\d)/i) {return '';}
-  my $lim = $1;
-  if (!$missanumber) {$missanumber = 1;}
-  my $str = '';
-  my $i;
-  my @ma = splice(@ma, @ma);
-  for ($i = 1; $i <= $lim; $i++) {$ma[$i] = ($i == $missanumber) ? 'CHECKED' : '';}
-  for ($i = 1; $i <= $lim; $i++) {$str .= "<INPUT TYPE=RADIO $ma[$i] onclick='parchange();' NAME=missanumber VALUE=$i>$i</A>&nbsp;";}
-  return $str;
+# This procedure handles days on which there qre more than one proper Mass.
+# It returns HTML offering the choice as a radio button sequence.
+sub setmissanumber
+{
+    our $missanumber;
+    my $str;
+    if ( $winner{Rule} =~ /(multiple|celebranda aut\s+)(.*)/ )
+    {
+        my $object = $2;
+
+        my $lim;
+        my @missae;
+        if ( $object =~ /[0-9]/ )
+        {
+            @missae = 1 .. $object;
+        }
+        else
+        {
+            @missae = split /\baut\s+/i, $object;
+        }
+
+        my $i = 0;
+        for ( @missae )
+        {
+            $i = $i + 1;
+            my $m = $i == $missanumber? 'checked' : '';
+            s/\bmissa/Missa/;
+            $str .= "<input type='radio' $m onclick='parchange();' name='missanumber' value='$i'>$_</input>&nbsp;";
+        }
+    }
+    else
+    {
+        $str = '';
+    }
+    return $str;
 }

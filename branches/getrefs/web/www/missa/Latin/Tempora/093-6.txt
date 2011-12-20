@@ -5,6 +5,8 @@ Sabbato Quattuor Temporum Septembris;;Feria major;;2
 Sabbato Quattuor Temporum Septembris;;Feria major;;3
 
 [Rule]
+(rubrica 1960) celebranda aut forma longior aut forma brevior
+(si missa brevior et rubrica 1960) LectioL1 
 LectioL5
 
 [Introitus]
@@ -17,9 +19,7 @@ Veníte, exsultémus Dómino: jubilémus Deo, salutári nostro.
 v. Veníte, adorémus Deum et procidámus ante Dóminum, plorémus ante eum, qui~
 fecit nos: quia ipse est Dóminus, Deus noster.
 
-[OratioL1]
-V. Flectámus génua. 
-R. Leváte. 
+[Oratio]
 Omnípotens sempitérne Deus, qui per continéntiam~
 salutárem corpóribus medéris et méntibus: majestátem tuam súpplices exorámus; ut,~
 pia jejunántium deprecatióne placátus, et præséntia nobis subsídia tríbuas et~
@@ -39,9 +39,7 @@ eórum?
 V. Adjuva nos, Deus, salutáris noster: et propter honórem nóminis tui, Dómine,~
 líbera nos.
 
-[OratioL2]
-V. Flectámus génua. 
-R. Leváte. 
+[OratioL1]
 Da nobis, quaesumus, omnípotens Deus: ut,~
 jejunándo, tua grátia satiémur; et, abstinéndo, cunctis efficiámur hóstibus~
 fortióres.
@@ -59,9 +57,7 @@ Protéctor noster, áspice, Deus, et réspice super servos tuos.
 V. Dómine,~
 Deus virtútum, exáudi preces servórum tuórum.
 
-[OratioL3]
-V. Flectámus génua. 
-R. Leváte. 
+[OratioL2]
 Tuére, quaesumus, Dómine, fámiliam tuam: ut~
 salútis ætérnæ remédia, quæ te inspiránte requírimus, te largiénte consequámur.
 $Per Dominum
@@ -77,9 +73,7 @@ $Deo gratias
 Convértere, Dómine, aliquántulum, et deprecáre super servos tuos. 
 V. Dómine, refúgium factus es nobis, a generatióne et progénie.
 
-[OratioL4]
-V. Flectámus génua. 
-R. Leváte. 
+[OratioL3]
 Præsta, quaesumus, Dómine, sic nos ab épulis~
 abstinére carnálibus: ut a vítiis irruéntibus páriter jejunémus.
 $Per Dominum
@@ -95,9 +89,7 @@ $Deo gratias
 Dirigátur orátio mea sicut incénsum in conspéctu tuo, Dómine.
 V. Elevátio mánuum meárum sacrifícium vespertínum.
 
-[OratioL5]
-V. Flectámus génua. 
-R. Leváte. 
+[OratioL4]
 Ut nobis, Dómine, tríbuis sollémne tibi deférre~
 jejúnium: sic nobis, quaesumus, indulgéntiæ præsta subsídium.
 $Per Dominum
@@ -123,7 +115,7 @@ Glória Patri, et Fílio, et Spirítui Sancto. Et laudábili et glorióso in saecula.
 Sicut erat in princípio, et nunc, et semper: et in saecula sæculórum. Amen. Et laudábili et glorióso in saecula.
 Benedíctus es, Dómine, Deus patrum nostrórum. Et laudábilis et gloriósus in saecula.
 
-[Oratio]
+[OratioL5]
 Deus, qui tribus púeris mitigásti flammas ígnium: concéde propítius; ut nos~
 fámulos tuos non exúrat flamma vitiórum.
 $Per Dominum

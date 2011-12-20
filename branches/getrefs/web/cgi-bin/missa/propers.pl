@@ -63,10 +63,10 @@ sub specials {
 	  } else {next;}
     }
 
-    if ($item =~/^\s*#/) {
-      $label = $item;   
+    if ($item =~/^\s*#(.*)/) {
+      $label = $1;
       $label = translate_label($label, $lang);	
-      push (@s, $label);	
+      push (@s, "#$label");	
       next;
     }
 
@@ -114,169 +114,229 @@ sub setcomment {
 
 
 #*** translate_label($label, $lang) 
-# finds the equivalent of the latin label in translate file
-sub translate_label { 
-  my $item = shift;
-  my $lang = shift;   
+# Finds the equivalent of the latin label in translate file
+# Also changes 'Gradual' to 'Alleluja' during the Pascal season.
+# TODO this inefficiently pulls the whole translate file every time!
+sub translate_label
+{ 
+    my $item = shift;
+    my $lang = shift;   
 
-  $item =~ s/\s*$//;              
-  if ($lang !~ /Latin/i) {
-    my %p = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
-	if (exists($p{$item})) {$item = $p{$item};}
-  }
-  if ($item =~ /Gradual/i) {
-    if ($dayname[0] =~ /Quad/i || $winner{Rank} =~ /(Quattuor|Quatuor)/i) {$item = '# Tractus';}
-	elsif ($dayname[0] =~ /Pasc/i && $winner !~ /Defunct/i) {$item = '# Alleluia';}
-  }
-  $item =~ s/\n//g;   
-  return $item;
+    $item =~ s/\s*$//;              
+    if ($lang !~ /Latin/i)
+    {
+        my %p = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
+        $item = exists($p{$item})? $p{$item}: $item;
+    }
+
+    if ($item =~ /Gradual/i)
+    {
+        #if ($dayname[0] =~ /Quad/i || (0 && $winner{Rank} =~ /(Quattuor|Quatuor)/i)) {$item = '# Tractus';}
+        #elsif ($dayname[0] =~ /Pasc/i && $winner !~ /Defunct/i) {$item = '#Alleluia';}
+        if ( $dayname[0] =~ /Pasc/i && $winner !~ /Defunct/i )
+        {
+            $item = $lang =~ /Latin/i ? 'Alleluja' : 'Alleluia';
+        }
+    }
+    $item =~ s/\n//g;   
+    return $item;
 }
 
 
 #*** oratio($lang, $type)
 #input language
 # collects and prints the appropriate oratio and commemorationes
-sub oratio {
-  my $lang = shift;
-  my $type = shift;	 
-  my $retvalue = '';
-  our %cc = undef;
-  our $ccind = 0;
+# on ember days also includes all the additional lections
+# since they intervene before the other commemmorations
+sub oratio
+{
+    my $lang = shift;
+    my $type = shift;
+    my $retvalue = '';
+    our %cc = undef;
+    our $ccind = 0;
 
-  our $ctotalnum = 0; 
-  our $addconclusio = '';
-                     
-  my %w = (columnsel($lang)) ? %winner : %winner2;
-  $comment = ($winner =~ /sancti/i) ? 3 : 2;
-  setcomment($label, 'Source', $comment, $lang);        
+    our $ctotalnum = 0;
+    our $addconclusio = '';
 
-  if ($rule =~ /Oratio Dominica/i && !exists($w{$type})) { 
-	  my $name = "$dayname[0]-0";
-      if ($name =~ /(Epi1|Nat)/i) {$name = 'Epi1-0a';}
-	  %w = %{officestring($datafolder, $lang, "$temporaname/$name.txt")};    
-  }
-  
-  if ($dayofweek > 0 && exists($w{$type ."W"})) {$w = $w{$type . "W"};}
-  else {$w = $w{$type};}
-  	 		 
-  if (!$w && $commune) { 
-    my %com = (columnsel($lang)) ? %commune : %commune2;    
-    $w = $com{$type};
-    if ($w) {setbuild2("$commune Oratio");}
-  }
+    my %w = (columnsel($lang)) ? %winner : %winner2;
+    $comment = ($winner =~ /sancti/i) ? 3 : 2;
+    setcomment($label, 'Source', $comment, $lang);
 
-  # Special processing for Common of Supreme Pontiffs.
-  if ($version !~ /Trident/i && (my ($plural, $class, $name) = papal_rule($w{Rule}))) {
-	$w = papal_prayer($lang, $plural, $class, $name, $type);
-	setbuild2("$type Gregem tuum");
-  }
-                                
-  if ($winner =~ /tempora/i && !$w) {   
-     my $name = "$dayname[0]-0";	
-	 %w = %{officestring($datafolder, $lang, "$temporaname/$name.txt")};   
-     $w = $w{$type};
-     if ($w) {setbuild2("$type Dominica");}
-  }
-
-  if (!$w) {$w = 'Oratio missing';}
-                      
-  if (($version =~ /1960/ || "$month$day" =~ /1102/) && $w =~ /\&psalm\([0-9]+\)\s*\_\s*/i) 
-    {$w = "$`\_\n$'";} #triduum 1960  not 1955
-
-  if ($winner{Rule} =~ /Sub unica conc/i) { 
-    if ($version !~ /1960/) {
-      if ($w =~ /\n\$Per .*?\s*$/) {$addconclusio = $&; $w = $`;}
-      if ($w =~ /\n\$Qui .*?\s*$/) {$addconclusio = $&; $w = $`;}
-    } else {$w =~ s/\$(Per|Qui) .*?\n//i;} 
-  }
-
-  my %prayer =%{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
-  my $orm = ($type =~ /secreta/i) ? '' : "$prayer{Oremus}\n"; 
-  $retvalue = "$orm\n$w\n";
-  $ctotalnum = 1;
-
-  my $coron = '';
-  if (my $tr = join('', do_read("$datafolder/../horas/Latin/Tabulae/Tr1960.txt"))) {
-     $tr =~ s/\=/\;\;/g;
-     my %tr = split(';;', $tr);
-	 my $mm = sprintf("C%02i-%02i", $month, $day);
-	 if (exists($tr{$mm})) {$coron=$tr{$mm};}
-  }
-   
-  if ($coron) {
-    $retvalue =~ s/\$(Per|Qui) .*\n//g; 
-	my %c = %{setupstring($datafolder, $lang, "$coron.txt")};
-	my $c = $c{$type};
-	if ($coron =~ /Coronatio/i) {$c =  replaceNpb($c, $pope, $lang, 'p', 'um');}
-	$retvalue .= "_\n\$Papa\n$c";
-  }
-  if ($rule =~ /omit .*? commemoratio/i || ($version =~ /1960/ && $solemn)) {return resolve_refs($retvalue, $lang);}
-
-
-  $w = '';
-  our $oremusflag = "\_\n$prayer{Oremus}\n";
-  if ($type =~ /Secreta/i) {$oremusflag = '';} 
-  if (exists($w{'$type Vigilia'}) && ($version !~ /(1955|1960)/ || $rule =~ /Vigilia/i)) {
-     $w = "!Commemoratio vigilia\n";
-	 $w .= "!$type\n" . $w{"$type Vigilia"}; 
- 	 $retvalue .= "$oremusflag$w\n"; 
-	 $oremusflag = ""; 
-  }
- 
-  #* add commemorated office
-   if ($commemoratio1 && $rank < 6) {
-    $w = getcommemoratio($commemoratio1, $type, $lang);  
-    if ($w) {setcc($w, 1, setupstring($datafolder, $lang, $commemoratio1));}		  
-  }
-
-  if ($commemoratio && ($rank < 6 || $version !~ /(1955|1960)/i || $commemoratio{Rank} =~ /(Dominica|;;6)/i ||
-	  ($commemoratio =~ /Tempora/i && $commemoratio{Rank} =~ /;;[23]/))) {  
-	$w = getcommemoratio($commemoratio, $type, $lang);  
-    if ($w) {setcc($w, 2, setupstring($datafolder, $lang, $commemoratio));}		  
-  }                                                
-  
-
-  #add commemoratio in winner 
-  if ($rule !~ /nocomm1960/i && (($version =~ /(1955|1960)/ && 
-     ($winner{'Commemoratio Oratio'} !~ /Octav/i || $winner{'Commemoratio Oratio'} =~ /Octav.*?Nativ/i))
-    || !($version =~ /(1955|1960)/ && $rank >= 5))) {commemoratio('winner', $type, $lang);   
-
-  if ($version !~ /1960/ || $rank < 5 ) {
-	  #commemoratio from commemorated office
-	  if ($commemoratio) { commemoratio('commemoratio', $type, $lang); }	    
-      if ($commemoratio1) { commemoratio('commemoratio1', $type, $lang);}  
-      if ($commemorated && $version !~ /1960/) {commemoratio('commemorated', $type, $lang);}
+    if ($rule =~ /Oratio Dominica/i && !exists($w{$type}))
+    {
+        my $name = "$dayname[0]-0";
+        $name = 'Epi1-0a' if $name =~ /(Epi1|Nat)/i;
+        %w = %{officestring($datafolder, $lang, "$temporaname/$name.txt")};
     }
-  }
 
-  $retvalue = getcc($retvalue);
-  if ($version =~ /1955|1960/ || !checksuffragium()) {
-    $retvalue .= $addconclusio; 
+    if ($dayofweek > 0 && exists($w{$type ."W"}))
+    {
+        $w = $w{$type . "W"};
+    }
+    else
+    {
+        $w = $w{$type};
+    }
+
+    if (!$w && $commune)
+    {
+        my %com = (columnsel($lang)) ? %commune : %commune2;
+        $w = $com{$type};
+        setbuild2("$commune Oratio") if $w;
+    }
+
+    # Special processing for Common of Supreme Pontiffs.
+    if ($version !~ /Trident/i && (my ($plural, $class, $name) = papal_rule($w{Rule})))
+    {
+        $w = papal_prayer($lang, $plural, $class, $name, $type);
+        setbuild2("$type Gregem tuum");
+    }
+
+    if ($winner =~ /tempora/i && !$w)
+    {
+        my $name = "$dayname[0]-0";
+        %w = %{officestring($datafolder, $lang, "$temporaname/$name.txt")};
+        $w = $w{$type};
+        setbuild2("$type Dominica") if $w;
+    }
+
+    $w = 'Oratio missing' unless $w;
+
+    if (($version =~ /1960/ || "$month$day" =~ /1102/) && $w =~ /\&psalm\([0-9]+\)\s*\_\s*/i)
+    {
+        $w = "$`\_\n$'"; #triduum 1960  not 1955
+    }
+
+    if ($winner{Rule} =~ /Sub unica conc/i)
+    {
+        if ($version !~ /1960/)
+        {
+            if ($w =~ /\n\$Per .*?\s*$/) {$addconclusio = $&; $w = $`;}
+            if ($w =~ /\n\$Qui .*?\s*$/) {$addconclusio = $&; $w = $`;}
+        }
+        else
+        {
+            $w =~ s/\$(Per|Qui) .*?\n//i;
+        }
+    }
+
+    my %prayer =%{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
+    my $orm = '';
+
+    # The Priest says Orémus except for Secreta prayers...
+    $orm = "$prayer{Oremus}\n" unless $type !~ /Secreta/i;
+
+    # ... and the Deacon says Flectamus for Oratio prayers during IV Temporum
+    $orm .= "$prayer{Flectamus}\n" if $type =~ /Oratio/i && $rule =~ /LectioL/ && $dayname[0] !~ /Pasc/i;
+
+    $retvalue = "$orm\n$w\n";
+    $ctotalnum = 1;
+
+    my $coron = '';
+    if (my $tr = join('', do_read("$datafolder/../horas/Latin/Tabulae/Tr1960.txt")))
+    {
+        $tr =~ s/\=/\;\;/g;
+        my %tr = split(';;', $tr);
+        my $mm = sprintf("C%02i-%02i", $month, $day);
+        $coron=$tr{$mm} if exists($tr{$mm});
+    }
+
+    if ($coron)
+    {
+        $retvalue =~ s/\$(Per|Qui) .*\n//g;
+        my %c = %{setupstring($datafolder, $lang, "$coron.txt")};
+        my $c = $c{$type};
+        $c =  replaceNpb($c, $pope, $lang, 'p', 'um') if $coron =~ /Coronatio/i;
+        $retvalue .= "_\n\$Papa\n$c";
+    }
+    return resolve_refs($retvalue, $lang) if $rule =~ /omit .*? commemoratio/i || ($version =~ /1960/ && $solemn);
+
+    $w = '';
+    our $oremusflag = "\_\n$prayer{Oremus}\n";
+    $oremusflag = '' if $type =~ /Secreta/i;
+    if (exists($w{'$type Vigilia'}) && ($version !~ /(1955|1960)/ || $rule =~ /Vigilia/i))
+    {
+        $w = "!Commemoratio vigilia\n";
+        $w .= "!$type\n" . $w{"$type Vigilia"};
+        $retvalue .= "$oremusflag$w\n";
+        $oremusflag = "";
+    }
+
+    # add IV Temporum lectio/gradual/collect  (LectioLn) for the main oration
+    if ( $type =~ /Oratio/ && $rule =~ /LectioL/ )
+    {
+        $retvalue .= LectionesTemporum($lang);
+    }
+
+    #* add commemorated office
+    if ($commemoratio1 && $rank < 6)
+    {
+        $w = getcommemoratio($commemoratio1, $type, $lang);
+        setcc($w, 1, setupstring($datafolder, $lang, $commemoratio1)) if $w;
+    }
+
+    if ( $commemoratio && (
+        $rank < 6 ||
+        $version !~ /(1955|1960)/i ||
+        $commemoratio{Rank} =~ /(Dominica|;;6)/i ||
+        ($commemoratio =~ /Tempora/i && $commemoratio{Rank} =~ /;;[23]/))
+    )
+    {
+        $w = getcommemoratio($commemoratio, $type, $lang);
+        setcc($w, 2, setupstring($datafolder, $lang, $commemoratio)) if $w;
+    }
+
+    #add commemoratio in winner
+    if ( $rule !~ /nocomm1960/i && (
+        (
+            $version =~ /(1955|1960)/ &&
+            ($winner{'Commemoratio Oratio'} !~ /Octav/i || $winner{'Commemoratio Oratio'} =~ /Octav.*?Nativ/i)
+        ) ||
+        !($version =~ /(1955|1960)/ && $rank >= 5)
+    ))
+    {
+        commemoratio('winner', $type, $lang);
+
+        if ($version !~ /1960/ || $rank < 5 )
+        {
+            #commemoratio from commemorated office
+            commemoratio('commemoratio', $type, $lang) if $commemoratio;
+            commemoratio('commemoratio1', $type, $lang) if $commemoratio1;
+            commemoratio('commemorated', $type, $lang) if $commemorated && $version !~ /1960/;
+        }
+    }
+
+    $retvalue = getcc($retvalue);
+    if ($version =~ /1955|1960/ || !checksuffragium())
+    {
+        $retvalue .= $addconclusio;
+        return resolve_refs($retvalue, $lang);
+    }
+
+    $rule .= $& if ($winner =~ /Sancti/i && $duplex < 3 && $scriptura && $scriptura{Rule} =~ /Suffr.*?=(.*?);;/i);
+
+    if ($rule =~ /Suffr.*?=(.*?);;/i)
+    {
+        my $sf = $1;
+        my @sf = split(';', $sf);
+        my %sf = %{setupstring($datafolder, $lang, 'Ordo/Suffragium.txt')};
+        my ($sf1, @sf1);
+
+        foreach $sf (@sf)
+        {
+            # No more than 3 commemorations TODO is this for all rubrics?
+            last if $ctotalnum > 3;
+            @sf1 = split(',', $sf);
+            my $i = ($dayofweek % @sf1);
+            $sf1[$i] = 'Maria3' if ($sf1[$i] =~ /Maria2/i && ($month > 2 || ($month == 2 && $day > 1)));
+            $retvalue .= "_\n" . delconclusio($sf{"$type $sf1[$i]"});
+        }
+    }
+
+    $retvalue .= $addconclusio;
     return resolve_refs($retvalue, $lang);
-  }
-
-
-  if ($winner =~ /Sancti/i && $duplex < 3 && $scriptura && $scriptura{Rule} =~ /Suffr.*?=(.*?);;/i)
-    {$rule .= $&;}
-
-  if ($rule =~ /Suffr.*?=(.*?);;/i) {
-    my $sf = $1;  
-	my @sf = split(';', $sf);
-	my %sf = %{setupstring($datafolder, $lang, 'Ordo/Suffragium.txt')};
-    my ($sf1, @sf1);
-
-	foreach $sf (@sf) {  
-	  if ($ctotalnum > 3) {last;}
-	  @sf1 = split(',', $sf); 
-      my $i = ($dayofweek % @sf1); 
-	  if ($sf1[$i] =~ /Maria2/i && ($month > 2 || ($month == 2 && $day > 1))) {$sf1[$i] = 'Maria3';}
-	  $retvalue .= "_\n" . delconclusio($sf{"$type $sf1[$i]"}); 
-    }
-  }
-  $retvalue .= $addconclusio;
-  return resolve_refs($retvalue, $lang);
 }
-
 
 #*** setcc($str, $code, \%source) {
 #set str with calculated code to %cc  
@@ -793,31 +853,46 @@ sub gloriflag {
   return $flag;
 }
 
-sub GloriaL {
-  my $lang = shift; 
-  if ($winner{Rule} !~ /LectioL([0-9])/i) {return '';}
-  my $n = $1; 
-  my $i;
-  my %w = (columnsel($lang) ? %winner : %winner2); 
-  my $s = ''; 
-  for ($i = 1; $i <= $n; $i++) {
-     $s .= "\n#Oratio\[$i\]\n" . "\$Oremus\n";
-     $s .= $w{"OratioL$i"} . "\n_\n";
-     $s .= "\n! " . translate_label('Lectio', $lang) . " [$i]\n";
-     $s .= $w{"LectioL$i"} . "\n_\n";
-     if (exists($w{"GradualeL$i"})) {
-	   $s .= "\n! " . translate_label('Graduale', $lang) . " [$i]\n";
-	   $s .= $w{"GradualeL$i"} . "\n_\n_\n";
-     }
-  }
-  if ($s && $s !~ /^\s*$/) {
-    while ($s =~ /\((.*?)\)/s) { 
-      my $a = setfont($smallfont, $1); 
-      $s = "$`$a$'";
+# This Proper &LectionesTemporum handles ember day readings which precede the Collect
+sub LectionesTemporum
+{
+    my $lang = shift; 
+
+    # Generate nothing unless there's a LectioL rule.
+    return '' if $winner{Rule} !~ /LectioL([0-9])/i;
+    my $n = $1; 
+    my $i;
+    my %w = (columnsel($lang) ? %winner : %winner2); 
+    my $s = ''; 
+    for ($i = 1; $i <= $n; $i++)
+    {
+        $s .= "\n_\n#" . translate_label('Lectio', $lang) . "\n";
+        $s .= $w{"LectioL$i"} . "\n_\n";
+        if ( exists($w{"GradualeL$i"}) )
+        {
+            $s .= "\n#" . translate_label('Graduale', $lang) . "\n";
+            $s .= $w{"GradualeL$i"} . "\n_\n";
+        }
+        $s .= "#" . translate_label('Oratio', $lang) . "\n";
+
+        # (ultima oratio:) "Hic dicitur V. Dominus vobiscum, sine Flectamus genua."
+        $s .= DominusVobiscum($lang, 1) if $i == $n;
+
+        $s .= "\$Oremus\n";
+        $s .= Flectamus($lang) if $i < $n && $dayname[0] !~ /Pasc/i;
+
+        $s .= $w{"OratioL$i"} . "\n_\n_\n";
     }
-  }
- $s =~ s/#/!!/g;
- return $s; 
+    if ( $s && $s !~ /^\s*$/ )
+    {
+        while ($s =~ /\((.*?)\)/s)
+        { 
+            my $a = setfont($smallfont, $1); 
+            $s = "$`$a$'";
+        }
+    }
+    $s =~ s/#/!!/g;
+    return $s; 
 }
 
 sub GloriaM {
@@ -848,7 +923,6 @@ sub collect {
  my $lang = shift; 
  return oratio($lang, 'Oratio');
 }
-
 
 sub lectio {
   my $lang = shift;
@@ -976,6 +1050,25 @@ sub hancigitur {
 sub communio {
   my $lang = shift;
   return getitem('Communio', $lang);
+}
+
+sub Flectamus
+{
+    my $lang = shift;
+    my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
+    return $prayer{Flectamus}
+}
+
+# DominusVobiscum returns the prayer unless in IV Tempora when it's not usually used
+# the second argument 'opt' being true returns the prayer no matter what
+sub DominusVobiscum
+{
+    my $lang = shift;
+    my $opt = shift || 0;
+    my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
+
+    # In missis IV temporum: "Post Kyrie, eleison, dicitur: Oremus. Flectamus genua. — Levate."
+    return ($rule =~ /LectioL/ && !$opt)? '': "$prayer{'Dominus vobiscum'}";
 }
 
 sub postcommunio {
