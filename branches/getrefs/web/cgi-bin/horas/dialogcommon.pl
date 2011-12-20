@@ -218,57 +218,140 @@ sub setupstring($$$%)
   
   # Regex for matching section headers.
   my $sectionregex = qr/^\s*\[([\pL\pN_ #-]+)\]/i;
+  
+  # Regex for matching conditionals, which we shall embed into our own
+  # regexes for parsing lines.
+  my $conditional_regex = conditional_regex();
+  
+  my $blankline_regex = /^\s*_?\s*$/;
 
   my %sections;
   my $key = '__preamble';
+  my $use_this_section = 1;
   
   use constant 'COND_NOT_YET_AFFIRMATIVE' => 0;
   use constant 'COND_AFFIRMATIVE' => 1;
-  use constant 'COND_COMPLETED' => 2;
+  use constant 'COND_DUMMY_FRAME' => 1;
   
-  my @conditional_stack;
+  my (@conditional_stack, @conditional_offsets);
+  
+  push @conditional_stack, [COND_AFFIRMATIVE, SCOPE_NEST];
+  push @conditional_offsets, -1;
   
   foreach my $line (@filelines)
   {
-    # Check if we're entering a new conditional block. We do this even
-    # if we're currently within an unsatisfied conditional, to allow
-    # correct nesting.
-    if ($line =~ /^\s*\%if\s+(.*)$/)
+    if ($line =~ /$sectionregex(?:\s*$conditional_regex)?/)
     {
-      # Push the new conditional frame onto the stack.
-      push @conditional_stack,
-        @conditional_stack > 0 && $conditional_stack[-1] != COND_AFFIRMATIVE ? COND_COMPLETED :
-        evaluate_conditional($1) ? COND_AFFIRMATIVE : COND_NOT_YET_AFFIRMATIVE;
-      next;
-    }
-    
-    # Are we in a conditional?
-    if (@conditional_stack > 0)
-    {
-      # Pop the frame off the stack if we've reached the end.
-      if ($line =~ /^\s*\%endif\s*$/) { pop @conditional_stack; next; }
-      
-      # Switch to the next stage in the case of alternation.
-      if ($line =~ /^\s*\%else\s*$/ ||
-        ($line =~ /^\s*\%elsif\s+(.*)$/ && ($conditional_stack[-1] != COND_NOT_YET_AFFIRMATIVE || evaluate_conditional($1))))
+      # If we have a conditional clause, it had better be true.
+      my $section_condition = $3;
+      if (!$section_condition || vero($section_condition))
       {
-        $conditional_stack[-1]++;
-        next;
+        # New section.
+        $use_this_section = 1;
+        $key = $1;
+        $sections{$key} = [];
+        
+        # Reset conditional state.
+        @conditional_stack = ([COND_AFFIRMATIVE, SCOPE_NEST]);
+        @conditional_offsets = (-1);
+      }
+      else
+      {
+        $use_this_section = 0;
+      }
+    }
+    elsif ($use_this_section)
+    {
+      # Check for a new condition.
+      if ($line =~ /^\s*$conditional_regex\s*(.*)$/)
+      {
+        my ($strength, $result, $backscope, $forwardscope) = parse_conditional($1, $2, $3);
+        
+        # Sequel.
+        $line = $4;
+        
+        # If the parent conditional is not affirmative, then the new one
+        # must break out of the nest, as it were.
+        if (${$conditional_stack[-1]}[0] == COND_AFFIRMATIVE || $strength >= $#conditional_offsets)
+        {
+          if ($strength >= $#conditional_offsets)
+          {
+            @conditional_stack = ();
+          }
+          elsif ($strength >= $#conditional_offsets - $#conditional_stack)
+          {
+            $#conditional_stack = $#conditional_offsets - $strength - 1;
+          }
+          
+          if ($result)
+          {
+            # Handle the backward scope.
+            if ($backscope == SCOPE_LINE)
+            {
+              # Remove preceding line.
+              pop @{$sections{$key}};
+            }
+            elsif ($backscope == SCOPE_CHUNK)
+            {            
+              # Remove preceding consecutive non-whitespace lines.
+              pop @{$sections{$key}} while @{$sections{$key}} && ${$sections{$key}}[-1] !~ /^\s*_?\s*$/;
+              
+              # Remove any whitespace lines.
+              pop @{$sections{$key}} while @{$sections{$key}} && ${$sections{$key}}[-1] =~ /^\s*_?\s*$/;
+            }
+            elsif ($backscope == SCOPE_NEST)
+            {
+              # Truncate output at the point to which we have to backtrack.
+              $#{$sections{$key}} = $#conditional_offsets >= $strength ?
+                $conditional_offsets[$strength] :
+                -1;
+            }
+          }
+          
+          # Having backtracked, null forward scope now behaves like a
+          # satisfied conditional with nesting forward scope.
+          if ($forwardscope == SCOPE_NULL)
+          {
+            $forwardscope = SCOPE_NEST;
+            $result = 1;
+          }
+          
+          # Remember where we encountered this conditional.
+          $conditional_offsets[$_] = $#{$sections{$key}} foreach (0..$strength);
+          
+          # Push dummy frame(s) onto the conditional stack to bring it
+          # into sync with the strength.
+          push @conditional_stack, [COND_DUMMY_FRAME, $forwardscope]
+            while ($strength < $#conditional_offsets - $#conditional_stack - 1);
+          
+          # Push the new conditional frame onto the stack.
+          push @conditional_stack,
+            [$result ? COND_AFFIRMATIVE : COND_NOT_YET_AFFIRMATIVE,
+             $forwardscope];
+        }
+        
+        # Parse anything left over.
+        $line ? redo : next;
       }
       
-      next unless ($conditional_stack[-1] == COND_AFFIRMATIVE);
-    }
-    
-    if ($line =~ /$sectionregex/)
-    {
-      # New section.
-      $key = $1;
-      $sections{$key} = [];
-    }
-    else
-    {
       # Add line to array for later concatenation.
-      push @{$sections{$key}}, "$line\n";
+      push @{$sections{$key}}, "$line\n" if (${$conditional_stack[-1]}[0] == COND_AFFIRMATIVE);
+      
+      # Check to see whether we'll fall off the end of the current scope
+      # after this line.
+      while (${$conditional_stack[-1]}[1] == SCOPE_LINE ||
+        (${$conditional_stack[-1]}[1] == SCOPE_CHUNK && $line =~ $blankline_regex))
+      {
+        warn ${$conditional_stack[-1]}[1];
+        do
+        {
+          pop @conditional_stack;
+        } while(@conditional_stack && ${$conditional_stack[-1]}[0] == COND_DUMMY_FRAME);
+        
+        # If we've emptied the conditional stack, push an always-true,
+        # unbounded frame to allow uniformity in testing.
+        push @conditional_stack, [COND_AFFIRMATIVE, SCOPE_NEST] if (@conditional_stack == 0);
+      }
     }
   }
   

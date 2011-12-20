@@ -1616,9 +1616,33 @@ sub papal_antiphon_dum_esset($)
   use strict;
   
   my %conditional_values;
+  my %stopword_weights;
+  
+  my $stopwords_regex;
+  my $scope_regex;
+  
+  BEGIN
+  {
+    $stopword_weights{'si'} = 0;
+    $stopword_weights{'sed'} = $stopword_weights{'vero'} = 1;
+    $stopword_weights{'atque'} = 2;
+    $stopword_weights{'attamen'} = 3;
+    
+    my $stopwords_regex_string = join('|', keys(%stopword_weights));
+    $stopwords_regex = qr/$stopwords_regex_string/i;
+    
+    $scope_regex = qr/(?:\bloco\s+(?:hu[ij]us\s+versus|horum\s+versuum)\b)?\s*(?:\b(?:(?:dicitur|dicuntur)(?:\s+semper)?|(?:omittitur|omittuntur))\b)?/i;
+  }
+  
+  # We have four types of scope (in each direction):
+  use constant SCOPE_NULL => 0;     # Null scope.
+  use constant SCOPE_LINE => 1;     # Single line.
+  use constant SCOPE_CHUNK => 2;    # Until the next blank line.
+  use constant SCOPE_NEST => 3;     # Until a (weakly) stronger conditional.
   
   #*** initialise_conditionals()
-  #  Computes the values that can be tested in data-file conditionals.
+  #  Computes the values that can be tested in data-file conditionals,
+  #  and performs other conditional-related initialisations.
   #  $dayofweek, $month, $day and $year must be set before this
   #  subroutine is called.
   sub initialise_conditionals()
@@ -1666,7 +1690,6 @@ sub papal_antiphon_dum_esset($)
     # Find which season we're in.
     my $vesp_or_comp = ($hora =~ /Vespera/i) || ($hora =~ /Completorium/i);
     ($_) = split('=', getweek($vesp_or_comp));
-    warn $_;
     $conditional_values{'season'} = $conditional_values{
       /^Adv/ ?
         ($month == 12 && $day >= 17) ? 'S_ADVENT_GOLDEN' : 'S_ADVENT_A' :
@@ -1722,7 +1745,7 @@ sub papal_antiphon_dum_esset($)
   
   
   #*** evaluate_conditional($conditional)
-  #  Evaluates a conditional expression from an %if directive.
+  #  Evaluates a expression from a data-file conditional directive.
   sub evaluate_conditional($)
   {
     my $conditional = shift;
@@ -1737,6 +1760,52 @@ sub papal_antiphon_dum_esset($)
     }
     
     return eval $expression;
+  }
+  
+  #*** conditional_regex()
+  #  Returns a regex that matches conditionals, capturing stopwords,
+  #  the condition itself and scope keywords, in that order.
+  sub conditional_regex()
+  {
+    return qr/\(\s*($stopwords_regex\b)*(.*?)($scope_regex)?\s*\)/o;
+  }
+  
+  sub parse_conditional($$$)
+  {
+    my ($stopwords, $condition, $scope) = @_;
+    my ($strength, $result, $backscope, $forwardscope);
+    
+    warn "stopwords: $stopwords   condition: $condition   scope: $scope";
+    
+    $strength = 0;
+    $strength += $stopword_weights{$_} foreach (split /\s+/, lc($stopwords));
+    
+    $result = vero($condition);
+    
+    # The regexes we use to test here are considerably more general
+    # than is allowed by the specification, but we're working on the
+    # assumption that the input was first matched against the regex
+    # returned by &conditional_regex, which is rather stricter.
+    
+    $backscope = 
+      $scope =~ /versuum|omittuntur/i       ? SCOPE_NEST  :
+      $scope =~ /versus|omittitur/i         ? SCOPE_CHUNK :
+      $scope !~ /semper/i && $strength > 0  ? SCOPE_LINE  : SCOPE_NULL;
+
+    if ($scope =~ /omittitur|omittuntur/i)
+    {
+      $forwardscope = SCOPE_NULL;
+    }
+    elsif ($scope =~ /dicuntur/i)
+    {
+      $forwardscope = ($backscope == SCOPE_CHUNK) ? SCOPE_CHUNK : SCOPE_NEST;
+    }
+    else
+    {
+      $forwardscope = ($backscope == SCOPE_CHUNK || $backscope == SCOPE_NEST) ? SCOPE_CHUNK : SCOPE_LINE;
+    }
+    
+    return ($strength, $result, $backscope, $forwardscope);
   }
 }
 

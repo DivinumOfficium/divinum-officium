@@ -945,13 +945,11 @@ Statera facta córporis,
 Tulitque prædam tartari.
 _
 O Crux, ave, spes única,
-%if season == S_PASSIONTIDE
-Hoc Passiónis témpore
-%elsif InPaschaltide
-Paschále quæ fers gáudium
-%else
 In hac triúmphi glória
-%endif
+(sed tempore Passionis)
+Hoc Passiónis témpore
+(sed tempore Paschale)
+Paschále quæ fers gáudium
 Piis adáuge grátiam,
 Reísque dele crímina.
 _
