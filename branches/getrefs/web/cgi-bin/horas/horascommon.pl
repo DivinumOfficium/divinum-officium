@@ -1767,7 +1767,7 @@ sub papal_antiphon_dum_esset($)
   #  the condition itself and scope keywords, in that order.
   sub conditional_regex()
   {
-    return qr/\(\s*($stopwords_regex\b)*(.*?)($scope_regex)?\s*\)/o;
+    return qr/\(\s+($stopwords_regex\b)*(.*?)($scope_regex)?\s+\)/o;
   }
   
   sub parse_conditional($$$)
