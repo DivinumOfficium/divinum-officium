@@ -342,7 +342,6 @@ sub setupstring($$$%)
       while (${$conditional_stack[-1]}[1] == SCOPE_LINE ||
         (${$conditional_stack[-1]}[1] == SCOPE_CHUNK && $line =~ $blankline_regex))
       {
-        warn ${$conditional_stack[-1]}[1];
         do
         {
           pop @conditional_stack;

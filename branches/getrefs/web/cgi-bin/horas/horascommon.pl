@@ -1775,8 +1775,6 @@ sub papal_antiphon_dum_esset($)
     my ($stopwords, $condition, $scope) = @_;
     my ($strength, $result, $backscope, $forwardscope);
     
-    warn "stopwords: $stopwords   condition: $condition   scope: $scope";
-    
     $strength = 0;
     $strength += $stopword_weights{$_} foreach (split /\s+/, lc($stopwords));
     
