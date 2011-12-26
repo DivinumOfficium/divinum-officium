@@ -334,6 +334,9 @@ sub setupstring($$$%)
         $line ? redo : next;
       }
       
+      # Handle escaped lines.
+      $line =~ s/^~//;
+      
       # Add line to array for later concatenation.
       push @{$sections{$key}}, "$line\n" if (${$conditional_stack[-1]}[0] == COND_AFFIRMATIVE);
       
