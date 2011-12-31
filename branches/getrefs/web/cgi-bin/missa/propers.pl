@@ -395,7 +395,7 @@ sub commemoratio {
 
   my $w = '';	
 
-  if (exists($w{"Commemoratio $type"})) {$w = getrefs($w{"Commemoratio $type"}, $lang, $w{Rule});} 
+  $w = $w{"Commemoratio $type"} if exists($w{"Commemoratio $type"});
 
   if ($version =~ /(1955|1960)/ && ($w =~ /!.*?(Octav|Dominica)/i && $w !~ /Octav.*?Nativ/i)) {return '';}
   if ($version =~ /(1955|1960)/ && $w =~ /!.*?Vigil/i && $rule =~ /no Vigil1960/i) {return '';}
@@ -621,82 +621,6 @@ sub checksuffragium {
   return 1;
 }
 
-#*** getrefs($w, $lang, $rule)
-# $w may contain line starting with @ reference
-# filename:(Oratio|Secreta|Postcommunio) (proper)? (Gregem)? from file 
-# filename:item collects item from file
-# $rule contains the rule for the office (used for inserting Popes' names)
-# return the expanded string
-# useable for lectio, responsory, commemoratio
-sub getrefs { 
-  my $w = shift;
-  my $lang = shift;
-  my $rule = shift;
-  my $file = '';
-  my $item = '';
-  my $flag = 0;
-  my %s = {};
-
-  while ($w =~ /\@([a-z0-9\/\-]+?)\:([a-z0-9 ]*)/ig) {
-    $before = $`;
-    $file = $1; 
-    $item = $2;
-    $after = $';	
-    $item =~ s/\s*$//; 
-
-    %s = %{setupstring($datafolder, $lang, "$file.txt")};	   
-    if ($item =~ /(commemoratio|Octava)/i) {
-      my $ita = $1;			
-      my $a = $s{"$ita"};
-	  if (!$a) {$a = "$file $item missing\n";}	 
-      $flag = 1;
-	  if ($a =~ /\!.*?octava(.*?)\n/i) {
-	    my $oct = $1;
-		if ($octavam =~ /$oct/) {$flag = 0;}
-		else {$octavam .= $oct;}
-	  }	
-	  if ($flag) {$a = "_\n$a" . "_\n";}
-	  else {$a = '';}  
-	  $w = "$before$a$after";   
-      next;
-    }
-                
-    if ($item =~ /(oratio)/i || $item =~ /(secreta)/i || $item =~ /(postcommunio)/i) {
-      # Extract the key.
-      my $itemkey = $1;
-      my $o = '';
-
-      if ($item !~ /proper/) {
-        $o = $s{$itemkey};
-        if (!$o) {$o = "$file:$item missing\n";}
-      }
-      
-      # Special processing for Common of Supreme Pontiffs.
-      if ($version !~ /Trident/i && $item =~ /Gregem/i && (my ($plural, $class, $name) = papal_commem_rule($rule))) {
-        $o = papal_prayer($lang, $plural, $class, $name, $itemkey);
-
-        # Remove any proper prayer for this commemoration, but leave
-        # those for subsequent ones intact.
-        $after =~ s/.*?^\s*_\s*$/_/sm or $after = '';
-      }
-
-	  $w = $before . $o . $after;
-      next;
-    }
-		 
-   my $a = $s{$item}; 	 
-   if ($after && $after !~ /^\s*$/) {$after = "_\n$after";}
-   if ($before && $before !~ /^\s*$/) {$before .= "_\n";}	 
-   if (!$a) {$a = "$file $item missing\n";}
-   $w = $before . $a . $after; 
-   next;
- }                       
-        
-
- $w =~ s/\_\n\_/\_/g; 
-
- return $w;
-}
 
 
 #*** loadspecial($str)
@@ -809,8 +733,7 @@ sub getitem {
     if ($type =~ /Graduale/i && $dayname[0] =~ /Quad/i && exists($w{Tractus})) {$w = $w{'Tractus'};}
   }
 
-  if (!$w) {$w = "$type missing!\n"}
-  $w = getrefs($w, $lang, $w{Rule});
+  if (!$w) {$w = "$type missing!\n"} 
   #if ($type =~ /(Introitus|Offertorium!Communio)/) {
     if ($dayname[0] =~ /Pasc/i) {$w =~ s/\((Allel.*?)\)/$1/ig;} 
 	else {$w =~ s/\(Allel.*?\)//ig;}  

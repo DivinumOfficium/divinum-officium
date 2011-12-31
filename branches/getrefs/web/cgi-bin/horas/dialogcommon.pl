@@ -121,6 +121,7 @@ our %subjects =
     rubrica     => sub { $version },
     tempore     => sub { $dayname[0] =~ /(\pL+)/; $tempora{$1} },
     missa       => sub { $missanumber },
+    communi     => sub { {summpont => ($version =~ /1960/ || $version =~ /1955/ || $version =~ /Divino/)} },
 );
 
 our %predicates =
@@ -134,6 +135,8 @@ our %predicates =
     tertia      => sub { shift == 3 },
     longior     => sub { shift == 1 },
     brevior     => sub { shift == 2 },
+    'summorum pontificum'
+                => sub { ${shift()}{summpont} },
 );
 
 # parse and evaluate a condition
@@ -156,13 +159,13 @@ sub vero($)
     {
         for ( split /\bet\b/ )
         {
-            my ($subject, $predicate) = split;
+            my ($subject, $predicate) = split /\s+/, $_, 2;
 
             # Subject is optional: defaults to tempore
             ($predicate, $subject) = ($subject, 'tempore') if not $predicate;
 
-            $predicate = $predicates{$predicate};
-            $subject = $subjects{$subject};
+            $predicate = $predicates{lc($predicate)};
+            $subject = $subjects{lc($subject)};
 
             next AUTEM unless $subject && $predicate && &$predicate(&$subject());
         }
@@ -285,26 +288,29 @@ sub setupstring($$$%)
           
           if ($result)
           {
+            # Find the nearest insurmountable fence.
+            my $fence = $#conditional_offsets >= $strength ?
+                $conditional_offsets[$strength] :
+                -1;
+            
             # Handle the backward scope.
             if ($backscope == SCOPE_LINE)
             {
               # Remove preceding line.
-              pop @{$sections{$key}};
+              pop @{$sections{$key}} if $#{$sections{$key}} > $fence;
             }
             elsif ($backscope == SCOPE_CHUNK)
             {            
               # Remove preceding consecutive non-whitespace lines.
-              pop @{$sections{$key}} while @{$sections{$key}} && ${$sections{$key}}[-1] !~ /^\s*_?\s*$/;
+              pop @{$sections{$key}} while $#{$sections{$key}} > $fence && ${$sections{$key}}[-1] !~ /^\s*_?\s*$/;
               
               # Remove any whitespace lines.
-              pop @{$sections{$key}} while @{$sections{$key}} && ${$sections{$key}}[-1] =~ /^\s*_?\s*$/;
+              pop @{$sections{$key}} while $#{$sections{$key}} > $fence && ${$sections{$key}}[-1] =~ /^\s*_?\s*$/;
             }
             elsif ($backscope == SCOPE_NEST)
             {
               # Truncate output at the point to which we have to backtrack.
-              $#{$sections{$key}} = $#conditional_offsets >= $strength ?
-                $conditional_offsets[$strength] :
-                -1;
+              $#{$sections{$key}} = $fence;
             }
           }
           
@@ -362,9 +368,7 @@ sub setupstring($$$%)
   
   my $inclusionregex = qr/^\s*\@
     ([^\n:]+)                     # Filename.
-    (?:                           # Keywords, which are
-      (?!:)|                      #   optional; but if present,
-      :((?i:(?!Gregem)[^\n:])+?)) #   mustn't contain 'Gregem'.
+    (?::([^\n:]+?))?              # Optional keywords.
     [^\S\n\r]*                    # Ignore trailing whitespace.
     (?::(.*))?                    # Optional substitutions.
     $
@@ -383,7 +387,10 @@ sub setupstring($$$%)
   # Resolve inclusions in sections if the caller requires it.
   if ($params{'resolve@'})
   {
-    foreach my $key (keys %sections)
+    # Iterate over all sections, but make sure we do [Rule] first, if
+    # it exists: we need to use the rule to work out some subsequent
+    # substitutions.
+    foreach my $key ((exists $sections{'Rule'}) ? 'Rule' : (), keys %sections)
     {
       if ($key !~ /Commemoratio/i || $missa)
       {
@@ -452,9 +459,11 @@ sub do_inclusion_substitutions(\$$)
 # and performs the substitutions specified in $substitutions according
 # to the syntax of the @ directive. \%sections is the file containing
 # the reference to be expanded, for back references when necessary.
-sub get_loadtime_inclusion(\%$$$$$$)
+sub get_loadtime_inclusion(\%$$$$$$$)
 {
   my ($sections, $basedir, $lang, $fname, $section, $substitutions, $callerfname) = @_;
+  my $text;
+  our $version;
   
   # Adjust offices of martyrs in Paschaltide to use the special common.
   if ($dayname[0] =~ /Pasc/i && !$missa && $callerfname !~ /C[23]/)
@@ -464,23 +473,28 @@ sub get_loadtime_inclusion(\%$$$$$$)
   
   my $inclfile = get_file_for_inclusion($basedir, $lang, $fname);
   
-  # Point to antiphon-and-versicleless version of the commemoration of
-  # St Peter or St Paul under 1960 rubrics. TODO: Use data-file
-  # conditionals to make this unnecessary.
-  $section =~ s/Commemoratio4/Commemoratio4r/ if ($version =~ /1960/ && ${$sections}{'Rule'} =~ /sub unica conc/i);
-    
-  if (exists ${$inclfile}{$section})
+  if ($version !~ /Trident/i && $section =~ /Gregem/i && (my ($plural, $class, $name) = papal_commem_rule(${$sections}{'Rule'})))
   {
-    my $text = ${$inclfile}{$section};
-    
-    do_inclusion_substitutions($text, $substitutions);
-    
-    return $text;
+    my ($itemkey) = ($section =~ /(.*?)\s*Gregem/);
+    $text = papal_prayer($lang, $plural, $class, $name, $itemkey);
   }
   else
   {
-    return "$fname:$section is missing!";
+    # Point to antiphon-and-versicleless version of the commemoration of
+    # St Peter or St Paul under 1960 rubrics. TODO: Use data-file
+    # conditionals to make this unnecessary.
+    $section =~ s/Commemoratio4/Commemoratio4r/ if ($version =~ /1960/ && ${$sections}{'Rule'} =~ /sub unica conc/i);
+      
+    $text = ${$inclfile}{$section} if (exists ${$inclfile}{$section});
   }
+  
+  if ($text)
+  {
+    do_inclusion_substitutions($text, $substitutions);
+    return $text;
+  }
+  
+  return "$fname:$section is missing!";
 }
 
 

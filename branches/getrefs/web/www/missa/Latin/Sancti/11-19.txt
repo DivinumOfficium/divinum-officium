@@ -24,18 +24,18 @@ $Per Dominum
 
 [Commemoratio Oratio]
 !Pro S. Pontiano Papa et Martyre
-@Commune/C4b:Oratio proper Gregem
-Infirmitatem nostram respice omnipotens Deus: et quia pondus propriae actionis~
-gravat, beati Pontiani Martyris tui atque Pontificis intercessio gloriosa nos~
-protegat.
-$Per Dominum
+@Commune/C2c:Oratio:s/N\./Pontiáni/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
 
 [Commemoratio Secreta]
 !Pro S. Pontiano Papa et Martyre
+@Commune/C2c:Secreta:s/N\./Pontiáni/
+(sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Secreta Gregem
 
 [Commemoratio Postcommunio]
 !Pro S. Pontiano Papa et Martyre
+@Commune/C2c:Postcommunio:s/N\./Pontiáno/
+(sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Postcommunio Gregem
-
-

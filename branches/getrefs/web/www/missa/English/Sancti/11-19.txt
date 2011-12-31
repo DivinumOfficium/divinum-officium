@@ -22,14 +22,6 @@ glorious prayers of blessed Elizabeth, make us look upon worldly prosperity as~
 nought, and ever rejoice in heavenly consolation.
 $Per Dominum
 
-[Commemoratio Oratio]
-!For St. Pontianus
-@Commune/C4b:Oratio proper Gregem
-Eternal Shepherd, look with favor upon Your flock. Safeguard and shelter it~
-forevermore through blessed Pontianus Your Martyr and Supreme Pontiff, whom You~
-constituted shepherd of the whole Church.
-$Per Dominum
-
 [Lectio]
 Lesson from the book of Proverbs
 !Prov 31:10-31
@@ -72,14 +64,6 @@ Your saints, through whose merits they know they have received help in time of~
 trial.
 $Per Dominum
 
-[Commemoratio Secreta]
-!For St. Pontianus
-@Commune/C4b:Secreta proper Gregem
-Having offered You our gifts, we beseech You, O Lord, mercifully to enlighten~
-Your Church, so that Your flock may everywhere prosper, and its shepherds, under~
-Your guidance, be rendered acceptable to You.
-$Per Dominum
-
 [Communio]
 !Ps 44:8
 You love justice and hate wickedness; therefore God, your God, has anointed you~
@@ -90,10 +74,20 @@ You have filled Your people, O Lord, with sacred gifts; ever comfort us, we~
 beseech You, by the intercession of her whose festival we are celebrating.
 $Per Dominum
 
+[Commemoratio Oratio]
+!For St. Pontianus
+@Commune/C2c:Oratio:s/N\./Pontianus/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
+
+[Commemoratio Secreta]
+!For St. Pontianus
+@Commune/C2c:Secreta:s/N\./Pontianus/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
+
 [Commemoratio Postcommunio]
 !For St. Pontianus
-@Commune/C4b:Postcommunio proper Gregem
-Since Your Church has been nourished by sacred food, govern her in Your clemency,~
-we beseech You, O Lord, so that under the guidance of Your almighty rule she may~
-enjoy ever greater freedom and remain steadfast in purity of faith.
-$Per Dominum
+@Commune/C2c:Postcommunio:s/N\./Pontianus/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem

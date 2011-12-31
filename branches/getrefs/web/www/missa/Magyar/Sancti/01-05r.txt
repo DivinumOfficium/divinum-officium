@@ -9,12 +9,18 @@ Prefatio=Nat
 
 [Commemoratio Oratio]
 !Pro S. Telesphori Papæ et Mart.
+@Commune/C2b:Oratio:s/N\./Telesphorus/
+(sed communi Summorum Pontificum)
 @Commune/C4b:Oratio Gregem
 
 [Commemoratio Secreta]
 !Pro S. Telesphori Papæ et Mart.
+@Commune/C2b:Secreta:s/N\./Telesphorus/
+(sed communi Summorum Pontificum)
 @Commune/C4b:Secreta Gregem
 
 [Commemoratio Postcommunio]
 !Pro S. Telesphori Papæ et Mart.
+@Commune/C2c:Postcommunio:s/N\./Telesphorus/
+(sed communi Summorum Pontificum)
 @Commune/C4b:Postcommunio Gregem
