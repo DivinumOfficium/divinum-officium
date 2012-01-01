@@ -130,6 +130,7 @@ our %predicates =
     innovata    => sub { shift =~ /NewCal/i },
     innovatis   => sub { shift =~ /NewCal/i },
     paschali    => sub { shift =~ /Pasc/i },
+    passionis   => sub { shift =~ /Quad/i && $dayname[0] =~ /(\d+)/ && $1 >= 5 }, # Temporary solution pending some replumbing.
     prima       => sub { shift == 1 },
     secunda     => sub { shift == 2 },
     tertia      => sub { shift == 3 },
@@ -322,8 +323,11 @@ sub setupstring($$$%)
             $result = 1;
           }
           
-          # Remember where we encountered this conditional.
-          $conditional_offsets[$_] = $#{$sections{$key}} foreach (0..$strength);
+          if ($result)
+          {
+            # Remember where we encountered this conditional.
+            $conditional_offsets[$_] = $#{$sections{$key}} foreach (0..$strength);
+          }
           
           # Push dummy frame(s) onto the conditional stack to bring it
           # into sync with the strength.
