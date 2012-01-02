@@ -495,7 +495,7 @@ sub getrank {
 
   # In Festo Sanctae Mariae Sabbato according to the rubrics.
   if ($version !~ /monastic/i && $dayname[0] !~ /(Adv|Quad[0-6])/i && $dayname[0] !~ /Quadp3/i && 
-      $testmode !~ /^season$/i && $saint{Rule} !~ /Infra octavam Epiphaniae Domini/i) { 
+      $testmode !~ /^season$/i) { 
     if ($dayofweek == 6 && $srank !~ /(Vigil|in Octav)/i && $trank[2] < 2 && $srank[2] < 2 && !$transfervigil) { 
       $tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
       $scriptura = $tname;  
@@ -511,7 +511,7 @@ sub getrank {
 
 	if ($hora =~ /(Vespera|Completorium)/i && $dayofweek == 5 &&  $crank !~ /;;[2-7]/ && $srank !~ /;;[5-7]/ &&
         $crank !~ /Vigil/i && $version !~ /1960/  && $saint{Rule} !~ /BMV/i && $trank !~ /;;[2-7]/ &&
-        $srank !~ /in Octav/i && $saint{Rule} !~ /Infra octavam Epiphaniae Domini/i) { 
+        $srank !~ /in Octav/i) { 
       $tempora{Rank} = $trank = 'Sanctae Mariae Sabbato;;Feria;;1.9;;vide C10';  
 	  $tname = "Tempora/C10.txt";  
       if ($version =~ /Trident/i) {
@@ -646,7 +646,7 @@ sub getrank {
 
 
   if ($version !~ /Monastic/i && $dayname[0] !~ /(Adv|Quad[0-6])/i && $srank[2] < 2 && $trank[2] < 2 && 
-    $testmode !~ /^season$/i && $saint{Rule} !~ /Infra octavam Epiphaniae Domini/i &&
+    $testmode !~ /^season$/i &&
     (($dayofweek == 6 && $srank !~ /Vigil/i && $trank[2] < 2 && !$transfervigil) || 
        ($hora =~ /Vespera|Completorium/i && $dayofweek ==5 &&  $trank[2] < 2 && $srank[0] !~ /Vigil/i &&
         $csaint{Rank} !~ /Vigil/i && $version !~ /1960/))) {  
