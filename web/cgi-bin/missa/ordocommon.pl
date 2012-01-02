@@ -248,7 +248,7 @@ sub getrank {
 	   if (exists($transferspec{$ntday})) {$tn1 =$transferspec{$ntday};}
      elsif(exists($transfer{$ntday})) {$tn1 = $transfer{$ntday};}  
 
-       %tn1 = %{officestring("$datafolder/$lang1/$tn1.txt", 1)};  
+       %tn1 = %{officestring($datafolder, $lang1, "$tn1.txt", 1)};  
        if ($tn1{Rank} =~ /(Feria|Vigilia|infra octavam)/i && $tn1{Rank} !~ /in octava/i
          && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
        elsif ($version =~ /1960/ && $tn1{Rank} =~ /Dominica Resurrectionis/i) 
@@ -261,7 +261,7 @@ sub getrank {
 	                  
      $tname = "$tn.txt";                      
                        
-     %tempora = %{officestring("$datafolder/$lang1/$tname")};   
+     %tempora = %{officestring($datafolder, $lang1, $tname)};   
      $trank = $tempora{Rank};     
   } else {$trank = ''; $tname = '';}     
 				 
@@ -301,7 +301,7 @@ sub getrank {
    $sname = "$sn.txt";   	 
 	 if ($caller && $hora =~ /(Matutinum|Laudes)/i) {$sname =~ s/11-02t/11-02/;}          
 
-     %saint = updaterank(setupstring("$datafolder/$lang1/$sname"));
+     %saint = updaterank(setupstring($datafolder, $lang1, $sname));
      $srank = $saint{Rank};   
   } else {$srank = '';}                 
 
@@ -349,7 +349,7 @@ sub getrank {
 
     if (!transfered($ocday) && -e "$datafolder/$lang1/$cday.txt") {  
       $cname = "$cday.txt";             
-      %csaint = updaterank(setupstring("$datafolder/$lang1/$cname"));
+      %csaint = updaterank(setupstring($datafolder, $lang1, $cname));
       $crank = ($csaint{Rank} =~ /vigilia/i && $csaint{Rank} !~ /;;[56]/) ? '' : $csaint{Rank};  
 	} 
 
@@ -452,7 +452,7 @@ sub getrank {
     $rank = $srank[2];        
 	  $dayname[1] = "$srank[0] $srank[1]"; 
     $winner = $sname;  
-    %winner = updaterank(setupstring("$datafolder/$lang1/$winner"));
+    %winner = updaterank(setupstring($datafolder, $lang1, $winner));
     if ($srank[3] =~ /^(ex|vide)\s*C/i) {  
       $communetype = $1;    
       if ($version =~ /trident/i && $version !~ /monastic/i) {$communetype = 'ex';}
@@ -492,9 +492,9 @@ sub getrank {
     							 
     } else {$dayname[2] = ''; $commemoratio = '';}
   					   
-    %w = %{officestring("$datafolder/$lang1/$winner")};      
+    %w = %{officestring($datafolder, $lang1, $winner)};      
     if ($hora =~ /matutinum/i || !$dayname[2]) { 
-      my %scrip = %{officestring("$datafolder/$lang1/$tname")};  
+      my %scrip = %{officestring($datafolder, $lang1, $tname)};  
       if (!exists($w{"Lectio1"}) && exists($scrip{Lectio1}) && $scrip{Lectio1} !~ /evangelii/i && 
         ($w{Rank} !~ /\;\;ex / || ($version =~ /trident/i && $w{Rank} !~ /\;\;(vide|ex) /i) ) ) 
       {$dayname[2] = "Scriptura: $trank[0]";}
@@ -537,7 +537,7 @@ sub getrank {
      $commemoratio = '';
     
   } elsif ($srank[2]) {   
-     %w = %{officestring("$datafolder/$lang1/$winner")};   
+     %w = %{officestring($datafolder, $lang1, $winner)};   
 	   my $climit1960 = climit1960($sname);  
 	   if ($w{Rule} !~ /omit.*? commemoratio/i && $climit1960  && 
        !($dayofweek == 0 && $srank[0] =~ /vigil/i)) {  
@@ -556,7 +556,7 @@ sub getrank {
     } 
    if (!$commemoratio && !$commemoratio1  && $sname) {
      $sname =~ s/v\././;
-     my %s = %{setupstring("$datafolder/Latin/$sname")};
+     my %s = %{setupstring($datafolder, Latin, $sname)};
      if ($s{Rank} =~ /Vigil/i && exists($s{Commemoratio})) {$commemorated = $sname;}
      if ($s{Rank} =~ /Vigil/i && exists($s{"Commemoratio 2"})) {$commemorated = $sname;}
    }
@@ -707,25 +707,25 @@ sub precedence {
 	if ($missanumber && (-e "$datafolder/Latin/$wm")) {$winner = $wm; } 
 	
 	my $flag = ($winner =~ /tempora/i && $tvesp == 1) ? 1 : 0;  
-    %winner = %{officestring("$datafolder/$lang1/$winner", $flag)};  
-    %winner2 = %{officestring("$datafolder/$lang2/$winner", $flag)};
+    %winner = %{officestring($datafolder, $lang1, $winner, $flag)};  
+    %winner2 = %{officestring($datafolder, $lang2, $winner, $flag)};
     $rule = $winner{Rule};
   }
 
   if ($winner =~ /Sancti/ && $rule =~ /Tempora none/i) {$commemoratio = $scriptura = '';}
   
   if ($commemoratio) {   
-    %commemoratio = %{officestring("$datafolder/$lang1/$commemoratio")};
-    %commemoratio2 = %{officestring("$datafolder/$lang2/$commemoratio")};
+    %commemoratio = %{officestring($datafolder, $lang1, $commemoratio)};
+    %commemoratio2 = %{officestring($datafolder, $lang2, $commemoratio)};
   }
 
   if ($scriptura) {     
-    %scriptura = %{officestring("$datafolder/$lang1/$scriptura")};
-    %scriptura2 = %{officestring("$datafolder/$lang2/$scriptura")};
+    %scriptura = %{officestring($datafolder, $lang1, $scriptura)};
+    %scriptura2 = %{officestring($datafolder, $lang2, $scriptura)};
   }  
   if ($commune) {     
-    %commune = %{officestring("$datafolder/$lang1/$commune")}; 
-    %commune2 = %{officestring("$datafolder/$lang2/$commune")};
+    %commune = %{officestring($datafolder, $lang1, $commune)}; 
+    %commune2 = %{officestring($datafolder, $lang2, $commune)};
     if ($commune =~ /C10/) {
       $rule .= "ex $C10";
       $rule =~ s/Oratio Dominica//gi; 
@@ -754,16 +754,16 @@ sub precedence {
 	
 	$winner = "Votive/$vtv.txt";
     $commemoratio = $commemoratio1 = $scriptura = $commune = '';
-    %winner = updaterank(setupstring("$datafolder/$lang1/$winner"));
-	  %winner2 = updaterank(setupstring("$datafolder/$lang2/$winner"));
+    %winner = updaterank(setupstring($datafolder, $lang1, $winner));
+	  %winner2 = updaterank(setupstring($datafolder, $lang2, $winner));
     %commemoratio = %scriptura = %commune = %commemoratio2 = %scriptura2 = %commune2 = {};
     $rule = $winner{Rule};
     if ($vtv =~ /Maria/i) {
       @rank = split(';;', $winner{Rank});
       $commune = "Commune/C11.txt";
       $communetype = 'ex';
-      %commune = updaterank(setupstring("$datafolder/$lang1/$commune"));
-      %commune2 = updaterank(setupstring("$datafolder/$lang2/$commune"));
+      %commune = updaterank(setupstring($datafolder, $lang1, $commune));
+      %commune2 = updaterank(setupstring($datafolder, $lang2, $commune));
     }
     $dayname[1] = $winner{Name}; $dayname[2] = ''; 
   }	  
@@ -817,30 +817,30 @@ sub monthday {
   return $monthday;
 }
 
-#*** officestring($fname, $flag)
+#*** officestring($basedir, $lang, $fname, $flag)
 # same as setupstring (in dialogcommon.pl = reads the hash for $fname office)
 # with the addition that for the monthly ferias/scriptures (aug-dec)
 # it adds that office to the otherwise empty season related one
 # if flag is 1 looks for the anticipated office for vespers
 # returns the filled hash for the ofiice
-sub officestring {
-  my ($fname, $flag) = @_;        
+sub officestring($$$;$) {
+  my ($basedir, $lang, $fname, $flag) = @_;       
   
   my %s;
   if ($fname !~ /tempora[M]*\/(Pent|Epi)/i) {
-    %s = updaterank(setupstring($fname));
+    %s = updaterank(setupstring($basedir, $lang, $fname));
 	return \%s;
   }
   if ($fname =~ /tempora[M]*\/Pent([0-9]+)/i && $1 < 5) {
-    %s = updaterank(setupstring($fname));
+    %s = updaterank(setupstring($basedir, $lang, $fname));
 	return \%s;
   }
   $monthday = monthday($flag);   
   if (!$monthday) {
-    %s = updaterank(setupstring($fname));
+    %s = updaterank(setupstring($basedir, $lang, $fname));
 	return \%s;
   }						   
-  %s = %{setupstring($fname)};  
+  %s = %{setupstring($basedir, $lang, $fname)};  
   if (!%s) {return '';}
   my @rank = split(';;', $s{Rank});
   my $m = 0;
@@ -853,10 +853,8 @@ sub officestring {
   $rank[0] .= " $w $m";
   $str = "$rank[0];;$rank[1];;$rank[2]";
   if ($rank[3]) {$str .= ";;$rank[3]";}
-  $s{Rank} = $str;
-  my $lang = 'Latin';
-  if ($fname =~ /.*\/(.*?)\/Tempora/i) {$lang = $1;}	 
-  my %m = %{setupstring("$datafolder/$lang/$temporaname/$monthday.txt")};  
+  $s{Rank} = $str;	 
+  my %m = %{setupstring($datafolder, $lang, "$temporaname/$monthday.txt")};  
 
   foreach $key (keys %m) {	
     if (($version =~ /newcal/i && $key =~ /Rank/i)) {;}
@@ -904,9 +902,9 @@ sub climit1960 {
   my $c = shift;            
   if (!$c) {return 0;}
   if ($version !~ /1960/ || $c !~ /sancti/i) {return 1;}
-  my %w = updaterank(setupstring("$datafolder/Latin/$winner"));
+  my %w = updaterank(setupstring($datafolder, 'Latin', $winner));
   if ($winner !~ /tempora/i) {return 1;}
-  my %c = updaterank(setupstring("$datafolder/Latin/$c"));
+  my %c = updaterank(setupstring($datafolder, 'Latin', $c));
   my @r = split(';;', $c{Rank});   
   if ($w{Rank} =~ /Dominica/i) {
     if (($hora !~ /(Vespera|Completorium)/i && $r[2] >= 5) || $r[2] >= 6) {return 1;}

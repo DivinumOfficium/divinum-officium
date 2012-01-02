@@ -12,7 +12,7 @@ $a=4;
 # collects and returns psalm 94 with the antipones
 sub invitatorium {
   my $lang = shift; 	
-  my %invit = %{setupstring("$datafolder/$lang/Psalterium/Matutinum Special.txt")};
+  my %invit = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
   my $name = ($dayname[0] =~ /Adv[12]/i) ? 'Adv' : ($dayname[0] =~ /Adv[34]/i) ? 'Adv3' :
 	($month == 12 && $day == 24) ? 'Nat24' :
 	($dayname[0] =~ /(Quad5|Quad6)/i) ? 'Quad5' : ($dayname[0] =~ /Quad/i && $dayname[0] !~ /Quadp/i)
@@ -87,7 +87,7 @@ sub invitatorium {
 # collects and returns the hymn for matutinum
 sub hymnus {  #matutinum
   my $lang = shift;       
-  my %hymn = %{setupstring("$datafolder/$lang/Psalterium/Matutinum Special.txt")};  
+  my %hymn = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};  
   $name = ($dayname[0] =~ /adv/i) ? 'Adv' : ($dayname[0] =~ /quad5|quad6/i) ? 'Quad5' :
    ($dayname[0] =~ /quad[0-9]/i) ? 'Quad' : ($dayname[0] =~ /pasc/i) ? 'Pasch' : '';
   if ($month == 12 && $day == 24) {$name = 'Adv';}
@@ -118,9 +118,7 @@ sub hymnus {  #matutinum
 	  $h = "$h1$h";
     }
     $hymn = $h; $comment = $c;
-  }	  
-                                       
-  $hymn = getreference($hymn, $lang);  
+  }
 
   $hymn = doxology($hymn, $lang);
   setcomment($label,'Source', $comment, $lang);  push (@s, $hymn);
@@ -134,7 +132,7 @@ sub psalmi_matutinum {
   if ($version =~ /monastic/i && $winner{Rule} !~ /Matutinum Romanum/i) 
     {return psalmi_matutinum_monastic($lang);}
   
-  my %psalmi = %{setupstring("$datafolder/$lang/Psalterium/Psalmi matutinum.txt")};  
+  my %psalmi = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi matutinum.txt')};  
   my $d = ($version =~ /trident/i) ? 'Daya' : 'Day';
   my $dw = $dayofweek;
   #if ($winner{Rank} =~ /Dominica/i) {$dw = 0;}
@@ -209,7 +207,7 @@ sub psalmi_matutinum {
 
 
   setcomment($label, 'Source', $comment, $lang, $prefix);
-  my %spec = %{setupstring("$datafolder/$lang/Psalterium/Psalmi matutinum.txt")};  
+  my %spec = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi matutinum.txt')};  
   my @spec = ();
 
   my $i = 0;
@@ -241,7 +239,7 @@ if ($dayname[0] =~ /Pasc/i && !exists($winner{'Ant Matutinum'}) && $rank < 5 ) {
   
   if ($version =~ /Trident/i && $testmode =~ /seasonal/i && $winner =~ /Sancti/i && 
     $rank >= 2 && $rank < 5 && !exists($winner{'Ant Matutinum'})) {
-    my %psalmi = %{setupstring("$datafolder/$lang/Psalterium/Psalmi matutinum.txt")};  
+    my %psalmi = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi matutinum.txt')};  
     @psalmi = split("\n", $psalmi{"Daya$dayofweek"});
     push (@s, '!Nocturn I.');	  
     foreach $i (0,1) {antetpsalm($psalmi[$i], $i);}
@@ -297,7 +295,7 @@ if ($dayname[0] =~ /Pasc/i && !exists($winner{'Ant Matutinum'}) && $rank < 5 ) {
     my $tde = ($version =~ /1960/ && ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek >3))) ? '1' : '';
     my $i;
 	if ($tde) {
-      my %r = %{setupstring("$datafolder/$lang/Tempora/Pasc5-4.txt")};
+      my %r = %{setupstring($datafolder, $lang, 'Tempora/Pasc5-4.txt')};
 	  @spec = split("\n", $r{'Ant Matutinum'});  
   
     } else {@spec = split("\n", $spec{"Pasc Ant Dominica"});}
@@ -390,7 +388,7 @@ sub votivenocturn {
       push (@s, "\n");
     }
   } else {
-    %mariae = %{setupstring("$datafolder/$lang/$temporaname/C10.txt")};  
+    %mariae = %{setupstring($datafolder, $lang, "$temporaname/C10.txt")};  
 	  @a = split("\n", $mariae{Benedictio}); 	 
 	  setbuild2('Special benedictio');
     push (@s, "Absolutio. $a[0]");
@@ -419,7 +417,7 @@ sub lectiones {
   if ($rule !~ /Limit.*?Benedictio/i) {push (@s, "\&pater_noster");}
   else {push(@s, "\$Pater noster");}
 
-  my %benedictio = %{setupstring("$datafolder/$lang/Psalterium/Benedictions.txt")};  
+  my %benedictio = %{setupstring($datafolder, $lang, 'Psalterium/Benedictions.txt')};  
 
   my $i = $num;  
   $j1 = ($num == 0) ? 1 : 7;
@@ -447,7 +445,7 @@ sub lectiones {
   }
 
   if ($rule =~ /Special Benedictio/) {     
-    %mariae = %{setupstring("$datafolder/$lang/$temporaname/C10.txt")};  
+    %mariae = %{setupstring($datafolder, $lang, "$temporaname/C10.txt")};  
 	  @a = split("\n", $mariae{Benedictio}); 	 
 	  setbuild2('Special benedictio');
   }
@@ -553,28 +551,28 @@ sub lectio {
   						 
   #Nat1-0 special rule
   if ($num <= 3 && $rule =~ /Lectio1 Sancti/i && $winner =~ /tempora/i && $rule !~ /1960/) {   
-    my %c = (columnsel($lang)) ? %commemoratio : %commemoratio2;    
-    $w{"Lectio$num"} = getrefs($c{"Lectio$num"}, $lang, 0);
-    $w{"Responsory$num"} = getrefs($c{"Responsory$num"}, $lang, 0);
+    my %c = (columnsel($lang)) ? %commemoratio : %commemoratio2;
+    $w{"Lectio$num"} = $c{"Lectio$num"};
+    $w{"Responsory$num"} = $c{"Responsory$num"};
   }
 
   #Lectio1 tempora
   if ($num <= 3 && $rule =~ /Lectio1 tempora/i && exists($scriptura{"Lectio$num"})) {
     my %c = (columnsel($lang)) ? %scriptura : %scriptura2;
-    $w{"Lectio$num"} = getrefs($c{"Lectio$num"}, $lang, 0);
-    if ($version =~ /Trident/i && exists($w{"ResponsoryT$num"})) {$w{"Responsory$num"} = getrefs($c{"Responsory$num"}, $lang, 0);}
-    else {$w{"Responsory$num"} = getrefs($c{"Responsory$num"}, $lang, 0);}
+    $w{"Lectio$num"} = $c{"Lectio$num"};
+    if ($version =~ /Trident/i && exists($w{"ResponsoryT$num"})) {$w{"Responsory$num"} = $c{"Responsory$num"};}
+    else {$w{"Responsory$num"} = $c{"Responsory$num"};}
   }
 
   #scriptura1960
   if ($num < 3 && $version =~ /1960/ && $rule =~ /scriptura1960/i && 
     exists($scriptura{"Lectio$num"})) {   
 	  my %c = (columnsel($lang)) ? %scriptura : %scriptura2;
-	  $w{"Lectio$num"} = getrefs($c{"Lectio$num"}, $lang, 0);
+	  $w{"Lectio$num"} = $c{"Lectio$num"};
     
   if ($num == 2 && $votive !~ /(C9|Defunctorum)/i && ($dayname[1] !~ /feria/i || $commemoratio)) {  
       if ($w{Lectio2} =~ /\_/) {$w{Lectio2} = $`;}  
-      my $w1 = getrefs($c{"Lectio3"}, $lang, 0); 
+      my $w1 = $c{"Lectio3"}; 
       $w{Lectio2} .= $w1;
     }
   }	   
@@ -598,7 +596,7 @@ sub lectio {
   } 
 
 
-  my $w = getrefs($w{"Lectio$num"}, $lang, 0); 
+  my $w = $w{"Lectio$num"};
   if ($num < 4 && $rule =~ /Lectio1 Quad/i && $dayname[0] !~ /Quad/i) {$w = '';}
   if ($num < 4 && $commemoratio{Rank} =~ /Quattuor/i && $month == 9) {$w = '';} 
 
@@ -613,7 +611,7 @@ sub lectio {
   if (!$w && (($communetype =~ /^ex/i && $commune !~ /Sancti/i)  || ($num < 4 && $homilyflag && 
          exists($commune{"Lectio$num"})))) {
       %w = (columnsel($lang)) ? %commune : %commune2;
-      $w = getrefs($w{"Lectio$num"}, $lang, 0);               
+      $w = $w{"Lectio$num"};
       if ($w && $num == 1) {setbuild2("Lectio1-3 from Tempora/$file replacing homily"); }
   } 
 
@@ -625,7 +623,7 @@ sub lectio {
   } 
   elsif (!$w && $num == 4 && exists($commemoratio{"Lectio$num"}) && ($version =~ /1960/i)) {  
      %w = (columnsel($lang)) ? %commemoratio : %commemoratio2;
-	   $w = getrefs($w{"Lectio$num"}, $lang, 0);	
+	   $w = $w{"Lectio$num"};
 	  if ($w && $num == 4) {setbuild2("Lectio3 ex commemoratio");}	 
   } 
   if (contract_scripture($num)) {
@@ -649,17 +647,17 @@ sub lectio {
 
   if (!$w && exists($commune{"Lectio$num"})) {	
     my %c = (columnsel($lang)) ? %commune : %commune2;
-	$w = getrefs($c{"Lectio$num"}, $lang, 0);
+	$w = $c{"Lectio$num"};
     if ($num == 2 && $version =~ /1960/) {
-	    my $w1 = getrefs($c{'Lectio3'}); 
+	    my $w1 = $c{'Lectio3'};
       $w .= $w1;
 	  }
   } 
 
 						            
   if ($commune{Rule} =~ /Special Lectio $num/) { 	
-    %mariae = %{setupstring("$datafolder/$lang/$temporaname/C10.txt")};  
-    if ($version =~ /Trident/i) {%mariae = %{setupstring("$datafolder/$lang/$temporaname/C10t.txt")};}  
+    %mariae = %{setupstring($datafolder, $lang, "$temporaname/C10.txt")};  
+    if ($version =~ /Trident/i) {%mariae = %{setupstring($datafolder, $lang, "$temporaname/C10t.txt")};}  
     $w = $mariae{sprintf("Lectio M%02i", $month)};	  	
 	if ($version !~ /1960/ && $month == 9 && $day > 8 && $day < 15) {$w = $mariae{"Lectio M101"};}	  			
 	setbuild2("Lectio $num Mariae M$month");
@@ -681,20 +679,20 @@ sub lectio {
 
     %w = (columnsel($lang)) ? %winner : %winner2;
 	if (($w{Rank} =~ /Simplex/i || ($version =~ /1955/ && $rank == 1.5)) && exists($w{'Lectio94'})) 
-	  {$w = getrefs($w{'Lectio94'}, $lang, 0);}
-	elsif (exists($w{'Lectio93'})) {$w = getrefs($w{'Lectio93'}, $lang, 0);} 
+	  {$w = $w{'Lectio94'};}
+	elsif (exists($w{'Lectio93'})) {$w = $w{'Lectio93'};}
 	
     if (($commemoratio =~ /tempora/i || $commemoratio =~ /01\-05/) && 
 	    ($homilyflag || exists($commemoratio{Lectio7})) && 
 	    $comrank > 1 && ($rank > 4 || ($rank >=3 && $version =~ /Trident/i) || 
       $homilyflag || exists($winner{Lectio1}))) {  
       %w = (columnsel($lang)) ? %commemoratio : %commemoratio2;   
-      $wc = getrefs($w{"Lectio7"}, $lang, 0);
-	    if (!$wc) {$wc = getrefs($w{"Lectio1"}, $lang, 0);} 
+      $wc = $w{"Lectio7"};
+      $wc ||= $w{"Lectio1"}; 
 
       if ($wc) {
 	      setbuild2("Last lectio Commemoratio ex Tempore #1");
-        my %comm = %{setupstring("$datafolder/$lang/Psalterium/Comment.txt")};  
+        my %comm = %{setupstring($datafolder, $lang, 'Psalterium/Comment.txt')};  
         my @comm = split("\n", $comm{'Lectio'});
         $comment = ($commemoratio{Rank} =~ /Feria/) ? $comm[0] : ($commemoratio =~ /01\-05/) ? $comm[3] : $comm[1];
         $w = setfont($redfont,$comment) . "\n$wc";
@@ -702,8 +700,8 @@ sub lectio {
     }
    if ($transfervigil) {
        if (!(-e "$datafolder/$lang/$transfervigil")) {$transfervigil =~ s/v\.txt/\.txt/;}
-       my %tro = %{setupstring("$datafolder/$lang/$transfervigil")}; 
-       if (exists($tro{'Lectio Vigilia'})) {$w = getreference($tro{'Lectio Vigilia'}, $lang);;} 
+       my %tro = %{setupstring($datafolder, $lang, $transfervigil)}; 
+       if (exists($tro{'Lectio Vigilia'})) {$w = $tro{'Lectio Vigilia'};} 
    }	    
     my $cflag = 1;  #*************  03-30-10
 	if ($winner{Rule} =~ /9 lectiones/i && exists($winner{Responsory9})) {$cflag = 0;}
@@ -713,20 +711,20 @@ sub lectio {
      ($version !~ /1955/ || $comrank > 4) && $cflag) { 
       %w = (columnsel($lang)) ? %commemoratio : %commemoratio2;  
       my $ji = 94;             
-	  $wc = getrefs($w{"Lectio$ji"}, $lang, 0); 
+	  $wc = $w{"Lectio$ji"};
 	  if (!$wc && $w{Rank} !~ /infra octav/i) {
 	    $wc = '';
 		for ($ji = 4; $ji < 7; $ji++) {	 
-		  my $w1 = getrefs($w{"Lectio$ji"}, $lang, 0);  
+		  my $w1 = $w{"Lectio$ji"};
           if (!$w1 || ($ji > 4 && $w1 =~ /\!/)) {last;}
           if ($wc =~ /\_/) {$wc = $`;}
           $wc .= $w1;
 	    }
 	  }	   
-	  if (!$wc) {$wc = getrefs($w{"Lectio93"}, $lang, 0);}	
+	  $wc ||= $w{"Lectio93"};
       if ($wc) {
 	    setbuild2("Last lectio: Commemoratio from Sancti #$ji");
-        my %comm = %{setupstring("$datafolder/$lang/Psalterium/Comment.txt")};  
+        my %comm = %{setupstring($datafolder, $lang, 'Psalterium/Comment.txt')};  
         my @comm = split("\n", $comm{'Lectio'});
         $comment = $comm[2]; 
         $w = setfont($redfont,$comment) . "\n$wc"; 
@@ -734,13 +732,13 @@ sub lectio {
     }
 	if ($winner{Rank} =~ /Octav.*(Epi|Corp)/i && $w !~ /!.*Vigil/i) {$w = $wo;}  ;#*** if removed from top
 	
-	if (exists($w{'Lectio Vigilia'})) {$w = getrefs($w{'Lectio Vigilia'}, $lang, 0);}
+	if (exists($w{'Lectio Vigilia'})) {$w = $w{'Lectio Vigilia'};}
 	if ($w =~ /!.*?Octav/i || $w{Rank} =~ /Octav/i) {$w = $wo;}
     $w = addtedeum($w);
   }                                        
 
   if ($ltype1960 == 3 && $num == 4) {
-    if (exists($w{'Lectio94'})) {$w = getrefs($w{'Lectio94'}, $lang, 0);}	#contracted legend for commemoratio
+    if (exists($w{'Lectio94'})) {$w = $w{'Lectio94'};}	#contracted legend for commemoratio
 	  else {
       my $w1 = %w;
       if ($version =~ /newcal/i && !exists($w{Lectio5})) 
@@ -748,7 +746,7 @@ sub lectio {
 
 	    my $i = 5;
       while ($i < 7) {
-        my $w1 = getrefs($w{"Lectio$i"}, $lang, 0);
+        my $w1 = $w{"Lectio$i"};
         if (!$w1 || $w1 =~ /\!/) {last;}
         if ($w =~ /\_/) {$w = $`;}
         $w .= $w1;
@@ -774,8 +772,7 @@ sub lectio {
    if ($version =~ /1955|1960/ && exists($w{"Responsory$na 1960"})) {$s = $w{"Responsory$na 1960"};}	
    elsif ($rule =~ /Responsory Feria/i) { 
 	   if (exists($scriptura{"Responsory$na"})) {
-         $s = (columnsel($lang)) ? $scriptura{"Responsory$na"} : $scriptura2{"Responsory$na"};  
-	     $s = getreference($s, $lang);
+         $s = (columnsel($lang)) ? $scriptura{"Responsory$na"} : $scriptura2{"Responsory$na"};
        } else {
 	     $s = (columnsel($lang)) ? $scriptura{"Lectio$na"} : $scriptura2{"Lectio$na"}; 
 	     if ($s =~ /\n\_/) {$s = "_$'";}
@@ -783,14 +780,13 @@ sub lectio {
 	   } 
 
        if (!$s && $version =~ /1960/ && exists($scriptura{"Responsory$na 1960"})) {
-         $s = (columnsel($lang)) ? $scriptura{"Responsory$na 1960"} : $scriptura2{"Responsory$na 1960"};  
-	     $s = getreference($s, $lang);
+         $s = (columnsel($lang)) ? $scriptura{"Responsory$na 1960"} : $scriptura2{"Responsory$na 1960"};
        }
    } else {
      if (exists($w{"Responsory$na"})) {$s = $w{"Responsory$na"}}
      elsif ($version =~ /1960/ && exists($commune{"Responsory$na"})) {
 	   my %c = (columnsel($lang)) ? %commune : %commune2;
-	   $s = getrefs($c{"Responsory$na"}); 
+	   $s = $c{"Responsory$na"}; 
 	 }	
      if (exists($winner{"Responsory$na"})) {$s = '';}
 
@@ -805,8 +801,7 @@ sub lectio {
        %w = (columnsel($lang)) ? %commune : %commune2;	   
        if (exists($w{"Responsory$na"})) {$s = $w{"Responsory$na"};} 
      }
-   } 
-   $s = getreference($s, $lang);
+   }
 
    $w =~ s/\s*$//;
    $w .= "\n\_\n$s"; 	 
@@ -819,7 +814,7 @@ sub lectio {
     my $file = $1;
 	my $name = $2;	 	  
 	$name =~ s/\s*$//;
-    my %s = %{officestring("$datafolder/$lang/$file.txt")};	 
+    my %s = %{officestring($datafolder, $lang, "$file.txt")};	 
 	my $s = $s{$name};    
 	$w =~ s/\n\@.*?\:.*?\n/\n$s\n/;  	
   }
@@ -828,7 +823,7 @@ sub lectio {
 
   #add Tu autem before responsory
   if ($expand =~ /all/) {
-     my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+     my %prayer = %{setupstring($datafolder, $lang, 'Psalterium/Prayers.txt')};
      $tuautem  = $prayer{'Tu autem'};     
   } else {$tuautem = '$Tu autem'; }
 
@@ -928,7 +923,7 @@ sub lect1960 {
   
   my %w = (columnsel($lang)) ? %winner : %winner2;
   my %s = (columnsel($lang)) ? %scriptura : %scriptura2;
-  my %benedictio = %{setupstring("$datafolder/$lang/Psalterium/Benedictions.txt")};  
+  my %benedictio = %{setupstring($datafolder, $lang, 'Psalterium/Benedictions.txt')};  
   my $i = 3;     
   if ($rank < 2 || $winner{Rank} =~ /Feria/) {$i = ($dayofweek % 3); if ($i == 0) {$i = 3;}} 
   my $w = lectio(1, $lang);	
@@ -1078,7 +1073,7 @@ sub ant_matutinum {
     %spec = (columnsel($lang)) ? %winner : %winner2;
     @spec = split("\n", $spec{'Ant Matutinum'});
     if (!@spec) { 
-      %spec = %{officestring("$datafolder/$lang/$commune")};  
+      %spec = %{officestring($datafolder, $lang, $commune)};  
       @spec = split("\n", $spec{'Ant Matutinum'});
     }
   }	  
@@ -1115,7 +1110,7 @@ sub ant_matutinum {
 
    #Sunday psalter prepares @spec 
    if ($winner{Rank} =~ /Dominica/i) { 
-     %spec = %{setupstring("$datafolder/$lang/Psalterium/Psalmi matutinum.txt")};  
+     %spec = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi matutinum.txt')};  
      @spec = split("\n", $spec{'Pasc Ant Dominica'});
    }
 
@@ -1185,16 +1180,16 @@ sub resolveitable {
     $i = 1;   
     while (@file && $i <= $lim) {
       $file = shift(@file);     
-      %winit = %{setupstring("$datafolder/$lang/$temporaname/$file.txt")}; 
-      #$w{"Lectio$start"} = getrefs($winit{"Lectio$i"}, $lang, 0); 
-      #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = getrefs($winit{"Responsory$i"}, $lang, 0);}
+      %winit = %{setupstring($datafolder, $lang, "$temporaname/$file.txt")}; 
+      #$w{"Lectio$start"} = $winit{"Lectio$i"};
+      #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = $winit{"Responsory$i"};}
       %w = tferifile(\%w, \%winit, $start, 1, $lang); 
       $i++;
       $start++
     }
     while ($start <= 3) {
-      #$w{"Lectio$start"} = getrefs($winit{"Lectio$i"}, $lang, 0);  
-      #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = getrefs($winit{"Responsory$i"}, $lang, 0);}
+      #$w{"Lectio$start"} = $winit{"Lectio$i"};
+      #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = $winit{"Responsory$i"};}
       %w = tferifile(\%w, \%winit, $start, $i, $lang); 
       $i++;
       $start++
@@ -1211,8 +1206,8 @@ sub resolveitable {
     else {%winit = (columnsel($lang)) ? %scriptura : %scriptura2;} 
     $i = 1;
     while ($start < 4) {
-      #$w{"Lectio$start"} = getrefs($winit{"Lectio$i"}, $lang, 0);
-      #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = getrefs($winit{"Responsory$i"}, $lang, 0);}
+      #$w{"Lectio$start"} = $winit{"Lectio$i"};
+      #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = $winit{"Responsory$i"};}
       %w = tferifile(\%w, \%winit, $start, $i, $lang); 
       $i++;
       $start++;
@@ -1221,9 +1216,9 @@ sub resolveitable {
     $start = 1;
     while (@file && $i <= $lim) {
       $file = shift(@file);    
-      %winit = %{setupstring("$datafolder/$lang/$temporaname/$file.txt")};
-      #$w{"Lectio$start"} = getrefs($winit{"Lectio$i"}, $lang, 0); 
-      #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = getrefs($winit{"Responsory$i"}, $lang, 0);}
+      %winit = %{setupstring($datafolder, $lang, "$temporaname/$file.txt")};
+      #$w{"Lectio$start"} = $winit{"Lectio$i"};
+      #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = $winit{"Responsory$i"};}
       %w = tferifile(\%w, \%winit, $start, 1, $lang); 
       $i++;
       $start++
@@ -1238,13 +1233,13 @@ sub tferifile {
   my ($w, $winit, $start, $i, $lang) = @_;
   my %w = %$w;
   my %winit = %$winit;
-					   
-  $w{"Lectio$start"} = getrefs($winit{"Lectio$i"}, $lang, 0); 
+
+  $w{"Lectio$start"} = $winit{"Lectio$i"};
   if (($winit{Rule} =~ /Initia cum Responsory/i || $winit{Rank} =~ /Dominica/i) && exists($winit{"Responsory$i"})) 
-    {$w{"Responsory$start"} = getrefs($winit{"Responsory$i"}, $lang, 0);}
+    {$w{"Responsory$start"} = $winit{"Responsory$i"};}
   elsif (!exists($w{"Responsory$start"})) {
     my %s = (columnsel($lang)) ? %scriptura : %scriptura2;
-    $w{"Responsory$start"} = getrefs($s{"Responsory$i"}, $lang, 0);
+    $w{"Responsory$start"} = $s{"Responsory$i"};
   }
   return %w;
 
@@ -1265,7 +1260,7 @@ sub StJamesRule {
   if ($w{Rank} =~ /Dominica/i && prevdayl1($s)) {
     my $kd = "$dayname[0]-1";
 	if ($ordostatus =~ /Ordo/i) {return $kd;}
-    %w1 = %{setupstring("$datafolder/$lang/$temporaname/$kd.txt");}
+    %w1 = %{setupstring($datafolder, $lang, "$temporaname/$kd.txt");}
   }
   if ($w{Rank} =~ /Jacobi/ && $scriptura{Lectio1} =~ /!.*?($s) /i) {
     if ($ordostatus =~ /Ordo/) {$s = $scriptura; $s =~ s/(Tempora\/|\.txt)//gi; return $s;}
@@ -1288,7 +1283,7 @@ sub prevdayl1 {
   my $m = $month;
   if ($day = 0) {$m--; $d = $monthtab[$m -1];}
   my $kd = sprintf("%02i-%02i", $m, $d); 
-  my %w1 = %{setupstring("$datafolder/$lang/$sanctiname/$kd.txt")};
+  my %w1 = %{setupstring($datafolder, $lang, "$sanctiname/$kd.txt")};
   my $l = $w1{Lectio1}; 
   if ($l =~ /!.*?$s 1:/i) {return 1;}
   return 0;

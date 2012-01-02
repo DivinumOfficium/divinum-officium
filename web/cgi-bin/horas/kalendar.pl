@@ -82,8 +82,8 @@ $browsertime = strictparam('browsertime');
 $Readings = strictparam('readings');
 
 #internal script, cookies
-%dialog = %{setupstring("$datafolder/horas.dialog")};
-if (!$setupsave) {%setup = %{setupstring("$datafolder/horas.setup")};}
+%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
+if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'horas.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 $officium = strictparam('officium');

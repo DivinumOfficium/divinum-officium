@@ -408,7 +408,7 @@ sub setcookies {
   $check =~ s/\s//g;
                           
   if (!$values[-1]) {
-    my %s = %{setupstring("$datafolder/horas.setup")};
+    my %s = %{setupstring($datafolder, '', 'horas.setup')};
     $values[-1] = $check;
   }
 

@@ -13,23 +13,18 @@ Suffragium=Maria2;;Papa;Ecclesia;;
 
 [Commemoratio Oratio]
 !Pro S. Hygino Papa Mart.
-@Commune/C4b:Oratio proper Gregem
-Infirmitátem nostram réspice, omnípotens Deus: et, quia pondus própriæ actiónis~
-gravat, beáti Hygíni Mártyris tui atque Pontíficis intercéssio gloriósa nos~
-prótegat.
-$Per Dominum
+@Commune/C2c:Oratio:s/N\./Hygíni/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Oratio Gregem
 
 [Commemoratio Secreta]
 !Pro S. Hygino Papa Mart.
-@Commune/C4b:Secreta proper Gregem
-Hóstias tibi, Dómine, beáti Hygíni Mártyris tui atque Pontíficis dicátas méritis,~
-benígnus assúme: et ad perpétuum nobis tríbue proveníre subsídium.
-$Per Dominum
+@Commune/C2c:Secreta:s/N\./Hygíni/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Secreta Gregem
 
 [Commemoratio Postcommunio]
 !Pro S. Hygino Papa Mart.
-@Commune/C4b:Postcommunio proper Gregem
-Refécti participatióne múneris sacri, quæsumus, Dómine, Deus noster: ut,~
-cujus exséquimur cultum, intercedénte beáto Hygíno Mártyre tuo atque Pontífice,~
-sentiámus efféctum.
-$Per Dominum
+@Commune/C2c:Postcommunio:s/N\./Hygíno/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Postcommunio Gregem

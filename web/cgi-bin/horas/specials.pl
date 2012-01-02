@@ -145,7 +145,7 @@ sub specials {
     }
 
     if ($item =~ /Capitulum/i && $hora =~ /prima/i) { 
-      my %brevis = %{setupstring("$datafolder/$lang/Psalterium/Prima Special.txt")};  
+      my %brevis = %{setupstring($datafolder, $lang, 'Psalterium/Prima Special.txt')};  
 	  if ($dayofweek > 0 && $version !~ /1960/ && $winner{Rank} =~ /Feria|Vigilia/i && $commune !~ /C10/ && 
 	      $rank < 3  && $dayname[0] !~ /Pasc/i) {
 	    @capit = split("\n", $brevis{'Feria'});
@@ -179,7 +179,7 @@ sub specials {
     }
 	     
     if ($item =~ /Capitulum/i && $hora =~ /(Tertia|Sexta|Nona)/i) { 
-       my %capit = %{setupstring("$datafolder/$lang/Psalterium/Minor Special.txt")};  
+       my %capit = %{setupstring($datafolder, $lang, 'Psalterium/Minor Special.txt')};  
        my $name = minor_getname();	
        my $capit = $capit{$name};	  
        my $resp = '';  
@@ -216,7 +216,7 @@ sub specials {
     }
 
     if ($item =~ /Capitulum/i && $hora =~ /(Laudes|Vespera)/i) { 
-      my %capit = %{setupstring("$datafolder/$lang/Psalterium/Major Special.txt")};  
+      my %capit = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};  
       my $name = major_getname(1);	  
 	    if ($version =~ /monastic/i) {$name =~ s/Day[0-5]M/DayFM/i;}	
 	   
@@ -264,9 +264,8 @@ sub specials {
            {($wr, $cr) = getproprium("$hmn Vespera 3", $lang, $seasonalflag, 1);}
          if (!$wr) {($wr, $cr) = getproprium("$hmn $hora", $lang, $seasonalflag, 1);}
          $w =~ s/\s*$//;  	
-                 
-         $wr = getreference($wr, $lang);   
-         if (!$wr) {$wr = $hymn;}
+
+         $wr ||= $hymn;
 
          if ($wr) {$w .= "\n_\n!$hymntrans\n$wr";} 
        }
@@ -293,7 +292,7 @@ sub specials {
     }
 
     if ($item =~ /Lectio brevis/i && $hora =~ /prima/i) {  
-       my %brevis = %{setupstring("$datafolder/$lang/Psalterium/Prima Special.txt")};  
+       my %brevis = %{setupstring($datafolder, $lang, 'Psalterium/Prima Special.txt')};  
        my $name = ($dayname[0] =~ /(Quad5|Quad6)/i) ? 'Quad5' : 
 	      ($dayname[0] =~ /Quad/i && $dayname[0] !~ /Quadp/i) ? 'Quad' :
 		    ($dayname[0] =~ /Adv/i) ? 'Adv' :
@@ -381,7 +380,7 @@ sub specials {
         next;
 	  }
 
-	  my %suffr = %{setupstring("$datafolder/$lang/Psalterium/Major Special.txt")};  
+	  my %suffr = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};  
     my (@suffr, $comment);
 
     if ($version =~ /trident/i) { 
@@ -426,7 +425,7 @@ sub specials {
 
   if ($item =~ /Conclusio/i &&  $hora =~ /Laudes/i && ($month == 4 || $version !~ /1960/) && ($rule =~ /Laudes Litania/i || 
     $commemoratio{Rule} =~ /Laudes Litania/i || $scriptura{Rule} =~ /Laudes Litania/i || $flag) )  {
-      my %w =  %{setupstring("$datafolder/$lang/Psalterium/Major Special.txt")};  
+      my %w =  %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};  
       push(@s, "\n");
 	  my $lname = ($version =~ /monastic/i) ? 'LitaniaM' : 'Litania';
   	  if ($version =~ /1570/ && exists($w{LitaniaT})) {$lname = 'LitaniaT';}
@@ -436,13 +435,13 @@ sub specials {
   }
   if ($item =~ /Conclusio/i && $dirge && $commune !~ /C9/i) {
     if ($hora =~ /Vespera/i && $dirge == 1) {  
-      my %prayer =%{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+      my %prayer =%{setupstring($datafolder, $lang, 'Psalterium/Prayers.txt')};
       push(@s, "\n");	 
 	  push(@s, $prayer{DefunctV});
 	  setbuild1($item, 'Recite Vespera defunctorum');
 	  $skipflag = 1
   } elsif ($hora =~ /Laudes/i && $dirge == 2) {
-	  my %prayer =%{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+	  my %prayer =%{setupstring($datafolder, $lang, 'Psalterium/Prayers.txt')};
       push(@s, "\n");	 
 	  push(@s, $prayer{DefunctM});
 	  setbuild1($item, 'Recite Officium defunctorum');
@@ -475,7 +474,7 @@ sub setcomment {
 
   if ($comment =~ /Source/i && $votive) {$ind = 7;}
   $label = translate_label($label, $lang);	 
-  my %comm = %{setupstring("$datafolder/$lang/Psalterium/Comment.txt")};  
+  my %comm = %{setupstring($datafolder, $lang, 'Psalterium/Comment.txt')};  
   my @comm = split("\n", $comm{$comment});
   $comment = $comm[$ind];
   if ($prefix) {$comment = "$prefix $comment";} 
@@ -562,7 +561,7 @@ sub checkcommemoratio {
 #collects and returns psalms for prim, tertia, sexta, none, completorium
 sub psalmi_minor {		
   my $lang = shift;     
-  my %psalmi = %{setupstring("$datafolder/$lang/Psalterium/Psalmi minor.txt")};  
+  my %psalmi = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi minor.txt')};  
   my (@psalmi, $ant, $psalms);
   
   if ($version =~ /monastic/i) {
@@ -761,7 +760,7 @@ sub psalmi_major {
   $lang = shift;
 
   if ($version =~ /monastic/i && $hora =~ /Laudes/i) {$psalmnum1 = $psalmnum2 = -1;}
-  my %psalmi = %{setupstring("$datafolder/$lang/Psalterium/Psalmi major.txt")};  
+  my %psalmi = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi major.txt')};  
   my $name = $hora;		 
   if ($hora =~ /Laudes/) {$name .= $laudes;}			 
 	my @psalmi = splice(@psalmi, @psalmi);;
@@ -977,7 +976,7 @@ sub oratio
     { 
         my $name = "$dayname[0]-0"; 
         if ($name =~ /(Epi1|Nat)/i) {$name = 'Epi1-0a';}
-        %w = %{setupstring("$datafolder/$lang/$temporaname/$name.txt")};    
+        %w = %{setupstring($datafolder, $lang, "$temporaname/$name.txt")};    
     }
 
     if ($dayofweek > 0 && exists($w{"OratioW"}) && $rank < 5) {$w = $w{"OratioW"};}
@@ -1023,16 +1022,11 @@ sub oratio
     if ($winner =~ /tempora/i && !$w)
     {   
         my $name = "$dayname[0]-0";	
-        %w = %{officestring("$datafolder/$lang/$temporaname/$name.txt")};   
+        %w = %{officestring($datafolder, $lang, "$temporaname/$name.txt")};   
         $w = $w{Oratio};
         if (!$w) {$w = $w{'Oratio 2'};}
         if ($w) {setbuild2("Oratio Dominica");}
     }
-
-    #sub unica concl
-    if ($version =~ /1960/ && $rule =~ /sub unica conc/i && $hora =~ /(laudes|vespera)/i) 
-    {$w =~ s/Commemoratio4/Commemoratio4r/;} 
-    $w = getreference($w, $lang);	 
 
     #* deletes added commemoratio
     if (($w =~ /!commemoratio/i && $hora !~ /(laudes|vespera)/i) ||
@@ -1048,7 +1042,7 @@ sub oratio
     if ($priest) {push (@s, "&Dominus_vobiscum");}
     elsif (!$precesferiales) {push (@s, "&Dominus_vobiscum");}
     else {   
-     my %prayer =%{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+     my %prayer =%{setupstring($datafolder, $lang, 'Psalterium/Prayers.txt')};
      my $text = $prayer{'Dominus'};
      my @text = split("\n", $text);
      push (@s, $text[4]);
@@ -1083,7 +1077,7 @@ sub oratio
     $i = getind($commemoratio1, ($hora =~ /laudes/i) ? 2 : 3, $day); 
     $w = getcommemoratio($commemoratio1, $i, $lang); 
     my $num = concurrent_office($commemoratio1, 1, $day); 
-    if ($w) {setcc($w, $num, setupstring("$datafolder/$lang/$commemoratio1"));}
+    if ($w) {setcc($w, $num, setupstring($datafolder, $lang, $commemoratio1));}
     }
 
     if ($hora =~ /(laudes|vespera)/i && $commemoratio && ($hora =~ /laudes/i || 
@@ -1093,14 +1087,14 @@ sub oratio
     if ($i == 0) {$i = 1;} #Christ the King on 10-31
     $w = getcommemoratio($commemoratio, $i, $lang);  
     my $num = concurrent_office($commemoratio, 2, $day);
-    if ($w) {setcc($w, $num, setupstring("$datafolder/$lang/$commemoratio"));}
+    if ($w) {setcc($w, $num, setupstring($datafolder, $lang, $commemoratio));}
     } 
 
     #transfervigil
     if ($hora =~ /Laudes/i && $transfervigil ) { 
     if (!(-e "$datafolder/$lang/$transfervigil")) {$transfervigil =~ s/v\.txt/\.txt/;}
     $w = vigilia_commemoratio($transfervigil, $lang); 
-    if ($w) {setcc($w, 3, setupstring("$datafolder/$lang/$transfervigil"));}
+    if ($w) {setcc($w, 3, setupstring($datafolder, $lang, $transfervigil));}
     }	                                              
 
     #add commemoratio in winner for lauds or first vespers
@@ -1123,7 +1117,7 @@ sub oratio
 
     if ($dayofweek != 0 && exists($commemoratio{'Oratio Vigilia'}) && $hora =~ /Laudes/i) {
     $w = vigilia_commemoratio($commemoratio, $lang);
-    if ($w) {setcc($w, 3, setupstring("$datafolder/$lang/$commemoratio"));}
+    if ($w) {setcc($w, 3, setupstring($datafolder, $lang, $commemoratio));}
     }	                                              
 
     my $key;
@@ -1224,11 +1218,11 @@ sub commemoratio {
   my %w;
   if ($item =~ /winner/i) {%w =(columnsel($lang)) ? %winner : %winner2; $ite = $winner;}
   elsif ($item =~ /commemoratio1/i) 
-    {%w = %{officestring("$datafolder/$lang/$commemoratio1")}; $code = 11; $ite = $commemoratio1;}
+    {%w = %{officestring($datafolder, $lang, $commemoratio1)}; $code = 11; $ite = $commemoratio1;}
   elsif ($item =~ /commemoratio/i) 
     {%w = (columnsel($lang)) ? %commemoratio : %commemoratio2; $code = 12; $ite = $commemoratio; }
   elsif ($item =~ /commemorated/i) 
-    {%w = %{officestring("$datafolder/$lang/$commemorated")}; $code = 13; $ite = $commemorated; }
+    {%w = %{officestring($datafolder, $lang, $commemorated)}; $code = 13; $ite = $commemorated; }
   if ($version =~ /1960/ && $w{Rule} =~ /nocomm1960/i) {return;} 
 
   $ind = getind($ite, $ind, $day); 
@@ -1279,7 +1273,7 @@ sub getcommemoratio {
   my $wday = shift;       
   my $ind = shift;		
   my $lang = shift;     
-  my %w = %{officestring("$datafolder/$lang/$wday", ($ind == 1) ? 1 : 0)};   
+  my %w = %{officestring($datafolder, $lang, $wday, ($ind == 1) ? 1 : 0)};   
   my %c = undef;   
 
   if ($winner =~ /Nat1/ && $version !~ /1960/ && $wday =~ /12-30/) {return '';}
@@ -1309,7 +1303,7 @@ sub getcommemoratio {
     if ($file =~ /^C[0-9]+$/ && $dayname[0] =~ /Pasc/i) {$file .= 'p';}
 	$file = "$file.txt";
 	if ($file =~ /^C/) {$file = "Commune/$file";}	  
-	%c = %{setupstring("$datafolder/$lang/$file")}; 
+	%c = %{setupstring($datafolder, $lang, $file)}; 
   }
   else {%$c = {};}
   if (!$rank) {$rank[0] = $w{Name};}  #commemoratio from commune
@@ -1321,7 +1315,7 @@ sub getcommemoratio {
     $wday =~ s/\-[0-9]/-0/; 
     $wday =~ s/Epi1\-0/Epi1-0a/;	   
 
-  	my %w1 = %{officestring("$datafolder/$lang/$wday", ($i == 1) ? 1 : 0)};   
+  	my %w1 = %{officestring($datafolder, $lang, $wday, ($i == 1) ? 1 : 0)};   
     if (exists($w1{'OratioW'})) {$o = $w1{'OratioW'};}
     else {$o = $w1{'Oratio'};}
   }
@@ -1337,11 +1331,6 @@ sub getcommemoratio {
   }
   if (!$o) {return '';}
 
-  #sub unica concl
-  if ($o && $version =~ /1960/ && $w{Rule} =~ /sub unica conc/i) 
-    {$o =~ s/Commemoratio4/Commemoratio4r/} 
-  $o = getreference($o, $lang);   
-                               
   my $a = $w{"Ant $ind"};	
   if (!$a) {$i = 4 - $ind; $a = $w{"Ant $i"};}
   if (!$a) {$a = $c{"Ant $ind"};}   
@@ -1354,7 +1343,7 @@ sub getcommemoratio {
 	if ($month == 12 && 
        (($hora =~ /vespera/i && $day >= 17 && $day <= 23) ||
        ($hora =~ /laudes/i && ($day == 21 || $day == 23)))) {
-      my %v = %{setupstring("$datafolder/$lang/Psalterium/Major Special.txt")};
+      my %v = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};
 	  if ($hora =~ /vespera/i) {$a = $v{"Adv Ant $day"};}
 	  else {$a = $v{"Adv Ant $day" . "L"};}
 	}
@@ -1369,7 +1358,7 @@ sub getcommemoratio {
  
   if (!$v) {$v = 'versus missing';}     
 
-  my %prayer =%{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+  my %prayer =%{setupstring($datafolder, $lang, 'Psalterium/Prayers.txt')};
   my $w = "!Commemoratio $rank[0]\nAnt. $a\n_\n$v\n_\n$prayer{Oremus}\nv. $o\n"; 
   return $w;
 }
@@ -1389,15 +1378,14 @@ sub vigilia_commemoratio {
   if ($fname !~ /\.txt$/) {$fname .= '.txt';}
   if ($fname !~ /(Tempora|Sancti)/i ) {$fname = "Sancti/$fname";} 
 
-  my %w = %{setupstring("$datafolder/$lang/$fname")}; 
+  my %w = %{setupstring($datafolder, $lang, $fname)}; 
   if ($w{Rank} =~ /Vigilia/i) {$w = $w{Oratio};}
   elsif (exists($w{'Oratio Vigilia'})) {$w = $w{'Oratio Vigilia'};} 
   if (!$w) {return '';}
-  else {$w = getreference($w, $lang);}
   my $c = "!Commemoratio Vigilia\n";
   if ($w =~ /\!.*?\n/) {$c = $&; $w = $';}
 
-  my %p = %{setupstring("$datafolder/$lang/Psalterium/Major Special.txt")};  
+  my %p = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};  
   my $a = $p{"Day$dayofweek Ant 2"};
   my $v = $p{"Day$dayofweek Versum 2"};
   $w = $c . "Ant. $a" . "_\n$v" . "_\n\$Oremus\n$w"; 
@@ -1471,7 +1459,7 @@ sub getproprium {
       $commune{Rank} =~ /;;ex\s*(Sancti\/.*?)\s/i)) { 
      my $fn = $1;
      my $cn = ($fn =~ /^Sancti/i) ? $fn : "$communename/$fn";  
-     my %c = %{setupstring("$datafolder/$lang/$cn.txt")};  
+     my %c = %{setupstring($datafolder, $lang, "$cn.txt")};  
      $w = tryoldhymn(\%c, $name, $w);
 	   $c = 4;
     }
@@ -1582,7 +1570,7 @@ sub getseant {
 	my %c = split(';;', $str);	 
 	my $key = sprintf("seant%02i-%02i", $month, $day); 
 	my $d = $c{$key};	 
-	my %w = %{setupstring("$datafolder/$lang/Tempora/$d.txt")};	 
+	my %w = %{setupstring($datafolder, $lang, "Tempora/$d.txt")};	 
 	$w = $w{'Ant 3'};
   }
   return $w;
@@ -1596,7 +1584,7 @@ sub getfrompsalterium {
   my $lang = shift;
 
   #get from psalterium
-  my %c = %{setupstring("$datafolder/$lang/Psalterium/Major Special.txt")};  
+  my %c = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};  
   my $name = major_getname();  	   
   $name =~ s/(Laudes|Vespera)/$item/i; 		
   my $w = $c{"$name $ind"};  
@@ -1630,7 +1618,7 @@ sub getfromcommune {
     if ($dayname[0] =~ /Pasc/i && (-e $fname)) {$c .= 'p';}
   }
 
-  my %w = %{setupstring("$datafolder/$lang/$c.txt")};  
+  my %w = %{setupstring($datafolder, $lang, "$c.txt")};  
   my $v = $w{$name};    
   if (!$v) {$v = $w{"$name $ind"};}  
   if (!$v) {$ind = 4 - $ind; $v = $w{"$name $ind"};}
@@ -1737,7 +1725,7 @@ sub doxology {
 
   if ($dname) {
 	if ($dname =~ /Asc/i && $version =~ /1570/) {$dname .= 'T';} 
-    my %w = %{setupstring("$datafolder/$lang/Psalterium/Doxologies.txt")};  
+    my %w = %{setupstring($datafolder, $lang, 'Psalterium/Doxologies.txt')};  
     $dox = $w{$dname};
     setbuild2("Doxology: $dname");
   }
@@ -1781,26 +1769,29 @@ sub getrefs {
   my $flag = 0;
   my %s = {};  
                          
-  while ($w =~ /\@([a-z0-9\/\-]+?)\:([a-z0-9 ]*)/i) {
+  while ($w =~ /\@([a-z0-9\/\-]+?)\:([a-z0-9 ]*)(?::(.*))?/i) {
     $before = $`;
     $file = $1; 
     $item = $2;
     $after = $';
-    $item =~ s/\s*$//; 
-
+    my $substitutions = $3;
+    $item =~ s/\s*$//;
+    
     if ($file =~ /^feria$/i) {
-      %s = %{setupstring("$datafolder/$lang/Psalterium/Major Special.txt")};
+      %s = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};
       my $a = chompd($s{"Day$dayofweek Ant $ind"});
       if (!$a) {$a  = "Day$dayofweek Ant $ind missing";}
       my $v = chompd($s{"Day$dayofweek Versum $ind"});
       if (!$v) {$a  = "Day$dayofweek Versus $ind missing";}
-      $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$after";   
+      $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$after";
+      do_inclusion_substitutions($a, $substitutions);
+      do_inclusion_substitutions($v, $substitutions);
       next;
     }
 
 	if ($dayname[0] =~ /Pasc/i) {$file =~ s/(C[23])/$1p/g;}
                   
-    %s = %{setupstring("$datafolder/$lang/$file.txt")};	   
+    %s = %{setupstring($datafolder, $lang, "$file.txt")};	   
     if ($item =~ /(commemoratio|Octava)/i) {
       my $ita = $1;		
       my $a = $s{"$ita"};
@@ -1813,8 +1804,11 @@ sub getrefs {
 		if ($octavam =~ /$oct/) {$flag = 0;}
 		else {$octavam .= $oct;} 
 	  }	
-	  if ($flag) {$a = "_\n$a" . "_\n";}
-	  else {$a = '';}  
+	  if ($flag) {
+        do_inclusion_substitutions($a, $substitutions);
+        $a = "_\n$a" . "_\n";
+      }
+	  else {$a = '';}
 	  $w = "$before$a$after";   
       next;
    }
@@ -1845,6 +1839,9 @@ sub getrefs {
         if ($popeclass && $popeclass =~ /C/ && $ind == 3) {$a = papal_antiphon_dum_esset($lang);}
       }
 
+      do_inclusion_substitutions($a, $substitutions);
+      do_inclusion_substitutions($v, $substitutions);
+      do_inclusion_substitutions($o, $substitutions);
 	  $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$o" . "_\n$after";  
       next;
     }
@@ -1853,9 +1850,10 @@ sub getrefs {
    if ($after && $after !~ /^\s*$/) {$after = "_\n$after";}
    if ($before && $before !~ /^\s*$/) {$before .= "_\n";}	 
    if (!$a) {$a = "$file $item missing\n";}
+   do_inclusion_substitutions($a, $substitutions);
    $w = $before . $a . $after; 
    next;
- }                       
+  }
         
  $w =~ s/\_\n\_/\_/g;
          
@@ -1877,7 +1875,7 @@ sub get_prima_responsory {
   if ($version =~ /1960/ && $month == 1 && $day > 5 && $day < 14) {$key = 'Epi';}
   if ($version =~ /1960/ && $key =~ /Corp/) {$key = '';}
   if (!$key) {return '';}  
-  my %t = %{setupstring("$datafolder/$lang/Psalterium/Prima Special.txt")}; 
+  my %t = %{setupstring($datafolder, $lang, 'Psalterium/Prima Special.txt')}; 
   return $t{"Responsory $key"}; 
 }
 

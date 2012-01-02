@@ -387,7 +387,7 @@ sub topnext {
 #  - $blackfontsize value, used in setcell
 #  - $totallines for position
 sub table_start {
-  our %revtrans = %{setupstring("$datafolder/$voicelang/Psalterium/Revtrans.txt")};
+  our %revtrans = %{setupstring($datafolder, $voicelang, "Psalterium/Revtrans.txt")};
   our @cell = splice(@cell, @cell);
   our $tagnum = 0;
   our @speecharray = splice(@speecharray, @speecharray);
@@ -514,7 +514,7 @@ sub voiceit {
   my $index = shift;     
   if ($voicecolumn =~ /mute/i) {return;}
   my $lang = $voicelang;  
-  my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
   my $text = '';
   my ($i, $line, $rest);
   my $ind = 0; 

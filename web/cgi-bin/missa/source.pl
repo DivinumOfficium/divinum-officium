@@ -27,7 +27,7 @@ use Time::Local;
 $q = new CGI;
 $error = '';
 require "$Bin/../horas/do_io.pl";
-require "$Bin/dialogcommon.pl";
+require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
 
 binmode(STDOUT, ':encoding(utf-8)');
@@ -35,8 +35,8 @@ binmode(STDOUT, ':encoding(utf-8)');
 #*** collect parameters
 getini('missa'); #files, colors
 
-%dialog = %{setupstring("$datafolder/missa.dialog")};
-if (!$setupsave) {%setup = %{setupstring("$datafolder/missa.setup")};}
+%dialog = %{setupstring($datafolder, '', 'missa.dialog')};
+if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'missa.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 eval($setup{'parameters'});
