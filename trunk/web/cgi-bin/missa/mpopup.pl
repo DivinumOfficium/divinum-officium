@@ -32,7 +32,7 @@ $q = new CGI;
 
 
 #*** collect standard items
-require "$Bin/dialogcommon.pl";
+require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/ordo.pl";
 #require "$Bin/ordocommon.pl";
@@ -45,8 +45,8 @@ binmode(STDOUT, ':encoding(utf-8)');
 #*** get parameters
 getini('missa'); #files, colors
 
-%dialog = %{setupstring("$datafolder/missa.dialog")};
-%setup = %{setupstring("$datafolder/missa.setup")};
+%dialog = %{setupstring($datafolder, '', 'missa.dialog')};
+%setup = %{setupstring($datafolder, '', 'missa.setup')};
 
 eval($setup{'parameters'});
 eval($setup{'general'});  
@@ -62,7 +62,7 @@ $title = "$popup";
 $title =~ s/[\$\&]//;
 
 #$tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;
-#%translate = %{setupstring("$datafolder/$tlang/Ordo/Translate.txt")};
+#%translate = %{setupstring($datafolder, $tlang, "Ordo/Translate.txt")};
 
  $text = gettext($popup, $lang1); 
  $t = length($text);

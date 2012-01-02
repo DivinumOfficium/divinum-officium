@@ -182,7 +182,7 @@ sub adjustname {
   my $missing = (-e "$datafolder/$lang/Sancti/$file.txt") ? '' :  'missing';  
   if ($missing) {$name .= "<BR><FONT COLOR=red>$missing</FONT>";}
   else {
-    my %w = %{setupstring("$datafolder/$lang/Sancti/$file.txt")};
+    my %w = %{setupstring($datafolder, $lang, "Sancti/$file.txt")};
 	  %w = updaterank(\%w, $year); 
     my @r = split(';;', $w{Rank});
     my $r = floor($r[2]);

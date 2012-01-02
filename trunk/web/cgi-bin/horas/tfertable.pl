@@ -173,7 +173,7 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
 	     $tname =$transfer{"Tempora/$tname"};
 		   $tname =~ s/Tempora\///;
 	    }
-      %tempora = updaterank(officestring("$datafolder/Latin/Tempora/$tname.txt"));   
+      %tempora = updaterank(officestring($datafolder, Latin, "Tempora/$tname.txt"));   
       $trank = $tempora{Rank};     
       if ($version =~ /1955|1960/ && exists($tempora{Rank1960})) {$trank = $tempora{Rank1960};}
       if ($version =~ /Trident/i && exists($tempora{RankTrident})) {$w{Rank}=$w{RankTrident};}
@@ -187,7 +187,7 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
 	  if (exists($transfer{$sday}) && $transfer{$sday} !~ /Tempora/i) {$sday = $transfer{$sday}; $transfered = 1;}
       
 
-      %saint = %{setupstring("$datafolder/Latin/Sancti/$sday.txt")};
+      %saint = %{setupstring($datafolder, 'Latin', "Sancti/$sday.txt")};
       $srank = $saint{Rank};      
       if ($version =~ /1955|1960/ && exists($saint{Rank1960})) {$srank = $saint{Rank1960};}
       if ($version =~ /Trident/i && exists($saint{RankTrident})) {$srank=$saint{RankTrident};}
@@ -200,7 +200,7 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
       if (exists($transfertemp{$sday1})) {$sday1 = $transfertemp{$sday1};}
 	    if (exists($transfer{$sday1})) {$sday1 = $transfer{$sday1};}
       
-      %saint1 = %{setupstring("$datafolder/Latin/Sancti/$sday1.txt")};
+      %saint1 = %{setupstring($datafolder, 'Latin', "Sancti/$sday1.txt")};
       $srank1 = $saint1{Rank};      
       if ($version =~ /1955|1960/ && exists($saint1{Rank1960})) {$srank1 = $saint1{Rank1960};}
       if ($version =~ /Trident/i && exists($saint1{RankTrident})) {$srank1=$saint1{RankTrident};}

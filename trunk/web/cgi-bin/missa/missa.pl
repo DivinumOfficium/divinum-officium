@@ -68,7 +68,7 @@ our $duplex; #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
 #require "$Bin/ordocommon.pl";
 require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
-require "$Bin/dialogcommon.pl";
+require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/msetup.pl";
 require "$Bin/ordo.pl";
@@ -88,8 +88,8 @@ our ($lang1, $lang2, $column);
 our %translate; #translation of the skeleton label for 2nd language 
 
 #internal script, cookies
-%dialog = %{setupstring("$datafolder/missa.dialog")};
-if (!$setupsave) {%setup = %{setupstring("$datafolder/missa.setup")};}
+%dialog = %{setupstring($datafolder, '', 'missa.dialog')};
+if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'missa.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 if (!$setupsave && !getcookies('missap', 'parameters')) {setcookies('missap', 'parameters');}

@@ -18,7 +18,7 @@ sub ordo
 {
              
 $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;    
-#???%translate = %{setupstring("$datafolder/$tlang/Ordo/Translate.txt")}; 
+#???%translate = %{setupstring($datafolder, $tlang, "Ordo/Translate.txt")}; 
 
 $savesolemn = $solemn;
 if ($winner =~ /Quad6-[456]/i) {$solemn = 1;}
@@ -278,7 +278,7 @@ sub resolve_refs {
                      
 
    #actual expansion for $ references
-   my %prayer = %{setupstring("$datafolder/$lang/Ordo/Prayers.txt")};
+   my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
    $line =~ s/\$//;
    $line =~ s/\s*$//; 
    my $text = $prayer{$line};     
@@ -291,7 +291,7 @@ sub resolve_refs {
 # return the text Alleluia or Laus tibi
 sub Alleluia { 
   my $lang = shift;  
-  my %prayer = %{setupstring("$datafolder/$lang/Ordo/Prayers.txt")};
+  my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
   my $text = $prayer{'Alleluia'};   
   my @text = split("\n", $text); 
   $text = $text[0];
@@ -303,7 +303,7 @@ sub Alleluia {
 # adds Alleluia, alleluia for Pasc0
 sub Benedicamus_Domino {
   my $lang = shift;    
-  my %prayer = %{setupstring("$datafolder/$lang/Ordo/Prayers.txt")};
+  my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
   my $text = $prayer{'Benedicamus Domino'}; 
   if ($dayname[0] !~ /Pasc0/i) {return $text;}
   my @text = split("\n", $text);       

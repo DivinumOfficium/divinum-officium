@@ -90,8 +90,8 @@ our ($lang1, $lang2, $expand, $column, $accented, $local);
 our %translate; #translation of the skeleton labels
 
 #internal script, cookies
-%dialog = %{setupstring("$datafolder/horas.dialog")};
-if (!$setupsave) {%setup = %{setupstring("$datafolder/horas.setup")};}
+%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
+if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'horas.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 opendir(DIR, $datafolder); 

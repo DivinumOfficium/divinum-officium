@@ -6,6 +6,7 @@ ex C11;
 Gloria
 Credo
 Prefatio=Maria=Festivitate;
+CPapaC=Marcum;
 
 [Introitus]
 !  
@@ -81,18 +82,24 @@ $Qui vivis
 
 [Commemoratio Oratio]
 !Pro S. Marco Papa et Conf.
+(dicitur)
 Exáudi, Dómine, preces nostras: et, interveniénte beáto Marco Confessóre tuo~
 atque Pontífice, indulgéntiam nobis tríbue placátus et pacem.
 $Per Dominum
+(communi Summorum Pontificum loco huius versus dicitur)
+@Commune/C4b:Oratio Gregem
 
 [Commemoratio Secreta]
 !Pro S. Marco Papa et Conf.
-Accépta tibi sit, Dómine, sacrátæ plebis oblátio pro tuórum honóre Sanctórum:~
-quorum se méritis de tribulatióne percepísse cognóscit auxílium.
-$Per Dominum
+@Commune/C6b:Secreta
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
 
 [Commemoratio Postcommunio]
 !Pro S. Marco Papa et Conf.
+(dicitur)
 Da, quaesumus, Dómine, fidélibus pópulis Sanctórum tuórum semper veneratióne~
 lætari: et eórum perpétua supplicatióne muníri.
 $Per Dominum
+(communi Summorum Pontificum loco huius versus dicitur)
+@Commune/C4b:Postcommunio Gregem
