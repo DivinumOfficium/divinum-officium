@@ -127,6 +127,9 @@ our %subjects =
 our %predicates =
 (
     1960        => sub { shift =~ /1960/ },
+    tridentina  => sub { shift =~ /Trident/ },
+    divino      => sub { shift =~ /Divino/ },
+    monastica   => sub { shift =~ /Monastic/ },
     innovata    => sub { shift =~ /NewCal/i },
     innovatis   => sub { shift =~ /NewCal/i },
     paschali    => sub { shift =~ /Pasc/i },
@@ -160,6 +163,7 @@ sub vero($)
     {
         for ( split /\bet\b/ )
         {
+            s/^\s*(.*?)\s*$/$1/;
             my ($subject, $predicate) = split /\s+/, $_, 2;
 
             # Subject is optional: defaults to tempore
