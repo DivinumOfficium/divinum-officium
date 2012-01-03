@@ -97,11 +97,21 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
 
   #Nat1 assignment
   tfgetweek(12, 25, $kyear);
-  my $nat1 = '30';
-  my $nat1name = ($version =~ /1960/) ? 'Nat1-0r' : 'Nat1-0';
-  if ($version =~ /(1955|1960|Monastic)/i && $dayofweek > 0) {$nat1 = 32 - $dayofweek;} 
-  elsif ($dayofweek == 1 || $dayofweek == 3) {$nat1 = 32 - $dayofweek;} 
-  push(@tfer, sprintf("12-%02i=$tempname/$nat1name", $nat1));
+  
+  my $nat1;
+  
+  if ($version =~ /(1955|1960|Monastic)/i) {
+    # Nat1 vanishes if Christmas is on a Sunday; otherwise it's kept
+    # on the Sunday in the octave.
+    $nat1 = 32 - $dayofweek unless ($dayofweek == 0);
+  }
+  else {
+    # Nat1 is kept on 30 Dec, unless 29 or 31 Dec is a Sunday, in which
+    # case it's kept then.
+    $nat1 = ($dayofweek == 1 || $dayofweek == 3) ? 32 - $dayofweek : 30;
+  }
+  
+  push(@tfer, sprintf("12-%02i=$tempname/Nat1-0", $nat1)) if defined($nat1);
 
   $epi2flag = 0;
 
