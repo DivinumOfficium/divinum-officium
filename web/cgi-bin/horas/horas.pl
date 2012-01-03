@@ -605,8 +605,7 @@ sub getantcross {
   $psalmline = '';
   $antline = ''; 
 
-  while ($aind < @antline) {
-    if ($pind >= @psalmline) { return "$psalmline1 \x{2021}";}
+  while ($aind < @antline && $pind < @psalmline) {
 	my $item1 = $psalmline[$pind];
 	$pind++;
 	$item1 = depunct($item1);
@@ -617,8 +616,10 @@ sub getantcross {
 	if (!$item2) {$pind--; next;}  
 	if ($item1 !~ /$item2/i) {return $psalmline1;}
 	$psalmline .= " $psalmline[$pind-1]";
-	next;
   }
+  
+  # Don't place a dagger if the antiphon is longer than the verse.
+  return $psalmline1 if ($aind < @antline && $pind == @psalmline);
   
   # Skip over any remaining punctuation.
   $psalmline .= ' ' . $psalmline[$pind++] while ($pind < @psalmline && !depunct($psalmline[$pind]));
