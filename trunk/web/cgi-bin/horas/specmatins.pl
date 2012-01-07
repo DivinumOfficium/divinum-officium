@@ -153,7 +153,13 @@ sub psalmi_matutinum {
     setbuild2("Psalm #50 replaced by breaking #49");
   }    
             
-  if ($version !~ /Trident/i && $winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i  && 
+  if ($version !~ /Trident/i &&
+     (($dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i && $winner =~ /tempora/i) ||
+       ($month == 1 &&                          # TODO: Temporary condition
+         ($day < 6 && 'Nat' =~ /(Nat)/) ||      # pending implementation of
+         ($day <= 13 && 'Epi' =~ /(Epi)/)       # Christmas- and Epiphanytide.
+       )
+     ) && 
      $winner{Rule} !~ /Matutinum Romanum/i) {
     my $name = $1;
     my $i = $2;
