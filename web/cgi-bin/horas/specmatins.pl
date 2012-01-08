@@ -155,7 +155,8 @@ sub psalmi_matutinum {
             
   if ($version !~ /Trident/i &&
      (($winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i) ||
-       ($month == 1 &&                           # TODO: Temporary condition
+       ($month == 1 && $version =~ /1960|1955/ &&
+        $winner =~ /Sancti/i &&                  # TODO: Temporary condition
          (($day < 6 && 'Nat' =~ /(Nat)/) ||      # pending implementation of
           ($day <= 13 && 'Epi' =~ /(Epi)/))      # Christmas- and Epiphanytide.
        )
