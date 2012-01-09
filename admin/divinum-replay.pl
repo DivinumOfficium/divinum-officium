@@ -6,7 +6,7 @@ use warnings;
 use Getopt::Long;
 use Date::Format;
 use Algorithm::Diff;
-use Encoding;
+use Encode;
 
 use utf8;
 
