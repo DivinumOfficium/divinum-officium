@@ -248,7 +248,7 @@ sub setupstring($$$%)
   
   foreach my $line (@filelines)
   {
-    if ($line =~ /$sectionregex(?:\s*$conditional_regex)?/)
+    if ($line =~ /$sectionregex(?:\s*$conditional_regex)?/o)
     {
       # If we have a conditional clause, it had better be true.
       my $section_condition = $3;
@@ -271,7 +271,7 @@ sub setupstring($$$%)
     elsif ($use_this_section)
     {
       # Check for a new condition.
-      if ($line =~ /^\s*$conditional_regex\s*(.*)$/)
+      if ($line =~ /^\s*$conditional_regex\s*(.*)$/o)
       {
         my ($strength, $result, $backscope, $forwardscope) = parse_conditional($1, $2, $3);
         
