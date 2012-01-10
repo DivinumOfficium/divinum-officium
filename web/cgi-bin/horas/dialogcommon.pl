@@ -202,25 +202,88 @@ sub setsetup {
   $setup{$name} = $script;
 }
 
-#*** setupstring($basedir, $lang, $fname[, %params])
-# Loads the database file from path "$basedir/$lang/$fname" and returns
-# a reference to a hash whose keys are the section headings and whose
-# values are their contents. If $params{'resolve@'} is true (which it
-# is by default), then most @ directives are resolved and substituted.
+
+our %setupstring_caches_by_version;
+
+BEGIN
+{
+  our $inclusionregex = qr/^\s*\@
+    ([^\n:]+)                     # Filename.
+    (?::([^\n:]+?))?              # Optional keywords.
+    [^\S\n\r]*                    # Ignore trailing whitespace.
+    (?::(.*))?                    # Optional substitutions.
+    $
+    /mx;
+}
+
+
+#*** setupstring($basedir, $lang, $fname, %params)
+# Loads the database file from path "$basedir/$lang/$fname" through
+# the cache. If $params{'resolve@'} is true (which it is by default),
+# then in-section inclusions are performed.
 sub setupstring($$$%)
 {
   my ($basedir, $lang, $fname, %params) = @_;
   my $fullpath = "$basedir/$lang/$fname";
   our ($lang1, $lang2, $missa);
   
-  # Expand @ references unless we've been told not to.
-  $params{'resolve@'} = 1 unless (exists $params{'resolve@'});
-  
   if ($lang1 && $lang2 && $lang =~ /($lang1|$lang2)/i)
   {
     # Fall back to other languages if the specified file doesn't exist.
     $fullpath = checkfile($1, $fname);
   }
+
+  our $version;
+  
+  $setupstring_caches_by_version{$version} = {} unless (exists $setupstring_caches_by_version{$version});
+  
+  # Get hash of cached files for this version.
+  my $inclusioncache = $setupstring_caches_by_version{$version};
+  
+  unless (exists ${$inclusioncache}{$fullpath})
+  {
+    # Not yet in cache, so open it and add it.
+    ${$inclusioncache}{$fullpath} = setupstring_parse_file($fullpath, $basedir, $lang) or return '';
+  }
+
+  # Take a copy.
+  my %sections = %{${$inclusioncache}{$fullpath}};
+
+  our $inclusionregex;
+
+  $params{'resolve@'} = 1 unless (exists $params{'resolve@'});
+  
+  if ($params{'resolve@'})
+  {
+    # Iterate over all sections, resolving inclusions. We make sure we
+    # do [Rule] first, if it exists: we need to use the rule to work
+    # out some subsequent substitutions.
+    foreach my $key ((exists $sections{'Rule'}) ? 'Rule' : (), keys %sections)
+    {
+      if ($key !~ /Commemoratio/i || $missa)
+      {
+        1 while $sections{$key} =~ s/$inclusionregex/
+          get_loadtime_inclusion(\%sections, $basedir, $lang,
+          $1,             # Filename.
+          $2 ? $2 : $key, # Keyword.
+          $3,             # Substitutions.
+          $fname)         # Caller's filename.
+          /gex;
+      }
+    }
+  }
+  
+  return \%sections;
+}
+
+#*** setupstring_parse_file($fullpath, $basedir, $lang)
+# Loads the database file from $fullpath and returns a reference to
+# a hash whose keys are the section headings and whose values are
+# their contents. Whole-file inclusions are performed, but not those
+# within sections. $basedir and $lang are used for inclusions only.
+sub setupstring_parse_file($$$)
+{
+  my ($fullpath, $basedir, $lang) = @_;
 
   my @filelines = do_read($fullpath) or return '';
   
@@ -341,7 +404,7 @@ sub setupstring($$$%)
           # Push the new conditional frame onto the stack.
           push @conditional_stack,
             [$result ? COND_AFFIRMATIVE : COND_NOT_YET_AFFIRMATIVE,
-             $forwardscope];
+            $forwardscope];
         }
         
         # Parse anything left over.
@@ -373,84 +436,20 @@ sub setupstring($$$%)
   
   # Flatten sections.
   $sections{$_} = join '', @{$sections{$_}} foreach (keys %sections);
+
+  our $inclusionregex;
   
-  my $inclusionregex = qr/^\s*\@
-    ([^\n:]+)                     # Filename.
-    (?::([^\n:]+?))?              # Optional keywords.
-    [^\S\n\r]*                    # Ignore trailing whitespace.
-    (?::(.*))?                    # Optional substitutions.
-    $
-    /mx;
-  
-  # Do whole-file inclusions. We do these regardless of whether the
-  # 'resolve@' parameter is set.
+  # Do whole-file inclusions.
   while (my ($incl_fname, undef, $incl_subst) = ($sections{'__preamble'} =~ /$inclusionregex/g))
   {
-    my $incl_sections = get_file_for_inclusion($basedir, $lang, $incl_fname);
+    my $incl_sections = setupstring($basedir, $lang, $incl_fname);
     $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
   }
   
   delete $sections{'__preamble'};
-  
-  # Resolve inclusions in sections if the caller requires it.
-  if ($params{'resolve@'})
-  {
-    # Iterate over all sections, but make sure we do [Rule] first, if
-    # it exists: we need to use the rule to work out some subsequent
-    # substitutions.
-    foreach my $key ((exists $sections{'Rule'}) ? 'Rule' : (), keys %sections)
-    {
-      if ($key !~ /Commemoratio/i || $missa)
-      {
-        $sections{$key} =~ s/$inclusionregex/
-          get_loadtime_inclusion(\%sections, $basedir, $lang,
-          $1,             # Filename.
-          $2 ? $2 : $key, # Keyword.
-          $3,             # Substitutions.
-          $fname)         # Caller's filename.
-          /gex;
-      }
-    }
-  }
-  
+
   return \%sections;
 }
-
-# Block for subs using the cache of inclusion files.
-{
-  my %inclusion_caches_by_version;
-  
-  #*** get_file_for_inclusion($basedir, $lang, $fname)
-  # Loads the database file from path "$basedir/$lang/$fname" through
-  # the inclusion cache.
-  sub get_file_for_inclusion($$$)
-  {
-    my ($basedir, $lang, $fname) = @_;
-    my $fullpath = "$basedir/$lang/$fname";
-    our $version;
-    
-    $inclusion_caches_by_version{$version} = {} unless (exists $inclusion_caches_by_version{$version});
-    
-    # Get hash of cached files for this version.
-    my $inclusioncache = $inclusion_caches_by_version{$version};
-    
-    return ${$inclusioncache}{$fullpath} if (exists ${$inclusioncache}{$fullpath});
-    
-    # Not in cache, so open it, add it to the cache and return it.
-    my $fileref = setupstring($basedir, $lang, "$fname.txt", 'resolve@' => 0);
-    
-    if ($fileref)
-    {
-      ${$inclusioncache}{$fullpath} = $fileref;
-      return $fileref;
-    }
-    else
-    {
-      return '';
-    }
-  }
-}
-
 
 #*** do_inclusion_substitutions(\$text, $substitutions)
 # Performs substitutions on $text, where $substitutions contains the
@@ -462,25 +461,25 @@ sub do_inclusion_substitutions(\$$)
 }
 
 
-#*** get_loadtime_inclusion(\%sections, $basedir, $lang, $fname, $section, $substitutions, $callerfname)
-# Retrieves the $section section of the file "$basedir/$lang/$fname"
+#*** get_loadtime_inclusion(\%sections, $basedir, $lang, $ftitle, $section, $substitutions, $callerfname)
+# Retrieves the $section section of the file "$basedir/$lang/$ftitle.txt"
 # and performs the substitutions specified in $substitutions according
 # to the syntax of the @ directive. \%sections is the file containing
 # the reference to be expanded, for back references when necessary.
 sub get_loadtime_inclusion(\%$$$$$$$)
 {
-  my ($sections, $basedir, $lang, $fname, $section, $substitutions, $callerfname) = @_;
+  my ($sections, $basedir, $lang, $ftitle, $section, $substitutions, $callerfname) = @_;
   my $text;
   our $version;
   
   # Adjust offices of martyrs in Paschaltide to use the special common.
   if ($dayname[0] =~ /Pasc/i && !$missa && $callerfname !~ /C[23]/)
   {
-    $fname =~ s/(C[23])(?!p)/$1p/g;
+    $ftitle =~ s/(C[23])(?!p)/$1p/g;
   }
   
-  my $inclfile = get_file_for_inclusion($basedir, $lang, $fname);
-  
+  my $inclfile = setupstring($basedir, $lang, "$ftitle.txt", 'resolve@' => 0);
+
   if ($version !~ /Trident/i && $section =~ /Gregem/i && (my ($plural, $class, $name) = papal_commem_rule(${$sections}{'Rule'})))
   {
     my ($itemkey) = ($section =~ /(.*?)\s*Gregem/);
@@ -502,7 +501,7 @@ sub get_loadtime_inclusion(\%$$$$$$$)
     return $text;
   }
   
-  return "$fname:$section is missing!";
+  return "$ftitle:$section is missing!";
 }
 
 
