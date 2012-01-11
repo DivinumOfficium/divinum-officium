@@ -106,34 +106,52 @@ sub setsetupvalue {
   $setup{$name} = $script;  
 }
 
-our %tempora =
-(
-    Nat => 'Nativitatis',
-    Epi => 'Epiphaniæ',
-    Quad => 'Quadrigesimæ',
-    Pasc => 'Paschali',
-    Pent => 'post Pentecosten',
-);
+
+sub get_tempus_id
+{
+  local $_ = $dayname[0];
+  
+  /^Adv/ ?
+    'Adventus' :
+  /^Nat/ ?
+    ($month == 1 && ($day >= 6 || ($day == 5 && $vesp_or_comp))) ? 'Epiphaniæ' : 'Nativitatis' :
+  /^Epi/ ?
+    ($month == 1 && $day <= 13) ? 'Epiphaniæ' : 'post Epiphaniam' :
+  /^Quadp(\d)/ && ($1 < 3 || $dayofweek < 3) ?
+    'Septuagesimæ' :
+  /^Quad(\d)/ && $1 < 5 ?
+    'Quadragesimæ' :
+  /^Quad/ ?
+    'Passionis' :
+  /^Pasc0/ ?
+    'Octava Paschæ' :
+  /^Pasc(\d)/ && ($1 < 5 || ($1 == 5 && ($dayofweek < 3 || (!$vesp_or_comp && $dayofweek == 3)))) ?
+    'post Octavam Paschæ' :
+  /^Pasc6-(5|6)/ ?
+    'post Octavam Ascensionis' :
+  /^Pasc(\d)/ && $1 < 7 ?
+    'Octava Ascensionis' :
+  /^Pasc/ ?
+    'Octava Pentecostes' :
+    'post Pentecosten';
+}
 
 our %subjects =
 (
     rubricis    => sub { $version },
     rubrica     => sub { $version },
-    tempore     => sub { $dayname[0] =~ /(\pL+)/; $tempora{$1} },
+    tempore     => \&get_tempus_id,
     missa       => sub { $missanumber },
     communi     => sub { {summpont => ($version =~ /1960/ || $version =~ /1955/ || $version =~ /Divino/)} },
 );
 
 our %predicates =
 (
-    1960        => sub { shift =~ /1960/ },
     tridentina  => sub { shift =~ /Trident/ },
-    divino      => sub { shift =~ /Divino/ },
     monastica   => sub { shift =~ /Monastic/ },
     innovata    => sub { shift =~ /NewCal/i },
     innovatis   => sub { shift =~ /NewCal/i },
-    paschali    => sub { shift =~ /Pasc/i },
-    passionis   => sub { shift =~ /Quad/i && $dayname[0] =~ /(\d+)/ && $1 >= 5 }, # Temporary solution pending some replumbing.
+    paschali    => sub { shift =~ /Paschæ|Ascensionis|Octava Pentecostes/i },
     prima       => sub { shift == 1 },
     secunda     => sub { shift == 2 },
     tertia      => sub { shift == 3 },
@@ -169,10 +187,14 @@ sub vero($)
             # Subject is optional: defaults to tempore
             ($predicate, $subject) = ($subject, 'tempore') if not $predicate;
 
-            $predicate = $predicates{lc($predicate)};
+            # Look up the subject and predicate. If we don't recognise
+            # the predicate, treat it as a regex and test the subject
+            # against it.
+            my $predicate_text = $predicate;
+            $predicate = $predicates{lc($predicate)} || sub {shift =~ /$predicate_text/i};
             $subject = $subjects{lc($subject)};
 
-            next AUTEM unless $subject && $predicate && &$predicate(&$subject());
+            next AUTEM unless $subject && &$predicate(&$subject());
         }
         print STDERR "vero=1\n";
         return ($vero=1);
