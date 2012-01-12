@@ -227,22 +227,12 @@ sub setsetup {
 
 our %setupstring_caches_by_version;
 
-BEGIN
-{
-  our $inclusionregex = qr/^\s*\@
-    ([^\n:]+)                     # Filename.
-    (?::([^\n:]+?))?              # Optional keywords.
-    [^\S\n\r]*                    # Ignore trailing whitespace.
-    (?::(.*))?                    # Optional substitutions.
-    $
-    /mx;
-}
-
 
 #*** setupstring($basedir, $lang, $fname, %params)
 # Loads the database file from path "$basedir/$lang/$fname" through
 # the cache. If $params{'resolve@'} is true (which it is by default),
-# then in-section inclusions are performed.
+# then in-section inclusions are performed. Whole-file inclusions are
+# always performed.
 sub setupstring($$$%)
 {
   my ($basedir, $lang, $fname, %params) = @_;
@@ -271,7 +261,22 @@ sub setupstring($$$%)
   # Take a copy.
   my %sections = %{${$inclusioncache}{$fullpath}};
 
-  our $inclusionregex;
+  my $inclusionregex = qr/^\s*\@
+    ([^\n:]+)                     # Filename.
+    (?::([^\n:]+?))?              # Optional keywords.
+    [^\S\n\r]*                    # Ignore trailing whitespace.
+    (?::(.*))?                    # Optional substitutions.
+    $
+    /mx;
+  
+  # Do whole-file inclusions.
+  while (my ($incl_fname, undef, $incl_subst) = ($sections{'__preamble'} =~ /$inclusionregex/g))
+  {
+    my $incl_sections = setupstring($basedir, $lang, $incl_fname);
+    $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
+  }
+  
+  delete $sections{'__preamble'};
 
   $params{'resolve@'} = 1 unless (exists $params{'resolve@'});
   
@@ -301,8 +306,7 @@ sub setupstring($$$%)
 #*** setupstring_parse_file($fullpath, $basedir, $lang)
 # Loads the database file from $fullpath and returns a reference to
 # a hash whose keys are the section headings and whose values are
-# their contents. Whole-file inclusions are performed, but not those
-# within sections. $basedir and $lang are used for inclusions only.
+# their contents. $basedir and $lang are used for inclusions only.
 sub setupstring_parse_file($$$)
 {
   my ($fullpath, $basedir, $lang) = @_;
@@ -333,6 +337,7 @@ sub setupstring_parse_file($$$)
   
   foreach my $line (@filelines)
   {
+    # Check for a new section.
     if ($line =~ /$sectionregex(?:\s*$conditional_regex)?/o)
     {
       # If we have a conditional clause, it had better be true.
@@ -458,17 +463,6 @@ sub setupstring_parse_file($$$)
   
   # Flatten sections.
   $sections{$_} = join '', @{$sections{$_}} foreach (keys %sections);
-
-  our $inclusionregex;
-  
-  # Do whole-file inclusions.
-  while (my ($incl_fname, undef, $incl_subst) = ($sections{'__preamble'} =~ /$inclusionregex/g))
-  {
-    my $incl_sections = setupstring($basedir, $lang, $incl_fname);
-    $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
-  }
-  
-  delete $sections{'__preamble'};
 
   return \%sections;
 }
