@@ -226,8 +226,8 @@ sub resolve_refs {
 	  }
 
   #connect lines marked by tilde, or but linebrak
-    if ($line =~ /(.*)\~\s*$/) {
-      $prelude .= "$1 ";
+    if ($line =~ /~\s*$/) {
+      $prelude .= substr($line, 0, $-[0]) . ' ';
     }
     else {
       push @resolved_lines, $prelude . $line;
