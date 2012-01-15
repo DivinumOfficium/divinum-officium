@@ -270,8 +270,9 @@ sub setupstring($$$%)
     /mx;
   
   # Do whole-file inclusions.
-  while (my ($incl_fname, undef, $incl_subst) = ($sections{'__preamble'} =~ /$inclusionregex/g))
+  while (my ($incl_fname, undef, $incl_subst) = ($sections{'__preamble'} =~ /$inclusionregex/gc))
   {
+    if ($fullpath =~ /$incl_fname\.txt/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
     my $incl_sections = setupstring($basedir, $lang, $incl_fname);
     $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
   }
