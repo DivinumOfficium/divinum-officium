@@ -35,7 +35,7 @@ $fname1 =~ s/^Tr/Str/;
 
   my @scriptfer_out = @scriptfer;
   $_ = "$_;;\n" for @scriptfer_out;
-  if (do_write("$datafolder/Latin/Tabulae/$fname1.txt")) {
+  if (do_write("$datafolder/Latin/Tabulae/$fname1.txt", @scriptfer_out)) {
   } else {$error .= "$datafolder/Latin/Tabulae/$fname1.txt cannot open for output<BR>\n";}
 }
 
@@ -121,6 +121,9 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
   my @seant = splice(@seant, @seant);
   my $macc2flag = 0;
   my $macc2num = 0;
+  # The feast of Christ the King pushed the readings (in their ordinary
+  # positions) of the martyrdom of the Holy Machabees back by a day.
+  my $macc2base = ($version =~ /Trident|Monastic/i) ? 0 : 1;
 
 #*** cycle to build tfer array
   for ($tmonth = 0; $tmonth < @monthlength; $tmonth++) {  
@@ -353,7 +356,7 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
 	 elsif ($macc2flag) {
 	   if ($dayofweek == 0) {if ($version =~ /trident/i && (transfered($sday) || !exists($saint{Lectio1}))) {$macc2num++;}}
  	   elsif (!exists($saint{Lectio1})) {
-	     push(@scriptfer, sprintf("%02i-%02i=105-%01i", $kmonth, $kday, $macc2num));      
+	     push(@scriptfer, sprintf("%02i-%02i=105-%01i", $kmonth, $kday, $macc2base + $macc2num));
          $macc2num++; 
 	   }	       
 	 }   
