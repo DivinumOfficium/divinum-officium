@@ -157,7 +157,7 @@ sub resolve_refs {
       $line =~ s/\s+$//;
       $line =~ s/^\s+//;   
       #prepares reading the part of common w/ antiphona
-	    if ($line =~ /psalm/ && $t[$it -1] =~ /^\s*Ant\. /i) {   
+	    if ($line =~ /psalm/ && $it > 0 && $t[$it -1] =~ /^\s*Ant\. /i) {
 	      $line = expand($line, $lang, $t[$it - 1]);
           
           # If the psalm has a cross, then so should the antiphon.
