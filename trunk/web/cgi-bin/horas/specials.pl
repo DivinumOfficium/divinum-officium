@@ -1706,7 +1706,8 @@ sub doxology {
   
     } elsif ($rule =~ /Doxology=([a-z]+)/i) {$dname = $1;}
       
-	  elsif ($commemoratio{Rule} =~ /Doxology=([a-z]+)/i) {$dname = $1;}
+	  elsif (($version =~ /Trident/i || $winner{Rank} !~ /Adventus/) &&
+            $commemoratio{Rule} =~ /Doxology=([a-z]+)/i) {$dname = $1;}
 	  
 	  elsif (($month == 8 && $day > 15 && $day < 23) ||
 	  ($month == 12 && $day > 8 && $day < 16 && $dayofweek > 0)) {$dname = 'Nat';}
@@ -1871,7 +1872,8 @@ sub get_prima_responsory {
 	($version !~ /(1960|Newcal)/ && $commemoratio{Rule} =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i)) {$key = $1;}
   elsif ($version !~ /1960/ && $month == 8 && $day > 15 && $day < 23) {$key = 'Nat';}
   if ($dayname[0] =~ /Pasc7/i) {$key = 'Pent';} 
-  if ($version =~ /1960/ && $month == 12 && $day > 8 && $day < 16) {$key = 'Adv';} 
+  if (($version =~ /1960/ && $month == 12 && $day > 8 && $day < 16) ||
+    ($version !~ /Trident/i && $winner{Rank} =~ /Adventus/)) {$key = 'Adv';} 
   if ($version =~ /1960/ && $month == 1 && $day > 5 && $day < 14) {$key = 'Epi';}
   if ($version =~ /1960/ && $key =~ /Corp/) {$key = '';}
   if (!$key) {return '';}  
