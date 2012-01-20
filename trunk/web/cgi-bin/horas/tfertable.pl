@@ -142,19 +142,25 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
       our @dayname=split('=', $dayname);
       $dayname[0] =~ s/\s*$//g;
       $dayname[0] =~ s /^\s*//g; 
-      
-	  if ($dayname[0] =~ /Epi1/i && $dayofweek == 0) {
-	    if ($version =~ /(Trident|Monastic)/i) {push(@tfer, sprintf("%02i-%02i=$tempname/Epi1-0a", $kmonth, $kday));}
-        if ($version !~ /Monastic/i) {push(@scriptfer, sprintf("%02i-%02i=Epi1-0a", $kmp1, $kdp1));}
-	    if ($version =~ /1960/ && $kday == 13) {
-		  pop(@scriptfer);
-		  push(@scriptfer, "01-12=Epi1-0a");
+
+      # First week after the Epiphany.
+      if ($dayname[0] =~ /Epi1/i && $dayofweek == 0) {
+        if ($version =~ /(Trident|Monastic)/i) {push(@tfer, sprintf("%02i-%02i=$tempname/Epi1-0a", $kmonth, $kday));}
+        elsif ($version =~ /Divino|1955/i) {push(@scriptfer, sprintf("%02i-%02i=Epi1-0a", $kmp1, $kdp1));}
+        elsif ($kday == 13) {
+          # 1960/newcal: 12th Jan on a Saturday has incipit of 1 Cor,
+          # but in other years these readings are omitted.
+          push(@scriptfer, "01-12=Epi1-0a");
         }
-	  }   
+      }
+
+      # TODO: This seems wrong. Some of the below surely applies to the
+      # Monastic office. What should be skipped? Epi1?
       if ($version =~ /Monastic/i) {next;} 
 
-	  if ($kmonth == 1 && $kday == 12 && $dayofweek == 6 && $version !~ /Trident|1960/i) 
-         {push(@tfer, sprintf("%02i-%02i=$tempname/Epi1-0", $kmonth, $kday));}
+      # Holy Family anticipated on Saturday.
+      if ($kmonth == 1 && $kday == 12 && $dayofweek == 6 && $version !~ /Trident|1960/i)
+        {push(@tfer, sprintf("%02i-%02i=$tempname/Epi1-0", $kmonth, $kday));}
 
 	  if ($dayname[0] =~ /Epi([2-5])/i) {$epi2flag = $1;} 
       if ($dayname[0] =~ /Epi6/i) {$epi2flag = 0;}
