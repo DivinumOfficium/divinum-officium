@@ -385,8 +385,8 @@ sub specials {
 
     if ($version =~ /trident/i) { 
       my $suffr = '';
-      #my $c = ($dayname[0] =~ /(pasc)/i) ? 2 : 11;
-	    #if ($dayname[1] =~ /(feria|vigilia)/i)  {$suffr = $suffr{"Suffragium$c"};}
+      my $c = ($dayname[0] =~ /(pasc)/i) ? '2' : 'TridentinumFeriale';
+      if ($dayname[1] =~ /(feria|vigilia)/i)  {$suffr = $suffr{"Suffragium$c"};}
       if ($commune !~ /(C1[0-9])/i) {$suffr .=  $suffr{Suffragium3};}
       if ($version !~ /1570/) {
 	    if ($hora =~ /vespera/i) {$suffr .= $suffr{Suffragium41} . $suffr{Suffragium51};}
