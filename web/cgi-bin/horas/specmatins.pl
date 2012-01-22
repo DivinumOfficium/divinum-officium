@@ -815,17 +815,6 @@ sub lectio {
  }
 
 
-
-  # handle @sourcefile:key
-  if ($w && $w =~ /\n\s*\@(.*?)\:(.*?\n)/i) {  
-    my $file = $1;
-	my $name = $2;	 	  
-	$name =~ s/\s*$//;
-    my %s = %{officestring($datafolder, $lang, "$file.txt")};	 
-	my $s = $s{$name};    
-	$w =~ s/\n\@.*?\:.*?\n/\n$s\n/;  	
-  }
-                      
   $w = responsory_gloria($w, $num); 
 
   #add Tu autem before responsory
@@ -986,19 +975,28 @@ sub lect1960 {
 
 }
 
+use constant
+  {LT1960_DEFAULT   => 0,
+   LT1960_FERIAL    => 1,
+   LT1960_SUNDAY    => 2,
+   LT1960_SANCTORAL => 3,
+   LT1960_OCTAVEII  => 4};
+
 #*** gettype1960 
 #returns for 1960 version 
 #  1 for ferial office
 #  2 for Sunday office
 #  3 for saint's office
+#  4 for office within II. cl. octave
 # 0 for the other versions or if there are 9 lectiones
 sub gettype1960 {       
-  my $type = 0;      
+  my $type = LT1960_DEFAULT;      
   if ($version =~ /1960/ && $votive !~ /(C9|Defunctorum)/i) {
-    if ($rank < 2 || $dayname[1] =~ /(feria|vigilia|die)/i) {$type = 1;}
-    elsif ($dayname[1] =~ /dominica.*?semiduplex/i || $winner =~ /Pasc1\-0/i) {$type = 2;}
-    elsif ($rank < 5) {$type = 3;}
-    if ($rule =~ /9 lectiones 1960/i) {$type = 0;}
+    if ($dayname[1] =~ /post Nativitatem/i) {$type = LT1960_OCTAVEII;}
+    elsif ($rank < 2 || $dayname[1] =~ /(feria|vigilia|die)/i) {$type = LT1960_FERIAL;}
+    elsif ($dayname[1] =~ /dominica.*?semiduplex/i || $winner =~ /Pasc1\-0/i) {$type = LT1960_SUNDAY;}
+    elsif ($rank < 5) {$type = LT1960_SANCTORAL;}
+    if ($rule =~ /9 lectiones 1960/i) {$type = LT1960_DEFAULT;}
   } 
   return $type;
 }
@@ -1305,6 +1303,6 @@ sub contract_scripture {
   if ($num != 2 || $votive =~ /(C9|Defunctorum)/i) {return 0;}
   if ($version !~ /1960/) {return 0;} 
   if ( $commune =~ /C10/i) {return 1;}
-  if ($ltype1960 > 1 && $rule !~ /scriptura1960/i  && ($dayname[1] !~ /feria/i || $commemoratio )) {return 1;}
+  if (($ltype1960 == LT1960_SANCTORAL || $ltype1960 == LT1960_SUNDAY) && $rule !~ /scriptura1960/i  && ($dayname[1] !~ /feria/i || $commemoratio)) {return 1;}
   return 0;
 }   
