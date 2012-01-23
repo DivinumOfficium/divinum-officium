@@ -27,6 +27,7 @@ use Time::Local;
 $q = new CGI;
 $error = '';
 require "$Bin/../horas/do_io.pl";
+require "$Bin/../horas/horascommon.pl";
 require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
 

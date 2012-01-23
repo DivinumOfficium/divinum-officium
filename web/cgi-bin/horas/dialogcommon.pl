@@ -329,7 +329,7 @@ sub setupstring_parse_file($$$)
   
   use constant 'COND_NOT_YET_AFFIRMATIVE' => 0;
   use constant 'COND_AFFIRMATIVE' => 1;
-  use constant 'COND_DUMMY_FRAME' => 1;
+  use constant 'COND_DUMMY_FRAME' => 2;
   
   my (@conditional_stack, @conditional_offsets);
   
