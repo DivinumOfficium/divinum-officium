@@ -31,6 +31,7 @@ $debug = '';
 
 #*** collect standard items
 require "$Bin/do_io.pl";
+require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/tfertable.pl";
