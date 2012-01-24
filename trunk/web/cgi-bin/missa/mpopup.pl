@@ -128,7 +128,7 @@ sub gettext
   # File must be one of those explicitly permitted.
   my $fname = $popup_files{$popup} or return 'Invalid filename.';
   
-  $fname = checkfile($lang, "Ordo/$popup.txt");
+  $fname = checkfile($lang, "Ordo/$fname");
   
   $text = join("\n", do_read($fname)) or return "Cannot open $datafolder/$lang/Ordo/$fname.txt";  
 
