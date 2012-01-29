@@ -504,11 +504,6 @@ sub get_loadtime_inclusion(\%$$$$$$$)
   }
   else
   {
-    # Point to antiphon-and-versicleless version of the commemoration of
-    # St Peter or St Paul under 1960 rubrics. TODO: Use data-file
-    # conditionals to make this unnecessary.
-    $section =~ s/Commemoratio4/Commemoratio4r/ if ($version =~ /1960/ && ${$sections}{'Rule'} =~ /sub unica conc/i);
-      
     $text = ${$inclfile}{$section} if (exists ${$inclfile}{$section});
   }
   
