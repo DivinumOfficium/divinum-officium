@@ -1617,21 +1617,42 @@ sub papal_antiphon_dum_esset($)
   
   my %conditional_values;
   my %stopword_weights;
+  my %backscoped_stopwords;
   
   my $stopwords_regex;
   my $scope_regex;
   
   BEGIN
   {
-    $stopword_weights{'si'} = 0;
+    # Main stopwords. These have implicit backward scope.
     $stopword_weights{'sed'} = $stopword_weights{'vero'} = 1;
     $stopword_weights{'atque'} = 2;
     $stopword_weights{'attamen'} = 3;
     
+    %backscoped_stopwords = %stopword_weights;
+    
+    # Extra stopwords which require explicit backward scoping.
+    $stopword_weights{'si'} = 0;
+    $stopword_weights{'deinde'} = 1;
+    
     my $stopwords_regex_string = join('|', keys(%stopword_weights));
     $stopwords_regex = qr/$stopwords_regex_string/i;
     
-    $scope_regex = qr/(?:\bloco\s+(?:hu[ij]us\s+versus|horum\s+versuum)\b)?\s*(?:\b(?:(?:dicitur|dicuntur)(?:\s+semper)?|(?:omittitur|omittuntur))\b)?/i;
+    $scope_regex = qr/
+      (?:\bloco\s+(?:hu[ij]us\s+versus|horum\s+versuum)\b)?
+      \s*
+      (?:
+        \b
+        (?:
+            (?:dicitur|dicuntur)(?:\s+semper)?
+          |
+            (?:hoc\s+versus\s+)?\omittitur
+          |
+            (?:haec\s+versus\s+)?omittuntur
+        )
+        \b
+      )?
+      /ix;
   }
   
   # We have four types of scope (in each direction):
@@ -1785,10 +1806,14 @@ sub papal_antiphon_dum_esset($)
     # assumption that the input was first matched against the regex
     # returned by &conditional_regex, which is rather stricter.
     
+    # Do we have a stopword that gives us implicit backscope?
+    my $implicit_backscope = 0;
+    $implicit_backscope ||= exists ($backscoped_stopwords{$_}) foreach (split /\s+/, lc($stopwords));
+    
     $backscope = 
-      $scope =~ /versuum|omittuntur/i       ? SCOPE_NEST  :
-      $scope =~ /versus|omittitur/i         ? SCOPE_CHUNK :
-      $scope !~ /semper/i && $strength > 0  ? SCOPE_LINE  : SCOPE_NULL;
+      $scope =~ /versuum|omittuntur/i             ? SCOPE_NEST  :
+      $scope =~ /versus|omittitur/i               ? SCOPE_CHUNK :
+      $scope !~ /semper/i && $implicit_backscope  ? SCOPE_LINE  : SCOPE_NULL;
 
     if ($scope =~ /omittitur|omittuntur/i)
     {
