@@ -893,13 +893,6 @@ sub antetpsalm {
   my $ind = shift; 
   my $last = shift;  	  		  
   my @line = split(';;', $line);  
-  
-  if ($rule =~ /Special Matutinum Incipit/i && $line[1] == 86) {
-    push(@s, special_epi_invit()); 
-    push (@s, "\n");
-	return;
-  }
-
   my @ant = split('\*', $line[0]);  
   my $ant = $line[0];  
 
