@@ -469,16 +469,38 @@ sub psalm {
   }		  
   															
   #$psalmfolder = ($accented =~ /plain/i) ? 'psalms' : 'psalms1';
-  $psalmfolder = 'psalms1';   
+  $psalmfolder = 'psalms1';
   
-  $fname=checkfile($lang, "$psalmfolder/Psalm$a[0].txt"); 
-  if ($version =~ /1960/ && $fname =~ /226/) {$fname =~ s/226/226r/;}  
-  if ($version =~ /1960/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i && $fname =~ /88/) 
-    {$fname =~ s/88/88r/;}      
-  if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6 && $fname =~ /88/) 
-    {$fname =~ s/88/88a/;}      
+  my $psnum;
+  
+  if ($num =~ /\[(.*?)\]/) {
+    # Psalm said only in penitential seasons (intended for psalm
+    # transferred from Lauds to Prime).
+    $psnum = $1;
+    return unless ($dayname[0] =~ /adv|quad/i);
+  }
+  elsif ($num =~ /^\s*([0-9]+)/) {
+    $psnum = $1;
+  }
+  else {
+    return;
+  }
+  
+  # Get the filename of the psalm. Psalm 94, being the psalm used at
+  # the invitatory, lives elsewhere, and is loaded here only for its
+  # special third-nocturn use on the day of the Epiphany.
+  my $fname = ($psnum == 94) ? 'Psalterium/Invitatorium1.txt' : "$psalmfolder/Psalm$psnum.txt";
+  
+  $fname = checkfile($lang, $fname);
+  if ($version =~ /1960/ && $fname =~ /226/) {$fname =~ s/226/226r/;}
+  if ($version =~ /1960/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i && $fname =~ /88/)
+    {$fname =~ s/88/88r/;}
+  if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6 && $fname =~ /88/)
+    {$fname =~ s/88/88a/;}
+    
+  @lines = do_read($fname);
 
-  my $str = 'Psalmus';                        
+  my $str = 'Psalmus';
   $str = translate($str, $lang);
 
   my $pnum;
@@ -491,50 +513,41 @@ sub psalm {
   }
   my $t = '';
   
-    if ($num > 150 && $num < 300 && (@lines = do_read($fname)))
+  if ($num > 150 && $num < 300 && @lines)
+  {
+    $line = $lines[0];
+    if ($line =~ /\s*([a-z]+\s+[a-z_]+) /i)
     {
-        $line = $lines[0];
-        if ($line =~ /\s*([a-z]+\s+[a-z_]+) /i)
-        {
-            $t = setfont($redfont, $1) . settone(1) . $pnum;
-        }   
-    }
-  if (!$t) {$t = setfont($redfont,"$str $num") . settone(1) . $pnum; }	
+      $t = setfont($redfont, $1) . settone(1) . $pnum;
+    }   
+  }
+  if (!$t) {$t = setfont($redfont,"$str $num") . settone(1) . $pnum; }
 
-  
-  if ($rule =~ /Special Matutinum Incipit/i && $num == 86) {return special_epi_invit();}
-
-  my $psnum = 0;
   my $v1 = 1;
   my $v2 = 1000;
-  
-  if ($num =~ /\[(.*?)\]/) {
-    $num = $1;
-    if ($dayname[0] !~ /(adv|quad)/i) {return;}
-  }   
-  
-  if ($num =~ /^\s*([0-9]+)/) {$psnum = $1;}
-  else {return $t;}
 
+  # Extract limits of the division of the psalm.
   if ($num =~ /\((.*?)\)/) { 
      my @v = split('-', $1);
      $v1 = $v[0];
      $v2 = $v[1];   
   }
-						
-  $fname = checkfile($lang, "$psalmfolder/Psalm$psnum.txt");
-  if ($version =~ /1960/ && $fname =~ /226/) {$fname =~ s/226/226r/;}  
-  if ($version =~ /1960/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i && $fname =~ /88/) 
-    {$fname =~ s/88/88r/;}      
-   if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6 && $fname =~ /88/) 
-    {$fname =~ s/88/88a/;}      
 
   # Flag to signal that dagger should be prepended to current line.
   my $prepend_dagger = 0;
+  
+  my $formatted_antline;
 
-  if (@lines = do_read($fname)) {
+  if (@lines) {
 	my $first = ($antline) ? 1 : 0;
 	foreach $line ( @lines ) {
+    
+      # Interleave antiphon into the psalm "Venite exsultemus".
+      if ($psnum == 94 && $line =~ /^\s*\$ant\s*$/) {
+        $formatted_antline ||= setfont($redfont, 'Ant.') . " $antline";
+        $t .= "\n$formatted_antline";
+        next;
+      }
 	  
 	  if ($line =~ /^\s*([0-9]+)\:([0-9]+)/) {$v = $2;}
       elsif ($line =~ /^\s*([0-9]+)/) {$v = $1;}
@@ -711,24 +724,6 @@ sub settone {
   return ($flag == 2) ? " {:pc$tone:} " : " {:p$tone:} ";
 }
 
-
-
-sub special_epi_invit {
-  my %w = (columnsel($lang)) ? %winner : %winner2;
-  my $ant = "Ant. $w{InvitE}";
-  my $ant2 = $ant[1];
-	my $t = "_\n";
-  							  
-  $fname = checkfile($lang, "Psalterium/Invitatorium1.txt");
-  if (@a = do_read($fname)) {
-    foreach $item (@a) {
-      if ($item =~ /\$ant2/i) {$item = "$ant2";}
-      elsif ($item =~ /\$ant/i) {$item = "$ant";}
-      $t .= $item;
-    }
-  } else {$error .= "$fname cannnot open";}
-  return $t;
-}
 
 #*** setlink($name, $ind, $lang
 # sets a link for expand a skeleton chapter line or to call a popup

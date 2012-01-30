@@ -109,6 +109,12 @@ sub setsetupvalue {
 
 sub get_tempus_id
 {
+  our @dayname;
+  our ($day, $month, $day_of_week);
+  our $hora;
+  
+  my $vesp_or_comp = ($hora =~ /Vespera/i) || ($hora =~ /Completorium/i);
+  
   local $_ = $dayname[0];
   
   /^Adv/ ?
@@ -136,6 +142,19 @@ sub get_tempus_id
     'post Pentecosten';
 }
 
+# Returns the name of the day for use as a subject in conditionals.
+sub get_dayname_for_condition
+{
+  our ($day, $month, $day_of_week);
+  our $hora;
+  
+  my $vesp_or_comp = ($hora =~ /Vespera/i) || ($hora =~ /Completorium/i);
+  
+  return 'Epiphaniæ' if ($month == 1 && ($day == 6 || ($day == 5 && $vesp_or_comp)));
+  
+  return '';
+}
+
 our %subjects =
 (
     rubricis    => sub { $version },
@@ -143,6 +162,7 @@ our %subjects =
     tempore     => \&get_tempus_id,
     missa       => sub { $missanumber },
     communi     => sub { {summpont => ($version =~ /1960/ || $version =~ /1955/ || $version =~ /Divino/)} },
+    'die'       => \&get_dayname_for_condition,
 );
 
 our %predicates =
@@ -173,19 +193,30 @@ sub vero($)
     # The empty condition is _true_ : safer, since previously conditions were's used.
     return 1 unless $condition;
 
-    # Remove noise words
-    $condition =~ s/\b(est|in|cum|si|sed)\b//g;
-
     # aut binds tighter than et
     AUTEM: for ( split /\baut\b/, $condition )
     {
         for ( split /\bet\b/ )
         {
             s/^\s*(.*?)\s*$/$1/;
+            
+            # Normalise whitespace.
+            s/\s+/ /g;
+            
             my ($subject, $predicate) = split /\s+/, $_, 2;
-
-            # Subject is optional: defaults to tempore
-            ($predicate, $subject) = ($subject, 'tempore') if not $predicate;
+            
+            # Subject is optional
+            ($predicate, $subject) = ($subject, '') if not $predicate;
+            
+            # Multi-word predicate with implicit subject.
+            if ($subject && !exists ($subjects{lc($subject)}))
+            {
+                $predicate = "$subject $predicate";
+                $subject = '';
+            }
+            
+            # Subject defaults to tempore
+            $subject ||= 'tempore';
 
             # Look up the subject and predicate. If we don't recognise
             # the predicate, treat it as a regex and test the subject

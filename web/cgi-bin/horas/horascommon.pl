@@ -911,10 +911,7 @@ sub precedence {
   @dayname=split('=', $dayname);
   our $C10 = ($dayname[0] =~ /Adv/i) ? 'a' : ($month == 1 || ($month == 2 && $day ==1)) ? 'b' :
     ($dayname[0] =~ /(Epi|Quad)/i) ? 'c' : ($dayname[0] =~ /Pasc/i) ? 'Pasc' : '';
-  $C10 = ($missa) ? "C10$C10" : 'C10';  
-
-  # The calendar globals must be set before we can do this.
-  initialise_conditionals();
+  $C10 = ($missa) ? "C10$C10" : 'C10';
 
   getrank(); #fills $winner, $commemoratio, $commune, $communetype, $rank);
 
@@ -1660,110 +1657,7 @@ sub papal_antiphon_dum_esset($)
   use constant SCOPE_LINE => 1;     # Single line.
   use constant SCOPE_CHUNK => 2;    # Until the next blank line.
   use constant SCOPE_NEST => 3;     # Until a (weakly) stronger conditional.
-  
-  #*** initialise_conditionals()
-  #  Computes the values that can be tested in data-file conditionals,
-  #  and performs other conditional-related initialisations.
-  #  $dayofweek, $month, $day and $year must be set before this
-  #  subroutine is called.
-  sub initialise_conditionals()
-  {
-    our ($dayofweek, $year, $month, $day);
-    our ($version, $hora);
     
-    # Constant values of the rubric sets.
-    my $rubriccount = 0;
-    $conditional_values{'R_MONASTIC'} = $rubriccount++;
-    $conditional_values{'R_TRIDENT1570'} = $rubriccount++;
-    $conditional_values{'R_TRIDENT1910'} = $rubriccount++;
-    $conditional_values{'R_DIVINOAFFLATU'} = $rubriccount++;
-    $conditional_values{'R_REDUCED1950'} = $rubriccount++;
-    $conditional_values{'R_RUBRICS1960'} = $rubriccount++;
-    $conditional_values{'R_1960NEWCALENDAR'} = $rubriccount++;
-    
-    # Set the value of the active rubric set.
-    $_ = $version;
-    $conditional_values{'rubricset'} = $conditional_values{
-      /Monastic/     ? 'R_MONASTIC' :
-      /1570/         ? 'R_TRIDENT1570' :
-      /1910/         ? 'R_TRIDENT1910' :
-      /Divino/       ? 'R_DIVINOAFFLATU' :
-      /1950/         ? 'R_REDUCED1950' :
-      /Rubrics 1960/ ? 'R_RUBRICS1960' :
-                       'R_1960NEWCALENDAR'};
-
-    # Constant values of the seasons.
-    my $seasoncount = 0;
-    $conditional_values{'S_ADVENT_A'} = $seasoncount++;
-    $conditional_values{'S_ADVENT_GOLDEN'} = $seasoncount++;
-    $conditional_values{'S_CHRISTMAS'} = $seasoncount++;
-    $conditional_values{'S_EPIPHANY'} = $seasoncount++;
-    $conditional_values{'S_AFTER_EPIPHANY'} = $seasoncount++;
-    $conditional_values{'S_SEPTUAGESIMA'} = $seasoncount++;
-    $conditional_values{'S_LENT_QUAD'} = $seasoncount++;
-    $conditional_values{'S_PASSIONTIDE'} = $seasoncount++;
-    $conditional_values{'S_EASTER_OCTAVE'} = $seasoncount++;
-    $conditional_values{'S_EASTER_POSTOCTAVE'} = $seasoncount++;
-    $conditional_values{'S_ASCENSION'} = $seasoncount++;
-    $conditional_values{'S_PENTECOST'} = $seasoncount++;
-    $conditional_values{'S_AFTER_PENTECOST'} = $seasoncount++;
-    
-    # Find which season we're in.
-    my $vesp_or_comp = ($hora =~ /Vespera/i) || ($hora =~ /Completorium/i);
-    ($_) = split('=', getweek($vesp_or_comp));
-    $conditional_values{'season'} = $conditional_values{
-      /^Adv/ ?
-        ($month == 12 && $day >= 17) ? 'S_ADVENT_GOLDEN' : 'S_ADVENT_A' :
-      /^Nat/ ?
-        ($month == 1 && ($day >= 6 || ($day == 5 && $vesp_or_comp))) ? 'S_EPIPHANY' : 'S_CHRISTMAS' :
-      /^Epi/ ?
-        ($month == 1 && $day <= 13) ? 'S_EPIPHANY' : 'S_AFTER_EPIPHANY' :
-      /^Quadp(\d)/ && ($1 < 3 || $dayofweek < 3) ?
-        'S_SEPTUAGESIMA' :
-      /^Quad(\d)/ && $1 < 5 ?
-        'S_LENT' :
-      /^Quad/ ?
-        'S_PASSIONTIDE' :
-      /^Pasc0/ ?
-        'S_EASTER_OCTAVE' :
-      /^Pasc(\d)/ && ($1 < 5 || ($1 == 5 && ($dayofweek < 3 || (!$vesp_or_comp && $dayofweek == 3)))) ?
-        'S_EASTER_POSTOCTAVE' :
-      /^Pasc(\d)/ ?
-        'S_ASCENSION' :
-      /^Pasc/ ?
-        'S_PENTECOST' :
-        'S_AFTER_PENTECOST'};
-        
-    # Some variables for convenience.
-    $conditional_values{'InAdvent'} =
-      $conditional_values{'season'} == $conditional_values{'S_ADVENT_A'} ||
-      $conditional_values{'season'} == $conditional_values{'S_ADVENT_GOLDEN'};
-    $conditional_values{'InLent'} =
-      $conditional_values{'season'} == $conditional_values{'S_LENT_QUAD'} ||
-      $conditional_values{'season'} == $conditional_values{'S_PASSIONTIDE'};
-    $conditional_values{'InSeptOrLent'} =
-      $conditional_values{'season'} == $conditional_values{'InLent'} ||
-      $conditional_values{'season'} == $conditional_values{'S_SEPTUAGESIMA'};
-    $conditional_values{'InPaschaltide'} =
-      $conditional_values{'season'} == $conditional_values{'S_EASTER_OCTAVE'} ||
-      $conditional_values{'season'} == $conditional_values{'S_EASTER_POSTOCTAVE'} ||
-      $conditional_values{'season'} == $conditional_values{'S_ASCENSION'} ||
-      $conditional_values{'season'} == $conditional_values{'S_PENTECOST'};
-    $conditional_values{'PerAnnum'} =
-      $conditional_values{'season'} == $conditional_values{'S_AFTER_EPIPHANY'} ||
-      $conditional_values{'season'} == $conditional_values{'S_AFTER_PENTECOST'};
-      
-    $conditional_values{'year'} = $year;
-    $conditional_values{'month'} = $month;
-    $conditional_values{'day'} = $day;
-    
-    # Check whether we have a common of Popes, as distinct from Martyr-
-    # and Confessor-Bishops. If at some point calendars are decoupled
-    # from rubric sets, the year should also be tested.
-    $conditional_values{'HaveCommonOfPopes'} =
-      ($conditional_values{'rubricset'} >= $conditional_values{'R_DIVINOAFFLATU'});
-  }
-  
   
   #*** evaluate_conditional($conditional)
   #  Evaluates a expression from a data-file conditional directive.
