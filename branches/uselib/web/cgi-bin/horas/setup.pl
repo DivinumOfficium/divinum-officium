@@ -17,9 +17,9 @@ sub setuptable
 {
   our %setup;
   our $input;
+  our $command;
 
-  my $command = shift;
-
+  $command = shift;
   my $title1 = our $title;
   $title1 =~ s/setup/options/i;
 
