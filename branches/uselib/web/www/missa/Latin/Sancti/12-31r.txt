@@ -10,12 +10,18 @@ Prefatio=Nat
 
 [Commemoratio Oratio]
 !Pro S. Sylvestri papae
+@Commune/C4:Oratio:s/N\./Silvéstri/
+(sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Oratio Gregem
 
 [Commemoratio Secreta]
 !Pro S. Sylvestri papae
-@Commune/C4b:Secreta
+@Commune/C4:Secreta
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
 
 [Commemoratio Postcommunio]
 !Pro S. Sylvestri papae
-@Commune/C4b:Postcommunio
+@Commune/C4:Postcommunio:s/N\./Silvéstro/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem

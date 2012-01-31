@@ -5,7 +5,7 @@ In Vigilia Epiphaniae;;Semiduplex;;5;;ex Sancti/01-01
 In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
 
 [Rank1960]
-Die Quinta Januarii;;Feria;;1.1;;vide Sancti/01-01
+Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rule]
 CPapaM=Telésphorum;
@@ -33,11 +33,9 @@ $Qui tecum
 
 [Commemoratio Oratio]
 !Pro S. Telesphori Papæ et Mart.
-@Commune/C4b:Oratio proper Gregem
-Deus, qui nos beáti Telésphopri Mártyris tui atque Pontíficis ánnua sollemnitáte~
-lætíficas: concéde propítius; ut, cujus natalítia cólimus, de ejúsdem étiam~
-protectióne gaudeámus.
-$Per Dominum
+@Commune/C2b:Oratio:s/N\./Telésphori/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Oratio Gregem
 
 [Lectio]
 Léctio Epístolæ beáti Pauli Apóstoli ad Gálatas.
@@ -77,10 +75,10 @@ $Per Dominum
 
 [Commemoratio Secreta]
 !Pro S. Telesphori Papæ et Mart.
-@Commune/C4b:Secreta proper Gregem
-Múnera tibi, Dómine, dicáta sanctífica: et, intercedénte beáto Telésphoro~
-Mártyre tuo atque Pontífice, per éadem nos placátus inténde.
-$Per Dominum
+@Commune/C2b:Secreta:s/N\./Telésphoro/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Secreta Gregem
+
 
 [Communio]
 !Matth 2:20
@@ -94,8 +92,6 @@ $Per Dominum
 
 [Commemoratio Postcommunio]
 !Pro S. Telesphori Papæ et Mart.
-@Commune/C4b:Postcommunio proper Gregem
-Refécti participatióne múneris sacri, quaesumus, Dómine, Deus noster: ut, cujus~
-exséquimur cultum, intercedénte beáto Telésphoro Mártyre tuo atque Pontífice,~
-sentiámus efféctum.
-$Per Dominum
+@Commune/C2c:Postcommunio:s/N\./Telésphoro/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Postcommunio Gregem

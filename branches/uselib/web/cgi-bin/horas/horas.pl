@@ -27,10 +27,10 @@ sub horas
                        
     $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;    
     our %translate;
-    $translate{$lang1} = setupstring("$datafolder/$lang1/Psalterium/Translate.txt");
-    $translate{$lang2} = setupstring("$datafolder/$lang2/Psalterium/Translate.txt");
+    $translate{$lang1} = setupstring($datafolder, $lang1, "Psalterium/Translate.txt");
+    $translate{$lang2} = setupstring($datafolder, $lang2, "Psalterium/Translate.txt");
 
-    %chant = %{setupstring("$datafolder/Latin/Psalterium/Chant.txt")};
+    %chant = %{setupstring($datafolder, 'Latin', "Psalterium/Chant.txt")};
 
     $column = 1;
     if ($Ck) {$version = $version1; setmdir($version); precedence();}
@@ -157,7 +157,7 @@ sub resolve_refs {
       $line =~ s/\s+$//;
       $line =~ s/^\s+//;   
       #prepares reading the part of common w/ antiphona
-	    if ($line =~ /psalm/ && $t[$it -1] =~ /^\s*Ant\. /i) {   
+	    if ($line =~ /psalm/ && $it > 0 && $t[$it -1] =~ /^\s*Ant\. /i) {
 	      $line = expand($line, $lang, $t[$it - 1]);
           
           # If the psalm has a cross, then so should the antiphon.
@@ -226,8 +226,8 @@ sub resolve_refs {
 	  }
 
   #connect lines marked by tilde, or but linebrak
-    if ($line =~ /(.*)\~\s*$/) {
-      $prelude .= "$1 ";
+    if ($line =~ /~\s*$/) {
+      $prelude .= substr($line, 0, $-[0]) . ' ';
     }
     else {
       push @resolved_lines, $prelude . $line;
@@ -295,7 +295,7 @@ sub expand
     }
 
     #actual expansion for $ references
-    my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+    my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
     $line =~ s/\$//;
     $line =~ s/\s*$//; 
     my $text = $prayer{$line};     
@@ -308,7 +308,7 @@ sub expand
 # returns the text of the prayer without Amen, setting V. and R. to the last 2 lines 
 sub pater_noster {
   $lang = shift;   
-  my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
   my $text = $prayer{'Pater_noster1'};
   return $text;
 
@@ -328,7 +328,7 @@ sub pater_noster {
 # returns the text of the hymn
 sub teDeum {
   my $lang = shift;
-  my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
   my $text = ($version =~ /1570/ && exists($prayer{'Te DeumO'})) ? $prayer{'Te DeumO'} : $prayer{'Te Deum'};
   $text = "\n_\n!Te Deum\n" . $text;
   return $text; 
@@ -339,7 +339,7 @@ sub teDeum {
 # return the text Alleluia or Laus tibi
 sub Alleluia { 
   my $lang = shift;  
-  my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
   my $text = $prayer{'Alleluia'};   
   my @text = split("\n", $text); 
   if ($dayname[0] =~ /Quad/i && !Septuagesima_vesp()) {$text = $text[1];}
@@ -361,7 +361,7 @@ sub Gloria {
   my $lang = shift;	 
   if ($dayname[0] =~ /Quad6/i && $dayofweek > 3 && 
     !($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i)) {return "";}
-  my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
   if ($rule =~ /Requiem gloria/i) {return $prayer{Requiem};}
   return $prayer{'Gloria'};    
 }
@@ -370,14 +370,14 @@ sub Gloria1 {   #* responsories
   my $lang = shift;	 
   if ($dayname[0] =~ /(Quad5|Quad6)/i && $winner !~ /Sancti/i && $rule !~ /Gloria responsory/i)
     {return "";}
-  my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
   return $prayer{'Gloria1'};    
 }
 
 sub Gloria2 { #*Invitatorium
   my $lang = shift;	 
   if ($dayname[0] =~ /(Quad[56])/i) {return "";}
-  my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
   if ($rule =~ /Requiem gloria/i) {return $prayer{Requiem};}
   return $prayer{'Gloria'};    
 }
@@ -388,7 +388,7 @@ sub Gloria2 { #*Invitatorium
 #returns the text of the 'Domine exaudi' for non priests
 sub Dominus_vobiscum {     
   my $lang = shift;
-  my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
   my $text = $prayer{'Dominus'};
   my @text = split("\n", $text);       
   if ($priest) {$text = "$text[0]\n$text[1]"}
@@ -417,7 +417,7 @@ sub Dominus_vobiscum2 { #* officium defunctorum
 # adds Alleluia, alleluia for Pasc0
 sub Benedicamus_Domino {
   my $lang = shift;    
-  my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
   my $text = $prayer{'Benedicamus Domino'}; 
   if (Septuagesima_vesp()) {$text = $prayer{'Benedicamus Domino1'};}
   if ($dayname[0] !~ /Pasc0/i || $hora !~ /(Laudes|Vespera)/i) {return $text;}
@@ -429,7 +429,7 @@ sub Benedicamus_Domino {
 #return the text for the appropriate time
 sub antiphona_finalis {	 
   my $lang = shift;
-  my %ant = %{setupstring("$datafolder/$lang/Psalterium/Mariaant.txt")};	
+  my %ant = %{setupstring($datafolder, $lang, "Psalterium/Mariaant.txt")};	
   my $t = '';  
   if ($dayname[0] =~ /adv/i && $winner{Rank} !~ /In Nativitate Domini/i) {$t = $ant{'Advent'};}
   elsif ($dayname[0] =~ /Nat/i || ($month == 12 && $day > 23) || 
@@ -469,16 +469,38 @@ sub psalm {
   }		  
   															
   #$psalmfolder = ($accented =~ /plain/i) ? 'psalms' : 'psalms1';
-  $psalmfolder = 'psalms1';   
+  $psalmfolder = 'psalms1';
   
-  $fname=checkfile($lang, "$psalmfolder/Psalm$a[0].txt"); 
-  if ($version =~ /1960/ && $fname =~ /226/) {$fname =~ s/226/226r/;}  
-  if ($version =~ /1960/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i && $fname =~ /88/) 
-    {$fname =~ s/88/88r/;}      
-  if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6 && $fname =~ /88/) 
-    {$fname =~ s/88/88a/;}      
+  my $psnum;
+  
+  if ($num =~ /\[(.*?)\]/) {
+    # Psalm said only in penitential seasons (intended for psalm
+    # transferred from Lauds to Prime).
+    $psnum = $1;
+    return unless ($dayname[0] =~ /adv|quad/i);
+  }
+  elsif ($num =~ /^\s*([0-9]+)/) {
+    $psnum = $1;
+  }
+  else {
+    return;
+  }
+  
+  # Get the filename of the psalm. Psalm 94, being the psalm used at
+  # the invitatory, lives elsewhere, and is loaded here only for its
+  # special third-nocturn use on the day of the Epiphany.
+  my $fname = ($psnum == 94) ? 'Psalterium/Invitatorium1.txt' : "$psalmfolder/Psalm$psnum.txt";
+  
+  $fname = checkfile($lang, $fname);
+  if ($version =~ /1960/ && $fname =~ /226/) {$fname =~ s/226/226r/;}
+  if ($version =~ /1960/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i && $fname =~ /88/)
+    {$fname =~ s/88/88r/;}
+  if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6 && $fname =~ /88/)
+    {$fname =~ s/88/88a/;}
+    
+  @lines = do_read($fname);
 
-  my $str = 'Psalmus';                        
+  my $str = 'Psalmus';
   $str = translate($str, $lang);
 
   my $pnum;
@@ -491,50 +513,41 @@ sub psalm {
   }
   my $t = '';
   
-    if ($num > 150 && $num < 300 && (@lines = do_read($fname)))
+  if ($num > 150 && $num < 300 && @lines)
+  {
+    $line = $lines[0];
+    if ($line =~ /\s*([a-z]+\s+[a-z_]+) /i)
     {
-        $line = $lines[0];
-        if ($line =~ /\s*([a-z]+\s+[a-z_]+) /i)
-        {
-            $t = setfont($redfont, $1) . settone(1) . $pnum;
-        }   
-    }
-  if (!$t) {$t = setfont($redfont,"$str $num") . settone(1) . $pnum; }	
+      $t = setfont($redfont, $1) . settone(1) . $pnum;
+    }   
+  }
+  if (!$t) {$t = setfont($redfont,"$str $num") . settone(1) . $pnum; }
 
-  
-  if ($rule =~ /Special Matutinum Incipit/i && $num == 86) {return special_epi_invit();}
-
-  my $psnum = 0;
   my $v1 = 1;
   my $v2 = 1000;
-  
-  if ($num =~ /\[(.*?)\]/) {
-    $num = $1;
-    if ($dayname[0] !~ /(adv|quad)/i) {return;}
-  }   
-  
-  if ($num =~ /^\s*([0-9]+)/) {$psnum = $1;}
-  else {return $t;}
 
+  # Extract limits of the division of the psalm.
   if ($num =~ /\((.*?)\)/) { 
      my @v = split('-', $1);
      $v1 = $v[0];
      $v2 = $v[1];   
   }
-						
-  $fname = checkfile($lang, "$psalmfolder/Psalm$psnum.txt");
-  if ($version =~ /1960/ && $fname =~ /226/) {$fname =~ s/226/226r/;}  
-  if ($version =~ /1960/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i && $fname =~ /88/) 
-    {$fname =~ s/88/88r/;}      
-   if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6 && $fname =~ /88/) 
-    {$fname =~ s/88/88a/;}      
 
   # Flag to signal that dagger should be prepended to current line.
   my $prepend_dagger = 0;
+  
+  my $formatted_antline;
 
-  if (@lines = do_read($fname)) {
+  if (@lines) {
 	my $first = ($antline) ? 1 : 0;
 	foreach $line ( @lines ) {
+    
+      # Interleave antiphon into the psalm "Venite exsultemus".
+      if ($psnum == 94 && $line =~ /^\s*\$ant\s*$/) {
+        $formatted_antline ||= setfont($redfont, 'Ant.') . " $antline";
+        $t .= "\n$formatted_antline";
+        next;
+      }
 	  
 	  if ($line =~ /^\s*([0-9]+)\:([0-9]+)/) {$v = $2;}
       elsif ($line =~ /^\s*([0-9]+)/) {$v = $1;}
@@ -605,8 +618,7 @@ sub getantcross {
   $psalmline = '';
   $antline = ''; 
 
-  while ($aind < @antline) {
-    if ($pind >= @psalmline) { return "$psalmline1 \x{2021}";}
+  while ($aind < @antline && $pind < @psalmline) {
 	my $item1 = $psalmline[$pind];
 	$pind++;
 	$item1 = depunct($item1);
@@ -617,8 +629,10 @@ sub getantcross {
 	if (!$item2) {$pind--; next;}  
 	if ($item1 !~ /$item2/i) {return $psalmline1;}
 	$psalmline .= " $psalmline[$pind-1]";
-	next;
   }
+  
+  # Don't place a dagger if the antiphon is longer than the verse.
+  return $psalmline1 if ($aind < @antline && $pind == @psalmline);
   
   # Skip over any remaining punctuation.
   $psalmline .= ' ' . $psalmline[$pind++] while ($pind < @psalmline && !depunct($psalmline[$pind]));
@@ -710,24 +724,6 @@ sub settone {
   return ($flag == 2) ? " {:pc$tone:} " : " {:p$tone:} ";
 }
 
-
-
-sub special_epi_invit {
-  my %w = (columnsel($lang)) ? %winner : %winner2;
-  my $ant = "Ant. $w{InvitE}";
-  my $ant2 = $ant[1];
-	my $t = "_\n";
-  							  
-  $fname = checkfile($lang, "Psalterium/Invitatorium1.txt");
-  if (@a = do_read($fname)) {
-    foreach $item (@a) {
-      if ($item =~ /\$ant2/i) {$item = "$ant2";}
-      elsif ($item =~ /\$ant/i) {$item = "$ant";}
-      $t .= $item;
-    }
-  } else {$error .= "$fname cannnot open";}
-  return $t;
-}
 
 #*** setlink($name, $ind, $lang
 # sets a link for expand a skeleton chapter line or to call a popup
@@ -900,7 +896,7 @@ sub ant_Benedictus {
 
   my ($a, $c) = getantvers('Ant', 2, $lang);  
   if ($month == 12 && ($day == 21 || $day == 23) && $winner =~ /tempora/i) {
-    my %v = %{setupstring("$datafolder/$lang/Psalterium/Major Special.txt")};
+    my %v = %{setupstring($datafolder, $lang, "Psalterium/Major Special.txt")};
     $a = $v{"Adv Ant $day" . "L"};    
   }
   if ($dayname[0] !~ /Pasc/i) {$a =~ s/\(Allel[uú][ij]a.*?\)//isg;}
@@ -934,7 +930,7 @@ sub ant_Magnificat {
   }
   
   if ($month ==12 && ($day > 16 && $day < 24) && $winner =~ /tempora/i) {
-    my %v = %{setupstring("$datafolder/$lang/Psalterium/Major Special.txt")};
+    my %v = %{setupstring($datafolder, $lang, "Psalterium/Major Special.txt")};
 	  $a = $v{"Adv Ant $day"};
     $num = 2;
   }
@@ -987,11 +983,11 @@ sub martyrologium {
   my @a = split('=', $a);    
   $a = "$a[0]-$nextdayofweek";  
   $a =~ s/\s//g;                      
-  my %a = %{setupstring("$datafolder/$lang/Martyrologium/Mobile.txt")}; 
+  my %a = %{setupstring($datafolder, $lang, "Martyrologium/Mobile.txt")}; 
   if ($version =~ /1570/ && $lang =~ /Latin/i) 
-    {%a = %{setupstring("$datafolder/$lang/Martyrologium1/Mobile.txt")};} 
+    {%a = %{setupstring($datafolder, $lang, "Martyrologium1/Mobile.txt")};} 
   if ($version =~ /(1955|1960)/ && $lang =~ /Latin/i) 
-    {%a = %{setupstring("$datafolder/$lang/Martyrologium2/Mobile.txt")};} 
+    {%a = %{setupstring($datafolder, $lang, "Martyrologium2/Mobile.txt")};} 
 
   my $mobile = '';
   my $hd = 0;
@@ -1053,7 +1049,7 @@ sub martyrologium {
         }
     }
 
-  my %prayer = %{setupstring("$datafolder/$lang/Psalterium/Prayers.txt")};
+  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
   $t .= $prayer{Conclmart};
   return $t;
 }

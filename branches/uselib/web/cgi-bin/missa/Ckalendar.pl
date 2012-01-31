@@ -58,7 +58,7 @@ our $communename = 'Commune';
 #require "ordocommon.pl";
 require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
-require "$Bin/dialogcommon.pl";
+require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
 
 binmode(STDOUT, ':encoding(utf-8)');
@@ -73,8 +73,8 @@ $date1= strictparam('date1');
 $browsertime = strictparam('browsertime');
 
 #internal script, cookies
-%dialog = %{setupstring("$datafolder/missa.dialog")};
-if (!$setupsave) {%setup = %{setupstring("$datafolder/missa.setup")};}
+%dialog = %{setupstring($datafolder, '', 'missa.dialog')};
+if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'missa.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 $officium = strictparam('officium');

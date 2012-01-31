@@ -34,7 +34,7 @@ our $error = '';
 $debug = '';
 require "$Bin/../horas/do_io.pl";
 require "$Bin/webdia.pl";
-require "$Bin/dialogcommon.pl";
+require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/ordo.pl";
 require "$Bin/mcheck.pl";
 require "$Bin/tfertable.pl";
@@ -65,8 +65,8 @@ setmdir($version);
 
 $setupsave = strictparam('setup');
 $setupsave =~ s/\~24/\"/g;
-%dialog = %{setupstring("$datafolder/missa.dialog")};
-if (!$setupsave) {%setup = %{setupstring("$datafolder/missa.setup")};}
+%dialog = %{setupstring($datafolder, '', 'missa.dialog')};
+if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'missa.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 eval($setup{'parameters'});

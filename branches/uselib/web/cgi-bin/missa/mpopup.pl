@@ -32,12 +32,12 @@ $q = new CGI;
 
 
 #*** collect standard items
-require "$Bin/dialogcommon.pl";
+require "$Bin/../horas/horascommon.pl";
+require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/ordo.pl";
 #require "$Bin/ordocommon.pl";
 require "$Bin/../horas/do_io.pl";
-require "$Bin/../horas/horascommon.pl";
 require "$Bin/tfertable.pl";
 
 binmode(STDOUT, ':encoding(utf-8)');
@@ -45,8 +45,8 @@ binmode(STDOUT, ':encoding(utf-8)');
 #*** get parameters
 getini('missa'); #files, colors
 
-%dialog = %{setupstring("$datafolder/missa.dialog")};
-%setup = %{setupstring("$datafolder/missa.setup")};
+%dialog = %{setupstring($datafolder, '', 'missa.dialog')};
+%setup = %{setupstring($datafolder, '', 'missa.setup')};
 
 eval($setup{'parameters'});
 eval($setup{'general'});  
@@ -62,7 +62,7 @@ $title = "$popup";
 $title =~ s/[\$\&]//;
 
 #$tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;
-#%translate = %{setupstring("$datafolder/$tlang/Ordo/Translate.txt")};
+#%translate = %{setupstring($datafolder, $tlang, "Ordo/Translate.txt")};
 
  $text = gettext($popup, $lang1); 
  $t = length($text);
@@ -113,20 +113,28 @@ function setsize() {
 PrintTag
 } 
 
-sub gettext {
+sub gettext
+{
   my $popup = shift;
   my $lang = shift;
-  my $text = ''; 
-
-  my $fname = checkfile($lang, "Ordo/$popup.txt");
-  if ($text = join('\n', do_read($fname))) {
-  } else {$text = "$datafolder/$lang/Ordo/$popup.txt cannot open!";}
+  my $text = '';
   
+  my %popup_files =
+  (
+    Ante => 'Ante.txt',
+    Post => 'Post.txt'
+  );
 
-  if (!$rubrics) {$text =~ s/[#!].*?\n//g;} 
+  # File must be one of those explicitly permitted.
+  my $fname = $popup_files{$popup} or return 'Invalid filename.';
+  
+  $fname = checkfile($lang, "Ordo/$fname");
+  
+  $text = join("\n", do_read($fname)) or return "Cannot open $datafolder/$lang/Ordo/$fname.txt";  
+
+  $text =~ s/[#!].*?\n//g unless $rubrics;
 
   $text =~ s/#/!/g;
   $text = resolve_refs($text);
   return $text;
 }
-  	 

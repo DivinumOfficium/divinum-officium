@@ -5,7 +5,7 @@ In Vigilia Epiphaniae;;Semiduplex;;5;;ex Sancti/01-01
 In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
 
 [Rank1960]
-Die Quinta Januarii;;Feria;;1.1;;vide Sancti/01-01
+Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rule]
 CPapaM=Telesphorus;
@@ -65,18 +65,18 @@ $Per Dominum
 
 [Commemoratio Oratio]
 !Pro S. Telesphori Papæ et Mart.
-@Commune/C4b:Oratio proper Gregem
-Eternal Shepherd, look with favor upon Your flock.  Safeguard and shelter it forevermore through blessed Telesphorus, Your Martyr and Supreme Pontiff, whom You constituted shepherd of the whole Church.
-$Per Dominum
+@Commune/C2b:Oratio:s/N\./Telesphorus/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Oratio Gregem
 
 [Commemoratio Secreta]
 !Pro S. Telesphori Papæ et Mart.
-@Commune/C4b:Secreta proper Gregem
-Having offered You our gifts, we beseech You, O Lord, mercifully to enlighten Your Church, so that Your flock may everywhere prosper, and its shepherds, under Your guidance, be rendered acceptable to You. 
-$Per Dominum
+@Commune/C2b:Secreta:s/N\./Telesphorus/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Secreta Gregem
 
 [Commemoratio Postcommunio]
 !Pro S. Telesphori Papæ et Mart.
-@Commune/C4b:Postcommunio proper Gregem
-Since Your Church has been nourished by sacred food, govern her in Your clemency, we beseech You, O Lord, so that under the guidance of Your almighty rule she may enjoy ever greater freedom and remain steadfast in purity of faith. 
-$Per Dominum
+@Commune/C2c:Postcommunio:s/N\./Telesphorus/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Postcommunio Gregem

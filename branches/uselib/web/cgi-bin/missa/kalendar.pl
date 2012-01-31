@@ -61,7 +61,7 @@ our $missa = 1;
 #require "$Bin/ordocommon.pl";
 require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
-require "$Bin/dialogcommon.pl";
+require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/tfertable.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
@@ -77,8 +77,8 @@ $date1= strictparam('date1');
 $browsertime = strictparam('browsertime');
 
 #internal script, cookies
-%dialog = %{setupstring("$datafolder/missa.dialog")};
-if (!$setupsave) {%setup = %{setupstring("$datafolder/missa.setup")};}
+%dialog = %{setupstring($datafolder, '', 'missa.dialog')};
+if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'missa.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 $officium = strictparam('officium');

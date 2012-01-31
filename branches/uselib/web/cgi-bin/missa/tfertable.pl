@@ -96,10 +96,21 @@ if (@a = do_read("$dfolder/Latin/Tabulae/K$kalendarname.txt")) {
 
   #Nat1 assignment
   tfgetweek(12, 25, $kyear);
-  my $nat1 = '30';
-  if ($version =~ /(1955|1960|Monastic)/i && $dayofweek > 0) {$nat1 = 32 - $dayofweek;} 
-  elsif ($dayofweek == 1 || $dayofweek == 3) {$nat1 = 32 - $dayofweek;} 
-  push(@tfer, sprintf("12-%02i=Tempora/Nat1-0", $nat1));
+  
+  my $nat1;
+  
+  if ($version =~ /(1955|1960|Monastic)/i) {
+    # Nat1 vanishes if Christmas is on a Sunday; otherwise it's kept
+    # on the Sunday in the octave.
+    $nat1 = 32 - $dayofweek unless ($dayofweek == 0);
+  }
+  else {
+    # Nat1 is kept on 30 Dec, unless 29 or 31 Dec is a Sunday, in which
+    # case it's kept then.
+    $nat1 = ($dayofweek == 1 || $dayofweek == 3) ? 32 - $dayofweek : 30;
+  }
+  
+  push(@tfer, sprintf("12-%02i=$tempname/Nat1-0", $nat1)) if defined($nat1);
 
   $epi2flag = 0;
 
@@ -159,7 +170,7 @@ if (@a = do_read("$dfolder/Latin/Tabulae/K$kalendarname.txt")) {
 	     $tname =$transfer{"Tempora/$tname"};
 		   $tname =~ s/Tempora\///;
 	    }
-      %tempora = updaterank(officestring("$dfolder/Latin/Tempora/$tname.txt"));   
+      %tempora = updaterank(officestring($dfolder, Latin, "Tempora/$tname.txt"));   
       $trank = $tempora{Rank};     
       if ($version =~ /1955|1960/ && exists($tempora{Rank1960})) {$trank = $tempora{Rank1960};}
       if ($version =~ /Trident/i && exists($tempora{RankTrident})) {$w{Rank}=$w{RankTrident};}
@@ -172,7 +183,7 @@ if (@a = do_read("$dfolder/Latin/Tabulae/K$kalendarname.txt")) {
       if (exists($transferspec{$sday})) {$sday = $transferspec{$sday};}
 	  if (exists($transfer{$sday})) {$sday = $transfer{$sday}; $transfered = 1;}
       
-      %saint = %{setupstring("$dfolder/Latin/Sancti/$sday.txt")};
+      %saint = %{setupstring($dfolder, 'Latin', "Sancti/$sday.txt")};
       $srank = $saint{Rank};      
       if ($version =~ /1955|1960/ && exists($saint{Rank1960})) {$srank = $saint{Rank1960};}
       if ($version =~ /Trident/i && exists($saint{RankTrident})) {$srank=$saint{RankTrident};}
@@ -185,7 +196,7 @@ if (@a = do_read("$dfolder/Latin/Tabulae/K$kalendarname.txt")) {
       if (exists($transferspec{$sday1})) {$sday1 = $transferspec{$sday1};}
 	    if (exists($transfer{$sday1})) {$sday1 = $transfer{$sday1};}
       
-      %saint1 = %{setupstring("$dfolder/Latin/Sancti/$sday1.txt")};
+      %saint1 = %{setupstring($dfolder, 'Latin', "Sancti/$sday1.txt")};
       $srank1 = $saint1{Rank};      
       if ($version =~ /1955|1960/ && exists($saint1{Rank1960})) {$srank1 = $saint1{Rank1960};}
       if ($version =~ /Trident/i && exists($saint1{RankTrident})) {$srank1=$saint1{RankTrident};}

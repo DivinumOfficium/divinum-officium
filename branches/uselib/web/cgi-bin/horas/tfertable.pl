@@ -35,7 +35,7 @@ $fname1 =~ s/^Tr/Str/;
 
   my @scriptfer_out = @scriptfer;
   $_ = "$_;;\n" for @scriptfer_out;
-  if (do_write("$datafolder/Latin/Tabulae/$fname1.txt")) {
+  if (do_write("$datafolder/Latin/Tabulae/$fname1.txt", @scriptfer_out)) {
   } else {$error .= "$datafolder/Latin/Tabulae/$fname1.txt cannot open for output<BR>\n";}
 }
 
@@ -97,11 +97,21 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
 
   #Nat1 assignment
   tfgetweek(12, 25, $kyear);
-  my $nat1 = '30';
-  my $nat1name = ($version =~ /1960/) ? 'Nat1-0r' : 'Nat1-0';
-  if ($version =~ /(1955|1960|Monastic)/i && $dayofweek > 0) {$nat1 = 32 - $dayofweek;} 
-  elsif ($dayofweek == 1 || $dayofweek == 3) {$nat1 = 32 - $dayofweek;} 
-  push(@tfer, sprintf("12-%02i=$tempname/$nat1name", $nat1));
+  
+  my $nat1;
+  
+  if ($version =~ /(1955|1960|Monastic)/i) {
+    # Nat1 vanishes if Christmas is on a Sunday; otherwise it's kept
+    # on the Sunday in the octave.
+    $nat1 = 32 - $dayofweek unless ($dayofweek == 0);
+  }
+  else {
+    # Nat1 is kept on 30 Dec, unless 29 or 31 Dec is a Sunday, in which
+    # case it's kept then.
+    $nat1 = ($dayofweek == 1 || $dayofweek == 3) ? 32 - $dayofweek : 30;
+  }
+  
+  push(@tfer, sprintf("12-%02i=$tempname/Nat1-0", $nat1)) if defined($nat1);
 
   $epi2flag = 0;
 
@@ -111,6 +121,9 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
   my @seant = splice(@seant, @seant);
   my $macc2flag = 0;
   my $macc2num = 0;
+  # The feast of Christ the King pushed the readings (in their ordinary
+  # positions) of the martyrdom of the Holy Machabees back by a day.
+  my $macc2base = ($version =~ /Trident|Monastic/i) ? 0 : 1;
 
 #*** cycle to build tfer array
   for ($tmonth = 0; $tmonth < @monthlength; $tmonth++) {  
@@ -129,19 +142,25 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
       our @dayname=split('=', $dayname);
       $dayname[0] =~ s/\s*$//g;
       $dayname[0] =~ s /^\s*//g; 
-      
-	  if ($dayname[0] =~ /Epi1/i && $dayofweek == 0) {
-	    if ($version =~ /(Trident|Monastic)/i) {push(@tfer, sprintf("%02i-%02i=$tempname/Epi1-0a", $kmonth, $kday));}
-        if ($version !~ /Monastic/i) {push(@scriptfer, sprintf("%02i-%02i=Epi1-0a", $kmp1, $kdp1));}
-	    if ($version =~ /1960/ && $kday == 13) {
-		  pop(@scriptfer);
-		  push(@scriptfer, "01-12=Epi1-0a");
+
+      # First week after the Epiphany.
+      if ($dayname[0] =~ /Epi1/i && $dayofweek == 0) {
+        if ($version =~ /(Trident|Monastic)/i) {push(@tfer, sprintf("%02i-%02i=$tempname/Epi1-0a", $kmonth, $kday));}
+        elsif ($version =~ /Divino|1955/i) {push(@scriptfer, sprintf("%02i-%02i=Epi1-0a", $kmp1, $kdp1));}
+        elsif ($kday == 13) {
+          # 1960/newcal: 12th Jan on a Saturday has incipit of 1 Cor,
+          # but in other years these readings are omitted.
+          push(@scriptfer, "01-12=Epi1-0a");
         }
-	  }   
+      }
+
+      # TODO: This seems wrong. Some of the below surely applies to the
+      # Monastic office. What should be skipped? Epi1?
       if ($version =~ /Monastic/i) {next;} 
 
-	  if ($kmonth == 1 && $kday == 12 && $dayofweek == 6 && $version !~ /Trident|1960/i) 
-         {push(@tfer, sprintf("%02i-%02i=$tempname/Epi1-0", $kmonth, $kday));}
+      # Holy Family anticipated on Saturday.
+      if ($kmonth == 1 && $kday == 12 && $dayofweek == 6 && $version !~ /Trident|1960/i)
+        {push(@tfer, sprintf("%02i-%02i=$tempname/Epi1-0", $kmonth, $kday));}
 
 	  if ($dayname[0] =~ /Epi([2-5])/i) {$epi2flag = $1;} 
       if ($dayname[0] =~ /Epi6/i) {$epi2flag = 0;}
@@ -173,7 +192,7 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
 	     $tname =$transfer{"Tempora/$tname"};
 		   $tname =~ s/Tempora\///;
 	    }
-      %tempora = updaterank(officestring("$datafolder/Latin/Tempora/$tname.txt"));   
+      %tempora = updaterank(officestring($datafolder, Latin, "Tempora/$tname.txt"));   
       $trank = $tempora{Rank};     
       if ($version =~ /1955|1960/ && exists($tempora{Rank1960})) {$trank = $tempora{Rank1960};}
       if ($version =~ /Trident/i && exists($tempora{RankTrident})) {$w{Rank}=$w{RankTrident};}
@@ -187,7 +206,7 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
 	  if (exists($transfer{$sday}) && $transfer{$sday} !~ /Tempora/i) {$sday = $transfer{$sday}; $transfered = 1;}
       
 
-      %saint = %{setupstring("$datafolder/Latin/Sancti/$sday.txt")};
+      %saint = %{setupstring($datafolder, 'Latin', "Sancti/$sday.txt")};
       $srank = $saint{Rank};      
       if ($version =~ /1955|1960/ && exists($saint{Rank1960})) {$srank = $saint{Rank1960};}
       if ($version =~ /Trident/i && exists($saint{RankTrident})) {$srank=$saint{RankTrident};}
@@ -200,7 +219,7 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
       if (exists($transfertemp{$sday1})) {$sday1 = $transfertemp{$sday1};}
 	    if (exists($transfer{$sday1})) {$sday1 = $transfer{$sday1};}
       
-      %saint1 = %{setupstring("$datafolder/Latin/Sancti/$sday1.txt")};
+      %saint1 = %{setupstring($datafolder, 'Latin', "Sancti/$sday1.txt")};
       $srank1 = $saint1{Rank};      
       if ($version =~ /1955|1960/ && exists($saint1{Rank1960})) {$srank1 = $saint1{Rank1960};}
       if ($version =~ /Trident/i && exists($saint1{RankTrident})) {$srank1=$saint1{RankTrident};}
@@ -343,7 +362,7 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
 	 elsif ($macc2flag) {
 	   if ($dayofweek == 0) {if ($version =~ /trident/i && (transfered($sday) || !exists($saint{Lectio1}))) {$macc2num++;}}
  	   elsif (!exists($saint{Lectio1})) {
-	     push(@scriptfer, sprintf("%02i-%02i=105-%01i", $kmonth, $kday, $macc2num));      
+	     push(@scriptfer, sprintf("%02i-%02i=105-%01i", $kmonth, $kday, $macc2base + $macc2num));
          $macc2num++; 
 	   }	       
 	 }   

@@ -1,21 +1,18 @@
 [Rank]
 Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
 
-[Rank1960]
+[Rank] (rubrica 1960 aut rubrica innovata)
 Dominica Infra Octavam Nativitatis;;Semiduplex;;5.5;;ex Sancti/12-25
 
 [Rule]
 9 lectiones
 ex Sancti/12-25
 Lectio1 Sancti
+(sed rubrica 1960 aut rubrica innovata omittitur)
 Psalmi Dominica
 
 [Ant Vespera]
-Thine shall be * the dominion in the day of thy power, amid the brightness of the saints from the womb before the day-star have I begotten thee;;109
-The Lord sent redemption * unto His people, He hath commanded His covenant for ever;;110
-Unto the upright * there ariseth light in the darkness the Lord is gracious, and full of compassion, and righteous;;111
-With the Lord there is mercy, * and with Him is plenteous redemption;;129
-Of the fruit of thy body * will I set upon thy throne;;131
+@Sancti/12-25:Ant Vespera 3
 
 [Capitulum Vespera]
 !Gal 4:1-2
@@ -26,8 +23,8 @@ $Deo gratias
 
 
 [Versum 1]
-V. The Word was made flesh. Alleluia.
-R. And dwelt among us. Alleluia.
+V. The Word was made flesh, alleluia.
+R. And dwelt among us, alleluia.
 
 [Ant 1]
 While all things were in quiet silence * and that night was in the midst of her~
@@ -39,10 +36,10 @@ thy good pleasure, that through the name of thy well-beloved Son, we may~
 worthily abound in all good works.
 $Qui tecum
 
-[Commemoratio 2]
+[Commemoratio 2] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
 @Sancti/12-25:Octava
 
-[Commemoratio 3]
+[Commemoratio 3] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
 @Sancti/12-25:Octava
 
 [Lectio4]
@@ -146,14 +143,14 @@ meghatározott ideig.
 $Deo gratias
 
 [Versum 2]
-V. The Word was made flesh. Alleluia.
-R. And dwelt among us. Alleluia.
+V. The Word was made flesh, alleluia.
+R. And dwelt among us, alleluia.
 
 [Ant 2]
 While all things were in quiet silence * and that night was in the midst of her~
 swift course, thine Almighty Word, O Lord, leapt down out of thy Royal Throne.
 
-[Lectio Prima]
+[Lectio Prima] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
 !Gal 4:7
 v. Tehát nem vagy többé szolga, hanem fiú, s ha fiú, akkor Isten kegyelmébõl~
 örökös is.
@@ -179,8 +176,8 @@ v. Tehát nem vagy többé szolga, hanem fiú, s ha fiú, akkor Isten kegyelmébõl~
 $Deo gratias
 
 [Versum 3]
-V. The Word was made flesh. Alleluia.
-R. And dwelt among us. Alleluia.
+V. The Word was made flesh, alleluia.
+R. And dwelt among us, alleluia.
 
 [Ant 3]
 Puer Jesus * proficiebat aetate et sapientia coram Deo et hominibus.

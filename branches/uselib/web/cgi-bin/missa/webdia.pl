@@ -402,7 +402,7 @@ sub setcookies {
   $check =~ s/\s//g;
                           
   if (!$values[-1]) {
-    my %s = %{setupstring("$datafolder/missa.setup")};
+    my %s = %{setupstring($datafolder, '', 'missa.setup')};
     eval($s{$name});
     $values[-1] = $check;
   }
