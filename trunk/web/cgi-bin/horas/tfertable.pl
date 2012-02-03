@@ -162,19 +162,24 @@ if (my @a = do_read("$datafolder/Latin/Tabulae/K$kalendarname.txt")) {
       if ($kmonth == 1 && $kday == 12 && $dayofweek == 6 && $version !~ /Trident|1960/i)
         {push(@tfer, sprintf("%02i-%02i=$tempname/Epi1-0", $kmonth, $kday));}
 
-	  if ($dayname[0] =~ /Epi([2-5])/i) {$epi2flag = $1;} 
+      # TODO: This is wrong. The Sunday after the Epiphany impeded by
+      # Septuagesima should be anticipated *only* if there are
+      # insufficiently many Sundays after Pentecost (and not, as
+      # currently, whenever there are fewer than six Sundays after the
+      # Epiphany).
+      if ($dayname[0] =~ /Epi([2-5])/i) {$epi2flag = $1;}
       if ($dayname[0] =~ /Epi6/i) {$epi2flag = 0;}
-	  if ($dayname[0] =~ /Quadp1/i && $epi2flag && $version !~ /1960/) { 
+      if ($dayname[0] =~ /Quadp1/i && $epi2flag && $version !~ /1960/) {
         my %epi = split(';','3;Epi3-3~A;4;Epi4-2~Epi4-4~A;5;Epi5-2~Epi5-4~A');
-		$epi2flag++;
-		if (exists($epi{$epi2flag})) { 
-		  push(@scriptfer, sprintf("%02i-%02i=$epi{$epi2flag}", $kmm1, $kdm1)); 
-		}
-	    push(@tfer, sprintf("%02i-%02i=Tempora/Epi$epi2flag-0", $kmm1, $kdm1));
-		$epi2flag = 0;
+        $epi2flag++;
+        if (exists($epi{$epi2flag})) {
+          push(@scriptfer, sprintf("%02i-%02i=$epi{$epi2flag}", $kmm1, $kdm1));
+        }
+        push(@tfer, sprintf("%02i-%02i=Tempora/Epi$epi2flag-0", $kmm1, $kdm1));
+        $epi2flag = 0;
       }
-      
-  		         
+
+
 	  if ($kmonth == 11 && $dayname[0] =~ /Pent([0-9]+)/i && $1 == 23 && $dayofweek == 0 && $version !~ /1960/) {  
         my $t = date_to_days($kday,$kmonth-1,$kyear);
         @d = days_to_date($t + 35);	   
