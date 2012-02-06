@@ -269,12 +269,6 @@ sub setupstring($$$%)
   my ($basedir, $lang, $fname, %params) = @_;
   my $fullpath = "$basedir/$lang/$fname";
   our ($lang1, $lang2, $missa);
-  
-  if ($lang1 && $lang2 && $lang =~ /($lang1|$lang2)/i)
-  {
-    # Fall back to other languages if the specified file doesn't exist.
-    $fullpath = checkfile($1, $fname);
-  }
 
   our $version;
   
@@ -286,7 +280,32 @@ sub setupstring($$$%)
   unless (exists ${$inclusioncache}{$fullpath})
   {
     # Not yet in cache, so open it and add it.
-    ${$inclusioncache}{$fullpath} = setupstring_parse_file($fullpath, $basedir, $lang) or return '';
+    
+    my ($base_sections, $new_sections) = ({}, {});
+    
+    if ($lang eq 'English')
+    {
+      # English layers on top of Latin.
+      $base_sections = setupstring($basedir, 'Latin', $fname, %params);
+    }
+    elsif ($lang && $lang ne 'Latin')
+    {
+      # Other non-Latin languages layer on top of English.
+      $base_sections = setupstring($basedir, 'English', $fname, %params);
+    }
+    
+    # Get the top layer.
+    $new_sections = -e $fullpath ?
+      setupstring_parse_file($fullpath, $basedir, $lang) :
+      {};
+    
+    # Fill in the missing things from the layer below.
+    ${$new_sections}{$_} ||= ${$base_sections}{$_} foreach (keys(%{$base_sections}));
+    
+    return '' unless keys(%{$new_sections});
+    
+    # Cache the final result.
+    ${$inclusioncache}{$fullpath} = $new_sections;
   }
 
   # Take a copy.
@@ -304,7 +323,7 @@ sub setupstring($$$%)
   while (my ($incl_fname, undef, $incl_subst) = ($sections{'__preamble'} =~ /$inclusionregex/gc))
   {
     if ($fullpath =~ /$incl_fname\.txt/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
-    my $incl_sections = setupstring($basedir, $lang, $incl_fname);
+    my $incl_sections = setupstring($basedir, $lang, $incl_fname, %params);
     $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
   }
   
