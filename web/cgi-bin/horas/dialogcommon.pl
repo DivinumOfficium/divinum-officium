@@ -286,12 +286,12 @@ sub setupstring($$$%)
     if ($lang eq 'English')
     {
       # English layers on top of Latin.
-      $base_sections = setupstring($basedir, 'Latin', $fname, %params);
+      $base_sections = setupstring($basedir, 'Latin', $fname, 'resolve@' => 0);
     }
     elsif ($lang && $lang ne 'Latin')
     {
       # Other non-Latin languages layer on top of English.
-      $base_sections = setupstring($basedir, 'English', $fname, %params);
+      $base_sections = setupstring($basedir, 'English', $fname, 'resolve@' => 0);
     }
     
     # Get the top layer.
