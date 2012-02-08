@@ -329,9 +329,7 @@ sub pater_noster {
 sub teDeum {
   my $lang = shift;
   my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
-  my $text = ($version =~ /1570/ && exists($prayer{'Te DeumO'})) ? $prayer{'Te DeumO'} : $prayer{'Te Deum'};
-  $text = "\n_\n!Te Deum\n" . $text;
-  return $text; 
+  return "\n_\n!Te Deum\n$prayer{'Te Deum'}";
 }
    
 
