@@ -225,7 +225,7 @@ sub oratio
     my $orm = '';
 
     # The Priest says Orémus except for Secreta prayers...
-    $orm = "$prayer{Oremus}\n" unless $type !~ /Secreta/i;
+    $orm = "$prayer{Oremus}\n" unless $type =~ /Secreta/i;
 
     # ... and the Deacon says Flectamus for Oratio prayers during IV Temporum
     $orm .= "$prayer{Flectamus}\n" if $type =~ /Oratio/i && $rule =~ /LectioL/ && $dayname[0] !~ /Pasc/i;
