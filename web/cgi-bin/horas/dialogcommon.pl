@@ -269,6 +269,14 @@ sub setupstring($$$%)
   my ($basedir, $lang, $fname, %params) = @_;
   my $fullpath = "$basedir/$lang/$fname";
   our ($lang1, $lang2, $missa);
+  
+  my $inclusionregex = qr/^\s*\@
+    ([^\n:]+)                     # Filename.
+    (?::([^\n:]+?))?              # Optional keywords.
+    [^\S\n\r]*                    # Ignore trailing whitespace.
+    (?::(.*))?                    # Optional substitutions.
+    $
+    /mx;
 
   our $version;
   
@@ -295,9 +303,21 @@ sub setupstring($$$%)
     }
     
     # Get the top layer.
-    $new_sections = -e $fullpath ?
-      setupstring_parse_file($fullpath, $basedir, $lang) :
-      {};
+    if (-e $fullpath)
+    {
+      $new_sections = setupstring_parse_file($fullpath, $basedir, $lang);
+      
+      # Do whole-file inclusions.
+      while (my ($incl_fname, undef, $incl_subst) = (${$new_sections}{'__preamble'} =~ /$inclusionregex/gc))
+      {
+        $incl_fname .= '.txt';
+        if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
+        my $incl_sections = setupstring($basedir, $lang, $incl_fname, %params);
+        ${$new_sections}{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
+      }
+      
+      delete ${$new_sections}{'__preamble'};
+    }
     
     # Fill in the missing things from the layer below.
     ${$new_sections}{$_} ||= ${$base_sections}{$_} foreach (keys(%{$base_sections}));
@@ -310,24 +330,6 @@ sub setupstring($$$%)
 
   # Take a copy.
   my %sections = %{${$inclusioncache}{$fullpath}};
-
-  my $inclusionregex = qr/^\s*\@
-    ([^\n:]+)                     # Filename.
-    (?::([^\n:]+?))?              # Optional keywords.
-    [^\S\n\r]*                    # Ignore trailing whitespace.
-    (?::(.*))?                    # Optional substitutions.
-    $
-    /mx;
-  
-  # Do whole-file inclusions.
-  while (my ($incl_fname, undef, $incl_subst) = ($sections{'__preamble'} =~ /$inclusionregex/gc))
-  {
-    if ($fullpath =~ /$incl_fname\.txt/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
-    my $incl_sections = setupstring($basedir, $lang, $incl_fname, %params);
-    $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
-  }
-  
-  delete $sections{'__preamble'};
 
   $params{'resolve@'} = 1 unless (exists $params{'resolve@'});
   
