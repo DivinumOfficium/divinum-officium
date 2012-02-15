@@ -508,6 +508,7 @@ PrintTag
 </FORM>
 </BODY></HTML>
 PrintTag
+}
 
 
 
@@ -678,4 +679,3 @@ function prevnext(ch) {
 </SCRIPT>
 PrintTag
 } 
-}
