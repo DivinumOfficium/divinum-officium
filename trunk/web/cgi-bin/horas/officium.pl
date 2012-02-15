@@ -234,7 +234,9 @@ my @local = splice(@local, @local);
 
 
 if ($command =~ /kalendar/) {  # kalendar widget
-  print "Content-type: text/xml; charset=utf-8\n\n"; 
+  print "Access-Control-Allow-Origin: *\n";
+  print "Content-type: text/html; charset=utf-8\n"; 
+  print "\n";
   $headline = setheadline();
   headline2($head);
 } else {
