@@ -515,9 +515,10 @@ PrintTag
 #*** headline2($head) prints just two lines of header (for widget)
 sub headline2 {
   my $head = shift;
-	if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
-  print "<p><span style='text-align:center;color:$daycolor'>$headline<br></span>";
-  print "<span>$comment<BR><BR><span>";
+  if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
+  $comment =~ s/([\w]+)=([\w+-]+)/$1="$2"/g;
+  print "<p><span style='text-align:center;color:$daycolor'>$headline<br/></span>";
+  print "<span>$comment<BR/><BR/></span></p>";
 }
 
 #*** headline($head) prints headlibe for main and pray
