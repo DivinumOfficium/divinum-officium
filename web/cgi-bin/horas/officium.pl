@@ -233,6 +233,11 @@ my @local = splice(@local, @local);
 
 
 
+if ($command =~ /kalendar/) {  # kalendar widget
+  print "Content-type: text/xml; charset=utf-8\n\n"; 
+  $headline = setheadline();
+  headline2($head);
+} else {
 #*** print pages (setup, hora=pray, mainpage)  
   #generate HTML
   htmlHead($title, 2);
@@ -506,7 +511,15 @@ PrintTag
 
 
 
-#*** hedline($head) prints headlibe for main and pray
+#*** headline2($head) prints just two lines of header (for widget)
+sub headline2 {
+  my $head = shift;
+	if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
+  print "<p><span style='text-align:center;color:$daycolor'>$headline<br></span>";
+  print "<span>$comment<BR><BR><span>";
+}
+
+#*** headline($head) prints headlibe for main and pray
 sub headline {
   my $head = shift;
 	if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
@@ -665,4 +678,4 @@ function prevnext(ch) {
 </SCRIPT>
 PrintTag
 } 
-
+}
