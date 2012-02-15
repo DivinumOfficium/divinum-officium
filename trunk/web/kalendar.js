@@ -1,7 +1,7 @@
 function DivinumOfficiumKalendar(version)
 {
     var kal = new XMLHttpRequest()
-    var url = 'http://localhost/~ajmalton/divinumofficium/cgi-bin/horas/officium.pl?command=kalendar'
+    var url = 'http://divinumofficium.com/cgi-bin/horas/officium.pl?command=kalendar'
     if ( version )
     {
         url += '&version=' + version
