@@ -9,7 +9,7 @@ function DivinumOfficiumKalendar(version, options)
     options.link = options.link || 'http://divinumofficium.com'
 
     var now = new Date()
-    var now_date = "" + now.getDate() + "-" + (now.getMonth()+1) + "-" + now.getFullYear()
+    var now_date = "" + (now.getMonth()+1) + "-" + now.getDate() + "-" + now.getFullYear()
     var display_date = "" + now.getDate() + "." + mensis[now.getMonth()] + ". a.D. " + now.getFullYear()
     var now_hour = now.getHours()
     var hour
@@ -38,7 +38,7 @@ function DivinumOfficiumKalendar(version, options)
     kal.onload = function(e) { span.innerHTML = e.target.responseText }
 
     url = url+suffix
-    url = version ? (url+'&version='+version) : url
+    url = version ? (url+'&version='+version + '&date='+now_date) : url
     kal.open('GET', url, true)
     kal.send()
 }
