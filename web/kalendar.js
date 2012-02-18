@@ -7,10 +7,10 @@ function DivinumOfficiumKalendar(version, options)
     options = options || {}
     options.id = options.id || 'kalendar'
     options.link = options.link || 'http://divinumofficium.com'
+    options.date = options.date || '%T %d.%B. a.D.%Y'
 
     var now = new Date()
     var now_date = "" + (now.getMonth()+1) + "-" + now.getDate() + "-" + now.getFullYear()
-    var display_date = "" + now.getDate() + "." + mensis[now.getMonth()] + ". a.D. " + now.getFullYear()
     var now_hour = now.getHours()
     var hour
     var suffix = 'Laudes'
@@ -27,9 +27,10 @@ function DivinumOfficiumKalendar(version, options)
     {
         hour = 'in nocte'
     }
+    var display_date = options.date.replace('%T',hour).replace('%d',now.getDate()).replace('%B',mensis[now.getMonth()]).replace('%Y',now.getFullYear())
     
     document.write('<a href="'+options.link+'" style="text-decoration:none;font-style:italic;text-align:center">')
-    document.write(hour + " " + display_date + '<br>')
+    document.write(display_date + '<br>')
     document.write('<span id="' + options.id + '"></a>')
 
     var kal = new XMLHttpRequest()
