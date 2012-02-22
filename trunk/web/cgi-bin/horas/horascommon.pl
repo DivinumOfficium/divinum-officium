@@ -301,7 +301,7 @@ sub getrank {
   if (transfered($tname)) {$trank = '';} 
   #if (transfered($tn1)) {$tn1 = '';}     #???????????
 		
-  if ($hora =~ /Vespera/i && $dayname[0] =~ /Quadp3/ && $dayofweek == 3) {$trank =~ s/;;6/;;2/;}
+  if ($hora =~ /Vespera/i && $dayname[0] =~ /Quadp3/ && $dayofweek == 3 && $version !~ /1960|1955/) {$trank =~ s/;;6/;;2/;}
   @trank = split(";;", $trank);  
   @tn1 = split(';;', $tn1rank);  
   if ($tn1[2] >= $trank[2]) {  
