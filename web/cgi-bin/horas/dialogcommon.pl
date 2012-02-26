@@ -293,7 +293,7 @@ sub setupstring($$$%)
   my %sections = %{${$inclusioncache}{$fullpath}};
 
   my $inclusionregex = qr/^\s*\@
-    ([^\n:]+)                     # Filename.
+    ([^\n:]+)?                    # Filename (self-reference if omitted).
     (?::([^\n:]+?))?              # Optional keywords.
     [^\S\n\r]*                    # Ignore trailing whitespace.
     (?::(.*))?                    # Optional substitutions.
@@ -515,6 +515,8 @@ sub do_inclusion_substitutions(\$$)
 # and performs the substitutions specified in $substitutions according
 # to the syntax of the @ directive. \%sections is the file containing
 # the reference to be expanded, for back references when necessary.
+# If $ftitle is empty, then use \%sections itself to resolve the
+# reference.
 sub get_loadtime_inclusion(\%$$$$$$$)
 {
   my ($sections, $basedir, $lang, $ftitle, $section, $substitutions, $callerfname) = @_;
@@ -527,7 +529,9 @@ sub get_loadtime_inclusion(\%$$$$$$$)
     $ftitle =~ s/(C[23])(?!p)/$1p/g;
   }
   
-  my $inclfile = setupstring($basedir, $lang, "$ftitle.txt", 'resolve@' => 0);
+  # Load the file to resolve the reference; if none specified, it's a
+  # self-reference.
+  my $inclfile = $ftitle ? setupstring($basedir, $lang, "$ftitle.txt", 'resolve@' => 0) : $sections;
 
   if ($version !~ /Trident/i && $section =~ /Gregem/i && (my ($plural, $class, $name) = papal_commem_rule(${$sections}{'Rule'})))
   {
