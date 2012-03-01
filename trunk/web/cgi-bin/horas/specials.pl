@@ -56,7 +56,7 @@ sub specials {
     @ite = split(' ', $ite); 
 
     if ($rule =~ /Omit.*? $ite[0]/i && !(($hora =~ /Laudes/i || ($hora =~ /Vespera/i && $winner =~ /C9/i)) && 
-	    $rule =~ 'Capitulum Versum 2' && $item =~ /Versum/i )) { 
+	    $rule =~ 'Capitulum Versum 2' && $item =~ /Capitulum/i )) { 
       $skipflag = 1;
       if ($item =~ /incipit/i && $version !~ /(1955|1960)/) {$comment = 2; setbuild1($ite, 'limit');}
       else {$comment = 1; setbuild1($label, 'omit');}
