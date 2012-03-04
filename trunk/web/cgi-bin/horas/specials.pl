@@ -70,6 +70,13 @@ sub specials {
       next;
     }
 
+    # Prelude pseudo-item. Include it if it exists; otherwise drop it
+    # entirely.
+    if ($item =~ /Prelude/i) {
+      push(@s, $w{"Prelude $hora"}) if exists($w{"Prelude $hora"});
+      next;
+    }
+
     if ($rule =~ /Ave only/i && $item =~ /incipit/i) {
       setcomment($label, 'Preces', 2, $lang);
       while ($t[$tind] !~  /^\s*\#/) { 	
