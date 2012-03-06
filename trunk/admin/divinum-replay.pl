@@ -28,6 +28,12 @@ Options:
 --[no]baulk           Stop reporting differences if the observance doesn't match [default on]
 --[no]decode          Do all comparisons in the same encoding [default on]
                       When on, results are reported in UTF-8.
+--failures=FILENAME   Write to FILENAME a list of files of tests that failed
+                      (one test filename per line). If no test fails, an
+                      empty file will be written.
+--tests=FILENAME      Read names of test(s) from FILENAME (one test filename
+                      per line). These tests will be added to any specified
+                      directly on the command line. This flag can be repeated.
 --update              Update the contents of each FILE... to match current revisions
                       Doesn't report any differences.  
                       This option excludes --filter= and --url=.
@@ -67,6 +73,8 @@ sub title_hash($);
 my $filter = '';
 my $update;
 my $new_base_url;
+my $failures_filename;
+my @tests_filenames;
 my $baulk = 1;
 my $decode = 1;
 
@@ -79,6 +87,8 @@ GetOptions(
     'baulk!' => \$baulk,
     'decode!' => \$decode,
     'filter=s' => \$filter,
+    'failures=s' => \$failures_filename,
+    'tests=s' => \@tests_filenames,
     'update' => \$update
 ) or die $USAGE;
 
@@ -88,12 +98,15 @@ if ( $decode )
     binmode STDERR, ':utf8';
 }
 
-die "Do not specify --update with other options.\n" if $update && ($new_base_url || $filter);
+die "Do not specify --update with other options.\n" if $update && ($new_base_url || $filter || $failures_filename);
 
 unless ( $update )
 {
     $new_base_url = $ENV{DIVINUM_OFFICIUM_URL} unless $new_base_url;
     $new_base_url = 'http://divinumofficium.com' unless $new_base_url;
+    if ( $failures_filename && ! open FAILURES, ">$failures_filename" ) {
+      die "Cannot write to $failures_filename";
+    }
 }
 
 my @filter = split(',', $filter);
@@ -110,9 +123,22 @@ if ( !$decode && grep /-accents/, @filter )
     print STDERR "warning: ignoring -accents when specified with --nodecode\n";
 }
 
-die "Specify at least one FILE.\n" unless @ARGV;
+# Start with test files named directly on command line.
+my @testfiles = @ARGV;
 
-foreach my $file ( @ARGV )
+# Add tests from each file of test filenames given on command line.
+foreach my $tests_filename (@tests_filenames) {
+  open IN, "<$tests_filename" || die "Cannot read $tests_filename";
+  while (<IN>) {
+    chomp;
+    push @testfiles, $_;
+  }
+  close IN;
+}
+
+die "Specify at least one FILE.\n" unless @testfiles;
+
+foreach my $file ( @testfiles )
 {
     if ( open IN, "<$file" )
     {
@@ -361,6 +387,9 @@ foreach my $file ( @ARGV )
                     DIFF: while ( $diff->Next() )
                     {
                         next if $diff->Same();
+                        if ($failures_filename && !$printed) {
+                          print FAILURES "$file\n";
+                        }
                         print "\n$new_url\n" unless $printed ++;
                         my @old = $diff->Items(1);
                         my @new = $diff->Items(2);
@@ -425,6 +454,7 @@ foreach my $file ( @ARGV )
         next;
     }
 }
+close FAILURES;
 
 # This procedure converts its argument into internal form and split it into lines
 # using a guessing procedure.
