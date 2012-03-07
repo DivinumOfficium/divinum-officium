@@ -298,6 +298,7 @@ sub setupstring($$$%)
     [^\S\n\r]*                    # Ignore trailing whitespace.
     (?::(.*))?                    # Optional substitutions.
     $
+    \n?                           # Eat up to one newline.
     /mx;
   
   # Do whole-file inclusions.
@@ -506,7 +507,7 @@ sub setupstring_parse_file($$$)
 sub do_inclusion_substitutions(\$$)
 {
   my ($text, $substitutions) = @_;
-  eval "\$\$text =~ s'$1'$2'$3" while ($substitutions =~ m{s/([^/]*)/([^/]*)/([gi]*)}g);
+  eval "\$\$text =~ s'$1'$2'$3" while ($substitutions =~ m{s/([^/]*)/([^/]*)/([gism]*)}g);
 }
 
 
@@ -540,7 +541,8 @@ sub get_loadtime_inclusion(\%$$$$$$$)
   }
   else
   {
-    $text = ${$inclfile}{$section} if (exists ${$inclfile}{$section});
+    # Get text from reference, less any trailing blank lines.
+    ($text = ${$inclfile}{$section}) =~ s/\n+$/\n/s if (exists ${$inclfile}{$section});
   }
   
   if ($text)
