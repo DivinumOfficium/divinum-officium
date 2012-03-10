@@ -10,11 +10,9 @@ Capitulum Versum 2;
 Psalmi Dominica;
 
 [Ant Matutinum]
-Ego sum qui sum, * et consilium meum non est cum impiis, sed in lege Domini voluntas mea est, alleluia;;1
-Postulavi Patrem meum, * alleluia: dedit mihi Gentes, alleluia, in hereditatem, alleluia;;2
-Ego dormivi, * et somnum cepi: et exsurrexi, quoniam Dominus suscepit me, alleluia, alleluia;;3
-V. Gavisi sunt discipuli, alleluia.
-R. Viso Domino, alleluia.
+@Tempora/Pasc0-0::s/^V\..*//sm
+V. Gavísi sunt discípuli, allelúja.
+R. Viso Dómino, allelúja.
 
 [Lectio1]
 Lectio sancti Evangelii secundum Joannem.
@@ -26,32 +24,33 @@ Homilia sancti Gregorii Papae.
 Lectio sancti Evangelii, quae modo in auribus vestris lecta est, fratres mei, quaestione animum pulsat, sed pulsatione sua vim discretionis indicat. Quaeri etenim potest, cur Petrus, qui piscator ante conversionem fuit, post conversionem ad piscationem rediit: et cum Veritas dicat: Nemo mittens manum suam ad aratrum, et aspiciens retro, aptus est regno Dei: cur repetiit quod dereliquit? Sed si virtus discretionis inspicitur, citius videtur: quia nimirum negotium, quod ante conversionem sine peccato exstitit, hoc etiam post conversionem repetere culpa non fuit.
 
 [Responsory1]
-R. Ecce vicit leo de tribu Juda, radix David, aperire librum, et solvere septem signacula ejus:
-* Alleluia, alleluia, alleluia.
-V. Dignus est Agnus, qui occisus est, accipere virtutem, et divinitatem, et sapientiam, et fortitudinem, et honorem, et gloriam, et benedictionem.
-R. Alleluia, alleluia, alleluia.
+R. Ecce vicit leo de tribu Juda, radix David, aperíre librum, et sólvere septem signácula ejus:
+* Allelúja, allelúja, allelúja.
+V. Dignus est Agnus, qui occísus est, accípere virtútem, et divinitátem, et sapiéntiam, et fortitúdinem, et honórem, et glóriam, et benedictiónem.
+R. Allelúja, allelúja, allelúja.
 
 [Lectio2]
 Nam piscatorem Petrum, Matthaeum vero telonearium scimus: et post conversionem suam ad piscationem Petrus rediit, Matthaeus vero ad telonei negotium non resedit: quia aliud est, victum per piscationem quaerere, aliud autem telonei lucris pecunias augere. Sunt enim pleraque negotia, quae sine peccatis exhiberi aut vix, aut nullatenus possunt. Quae ergo ad peccatum implicant, ad haec necesse est, ut post conversionem animus non recurrat.
 
 [Responsory2]
-R. Ego sum vitis vera, et vos palmites:
-* Qui manet in me, et ego in eo, hic fert fructum multum, alleluia, alleluia.
-V. Sicut dilexit me Pater, et ego dilexi vos.
-R. Qui manet in me, et ego in eo, hic fert fructum multum, alleluia, alleluia.
+R. Ego sum vitis vera, et vos pálmites:
+* Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.
+V. Sicut diléxit me Pater, et ego dilexi vos.
+R. Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.
 &Gloria
-R. Qui manet in me, et ego in eo, hic fert fructum multum, alleluia, alleluia.
+R. Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.
 
 [Lectio3]
 Quaeri etiam potest, cur discipulis in mari laborantibus, post resurrectionem suam Dominus in littore stetit, qui ante resurrectionem suam coram discipulis in fluctibus maris ambulavit. Cujus rei ratio festine cognoscitur, si ipsa, quae tunc inerat, causa pensetur. Quid enim mare, nisi praesens saeculum signat, quod se casuum tumultibus, et undis vitae corruptibilis illidit? Quid per soliditatem littoris, nisi illa perpetuitas quietis aeternae figuratur? Quia ergo discipuli adhuc fluctibus mortalis vitae inerant, in mari laborabant: quia autem Redemptor noster jam corruptionem carnis excesserat, post resurrectionem suam in littore stabat.
 &teDeum
 
 [Ant 2]
-Mittite in dexteram * navigii rete, et invenietis, alleluia.
+Míttite in déxteram * navígii rete, et inveniétis, allelúja.
 
 [Oratio]
-Deus, qui nos resurrectionis Dominicae annua solemnitate laetificas: concede propitius; ut per temporalia festa quae agimus, pervenire ad gaudia aeterna mereamur.
+Deus, qui nos resurrectiónis Domínicæ ánnua solemnitáte lætíficas: concéde propítius; ut per temporália festa quæ ágimus, perveníre ad gaúdia ætérna mereámur.
 $Per eumdem
 
 [Ant 3]
-Dixit Jesus * discipulis suis: Afferte de piscibus, quos prendidistis nunc. Ascendit autem Simon Petrus, et traxit rete in terram plenum magnis piscibus, alleluia.
+Dixit Jesus * discípulis suis: Afférte de píscibus, quos prendidístis nunc. Ascéndit autem Simon Petrus, et traxit rete in terram plenum magnis píscibus, allelúja.
+
