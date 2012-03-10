@@ -702,7 +702,7 @@ sub replaceNpb {
 
 sub Gloria {
   my $lang = shift;	 
-  if ($dayname[0] =~ /Quad[56]/i && $rule !~ /Requiem gloria/) {return "";}
+  if (DeTemporePassionis() && $rule !~ /Requiem gloria/) {return "";}
   my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
   if ($rule =~ /Requiem gloria/i) {return $prayer{Requiem};}
   return $prayer{'Gloria'};    
@@ -760,7 +760,7 @@ sub Vidiaquam {
 }
 
 sub Introibo {
-  if ($votive =~ /Defunct/ || $dayname[0] =~ /Quad[5-6]/) {push(@s, "!omit. psalm"); return 1;}
+  if ($votive =~ /Defunct/ || DeTemporePassionis()) {push(@s, "!omit. psalm"); return 1;}
   return 0;
 }
 
@@ -1052,5 +1052,15 @@ sub Ultimaev {
   }
   
   return $t;
+}
+
+sub DeTemporePassionis
+{
+	our (@dayname, $winner, %winner);
+
+	# We need a special check for the Seven Sorrows since this is
+	# currently implemented as temporal, despite actually being
+	# sanctoral. TODO: Fix this.
+	return $dayname[0] =~ /Quad[56]/i && $winner =~ /Tempora/i && $winner{'Rank'} !~ /Septem Dolorum/i;
 }
 
