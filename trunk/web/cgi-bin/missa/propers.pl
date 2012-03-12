@@ -63,10 +63,19 @@ sub specials {
 	  } else {next;}
     }
 
-    if ($item =~/^\s*#(.*)/) {
+    my $section_regex = qr/^\s*#\s*(.*)/;
+    if ($item =~ $section_regex) {
       $label = $1;
-      $label = translate_label($label, $lang);	
-      push (@s, "#$label");	
+
+      if ($rule =~ /omit.*\b$label\b/i) {
+        # Skipped omitted section
+        $tind++ while ($tind < @t && $t[$tind] !~ $section_regex);
+      }
+      else {
+        $label = translate_label($label, $lang);
+        push (@s, "#$label");
+      }
+      
       next;
     }
 
