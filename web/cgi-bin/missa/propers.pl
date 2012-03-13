@@ -1041,7 +1041,7 @@ sub Ultimaev {
   my $lang = shift;
   my ($t, %p);
 
-  if ($version =~ /1960/ && $rule =~ /no Ultima Evangelium/i) {return;}
+  if ($rule =~ /no Ultima Evangelium/i) {return;}
   if ($version =~ /(1955|1960)/ || !exists($commemoratio{Evangelium})) {
     %p =%{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
 	$t = $p{'Ultima Evangelium'};
