@@ -68,8 +68,14 @@ sub specials {
       $label = $1;
 
       if ($rule =~ /omit.*\b$label\b/i) {
-        # Skipped omitted section
+        # Skip omitted section
         $tind++ while ($tind < @t && $t[$tind] !~ $section_regex);
+      }
+      elsif ($label =~ /^\s*Evangelium\s*$/ && $rule =~ /^\s*Passio\s*$/m) {
+        # Special form for the Passion. What ceremony there is is
+	# embedded in the data file itself.
+	push(@s, '#' . translate_label($label, $lang), '&evangelium');
+        $tind++ while ($tind < @t && $t[$tind] !~ /^\s*$/);
       }
       else {
         $label = translate_label($label, $lang);
@@ -877,10 +883,14 @@ sub graduale {
 
 sub evangelium {
   my $lang = shift;
-  my $t = getitem('Evangelium', $lang); 
+  my $t = getitem('Evangelium', $lang);
+
+  our ($rule, $version);
+
   if ($t && $t !~ /^\s*$/) {
-    $t =~ s/\n/\n\$Gloria tibi\n/;
-    $t = "v. " . $t . "\$Laus tibi\n";
+    $t = "v. $t";
+    $t =~ s/\n/\n\$Gloria tibi\n/ unless ($rule =~ /^\s*Passio\s*$/m);
+    $t .= "\$Laus tibi\n" unless ($rule =~ /^\s*Passio\s*$/m && $version =~ /1955|1960/);
   }
 
   if ($version =~ /(1955|1960)/ && $rule =~ /Maundi/i) {
