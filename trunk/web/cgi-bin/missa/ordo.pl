@@ -123,125 +123,165 @@ sub getunit {
 #resolves $name &name references and special characters 
 #retuns the to be listed text
 sub resolve_refs {
-  my $t = shift;        
-  my $lang = shift;	 
-  my @t = split("\n", $t); 	
+  my $t = shift;
+  my $lang = shift;
+  my @t = split("\n", $t);
 
-  my $t = '';	
- 				
+  my $t = '';
+
   if ($t[0] =~ /(omit|elmarad)/i) {$t[0] =~ s/^\s*\#/\!x\!/;}
   else {$t[0] =~ s/^\s*\#/\!\!/;}
 
 
-  #cycle by lines 
+  #cycle by lines
   my $it;
-  for ($it = 0; $it < @t; $it++) {
+  my $line_prefix;
+  for ($it = 0; $it < @t; $it++)
+  {
     $line = $t[$it];
 
+    # Should this line be joined to the next? Strip off the continuation
+    # character as we check.
+    my $line_continues = ($line =~ s/\s*~\s*$//);
+
+    # The first batch of transformations are performed on the current
+    # input line only.
+
     #$ and & references
-    if ($line !~ /(callpopup|rubrics)/i && $line =~ /[\$\&]/) {     #??? was " /[\#\$\&]/)   
-      $line =~ s/\.//g;   
+    if ($line !~ /(callpopup|rubrics)/i && $line =~ /[\$\&]/)  #??? was " /[\#\$\&]/)
+    {
+      $line =~ s/\.//g;
       $line =~ s/\s+$//;
-      $line =~ s/^\s+//;   
+      $line =~ s/^\s+//;
       #prepares reading the part of common w/ antiphona
-	    if ($line =~ /psalm/ && $t[$it -1] =~ /^\s*Ant\. /i) {   
-	      $line = expand($line, $lang, $t[$it - 1]);  
-	    } else {$line = expand($line, $lang);}  
-                                           
-    if ((!$Tk && $line !~ /\<input/i) || ($Tk && $line !~ /\% .*? \%/))
-       {$line = resolve_refs($line, $lang);}  #for special chars
-    } 
-	  #cross
-    $line = setcross($line);   
+      if ($line =~ /psalm/ && $t[$it -1] =~ /^\s*Ant\. /i)
+      {
+        $line = expand($line, $lang, $t[$it - 1]);
+      }
+      else {$line = expand($line, $lang);}
+
+      if ((!$Tk && $line !~ /\<input/i) || ($Tk && $line !~ /\% .*? \%/))
+        {$line = resolve_refs($line, $lang);}  #for special chars
+    }
+    #cross
+    $line = setcross($line);
 
     #red prefix
-	  if ($line =~ /^\s*(R\.|V\.|S\.|P\.|M\.|A\.|O\.|C\.|D\.|Benedictio\.* |Absolutio\.* |Ant\. |Ps\. )/) {
-   	    my $h = $1;
-        my $l = $';
-        if ($h =~ /(Benedictio|Absolutio)/) {	 
-	      my $str = $1;		   
-          if ($lang !~ /Latin/i) {$str = $translate{$str};} 
-		  $h =~ s/(Benedictio|Absolutio)/$str/; 
-	    }
-        $line = setfont($redfont, $h) . $l;
-      }   
-    #Quad6 Gospels
-	 if ($winner =~ /Quad6/) {
-	  my $rest = $line;
-	  $line = '';
-	  while ($rest =~ /( [A-Z]\. )/  && $` !~ /,,\s*$/) {
-	    $rest = $';
-	    $line .= $` . setfont($redfont, $1); 
+    if ($line =~ /^\s*(R\.|V\.|S\.|P\.|M\.|A\.|O\.|C\.|D\.|Benedictio\.* |Absolutio\.* |Ant\. |Ps\. )/)
+    {
+      my $h = $1;
+      my $l = $';
+
+      if ($h =~ /(Benedictio|Absolutio)/)
+      {
+        my $str = $1;
+        if ($lang !~ /Latin/i) {$str = $translate{$str};}
+        $h =~ s/(Benedictio|Absolutio)/$str/;
       }
-	  $line .= $rest;
+
+      $line = setfont($redfont, $h) . $l;
+    }
+    #Quad6 Gospels
+    if ($winner =~ /Quad6/)
+    {
+      my $rest = $line;
+      $line = '';
+      while ($rest =~ /( [A-Z]\. )/  && $` !~ /,,\s*$/)
+      {
+        $rest = $';
+        $line .= $` . setfont($redfont, $1);
+      }
+      $line .= $rest;
     }
 
-	  #consecration words
-	  if ($line =~ /\s*\!\[\:(.*?)\:\]/) {
-	    $line = $1;
-		my $cfont = $redfont;
-		$cfont =~ s/red/blue/i;
-		$line = setfont($cfont, $line);
-	  
-	  } elsif ($line =~ /^\s*\!\!\!/) { 
-	    $line = $';
-		my $cfont = $redfont;
-		$cfont =~ s/red/black/i;
-		$line = setfont($cfont, $line);
-	  
-	  #small omitted comment
-	  } elsif ($line =~ /^\s*\!x\!\!/) {
-	    $l = $';
-		$line = setfont($smallfont, $l); 
-	  }
-
-	  #small omitted title
-	  elsif ($line =~ /^\s*\!x\!/) {
-	    $l = $';
-		$line = setfont($smallblack, $l);
-	  }
-	  
-	  #large chapter title
-	  elsif ($line =~ /^\s*\!\!/) {  
-      my $l = $';              
+    #consecration words
+    if ($line =~ /\s*\!\[\:(.*?)\:\]/)
+    {
+      $line = $1;
+      my $cfont = $redfont;
+      $cfont =~ s/red/blue/i;
+      $line = setfont($cfont, $line);
+    }
+    elsif ($line =~ /^\s*\!\!\!/)
+    {
+      $line = $';
+      my $cfont = $redfont;
+      $cfont =~ s/red/black/i;
+      $line = setfont($cfont, $line);
+    }
+    #small omitted comment
+    elsif ($line =~ /^\s*\!x\!\!/)
+    {
+      $l = $';
+      $line = setfont($smallfont, $l);
+    }
+    #small omitted title
+    elsif ($line =~ /^\s*\!x\!/)
+    {
+      $l = $';
+      $line = setfont($smallblack, $l);
+    }
+    #large chapter title
+    elsif ($line =~ /^\s*\!\!/)
+    {
+      my $l = $';
       my $suffix = '';
-      if ($l =~ /\{.*?\}/) {
-        $l =~ s/(\{.*?\})//; 
-  	    $suffix = $1;
-		    $suffix = setfont($smallblack, $suffix); 
+      if ($l =~ /\{.*?\}/)
+      {
+        $l =~ s/(\{.*?\})//;
+        $suffix = $1;
+        $suffix = setfont($smallblack, $suffix);
       }
-      $line = setfont($largefont, $l) . " $suffix\n";   
-    } 
-	
-	#red line
-	elsif ($line =~ /^\s*\!/) {
+      $line = setfont($largefont, $l) . " $suffix\n";
+    }
+    #red line
+    elsif ($line =~ /^\s*\!/)
+    {
       $l = $';
       $line = setfont($redfont, $l);
     }
 
-	  #first letter red 
-	  if ($line =~ /^\s*r\.\s*/) {
-	    $line = $';
-	    $line = setfont($largefont, substr($line, 0, 1)) . substr($line, 1);
-	  }
-	
-	  # first letter initial
-	  if ($line =~ /^(\s*)v\.\s*/ || $line =~ /(\{\:.*?\:\}\s*)\v.\s*/) {
-	    my $prev = $1;
-      $line = $';
-	    $line = $prev . setfont($initiale, substr($line, 0, 1)) . substr($line, 1);
-	  }
 
-  #connect lines marked by tilde, or but linebrak
-	if ($line =~ /\~/) {$line =~ s/\~//g; $t .= "$line ";}
-	else {$t .= "$line<BR>\n";}
+    # Prepend any previous lines that tilde-connect to the current line.
+    $line = "$line_prefix\n$line" if ($line_prefix);
+
+
+    # The remaining transformations are peformed on the whole line as
+    # built up from tilde-connected lines. Critically, these are
+    # performed once for each line of input, so they should be
+    # idempotent.
+
+    # First letter red.
+    $line =~ s/^\s*r\.\s*(.)(.*)/setfont($largefont, $1) . $2/em;
+
+    # First letter initial.
+    $line =~
+      s/
+        (^|\{\:.*?\:\})      # Beginning of line or {::} construction.
+        \s*v\.\s*(.)(.*)     # 'v.' plus a letter plus the rest.
+      /
+        $1 . setfont($initiale, $2) . $3
+      /emx;
+
+
+    # Connect lines marked by tilde.
+    if ($line_continues && $it < $#t)
+    {
+      $line_prefix = $line;
+    }
+    else
+    {
+      $line_prefix = '';
+      $t .= "$line<BR>\n";
+    }
+
   }  #line by line cycle ends
 
   #removes occasional double linebreaks
   $t =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;  
   $t =~ s/<\/P>\s*<BR>/<\/P>/g;   
   return $t;
- }
+}
 
  #*** sub expand($line, $lang, $antline)
  # for & references calls the sub

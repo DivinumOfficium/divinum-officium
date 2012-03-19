@@ -755,10 +755,12 @@ sub getitem {
   #}
   
   if ($w && $w !~ /^\s*$/) {
-    while ($w =~ /\((.*?)\)/s) { 
+    while ($w =~ /(?<!\() \( ([^()]*?) \) (?!\))/sx) {
 	  my $s = setfont($smallfont, $1); 
 	  $w = "$`$s$'";
     }
+    $w =~ s/\(\(/(/g;
+    $w =~ s/\)\)/)/g;
   }
 
   return $w;
