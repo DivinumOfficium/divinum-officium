@@ -1,0 +1,32 @@
+[Rank]
+In Vigilia Assumptionis B.M.V.;;Simplex;;1.5;;
+
+[Rank1960]
+In Vigilia Assumptionis B.M.V.;;Duplex II classis;;5;;
+
+[Rule]
+Responsory Feria
+Versum Feria
+Preces Feriales
+Laudes 2
+no Te Deum
+
+[Lectio1]
+@Commune/C11:Lectio7
+
+[Lectio2]
+@Commune/C11:Lectio8
+
+[Lectio3]
+@Commune/C11:Lectio9
+
+[Commemoratio]
+!Commemoratio S. Eusebii.
+@Commune/C4:Oratio proper
+$Oremus
+Deus, qui nos beáti Eusébii Confessóris tui ánnua solemnitáte lætíficas: concéde propítius; ut, cujus natalítia cólimus, per ejus ad te exémpla gradiámur.  
+$Per Dominum.
+
+[Oratio]
+Deus, qui virginalem aulam beatæ Mariæ, in qua habitares, eligere dignatus es: da, quaesumus; ut, sua nos defensione munitos, iucundos facias suae interesse festivitati:
+$Qui vivis
