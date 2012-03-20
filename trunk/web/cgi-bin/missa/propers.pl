@@ -1022,18 +1022,21 @@ sub postcommunio {
   return $str;
 }
 
-sub itemissaest {
-  my $lang = shift; 
+sub itemissaest
+{
+  our ($version, $rule);
+
+  my $lang = shift;
   my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
   my $text = $prayer{'IteMissa'};
-  my @text = split("\n", $text);       
-  my $flag = gloriflag();  
-  if (!$flag && $dayname[0] =~ /Pasc0/i) {$text = "$text[2]\n$text[3]"}
-  elsif (!$flag) {$text = "$text[0]\n$text[1]"} 
-  elsif ($votive =~ /Defunct/i) {$text = "$text[6]\n$text[7]"}
-  elsif ($version =~ /1960/i) {$text = "$text[0]\n$text[1]"}
-  else {$text = "$text[4]\n$text[5]"}
-  return $text;
+  my @text = split("\n", $text);
+  my $benedicamus = (gloriflag() && $version !~ /1960/) || ($rule =~ /^\s*Benedicamus Domino\s*$/mi);
+
+  return
+    ($dayname[0] =~ /Pasc0/i) ? "$text[2]\n$text[3]" : # Ite, missa est, alleluia, alleluia.
+    ($votive =~ /Defunct/i)   ? "$text[6]\n$text[7]" : # Requiescant in pace.
+    ($benedicamus)            ? "$text[4]\n$text[5]" : # Benedicamus Domino.
+    "$text[0]\n$text[1]";                              # Ite, missa est.
 }
 
 sub placeattibi {
