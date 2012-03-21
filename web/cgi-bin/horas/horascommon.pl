@@ -690,7 +690,7 @@ sub getrank {
 	if ($version =~ /1960/ && $vespera == 1 && $rank >= 6 && $comrank < 5) 
     {$commemoratio = ''; $srank[2] = 0;}
 
-  if (transfered($sday) && $crank !~ /$srank/) {  
+  if (transfered($vflag ? $nday : $sday) && $crank !~ /$srank/) {  
      $dayname[2] = "Transfer $srank[0]";  
      $commemoratio = '';
     
