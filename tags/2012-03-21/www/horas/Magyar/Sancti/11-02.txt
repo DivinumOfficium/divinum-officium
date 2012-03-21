@@ -1,0 +1,326 @@
+[Rank]
+Commemoratio Omnium Fidelium Defunctorum;;Duplex;;3;;ex C9
+
+[RankNewcal]
+Commemoratio Omnium Fidelium Defunctorum;;Duplex solemnity;;6;;ex C9
+
+[Rank1960]
+Commemoratio Omnium Fidelium Defunctorum;;Duplex I. classis;;6;;ex C9
+
+[Rule]
+ex Commune/C9
+Psalmi Dominca
+Antiphonas horas
+Special Conclusion
+Capitulum Versum 2;
+Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium ;
+Limit Benedictiones Oratio
+Requiem gloria
+9 lectiones
+Responsory9
+
+[Ant Vespera]
+I will walk before the Lord * in the land of the living.;;114
+Woe is me! O Lord, * that my sojourn is long;;119
+The Lord shall keep thee from all evil, * the Lord shall keep thy soul;;120
+If Thou, Lord, shouldest mark iniquities, * O Lord, who shall stand;;129
+O Lord, forsake not * the works of thine own hands;;137
+
+[Initial]
+$Pater noster
+$Ave Mária
+
+[Special Completorium]
+$Confiteor
+$Misereatur
+$Indulgentiam
+
+&psalm(122)
+
+&psalm(141)
+
+&psalm(142)
+
+&psalm(233)
+
+&special('Oratio mortuorum1', 'Magyar')
+
+&special('Conclusio', 'Latin')
+
+[Oratio Matutinum]
+&Dominus_vobiscum
+_
+$Oremus
+v. Isten ki a mindenség teremtõje és megvátója vagy bocsásd meg szolgáid~
+és szolgálóid vétkeit, és könyörgéseink által add meg nekik a megbocsájtást~
+amire mindig vágyakoztak
+$Qui vivis
+
+[Oratio mortuorum1]
+&pater_noster
+_
+V. From the gates of the grave.
+R. Deliver their souls, O Lord!
+V. May they rest in peace.
+R. Amen.
+V. Uram hallgasd meg könyörgésünket.
+R. És kiáltásunk jusson elõdbe
+&Dominus_vobiscum2
+_
+v. Könyörögjunk
+v. Propitiare, quesumus Domine, animabus omnium famulorum famularumque tuarum, pro quibus majestatem tuam suppliciter exoramus, ut per haec piae deprecationis officia, pervenire mereantur ad requiem sempiternam.
+$Per Dominum 
+
+[Oratio mortuorum]
+&pater_noster
+_
+V. A pokol kapujátol
+R. Mentsd meg Uram lelküket
+V. Nyugodjanak békességben
+R.Ámen
+V. Uram hallgasd meg könyörgésünket.
+R. És kiáltásunk jusson elõdbe
+&Dominus_vobiscum2
+_
+$oremus 
+v. Isten ki a mindenség teremtõle és megvátója vagy bocsasd meg szolgaid~
+és szolgálóid vétkeit, és könyörgéseink által add meg nekik a megbocsájtást~
+amire mindig vágyakoztak
+$Qui vivis
+
+[Oratio mortuorum2]
+&pater_noster
+_
+V. From the gates of the grave.
+R. Deliver their souls, O Lord!
+V. May they rest in peace.
+R. Amen.
+V. Uram hallgasd meg könyörgésünket.
+R. És kiáltásunk jusson elõdbe
+&Dominus_vobiscum2
+_
+v. Könyörögjunk
+We suppliants, O Lord, pour forth our prayers for the souls of all thy servants and handmaids, that thou wouldst mercifully pardon whatsoever they have committed through human frailty, and graciously vouchsafe to deliver them from the pains of purgatory.
+$Dominum
+
+[Conclusio]
+&Gloria
+V. Nyugodjanak békességben
+R. Ámen
+
+[Lectio1]
+!Job 7:16-21
+16 Hagyj hát magamra, Uram, éltem egy lehelet.
+17 Vajon mi az ember, hogy oly nagyra tartod, arra méltatod, hogy törõdj vele.
+18 Hisz meglátogatod minden áldott reggel, és próbára teszed minden pillanatban.
+19 Mily rég nem veszed le tekinteted rólam! Arra sem hagysz idõt, hogy nyálam~
+lenyeljem.
+20 Vétkeztem? Mit tettem? Mondd, emberek õre! Támadó kedvednek miért vagyok~
+céltábla? Miért vagyok terhedre?
+21 Miért nem bocsátod meg a bûneimet, vétkem fölött miért nem hunysz szemet?
+
+[Lectio2]
+!Job 14:1-6
+1 Minden ember, aki anyától született, szegény a napokban, de jóllakik gonddal.
+2 Mint virág kinyílik, azután elhervad, eltûnik, mint árnyék, nincsen maradása.
+3 Nyitva tartod te is szemedet fölötte, s bírói székedhez viszed ítéletre.
+4 Tisztátalantól vajh születhet-e tiszta? Nem, egyetlen egy sem!
+5 Hogyha már elõre kimérted napjait, hónapjai számát meghatároztad, s kijelölted~
+célját, amit túl nem léphet,
+6 akkor ne nézz rá, hagyd inkább magára, amíg le nem tölti idejét a szolga.
+
+[Lectio3]
+!Job 19:20-27
+20 És a bõröm alatt elpusztul a húsom, csontjaim csupaszok, mint valami fogak.
+21 Könyörüljetek meg rajtam, barátaim, mert utolért az Istennek keze.
+22 Miért üldöztök ti is, akárcsak az Isten? Nem tudtok már végre jóllakni~
+húsommal?
+23 Ó, bárcsak fölírná szavaim valaki, följegyezné õket egy táblára!
+24 Ó, bár vasvésõvel, aztán íróónnal örökre bevésnék õket a sziklába!
+25 Tudom jól, él ügyem szószólója, õ lép majd föl utoljára a földön.
+26 Hogyha fölébredek, maga mellé állít, és meglátom még testembõl az Istent.
+27 Látni fogom, s õ a pártomon lesz, kit szemem lát, az nem lesz majd idegen,~
+vágyódás tölti el veséimet.
+
+[Lectio4]
+Szent Agioston Halottakról való gondoskodás kõnyvébõl
+!Cap et 3
+If this be true, doubtless also the providing for the interment of bodies a~
+place at the Memorials of Saints, is a mark of a good human affection towards~
+the remains of ones friends. Yet it follows not that the bodies of the departed~
+are to be despised and flung aside, and above all of just and faithful men,~
+which bodies as organs and vessels to all good works their spirit has holily~
+used. For if a father's garment and ring, and whatever such like, is the more~
+dear to those whom they leave behind, the greater their affection is towards~
+their parents, in no wise are the bodies themselves to be spurned, which truly~
+we wear in more familiar and close conjunction than any of our putting on. For~
+these pertain not to ornament or aid which is applied from without, but to the~
+verynature of man. Whence also the funerals of the just men of old were with~
+dutiful piety cared for, and their obsequies celebrated, and sepulture provided:~
+and themselves while living did touching burial or even translation of their~
+bodies give charge to their sons. mandaverunt
+
+[Lectio5]
+!Cap 4
+And when this affection is exhibited to the departed by faithful men who were most dear to them, there is no doubt that it profits them who while living in the body merited that such things should profit them after this life. But even if some necessity should through absence of all facility not allow bodies to be interred, or in such places interred, yet should there be no pretermitting of supplications for the spirits of the dead: which supplications, that they should be made for all in Christian and catholic fellowship departed, even without mentioning of their names, under a general commemoration, the Church has charged herself withal; to the intent that they which lack, for these offices, parents or sons or whatever kindred or friends, may have the same afforded unto them by the one pious mother which is common to all. But if there were lack of these supplications, which are made with right faith and piety for the dead, I account that it should not a whit profit their spirits, howsoever in holy places the lifeless bodies should be deposited.
+
+[Lectio6]
+!Cap 18
+Which things being so, let us not think that to the dead for whom we have a care,~
+any thing reaches save what by sacrifices either of the altar, or of prayers, or~
+of alms, we solemnly supplicate: although not to all for whom they are done be~
+they profitable, but to them only by whom while they live it is obtained that~
+they should be profitable. But forasmuch as we discern not who these be, it is~
+meet to do them for all regenerate persons, that none of them may be passed by~
+to whom these benefits may and ought to reach. For better it is that these~
+things shall be superfluously done to them whom they neither hinder nor help,~
+than lacking to them whom they help. More diligently however does each man these~
+things for his own near and dear friends, in order that they may be likewise~
+done unto him by his. But as for theburying of the body, whatever is bestowed on~
+that, is no aid of salvation, but an office of humanity, according to that~
+affection by which no man ever hates his own flesh. Whence it is fitting that he~
+take what care he is able for the flesh of his neighbor, when he is gone that~
+bare it. And if they do these things who believe not the resurrection of the~
+flesh, how much more are they beholden to do the same who do believe; that so,~
+an office of this kind bestowed upon a body, dead but yet to rise again and to~
+remain to eternity, may also be in some sort a testimony of the same faith?
+
+[Lectio7]
+Szent Pál Apostolnak a Korintusiakhoz írott elsõ levelébõl
+!1 Cor 15:12-22
+12 Ha tehát hirdetjük, hogy Krisztus feltámadt a halálból, hogyan állíthatják~
+némelyek közületek, hogy nincs feltámadás?
+13 Ha nincs feltámadás, akkor Krisztus sem támadt fel.
+14 Ha pedig Krisztus nem támadt fel, nincs értelme a mi tanításunknak, s nincs~
+értelme a ti hiteteknek sem.
+15 Ráadásul még Isten hamis tanúinak is bizonyulunk, mert Istenrõl azt~
+tanúsítjuk, hogy Krisztust feltámasztotta, holott nem támasztotta fel, ha a~
+halottak egyáltalán nem támadnak fel.
+16 Ha ugyanis a halottak nem támadnak fel, akkor Krisztus sem támadt fel.
+17 Ha pedig Krisztus nem támadt fel, semmit sem ér a hitetek, mert még mindig~
+bûneitekben vagytok.
+18 Sõt azok is elvesztek, akik Krisztusban haltak meg.
+19 Ha csak ebben az életben reménykedünk Krisztusban, minden embernél szánalomra~
+méltóbbak vagyunk.
+20 De Krisztus feltámadt a halálból elsõként a halottak közül.
+21 Mivel egy ember idézte elõ a halált, a halottak is egy ember révén támadnak~
+fel.
+22 Amint ugyanis Ádámban mindenki meghal, úgy Krisztusban mindenki életre is~
+kel.
+
+[Lectio8]
+!1 Cor 15:35-44
+35 De - kérdezhetné valaki - hogyan támadnak fel a halottak? Milyen testben~
+jönnek majd elõ?
+36 Ostoba! Amit elvetsz, nem hajt csírát, hacsak el nem rothad.
+37 Amit elvetsz, még nem növény, az csak azután fejlõdik, hanem puszta mag,~
+például búzaszem vagy más egyéb.
+38 Isten testet ad neki tetszése szerint, minden magnak neki megfelelõ testet.
+39 Nem minden test egyforma, hanem más az emberé, más az állaté, más a madáré,~
+más a halé.
+40 S van égi test meg földi test, de másként ragyog az égi, másként a földi.
+41 Más a Nap ragyogása, más a Hold fényessége, más a csillagok tündöklése, sõt~
+az egyik csillag fénye is különbözik a másikétól.
+42 Ilyen a halottak feltámadása is. Romlásra vetik el - romlatlannak támad föl.
+43 Dicstelenül vetik el - dicsõségben támad föl. Erõtlenségben vetik el - erõben~
+támad föl.
+44 Érzéki testet vetnek el - szellemi test támad föl.
+
+[Responsory8]
+R. O Lord, judge me not according to my works; for I have done nothing that can~
+be counted in respect of thee. I beseech thy Majesty therefore, that Thou~
+wouldest
+* Blot out my transgressions, O God.
+V. Lord, wash me thoroughly from mine iniquity and cleanse me from my sin.
+R. Blot out my transgressions, O God.
+[Lectio9]
+!1 Cor 15:51-58
+51 Nos, titkot közlök veletek: Nem halunk ugyan meg mindnyájan, de mindnyájan~
+elváltozunk, hirtelenül,
+52 egy szempillantás alatt, a végsõ harsonaszóra. Amikor az megszólal, a~
+halottak feltámadnak a romlatlanságra, mi pedig elváltozunk.
+53 Ennek a romlandó testnek fel kell öltenie a romlatlanságot, ennek a~
+halandónak a halhatatlanságot.
+54 Amikor a romlandó magára ölti a romlatlanságot, a halandó a halhatatlanságot,~
+akkor teljesedik az Írás szava: A gyõzelem elnyelte a halált.
+55 Halál, hol a te gyõzelmed? Halál, hol a te fullánkod?
+56 A halál fullánkja a bûn, a bûn ereje pedig a törvény.
+57 De legyen hála Istennek, mert õ gyõzelemre segít minket, Jézus Krisztus, a mi~
+Urunk által.
+58 Legyetek tehát állhatatosak és kitartók, szeretett testvéreim! Tegyetek~
+mindig minél többet az Úr ügyéért, hiszen tudjátok, hogy az Úr ügyében való~
+fáradozástok nem hiábavaló.
+
+[Responsory9]
+R. Deliver me, O Lord, from eternal death in that awful day
+* when the heavens and the earth shall be shaken, and Thou shalt come to judge~
+the world by fire.
+V. Quaking and dread take hold upon me, when I look for the coming of the trial~
+and the wrath to come.
+R. When the heavens and the earth shall be shaken.
+V. That day is a day of wrath, of wasteness and desolation, a great day and~
+exceeding bitter.
+R. When Thou shalt come to judge the world by fire.
+$Requiem
+
+[Special Prima]
+&special('Initial', 'Magyar')
+$Credo
+
+&psalm(87)
+
+&psalm(27)
+
+&psalm(31)
+
+&special('Oratio mortuorum2', 'Magyar')
+
+&martyrologium
+
+V. Az igazak emleke örökké el
+R. Ab auditione mala non timebunt
+_
+$Oremus 
+Urunk aki a megbocsájtás Istene vagy és mindenkit üdvözíteni akarsz, add meg kérünk, hogy az e világbol eltávozottak, a Boldogságos mindenkor szeplõtelen szûz Mária kõzbenjárásara engedd hogy szentjeiddel egyûtt eljussanak az õrök üdvösségre. A mi Urunk Jezus Krisztus altal
+E. Amen.
+
+&special('Conclusio', 'Magyar')
+
+[Special Tertia]
+&special('Initial', 'Magyar')
+
+&psalm(37,1,11)
+
+&psalm(37,12,23)
+
+&psalm(55)
+
+&special('Oratio mortuorum', 'Magyar')
+
+&special('Conclusio', 'Magyar')
+
+[Special Sexta]
+&special('Initial', 'Magyar')
+
+&psalm(69)
+
+&psalm(84)
+
+&psalm(85)
+
+&special('Oratio mortuorum', 'Magyar')
+
+&special('Conclusio', 'Magyar')
+
+[Special Nona]
+&special('Initial', 'Magyar')
+
+&psalm(101,1,13)
+
+&psalm(101,14,23)
+
+&psalm(101,24,29)
+
+&special('Oratio mortuorum', 'Magyar')
+
+&special('Conclusio', 'Magyar')
