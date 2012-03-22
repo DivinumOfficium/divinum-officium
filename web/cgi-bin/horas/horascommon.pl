@@ -1643,7 +1643,7 @@ sub papal_antiphon_dum_esset($)
         (?:
             (?:dicitur|dicuntur)(?:\s+semper)?
           |
-            (?:hoc\s+versus\s+)?\omittitur
+            (?:hoc\s+versus\s+)?omittitur
           |
             (?:haec\s+versus\s+)?omittuntur
         )
