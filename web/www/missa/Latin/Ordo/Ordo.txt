@@ -297,6 +297,7 @@ v. Haec commíxtio, et consecrátio Córporis et Sánguinis Dómini nostri Jesu Chris
 v. Agnus Dei, qui tollis peccáta mundi: miserére nobis.
 v. Agnus Dei, qui tollis peccáta mundi: miserére nobis.
 v. Agnus Dei, qui tollis peccáta mundi: dona nobis pacem.
+!&AgnusHook
 
 !*D 
 !In Missis Defunctorum non dicitur miserére nobis, sed ejus loco dona eis requiem, et in tertio additur sempitérnam.
@@ -305,14 +306,16 @@ v. Agnus Dei, qui tollis peccáta mundi: dona eis requiem.
 v. Agnus Dei, qui tollis peccáta mundi: dona eis requiem sempiternam.
 
 !Deinde, junctis manibus super Altare, inclinatus dicit secrete sequentes Orationes:
+!*&CheckQuiDixisti
 v. Dómine Jesu Christe, qui dixísti Apóstolis tuis: Pacem relínquo vobis, pacem meam do vobis: ne respícias peccáta mea, sed fidem Ecclésiæ tuæ; eámque secúndum voluntátem tuam pacifícáre et coadunáre dignéris: Qui vivis et regnas Deus per ómnia saecula sæculórum. Amen.
 
-!*S
+!*&CheckPax
 !Si danda est pax, osculatur Altare, et dans pacem, dicit:
 v. Pax tecum. 
 R. Et cum spíritu tuo.
+
 !*D
-!In Missis Defunctorum non datur pax, neque dicitur præcedens Oratio.
+!In Missis Defunctorum non datur pax, neque dicitur Oratio Domine Jesu Christe, qui dixisti.
 
 v. Dómine Jesu Christe, Fili Dei vivi, qui ex voluntáte Patris, cooperánte Spíritu Sancto, per mortem tuam mundum vivificásti: líbera me per hoc sacrosánctum Corpus et Sánguinem tuum ab ómnibus iniquitátibus meis, et univérsis malis: et fac me tuis semper inhærére mandátis, et a te numquam separári permíttas: Qui cum eódem Deo Patre et Spíritu Sancto vivis et regnas Deus in saecula sæculórum. Amen.
 
@@ -366,7 +369,7 @@ M. Et cum spíritu tuo,
 !*&placeattibi
 v. Pláceat tibi, sancta Trínitas, obséquium servitútis meæ: et præsta; ut sacrifícium, quod óculis tuæ majestátis indígnus óbtuli, tibi sit acceptábile, mihíque et ómnibus, pro quibus illud óbtuli, sit, te miseránte, propitiábile. Per Christum, Dóminum nostrum. Amen.
 
-!*nD
+!*&CheckBlessing
 !Deinde osculatur Altare: et elevatis oculis, extendens, elevans et jungens manus, caputque Cruci inclínans, dicit: 
 v. Benedícat vos omnípotens Deus, 
 !et versus ad  populum, semel tantum benedícens, etiam in Missis sollemnibus; In Missa Pontificali ter benedicitur, ut in Pontificali habetur. Deinde prosequitur: 
@@ -376,6 +379,7 @@ R. Amen.
 !*D
 !In Missis Defunctorum non datur benedíctio, sed dicto Requiéscant in pace, dicit: Pláceat tibi, sancta Trinitas; deinde osculato Altari, legit Evangelium sancti Joannis. 
 
+!*&CheckUltimaEv
 !Deinde Sacerdos in cornu Evangelii, junctis manibus dicit:
 !Et signans signo crucis primum Altare vel librum, deinde se in fronte, ore et pectore, dicit:
 &Ultimaev

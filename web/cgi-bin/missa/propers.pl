@@ -49,6 +49,16 @@ sub specials {
 
     $tind++;
 
+    # Hooks.
+    if ($item =~ /^\s*!&([a-z]+)\s*$/im) {
+      # We use a string as a subroutine reference.
+      no strict refs;
+
+      # Run the hook, and omit this line from the output.
+      &$1();
+      next;
+    }
+
 	if ($item =~ /^\s*!\*/) {
 	  $skipflag = 0;
 	  if ($item =~ /!\*(\&[a-z]+)\s/i) {$skipflag = eval($1);} 
@@ -991,6 +1001,28 @@ sub hancigitur {
   return norubr($t);
 }
 
+sub AgnusHook
+{
+    our (@s, $rule);
+
+    if ($rule =~ /ter miserere/i)
+    {
+      # At revised Holy Thursday Mass, "miserere nobis" is said thrice
+      # at the Agnus Dei.
+      @s[$#s] = @s[$#s - 1];
+    }
+}
+
+# Check whether the prayer "Domine Jesu Christe, qui dixisti" should
+# be omitted.
+sub CheckQuiDixisti { our $votive =~ /Defunct/i || our $rule =~ /no Qui Dixisti/i; }
+
+sub CheckPax { !(our $solemn) || our $votive =~ /Defunct/i || our $rule =~ /no Pax/i; }
+
+sub CheckBlessing { our $votive =~ /Defunct/i || our $rule =~ /no Benedictio/i; }
+
+sub CheckUltimaEv { our $rule =~ /no Ultima Evangelium/i; }
+
 sub communio {
   my $lang = shift;
   return getitem('Communio', $lang);
@@ -1056,7 +1088,6 @@ sub Ultimaev {
   my $lang = shift;
   my ($t, %p);
 
-  if ($rule =~ /no Ultima Evangelium/i) {return;}
   if ($version =~ /(1955|1960)/ || !exists($commemoratio{Evangelium})) {
     %p =%{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
 	$t = $p{'Ultima Evangelium'};
