@@ -184,14 +184,7 @@ sub resolve_refs {
     #Quad6 Gospels
     if ($winner =~ /Quad6/)
     {
-      my $rest = $line;
-      $line = '';
-      while ($rest =~ /( [A-Z]\. )/  && $` !~ /,,\s*$/)
-      {
-        $rest = $';
-        $line .= $` . setfont($redfont, $1);
-      }
-      $line .= $rest;
+      $line =~ s/(\b[A-Z]\.)/setfont($redfont, $1)/eg;
     }
 
     #consecration words
