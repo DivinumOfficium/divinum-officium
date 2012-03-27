@@ -1287,7 +1287,7 @@ sub getcommemoratio {
 
 
   if ($version =~ /1960/ && $hora =~ /Vespera/i && $ind == 3 && $rank >= 6 && 
-    $w{Rank} !~ /Adv|Quad|Epi|Corp|Nat|Cord|Asc|Dominica|;;6/i) {return '';}
+    $w{Rank} !~ /Adv|Quad|Passio|Epi|Corp|Nat|Cord|Asc|Dominica|;;6/i) {return '';}
   my @rank = split(";;", $w{Rank});                 
   if ($rank[1] =~ /Feria/ && $rank[2] < 2) {return;} #no commemoration of no privileged feria
  
