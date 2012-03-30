@@ -962,21 +962,22 @@ sub norubr {
   return $t;
 }
 
-sub norubr1 {
+# Routine for handling rubrics in special sections added to the Mass
+# (preludes etc.).
+sub norubr1($)
+{
   my $t = shift;
-  if ($rubrics) {
-   	my $after = $t;
-	$t = '';
-	while ($after =~ /\((.*?)\)/) {
-	  $after = $';
-	  $t .= $` . setfont($smallfont, $1) . ' ';
-	}
-	$t .= $after;
-    return $t;
+  
+  if ($rubrics)
+  {
+    $t =~ s/\((.*?)\)/setfont($smallfont, $1)/ge;
   }
-  $t =~ s/\n! .*?\n/\n/g;
-  $t =~ s/\n! .*?\n/\n/g;
-  $t =~ s/\(.*?\)//g;
+  else
+  {
+    $t =~ s/^\s*!(?!!).*?\n//gm;
+    $t =~ s/\(.*?\)//g;
+  }
+
   return $t;
 }
 
