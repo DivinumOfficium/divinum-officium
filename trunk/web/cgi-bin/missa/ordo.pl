@@ -148,7 +148,7 @@ sub resolve_refs {
     # input line only.
 
     #$ and & references
-    if ($line !~ /(callpopup|rubrics)/i && $line =~ /[\$\&]/)  #??? was " /[\#\$\&]/)
+    if ($line !~ /(callpopup|rubrics)/i && $line =~ /^\s*[\$\&]/)  #??? was " /[\#\$\&]/)
     {
       $line =~ s/\.//g;
       $line =~ s/\s+$//;
