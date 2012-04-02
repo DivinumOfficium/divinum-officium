@@ -1012,7 +1012,7 @@ sub responsory_gloria {
   if ($w =~ /\&Gloria/i) {$prev = $`;}
   $prev =~ s/\s*$//gm;
 
-  if ($w =~ /\&teDeum/i || ($num == 1 && $dayname[0] =~ /Adv1/i) || $rule =~ /requiem Gloria/i) {return $w;}
+  if ($w =~ /\&teDeum/i || ($num == 1 && $dayname[0] =~ /Adv1|Pasc0/i && $dayofweek == 0) || $rule =~ /requiem Gloria/i) {return $w;}
 
   if ($num == 2 && $version =~ /1960/ && $dayname[0] =~ /(Adv|Quad)/i && $winner =~ /Tempora/i) {return $prev;}
 
