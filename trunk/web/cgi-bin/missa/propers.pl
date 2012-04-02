@@ -1117,6 +1117,12 @@ sub DeTemporePassionis
 	# We need a special check for the Seven Sorrows since this is
 	# currently implemented as temporal, despite actually being
 	# sanctoral. TODO: Fix this.
-	return $dayname[0] =~ /Quad[56]/i && $winner =~ /Tempora/i && $winner{'Rank'} !~ /Septem Dolorum/i;
+	return
+          (
+            $dayname[0] =~ /Quad5/i ||
+            ($dayname[0] =~ /Quad6/ && $dayofweek < 6)
+          ) &&
+          $winner =~ /Tempora/i &&
+          $winner{'Rank'} !~ /Septem Dolorum/i;
 }
 
