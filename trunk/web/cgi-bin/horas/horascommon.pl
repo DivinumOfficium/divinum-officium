@@ -481,7 +481,7 @@ sub getrank {
     {$trank[2] = 2.9;}   
   if ($version =~ /Monastic/i && $trank[2] < 5.1 && $trank[0] =~ /Dominica/i) 
     {$trank[2] = 4.9;}   
-  if ($version =~ /1960/ && (floor($trank[2]) == 3 || $dayname[0] =~ /Quad[0-9]/i || 
+  if ($version =~ /1960/ && (floor($trank[2]) == 3 || $dayname[0] =~ /Quad[1-5]/i || 
     ($dayname[0] =~ /quadp3/i && $dayofweek >= 3)) && $srank[2] < 5) {$trank[2] = 4.9;}
   if ($version =~ /1960/ && $dayofweek == 0) {
     if (($trank[2] >= 6 && $srank[2] < 6) || ($trank[2] >= 5 && $srank[2] < 5)) 
