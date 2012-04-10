@@ -1,6 +1,6 @@
 &Vidiaquam
 
-# Beginning
+# Incipit
 !A pap meghajol az oltár lábánál, és keresztet vet:
 v. Az Atya + a Fiu és a Szentlélek nevében. Ámen.
 
@@ -43,6 +43,7 @@ v. Kérünk Urunk, szabadits meg bûneinktõl, hogy a szentek szentjébe tiszta szivv
 v. Szentjeidnek érdemeire, akiknek ereklyéi itt vannak, és minden szentekére kérünk téged, Urunk, bocsásd meg kegyesen minden bûnömet. Ámen.
 
 !*S 	
+#Incense
 !Nagymisén a tömjenezes következik. A tomjent így áldja meg a pap
 Áldjon meg + az, akinek tisztletére elégsz. Ámen. 	
 
@@ -280,6 +281,7 @@ v. E megszentelt egyesítése a mi Urunk Jézus Krisztus testének és vérének, amely
 v. Isten Báránya, te elveszed a világ bûneit, irgalmazz nekünk. 	
 v. Isten Báránya, te elveszed a világ bûneit, irgalmazz nekünk. 	
 v. Isten Báránya, te elveszed a világ bûneit, adj nekünk békét.	
+!&AgnusHook
 
 !*D
 !  
@@ -287,13 +289,15 @@ v. Isten Báránya, te elveszed a világ bûneit, adj nekik nyugodalmat.
 v. Isten Báránya, te elveszed a világ bûneit, adj nekik nyugodalmat. 	
 v. Isten Báránya, te elveszed a világ bûneit, adj nekik örök nyugodalmat. 
 
-!  
+!
+!*&CheckQuiDixisti
 v. Urunk Jézus Krisztus, aki azt mondottad apostolaidnak, békét hagyok rátok, az én békémet adom nektek, nem bûneimet nézd, hanem Anyaszentegyházad hitét. Jóakaratod szerint adj neki kegyesen békét és tartsd össze egységben, ki élsz és uralkodol Isten mindörökke. Ámen. 	
 
-!*S
+!*&CheckPax
 !  
 P. Béke legyen veled. 	
 S. És a te lelkeddel. 	
+
 !*D
 !Gyászmiséken nincs békecsók.
 
@@ -341,7 +345,7 @@ M. És a te lelkeddel.
 P. Az Úr legyen veletek. 	
 M. És a te lelkeddel.	
 _
-!*nD
+!*&CheckBlessing
 !  
 P. Áldjon meg titeket a mindenható Isten
 !  

@@ -1158,6 +1158,10 @@ sub getordinarium {
   if ($version =~ /Monastic/i) {$fname =~ s/\.txt/M\.txt/;}
   @script = do_read($fname);
   $error = "$fname cannot open!" unless @script;
+
+  # Prelude pseudo-item.
+  unshift @script, '#Prelude', '';
+
   return @script;
 }
 

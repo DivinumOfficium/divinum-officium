@@ -301,7 +301,7 @@ sub getrank {
   if (transfered($tname)) {$trank = '';} 
   #if (transfered($tn1)) {$tn1 = '';}     #???????????
 		
-  if ($hora =~ /Vespera/i && $dayname[0] =~ /Quadp3/ && $dayofweek == 3) {$trank =~ s/;;6/;;2/;}
+  if ($hora =~ /Vespera/i && $dayname[0] =~ /Quadp3/ && $dayofweek == 3 && $version !~ /1960|1955/) {$trank =~ s/;;6/;;2/;}
   @trank = split(";;", $trank);  
   @tn1 = split(';;', $tn1rank);  
   if ($tn1[2] >= $trank[2]) {  
@@ -481,7 +481,7 @@ sub getrank {
     {$trank[2] = 2.9;}   
   if ($version =~ /Monastic/i && $trank[2] < 5.1 && $trank[0] =~ /Dominica/i) 
     {$trank[2] = 4.9;}   
-  if ($version =~ /1960/ && (floor($trank[2]) == 3 || $dayname[0] =~ /Quad[0-9]/i || 
+  if ($version =~ /1960/ && (floor($trank[2]) == 3 || $dayname[0] =~ /Quad[1-5]/i || 
     ($dayname[0] =~ /quadp3/i && $dayofweek >= 3)) && $srank[2] < 5) {$trank[2] = 4.9;}
   if ($version =~ /1960/ && $dayofweek == 0) {
     if (($trank[2] >= 6 && $srank[2] < 6) || ($trank[2] >= 5 && $srank[2] < 5)) 
@@ -690,7 +690,7 @@ sub getrank {
 	if ($version =~ /1960/ && $vespera == 1 && $rank >= 6 && $comrank < 5) 
     {$commemoratio = ''; $srank[2] = 0;}
 
-  if (transfered($sday) && $crank !~ /$srank/) {  
+  if (transfered($vflag ? $nday : $sday) && $crank !~ /$srank/) {  
      $dayname[2] = "Transfer $srank[0]";  
      $commemoratio = '';
     
@@ -1643,7 +1643,7 @@ sub papal_antiphon_dum_esset($)
         (?:
             (?:dicitur|dicuntur)(?:\s+semper)?
           |
-            (?:hoc\s+versus\s+)?\omittitur
+            (?:hoc\s+versus\s+)?omittitur
           |
             (?:haec\s+versus\s+)?omittuntur
         )

@@ -10,11 +10,9 @@ Capitulum Versum 2;
 Psalmi Dominica;
 
 [Ant Matutinum]
-Ego sum qui sum, * et consilium meum non est cum impiis, sed in lege Domini voluntas mea est, alleluia;;1
-Postulavi Patrem meum, * alleluia: dedit mihi Gentes, alleluia, in hereditatem, alleluia;;2
-Ego dormivi, * et somnum cepi: et exsurrexi, quoniam Dominus suscepit me, alleluia, alleluia;;3
-V. Gavisi sunt discipuli, alleluia.
-R. Viso Domino, alleluia.
+@Tempora/Pasc0-0::s/^V\..*//sm
+V. Gavísi sunt discípuli, allelúja.
+R. Viso Dómino, allelúja.
 
 [Lectio1]
 Lectio sancti Evangelii secundum Joannem.
@@ -26,32 +24,33 @@ Homilia sancti Gregorii Papae.
 Lectio sancti Evangelii, quae modo in auribus vestris lecta est, fratres mei, quaestione animum pulsat, sed pulsatione sua vim discretionis indicat. Quaeri etenim potest, cur Petrus, qui piscator ante conversionem fuit, post conversionem ad piscationem rediit: et cum Veritas dicat: Nemo mittens manum suam ad aratrum, et aspiciens retro, aptus est regno Dei: cur repetiit quod dereliquit? Sed si virtus discretionis inspicitur, citius videtur: quia nimirum negotium, quod ante conversionem sine peccato exstitit, hoc etiam post conversionem repetere culpa non fuit. Nam piscatorem Petrum, Matthaeum vero telonearium scimus: et post conversionem suam ad piscationem Petrus rediit, Matthaeus vero ad telonei negotium non resedit: quia aliud est, victum per piscationem quaerere, aliud autem telonei lucris pecunias augere. Sunt enim pleraque negotia, quae sine peccatis exhiberi aut vix, aut nullatenus possunt. Quae ergo ad peccatum implicant, ad haec necesse est, ut post conversionem animus non recurrat.
 
 [Responsory1]
-R. Ecce vicit leo de tribu Juda, radix David, aperire librum, et solvere septem signacula ejus:
-* Alleluia, alleluia, alleluia.
-V. Dignus est Agnus, qui occisus est, accipere virtutem, et divinitatem, et sapientiam, et fortitudinem, et honorem, et gloriam, et benedictionem.
-R. Alleluia, alleluia, alleluia.
+R. Ecce vicit leo de tribu Juda, radix David, aperíre librum, et sólvere septem signácula ejus:
+* Allelúja, allelúja, allelúja.
+V. Dignus est Agnus, qui occísus est, accípere virtútem, et divinitátem, et sapiéntiam, et fortitúdinem, et honórem, et glóriam, et benedictiónem.
+R. Allelúja, allelúja, allelúja.
 
 [Lectio2]
-Quaeri etiam potest, cur discipulis in mari laborantibus, post resurrectionem suam Dominus in littore stetit, qui ante resurrectionem suam coram discipulis in fluctibus maris ambulavit. Cujus rei ratio festine cognoscitur, si ipsa, quae tunc inerat, causa pensetur. Quid enim mare, nisi praesens saeculum signat, quod se casuum tumultibus, et undis vitae corruptibilis illidit? Quid per soliditatem littoris, nisi illa perpetuitas quietis aeternae figuratur? Quia ergo discipuli adhuc fluctibus mortalis vitae inerant, in mari laborabant: quia autem Redemptor noster jam corruptionem carnis excesserat, post resurrectionem suam in littore stabat: ac si ipsum resurrectionis su� mysterium rebus discipulis loqueretur dicens: Iam vobis in mari non appareo, quia uobiscum in perturbationis fluctibus non sum. Hinc est quod alio in loco post resurrectionem suam eisdem discipulis dicit: H�c sunt verba qu� locutus sum ad vos, cum adhuc essem uobiscum. Neque enim cum ipsis non erat, quibus pr�sens corporaliter apparebat, sed tamen iam se esse cum ipsis denegat, a quorum mortali corporali carnis immortalitate distabat.
+Quaeri etiam potest, cur discipulis in mari laborantibus, post resurrectionem suam Dominus in littore stetit, qui ante resurrectionem suam coram discipulis in fluctibus maris ambulavit. Cujus rei ratio festine cognoscitur, si ipsa, quae tunc inerat, causa pensetur. Quid enim mare, nisi praesens saeculum signat, quod se casuum tumultibus, et undis vitae corruptibilis illidit? Quid per soliditatem littoris, nisi illa perpetuitas quietis aeternae figuratur? Quia ergo discipuli adhuc fluctibus mortalis vitae inerant, in mari laborabant: quia autem Redemptor noster jam corruptionem carnis excesserat, post resurrectionem suam in littore stabat: ac si ipsum resurrectionis suæ mysterium rebus discipulis loqueretur dicens: Iam vobis in mari non appareo, quia uobiscum in perturbationis fluctibus non sum. Hinc est quod alio in loco post resurrectionem suam eisdem discipulis dicit: Hæc sunt verba quæ locutus sum ad vos, cum adhuc essem uobiscum. Neque enim cum ipsis non erat, quibus præsens corporaliter apparebat, sed tamen iam se esse cum ipsis denegat, a quorum mortali corporali carnis immortalitate distabat.
 
 [Responsory2]
-R. Ego sum vitis vera, et vos palmites:
-* Qui manet in me, et ego in eo, hic fert fructum multum, alleluia, alleluia.
-V. Sicut dilexit me Pater, et ego dilexi vos.
-R. Qui manet in me, et ego in eo, hic fert fructum multum, alleluia, alleluia.
+R. Ego sum vitis vera, et vos pálmites:
+* Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.
+V. Sicut diléxit me Pater, et ego dilexi vos.
+R. Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.
 &Gloria
-R. Qui manet in me, et ego in eo, hic fert fructum multum, alleluia, alleluia.
+R. Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.
 
 [Lectio3]
-Quod illic cum ipsis positus fatetur non se esse cum ipsis, hoc quoque hic in situ corporis indicat, cum adhuc eis nauigantibus esse se iam in littore demonstrat. Facta est aut[em] discipulis pisacationis magna difficultas, ut magistro ueniente fieret admirationis magna sublimitas, q[ua] protinus dixit, Mittite in dextera nauigii rete, et inuenietis. Bis in sancto euangelio legitur quia dominus iussit ut ad piscandum retia mitteretur: ante passionem uidelicet, et post resurrectionem. sed priusquam redemptor noster pateretur et resurgeret, mitti quidem rete mitti ad piscandum iubet. sed utrum in dextram an in sinistram mitti debuisset, non iubet: post resurrectionem uero discipulis apparens mitti rete in dexteram iubet. In illa piscatione tanti capti sunt ut retia rumperentur: in ista autem et multi capti sunt, sed retia rupta non sunt. Quis uero nesciat bonos dextera et malos sinistra figurari? Illa ergo piscatio qua specialiter in quam partem mitti rete debeat non iubetur, pr�sentem Ecclesiam designat, qu� bonos simul ac malos colligit, nec eligit quos trahat: quia et quos eligere possit ignorat. H�c autem piscatio post domini resurrectionem facta in solam dexteram iussa est: quia ad uidendam claritatis gloriam sola electorum Ecclesia pertingit, qu� de sinistro opere non habebit.
+Quod illic cum ipsis positus fatetur non se esse cum ipsis, hoc quoque hic in situ corporis indicat, cum adhuc eis nauigantibus esse se iam in littore demonstrat. Facta est aut[em] discipulis pisacationis magna difficultas, ut magistro ueniente fieret admirationis magna sublimitas, q[ua] protinus dixit, Mittite in dextera nauigii rete, et inuenietis. Bis in sancto euangelio legitur quia dominus iussit ut ad piscandum retia mitteretur: ante passionem uidelicet, et post resurrectionem. sed priusquam redemptor noster pateretur et resurgeret, mitti quidem rete mitti ad piscandum iubet. sed utrum in dextram an in sinistram mitti debuisset, non iubet: post resurrectionem uero discipulis apparens mitti rete in dexteram iubet. In illa piscatione tanti capti sunt ut retia rumperentur: in ista autem et multi capti sunt, sed retia rupta non sunt. Quis uero nesciat bonos dextera et malos sinistra figurari? Illa ergo piscatio qua specialiter in quam partem mitti rete debeat non iubetur, præsentem Ecclesiam designat, quæ bonos simul ac malos colligit, nec eligit quos trahat: quia et quos eligere possit ignorat. Hæc autem piscatio post domini resurrectionem facta in solam dexteram iussa est: quia ad uidendam claritatis gloriam sola electorum Ecclesia pertingit, quæ de sinistro opere non habebit.
 &teDeum
 
 [Ant 2]
-Mittite in dexteram * navigii rete, et invenietis, alleluia.
+Míttite in déxteram * navígii rete, et inveniétis, allelúja.
 
 [Oratio]
-Deus, qui nos resurrectionis Dominicae annua solemnitate laetificas: concede propitius; ut per temporalia festa quae agimus, pervenire ad gaudia aeterna mereamur.
+Deus, qui nos resurrectiónis Domínicæ ánnua solemnitáte lætíficas: concéde propítius; ut per temporália festa quæ ágimus, perveníre ad gaúdia ætérna mereámur.
 $Per eumdem
 
 [Ant 3]
-Dixit Jesus * discipulis suis: Afferte de piscibus, quos prendidistis nunc. Ascendit autem Simon Petrus, et traxit rete in terram plenum magnis piscibus, alleluia.
+Dixit Jesus * discípulis suis: Afférte de píscibus, quos prendidístis nunc. Ascéndit autem Simon Petrus, et traxit rete in terram plenum magnis píscibus, allelúja.
+

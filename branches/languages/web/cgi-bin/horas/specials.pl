@@ -56,7 +56,7 @@ sub specials {
     @ite = split(' ', $ite); 
 
     if ($rule =~ /Omit.*? $ite[0]/i && !(($hora =~ /Laudes/i || ($hora =~ /Vespera/i && $winner =~ /C9/i)) && 
-	    $rule =~ 'Capitulum Versum 2' && $item =~ /Versum/i )) { 
+	    $rule =~ 'Capitulum Versum 2' && $item =~ /Capitulum/i )) { 
       $skipflag = 1;
       if ($item =~ /incipit/i && $version !~ /(1955|1960)/) {$comment = 2; setbuild1($ite, 'limit');}
       else {$comment = 1; setbuild1($label, 'omit');}
@@ -67,6 +67,13 @@ sub specials {
 		    push(@s, (setfont($smallfont, 'secreto'),$p1, $p2));
         if ($hora =~ /(matutinum|prima)/i ) {push(@s, '$Credo');}   
       }
+      next;
+    }
+
+    # Prelude pseudo-item. Include it if it exists; otherwise drop it
+    # entirely.
+    if ($item =~ /Prelude/i) {
+      push(@s, $w{"Prelude $hora"}) if exists($w{"Prelude $hora"});
       next;
     }
 
@@ -1044,8 +1051,10 @@ sub oratio
     my $oremus = translate('Oremus', $lang);
     push (@s, "v. $oremus");
     }
-    if (($version =~ /1960/ || "$month$day" =~ /1102/) && $w =~ /\&psalm\([0-9]+\)\s*\_\s*/i) 
-    {$w = "$`\_\n$'";} #triduum 1960  not 1955
+
+    # Suppress Miserere at new Triduum, and the psalm Lauda in the
+    # office of All Souls' day.
+    $w =~ s/\&psalm\([0-9]+\)\s*\_\s*/_\n/i if ($version =~ /1955|1960/ || "$month$day" =~ /1102/);
 
     if ($hora =~ /(Laudes|Vespera)/i && $winner{Rule} =~ /Sub unica conc/i) {
     if ($version !~ /1960/) {
@@ -1278,7 +1287,7 @@ sub getcommemoratio {
 
 
   if ($version =~ /1960/ && $hora =~ /Vespera/i && $ind == 3 && $rank >= 6 && 
-    $w{Rank} !~ /Adv|Quad|Epi|Corp|Nat|Cord|Asc|Dominica|;;6/i) {return '';}
+    $w{Rank} !~ /Adv|Quad|Passio|Epi|Corp|Nat|Cord|Asc|Dominica|;;6/i) {return '';}
   my @rank = split(";;", $w{Rank});                 
   if ($rank[1] =~ /Feria/ && $rank[2] < 2) {return;} #no commemoration of no privileged feria
  
@@ -1877,21 +1886,27 @@ sub get_prima_responsory {
 #*** loadspecial($str)
 # removes second part of antifones for non 1960 versions
 # returns arrat of the string
-sub loadspecial {
-  my $str = shift;  
-  if ($version =~ /1960/) {
-    if ($str =~ /\&psalm\([0-9]+\)\s*\_\s*/i) {$str = "$`\_\n$'";} #triduum 1960  
-    my @s = split("\n", $str);  
-    return @s;
+sub loadspecial
+{
+  my $str = shift;
+
+  # Suppress Miserere in Triduum.
+  $str =~ s/\&psalm\([0-9]+\)\s*_\s*/_\n/i if ($version =~ /1955|1960/); 
+
+  my @s = split("\n", $str);
+
+  # Un-double the antiphons, except in 1960.
+  unless ($version =~ /1960/)
+  {
+    my $i;
+    my $ant = 0;     
+    for ($i = 0; $i < @s; $i++)
+    { 
+      if (($ant & 1) == 0 && $s[$i] =~ /^(Ant\..*?)\*/) {$s[$i] = $1;}
+      if ($s[$i] =~ /^Ant\./) {$ant++;} 
+    }
   }
 
-  my @s = split("\n", $str);  
-  my $i;
-  my $ant = 0;     
-  for ($i = 0; $i < @s; $i++) { 
-     if (($ant & 1) == 0 && $s[$i] =~ /^(Ant\..*?)\*/) {$s[$i] = $1;}
-     if ($s[$i] =~ /^Ant\./) {$ant++;} 
-  }
   return @s;
 }
 
