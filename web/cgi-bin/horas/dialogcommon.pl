@@ -271,11 +271,12 @@ sub setupstring($$$%)
   our ($lang1, $lang2, $missa);
   
   my $inclusionregex = qr/^\s*\@
-    ([^\n:]+)                     # Filename.
+    ([^\n:]+)?                    # Filename (self-reference if omitted).
     (?::([^\n:]+?))?              # Optional keywords.
     [^\S\n\r]*                    # Ignore trailing whitespace.
     (?::(.*))?                    # Optional substitutions.
     $
+    \n?                           # Eat up to one newline.
     /mx;
 
   our $version;
@@ -330,6 +331,17 @@ sub setupstring($$$%)
 
   # Take a copy.
   my %sections = %{${$inclusioncache}{$fullpath}};
+ 
+  # Do whole-file inclusions.
+  while (my ($incl_fname, undef, $incl_subst) = ($sections{'__preamble'} =~ /$inclusionregex/gc))
+  {
+    $incl_fname .= '.txt';
+    if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
+    my $incl_sections = setupstring($basedir, $lang, $incl_fname);
+    $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
+  }
+  
+  delete $sections{'__preamble'};
 
   $params{'resolve@'} = 1 unless (exists $params{'resolve@'});
   
@@ -526,7 +538,7 @@ sub setupstring_parse_file($$$)
 sub do_inclusion_substitutions(\$$)
 {
   my ($text, $substitutions) = @_;
-  eval "\$\$text =~ s'$1'$2'$3" while ($substitutions =~ m{s/([^/]*)/([^/]*)/([gi]*)}g);
+  eval "\$\$text =~ s'$1'$2'$3" while ($substitutions =~ m{s/([^/]*)/([^/]*)/([gism]*)}g);
 }
 
 
@@ -535,6 +547,8 @@ sub do_inclusion_substitutions(\$$)
 # and performs the substitutions specified in $substitutions according
 # to the syntax of the @ directive. \%sections is the file containing
 # the reference to be expanded, for back references when necessary.
+# If $ftitle is empty, then use \%sections itself to resolve the
+# reference.
 sub get_loadtime_inclusion(\%$$$$$$$)
 {
   my ($sections, $basedir, $lang, $ftitle, $section, $substitutions, $callerfname) = @_;
@@ -547,7 +561,9 @@ sub get_loadtime_inclusion(\%$$$$$$$)
     $ftitle =~ s/(C[23])(?!p)/$1p/g;
   }
   
-  my $inclfile = setupstring($basedir, $lang, "$ftitle.txt", 'resolve@' => 0);
+  # Load the file to resolve the reference; if none specified, it's a
+  # self-reference.
+  my $inclfile = $ftitle ? setupstring($basedir, $lang, "$ftitle.txt", 'resolve@' => 0) : $sections;
 
   if ($version !~ /Trident/i && $section =~ /Gregem/i && (my ($plural, $class, $name) = papal_commem_rule(${$sections}{'Rule'})))
   {
@@ -556,7 +572,8 @@ sub get_loadtime_inclusion(\%$$$$$$$)
   }
   else
   {
-    $text = ${$inclfile}{$section} if (exists ${$inclfile}{$section});
+    # Get text from reference, less any trailing blank lines.
+    ($text = ${$inclfile}{$section}) =~ s/\n+$/\n/s if (exists ${$inclfile}{$section});
   }
   
   if ($text)

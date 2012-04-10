@@ -49,6 +49,16 @@ sub specials {
 
     $tind++;
 
+    # Hooks.
+    if ($item =~ /^\s*!&([a-z]+)\s*$/im) {
+      # We use a string as a subroutine reference.
+      no strict refs;
+
+      # Run the hook, and omit this line from the output.
+      &$1();
+      next;
+    }
+
 	if ($item =~ /^\s*!\*/) {
 	  $skipflag = 0;
 	  if ($item =~ /!\*(\&[a-z]+)\s/i) {$skipflag = eval($1);} 
@@ -63,10 +73,25 @@ sub specials {
 	  } else {next;}
     }
 
-    if ($item =~/^\s*#(.*)/) {
+    my $section_regex = qr/^\s*#\s*(.*)/;
+    if ($item =~ $section_regex) {
       $label = $1;
-      $label = translate_label($label, $lang);	
-      push (@s, "#$label");	
+
+      if ($rule =~ /omit.*\b$label\b/i) {
+        # Skip omitted section
+        $tind++ while ($tind < @t && $t[$tind] !~ $section_regex);
+      }
+      elsif ($label =~ /^\s*Evangelium\s*$/ && $rule =~ /^\s*Passio\s*$/m) {
+        # Special form for the Passion. What ceremony there is is
+	# embedded in the data file itself.
+	push(@s, '#' . translate_label($label, $lang), '&evangelium');
+        $tind++ while ($tind < @t && $t[$tind] !~ /^\s*$/);
+      }
+      else {
+        $label = translate_label($label, $lang);
+        push (@s, "#$label");
+      }
+      
       next;
     }
 
@@ -702,7 +727,7 @@ sub replaceNpb {
 
 sub Gloria {
   my $lang = shift;	 
-  if ($dayname[0] =~ /Quad[56]/i && $rule !~ /Requiem gloria/) {return "";}
+  if (DeTemporePassionis() && $rule !~ /Requiem gloria/) {return "";}
   my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
   if ($rule =~ /Requiem gloria/i) {return $prayer{Requiem};}
   return $prayer{'Gloria'};    
@@ -740,10 +765,12 @@ sub getitem {
   #}
   
   if ($w && $w !~ /^\s*$/) {
-    while ($w =~ /\((.*?)\)/s) { 
+    while ($w =~ /(?<!\() \( ([^()]*?) \) (?!\))/sx) {
 	  my $s = setfont($smallfont, $1); 
 	  $w = "$`$s$'";
     }
+    $w =~ s/\(\(/(/g;
+    $w =~ s/\)\)/)/g;
   }
 
   return $w;
@@ -760,7 +787,7 @@ sub Vidiaquam {
 }
 
 sub Introibo {
-  if ($votive =~ /Defunct/ || $dayname[0] =~ /Quad[5-6]/) {push(@s, "!omit. psalm"); return 1;}
+  if ($votive =~ /Defunct/ || DeTemporePassionis()) {push(@s, "!omit. psalm"); return 1;}
   return 0;
 }
 
@@ -868,10 +895,14 @@ sub graduale {
 
 sub evangelium {
   my $lang = shift;
-  my $t = getitem('Evangelium', $lang); 
+  my $t = getitem('Evangelium', $lang);
+
+  our ($rule, $version);
+
   if ($t && $t !~ /^\s*$/) {
-    $t =~ s/\n/\n\$Gloria tibi\n/;
-    $t = "v. " . $t . "\$Laus tibi\n";
+    $t = "v. $t";
+    $t =~ s/\n/\n\$Gloria tibi\n/ unless ($rule =~ /^\s*Passio\s*$/m);
+    $t .= "\$Laus tibi\n" unless ($rule =~ /^\s*Passio\s*$/m && $version =~ /1955|1960/);
   }
 
   if ($version =~ /(1955|1960)/ && $rule =~ /Maundi/i) {
@@ -931,21 +962,22 @@ sub norubr {
   return $t;
 }
 
-sub norubr1 {
+# Routine for handling rubrics in special sections added to the Mass
+# (preludes etc.).
+sub norubr1($)
+{
   my $t = shift;
-  if ($rubrics) {
-   	my $after = $t;
-	$t = '';
-	while ($after =~ /\((.*?)\)/) {
-	  $after = $';
-	  $t .= $` . setfont($smallfont, $1) . ' ';
-	}
-	$t .= $after;
-    return $t;
+  
+  if ($rubrics)
+  {
+    $t =~ s/\((.*?)\)/setfont($smallfont, $1)/ge;
   }
-  $t =~ s/\n! .*?\n/\n/g;
-  $t =~ s/\n! .*?\n/\n/g;
-  $t =~ s/\(.*?\)//g;
+  else
+  {
+    $t =~ s/^\s*!(?!!).*?\n//gm;
+    $t =~ s/\(.*?\)//g;
+  }
+
   return $t;
 }
 
@@ -969,6 +1001,28 @@ sub hancigitur {
   my $t = chompd($pr{'H-Pent'});
   return norubr($t);
 }
+
+sub AgnusHook
+{
+    our (@s, $rule);
+
+    if ($rule =~ /ter miserere/i)
+    {
+      # At revised Holy Thursday Mass, "miserere nobis" is said thrice
+      # at the Agnus Dei.
+      @s[$#s] = @s[$#s - 1];
+    }
+}
+
+# Check whether the prayer "Domine Jesu Christe, qui dixisti" should
+# be omitted.
+sub CheckQuiDixisti { our $votive =~ /Defunct/i || our $rule =~ /no Qui Dixisti/i; }
+
+sub CheckPax { !(our $solemn) || our $votive =~ /Defunct/i || our $rule =~ /no Pax/i; }
+
+sub CheckBlessing { our $votive =~ /Defunct/i || our $rule =~ /no Benedictio/i; }
+
+sub CheckUltimaEv { our $rule =~ /no Ultima Evangelium/i; }
 
 sub communio {
   my $lang = shift;
@@ -1001,18 +1055,21 @@ sub postcommunio {
   return $str;
 }
 
-sub itemissaest {
-  my $lang = shift; 
+sub itemissaest
+{
+  our ($version, $rule);
+
+  my $lang = shift;
   my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
   my $text = $prayer{'IteMissa'};
-  my @text = split("\n", $text);       
-  my $flag = gloriflag();  
-  if (!$flag && $dayname[0] =~ /Pasc0/i) {$text = "$text[2]\n$text[3]"}
-  elsif (!$flag) {$text = "$text[0]\n$text[1]"} 
-  elsif ($votive =~ /Defunct/i) {$text = "$text[6]\n$text[7]"}
-  elsif ($version =~ /1960/i) {$text = "$text[0]\n$text[1]"}
-  else {$text = "$text[4]\n$text[5]"}
-  return $text;
+  my @text = split("\n", $text);
+  my $benedicamus = (gloriflag() && $version !~ /1960/) || ($rule =~ /^\s*Benedicamus Domino\s*$/mi);
+
+  return
+    ($dayname[0] =~ /Pasc0/i) ? "$text[2]\n$text[3]" : # Ite, missa est, alleluia, alleluia.
+    ($votive =~ /Defunct/i)   ? "$text[6]\n$text[7]" : # Requiescant in pace.
+    ($benedicamus)            ? "$text[4]\n$text[5]" : # Benedicamus Domino.
+    "$text[0]\n$text[1]";                              # Ite, missa est.
 }
 
 sub placeattibi {
@@ -1032,7 +1089,6 @@ sub Ultimaev {
   my $lang = shift;
   my ($t, %p);
 
-  if ($version =~ /1960/ && $rule =~ /no Ultima Evangelium/i) {return;}
   if ($version =~ /(1955|1960)/ || !exists($commemoratio{Evangelium})) {
     %p =%{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
 	$t = $p{'Ultima Evangelium'};
@@ -1052,5 +1108,21 @@ sub Ultimaev {
   }
   
   return $t;
+}
+
+sub DeTemporePassionis
+{
+	our (@dayname, $winner, %winner);
+
+	# We need a special check for the Seven Sorrows since this is
+	# currently implemented as temporal, despite actually being
+	# sanctoral. TODO: Fix this.
+	return
+          (
+            $dayname[0] =~ /Quad5/i ||
+            ($dayname[0] =~ /Quad6/ && $dayofweek < 6)
+          ) &&
+          $winner =~ /Tempora/i &&
+          $winner{'Rank'} !~ /Septem Dolorum/i;
 }
 

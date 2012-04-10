@@ -1,6 +1,6 @@
 &Vidiaquam
 
-# Beginning
+# Incipit
 !A pap meghajol az oltár lábánál, és keresztet vet:
 v. Az Atya + a Fiu és a Szentlélek nevében. Ámen.
 
@@ -59,6 +59,7 @@ v. Kérünk Urunk, szabadits meg bûneinktõl, hogy a szentek szentjébe tiszta szivv
 v. Szentjeidnek érdemeire, akiknek ereklyéi itt vannak, és minden szentekére kérünk téged, Urunk, bocsásd meg kegyesen minden bûnömet. Ámen.
 
 !*S 	
+#Incense
 !Nagymisén a tömjenezes következik. A tomjent így áldja meg a pap
 Áldjon meg + az, akinek tisztletére elégsz. Ámen. 	
 
@@ -84,11 +85,9 @@ v.  Dicsõség a magasságban Istennek, és a földön békesség a jóakaratú embereknek
 
 # Collect
 !A pap megcsókolja az oltárt és a hivek felé fordulva mondja:
-P. Az Úr legyen veletek. 	
-M. És a te lelkeddel.	
+&DominusVobiscum
 !  
 &collect
-&LectionesTemporum
 
 # Lesson
 &lectio
@@ -97,7 +96,7 @@ M. És a te lelkeddel.
 &graduale
 
 !*SnD
-# Gospel
+# Evangelium
 !Nagymisén a pap megáldja a tomjéen, és a diakonus monja a Munda cor imát
 Tisztíds meg szívemet és ajkamat Mindenható Isten, ki Izaiás próféta ajkát tüzes parázzsal tisztítottad meg. Irgalmas jóságod által tisztíts meg kegyesen, hogy méltón hirdethessem szent Evangéliumodat: Krisztus a mi Urunk által. Ámen.
 !Azután a diakonus kezébe veszi a könyvet, letédel és áldást kér:
@@ -111,7 +110,7 @@ M. És a te lelkeddel.
 &evangelium
 
 !*RnD
-# Gospel
+# Evangelium
 ! A misekonyvet az Evangeluimi oldalra viszik. A pap meghajol az oltár közepén és összetett kezekkel modja:
 Tisztíds meg szívemet és ajkamat Mindenható Isten, ki Izaiás próféta ajkát tüzes parázzsal tisztítottad meg. Irgalmas jóságod által tisztíts meg kegyesen, hogy méltón hirdethessem szent Evangéliumodat: Krisztus a mi Urunk által. Ámen.
 v. Uram, add rám áldásodat. Legyen az Úr, szívemben és ajkamon, hogy méltó és illõ módon hirdethessem evangéliumát. 
@@ -121,7 +120,7 @@ M. És a te lelkeddel.
 &evangelium
 
 !*D
-# Gospel
+# Evangelium
 !Gyászmiséken a pap mondja a Munda cor imát, de nem csókolja meg a könyvet
 Tisztíds meg szívemet és ajkamat Mindenható Isten, ki Izaiás próféta ajkát tüzes parázzsal tisztítottad meg. Irgalmas jóságod által tisztíts meg kegyesen, hogy méltón hirdethessem szent Evangéliumodat: Krisztus a mi Urunk által. Ámen.
 v. v. Uram, add rám áldásodat. 
@@ -298,6 +297,7 @@ v. E megszentelt egyesítése a mi Urunk Jézus Krisztus testének és vérének, amely
 v. Isten Báránya, te elveszed a világ bûneit, irgalmazz nekünk. 	
 v. Isten Báránya, te elveszed a világ bûneit, irgalmazz nekünk. 	
 v. Isten Báránya, te elveszed a világ bûneit, adj nekünk békét.	
+!&AgnusHook
 
 !*D
 !  
@@ -305,13 +305,15 @@ v. Isten Báránya, te elveszed a világ bûneit, adj nekik nyugodalmat.
 v. Isten Báránya, te elveszed a világ bûneit, adj nekik nyugodalmat. 	
 v. Isten Báránya, te elveszed a világ bûneit, adj nekik örök nyugodalmat. 
 
-!  
+!
+!*&CheckQuiDixisti  
 v. Urunk Jézus Krisztus, aki azt mondottad apostolaidnak, békét hagyok rátok, az én békémet adom nektek, nem bûneimet nézd, hanem Anyaszentegyházad hitét. Jóakaratod szerint adj neki kegyesen békét és tartsd össze egységben, ki élsz és uralkodol Isten mindörökke. Ámen. 	
 
-!*S
+!*&CheckPax
 !  
 P. Béke legyen veled. 	
 S. És a te lelkeddel. 	
+
 !*D
 !Gyászmiséken nincs békecsók.
 
@@ -365,7 +367,7 @@ M. És a te lelkeddel.
 !*&placeattibi	
 v. Fogadd tetszéssel Szentháromság szolgád hódolatát, és add, hogy az áldozat melyet méltatlanságom ellenére Fölséged színe elõtt bemutattam, neked kedves legyen, nekem pedig és mindazoknak, akikért bemutattam, irgalmadból bocsánatot szerezzen. Krisztus a mi Urunk által. Ámen. 	
 
-!*nD
+!*&CheckBlessing
 !  
 P. Áldjon meg titeket a mindenható Isten
 !  
@@ -375,6 +377,7 @@ S. Ámen.
 !*D
 !  
 
+!*&CheckUltimaEv
 !Then turning to the Gospel side of the altar, the priest says:
 !  
 &Ultimaev

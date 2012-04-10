@@ -1,6 +1,6 @@
 &Vidiaquam
 
-# Beginning
+# Incipit
 !The priest, bowing down at the foot of the altar, makes the Sign of the Cross, from his forehead to his breast, and says: 
 v. In the Name of the Father, and of the Son, + and of the Holy Ghost. Amen.
 
@@ -58,6 +58,7 @@ v. Take away from us our iniquities, we beseech Thee, O Lord, that we may be wor
 v. We beseech Thee, O Lord, by the merits of Thy Saints, (He kisses the sacred stone) whose relics are here, and of all the Saints, that Thou wouldst vouchsafe to forgive me all my sins. Amen.
 
 !*S 	
+#Incense
 !In Solemn Masses the altar is here incensed. Whilst blessing the incense the priest says:
 Be blessed + by Him in whose honor thou art burnt. Amen. 	
 
@@ -94,7 +95,7 @@ v. Glory be to God on high, and on earth peace to men of good will. We praise Th
 &graduale
 
 !*SnD
-# Gospel
+# Evangelium
 !In Solemn Masses the priest blesses the incense, and the deacon, kneeling before the altar with his hands joined, says the Munda cor. 
 Cleanse my heart and my lips, O almighty God, who didst cleanse the lips of the prophet Isaias with a burning coal, and vouchsafe, through Thy gracious mercy, so to purify me, that I may worthily announce Thy holy Gospel. Through Christ our Lord. Amen. 
 !Afterwards he takes the book from the altar, and again kneeling down before the priest, asks his blessing, saying:
@@ -108,7 +109,7 @@ S. And with thy spirit.
 &evangelium
 
 !*RnD
-# Gospel
+# Evangelium
 !The Missal is transferred to the other side of the altar to symbolize that the divine favor was taken away from the unfaithful Jews and given to the Gentiles. At Low Masses, the priest, bowing down at the middle of the altar, with his hands joined, says:
 Cleanse my heart and my lips, O almighty God, who didst cleanse the lips of the prophet Isaias with a burning coal, and vouchsafe, through Thy gracious mercy, so to purify me, that I may worthily announce Thy holy Gospel. Through Christ our Lord. Amen. 	
 v. Give me Thy blessing, O Lord. The Lord be in my heart and on my lips, that I may worthily and in a becoming manner, proclaim His holy Gospel. Amen. 	
@@ -118,7 +119,7 @@ S. And with thy spirit.
 &evangelium
 
 !*D
-# Gospel
+# Evangelium
 !In Masses for the Dead, the Munda cor is said, but the blessing is not asked, and the priest does not kiss the Gospel.
 Clease my heart and my lips, O almighty God, who didst cleanse the lips of the prophet Isaias with a burning coal, and vouchsafe, through Thy gracious mercy, so to purify me, that I may worthily announce Thy holy Gospel. Through Christ our Lord. Amen. 	
 v. Give me Thy blessing, O Lord. 	
@@ -294,6 +295,7 @@ v. May this mixture and consecration of the Body and Blood of our Lord Jesus Chr
 v. Lamb of God, who takest away the sins of the world, have mercy on us. 	
 v. Lamb of God, who takest away the sins of the world, have mercy on us. 	
 v. Lamb of God, who takest away the sins of the world, grant us peace. 	
+!&AgnusHook
 
 !*D
 !In Masses for the Dead, he says twice, instead of Miserere nobis: have mercy on us. Grant them rest. And lastly:
@@ -303,12 +305,14 @@ v. Lamb of God, who takest away the sins of the world, Grant them rest.
 v. Lamb of God, who takest away the sins of the world, Grant them eternal rest.
 
 !With his hands joined and resting on the altar, standing inclined, he says the three following prayers:
+!*&CheckQuiDixisti
 v. O Lord Jesus Christ, who saidst to Thine Apostles: Peace I leave you, My peace I give you: regard not my sins, but the faith of Thy Church; and vouchsafe to grant her that peace and unity which is agreeable to Thy will: Who livest and reignest God, world without end. Amen. 	
 
-!*S
+!*&CheckPax
 !In Solemn Masses the kiss of peace is now given; the Celebrant kisses the altar, then saluting the deacon, says:
 P. Peace be with thee. 	
-S. And with thy spirit. 	
+S. And with thy spirit. 
+	
 !*D
 !In Masses of the Dead, the kiss of peace is not given.
 
@@ -362,7 +366,7 @@ S. And with thy spirit.
 !*&placeattibi	
 v. May the performance of my homage be pleasing to Thee, O holy Trinity: and grant that the Sacrifice which I, though unworthy, have offered up in the sight of Thy Majesty, may be acceptable to Thee, and through Thy mercy, be a propitiation for me, and for all those for whom I have offered it. Through Christ our Lord. Amen. 	
 
-!*nD
+!*&CheckBlessing
 !He kisses the altar, and raising his eyes, extending, raising and joining his hands, he bows down his head and says:
 P. May almighty God the Father, Son, + and Holy Ghost, 
 !  
@@ -372,6 +376,7 @@ S. Amen.
 !*D
 !In Masses for the Dead, the Blessing is omitted.
 
+!*&CheckUltimaEv
 !Then turning to the Gospel side of the altar, the priest says:
 !He then traces the Sign of the Cross, first upon the altar, and then upon his forehead, lips, and breast, and says:
 &Ultimaev

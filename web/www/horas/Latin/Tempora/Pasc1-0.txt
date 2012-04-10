@@ -1,5 +1,5 @@
 [Rank]
-Dominica in Albis in Octava Paschae;;Duplex majus I. classis;;7;;
+Dominica in Albis in Octava Paschæ;;Duplex majus I. classis;;7;;
 
 [Rule]
 9 Lectiones
@@ -9,22 +9,22 @@ Omit Commemoratio
 
 [Capitulum Vespera]
 !1 John 5:4
-v. Carissimi: Omne, quod natum est ex Deo, vincit mundum: et haec est victoria, quae vincit mundum, fides nostra.
+v. Caríssimi: Omne, quod natum est ex Deo, vincit mundum: et hæc est victória, quæ vincit mundum, fides nostra.
 $Deo gratias
 
 [Versum 1]
-V. Mane nobiscum Domine, alleluia.
-R. Quoniam advesperascit, alleluia.
+V. Mane nobíscum Domine, allelúja.
+R. Quoniam advesperáscit, allelúja.
 
 [Ant 1]
-Cum esset sero * die illa una sabbatorum, et fores essent clausae, ubi erant discipuli congregati in unum, stetit Jesus in medio, et dixit eis: Pax vobis, alleluia.
+Cum esset sero * die illa una sabbatórum, et fores essent clausæ, ubi erant discípuli congregáti in unum, stetit Jesus in médio, et dixit eis: Pax vobis, allelúja.
 
 [Oratio]
-Praesta quaesumus omnipotens Deus: ut qui paschalia festa peregimus, haec, te largiente, moribus et vita teneamus.
+Præsta, quǽsumus, omnípotens Deus: ut qui paschália festa perégimus, hæc, te largiénte, móribus et vita teneámus.
 $Per Dominum
 
 [Invit]
-Surrexit Dominus vere, * Alleluia.
+@Tempora/Pasc0-0
 
 [Lectio1]
 De Epistola beati Pauli Apostoli ad Colossenses.
@@ -38,7 +38,7 @@ De Epistola beati Pauli Apostoli ad Colossenses.
 7 in quibus et vos ambulastis aliquando, cum viveretis in illis.
 
 [Responsory1]
-@Tempora/Pasc0-0:Responsory1
+@Tempora/Pasc0-0::s/&Gloria.*//s
 
 [Lectio2]
 !Col 3:8-13
@@ -50,10 +50,10 @@ De Epistola beati Pauli Apostoli ad Colossenses.
 13 supportantes invicem, et donantes vobismetipsis si quis adversus aliquem habet querelam: sicut et Dominus donavit vobis, ita et vos.
 
 [Responsory2]
-R. Angelus Domini locutus est mulieribus, dicens: Quem quaeritis? an Jesum quaeritis? Jam surrexit:
-* Venite, et videte, alleluia, alleluia.
-V. Jesum quaeritis Nazarenum crucifixum? Surrexit, non est hic.
-R. Venite, et videte, alleluia, alleluia.
+R. Angelus Dómini locútus est muliéribus, dicens: Quem quǽritis? an Jesum quǽritis? Jam surréxit:
+* Veníte, et vidéte, allelúja, allelúja.
+V. Jesum quǽritis Nazarénum crucifíxum? Surréxit, non est hic.
+R. Veníte, et vidéte, allelúja, allelúja.
 
 [Lectio3]
 !Col 3:14-17
@@ -108,35 +108,31 @@ Dixit eis: Pax vobis. Sicut misit me Pater, et ego mitto vos: id est, sicut misi
 &teDeum
 
 [Capitulum Laudes]
-!1 John 5:4
-v. Carissimi: Omne quod natum est ex Deo, vincit mundum: et haec est victoria, quae vincit mundum, fides nostra.
-$Deo gratias
+@:Capitulum Vespera
 
 [Versum 2]
-V. In resurrectione tua Christe, alleluia.
-R. Caeli et terra laetentur, alleluia.
+V. In resurrectióne tua Christe, allelúja.
+R. Cæli et terra laeténtur, allelúja.
 
 [Ant 2]
-Cum esset sero * die illa una sabbatorum, et fores essent clausae, ubi erant discipuli congregati in unum, stetit Jesus in medio, et dixit eis: Pax vobis, alleluia.
+@:Ant 1
 
 [Capitulum Tertia]
-!1 John 5:4
-v. Carissimi: Omne quod natum est ex Deo, vincit mundum: et haec est victoria, quae vincit mundum, fides nostra.
-$Deo gratias
+@:Capitulum Vespera
 
 [Capitulum Sexta]
 !1 John 5:5-6
-v. Quis est autem qui vincit mundum, nisi qui credit quoniam Jesus est Filius Dei? hic est, qui venit per aquam et sanguinem, Jesus Christus: non in aqua solum, sed in aqua et sanguine.
+v. Quis est autem qui vincit mundum, nisi qui credit quóniam Jesus est Fílius Dei? hic est, qui venit per aquam et sánguinem, Jesus Christus: non in aqua solum, sed in aqua et sánguine.
 $Deo gratias
 
 [Capitulum Nona]
 !1 John 5:9-10
-v. Si testimonium hominum accipimus, testimonium Dei majus est: quoniam hoc est testimonium Dei, quod majus est, quoniam testificatus est de Filio suo. Qui credit in Filium Dei, habet testimonium Dei in se.
+v. Si testimónium hóminum accípimus, testimónium Dei majus est: quóniam hoc est testimónium Dei, quod majus est, quóniam testificátus est de Fílio suo. Qui credit in Fílium Dei, habet testimónium Dei in se.
 $Deo gratias
 
 [Versum 3]
-V. Mane nobiscum Domine, alleluia.
-R. Quoniam advesperascit, alleluia.
+@:Versum 1
 
 [Ant 3]
-Post dies octo * januis clausis ingressus Dominus dixit eis: Pax vobis, alleluia, alleluia.
+Post dies octo * jánuis clausis ingréssus Dóminus dixit eis: Pax vobis, allelúja, allelúja.
+
