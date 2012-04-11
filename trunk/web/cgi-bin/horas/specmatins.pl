@@ -1051,7 +1051,7 @@ sub ant_matutinum {
   my $ind = shift;  
   
 
-  if ($version =~ /1960/ && ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek >3))) {
+  if ($version =~ /1960/ && ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek >3)) && ($rank < 5 || $winner{Rank} =~ /Dominica/i)) {
     if ($ind == 0) {return ('Alleluia * Alleluia, alleluia', '');}
 	if ($ind == 12) {return ('', 'Alleluia * Alleluia, alleluia');}
 	return ('','');
@@ -1070,7 +1070,7 @@ sub ant_matutinum {
     return ($ant, $ant);
   }
 		 
-  if ($rank >= 7 || $winner{Rank} =~ /ex tempora\/Pasc5\-4/i) {return ($ant1, $ant);}
+  if ($winner =~ /Pasc5-4/i || $winner{Rank} =~ /ex tempora\/Pasc5\-4/i) {return ($ant1, $ant);}
 		 
   # special Ant Matutinum, used for Eastertime 1st and 2nd class feasts
   my @spec = splice(@spec, @spec);
