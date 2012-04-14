@@ -4,8 +4,8 @@ Dominica III Post Pentecosten;;Semiduplex;;5
 [Rule]
 Gloria
 Credo
-Prefatio=Cord
-Prefatio1960=Trinitate
+Prefatio=Trinitate
+Suffr=Sanctorum;Maria3,Ecclesiae,Papa;;
 
 [Introitus]
 !Ps 24:16; 24:18
@@ -22,13 +22,6 @@ Protéctor in te sperántium, Deus, sine quo nihil est válidum, nihil sanctum:~
 multíplica super nos misericórdiam tuam; ut, te rectóre, te duce, sic transeámus~
 per bona temporália, ut non amittámus ætérna.
 $Per Dominum.
-
-[Commemoratio Oratio]
-!Pro Octavæ sacratissimi Cordis Jesu:
-Deus, qui nobis in Corde Fílii tui, nostris vulneráto peccátis, infinítos~
-dilectiónis thesáuros misericórditer largíri dignárís: concéde, quaesumus; ut,~
-illi devótum pietátis nostræ præstántes obséquium, dignæ quoque satisfactiónis~
-exhibeámus offícium. Per eundem
 
 [Lectio]
 Léctio Epístolæ beáti Petri Apóstoli.
@@ -74,12 +67,6 @@ Réspice, Dómine, múnera supplicántis Ecclésiæ: et salúti credéntium perpétua~
 sanctificatióne suménda concéde.
 $Per Dominum
 
-[Commemoratio Secreta]
-!Pro Octava sacratissimi Cordis Jesu.
-Réspice, quaesumus, Dómine, ad ineffábilem Cordis dilécti Fílii tui caritátem:~
-ut quod offérimus sit tibi munus accéptum et nostrórum expiátio delictórum. Per~
-eundem
-
 [Communio]
 !Luc 15:10.
 Dico vobis: gáudium est Angelis Dei super uno peccatóre poeniténtiam agénte.
@@ -89,28 +76,3 @@ Sancta tua nos, Dómine, sumpta vivíficent: et misericórdiæ sempitérnæ praeparent
 expiátos.
 $Per Dominum
 
-[Commemoratio Postcommunio]
-!Pro Octava sacratissimi Cordis Jesu.
-Praebeant nobis, Dómine Jesu, divínum tua sancta fervórem: quo dulcíssimi Cordis~
-tui suavitáte percépta; discámus terréna despícere, et amáre coeléstia:
-$Qui vivis
-
-[Commemoratio Oratio]
-!Pro Octavam SSmi Cordis Jesu
-Deus, qui nobis in Corde Fílii tui, nostris vulneráto peccátis, infinítos~
-dilectiónis thesáuros misericórditer largíri dignáris: concéde, quaesumus; ut,~
-illi devótum pietátis nostræ præstántes obséquium, dignæ quoque satisfactiónis~
-exhibeámus offícium. 
-$Per eundem
-
-[Commemoratio Secreta]
-!Pro Octavam SSmi Cordis Jesu
-Réspice, quaesumus, Dómine, ad ineffábilem Cordis dilécti Fílii tui caritátem:~
-ut quod offérimus sit tibi munus accéptum et nostrórum expiátio delictórum. 
-$Per eundem
-
-[Commemoratio Postcommunio]
-!Pro Octavam SSmi Cordis Jesu
-Praebeant nobis, Dómine Jesu, divínum tua sancta fervórem: quo dulcíssimi Cordis~
-tui suavitáte percépta; discámus terréna despícere, et amáre coeléstia:
-$Qui vivis

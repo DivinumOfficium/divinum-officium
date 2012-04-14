@@ -172,6 +172,8 @@ our %predicates =
     innovata    => sub { shift =~ /NewCal/i },
     innovatis   => sub { shift =~ /NewCal/i },
     paschali    => sub { shift =~ /Paschæ|Ascensionis|Octava Pentecostes/i },
+    'post septuagesima'
+                => sub { shift =~ /Septua|Quadra|Passio/i },
     prima       => sub { shift == 1 },
     secunda     => sub { shift == 2 },
     tertia      => sub { shift == 3 },
