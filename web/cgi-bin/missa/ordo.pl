@@ -236,7 +236,7 @@ sub resolve_refs {
 
 
     # Prepend any previous lines that tilde-connect to the current line.
-    $line = "$line_prefix\n$line" if ($line_prefix);
+    $line = "$line_prefix $line" if ($line_prefix);
 
 
     # The remaining transformations are peformed on the whole line as
