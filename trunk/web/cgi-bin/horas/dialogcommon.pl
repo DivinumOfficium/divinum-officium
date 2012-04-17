@@ -172,6 +172,8 @@ our %predicates =
     innovata    => sub { shift =~ /NewCal/i },
     innovatis   => sub { shift =~ /NewCal/i },
     paschali    => sub { shift =~ /Paschæ|Ascensionis|Octava Pentecostes/i },
+    'post septuagesima'
+                => sub { shift =~ /Septua|Quadra|Passio/i },
     prima       => sub { shift == 1 },
     secunda     => sub { shift == 2 },
     tertia      => sub { shift == 3 },
@@ -258,23 +260,34 @@ sub setsetup {
 
 our %setupstring_caches_by_version;
 
+# Constants specifying which @-directives to resolve when calling
+# &setupstring.
+use constant
+{
+	RESOLVE_NONE      => 0,
+	RESOLVE_WHOLEFILE => 1,
+	RESOLVE_ALL       => 2
+};
+
 
 #*** setupstring($basedir, $lang, $fname, %params)
 # Loads the database file from path "$basedir/$lang/$fname" through
-# the cache. If $params{'resolve@'} is true (which it is by default),
-# then in-section inclusions are performed. Whole-file inclusions are
-# always performed.
+# the cache. Inclusions are performed according to the value of
+# $params{'resolve@'}. If omitted, the default is RESOLVE_ALL.
 sub setupstring($$$%)
 {
   my ($basedir, $lang, $fname, %params) = @_;
   my $fullpath = "$basedir/$lang/$fname";
   our ($lang1, $lang2, $missa);
   
-  if ($lang1 && $lang2 && $lang =~ /($lang1|$lang2)/i)
-  {
-    # Fall back to other languages if the specified file doesn't exist.
-    $fullpath = checkfile($1, $fname);
-  }
+  my $inclusionregex = qr/^\s*\@
+    ([^\n:]+)?                    # Filename (self-reference if omitted).
+    (?::([^\n:]+?))?              # Optional keywords.
+    [^\S\n\r]*                    # Ignore trailing whitespace.
+    (?::(.*))?                    # Optional substitutions.
+    $
+    \n?                           # Eat up to one newline.
+    /mx;
 
   our $version;
   
@@ -286,35 +299,66 @@ sub setupstring($$$%)
   unless (exists ${$inclusioncache}{$fullpath})
   {
     # Not yet in cache, so open it and add it.
-    ${$inclusioncache}{$fullpath} = setupstring_parse_file($fullpath, $basedir, $lang) or return '';
+    
+    my ($base_sections, $new_sections) = ({}, {});
+    
+    if ($lang eq 'English')
+    {
+      # English layers on top of Latin.
+      $base_sections = setupstring($basedir, 'Latin', $fname, 'resolve@' => RESOLVE_WHOLEFILE);
+    }
+    elsif ($lang && $lang ne 'Latin')
+    {
+      # Other non-Latin languages layer on top of English.
+      $base_sections = setupstring($basedir, 'English', $fname, 'resolve@' => RESOLVE_WHOLEFILE);
+    }
+    
+    # Get the top layer.
+    if (-e $fullpath)
+    {
+      $new_sections = setupstring_parse_file($fullpath, $basedir, $lang);
+      
+      # Do whole-file inclusions.
+      while (my ($incl_fname, undef, $incl_subst) = (${$new_sections}{'__preamble'} =~ /$inclusionregex/gc))
+      {
+        $incl_fname .= '.txt';
+        if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
+        my $incl_sections = setupstring($basedir, $lang, $incl_fname, %params);
+        ${$new_sections}{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
+      }
+      
+      delete ${$new_sections}{'__preamble'};
+    }
+    
+    # Fill in the missing things from the layer below.
+    ${$new_sections}{$_} ||= ${$base_sections}{$_} foreach (keys(%{$base_sections}));
+    
+    return '' unless keys(%{$new_sections});
+    
+    # Cache the final result.
+    ${$inclusioncache}{$fullpath} = $new_sections;
   }
 
   # Take a copy.
   my %sections = %{${$inclusioncache}{$fullpath}};
-
-  my $inclusionregex = qr/^\s*\@
-    ([^\n:]+)?                    # Filename (self-reference if omitted).
-    (?::([^\n:]+?))?              # Optional keywords.
-    [^\S\n\r]*                    # Ignore trailing whitespace.
-    (?::(.*))?                    # Optional substitutions.
-    $
-    \n?                           # Eat up to one newline.
-    /mx;
-  
+ 
   # Do whole-file inclusions.
-  while (my ($incl_fname, undef, $incl_subst) = ($sections{'__preamble'} =~ /$inclusionregex/gc))
+  unless ($params{'resolve@'} == RESOLVE_NONE)
   {
-    $incl_fname .= '.txt';
-    if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
-    my $incl_sections = setupstring($basedir, $lang, $incl_fname);
-    $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
+    while (my ($incl_fname, undef, $incl_subst) = ($sections{'__preamble'} =~ /$inclusionregex/gc))
+    {
+      $incl_fname .= '.txt';
+      if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
+      my $incl_sections = setupstring($basedir, $lang, $incl_fname, 'resolve@' => RESOLVE_NONE);
+      $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
+    }
   }
   
   delete $sections{'__preamble'};
 
-  $params{'resolve@'} = 1 unless (exists $params{'resolve@'});
+  $params{'resolve@'} = RESOLVE_ALL unless (exists $params{'resolve@'});
   
-  if ($params{'resolve@'})
+  if ($params{'resolve@'} == RESOLVE_ALL)
   {
     # Iterate over all sections, resolving inclusions. We make sure we
     # do [Rule] first, if it exists: we need to use the rule to work
@@ -329,8 +373,24 @@ sub setupstring($$$%)
           $2 ? $2 : $key, # Keyword.
           $3,             # Substitutions.
           $fname)         # Caller's filename.
-          /gex;
+          /ge;
       }
+    }
+  }
+  else
+  {
+    # We're not resolving section inclusions, but we still need to parse
+    # them to fill in implicit file- and section names, so that
+    # daisy-chained references will work as expected.
+    foreach my $key (keys %sections)
+    {
+      s/$inclusionregex/
+        '@' .
+        $1 ? $1 : $fname . ':' .   # Filename.
+        $2 ? $2 : $key   .         # Keyword.
+        $3 ? ":$3" : '' .          # Substitutions.
+        "\n"
+        /ge;
     }
   }
   
@@ -532,7 +592,7 @@ sub get_loadtime_inclusion(\%$$$$$$$)
   
   # Load the file to resolve the reference; if none specified, it's a
   # self-reference.
-  my $inclfile = $ftitle ? setupstring($basedir, $lang, "$ftitle.txt", 'resolve@' => 0) : $sections;
+  my $inclfile = $ftitle ? setupstring($basedir, $lang, "$ftitle.txt", 'resolve@' => RESOLVE_WHOLEFILE) : $sections;
 
   if ($version !~ /Trident/i && $section =~ /Gregem/i && (my ($plural, $class, $name) = papal_commem_rule(${$sections}{'Rule'})))
   {
