@@ -30,9 +30,7 @@ sub horas
     $translate{$lang1} = setupstring($datafolder, $lang1, "Psalterium/Translate.txt");
     $translate{$lang2} = setupstring($datafolder, $lang2, "Psalterium/Translate.txt");
 
-    our %prayers;
-    $prayers{$lang1} = setupstring($datafolder, $lang1, "Psalterium/Prayers.txt");
-    $prayers{$lang2} = setupstring($datafolder, $lang2, "Psalterium/Prayers.txt");
+    cache_prayers();
 
     %chant = %{setupstring($datafolder, 'Latin', "Psalterium/Chant.txt")};
 
