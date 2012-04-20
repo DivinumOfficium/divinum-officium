@@ -819,8 +819,8 @@ sub lectio {
 
   #add Tu autem before responsory
   if ($expand =~ /all/) {
-     my %prayer = %{setupstring($datafolder, $lang, 'Psalterium/Prayers.txt')};
-     $tuautem  = $prayer{'Tu autem'};     
+     our %prayers;
+     $tuautem  = $prayers{$lang}->{'Tu autem'};     
   } else {$tuautem = '$Tu autem'; }
 
   $w =~ s/^\_//;

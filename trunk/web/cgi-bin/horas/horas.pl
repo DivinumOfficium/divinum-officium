@@ -30,6 +30,10 @@ sub horas
     $translate{$lang1} = setupstring($datafolder, $lang1, "Psalterium/Translate.txt");
     $translate{$lang2} = setupstring($datafolder, $lang2, "Psalterium/Translate.txt");
 
+    our %prayers;
+    $prayers{$lang1} = setupstring($datafolder, $lang1, "Psalterium/Prayers.txt");
+    $prayers{$lang2} = setupstring($datafolder, $lang2, "Psalterium/Prayers.txt");
+
     %chant = %{setupstring($datafolder, 'Latin', "Psalterium/Chant.txt")};
 
     $column = 1;
@@ -295,10 +299,11 @@ sub expand
     }
 
     #actual expansion for $ references
-    my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
     $line =~ s/\$//;
-    $line =~ s/\s*$//; 
-    my $text = $prayer{$line};     
+    $line =~ s/\s*$//;
+ 
+    our %prayers;
+    my $text = $prayers{$lang}->{$line};     
     $line =~ s/\n/\<BR\>\n/g;
     $line =~ s/\<BR\>\n$/\n/;
     return $text;
@@ -307,29 +312,16 @@ sub expand
 #*** Pater noster($lang)
 # returns the text of the prayer without Amen, setting V. and R. to the last 2 lines 
 sub pater_noster {
-  $lang = shift;   
-  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
-  my $text = $prayer{'Pater_noster1'};
-  return $text;
-
-  my @text = split("\n", $text);
-  $text[5] =~ s/\~//;
-  $text[6] =~ s/\~//;
-  $text[6] = "V. $text[6]";
-  $text[7] = "R. $text[7]";  
-  $text[7] =~ s/~//;
-  $text[8] =~ s/[AÁ]men[\.]*//;
-  $text = '';
-  foreach (@text) {$text .= "$_\n";}    
-  return $text; 
+  our %prayers;
+  return $prayers{shift()}->{'Pater_noster1'};
 }
 
 #*** teDeum($lang)
 # returns the text of the hymn
 sub teDeum {
   my $lang = shift;
-  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
-  return "\n_\n!Te Deum\n$prayer{'Te Deum'}";
+  our %prayers;
+  return "\n_\n!Te Deum\n$prayers{$lang}->{'Te Deum'}";
 }
    
 
@@ -337,8 +329,8 @@ sub teDeum {
 # return the text Alleluia or Laus tibi
 sub Alleluia { 
   my $lang = shift;  
-  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
-  my $text = $prayer{'Alleluia'};   
+  our %prayers;
+  my $text = $prayers{$lang}->{'Alleluia'};   
   my @text = split("\n", $text); 
   if ($dayname[0] =~ /Quad/i && !Septuagesima_vesp()) {$text = $text[1];}
   else {$text = $text[0];}
@@ -359,25 +351,25 @@ sub Gloria {
   my $lang = shift;	 
   if ($dayname[0] =~ /Quad6/i && $dayofweek > 3 && 
     !($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i)) {return "";}
-  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
-  if ($rule =~ /Requiem gloria/i) {return $prayer{Requiem};}
-  return $prayer{'Gloria'};    
+  our %prayers;
+  if ($rule =~ /Requiem gloria/i) {return $prayers{$lang}->{Requiem};}
+  return $prayers{$lang}->{'Gloria'};
 }
 
 sub Gloria1 {   #* responsories
   my $lang = shift;	 
   if ($dayname[0] =~ /(Quad5|Quad6)/i && $winner !~ /Sancti/i && $rule !~ /Gloria responsory/i)
     {return "";}
-  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
-  return $prayer{'Gloria1'};    
+  our %prayers;
+  return $prayers{$lang}->{'Gloria1'};    
 }
 
 sub Gloria2 { #*Invitatorium
   my $lang = shift;	 
   if ($dayname[0] =~ /(Quad[56])/i) {return "";}
-  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
-  if ($rule =~ /Requiem gloria/i) {return $prayer{Requiem};}
-  return $prayer{'Gloria'};    
+  our %prayers;
+  if ($rule =~ /Requiem gloria/i) {return $prayers{$lang}->{Requiem};}
+  return $prayers{$lang}->{'Gloria'};
 }
 
 
@@ -386,8 +378,8 @@ sub Gloria2 { #*Invitatorium
 #returns the text of the 'Domine exaudi' for non priests
 sub Dominus_vobiscum {     
   my $lang = shift;
-  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
-  my $text = $prayer{'Dominus'};
+  our %prayers;
+  my $text = $prayers{$lang}->{'Dominus'};
   my @text = split("\n", $text);       
   if ($priest) {$text = "$text[0]\n$text[1]"}
   else {  
@@ -415,9 +407,9 @@ sub Dominus_vobiscum2 { #* officium defunctorum
 # adds Alleluia, alleluia for Pasc0
 sub Benedicamus_Domino {
   my $lang = shift;    
-  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
-  my $text = $prayer{'Benedicamus Domino'}; 
-  if (Septuagesima_vesp()) {$text = $prayer{'Benedicamus Domino1'};}
+  our %prayers;
+  my $text = $prayers{$lang}->{'Benedicamus Domino'}; 
+  if (Septuagesima_vesp()) {$text = $prayers{$lang}->{'Benedicamus Domino1'};}
   if ($dayname[0] !~ /Pasc0/i || $hora !~ /(Laudes|Vespera)/i) {return $text;}
   my @text = split("\n", $text);       
   return "$text[0]. Alleluia, alleluia\n$text[1]. Alleluia, alleluia\n";
@@ -1047,8 +1039,8 @@ sub martyrologium {
         }
     }
 
-  my %prayer = %{setupstring($datafolder, $lang, "Psalterium/Prayers.txt")};
-  $t .= $prayer{Conclmart};
+  our %prayers;
+  $t .= $prayers{$lang}->{Conclmart};
   return $t;
 }
 

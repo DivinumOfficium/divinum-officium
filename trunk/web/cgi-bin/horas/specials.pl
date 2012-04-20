@@ -441,17 +441,17 @@ sub specials {
 	  $skipflag = 1;
   }
   if ($item =~ /Conclusio/i && $dirge && $commune !~ /C9/i) {
+    our %prayers;
+
     if ($hora =~ /Vespera/i && $dirge == 1) {  
-      my %prayer =%{setupstring($datafolder, $lang, 'Psalterium/Prayers.txt')};
       push(@s, "\n");	 
-	  push(@s, $prayer{DefunctV});
-	  setbuild1($item, 'Recite Vespera defunctorum');
-	  $skipflag = 1
+      push(@s, $prayers{$lang}->{DefunctV});
+      setbuild1($item, 'Recite Vespera defunctorum');
+      $skipflag = 1
   } elsif ($hora =~ /Laudes/i && $dirge == 2) {
-	  my %prayer =%{setupstring($datafolder, $lang, 'Psalterium/Prayers.txt')};
       push(@s, "\n");	 
-	  push(@s, $prayer{DefunctM});
-	  setbuild1($item, 'Recite Officium defunctorum');
+      push(@s, $prayers{$lang}->{DefunctM});
+      setbuild1($item, 'Recite Officium defunctorum');
     }
   }
   
@@ -1042,8 +1042,8 @@ sub oratio
     if ($priest) {push (@s, "&Dominus_vobiscum");}
     elsif (!$precesferiales) {push (@s, "&Dominus_vobiscum");}
     else {   
-     my %prayer =%{setupstring($datafolder, $lang, 'Psalterium/Prayers.txt')};
-     my $text = $prayer{'Dominus'};
+     our %prayers;
+     my $text = $prayers{$lang}->{'Dominus'};
      my @text = split("\n", $text);
      push (@s, $text[4]);
      $precesferiales = 0;
@@ -1360,8 +1360,8 @@ sub getcommemoratio {
  
   if (!$v) {$v = 'versus missing';}     
 
-  my %prayer =%{setupstring($datafolder, $lang, 'Psalterium/Prayers.txt')};
-  my $w = "!Commemoratio $rank[0]\nAnt. $a\n_\n$v\n_\n$prayer{Oremus}\nv. $o\n"; 
+  our %prayers;
+  my $w = "!Commemoratio $rank[0]\nAnt. $a\n_\n$v\n_\n$prayers{$lang}->{Oremus}\nv. $o\n"; 
   return $w;
 }
 

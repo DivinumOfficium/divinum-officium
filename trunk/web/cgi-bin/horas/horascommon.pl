@@ -1737,4 +1737,16 @@ sub build_comment_line()
   $comment = ($dayname[2]) ? "<FONT COLOR=$commentcolor SIZE=-1><I>$dayname[2]</I></FONT>" : "";
 }
 
+#*** cache_prayers()
+#  Loads Prayers.txt for each language into global hash.
+sub cache_prayers()
+{
+  our %prayers;
+  our ($lang1, $lang2);
+  our $datafolder;
+  my $dir = our $missa ? 'Ordo' : 'Psalterium';
+  $prayers{$lang1} = setupstring($datafolder, $lang1, "$dir/Prayers.txt");
+  $prayers{$lang2} = setupstring($datafolder, $lang2, "$dir/Prayers.txt");
+}
+
 1;
