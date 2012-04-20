@@ -64,6 +64,8 @@ $title =~ s/[\$\&]//;
 #$tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;
 #%translate = %{setupstring($datafolder, $tlang, "Ordo/Translate.txt")};
 
+cache_prayers();
+
  $text = gettext($popup, $lang1); 
  $t = length($text);
  $width = ($t > 300) ? 600 : 400;

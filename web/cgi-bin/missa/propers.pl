@@ -150,8 +150,8 @@ sub translate_label
     $item =~ s/\s*$//;              
     if ($lang !~ /Latin/i)
     {
-        my %p = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
-        $item = exists($p{$item})? $p{$item}: $item;
+        our %prayers;
+        $item = exists(${$prayers{$lang}}{$item}) ? $prayers{$lang}->{$item} : $item;
     }
 
     if ($item =~ /Gradual/i)
@@ -246,14 +246,14 @@ sub oratio
         }
     }
 
-    my %prayer =%{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
+    our %prayers;
     my $orm = '';
 
     # The Priest says Orémus except for Secreta prayers...
-    $orm = "$prayer{Oremus}\n" unless $type =~ /Secreta/i;
+    $orm = "$prayers{$lang}->{Oremus}\n" unless $type =~ /Secreta/i;
 
     # ... and the Deacon says Flectamus for Oratio prayers during IV Temporum
-    $orm .= "$prayer{Flectamus}\n" if $type =~ /Oratio/i && $rule =~ /LectioL/ && $dayname[0] !~ /Pasc/i;
+    $orm .= "$prayers{$lang}->{Flectamus}\n" if $type =~ /Oratio/i && $rule =~ /LectioL/ && $dayname[0] !~ /Pasc/i;
 
     $retvalue = "$orm\n$w\n";
     $ctotalnum = 1;
@@ -278,7 +278,7 @@ sub oratio
     return resolve_refs($retvalue, $lang) if $rule =~ /omit .*? commemoratio/i || ($version =~ /1960/ && $solemn);
 
     $w = '';
-    our $oremusflag = "\_\n$prayer{Oremus}\n";
+    our $oremusflag = "\_\n$prayers{$lang}->{Oremus}\n";
     $oremusflag = '' if $type =~ /Secreta/i;
     if (exists($w{'$type Vigilia'}) && ($version !~ /(1955|1960)/ || $rule =~ /Vigilia/i))
     {
@@ -728,9 +728,9 @@ sub replaceNpb {
 sub Gloria {
   my $lang = shift;	 
   if (DeTemporePassionis() && $rule !~ /Requiem gloria/) {return "";}
-  my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
-  if ($rule =~ /Requiem gloria/i) {return $prayer{Requiem};}
-  return $prayer{'Gloria'};    
+  our %prayers;
+  if ($rule =~ /Requiem gloria/i) {return $prayers{$lang}->{Requiem};}
+  return $prayers{$lang}->{'Gloria'};
 }
 
 sub getitem {
@@ -779,9 +779,9 @@ sub getitem {
 sub Vidiaquam { 
   my $lang = shift;
   if ($solemn && $rank >=5 && $winner{Rank} !~ /(Feria|Die |Sabbato)/i && $votive !~ /Defunct/i) {
-    my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
+    our %prayers;
     my $name = ($dayname[0] =~ /Pasc/i) ? 'Vidi aquam' : 'Asperges me';
-    my $w = $prayer{$name};
+    my $w = $prayers{$lang}->{$name};
     return resolve_refs($w);
   } else {return '';}
 }
@@ -1032,8 +1032,8 @@ sub communio {
 sub Flectamus
 {
     my $lang = shift;
-    my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
-    return $prayer{Flectamus}
+    our %prayers;
+    return $prayers{$lang}->{Flectamus};
 }
 
 # DominusVobiscum returns the prayer unless in IV Tempora when it's not usually used
@@ -1042,10 +1042,10 @@ sub DominusVobiscum
 {
     my $lang = shift;
     my $opt = shift || 0;
-    my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
+    our %prayers;
 
     # In missis IV temporum: "Post Kyrie, eleison, dicitur: Oremus. Flectamus genua. — Levate."
-    return ($rule =~ /LectioL/ && !$opt)? '': "$prayer{'Dominus vobiscum'}";
+    return ($rule =~ /LectioL/ && !$opt)? '': "$prayers{$lang}->{'Dominus vobiscum'}";
 }
 
 sub postcommunio {
@@ -1060,8 +1060,8 @@ sub itemissaest
   our ($version, $rule);
 
   my $lang = shift;
-  my %prayer = %{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
-  my $text = $prayer{'IteMissa'};
+  our %prayers;
+  my $text = $prayers{$lang}->{'IteMissa'};
   my @text = split("\n", $text);
   my $benedicamus = (gloriflag() && $version !~ /1960/) || ($rule =~ /^\s*Benedicamus Domino\s*$/mi);
 
@@ -1090,8 +1090,8 @@ sub Ultimaev {
   my ($t, %p);
 
   if ($version =~ /(1955|1960)/ || !exists($commemoratio{Evangelium})) {
-    %p =%{setupstring($datafolder, $lang, 'Ordo/Prayers.txt')};
-	$t = $p{'Ultima Evangelium'};
+    our %prayers;
+    $t = $prayers{$lang}->{'Ultima Evangelium'};
   } else {
     %p = (columnsel($lang)) ? %commemoratio : %commemoratio2;
     $t = $p{Evangelium}; 
