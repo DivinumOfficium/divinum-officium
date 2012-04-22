@@ -10,10 +10,10 @@ ex C5;mtv
 
 [Versum 1]
 V. Potens in terra erit semen ejus.
-R. Generatio rectorum benedicetur.
+R. Generátio rectórum benedicétur.
 
 [Ant 1]
-Laudemus virum gloriosum * in generatione sua, quia benedictionem omnium gentium dedit illi Dominus: et testamentum suum confirmavit super caput ejus.
+Laudémus * virum gloriósum in generatióne sua, quia benedictiónem ómnium géntium dedit illi Dóminus, et testaméntum suum confirmávit super caput ejus.
 
 [Oratio]
 Deus, qui prae omnibus Sanctis tuis beatum Joachim Genitricis Filii tui patrem esse voluisti: concede, quaesumus: ut cujus festa veneramur, ejus quoque perpetuo patrocinia sentiamus.
@@ -47,15 +47,13 @@ Porro Heli, qui ex tribu Nathan erat, nullis liberis susceptis, e vita migravit:
 &teDeum
 
 [Versum 2]
-V. Potens in terra erit semen ejus.
-R. Generatio rectorum benedicetur.
+@:Versum 1
 
 [Ant 2]
-Laudémus * virum gloriósum in generatióne sua, quia benedictiónem ómnium géntium dedit illi Dóminus, et testaméntum suum confirmávit super caput ejus.
-
-[Ant 3]
-@:Ant 2
+@:Ant 1
 
 [Versum 3]
 @:Versum 1
 
+[Ant 3]
+@:Ant 1
