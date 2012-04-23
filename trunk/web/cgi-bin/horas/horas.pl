@@ -633,13 +633,15 @@ sub getantcross {
 
 sub depunct {
   my $item = shift;
-  $item =~ s/[\.\,\:\?\!\"\'\;\*]//g;
+  $item =~ s/[.,:?!"';*]//g;
   $item =~ s/[áÁ]/a/g;
   $item =~ s/[éÉ]/e/g;
   $item =~ s/[íí]/i/g;
+  $item =~ tr/Jj/Ii/;
   $item =~ s/[óöõÓÖÔ]/o/g;
-  $item =~ s/[úüûÚÜÛ]/u/g;	  
+  $item =~ s/[úüûÚÜÛ]/u/g;
   $item =~ s/æ/ae/g;
+  $item =~ s/œ/oe/g;
   return $item;
 }
 
@@ -873,62 +875,77 @@ sub translate {
 
 #*** ant_Benedictus($num, $lang)
 # returns the antiphona $num=1 = for beginning =2 for end
-sub ant_Benedictus {  
+sub ant_Benedictus
+{  
   my $num = shift;
-  my $lang = shift;      
+  my $lang = shift;
+
+  our ($version, $winner);
+  our ($month, $day);
+  our $duplex;
   
-  if ($ck) {
-    if ($lang =~ $lang1) {$version = $version1}
-	else {$version = $version2;}
+  if (our $ck)
+  {
+    if ($lang =~ our $lang1) {$version = our $version1;}
+    else {$version = our $version2;}
   }
 
-  my ($a, $c) = getantvers('Ant', 2, $lang);  
-  if ($month == 12 && ($day == 21 || $day == 23) && $winner =~ /tempora/i) {
-    my %v = %{setupstring($datafolder, $lang, "Psalterium/Major Special.txt")};
-    $a = $v{"Adv Ant $day" . "L"};    
+  my ($ant) = getantvers('Ant', 2, $lang);  
+  if ($month == 12 && ($day == 21 || $day == 23) && $winner =~ /tempora/i)
+  {
+    my %specials = %{setupstring(our $datafolder, $lang, "Psalterium/Major Special.txt")};
+    $ant = $specials{"Adv Ant $day" . "L"};    
   }
-  if ($dayname[0] !~ /Pasc/i) {$a =~ s/\(Allel[uú][ij]a.*?\)//isg;}
-  else {$a =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;}
   
-  my @a = split('\*', $a);
-  if ($num == 1 && $duplex < 3 && $version !~ /1960/) {return "Ant. $a[0]";}
-  elsif ($num == 1) {return "Ant. $a"}
-  else {"Ant. {::}$a";}
+  my @ant_parts = split('\*', $ant);
+
+  if ($num == 1 && $duplex < 3 && $version !~ /1960/) {return "Ant. $ant_parts[0]";}
+  if ($num == 1) {return "Ant. $ant";}
+  else {return "Ant. {::}$ant";}
 }
 
 #*** ant_Magnificat($num, $lang)
 # returns the antiphon for $num=1 the beginning, or =2 for the end
-sub ant_Magnificat {     
+sub ant_Magnificat
+{     
   my $num = shift;   #1=before, 2=after
   my $lang = shift;
 
-  if ($ck) {
-    if ($lang =~ $lang1) {$version = $version1}
-	  else {$version = $version2;}
+  our ($version, $winner);
+  our ($month, $day);
+  our $duplex;
+  our $rank;
+  our $vespera;
+  
+  if (our $ck)
+  {
+    if ($lang =~ our $lang1) {$version = our $version1;}
+    else {$version = our $version2;}
   }
 								      
   my $v = ($version =~ 1960 && $winner =~ /Sancti/i && $rank < 5) ? 3 : $vespera;
                    
-  my ($a, $c) = getantvers('Ant', $v, $lang);   
+  my ($ant) = getantvers('Ant', $v, $lang);   
   
   # Special processing for Common of Supreme Pontiffs. Confessor-Popes
   # have a common Magnificat antiphon at second Vespers.
-  if ($version !~ /Trident/i && $v == 3 && (my (undef, $class) = papal_rule($winner{Rule})) && $class =~ /C/i) {
-	$a = papal_antiphon_dum_esset($lang);
+  if ($version !~ /Trident/i && $v == 3 && (my (undef, $class) = papal_rule($winner{Rule})) && $class =~ /C/i)
+  {
+    $ant = papal_antiphon_dum_esset($lang);
   }
   
-  if ($month ==12 && ($day > 16 && $day < 24) && $winner =~ /tempora/i) {
-    my %v = %{setupstring($datafolder, $lang, "Psalterium/Major Special.txt")};
-	  $a = $v{"Adv Ant $day"};
+  if ($month == 12 && ($day > 16 && $day < 24) && $winner =~ /tempora/i)
+  {
+    my %specials = %{setupstring($datafolder, $lang, "Psalterium/Major Special.txt")};
+    $ant = $specials{"Adv Ant $day"};
     $num = 2;
   }
-  if ($dayname[0] !~ /Pasc/i) {$a =~ s/\(Allel[uú][ij]a.*?\)//isg;}
-  else {$a =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;}
 
-  my @a = split('\*', $a);
-  if ($num == 1 && $duplex < 3 && $version !~ /1960/) {return "Ant. $a[0]";}
-  elsif ($num == 1) {return "Ant. $a"}
-  else {"Ant. {::}$a" ;}
+  my @ant_parts = split('\*', $ant);
+
+  if ($num == 1 && $duplex < 3 && $version !~ /1960/) {return "Ant. $ant_parts[0]";}
+  if ($num == 1) {return "Ant. $ant";}
+  else {return "Ant. {::}$ant";}
 }
 
 #*** canticum($psnum, $lang)
@@ -1207,5 +1224,134 @@ sub columnsel {
   my $lang = shift;
   if ($Ck) {return ($column == 1) ? 1 : 0;}
   return ($lang =~ /^$lang1$/i) ? 1 : 0;
+}
+
+#*** ensure_single_alleluia($text, $lang)
+# Ensures that $text ends in a single 'alleluia' (or rather the
+# appropriate translation for $lang).
+sub ensure_single_alleluia(\$$)
+{
+  my ($text, $lang) = @_;
+  our %prayers;
+
+  my $alleluia = $prayers{$lang}->{'Alleluia Simplex'};
+  $alleluia =~ s/\s+$//;
+  my $alleluia_depunct = depunct($alleluia);
+
+  # Add a single 'alleluia', unless it's already there.
+  $$text =~ s/\W*?(\s*)$/$alleluia$1/ unless depunct($$text) =~ /$alleluia_depunct\s*$/i;
+}
+
+#*** ensure_resp_paschal($text, $lang)
+# Arranges that $text should end in a double 'alleluia' (or rather the
+# appropriate translation for $lang), and that the asterisk should be
+# placed correctly, if it appears that the response is not already in
+# the Paschal form.
+sub ensure_double_alleluia(\$$)
+{
+  my ($text, $lang) = @_;
+  our %prayers;
+
+  my $alleluia = $prayers{$lang}->{'Alleluia Duplex'};
+  $alleluia =~ s/\s+$//;
+  my $alleluia_depunct = depunct($alleluia);
+
+  unless (depunct($$text) =~ /$alleluia_depunct\s*$/i)
+  {
+    # Add a double 'alleluia' and move the asterisk.
+    $$text =~ s/\s*\*\s*/ /;
+    $$text =~ s/\W*?(\s*)$/, * $alleluia$1/;
+  }
+}
+
+#*** process_inline_alleluia($text)
+# Removes all alleluias after Septuagesima; removes bracketed alleluias
+# outside of Paschaltide; unbrackets bracketed alleluias in
+# Paschaltide.
+sub process_inline_alleluias(\$)
+{
+  my $text = shift;
+  our @dayname;
+
+  if ($dayname[0] !~ /Pasc/i) {$$text =~ s/\(Allel[uú][ij]a.*?\)//isg;}
+  else {$$text =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;}
+  if ($dayname[0] =~ /Quad/i) {$$text =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;}
+}
+
+#*** postprocess_ant($ant, $lang)
+# Performs necessary adjustments to an antiphon.
+sub postprocess_ant(\$$)
+{
+  my ($ant, $lang) = @_;
+  our @dayname;
+
+  process_inline_alleluias($$ant);
+  ensure_single_alleluia($$ant, $lang) if ($dayname[0] =~ /Pasc/i && !officium_defunctorum());
+}
+
+#*** postprocess_vr($vr, $lang)
+# Performs necessary adjustments to a versicle and repsonse.
+sub postprocess_vr(\$$)
+{
+  my ($vr, $lang) = @_;
+  our @dayname;
+
+  process_inline_alleluias($$vr);
+
+  if ($dayname[0] =~ /Pasc/i && !officium_defunctorum())
+  {
+    my ($versicle, $response) = split(/(?=^\s*R\.)/m, $$vr);
+    ensure_single_alleluia($versicle, $lang);
+    ensure_single_alleluia($response, $lang);
+    $$vr = $versicle . $response;
+  }
+}
+
+#*** postprocess_short_resp(@capit, $lang)
+# Performs necessary adjustments to a short responsory.
+sub postprocess_short_resp(\@$)
+{
+  my ($capit, $lang) = @_;
+
+  s/&Gloria/&Gloria1/ for (@$capit);
+
+  if ($dayname[0] =~ /Pasc/i)
+  {
+    my $rlines = 0;
+
+    for (@$capit)
+    {
+      if (/^R\.br\./ ... (/^R\./ && ++$rlines >= 3))
+      {
+        # Short responsory proper.
+
+        if ((/^V\./ .. /^R\./) && /^R\./)
+	{
+	  our %prayers;
+	  $_ = 'R. ' . $prayers{$lang}->{'Alleluia Duplex'};
+	}
+        elsif (/^R\./)
+	{
+	  ensure_double_alleluia($_, $lang);
+	}
+      }
+      elsif (/^[VR]\./)
+      {
+        # V/R following short responsory.
+        ensure_single_alleluia($_, $lang);
+      }
+    }
+  }
+}
+
+
+
+#*** officium_defunctorum()
+# Detects whether the office is of the dead. This is checked in lots
+# of different ways throughout the program; this function is the
+# beginning of an attempt at uniformity.
+sub officium_defunctorum()
+{
+  return our $votive =~ /C9|Defunctorum/i;
 }
 
