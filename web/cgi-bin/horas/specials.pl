@@ -214,7 +214,7 @@ sub specials {
                                                    
        if ($w) {@capit = split("\n", $w); $comment = $c;}	 
 
-       @capit = setalleluia(@capit);   
+       postprocess_short_resp(@capit, $lang);   
 
        setcomment($label, 'Source', $comment, $lang);
 
@@ -713,6 +713,7 @@ sub psalmi_minor {
   if ($ant && $ant !~ /^Ant/i) {$ant = "Ant. $ant";}
 
   my @ant = split( '\*', $ant);
+  postprocess_ant($ant, $lang);
   $ant1 = ($version !~ /1960/) ? $ant[0] : $ant;    #difference between 1955 and 1960
   setcomment($label, 'Source', $comment, $lang, $prefix);
  
@@ -886,22 +887,22 @@ sub psalmi_major {
     antetpsalm_mm('',-2);
   } else {for ($i = 0; $i < @psalmi; $i++) {
       my $last = ($i == (@psalmi - 1)) ? 1 : 0; 
-	  antetpsalm($psalmi[$i], $i, $last); 
+	  antetpsalm($psalmi[$i], $i, $last, $lang); 
   }}
   return;
 }
 
-#*** antetpsalm($line, $i) 
+#*** antetpsalm($line, $i, $last, $lang) 
 # format of line is antiphona;;psalm number
 # returns the psalm included into the starting end ending antiphones
 # handles duplex or no attribute, and the nonreadeable beginnings
 sub antetpsalm {
-  my $line = shift;
-  my $ind = shift; 
-  my $last = shift;  	  		  
+  my ($line, $ind, $last, $lang) = @_;
   my @line = split(';;', $line);  
   my @ant = split('\*', $line[0]);  
   my $ant = $line[0];  
+
+  postprocess_ant($ant, $lang);
 
   my $ant1 = ($duplex > 2 || $version =~ /1960/) ? $ant : $ant[0];  #difference between 1995, 1960
 
@@ -917,9 +918,6 @@ sub antetpsalm {
       
 
   $ant1 =~ s/\;\;[0-9\;n]+//;
-  if ($dayname[0] !~ /Pasc/i) {$ant1 =~ s/\(Allel[uú][ij]a.*?\)//isg;}
-  else {$ant1 =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;}
-  if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;}
   if ($ant1) {push (@s, "Ant. $ant1");}
   my $p = $line[1];
   my @p = split(';', $p);
@@ -935,9 +933,6 @@ sub antetpsalm {
   if ($ant) {
     $ant =~ s/\;\;[0-9\;n]+//;
     push (@s, '_');
-    if ($dayname[0] !~ /Pasc/i) {$ant =~ s/\(Allel[uú][ij]a.*?\)//isg;}
-	else {$ant =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;}
-    if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;}
     push (@s, "Ant. $ant");
   }
   push (@s, "\n");
@@ -1353,12 +1348,16 @@ sub getcommemoratio {
 
   if (!$a) {return '';} 
 
+  postprocess_ant($a, $lang);
+
   my $v = $w{"Versum $ind"};	 
   if (!$v) {$i = 4 - $ind; $v = $w{"Versum $i"};}
   if (!$v) {$v = $c{"Versum $ind"};}
   if (!$v) {$v = getfrompsalterium('Versum', $ind, $lang);}
  
   if (!$v) {$v = 'versus missing';}     
+
+  postprocess_vr($v, $lang);
 
   our %prayers;
   my $w = "!Commemoratio $rank[0]\nAnt. $a\n_\n$v\n_\n$prayers{$lang}->{Oremus}\nv. $o\n"; 
@@ -1522,39 +1521,54 @@ sub getanthoras {
 # returns {$item $ind] item, trying first from the proprium then from the psalterium
 # $item = Ant Versum
 # $ind = 1 = Vespera1, 2 = Laudes  3=Vespera2; as special: 0=matutinum, 4=completorium
-sub getantvers {
+sub getantvers
+{
   my $item = shift;	 
   my $ind = shift;
   my $lang = shift;
-							          
+
+  our ($hora, $winner);
+
   my $w = '';
   my $c = 0;
   ($w, $c) = getproprium("$item $ind", $lang, 1, 1);    
 
-  my $i; 
-  if (!$w && $ind > 1) {$i = 4 - $ind; ($w, $c) = getproprium("$item $i", $lang, 1, 1);}
+  if (!$w && $ind > 1)
+  {
+    my $i = 4 - $ind;
+    ($w, $c) = getproprium("$item $i", $lang, 1, 1);
+  }
+
   #if (!$w && $ind != 2) {($w, $c) = getproprium("$item 2", $lang, 1, 1);} 
   #if (!$w && $ind == 2) {($w, $c) = getproprium("$item 3", $lang, 1, 1);}
   #if (!$w && $ind == 2) {($w, $c) = getproprium("$item 1", $lang, 1, 1);}
-  if ($w && $dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;}
-  if ($w) {return ($w, $c);}  
-					 
+
   #handle seant
-  if ($hora =~ /Vespera/i && $item =~ /Ant/i && $winner =~ /Tempora\/Quadp[12]/i) {
-	$w = getseant($lang);  
-    if ($w) {
-	  setbuild2("$item $ind ex praevio omitto");
-	  return ($w, 1);
-	}
+  if (!$w && $hora =~ /Vespera/i && $item =~ /Ant/i && $winner =~ /Tempora\/Quadp[12]/i)
+  {
+    $w = getseant($lang);  
+    if ($w)
+    {
+      setbuild2("$item $ind ex praevio omitto");
+      $c = 0;
+    }
   }
 
-  $w = getfrompsalterium($item, $ind, $lang);
-  if ($w && $dayname[0] =~ /Quad/i) {$w =~ s/allel[uú][ij]a[\.\,]*//ig;}
+  if (!$w)
+  {
+    $w = getfrompsalterium($item, $ind, $lang);
+    $c = 0;
+    setbuild2("$item $ind ex Psalterio");
+  }
 
-
-  if ($w) {setbuild2("$item $ind ex Psalterio");}
+  if ($w)
+  {
+    if ($item =~ /Versum/i) {postprocess_vr($w, $lang);}
+    else {postprocess_ant($w, $lang);}
+  }
   else {$w = "$item $ind missing";}
-  return ($w, 0);
+
+  return ($w, $c);
 }
 
 #*** sub getseant($lang)
@@ -1666,32 +1680,6 @@ sub setbuild {
   if ($comment =~ /ord/i) {$comment = setfont($redfont, $comment);}
   else {$comment = ",,,$comment";}
   $buildscript .= "$comment: $source $name\n";	   
-}
-
-#setalleluia(@capit) set alleluia
-sub setalleluia {
-  my @capit = @_;      
-  if ($dayname[0] !~ /Pasc/i) {
-     for ($i = 0; $i < @capit; $i++) {
-       $capit[$i] =~ s/\&Gloria/\&Gloria1/;
-     }
-     return @capit;
-  }
-  my $i;
-  my $flag = 0;
-  for ($i = 0; $i < @capit; $i++) {
-     if ($capit[$i] =~ /^R\.br/i) {$flag = 3;}
-     if ($capit[$i] =~ /^V\./ && $flag == 3) {$flag = 4; next;}
-	 if ($capit[$i] =~ /^\&Gloria/i) {$capit[$i] = "$`\&Gloria1$'"; $flag = 2; next;}
-     if ($flag == 0) {next;}
-     if ($capit[$i] =~ /(allel[uú][ij]a)/i || $capit[$i] !~ /[RV]\./i) {next;}
-     $capit[$i] = chompd($capit[$i]);  
-     if ($flag == 4) {$capit[$i] = 'R. Alleluia, alleluia'; $flag = 3;}
-	 elsif ($flag > 1 && $capit[$i] !~ /allel[uú][ij]a/i) {$capit[$i] .= " alleluia, alleluia\n";}
-     elsif ($capit[$i] !~ /allel[uú][ij]a/i)  {$capit[$i] .= " alleluia.\n";}
-     if ($flag == 2) {$flag = 1;}
-  }
-  return @capit;
 }
 
 sub doxology {
