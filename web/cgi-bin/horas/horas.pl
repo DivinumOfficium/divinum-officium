@@ -1284,6 +1284,9 @@ sub postprocess_ant(\$$)
 {
   my ($ant, $lang) = @_;
   our @dayname;
+  
+  # Don't do anything to null antiphons.
+  return unless $$ant;
 
   process_inline_alleluias($$ant);
   ensure_single_alleluia($$ant, $lang) if ($dayname[0] =~ /Pasc/i && !officium_defunctorum());
@@ -1295,6 +1298,9 @@ sub postprocess_vr(\$$)
 {
   my ($vr, $lang) = @_;
   our @dayname;
+  
+  # Don't do anything to null v/r.
+  return unless $$vr;
 
   process_inline_alleluias($$vr);
 
