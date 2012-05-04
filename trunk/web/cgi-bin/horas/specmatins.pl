@@ -830,7 +830,7 @@ sub lectio {
     $rest =~ s/[\n\_ ]*$//gs;	
     while ($rest =~ /_/) {$before .= "$`_"; $rest = $';}	
 	  if (!$before) {$before = $w; $rest = '';}
-	  $before =~ s/[\n\_ ]*$//gs;	
+	  $before =~ s/[\n\_ ~]*$//gs;	
     if ($before =~ /\&teDeum/) {$before = $`; $rest = "&teDeum\n";} 
     elsif ($rest =~ /\&teDeum/) {$before .= "\n_\n$`"; $rest = "&teDeum\n";};       
 	  $w = "$before" . "\n$tuautem\n_\n$rest";	  
