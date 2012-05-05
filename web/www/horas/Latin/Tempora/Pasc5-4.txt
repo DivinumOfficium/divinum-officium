@@ -14,11 +14,11 @@ Psalm5 vespera=116
 No Commemoratio
 			
 [Ant Vespera]
-Viri Galilaei, * quid aspicitis in caelum? Hic Jesus, qui assumptus est a vobis in caelum, sic veniet, alleluia;;109
-Cumque intuerentur * in caelum euntem illum, dixerunt, alleluia;;110
-Elevatis manibus * benedixit eis, et ferebatur in caelum, alleluia;;111
-Exaltate Regem regum, * et hymnum dicite Deo, alleluia;;112
-Videntibus illis * elevatus est, et nubes suscepit eum in caelo, alleluia;;116
+Viri Galilaei, * quid aspicitis in caelum? Hic Jesus, qui assumptus est a vobis in caelum, sic veniet, alleluia.
+Cumque intuerentur * in caelum euntem illum, dixerunt, alleluia.
+Elevatis manibus * benedixit eis, et ferebatur in caelum, alleluia.
+Exaltate Regem regum, * et hymnum dicite Deo, alleluia.
+Videntibus illis * elevatus est, et nubes suscepit eum in caelo, alleluia.
 
 [Capitulum Vespera]
 !Act. 1:1-2
@@ -248,19 +248,13 @@ praedicatur: quia ille uidelicet docetur propter quem in terra cuncta creata sun
 &teDeum
 
 [Ant Laudes]
-Viri Galilaei, * quid aspicitis in caelum? Hic Jesus, qui assumptus est a vobis in caelum, sic veniet, alleluia
-Cumque intuerentur * in caelum euntem illum, dixerunt, alleluia
-Elevatis manibus * benedixit eis, et ferebatur in caelum, alleluia.
-Exaltate Regem regum, * et hymnum dicite Deo, alleluia.
-Videntibus illis * elevatus est, et nubes suscepit eum in caelo, alleluia.
+@:Ant Vespera
 
 [Capitulum Laudes]
-!Acts 1:1-2
-v. Primum quidem sermonem feci de omnibus, o Theophile, quae coepit Jesus facere, et docere usque in diem, qua praecipiens Apostolis per Spiritum Sanctum, quos elegit, assumptus est.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
-@Tempora/Pasc5-4:Hymnus Vespera
+@:Hymnus Vespera
 
 [Versum 2]
 V. Dominus in caelo, alleluia.
@@ -280,12 +274,10 @@ $Per eumdem
 
 [Lectio Prima]
 !Acts 1:11
-V. Viri Galilaei, quid statis aspicientes in caelum? Hic Jesus, qui assumptus est a vobis in caelum, sic veniet, quemadmodum vidistis eum euntem in caelum.
+v. Viri Galilaei, quid statis aspicientes in caelum? Hic Jesus, qui assumptus est a vobis in caelum, sic veniet, quemadmodum vidistis eum euntem in caelum.
 
 [Capitulum Tertia]
-!Acts 1:1-2
-v. Primum quidem sermonem feci de omnibus, o Theophile, quae coepit Jesus facere, et docere usque in diem, qua praecipiens Apostolis per Spiritum Sanctum, quos elegit, assumptus est.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Ascendit Deus in jubilatione, * Alleluia, alleluia.
@@ -315,8 +307,7 @@ V. Ascendo ad Patrem meum, et Patrem vestrum, alleluia.
 R. Deum meum, et Deum vestrum, alleluia.
 
 [Capitulum Nona]
-!Acts 1:11
-v. Viri Galilaei, quid statis aspicientes in caelum? Hic Jesus, qui assumptus est a vobis in caelum, sic veniet, quemadmodum vidistis eum euntem in caelum.
+@:Lectio Prima
 $Deo gratias
 
 [Responsory Nona]
@@ -331,8 +322,7 @@ V. Dominus in caelo, alleluia.
 R. Paravit sedem suam, alleluia.
 
 [Versum 3]
-V.  Ascendit Deus in jubilatione, alleluja.
-R.  Et Dominus in voce tubae, alleluja.
+@:Versum 1
 
 [Ant 3]
 O Rex gloriae, * Domine virtutum qui triumphator hodie super omnes caelos ascendisti, ne derelinquas nos orphanos: sed mitte promissum Patris in nos, Spiritum veritatis, alleluia.
