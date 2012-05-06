@@ -1,3 +1,6 @@
+@Tempora/Pasc6-0
+(sed rubrica 1960 omittitur)
+
 [Rank]
 Feria VI Post Octavam Ascensionis;;Semiduplex;;2;;ex Tempora/Pasc5-4
 
@@ -9,7 +12,6 @@ ex Tempora/Pasc5-4;
 9 Lectiones
 Doxology=Asc
 Feria Te Deum 
-Comex=Tempora/Pasc6-0;
 No suffragium
 
 [Lectio1]
@@ -20,8 +22,8 @@ Lesson from the third letter of St John the Apostle
 3 I was exceedingly glad when the brethren came and gave testimony to the truth in thee, even as thou walkest in the truth.
 4 I have no greater grace than this, to hear that my children walk in truth.
 
-[Responsory1]
-@Tempora/Pasc5-4:Responsory1
+[Lectio1] (rubrica 1960)
+@Tempora/Pasc6-6:LectioJudae1
 
 [Lectio2]
 !3 John 1:5-10
@@ -32,8 +34,8 @@ Lesson from the third letter of St John the Apostle
 9 I had written perhaps to the church: but Diotrephes, who loveth to have the pre-eminence among them, doth not receive us.
 10 For this cause, if I come, I will advertise his works which he doth, with malicious words prating against us. And as if these things were not enough for him, neither doth he himself receive the brethren, and them that do receive them he forbiddeth, and casteth out of the church.
 
-[Responsory2]
-@Tempora/Pasc5-4:Responsory2
+[Lectio2] (rubrica 1960)
+@Tempora/Pasc6-6:LectioJudae2
 
 [Lectio3]
 3 John 1:11-14
@@ -42,8 +44,8 @@ Lesson from the third letter of St John the Apostle
 13 I had many things to write unto thee: but I would not by ink and pen write to thee.
 14 But I hope speedily to see thee, and we will speak mouth to mouth. Peace be to thee. Our friends salute thee. Salute the friends by name.
 
-[Responsory3]
-@Tempora/Pasc5-4:Responsory3
+[Lectio3] (rubrica 1960)
+@Tempora/Pasc6-6:LectioJudae3
 
 [Lectio4]
 From the Sermons of St Austin, Bishop of Hippo.
@@ -65,12 +67,10 @@ At that time Jesus said unto His disciples: When the Comforter is come, whom I w
 _
 Homily by St Austin, Bishop of Hippo.
 !92nd Tract on John.
-Upon the day of Pentecost the Holy Ghost came down upon a congregation of an hundred and twenty men, among whom were all the Apostles. These men, after they had been filled with the Spirit, began to speak with the tongues of all nations, and many of the bystanders, amazed at the marvel, when they saw in the discourse of Peter, how great and how Divine a witness was borne to the fact that the Christ, Whom they had murdered, and Whom they reckoned among the dead, had risen again and was alive, many of these bystanders were pricked in their heart (Acts ii. $7) an d were converted. They received pardon from that noble Blood, Which they had so sacrilegiously and so brutally shed, seeing that that Blood had redeemed even Its Own out-pourers.
+Upon the day of Pentecost the Holy Ghost came down upon a congregation of an hundred and twenty men, among whom were all the Apostles. These men, after they had been filled with the Spirit, began to speak with the tongues of all nations, and many of the bystanders, amazed at the marvel, when they saw in the discourse of Peter, how great and how Divine a witness was borne to the fact that the Christ, Whom they had murdered, and Whom they reckoned among the dead, had risen again and was alive, many of these bystanders were pricked in their heart (Acts ii. 37) and were converted. They received pardon from that noble Blood, Which they had so sacrilegiously and so brutally shed, seeing that that Blood had redeemed even Its Own out-pourers.
 
 [Lectio8]
 The Blood of Christ "Which is shed for many for the remission of sins" was so effectually shed, that It could remit even the very sin that shed It. Toward this looked the Lord when He said " They hated Me without a cause but when the Comforter is come, Whom I will send unto you from the Father, He shall testify of Me." This was as though He had said They have hated Me and slain Me while they see Me, but when they shall see Me no more, the Comforter shall bear such testimony of Me, as will compel them to believe in Me. " And ye also," saith He, " shall bear witness, because ye have been with Me from the beginning," the Holy Ghost shall bear witness, and ye also shall bear witness. " Because ye have been with Me from the beginning," ye are able to speak that ye do know, (John iii. 11,) which ye do not now, while as yet the fulness of the Spirit is not come upon you.
-_
-@Tempora/Pasc6-0:Responsory8
 
 [Lectio9]
 He shall testify of Me and ye also shall bear witness when the love of God is shed abroad in your hearts by the Holy Ghost Which shall be given unto you, and maketh you not ashamed to lift up your testimony. This love had not been so shed abroad in Peter's heart when he was frightened by the questioning of the maid-servant, and could not bear witness to the truth, but brake his promise, and was driven by strong fear to deny Christ thrice. "There is no" such "fear in love; but perfect love casteth out fear." Before the Passion of the Lord, Peter's slavish fear was questioned by a bondwoman but after the Resurrection of the Lord, his free love was asked by the very Prince of freedom, and therefore the first questioning shook him, but under the second he was at peace at the first he denied Him Whom he had loved at the second he loved Him Whom he had denied. But, even so, his love was weak and narrow, until the Holy Ghost had strengthened and widened it.

@@ -1,17 +1,4 @@
-[Rank]
-Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;2;;ex Tempora/Pasc5-4
-
-[Rule]
-ex Tempora/Pasc5-4;
-Psalmi Dominica
-Antiphonas Horas
-9 Lectiones
-Doxology=Asc
-Feria Te Deum 
-No suffragium
-No93
-
-[Lectio1]
+[LectioJudae1]
 Lesson from the letter of St Jude the Apostle
 !Jude 1:1-4
 1 Jude, the servant of Jesus Christ, and brother of James: to them that are beloved in God the Father, and preserved in Jesus Christ, and called.
@@ -19,29 +6,20 @@ Lesson from the letter of St Jude the Apostle
 3 Dearly beloved, taking all care to write unto you concerning your common salvation, I was under a necessity to write unto you: to beseech you to contend earnestly for the faith once delivered to the saints.
 4 For certain men are secretly entered in, (who were written of long ago unto this judgment,) ungodly men, turning the grace of our Lord God into riotousness, and denying the only sovereign Ruler, and our Lord Jesus Christ
 
-[Responsory1]
-@Tempora/Pasc5-4:Responsory1
-
-[Lectio2]
+[LectioJudae2]
 !Jude 1:5-8
 5 I will therefore admonish you, though ye once knew all things, that Jesus, having saved the people out of the land of Egypt, did afterwards destroy them that believed not:
 6 And the angels who kept not their principality, but forsook their own habitation, he hath reserved under darkness in everlasting chains, unto the judgment of the great day.
 7 As Sodom and Gomorrha, and the neighbouring cities, in like manner, having given themselves to fornication, and going after other flesh, were made an example, suffering the punishment of eternal fire.
 8 In like manner these men also defile the flesh, and despise dominion, and blaspheme majesty
 
-[Responsory2]
-@Tempora/Pasc5-4:Responsory2
-
-[Lectio3]
+[LectioJudae3]
 !Jude 1:9-13
 9 When Michael the archangel, disputing with the devil, contended about the body of Moses, he durst not bring against him the judgment of railing speech, but said: The Lord command thee.
 10 But these men blaspheme whatever things they know not: and what things soever they naturally know, like dumb beasts, in these they are corrupted.
 11 Woe unto them, for they have gone in the way of Cain: and after the error of Balaam they have for reward poured out themselves, and have perished in the contradiction of Core.
 12 These are spots in their banquets, feasting together without fear, feeding themselves, clouds without water, which are carried about by winds, trees of the autumn, unfruitful, twice dead, plucked up by the roots,
 13 Raging waves of the sea, foaming out their own confusion; wandering stars, to whom the storm of darkness is reserved for ever
-
-[Responsory3]
-@Tempora/Pasc5-4:Responsory3
 
 [Lectio4]
 From the Treatise upon the Creed, addressed to Catechumens by St Austin, Bishop of Hippo.
@@ -69,9 +47,10 @@ of the Father. And therefore it is that this love of the world, which we strive 
 
 [Lectio8]
 "The Spirit of truth; Whom the world cannot receive, because it seeth Him not, neither knoweth Him " for to love the world is to lack those spiritual eyes, which are able to see Him Who is invisible, the Holy Ghost. " But ye know Him," saith the Lord to His disciples, " for He shall dwell with you, and shall be in you." He will be in them to dwell in them, not dwell in them to be in them for one must first be in a place before one dwell there. But lest the Apostles should think that the words, "He shall dwell with you," signified that He should visibly abide with them for a while, as do guests in the houses of men, the Lord saith in explanation "He shall be in you."
-_
-@Tempora/Pasc6-0:Responsory8
 
 [Lectio9]
-Therefore is He seen That is invisible. If He were not in us we could have in us no knowledge of Him but He is seen in us, as we see our conscience. We see the faces of other men, but we cannot see our Own but of consciences we see none save that within ourselves. But our conscience is never elsewhere but within us whereas the Holy Ghost may be without us, as well as within us. He is given to be within us, and, unless He be within us, we can neither see nor know Him, either within or without us. Then, after that He had promised the Holy Ghost, the Lord, lest they should deem that He was to give them that other Comforter instead of Himself, and that He Himself was to be no longer with them, said also "I will not leave you orphans I will come to you." Therefore, although the Son of God hath made us by adoption sons of His Own Father, and hath willed that the Same Who is His Father by nature should be our Father by grace, nevertheless, He showeth that Himself hath toward us a love as of a Father, where He saith "I will not leave you orphans."
+Therefore is He seen That is invisible. If He were not in us we could have in us no knowledge of Him but He is seen in us, as we see our conscience. We see the faces of other men, but we cannot see our Own but of consciences we see none save that within ourselves. But our conscience is never elsewhere but within us whereas the Holy Ghost may be without us, as well as within us. He is given to be within us, and, unless He be within us, we can neither see nor know Him, either within or without us.~
+(deinde dicitur)
+Then, after that He had promised the Holy Ghost, the Lord, lest they should deem that He was to give them that other Comforter instead of Himself, and that He Himself was to be no longer with them, said also "I will not leave you orphans I will come to you." Therefore, although the Son of God hath made us by adoption sons of His Own Father, and hath willed that the Same Who is His Father by nature should be our Father by grace, nevertheless, He showeth that Himself hath toward us a love as of a Father, where He saith "I will not leave you orphans."
+(sed rubrica 1570 omittitur)
 &teDeum
