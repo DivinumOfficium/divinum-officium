@@ -741,6 +741,13 @@ sub getitem {
   my $w = $w{$type}; 
   if ($type =~ /Graduale/i && $dayname[0] =~ /Pasc/i && exists($w{GradualeP})) {$w = $w{'GradualeP'};}
   if ($type =~ /Graduale/i && $dayname[0] =~ /Quad/i && exists($w{Tractus})) {$w = $w{'Tractus'};}
+
+  if (!$w) { 
+    %w=  (columnsel($lang)) ? %commune : %commune2; 
+    $w = $w{$type};
+    if ($type =~ /Graduale/i && $dayname[0] =~ /Pasc/i && exists($w{GradualeP})) {$w = $w{'GradualeP'};}
+    if ($type =~ /Graduale/i && $dayname[0] =~ /Quad/i && exists($w{Tractus})) {$w = $w{'Tractus'};}
+  }
     
   if (!$w && $winner =~ /Tempora/i) {
 	  my $name = "$dayname[0]-0";
@@ -749,13 +756,6 @@ sub getitem {
 	  %w = %{officestring($datafolder, $lang, "$temporaname/$name.txt")};    
       $w = $w{$type}; 
       if ($type =~ /Graduale/i && $dayofweek > 0 && exists($w{GradualeF})) {$w = $w{'GradualeF'};}
-  }
-
-  if (!$w) { 
-    %w=  (columnsel($lang)) ? %commune : %commune2; 
-    $w = $w{$type};
-    if ($type =~ /Graduale/i && $dayname[0] =~ /Pasc/i && exists($w{GradualeP})) {$w = $w{'GradualeP'};}
-    if ($type =~ /Graduale/i && $dayname[0] =~ /Quad/i && exists($w{Tractus})) {$w = $w{'Tractus'};}
   }
 
   if (!$w) {$w = "$type missing!\n"} 
