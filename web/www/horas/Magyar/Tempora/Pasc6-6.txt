@@ -1,14 +1,4 @@
-[Rank]
-Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;2;;ex Tempora/Pasc5-4
-
-[Rule]
-ex Tempora/Pasc5-4;
-9 Lectiones
-Doxology=Asc
-Feria Te Deum 
-No suffragium
-
-[Lectio1]
+[LectioJudae1]
 Szent Judás Apostol levelének kezdete
 !Jude 1:1-4
 1 Júdás, Jézus Krisztusnak a szolgája, Jakabnak meg a testvére, az Atyaistenben szeretett és a Jézus Krisztusnak megtartott meghívottaknak. 
@@ -16,82 +6,20 @@ Szent Judás Apostol levelének kezdete
 3 Szeretteim, minden igyekezettel azon vagyok, hogy közös üdvösségünkrõl írjak nektek. Szükségesnek véltem, hogy írásban kérjelek titeket, küzdjetek a hitért, amely egyszer s mindenkorra szóló öröksége a szenteknek. 
 4 Mert bizonyos emberek befurakodtak közétek, akiknek az ítéletük már rég megíratott; ezek az istentelenek Istenünk kegyelmét kicsapongásra fordítják, az egyetlen Urat, Urunkat, Jézus Krisztust pedig megtagadják. 
 
-[Responsory1]
-@Tempora/Pasc5-4:Responsory1
-
-[Lectio2]
+[LectioJudae2]
 !Jude 1:5-8
 5 Emlékezetetekbe szeretném idézni, bár egyszer s mindenkorra tudtok mindent, hogy az Úr Egyiptomból kiszabadította a népet, de késõbb azokat, akik nem hittek, elpusztította. 
 6 Az angyalokat is, akik nem becsülték meg méltóságukat, elhagyták lakóhelyüket, a nagy nap ítéletére örök bilincsekben, sötétségben tartja. 
 7 Ugyanígy Szodoma és Gomorra, valamint a szomszédos városok, amelyek hozzájuk hasonlóan kicsapongó életet éltek, és természetellenes gyönyöröket hajhásztak, intõ példák a számunkra: az örök tûz lett a büntetésük. 
 8 Ennek ellenére ezek az álmodozók is ugyanúgy megfertõzik a testet, megvetik az (isteni) fölséget, káromolják az (égi) hatalmasságokat, 
 
-[Responsory2]
-@Tempora/Pasc5-4:Responsory2
-
-[Lectio3]
+[LectioJudae3]
 !Jude 1:9-13
 9 jóllehet még Mihály fõangyal sem mert káromló ítéletet kimondani, amikor Mózes holtteste miatt heves vitába szállt a sátánnal, csak ennyit mondott: "Büntessen meg az Úr!" 
 10 Ezek pedig káromolják azt, amit nem ismernek; azok meg, amiket mint az oktalan állatok, ösztönösen ismernek, romlásukra válnak. 
 11 Jaj nekik, mert Káin útján járnak, haszonlesésbõl Bileám tévedésébe esnek, és mint Korach, halálukat lelik a lázadásban. 
 12 Ezek szennyfoltok szeretetlakomáitokon, akik nem szégyellnek veletek enni, és csak hizlalják magukat; széltõl ûzött, esõtlen felhõk; kétszeresen kiszáradt, gyökerestül kitépett, késõ õszi, gyümölcstelen fák; 
 13 saját gyalázatukat tajtékzó, vad tengeri hullámok; bolygó csillagok, amelyekre az örök sötétség homálya vár. 
-
-[Responsory3]
-@Tempora/Pasc5-4:Responsory3
-
-[Lectio4]
-From the Treatise upon the Creed, addressed to Catechumens by St Austin, Bishop~
-of Hippo.
-!Bk. iv. ch. I. torn. 9.
-We are yet the unborn offspring of a great Mother. Our Holy Mother the Church~
-hath by the most sacred sign of the Cross received you into her womb, and from~
-thence she is now just about to bring you forth, as she hath already brought~
-forth your brethren, with thrills of spiritual joy. But until, through the~
-washing of regeneration, she bringeth you forth into true light, she feedeth you~
-in her womb with such food as becometh your condition, and in gladness matureth~
-her children for the glad moment of her delivery. This Mother is not stricken by~
-the doom of Eve, to bring forth children in sorrow, and they themselves~
-oftenertimes weeping than laughing. Rather doth your spiritual Mother annul the~
-sentence of your earthly Eve, by disobedience, endowed her offspring with~
-death the Church, by obedience, giveth them newness of life. All the mystic~
-prayers and ceremonies which have been and are still being performed over you by~
-the ministry of the servants of God, exorcisms, prayers, spiritual songs,~
-onbreathings, haircloth, prostrations, baring of the feet, the dread which ye~
-feel, albeit so safe, all these things, I say unto you, are the nourishment~
-which ye are ever. drawing from your Mother while yet ye are in her womb, that~
-at the baptismal birth she may be able to present you strong and laughing babes~
-unto Christ.
-
-[Lectio5]
-We have also received the Creed, which is the shield of the travailing Mother~
-against the venom of the dragon. In the Apocalypse of the Apostle John (xii. 4)~
-it is written "And the dragon stood before the woman which was ready to be~
-delivered, for to devour her child as soon as it was born." That this dragon is~
-the devil ye all know. Ye know likewise that by the woman is signified the~
-Virgin Mary, who, herself a Virgin, bore our Virgin Head, and who is revealed~
-unto us as a type of the Holy Church, in that, even as Mary, though she bore a~
-Son, remained a Virgin, so the Church doth in all times give birth to all her~
-members, and yet is ever presented a chaste virgin to Christ. I have undertaken,~
-with the help of the Lord, to expound every clause of the Creed, that I may~
-bring home to your understandings what each containeth. Your hearts are ready,~
-for the enemy hath been shut out of your hearts.
-
-[Lectio6]
-We have made profession of renouncing the enemy. At the moment of that~
-profession it was not before men only, but in the presence of God and His Angels~
-that ye said " I do renounce him." Renounce him, not only in your words, but~
-in your ways not only with your voices, but with your lives not only with~
-your lips, but in your works. Know ye well that the wrestling which ye have~
-undertaken is a strife with an enemy who is subtle, and old, and patient now~
-that ye have once renounced him, let him never again find in you his works~
-never again give him the right to bring you into bondage. O Christian thou~
-wilt be caught and exposed, if thou dost one thing and professest another if~
-thou art faithful in name, and makest it to be evident by thy works that thou~
-hast broken the faith pledged by this promise if some while thou goest into a~
-church to pray, and anon to the shows to join in applauding obscene~
-representations. What hast thou to do any more with the pomps of the devil,~
-which thou hast renounced
 
 [Lectio7]
 Evangélium szent János könyvébõl
@@ -101,7 +29,7 @@ _
 Homily by St Austin, Bishop of Hippo.
 !74th and 75th Tracts on John.
 By these words of the Lord " I will pray the Father, and He shall give you~
-another Comforter" He doth imply that Himself is a Com- forter. The Greek word~
+another Comforter" He doth imply that Himself is a Comforter. The Greek word~
 used, namely " Parakletos," signifieth also an Advocate, and is used in that~
 sense where it is written "We have an Advocate Parakleton with the Father,~
 Jesus Christ the Righteous." "Even the Spirit of truth, Whom the world cannot~
@@ -112,33 +40,3 @@ this place, we must understand the lovers of the world, a love which cometh not~
 of the Father. And therefore it is that this love of the world, which we strive~
 to lessen and to destroy in ourselves, is contrary to " the love of God, which~
 is shed abroad in our hearts by the Holy Ghost which is given unto us."
-
-[Lectio8]
-"The Spirit of truth; Whom the world cannot receive, because it seeth Him not,~
-neither knoweth Him " for to love the world is to lack those spiritual eyes,~
-which are able to see Him Who is invisible, the Holy Ghost. " But ye know Him,"~
-saith the Lord to His disciples, " for He shall dwell with you, and shall be in~
-you." He will be in them to dwell in them, not dwell in them to be in them for~
-one must first be in a place before one dwell there. But lest the Apostles~
-should think that the words, "He shall dwell with you," signified that He should~
-visibly abide with them for a while, as do guests in the houses of men, the Lord~
-saith in explanation "He shall be in you."
-_
-@Tempora/Pasc6-0:Responsory8
-
-[Lectio9]
-Therefore is He seen That is invisible. If He were not in us we could have in us~
-no knowledge of Him but He is seen in us, as we see our conscience. We see the~
-faces of other men, but we cannot see our Own but of consciences we see none~
-save that within ourselves. But our conscience is never elsewhere but within us~
-whereas the Holy Ghost may be without us, as well as within us. He is given to~
-be within us, and, unless He be within us, we can neither see nor know Him,~
-either within or without us. Then, after that He had promised the Holy Ghost,~
-the Lord, lest they should deem that He was to give them that other Comforter~
-instead of Himself, and that He Himself was to be no longer with them, said also "I~
-will not leave you orphans I will come to you." Therefore, although the Son of~
-God hath made us by adoption sons of His Own Father, and hath willed that the~
-Same Who is His Father by nature should be our Father by grace, nevertheless, He~
-showeth that Himself hath toward us a love as of a Father, where He saith "I~
-will not leave you orphans."
-&teDeum
