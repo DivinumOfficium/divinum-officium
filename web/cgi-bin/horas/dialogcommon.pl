@@ -382,13 +382,16 @@ sub setupstring($$$%)
     # We're not resolving section inclusions, but we still need to parse
     # them to fill in implicit file- and section names, so that
     # daisy-chained references will work as expected.
+
+    my ($fbasename) = ($fname =~ /(.*)\.txt/);
+
     foreach my $key (keys %sections)
     {
-      s/$inclusionregex/
+      $sections{$key} =~ s/$inclusionregex/
         '@' .
-        $1 ? $1 : $fname . ':' .   # Filename.
-        $2 ? $2 : $key   .         # Keyword.
-        $3 ? ":$3" : '' .          # Substitutions.
+        ($1 ? $1 : $fbasename) . ':' .   # Filename.
+        ($2 ? $2 : $key) .               # Keyword.
+        ($3 ? ":$3" : '') .              # Substitutions.
         "\n"
         /ge;
     }
