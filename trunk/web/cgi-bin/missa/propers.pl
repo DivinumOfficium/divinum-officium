@@ -425,8 +425,6 @@ sub commemoratio {
   if ($version =~ /(1955|1960)/ && ($w =~ /!.*?(Octav|Dominica)/i && $w !~ /Octav.*?Nativ/i)) {return '';}
   if ($version =~ /(1955|1960)/ && $w =~ /!.*?Vigil/i && $rule =~ /no Vigil1960/i) {return '';}
   
-  if ($winner =~ /Tempora/i && $w =~ /Ascension/i) {return '';}
-
   if ($w && $version =~ /1955|1960/ && $w =~ /!.*?Vigil/i && $ite =~ /Sancti/i && $ite !~ /(08\-14|06\-23|06\-28|08\-09)/) 
     {$w = '';}
 
