@@ -696,7 +696,7 @@ sub psalmi_minor {
 	    $communerule =~ /Psalmi\s*(minores)*\s*Dominica/i) && 
 	    $version !~ /Trident/i) {$feastflag = 1;}
     if ($version =~ /1960/ && $rank < 6) {$feastflag = 0;} 	
-    if ($winner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat/i) {$feastflag = 0;}
+    if ($winner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat|Pasc6/i) {$feastflag = 0;}
     if ($feastflag) {
       $prefix = ($lang =~ /English/i) ? "Psalms for Sunday, antiphons " : "Psalmi Dominica, antiphonae ";
       setbuild2('Psalmi dominica');
