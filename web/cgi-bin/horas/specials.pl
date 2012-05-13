@@ -1239,8 +1239,6 @@ sub commemoratio {
   if ($version =~ /(1955|1960)/ && $w =~ /!.*?(Octav|Dominica)/i && nooctnat()) {return;}
   if ($version =~ /(1955|1960)/ && $hora =~ /Vespera/i && $rank >= 5 && nooctnat()) {return;} 
 
-  if ($winner =~ /Tempora/i && $w =~ /Ascension/i) {return;}
-  
   if ($rank >= 5 && $w =~ /!.*?Octav/i && $winner =~ /Sancti/i && $hora =~ /Vespera/i && nooctnat()) {return;}       
 
 
