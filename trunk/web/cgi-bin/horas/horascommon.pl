@@ -414,6 +414,7 @@ sub getrank {
   if (($version =~ /1955/ && $crank[2] < 5) || ($version =~ /1960/ && $crank[2] < 6) ) 
 	  {$crank = ''; @crank = splice(@crank, @crank);}    
 
+  if ($trank[2] >= (($version =~ /(1955|1960)/) ? 6 : 7) && $crank[2] < 6) {$crank = ''; @crank = undef;}
 
   if ($version !~ /1960/ && $hora =~ /Completorium/i && $month == 11 && $day == 1 && $dayofweek != 6) {
     $crank[2] = 7;
