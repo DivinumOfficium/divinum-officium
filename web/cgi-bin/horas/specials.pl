@@ -1686,7 +1686,7 @@ sub doxology {
   my $dox = '';
   my $dname = '';  
   			              
-  if ($version !~ /1960/) {  
+  if ($version !~ /1960/ || ($commune =~ /C1p/i && $hora =~ /Matutinum|Laudes|Vespera/i)) {  
 	if (exists($winner{Doxology})) {
       my %w = (columnsel($lang)) ? %winner : %winner2;
       $dox = $w{Doxology};
