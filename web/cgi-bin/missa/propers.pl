@@ -979,15 +979,36 @@ sub norubr1($)
   return $t;
 }
 
-sub communicantes {
+sub communicantes($)
+{
   my $lang = shift;
-  my $name = (($month == 12 && $day > 24) || ($month == 1 && $day == 1)) ? 'Nat' :
-    ($month == 1 && $day > 5 && $day < 14) ? 'Epi' :
-	($dayname[0] =~ /Pasc0/) ? 'Pasc' : 
-	(($dayname[0] =~ /Pasc[5]/i && $dayofweek > 3) || $dayname[0] =~ /Pasc[6]/i) ? 'Asc' :
-	($dayname[0] =~ /Pasc[7]/i) ? 'Pent' : 'common';
+
+  our $version;
+
+  my $name;
+
+  # We run various tests on $dayname[0].
+  for($dayname[0])
+  {
+    # Do we have octaves of the Epiphany and the Ascension?
+    my $have_octaves = ($version !~ /1955|1960/);
+
+    $name =
+      (($month == 12 && $day > 24) || ($month == 1 && $day == 1)) ?
+        'Nat' :
+      ($month == 1 && ($day == 6 || ($have_octaves && $day >= 7 && $day <= 13))) ?
+        'Epi' :
+      (/Pasc0/) ?
+        'Pasc' : 
+      ((/Pasc5/ && $dayofweek == 4) || ($have_octaves && ((/Pasc5/i && $dayofweek >= 5) || (/Pasc6/i && $dayofweek <= 4)))) ?
+        'Asc' :
+      (/Pasc7/i || (/Pasc6/ && $dayofweek == 6)) ?
+        'Pent' :
+        'common';
+  }
+
   my %pr = %{setupstring($datafolder, $lang, 'Ordo/Prefationes.txt')};
-  if ($version =~ /1960/) {$name .= '1962';}
+  if ($version =~ /1960/) {$name .= '1962';} # St Joseph.
   my $t = chompd($pr{"C-$name"});
   return norubr($t);
 }
