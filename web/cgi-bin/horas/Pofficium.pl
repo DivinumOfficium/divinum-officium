@@ -290,7 +290,7 @@ print << "PrintTag";
 &nbsp;&nbsp; 
 <A HREF="Pofficium.pl?date1=$date1&command=prayLaudes&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive"><FONT COLOR=$hcolor[2]>$horas[2]</FONT></A>
 &nbsp;&nbsp; 
-<A HREF="Pofficium.pl?date1=$date1&command=prayVesperae&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive"><FONT COLOR=$hcolor[7]>$horas[7]</FONT></A>
+<A HREF="Pofficium.pl?date1=$date1&command=prayVespera&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive"><FONT COLOR=$hcolor[7]>$horas[7]</FONT></A>
 &nbsp;&nbsp; 
 </I></P>
 PrintTag
