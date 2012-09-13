@@ -371,7 +371,22 @@ sub setcc {
   my $s = shift;
   my %s = %$s;  
   my $key=90; 
-  if ($version =~ /1955|1960/ && $ccind >= 3) {return;} 
+
+  our @dayname;
+  our %winner;
+  my @rank = split(';;', $winner{Rank});
+
+  # Under the 1960 rubrics, on II. cl and higher days,
+  # allow at most one commemoration. We use @rank rather
+  # than $rank as sometimes the latter is adjusted for
+  # calculating precedence.
+  return if (
+    $version =~ /1960/ &&
+    ($rank[2] >= 5 || ($dayname[1] =~ /Feria/i && $rank[2] >= 3)) &&
+    $ccind > 0 &&
+    nooctnat());
+
+  if ($version =~ /1955|1960/ && $ccind >= 3) {return;}
 
   if ($s{Rank} =~ /Dominica/i && $code < 10) {$key = 10;}  #Dominica=10
   elsif ($s{Rank} =~ /;;Feria/i && $s{Rank} =~ /;;[23456]/) {$key = 50;} #Feria major=50
