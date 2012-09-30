@@ -50,13 +50,46 @@ sub specials {
     $item =~ s/\n//g;	
     $skipflag = 0;
 
-    #handle omit rule
     $ite = $item;
     $ite =~ s/#//;            
     @ite = split(' ', $ite); 
 
-    if ($rule =~ /Omit.*? $ite[0]/i && !(($hora =~ /Laudes/i || ($hora =~ /Vespera/i && $winner =~ /C9/i)) && 
-	    $rule =~ 'Capitulum Versum 2' && $item =~ /Capitulum/i )) { 
+    # Handle replacement of the Chapter (etc.) with a versicle on those
+    # occasions when this occurs. The 'Capitulum Versum 2' directive takes
+    # precedence over the 'Omit' directive, and so we handle this first.
+    if ($item =~ /Capitulum/i &&
+        $rule =~ /Capitulum Versum 2(.*);?$/im)
+    {
+      my $cv2hora = $1;
+
+      unless (($cv2hora =~ /ad Laudes tantum/i && $hora !~ /Laudes/i) ||
+        ($cv2hora =~ /ad Laudes et Vesperas/i && $hora !~ /Laudes|Vespera/i))
+      {
+        # Compline is a special case: there the Chapter is omitted, as the
+	# verse appears later and is handled separately. That being so, we have
+	# nothing to do here.
+        unless ($hora =~ /Completorium/i)
+        {
+          my %c = (columnsel($lang)) ? %commune : %commune2;
+          my $v = (exists($w{"Versum 2"}) ? $w{"Versum 2"} : $c{"Versum 2"});
+
+          push(@s, "#Versus (In loco Capituli)");
+          push(@s, $v);
+          push(@s, "");
+          setbuild1("Versus speciale in loco calpituli");
+        }
+
+        $skipflag = 1;
+        next;
+      }
+    }
+
+    # Omit this section if the rule says so.
+    if ($rule =~ /Omit.*? $ite[0]/i &&
+      !($item =~ /Capitulum/i &&
+        $rule =~ /Capitulum Versum 2( etiam ad Vesperas)?/i && 
+        (($1 && $hora =~ /Vespera/i) || $hora =~ /Laudes/i)))
+    { 
       $skipflag = 1;
       if ($item =~ /incipit/i && $version !~ /(1955|1960)/) {$comment = 2; setbuild1($ite, 'limit');}
       else {$comment = 1; setbuild1($label, 'omit');}
@@ -138,18 +171,6 @@ sub specials {
     next;
   }
 
-    if ($item =~ /Capitulum/i && $rule =~ /capitulum versum 2/i) {	 
-      if ($hora =~ /Completorium/i) {$skipflag = 1; next;}  
-      my %c = (columnsel($lang)) ? %commune : %commune2;
-	    my $v = (exists($w{"Versum 2"}) ? $w{"Versum 2"} : $c{"Versum 2"});
-    
-      push(@s, "#Versus (In loco Capituli)");
-		  push (@s, $v);
-		  push(@s, "");
-		  $skipflag = 1;
-		  setbuild1("Versus speciale in loco calpituli");
-      next; 
-    }
 
     if ($item =~ /Capitulum/i && $hora =~ /prima/i) { 
       my %brevis = %{setupstring($datafolder, $lang, 'Psalterium/Prima Special.txt')};  
