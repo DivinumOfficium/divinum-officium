@@ -34,11 +34,11 @@ our $error = '';
 $debug = '';
 require "$Bin/../horas/do_io.pl";
 require "$Bin/webdia.pl";
-require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/ordo.pl";
 require "$Bin/mcheck.pl";
 require "$Bin/tfertable.pl";
 require "$Bin/../horas/horascommon.pl";
+require "$Bin/../horas/dialogcommon.pl";
 binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
