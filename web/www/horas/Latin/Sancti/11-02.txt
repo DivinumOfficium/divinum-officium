@@ -42,6 +42,7 @@ R. Beati mortui qui in Dómino moriuntur.
 [Initial]
 $Pater noster
 $Ave Maria
+(sed rubrica 1960 aut rubrica innovata omittuntur)
 
 [Special Completorium]
 $Confiteor
@@ -227,6 +228,7 @@ R. Libera me Domine de morte aeterna in die illa tremenda:
 [Special Prima]
 &special('Initial', 'Latin')
 $Credo
+(sed rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(87)
 

@@ -28,7 +28,8 @@ O Lord, forsake not * the works of thine own hands;;137
 
 [Initial]
 $Pater noster
-$Ave Mária
+$Ave Maria
+(sed rubrica 1960 aut rubrica innovata omittuntur)
 
 [Special Completorium]
 $Confiteor
@@ -266,6 +267,7 @@ $Requiem
 [Special Prima]
 &special('Initial', 'Magyar')
 $Credo
+(sed rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(87)
 

@@ -41,6 +41,7 @@ R. Blessed are the dead, which die in the Lord.
 [Initial]
 $Pater noster
 $Ave Maria
+(sed rubrica 1960 aut rubrica innovata omittuntur)
 
 [Special Completorium]
 $Confiteor
@@ -295,6 +296,7 @@ the world by fire.
 [Special Prima]
 &special('Initial', 'English')
 $Credo
+(sed rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(87)
 
