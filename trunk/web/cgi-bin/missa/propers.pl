@@ -1106,10 +1106,10 @@ sub itemissaest
     "$text[0]\n$text[1]";                              # Ite, missa est.
 }
 
-sub placeattibi {
-  my $flag = 0;
-  if ($version =~ /1960/ && $votive =~ /Defunct/i) {$flag = 1; push(@s, "!omit. Placeat tibi");}
-  return $flag;
+# This function is now redundant: we never have reason to omit the Placeat.
+sub placeattibi
+{
+  return 0;
 }  
 
 
