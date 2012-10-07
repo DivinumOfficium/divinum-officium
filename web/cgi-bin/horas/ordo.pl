@@ -111,13 +111,13 @@ $O1570 = maketable('1570');
     print << "PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" > 
 <FORM ACTION="ordo.pl" METHOD=post TARGET=_new>
-<H1 ALIGN=CENTER>Officium divinum : Ordo</H1>
+<H1 ALIGN=CENTER>Officium Divinum : Ordo</H1>
 <TABLE WIDTH=90% ALIGN=CENTER BORDER=0 CELLPADDING=8><TR><TD> 
 <H2 ALIGN=CENTER>Rubrics 1960</H2>
 $O1960<BR>
-<H2 ALIGN=CENTER>Divino afflatu version</H2>
+<H2 ALIGN=CENTER>Divino Afflatu version</H2>
 $ODA<BR>
-<H2 ALIGN=CENTER>Trident 1570 version</H2>
+<H2 ALIGN=CENTER>Tridentine 1570 version</H2>
 $O1570
 </TD></TR></TABLE>
 <P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>
