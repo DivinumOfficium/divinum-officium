@@ -130,7 +130,7 @@ if (!$kyear) {$kyear = $year;}
   'Julius', 'Augustus', 'September', 'October', 'November', 'December');
 @monthlength = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 $title = "Kalendarium: $monthnames[$kmonth-1] $kyear";
-@daynames = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fry', 'Sat');
+@daynames = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
 
                                   
 #*** generate HTML
