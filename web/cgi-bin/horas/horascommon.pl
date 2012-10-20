@@ -1182,10 +1182,21 @@ sub monthday {
   if ($ta < $ftime[0]) {return '';}
   for ($m = 9; $m < 13; $m++) {
     if ($ta < $ftime[$m - 8]) {last;}
-  }						 
+  }
+
+  # $m is now *one more* than the current month, which explains the change of
+  # offset into @ftime from -8 to -9.
                                  
   my $tdays = $ta - $ftime[$m - 9];   
   my $weeks = floor($tdays / 7); 
+
+  # Special handling for October with the 1960 rubrics: the III. week vanishes
+  # in years when its Sunday would otherwise fall on the 18th-21st (i.e. when
+  # the first Sunday in October falls on 4th-7th).
+  $weeks++ if ($m == 11 && $version =~ /1960/ && $weeks >= 2 && (days_to_date($ftime[11 - 9]))[3] >= 4);
+
+  # Special handling for November: the II. week vanishes most years (and always
+  # with the 1960 rubrics). Achieve this by counting backwards from Advent.
   if ($m == 12 && ($weeks > 0 || $version =~ /1960/)) {
     my $t = date_to_days($date1[1],$date1[0]-1,$date1[2]);
     if ($tomorrow) {$t += 1;}
@@ -1193,7 +1204,8 @@ sub monthday {
     my $wdist = floor(($advent1 - $t - 1) / 7);    
     $weeks = 4 - $wdist;  
 	if ($version =~ /1960/ && $weeks == 1) {$weeks = 0;}
-  }								
+  }
+
   my $monthday = sprintf('%02i%01i-%01i', $m - 1, $weeks + 1, $dow);  
   return $monthday;
 }
