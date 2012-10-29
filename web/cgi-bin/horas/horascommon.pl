@@ -328,9 +328,7 @@ sub getrank {
   my $snd = $sn;
   if (!$snd || $snd !~ /([0-9]+\-[0-9]+)/) {$snd = $sday;}
   $snd = ($snd =~ /([0-9]+\-[0-9]+)/) ? $1 : '';   
-  if ($dirgeline && $hora =~ /Laudes/i && $version =~ /Trident/i && $snd && $dirgeline =~ /$snd/) 
-    {$dirge = 2;}
-                   
+
   if ($testmode =~ /^Season$/i) {$sn = 'none';}    
   if (-e "$datafolder/$lang1/$sn.txt") { 
    $sname = "$sn.txt";   	 
@@ -342,6 +340,12 @@ sub getrank {
      {$srank = ''; %saint = undef; $sname = '';}
   } else {$srank = '';}                 
 
+  # Recite Matins and Lauds of the dead after Lauds of the day, either because
+  # of the day within the month or because of All Souls' day.
+  $dirge = 2 if ($hora =~ /Laudes/i &&
+      (($dirgeline && $version =~ /Trident/i && $snd && $dirgeline =~ /$snd/) ||
+      $saint{Rule} =~ /Matutinum et Laudes Defunctorum/));
+                   
   if ($version =~ /(1955|1960)/) { 
     if ($srank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|12\-24)/) {$srank = '';}
     if ($srank =~ /(infra octavam|in octava)/i && nooctnat()) {$srank = '';}  
@@ -377,11 +381,13 @@ sub getrank {
     my $cdayd = $cday;
     if (!$cdayd || $cdayd !~ /([0-9]+\-[0-9]+)/) {$cdayd = nextday($month, $day, $year);}
     $cdayd = ($cdayd =~ /([0-9]+\-[0-9]+)/) ? $1 : '';
-	if ($dirgeline && $cdayd && $dirgeline =~ /$cdayd/) {$dirge = 1;}  
+
+    # Recite Vespers of the dead after Vespers of the day, either because of
+    # the day within the month or because of All Souls' day.
+    $dirge = 1 if (($dirgeline && $cdayd && $dirgeline =~ /$cdayd/) || $saint{Rule} =~ /Vesperae Defunctorum/);
 
     if ($cday && $cday !~ /tempora/i) {$cday = "$sanctiname/$cday";} 
     if ($testmode =~ /^Season$/i) {$cday = 'none';} 	   
-    $cday =~ s/11-03$/11-02t/;
 
 	if (-e "$datafolder/$lang1/$cday.txt") { 
       $cname = "$cday.txt";      
@@ -416,7 +422,7 @@ sub getrank {
 
   if ($trank[2] >= (($version =~ /(1955|1960)/) ? 6 : 7) && $crank[2] < 6) {$crank = ''; @crank = undef;}
 
-  if ($version !~ /1960/ && $hora =~ /Completorium/i && $month == 11 && $day == 1 && $dayofweek != 6) {
+  if ($version !~ /1960|Trident/ && $hora =~ /Completorium/i && $month == 11 && $day == 1 && $dayofweek != 6) {
     $crank[2] = 7;
     $crank =~ s/;;[0-9]/;;7/;
     $srank = '';

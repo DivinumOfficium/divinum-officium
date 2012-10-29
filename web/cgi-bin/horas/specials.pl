@@ -461,30 +461,36 @@ sub specials {
 	  setbuild1($item, 'Litania omnium sanctorum');
 	  $skipflag = 1;
   }
-  if ($item =~ /Conclusio/i && $dirge && $commune !~ /C9/i) {
-    our %prayers;
 
-    if ($hora =~ /Vespera/i && $dirge == 1) {  
-      push(@s, "\n");	 
-      push(@s, $prayers{$lang}->{DefunctV});
-      setbuild1($item, 'Recite Vespera defunctorum');
-      $skipflag = 1
-  } elsif ($hora =~ /Laudes/i && $dirge == 2) {
-      push(@s, "\n");	 
-      push(@s, $prayers{$lang}->{DefunctM});
-      setbuild1($item, 'Recite Officium defunctorum');
+    if ($item =~ /Conclusio/i && $rule =~ /Special Conclusio/i) {
+      my %w = (columnsel($lang)) ? %winner : %winner2; 
+      push(@s, $w{Conclusio});
+      $skipflag = 1;
     }
-  }
-  
-  if ($item =~ /Conclusio/i && $rule =~ /Special Conclusio/i) {
-    my %w = (columnsel($lang)) ? %winner : %winner2; 
-    push(@s, $w{Conclusio});
-    $skipflag = 1;
-  }
 
+    # Insert the title.
     $label = translate_label($label, $lang);	
     push (@s, $label);	
-    next;
+    
+    # Set special conclusion when Office of the Dead follows, *after*
+    # having inserted the (usual) title.
+    if ($item =~ /Conclusio/i && $dirge && $commune !~ /C9/i && $votive !~ /C9/i)
+    {
+      our %prayers;
+  
+      if ($hora =~ /Vespera/i && $dirge == 1)
+      {
+        push(@s, $prayers{$lang}->{DefunctV});
+        setbuild1($item, 'Recite Vespera defunctorum');
+        $skipflag = 1;
+      }
+      elsif ($hora =~ /Laudes/i && $dirge == 2)
+      {
+        push(@s, $prayers{$lang}->{DefunctM});
+        setbuild1($item, 'Recite Officium defunctorum');
+        $skipflag = 1;
+      }
+    }
   }			
   return @s;  
 }

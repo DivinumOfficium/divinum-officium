@@ -526,23 +526,23 @@ sub setcell {
 	} 
     print "<TD $background VALIGN=TOP WIDTH=$width% ID=L$searchind>"; 
     topnext_cell($lang);
-    if ($text =~ /\%(.*?)\%/) {    
+    if ($text =~ /%(.*?)%/) {    
       my $q = $1;    
       if ($officium =~ /Pofficium/i) {
         if ($hora =~ /Matutinum/i) {
-          $text =~ s/\%(.*?)\%/\<A HREF="Pofficium.pl?date1=$date1&caller=$caller&command=prayLaudes&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$q\<\/A\>/i; 
+          $text =~ s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=$caller&command=prayLaudes&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$q</A>}i;
         } elsif ($hora =~ /Vespera/i) {
-          $text =~ s/\%(.*?)\%/\<A HREF="Pofficium.pl?date1=11-02-$year&caller=1&command=prayVespera&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$q\<\/A\>/i; 
+          $text =~ s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayVespera&version=$version&testmode=$testmode&lang2=$lang2&votive=C9">$q</A>}i;
         } elsif ($hora =~ /Laudes/i) {
-          $text =~ s/\%(.*?)\%/\<A HREF="Pofficium.pl?date1=11-02-$year&caller=1&command=prayMatutinum&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$q\<\/A\>/i; 
+          $text =~ s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayMatutinum&version=$version&testmode=$testmode&lang2=$lang2&votive=C9">$q</A>}i;
         }
       } else {
         if ($hora =~ /Matutinum/i) {
-          $text =~ s/\%(.*?)\%/\<A HREF=# onclick=\"hset\(\'Laudes\'\);\"\>$q\<\/A\>/i; 
+          $text =~ s{%(.*?)%}{<A HREF=# onclick="hset('Laudes');">$q</A>}i; 
         } elsif ($hora =~ /Vespera/i) {
-          $text =~ s/\%(.*?)\%/\<A HREF=# onclick=\"hset\(\'Vespera\', \'11-02-$year\'\);\"\>$q\<\/A\>/i; 
+          $text =~ s{%(.*?)%}{<A HREF=# onclick="defunctorum('Vespera');">$q</A>}i; 
         } elsif ($hora =~ /Laudes/i) {
-          $text =~ s/\%(.*?)\%/\<A HREF=# onclick=\"hset\(\'Matutinum\', \'11-02-$year\'\);\"\>$q\<\/A\>/i; 
+          $text =~ s{%(.*?)%}{<A HREF=# onclick="defunctorum('Matutinum');">$q</A>}i;
         }
       }
     }
