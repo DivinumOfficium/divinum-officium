@@ -545,8 +545,12 @@ PrintTag
 
 #*** Javascript functions
 # the sub is called from htmlhead
-sub horasjs {
- print << "PrintTag";
+sub horasjs
+{
+  # $caller in principle might not be defined.
+  my $caller_flag = $caller || 0;
+
+  print << "PrintTag";
 
 <SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
 
@@ -588,8 +592,20 @@ function hset(p, d) {
     document.forms[0].date.value = d;
     document.forms[0].caller.value = 1;
   }
-  if ("$caller") {document.forms[0].caller.value = 1;}
+  if ($caller_flag) {document.forms[0].caller.value = 1;}
   document.forms[0].command.value = "pray" + p;
+  document.forms[0].action = "$officium";
+  document.forms[0].target = "_self"
+  document.forms[0].submit();
+}   
+
+// Jump straight to an hour of the Office for the Dead.
+function defunctorum(hour) { 
+  clearradio();
+  
+  document.forms[0].caller.value = 1;
+  document.forms[0].votive.value = "C9";
+  document.forms[0].command.value = "pray" + hour;
   document.forms[0].action = "$officium";
   document.forms[0].target = "_self"
   document.forms[0].submit();

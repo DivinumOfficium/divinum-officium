@@ -173,13 +173,13 @@ $Deo gratias.
 
 [DefunctV]
 &Dominus_vobiscum
-&Benedicamus_Domino 
-! Recite %vespers of the dead%, skip Our Father, Hail Mary
-$Fidelium animae
-$Pater noster
+&Benedicamus_Domino
+! After Vespers of the day, %Vespers of the Dead% are said.
 
 [DefunctM]
-! Recite the %office of the dead%
+&Dominus_vobiscum
+&Benedicamus_Domino
+! After Lauds of the day, %Matins and Lauds of the Dead% are said.
 
 [Oremus]
 v. Let us pray
