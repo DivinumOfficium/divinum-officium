@@ -1,0 +1,289 @@
+[Rank]
+In Commemoratione Omnium Fidelium Defunctorum;;Duplex;;3;;ex C9
+
+[RankNewcal]
+In Commemoratione Omnium Fidelium Defunctorum;;Duplex Solemnity;;6;;ex C9
+
+[Rank1960]
+In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
+
+[Rule]
+ex C9
+Psalmi Dominca
+Antiphonas horas
+Special Conclusio
+Capitulum Versum 2 ad Laudes et Vesperas
+Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium
+Limit Benedictiones Oratio
+Requiem gloria
+9 lectiones
+Responsory9
+no Te Deum
+
+[Ant Vespera]
+Placebo Domino * in regione vivorum;;114
+Hei mihi Domine, * quia incolatus meus prolongatus est;;119
+Dominus custodit te * ab omni malo: custodiat animam tuam Dominus;;120
+Si iniquitates * observaveris Domine: Domine quis sustinebit;;129
+Opera * manuum tuarum Domine ne despicias;;137
+
+[Versum 1]
+V. Audivi vocem de caelo dicentem mihi.
+R. Beati mortui qui in Dómino moriuntur.
+
+[Versum 2]
+V. Audivi vocem de caelo dicentem mihi.
+R. Beati mortui qui in Dómino moriuntur.
+
+[Versum 3]
+V. Audivi vocem de caelo dicentem mihi.
+R. Beati mortui qui in Dómino moriuntur.
+
+[Initial]
+$Pater noster
+$Ave Maria
+(sed rubrica 1960 aut rubrica innovata omittuntur)
+
+[Special Completorium]
+$Confiteor
+$Misereatur
+$Indulgentiam
+
+&psalm(122)
+
+&psalm(141)
+
+&psalm(142)
+
+&psalm(233)
+
+&special('Oratio mortuorum1', 'Latin')
+
+&special('Conclusio', 'Latin')
+
+[Oratio Matutinum]
+&Dominus_vobiscum
+_
+$Oremus
+v. Fidelium Deus omnium conditor et redemptor, animabus famulorum famularumque~
+tuarum remissionem cunctorum tribue peccatorum: ut indulgentiam quam semper~
+optaverunt, piis supplicationibus consequantur:
+$Qui vivis
+
+[Oratio mortuorum1]
+&pater_noster
+_ 
+V. A porta inferi.
+R. Erue Domine animas eorum.
+V. Requiescant in pace.
+R. Amen
+V. Domine exaudi orationem meam.
+R. Et clamor meus ad te veniat.
+&Dominus_vobiscum2
+_
+$Oremus
+v. Propitiare, quaesumus Domine, animabus omnium famulorum famularumque tuarum, pro quibus majestatem tuam suppliciter exoramus, ut per haec piae deprecationis officia, pervenire mereantur ad requiem sempiternam.
+$Per Dominum 
+
+[Oratio mortuorum]
+&pater_noster
+_ 
+V. A porta inferi.
+R. Erue Domine animas eorum.
+V. Requiescant in pace
+R. Amen
+V. Domine exaudi orationem meam.
+R. Et clamor meus ad te veniat
+&Dominus_vobiscum2
+_
+$Oremus
+Fidelium Deus omnium conditor et redemptor, animabus famulorum famularumque~
+tuarum remissionem cunctorum tribue peccatorum: ut indulgentiam quam semper~
+optaverunt, piis supplicationibus consequantur:
+$Qui vivis 
+
+[Oratio mortuorum2]
+&pater_noster
+_ 
+V. A porta inferi.
+R. Erue Domine animas eorum.
+V. Requiescant in pace
+R. Amen
+V. Domine exaudi orationem meam.
+R. Et clamor meus ad te veniat
+&Dominus_vobiscum2
+_
+$Oremus
+Supplices, Dómine, pro animábus ómnium famulórum famulárumque tuárum preces effúndimus: ut, quidquid conversatióne contraxérint humána, clemens indúlgeas, et poenis eórum finem benígnus impónas.
+$Per Dominum
+
+[Conclusio]
+&Gloria
+V. Requiescant in pace
+R. Amen
+
+[Lectio1]
+!Job 7:16-21
+16 Parce mihi, Domine, nihil enim sunt dies mei.
+17 Quid est homo, quia magnificas eum? aut quid apponis erga eum cor tuum?
+18 Visitas eum diluculo, et subito probas illum.
+19 Usquequo non parcis mihi, nec dimittis me ut glutiam salivam meam?
+20 Peccavi; quid faciam tibi, o custos hominum? quare posuisti me contrarium tibi, et factus sum mihimetipsi gravis?
+21 Cur non tollis peccatum meum, et quare non aufers iniquitatem meam? ecce nunc in pulvere dormiam, et si mane me quaesieris, non subsistam.
+
+
+[Lectio2]
+!Job 14:1-6
+1 Homo natus de muliere, brevi vivens tempore, repletur multis miseriis.
+2 Qui quasi flos egreditur et conteritur, et fugit velut umbra, et numquam in eodem statu permanet.
+3 Et dignum ducis super hujuscemodi aperire oculos tuos, et adducere eum tecum in judicium?
+4 Quis potest facere mundum de immundo conceptum semine? nonne tu qui solus es?
+5 Breves dies hominis sunt: numerus mensium ejus apud te est: constituisti terminos ejus, qui praeteriri non poterunt.
+6 Recede paululum ab eo, ut quiescat, donec optata veniat, sicut mercenarii, dies ejus.
+
+
+[Lectio3]
+!Job 19:20-27
+20 Pelli meae, consumptis carnibus, adhaesit os meum, et derelicta sunt tantummodo labia circa dentes meos.
+21 Miseremini mei, miseremini mei saltem vos, amici mei, quia manus Domini tetigit me.
+22 Quare persequimini me sicut Deus, et carnibus meis saturamini?
+23 Quis mihi tribuat ut scribantur sermones mei? quis mihi det ut exarentur in libro
+24 stylo ferreo et plumbi lamina, vel celte sculpantur in silice?
+25 Scio enim quod redemptor meus vivit, et in novissimo die de terra surrecturus sum:
+26 et rursum circumdabor pelle mea, et in carne mea videbo Deum meum:
+27 quem visurus sum ego ipse, et oculi mei conspecturi sunt, et non alius: reposita est haec spes mea in sinu meo.
+
+
+[Lectio4]
+Ex Libro Sancti Augustini Episcopi de cura pro mortuis gerenda
+!Cap 2 et 3
+Curatio funeris, conditio sepulturae, pompa exsequiarum, magis sunt vivorum solatia, quam subsidia mortuorum. Nec ideo tamen contemnenda et abiicienda sunt corpora defunctorum, maximeque iustorum atque fidelium, quibus tamquam organis et vasis ad omnia bona opera sancte usus est spiritus. Si enim paterna vestis et annulus, ac si quid huiusmodi, tanto carius est posteris, quanto erga parentes maior affectus; nullo modo ipsa spernenda sunt corpora, quae utique multo familiarius atque coniunctius, quam quaelibet indumenta gestamus. Haec enim non ad ornamentum vel adiutorium, quod adhibetur extrinsecus, sed ad ipsam naturam hominis pertinent. Unde et antiquorum iustorum funera officiosa pietate curata sunt, et exsequiae celebratae, et sepultura provisa: ipsique cum viverent, de sepeliendis, vel etiam transferendis suis corporibus filiis mandaverunt
+
+[Lectio5]
+!Cap 4
+Recordantis et precantis affectus cum defunctis a fidelibus carissimis exhibetur, eum prodesse non dubium est iis qui cum in corpore viverent, talia sibi post hanc vitam prodesse meruerunt. Verum et si aliqua necessitas vel humari corpora, vel in talibus locis humari nulla data facultate permittat, non sunt praetermittendae supplicationes pro spiritibus mortuorum: quas faciendas pro omnibus in christiana et catholica societate defunctis etiam tacitis nominibus eorum sub generali commemoratione suscepit Ecclesia; ut quibus ad ista desunt parentes, aut filii, aut quicumque cognati vel amici, ab una eis exhibeantur pia matre communi. Si autem deessent istae supplicationes, quae fiunt recta fide ac pietate pro mortuis, puto quod nihil prodesset spiritibus eorum quamlibet in locis sanctis exanima corpora ponerentur.
+
+[Lectio6]
+!Cap 18
+Quae cum ita sint, non existimemus ad mortuos, pro quibus curam gerimus, pervenire, nisi quod pro eis sive altaris, sive orationum, sive eleemosynarum sacrificiis solemniter supplicamus: quamvis non pro quibus fiunt omnibus prosint, sed iis tantum quibus dum vivunt comparatur ut prosint. Sed quia non discernimus qui sint, oportet ea pro regeneratis omnibus facere, ut nullus eorum praetermittatur, ad quos haec beneficia possint et debeant pervenire. Melius enim supererunt ista eis quibus nec obsunt nec prosunt, quam eis deerunt quibus prosunt. Diligentius tamen facit haec quisque pro necessariis suis, quo pro illo fiat similiter a suis. Corpori autem humando quidquid impenditur, non est praesidium salutis, sed humanitatis officium, secundum affectum quo nemo unquam carnem suam odio habet. Unde oportet ut quam potest pro carne proximi curam gerat, cum ille inde recesserit qui gerebat. Et si haec faciunt qui carnis resurrectionem non credunt, quanto magis debent facere qui credunt, ut corpori mortuo, sed tamen resurrecturo et in aeternitate mansuro impensum eiusmodi officium, sit etiam quodammodo eiusdem fidei testimonium?
+
+[Lectio7]
+De Epistola Prima beati Pauli Apostoli ad Corinthios
+!1 Cor 15:12-22
+12 Si Christus praedicatur quod resurrexit a mortuis, quomodo quidam dicunt in vobis, quoniam resurrectio mortuorum non est?
+13 Si autem resurrectio mortuorum non est: neque Christus resurrexit.
+14 Si autem Christus non resurrexit, inanis est ergo praedicatio nostra, inanis est et fides vestra:
+15 invenimur autem et falsi testes Dei: quoniam testimonium diximus adversus Deum quod suscitaverit Christum, quem non suscitavit, si mortui non resurgunt.
+16 Nam si mortui non resurgunt, neque Christus resurrexit.
+17 Quod si Christus non resurrexit, vana est fides vestra: adhuc enim estis in peccatis vestris.
+18 Ergo et qui dormierunt in Christo, perierunt.
+19 Si in hac vita tantum in Christo sperantes sumus, miserabiliores sumus omnibus hominibus.
+20 Nunc autem Christus resurrexit a mortuis primitiae dormientium,
+21 quoniam quidem per hominem mors, et per hominem resurrectio mortuorum.
+22 Et sicut in Adam omnes moriuntur, ita et in Christo omnes vivificabuntur.
+
+
+[Lectio8]
+!1 Cor 15:35-44
+35 Sed dicet aliquis: Quomodo resurgunt mortui? qualive corpore venient?
+36 Insipiens, tu quod seminas non vivificatur, nisi prius moriatur:
+37 et quod seminas, non corpus, quod futurum est, seminas, sed nudum granum, ut puta tritici, aut alicujus ceterorum.
+38 Deus autem dat illi corpus sicut vult: et unicuique seminum proprium corpus.
+39 Non omnis caro, eadem caro: sed alia quidem hominum, alia vero pecorum, alia volucrum, alia autem piscium.
+40 Et corpora caelestia, et corpora terrestria: sed alia quidem caelestium gloria, alia autem terrestrium.
+41 Alia claritas solis, alia claritas lunae, et alia claritas stellarum. Stella enim a stella differt in claritate:
+42 sic et resurrectio mortuorum. Seminatur in corruptione, surget in incorruptione.
+43 Seminatur in ignobilitate, surget in gloria: seminatur in infirmitate, surget in virtute:
+44 seminatur corpus animale, surget corpus spiritale. 
+
+[Responsory8]
+R. Domine secundum actum meum noli me judicare: nihil dignum in conspectu tuo~
+egi: ideo deprecor majestatem tuam
+* Ut tu Deus deleas iniquitatem meam.
+V. Amplius lava me Domine ab injustitia mea, et a delicto meo munda me.
+R. Ut tu Deus deleas iniquitatem meam.
+
+[Lectio9]
+!1 Cor 15:51-58
+51 Ecce mysterium vobis dico: omnes quidem resurgemus, sed non omnes immutabimur.
+52 In momento, in ictu oculi, in novissima tuba: canet enim tuba, et mortui resurgent incorrupti: et nos immutabimur.
+53 Oportet enim corruptibile hoc induere incorruptionem: et mortale hoc induere immortalitatem.
+54 Cum autem mortale hoc induerit immortalitatem, tunc fiet sermo, qui scriptus est: Absorpta est mors in victoria.
+55 Ubi est mors victoria tua? ubi est mors stimulus tuus?
+56 Stimulus autem mortis peccatum est: virtus vero peccati lex.
+57 Deo autem gratias, qui dedit nobis victoriam per Dominum nostrum Jesum Christum.
+58 Itaque fratres mei dilecti, stabiles estote, et immobiles: abundantes in opere Domini semper, scientes quod labor vester non est inanis in Domino.
+
+[Responsory9]
+R. Libera me Domine de morte aeterna in die illa tremenda:
+* Quando coeli movendi sunt et terra: * Dum veneris judicare saeculum per ignem.
+V. Tremens factus sum ego, et timeo, dum discussio venerit, atque ventura ira. 
+R. Quando coeli movendi sunt et terra
+V. Dies illa, dies irae, calamitatis et miseriae, dies magna et amara valde.
+R. Dum veneris judicare saeculum per ignem. 
+$Requiem
+R. Libera me Domine de morte aeterna in die illa tremenda:
+* Quando coeli movendi sunt et terra: * Dum veneris judicare saeculum per ignem.
+
+[Special Prima]
+&special('Initial', 'Latin')
+$Credo
+(sed rubrica 1960 aut rubrica innovata omittitur)
+
+&psalm(87)
+
+&psalm(27)
+
+&psalm(31)
+
+&special('Oratio mortuorum2', 'Latin')
+
+&martyrologium
+
+V. In memoria aeterna erunt justi.
+R. Ab auditione mala non timebunt.
+_
+$Oremus
+Deus veniae largitor et humanae salutis amator: quaesumus clementiam tuam: ut animas omnium fidelium qui ex hoc saeculo transierunt, beata Maria semper virgine intercedente cum omnibus sanctis tuis ad perpetuae beatitudinis consortium pervenire concedas. Per Christum Dominum nostrum.
+R. Amen
+
+&special('Conclusio', 'Latin')
+
+[Special Tertia]
+&special('Initial', 'Latin')
+
+&psalm(37,1,11)
+
+&psalm(37,12,23)
+
+&psalm(55)
+
+&special('Oratio mortuorum', 'Latin')
+
+&special('Conclusio', 'Latin')
+
+[Special Sexta]
+&special('Initial', 'Latin')
+
+&psalm(69)
+
+&psalm(84)
+
+&psalm(85)
+
+&special('Oratio mortuorum', 'Latin')
+
+&special('Conclusio', 'Latin')
+
+[Special Nona]
+&special('Initial', 'Latin')
+
+&psalm(101,1,13)
+
+&psalm(101,14,23)
+
+&psalm(101,24,29)
+
+&special('Oratio mortuorum', 'Latin')
+
+&special('Conclusio', 'Latin')
