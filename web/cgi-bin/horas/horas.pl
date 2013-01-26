@@ -336,10 +336,15 @@ sub Alleluia {
   return $text;
 }
 
-sub Septuagesima_vesp {
-  if ($dayofweek == 6 && $winner{Rank} =~ /Dominica Septuagesima/ && $hora =~ /Vespera/i) 
-    {return 1;}
-  return 0;;
+#*** Septuagesima_vesp
+# Determines whether we're saying first Vespers of Septuagesima Sunday.
+sub Septuagesima_vesp
+{
+  our ($dayofweek, @dayname, $hora);
+
+  return ($dayofweek == 6 &&
+    $dayname[0] =~ /Quadp1/ &&
+    $hora =~ /Vespera/i);
 }
   
 
