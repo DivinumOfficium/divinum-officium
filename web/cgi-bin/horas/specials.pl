@@ -175,7 +175,7 @@ sub specials {
     if ($item =~ /Capitulum/i && $hora =~ /prima/i) { 
       my %brevis = %{setupstring($datafolder, $lang, 'Psalterium/Prima Special.txt')};  
 	  if ($dayofweek > 0 && $version !~ /1960/ && $winner{Rank} =~ /Feria|Vigilia/i && $commune !~ /C10/ && 
-	      $rank < 3  && $dayname[0] !~ /Pasc/i) {
+	      ($rank < 3 || $dayname[0] =~ /Quad6/) && $dayname[0] !~ /Pasc/i) {
 	    @capit = split("\n", $brevis{'Feria'});
 	    $comment = 1;
 	    setbuild1('Capitulum', 'Psalterium Feria');
