@@ -277,7 +277,7 @@ sub getrank {
        if ($tn1{Rank} =~ /(Feria|Sabbato|infra octavam)/i && $tn1{Rank} !~ /in octava/i
          && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
        elsif ($dayname[0] =~ /Pasc[07]/i && $dayofweek != 6) {$tn1rank = '';}
-	   elsif ($version =~ /1960/ && $tn1{Rank} =~ /Dominica Resurrectionis/i) 
+	   elsif ($version =~ /1955|1960/ && $tn1{Rank} =~ /Dominica Resurrectionis/i) 
 	       {$tn1rank = '';}
        elsif ($version =~ /1960/ && $tn1{Rank} =~ /Patrocinii St. Joseph/i) 
   	     {$tn1rank = '';}
