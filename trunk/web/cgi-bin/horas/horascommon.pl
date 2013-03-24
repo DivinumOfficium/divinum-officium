@@ -1140,16 +1140,40 @@ sub precedence {
   }
 
 
-
-  $laudes = 1;	      
-  if ((($dayname[0] =~ /Adv|Quad/i || emberday()) && $winner =~ /tempora/i &&
-     $winner{Rank} !~ /(Beatae|Sanctae) Mariae/i) ||  $rule =~ /Laudes 2/i ||
-    ($winner{Rank} =~ /vigil/i && $version !~ /(1955|1960)/))  {$laudes = 2;}
-  if ($version =~ /trident/i) {$laudes = '';}
-  if ($dayname[0] =~ /Adv/ && $dayofweek == 0) {$laudes = 1;}
+  # Choose the appropriate scheme for Lauds. Roughly speaking, penitential days
+  # have Lauds II and others have Lauds I, although for the Tridentine rubrics
+  # only the Sundays of Septuagesima and Lent have a sort of "Lauds II", with
+  # all other days being unambiguous.
+  if ($version =~ /Trident/i)
+  {
+    $laudes =
+      ($dayname[0] =~ /Quad/i && $dayofweek == 0 && $winner =~ /Tempora/i)
+      ?
+      2 :
+      '';
+  }
+  else
+  {
+    $laudes =
+      (
+        (
+          (
+            ($dayname[0] =~ /Adv/i && $dayofweek != 0) ||
+            $dayname[0] =~ /Quad/i ||
+  	    emberday()
+          ) &&
+          $winner =~ /tempora/i &&
+          $winner{Rank} !~ /(Beatae|Sanctae) Mariae/i
+        ) ||
+        $rule =~ /Laudes 2/i ||
+        ($winner{Rank} =~ /vigil/i && $version !~ /(1955|1960)/)
+      )
+      ?
+      2 :
+      1;
+  }
 
   if ($missa && $winner{Rank} =~ /Defunctorum/) {$votive = 'Defunct';}
-
 }
 
 #*** monthday($forcetomorrow)

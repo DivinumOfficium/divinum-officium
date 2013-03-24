@@ -867,9 +867,6 @@ sub psalmi_major {
   #Psalmi de dominica		 
   if ($version =~ /Trident/i && $testmode =~ /seasonal/i && $winner =~ /Sancti/i && 
     $rank >= 2 && $rank < 5 && !exists($winner{'Ant Laudes'})) {@p = @psalmi;}
-  elsif ($version =~ /Trident/i && $winner =~ /Tempora/i && $hora =~ /Laudes/i && 
-      $dayname[0] =~ /Quad/i && exists($winner{'Ant Laudes'}))	 ##??????
-    {@p = split("\n", $psalmi{"DayaC Laudes2"}); }
   elsif (($rule =~ /Psalmi Dominica/i || $commune{Rule} =~ /Psalmi Dominica/i  ||
      ($anterule && $anterule =~ /Psalmi Dominica/i))
      && ($antiphones[0] !~ /\;\;\s*[0-9]+/)) {  
