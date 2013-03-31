@@ -348,12 +348,27 @@ sub Septuagesima_vesp
 }
   
 
+#*** triduum_gloria_omitted
+# Determines whether the Gloria at the end of the psalms should be omitted
+# owing to the Triduum.
+sub triduum_gloria_omitted()
+{
+  our (@dayname, $dayofweek, $version, $hora);
+
+  return $dayname[0] =~ /Quad6/i &&
+    $dayofweek > 3 &&
+    !(
+      $version !~ /(1955|1960)/i &&
+      $dayofweek == 6 &&
+      $hora =~ /(Vespera|Completorium)/i
+    );
+}
+
 #*** Gloria
 # returns the text or the omit notice
 sub Gloria {
   my $lang = shift;	 
-  if ($dayname[0] =~ /Quad6/i && $dayofweek > 3 && 
-    !($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i)) {return "";}
+  if (triduum_gloria_omitted()) {return "";}
   our %prayers;
   if ($rule =~ /Requiem gloria/i) {return $prayers{$lang}->{Requiem};}
   return $prayers{$lang}->{'Gloria'};
@@ -746,13 +761,7 @@ sub setlink
     if (
         (
             $name =~ /\&Gloria$/i &&
-            $dayname[0] =~ /Quad6/i &&
-            $dayofweek > 3 &&
-            !(
-                $version !~ /(1955|1960)/i &&
-                $dayofweek == 6 &&
-                $hora =~ /(Vespera|Completorium)/i
-            )
+	    triduum_gloria_omitted()
         ) ||
         (
             $name =~ /\&Gloria[12]/i &&
