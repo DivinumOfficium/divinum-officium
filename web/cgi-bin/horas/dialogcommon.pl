@@ -229,10 +229,8 @@ sub vero($)
 
             next AUTEM unless $subject && &$predicate(&$subject());
         }
-        print STDERR "vero=1\n";
         return ($vero=1);
     }
-    print STDERR "vero=0\n";
     return ($vero=0);
 }
 
