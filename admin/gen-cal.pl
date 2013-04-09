@@ -3,9 +3,13 @@
 use strict;
 
 use FindBin qw($Bin);
-require "$Bin/../web/cgi-bin/horas/horascommon.pl";
-require "$Bin/../web/cgi-bin/horas/do_io.pl";
-require "$Bin/../web/cgi-bin/horas/dialogcommon.pl";
+use lib "$Bin/../web/cgi-bin";
+
+require "horas/horascommon.pl";
+require "horas/do_io.pl";
+require "horas/dialogcommon.pl";
+
+use horas::caldata;
 
 use Data::Dumper;
 use List::Util qw(min max);
@@ -52,6 +56,98 @@ sub rubric_condition(+)
 	return join(' aut ', @rubric_conditions);
 }
 
+
+sub build_rank_line($$)
+{
+	my ($calpoint, $entry) = @_;
+	my $rankline;
+
+	# What sort of day are we?
+	for($$entry{title})
+	{
+		if(/^Dominica/i)
+		{
+			$rankline = 'Dominica ';
+			$rankline .= 'Maior ' if $calpoint =~ /Adv|Quad|Pasc[017]/;
+		}
+		elsif(/\bVigilia\b/i)
+		{
+			$rankline = 'Vigilia ';
+		}
+		elsif(/infra octavam/i)
+		{
+			$rankline = 'Dies infra octavam ';
+			if($$entry{ranknum} >= 6) { $rankline .= 'I. ordinis '; }
+			elsif($$entry{ranknum} >= 5) { $rankline .= 'II. ordinis '; }
+			elsif(/Nativitatis$|Cordis|Ascensionis/i) { $rankline .= 'III. ordinis '; }
+			elsif($$entry{ranknum} >= 2) { $rankline .= 'communem '; }
+			else { $rankline .= 'simplex '; }
+		}
+		elsif(/in octava/i)
+		{
+			$rankline = 'Dies octava ';
+			if($$entry{rite} =~ /Duplex ma[ij]us/i)
+			{
+				if(/Epiph|Corporis/) { $rankline .= 'II. ordinis '; }
+				elsif(/Nativitatis$|Cordis|Ascensionis/i) { $rankline .= 'III. ordinis '; }
+				else { $rankline .= 'communis '; }
+			}
+			else { $rankline .= 'simplex '; }
+
+		}
+		elsif(/Feria|Sabbato/i)
+		{
+			$rankline = 'Feria ';
+			if($$entry{rite} =~ /privilegiata/i || $$entry{ranknum} >= 6)
+			{
+				$rankline .= 'Maior privilegiata ';
+			}
+			elsif($$entry{rite} =~ /Ma[ij]or/i)
+			{
+				$rankline .= 'Maior ';
+			}
+		}
+		else
+		{
+			$rankline = 'Festum ';
+			$rankline .= 'Domini ' if ($$entry{rule} =~ /Festum Domini/i);
+		}
+	}
+
+	for($$entry{rite})
+	{
+		if(/Semiduplex/i)
+		{
+			$rankline .= 'Semiduplex';
+		}
+		elsif(/Duplex ma[ij]us/i)
+		{
+			$rankline .= 'Duplex maius';
+		}
+		elsif(/Duplex/i)
+		{
+			$rankline .= 'Duplex';
+		}
+		else
+		{
+			$rankline .= 'Simplex';
+		}
+	}
+
+	if($$entry{ranknum} >= 6)
+	{
+		$rankline .= ' I. classis';
+	}
+	elsif($$entry{ranknum} >= 5)
+	{
+		$rankline .= ' II. classis';
+	}
+
+	return $rankline;
+}
+
+
+
 our $version;
 
 my %tfer_filenames = (
@@ -79,7 +175,7 @@ foreach my $tfer_filenames (values(%tfer_filenames))
 			my @tferlines = <$fh>;
 			close($fh);
 
-			$tfer = {map {my @arr = /([^=]*)=([^=]*)/} @tferlines};
+			$tfer = {map {my @arr = /(?:[^=]*?\/)?([^=\/]*)=(?:.*?\/)?([^=;]*)/} @tferlines};
 		}
 		else
 		{
@@ -90,19 +186,10 @@ foreach my $tfer_filenames (values(%tfer_filenames))
 
 
 
-my @days_in_month = (31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 my @calpoints;
 my %calentries;
 
-foreach my $month (1..12)
-{
-	foreach my $day (1..$days_in_month[$month - 1])
-	{
-		push (@calpoints, "$month-$day");
-	}
-}
-
-my %weeks = (
+my @week_pairs = (
 	Adv => 4,
 	Nat => 2,
 	Epi => 6,
@@ -112,16 +199,27 @@ my %weeks = (
 	Pent => 24,
 	PentEpi => 3
 );
+my %weeks = @week_pairs;
 
-foreach my $week_class (keys(%weeks))
+foreach my $week_class (@week_pairs[map {2*$_} (0..$#week_pairs/2)])
 {
 	my $fmt = ($weeks{$week_class} >= 10) ? "%s%02d-%d" : "%s%d-%d";
-	for(my $week_num = 1; $week_num <= $weeks{$week_class}; $week_num++)
+	for(my $week_num = $week_class eq 'Pasc' ? 0 : 1; $week_num <= $weeks{$week_class}; $week_num++)
 	{
 		for my $day_num (0..6)
 		{
 			push(@calpoints, sprintf($fmt, $week_class, $week_num, $day_num));
 		}
+	}
+}
+
+my @days_in_month = (31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+
+foreach my $month (1..12)
+{
+	foreach my $day (1..$days_in_month[$month - 1])
+	{
+		push (@calpoints, sprintf("%02d-%02d", $month, $day));
 	}
 }
 
@@ -159,6 +257,8 @@ foreach my $calpoint (@calpoints)
 			$$calpoint_entry{rule} = $$file_ref{Rule};
 			$$calpoint_entry{filename} = $filename;
 			$$calpoint_entry{cycle} = $cycle_index;
+
+			$$calpoint_entry{rank} = build_rank_line($calpoint, $calpoint_entry);
 		}
 	}
 }
@@ -187,15 +287,19 @@ my @ranked_versions = (
 my %ranked_version_indices;
 @ranked_version_indices{@ranked_versions} = (0..$#ranked_versions);
 
+# Fields that we will actually emit, in the appropriate order.
+my @output_fields = ('title', 'rank', 'filename');
 
-# Now we build the entries for the calendar file.
-foreach my $calpoint (keys %calentries)
+
+# Now we build the entries for the calendar file. We do for-if-exists rather
+# than for-keys because we care about the order.
+foreach my $calpoint (@calpoints) { if(exists($calentries{$calpoint}))
 {
-	# TODO: Delete auto-generatable days.
-
 	# Group days by similarity.
 	
 	my @sections;
+	my $have_all_versions = 1;
+	my %default_cpe = default_calentry($calpoint);
 
 	my $version_prev = '';
 	foreach my $version_curr (@ordered_versions)
@@ -203,9 +307,16 @@ foreach my $calpoint (keys %calentries)
 		my $cpe_prev = $version_prev && $calentries{$calpoint}{$version_prev};
 		my $cpe_curr = $calentries{$calpoint}{$version_curr};
 
-		if(!$cpe_curr)
+		# Delete any fields whose values are the defaults.
+		foreach(keys(%$cpe_curr))
 		{
-			# No office for this day for these rubrics.
+			delete $$cpe_curr{$_} if(lc($$cpe_curr{$_}) eq lc($default_cpe{$_}));
+		}
+
+		if(!$cpe_curr || !grep {$_} @$cpe_curr{@output_fields})
+		{
+			# No entry for this day for these rubrics.
+			$have_all_versions = 0;
 			next;
 		}
 		elsif(!$cpe_prev ||
@@ -235,10 +346,14 @@ foreach my $calpoint (keys %calentries)
 		my $sec_versions = $sections[$sec_version_index];
 
 		print "[$calpoint]";
-		print ' (rubrica ' . rubric_condition($sec_versions) . ')' unless($sec_version_index == 0);
+		print ' (rubrica ' . rubric_condition($sec_versions) . ')' unless($sec_version_index == 0 && $have_all_versions);
 		print "\n";
 
-		foreach my $field ('title','rank','filename')
+		# Begin by assuming that all versions have all the implicit
+		# fields.
+		my $have_all_implicit_fields = 1;
+
+		foreach my $field (@output_fields)
 		{
 			my %value_lookup;
 
@@ -250,6 +365,14 @@ foreach my $calpoint (keys %calentries)
 				push $lookup_entry, $_;
 			}
 
+			# Did any versions omit the field?
+			my $have_all_subsec_versions = !exists($value_lookup{''});
+			if(!$have_all_subsec_versions)
+			{
+				$have_all_implicit_fields = 0;
+				delete $value_lookup{''};
+			}
+
 			my @subsections = keys(%value_lookup);
 
 			# Sort this little subsection, too.
@@ -259,15 +382,21 @@ foreach my $calpoint (keys %calentries)
 			{
 				my $subsec_val = $subsections[$subsec_index];
 
-				print '(sed rubrica ' . rubric_condition($value_lookup{$subsec_val}) . ') ' unless($subsec_index == 0);
-				print "$field=" unless($field eq 'title' || $field eq 'rank');
+				if($subsec_index != 0 || !$have_all_subsec_versions)
+				{
+					print '(';
+					print 'sed ' if($have_all_subsec_versions);
+					print 'rubrica ' . rubric_condition($value_lookup{$subsec_val}) . ') ';
+				}
+
+				print "$field=" unless($have_all_implicit_fields && ($field eq 'title' || $field eq 'rank'));
 				print "$subsec_val\n";
 			}
 		}
 
 		print "\n";
 	}
-}
+} }	# Close a for-if double block.
 
 
 1;
