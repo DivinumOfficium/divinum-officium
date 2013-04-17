@@ -1,11 +1,20 @@
 # These need to be included as part of the main package for the time being.
 require "horas/horascommon.pl";
 require "horas/dialogcommon.pl";
+require "horas/do_io.pl";
 
 package horas::caldata;
 
 use strict;
 use warnings;
+
+use FindBin qw($Bin);
+use lib "$Bin/..";
+
+use List::Util qw(min);
+use Digest::MD5 qw(md5_hex);
+
+use horas::calendar;
 
 BEGIN
 {
@@ -16,28 +25,157 @@ BEGIN
 	our @EXPORT = qw(load_calendar_file default_calentry);
 }
 
-sub load_calendar_file($$)
+# Parse the rank line from the calendar file and return a hash representing it.
+sub parse_rank_line($)
 {
-	my ($datafolder, $filename) = @_;
+	local $_ = shift;
 
-	my %cal = %{::setupstring($datafolder, '', $filename)};
+	my %rank;
 
-	foreach my $calentry (values(%cal))
+	if(s/Festum(\s+Domini)?\s+//i)
 	{
-		my @implicit_fields = ('title', 'rank');
-		my @field_pairs;
+		$rank{category} = FESTAL_OFFICE;
+		$rank{tags} = 'Festum Domini' if($1);
+	}
+	elsif(s/Dominica(\s+Ma[ij]or)?\s+//i)
+	{
+		$rank{category} = SUNDAY_OFFICE;
+		$rank{standing} = $1 ? GREATER_DAY : LESSER_DAY;
+	}
+	elsif(s/Feria(\s+Ma[ij]or\s+(Privilegiata)?)?\s+//i)
+	{
+		$rank{category} = FERIAL_OFFICE;
+		$rank{standing} = $1 ? ($2 ? GREATER_PRIVILEGED_DAY : GREATER_DAY) : LESSER_DAY;
+	}
+	elsif(s/Vigilia\s+//i) { $rank{category} = VIGIL_OFFICE; }
+	elsif(s/Dies\s+infra\s+octavam\s+//i) { $rank{category} = WITHIN_OCTAVE_OFFICE; }
+	elsif(s/Dies\s+octava\s+//i) { $rank{category} = OCTAVE_DAY_OFFICE; }
+	else {warn "parse_rank_line: Missing category: $_";}
 
-		foreach ($calentry =~ /(.*?)$/mg)
-		{
-			push @field_pairs, /(?:([^=]*)=)?(.*)$/;
-			my $implicit_field = shift(@implicit_fields);
-			$field_pairs[-2] ||= $implicit_field;
-		}
-
-		$calentry = {@field_pairs};
+	if($rank{category} == WITHIN_OCTAVE_OFFICE || $rank{category} == OCTAVE_DAY_OFFICE)
+	{
+		s/(?:(I|II|III)\.\s+ordinis|(communis|communem)|simplex)\s+//i;
+		$rank{octrank} = $1 ? length($1) : ($2 ? COMMON_OCTAVE : SIMPLE_OCTAVE);
 	}
 
-	return \%cal;
+	$rank{rite} =	s/Duplex ma[ij]us\s*//i ?	GREATER_DOUBLE_RITE :
+			s/Semiduplex\s*//i ?		SEMIDOUBLE_RITE :
+			s/Duplex\s*//i ?		DOUBLE_RITE :
+			(s/Simplex\s*//i,		SIMPLE_RITE);
+
+	if(s/Primaria\s*//i) { $rank{nobility} = PRIMARY_OFFICE; }
+	elsif(s/Secundaria\s*//i) { $rank{nobility} = SECONDARY_OFFICE; }
+
+	if(/(IV|III|II|I)\.\s+classis/i)
+	{
+		$rank{rankord} = ($1 =~ /V/i) ? 4 : length($1);
+	}
+	else
+	{
+		$rank{rankord} =
+			$rank{category} == SUNDAY_OFFICE ?		($rank{standing} == GREATER_DAY ? 2 : 3) :
+			$rank{category} == FERIAL_OFFICE ?		($rank{standing} == GREATER_PRIVILEGED_DAY ? 1 : ($rank{standing} == GREATER_DAY ? 3 : 4)) :
+			$rank{category} == FESTAL_OFFICE ?		($rank{rite} == SIMPLE_RITE ? 4 : 3) :
+			$rank{category} == OCTAVE_DAY_OFFICE ?		($rank{octrank} <= 2 ? 1 : 3):
+			$rank{category} == WITHIN_OCTAVE_OFFICE ?	min($rank{octrank}, 3) :
+			$rank{category} == VIGIL_OFFICE ?		($::version =~ /1960/ ? 3 : 4) :
+									4;
+	}
+
+	return %rank;
+}
+
+sub load_calendar_file($$;$)
+{
+	my ($datafolder, $filename, $basecal) = @_;
+	my %global_defaults = (partic => $basecal ? PARTICULAR_OFFICE : UNIVERSAL_OFFICE);
+
+	$basecal ||= {offices => {}, calpoints => {}};
+
+	my %caldata = %{::setupstring($datafolder, '', $filename)};
+
+	foreach my $calpoint (keys(%caldata))
+	{
+		my $caldata_entry = $caldata{$calpoint};
+		my @implicit_fields = ('title', 'rank');
+		my %office;
+
+		my $insertion_index = -1;
+
+		foreach ($caldata_entry =~ /(.+?)$/mg)
+		{
+			/(?:([^=]*)=)?(.*)$/;
+			my $implicit_field = shift(@implicit_fields);
+			$office{$1 || $implicit_field} = $2;
+		}
+
+		$office{id} ||= "$calpoint-" . md5_hex(%office);
+
+		my $inplace_modification = 0;
+
+		if(exists($$basecal{offices}{$office{id}}))
+		{
+			# We're modifying an existing office.
+
+			# Find the existing office's position in the array of
+			# offices for its day.
+			my $existing_index;
+			for($existing_index = 0;
+				$$basecal{calpoints}{$$basecal{offices}{$office{id}}{calpoint}}[$existing_index] ne $office{id};
+				$existing_index++) {}
+
+			if($$basecal{offices}{$office{id}}{calpoint} eq $calpoint)
+			{
+				# The office isn't changing day, so act as if we
+				# had inserted it at its current position.
+				$insertion_index = $existing_index;
+
+				$inplace_modification = 1;
+			}
+			else
+			{
+				# Unlink from old calpoint.
+				splice($$basecal{calpoints}{$calpoint}, $existing_index, 1);
+			}
+			
+			my $old_office = $$basecal{offices}{$office{id}}{office};
+
+			$office{$_} ||= $$old_office{$_} foreach(keys(%$old_office));
+		}
+		else
+		{
+			my %def_ce = default_calentry($calpoint);
+			$office{$_} ||= $def_ce{$_} foreach(keys(%def_ce));
+		}
+
+		next unless(exists($office{rank}));
+		my %rank = parse_rank_line($office{rank});
+		$office{$_} = $rank{$_} foreach(keys(%rank));
+
+		$office{$_} ||= $global_defaults{$_} foreach(keys(%global_defaults));
+
+		# Now we insert the office in all the correct places.
+		
+		$$basecal{offices}{$office{id}}{calpoint} = $calpoint;
+		$$basecal{offices}{$office{id}}{office} = \%office;
+
+		# Link to the the office at the appropriate calpoint (unless
+		# it's already linked there).
+		my $calpoint_arr = ($$basecal{calpoints}{$calpoint} ||= []);
+		splice @$calpoint_arr, ++$insertion_index, 0, $office{id} unless($inplace_modification);
+		
+		# Make sure the new/modified office is in the correct place in
+		# the list.
+		if(@$calpoint_arr > 1)
+		{
+			@$calpoint_arr[$insertion_index, $insertion_index + 1] = @$calpoint_arr[$insertion_index + 1, $insertion_index++]
+				while(cmp_occurrence(%{$$basecal{offices}{$$calpoint_arr[$insertion_index]}{office}}, %{$$basecal{offices}{$$calpoint_arr[$insertion_index + 1]}{office}}) > 0);
+			@$calpoint_arr[$insertion_index, $insertion_index - 1] = @$calpoint_arr[$insertion_index - 1, $insertion_index--]
+				while(cmp_occurrence(%{$$basecal{offices}{$$calpoint_arr[$insertion_index - 1]}{office}}, %{$$basecal{offices}{$$calpoint_arr[$insertion_index]}{office}}) > 0);
+		}
+	}
+
+	return $basecal;
 }
 
 sub roman_numeral($)

@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 
+use 5.014;	# Array functions operating on references.
 use strict;
 
 use FindBin qw($Bin);
@@ -53,7 +54,7 @@ sub rubric_condition(+)
 		}
 	}
 	
-	return join(' aut ', @rubric_conditions);
+	return join(' aut ', map {"rubrica $_"} @rubric_conditions);
 }
 
 
@@ -346,7 +347,7 @@ foreach my $calpoint (@calpoints) { if(exists($calentries{$calpoint}))
 		my $sec_versions = $sections[$sec_version_index];
 
 		print "[$calpoint]";
-		print ' (rubrica ' . rubric_condition($sec_versions) . ')' unless($sec_version_index == 0 && $have_all_versions);
+		print ' (' . rubric_condition($sec_versions) . ')' unless($sec_version_index == 0 && $have_all_versions);
 		print "\n";
 
 		# Begin by assuming that all versions have all the implicit
@@ -386,7 +387,7 @@ foreach my $calpoint (@calpoints) { if(exists($calentries{$calpoint}))
 				{
 					print '(';
 					print 'sed ' if($have_all_subsec_versions);
-					print 'rubrica ' . rubric_condition($value_lookup{$subsec_val}) . ') ';
+					print rubric_condition($value_lookup{$subsec_val}) . ') ';
 				}
 
 				print "$field=" unless($have_all_implicit_fields && ($field eq 'title' || $field eq 'rank'));
