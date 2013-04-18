@@ -1,0 +1,41 @@
+[Rank]
+Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
+
+[Rule]
+vide Sancti/01-01
+CPapaM=Telésphorum;
+
+[Commemoratio]
+!Commemoratio S. Telesphori Papae et Martyris
+@Commune/C2:Oratio1 Gregem
+
+[Lectio1]
+De Epistola ad Romanos.
+!Rom 8:1-4
+8:1 Nihil ergo nunc damnationis est iis qui sunt in Christo Jesu: qui non secundum carnem ambulant.
+8:2 Lex enim spiritus vitae in Christo Jesu liberavit me a lege peccati et mortis.
+8:3 Nam quod impossibile erat legi, in quo infirmabatur per carnem: Deus Filium suum mittens in similitudinem carnis peccati et de peccato, damnavit peccatum in carne,
+8:4 ut justificatio legis impleretur in nobis, qui non secundum carnem ambulamus, sed secundum spiritum.
+
+[Lectio2]
+!Rom 8:5-9
+8:5 Qui enim secundum carnem sunt, quae carnis sunt, sapiunt: qui vero secundum spiritum sunt, quae sunt spiritus, sentiunt.
+8:6 Nam prudentia carnis, mors est: prudentia autem spiritus, vita et pax:
+8:7 quoniam sapientia carnis inimica est Deo: legi enim Dei non est subjecta, nec enim potest.
+8:8 Qui autem in carne sunt, Deo placere non possunt.
+8:9 Vos autem in carne non estis, sed in spiritu: si tamen Spiritus Dei habitat in vobis.
+
+[Lectio3]
+!Rom 8:9-11
+8:9 Si quis autem Spiritum Christi non habet: hic non est ejus.
+8:10 Si autem Christus in vobis est, corpus quidem mortuum est propter peccatum, spiritus vero vivit propter justificationem.
+8:11 Quod si Spiritus ejus, qui suscitavit Jesum a mortuis, habitat in vobis: qui suscitavit Jesum Christum a mortuis, vivificabit et mortalia corpora vestra, propter inhabitantem Spiritum ejus in vobis.
+
+[Responsory1]
+@Sancti/01-01:Responsory1
+
+[Responsory2]
+@Sancti/01-01:Responsory2
+
+[Responsory3]
+@Sancti/01-01:Responsory3
