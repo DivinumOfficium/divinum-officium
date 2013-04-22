@@ -147,3 +147,24 @@ simple rite and is _Feria m infra hebdomadam n Quadragesimae_, and so on. If a
 particular day deviates from the general pattern, it would be enough to create
 an entry for it in the calendar file, and the defaults would be overriden: for
 instance, for the Ember days.
+
+=Implementation=
+
+As of Easter 2013, work has begun on this project on the {{{calcalc}}} branch. This section contains sundry implementation notes.
+
+==Source files==
+ * *{{{admin/gen-cal.pl}}}* generates a calendar file in the format described above by extracting the appropriate data from the existing office files. It doesn't handle commemorations or the distinction between primary and secondary feasts, but these would maybe be better done manually. It also misses a few cases, such as feasts calculated relative to a certain week of a month.
+
+ * *{{{web/cgi-bin/horas/caldata.pm}}}* parses calendar files.
+
+ * *{{{web/cgi-bin/horas/calendar.pm}}}* is intended to house calendar logic. It currently has occurrence and concurrence comparators; its other main task will be to resolve the office (including any commemorated offices) for a given hour on a given day.
+
+==Calendar file directory structure==
+
+==Data structures representing parsed calendar files==
+
+===Caching parsed data===
+
+==Resolving the office==
+
+===Translation of offices===
