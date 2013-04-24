@@ -94,6 +94,14 @@ S. Marci, Papae et Confessoris
 Festum Simplex
 }}}
 
+Here are the supported fields:
+
+|| *Field* || *Significance* ||
+|| title || Title of office. ||
+|| rank  || Specification of the office's rank, rite etc. See below. ||
+|| filename || Relative path to office file, without {{{.txt}}}. If omitted, this is inferred. ||
+|| id    || ID string for subsequent references to the office. Specifying an existing ID causes any previous office of that ID to be deleted. This field can be omitted unless this behaviour is needed. See the _Implementation_ section for more. ||
+
 ==Rank, rite etc.==
 
 {{{
@@ -159,9 +167,18 @@ As of Easter 2013, work has begun on this project on the {{{calcalc}}} branch. T
 
  * *{{{web/cgi-bin/horas/calendar.pm}}}* is intended to house calendar logic. It currently has occurrence and concurrence comparators; its other main task will be to resolve the office (including any commemorated offices) for a given hour on a given day.
 
+
 ==Calendar file directory structure==
 
+Storing the calendar file(s) in (the new directory) {{{web/horas/Kalendaria}}} would seem to be appropriate. The main file would be {{{generalis.txt}}}, and supposing we eventually support local calendars, these could be arrange into subdirectories.
+
 ==Data structures representing parsed calendar files==
+
+We have two distinct sorts of query that we perform on the calendar database. The conceptually straightforward one is to retrieve the offices to be said on a given liturgical day (e.g. the Third Sunday After Easter, 23rd April, Last Sunday in October... these are called _calendar points_, or _calpoints_, in the source, and I'll adopt that convention here).
+
+The other sort of query is to retrieve the details of a specific office (say, St George's day). In fact we don't need this in an essential way at the moment, but implementing it in full generality will make support for particular calendars easier. This requires some way of referring to an office; we use an ID system, described later.
+
+The parsed data is stored in two hashes: one has office IDs as keys and the office data itself as values (this is itself a hash, described earlier), and the other has calpoints as keys and arrays of office IDs as values. These arrays are sorted in occurrence-precedence order, with higher-ranking offices first. The two hashes are stored in one hash for convenience; if this is {{{%calendar}}}, the first hash is {{{$calendar{offices}}}} and the second is {{{$calendar{calpoints}}}}.
 
 ===Caching parsed data===
 
