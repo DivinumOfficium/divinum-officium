@@ -170,7 +170,7 @@ As of Easter 2013, work has begun on this project on the {{{calcalc}}} branch. T
 
 ==Calendar file directory structure==
 
-Storing the calendar file(s) in (the new directory) {{{web/horas/Kalendaria}}} would seem to be appropriate. The main file would be {{{generalis.txt}}}, and supposing we eventually support local calendars, these could be arrange into subdirectories.
+Storing the calendar file(s) in (the new directory) {{{web/www/horas/Kalendaria}}} would seem to be appropriate. The main file would be {{{generalis.txt}}}, and supposing we eventually support local calendars, these could be arrange into subdirectories.
 
 ==Data structures representing parsed calendar files==
 
