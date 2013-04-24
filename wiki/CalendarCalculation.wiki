@@ -188,7 +188,7 @@ Given a calendar day, we wish to find the offices to be said. An algorithm would
 
 Firstly, to resolve occurrence:
 
- # Find all the calpoints falling on that day, taking into account transferal.
+ # Find all the calpoints falling on that day, taking into account transferral.
  # Get the list of offices for each of the calpoints.
  # Interleave the lists according to occurrence precedence. This is reasonably straightforward, as each list is already sorted.
 
@@ -197,6 +197,6 @@ And concurrence:
  # Resolve occurrence for both days.
  # Interleave preceding and following. The first item in the list is determined by the concurrence comparator in the natural way; this determines whether the office is to be of the preceding or of the following (or from the chapter of the following). But thereafter the ordering of offices depends on the active rubrics: some require that preceding offices be commemorated before all following ones; others just sort by rank, in some sense (concurrence rank? occurrence rank?).
 
-===Transferal of offices===
+===Transferral of offices===
 
 For the time being we can use the existing precalculated tables, but in the long run we will need some replacement for these. Precalculation is a good solution _except_ that it would be problematic for particular calendars. Finding a sufficiently fast (and correct!) algorithm for on-the-fly calculation is an intriguing problem. If the calculation did prove too expensive, some sort of per-particular-calendar caching might be practicable, in the same spirit as for the calendar files themselves. As some first thoughts in this direction, [http://www.ingentaconnect.com/content/maney/usu/2011/00000002/00000002/art00002 here is an article by Paul Cavendish which mentions, in passing, how St Mark ended up in June], and, secondly, it is probably reasonable to assume that a feast is never translated by more than a year (!).
