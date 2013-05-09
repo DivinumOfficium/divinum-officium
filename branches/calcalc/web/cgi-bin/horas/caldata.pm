@@ -14,7 +14,7 @@ use lib "$Bin/..";
 use List::Util qw(min);
 use Digest::MD5 qw(md5_hex);
 
-use horas::calendar;
+use horas::caldef;
 
 BEGIN
 {
@@ -22,7 +22,7 @@ BEGIN
 
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT = qw(load_calendar_file default_calentry);
+  our @EXPORT_OK = qw(load_calendar_file get_implicit_office get_all_offices);
 }
 
 # Parse the rank line from the calendar file and return a hash representing it.
@@ -42,7 +42,7 @@ sub parse_rank_line($)
     $rank{category} = SUNDAY_OFFICE;
     $rank{standing} = $1 ? GREATER_DAY : LESSER_DAY;
   }
-  elsif(s/Feria(\s+Ma[ij]or\s+(Privilegiata)?)?\s+//i)
+  elsif(s/Feria(\s+Ma[ij]or(\s+Privilegiata)?)?\s+//i)
   {
     $rank{category} = FERIAL_OFFICE;
     $rank{standing} = $1 ? ($2 ? GREATER_PRIVILEGED_DAY : GREATER_DAY) : LESSER_DAY;
@@ -169,9 +169,9 @@ sub load_calendar_file($$;$)
     if(@$calpoint_arr > 1)
     {
       @$calpoint_arr[$insertion_index, $insertion_index + 1] = @$calpoint_arr[$insertion_index + 1, $insertion_index++]
-        while(cmp_occurrence(%{$$basecal{offices}{$$calpoint_arr[$insertion_index]}{office}}, %{$$basecal{offices}{$$calpoint_arr[$insertion_index + 1]}{office}}) > 0);
+        while(cmp_occurrence($$basecal{offices}{$$calpoint_arr[$insertion_index]}{office}, $$basecal{offices}{$$calpoint_arr[$insertion_index + 1]}{office}) > 0);
       @$calpoint_arr[$insertion_index, $insertion_index - 1] = @$calpoint_arr[$insertion_index - 1, $insertion_index--]
-        while(cmp_occurrence(%{$$basecal{offices}{$$calpoint_arr[$insertion_index - 1]}{office}}, %{$$basecal{offices}{$$calpoint_arr[$insertion_index]}{office}}) > 0);
+        while(cmp_occurrence($$basecal{offices}{$$calpoint_arr[$insertion_index - 1]}{office}, $$basecal{offices}{$$calpoint_arr[$insertion_index]}{office}) > 0);
     }
   }
 
@@ -273,6 +273,45 @@ sub default_calentry($)
   }
 
   return @calentry;
+}
+
+
+# *** get_implicit_office($calpoint)
+# Returns the office implicitly falling on $calpoint, if any exists, and undef
+# otherwise. This is intended for generating ferias and Sundays.
+sub get_implicit_office
+{
+  my $calpoint = shift;
+
+  my %office = default_calentry($calpoint);
+  return exists($office{title}) ? \%office : undef;
+}
+
+
+sub get_all_offices
+{
+  my ($calendar_ref, $calpoint) = @_;
+
+  if(exists($calendar_ref->{calpoints}{$calpoint}))
+  {
+    # Easy case: everything is explicit. Dereference the offices.
+    return map {$calendar_ref->{offices}{$_}{office}} @{$calendar_ref->{calpoints}{$calpoint}};
+  }
+  
+  # No entry for this calpoint, so see whether we have an implicit office.
+  my $implicit_office_ref = get_implicit_office($calpoint);
+  if($implicit_office_ref)
+  {
+    # Parse the rank.
+    my %rank = parse_rank_line($implicit_office_ref->{rank});
+    $implicit_office_ref->{$_} ||= $rank{$_} foreach(keys(%rank));
+
+    # TODO: Assign an ID?
+
+    return $implicit_office_ref;
+  }
+
+  return ();
 }
 
 1;
