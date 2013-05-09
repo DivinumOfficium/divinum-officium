@@ -1,6 +1,13 @@
 package horas::calendar;
 
 use strict;
+use warnings;
+
+use FindBin qw($Bin);
+use lib "$Bin/..";
+
+use horas::caldef;
+use horas::caldata qw(get_all_offices);
 
 BEGIN
 {
@@ -8,72 +15,8 @@ BEGIN
 
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT =
-  qw(
-    cmp_occurrence cmp_concurrence
-    FESTAL_OFFICE SUNDAY_OFFICE FERIAL_OFFICE VIGIL_OFFICE WITHIN_OCTAVE_OFFICE OCTAVE_DAY_OFFICE
-    LESSER_DAY GREATER_DAY GREATER_PRIVILEGED_DAY
-    SIMPLE_RITE SEMIDOUBLE_RITE DOUBLE_RITE GREATER_DOUBLE_RITE
-    PRIMARY_OFFICE SECONDARY_OFFICE
-    FIRST_ORDER_OCTAVE SECOND_ORDER_OCTAVE THIRD_ORDER_OCTAVE COMMON_OCTAVE SIMPLE_OCTAVE
-    OMIT_LOSER COMMEMORATE_LOSER TRANSLATE_LOSER FROM_THE_CHAPTER
-    PARTICULAR_OFFICE UNIVERSAL_OFFICE
-  );
+  our @EXPORT_OK = qw(resolve_occurrence resolve_concurrence);
 }
-
-use constant
-{
-  FESTAL_OFFICE  => 0,
-  SUNDAY_OFFICE  => 1,
-  FERIAL_OFFICE  => 2,
-  VIGIL_OFFICE  => 3,
-  WITHIN_OCTAVE_OFFICE  => 4,
-  OCTAVE_DAY_OFFICE  => 5
-};
-
-use constant
-{
-  LESSER_DAY    => 0,
-  GREATER_DAY    => 1,
-  GREATER_PRIVILEGED_DAY  => 2
-};
-
-use constant
-{
-  SIMPLE_RITE    => 0,
-  SEMIDOUBLE_RITE    => 1,
-  DOUBLE_RITE    => 2,
-  GREATER_DOUBLE_RITE  => 3
-};
-
-use constant
-{
-  PRIMARY_OFFICE    => 1,
-  SECONDARY_OFFICE  => 2
-};
-
-use constant
-{
-  FIRST_ORDER_OCTAVE  => 1,
-  SECOND_ORDER_OCTAVE  => 2,
-  THIRD_ORDER_OCTAVE  => 3,
-  COMMON_OCTAVE    => 4,
-  SIMPLE_OCTAVE    => 5
-};
-
-use constant
-{
-  OMIT_LOSER    => 1,
-  COMMEMORATE_LOSER  => 2,
-  TRANSLATE_LOSER    => 3,
-  FROM_THE_CHAPTER  => 0  # The fact that this is zero is an implementation detail!
-};
-
-use constant
-{
-  UNIVERSAL_OFFICE  => 0,
-  PARTICULAR_OFFICE  => 1
-};
 
 
 # dignity($office)
@@ -212,7 +155,7 @@ sub cmp_occurrence_1960
 # should be done to the loser. $a and $b are references to the calentry hashes
 # for the offices. Returns a symbolic constant indicating what to do to the
 # loser, which is positive if $b wins and negative if $a wins.
-sub cmp_occurrence(\%\%)
+sub cmp_occurrence
 {
   return cmp_occurrence_1960(@_) if($::version =~ /1960/);
 
@@ -345,7 +288,7 @@ sub cmp_concurrence_1960
 # $preceding office concurs with $following. See cmp_occurrence for the return
 # semantics, except that we can also return FROM_THE_CHAPTER when Vespers
 # should be such.
-sub cmp_concurrence(\%\%)
+sub cmp_concurrence
 {
   return cmp_concurrence_1960(@_) if($::version =~ /1960/);
 
@@ -415,9 +358,95 @@ sub cmp_concurrence(\%\%)
   }
 
   # Both days are in the same concurrence category. Office of the day of
-  # greater dignity; or, in parity, from the chapter of the follow.
+  # greater dignity; or, in parity, from the chapter of the following.
   my $sign = dignity($following) - dignity($preceding);
   return $sign ? $sign * COMMEMORATE_LOSER : FROM_THE_CHAPTER;
+}
+
+
+sub days_in_month
+{
+  my ($month, $year) = @_;
+  return 29 if($month == 2 && ::leapyear($year));
+  return (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)[$month - 1];
+}
+
+
+sub generate_calpoints
+{
+  use integer;
+
+  my $date = shift;
+  my @date_mdy = split(/-/, $date);
+  my $week;
+  my $day_of_week;
+
+  # Find which week we're in. &::getweek uses globals, which we localise until
+  # such a time as &::getweek is rewritten.
+  {
+    local @::date1 = @date_mdy;
+    local $::day = $date_mdy[0];
+    local $::month = $date_mdy[1];
+    local $::year = $date_mdy[2];
+    local $::dayofweek;
+
+    $week = ::getweek(0);
+
+    # &getweek calculated $::dayofweek, which we want to remember, but which we
+    # don't want to persist globally.
+    $day_of_week = $::dayofweek;
+  }
+
+  my @days = qw(Dominica FeriaII FeriaIII FeriaIV FeriaV FeriaVI Sabbato);
+  my $month_prefix = sprintf('%02d-', $date_mdy[0]);
+
+  my @calpoints = (
+    # Calendar day: mm-dd.
+    $month_prefix . sprintf('%02d', $date_mdy[1]),
+
+    # nth x-day *in* the month.
+    "$month_prefix$days[$day_of_week]-" . ($date_mdy[1] / 7 + 1)
+  );
+
+  # nth x-day *of* the month.
+  my $reading_day = ::reading_day(@date_mdy);
+  push @calpoints, $reading_day if($reading_day);
+
+  # Last x-day.
+  push @calpoints, "$month_prefix$days[$day_of_week]-Ult" if($day_of_week == 0 && days_in_month($date_mdy[1]) - $date_mdy[1] < 7);
+
+  # Temporal cycle, except for Christmas-Epiphany.
+  push @calpoints, "$week-$day_of_week" if($week);
+
+  return @calpoints;
+}
+
+
+sub resolve_occurrence
+{
+  my ($calendar_ref, $date) = @_;
+
+  # Get all calpoints falling on this date and expand them to the lists of
+  # offices assigned thereto. This also gets any implicit offices.
+  my @office_lists = map {[get_all_offices($calendar_ref, $_)]} generate_calpoints($date);
+
+  # Combine and sort the lists of offices. Really the sorting is doing two
+  # tasks: it finds the winning office, and it also sorts the commemorations.
+  # TODO: Formally speaking these are governed by two different sets of rules,
+  # so this might need adjusted.
+  my @sorted_offices = sort {cmp_occurrence($a, $b)} map {@$_} @office_lists;
+
+  # Remove any offices that should be translated or omitted in occurrence with
+  # the winner.
+  my $winner = shift @sorted_offices;
+  return
+    $winner,
+    grep
+    {
+      my $loser_rule = cmp_occurrence($_, $winner);
+      $loser_rule != OMIT_LOSER && $loser_rule != TRANSLATE_LOSER;
+    }
+    @sorted_offices;
 }
 
 1;

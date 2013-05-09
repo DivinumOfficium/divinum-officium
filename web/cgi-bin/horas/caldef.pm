@@ -1,0 +1,83 @@
+# horas::caldef
+# Definitions of calendar constants.
+
+package horas::caldef;
+
+use strict;
+use warnings;
+
+
+BEGIN
+{
+  require Exporter;
+
+  our $VERSION = 1.00;
+  our @ISA = qw(Exporter);
+  our @EXPORT =
+  qw(
+    FESTAL_OFFICE SUNDAY_OFFICE FERIAL_OFFICE VIGIL_OFFICE WITHIN_OCTAVE_OFFICE OCTAVE_DAY_OFFICE
+    LESSER_DAY GREATER_DAY GREATER_PRIVILEGED_DAY
+    SIMPLE_RITE SEMIDOUBLE_RITE DOUBLE_RITE GREATER_DOUBLE_RITE
+    PRIMARY_OFFICE SECONDARY_OFFICE
+    FIRST_ORDER_OCTAVE SECOND_ORDER_OCTAVE THIRD_ORDER_OCTAVE COMMON_OCTAVE SIMPLE_OCTAVE
+    OMIT_LOSER COMMEMORATE_LOSER TRANSLATE_LOSER FROM_THE_CHAPTER
+    PARTICULAR_OFFICE UNIVERSAL_OFFICE
+  );
+}
+
+use constant
+{
+  FESTAL_OFFICE  => 0,
+  SUNDAY_OFFICE  => 1,
+  FERIAL_OFFICE  => 2,
+  VIGIL_OFFICE  => 3,
+  WITHIN_OCTAVE_OFFICE  => 4,
+  OCTAVE_DAY_OFFICE  => 5
+};
+
+use constant
+{
+  LESSER_DAY    => 0,
+  GREATER_DAY    => 1,
+  GREATER_PRIVILEGED_DAY  => 2
+};
+
+use constant
+{
+  SIMPLE_RITE    => 0,
+  SEMIDOUBLE_RITE    => 1,
+  DOUBLE_RITE    => 2,
+  GREATER_DOUBLE_RITE  => 3
+};
+
+use constant
+{
+  PRIMARY_OFFICE    => 1,
+  SECONDARY_OFFICE  => 2
+};
+
+use constant
+{
+  FIRST_ORDER_OCTAVE  => 1,
+  SECOND_ORDER_OCTAVE  => 2,
+  THIRD_ORDER_OCTAVE  => 3,
+  COMMON_OCTAVE    => 4,
+  SIMPLE_OCTAVE    => 5
+};
+
+use constant
+{
+  OMIT_LOSER    => 1,
+  COMMEMORATE_LOSER  => 2,
+  TRANSLATE_LOSER    => 3,
+  FROM_THE_CHAPTER  => 0  # The fact that this is zero is an implementation detail!
+};
+
+use constant
+{
+  UNIVERSAL_OFFICE  => 0,
+  PARTICULAR_OFFICE  => 1
+};
+
+1;
+

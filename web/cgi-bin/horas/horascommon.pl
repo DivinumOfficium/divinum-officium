@@ -1152,21 +1152,34 @@ sub precedence {
 
 }
 
-#*** monthday($forcetomorrow)
+#*** monthday($forcetomorrow), reading_day($month, $day, $year)
 # returns an empty string or mmn-d format 
 # e.g. 081-1 for monday after the firs Sunday of August
 sub monthday {
   my $forcetomorrow = shift;
-  my $tomorrow;
   
-  # Get tomorrow's date if the caller requested it or if we're saying first Vespers.
-  $tomorrow = ($forcetomorrow || $tvesp == 1);
+  our @date1;
 
-  if ($month < 7 || $dayname[0] =~ /Adv/i) {return '';} 
+  # Use tomorrow's date if the caller requested it or if we're saying first Vespers.
+  return reading_day(($forcetomorrow || our $tvesp == 1) ? (nday(@date1[1,0,2]))[1,0,2] : @date1);
+}
 
-  my @ftime = splice(@ftime, @ftime);
-  my ($fday, $fmonth);
+sub reading_day {
+  # $month, $day, $year and $dayofweek shadow globals.
+  my ($month, $day, $year) = @_;
+  my $date_ordinal = date_to_days($day, $month - 1, $year);
+  my $dayofweek = (days_to_date($date_ordinal))[6];
+  my $advent = getadvent($year);
+  my $m;
+
+  our $version;
+
+  if ($month < 7 || $date_ordinal >= $advent) {return '';} 
+
+  my @ftime;
+
   for ($m = 8; $m < 13; $m++) { 
+    my ($fday, $fmonth);
     my $t = date_to_days( 1, $m - 1, $year);  #time for the first day of month
     my @d = days_to_date($t);
     my $dofweek = $d[6];  
@@ -1181,19 +1194,15 @@ sub monthday {
     $ftime[$m - 8] = date_to_days( $fday, $fmonth - 1, $year);  
   }
 
-  my ($d1, $m1, $y1, $dow) = ($day, $month, $year, $dayofweek);
-  if ($tomorrow) {($d1, $m1, $y1) = nday($day, $month, $year); $dow = ($dayofweek + 1) % 7;}
-      
-  my $ta = date_to_days( $d1, $m1 - 1, $y1); 
-  if ($ta < $ftime[0]) {return '';}
+  if ($date_ordinal < $ftime[0]) {return '';}
   for ($m = 9; $m < 13; $m++) {
-    if ($ta < $ftime[$m - 8]) {last;}
+    if ($date_ordinal < $ftime[$m - 8]) {last;}
   }
 
   # $m is now *one more* than the current month, which explains the change of
   # offset into @ftime from -8 to -9.
                                  
-  my $tdays = $ta - $ftime[$m - 9];   
+  my $tdays = $date_ordinal - $ftime[$m - 9];   
   my $weeks = floor($tdays / 7); 
 
   # Special handling for October with the 1960 rubrics: the III. week vanishes
@@ -1204,16 +1213,12 @@ sub monthday {
   # Special handling for November: the II. week vanishes most years (and always
   # with the 1960 rubrics). Achieve this by counting backwards from Advent.
   if ($m == 12 && ($weeks > 0 || $version =~ /1960/)) {
-    my $t = date_to_days($date1[1],$date1[0]-1,$date1[2]);
-    if ($tomorrow) {$t += 1;}
-    my $advent1 = getadvent($year);
-    my $wdist = floor(($advent1 - $t - 1) / 7);    
+    my $wdist = floor(($advent - $date_ordinal - 1) / 7);    
     $weeks = 4 - $wdist;  
-	if ($version =~ /1960/ && $weeks == 1) {$weeks = 0;}
+    if ($version =~ /1960/ && $weeks == 1) {$weeks = 0;}
   }
 
-  my $monthday = sprintf('%02i%01i-%01i', $m - 1, $weeks + 1, $dow);  
-  return $monthday;
+  return sprintf('%02i%01i-%01i', $m - 1, $weeks + 1, $dayofweek);
 }
 
 #*** officestring($basedir, $lang, $fname, $flag)
