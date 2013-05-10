@@ -251,7 +251,7 @@ sub default_calentry($)
       ('title' => "$feria[$2] infra Hebdomadam " . ($1 == 5 ? 'Passionis' : "$week in Quadragesima"),
       'rank' => 'Feria Maior Simplex');
   }
-  elsif(/^Pasc(\d)-(\d)$/i && $1 >= 2 && $1 <= 5)
+  elsif(/^Pasc(\d)-(\d)$/i && $1 >= 1 && $1 <= 5)
   {
     my $week = roman_numeral($1);
     push @calentry, $2 == 0 ?
