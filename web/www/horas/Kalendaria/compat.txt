@@ -1,0 +1,212 @@
+This file mimics pre-existing errors and quirks in the calendar for testing
+purposes. It shouldn't persist in the long term.
+
+[Epi4-1]
+Feria Secunda infra Hebdomadam IV post Epiiphaniam
+
+[Epi4-2]
+Feria Tertia infra Hebdomadam IV post Epiphaniam
+
+[Pasc2-3] (rubrica innovata)
+Patrocinii St. Joseph Confessoris Sponsi B.M.V. Confessoris
+Festum Duplex I. classis
+
+[Pasc2-5] (rubrica innovata)
+Die III Infra Octavam S. Joseph
+Dies infra octavam communem Semiduplex
+
+[Pasc2-6] (rubrica innovata)
+Die IV Infra Octavam S. Joseph
+Dies infra octavam communem Semiduplex
+
+[Pasc3-0] (rubrica innovata)
+
+[Pasc3-1] (rubrica innovata)
+Die VI Infra Octavam S. Joseph
+Dies infra octavam communem Semiduplex
+
+[Pasc3-2] (rubrica innovata)
+Die VII Infra Octavam S. Joseph
+Dies infra octavam communem Semiduplex
+
+[Pasc3-3] (rubrica innovata)
+Die Octavae S. Joseph
+Festum Duplex maius
+
+[Pasc7-3]
+Feria Quarta Quattuor Temporum Pentecostes
+Feria Maior privilegiata Semiduplex I. classis
+
+[Pasc7-4]
+Die Quinta infra octavam Pentecostes
+Dies infra octavam I. ordinis Semiduplex I. classis
+
+[Pasc7-5]
+Feria Sexta Quattuor Temporum Pentecostes
+Feria Maior privilegiata Semiduplex I. classis
+(rubrica 1570) filename=Tempora/Pasc7-5t
+
+[Pasc7-6]
+Sabbato Quattuor Temporum Pentecostes
+Feria Maior privilegiata Semiduplex I. classis
+(rubrica 1570) filename=Tempora/Pasc7-6t
+
+[Pent02-0] (rubrica innovata)
+Dominica II. Post Pentecosten
+
+[Pent02-6] (rubrica innovata)
+Die II infra Octavam SSmi Cordis Jesu
+Dies infra octavam III. ordinis Semiduplex
+
+[Pent03-0] (rubrica innovata)
+Dominica III Post Pentecosten, infra Octavam SSmi Cordis D.N.J.C
+
+[Pent03-1] (rubrica innovata)
+Die IV infra Octavam SSmi Cordis Jesu
+Dies infra octavam III. ordinis Semiduplex
+
+[Pent03-2] (rubrica innovata)
+Die V infra Octavam SSmi Cordis Jesu
+Dies infra octavam III. ordinis Semiduplex
+
+[Pent03-3] (rubrica innovata)
+Die VI infra Octavam SSmi Cordis Jesu
+Dies infra octavam III. ordinis Semiduplex
+
+[Pent03-4] (rubrica innovata)
+Die VII infra Octavam SSmi Cordis Jesu
+Dies infra octavam III. ordinis Semiduplex
+
+[Pent03-5] (rubrica innovata)
+Die Octava SSmi Cordis Jesu
+Festum Duplex maius
+
+[Pent07-6]
+Sabbato II infra Hebdomadam VII post Octavam Pentecostes
+
+[Pent09-6]
+Sabbato secunda infra Hebdomadam IX post Octavam Pentecostes
+
+[01-02] (rubrica 1960 aut rubrica 1955)
+Die Secunda Januarii
+Festum Simplex
+
+[01-02] (rubrica tridentina)
+ln Octavam Sancti Stephani.
+Festum Simplex
+filename=Sancti/01-02o
+
+[01-03] (rubrica Rubrics 1960 aut rubrica 1955)
+Die Tertia Januarii
+Festum Simplex
+
+[01-04] (rubrica tridentina)
+ln Octavam Ss. Innocentium.
+Festum Simplex
+filename=Sancti/01-04o
+
+[01-04] (rubrica 1960 aut rubrica 1955)
+Die Quarta Januarii
+Festum Simplex
+
+[01-05] (rubrica 1960 aut rubrica 19500)
+Die Quinta Januarii
+Festum Simplex
+filename=Sancti/01-05r
+
+[01-06] (rubrica innovata)
+Die Sexta Januarii
+Festum Simplex
+filename=Sancti/01-06n
+
+[01-07] (rubrica Rubrics 1960 aut rubrica 1955)
+Die Septima Januarii
+Festum Simplex
+
+[01-08] (rubrica 1960 aut rubrica 1955)
+Die Octava Januarii
+Festum Simplex
+
+[01-09] (rubrica 1960 aut rubrica 1955)
+Die Nona Januarii
+Festum Simplex
+
+[01-10] (rubrica 1960 aut rubrica 1955)
+Die Decima Januarii
+Festum Simplex
+
+[01-11] (rubrica 1960 aut rubrica 1955)
+Die Undecima Januarii
+Festum Simplex
+
+[01-12] (rubrica 1960 aut rubrica 1955)
+Die Duodecima Januarii
+Festum Simplex
+
+[05-09] (rubrica 1570)
+S. Gregorii Nazianzi Episcopi Confessoris Ecclesiae Doctoris
+Festum Duplex
+filename=Sancti/05-09t
+
+[07-01] (rubrica tridentina)
+ln Octavam S. Joannis Baptistae
+Festum Duplex
+filename=Sancti/07-01t
+
+[07-06] (rubrica 1910 aut rubrica Divino aut rubrica 1955)
+In Octavam Ss. Petri et Pauli
+Dies octava communis Duplex maius
+
+[07-06] (rubrica 1570)
+ln Octavam Ss. Petri et Pauli.
+Festum Duplex maius
+filename=Sancti/07-06o
+
+[08-18] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
+Quarta die infra Octavam S. Assumptionis
+Dies infra octavam communem Semiduplex
+(rubrica 1570) filename=Sancti/08-18o
+(rubrica 1910) filename=Sancti/08-18t
+
+[08-19] (rubrica tridentina)
+Quinta die infra Octavam S. Assumptionis
+Dies infra octavam communem Semiduplex
+filename=Sancti/08-19o
+(sed rubrica 1910) filename=Sancti/08-19t
+
+[09-09] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+S. Gorgonii mart.
+Festum Simplex
+
+[09-10] (rubrica 1570)
+Third day of the octave
+Dies infra octavam communem Semiduplex
+filename=Sancti/09-10o
+
+[09-15] (rubrica tridentina)
+ln Octavam Nativitatis Beatae Mariae Virginis
+Festum Duplex
+filename=Sancti/09-15t
+
+[09-26] (rubrica innovata)
+S. Cosmae et Damiani Martyrum
+Festum Semiduplex
+filename=Sancti/09-27
+
+[09-27] (rubrica monastica aut rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+S. Cosmae et Damiani Martyrum
+Festum Semiduplex
+
+[10-07] (rubrica 1960)
+Sanctissimi Rosarii Beatae Mariae Virginis
+Festum Duplex II. classis
+(rubrica Rubrics 1960) filename=Sancti/10-07r
+
+[07-Dominica-1] (rubrica 1910)
+
+[10-Dominica-1] (rubrica 1910)
+
+[11-08] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
+In Octavam Omnium Sanctorum
+Dies octava communis Duplex maius
+
