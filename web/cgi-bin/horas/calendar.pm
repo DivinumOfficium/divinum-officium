@@ -51,13 +51,18 @@ sub cmp_occurrence_1960
   ($a, $b, $sign) = ($b, $a, -1) if($$a{rankord} < $$b{rankord});
   if($$b{rankord} < $$a{rankord})
   {
-    # If winner is I. cl. or Sunday, restrict to privileged
-    # commemorations; otherwise, always commemorate.
-    return $sign * COMMEMORATE_LOSER if(
-      ($$b{rankord} != 1 && $$b{category} != SUNDAY_OFFICE) ||
-      ($$a{category} == SUNDAY_OFFICE || ($$a{category} == FERIAL_OFFICE && $$a{rankord} <= 3)));
+    my $privileged =
+      $$a{category} == SUNDAY_OFFICE ||
+      ($$a{category} == FERIAL_OFFICE && $$a{rankord} <= 3);
 
-    return $sign * OMIT_LOSER;
+    return $sign * OMIT_LOSER if(
+      # IV. cl. ferias are never commemorated.
+      ($$a{category} == FERIAL_OFFICE && $$a{rankord} == 4) ||
+
+      # Non-privileged commemorations are omitted on Sundays and first-class days.
+      (($$b{rankord} == 1 || $$b{category} == SUNDAY_OFFICE) && !$privileged));
+
+    return $sign * COMMEMORATE_LOSER;
   }
 
   # In the case of equal ranks:
