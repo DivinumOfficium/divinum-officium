@@ -369,6 +369,21 @@ sub cmp_concurrence
 }
 
 
+sub cmp_commemoration
+{
+  my ($a, $b) = @_;
+
+  # With 1960 rubrics, commemorations of the season always come first.
+  if($::version =~ /1960/)
+  {
+    ($a, $b) = ($b, $a) if($$a{cycle} == TEMPORAL_OFFICE);
+    return 1 if($$b{cycle} == TEMPORAL_OFFICE);
+  }
+
+  return cmp_occurrence(@_);
+}
+
+
 sub days_in_month
 {
   my ($month, $year) = @_;
@@ -435,15 +450,17 @@ sub resolve_occurrence
   # offices assigned thereto. This also gets any implicit offices.
   my @office_lists = map {[get_all_offices($calendar_ref, $_)]} generate_calpoints($date);
 
-  # Combine and sort the lists of offices. Really the sorting is doing two
-  # tasks: it finds the winning office, and it also sorts the commemorations.
-  # TODO: Formally speaking these are governed by two different sets of rules,
-  # so this might need adjusted.
+  # Combine and sort the lists of offices. The first sort uses occurrence rank,
+  # and is used to find the winning office.
   my @sorted_offices = sort {cmp_occurrence($a, $b)} map {@$_} @office_lists;
+
+  my $winner = shift @sorted_offices;
+
+  # Re-sort the tail using commemoration rank.
+  @sorted_offices = sort {cmp_commemoration($a, $b)} @sorted_offices;
 
   # Remove any offices that should be translated or omitted in occurrence with
   # the winner.
-  my $winner = shift @sorted_offices;
   return
     $winner,
     grep

@@ -85,6 +85,22 @@ sub parse_rank_line($)
   return %rank;
 }
 
+
+# Aliases for certain key=value pairs in calendar files.
+{
+  my %alias_pairs =
+  (
+    'de tempore'        => ['cycle', TEMPORAL_OFFICE],
+    'proprio sanctorum' => ['cycle', SANCTORAL_OFFICE],
+  );
+
+  sub get_aliased_field_and_value
+  {
+    return @{$alias_pairs{lc(shift)} // []};
+  }
+}
+
+
 sub load_calendar_file($$;$)
 {
   my ($datafolder, $filename, $basecal) = @_;
@@ -104,9 +120,18 @@ sub load_calendar_file($$;$)
 
     foreach ($caldata_entry =~ /(.+?)$/mg)
     {
-      /(?:([^=]*)=)?(.*)$/;
-      my $implicit_field = shift(@implicit_fields);
-      $office{$1 || $implicit_field} = $2;
+      my ($field, $value) = /(?:([^=]*)=)?(.*)$/;
+      $field ||= shift(@implicit_fields);
+
+      # If we still don't have a field, try to interpret this line as an alias
+      # for a particular field and value pair.
+      if(!$field)
+      {
+        my @aliased_pair = get_aliased_field_and_value($value);
+        ($field, $value) = @aliased_pair if(@aliased_pair);
+      }
+
+      $office{$field} = $value;
     }
 
     $office{id} ||= "$calpoint-" . md5_hex(%office);
@@ -140,19 +165,19 @@ sub load_calendar_file($$;$)
       
       my $old_office = $$basecal{offices}{$office{id}}{office};
 
-      $office{$_} ||= $$old_office{$_} foreach(keys(%$old_office));
+      $office{$_} //= $$old_office{$_} foreach(keys(%$old_office));
     }
     else
     {
       my %def_ce = default_calentry($calpoint);
-      $office{$_} ||= $def_ce{$_} foreach(keys(%def_ce));
+      $office{$_} //= $def_ce{$_} foreach(keys(%def_ce));
     }
 
     next unless(exists($office{rank}));
     my %rank = parse_rank_line($office{rank});
     $office{$_} = $rank{$_} foreach(keys(%rank));
 
-    $office{$_} ||= $global_defaults{$_} foreach(keys(%global_defaults));
+    $office{$_} //= $global_defaults{$_} foreach(keys(%global_defaults));
 
     # Now we insert the office in all the correct places.
     
@@ -206,10 +231,12 @@ sub roman_numeral($)
 
 sub default_calentry($)
 {
-  local $_ = shift;
+  my $calpoint = shift;
+  local $_ = $calpoint;
   my @feria = ('', 'Feria Secunda', 'Feria Tertia', 'Feria Quarta', 'Feria Quinta', 'Feria Sexta', 'Sabbato');
   my @feriarom = ('', 'Feria II', 'Feria III', 'Feria IV', 'Feria V', 'Feria VI', 'Sabbato');
-  my @calentry = ('filename' => (/^\d\d-\d\d$/ ? 'Sancti/' : 'Tempora/') . $_);
+  my $sanctoral = /^\d\d-/;
+  my @calentry = ('filename' => ($sanctoral ? 'Sancti/' : 'Tempora/') . $_, 'cycle' => $sanctoral ? SANCTORAL_OFFICE : TEMPORAL_OFFICE);
 
   if(/^Adv(\d)-(\d)$/i)
   {
@@ -304,7 +331,7 @@ sub get_all_offices
   {
     # Parse the rank.
     my %rank = parse_rank_line($implicit_office_ref->{rank});
-    $implicit_office_ref->{$_} ||= $rank{$_} foreach(keys(%rank));
+    $implicit_office_ref->{$_} //= $rank{$_} foreach(keys(%rank));
 
     # TODO: Assign an ID?
 
