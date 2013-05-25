@@ -102,6 +102,8 @@ Here are the supported fields:
 || filename || Relative path to office file, without {{{.txt}}}. If omitted, this is inferred. ||
 || id    || ID string for subsequent references to the office. Specifying an existing ID causes any previous office of that ID to be deleted. This field can be omitted unless this behaviour is needed. See the _Implementation_ section for more. ||
 
+There are several other fields which for the moment should be considered as undocumented and for internal use only. However, the null-valued fields {{{De tempore}}} and {{{Proprio Sanctorum}}} have special significance and set an internal field to values to indicate that the office is temporal or sancotral, respecitvely. Most of the time this is inferred from the calpoint and so specifying these is not necessary (e.g. {{{Pasc7-6}}} defaults to being temporal and {{{05-25}}} to being sanctoral).
+
 ==Rank, rite etc.==
 
 {{{
