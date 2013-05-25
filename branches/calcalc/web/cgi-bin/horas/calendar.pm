@@ -405,8 +405,8 @@ sub generate_calpoints
   # such a time as &::getweek is rewritten.
   {
     local @::date1 = @date_mdy;
-    local $::day = $date_mdy[0];
-    local $::month = $date_mdy[1];
+    local $::month = $date_mdy[0];
+    local $::day = $date_mdy[1];
     local $::year = $date_mdy[2];
     local $::dayofweek;
 
@@ -433,7 +433,7 @@ sub generate_calpoints
   push @calpoints, $reading_day if($reading_day);
 
   # Last x-day.
-  push @calpoints, "$month_prefix$days[$day_of_week]-Ult" if($day_of_week == 0 && days_in_month($date_mdy[1]) - $date_mdy[1] < 7);
+  push @calpoints, "$month_prefix$days[$day_of_week]-Ult" if($day_of_week == 0 && days_in_month($date_mdy[0]) - $date_mdy[1] < 7);
 
   # Temporal cycle, except for Christmas-Epiphany.
   push @calpoints, "$week-$day_of_week" if($week);
