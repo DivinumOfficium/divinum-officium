@@ -56,8 +56,15 @@ sub cmp_occurrence_1960
       ($$a{category} == FERIAL_OFFICE && $$a{rankord} <= 3);
 
     return $sign * OMIT_LOSER if(
-      # IV. cl. ferias are never commemorated.
-      ($$a{category} == FERIAL_OFFICE && $$a{rankord} == 4) ||
+      # IV. cl. ferias are never commemorated, and neither is any feria on a
+      # I. cl. vigil.
+      (
+        $$a{category} == FERIAL_OFFICE &&
+        (
+          $$a{rankord} == 4 ||
+          ($$b{category} == VIGIL_OFFICE && $$b{rankord} == 1)
+        )
+      ) ||
 
       # Non-privileged commemorations are omitted on Sundays and first-class days.
       (($$b{rankord} == 1 || $$b{category} == SUNDAY_OFFICE) && !$privileged));
@@ -72,6 +79,13 @@ sub cmp_occurrence_1960
   
   if($$b{rankord} == 1)
   {
+    # Certain I. cl. days beat I. cl. Sundays.
+    ($a, $b, $sign) = ($b, $a, -$sign) if(exists($$a{'praefertur dominicis'}) && $$b{category} == SUNDAY_OFFICE);
+    if(exists($$b{'praefertur dominicis'}) && $$a{category} == SUNDAY_OFFICE)
+    {
+      return $sign * ($$b{category} == VIGIL_OFFICE ? OMIT_LOSER : COMMEMORATE_LOSER);
+    }
+
     # I. cl. feasts yield to first-class non-feasts
     # (including days in octaves), and are translated.
     return $sign * TRANSLATE_LOSER if($$b{category} != FESTAL_OFFICE);
@@ -81,8 +95,7 @@ sub cmp_occurrence_1960
     ($a, $b, $sign) = ($b, $a, -$sign) if($$a{partic} == UNIVERSAL_OFFICE);
     return $sign * TRANSLATE_LOSER if($$a{partic} == PARTICULAR_OFFICE && $$b{partic} == UNIVERSAL_OFFICE);
     
-    # Otherwise, the feast of greater dignity wins. For now, we
-    # guess!
+    # Otherwise, the feast of greater dignity wins.
     my $dignity = dignity($b) <=> dignity($a);
     return $sign * ($dignity || -1) * TRANSLATE_LOSER;
   }
@@ -180,11 +193,13 @@ sub cmp_occurrence
   {
     # TODO: Vigils vs. Sundays.
 
-    return $sign * TRANSLATE_LOSER if($$b{rankord} == 1 && $$a{rankord} == 2);
+    return $sign * TRANSLATE_LOSER if($$b{rankord} == 1 && $$a{rankord} == 2 && $$a{category} != SUNDAY_OFFICE);
 
     return $sign * OMIT_LOSER if(
       # Simple feasts and octave days are omitted on I. cl. doubles.
       ($$b{rankord} == 1 && $$b{rite} >= DOUBLE_RITE && $$a{rite} == SIMPLE_RITE && grep($$a{category} == $_, (FESTAL_OFFICE, OCTAVE_DAY_OFFICE))) ||
+      # Even greater ferias are omitted on I. cl. vigils.
+      ($$a{category} == FERIAL_OFFICE && $$b{category} == VIGIL_OFFICE && $$b{rankord} == 1) ||
       # Vigils are omitted on greater ferias and days that are
       # genuinely of the first class.
       ($$a{category} == VIGIL_OFFICE && (($$b{rankord} == 1 && $$b{category} != OCTAVE_DAY_OFFICE) || ($$b{category} == FERIAL_OFFICE && $$b{rankord} >= 3))) ||
