@@ -96,8 +96,24 @@ sub parse_rank_line($)
 
   sub get_aliased_field_and_value
   {
-    return @{$alias_pairs{lc(shift)} // []};
+    return @{$alias_pairs{canonicalise_tag(shift)} // []};
   }
+}
+
+
+# *** canonicalise_tag
+# Put tags -- i.e. null-valued fields -- into a canonical form: lowercase,
+# trimmed and with single spaces for all internal whitespace.
+sub canonicalise_tag
+{
+  local $_ = lc(shift);
+
+  s/^\s*(.*?)\s*$/$1/;
+  s/\s+/ /g;
+  s/\N{U+00E6}/ae/g;
+  s/\N{U+0153}/oe/g;
+
+  return $_;
 }
 
 
@@ -131,7 +147,16 @@ sub load_calendar_file($$;$)
         ($field, $value) = @aliased_pair if(@aliased_pair);
       }
 
-      $office{$field} = $value;
+      if($field)
+      {
+        $office{$field} = $value;
+      }
+      else
+      {
+        # Treat this as a null-valued field, whose name is specified by what we
+        # had hitherto been thinking of as the value.
+        $office{canonicalise_tag($value)} = undef;
+      }
     }
 
     $office{id} ||= "$calpoint-" . md5_hex(%office);
