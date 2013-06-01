@@ -161,10 +161,8 @@ sub cmp_occurrence_1960
     return $sign * COMMEMORATE_LOSER if($$b{category} == FERIAL_OFFICE);
   }
 
-  # In the case of parity, or of an invalid combination, indicate that
-  # Office A wins. This is intended to reflect the order of feasts in the
-  # calendar lists, where higher-ranking feasts come first.
-  return -$sign * COMMEMORATE_LOSER;
+  # In an invalid occurrence (1960 has no dignity tie-breaker).
+  return 0;
 }
 
 
@@ -268,9 +266,10 @@ sub cmp_occurrence
     return $sign * COMMEMORATE_LOSER unless($a_subrank == $b_subrank);
   }
 
-  # If we're still tied, choose the feast of greater dignity.
+  # If we're still tied, choose the feast of greater dignity, or return zero if
+  # they're tied even then.
   my $dignity = dignity($b) <=> dignity($a);
-  return $sign * ($dignity || -1) * (($$b{rankord} >= 2) ? TRANSLATE_LOSER : COMMEMORATE_LOSER);
+  return $sign * $dignity * (($$b{rankord} <= 2) ? TRANSLATE_LOSER : COMMEMORATE_LOSER);
 }
 
 
@@ -407,6 +406,17 @@ sub days_in_month
 }
 
 
+sub next_date
+{
+  my $date = shift;
+  my @date_mdy = split(/-/, $date);
+
+  @date_mdy[1,0,2] = ::nday(@date_mdy[1,0,2]);
+
+  return join('-', @date_mdy);
+}
+
+
 sub generate_calpoints
 {
   use integer;
@@ -459,6 +469,10 @@ sub generate_calpoints
 
 sub resolve_occurrence
 {
+  # When two offices are tied in dignity, preserve the order in which they were
+  # specified in the calendar.
+  use sort 'stable';
+
   my ($calendar_ref, $date) = @_;
 
   # Get all calpoints falling on this date and expand them to the lists of
@@ -484,6 +498,65 @@ sub resolve_occurrence
       $loser_rule != OMIT_LOSER && $loser_rule != TRANSLATE_LOSER;
     }
     @sorted_offices;
+}
+
+
+sub resolve_concurrence
+{
+  # We will require stability when sorting commemorations. See below.
+  use sort 'stable';
+
+  my ($calendar_ref, $date) = @_;
+  my @preceding = resolve_occurrence($calendar_ref, $date);
+  my @following = resolve_occurrence($calendar_ref, next_date($date));
+
+  # Filter out preceding offices without second vespers and following ones
+  # without first vespers.
+  @preceding = grep {$_->{secondvespers}} @preceding;
+  @following = grep {$_->{firstvespers}}  @following;
+
+  # TODO: Infra octavam.
+
+  my $concurrence_resolution = cmp_concurrence($preceding[0], $following[0]);
+
+  # Pick out the winning and concurring offices, and filter the losing half for
+  # omission in concurrence.
+  my ($winner, $concurring);
+  if($concurrence_resolution == FROM_THE_CHAPTER || $concurrence_resolution > 0)
+  {
+    $winner = shift @following;
+    @preceding = grep {cmp_concurrence($_, $winner) == COMMEMORATE_LOSER} @preceding;
+    $concurring = shift @preceding;
+  }
+  else
+  {
+    $winner = shift @preceding;
+    @following = grep {cmp_concurrence($winner, $_) == -(COMMEMORATE_LOSER)} @following;
+    $concurring = shift @following;
+  }
+
+  my @result = ($winner);
+  my @tail = (@preceding, @following);
+
+  if($::version =~ /1570/)
+  {
+    # If 1570, commemorations are simply sorted by rank, without affording the
+    # concurring office any special treatment.
+    unshift @tail, $concurring;
+  }
+  else
+  {
+    # From the late 19th century, the concurring office is always commemorated
+    # first, and the remaining commemorations are sorted by rank. See Acta
+    # Sanctae Sedis 27 (1894-5) p. 437-8.
+    push @result, $concurring;
+  }
+
+  # Divino afflatu then further specified that, should there be a tie amongst
+  # the remaining commemorations, a commemoration for I. vespers is placed
+  # before one for II. vespers. Since the earlier rubrics are silent in such
+  # cases, we adopt this ordering for those, too.
+  return [@result, sort {cmp_concurrence($a, $b)} @tail], $concurrence_resolution;
 }
 
 1;

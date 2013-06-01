@@ -75,11 +75,19 @@ sub parse_rank_line($)
     $rank{rankord} =
       $rank{category} == SUNDAY_OFFICE ?        ($rank{standing} == GREATER_DAY ? 2 : 3) :
       $rank{category} == FERIAL_OFFICE ?        ($rank{standing} == GREATER_PRIVILEGED_DAY ? 1 : ($rank{standing} == GREATER_DAY ? 3 : 4)) :
-      $rank{category} == FESTAL_OFFICE ?        ($rank{rite} == SIMPLE_RITE ? 4 : 3) :
+      $rank{category} == FESTAL_OFFICE ?        ($rank{rite} == SIMPLE_RITE && $::version =~ /1955|1960/ ? 4 : 3) :
       $rank{category} == OCTAVE_DAY_OFFICE ?    ($rank{octrank} <= 2 ? 1 : 3):
       $rank{category} == WITHIN_OCTAVE_OFFICE ? min($rank{octrank}, 3) :
       $rank{category} == VIGIL_OFFICE ?         ($::version =~ /1960/ ? 3 : 4) :
                                                 4;
+  }
+
+  # In 1955, semidoubles became simples, and simples became commemorations. We
+  # handled the latter above, so now we can do the former without introducing
+  # ambiguity. They become "III. cl. simples".
+  if($::version =~ /1955/ && $rank{rite} == SEMIDOUBLE_RITE)
+  {
+    $rank{rite} = SIMPLE_RITE;
   }
 
   return %rank;
@@ -114,6 +122,33 @@ sub canonicalise_tag
   s/\N{U+0153}/oe/g;
 
   return $_;
+}
+
+
+sub generate_internal_office_fields
+{
+  my $office_ref = shift;
+
+  my %rank = parse_rank_line($office_ref->{rank});
+  $office_ref->{$_} = $rank{$_} foreach(keys(%rank));
+
+  $office_ref->{firstvespers} =
+    $::version =~ /1955|1960/ ?
+      # In the later rubrics, only high-ranking offices and Sundays have first
+      # vespers.
+      $office_ref->{rankord} <= ($::version =~ /1960/ ? 1 : 2) || 
+      $office_ref->{category} == SUNDAY_OFFICE
+      :
+      # Otherwise, only vigils and ferias lack them. Days in octaves are
+      # complicated and are handled elsewhere; we label them as having both
+      # vespers, since that is potentially true.
+      ($office_ref->{category} != VIGIL_OFFICE && $office_ref->{category} != FERIAL_OFFICE);
+
+  # Vigils never have second vespers; all other offices have them, except for
+  # simple non-ferias.
+  $office_ref->{secondvespers} =
+    $office_ref->{category} != VIGIL_OFFICE &&
+    ($office_ref->{category} == FERIAL_OFFICE || $office_ref->{rite} != SIMPLE_RITE);
 }
 
 
@@ -199,8 +234,8 @@ sub load_calendar_file($$;$)
     }
 
     next unless(exists($office{rank}));
-    my %rank = parse_rank_line($office{rank});
-    $office{$_} = $rank{$_} foreach(keys(%rank));
+
+    generate_internal_office_fields(\%office);
 
     $office{$_} //= $global_defaults{$_} foreach(keys(%global_defaults));
 
@@ -354,13 +389,10 @@ sub get_all_offices
   my $implicit_office_ref = get_implicit_office($calpoint);
   if($implicit_office_ref)
   {
-    # Parse the rank.
-    my %rank = parse_rank_line($implicit_office_ref->{rank});
-    $implicit_office_ref->{$_} //= $rank{$_} foreach(keys(%rank));
+    generate_internal_office_fields($implicit_office_ref);
+    $implicit_office_ref->{partic} = UNIVERSAL_OFFICE;
 
-    # TODO: Assign an ID?
-
-    return $implicit_office_ref;
+    return ($implicit_office_ref);
   }
 
   return ();
