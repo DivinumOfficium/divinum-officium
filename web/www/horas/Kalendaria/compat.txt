@@ -54,9 +54,16 @@ Feria Maior privilegiata Semiduplex I. classis
 [Pent02-0] (rubrica innovata)
 Dominica II. Post Pentecosten
 
+[Pent02-4] (rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955)
+Octava Sanctissimi Corporis Christi
+Dies octava II. ordinis Duplex maius
+(rubrica 1570) filename=Tempora/Pent02-4o
+octid=CorpusChristi
+
 [Pent02-6] (rubrica innovata)
 Die II infra Octavam SSmi Cordis Jesu
 Dies infra octavam III. ordinis Semiduplex
+octid=ScrmumCorIesu
 
 [Pent03-0] (rubrica innovata)
 Dominica III Post Pentecosten, infra Octavam SSmi Cordis D.N.J.C
@@ -64,22 +71,28 @@ Dominica III Post Pentecosten, infra Octavam SSmi Cordis D.N.J.C
 [Pent03-1] (rubrica innovata)
 Die IV infra Octavam SSmi Cordis Jesu
 Dies infra octavam III. ordinis Semiduplex
+octid=ScrmumCorIesu
 
 [Pent03-2] (rubrica innovata)
 Die V infra Octavam SSmi Cordis Jesu
 Dies infra octavam III. ordinis Semiduplex
+octid=ScrmumCorIesu
 
 [Pent03-3] (rubrica innovata)
 Die VI infra Octavam SSmi Cordis Jesu
 Dies infra octavam III. ordinis Semiduplex
+octid=ScrmumCorIesu
 
 [Pent03-4] (rubrica innovata)
 Die VII infra Octavam SSmi Cordis Jesu
 Dies infra octavam III. ordinis Semiduplex
+octid=ScrmumCorIesu
 
-[Pent03-5] (rubrica innovata)
+[Pent03-5] (rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955 aut rubrica innovata)
 Die Octava SSmi Cordis Jesu
-Festum Duplex maius
+Dies octava III. ordinis Duplex maius
+Proprio Sanctorum
+octid=ScrmumCorIesu
 
 [Pent07-6]
 Sabbato II infra Hebdomadam VII post Octavam Pentecostes
@@ -147,6 +160,11 @@ Festum Simplex
 S. Gregorii Nazianzi Episcopi Confessoris Ecclesiae Doctoris
 Festum Duplex
 filename=Sancti/05-09t
+
+[06-25] (rubrica 1570)
+Second day of Octava Nativitati S. Joannis Baptist
+Festum Semiduplex
+filename=Sancti/06-25o
 
 [07-01] (rubrica tridentina)
 ln Octavam S. Joannis Baptistae
