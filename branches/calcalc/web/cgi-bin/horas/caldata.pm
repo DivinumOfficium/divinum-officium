@@ -136,7 +136,7 @@ sub generate_internal_office_fields
     $::version =~ /1955|1960/ ?
       # In the later rubrics, only high-ranking offices and Sundays have first
       # vespers.
-      $office_ref->{rankord} <= ($::version =~ /1960/ ? 1 : 2) || 
+      ($office_ref->{category} == FESTAL_OFFICE && $office_ref->{rankord} <= ($::version =~ /1960/ ? 1 : 2)) || 
       $office_ref->{category} == SUNDAY_OFFICE
       :
       # Otherwise, only vigils and ferias lack them. Days in octaves are
@@ -147,6 +147,7 @@ sub generate_internal_office_fields
   # Vigils never have second vespers; all other offices have them, except for
   # simple non-ferias.
   $office_ref->{secondvespers} =
+    !exists($office_ref->{'officium terminatur post nonam'}) &&
     $office_ref->{category} != VIGIL_OFFICE &&
     ($office_ref->{category} == FERIAL_OFFICE || $office_ref->{rite} != SIMPLE_RITE);
 }

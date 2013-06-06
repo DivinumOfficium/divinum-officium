@@ -342,16 +342,30 @@ sub cmp_concurrence
   if($preceding_rank < $following_rank)
   {
     # Office of preceding. What to do with the following?
+
+    # Omit low-ranking days at first vespers of high-ranking doubles.
     return -(OMIT_LOSER) if(
       $$preceding{rite} == DOUBLE_RITE &&
       $$preceding{rankord} <= 2 &&
       $following_rank >= concurrence_rank({category => WITHIN_OCTAVE_OFFICE, octrank => COMMON_OCTAVE}));
+
+    # Don't commemorate first vespers of the second day in the octave in second
+    # vespers of the feast itself.
+    return -(OMIT_LOSER) if(
+      $$following{category} == WITHIN_OCTAVE_OFFICE &&
+      $$following{octid} eq $$preceding{octid});
 
     return -(COMMEMORATE_LOSER);
   }
   elsif($following_rank < $preceding_rank)
   {
     # Office of following.
+
+    # Don't commemorate II. vespers of seventh day in the octave at first
+    # vespers of the octave day. Notice that, since the following office beat
+    # the preceding, we can't have concurrence of two days in the octave here.
+    return OMIT_LOSER if(
+      $$preceding{category} == WITHIN_OCTAVE_OFFICE && $$preceding{octid} eq $$following{octid});
 
     # Check for some days that are low-ranking in concurrence but
     # nonetheless are always commemorated when they lose.
@@ -376,8 +390,15 @@ sub cmp_concurrence
     return COMMEMORATE_LOSER;
   }
 
-  # Both days are in the same concurrence category. Office of the day of
-  # greater dignity; or, in parity, from the chapter of the following.
+  # Both days are in the same concurrence category.
+
+  # In concurrence of days within the same octave, second vespers take
+  # precedence and first vespers of the following are omitted.
+  return -(OMIT_LOSER) if(
+    $$preceding{category} == WITHIN_OCTAVE_OFFICE && $$preceding{octid} eq $$following{octid});
+  
+  # Office of the day of greater dignity; or, in parity, from the chapter of
+  # the following.
   my $sign = dignity($following) - dignity($preceding);
   return $sign ? $sign * COMMEMORATE_LOSER : FROM_THE_CHAPTER;
 }
@@ -515,7 +536,9 @@ sub resolve_concurrence
   @preceding = grep {$_->{secondvespers}} @preceding;
   @following = grep {$_->{firstvespers}}  @following;
 
-  # TODO: Infra octavam.
+  # When a day within an octave is only commemorated, it loses its second
+  # vespers. Accordingly, we drop such offices from the list.
+  @preceding = $preceding[0], grep {$_->{category} != WITHIN_OCTAVE_OFFICE} @preceding[1..$#preceding];
 
   my $concurrence_resolution = cmp_concurrence($preceding[0], $following[0]);
 
@@ -535,21 +558,29 @@ sub resolve_concurrence
     $concurring = shift @following;
   }
 
+  # Put all the offices in place, except that the position of the concurring
+  # office depends on the active rubrics and is handled subsequently, and that
+  # the tail is yet to be sorted. We place preceding offices before the
+  # following in the tail and then rely on the stability of the sorting
+  # algorithm to put commemorations of I. vespers first in a tie.
   my @result = ($winner);
   my @tail = (@preceding, @following);
 
-  if($::version =~ /1570/)
+  if(defined($concurring))
   {
-    # If 1570, commemorations are simply sorted by rank, without affording the
-    # concurring office any special treatment.
-    unshift @tail, $concurring;
-  }
-  else
-  {
-    # From the late 19th century, the concurring office is always commemorated
-    # first, and the remaining commemorations are sorted by rank. See Acta
-    # Sanctae Sedis 27 (1894-5) p. 437-8.
-    push @result, $concurring;
+    if($::version =~ /1570/)
+    {
+      # If 1570, commemorations are simply sorted by rank, without affording the
+      # concurring office any special treatment.
+      unshift @tail, $concurring;
+    }
+    else
+    {
+      # From the late 19th century, the concurring office is always commemorated
+      # first, and the remaining commemorations are sorted by rank. See Acta
+      # Sanctae Sedis 27 (1894-5) p. 437-8.
+      push @result, $concurring;
+    }
   }
 
   # Divino afflatu then further specified that, should there be a tie amongst

@@ -35,21 +35,25 @@ Praefertur Dominicis
 In Nativitate Domini
 Festum Duplex I. classis
 De tempore
+octid=Nat
 
 [12-26]
 S. Stephani Protomartyris
 Festum Duplex II. classis
+octid=SStephanus
 
 [12-27]
 S. Joannis Apostoli et Evangelistae
 Festum Duplex II. classis
 (rubrica tridentina) filename=Sancti/12-27o
+octid=SIoannes
 
 [12-28]
 Ss. Innocentium
 Festum Duplex II. classis
 (rubrica Rubrics 1960) filename=Sancti/12-28r
 (rubrica tridentina) filename=Sancti/12-28o
+octid=SsInnocentes
 
 [Nat1-0]
 Dominica infra Octavam Nativitatis
@@ -65,6 +69,7 @@ Festum Duplex
 Die V infra Octavam Nativitatis
 Dies infra octavam II. ordinis Duplex II. classis
 (rubrica Rubrics 1960) filename=Sancti/12-29r
+octid=Nat
 
 [12-30]
 Die VI infra Octavam Nativitatis
@@ -72,6 +77,7 @@ Dies infra octavam III. ordinis Semiduplex
 (sed rubrica 1960) Dies infra octavam II. ordinis Duplex II. classis
 De tempore
 (rubrica tridentina) filename=Sancti/12-30o
+octid=Nat
 
 [12-31]
 S. Silvestri Papae et Confessoris
@@ -83,6 +89,7 @@ Die VII infra Octavam Nativitatis
 Dies infra octavam II. ordinis Duplex II. classis
 De tempore
 (rubrica Rubrics 1960) filename=Sancti/12-31r
+octid=Nat
 
 [01-01]
 In Circumcisione Domini
@@ -99,16 +106,14 @@ Festum Duplex II. classis
 [01-02]
 In Octava S. Stephani
 Dies octava simplex Simplex
+(sed rubrica tridentina) Dies octava communis Duplex maius
+(rubrica tridentina) filename=Sancti/01-02o
+octid=SStephanus
 
 [01-02] (rubrica 1960 aut rubrica 1955)
 Die Secunda Januarii
 Feria Simplex
 De tempore
-
-[01-02] (rubrica tridentina)
-In Octava S. Stephani
-Dies octava communis Duplex maius
-filename=Sancti/01-02o
 
 [01-02] (rubrica innovata)
 S. Basilii Magni Confessoris et Ecclesiae Doctoris
@@ -118,7 +123,9 @@ filename=Sancti/06-14
 [01-03]
 In Octava S. Joannis
 Dies octava simplex Simplex
+(sed rubrica tridentina) Dies octava communis Duplex maius
 (rubrica tridentina) filename=Sancti/01-03o
+octid=SIoannes
 
 [01-03] (rubrica Rubrics 1960 aut rubrica 1955)
 Die Tertia Januarii
@@ -133,7 +140,9 @@ filename=Sancti/01-03n
 [01-04]
 In Octava Ss. Innocentium.
 Dies octava simplex Simplex
+(sed rubrica tridentina) Dies octava communis Duplex maius
 (rubrica tridentina) filename=Sancti/01-04o
+octid=SsInnocentes
 
 [01-04] (rubrica 1960 aut rubrica 1955)
 Die Quarta Januarii
@@ -156,6 +165,7 @@ filename=Sancti/01-05r
 In Epiphania Domini
 Festum Domini Duplex I. classis
 De tempore
+octid=Epi
 
 [01-06] (rubrica innovata)
 Die Sexta Januarii
@@ -171,6 +181,7 @@ Festum Duplex II. classis
 Secunda die infra Octavam Epiphaniae
 Dies infra octavam II. ordinis Semiduplex
 De tempore
+octid=Epi
 
 [01-07] (rubrica Rubrics 1960 aut rubrica 1955)
 Die Septima Januarii
@@ -186,6 +197,7 @@ filename=Sancti/01-23
 Tertia die infra Octavam Epiphaniae
 Dies infra octavam communem Semiduplex
 De tempore
+octid=Epi
 
 [01-08] (rubrica 1960 aut rubrica 1955)
 Die Octava Januarii
@@ -196,6 +208,7 @@ De tempore
 Quarta die infra Octavam Epiphaniae
 Dies infra octavam communem Semiduplex
 De tempore
+octid=Epi
 
 [01-09] (rubrica 1960 aut rubrica 1955)
 Die Nona Januarii
@@ -206,6 +219,7 @@ De tempore
 Quinta die infra Octavam Epiphaniae
 Dies infra octavam communem Semiduplex
 De tempore
+octid=Epi
 
 [01-10] (rubrica 1960 aut rubrica 1955)
 Die Decima Januarii
@@ -216,6 +230,7 @@ De tempore
 Sexta die infra Octavam Epiphaniae
 Dies infra octavam communem Semiduplex
 De tempore
+octid=Epi
 
 [01-11] (rubrica 1960 aut rubrica 1955)
 Die Undecima Januarii
@@ -226,6 +241,7 @@ De tempore
 Septima die infra Octavam Epiphaniae
 Dies infra octavam communem Semiduplex
 De tempore
+octid=Epi
 
 [01-12] (rubrica 1960 aut rubrica 1955)
 Die Duodecima Januarii
@@ -238,6 +254,7 @@ In Octava Epiphaniae
 Dies octava II. ordinis Duplex maius
 (sed rubrica Rubrics 1960) Festum Duplex II. classis
 De tempore
+octid=Epi
 
 [01-13] (rubrica innovata)
 S. Hilarii Episcopi Confessoris Ecclesiae Doctoris
@@ -377,35 +394,43 @@ Feria Maior privilegiata Duplex I. classis
 [Pasc0-0]
 Dominica Resurrectionis
 Dominica Maior Duplex I. classis
+octid=Pasc
 
 [Pasc0-1]
 Die II infra octavam Paschae
 Dies infra octavam I. ordinis Duplex I. classis
+octid=Pasc
 
 [Pasc0-2]
 Die III infra octavam Paschae
 Dies infra octavam I. ordinis Duplex I. classis
 (rubrica 1570) filename=Tempora/Pasc0-2t
+octid=Pasc
 
 [Pasc0-3]
 Die IV infra octavam Paschae
 Dies infra octavam I. ordinis Semiduplex I. classis
 (rubrica 1570) filename=Tempora/Pasc0-3t
+octid=Pasc
 
 [Pasc0-4]
 Die V infra octavam Paschae
 Dies infra octavam I. ordinis Semiduplex I. classis
 (rubrica 1570) filename=Tempora/Pasc0-4t
+octid=Pasc
 
 [Pasc0-5]
 Die VI infra octavam Paschæ
 Dies infra octavam I. ordinis Semiduplex I. classis
 (rubrica 1570) filename=Tempora/Pasc0-5t
+octid=Pasc
 
 [Pasc0-6]
 Sabbato in Albis
 Dies infra octavam I. ordinis Semiduplex I. classis
 (rubrica 1570) filename=Tempora/Pasc0-6t
+Officium terminatur post Nonam
+octid=Pasc
 
 [Pasc1-0]
 Dominica in Albis in Octava Paschæ
@@ -419,6 +444,7 @@ filename=Tempora/Pasc2-2t
 Patrocinii St. Joseph Confessoris Sponsi B.M.V. Confessoris
 Festum Duplex I. classis
 Proprio Sanctorum
+octid=PatrSIoseph
 
 [Pasc2-3] (rubrica 1960 aut rubrica 1910)
 filename=Tempora/Pasc2-3Feria
@@ -430,6 +456,7 @@ filename=Tempora/Pasc2-3Feriat
 Die II Infra Octavam S. Joseph
 Dies infra octavam communem Semiduplex
 Proprio Sanctorum
+octid=PatrSIoseph
 
 [Pasc2-4] (rubrica 1960 aut rubrica tridentina)
 filename=Tempora/Pasc2-4Feria
@@ -438,6 +465,7 @@ filename=Tempora/Pasc2-4Feria
 Die III Infra Octavam S. Joseph
 Dies infra octavam communem Semiduplex
 Proprio Sanctorum
+octid=PatrSIoseph
 
 [Pasc2-5] (rubrica 1960 aut rubrica tridentina)
 filename=Tempora/Pasc2-5Feria
@@ -446,6 +474,7 @@ filename=Tempora/Pasc2-5Feria
 Die IV Infra Octavam S. Joseph
 Dies infra octavam communem Semiduplex
 Proprio Sanctorum
+octid=PatrSIoseph
 
 [Pasc2-6] (rubrica 1960 aut rubrica tridentina)
 filename=Tempora/Pasc2-6Feria
@@ -463,6 +492,7 @@ Proprio Sanctorum
 Die VI Infra Octavam S. Joseph
 Dies infra octavam communem Semiduplex
 Proprio Sanctorum
+octid=PatrSIoseph
 
 [Pasc3-1] (rubrica 1960 aut rubrica 1910)
 filename=Tempora/Pasc3-1Feria
@@ -474,6 +504,7 @@ filename=Tempora/Pasc3-1Feriat
 Die VII Infra Octavam S. Joseph
 Dies infra octavam communem Semiduplex
 Proprio Sanctorum
+octid=PatrSIoseph
 
 [Pasc3-2] (rubrica 1960 aut rubrica tridentina)
 filename=Tempora/Pasc3-2Feria
@@ -482,6 +513,7 @@ filename=Tempora/Pasc3-2Feria
 Die Octavae S. Joseph
 Festum Duplex maius
 Proprio Sanctorum
+octid=PatrSIoseph
 
 [Pasc3-3] (rubrica 1960 aut rubrica tridentina)
 filename=Tempora/Pasc3-3Feria
@@ -514,17 +546,20 @@ Vigilia Simplex
 [Pasc5-4]
 In Ascensione Domini
 Festum Duplex I. classis
+octid=Asc
 
 [Pasc5-5]
 Feria VI infra Octavam Ascensionis
 (sed rubrica 1960) Feria VI post Ascensionem
 (rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955) rank=Dies infra octavam III. ordinis Semiduplex
+octid=Asc
 
 [Pasc5-6]
 Sabbato infra Octavam Ascensionis
 (sed rubrica 1960) Sabbato post Ascensionem
 (rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955) rank=Dies infra octavam III. ordinis Semiduplex
 (rubrica 1570) filename=Tempora/Pasc5-6t
+octid=Asc
 
 [Pasc6-0]
 Dominica infra Octavam Ascensionis
@@ -536,6 +571,7 @@ Feria II infra Octavam Ascensionis
 (sed rubrica 1960) Feria II post Ascensionem
 Dies infra octavam III. ordinis Semiduplex
 (sed rubrica 1960) Feria Simplex
+octid=Asc
 
 [Pasc6-2]
 Feria III infra Octavam Ascensionis
@@ -543,17 +579,20 @@ Feria III infra Octavam Ascensionis
 Dies infra octavam III. ordinis Semiduplex
 (sed rubrica 1960) Feria Simplex
 (rubrica 1570) filename=Tempora/Pasc6-2t
+octid=Asc
 
 [Pasc6-3]
 Feria IV infra Octavam Ascensionis
 (sed rubrica 1960) Feria IV post Ascensionem
 Dies infra octavam III. ordinis Semiduplex
 (sed rubrica 1960) Feria Simplex
+octid=Asc
 
 [Pasc6-4]
 Feria V in Octava Ascensionis
 Dies octava III. ordinis Duplex maius
 (rubrica 1570) filename=Tempora/Pasc6-4t
+octid=Asc
 
 [Pasc6-4] (rubrica 1960)
 Feria V infra Hebdomadam post Ascensionem
@@ -574,33 +613,41 @@ Vigilia Semiduplex II. classis
 [Pasc7-0]
 Dominica Pentecostes
 Dominica Maior Duplex I. classis
+octid=Pent
 
 [Pasc7-1]
 Die II infra octavam Pentecostes
 Dies infra octavam I. ordinis Duplex I. classis
+octid=Pent
 
 [Pasc7-2]
 Die III infra octavam Pentecostes
 Dies infra octavam I. ordinis Duplex I. classis
+octid=Pent
 
 [Pasc7-3]
 Feria Quarta Quattuor Temporum Pentecostes
 Dies infra octavam I. ordinis Semiduplex I. classis
+octid=Pent
 
 [Pasc7-4]
 Feria Quinta infra octavam Pentecostes
 Dies infra octavam I. ordinis Semiduplex I. classis
 (rubrica 1570) filename=Tempora/Pasc7-4t
+octid=Pent
 
 [Pasc7-5]
 Feria Sexta Quattuor Temporum Pentecostes
 Dies infra octavam I. ordinis Semiduplex I. classis
 (rubrica 1570) filename=Tempora/Pasc7-5t
+octid=Pent
 
 [Pasc7-6]
 Sabbato Quattuor Temporum Pentecostes
 Dies infra octavam I. ordinis Semiduplex I. classis
 (rubrica 1570) filename=Tempora/Pasc7-6t
+Officium terminatur post Nonam
+octid=Pent
 
 [Pent01-0]
 Dominica Sanctissimae Trinitatis
@@ -613,16 +660,19 @@ Festum Sanctissimi Corporis Christi cum Octava privilegiate II ordinis
 (sed rubrica 1960) Festum Sanctissimi Corporis Christi
 Festum Duplex I. classis
 (rubrica 1570) filename=Tempora/Pent01-4t
+octid=CorpusChristi
 
 [Pent01-5]
 Feria Sexta infra octavam Corporis Christi
 (sed rubrica 1960) Feria VI infra Hebdomadam I post Octavam Pentecostes
 (rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955) rank=Dies infra octavam II. ordinis Semiduplex II. classis
+octid=CorpusChristi
 
 [Pent01-6] (rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955)
 Sabbato infra octavam Corporis Christi
 Dies infra octavam II. ordinis Semiduplex II. classis
 (rubrica 1570) filename=Tempora/Pent01-6o
+octid=CorpusChristi
 
 [Pent02-0]
 Dominica II Post Pentecosten infra Octavam Corporis Christi
@@ -635,22 +685,26 @@ filename=Tempora/Pent02-0r
 Feria Secunda infra Octavam Corporis Christi
 (sed rubrica 1960) Feria II infra Hebdomadam II post Octavam Pentecostes
 (rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955) rank=Dies infra octavam II. ordinis Semiduplex II. classis
+octid=CorpusChristi
 
 [Pent02-2]
 Feria Tertia infra Octavam Corporis Christi
 (sed rubrica 1960) Feria III infra Hebdomadam II post Octavam Pentecostes
 (rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955) rank=Dies infra octavam II. ordinis Semiduplex II. classis
+octid=CorpusChristi
 
 [Pent02-3]
 Feria Quarta infra Octavam Corporis Christi
 (sed rubrica 1960) Feria IV infra Hebdomadam II post Octavam Pentecostes
 (rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955) rank=Dies infra octavam II. ordinis Semiduplex II. classis
+octid=CorpusChristi
 
 [Pent02-4]
-Octava Sanctissimi Corporis Christi
+In Octava Sanctissimi Corporis Christi
 (sed rubrica 1960) Feria V infra Hebdomadam II post Octavam Pentecostes
-(rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955) rank=Festum Duplex maius II. classis
+(rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955) rank=Dies octava II. ordinis Duplex maius
 (rubrica 1570) filename=Tempora/Pent02-4o
+octid=CorpusChristi
 
 [Pent02-5]
 Sanctissimi Cordis Domini Nostri Jesu Christi
@@ -658,6 +712,7 @@ Festum Domini Duplex I. classis
 (sed rubrica 1910) Festum Duplex maius II. classis
 (rubrica 1910) filename=Tempora/Pent02-5t
 Proprio Sanctorum
+octid=ScrmumCorIesu
 
 [Pent02-5] (rubrica 1570)
 filename=Tempora/Pent02-5Feria
@@ -666,6 +721,7 @@ filename=Tempora/Pent02-5Feria
 Die II infra Octavam SSmi Cordis Jesu
 Dies infra octavam III. ordinis Semiduplex
 Proprio Sanctorum
+octid=ScrmumCorIesu
 
 [Pent02-6] (rubrica 1960 aut rubrica tridentina)
 filename=Tempora/Pent02-6Feria
@@ -683,6 +739,7 @@ filename=Tempora/Pent03-0o
 Die IV infra Octavam SSmi Cordis Jesu
 Dies infra octavam III. ordinis Semiduplex
 Proprio Sanctorum
+octid=ScrmumCorIesu
 
 [Pent03-1] (rubrica 1960 aut rubrica tridentina)
 filename=Tempora/Pent03-1Feria
@@ -692,6 +749,7 @@ filename=Tempora/Pent03-1Feria
 Die V infra Octavam SSmi Cordis Jesu
 Dies infra octavam III. ordinis Semiduplex
 Proprio Sanctorum
+octid=ScrmumCorIesu
 
 [Pent03-2] (rubrica 1960 aut rubrica tridentina)
 filename=Tempora/Pent03-2Feria
@@ -701,6 +759,7 @@ filename=Tempora/Pent03-2Feria
 Die VI infra Octavam SSmi Cordis Jesu
 Dies infra octavam III. ordinis Semiduplex
 Proprio Sanctorum
+octid=ScrmumCorIesu
 
 [Pent03-3] (rubrica 1960 aut rubrica tridentina)
 filename=Tempora/Pent03-3Feria
@@ -709,14 +768,16 @@ filename=Tempora/Pent03-3Feria
 Die VII infra Octavam SSmi Cordis Jesu
 Dies infra octavam III. ordinis Semiduplex
 Proprio Sanctorum
+octid=ScrmumCorIesu
 
 [Pent03-4] (rubrica 1960 aut rubrica tridentina)
 filename=Tempora/Pent03-4Feria
 
 [Pent03-5]
-Die Octava SSmi Cordis Jesu
-Festum Duplex maius
+In Octava SSmi Cordis Jesu
+Dies octava III. ordinis Duplex maius
 Proprio Sanctorum
+octid=ScrmumCorIesu
 
 [Pent03-5] (rubrica 1960 aut rubrica tridentina)
 filename=Tempora/Pent03-5Feria
@@ -817,6 +878,7 @@ Festum Duplex
 In Conceptione Immaculata Beatae Mariae Virginis
 Festum Duplex I. classis
 Praefertur Dominicis
+octid=ConceptioImmaculataBMV
 
 [12-08] (rubrica 1570)
 Conceptione Beatae Mariae Virginis
@@ -826,6 +888,7 @@ filename=Sancti/12-08o
 [12-09] (rubrica 1910 aut rubrica Divino aut rubrica 1955)
 De II die Infra Octavam Concept. Immac. Beatae Mariae Virginis
 Dies infra octavam communem Semiduplex
+octid=ConceptioImmaculataBMV
 
 [12-09] (rubrica innovata)
 S. Juan Diego
@@ -835,6 +898,7 @@ filename=Sancti/12-09n
 [12-10] (rubrica 1910 aut rubrica Divino aut rubrica 1955)
 De III die Infra Octavam Conceptionis Immaculatae Beatae Mariae Virginis
 Dies infra octavam communem Semiduplex
+octid=ConceptioImmaculataBMV
 
 [12-10] (rubrica Rubrics 1960 aut rubrica 1570)
 S. Melchiadis Papae et Martyris
@@ -850,6 +914,7 @@ Festum Semiduplex
 [12-12] (rubrica 1910 aut rubrica Divino aut rubrica 1955)
 De V die Infra Octavam Concept. Immac. Beatae Mariae Virginis
 Dies infra octavam communem Semiduplex
+octid=ConceptioImmaculataBMV
 
 [12-12] (rubrica 1960)
 Beatae Mariae Virginis de Guadalupe
@@ -864,6 +929,7 @@ Festum Duplex
 [12-14] (rubrica 1910 aut rubrica Divino aut rubrica 1955)
 De VII die Infra Octavam Concept. Immac. Beatae Mariae Virginis
 Dies infra octavam communem Semiduplex
+octid=ConceptioImmaculataBMV
 
 [12-14] (rubrica innovata)
 S. Joannis a Cruce Confessoris et Ecclesiae Doctoris
@@ -873,6 +939,7 @@ filename=Sancti/11-24
 [12-15] (rubrica 1910 aut rubrica Divino aut rubrica 1955)
 In Octava Concept. Immac. Beatae Mariae Virginis
 Dies octava communis Duplex maius
+octid=ConceptioImmaculataBMV
 
 [12-16] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Eusebii Episcopi et Martyris
@@ -1700,15 +1767,17 @@ Vigilia Simplex
 In Nativitate S. Joannis Baptistae
 Festum Duplex I. classis
 (rubrica 1570) filename=Sancti/06-24t
+octid=SIoannesBaptista
 
 [06-25] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Gulielmi Abbatis
 Festum Duplex
 
 [06-25] (rubrica 1570)
-Second day of Octava Nativitati S. Joannis Baptist
+Secunda die infra Octavam Nativitatis S. Joannis Baptistae
 Festum Semiduplex
 filename=Sancti/06-25o
+octid=SIoannesBaptista
 
 [06-26] (rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 Ss. Joannis et Pauli Martyrum
@@ -1720,6 +1789,7 @@ Festum Duplex
 [06-27] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
 Quarta die infra Octavam Nativitatis S. Joannis Baptistae
 Dies infra octavam communem Semiduplex
+octid=SIoannesBaptista
 
 [06-27] (rubrica innovata)
 S. Cyrilli Episc. Alexandrini Confessoris Ecclesiae Doctoris
@@ -1747,6 +1817,7 @@ Festum Duplex
 [06-29]
 SS. Apostolorum Petri et Pauli
 Festum Duplex I. classis
+octid=SsPetriEtPauli
 
 [06-30] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 In Commemoratione S. Pauli Apostoli
@@ -1769,6 +1840,7 @@ Festum Domini Duplex II. classis
 In Octava S. Joannis Baptistae
 Festum Duplex maius
 filename=Sancti/07-01t
+octid=SIoannesBaptista
 
 [07-02] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 In Visitatione B. Mariae Virginis
@@ -1788,6 +1860,7 @@ filename=Sancti/07-03r
 Quinta die infra Octavam Ss. Petri et Pauli
 Dies infra octavam communem Semiduplex
 filename=Sancti/07-03t
+octid=SsPetriEtPauli
 
 [07-03] (rubrica innovata)
 S. Thomae Apostoli
@@ -1798,6 +1871,7 @@ filename=Sancti/12-21
 Sexta die infra Octavam Ss. Petri et Pauli
 Dies infra octavam communem Semiduplex
 (rubrica 1570) filename=Sancti/07-04o
+octid=SsPetriEtPauli
 
 [07-04] (rubrica innovata)
 S. Elisabeth Reg. Portugaliae Viduae
@@ -1812,6 +1886,7 @@ Festum Duplex
 Septima die infra Octavam Ss. Petri et Pauli
 Dies infra octavam communem Semiduplex
 filename=Sancti/07-05o
+octid=SsPetriEtPauli
 
 [07-05] (rubrica 1910)
 Ss. Cyrilli et Methodii Pont. et Conf.
@@ -1822,6 +1897,7 @@ filename=Sancti/07-07
 In Octava Ss. Petri et Pauli
 Dies octava communis Duplex maius
 (rubrica 1570) filename=Sancti/07-06o
+octid=SsPetriEtPauli
 
 [07-06] (rubrica innovata)
 S. Maria Goretti, virgin and martyr
@@ -2105,6 +2181,7 @@ filename=Sancti/08-09n
 [08-10]
 S. Laurentii Martyris
 Festum Duplex II. classis
+octid=SLaurentius
 
 [08-11] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 Ss. Tiburtii et Susannae Virgin. Martyrum
@@ -2114,6 +2191,7 @@ Festum Simplex
 Secunda die infra Octavam S. Laurentii
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-11t
+octid=SsPetriEtPauli
 
 [08-11] (rubrica innovata)
 S. Clarae Virginis
@@ -2128,6 +2206,7 @@ Festum Duplex
 Tertia die infra Octavam S. Laurentii
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-12t
+octid=SsPetriEtPauli
 
 [08-12] (rubrica innovata)
 S. Joannae Franciscae Fremiot de Chantal Viduae
@@ -2142,6 +2221,7 @@ Festum Simplex
 Quarta die infra Octavam S. Laurentii
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-13t
+octid=SsPetriEtPauli
 
 [08-13] (rubrica innovata)
 Ss. Pontian, pope, and Hippolytus, priest, martyrs
@@ -2167,6 +2247,7 @@ filename=Sancti/08-14n
 Assumptione Beatae Mariae Virginis
 Festum Duplex I. classis
 (rubrica 1960 aut rubrica Divino aut rubrica 1955) filename=Sancti/08-15r
+octid=Assumptio
 
 [08-16] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Joachim Confessoris, Patris B. M. V.
@@ -2176,6 +2257,7 @@ Festum Duplex II. classis
 Secunda die infra Octavam Assumptionis
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-16o
+octid=Assumptio
 
 [08-16] (rubrica innovata)
 S. Stephani Hungariae Regis Confessoris
@@ -2190,12 +2272,14 @@ Festum Duplex
 Octava S. Laurentii Martyris
 Festum Duplex
 filename=Sancti/08-17t
+octid=SLaurentius
 
 [08-18] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
 Quarta die infra Octavam Assumptionis
 Dies infra octavam communem Semiduplex
 (rubrica 1570) filename=Sancti/08-18o
 (rubrica 1910) filename=Sancti/08-18t
+octid=Assumptio
 
 [08-18] (rubrica Rubrics 1960)
 S. Agapiti Martyris
@@ -2211,6 +2295,7 @@ Quinta die infra Octavam Assumptionis
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-19o
 (sed rubrica 1910) filename=Sancti/08-19t
+octid=Assumptio
 
 [08-20] (rubrica 1960 aut rubrica tridentina aut rubrica Divino aut rubrica 1955)
 S. Bernardi Abbatis et Ecclesiae Doctoris
@@ -2224,6 +2309,7 @@ Festum Duplex
 Septima die infra Octavam Assumptionis
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-21o
+octid=Assumptio
 
 [08-21] (rubrica innovata)
 S. Pii X Papae Confessoris
@@ -2234,10 +2320,12 @@ filename=Sancti/09-03r
 Immaculati Cordis Beatae Mariae Virginis
 Festum Duplex II. classis
 filename=Sancti/08-22r
+octid=Assumptio
 
 [08-22] (rubrica tridentina)
 In Octava Assumptionis B.M.V.
 Dies octava communis Duplex maius
+octid=Assumptio
 
 [08-22] (rubrica innovata)
 Beatae Mariae Virginis Regina
@@ -2328,6 +2416,7 @@ Festum Semiduplex
 [09-08] (rubrica 1960 aut rubrica tridentina aut rubrica Divino aut rubrica 1955)
 In Nativitate Beatae Mariae Virginis
 Festum Duplex II. classis
+octid=NativitasBMV
 
 [09-09] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Gorgonii Martyris
@@ -2337,6 +2426,7 @@ Festum Simplex
 Secunda die infra Octavam S. Nativitatis Beatae Mariae Virginis
 Dies infra octavam communem Semiduplex
 filename=Sancti/09-09t
+octid=NativitasBMV
 
 [09-09] (rubrica innovata)
 S. Peter Claver, priest
@@ -2351,6 +2441,7 @@ Festum Duplex
 Tertia die infra Octavam S. Nativitatis Beatae Mariae Virginis
 Dies infra octavam communem Semiduplex
 filename=Sancti/09-10o
+octid=NativitasBMV
 
 [09-11] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 Ss. Proti et Hyacinthi Martyrum
@@ -2360,6 +2451,7 @@ Festum Simplex
 Quarta die infra Octavam Nativitatis Beatae Mariae Virginis
 Dies infra octavam communem Semiduplex
 filename=Sancti/09-11t
+octid=NativitasBMV
 
 [09-12] (rubrica 1960 aut rubrica 1910 aut rubrica Divino aut rubrica 1955)
 S. Nominis Beatae Mariae Virginis
@@ -2370,11 +2462,13 @@ Festum Duplex maius
 Quinta die infra Octavam Nativitatis Beatae Mariae Virginis
 Dies infra octavam communem Semiduplex
 filename=Sancti/09-12t
+octid=NativitasBMV
 
 [09-13] (rubrica tridentina)
 Sexta die infra Octavam Nativitatis Beatae Mariae Virginis
 Dies infra octavam communem Semiduplex
 filename=Sancti/09-13t
+octid=NativitasBMV
 
 [09-13] (rubrica innovata)
 S. Joannis Chrysostomi Episcopi Confessoris Ecclesiae Doctoris
@@ -2394,6 +2488,7 @@ Festum Duplex II. classis
 In Octava Nativitatis Beatae Mariae Virginis
 Festum Duplex
 filename=Sancti/09-15t
+octid=NativitasBMV
 
 [09-16]
 Ss. Cornelii Papae et Cypriani Episcopi, Martyrum
@@ -2660,6 +2755,7 @@ Vigilia Simplex
 [11-01] (rubrica 1960 aut rubrica tridentina aut rubrica Divino aut rubrica 1955)
 Omnium Sanctorum
 Festum Duplex I. classis
+octid=OmnesSanctos
 
 [11-02] (rubrica 1960 aut rubrica Divino aut rubrica 1955)
 In Commemoratione Omnium Fidelium Defunctorum
@@ -2670,10 +2766,12 @@ Festum Duplex
 Secunda die infra Octavam Omnium Sanctorum
 Dies infra octavam communem Semiduplex
 filename=Sancti/11-02t
+octid=OmnesSanctos
 
 [11-03] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
 Tertia die infra Octavam Omnium Sanctorum
 Dies infra octavam communem Semiduplex
+octid=OmnesSanctos
 
 [11-03] (rubrica innovata)
 S. Martin de Porres, religious
@@ -2689,22 +2787,27 @@ Festum Duplex
 Quarta die infra Octavam Omnium Sanctorum
 Dies infra octavam communem Semiduplex
 filename=Sancti/11-04o
+octid=OmnesSanctos
 
 [11-05] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
 Quinta die infra Octavam Omnium Sanctorum
 Dies infra octavam communem Semiduplex
+octid=OmnesSanctos
 
 [11-06] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
 Sexta die infra Octavam Omnium Sanctorum
 Dies infra octavam communem Semiduplex
+octid=OmnesSanctos
 
 [11-07] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
 Septima die infra Octavam Omnium Sanctorum
 Dies infra octavam communem Semiduplex
+octid=OmnesSanctos
 
 [11-08] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
 In Octava Omnium Sanctorum
 Dies octava communis Duplex maius
+octid=OmnesSanctos
 
 [11-08] (rubrica Rubrics 1960)
 Ss. Quatuor Coronatorum Martyrum
