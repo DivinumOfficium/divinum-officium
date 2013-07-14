@@ -132,6 +132,13 @@ sub generate_internal_office_fields
   my %rank = parse_rank_line($office_ref->{rank});
   $office_ref->{$_} = $rank{$_} foreach(keys(%rank));
 
+  if(exists($office_ref->{occurrencerules}))
+  {
+    $office_ref->{occurrencetable} = {$office_ref->{occurrencerules} =~ /([^,]*),([^;]*);?/g};
+    my %keywords = (OMIT => OMIT_LOSER, COMMEMORATE => COMMEMORATE_LOSER, TRANSLATE => TRANSLATE_LOSER);
+    $_ = $keywords{$_} foreach(values(%{$office_ref->{occurrencetable}}));
+  }
+
   $office_ref->{firstvespers} =
     $::version =~ /1955|1960/ ?
       # In the later rubrics, only high-ranking offices and Sundays have first

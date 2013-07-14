@@ -3,6 +3,8 @@ package horas::calendar;
 use strict;
 use warnings;
 
+use List::Util qw(first);
+
 use FindBin qw($Bin);
 use lib "$Bin/..";
 
@@ -173,9 +175,15 @@ sub cmp_occurrence_1960
 # loser, which is positive if $b wins and negative if $a wins.
 sub cmp_occurrence
 {
-  return cmp_occurrence_1960(@_) if($::version =~ /1960/);
-
   my ($a, $b) = @_;
+
+  # Apply office-specific rules.
+  return -$a->{occurrencetable}{$b->{id}}
+    if(exists($a->{occurrencetable}) && exists($a->{occurrencetable}{$b->{id}}));
+  return $b->{occurrencetable}{$a->{id}}
+    if(exists($b->{occurrencetable}) && exists($b->{occurrencetable}{$a->{id}}));
+
+  return cmp_occurrence_1960($a, $b) if($::version =~ /1960/);
 
   # Lesser ferias are always omitted in occurrence.
   return  OMIT_LOSER   if($$a{category} == FERIAL_OFFICE && $$a{standing} == LESSER_DAY);
@@ -542,22 +550,32 @@ sub resolve_concurrence
 
   my $concurrence_resolution = cmp_concurrence($preceding[0], $following[0]);
 
-  # Pick out the winning and concurring offices, and filter the losing half for
-  # omission in concurrence.
-  my ($winner, $concurring);
-  if($concurrence_resolution == FROM_THE_CHAPTER || $concurrence_resolution > 0)
+  # Abstract out the asymmetry.
+  my ($winning_arr_ref, $concurring_arr_ref, $filter_key, $comparator) =
+    ($concurrence_resolution == FROM_THE_CHAPTER || $concurrence_resolution > 0) ?
+      (\@following, \@preceding, 'v1filter', \&cmp_concurrence) :
+      (\@preceding, \@following, 'v2filter', sub { -cmp_concurrence(reverse @_) });
+
+  my $winner = shift @$winning_arr_ref;
+
+  # Apply the explicit filter if we have one.
+  if(exists($winner->{$filter_key}))
   {
-    $winner = shift @following;
-    @preceding = grep {cmp_concurrence($_, $winner) == COMMEMORATE_LOSER} @preceding;
-    $concurring = shift @preceding;
-  }
-  else
-  {
-    $winner = shift @preceding;
-    @following = grep {cmp_concurrence($winner, $_) == -(COMMEMORATE_LOSER)} @following;
-    $concurring = shift @following;
+    my %permitted_commemorations;
+    @permitted_commemorations{split /,/, $winner->{$filter_key}} = ();
+
+    foreach my $arr_ref ($winning_arr_ref, $concurring_arr_ref)
+    {
+      @$arr_ref = grep {exists $permitted_commemorations{$_->{id}}} @$arr_ref;
+    }
   }
 
+  # Filter the losing half for omission.
+  @$concurring_arr_ref = grep {$comparator->($_, $winner) != OMIT_LOSER} @$concurring_arr_ref;
+
+  my $concurring = shift @$concurring_arr_ref;
+
+  
   # Put all the offices in place, except that the position of the concurring
   # office depends on the active rubrics and is handled subsequently, and that
   # the tail is yet to be sorted. We place preceding offices before the
@@ -570,7 +588,7 @@ sub resolve_concurrence
   {
     if($::version =~ /1570/)
     {
-      # If 1570, commemorations are simply sorted by rank, without affording the
+      # In 1570, commemorations are simply sorted by rank, without affording the
       # concurring office any special treatment.
       unshift @tail, $concurring;
     }
