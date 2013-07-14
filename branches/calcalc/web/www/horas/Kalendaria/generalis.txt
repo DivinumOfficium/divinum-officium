@@ -704,6 +704,7 @@ In Octava Sanctissimi Corporis Christi
 (sed rubrica 1960) Feria V infra Hebdomadam II post Octavam Pentecostes
 (rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955) rank=Dies octava II. ordinis Duplex maius
 (rubrica 1570) filename=Tempora/Pent02-4o
+id=OctavaCorporisChristi
 octid=CorpusChristi
 
 [Pent02-5]
@@ -713,6 +714,7 @@ Festum Domini Duplex I. classis
 (rubrica 1910) filename=Tempora/Pent02-5t
 Proprio Sanctorum
 octid=ScrmumCorIesu
+(rubrica Divino) v1filter=SIoannBapt,SsPetrusEtPaulus
 
 [Pent02-5] (rubrica 1570)
 filename=Tempora/Pent02-5Feria
@@ -1767,7 +1769,9 @@ Vigilia Simplex
 In Nativitate S. Joannis Baptistae
 Festum Duplex I. classis
 (rubrica 1570) filename=Sancti/06-24t
+id=SIoannesBaptista
 octid=SIoannesBaptista
+occurrencerules=OctavaCorporisChristi,COMMEMORATE
 
 [06-25] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Gulielmi Abbatis
@@ -1817,7 +1821,9 @@ Festum Duplex
 [06-29]
 SS. Apostolorum Petri et Pauli
 Festum Duplex I. classis
-octid=SsPetriEtPauli
+id=SsPetrusEtPaulus
+octid=SsPetrusEtPaulus
+occurrencerules=OctavaCorporisChristi,COMMEMORATE
 
 [06-30] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 In Commemoratione S. Pauli Apostoli
@@ -1860,7 +1866,7 @@ filename=Sancti/07-03r
 Quinta die infra Octavam Ss. Petri et Pauli
 Dies infra octavam communem Semiduplex
 filename=Sancti/07-03t
-octid=SsPetriEtPauli
+octid=SsPetrusEtPaulus
 
 [07-03] (rubrica innovata)
 S. Thomae Apostoli
@@ -1871,7 +1877,7 @@ filename=Sancti/12-21
 Sexta die infra Octavam Ss. Petri et Pauli
 Dies infra octavam communem Semiduplex
 (rubrica 1570) filename=Sancti/07-04o
-octid=SsPetriEtPauli
+octid=SsPetrusEtPaulus
 
 [07-04] (rubrica innovata)
 S. Elisabeth Reg. Portugaliae Viduae
@@ -1886,7 +1892,7 @@ Festum Duplex
 Septima die infra Octavam Ss. Petri et Pauli
 Dies infra octavam communem Semiduplex
 filename=Sancti/07-05o
-octid=SsPetriEtPauli
+octid=SsPetrusEtPaulus
 
 [07-05] (rubrica 1910)
 Ss. Cyrilli et Methodii Pont. et Conf.
@@ -1897,7 +1903,7 @@ filename=Sancti/07-07
 In Octava Ss. Petri et Pauli
 Dies octava communis Duplex maius
 (rubrica 1570) filename=Sancti/07-06o
-octid=SsPetriEtPauli
+octid=SsPetrusEtPaulus
 
 [07-06] (rubrica innovata)
 S. Maria Goretti, virgin and martyr
@@ -2191,7 +2197,7 @@ Festum Simplex
 Secunda die infra Octavam S. Laurentii
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-11t
-octid=SsPetriEtPauli
+octid=SsPetrusEtPaulus
 
 [08-11] (rubrica innovata)
 S. Clarae Virginis
@@ -2206,7 +2212,7 @@ Festum Duplex
 Tertia die infra Octavam S. Laurentii
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-12t
-octid=SsPetriEtPauli
+octid=SsPetrusEtPaulus
 
 [08-12] (rubrica innovata)
 S. Joannae Franciscae Fremiot de Chantal Viduae
@@ -2221,7 +2227,7 @@ Festum Simplex
 Quarta die infra Octavam S. Laurentii
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-13t
-octid=SsPetriEtPauli
+octid=SsPetrusEtPaulus
 
 [08-13] (rubrica innovata)
 Ss. Pontian, pope, and Hippolytus, priest, martyrs
