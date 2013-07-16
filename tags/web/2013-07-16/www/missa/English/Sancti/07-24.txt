@@ -1,0 +1,21 @@
+[Rank]
+In Vigilia S. Jacobi Apostoli;;Simplex;;1.5;;vide C1v
+
+[Rank1960]
+Commemoratio S. Christinae;;Simplex;;1
+
+[Rule]
+vide C1v
+Suffragium=Maria;
+
+[Commemoratio Oratio]
+!For St. Christina
+@Commune/C6:Oratio
+
+[Commemoratio Secreta]
+!For St. Christina 
+@Commune/C6:Secreta
+
+[Commemoratio Postcommunio]
+!For St. Christina
+@Commune/C6:Postcommunio
