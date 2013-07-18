@@ -1,0 +1,59 @@
+[Rank]
+S. Silvestri Papae et Conf.;;Duplex;;3;;vide C4d
+
+[Rank1960]
+Die septima post Nativitatem;;Duplex II class;;5;;ex Sancti/12-25m3
+
+[RankNewcal]
+S. Silvestri Papae et Conf.;;Duplex optional;;2;;vide C4d
+
+[Rule]
+OPapaC=Silvéstrum;
+vide C4d;
+Gloria
+Credo
+Prefatio=Nat
+
+[Oratio]
+@Commune/C4:Oratio:s/N\./Silvéstri/
+
+[Commemoratio Oratio]
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Oratio
+
+[Lectio]
+@Commune/C4a
+
+[Graduale]
+!Eccli 44:16
+Ecce sacérdos magnus, qui in diébus suis plácuit Deo.
+!Eccli 44:20
+V. Non est invéntus símilis illi, qui conserváret legem Excélsi.~
+Allelúja, allelúja.
+!Ps 88:21
+V. Invéni David servum meum: óleo sancto meo unxi eum. Allelúja.
+
+[GradualeP]
+@Commue/C4
+
+[Evangelium]
+@Commune/C5
+
+[Offertorium]
+@Commune/C4
+
+[Secreta]
+Sancti tui nos, Dómine, quaesumus, úbique lætíficent: ut, dum eórum mérita~
+recólimus, patrocínia sentiámus.
+$Per Dominum
+
+[Commemoratio Secreta]
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Secreta
+
+[Postcommunio]
+@Commune/C4:Postcommunio:s/N\./Silvéstro/
+
+[Commemoratio Postcommunio]
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Postcommunio
