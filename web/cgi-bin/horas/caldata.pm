@@ -75,17 +75,17 @@ sub parse_rank_line($)
     $rank{rankord} =
       $rank{category} == SUNDAY_OFFICE ?        ($rank{standing} == GREATER_DAY ? 2 : 3) :
       $rank{category} == FERIAL_OFFICE ?        ($rank{standing} == GREATER_PRIVILEGED_DAY ? 1 : ($rank{standing} == GREATER_DAY ? 3 : 4)) :
-      $rank{category} == FESTAL_OFFICE ?        ($rank{rite} == SIMPLE_RITE && $::version =~ /1955|1960/ ? 4 : 3) :
+      $rank{category} == FESTAL_OFFICE ?        ($rank{rite} == SIMPLE_RITE && $horas::version =~ /1955|1960/ ? 4 : 3) :
       $rank{category} == OCTAVE_DAY_OFFICE ?    ($rank{octrank} <= 2 ? 1 : 3):
       $rank{category} == WITHIN_OCTAVE_OFFICE ? min($rank{octrank}, 3) :
-      $rank{category} == VIGIL_OFFICE ?         ($::version =~ /1960/ ? 3 : 4) :
+      $rank{category} == VIGIL_OFFICE ?         ($horas::version =~ /1960/ ? 3 : 4) :
                                                 4;
   }
 
   # In 1955, semidoubles became simples, and simples became commemorations. We
   # handled the latter above, so now we can do the former without introducing
   # ambiguity. They become "III. cl. simples".
-  if($::version =~ /1955/ && $rank{rite} == SEMIDOUBLE_RITE)
+  if($horas::version =~ /1955/ && $rank{rite} == SEMIDOUBLE_RITE)
   {
     $rank{rite} = SIMPLE_RITE;
   }
@@ -140,10 +140,10 @@ sub generate_internal_office_fields
   }
 
   $office_ref->{firstvespers} =
-    $::version =~ /1955|1960/ ?
+    $horas::version =~ /1955|1960/ ?
       # In the later rubrics, only high-ranking offices and Sundays have first
       # vespers.
-      ($office_ref->{category} == FESTAL_OFFICE && $office_ref->{rankord} <= ($::version =~ /1960/ ? 1 : 2)) || 
+      ($office_ref->{category} == FESTAL_OFFICE && $office_ref->{rankord} <= ($horas::version =~ /1960/ ? 1 : 2)) || 
       $office_ref->{category} == SUNDAY_OFFICE
       :
       # Otherwise, only vigils and ferias lack them. Days in octaves are
@@ -167,7 +167,7 @@ sub load_calendar_file($$;$)
 
   $basecal ||= {offices => {}, calpoints => {}};
 
-  my %caldata = %{::setupstring($datafolder, '', $filename)};
+  my %caldata = %{horas::setupstring($datafolder, '', $filename)};
 
   foreach my $calpoint (keys(%caldata))
   {
