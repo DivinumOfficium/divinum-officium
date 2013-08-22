@@ -10,6 +10,10 @@ use utf8;
 #use strict "refs";
 #use strict "subs";
 
+use FindBin qw($Bin);
+use lib "$Bin/..";
+use horas::main;
+
 my @lines;
 my $a = 4;
 
@@ -883,6 +887,9 @@ sub gettoday {
 # get date, rank, winner, preloads hashes
 sub precedence {	  
                 
+  horas::main::precedence(@_);
+  return;
+
   $winner = $commemoratio = $commune = $striptura = $commemoratio1 = '';
   %winner = %commemoratio = %commune = %scriptura = {};
   
@@ -1246,7 +1253,7 @@ sub officestring($$$;$) {
 	return \%s;
   }						   
   %s = %{setupstring($basedir, $lang, $fname)};  
-  if (!%s) {return '';}
+  if (!%s) {return {};}
   my @rank = split(';;', $s{Rank});
   my $m = 0;
   my $w = 0;

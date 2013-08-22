@@ -10,6 +10,9 @@ use lib "$Bin/..";
 
 use horas::caldef;
 use horas::caldata qw(get_all_offices);
+use horas::common qw(
+  FIRST_VESPERS_AND_COMPLINE
+  SECOND_VESPERS_AND_COMPLINE);
 
 BEGIN
 {
@@ -17,7 +20,7 @@ BEGIN
 
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(resolve_occurrence resolve_concurrence);
+  our @EXPORT_OK = qw(resolve_occurrence resolve_concurrence get_week);
 }
 
 
@@ -183,7 +186,7 @@ sub cmp_occurrence
   return $b->{occurrencetable}{$a->{id}}
     if(exists($b->{occurrencetable}) && exists($b->{occurrencetable}{$a->{id}}));
 
-  return cmp_occurrence_1960($a, $b) if($::version =~ /1960/);
+  return cmp_occurrence_1960($a, $b) if($horas::version =~ /1960/);
 
   # Lesser ferias are always omitted in occurrence.
   return  OMIT_LOSER   if($$a{category} == FERIAL_OFFICE && $$a{standing} == LESSER_DAY);
@@ -317,7 +320,7 @@ sub cmp_concurrence_1960
 # should be such.
 sub cmp_concurrence
 {
-  return cmp_concurrence_1960(@_) if($::version =~ /1960/);
+  return cmp_concurrence_1960(@_) if($horas::version =~ /1960/);
 
   sub concurrence_rank
   {
@@ -417,7 +420,7 @@ sub cmp_commemoration
   my ($a, $b) = @_;
 
   # With 1960 rubrics, commemorations of the season always come first.
-  if($::version =~ /1960/)
+  if($horas::version =~ /1960/)
   {
     ($a, $b) = ($b, $a) if($$a{cycle} == TEMPORAL_OFFICE);
     return 1 if($$b{cycle} == TEMPORAL_OFFICE);
@@ -430,7 +433,7 @@ sub cmp_commemoration
 sub days_in_month
 {
   my ($month, $year) = @_;
-  return 29 if($month == 2 && ::leapyear($year));
+  return 29 if($month == 2 && horas::leapyear($year));
   return (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)[$month - 1];
 }
 
@@ -440,7 +443,7 @@ sub next_date
   my $date = shift;
   my @date_mdy = split(/-/, $date);
 
-  @date_mdy[1,0,2] = ::nday(@date_mdy[1,0,2]);
+  @date_mdy[1,0,2] = horas::nday(@date_mdy[1,0,2]);
 
   return join('-', @date_mdy);
 }
@@ -452,24 +455,8 @@ sub generate_calpoints
 
   my $date = shift;
   my @date_mdy = split(/-/, $date);
-  my $week;
-  my $day_of_week;
-
-  # Find which week we're in. &::getweek uses globals, which we localise until
-  # such a time as &::getweek is rewritten.
-  {
-    local @::date1 = @date_mdy;
-    local $::month = $date_mdy[0];
-    local $::day = $date_mdy[1];
-    local $::year = $date_mdy[2];
-    local $::dayofweek;
-
-    $week = ::getweek(0);
-
-    # &getweek calculated $::dayofweek, which we want to remember, but which we
-    # don't want to persist globally.
-    $day_of_week = $::dayofweek;
-  }
+  my ($week, $day_of_week) = get_week(@date_mdy);
+  $week =~ s/(.*?)\s*=.*$/$1/;
 
   my @days = qw(Dominica FeriaII FeriaIII FeriaIV FeriaV FeriaVI Sabbato);
   my $month_prefix = sprintf('%02d-', $date_mdy[0]);
@@ -483,7 +470,7 @@ sub generate_calpoints
   );
 
   # nth x-day *of* the month.
-  my $reading_day = ::reading_day(@date_mdy);
+  my $reading_day = horas::reading_day(@date_mdy);
   push @calpoints, $reading_day if($reading_day);
 
   # Last x-day.
@@ -493,6 +480,25 @@ sub generate_calpoints
   push @calpoints, "$week-$day_of_week" if($week);
 
   return @calpoints;
+}
+
+
+# get_week($month, $day, $year)
+# A wrapper for &horas::getweek to hide the use of package variables. Returns
+# the week in scalar context and (week, day_of_week) in list context.
+sub get_week
+{
+  package horas;
+
+  local our @date1 = @_;
+  local our $month = shift;
+  local our $day = shift;
+  local our $year = shift;
+  local our $dayofweek;
+
+  my $week = getweek(0);
+
+  return wantarray ? ($week, $dayofweek) : $week;
 }
 
 
@@ -546,9 +552,16 @@ sub resolve_concurrence
 
   # When a day within an octave is only commemorated, it loses its second
   # vespers. Accordingly, we drop such offices from the list.
-  @preceding = $preceding[0], grep {$_->{category} != WITHIN_OCTAVE_OFFICE} @preceding[1..$#preceding];
+  @preceding = $preceding[0], grep {$_->{category} != WITHIN_OCTAVE_OFFICE} @preceding[1..$#preceding] if(@preceding >= 2);
 
-  my $concurrence_resolution = cmp_concurrence($preceding[0], $following[0]);
+  # Label each office to indicate whether it's of first or second vespers.
+  @preceding = map {{office => $_, segment => SECOND_VESPERS_AND_COMPLINE}} @preceding;
+  @following = map {{office => $_, segment => FIRST_VESPERS_AND_COMPLINE}}  @following;
+
+  my $concurrence_resolution =
+    (@preceding == 0) ? OMIT_LOSER :
+    (@following == 0) ? -(OMIT_LOSER) :
+    cmp_concurrence($preceding[0]{office}, $following[0]{office});
 
   # Abstract out the asymmetry.
   my ($winning_arr_ref, $concurring_arr_ref, $filter_key, $comparator) =
@@ -559,19 +572,19 @@ sub resolve_concurrence
   my $winner = shift @$winning_arr_ref;
 
   # Apply the explicit filter if we have one.
-  if(exists($winner->{$filter_key}))
+  if(exists($winner->{office}{$filter_key}))
   {
     my %permitted_commemorations;
-    @permitted_commemorations{split /,/, $winner->{$filter_key}} = ();
+    @permitted_commemorations{split /,/, $winner->{office}{$filter_key}} = ();
 
     foreach my $arr_ref ($winning_arr_ref, $concurring_arr_ref)
     {
-      @$arr_ref = grep {exists $permitted_commemorations{$_->{id}}} @$arr_ref;
+      @$arr_ref = grep {exists $permitted_commemorations{$_->{office}{id}}} @$arr_ref;
     }
   }
 
   # Filter the losing half for omission.
-  @$concurring_arr_ref = grep {$comparator->($_, $winner) != OMIT_LOSER} @$concurring_arr_ref;
+  @$concurring_arr_ref = grep {$comparator->($_->{office}, $winner->{office}) != OMIT_LOSER} @$concurring_arr_ref;
 
   my $concurring = shift @$concurring_arr_ref;
 
@@ -586,7 +599,7 @@ sub resolve_concurrence
 
   if(defined($concurring))
   {
-    if($::version =~ /1570/)
+    if($horas::version =~ /1570/)
     {
       # In 1570, commemorations are simply sorted by rank, without affording the
       # concurring office any special treatment.
@@ -605,7 +618,7 @@ sub resolve_concurrence
   # the remaining commemorations, a commemoration for I. vespers is placed
   # before one for II. vespers. Since the earlier rubrics are silent in such
   # cases, we adopt this ordering for those, too.
-  return [@result, sort {cmp_concurrence($a, $b)} @tail], $concurrence_resolution;
+  return [@result, sort {cmp_concurrence($a->{office}, $b->{office})} @tail], $concurrence_resolution;
 }
 
 1;
