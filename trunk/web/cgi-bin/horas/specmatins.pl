@@ -670,7 +670,10 @@ sub lectio {
 	setbuild2("Lectio $num Mariae M$month");
   } 
 
-  if ($num == 8 && $rule =~ /Contract8/i && (exists($winner{Lectio93}) || exists($commemoratio{Lectio7}))) {
+  # Combine lessons 8 and 9 if there's a commemoration to be read in place of
+  # lesson 9, and if the office of the day requires it. In fact the rubrics
+  # always *permit* such a contraction, but we don't support that yet.
+  if ($version !~ /1960/ && $num == 8 && $rule =~ /Contract8/i && (exists($winner{Lectio93}) || exists($commemoratio{Lectio7}))) {
     %w = (columnsel($lang)) ? %winner : %winner2;
     $w = $w{Lectio8} . $w{Lectio9};
 	$w =~ s/\&teDeum//;
