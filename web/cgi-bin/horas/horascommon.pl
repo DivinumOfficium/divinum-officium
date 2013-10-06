@@ -426,8 +426,9 @@ sub getrank {
     $crank[2] = 7;
     $crank =~ s/;;[0-9]/;;7/;
     $srank = '';
-  } elsif ($version !~ /1960/ && $hora =~ /(Vespera|Completorium)/i && $month == 11 && 
+  } elsif (($version !~ /1960/ || $dayofweek == 6) && $hora =~ /(Vespera|Completorium)/i && $month == 11 && 
       $srank =~ /Omnium Fidelium defunctorum/i && !$caller) {	 
+      # Office of All Souls' day ends after None.
       $srank[2] = 1;
       $srank = '';
   } elsif ($version =~ /1960/ && $hora =~ /(Vespera|Completorium)/i && $month == 11 && $day == 1) {
