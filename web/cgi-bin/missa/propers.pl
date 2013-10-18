@@ -233,7 +233,11 @@ sub oratio
         $w = "$`\_\n$'"; #triduum 1960  not 1955
     }
 
-    if ($winner{Rule} =~ /Sub unica conc/i)
+    my $sub_unica_conc =
+      ($commemoratio{Rule} =~ /Sub unica conclusione in commemoratione/i) ||
+      ($winner{Rule} =~ /Sub unica concl(usione)?\s*$/mi);
+
+    if ($sub_unica_conc)
     {
         if ($version !~ /1960/)
         {
@@ -279,7 +283,7 @@ sub oratio
 
     $w = '';
     our $oremusflag = "\_\n$prayers{$lang}->{Oremus}\n";
-    $oremusflag = '' if $type =~ /Secreta/i;
+    $oremusflag = '' if $type =~ /Secreta/i || $sub_unica_conc;
     if (exists($w{'$type Vigilia'}) && ($version !~ /(1955|1960)/ || $rule =~ /Vigilia/i))
     {
         $w = "!Commemoratio vigilia\n";
