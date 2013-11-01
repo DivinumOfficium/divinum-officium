@@ -305,35 +305,29 @@ sub setupstring($$$%)
     if ($lang eq 'English')
     {
       # English layers on top of Latin.
-      $base_sections = setupstring($basedir, 'Latin', $fname, 'resolve@' => RESOLVE_WHOLEFILE);
+      $base_sections = setupstring($basedir, 'Latin', $fname, 'resolve@' => RESOLVE_NONE);
     }
     elsif ($lang && $lang ne 'Latin')
     {
       # Other non-Latin languages layer on top of English.
-      $base_sections = setupstring($basedir, 'English', $fname, 'resolve@' => RESOLVE_WHOLEFILE);
+      $base_sections = setupstring($basedir, 'English', $fname, 'resolve@' => RESOLVE_NONE);
     }
     
     # Get the top layer.
-    if (-e $fullpath)
+    $new_sections = setupstring_parse_file($fullpath, $basedir, $lang) if (-e $fullpath);
+    
+    if(%$new_sections)
     {
-      $new_sections = setupstring_parse_file($fullpath, $basedir, $lang);
-      
-      # Do whole-file inclusions.
-      while (my ($incl_fname, undef, $incl_subst) = (${$new_sections}{'__preamble'} =~ /$inclusionregex/gc))
-      {
-        $incl_fname .= '.txt';
-        if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
-        my $incl_sections = setupstring($basedir, $lang, $incl_fname, %params);
-        ${$new_sections}{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
-      }
-      
-      delete ${$new_sections}{'__preamble'};
+      # Fill in the missing things from the layer below.
+      ${$new_sections}{'__preamble'} .= "\n${$base_sections}{'__preamble'}";
+      ${$new_sections}{$_} ||= ${$base_sections}{$_} foreach (keys(%{$base_sections}));
+    }
+    else
+    {
+      $new_sections = $base_sections;
     }
     
-    # Fill in the missing things from the layer below.
-    ${$new_sections}{$_} ||= ${$base_sections}{$_} foreach (keys(%{$base_sections}));
-    
-    return '' unless keys(%{$new_sections});
+    return '' unless %$new_sections;
     
     # Cache the final result.
     ${$inclusioncache}{$fullpath} = $new_sections;
@@ -342,12 +336,14 @@ sub setupstring($$$%)
   # Take a copy.
   my %sections = %{${$inclusioncache}{$fullpath}};
  
+  $params{'resolve@'} = RESOLVE_ALL unless (exists $params{'resolve@'});
+  
   # Do whole-file inclusions.
   unless ($params{'resolve@'} == RESOLVE_NONE)
   {
-    while (my ($incl_fname, undef, $incl_subst) = ($sections{'__preamble'} =~ /$inclusionregex/gc))
+    while ($sections{'__preamble'} =~ /$inclusionregex/gc)
     {
-      $incl_fname .= '.txt';
+      my $incl_fname .= "$1.txt";
       if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
       my $incl_sections = setupstring($basedir, $lang, $incl_fname, 'resolve@' => RESOLVE_NONE);
       $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
@@ -356,8 +352,6 @@ sub setupstring($$$%)
   
   delete $sections{'__preamble'};
 
-  $params{'resolve@'} = RESOLVE_ALL unless (exists $params{'resolve@'});
-  
   if ($params{'resolve@'} == RESOLVE_ALL)
   {
     # Iterate over all sections, resolving inclusions. We make sure we
