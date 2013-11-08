@@ -348,9 +348,9 @@ sub setupstring($$$%)
       my $incl_sections = setupstring($basedir, $lang, $incl_fname, 'resolve@' => RESOLVE_NONE);
       $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
     }
-  }
   
-  delete $sections{'__preamble'};
+    delete $sections{'__preamble'};
+  }
 
   if ($params{'resolve@'} == RESOLVE_ALL)
   {
