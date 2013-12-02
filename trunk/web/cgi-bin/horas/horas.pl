@@ -1036,19 +1036,21 @@ sub martyrologium {
         {
             $a[0] .= " $luna"
         }
-        elsif ( $a[0] =~ /U[p]+on.*?$mo[, ]*/i )
-        {
-            $a[0] = "$luna $'";
-        }
-        elsif ( $a[1] =~ /U[p]+on.*?$mo[, ]*/i )
-        {
-            $a[1] = "$luna $'";
-        }
         else
         {
-            unshift(@a, ($luna, "_\n"));
+            FINDDATE:
+            {
+                foreach(@a)
+                {
+                    last FINDDATE if s/^U[p]+on.*?$mo[, ]*/$luna /i;
+                }
+
+                # Put $luna at the start if and only if we didn't find a
+                # suitable substitution in the loop above.
+                unshift(@a, $luna, "_\n");
+            }
         }
-            
+
         my $prefix = "v. ";
         foreach $line (@a)
         {
