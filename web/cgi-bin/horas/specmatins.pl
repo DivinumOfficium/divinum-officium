@@ -557,7 +557,9 @@ sub lectio {
   my %w = (columnsel($lang)) ? %winner : %winner2;   
   						 
   #Nat1-0 special rule
-  if ($num <= 3 && $rule =~ /Lectio1 Sancti/i && $winner =~ /tempora/i && $rule !~ /1960/) {   
+  # TODO: Get rid of this special case by separating the temporal and sanctoral
+  # parts of Christmas, thus allowing occurring Scripture to be defined.
+  if ($num <= 3 && $rule =~ /Lectio1 Sancti/i && $winner =~ /tempora/i && $day >= 29) {   
     my %c = (columnsel($lang)) ? %commemoratio : %commemoratio2;
     $w{"Lectio$num"} = $c{"Lectio$num"};
     $w{"Responsory$num"} = $c{"Responsory$num"};
