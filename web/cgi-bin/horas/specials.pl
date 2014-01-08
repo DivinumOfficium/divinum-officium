@@ -737,7 +737,7 @@ sub psalmi_minor {
 
   if ($ant =~ /\;\;/) {$ant = $`;}
   if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;}
-  if ($ant && $ant !~ /^Ant/i) {$ant = "Ant. $ant";}
+  if ($ant) {$ant = "Ant. $ant";}
 
   my @ant = split( '\*', $ant);
   postprocess_ant($ant, $lang);
