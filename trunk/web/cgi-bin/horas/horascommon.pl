@@ -417,8 +417,17 @@ sub getrank {
 
   if ($srank =~ /vigilia/i && ($version !~ /1960/ || $sname !~ /08\-09/)) {$srank[2] = 0; $srank = '';}
                                          
-  if (($version =~ /1955/ && $crank[2] < 5) || ($version =~ /1960/ && $crank[2] < 6) ) 
-	  {$crank = ''; @crank = splice(@crank, @crank);}    
+  # Restrict I. Vespers in 1955/1960. In particular, in 1960, II. cl.
+  # feasts have I. Vespers if and only if they're feasts of the Lord.
+  if (($version =~ /1955/ && $crank[2] < 5) ||
+    ($version =~ /1960/ && $crank[2] < 
+      (($csaint{Rule} =~ /Festum Domini/i && $dayofweek == 6) ? 5 : 6)
+    )
+  )
+  {
+    $crank = '';
+    @crank = ();
+  }    
 
   if ($trank[2] >= (($version =~ /(1955|1960)/) ? 6 : 7) && $crank[2] < 6) {$crank = ''; @crank = undef;}
 
@@ -453,7 +462,10 @@ sub getrank {
 	  ($crank, $srank) = ($srank, $crank);	  
 	   $svesp = 1;
       #switched
-	  (%saint, %csaint) = (%csaint, %saint);
+          my %tempsaint = %saint;
+          %saint = %csaint;
+          %csaint = %tempsaint;
+
       @srank = split(";;", $srank);
       @crank = split(";;", $crank); 
 	  $vflag = 1; 
