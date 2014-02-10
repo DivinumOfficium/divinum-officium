@@ -282,7 +282,7 @@ sub specials {
                              
        if ($w && $w !~ /!H[iy]mn/i) {  
          my $wr = '';
-         my $hmn = (($version =~ /1960/ && $winner{Rule} =~ /(C4|C5)/ && $hora =~ /Vespera/i) ||  
+         my $hmn = (($version =~ /1955|1960/ && $winner{Rule} =~ /(C4|C5)/ && $hora =~ /Vespera/i) ||  
 		     ($winner{Rule} =~ /\;mtv/i && $hora =~ /Vespera/i)) ? 'Hymnus1' : 'Hymnus';  
 		 if ((!exists($winner{"$hmn Vespera"}) && 
 		    ($vespera == 3 && !exists($winner{"$hmn Vespera 3"}))) &&

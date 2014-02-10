@@ -103,7 +103,7 @@ sub hymnus {  #matutinum
   setbuild("Psalterium/Matutinum Special", $name, 'Hymnus ord'); 
  
  
-  my $hmn = (!exists($winner{'Hymnus Matutinum'}) && ($version =~ /1960/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /(C4|C5)/) 
+  my $hmn = (!exists($winner{'Hymnus Matutinum'}) && ($version =~ /1955|1960/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /(C4|C5)/) 
 	  ? 'Hymnus1' : 'Hymnus';      
  
   my ($h, $c) = getproprium("$hmn Matutinum", $lang, $seasonalflag, 1);
