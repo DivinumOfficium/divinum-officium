@@ -956,7 +956,7 @@ sub lect1960 {
   }    
   setbuild2("B3 : " . beginwith($a[4]));   
 
- if ($version =~ /1960/ && $lang =~ /Latin/i) {$a[1] = 'Jube Domine, benedicere';}  
+ if ($version =~ /1960/ && $lang =~ /Latin/i) {$a[1] = 'Jube, Domine, benedicere.';}  
 
   push (@s, "_");
   if ($rule !~ /Limit.*?Benedictio/i) {
