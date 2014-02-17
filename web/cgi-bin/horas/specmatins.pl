@@ -508,7 +508,7 @@ sub lectiones {
   
   }
 
-  if ($version =~ /1960/ && $lang =~ /Latin/i) {$a[1] = 'Jube Domine, benedicere';}  
+  if ($version =~ /1960/ && $lang =~ /Latin/i) {$a[1] = 'Jube, Domine, benedicere.';}  
 
 
   if ($num > 0) {$num = ($num -1) * 3 + 1;}
