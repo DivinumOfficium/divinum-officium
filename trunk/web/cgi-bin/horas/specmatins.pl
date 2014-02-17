@@ -40,7 +40,7 @@ sub invitatorium {
   if ($w) {$ant = chompd($w); $comment = $c;} 
 
 
-  setcomment($label, 'Source', $comment, $lang, 'Antiphona');	 
+  setcomment($label, 'Source', $comment, $lang, 'Antiph.');	 
   
   $ant =~ s/^.*?\=\s*// ;
   $ant = chompd($ant);
