@@ -1179,8 +1179,8 @@ sub getordinarium {
   if ($version =~ /trident/i && $hora =~ /(laudes|vespera)/i && $version !~ /monastic/i) 
     {$fname =~ s/\.txt/Trid\.txt/;}
   if ($version =~ /Monastic/i) {$fname =~ s/\.txt/M\.txt/;}
-  @script = do_read($fname);
-  $error = "$fname cannot open!" unless @script;
+  @script = process_conditional_lines(do_read($fname));
+  $error = "$fname cannot be opened or gives an empty script." unless @script;
 
   # Prelude pseudo-item.
   unshift @script, '#Prelude', '';
