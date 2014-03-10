@@ -100,12 +100,9 @@ $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/hor
 $only = ($lang1 && $lang1 =~ /^$lang2$/i) ? 1 : 0;
 precedence(); 
 
-my @translation_languages = ('Latin');
-push @translation_languages, $tlang unless ($tlang eq 'Latin');
-
-foreach my $lang (@translation_languages)
+foreach my $lang ('Latin', $lang1, $lang2)
 {
-  $translate{$lang} =
+  $translate{$lang} ||=
     setupstring($datafolder, $lang, 'Psalterium/Translate.txt');
 }
 
@@ -114,7 +111,6 @@ $title =~ s/[\$\&]//;
 
 $expand = 'all';
 if ($popup =~ /\&/) {$popup =~ s /\s/\_/g;}   
-$tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;
 
 cache_prayers();
 

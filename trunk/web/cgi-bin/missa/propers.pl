@@ -6,6 +6,12 @@ use utf8;
 # Date : 01-20-08
 # Divine Office fills the chapters from ordinarium
 
+use FindBin qw($Bin);
+use lib "$Bin/..";
+
+# Defines ScriptFunc and ScriptShortFunc attributes.
+use horas::Scripting;
+
 $a=4;
 
 #*** specials(\@s, $lang)
@@ -742,7 +748,7 @@ sub replaceNpb {
   return $s;
 }
 
-sub Gloria {
+sub Gloria : ScriptFunc {
   my $lang = shift;	 
   if (DeTemporePassionis() && $rule !~ /Requiem gloria/) {return "";}
   our %prayers;
@@ -793,7 +799,7 @@ sub getitem {
   return $w;
 }
 
-sub Vidiaquam { 
+sub Vidiaquam : ScriptFunc {
   my $lang = shift;
   if ($solemn && $rank >=5 && $winner{Rank} !~ /(Feria|Die |Sabbato)/i && $votive !~ /Defunct/i) {
     our %prayers;
@@ -881,22 +887,22 @@ sub Credo {
   return $flag;
 }
 
-sub introitus {
+sub introitus : ScriptFunc {
   my $lang = shift;
   return getitem('Introitus', $lang);
 }
 
-sub collect {
+sub collect : ScriptFunc {
  my $lang = shift; 
  return oratio($lang, 'Oratio');
 }
 
-sub lectio {
+sub lectio : ScriptFunc {
   my $lang = shift;
   return getitem('Lectio', $lang) . "\$Deo gratias\n";
 }
 
-sub graduale {
+sub graduale : ScriptFunc {
   my $lang = shift;
   my $t = '';
 
@@ -910,7 +916,7 @@ sub graduale {
   return $t;
 }
 
-sub evangelium {
+sub evangelium : ScriptFunc {
   my $lang = shift;
   my $t = getitem('Evangelium', $lang);
 
@@ -931,19 +937,19 @@ sub evangelium {
 }
 
 
-sub offertorium {
+sub offertorium : ScriptFunc {
   my $lang = shift;
   return getitem('Offertorium', $lang);
 }
 
 
-sub secreta {
+sub secreta : ScriptFunc {
   my $lang = shift;
   my $t = oratio($lang, 'Secreta');
   return "\n$t";
 }
 
-sub prefatio {
+sub prefatio : ScriptFunc {
   my $lang = shift;
   my %pr = %{setupstring($datafolder, $lang, 'Ordo/Prefationes.txt')};
   my $name = ($version =~ /(1955|1960)/ && $rule =~ /Prefatio1960=([a-z0-9]+)/i) ? $1 : 
@@ -998,7 +1004,7 @@ sub norubr1($)
   return $t;
 }
 
-sub communicantes($)
+sub communicantes($) : ScriptFunc
 {
   my $lang = shift;
 
@@ -1032,7 +1038,7 @@ sub communicantes($)
   return norubr($t);
 }
 
-sub hancigitur {
+sub hancigitur : ScriptFunc {
   my $lang = shift;
   if ($dayname[0] !~ /Pasc[07]/) {return '';}
   my %pr = %{setupstring($datafolder, $lang, 'Ordo/Prefationes.txt')};
@@ -1062,7 +1068,7 @@ sub CheckBlessing { our $votive =~ /Defunct/i || our $rule =~ /no Benedictio/i; 
 
 sub CheckUltimaEv { our $rule =~ /no Ultima Evangelium/i; }
 
-sub communio {
+sub communio : ScriptFunc {
   my $lang = shift;
   return getitem('Communio', $lang);
 }
@@ -1076,7 +1082,7 @@ sub Flectamus
 
 # DominusVobiscum returns the prayer unless in IV Tempora when it's not usually used
 # the second argument 'opt' being true returns the prayer no matter what
-sub DominusVobiscum
+sub DominusVobiscum : ScriptFunc
 {
     my $lang = shift;
     my $opt = shift || 0;
@@ -1086,14 +1092,14 @@ sub DominusVobiscum
     return ($rule =~ /LectioL/ && !$opt)? '': "$prayers{$lang}->{'Dominus vobiscum'}";
 }
 
-sub postcommunio {
+sub postcommunio : ScriptFunc {
   my $lang = shift;
   my $str = oratio($lang, 'Postcommunio');
   if ($rule =~ /Super pop/i) {$str .= "_\n_\n" . getitem('Super populum', $lang);}
   return $str;
 }
 
-sub itemissaest
+sub itemissaest : ScriptFunc
 {
   our ($version, $rule);
 
@@ -1117,13 +1123,13 @@ sub placeattibi
 }  
 
 
-sub Communio_Populi {
+sub Communio_Populi : ScriptFunc {
   my $lang = shift;
 
   return htmlcall('Communio', $lang);
 }
 
-sub Ultimaev {
+sub Ultimaev : ScriptFunc {
   my $lang = shift;
   my ($t, %p);
 

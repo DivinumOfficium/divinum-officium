@@ -6,6 +6,12 @@ use utf8;
 # Date : 01-20-08
 # Divine Office Matins subroutines
 
+use FindBin qw($Bin);
+use lib "$Bin/..";
+
+# Defines ScriptFunc and ScriptShortFunc attributes.
+use horas::Scripting;
+
 $a=4;
 
 #*** invitatorium($lang)
@@ -541,7 +547,7 @@ sub lectiones {
 # input $num=index number for the lectio(1-9 or 1-3) and language
 # print the appropriate lectio collected from the winner or commune
 # handles the commemoratio as last 
-sub lectio {
+sub lectio : ScriptFunc {
   my $num = shift;          
   my $lang = shift;            
 
