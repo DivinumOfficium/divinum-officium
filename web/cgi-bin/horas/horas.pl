@@ -55,6 +55,7 @@ sub horas
     if ($version !~ /(Monastic|1570|1955|1960)/i) {ante_post('Ante');}
     else {$searchind++;}
 
+    my $alleluia_regex = qr/[(]*(?<!&)allel[uú][ij]a[\.\,]*[)]*/i;
     while ($ind1 < @script1 || $ind2 < @script2)
     {
         $expandind++;
@@ -68,7 +69,7 @@ sub horas
         # Suppress (Alleluia) during Quadrigesima.
         if ( $dayname[0] =~ /Quad/i && !Septuagesima_vesp() )
         {
-            $text1 =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;
+            $text1 =~ s/$alleluia_regex//g;
         } 
 
         $text1 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;  
@@ -83,7 +84,7 @@ sub horas
             $text2 = resolve_refs($text2, $lang2);    
             if ($dayname[0] =~ /Quad/i && !Septuagesima_vesp())
             {
-                $text2 =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;
+                $text2 =~ s/$alleluia_regex//ig;
             } 
 
             $text2 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
