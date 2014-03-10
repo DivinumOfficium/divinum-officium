@@ -56,6 +56,7 @@ our $duplex; #1= simplex 2=semiduplex, 3=duplex 0=rest
 our $sanctiname = 'Sancti';
 our $temporaname = 'Tempora';
 our $communename = 'Commune';
+our ($lang1, $lang2);
 
 #*** collect standard items
 require "$Bin/do_io.pl";
@@ -84,10 +85,16 @@ $setupsave =~ s/\~24/\"/g;
 if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'horas.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
+
+# We don't use the popuplang parameter, and instead use lang1 and lang2.
+
 eval($setup{'parameters'});
 eval($setup{'general'});  
 $popup = strictparam('popup');      
-$lang = strictparam('popuplang');
+
+$lang1 = strictparam('lang1') || $lang1;
+$lang2 = strictparam('lang2') || $lang2;
+
 $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
 
 $only = ($lang1 && $lang1 =~ /^$lang2$/i) ? 1 : 0;
@@ -126,7 +133,6 @@ PrintTag
  $text =~ s/\_/ /g;
  if ($lang1 =~ /Latin/i) {$text = jtoi($text);}
  print "<TD $background WIDTH=50% VALIGN=TOP>" . setfont($blackfont,$text) . "</TD>\n";
-  $lang = $lang2;
 
   if (!$only) {
     $text = resolve_refs($popup, $lang2);    
