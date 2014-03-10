@@ -6,6 +6,12 @@ use utf8;
 # Date : 01-20-08
 # Divine Office
 
+use FindBin qw($Bin);
+use lib "$Bin/..";
+
+# Defines ScriptFunc and ScriptShortFunc attributes.
+use horas::Scripting;
+
 my @lines;
 
 $a = 1;
@@ -155,7 +161,7 @@ sub resolve_refs {
     $line = $t[$it];
 
     #$ and & references
-    if ($line =~ /[\#\$\&]/) {   
+    if ($line =~ /^\s*[\#\$\&]/) {
       $line =~ s/\.//g;
       $line =~ s/\s+$//;
       $line =~ s/^\s+//;   
@@ -251,73 +257,16 @@ sub resolve_refs {
   return $resolved_block;
 }
 
-#*** sub expand($line, $lang, $antline)
-# for & references calls the sub
-# $ references are filled from Psalterium/Prayers file
-# antline to handle redding the beginning of psalm is same as antiphona
-# returns the expanded text or the link
-sub expand
-{
-    my $line = shift;          
-    my $lang = shift;
-    my $antline = shift;     
-
-    my $title = "";
-
-    #returns the popup link if not all mode $ for $references
-    if ($expand !~ /all/i && $line =~ /^\s*\$/) 
-    {return setlink($line, 0, $lang);}
-
-    #returns the link or text for & references
-    if ($line =~ /^\s*\&/)
-    {  
-        $line = $';   			 
-
-        # &[A-Z] popup link if not all
-        if ($expand !~ /all/i && ($line =~ /^[A-Z]/ || $line =~ /^pater_noster/)) 
-        {return setlink("&$line", 0, $lang);}
-
-        # &[a-z] popup links in not all or not psalm
-        elsif ($expand =~ /nothing/i) {return setlink("&$line", 0, $lang);}
-                        
-        #actual expansion for & references
-        #is the beginning of psalm the same as antiphona
-        if ($antline)
-        {
-            $antline =~ s/^\s*Ant\. //i;
-            $line =~ s/\)\s*$//;
-            $line = "&$line,\"$lang\",\"$antline\");";	 
-        }
-        #sub with parameter
-        elsif ($line =~ /\)\s*$/) {$line = "&$`,\"$lang\");";}
-        #other subs
-        else {$line = "&$line(\"$lang\");";}   
-
-        my $t = eval($line); 
-        return $t;
-    }
-
-    #actual expansion for $ references
-    $line =~ s/\$//;
-    $line =~ s/\s*$//;
- 
-    our %prayers;
-    my $text = $prayers{$lang}->{$line};     
-    $line =~ s/\n/\<BR\>\n/g;
-    $line =~ s/\<BR\>\n$/\n/;
-    return $text;
-}
-
 #*** Pater noster($lang)
 # returns the text of the prayer without Amen, setting V. and R. to the last 2 lines 
-sub pater_noster {
+sub pater_noster : ScriptFunc {
   our %prayers;
   return $prayers{shift()}->{'Pater_noster1'};
 }
 
 #*** teDeum($lang)
 # returns the text of the hymn
-sub teDeum {
+sub teDeum : ScriptFunc {
   my $lang = shift;
   our %prayers;
   return "\n_\n!Te Deum\n$prayers{$lang}->{'Te Deum'}";
@@ -326,7 +275,7 @@ sub teDeum {
 
 #*** Alleluia($lang)
 # return the text Alleluia or Laus tibi
-sub Alleluia { 
+sub Alleluia : ScriptFunc { 
   my $lang = shift;  
   our %prayers;
   my $text = $prayers{$lang}->{'Alleluia'};   
@@ -367,7 +316,7 @@ sub triduum_gloria_omitted()
 
 #*** Gloria
 # returns the text or the omit notice
-sub Gloria {
+sub Gloria : ScriptFunc {
   my $lang = shift;	 
   if (triduum_gloria_omitted()) {return "";}
   our %prayers;
@@ -375,7 +324,7 @@ sub Gloria {
   return $prayers{$lang}->{'Gloria'};
 }
 
-sub Gloria1 {   #* responsories
+sub Gloria1 : ScriptFunc {   #* responsories
   my $lang = shift;	 
   if ($dayname[0] =~ /(Quad5|Quad6)/i && $winner !~ /Sancti/i && $rule !~ /Gloria responsory/i)
     {return "";}
@@ -383,7 +332,7 @@ sub Gloria1 {   #* responsories
   return $prayers{$lang}->{'Gloria1'};    
 }
 
-sub Gloria2 { #*Invitatorium
+sub Gloria2 : ScriptFunc { #*Invitatorium
   my $lang = shift;	 
   if ($dayname[0] =~ /(Quad[56])/i) {return "";}
   our %prayers;
@@ -395,7 +344,7 @@ sub Gloria2 { #*Invitatorium
 
 #*** Dominus_vobiscum
 #returns the text of the 'Domine exaudi' for non priests
-sub Dominus_vobiscum {     
+sub Dominus_vobiscum : ScriptFunc {     
   my $lang = shift;
   our %prayers;
   my $text = $prayers{$lang}->{'Dominus'};
@@ -409,13 +358,13 @@ sub Dominus_vobiscum {
   return $text;
 }
 
-sub Dominus_vobiscum1 { #* prima after preces
+sub Dominus_vobiscum1 : ScriptFunc { #* prima after preces
   my $lang = shift;  
   if (preces('Dominicales et Feriales')&& !$priest) {$precesferiales = 1; }
   return Dominus_vobiscum($lang);
 }
 
-sub Dominus_vobiscum2 { #* officium defunctorum
+sub Dominus_vobiscum2 : ScriptFunc { #* officium defunctorum
   my $lang = shift;  
   if (!$priest) {$precesferiales = 1; }   
   return Dominus_vobiscum($lang);
@@ -424,7 +373,7 @@ sub Dominus_vobiscum2 { #* officium defunctorum
 
 #*** Benedicamus_Domino
 # adds Alleluia, alleluia for Pasc0
-sub Benedicamus_Domino {
+sub Benedicamus_Domino : ScriptFunc {
   my $lang = shift;    
   our %prayers;
   my $text = $prayers{$lang}->{'Benedicamus Domino'}; 
@@ -436,7 +385,7 @@ sub Benedicamus_Domino {
 
 #*** antiphona_finalis
 #return the text for the appropriate time
-sub antiphona_finalis {	 
+sub antiphona_finalis : ScriptFunc {
   my $lang = shift;
   my %ant = %{setupstring($datafolder, $lang, "Psalterium/Mariaant.txt")};	
   my $t = '';  
@@ -457,7 +406,7 @@ sub antiphona_finalis {
 # selects the text, attaches the head, 
 # sets red color for the introductory comments
 # returns the visible form 
-sub psalm {
+sub psalm : ScriptFunc {
   my @a = @_;			        
                     
   my ($num, $lang, $antline);	
@@ -910,7 +859,7 @@ sub translate {
 
 #*** ant_Benedictus($num, $lang)
 # returns the antiphona $num=1 = for beginning =2 for end
-sub ant_Benedictus
+sub ant_Benedictus : ScriptFunc
 {  
   my $num = shift;
   my $lang = shift;
@@ -941,7 +890,7 @@ sub ant_Benedictus
 
 #*** ant_Magnificat($num, $lang)
 # returns the antiphon for $num=1 the beginning, or =2 for the end
-sub ant_Magnificat
+sub ant_Magnificat : ScriptFunc
 {     
   my $num = shift;   #1=before, 2=after
   my $lang = shift;
@@ -985,7 +934,7 @@ sub ant_Magnificat
 
 #*** canticum($psnum, $lang)
 # returns the formatted text of Benedictus, Magnifificat or Nunc dimittis ($num=1-3)
-sub canticum {
+sub canticum : ScriptFunc {
   my $psnum = shift;
   my $lang = shift;   
   $psnum += 230;
@@ -1013,7 +962,7 @@ sub canticum {
 
 #*** martyrologium($lang)
 #returns the text of the martyrologium for the day
-sub martyrologium {
+sub martyrologium : ScriptFunc {
   my $lang = shift;
 
   my $t = setfont($largefont, "Martyrologium ") . setfont($smallblack, "(anticipated)") . "\n_\n";
@@ -1172,7 +1121,7 @@ sub laudes {
 
 #*** special($name, $lang)
 # used for 11-02 office
-sub special {
+sub special : ScriptFunc {
   my $name = shift;
   my $lang = shift;
   my $r = '';

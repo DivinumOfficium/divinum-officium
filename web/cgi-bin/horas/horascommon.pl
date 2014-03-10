@@ -10,6 +10,10 @@ use utf8;
 #use strict "refs";
 #use strict "subs";
 
+use FindBin qw($Bin);
+use lib "$Bin/..";
+use horas::Scripting qw(dispatch_script_function parse_script_arguments);
+
 my @lines;
 my $a = 4;
 
@@ -1805,4 +1809,71 @@ sub cache_prayers()
   $prayers{$lang2} = setupstring($datafolder, $lang2, "$dir/Prayers.txt");
 }
 
+
+
+#*** sub expand($line, $lang, $antline)
+# for & references calls the sub
+# $ references are filled from Psalterium/Prayers file
+# antline to handle redding the beginning of psalm is same as antiphona
+# returns the expanded text or the link
+sub expand
+{
+  use strict;
+
+  my ($line, $lang, $antline) = @_;
+
+  $line =~ s/^\s+//;
+  $line =~ s/\s+$//;
+
+  # Extract and remove the sigil indicating the required expansion type.
+  # TODO: Fail more drastically when the sigil is invalid.
+  $line =~ s/^([&\$])// or return $line;
+  my $sigil = $1;
+
+  our ($expand, $missa);
+  local $expand = $missa ? 'all' : $expand;
+
+  #returns the link or text for & references
+  if ($sigil eq '&')
+  {  
+    # Make popup link if we shouldn't expand.
+    if (
+      $expand =~ /nothing/i ||
+      ($expand !~ /all/i && ($line =~ /^(?:[A-Z]|pater_noster)/))
+    )
+    {
+      return setlink($sigil . $line, 0, $lang);
+    }
+
+    # Actual expansion for & references.
+
+    # Get function name and any parameters.
+    my ($function_name, $arg_string) = ($line =~ /(.*?)(?:[(](.*)[)])?$/);
+    my @args = (parse_script_arguments($arg_string), $lang);
+
+    # If we have an antiphon, pass it on to the script function.
+    if ($antline)
+    {
+        $antline =~ s/^\s*Ant\. //i;
+        push @args, $antline;
+    }
+
+    return dispatch_script_function($function_name, @args);
+  }
+  else  # Sigil is $, so simply look up the prayer.
+  {
+    if ($expand =~ /all/i)
+    {
+      #actual expansion for $ references
+      our %prayers;
+      return $prayers{$lang}->{$line};
+    }
+    else
+    {
+      return setlink($sigil . $line, 0, $lang);
+    }
+  }
+}
+
 1;
+
