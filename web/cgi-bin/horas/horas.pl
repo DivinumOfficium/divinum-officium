@@ -777,11 +777,6 @@ sub setlink
         return setfont($smallfont, $name);
     }
 
-    my $t = linkcode($name, $ind, $lang, $disabled);
-
-    $name = "\&gloria" if $name =~ /\&Gloria1/i;
-    $name = "\&Gloria" if $name =~ /\&Gloria2/i;
-
     if (
         ($name =~ /&Dominus_vobiscum1/i && !$priest  && !preces('Dominicales et Feriales'))
         || ($name =~ /&Dominus_vobiscum2/i && !$priest ))
@@ -790,18 +785,8 @@ sub setlink
         $name = translate($name, $lang) if $name !~ /^\#/;
         return setfont($smallfont, $name);
     }
-    elsif ( $name =~ /&Dominus/i && !$priest )
-    {
-        $name = '&Domine exaudi';
-    }
-    elsif ( $name =~ /&Dominus/ )
-    {
-        $name =~ s/[12]//;
-    }
-    elsif ( $name =~ /&Alleluia/i && $dayname[0] =~ /Quad/i && !Septuagesima_vesp() ) 
-    {
-        $name = '&Laus tibi';
-    }
+
+    my $t = linkcode($name, $ind, $lang, $disabled);
 
     if ( $name =~ /(Deus in adjutorium|Indulgentiam|Te decet)/i )
     {
@@ -812,21 +797,11 @@ sub setlink
         $suffix = " ++ $suffix";
     }
 
-    if (
-        $name =~ /\&Benedicamus_Domino/i &&
-        (
-            ($dayname[0] =~ /(Pasc0)/i && 
-            $hora =~ /(Laudes|Vespera)/i) || Septuagesima_vesp()
-        )
-    )
-    {  
-        $name = translate($name, $lang) if $name !~ /^\#/;
-        $name .= '. Alleluia, alleluia';  
-    }                                   
-    elsif ( $name !~ /^\#/ )
-    {
-        $name = translate($name, $lang);
-    } 
+    # Get index into translation table for the short text.
+    $name = get_link_name($name);
+
+    $name = translate($name, $lang) unless ($name =~ /^\#/);
+
 
     $name .= $suffix;	 
 
@@ -859,6 +834,51 @@ sub setlink
         $name = setfont($largefont, substr($name, 0, 1)) . substr($name, 1);
     }
     return "$t$name$after";
+}
+
+
+sub get_link_name
+{
+  my $name = shift;
+
+  our $priest;
+  our @dayname;
+  our $hora;
+
+  if($name =~ /\&Gloria1/i)
+  {
+    $name = "\&gloria";
+  }
+  elsif($name =~ /\&Gloria2/i)
+  {
+    $name = "\&Gloria";
+  }
+  elsif ($name =~ /&Dominus/i && !$priest)
+  {
+      $name = '&Domine exaudi';
+  }
+  elsif ($name =~ /&Dominus/)
+  {
+      $name =~ s/[12]//;
+  }
+  elsif ($name =~ /&Alleluia/i &&
+    $dayname[0] =~ /Quad/i &&
+    !Septuagesima_vesp())
+  {
+      $name = '&Laus tibi';
+  }
+  elsif (
+      $name =~ /\&Benedicamus[_ ]Domino/i &&
+      (
+          ($dayname[0] =~ /(Pasc0)/i && 
+          $hora =~ /(Laudes|Vespera)/i) || Septuagesima_vesp()
+      )
+  )
+  {  
+      $name = '&Benedicamus Domino alleluja';
+  } 
+  
+  return $name;
 }
 
 #*** translate($name)
