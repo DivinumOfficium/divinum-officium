@@ -70,7 +70,7 @@ sub script_attr_handler
   my ($attr, $symbol_ref, $code_ref, $name_override) = @_[0,1,2,4];
 
   register_script_function(
-    $name_override || *{$symbol_ref}{NAME},
+    $name_override || ((ref($symbol_ref) eq 'GLOB') && *{$symbol_ref}{NAME}),
     $code_ref,
     'short' => ($attr eq 'ScriptShortFunc'));
 }
