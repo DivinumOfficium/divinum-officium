@@ -25,6 +25,7 @@ use lib "$Bin/..";
 
 
 my %script_functions;
+my @deferred_functions;
 
 #*** sub register_script_function($function_name, $code_ref, %params)
 # Registers a new script function (the sort invoked with & in the scripts).
@@ -41,6 +42,38 @@ sub register_script_function
 
   $script_functions{$function_name}
     {$params{'short'} ? 'shortfunc' : 'func'} = $code_ref;
+}
+
+#*** sub register_deferred_functions
+# Attempts to register any remaining deferred functions. This only happens on
+# older perls; see script_attr_handler for the details. Returns the count of
+# new functions registered.
+sub register_deferred_functions
+{
+  my @still_deferred;
+
+  foreach my $deferred_ref (@deferred_functions)
+  {
+    # Register the function if we can find its glob now.
+    if(my $glob =
+      Attribute::Handlers::findsym(@{$deferred_ref}{'package', 'code'}, 'CODE'))
+    {
+      register_script_function(
+        *{$glob}{NAME},
+        $deferred_ref->{code},
+        %{$deferred_ref->{params}});
+    }
+    else
+    {
+      push @still_deferred, $deferred_ref;
+    }
+  }
+
+  my $count = @deferred_functions - @still_deferred;
+
+  @deferred_functions = @still_deferred;
+
+  return $count;
 }
 
 
@@ -60,19 +93,31 @@ sub register_script_function
 
 # TODO: Having these in UNIVERSAL is heavy-handed. Is there a way to declare
 # these in the calling package? (Exporting subsequently is too late, as
-# Attribute::Handlers has already run by then.) Maybe create these subs
-# dynamically in &import?
+# Attribute::Handlers has already run by then.)
 sub UNIVERSAL::ScriptFunc      : ATTR(CODE,BEGIN) { &script_attr_handler }
 sub UNIVERSAL::ScriptShortFunc : ATTR(CODE,BEGIN) { &script_attr_handler }
 
 sub script_attr_handler
 {
-  my ($attr, $symbol_ref, $code_ref, $name_override) = @_[0,1,2,4];
+  my ($pkg, $symbol_ref, $code_ref, $attr, $name_override) = @_;
 
-  register_script_function(
-    $name_override || ((ref($symbol_ref) eq 'GLOB') && *{$symbol_ref}{NAME}),
-    $code_ref,
-    'short' => ($attr eq 'ScriptShortFunc'));
+  my %params = ('short' => ($attr eq 'ScriptShortFunc'));
+
+  if($name_override || ref($symbol_ref) eq 'GLOB')
+  {
+    register_script_function(
+      $name_override || *{$symbol_ref}{NAME},
+      $code_ref,
+      %params);
+  }
+  else
+  {
+    # Older perls fire the attribute handler before the sub is placed in the
+    # symbol table, with the effect that we can't get the sub's name yet. Defer
+    # the actual registration till later.
+    push @deferred_functions,
+      {'package' => $pkg, 'code' => $code_ref, 'params' => \%params};
+  }
 }
 
 
@@ -88,8 +133,17 @@ sub dispatch_script_function
 {
   my ($function_name, @args) = @_;
 
-  croak "Invalid script function $function_name."
-    unless exists($script_functions{$function_name});
+  if(!exists($script_functions{$function_name}))
+  {
+    # No handler found. If there are any deferred functions still to be
+    # registered, do so and then try again.
+    if(register_deferred_functions())
+    {
+      return &dispatch_script_function;
+    }
+
+    croak "Invalid script function $function_name.";
+  }
 
   my $code_ref = $script_functions{$function_name}{'func'};
 
