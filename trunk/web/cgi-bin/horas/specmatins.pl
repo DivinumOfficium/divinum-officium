@@ -303,6 +303,8 @@ if ($dayname[0] =~ /Pasc/i && !exists($winner{'Ant Matutinum'}) && $rank < 5 ) {
  
 }
 		
+  # Here we begin the logic for an office of three lessons. On nine-lesson days
+  # we've already returned.
  
   if ($dayname[0] =~ /Pasc[1-6]/i && $version !~ /Trident/i) {  #??? ex 
     my $tde = ($version =~ /1960/ && ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek >3))) ? '1' : '';
@@ -324,7 +326,19 @@ if ($dayname[0] =~ /Pasc/i && !exists($winner{'Ant Matutinum'}) && $rank < 5 ) {
   else {setbuild1("One nocturn");}
   push (@s, '!Nocturn I');
   push (@s, "\n");
-  foreach $i (0,1,2) {antetpsalm($psalmi[$i], $i);}  
+
+  # In the office of the BVM on Saturday under the Tridentine rubrics, Psalm 99
+  # is replaced by Psalm 91, as the former is said at Lauds.
+  my @psalm_indices =
+    ($version =~ /Trident/i &&  # Tridentine rubrics, necessarily 3 lessons;
+      $dayofweek == 6 &&        # on a Saturday;
+      $rule !~ /ex C10/i &&     # not of the BVM;
+      $rule !~ /1 nocturn/i) ?  # not in the octaves of Easter or Pentecost:
+    (0, 8, 2) :                 # Replace Ps. 91 by Ps. 99;
+    (0, 1, 2);                  # otherwise, don't mess about.
+
+  foreach my $i (@psalm_indices) {antetpsalm($psalmi[$i], $i);}
+
   if ($version =~ /trident/i && $rule !~ /ex C10/i ) {
     if ($rule !~ /1 nocturn/i) {foreach $i (3,4,5) {antetpsalm($psalmi[$i], $i);}}
     $spec[0] = $psalmi[6];
