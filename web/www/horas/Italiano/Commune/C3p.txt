@@ -1,5 +1,5 @@
 [Name]
-Commune Martyrum Tempore Paschali
+Commune Plurimorum Martyrum Tempore Paschali
 
 [Rule]
 Psalmi Dominica
@@ -20,7 +20,7 @@ v. I giusti staranno con grande sicurezza dinanzi a coloro che li oppressero e d
 $Deo gratias
 
 [Hymnus Vespera]
-@Commune/C2:Hymnus Vespera
+@Commune/C3:Hymnus Laudes
 
 [Versum 1]
 V. Santi e giusti, gioite nel Signore alleluia.
@@ -30,14 +30,14 @@ R. Iddio vi ha scelti per sua eredità, alleluia.
 La luce perpetua risplenderà per i tuoi Santi, o Signore, e l'eternità dei secoli, alleluia.
 
 [Oratio]
-0 Dio onnipotente, guarda alla nostra debolezza e, poiché il peso nostra nostre colpe ci opprime, fa' che venga in nostro aiuto l'intercessione del glorioso tuo Martire San N.  
+Signore, che ci dai la grazia di celebrare l'entrata in cielo dei tuoi santi Martiri N. e N., concedici di godere la loro compagnia nell'eterna felicità del cielo. 
 $Per Dominum
 
 [Invit]
 Esultino i santi nel Signore, * alleluia.
 
 [Hymnus Matutinum]
-@Commune/C2:Hymnus Vespera
+@Commune/C3:Hymnus Matutinum
 
 [Ant Matutinum]
 I giusti staranno * con grande sicurezza davanti a coloro che li perseguitarono, alleluia.;;1
@@ -45,27 +45,28 @@ I giusti staranno * con grande sicurezza davanti a coloro che li perseguitarono,
 ;;3
 V. Santi e giusti, gioite nel Signore, alleluia.
 R. Iddio vi ha scelti per sua eredità, alleluia.
-Ecco * come sono annoverati tra i figli di Dio, e tra i santi è la loro sorte, alleluia.;;4
-;;5
-;;6
+Ecco * come sono annoverati tra i figli di Dio, e tra i santi è la loro sorte, alleluia.;;14
+;;15
+;;23
 V. La luce perpetua risplenderà per i tuoi santi, o Signore, alleluia.
 R. E l'eternità dei secoli, alleluia.
-La luce perpetua * risplenderà per i tuoi santi, o Signore, e l'eternità dei secoli, alleluia.;;10
-;;14
-;;20
+La luce perpetua * risplenderà per i tuoi santi, o Signore, e l'eternità dei secoli, alleluia.;;32
+;;33
+;;45
 V. Essi saranno incoronati di eterna letizia, alleluia.
 R. Avranno gaudio e consolazione, alleluia.
 
 [Lectio1]
-!Atti 20:17-24
-17 Da Mileto, Paolo mandò a chiamare i presbiteri della Chiesa di Efeso. 
-18 Arrivati e riuniti intorno a lui, disse loro: "Voi sapete in qual modo, dal primo giorno in cui venni in Asia, mi sono comportato con voi per tutto questo tempo,
-19 servendo al Signore con tutta umiltà, tra le lacrime e le tribolazioni che mi sopravvennero dalle insidie dei Giudei, 
-20 e come non mi sono mai sottratto a ciò che poteva essere utile, al compito di predicare a voi e di istruirvi in pubblico e nelle case, 
-21 inculcando ai Giudei e ai pagani la conversione a Dio e la fede nel Signore nostro Gesù Cristo. 
-22 Ecco ora che io, costretto dallo Spirito, vado a Gerusalemme. Quello che là mi accadrà non lo so, 
-23 se non che lo Spirito Santo in tutte le città mi avverte che mi attendono catene e patimenti. 
-24 Ma non temo nulla di queste cose, né ritengo la mia vita più preziosa di me stesso, purché io possa compiere la mia missione e il ministero ricevuto da Gesù, cioè rendere testimonianza al Vangelo della grazia di Dio".
+Dalla lettera di San Paolo apostolo ai Romani
+!Rom 8:12-19
+12 Siamo, o fratelli, debitori non alla carne, sicché viviamo secondo la carne.  
+13 Poiché se vivrete secondo la carne, morrete: se poi con lo spirito darete morte alle azioni della carne, vivrete. 
+14 Tutti quelli infatti  che sono mossi dallo Spirito di Dio, sono figliuoli di Dio. 
+15 Perocché non avete ricevuto lo spirito di servitù per di bel nuovo temere, ma avete ricevuto lo spirito di adozione in figliuoli, mercè cui gridiamio: Abba (Padre). 
+16 Poiché lo stesso Spirito fa fede al nostro spirito, che noi siamo figliuoli di Dio. 
+17 E se (siamo) figliuoli, (siamo) anche eredi:  eredi di Dio e coeredi di Cristo:  se però patiamo con lui per essere con lui glorificati.
+18 Perocché io tengo per certo che i patimenti del tempo presente non hanno proporzione colla futura gloria che si manifesterà in noi. 
+19 Poiché questo mondo creato sta alle vedette, aspettando la manifestazione dei figliuoli di Dio. 
 
 [Responsory1]
 R. Beato l'uomo che teme il Signore, alleluia:
@@ -74,14 +75,14 @@ V. Nella sua casa vi saranno gloria e ricchezze, e la sua giustizia rimarrà nei
 R. Nei suoi precetti molto si delizia, alleluia, alleluia, alleluia.
 
 [Lectio2]
-Atti 20:25-31
-25 "Ed ora, ecco, io so che voi tutti, tra i quali sono passato predicando il regno di Dio, non vedrete più la mia faccia. 
-26 Ecco perché vi chiamo oggi quali testimoni che io sono innocente del sangue di tutti. 
-27 Infatti, non mi sono mai rifiutato di annunziarvi interamente il disegno di Dio. 
-28 Pensate a voi e a tutto il gregge, in mezzo al quale lo Spirito Santo vi pose quali vescovi per reggere la Chiesa di Dio, da lui conquistata col proprio sangue. 
-29 Io so che dopo la mia partenza entreranno tra voi dei lupi rapaci che non risparmieranno il gregge. 
-30 E anche tra voi si leveranno degli uomini a insegnare cose perverse, per trascinarsi dietro discepoli. 
-31 Perciò vi dico di vegliare, ricordandovi come, per tre anni, non mi sono stancato, giorno e notte, di ammonire, con lacrime, ciascuno di voi".
+!Rom 8:28-34
+28 Ora noi sappiamo che tutte le cose tornano a bene per coloro che amano Dio, per coloro, i quali secondo il proponimento (di lui) sono stati chiamati santi. 
+29 Poiché coloro che egli ha preveduti, li ha anche predestinati ad essere conformi all'immagine del Figliuol suo, ond'egli sia il primogenito tra molti fratelli. 
+30 Coloro poi che ha predestinati, li ha anche chiamati: e quelli che ha chiamati, li ha anche giustificati: e quelli che ha giustificati, li ha anche glorificati.
+31 Che diremo adunque a tali cose? Se Dio è per noi, chi sarà contro di noi? 
+32 Egli che non risparmiò nemmeno il proprio Figliuolo, ma lo ha dato a morte per tutti noi: come non ci ha donate ancora con esso tutte le cose? 
+33 Chi porterà accusa contro gli eletti di Dio? Dio è, che giustifica, 
+34 Chi è che condanni? Cristo Gesù è quegli che è morto, anzi che è anche risuscitato, che sta alla destra di Dio, che anche sollecita per noi.
 
 [Responsory2]
 R. La vostra tristezza, alleluia, 
@@ -90,14 +91,12 @@ V. Il mondo godrà, voi invece sarete tristi. Ma la vostra tristezza.
 R. Si cambierà in gioia, alleluia, alleluia.
 
 [Lectio3]
-!Atti 20:32-38
-32 "Ed ora vi affido a Dio e alla sua dottrina di grazia; egli può benissimo edificare e darvi l'eredità tra i suoi santi.     
-33 Non ho desiderato l'oro, l'argento le vesti di nessuno. 
-34 Voi stessi siete testimoni, che per le necessità mie e dei miei compagni faticarono queste mie mani.
-35 Vi ho mostrato in tutte le maniere che penando in questa forma bisogna soccorrere i poveri e ricordarsi delle parole del Signore, il quale disse: C'è più felicità a dare che a ricevere". 
-36 Detto questo, postosi in ginocchio, pregò con tutti loro: 
-37 e tutti scoppiarono in gran pianto, e gettandosi al collo di Paolo lo baciavano, 
-38 desolati soprattutto per la parola da lui detta: che non avrebbero più riveduto la sua faccia. E lo accompagnarono fino alla nave.
+!Rom 8:35-39    
+35 Chi ci dividerà adunque dalla carità dì Cristo? forse la tribolazione? forse l'angustia? forse la fame? forse la nudità? forse il pericolo? forse la persecuzione? forse la spada? 
+36 (Conforme sta scritto: Per te noi siamo ogni dì messi a morte siam riputati come pecore da macello). 
+37 Ma di tutte queste cose siam più che vincitori per colui che ci ha amati. 
+38 Poichè io son sicuro che né la morte, né la vita, né gli angeli, né i principati, né le virtù, né ciò che ci sovrasta, né quel che ha da essere, né la fortezza, 
+39 Né l'altezza, né la profondità, né alcun'altra cosa creata potrà dividerci dalla carità di Dio, la quale è in Cristo Gesù Signor nostro.
 
 [Responsory3]
 R. Preziosa è agli occhi del Signore, alleluia,
@@ -187,7 +186,7 @@ v. I giusti staranno con grande sicurezza dinanzi a coloro che li oppressero e d
 $Deo gratias
 
 [Hymnus Laudes]
-@Commune/C2:Hymnus Laudes
+@Commune/C3:Hymnus Laudes
 
 [Versum 2]
 V. Preziosa è agli occhi del Signore, alleluia,
@@ -248,40 +247,16 @@ _
 V. Preziosa è agli occhi del Signore, alleluia,
 R. La morte dei suoi santi, alleluia.
 
+[Ant Vespera 3]
+Questi sono i Santi * che per la legge di Dio sacrificarono i loro corpi e lavarono le loro anime nel sangue dell'Agnello.;;109
+I Santi con la fede * hanno vinto i regni, praticata la giustizia e conseguito le promesse.;;110
+La giovinezza dei Santi si rinnoverà come quella dell'aquila: * essi fioriranno come il giglio nella città del Signore.;;111
+Iddio asciugherà * ogni lacrima dagli occhi dei Santi: e non vi sarà più né lutto, né grida, né dolore alcuno, poiché le cose di prima sono passate.;;112
+Nel regno dei cieli * è l'abitazione dei Santi: e i1 loro riposo dura in eterno.;;115
+
 [Versum 3]
 V. Preziosa è agli occhi del Signore, alleluia,
 R. La morte dei suoi santi, alleluia.
 
 [Ant 3]
 Santi e giusti, * gioite nel Signore, alleluia, Iddio vi ha scelti per sua eredità, alleluia.
-
-[Lectio41]
-Dalla lettera di san Cipriano vescovo e martore ai martiri e confessori.
-!Libro 2, Lettera 6.
-Con quali lodi vi esalterò, martiri fortissimi? Con quale canto della voce abbellirò la forza del vostro petto e la perseveranza della fide? Avete tollerato la tortura più dura fino al massimo della gloria:  non avete ceduto ai supplizi, ma piuttosto i supplizi hanno ceduto a voi. Le corone diedero ai dolori quella fine, che i tormenti non davano. A ciò la tortura continuò a lungo più severa, ma non da far cadere la fede stabile, ma da mandare più in fretta gli uomini di Dio a Dio.
-
-[Responsory41]
-V. La luce perpetua risplenderà per i tuoi santi, o Signore,
-* e l'eternità dei secoli, alleluia, alleluia.
-V. Essi saranno incoronati di eterna letizia:  avranno gaudio e consolazione.
-R. E l'eternità dei secoli, alleluia, alleluia.
-
-[Lectio51]
-La moltitudine dei presenti vedette ed ammirò la battaglia celeste, la battaglia di Dio, battaglia spirituale, conflitto di Cristo: che i suoi servi stavano in piedi a voce libera, colla mente incorrotta,per potenza divina, nudi difatti contro i proiettili del mondo, ma armati con le armi della fede fervorosa. Stettero torturati più forti dei torturatori: le membra battute e dilaniate vinsero i battitori e gli uncini dilanianti. La piaga ulcerante a lungo ripetuta non poté superare la fede inespugnabile, benché, rotta la struttura delle viscere, venivano torturata nei servi di Dio non più le membra, ma le ferite! Il sangue fluiva, per estinguere l'incendio della persecuzione, per sopire le fiamme ed i fuochi della geenna con glorioso coagulo.
-
-[Responsory51]
-R. Nei suoi servi, alleluia,
-* Iddio si consolerà, alleluia.
-V. Il Signore giudicherà il suo popolo, e nei suoi servi.
-R. Iddio si consolerà, alleluia.
-
-[Lectio61]
-O quale fu quello spettacolo per il Signore, quanto sublime, quanto grande, quanto gradito agli occhi di Dio per il giuramento e la devozione del suo soldato: come è scritto nei Salmi, dove lo Spirito Santo ci parla ed al contempo ci ammonisce: "Preziosa è agli occhi del Signore, la morte dei suoi santi." Preziosa è questa morte, che compra l'immortalità col prezzo del suo sangue; che ricevette la corona del culmine della virtù. Quanto lieto fu ivi Cristo, quanto volentieri compatte in tali suoi servi, e vinse da protettore della fede, dando tanto ai credenti, quanto credi di ottenere chi riceve! Fu presente alla sua battaglia, alzò i combattenti e proclamatori del suo nome, li confortò, li animò. E Colui che vinse una volta per noi la morte, sempre la vince in noi.
-
-[Responsory61]
-R. Figlie di Gerusalemme, venite e vedete i martiri con le corone con cui il Signore li ha incoronati
-* nel giorno della solennità e della gioia, alleluia.
-V.  Perché ha rafforzate le sbarre delle tue porte e ha benedetto in te i tuoi figli.
-R. Nel giorno della solennità e della gioia, alleluia.
-&Gloria
-R. Nel giorno della solennità e della gioia, alleluia.
