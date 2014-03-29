@@ -159,11 +159,15 @@ sub dispatch_script_function
 # strings (with no escaping functionality) are supported.
 sub parse_script_arguments
 {
+  my $list_str = shift;
+
+  return () unless defined($list_str);
+
   # Extract individual parameters from the argument string.
   return
     map {/'(.*)'|(-?\d+)/; $1 || $2}  # Match string or number.
     split /,(?=(?:[^']|'[^']*')*$)/,  # Comma followed by balanced quotes.
-    shift;
+    $list_str;
 }
 
 1;
