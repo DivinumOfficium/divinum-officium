@@ -386,20 +386,30 @@ sub specials {
     }
 	}   	  
 
-	if ($item =~ /Oratio/i && $hora =~ /(prima|completorium)/i) {
-	  if ($rule =~ /Limit.*?Oratio/) {	#Triduum prima completorium
-	    setcomment($label, 'Preces',2, $lang, '');
-        oratio($lang, $month, $day); 
-	    $skipflag = 1;
-      next;
-      }
-	}
+    if ($item =~ /Oratio/i)
+    {
+      # Normally we only handle the Oratio(nes) section at the hours other than
+      # Prime and Compline, but during the Triduum, we do it for those hours,
+      # too. The test for this case is somewhat oblique.
+      my $prime_or_compline = ($hora =~ /Prima|Completorium/i);
+      my $triduum = ($rule =~ /Limit.*?Oratio/);
+      my %oratio_params;
 
-	if ($item =~ /Oratio/i && $hora !~ /(prima|completorium)/i) {
-	   oratio($lang, $month, $day); 
-	   next;
-	}
-  
+      # Skip the usual stuff at Prime and Compline in the Triduum.
+      if ($prime_or_compline && $triduum)
+      {
+        $skipflag = 1;
+        $oratio_params{special} = 1;
+      }
+
+      # Generate the prayer(s) together with the title.
+      if (!$prime_or_compline || $triduum)
+      {
+        oratio($lang, $month, $day, %oratio_params);
+        next;
+      }
+    }
+
   if ($item =~ /Suffragium/i && $hora =~ /Laudes|Vespera/i) {    
       if (!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i) {
 	      setcomment($label, 'Suffragium', 0, $lang);
@@ -963,20 +973,28 @@ sub antetpsalm {
 }
 
 
-#*** oration($lang)
-#input language
-# collects and prints the appropriate oratio and commemorationes
+#*** oratio($lang, $month, $day, %params)
+# Collects and prints the appropriate oratio and commemorationes. If
+# $params{special} is set, the emitted title indicates that the prayers have a
+# special form.
 sub oratio
 {
     my $lang = shift;	
     my $month= shift;
     my $day = shift; 
+    my %params = @_;
 
     our $addconclusio = '';
                      
     my %w = (columnsel($lang)) ? %winner : %winner2;
-    $comment = ($winner =~ /sancti/i) ? 3 : 2;
-    setcomment($label, 'Source', $comment, $lang);        
+
+    # Output the title.
+    setcomment(
+      $label,
+      $params{special} ?
+        ('Preces', 2)  :
+        ('Source', ($winner =~ /sancti/i) ? 3 : 2),
+      $lang);
 
     $ind = ($hora =~ /vespera/i) ? $vespera : 2; 	
 
