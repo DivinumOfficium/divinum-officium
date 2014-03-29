@@ -461,10 +461,15 @@ sub specials {
   if ($rule =~ /Laudes Litania/i && $winner =~ /Sancti/ && $day != 25) {$rule =~ s/Laudes Litania//ig;}
 
 
+    # Insert the title.
+    $label = translate_label($label, $lang);
+    push (@s, $label);
+
+    # The remaining special cases come *after* the title has been inserted.
+
   if ($item =~ /Conclusio/i &&  $hora =~ /Laudes/i && ($month == 4 || $version !~ /1960/) && ($rule =~ /Laudes Litania/i || 
     $commemoratio{Rule} =~ /Laudes Litania/i || $scriptura{Rule} =~ /Laudes Litania/i || $flag) )  {
       my %w =  %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};  
-      push(@s, "\n");
 	  my $lname = ($version =~ /monastic/i) ? 'LitaniaM' : 'Litania';
   	  if ($version =~ /1570/ && exists($w{LitaniaT})) {$lname = 'LitaniaT';}
 	  push(@s, $w{$lname});
@@ -472,18 +477,14 @@ sub specials {
 	  $skipflag = 1;
   }
 
+    # Special conclusions, e.g. on All Souls' day.
     if ($item =~ /Conclusio/i && $rule =~ /Special Conclusio/i) {
       my %w = (columnsel($lang)) ? %winner : %winner2; 
       push(@s, $w{Conclusio});
       $skipflag = 1;
     }
 
-    # Insert the title.
-    $label = translate_label($label, $lang);	
-    push (@s, $label);	
-    
-    # Set special conclusion when Office of the Dead follows, *after*
-    # having inserted the (usual) title.
+    # Set special conclusion when Office of the Dead follows.
     if ($item =~ /Conclusio/i && $dirge && $commune !~ /C9/i && $votive !~ /C9/i)
     {
       our %prayers;
