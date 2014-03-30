@@ -126,8 +126,9 @@ sub gettext
   
   my %popup_files =
   (
-    Ante => 'Ante.txt',
-    Post => 'Post.txt'
+    Ante      => 'Ante.txt',
+    Communio  => 'Communio.txt',
+    Post      => 'Post.txt'
   );
 
   # File must be one of those explicitly permitted.
