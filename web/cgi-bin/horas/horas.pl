@@ -303,15 +303,13 @@ sub Septuagesima_vesp
 # owing to the Triduum.
 sub triduum_gloria_omitted()
 {
-  our (@dayname, $dayofweek, $version, $hora);
+  our (@dayname, $dayofweek, $tvesp);
 
+  # TODO: A much more elegant check would be to see what *today's office* is,
+  # checking for Quad6-[456], but this information is not reliably available.
   return $dayname[0] =~ /Quad6/i &&
     $dayofweek > 3 &&
-    !(
-      $version !~ /(1955|1960)/i &&
-      $dayofweek == 6 &&
-      $hora =~ /(Vespera|Completorium)/i
-    );
+    $tvesp == 3;
 }
 
 #*** Gloria
