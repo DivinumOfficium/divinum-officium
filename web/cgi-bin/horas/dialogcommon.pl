@@ -303,35 +303,29 @@ sub setupstring($$$%)
     if ($lang eq 'English')
     {
       # English layers on top of Latin.
-      $base_sections = setupstring($basedir, 'Latin', $fname, 'resolve@' => RESOLVE_WHOLEFILE);
+      $base_sections = setupstring($basedir, 'Latin', $fname, 'resolve@' => RESOLVE_NONE);
     }
     elsif ($lang && $lang ne 'Latin')
     {
       # Other non-Latin languages layer on top of English.
-      $base_sections = setupstring($basedir, 'English', $fname, 'resolve@' => RESOLVE_WHOLEFILE);
+      $base_sections = setupstring($basedir, 'English', $fname, 'resolve@' => RESOLVE_NONE);
     }
     
     # Get the top layer.
-    if (-e $fullpath)
+    $new_sections = setupstring_parse_file($fullpath, $basedir, $lang) if (-e $fullpath);
+    
+    if(%$new_sections)
     {
-      $new_sections = setupstring_parse_file($fullpath, $basedir, $lang);
-      
-      # Do whole-file inclusions.
-      while (my ($incl_fname, undef, $incl_subst) = (${$new_sections}{'__preamble'} =~ /$inclusionregex/gc))
-      {
-        $incl_fname .= '.txt';
-        if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
-        my $incl_sections = setupstring($basedir, $lang, $incl_fname, %params);
-        ${$new_sections}{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
-      }
-      
-      delete ${$new_sections}{'__preamble'};
+      # Fill in the missing things from the layer below.
+      ${$new_sections}{'__preamble'} .= "\n${$base_sections}{'__preamble'}";
+      ${$new_sections}{$_} ||= ${$base_sections}{$_} foreach (keys(%{$base_sections}));
+    }
+    else
+    {
+      $new_sections = $base_sections;
     }
     
-    # Fill in the missing things from the layer below.
-    ${$new_sections}{$_} ||= ${$base_sections}{$_} foreach (keys(%{$base_sections}));
-    
-    return '' unless keys(%{$new_sections});
+    return '' unless %$new_sections;
     
     # Cache the final result.
     ${$inclusioncache}{$fullpath} = $new_sections;
@@ -340,22 +334,22 @@ sub setupstring($$$%)
   # Take a copy.
   my %sections = %{${$inclusioncache}{$fullpath}};
  
+  $params{'resolve@'} = RESOLVE_ALL unless (exists $params{'resolve@'});
+  
   # Do whole-file inclusions.
   unless ($params{'resolve@'} == RESOLVE_NONE)
   {
-    while (my ($incl_fname, undef, $incl_subst) = ($sections{'__preamble'} =~ /$inclusionregex/gc))
+    while ($sections{'__preamble'} =~ /$inclusionregex/gc)
     {
-      $incl_fname .= '.txt';
+      my $incl_fname .= "$1.txt";
       if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
       my $incl_sections = setupstring($basedir, $lang, $incl_fname, 'resolve@' => RESOLVE_NONE);
       $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
     }
+  
+    delete $sections{'__preamble'};
   }
-  
-  delete $sections{'__preamble'};
 
-  $params{'resolve@'} = RESOLVE_ALL unless (exists $params{'resolve@'});
-  
   if ($params{'resolve@'} == RESOLVE_ALL)
   {
     # Iterate over all sections, resolving inclusions. We make sure we
@@ -415,20 +409,10 @@ sub setupstring_parse_file($$$)
   # regexes for parsing lines.
   my $conditional_regex = conditional_regex();
   
-  my $blankline_regex = /^\s*_?\s*$/;
 
   my %sections;
   my $key = '__preamble';
   my $use_this_section = 1;
-  
-  use constant 'COND_NOT_YET_AFFIRMATIVE' => 0;
-  use constant 'COND_AFFIRMATIVE' => 1;
-  use constant 'COND_DUMMY_FRAME' => 2;
-  
-  my (@conditional_stack, @conditional_offsets);
-  
-  push @conditional_stack, [COND_AFFIRMATIVE, SCOPE_NEST];
-  push @conditional_offsets, -1;
   
   foreach my $line (@filelines)
   {
@@ -443,10 +427,6 @@ sub setupstring_parse_file($$$)
         $use_this_section = 1;
         $key = $1;
         $sections{$key} = [];
-        
-        # Reset conditional state.
-        @conditional_stack = ([COND_AFFIRMATIVE, SCOPE_NEST]);
-        @conditional_offsets = (-1);
       }
       else
       {
@@ -455,111 +435,152 @@ sub setupstring_parse_file($$$)
     }
     elsif ($use_this_section)
     {
-      # Check for a new condition.
-      if ($line =~ /^\s*$conditional_regex\s*(.*)$/o)
-      {
-        my ($strength, $result, $backscope, $forwardscope) = parse_conditional($1, $2, $3);
-        
-        # Sequel.
-        $line = $4;
-        
-        # If the parent conditional is not affirmative, then the new one
-        # must break out of the nest, as it were.
-        if (${$conditional_stack[-1]}[0] == COND_AFFIRMATIVE || $strength >= $#conditional_offsets)
-        {
-          if ($strength >= $#conditional_offsets)
-          {
-            @conditional_stack = ();
-          }
-          elsif ($strength >= $#conditional_offsets - $#conditional_stack)
-          {
-            $#conditional_stack = $#conditional_offsets - $strength - 1;
-          }
-          
-          if ($result)
-          {
-            # Find the nearest insurmountable fence.
-            my $fence = $#conditional_offsets >= $strength ?
-                $conditional_offsets[$strength] :
-                -1;
-            
-            # Handle the backward scope.
-            if ($backscope == SCOPE_LINE)
-            {
-              # Remove preceding line.
-              pop @{$sections{$key}} if $#{$sections{$key}} > $fence;
-            }
-            elsif ($backscope == SCOPE_CHUNK)
-            {            
-              # Remove preceding consecutive non-whitespace lines.
-              pop @{$sections{$key}} while $#{$sections{$key}} > $fence && ${$sections{$key}}[-1] !~ /^\s*_?\s*$/;
-              
-              # Remove any whitespace lines.
-              pop @{$sections{$key}} while $#{$sections{$key}} > $fence && ${$sections{$key}}[-1] =~ /^\s*_?\s*$/;
-            }
-            elsif ($backscope == SCOPE_NEST)
-            {
-              # Truncate output at the point to which we have to backtrack.
-              $#{$sections{$key}} = $fence;
-            }
-          }
-          
-          # Having backtracked, null forward scope now behaves like a
-          # satisfied conditional with nesting forward scope.
-          if ($forwardscope == SCOPE_NULL)
-          {
-            $forwardscope = SCOPE_NEST;
-            $result = 1;
-          }
-          
-          if ($result)
-          {
-            # Remember where we encountered this conditional.
-            $conditional_offsets[$_] = $#{$sections{$key}} foreach (0..$strength);
-          }
-          
-          # Push dummy frame(s) onto the conditional stack to bring it
-          # into sync with the strength.
-          push @conditional_stack, [COND_DUMMY_FRAME, $forwardscope]
-            while ($strength < $#conditional_offsets - $#conditional_stack - 1);
-          
-          # Push the new conditional frame onto the stack.
-          push @conditional_stack,
-            [$result ? COND_AFFIRMATIVE : COND_NOT_YET_AFFIRMATIVE,
-            $forwardscope];
-        }
-        
-        # Parse anything left over.
-        $line ? redo : next;
-      }
-      
-      # Handle escaped lines.
-      $line =~ s/^~//;
-      
-      # Add line to array for later concatenation.
-      push @{$sections{$key}}, "$line\n" if (${$conditional_stack[-1]}[0] == COND_AFFIRMATIVE);
-      
-      # Check to see whether we'll fall off the end of the current scope
-      # after this line.
-      while (${$conditional_stack[-1]}[1] == SCOPE_LINE ||
-        (${$conditional_stack[-1]}[1] == SCOPE_CHUNK && $line =~ $blankline_regex))
-      {
-        do
-        {
-          pop @conditional_stack;
-        } while(@conditional_stack && ${$conditional_stack[-1]}[0] == COND_DUMMY_FRAME);
-        
-        # If we've emptied the conditional stack, push an always-true,
-        # unbounded frame to allow uniformity in testing.
-        push @conditional_stack, [COND_AFFIRMATIVE, SCOPE_NEST] if (@conditional_stack == 0);
-      }
+      push @{$sections{$key}}, $line;
     }
   }
   
-  # Flatten sections.
-  $sections{$_} = join '', @{$sections{$_}} foreach (keys %sections);
+  # Process conditionals in and flatten each section.
+  foreach my $key (keys %sections)
+  {
+    # The extra empty string gives us a newline at the end.
+    $sections{$key} =
+      join "\n", (process_conditional_lines(@{$sections{$key}}), '');
+  }
 
   return \%sections;
+}
+
+
+### process_conditional_lines(@lines)
+# Returns the array resulting from processing conditional directives in the
+# array @lines of lines.
+sub process_conditional_lines
+{
+  my $conditional_regex = conditional_regex();
+  my @output;
+
+  use constant 'COND_NOT_YET_AFFIRMATIVE' => 0;
+  use constant 'COND_AFFIRMATIVE' => 1;
+  use constant 'COND_DUMMY_FRAME' => 2;
+  
+  my @conditional_stack = ([COND_AFFIRMATIVE, SCOPE_NEST]);
+  my @conditional_offsets = (-1);
+
+  my $blankline_regex = qr/^\s*_?\s*$/;
+  my $conditional_regex = conditional_regex();
+
+  foreach (@_)
+  {
+    # Break the aliasing.
+    my $line = $_;
+
+    # Check for a new condition.
+    if ($line =~ /^\s*$conditional_regex\s*(.*)$/o)
+    {
+      my ($strength, $result, $backscope, $forwardscope) =
+        parse_conditional($1, $2, $3);
+      
+      # Sequel.
+      $line = $4;
+      
+      # If the parent conditional is not affirmative, then the new one
+      # must break out of the nest, as it were.
+      if (${$conditional_stack[-1]}[0] == COND_AFFIRMATIVE ||
+        $strength >= $#conditional_offsets)
+      {
+        if ($strength >= $#conditional_offsets)
+        {
+          @conditional_stack = ();
+        }
+        elsif ($strength >= $#conditional_offsets - $#conditional_stack)
+        {
+          $#conditional_stack = $#conditional_offsets - $strength - 1;
+        }
+        
+        if ($result)
+        {
+          # Find the nearest insurmountable fence.
+          my $fence = $#conditional_offsets >= $strength ?
+              $conditional_offsets[$strength] :
+              -1;
+          
+          # Handle the backward scope.
+          if ($backscope == SCOPE_LINE)
+          {
+            # Remove preceding line.
+            pop @output if $#output > $fence;
+          }
+          elsif ($backscope == SCOPE_CHUNK)
+          {            
+            # Remove preceding consecutive non-whitespace lines.
+            pop @output
+              while($#output > $fence && $output[-1] !~ $blankline_regex);
+            
+            # Remove any whitespace lines.
+            pop @output
+              while($#output > $fence && $output[-1] =~ $blankline_regex);
+          }
+          elsif ($backscope == SCOPE_NEST)
+          {
+            # Truncate output at the point to which we have to backtrack.
+            $#output = $fence;
+          }
+        }
+        
+        # Having backtracked, null forward scope now behaves like a
+        # satisfied conditional with nesting forward scope.
+        if ($forwardscope == SCOPE_NULL)
+        {
+          $forwardscope = SCOPE_NEST;
+          $result = 1;
+        }
+        
+        if ($result)
+        {
+          # Remember where we encountered this conditional.
+          $conditional_offsets[$_] = $#output foreach (0..$strength);
+        }
+        
+        # Push dummy frame(s) onto the conditional stack to bring it
+        # into sync with the strength.
+        push @conditional_stack, [COND_DUMMY_FRAME, $forwardscope]
+          while ($strength < $#conditional_offsets - $#conditional_stack - 1);
+        
+        # Push the new conditional frame onto the stack.
+        push @conditional_stack,
+          [$result ? COND_AFFIRMATIVE : COND_NOT_YET_AFFIRMATIVE,
+          $forwardscope];
+      }
+      
+      # Parse anything left over.
+      next unless $line;
+    }
+    
+    # Handle escaped lines.
+    $line =~ s/^~//;
+    
+    # Add line to output array if it's not in a failed conditional block.
+    push @output, $line if (${$conditional_stack[-1]}[0] == COND_AFFIRMATIVE);
+    
+    # Check to see whether we'll fall off the end of the current scope
+    # after this line.
+    while (${$conditional_stack[-1]}[1] == SCOPE_LINE ||
+      (${$conditional_stack[-1]}[1] == SCOPE_CHUNK && $line =~ $blankline_regex))
+    {
+      do
+      {
+        pop @conditional_stack;
+      } while(@conditional_stack &&
+        ${$conditional_stack[-1]}[0] == COND_DUMMY_FRAME);
+      
+      # If we've emptied the conditional stack, push an always-true,
+      # unbounded frame to allow uniformity in testing.
+      push @conditional_stack, [COND_AFFIRMATIVE, SCOPE_NEST]
+        if (@conditional_stack == 0);
+    }
+  }
+
+  return @output;
 }
 
 #*** do_inclusion_substitutions(\$text, $substitutions)

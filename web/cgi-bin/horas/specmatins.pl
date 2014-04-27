@@ -6,6 +6,12 @@ use utf8;
 # Date : 01-20-08
 # Divine Office Matins subroutines
 
+use FindBin qw($Bin);
+use lib "$Bin/..";
+
+# Defines ScriptFunc and ScriptShortFunc attributes.
+use horas::Scripting;
+
 $a=4;
 
 #*** invitatorium($lang)
@@ -40,7 +46,7 @@ sub invitatorium {
   if ($w) {$ant = chompd($w); $comment = $c;} 
 
 
-  setcomment($label, 'Source', $comment, $lang, 'Antiphona');	 
+  setcomment($label, 'Source', $comment, $lang, 'Antiph.');	 
   
   $ant =~ s/^.*?\=\s*// ;
   $ant = chompd($ant);
@@ -103,7 +109,7 @@ sub hymnus {  #matutinum
   setbuild("Psalterium/Matutinum Special", $name, 'Hymnus ord'); 
  
  
-  my $hmn = (!exists($winner{'Hymnus Matutinum'}) && ($version =~ /1960/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /(C4|C5)/) 
+  my $hmn = (!exists($winner{'Hymnus Matutinum'}) && ($version =~ /1955|1960/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /(C4|C5)/) 
 	  ? 'Hymnus1' : 'Hymnus';      
  
   my ($h, $c) = getproprium("$hmn Matutinum", $lang, $seasonalflag, 1);
@@ -297,6 +303,8 @@ if ($dayname[0] =~ /Pasc/i && !exists($winner{'Ant Matutinum'}) && $rank < 5 ) {
  
 }
 		
+  # Here we begin the logic for an office of three lessons. On nine-lesson days
+  # we've already returned.
  
   if ($dayname[0] =~ /Pasc[1-6]/i && $version !~ /Trident/i) {  #??? ex 
     my $tde = ($version =~ /1960/ && ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek >3))) ? '1' : '';
@@ -318,7 +326,19 @@ if ($dayname[0] =~ /Pasc/i && !exists($winner{'Ant Matutinum'}) && $rank < 5 ) {
   else {setbuild1("One nocturn");}
   push (@s, '!Nocturn I');
   push (@s, "\n");
-  foreach $i (0,1,2) {antetpsalm($psalmi[$i], $i);}  
+
+  # In the office of the BVM on Saturday under the Tridentine rubrics, Psalm 99
+  # is replaced by Psalm 91, as the former is said at Lauds.
+  my @psalm_indices =
+    ($version =~ /Trident/i &&  # Tridentine rubrics, necessarily 3 lessons;
+      $dayofweek == 6 &&        # on a Saturday;
+      $rule !~ /ex C10/i &&     # not of the BVM;
+      $rule !~ /1 nocturn/i) ?  # not in the octaves of Easter or Pentecost:
+    (0, 8, 2) :                 # Replace Ps. 91 by Ps. 99;
+    (0, 1, 2);                  # otherwise, don't mess about.
+
+  foreach my $i (@psalm_indices) {antetpsalm($psalmi[$i], $i);}
+
   if ($version =~ /trident/i && $rule !~ /ex C10/i ) {
     if ($rule !~ /1 nocturn/i) {foreach $i (3,4,5) {antetpsalm($psalmi[$i], $i);}}
     $spec[0] = $psalmi[6];
@@ -508,7 +528,7 @@ sub lectiones {
   
   }
 
-  if ($version =~ /1960/ && $lang =~ /Latin/i) {$a[1] = 'Jube Domine, benedicere';}  
+  if ($version =~ /1960/ && $lang =~ /Latin/i) {$a[1] = 'Jube, Domine, benedicere.';}  
 
 
   if ($num > 0) {$num = ($num -1) * 3 + 1;}
@@ -541,7 +561,7 @@ sub lectiones {
 # input $num=index number for the lectio(1-9 or 1-3) and language
 # print the appropriate lectio collected from the winner or commune
 # handles the commemoratio as last 
-sub lectio {
+sub lectio : ScriptFunc {
   my $num = shift;          
   my $lang = shift;            
 
@@ -557,7 +577,9 @@ sub lectio {
   my %w = (columnsel($lang)) ? %winner : %winner2;   
   						 
   #Nat1-0 special rule
-  if ($num <= 3 && $rule =~ /Lectio1 Sancti/i && $winner =~ /tempora/i && $rule !~ /1960/) {   
+  # TODO: Get rid of this special case by separating the temporal and sanctoral
+  # parts of Christmas, thus allowing occurring Scripture to be defined.
+  if ($num <= 3 && $rule =~ /Lectio1 Sancti/i && $winner =~ /tempora/i && $day >= 29) {   
     my %c = (columnsel($lang)) ? %commemoratio : %commemoratio2;
     $w{"Lectio$num"} = $c{"Lectio$num"};
     $w{"Responsory$num"} = $c{"Responsory$num"};
@@ -670,7 +692,10 @@ sub lectio {
 	setbuild2("Lectio $num Mariae M$month");
   } 
 
-  if ($num == 8 && $rule =~ /Contract8/i && (exists($winner{Lectio93}) || exists($commemoratio{Lectio7}))) {
+  # Combine lessons 8 and 9 if there's a commemoration to be read in place of
+  # lesson 9, and if the office of the day requires it. In fact the rubrics
+  # always *permit* such a contraction, but we don't support that yet.
+  if ($version !~ /1960/ && $num == 8 && $rule =~ /Contract8/i && (exists($winner{Lectio93}) || exists($commemoratio{Lectio7}))) {
     %w = (columnsel($lang)) ? %winner : %winner2;
     $w = $w{Lectio8} . $w{Lectio9};
 	$w =~ s/\&teDeum//;
@@ -951,7 +976,7 @@ sub lect1960 {
   }    
   setbuild2("B3 : " . beginwith($a[4]));   
 
- if ($version =~ /1960/ && $lang =~ /Latin/i) {$a[1] = 'Jube Domine, benedicere';}  
+ if ($version =~ /1960/ && $lang =~ /Latin/i) {$a[1] = 'Jube, Domine, benedicere.';}  
 
   push (@s, "_");
   if ($rule !~ /Limit.*?Benedictio/i) {
@@ -1052,8 +1077,8 @@ sub ant_matutinum {
   
 
   if ($version =~ /1960/ && ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek >3)) && ($rank < 5 || $winner{Rank} =~ /Dominica/i)) {
-    if ($ind == 0) {return ('Alleluia * Alleluia, alleluia', '');}
-	if ($ind == 12) {return ('', 'Alleluia * Alleluia, alleluia');}
+    if ($ind == 0) {return ('Alleluia, * Alleluia, Alleluia.', '');}
+	if ($ind == 12) {return ('', 'Alleluia, * Alleluia, Alleluia.');}
 	return ('','');
   }
 
@@ -1099,15 +1124,15 @@ sub ant_matutinum {
   if ($dayofweek > 0 && (!@spec || $winner =~ /\/C10/)) {  
     
    if ($rule !~ /9 lectio/i || ($version =~ /1960/ && $rank < 5)) {	
-     if ($ind == 0) {$ant1 = ($duplex < 3 && $version !~ /1960/) ? 'Alleluia' : 'Alleluia * Alleluia, alleluia'; $ant = ''}
-     elsif ($version =~ /Trident/i && $ind == 5) {$ant1 = ''; $ant = 'Alleluia * Alleluia, alleluia';}
-	 elsif ($ind == 12) {$ant1 = ''; $ant = 'Alleluia * Alleluia, alleluia';}
+     if ($ind == 0) {$ant1 = ($duplex < 3 && $version !~ /1960/) ? 'Alleluia' : 'Alleluia, * Alleluia, Alleluia.'; $ant = ''}
+     elsif ($version =~ /Trident/i && $ind == 5) {$ant1 = ''; $ant = 'Alleluia, * Alleluia, Alleluia.';}
+	 elsif ($ind == 12) {$ant1 = ''; $ant = 'Alleluia, * Alleluia, Alleluia.';}
      else {$ant1 = $ant = '';} 
   } else {  #3 nocturns
      if ($ind == 0 || $ind == 5 || $ind == 10) 
-      {$ant1 = ($duplex < 3 && $version !~ /1960/) ? 'Alleluia' : 'Alleluia. * Alleluia, alleluia'; $ant = '';}
+      {$ant1 = ($duplex < 3 && $version !~ /1960/) ? 'Alleluia' : 'Alleluia, * Alleluia, Alleluia.'; $ant = '';}
      elsif ($ind == 2 || $ind == 7 || $ind == 12) 
-           {$ant1 = ''; $ant = 'Alleluia * Alleluia, alleluia';}
+           {$ant1 = ''; $ant = 'Alleluia, * Alleluia, Alleluia.';}
 	       else {$ant1 = $ant = '';}
       } 
       return ($ant1, $ant);

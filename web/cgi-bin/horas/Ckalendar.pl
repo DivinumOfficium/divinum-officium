@@ -204,7 +204,7 @@ for ($cday = 1; $cday <= $to; $cday++) {
 
   if ($winner =~ /sancti/i) {($c2, $c1) = ($c1, $c2);}
   if ($dirge) { $c1 .= setfont($smallblack, ' dirge');}
-  if ($version !~ /1960/ && $winner{Rule} =~ /\;mtv/i) {$c2 .= setfont($smallblack, ' m.t.v.');}
+  if ($version !~ /1955|1960/ && $winner{Rule} =~ /\;mtv/i) {$c2 .= setfont($smallblack, ' m.t.v.');}
   
   
   $version = $version2;
@@ -248,7 +248,7 @@ for ($cday = 1; $cday <= $to; $cday++) {
   if ($winner =~ /sancti/i) {($c12, $c11) = ($c11, $c12);}
   if (!$c12 && $dayname[2]) {$c12 = setfont($smallblack, $dayname[2]);}
   if ($dirge) { $c11 .= setfont($smallblack, ' dirge');}
-  if ($version !~ /1960/ && $winner{Rule} =~ /\;mtv/i) {$c12 .= setfont($smallblack, ' m.t.v.');}
+  if ($version !~ /1955|1960/ && $winner{Rule} =~ /\;mtv/i) {$c12 .= setfont($smallblack, ' m.t.v.');}
   if (!$c11) {$c11 = "_";}
   if (!$c12) {$c12 = "_";}
 

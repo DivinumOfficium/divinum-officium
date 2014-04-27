@@ -13,6 +13,7 @@ use utf8;
 use FindBin qw($Bin);
 use lib "$Bin/..";
 use horas::main;
+use horas::Scripting qw(dispatch_script_function parse_script_arguments);
 
 my @lines;
 my $a = 4;
@@ -281,7 +282,7 @@ sub getrank {
        if ($tn1{Rank} =~ /(Feria|Sabbato|infra octavam)/i && $tn1{Rank} !~ /in octava/i
          && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
        elsif ($dayname[0] =~ /Pasc[07]/i && $dayofweek != 6) {$tn1rank = '';}
-	   elsif ($version =~ /1960/ && $tn1{Rank} =~ /Dominica Resurrectionis/i) 
+	   elsif ($version =~ /1955|1960/ && $tn1{Rank} =~ /Dominica Resurrectionis/i) 
 	       {$tn1rank = '';}
        elsif ($version =~ /1960/ && $tn1{Rank} =~ /Patrocinii St. Joseph/i) 
   	     {$tn1rank = '';}
@@ -421,8 +422,17 @@ sub getrank {
 
   if ($srank =~ /vigilia/i && ($version !~ /1960/ || $sname !~ /08\-09/)) {$srank[2] = 0; $srank = '';}
                                          
-  if (($version =~ /1955/ && $crank[2] < 5) || ($version =~ /1960/ && $crank[2] < 6) ) 
-	  {$crank = ''; @crank = splice(@crank, @crank);}    
+  # Restrict I. Vespers in 1955/1960. In particular, in 1960, II. cl.
+  # feasts have I. Vespers if and only if they're feasts of the Lord.
+  if (($version =~ /1955/ && $crank[2] < 5) ||
+    ($version =~ /1960/ && $crank[2] < 
+      (($csaint{Rule} =~ /Festum Domini/i && $dayofweek == 6) ? 5 : 6)
+    )
+  )
+  {
+    $crank = '';
+    @crank = ();
+  }    
 
   if ($trank[2] >= (($version =~ /(1955|1960)/) ? 6 : 7) && $crank[2] < 6) {$crank = ''; @crank = undef;}
 
@@ -430,8 +440,9 @@ sub getrank {
     $crank[2] = 7;
     $crank =~ s/;;[0-9]/;;7/;
     $srank = '';
-  } elsif ($version !~ /1960/ && $hora =~ /(Vespera|Completorium)/i && $month == 11 && 
+  } elsif (($version !~ /1960/ || $dayofweek == 6) && $hora =~ /(Vespera|Completorium)/i && $month == 11 && 
       $srank =~ /Omnium Fidelium defunctorum/i && !$caller) {	 
+      # Office of All Souls' day ends after None.
       $srank[2] = 1;
       $srank = '';
   } elsif ($version =~ /1960/ && $hora =~ /(Vespera|Completorium)/i && $month == 11 && $day == 1) {
@@ -456,7 +467,10 @@ sub getrank {
 	  ($crank, $srank) = ($srank, $crank);	  
 	   $svesp = 1;
       #switched
-	  (%saint, %csaint) = (%csaint, %saint);
+          my %tempsaint = %saint;
+          %saint = %csaint;
+          %csaint = %tempsaint;
+
       @srank = split(";;", $srank);
       @crank = split(";;", $crank); 
 	  $vflag = 1; 
@@ -1147,16 +1161,40 @@ sub precedence {
   }
 
 
-
-  $laudes = 1;	      
-  if ((($dayname[0] =~ /Adv|Quad/i || emberday()) && $winner =~ /tempora/i &&
-     $winner{Rank} !~ /(Beatae|Sanctae) Mariae/i) ||  $rule =~ /Laudes 2/i ||
-    ($winner{Rank} =~ /vigil/i && $version !~ /(1955|1960)/))  {$laudes = 2;}
-  if ($version =~ /trident/i) {$laudes = '';}
-  if ($dayname[0] =~ /Adv/ && $dayofweek == 0) {$laudes = 1;}
+  # Choose the appropriate scheme for Lauds. Roughly speaking, penitential days
+  # have Lauds II and others have Lauds I, although for the Tridentine rubrics
+  # only the Sundays of Septuagesima and Lent have a sort of "Lauds II", with
+  # all other days being unambiguous.
+  if ($version =~ /Trident/i)
+  {
+    $laudes =
+      ($dayname[0] =~ /Quad/i && $dayofweek == 0 && $winner =~ /Tempora/i)
+      ?
+      2 :
+      '';
+  }
+  else
+  {
+    $laudes =
+      (
+        (
+          (
+            ($dayname[0] =~ /Adv/i && $dayofweek != 0) ||
+            $dayname[0] =~ /Quad/i ||
+  	    emberday()
+          ) &&
+          $winner =~ /tempora/i &&
+          $winner{Rank} !~ /(Beatae|Sanctae) Mariae/i
+        ) ||
+        $rule =~ /Laudes 2/i ||
+        ($winner{Rank} =~ /vigil/i && $version !~ /(1955|1960)/)
+      )
+      ?
+      2 :
+      1;
+  }
 
   if ($missa && $winner{Rank} =~ /Defunctorum/) {$votive = 'Defunct';}
-
 }
 
 #*** monthday($forcetomorrow), reading_day($month, $day, $year)
@@ -1780,4 +1818,71 @@ sub cache_prayers()
   $prayers{$lang2} = setupstring($datafolder, $lang2, "$dir/Prayers.txt");
 }
 
+
+
+#*** sub expand($line, $lang, $antline)
+# for & references calls the sub
+# $ references are filled from Psalterium/Prayers file
+# antline to handle redding the beginning of psalm is same as antiphona
+# returns the expanded text or the link
+sub expand
+{
+  use strict;
+
+  my ($line, $lang, $antline) = @_;
+
+  $line =~ s/^\s+//;
+  $line =~ s/\s+$//;
+
+  # Extract and remove the sigil indicating the required expansion type.
+  # TODO: Fail more drastically when the sigil is invalid.
+  $line =~ s/^([&\$])// or return $line;
+  my $sigil = $1;
+
+  our ($expand, $missa);
+  local $expand = $missa ? 'all' : $expand;
+
+  #returns the link or text for & references
+  if ($sigil eq '&')
+  {  
+    # Make popup link if we shouldn't expand.
+    if (
+      $expand =~ /nothing/i ||
+      ($expand !~ /all/i && ($line =~ /^(?:[A-Z]|pater_noster)/))
+    )
+    {
+      return setlink($sigil . $line, 0, $lang);
+    }
+
+    # Actual expansion for & references.
+
+    # Get function name and any parameters.
+    my ($function_name, $arg_string) = ($line =~ /(.*?)(?:[(](.*)[)])?$/);
+    my @args = (parse_script_arguments($arg_string), $lang);
+
+    # If we have an antiphon, pass it on to the script function.
+    if ($antline)
+    {
+        $antline =~ s/^\s*Ant\. //i;
+        push @args, $antline;
+    }
+
+    return dispatch_script_function($function_name, @args);
+  }
+  else  # Sigil is $, so simply look up the prayer.
+  {
+    if ($expand =~ /all/i)
+    {
+      #actual expansion for $ references
+      our %prayers;
+      return $prayers{$lang}->{$line};
+    }
+    else
+    {
+      return setlink($sigil . $line, 0, $lang);
+    }
+  }
+}
+
 1;
+

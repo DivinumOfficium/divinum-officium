@@ -9,21 +9,22 @@ Limit Benedictiones, Oratio
 9 lectiones 1960
 Capitulum Versum 2 ad Laudes tantum
 Minores sine Antiphona
+Feria
 
 [Ant Matutinum]
-In pace * in idipsum, dormiam et requiescam;;4
-Habitabit * in tabernaculo tuo, requiescet in monte sancto tuo;;14
-Caro mea * requiescet in spe;;15
+In pace * in idipsum, dormiam et requiescam.;;4
+Habitabit * in tabernaculo tuo, requiescet in monte sancto tuo.;;14
+Caro mea * requiescet in spe.;;15
 V. In pace in idipsum.
-R. Dormiam et requiescam
-Elevamini, * portae aeternales, et introibit Rex gloriae;;23
-Credo videre * bona Domini in terra viventium;;26
-Domine, * abstraxisti ab inferis animam meam;;29
+R. Dormiam et requiescam.
+Elevamini, * portae aeternales, et introibit Rex gloriae.;;23
+Credo videre * bona Domini in terra viventium.;;26
+Domine, * abstraxisti ab inferis animam meam.;;29
 V. Tu autem, Domine, miserere mei.
 R. Et resuscita me, et retribuam eis.
-Deus adjuvat me, * et Dominus susceptor est animae meae;;53
-In pace * factus est locus ejus, et in Sion habitatio ejus;;75
-Factus sum * sicut homo sine adjutorio, inter mortuos liber;;87
+Deus adjuvat me, * et Dominus susceptor est animae meae.;;53
+In pace * factus est locus ejus, et in Sion habitatio ejus.;;75
+Factus sum * sicut homo sine adjutorio, inter mortuos liber.;;87
 V. In pace factus est locus ejus.
 R. Et in Sion habitatio ejus.
 
@@ -161,11 +162,12 @@ R. Ponentes milites qui custodirent illum.
 R. Sepulto Domino, signatum est monumentum, volventes lapidem ad ostium monumenti * Ponentes milites qui custodirent illum.
 
 [Ant Laudes]
-O mors, * ero mors tua, morsus tuus ero inferne
-Plangent eum * quasi unigenitum, quia innocens Dominus occisus est
-Attendite * universi populi, et videte dolorem meum
-A porta inferi * erue, Domine, animam meam;;222
-O vos omnes, * qui transitis per viam, attendite et videte, si est dolor sicut dolor meus
+O mors, * ero mors tua, morsus tuus ero inferne.
+Plangent eum * quasi unigenitum, quia innocens Dominus occisus est.
+(sed rubrica Tridentina) Plangent eum * quasi unigenitum, quia innocens Dominus occisus est.;;42
+Attendite * universi populi, et videte dolorem meum.
+A porta inferi * erue, Domine, animam meam.;;222
+O vos omnes, * qui transitis per viam, attendite et videte, si est dolor sicut dolor meus.
 
 [Versum 2]
 V. Caro mea requiescet in spe.
@@ -174,21 +176,17 @@ R. Et non dabis sanctum tuum videre corruptionem.
 [Ant 2]
 Mulieres * sedentes ad monumentum lamentabantur, flentes Dominum.
 
-[Oratio]
+[Oratio 2]
 V. Christus factus est pro nobis obediens usque ad mortem, mortem autem crucis: Propter quod et Deus exaltavit illum, et dedit illi nomen quod est super omne nomen.
 !secreto
 $Pater noster
 !aliquantulum altius
 &psalm(50)
 _
-(deinde dicuntur)
-Réspice, quæsumus, Dómine, super hanc famíliam tuam, pro qua Dóminus noster Jesus Christus non dubitávit mánibus tradi nocéntium, et crucis subíre torméntum:
-!Et sub silentio concluditur
-$Qui tecum
-(sed rubrica 1955 aut rubrica 1960 loco horum versuum dicuntur)
-Concede, quaesumus, omnípotens Deus: ut, qui Fílii tui resurrectiónem devóta exspectatióne prævenímus; ejúsdem resurrectiónis glóriam consequámur.
-!Et sub silentio concluditur
-$Per eumdem
+@:Oratio Matutinum
+
+[Oratio 3]
+@:Oratio Matutinum
 
 [Oratio Matutinum]
 Réspice, quæsumus, Dómine, super hanc famíliam tuam, pro qua Dóminus noster Jesus Christus non dubitávit mánibus tradi nocéntium, et crucis subíre torméntum:
@@ -202,10 +200,10 @@ $Per eumdem
 
 [Ant Vespera]
 Hódie afflíctus sum valde, * sed cras solvam víncula mea.;;115
-Cum his, qui oderunt pacem * eram pacificus: dum loquebar illis, impugnabant me gratis;;119
-Ab hominibus iniquis * libera me Domine;;139
-Custodi me a laqueo * quem statuerunt mihi, et a scandalis operantium iniquitatem;;140
-Considerabam ad dexteram * et videbam, et non erat qui cognosceret me;;141
+Cum his, qui oderunt pacem * eram pacificus: dum loquebar illis, impugnabant me gratis.;;119
+Ab hominibus iniquis * libera me, Domine.;;139
+Custodi me a laqueo * quem statuerunt mihi, et a scandalis operantium iniquitatem.;;140
+Considerabam ad dexteram * et videbam, et non erat qui cognosceret me.;;141
 
 [Ant 3]
 Principes sacerdotum * et pharisaei munierunt sepulcrum, signantes lapidem, cum custodibus.
@@ -221,15 +219,17 @@ $Indulgentiam
 
 &psalm(4)
 
+(rubrica tridentina) &psalm(30,1,6)
+
 &psalm(90)
 
 &psalm(133)
 
 &psalm(233)
 
-v. Christus factus est pro nobis obediens usque ad mortem, mortem autem crucis. Propter quod et Deus exaltavit illum, et dedit illi nomen quod est super omne nomen.
-!secreto.
 $Pater noster
 _
 Visita, quaesumus, Domine, habitationem istam, et omnes insidias inimici ab ea longe repelle: Angeli tui sancti habitent in ea, qui nos in pace custodiant; et benedictio tua sit super nos semper.
+!Et sub silentio concluditur
 $Per Dominum
+

@@ -278,50 +278,6 @@ sub resolve_refs {
   return $t;
 }
 
- #*** sub expand($line, $lang, $antline)
- # for & references calls the sub
- # $ references are filled from Ordo/Prayers file
- # antline to handle redding the beginning of psalm is same as antiphona
- # returns the expanded text or the link
- sub expand {
-   my $line = shift;          
-   my $lang = shift;
-   my $antline = shift;     
-   					 
-   my $title = "";
-
-
-   #returns the link or text for & references
-   if ($line =~ /^\s*\&/) {  
-     $line = $';   			 
-     
-     #actual expansion for & references
-	 #is the beginning of psalm the same as antiphona
-	 if ($antline) {   
-	   $antline =~ s/^\s*Ant\. //i;
-	   $line =~ s/\)\s*$//;
-	   $line = "&$line,\"$lang\",\"$antline\");";	 
-	 }
-	 #sub with parameter
-	 elsif ($line =~ /\)\s*$/) {$line = "&$`,\"$lang\");";}
-     #other subs
-	 else {$line = "&$line(\"$lang\");";}   
-
-	 my $t = eval($line); 
-     return $t;
-   }
-                     
-
-   #actual expansion for $ references
-   our %prayers;
-   $line =~ s/\$//;
-   $line =~ s/\s*$//; 
-   my $text = $prayers{$lang}->{$line};     
-   $line =~ s/\n/\<BR\>\n/g;
-   $line =~ s/\<BR\>\n$/\n/;
-   return $text;
-}
-
 #*** Alleluia($lang)
 # return the text Alleluia or Laus tibi
 sub Alleluia { 

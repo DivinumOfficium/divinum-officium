@@ -30,12 +30,15 @@ $debug = '';
 
 $q = new CGI;
 
+our $missa = 1;
+
 
 #*** collect standard items
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/ordo.pl";
+require "$Bin/propers.pl";
 #require "$Bin/ordocommon.pl";
 require "$Bin/../horas/do_io.pl";
 require "$Bin/tfertable.pl";
@@ -123,8 +126,9 @@ sub gettext
   
   my %popup_files =
   (
-    Ante => 'Ante.txt',
-    Post => 'Post.txt'
+    Ante      => 'Ante.txt',
+    Communio  => 'Communio.txt',
+    Post      => 'Post.txt'
   );
 
   # File must be one of those explicitly permitted.
@@ -137,6 +141,6 @@ sub gettext
   $text =~ s/[#!].*?\n//g unless $rubrics;
 
   $text =~ s/#/!/g;
-  $text = resolve_refs($text);
+  $text = resolve_refs($text, $lang);
   return $text;
 }
