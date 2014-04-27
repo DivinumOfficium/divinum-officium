@@ -175,7 +175,7 @@ sub specials {
     if ($item =~ /Capitulum/i && $hora =~ /prima/i) { 
       my %brevis = %{setupstring($datafolder, $lang, 'Psalterium/Prima Special.txt')};  
 	  if ($dayofweek > 0 && $version !~ /1960/ && $winner{Rank} =~ /Feria|Vigilia/i && $commune !~ /C10/ && 
-	      $rank < 3  && $dayname[0] !~ /Pasc/i) {
+	      ($rank < 3 || $dayname[0] =~ /Quad6/) && $dayname[0] !~ /Pasc/i) {
 	    @capit = split("\n", $brevis{'Feria'});
 	    $comment = 1;
 	    setbuild1('Capitulum', 'Psalterium Feria');
@@ -282,7 +282,7 @@ sub specials {
                              
        if ($w && $w !~ /!H[iy]mn/i) {  
          my $wr = '';
-         my $hmn = (($version =~ /1960/ && $winner{Rule} =~ /(C4|C5)/ && $hora =~ /Vespera/i) ||  
+         my $hmn = (($version =~ /1955|1960/ && $winner{Rule} =~ /(C4|C5)/ && $hora =~ /Vespera/i) ||  
 		     ($winner{Rule} =~ /\;mtv/i && $hora =~ /Vespera/i)) ? 'Hymnus1' : 'Hymnus';  
 		 if ((!exists($winner{"$hmn Vespera"}) && 
 		    ($vespera == 3 && !exists($winner{"$hmn Vespera 3"}))) &&
@@ -386,20 +386,30 @@ sub specials {
     }
 	}   	  
 
-	if ($item =~ /Oratio/i && $hora =~ /(prima|completorium)/i) {
-	  if ($rule =~ /Limit.*?Oratio/) {	#Triduum prima completorium
-	    setcomment($label, 'Preces',2, $lang, '');
-        oratio($lang, $month, $day); 
-	    $skipflag = 1;
-      next;
-      }
-	}
+    if ($item =~ /Oratio/i)
+    {
+      # Normally we only handle the Oratio(nes) section at the hours other than
+      # Prime and Compline, but during the Triduum, we do it for those hours,
+      # too. The test for this case is somewhat oblique.
+      my $prime_or_compline = ($hora =~ /Prima|Completorium/i);
+      my $triduum = ($rule =~ /Limit.*?Oratio/);
+      my %oratio_params;
 
-	if ($item =~ /Oratio/i && $hora !~ /(prima|completorium)/i) {
-	   oratio($lang, $month, $day); 
-	   next;
-	}
-  
+      # Skip the usual stuff at Prime and Compline in the Triduum.
+      if ($prime_or_compline && $triduum)
+      {
+        $skipflag = 1;
+        $oratio_params{special} = 1;
+      }
+
+      # Generate the prayer(s) together with the title.
+      if (!$prime_or_compline || $triduum)
+      {
+        oratio($lang, $month, $day, %oratio_params);
+        next;
+      }
+    }
+
   if ($item =~ /Suffragium/i && $hora =~ /Laudes|Vespera/i) {    
       if (!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i) {
 	      setcomment($label, 'Suffragium', 0, $lang);
@@ -451,10 +461,15 @@ sub specials {
   if ($rule =~ /Laudes Litania/i && $winner =~ /Sancti/ && $day != 25) {$rule =~ s/Laudes Litania//ig;}
 
 
+    # Insert the title.
+    $label = translate_label($label, $lang);
+    push (@s, $label);
+
+    # The remaining special cases come *after* the title has been inserted.
+
   if ($item =~ /Conclusio/i &&  $hora =~ /Laudes/i && ($month == 4 || $version !~ /1960/) && ($rule =~ /Laudes Litania/i || 
     $commemoratio{Rule} =~ /Laudes Litania/i || $scriptura{Rule} =~ /Laudes Litania/i || $flag) )  {
       my %w =  %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};  
-      push(@s, "\n");
 	  my $lname = ($version =~ /monastic/i) ? 'LitaniaM' : 'Litania';
   	  if ($version =~ /1570/ && exists($w{LitaniaT})) {$lname = 'LitaniaT';}
 	  push(@s, $w{$lname});
@@ -462,18 +477,14 @@ sub specials {
 	  $skipflag = 1;
   }
 
+    # Special conclusions, e.g. on All Souls' day.
     if ($item =~ /Conclusio/i && $rule =~ /Special Conclusio/i) {
       my %w = (columnsel($lang)) ? %winner : %winner2; 
       push(@s, $w{Conclusio});
       $skipflag = 1;
     }
 
-    # Insert the title.
-    $label = translate_label($label, $lang);	
-    push (@s, $label);	
-    
-    # Set special conclusion when Office of the Dead follows, *after*
-    # having inserted the (usual) title.
+    # Set special conclusion when Office of the Dead follows.
     if ($item =~ /Conclusio/i && $dirge && $commune !~ /C9/i && $votive !~ /C9/i)
     {
       our %prayers;
@@ -737,7 +748,7 @@ sub psalmi_minor {
 
   if ($ant =~ /\;\;/) {$ant = $`;}
   if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;}
-  if ($ant && $ant !~ /^Ant/i) {$ant = "Ant. $ant";}
+  if ($ant) {$ant = "Ant. $ant";}
 
   my @ant = split( '\*', $ant);
   postprocess_ant($ant, $lang);
@@ -867,9 +878,6 @@ sub psalmi_major {
   #Psalmi de dominica		 
   if ($version =~ /Trident/i && $testmode =~ /seasonal/i && $winner =~ /Sancti/i && 
     $rank >= 2 && $rank < 5 && !exists($winner{'Ant Laudes'})) {@p = @psalmi;}
-  elsif ($version =~ /Trident/i && $winner =~ /Tempora/i && $hora =~ /Laudes/i && 
-      $dayname[0] =~ /Quad/i && exists($winner{'Ant Laudes'}))	 ##??????
-    {@p = split("\n", $psalmi{"DayaC Laudes2"}); }
   elsif (($rule =~ /Psalmi Dominica/i || $commune{Rule} =~ /Psalmi Dominica/i  ||
      ($anterule && $anterule =~ /Psalmi Dominica/i))
      && ($antiphones[0] !~ /\;\;\s*[0-9]+/)) {  
@@ -935,8 +943,8 @@ sub antetpsalm {
 
   if ($dayname[0]  =~ /Pasc/i  && $hora =~ /(laudes|vespera)/i && $version !~ /monastic/i && 
       !exists($winner{"Ant $hora"}) && $communetype !~ /ex/i) { 
-    if ($ind == 0) {$ant1 = ($duplex < 3 && $version !~ /1960/) ? 'Alleluia' : 'Alleluia. * Alleluia, alleluia'; $ant = ''}
-    elsif ($last) {$ant1 = ''; $ant = 'Alleluia. * Alleluia, alleluia';}
+    if ($ind == 0) {$ant1 = ($duplex < 3 && $version !~ /1960/) ? 'Alleluia' : 'Alleluia, * Alleluia, Alleluia.'; $ant = ''}
+    elsif ($last) {$ant1 = ''; $ant = 'Alleluia, * Alleluia, Alleluia.';}
     else {$ant1 = $ant = '';}	  
   }
 
@@ -966,20 +974,28 @@ sub antetpsalm {
 }
 
 
-#*** oration($lang)
-#input language
-# collects and prints the appropriate oratio and commemorationes
+#*** oratio($lang, $month, $day, %params)
+# Collects and prints the appropriate oratio and commemorationes. If
+# $params{special} is set, the emitted title indicates that the prayers have a
+# special form.
 sub oratio
 {
     my $lang = shift;	
     my $month= shift;
     my $day = shift; 
+    my %params = @_;
 
     our $addconclusio = '';
                      
     my %w = (columnsel($lang)) ? %winner : %winner2;
-    $comment = ($winner =~ /sancti/i) ? 3 : 2;
-    setcomment($label, 'Source', $comment, $lang);        
+
+    # Output the title.
+    setcomment(
+      $label,
+      $params{special} ?
+        ('Preces', 2)  :
+        ('Source', ($winner =~ /sancti/i) ? 3 : 2),
+      $lang);
 
     $ind = ($hora =~ /vespera/i) ? $vespera : 2; 	
 

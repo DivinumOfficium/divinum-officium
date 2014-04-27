@@ -1,5 +1,5 @@
 [Rank]
-S. Gabrielis a Virgine Perdolente Confessoris;;Duplex;;3;;vide C5
+S. Gabrielis a Virg. Perdolente Confessoris;;Duplex;;3;;vide C5
 
 [Rule]
 vide C5;;
@@ -7,19 +7,16 @@ vide C5;;
 Lectio1 Quad
 
 [Oratio]
-Deus qui beatum Gabrielem dulcissimae Matris dolores assidue recolere docuisti,~
-ac per illam sanctitatis et miraculorum gloria sublimasti: da nobis eius~
-intercessione et exemplo, ita Genitricis tuae consociari fletibus: ut materna~
-eiusdem protectione salvemur.
+Deus, qui beatum Gabrielem dulcissimae Matris tuae dolores assidue recolere docuisti, ac per illam sanctitatis et miraculorum gloria sublimasti: da nobis, ejus intercessione et exemplo, ita Genitricis tuae consociari fletibus; ut materna ejusdem protectione salvemur:
 $Qui vivis
 
-[Lectio1]
+[Lectio1](sed non rubrica 1960)
 @Commune/C5:Lectio11
 
-[Lectio2]
+[Lectio2](sed non rubrica 1960)
 @Commune/C5:Lectio21
 
-[Lectio3]
+[Lectio3](sed non rubrica 1960)
 @Commune/C5:Lectio31
 
 [Lectio4]

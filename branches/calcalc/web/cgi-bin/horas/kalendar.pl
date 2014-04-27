@@ -225,11 +225,19 @@ for ($cday = 1; $cday <= $to; $cday++) {
   if (!$c2 && $dayname[2]) {$c2 = setfont($smallblack, $dayname[2]);}
   elsif (!$c1 && $dayname[2]) {$c1 = setfont($smallblack, $dayname[2]);}
   
-  if ($version !~ /1960/) {
-    if ($winner{Rule} =~ /\;mtv/i) {$c2 .= setfont($smallblack, ' m.t.v.');}
-    if ($winner =~ /Sancti/ && exists($winner{Lectio1}) && $winner{Lectio1} !~ /\@Commune/i &&
-	    $winner{Lectio1} !~ /\!(Matt|Mark|Luke|John)\s+[0-9]+\:[0-9]+\-[0-9]+/i) 
-	  {$c2 .= setfont($smallfont, " *L1*");}  
+  if ($version !~ /1955|1960/ && $winner{Rule} =~ /\;mtv/i)
+  {
+    $c2 .= setfont($smallblack, ' m.t.v.');
+  }
+
+  if (
+    $version !~ /1960/ &&
+    $winner =~ /Sancti/ &&
+    exists($winner{Lectio1}) &&
+    $winner{Lectio1} !~ /\@Commune/i &&
+    $winner{Lectio1} !~ /\!(Matt|Mark|Luke|John)\s+[0-9]+\:[0-9]+\-[0-9]+/i)
+  {
+    $c2 .= setfont($smallfont, " *L1*");
   }
 
   if (!$c1) {$c1 = "<P ALIGN=CENTER>_</P>";}
