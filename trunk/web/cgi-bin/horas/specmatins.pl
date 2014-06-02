@@ -458,7 +458,7 @@ sub lectiones {
     ($dayofweek == 2 || $dayofweek == 5) ? 2 : 
     ($dayofweek == 3 || $dayofweek == 6) ? 3 : 1;
     my $w = lectio(1, $lang);	
-    if ($w =~ /\!(Matt|Mark|Luke|John) [0-9]+\:[0-9]/i) {
+    if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {
 	  $j0 = $i;
 	  $i = 3;
 	}
@@ -505,7 +505,7 @@ sub lectiones {
   if ($i == 3 && $rule !~ /ex C1[02]/ && $rule !~ /Special Evangelii Benedictio/i) {    
                                
     my $w = lectio($j1, $lang);	
-    if ($w =~ /\!(Matt|Mark|Luke|John) [0-9]+\:[0-9]/i) {$a[2] = $benedictio{Evangelica};}
+    if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {$a[2] = $benedictio{Evangelica};}
     elsif ($a[2] =~ /(evang|Gospel)/i) {$a[2] = $a[5];}  
     setbuild2("B$j1. : " . beginwith($a[2]));
 
@@ -523,7 +523,7 @@ sub lectiones {
   
   
     $w = lectio($j3, $lang); 
-    if ($w =~ /\!(Matt|Mark|Luke|John) [0-9]+\:[0-9]/i) {$a[4] = $benedictio{Evangelica9};}  
+    if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {$a[4] = $benedictio{Evangelica9};}  
     setbuild2("B$j3. : " . beginwith($a[4])); 
   
   }
@@ -636,7 +636,7 @@ sub lectio : ScriptFunc {
 
   #prepares for case of homily instead of scripture
   my $homilyflag = (exists($commemoratio{Lectio1}) &&
-     $commemoratio{Lectio1} =~ /\!(Matt|Mark|Luke|John)\s+[0-9]+\:[0-9]+\-[0-9]+/i) ? 1 : 0;
+     $commemoratio{Lectio1} =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John)\s+[0-9]+\:[0-9]+\-[0-9]+/i) ? 1 : 0;
   if (!$w && (($communetype =~ /^ex/i && $commune !~ /Sancti/i)  || ($num < 4 && $homilyflag && 
          exists($commune{"Lectio$num"})))) {
       %w = (columnsel($lang)) ? %commune : %commune2;
@@ -948,7 +948,7 @@ sub lect1960 {
   my $i = 3;     
   if ($rank < 2 || $winner{Rank} =~ /Feria/) {$i = ($dayofweek % 3); if ($i == 0) {$i = 3;}} 
   my $w = lectio(1, $lang);	
-  if ($w =~ /\!(Matt|Mark|Luke|John) [0-9]+\:[0-9]/i) {$i = 3;}
+  if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {$i = 3;}
 
   
   my @a = split("\n", $benedictio{"Nocturn $i"});  
@@ -969,7 +969,7 @@ sub lect1960 {
   if ($rule =~ /Quorum Festum/i && !$divaux) {$a[3] = $a[7];}
   $w = $w{'Lectio1'};
   if (!$w) {$w = $s{'Lectio1'};}  
-  if ($w =~ /\!(Matt|Mark|Luke|John) [0-9]+\:[0-9]/i) {$a[2] = $benedictio{Evangelica};}
+  if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {$a[2] = $benedictio{Evangelica};}
   else { 
     if (exists($a[5])) {$a[2] = $a[5];}
     if ($winner{Rank} =~ /dominica/i) {$a[4] = $benedictio{Evangelica9};}
