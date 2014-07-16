@@ -472,7 +472,7 @@ sub psalm : ScriptFunc {
   if ($num > 150 && $num < 300 && @lines)
   {
     $line = $lines[0];
-    if ($line =~ /\s*([a-z]+\s+[a-z_]+) /i)
+    if ($line =~ /\s*[(]?(.*?)\s+[*]/i)
     {
       $t = setfont($redfont, $1) . settone(1) . $pnum;
     }   
