@@ -9,6 +9,13 @@ use utf8;
 #use warnings;
 #use strict "refs";
 #use strict "subs";
+
+use FindBin qw($Bin);
+use lib "$Bin/..";
+
+# Defines ScriptFunc and ScriptShortFunc attributes.
+use horas::Scripting;
+
 my $a = 4;
 
 #*** makeferia()
@@ -294,7 +301,7 @@ sub brevis_monastic {
 
 #*** regula($lang)
 #returns the text of the Regula for the day
-sub regula {
+sub regula : ScriptFunc {
   my $lang = shift;        
 
   my @a;
