@@ -1,0 +1,56 @@
+[Rank]
+Die IV infra octavam Paschae;;Semiduplex I classis;;6;;ex Pasc0-0
+
+[Rule]
+ex Pasc0-0;
+1 nocturn;
+Omit Hymnus Preces Suffragium;
+Minores sine Antiphona;
+Capitulum Versum 2;
+Psalmi Dominica;
+
+[Ant Matutinum]
+@Tempora/Pasc0-0::s/^V\..*//sm
+V. Gavísi sunt discípuli, allelúja.
+R. Viso Dómino, allelúja.
+
+[Lectio1]
+Lectio sancti Evangelii secundum Joannem.
+!Joannes 21:1-14.
+In illo tempore: Manifestavit se iterum Jesus discipulis ad mare Tiberiadis. Manifestavit autem sic: Erant simul Simon Petrus, et Thomas, qui dicitur Didymus. Et reliqua.
+_
+Homilia sancti Gregorii Papae.
+!Homilia 24. in Evangelia.
+Lectio sancti Evangelii, quae modo in auribus vestris lecta est, fratres mei, quaestione animum pulsat, sed pulsatione sua vim discretionis indicat. Quaeri etenim potest, cur Petrus, qui piscator ante conversionem fuit, post conversionem ad piscationem rediit: et cum Veritas dicat: Nemo mittens manum suam ad aratrum, et aspiciens retro, aptus est regno Dei: cur repetiit quod dereliquit? Sed si virtus discretionis inspicitur, citius videtur: quia nimirum negotium, quod ante conversionem sine peccato exstitit, hoc etiam post conversionem repetere culpa non fuit.
+
+[Responsory1]
+R. Ecce vicit leo de tribu Juda, radix David, aperíre librum, et sólvere septem signácula ejus:
+* Allelúja, allelúja, allelúja.
+V. Dignus est Agnus, qui occísus est, accípere virtútem, et divinitátem, et sapiéntiam, et fortitúdinem, et honórem, et glóriam, et benedictiónem.
+R. Allelúja, allelúja, allelúja.
+
+[Lectio2]
+Nam piscatorem Petrum, Matthaeum vero telonearium scimus: et post conversionem suam ad piscationem Petrus rediit, Matthaeus vero ad telonei negotium non resedit: quia aliud est, victum per piscationem quaerere, aliud autem telonei lucris pecunias augere. Sunt enim pleraque negotia, quae sine peccatis exhiberi aut vix, aut nullatenus possunt. Quae ergo ad peccatum implicant, ad haec necesse est, ut post conversionem animus non recurrat.
+
+[Responsory2]
+R. Ego sum vitis vera, et vos pálmites:
+* Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.
+V. Sicut diléxit me Pater, et ego dilexi vos.
+R. Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.
+&Gloria
+R. Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.
+
+[Lectio3]
+Quaeri etiam potest, cur discipulis in mari laborantibus, post resurrectionem suam Dominus in littore stetit, qui ante resurrectionem suam coram discipulis in fluctibus maris ambulavit. Cujus rei ratio festine cognoscitur, si ipsa, quae tunc inerat, causa pensetur. Quid enim mare, nisi praesens saeculum signat, quod se casuum tumultibus, et undis vitae corruptibilis illidit? Quid per soliditatem littoris, nisi illa perpetuitas quietis aeternae figuratur? Quia ergo discipuli adhuc fluctibus mortalis vitae inerant, in mari laborabant: quia autem Redemptor noster jam corruptionem carnis excesserat, post resurrectionem suam in littore stabat.
+&teDeum
+
+[Ant 2]
+Míttite in déxteram * navígii rete, et inveniétis, allelúja.
+
+[Oratio]
+Deus, qui nos resurrectiónis Domínicæ ánnua solemnitáte lætíficas: concéde propítius; ut per temporália festa quæ ágimus, perveníre ad gaúdia ætérna mereámur.
+$Per eumdem
+
+[Ant 3]
+Dixit Jesus * discípulis suis: Afférte de píscibus, quos prendidístis nunc. Ascéndit autem Simon Petrus, et traxit rete in terram plenum magnis píscibus, allelúja.
+
