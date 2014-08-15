@@ -1,0 +1,60 @@
+[Rank]
+S. Marci Evangelistae;;Duplex II classis;;5.1;;ex C1a
+
+[Rank1960]
+S. Marci Evangelistae;;Duplex II classis;;5;;ex C1a
+
+[Rule]
+ex C1;
+9 lectiones
+Laudes Litania
+Psalmi Dominica
+Antiphonas horas
+Psalm5 Vespera=116
+
+[Oratio]
+O Dio, che sublimasti il tuo beato Evangelista Marco colla grazia della predicazione evangelica: deh! concedici e di profittare sempre del suo insegnamento e d'esser difesi dalla sua preghiera.
+$Per Dominum
+
+[Lectio1]
+@Commune/C1a:Lectio1
+
+[Responsory1]
+@Tempora/Pent01-0:Responsory1
+
+[Lectio2]
+@Commune/C1a:Lectio2
+
+[Responsory2]
+R. Guarda, o Signore, dalla tua santa sede, e pensa a noi: inclina, mio dio, il tuo orecchio, ed ascolta:
+* Apri i tuoi occhi, e vedi la nostra tribolazione.
+V. Pastore d'Israele, ascolta: Tu che guidi Giuseppe come una pecora.
+R. Apri i tuoi occhi, e vedi la nostra tribolazione.
+
+[Lectio3]
+@Commune/C1a:Lectio3
+
+[Responsory3]
+R. Guarda, o Signore, perché è diventata desolata la città piena di ricchezze, siede in tristezza la padrona delle Genti:
+* Non c'è chi la consoli, se non tu, o nostro dio.
+V. Raddoppia il pianto al calar della notte, e le lacrime le rigano la faccia.
+R. Non c'è chi la consoli, se non tu, o nostro dio.
+&Gloria
+R. Non c'è chi la consoli, se non tu, o nostro dio.
+
+[Lectio4]
+Dal libro di san Girolamo Prete sugli Scrittori ecclesiastici
+_
+Marco, discepolo e interprete di Pietro, pregatone a Roma dai fratelli, scrisse un breve Vangelo secondo che l'aveva udito raccontare da Pietro. E Pietro, dopo averlo ascoltato, e l'approvò, e ordinò, colla sua autorità, che fosse letto nella Chiesa. Preso pertanto il Vangelo che egli stesso aveva composto, partì per l'Egitto e, per il primo annunziando il Cristo in Alessandria, vi stabilì una chiesa, ed era tanta la sua dottrina e purità di vita, che spinse tutti i seguaci di Cristo a seguire il suo esempio.
+
+[Lectio5]
+@Commune/C1a:Lectio4
+
+[Responsory5]
+@Commune/C1a:Responsory5
+
+[Lectio6]
+@Commune/C1a:Lectio5
+
+[Responsory6]
+@Commune/C1a:Responsory6
