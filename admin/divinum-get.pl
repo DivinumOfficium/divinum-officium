@@ -47,6 +47,8 @@ my $dir;
 my $base_url = 'http://divinumofficium.com/cgi-bin';
 sub resource_to_filename($);
 
+my $suppress_timestamp;
+
 my $help;
 
 my $USAGE = <<USAGE ;
@@ -67,6 +69,7 @@ Options:
 
 --dir=DIR           put downlaods into directory DIR [default: current directory]
 --url=BASE          base URL of site to download from [default: $base_url]
+--no-timestamp      suppress timestamp in test files
 
 --help              This.
 
@@ -103,6 +106,8 @@ GetOptions(
 
     'dir=s' => \$dir,
     'url=s' => \$base_url,
+
+    'no-timestamp' => \$suppress_timestamp,
 
     'help' => \$help
 ) or die $USAGE;
@@ -245,8 +250,16 @@ while ( Date_to_Days($y1,$m1,$d1) <= Date_to_Days($y2,$m2,$d2) )
     my $file = resource_to_filename("$entry/$args");
     my $path = $dir ? "$dir/$file" : "$file";
     open OUT, ">$path" or die "Can't write $path\n";
-    my @now = localtime;
-    print OUT "DIVINUM OFFICIUM TEST CASE ". asctime(@now);
+    print OUT "DIVINUM OFFICIUM TEST CASE ";
+    if ( $suppress_timestamp )
+    {
+        print OUT "\n";
+    }
+    else
+    {
+        my @now = localtime;
+        print OUT asctime(@now);
+    }
     print OUT "$url\n";
     print OUT @result;
     close OUT;
