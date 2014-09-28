@@ -142,8 +142,9 @@ foreach my $file ( @testfiles )
 {
     if ( open IN, "<$file" )
     {
-        if ( <IN> =~ /^DIVINUM OFFICIUM TEST CASE/ )
+        if ( <IN> =~ /^DIVINUM OFFICIUM TEST CASE\s+(.*)$/ )
         {
+            my $suppress_timestamp = !$1;
             my $url = <IN>;
             chomp $url;
 
@@ -177,8 +178,16 @@ foreach my $file ( @testfiles )
                 {
                     if ( open OUT, '>:encoding(utf-8)', "$file" )
                     {
-                        my @now = localtime;
-                        print OUT "DIVINUM OFFICIUM TEST CASE ". asctime(@now);
+                        print OUT "DIVINUM OFFICIUM TEST CASE ";
+                        if ( $suppress_timestamp )
+                        {
+                            print OUT "\n";
+                        }
+                        else
+                        {
+                            my @now = localtime;
+                            print OUT asctime(@now);
+                        }
                         print OUT "$url\n";
                         print OUT "$_\n" for @new_result;
                         close OUT;
