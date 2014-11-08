@@ -146,6 +146,7 @@ sub psalmi_matutinum {
   setbuild("Psalterium/Psalmi matutinum", "$d$dw", 'Psalmi ord');
   $comment = 1;
   my $prefix = ($lang =~ /English/i) ? 'Antiphons' : 'Antiphonae';
+  my $prefix = ($lang =~ /Magyar/i) ? 'Antifónák' : 'Antiphonae';
            
 
   if ($version !~ /Trident/i && $dayofweek == 0 && $dayname[0] =~ /Adv/i) {  

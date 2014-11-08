@@ -44,6 +44,7 @@ sub psalmi_matutinum_monastic {
   setbuild("Psalterium/Psalmi matutinum monastic", "dayM$dw", 'Psalmi ord');
   $comment = 1;
   my $prefix = ($lang =~ /English/i) ? 'Antiphons' : 'Antiphonae';
+  my $prefix = ($lang =~ /Magyar/i) ? 'Antifónák' : 'Antiphonae';
            
 
   #** special Adv - Pasc antiphons for Sundays
