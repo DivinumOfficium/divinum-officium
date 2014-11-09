@@ -1,0 +1,57 @@
+[Rank]
+Die III infra octavam Paschae;;Duplex I classis;;7;;ex Pasc0-0
+
+[Rule]
+ex Pasc0-0;
+1 nocturn;
+Omit Hymnus Preces Suffragium;
+no commemoratio;
+Minores sine Antiphona;
+Capitulum Versum 2;
+Psalmi Dominica;
+
+[Ant Matutinum]
+@Tempora/Pasc0-0::s/^V\..*//sm
+V. Surréxit Dóminus vere, allelúja.
+R. Et appáruit Simóni, allelúja.
+
+[Lectio1]
+Lectio sancti Evangelii secundum Lucam.
+!Luc 24:36-47
+In illo tempore: Stetit Jesus in medio discipulorum, et dicit eis: Pax vobis: ego sum, nolite timere. Et reliqua.
+_
+Homilia sancti Ambrosii Episcopi.
+!Liber 10. Comment. in Lucam, cap. 24. ante finem.
+Mirum, quo modo se natura corporea per impenetrabile corpus infuderit invisibili aditu, visibili conspectu; tangi facilis, difficilis aestimari. Denique conturbati discipuli aestimabant se spiritum videre. Et ideo Dominus, ut speciem nobis resurrectionis ostenderet, Palpate, inquit, et videte, quia spiritus carnem et ossa non habet, sicut me videtis habere. Non ergo per incorpoream naturam, sed per resurrectionis qualitatem, impervia usu clausa penetravit. Nam quod tangitur, corpus est: quod palpatur, corpus est. In corpore autem resurgemus. Seminatur enim corpus animale, surgit corpus spiritale: sed illud subtilius, hoc crassius, utpote adhuc terrenae labis qualitate concretum. 
+
+[Responsory1]
+R. Virtúte magna reddébant Apóstoli,
+* Testimónium resurrectiónis Jesu Christi Dómini nostri, allelúja, allelúja.
+V. Repléti quidem Spíritu Sancto loquebántur cum fidúcia verbum Dei.
+R. Testimónium resurrectiónis Jesu Christi Dómini nostri, allelúja, allelúja.
+
+[Lectio2]
+Nam quomodo non corpus, in quo manebant insignia vulnerum, vestigia cicatricum, quae Dominus palpanda obtulit? In quo non solum fidem firmat, sed etiam devotionem acuit, quod vulnera suscepta pro nobis caelo inferre maluit, abolere noluit; ut Deo Patri nostrae pretia libertatis ostenderet. Talem sibi Pater ad dexteram locat, trophaeum nostrae salutis amplectens: tales illic Martyres nobis cicatricis suae corona monstravit. Et quoniam sermo huc noster evasit, consideremus qua gratia secundum Joannem crediderint Apostoli, qui gavisi sunt; secundum Lucam quasi increduli redarguantur: ibi Spiritum Sanctum acceperint, hic sedere in civitate jubeantur, quoadusque induantur virtute ex alto. 
+
+[Responsory2]
+R. De ore prudéntis procédit mel, allelúja: dulcédo mellis est sub língua ejus, allelúja:
+* Favus distíllans lábia ejus, allelúja, allelúja.
+V. Sapiéntia requiéscit in corde ejus, et prudéntia in sermóne oris illíus.
+R. Favus distíllans lábia ejus, allelúja, allelúja.
+&Gloria
+R. Favus distíllans lábia ejus, allelúja, allelúja.
+
+[Lectio3]
+Et videtur mihi ille quasi Apostolus majora et altiora tetigisse, hic sequentia et humanis proxima: hic historico usus circuitu, ille compendio: quia et de illo dubitari non potest, qui testimonium perhibet de iis, quibus ipse interfuit, et verum est testimonium ejus: et ab hoc quoque, qui Evangelista esse meruit, vel negligentiae vel mendacii suspicionem aequum est propulsari. Et ideo verum putamus utrumque, non sententiarum varietate, nec personarum diversitate distinctum. Nam etsi primo Lucas eos non credidisse dicat, postea tamen credidisse demonstrat: et si prima consideremus, contraria sunt: si sequentia, certum est convenire.
+&teDeum
+
+[Ant 2]
+Stetit Jesus * in médio discipulórum suórum, et dixit eis: Pax vobis, allelúja, allelúja.
+
+[Oratio]
+Deus, qui Ecclésiam tuam novo semper fœtu multíplicas: concéde fámulis tuis; ut sacraméntum vivéndo téneant, quod fide percepérunt.
+$Per Dominum
+
+[Ant 3]
+Vidéte manus meas * et pedes meos, quia ego ipse sum, allelúja, allelúja.
+
