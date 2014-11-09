@@ -105,7 +105,7 @@ sub psalmi_matutinum_monastic {
     if ($w) {  
       @psalmi = split("\n", $w);
       $comment = $c;
-      $prefix .= ' et Psalmi'; 
+      $prefix .= ($lang =~ /Magyar/i) ? ' és zsoltárok' : ' et Psalmi';
     }
   }									  
 
