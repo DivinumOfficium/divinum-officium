@@ -46,8 +46,11 @@ sub invitatorium {
   if ($w) {$ant = chompd($w); $comment = $c;} 
 
 
-  setcomment($label, 'Source', $comment, $lang, 'Antiph.');	 
-  
+  if ($lang =~ /Magyar/i) {
+    setcomment($label, 'Source', $comment, $lang, 'Antif.');}
+  else {
+    setcomment($label, 'Source', $comment, $lang, 'Antiph.');}
+
   $ant =~ s/^.*?\=\s*// ;
   $ant = chompd($ant);
   $ant = "Ant. $ant";  
@@ -203,7 +206,7 @@ sub psalmi_matutinum {
   if ($w) {     
     @psalmi = split("\n", $w);
     $comment = $c;
-    $prefix .= ' et Psalmi'; 
+    $prefix .= ($lang =~ /Magyar/i) ? ' és zsoltárok' : ' et Psalmi';
   }									  
  
   if ($rule =~ /Ant Matutinum ([0-9]+) special/i) {
