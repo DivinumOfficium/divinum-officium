@@ -296,26 +296,29 @@ $sel[0] = '';
 for ($i = 1; $i < @votive; $i++) {$sel[$i] = ($votive =~ $votive[$i]) ? 'SELECTED' : '';} 
 $osize = (@votive > $vsize) ? $vsize : @votive;
 
-$chl1 = ($lang2 =~ /Latin/i) ? 'SELECTED' : '';
-$chl2 = ($lang2 =~ /English/i) ? 'SELECTED' : '';
-$chl3 = ($lang2 =~ /Magyar/i) ? 'SELECTED' : '';
-
 $addvotive =  "&nbsp;&nbsp;&nbsp;\n<SELECT NAME=votive SIZE=$osize onclick=\"parchange()\">\n";
 for ($i = 0; $i < @votive; $i++) {$addvotive .= "<OPTION $sel[$i] VALUE=\"$votive[$i]\">$votive[$i]\n";} 
 $addvotive .= "</SELECT>\n"; 
 
+my @languages = ('Latin', 'English', 'Italiano', 'Magyar');
+my $lang_count = @languages;
+
  my $vers = $version;
  $vers =~ s/ /_/g; 
  my $propname = ($Propers) ? 'Full' : 'Propers';                    
- 
+
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="callofficium();">Divinum Officium</A>
 &nbsp;&nbsp;&nbsp;
-<SELECT NAME=lang2 SIZE=3 onclick="parchange()">
-<OPTION $chl1 VALUE='Latin'>Latin
-<OPTION $chl2 VALUE=English>English
-<OPTION $chl3 VALUE=Magyar>Magyar
+<SELECT NAME=lang2 SIZE="$lang_count" onclick="parchange()">
+PrintTag
+foreach my $lang (@languages)
+{
+  my $sel = ($lang2 =~ /$lang/i) ? 'SELECTED' : '';
+  print qq(<OPTION $sel VALUE="$lang">$lang</OPTION>);
+}
+print << "PrintTag";
 </SELECT>
 $addvotive</P>
 <P ALIGN=CENTER><FONT SIZE=-1>
