@@ -127,36 +127,26 @@ sub initialise_hour
     # Name and rank.
     $dayname[1] = "$winning_office_ref->{title} $rank[1]";
 
+    # Common.
     our ($communetype, $commune, $communename);
 
-    # Common. TODO: Move all this logic into extract_common.
-    if($winning_office_ref->{cycle} == SANCTORAL_OFFICE)
+    if (my ($new_communetype, $new_commune) =
+      extract_common($rank[3], $winning_office_ref->{rite}))
     {
-      if (my ($new_communetype, $new_commune) = extract_common($rank[3], $rank[2]))
-      {
-        ($communetype, $commune) = ($new_communetype, $new_commune);
-      }
-
-      # Genuine common?
-      if ($rank[3] =~ /^(ex|vide)\s*(C[0-9]+[a-z]*)/i)
-      {
-        # Get names of all the commons.
-        our %dialog;
-        (my $all_common_names = $dialog{communes}) =~ s/\n//g;
-        my %communenames = split /,/, $all_common_names;
-
-        # Append some common info to the name and rank.
-        $dayname[1] .= " $communetype $communenames{$commune} [$commune]";
-      }
+      ($communetype, $commune) = ($new_communetype, $new_commune);
     }
-    elsif($rank[3] =~ /(ex|vide)\s*(.*)\s*$/i)
+
+    # Genuine common?
+    if ($winning_office_ref->{cycle} == SANCTORAL_OFFICE &&
+      $rank[3] =~ /^(ex|vide)\s*(C[0-9]+[a-z]*)/i)
     {
-      $communetype = $1;
-      my $name = $2;
-      if($name =~ /^C[0-9]/i) {$name = "$communename/$name";}
-      elsif($name !~ /(Sancti|Commune|Tempora)/i) {$name = "$temporaname/$name";}
-      $commune = "$name.txt";
-      if($version =~ /trident/i && $version !~ /monastic/i) {$communetype = 'ex';}
+      # Get names of all the commons.
+      our %dialog;
+      (my $all_common_names = $dialog{communes}) =~ s/\n//g;
+      my %communenames = split /,/, $all_common_names;
+
+      # Append some common info to the name and rank.
+      $dayname[1] .= " $communetype $communenames{$commune} [$commune]";
     }
 
     if($winning_office_ref->{cycle} == SANCTORAL_OFFICE && $dayname[0])
@@ -311,3 +301,6 @@ sub precedence
     $horas::hora);
 }
 
+
+
+1;
