@@ -481,22 +481,6 @@ sub setcross
     return $line;
 }
 
-#*** setcross2($line)
-# Version (unused) of setcross that uses gifs.
-#sub setcross2
-#{
-    #my $line = shift;
-    #my $csubst;
-    #$csubst = "<IMG SRC=$htmlurl/cross3.gif ALIGN=BASELINE ALT=''>";
-    #$line =~ s/\+\+\+/$csubst/g;
-    #$csubst = "<IMG SRC=$htmlurl/cross2.gif ALIGN=BASELINE ALT=''>";
-    #$line =~ s/\+\+/$csubst/g;
-    #$csubst = "<IMG SRC=$htmlurl/cross1.gif ALIGN=BASELINE ALT=''>";
-    #$line =~ s/ \+ / $csubst /g;
-
-    #return $line;
-#}
-
 #*** setcell($text1, $lang1);
 # output the content of the cell
 sub setcell {
@@ -504,11 +488,11 @@ sub setcell {
 
   my $lang = shift;
 
-  my $width = ($only) ? 100 : 45;
+  my $width = ($only) ? 100 : 50;
 
   #if (!$Ck) {
     if (columnsel($lang)) {
-	  $searchind++; print "<!-- Laci3 --><TR>";
+	  $searchind++; print "<TR><TD>&nbsp;</TD></TR><TR>";
       if ($notes && $text =~ /\{\:(.*?)\:\}/) {
         my $notefile = $1;
 	    $notefile =~ s/^pc/p/;
@@ -517,75 +501,51 @@ sub setcell {
 	    "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=\"80%\"></TD></TR>\n";
       }
 	}
-    print "<!-- Laci4 --><TD VALIGN=\"TOP\" WIDTH=\"$width%\">";
-    topnext_cell($lang);
-    if ($text =~ /%(.*?)%/) {
-      my $q = $1;
-      if ($officium =~ /Eofficium/i) {
-        if ($hora =~ /Matutinum/i) {
-          $text =~ s{%(.*?)%}{<A HREF="Eofficium.pl?date1=$date1&caller=$caller&command=prayLaudes&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$q</A>}i;
-        } elsif ($hora =~ /Vespera/i) {
-          $text =~ s{%(.*?)%}{<A HREF="Eofficium.pl?date1=$date1&caller=1&command=prayVespera&version=$version&testmode=$testmode&lang2=$lang2&votive=C9">$q</A>}i;
-        } elsif ($hora =~ /Laudes/i) {
-          $text =~ s{%(.*?)%}{<A HREF="Eofficium.pl?date1=$date1&caller=1&command=prayMatutinum&version=$version&testmode=$testmode&lang2=$lang2&votive=C9">$q</A>}i;
-        }
-      } else {
-        if ($hora =~ /Matutinum/i) {
-          $text =~ s{%(.*?)%}{<A HREF=# onclick="hset('Laudes');">$q</A>}i;
-        } elsif ($hora =~ /Vespera/i) {
-          $text =~ s{%(.*?)%}{<A HREF=# onclick="defunctorum('Vespera');">$q</A>}i;
-        } elsif ($hora =~ /Laudes/i) {
-          $text =~ s{%(.*?)%}{<A HREF=# onclick="defunctorum('Matutinum');">$q</A>}i;
-        }
-      }
-    }
-#  }
+
   $text =~ s/\_/ /g;
   $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
   $text =~ s/\{\:.*?\:\}//sg;
   $text =~ s/\`//g;
 
-  $tdtext2 = '';                                                                
-  if ($column == 1) {$tdtext1 = $text;}                                         
-  else {$tdtext2 = $text;}                                                      
-                                                                                
-  if ($column == 2 && !$only) {                                                 
-    my ($b1, $b2) = longtd($tdtext1, $tdtext2);                                 
-        @tdtext1 = @$b1;                                                        
-        @tdtext2 = @$b2;                                                        
-    my $item;                                                                   
-    my $i = 0;                                                                  
+  $tdtext2 = '';
+  if ($column == 1) {$tdtext1 = $text;}
+  else {$tdtext2 = $text;}
+
+  if ($column == 2 && !$only) {
+    my ($b1, $b2) = longtd($tdtext1, $tdtext2);
+        @tdtext1 = @$b1;
+        @tdtext2 = @$b2;
+    my $item;
+    my $i = 0;
     $htmltext = '';
-        while ($i < @tdtext1 && $i < @tdtext2) {                                
-          $item = $tdtext1[$i];                                                 
-      if ($i > 0) {$htmltext .= "<TR>";}                                        
-          $htmltext .="<TD $background VALIGN=TOP ALIGN=LEFT WIDTH=45%>";       
-      $htmltext .=  setfont($blackfont,$item) . "</TD>\n";                      
-                                                                                
-      $item = $tdtext2[$i];                                                     
-      $htmltext .="<TD $background VALIGN=TOP ALIGN=LEFT WIDTH=45%>";           
-      $htmltext .=  setfont($blackfont,$item) . "</TD>\n";                      
-      if ($extracolumn) {                                                       
-            $htmltext .="<TD $background VALIGN=TOP ALIGN=Center WIDTH=10%>";   
-        $htmltext .=  "$filler</TD>\n";                                         
-      }                                                                         
-          if ($filler && $filler ne ' ') {$filler = ' ';}                       
-                                                                                
-      $i++;                                                                     
-        }                                                                       
-        @tdtext1 = splice(@tdtext1, @tdtext1);                                  
-    @tdtext2 = splice(@tdtext2, @tdtext2);                                      
-    $htmltext .= "</TR>\n";
+        while ($i < @tdtext1 && $i < @tdtext2) {
+          $item = $tdtext1[$i];
+      if ($i > 0) {$htmltext .= "<TR>";}
+          $htmltext .="<TD VALIGN=\"TOP\" ALIGN=\"LEFT\" WIDTH=\"45%\">";
+      $htmltext .=  setfont($blackfont,$item) . "</TD>\n";
+
+      $item = $tdtext2[$i];
+      $htmltext .="<TD VALIGN=\"TOP\" ALIGN=\"LEFT\" WIDTH=\"45%\">";
+      $htmltext .=  setfont($blackfont,$item) . "</TD></TR>\n";
+      if ($extracolumn) {
+            $htmltext .="<TD VALIGN=\"TOP\" ALIGN=\"center\" WIDTH=\"10%\">";
+        $htmltext .=  "$filler</TD>\n";
+      }
+          if ($filler && $filler ne ' ') {$filler = ' ';}
+
+      $i++;
+        }
+        @tdtext1 = splice(@tdtext1, @tdtext1);
+    @tdtext2 = splice(@tdtext2, @tdtext2);
     print $htmltext;
   }
 
-  #if ($Ck) {
-    #if ($column == 1) {push(@ctext1, $text);}
-	  #else {push(@ctext2, $text);}
-  #} else {
-    print setfont($blackfont,$text) . "</TD><!-- Laci -->\n";
-    if (!columnsel($lang)) {print "</TR><!-- Laci2 -->\n";}
-  #}
+  if ($only) {
+    $htmltext .=  "<TD VALIGN=\"TOP\" WIDTH=\"$width%\">";
+    $htmltext .=  setfont($blackfont,$text) . "</TD>\n";
+    if ($only || !columnsel($lang)) {$htmltext .= "</TR>\n";}
+    print $htmltext;
+  }
 }
 
 #*** topnext_Cell()
@@ -612,42 +572,12 @@ sub topnext {
 #*** table_start
 # start main table
 sub table_start {
-  #if ($Ck) {
-    #@ctext1 = splice(@ctext1, @ctext1);
-    #@ctext2 = splice(@ctext2, @ctext2);
-  #}
-  #my $width = (
-      #$textwidth                &&
-      #$textwidth =~ /^[0-9]+$/  &&
-      #50 <= $textwidth          &&
-      #$textwidth <= 100) ?
-      #"$textwidth\%" :
-      #'80%';
   print "<TABLE BORDER=\"0\" CELLPADDING=\"0\" CELLSPACING=\"0\" WIDTH=\"99%\" STYLE=\"margin: 0px auto;\">";
 }
 
 #table_end()
 # finishes main table
 sub table_end {
-  #if ($Ck) {
-    #my $width = ($only) ? 100 : 50;
-    #print "<TR><TD VALIGN=\"TOP\" WIDTH=\"$width%\">\n";
-	  #my $item;
-	  #my $len1 = 0;
-    #foreach $item (@ctext1) {print "$item<BR>\n"; $len1 += wnum($item);}
-    #print "</TD>\n";
-	  #if (!$only) {
-      #$len2 = 0;
-      #print "<TD VALIGN=\"TOP\" WIDTH=\"$width%\">\n";
-      #foreach $item (@ctext2) {print "$item<BR>\n"; $len2 += wnum($item);}
-	    #print "</TD></TR>\n";
-    #}
-    #print "<TR><TD VALIGN=\"TOP\" WIDTH=\"$width%\"><FONT SIZE=\"1\">$len1 words</FONT></TD>";
-    #if (!$only) {
-      #print "<TD VALIGN=\"TOP\" WIDTH=\"$width%\"><FONT SIZE=\"1\">$len2 words</FONT></TD></TR>";
-    #}
-  #}
-
   print "</TABLE>\n";
 }
 
@@ -664,9 +594,9 @@ sub wnum {
 }
 
 sub longtd {
- 
-  my $a1 = shift; 
-  my $a2 = shift; 
+  my $celllength = 10000;
+  my $a1 = shift;
+  my $a2 = shift;
 
   my @a1 = split('<BR>', $a1);
   my @a2 = split('<BR>', $a2);
@@ -675,17 +605,17 @@ sub longtd {
   my $i;
   my $lim = @a1;
   if (@a2 > $lim) {$lim = @a2;}
-  
+
   for ($i = 0; $i < $lim; $i++) {
     my $b1 = $a1[$i];
-	my $b2 = $a2[$i]; 
+	my $b2 = $a2[$i];
     if (length($b1) < $celllength && length($b2) < $celllength) {
 	  if ($b1) {push(@b1, $b1);}
-	  if ($b2) {push(@b2, $b2);}  
+	  if ($b2) {push(@b2, $b2);}
 	  next;
 	}
-	my @c1 = split('|', $b1); 
-	my @c2 = split('|', $b2); 
+	my @c1 = split('|', $b1);
+	my @c2 = split('|', $b2);
     my $flag = 0;
 	my $i = 0;
 	my $s = '';
@@ -718,13 +648,10 @@ sub longtd {
 	   ($c =~ /[,;:]/ && length($s) > $celllength)) {push(@b2, $s); $s = '';}
     }
 	if ($s) {push(@b2, $s);}
-    
+
 	while (@b1 < @b2) {push(@b1, ' ');}
 	while (@b2 && @b2 < @b1) {push(@b2, ' ');}
-  
-  
-  } 
-  
-  return (\@b1, \@b2);
+  }
 
+  return (\@b1, \@b2);
 }
