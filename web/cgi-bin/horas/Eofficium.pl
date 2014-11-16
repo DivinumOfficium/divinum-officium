@@ -66,7 +66,7 @@ our $duplex; #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
 require "$Bin/do_io.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
-require "$Bin/Xwebdia.pl";
+require "$Bin/Ewebdia.pl";
 require "$Bin/setup.pl";
 require "$Bin/horas.pl";
 require "$Bin/specials.pl";
