@@ -545,6 +545,40 @@ sub setcell {
   $text =~ s/\{\:.*?\:\}//sg;
   $text =~ s/\`//g;
 
+  $tdtext2 = '';                                                                
+  if ($column == 1) {$tdtext1 = $text;}                                         
+  else {$tdtext2 = $text;}                                                      
+                                                                                
+  if ($column == 2 && !$only) {                                                 
+    my ($b1, $b2) = longtd($tdtext1, $tdtext2);                                 
+        @tdtext1 = @$b1;                                                        
+        @tdtext2 = @$b2;                                                        
+    my $item;                                                                   
+    my $i = 0;                                                                  
+    $htmltext = '';
+        while ($i < @tdtext1 && $i < @tdtext2) {                                
+          $item = $tdtext1[$i];                                                 
+      if ($i > 0) {$htmltext .= "<TR>";}                                        
+          $htmltext .="<TD $background VALIGN=TOP ALIGN=LEFT WIDTH=45%>";       
+      $htmltext .=  setfont($blackfont,$item) . "</TD>\n";                      
+                                                                                
+      $item = $tdtext2[$i];                                                     
+      $htmltext .="<TD $background VALIGN=TOP ALIGN=LEFT WIDTH=45%>";           
+      $htmltext .=  setfont($blackfont,$item) . "</TD>\n";                      
+      if ($extracolumn) {                                                       
+            $htmltext .="<TD $background VALIGN=TOP ALIGN=Center WIDTH=10%>";   
+        $htmltext .=  "$filler</TD>\n";                                         
+      }                                                                         
+          if ($filler && $filler ne ' ') {$filler = ' ';}                       
+                                                                                
+      $i++;                                                                     
+        }                                                                       
+        @tdtext1 = splice(@tdtext1, @tdtext1);                                  
+    @tdtext2 = splice(@tdtext2, @tdtext2);                                      
+    $htmltext .= "</TR>\n";
+    print $htmltext;
+  }
+
   #if ($Ck) {
     #if ($column == 1) {push(@ctext1, $text);}
 	  #else {push(@ctext2, $text);}
@@ -627,4 +661,70 @@ sub wnum {
   my @item = split(' ', $item);
   my $n = @item;
   return $n;
+}
+
+sub longtd {
+ 
+  my $a1 = shift; 
+  my $a2 = shift; 
+
+  my @a1 = split('<BR>', $a1);
+  my @a2 = split('<BR>', $a2);
+  my @b1 = splice(@b1, @b1);
+  my @b2 = splice(@b2, @b2);
+  my $i;
+  my $lim = @a1;
+  if (@a2 > $lim) {$lim = @a2;}
+  
+  for ($i = 0; $i < $lim; $i++) {
+    my $b1 = $a1[$i];
+	my $b2 = $a2[$i]; 
+    if (length($b1) < $celllength && length($b2) < $celllength) {
+	  if ($b1) {push(@b1, $b1);}
+	  if ($b2) {push(@b2, $b2);}  
+	  next;
+	}
+	my @c1 = split('|', $b1); 
+	my @c2 = split('|', $b2); 
+    my $flag = 0;
+	my $i = 0;
+	my $s = '';
+
+	while ($i < @c1) {
+	  my $c = $c1[$i];
+	  $i++;
+      if (!$flag && length($s) > $celllength && $c eq '<' && $s) {push(@b1, $s); $s = '';}
+	  if ($c eq '<' && $c1[$i] ne '/') {$flag++;}
+	  if ($c eq '<' && $c1[$i] eq '/' && $flag) {$flag--;}
+	  $s .= $c;
+	  if ($flag) {next;}
+	  if (($c =~ /[.?]/ && length($s) > $celllength && $i < @c1-1 && $c1[$i] eq ' ' && $c1[$i+1] =~ /[A-Z"]/) ||
+	   ($c =~ /[,;:]/ && length($s) > $celllength)) {push(@b1, $s); $s = '';}
+    }
+	if ($s) {push(@b1, $s);}
+
+	$i = 0;
+	$s = '';
+	$flag = 0;
+	while ($i < @c2) {
+	  my $c = $c2[$i];
+	  $i++;
+      if (!$flag && length($s) > $celllength && $c eq '<' && $s) {push(@b2, $s); $s = '';}
+	  if ($c eq '<' && $c2[$i] ne '/') {$flag++;}
+	  if ($c eq '<' && $c2[$i] eq '/' && $flag) {$flag--;}
+	  $s .= $c;
+	  if ($flag) {next;}
+	  if (($c =~ /[.?]/ && length($s) > $celllength && $i < @c2-1 && $c2[$i] eq ' ' && $c2[$i+1] =~ /[A-Z"]/) ||
+	   ($c =~ /[,;:]/ && length($s) > $celllength)) {push(@b2, $s); $s = '';}
+    }
+	if ($s) {push(@b2, $s);}
+    
+	while (@b1 < @b2) {push(@b1, ' ');}
+	while (@b2 && @b2 < @b1) {push(@b2, ' ');}
+  
+  
+  } 
+  
+  return (\@b1, \@b2);
+
 }
