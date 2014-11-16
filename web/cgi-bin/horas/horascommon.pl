@@ -162,42 +162,59 @@ sub checkfile {
 }
 
 
-#*** extract_common($common_field, $office_rank)
+#*** extract_common($office_desc_ref, $common_field)
 # Extracts the type and filename of a common referenced by an
 # expression of the form used in rank lines. $common_field is this
-# expression, and $office_rank is the rank of the corresponding office.
-# Returns respectively the type ('ex' or 'vide') and the filename.
-sub extract_common($$)
+# expression, and $office_desc_ref is the descriptor of the corresponding
+# office.  Returns respectively the type ('ex' or 'vide') and the filename.
+sub extract_common
 {
-  my ($common_field, $office_rank) = @_;
+  my ($office_desc_ref, $common_field) = @_;
 
   # These shadow globals.
   my ($communetype, $commune);
 
-  our ($datafolder, $lang1, $communename, $sanctiname);
+  our ($datafolder, $lang1, $communename, $sanctiname, $temporaname);
   our $version;
   our @dayname;
 
-  if ($common_field =~ /^(ex|vide)\s*C/i)
+  if ($common_field =~ /^(ex|vide)\s*(\S.*?)\s*$/i)
   {
-    # Genuine common.
-    
-    $communetype = $1;
-    $communetype = 'ex' if ($version =~ /Trident/i && $office_rank >= 2);
-    $commune = $1 if ($common_field =~ /(C[0-9]+[a-z]*)/i);
+    $communetype = ($version =~ /Trident/i &&
+      ($version !~ /Monastic/i ||
+        $office_desc_ref->{cycle} == SANCTORAL_OFFICE)) ?
+      'ex' : $1;
+    my $raw_fname = $2;
 
-    my $paschal_fname = "$datafolder/$lang1/$communename/$commune" . 'p.txt';
-    $commune .= 'p' if ($dayname[0] =~ /Pasc/i && (-e $paschal_fname));
-    
-    $commune = "$communename/$commune.txt" if ($commune);
-  }
-  elsif ($common_field =~ /(ex|vide)\s*Sancti\/(.*)\s*$/i)
-  {
-    # Another sanctoral office used as a pseudo-common.
-    
-    $communetype = $1;
-    $commune = "$sanctiname/$2.txt";
-    $communetype = 'ex' if ($version =~ /Trident/i);
+    my $default_dir =
+      $office_desc_ref->{cycle} == SANCTORAL_OFFICE ?
+        $sanctiname : $temporaname;
+
+    if ($raw_fname =~ /^C/)
+    {
+      # Genuine common.
+      
+      $communetype = $1;
+      $communetype = 'ex' if ($version =~ /Trident/i && $office_rite != SIMPLE_RITE);
+      $commune = $1 if ($common_field =~ /(C[0-9]+[a-z]*)/i);
+
+      my $paschal_fname = "$datafolder/$lang1/$communename/$commune" . 'p.txt';
+      $commune .= 'p' if ($dayname[0] =~ /Pasc/i && (-e $paschal_fname));
+      
+      $commune = "$communename/$commune.txt" if ($commune);
+    }
+    elsif ($raw_fname =~ /^Sancti\/(.*)$/i)
+    {
+      $commune = "$sanctiname/$2.txt";
+    }
+    elsif ($raw_fname =~ /^Tempora\/(.*)$/i)
+    {
+      $commune = "$temporaname/$2.txt";
+    }
+    else
+    {
+      $commune = "$raw_fname.txt";
+    }
   }
 
   return ($communetype, $commune);

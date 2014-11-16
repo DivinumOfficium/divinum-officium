@@ -24,5 +24,6 @@ use constant
   SECOND_VESPERS_AND_COMPLINE => 3,
 };
 
+
 1;
 
