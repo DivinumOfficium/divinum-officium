@@ -772,7 +772,7 @@ sub papal_antiphon_dum_esset($)
   our $datafolder, $communename;
   
   my %papalcommon = %{setupstring($datafolder, $lang, "$communename/C4.txt")};
-  return $papalcommon{'Ant 9'};
+  return $papalcommon{'Ant 3 summi Pontificis'};
 }
 
 
