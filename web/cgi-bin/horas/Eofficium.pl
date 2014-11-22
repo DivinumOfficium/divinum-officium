@@ -211,7 +211,7 @@ for ($i = 1; $i <= $completed; $i++) {$hcolor[$i] = 'maroon';}
   #generate HTML
   htmlHead($title, 2);
     print << "PrintTag";
-<BODY VLINK="$visitedlink" LINK="$link">
+<BODY VLINK="black" LINK="black">
 PrintTag
 
 if ($command =~ /setup/i) {
@@ -251,35 +251,27 @@ PrintTag
 if ($pmode =~ /(main|hora)/i) {
   if ($votive ne 'C9') {
 print << "PrintTag";
-<P ALIGN=center><I>
-<A HREF="$date1-1-Matutinum.html">
- <FONT COLOR="$hcolor[1]">$horas[1]</FONT></A>
+<P ALIGN="center"><I>
+<A HREF="$date1-1-Matutinum.html"><FONT COLOR="$hcolor[1]">$horas[1]</FONT></A>
 &nbsp;&nbsp;
-<A HREF="$date1-2-Laudes.html">
-<FONT COLOR="$hcolor[2]">$horas[2]</FONT></A>
+<A HREF="$date1-2-Laudes.html"><FONT COLOR="$hcolor[2]">$horas[2]</FONT></A>
 &nbsp;&nbsp;
-<A HREF="$date1-3-Prima.html">
-<FONT COLOR="$hcolor[3]">$horas[3]</FONT></A>
+<A HREF="$date1-3-Prima.html"><FONT COLOR="$hcolor[3]">$horas[3]</FONT></A>
 &nbsp;&nbsp;
-<A HREF="$date1-4-Tertia.html">
-<FONT COLOR="$hcolor[4]">$horas[4]</FONT></A>
+<A HREF="$date1-4-Tertia.html"><FONT COLOR="$hcolor[4]">$horas[4]</FONT></A>
 <BR>
-<A HREF="$date1-5-Sexta.html">
-<FONT COLOR="$hcolor[5]">$horas[5]</FONT></A>
+<A HREF="$date1-5-Sexta.html"><FONT COLOR="$hcolor[5]">$horas[5]</FONT></A>
 &nbsp;&nbsp;
-<A HREF="$date1-6-Nona.html">
-<FONT COLOR="$hcolor[6]">$horas[6]</FONT></A>
+<A HREF="$date1-6-Nona.html"><FONT COLOR="$hcolor[6]">$horas[6]</FONT></A>
 &nbsp;&nbsp;
-<A HREF="$date1-7-Vespera.html">
-<FONT COLOR="$hcolor[7]">$horas[7]</FONT></A>
+<A HREF="$date1-7-Vespera.html"><FONT COLOR="$hcolor[7]">$horas[7]</FONT></A>
 &nbsp;&nbsp;
-<A HREF="$date1-8-Completorium.html">
-<FONT COLOR="$hcolor[8]">$horas[8]</FONT></A>
+<A HREF="$date1-8-Completorium.html"><FONT COLOR="$hcolor[8]">$horas[8]</FONT></A>
 </I></P>
 PrintTag
 } else {
 print << "PrintTag";
-<P ALIGN=center><I>
+<P ALIGN="center"><I>
 <A HREF="$date1-1-Matutinum.html"><FONT COLOR="$hcolor[1]">$horas[1]</FONT></A>
 &nbsp;&nbsp;
 <A HREF="$date1-2-Laudes.html"><FONT COLOR="$hcolor[2]">$horas[2]</FONT></A>
@@ -311,39 +303,29 @@ sub headline {
   my $daten = prevnext($date1, 1);
   my $datep = prevnext($date1, -1);
   print << "PrintTag";
-<P ALIGN=center><FONT COLOR="$daycolor">$headline<BR></FONT>
+<P ALIGN="center"><FONT COLOR="$daycolor">$headline<BR></FONT>
 $comment<BR><BR>
 <FONT SIZE="+1" COLOR="maroon">$h</FONT>&nbsp;&nbsp;&nbsp;
-<A HREF="$datep-1-Matutinum.html">
-&darr;</A>
+<A HREF="$datep-1-Matutinum.html">&darr;</A>
 $date1
-<A HREF="$daten-1-Matutinum.html">
-&uarr;</A>
+<A HREF="$daten-1-Matutinum.html">&uarr;</A>
 </P>
-<P ALIGN=center><I>
-<A HREF="$date1-1-Matutinum.html">
- <FONT COLOR="$hcolor[1]">$horas[1]</FONT></A>
+<P ALIGN="center"><I>
+<A HREF="$date1-1-Matutinum.html"><FONT COLOR="$hcolor[1]">$horas[1]</FONT></A>
 &nbsp;&nbsp;
-<A HREF="$date1-2-Laudes.html">
-<FONT COLOR="$hcolor[2]">$horas[2]</FONT></A>
+<A HREF="$date1-2-Laudes.html"><FONT COLOR="$hcolor[2]">$horas[2]</FONT></A>
 &nbsp;&nbsp;
-<A HREF="$date1-3-Prima.html">
-<FONT COLOR="$hcolor[3]">$horas[3]</FONT></A>
+<A HREF="$date1-3-Prima.html"><FONT COLOR="$hcolor[3]">$horas[3]</FONT></A>
 &nbsp;&nbsp;
-<A HREF="$date1-4-Tertia.html">
-<FONT COLOR="$hcolor[4]">$horas[4]</FONT></A>
+<A HREF="$date1-4-Tertia.html"><FONT COLOR="$hcolor[4]">$horas[4]</FONT></A>
 <BR>
-<A HREF="$date1-5-Sexta.html">
-<FONT COLOR="$hcolor[5]">$horas[5]</FONT></A>
+<A HREF="$date1-5-Sexta.html"><FONT COLOR="$hcolor[5]">$horas[5]</FONT></A>
 &nbsp;&nbsp;
-<A HREF="$date1-6-Nona.html">
-<FONT COLOR="$hcolor[6]">$horas[6]</FONT></A>
+<A HREF="$date1-6-Nona.html"><FONT COLOR="$hcolor[6]">$horas[6]</FONT></A>
 &nbsp;&nbsp;
-<A HREF="$date1-7-Vespera.html">
-<FONT COLOR="$hcolor[7]">$horas[7]</FONT></A>
+<A HREF="$date1-7-Vespera.html"><FONT COLOR="$hcolor[7]">$horas[7]</FONT></A>
 &nbsp;&nbsp;
-<A HREF="$date1-8-Completorium.html">
-<FONT COLOR="$hcolor[8]">$horas[8]</FONT></A>
+<A HREF="$date1-8-Completorium.html"><FONT COLOR="$hcolor[8]">$horas[8]</FONT></A>
 </I></P>
 PrintTag
 }
