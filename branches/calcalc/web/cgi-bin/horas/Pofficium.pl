@@ -25,6 +25,9 @@ use Time::Local;
 #use DateTime;
 use locale;
 
+use lib "$Bin/..";
+use horas::main qw(precedence);
+
 $error = '';	 
 $debug = '';
 our $Tk = 0;

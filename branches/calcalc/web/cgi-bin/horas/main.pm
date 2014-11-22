@@ -14,7 +14,7 @@ BEGIN
 
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(initialise_hour);
+  our @EXPORT_OK = qw(initialise_hour precedence);
 }
 
 use FindBin qw($Bin);
