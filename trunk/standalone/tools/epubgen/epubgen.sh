@@ -79,9 +79,19 @@ echo -e "\e[1m:: Starting to create index.html\e[0m"
 cd $WDIR
 exec 6>&1
 exec > index.html
-printf '<html>\n<head>\n<title>Index</title>\n</head>\n<body>\n'
-for file in *.html; do
-  stat "$file" -c '<a href="%n">%n</a><br>'
+printf '<html>\n<head><title>Index Horarum</title></head>\n<body>\n<h1>Index Horarum</h1>'
+for DAY in $(seq -w $DAYN); do
+    printf "$MONTH-$DAY-$YEAR"
+    printf "<ul>\n"
+    printf "<li><a href="$MONTH-$DAY-$YEAR-1-Matutinum.html">Matutinum</a></li>\n"
+    printf "<li><a href="$MONTH-$DAY-$YEAR-2-Laudes.html">Laudes</a></li>\n"
+    printf "<li><a href="$MONTH-$DAY-$YEAR-3-Prima.html">Prima</a></li>\n"
+    printf "<li><a href="$MONTH-$DAY-$YEAR-4-Tertia.html">Tertia</a></li>\n"
+    printf "<li><a href="$MONTH-$DAY-$YEAR-5-Sexta.html">Sexta</a></li>\n"
+    printf "<li><a href="$MONTH-$DAY-$YEAR-6-Nona.html">Nona</a></li>\n"
+    printf "<li><a href="$MONTH-$DAY-$YEAR-7-Vespera.html">Vespera</a></li>\n"
+    printf "<li><a href="$MONTH-$DAY-$YEAR-8-Completorium.html">Completorium</a></li>\n"
+    printf "</ul><br>\n"
 done
 printf '</body>\n</html>\n'
 exec 1>&6 6>&-
