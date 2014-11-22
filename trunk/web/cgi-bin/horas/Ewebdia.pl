@@ -58,7 +58,7 @@ sub setup {
   my $name = shift;
   if (!$name) {$name = "noname";}
   my $scripto = shift;
-  if (!$scripto) {beep(); $error = 'No setup parameter'; return;}
+  if (!$scripto) {$error = 'No setup parameter'; return;}
   my $script = $scripto;
   $script =~ s/[\r\n]+//g;
 
@@ -293,11 +293,6 @@ sub getsetupvalue {
 
 
 
-#*** beep()
-# generates a beep sound. Inactive in cgi version
-sub beep {
-}
-
 #*** strictparam(name)
 # get the parameter value for name, empty string if undef
 sub strictparam
@@ -427,7 +422,6 @@ sub setcookie1 {
   my @t = localtime(time() + 60*60*24);
   my $t = timelocal($t[0],$t[1],$t[2],$t[3], $t[4], $t[5]);
   $c = $q->cookie(-name=>"$cname", -value=>"$value", -expires=>$t);
-  #print "Set-Cookie:$c\n";
 }
 
 sub getcookie1 {
@@ -452,32 +446,15 @@ sub getcookie1 {
 sub setcross
 {
     my $line = shift;
-    if ( CGI::user_agent("BlackBerry") )
-    {
-        # Not enough Unicode for what we really want, below.  Fake it.
-        # cross type 3: COPTIC SMALL LETTER DEI
-        my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x03EF;</span>";
-        $line =~ s/\+\+\+/$csubst/g;
-        # Cross type 2: DAGGER
-        my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x2020;</span>";
-        $line =~ s/\+\+/$csubst/g;
-        # Cross type 1: PLUS SIGN
-        my $csubst = "<span style=\"color:red; font-size:1.25em\">+</span>";
-        $line =~ s/ \+ / $csubst /g;
-    }
-    else
-    {
-        # Cross type 3: Cross of Lorraine
-        my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x2628;</span>";
-        $line =~ s/\+\+\+/$csubst/g;
-        # Cross type 2: Greek Cross (Cross of Jerusalem)
-        my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x2720;</span>";
-        $line =~ s/\+\+/$csubst/g;
-        # cross type 1: Latin Cross
-        my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x271D;</span>";
-        $line =~ s/ \+ / $csubst /g;
-    }
-
+    # Cross type 3: Cross of Lorraine
+    my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x2628;</span>";
+    $line =~ s/\+\+\+/$csubst/g;
+    # Cross type 2: Greek Cross (Cross of Jerusalem)
+    my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x2720;</span>";
+    $line =~ s/\+\+/$csubst/g;
+    # cross type 1: Latin Cross
+    my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x271D;</span>";
+    $line =~ s/ \+ / $csubst /g;
     return $line;
 }
 
@@ -521,14 +498,14 @@ sub setcell {
         while ($i < @tdtext1 && $i < @tdtext2) {
           $item = $tdtext1[$i];
       if ($i > 0) {$htmltext .= "<TR>";}
-          $htmltext .="<TD VALIGN=\"TOP\" ALIGN=\"LEFT\" WIDTH=\"45%\">";
+          $htmltext .="<TD STYLE=\"vertical-align: top; text-align: left; width: 45%;\">";
       $htmltext .=  setfont($blackfont,$item) . "</TD>\n";
 
       $item = $tdtext2[$i];
-      $htmltext .="<TD VALIGN=\"TOP\" ALIGN=\"LEFT\" WIDTH=\"45%\">";
+      $htmltext .="<TD STYLE=\"vertical-align: top; text-align: left; width: 45%;\">";
       $htmltext .=  setfont($blackfont,$item) . "</TD></TR>\n";
       if ($extracolumn) {
-            $htmltext .="<TD VALIGN=\"TOP\" ALIGN=\"center\" WIDTH=\"10%\">";
+            $htmltext .="<TD STYLE=\"vertical-align: top; text-align: center; width: 10%;\">";
         $htmltext .=  "$filler</TD>\n";
       }
           if ($filler && $filler ne ' ') {$filler = ' ';}
@@ -541,7 +518,7 @@ sub setcell {
   }
 
   if ($only) {
-    $htmltext .=  "<TD VALIGN=\"TOP\" WIDTH=\"$width%\">";
+    $htmltext .=  "<TD STYLE=\"vertical-align: width: $width%;\">";
     $htmltext .=  setfont($blackfont,$text) . "</TD>\n";
     if ($only || !columnsel($lang)) {$htmltext .= "</TR>\n";}
     print $htmltext;
@@ -572,7 +549,7 @@ sub topnext {
 #*** table_start
 # start main table
 sub table_start {
-  print "<TABLE BORDER=\"0\" CELLPADDING=\"0\" CELLSPACING=\"0\" WIDTH=\"99%\" STYLE=\"margin: 0px auto;\">";
+  print "<TABLE CELLPADDING=\"0\" CELLSPACING=\"0\" STYLE=\"border: 0; width: 99%; margin: 0px auto;\">";
 }
 
 #table_end()

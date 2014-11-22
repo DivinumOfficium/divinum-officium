@@ -198,7 +198,7 @@ if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|P
 else {$h = '';}
 $title = "Divinum Officium$h - $date1";
 @horas=getdialogcolumn('horas','~',0);
-for ($i = 0; $i < 10; $i++) {$hcolor[$i] = 'blue';}
+for ($i = 0; $i < 10; $i++) {$hcolor[$i] = 'black';}
 $completed = getcookie1('completed');
 if ($date1 eq gettoday() && $command =~ /pray/i && $completed < 8 &&
     $command =~ substr($horas[$completed+1], 0, 4)) {
