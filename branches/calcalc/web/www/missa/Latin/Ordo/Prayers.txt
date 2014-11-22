@@ -46,11 +46,11 @@ v. Alleluia.
 v. Laus tibi Domine, rex aeternae gloriae.
 
 [Dominus]
-V.Dóminus vobíscum.
+V. Dóminus vobíscum.
 R. Et cum spíritu tuo.
-V. Domine exáudi oratiónem meam.
+V. Domine, exáudi oratiónem meam.
 R. Et clamor meus ad te véniat.
-!omit secunda Domine exaudi
+!omittitur secunda Domine, exaudi
 
 [Flectamus]
 V. Flectámus génua.
@@ -61,13 +61,13 @@ V. Dóminus vobíscum.
 R. Et cum spiritu tuo.
 
 [IteMissa]
-V. Ite Missa est.
+V. Ite, Missa est.
 R. Deo gratias.
-V. Ite Missa est. Alleluia, alleluia.
+V. Ite, Missa est. Alleluia, alleluia.
 R. Deo gratias. Alleluia, alleluia.
 V. Benedicamus Domino.
 R. Deo gratias.
-V. Requiescant in pace
+V. Requiescant in pace.
 R. Amen.
 
 [Confiteor]
@@ -104,22 +104,22 @@ V. Deus + in adjutorium meum intende.
 R. Domine, ad adjuvandum me festina.
 
 [Tu autem]
-V. Tu autem Domine miserere nobis.
+V. Tu autem, Domine, miserere nobis.
 R. Deo gratias
 
 [Benedicamus Domino]
-V. Benedicamus Domino
-R. Deo gratias
+V. Benedicamus Domino.
+R. Deo gratias.
 
 [Benedicamus Domino1]
 V. Benedicamus Domino, alleluia, alleluia.
 R. Deo gratias, alleluia, alleluia.
 
 [Deo gratias]
-R. Deo gratias
+R. Deo gratias.
 
 [Gloria tibi]
-R. Gloria tibi Domine!
+R. Gloria tibi, Domine!
 
 [Laus tibi]
 R. Laus tibi, Christe!
@@ -236,7 +236,7 @@ $Deo gratias
 [DefunctV]
 &Dominus_vobiscum
 &Benedicamus_Domino
-! %Vespera defunctorum% recitata est, omit Pater, Ave
+! %Vespera defunctorum% recitata est, omittuntur Pater, Ave
 $Fidelium animae
 $Pater noster
 
@@ -261,6 +261,7 @@ v. Kyrie eleison. Christe, eleison. Kyrie, eleison.
 Ant. Vidi aquam egredientem de templo a latere dextro, alleluia: et omnes ad quos pervenit aqua ista salvi facti sunt et dicent: alleluia, alleluia. 	_	
 Ps. Confitemini Domino, quoniam bonus: quoniam in saeculum misericordia eius. 		
 &Gloria
+Ant. Vidi aquam egredientem de templo a latere dextro, alleluia: et omnes ad quos pervenit aqua ista salvi facti sunt et dicent: alleluia, alleluia. 	_	
 _
 V. Ostende nobis, Domine, misericordiam tuam, alleluia.
 R. Et salutare tuum da nobis, alleluia.

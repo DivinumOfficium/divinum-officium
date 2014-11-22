@@ -391,7 +391,7 @@ my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
 
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
-<SELECT NAME=testmode SIZE=4 onclick="parchange();">
+<SELECT NAME=testmode SIZE=4 onchange="parchange();">
 <OPTION $sel10 VALUE='regular'>regular
 <OPTION $sel11 VALUE='Seasonal'>Seasonal
 <OPTION $sel12 VALUE='Season'>Season
@@ -404,7 +404,7 @@ my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
 my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
-<SELECT NAME=testmode SIZE=2 onclick="parchange();">
+<SELECT NAME=testmode SIZE=2 onchange="parchange();">
 <OPTION $sel10 VALUE='regular'>regular
 <OPTION $sel11 VALUE='Seasonal'>Seasonal
 </SELECT>
@@ -422,7 +422,7 @@ $sel3 = ($votive =~ /C9/) ? 'SELECTED' : '';
 $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
 
 $addvotive = ($version !~ /monastic/i) ? "&nbsp;&nbsp;&nbsp;\n" .
-  "<SELECT NAME=votive SIZE=4 onclick='parchange()'>\n" .
+  "<SELECT NAME=votive SIZE=4 onchange='parchange()'>\n" .
   "<OPTION $sel1 VALUE='hodie'>hodie\n" .
   "<OPTION $sel2 VALUE=C8>Dedication\n" .
   "<OPTION $sel3 VALUE=C9>Defunctorum\n" .
@@ -435,7 +435,7 @@ if (@local) {
     $lsel[$i] = ($local[$i] =~ /$local/i) ? 'SELECTED' : '';
   } 
   my $sizelocal = (@local > 7) ? 7 : @local;
-  $addlocal = "&nbsp;&nbsp;&nbsp;\n<SELECT NAME=local SIZE=$sizelocal onclick='parchange()'>\n";
+  $addlocal = "&nbsp;&nbsp;&nbsp;\n<SELECT NAME=local SIZE=$sizelocal onchange='parchange()'>\n";
   for ($i = 0; $i < @local; $i++) {
     $addlocal .= "<OPTION $lsel[$i] VALUE=$local[$i]>$local[$i]\n";
   }
@@ -449,7 +449,7 @@ if (@local) {
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="callmissa();">Sancta Missa</A>
 &nbsp;&nbsp;&nbsp;
-<SELECT NAME=lang2 SIZE=$llen onclick="parchange()">
+<SELECT NAME=lang2 SIZE=$llen onchange="parchange()">
 PrintTag
 
 for ($i = 0; $i < @languages; $i++) {print "<OPTION $chl[$i] VALUE=$languages[$i]>$languages[$i]\n";}

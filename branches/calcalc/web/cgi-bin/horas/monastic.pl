@@ -9,6 +9,13 @@ use utf8;
 #use warnings;
 #use strict "refs";
 #use strict "subs";
+
+use FindBin qw($Bin);
+use lib "$Bin/..";
+
+# Defines ScriptFunc and ScriptShortFunc attributes.
+use horas::Scripting;
+
 my $a = 4;
 
 #*** makeferia()
@@ -37,6 +44,7 @@ sub psalmi_matutinum_monastic {
   setbuild("Psalterium/Psalmi matutinum monastic", "dayM$dw", 'Psalmi ord');
   $comment = 1;
   my $prefix = ($lang =~ /English/i) ? 'Antiphons' : 'Antiphonae';
+  my $prefix = ($lang =~ /Magyar/i) ? 'Antifónák' : 'Antiphonae';
            
 
   #** special Adv - Pasc antiphons for Sundays
@@ -97,7 +105,7 @@ sub psalmi_matutinum_monastic {
     if ($w) {  
       @psalmi = split("\n", $w);
       $comment = $c;
-      $prefix .= ' et Psalmi'; 
+      $prefix .= ($lang =~ /Magyar/i) ? ' és zsoltárok' : ' et Psalmi';
     }
   }									  
 
@@ -294,7 +302,7 @@ sub brevis_monastic {
 
 #*** regula($lang)
 #returns the text of the Regula for the day
-sub regula {
+sub regula : ScriptFunc {
   my $lang = shift;        
 
   my @a;
