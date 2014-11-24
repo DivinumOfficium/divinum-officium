@@ -315,10 +315,10 @@ sub setfont {
   my $color = ($istr =~ /([a-z]+)\s*$/i)  ? $1 : '';
   if ($istr =~ /(\#[0-9a-f]+)\s*$/i || $istr =~ /([a-z]+)\s*$/i) {$color = $1;}
 
-  my $font = "<FONT ";
-  if ($size) {$font .= "SIZE=\"$size\" ";}
-  if ($color) {$font .= "COLOR=\"$color\"";}
-  $font .= ">";
+  my $font = "<SPAN STYLE=\"";
+  if ($size) {$font .= "font-size:${size}%; ";}
+  if ($color) {$font .= "color:$color;";}
+  $font .= "\">";
   if (!$text) {return $font;}
 
   my $bold = '';
@@ -327,7 +327,7 @@ sub setfont {
   my $italice = '';
   if ($istr =~ /bold/) {$bold = "<B>"; $bolde = "</B>";}
   if ($istr =~ /italic/) {$italic = "<I>"; $italice = "</I>";}
-  return "$font$bold$italic$text$italice$bolde</FONT>";
+  return "$font$bold$italic$text$italice$bolde</SPAN>";
 }
 
 # Fetch and cleanse cookies
@@ -398,7 +398,7 @@ sub setcookies {
   $check =~ s/\s//g;
 
   if (!$values[-1]) {
-    my %s = %{setupstring($datafolder, '', 'horas.setup')};
+    my %s = %{setupstring($datafolder, '', 'Ehoras.setup')};
     $values[-1] = $check;
   }
 
@@ -447,13 +447,13 @@ sub setcross
 {
     my $line = shift;
     # Cross type 3: Cross of Lorraine
-    my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x2628;</span>";
+    my $csubst = "<span style=\"color:red; font-size:125%;\">&#x2628;</span>";
     $line =~ s/\+\+\+/$csubst/g;
     # Cross type 2: Greek Cross (Cross of Jerusalem)
-    my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x2720;</span>";
+    my $csubst = "<span style=\"color:red; font-size:125%;\">&#x2720;</span>";
     $line =~ s/\+\+/$csubst/g;
     # cross type 1: Latin Cross
-    my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x271D;</span>";
+    my $csubst = "<span style=\"color:red; font-size:125%;\">&#x271D;</span>";
     $line =~ s/ \+ / $csubst /g;
     return $line;
 }
@@ -549,7 +549,7 @@ sub topnext {
 #*** table_start
 # start main table
 sub table_start {
-  print "<TABLE CELLPADDING=\"0\" CELLSPACING=\"0\" STYLE=\"border: 0; width: 99%; margin: 0px auto;\">";
+  print "<TABLE CELLPADDING=\"0\" CELLSPACING=\"0\" STYLE=\"font-family:\'Gentium Book Basic\'; border: 0; width: 99%; margin: 0px auto;\">";
 }
 
 #table_end()

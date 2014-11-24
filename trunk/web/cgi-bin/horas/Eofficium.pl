@@ -89,7 +89,7 @@ our %translate; #translation of the skeleton label for 2nd language
 
 #internal script, cookies
 %dialog = %{setupstring($datafolder, '', 'horas.dialog')};
-if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'horas.setup')};}
+if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'Ehoras.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 if (!$setupsave && !getcookies('horasp', 'parameters')) {setcookies('horasp', 'parameters');}
@@ -211,7 +211,7 @@ for ($i = 1; $i <= $completed; $i++) {$hcolor[$i] = 'maroon';}
   #generate HTML
   htmlHead($title, 2);
     print << "PrintTag";
-<BODY VLINK="black" LINK="black">
+<BODY VLINK="black" LINK="black" STYLE="font-family:'Gentium Book Basic';">
 PrintTag
 
 if ($command =~ /setup/i) {
@@ -251,7 +251,7 @@ PrintTag
 if ($pmode =~ /(main|hora)/i) {
   if ($votive ne 'C9') {
 print << "PrintTag";
-<P ALIGN="center"><I>
+<P ALIGN="center">
 <A HREF="$date1-1-Matutinum.html"><FONT COLOR="$hcolor[1]">$horas[1]</FONT></A>
 &nbsp;&nbsp;
 <A HREF="$date1-2-Laudes.html"><FONT COLOR="$hcolor[2]">$horas[2]</FONT></A>
@@ -267,18 +267,18 @@ print << "PrintTag";
 <A HREF="$date1-7-Vespera.html"><FONT COLOR="$hcolor[7]">$horas[7]</FONT></A>
 &nbsp;&nbsp;
 <A HREF="$date1-8-Completorium.html"><FONT COLOR="$hcolor[8]">$horas[8]</FONT></A>
-</I></P>
+</P>
 PrintTag
 } else {
 print << "PrintTag";
-<P ALIGN="center"><I>
+<P ALIGN="center">
 <A HREF="$date1-1-Matutinum.html"><FONT COLOR="$hcolor[1]">$horas[1]</FONT></A>
 &nbsp;&nbsp;
 <A HREF="$date1-2-Laudes.html"><FONT COLOR="$hcolor[2]">$horas[2]</FONT></A>
 &nbsp;&nbsp;
 <A HREF="$date1-7-Vespera.html"><FONT COLOR="$hcolor[7]">$horas[7]</FONT></A>
 &nbsp;&nbsp;
-</I></P>
+</P>
 PrintTag
 }
 }
@@ -305,12 +305,12 @@ sub headline {
   print << "PrintTag";
 <P ALIGN="center"><FONT COLOR="$daycolor">$headline<BR></FONT>
 $comment<BR><BR>
-<FONT SIZE="+1" COLOR="maroon">$h</FONT>&nbsp;&nbsp;&nbsp;
+<SPAN STYLE="font-size:113%; color:maroon;">$h</SPAN>&nbsp;&nbsp;&nbsp;
 <A HREF="$datep-1-Matutinum.html">&darr;</A>
 $date1
 <A HREF="$daten-1-Matutinum.html">&uarr;</A>
 </P>
-<P ALIGN="center"><I>
+<P ALIGN="center">
 <A HREF="$date1-1-Matutinum.html"><FONT COLOR="$hcolor[1]">$horas[1]</FONT></A>
 &nbsp;&nbsp;
 <A HREF="$date1-2-Laudes.html"><FONT COLOR="$hcolor[2]">$horas[2]</FONT></A>
@@ -326,7 +326,7 @@ $date1
 <A HREF="$date1-7-Vespera.html"><FONT COLOR="$hcolor[7]">$horas[7]</FONT></A>
 &nbsp;&nbsp;
 <A HREF="$date1-8-Completorium.html"><FONT COLOR="$hcolor[8]">$horas[8]</FONT></A>
-</I></P>
+</P>
 PrintTag
 }
 
@@ -354,4 +354,3 @@ sub horasjs {
  print << "PrintTag";
 PrintTag
 }
-

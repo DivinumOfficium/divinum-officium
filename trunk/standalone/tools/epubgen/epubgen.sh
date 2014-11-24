@@ -79,7 +79,7 @@ echo -e "\e[1m:: Starting to create index.html\e[0m"
 cd $WDIR
 exec 6>&1
 exec > index.html
-printf '<html>\n<head><title>Index Horarum</title></head>\n<body>\n<h1>Index Horarum</h1>'
+printf "<html>\n<head><title>Index Horarum</title></head>\n<body style=\"font-family:'Gentium Book Basic';\">\n<h1>Index Horarum</h1>"
 for DAY in $(seq -w $DAYN); do
     printf "$MONTH-$DAY-$YEAR"
     printf "<ul>\n"
@@ -101,8 +101,8 @@ echo -e "\e[1m:: Starting to create EPUB file\e[0m"
 ebook-convert index.html "../Divinum Officium - $BLANG ($YEAR-$MONTH).epub" \
 	--disable-font-rescaling \
 	--margin-bottom 15 --margin-left 15 --margin-right 15 --margin-top 15 \
-	--minimum-line-height 0 --chapter / --chapter-mark none \
-	--page-breaks-before / \
+	--minimum-line-height 130 --embed-all-fonts --subset-embedded-fonts \
+	--chapter / --chapter-mark none --page-breaks-before / \
 	--author-sort 'Divinum Officium Project' --authors 'Divinum Officium Project' \
 	--language la --publisher 'Divinum Officium Project' \
 	--tags "Divine Office, Breviarium, Zsolozsma" \
