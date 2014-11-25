@@ -211,7 +211,7 @@ for ($i = 1; $i <= $completed; $i++) {$hcolor[$i] = 'maroon';}
   #generate HTML
   htmlHead($title, 2);
     print << "PrintTag";
-<BODY VLINK="black" LINK="black" STYLE="font-family:'Gentium Book Basic';">
+<BODY VLINK="black" LINK="black" STYLE="font-family:'Gentium Book Basic'; font-size:87%; line-height:130%;">
 PrintTag
 
 if ($command =~ /setup/i) {
