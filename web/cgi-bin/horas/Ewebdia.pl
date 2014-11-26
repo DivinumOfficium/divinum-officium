@@ -447,13 +447,13 @@ sub setcross
 {
     my $line = shift;
     # Cross type 3: Cross of Lorraine
-    my $csubst = "<span style=\"color:red; font-size:125%;\">&#x2628;</span>";
+    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans'; font-size:125%;\">&#x2628;</span>";
     $line =~ s/\+\+\+/$csubst/g;
     # Cross type 2: Greek Cross (Cross of Jerusalem)
-    my $csubst = "<span style=\"color:red; font-size:125%;\">&#x2720;</span>";
+    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans'; font-size:125%;\">&#x2720;</span>";
     $line =~ s/\+\+/$csubst/g;
     # cross type 1: Latin Cross
-    my $csubst = "<span style=\"color:red; font-size:125%;\">&#x271D;</span>";
+    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans'; font-size:125%;\">&#x271D;</span>";
     $line =~ s/ \+ / $csubst /g;
     return $line;
 }
