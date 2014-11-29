@@ -447,13 +447,13 @@ sub setcross
 {
     my $line = shift;
     # Cross type 3: Cross of Lorraine
-    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans'; font-size:125%;\">&#x2628;</span>";
+    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x2628;</span>";
     $line =~ s/\+\+\+/$csubst/g;
     # Cross type 2: Greek Cross (Cross of Jerusalem)
-    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans'; font-size:125%;\">&#x2720;</span>";
+    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x2720;</span>";
     $line =~ s/\+\+/$csubst/g;
     # cross type 1: Latin Cross
-    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans'; font-size:125%;\">&#x271D;</span>";
+    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x271D;</span>";
     $line =~ s/ \+ / $csubst /g;
     return $line;
 }
@@ -467,7 +467,6 @@ sub setcell {
 
   my $width = ($only) ? 100 : 50;
 
-  #if (!$Ck) {
     if (columnsel($lang)) {
 	  $searchind++; print "<TR><TD>&nbsp;</TD></TR><TR>";
       if ($notes && $text =~ /\{\:(.*?)\:\}/) {
@@ -477,6 +476,16 @@ sub setcell {
 	    print "<TR><TD COLSPAN=\"$colspan\" WIDTH=\"100%\" VALIGN=\"MIDDLE\" ALIGN=\"CENTER\">\n" .
 	    "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=\"80%\"></TD></TR>\n";
       }
+    if ($text =~ /%([^;].*?)%/) {
+      my $q = $1;
+      if ($hora =~ /Matutinum/i) {
+        $text =~ s{%(.*?)%}{<A HREF="$date1-2-Laudes.html">$q</A>}i;
+      } elsif ($hora =~ /Vespera/i) {
+        $text =~ s{%(.*?)%}{<A HREF="$date1-7-Vespera.html">$q</A>}i;
+      } elsif ($hora =~ /Laudes/i) {
+         $text =~ s{%(.*?)%}{<A HREF="$date1-1-Matutinum.html">$q</A>}i;
+      }
+    }
 	}
 
   $text =~ s/\_/ /g;
