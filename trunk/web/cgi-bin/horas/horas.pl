@@ -158,7 +158,7 @@ sub resolve_refs {
   
   #cycle by lines
   for (my $it = 0; $it < @t; $it++) {
-    $line = $t[$it];
+    $line = adjust_refs($t[$it], $lang);
 
     #$ and & references
     if ($line =~ /^\s*[\#\$\&]/) {
@@ -683,6 +683,48 @@ sub settone {
 }
 
 
+sub adjust_refs
+{
+  use strict;
+
+  my ($name, $lang) = shift;
+
+  our ($rule, @dayname, $winner, $smallfont, $priest);
+
+  if ($name =~ /\&Gloria/ && $rule =~ /Requiem gloria/i )
+  {
+    return '$Requiem';
+  }
+
+  if (
+    (
+      $name =~ /\&Gloria$/i &&
+      triduum_gloria_omitted()
+    ) ||
+    (
+      $name =~ /\&Gloria[12]/i &&
+      $dayname[0] =~ /(Quad[56])/i
+    ) &&
+    $winner !~ /Sancti/i &&
+    $rule !~ /Gloria responsory/i
+  )
+  {
+    return setfont($smallfont, translate('Gloria omittitur', $lang));
+  }
+
+  if (!$priest && (
+      ($name =~ /&Dominus_vobiscum1/i && !preces('Dominicales et Feriales')) ||
+      $name =~ /&Dominus_vobiscum2/i))
+  {
+    return setfont($smallfont,
+      translate('secunda Domine exaudi omittitur', $name));
+  }
+
+  # No adjustment necessary.
+  return $name;
+}
+
+
 #*** setlink($name, $ind, $lang
 # sets a link for expand a skeleton chapter line or to call a popup
 sub setlink
@@ -700,37 +742,6 @@ sub setlink
         $name =~ s/(\{.*?\})//; 
         $suffix = $1;
         $suffix = setfont($smallblack, $suffix); 
-    }    													 
-    if ($name =~ /\&Gloria/ && $rule =~ /Requiem gloria/i )
-    {
-        $name = '$Requiem';
-    }
-                             
-    if (
-        (
-            $name =~ /\&Gloria$/i &&
-	    triduum_gloria_omitted()
-        ) ||
-        (
-            $name =~ /\&Gloria[12]/i &&
-            $dayname[0] =~ /(Quad[56])/i
-        ) &&
-        $winner !~ /Sancti/i &&
-        $rule !~ /Gloria responsory/i
-    )
-    {
-        $name = 'Gloria omittitur';    
-        if ( $name !~ /^\#/ ) {$name = translate($name, $lang);} 
-        return setfont($smallfont, $name);
-    }
-
-    if (
-        ($name =~ /&Dominus_vobiscum1/i && !$priest  && !preces('Dominicales et Feriales'))
-        || ($name =~ /&Dominus_vobiscum2/i && !$priest ))
-    {
-        $name = 'secunda Domine exaudi omittitur'; 
-        $name = translate($name, $lang) if $name !~ /^\#/;
-        return setfont($smallfont, $name);
     }
 
     my $t = linkcode($name, $ind, $lang, $disabled);
