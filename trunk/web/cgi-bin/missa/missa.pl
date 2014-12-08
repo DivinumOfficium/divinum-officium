@@ -26,6 +26,9 @@ use Time::Local;
 #use DateTime;
 use locale;
 
+use lib "$Bin/..";
+use DivinumOfficium::Main qw(vernaculars);
+
 $error = '';	 
 $debug = '';
 our $Tk = 0;
@@ -300,7 +303,7 @@ $addvotive =  "&nbsp;&nbsp;&nbsp;\n<SELECT NAME=votive SIZE=$osize onclick=\"par
 for ($i = 0; $i < @votive; $i++) {$addvotive .= "<OPTION $sel[$i] VALUE=\"$votive[$i]\">$votive[$i]\n";} 
 $addvotive .= "</SELECT>\n"; 
 
-my @languages = ('Latin', 'English', 'Italiano', 'Magyar');
+my @languages = ('Latin', vernaculars($datafolder));
 my $lang_count = @languages;
 
  my $vers = $version;
