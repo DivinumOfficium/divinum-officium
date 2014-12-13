@@ -1,13 +1,19 @@
-nk]
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
+[Rank]
+In Vigilia Epiphaniae;;Semiduplex;;5;;ex Sancti/01-01
+
+[Rank1570]
+In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
 
 [Rank1960]
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5.5;;ex Sancti/12-25
+Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rule]
+CPapaM=Telesforo;
+ex Sancti/101-01;
 Gloria
-Credo
+CredoDA
 Prefatio=Nat
+Suffragium=Maria2;;
 
 [Introitus]
 !Sap 18:14-15.
@@ -22,9 +28,10 @@ Onnipotente e sempiterno Iddio, indirizza i nostri atti secondo il tuo beneplaci
 $Qui tecum
 
 [Commemoratio Oratio]
-!Pro Octava Nativitatis:
-Concedine, onnipotente Iddio, che la nuova nascita del tuo Unigenito secondo al carne liberi noi, che l’antica schiavitù tiene sotto il giogo del peccato.
-$Per eundem
+!Per S. Telesforo Papa e Mart.
+@Commune/C2b:Oratio:s/N\./Telésphori/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Oratio Gregem
 
 [Lectio]
 Lettura della Lettera del B. Paolo Ap. ai Gàlati.
@@ -39,9 +46,9 @@ V. Mi erompe dal cuore una buona parola, al re canto i miei versi: la mia lingua
 Il Signore regna, si ammanta di maestà: il Signore si ammanta di fortezza e di potenza. Allelúia.
 
 [Evangelium]
-Séguito ++ del S. Vangelo secondo Luca.
-!Luc 2:33-40
-In quel tempo: Giuseppe e Maria, madre di Gesù, restavano meravigliati delle cose che si dicevano di lui. E Simeone li benedisse, e disse a Maria, sua madre: Ecco egli è posto per la rovina e per la resurrezione di molti in Israele, e sarà bersaglio di contraddizioni, e una spada trapasserà la tua stessa anima, affinché restino svelati i pensieri di molti cuori. C’era inoltre una profetessa, Anna, figlia di Fanuel, della tribù di Aser, molto avanti negli anni, vissuta per sette anni con suo marito. Rimasta vedova fino a ottantaquattro anni, non usciva dal tempio, servendo Dio notte e giorno con preghiere e digiuni. E nello stesso tempo ella sopraggiunse, e dava gloria al Signore, parlando di lui a quanti aspettavano la redenzione di Israele. E quando ebbero compiuto tutto secondo la legge del Signore, se ne tornarono in Galilea, nella loro città di Nazaret. E il fanciullo cresceva e si irrobustiva, pieno di sapienza: e la grazia di Dio era con lui.
+Séguito ++ del S. Vangelo secondo Matteo
+!Matt 2:19-23.
+In quel tempo, morto Erode, un angelo del Signore apparve in sogno a Giuseppe in Egitto e gli disse: "Alzati, prendi con te il bambino e sua madre e va' nel paese d'Israele; perché sono morti coloro che insidiavano la vita del bambino". Egli, alzatosi, prese con sé il bambino e sua madre, ed entrò nel paese d'Israele. Avendo però saputo che era re della Giudea Archelào al posto di suo padre Erode, ebbe paura di andarvi. Avvertito poi in sogno, si ritirò nelle regioni della Galilea e, appena giunto, andò ad abitare in una città chiamata Nàzaret, perché si adempisse ciò che era stato detto dai profeti: "Sarà chiamato Nazareno".
 
 [Offertorium]
 !Ps 92:1-2
@@ -52,9 +59,11 @@ Concedi, Te ne preghiamo, o Dio onnipotente, che questa offerta, presentata alla
 $Per Dominum
 
 [Commemoratio Secreta]
-!Pro Octava Nativitatis:
-Santifica, Signore, con la nuova nascita del tuo Unigenito, i doni offerti, e purifica noi dalle macchie dei nostri peccati.
-$Per eundem
+!Per S. Telesforo Papa e Mart.
+@Commune/C2b:Secreta:s/N\./Telesforo/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Secreta Gregem
+
 
 [Communio]
 !Matt 2:20
@@ -65,6 +74,7 @@ Per l’efficacia di questo mistero, o Signore, siano distrutti i nostri vizii e
 $Per Dominum
 
 [Commemoratio Postcommunio]
-!Pro Octava Nativitatis:
-Fa’, te ne preghiamo, o Dio, che il Salvatore del mondo, oggi nato, come è l’autore della nostra divina rigenerazione, così ci sia anche datore dell’immortalità:
-$Qui tecum
+!Per S. Telesforo Papa e Mart.
+@Commune/C2c:Postcommunio:s/N\./Telesforo/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Postcommunio Gregem
