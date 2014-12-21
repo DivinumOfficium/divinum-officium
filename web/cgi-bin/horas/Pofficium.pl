@@ -25,6 +25,9 @@ use Time::Local;
 #use DateTime;
 use locale;
 
+use lib "$Bin/..";
+use DivinumOfficium::Main qw(vernaculars);
+
 $error = '';	 
 $debug = '';
 our $Tk = 0;
@@ -322,26 +325,26 @@ my $sel11 = ($testmode =~ /Seasonal/i) ? 'red' : 'blue';
 <A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=seasonal&lang2=$lang2&votive=$votive">
   <FONT COLOR=$sel11>seasonal</FONT></A><BR>
 </TD></TR>
+<TR><TD ALIGN=CENTER VALIGN=MIDDLE>
+<FONT SIZE=1>Language 2</FONT><BR>
 PrintTag
 
+# Write a link for each language.
+foreach my $language ('Latin', vernaculars($datafolder))
+{
+  my $colour = ($lang2 =~ /$language/i) ? 'red' : 'blue';
+  print
+    qq(<A HREF="Pofficium.pl?date1=$date1&) .
+    qq(version=$version&testmode=$testmode&lang2=$language&votive=$votive">) .
+    qq(<FONT COLOR=$colour>$language</FONT></A><BR>);
+}
 
-$chl1 = ($lang2 =~ /Latin/i) ? 'red' : 'blue';
-$chl2 = ($lang2 =~ /English/i) ? 'red' : 'blue';
-$chl3 = ($lang2 =~ /Magyar/i) ? 'red' : 'blue';
 $sel1 = 'blue'; 
 $sel2 = ($votive =~ /C8/) ? 'red' : 'blue';
 $sel3 = ($votive =~ /C9/) ? 'red' : 'blue';
 $sel4 = ($votive =~ /C12/) ? 'red' : 'blue';
                       
-  print << "PrintTag";
-<TR><TD ALIGN=CENTER VALIGN=MIDDLE>
-<FONT SIZE=1>Language 2</FONT><BR>
-<A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=Latin&votive=$votive">
-  <FONT COLOR=$chl1>Latin</FONT></A><BR>
-<A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=English&votive=$votive">
-  <FONT COLOR=$chl2>English</FONT></A><BR>
-<A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=Magyar&votive=$votive">
-  <FONT COLOR=$chl3>Magyar</FONT></A><BR>
+print << "PrintTag";
 </TD></TR>
 <TR><TD ALIGN=CENTER VALIGN=MIDDLE>
 <FONT SIZE=1>Votive</FONT><BR>
