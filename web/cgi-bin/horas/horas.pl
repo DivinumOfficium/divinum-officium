@@ -140,14 +140,14 @@ sub resolve_refs {
   my $lang = shift;	 
 
   my @t = split("\n", $t);
-				
+
   #handles expanding for skeleton
   if ($t[0] =~ /#/) {
     if ($expandind == $expandnum) {$expandflag = 1;}
-	  else {$expandflag = 0;} 
+    else {$expandflag = 0;} 
   }
   if ($expand =~ /skeleton/ && !$expandflag) {	 
-    if ($t[0] =~ /\#/) {return setlink($t[0], $expandind, $lang); }
+    if ($t[0] =~ /\#/) {return setlink($t[0], $expandind, $lang);}
     else {return "";}
   }
   if ($t[0] =~ /(omit|elmarad)/i) {$t[0] =~ s/^\s*\#/\!\!\!/;}
@@ -155,7 +155,7 @@ sub resolve_refs {
 
   my @resolved_lines;  # Array of blocks expanded from lines.
   my $prelude = '';    # Preceding continued lines.
-  
+
   #cycle by lines
   for (my $it = 0; $it < @t; $it++) {
     $line = adjust_refs($t[$it], $lang);
@@ -166,75 +166,74 @@ sub resolve_refs {
       $line =~ s/\s+$//;
       $line =~ s/^\s+//;   
       #prepares reading the part of common w/ antiphona
-	    if ($line =~ /psalm/ && $it > 0 && $t[$it -1] =~ /^\s*Ant\. /i) {
-	      $line = expand($line, $lang, $t[$it - 1]);
-          
-          # If the psalm has a cross, then so should the antiphon.
-          @resolved_lines[-1] .= setfont($smallfont, " \x{2021}") if $line =~ /\x{2021}/;
-	    } else {$line = expand($line, $lang);}  
-                                           
-    if ((!$Tk && $line !~ /\<input/i) || ($Tk && $line !~ /\% .*? \%/))
-       {$line = resolve_refs($line, $lang);}  #for special chars
+      if ($line =~ /psalm/ && $it > 0 && $t[$it -1] =~ /^\s*Ant\. /i) {
+        $line = expand($line, $lang, $t[$it - 1]);
+
+        # If the psalm has a cross, then so should the antiphon.
+        @resolved_lines[-1] .= setfont($smallfont, " \x{2021}")
+          if $line =~ /\x{2021}/;
+      } else {$line = expand($line, $lang);}  
+
+      if ((!$Tk && $line !~ /\<input/i) || ($Tk && $line !~ /\% .*? \%/))
+      {$line = resolve_refs($line, $lang);}  #for special chars
     } 
 
-
-	  #cross
+    #cross
     $line = setcross($line);   
 
-
-
     #red prefix
-	  if ($line =~ /^\s*(R\.br|R\.|V\.|Ant\.|Benedictio\.* |Absolutio\.* )/) {
-   	    my $h = $1;
-        my $l = $';
-        if ($h =~ /(Benedictio|Absolutio)/) {	 
-	      my $str = $1;		   
-          $str = translate($str, $lang);
-		  $h =~ s/(Benedictio|Absolutio)/$str/; 
-	    }
-        $line = setfont($redfont, $h) . $l;
-      }   
-    
-	  #small omitted title
-	  if ($line =~ /^\s*\!\!\!/) {
-	    $l = $';
-		  $line = setfont($smallblack, $l);
-	  }
-	  
-	  #large chapter title
-	  elsif ($line =~ /^\s*\!\!/) {  
+    if ($line =~ /^\s*(R\.br|R\.|V\.|Ant\.|Benedictio\.* |Absolutio\.* )/) {
+      my $h = $1;
+      my $l = $';
+      if ($h =~ /(Benedictio|Absolutio)/) {	 
+        my $str = $1;		   
+        $str = translate($str, $lang);
+        $h =~ s/(Benedictio|Absolutio)/$str/; 
+      }
+      $line = setfont($redfont, $h) . $l;
+    }   
+
+    #small omitted title
+    if ($line =~ /^\s*\!\!\!/) {
+      $l = $';
+      $line = setfont($smallblack, $l);
+    }
+
+    #large chapter title
+    elsif ($line =~ /^\s*\!\!/) {  
       my $l = $';              
       my $suffix = '';
       if ($l =~ /\{.*?\}/) {
         $l =~ s/(\{.*?\})//; 
-  	    $suffix = $1;
-		    $suffix = setfont($smallblack, $suffix); 
+        $suffix = $1;
+        $suffix = setfont($smallblack, $suffix); 
       }
       $line = setfont($largefont, $l) . " $suffix\n";   
-	  if ($expand =~ /skeleton/i) {$line .= linkcode1();}
+      if ($expand =~ /skeleton/i) {$line .= linkcode1();}
     } 
-	
-	#red line
-	elsif ($line =~ /^\s*\!/) {
+
+    #red line
+    elsif ($line =~ /^\s*\!/) {
       $l = $';
       $line = setfont($redfont, $l);
     }
     if ($line =~ /\/:(.*?):\//) {$line = $` .setfont($smallfont, $1) . $';} 
 
-	  #first letter red 
-	  if ($line =~ /^\s*r\.\s*/) {
-	    $line = $';
-	    $line = setfont($largefont, substr($line, 0, 1)) . substr($line, 1);
-	  }
-	
-	  # first letter initial
-	  if ($line =~ /^(\s*)v\.\s*/ || $line =~ /(\{\:.*?\:\}\s*)v\.\s*/) {
-	    my $prev = $1;
-        $line = $';
-	    $line = $prev . setfont($initiale, substr($line, 0, 1)) . substr($line, 1);
-	  }
+    #first letter red 
+    if ($line =~ /^\s*r\.\s*/) {
+      $line = $';
+      $line = setfont($largefont, substr($line, 0, 1)) . substr($line, 1);
+    }
 
-  #connect lines marked by tilde, or but linebrak
+    # first letter initial
+    if ($line =~ /^(\s*)v\.\s*/ || $line =~ /(\{\:.*?\:\}\s*)v\.\s*/) {
+      my $prev = $1;
+      $line = $';
+      $line = $prev . setfont($initiale, substr($line, 0, 1)) .
+        substr($line, 1);
+    }
+
+    #connect lines marked by tilde, or but linebrak
     if ($line =~ /~\s*$/) {
       $prelude .= substr($line, 0, $-[0]) . ' ';
     }
@@ -242,10 +241,8 @@ sub resolve_refs {
       push @resolved_lines, $prelude . $line;
       $prelude = '';
     }
-
-
   }  #line by line cycle ends
-  
+
   # Concatenate the expansions of the lines with a line break between each.
   push @resolved_lines, $prelude if $prelude;
   push @resolved_lines, '';
@@ -256,6 +253,7 @@ sub resolve_refs {
   $resolved_block =~ s/<\/P>\s*<BR>/<\/P>/g;
   return $resolved_block;
 }
+
 
 #*** Pater noster($lang)
 # returns the text of the prayer without Amen, setting V. and R. to the last 2 lines 
