@@ -24,6 +24,8 @@ use Time::Local;
 #use DateTime;
 use locale;
 
+use lib "$Bin/..";
+
 our ($winner, %winner);
 our $sanctiname = 'Sancti';
 our $temporaname = 'Tempora';

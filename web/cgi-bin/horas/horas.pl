@@ -16,15 +16,16 @@ my @lines;
 
 $a = 1;
 
-#*** horas($hora)
-# collects and prints the officium for the given $hora
-# first let specials to fill the chapters
-# then break the text into units (separated by double newline)
-# resolves the references (formatting characters, prayers hash references and subs) 
-#and prints the result
+#*** horas($hora, $formatter)
+# Collects and prints the office for the given $hora. First lets specials fill
+# the sections, then breaks the text into units (separated by a double
+# newline), and then resolves the references (formatting characters using the
+# formatting object $formatter, expanding prayers-hash references and calling
+# subs). Finally, it prints the result
 sub horas
 {
     $command = shift;
+    my $formatter = shift;
     $hora = $command;	
 
     our $canticum = 0;
@@ -70,7 +71,7 @@ sub horas
 
         $column = 1;
         $version = $version1 if $Ck;
-        $text1 =  resolve_refs($text1, $lang1);  
+        $text1 =  resolve_refs($text1, $lang1, $formatter);  
 
         # Suppress (Alleluia) during Quadrigesima.
         if ( $dayname[0] =~ /Quad/i && !Septuagesima_vesp() )
@@ -87,7 +88,7 @@ sub horas
         {
             $column = 2;        
             if ($Ck) {$version = $version2;}
-            $text2 = resolve_refs($text2, $lang2);    
+            $text2 = resolve_refs($text2, $lang2, $formatter);    
             if ($dayname[0] =~ /Quad/i && !Septuagesima_vesp())
             {
                 $text2 =~ s/$alleluia_regex//ig;
@@ -132,12 +133,13 @@ sub getunit {
   return ($t, $ind);
 }
 
-#*** resolve refs($text_of_block, $lang)
+#*** resolve refs($text_of_block, $lang, $formatter)
 #resolves $name &name references and special characters 
 #retuns the to be listed text
 sub resolve_refs {
   my $t = shift;        
   my $lang = shift;	 
+  my $formatter = shift;
 
   my @t = split("\n", $t);
 
@@ -170,12 +172,12 @@ sub resolve_refs {
         $line = expand($line, $lang, $t[$it - 1]);
 
         # If the psalm has a cross, then so should the antiphon.
-        @resolved_lines[-1] .= setfont($smallfont, " \x{2021}")
+        @resolved_lines[-1] .= $formatter->smallfont(" \x{2021}")
           if $line =~ /\x{2021}/;
       } else {$line = expand($line, $lang);}  
 
       if ((!$Tk && $line !~ /\<input/i) || ($Tk && $line !~ /\% .*? \%/))
-      {$line = resolve_refs($line, $lang);}  #for special chars
+      {$line = resolve_refs($line, $lang, $formatter);}  #for special chars
     } 
 
     #cross
@@ -190,13 +192,13 @@ sub resolve_refs {
         $str = translate($str, $lang);
         $h =~ s/(Benedictio|Absolutio)/$str/; 
       }
-      $line = setfont($redfont, $h) . $l;
+      $line = $formatter->redfont($h) . $l;
     }   
 
     #small omitted title
     if ($line =~ /^\s*\!\!\!/) {
       $l = $';
-      $line = setfont($smallblack, $l);
+      $line = $formatter->smallblack($l);
     }
 
     #large chapter title
@@ -206,30 +208,30 @@ sub resolve_refs {
       if ($l =~ /\{.*?\}/) {
         $l =~ s/(\{.*?\})//; 
         $suffix = $1;
-        $suffix = setfont($smallblack, $suffix); 
+        $suffix = $formatter->smallblack($suffix); 
       }
-      $line = setfont($largefont, $l) . " $suffix\n";   
+      $line = $formatter->largefont($l) . " $suffix\n";   
       if ($expand =~ /skeleton/i) {$line .= linkcode1();}
     } 
 
     #red line
     elsif ($line =~ /^\s*\!/) {
       $l = $';
-      $line = setfont($redfont, $l);
+      $line = $formatter->redfont($l);
     }
-    if ($line =~ /\/:(.*?):\//) {$line = $` .setfont($smallfont, $1) . $';} 
+    if ($line =~ /\/:(.*?):\//) {$line = $` .$formatter->smallfont($1) . $';} 
 
     #first letter red 
     if ($line =~ /^\s*r\.\s*/) {
       $line = $';
-      $line = setfont($largefont, substr($line, 0, 1)) . substr($line, 1);
+      $line = $formatter->largefont(substr($line, 0, 1)) . substr($line, 1);
     }
 
     # first letter initial
     if ($line =~ /^(\s*)v\.\s*/ || $line =~ /(\{\:.*?\:\}\s*)v\.\s*/) {
       my $prev = $1;
       $line = $';
-      $line = $prev . setfont($initiale, substr($line, 0, 1)) .
+      $line = $prev . $formatter->initial(substr($line, 0, 1)) .
         substr($line, 1);
     }
 

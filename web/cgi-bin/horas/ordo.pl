@@ -25,6 +25,8 @@ use Time::Local;
 #use DateTime;
 use locale;
 
+use lib "$Bin/..";
+
 our $error = '';
 $debug = '';
 our $officium = 'officium.pl';

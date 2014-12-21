@@ -238,7 +238,7 @@ if ($command =~ /setup/i) {
 
   #eval($setup{'parameters'});
   $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
-  horas($command); 
+  horas($command, create_formatter()); 
 
   print << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">

@@ -25,6 +25,8 @@ use Time::Local;
 #use DateTime;
 use locale;
 
+use lib "$Bin/..";
+
 $error = '';	 
 $debug = '';
 our $Tk = 0;
@@ -225,7 +227,7 @@ if ($command =~ /setup/i) {
   $head = ($title =~ /(Ante|Post)/i) ? "$title divinum officium" : "Ad $title";
 
   headline($head);
-  horas($command); 
+  horas($command, create_formatter()); 
 
   print << "PrintTag";
 <P ALIGN=CENTER>
