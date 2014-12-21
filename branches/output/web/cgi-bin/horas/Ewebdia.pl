@@ -468,7 +468,7 @@ sub setcell {
   my $width = ($only) ? 100 : 50;
 
     if (columnsel($lang)) {
-	  $searchind++; print "<TR><TD>&nbsp;</TD></TR><TR>";
+	  $searchind++; print "<DIV STYLE=\"width: 100%; display: table-row;\">&nbsp;</DIV><DIV STYLE=\"display: table-row;\">";
       if ($notes && $text =~ /\{\:(.*?)\:\}/) {
         my $notefile = $1;
 	    $notefile =~ s/^pc/p/;
@@ -506,16 +506,16 @@ sub setcell {
     $htmltext = '';
         while ($i < @tdtext1 && $i < @tdtext2) {
           $item = $tdtext1[$i];
-      if ($i > 0) {$htmltext .= "<TR>";}
-          $htmltext .="<TD STYLE=\"vertical-align: top; text-align: left; width: 45%;\">";
-      $htmltext .=  setfont($blackfont,$item) . "</TD>\n";
+      if ($i > 0) {$htmltext .= "<DIV STYLE=\"display: table-row;\">";}
+          $htmltext .="<DIV STYLE=\"width: 54%; display: table-cell; vertical-align: top; padding-right: 10pt; border-right: 1pt solid;\">";
+      $htmltext .=  setfont($blackfont,$item) . "</DIV>\n";
 
       $item = $tdtext2[$i];
-      $htmltext .="<TD STYLE=\"vertical-align: top; text-align: left; width: 45%;\">";
-      $htmltext .=  setfont($blackfont,$item) . "</TD></TR>\n";
+      $htmltext .="<DIV STYLE=\"width: 44%; display: table-cell; vertical-align: top; padding-left: 10pt; font-size: 80%; line-height: 1.2;\">";
+      $htmltext .=  setfont($blackfont,$item) . "</DIV></DIV>\n";
       if ($extracolumn) {
-            $htmltext .="<TD STYLE=\"vertical-align: top; text-align: center; width: 10%;\">";
-        $htmltext .=  "$filler</TD>\n";
+            $htmltext .="<DIV STYLE=\"width: 10%; display: table-cell; vertical-align: top; text-align: center;\">";
+        $htmltext .=  "$filler</DIV>\n";
       }
           if ($filler && $filler ne ' ') {$filler = ' ';}
 
@@ -527,9 +527,9 @@ sub setcell {
   }
 
   if ($only) {
-    $htmltext .=  "<TD STYLE=\"vertical-align: width: $width%;\">";
-    $htmltext .=  setfont($blackfont,$text) . "</TD>\n";
-    if ($only || !columnsel($lang)) {$htmltext .= "</TR>\n";}
+    $htmltext .=  "<DIV STYLE=\"width: $width%; vertical-align: top;\">";
+    $htmltext .=  setfont($blackfont,$text) . "</DIV>\n";
+    if ($only || !columnsel($lang)) {$htmltext .= "</DIV>\n";}
     print $htmltext;
   }
 }
@@ -558,13 +558,13 @@ sub topnext {
 #*** table_start
 # start main table
 sub table_start {
-  print "<TABLE CELLPADDING=\"0\" CELLSPACING=\"0\" STYLE=\"font-family:\'Gentium Book Basic\'; border: 0; width: 99%; margin: 0px auto;\">";
+  print "<DIV STYLE=\"display:table;\">";
 }
 
 #table_end()
 # finishes main table
 sub table_end {
-  print "</TABLE>\n";
+  print "</DIV>\n";
 }
 
 sub wnum {

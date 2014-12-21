@@ -25,6 +25,9 @@ use Time::Local;
 #use DateTime;
 use locale;
 
+use lib "$Bin/..";
+use DivinumOfficium::Main qw(vernaculars);
+
 $error = '';	 
 $debug = '';
 our $Tk = 0;
@@ -93,17 +96,6 @@ our %translate; #translation of the skeleton labels
 %dialog = %{setupstring($datafolder, '', 'horas.dialog')};
 if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'horas.setup')};}
 else {%setup = split(';;;', $setupsave);}
-
-opendir(DIR, $datafolder); 
-@a = sort readdir(DIR);
-close DIR;
-$languages = '';
-foreach $item (@a) {
-  if ($item !~ /\./ && (-d "$datafolder/$item") && $item =~ /^[A-Z]/ && $item !~ /help|ordo/i) 
-    {$languages .= "$item,"}
-}
-$languages =~ s/,$//; 
-$dialog{languages} = $languages; 
 
 if (!$setupsave && !getcookies('horasp', 'parameters')) {setcookies('horasp', 'parameters');}
 if (!$setupsave && !getcookies('horasgo', 'general')) {setcookies('horasgo', 'general');} 
@@ -408,11 +400,6 @@ my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
 PrintTag
 }
 
-@languages = split(',', $dialog{languages});
-
-@chl = splice(@chl, @chl);
-for ($i = 0; $i < @languages; $i++) {$chl[$i] = ($lang2 =~ /$languages[$i]/i) ? 'SELECTED' : '';}
-
 $sel1 = ''; #($date1 eq gettoday()) ? 'SELECTED' : '';
 $sel2 = ($votive =~ /C8/) ? 'SELECTED' : '';
 $sel3 = ($votive =~ /C9/) ? 'SELECTED' : '';
@@ -439,17 +426,23 @@ if (@local) {
   $addlocal .= "</SELECT>\n";
 }
 
+my @languages = ('Latin', vernaculars($datafolder));
+my $lang_count = @languages;
+
  my $vers = $version;
  $vers =~ s/ /_/g; 
- my $llen = @languages;                    
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="callmissa();">Sancta Missa</A>
 &nbsp;&nbsp;&nbsp;
-<SELECT NAME=lang2 SIZE=$llen onchange="parchange()">
+<SELECT NAME=lang2 SIZE=$lang_count onchange="parchange()">
 PrintTag
 
-for ($i = 0; $i < @languages; $i++) {print "<OPTION $chl[$i] VALUE=$languages[$i]>$languages[$i]\n";}
+foreach my $lang (@languages)
+{
+  my $sel = ($lang2 =~ /$lang/i) ? 'SELECTED' : '';
+  print qq(<OPTION $sel VALUE="$lang">$lang\n);
+}
 
   print << "PrintTag";
 </SELECT>

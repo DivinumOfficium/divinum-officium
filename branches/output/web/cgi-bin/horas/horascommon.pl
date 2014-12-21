@@ -588,6 +588,12 @@ sub getrank {
       elsif ($hora =~ /(Vespera|Completorium)/i && $tvesp == 1 && $svesp == 3 && $srank[2] == $trank[2]) {
         $sanctoraloffice = 1;
       }
+      # RG 15: As an exception to the general rule, the Immaculate Conception
+      # is preferred to the Second Sunday of Advent in occurrence (but not in
+      # concurrence).
+      elsif ($srank[0] =~ /Conceptione Immaculata/ && $svesp == 3) {
+        $sanctoraloffice = 1;
+      }
     }
     # Pre-1960, feasts of the Lord of nine lessons take precedence over
     # a lesser Sunday.
