@@ -25,6 +25,8 @@ use Time::Local;
 #use DateTime;
 use locale;
 
+use lib "$Bin/..";
+
 $error = '';
 $debug = '';
 
@@ -113,9 +115,10 @@ $expand = 'all';
 if ($popup =~ /\&/) {$popup =~ s /\s/\_/g;}   
 
 cache_prayers();
+my $formatter = create_formatter();
 
  print STDERR "\$popup = $popup\n";
- $text = resolve_refs($popup, $lang1); 
+ $text = resolve_refs($popup, $lang1, $formatter);
  $t = length($text);
  #$text = resolve_refs($text, $lang1);   
  $width = ($t > 300) ? 600 : 400;
@@ -139,7 +142,7 @@ PrintTag
  print "<TD $background WIDTH=50% VALIGN=TOP>" . setfont($blackfont,$text) . "</TD>\n";
 
   if (!$only) {
-    $text = resolve_refs($popup, $lang2);    
+    $text = resolve_refs($popup, $lang2, $formatter);    
     #$text = resolve_refs($text, $lang2);   
  	  $text =~ s/\_/ /g;
       if ($lang2 =~ /Latin/i) {$text = jtoi($text);}

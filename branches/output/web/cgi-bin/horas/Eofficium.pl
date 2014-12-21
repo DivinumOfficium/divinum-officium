@@ -25,6 +25,8 @@ use Time::Local;
 #use DateTime;
 use locale;
 
+use lib "$Bin/..";
+
 $error = '';
 $debug = '';
 our $Tk = 0;
@@ -232,7 +234,7 @@ if ($command =~ /setup/i) {
   $headline = setheadline();
   headline($head);
 
-  horas($command);
+  horas($command, create_formatter());
 
   print << "PrintTag";
 PrintTag

@@ -10,6 +10,8 @@ use utf8;
 #use strict "refs";
 #use strict "subs";
 
+use DivinumOfficium::Output::HTMLFormatter;
+
 my $a = 4;
 
 #*** htmlHead($title, $flag)
@@ -312,32 +314,6 @@ sub strictparam
     $v = '' unless defined $v;
 
     return $v;
-}
-
-#*** setfont($font, $text)
-# input font description is "[size][ italic][ bold] color" format, and the text
-# returns <FONT ...>$text</FONT> string
-sub setfont {
-  my $istr = shift;
-  my $text = shift;
-  
-  my $size = ($istr =~ /^\.*?([0-9\-\+]+)/i) ? $1 : 0;
-  my $color = ($istr =~ /([a-z]+)\s*$/i)  ? $1 : '';
-  if ($istr =~ /(\#[0-9a-f]+)\s*$/i || $istr =~ /([a-z]+)\s*$/i) {$color = $1;}
-
-  my $font = "<FONT ";
-  if ($size) {$font .= "SIZE=$size ";}
-  if ($color) {$font .= "COLOR=\"$color\"";}
-  $font .= ">";
-  if (!$text) {return $font;}
-
-  my $bold = '';
-  my $bolde = '';
-  my $italic = '';
-  my $italice = '';
-  if ($istr =~ /bold/) {$bold = "<B>"; $bolde = "</B>";}
-  if ($istr =~ /italic/) {$italic = "<I>"; $italice = "</I>";}
-  return "$font$bold$italic$text$italice$bolde</FONT>";
 }
 
 # Fetch and cleanse cookies
@@ -662,3 +638,21 @@ sub linkcode1 {
    return "&nbsp;&nbsp;&nbsp;" .
      "<INPUT TYPE=RADIO NAME=collapse onclick=\"linkit('','10000','');\">\n";
 }
+
+
+#*** create_formatter()
+# Creates a formatter object. This should typically be called once per program
+# and the returned object used to format all office output.
+sub create_formatter
+{
+  # We pass the formatting specifiers from horas.setup to the HTMLFormatter
+  # object. In time this should be the only use of these package variables.
+  return DivinumOfficium::Output::HTMLFormatter->new(
+    initial => our $initiale,
+    smallfont => our $smallfont,
+    redfont => our $redfont,
+    smallblack => our $smallblack,
+    largefont => our $largefont,
+  );
+}
+
