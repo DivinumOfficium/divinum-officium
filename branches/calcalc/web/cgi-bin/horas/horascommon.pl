@@ -902,7 +902,7 @@ sub build_comment_line()
   our ($comment, $marian_commem);
   
   my $commentcolor = ($dayname[2] =~ /(Feria)/i) ? 'black' : ($marian_commem && $dayname[2] =~ /^Commem/) ? 'blue' : 'maroon';
-  $comment = ($dayname[2]) ? "<FONT COLOR=$commentcolor SIZE=-1><I>$dayname[2]</I></FONT>" : "";
+  $comment = ($dayname[2]) ? "<SPAN STYLE=\"font-size:82%; color:$commentcolor;\"><I>$dayname[2]</I></SPAN>" : "";
 }
 
 #*** cache_prayers()

@@ -79,18 +79,18 @@ echo -e "\e[1m:: Starting to create index.html\e[0m"
 cd $WDIR
 exec 6>&1
 exec > index.html
-printf '<html>\n<head><title>Index Horarum</title></head>\n<body>\n<h1>Index Horarum</h1>'
+printf "<html>\n<head><title>Index Horarum</title></head>\n<body style=\"font-family:'Gentium Book Basic'; font-size:87%%; line-height:150%%;\">\n<h1 align=\"center\">Index Horarum</h1>"
 for DAY in $(seq -w $DAYN); do
-    printf "$MONTH-$DAY-$YEAR"
+    printf "<span id=\"day\">$MONTH-$DAY-$YEAR</span>"
     printf "<ul>\n"
-    printf "<li><a href="$MONTH-$DAY-$YEAR-1-Matutinum.html">Matutinum</a></li>\n"
-    printf "<li><a href="$MONTH-$DAY-$YEAR-2-Laudes.html">Laudes</a></li>\n"
-    printf "<li><a href="$MONTH-$DAY-$YEAR-3-Prima.html">Prima</a></li>\n"
-    printf "<li><a href="$MONTH-$DAY-$YEAR-4-Tertia.html">Tertia</a></li>\n"
-    printf "<li><a href="$MONTH-$DAY-$YEAR-5-Sexta.html">Sexta</a></li>\n"
-    printf "<li><a href="$MONTH-$DAY-$YEAR-6-Nona.html">Nona</a></li>\n"
-    printf "<li><a href="$MONTH-$DAY-$YEAR-7-Vespera.html">Vespera</a></li>\n"
-    printf "<li><a href="$MONTH-$DAY-$YEAR-8-Completorium.html">Completorium</a></li>\n"
+    printf "<li><a id=\"hour\" href=\"$MONTH-$DAY-$YEAR-1-Matutinum.html\">Matutinum</a></li>\n"
+    printf "<li><a id=\"hour\" href=\"$MONTH-$DAY-$YEAR-2-Laudes.html\">Laudes</a></li>\n"
+    printf "<li><a id=\"hour\" href=\"$MONTH-$DAY-$YEAR-3-Prima.html\">Prima</a></li>\n"
+    printf "<li><a id=\"hour\" href=\"$MONTH-$DAY-$YEAR-4-Tertia.html\">Tertia</a></li>\n"
+    printf "<li><a id=\"hour\" href=\"$MONTH-$DAY-$YEAR-5-Sexta.html\">Sexta</a></li>\n"
+    printf "<li><a id=\"hour\" href=\"$MONTH-$DAY-$YEAR-6-Nona.html\">Nona</a></li>\n"
+    printf "<li><a id=\"hour\" href=\"$MONTH-$DAY-$YEAR-7-Vespera.html\">Vespera</a></li>\n"
+    printf "<li><a id=\"hour\" href=\"$MONTH-$DAY-$YEAR-8-Completorium.html\">Completorium</a></li>\n"
     printf "</ul><br>\n"
 done
 printf '</body>\n</html>\n'
@@ -98,16 +98,16 @@ exec 1>&6 6>&-
 echo -e "\e[1m:: Finished the creating of index.html\e[0m"
 
 echo -e "\e[1m:: Starting to create EPUB file\e[0m"
-ebook-convert index.html "../Divinum Officium - $BLANG ($YEAR-$MONTH).epub" \
+ebook-convert index.html "../Divinum Officium - Latin-$BLANG ($YEAR-$MONTH).epub" \
 	--disable-font-rescaling \
 	--margin-bottom 15 --margin-left 15 --margin-right 15 --margin-top 15 \
-	--minimum-line-height 0 --chapter / --chapter-mark none \
-	--page-breaks-before / \
+	--embed-all-fonts --subset-embedded-fonts \
+	--chapter / --chapter-mark none --page-breaks-before / \
 	--author-sort 'Divinum Officium Project' --authors 'Divinum Officium Project' \
 	--language la --publisher 'Divinum Officium Project' \
 	--tags "Divine Office, Breviarium, Zsolozsma" \
-	--title "Divinum Officium ($YEAR-$MONTH)" --dont-split-on-page-breaks \
-	--level1-toc '//h:title' \
+	--title "Divinum Officium - Latin-$BLANG ($YEAR-$MONTH)" --dont-split-on-page-breaks \
+	--level1-toc '//h:span[@id="day"]' --level2-toc '//h:a[@id="hour"]' \
 	--no-chapters-in-toc --disable-dehyphenate \
 	--disable-delete-blank-paragraphs --disable-fix-indents \
 	--disable-format-scene-breaks --disable-unwrap-lines \
