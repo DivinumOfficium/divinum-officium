@@ -1,0 +1,5 @@
+To run tests, run the following from the parent of this directory:
+
+	prove -r -I web/cgi-bin/ t
+
+The working directory really does matter as some tests depend on it.

@@ -315,10 +315,10 @@ sub setfont {
   my $color = ($istr =~ /([a-z]+)\s*$/i)  ? $1 : '';
   if ($istr =~ /(\#[0-9a-f]+)\s*$/i || $istr =~ /([a-z]+)\s*$/i) {$color = $1;}
 
-  my $font = "<FONT ";
-  if ($size) {$font .= "SIZE=\"$size\" ";}
-  if ($color) {$font .= "COLOR=\"$color\"";}
-  $font .= ">";
+  my $font = "<SPAN STYLE=\"";
+  if ($size) {$font .= "font-size:${size}%; ";}
+  if ($color) {$font .= "color:$color;";}
+  $font .= "\">";
   if (!$text) {return $font;}
 
   my $bold = '';
@@ -327,7 +327,7 @@ sub setfont {
   my $italice = '';
   if ($istr =~ /bold/) {$bold = "<B>"; $bolde = "</B>";}
   if ($istr =~ /italic/) {$italic = "<I>"; $italice = "</I>";}
-  return "$font$bold$italic$text$italice$bolde</FONT>";
+  return "$font$bold$italic$text$italice$bolde</SPAN>";
 }
 
 # Fetch and cleanse cookies
@@ -398,7 +398,7 @@ sub setcookies {
   $check =~ s/\s//g;
 
   if (!$values[-1]) {
-    my %s = %{setupstring($datafolder, '', 'horas.setup')};
+    my %s = %{setupstring($datafolder, '', 'Ehoras.setup')};
     $values[-1] = $check;
   }
 
@@ -447,13 +447,13 @@ sub setcross
 {
     my $line = shift;
     # Cross type 3: Cross of Lorraine
-    my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x2628;</span>";
+    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x2628;</span>";
     $line =~ s/\+\+\+/$csubst/g;
     # Cross type 2: Greek Cross (Cross of Jerusalem)
-    my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x2720;</span>";
+    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x2720;</span>";
     $line =~ s/\+\+/$csubst/g;
     # cross type 1: Latin Cross
-    my $csubst = "<span style=\"color:red; font-size:1.25em\">&#x271D;</span>";
+    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x271D;</span>";
     $line =~ s/ \+ / $csubst /g;
     return $line;
 }
@@ -467,9 +467,8 @@ sub setcell {
 
   my $width = ($only) ? 100 : 50;
 
-  #if (!$Ck) {
     if (columnsel($lang)) {
-	  $searchind++; print "<TR><TD>&nbsp;</TD></TR><TR>";
+	  $searchind++; print "<DIV STYLE=\"width: 100%; display: table-row;\">&nbsp;</DIV><DIV STYLE=\"display: table-row;\">";
       if ($notes && $text =~ /\{\:(.*?)\:\}/) {
         my $notefile = $1;
 	    $notefile =~ s/^pc/p/;
@@ -477,6 +476,16 @@ sub setcell {
 	    print "<TR><TD COLSPAN=\"$colspan\" WIDTH=\"100%\" VALIGN=\"MIDDLE\" ALIGN=\"CENTER\">\n" .
 	    "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=\"80%\"></TD></TR>\n";
       }
+    if ($text =~ /%([^;].*?)%/) {
+      my $q = $1;
+      if ($hora =~ /Matutinum/i) {
+        $text =~ s{%(.*?)%}{<A HREF="$date1-2-Laudes.html">$q</A>}i;
+      } elsif ($hora =~ /Vespera/i) {
+        $text =~ s{%(.*?)%}{<A HREF="$date1-7-Vespera.html">$q</A>}i;
+      } elsif ($hora =~ /Laudes/i) {
+         $text =~ s{%(.*?)%}{<A HREF="$date1-1-Matutinum.html">$q</A>}i;
+      }
+    }
 	}
 
   $text =~ s/\_/ /g;
@@ -497,16 +506,16 @@ sub setcell {
     $htmltext = '';
         while ($i < @tdtext1 && $i < @tdtext2) {
           $item = $tdtext1[$i];
-      if ($i > 0) {$htmltext .= "<TR>";}
-          $htmltext .="<TD STYLE=\"vertical-align: top; text-align: left; width: 45%;\">";
-      $htmltext .=  setfont($blackfont,$item) . "</TD>\n";
+      if ($i > 0) {$htmltext .= "<DIV STYLE=\"display: table-row;\">";}
+          $htmltext .="<DIV STYLE=\"width: 54%; display: table-cell; vertical-align: top; padding-right: 10pt; border-right: 1pt solid;\">";
+      $htmltext .=  setfont($blackfont,$item) . "</DIV>\n";
 
       $item = $tdtext2[$i];
-      $htmltext .="<TD STYLE=\"vertical-align: top; text-align: left; width: 45%;\">";
-      $htmltext .=  setfont($blackfont,$item) . "</TD></TR>\n";
+      $htmltext .="<DIV STYLE=\"width: 44%; display: table-cell; vertical-align: top; padding-left: 10pt; font-size: 80%; line-height: 1.2;\">";
+      $htmltext .=  setfont($blackfont,$item) . "</DIV></DIV>\n";
       if ($extracolumn) {
-            $htmltext .="<TD STYLE=\"vertical-align: top; text-align: center; width: 10%;\">";
-        $htmltext .=  "$filler</TD>\n";
+            $htmltext .="<DIV STYLE=\"width: 10%; display: table-cell; vertical-align: top; text-align: center;\">";
+        $htmltext .=  "$filler</DIV>\n";
       }
           if ($filler && $filler ne ' ') {$filler = ' ';}
 
@@ -518,9 +527,9 @@ sub setcell {
   }
 
   if ($only) {
-    $htmltext .=  "<TD STYLE=\"vertical-align: width: $width%;\">";
-    $htmltext .=  setfont($blackfont,$text) . "</TD>\n";
-    if ($only || !columnsel($lang)) {$htmltext .= "</TR>\n";}
+    $htmltext .=  "<DIV STYLE=\"width: $width%; vertical-align: top;\">";
+    $htmltext .=  setfont($blackfont,$text) . "</DIV>\n";
+    if ($only || !columnsel($lang)) {$htmltext .= "</DIV>\n";}
     print $htmltext;
   }
 }
@@ -549,13 +558,13 @@ sub topnext {
 #*** table_start
 # start main table
 sub table_start {
-  print "<TABLE CELLPADDING=\"0\" CELLSPACING=\"0\" STYLE=\"border: 0; width: 99%; margin: 0px auto;\">";
+  print "<DIV STYLE=\"display:table;\">";
 }
 
 #table_end()
 # finishes main table
 sub table_end {
-  print "</TABLE>\n";
+  print "</DIV>\n";
 }
 
 sub wnum {
