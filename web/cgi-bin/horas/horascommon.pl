@@ -1095,6 +1095,7 @@ sub precedence {
             $winner2{'Ant 1'} = $winner2{'Ant 11'};
             $winner2{'Ant 2'} = $winner2{'Ant 21'};
             $winner{'Oratio'} = $winner{'Oratio 21'};
+            $winner2{'Oratio'} = $winner2{'Oratio 21'};
         }
         elsif ($dayname[0] =~ /Pasc/i)
         {
