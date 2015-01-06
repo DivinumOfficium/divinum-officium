@@ -177,11 +177,11 @@ sub extract_common
 
   if ($common_field =~ /^(ex|vide)\s*(\S.*?)\s*$/i)
   {
+    my $raw_fname = $2;
     $communetype = ($version =~ /Trident/i &&
       ($version !~ /Monastic/i ||
         $office_desc_ref->{cycle} == SANCTORAL_OFFICE)) ?
       'ex' : $1;
-    my $raw_fname = $2;
 
     my $default_dir =
       $office_desc_ref->{cycle} == SANCTORAL_OFFICE ?
