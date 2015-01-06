@@ -232,7 +232,7 @@ sub load_calendar_file($$;$)
         splice($$basecal{calpoints}{$calpoint}, $existing_index, 1);
       }
       
-      my $old_office = $$basecal{offices}{$office{id}}{office};
+      my $old_office = $$basecal{offices}{$office{id}};
 
       $office{$_} //= $$old_office{$_} foreach(keys(%$old_office));
     }
@@ -245,13 +245,13 @@ sub load_calendar_file($$;$)
     next unless(exists($office{rank}));
 
     generate_internal_office_fields(\%office);
+    $office{calpoint} = $calpoint;
 
     $office{$_} //= $global_defaults{$_} foreach(keys(%global_defaults));
 
     # Now we insert the office in all the correct places.
     
-    $$basecal{offices}{$office{id}}{calpoint} = $calpoint;
-    $$basecal{offices}{$office{id}}{office} = \%office;
+    $$basecal{offices}{$office{id}} = \%office;
 
     # Link to the the office at the appropriate calpoint (unless
     # it's already linked there).
@@ -263,9 +263,9 @@ sub load_calendar_file($$;$)
     if(@$calpoint_arr > 1)
     {
       @$calpoint_arr[$insertion_index, $insertion_index + 1] = @$calpoint_arr[$insertion_index + 1, $insertion_index++]
-        while(cmp_occurrence($$basecal{offices}{$$calpoint_arr[$insertion_index]}{office}, $$basecal{offices}{$$calpoint_arr[$insertion_index + 1]}{office}) > 0);
+        while(cmp_occurrence($$basecal{offices}{$$calpoint_arr[$insertion_index]}, $$basecal{offices}{$$calpoint_arr[$insertion_index + 1]}) > 0);
       @$calpoint_arr[$insertion_index, $insertion_index - 1] = @$calpoint_arr[$insertion_index - 1, $insertion_index--]
-        while(cmp_occurrence($$basecal{offices}{$$calpoint_arr[$insertion_index - 1]}{office}, $$basecal{offices}{$$calpoint_arr[$insertion_index]}{office}) > 0);
+        while(cmp_occurrence($$basecal{offices}{$$calpoint_arr[$insertion_index - 1]}, $$basecal{offices}{$$calpoint_arr[$insertion_index]}) > 0);
     }
   }
 
@@ -391,7 +391,7 @@ sub get_all_offices
   if(exists($calendar_ref->{calpoints}{$calpoint}))
   {
     # Easy case: everything is explicit. Dereference the offices.
-    return map {$calendar_ref->{offices}{$_}{office}} @{$calendar_ref->{calpoints}{$calpoint}};
+    return map {$calendar_ref->{offices}{$_}} @{$calendar_ref->{calpoints}{$calpoint}};
   }
   
   # No entry for this calpoint, so see whether we have an implicit office.
@@ -399,6 +399,7 @@ sub get_all_offices
   if($implicit_office_ref)
   {
     generate_internal_office_fields($implicit_office_ref);
+    $implicit_office_ref->{calpoint} = $calpoint;
     $implicit_office_ref->{partic} = UNIVERSAL_OFFICE;
 
     return ($implicit_office_ref);
