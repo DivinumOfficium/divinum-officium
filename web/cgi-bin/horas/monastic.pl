@@ -10,11 +10,8 @@ use utf8;
 #use strict "refs";
 #use strict "subs";
 
-use FindBin qw($Bin);
-use lib "$Bin/..";
-
 # Defines ScriptFunc and ScriptShortFunc attributes.
-use horas::Scripting;
+use DivinumOfficium::Scripting;
 
 my $a = 4;
 

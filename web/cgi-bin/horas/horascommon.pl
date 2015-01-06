@@ -10,10 +10,7 @@ use utf8;
 #use strict "refs";
 #use strict "subs";
 
-use FindBin qw($Bin);
-use lib "$Bin/..";
-use horas::main;
-use horas::Scripting qw(dispatch_script_function parse_script_arguments);
+use DivinumOfficium::Scripting qw(dispatch_script_function parse_script_arguments);
 
 my @lines;
 my $a = 4;

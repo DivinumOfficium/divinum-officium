@@ -6,11 +6,8 @@ use utf8;
 # Date : 01-20-08
 # Divine Office fills the chapters from ordinarium
 
-use FindBin qw($Bin);
-use lib "$Bin/..";
-
 # Defines ScriptFunc and ScriptShortFunc attributes.
-use horas::Scripting;
+use DivinumOfficium::Scripting;
 
 $a=4;
 

@@ -1,6 +1,6 @@
 # Common routines, constants etc.
 
-package horas::common;
+package DivinumOfficium::Common;
 
 use strict;
 use warnings;

@@ -1,6 +1,6 @@
 # Routines for manipulating office data.
 
-package horas::Data;
+package DivinumOfficium::Data;
 
 use strict;
 use warnings;

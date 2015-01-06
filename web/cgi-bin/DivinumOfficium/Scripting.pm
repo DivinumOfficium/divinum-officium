@@ -1,6 +1,6 @@
 # Module for processing hour scripts.
 
-package horas::Scripting;
+package DivinumOfficium::Scripting;
 
 use strict;
 use warnings;
