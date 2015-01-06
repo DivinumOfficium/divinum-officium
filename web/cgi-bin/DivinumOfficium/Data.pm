@@ -115,7 +115,8 @@ sub psalter_datafile
     ($hour =~ /Matutinum/i)      ? 'Psalmi matutinum' :
     ($hour =~ /Laudes|Vespera/i) ? 'Psalmi major'     :
                                    'Psalmi minor'     ;
-  return setupstring($horas::datafile, $lang, "Psalterium/$basename.txt");
+  return horas::setupstring($horas::datafolder, $lang,
+    "Psalterium/$basename.txt");
 }
 
 
@@ -128,7 +129,8 @@ sub specials_datafile
     ($hour =~ /Matutinum/i)      ? 'Matutinum Special' :
     ($hour =~ /Laudes|Vespera/i) ? 'Major Special'     :
                                    'Minor Special'     ;
-  return setupstring($horas::datafile, $lang, "Psalterium/$basename.txt");
+  return horas::setupstring($horas::datafolder, $lang,
+    "Psalterium/$basename.txt");
 }
 
 
@@ -140,6 +142,8 @@ sub get_first_named_part
 {
   my ($data_ref, @names) = @_;
   my $part;
+
+  ref($data_ref) eq 'HASH' or confess;
 
   $part = $data_ref->{shift @names} while (!defined($part) && @names > 0);
   return $part;
@@ -243,19 +247,28 @@ sub get_office_data
 {
   my ($office_desc_ref, $version, $lang) = @_;
 
+  $office_desc_ref && $version && $lang or confess;
+
   if (!defined($office_desc_ref->{__private}{office_data}{$lang}))
   {
+    # TODO: Move &officestring into a (this?) module.
     my $office_data_ref =
       $office_desc_ref->{__private}{office_data}{$lang} =
-      officestring($horas::datafolder, $office_desc_ref->{filename}, $lang);
+      horas::officestring(
+        $horas::datafolder,
+        $lang,
+        "$office_desc_ref->{filename}.txt");
+
+    ref($office_data_ref) eq 'HASH' && keys(%$office_data_ref) or
+      confess "Error loading $lang $office_desc_ref->{filename}.txt";
 
     if ($lang eq 'Latin')
     {
-      if (my $common_field = get_common_field($office_data_ref, $version))
-      {
-        @{$office_desc_ref}->{'common_type', 'common'} =
-          extract_common($office_desc_ref, $common_field);
-      }
+      my $common_field;
+      @{$office_desc_ref}{'common_type', 'common'} =
+        ($common_field = get_common_field($office_data_ref, $version)) ?
+          horas::extract_common($office_desc_ref, $common_field) :
+          ('', '');
     }
     else
     {
@@ -281,7 +294,7 @@ sub data_is_loaded
 # Gets the common field for the office, without parsing it.
 sub get_common_field
 {
-  my $rank_section = get_rank_section(@_);
+  my $rank_section = get_rank_section(@_) or confess;
   return (split /;;/, $rank_section)[-1];
 }
 
@@ -307,12 +320,16 @@ sub get_common_data
 
   data_is_loaded($office_desc_ref) or confess;
 
-  my $common_data_section_ref = \$office_desc_ref->{__private}{common_data};
+  my $common_data_section_ref =
+    $office_desc_ref->{__private}{common_data} ||= {};
 
   if (!exists($common_data_section_ref->{$lang}))
   {
     $common_data_section_ref->{$lang} = $office_desc_ref->{common} &&
-      officestring($horas::datafolder, $office_desc_ref->{common}, $lang);
+      horas::officestring(
+        $horas::datafolder,
+        $lang,
+        $office_desc_ref->{common});
   }
 
   return $common_data_section_ref->{$lang};

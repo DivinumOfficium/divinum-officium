@@ -6,15 +6,18 @@ use utf8;
 # Date : 01-20-08
 # Divine Office fills the chapters from ordinarium
 
+use DivinumOfficium::Office::LaudsAndVespers qw(generate_commemoration_script);
+
 $a=4;
 
-#*** specials(\@s, $lang)
+#*** specials(\@s, $lang, @offices)
 # input the array of the script for hora, and the language
 # fills the content of the various chapters from the databases
 # returns the text for further adjustment and print to sub horas 
 sub specials {
   my $s = shift;
-  my $lang = shift;		 
+  my $lang = shift;
+  my @offices = @_;
   
   $octavam = ''; #check duplicate commemorations
   my %w = (columnsel($lang)) ? %winner : %winner2; 
@@ -406,7 +409,7 @@ sub specials {
       # Generate the prayer(s) together with the title.
       if (!$prime_or_compline || $triduum)
       {
-        oratio($lang, $month, $day, %oratio_params);
+        oratio($lang, $month, $day, \@offices, %oratio_params);
         next;
       }
     }
@@ -975,15 +978,16 @@ sub antetpsalm {
 }
 
 
-#*** oratio($lang, $month, $day, %params)
-# Collects and prints the appropriate oratio and commemorationes. If
-# $params{special} is set, the emitted title indicates that the prayers have a
-# special form.
+#*** oratio($lang, $month, $day, \@offices, %params)
+# Collects and prints the appropriate oratio and commemorations. The array
+# @offices of all offices at the hour is not modified. If $params{special} is
+# set, the emitted title indicates that the prayers have a special form.
 sub oratio
 {
     my $lang = shift;	
     my $month= shift;
     my $day = shift; 
+    my @offices = @{shift()};
     my %params = @_;
 
     our $addconclusio = '';
@@ -1106,72 +1110,25 @@ sub oratio
     if ($rule =~ /omit .*? commemoratio/i) {return;}
 
     #*** SET COMMEMORATIONS
-    our %cc = undef;
-    our $ccind = 0;
-    our $octavcount = 0;
 
+    # Here's the stuff that we need to preserve. Most of it's in
+    # &getcommemoratio.
+    # - Appending 'p' to commons as necessary. (Do this in general expansion?)
+    # - call replaceNdot
+    # - common of Popes
+    # - call postprocess_ant, postprocess_vr
+    # - choose appropriate antiphon/collect for commem. Probably want to absorb
+    #   vigilia_commemoratio here.
+    # - limit on number of commemorations
 
-    #* add commemorated office from Sancti
-    if ($hora =~ /(laudes|vespera)/i && $commemoratio1 && 
-    ($hora =~ /laudes/i || $version !~ /1960/ || $rank < 6 || $commemoratio1{Rank} =~ /Dominica|;;6/i ||
-      ($commemoratio1 =~ /Tempora/i && $commemoratio1{Rank} =~ /;;[23]/))) { 
-    $i = getind($commemoratio1, ($hora =~ /laudes/i) ? 2 : 3, $day); 
-    $w = getcommemoratio($commemoratio1, $i, $lang); 
-    my $num = concurrent_office($commemoratio1, 1, $day); 
-    if ($w) {setcc($w, $num, setupstring($datafolder, $lang, $commemoratio1));}
-    }
-
-    if ($hora =~ /(laudes|vespera)/i && $commemoratio && ($hora =~ /laudes/i || 
-      $version !~ /1960/ || $rank < 6 || $commemoratio{Rank} =~ /(Dominica|;;6)/i ||
-      ($commemoratio =~ /Tempora/i && $commemoratio{Rank} =~ /;;[23]/))) { 
-    $i = getind($commemoratio, ($hora =~ /laudes/i) ? 2 : $cvespera, $day); 
-    if ($i == 0) {$i = 1;} #Christ the King on 10-31
-    $w = getcommemoratio($commemoratio, $i, $lang);  
-    my $num = concurrent_office($commemoratio, 2, $day);
-    if ($w) {setcc($w, $num, setupstring($datafolder, $lang, $commemoratio));}
-    } 
-
-    #transfervigil
-    if ($hora =~ /Laudes/i && $transfervigil ) { 
-    if (!(-e "$datafolder/$lang/$transfervigil")) {$transfervigil =~ s/v\.txt/\.txt/;}
-    $w = vigilia_commemoratio($transfervigil, $lang); 
-    if ($w) {setcc($w, 3, setupstring($datafolder, $lang, $transfervigil));}
-    }	                                              
-
-    #add commemoratio in winner for lauds or first vespers
-    my $ci = $ind;     
-
-
-    if ($hora =~ /laudes/i || ($version !~ /1960/ && ($vespera == 1 || $winner =~ /tempora/i)  || 
-    exists($winner{'Commemoratio 3'})))  {commemoratio('winner', $ci, $lang); }
-
-    #commemoratio from commemorated office
-    if ($hora =~ /vespera/i) {$ci = 4-$ind;}   
-
-    if ($commemoratio && ($version !~ /1960/ && $hora =~ /vespera/i && ($cvespera == 1 || $commemoratio =~ /Tempora/i) || 
-        $hora =~ /laudes/i)) 
-      {commemoratio('commemoratio', $ci, $lang);}
-    if ($commemoratio1 && (($version !~ /1960/ && $hora =~ /vespera/i && $vespera == 3) || 
-        $hora =~ /laudes/i)) {commemoratio('commemoratio1', $ci, $lang);}   
-    if ($commemorated && $version !~ /1960/) 
-      {commemoratio('commemorated', ($hora =~ /Laudes/i) ? 2 : 1, $lang);}
-
-    if ($dayofweek != 0 && exists($commemoratio{'Oratio Vigilia'}) && $hora =~ /Laudes/i) {
-    $w = vigilia_commemoratio($commemoratio, $lang);
-    if ($w) {setcc($w, 3, setupstring($datafolder, $lang, $commemoratio));}
-    }	                                              
-
-    my $key;
-    if ($ordostatus =~ /Ordo/i) { return %cc;}
-    foreach $key (sort keys %cc) { 
-    if (length($s[-1]) > 3) {push(@s, '_');} 
-    if ($key >= 900) {push (@s, delconclusio($cc{$key}));  }
-    }   
-
-
-    if ((!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i || $version =~ /(1960|monastic)/i)
-    && $addconclusio ) {push(@s, $addconclusio); }
-
+    # TODO: In Ordo mode, we used to return the index-mapped commemorations. Do
+    # something equivalent.
+    # if ($ordostatus =~ /Ordo/i) { return %cc;}
+    
+    our ($dayofweek, $version, %prayers);
+    shift @offices;
+    push @s, generate_commemoration_script(\@offices, $dayofweek, $version,
+      $lang, \%prayers, {});
 }
 
 sub getind {

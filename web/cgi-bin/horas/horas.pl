@@ -13,7 +13,7 @@ my @lines;
 
 $a = 1;
 
-#*** horas($hora)
+#*** horas($hora, @offices)
 # collects and prints the officium for the given $hora
 # first let specials to fill the chapters
 # then break the text into units (separated by double newline)
@@ -21,7 +21,7 @@ $a = 1;
 #and prints the result
 sub horas
 {
-    $command = shift;
+    my ($command, @offices) = @_;
     $hora = $command;	
 
     our $canticum = 0;
@@ -40,12 +40,12 @@ sub horas
     $column = 1;
     if ($Ck) {$version = $version1; setmdir($version); precedence();}
     @script1 = getordinarium($lang1, $command);
-    @script1 = specials(\@script1, $lang1);	
+    @script1 = specials(\@script1, $lang1, @offices);
 
     $column = 2;
     if ($Ck) {$version = $version2; setmdir($version); precedence();}
     @script2 = getordinarium($lang2, $command);	  
-    @script2 = specials(\@script2, $lang2);  
+    @script2 = specials(\@script2, $lang2, @offices);
 
     $expandind = 0;
     if (!$Tk && !$Hk) {$expandnum = strictparam('expandnum');}

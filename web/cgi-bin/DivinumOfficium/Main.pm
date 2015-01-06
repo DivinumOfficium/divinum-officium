@@ -291,6 +291,8 @@ sub initialise_hour
     our $dirgeline = '';
     our $hymncontract = 0;
   }
+
+  return @offices;
 }
 
 
@@ -311,7 +313,7 @@ sub precedence
         horas::gettoday()
       );
 
-  initialise_hour(
+  return initialise_hour(
     load_calendar_file(
       $horas::datafolder,
       'Kalendaria/generalis.txt'),

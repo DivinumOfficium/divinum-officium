@@ -199,7 +199,11 @@ sub load_calendar_file($$;$)
       }
     }
 
-    $office{id} ||= "$calpoint-" . md5_hex(%office);
+    {
+      # We expect that some values in %office might be undefined.
+      no warnings 'uninitialized';
+      $office{id} = "$calpoint-" . md5_hex(%office) unless(exists($office{id}));
+    }
 
     my $inplace_modification = 0;
 

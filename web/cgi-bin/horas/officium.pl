@@ -185,7 +185,7 @@ $setupsave = printhash(\%setup, 1);
 $setupsave =~ s/\r*\n*//g;
 $setupsave =~ s/\"/\~24/g;	  
 
-precedence(); #fills our hashes et variables  
+my @offices = precedence(); #fills our hashes et variables
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;                           
 our $octavam = ''; #to avoid duplication of commemorations
@@ -260,7 +260,7 @@ if ($command =~ /setup/i) {
 
   #eval($setup{'parameters'});
   $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
-  horas($command); 
+  horas($command, @offices);
 
   print << "PrintTag";
 <P ALIGN=CENTER>
