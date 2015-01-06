@@ -177,22 +177,22 @@ sub extract_common
 
   if ($common_field =~ /^(ex|vide)\s*(\S.*?)\s*$/i)
   {
+    $communetype = $1;
     my $raw_fname = $2;
-    $communetype = ($version =~ /Trident/i &&
-      ($version !~ /Monastic/i ||
-        $office_desc_ref->{cycle} == SANCTORAL_OFFICE)) ?
-      'ex' : $1;
 
-    my $default_dir =
-      $office_desc_ref->{cycle} == SANCTORAL_OFFICE ?
-        $sanctiname : $temporaname;
+    $communetype = 'ex' if ($version =~ /Trident/i &&
+      ($version !~ /Monastic/i ||
+        $office_desc_ref->{cycle} == SANCTORAL_OFFICE));
+
+    my $implicit_dir =
+      $raw_fname =~ m'/' ?
+        '' :
+        $office_desc_ref->{cycle} == SANCTORAL_OFFICE ?
+          $sanctiname : $temporaname;
 
     if ($raw_fname =~ /^C/)
     {
       # Genuine common.
-      
-      $communetype = $1;
-      $communetype = 'ex' if ($version =~ /Trident/i && $office_rite != SIMPLE_RITE);
       $commune = $1 if ($common_field =~ /(C[0-9]+[a-z]*)/i);
 
       my $paschal_fname = "$datafolder/$lang1/$communename/$commune" . 'p.txt';
@@ -202,15 +202,15 @@ sub extract_common
     }
     elsif ($raw_fname =~ /^Sancti\/(.*)$/i)
     {
-      $commune = "$sanctiname/$2.txt";
+      $commune = "$sanctiname/$1.txt";
     }
     elsif ($raw_fname =~ /^Tempora\/(.*)$/i)
     {
-      $commune = "$temporaname/$2.txt";
+      $commune = "$temporaname/$1.txt";
     }
     else
     {
-      $commune = "$raw_fname.txt";
+      $commune = "${implicit_dir}${raw_fname}.txt";
     }
   }
 

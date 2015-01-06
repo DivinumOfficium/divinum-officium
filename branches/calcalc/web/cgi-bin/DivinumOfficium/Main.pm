@@ -26,6 +26,8 @@ use DivinumOfficium::Common qw(
   SECOND_VESPERS_AND_COMPLINE
 );
 
+use DivinumOfficium::Data qw(get_office_data);
+
 use DivinumOfficium::Calendar::Resolution qw(
   resolve_occurrence
   resolve_concurrence
@@ -121,8 +123,14 @@ sub initialise_hour
     my $temporal_propers_ref = officestring($datafolder, $lang1, $temporal_propers_fname);
 
     our $winner  = "$winning_office_ref->{filename}.txt";
-    our %winner  = %{officestring($datafolder, $lang1, $winner)};
-    our %winner2 = %{officestring($datafolder, $lang2, $winner)};
+    our %winner  = %{DivinumOfficium::Main::get_office_data(
+      $winning_office_ref,
+      $version,
+      $lang1)};
+    our %winner2 = %{DivinumOfficium::Main::get_office_data(
+      $winning_office_ref,
+      $version,
+      $lang2)};
 
     our $rule = $winner{Rule};
 
@@ -145,13 +153,14 @@ sub initialise_hour
     # Name and rank.
     $dayname[1] = "$winning_office_ref->{title} $rank[1]";
 
-    # Common.
-    our ($communetype, $commune, $communename);
+    # Common. We have to dig into internal state until such a time as we can
+    # dispense with these package variables.
+    our ($communetype, $commune) =
+      @{$winning_office_ref}{'common_type', 'common'};
 
-    if (my ($new_communetype, $new_commune) =
-      extract_common($rank[3], $winning_office_ref->{rite}))
+    foreach ($communetype, $commune)
     {
-      ($communetype, $commune) = ($new_communetype, $new_commune);
+      $_ = '' unless defined($_);
     }
 
     # Genuine common?
