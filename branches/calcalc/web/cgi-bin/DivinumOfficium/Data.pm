@@ -92,13 +92,13 @@ use Carp;
         specials_section($office_desc_ref, shift, $dayofweek, $hour, $version);
       };
 
-      my @specials_sections = map($name_to_ss_ref, @names);
+      my @specials_sections = map {$name_to_ss_ref->($_)} @names;
 
       my $datafile_ref = is_psalter_section($name) ?
         psalter_datafile($hour, $lang) :
         specials_datafile($hour, $lang);
 
-      $part = get_first_named_part($datafile_ref, @names);
+      $part = get_first_named_part($datafile_ref, @specials_sections);
     }
 
     return $part;
@@ -160,7 +160,7 @@ sub season_specials_name
   /^Adv/      ? 'Adv'   :
   /^Quad[56]/ ? 'Quad5' :
   /^Quad/     ? 'Quad'  :
-  /^Pasc/     ? 'Pasc'  :
+  /^Pasc/     ? 'Pasch' :
                 ''      ;
 }
 
@@ -191,7 +191,7 @@ sub expand_specials_template
 
   my $daycode = specials_daycode($dayofweek, $version);
   $template =~ s/\$h/$hour/g;
-  $template =~ s/\$d/$daycode/g;
+  $template =~ s/\$d/$specials_season || $daycode/ge;
   return $template;
 }
 
@@ -202,6 +202,7 @@ sub expand_specials_template
 {
   # XXX: Is this right? Do people ask for 'Capitulum', or 'Capitulum Laudes'?
   my %templates = (
+    'Ant'       => '$d $h',
     'Capitulum' => '$d $h',
     'Hymnus'    => 'Hymnus $d $h',
     'HymnusM'   => 'HymnusM $d $h',
