@@ -3,18 +3,15 @@ require "horas/horascommon.pl";
 require "horas/dialogcommon.pl";
 require "horas/do_io.pl";
 
-package horas::caldata;
+package DivinumOfficium::Calendar::Data;
 
 use strict;
 use warnings;
 
-use FindBin qw($Bin);
-use lib "$Bin/..";
-
 use List::Util qw(min);
 use Digest::MD5 qw(md5_hex);
 
-use horas::caldef;
+use DivinumOfficium::Calendar::Definitions;
 
 BEGIN
 {

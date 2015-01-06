@@ -1,7 +1,7 @@
 # Module for handling Lauds and Vespers, including commemorations.
 
 
-package horas::LaudsAndVespers;
+package DivinumOfficium::Office::LaudsAndVespers;
 
 use strict;
 use warnings;
@@ -9,8 +9,8 @@ use warnings;
 use FindBin qw($Bin);
 use lib "$Bin/..";
 
-use horas::common qw(MATINS_TO_NONE);
-use horas::Data;
+use DivinumOfficium::Common qw(MATINS_TO_NONE);
+use DivinumOfficium::Data;
 
 BEGIN
 {

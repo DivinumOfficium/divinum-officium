@@ -1,16 +1,13 @@
-package horas::calendar;
+package DivinumOfficium::Calendar::Resolution;
 
 use strict;
 use warnings;
 
 use List::Util qw(first);
 
-use FindBin qw($Bin);
-use lib "$Bin/..";
-
-use horas::caldef;
-use horas::caldata qw(get_all_offices);
-use horas::common qw(
+use DivinumOfficium::Calendar::Definitions;
+use DivinumOfficium::Calendar::Data qw(get_all_offices);
+use DivinumOfficium::Common qw(
   FIRST_VESPERS_AND_COMPLINE
   SECOND_VESPERS_AND_COMPLINE);
 

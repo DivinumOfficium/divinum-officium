@@ -1,7 +1,6 @@
-# horas::caldef
 # Definitions of calendar constants.
 
-package horas::caldef;
+package DivinumOfficium::Calendar::Definitions;
 
 use strict;
 use warnings;
