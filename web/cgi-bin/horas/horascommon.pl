@@ -59,7 +59,7 @@ sub getweek
    
    if ($t < $easter - 63) {
       $n = floor(($t - $ordtime) / 7) + 1;  
-	    return getname("Epi$n");
+      return $n > 0 ? getname("Epi$n") : '';
    }
    
    if ($t < $easter - 56) {return getname("Quadp1");}
