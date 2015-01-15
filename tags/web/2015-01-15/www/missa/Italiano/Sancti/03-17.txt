@@ -1,0 +1,17 @@
+[Rank]
+S. Patricii Episcopi et Conf.;;Duplex;;3;;vide C4
+
+[RankNewcal]
+S. Patricii Episcopi et Conf.;;Duplex optional;;2;;vide C4
+
+[Rule]
+vide C4;
+Gloria
+
+[Oratio]
+O Dio, che a predicare ai pagani il tuo nome ti sei degnato di inviare il beato Patrizio, confessore e vescovo, fa' che quanto ci comandi di fare, per i suoi meriti e la sua intercessione, e con la tua grazia, lo possiamo adempire.
+$Per Dominum
+
+[Postcommunio]
+@Commune/C4:Postcommunio:s/N\./Patrício/
+
