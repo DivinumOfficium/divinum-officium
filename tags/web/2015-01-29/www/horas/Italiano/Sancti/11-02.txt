@@ -1,0 +1,281 @@
+[Rank]
+In Commemoratione Omnium Fidelium Defunctorum;;Duplex;;3;;ex C9
+
+[RankNewcal]
+In Commemoratione Omnium Fidelium Defunctorum;;Duplex Solemnity;;6;;ex C9
+
+[Rank1960]
+In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
+
+[Rule]
+ex C9
+Psalmi Dominica
+Antiphonas horas
+Special Conclusio
+Capitulum Versum 2 ad Laudes et Vesperas
+Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium
+Limit Benedictiones Oratio
+Requiem gloria
+9 lectiones
+Responsory9
+no Te Deum
+(rubrica 1955 aut rubrica 1960) No prima Vespera
+
+[Ant Vespera]
+Piacerò al Signore * nella regione dei vivi.;;114
+Ohimè, o Signore, * troppo si protrae la mia vita.;;119
+Il Signore ti protegge * da ogni male: protegga il Signore l'anima tua.;;120
+Se tu, o Signore, baderai alle iniquità: * chi, o Signore, potrà sostenerti?;;129
+Non disprezzare, * o Signore, l'opera delle tue mani.;;137
+
+[Versum 1]
+V. Udii una voce dal cielo, che mi diceva:
+R. Beati i morti che muoiono nel Signore.
+
+[Versum 2]
+V. Udii una voce dal cielo, che mi diceva:
+R. Beati i morti che muoiono nel Signore.
+
+[Versum 3]
+V. Udii una voce dal cielo, che mi diceva:
+R. Beati i morti che muoiono nel Signore.
+
+[Initial]
+$Pater noster
+$Ave Maria
+(sed rubrica 1960 aut rubrica innovata omittuntur)
+
+[Special Completorium]
+$Confiteor
+$Misereatur
+$Indulgentiam
+
+&psalm(122)
+
+&psalm(141)
+
+&psalm(142)
+
+&psalm(233)
+
+&special('Oratio mortuorum1', 'Italiano')
+
+&special('Conclusio', 'Italiano')
+
+[Oratio Matutinum]
+&Dominus_vobiscum
+_
+$Oremus
+v. O Dio, Creatore e Redentore di tutti gli uomini fedeli, concedi alle anime dei tuoi servi e delle tue serve la remissione di tutti i peccati, affinché quella misericordia che sempre desiderarono, per le pie suppliche l'ottengano,
+$Qui vivis
+
+[Oratio mortuorum1]
+&pater_noster
+_ 
+V. Dalla porta dell'inferno.
+R. Libera, o Signore, le loro anime.
+V. Riposino in pace.
+R. Amen.
+V. Signore, ascolta la mia preghiera.
+R. E il mio grido giunga a Te.
+&Dominus_vobiscum2
+_
+$Oremus
+v. Signore, sii propizio alle anime di tutti i tuoi servi e serve per cui supplichiamo umilmente la tua maestà: affinché, per questi suffragi di pie preghiere, meritino di giungere all'eterno riposo. 
+$Per Dominum 
+
+[Oratio mortuorum]
+&pater_noster
+_ 
+V. Dalla porta dell'inferno.
+R. Libera, o Signore, le loro anime.
+V. Riposino in pace.
+R. Amen.
+V. Signore, ascolta la mia preghiera.
+R. E il mio grido giunga a Te.
+&Dominus_vobiscum2
+_
+$Oremus
+ O Dio, Creatore e Redentore di tutti gli uomini fedeli, concedi alle anime dei tuoi servi e delle tue serve la remissione di tutti i peccati, affinché quella misericordia che sempre desiderarono, per le pie suppliche l'ottengano,
+$Qui vivis 
+
+[Oratio mortuorum2]
+&pater_noster
+_ 
+V. Dalla porta dell'inferno.
+R. Libera, o Signore, le loro anime.
+V. Riposino in pace.
+R. Amen.
+V. Signore, ascolta la mia preghiera.
+R. E il mio grido giunga a Te.
+&Dominus_vobiscum2
+_
+$Oremus
+Ti innalziamo, Signore, umili preghiere per le anime di tutti i tuoi servi e serve: affinché perdoni loro, clemente, quanto contrassero nella vita terrena, e ponga fine, benigno, alle loro pene.
+$Per Dominum
+
+[Conclusio]
+&Gloria
+V. Riposino in pace.
+R. Amen.
+
+[Lectio1]
+!Job 7:16-21
+16 Pietà di me, o Signore, perché i miei giorni sono un nulla. 
+17 Che è l'uomo, che tu ne fai tanto conto? e perché il tuo cuore si occupa di lui? 
+18 Lo visiti fin dai primo mattino, e lo metti subito alla prova. 
+19 Sino a quando non mi risparmierai, e non mi lasci tanto ch'io inghiottisca la mia saliva? 
+20 Ho peccato, che farò io per te, o osservatore degli uomini? perché m'hai preso per tuo avversario, sicché io son divenuto di peso a me stesso? 
+21 in Perché non togli il mio peccato, e perché non rimuovi la mia iniquità? Ecco, ormai dormirò nella polvere, e se mi cercherai al mattino, io non sarò più.
+
+[Lectio2]
+!Job 14:1-6
+1 L'uomo nato di donna vive breve tempo, ed è ripieno di molte miserie. 
+2 Qual fiore egli spunta ed è reciso, e fugge come ombra, né mai resta nel medesimo stato. 
+3 E tu stimi degno l'aprir í tuoi occhi sopra un tal essere, e citarlo al tuo giudizio? 
+4 Chi potrà render mondo chi è stato concepito da seme immondo? Non forse tu, e sei solo? 
+5 Brevi sono i giorni dell'uomo; il numero dei suoi mesi è presso di te: gli hai posto dei termini che non si potranno oltrepassare. 
+6 Ritirati alquanto da lui, e lascialo stare, finché giunga bramata. come per un salariato, la sua giornata.
+
+[Lectio3]
+!Job 19:20-27
+20 Alla mia pelle, consunte le carni, aderisce il mio scheletro, e appena le labbra son rimaste attorno a' miei denti. 
+21 Abbiate pietà di me, abbiate pietà di me almen voi, amici miei, perché la mano del Signore mi ha percosso. 
+22 Perché mi perseguitate voi come (fa) Dio, e vi state a satollare delle mie carni? 
+23 Chi mi darà di scrivere le mie parole? chi mi darà di imprimerle in un libro 
+24 con stilo di ferro e su tavola di piombo, ovvero d'inciderle collo scalpello sulla pietra? 
+25 Poiché io so che il mio Redentore vive, e che nell'ultimo giorno io risorgerò dalla terra: 
+26 e di nuovo mi circonderò della mia pelle, e nella mia carne vedrà il mio Dio. 
+27 Il quale vedrò io stesso, e lo contempleranno gli occhi miei, e non di un altro: la serbo questa mia speranza nel mio seno.
+
+[Lectio4]
+Dal libro di sant'Agostino Vescovo della cura da aversi per i morti
+!Cap. 2 e 3
+La cura del funerale, la disposizione per la sepoltura, la pompa delle esequie sono più un sollievo per i vivi che un aiuto per i morti. Ma non perciò son da lasciare senza cura e rispetto i corpi dei defunti, specialmente dei giusti e dei fedeli, mentre di essi santamente si servirono le anime come di organi e di strumenti per tutte le opere buone. Poiché se la veste e l'anello di un padre, o altra cosa simile, tanto è più cara ai posteri quanto più grande è l'affetto verso i parenti; in verun modo sono da disprezzarsi i corpi che certo portiamo molto più intimamente e strettamente congiunti che qualsiasi veste. Infatti essi non sono un ornamento o un qualsiasi aiuto che serve all'esterna, ma alla stessa natura dell'uomo appartengono. Onde anche i funerali degli antichi giusti furon curati con riverente pietà, furon celebrate le loro esequie e fu provvisto ad onorevole sepoltura ed essi stessi, ancor viventi, diedero ordini ai figli circa la sepoltura o anche la traslazione dei loro corpi.
+
+[Lectio5]
+!Cap. 4
+La memoria, la preghiera affettuosa che si ha dai fedeli verso i carissimi defunti, non v'ha dubbio che giovi a quelli che, mentre vivevano, meritarono che tali cose giovassero loro dopo questa vita. Però sebbene qualche necessità non permetta affatto o di seppellire i corpi, o di seppellirli in luogo sacro, non per questo san da omettere le preghiere per le anime dei trapassati: preghiere che la Chiesa con una commemorazione generale fa, anche tacendo i loro nomi, per tutti quelli che son morti nella comunione cristiana-cattolica; onde quelli che ciò non hanno o dai genitori, o dai figli, o da qualsiasi parente o amico, lo ricevano dalla stessa pia madre comune. Che se non vi fossero queste preghiere, la quali con retta fede e pietà si fanno per i morti, penso che niente gioverebbe alle anime loro, nonostante che i corpi esanimi vengano sepolti in luoghi sacri.
+
+[Lectio6]
+!Cap. 18
+Stando cosi le cose, non crediamo di portar sollievo ai morti, verso cui abbiam tanta cura, se non offriamo per essi solennemente il sacrificio o dell'altare o di orazioni o di elemosine sebbene non giungano a tutti quelli per cui s'innalzano, ma solo a quei che, mentre vivono, meritano che giovino loro. Però siccome noi non sappiamo chi siano costoro, fa d'uopo che ciò facciamo per tutti i cristiani, affinché niuno di quelli cui questi benefizi possono e debbono giovare, ne sia escluso. Poiché è meglio ch'essi sopravanzino a quelli cui non fan né male né bene, che manchino a quelli cui arrecano giovamento. Ciascuno poi farà la cosa con maggior diligenza per i parenti, affinché i suoi facciano lo stesso per lui. Tutto ciò poi che si fa per seppellire il corpo non è già un soccorso per la salvezza, ma un ufficio di umanità, per l'affetto onde nessuno mai ebbe in odio la propria carne. Quindi è doveroso che s'abbia verso la carne del prossimo la maggior cura possibile, quando sarà uscito di vita colui che la rivestiva. E se ciò fanno quelli che non credono alla risurrezione della carne, molto più debbon farlo quelli che ci credono anche perché questo ufficio reso al corpo morto, ma che un dì risusciterà e vivrà in eterno, sia in certo modo testimonianza di una tal fede!
+
+[Lectio7]
+Dalla prima Lettera dell'Apostolo san Paolo ai Corinti.
+!1 Cor 15:12-22
+12 Se si predica che Cristo è risuscitato da morte, come mi dicono alcuni tra voi che non vi è risurrezione dei morti? 
+13 Che se non vi è risurrezione de' morti, neppur Cristo è risuscitato. 
+14 Se poi Cristo non è risuscitato, vana è dunque la nostra predicazione, vana è ancora la vostra fede. 
+15 Siamo anche convinti testimoni falsi di Dio, ché abbiam reso testimonianza a Dio che egli ha risuscitato Cristo, cui non ha risuscitato, se i morti non risorgono. 
+16 Infatti, se non risorgono i morti, neppur Cristo è risuscitato. 
+17 Che se Cristo non è risuscitato, vana è la vostra fede, dacché siete tuttora nei vostri peccati; 
+18 onde anche quelli che si addormentarono in Cristo, sono periti. 
+19 Se per questa vita soltanto speriamo in Cristo, siamo i più miserabili di tutti gli uomini. 
+20 Ora però Cristo è risuscitato da morte, primizia dei dormienti; 
+21 dacché da un uomo la morte, e da un uomo la risurrezione da morte. 
+22 E come in Adamo tutti muoiono, così pure in Cristo tutti saranno vivificati.
+
+[Lectio8]
+!1 Cor 15:35-44
+35 Ma dirà taluno: Come risuscitano i morti? e con qual corpo ritorneranno? 
+36 Stolto, quel che tu semini, non prende vita, se prima non muore. 
+37 E seminando, non semini il corpo che dee venire, ma un nudo granello, per esempio, di frumento, o di alcun'altra cosa; 
+38 ma Dio gli dà un corpo come a lui piace, e a ciascun seme il proprio corpo. 
+39 Non ogni carne poi è la stessa carne, ma altra quella degli uomini, altra quella delle bestie, altra quella degli uccelli, altra quella dei pesci; 
+40 e ci sono dei corpi celesti e dei corpi terrestri; ma altra è la vaghezza de' celesti, e altra quella dei terrestri. 
+41 Altra la chiarezza del sole, altra la chiarezza della luna, e altra la chiarezza delle stelle; poiché v'ha differenza tra stella e stella nella chiarezza. 
+42 Così pure la risurrezione dei morti. Si semina un (corpo) corruttibile, risorgerà incorruttibile; 
+43 se si semina ignobile, risorgerà glorioso; si semina inerte, risorgerà robusto; 
+44 si semina un corpo animale, risorgerà un corpo spirituale.
+
+[Responsory8]
+R. Signore, non volermi giudicare secondo le mie azioni: nessuna cosa degna ho io fatta dinanzi a te; onde supplico la tua maestà. 
+* Che tu, o Dio, cancelli la mia iniquità.
+V. Lavami ancor più, o Signore, dalla mia ingiustizia, e mondami dal mio peccato. 
+R. Che tu, o Dio, cancelli la mia iniquità.
+
+[Lectio9]
+!1 Cor 15:51-58
+51 Ecco, io vi dico un mistero: Risorgeremo, si, tutti, ma non tutti saremo cangiati. 
+52 In un momento, in un batter d'occhio, al suono dell'ultima tromba; ché suonerà la tromba, e i morti risorgeranno incorrotti, e noi saremo cangiati. 
+53 Poiché fa d'uopo che questo (corpo) corruttibile si rivesta della incorruttibilità, e questo (corpo) mortale si rivesta della immortalità. 
+54 Quando poi questo (corpo) mortale sarà rivestito dell'immortalità, allora sarà adempiuta la parola che sta scritta: E’ stata assorbita la morte nella vittoria. 
+55 Dov'è, o morte, la tua vittoria? dov'è, o morte, il tuo pungiglione? 
+56 Or il pungiglione della morte è il peccato, e essenza del peccato è la violazione della legge. 
+57 Ma grazie a Dio, il quale ci ha dato la vittoria per mezzo di nostro Signore Gesù Cristo. 
+58 Quindi, miei cari fratelli, siate fermi ed immobili abbondando sempre nelle opere del Signore, ben sapendo come il vostro travaglio non è infruttuoso nel Signore.
+
+[Responsory9]
+R. Liberami, o Signore, dalla morte eterna in quel giorno tremendo, 
+* Quando si sconvolgeranno e cieli e terra, * Quando verrai a giudicare il mondo col fuoco.
+V. Pien di tremore son io, e temo per quando verrà il momento della discussione e della (tua) vendetta. 
+R. Quando si sconvolgeranno e cieli e terra. 
+V. Quel giorno, sarà giorno di ira, di calamità e di miseria, giorno terribile e pien d'amarezza.
+R. Quando verrai a giudicare il mondo col fuoco.
+$Requiem
+R. Liberami, o Signore, dalla morte eterna in quel giorno tremendo, 
+* Quando si sconvolgeranno e cieli e terra, * Quando verrai a giudicare il mondo col fuoco.
+
+[Special Prima]
+&special('Initial', 'Italiano')
+$Credo
+(sed rubrica 1960 aut rubrica innovata omittitur)
+
+&psalm(87)
+
+&psalm(27)
+
+&psalm(31)
+
+&special('Oratio mortuorum2', 'Italiano')
+
+&martyrologium
+
+V. I giusti saranno ricordati eternamente.
+R. Non temeranno di udire sinistre parole.
+_
+$Oremus
+O Dio, largitore di perdono e amatore della salvezza degli uomini: preghiamo la tua clemenza, di concedere che le anime di tutti i fedeli, che sono uscite di questo mondo, per intercessione della beata sempre Vergine Maria e di tutti i tuoi Santi, giungano al possesso della beatitudine eterna. Per Cristo Signor nostro.
+R. Amen
+
+&special('Conclusio', 'Italiano')
+
+[Special Tertia]
+&special('Initial', 'Italiano')
+
+&psalm(37,1,11)
+
+&psalm(37,12,23)
+
+&psalm(55)
+
+&special('Oratio mortuorum', 'Italiano')
+
+&special('Conclusio', 'Italiano')
+
+[Special Sexta]
+&special('Initial', 'Italiano')
+
+&psalm(69)
+
+&psalm(84)
+
+&psalm(85)
+
+&special('Oratio mortuorum', 'Italiano')
+
+&special('Conclusio', 'Italiano')
+
+[Special Nona]
+&special('Initial', 'Italiano')
+
+&psalm(101,1,13)
+
+&psalm(101,14,23)
+
+&psalm(101,24,29)
+
+&special('Oratio mortuorum', 'Italiano')
+
+&special('Conclusio', 'Italiano')
