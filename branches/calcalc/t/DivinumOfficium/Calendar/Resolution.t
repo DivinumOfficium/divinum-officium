@@ -86,17 +86,17 @@ my @divino_occ_verifiers = (
   # transferred.
   sub { my $r = abs shift; grep {$_ == $r} (OMIT_LOSER, TRANSLATE_LOSER) },
   # 1. Office of the first, nothing of the second.
-  sub { shift == OMIT_LOSER },
-  # 2. Office of the second, nothing of the first.
   sub { shift == -(OMIT_LOSER) },
+  # 2. Office of the second, nothing of the first.
+  sub { shift == OMIT_LOSER },
   # 3. Office of the first, commemoration of the second.
-  sub { shift == COMMEMORATE_LOSER },
-  # 4. Office of the second, commemoration of the first.
   sub { shift == -(COMMEMORATE_LOSER) },
+  # 4. Office of the second, commemoration of the first.
+  sub { shift == COMMEMORATE_LOSER },
   # 5. Office of the first, translation of the second.
-  sub { shift == TRANSLATE_LOSER },
-  # 6. Office of the second, translation of the first.
   sub { shift == -(TRANSLATE_LOSER) },
+  # 6. Office of the second, translation of the first.
+  sub { shift == TRANSLATE_LOSER },
   # 7. Office of the more noble, commemoration of the other. Our mock
   # descriptors aren't distinguished in dignity, so just check that the loser
   # is commemorated.
@@ -148,7 +148,7 @@ foreach my $rank (
   local $Data::Dumper::Pad = '# ';
   print Dumper(\%resolution);
   ok(
-    $resolution{sign} > 0 && $resolution{rule} == OMIT_LOSER,
+    $resolution{sign} < 0 && $resolution{rule} == OMIT_LOSER,
     'Lenten feria vs. ' . generate_rank_line($desc)
   );
 }

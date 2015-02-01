@@ -64,7 +64,7 @@ sub cmp_occurrence_1960
 
   # Assume that $b wins until we find otherwise. We multiply the return value by
   # +/- 1 according to the winning office.
-  my $sign = -1;
+  my $sign = 1;
 
   # Higher-ranked days always win.
   ($a, $b, $sign) = ($b, $a, -$sign) if($$a{rankord} < $$b{rankord});
@@ -94,7 +94,7 @@ sub cmp_occurrence_1960
   # In the case of equal ranks:
 
   # Make sure that Office A is a feast if we have any feasts.
-  ($a, $b, $sign) = ($b, $a, -1) if($$b{category} == FESTAL_OFFICE);
+  ($a, $b, $sign) = ($b, $a, -$sign) if($$b{category} == FESTAL_OFFICE);
   
   if($$b{rankord} == 1)
   {
@@ -207,9 +207,9 @@ sub cmp_occurrence
   my ($a, $b, $version) = @_;
 
   # Apply office-specific rules.
-  return -$a->{occurrencetable}{$b->{id}}
+  return resolution(-1, $a->{occurrencetable}{$b->{id}})
     if(exists($a->{occurrencetable}) && exists($a->{occurrencetable}{$b->{id}}));
-  return $b->{occurrencetable}{$a->{id}}
+  return resolution(1, $b->{occurrencetable}{$a->{id}})
     if(exists($b->{occurrencetable}) && exists($b->{occurrencetable}{$a->{id}}));
 
   return cmp_occurrence_1960(@_) if($version =~ /1960/);
@@ -217,14 +217,14 @@ sub cmp_occurrence
   # Lesser ferias are always omitted in occurrence.
   # XXX: With simple feasts and Ember Days and suchlike this becomes
   # complicated... see RG V.2.
-  return resolution(-1, OMIT_LOSER)
-    if($$a{category} == FERIAL_OFFICE && $$a{standing} == LESSER_DAY);
   return resolution( 1, OMIT_LOSER)
+    if($$a{category} == FERIAL_OFFICE && $$a{standing} == LESSER_DAY);
+  return resolution(-1, OMIT_LOSER)
     if($$b{category} == FERIAL_OFFICE && $$b{standing} == LESSER_DAY);
 
   # Assume that $b wins until we find otherwise. We multiply the return value by
   # +/- 1 according to the winning office.
-  my $sign = -1;
+  my $sign = 1;
 
   # (Other) octaves cease in Lent and the two first-order octaves.
   sub lent_or_first_order_octave
@@ -309,7 +309,9 @@ sub cmp_occurrence
       if($$b{category} != FESTAL_OFFICE);
 
     # Must have two feasts now.
-    my $dignity = dignity($b) <=> dignity($a);
+    my $dignity = dignity($a) <=> dignity($b);
+    # XXX: What to do with offices of equal dignity? -$sign will at least give
+    # stability.
     return resolution($dignity || -$sign, TRANSLATE_LOSER);
   }
   else
@@ -373,7 +375,7 @@ sub cmp_occurrence
 
   # If we're still tied, choose the feast of greater dignity, or return zero if
   # they're tied even then.
-  my $dignity = dignity($a) <=> dignity($b);
+  my $dignity = dignity($b) <=> dignity($a);
   return resolution($sign * $dignity,
     ($$b{rankord} <= 2) ? TRANSLATE_LOSER : COMMEMORATE_LOSER);
 }
@@ -389,14 +391,14 @@ sub cmp_concurrence_1960
   # Sunday or a first-class feast. The only way the preceding office can
   # win, then, is if it's first-class or if it's a second-class feast and
   # the following is second-class (necessarily a Sunday).
-  return   COMMEMORATE_LOSER  if(
+  return -(COMMEMORATE_LOSER) if(
     $$preceding{rankord} == 1 ||
     ($$preceding{rankord} == 2 && $$following{rankord} == 2));
 
   # Now we know that the following office wins, so we need only determine
   # whether to commemorate the preceding office, which happens iff that
   # office is privileged in commemoration.
-  return -(COMMEMORATE_LOSER) if(
+  return   COMMEMORATE_LOSER  if(
     $$following{rankord} == 1 &&
     $$preceding{category} != FESTAL_OFFICE &&
     ($$preceding{category} != FERIAL_OFFICE || $$preceding{rankord} <= 3));
@@ -404,7 +406,7 @@ sub cmp_concurrence_1960
   # Otherwise, office of the following, nothing of the preceding. The
   # reverse situation never happens: when a day has first Vespers, it's
   # always privileged in commemoration.
-  return -(OMIT_LOSER);
+  return OMIT_LOSER;
 }
 
 
@@ -450,18 +452,18 @@ sub cmp_concurrence
     # Office of preceding. What to do with the following?
 
     # Omit low-ranking days at first vespers of high-ranking doubles.
-    return OMIT_LOSER if(
+    return -(OMIT_LOSER) if(
       $$preceding{rite} == DOUBLE_RITE &&
       $$preceding{rankord} <= 2 &&
       $following_rank >= concurrence_rank({category => WITHIN_OCTAVE_OFFICE, octrank => COMMON_OCTAVE}));
 
     # Don't commemorate first vespers of the second day in the octave in second
     # vespers of the feast itself.
-    return OMIT_LOSER if(
+    return -(OMIT_LOSER) if(
       $$following{category} == WITHIN_OCTAVE_OFFICE &&
       $$following{octid} eq $$preceding{octid});
 
-    return COMMEMORATE_LOSER;
+    return -(COMMEMORATE_LOSER);
   }
   elsif($following_rank < $preceding_rank)
   {
@@ -470,13 +472,13 @@ sub cmp_concurrence
     # Don't commemorate II. vespers of seventh day in the octave at first
     # vespers of the octave day. Notice that, since the following office beat
     # the preceding, we can't have concurrence of two days in the octave here.
-    return -(OMIT_LOSER)
+    return OMIT_LOSER
       if ($$preceding{category} == WITHIN_OCTAVE_OFFICE &&
         $$preceding{octid} eq $$following{octid});
 
     # Check for some days that are low-ranking in concurrence but
     # nonetheless are always commemorated when they lose.
-    return -(COMMEMORATE_LOSER)
+    return COMMEMORATE_LOSER
       if(
         ($$preceding{category} == FERIAL_OFFICE &&
           $$preceding{standing} == GREATER_DAY) ||
@@ -490,7 +492,7 @@ sub cmp_concurrence
     {
       if($$following{rankord} == 2)
       {
-        return -(OMIT_LOSER)
+        return OMIT_LOSER
           if($preceding_rank >=
             concurrence_rank(
               {
@@ -503,7 +505,7 @@ sub cmp_concurrence
       }
       elsif($$following{rankord} == 1)
       {
-        return -(OMIT_LOSER)
+        return OMIT_LOSER
           if($preceding_rank >=
             concurrence_rank(
               {
@@ -515,20 +517,20 @@ sub cmp_concurrence
       }
     }
 
-    return -(COMMEMORATE_LOSER);
+    return COMMEMORATE_LOSER;
   }
 
   # Both days are in the same concurrence category.
 
   # In concurrence of days within the same octave, second vespers take
   # precedence and first vespers of the following are omitted.
-  return OMIT_LOSER
+  return -(OMIT_LOSER)
     if($$preceding{category} == WITHIN_OCTAVE_OFFICE &&
       $$preceding{octid} eq $$following{octid});
   
   # Office of the day of greater dignity; or, in parity, from the chapter of
   # the following.
-  my $sign = dignity($preceding) <=> dignity($following);
+  my $sign = dignity($following) <=> dignity($preceding);
   return $sign ? $sign * COMMEMORATE_LOSER : FROM_THE_CHAPTER;
 }
 
@@ -540,8 +542,9 @@ sub cmp_commemoration
   # With 1960 rubrics, commemorations of the season always come first.
   if($version =~ /1960/)
   {
-    ($a, $b) = ($b, $a) if($$b{cycle} == TEMPORAL_OFFICE);
-    return 1 if($$a{cycle} == TEMPORAL_OFFICE);
+    my $sign = -1;
+    ($a, $b, $sign) = ($b, $a, -$sign) if($$b{cycle} == TEMPORAL_OFFICE);
+    return $sign if($$a{cycle} == TEMPORAL_OFFICE);
   }
 
   return cmp_occurrence(@_);
