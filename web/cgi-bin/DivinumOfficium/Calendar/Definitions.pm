@@ -22,6 +22,9 @@ BEGIN
     OMIT_LOSER COMMEMORATE_LOSER TRANSLATE_LOSER FROM_THE_CHAPTER
     PARTICULAR_OFFICE UNIVERSAL_OFFICE
     TEMPORAL_OFFICE SANCTORAL_OFFICE
+
+    office_category_string office_standing_string office_rite_string
+    office_nobility_string office_octrank_string office_octrank_string_infra
   );
 }
 
@@ -35,12 +38,31 @@ use constant
   OCTAVE_DAY_OFFICE  => 5
 };
 
+my %category_strings = (
+  FESTAL_OFFICE,        'festum',
+  SUNDAY_OFFICE,        'Dominica',
+  FERIAL_OFFICE,        'feria',
+  VIGIL_OFFICE,         'vigilia',
+  WITHIN_OCTAVE_OFFICE, 'dies infra octavam',
+  OCTAVE_DAY_OFFICE,    'dies octava',
+);
+
+sub office_category_string { $category_strings{$_[0]} }
+
 use constant
 {
   LESSER_DAY    => 0,
   GREATER_DAY    => 1,
   GREATER_PRIVILEGED_DAY  => 2
 };
+
+my %standing_strings = (
+  LESSER_DAY,             '',
+  GREATER_DAY,            'major',
+  GREATER_PRIVILEGED_DAY, 'major privilegiata',
+);
+
+sub office_standing_string { $standing_strings{$_[0]} }
 
 use constant
 {
@@ -50,11 +72,27 @@ use constant
   GREATER_DOUBLE_RITE  => 3
 };
 
+my %rite_strings = (
+  SIMPLE_RITE,         'simplex',
+  SEMIDOUBLE_RITE,     'semiduplex',
+  DOUBLE_RITE,         'duplex',
+  GREATER_DOUBLE_RITE, 'duplex majus',
+);
+
+sub office_rite_string { $rite_strings{$_[0]} }
+
 use constant
 {
   PRIMARY_OFFICE    => 1,
   SECONDARY_OFFICE  => 2
 };
+
+my %nobility_strings = (
+  PRIMARY_OFFICE,   'primaria',
+  SECONDARY_OFFICE, 'secundaria',
+);
+
+sub office_nobility_string { $nobility_strings{$_[0]} }
 
 use constant
 {
@@ -64,6 +102,22 @@ use constant
   COMMON_OCTAVE    => 4,
   SIMPLE_OCTAVE    => 5
 };
+
+my %octrank_strings = (
+  FIRST_ORDER_OCTAVE,  'I. ordinis',
+  SECOND_ORDER_OCTAVE, 'II. ordinis',
+  THIRD_ORDER_OCTAVE,  'III. ordinis',
+  COMMON_OCTAVE,       'communis',
+  SIMPLE_OCTAVE,       'simplex',
+);
+
+# For 'infra octavam', 'communis' needs declined to 'communem'. The genitive
+# descriptions stay genitive, and simple octaves don't occur.
+sub office_octrank_string { $octrank_strings{$_[0]} }
+sub office_octrank_string_infra
+{
+  $_[0] == COMMON_OCTAVE ? 'communem' : $octrank_strings{$_[0]};
+}
 
 use constant
 {
