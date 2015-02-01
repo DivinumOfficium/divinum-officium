@@ -105,13 +105,13 @@ sub implicit_rank_ordinal
       1 :
       ($desc_ref->{standing} == GREATER_DAY ? 3 : 4)) :
   $desc_ref->{category} == FESTAL_OFFICE ?
-    ($desc_ref->{rite} == SIMPLE_RITE && $version =~ /1955|1960/ ? 4 : 3) :
+    ($desc_ref->{rite} == SIMPLE_RITE ? 4 : 3) :
   $desc_ref->{category} == OCTAVE_DAY_OFFICE ?
-    ($desc_ref->{octrank} <= 2 ? 1 : 3):
+    ($desc_ref->{octrank} <= SECOND_ORDER_OCTAVE ? 1 :
+     $desc_ref->{octrank} <= COMMON_OCTAVE       ? 3 : 4) :
   $desc_ref->{category} == WITHIN_OCTAVE_OFFICE ?
     min($desc_ref->{octrank}, 3) :
-  $desc_ref->{category} == VIGIL_OFFICE ?
-    ($version =~ /1960/ ? 4 : 3) :
+  $desc_ref->{category} == VIGIL_OFFICE ? ($version =~ /1960/ ? 3 : 4) :
   # Otherwise:
     4;
 }

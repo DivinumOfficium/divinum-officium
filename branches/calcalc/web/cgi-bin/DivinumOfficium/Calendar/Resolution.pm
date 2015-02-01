@@ -226,12 +226,33 @@ sub cmp_occurrence
   # +/- 1 according to the winning office.
   my $sign = -1;
 
-  # Higher-ranked days always win.
+  # (Other) octaves cease in Lent and the two first-order octaves.
+  sub lent_or_first_order_octave
+  {
+    my $office_ref = shift;
+    return
+      (
+        $$office_ref{category} == FERIAL_OFFICE &&
+        calpoint_is_lenten($$office_ref{calpoint})
+      ) ||
+      (
+        (grep
+          {$$office_ref{category} == $_}
+          (WITHIN_OCTAVE_OFFICE, OCTAVE_DAY_OFFICE)) &&
+        $$office_ref{octrank} == 1
+      ) ||
+      ($$office_ref{category} == VIGIL_OFFICE && $$office_ref{rankord} == 1);
+  }
+
+  ($a, $b, $sign) = ($b, $a, -$sign) if(lent_or_first_order_octave($a));
+  return resolution($sign, OMIT_LOSER) if
+    ((grep {$$a{category} == $_} (WITHIN_OCTAVE_OFFICE, OCTAVE_DAY_OFFICE)) &&
+      lent_or_first_order_octave($b));
+
+  # Having dealt with the preceding exceptions, higher-ranked days always win.
   ($a, $b, $sign) = ($b, $a, -$sign) if($$a{rankord} < $$b{rankord});
   if($$b{rankord} < $$a{rankord})
   {
-    # TODO: Vigils vs. Sundays.
-
     return resolution($sign, TRANSLATE_LOSER)
       if($$b{rankord} == 1 && $$a{rankord} == 2 &&
         $$a{category} != SUNDAY_OFFICE &&
@@ -243,30 +264,24 @@ sub cmp_occurrence
         $$b{category} == FESTAL_OFFICE && $$a{rite} == SIMPLE_RITE &&
         grep($$a{category} == $_,
           (FESTAL_OFFICE, OCTAVE_DAY_OFFICE))) ||
+      # Furthermore, simple octave days are omitted on octave days of the
+      # second order. This is labelled as an impossible occurrence in the
+      # table, but we'll handle it this way anyway.
+      ($$b{category} == OCTAVE_DAY_OFFICE &&
+       $$b{octrank} <= SECOND_ORDER_OCTAVE &&
+       $$a{category} == OCTAVE_DAY_OFFICE &&
+       $$a{octrank} == SIMPLE_OCTAVE) ||
       # Even greater ferias are omitted on I. cl. vigils.
       ($$a{category} == FERIAL_OFFICE && $$b{category} == VIGIL_OFFICE
         && $$b{rankord} == 1) ||
       # Vigils are omitted on greater ferias and days that are
-      # genuinely of the first class.
+      # genuinely of the first class. Also, we don't handle anticipation of
+      # vigils at this point, so just omit them (other than the vigil of
+      # Christmas, which we identify as being of the first class) on Sundays.
       ($$a{category} == VIGIL_OFFICE &&
         (($$b{rankord} == 1 && $$b{category} != OCTAVE_DAY_OFFICE) ||
-          ($$b{category} == FERIAL_OFFICE && $$b{rankord} >= 3))) ||
-      # (Other) octaves cease in Lent and the two first-order octaves.
-      ((grep {$$a{category} == $_} (WITHIN_OCTAVE_OFFICE, OCTAVE_DAY_OFFICE)) &&
-        (
-          (
-            $$b{category} == FERIAL_OFFICE &&
-            calpoint_is_lenten($$b{calpoint})
-          ) ||
-          (
-            (grep
-              {$$b{category} == $_}
-              (WITHIN_OCTAVE_OFFICE, OCTAVE_DAY_OFFICE)) &&
-            $$b{octrank} == 1
-          ) ||
-          ($$b{category} == VIGIL_OFFICE && $$b{rankord} == 1)
-        )
-      ) ||
+          ($$b{category} == FERIAL_OFFICE && $$b{rankord} >= 3) ||
+          ($$b{category} == SUNDAY_OFFICE && $$a{rankord} > 1))) ||
       # Days within common octaves are omitted on doubles of
       # the I. or II. class.
       ($$a{category} == WITHIN_OCTAVE_OFFICE && $$a{octrank} == COMMON_OCTAVE &&
