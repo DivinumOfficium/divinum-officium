@@ -24,6 +24,7 @@ sub mock_office_descriptor
   my %desc = ('rank' => shift, @_);
   my %defaults = (
     'partic'   => UNIVERSAL_OFFICE,
+    'calpoint' => '',
   );
 
   foreach my $field (keys %defaults)

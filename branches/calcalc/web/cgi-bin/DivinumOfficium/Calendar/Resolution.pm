@@ -54,6 +54,8 @@ sub resolution
 }
 
 
+sub calpoint_is_lenten { $_[0] =~ /Quad(?!p)|Quadp3-[456]/ }
+
 # cmp_occurrence_1960($a, $b, $version)
 # A 1960 version of cmp_occurrence.
 sub cmp_occurrence_1960
@@ -168,7 +170,9 @@ sub cmp_occurrence_1960
     # III. cl. feasts beat Advent ferias but yield to
     # Lenten ones.
     return
-      resolution($$b{calpoint} =~ /Quad/i ? $sign : -$sign, COMMEMORATE_LOSER)
+      resolution(
+        calpoint_is_lenten($$b{calpoint}) ? $sign : -$sign,
+        COMMEMORATE_LOSER)
       if($$a{category} == FERIAL_OFFICE);
 
     # III. cl. particular feast beats III. cl. universal
@@ -211,6 +215,8 @@ sub cmp_occurrence
   return cmp_occurrence_1960(@_) if($version =~ /1960/);
 
   # Lesser ferias are always omitted in occurrence.
+  # XXX: With simple feasts and Ember Days and suchlike this becomes
+  # complicated... see RG V.2.
   return resolution(-1, OMIT_LOSER)
     if($$a{category} == FERIAL_OFFICE && $$a{standing} == LESSER_DAY);
   return resolution( 1, OMIT_LOSER)
@@ -233,15 +239,39 @@ sub cmp_occurrence
 
     return resolution($sign, OMIT_LOSER) if(
       # Simple feasts and octave days are omitted on I. cl. doubles.
-      ($$b{rankord} == 1 && $$b{rite} >= DOUBLE_RITE && $$a{rite} == SIMPLE_RITE && grep($$a{category} == $_, (FESTAL_OFFICE, OCTAVE_DAY_OFFICE))) ||
+      ($$b{rankord} == 1 && $$b{rite} >= DOUBLE_RITE &&
+        $$b{category} == FESTAL_OFFICE && $$a{rite} == SIMPLE_RITE &&
+        grep($$a{category} == $_,
+          (FESTAL_OFFICE, OCTAVE_DAY_OFFICE))) ||
       # Even greater ferias are omitted on I. cl. vigils.
-      ($$a{category} == FERIAL_OFFICE && $$b{category} == VIGIL_OFFICE && $$b{rankord} == 1) ||
+      ($$a{category} == FERIAL_OFFICE && $$b{category} == VIGIL_OFFICE
+        && $$b{rankord} == 1) ||
       # Vigils are omitted on greater ferias and days that are
       # genuinely of the first class.
-      ($$a{category} == VIGIL_OFFICE && (($$b{rankord} == 1 && $$b{category} != OCTAVE_DAY_OFFICE) || ($$b{category} == FERIAL_OFFICE && $$b{rankord} >= 3))) ||
+      ($$a{category} == VIGIL_OFFICE &&
+        (($$b{rankord} == 1 && $$b{category} != OCTAVE_DAY_OFFICE) ||
+          ($$b{category} == FERIAL_OFFICE && $$b{rankord} >= 3))) ||
+      # (Other) octaves cease in Lent and the two first-order octaves.
+      ((grep {$$a{category} == $_} (WITHIN_OCTAVE_OFFICE, OCTAVE_DAY_OFFICE)) &&
+        (
+          (
+            $$b{category} == FERIAL_OFFICE &&
+            calpoint_is_lenten($$b{calpoint})
+          ) ||
+          (
+            (grep
+              {$$b{category} == $_}
+              (WITHIN_OCTAVE_OFFICE, OCTAVE_DAY_OFFICE)) &&
+            $$b{octrank} == 1
+          ) ||
+          ($$b{category} == VIGIL_OFFICE && $$b{rankord} == 1)
+        )
+      ) ||
       # Days within common octaves are omitted on doubles of
       # the I. or II. class.
-      ($$a{category} == WITHIN_OCTAVE_OFFICE && $$a{octrank} == COMMON_OCTAVE && $$b{rankord} <= 2 && $$b{rite} >= DOUBLE_RITE));
+      ($$a{category} == WITHIN_OCTAVE_OFFICE && $$a{octrank} == COMMON_OCTAVE &&
+        $$b{rankord} <= 2 && $$b{rite} >= DOUBLE_RITE &&
+        $$b{category} == FESTAL_OFFICE));
 
     return resolution($sign, COMMEMORATE_LOSER);
   }

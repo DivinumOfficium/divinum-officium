@@ -31,7 +31,10 @@ my @divino_occ_rows = mock_descriptor_list($version,
 my @divino_occ_cols = mock_descriptor_list($version,
   # [[SIMPLE_RITE, FESTAL_OFFICE]], BVM on Saturday. TODO.
   [['Dies octava simplex simplex']],
-  [['Feria major simplex']],
+  [
+    ['Feria major simplex', 'calpoint' => 'Adv1-1'],
+    ['Feria major simplex', 'calpoint' => 'Quad1-1'],
+  ],
   [['Dies infra octavam communem semiduplex']],
   [['Dies infra octavam III. ordinis semiduplex']],
   [['Dies infra octavam II. ordinis semiduplex']],
@@ -46,7 +49,7 @@ my @divino_occ_cols = mock_descriptor_list($version,
   [['Festum Duplex II. classis']],
   [['Festum Duplex I. classis']],
   [
-    ['Feria major privilegiata simplex'],
+    ['Feria major privilegiata simplex', 'calpoint' => 'Quadp3-4'],
     ['Vigilia semiduplex I. classis'],
     # The table just has "day within I.-ord. octave", but these come in two
     # varieties.
@@ -114,7 +117,7 @@ for my $row (0..$#divino_occ_rows) {
         );
         my $result = ($resolution{sign} || 1) * $resolution{rule};
 
-        print "# Got %resolution; table code is " .
+        print "# Got $resolution{sign}, $resolution{rule}; table code is " .
           "$divino_occ_table[$row][$col]\n";
 
         ok(
