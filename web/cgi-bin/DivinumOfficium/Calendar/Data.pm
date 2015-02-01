@@ -19,13 +19,18 @@ BEGIN
 
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(load_calendar_file get_implicit_office get_all_offices);
+  our @EXPORT_OK = qw(
+    load_calendar_file
+    get_implicit_office
+    get_all_offices
+  );
 }
 
 # Parse the rank line from the calendar file and return a hash representing it.
-sub parse_rank_line($)
+sub parse_rank_line
 {
   local $_ = shift;
+  my $version = shift;
 
   my %rank;
 
@@ -65,29 +70,49 @@ sub parse_rank_line($)
 
   if(/(IV|III|II|I)\.\s+classis/i)
   {
-    $rank{rankord} = ($1 =~ /V/i) ? 4 : length($1);
+    my $class = $1;
+    $rank{rankord} = ($class =~ /V/i) ? 4 : length($class);
   }
   else
   {
-    $rank{rankord} =
-      $rank{category} == SUNDAY_OFFICE ?        ($rank{standing} == GREATER_DAY ? 2 : 3) :
-      $rank{category} == FERIAL_OFFICE ?        ($rank{standing} == GREATER_PRIVILEGED_DAY ? 1 : ($rank{standing} == GREATER_DAY ? 3 : 4)) :
-      $rank{category} == FESTAL_OFFICE ?        ($rank{rite} == SIMPLE_RITE && $horas::version =~ /1955|1960/ ? 4 : 3) :
-      $rank{category} == OCTAVE_DAY_OFFICE ?    ($rank{octrank} <= 2 ? 1 : 3):
-      $rank{category} == WITHIN_OCTAVE_OFFICE ? min($rank{octrank}, 3) :
-      $rank{category} == VIGIL_OFFICE ?         ($horas::version =~ /1960/ ? 3 : 4) :
-                                                4;
+    $rank{rankord} = implicit_rank_ordinal($version, \%rank);
   }
 
   # In 1955, semidoubles became simples, and simples became commemorations. We
   # handled the latter above, so now we can do the former without introducing
   # ambiguity. They become "III. cl. simples".
-  if($horas::version =~ /1955/ && $rank{rite} == SEMIDOUBLE_RITE)
+  if($version =~ /1955/ && $rank{rite} == SEMIDOUBLE_RITE)
   {
     $rank{rite} = SIMPLE_RITE;
   }
 
   return %rank;
+}
+
+
+#*** implicit_rank_ordinal($version, \%desc)
+# Returns the rank to be used for a descriptor when the calendar has not
+# overriden it.
+sub implicit_rank_ordinal
+{
+  my ($version, $desc_ref) = @_;
+
+  $desc_ref->{category} == SUNDAY_OFFICE ?
+    ($desc_ref->{standing} == GREATER_DAY ? 2 : 3) :
+  $desc_ref->{category} == FERIAL_OFFICE ?
+    ($desc_ref->{standing} == GREATER_PRIVILEGED_DAY ?
+      1 :
+      ($desc_ref->{standing} == GREATER_DAY ? 3 : 4)) :
+  $desc_ref->{category} == FESTAL_OFFICE ?
+    ($desc_ref->{rite} == SIMPLE_RITE && $version =~ /1955|1960/ ? 4 : 3) :
+  $desc_ref->{category} == OCTAVE_DAY_OFFICE ?
+    ($desc_ref->{octrank} <= 2 ? 1 : 3):
+  $desc_ref->{category} == WITHIN_OCTAVE_OFFICE ?
+    min($desc_ref->{octrank}, 3) :
+  $desc_ref->{category} == VIGIL_OFFICE ?
+    ($version =~ /1960/ ? 3 : 4) :
+  # Otherwise:
+    4;
 }
 
 
@@ -124,9 +149,10 @@ sub canonicalise_tag
 
 sub generate_internal_office_fields
 {
+  my $version = shift;
   my $office_ref = shift;
 
-  my %rank = parse_rank_line($office_ref->{rank});
+  my %rank = parse_rank_line($office_ref->{rank}, $version);
   $office_ref->{$_} = $rank{$_} foreach(keys(%rank));
 
   if(exists($office_ref->{occurrencerules}))
@@ -137,10 +163,10 @@ sub generate_internal_office_fields
   }
 
   $office_ref->{firstvespers} =
-    $horas::version =~ /1955|1960/ ?
+    $version =~ /1955|1960/ ?
       # In the later rubrics, only high-ranking offices and Sundays have first
       # vespers.
-      ($office_ref->{category} == FESTAL_OFFICE && $office_ref->{rankord} <= ($horas::version =~ /1960/ ? 1 : 2)) || 
+      ($office_ref->{category} == FESTAL_OFFICE && $office_ref->{rankord} <= ($version =~ /1960/ ? 1 : 2)) || 
       $office_ref->{category} == SUNDAY_OFFICE
       :
       # Otherwise, only vigils and ferias lack them. Days in octaves are
@@ -244,7 +270,7 @@ sub load_calendar_file($$;$)
 
     next unless(exists($office{rank}));
 
-    generate_internal_office_fields(\%office);
+    generate_internal_office_fields($horas::version, \%office);
     $office{calpoint} = $calpoint;
 
     $office{$_} //= $global_defaults{$_} foreach(keys(%global_defaults));
@@ -398,7 +424,7 @@ sub get_all_offices
   my $implicit_office_ref = get_implicit_office($calpoint);
   if($implicit_office_ref)
   {
-    generate_internal_office_fields($implicit_office_ref);
+    generate_internal_office_fields($horas::version, $implicit_office_ref);
     $implicit_office_ref->{calpoint} = $calpoint;
     $implicit_office_ref->{partic} = UNIVERSAL_OFFICE;
 

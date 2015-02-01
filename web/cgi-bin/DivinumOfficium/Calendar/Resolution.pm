@@ -30,7 +30,8 @@ sub dignity($)
 
   my $dignity = 1000;
 
-  return $dignity if($$office{tags} =~ /Festum Domini/);
+  return $dignity
+    if(exists($$office{tags}) && $$office{tags} =~ /Festum Domini/);
   $dignity--;
 
   # TODO: Fill this out. See General Rubrics XI.2.
@@ -39,11 +40,11 @@ sub dignity($)
 }
 
 
-# cmp_occurrence_1960($a, $b)
+# cmp_occurrence_1960($a, $b, $version)
 # A 1960 version of cmp_occurrence.
 sub cmp_occurrence_1960
 {
-  my ($a, $b) = @_;
+  my ($a, $b, $version) = @_;
 
   # Assume that $b wins until we find otherwise. We multiply the return value by
   # +/- 1 according to the winning office.
@@ -168,14 +169,14 @@ sub cmp_occurrence_1960
 }
 
 
-# cmp_occurrence($a, $b)
+# cmp_occurrence($a, $b, $version)
 # Determines which of two offices should win in occurrence, and also what
 # should be done to the loser. $a and $b are references to the calentry hashes
 # for the offices. Returns a symbolic constant indicating what to do to the
 # loser, which is positive if $b wins and negative if $a wins.
 sub cmp_occurrence
 {
-  my ($a, $b) = @_;
+  my ($a, $b, $version) = @_;
 
   # Apply office-specific rules.
   return -$a->{occurrencetable}{$b->{id}}
@@ -183,7 +184,7 @@ sub cmp_occurrence
   return $b->{occurrencetable}{$a->{id}}
     if(exists($b->{occurrencetable}) && exists($b->{occurrencetable}{$a->{id}}));
 
-  return cmp_occurrence_1960($a, $b) if($horas::version =~ /1960/);
+  return cmp_occurrence_1960(@_) if($version =~ /1960/);
 
   # Lesser ferias are always omitted in occurrence.
   return  OMIT_LOSER   if($$a{category} == FERIAL_OFFICE && $$a{standing} == LESSER_DAY);
@@ -237,11 +238,15 @@ sub cmp_occurrence
   }
   else
   {
-    # For the remaining possibilities, we synthesise a sub-rank:
+    # For the remaining possibilities (i.e. a tie between III. or IV. cl.
+    # days), we synthesise a sub-rank:
+    #   Sunday (non-Tridentine) >
     #   Greater-double octave day >
     #   Greater double >
     #   Double >
+    #   Semi-double Sunday (Tridentine 1910) >
     #   Semi-double (feast) >
+    #   Semi-double Sunday (Tridentine not-1910) >
     #   (Semi-double) day in III. ord. octave >
     #   (Semi-double) day in common octave >
     #   (Simple) greater feria >
@@ -249,26 +254,41 @@ sub cmp_occurrence
     #   Simple octave day >
     #   TODO: [BVM on Saturday >]
     #   Simple (feast).
-    sub synthsubrank
+    my $synthsubrank_ref = sub
     {
-      my $office = shift;
-      return
-        $$office{rite} == GREATER_DOUBLE_RITE ?
-          $$office{category} == OCTAVE_DAY_OFFICE ? 1 : 2 :
-        $$office{rite} == DOUBLE_RITE ? 3 :
-        $$office{rite} == SEMIDOUBLE_RITE ?
-          $$office{category} == FESTAL_OFFICE ? 4 :
-          # Must be in an octave:
-          $$office{octrank} == THIRD_ORDER_OCTAVE ? 5 : 6 :
-        # Must be simple rite.
-        $$office{category} == FERIAL_OFFICE ? 7 :
-        $$office{category} == VIGIL_OFFICE ? 8 :
-        $$office{category} == OCTAVE_DAY_OFFICE ? 9 :
-        10;
-    }
+      my $office_ref = shift;
+      my @conditions = (
+        $office_ref->{category} == SUNDAY_OFFICE && $version !~ /Trident/i,
+        $office_ref->{rite}     == GREATER_DOUBLE_RITE &&
+          $office_ref->{category} == OCTAVE_DAY_OFFICE,
+        $office_ref->{rite}     == GREATER_DOUBLE_RITE,
+        $office_ref->{rite}     == DOUBLE_RITE,
+        $office_ref->{category} == SUNDAY_OFFICE && $version =~ /1910/i,
+        $office_ref->{rite}     == SEMIDOUBLE_RITE &&
+          $office_ref->{category} == FESTAL_OFFICE,
+        $office_ref->{category} == SUNDAY_OFFICE && $version =~ /Trident/i,
+        $office_ref->{category} == WITHIN_OCTAVE_OFFICE &&
+          $office_ref->{octrank}  == THIRD_ORDER_OCTAVE,
+        $office_ref->{category} == WITHIN_OCTAVE_OFFICE, # Common octave
+        $office_ref->{category} == FERIAL_OFFICE,
+        $office_ref->{category} == VIGIL_OFFICE,
+        $office_ref->{category} == OCTAVE_DAY_OFFICE,
+        # TODO: BVM on Satuday.
+        1, # The only remaining possibility is a simple feast.
+      );
 
-    my $a_subrank = synthsubrank($a);
-    my $b_subrank = synthsubrank($b);
+      # With List::MoreUtils, this would be: firstidx {$_} @conditions
+      return (
+        first
+          {$_->{truth}}
+          map
+            {{idx => $_, truth => $conditions[$_]}}
+            (0..$#conditions)
+      )->{idx};
+    };
+
+    my $a_subrank = $synthsubrank_ref->($a);
+    my $b_subrank = $synthsubrank_ref->($b);
     ($a, $b, $a_subrank, $b_subrank, $sign) = ($b, $a, $b_subrank, $a_subrank, -$sign) if($b_subrank > $a_subrank);
 
     return $sign * COMMEMORATE_LOSER unless($a_subrank == $b_subrank);
@@ -281,11 +301,11 @@ sub cmp_occurrence
 }
 
 
-# cmp_concurrence_1960($preceding, $following)
+# cmp_concurrence_1960($preceding, $following, $version)
 # A 1960 version of cmp_concurrence.
 sub cmp_concurrence_1960
 {
-  my ($preceding, $following) = @_;
+  my ($preceding, $following, $version) = @_;
 
   # Since we have concurrence at all, the following office must be a
   # Sunday or a first-class feast. The only way the preceding office can
@@ -310,14 +330,16 @@ sub cmp_concurrence_1960
 }
 
 
-# cmp_concurrence($preceding, $following)
+# cmp_concurrence($preceding, $following, $version)
 # In a similar spirit to cmp_occurrence, determines what should happen when the
 # $preceding office concurs with $following. See cmp_occurrence for the return
 # semantics, except that we can also return FROM_THE_CHAPTER when Vespers
 # should be such.
 sub cmp_concurrence
 {
-  return cmp_concurrence_1960(@_) if($horas::version =~ /1960/);
+  my ($preceding, $following, $version) = @_;
+
+  return cmp_concurrence_1960(@_) if($version =~ /1960/);
 
   sub concurrence_rank
   {
@@ -342,8 +364,6 @@ sub cmp_concurrence
         12;
   }
 
-
-  my ($preceding, $following) = @_;
   my $preceding_rank = concurrence_rank($preceding);
   my $following_rank = concurrence_rank($following);
 
@@ -414,10 +434,10 @@ sub cmp_concurrence
 
 sub cmp_commemoration
 {
-  my ($a, $b) = @_;
+  my ($a, $b, $version) = @_;
 
   # With 1960 rubrics, commemorations of the season always come first.
-  if($horas::version =~ /1960/)
+  if($version =~ /1960/)
   {
     ($a, $b) = ($b, $a) if($$a{cycle} == TEMPORAL_OFFICE);
     return 1 if($$b{cycle} == TEMPORAL_OFFICE);
@@ -505,7 +525,7 @@ sub resolve_occurrence
   # specified in the calendar.
   use sort 'stable';
 
-  my ($calendar_ref, $date) = @_;
+  my ($calendar_ref, $date, $version) = @_;
 
   # Get all calpoints falling on this date and expand them to the lists of
   # offices assigned thereto. This also gets any implicit offices.
@@ -513,12 +533,13 @@ sub resolve_occurrence
 
   # Combine and sort the lists of offices. The first sort uses occurrence rank,
   # and is used to find the winning office.
-  my @sorted_offices = sort {cmp_occurrence($a, $b)} map {@$_} @office_lists;
+  my @sorted_offices =
+    sort {cmp_occurrence($a, $b, $version)} map {@$_} @office_lists;
 
   my $winner = shift @sorted_offices;
 
   # Re-sort the tail using commemoration rank.
-  @sorted_offices = sort {cmp_commemoration($a, $b)} @sorted_offices;
+  @sorted_offices = sort {cmp_commemoration($a, $b, $version)} @sorted_offices;
 
   # Remove any offices that should be translated or omitted in occurrence with
   # the winner.
@@ -526,7 +547,7 @@ sub resolve_occurrence
     $winner,
     grep
     {
-      my $loser_rule = cmp_occurrence($_, $winner);
+      my $loser_rule = cmp_occurrence($_, $winner, $version);
       $loser_rule != OMIT_LOSER && $loser_rule != TRANSLATE_LOSER;
     }
     @sorted_offices;
@@ -538,9 +559,9 @@ sub resolve_concurrence
   # We will require stability when sorting commemorations. See below.
   use sort 'stable';
 
-  my ($calendar_ref, $date) = @_;
-  my @preceding = resolve_occurrence($calendar_ref, $date);
-  my @following = resolve_occurrence($calendar_ref, next_date($date));
+  my ($calendar_ref, $date, $version) = @_;
+  my @preceding = resolve_occurrence($calendar_ref, $date, $version);
+  my @following = resolve_occurrence($calendar_ref, next_date($date), $version);
 
   # Filter out preceding offices without second vespers and following ones
   # without first vespers.
@@ -558,13 +579,15 @@ sub resolve_concurrence
   my $concurrence_resolution =
     (@preceding == 0) ? OMIT_LOSER :
     (@following == 0) ? -(OMIT_LOSER) :
-    cmp_concurrence($preceding[0]{office}, $following[0]{office});
+    cmp_concurrence($preceding[0]{office}, $following[0]{office}, $version);
 
   # Abstract out the asymmetry.
   my ($winning_arr_ref, $concurring_arr_ref, $filter_key, $comparator) =
     ($concurrence_resolution == FROM_THE_CHAPTER || $concurrence_resolution > 0) ?
-      (\@following, \@preceding, 'v1filter', \&cmp_concurrence) :
-      (\@preceding, \@following, 'v2filter', sub { -cmp_concurrence(reverse @_) });
+      (\@following, \@preceding, 'v1filter',
+        \&cmp_concurrence) :
+      (\@preceding, \@following, 'v2filter',
+        sub { -cmp_concurrence($_[1], $_[0], $version) });
 
   my $winner = shift @$winning_arr_ref;
 
@@ -581,7 +604,10 @@ sub resolve_concurrence
   }
 
   # Filter the losing half for omission.
-  @$concurring_arr_ref = grep {$comparator->($_->{office}, $winner->{office}) != OMIT_LOSER} @$concurring_arr_ref;
+  @$concurring_arr_ref =
+    grep
+      {$comparator->($_->{office}, $winner->{office}, $version) != OMIT_LOSER}
+      @$concurring_arr_ref;
 
   my $concurring = shift @$concurring_arr_ref;
 
@@ -596,7 +622,7 @@ sub resolve_concurrence
 
   if(defined($concurring))
   {
-    if($horas::version =~ /1570/)
+    if($version =~ /1570/)
     {
       # In 1570, commemorations are simply sorted by rank, without affording the
       # concurring office any special treatment.
@@ -615,7 +641,12 @@ sub resolve_concurrence
   # the remaining commemorations, a commemoration for I. vespers is placed
   # before one for II. vespers. Since the earlier rubrics are silent in such
   # cases, we adopt this ordering for those, too.
-  return [@result, sort {cmp_concurrence($a->{office}, $b->{office})} @tail], $concurrence_resolution;
+  return
+    [
+      @result,
+      sort {cmp_concurrence($a->{office}, $b->{office}, $version)} @tail
+    ],
+    $concurrence_resolution;
 }
 
 1;
