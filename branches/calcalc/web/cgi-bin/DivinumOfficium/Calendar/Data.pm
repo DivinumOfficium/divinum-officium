@@ -23,6 +23,7 @@ BEGIN
     load_calendar_file
     get_implicit_office
     get_all_offices
+    generate_rank_line
   );
 }
 
@@ -113,6 +114,43 @@ sub implicit_rank_ordinal
     ($version =~ /1960/ ? 3 : 4) :
   # Otherwise:
     4;
+}
+
+
+#*** generate_rank_line($version, \%office_desc)
+# Given an office descriptor, generates a rank line for it.
+sub generate_rank_line
+{
+  my $office_desc_ref = shift;
+  my $category = $office_desc_ref->{category};
+  my $rankline = office_category_string($category) . ' ';
+
+  if ($category == OCTAVE_DAY_OFFICE)
+  {
+    $rankline .= office_octrank_string($office_desc_ref->{octrank}) . ' ';
+  }
+  elsif ($category == WITHIN_OCTAVE_OFFICE)
+  {
+    $rankline .= office_octrank_string_infra($office_desc_ref->{octrank}) . ' ';
+  }
+
+  if (exists($office_desc_ref->{standing}) &&
+    $office_desc_ref->{standing} != LESSER_DAY)
+  {
+    $rankline .= office_standing_string($office_desc_ref->{standing}) . ' ';
+  }
+
+  if (exists($office_desc_ref->{nobility}))
+  {
+    $rankline .= office_nobility_string($office_desc_ref->{nobility}) . ' ';
+  }
+
+  $rankline .= office_rite_string($office_desc_ref->{rite}) . ' ';
+
+  # TODO: Not quite right, but it'll do for now.
+  $rankline .= ('I' x $office_desc_ref->{rankord}) . '. classis';
+
+  return ucfirst($rankline);
 }
 
 

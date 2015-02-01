@@ -3,6 +3,7 @@ use warnings;
 
 use DivinumOfficium::Calendar::Resolution;
 use DivinumOfficium::Calendar::Definitions;
+use DivinumOfficium::Calendar::Data qw(generate_rank_line);
 use DivinumOfficium::Test qw(mock_office_descriptor);
 
 use Test::More;
@@ -14,7 +15,7 @@ use Test::More;
 my $version = 'Divino Afflatu';
 
 # Divino occurrence rows.
-my @divino_occ_rows = mock_descriptor_list(
+my @divino_occ_rows = mock_descriptor_list($version,
   [['Festum Duplex I. classis']],
   [['Festum Duplex II. classis']],
   [['Dies octava communis duplex majus']],
@@ -30,7 +31,7 @@ my @divino_occ_rows = mock_descriptor_list(
 my @divino_occ_cols = mock_descriptor_list($version,
   # [[SIMPLE_RITE, FESTAL_OFFICE]], BVM on Saturday. TODO.
   [['Dies octava simplex simplex']],
-  [['Feria major']],
+  [['Feria major simplex']],
   [['Dies infra octavam communem semiduplex']],
   [['Dies infra octavam III. ordinis semiduplex']],
   [['Dies infra octavam II. ordinis semiduplex']],
@@ -45,7 +46,7 @@ my @divino_occ_cols = mock_descriptor_list($version,
   [['Festum Duplex II. classis']],
   [['Festum Duplex I. classis']],
   [
-    ['Feria major privilegiata'],
+    ['Feria major privilegiata simplex'],
     ['Vigilia semiduplex I. classis'],
     # The table just has "day within I.-ord. octave", but these come in two
     # varieties.
@@ -83,17 +84,17 @@ my @divino_occ_verifiers = (
   # transferred.
   sub { my $r = abs shift; grep {$_ == $r} (OMIT_LOSER, TRANSLATE_LOSER) },
   # 1. Office of the first, nothing of the second.
-  sub { shift == -(OMIT_LOSER) },
-  # 2. Office of the second, nothing of the first.
   sub { shift == OMIT_LOSER },
+  # 2. Office of the second, nothing of the first.
+  sub { shift == -(OMIT_LOSER) },
   # 3. Office of the first, commemoration of the second.
-  sub { shift == -(COMMEMORATE_LOSER) },
-  # 4. Office of the second, commemoration of the first.
   sub { shift == COMMEMORATE_LOSER },
+  # 4. Office of the second, commemoration of the first.
+  sub { shift == -(COMMEMORATE_LOSER) },
   # 5. Office of the first, translation of the second.
-  sub { shift == -(TRANSLATE_LOSER) },
-  # 6. Office of the second, translation of the first.
   sub { shift == TRANSLATE_LOSER },
+  # 6. Office of the second, translation of the first.
+  sub { shift == -(TRANSLATE_LOSER) },
   # 7. Office of the more noble, commemoration of the other. Our mock
   # descriptors aren't distinguished in dignity, so just check that the loser
   # is commemorated.
@@ -106,14 +107,22 @@ for my $row (0..$#divino_occ_rows) {
   for my $col (0..$#divino_occ_cols) {
     foreach my $row_desc (@{$divino_occ_rows[$row]}) {
       foreach my $col_desc (@{$divino_occ_cols[$col]}) {
-        my $result = DivinumOfficium::Calendar::Resolution::cmp_occurrence(
+        my %resolution = DivinumOfficium::Calendar::Resolution::cmp_occurrence(
           $row_desc,
           $col_desc,
           $version
         );
+        my $result = ($resolution{sign} || 1) * $resolution{rule};
 
-        # TODO: Label.
-        ok($divino_occ_verifiers[$divino_occ_table[$row][$col]]->($result));
+        print "# Got %resolution; table code is " .
+          "$divino_occ_table[$row][$col]\n";
+
+        ok(
+          $divino_occ_verifiers[$divino_occ_table[$row][$col]]->($result),
+          generate_rank_line($row_desc) .
+            ' vs. ' .
+            generate_rank_line($col_desc)
+        );
       }
     }
   }
