@@ -31,10 +31,9 @@ my @divino_occ_rows = mock_descriptor_list($version,
 my @divino_occ_cols = mock_descriptor_list($version,
   # [[SIMPLE_RITE, FESTAL_OFFICE]], BVM on Saturday. TODO.
   [['Dies octava simplex simplex']],
-  [
-    ['Feria major simplex', 'calpoint' => 'Adv1-1'],
-    ['Feria major simplex', 'calpoint' => 'Quad1-1'],
-  ],
+  # We take an Advent feria as the archetype of a greater non-privileged feria,
+  # and test some Lenten special cases later.
+  [['Feria major simplex', 'calpoint' => 'Adv1-1']],
   [['Dies infra octavam communem semiduplex']],
   [['Dies infra octavam III. ordinis semiduplex']],
   [['Dies infra octavam II. ordinis semiduplex']],
@@ -117,9 +116,6 @@ for my $row (0..$#divino_occ_rows) {
         );
         my $result = ($resolution{sign} || 1) * $resolution{rule};
 
-        print "# Got $resolution{sign}, $resolution{rule}; table code is " .
-          "$divino_occ_table[$row][$col]\n";
-
         ok(
           $divino_occ_verifiers[$divino_occ_table[$row][$col]]->($result),
           generate_rank_line($row_desc) .
@@ -129,6 +125,32 @@ for my $row (0..$#divino_occ_rows) {
       }
     }
   }
+}
+
+# The occurrence table doesn't distinguish between Advent and Lenten greater
+# (unprivileged) ferias, but we have to handle them differently as we deal with
+# cessation of octaves in Lent in the occurrence-resolution logic.
+print "# Special case: Lenten ferias.\n";
+
+my $lenten_feria = mock_office_descriptor(
+  $version, 'Feria major simplex', 'calpoint' => 'Quad1-1');
+
+foreach my $rank (
+  'Dies infra octavam communem semiduplex',
+  'Dies octava communis duplex majus',
+  'Dies octava simplex simplex'
+)
+{
+  my $desc = mock_office_descriptor($version, $rank);
+  my %resolution = DivinumOfficium::Calendar::Resolution::cmp_occurrence(
+    $lenten_feria, $desc, $version);
+  use Data::Dumper;
+  local $Data::Dumper::Pad = '# ';
+  print Dumper(\%resolution);
+  ok(
+    $resolution{sign} > 0 && $resolution{rule} == OMIT_LOSER,
+    'Lenten feria vs. ' . generate_rank_line($desc)
+  );
 }
 
 done_testing();
