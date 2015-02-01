@@ -111,7 +111,7 @@ sub implicit_rank_ordinal
   $desc_ref->{category} == WITHIN_OCTAVE_OFFICE ?
     min($desc_ref->{octrank}, 3) :
   $desc_ref->{category} == VIGIL_OFFICE ?
-    ($version =~ /1960/ ? 3 : 4) :
+    ($version =~ /1960/ ? 4 : 3) :
   # Otherwise:
     4;
 }
