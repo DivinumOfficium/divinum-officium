@@ -12,8 +12,8 @@ Prefatio=Nat
 (rubrica 1960) Festum Domini
 Prelude
 
-[Prelude]
-#Benedictio Candelarum
+[Prelude](rubrica 1570)
+!! Benedictio Candelarum
 ! Finita Tertia, Sacerdos indutus Pluviali violaceo, vel sine Casula, cum Ministris similiter indutis, procedit ad benedicendum Candelas, in medio ante Altare vel ad cornu Epistolæ positas, et ipse, ibidem stans versus ad Altare, dicit manibus junctis in tono Orationis Missæ ferialis:
 V. Dóminus vobíscum.
 R. Et cum spíritu tuo.
@@ -37,13 +37,13 @@ v. Orémus. Dómine Jesu Christe, qui hodiérna die, in nostræ carnis substánt
 R. Amen.
 _
 _
-! Finitis Orationibus, Celebrans ponit incensum in thuríbulum: deinde ter aspergit Candelas aqua benedícta, dicendo Antiphonam Aspérges me, sine cantu et sine Psalmo: et ter adolet incenso. Tum dignior ex Clero accedit ad Altare, et ab eo Celebrans accipit Candelam, non genuflectens nec osculans manum illius. Postea Celebrans stans in medio ante Altare versus ad populum, distríbuit Candelas, primum digniori, a quo ipse acceperat; deinde Diacono et Subdiacono paratis, et aliis Clericis singulatim per ordinem, ultimo laicis: omnibus genuflectentibus, Candelam et manum Gelebrantis osculantibus, exceptis Prælatis, si adsint. Et cum inceperit distribuere Gandelas, a Choro cantatur:
+! Finitis Orationibus, Celebrans ponit incensum in thuríbulum: deinde ter aspergit Candelas aqua benedícta, dicendo Antiphonam Aspérges me, sine cantu et sine Psalmo: et ter adolet incenso. Tum dignior ex Clero accedit ad Altare, et ab eo Celebrans accipit Candelam, non genuflectens nec osculans manum illius. Postea Celebrans stans in medio ante Altare versus ad populum, distríbuit Candelas, primum digniori, a quo ipse acceperat; deinde Diacono et Subdiacono paratis, et aliis Clericis singulatim per ordinem, ultimo laicis: omnibus genuflectentibus, Candelam et manum Celebrantis osculantibus, exceptis Prælatis, si adsint. Et cum inceperit distribuere Candelas, a Choro cantatur:
 _
 !Antiphona Luc 2:32.
 Ant. Lumen ad revelatiónem géntium et glóriam plebis tuæ Israël.
 !Luc 2:29-31.
 v. Nunc dimíttis servum tuum, Dómine, secúndum verbum tuum in pace
-! Deinde repetitur tota Antiphona. Lumen ad revelatiónem géntium, quæ similiter repetitur post quemlibet Versum.
+! Deinde repetitur tota Antiphona “Lumen ad revelatiónem géntium” quæ similiter repetitur post quemlibet Versum.
 Ant. Lumen ad revelatiónem géntium et glóriam plebis tuæ Israël.
 v. Quia vidérunt óculi mei salutáre tuum. 
 Ant. Lumen ad revelatiónem géntium et glóriam plebis tuæ Israël.
@@ -80,7 +80,7 @@ R. In nómine Christi. Amen.
 Ant. Adórna thálamum tuum, Sion, et súscipe Regem Christum: ampléctere Maríam, quæ est coeléstis porta: ipsa enim portat Regem glóriæ novi lúminis: subsístit Virgo, addúcens mánibus Fílium ante lucíferum génitum: quem accípiens Símeon in ulnas suas, prædicávit pópulis, Dóminum eum esse vitæ et mortis et Salvatórem mundi.
 _
 !Luc 2:26, 27 et 28-29.
-Ant Respónsum accépit Símeon a Spíritu Sancto, non visúrum se mortem, nisi vidéret Christum Dómini: et cum indúcerent Púerum in templum, accépit eum in ulnas suas, et benedíxit Deum, et dixit: Nunc dimíttis servum tuum, Dómine, in pace.
+Ant. Respónsum accépit Símeon a Spíritu Sancto, non visúrum se mortem, nisi vidéret Christum Dómini: et cum indúcerent Púerum in templum, accépit eum in ulnas suas, et benedíxit Deum, et dixit: Nunc dimíttis servum tuum, Dómine, in pace.
 V. Cum indúcerent púerum Jesum parentes ejus, ut fácerent secúndum consuetúdinem legis pro eo, ipse accépit eum in ulnas suas. 
 !Et ingrediendo Ecclesiam, cantatur:
 V. Obtulérunt pro eo Dómino par túrturum, aut duos pullos columbárum: * Sicut scriptum est in lege Dómini.
@@ -88,7 +88,89 @@ V. Postquam impléti sunt dies purgatiónis Maríæ, secúndum legem Moysi, tul�
 V. Glória Patri, et Fílio, et Spirítui Sancto.
 R. Sicut scriptum est in lege Dómini.
 !  Finita Processione, Celebrans et Ministri, depositis violaceis, accipiunt paramenta alba pro Missa. Et Candelæ tenentur in manibus accensæ, dum legitur Evangelium, et iterum ab incepto Canone usque ad expletam Communionem.
-! Hodie prohibetur quælibet Missa votiva, etiam sollemniis, de Christo Domino. Ad Missam
+! Hodie prohibetur quælibet Missa votiva, etiam sollemniis, de Christo Domino.
+
+[Prelude](rubrica 1960)
+!!De Benedictione Candelarum
+! Si candelarum benedictio et processio, ob defectum ministrorum sacrorum, forma solemni fieri nequeat, licet formam simplicem adhibere, etiam absque cantu, dummodo tres saltem ministrantes celebranti inserviant.
+! Celebrans indutus pluviali albo, vel sine Casula, cum ministris similiter indutis, procedit ad benedicendum Candelas, in medio ante Altare vel ad latus Epistolæ positas, et ipse ibidem stans versus ad Altare, dicit manibus junctis in tono feriali:
+_
+V. Dóminus vobíscum.
+R. Et cum spíritu tuo.
+v. Orémus. Domine sancte, Pater omnípotens, ætérne Deus, qui ómnia ex níhilo creásti, et jussu tuo per ópera apum hunc liquorem ad perfectionem cérei veníre fecísti: et qui hodiérna die petitiónem justi Simeónis implésti: te humíliter deprecámur; ut has candélas ad usus hóminum et sanitátem córporum et animárum, sive in terra sive in aquis, per invocatiónem tui sanctíssimi nóminis et per intercessiónem beátæ Maríæ semper Vírginis, cujus hódie festa devóte celebrántur, et per preces ómnium Sanctórum tuórum, bene + dícere et sancti + ficáre dignéris: et hujus plebis tuæ, quæ illas honorífice in mánibus desíderat portare teque cantando laudare, exáudias voces de coelo sancto tuo et de sede majestátis tuæ: et propítius sis ómnibus clamántibus ad te, quos redemísti pretióso Sánguine Fílii tui:
+$Qui tecum.
+_
+_
+v. Orémus. Omnípotens sempitérne Deus, qui hodiérna die Unigénitum tuum ulnis sancti Simeónis in templo sancto tuo suscipiéndum præsentásti: tuam súpplices deprecámur cleméntiam; ut has candélas, quas nos fámuli tui, in tui nóminis magnificéntiam suscipiéntes, gestáre cúpimus luce accénsas, bene + dícere et sancti + ficáre atque lúmine supérnæ benedictiónis accéndere dignéris: quaténus eas tibi Dómino, Deo nostro, offeréndo digni, et sancto igne dulcíssimæ caritátis tuæ succénsi, in templo sancto glóriæ tuæ repræsentári mereámur.
+$Per eundem
+_
+_
+v. Orémus. Dómine Jesu Christe, lux vera, quæ illúminas omnem hóminem veniéntem in hunc mundum: effúnde bene + dictiónem tuam super hos céreos, et sancti + fica eos lúmine grátiæ tuæ, et concéde propítius; ut, sicut hæc luminária igne visíbili accénsa noctúrnas depéllunt ténebras; ita corda nostra invisíbili igne, id est, Sancti Spíritus splendóre illustráta, ómnium vitiórum cæcitáte cáreant: ut, purgáto mentis óculo, ea cérnere póssimus, quæ tibi sunt plácita et nostræ salúti utília; quaténus post hujus saeculi caliginósa discrímina ad lucem indeficiéntem perveníre mereámur. Per te, Christe Jesu, Salvátor mundi, qui in Trinitáte perfécta vivis et regnas Deus, per ómnia saecula sæculórum.
+R. Amen.
+_
+_
+v. Orémus. Omnípotens sempitérne Deus, qui per Móysen fámulum tuum puríssimum ólei liquórem ad luminária ante conspéctum tuum júgiter concinnánda præparári jussísti: bene + dictiónis tuæ grátiam super hos céreos benígnus infúnde; quaténus sic adminístrent lumen extérius, ut, te donánte, lumen Spíritus tui nostris non desit méntibus intérius.
+$Per Dominum eiusdem
+_
+_
+v. Orémus. Dómine Jesu Christe, qui hodiérna die, in nostræ carnis substántia inter hómines appárens, a paréntibus in templo es præsentátus: quem Símeon venerábilis senex, lúmine Spíritus tui irradiátus, agnóvit, suscépit et benedíxit: præsta propítius; ut, ejúsdem Spíritus Sancti grátia illumináti atque edócti, te veráciter agnoscámus et fidéliter diligámus: Qui cum Deo Patre in unitáte ejúsdem Spíritus Sancti vivis et regnas Deus, per ómnia saecula sæculórum.
+R. Amen.
+_
+_
+! Finitis Orationibus, celebrans ponit incensum in thuríbulum: deinde ter aspergit candelas aqua benedícta, dicendo Antiphonam “Aspérges me”, sine cantu et sine Psalmo: et ter adolet incenso. 
+_
+_
+!! De Distributione Candelarum
+! Tum dignior ex Clero accedit ad Altare, et ab eo Celebrans accipit Candelam, non genuflectens nec osculans manum illius. Postea Celebrans stans in medio ante Altare versus ad populum, distríbuit Candelas, primum digniori, a quo ipse acceperat; deinde Diacono et Subdiacono paratis, et aliis Clericis singulatim per ordinem, ultimo laicis: omnibus genuflectentibus, Candelam et manum Celebrantis osculantibus, exceptis Prælatis, si adsint. Et cum inceperit distribuere Candelas, a Choro cantatur:
+_
+!Antiphona Luc 2:32.
+Ant. Lumen ad revelatiónem géntium et glóriam plebis tuæ Israël.
+!Luc 2:29-31.
+v. Nunc dimíttis servum tuum, Dómine, secúndum verbum tuum in pace
+! Deinde repetitur tota Antiphona “Lumen ad revelatiónem géntium” quæ similiter repetitur post quemlibet Versum.
+Ant. Lumen ad revelatiónem géntium et glóriam plebis tuæ Israël.
+v. Quia vidérunt óculi mei salutáre tuum. 
+Ant. Lumen ad revelatiónem géntium et glóriam plebis tuæ Israël.
+v. Quod parásti ante fáciem ómnium populorum. 
+Ant. Lumen ad revelatiónem géntium et glóriam plebis tuæ Israël.
+v. Glória Patri, et Fílio, et Spirítui Sancto. 
+Ant. Lumen ad revelatiónem géntium et glóriam plebis tuæ Israël.
+v. Sicut erat in princípio, et nunc, et semper, et in saecula sæculórum. Amen. 
+Ant. Lumen ad revelatiónem géntium et glóriam plebis tuæ Israël.
+_
+_
+! His expletis, cantatur:
+!Antiph Ps 43:26.
+Ant. Exsúrge, Dómine, ádjuva nos: et líbera nos propter nomen tuum.
+!Ps 43:2.
+Deus, áuribus nostris audívimus: patres nostri annuntiavérunt nobis.
+&Gloria
+Ant. Exsúrge, Dómine, ádjuva nos: et líbera nos propter nomen tuum.
+_
+_
+! Deinde Sacerdos dicit:
+v. Orémus.
+Exáudi, quaesumus, Dómine, plebem tuam: et, quæ extrinsécus ánnua tríbuis devotióne venerári, intérius asséqui grátiæ tuæ luce concéde. Per Christum, Dóminum nostrum.
+R. Amen.
+_
+_
+!! De Processione
+! Primo Celebrans ponit incensum in thuribulum: postea Diaconus vertens se ad populum, dicit:
+V. Procedámus in pace.
+R. In nómine Christi. Amen.
+! Præcedit thuriferarius cum thuribulo fumiganti: deinde Subdiaconus paratus, deferens Crucem, medius inter duos Acolythos cum candelabris accensis: sequitur Clerus per ordinem, ultimo Celebrans cum Diacono a sinistris, omnes cum Candelis accensis in manibus: et cantantur Antiphonæ sequentes:
+Ant. Adórna thálamum tuum, Sion, et súscipe Regem Christum: ampléctere Maríam, quæ est coeléstis porta: ipsa enim portat Regem glóriæ novi lúminis: subsístit Virgo, addúcens mánibus Fílium ante lucíferum génitum: quem accípiens Símeon in ulnas suas, prædicávit pópulis, Dóminum eum esse vitæ et mortis et Salvatórem mundi.
+_
+!Luc 2:26, 27 et 28-29.
+Ant. Respónsum accépit Símeon a Spíritu Sancto, non visúrum se mortem, nisi vidéret Christum Dómini: et cum indúcerent Púerum in templum, accépit eum in ulnas suas, et benedíxit Deum, et dixit: Nunc dimíttis servum tuum, Dómine, in pace.
+V. Cum indúcerent púerum Jesum parentes ejus, ut fácerent secúndum consuetúdinem legis pro eo, ipse accépit eum in ulnas suas. 
+_
+!Et ingrediendo Ecclesiam, cantatur:
+V. Obtulérunt pro eo Dómino par túrturum, aut duos pullos columbárum: * Sicut scriptum est in lege Dómini.
+V. Postquam impléti sunt dies purgatiónis Maríæ, secúndum legem Moysi, tulérunt Jesum in Jerúsalem, ut sísterent eum Sicut scriptum est in lege Dómini.
+V. Glória Patri, et Fílio, et Spirítui Sancto.
+R. Sicut scriptum est in lege Dómini.
+!  Finita Processione, celebrans et ministri accipiunt paramenta pro Missa. In Missa quae benedictionem candelarum sequitur, omittuntur psalmus “Iudica me, Deus” cum sua antiphona, necnon confessio cum absolutione, versibus sequentibus atque orationibus “Aufer a nobis” et “Oramus te, Domine”. Sacerdos igitur cum ad altare accesserit, statim illud ascendit et osculatur in medio. Candelæ in manibus tenentur ad Evangelium et toto Canone.
 
 [Introitus]
 !Ps 47:10-11.
