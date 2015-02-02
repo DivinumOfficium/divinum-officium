@@ -54,7 +54,7 @@ sub collect_arrays {
  my $datafolder = shift;   
 
 @monthlength = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-@daynames = ('Sun', 'Mon', 'Tue', 'Wen', 'Thu', 'Fri', 'Sat');
+@daynames = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
 my ($kmonth, $kday);
 
 $title = "Transfer table for $kyear $version";
