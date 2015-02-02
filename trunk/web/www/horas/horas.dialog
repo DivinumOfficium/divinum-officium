@@ -20,7 +20,7 @@ Language 2~>$lang2~>Optionmenu~>languages
 Psalmversion->$accented~>Optionmenu~>psalmversion
 
 [languages]
-Latin,English,Magyar
+Latin,English,Magyar,Deutsch
 
 [psalmversion]
 accented,plain
@@ -61,7 +61,7 @@ C12,Officium parvum Beatae Mariae Virginis
 [Rank Tempora]
 1=Feria privilegiata
 4=Dominica ordinaria
-5=II class (Dominica Feast
+5=II class (Dominica Feast)
 6=I class (Dominica, Feria, Feast)
 
 

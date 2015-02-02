@@ -173,7 +173,7 @@ if ($flag) {
   setsetup('general', $expand, $version, $lang2, $accented, $local);
   setcookies('horasgo', 'general');
 }
-if (!$expand) {$expand = 'psalms';}
+if (!$expand) {$expand = 'all';}
 if (!$version) {$version = 'Rubrics 1960';}
 if (!$lang2) {$lang2 = 'English';}
 $only = ($lang1 =~ /^$lang2$/i) ? 1 : 0;

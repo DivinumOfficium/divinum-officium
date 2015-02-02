@@ -312,8 +312,6 @@ my $lang_count = @languages;
 
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callofficium();">Divinum Officium</A>
-&nbsp;&nbsp;&nbsp;
 <SELECT NAME=lang2 SIZE="$lang_count" onclick="parchange()">
 PrintTag
 foreach my $lang (@languages)
@@ -373,8 +371,9 @@ sub headline {
   print << "PrintTag";
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>
-<FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
-&nbsp;&nbsp;&nbsp;&nbsp;
+<FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT><P>
+<P ALIGN=CENTER><A HREF=# onclick="callofficium();">Divinum Officium</A>
+&nbsp;&nbsp;&nbsp
 <INPUT TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
 <A HREF=# onclick="prevnext(-1)">&darr;</A>
 <INPUT TYPE=BUTTON NAME=SUBMIT VALUE=" " onclick="parchange();">
