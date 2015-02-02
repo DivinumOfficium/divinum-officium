@@ -385,7 +385,7 @@ PrintTag
 
 
 
-#*** hedline($head) prints headlibe for main and pray
+#*** hedline($head) prints headline for main and pray
 sub headline {
   my $head = shift;
   if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
