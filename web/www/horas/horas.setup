@@ -11,13 +11,13 @@ $largefont='+1 bold italic red';;
 $smallfont='1 red';;
 $titlefont='+1 red';;
 $screenheight='1024';;
-$textwidth='80';;
+$textwidth='100';;
 
 [parameterscheck]
 bbtbtcccccccnn
 
 [general]
-$expand='psalms';;
+$expand='all';;
 $version='Rubrics 1960';;
 $lang2='English';;
 $accented='plain';;
@@ -26,7 +26,7 @@ $accented='plain';;
 oooo
 
 [generalc]
-$expand='psalms';;
+$expand='all';;
 $version1='Divino Afflatu';;
 $version2='Rubrics 1960';;
 $lang2='English';;
