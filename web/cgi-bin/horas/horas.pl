@@ -974,7 +974,7 @@ sub canticum : ScriptFunc {
 sub martyrologium : ScriptFunc {
   my $lang = shift;
 
-  my $t = setfont($largefont, "Martyrologium ") . setfont($smallblack, "(anticipated)") . "\n_\n";
+  my $t = setfont($largefont, "Martyrologium ") . setfont($smallblack, "(anticip.)") . "\n_\n";
   #<FONT SIZE=1>(anticipated)</FONT>\n_\n";
   
   my $a = getweek(1);    
