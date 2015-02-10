@@ -1,0 +1,117 @@
+[Rank]
+Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;5;;ex Tempora/Pasc5-4
+
+[Rank1960]
+Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;6;;vide Tempora/Pasc5-4
+
+[Rule]
+ex Tempora/Pasc5-4;
+Psalmi Dominica
+Antiphonas Horas
+9 Lectiones
+Doxology=Asc
+Feria Te Deum
+No suffragium
+No93
+
+[Rule] (rubrica 1960)
+Feria Te Deum
+Doxology=Asc
+
+[Oratio]
+@Tempora/Pasc6-0
+
+[LectioJudae1]
+Incomincia la Lettera cattolica dell'Apostolo san Giuda
+!Giuda 1:1-4
+1 Giuda, servo di Gesù Cristo e fratello di Giacomo, a quelli che sono amati da Dio Padre, conservati e chiamati in Gesù Cristo. 
+2 La misericordia, la pace e la carità abbondi in voi. 
+3 Carissimi, mentre ponevo ogni sollecitudine per scrivervi sulla comune vostra salute, sono stato costretto a scrivervi per esortarvi a combattere per la fede che fu già insegnata ai cristiani. 
+4 Perché si sono intrusi certi uomini empi, per i quali già da tempo è stata scritta questa condanna, i quali convertono in lascivia la grazia del nostro Dio, e rinnegano il solo Dominatore e Signor nostro Gesù Cristo.
+
+[Lectio1]
+@:LectioJudae1
+(sed rubrica 1960)
+@:Lectio7
+
+[Responsory1] (rubrica 1960)
+R. Io pregherò il Padre ed egli vi darà un altro Paraclito, 
+* Affinché rimanga con voi in eterno lo Spirito di verità, alleluia.
+V. Se io non andrò, il Paraclito non verrà a voi; se invece andrò, ve lo manderò.
+R. Affinché rimanga con voi in eterno lo Spirito di verità, alleluia.
+
+[LectioJudae2]
+!Giuda 1:5-8
+5 Ora io voglio ricordarvi, sebbene già sappiate tutte queste cose, che Gesù, dopo d'aver liberato il popolo dalla terra d'Egitto, sterminò poi quelli che non credettero: 
+6 e gli angeli che non conservarono la loro dignità ma abbandonarono il loro domicilio, li ha riservati sepolti nella caligine in eterne catene, per il giudizio del gran giorno. 
+7 Come Sodoma e Gomorra e le città confinanti che si macchiarono delle stesse impurità ed andarono dietro ad eccessi disonoranti, sono rimaste ad esempio, essendo state condannate alla pena del fuoco eterno; 
+8 così anche questi contaminano la (loro) carne, disprezzano l'autorità, bestemmiano la maestà.
+
+[Lectio2]
+@:LectioJudae2
+(sed rubrica 1960)
+@:Lectio8
+
+[Responsory2] (rubrica 1960)
+R. Se io non andrò, il Paraclito non verrà a voi: se io invece andrò, ve lo manderò.
+* Quando egli verrà, vi insegnerà ogni verità, alleluia.
+V. Non parlerà da sé, ma dirà tutto ciò che avrà udito e vi annunzierà le cose che verranno.
+R. Quando egli verrà, vi insegnerà ogni verità, alleluia.
+&Gloria
+R. Quando egli verrà, vi insegnerà ogni verità, alleluia.
+
+[LectioJudae3]
+!Giuda 1:9-13
+9 Quando Michele Arcangelo disputando col diavolo gli contestava il corpo di Mosè, non ardì di condannarlo con parole di maledizione, ma disse: Ti reprima il Signore! 
+10 Questi invece bestemmiano tutto quello che non capiscono: e di tutto quanto che, come gli animali muti, naturalmente conoscono, abusano per pervertirsi. 
+11 Guai a loro, perché battono la strada di Caino, e per sete di guadagno si sono precipitati nell'errore di Balaam, e sono periti nella ribellione di Core!
+12 Costoro sono tante macchie nelle loro agapi, stando insieme a mensa senza rispetto, pascendo se stessi, nuvole senz'acqua, trasportate qua e là dai venti, alberi d'autunno, infruttiferi, due volte morti, sradicati, 
+13 onde furiose del mare, che spumano le proprie turpitudini, stelle erranti: cui è riserbata una tenebrosa caligine in eterno.
+
+[Lectio3]
+@:LectioJudae3
+(sed rubrica 1960)
+@:Lectio9
+
+[Responsory3]
+@Tempora/Pasc5-4:Responsory3
+
+[Lectio4]
+Dal Trattato di sant'Agostino Vescovo sul Simbolo ai Catecumeni
+!Libro 4, capo 1 tomo 9
+Allorché per mezzo del segno sacratissimo della croce la santa madre Chiesa vi ha ricevuti nel suo seno per generarvi spiritualmente, colla gioia più grande, come i vostri fratelli, voi siete divenuti la futura generazione di tanta madre, e finché non vi rigeneri nel bagno salutare del battesimo e vi restituisca alla luce vera, ella nutrisca con alimenti convenienti quelli che porta nel seno e, lieta, li conduca lieti al giorno in che li dia spiritualmente alla luce: poiché ella non è sottoposta alla condanna di Eva, che, nella tristezza e nei gemiti, dà alla luce dei figli, che sono punto nella gioia, ma piuttosto nel pianto. Ella infatti scioglie ciò che la prima donna aveva legato: affinché colla sua obbedienza renda alla vita coloro che la disobbedienza della prima donna ha donato alla morte. Tutte le cerimonie misteriose, che sono state fatte e si fanno ancora su voi mediante il ministero dei servi di Dio - esorcismi, preghiere, cantici spirituali, insufflazioni, cilizio, inchini di testa, prostrazioni, questo timore stesso che bisogna desiderare con ogni sicurezza - tutte queste cose sono, come dissi, gli alimenti onde questa madre vi nutrisce nel suo seno, affinché, rigenerati nel battesimo, vi presenti lieti a Cristo.
+
+[Lectio5]
+Avete ricevuto anche il simbolo, come protezione di colei che vi deve generare, contro il veleno del serpente. Nell'Apocalisse dell'Apostolo Giovanni si stava davanti alla donna ch'era per divenir madre, affin di divorarne la prole appena fosse nata. Nessuno di voi ignora questo dragone essere il diavolo: e questa donna rappresentare la Vergine Maria, che, vergine, diede alla luce il nostro capo vergine; e che, di più, nella sua persona, era figura della santa Chiesa: perché come generando suo figlio ella restò vergine, così la Chiesa genera in ogni tempo i membri di lui senza perdere la sua verginità. Coll'aiuto del Signore abbiamo intrapreso ad esporvi gli articoli stessi dell'augustissimo simbolo, per imprimere nei vostri cuori quello che ciascuno d'essi contiene. I vostri cuori sono preparati, perché il nemico è stato scacciato dai vostri cuori.
+
+[Lectio6]
+A questo nemico voi avete professato di rinunziare: e in questa professione non agli uomini, ma a Dio e a' suoi Angeli che la registrano voi avete detto: Rinunzio. Rinunziate non solo colle parole, ma ancora coi costumi: non solo col suono della lingua, ma ancora colla condotta della vita: non solo col rumor delle labbra, ma ancora colla testimonianza delle opere. Sappiate che avete ingaggiato una lotta con un nemico astuto, antico e che pare talvolta assopito: ch'esso, dopo la vostra rinunzia, non trovi più in voi le sue opere, non abbia più diritto di ridurvi in sua servitù. Tu, infatti, o Cristiano, sei sorpreso e scoperto quando fai una cosa e ne professi un'altra: fedele di nome, ti smentisci colle tue opere, non mantenendo fede alla tua promessa: ora entrando in chiesa a farvi orazione, e un momento dopo negli spettacoli a mescolare impudentemente la tua voce con quella degli istrioni. Che hai tu di comune colle pompe del diavolo, alle quali hai rinunziato?
+
+[Lectio7]
+Lettura del santo Vangelo secondo Giovanni
+!Giov 14:15-21
+In quell'occasione: Gesù disse ai suoi discepoli: Se mi amate, osservate i miei comandamenti. E io pregherò il Padre, ed egli vi darà un altro Paraclito. Eccetera.
+_
+Omelia di sant'Agostino Vescovo
+!Trattato 74 su Giovanni, verso la fine, e 75
+Dicendo: «Io pregherò il Padre, ed egli vi darà un altro Paraclito» (Joann. 14, 16), mostra ch'egli pure è Paraclito. Paraclito si traduce in Latino per avvocato: e di Cristo è detto: «Abbiamo un avvocato presso il Padre, Gesù Cristo, il giusto» (Joann. 2, 1). Egli poi dichiarò che il mondo non può ricevere lo Spirito Santo, nello stesso senso che fu detto: «La prudenza della carne è nemica di Dio: perché non è soggetta alla legge divina, né può esserlo» (Rom. 8, 7): come se dicessimo: L'ingiustizia non può essere la giustizia. Con questa parola «mondo» egli designa qui quelli che amano il mondo: amore che non viene certo dal Padre. E perciò all'amore di questo mondo, che noi ci sforziamo tanto di diminuire e distruggere in noi, è contrario «l'amore di Dio, che viene diffuso nei nostri cuori per lo Spirito Santo che ci è stato dato » (Rom. 5, 5).
+
+[Lectio8]
+Il mondo quindi non può ricevere questo spirito, perché non lo vede, né lo conosce» (Joann. 14, 17). L'amore mondano infatti non ha questi occhi invisibili onde si può vedere lo Spirito Santo, il quale non può esser visto che in modo invisibile. «Ma voi, disse, lo conoscerete: perché dimorerà con voi e sarà in voi» (Ibi). Sarà in essi per dimorarvi, non dimorerà per esservi: giacché prima è essere in un luogo che dimorarvi. Ma affinché i discepoli non intendessero queste parole: «Dimorerà in voi» di un soggiorno visibile, come ordinariamente fa un ospite presso colui che gli dà ospitalità, egli spiegò queste parole: «Dimorerà con voi» aggiungendo: «E sarà in voi».
+
+[Responsory8]
+@Tempora/Pasc6-0
+
+[Lectio9]
+Si vede dunque (lo Spirito S.) in maniera invisibile. E s'egli non è in noi, non possiamo averne conoscenza: è così che noi vediamo in noi stessi la nostra coscienza. Noi vediamo bene la faccia d'un altro, e non possiamo vedere la nostra: vediamo invece la nostra coscienza, e non vediamo l'altrui. Ma la coscienza non può mai esistere che in noi: mentre lo Spirito Santo può essere anche senza di noi. Esso ci viene dato perché sia pure in noi: ma, s'egli non è in noi, ci è impossibile di vederlo e conoscerlo, come dev'essere veduto e conosciuto. Dopo aver promesso lo Spirito Santo, il Signore non volendo che si potesse credere ch'egli lo dava per sostituire se stesso, e che egli cesserebbe così d'essere co' suoi discepoli, aggiunse: «Non vi lascerò orfani, tornerò a voi» (Joann. 14, 18). Non contento dunque il Figlio di Dio di averci fatti figli adottivi di suo Padre e d'aver voluto che noi abbiamo per Padre, per un effetto della grazia, quello ch'è suo Padre per natura, mostra ancora egli stesso verso di noi una tenerezza in certo modo paterna quando dice: «Non vi lascerò orfani» (Ibi).
+&teDeum
+
+[Capitulum Laudes]
+@Tempora/Pasc6-0
+
+[Versum 2]
+@Tempora/Pasc6-0
+
+[Ant 2]
+@Tempora/Pasc6-0
+
