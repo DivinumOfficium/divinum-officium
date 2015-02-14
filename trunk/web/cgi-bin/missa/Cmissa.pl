@@ -79,7 +79,6 @@ require "$Bin/webdia.pl";
 require "$Bin/msetup.pl";
 require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
-require "$Bin/tfertable.pl";
 
 binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;

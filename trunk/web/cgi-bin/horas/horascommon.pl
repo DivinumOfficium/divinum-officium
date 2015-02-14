@@ -212,7 +212,6 @@ sub getrank {
                         
   $dirgeline = '';	 
   $dirge = 0;		 	 
-  if (($tk || $Hk || $savesetup ) && !(-e "$datafolder/../horas/Latin/Tabulae/Tr$vtrans$year.txt")) {tfertable($version, $year, $datafolder);}
   if (@lines = do_read("$datafolder/../horas/Latin/Tabulae/Tr$vtrans$year.txt")) {   
      my $tr = join ('', @lines);
      $tr =~ s/\=/\;\;/g;  	   

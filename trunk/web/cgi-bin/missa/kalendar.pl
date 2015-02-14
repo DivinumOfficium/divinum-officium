@@ -63,7 +63,6 @@ require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/webdia.pl";
-require "$Bin/tfertable.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
 binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
