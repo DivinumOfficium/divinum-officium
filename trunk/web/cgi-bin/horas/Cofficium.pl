@@ -395,8 +395,6 @@ $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
 <P ALIGN=CENTER><FONT SIZE=-1>
 <A HREF="officium.pl">One version</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF=edit.pl?lang=$lang2&date=$date1&version=$version" TARGET="_NEW">Show files</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF=# onclick="pset('parameters')">Options</A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/versions.html" TARGET="_NEW">Versions</A>

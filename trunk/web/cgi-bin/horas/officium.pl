@@ -448,8 +448,6 @@ $addlocal<BR>
 <P ALIGN=CENTER><FONT SIZE=-1>
 <A HREF="Cofficium.pl">Compare</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF=edit.pl?lang=$lang2&date=$date1&version=$vers TARGET="_NEW">Show files</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF=# onclick="pset('parameters')">Options</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/versions.html" TARGET="_NEW">Versions</A>
