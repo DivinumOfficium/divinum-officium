@@ -327,11 +327,7 @@ PrintTag
   print << "PrintTag"; 
 <A HREF="Cmissa.pl">Compare</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF=medit.pl?lang=$lang2&date=$date1&version=$vers TARGET="_NEW">Show files</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF=# onclick="pset('parameters')">Options</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF=source.pl TARGET=_NEW> Source</A>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="hset('Propers')">$propname</A>
 PrintTag
