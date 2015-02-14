@@ -78,7 +78,6 @@ require "$Bin/horas.pl";
 require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
-require "$Bin/tfertable.pl";
 require "$Bin/do_io.pl";
 
 $q = new CGI;
