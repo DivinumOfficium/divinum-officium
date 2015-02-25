@@ -1,0 +1,26 @@
+[Rank]
+In Octava S. Joannis;;Simplex;;1.1;;vide Sancti/12-27
+
+[Rank1960]
+Die Tertia Januarii;;Feria;;1.2;;vide Sancti/01-01
+
+[RankTrident]
+In Octava S. Joannis;;Duplex;;3;;ex Sancti/12-27
+
+[Rule]
+ex Sancti/12-27;
+Gloria
+Credo
+Prefatio=Nat
+
+[Commemoratio Oratio]
+!Pro Ss. Innocentibus
+@Sancti/12-28:Oratio
+
+[Commemoratio Secreta]
+!Pro Ss. Innocentibus
+@Sancti/12-28:Secreta
+
+[Commemoratio Postcommunio]
+!Pro Ss. Innocentibus
+@Sancti/12-28:Postcommunio
