@@ -1,0 +1,18 @@
+Name:
+Rule:
+Rank:3 plus unit
+Rank1960:3 plus unit
+Introitus[1-3]*:6 line=\!,v\.,\!,,\&Gloria,
+Oratio[1-9]*:2 line=,\$
+Lectio:3 line=,\!,
+Graduale:4+ line=\!,,
+Tractus:
+GradualeP:
+Sequentia:
+Evangelium:3 line=,\!,,
+Offertorium:2 line=\!,,
+Secreta[1-9]*:2 line=,\$
+Communio:2 line=\!,
+Postcommunio[1-9]*:2 line=,\$
+Commemoratio (Oratio|Secreta|Postcommunio):
+
