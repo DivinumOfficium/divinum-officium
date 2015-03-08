@@ -37,9 +37,24 @@ Festum Duplex I. classis
 De tempore
 octid=Nat
 
+[infra-oct-12-25]
+Die infra octavam Nativitatis
+Dies infra octavam III. ordinis semiduplex
+De tempore
+filename=Sancti/12-25
+octid=Nat
+
 [12-26]
 S. Stephani Protomartyris
 Festum Duplex II. classis
+octid=SStephanus
+
+@:infra-oct-12-25
+
+[infra-oct-12-26] (rubrica tridentina)
+Die infra octavam S. Stephani
+Dies infra octavam communem semiduplex
+filename=Sancti/12-26
 octid=SStephanus
 
 [12-27]
@@ -48,11 +63,33 @@ Festum Duplex II. classis
 (rubrica tridentina) filename=Sancti/12-27o
 octid=SIoannes
 
+@:infra-oct-12-25
+
+(rubrica tridentina) @:infra-oct-12-26
+
+[infra-oct-12-27]
+Die infra octavam S. Joannis
+Dies infra octavam communem semiduplex
+filename=Sancti/12-27
+octid=SIoannes
+
 [12-28]
 Ss. Innocentium
 Festum Duplex II. classis
 (rubrica Rubrics 1960) filename=Sancti/12-28r
 (rubrica tridentina) filename=Sancti/12-28o
+octid=SsInnocentes
+
+@:infra-oct-12-25
+
+(rubrica tridentina) @:infra-oct-12-26
+
+(rubrica tridentina) @:infra-oct-12-27
+
+[infra-oct-12-28]
+Die infra octavam Ss. Innocentium
+Dies infra octavam communem semiduplex
+filename=Sancti/12-28
 octid=SsInnocentes
 
 [Nat1-0]
@@ -65,11 +102,19 @@ Festum Duplex
 (sed rubrica 1570) Festum Semiduplex
 (rubrica tridentina) filename=Sancti/12-29o
 
-[12-29] (rubrica 1960)
-Die V infra Octavam Nativitatis
+@:infra-oct-12-25
+(sed rubrica 1960)
+Die V infra octavam Nativitatis
 Dies infra octavam II. ordinis Duplex II. classis
+De tempore
 (rubrica Rubrics 1960) filename=Sancti/12-29r
 octid=Nat
+
+(rubrica tridentina) @:infra-oct-12-26
+
+(rubrica tridentina) @:infra-oct-12-27
+
+(rubrica tridentina) @:infra-oct-12-28
 
 [12-30]
 Die VI infra Octavam Nativitatis
@@ -79,17 +124,30 @@ De tempore
 (rubrica tridentina) filename=Sancti/12-30o
 octid=Nat
 
+(rubrica tridentina) @:infra-oct-12-26
+
+(rubrica tridentina) @:infra-oct-12-27
+
+(rubrica tridentina) @:infra-oct-12-28
+
 [12-31]
 S. Silvestri Papae et Confessoris
 Festum Duplex
 (rubrica tridentina) filename=Sancti/12-31o
 
-[12-31] (rubrica 1960)
+@:infra-oct-12-25
+(sed rubrica 1960)
 Die VII infra Octavam Nativitatis
 Dies infra octavam II. ordinis Duplex II. classis
 De tempore
-(rubrica Rubrics 1960) filename=Sancti/12-31r
+filename=Sancti/12-31r
 octid=Nat
+
+(rubrica tridentina) @:infra-oct-12-26
+
+(rubrica tridentina) @:infra-oct-12-27
+
+(rubrica tridentina) @:infra-oct-12-28
 
 [01-01]
 In Circumcisione Domini
@@ -98,6 +156,12 @@ Festum Duplex II. classis
 (sed rubrica 1960) Festum Duplex I. classis
 De tempore
 (rubrica tridentina) filename=Sancti/01-01o
+
+(rubrica tridentina) @:infra-oct-12-26
+
+(rubrica tridentina) @:infra-oct-12-27
+
+(rubrica tridentina) @:infra-oct-12-28
 
 [Nat2-0]
 Sanctissimi Nominis Jesu
@@ -109,6 +173,10 @@ Dies octava simplex Simplex
 (sed rubrica tridentina) Dies octava communis Duplex maius
 (rubrica tridentina) filename=Sancti/01-02o
 octid=SStephanus
+
+(rubrica tridentina) @:infra-oct-12-27
+
+(rubrica tridentina) @:infra-oct-12-28
 
 [01-02] (rubrica 1960 aut rubrica 1955)
 Die Secunda Januarii
@@ -126,6 +194,8 @@ Dies octava simplex Simplex
 (sed rubrica tridentina) Dies octava communis Duplex maius
 (rubrica tridentina) filename=Sancti/01-03o
 octid=SIoannes
+
+(rubrica tridentina) @:infra-oct-12-28
 
 [01-03] (rubrica Rubrics 1960 aut rubrica 1955)
 Die Tertia Januarii
@@ -155,7 +225,7 @@ Vigilia Semiduplex II. classis
 (sed rubrica 1570) Vigilia Semiduplex
 De tempore
 
-[01-05] (rubrica 1960 aut rubrica 19500)
+[01-05] (rubrica 1960 aut rubrica 1955)
 Die Quinta Januarii
 Feria Simplex
 De tempore
@@ -232,11 +302,14 @@ Sexta die infra Octavam Epiphaniae
 Dies infra octavam communem Semiduplex
 De tempore
 octid=Epi
-
-[01-11] (rubrica 1960 aut rubrica 1955)
+(sed rubrica 1960 aut rubrica 1955)
 Die Undecima Januarii
 Feria Simplex
 De tempore
+
+S. Hyginum Papæ et Martyris
+Festum simplex
+filename=Sancti/01-11-Hyginus
 
 [01-12]
 Septima die infra Octavam Epiphaniae
@@ -966,19 +1039,26 @@ S. Joannis Cantii Confessoris
 Festum Duplex
 filename=Sancti/10-20
 
-[01-14] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[01-14]
 S. Hilarii Episcopi Confessoris Ecclesiae Doctoris
 Festum Duplex
-
-[01-14] (rubrica 1570)
+(sed rubrica 1570)
 S. Hilarii Episcopi Confessoris
 Festum Semiduplex
 filename=Sancti/01-14o
+
+S. Felicis Martyris
+Festum simplex
+filename=Sancti/01-15-Felix
 
 [01-15] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Pauli primi Eremitae et Confessoris
 Festum Duplex
 (sed rubrica 1570) Festum Semiduplex
+
+S. Mauri Abbatis
+Festum simplex
+filename=Sancti/01-15-Maurus
 
 [01-16] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Marcelli Papae et Martyris
@@ -989,29 +1069,30 @@ Festum Semiduplex
 S. Antonii Abbatis
 Festum Duplex
 
-[01-18] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
+[01-18]
 Cathedrae S. Petri
 Festum Duplex maius
-(rubrica 1570) filename=Sancti/01-18t
+(sed rubrica 1960 omittitur)
 
-[01-18] (rubrica Rubrics 1960)
 S. Priscae Virginis
 Festum Simplex
-filename=Sancti/01-18r
+filename=Sancti/01-18-Prisca
 
-[01-19] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
-S. Maurii et Soc. Mart.
-Festum Simplex
-
-[01-19] (rubrica 1570)
+[01-19]
 Ss. Marii, Marthae, Audifacis, et Abachum martyrum
 Festum Simplex
-filename=Sancti/01-19o
+
+S. Canuti Regis et Martyris
+Festum Simplex
+filename=Sancti/01-19-Canutus
 
 [01-19] (rubrica 1910)
-S. Canuti Regis et Martyrum
+S. Canuti Regis et Martyris
 Festum Semiduplex
 filename=Sancti/01-19t
+
+Ss. Marii, Marthae, Audifacis, et Abachum martyrum
+Festum Simplex
 
 [01-20] (rubrica 1960 aut rubrica tridentina aut rubrica Divino aut rubrica 1955)
 Ss. Fabiani et Sebastiani Martyrum
@@ -1025,11 +1106,11 @@ Festum Duplex
 Ss. Vincentii et Anastasii Martyrum
 Festum Semiduplex
 
-[01-23] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[01-23] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Raymundi de Penafort Confessoris
 Festum Semiduplex
+(sed rubrica 1570 omittitur)
 
-[01-23] (rubrica 1570)
 S. Emerentiana virgin and martyr
 Festum Simplex
 filename=Sancti/01-23o
@@ -1068,14 +1149,14 @@ S. Angelae Mericiae Virginis
 Festum Duplex
 filename=Sancti/06-01
 
-[01-28] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[01-28] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Petri Nolasci Confessoris
 Festum Duplex
+(sed rubrica tridentina omittitur)
 
-[01-28] (rubrica tridentina)
 S. Agnetis Virginis et Martyris secundo
 Festum Simplex
-filename=Sancti/01-28t
+filename=Sancti/01-28-Agnes
 
 [01-28] (rubrica innovata)
 S. Thomae de Aquino Confessoris Ecclesiae Doctoris
