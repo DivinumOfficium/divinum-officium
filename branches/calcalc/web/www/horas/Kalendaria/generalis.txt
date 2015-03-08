@@ -1525,11 +1525,11 @@ Festum Duplex
 Inventione Sanctae Crucis
 Festum Duplex II. classis
 (rubrica 1570) filename=Sancti/05-03t
+(sed rubrica 1960 omittitur)
 
-[05-03] (rubrica Rubrics 1960)
 Ss. Alexandri et Sociorum Martyrum
 Festum Simplex
-filename=Sancti/05-03r
+filename=Sancti/05-03-Alexander-et-soc
 
 [05-03] (rubrica innovata)
 Ss. Philippi et Jacobi Apostolorum
@@ -1572,9 +1572,9 @@ S. Antonini Episcopi et Confessoris
 Festum Duplex
 
 [05-10] (rubrica 1570)
-Ss. Gordian and Epimachus martyrs
+Ss. Gordiani et Epimachi Martyrum
 Festum Simplex
-filename=Sancti/05-10o
+filename=Sancti/05-10-Gordianus-Epimachus
 
 [05-11] (rubrica Rubrics 1960)
 Ss. Philippi et Jacobi Apostolorum
@@ -1629,15 +1629,14 @@ S. John I, pope and martyr
 Festum Duplex
 filename=Sancti/05-18n
 
-[05-19] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[05-19] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Petri Celestini Papae Confessoris
 Festum Duplex
-(rubrica 1910) filename=Sancti/05-19t
+(sed rubrica 1570 omittitur)
 
-[05-19] (rubrica 1570)
 S. Pudentianae Virginis
 Festum Simplex
-filename=Sancti/05-19o
+filename=Sancti/05-19-Pudentiana
 
 [05-20] (rubrica 1960 aut rubrica 1910 aut rubrica Divino aut rubrica 1955)
 S. Bernardini Senensis Confessoris
@@ -1653,38 +1652,37 @@ S. Rita of Cascia
 Festum Duplex
 filename=Sancti/05-22n
 
-[05-25] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[05-25] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Gregorii VII Papae Confessoris
 Festum Duplex
-(rubrica 1910) filename=Sancti/05-25t
+(sed rubrica 1570 omittitur)
 
-[05-25] (rubrica 1570)
-S. Urbanis  Papae et Martyris
+S. Urbanis Papae et Martyris
 Festum Simplex
-filename=Sancti/05-25o
+filename=Sancti/05-25-Urbanus
 
 [05-25] (rubrica innovata)
 S. Bedae Venerabilis Confessoris et Ecclesiae Doctoris
 Festum Duplex
 filename=Sancti/05-27
 
-[05-26] (rubrica 1960 aut rubrica 1910 aut rubrica Divino aut rubrica 1955)
+[05-26] (rubrica 1960 aut rubrica tridentina aut rubrica Divino aut rubrica 1955)
 S. Philippi Neri Confessoris
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[05-26] (rubrica 1570)
 S. Eleutherii Papae et Martyris
 Festum Simplex
-filename=Sancti/05-26o
+filename=Sancti/05-26-Eleutherius
 
-[05-27] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[05-27] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Bedae Venerabilis Confessoris et Ecclesiae Doctoris
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[05-27] (rubrica 1570)
-S. John pope and martyr
+S. Joannis Papae et Martyris
 Festum Simplex
-filename=Sancti/05-29o
+filename=Sancti/05-27-Joannes
 
 [05-27] (rubrica innovata)
 S. Augustini Episcopi Confessoris
@@ -1703,19 +1701,19 @@ Festum Semiduplex
 S. Felicis Papae et Martyris
 Festum Simplex
 
-[05-31] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
-Beatae Mariae Virginis Regina
+[05-31] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+Beatae Mariae Virginis Reginae
 Festum Duplex II. classis
+(sed rubrica tridentina omittitur)
 
-[05-31] (rubrica 1570)
-S. Petronilla Virginis
-Festum Simplex
-filename=Sancti/05-31o
-
-[05-31] (rubrica 1910)
+(rubrica 1910)
 S. Angelae Mericiae Virginis
 Festum Duplex
-filename=Sancti/05-31t
+filename=Sancti/06-01
+
+S. Petronilla Virginis
+Festum Simplex
+filename=Sancti/05-31-Petronilla
 
 [05-31] (rubrica innovata)
 In Visitatione B. Mariae Virginis
