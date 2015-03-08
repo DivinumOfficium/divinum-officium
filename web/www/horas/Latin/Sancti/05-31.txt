@@ -1,5 +1,5 @@
 [Rank]
-Beatae Mariae Virginis Reginae;;Duplex II classis;;5.1;;ex C11
+Beatae Mariae Virginis Reginae;;Duplex II classis;;5;;ex C11
 
 [Rank1960]
 Beatae Mariae Virginis Reginae;;Duplex II classis;;5;;ex C11
@@ -25,10 +25,10 @@ V. Salve, Regina misericordiae. (Alleluia.)
 R. Ex qua natus est Christus, Rex noster. (Alleluia.)
 
 [Ant 1]
-@Sancti/05-31r:Ant 1
+Beata quae credidisti, * quae dicta sunt tibi a Domino: cum Christo regnas in aeternum. (Alleluia.)
 
 [Oratio]
-Concede nobis, quaesumus, Domine: ut, qui solemnitatem beatae Mariae Virginis Reginae nostrae celebramus; ejus muniti praesidio, pacem in praesenti et gloriam in futuro consequi mereamur.
+Concede nobis, quaesumus, Domine: ut, qui solemnitatem beatae Mariae Virginis Reginae nostrae celebramus; ejus muniti praesidio, pacem in present et gloriam in futuro consequi mereamur.
 $Per Dominum
 
 [Invit]
@@ -62,43 +62,60 @@ In sempiterna saecula.
 Amen.
 
 [Ant Matutinum]
-@Sancti/05-31r:Ant Matutinum
+Benedicta tu * in mulieribus, et benedictus fructus ventris tui. (Alleluia.);;8
+Sicut myrrha * electa odorem dedisti suavitatis sancta Dei Genitrix. (Alleluia.);;18
+Ante torum * hujus Virginis frequentate nobis dulcia cantica dramatis. (Alleluia.);;23
+V. Salve, Regina misericordiae. (Alleluia.)
+R. Ex qua natus est Christus, Rex noster. (Alleluia.)
+Specie tua * et pulchritudine tua intende, prospere procede, et regna. (Alleluia.);;44
+Adjuvabit eam * Deus vultu suo: Deus in medio ejus, non commovebitur. (Alleluia.);;45
+Sicut laetantium * omnium nostrum habitatio est in te, sancta Dei Genitrix. (Alleluia.);;86
+V. Stabat iuxta crucem Jesu Mater eius. (Alleluia.)
+R. In passione socia, totius mundi Regina. (Alleluia.)
+Gaude Maria Virgo, * cunctas haereses sola interemisti in universo mundo. (Alleluia.);;95
+Dignare me * laudare te, Virgo sacrata: da mihi virtutem contra hostes tuos. (Alleluia.);;96
+Post partum * Virgo inviolata permansisti, Dei Genitrix intercede pro nobis. (Alleluia.);;97
+V. Beatam me dicent omnes generationes. (Alleluia.)
+R. Quia fecit mihi magna qui potens est. (Alleluia.)
 
 [Lectio1]
 De libro Ecclesiastici
 !Sir 24:5-11
-5 Ego ex ore Altissimi prodivi, primogenita ante omnem creaturam
-6 ego feci in caelis ut oriretur lumen indeficiens, et sicut nebula texi omnem terram.
+5 Ego ex ore Altissimi prodivi, primogenita ante omnem creaturam.
+6 Ego feci in cælis ut oriretur lumen indeficiens, et sicut nebula texi omnem terram.
 7 Ego in altissimis habitavi, et thronus meus in columna nubis.
-8 Gyrum caeli circuivi sola, et profundum abyssi penetravi: in fluctibus maris ambulavi.
-9 et in omni terra steti: et in omni populo,
+8 Gyrum cæli circuivi sola, et profundum abyssi penetravi: in fluctibus maris ambulavi.
+9 Et in omni terra steti: et in omni populo,
 10 et in omni gente primatum habui:
-11 et omnium excellentium et humilium corda virtute calcavi, et in his omnibus requiem quaesivi, et in hereditate Domini morabor.
+11 et omnium excellentium et humilium corda virtute calcavi. Et in his omnibus requiem quæsivi, et in hæreditate Domini morabor.
 
 [Responsory1]
 R. Beata es, Maria, quae credidisti Domino: perfecta sunt in te quae dicta sunt tibi;
-* Ecce exaltata es super choros Angelorum ad caelestia regna. (Alleluia.)
+* Ecce exaltata es super choros Angelorum ad caelestia Regna. (Alleluia.)
 V. Ave Maria, gratia plena, Dominus tecum.
-R. Ecce exaltata es super choros Angelorum ad caelestia regna. (Alleluia.)
+R. Ecce, exaltata es super choros Angelorum ad celestia Regna. (Alleluia.)
 
 [Lectio2]
 !Sir 24:14-16
-14 Ab initio et ante saecula creata sum, et usque ad futurum saeculum non desinam: et in habitatione sancta coram ipso ministravi.
+14 Ab initio et ante sæcula creata sum, et usque ad futurum sæculum non desinam: et in habitatione sancta coram ipso ministravi.
 15 Et sic in Sion firmata sum, et in civitate sanctificata similiter requievi, et in Jerusalem potestas mea.
-16 Et radicavi in populo honorificato, et in parte Dei mei haereditas illius, et in plenitudine sanctorum detentio mea.
+16 Et radicavi in populo honorificato, et in parte Dei mei hæreditas illius, et in plenitudine sanctorum detentio mea.
 
 [Responsory2]
-@Sancti/05-31r:Responsory2
+R. Regalem dignitatem Virginis Mariae recolamus.
+* Quia cum Christo regnat in aeternum. (Alleluia.)
+V. Gloriam Reginae nostrae celebramus.
+R. Quia cum Christo regnat in aeternum. (Alleluia.)
 
 [Lectio3]
 !Sir 24:24-30
-24 Ego mater pulchrae dilectionis, et timoris, et agnitionis, et sanctae spei.
-25 In me gratia omnis viae et veritatis: in me omnis spes vitae et virtutis.
+24 Ego mater pulchræ dilectionis, et timoris, et agnitionis, et sanctæ spei.
+25 In me gratia omnis viæ et veritatis: in me omnis spes vitæ et virtutis.
 26 Transite ad me, omnes qui concupiscitis me, et a generationibus meis implemini:
-27 spiritus enim meus super mel dulcis, et hereditas mea super mel et favum.
-28 Memoria mea in generationes saeculorum.
+27 spiritus enim meus super mel dulcis, et hæreditas mea super mel et favum.
+28 Memoria mea in generatione sæculorum.
 29 Qui edunt me, adhuc esurient, et qui bibunt me, adhuc sitient.
-30 qui audit me non confundetur, et qui operantur in me non peccabunt: qui elucidant me, vitam Ã¦ternam habebunt. 
+30 Qui audit me non confundetur, et qui operantur in me non peccabunt: qui elucidant me, vitam æternam habebunt. 
 
 [Responsory3]
 R. Elegit eam Deus, et praeelegit eam;
@@ -109,7 +126,7 @@ R. Coronam gloriae posuit super caput ejus. (Alleluia.)
 R. Coronam gloriae posuit super caput ejus. (Alleluia.)
 
 [Lectio4]
-Sermo sancti Petri CanÃ­sii Presbyteri
+Sermo sancti Petri Canísii Presbyteri
 !De Maria Deipara Virgine incomparabili, lib. 15, c. 13
 Cur beatissimam Virginem Mariam Reginae nomine, Damascenum, Athanasium aliosque secuti, non compellemus, cujus et pater David rex inclitus, et filius Rex regum Dominusque dominantium sine fine imperans, laudem in Scripturis praestantissimam tenent? Regina est insuper, si cum illis conferatur, quibus, veluti regibus, caeleste regnum cum Christo, Rege summo, contigit, utpote illius coheredibus, et in eodem veluti throno, ut Scriptura loquitur, cum illo collocatis. Regina est etiam nulli electorum secunda, sed simul Angelis et hominibus tanto praelata dignius, quo nihil illa sublimius ac sanctius esse potest, quae sola cum Deo Patre Filium habet communem, et quae supra se Deum et Christum tantum, infra se vero reliqua videt omnia.
 
@@ -183,17 +200,6 @@ R. Cum Christo regnat in aeternum. (Alleluia.)
 [Ant 2]
 Regina mundi dignissima, * Maria, Virgo perpetua, intercede pro nostra pace et salute, quae genuisti Christum Dominum, Salvatorem omnium. (Alleluia.)
 
-[Commemoratio 2]
-!Commemoratio S. Petronillae Virginis
-Ant. Simile est regnum caelorum * homini negotiatori quaerenti bonas margaritas: inventa una pretiosa, dedit omnia sua, et comparavit eam. (Alleluia.)
-_
-V. Diffusa est gratia in labiis tuis. (Alleluia.)
-R. Propterea benedixit te Deus in aeternum. (Alleluia.)
-_
-$Oremus
-Exaudi nos, Deus, salutaris noster: ut, sicut de beatae Petronillae Virginis tuae festivitate gaudemus; ita piae devotionis erudiamur affectu.
-$Per Dominum
-
 [Lectio Prima]
 !Sir 24:30-31
 v. Qui audit me, non confundetur, et qui operantur in me, non peccabunt: qui elucidant me, vitam aeternam habebunt.
@@ -204,7 +210,15 @@ v. Ego ex ore Altissimi prodivi, primogenita ante omnem creaturam; ego in altiss
 $Deo gratias
 
 [Responsory Tertia]
-@Sancti/05-31r:Responsory Tertia
+R.br. Salve, * Regina misericordiae. (Alleluia, alleluia.)
+R. Salve, * Regina misericordiae (Alleluia, alleluia.)
+V. Ex qua natus est Christus, Rex noster. (Alleluia, alleluia.)
+R. Regina misericordiae. (Alleluia, alleluia.)
+&Gloria
+R. Salve, * Regina misericordiae. (Alleluia, alleluia.)
+_
+V. Stabat juxta crucem Jesu Mater ejus. (Alleluia.)
+R. In passione socia, totius mundi Regina. (Alleluia.)
 
 [Capitulum Sexta]
 !Sir 24, 9-11
@@ -212,7 +226,15 @@ v. In omni terra steti et in omni populo, et in omni gente primatum habui, et om
 $Deo gratias
 
 [Responsory Sexta]
-@Sancti/05-31r:Responsory Sexta
+R.br. Stabat juxta crucem Jesu * Mater ejus. (Alleluia, alleluia.)
+R. Stabat juxta crucem Jesu * Mater ejus. (Alleluia, alleluia.)
+V. In passione socia, totius mundi Regina. (Alleluia, alleluia.)
+R. Mater ejus. (Alleluia, alleluia.)
+&Gloria
+R. Stabat juxta crucem Jesu * Mater ejus. (Alleluia, alleluia.)
+_
+V. Beatam me dicent omnes generationes. (Alleluia.)
+R. Quia fecit mihi magna qui potens est. (Alleluia.)
 
 [Capitulum Nona]
 !Sir 24:30-31
@@ -220,7 +242,15 @@ v. Qui audit me, non confundetur, et qui operantur in me, non peccabunt: qui elu
 $Deo gratias
 
 [Responsory Nona]
-@Sancti/05-31r:Responsory Nona
+R.br. Beatam me dicent * omnes generationes. (Alleluia, alleluia.)
+R. Beatam me dicent * omnes generationes. (Alleluia, alleluia.)
+V. Quia fecit mihi magna qui potens est. (Alleluia, alleluia.)
+R. Omnes generationes. (Alleluia, alleluia.)
+&Gloria
+R. Beatam me dicent * omnes generationes. (Alleluia, alleluia.)
+_
+V. Maria Virgo caelos ascendit. (Alleluia.)
+R. Cum Christo regnat in aeternum. (Alleluia.)
 
 [Versum 3]
 V. Maria Virgo caelos ascendit. (Alleluia.)
