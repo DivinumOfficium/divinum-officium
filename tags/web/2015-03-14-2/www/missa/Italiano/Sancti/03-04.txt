@@ -1,0 +1,36 @@
+[Rank]
+S. Casimiri Confessoris;;Semiduplex;;2.1;;vide C5
+
+[Rank1960]
+S. Casimiri Confessoris;;Duplex;;3;;vide C5
+
+[RankNewcal]
+S. Casimiri;;Semiduplex;;2.1;;vide C5
+
+[Rule]
+CPapaM=Lucio;
+vide C5;
+Gloria
+
+[Oratio]
+O Dio, pur fra le delizie della corte e le mondane lusinghe hai dato a san Casimiro la costanza nella virtù; fa' che per sua intercessione i tuoi fedeli disprezzino le cose terrene per aspirare sempre alle celesti.
+$Per Dominum
+
+[Commemoratio Oratio]
+!Pro S. Lucio I
+@Commune/C2b:Oratio:s/N\./Lucio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
+
+[Commemoratio Secreta]
+!Pro S. Lucio I
+@Commune/C2b:Secreta:s/N\./Lucio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
+
+[Commemoratio Postcommunio]
+!Pro S. Lucio I
+@Commune/C2b:Postcommunio:s/N\./Lucio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem
+
