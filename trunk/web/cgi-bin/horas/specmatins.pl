@@ -121,7 +121,7 @@ sub hymnus {  #matutinum
 	  my $w = (columnsel($lang)) ? $winner : $winner2;
 	  my $h1 = $w{'Hymnus Vespera'};
 	  my @h1 = split("\n", $h1);
-	  while (pop(@h1) !~ /\_/) {next;}
+	  while (@h1 && pop(@h1) !~ /\_/) {next;}
 	  $h1 = '';
 	  foreach (@h1) {$h1 .= "$_\n";}
 	  $h = "$h1$h";
