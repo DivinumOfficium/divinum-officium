@@ -2202,28 +2202,28 @@ filename=Sancti/12-04
 S. Ignatii Confessoris
 Festum Duplex maius
 
-[08-01] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
+[08-01] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica 1960)
 S. Petri ad Vincula
 Festum Duplex maius
+(sed rubrica 1960 omittitur)
 
-[08-01] (rubrica Rubrics 1960)
 Ss. Martyrum Machabaeorum
 Festum Simplex
-filename=Sancti/08-01r
+filename=Sancti/08-01-Martyres-Machabaei
 
 [08-01] (rubrica innovata)
 S. Alfonsi Mariae de Ligorio Episc. Conf. et Eccles. Doct.
 Festum Duplex
 filename=Sancti/08-02
 
-[08-02] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[08-02] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Alfonsi Mariae de Ligorio Episc. Conf. et Eccles. Doct.
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[08-02] (rubrica 1570)
-S. Stephen pope and martyr
+S. Stephani Papae et Martyris
 Festum Simplex
-filename=Sancti/08-02o
+filename=Sancti/08-02-Stephanus
 
 [08-02] (rubrica innovata)
 S. Eusebius of Vercelli, bishop
@@ -2252,47 +2252,50 @@ Festum Duplex maius
 In Transfiguratione Domini Nostri Jesu Christi
 Festum Domini Duplex II. classis
 
-[08-07] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+Ss. Xysti, Felicissimi et Agapiti Martyrum
+Festum simplex
+filename=Sancti/08-06-Xystus-et-soc
+
+[08-07] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Cajetani Confessoris
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[08-07] (rubrica 1570)
-S. Donatus bishop and martyr
+S. Donati Episcopi et Martyris
 Festum Simplex
-filename=Sancti/08-07o
+filename=Sancti/08-07-Donatus
 
 [08-07] (rubrica innovata)
 S. Sixtus II, pope, and companions, martyrs
 Festum Duplex
 filename=Sancti/08-07n
 
-[08-08] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
-Ss. Cyriaci, Largi et Smaragdi Martyrum
-Festum Semiduplex
-
-[08-08] (rubrica Rubrics 1960)
+[08-08] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica 1960))
+(rubrica 1960)
 S. Joannis Vianney Confessoris
 Festum Duplex
-filename=Sancti/08-08r
+filename=Sancti/08-09
+
+Ss. Cyriaci, Largi et Smaragdi Martyrum
+Festum Semiduplex
 
 [08-08] (rubrica innovata)
 S. Dominici Confessoris
 Festum Duplex maius
 filename=Sancti/08-04
 
-[08-09] (rubrica Divino aut rubrica 1955)
+[08-09]
+(rubrica Divino aut rubrica 1955)
 S. Joannis Vianney Confessoris
 Festum Duplex
 
-[08-09] (rubrica Rubrics 1960)
 In Vigilia S. Laurentii Martyris
 Vigilia Simplex
 filename=Sancti/08-09t
 
-[08-09] (rubrica tridentina)
-In Vigilia S. Laurentii Martyris
-Vigilia Simplex
-filename=Sancti/08-09t
+S. Romani Martyris
+Festum simplex
+filename=Sancti/08-09-Romanus
 
 [08-09] (rubrica innovata)
 S. Teresa Benedicta of the Cross (Edith Stein), virgin and martyr
@@ -2304,105 +2307,128 @@ S. Laurentii Martyris
 Festum Duplex II. classis
 octid=SLaurentius
 
-[08-11] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
-Ss. Tiburtii et Susannae Virgin. Martyrum
-Festum Simplex
-
-[08-11] (rubrica tridentina)
+[08-11] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+(rubrica tridentina)
 Secunda die infra Octavam S. Laurentii
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-11t
-octid=SsPetrusEtPaulus
+octid=SLaurentius
+
+Ss. Tiburtii et Susannae Virginis Martyrum
+Festum Simplex
 
 [08-11] (rubrica innovata)
 S. Clarae Virginis
 Festum Duplex
 filename=Sancti/08-12
 
-[08-12] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[08-12] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Clarae Virginis
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[08-12] (rubrica 1570)
 Tertia die infra Octavam S. Laurentii
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-12t
-octid=SsPetrusEtPaulus
+octid=SLaurentius
 
 [08-12] (rubrica innovata)
 S. Joannae Franciscae Fremiot de Chantal Viduae
 Festum Duplex
 filename=Sancti/08-21
 
-[08-13] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
-Ss. Hippoliti et Cassiani Martyrum
-Festum Simplex
-
-[08-13] (rubrica tridentina)
+[08-13] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+(rubrica tridentina)
 Quarta die infra Octavam S. Laurentii
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-13t
-octid=SsPetrusEtPaulus
+octid=SLaurentius
+
+Ss. Hippoliti et Cassiani Martyrum
+Festum Simplex
 
 [08-13] (rubrica innovata)
 Ss. Pontian, pope, and Hippolytus, priest, martyrs
 Festum Duplex
 filename=Sancti/08-13n
 
-[08-14] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[08-14] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+(rubrica tridentina)
+Quinta die infra Octavam S. Laurentii
+Dies infra octavam communem Semiduplex
+filename=Sancti/08-14t
+
 In Vigilia Assumptionis B.M.V.
 Vigilia Simplex
 (sed rubrica Rubrics 1960) Vigilia Simplex II. classis
 
-[08-14] (rubrica tridentina)
-Quinta die infra Octavam S. Laurentii
-Dies infra octavam communem Semiduplex
-filename=Sancti/08-14t
+S. Eusebii Confessoris
+Festum simplex
+filename=Sancti/08-14-Eusebius
 
 [08-14] (rubrica innovata)
 S. Maximilian Mary Kolbe, priest and martyr
 Festum Duplex
 filename=Sancti/08-14n
 
-[08-15]
-Assumptione Beatae Mariae Virginis
-Festum Duplex I. classis
-(rubrica 1960 aut rubrica Divino aut rubrica 1955) filename=Sancti/08-15r
+[08-15-common]
+filename=Sancti/08-15
+(sed rubrica 1960 aut rubrica Divino aut rubrica 1955) filename=Sancti/08-15r
 octid=Assumptio
 
-[08-16] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[08-15]
+In Assumptione Beatae Mariae Virginis
+Festum Duplex I. classis
+@:08-15-common
+
+[08-15-infra-oct]
+(rubrica tridentina aut rubrica Divino)
+Dies infra octavam Assumptionis Beatae Mariae Virginis
+Dies infra octavam communem semiduplex
+@:08-15-common
+
+[08-16] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Joachim Confessoris, Patris B. M. V.
 Festum Duplex II. classis
 
-[08-16] (rubrica 1570)
+(sed rubrica 1570)
 Secunda die infra Octavam Assumptionis
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-16o
 octid=Assumptio
+
+(rubrica tridentina)
+Dies septima infra octavam S. Laurentii
+Dies infra octavam communem semiduplex
+filename=Sancti/08-10
+octid=SLaurentius
 
 [08-16] (rubrica innovata)
 S. Stephani Hungariae Regis Confessoris
 Festum Semiduplex
 filename=Sancti/09-02
 
-[08-17] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[08-17] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Hyacinthi Confessoris
 Festum Duplex
+(sed rubrica tridentina) Festum simplex
 
-[08-17] (rubrica tridentina)
-Octava S. Laurentii Martyris
-Festum Duplex
+(rubrica tridentina aut rubrica Divino)
+In octava S. Laurentii Martyris
+Dies octava simplex simplex
+(sed rubrica tridentina) Dies octava communis duplex majus
 filename=Sancti/08-17t
 octid=SLaurentius
 
-[08-18] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
+@:08-15-infra-oct
+
+[08-18] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica 1960)
+(rubrica tridentina aut rubrica Divino)
 Quarta die infra Octavam Assumptionis
 Dies infra octavam communem Semiduplex
-(rubrica 1570) filename=Sancti/08-18o
-(rubrica 1910) filename=Sancti/08-18t
+(rubrica tridentina) filename=Sancti/08-18t
 octid=Assumptio
 
-[08-18] (rubrica Rubrics 1960)
 S. Agapiti Martyris
 Festum Simplex
 filename=Sancti/08-18r
@@ -2410,6 +2436,8 @@ filename=Sancti/08-18r
 [08-19] (rubrica 1960 aut rubrica Divino aut rubrica 1955)
 S. Joannis Eudes Confessoris
 Festum Duplex
+
+@:08-15-infra-oct
 
 [08-19] (rubrica tridentina)
 Quinta die infra Octavam Assumptionis
@@ -2422,31 +2450,38 @@ octid=Assumptio
 S. Bernardi Abbatis et Ecclesiae Doctoris
 Festum Duplex
 
-[08-21] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+@:08-15-infra-oct
+
+[08-21] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Joannae Franciscae Fremiot de Chantal Viduae
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[08-21] (rubrica 1570)
 Septima die infra Octavam Assumptionis
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-21o
 octid=Assumptio
+(sed rubrica Divino)
+@:08-15-infra-oct
 
 [08-21] (rubrica innovata)
 S. Pii X Papae Confessoris
 Festum Duplex
 filename=Sancti/09-03r
 
-[08-22] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[08-22] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 Immaculati Cordis Beatae Mariae Virginis
 Festum Duplex II. classis
 filename=Sancti/08-22r
 octid=Assumptio
-
-[08-22] (rubrica tridentina)
+(sed rubrica tridentina)
 In Octava Assumptionis B.M.V.
 Dies octava communis Duplex maius
 octid=Assumptio
+
+Ss. Timothei, Hippolyti et Symphoriani Martyrum
+Festum simplex
+filename=Sancti/08-22-Timotheus-et-soc
 
 [08-22] (rubrica innovata)
 Beatae Mariae Virginis Regina
@@ -2494,19 +2529,27 @@ filename=Sancti/05-04
 S. Augustini Episcopi et Confessoris et Ecclesiae Doctoris
 Festum Duplex
 
+S. Hermetis Martyris
+Festum simplex
+filename=Sancti/08-28-Hermes
+
 [08-29] (rubrica 1960 aut rubrica tridentina aut rubrica Divino aut rubrica 1955)
 In Decollatione S. Joannis Baptistae
 Festum Duplex maius
 (sed rubrica 1960) Festum Duplex
 
-[08-30] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+S. Sabinae Martyris
+Festum simplex
+filename=Sancti/08-29-Sabina
+
+[08-30] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Rosae a Sancta Maria Limanae Virginis
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[08-30] (rubrica 1570)
-Ss. Felix and Adauctus martyrs
+Ss. Felicis et Adauctis Martyrum
 Festum Simplex
-filename=Sancti/08-30o
+filename=Sancti/08-30-Felix-Adauctus
 
 [08-31] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Raymundi Nonnati Confessoris
