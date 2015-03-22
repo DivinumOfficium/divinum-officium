@@ -1768,14 +1768,14 @@ S. Barnabae Apostoli
 Festum Duplex maius
 (sed rubrica 1960) Festum Duplex
 
-[06-12] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[06-12] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Joannis a S Facundo Confessoris
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[06-12] (rubrica 1570)
-Ss. Basilides, Cyrinus, Nabor and Nazarius martyrs
+Ss. Basilidis, Cyrini, Naboris et Nazarii Martyrum
 Festum Simplex
-filename=Sancti/06-12o
+filename=Sancti/06-12-Basilides-et-soc
 
 [06-13] (rubrica 1960 aut rubrica Divino aut rubrica 1955)
 S. Antonii de Padua Confessoris et Ecclesiae Doctoris
@@ -1799,23 +1799,23 @@ S. Gregorii Barbadici Episcopi Confessoris
 Festum Duplex
 filename=Sancti/06-17r
 
-[06-18] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[06-18] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Ephraem Syri Confessoris et Ecclesiae Doctoris
 Festum Duplex
+(sed rubrica tridentina omittitur)
 
-[06-18] (rubrica tridentina)
-SS. Marci et Marcellini Martyrum
+Ss. Marci et Marcelliani Martyrum
 Festum Simplex
-filename=Sancti/06-18t
+filename=Sancti/06-18-Marcus-Marcellianus
 
-[06-19] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[06-19] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Julianae de Falconeriis Virginis
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[06-19] (rubrica 1570)
-Ss. Gervase and Protase martyrs
+Ss. Gervasii et Protasii Martyrum
 Festum Simplex
-filename=Sancti/06-19o
+filename=Sancti/06-19-Gervasius-Protasius
 
 [06-19] (rubrica innovata)
 S. Romualdi Abbatis
@@ -1850,20 +1850,23 @@ Vigilia Simplex
 [06-24]
 In Nativitate S. Joannis Baptistae
 Festum Duplex I. classis
-(rubrica 1570) filename=Sancti/06-24t
 id=SIoannesBaptista
 octid=SIoannesBaptista
 occurrencerules=OctavaCorporisChristi,COMMEMORATE
 
-[06-25] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[06-24-infra-oct]
+Die infra Octavam Nativitatis S. Joannis Baptistae
+Dies infra octavam communem Semiduplex
+filename=Sancti/06-24
+octid=SIoannesBaptista
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+
+[06-25] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Gulielmi Abbatis
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[06-25] (rubrica 1570)
-Secunda die infra Octavam Nativitatis S. Joannis Baptistae
-Festum Semiduplex
-filename=Sancti/06-25o
-octid=SIoannesBaptista
+@:06-24-infra-oct
 
 [06-26] (rubrica tridentina aut rubrica monastica aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 Ss. Joannis et Pauli Martyrum
@@ -1872,33 +1875,32 @@ Festum Duplex
 (rubrica Rubrics 1960) filename=Sancti/06-26r
 (rubrica tridentina) filename=Sancti/06-26t
 
-[06-27] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
-Quarta die infra Octavam Nativitatis S. Joannis Baptistae
-Dies infra octavam communem Semiduplex
-octid=SIoannesBaptista
+@:06-24-infra-oct
+
+[06-27] (rubrica tridentina aut rubrica divino aut rubrica monastica)
+@:06-24-infra-oct
 
 [06-27] (rubrica innovata)
 S. Cyrilli Episc. Alexandrini Confessoris Ecclesiae Doctoris
 Festum Duplex
 filename=Sancti/02-09
 
-[06-28] (rubrica Divino aut rubrica 1955)
+[06-28]
+(rubrica Divino aut rubrica 1955 aut rubrica innovata)
 S. Irenaei Episcopi et Martyris
 Festum Duplex
 
-[06-28] (rubrica Rubrics 1960)
-In Vigilia Ss. Petri et Pauli Apostolorum
-Vigilia Simplex II. classis
-filename=Sancti/06-28r
-
-[06-28] (rubrica tridentina)
+(rubrica tridentina)
 S. Leonis Papae et Confessoris
 Festum Semiduplex
-filename=Sancti/06-28t
+filename=Sancti/06-28-Leo
 
-[06-28] (rubrica innovata)
-S. Irenaei Episcopi et Martyris
-Festum Duplex
+In Vigilia Ss. Petri et Pauli Apostolorum
+Vigilia simplex
+(sed rubrica 1960) Vigilia Simplex II. classis
+filename=Sancti/06-28-vigilia-Apostolorum
+
+@:06-24-infra-oct
 
 [06-29]
 SS. Apostolorum Petri et Pauli
@@ -1907,9 +1909,18 @@ id=SsPetrusEtPaulus
 octid=SsPetrusEtPaulus
 occurrencerules=OctavaCorporisChristi,COMMEMORATE
 
+[06-29-infra-oct]
+Die infra Octavam Ss. Petri et Pauli
+Dies infra octavam communem Semiduplex
+filename=Sancti/06-29-infra-octavam
+octid=SsPetrusEtPaulus
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+
 [06-30] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 In Commemoratione S. Pauli Apostoli
 Festum Duplex maius
+
+@:06-24-infra-oct
 
 [06-30] (rubrica innovata)
 First Martyrs of the Church of Rome
@@ -1947,7 +1958,7 @@ filename=Sancti/07-03r
 [07-03] (rubrica tridentina)
 Quinta die infra Octavam Ss. Petri et Pauli
 Dies infra octavam communem Semiduplex
-filename=Sancti/07-03t
+filename=Sancti/06-29-infra-octavam
 octid=SsPetrusEtPaulus
 
 [07-03] (rubrica innovata)
