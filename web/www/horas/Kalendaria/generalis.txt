@@ -900,14 +900,14 @@ Feria maior Simplex
 [Pent24-0]
 Dominica XXIV et Ultima Post Pentecosten
 
-[11-29] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
+[11-29] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 In Vigilia S. Andreae Apostoli
 Vigilia Simplex
+(sed rubrica 1955 aut rubrica 1960 omittitur)
 
-[11-29] (rubrica Rubrics 1960)
 S. Saturnini Martyris
 Festum Simplex
-filename=Sancti/11-29r
+filename=Sancti/11-29-Saturninus
 
 [11-30]
 S. Andreae Apostoli
@@ -2977,13 +2977,16 @@ filename=Sancti/11-03n
 [11-04] (rubrica 1960 aut rubrica 1910 aut rubrica Divino aut rubrica 1955)
 S. Caroli Episcopi et Confessoris
 Festum Duplex
-(rubrica 1960) filename=Sancti/11-04r
 
-[11-04] (rubrica 1570)
 Quarta die infra Octavam Omnium Sanctorum
 Dies infra octavam communem Semiduplex
-filename=Sancti/11-04o
+filename=Sancti/11-04-infra-octavam-Omnium-Sanctorum
 octid=OmnesSanctos
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+
+Ss. Vitalis et Agricolae Martyrum
+Festum simplex
+filename=Sancti/11-04-Vitalis-Agricola
 
 [11-05] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
 Quinta die infra Octavam Omnium Sanctorum
@@ -3000,28 +3003,32 @@ Septima die infra Octavam Omnium Sanctorum
 Dies infra octavam communem Semiduplex
 octid=OmnesSanctos
 
-[11-08] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
+[11-08] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica 1960))
 In Octava Omnium Sanctorum
 Dies octava communis Duplex maius
 octid=OmnesSanctos
+(sed rubrica 1955 aut rubrica 1960 omittitur)
 
-[11-08] (rubrica Rubrics 1960)
 Ss. Quatuor Coronatorum Martyrum
 Festum Simplex
-filename=Sancti/11-08r
+filename=Sancti/11-08-Quatuor-Coronati
 
 [11-09] (rubrica 1960 aut rubrica tridentina aut rubrica Divino aut rubrica 1955)
 In Dedicatione Basilicae Ss. Salvatoris
 Festum Domini Duplex II. classis
 
-[11-10] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+S. Theodori Martyris
+Festum simplex
+filename=Sancti/11-09-Theodorus
+
+[11-10] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Andreae Avellini Confessoris
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[11-10] (rubrica 1570)
 Ss. Tryphonis, Respicii, et Nymphae Martyrum
 Festum Simplex
-filename=Sancti/11-10o
+filename=Sancti/11-10-Tryphon-et-soc
 
 [11-10] (rubrica innovata)
 S. Leonis I. Papae Confessoris et Ecclesiae Doctoris
@@ -3031,6 +3038,10 @@ filename=Sancti/04-11
 [11-11] (rubrica 1960 aut rubrica tridentina aut rubrica Divino aut rubrica 1955)
 S. Martini Episcopi et Confessoris
 Festum Duplex
+
+S. Mennae Martyris
+Festum simplex
+filename=Sancti/11-11-Mennas
 
 [11-12] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Martini Papae et Martyris
@@ -3087,14 +3098,14 @@ Festum Domini Duplex maius
 (rubrica 1960) filename=Sancti/11-18r
 (rubrica 1570) filename=Sancti/11-18o
 
-[11-19] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[11-19] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Elisabeth Viduae
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[11-19] (rubrica 1570)
-S. Pontianus Papae et Martyris
+S. Pontiani Papae et Martyris
 Festum Simplex
-filename=Sancti/11-19o
+filename=Sancti/11-19-Pontianus
 
 [11-20] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Felicis Valois Confessoris
@@ -3116,16 +3127,20 @@ Festum Duplex
 (sed rubrica 1570) Festum Semiduplex
 (rubrica tridentina) filename=Sancti/11-23t
 
+S. Felicitatis Martyris
+Festum simplex
+filename=Sancti/11-23-Felicitas
+
 [11-24]
 S. Joannis a Cruce Confessoris et Ecclesiae Doctoris
 (sed rubrica 1910) S. Joannis de Cruce Confessoris
 Festum Duplex
 (rubrica 1910) filename=Sancti/11-24t
+(sed rubrica 1570 omittitur)
 
-[11-24] (rubrica 1570)
 S. Chrysogoni Martyris
 Festum Simplex
-filename=Sancti/11-24o
+filename=Sancti/11-24-Chrysogonus
 
 [11-24] (rubrica innovata)
 S. Andre Dung Lac and his companions, martyrs
@@ -3136,12 +3151,12 @@ filename=Sancti/11-24n
 S. Catharinae Virginis et Martyris
 Festum Duplex
 
-[11-26] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[11-26] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Silvestri Abbatis
 Festum Duplex
+(sed rubrica tridentina omittitur)
 
-[11-26] (rubrica tridentina)
 S. Petri Alexandrini Martyri
 Festum Simplex
-filename=Sancti/11-26t
+filename=Sancti/11-26-Petrus-Alexandrinus
 
