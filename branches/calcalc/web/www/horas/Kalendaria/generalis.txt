@@ -2804,30 +2804,39 @@ Sanctissimi Rosarii Beatae Mariae Virginis
 Festum Duplex II. classis
 filename=Sancti/10-07
 
-[10-07] (rubrica 1960 aut rubrica Divino aut rubrica 1955)
+[10-07] (rubrica tridentina aut rubrica 1960 aut rubrica Divino aut rubrica 1955)
 Sanctissimi Rosarii Beatae Mariae Virginis
 (sed rubrica 1960) Beatae Mariae Virginis a Rosario
 Festum Duplex II. classis
 (rubrica 1960) filename=Sancti/10-07r
+(sed rubrica tridentina omittitur)
 
-[10-07] (rubrica tridentina)
 S. Marci Papae Confessoris
 Festum Simplex
-filename=Sancti/10-07t
+filename=Sancti/10-07-Marcus
+
+@:10-Sergius-et-soc
+(sed rubrica 1960 omittitur)
+
+[10-Sergius-et-soc]
+Ss. Sergii, Bacchi, Marcelli et Apuleji Martyrum
+Festum simplex
+filename=Sancti/10-07-Sergius-et-soc
 
 [10-08] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Birgittae Viduae
 Festum Duplex
-(rubrica Rubrics 1960) filename=Sancti/10-08r
 
-[10-09] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+(rubrica 1960) @:10-Sergius-et-soc
+
+[10-09] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica 1960)
 S. Joannis Leonardi Confessoris
 Festum Duplex
+(sed rubrica tridentina aut rubrica innovata omittitur)
 
-[10-09] (rubrica tridentina aut rubrica innovata)
 S. Dionysii Episcopi, Rustici et Eleutherii Martyrum
 Festum Semiduplex
-filename=Sancti/10-09t
+filename=Sancti/10-09-Dionysius-Rusticus-Eleutherius
 
 [10-10] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Francisci Borgiae Confessoris
@@ -2889,6 +2898,10 @@ Festum Duplex
 [10-21] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Hilarionis Abbatis
 Festum Simplex
+
+Ss. Ursulae et Sociorum Virginum et Martyrum
+Festum simplex
+filename=Sancti/10-21-Ursula-et-soc
 
 [10-23] (rubrica Rubrics 1960)
 S. Antonii Mariae Claret Episcopi Confessoris
