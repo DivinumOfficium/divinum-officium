@@ -2559,6 +2559,10 @@ Festum Duplex
 S. Aegidii Abbatis
 Festum Simplex
 
+Ss. Duodecim Fratrum Martyrum
+Festum simplex
+filename=Sancti/09-01-Duodecim-Fratres-Martyres
+
 [09-02] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Stephani Hungariae Regis Confessoris
 Festum Semiduplex
@@ -2582,40 +2586,45 @@ In Nativitate Beatae Mariae Virginis
 Festum Duplex II. classis
 octid=NativitasBMV
 
-[09-09] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
-S. Gorgonii Martyris
-Festum Simplex
+S. Hadriani Martyris
+Festum simplex
+filename=Sancti/09-08-Hadrianus
 
-[09-09] (rubrica tridentina)
+[09-09] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+(rubrica tridentina)
 Secunda die infra Octavam S. Nativitatis Beatae Mariae Virginis
 Dies infra octavam communem Semiduplex
 filename=Sancti/09-09t
 octid=NativitasBMV
+
+S. Gorgonii Martyris
+Festum Simplex
 
 [09-09] (rubrica innovata)
 S. Peter Claver, priest
 Festum Duplex
 filename=Sancti/09-09n
 
-[09-10] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
-S. Nicolai de Tolentino Confessoris
-Festum Duplex
-
-[09-10] (rubrica 1570)
+[09-10] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+(rubrica tridentina)
 Tertia die infra Octavam S. Nativitatis Beatae Mariae Virginis
 Dies infra octavam communem Semiduplex
 filename=Sancti/09-10o
 octid=NativitasBMV
 
-[09-11] (rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
-Ss. Proti et Hyacinthi Martyrum
-Festum Simplex
+S. Nicolai de Tolentino Confessoris
+Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[09-11] (rubrica tridentina)
+[09-11] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+(rubrica tridentina)
 Quarta die infra Octavam Nativitatis Beatae Mariae Virginis
 Dies infra octavam communem Semiduplex
 filename=Sancti/09-11t
 octid=NativitasBMV
+
+Ss. Proti et Hyacinthi Martyrum
+Festum Simplex
 
 [09-12] (rubrica 1960 aut rubrica 1910 aut rubrica Divino aut rubrica 1955)
 S. Nominis Beatae Mariae Virginis
@@ -2644,19 +2653,26 @@ In Exaltatione Sanctae Crucis
 Festum Domini Duplex maius
 (sed rubrica 1960) Festum Domini Duplex II. classis
 
-[09-15] (rubrica 1960 aut rubrica Divino aut rubrica 1955)
+[09-15] (rubrica tridentina rubrica 1960 aut rubrica Divino aut rubrica 1955)
 Septem Dolorum Beatae Mariae Virginis
 Festum Duplex II. classis
-
-[09-15] (rubrica tridentina)
+(sed rubrica tridentina)
 In Octava Nativitatis Beatae Mariae Virginis
-Festum Duplex
+Dies octava communis duplex majus
 filename=Sancti/09-15t
 octid=NativitasBMV
+
+S. Nicomedis Martyris
+Festum simplex
+filename=Sancti/09-15-Nicomedes
 
 [09-16]
 Ss. Cornelii Papae et Cypriani Episcopi, Martyrum
 Festum Semiduplex
+
+Ss. Euphemiae Virginis, Luciae et Geminiani Martyrum
+Festum simplex
+filename=Sancti/09-16-Euphemia-Lucia-Geminianus
 
 [09-17] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 Impressionis Stigmatum S. Francisci
@@ -2677,12 +2693,12 @@ Festum Duplex
 S. Januarii Episcopi et Sociorum Martyrum
 Festum Duplex
 
-[09-20] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[09-20] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Eustachii et Sociorum Martyrum
 Festum Duplex
 (sed rubrica Rubrics 1960) Festum Simplex
+(sed rubrica 1570 omittitur)
 
-[09-20] (rubrica 1570)
 In Vigilia S. Matthaei Apostloli
 Vigilia Simplex
 filename=Sancti/09-20o
@@ -2699,8 +2715,8 @@ Festum Duplex II. classis
 [09-22] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Thomae de Villanova Episcopi et Confessoris
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[09-22] (rubrica 1570)
 Ss. Mauritii et Sociorum Martyrum
 Festum Simplex
 filename=Sancti/09-22o
@@ -2708,7 +2724,10 @@ filename=Sancti/09-22o
 [09-23]
 S. Lini Papae et Martyris
 Festum Semiduplex
-(rubrica tridentina) filename=Sancti/09-23t
+
+S. Theclae Virginis et Martyris
+Festum simplex
+filename=Sancti/09-23-Thecla
 
 [09-23] (rubrica innovata)
 S. Pio of Pietrelcina (Padre Pio), priest
