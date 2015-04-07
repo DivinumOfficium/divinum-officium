@@ -922,14 +922,14 @@ Festum Semiduplex
 S. Francisci Xaverii Confessoris
 Festum Duplex maius
 
-[12-04] (rubrica 1910 aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
+[12-04] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Petri Chrysologi Episcopi Confessoris et Ecclesiae Doctoris
 Festum Duplex
+(sed rubrica 1570 omittitur)
 
-[12-04] (rubrica 1570)
 S. Barbarae Virginis et Martyris
 Festum Simplex
-filename=Sancti/12-04o
+filename=Sancti/12-04-Barbara
 
 [12-04] (rubrica innovata)
 S. Joannis Damasceni Confessoris
@@ -970,21 +970,26 @@ S. Juan Diego
 Festum Duplex
 filename=Sancti/12-09n
 
-[12-10] (rubrica 1910 aut rubrica Divino aut rubrica 1955)
+[12-10] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 De III die Infra Octavam Conceptionis Immaculatae Beatae Mariae Virginis
 Dies infra octavam communem Semiduplex
 octid=ConceptioImmaculataBMV
+(sed rubrica Rubrics 1960 aut rubrica 1570 omittitur)
 
-[12-10] (rubrica Rubrics 1960 aut rubrica 1570)
 S. Melchiadis Papae et Martyris
 Festum Simplex
-filename=Sancti/12-10r
-(sed rubrica 1570) filename=Sancti/12-10o
+filename=Sancti/12-10-Melchiades
 
 [12-11] (rubrica 1960 aut rubrica Divino aut rubrica 1955 aut rubrica tridentina)
 S. Damasi Papae et Confessoris
 Festum Semiduplex
 (rubrica tridentina) filename=Sancti/12-11t
+
+(rubrica 1910 aut rubrica Divino hac versus dicitur)
+De IV die Infra Octavam Concept. Immac. Beatae Mariae Virginis
+Dies infra octavam communem Semiduplex
+octid=ConceptioImmaculataBMV
+filename=Sancti/12-08
 
 [12-12] (rubrica 1910 aut rubrica Divino aut rubrica 1955)
 De V die Infra Octavam Concept. Immac. Beatae Mariae Virginis
@@ -1000,6 +1005,12 @@ filename=Sancti/12-12r
 S. Luciae Virginis et Martyris
 Festum Duplex
 (rubrica 1960) filename=Sancti/12-13r
+
+(rubrica 1910 aut rubrica Divino hac versus dicitur)
+De VI die Infra Octavam Concept. Immac. Beatae Mariae Virginis
+Dies infra octavam communem Semiduplex
+octid=ConceptioImmaculataBMV
+filename=Sancti/12-08
 
 [12-14] (rubrica 1910 aut rubrica Divino aut rubrica 1955)
 De VII die Infra Octavam Concept. Immac. Beatae Mariae Virginis
