@@ -210,7 +210,7 @@ sub extract_common
     }
     else
     {
-      $commune = "${implicit_dir}${raw_fname}.txt";
+      $commune = "${implicit_dir}/${raw_fname}.txt";
     }
   }
 
