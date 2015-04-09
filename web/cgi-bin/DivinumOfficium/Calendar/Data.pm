@@ -232,104 +232,92 @@ sub load_calendar_file($$;$)
 
   foreach my $calpoint (keys(%caldata))
   {
-    my $caldata_entry = $caldata{$calpoint};
-    my @implicit_fields = ('title', 'rank');
-    my %office;
-
-    my $insertion_index = -1;
-
-    foreach ($caldata_entry =~ /(.+?)$/mg)
+    foreach my $caldata_entry (split /^\s*$/m, $caldata{$calpoint})
     {
-      my ($field, $value) = /(?:([^=]*)=)?(.*)$/;
-      $field ||= shift(@implicit_fields);
-
-      # If we still don't have a field, try to interpret this line as an alias
-      # for a particular field and value pair.
-      if(!$field)
+      my @implicit_fields = ('title', 'rank');
+      my %office;
+      foreach ($caldata_entry =~ /(.+?)$/mg)
       {
-        my @aliased_pair = get_aliased_field_and_value($value);
-        ($field, $value) = @aliased_pair if(@aliased_pair);
+        my ($field, $value) = /(?:([^=]*)=)?(.*)$/;
+        $field ||= shift(@implicit_fields);
+
+        # If we still don't have a field, try to interpret this line as an alias
+        # for a particular field and value pair.
+        if(!$field)
+        {
+          my @aliased_pair = get_aliased_field_and_value($value);
+          ($field, $value) = @aliased_pair if(@aliased_pair);
+        }
+
+        if($field)
+        {
+          $office{$field} = $value;
+        }
+        else
+        {
+          # Treat this as a null-valued field, whose name is specified by what we
+          # had hitherto been thinking of as the value.
+          $office{canonicalise_tag($value)} = undef;
+        }
       }
 
-      if($field)
       {
-        $office{$field} = $value;
+        # We expect that some values in %office might be undefined.
+        no warnings 'uninitialized';
+        $office{id} = "$calpoint-" . md5_hex(%office) unless(exists($office{id}));
+      }
+
+      my $inplace_modification = 0;
+
+      if(exists($$basecal{offices}{$office{id}}))
+      {
+        # We're modifying an existing office.
+
+        # Find the existing office's position in the array of
+        # offices for its day.
+        my $existing_index;
+        for($existing_index = 0;
+          $$basecal{calpoints}{$$basecal{offices}{$office{id}}{calpoint}}
+            [$existing_index] ne $office{id};
+          $existing_index++) {}
+
+        if($$basecal{offices}{$office{id}}{calpoint} eq $calpoint)
+        {
+          # The office isn't changing day, so act as if we
+          # had inserted it at its current position.
+          $inplace_modification = 1;
+        }
+        else
+        {
+          # Unlink from old calpoint.
+          splice($$basecal{calpoints}{$calpoint}, $existing_index, 1);
+        }
+
+        my $old_office = $$basecal{offices}{$office{id}};
+
+        $office{$_} //= $$old_office{$_} foreach(keys(%$old_office));
       }
       else
       {
-        # Treat this as a null-valued field, whose name is specified by what we
-        # had hitherto been thinking of as the value.
-        $office{canonicalise_tag($value)} = undef;
+        my %def_ce = default_calentry($calpoint);
+        $office{$_} //= $def_ce{$_} foreach(keys(%def_ce));
       }
-    }
 
-    {
-      # We expect that some values in %office might be undefined.
-      no warnings 'uninitialized';
-      $office{id} = "$calpoint-" . md5_hex(%office) unless(exists($office{id}));
-    }
+      next unless(exists($office{rank}));
 
-    my $inplace_modification = 0;
+      generate_internal_office_fields($horas::version, \%office);
+      $office{calpoint} = $calpoint;
 
-    if(exists($$basecal{offices}{$office{id}}))
-    {
-      # We're modifying an existing office.
+      $office{$_} //= $global_defaults{$_} foreach(keys(%global_defaults));
 
-      # Find the existing office's position in the array of
-      # offices for its day.
-      my $existing_index;
-      for($existing_index = 0;
-        $$basecal{calpoints}{$$basecal{offices}{$office{id}}{calpoint}}[$existing_index] ne $office{id};
-        $existing_index++) {}
+      # Now we insert the office in all the correct places.
 
-      if($$basecal{offices}{$office{id}}{calpoint} eq $calpoint)
-      {
-        # The office isn't changing day, so act as if we
-        # had inserted it at its current position.
-        $insertion_index = $existing_index;
+      $$basecal{offices}{$office{id}} = \%office;
 
-        $inplace_modification = 1;
-      }
-      else
-      {
-        # Unlink from old calpoint.
-        splice($$basecal{calpoints}{$calpoint}, $existing_index, 1);
-      }
-      
-      my $old_office = $$basecal{offices}{$office{id}};
-
-      $office{$_} //= $$old_office{$_} foreach(keys(%$old_office));
-    }
-    else
-    {
-      my %def_ce = default_calentry($calpoint);
-      $office{$_} //= $def_ce{$_} foreach(keys(%def_ce));
-    }
-
-    next unless(exists($office{rank}));
-
-    generate_internal_office_fields($horas::version, \%office);
-    $office{calpoint} = $calpoint;
-
-    $office{$_} //= $global_defaults{$_} foreach(keys(%global_defaults));
-
-    # Now we insert the office in all the correct places.
-    
-    $$basecal{offices}{$office{id}} = \%office;
-
-    # Link to the the office at the appropriate calpoint (unless
-    # it's already linked there).
-    my $calpoint_arr = ($$basecal{calpoints}{$calpoint} ||= []);
-    splice @$calpoint_arr, ++$insertion_index, 0, $office{id} unless($inplace_modification);
-    
-    # Make sure the new/modified office is in the correct place in
-    # the list.
-    if(@$calpoint_arr > 1)
-    {
-      @$calpoint_arr[$insertion_index, $insertion_index + 1] = @$calpoint_arr[$insertion_index + 1, $insertion_index++]
-        while(cmp_occurrence($$basecal{offices}{$$calpoint_arr[$insertion_index]}, $$basecal{offices}{$$calpoint_arr[$insertion_index + 1]}) > 0);
-      @$calpoint_arr[$insertion_index, $insertion_index - 1] = @$calpoint_arr[$insertion_index - 1, $insertion_index--]
-        while(cmp_occurrence($$basecal{offices}{$$calpoint_arr[$insertion_index - 1]}, $$basecal{offices}{$$calpoint_arr[$insertion_index]}) > 0);
+      # Link to the the office at the appropriate calpoint (unless
+      # it's already linked there).
+      my $calpoint_arr = ($$basecal{calpoints}{$calpoint} ||= []);
+      push @$calpoint_arr, $office{id} unless($inplace_modification);
     }
   }
 
