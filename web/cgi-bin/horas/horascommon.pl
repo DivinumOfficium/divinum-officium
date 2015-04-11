@@ -891,15 +891,37 @@ sub papal_antiphon_dum_esset($)
   }
 }
 
-#*** build_comment_line()
-#  Sets $comment to the HTML for the comment line.
-sub build_comment_line()
+#*** build_comment_line(@offices)
+#  Sets $comment to the HTML for the comment line. @offices is a list of all
+#  offices for the day/hour.
+sub build_comment_line
 {
-  our @dayname;
-  our ($comment, $marian_commem);
-  
-  my $commentcolor = ($dayname[2] =~ /(Feria)/i) ? 'black' : ($marian_commem && $dayname[2] =~ /^Commem/) ? 'blue' : 'maroon';
-  $comment = ($dayname[2]) ? "<SPAN STYLE=\"font-size:82%; color:$commentcolor;\"><I>$dayname[2]</I></SPAN>" : "";
+  use strict;
+
+  # The first office is the office of the day, but we're only interested in
+  # commemorations.
+  shift;
+  my @commemorations = @_;
+
+  my $commemoration_comment =
+    join(
+      '<BR>',
+      map { "Commemoratio $_->{office}{title}" } @commemorations);
+
+  my $commentcolor =
+    $commemorations[0]{office}{category} == FERIAL_OFFICE ?
+      'black' :
+    0 ? # TODO: Decide what to do about Marian commemorations.
+      'blue' :
+      'maroon';
+
+  our $comment =
+    @commemorations ?
+      qq(<SPAN STYLE="font-size:82%; color:$commentcolor;">) .
+      qq(<I>$commemoration_comment</I>) .
+      qq(</SPAN>) :
+    # Or, if no comment:
+      '';
 }
 
 #*** cache_prayers()

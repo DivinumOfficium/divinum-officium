@@ -195,7 +195,7 @@ $daycolor =   ($commune =~ /(C1[0-9])/) ? "blue" :
    ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" : 
    ($dayname[1] =~ /duplex/i) ? "red" : 
     "grey"; 
-build_comment_line();
+build_comment_line(@offices);
 
 #prepare main pages
 my $h = $hora;
