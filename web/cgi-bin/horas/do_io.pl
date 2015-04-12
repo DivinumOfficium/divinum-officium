@@ -34,9 +34,18 @@ sub do_read($)
 
         for my $encoding ( @encodings )
         {
+            # Try this encoding.
+            $content = $encoding->decode($data);
+
+            # If the text has a UTF-8 BOM but happens otherwise to be plain
+            # text, the heuristic will misidentify it. Avoid this.
+            next if $content =~ /^\x{ef}\x{bb}\x{bf}/;
+            # Furthermore, a BOM will be returned in the decoded stream. Strip
+            # it.
+            $content =~ s/^\x{feff}//;
+
             # Check for characters we want, throughout.
             # Basically all Latin, Greek, Semitic, plus puncutation and crosses.
-            $content = $encoding->decode($data);
             $decoded = ($content =~ /^(?:[\x{01}-\x{1F} -~«»¡¿À-ݿḀ-῾‐-‡✙-✥])*$/ox);
             last if $decoded;
         }
