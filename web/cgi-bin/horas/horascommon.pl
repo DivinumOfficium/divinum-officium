@@ -906,7 +906,7 @@ sub build_comment_line
   my $commemoration_comment =
     join(
       '<BR>',
-      map { "Commemoratio $_->{office}{title}" } @commemorations);
+      map { "Commemoratio $_->{office}{genitive_title}" } @commemorations);
 
   my $commentcolor =
     $commemorations[0]{office}{category} == FERIAL_OFFICE ?

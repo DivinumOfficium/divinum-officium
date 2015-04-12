@@ -7,6 +7,7 @@ package DivinumOfficium::Calendar::Data;
 
 use strict;
 use warnings;
+use utf8;
 
 use List::Util qw(min);
 use Digest::MD5 qw(md5_hex);
@@ -185,6 +186,18 @@ sub canonicalise_tag
 }
 
 
+# Heuristic and very rough-and-ready generation of genitive title from one
+# which mioght be in some other case. This should only be used where an
+# explicit genitive title has not been provided.
+sub make_genitive_title
+{
+  local $_ = shift;
+  s/^Dies?\b/Diei/;
+  s/^In octava/Octavæ/i;
+  return $_;
+}
+
+
 sub generate_internal_office_fields
 {
   my $version = shift;
@@ -192,6 +205,8 @@ sub generate_internal_office_fields
 
   my %rank = parse_rank_line($office_ref->{rank}, $version);
   $office_ref->{$_} = $rank{$_} foreach(keys(%rank));
+
+  $office_ref->{genitive_title} ||= make_genitive_title($office_ref->{title});
 
   if(exists($office_ref->{occurrencerules}))
   {
