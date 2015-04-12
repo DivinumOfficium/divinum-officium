@@ -278,7 +278,7 @@ sub setupstring($$$%)
   my $fullpath = "$basedir/$lang/$fname";
   our ($lang1, $lang2, $missa);
   
-  my $inclusionregex = qr/^\s*\@
+  my $inclusionregex = qr/^\h*\@
     ([^\n:]+)?                    # Filename (self-reference if omitted).
     (?::([^\n:]+?))?              # Optional keywords.
     [^\S\n\r]*                    # Ignore trailing whitespace.
