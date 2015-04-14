@@ -8,6 +8,8 @@ use warnings;
 
 use Carp;
 
+use DivinumOfficium::FileIO qw(do_read);
+
 BEGIN
 {
   require Exporter;

@@ -78,7 +78,6 @@ require "$Bin/horas.pl";
 require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
-require "$Bin/tfertable.pl";
 require "$Bin/do_io.pl";
 
 $q = new CGI;
@@ -173,7 +172,7 @@ if ($flag) {
   setsetup('general', $expand, $version, $lang2, $accented, $local);
   setcookies('horasgo', 'general');
 }
-if (!$expand) {$expand = 'psalms';}
+if (!$expand) {$expand = 'all';}
 if (!$version) {$version = 'Rubrics 1960';}
 if (!$lang2) {$lang2 = 'English';}
 $only = ($lang1 =~ /^$lang2$/i) ? 1 : 0;
@@ -285,7 +284,7 @@ PrintTag
 <TABLE BORDER=0 HEIGHT=$height><TR>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>Ordinarium</FONT></TD>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>Psalterium</FONT></TD>
-<TD ALIGN=CENTER><FONT COLOR=MAROON>Proprium de tempore</FONT></TD>
+<TD ALIGN=CENTER><FONT COLOR=MAROON>Proprium de Tempore</FONT></TD>
 
 </TR><TR><TD ALIGN=CENTER ROWSPAN=2>
 <IMG SRC="$htmlurl/breviarium.gif" HEIGHT=$height></TD>
@@ -299,7 +298,7 @@ PrintTag
 <TD HEIGHT=50% VALIGN=MIDDLE ALIGN=CENTER>
 <IMG SRC="$htmlurl/sancti.gif" HEIGHT=$height2></TD>
 </TR><TR>
-<TD ALIGN=CENTER><FONT COLOR=RED>$version</FONT></TD>
+<TD ALIGN=CENTER><FONT COLOR=RED></FONT></TD>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>Commune Sanctorum</FONT></TD>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>Proprium Sanctorum</FONT></TD>
 </TR></TABLE>
@@ -433,8 +432,6 @@ my $lang_count = @languages;
  $vers =~ s/ /_/g; 
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callmissa();">Sancta Missa</A>
-&nbsp;&nbsp;&nbsp;
 <SELECT NAME=lang2 SIZE=$lang_count onchange="parchange()">
 PrintTag
 
@@ -451,10 +448,8 @@ $addlocal<BR>
 <P ALIGN=CENTER><FONT SIZE=-1>
 <A HREF="Cofficium.pl">Compare</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF=edit.pl?lang=$lang2&date=$date1&version=$vers TARGET="_NEW">Show files</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF=# onclick="pset('parameters')">Options</A>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/versions.html" TARGET="_NEW">Versions</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/credits.html" TARGET="_NEW">Credits</A>
@@ -516,7 +511,7 @@ sub headline2 {
   print "<span>$comment<BR/><BR/></span></p>";
 }
 
-#*** headline($head) prints headlibe for main and pray
+#*** headline($head) prints headline for main and pray
 sub headline {
   my $head = shift;
 	if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
@@ -524,7 +519,9 @@ sub headline {
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;<FONT COLOR=RED SIZE=+1>$version<P>
+<P ALIGN=CENTER><A HREF=# onclick="callmissa();">Sancta Missa</A>
+&nbsp;&nbsp;&nbsp;
 <INPUT TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
 <A HREF=# onclick="prevnext(-1)">&darr;</A>
 <INPUT TYPE=BUTTON NAME=SUBMIT VALUE=" " onclick="parchange();">

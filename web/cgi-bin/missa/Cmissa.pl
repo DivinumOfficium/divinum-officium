@@ -79,7 +79,6 @@ require "$Bin/webdia.pl";
 require "$Bin/msetup.pl";
 require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
-require "$Bin/tfertable.pl";
 
 binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
@@ -304,8 +303,6 @@ if ($pmode =~ /(main|hora)/i) {
   print << "PrintTag";
 <P ALIGN=CENTER><FONT SIZE=-1>
 <A HREF="missa.pl">TLM only</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF=medit.pl?lang=$lang2&date=$date1&version=$version" TARGET="_NEW">Show files</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF=# onclick="pset('parameters')">Options</A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 

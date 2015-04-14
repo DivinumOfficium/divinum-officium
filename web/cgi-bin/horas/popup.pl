@@ -67,7 +67,6 @@ require "$Bin/setup.pl";
 require "$Bin/horas.pl";
 require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
-require "$Bin/tfertable.pl";
 
 binmode(STDOUT,':encoding(utf-8)');
 

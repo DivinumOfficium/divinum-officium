@@ -75,7 +75,6 @@ require "$Bin/horas.pl";
 require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
-require "$Bin/tfertable.pl";
 
 binmode(STDOUT,':encoding(utf-8)');
 
@@ -385,7 +384,7 @@ PrintTag
 
 
 
-#*** hedline($head) prints headlibe for main and pray
+#*** hedline($head) prints headline for main and pray
 sub headline {
   my $head = shift;
   if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}

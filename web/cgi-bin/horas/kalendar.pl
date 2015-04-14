@@ -65,7 +65,6 @@ require "$Bin/do_io.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
-require "$Bin/tfertable.pl";
 require "$Bin/specmatins.pl";
 require "$Bin/horas.pl";
 require "$Bin/specials.pl";
@@ -334,7 +333,7 @@ PrintTag
 
 sub Readings {
   my @months = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-  my @days = ('Sun', 'Mon', 'Tue', 'Wen', 'Thu', 'Fri','Sat');
+  my @days = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri','Sat');
 
   my $savehora = $hora;
   $hora = 'Laudes';

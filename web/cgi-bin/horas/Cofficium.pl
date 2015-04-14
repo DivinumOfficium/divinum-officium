@@ -83,7 +83,6 @@ require "$Bin/horas.pl";
 require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
-require "$Bin/tfertable.pl";
 
 binmode(STDOUT,':encoding(utf-8)');
 
@@ -398,8 +397,6 @@ $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
 <BR>
 <P ALIGN=CENTER><FONT SIZE=-1>
 <A HREF="officium.pl">One version</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF=edit.pl?lang=$lang2&date=$date1&version=$version" TARGET="_NEW">Show files</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF=# onclick="pset('parameters')">Options</A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 

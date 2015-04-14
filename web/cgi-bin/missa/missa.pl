@@ -76,7 +76,6 @@ require "$Bin/webdia.pl";
 require "$Bin/msetup.pl";
 require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
-require "$Bin/tfertable.pl";
 
 binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
@@ -312,8 +311,6 @@ my $lang_count = @languages;
 
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callofficium();">Divinum Officium</A>
-&nbsp;&nbsp;&nbsp;
 <SELECT NAME=lang2 SIZE="$lang_count" onclick="parchange()">
 PrintTag
 foreach my $lang (@languages)
@@ -330,11 +327,7 @@ PrintTag
   print << "PrintTag"; 
 <A HREF="Cmissa.pl">Compare</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF=medit.pl?lang=$lang2&date=$date1&version=$vers TARGET="_NEW">Show files</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF=# onclick="pset('parameters')">Options</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF=source.pl TARGET=_NEW> Source</A>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="hset('Propers')">$propname</A>
 PrintTag
@@ -373,8 +366,9 @@ sub headline {
   print << "PrintTag";
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>
-<FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
-&nbsp;&nbsp;&nbsp;&nbsp;
+<FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT><P>
+<P ALIGN=CENTER><A HREF=# onclick="callofficium();">Divinum Officium</A>
+&nbsp;&nbsp;&nbsp;
 <INPUT TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
 <A HREF=# onclick="prevnext(-1)">&darr;</A>
 <INPUT TYPE=BUTTON NAME=SUBMIT VALUE=" " onclick="parchange();">

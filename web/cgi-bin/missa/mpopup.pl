@@ -41,7 +41,6 @@ require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
 #require "$Bin/ordocommon.pl";
 require "$Bin/../horas/do_io.pl";
-require "$Bin/tfertable.pl";
 
 binmode(STDOUT, ':encoding(utf-8)');
 
