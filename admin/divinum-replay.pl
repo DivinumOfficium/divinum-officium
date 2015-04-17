@@ -1,5 +1,4 @@
 #!/usr/bin/perl
-# vim: set encoding=utf-8 :
 
 use strict;
 use warnings;
@@ -98,7 +97,8 @@ if ( $decode )
     binmode STDERR, ':utf8';
 }
 
-die "Do not specify --update with other options.\n" if $update && ($new_base_url || $filter || $failures_filename);
+die "Do not specify --update with --filter or --failures.\n"
+  if $update && ($filter || $failures_filename);
 
 unless ( $update )
 {
