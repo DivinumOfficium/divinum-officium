@@ -1,5 +1,4 @@
 #!/usr/bin/perl
-# vim: set encoding=utf-8 :
 
 use strict;
 use warnings;
