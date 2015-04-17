@@ -1,5 +1,4 @@
 # do_io
-# vim: set encoding=utf-8 :
 use utf8;
 
 # Text-based IO for Divinum Officium Project.

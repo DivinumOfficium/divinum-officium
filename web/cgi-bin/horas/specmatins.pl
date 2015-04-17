@@ -1,6 +1,5 @@
 #!/usr/bin/perl
 use utf8;
-# vim: set encoding=utf-8 :
 
 # Name : Laszlo Kiss
 # Date : 01-20-08
