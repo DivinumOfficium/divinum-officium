@@ -1,0 +1,38 @@
+[Rank]
+S. Elisabeth Viduae;;Duplex;;3;;vide C7a
+
+[Rule]
+CPapaM=Pontiánum;
+vide C7a;
+Gloria
+
+[Oratio]
+Illumina, Dio misericordioso, i cuori dei tuoi fedeli: e, per le preghiere gloriose della beata Elisabetta, fa' che noi, disprezzando i beni del mondo, godiamo sempre delle consolazioni celesti.
+$Per Dominum
+
+[Secreta]
+Accetta, o Signore, l'offerta presentata in onore dei tuoi santi dal popolo che ti è consacrato: esso sa che per i loro meriti ha ottenuto il soccorso nella prova.
+$Per Dominum
+
+[Postcommunio]
+Sostieni sempre, o Signore, per l'intercessione della santa di cui celebriamo la festa, questa tua famiglia che hai nutrito con il tuo sacrificio.
+$Per Dominum
+
+[Commemoratio Oratio]
+!Per San Pontiano Papa e Martire
+@Commune/C2c:Oratio:s/N\./Pontiano/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
+
+[Commemoratio Secreta]
+!Per San Pontiano Papa e Martire
+@Commune/C2c:Secreta:s/N\./Pontiano/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
+
+[Commemoratio Postcommunio]
+!Per San Pontiano Papa e Martire
+@Commune/C2c:Postcommunio:s/N\./Pontiáno/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem
+
