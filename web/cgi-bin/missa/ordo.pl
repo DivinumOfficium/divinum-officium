@@ -1,5 +1,4 @@
 #!/usr/bin/perl
-# vim: set encoding=utf-8 :
 use utf8;
 # áéíóöõúüûÁÉ  ‡
 # Name : Laszlo Kiss
