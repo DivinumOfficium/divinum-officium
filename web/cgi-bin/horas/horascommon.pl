@@ -902,27 +902,33 @@ sub build_comment_line
   # commemorations.
   shift;
   my @commemorations = @_;
+  our $comment;
 
-  my $commemoration_comment =
-    join(
-      '<BR>',
-      map { "Commemoratio $_->{office}{genitive_title}" } @commemorations);
+  if (@commemorations)
+  {
+    my $commemoration_comment =
+      join(
+        '<BR>',
+        map { "Commemoratio $_->{office}{genitive_title}" } @commemorations);
 
-  my $commentcolor =
-    $commemorations[0]{office}{category} == FERIAL_OFFICE ?
-      'black' :
-    0 ? # TODO: Decide what to do about Marian commemorations.
-      'blue' :
-      'maroon';
+    my $commentcolor =
+      $commemorations[0]{office}{category} == FERIAL_OFFICE ?
+        'black' :
+      0 ? # TODO: Decide what to do about Marian commemorations.
+        'blue' :
+        'maroon';
 
-  our $comment =
-    @commemorations ?
+    $comment =
       qq(<SPAN STYLE="font-size:82%; color:$commentcolor;">) .
       qq(<I>$commemoration_comment</I>) .
-      qq(</SPAN>) :
-    # Or, if no comment:
-      '';
+      qq(</SPAN>);
+  }
+  else
+  {
+    $comment = '';
+  }
 }
+
 
 #*** cache_prayers()
 #  Loads Prayers.txt for each language into global hash.
