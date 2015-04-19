@@ -51,13 +51,13 @@ sub vernaculars
 }
 
 
-# initialise_hour($calendar_ref, $date, $hour)
+# initialise_hour($calendar_ref, $date, $hour, $version)
 # Sets all the package variables needed to generated the specified hour. For
 # now, parts of this are simply copied from &getrank and &precedence; these
 # will be cleaned up before being merged into trunk.
 sub initialise_hour
 {
-  my ($calendar_ref, $date, $hour) = @_;
+  my ($calendar_ref, $date, $hour, $version) = @_;
 
   my $vespers_or_compline = ($hour =~ /Vespera/i || $hour =~ /Completorium/i);
 
@@ -71,13 +71,13 @@ sub initialise_hour
   if($vespers_or_compline)
   {
     (my $offices_ref, $concurrence_resolution, $temporal_ref) =
-      resolve_concurrence($calendar_ref, $date);
+      resolve_concurrence($calendar_ref, $date, $version);
     @offices = @$offices_ref;
   }
   else
   {
     (my $offices_ref, $temporal_ref) =
-      resolve_occurrence($calendar_ref, $date);
+      resolve_occurrence($calendar_ref, $date, $version);
     @offices = map {{office => $_, segment => MATINS_TO_NONE}} @$offices_ref;
   }
 
@@ -98,8 +98,6 @@ sub initialise_hour
     use List::Util qw(first);
     
 
-    our $version;
-    
     our ($datafolder, $lang1, $lang2);
 
     # This should already have been set, but do it again for completeness.
@@ -337,7 +335,8 @@ sub precedence
       $horas::datafolder,
       'Kalendaria/generalis.txt'),
     $date,
-    $horas::hora);
+    $horas::hora,
+    $horas::version);
 }
 
 1;
