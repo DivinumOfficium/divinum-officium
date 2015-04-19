@@ -66,18 +66,20 @@ sub initialise_hour
   # entries returned by resolve_occurrence for uniformity with
   # resolve_concurrence.
 
-  my (@offices, $concurrence_resolution);
+  my (@offices, $concurrence_resolution, $temporal_ref);
 
   if($vespers_or_compline)
   {
-    (my $offices_ref, $concurrence_resolution) = resolve_concurrence($calendar_ref, $date);
+    (my $offices_ref, $concurrence_resolution, $temporal_ref) =
+      resolve_concurrence($calendar_ref, $date);
     @offices = @$offices_ref;
   }
   else
   {
-    @offices = map {{office => $_, segment => MATINS_TO_NONE}} resolve_occurrence($calendar_ref, $date);
+    (my $offices_ref, $temporal_ref) =
+      resolve_occurrence($calendar_ref, $date);
+    @offices = map {{office => $_, segment => MATINS_TO_NONE}} @$offices_ref;
   }
-
 
   my $winning_office_ref = $offices[0]{office};
 
@@ -268,11 +270,17 @@ sub initialise_hour
       
       my $sanctoral_ref =
         first {$_->{office}{cycle} == SANCTORAL_OFFICE} @offices;
-      my $temporal_ref =
+      my $temporal_said_ref =
         first {$_->{office}{cycle} == TEMPORAL_OFFICE} @offices;
 
-      $svesp = $sanctoral_ref->{segment} if($sanctoral_ref);
-      $tvesp = $temporal_ref->{segment}  if($temporal_ref);
+      # $temporal_said_ref is notionally different from $temporal_ref in that
+      # the latter might is picked out even amongst omitted offices (the
+      # archetypal case is that of lesser ferias). If we have both, they ought
+      # to be equal.
+      croak if($temporal_said_ref && $temporal_said_ref != $temporal_ref);
+
+      $svesp = $sanctoral_ref->{segment}      if($sanctoral_ref);
+      $tvesp = $temporal_said_ref->{segment}  if($temporal_said_ref);
 
       $cvespera = $offices[1]{segment} if(@offices > 1);
     }
@@ -303,7 +311,7 @@ sub initialise_hour
     our $hymncontract = 0;
   }
 
-  return @offices;
+  return \@offices, $temporal_ref;
 }
 
 

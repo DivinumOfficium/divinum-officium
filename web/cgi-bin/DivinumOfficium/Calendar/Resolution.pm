@@ -647,7 +647,7 @@ sub resolve_occurrence
 
   # Remove any offices that should be translated or omitted in occurrence with
   # the winner.
-  return
+  my @resolved_offices =
     $winner,
     grep
     {
@@ -656,6 +656,10 @@ sub resolve_occurrence
       $loser_rule != OMIT_LOSER && $loser_rule != TRANSLATE_LOSER;
     }
     @sorted_offices;
+
+  return
+    (\@resolved_offices),
+    (first {$_->{cycle} == TEMPORAL_OFFICE} ($winner, @sorted_offices));
 }
 
 
@@ -665,13 +669,20 @@ sub resolve_concurrence
   use sort 'stable';
 
   my ($calendar_ref, $date, $version) = @_;
-  my @preceding = resolve_occurrence($calendar_ref, $date, $version);
-  my @following = resolve_occurrence($calendar_ref, next_date($date), $version);
+
+  # Using &resolve_occurrence is not quite right here, as OMIT_LOSER is applied
+  # before filtering out offices that don't have one or other Vespers.  This
+  # will break the ember days in September. TODO: Factor out the appropriate
+  # bits of &resolve_occurrence and use them at the correct times.
+  my ($preceding_ref, $preceding_temporal_ref) =
+    resolve_occurrence($calendar_ref, $date, $version);
+  my ($following_ref, $following_temporal_ref) =
+    resolve_occurrence($calendar_ref, next_date($date), $version);
 
   # Filter out preceding offices without second vespers and following ones
   # without first vespers.
-  @preceding = grep {$_->{secondvespers}} @preceding;
-  @following = grep {$_->{firstvespers}}  @following;
+  my @preceding = grep {$_->{secondvespers}} @$preceding_ref;
+  my @following = grep {$_->{firstvespers}}  @$following_ref;
 
   # When a day within an octave is only commemorated, it loses its second
   # vespers. Accordingly, we drop such offices from the list.
@@ -746,12 +757,29 @@ sub resolve_concurrence
   # the remaining commemorations, a commemoration for I. vespers is placed
   # before one for II. vespers. Since the earlier rubrics are silent in such
   # cases, we adopt this ordering for those, too.
+  push @result,
+    sort {cmp_concurrence($a->{office}, $b->{office}, $version)} @tail;
+
+  # Sort out which temporal office is nominally active (even if it would be
+  # omitted).
+  my $temporal_ref =
+    # We test whether the preceding office should win. It does so if it has
+    # second Vespers, and...
+    $preceding_temporal_ref->{secondvespers} &&
+    (
+      # ...either the following office doesn't have first Vespers, or...
+      !$following_temporal_ref->{firstvespers} ||
+      # ...the first office beats the second in concurrence.
+      cmp_concurrence(
+        $preceding_temporal_ref,
+        $following_temporal_ref,
+        $version) < 0
+    ) ? $preceding_temporal_ref : $following_temporal_ref;
+
   return
-    [
-      @result,
-      sort {cmp_concurrence($a->{office}, $b->{office}, $version)} @tail
-    ],
-    $concurrence_resolution;
+    \@result,
+    $concurrence_resolution,
+    $temporal_ref;
 }
 
 1;

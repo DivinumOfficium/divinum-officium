@@ -890,26 +890,40 @@ sub papal_antiphon_dum_esset($)
   }
 }
 
-#*** build_comment_line(@offices)
-#  Sets $comment to the HTML for the comment line. @offices is a list of all
-#  offices for the day/hour.
+#*** build_comment_line($offices_ref, $temporal_ref)
+#  Sets $comment to the HTML for the comment line. $offices_ref and
+#  $temporal_ref are as returned by &initialise_hour.
 sub build_comment_line
+{
+  our $comment = &_build_comment_line;
+}
+
+
+sub _build_comment_line
 {
   use strict;
 
-  # The first office is the office of the day, but we're only interested in
-  # commemorations.
-  shift;
-  my @commemorations = @_;
-  our $comment;
+  my ($offices_ref, $temporal_ref) = @_;
+
+  my ($winner_ref, @commemorations) = @$offices_ref;
+
+  my $comment = '';
 
   if (@commemorations)
   {
-    my $commemoration_comment =
-      join(
+    # TODO: Use 'genitive_title' rather than 'title'. We use the latter to
+    # emulate the old behaviour.
+    $comment = join(
         '<BR>',
-        map { "Commemoratio $_->{office}{genitive_title}" } @commemorations);
+        map { "Commemoratio: $_->{office}{title}" } @commemorations);
+  }
+  elsif ($temporal_ref && $winner_ref->{office}{cycle} == SANCTORAL_OFFICE)
+  {
+    $comment = "Tempora: $temporal_ref->{title}";
+  }
 
+  if ($comment)
+  {
     my $commentcolor =
       $commemorations[0]{office}{category} == FERIAL_OFFICE ?
         'black' :
@@ -919,13 +933,11 @@ sub build_comment_line
 
     $comment =
       qq(<SPAN STYLE="font-size:82%; color:$commentcolor;">) .
-      qq(<I>$commemoration_comment</I>) .
+      qq(<I>$comment</I>) .
       qq(</SPAN>);
   }
-  else
-  {
-    $comment = '';
-  }
+
+  return $comment;
 }
 
 
