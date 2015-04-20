@@ -119,6 +119,8 @@ if ($command =~ /change/i ) {
  if ($command =~ /parameters/) {setcookies('horasp', 'parameters');}
 }    
 
+$setup{'parameters'} = clean_setupsave($setup{'parameters'});
+
 eval($setup{'parameters'}); #$priest, $lang1, colors, sizes
 eval($setup{'generalc'});  #$expand, $version, $lang2       
 

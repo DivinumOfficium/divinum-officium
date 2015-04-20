@@ -313,6 +313,17 @@ sub strictparam
     return $v;
 }
 
+#*** clean_setupsave($setupsave)
+# Takes a settings string in the format stored in the cookies, and returns a
+# cleaned version.
+sub clean_setupsave
+{
+  my $setupsave = shift;
+  $setupsave =~ s/[‘’]|\x{e2}\x{80}(\x{98}|\x{99})/'/g;
+
+  return $setupsave;
+}
+
 #*** setfont($font, $text)
 # input font description is "[size][ italic][ bold] color" format, and the text
 # returns <FONT ...>$text</FONT> string

@@ -83,6 +83,8 @@ $ckname = ($officium =~ /officium/) ? 'horasgo' : ($Ck) ? 'horasgc' : 'horasg';
 $csname = ($Ck) ? 'generalc' : 'general';
 if (!$setupsave && !getcookies($ckname, $csname)) {setcookies($ckname, $csname);}
 
+$setup{'parameters'} = clean_setupsave($setup{'parameters'});
+
 eval($setup{'parameters'});
 eval($setup{"$csname"});        
                                             
