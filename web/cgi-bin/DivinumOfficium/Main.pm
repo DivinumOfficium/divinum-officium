@@ -275,7 +275,7 @@ sub initialise_hour
       # the latter might is picked out even amongst omitted offices (the
       # archetypal case is that of lesser ferias). If we have both, they ought
       # to be equal.
-      Carp::croak
+      Carp::confess('Inconsistent temporal offices.')
         if($temporal_said_ref && $temporal_said_ref != $temporal_ref);
 
       $svesp = $sanctoral_ref->{segment}      if($sanctoral_ref);
