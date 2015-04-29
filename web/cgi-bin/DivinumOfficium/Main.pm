@@ -276,7 +276,7 @@ sub initialise_hour
       # archetypal case is that of lesser ferias). If we have both, they ought
       # to be equal.
       Carp::confess('Inconsistent temporal offices.')
-        if($temporal_said_ref && $temporal_said_ref != $temporal_ref);
+        if($temporal_said_ref && $temporal_said_ref->{office} != $temporal_ref);
 
       $svesp = $sanctoral_ref->{segment}      if($sanctoral_ref);
       $tvesp = $temporal_said_ref->{segment}  if($temporal_said_ref);
