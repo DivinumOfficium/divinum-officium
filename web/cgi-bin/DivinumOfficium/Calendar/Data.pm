@@ -362,17 +362,29 @@ sub roman_numeral($)
 
   my @thousands = ('', 'M', 'MM', 'MMM');
 
-  return $thousands[$n/1000] . $hundreds[$n/100 % 10] . $tens[$n/10 % 10] . $mod10[$n % 10];
+  return
+    $thousands[$n/1000] .
+    $hundreds[$n/100 % 10] .
+    $tens[$n/10 % 10] .
+    $mod10[$n % 10];
 }
 
 sub default_calentry($)
 {
   my $calpoint = shift;
   local $_ = $calpoint;
-  my @feria = ('', 'Feria Secunda', 'Feria Tertia', 'Feria Quarta', 'Feria Quinta', 'Feria Sexta', 'Sabbato');
-  my @feriarom = ('', 'Feria II', 'Feria III', 'Feria IV', 'Feria V', 'Feria VI', 'Sabbato');
+  my @feria = (
+    '', 'Feria Secunda', 'Feria Tertia', 'Feria Quarta', 'Feria Quinta',
+    'Feria Sexta', 'Sabbato'
+  );
+  my @feriarom = (
+    '', 'Feria II', 'Feria III', 'Feria IV', 'Feria V', 'Feria VI', 'Sabbato'
+  );
   my $sanctoral = /^\d\d-/;
-  my @calentry = ('filename' => ($sanctoral ? 'Sancti/' : 'Tempora/') . $_, 'cycle' => $sanctoral ? SANCTORAL_OFFICE : TEMPORAL_OFFICE);
+  my @calentry = (
+    'filename' => ($sanctoral ? 'Sancti/' : 'Tempora/') . $_,
+    'cycle' => $sanctoral ? SANCTORAL_OFFICE : TEMPORAL_OFFICE
+  );
 
   if(/^Adv(\d)-(\d)$/i)
   {
