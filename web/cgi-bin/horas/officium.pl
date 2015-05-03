@@ -258,7 +258,7 @@ if ($command =~ /setup/i) {
 
   #eval($setup{'parameters'});
   $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
-  horas($command, @offices);
+  horas($command, @$offices_ref);
 
   print << "PrintTag";
 <P ALIGN=CENTER>
