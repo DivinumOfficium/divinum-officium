@@ -648,7 +648,7 @@ sub resolve_occurrence
 
   # Remove any offices that should be translated or omitted in occurrence with
   # the winner.
-  my @resolved_offices =
+  my @resolved_offices = (
     $winner,
     grep
     {
@@ -656,7 +656,8 @@ sub resolve_occurrence
       my $loser_rule = $resolution{rule};
       $loser_rule != OMIT_LOSER && $loser_rule != TRANSLATE_LOSER;
     }
-    @sorted_offices;
+    @sorted_offices
+  );
 
   return
     (\@resolved_offices),
