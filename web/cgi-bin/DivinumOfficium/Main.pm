@@ -93,7 +93,7 @@ sub initialise_hour
       FERIAL_OFFICE VIGIL_OFFICE SUNDAY_OFFICE
       FROM_THE_CHAPTER
       GREATER_DAY
-      SIMPLE_RITE SEMIDOUBLE_RITE DOUBLE_RITE);
+      SIMPLE_RITE SEMIDOUBLE_RITE DOUBLE_RITE GREATER_DOUBLE_RITE);
 
     use List::Util qw(first);
     
@@ -112,9 +112,13 @@ sub initialise_hour
     our $duplex = do
     {
       my $rite = $winning_office_ref->{rite};
-      if   ($rite == DOUBLE_RITE)     {3}
-      elsif($rite == SEMIDOUBLE_RITE) {2}
-      elsif($rite == SIMPLE_RITE)     {1}
+      if   ($rite == DOUBLE_RITE || $rite == GREATER_DOUBLE_RITE) {3}
+      elsif($rite == SEMIDOUBLE_RITE)                             {2}
+      elsif($rite == SIMPLE_RITE)                                 {1}
+      else
+      {
+        confess("Invalid rite $rite.");
+      }
     };
 
     # Take everything from $week up to the first =. We set @dayname[1,2] later.
