@@ -1063,7 +1063,7 @@ filename=Sancti/01-14o
 
 S. Felicis Martyris
 Festum simplex
-filename=Sancti/01-15-Felix
+filename=Sancti/01-14-Felix
 
 [01-15] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Pauli primi Eremitae et Confessoris
@@ -1098,15 +1098,8 @@ Festum Simplex
 
 S. Canuti Regis et Martyris
 Festum Simplex
+(sed rubrica 1910) Festum semiduplex
 filename=Sancti/01-19-Canutus
-
-[01-19] (rubrica 1910)
-S. Canuti Regis et Martyris
-Festum Semiduplex
-filename=Sancti/01-19t
-
-Ss. Marii, Marthae, Audifacis, et Abachum martyrum
-Festum Simplex
 
 [01-20] (rubrica 1960 aut rubrica tridentina aut rubrica Divino aut rubrica 1955)
 Ss. Fabiani et Sebastiani Martyrum
@@ -1127,7 +1120,7 @@ Festum Semiduplex
 
 S. Emerentiana virgin and martyr
 Festum Simplex
-filename=Sancti/01-23o
+filename=Sancti/01-23-Emerentiana
 
 [01-24] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Timothei Episcopi et Martyris
@@ -1330,7 +1323,7 @@ Festum Semiduplex
 
 S. Lucii I. Papæ et Martyris
 Festum simplex
-filename=Sancti/03-04.txt
+filename=Sancti/03-04-Lucius
 
 [03-06] (rubrica monastica aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 Ss. Perpetuae et Felicitatis Martyrum
@@ -1538,7 +1531,6 @@ Festum Duplex
 [05-03]
 Inventione Sanctae Crucis
 Festum Duplex II. classis
-(rubrica 1570) filename=Sancti/05-03t
 (sed rubrica 1960 omittitur)
 
 Ss. Alexandri et Sociorum Martyrum
@@ -1958,7 +1950,7 @@ octid=SIoannesBaptista
 [07-Dominica-1] (rubrica 1910)
 Pretiosissimi Sanguinis Domini Nostri Jesu Christi
 Festum Domini Duplex II. classis
-filename=Sancti/07-01.txt
+filename=Sancti/07-01
 
 [07-02] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 In Visitatione B. Mariae Virginis
@@ -2162,7 +2154,7 @@ filename=Sancti/07-23-Liborius
 [07-23] (rubrica innovata)
 S. Birgittae Viduae
 Festum Duplex
-filename=Sancti/10-08r
+filename=Sancti/10-08
 
 [07-24] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 In Vigilia S. Jacobi Apostoli
@@ -2967,8 +2959,8 @@ Festum Duplex II. classis
 [10-Dominica-Ult] (rubrica Divino aut rubrica 1955 aut rubrica 1960)
 Domini Nostri Jesu Christi Regis
 Festum Domini Duplex I. classis
-filename=Sancti/10-DU.txt
-(sed rubrica 1960) filename=Sancti/10-DUr.txt
+filename=Sancti/10-DU
+(sed rubrica 1960) filename=Sancti/10-DUr
 
 [10-31] (rubrica tridentina aut rubrica Divino aut rubrica 1955)
 In Vigilia Omnium Sanctorum
