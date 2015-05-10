@@ -9,7 +9,11 @@ use utf8;
 #use strict "refs";
 #use strict "subs";
 
-use DivinumOfficium::Scripting qw(dispatch_script_function parse_script_arguments);
+use DivinumOfficium::Scripting qw(
+  dispatch_script_function
+  parse_script_arguments
+);
+use DivinumOfficium::Propers;
 
 my @lines;
 my $a = 4;
@@ -712,10 +716,7 @@ sub papal_commem_rule($)
 #  no match.
 sub papal_rule($%)
 {
-  my ($rule, %params) = @_;
-  my $classchar = $params{'commemoration'} ? 'C' : 'O';
-  
-  return ($rule =~ /${classchar}Papa(e)?([CMD])=(.*?);/i);
+  return &DivinumOfficium::Propers::papal_rule;
 }
 
 
@@ -728,36 +729,10 @@ sub papal_prayer($$$$;$)
 {
   my ($lang, $plural, $class, $name, $type) = @_;
   $type ||= 'Oratio';
-  
-  # Get the prayer from the common.
-  my (%common, $num);
-  my $prayer;
-  our $missa;
-  our ($datafolder, $communename);
-  
-  if ($missa)
-  {
-    %common = %{setupstring($datafolder, $lang, "$communename/C4b.txt")};
-    $num = $plural && $type eq 'Oratio' ? 91 : '';
-  }
-  else
-  {
-    %common = %{setupstring($datafolder, $lang, "$communename/C4.txt")};
-    $num = $plural ? 91 : 9;
-  }
-
-  $prayer = $common{"$type$num"};
-  
-  # Fill in the name(s).
-  $prayer =~ s/ N\.([a-z ]+N\.)*/ $name/;
-  
-  # If we're not a martyr, get rid of the bracketed part; if we are,
-  # then just get rid of the brackets themselves.
-  if ($class !~ /M/i) {$prayer =~ s/\s*\((.|~[\s\n\r]*)*?\)//;}
-  else {$prayer =~ tr/()//d;}
-  
-  return $prayer;
+  return DivinumOfficium::Propers::papal_prayer(
+    $lang, $plural, $class, $name, $type, our $version);
 }
+
 
 #*** papal_antiphon_dum_esset($lang)
 #  Returns the Magnificat antiphon "Dum esset" from the Common of

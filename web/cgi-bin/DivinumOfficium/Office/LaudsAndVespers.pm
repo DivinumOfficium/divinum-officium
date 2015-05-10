@@ -10,7 +10,7 @@ use FindBin qw($Bin);
 use lib "$Bin/..";
 
 use DivinumOfficium::Common qw(MATINS_TO_NONE);
-use DivinumOfficium::Data qw(get_office_part);
+use DivinumOfficium::Propers qw(get_office_part);
 
 BEGIN
 {
