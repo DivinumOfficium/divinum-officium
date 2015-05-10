@@ -62,6 +62,16 @@ use DivinumOfficium::Data qw(get_office_data common_directory data_is_loaded
       $lang) = @_;
     my @names = ($name);
 
+    my $office_data_ref = get_office_data($office_desc_ref, $version, $lang);
+
+    # Before we get going, check for a relevant OPapa clause, which will
+    # obviate all of the rest of the processing.
+    if ($name eq 'Oratio' && $version !~ /Trident/i &&
+      (my ($plural, $class, $pope) = papal_rule($office_data_ref->{Rule})))
+    {
+      return papal_prayer($lang, $plural, $class, $pope, $name, $version);
+    }
+
     # Handle things like "Ant 3".
     if (exists($use_segment_suffix{$name}))
     {
@@ -73,7 +83,6 @@ use DivinumOfficium::Data qw(get_office_data common_directory data_is_loaded
       unshift @names, "$name $hour";
     }
 
-    my $office_data_ref = get_office_data($office_desc_ref, $version, $lang);
     my $part = get_first_named_part($office_data_ref, @names);
 
     if (!defined($part) && may_use_common($office_desc_ref, $name))
