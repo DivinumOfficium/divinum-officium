@@ -18,6 +18,7 @@ use Carp;
 
 use DivinumOfficium::Data qw(get_office_data common_directory data_is_loaded
   get_common_data);
+use DivinumOfficium::Common qw(SECOND_VESPERS_AND_COMPLINE);
 
 ###############################################################################
 
@@ -66,10 +67,19 @@ use DivinumOfficium::Data qw(get_office_data common_directory data_is_loaded
 
     # Before we get going, check for a relevant OPapa clause, which will
     # obviate all of the rest of the processing.
-    if ($name eq 'Oratio' && $version !~ /Trident/i &&
+    if ($version !~ /Trident/i &&
       (my ($plural, $class, $pope) = papal_rule($office_data_ref->{Rule})))
     {
-      return papal_prayer($lang, $plural, $class, $pope, $name, $version);
+      if ($name eq 'Oratio')
+      {
+        return papal_prayer($lang, $plural, $class, $pope, $name, $version);
+      }
+      elsif ($name eq 'Ant' && $class eq 'C' &&
+        $segment == SECOND_VESPERS_AND_COMPLINE)
+      {
+        # Antiphon for second Vespers of confessor-popes.
+        return papal_antiphon_dum_esset($lang);
+      }
     }
 
     # Handle things like "Ant 3".
@@ -300,6 +310,20 @@ sub papal_rule
   my $classchar = $params{'commemoration'} ? 'C' : 'O';
   
   return ($rule =~ /${classchar}Papa(e)?([CMD])=(.*?);/i);
+}
+
+
+#*** papal_antiphon_dum_esset($lang, $version)
+# Returns the Magnificat antiphon "Dum esset" from the Common of Supreme
+# Pontiffs, where $lang is the language.
+sub papal_antiphon_dum_esset
+{
+  my ($lang, $version) = @_;
+  my $communename = common_directory($version);
+
+  my %papalcommon = %{horas::setupstring(
+    $horas::datafolder, $lang, "$communename/C4.txt")};
+  return $papalcommon{'Ant 3 summi Pontificis'};
 }
 
 

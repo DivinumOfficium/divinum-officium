@@ -739,11 +739,8 @@ sub papal_prayer($$$$;$)
 #  Supreme Pontiffs, where $lang is the language.
 sub papal_antiphon_dum_esset($)
 {
-  my $lang = shift;
-  our $datafolder, $communename;
-  
-  my %papalcommon = %{setupstring($datafolder, $lang, "$communename/C4.txt")};
-  return $papalcommon{'Ant 3 summi Pontificis'};
+  our $version;
+  return DivinumOfficium::Propers::papal_antiphon_dum_esset(shift, $version);
 }
 
 
