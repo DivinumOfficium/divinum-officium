@@ -77,7 +77,7 @@ sub initialise_hour
   else
   {
     (my $offices_ref, $temporal_ref) =
-      resolve_occurrence($calendar_ref, $date, $version);
+      resolve_occurrence($calendar_ref, $date, $version, MATINS_TO_NONE);
     @offices = map {{office => $_, segment => MATINS_TO_NONE}} @$offices_ref;
   }
 

@@ -630,16 +630,23 @@ sub resolve_occurrence
   # specified in the calendar.
   use sort 'stable';
 
-  my ($calendar_ref, $date, $version) = @_;
+  my ($calendar_ref, $date, $version, $segment) = @_;
 
   # Get all calpoints falling on this date and expand them to the lists of
   # offices assigned thereto. This also gets any implicit offices.
+  # XXX: We should be using the offices after translation has been performed.
   my @office_lists = map {[get_all_offices($calendar_ref, $_)]} generate_calpoints($date);
 
   # Combine and sort the lists of offices. The first sort uses occurrence rank,
   # and is used to find the winning office.
   my @sorted_offices =
     sort {cmp_occurrence($a, $b, $version)} map {@$_} @office_lists;
+
+  # Filter out offices that don't span the requested portion of the day.
+  @sorted_offices = grep {$_->{firstvespers}}  @sorted_offices
+    if($segment == FIRST_VESPERS_AND_COMPLINE);
+  @sorted_offices = grep {$_->{secondvespers}} @sorted_offices
+    if($segment == SECOND_VESPERS_AND_COMPLINE);
 
   my $winner = shift @sorted_offices;
 
@@ -654,6 +661,8 @@ sub resolve_occurrence
     {
       my %resolution = cmp_occurrence($winner, $_, $version);
       my $loser_rule = $resolution{rule};
+      # XXX: Translations should have been performed before this function.
+      # Assert that $loser_rule != TRANSLATE_LOSER once this is the case.
       $loser_rule != OMIT_LOSER && $loser_rule != TRANSLATE_LOSER;
     }
     @sorted_offices
@@ -672,14 +681,13 @@ sub resolve_concurrence
 
   my ($calendar_ref, $date, $version) = @_;
 
-  # Using &resolve_occurrence is not quite right here, as OMIT_LOSER is applied
-  # before filtering out offices that don't have one or other Vespers.  This
-  # will break the ember days in September. TODO: Factor out the appropriate
-  # bits of &resolve_occurrence and use them at the correct times.
+  # Find the offices from the two days.
   my ($preceding_ref, $preceding_temporal_ref) =
-    resolve_occurrence($calendar_ref, $date, $version);
+    resolve_occurrence($calendar_ref, $date, $version,
+      SECOND_VESPERS_AND_COMPLINE);
   my ($following_ref, $following_temporal_ref) =
-    resolve_occurrence($calendar_ref, next_date($date), $version);
+    resolve_occurrence($calendar_ref, next_date($date), $version,
+      FIRST_VESPERS_AND_COMPLINE);
 
   # Filter out preceding offices without second vespers and following ones
   # without first vespers.
