@@ -144,21 +144,22 @@ sub divino_occurrence
   }
 }
 
+
 sub verify_occurrence_table
 {
-  my ($row_descriptors_ref, $col_descriptors_ref, $table_ref, $verifiers_ref,
-    $version) = @_;
+  verify_table(\&DivinumOfficium::Calendar::Resolution::cmp_occurrence, @_);
+}
+
+sub verify_table
+{
+  my ($comparator_ref, $row_descriptors_ref, $col_descriptors_ref, $table_ref,
+    $verifiers_ref, $version) = @_;
 
   for my $row (0..$#$row_descriptors_ref) {
     for my $col (0..$#$col_descriptors_ref) {
       foreach my $row_desc (@{$row_descriptors_ref->[$row]}) {
         foreach my $col_desc (@{$col_descriptors_ref->[$col]}) {
-          my %resolution =
-            DivinumOfficium::Calendar::Resolution::cmp_occurrence(
-              $row_desc,
-              $col_desc,
-              $version
-            );
+          my %resolution = $comparator_ref->( $row_desc, $col_desc, $version);
           my $result = ($resolution{sign} || 1) * $resolution{rule};
 
           ok(
@@ -172,6 +173,7 @@ sub verify_occurrence_table
     }
   }
 }
+
 
 sub mock_descriptor_list
 {
