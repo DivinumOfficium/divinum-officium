@@ -484,7 +484,7 @@ sub cmp_concurrence
         ($$preceding{category} == FERIAL_OFFICE &&
           $$preceding{standing} == GREATER_DAY) ||
         ($$preceding{category} == WITHIN_OCTAVE_OFFICE &&
-          $$preceding{rankord} <= THIRD_ORDER_OCTAVE)
+          $$preceding{octrank} <= THIRD_ORDER_OCTAVE)
       );
 
     # Doubles of the I. or II. class cause low-ranking days to be
