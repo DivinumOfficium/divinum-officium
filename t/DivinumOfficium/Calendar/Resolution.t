@@ -12,6 +12,7 @@ use Test::More;
 # breviaries and test whether our implementation conforms to them.
 
 divino_occurrence();
+divino_concurrence();
 done_testing();
 
 sub divino_occurrence
@@ -145,9 +146,115 @@ sub divino_occurrence
 }
 
 
+sub divino_concurrence
+{
+  my $version = 'Divino Afflatu';
+
+  # These classes appear both as rows and columns.
+  my $infra_oct_priv = [
+    ['Dies infra octavam I. ordinis duplex I. classis'],
+    ['Dies infra octavam I. ordinis semiduplex I. classis'],
+    ['Dies infra octavam II. ordinis semiduplex'],
+    ['Dies infra octavam III. ordinis semiduplex'],
+  ];
+  my $dominica = [
+    ['Dominica semiduplex'],
+    ['Dominica semiduplex II. classis'],
+    ['Dominica semiduplex I. classis'],
+    ['Dominica duplex I. classis'],
+  ];
+
+
+  my @row_descriptors = mock_descriptor_list($version,
+    $dominica,
+    [['Festum Duplex I. classis']],
+    [['Festum Duplex II. classis']],
+    [
+      ['Dies octava II. ordinis duplex majus'],
+      ['Dies octava III. ordinis duplex majus'],
+    ],
+    [['Dies octava communis duplex majus']],
+    [['Festum duplex majus']],
+    [['Festum duplex']],
+    [['Festum semiduplex']],
+    $infra_oct_priv,
+    [['Dies infra octavam communem semiduplex']],
+  );
+
+  my @col_descriptors = mock_descriptor_list($version,
+    [
+      ['Dies octava simplex simplex'],
+      ['Festum simplex'],
+    ],
+    # [[SIMPLE_RITE, FESTAL_OFFICE]], BVM on Saturday. TODO.
+    [['Dies infra octavam communem semiduplex']],
+    $infra_oct_priv,
+    [['Festum semiduplex']],
+    [['Festum duplex']],
+    [['Festum duplex majus']],
+    [
+      ['Dies octava II. ordinis duplex majus'],
+      ['Dies octava III. ordinis duplex majus'],
+      ['Dies octava communis duplex majus'],
+    ],
+    [['Festum Duplex II. classis']],
+    [['Festum Duplex I. classis']],
+    # Table also has Vigil of the Epiphany here. TODO?
+    $dominica,
+  );
+
+  my @table = map {[split //]} (
+    # TODO: BVM on Sat.
+    '4444444330',
+    '2244444454',
+    '2244444534',
+    '4444444334',
+    '4444445313',
+    '4444453313',
+    '4444533313',
+    '4445333113',
+    '4003333333',
+    '4003333113',
+  );
+
+  my @verifiers = (
+    # 0. In the table this means the concurrence is impossible, but in
+    # principle we might need to handle it anyway. The loser would have to be
+    # omitted.
+    sub { abs shift == OMIT_LOSER },
+    # 1. All of the following, nothing of the preceding.
+    sub { shift == OMIT_LOSER },
+    # 2. All of the preceding, nothing of the following.
+    sub { shift == -(OMIT_LOSER) },
+    # 3. All of the following, commemoration of the preceding.
+    sub { shift == COMMEMORATE_LOSER },
+    # 4. All of the preceding, commemoration of the following.
+    sub { shift == -(COMMEMORATE_LOSER) },
+    # 5. All of the the office of greater nobility, commemoration of the other;
+    # or, in parity, from the chapter of the following with a commemoration of
+    # the preceding. The archetypes in the rows and columns have been
+    # constructed so as always to fall into the latter case. TODO: Test the
+    # first case.
+    sub { shift == FROM_THE_CHAPTER },
+  );
+
+  verify_concurrence_table(
+    \@row_descriptors,
+    \@col_descriptors,
+    \@table,
+    \@verifiers,
+    $version);
+}
+
+
 sub verify_occurrence_table
 {
   verify_table(\&DivinumOfficium::Calendar::Resolution::cmp_occurrence, @_);
+}
+
+sub verify_concurrence_table
+{
+  verify_table(\&DivinumOfficium::Calendar::Resolution::cmp_concurrence, @_);
 }
 
 sub verify_table
@@ -159,14 +266,28 @@ sub verify_table
     for my $col (0..$#$col_descriptors_ref) {
       foreach my $row_desc (@{$row_descriptors_ref->[$row]}) {
         foreach my $col_desc (@{$col_descriptors_ref->[$col]}) {
-          my %resolution = $comparator_ref->( $row_desc, $col_desc, $version);
-          my $result = ($resolution{sign} || 1) * $resolution{rule};
+          # Some comparators return hashes in list context and others merrily
+          # return a single value. In the former case we need to examine the
+          # hash, but in the latter case we can't assign straight to a hash,
+          # so stick the result in an array and check the length to determine
+          # which behaviour the comparator exhibits.
+          my @resolution = $comparator_ref->($row_desc, $col_desc, $version);
+          my $result;
+          if (@resolution > 1) {
+            my %resolution = @resolution;
+            $result = ($resolution{sign} || 1) * $resolution{rule};
+          }
+          else {
+            $result = $resolution[0];
+          }
 
+          my $table_says = $table_ref->[$row][$col];
           ok(
-            $verifiers_ref->[$table_ref->[$row][$col]]->($result),
+            $verifiers_ref->[$table_says]->($result),
             generate_rank_line($row_desc) .
               ' vs. ' .
-              generate_rank_line($col_desc)
+              generate_rank_line($col_desc) .
+              " ($result; $table_says)"
           );
         }
       }
