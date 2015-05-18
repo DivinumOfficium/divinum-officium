@@ -474,6 +474,7 @@ sub cmp_concurrence
     # the preceding, we can't have concurrence of two days in the octave here.
     return OMIT_LOSER
       if ($$preceding{category} == WITHIN_OCTAVE_OFFICE &&
+        exists($$preceding{octid}) && exists($$following{octid}) &&
         $$preceding{octid} eq $$following{octid});
 
     # Check for some days that are low-ranking in concurrence but
