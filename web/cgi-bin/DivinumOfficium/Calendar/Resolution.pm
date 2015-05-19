@@ -435,7 +435,7 @@ sub cmp_concurrence
         6 :
       $$office{rite} == DOUBLE_RITE ?
         7 :
-      $$office{rite} == SEMIDOUBLE_RITE ?
+      $$office{rite} == SEMIDOUBLE_RITE && $$office{category} == FESTAL_OFFICE ?
         8 :
       $$office{category} == WITHIN_OCTAVE_OFFICE ?
         ($$office{octrank} <= THIRD_ORDER_OCTAVE ? 9 : 10) :
