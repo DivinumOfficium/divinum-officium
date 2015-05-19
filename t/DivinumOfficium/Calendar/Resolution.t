@@ -161,13 +161,17 @@ sub divino_concurrence
     ['Dominica semiduplex'],
     ['Dominica semiduplex II. classis'],
     ['Dominica semiduplex I. classis'],
+    # Double Sundays of the first class don't belong in this category.
+  ];
+  my $duplex_primae_classis = [
+    ['Festum Duplex I. classis'],
     ['Dominica duplex I. classis'],
   ];
 
 
   my @row_descriptors = mock_descriptor_list($version,
     $dominica,
-    [['Festum Duplex I. classis']],
+    $duplex_primae_classis,
     [['Festum Duplex II. classis']],
     [
       ['Dies octava II. ordinis duplex majus'],
@@ -198,7 +202,7 @@ sub divino_concurrence
       ['Dies octava communis duplex majus'],
     ],
     [['Festum Duplex II. classis']],
-    [['Festum Duplex I. classis']],
+    $duplex_primae_classis,
     # Table also has Vigil of the Epiphany here. TODO?
     $dominica,
   );
