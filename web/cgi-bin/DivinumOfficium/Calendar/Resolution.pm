@@ -425,7 +425,7 @@ sub cmp_concurrence
   {
     my $office = shift;
     return
-      $$office{category} == FESTAL_OFFICE && $$office{rankord} <= 2 ?
+      $$office{rite} >= DOUBLE_RITE && $$office{rankord} <= 2 ?
         $$office{rankord} :
       $$office{category} == SUNDAY_OFFICE ?
         3 :
@@ -511,7 +511,7 @@ sub cmp_concurrence
           if($preceding_rank >=
             concurrence_rank(
               {
-                category => WITHIN_OCTAVE_OFFICE,
+                category => OCTAVE_DAY_OFFICE,
                 octrank => COMMON_OCTAVE
               }
             )
