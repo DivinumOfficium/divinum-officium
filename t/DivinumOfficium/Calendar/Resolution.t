@@ -152,7 +152,8 @@ sub divino_concurrence
 
   # These classes appear both as rows and columns.
   my $infra_oct_priv = [
-    ['Dies infra octavam I. ordinis duplex I. classis'],
+    # Double days in I.-ord.-octaves (i.e. Easter and Pentecost Mondays and
+    # Tuesdays) are treated as feasts.
     ['Dies infra octavam I. ordinis semiduplex I. classis'],
     ['Dies infra octavam II. ordinis semiduplex'],
     ['Dies infra octavam III. ordinis semiduplex'],
@@ -166,6 +167,7 @@ sub divino_concurrence
   my $duplex_primae_classis = [
     ['Festum Duplex I. classis'],
     ['Dominica duplex I. classis'],
+    ['Dies infra octavam I. ordinis duplex I. classis'],
   ];
 
 
