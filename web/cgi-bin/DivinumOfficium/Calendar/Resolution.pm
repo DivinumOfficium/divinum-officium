@@ -429,7 +429,8 @@ sub cmp_concurrence
         $$office{rankord} :
       $$office{category} == SUNDAY_OFFICE ?
         3 :
-      $$office{category} == OCTAVE_DAY_OFFICE ?
+      $$office{category} == OCTAVE_DAY_OFFICE &&
+        $$office{octrank} <= COMMON_OCTAVE ?
         ($$office{octrank} <= THIRD_ORDER_OCTAVE ? 4 : 5) :
       $$office{rite} == GREATER_DOUBLE_RITE ?
         6 :
