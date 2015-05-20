@@ -462,7 +462,7 @@ sub cmp_concurrence
     # vespers of the feast itself.
     return -(OMIT_LOSER) if(
       $$following{category} == WITHIN_OCTAVE_OFFICE &&
-      $$following{octid} eq $$preceding{octid});
+      exists($$preceding{octid}) && $$following{octid} eq $$preceding{octid});
 
     return -(COMMEMORATE_LOSER);
   }
