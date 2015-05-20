@@ -222,10 +222,11 @@ sub divino_concurrence
   );
 
   my @verifiers = (
-    # 0. In the table this means the concurrence is impossible, but in
-    # principle we might need to handle it anyway. The loser would have to be
-    # omitted.
-    sub { abs shift == OMIT_LOSER },
+    # 0. In the table this means the concurrence is impossible, but there are
+    # several cases that could happen on particular calendars. The correct
+    # resolution depends on the particular case, so there's nothing we can
+    # test.
+    sub { 1 },
     # 1. All of the following, nothing of the preceding.
     sub { shift == OMIT_LOSER },
     # 2. All of the preceding, nothing of the following.
