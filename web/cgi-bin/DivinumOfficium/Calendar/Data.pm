@@ -233,6 +233,11 @@ sub generate_internal_office_fields
     !exists($office_ref->{'officium terminatur post nonam'}) &&
     $office_ref->{category} != VIGIL_OFFICE &&
     ($office_ref->{category} == FERIAL_OFFICE || $office_ref->{rite} != SIMPLE_RITE);
+
+  # Make sure all octaves have an ID. The only significance of such IDs is to
+  # handle overlapping offices from the same octave, so if an ID was not given
+  # explicitly, give it something unique.
+  $office_ref->{octid} //= $office_ref->{id} if(is_octave_office($office_ref));
 }
 
 
@@ -485,6 +490,14 @@ sub get_all_offices
   }
 
   return ();
+}
+
+
+sub is_octave_office
+{
+  my $office_ref = shift;
+  grep { $_ == $office_ref->{category} }
+    (OCTAVE_DAY_OFFICE, WITHIN_OCTAVE_OFFICE);
 }
 
 1;
