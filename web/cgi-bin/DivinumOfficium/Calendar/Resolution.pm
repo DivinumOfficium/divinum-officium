@@ -30,13 +30,29 @@ sub dignity($)
 
   my $dignity = 1000;
 
-  return $dignity
-    if(exists($$office{tags}) && $$office{tags} =~ /Festum Domini/);
-  $dignity--;
-
+  # Conditions in order of decreasing dignity. Some of these are not strictly
+  # necessary for the implementation, but are valid and help testing.
   # TODO: Fill this out. See General Rubrics XI.2.
+  my @conditions = (
+    # Feasts of the Lord.
+    sub { exists($$office{tags}) && $$office{tags} =~ /Festum Domini/ },
+    # Privileged octaves.
+    sub { exists($$office{octrank}) &&
+          $$office{octrank} <= SECOND_ORDER_OCTAVE },
+    sub { exists($$office{octrank}) &&
+          $$office{octrank} == THIRD_ORDER_OCTAVE },
+    # Everything else.
+    sub { 1 }
+  );
 
-  return $dignity;
+  # Iterate over the conditions, decrementing the dignity until we get a match.
+  foreach my $condition_ref (@conditions)
+  {
+    return $dignity if $condition_ref->();
+    $dignity--;
+  }
+
+  confess(q(Shouldn't get here.));
 }
 
 
