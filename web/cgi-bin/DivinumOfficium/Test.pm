@@ -6,6 +6,8 @@ use warnings;
 use DivinumOfficium::Calendar::Definitions;
 use DivinumOfficium::Calendar::Data;
 
+use Digest::MD5 qw(md5_hex);
+
 BEGIN
 {
   require Exporter;
@@ -31,6 +33,8 @@ sub mock_office_descriptor
   {
     $desc{$field} = $defaults{$field} unless exists($desc{$field});
   }
+
+  $desc{id} //= "$desc{calpoint}-" . md5_hex(\%desc);
 
   # Dig into some internal subroutines here...
   DivinumOfficium::Calendar::Data::generate_internal_office_fields(
