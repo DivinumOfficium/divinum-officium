@@ -440,6 +440,9 @@ sub cmp_concurrence
   sub concurrence_rank
   {
     my $office = shift;
+    # Synthetic rank in concurrence. Smaller is better. Sundays and privileged
+    # octave days are in the same category.
+    # XXX: This is not nice. Replace with array of anonymous subs.
     return
       $$office{rite} >= DOUBLE_RITE && $$office{rankord} <= 2 ?
         $$office{rankord} :
@@ -447,7 +450,7 @@ sub cmp_concurrence
         3 :
       $$office{category} == OCTAVE_DAY_OFFICE &&
         $$office{octrank} <= COMMON_OCTAVE ?
-        ($$office{octrank} <= THIRD_ORDER_OCTAVE ? 4 : 5) :
+        ($$office{octrank} <= THIRD_ORDER_OCTAVE ? 3 : 5) :  # Sic!
       $$office{rite} == GREATER_DOUBLE_RITE ?
         6 :
       $$office{rite} == DOUBLE_RITE ?
@@ -545,6 +548,18 @@ sub cmp_concurrence
   return -(OMIT_LOSER)
     if($$preceding{category} == WITHIN_OCTAVE_OFFICE &&
       exists($$following{octid}) && $$following{octid} eq $$preceding{octid});
+
+  # In a Sunday vs. a privileged octave day or vice versa, the office is
+  # always of the preceding.
+  my $sunday_vs_privileged_octave_day = sub
+  {
+    my ($a, $b) = @_;
+    $$b{category} == OCTAVE_DAY_OFFICE && $$b{octrank} <= THIRD_ORDER_OCTAVE &&
+      $$a{category} == SUNDAY_OFFICE;
+  };
+  return -(COMMEMORATE_LOSER)
+    if($sunday_vs_privileged_octave_day->($preceding, $following) ||
+      $sunday_vs_privileged_octave_day->($following, $preceding));
   
   # Office of the day of greater dignity; or, in parity, from the chapter of
   # the following.
