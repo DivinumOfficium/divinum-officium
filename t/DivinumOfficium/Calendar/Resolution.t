@@ -7,6 +7,7 @@ use DivinumOfficium::Calendar::Data qw(generate_rank_line);
 use DivinumOfficium::Test qw(mock_office_descriptor);
 
 use Test::More;
+use List::Util qw(reduce);
 
 # The idea here is that we encode the occurrence/concurrence tables from various
 # breviaries and test whether our implementation conforms to them.
@@ -239,10 +240,20 @@ sub divino_concurrence
     sub { shift == -(COMMEMORATE_LOSER) },
     # 5. All of the the office of greater nobility, commemoration of the other;
     # or, in parity, from the chapter of the following with a commemoration of
-    # the preceding. The archetypes in the rows and columns have been
-    # constructed so as always to fall into the latter case. TODO: Test the
-    # first case.
-    sub { shift == FROM_THE_CHAPTER },
+    # the preceding. TODO: We don't have many tests that fall into the first
+    # case: fix this.
+    sub
+    {
+      my ($result, $first, $second) = @_;
+      # This is just dignity($second) <=> dignity($first).
+      my $dignity_tie =
+        reduce {$b <=> $a}
+          map { DivinumOfficium::Calendar::Resolution::dignity($_) }
+            ($first, $second);
+      # If we're not from-the-chapter, check that dignity was respected.
+      return $result == FROM_THE_CHAPTER ||
+        (abs($result) == COMMEMORATE_LOSER && $dignity_tie * $result > 0);
+    },
   );
 
   verify_concurrence_table(
@@ -290,7 +301,7 @@ sub verify_table
 
           my $table_says = $table_ref->[$row][$col];
           ok(
-            $verifiers_ref->[$table_says]->($result),
+            $verifiers_ref->[$table_says]->($result, $row_desc, $col_desc),
             generate_rank_line($row_desc) .
               ' vs. ' .
               generate_rank_line($col_desc) .
