@@ -544,7 +544,7 @@ sub cmp_concurrence
   # precedence and first vespers of the following are omitted.
   return -(OMIT_LOSER)
     if($$preceding{category} == WITHIN_OCTAVE_OFFICE &&
-      $$preceding{octid} eq $$following{octid});
+      exists($$following{octid}) && $$following{octid} eq $$preceding{octid});
   
   # Office of the day of greater dignity; or, in parity, from the chapter of
   # the following.
