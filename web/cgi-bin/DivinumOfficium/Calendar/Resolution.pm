@@ -11,6 +11,8 @@ use DivinumOfficium::Common qw(
   FIRST_VESPERS_AND_COMPLINE
   SECOND_VESPERS_AND_COMPLINE);
 
+use Carp;
+
 BEGIN
 {
   require Exporter;
@@ -443,6 +445,7 @@ sub cmp_concurrence
     # Synthetic rank in concurrence. Smaller is better. Sundays and privileged
     # octave days are in the same category.
     # XXX: This is not nice. Replace with array of anonymous subs.
+    exists($$office{rite}) or confess();
     return
       $$office{rite} >= DOUBLE_RITE && $$office{rankord} <= 2 ?
         $$office{rankord} :
@@ -475,7 +478,12 @@ sub cmp_concurrence
     return -(OMIT_LOSER) if(
       $$preceding{rite} == DOUBLE_RITE &&
       $$preceding{rankord} <= 2 &&
-      $following_rank >= concurrence_rank({category => WITHIN_OCTAVE_OFFICE, octrank => COMMON_OCTAVE}));
+      $following_rank >= concurrence_rank({
+        category => WITHIN_OCTAVE_OFFICE,
+        octrank => COMMON_OCTAVE,
+        rite => SEMIDOUBLE_RITE,
+        rankord => 3,
+      }));
 
     # Don't commemorate first vespers of the second day in the octave in second
     # vespers of the feast itself.
@@ -531,7 +539,9 @@ sub cmp_concurrence
             concurrence_rank(
               {
                 category => OCTAVE_DAY_OFFICE,
-                octrank => COMMON_OCTAVE
+                octrank => COMMON_OCTAVE,
+                rite => GREATER_DOUBLE_RITE,
+                rankord => 3,
               }
             )
           );
