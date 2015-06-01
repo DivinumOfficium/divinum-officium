@@ -27,6 +27,7 @@ sub mock_office_descriptor
   my %defaults = (
     'partic'   => UNIVERSAL_OFFICE,
     'calpoint' => '',
+    'title'    => '',
   );
 
   foreach my $field (keys %defaults)
