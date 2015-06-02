@@ -559,17 +559,23 @@ sub cmp_concurrence
     if($$preceding{category} == WITHIN_OCTAVE_OFFICE &&
       exists($$following{octid}) && $$following{octid} eq $$preceding{octid});
 
-  # In a Sunday vs. a privileged octave day or vice versa, the office is
-  # always of the preceding.
-  my $sunday_vs_privileged_octave_day = sub
+  # In a Sunday or privileged octave day vs. a privileged octave day or vice
+  # versa, the office is always of the preceding.
+  my $vs_privileged_octave_day = sub
   {
     my ($a, $b) = @_;
-    $$b{category} == OCTAVE_DAY_OFFICE && $$b{octrank} <= THIRD_ORDER_OCTAVE &&
-      $$a{category} == SUNDAY_OFFICE;
+    my $privileged_octave_day = sub
+    {
+      my $office = shift;
+      $$office{category} == OCTAVE_DAY_OFFICE &&
+        $$office{octrank} <= THIRD_ORDER_OCTAVE;
+    };
+    $privileged_octave_day->($b) &&
+      ($$a{category} == SUNDAY_OFFICE || $privileged_octave_day->($a));
   };
   return -(COMMEMORATE_LOSER)
-    if($sunday_vs_privileged_octave_day->($preceding, $following) ||
-      $sunday_vs_privileged_octave_day->($following, $preceding));
+    if($vs_privileged_octave_day->($preceding, $following) ||
+      $vs_privileged_octave_day->($following, $preceding));
   
   # Office of the day of greater dignity; or, in parity, from the chapter of
   # the following.
