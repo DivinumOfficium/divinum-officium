@@ -447,8 +447,8 @@ sub cmp_concurrence
     # XXX: This is not nice. Replace with array of anonymous subs.
     exists($$office{rite}) or confess();
     return
-      $$office{rite} >= DOUBLE_RITE && $$office{rankord} <= 2 ?
-        $$office{rankord} :
+      $$office{rite} >= DOUBLE_RITE && $$office{rankord} <= 2 &&
+        $$office{category} != OCTAVE_DAY_OFFICE ? $$office{rankord} :
       $$office{category} == SUNDAY_OFFICE ?
         3 :
       $$office{category} == OCTAVE_DAY_OFFICE &&
