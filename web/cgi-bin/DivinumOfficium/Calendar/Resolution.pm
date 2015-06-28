@@ -9,7 +9,9 @@ use DivinumOfficium::Calendar::Definitions;
 use DivinumOfficium::Calendar::Data qw(get_all_offices);
 use DivinumOfficium::Common qw(
   FIRST_VESPERS_AND_COMPLINE
-  SECOND_VESPERS_AND_COMPLINE);
+  SECOND_VESPERS_AND_COMPLINE
+  MATINS_TO_NONE
+);
 
 use Carp;
 
@@ -19,7 +21,12 @@ BEGIN
 
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(resolve_occurrence resolve_concurrence get_week);
+  our @EXPORT_OK = qw(
+    resolve_occurrence
+    resolve_concurrence
+    resolve_translation
+    get_week
+  );
 }
 
 
@@ -608,14 +615,17 @@ sub days_in_month
 }
 
 
+sub next_date_mdy
+{
+  my @date_mdy;
+  @date_mdy[1,0,2] = horas::nday(@_[1,0,2]);
+  return @date_mdy;
+}
+
+
 sub next_date
 {
-  my $date = shift;
-  my @date_mdy = split(/-/, $date);
-
-  @date_mdy[1,0,2] = horas::nday(@date_mdy[1,0,2]);
-
-  return join('-', @date_mdy);
+  return join('-', next_date_mdy(split(/-/, shift)));
 }
 
 
@@ -676,10 +686,11 @@ sub get_week
 sub resolve_occurrence
 {
   # When two offices are tied in dignity, preserve the order in which they were
-  # specified in the calendar.
+  # specified in the calendar. Also, when transferring offices of equal rank,
+  # transfer the first one first.
   use sort 'stable';
 
-  my ($calendar_ref, $date, $version, $segment) = @_;
+  my ($calendar_ref, $date, $version, $segment, @translated_offices) = @_;
 
   # Get all calpoints falling on this date and expand them to the lists of
   # offices assigned thereto. This also gets any implicit offices.
@@ -697,10 +708,41 @@ sub resolve_occurrence
   @sorted_offices = grep {$_->{secondvespers}} @sorted_offices
     if($segment == SECOND_VESPERS_AND_COMPLINE);
 
+  if (@translated_offices)
+  {
+    # The next office to be translated is at the head of the list, so it's
+    # the only one we care about. It will be dropped here if and only if
+    # (a) the day is free of semidoubles, doubles and privileged ferias; or
+    # (b) in non-Tridentine rubrics, if the day is free of first- and second-
+    #     class offices; or
+    # (c) the office is one of a few singled out in the rubrics, and it would
+    #     win in occurrence.
+    my $current_winner = $sorted_offices[0];
+    if (($current_winner->{rite} < SEMIDOUBLE_RITE &&
+        $current_winner->{standing} != GREATER_PRIVILEGED_DAY) ||
+      ($version !~ /Trident/i && $current_winner->{rankord} > 2) ||
+      (exists($current_winner->{'dignitate maiore in translatione'}) &&
+        cmp_occurrence($translated_offices[0], $current_winner) < 0))
+    {
+      unshift @sorted_offices, shift @translated_offices;
+    }
+  }
+
   my $winner = shift @sorted_offices;
 
   # Re-sort the tail using commemoration rank.
   @sorted_offices = sort {cmp_commemoration($a, $b, $version)} @sorted_offices;
+
+  my $rule_against_winner = sub
+  {
+    my %resolution = cmp_occurrence($winner, shift, $version);
+    $resolution{rule};
+  };
+
+  # Add any offices that should be translated to the translation list. They'll
+  # be filtered out of the day's offices subsequently.
+  push @translated_offices,
+    grep { $rule_against_winner->($_) == TRANSLATE_LOSER } @sorted_offices;
 
   # Remove any offices that should be translated or omitted in occurrence with
   # the winner.
@@ -708,10 +750,7 @@ sub resolve_occurrence
     $winner,
     grep
     {
-      my %resolution = cmp_occurrence($winner, $_, $version);
-      my $loser_rule = $resolution{rule};
-      # XXX: Translations should have been performed before this function.
-      # Assert that $loser_rule != TRANSLATE_LOSER once this is the case.
+      my $loser_rule = $rule_against_winner->($_);
       $loser_rule != OMIT_LOSER && $loser_rule != TRANSLATE_LOSER;
     }
     @sorted_offices
@@ -719,7 +758,8 @@ sub resolve_occurrence
 
   return
     (\@resolved_offices),
-    (first {$_->{cycle} == TEMPORAL_OFFICE} ($winner, @sorted_offices));
+    (first {$_->{cycle} == TEMPORAL_OFFICE} ($winner, @sorted_offices)),
+    (\@translated_offices);
 }
 
 
@@ -840,6 +880,59 @@ sub resolve_concurrence
     $concurrence_resolution,
     $temporal_ref;
 }
+
+
+# TODO: Move these into some utility module.
+sub year_ago_mdy
+{
+  my @date_mdy = @_;
+  $date_mdy[2]--;
+  $date_mdy[1]-- if($date_mdy[0] == 2 && $date_mdy[1] == 29);
+  return @date_mdy;
+}
+
+sub dates_mdy_equal
+{
+  my ($a_ref, $b_ref) = @_;
+  return
+    $a_ref->[0] == $b_ref->[0] &&
+    $a_ref->[1] == $b_ref->[1] &&
+    $a_ref->[2] == $b_ref->[2];
+}
+
+
+sub resolve_translation
+{
+  my ($calendar_ref, $date, $version) = @_;
+  my @date_mdy = split(/-/, $date);
+
+  # Go back fully a year. We actually want a year less one day (that being the
+  # first day from which an office can be transferred to today), but that will
+  # be handled in the loop.
+  my @transfer_date_mdy = year_ago_mdy(@date_mdy);
+
+  # Robust protection against infinite loops.
+  my $loop_counter = 366;
+
+  # Resolve occurrence for each day, picking up and dropping feasts as
+  # appropriate.
+  my $translated_offices_ref = [];
+  my $resolved_offices_ref;
+  until (dates_mdy_equal(\@transfer_date_mdy, \@date_mdy))
+  {
+    @transfer_date_mdy = next_date_mdy(@transfer_date_mdy);
+    ($resolved_offices_ref, undef, $translated_offices_ref) =
+      resolve_occurrence($calendar_ref, join('-', @transfer_date_mdy),
+        $version, MATINS_TO_NONE, @$translated_offices_ref);
+
+    croak('Looped over a year.') unless $loop_counter--;
+  }
+
+  # After the loop, @$resolved_offices_ref is the list of offices for the
+  # requested date.
+  return $resolved_offices_ref;
+}
+
 
 1;
 
