@@ -9,6 +9,9 @@ use utf8;
 #use strict "refs";
 #use strict "subs";
 
+use POSIX;
+use Time::Local;
+
 use DivinumOfficium::Scripting qw(
   dispatch_script_function
   parse_script_arguments
