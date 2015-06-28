@@ -614,7 +614,6 @@ sub days_to_date {
 # returns the number of days from the epoch 01-01-1070
 sub date_to_days {
   my ($d, $m, $y) = @_;  
-  if ($y > 1970 && $y < 2038) {floor(timelocal(0,0,12,$d,$m,$y) / 60*60*24);}
 
   my $yc = floor($y / 100);
   my $c =20;
