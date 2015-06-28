@@ -172,7 +172,7 @@ sub generate_rank_line
 
 # *** canonicalise_tag
 # Put tags -- i.e. null-valued fields -- into a canonical form: lowercase,
-# trimmed and with single spaces for all internal whitespace.
+# trimmed, tr/j/i/ and with single spaces for all internal whitespace.
 sub canonicalise_tag
 {
   local $_ = lc(shift);
@@ -181,6 +181,7 @@ sub canonicalise_tag
   s/\s+/ /g;
   s/\N{U+00E6}/ae/g;
   s/\N{U+0153}/oe/g;
+  tr/j/i/;
 
   return $_;
 }
