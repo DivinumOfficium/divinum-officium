@@ -40,6 +40,60 @@ is(julian_ordinal_date(12, 31, 2000), 365 * 1500 + 366 * 500,
 is(gregorian_ordinal_date(12, 31, 2000), 365 * (1500 + 13) + 366 * (500 - 13),
   'Gregorian day-count at the end of 2000');
 
+
+# Make sure that the date_to_days wrapper around the DivinumOfficium::Time
+# functions behaves in the same way as the old implementation.
+
+print "# date_to_days. Months are zero-based here.\n";
+
+require 'horas/horascommon.pl';
+
+# Original implementation of date_to_days().
+sub old_date_to_days {
+  my ($d, $m, $y) = @_;
+
+  my $yc = floor($y / 100);
+  my $c =20;
+  my $ret = 10957;
+  my $add;
+  if ($y < 2000) {
+    while ($c > $yc) {$c--; $add = (($c % 4) == 0) ? 36525 : 36524; $ret -= $add;}
+ } else {
+   while ($c < $yc) {$add = (($c % 4) == 0) ? 36525 : 36524; $ret += $add; $c++;}
+ }
+ $add = 4 * 365;
+ if (($yc % 4) == 0) {$add += 1;}
+ $yc *= 100;
+
+ while ($yc < ($y - ($y % 4))) {$ret += $add; $add = 4 * 365 + 1; $yc += 4;}
+ $add = 366;
+ if (($yc % 100) == 0 && ($yc % 400) > 0) {$add = 365;}
+ while ($yc < $y) {$ret += $add; $add = 365; $yc++;}
+
+ my @months = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+ if (($y % 4) == 0) {$months[1] = 29;} else {$months[1] = 28;}
+ if (($y % 100) == 0 && ($y % 400) > 0) {$months[1] = 28;}
+ $c = 0;
+ while ($c < $m) {$ret += $months[$c]; $c++;}
+ $ret += ($d -1);
+ if ($ret < -141427) { error("Date before the Gregorian Calendar!");}
+ return $ret
+}
+
+
+# Check some dates. The old implementation doesn't support Julian dates.
+foreach my $date_ref (
+  # [$day, $month - 1, $year]
+  [15, 10 - 1, 1582],
+  [29, 2 - 1, 1600],
+  [1, 3 - 1, 1600],
+  [1, 3 - 1, 1700],
+  [31, 12 - 1, 2000],
+)
+{
+  is(date_to_days(@$date_ref), old_date_to_days(@$date_ref), "dtd(@$date_ref)");
+}
+
 done_testing();
 
 

@@ -17,6 +17,8 @@ use DivinumOfficium::Scripting qw(
   parse_script_arguments
 );
 use DivinumOfficium::Propers;
+use DivinumOfficium::Calendar::Definitions;
+use DivinumOfficium::Time qw(gregorian_ordinal_date);
 
 my @lines;
 my $a = 4;
@@ -610,63 +612,20 @@ sub days_to_date {
    return @d;
 }
 
+
 #*** date_to_days($day, $month-1, $year)
-# returns the number of days from the epoch 01-01-1070
-sub date_to_days {
-  my ($d, $m, $y) = @_;  
+# returns the number of days from the epoch 01-01-1970
+{
+  my $dtd_origin = gregorian_ordinal_date(1, 1, 1970);
 
-  my $yc = floor($y / 100);
-  my $c =20;
-  my $ret = 10957;
-  my $add;
-  if ($y < 2000) {
-    while ($c > $yc) {$c--; $add = (($c % 4) == 0) ? 36525 : 36524; $ret -= $add;}
- } else { 
-   while ($c < $yc) {$add = (($c % 4) == 0) ? 36525 : 36524; $ret += $add; $c++;}
- } 
- $add = 4 * 365;
- if (($yc % 4) == 0) {$add += 1;}
- $yc *= 100;
-
- while ($yc < ($y - ($y % 4))) {$ret += $add; $add = 4 * 365 + 1; $yc += 4;}   
- $add = 366; 
- if (($yc % 100) == 0 && ($yc % 400) > 0) {$add = 365;} 
- while ($yc < $y) {$ret += $add; $add = 365; $yc++;}
-
- my @months = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
- if (($y % 4) == 0) {$months[1] = 29;} else {$months[1] = 28;}
- if (($y % 100) == 0 && ($y % 400) > 0) {$months[1] = 28;}
- $c = 0;
- while ($c < $m) {$ret += $months[$c]; $c++;}
- $ret += ($d -1); 
- if ($ret < -141427) { error("Date before the Gregorian Calendar!");}
- return $ret
+  sub date_to_days
+  {
+    my ($day, $month, $year) = @_;
+    $month++;
+    return gregorian_ordinal_date($month, $day, $year) - $dtd_origin;
+  }
 }
 
-#*** date_to_days1($day, $month-1, $year)
-# returns the number of days from the epoch 01-01-1070
-sub date_to_days1 {
-  my ($d, $m, $y) = @_; 
-  if ($y > 1970 && $y < 2038) {floor(timelocal(0,0,12,$d,$m,$y) / 60*60*24);}
-  
-  #my $dt = DateTime->new(year=>$y, month=>$m+1, day=>$d, hour=>6);
-  #my $days = $dt->delta_days(DateTime->new(year=>1970, month=>1, day=>1))->in_units('days');
-  #if ($dt->year() < 1970) {$days = -$days;}
-  return $days;
-}
-
-#*** days_to_date1($days)
-# returns the ($sec, $min, $hour, $day, $month-1, $year-1900, $wday, $yday, 0) array from the number of days from 01-01-1970 
-sub days_to_date1 {
-  my $days = shift;
-  if ($days > 0 && $days  < 24837) {return localtime($days * 60*60*24 + 12*60*60);}
-
-
-  #my $dt = DateTime->new(year=>1970, month=>1, day=>1)->add(days=>$days);
-  #my @d = ($dt->sec(), $dt->min(), $dt->hour(), $dt->day(), $dt->month()-1,$dt->year()-1900, 
-  #  ($dt->wday() % 7), $dt->doy(), 0);
-  return @d;
-}
 
 #*** nooctnat()
 # returns 1 for 1960 not Christmas Octave days
