@@ -1579,7 +1579,6 @@ sub jtoi
     foreach ( @parts )
     {
         next if /^</;
-        s/([aeiou])u([aeiou])/$1v$2/g;
         next if $version !~ /1960/;
         s/j/i/g;
         s/J/I/g;
