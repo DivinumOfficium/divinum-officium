@@ -1576,13 +1576,15 @@ sub jtoi
     my $t = shift;
     # but not in html tags!
     my @parts = split(/(<[^<>]*>)/,$t);
+    my $replace_j = (our $version ~= /1960/);
     foreach ( @parts )
     {
         next if /^</;
-        next if $version !~ /1960/;
-        s/j/i/g;
-        s/J/I/g;
-        s/H\-Iesu/H-Jesu/g;
+        if ($replace_j)
+        {
+          tr/Jj/Ii/;
+          s/H\-Iesu/H-Jesu/g;
+        }
     }
     $t = join('', @parts);
     return $t;
