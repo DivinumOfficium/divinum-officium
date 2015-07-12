@@ -1580,7 +1580,6 @@ sub jtoi
     {
         next if /^</;
         s/([aeiou])u([aeiou])/$1v$2/g;
-        s/V([bcdfghklmnpqrstvwxyz])/U$1/g;
         s/Qv/Qu/g;
         s/qv/qu/g;
         next if $version !~ /1960/;
