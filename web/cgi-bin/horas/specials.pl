@@ -1729,7 +1729,7 @@ sub setbuild {
   my $comment = shift; 
 
   $source = $file;
-  if ($source =~ /\//) {$source = $`;}
+  if ($source =~ /(.*?)\//s) {$source = $1;}
   if ($comment =~ /ord/i) {$comment = setfont($redfont, $comment);}
   else {$comment = ",,,$comment";}
   $buildscript .= "$comment: $source $name\n";	   
@@ -1775,7 +1775,7 @@ sub doxology {
   }
   
   if (!$hymn) {return ($dox, $dname);}
-  if ($dox && $hymn =~ /\n\s*\*.*?[AÁ]men/si) {$hymn = "$`\n$dox";} 
+  if ($dox && $hymn =~ /(.*?)\n\s*\*.*?[AÁ]men/si) {$hymn = "$1\n$dox";} 
   return $hymn;
 }
 
