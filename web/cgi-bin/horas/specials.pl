@@ -210,11 +210,11 @@ sub specials {
        my $name = minor_getname();	
        my $capit = $capit{$name};	  
        my $resp = '';  
-       if ($capit !~ /\_\nR\.br. /i) {
+       if ($capit !~ /\_\nR\.br. (.*)/is) {
          $resp = $capit{"Responsory $name"};
          $capit =~ s/\s*$//;
          $capit .= "\n_\n$resp"; 
-       } else {$resp = "R.br. $'";} 
+       } else {$resp = "R.br. $1";}
        my @capit = split("\n", $capit);	
        
        $comment = ($name =~ /(Dominica|Feria)/i) ? 5 : 1;
@@ -254,8 +254,8 @@ sub specials {
       if (!columnsel($lang) && exists($translate{$lang}{Hymnus})) {$hymntrans = $translate{$lang}{Hymnus};}
                                
 	  my $hymn = '';	
-      if ($capit =~ /!H[iy]mn/i) {
-         $hymn = "$'";
+      if ($capit =~ /!H[iy]mn(.*)/is) {
+         $hymn = $1;
          $hymn =~ s/^[\.\s]*//; 
       } else {	 
 	    if ($name =~ /Day0 Laudes/i && ($dayname[0] =~ /Epi[2-6]/ || $dayname[0] =~ /Quadp/i ||
