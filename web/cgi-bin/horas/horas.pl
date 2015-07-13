@@ -850,7 +850,7 @@ sub translate {
 
   my $n = $name;             
   my $prefix = '';
-  if ($n =~ s/(\$|\&)//) {$prefix = $&;}
+  if ($n =~ s/(\$|\&)//) {$prefix = $1;}
   $n =~ s/^\n*//;
   $n =~ s/\n*$//; 
   $n =~ s/\_/ /g;            
@@ -959,8 +959,8 @@ sub canticum : ScriptFunc {
     $w[0] =~ s/\!//;  
     $w .= setfont($redfont, shift(@w)) . settone(2) . "\n"; 
     foreach $item (@w) {
-      if ($item =~ /^([0-9]+\:)*([0-9]+) /) {
-        my $rest = $';
+      if ($item =~ /^([0-9]+\:)*([0-9]+) (.*)/) {
+        my $rest = $3;
         my $num = "$1$2";
         $item = setfont($smallfont, $num) . " $rest";   
       }
@@ -1176,7 +1176,7 @@ sub setasterisk {
   my $line = shift;
   $line =~ s/\s*$//;  
   
-  if ($line =~ /\*/ && length($') > 9) {return $line;}
+  if ($line =~ /\*(.*)/ && length($1) > 9) {return $line;}
   
   my $lp2 = (length($line) > 64) ? 24 : (length($line) < 24) ? 6 : 12;
   my $t = '';
