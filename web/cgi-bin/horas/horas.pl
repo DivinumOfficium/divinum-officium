@@ -417,8 +417,8 @@ sub psalm : ScriptFunc {
   }
 
   my $nogloria = 0; 
-  if ($num =~ /^-/) {
-    $num = $';
+  if ($num =~ /^-(.*)/) {
+    $num = $1;
     if (($version =~ /Trident/i && $num =~ /(62|148|149)/) || 
       ($version =~ /Monastic/i && $num =~ /115/)) {$nogloria = 1;}
   }		  
@@ -509,15 +509,18 @@ sub psalm : ScriptFunc {
       if ($v < $v1) {next;}
       if ($v > $v2) {last;}
       $lnum = '';
-	  if ($line =~ /^([0-9]*[\:]*[0-9]+)/) {$lnum = setfont($smallfont, $1); $line = $';}  
+      if ($line =~ /^([0-9]*[\:]*[0-9]+)(.*)/) {
+        $lnum = setfont($smallfont, $1);
+        $line = $2;
+      }
 	  
 
       my $rest;
-      if ($line =~ /(\(.*?\))/) {
-	    $rest = $';
-	    $before = $`;
-        $this = $1;
-        if ($before =~ /^\s*([a-z])/i) {$before = uc($1) . $';}
+      if ($line =~ /(.*?)(\(.*?\))(.*)/) {
+        $rest = $3;
+        $before = $1;
+        $this = $2;
+        $before =~ s/^\s*([a-z])/uc($1)/ei;
         $line = $before . setfont($smallfont,($this));
       }	else {$rest = $line; $line = '';}
 	  
@@ -545,7 +548,7 @@ sub psalm : ScriptFunc {
 
       if ($lang =~ /magyar/i) {$rest = setasterisk($rest);}
 
-      if ($rest =~ /^\s*([a-z])/i) {$rest = uc($1) . $';}
+      $rest =~ s/^\s*([a-z])/uc($1)/ei;
       
       $t .= "\n$lnum $line $rest";       
     }
