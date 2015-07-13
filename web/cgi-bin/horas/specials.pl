@@ -1068,9 +1068,9 @@ sub oratio
 
     #* deletes added commemoratio
     if (($w =~ /!commemoratio/i && $hora !~ /(laudes|vespera)/i) ||
-    ($hora =~ /laudes/i && $w =~ /!commemoratio/i && $w =~ /(precedenti|sequenti)/i)) {
-    $w = $`; 
-    $w =~ s/\s*_$\s*//;  
+    ($hora =~ /laudes/i && $w =~ /!commemoratio/i && $w =~ /(.*?)(precedenti|sequenti)/is)) {
+      $w = $1;
+      $w =~ s/\s*_$\s*//;
     }
 
     if (!$w) {$w = 'Oratio missing';}
@@ -1096,8 +1096,8 @@ sub oratio
 
     if ($hora =~ /(Laudes|Vespera)/i && $winner{Rule} =~ /Sub unica conc/i) {
     if ($version !~ /1960/) {
-      if ($w =~ /\n\$Per .*?\s*$/) {$addconclusio = $&; $w = $`;}
-      if ($w =~ /\n\$Qui .*?\s*$/) {$addconclusio = $&; $w = $`;}
+      if ($w =~ /(.*?)(\n\$Per .*?\s*)$/s) {$addconclusio = $2; $w = $1;}
+      if ($w =~ /(.*?)(\n\$Qui .*?\s*)$/s) {$addconclusio = $2; $w = $1;}
     } else {$w =~ s/\$(Per|Qui) .*?\n//;}
     }
 
