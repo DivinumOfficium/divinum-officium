@@ -183,9 +183,9 @@ sub resolve_refs {
 
 
     #red prefix
-	  if ($line =~ /^\s*(R\.br|R\.|V\.|Ant\.|Benedictio\.* |Absolutio\.* )/) {
-   	    my $h = $1;
-        my $l = $';
+    if ($line =~ /^\s*(R\.br|R\.|V\.|Ant\.|Benedictio\.* |Absolutio\.* )(.*)/) {
+      my $h = $1;
+      my $l = $2;
         if ($h =~ /(Benedictio|Absolutio)/) {	 
 	      my $str = $1;		   
           $str = translate($str, $lang);
@@ -194,15 +194,15 @@ sub resolve_refs {
         $line = setfont($redfont, $h) . $l;
       }   
     
-	  #small omitted title
-	  if ($line =~ /^\s*\!\!\!/) {
-	    $l = $';
-		  $line = setfont($smallblack, $l);
-	  }
+    #small omitted title
+    if ($line =~ /^\s*\!\!\!(.*)/) {
+      $l = $1;
+      $line = setfont($smallblack, $l);
+    }
 	  
-	  #large chapter title
-	  elsif ($line =~ /^\s*\!\!/) {  
-      my $l = $';              
+    #large chapter title
+    elsif ($line =~ /^\s*\!\!(.*)/) {  
+      my $l = $1;
       my $suffix = '';
       if ($l =~ /\{.*?\}/) {
         $l =~ s/(\{.*?\})//; 
@@ -213,27 +213,27 @@ sub resolve_refs {
 	  if ($expand =~ /skeleton/i) {$line .= linkcode1();}
     } 
 	
-	#red line
-	elsif ($line =~ /^\s*\!/) {
-      $l = $';
+    #red line
+    elsif ($line =~ /^\s*\!(.*)/) {
+      $l = $1;
       $line = setfont($redfont, $l);
     }
-    if ($line =~ /\/:(.*?):\//) {$line = $` .setfont($smallfont, $1) . $';} 
+    $line =~ s{/:(.*?):/}{setfont($smallfont, $1)}e;
 
-	  #first letter red 
-	  if ($line =~ /^\s*r\.\s*/) {
-	    $line = $';
-	    $line = setfont($largefont, substr($line, 0, 1)) . substr($line, 1);
-	  }
+    #first letter red 
+    if ($line =~ /^\s*r\.\s*(.*)/) {
+      $line = $1;
+      $line = setfont($largefont, substr($line, 0, 1)) . substr($line, 1);
+    }
 	
-	  # first letter initial
-	  if ($line =~ /^(\s*)v\.\s*/ || $line =~ /(\{\:.*?\:\}\s*)v\.\s*/) {
-	    my $prev = $1;
-        $line = $';
-	    $line = $prev . setfont($initiale, substr($line, 0, 1)) . substr($line, 1);
-	  }
+    # first letter initial
+    if ($line =~ /^(\s*)v\.\s*(.*)/ || $line =~ /(\{\:.*?\:\}\s*)v\.\s*(.*)/) {
+      my $prev = $1;
+      $line = $2;
+      $line = $prev . setfont($initiale, substr($line, 0, 1)) . substr($line, 1);
+    }
 
-  #connect lines marked by tilde, or but linebrak
+    #connect lines marked by tilde, or but linebrak
     if ($line =~ /~\s*$/) {
       $prelude .= substr($line, 0, $-[0]) . ' ';
     }
