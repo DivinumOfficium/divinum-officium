@@ -768,15 +768,15 @@ sub setlink
     $name =~ s/[\#\$\&]//g;                             
 
     my $after = '';
-    if ( !$Tk && $name =~ /\<input/i )
+    if ( !$Tk && $name =~ /(.*?)(<input.*)/i )
     {
-        $name = $`;
-        $after = "$&$'";
+        $name = $1;
+        $after = $2;
     }
-    if ( $Tk && $name =~ /\{\^/ )
+    if ( $Tk && $name =~ /(.*?)({\^.*)/ )
     {
-        $name = $`;
-        $after = "$&$'";
+        $name = $1;
+        $after = $2;
     } 
 
     if ( $disabled || $smallflag )
