@@ -746,7 +746,7 @@ sub psalmi_minor {
   
   } 
 
-  if ($ant =~ /\;\;/) {$ant = $`;}
+  if ($ant =~ /(.*?)\;\;/s) {$ant = $1;}
   if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;}
   if ($ant) {$ant = "Ant. $ant";}
 
@@ -895,7 +895,7 @@ sub psalmi_major {
   my $lim = ($version =~ /monastic/i && $hora =~ /Vespera/i) ? 4 : 5;
   if (@antiphones) {for ($i = 0; $i < $lim; $i++) { 
     my $aflag = 0;
-    $p = ($p[$i] =~ /\;\;/) ? $' : 'missing';  
+    $p = ($p[$i] =~ /;;(.*)/s) ? $1 : 'missing';
     if ($i == 4 && $hora =~ /vespera/i && !$antecapitulum && $rule !~ /no Psalm5/i &&
       ($rule =~ /Psalm5 Vespera=([0-9]+)/i || $commune{Rule} =~ /Psalm5 Vespera=([0-9]+)/i)) {
 		  $p = $1;  
@@ -907,7 +907,7 @@ sub psalmi_major {
 	     $aflag = 1;
     }	   
     $psalmi[$i] = ($antiphones[$i] =~ /\;\;[0-9\;\n]+/ && !$aflag) ? $antiphones[$i] :
-	  ($antiphones[$i] =~ /\;\;/) ? "$`;;$p" : "$antiphones[$i];;$p";;  
+	  ($antiphones[$i] =~ /(.*?);;/s) ? "$1;;$p" : "$antiphones[$i];;$p";;
   }}   
   
   $prefix = '';
