@@ -1437,7 +1437,7 @@ sub vigilia_commemoratio {
   elsif (exists($w{'Oratio Vigilia'})) {$w = $w{'Oratio Vigilia'};} 
   if (!$w) {return '';}
   my $c = "!Commemoratio Vigilia\n";
-  if ($w =~ /\!.*?\n/) {$c = $&; $w = $';}
+  if ($w =~ /(\!.*?\n)(.*)/s) {$c = $1; $w = $2;}
 
   my %p = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};  
   my $a = $p{"Day$dayofweek Ant 2"};
@@ -1813,12 +1813,18 @@ sub getrefs {
   my $flag = 0;
   my %s = {};  
                          
-  while ($w =~ /\@([a-z0-9\/\-]+?)\:([a-z0-9 ]*)(?::(.*))?/i) {
-    $before = $`;
-    $file = $1; 
-    $item = $2;
-    $after = $';
-    my $substitutions = $3;
+  while ($w =~ /
+      (.*?)               # Prelude
+      \@([a-z0-9\/\-]+?)  # Filename
+      \:([a-z0-9 ]*)      # Item
+      (?::(.*))?          # Substitutions
+      (.*)                # Sequel
+    /isx) {
+    $before = $1;
+    $file = $2; 
+    $item = $3;
+    $after = $5;
+    my $substitutions = $4;
     $item =~ s/\s*$//;
     
     if ($file =~ /^feria$/i) {
@@ -1875,7 +1881,7 @@ sub getrefs {
         if ($item =~ /Gregem/i)
         {
           $o = papal_prayer($lang, $plural, $class, $name);
-          if ($after =~ /!Commem/i) {$after = "$&$'"} else {$after = '';}
+          if ($after =~ /(!Commem.*)/is) {$after = $1;} else {$after = '';}
           $o = "\$Oremus\n" . $o;
         }
         
