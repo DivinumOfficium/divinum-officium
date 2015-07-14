@@ -101,7 +101,7 @@ sub getname {
     my $str = $sundaytable[$i];
     if ($str && $str =~ /^$abbr\=(.+)/) {
 	  $str = $1;
-	  if ($str =~ /^\s*\*/) {return "$abbr = $'";}
+	  if ($str =~ /^\s*\*(.*)/s) {return "$abbr = $1";}
 	  if ($d[6] == 0) {return "$abbr = Dominica $str";}
 	  if ($str =~ /infra/i) {return "$abbr = $days[$dayofweek] $str";}
 	  return "$abbr=$days[$dayofweek] infra Hebdomodam $str";
