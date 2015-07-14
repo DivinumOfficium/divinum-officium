@@ -82,7 +82,9 @@ sub invitatorium {
       $item = "$item\n";
       if ($item =~ /\$ant2/i) {$item = "$ant2";}
       elsif ($item =~ /\$ant/i) {$item = "$ant";}  
-      elsif ($item =~ /\(\*(.*?)\*(.*?)\)/) {$item = $` . setfont($smallfont, "($1) ") . $2 . $';}
+      else {
+        $item =~ s/\(\*(.*?)\*(.*?)\)/setfont($smallfont, "($1) ") . $2/e;
+      }
 
       if ($dayname[0] =~ /Quad[56]/i && $winner !~ /Sancti/i && $rule !~ /Gloria responsory/i)
         {$item =~ s/\&Gloria/\&Gloria2/i;}
