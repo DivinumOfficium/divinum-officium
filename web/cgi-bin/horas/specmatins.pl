@@ -920,7 +920,7 @@ sub addtedeum {
   if ($month == 12 && $day == 24) {return $w;} 
   if (($rank >= 2 && $dayname[1] !~ /(feria|vigilia)/i && $rule !~ /Responsory9/i) || 
       ($rule =~ /Feria Te Deum/i || $winner =~ /Sancti/i  || $winner =~ /C10/i)) {
-    my $before =  ($w =~ /(\nR. |\n\@)/) ? $` : $w;
+    my $before =  ($w =~ /(.*?)(\nR. |\n\@)/s) ? $1 : $w;
     $before =~ s/\_$//;
     $before =~ s/\n*$//;
     $w = "$before" . "\n\&teDeum\n";	
@@ -1037,7 +1037,7 @@ sub responsory_gloria {
   my $num = shift;    
 
   $prev = $w;        
-  if ($w =~ /\&Gloria/i) {$prev = $`;}
+  if ($w =~ /(.*?)\&Gloria/is) {$prev = $1;}
   $prev =~ s/\s*$//gm;
 
   if ($w =~ /\&teDeum/i || ($num == 1 && $dayname[0] =~ /Adv1|Pasc0/i && $dayofweek == 0) || $rule =~ /requiem Gloria/i) {return $w;}
