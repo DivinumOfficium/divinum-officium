@@ -60,7 +60,7 @@ sub psalmi_matutinum_monastic {
     my $i;
     for ($i = $start; $i < 14; $i++) {
       my $p = $p[$i];
-	  if ($psalmi[$i] =~ /;;/) {$p = ";;$'";}
+	  if ($psalmi[$i] =~ /;;(.*)/s) {$p = ";;$1";}
 	  if ($i == 0 || $i == 8) {$p = "Alleluia, * alleluia, alleluia$p";}
     $psalmi[$i] = $p;
     }
@@ -84,10 +84,10 @@ sub psalmi_matutinum_monastic {
   if ($dayofweek == 5 && $psalmi[4] =~ /92!75/) {
     if (exists($winner{'Ant Laudes'})) {
 	  $psalmi[4] =~ s/92!75/75/;
-	  if ($psalmi[12] =~ /!/) {$psalmi[12] = $';}
+	  if ($psalmi[12] =~ /!(.*)/s) {$psalmi[12] = $1;}
 	} else {
 	  $psalmi[4] =~ s/92!75/92/;
-	  if ($psalmi[12] =~ /!/) {$psalmi[12] = $`;}
+	  if ($psalmi[12] =~ /!(.*)/s) {$psalmi[12] = $1;}
     }
   }
 
@@ -143,9 +143,9 @@ sub psalmi_matutinum_monastic {
     push (@s, "\n");   
     
 	push (@s, '!Nocturn III.');	
-	if ($psalmi[16] =~ /;;/) {
-	  my $ant = $`;
-	  my @c = split(';', $');
+	if ($psalmi[16] =~ /(.*?);;(.*)/s) {
+	  my $ant = $1;
+	  my @c = split(';', $2);
 	  push (@s, "Ant. $ant");
 	  push (@s, "\&psalm($c[0])\n");
 	  push (@s, "\n");
@@ -165,10 +165,10 @@ sub psalmi_matutinum_monastic {
       my @w = split("\n", $w{LectioE});
       $w = '';
       foreach $item (@w) {
-        if ($item =~ /^([0-9:]+)\s+/) {
-        my $rest = $';
+        if ($item =~ /^([0-9:]+)\s+(.*)/s) {
+        my $rest = $2;
         my $num = $1;
-        if ($rest =~ /^\s*([a-z])/i) {$rest = uc($1) . $';}
+        if ($rest =~ /^\s*([a-z])(.*)/is) {$rest = uc($1) . $2;}
           $item = setfont($smallfont, $num) . " $rest";   
         }
         $w .= "$item\n";	
@@ -327,8 +327,8 @@ sub regula : ScriptFunc {
   $fname = checkfile($lang, "Regula/$fname.txt");   
   if (@a = do_read($fname)) {
     foreach $line (@a) {
-      if ($line =~ /^.*?\#/) {$line = $';}
-      if ($line =~ /^\s*$/) {$line = "_$line";}
+      $line =~ s/^.*?\#//;
+      $line =~ s/^(\s*)$/_$1/;
 	    $t .= "$line\n";
     }
   }
@@ -337,8 +337,8 @@ sub regula : ScriptFunc {
     $fname = checkfile($lang, "Regula/02-24.txt");  
     if (@a = do_read($fname)) {
       foreach $line (@a) {
-        if ($line =~ /^.*?\#/) {$line = $';}
-        if ($line =~ /^\s*$/) {$line = "_$line";}
+        $line =~ s/^.*?\#//;
+        $line =~ s/^(\s*)$/_$1/;
 	      $t .= "$line\n";
       }
     }
