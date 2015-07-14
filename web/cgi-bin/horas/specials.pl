@@ -1067,9 +1067,11 @@ sub oratio
     }
 
     #* deletes added commemoratio
-    if (($w =~ /!commemoratio/i && $hora !~ /(laudes|vespera)/i) ||
-    ($hora =~ /laudes/i && $w =~ /!commemoratio/i && $w =~ /(.*?)(precedenti|sequenti)/is)) {
-      $w = $1;
+    if (($w =~ /(?<prelude>.*?)!commemoratio/is &&
+          $hora !~ /(laudes|vespera)/i) ||
+        ($hora =~ /laudes/i && $w =~ /!commemoratio/i &&
+          $w =~ /(?<prelude>.*?)(precedenti|sequenti)/is)) {
+      $w = $+{prelude};
       $w =~ s/\s*_$\s*//;
     }
 
