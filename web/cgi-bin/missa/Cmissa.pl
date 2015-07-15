@@ -115,8 +115,8 @@ if (!$command ||$command =~ /^Sancta/i) {$command = 'praySanctaMissa';}
     
 #*** handle different actions
 #after setup
-if ($command =~ /change/i ) { 
- $command = $';                 
+if ($command =~ /change(.*)/is ) { 
+ $command = $1;
  getsetupvalue($command);   
  if ($command =~ /parameters/) {setcookies('missapc', 'parameters');}
 }    
@@ -244,9 +244,9 @@ PrintTag
 
 }
 
-if ($command =~ /setup/i) {	  
+if ($command =~ /setup(.*)/is) {	  
   $pmode = 'setup';
-  $command = $';
+  $command = $1;
   setuptable($command);
 
 } elsif ($command =~ /pray/) {
@@ -358,7 +358,7 @@ sub headline {
     "grey";
   $comment = '';
   $headline = setheadline();
-	if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
+  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
   print "<P ALIGN=CENTER>" .
     "<FONT COLOR=$daycolor>$headline</FONT>" .
     "<BR>$comment</P>\n";
