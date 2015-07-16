@@ -82,7 +82,9 @@ sub invitatorium {
       $item = "$item\n";
       if ($item =~ /\$ant2/i) {$item = "$ant2";}
       elsif ($item =~ /\$ant/i) {$item = "$ant";}  
-      elsif ($item =~ /\(\*(.*?)\*(.*?)\)/) {$item = $` . setfont($smallfont, "($1) ") . $2 . $';}
+      else {
+        $item =~ s/\(\*(.*?)\*(.*?)\)/setfont($smallfont, "($1) ") . $2/e;
+      }
 
       if ($dayname[0] =~ /Quad[56]/i && $winner !~ /Sancti/i && $rule !~ /Gloria responsory/i)
         {$item =~ s/\&Gloria/\&Gloria2/i;}
@@ -603,7 +605,7 @@ sub lectio : ScriptFunc {
 	  $w{"Lectio$num"} = $c{"Lectio$num"};
     
   if ($num == 2 && $votive !~ /(C9|Defunctorum)/i && ($dayname[1] !~ /feria/i || $commemoratio)) {  
-      if ($w{Lectio2} =~ /\_/) {$w{Lectio2} = $`;}  
+      if ($w{Lectio2} =~ /(.*?)\_/s) {$w{Lectio2} = $1;}
       my $w1 = $c{"Lectio3"}; 
       $w{Lectio2} .= $w1;
     }
@@ -659,7 +661,7 @@ sub lectio : ScriptFunc {
 	  if ($w && $num == 4) {setbuild2("Lectio3 ex commemoratio");}	 
   } 
   if (contract_scripture($num)) {
-      if ($w =~ /\_/) {$w = $`;}
+      if ($w =~ /(.*?)\_/s) {$w = $1;}
       my $w1 = $w{'Lectio3'}; 
       #$w1 =~ s/^\!.*?\n//;
       $w .= $w1;
@@ -752,7 +754,7 @@ sub lectio : ScriptFunc {
 		for ($ji = 4; $ji < 7; $ji++) {	 
 		  my $w1 = $w{"Lectio$ji"};
           if (!$w1 || ($ji > 4 && $w1 =~ /\!/)) {last;}
-          if ($wc =~ /\_/) {$wc = $`;}
+          if ($wc =~ /(.*?)\_/s) {$wc = $1;}
           $wc .= $w1;
 	    }
 	  }	   
@@ -783,7 +785,7 @@ sub lectio : ScriptFunc {
       while ($i < 7) {
         my $w1 = $w{"Lectio$i"};
         if (!$w1 || $w1 =~ /\!/) {last;}
-        if ($w =~ /\_/) {$w = $`;}
+        if ($w =~ /(.*?)\_/s) {$w = $1;}
         $w .= $w1;
         $i++;
       }
@@ -810,7 +812,7 @@ sub lectio : ScriptFunc {
          $s = (columnsel($lang)) ? $scriptura{"Responsory$na"} : $scriptura2{"Responsory$na"};
        } else {
 	     $s = (columnsel($lang)) ? $scriptura{"Lectio$na"} : $scriptura2{"Lectio$na"}; 
-	     if ($s =~ /\n\_/) {$s = "_$'";}
+	     if ($s =~ /\n\_(.*?)/s) {$s = "_$1";}
 	     else {$s = '';}
 	   } 
 
@@ -855,12 +857,12 @@ sub lectio : ScriptFunc {
   if ($rule !~ /Limit.*?Benedictio/i) {   
     my $before = '';
     my $rest = $w;            
-    $rest =~ s/[\n\_ ]*$//gs;	
-    while ($rest =~ /_/) {$before .= "$`_"; $rest = $';}	
+    $rest =~ s/[\n\_ ]*$//gs;
+    while ($rest =~ /(.*?)_(.*)/s) {$before .= "$1_"; $rest = $2;}
 	  if (!$before) {$before = $w; $rest = '';}
 	  $before =~ s/[\n\_ ~]*$//gs;	
-    if ($before =~ /\&teDeum/) {$before = $`; $rest = "&teDeum\n";} 
-    elsif ($rest =~ /\&teDeum/) {$before .= "\n_\n$`"; $rest = "&teDeum\n";};       
+    if ($before =~ /(.*?)\&teDeum/s) {$before = $1; $rest = "&teDeum\n";}
+    elsif ($rest =~ /(.*?)\&teDeum/s) {$before .= "\n_\n$1"; $rest = "&teDeum\n";};
 	  $w = "$before" . "\n$tuautem\n_\n$rest";	  
     
   }
@@ -873,10 +875,10 @@ sub lectio : ScriptFunc {
   my @w = split("\n", $w);
   $w = "";
   foreach $item (@w) {
-    if ($item =~ /^([0-9]+)\s+/) {
-      my $rest = $';
+    if ($item =~ /^([0-9]+)\s+(.*)/s) {
+      my $rest = $2;
       my $num = $1;
-      if ($rest =~ /^\s*([a-z])/i) {$rest = uc($1) . $';}
+      if ($rest =~ /^\s*([a-z])(.*)/is) {$rest = uc($1) . $2;}
       $item = setfont($smallfont, $num) . " $rest";   
     }
     $w .= "$item\n";	
@@ -888,23 +890,21 @@ sub lectio : ScriptFunc {
 
   #handle parentheses in English
   if ($lang =~ /(English|Magyar)/i) {  
-    my $after = $w;        
-    $w = '';
-    while ($after =~ /\((.*?[.,].*?)\)/g) { 
-      $after = $';  
-      $w .= $`;
-      my $this = $1;
-      if (length($this) < 20 || $this =~ /[0-9][.,]/) {$w .= setfont($smallfont, $this);}
-      else {$w .= "($1)";}
-    }
-    $w .= $after;
-    $after = $w;
-
+    $w =~ s/\((.*?[.,].*?)\)/parenthesised_text($1)/eg;
   }
 
   $w =~ s/\&Gloria/\&Gloria1/g;	   
   $w = replaceNdot($w, $lang);
   return $w;
+}
+
+
+sub parenthesised_text
+{
+  my $text = shift;
+  return setfont(our $smallfont, $text)
+    if (length($text) < 20 || $text =~ /[0-9][.,]/);
+  return "($text)";
 }
 
 #Te Deum instead of responsory                                      
@@ -920,7 +920,7 @@ sub addtedeum {
   if ($month == 12 && $day == 24) {return $w;} 
   if (($rank >= 2 && $dayname[1] !~ /(feria|vigilia)/i && $rule !~ /Responsory9/i) || 
       ($rule =~ /Feria Te Deum/i || $winner =~ /Sancti/i  || $winner =~ /C10/i)) {
-    my $before =  ($w =~ /(\nR. |\n\@)/) ? $` : $w;
+    my $before =  ($w =~ /(.*?)(\nR. |\n\@)/s) ? $1 : $w;
     $before =~ s/\_$//;
     $before =~ s/\n*$//;
     $w = "$before" . "\n\&teDeum\n";	
@@ -1037,7 +1037,7 @@ sub responsory_gloria {
   my $num = shift;    
 
   $prev = $w;        
-  if ($w =~ /\&Gloria/i) {$prev = $`;}
+  if ($w =~ /(.*?)\&Gloria/is) {$prev = $1;}
   $prev =~ s/\s*$//gm;
 
   if ($w =~ /\&teDeum/i || ($num == 1 && $dayname[0] =~ /Adv1|Pasc0/i && $dayofweek == 0) || $rule =~ /requiem Gloria/i) {return $w;}

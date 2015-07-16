@@ -101,7 +101,7 @@ sub getname {
     my $str = $sundaytable[$i];
     if ($str && $str =~ /^$abbr\=(.+)/) {
 	  $str = $1;
-	  if ($str =~ /^\s*\*/) {return "$abbr = $'";}
+	  if ($str =~ /^\s*\*(.*)/s) {return "$abbr = $1";}
 	  if ($d[6] == 0) {return "$abbr = Dominica $str";}
 	  if ($str =~ /infra/i) {return "$abbr = $days[$dayofweek] $str";}
 	  return "$abbr=$days[$dayofweek] infra Hebdomodam $str";
@@ -1576,17 +1576,15 @@ sub jtoi
     my $t = shift;
     # but not in html tags!
     my @parts = split(/(<[^<>]*>)/,$t);
+    my $replace_j = (our $version =~ /1960/);
     foreach ( @parts )
     {
         next if /^</;
-        s/([aeiou])u([aeiou])/$1v$2/g;
-        s/V([bcdfghklmnpqrstvwxyz])/U$1/g;
-        s/Qv/Qu/g;
-        s/qv/qu/g;
-        next if $version !~ /1960/;
-        s/j/i/g;
-        s/J/I/g;
-        s/H\-Iesu/H-Jesu/g;
+        if ($replace_j)
+        {
+          tr/Jj/Ii/;
+          s/H\-Iesu/H-Jesu/g;
+        }
     }
     $t = join('', @parts);
     return $t;
