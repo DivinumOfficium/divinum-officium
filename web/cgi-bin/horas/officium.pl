@@ -506,7 +506,7 @@ PrintTag
 #*** headline2($head) prints just two lines of header (for widget)
 sub headline2 {
   my $head = shift;
-  $headline =~ s{(!.*)}{<FONT SIZE=1>$1</FONT>}s;
+  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
   $comment =~ s/([\w]+)=([\w+-]+)/$1="$2"/g;
   print "<p><span style='text-align:center;color:$daycolor'>$headline<br/></span>";
   print "<span>$comment<BR/><BR/></span></p>";
@@ -515,7 +515,7 @@ sub headline2 {
 #*** headline($head) prints headline for main and pray
 sub headline {
   my $head = shift;
-  $headline =~ s{(!.*)}{<FONT SIZE=1>$1</FONT>}s;
+  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
   print << "PrintTag";
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>
