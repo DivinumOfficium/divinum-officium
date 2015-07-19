@@ -109,7 +109,8 @@ sub cmp_occurrence_1960
           ($$b{category} == VIGIL_OFFICE && $$b{rankord} == 1)
         )
       ) ||
-
+      # Our Lady on Saturday is omitted when it doesn't win.
+      $$a{calpoint} eq BVM_SATURDAY_CALPOINT ||
       # Non-privileged commemorations are omitted on Sundays and first-class days.
       (($$b{rankord} == 1 || $$b{category} == SUNDAY_OFFICE) && !$privileged));
 
@@ -212,7 +213,18 @@ sub cmp_occurrence_1960
   }
   else
   {
-    # IV. cl., which means commemorations and lesser ferias.
+    # IV. cl., which means commemorations, lesser ferias and our Lady on
+    # Saturday.
+
+    # BVM on Saturday always wins amongst IV.-cl. offices, and takes the place
+    # of the feria.
+    ($a, $b, $sign) = ($b, $a, -$sign)
+      if($$a{calpoint} eq BVM_SATURDAY_CALPOINT);
+    return resolution($sign,
+      $$a{category} == FERIAL_OFFICE ? OMIT_LOSER : COMMEMORATE_LOSER)
+      if($$b{calpoint} eq BVM_SATURDAY_CALPOINT);
+
+    # In the absence of BVM on Saturday, the feria wins.
     return resolution($sign, COMMEMORATE_LOSER)
       if($$b{category} == FERIAL_OFFICE);
   }
@@ -307,6 +319,8 @@ sub cmp_occurrence
         (($$b{rankord} == 1 && $$b{category} != OCTAVE_DAY_OFFICE) ||
           ($$b{category} == FERIAL_OFFICE && $$b{rankord} >= 3) ||
           ($$b{category} == SUNDAY_OFFICE && $$a{rankord} > 1))) ||
+      # The office of our Lady on Saturday is omitted if it doesn't win.
+      $$a{calpoint} eq BVM_SATURDAY_CALPOINT ||
       # Days within common octaves are omitted on doubles of
       # the I. or II. class.
       ($$a{category} == WITHIN_OCTAVE_OFFICE && $$a{octrank} == COMMON_OCTAVE &&
@@ -355,7 +369,7 @@ sub cmp_occurrence
     #   (Simple) greater feria >
     #   (Simple) vigil >
     #   Simple octave day >
-    #   TODO: [BVM on Saturday >]
+    #   BVM on Saturday >
     #   Simple (feast).
     my $synthsubrank_ref = sub
     {
@@ -376,7 +390,7 @@ sub cmp_occurrence
         $office_ref->{category} == FERIAL_OFFICE,
         $office_ref->{category} == VIGIL_OFFICE,
         $office_ref->{category} == OCTAVE_DAY_OFFICE,
-        # TODO: BVM on Satuday.
+        $office_ref->{calpoint} eq BVM_SATURDAY_CALPOINT,
         1, # The only remaining possibility is a simple feast.
       );
 
@@ -393,6 +407,10 @@ sub cmp_occurrence
     my $a_subrank = $synthsubrank_ref->($a);
     my $b_subrank = $synthsubrank_ref->($b);
     ($a, $b, $a_subrank, $b_subrank, $sign) = ($b, $a, $b_subrank, $a_subrank, -$sign) if($b_subrank > $a_subrank);
+
+    # The office of our Lady on Saturday is omitted if it doesn't win.
+    return resolution($sign, OMIT_LOSER)
+      if($a->{calpoint} eq BVM_SATURDAY_CALPOINT);
 
     return resolution($sign, COMMEMORATE_LOSER)
       unless($a_subrank == $b_subrank);
@@ -659,6 +677,9 @@ sub generate_calpoints
 
   # Temporal cycle, except for Christmas-Epiphany.
   push @calpoints, "$week-$day_of_week" if($week);
+
+  # Office of our Lady on Saturday.
+  push @calpoints, BVM_SATURDAY_CALPOINT if($day_of_week == 6);
 
   return @calpoints;
 }

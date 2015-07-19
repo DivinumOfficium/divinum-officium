@@ -23,6 +23,8 @@ BEGIN
     PARTICULAR_OFFICE UNIVERSAL_OFFICE
     TEMPORAL_OFFICE SANCTORAL_OFFICE
 
+    BVM_SATURDAY_CALPOINT
+
     office_category_string office_standing_string office_rite_string
     office_nobility_string office_octrank_string office_octrank_string_infra
   );
@@ -138,6 +140,8 @@ use constant
   TEMPORAL_OFFICE  => 0,
   SANCTORAL_OFFICE => 1
 };
+
+use constant BVM_SATURDAY_CALPOINT => 'SMariaeInSabbato';
 
 1;
 
