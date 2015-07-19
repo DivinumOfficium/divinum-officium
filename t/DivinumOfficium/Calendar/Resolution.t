@@ -193,7 +193,7 @@ sub divino_concurrence
       ['Dies octava simplex simplex'],
       ['Festum simplex'],
     ],
-    # [[SIMPLE_RITE, FESTAL_OFFICE]], BVM on Saturday. TODO.
+    [['Festum simplex', 'calpoint' => BVM_SATURDAY_CALPOINT]],
     [['Dies infra octavam communem semiduplex']],
     $infra_oct_priv,
     [['Festum semiduplex']],
@@ -212,16 +212,16 @@ sub divino_concurrence
 
   my @table = map {[split //]} (
     # TODO: BVM on Sat.
-    '4444444330',
-    '2244444454',
-    '2244444534',
-    '4444444334',
-    '4444445313',
-    '4444453313',
-    '4444533313',
-    '4445333113',
-    '4003333333',
-    '4003333113',
+    '40444444330',
+    '22244444454',
+    '22244444534',
+    '44444444334',
+    '44444445313',
+    '44444453313',
+    '44444533313',
+    '44445333113',
+    '40003333333',
+    '40003333113',
   );
 
   my @verifiers = (
