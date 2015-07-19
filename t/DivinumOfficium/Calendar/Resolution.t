@@ -36,7 +36,7 @@ sub divino_occurrence
   );
 
   my @col_descriptors = mock_descriptor_list($version,
-    # [[SIMPLE_RITE, FESTAL_OFFICE]], BVM on Saturday. TODO.
+    [['Festum simplex', 'calpoint' => BVM_SATURDAY_CALPOINT]],
     [['Dies octava simplex simplex']],
     # We take an Advent feria as the archetype of a greater non-privileged
     # feria, and test some Lenten special cases later.
@@ -74,17 +74,18 @@ sub divino_occurrence
   );
 
   my @table = map {[split //]} (
-    # TODO: BVM on Sat.
-    '1313333336586336',
-    '3313633336868366',
-    '3333433374440444',
-    '3333433744444444',
-    '3333437444444444',
-    '3333474444444444',
-    '3374444444220444',
-    '3244444444422000',
-    '7444444440420444',
-    '4444444444424444',
+    # N.B. Our Lady on Saturday (first column) is synthesised here, since the
+    # breviary regards the occurrence as impossible and has a bunch of zeroes.
+    '11313333336586336',
+    '13313633336868366',
+    '13333433374440444',
+    '13333433744444444',
+    '13333437444444444',
+    '13333474444444444',
+    '13374444444220444',
+    '13244444444422000',
+    '17444444440420444',
+    '44444444444424444',
   );
 
   my @verifiers = (
