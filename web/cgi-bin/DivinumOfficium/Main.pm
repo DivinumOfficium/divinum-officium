@@ -31,7 +31,7 @@ use DivinumOfficium::Common qw(
 use DivinumOfficium::Data qw(get_office_data);
 
 use DivinumOfficium::Calendar::Resolution qw(
-  resolve_occurrence
+  resolve_translation
   resolve_concurrence
   get_week
 );
@@ -57,13 +57,13 @@ sub vernaculars
 # will be cleaned up before being merged into trunk.
 sub initialise_hour
 {
-  my ($calendar_ref, $date, $hour, $version) = @_;
+  my ($calendar_ref, $date, $hour, $version, $transfer_cache_ref) = @_;
 
   my $vespers_or_compline = ($hour =~ /Vespera/i || $hour =~ /Completorium/i);
 
 
   # Get offices for the hour. If we only care about occurrence, we expand the
-  # entries returned by resolve_occurrence for uniformity with
+  # entries returned by resolve_translation for uniformity with
   # resolve_concurrence.
 
   my (@offices, $concurrence_resolution, $temporal_ref);
@@ -76,8 +76,11 @@ sub initialise_hour
   }
   else
   {
-    (my $offices_ref, $temporal_ref) =
-      resolve_occurrence($calendar_ref, $date, $version, MATINS_TO_NONE);
+    # List-context assignment to get first and only value.
+    (my $offices_temporal_pair_ref) =
+      resolve_translation($calendar_ref, $version, $date, 1,
+        $transfer_cache_ref);
+    (my $offices_ref, $temporal_ref) = @$offices_temporal_pair_ref;
     @offices = map {{office => $_, segment => MATINS_TO_NONE}} @$offices_ref;
   }
 
@@ -321,27 +324,37 @@ sub initialise_hour
 # precedence($date)
 # Temporary wrapper for &initialise_hour that mimics the interface of the
 # old &precedence in horascommon.pl. TODO: Remove.
-sub precedence
 {
-  no warnings 'once';
+  # We cache the intermediate results of previous translation calculations.
+  # This is a little bit spurious, and means we can't vhange $version, but it's
+  # tolerable for as long as precedence() exists.
+  my %transfer_cache;
 
-  my $date =
-    ($horas::votive =~ /hodie/ && !$horas::Hk) ?
-      horas::gettoday()
-      :
-      (
-        shift ||
-        (($horas::Tk || $horas::Hk) ? '' : horas::strictparam('date')) ||
+  my $calendar_ref;
+
+  sub precedence
+  {
+    no warnings 'once';
+
+    my $date =
+      ($horas::votive =~ /hodie/ && !$horas::Hk) ?
         horas::gettoday()
-      );
+        :
+        (
+          shift ||
+          (($horas::Tk || $horas::Hk) ? '' : horas::strictparam('date')) ||
+          horas::gettoday()
+        );
 
-  return initialise_hour(
-    load_calendar_file(
-      $horas::datafolder,
-      'Kalendaria/generalis.txt'),
-    $date,
-    $horas::hora,
-    $horas::version);
+    $calendar_ref //=
+      load_calendar_file($horas::datafolder, 'Kalendaria/generalis.txt');
+    return initialise_hour(
+      $calendar_ref,
+      $date,
+      $horas::hora,
+      $horas::version,
+      \%transfer_cache);
+  }
 }
 
 1;

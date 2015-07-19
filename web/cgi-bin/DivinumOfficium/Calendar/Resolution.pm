@@ -3,7 +3,7 @@ package DivinumOfficium::Calendar::Resolution;
 use strict;
 use warnings;
 
-use List::Util qw(first);
+use List::Util qw(first min);
 
 use DivinumOfficium::Calendar::Definitions;
 use DivinumOfficium::Calendar::Data qw(get_all_offices);
@@ -922,36 +922,79 @@ sub dates_mdy_equal
 }
 
 
+use constant TRANSLATION_CALC_LIMIT => 366;
 sub resolve_translation
 {
-  my ($calendar_ref, $date, $version) = @_;
-  my @date_mdy = split(/-/, $date);
+  my ($calendar_ref, $version, $start_date, $days_count, $cache_ref) = @_;
+  $days_count //= 1;
+  my @date_mdy = split(/-/, $start_date);
+
+  confess('Invalid $days_count.')
+    if($days_count < 1 || $days_count > TRANSLATION_CALC_LIMIT);
 
   # Go back fully a year. We actually want a year less one day (that being the
   # first day from which an office can be transferred to today), but that will
   # be handled in the loop.
   my @transfer_date_mdy = year_ago_mdy(@date_mdy);
 
-  # Robust protection against infinite loops.
-  my $loop_counter = 366;
+  my $translated_offices_ref = [];
+
+  # Heuristic: The typical cache-hit scenario is that the day before the start
+  # of the request is in the cache, so check for this case. A more general
+  # solution would be to binary-search the first cache-hit, but it's not
+  # worth the effort as the cache is a temporary measure to support the old
+  # precedence() interface.
+  my $yesterday = gregorian_ordinal_date(@date_mdy) - 1;
+  if ($cache_ref && exists($cache_ref->{$yesterday}))
+  {
+    # XXX: We lack an easy way to get yesterday's date, so we just decrement
+    # the day and exploit the implementation detail that the zeroth day of a
+    # month will be aliased to the last day of the preceding month. This is
+    # nasty, but the cache is nasty anyway.
+    @transfer_date_mdy = @date_mdy;
+    $transfer_date_mdy[1]--;
+    (undef, undef, $translated_offices_ref) = @{$cache_ref->{$yesterday}};
+  }
+
+  # Take the minumum as a robust protection against unbounded loops.
+  my $loop_counter = $days_count +
+    min(gregorian_ordinal_date(@date_mdy) -
+      gregorian_ordinal_date(@transfer_date_mdy) - 1,
+      365);
 
   # Resolve occurrence for each day, picking up and dropping feasts as
   # appropriate.
-  my $translated_offices_ref = [];
-  my $resolved_offices_ref;
+  my @resolved_translations;
   until (dates_mdy_equal(\@transfer_date_mdy, \@date_mdy))
   {
     @transfer_date_mdy = next_date_mdy(@transfer_date_mdy);
-    ($resolved_offices_ref, undef, $translated_offices_ref) =
-      resolve_occurrence($calendar_ref, join('-', @transfer_date_mdy),
-        $version, MATINS_TO_NONE, @$translated_offices_ref);
+    my $transfer_date_ord = gregorian_ordinal_date(@transfer_date_mdy);
+    my ($resolved_offices_ref, $temporal_ref);
+    if ($cache_ref && exists($cache_ref->{$transfer_date_ord}))
+    {
+      ($resolved_offices_ref, $temporal_ref, $translated_offices_ref) =
+        @{$cache_ref->{$transfer_date_ord}};
+    }
+    else
+    {
+      my $transfer_date_string = join('-', @transfer_date_mdy);
+      ($resolved_offices_ref, $temporal_ref, $translated_offices_ref) =
+        resolve_occurrence($calendar_ref, $transfer_date_string,
+          $version, MATINS_TO_NONE, @$translated_offices_ref);
+      $cache_ref->{$transfer_date_ord} =
+        [$resolved_offices_ref, $temporal_ref, $translated_offices_ref]
+        if($cache_ref);
+    }
 
-    croak('Looped over a year.') unless $loop_counter--;
+    # Put the result on the list if we're into the requested range.
+    push @resolved_translations, [$resolved_offices_ref, $temporal_ref]
+      if($loop_counter <= $days_count);
+
+    confess('Looped over a year beyond request.') unless($loop_counter-- > 0);
   }
 
-  # After the loop, @$resolved_offices_ref is the list of offices for the
-  # requested date.
-  return $resolved_offices_ref;
+  confess $loop_counter if($loop_counter);
+  return @resolved_translations;
 }
 
 
