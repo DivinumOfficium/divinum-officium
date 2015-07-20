@@ -993,6 +993,10 @@ sub resolve_translation
     confess('Looped over a year beyond request.') unless($loop_counter-- > 0);
   }
 
+  # At this point we could deal with anticipated Sundays.  The above loop
+  # would be rounded up to a Saturday, allowing anticipation of Sundays within
+  # the requested region to be determined.
+
   confess $loop_counter if($loop_counter);
   return @resolved_translations;
 }
