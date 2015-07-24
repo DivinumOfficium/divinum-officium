@@ -704,6 +704,16 @@ sub get_week
 }
 
 
+# Given a list of office references, returns a list of the same references such
+# that the first element of the list is the winner in occurrence.  The order of
+# the remaining elements is undefined.
+sub bring_winner_to_front
+{
+  my $version = shift;
+  return sort {cmp_occurrence($a, $b, $version)} @_;
+}
+
+
 sub resolve_occurrence
 {
   # When two offices are tied in dignity, preserve the order in which they were
@@ -718,10 +728,8 @@ sub resolve_occurrence
   # XXX: We should be using the offices after translation has been performed.
   my @office_lists = map {[get_all_offices($calendar_ref, $_)]} generate_calpoints($date);
 
-  # Combine and sort the lists of offices. The first sort uses occurrence rank,
-  # and is used to find the winning office.
-  my @sorted_offices =
-    sort {cmp_occurrence($a, $b, $version)} map {@$_} @office_lists;
+  # Combine the lists of offices and find the winner.
+  my @sorted_offices = bring_winner_to_front($version, map {@$_} @office_lists);
 
   # Filter out offices that don't span the requested portion of the day.
   @sorted_offices = grep {$_->{firstvespers}}  @sorted_offices
