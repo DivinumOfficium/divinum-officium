@@ -1013,7 +1013,7 @@ sub resolve_translation
 
   my $days_to_first_day = gregorian_ordinal_date(@date_mdy) -
       gregorian_ordinal_date(@transfer_date_mdy);
-  confess unless($days_to_first_day == 365 || $days_to_first_day == 366);
+  confess if($days_to_first_day > 366);
 
   # Resolve occurrence for each day, picking up and dropping feasts as
   # appropriate.
