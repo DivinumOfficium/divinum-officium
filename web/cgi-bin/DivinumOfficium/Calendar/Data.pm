@@ -100,7 +100,7 @@ sub implicit_rank_ordinal
   my ($version, $desc_ref) = @_;
 
   $desc_ref->{category} == SUNDAY_OFFICE ?
-    ($desc_ref->{standing} == GREATER_DAY ? 2 : 3) :
+    ($desc_ref->{standing} == GREATER_DAY || $version =~ /1960/ ? 2 : 3) :
   $desc_ref->{category} == FERIAL_OFFICE ?
     ($desc_ref->{standing} == GREATER_PRIVILEGED_DAY ?
       1 :
@@ -407,7 +407,7 @@ sub default_calentry($)
     my $week = roman_numeral($1);
     push @calentry, $2 == 0 ?
       ('title' => "Dominica $week Post Epiphaniam",
-      'rank' => 'Dominica Semiduplex II. classis')
+      'rank' => 'Dominica Semiduplex')
       :
       ('title' => "$feriarom[$2] infra Hebdomadam $week post Epiphaniam",
       'rank' => 'Feria Simplex');
@@ -437,7 +437,7 @@ sub default_calentry($)
     my $week = roman_numeral($1);
     push @calentry, $2 == 0 ?
       ('title' => "Dominica $week post Pascha",
-      'rank' => 'Dominica Semiduplex II. classis')
+      'rank' => 'Dominica Semiduplex')
       :
       ('title' => "$feria[$2] infra Hebdomadam $week post Octavam Paschae",
       'rank' => 'Feria Simplex');
@@ -447,7 +447,7 @@ sub default_calentry($)
     my $week = roman_numeral($1);
     push @calentry, $2 == 0 ?
       ('title' => "Dominica $week Post Pentecosten",
-      'rank' => 'Dominica Semiduplex II. classis')
+      'rank' => 'Dominica Semiduplex')
       :
       ('title' => "$feria[$2] infra Hebdomadam $week post Octavam Pentecostes",
       'rank' => 'Feria Simplex');
