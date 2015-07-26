@@ -31,8 +31,8 @@ use DivinumOfficium::Common qw(
 use DivinumOfficium::Data qw(get_office_data);
 
 use DivinumOfficium::Calendar::Resolution qw(
-  resolve_translation
-  resolve_concurrence
+  get_evening_offices
+  get_day_offices
   get_week
 );
 
@@ -63,24 +63,22 @@ sub initialise_hour
 
 
   # Get offices for the hour. If we only care about occurrence, we expand the
-  # entries returned by resolve_translation for uniformity with
-  # resolve_concurrence.
+  # entries returned by get_day_offices() for uniformity with
+  # get_evening_offices().
 
   my (@offices, $concurrence_resolution, $temporal_ref);
 
   if($vespers_or_compline)
   {
     (my $offices_ref, $concurrence_resolution, $temporal_ref) =
-      resolve_concurrence($calendar_ref, $date, $version);
+      get_evening_offices($calendar_ref, $date, $version);
     @offices = @$offices_ref;
   }
   else
   {
     # List-context assignment to get first and only value.
-    (my $offices_temporal_pair_ref) =
-      resolve_translation($calendar_ref, $version, $date, 1,
-        $transfer_cache_ref);
-    (my $offices_ref, $temporal_ref) = @$offices_temporal_pair_ref;
+    (my $offices_ref, $temporal_ref) =
+      get_day_offices($calendar_ref, $date, $version, $transfer_cache_ref);
     @offices = map {{office => $_, segment => MATINS_TO_NONE}} @$offices_ref;
   }
 

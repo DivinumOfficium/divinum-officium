@@ -22,8 +22,8 @@ BEGIN
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
   our @EXPORT_OK = qw(
-    resolve_occurrence
-    resolve_concurrence
+    get_day_offices
+    get_evening_offices
     resolve_translation
     get_week
   );
@@ -706,22 +706,32 @@ sub get_week
 
 # Given a list of office references, returns a list of the same references such
 # that the first element of the list is the winner in occurrence.  The order of
-# the remaining elements is undefined.
+# the remaining elements is mostly undefined, except that we guarantee not to
+# reorder equally-ranked elements with respect to one another.
 sub bring_winner_to_front
 {
+  use sort 'stable';
   my $version = shift;
   return sort {cmp_occurrence($a, $b, $version)} @_;
 }
 
 
+# Returns a closure that calculates the occurrence-resolution rule of an
+# arbitrary office against $office.
+sub make_occurrence_comparator
+{
+  my ($office, $version) = @_;
+  return sub
+  {
+    my %resolution = cmp_occurrence($office, shift, $version);
+    $resolution{rule};
+  }
+}
+
+
 sub resolve_occurrence
 {
-  # When two offices are tied in dignity, preserve the order in which they were
-  # specified in the calendar. Also, when transferring offices of equal rank,
-  # transfer the first one first.
-  use sort 'stable';
-
-  my ($calendar_ref, $date, $version, $segment, @translated_offices) = @_;
+  my ($calendar_ref, $date, $version, @translated_offices) = @_;
 
   # Get all calpoints falling on this date and expand them to the lists of
   # offices assigned thereto. This also gets any implicit offices.
@@ -730,12 +740,6 @@ sub resolve_occurrence
 
   # Combine the lists of offices and find the winner.
   my @sorted_offices = bring_winner_to_front($version, map {@$_} @office_lists);
-
-  # Filter out offices that don't span the requested portion of the day.
-  @sorted_offices = grep {$_->{firstvespers}}  @sorted_offices
-    if($segment == FIRST_VESPERS_AND_COMPLINE);
-  @sorted_offices = grep {$_->{secondvespers}} @sorted_offices
-    if($segment == SECOND_VESPERS_AND_COMPLINE);
 
   if (@translated_offices)
   {
@@ -759,30 +763,20 @@ sub resolve_occurrence
 
   my $winner = shift @sorted_offices;
 
-  # Re-sort the tail using commemoration rank.
-  @sorted_offices = sort {cmp_commemoration($a, $b, $version)} @sorted_offices;
-
-  my $rule_against_winner = sub
-  {
-    my %resolution = cmp_occurrence($winner, shift, $version);
-    $resolution{rule};
-  };
+  my $rule_against_winner = make_occurrence_comparator($winner, $version);
 
   # Add any offices that should be translated to the translation list. They'll
   # be filtered out of the day's offices subsequently.
   push @translated_offices,
     grep { $rule_against_winner->($_) == TRANSLATE_LOSER } @sorted_offices;
 
-  # Remove any offices that should be translated or omitted in occurrence with
-  # the winner.
+  # Remove any offices that should be translated in occurrence with the winner.
+  # Offices that would be omitted are kept for the time being as they might
+  # cease to be omitted at Vespers; get_day_offices() and get_evening_offices()
+  # will filter those out as appropriate.
   my @resolved_offices = (
     $winner,
-    grep
-    {
-      my $loser_rule = $rule_against_winner->($_);
-      $loser_rule != OMIT_LOSER && $loser_rule != TRANSLATE_LOSER;
-    }
-    @sorted_offices
+    grep { $rule_against_winner->($_) != TRANSLATE_LOSER } @sorted_offices
   );
 
   return
@@ -792,7 +786,54 @@ sub resolve_occurrence
 }
 
 
-sub resolve_concurrence
+# Removes offices from @tail that would be omitted in occurrence with $winner.
+# Translation should already have been handled, so no office in tail should be
+# translated in occurrence with $winner.
+sub filter_omitted_offices
+{
+  my ($version, $winner, @tail) = @_;
+  my $rule_against_winner = make_occurrence_comparator($winner, $version);
+  return (
+    $winner,
+    grep
+    {
+      my $rule = $rule_against_winner->($_);
+      confess if($rule == TRANSLATE_LOSER);
+      $rule != OMIT_LOSER;
+    }
+    @tail
+  );
+}
+
+sub get_day_offices
+{
+  # When two offices are tied in dignity, preserve the order in which they were
+  # specified in the calendar. Also, when transferring offices of equal rank,
+  # transfer the first one first.
+  use sort 'stable';
+
+  my ($calendar_ref, $date, $version, $transfer_cache_ref) = @_;
+
+  # Get the offices that will be observed on this day.  The first one will be
+  # the office of the day, but we will still have to sort the rest and filter
+  # them for omission.
+  my ($offices_pair) =
+    resolve_translation($calendar_ref, $version, $date, 1, $transfer_cache_ref);
+  my ($offices_ref, $temporal_ref) = @$offices_pair;
+  my $winner = shift @$offices_ref;
+
+  # Sort the tail into the order in which the offices should be commemorated.
+  @$offices_ref = sort {cmp_commemoration($a, $b, $version)} @$offices_ref;
+
+  # Remove any offices that should be omitted in occurrence with the winner.
+  my @resolved_offices =
+    filter_omitted_offices($version, $winner, @$offices_ref);
+
+  return (\@resolved_offices, $temporal_ref);
+}
+
+
+sub get_evening_offices
 {
   # We will require stability when sorting commemorations. See below.
   use sort 'stable';
@@ -800,17 +841,23 @@ sub resolve_concurrence
   my ($calendar_ref, $date, $version) = @_;
 
   # Find the offices from the two days.
-  my ($preceding_ref, $preceding_temporal_ref) =
-    resolve_occurrence($calendar_ref, $date, $version,
-      SECOND_VESPERS_AND_COMPLINE);
-  my ($following_ref, $following_temporal_ref) =
-    resolve_occurrence($calendar_ref, next_date($date), $version,
-      FIRST_VESPERS_AND_COMPLINE);
+  my @resolution = resolve_translation($calendar_ref, $version, $date, 2);
+  confess unless(@resolution == 2);
+  my ($preceding_ref, $preceding_temporal_ref) = @{shift @resolution};
+  my ($following_ref, $following_temporal_ref) = @{shift @resolution};
 
   # Filter out preceding offices without second vespers and following ones
   # without first vespers.
   my @preceding = grep {$_->{secondvespers}} @$preceding_ref;
   my @following = grep {$_->{firstvespers}}  @$following_ref;
+
+  # Handle intra-day omission now that we've restricted ourselves to offices
+  # intersecting with this evening.
+  foreach my $array_ref (\@preceding, \@following) {
+    @$array_ref =
+      filter_omitted_offices($version,
+        bring_winner_to_front($version, @$array_ref));
+  }
 
   # When a day within an octave is only commemorated, it loses its second
   # vespers. Accordingly, we drop such offices from the list.
@@ -964,16 +1011,18 @@ sub resolve_translation
     (undef, undef, $translated_offices_ref) = @{$cache_ref->{$yesterday}};
   }
 
-  # Take the minumum as a robust protection against unbounded loops.
-  my $loop_counter = $days_count +
-    min(gregorian_ordinal_date(@date_mdy) -
-      gregorian_ordinal_date(@transfer_date_mdy) - 1,
-      365);
+  my $days_to_first_day = gregorian_ordinal_date(@date_mdy) -
+      gregorian_ordinal_date(@transfer_date_mdy);
+  confess unless($days_to_first_day == 365 || $days_to_first_day == 366);
 
   # Resolve occurrence for each day, picking up and dropping feasts as
   # appropriate.
   my @resolved_translations;
-  until (dates_mdy_equal(\@transfer_date_mdy, \@date_mdy))
+  for(
+    my $remaining_days = $days_count - 1 + $days_to_first_day;
+    $remaining_days > 0;
+    $remaining_days--
+  )
   {
     @transfer_date_mdy = next_date_mdy(@transfer_date_mdy);
     my $transfer_date_ord = gregorian_ordinal_date(@transfer_date_mdy);
@@ -987,8 +1036,8 @@ sub resolve_translation
     {
       my $transfer_date_string = join('-', @transfer_date_mdy);
       ($resolved_offices_ref, $temporal_ref, $translated_offices_ref) =
-        resolve_occurrence($calendar_ref, $transfer_date_string,
-          $version, MATINS_TO_NONE, @$translated_offices_ref);
+        resolve_occurrence($calendar_ref, $transfer_date_string, $version,
+          @$translated_offices_ref);
       $cache_ref->{$transfer_date_ord} =
         [$resolved_offices_ref, $temporal_ref, $translated_offices_ref]
         if($cache_ref);
@@ -996,16 +1045,13 @@ sub resolve_translation
 
     # Put the result on the list if we're into the requested range.
     push @resolved_translations, [$resolved_offices_ref, $temporal_ref]
-      if($loop_counter <= $days_count);
-
-    confess('Looped over a year beyond request.') unless($loop_counter-- > 0);
+      if($remaining_days <= $days_count);
   }
 
   # At this point we could deal with anticipated Sundays.  The above loop
   # would be rounded up to a Saturday, allowing anticipation of Sundays within
   # the requested region to be determined.
 
-  confess $loop_counter if($loop_counter);
   return @resolved_translations;
 }
 
