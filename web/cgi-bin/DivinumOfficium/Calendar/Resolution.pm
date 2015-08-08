@@ -651,32 +651,59 @@ sub generate_calpoints
 {
   use integer;
 
-  my $date = shift;
-  my @date_mdy = split(/-/, $date);
-  my ($week, $day_of_week) = get_week(@date_mdy);
+  my ($date, $version) = @_;
+  my ($month, $day, $year) = split(/-/, $date);
+  my ($week, $day_of_week) = get_week($month, $day, $year);
   $week =~ s/(.*?)\s*=.*$/$1/;
 
   my @days = qw(Dominica FeriaII FeriaIII FeriaIV FeriaV FeriaVI Sabbato);
-  my $month_prefix = sprintf('%02d-', $date_mdy[0]);
+  my $month_prefix = sprintf('%02d-', $month);
 
   my @calpoints = (
     # Calendar day: mm-dd.
-    $month_prefix . sprintf('%02d', $date_mdy[1]),
+    $month_prefix . sprintf('%02d', $day),
 
     # nth x-day *in* the month.
-    "$month_prefix$days[$day_of_week]-" . ($date_mdy[1] / 7 + 1)
+    "$month_prefix$days[$day_of_week]-" . ($day / 7 + 1)
   );
 
   # nth x-day *of* the month.
-  my $reading_day = horas::reading_day(@date_mdy);
+  my $reading_day = horas::reading_day($month, $day, $year);
   push @calpoints, $reading_day if($reading_day);
 
   # Last x-day.
   push @calpoints, "$month_prefix$days[$day_of_week]-Ult"
-    if($day_of_week == 0 && days_in_month($date_mdy[0]) - $date_mdy[1] < 7);
+    if($day_of_week == 0 && days_in_month($month) - $day < 7);
 
   # Temporal cycle, except for Christmas-Epiphany.
   push @calpoints, "$week-$day_of_week" if($week);
+
+  # Sundays in the Christmas-Epiphany cycle move around a bit. With some
+  # rubrics the Sunday in the octave of Christmas is observed on the Sunday
+  # itself, which is straightforward; and with others it's on the 30th if
+  # that day lies in Tues-Fri, and otherwise on the Sunday.
+  if ($month == 12 && $day >= 25)
+  {
+    push @calpoints, 'Nat1-0' if(
+      ($version =~ /1960/i) ? ($day_of_week == 0 && $day > 25) :
+                              (($day >= 29 && $day_of_week == 0) ||
+                               ($day == 30 && $day_of_week >= 2 &&
+                                $day_of_week <= 5))
+    );
+  }
+
+  # The office of the Sunday after the octave of Christmas has a complex
+  # history, but all we need to do here is place the 'Nat2-0' office.  This
+  # falls on the Sunday in 2-4 Jan inclusive (or 2-5 Jan post-1955), or on
+  # 2 Jan if there is no such Sunday.
+  if ($month == 1)
+  {
+    my $nat2_sunday_limit = ($version =~ /1960|1955/) ? 5 : 4;
+    push @calpoints, 'Nat2-0'
+      if(($day_of_week == 0 && $day >= 2 && $day <= $nat2_sunday_limit) ||
+        ($day == 2 && $day_of_week >= 1 &&
+          $day_of_week <= 8 - $nat2_sunday_limit));
+  }
 
   # Office of our Lady on Saturday.
   push @calpoints, BVM_SATURDAY_CALPOINT if($day_of_week == 6);
@@ -736,7 +763,8 @@ sub resolve_occurrence
   # Get all calpoints falling on this date and expand them to the lists of
   # offices assigned thereto. This also gets any implicit offices.
   # XXX: We should be using the offices after translation has been performed.
-  my @office_lists = map {[get_all_offices($calendar_ref, $_)]} generate_calpoints($date);
+  my @office_lists = map {[get_all_offices($calendar_ref, $_)]}
+    generate_calpoints($date, $version);
 
   # Combine the lists of offices and find the winner.
   my @sorted_offices = bring_winner_to_front($version, map {@$_} @office_lists);
