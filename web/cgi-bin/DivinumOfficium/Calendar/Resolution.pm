@@ -754,7 +754,7 @@ sub resolve_occurrence
     if (($current_winner->{rite} < SEMIDOUBLE_RITE &&
         $current_winner->{standing} != GREATER_PRIVILEGED_DAY) ||
       ($version !~ /Trident/i && $current_winner->{rankord} > 2) ||
-      (exists($current_winner->{'dignitate maiore in translatione'}) &&
+      (exists($translated_offices[0]->{'dignitate maiore in translatione'}) &&
         cmp_occurrence($translated_offices[0], $current_winner) < 0))
     {
       unshift @sorted_offices, shift @translated_offices;
