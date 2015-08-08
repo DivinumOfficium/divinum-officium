@@ -290,10 +290,14 @@ sub cmp_occurrence
   ($a, $b, $sign) = ($b, $a, -$sign) if($$a{rankord} < $$b{rankord});
   if($$b{rankord} < $$a{rankord})
   {
-    return resolution($sign, TRANSLATE_LOSER)
-      if($$b{rankord} == 1 && $$a{rankord} == 2 &&
+    return resolution($sign, TRANSLATE_LOSER) if(
+      # II.-cl. feast yielding to I.-cl. day.
+      ($$b{rankord} == 1 && $$a{rankord} == 2 &&
         $$a{category} != SUNDAY_OFFICE &&
-        $$a{category} != WITHIN_OCTAVE_OFFICE);
+        $$a{category} != WITHIN_OCTAVE_OFFICE) ||
+      # Loser marked explicitly as tranferrable.
+      exists($$a{'transferri potest'})
+    );
 
     return resolution($sign, OMIT_LOSER) if(
       # Simple feasts and octave days are omitted on I. cl. doubles.
