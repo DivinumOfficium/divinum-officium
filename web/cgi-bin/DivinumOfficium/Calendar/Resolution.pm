@@ -1070,8 +1070,10 @@ sub resolve_translation
       ($resolved_offices_ref, $temporal_ref, $translated_offices_ref) =
         resolve_occurrence($calendar_ref, $transfer_date_string, $version,
           @$translated_offices_ref);
+      # Add the result to the cache.  We take a shallow copy of collections
+      # that we might return to the caller.
       $cache_ref->{$transfer_date_ord} =
-        [$resolved_offices_ref, $temporal_ref, $translated_offices_ref]
+        [[@$resolved_offices_ref], $temporal_ref, $translated_offices_ref]
         if($cache_ref);
     }
 
