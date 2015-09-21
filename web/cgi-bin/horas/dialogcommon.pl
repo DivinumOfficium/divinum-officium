@@ -473,6 +473,12 @@ sub process_conditional_lines
     # Break the aliasing.
     my $line = $_;
 
+    # Check to see whether we'll fall off the end of the current scope before
+    # this line.
+    exit_conditional(\@conditional_stack)
+      while (${$conditional_stack[-1]}[1] == SCOPE_CHUNK &&
+        $line =~ $blankline_regex);
+
     # Check for a new condition.
     if ($line =~ /^\s*$conditional_regex\s*(.*)$/o)
     {
@@ -561,26 +567,32 @@ sub process_conditional_lines
     # Add line to output array if it's not in a failed conditional block.
     push @output, $line if (${$conditional_stack[-1]}[0] == COND_AFFIRMATIVE);
     
-    # Check to see whether we'll fall off the end of the current scope
-    # after this line.
-    while (${$conditional_stack[-1]}[1] == SCOPE_LINE ||
-      (${$conditional_stack[-1]}[1] == SCOPE_CHUNK && $line =~ $blankline_regex))
-    {
-      do
-      {
-        pop @conditional_stack;
-      } while(@conditional_stack &&
-        ${$conditional_stack[-1]}[0] == COND_DUMMY_FRAME);
-      
-      # If we've emptied the conditional stack, push an always-true,
-      # unbounded frame to allow uniformity in testing.
-      push @conditional_stack, [COND_AFFIRMATIVE, SCOPE_NEST]
-        if (@conditional_stack == 0);
-    }
+    # Check to see whether we'll fall off the end of the current scope after
+    # this line.
+    exit_conditional(\@conditional_stack)
+      while (${$conditional_stack[-1]}[1] == SCOPE_LINE);
   }
 
   return @output;
 }
+
+
+sub exit_conditional
+{
+  my $conditional_stack_ref = shift;
+
+  do
+  {
+    pop @$conditional_stack_ref;
+  } while(@$conditional_stack_ref &&
+    ${$conditional_stack_ref->[-1]}[0] == COND_DUMMY_FRAME);
+
+  # If we've emptied the conditional stack, push an always-true,
+  # unbounded frame to allow uniformity in testing.
+  push $conditional_stack_ref, [COND_AFFIRMATIVE, SCOPE_NEST]
+    if (@$conditional_stack_ref == 0);
+}
+
 
 #*** do_inclusion_substitutions(\$text, $substitutions)
 # Performs substitutions on $text, where $substitutions contains the
