@@ -105,7 +105,7 @@ Festum Duplex
 (rubrica tridentina) filename=Sancti/12-29o
 
 @:infra-oct-12-25
-(sed rubrica 1960)
+(sed rubrica 1960 loco hujus versus)
 Die V infra octavam Nativitatis
 Dies infra octavam II. ordinis Duplex II. classis
 De tempore
@@ -139,7 +139,7 @@ Festum Duplex
 (rubrica tridentina) filename=Sancti/12-31o
 
 @:infra-oct-12-25
-(sed rubrica 1960)
+(sed rubrica 1960 loco hujus versus)
 Die VII infra Octavam Nativitatis
 Dies infra octavam II. ordinis Duplex II. classis
 De tempore
@@ -227,7 +227,7 @@ In Vigilia Epiphaniae
 Vigilia Semiduplex II. classis
 (sed rubrica 1570) Vigilia Semiduplex
 De tempore
-(sed rubrica 1960 aut rubrica 1955)
+(sed rubrica 1960 aut rubrica 1955 loco hujus versus)
 Die Quinta Januarii
 Feria Simplex
 De tempore
@@ -308,7 +308,7 @@ Sexta die infra Octavam Epiphaniae
 Dies infra octavam communem Semiduplex
 De tempore
 octid=Epi
-(sed rubrica 1960 aut rubrica 1955)
+(sed rubrica 1960 aut rubrica 1955 loco hujus versus)
 Die Undecima Januarii
 Feria Simplex
 De tempore
@@ -1059,7 +1059,7 @@ filename=Sancti/10-20
 [01-14]
 S. Hilarii Episcopi Confessoris Ecclesiae Doctoris
 Festum Duplex
-(sed rubrica 1570)
+(sed rubrica 1570 loco hujus versus)
 S. Hilarii Episcopi Confessoris
 Festum Semiduplex
 filename=Sancti/01-14o
@@ -2407,8 +2407,7 @@ Dies infra octavam communem semiduplex
 [08-16] (rubrica tridentina aut rubrica Divino aut rubrica 1955 aut rubrica Rubrics 1960)
 S. Joachim Confessoris, Patris B. M. V.
 Festum Duplex II. classis
-
-(sed rubrica 1570)
+(sed rubrica 1570 loco hujus versus)
 Secunda die infra Octavam Assumptionis
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-16o
@@ -2479,7 +2478,7 @@ Septima die infra Octavam Assumptionis
 Dies infra octavam communem Semiduplex
 filename=Sancti/08-21o
 octid=Assumptio
-(sed rubrica Divino)
+(sed rubrica Divino loco hujus versus)
 @:08-15-infra-oct
 
 [08-21] (rubrica innovata)
@@ -2492,7 +2491,7 @@ Immaculati Cordis Beatae Mariae Virginis
 Festum Duplex II. classis
 filename=Sancti/08-22r
 octid=Assumptio
-(sed rubrica tridentina)
+(sed rubrica tridentina loco hujus versus)
 In Octava Assumptionis B.M.V.
 Dies octava communis Duplex maius
 octid=Assumptio
@@ -2677,7 +2676,7 @@ Festum Domini Duplex maius
 [09-15] (rubrica tridentina aut rubrica 1960 aut rubrica Divino aut rubrica 1955)
 Septem Dolorum Beatae Mariae Virginis
 Festum Duplex II. classis
-(sed rubrica tridentina)
+(sed rubrica tridentina loco hujus versus)
 In Octava Nativitatis Beatae Mariae Virginis
 Dies octava communis duplex majus
 filename=Sancti/09-15t
