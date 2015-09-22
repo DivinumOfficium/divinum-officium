@@ -168,10 +168,10 @@ sub resolve_refs {
     $line = setcross($line);
 
     #red prefix
-    if ($line =~ /^\s*(R\.|V\.|S\.|P\.|M\.|A\.|O\.|C\.|D\.|Benedictio\.* |Absolutio\.* |Ant\. |Ps\. )/)
+    if ($line =~ /^\s*(R\.|V\.|S\.|P\.|M\.|A\.|O\.|C\.|D\.|Benedictio\.* |Absolutio\.* |Ant\. |Ps\. )(.*)/s)
     {
       my $h = $1;
-      my $l = $';
+      my $l = $2;
 
       if ($h =~ /(Benedictio|Absolutio)/)
       {
@@ -196,29 +196,29 @@ sub resolve_refs {
       $cfont =~ s/red/blue/i;
       $line = setfont($cfont, $line);
     }
-    elsif ($line =~ /^\s*\!\!\!/)
+    elsif ($line =~ /^\s*\!\!\!(.*)/s)
     {
-      $line = $';
+      $line = $1;
       my $cfont = $redfont;
       $cfont =~ s/red/black/i;
       $line = setfont($cfont, $line);
     }
     #small omitted comment
-    elsif ($line =~ /^\s*\!x\!\!/)
+    elsif ($line =~ /^\s*\!x\!\!(.*)/s)
     {
-      $l = $';
+      $l = $1;
       $line = setfont($smallfont, $l);
     }
     #small omitted title
-    elsif ($line =~ /^\s*\!x\!/)
+    elsif ($line =~ /^\s*\!x\!(.*)/s)
     {
-      $l = $';
+      $l = $1;
       $line = setfont($smallblack, $l);
     }
     #large chapter title
-    elsif ($line =~ /^\s*\!\!/)
+    elsif ($line =~ /^\s*\!\!(.*)/s)
     {
-      my $l = $';
+      my $l = $1;
       my $suffix = '';
       if ($l =~ /\{.*?\}/)
       {
@@ -229,9 +229,9 @@ sub resolve_refs {
       $line = setfont($largefont, $l) . " $suffix\n";
     }
     #red line
-    elsif ($line =~ /^\s*\!/)
+    elsif ($line =~ /^\s*\!(.*)/s)
     {
-      $l = $';
+      $l = $1;
       $line = setfont($redfont, $l);
     }
 
@@ -322,7 +322,7 @@ sub translate {
 
   my $n = $name;             
   my $prefix = '';
-  if ($n =~ s/(\$|\&)//) {$prefix = $&;}
+  if ($n =~ s/(\$|\&)//) {$prefix = $1;}
   $n =~ s/^\n*//;
   $n =~ s/\n*$//; 
   $n =~ s/\_/ /g;            

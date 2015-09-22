@@ -113,8 +113,8 @@ if (!$searchvalue) {$searchvalue = '0';}
     
 #*** handle different actions
 #after setup
-if ($command =~ /change/i ) { 
- $command = $';                 
+if ($command =~ /change(.*)/is ) { 
+ $command = $1;
  getsetupvalue($command);   
  if ($command =~ /parameters/) {setcookies('horasp', 'parameters');}
 }    
@@ -209,9 +209,9 @@ for ($i = 0; $i < 10; $i++) {$hcolor[$i] = 'blue';}
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
 
-if ($command =~ /setup/i) {	  
+if ($command =~ /setup(.*)/is) {	  
   $pmode = 'setup';
-  $command = $';
+  $command = $1;
   setuptable($command);
 
 } elsif ($command =~ /pray/) {
@@ -461,7 +461,7 @@ sub headline {
     "grey"; 
   build_comment_line();
   $headline = setheadline();
-	if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
+  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
   print "<CENTER><TABLE BORDER=1 CELLPADDING=5><TR>" .
     "<TD $background ALIGN=CENTER WIDTH=$width%>$version1 : <FONT COLOR=$daycolor>$headline</FONT>" .
     "<BR>$comment</TD>";
@@ -476,7 +476,7 @@ sub headline {
       "grey"; 
     build_comment_line();
     $headline = setheadline();
-	  if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
+    $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
     print "<TD $background ALIGN=CENTER WIDTH=$width%>$version2 : <FONT COLOR=$daycolor>$headline</FONT>" .
     "<BR>$comment</TD>";
   }

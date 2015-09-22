@@ -491,7 +491,7 @@ sub setcell {
   $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
   $text =~ s/\{\:.*?\:\}//sg;  
   $text =~ s/\`//g;
-  if ($text =~ /\{(.*?)\}/) {$text = "$`<BR>" . setfont($smallblack .'maroon', $1) . $';}
+  $text =~ s/\{(.*?)\}/'<BR>' . setfont($smallblack .'maroon', $1)/e;
   
   if ($Ck) {
     if ($column == 1) {push(@ctext1, $text);}
