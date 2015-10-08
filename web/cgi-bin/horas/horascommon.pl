@@ -18,7 +18,7 @@ use DivinumOfficium::Scripting qw(
 );
 use DivinumOfficium::Propers;
 use DivinumOfficium::Calendar::Definitions;
-use DivinumOfficium::Time qw(gregorian_ordinal_date);
+use DivinumOfficium::Time qw(gregorian_ordinal_date get_easter_mdy);
 
 my @lines;
 my $a = 4;
@@ -136,22 +136,10 @@ sub getadvent {
 
 #*** geteaster(year)
 # returns easter date (dd,mm,yyyy);
-sub geteaster {
-  my $year = shift;
-
-  my $c = floor($year / 100);
-  my $n = $year - 19 * floor( $year / 19 );
-  my $k = floor(( $c - 17 ) / 25);
-  my $i = $c - floor($c / 4) - floor(( $c - $k ) / 3) + 19 * $n + 15;
-  $i = $i - 30 * floor($i / 30 );
-  $i = $i - floor( $i / 28 ) * ( 1 - floor( $i / 28 ) * floor( 29 / ( $i + 1 )) )
-        * floor( ( 21 - $n ) / 11 );
-  my $j = $year + floor($year / 4) + $i + 2 - $c + floor($c / 4);
-  $j = $j - 7 * floor( $j / 7 );     
-  my $l = $i - $j;
-  my $m = 3 + floor(( $l + 40 ) / 44);
-  my $d = $l + 28 - 31 * floor( $m / 4 );
-  return ($d, $m-1, $year);
+sub geteaster
+{
+  my @easter_mdy = get_easter_mdy(shift);
+  return ($easter_mdy[1], $easter_mdy[0] - 1, $easter_mdy[2]);
 }
 
 #*** checkfile($lang, $filename) 

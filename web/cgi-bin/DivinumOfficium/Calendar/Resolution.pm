@@ -3,7 +3,7 @@ package DivinumOfficium::Calendar::Resolution;
 use strict;
 use warnings;
 
-use List::Util qw(first min);
+use List::Util qw(first min max);
 
 use DivinumOfficium::Calendar::Definitions;
 use DivinumOfficium::Calendar::Data qw(get_all_offices);
@@ -11,6 +11,12 @@ use DivinumOfficium::Common qw(
   FIRST_VESPERS_AND_COMPLINE
   SECOND_VESPERS_AND_COMPLINE
   MATINS_TO_NONE
+);
+use DivinumOfficium::Time qw(
+  sunday_a_year_ago_mdy
+  ordinal_date
+  sundays_after_pentecost
+  sundays_after_epiphany
 );
 
 use Carp;
@@ -658,7 +664,6 @@ sub generate_calpoints
   my ($date, $version) = @_;
   my ($month, $day, $year) = split(/-/, $date);
   my ($week, $day_of_week) = get_week($month, $day, $year);
-  $week =~ s/(.*?)\s*=.*$/$1/;
 
   my @days = qw(Dominica FeriaII FeriaIII FeriaIV FeriaV FeriaVI Sabbato);
   my $month_prefix = sprintf('%02d-', $month);
@@ -730,6 +735,7 @@ sub get_week
   local our $dayofweek;
 
   my $week = getweek(0);
+  $week =~ s/(.*?)\s*=.*$/$1/;
 
   return wantarray ? ($week, $dayofweek) : $week;
 }
@@ -990,39 +996,31 @@ sub get_evening_offices
 }
 
 
-# TODO: Move these into some utility module.
-sub year_ago_mdy
-{
-  my @date_mdy = @_;
-  $date_mdy[2]--;
-  $date_mdy[1]-- if($date_mdy[0] == 2 && $date_mdy[1] == 29);
-  return @date_mdy;
-}
+# Set a constant upper bound on the number of loop iterations as a sanity
+# check, equal to the length of a leap year rounded up to a whole multiple of
+# a week.
+use constant TRANSLATION_CALC_LIMIT => 371;
 
-sub dates_mdy_equal
-{
-  my ($a_ref, $b_ref) = @_;
-  return
-    $a_ref->[0] == $b_ref->[0] &&
-    $a_ref->[1] == $b_ref->[1] &&
-    $a_ref->[2] == $b_ref->[2];
-}
-
-
-use constant TRANSLATION_CALC_LIMIT => 366;
 sub resolve_translation
 {
   my ($calendar_ref, $version, $start_date, $days_count, $cache_ref) = @_;
-  $days_count //= 1;
   my @date_mdy = split(/-/, $start_date);
+  my $ordinal_start_date = ordinal_date(@date_mdy);
+
+  # Round the number of days up to a multiple of a week.
+  $days_count //= 1;
+  my $requested_days_count = $days_count;
+  $days_count += (-$days_count) % 7;
 
   confess('Invalid $days_count.')
     if($days_count < 1 || $days_count > TRANSLATION_CALC_LIMIT);
 
-  # Go back fully a year. We actually want a year less one day (that being the
-  # first day from which an office can be transferred to today), but that will
-  # be handled in the loop.
-  my @transfer_date_mdy = year_ago_mdy(@date_mdy);
+  # If we have no external cache, create one for use for the duration of this
+  # subroutine only.
+  $cache_ref //= {};
+
+  # Go back a year less a day and find a Sunday.
+  my @transfer_date_mdy = sunday_a_year_ago_mdy(@date_mdy);
 
   my $translated_offices_ref = [];
 
@@ -1031,35 +1029,29 @@ sub resolve_translation
   # solution would be to binary-search the first cache-hit, but it's not
   # worth the effort as the cache is a temporary measure to support the old
   # precedence() interface.
-  my $yesterday = gregorian_ordinal_date(@date_mdy) - 1;
-  if ($cache_ref && exists($cache_ref->{$yesterday}))
+  my $yesterday = $ordinal_start_date - 1;
+  if (exists($cache_ref->{$yesterday}))
   {
-    # XXX: We lack an easy way to get yesterday's date, so we just decrement
-    # the day and exploit the implementation detail that the zeroth day of a
-    # month will be aliased to the last day of the preceding month. This is
-    # nasty, but the cache is nasty anyway.
+    # Start the loop from the first required day.
     @transfer_date_mdy = @date_mdy;
-    $transfer_date_mdy[1]--;
     (undef, undef, $translated_offices_ref) = @{$cache_ref->{$yesterday}};
   }
 
-  my $days_to_first_day = gregorian_ordinal_date(@date_mdy) -
-      gregorian_ordinal_date(@transfer_date_mdy);
-  confess if($days_to_first_day > 366);
+  my $days_to_first_day = $ordinal_start_date -
+      ordinal_date(@transfer_date_mdy);
+  confess if($days_to_first_day > TRANSLATION_CALC_LIMIT);
 
   # Resolve occurrence for each day, picking up and dropping feasts as
   # appropriate.
-  my @resolved_translations;
   for(
-    my $remaining_days = $days_count - 1 + $days_to_first_day;
+    my $remaining_days = $days_count + $days_to_first_day;
     $remaining_days > 0;
-    $remaining_days--
+    $remaining_days--, @transfer_date_mdy = next_date_mdy(@transfer_date_mdy)
   )
   {
-    @transfer_date_mdy = next_date_mdy(@transfer_date_mdy);
-    my $transfer_date_ord = gregorian_ordinal_date(@transfer_date_mdy);
+    my $transfer_date_ord = ordinal_date(@transfer_date_mdy);
     my ($resolved_offices_ref, $temporal_ref);
-    if ($cache_ref && exists($cache_ref->{$transfer_date_ord}))
+    if (exists($cache_ref->{$transfer_date_ord}))
     {
       ($resolved_offices_ref, $temporal_ref, $translated_offices_ref) =
         @{$cache_ref->{$transfer_date_ord}};
@@ -1070,24 +1062,117 @@ sub resolve_translation
       ($resolved_offices_ref, $temporal_ref, $translated_offices_ref) =
         resolve_occurrence($calendar_ref, $transfer_date_string, $version,
           @$translated_offices_ref);
-      # Add the result to the cache.  We take a shallow copy of collections
-      # that we might return to the caller.
-      $cache_ref->{$transfer_date_ord} =
-        [[@$resolved_offices_ref], $temporal_ref, $translated_offices_ref]
-        if($cache_ref);
-    }
 
-    # Put the result on the list if we're into the requested range.
-    push @resolved_translations, [$resolved_offices_ref, $temporal_ref]
-      if($remaining_days <= $days_count);
+      # Add the result to the cache.
+      $cache_ref->{$transfer_date_ord} =
+        [$resolved_offices_ref, $temporal_ref, $translated_offices_ref];
+
+      # Place an anticipated Sunday if necessary.
+      if (my $anticipated_ref =
+        get_floating_anticipated_office($calendar_ref, @transfer_date_mdy))
+      {
+        # Plop the anticipated Sunday on the appropriate day in the cache.
+        # Start by walking backwards from the Saturday and looking for a day
+        # not impeded by a feast of nine lessons.
+        my $days_back;
+        for ($days_back = 0; $days_back < 7; $days_back++)
+        {
+          # If the winner is of simple rite (i.e. of three lessons), then the
+          # Sunday is anticipated here.
+          my $offices_ref = $cache_ref->{$transfer_date_ord - $days_back}->[0];
+          if ($offices_ref->[0]->{rite} == SIMPLE_RITE)
+          {
+            @{$cache_ref->{$transfer_date_ord - $days_back}}[0, 1] = (
+              [$anticipated_ref, @$offices_ref], $anticipated_ref
+            );
+            last;
+          }
+        }
+        if ($days_back == 7)
+        {
+          # Commemorate on the Saturday.  Take a copy and simplify the office.
+          my %simplified = %{$anticipated_ref};
+          $simplified{rite} = SIMPLE_RITE;
+
+          # Stick the simplified Sunday at the end of the list of offices for
+          # the Saturday.  Other than having the winner at the front, that list
+          # isn't sorted yet anyway.
+          push(@{$cache_ref->{$transfer_date_ord}->[0]}, \%simplified);
+        }
+      }
+    }
   }
 
-  # At this point we could deal with anticipated Sundays.  The above loop
-  # would be rounded up to a Saturday, allowing anticipation of Sundays within
-  # the requested region to be determined.
+  # TODO: Resumed Sundays:
+  # - Sunday in the octave of the Epiphany
+  # - Other Sundays (or Sunday Masses??) impeded by feasts?
 
-  return @resolved_translations;
+  # Build the list of the requested range of results.  Take a shallow copy of
+  # any collections that will persist in the cache.
+  return map {
+    my ($resolved_offices_ref, $temporal_ref) = @{$cache_ref->{$_}};
+    [[@$resolved_offices_ref], $temporal_ref];
+  } ($ordinal_start_date..$ordinal_start_date + $requested_days_count - 1);
 }
+
+
+# Handles the anticipation of the last Sunday before Septuagesima and the 23rd
+# Sunday after Pentecost.  Returns a descriptor for the anticipated office if
+# the day passed in is the Saturday of the week in which it should be
+# anticipated.
+sub get_floating_anticipated_office
+{
+  my ($calendar_ref, $month, $day, $year) = @_;
+  my ($week, $day_of_week) = get_week($month, $day, $year);
+
+  # We're only interested in Saturdays.
+  return undef unless($day_of_week == 6);
+
+  my $sundays_after_pentecost = sundays_after_pentecost($year);
+  if ($week eq 'Pent22')
+  {
+    # Anticipation of the 23rd Sunday after Pentecost is simple: it happens iff
+    # there are 23 Sundays after Pentecost.
+    return gen_anticipated_office($calendar_ref, 'Pent23-0')
+      if($sundays_after_pentecost == 23);
+    return undef;
+  }
+
+  # Are we in the last week after the Epiphany?
+  my $sundays_after_epiphany = sundays_after_epiphany($year);
+  if ($week eq "Epi${sundays_after_epiphany}")
+  {
+    # There will be an anticipated Sunday before Septuagesima if the sum of the
+    # number of Sundays after the Epiphany and the "extra" Sundays after
+    # Pentecost (i.e. max(num_sundays - 24, 0)) is less than six, and that
+    # Sunday will be the (num_after_epi + 1)th Sunday after the Epiphany.
+    if ($sundays_after_epiphany + max($sundays_after_pentecost - 24, 0) < 6)
+    {
+      my $anticipated_idx =  $sundays_after_epiphany + 1;
+      # TODO: At Mass, this should be PentEpi.
+      my $category = 'Epi';
+      return gen_anticipated_office(
+        $calendar_ref, "${category}${anticipated_idx}-0")
+    }
+  }
+}
+
+
+sub gen_anticipated_office
+{
+  my ($calendar_ref, $calpoint) = @_;
+  my @offices = get_all_offices($calendar_ref, $calpoint);
+
+  # We expect only a single office assigned to that calpoint.
+  confess "${calpoint}: Wrong number of offices." unless(@offices == 1);
+
+  my %anticipated_office = %{$offices[0]};
+  $anticipated_office{secondvespers} = 0;
+  # TODO: Simplify with Tridentine rubrics.
+
+  return \%anticipated_office;
+}
+
 
 
 1;

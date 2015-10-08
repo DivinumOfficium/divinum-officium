@@ -3,13 +3,17 @@ package DivinumOfficium::Time;
 use strict;
 use warnings;
 
+use Carp;
+
 BEGIN
 {
   require Exporter;
 
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(julian_ordinal_date gregorian_ordinal_date);
+  our @EXPORT_OK = qw(julian_ordinal_date gregorian_ordinal_date ordinal_date
+    sunday_a_year_ago_mdy get_easter_mdy get_easter_ordinal
+    sundays_after_pentecost sundays_after_epiphany);
 }
 
 
@@ -79,7 +83,158 @@ BEGIN
 
     return $ordinal;
   }
+
+  # Wrapper to make it easy to select Gregorian or Julian date automatically
+  # at some point in the future.
+  sub ordinal_date { &gregorian_ordinal_date }
 }
+
+
+sub year_ago_mdy
+{
+  my @date_mdy = @_;
+  $date_mdy[2]--;
+  $date_mdy[1]-- if($date_mdy[0] == 2 && $date_mdy[1] == 29);
+  return @date_mdy;
+}
+
+
+sub dates_mdy_equal
+{
+  my ($a_ref, $b_ref) = @_;
+  return
+    $a_ref->[0] == $b_ref->[0] &&
+    $a_ref->[1] == $b_ref->[1] &&
+    $a_ref->[2] == $b_ref->[2];
+}
+
+
+# Given an extended date in which we allow out-of-range days and months to be
+# interpreted in the natural way, return an equivalent date expressed in the
+# more conventional form.
+sub canonicalise_date_mdy
+{
+  my ($month, $day, $year) = @_;
+
+  while ($month > 12)
+  {
+    while ($month > 12)
+    {
+      $month -= 12;
+      $year++;
+    }
+
+    while ($day > days_in_month($month)) {
+      $day -= days_in_month($month);
+      $month++;
+    }
+  }
+
+  while ($month < 1)
+  {
+    while ($month < 1)
+    {
+      $month += 12;
+      $year--;
+    }
+
+    while ($day < 1)
+    {
+      $day += days_in_month($month - 1);
+      $month--;
+    }
+  }
+
+  return ($month, $day, $year);
+}
+
+
+# Return the day of the week corresponding to an ordinal date.  This is
+# independent of Gregorian/Julian-ness.
+sub day_of_week_ordinal
+{
+  # 1-1-1 was a Friday, apparently.
+  my $first_jan_year_one = 5;
+  return (shift() + $first_jan_year_one) % 7;
+}
+
+
+# Go back a year less one day, and then keep going back until we land on a
+# Sunday.
+sub sunday_a_year_ago_mdy
+{
+  my ($month, $day, $year) = year_ago_mdy(@_);
+  my $year_ago_less_one_day = ordinal_date($month, $day, $year) + 1;
+  return canonicalise_date_mdy(
+    $month,
+    $day - day_of_week_ordinal($year_ago_less_one_day),
+    $year);
+}
+
+
+sub sundays_after_pentecost
+{
+  use integer;
+
+  my $year = shift;
+  my $christmas_eve = ordinal_date(12, 24, $year);
+  my $advent4 = $christmas_eve - day_of_week_ordinal($christmas_eve);
+  my $easter = get_easter_ordinal($year);
+
+  # $advent4 - $easter counts the days from Easter Sunday inclusive to the
+  # fourth Sunday of Advent exclusive.  From these we want to subtract the
+  # eight Sundays of Paschaltide and the three of Advent that were counted.
+  my $overcounted_sundays = 8 + 3;
+
+  confess if($advent4 < $easter);
+  confess if($advent4 - $easter > (28 + $overcounted_sundays) * 7);
+
+  return ($advent4 - $easter) / 7 - $overcounted_sundays;
+}
+
+
+sub sundays_after_epiphany
+{
+  use integer;
+
+  my $year = shift;
+  my $epi_octave = ordinal_date(1, 13, $year);
+  my $epi1 = $epi_octave - day_of_week_ordinal($epi_octave);
+  my $septuagesima = get_easter_ordinal($year) - 9 * 7;
+
+  confess if($septuagesima < $epi1);
+  confess if($septuagesima - $epi1 > 6 * 7);
+
+  return ($septuagesima - $epi1) / 7;
+}
+
+
+sub get_easter_mdy
+{
+  use integer;
+
+  my $year = shift;
+
+  my $c = $year / 100;
+  my $n = $year - 19 * ($year / 19);
+  my $k = ($c - 17) / 25;
+  my $i = $c - ($c / 4) - (($c - $k) / 3) + 19 * $n + 15;
+  $i = $i - 30 * ($i / 30);
+  $i = $i - ($i / 28) * (1 - ($i / 28) * (29 / ($i + 1))) * ((21 - $n) / 11);
+  my $j = $year + ($year / 4) + $i + 2 - $c + ($c / 4);
+  $j = $j - 7 * ($j / 7);
+  my $l = $i - $j;
+  my $m = 3 + (($l + 40) / 44);
+  my $d = $l + 28 - 31 * ($m / 4);
+  return ($m, $d, $year);
+}
+
+
+sub get_easter_ordinal
+{
+  return ordinal_date(get_easter_mdy(shift));
+}
+
 
 1;
 
