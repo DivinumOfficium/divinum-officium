@@ -103,7 +103,6 @@ $setupsave =~ s/\r*\n*//g;
 $setupsave =~ s/\"/\~24/g;	 
 $hora = '';
 
-precedence(); #for today
 $odate = $date1;  
 $command = strictparam('command');  
 if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Past)/i)
@@ -120,6 +119,8 @@ if (!$version) {$version = ($version1) ? $version1 : 'Divino Afflatu';}
 
 setmdir($version);
   
+precedence(); #for today
+
 $testmode = strictparam('testmode');
 
 $kmonth = strictparam('kmonth'); 
