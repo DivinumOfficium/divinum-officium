@@ -249,6 +249,9 @@ sub load_calendar_file($$;$)
 
   $basecal ||= {offices => {}, calpoints => {}};
 
+  # XXX: Missa bringup workaround: calendar files live in horas/ only.
+  $datafolder = "$datafolder/../horas/";
+
   my %caldata = %{horas::setupstring($datafolder, '', $filename)};
 
   foreach my $calpoint (keys(%caldata))
