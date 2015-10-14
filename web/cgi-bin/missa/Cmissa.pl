@@ -6,7 +6,7 @@ use utf8;
 # Date : 01-20-08
 # Divine Office
 
-package missa;
+package horas;
 #1;
                         
 #use warnings;

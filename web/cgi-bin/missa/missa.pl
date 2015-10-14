@@ -6,7 +6,7 @@ use utf8;
 # Date : 03-30-10
 # Sancta Missa
 
-package missa;
+package horas;
 #1;
                         
 #use warnings;
