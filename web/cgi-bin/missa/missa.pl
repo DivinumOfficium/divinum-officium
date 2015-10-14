@@ -172,14 +172,14 @@ $setupsave = printhash(\%setup, 1);
 $setupsave =~ s/\r*\n*//g;
 $setupsave =~ s/\"/\~24/g;	  
 
-precedence(); #fills our hashes et variables  
+my ($offices_ref, $temporal_ref) = precedence();
 
 # prepare title
 $daycolor =   ($commune =~ /(C1[0-9])/) ? "blue" :
    ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" : 
    ($dayname[1] =~ /duplex/i) ? "red" : 
     "grey"; 
-build_comment_line();
+build_comment_line($offices_ref, $temporal_ref);
 
 #prepare main pages
 $title = "Sancta Missa";
