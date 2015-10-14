@@ -26,7 +26,7 @@ use Time::Local;
 use locale;
 
 use lib "$Bin/..";
-use DivinumOfficium::Main qw(vernaculars);
+use DivinumOfficium::Main qw(vernaculars precedence);
 
 $error = '';	 
 $debug = '';
