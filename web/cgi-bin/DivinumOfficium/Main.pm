@@ -134,10 +134,15 @@ sub initialise_hour
       $winning_office_ref,
       $version,
       $lang1)};
-    our %winner2 = %{DivinumOfficium::Main::get_office_data(
-      $winning_office_ref,
-      $version,
-      $lang2)};
+
+    our %winner2;
+    if ($lang2)
+    {
+      %winner2 = %{DivinumOfficium::Main::get_office_data(
+        $winning_office_ref,
+        $version,
+        $lang2)};
+    }
 
     our $rule = $winner{Rule};
 
