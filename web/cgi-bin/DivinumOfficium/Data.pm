@@ -33,7 +33,9 @@ sub get_office_data
 {
   my ($office_desc_ref, $version, $lang) = @_;
 
-  $office_desc_ref && $version && $lang or confess;
+  $office_desc_ref or confess 'No office descriptor';
+  $version         or confess 'No version specified';
+  $lang            or confess 'No language specified';
 
   if (!defined($office_desc_ref->{__private}{office_data}{$lang}))
   {
