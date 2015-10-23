@@ -1039,7 +1039,7 @@ sub resolve_translation
 
   my $days_to_first_day = $ordinal_start_date -
       ordinal_date(@transfer_date_mdy);
-  confess if($days_to_first_day > TRANSLATION_CALC_LIMIT);
+  confess $days_to_first_day if($days_to_first_day > TRANSLATION_CALC_LIMIT);
 
   # Resolve occurrence for each day, picking up and dropping feasts as
   # appropriate.
