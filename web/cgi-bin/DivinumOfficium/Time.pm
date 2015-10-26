@@ -13,7 +13,7 @@ BEGIN
   our @ISA = qw(Exporter);
   our @EXPORT_OK = qw(julian_ordinal_date gregorian_ordinal_date ordinal_date
     sunday_a_year_ago_mdy get_easter_mdy get_easter_ordinal
-    sundays_after_pentecost sundays_after_epiphany);
+    sundays_after_pentecost sundays_after_epiphany leap_year days_in_month);
 }
 
 
@@ -89,6 +89,22 @@ BEGIN
   sub ordinal_date { &gregorian_ordinal_date }
 }
 
+sub julian_leap_year
+{
+  my $year = shift;
+  return !($year & 3);
+}
+
+sub gregorian_leap_year
+{
+  my $year = shift;
+  return 0 if (!julian_leap_year($year));
+  return 1 if ($year % 400 == 0);
+  return 0 if ($year % 100 == 0);
+  return 1;
+}
+
+sub leap_year { &gregorian_leap_year }
 
 sub year_ago_mdy
 {
@@ -116,7 +132,7 @@ sub canonicalise_date_mdy
 {
   my ($month, $day, $year) = @_;
 
-  while ($month > 12)
+  do
   {
     while ($month > 12)
     {
@@ -124,13 +140,13 @@ sub canonicalise_date_mdy
       $year++;
     }
 
-    while ($day > days_in_month($month)) {
-      $day -= days_in_month($month);
+    while ($day > days_in_month($month, $year) && $month <= 12) {
+      $day -= days_in_month($month, $year);
       $month++;
     }
-  }
+  } while ($month > 12);
 
-  while ($month < 1)
+  do
   {
     while ($month < 1)
     {
@@ -138,12 +154,14 @@ sub canonicalise_date_mdy
       $year--;
     }
 
-    while ($day < 1)
+    while ($day < 1 && $month > 0)
     {
-      $day += days_in_month($month - 1);
+      my $prev_month = $month - 1;
+      $prev_month = 12 if ($month == 0);
+      $day += days_in_month($prev_month, $year);
       $month--;
     }
-  }
+  } while ($month < 1);
 
   return ($month, $day, $year);
 }
@@ -167,7 +185,7 @@ sub sunday_a_year_ago_mdy
   my $year_ago_less_one_day = ordinal_date($month, $day, $year) + 1;
   return canonicalise_date_mdy(
     $month,
-    $day - day_of_week_ordinal($year_ago_less_one_day),
+    $day + 1 - day_of_week_ordinal($year_ago_less_one_day),
     $year);
 }
 
@@ -233,6 +251,14 @@ sub get_easter_mdy
 sub get_easter_ordinal
 {
   return ordinal_date(get_easter_mdy(shift));
+}
+
+
+sub days_in_month
+{
+  my ($month, $year) = @_;
+  return 29 if($month == 2 && leap_year($year));
+  return (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)[$month - 1];
 }
 
 

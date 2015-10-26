@@ -18,7 +18,7 @@ use DivinumOfficium::Scripting qw(
 );
 use DivinumOfficium::Propers;
 use DivinumOfficium::Calendar::Definitions;
-use DivinumOfficium::Time qw(gregorian_ordinal_date get_easter_mdy);
+use DivinumOfficium::Time qw(gregorian_ordinal_date get_easter_mdy leap_year);
 
 my @lines;
 my $a = 4;
@@ -234,11 +234,7 @@ sub nextday {
 #*** leapyear($year)
 # returns 1 if leapyear, otherwise 0
 sub leapyear {
-  my $year = shift;  
-  if (($year % 400) == 0) {return 1;}
-  if (($year % 100) == 0) {return 0;}
-  if (($year % 4) == 0) {return 1;}
-  return 0;
+  return leap_year(shift);
 }
 
 #*** get_sday($month, $day, $year)

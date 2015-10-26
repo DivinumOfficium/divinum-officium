@@ -17,6 +17,7 @@ use DivinumOfficium::Time qw(
   ordinal_date
   sundays_after_pentecost
   sundays_after_epiphany
+  days_in_month
 );
 
 use Carp;
@@ -632,14 +633,6 @@ sub cmp_commemoration
   }
 
   return cmp_occurrence(@_);
-}
-
-
-sub days_in_month
-{
-  my ($month, $year) = @_;
-  return 29 if($month == 2 && horas::leapyear($year));
-  return (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)[$month - 1];
 }
 
 
