@@ -1,7 +1,11 @@
 use strict;
 use warnings;
 
-use DivinumOfficium::Time qw(julian_ordinal_date gregorian_ordinal_date);
+use DivinumOfficium::Time qw(
+  julian_ordinal_date
+  gregorian_ordinal_date
+  sunday_a_year_ago_mdy
+);
 
 use Test::More;
 
@@ -92,6 +96,61 @@ foreach my $date_ref (
 )
 {
   is(date_to_days(@$date_ref), old_date_to_days(@$date_ref), "dtd(@$date_ref)");
+}
+
+
+print "# canonicalise_date_mdy\n";
+
+my @test_date_pairs = (
+  [[13, 1, 2015], [1, 1, 2016]],
+  [[2, 30, 2015], [3, 2, 2015]],  # Not a leap year.
+  [[3, 0, 2015], [2, 28, 2015]],
+  [[2, 29, 2015], [3, 1, 2015]],
+  [[2, 30, 2016], [3, 1, 2016]],  # Leap year.
+  [[3, 0, 2016], [2, 29, 2016]],
+  [[2, 29, 2016], [2, 29, 2016]],
+);
+
+foreach my $pair (@test_date_pairs)
+{
+  my $desc = "$pair->[0][0]-$pair->[0][1]-$pair->[0][2] |-> " .
+             "$pair->[1][0]-$pair->[1][1]-$pair->[1][2]";
+  ok(DivinumOfficium::Time::dates_mdy_equal(
+      [DivinumOfficium::Time::canonicalise_date_mdy(@{$pair->[0]})],
+      $pair->[1]),
+    $desc);
+}
+
+print "# sunday_a_year_ago_mdy\n";
+
+# Iterate over all days in a four-year interval, evaluating the function and
+# making some checks.
+
+my @days_in_month = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+foreach my $year (2000..2003)
+{
+  foreach my $month (1..12)
+  {
+    my $days = $days_in_month[$month - 1];
+    $days++ if($month == 2 && $year == 2000);
+    foreach my $day (1..$days)
+    {
+      my $crosses_leap_day =
+        ($year == 2000 &&
+          ($month > 2 || ($month == 2 && $day == 29)) ||
+          ($year == 2001 && $month <= 2));
+      my @sun = sunday_a_year_ago_mdy($month, $day, $year);
+      my $ord = gregorian_ordinal_date($month, $day, $year);
+      my $ord_sun = gregorian_ordinal_date(@sun);
+      my $dow = DivinumOfficium::Time::day_of_week_ordinal($ord);
+      my $dow_sun = DivinumOfficium::Time::day_of_week_ordinal($ord_sun);
+
+      # Here are the actual tests.
+      is($dow_sun, 0, "sya($month-$day-$year) is Sunday");
+      cmp_ok($ord - $ord_sun, '<=', 364 + ($crosses_leap_day ? 1 : 0) + 6,
+        "sya($month-$day-$year) is not too far back");
+    }
+  }
 }
 
 done_testing();
