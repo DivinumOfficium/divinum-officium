@@ -113,8 +113,8 @@ our $communename = 'Commune';
     
 #*** handle different actions
 #after setup
-if ($command =~ /change/i ) { 
- $command = $';                 
+if ($command =~ /change(.*)/is ) { 
+ $command = $1;
  getsetupvalue($command);   
  if ($command =~ /parameters/) {setcookies('missap', 'parameters');}
 }    
@@ -192,9 +192,9 @@ $title = "Sancta Missa";
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
 
-if ($command =~ /setup/i) {	  
+if ($command =~ /setup(.*)/is) {	  
   $pmode = 'setup';
-  $command = $';
+  $command = $1;
   setuptable($command);
 
 } elsif ($command =~ /pray/i) {
@@ -361,7 +361,7 @@ sub headline {
   my $numsel = setmissanumber();
   $numsel = "<BR><BR>$numsel<BR>" if $numsel;
   
-  if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
+  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
   print << "PrintTag";
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>

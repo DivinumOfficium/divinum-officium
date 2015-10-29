@@ -115,11 +115,13 @@ our $italicfont = 'italic';
     
 #*** handle different actions
 #after setup
-if ($command =~ /change/i ) { 
- $command = $';                 
+if ($command =~ /change(.*)/i ) { 
+ $command = $1;
  getsetupvalue($command);   
  if ($command =~ /parameters/) {setcookies('horasp', 'parameters');}
 }    
+
+$setup{'parameters'} = clean_setupsave($setup{'parameters'});
 
 eval($setup{'parameters'}); #$priest, $lang1, colors, sizes
 eval($setup{'general'});  #$expand, $version, $lang2       
@@ -238,9 +240,9 @@ if ($command =~ /kalendar/) {  # kalendar widget
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
 
-if ($command =~ /setup/i) {	  
+if ($command =~ /setup(.*)/i) {	  
   $pmode = 'setup';
-  $command = $';
+  $command = $1;
   setuptable($command);
 
 } elsif ($command =~ /pray/) {
@@ -504,7 +506,7 @@ PrintTag
 #*** headline2($head) prints just two lines of header (for widget)
 sub headline2 {
   my $head = shift;
-  if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
+  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
   $comment =~ s/([\w]+)=([\w+-]+)/$1="$2"/g;
   print "<p><span style='text-align:center;color:$daycolor'>$headline<br/></span>";
   print "<span>$comment<BR/><BR/></span></p>";
@@ -513,7 +515,7 @@ sub headline2 {
 #*** headline($head) prints headline for main and pray
 sub headline {
   my $head = shift;
-	if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
+  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
   print << "PrintTag";
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>

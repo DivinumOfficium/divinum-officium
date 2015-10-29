@@ -117,11 +117,13 @@ our $communename = 'Commune';
     
 #*** handle different actions
 #after setup
-if ($command =~ /change/i ) { 
- $command = $';                 
+if ($command =~ /change(.*)/i ) { 
+ $command = $1;
  getsetupvalue($command);   
  if ($command =~ /parameters/) {setcookies('horasp', 'parameters');}
 }    
+
+$setup{'parameters'} = clean_setupsave($setup{'parameters'});
 
 eval($setup{'parameters'}); #$priest, $lang1, colors, sizes
 eval($setup{'general'});  #$expand, $version, $lang2       
@@ -216,9 +218,9 @@ for ($i = 1; $i <= $completed; $i++) {$hcolor[$i] = 'maroon';}
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
 
-if ($command =~ /setup/i) {	  
+if ($command =~ /setup(.*)/i) {	  
   $pmode = 'setup';
-  $command = $';
+  $command = $1;
   setuptable($command);
 
 } elsif ($command =~ /pray/) {
@@ -386,7 +388,7 @@ PrintTag
 #*** hedline($head) prints headline for main and pray
 sub headline {
   my $head = shift;
-  if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
+  $headline =~ s{(!.*)}{<FONT SIZE=1>$1</FONT>}s;
   my $h = ($hora =~ /(Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium)/i) ? $hora : '';
   print << "PrintTag";
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>

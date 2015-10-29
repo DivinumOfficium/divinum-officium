@@ -86,6 +86,8 @@ else {%setup = split(';;;', $setupsave);}
 
 # We don't use the popuplang parameter, and instead use lang1 and lang2.
 
+$setup{'parameters'} = clean_setupsave($setup{'parameters'});
+
 eval($setup{'parameters'});
 eval($setup{'general'});  
 $popup = strictparam('popup');      

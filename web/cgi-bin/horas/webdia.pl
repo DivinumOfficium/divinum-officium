@@ -313,6 +313,17 @@ sub strictparam
     return $v;
 }
 
+#*** clean_setupsave($setupsave)
+# Takes a settings string in the format stored in the cookies, and returns a
+# cleaned version.
+sub clean_setupsave
+{
+  my $setupsave = shift;
+  $setupsave =~ s/[‘’]|\x{e2}\x{80}(\x{98}|\x{99})/'/g;
+
+  return $setupsave;
+}
+
 #*** setfont($font, $text)
 # input font description is "[size][ italic][ bold] color" format, and the text
 # returns <FONT ...>$text</FONT> string
@@ -473,14 +484,14 @@ sub setcross
     }
     else
     {
-        # Cross type 3: Cross of Lorraine
+        # Cross type 3: CROSS OF LORRAINE
         my $csubst = "<span style='color:red; font-size:1.25em'>&#x2628;</span>";
         $line =~ s/\+\+\+/$csubst/g;
-        # Cross type 2: Greek Cross (Cross of Jerusalem)
+        # Cross type 2: MALTESE CROSS
         my $csubst = "<span style='color:red; font-size:1.25em'>&#x2720;</span>";
         $line =~ s/\+\+/$csubst/g;
-        # cross type 1: Latin Cross
-        my $csubst = "<span style='color:red; font-size:1.25em'>&#x271D;</span>";
+        # cross type 1: CROSS OF JERUSALEM
+        my $csubst = "<span style='color:red; font-size:1.25em'>&#x2629;</span>";
         $line =~ s/ \+ / $csubst /g;
     }
 
