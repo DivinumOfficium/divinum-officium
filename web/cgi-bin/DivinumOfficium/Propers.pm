@@ -44,6 +44,15 @@ use DivinumOfficium::Common qw(SECOND_VESPERS_AND_COMPLINE);
 }
 
 
+#*** is_oration($name)
+# Returns whether the office part $name is a collect, secret or postcommunion.
+sub is_oration
+{
+  my $name = shift;
+  return grep { $_ eq $name } ('Oratio', 'Secreta', 'Postcommunio');
+}
+
+
 #*** get_office_part($office_desc_ref, $name, $hour, $segment, $dayofweek,
 #                    $version, $lang)
 # Gets the text of the $name-d part of the office specified by
@@ -62,6 +71,7 @@ use DivinumOfficium::Common qw(SECOND_VESPERS_AND_COMPLINE);
     my ($office_desc_ref, $name, $hour, $segment, $dayofweek, $version,
       $lang) = @_;
     my @names = ($name);
+    my $mass = $hour =~ /SanctaMissa/i;
 
     my $office_data_ref = get_office_data($office_desc_ref, $version, $lang);
 
@@ -70,7 +80,7 @@ use DivinumOfficium::Common qw(SECOND_VESPERS_AND_COMPLINE);
     if ($version !~ /Trident/i &&
       (my ($plural, $class, $pope) = papal_rule($office_data_ref->{Rule})))
     {
-      if ($name eq 'Oratio')
+      if (is_oration($name))
       {
         return papal_prayer($lang, $plural, $class, $pope, $name, $version);
       }
@@ -88,7 +98,7 @@ use DivinumOfficium::Common qw(SECOND_VESPERS_AND_COMPLINE);
       unshift @names, "$name $segment";
     }
 
-    if ($name eq 'Oratio')
+    if ($name eq 'Oratio' && !$mass)
     {
       unshift @names, "$name $hour";
     }
@@ -105,7 +115,7 @@ use DivinumOfficium::Common qw(SECOND_VESPERS_AND_COMPLINE);
       }
     }
     
-    if (!defined($part))
+    if (!defined($part) && !$mass)
     {
       # Not in proper or common. Try specials or psalter, as appropriate.
       my $name_to_ss_ref = sub

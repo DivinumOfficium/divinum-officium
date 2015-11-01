@@ -870,16 +870,19 @@ sub cache_prayers()
 
 
 
-#*** sub expand($line, $lang, $antline)
+#*** sub expand($line, $lang, $offices_ref, $antline)
 # for & references calls the sub
 # $ references are filled from Psalterium/Prayers file
 # antline to handle redding the beginning of psalm is same as antiphona
 # returns the expanded text or the link
+# @$offices_ref is a list of offices for the hour.  In some contexts this is
+# irrelevant (and in some it is undefined), in which case it should be a
+# reference to an empty list.
 sub expand
 {
   use strict;
 
-  my ($line, $lang, $antline) = @_;
+  my ($line, $lang, $offices_ref, $antline) = @_;
 
   $line =~ s/^\s+//;
   $line =~ s/\s+$//;
@@ -908,7 +911,7 @@ sub expand
 
     # Get function name and any parameters.
     my ($function_name, $arg_string) = ($line =~ /(.*?)(?:[(](.*)[)])?$/);
-    my @args = (parse_script_arguments($arg_string), $lang);
+    my @args = (parse_script_arguments($arg_string), $lang, $offices_ref);
 
     # If we have an antiphon, pass it on to the script function.
     if ($antline)

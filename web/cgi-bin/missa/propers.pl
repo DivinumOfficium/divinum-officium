@@ -7,6 +7,7 @@ use utf8;
 
 # Defines ScriptFunc and ScriptShortFunc attributes.
 use DivinumOfficium::Scripting;
+use DivinumOfficium::Mass qw(generate_commemoration_script);
 
 $a=4;
 
@@ -170,7 +171,7 @@ sub translate_label
 }
 
 
-#*** oratio($lang, $type)
+#*** oratio($lang, $type, @offices)
 #input language
 # collects and prints the appropriate oratio and commemorationes
 # on ember days also includes all the additional lections
@@ -179,6 +180,7 @@ sub oratio
 {
     my $lang = shift;
     my $type = shift;
+    my @offices = @_;
     my $retvalue = '';
     our %cc = undef;
     our $ccind = 0;
@@ -236,31 +238,6 @@ sub oratio
         $w = "$1\_\n$2"; #triduum 1960  not 1955
     }
 
-    my $sub_unica_conc =
-      ($commemoratio{Rule} =~ /Sub unica conclusione in commemoratione/i) ||
-      ($winner{Rule} =~ /Sub unica concl(usione)?\s*$/mi);
-
-    if ($sub_unica_conc)
-    {
-        if ($version !~ /1960/)
-        {
-            if ($w =~ /(.*?)(\n\$Per [^\n\r]*?\s*)$/s)
-            {
-              $addconclusio = $2;
-              $w = $1;
-            }
-            if ($w =~ /(.*?)(\n\$Qui [^\n\r]*?\s*)$/s)
-            {
-              $addconclusio = $2;
-              $w = $1;
-            }
-        }
-        else
-        {
-            $w =~ s/\$(Per|Qui) .*?\n//i;
-        }
-    }
-
     our %prayers;
     my $orm = '';
 
@@ -290,11 +267,11 @@ sub oratio
         $c =  replaceNpb($c, $pope, $lang, 'p', 'um') if $coron =~ /Coronatio/i;
         $retvalue .= "_\n\$Papa\n$c";
     }
-    return resolve_refs($retvalue, $lang) if $rule =~ /omit .*? commemoratio/i || ($version =~ /1960/ && $solemn);
+    return resolve_refs($retvalue, $lang, @offices) if $rule =~ /omit .*? commemoratio/i || ($version =~ /1960/ && $solemn);
 
     $w = '';
     our $oremusflag = "\_\n$prayers{$lang}->{Oremus}\n";
-    $oremusflag = '' if $type =~ /Secreta/i || $sub_unica_conc;
+    $oremusflag = '' if $type =~ /Secreta/i;
     if (exists($w{'$type Vigilia'}) && ($version !~ /(1955|1960)/ || $rule =~ /Vigilia/i))
     {
         $w = "!Commemoratio vigilia\n";
@@ -309,49 +286,16 @@ sub oratio
         $retvalue .= LectionesTemporum($lang);
     }
 
-    #* add commemorated office
-    if ($commemoratio1 && $rank < 6)
-    {
-        $w = getcommemoratio($commemoratio1, $type, $lang);
-        setcc($w, 1, setupstring($datafolder, $lang, $commemoratio1)) if $w;
-    }
+    our $dayofweek;
+    my @commemorations = @offices[1..$#offices];
+    my @commem_script = generate_commemoration_script(\@commemorations, $type,
+      $dayofweek, $version, $lang, \%prayers);
+    $retvalue .= join('', @commem_script);
 
-    if ( $commemoratio && (
-        $rank < 6 ||
-        $version !~ /(1955|1960)/i ||
-        $commemoratio{Rank} =~ /(Dominica|;;6)/i ||
-        ($commemoratio =~ /Tempora/i && $commemoratio{Rank} =~ /;;[23]/))
-    )
-    {
-        $w = getcommemoratio($commemoratio, $type, $lang);
-        setcc($w, 2, setupstring($datafolder, $lang, $commemoratio)) if $w;
-    }
-
-    #add commemoratio in winner
-    if ( $rule !~ /nocomm1960/i && (
-        (
-            $version =~ /(1955|1960)/ &&
-            ($winner{'Commemoratio Oratio'} !~ /Octav/i || $winner{'Commemoratio Oratio'} =~ /Octav.*?Nativ/i)
-        ) ||
-        !($version =~ /(1955|1960)/ && $rank >= 5)
-    ))
-    {
-        commemoratio('winner', $type, $lang);
-
-        if ($version !~ /1960/ || $rank < 5 )
-        {
-            #commemoratio from commemorated office
-            commemoratio('commemoratio', $type, $lang) if $commemoratio;
-            commemoratio('commemoratio1', $type, $lang) if $commemoratio1;
-            commemoratio('commemorated', $type, $lang) if $commemorated && $version !~ /1960/;
-        }
-    }
-
-    $retvalue = getcc($retvalue);
     if ($version =~ /1955|1960/ || !checksuffragium())
     {
         $retvalue .= $addconclusio;
-        return resolve_refs($retvalue, $lang);
+        return resolve_refs($retvalue, $lang, @offices);
     }
 
     $rule .= $1 if ($winner =~ /Sancti/i && $duplex < 3 && $scriptura && $scriptura{Rule} =~ /(Suffr.*?=.*?;;)/i);
@@ -375,7 +319,7 @@ sub oratio
     }
 
     $retvalue .= $addconclusio;
-    return resolve_refs($retvalue, $lang);
+    return resolve_refs($retvalue, $lang, @offices);
 }
 
 #*** setcc($str, $code, \%source) {
@@ -802,12 +746,12 @@ sub getitem {
 }
 
 sub Vidiaquam : ScriptFunc {
-  my $lang = shift;
+  my ($lang, $offices_ref) = @_; 
   if ($solemn && $rank >=5 && $winner{Rank} !~ /(Feria|Die |Sabbato)/i && $votive !~ /Defunct/i) {
     our %prayers;
     my $name = ($dayname[0] =~ /Pasc/i) ? 'Vidi aquam' : 'Asperges me';
     my $w = $prayers{$lang}->{$name};
-    return resolve_refs($w);
+    return resolve_refs($w, @$offices_ref);
   } else {return '';}
 }
 
@@ -891,8 +835,8 @@ sub introitus : ScriptFunc {
 }
 
 sub collect : ScriptFunc {
- my $lang = shift; 
- return oratio($lang, 'Oratio');
+  my ($lang, $offices_ref) = @_; 
+  return oratio($lang, 'Oratio', @$offices_ref);
 }
 
 sub lectio : ScriptFunc {
@@ -942,8 +886,8 @@ sub offertorium : ScriptFunc {
 
 
 sub secreta : ScriptFunc {
-  my $lang = shift;
-  my $t = oratio($lang, 'Secreta');
+  my ($lang, $offices_ref) = @_; 
+  my $t = oratio($lang, 'Secreta', @$offices_ref);
   return "\n$t";
 }
 
@@ -1091,8 +1035,8 @@ sub DominusVobiscum : ScriptFunc
 }
 
 sub postcommunio : ScriptFunc {
-  my $lang = shift;
-  my $str = oratio($lang, 'Postcommunio');
+  my ($lang, $offices_ref) = @_; 
+  my $str = oratio($lang, 'Postcommunio', @$offices_ref);
   if ($rule =~ /Super pop/i) {$str .= "_\n_\n" . getitem('Super populum', $lang);}
   return $str;
 }

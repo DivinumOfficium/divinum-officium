@@ -5,9 +5,11 @@ use utf8;
 # Date : 01-20-08
 # Divine Office
 
+use DivinumOfficium::Main qw(precedence);
+
 $a = 1;
 
-#*** ordo()
+#*** ordo($offices_ref)
 # collects and prints the ordo
 # first let specials to fill the chapters
 # then break the text into units (separated by double newline)
@@ -15,6 +17,7 @@ $a = 1;
 #and prints the result
 sub ordo
 {
+my $offices_ref = shift;
              
 $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;    
 #???%translate = %{setupstring($datafolder, $tlang, "Ordo/Translate.txt")}; 
@@ -24,13 +27,23 @@ cache_prayers();
 $savesolemn = $solemn;
 if ($winner =~ /Quad6-[456]/i) {$solemn = 1;}
 $column = 1;
-if ($Ck) {$version = $version1; setmdir($version); precedence();}
+if ($Ck) {
+  $version = $version1;
+  setmdir($version);
+  ($offices_ref) = precedence();
+}
 @script1 = getordinarium($lang1, $command); 
 @script1 = specials(\@script1, $lang1);		
+my @offices1 = @$offices_ref;
 $column = 2;
-if ($Ck) {$version = $version2; setmdir($version); precedence();}
+if ($Ck) {
+  $version = $version2;
+  setmdir($version);
+  ($offices_ref) = precedence();
+}
 @script2 = getordinarium($lang2, $command);	  
 @script2 = specials(\@script2, $lang2);  
+my @offices2 = @$offices_ref;
 $solemn = $savesolemn; 
 table_start();
              
@@ -71,7 +84,7 @@ while ($ind1 < @script1 || $ind2 < @script2) {
   $column = 1;
   if ($Ck) {$version = $version1;}
 
-  $text1 =  resolve_refs($text1, $lang1);  
+  $text1 =  resolve_refs($text1, $lang1, @offices1);  
   
   $text1 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;  
 
@@ -81,7 +94,7 @@ while ($ind1 < @script1 || $ind2 < @script2) {
   if (!$only) {
     $column = 2;        
     if ($Ck) {$version = $version2;}
-    $text2 = resolve_refs($text2, $lang2);    
+    $text2 = resolve_refs($text2, $lang2, @offices2);    
  	$text2 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
 
     if ($lang2 =~ /Latin/i && $version =~ /1960/) {$text2 = jtoi($text2);}
@@ -120,12 +133,13 @@ sub getunit {
   return ($t, $ind);
 }
 
-#*** resolve_refs($text_of_block, $lang)
+#*** resolve_refs($text_of_block, $lang, @offices)
 #resolves $name &name references and special characters 
 #retuns the to be listed text
 sub resolve_refs {
   my $t = shift;
   my $lang = shift;
+  my @offices = @_;
   my @t = split("\n", $t);
 
   my $t = '';
@@ -157,12 +171,12 @@ sub resolve_refs {
       #prepares reading the part of common w/ antiphona
       if ($line =~ /psalm/ && $t[$it -1] =~ /^\s*Ant\. /i)
       {
-        $line = expand($line, $lang, $t[$it - 1]);
+        $line = expand($line, $lang, \@offices, $t[$it - 1]);
       }
-      else {$line = expand($line, $lang);}
+      else {$line = expand($line, $lang, \@offices);}
 
       if ((!$Tk && $line !~ /\<input/i) || ($Tk && $line !~ /\% .*? \%/))
-        {$line = resolve_refs($line, $lang);}  #for special chars
+        {$line = resolve_refs($line, $lang, @offices);}  #for special chars
     }
     #cross
     $line = setcross($line);

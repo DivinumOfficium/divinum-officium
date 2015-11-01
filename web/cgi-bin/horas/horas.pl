@@ -133,7 +133,12 @@ sub getunit {
 #retuns the to be listed text
 sub resolve_refs {
   my $t = shift;        
-  my $lang = shift;	 
+  my $lang = shift;
+
+  # At present the list of offices passed to expand() is only relevant at Mass.
+  # For now, create an empty office-list so that the real thing will be easier
+  # to plumb in if needed.
+  my @offices = ();
 
   my @t = split("\n", $t);
 				
@@ -163,11 +168,11 @@ sub resolve_refs {
       $line =~ s/^\s+//;   
       #prepares reading the part of common w/ antiphona
 	    if ($line =~ /psalm/ && $it > 0 && $t[$it -1] =~ /^\s*Ant\. /i) {
-	      $line = expand($line, $lang, $t[$it - 1]);
+	      $line = expand($line, $lang, \@offices, $t[$it - 1]);
           
           # If the psalm has a cross, then so should the antiphon.
           @resolved_lines[-1] .= setfont($smallfont, " \x{2021}") if $line =~ /\x{2021}/;
-	    } else {$line = expand($line, $lang);}  
+	    } else {$line = expand($line, $lang, \@offices);}  
                                            
     if ((!$Tk && $line !~ /\<input/i) || ($Tk && $line !~ /\% .*? \%/))
        {$line = resolve_refs($line, $lang);}  #for special chars
@@ -405,8 +410,14 @@ sub psalm : ScriptFunc {
                     
   my ($num, $lang, $antline);	
 
-  if (@a < 4) {$num = $a[0]; $lang = $a[1]; $antline = $a[2];}
-  else {$num = "$a[0]($a[1]-$a[2])"; $lang = $a[3]; $antline = $a[4];}	  
+  # Unpack arguments.  The undef is for $offices_ref.
+  if (@a < 5) {
+    ($num, $lang, undef, $antline) = @a;
+  }
+  else {
+    $num = "$a[0]($a[1]-$a[2])";
+    ($lang, undef, $antline) = @a[3..5];
+  }	  
 
   if ($ck) {
     if ($lang =~ $lang1) {$version = $version1}

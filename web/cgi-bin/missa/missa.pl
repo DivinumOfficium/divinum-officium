@@ -209,7 +209,7 @@ if ($command =~ /setup(.*)/is) {
 
   #eval($setup{'parameters'});
   $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
-  ordo(); 
+  ordo($offices_ref); 
 
   print << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
