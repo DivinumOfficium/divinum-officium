@@ -69,8 +69,8 @@ sub generate_commemoration_script
 
     push @script,
       "_\n" .
-      # TODO: Translate this line and fix its Latin grammar.
-      "!Commemoratio $office_desc_ref->{title}\n" .
+      # TODO: Translate this line.
+      "!Commemoratio $office_desc_ref->{genitive_title}\n" .
       "Ant. $antiphon\n" .
       "_\n" .
       $verse .
