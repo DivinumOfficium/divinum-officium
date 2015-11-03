@@ -455,6 +455,17 @@ sub default_calentry($)
       ('title' => "$feria[$2] infra Hebdomadam $week post Octavam Pentecostes",
       'rank' => 'Feria Simplex');
   }
+  elsif(/^PentEpi(\d)-(\d)$/i)
+  {
+    my $week = roman_numeral($1);
+    push @calentry, $2 == 0 ?
+      ('title' => "Dominica $week quae superfuit Post Epiphaniam",
+      'rank' => 'Dominica Semiduplex')
+      :
+      ('title' => "$feria[$2] infra Hebdomadam $week quae superfuit Post " .
+        'Epiphaniam',
+      'rank' => 'Feria Simplex');
+  }
 
   return @calentry;
 }
