@@ -824,6 +824,7 @@ sub resolve_occurrence
 sub filter_omitted_offices
 {
   my ($version, $winner, @tail) = @_;
+  return () unless($winner);
   my $rule_against_winner = make_occurrence_comparator($winner, $version);
   return (
     $winner,
