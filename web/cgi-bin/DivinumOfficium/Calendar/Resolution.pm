@@ -4,6 +4,7 @@ use strict;
 use warnings;
 
 use List::Util qw(first min max);
+use Data::Dumper;
 
 use DivinumOfficium::Calendar::Definitions;
 use DivinumOfficium::Calendar::Data qw(get_all_offices);
@@ -481,7 +482,7 @@ sub cmp_concurrence
     # Synthetic rank in concurrence. Smaller is better. Sundays and privileged
     # octave days are in the same category.
     # XXX: This is not nice. Replace with array of anonymous subs.
-    exists($$office{rite}) or confess();
+    exists($$office{rite}) or confess(Dumper($office));
     return
       $$office{rite} >= DOUBLE_RITE && $$office{rankord} <= 2 &&
         $$office{category} != OCTAVE_DAY_OFFICE ? $$office{rankord} :
@@ -892,7 +893,10 @@ sub get_evening_offices
 
   # When a day within an octave is only commemorated, it loses its second
   # vespers. Accordingly, we drop such offices from the list.
-  @preceding = $preceding[0], grep {$_->{category} != WITHIN_OCTAVE_OFFICE} @preceding[1..$#preceding] if(@preceding >= 2);
+  @preceding = (
+    $preceding[0],
+    grep {$_->{category} != WITHIN_OCTAVE_OFFICE} @preceding[1..$#preceding]
+  ) if(@preceding >= 2);
 
   # Label each office to indicate whether it's of first or second vespers.
   @preceding = map {{office => $_, segment => SECOND_VESPERS_AND_COMPLINE}} @preceding;
