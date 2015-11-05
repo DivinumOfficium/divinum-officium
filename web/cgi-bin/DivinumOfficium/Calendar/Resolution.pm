@@ -916,6 +916,29 @@ sub get_evening_offices
       (\@preceding, \@following, 'v2filter',
         sub { -cmp_concurrence($_[1], $_[0], $version) });
 
+  # Filter for omission.
+  foreach my $following_office_ref (@following)
+  {
+    @preceding =
+      grep
+        {
+          cmp_concurrence($_->{office}, $following_office_ref->{office},
+            $version) != OMIT_LOSER
+        }
+        @preceding;
+  }
+
+  foreach my $preceding_office_ref (@preceding)
+  {
+    @following =
+      grep
+        {
+          cmp_concurrence($preceding_office_ref->{office}, $_->{office},
+            $version) != -(OMIT_LOSER)
+        }
+        @following;
+  }
+
   my $winner = shift @$winning_arr_ref;
 
   # Apply the explicit filter if we have one.
@@ -929,12 +952,6 @@ sub get_evening_offices
       @$arr_ref = grep {exists $permitted_commemorations{$_->{office}{id}}} @$arr_ref;
     }
   }
-
-  # Filter the losing half for omission.
-  @$concurring_arr_ref =
-    grep
-      {$comparator->($_->{office}, $winner->{office}, $version) != OMIT_LOSER}
-      @$concurring_arr_ref;
 
   my $concurring = shift @$concurring_arr_ref;
 
