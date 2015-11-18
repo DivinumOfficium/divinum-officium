@@ -13,9 +13,9 @@ BEGIN
   our @ISA = qw(Exporter);
   our @EXPORT_OK = qw(julian_ordinal_date gregorian_ordinal_date ordinal_date
     sunday_a_year_ago_mdy get_easter_mdy get_easter_ordinal
-    sundays_after_pentecost sundays_after_epiphany leap_year days_in_month);
+    sundays_after_pentecost sundays_after_epiphany leap_year days_in_month
+    next_date_mdy next_date);
 }
-
 
 
 #*** julian_ordinal_date($month, $day, $year)
@@ -259,6 +259,18 @@ sub days_in_month
   my ($month, $year) = @_;
   return 29 if($month == 2 && leap_year($year));
   return (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)[$month - 1];
+}
+
+
+sub next_date_mdy
+{
+  return canonicalise_date_mdy($_[0], $_[1] + 1, $_[2]);
+}
+
+
+sub next_date
+{
+  return join('-', next_date_mdy(split(/-/, shift)));
 }
 
 

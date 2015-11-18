@@ -19,6 +19,8 @@ use DivinumOfficium::Time qw(
   sundays_after_pentecost
   sundays_after_epiphany
   days_in_month
+  next_date
+  next_date_mdy
 );
 
 use Carp;
@@ -634,20 +636,6 @@ sub cmp_commemoration
   }
 
   return cmp_occurrence(@_);
-}
-
-
-sub next_date_mdy
-{
-  my @date_mdy;
-  @date_mdy[1,0,2] = horas::nday(@_[1,0,2]);
-  return @date_mdy;
-}
-
-
-sub next_date
-{
-  return join('-', next_date_mdy(split(/-/, shift)));
 }
 
 
