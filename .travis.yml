@@ -2,7 +2,7 @@ language: "perl"
 perl:
   - "5.10"
 
-script: 'perl Build.PL && ./Build test $(find t -name *.t -type f)"'
+script: 'perl Build.PL && ./Build test "$(find t -name *.t -type f)"'
 
 branches:
   only:
