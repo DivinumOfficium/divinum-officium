@@ -1,0 +1,16 @@
+language: "perl"
+perl:
+  - "5.10"
+
+script: 'perl Build.PL && ./Build test $(find t -name *.t -type f)"'
+
+branches:
+  only:
+    - calcalc
+
+notifications:
+  email:
+    recipients:
+      secure: "cR0R+lL2nEt6Bz/bFvdXjf89mrlYRil60BME6Ztpsv/Aw2syO+ry6Y6y9EsYrVKbxl4i4gA8xbt2qYIWAEs+NmgiOMCIvBSFB/rcs8AYE6obBS3+w7su+Q6FXuBTT9cgWVS/LtRzbV1yWNJedwsQma+r0DOECZzG+HHD30s665hQKSS3e2EBtWkYlL+hzdHn+SK0LKD9lMulUvPZsxKX5o9+PzrzgdDp5bFgR1zjFGfoeUPrasnBbBc3wDNI66CwCE/BmmZvLjnOR678E9eRUjOpo9gH9unR7MdHAq7QurX5HoV4xIs+rqMvPvL2GNiwGAvMM2N2npO3Y8N61VZo/yvqT0yg2GiQ5IJev/L8S9ITkyJeiu12xBZw2BgsBL7R7VQLbUUym5aQXHlvfl+4O6NDSFF8DeA0mQ8fF251SHSPG0DCp4cGsT3481GOwd6BWi1DTmugPEgRVdeEQG9Xh/tNLFhBhFd2ixHpynmLpVqLkFGyzWtUifWa3a5yhLKc34UI+Y5E7SjQYQJE7/kPZDcR1Y+KrY4F+aN/BW6iCo/vcbThHKb8tWwX88q5NG8WE3DlkqlnpZe0IdbAD6m/H+7cD2E6AQmApK3WSWcmEKFj+pYpm9p3Cuoh+uvXPOePmr1NKDRm5DWF2Na11TgQmp/KBx+GCyR5xdrLuNHUrs0="
+    on_success: change
+    on_failure: always
