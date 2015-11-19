@@ -314,7 +314,7 @@ sub load_calendar_file($$;$)
         else
         {
           # Unlink from old calpoint.
-          splice($$basecal{calpoints}{$calpoint}, $existing_index, 1);
+          splice(@{$$basecal{calpoints}{$calpoint}}, $existing_index, 1);
         }
 
         my $old_office = $$basecal{offices}{$office{id}};
