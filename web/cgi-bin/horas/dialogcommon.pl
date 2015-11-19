@@ -589,7 +589,7 @@ sub exit_conditional
 
   # If we've emptied the conditional stack, push an always-true,
   # unbounded frame to allow uniformity in testing.
-  push $conditional_stack_ref, [COND_AFFIRMATIVE, SCOPE_NEST]
+  push @$conditional_stack_ref, [COND_AFFIRMATIVE, SCOPE_NEST]
     if (@$conditional_stack_ref == 0);
 }
 
