@@ -38,6 +38,10 @@ foreach my $version (@versions)
       push @args, "command=pray$hour";
       $test->run(args => join(' ', @args));
       ok($? == 0, 'args = ' . join(', ', @args));
+      if ($? != 0)
+      {
+        print "# $_" foreach($test->stderr());
+      }
       pop @args;
     }
     pop @args;
