@@ -22,6 +22,7 @@ my $build = Module::Build->new(
     'LWP::Simple'    => 0,
     'Time::Local'    => 0,
     'Test::Cmd'      => 0,
+    'Test::Carp'     => 0,
   },
 );
 
