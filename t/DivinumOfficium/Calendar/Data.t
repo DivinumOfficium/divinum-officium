@@ -15,8 +15,8 @@ $horas::version = 'Divino afflatu';
 
 my $calendar_ref = load_calendar_file('', '/dev/fd/' . fileno(DATA));
 
-my $num_calpoints = keys($calendar_ref->{calpoints});
-my $num_offices   = keys($calendar_ref->{offices});
+my $num_calpoints = keys(%{$calendar_ref->{calpoints}});
+my $num_offices   = keys(%{$calendar_ref->{offices}});
 
 ok($num_calpoints == 3, 'number of calpoints');
 ok($num_offices   == 4, 'number of offices');
