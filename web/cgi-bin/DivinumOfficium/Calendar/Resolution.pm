@@ -865,7 +865,7 @@ sub get_evening_offices
   my @resolution = resolve_translation($calendar_ref, $version, $date, 2);
   confess unless(@resolution == 2);
   my ($preceding_ref, $preceding_temporal_ref) = @{shift @resolution};
-  my ($following_ref, $following_temporal_ref) = @{shift @resolution};
+  my ($following_ref) =                          @{shift @resolution};
 
   # Filter out preceding offices without second vespers and following ones
   # without first vespers.
@@ -977,20 +977,11 @@ sub get_evening_offices
     sort {cmp_concurrence($a->{office}, $b->{office}, $version)} @tail;
 
   # Sort out which temporal office is nominally active (even if it would be
-  # omitted).
+  # omitted).  Take the first one that is said, or if none is said, take the
+  # preceding.
   my $temporal_ref =
-    # We test whether the preceding office should win. It does so if it has
-    # second Vespers, and...
-    $preceding_temporal_ref->{secondvespers} &&
-    (
-      # ...either the following office doesn't have first Vespers, or...
-      !$following_temporal_ref->{firstvespers} ||
-      # ...the first office beats the second in concurrence.
-      cmp_concurrence(
-        $preceding_temporal_ref,
-        $following_temporal_ref,
-        $version) < 0
-    ) ? $preceding_temporal_ref : $following_temporal_ref;
+    (first {$_->{cycle} == TEMPORAL_OFFICE} map {$_->{office}} @result) ||
+    $preceding_temporal_ref;
 
   return
     \@result,
