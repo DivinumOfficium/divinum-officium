@@ -282,10 +282,11 @@ sub initialise_hour
         first {$_->{office}{cycle} == TEMPORAL_OFFICE} @offices;
 
       # $temporal_said_ref is notionally different from $temporal_ref in that
-      # the latter might is picked out even amongst omitted offices (the
+      # the latter might be picked out even amongst omitted offices (the
       # archetypal case is that of lesser ferias). If we have both, they ought
       # to be equal.
-      Carp::confess('Inconsistent temporal offices.')
+      Carp::confess('Inconsistent temporal offices: ' .
+        "$temporal_ref->{title} and $temporal_said_ref->{office}{title}")
         if($temporal_said_ref && $temporal_said_ref->{office} != $temporal_ref);
 
       $svesp = $sanctoral_ref->{segment}      if($sanctoral_ref);
