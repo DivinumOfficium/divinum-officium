@@ -37,12 +37,24 @@ sub horas
     %chant = %{setupstring($datafolder, 'Latin', "Psalterium/Chant.txt")};
 
     $column = 1;
-    if ($Ck) {$version = $version1; setmdir($version); precedence();}
+    if ($Ck)
+    {
+        $version = $version1;
+        setmdir($version);
+        my ($offices_ref) = precedence();
+        @offices = @$offices_ref;
+    }
     @script1 = getordinarium($lang1, $command);
     @script1 = specials(\@script1, $lang1, @offices);
 
     $column = 2;
-    if ($Ck) {$version = $version2; setmdir($version); precedence();}
+    if ($Ck)
+    {
+        $version = $version2;
+        setmdir($version);
+        my ($offices_ref) = precedence();
+        @offices = @$offices_ref;
+    }
     @script2 = getordinarium($lang2, $command);	  
     @script2 = specials(\@script2, $lang2, @offices);
 

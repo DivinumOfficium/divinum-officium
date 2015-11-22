@@ -175,7 +175,7 @@ $setupsave =~ s/\"/\~24/g;
 $version = $version1;
 $lang1 = $lang2;
 setmdir($version);
-precedence(); #fills our hashes et variables  
+my ($offices_ref, $temporal_ref) = precedence();
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;                           
 our $octavam = ''; #to avoid duplication of commemorations
@@ -185,7 +185,7 @@ $daycolor =   ($commune =~ /(C1[0-9])/) ? "blue" :
    ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" : 
    ($dayname[1] =~ /duplex/i) ? "red" : 
     "grey"; 
-build_comment_line();
+build_comment_line($offices_ref, $temporal_ref);
 
 #prepare main pages
 my $h = $hora;
@@ -454,15 +454,16 @@ PrintTag
 sub headline {
   my $head = shift;
   my $width = ($only) ? 100 : 50;
+  my ($offices_ref, $temporal_ref);
 
   $version = $version1;
   setmdir($version);   
-  precedence();
+  ($offices_ref, $temporal_ref) = precedence();
   $daycolor =   ($commune =~ /(C1[0-9])/) ? "blue" :
    ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" : 
    ($dayname[1] =~ /duplex/i) ? "red" : 
     "grey"; 
-  build_comment_line();
+  build_comment_line($offices_ref, $temporal_ref);
   $headline = setheadline();
   $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
   print "<CENTER><TABLE BORDER=1 CELLPADDING=5><TR>" .
@@ -472,12 +473,12 @@ sub headline {
   if (!$only) {
     $version = $version2;
     setmdir($version);
-    precedence();
+    ($offices_ref, $temporal_ref) = precedence();
     $daycolor =   ($commune =~ /(C1[0-9])/) ? "blue" :
      ($dayname[1] =~ /duplex/i) ? "red" : 
      ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" : 
       "grey"; 
-    build_comment_line();
+    build_comment_line($offices_ref, $temporal_ref);
     $headline = setheadline();
     $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
     print "<TD $background ALIGN=CENTER WIDTH=$width%>$version2 : <FONT COLOR=$daycolor>$headline</FONT>" .
