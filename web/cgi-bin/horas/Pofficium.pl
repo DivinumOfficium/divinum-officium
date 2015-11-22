@@ -183,7 +183,7 @@ $setupsave =~ s/\r*\n*//g;
 $setupsave =~ s/\"/\~24/g;	  
 
 
-precedence($date1); #fills our hashes et variables  
+my ($offices_ref, $temporal_ref) = precedence();
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;                           
 
@@ -192,7 +192,7 @@ $daycolor =   ($commune =~ /(C1[0-9])/) ? "blue" :
    ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" : 
    ($dayname[1] =~ /duplex/i) ? "red" : 
     "grey"; 
-build_comment_line();
+build_comment_line($offices_ref, $temporal_ref);
 
 #prepare main pages
 my $h = $hora;
@@ -238,7 +238,7 @@ if ($command =~ /setup(.*)/i) {
 
   #eval($setup{'parameters'});
   $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
-  horas($command); 
+  horas($command, @$offices_ref); 
 
   print << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
