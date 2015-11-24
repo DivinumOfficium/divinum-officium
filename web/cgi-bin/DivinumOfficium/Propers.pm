@@ -82,7 +82,8 @@ sub is_oration
     {
       if (is_oration($name))
       {
-        return papal_prayer($lang, $plural, $class, $pope, $name, $version);
+        return papal_prayer($lang, $plural, $class, $pope, $name, $hour,
+          $version);
       }
       elsif ($name eq 'Ant' && $class eq 'C' &&
         $segment == SECOND_VESPERS_AND_COMPLINE)
@@ -265,20 +266,20 @@ sub expand_specials_template
 }
 
 
-#*** papal_prayer($lang, $plural, $class, $name, $type, $version)
+#*** papal_prayer($lang, $plural, $class, $name, $type, $hour, $version)
 # Returns the collect, secret or postcommunion from the Common of Supreme
 # Pontiffs, where $lang is the language; $plural, $class and $name are as
 # returned by papal_rule; and $type is the key for the template.
 sub papal_prayer
 {
-  my ($lang, $plural, $class, $name, $type, $version) = @_;
+  my ($lang, $plural, $class, $name, $type, $hour, $version) = @_;
 
   # Get the prayer from the common.
   my (%common, $num);
   my $prayer;
   my $communename = common_directory($version);
 
-  if (0)  # TODO: if($missa). Try to make this uniform.
+  if ($hour =~ /SanctaMissa/)
   {
     %common = %{horas::setupstring(
       $horas::datafolder, $lang, "$communename/C4b.txt")};
