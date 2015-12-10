@@ -1,0 +1,49 @@
+[Rank]
+Hl. Damasus, Papst und Bekenner;;Semiduplex;;2.5;;vide C4
+
+[Rank1960]
+Hl. Damasus, Papst und Bekenner;;Duplex;;3;;vide C4
+
+[RankNewcal]
+Hl. Damasus, Papst und Bekenner;;Semiduplex;;2.5;;vide C4
+
+[Rule]
+vide C4;
+9 lectiones;
+OPapaC=Damasus;
+Doxology=Nat
+Omit Preces
+Commemoratio3
+
+[Oratio]
+Erhöre, o Herr, unser Flehen, und auf die Fürsprache deines heiligen Bekenners und Bischofs Damasus gewähre und gnädigst Nachsicht und Segen.
+$Per Dominum
+
+[Commemoratio 2]
+!Kommemoration des Tags innerhalb der Oktav der unbefleckten Empfängnis Mariä
+@Sancti/12-08:Oratio
+
+[Lectio4]
+Damasus, ein Spanier, ein hervorragender und in der Heiligen Schrift bewanderter Mann, hat durch die Abhaltung des ersten Konzils von Konstantinopel die abscheuliche Irrlehre des Eunomius und Mazedonius ausgerottet. Derselbe hat die Versammlung von Rimini, der vorher schon von Liberius die Bestätigung versagt worden war, nochmals verurteilt, auf der, wie der heilige Hieronymus schreibt, hauptsächlich durch die Schliche des Valens und der Ursazius die Verurteilung des nizäischen Glaubensbekenntnisses ausgerufen worden war; und so wunderte sich aufseufzend die Welt, dass sie arianisch sei.
+
+[Lectio5]
+Er erbaute zwei Basiliken, die eine zu Ehren des heiligen Laurentius bei dem Schauspielhaus des Pompejus, die er mit vielen Geschenken ausstattete, und der er Häuser und Grundstücke überwies; die andere auf dem Wege nach Ardea bei den Katakomben. Er weihte auch die Platonia ein, wo die Leiber der heiligen Petrus und Paulus eine Zeitlang gelegen haben, und verzierte sie mit kunstvollen Gedichten. Ebenso schrieb er in freier und ungebunderer Sprachform über die Jungfräulichkeit und veröffentlichte vieles andere in Versen.
+
+[Lectio6]
+Eine Wiedererstattungsstrafe ordnete er an für diejenigen, die einen anderen in falscher Weise eines Verbrechens beschuldigt hatten. Er bestimmte auch, dass, was schon an vielen Orten in Übung war, die Psalmen in allen Kirchen am Tage und in der Nacht in abwechselnder Weise gesungen würden und dass am Schluss jedes Psalmes hinzugefügt würde: Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste. Auf seinen Auftrag gab der heilige Hieronymus das Neue Testament in griechischer Sprache heraus. Nachdem er die Kirche durch 17 Jahre, 2 Monate und 26 Tage geleitet und im Monat Dezember fünf Weihetage gehalten hatte, in denen er 31 Priester, 11 Diakone und für die verschiedenen Orte 12 Bischöfe weihte, entschlief er, berühmt durch Tugend, Gelehrsamkeit und Klugheit, als nahezu Achtzigjähriger unter dem Kaiser Theodosius dem Älteren im Herrn und wurde auf dem Wege nach Ardea zusammen mit seiner Mutter und seiner Schwester in der Basilika beigesetzt, die er selbst erbaut hatte. Seine Überreste wurden später in die Kirche des heiligen Laurentius übertragen, die nach ihm den Zunamen „bei Damasus“ erhalten hat.
+
+[Lectio94]
+Damasus stammte aus Spanien. Er war ein hervorragender Mann und wohlbewandert in der Heiligen Schrift. Er berief das erste Konzil von Konstantinopel und vernichtete dadurch die Irrlehren des Eunomius und Macedonius. Wie schon vor ihm Papst Liberius verurteilte er die Kirchenversammlung von Rimini, wo nach dem Zeugnis des heiligen Hieronymus die Verwerfung des nizänischen Glaubensbekenntnisses verkündet worden war, vor allem durch die Umtriebe des Valens und Ursacius. Er baute auch zwei Kirchen: jene des heiligen Laurentius beim Theater des Pompejus und eine andere an der Straße nach Ardea bei den Katakomben. Auch führte er für alle Kirchen den wechselweisen Psalmengesang bei Tag und bei Nacht ein, wie es schon an den meisten Orten üblich war, und ließ am Schluß jedes Psalmes das „Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste“ beten. In seinem Auftrag schuf der heilige Hieronymus einen verbesserten Text des Neuen Testamentes nach dem griechischen Urtext. Er entdeckte auch zahlreiche Martyrergräber und versah ihre Gedenkstätten mit Inschriften. Nach einem Leben reich an Tugend, Gelehrsamkeit und Klugheit entschlief er im Herrn im Alter von fast achtzig Jahren unter der Regierung Theodosius' des Älteren.
+
+[Lectio7]
+@Commune/C4:Lectio71
+
+[Lectio8]
+@Commune/C4:Lectio81
+
+[Lectio9]
+@Commune/C4:Lectio91
+
+[Ant 3] (rubrica Divino aut rubrica 1955 aut rubrica 1960)
+@Commune/C4:Ant 3 summi Pontificis
+
