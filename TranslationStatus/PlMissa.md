@@ -1,4 +1,4 @@
-# Status polskiego tłumaczenia tekstów Mszy
+# Divinumofficium.com - status polskiego tłumaczenia tekstów Mszy
 
 Tekst  | Data dodania
 ------------- | -------------
