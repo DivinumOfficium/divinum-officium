@@ -183,9 +183,9 @@ sub resolve_refs {
 
 
     #red prefix
-	  if ($line =~ /^\s*(R\.br|R\.|V\.|Ant\.|Benedictio\.* |Absolutio\.* )/) {
-   	    my $h = $1;
-        my $l = $';
+    if ($line =~ /^\s*(R\.br|R\.|V\.|Ant\.|Benedictio\.* |Absolutio\.* )(.*)/) {
+      my $h = $1;
+      my $l = $2;
         if ($h =~ /(Benedictio|Absolutio)/) {	 
 	      my $str = $1;		   
           $str = translate($str, $lang);
@@ -194,15 +194,15 @@ sub resolve_refs {
         $line = setfont($redfont, $h) . $l;
       }   
     
-	  #small omitted title
-	  if ($line =~ /^\s*\!\!\!/) {
-	    $l = $';
-		  $line = setfont($smallblack, $l);
-	  }
+    #small omitted title
+    if ($line =~ /^\s*\!\!\!(.*)/) {
+      $l = $1;
+      $line = setfont($smallblack, $l);
+    }
 	  
-	  #large chapter title
-	  elsif ($line =~ /^\s*\!\!/) {  
-      my $l = $';              
+    #large chapter title
+    elsif ($line =~ /^\s*\!\!(.*)/) {  
+      my $l = $1;
       my $suffix = '';
       if ($l =~ /\{.*?\}/) {
         $l =~ s/(\{.*?\})//; 
@@ -213,27 +213,27 @@ sub resolve_refs {
 	  if ($expand =~ /skeleton/i) {$line .= linkcode1();}
     } 
 	
-	#red line
-	elsif ($line =~ /^\s*\!/) {
-      $l = $';
+    #red line
+    elsif ($line =~ /^\s*\!(.*)/) {
+      $l = $1;
       $line = setfont($redfont, $l);
     }
-    if ($line =~ /\/:(.*?):\//) {$line = $` .setfont($smallfont, $1) . $';} 
+    $line =~ s{/:(.*?):/}{setfont($smallfont, $1)}e;
 
-	  #first letter red 
-	  if ($line =~ /^\s*r\.\s*/) {
-	    $line = $';
-	    $line = setfont($largefont, substr($line, 0, 1)) . substr($line, 1);
-	  }
+    #first letter red 
+    if ($line =~ /^\s*r\.\s*(.*)/) {
+      $line = $1;
+      $line = setfont($largefont, substr($line, 0, 1)) . substr($line, 1);
+    }
 	
-	  # first letter initial
-	  if ($line =~ /^(\s*)v\.\s*/ || $line =~ /(\{\:.*?\:\}\s*)v\.\s*/) {
-	    my $prev = $1;
-        $line = $';
-	    $line = $prev . setfont($initiale, substr($line, 0, 1)) . substr($line, 1);
-	  }
+    # first letter initial
+    if ($line =~ /^(\s*)v\.\s*(.*)/ || $line =~ /(\{\:.*?\:\}\s*)v\.\s*(.*)/) {
+      my $prev = $1;
+      $line = $2;
+      $line = $prev . setfont($initiale, substr($line, 0, 1)) . substr($line, 1);
+    }
 
-  #connect lines marked by tilde, or but linebrak
+    #connect lines marked by tilde, or but linebrak
     if ($line =~ /~\s*$/) {
       $prelude .= substr($line, 0, $-[0]) . ' ';
     }
@@ -417,8 +417,8 @@ sub psalm : ScriptFunc {
   }
 
   my $nogloria = 0; 
-  if ($num =~ /^-/) {
-    $num = $';
+  if ($num =~ /^-(.*)/) {
+    $num = $1;
     if (($version =~ /Trident/i && $num =~ /(62|148|149)/) || 
       ($version =~ /Monastic/i && $num =~ /115/)) {$nogloria = 1;}
   }		  
@@ -509,15 +509,18 @@ sub psalm : ScriptFunc {
       if ($v < $v1) {next;}
       if ($v > $v2) {last;}
       $lnum = '';
-	  if ($line =~ /^([0-9]*[\:]*[0-9]+)/) {$lnum = setfont($smallfont, $1); $line = $';}  
+      if ($line =~ /^([0-9]*[\:]*[0-9]+)(.*)/) {
+        $lnum = setfont($smallfont, $1);
+        $line = $2;
+      }
 	  
 
       my $rest;
-      if ($line =~ /(\(.*?\))/) {
-	    $rest = $';
-	    $before = $`;
-        $this = $1;
-        if ($before =~ /^\s*([a-z])/i) {$before = uc($1) . $';}
+      if ($line =~ /(.*?)(\(.*?\))(.*)/) {
+        $rest = $3;
+        $before = $1;
+        $this = $2;
+        $before =~ s/^\s*([a-z])/uc($1)/ei;
         $line = $before . setfont($smallfont,($this));
       }	else {$rest = $line; $line = '';}
 	  
@@ -545,7 +548,7 @@ sub psalm : ScriptFunc {
 
       if ($lang =~ /magyar/i) {$rest = setasterisk($rest);}
 
-      if ($rest =~ /^\s*([a-z])/i) {$rest = uc($1) . $';}
+      $rest =~ s/^\s*([a-z])/uc($1)/ei;
       
       $t .= "\n$lnum $line $rest";       
     }
@@ -765,15 +768,15 @@ sub setlink
     $name =~ s/[\#\$\&]//g;                             
 
     my $after = '';
-    if ( !$Tk && $name =~ /\<input/i )
+    if ( !$Tk && $name =~ /(.*?)(<input.*)/i )
     {
-        $name = $`;
-        $after = "$&$'";
+        $name = $1;
+        $after = $2;
     }
-    if ( $Tk && $name =~ /\{\^/ )
+    if ( $Tk && $name =~ /(.*?)({\^.*)/ )
     {
-        $name = $`;
-        $after = "$&$'";
+        $name = $1;
+        $after = $2;
     } 
 
     if ( $disabled || $smallflag )
@@ -847,7 +850,7 @@ sub translate {
 
   my $n = $name;             
   my $prefix = '';
-  if ($n =~ s/(\$|\&)//) {$prefix = $&;}
+  if ($n =~ s/(\$|\&)//) {$prefix = $1;}
   $n =~ s/^\n*//;
   $n =~ s/\n*$//; 
   $n =~ s/\_/ /g;            
@@ -956,8 +959,8 @@ sub canticum : ScriptFunc {
     $w[0] =~ s/\!//;  
     $w .= setfont($redfont, shift(@w)) . settone(2) . "\n"; 
     foreach $item (@w) {
-      if ($item =~ /^([0-9]+\:)*([0-9]+) /) {
-        my $rest = $';
+      if ($item =~ /^([0-9]+\:)*([0-9]+) (.*)/) {
+        my $rest = $3;
         my $num = "$1$2";
         $item = setfont($smallfont, $num) . " $rest";   
       }
@@ -1090,6 +1093,8 @@ sub gregor {
  my $sfx2 = ($gday > 3 && $gday < 21) ? 'th' : (($gday %10) == 1) ? 'st' : (($gday % 10) == 2) ? 'nd' : (($gday % 10)== 3) ? 'rd' : 'th';
  $day = $day + 0; 
  if ($lang =~ /Latin/i) {return ("Luna $ordinals[$gday-1] Anno $year Domini\n", ' '); }
+ elsif ($lang =~ /Polski/i) {return ("Roku Pańskiego $year"); }
+
  else {return ("$months[$month - 1] $day$sfx1 anno Domini $year The $gday$sfx2 Day of Moon", $months[$month-1]);}
 
  #return sprintf("%02i", $gday);
@@ -1173,7 +1178,7 @@ sub setasterisk {
   my $line = shift;
   $line =~ s/\s*$//;  
   
-  if ($line =~ /\*/ && length($') > 9) {return $line;}
+  if ($line =~ /\*(.*)/ && length($1) > 9) {return $line;}
   
   my $lp2 = (length($line) > 64) ? 24 : (length($line) < 24) ? 6 : 12;
   my $t = '';

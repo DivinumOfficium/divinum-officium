@@ -104,10 +104,10 @@ sub specials {
 	
 	my $after = $item;
 	$item = '';
-	while ($after =~ /\((.*?)\)/) {
-	  $after = $';
-	  $item .= "$` ";
-	  if ($rubrics) {$item .= setfont($smallfont, $1) . ' ';}
+	while ($after =~ /(.*?)\(([^\n\r]*?)\)(.*)/s) {
+	  $after = $3;
+	  $item .= "$1 ";
+	  if ($rubrics) {$item .= setfont($smallfont, $2) . ' ';}
 	}
 	$item .= $after;
 
@@ -233,9 +233,10 @@ sub oratio
 
     $w = 'Oratio missing' unless $w;
 
-    if (($version =~ /1960/ || "$month$day" =~ /1102/) && $w =~ /\&psalm\([0-9]+\)\s*\_\s*/i)
+    if (($version =~ /1960/ || "$month$day" =~ /1102/) &&
+      $w =~ /(.*?)\&psalm\([0-9]+\)\s*\_\s*(.*)/is)
     {
-        $w = "$`\_\n$'"; #triduum 1960  not 1955
+        $w = "$1\_\n$2"; #triduum 1960  not 1955
     }
 
     my $sub_unica_conc =
@@ -246,8 +247,16 @@ sub oratio
     {
         if ($version !~ /1960/)
         {
-            if ($w =~ /\n\$Per .*?\s*$/) {$addconclusio = $&; $w = $`;}
-            if ($w =~ /\n\$Qui .*?\s*$/) {$addconclusio = $&; $w = $`;}
+            if ($w =~ /(.*?)(\n\$Per [^\n\r]*?\s*)$/s)
+            {
+              $addconclusio = $2;
+              $w = $1;
+            }
+            if ($w =~ /(.*?)(\n\$Qui [^\n\r]*?\s*)$/s)
+            {
+              $addconclusio = $2;
+              $w = $1;
+            }
         }
         else
         {
@@ -348,7 +357,7 @@ sub oratio
         return resolve_refs($retvalue, $lang);
     }
 
-    $rule .= $& if ($winner =~ /Sancti/i && $duplex < 3 && $scriptura && $scriptura{Rule} =~ /Suffr.*?=(.*?);;/i);
+    $rule .= $1 if ($winner =~ /Sancti/i && $duplex < 3 && $scriptura && $scriptura{Rule} =~ /(Suffr.*?=.*?;;)/i);
 
     if ($rule =~ /Suffr.*?=(.*?);;/i)
     {
@@ -623,7 +632,7 @@ sub setbuild {
   my $comment = shift; 
 
   $source = $file;
-  if ($source =~ /\//) {$source = $`;}
+  if ($source =~ /(.*?)\//s) {$source = $1;}
   if ($comment =~ /ord/i) {$comment = setfont($redfont, $comment);}
   else {$comment = ",,,$comment";}
   $buildscript .= "$comment: $source $name\n";	   
@@ -643,7 +652,7 @@ sub setalleluia {
   for ($i = 0; $i < @capit; $i++) {
      if ($capit[$i] =~ /^R\.br/i) {$flag = 3;}
      if ($capit[$i] =~ /^V\./ && $flag == 3) {$flag = 4; next;}
-	 if ($capit[$i] =~ /^\&Gloria/i) {$capit[$i] = "$`\&Gloria1$'"; $flag = 2; next;}
+	 if ($capit[$i] =~ s/^&Gloria/&Gloria1/i) {$flag = 2; next;}
      if ($flag == 0) {next;}
      if ($capit[$i] =~ /(alleluia|alleluja)/i || $capit[$i] !~ /[RV]\./i) {next;}
      $capit[$i] = chompd($capit[$i]);  
@@ -787,10 +796,7 @@ sub getitem {
   #}
   
   if ($w && $w !~ /^\s*$/) {
-    while ($w =~ /(?<!\() \( ([^()]*?) \) (?!\))/sx) {
-	  my $s = setfont($smallfont, $1); 
-	  $w = "$`$s$'";
-    }
+    $w =~ s/(?<!\() \( ([^()]*?) \) (?!\))/setfont($smallfont, $1)/egx;
     $w =~ s/\(\(/(/g;
     $w =~ s/\)\)/)/g;
   }
@@ -857,11 +863,7 @@ sub LectionesTemporum
     }
     if ( $s && $s !~ /^\s*$/ )
     {
-        while ($s =~ /\((.*?)\)/s)
-        { 
-            my $a = setfont($smallfont, $1); 
-            $s = "$`$a$'";
-        }
+        $s =~ s/\((.*?)\)/setfont($smallfont, $1)/egs;
     }
     $s =~ s/#/!!/g;
     return $s; 
@@ -1142,10 +1144,7 @@ sub Ultimaev : ScriptFunc {
   
   
   if ($t && $t !~ /^\s*$/) {
-    while ($t =~ /\((.*?)\)/ ) {
-	  my $s = setfont($smallfont, $1);
-	  $t = "$`$s$'";
-    }
+    $t =~ s/\((.*?)\)/setfont($smallfont, $1)/eg;
 	$t =~ s/\n/\n\$Gloria tibi\n/;
     $t = "\$Dominus vobiscum\n$t\$Deo gratias";
   }
