@@ -24,6 +24,9 @@ use Time::Local;
 #use DateTime;
 use locale;
 
+use lib "$Bin/..";
+use DivinumOfficium::Main qw(vernaculars);
+
 $error = '';	 
 $debug = '';
 our $Tk = 0;
@@ -370,21 +373,25 @@ my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
 PrintTag
 }
 
-$chl1 = ($lang2 =~ /Latin/i) ? 'SELECTED' : '';
-$chl2 = ($lang2 =~ /English/i) ? 'SELECTED' : '';
-$chl3 = ($lang2 =~ /Magyar/i) ? 'SELECTED' : '';
 $sel1 = ''; #($date1 eq gettoday()) ? 'SELECTED' : '';
 $sel2 = ($votive =~ /C8/) ? 'SELECTED' : '';
 $sel3 = ($votive =~ /C9/) ? 'SELECTED' : '';
 $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
 
+my @languages = ('Latin', vernaculars($datafolder));
+my $lang_count = @languages;
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
-<SELECT NAME=lang2 SIZE=3 onclick="parchange()">
-<OPTION $chl1 VALUE='Latin'>Latin
-<OPTION $chl2 VALUE=English>English
-<OPTION $chl3 VALUE=Magyar>Magyar
-</SELECT>
+<SELECT NAME=lang2 SIZE=$lang_count onchange="parchange()">
+PrintTag
+
+foreach my $lang (@languages)
+{
+  my $sel = ($lang2 =~ /$lang/i) ? 'SELECTED' : '';
+  print qq(<OPTION $sel VALUE="$lang">$lang\n);
+}
+
+  print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
 <SELECT NAME=votive SIZE=4 onclick="parchange()">
 <OPTION $sel1 VALUE='hodie'>hodie
