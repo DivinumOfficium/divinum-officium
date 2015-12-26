@@ -12,8 +12,7 @@ Antiphonas horas
 no Psalm5
 
 [Versum 1]
-V. Gloria et honore coronasti eum, Domine.
-R. Et constituisti eum super opera manuum tuarum.
+@Commune/C2:Versum 1
 
 [Ant 1]
 Stephanus autem * plenus gratia et fortitudine, faciebat signa magna in populo.
@@ -202,16 +201,14 @@ V. Sepelierunt Stephanum viri timorati.
 R. Et fecerunt planctum magnum super eum.
 
 [Ant 2]
-Stephanus autem * plenus gratia et fortitudine, faciebat signa magna in populo.
+@:Ant 1
 
 [Lectio Prima]
 !Act. 7:59
 v. Positis autem genibus clamavit voce magna, dicens: Domine, ne statuas illis hoc peccatum. Et cum hoc dixisset, obdormivit in Domino.
 
 [Capitulum Tertia]
-!Act. 6:8
-v. Stephanus autem plenus gratia et fortitudine, faciebat prodigia et signa magna in populo.
-$Deo gratias
+@:Capitulum Laudes
 
 [Capitulum Sexta]
 !Act. 6:9-10
@@ -221,21 +218,14 @@ disputantes cum Stephano: et non poterant resistere sapientiae, et Spiritui qui 
 $Deo gratias
 
 [Capitulum Nona]
-!Act. 7:59
-v. Positis autem genibus clamavit voce magna, dicens: Domine, ne statuas illis hoc peccatum. Et cum hoc dixisset, obdormivit in Domino.
+@:Lectio Prima
 $Deo gratias
 
 [Ant Vespera 3]
-Tecum principium * in die virtutis tuae, in splendoribus sanctorum, ex utero ante luciferum genui te.;;109
-Redemptionem * misit Dominus populo suo: mandavit in aeternum testamentum suum.;;110
-Exortum est * in tenebris lumen rectis corde: misericors, et miserator, et justus Dominus.;;111
-Apud Dominum * misericordia, et copiosa apud eum redemptio.;;129
-De fructu * ventris tui ponam super sedem tuam.;;131 
+@Sancti/12-25:Ant Vespera 3
 
 [Capitulum Vespera]
-!Act. 6:8
-v. Stephanus autem plenus gratia et fortitudine, faciebat prodigia et signa magna in populo.
-$Deo gratias
+@:Capitulum Laudes
 
 [Versum 3]
 V. Stephanus vidit coelos apertos.
