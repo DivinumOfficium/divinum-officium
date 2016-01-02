@@ -50,14 +50,14 @@ Niedziela Siedemdziesiątnicy | 2016-01-02 | [2016](http://divinumofficium.com/c
 Niedziela Sześćdziesiątnicy | 2016-01-02 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=01-31-2016)
 Niedziela Pięćdziesiątnicy | 2016-01-02 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=02-07-2016)
 
-# Msze Własne o Świętych
+## Msze Własne o Świętych
 
 Tekst | Data dodania | Link
 ----- | -------------|-----
 12.08 - Niepokalane Poczęcie N. M. P. | 2015-12-10 | [2015](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=12-08-2015)
 12.21 - Św. Tomasza, Apostoła | 2015-12-16 | [2015](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=12-21-2015)
 
-# Inne
+## Inne
 
 Tekst | Data dodania | Link
 ----- | -------------|-----
