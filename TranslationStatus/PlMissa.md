@@ -56,6 +56,7 @@ Tekst | Data dodania | Link
 ----- | -------------|-----
 12.08 - Niepokalane Poczęcie N. M. P. | 2015-12-10 | [2015](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=12-08-2015)
 12.21 - Św. Tomasza, Apostoła | 2015-12-16 | [2015](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=12-21-2015)
+02.02 - Oczyszczenie N. M. P | 2015-12-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=02-02-2016)
 
 ## Inne
 
