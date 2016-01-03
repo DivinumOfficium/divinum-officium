@@ -1146,7 +1146,7 @@ sub Ultimaev : ScriptFunc {
   if ($t && $t !~ /^\s*$/) {
     $t =~ s/\((.*?)\)/setfont($smallfont, $1)/eg;
 	$t =~ s/\n/\n\$Gloria tibi\n/;
-    $t = "\$Dominus vobiscum\n$t\$Deo gratias";
+    $t = "$t\$Deo gratias";
   }
   
   return $t;
