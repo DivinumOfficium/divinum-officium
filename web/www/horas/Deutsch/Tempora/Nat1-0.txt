@@ -4,15 +4,6 @@ Sonntag innerhalb der Geburt des Herrn;;Semiduplex;;5;;ex Sancti/12-25
 [Rank] (rubrica 1960 aut rubrica innovata)
 Sonntag innerhalb der Geburt des Herrn;;Semiduplex;;5.5;;ex Sancti/12-25
 
-[Rule]
-9 lectiones
-ex Sancti/12-25
-Lectio1 Sancti
-Psalmi Dominica
-
-[Ant Vespera]
-@Sancti/12-25:Ant Vespera 3
-
 [Capitulum Vespera]
 !Gal 4,1-2
 v. Brüder, solange der künftige Eigentümer im Haus ein Kind ist, unterscheidet er sich in nichts vom Knechte, obwohl er der Herr von allem ist. Im Gegenteil, er steht unter den Erziehern und Verwaltern bis zu der vom Vater bestimmten Zeit.
@@ -29,19 +20,10 @@ Als tiefes Stillschweigen * alle Welt beobachtete und die Nacht in ihrem Laufe d
 Allmächtiger, ewiger Gott, lenke unsere Handlungen gemäß deinem Wohlgefallen, damit wir als Anhänger deines geliebten Sohnes würdig werden, in guten Werken immer mehr zuzunehmen.
 $Qui tecum
 
-[Commemoratio 2] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
-@Sancti/12-25:Octava
-
-[Commemoratio 3] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
-@Sancti/12-25:Octava
-
 [Lectio4]
 Sermo sancti Leonis Papae.
 !Serm. 9. de Nativ. Dom.
 Excedit quidem, dilectissimi, multumque supereminet humani eloquii facultatem divini operis magnitudo: et inde oritur difficultas fandi, unde adest ratio non tacendi. Quia in Christo Jesu Filio Dei non solum ad divinam essentiam, sed etiam ad humanam spectat naturam quod dictum est per prophetam: Generationem ejus quis enarrabit? Utramque enim substantiam in unam convenisse personam, nisi fides credat, sermo non explicat Et ideo numquam materia deficit laudis, quia numquam sufficit copia laudatoris.
-
-[Responsory4]
-@Sancti/12-25:Responsory 5
 
 [Lectio5]
 Gaudeamus igitur, quod ad eloquendum tantae misericordiae sacramentum impares sumus: et cum salutis nostrae altitudinem promere non valeamus, sentiamus nobis bonum esse, quod vincimur. Nemo enim ad cognitionem veritatis magis propinquat, quam qui intelligit in rebus divinis, etiam si multum proficiat, semper sibi superesse quod quaerat Nam qui se ad id, in quod tendit, pervenisse praesumit, non quaesita reperit, sed in inquisitione deficit.
@@ -90,21 +72,9 @@ R. Er liegt in der Krippe und ist König im Himmel.
 Prophetavit itaque Simeon, prophetaverat virgo, prophetaverat copulata conjugio; prophetare debuit etiam vidua, ne qua aut professio deesset, aut sexus. Et ideo Anna et stipendiis viduitatis, et moribus talis inducitur, ut digna plane fuisse credatur, quae Redemptorem omnium venisse nuntiaret. Cujus merita cum alibi descripserimus, cum viduas hortaremur, hoc loco, quoniam ad alia properamus, non putamus iteranda.
 &teDeum
 
-[Capitulum Laudes]
-@:Capitulum Vespera
-
-[Versum 2]
-@:Versum 1
-
-[Ant 2]
-@:Ant 1
-
 [Lectio Prima] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
 !Gal 4,7
 v. So gibt es also keinen Knecht mehr, sondern nur Söhne; wenn aber Söhne, dann auch Anwärter auf den Reichtum, gemäß der Anordnung Gottes.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 !Gal 4,4-5
@@ -115,9 +85,6 @@ $Deo gratias
 !Gal 4,7
 v. So gibt es also keinen Knecht mehr, sondern nur Söhne; wenn aber Söhne, dann auch Anwärter auf den Reichtum, gemäß der Anordnung Gottes.
 $Deo gratias
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Der Knabe Jesus * nahm zu an Alter und auch an Weisheit vor Gott und vor den Menschen.
