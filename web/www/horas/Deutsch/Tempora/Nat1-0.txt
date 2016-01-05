@@ -1,67 +1,46 @@
 [Rank]
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
+Sonntag innerhalb der Geburt des Herrn;;Semiduplex;;5;;ex Sancti/12-25
 
 [Rank] (rubrica 1960 aut rubrica innovata)
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5.5;;ex Sancti/12-25
-
-[Rule]
-9 lectiones
-ex Sancti/12-25
-Lectio1 Sancti
-Psalmi Dominica
-
-[Ant Vespera]
-@Sancti/12-25:Ant Vespera 3
+Sonntag innerhalb der Geburt des Herrn;;Semiduplex;;5.5;;ex Sancti/12-25
 
 [Capitulum Vespera]
-!Gal 4:1-2
-v. Fratres: Quanto tempore haeres parvulus est, nihil differt a servo, cum sit dominus omnium: sed sub tutoribus et actoribus est usque ad praefinitum tempus a patre.
+!Gal 4,1-2
+v. Brüder, solange der künftige Eigentümer im Haus ein Kind ist, unterscheidet er sich in nichts vom Knechte, obwohl er der Herr von allem ist. Im Gegenteil, er steht unter den Erziehern und Verwaltern bis zu der vom Vater bestimmten Zeit.
 $Deo gratias
 
 [Versum 1]
-V. Verbum caro factum est, alleluia.
-R. Et habitavit in nobis, alleluia.
+V. Das Wort ist Fleisch geworden, alleluja.
+R. Und hat unter uns gewohnt, alleluja.
 
 [Ant 1]
-Dum medium silentium * tenerent omnia, et nox in suo cursu medium iter perageret, omnipotens sermo tuus, Domine, a regalibus sedibus venit, alleluia.
+Als tiefes Stillschweigen * alle Welt beobachtete und die Nacht in ihrem Laufe den halben Weg zurückgelegt hatte, da kam dein allmächtiges Wort, o Herr, vom königlichen Thron herab, alleluja.
 
 [Oratio]
-Omnipotens sempiterne Deus, dirige actus nostros in beneplacito tuo: ut in nomine dilecti Filii tui mereamur bonis operibus abundare.
+Allmächtiger, ewiger Gott, lenke unsere Handlungen gemäß deinem Wohlgefallen, damit wir als Anhänger deines geliebten Sohnes würdig werden, in guten Werken immer mehr zuzunehmen.
 $Qui tecum
-
-[Commemoratio 2] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
-@Sancti/12-25:Octava
-
-[Commemoratio 3] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
-@Sancti/12-25:Octava
 
 [Lectio4]
 Sermo sancti Leonis Papae.
 !Serm. 9. de Nativ. Dom.
 Excedit quidem, dilectissimi, multumque supereminet humani eloquii facultatem divini operis magnitudo: et inde oritur difficultas fandi, unde adest ratio non tacendi. Quia in Christo Jesu Filio Dei non solum ad divinam essentiam, sed etiam ad humanam spectat naturam quod dictum est per prophetam: Generationem ejus quis enarrabit? Utramque enim substantiam in unam convenisse personam, nisi fides credat, sermo non explicat Et ideo numquam materia deficit laudis, quia numquam sufficit copia laudatoris.
 
-[Responsory4]
-@Sancti/12-25:Responsory 5
-
 [Lectio5]
 Gaudeamus igitur, quod ad eloquendum tantae misericordiae sacramentum impares sumus: et cum salutis nostrae altitudinem promere non valeamus, sentiamus nobis bonum esse, quod vincimur. Nemo enim ad cognitionem veritatis magis propinquat, quam qui intelligit in rebus divinis, etiam si multum proficiat, semper sibi superesse quod quaerat Nam qui se ad id, in quod tendit, pervenisse praesumit, non quaesita reperit, sed in inquisitione deficit.
 
 [Responsory5]
-R. Sancta et immaculata virginitas, quibus te laudibus efferam, nescio:
-* Quia quem caeli capere non poterant, tuo gremio contulisti.
-V. Benedicta tu in mulieribus, et benedictus fructus ventris tui.
-R. Quia quem caeli capere non poterant, tuo gremio contulisti.
+R. O du heilige und unbefleckte Jungfräulichkeitsträgerin, ich weiß gar nicht, mit welchen Lobsprüchen ich dich preisen soll:
+* Da du denjenigen, den die Himmelsräume nicht fassen können, in deinem Schoße getragen hast.
+V. Du bist gebenedeit unter den Frauen, und gebenedeit ist die Frucht deines Leibes.
+R. Da du denjenigen, den die Himmelsräume nicht fassen können, in deinem Schoße getragen hast.
 
 [Lectio6]
 Ne autem infirmitatis nostrae perturbemur angustiis, evangelicae nos et propheticae adjuvant voces: quibus ita accendimur, et docemur, ut nos Nativitatem Domini, qua Verbum caro factum est, non tam praeteritam recolere, quam praesentem videamur inspicere. Quod enim pastoribus pro gregum suorum custodia vigilantibus nuntiavit Angelus etiam nostrum implevit auditum: et ideo Dominicis ovibus praesumus, quia verba divinitus edita cordis aure servamus: tamquam et in hodierna festivitate dicatur: Evangelizo vobis gaudium magnum, quod erit omni populo, quia natus est vobis hodie Salvator, qui est Christus Dominus, in civitate David.
 
 [Responsory6]
-R. Beata viscera Mariae Virginis, quae portaverunt aeterni Patris Filium: et beata ubera, quae lactaverunt Christum Dominum:
-* Qui hodie pro salute mundi de Virgine nasci dignatus est.
-V. Dies sanctificatus illuxit nobis: venite Gentes, et adorate Dominum
-R. Qui hodie pro salute mundi de Virgine nasci dignatus est.
+@Sancti/12-25:Responsory7
 &Gloria
-R. Qui hodie pro salute mundi de Virgine nasci dignatus est.
+R. Der heute sich gewürdigt hat, für das Heil der Welt von einer Jungfrau geboren zu werden.
 
 [Lectio7]
 Lectio sancti Evangelii secundum Lucam.
@@ -73,54 +52,39 @@ Homilia sancti Ambrosii Episcopi.
 Vides uberem in omnes gratiam, Domini generatione diffusam et prophetiam incredulis negatam esse, non justis. Ecce et Simeon prophetat, in ruinam et resurrectionem plurimorum venisse Dominum Jesum Christum, ut justorum, iniquorumque merita discernat; et pro nostrorum qualitate factorum, judex verus et justus aut supplicia decernat, aut praemia.
 
 [Responsory7]
-R. Verbum caro factum est, et habitavit in nobis:
-* Et vidimus gloriam ejus, gloriam quasi Unigeniti a Patre, plenum gratiae et veritatis.
-V. Omnia per ipsum facta sunt, et sine ipso factum est nihil.
-R. Et vidimus gloriam ejus, gloriam quasi Unigeniti a Patre, plenum gratiae et veritatis.
+R. Das Wort ist Fleisch geworden und hat unter uns gewohnt.
+* Und wir haben seine Herrlichkeit gesehen, die Herrlichkeit, wie sie zukommt dem Eingebornen des Vaters in seiner Fülle von Anmut und Güte.
+V. Alles ist durch dasselbe gemacht worden, und ohne dasselbe wurde nichts gemacht.
+R. Und wir haben seine Herrlichkeit gesehen, die Herrlichkeit, wie sie zukommt dem Eingebornen des Vaters in seiner Fülle von Anmut und Güte.
 
 [Lectio8]
 Et tuam ipsius animam pertransibit gladius. Nec littera, nec historia docet, ex hac vita Mariam corporalis necis passione migrasse. Non enim anima, sed corpus materiali gladio transverberatur. Et ideo prudentiam Mariae haud ignaram mysterii caelestis ostendit. Vivum enim verbum Dei, et validum, et acutius omni gladio acutissimo, penetrans usque ad divisionem animae et spiritus, artuum quoque et medullarum, cogitationes cordis et secreta scrutatur animorum, quia nuda et aperta sunt omnia Dei Filio, quem conscientiae secreta non fallunt.
 
 [Responsory8]
-R. O Regem caeli, cui talia famulantur obsequia: stabulo ponitur, qui continet mundum:
-* Jacet in praesepio, et in caelis regnat.
-V. Natus est nobis hodie Salvator, qui est Christus Dominus, in civitate David.
-R. Jacet in praesepio, et in caelis regnat.
+R. O, der Himmelskönig, dem solche Huldigungen erwiesen werden! In einem Stalle wird untergebracht derjenige, der die Welt zusammenhält.
+* Er liegt in der Krippe und ist König im Himmel.
+V. Geboren ist uns heute der Heiland der Welt, der der Messias, der Herr, ist, in der Stadt Davids.
+R. Er liegt in der Krippe und ist König im Himmel.
 &Gloria.
-R. Jacet in praesepio, et in caelis regnat.
+R. Er liegt in der Krippe und ist König im Himmel.
 
 [Lectio9]
 Prophetavit itaque Simeon, prophetaverat virgo, prophetaverat copulata conjugio; prophetare debuit etiam vidua, ne qua aut professio deesset, aut sexus. Et ideo Anna et stipendiis viduitatis, et moribus talis inducitur, ut digna plane fuisse credatur, quae Redemptorem omnium venisse nuntiaret. Cujus merita cum alibi descripserimus, cum viduas hortaremur, hoc loco, quoniam ad alia properamus, non putamus iteranda.
 &teDeum
 
-[Capitulum Laudes]
-@:Capitulum Vespera
-
-[Versum 2]
-@:Versum 1
-
-[Ant 2]
-@:Ant 1
-
 [Lectio Prima] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
-!Gal 4:7
-v. Itaque jam non est servus, sed filius: quod si filius, et haeres per Deum.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
+!Gal 4,7
+v. So gibt es also keinen Knecht mehr, sondern nur Söhne; wenn aber Söhne, dann auch Anwärter auf den Reichtum, gemäß der Anordnung Gottes.
 
 [Capitulum Sexta]
-!Gal 4:4-5
-v. At ubi venit plenitudo temporis, misit Deus Filium suum factum ex muliere, factum sub lege, ut eos, qui sub lege erant, redimeret, ut adoptionem filiorum reciperemus.
+!Gal 4,4-5
+v. Aber, wo nun das Ende der festgesetzten Zeit gekommen ist, hat Gott seinen Sohn abgesandt als Kind einer menschlichen Mutter, der sich unter das alte Gesetz stellte, damit er die unter dies Gesetz Gestellten herausführe, auf dass wir die Würde von Gotteskindern erhalten.
 $Deo gratias
 
 [Capitulum Nona]
-!Gal 4:7
-v. Itaque jam non est servus, sed filius: quod si filius, et haeres per Deum.
+!Gal 4,7
+v. So gibt es also keinen Knecht mehr, sondern nur Söhne; wenn aber Söhne, dann auch Anwärter auf den Reichtum, gemäß der Anordnung Gottes.
 $Deo gratias
 
-[Versum 3]
-@:Versum 1
-
 [Ant 3]
-Puer Jesus * proficiebat aetate et sapientia coram Deo et hominibus.
+Der Knabe Jesus * nahm zu an Alter und auch an Weisheit vor Gott und vor den Menschen.
