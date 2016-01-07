@@ -16,9 +16,7 @@ Feria Te Deum
 CPapaM=Telésphorum;
 
 [Capitulum Vespera]
-!Gal 4:1-2
-v. Fratres: Quanto tempore haeres parvulus est, nihil differt a servo, cum sit dominus omnium: sed sub tutoribus et actoribus est usque ad praefinitum tempus a patre.
-$Deo gratias
+@Tempora/Nat1-0:Capitulum Vespera
 
 [Hymnus Vespera]
 @Sancti/12-25:Hymnus Vespera
@@ -27,22 +25,20 @@ $Deo gratias
 @Sancti/12-25:HymnusM Vespera
 
 [Ant 1]
-Puer Jesus * proficiebat aetate et sapientia coram Deo et hominibus.
+@Tempora/Nat1-0:Ant 3
 
 [Versum 1]
-V. Notum fecit Dominus, alleluia.
-R. Salutare suum, alleluia.
+@Sancti/12-25:Versum 2
 
 [Oratio]
-Omnipotens sempiterne Deus, dirige actus nostros in beneplacito tuo: ut in nomine dilecti Filii tui mereamur bonis operibus abundare.
-$Qui tecum
+@Tempora/Nat1-0:Oratio
 
 [Commemoratio]
 !Commemoratio S. Telesphori Papae et Martyris.
 @Commune/C2:Oratio1 Gregem
 
 [Invit]
-Christus natus est nobis: * Venite adoremus.
+@Sancti/12-25:Invit
 
 [Hymnus Matutinum]
 @Sancti/12-25:Hymnus Vespera
@@ -53,24 +49,24 @@ Christus natus est nobis: * Venite adoremus.
 [Lectio1]
 De Epistola ad Romanos.
 !Rom 8:1-4
-8:1 Nihil ergo nunc damnationis est iis qui sunt in Christo Jesu: qui non secundum carnem ambulant.
-8:2 Lex enim spiritus vitae in Christo Jesu liberavit me a lege peccati et mortis.
-8:3 Nam quod impossibile erat legi, in quo infirmabatur per carnem: Deus Filium suum mittens in similitudinem carnis peccati et de peccato, damnavit peccatum in carne,
-8:4 ut justificatio legis impleretur in nobis, qui non secundum carnem ambulamus, sed secundum spiritum.
+1 Nihil ergo nunc damnationis est iis qui sunt in Christo Jesu: qui non secundum carnem ambulant.
+2 Lex enim spiritus vitae in Christo Jesu liberavit me a lege peccati et mortis.
+3 Nam quod impossibile erat legi, in quo infirmabatur per carnem: Deus Filium suum mittens in similitudinem carnis peccati et de peccato, damnavit peccatum in carne,
+4 ut justificatio legis impleretur in nobis, qui non secundum carnem ambulamus, sed secundum spiritum.
 
 [Lectio2]
 !Rom 8:5-9
-8:5 Qui enim secundum carnem sunt, quae carnis sunt, sapiunt: qui vero secundum spiritum sunt, quae sunt spiritus, sentiunt.
-8:6 Nam prudentia carnis, mors est: prudentia autem spiritus, vita et pax:
-8:7 quoniam sapientia carnis inimica est Deo: legi enim Dei non est subjecta, nec enim potest.
-8:8 Qui autem in carne sunt, Deo placere non possunt.
-8:9 Vos autem in carne non estis, sed in spiritu: si tamen Spiritus Dei habitat in vobis.
+5 Qui enim secundum carnem sunt, quae carnis sunt, sapiunt: qui vero secundum spiritum sunt, quae sunt spiritus, sentiunt.
+6 Nam prudentia carnis, mors est: prudentia autem spiritus, vita et pax:
+7 quoniam sapientia carnis inimica est Deo: legi enim Dei non est subjecta, nec enim potest.
+8 Qui autem in carne sunt, Deo placere non possunt.
+9 Vos autem in carne non estis, sed in spiritu: si tamen Spiritus Dei habitat in vobis.
 
 [Lectio3]
 !Rom 8:9-11
-8:9 Si quis autem Spiritum Christi non habet: hic non est ejus.
-8:10 Si autem Christus in vobis est, corpus quidem mortuum est propter peccatum, spiritus vero vivit propter justificationem.
-8:11 Quod si Spiritus ejus, qui suscitavit Jesum a mortuis, habitat in vobis: qui suscitavit Jesum Christum a mortuis, vivificabit et mortalia corpora vestra, propter inhabitantem Spiritum ejus in vobis.
+9 Si quis autem Spiritum Christi non habet: hic non est ejus.
+10 Si autem Christus in vobis est, corpus quidem mortuum est propter peccatum, spiritus vero vivit propter justificationem.
+11 Quod si Spiritus ejus, qui suscitavit Jesum a mortuis, habitat in vobis: qui suscitavit Jesum Christum a mortuis, vivificabit et mortalia corpora vestra, propter inhabitantem Spiritum ejus in vobis.
 
 [Responsory1]
 @Sancti/01-01:Responsory1
@@ -109,64 +105,22 @@ Quoniam Nazaraeus vocabitur. Si fixum de Scripturis posuisset exemplum, numquam 
 &teDeum
 
 [Capitulum Laudes]
-!Gal 4:1-2
-v. Fratres: Quanto tempore haeres parvulus est, nihil differt a servo, cum sit dominus omnium: sed sub tutoribus et actoribus est usque ad praefinitum tempus a patre.
-$Deo gratias
+@Tempora/Nat1-0:Capitulum Vespera
 
 [Hymnus Laudes]
 @Sancti/12-25:Hymnus Laudes
 
 [Ant 2]
-Dum medium silentium * tenerent omnia, et nox in suo cursu medium iter perageret, omnipotens sermo tuus Domine a regalibus sedibus venit, alleluia.
+@Tempora/Nat1-0:Ant 1
 
 [Lectio Prima]
-!Gal 4:7
-v. Itaque jam non est servus, sed filius: quod si filius, et haeres per Deum.
+@Tempora/Nat1-0:Lectio Prima
 
 [Capitulum Tertia]
-!Gal 4:1-2
-v. Fratres: Quanto tempore haeres parvulus est, nihil differt a servo, cum sit dominus omnium: sed sub tutoribus et actoribus est usque ad praefinitum tempus a patre.
-$Deo gratias
-
-[Responsory Tertia]
-R.br. Verbum caro factum est, * Alleluia, alleluia.
-R. Verbum caro factum est, * Alleluia, alleluia.
-V. Et habitavit in nobis.
-R. Alleluia, alleluia.
-&Gloria
-R. Verbum caro factum est, * Alleluia, alleluia.
-_
-V. Ipse invocabit me, alleluia.
-R. Pater meus es tu, alleluia.
+@Tempora/Nat1-0:Capitulum Vespera
 
 [Capitulum Sexta]
-!Gal 4:4-5
-v. At ubi venit plenitudo temporis, misit Deus Filium suum factum ex muliere, factum sub lege: ut eos, qui sub lege erant, redimeret: ut adoptionem filiorum reciperemus.
-$Deo gratias
-
-[Responsory Sexta]
-R.br. Notum fecit Dominus, * Alleluia, alleluia.
-R. Notum fecit Dominus, * Alleluia, alleluia.
-V. Salutare suum.
-R. Alleluia, alleluia.
-&Gloria
-R. Notum fecit Dominus, * Alleluia, alleluia.
-_
-V. Viderunt omnes fines terrae, alleluia.
-R. Salutare Dei nostri, alleluia.
+@Tempora/Nat1-0:Capitulum Sexta
 
 [Capitulum Nona]
-!Gal 4:7
-v. Itaque jam non est servus, sed filius: quod si filius, et haeres per Deum.
-$Deo gratias
-
-[Responsory Nona]
-R.br. Viderunt omnes fines terrae, * Alleluia, alleluia.
-R. Viderunt omnes fines terrae, * Alleluia, alleluia.
-V. Salutare Dei nostri.
-R. Alleluia, alleluia.
-&Gloria
-R. Viderunt omnes fines terrae, * Alleluia, alleluia.
-_
-V. Verbum caro factum est, alleluia.
-R. Et habitavit in nobis, alleluia.
+@Tempora/Nat1-0:Capitulum Nona
