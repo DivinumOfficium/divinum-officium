@@ -50,6 +50,20 @@ Niedziela Siedemdziesiątnicy | 2016-01-02 | [2016](http://divinumofficium.com/c
 Niedziela Sześćdziesiątnicy | 2016-01-02 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=01-31-2016)
 Niedziela Pięćdziesiątnicy | 2016-01-02 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=02-07-2016)
 
+## Wielki Post
+
+Tekst | Data dodania | Link
+----- | -------------|-----
+Środa Popielcowa | 2016-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=2-10-2016)
+1 Niedziela Wielkiego Postu | 2016-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=2-14-2016)
+Środa Suchych Dni Wielkiego Postu | 2016-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=2-17-2016)
+Piątek Suchych Dni Wielkiego Postu | 2016-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=2-19-2016)
+Sobota Suchych Dni Wielkiego Postu | 2016-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=2-20-2016)
+2 Niedziela Wielkiego Postu | 2016-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=2-21-2016)
+3 Niedziela Wielkiego Postu | 2016-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=2-28-2016)
+4 Niedziela Wielkiego Postu | 2016-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-6-2016)
+Niedziela Męki Pańskiej | 2016-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-13-2016)
+
 ## Msze Własne o Świętych
 
 Tekst | Data dodania | Link
@@ -57,6 +71,8 @@ Tekst | Data dodania | Link
 12.08 - Niepokalane Poczęcie N. M. P. | 2015-12-10 | [2015](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=12-08-2015)
 12.21 - Św. Tomasza, Apostoła | 2015-12-16 | [2015](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=12-21-2015)
 02.02 - Oczyszczenie N. M. P | 2015-12-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=02-02-2016)
+02.22 - Katedry Św. Piotra, Apostoła | 2015-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=2-22-2016)
+02.24 - Św. Macieja, Apostoła | 2015-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=2-25-2016)
 
 ## Inne
 
