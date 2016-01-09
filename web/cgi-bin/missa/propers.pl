@@ -82,7 +82,9 @@ sub specials {
     if ($item =~ $section_regex) {
       $label = $1;
 
-      if ($rule =~ /omit.*\b$label\b/i) {
+      if ( ($rule =~ /omit.*\b$label\b/i) ||
+           ( ( $version =~ /1570/) && ( $item =~ / Le/ ) ) # omit Leonine prayers issue #367
+      ) {
         # Skip omitted section
         $tind++ while ($tind < @t && $t[$tind] !~ $section_regex);
       }
