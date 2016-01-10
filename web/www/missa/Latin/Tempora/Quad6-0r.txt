@@ -258,11 +258,16 @@ annuntiétis Evangélium suum: In nómine Patris, et Fílii, + et Spíritus~
 Sancti.
 D. Amen.
 
+[Evangelium1]
+Pássio Dómini nostri Jesu Christi secúndum Matthǽum.
+!Matt 26:36-75; 27:1-60.
+
 [Evangelium]
 @:Munda Cor Passionis
 _
 v.~
-@Tempora/Quad6-0::s/Erat autem ibi.*//s
+@:Evangelium1
+@Tempora/Quad6-0:Evangelium3
 
 [Offertorium]
 !Ps 68:21-22.
