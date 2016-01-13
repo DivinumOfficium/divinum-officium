@@ -1,6 +1,12 @@
 # Divinumofficium.com - status polskiego tłumaczenia tekstów Mszy
 
-W pierwszej kolejności dodawane są dni 1 i 2 klasy.
+Cele:
+
+1. **Mszalik na niedziele i święta wg rubryk 1960** – części stałe oraz formularze dla dni 1 i 2 klasy
+2. **Mszalik codzienny wg rubryk 1960** – części stałe oraz formularze dla wszystkich dni
+3. **Mszalik historyczny** – części stałe oraz formularze dla dni wg rubryk innych innych niż 1960
+
+Aktualnie **cel 1.** zrealizowany jest w ok. **32%**. Planowany termin ukończenia **celu 1.** to **połowa 2016 roku**. Dodatkowo autor stara się, aby w danym monencie formularz dla przynajmniej najbliższej niedzieli lub święta był dostępny po polsku – patrz wykaz poniżej.
 
 ## Adwent
 
@@ -88,3 +94,12 @@ Tekst | Klasa | Data dodania | Link
 Tekst | Data dodania | Link
 ----- | -------------|-----
 Części stałe (ordinarium) - Rubrics 1960 | 2015-12-02 | -
+
+## Tymczasowo pominięte
+
+Pozycje tymczasowo pominięte zostaną dodane w przyszłości, po osiągnięciu pierwszego bądź drugiego celu.
+
+* Niedziela Palmowa – formularze dla rubryk innych niż 1960
+* Wielki Czwartek Wieczerzy Pańskiej – Msza Krzyżma (brak wersji łacińskiej w DivinumOfficium)
+* Wielki Czwartek Wieczerzy Pańskiej – formularze dla rubryk innych niż 1960
+
