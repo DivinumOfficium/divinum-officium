@@ -212,11 +212,7 @@ sub resolve_refs {
     elsif ($line =~ /^\s*\!\!(.*)/) {  
       my $l = $1;
       my $suffix = '';
-      if ($l =~ /\{.*?\}/) {
-        $l =~ s/(\{.*?\})//; 
-  	    $suffix = $1;
-		    $suffix = setfont($smallblack, $suffix); 
-      }
+      if ($l =~ s/\{[^:].*?\}//) {$suffix = setfont($smallblack, $&);}
       $line = setfont($largefont, $l) . " $suffix\n";   
 	  if ($expand =~ /skeleton/i) {$line .= linkcode1();}
     } 
