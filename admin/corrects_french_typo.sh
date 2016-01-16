@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # usage:
-# ./correct_typo.sh Sancti/01-15.txt
+# ./corrects_french_typo.sh Sancti/01-15.txt
 set -e
 
 file="$1"
