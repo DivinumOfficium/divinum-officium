@@ -16,8 +16,11 @@ sub specials {
   my $lang = shift;		 
   
   $octavam = ''; #check duplicate commemorations
-  my %w = (columnsel($lang)) ? %winner : %winner2; 
-  
+  my %w = (columnsel($lang)) ? %winner : %winner2;
+
+  my $hymntrans = $translate{$lang}{Hymnus};
+  $hymntrans =~ s/\s+//g; # this should be done in setupstring @mbab 2016-1-14
+
   if ($column == 1) {
     my $r = $w{Rule};
     $r =~ s/\s*$//;
@@ -134,10 +137,10 @@ sub specials {
       next;
     }
                                 
-	if ($item =~ /hymnus/i && $hora =~ /matutinum/i) { 
+	if ($item =~ /hymnus|$hymntrans/i && $hora =~ /matutinum/i) { 
 	  hymnus($lang);  
 	  next;
-	} elsif ($item =~ /hymnus/i && $hora !~ /(laudes|vespera)/i) {
+	} elsif ($item =~ /hymnus|$hymntrans/i && $hora !~ /(laudes|vespera)/i) {
       my ($dox, $dname) = doxology('', $lang); 
       if (!$dox) {push(@s, $item); next;}
       $item = translate_label($item, $lang);
@@ -250,9 +253,6 @@ sub specials {
 	    my $capit = $capit{$name}; 	  	 
       my $name = major_getname();	 
 
-      my $hymntrans = Hymnus;
-      if (!columnsel($lang) && exists($translate{$lang}{Hymnus})) {$hymntrans = $translate{$lang}{Hymnus};}
-                               
 	  my $hymn = '';	
       if ($capit =~ /!H[iy]mn(.*)/is) {
          $hymn = $1;
