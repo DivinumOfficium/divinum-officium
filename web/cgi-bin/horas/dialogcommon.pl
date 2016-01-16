@@ -193,7 +193,7 @@ sub vero($)
 
     # The empty condition is _true_ : safer, since previously conditions were's used.
     return 1 unless $condition;
-
+    $DB::single = 1;
     # aut binds tighter than et
     AUTEM: for ( split /\baut\b/, $condition )
     {
