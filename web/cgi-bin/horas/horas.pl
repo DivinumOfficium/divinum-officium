@@ -61,6 +61,14 @@ sub horas
     else {$searchind++;}
 
     my $alleluia_regex = qr/[(]*(?<!&)allel[uú][ij]a[\.\,]*[)]*/i;
+
+    $omit_regexp = 'omit'; # to prevent display omitted Preces|Suffragium in red line 160
+    {
+      my %comm = %{setupstring($datafolder, $lang2, 'Psalterium/Comment.txt')};  
+      $omit_regexp .= '|\b' . (split("\n", $comm{'Preces'}))[1] . '\b';
+      $omit_regexp .= '|\b' . (split("\n", $comm{'Suffragium'}))[0] . '\b';
+    }
+
     while ($ind1 < @script1 || $ind2 < @script2)
     {
         $expandind++;
@@ -149,7 +157,7 @@ sub resolve_refs {
     if ($t[0] =~ /\#/) {return setlink($t[0], $expandind, $lang); }
     else {return "";}
   }
-  if ($t[0] =~ /(omit|elmarad)/i) {$t[0] =~ s/^\s*\#/\!\!\!/;}
+  if ($t[0] =~ $omit_regexp) {$t[0] =~ s/^\s*\#/\!\!\!/;}
   else {$t[0] =~ s/^\s*\#/\!\!/;}
 
   my @resolved_lines;  # Array of blocks expanded from lines.
@@ -204,11 +212,7 @@ sub resolve_refs {
     elsif ($line =~ /^\s*\!\!(.*)/) {  
       my $l = $1;
       my $suffix = '';
-      if ($l =~ /\{.*?\}/) {
-        $l =~ s/(\{.*?\})//; 
-  	    $suffix = $1;
-		    $suffix = setfont($smallblack, $suffix); 
-      }
+      if ($l =~ s/(\{[^:].*?\})//) {$suffix = setfont($smallblack, $1);}
       $line = setfont($largefont, $l) . " $suffix\n";   
 	  if ($expand =~ /skeleton/i) {$line .= linkcode1();}
     } 
