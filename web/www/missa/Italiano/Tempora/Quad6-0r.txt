@@ -205,11 +205,16 @@ D. Degnati, signore, di benedirmi.
 S. Il Signore vi sia nei cuori e sulle labbra, affinché in modo degno e conveniente voi annunziate il suo Vangelo. Nel nome del Padre e del Figlio  + e dello Spirito Santo.
 D. Amen.
 
+[Evangelium1]
+Passione di nostro Signore Gesù Cristo secondo san Matteo.
+!Matt. 26:36-75; 27:1-60.
+
 [Evangelium]
 @:Munda Cor Passionis
 _
 v.~
-@Tempora/Quad6-0::s/Erano ivi Maria.*//s
+@:Evangelium1
+@Tempora/Quad6-0:Evangelium3
 
 [Offertorium]
 !Ps 68:21-22.

@@ -82,7 +82,9 @@ sub specials {
     if ($item =~ $section_regex) {
       $label = $1;
 
-      if ($rule =~ /omit.*\b$label\b/i) {
+      if ( ($rule =~ /omit.*\b$label\b/i) ||
+           ( ( $version =~ /1570/) && ( $item =~ / Le/ ) ) # omit Leonine prayers issue #367
+      ) {
         # Skip omitted section
         $tind++ while ($tind < @t && $t[$tind] !~ $section_regex);
       }
@@ -102,17 +104,9 @@ sub specials {
 
 	if ($item !~ /^\s*!!/ && ($item !~ /^\s*!x!/ || $item =~ /!x!!/) && $item =~ /^\s*!/ && !$rubrics) {next;}
 	
-	my $after = $item;
-	$item = '';
-	while ($after =~ /(.*?)\(([^\n\r]*?)\)(.*)/s) {
-	  $after = $3;
-	  $item .= "$1 ";
-	  if ($rubrics) {$item .= setfont($smallfont, $2) . ' ';}
-	}
-	$item .= $after;
-
-    $N = setfont($largefont, 'N.');
-    $item =~ s/N\./$N/g;
+  $item =~ s/\(([^\n\r]*?)\)/ if ($rubrics) { setfont($smallfont,$1) } else { '_' } /egs;
+    
+  $item =~ s/N\./ setfont($largefont, 'N.') /eg;
 
 	push(@s, $item);
   }	   			
