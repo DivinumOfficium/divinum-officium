@@ -61,7 +61,7 @@ Tekst | Data dodania | Link
 Tekst | Data dodania | Link
 ----- | -------------|-----
 01-15 Św. Pawła, Pierwszego Pustelnika i Wyznawcy | 2016-01-09 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-15-2016)
-01-18 - Katedry Św. Piotra, Apostoła (przed 1960)* | 2016-01-09 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=%27Reduced%201955%27&lang2=Polski&browsertime=1-18-2017)
+01-18 - Katedry Św. Piotra, Apostoła (przed 1960)* | 2016-01-09 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=1-18-2017)
 02-02 Oczyszczenie N. M. P | 2016-01-22 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-2-2016)
 02.22 - Katedry Św. Piotra, Apostoła (1960)* | 2016-01-09 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-22-2016)
 11.11 - Świętego Marcina, Biskupa i Wyznawcy* | 2015-11-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-11-2016)
