@@ -1,6 +1,7 @@
 # Divinumofficium.com - status polskiego tłumaczenia tekstów brewiarza
 
 Trwają prace nad częściami wspólnymi (Commune)
+Brewiarz monastyczny jest niekompletny (brakuje na przykład źródeł hymnów).
 
 ## Adwent
 
@@ -28,8 +29,16 @@ Tekst | Data dodania | Link
 Tekst | Data dodania | Link
 ----- | -------------|-----
 Uroczystość Świętej Rodziny* | 2015-12-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-10-2016)
+2. Niedziela po Objawieniu | 2016-01-09 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-15-2017)
 5. Niedziela po Objawieniu* | 2015-11-12 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-6-2016)
 6. Niedziela po Objawieniu* | 2015-11-12 |[2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-13-2016)
+
+## Przedpoście
+Tekst | Data dodania | Link
+----- | -------------|-----
+Niedziela Siedemdziesiątnicy | 2016-01-09 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-24-2016)
+Niedziela Sześćdziesiątnicy* | 2016-01-16 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-31-2016)
+Niedziela Pięćdziesiątnicy | 2016-01-22 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-7-2016)
 
 ## Okres po Zesłaniu
 
@@ -51,6 +60,10 @@ Tekst | Data dodania | Link
 
 Tekst | Data dodania | Link
 ----- | -------------|-----
+01-15 Św. Pawła, Pierwszego Pustelnika i Wyznawcy | 2016-01-09 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-15-2016)
+01-18 - Katedry Św. Piotra, Apostoła (przed 1960)* | 2016-01-09 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=%27Reduced%201955%27&lang2=Polski&browsertime=1-18-2017)
+02-02 Oczyszczenie N. M. P | 2016-01-22 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-2-2016)
+02.22 - Katedry Św. Piotra, Apostoła (1960)* | 2016-01-09 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-22-2016)
 11.11 - Świętego Marcina, Biskupa i Wyznawcy* | 2015-11-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-11-2016)
 11.21 - Ofiarowanie Najświętszej Maryi Panny* | 2015-11-20 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-21-2016)
 11.25 - Świętej Katarzyny, Dziewicy i Męczennicy* | 2015-11-23 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-25-2016)
@@ -64,6 +77,6 @@ Tekst | Data dodania | Link
 ----- | -------------|-----
 Psalmy i kantyki | 2015-08-25 | -
 Części stałe (ordinarium) | 2015-11-25 | -
-Psałterz (antyfony, wersety, kapitula, etc.) - część od Okresu Narodzenia Pańskiego do końca Przedpościa, wersja Divino Afflatu i nowsze; reszta jest niekompletna | 2016-01-02 | -
+Psałterz | 2016-01-02 | -
 
 \* braki w Matutinum
