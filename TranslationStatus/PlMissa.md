@@ -6,7 +6,15 @@ Cele:
 2. **Mszalik codzienny wg rubryk 1960** – części stałe oraz formularze dla wszystkich dni
 3. **Mszalik historyczny** – części stałe oraz formularze dla dni wg rubryk innych innych niż 1960
 
-Aktualnie **cel 1.** zrealizowany jest w ok. **32%**. Planowany termin ukończenia **celu 1.** to **połowa 2016 roku**. Dodatkowo autor stara się, aby w danym monencie formularz dla przynajmniej najbliższej niedzieli lub święta był dostępny po polsku – patrz wykaz poniżej.
+Aktualnie **cel 1.** zrealizowany jest w ok. **35%**. Planowany termin ukończenia **celu 1.** to **połowa 2016 roku**. Dodatkowo autor stara się, aby w danym monencie formularz dla przynajmniej najbliższej niedzieli lub święta był dostępny po polsku – patrz wykaz poniżej.
+
+Ostatnio dodane (2016-01-30):
+* Wielki Czwartek - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-24-2016)
+* Wielki Piątek - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-25-2016)
+* Wigilia Wielkanocna - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-26-2016)
+* Msza w Dzień Zmartwychwstania Pańskiego - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-27-2016)
+* Poniedziałek Wielkanocny - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-28-2016)
+
 
 ## Adwent
 
@@ -78,6 +86,16 @@ Niedziela Męki Pańskiej | 1 | 2016-01-08 | [2016](http://divinumofficium.com/c
 Wielki Poniedziałek | 1 | 2016-01-13 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-21-2016)
 Wielki Wtorek | 1 | 2016-01-13 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-22-2016)
 Wielka Środa | 1 | 2016-01-13 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-23-2016)
+Wielki Czwartek | 1 | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-24-2016)
+Wielki Piątek | 1 | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-25-2016)
+
+## Okres Wielkanocny
+
+Tekst | Klasa | Data dodania | Link
+------|-------|--------------|-----
+Wigilia Wielkanocna | 1 | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-26-2016)
+Msza w Dzień Zmartwychwstania Pańskiego | 1 | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-27-2016)
+Poniedziałek Wielkanocny | 1 | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-28-2016)
 
 ## Msze Własne o Świętych
 
@@ -102,4 +120,6 @@ Pozycje tymczasowo pominięte zostaną dodane w przyszłości, po osiągnięciu 
 * Niedziela Palmowa – formularze dla rubryk innych niż 1960
 * Wielki Czwartek Wieczerzy Pańskiej – Msza Krzyżma (brak wersji łacińskiej w DivinumOfficium)
 * Wielki Czwartek Wieczerzy Pańskiej – formularze dla rubryk innych niż 1960
+* Wielki Piątek – formularze dla rubryk innych niż 1960
+* Wigilia Wielkanocna – formularze dla rubryk innych niż 1960
 
