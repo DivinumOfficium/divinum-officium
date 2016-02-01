@@ -11,11 +11,7 @@ Doxology=Nat
 Festum Domini
 
 [Ant Vespera]
-O admirabile commercium! * Creator generis humani, animatum corpus sumens, de Virgine nasci dignatus est: et procedens homo sine semine, largitus est nobis suam Deitatem.;;109
-Quando natus es * ineffabiliter ex Virgine, tunc impletae sunt Scripturae: sicut pluvia in vellus descendisti, ut salvum faceres genus humanum: te laudamus, Deus noster.;;112
-Rubum, quem viderat Moyses * incombustum, conservatam agnovimus tuam laudabilem virginitatem: Dei Genitrix, intercede pro nobis.;;121
-Germinavit radix Jesse * orta est stella ex Jacob, Virgo peperit Salvatorem: te laudamus Deus noster.;;126
-Ecce Maria genuit * nobis Salvatorem, quem Joannes videns exclamavit, dicens: Ecce Agnus Dei, ecce qui tollit peccata mundi, alleluia.;;147
+@Sancti/01-01:Ant Vespera
 
 [Capitulum Vespera]
 !Mal 3:1
@@ -205,11 +201,7 @@ Lumen ad revelationem Gentium, * et gloriam plebis tuae Israel.
 Obtulerunt * pro eo Domino par turturum aut duos pullos columbarum.
 
 [Capitulum Laudes]
-!Mal 3:1
-v. Ecce ego mitto Angelum meum, et praeparabit viam ante faciem meam. Et statim~
-veniet ad templum sanctum suum Dominator, quem vos quaeritis, et Angelus~
-testamenti, quem vos vultis.
-$Deo gratias
+@:Capitulum Vespera
 
 [Ant 2]
 Cum inducerent * puerum Jesum parentes eius, accepit eum Simeon in ulnas suas,~
@@ -221,11 +213,7 @@ v. Et placebit Domino sacrificium Juda, et Jerusalem sicut dies saeculi, et~
 sicut anni antiqui, dicit Dominus omnipotens.
 
 [Capitulum Tertia]
-!Mal 3:1
-v. Ecce ego mitto Angelum meum, et praeparabit viam ante faciem meam. Et statim~
-veniet ad templum sanctum suum Dominator, quem vos quaeritis, et Angelus~
-testamenti, quem vos vultis.
-$Deo gratias
+@:Capitulum Vespera
 
 [Capitulum Sexta]
 !Mal 3:1-2
@@ -235,9 +223,7 @@ herba fullonum.
 $Deo gratias
 
 [Capitulum Nona]
-!Mal 3:4
-v. Et placebit Domino sacrificium Juda, et Jerusalem sicut dies saeculi, et~
-sicut anni antiqui, dicit Dominus omnipotens.
+@:Lectio Prima
 $Deo gratias
 
 [Ant Vespera 3]
@@ -248,8 +234,7 @@ Lumen ad revelationem Gentium, * et gloriam plebis tuae Israel.;;126
 Obtulerunt * pro eo Domino par turturum aut duos pullos columbarum.;;147
 
 [Versum 3]
-V. Responsum accepit Simeon a Spiritu Sancto.
-R. Non visurum se mortem, nisi videret Christum Domini.
+@:Versum 1
 
 [Ant 3]
 Hodie * beata Virgo Maria puerum Jesum praesentavit in templo, et Simeon~
