@@ -1,17 +1,14 @@
 [Rank]
-S. Blasii Episcopi;;Simplex;;1.1;;vide C2
+S. Blasii Episcopi et Martyris;;Simplex;;1.1;;vide C2
 
 [RankNewcal]
-S. Blasii Episcopi;;Duplex optional;;2;;vide C2
+S. Blasii Episcopi; et Martyris;Duplex optional;;2;;vide C2
 
 [Rule]
 vide C2;
 
 [Oratio]
-Deus, qui nos beati Blasii Martyris tui atque Pontificis annua solemnitate~
-laetificas: concede propitius; ut cujus natalitia colimus, de eiusdem etiam~
-protectione gaudeamus. 
-$Per Dominum
+@Commune/C2:Oratio1:s/N\./Blasii/
 
 [Lectio93]
 Blasius, Sebaste in Armenia cum virtutum laude floreret, eiusdem civitatis~
