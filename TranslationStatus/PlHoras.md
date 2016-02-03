@@ -1,6 +1,7 @@
 # Divinumofficium.com - status polskiego tłumaczenia tekstów brewiarza
 
-Trwają prace nad częściami wspólnymi (Commune)
+Trwają prace nad częściami wspólnymi (Commune).
+
 Brewiarz monastyczny jest niekompletny (brakuje na przykład źródeł hymnów).
 
 ## Adwent
@@ -30,6 +31,8 @@ Tekst | Data dodania | Link
 ----- | -------------|-----
 Uroczystość Świętej Rodziny* | 2015-12-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-10-2016)
 2. Niedziela po Objawieniu | 2016-01-09 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-15-2017)
+3. Niedziela po Objawieniu* | 2016-01-30 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-22-2017)
+4. Niedziela po Objawieniu* | 2016-01-30 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-29-2017)
 5. Niedziela po Objawieniu* | 2015-11-12 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-6-2016)
 6. Niedziela po Objawieniu* | 2015-11-12 |[2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-13-2016)
 
@@ -39,6 +42,15 @@ Tekst | Data dodania | Link
 Niedziela Siedemdziesiątnicy | 2016-01-09 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-24-2016)
 Niedziela Sześćdziesiątnicy* | 2016-01-16 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-31-2016)
 Niedziela Pięćdziesiątnicy | 2016-01-22 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-7-2016)
+
+## Wielki Post
+Tekst | Data dodania | Link
+----- | -------------|-----
+Środa Popielcowa* | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-10-2016)
+Czwartek po Popielcu | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-11-2016)
+Piątek po Popielcu | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-12-2016)
+Sobota po Popielcu | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-13-2016)
+I Niedziela Wielkiego Postu | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-14-2016)
 
 ## Okres po Zesłaniu
 
@@ -60,9 +72,15 @@ Tekst | Data dodania | Link
 
 Tekst | Data dodania | Link
 ----- | -------------|-----
-01-15 Św. Pawła, Pierwszego Pustelnika i Wyznawcy | 2016-01-09 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-15-2016)
-01-18 - Katedry Św. Piotra, Apostoła (przed 1960)* | 2016-01-09 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=1-18-2017)
-02-02 Oczyszczenie N. M. P | 2016-01-22 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-2-2016)
+01.15 Św. Pawła, Pierwszego Pustelnika i Wyznawcy | 2016-01-09 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-15-2016)
+01.18 - Katedry Św. Piotra, Apostoła (przed 1960)* | 2016-01-09 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=1-18-2017)
+01.25 Nawrócenie św. Pawła Apostoła* | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-25-2016)
+01.29 Św. Franciszka Salezego Biskupa Wyznawcy i Doktora Kościoła | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-29-2016)
+02.01 Św. Ignacego Biskupa i Męczennika* | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-1-2016)
+02.02 Oczyszczenie N. M. P. | 2016-01-22 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-2-2016)
+02.03 Św. Błażeja Biskupa i Męczennika* | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-3-2016)
+02.04 Św. Andrzeja Corsini Biskupa i Wyznawcy* | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-4-2016)
+02.05 Św. Agaty Panny i Męczenniczki* | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-5-2016)
 02.22 - Katedry Św. Piotra, Apostoła (1960)* | 2016-01-09 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-22-2016)
 11.11 - Świętego Marcina, Biskupa i Wyznawcy* | 2015-11-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-11-2016)
 11.21 - Ofiarowanie Najświętszej Maryi Panny* | 2015-11-20 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-21-2016)
@@ -76,7 +94,9 @@ Tekst | Data dodania | Link
 Tekst | Data dodania | Link
 ----- | -------------|-----
 Psalmy i kantyki | 2015-08-25 | -
+Modlitwy przed i po oficjum | 2015-09-22 | -
 Części stałe (ordinarium) | 2015-11-25 | -
 Psałterz | 2016-01-02 | -
+Części wspólne o N. M. P.* | 2016-01-30 | -
 
 \* braki w Matutinum
