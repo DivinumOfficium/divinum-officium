@@ -1,0 +1,55 @@
+[Rank]
+Die Quinta infra octavam Pentecostes;;Semiduplex I classis;;5;;ex Pasc7-0
+
+[Rank1960]
+Die Quinta infra octavam Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
+
+[RankNewcal]
+Feria V post Pentecostes;;Feria;;1;;
+
+[Rule]
+Gloria
+Sequentia
+Credo
+Prefatio=Spiritu
+
+[Comment]
+Czwartek w Oktawie Zesłania Ducha Świętego
+Stacja u Św. Wawrzyńca za Murami
+1 klasy
+Szaty czerwone
+Chrystus Pan obdarzył Kościół władzą nad szatanem i nad chorobami (ewangelia). Apostołowie oraz ich uczniowie często korzystali z tej władzy (lekcja). Przede wszystkim uwalnianie opętanych jest znakiem, że nadeszło Królestwo Boże.
+
+[Introitus]
+@Tempora/Pasc7-0:Introitus
+
+[Oratio]
+@Tempora/Pasc7-0:Oratio
+
+[Lectio]
+Czytanie z Dziejów Apostolskich
+!Dz 8:5-8
+W one dni: Filip zaszedłszy do miasta Samarii głosił im Chrystusa. I rzesze słuchały zgodnie tego, co im powiadał Filip, widząc cuda, które czynił. Duchy nieczyste bowiem z wielu tych, którzy je mieli, wychodziły wołając głosem wielkim; wielu też sparaliżowanych i chromych uzdrowionych zostało. Toteż wielka radość zapanowała w tym mieście.
+
+[Graduale]
+@Tempora/Pasc7-0:Graduale
+
+[Sequentia]
+@Tempora/Pasc7-0:Sequentia
+
+[Evangelium]
+Ciąg dalszy ++ Ewangelii świętej według Łukasza.
+!Łk 9:1-6
+Onego czasu: Jezus wezwawszy dwunastu Apostołów dał im władzę nad wszystkimi szatanami i moc uzdrawiania chorób. I wysłał ich, aby głosili Królestwo Boże i uzdrawiali chorych. I rzekł do nich: «Nie bierzcie nic na drogę, ani laski, ani torby podróżnej, ani chleba, ani pieniędzy, ani nie miejcie dwóch tunik. I do któregokolwiek domu wnijdziecie, tam pozostańcie i nie wychodźcie stamtąd. A jeśliby was którzy nie przyjęli, wychodząc z miasta onego nawet proch z nóg waszych otrząśnijcie na świadectwo przeciwko nim». Wyszedłszy tedy obchodzili osady, wszędzie głosząc Ewangelię i uzdrawiając.
+
+[Offertorium]
+@Tempora/Pasc7-0:Offertorium
+
+[Secreta]
+@Tempora/Pasc7-0:Secreta
+
+[Communio]
+@Tempora/Pasc7-0:Communio
+
+[Postcommunio]
+@Tempora/Pasc7-0:Postcommunio
