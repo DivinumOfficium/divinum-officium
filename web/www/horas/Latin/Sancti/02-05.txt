@@ -7,13 +7,15 @@ S. Agathae Virginis et Martyris;;Semiduplex;;2;;vide C6b
 [Rule]
 vide C6b;
 9 lectiones
+Psalm5 Vespera=116
+Psalm5 Vespera3=147
 
-[Ant Vespera 3]
-Quis es tu, * qui venisti ad me curare vulnera mea? Ego sum Apostolus Christi: nihil in me dubites filia.;;109
-Medicinam carnalem * corpori meo numquam exhibui, sed habeo Dominum Jesum Christum, qui solo sermone restaurat universa.;;112
-Gratias tibi ago, * Domine Jesu Christe, quia memor es mei, et misisti ad me Apostolum tuum curare vulnera mea.;;121
-Benedico te * Pater Domini mei Jesu Christi: quia per Apostolum tuum mamillam meam meo pectori restituisti.;;126
-Qui me dignatus est * ab omni plaga curare, et mamillam meam meo pectori restituere, ipsum invoco Deum vivum.;;147
+[Ant Vespera]
+Quis es tu, * qui venisti ad me curare vulnera mea? Ego sum Apostolus Christi: nihil in me dubites filia.
+Medicinam carnalem * corpori meo numquam exhibui, sed habeo Dominum Jesum Christum, qui solo sermone restaurat universa.
+Gratias tibi ago, * Domine Jesu Christe, quia memor es mei, et misisti ad me Apostolum tuum curare vulnera mea.
+Benedico te * Pater Domini mei Jesu Christi: quia per Apostolum tuum mamillam meam meo pectori restituisti.
+Qui me dignatus est * ab omni plaga curare, et mamillam meam meo pectori restituere, ipsum invoco Deum vivum.
 
 [Capitulum Vespera]
 !Sir 51:1-3
@@ -151,11 +153,7 @@ Cum ergo de illis eunuchis dixerit, qui nisi etiam ipsi mente se contineant, fru
 &teDeum
 
 [Ant Laudes]
-Quis es tu, * qui venisti ad me curare vulnera mea? Ego sum Apostolus Christi: nihil in me dubites filia.
-Medicinam carnalem * corpori meo numquam exhibui, sed habeo Dominum Jesum Christum, qui solo sermone restaurat universa.
-Gratias tibi ago, * Domine Jesu Christe, quia memor es mei, et misisti ad me Apostolum tuum curare vulnera mea.
-Benedico te * Pater Domini mei Jesu Christi: quia per Apostolum tuum mamillam meam meo pectori restituisti.
-Qui me dignatus est * ab omni plaga curare, et mamillam meam meo pectori restituere, ipsum invoco Deum vivum.
+@:Ant Vespera
 
 [Capitulum Laudes]
 !Sir 51:1-3
@@ -183,3 +181,6 @@ $Deo gratias
 !Sir 51:8; 51:12
 v. Laudabit usque ad mortem anima mea Dominum, quoniam eruis sustinentes te, et liberas eos de manu angustiae, Domine, Deus noster.
 $Deo gratias
+
+[Ant 3]
+@:Ant 1
