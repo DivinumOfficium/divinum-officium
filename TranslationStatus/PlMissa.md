@@ -6,14 +6,12 @@ Cele:
 2. **Mszalik codzienny wg rubryk 1960** – części stałe oraz formularze dla wszystkich dni
 3. **Mszalik historyczny** – części stałe oraz formularze dla dni wg rubryk innych innych niż 1960
 
-Aktualnie **cel 1.** zrealizowany jest w ok. **35%**. Planowany termin ukończenia **celu 1.** to **połowa 2016 roku**. Dodatkowo autor stara się, aby w danym monencie formularz dla przynajmniej najbliższej niedzieli lub święta był dostępny po polsku – patrz wykaz poniżej.
+Aktualnie **cel 1.** zrealizowany jest w ok. **52%**. Planowany termin ukończenia **celu 1.** to **połowa 2016 roku**. Dodatkowo autor stara się, aby w danym monencie formularz dla przynajmniej najbliższej niedzieli lub święta był dostępny po polsku – patrz wykaz poniżej.
 
-Ostatnio dodane (2016-01-30):
-* Wielki Czwartek - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-24-2016)
-* Wielki Piątek - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-25-2016)
-* Wigilia Wielkanocna - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-26-2016)
-* Msza w Dzień Zmartwychwstania Pańskiego - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-27-2016)
-* Poniedziałek Wielkanocny - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-28-2016)
+Ostatnio dodane (2016-02-12):
+* Piątek Suchych Dni po Zesłaniu Ducha Świętego - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-20-2016)
+* Sobota Suchych Dni po Zesłaniu Ducha Świętego - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-21-2016)
+* 04-25 - Św. Marka, Ewangelisty - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-25-2016)
 
 
 ## Adwent
@@ -96,6 +94,28 @@ Tekst | Klasa | Data dodania | Link
 Wigilia Wielkanocna | 1 | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-26-2016)
 Msza w Dzień Zmartwychwstania Pańskiego | 1 | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-27-2016)
 Poniedziałek Wielkanocny | 1 | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-28-2016)
+Poniedziałek Wielkanocny | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-28-2016)
+Wtorek Wielkanocny | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-29-2016)
+Środa Wielkanocna | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-30-2016)
+Czwartek Wielkanocny | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-31-2016)
+Piątek Wielkanocny | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-1-2016)
+Sobota Biała | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-2-2016)
+Niedziela Biała | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-3-2016)
+2 Niedziela po Wielkanocy | 2 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-10-2016)
+3 Niedziela po Wielkanocy | 2 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-17-2016)
+4 Niedziela po Wielkanocy | 2 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-24-2016)
+5 Niedziela po Wielkanocy | 2 | 2016-02-12 | [2015](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-10-2015)
+Wigilia Wniebowstąpienia Pańskiego | 2 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-4-2016)
+Wniebowstąpienie Pańskie | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-5-2016)
+Niedziela po Wniebowstąpieniu | 2 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-8-2016)
+Wigilia Zesłania Ducha Świętego | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-14-2016)
+Niedziela Zesłania Ducha Świętego | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-15-2016)
+Poniedziałek w Oktawie Zesłania Ducha Świętego | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-16-2016)
+Wtorek w Oktawie Zesłania Ducha Świętego | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-17-2016)
+Środa Suchych Dni po Zesłaniu Ducha Świętego | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-18-2016)
+Czwartek w Oktawie Zesłania Ducha Świętego | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-19-2016)
+Piątek Suchych Dni po Zesłaniu Ducha Świętego | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-20-2016)
+Sobota Suchych Dni po Zesłaniu Ducha Świętego | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-21-2016)
 
 ## Msze Własne o Świętych
 
@@ -106,6 +126,9 @@ Tekst | Klasa | Data dodania | Link
 02.02 - Oczyszczenie N. M. P | 2 | 2015-12-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=02-02-2016)
 02.22 - Katedry Św. Piotra, Apostoła | 2 | 2015-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=2-22-2016)
 02.24 - Św. Macieja, Apostoła | 2 | 2015-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=2-25-2016)
+03-19 - Św. Józefa, Oblubieńca N. M. P. | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-19-2016)
+03-25 - Zwiastowanie N. M. P. | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-4-2016)
+04-25 - Św. Marka, Ewangelisty | 2 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-25-2016)
 
 ## Inne
 
