@@ -9,9 +9,9 @@ Cele:
 Aktualnie **cel 1.** zrealizowany jest w ok. **52%**. Planowany termin ukończenia **celu 1.** to **połowa 2016 roku**. Dodatkowo autor stara się, aby w danym monencie formularz dla przynajmniej najbliższej niedzieli lub święta był dostępny po polsku – patrz wykaz poniżej.
 
 Ostatnio dodane (2016-02-12):
-* Piątek Suchych Dni po Zesłaniu Ducha Świętego - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-20-2016)
-* Sobota Suchych Dni po Zesłaniu Ducha Świętego - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-21-2016)
-* 04-25 - Św. Marka, Ewangelisty - [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-25-2016)
+* Piątek Suchych Dni po Zesłaniu Ducha Świętego – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-20-2016)
+* Sobota Suchych Dni po Zesłaniu Ducha Świętego – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-21-2016)
+* 04-25 – Św. Marka, Ewangelisty – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-25-2016)
 
 
 ## Adwent
@@ -135,6 +135,15 @@ Tekst | Klasa | Data dodania | Link
 Tekst | Data dodania | Link
 ----- | -------------|-----
 Części stałe (ordinarium) - Rubrics 1960 | 2015-12-02 | -
+
+## Brakujące propria
+
+Propria występujące tylko w polskim kalendarzu - brak wersji łacińskiej w DivinumOfficium.
+
+* 04-23 – Św. Wojciecha
+* 05-03 – N. M. P. Królowej Polski
+* 05-08 – Św. Stanisława (w kalendarzu ogólnym obchodzone 05-07, 3 klasy, propria inne niż dla kalend. polskiego)
+* 05-24 – N. M. P. Wspomożycielki Wiernych
 
 ## Tymczasowo pominięte
 
