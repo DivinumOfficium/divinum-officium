@@ -17,37 +17,37 @@ sub Main {
 }
 
 sub ConvertFile($) {
+    my $filename = shift;
     my $modified = 0;
-    my $infilename = shift;
-    print "Reading \"", $infilename, "\"… ";
-    my ($outfh, $outfilename) = tempfile; binmode $outfh, ":utf8";
-    open my $infh, '<:utf8', $infilename; # autodie dies on error
-    while (my $line = <$infh>){
-        $modified |= ConvertLine($line);
-        print $outfh $line;
+    print "Reading \"", $filename, "\"… ";
+    my ($tmpfh, $tmpfilename) = tempfile; binmode $tmpfh, ':utf8';
+    open my $fh, '<', $filename;
+    while (<$fh>) {
+        $modified |= ConvertLine();
+        print $tmpfh $_;
     }
-    close $infh;
-    close $outfh;
+    close $fh;
+    close $tmpfh;
     if ($modified) {
-        copy $infilename, $infilename.".old" ;
-        move $outfilename, $infilename;
-        say "corrected! Original file is \"", $infilename.".old", "\"\n" ;
+        copy $filename, $filename.".old";
+        move $tmpfilename, $filename;
+        say "corrected! Original file is \"", $filename.".old", "\"\n" ;
     } else {
         say "no error found!\n" ;
     }
     return $modified;
 }
 
-sub ConvertLine($) {
+sub ConvertLine {
     my $modified = 0;
-    my $old = $_[0];
-    $modified |= $_[0] =~ s/'/’/g;
-    $modified |= $_[0] =~ s/O /Ô /g;
-    $modified |= $_[0] =~ s/Evangile/Évangile/g;
-    $modified |= $_[0] =~ s/Epître/Épître/g;
-    $modified |= $_[0] =~ s/(É|E)pitre/Épître/g;
-    $modified |= $_[0] =~ s/ (:|;|!|\?)/ $1/g;
-    print "\n< ", $old, "> ", $_[0] if $modified;
+    my $old = $_;
+    $modified |= s/'/’/g;
+    $modified |= s/O /Ô /g;
+    $modified |= s/Evangile/Évangile/g;
+    $modified |= s/Epître/Épître/g;
+    $modified |= s/(É|E)pitre/Épître/g;
+    $modified |= s/ (:|;|!|\?)/ $1/g;
+    print "\n< ", $old, "> ", $_ if $modified;
     return $modified;
 }
 
