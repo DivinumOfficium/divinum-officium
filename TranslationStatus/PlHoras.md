@@ -64,6 +64,20 @@ Wtorek II tygodnia Wielkiego Postu | 2016-02-08 | [2016](http://divinumofficium.
 Czwartek II tygodnia Wielkiego Postu* | 2016-02-08 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-16-2017)
 Piątek II tygodnia Wielkiego Postu | 2016-02-08 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-26-2016)
 Sobota II tygodnia Wielkiego Postu | 2016-02-08 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-27-2016)
+III Niedziela Wielkiego Postu* | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-28-2016)
+Poniedziałek III tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-29-2016)
+Wtorek III tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-1-2016)
+Środa III tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-2-2016)
+Czwartek III tygodnia Wielkiego Postu* | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-3-2016)
+Piątek III tygodnia Wielkiego Postu* | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-4-2016)
+Sobota III tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-5-2016)
+IV Niedziela Wielkiego Postu* | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-6-2016)
+Poniedziałek IV tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-7-2016)
+Wtorek IV tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-8-2016)
+Środa IV tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-9-2016)
+Czwartek IV tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-10-2016)
+Piątek IV tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-11-2016)
+Sobota IV tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-12-2016)
 
 ## Okres po Zesłaniu
 
@@ -110,6 +124,10 @@ Tekst | Data dodania | Link
 02.18 - Św. Symeona Biskupa i Męczennika | 2016-02-08 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-18-2016)
 02.22 - Katedry Św. Piotra, Apostoła (1960)* | 2016-01-09 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-22-2016)
 11.11 - Świętego Marcina, Biskupa i Wyznawcy* | 2015-11-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-11-2016)
+02.23 - Wigilja Św. Macieja Apostoła (Trident 1570)* | 2016-02-11 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-23-2017&version=Trident%201570)
+02.23 - Św. Piotra Damjana Biskupa i Wyznawcy* | 2016-02-11 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-23-2017)
+02.24 (02.25 w latach przestępnych) - Św. Macieja Apostoła* | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-25-2016)
+03.04 Św. Kazimierza Wyznawcy* | 2016-02-11 | [2014](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-4-2014)
 11.21 - Ofiarowanie Najświętszej Maryi Panny* | 2015-11-20 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-21-2016)
 11.25 - Świętej Katarzyny, Dziewicy i Męczennicy* | 2015-11-23 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-25-2016)
 12.04 - Świętego Piotra Chryzologa, Biskupa Wyznawcy i Doktora Kościoła* | 2015-12-04 | [2015](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=12-4-2015)
@@ -128,4 +146,4 @@ Części wspólne o N. M. P.* | 2016-01-30 | -
 
 \* braki w Matutinum
 
-###### Data ostatniej aktualizacji tej strony: 2016-02-08
+###### Data ostatniej aktualizacji tej strony: 2016-02-15
