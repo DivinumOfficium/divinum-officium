@@ -7,7 +7,6 @@ use open qw( :encoding(UTF-8) :std );
 use autodie;
 use File::Temp qw/ tempfile /;
 use File::Copy;
-use autodie;
 
 Main(@ARGV);
 exit 0;
@@ -32,8 +31,6 @@ sub ConvertFile($) {
     if ($modified) {
         copy $infilename, $infilename.".old" ;
         move $outfilename, $infilename;
-    }
-    if ($modified) {
         say "corrected! Original file is \"", $infilename.".old", "\"\n" ;
     } else {
         say "no error found!\n" ;
