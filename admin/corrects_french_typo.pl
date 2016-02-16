@@ -29,7 +29,7 @@ sub ConvertFile($) {
     close $fh;
     close $tmpfh;
     if ($modified) {
-        copy $filename, $filename.".old";
+        move $filename, $filename.".old";
         move $tmpfilename, $filename;
         say "corrected! Original file is \"", $filename.".old", "\"\n" ;
     } else {
