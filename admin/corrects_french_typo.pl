@@ -8,56 +8,74 @@ use autodie;
 use File::Temp qw/ tempfile /;
 use File::Copy;
 
+sub Usage() {
+    print <<EOF;
+$0 -h
+$0          (read from STDIN)
+$0 FILES
+
+Corrects some usual errors on the french punctuation and accents.
+If a file from FILES must be corrected, the original one is save with the ".old" extension.
+
+EOF
+}
+
 Main(@ARGV);
 exit 0;
 
 sub Main {
-    return Usage() unless @_ ;
+    return ConvertStream() unless @_;
+    return Usage() if ($_[0] =~ m/-h/);
     ConvertFile($_) for (@_);
 }
 
 sub ConvertFile($) {
     my $filename = shift;
     my $modified = 0;
-    print "Reading \"", $filename, "\"… ";
+    say "Reading \"", $filename, "\"… ";
     my ($tmpfh, $tmpfilename) = tempfile; binmode $tmpfh, ':utf8';
     open my $fh, '<', $filename;
     while (<$fh>) {
-        $modified |= ConvertLine();
-        print $tmpfh $_;
+        chomp;
+        $modified |= ConvertLine(1);
+        say $tmpfh $_;
     }
     close $fh;
     close $tmpfh;
     if ($modified) {
         move $filename, $filename.".old";
         move $tmpfilename, $filename;
-        say "corrected! Original file is \"", $filename.".old", "\"\n" ;
+        say "corrected! Original file is \"", $filename.".old", "\"";
     } else {
-        say "no error found!\n" ;
+        say "no error found!";
     }
+    say "";  # newline
     return $modified;
 }
 
-sub ConvertLine {
+sub ConvertStream {
+    foreach (<STDIN>) {
+        ConvertLine(0);
+        print $_;
+    }
+}
+
+sub ConvertLine($) {
+    my $verbose = shift or 0;
     my $modified = 0;
     my $old = $_;
     $modified |= s/'/’/g;
     $modified |= s/O /Ô /g;
-    $modified |= s/Evangile/Évangile/g;
-    $modified |= s/Epître/Épître/g;
-    $modified |= s/(É|E)pitre/Épître/g;
-    $modified |= s/ (:|;|!|\?)/ $1/g;
-    print "\n< ", $old, "> ", $_ if $modified;
+    $modified |= s/(E|É)pitre/Épître/g;
+    $modified |= s/E(vangile|glise|pître)/É$1/g;
+    $modified |= s/ (:|;|!|\?)/ $1/g;  # replace the usual space with a unbreakable space
+    print <<EOF
+l. $.:
+< $old
+> $_
+EOF
+     if $modified and $verbose;
     return $modified;
-}
-
-sub Usage() {
-    print <<"__USAGE__";
-    $0 /path/*.txt
-
-        Corrects some usual errors on the french punctuation and accents.
-
-__USAGE__
 }
 
 __END__
