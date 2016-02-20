@@ -6,13 +6,13 @@ Cele:
 2. **Mszalik codzienny wg rubryk 1960** – części stałe oraz formularze dla wszystkich dni
 3. **Mszalik historyczny** – części stałe oraz formularze dla dni wg rubryk innych innych niż 1960
 
-Aktualnie **cel 1.** zrealizowany jest w ok. **52%**. Planowany termin ukończenia **celu 1.** to **połowa 2016 roku**. Dodatkowo autor stara się, aby w danym monencie formularz dla przynajmniej najbliższej niedzieli lub święta był dostępny po polsku – patrz wykaz poniżej.
+Aktualnie **cel 1.** zrealizowany jest w ok. **62%**. Planowany termin ukończenia **celu 1.** to **połowa 2016 roku**. Dodatkowo autor stara się, aby w danym monencie formularz dla przynajmniej najbliższej niedzieli lub święta był dostępny po polsku – patrz wykaz poniżej.
 
-Ostatnio dodane (2016-02-12):
-* Piątek Suchych Dni po Zesłaniu Ducha Świętego – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-20-2016)
-* Sobota Suchych Dni po Zesłaniu Ducha Świętego – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-21-2016)
-* 04-25 – Św. Marka, Ewangelisty – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-25-2016)
-
+Ostatnio dodane (2016-02-17):
+* 9 Niedziela po Zesłaniu Ducha Świętego – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-17-2016)
+* 10 Niedziela po Zesłaniu Ducha Świętego  – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-24-2016)
+* 05-11 - Świętych Filipa i Jakuba Apostołów – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-11-2016)
+* 05-31 - Najświętszej Maryi Panny, Królowej – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-31-2016)
 
 ## Adwent
 
@@ -117,6 +117,23 @@ Czwartek w Oktawie Zesłania Ducha Świętego | 1 | 2016-02-12 | [2016](http://d
 Piątek Suchych Dni po Zesłaniu Ducha Świętego | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-20-2016)
 Sobota Suchych Dni po Zesłaniu Ducha Świętego | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-21-2016)
 
+## Okres po Zesłaniu Ducha Świetego
+
+Tekst | Klasa | Data dodania | Link
+------|-------|--------------|-----
+Uroczystość Trójcy Przenajświętszej | 1 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-22-2016)
+Uroczystość Bożego Ciała | 1 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-26-2016)
+2 Niedziela po Zesłaniu Ducha Świętego | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-29-2016)
+Uroczystość Najświętszego Serca Pana Jezusa | 1 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=6-3-2016)
+3 Niedziela po Zesłaniu Ducha Świętego | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=6-5-2016)
+4 Niedziela po Zesłaniu Ducha Świętego | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=6-17-2016)
+5 Niedziela po Zesłaniu Ducha Świętego | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=6-19-2016)
+6 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=6-26-2016)
+7 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-3-2016)
+8 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-10-2016)
+9 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-17-2016)
+10 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-24-2016)
+
 ## Msze Własne o Świętych
 
 Tekst | Klasa | Data dodania | Link
@@ -129,6 +146,9 @@ Tekst | Klasa | Data dodania | Link
 03-19 - Św. Józefa, Oblubieńca N. M. P. | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-19-2016)
 03-25 - Zwiastowanie N. M. P. | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-4-2016)
 04-25 - Św. Marka, Ewangelisty | 2 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-25-2016)
+05-01 - Św. Józefa Robotnika, Oblubieńca N. M. P, Wyznawcy | 1 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-1-2016)
+05-11 - Świętych Filipa i Jakuba Apostołów | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-11-2016)
+05-31 - Najświętszej Maryi Panny, Królowej | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-31-2016)
 
 ## Inne
 
