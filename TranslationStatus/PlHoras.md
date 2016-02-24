@@ -78,6 +78,13 @@ Wtorek IV tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.
 Czwartek IV tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-10-2016)
 Piątek IV tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-11-2016)
 Sobota IV tygodnia Wielkiego Postu | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-12-2016)
+1. Niedziela Męki Pańskiej* | 2016-02-24 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-13-2016)
+Poniedziałek tygodnia Męki Pańskiej | 2016-02-24 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-14-2016)
+Wtorek tygodnia Męki Pańskiej | 2016-02-24 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-15-2016)
+Środa tygodnia Męki Pańskiej* | 2016-02-24 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-16-2016)
+Czwartek tygodnia Męki Pańskiej | 2016-02-24 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-17-2016)
+Piątek tygodnia Męki Pańskiej* | 2016-02-24 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-18-2016)
+Sobota tygodnia Męki Pańskiej | 2016-02-24 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-8-2017)
 
 ## Okres po Zesłaniu
 
@@ -127,6 +134,7 @@ Tekst | Data dodania | Link
 02.23 - Wigilja Św. Macieja Apostoła (Trident 1570)* | 2016-02-11 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-23-2017&version=Trident%201570)
 02.23 - Św. Piotra Damjana Biskupa i Wyznawcy* | 2016-02-11 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-23-2017)
 02.24 (02.25 w latach przestępnych) - Św. Macieja Apostoła* | 2016-02-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-25-2016)
+02.27 (02.28 w latach przestępnych) - Św. Gabryjela od Matki Bożej Bolesnej Wyznawcy* | 2016-02-24 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-27-2017)
 03.04 Św. Kazimierza Wyznawcy* | 2016-02-11 | [2014](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-4-2014)
 11.21 - Ofiarowanie Najświętszej Maryi Panny* | 2015-11-20 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-21-2016)
 11.25 - Świętej Katarzyny, Dziewicy i Męczennicy* | 2015-11-23 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-25-2016)
@@ -146,4 +154,4 @@ Części wspólne o N. M. P.* | 2016-01-30 | -
 
 \* braki w Matutinum
 
-###### Data ostatniej aktualizacji tej strony: 2016-02-15
+###### Data ostatniej aktualizacji tej strony: 2016-02-24
