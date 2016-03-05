@@ -10,24 +10,11 @@ Anciennes traductions renommées en *.old.
 ###Manquantes
 - C1.txt
 
+#### Incomplet
+
+
 ###Non faites
-- C10a.txt
-- C10b.txt
-- C10c.txt
-- C10Pasc.txt
-- C10t.txt
-- C10.txt
-- C11p.txt
-- C11.txt
-- C12An.txt
-- C12A.txt
-- C12N.txt
-- C12P.txt
-- C12.txt
-- C2a.txt
-- C2b.txt
-- C2c.txt
-- C2p.txt
+
 - C3a.txt
 - C3b.txt
 - C3p.txt
@@ -57,12 +44,28 @@ Anciennes traductions renommées en *.old.
 - C7.txt
 - C8.txt
 - C9.txt
+- C10a.txt
+- C10b.txt
+- C10c.txt
+- C10Pasc.txt
+- C10t.txt
+- C10.txt
+- C11p.txt
+- C11.txt
+- C12An.txt
+- C12A.txt
+- C12N.txt
+- C12P.txt
+- C12.txt
 - Coronatio.txt
 
 ###Traduites
 #### Barroux
 - C1a.txt
 - C2.txt
+- C2a.txt
+- C2b.txt
+- C2c.txt
 
 #### Introibo
 - C1v.txt (1955)
