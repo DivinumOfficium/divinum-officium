@@ -4,17 +4,16 @@ Nous disposons désormais des traductions du missel quotidien complet édité pa
 
 (Utilisations avec permissions)
 
-## Commune 
+## Commune
 Anciennes traductions renommées en *.old.
 
 ###Manquantes
 - C1.txt
 
 #### Incomplet
-
+- C2p.txt (*Protextsisti*)
 
 ###Non faites
-
 - C3a.txt
 - C3b.txt
 - C3p.txt
