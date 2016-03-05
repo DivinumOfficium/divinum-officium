@@ -1,0 +1,71 @@
+# Divinumofficium.com - Statut des traductions de la messe en français
+
+Nous disposons désormais des traductions du missel quotidien complet édité par l'Abbaye du Barroux. Certaines n'y figurent cependant pas car elles ne sont pas dans le missel de 1962. On utilise alors les traductions du site <introibo.fr>.
+
+(Utilisations avec permissions)
+
+## Commune 
+Anciennes traductions renommées en *.old.
+
+###Manquantes
+- C1.txt
+
+###Non faites
+- C10a.txt
+- C10b.txt
+- C10c.txt
+- C10Pasc.txt
+- C10t.txt
+- C10.txt
+- C11p.txt
+- C11.txt
+- C12An.txt
+- C12A.txt
+- C12N.txt
+- C12P.txt
+- C12.txt
+- C2a.txt
+- C2b.txt
+- C2c.txt
+- C2p.txt
+- C3a.txt
+- C3b.txt
+- C3p.txt
+- C3.txt
+- C4ap.txt
+- C4a.txt
+- C4bp.txt
+- C4b.txt
+- C4c.txt
+- C4d.txt
+- C4p.txt
+- C4.txt
+- C5ap.txt
+- C5a.txt
+- C5b.txt
+- C5p.txt
+- C5.txt
+- C6ap.txt
+- C6a.txt
+- C6bp.txt
+- C6b.txt
+- C6p.txt
+- C6.txt
+- C7ap.txt
+- C7a.txt
+- C7p.txt
+- C7.txt
+- C8.txt
+- C9.txt
+- Coronatio.txt
+
+###Traduites
+#### Barroux
+- C1a.txt
+- C2.txt
+
+#### Introibo
+- C1v.txt (1955)
+
+###Rien à traduire
+- C1p.txt
