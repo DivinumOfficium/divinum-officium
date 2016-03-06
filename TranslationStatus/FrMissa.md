@@ -16,8 +16,6 @@ Anciennes traductions renommées en *.old.
 - C4bp.txt (manque la *postcommunio1*)
 
 ###Non faites
-- C5b.txt
-- C5p.txt
 - C6ap.txt
 - C6a.txt
 - C6bp.txt
@@ -64,7 +62,9 @@ Anciennes traductions renommées en *.old.
 - C4d.txt
 - C5.txt
 - C5a.txt
-- C5ap.txt (*pareil que C5a ???*)
+- C5ap.txt (*pareil que C5a ???*)  
+- C5b.txt
+- C5p.txt
 
 
 #### Traduction Introibo (anciens missels des fidèles)
