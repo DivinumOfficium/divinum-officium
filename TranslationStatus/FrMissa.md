@@ -11,21 +11,11 @@ Anciennes traductions renommées en *.old.
 - C1.txt
 
 #### Incomplet
-- C2p.txt (*Protextsisti*)
+- C2p.txt (*Protexisti*)
+- C3p.txt (*Protexisti*)
+- C4bp.txt (manque la *postcommunio1*)
 
 ###Non faites
-- C3a.txt
-- C3b.txt
-- C3p.txt
-- C3.txt
-- C4ap.txt
-- C4a.txt
-- C4bp.txt
-- C4b.txt
-- C4c.txt
-- C4d.txt
-- C4p.txt
-- C4.txt
 - C5ap.txt
 - C5a.txt
 - C5b.txt
@@ -59,14 +49,25 @@ Anciennes traductions renommées en *.old.
 - Coronatio.txt
 
 ###Traduites
-#### Barroux
+#### Traduction Barroux
 - C1a.txt
 - C2.txt
 - C2a.txt
 - C2b.txt
 - C2c.txt
+- C3.txt
+- C3a.txt
+- C3b.txt
+- C4.txt
+- C4ap.txt
+- C4a.txt
+- C4b.txt [+ traduction originale de *Oratio91*]
+- C4p.txt (erreur dans le texte latin)
+- C4c.txt
+- C4d.txt
 
-#### Introibo
+
+#### Traduction Introibo (anciens missels des fidèles)
 - C1v.txt (1955)
 
 ###Rien à traduire
