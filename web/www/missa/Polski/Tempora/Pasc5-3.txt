@@ -11,9 +11,9 @@ no Credo
 Suffr=Maria3
 
 [Comment]
-Wigilia Wniebowstąpienia Pańskiego
-2 klasy
-Szaty białe
+# Wigilia Wniebowstąpienia Pańskiego
+! 2 klasy
+! Szaty białe
 Msza z piątej niedzieli po Wielkanocy z wyjątkiem lekcji i ewangelii.
 
 [Introitus]
