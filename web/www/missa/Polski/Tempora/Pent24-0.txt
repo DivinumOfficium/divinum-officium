@@ -1,5 +1,3 @@
-@Tempora/Pent23-0
-
 [Rank]
 Dominica XXIV et ultima Post Pentecosten;;Semiduplex;;5
 
@@ -15,6 +13,9 @@ Suffr=Sanctorum;Maria3,Ecclesiae,Papa;;
 ! Szaty zielone
 W ostatnią niedzielę roku liturgicznego Kościół zwraca naszą uwagę na końcowy akt dziejów Odkupienia: Sąd Ostateczny. «Bóg wybawił nas z mocy ciemności i przeniósł do Królestwa Syna umiłowania swego» ((lekcja)), dlatego oczekujemy Sądu Ostatecznego bez obawy, pamiętając, że sędzią będzie nasz Zbawiciel. Dzień sądu nad światem będzie dniem Jego ostatecznego zwycięstwa nad mocami ciemności. Modlimy się dzisiaj o uwolnienie od ziemskich pożądań i skierowanie naszych pragnień ku niebu ((sekreta)).
 
+[Introit]
+@Tempora/Pent23-0:Introit
+
 [Oratio]
 Prosimy Cię Panie, pobudź wolę wiernych Twoich, aby gorliwie korzystając z owoców służby Bożej, otrzymywali większą pomoc od Twojej ojcowskiej dobroci. 
 $Per Dominum
@@ -23,6 +24,9 @@ $Per Dominum
 Czytanie z Listu świętego Pawła Apostoła do Kolosan.
 !Kol 1:9-14
 Bracia: Nie przestajemy modlić się za was i prosić, abyście napełnieni byli poznaniem woli Bożej we wszelkiej mądrości i pojmowaniu duchowym. Abyście tez postępowali w sposób godny Boga, podobając Mu się we wszystkim, przynosząc owoc przez każdy dobry uczynek i wzrastając w poznawaniu Boga. A umocnieni wszelką mocą według potęgi chwały Jego, ku wszelkiej cierpliwości i stateczności z radością, dzięki czyńcie Bogu Ojcu, że nas uczynił godnymi, abyśmy się stali uczestnikami dziedzictwa świętych w światłości. ((Bóg)) wybawił nas z mocy ciemności i przeniósł do Królestwa Syna umiłowania swego. W Nim mamy odkupienie przez krew Jego, odpuszczenie grzechów.
+
+[Graduale]
+@Tempora/Pent23-0:Graduale
 
 [Evangelium]
 Ciąg dalszy ++ Ewangelii świętej według Mateusza.
@@ -33,9 +37,15 @@ Wtedy, jeśliby wam kto rzekł: Oto tu jest Chrystus, albo tam — nie wierzcie.
 A natychmiast po udręczeniu owych dni słońce się zaćmi i księżyc nie da światłości swojej, a gwiazdy spadać będą z nieba i moce niebieskie poruszone będą. A wówczas ukaże się na niebiosach znak Syna Człowieczego i wtedy płakać będą wszystkie pokolenia ziemi. I ujrzą Syna Człowieczego przychodzącego w obłokach niebieskich z mocą wielką i majestatem. I pośle Aniołów swoich z trąbą i głosem wielkim, i zgromadzą wybranych Jego z czterech stron świata, od szczytu niebios aż do krańców ich. A od figowego drzewa uczcie się podobieństwa. Gdy już gałąź jego staje się miękka i wypuszcza liście, wiecie, że blisko jest lato. Tak i wy, gdy ujrzycie to wszystko, wiedzcie, że blisko jest, w drzwiach.
 Zaprawdę powiadam wam, nie przeminie to pokolenie, dopóki nie stanie się to wszystko. Niebo i ziemia przeminą, ale słowa moje nie przeminą».
 
+[Offertorium]
+@Tempora/Pent23-0:Offertorium
+
 [Secreta]
 Panie, wejrzyj miłościwie na nasze pokorne prośby, a przyjąwszy ofiary i modlitwy Swojego ludu, zwróć wszystkie nasze serca ku Sobie, abyśmy wolni od ziemskich pożądań skierowali swe pragnienia ku niebu.
 $Per Dominum.
+
+[Communio]
+@Tempora/Pent23-0:Communio
 
 [Postcommunio]
 Prosimy Cię, Panie, spraw, aby uzdrawiająca moc Sakramentu, który przyjęliśmy, uleczyła nasze dusze ze wszystkich złych skłonności.
