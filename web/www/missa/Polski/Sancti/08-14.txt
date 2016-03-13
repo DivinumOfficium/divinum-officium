@@ -10,9 +10,9 @@ Prefatio=Communis
 Suffragium=Spiritu
 
 [Comment]
-Wigilia Wniebowzięcia Najświętszej Maryi Panny
-2 klasy
-Szaty fioletowe
+# Wigilia Wniebowzięcia Najświętszej Maryi Panny
+! 2 klasy
+! Szaty fioletowe
 Największe święto Najświętszej Maryi Panny poprzedzamy dniem skupienia i modlitwy.
 
 [Introitus]
@@ -26,6 +26,11 @@ v. Książęta ludu szukają Twych względów. Za Nią prowadzą do Króla dziew
 [Oratio]
 Boże, Tyś raczył obrać sobie na mieszkanie dziewicze łono Najświętszej Maryi; daj nam bezpiecznie pod Jej opieką brać radosny udział w Jej uroczystości:
 $Qui vivis.
+
+[Commemoratio Oratio]
+! Wspomnienie św. Euzebiusza, Wyznawcy
+Boże, który co roku uweselasz nas uroczystością św. Euzebiusza, Twojego Wyznawcy, spraw, abyśmy zdążali do Ciebie za przykładem tego, którego urodziny dla nieba obchodzimy.
+$Per Dominum.
 
 [Lectio]
 @Sancti/07-16:Lectio
@@ -46,22 +51,17 @@ Błogosławiona jesteś, Panno Maryjo, któraś nosiła Stwórcę wszechrzeczy. 
 Panie, niech nasze dary poleca Twojej łaskawości modlitwa Bożej Rodzicielki, którą po to zabrałeś z tego świata, aby ufnie wstawiała się u Ciebie za nami grzesznymi.
 $Per eundem
 
+[Commemoratio Secreta]
+! Wspomnienie św. Euzebiusza, Wyznawcy
+Wspominając Twoich Świętych składamy Ci, Panie, ofiarę chwały i ufamy, że ona wybawi nas od złego teraz i w przyszłości.
+$Per Dominum.
+
 [Communio]
 Błogosławione wnętrzności Maryi Panny, które nosiły Syna Ojca Przedwiecznego.
 
 [Postcommunio]
 Miłosierny Boże, udziel pomocy naszej ułomności, abyśmy powstali z naszych nieprawości za wstawiennictwem Najświętszej Bogarodzicy, której uroczystość uprzedzamy.
 $Per eundem
-
-[Commemoratio Oratio]
-! Wspomnienie św. Euzebiusza, Wyznawcy
-Boże, który co roku uweselasz nas uroczystością św. Euzebiusza, Twojego Wyznawcy, spraw, abyśmy zdążali do Ciebie za przykładem tego, którego urodziny dla nieba obchodzimy.
-$Per Dominum.
-
-[Commemoratio Secreta]
-! Wspomnienie św. Euzebiusza, Wyznawcy
-Wspominając Twoich Świętych składamy Ci, Panie, ofiarę chwały i ufamy, że ona wybawi nas od złego teraz i w przyszłości.
-$Per Dominum.
 
 [Commemoratio Postcommunio]
 ! Wspomnienie św. Euzebiusza, Wyznawcy
