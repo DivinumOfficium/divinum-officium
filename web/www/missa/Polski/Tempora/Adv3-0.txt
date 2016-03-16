@@ -10,10 +10,10 @@ Credo
 Suffr=Maria1;Ecclesiae,Papa;;
 
 [Comment]
-3 Niedziela Adwentu
-Stacja u św. Piotra
-1 klasy
-Szaty fioletowe
+# 3 Niedziela Adwentu
+! Stacja u Św. Piotra
+! 1 klasy
+! Szaty fioletowe
 Od trzeciej niedzieli Adwentu myśl nasza zwraca się głównie ku bliskiej pamiątce pierwszego przyjścia Chrystusa, ku Bożemu Narodzeniu. W tygodniu wspominamy dwie tajemnice radosne, które poprzedziły Boże Narodzenie. Hasłem «Pan jest blisko» rozpoczyna się od tej niedzieli codzienna modlitwa Kościoła. Ta sama prawda nadaje ton radości dzisiejszej Mszy świętej. Jak lud izraelski został wyzwolony z niewoli babilońskiej, tak my zostaniemy uwolnieni z naszych ciemności. Św. Jan Chrzciciel zapewnia, że Chrystus już stanął wpośród nas. Obecny w Eucharystii, sam przysposabia dusze na wielkie łaski nadchodzących świąt.
 
 [Introitus]
@@ -53,7 +53,7 @@ Daj, Panie, abyśmy nieustannie składali Tobie ofiarę naszego oddania. Niech p
 $Per Dominum
 
 [Communio]
-!Iz 35:4.
+!Iz 35:4
 Rzeczcie bojaźliwym: «Wzmocnijcie się, a nie bójcie się: oto Bóg nasz przyjdzie i zbawi nas».
 
 [Postcommunio]

@@ -11,9 +11,9 @@ Credo
 Prefatio=Maria=festivitate
 
 [Comment]
-Naśjwiętszej Maryi Panny, Królowej
-2 klasy
-Szaty białe
+# Naśjwiętszej Maryi Panny, Królowej
+! 2 klasy
+! Szaty białe
 Liturgia Kościoła od dawna nadawała Maryi tytuł Królowej. Ojcowie i Doktorowie Kościoła są świadkami ogólnego przekonania, że Maryi, Matce Króla królów (graduał, ewangelia, antyfona na ofiarowanie), związanej ściśle z dziełem Odkupienia (alleluja wielkanocne), przysługuje królewska godność. Pobożność chrześcijańska zawsze upatrywała związek między wniebowzięciem Maryi i tajemnicą Jej królowania. 11 października 1954 roku, w cztery lata po ogłoszeniu dogmatu Wniebowzięcia, papież Pius XII ustanowił święto Najświętszej Maryi Panny Królowej i polecił w tym dniu odnawiać akt poświęcenia rodzaju ludzkiego Niepokalanemu Sercu Maryi.
 
 [Introitus]
@@ -25,6 +25,11 @@ v. Radujmy się wszyscy w Panu, obchodząc uroczystość ku czci Najświętszej 
 
 [Oratio]
 Przy obchodzie uroczystości Naświętszej Maryi Panny, Królowej naszej, prosimy Cię, Panie, spraw, abyśmy wsparci Jej opieką mogli obecnie osiągać pokój, a w przyszłości chwałę.
+$Per Dominum
+
+[Commemoratio Oratio]
+!Wspomnienie św. Petroneli
+Wysłuchaj nas, Boże, nasz Zbawicielu, i spraw, abyśmy radując się z uroczystości świętej Twojej Dziewicy Petroneli, nabyli uczucia synowskiego oddania.
 $Per Dominum
 
 [Lectio]
@@ -53,21 +58,16 @@ Maryja jaśnieje pochodzeniem z królewskiego rodu; sercem i duszą pobożnie pr
 Prosimy Cię, Panie, przyjmij dary rozradowanego Kościoła i spraw, niech przez zasługi Najświętszej Maryi Panny Królowej przyczynią się do naszego zbawienia.
 $Per Dominum
 
+[Commemoratio Secreta]
+!Wspomnienie św. Petroneli
+Przyjmij, Panie, ofiarę, którą lud Tobie oddany składa ku czci Świętych Twoich, wiedząc, że dzięki ich zasługom doznał pomocy w ucisku.
+$Per Dominum
+
 [Communio]
 Najdostojniejsza Królowo świata, Maryjo zawsze Dziewico, któraś porodziła Zbawcę wszystkich, Chrystusa Pana, proś o pokój i zbawienie dla nas. ((O. W. Alleluja.))
 
 [Postcommunio]
 Prosimy Cię, Panie, by uroczysta ofiara, złożona dla uczczenia święta Najświętszej Maryi, naszej Królowej, posłużyła nam ku zbawieniu za wstawiennictwem Tej, na której cześć spełniliśmy ją z radością.
-$Per Dominum
-
-[Commemoratio Oratio]
-!Wspomnienie św. Petroneli
-Wysłuchaj nas, Boże, nasz Zbawicielu, i spraw, abyśmy radując się z uroczystości świętej Twojej Dziewicy Petroneli, nabyli uczucia synowskiego oddania.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Wspomnienie św. Petroneli
-Przyjmij, Panie, ofiarę, którą lud Tobie oddany składa ku czci Świętych Twoich, wiedząc, że dzięki ich zasługom doznał pomocy w ucisku.
 $Per Dominum
 
 [Commemoratio Postcommunio]
