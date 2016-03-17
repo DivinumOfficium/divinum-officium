@@ -273,8 +273,13 @@ sub oratio
     my $coron = '';
     if (my $tr = join('', do_read("$datafolder/../horas/Latin/Tabulae/Tr1960.txt")))
     {
-        $tr =~ s/\=/\;\;/g;
-        my %tr = split(';;', $tr);
+        my %tr = split('=|;;', $tr);
+        # Override perpetual commemoration with this year's transfer table.
+        if (my $yearly_transfer = join('',
+            do_read("$datafolder/../horas/Latin/Tabulae/Tr1960$year.txt")))
+        {
+          %tr = (%tr, split('=|;;', $yearly_transfer));
+        }
         my $mm = sprintf("C%02i-%02i", $month, $day);
         $coron=$tr{$mm} if exists($tr{$mm});
     }
