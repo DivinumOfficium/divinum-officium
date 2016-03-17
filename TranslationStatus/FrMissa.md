@@ -72,3 +72,7 @@ Anciennes traductions renommées en *.old.
 
 ###Rien à traduire
 - C1p.txt
+
+##Ordo
+###En cours de traduction
+- Ordo.txt (*Nombreux passages à relire*)
