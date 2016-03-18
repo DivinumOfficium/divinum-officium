@@ -3,16 +3,14 @@
 Cele:
 
 1. **Mszalik na niedziele i święta wg rubryk 1960** – części stałe oraz formularze dla dni 1 i 2 klasy
-2. **Mszalik codzienny wg rubryk 1960** – części stałe oraz formularze dla wszystkich dni
-3. **Mszalik historyczny** – części stałe oraz formularze dla dni wg rubryk innych innych niż 1960
+2. **Mszalik na niedziele i święta wg rubryk 1960** – ebook w formacie *epub* i *mobi*
+3. **Mszalik codzienny wg rubryk 1960** – części stałe oraz formularze dla wszystkich dni
+4. **Mszalik historyczny** – części stałe oraz formularze dla dni wg rubryk innych innych niż 1960
 
-Aktualnie **cel 1.** zrealizowany jest w ok. **62%**. Planowany termin ukończenia **celu 1.** to **połowa 2016 roku**. Dodatkowo autor stara się, aby w danym monencie formularz dla przynajmniej najbliższej niedzieli lub święta był dostępny po polsku – patrz wykaz poniżej.
+Aktualnie **cel 1.** jest **zrealizowany**. Wykaz wszystkich dostępnych tłumaczeń znajduje się poniżej.
 
-Ostatnio dodane (2016-02-17):
-* 9 Niedziela po Zesłaniu Ducha Świętego – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-17-2016)
-* 10 Niedziela po Zesłaniu Ducha Świętego  – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-24-2016)
-* 05-11 - Świętych Filipa i Jakuba Apostołów – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-11-2016)
-* 05-31 - Najświętszej Maryi Panny, Królowej – [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-31-2016)
+**cel 2.** jest zrealizowany w ok. **50%**.
+
 
 ## Adwent
 
@@ -51,8 +49,8 @@ Tekst | Klasa | Data dodania | Link
 2 Niedziela po Objawieniu | 2 | 2016-01-02 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=01-17-2016)
 3 Niedziela po Objawieniu | 2 | 2016-01-02 | [2011](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=1-23-2011)
 4 Niedziela po Objawieniu | 2 | 2016-01-02 | [2011](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=01-30-2011)
-5 Niedziela po Objawieniu | 2 | 2016-01-02 | [2011](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=02-06-2011)
-6 Niedziela po Objawieniu | 2 | 2016-01-02 | [2011](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=02-13-2011)
+5 Niedziela po Objawieniu | 2 | 2016-01-02 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=11-6-2011)
+6 Niedziela po Objawieniu | 2 | 2016-01-02 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=11-13-2011)
 
 ## Przedpoście
 
@@ -133,6 +131,24 @@ Uroczystość Najświętszego Serca Pana Jezusa | 1 | 2016-02-17 | [2016](http:/
 8 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-10-2016)
 9 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-17-2016)
 10 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-24-2016)
+11 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-31-2016)
+12 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=8-7-2016)
+13 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=8-14-2016)
+14 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=8-21-2016)
+15 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=8-28-2016)
+16 Niedziela po Zesłaniu Ducha Świętego  | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=9-4-2016)
+Środa Suchych Dni Wrześniowych | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=9-21-2016)
+Piątek Suchych Dni Wrześniowych | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=9-23-2016)
+Sobota Suchych Dni Wrześniowych | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=9-24-2016)
+17 Niedziela po Zesłaniu Ducha Świętego | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=9-11-2016)
+18 Niedziela po Zesłaniu Ducha Świętego | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=9-18-2016)
+19 Niedziela po Zesłaniu Ducha Świętego | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=9-25-2016)
+20 Niedziela po Zesłaniu Ducha Świętego | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=10-2-2016)
+21 Niedziela po Zesłaniu Ducha Świętego | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=10-9-2016)
+22 Niedziela po Zesłaniu Ducha Świętego | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=10-16-2016)
+Chrystusa Króla | 1 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=10-30-2016)
+23 Niedziela po Zesłaniu Ducha Świętego | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=10-23-2016)
+24 Niedziela po Zesłaniu Ducha Świętego | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=11-20-2016)
 
 ## Msze Własne o Świętych
 
@@ -145,33 +161,50 @@ Tekst | Klasa | Data dodania | Link
 02.24 - Św. Macieja, Apostoła | 2 | 2015-01-08 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=2-25-2016)
 03-19 - Św. Józefa, Oblubieńca N. M. P. | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=3-19-2016)
 03-25 - Zwiastowanie N. M. P. | 1 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-4-2016)
+04-25 - Św. Wojciecha, Biskupa i Męczennika, Głównego Patrona Polski ** | 1 | 2016-02-12 | [Źródło](https://github.com/DivinumOfficium/divinum-officium/blob/master/web/www/missa/Polski/Sancti/04-23pl.txt)
 04-25 - Św. Marka, Ewangelisty | 2 | 2016-02-12 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=4-25-2016)
 05-01 - Św. Józefa Robotnika, Oblubieńca N. M. P, Wyznawcy | 1 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-1-2016)
+05-03 - N. M. P. Królowej Polski, Głównej Patronki Polski ** | 1 | 2016-06-13 | [Źródło](https://github.com/DivinumOfficium/divinum-officium/blob/master/web/www/missa/Polski/Sancti/05-03pl.txt)
+05-08 - Św. Stanisława, Biskupa i Męczennika, Głównego Patrona Polski ** | 1 | 2016-06-13 | [Źródło](https://github.com/DivinumOfficium/divinum-officium/blob/master/web/www/missa/Polski/Sancti/05-08pl.txt)
 05-11 - Świętych Filipa i Jakuba Apostołów | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-11-2016)
+05-24 - N. M. P. Wspomożycielki Wiernych ** | 2 | 2016-06-13 | [Źródło](https://github.com/DivinumOfficium/divinum-officium/blob/master/web/www/missa/Polski/Sancti/05-24pl.txt)
 05-31 - Najświętszej Maryi Panny, Królowej | 2 | 2016-02-17 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=5-31-2016)
+06-23 - Wigilia Narodzenia Św. Jana Chrzciciela | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=6-23-2016)
+06-24 - Narodzenia Św. Jana Chrzciciela | 1 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=6-24-2016)
+06-28 - Wigilia świętych Apostołów Piotra i Pawła | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=6-28-2016)
+06-29 - Świętych Piotra i Pawła, Apostołów | 1 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=6-29-2016)
+07-01 - Najdroższej Krwi Pana Jezusa | 1 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-1-2016)
+07-02 - Nawiedzenie N. M. P. | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-2-2016)
+07-25 - Św. Jakuba, Apostoła | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-25-2016)
+07-26 - Św. Anny, Matki N. M. P. | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=7-26-2016)
+08-06 - Przemienienie Pańskie | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=8-6-2016)
+08-10 - Św. Wawrzyńca, Męczennika | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=8-10-2016)
+08-14 - Wigilia Wniebowzięcia N. M. P. | 2 | 2016-03-16 | [2015](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=8-14-2015)
+08-15 - Wniebowzięcie N. M. P. | 1 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=8-15-2016)
+08-16 - Św. Joachima, Ojca N. M. P. | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=8-16-2016)
+08-22 - Niepokalanego Serca N. M. P. | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=8-22-2016)
+08-24 - Św. Bartłomieja, Apostoła | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=8-24-2016)
+08-26 - N. M. P. Częstochowskiej ** | 1 | 2016-03-16 | [Źródło](https://github.com/DivinumOfficium/divinum-officium/blob/master/web/www/missa/Polski/Sancti/08-26pl.txt)
+09-08 - Narodzenie N. M. P. | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=9-8-2016)
+09-14 - Podwyższenie Krzyża Świętego | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=9-14-2016)
+09-15 - Siedmiu Boleści N. M. P | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=9-15-2016)
+09-21 - Św. Mateusza, Apostoła I Ewangelisty | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=9-21-2016)
+09-29 - Św. Michała Archanioła | 1 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=9-29-2016)
+10-07 - N. M. P. Różańcowej | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=10-7-2016)
+10-11 - Macierzyństwa N. M. P. | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=10-11-2016)
+10-18 - Św. Łukasza Ewangelisty | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=10-18-2016)
+10-28 - Świętych Szymona i Judy Tadeusza, Apostołów | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=10-28-2016)
+11-01 - Wszystkich Świętych | 1 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=11-1-2016)
+11-02 - Dzień Zaduszny | 1 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=11-1-2016)
+11-09 - Rocznica Konsekracji Bazyliki Najświętszego Zbawiciela Na Lateranie | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=11-9-2016)
+11-13 - Św. Stanisława Kostki, Wyznawcy, Patrona Polski ** | 2 | 2016-03-16 | [Źródło](https://github.com/DivinumOfficium/divinum-officium/blob/master/web/www/missa/Polski/Sancti/11-13pl.txt)
+11-30 - Św. Andrzeja, Apostoła | 2 | 2016-03-16 | [2016](http://divinumofficium.com/cgi-bin/missa/missa.pl?lang2=Polski&Propers=1&date=11-30-2016)
+
+** Propria występujące tylko w polskim kalendarzu - brak wersji łacińskiej w DivinumOfficium. W takim przypadku podano odnośnik do pliku źródłowego, który nie jest wyświetlany na stronie.
 
 ## Inne
 
 Tekst | Data dodania | Link
 ----- | -------------|-----
 Części stałe (ordinarium) - Rubrics 1960 | 2015-12-02 | -
-
-## Brakujące propria
-
-Propria występujące tylko w polskim kalendarzu - brak wersji łacińskiej w DivinumOfficium.
-
-* 04-23 – Św. Wojciecha
-* 05-03 – N. M. P. Królowej Polski
-* 05-08 – Św. Stanisława (w kalendarzu ogólnym obchodzone 05-07, 3 klasy, propria inne niż dla kalend. polskiego)
-* 05-24 – N. M. P. Wspomożycielki Wiernych
-
-## Tymczasowo pominięte
-
-Pozycje tymczasowo pominięte zostaną dodane w przyszłości, po osiągnięciu pierwszego bądź drugiego celu.
-
-* Niedziela Palmowa – formularze dla rubryk innych niż 1960
-* Wielki Czwartek Wieczerzy Pańskiej – Msza Krzyżma (brak wersji łacińskiej w DivinumOfficium)
-* Wielki Czwartek Wieczerzy Pańskiej – formularze dla rubryk innych niż 1960
-* Wielki Piątek – formularze dla rubryk innych niż 1960
-* Wigilia Wielkanocna – formularze dla rubryk innych niż 1960
 
