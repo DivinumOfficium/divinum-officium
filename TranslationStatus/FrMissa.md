@@ -70,9 +70,16 @@ Anciennes traductions renommées en *.old.
 #### Traduction Introibo (anciens missels des fidèles)
 - C1v.txt (1955)
 
-###Rien à traduire
+### Rien à traduire
 - C1p.txt
 
-##Ordo
-###En cours de traduction
+### Relu
+
+## Ordo
+## Relu
+
+### Fait
+-Communio.txt
+
+### En cours de traduction
 - Ordo.txt (*Nombreux passages à relire*)
