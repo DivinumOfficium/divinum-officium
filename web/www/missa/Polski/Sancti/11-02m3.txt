@@ -16,6 +16,12 @@ multiple3
 Sequentia
 Requiem gloria
 
+[Comment]
+# 02 XI – Dzień Zaduszny – Trzecia Msza
+
+[Introitus]
+@Commune/C9:Introitus
+
 [Oratio]
 Boże, dawco przebaczenia i miłośniku zbawienia ludzkiego, prosimy Twą dobroć: spraw, by dusze sług i służebnic Twoich, które zeszły z tego świata, za przyczyną Najświętszej Maryi zawsze Dziewicy i wszystkich Świętych Twoich osiągnęły udział w wiecznej szczęśliwości.
 $Per Dominum
@@ -25,6 +31,12 @@ Czytanie z Księgi Apokalipsy świętego Jana.
 !Ap 14:13
 W one dni: Usłyszałem głos z nieba mówiący do mnie: Napisz, błogosławieni umarli, którzy umierają w Panu. Odtąd już, mówi Duch, niech odpoczywają od prac swoich, albowiem uczynki ich idą za nimi.
 
+[Graduale]
+@Commune/C9:Graduale
+
+[Sequentia]
+@Commune/C9:Sequentia
+
 [Evangelium]
 Ciąg dalszy ++ Ewangelii świętej według Jana.
 !J 6:51-55
@@ -32,9 +44,15 @@ Onego czasu: Rzekł Jezus rzeszom żydowskim: «Jam jest chleb żywy, który z n
 Sprzeczali się tedy żydzi między sobą, mówiąc: «Jakże może On nam dać ciało swoje na pokarm?»
 Rzekł im przeto Jezus: «Zaprawdę, zaprawdę powiadam wam: Jeślibyście nie pożywali ciała Syna Człowieczego i nie pili krwi Jego, nie będziecie mieć życia w sobie. Kto pożywa ciało moje, i pije moją krew, ma życie wieczne, a ja go wskrzeszę w dniu ostatecznym».
 
+[Offertorium]
+@Commune/C9:Offertorium
+
 [Secreta]
 Boże, którego miłosierdzie nie ma granic, przyjmij łaskawie pokorne błagania nasze i przez ten zbawienny Sakrament udziel odpuszczenia wszystkich grzechów duszom wszystkich wiernych zmarłych, którym dałeś wyznawać święte imię Twoje.
 $Per Dominum
+
+[Communio]
+@Commune/C9:Communio
 
 [Postcommunio]
 Wszechmogący i miłosierny Boże, spraw, aby dusze sług i służebnic Twoich, za które złożyliśmy majestatowi Twemu tę ofiarę uwielbienia, oczyszczone mocą tego Sakramentu ze wszystkich grzechów, otrzymały z miłosierdzia Twego szczęście w światłości wiekuistej.
