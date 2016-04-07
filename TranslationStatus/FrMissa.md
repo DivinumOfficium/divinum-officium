@@ -80,6 +80,7 @@ Anciennes traductions renommées en *.old.
 
 ### Fait
 -Communio.txt
+- Prefationes (trad. Barroux sauf [H-Pent] -> traduction introibo)
 
 ### En cours de traduction
 - Ordo.txt (*Nombreux passages à relire*)
