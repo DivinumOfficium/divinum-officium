@@ -4,6 +4,8 @@ Trwają prace nad częściami wspólnymi (Commune).
 
 Brewiarz monastyczny jest niekompletny (brakuje na przykład źródeł hymnów).
 
+Niektóre linki w Sanktorale prowadzą do wersji oficjum z roku 1955, pomimo ich obecności w nowszych. Chodzi o to, by móc podejrzeć teksty Matutinum, co jest niemożliwe w nowszych rubrykach, z uwagi na coroczną precedencję ferii Wielkiego Postu.
+
 ## Adwent
 
 Tekst | Data dodania | Link
@@ -37,6 +39,7 @@ Uroczystość Świętej Rodziny* | 2015-12-11 | [2016](http://divinumofficium.co
 6. Niedziela po Objawieniu* | 2015-11-12 |[2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-13-2016)
 
 ## Przedpoście
+
 Tekst | Data dodania | Link
 ----- | -------------|-----
 Niedziela Siedemdziesiątnicy | 2016-01-09 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-24-2016)
@@ -44,6 +47,7 @@ Niedziela Sześćdziesiątnicy* | 2016-01-16 | [2016](http://divinumofficium.com
 Niedziela Pięćdziesiątnicy | 2016-01-22 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-7-2016)
 
 ## Wielki Post
+
 Tekst | Data dodania | Link
 ----- | -------------|-----
 Środa Popielcowa* | 2016-01-30 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-10-2016)
@@ -85,6 +89,30 @@ Wtorek tygodnia Męki Pańskiej | 2016-02-24 | [2016](http://divinumofficium.com
 Czwartek tygodnia Męki Pańskiej | 2016-02-24 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-17-2016)
 Piątek tygodnia Męki Pańskiej* | 2016-02-24 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-18-2016)
 Sobota tygodnia Męki Pańskiej | 2016-02-24 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-8-2017)
+Niedziela Palmowa* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-20-2016)
+Poniedziałek Wielkiego Tygodnia* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-21-2016)
+Wtorek Wielkiego Tygodnia* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-22-2016)
+Środa Wielkiego Tygodnia* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-23-2016)
+Czwartek Wieczerzy Pańskiej | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-24-2016)
+Piątek Przygotowania | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-25-2016)
+Wielka Sobota | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-26-2016)
+
+## Okres Wielkanocny
+
+Tekst | Data dodania | Link
+----- | -------------|-----
+Niedziela Zmartwychwstania* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-27-2016)
+Poniedziałek Wielkanocny | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-28-2016)
+Wtorek w Oktawie Wielkanocy | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-29-2016)
+Środa w Oktawie Wielkanocy | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-30-2016)
+Czawartek w Oktawie Wielkanocy | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-31-2016)
+Piątek w Oktawie Wielkanocy | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-1-2016)
+Sobota Biała w Oktawie Wielkanocy | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-2-2016)
+Niedziela Biała w Oktawie Wielkanocy | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-3-2016) | 
+II Niedziela po Wielkiejnocy | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-10-2016)
+III Niedziela po Wielkiejnocy | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-17-2016)
+IV Niedziela po Wielkiejnocy | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-24-2016)
+V Niedziela po Wielkiejnocy | 2016-04-11 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=5-21-2017)
 
 ## Okres po Zesłaniu
 
@@ -103,7 +131,7 @@ Tekst | Data dodania | Link
 24. Niedziela po Zesłaniu* | 2015-11-17 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-20-2016)
 
 ## Oficja Własne o Świętych
-
+##### Niektóre linki poniżej prowadzą do wersji oficjum z roku 1955, pomimo ich obecności w nowszych. Chodzi o to, by móc podejrzeć teksty Matutinum, co jest niemożliwe w nowszych rubrykach, z uwagi na coroczną precedencję ferii Wielkiego Postu.
 Tekst | Data dodania | Link
 ----- | -------------|-----
 01.15 - Św. Pawła, Pierwszego Pustelnika i Wyznawcy | 2016-01-09 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=1-15-2016)
@@ -130,6 +158,33 @@ Tekst | Data dodania | Link
 02.15 - Śś. Faustyna i Jowita Męczenników | 2016-02-08 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-15-2016)
 02.18 - Św. Symeona Biskupa i Męczennika | 2016-02-08 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-18-2016)
 02.22 - Katedry Św. Piotra, Apostoła (1960)* | 2016-01-09 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-22-2016)
+03.06 - Śś. Perpetuy i Felicyty Męczenniczek* | 2016-04-11 | [2000](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-6-2000)
+03.07 - Św. Tomasza z Akwinu Wyznawcy i Doktora Kościoła* | 2016-04-11 | [2000](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-7-2000)
+03.08 - Św. Jana Bożego Wyznawcy* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=3-8-2016)
+03.09 - Św. Franciszki Rzymianki Wdowy* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=3-9-2016)
+03.10 - Czterdziestu Świętych Męczenników* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=3-10-2016)
+03.12 - Św. Grzegorza I Papieża Wyznawcy i Doktora Kościoła* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=3-12-2016)
+03.17 - Św. Patrycego Biskupa i Wyznawcy* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=3-17-2016)
+03.18 - Św. Cyryla Biskupa Jerozolimskego Wyznawcy i Doktora Kościoła* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=3-18-2016)
+03.19 - Św. Józefa Oblubieńca N.M.P. Wyznawcy* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-19-2016)
+03.24 - Św. Gabryjela Archanioła* | 2016-04-11 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=3-24-2017)
+03.25 - Zwiastowanie Najświętszej Maryji Pannie* | 2016-04-11 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=3-25-2017)
+03.27 - Św. Jana Damasceńskiego Wyznawcy* | 2016-04-11 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=3-27-2017)
+03.28 - Św. Jana Kapistrana Wyznawcy* | 2016-04-11 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=3-28-2017)
+04.02 - Św. Franciszka a Paulo Wyznawcy* | 2016-04-11 | [2019](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=4-2-2019)
+04.04 - Św. Izydora Biskupa Wyznawcy i Doktora* | 2016-04-11 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?version=Reduced%201955&lang2=Polski&browsertime=4-4-2017)
+04.05 - Św. Wincentego Fererjusza Wyznawcy* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-5-2016)
+04.11 - Św. Leona I. Papieża Wyznawcy i Doktora Kościóła* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-11-2016)
+04.13 - Św. Hermenegilda Męczennika* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-13-2016)
+04.14 - Św. Justyna Męczennika* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-14-2016)
+04.23 - Św. Jerzego Męczennika* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-23-2016)
+04.24 - Św. Fidelisa z Sigmaringen Męczennika* | 2016-04-11 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-24-2017)
+04.25 - Św. Marka Ewangelisty* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-25-2016)
+04.26 - Śś. Kleta i Marcelina Papieży i Męczenników* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-26-2016)
+04.27 - Św. Piotr Kanizjusza Wyznawcy i Doktora Kościóła* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-27-2016)
+04.28 - Św. Pawła od Krzyża Wyznawcy* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-28-2016)
+04.29 - Św. Piotra Męczennika* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-29-2016)
+04.30 - Św. Katarzyny Sjeneńskiej Dziewicy* | 2016-04-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=4-30-2016)
 11.11 - Świętego Marcina, Biskupa i Wyznawcy* | 2015-11-11 | [2016](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=11-11-2016)
 02.23 - Wigilja Św. Macieja Apostoła (Trident 1570)* | 2016-02-11 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-23-2017&version=Trident%201570)
 02.23 - Św. Piotra Damjana Biskupa i Wyznawcy* | 2016-02-11 | [2017](http://divinumofficium.com/cgi-bin/horas/officium.pl?lang2=Polski&browsertime=2-23-2017)
@@ -150,8 +205,8 @@ Psalmy i kantyki | 2015-08-25 | -
 Modlitwy przed i po oficjum | 2015-09-22 | -
 Części stałe (ordinarium) | 2015-11-25 | -
 Psałterz | 2016-01-02 | -
-Części wspólne o N. M. P.* | 2016-01-30 | -
+Części wspólne... niedługo wszystkie* | - | -
 
 \* braki w Matutinum
 
-###### Data ostatniej aktualizacji tej strony: 2016-02-24
+###### Data ostatniej aktualizacji tej strony: 2016-04-11
