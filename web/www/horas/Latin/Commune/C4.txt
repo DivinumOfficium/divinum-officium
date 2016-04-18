@@ -8,11 +8,11 @@ Psalm5 Vespera=116
 Psalm5 Vespera3=131
 
 [Ant Vespera]
-Ecce sacerdos magnus, * qui in diebus suis placuit Deo, et inventus est justus.;;109
-Non est inventus * similis illi, qui conservaret legem Excelsi.;;110
-Ideo jurejurando * fecit illum Dominus crescere in plebem suam.;;111
-Sacerdotes Dei, * benedicite Dominum: servi Domini, hymnum dicite Deo, allelúia.;;112
-Serve bone * et fidelis, intra in gaudium Domini tui.;;116
+Ecce sacerdos magnus, * qui in diebus suis placuit Deo, et inventus est justus.
+Non est inventus * similis illi, qui conservaret legem Excelsi.
+Ideo jurejurando * fecit illum Dominus crescere in plebem suam.
+Sacerdotes Dei, * benedicite Dominum: servi Domini, hymnum dicite Deo, allelúia.
+Serve bone * et fidelis, intra in gaudium Domini tui.
 
 [Capitulum Vespera]
 !Sir 44:16-17
@@ -226,9 +226,7 @@ Sacerdotes Dei * benedicite Dominum: servi Domini hymnum dicite Deo. alleluia.
 Serve bone * et fidelis, intra in gaudium Domini tui.
 
 [Capitulum Laudes]
-!Sir 44:16-17
-v. Ecce sacerdos magnus, qui in diebus suis placuit Deo, et inventus est justus: et in tempore iracundiae factus est reconciliatio.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 {:H-Jesuredemptoromnium:}v. Jesu Redémptor ómnium,
@@ -289,9 +287,7 @@ $Per Dominum
 v. Fungi sacerdotio, et habere laudem in nomine ipsius, et offerre illi incensum dignum in odorem suavitatis.
 
 [Capitulum Tertia]
-!Sir 44:16-17
-v. Ecce sacerdos magnus, qui in diebus suis placuit Deo, et inventus est justus: et in tempore iracundiae factus est reconciliatio.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Amavit eum Dominus, * Et ornavit eum.
@@ -321,8 +317,7 @@ V. Tu es sacerdos in aeternum.
 R. Secundum ordinem Melchisedech.
 
 [Capitulum Nona]
-!Sir 45:19-20
-v. Fungi sacerdotio, et habere laudem in nomine ipsius, et offerre illi incensum dignum in odorem suavitatis.
+@:Lectio Prima
 $Deo gratias
 
 [Responsory Nona]
@@ -343,8 +338,13 @@ Amavit eum Dominus, * et ornavit eum: stolam gloriae induit eum, et ad portas pa
 Dum esset * summus Pontifex, terrena non metuit, sed ad caelestia regna gloriosus migravit.
 
 [Versum 3]
-V. Justum deduxit Dominus per vias rectas.
-R. Et ostendit illi regnum Dei.
+@:Versum 2
+
+[Ant 3]
+Amavit eum Dominus, * et ornavit eum: stolam gloriae induit eum, et ad portas paradisi coronavit eum.
+
+[Ant 3 summi Pontificis]
+Dum esset * summus Pontifex, terrena non metuit, sed ad caelestia regna gloriosus migravit.
 
 [Lectio11]
 De libro Ecclesiastici
@@ -404,12 +404,7 @@ R. Ipse intercedat pro peccatis omnium populorum.
 Sed et reproborum duos ibi futuros ordines Domino narrante comperimus: unum eorum, qui fidei christianae mysteriis initiati, opera fidei exercere contemnunt, quibus in judicio testatur: Discedite a me maledicti in ignem aeternum, qui praeparatus est diabolo, et angelis ejus: esurivi enim, et non dedistis mihi manducare. Alterum eorum, qui fidem et mysteria Christi vel numquam suscepere, vel susceptam per apostasiam deseruere: de quibus dicit: Qui autem non credit, jam judicatus est: quia non credit in nomine unigeniti Filii Dei.
 
 [Responsory83]
-R. Sint lumbi vestri praecincti, et lucernae ardentes in manibus vestris:
-* Et vos similes hominibus exspectantibus dominum suum, quando revertatur a nuptiis.
-V. Vigilate ergo, quia nescitis qua hora Dominus vester venturus sit.
-R. Et vos similes hominibus exspectantibus dominum suum, quando revertatur a nuptiis.
-&Gloria
-R. Et vos similes hominibus exspectantibus dominum suum, quando revertatur a nuptiis.
+@:Responsory8
 
 [Lectio93]
 Verum his cum timore et pavore debito paulisper commemoratis, ad laetissima potius Domini et Salvatoris nostri promissa convertamus auditum. Videamus quae tantae gratia pietatis: non aeternae tantummodo vitae praemia suis sequacibus, sed et praesentis munera pollicetur eximia. Et omnis, inquit, qui reliquerit domum, vel fratres, aut sorores, aut patrem, aut matrem, aut uxorem, aut filios, aut agros, propter nomen meum, centuplum accipiet, et vitam aeternam possidebit. Qui enim terrenis affectibus sive possessionibus pro Christi discipulatu renuntiaverit, quo plus in ejus amorem profecerit, eo plures inveniet, qui se interno suscipere affectu, et suis gaudeant sustentare substantiis.
