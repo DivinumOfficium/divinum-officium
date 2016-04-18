@@ -174,9 +174,9 @@ Quoniam hodie natalis est Virginis, invitat nunc integritatis amor, ut aliquid d
 
 [Responsory4]
 R. Propter veritatem, et mansuetudinem, et justitiam:
-* Et deducet te mirabiliter dextera tua
+* Et deducet te mirabiliter dextera tua.
 V. Specie tua et pulchritudine tua intende, prospere procede, et regna.
-R. Et deducet te mirabiliter dextera tua
+R. Et deducet te mirabiliter dextera tua.
 
 [Lectio5]
 Haec nubes, aëra, Angelos, sideraque transgrediens, Verbum Dei in ipso sinu Patris invenit, et toto hausit pectore. Nam quis tantum, cum invenerit, relinquat boni? Unguentum enim exinanitum est nomen tuum: propterea adolescentulae dilexerunt te, et attraxerunt te. Postremo non meum est illud, quoniam, Quae non nubunt, neque nubentur, erunt sicut Angeli Dei in caelo. Nemo ergo miretur, si Angelis comparentur, quae Angelorum Domino copulantur.
@@ -236,9 +236,7 @@ Veni electa mea, * et ponam in te thronum meum, alleluia.;;
 Ista est speciosa * inter filias Jerusalem.;;
 
 [Capitulum Laudes]
-!2 Cor 10:17-18
-v. Fratres: Qui gloriatur, in Domino glorietur. Non enim qui seipsum commendat, ille probatus est: sed quem Deus commendat.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 @Commune/C6:Hymnus Vespera
@@ -259,9 +257,7 @@ $Per Dominum
 v. O quam pulchra est casta generatio cum claritate! immortalis est enim memoria illius: quoniam apud Deum nota est, et apud homines.
 
 [Capitulum Tertia]
-!2 Cor 10:17-18
-v. Fratres: Qui gloriatur, in Domino glorietur. Non enim qui seipsum commendat, ille probatus est: sed quem Deus commendat.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Specie tua * Et pulchritudine tua.
@@ -291,8 +287,7 @@ V. Elegit eam Deus, et praeelegit eam.
 R. In tabernaculo suo habitare facit eam.
 
 [Capitulum Nona]
-!Sap 4:1
-v. O quam pulchra est casta generatio cum claritate! immortalis est enim memoria illius: quoniam apud Deum nota est, et apud homines.
+@:Lectio Prima
 $Deo gratias
 
 [Responsory Nona]
@@ -307,11 +302,10 @@ V. Diffusa est gratia in labiis tuis.
 R. Propterea benedixit te Deus in aeternum.
 
 [Versum 3]
-V. Diffusa est gratia in labiis tuis.
-R. Propterea benedixit te Deus in aeternum.
+@:Versum 2
 
 [Ant 3]
-Veni Sponsa Christi: * accipe coronam, quam tibi Dominus praeparavit in aeternum.
+@:Ant 1
 
 [Lectio11]
 De libro Ecclesiastici
