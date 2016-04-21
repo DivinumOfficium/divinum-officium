@@ -1,0 +1,26 @@
+[Rank]
+Św. Jana Apostoła przed Bramą Latyńską;;Duplex majus;;4;;ex C1
+
+[Rule]
+ex C1;
+9 lectiones
+StJamesRule=John,Rev
+
+[Ant 1]
+Św. Jan Apostoł, * wrzucony do kotła z wrzącym olejem, wspierany łaską Bożą, wyszedł zeń nietknięty, alleluja.
+
+[Oratio]
+Boże, Ty widzisz jak ze wszech stron zło na nas uderza, spraw więc, prosimy Cię, niech nas wspiera chwalebne wstawiennictwo Świętego Jana, Apostoła Twego i Ewangelisty.
+$Per Dominum
+
+[Lectio1]
+@Sancti/12-27:Lectio1
+
+[Lectio2]
+@Sancti/12-27:Lectio2
+
+[Lectio3]
+@Sancti/12-27:Lectio3
+
+[Ant 3]
+@:Ant 1
