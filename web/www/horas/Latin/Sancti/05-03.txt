@@ -9,7 +9,11 @@ Antiphonas horas
 Psalm5 Vespera=116
 
 [Ant Vespera]
-@:Ant Laudes
+O magnum pietÃ¡tis opus: * mors mortua tunc est, in ligno quando mortua Vita fuit.
+Salva nos, * Christe Salvator, per virtÃºtem Crucis: qui salvÃ¡sti Petrum in mari, miserÃ©re nobis.
+Ecce Crucem DÃ³mini, * fugite, partes adversÃ¦, vicit leo de tribu Juda, radix David, allelÃºja.
+Nos autem gloriari * oportet in Cruce DÃ³mini nostri Jesu Christi.
+Per signum Crucis * de inimÃ­cis nostris lÃ­bera nos, Deus noster.
 
 [Capitulum Vespera]
 !Phil 2:5-7
@@ -165,16 +169,10 @@ Alexander Romanus, Hadriano imperatore regens Ecclesiam, magnam partem Romanae n
 &teDeum
 
 [Ant Laudes]
-O magnum pietátis opus: * mors mortua tunc est, in ligno quando mortua Vita fuit.
-Salva nos, * Christe Salvator, per virtútem Crucis: qui salvásti Petrum in mari, miserére nobis.
-Ecce Crucem Dómini, * fugite, partes adversæ, vicit leo de tribu Juda, radix David, allelúja.
-Nos autem gloriari * oportet in Cruce Dómini nostri Jesu Christi.
-Per signum Crucis * de inimícis nostris líbera nos, Deus noster.
+@:Ant Vespera
 
 [Capitulum Laudes]
-!Phil 2:5-7.
-v. Fratres: Hoc enim sentite in vobis, quod et in Christo Jesu: qui cum in forma Dei esset, non rapinam arbitratus est esse se aequalem Deo: sed semetipsum exinanivit, formam servi accipiens, in similitudinem hominum factus, et habitu inventus ut homo.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 @Psalterium/Major Special:Hymnus Quad5 Laudes
@@ -202,9 +200,7 @@ $Per Dominum.
 v. Humiliavit semetipsum factus obediens usque ad mortem, mortem autem Crucis. Propter quod et Deus exaltavit illum, et donavit illi nomen, quod est super omne nomen.
 
 [Capitulum Tertia]
-!Phil 2:5-7.
-v. Fratres: Hoc enim sentite in vobis, quod et in Christo Jesu: qui cum in forma Dei esset, non rapinam arbitratus est esse se aequalem Deo: sed semetipsum exinanivit, formam servi accipiens, in similitudinem hominum factus, et habitu inventus ut homo.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Hoc signum Crucis erit in caelo, * Alleluia, alleluia.
@@ -234,8 +230,7 @@ V. Omnis terra adoret te, et psallat tibi, alleluia.
 R. Psalmum dicat nomini tuo, Domine, alleluia.
 
 [Capitulum Nona]
-!Phil 2:8-9
-v. Humiliavit semetipsum factus obediens usque ad mortem, mortem autem Crucis. Propter quod et Deus exaltavit illum, et donavit illi nomen, quod est super omne nomen.
+@:Lectio Prima
 $Deo gratias
 
 [Responsory Nona]
