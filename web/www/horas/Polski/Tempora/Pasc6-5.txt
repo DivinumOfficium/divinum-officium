@@ -1,0 +1,57 @@
+@Tempora/Pasc6-0
+(sed rubrica 1960 omittitur)
+
+[Rank]
+Piątek po Oktawie Wniebowstąpienia;;Semiduplex;;2;;ex Tempora/Pasc5-4
+
+[Rank1960]
+Piątek w tygodniu po Wniebowstąpieniu;;Feria;;1;;vide Tempora/Pasc5-4
+
+[Rule]
+ex Tempora/Pasc5-4;
+9 Lectiones
+Doxology=Asc
+Feria Te Deum
+No suffragium
+
+[Lectio1]
+Początek TrzecieListu św. Jana Apostoła
+!3 J 1:1-4
+1 Starszy Gajowi najmilszemu, którego ja miłuję w prawdzie.
+2 Najmilszy! modlę się, abyć się na wszystkiem dobrze powodziło, i abyś zdrów był, jako się dobrze powodzi duszy twojéj.
+3 Wielcem się uradował, gdy przyszli bracia i dali świadectwo prawdzie twojéj, jako ty w prawdzie chodzisz.
+4 Większéj nad tę pociechy nie mam, jedno abych słyszał, że dziatki moje chodzą w prawdzie.
+
+[Lectio1] (rubrica 1960)
+@Tempora/Pasc6-6:LectioJudae1
+
+[Responsory1] (rubrica 1960)
+@Tempora/Pasc5-4:Responsory1
+
+[Lectio2]
+!3 J 1:5-10
+5 Najmilszy! wiernie czynisz, cokolwiek działasz dla braci, a to dla gości.
+6 Którzy świadectwo dali o miłości twéj w oczach kościoła, które dobrze czyniąc odprowadziasz godnie Bogu.
+7 Albowiem dla imienia jego wyszli, nic nie biorąc od poganów.
+8 My tedy takowe powinniśmy przyjmować, abyśmy byli pomocnikami prawdy.
+9 Pisałbym był snadź kościołowi; ale ten, który miłuje przodkowanie między nimi Dyotrephes, nie przyjmuje nas.
+10 Przeto, jeźli przyjdę, przypomnę uczynki jego, które czyni, słowy złościwemi szczebiecąc na nas, a jakoby na tem dosyć nie miał, ani sam przyjmuje braci: i tym, co przyjmują, zabrania, i z kościoła wyrzuca.
+
+[Lectio2] (rubrica 1960)
+@Tempora/Pasc6-6:LectioJudae2
+
+[Responsory2] (rubrica 1960)
+@Tempora/Pasc5-4:Responsory2
+
+[Lectio3]
+!3 J 1:11-14
+11 Najmilszy, nie naśladuj złego, ale co jest dobrego. Ktoć dobrze czyni, z Boga jest, kto źle czyni, nie widział Boga.
+12 Demetryuszowi świadectwo dają wszyscy i téż sama prawda; lecz i my świadectwo dawamy: a wiesz, iż świadectwo nasze prawdziwe jest.
+13 Miałem ci wiele pisać; alem ci nie chciał pisać inkaustem i piórem.
+14 Lecz się nadziewam rychło cię ujrzeć, a ustnie mówić będziemy. Pokój tobie. Pozdrawiają cię przyjaciele. Pozdrów mianowicie przyjacioły.
+
+[Lectio3] (rubrica 1960)
+@Tempora/Pasc6-6:LectioJudae3
+
+[Responsory3] (rubrica 1960)
+@Tempora/Pasc5-4:Responsory3
