@@ -7,6 +7,8 @@ Nous disposons désormais des traductions du missel quotidien complet édité pa
 ## Commune
 Anciennes traductions renommées en *.old.
 
+### Relu
+
 ###Manquantes
 - C1.txt
 
@@ -79,7 +81,8 @@ Anciennes traductions renommées en *.old.
 ## Relu
 
 ### Fait
--Communio.txt
+- Ordo.txt
+- Communio.txt
 - Prefationes (trad. Barroux sauf [H-Pent] -> traduction introibo)
 
 ### En cours de traduction
