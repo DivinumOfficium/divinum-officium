@@ -84,6 +84,6 @@ Anciennes traductions renommées en *.old.
 - Ordo.txt
 - Communio.txt
 - Prefationes (trad. Barroux sauf [H-Pent] -> traduction introibo)
+- Prayers.txt
 
 ### En cours de traduction
-- Ordo.txt (*Nombreux passages à relire*)
