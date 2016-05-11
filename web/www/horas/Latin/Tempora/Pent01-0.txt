@@ -12,11 +12,11 @@ Psalm5 Vespera3=113
 Prima=53
 
 [Ant Vespera]
-Gloria tibi Trinitas * aequalis, una Deitas, et ante omnia saecula, et nunc et in perpetuum.;;109
-Laus et perennis gloria * Deo Patri, et Filio, Sancto simul Paraclito, in saeculorum saecula.;;110
-Gloria laudis * resonet in ore omnium, Patri, genitaeque Proli, Spiritui Sancto pariter resultet laude perenni.;;111
-Laus Deo Patri, * parilique Proli, et tibi Sancte studio perenni Spiritus, nostro resonet ab ore, omne per aevum.;;112
-Ex quo omnia, * per quem omnia, in quo omnia: ipsi gloria in saecula.;;116
+Gloria tibi, Trinitas * aequalis, una Deitas, et ante omnia saecula, et nunc et in perpetuum.
+Laus et perennis gloria * Deo Patri, et Filio, Sancto simul Paraclito, in saeculorum saecula.
+Gloria laudis * resonet in ore omnium, Patri, genitaeque Proli, Spiritui Sancto pariter resultet laude perenni.
+Laus Deo Patri, * parilique Proli, et tibi Sancte studio perenni Spiritus, nostro resonet ab ore, omne per aevum.
+Ex quo omnia, * per quem omnia, in quo omnia: ipsi gloria in saecula.
 
 [Capitulum Vespera]
 !Rom 11:33
@@ -39,6 +39,7 @@ Tibique Sancte Spiritus,
 Sicut fuit, sit jugiter
 Saeclum per omne gloria.
 Amen.
+
 [HymnusM Vespera]
 v. O lux beata Trinitas,
 et principalis Unitas,
@@ -61,7 +62,7 @@ V. Benedicamus Patrem et Filium cum Sancto Spiritu.
 R. Laudemus et superexaltemus eum in saecula.
 
 [Ant 1]
-Gratias * tibi Deus gratias tibi vera et una Trinitas, una et summa Deitas, sancta et una Unitas.
+Gratias * tibi, Deus, gratias tibi, vera et una Trinitas, una et summa Deitas, sancta et una Unitas.
 
 [Oratio]
 Omnipotens sempiterne Deus, qui dedisti famulis tuis in confessione verae fidei, aeternae Trinitatis gloriam agnoscere, et in potentia majestatis adorare Unitatem: quaesumus; ut eiusdem fidei firmitate ab omnibus semper muniamur adversis.
@@ -230,11 +231,7 @@ Duo sunt opera misericordiae, quae nos liberant, quae breviter ipse Dominus posu
 &teDeum
 
 [Ant Laudes]
-Gloria tibi Trinitas * aequalis, una Deitas, et ante omnia saecula, et nunc et in perpetuum.
-Laus et perennis gloria * Deo Patri, et Filio, Sancto simul Paraclito, in saeculorum saecula.
-Gloria laudis * resonet in ore omnium, Patri, genitaeque Proli, Spiritui Sancto pariter resultet laude perenni.
-Laus Deo Patri, * parilique Proli, et tibi Sancte studio perenni Spiritus, nostro resonet ab ore, omne per aevum.
-Ex quo omnia, * per quem omnia, in quo omnia: ipsi gloria in saecula.
+@:Ant Vespera
 
 [Capitulum Laudes]
 @:Capitulum Vespera
@@ -278,9 +275,7 @@ $Per Dominum
 v. Tres sunt, qui testimonium dant in caelo: Pater, Verbum, et Spiritus Sanctus: et hi tres unum sunt.
 
 [Capitulum Tertia]
-!Rom. 11:33
-v. O altitudo divitiarum sapientiae, et scientiae Dei: quam incomprehensibilia sunt judicia ejus, et investigabiles viae ejus!
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Benedicamus Patrem, et Filium, * Cum Sancto Spiritu.
@@ -310,8 +305,7 @@ V. Verbo Domini caeli firmati sunt.
 R. Et Spiritu oris ejus omnis virtus eorum.
 
 [Capitulum Nona]
-!1 Joann. 5:7
-v. Tres sunt, qui testimonium dant in caelo: Pater, Verbum, et Spiritus Sanctus: et hi tres unum sunt.
+@:Lectio Prima
 $Deo gratias
 
 [Responsory Nona]
@@ -342,4 +336,3 @@ _
 $Oremus
 Deus in te sperantium fortitudo, adesto propitius invocationibus nostris: et quia sine te nihil potest mortalis infirmitas, praesta auxilium gratiae tuae; ut in exsequendis mandatis tuis, et voluntate tibi et actione placeamus.
 $Per Dominum
-
