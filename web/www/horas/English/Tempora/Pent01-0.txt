@@ -12,11 +12,11 @@ Psalm5 Vespera3=113
 Prima=53
 
 [Ant Vespera]
-Glory be to thee, O equal Trinity * one Deity, from before all ages, so now and for evermore.;;109
-Praise and endless glory be * to God the Father, the Son, and the Holy Paraclete, for ever and ever.;;110
-Let the glory of praise * be heard from the mouth of all to the Father, and to the begotten Son; let it equally resound with perpetual praise to the Holy Spirit.;;111
-Praise be to God the Father, * and to his co-equal Son, and to thee, O Holy Ghost: with perpetual delight may it resound from our lips for ever.;;112
-From whom are all things, * through whom are all things, and in whom are all things: to him be glory for evermore.;;116
+Glory be to thee, O equal Trinity * one Deity, from before all ages, so now and for evermore.
+Praise and endless glory be * to God the Father, the Son, and the Holy Paraclete, for ever and ever.
+Let the glory of praise * be heard from the mouth of all to the Father, and to the begotten Son; let it equally resound with perpetual praise to the Holy Spirit.
+Praise be to God the Father, * and to his co-equal Son, and to thee, O Holy Ghost: with perpetual delight may it resound from our lips for ever.
+From whom are all things, * through whom are all things, and in whom are all things: to him be glory for evermore.
 
 [Capitulum Vespera]
 !Rom 11:33
@@ -69,7 +69,7 @@ Almighty and everlasting God, you have given thy servants in the confession of t
 $Per Dominum
 
 [OratioW]
-O God, the Strength of all them that put their trust in thee,  mercifully accept our prayers, and because through the weakness of our mortal nature we can do no good thing without thee, grant us the help of thy grace, that in keeping of thy commandments we may please thee, both in will and deed.
+O God, the Strength of all them that put their trust in thee, mercifully accept our prayers, and because through the weakness of our mortal nature we can do no good thing without thee, grant us the help of thy grace, that in keeping of thy commandments we may please thee, both in will and deed.
 $Per Dominum
 
 [Commemoratio 1]
@@ -135,7 +135,7 @@ V. Above it stood the Seraphim each one had six wings.
 R. And His train filled the temple.
 
 [Lectio2]
-Isa 6:5-8
+!Isa 6:5-8
 5 And I said: Woe is me, because I have held my peace; because I am a man of unclean lips, and I dwell in the midst of a people that hath unclean lips, and I have seen with my eyes the King the Lord of hosts.
 6 And one of the seraphims flew to me, and in his hand was a live coal, which he had taken with the tongs off the altar.
 7 And he touched my mouth, and said: Behold this hath touched thy lips, and thy iniquities shall be taken away, and thy sin shall be cleansed.
@@ -177,7 +177,7 @@ R. Thou art the God that doest wonders.
 Nor if as the Being of the Father, the Son, and the Holy Ghost is One Being, so were there but One Person, then were it untrue to say that God is a Trinity. On the other hand, if, as the Persons of the Father, the Son, and the Holy Ghost are distinguished One from Another by that which is proper to Each, so were They diverse by difference of nature, then were it untrue to say that God is One. But since concerning the nature of the One True God, Who is a Trinity, it is the Truth to say that God is One, and the Truth to say that God is a Trinity, therefore the True God is a Trinity in Persons, and an Unity in nature.
 
 [Responsory5]
-R. To thee be praise, to thee be glory, to thee be thanksgiving for ever and ever,
+R. To thee be praise, to thee be glory, to thee be thanksgiving for ever and ever.
 * O Blessed Trinity.
 V. And blessed is thy glorious and Holy Name, and to be praised and exalted above all for ever.
 R. O Blessed Trinity.
@@ -231,16 +231,10 @@ There are two works of mercy which free us, and which the Lord Himself hath brie
 &teDeum
 
 [Ant Laudes]
-Glory be to thee, O equal Trinity * one Deity, from before all ages, so now and for evermore.
-Praise and endless glory be * to God the Father, the Son, and the Holy Paraclete, for ever and ever.
-Let the glory of praise * be heard from the mouth of all to the Father, and to the begotten Son; let it equally resound with perpetual praise to the Holy Spirit.
-Praise be to God the Father, * and to his co-equal Son, and to thee, O Holy Ghost: with perpetual delight may it resound from our lips for ever.
-From whom are all things, * through whom are all things, and in whom are all things: to him be glory for evermore.
+@:Ant Vespera
 
 [Capitulum Laudes]
-!Rom 11:33
-v. O the depth of the riches of the wisdom and of the knowledge of God! How incomprehensible are his judgments, and how unsearchable his ways!
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 v. O thou, who dost all nature sway,
@@ -250,7 +244,7 @@ To thy eternal majesty.
 _
 The star that heralds in the dawn
 Is slowly fading in the skies;
-The darkness melts; O thou true light,
+The darkness melts; O thou true light,
 Upon our darkened souls arise.
 _
 To God the Father glory be,
@@ -260,11 +254,10 @@ While everlasting ages run.
 Amen.
 
 [Versum 2]
-V. Bless we the Father, and the Son, and the Holy Ghost.
-R. Let us praise and exalt Him above all for ever.
+@:Versum 1
 
 [Ant 2]
-Blessed be the Holy One * the Maker and Lord of all things Blessed be the Holy and Undivided Trinity, now and always, and unto unending ages of ages.
+Blessed be the Holy One * the Maker and Lord of all things. Blessed be the Holy and Undivided Trinity, now and always, and unto unending ages of ages.
 
 [Commemoratio 2]
 !Commemoration of the First Sunday after Pentecost
@@ -282,9 +275,7 @@ $Per Dominum
 v. And there are three who give testimony in heaven, the Father, the Word, and the Holy Ghost. And these three are one.
 
 [Capitulum Tertia]
-!Rom 11:33
-v. O the depth of the riches of the wisdom and of the knowledge of God! How incomprehensible are his judgments, and how unsearchable his ways!
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Bless we the Father, and the Son, * and the Holy Ghost.
@@ -314,8 +305,7 @@ V. By the Word of the Lord were the heavens made.
 R. And all the host of them by the Breath of His mouth.
 
 [Capitulum Nona]
-!1 John 5:7
-v. And there are three who give testimony in heaven, the Father, the Word, and the Holy Ghost. And these three are one.
+@:Lectio Prima
 $Deo gratias
 
 [Responsory Nona]
