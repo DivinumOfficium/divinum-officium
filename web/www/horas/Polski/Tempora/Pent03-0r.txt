@@ -1,0 +1,69 @@
+[Rank]
+III Niedziela po Pięćdziesiątnicy;;Semiduplex;;5
+
+[Rule]
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+Symbolum Athanasium
+
+[Ant 1]
+@Tempora/Pent03-0
+
+[Oratio]
+@Tempora/Pent02-5:Oratio 3
+$Per Dominum
+
+[Lectio1]
+@Tempora/Pent03-0:Lectio1
+
+[Responsory1]
+@Tempora/Pent01-1
+
+[Lectio2]
+@Tempora/Pent03-0:Lectio2
+
+[Responsory2]
+@Tempora/Pent01-1
+
+[Lectio3]
+@Tempora/Pent03-0:Lectio3
+
+[Responsory3]
+@Tempora/Pent01-1
+
+[Responsory4]
+@Tempora/Pent01-2:Responsory1
+
+[Responsory5]
+@Tempora/Pent01-2:Responsory2
+
+[Responsory6]
+@Tempora/Pent01-2:Responsory3
+
+[Lectio7]
+Czytanie Ewangelii świętej według Łukasza
+!Łk 15:1-10
+Onego czasu: Zbliżali się do Jezusa celnicy i grzesznicy, aby Go słuchać. I tak dalej.
+_
+Homilia świętego Grzegorza, Papieża
+!Homilia 34. na Ewangelię, w 1. połowie
+Słyszeliście, bracia moi, w czytanej Ewangelii, iż grzesznicy i celnicy przystąpili do naszego Odkupiciela i że On z nimi nie tylko rozmawiał, ale i jadł z nimi. Widząc to, faryzeusze się oburzyli. Z tego wnioskujcie, iż prawdziwą sprawiedliwość cechuje litość, fałszywą zaś sprawiedliwość – oburzenie. Chociaż i sprawiedliwi słusznie zwykli gniewać się na grzeszników. Co innego jednak, jeśli się to dzieje pod wpływem pychy, a co innego z troski o karność.
+
+[Responsory7]
+@Tempora/Pent01-3:Responsory1
+
+[Responsory8]
+@Tempora/Pent01-0:Responsory8
+
+[Ant 2]
+@Tempora/Pent03-0
+
+[Versum 2]
+@Tempora/Pent21-0
+
+[Ant 3]
+@Tempora/Pent03-0
+
+[Versum 3]
+@Tempora/Pent21-0
