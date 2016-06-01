@@ -15,11 +15,11 @@ Sub unica concl
 No prima vespera
 
 [Ant Vespera]
-Ego plantavi, * Apollo rigavit, Deus autem incrementum dedit, alleluia.;;109
-Libenter gloriabor * in infirmitatibus meis, ut inhabitet in me virtus Christi.;;110
-Gratia Dei * in me vacua non fuit, sed gratia ejus semper in me manet.;;111
-Damasci praepositus * gentis Aretae regis voluit me comprehendere: a fratribus per murum demissus sum in sporta, et sic evasi manus ejus in nomine Domini.;;112
-Ter virgis caesus sum: * semel lapidatus sum: ter naufragium pertuli pro Christi nomine.;;116
+Ego plantavi, * Apollo rigavit, Deus autem incrementum dedit, alleluia.
+Libenter gloriabor * in infirmitatibus meis, ut inhabitet in me virtus Christi.
+Gratia Dei * in me vacua non fuit, sed gratia ejus semper in me manet.
+Damasci praepositus * gentis Aretae regis voluit me comprehendere: a fratribus per murum demissus sum in sporta, et sic evasi manus ejus in nomine Domini.
+Ter virgis caesus sum: * semel lapidatus sum: ter naufragium pertuli pro Christi nomine.
 
 [Capitulum Vespera]
 !2. Tim 4:7-8
@@ -173,16 +173,10 @@ Quod si rebus ipsis id ita fieri videre desideras, lege Actuum Apostolorum libru
 &teDeum
 
 [Ant Laudes]
-Ego plantavi, * Apollo rigavit, Deus autem incrementum dedit, alleluia.
-Libenter gloriabor * in infirmitatibus meis, ut inhabitet in me virtus Christi.
-Gratia Dei * in me vacua non fuit, sed gratia ejus semper in me manet.
-Damasci praepositus * gentis Aretae regis voluit me comprehendere: a fratribus per murum demissus sum in sporta, et sic evasi manus ejus in nomine Domini.
-Ter virgis caesus sum: * semel lapidatus sum: ter naufragium pertuli pro Christi nomine.
+@:Ant Vespera
 
 [Capitulum Laudes]
-!2 Tim 4:7-8
-v. Bonum certamen certavi, cursum consummavi, fidem servavi. In reliquo reposita est mihi corona justitiae, quam reddet mihi Dominus in illa die justus judex.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 @Commune/C1:Hymnus Vespera
@@ -191,8 +185,7 @@ $Deo gratias
 @Commune/C1:HymnusM Vespera
 
 [Versum 2]
-V. Tu es vas electionis, sancte Paule Apostole.
-R. Praedicator veritatis in universo mundo.
+@:Versum 1
 
 [Ant 2]
 Vos qui secuti estis me * sedebitis super sedes, judicantes duodecim tribus Israël, dicit Dominus.
@@ -211,20 +204,10 @@ _
 v. Ego enim sum minimus Apostolorum, qui non sum dignus vocari Apostolus, quoniam persecutus sum Ecclesiam Dei. Gratia autem Dei sum id, quod sum, et gratia ejus in me vacua non fuit.
 
 [Capitulum Tertia]
-!2. Tim 4:7-8
-v. Bonum certamen certavi, cursum consummavi, fidem servavi. In reliquo reposita est mihi corona justitiae, quam reddet mihi Dominus in illa die justus judex.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
-R.br. In omnem terram * Exivit sonus eorum.
-R. In omnem terram * Exivit sonus eorum.
-V. Et in fines orbis terrae verba eorum.
-R. Exivit sonus eorum.
-&Gloria
-R. In omnem terram * Exivit sonus eorum.
-_
-V. Constitues eos principes super omnem terram.
-R. Memores erunt nominis tui, Domine.
+@Sancti/06-29
 
 [Capitulum Sexta]
 !2. Cor. 12:7-9
@@ -232,15 +215,7 @@ v. Ne magnitudo revelationum extollat me, datus est mihi stimulus carnis meae, a
 $Deo gratias
 
 [Responsory Sexta]
-R.br. Constitues eos principes * Super omnem terram.
-R. Constitues eos principes * Super omnem terram.
-V. Memores erunt nominis tui, Domine.
-R. Super omnem terram.
-&Gloria
-R. Constitues eos principes * Super omnem terram.
-_
-V. Nimis honorati sunt amici tui Deus.
-R. Nimis confortatus est principatus eorum.
+@Sancti/06-29
 
 [Capitulum Nona]
 !1 Cor 15:9-10
@@ -248,12 +223,4 @@ v. Ego enim sum minimus Apostolorum, qui non sum dignus vocari Apostolus, quonia
 $Deo gratias
 
 [Responsory Nona]
-R.br. Nimis honorati sunt * Amici tui Deus.
-R. Nimis honorati sunt * Amici tui Deus.
-V. Nimis confortatus est principatus eorum.
-R. Amici tui Deus.
-&Gloria
-R. Nimis honorati sunt * Amici tui Deus.
-_
-V. Annuntiaverunt opera Dei.
-R. Et facta ejus intellexerunt.
+@Sancti/06-29
