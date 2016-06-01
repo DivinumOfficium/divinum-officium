@@ -2,21 +2,23 @@
 SS. Apostolorum Petri et Pauli;;Duplex I classis cum octava communi;;6.5;;ex C1
 
 [Rank1960]
-SS. Apostolorum Petri et Pauli;;Duplex 1 classis;;6;;ex C1
+SS. Apostolorum Petri et Pauli;;Duplex I classis;;6;;ex C1
 
 [Rule]
-vide C1;
+ex C1;
 9 lectiones
 Psalmi Dominica
 Antiphonas horas
 nor commemoratio
+Psalm5 Vespera=116
+Psalm5 Vespera3=138
 
 [Ant Vespera]
-Petrus et Joannes * ascendebant in templum ad horam orationis nonam.;;109
-Argentum et aurum * non est mihi: quod autem habeo, hoc tibi do.;;110
-Dixit Angelus ad Petrum: * Circumda tibi vestimentum tuum, et sequere me.;;111
-Misit Dominus * Angelum suum, et liberavit me de manu Herodis, alleluia.;;112
-Tu es Petrus, * et super hanc petram aedificabo Ecclesiam meam.;;116
+Petrus et Joannes * ascendebant in templum ad horam orationis nonam.
+Argentum et aurum * non est mihi: quod autem habeo, hoc tibi do.
+Dixit Angelus ad Petrum: * Circumda tibi vestimentum tuum, et sequere me.
+Misit Dominus * Angelum suum, et liberavit me de manu Herodis, alleluia.
+Tu es Petrus, * et super hanc petram aedificabo Ecclesiam meam.
 
 [Capitulum Vespera]
 !Act 12:1-3
@@ -46,7 +48,7 @@ Per universa saeculorum saecula.
 Amen.
 
 [Ant 1]
-Tu es Pastor ovium * Princeps Apostolorum: tibi traditae sunt claves regni caelorum.
+@Sancti/02-22
 
 [Oratio]
 Deus, qui hodiernam diem Apostolorum tuorum Petri et Pauli martyrio consecrasti: da Ecclesiae tuae, eorum in omnibus sequi praeceptum, per quos religionis sumpsit exordium.
@@ -62,10 +64,7 @@ De Actibus Apostolorum
 5 At ille intendebat in eos, sperans se aliquid accepturum ab eis.
 
 [Responsory1]
-R. Simon Petre, antequam de navi vocarem te, novi te, et super plebem meam principem te constitui:
-* Et claves regni caelorum tradidi tibi.
-V. Quodcumque ligaveris super terram, erit ligatum et in caelis: et quodcumque solveris super terram, erit solutum et in caelis.
-R. Et claves regni caelorum tradidi tibi.
+@Sancti/02-22
 
 [Lectio2]
 !Acts 3:6-10
@@ -76,10 +75,7 @@ R. Et claves regni caelorum tradidi tibi.
 10 Cognoscebant autem illum, quod ipse erat qui ad eleemosynam sedebat ad Speciosam portam templi: et impleti sunt stupore et extasi in eo quod contigerat illi.
 
 [Responsory2]
-R. Si diligis me, Simon Petre, pasce oves meas. Domine, tu nosti quia amo te,
-* Et animam meam pono pro te.
-V. Si oportuerit me mori tecum, non te negabo.
-R. Et animam meam pono pro te.
+@Sancti/02-22
 
 [Lectio3]
 !Acts 3:11-16
@@ -91,12 +87,7 @@ R. Et animam meam pono pro te.
 16 Et in fide nominis ejus, hunc quem vos vidistis et nostis, confirmavit nomen ejus: et fides, quae per eum est, dedit integram sanitatem istam in conspectu omnium vestrum.
 
 [Responsory3]
-R. Tu es Petrus, et super hanc petram aedificabo Ecclesiam meam, et portae inferi non praevalebunt adversus eam:
-* Et tibi dabo claves regni caelorum.
-V. Quodcumque ligaveris super terram, erit ligatum et in caelis: et quodcumque solveris super terram, erit solutum et in caelis.
-R. Et tibi dabo claves regni caelorum.
-&Gloria
-R. Et tibi dabo claves regni caelorum.
+@Sancti/02-22
 
 [Lectio4]
 Sermo sancti Leonis Papae.
@@ -122,10 +113,7 @@ R. Quia ceciderunt catenae de manibus tuis.
 Disposito namque divinitus operi maxime congruebat, ut multa regna uno confoederarentur imperio, et cito pervios haberet populos praedicatio generalis, quos unius teneret regimen civitatis. Haec autem civitas ignorans suae provectionis auctorem, cum pene omnibus dominaretur gentibus, omnium gentium serviebat erroribus: et magnam sibi videbatur assumpsisse religionem quia nullam respuerat falsitatem. Unde quantum erat per diabolum tenacius illigata, tantum per Christum est mirabilius absoluta.
 
 [Responsory6]
-R. Tu es pastor ovium, Princeps Apostolorum: tibi tradidit Deus omnia regna mundi:
-* Et ideo tibi traditae sunt claves regni caelorum.
-V. Quodcumque ligaveris super terram, erit ligatum et in caelis: et quodcumque solveris super terram, erit solutum et in caelis.
-R. Et ideo tibi traditae sunt claves regni caelorum.
+@Sancti/02-22:Responsory4
 &Gloria
 R. Et ideo tibi traditae sunt claves regni caelorum.
 
@@ -148,10 +136,7 @@ R. Et tu aliquando conversus confirma fratres tuos.
 Vos autem quem me esse dicitis? Prudens lector attende quod ex consequentibus, textuque sermonis, Apostoli nequaquam homines, sed dii appellantur. Cum enim dixisset: Quem dicunt homines esse Filium hominis? subjecit: Vos autem quem me esse dicitis? Illis, quia homines sunt, humana opinantibus, vos qui estis dii, quem me esse existimatis? Petrus ex persona omnium Apostolorum profitetur: Tu es Christus Filius Dei vivi. Deum vivum appellat, ad distinctionem eorum deorum, qui putantur dii, sed mortui sunt.
 
 [Responsory8]
-R. Quem dicunt homines esse Filium hominis? dixit Jesus discipulis suis. Respondens Petrus dixit: Tu es Christus Filius Dei vivi.
-* Et ego dico tibi, quia tu es Petrus, et super hanc petram aedificabo Ecclesiam meam.
-V. Beatus es Simon Bar-Jona, quia caro et sanguis non revelavit tibi, sed Pater meus, qui est in caelis.
-R. Et ego dico tibi, quia tu es Petrus, et super hanc petram aedificabo Ecclesiam meam.
+@Sancti/02-22:Responsory7
 &Gloria
 R. Et ego dico tibi, quia tu es Petrus, et super hanc petram aedificabo Ecclesiam meam.
 
@@ -160,16 +145,10 @@ Respondens autem Jesus, dixit ei: Beatus es Simon Bar-Jona. Testimonio de se Apo
 &teDeum
 
 [Ant Laudes]
-Petrus et Joannes * ascendebant in templum ad horam orationis nonam.
-Argentum et aurum * non est mihi: quod autem habeo, hoc tibi do.
-Dixit Angelus ad Petrum: * Circumda tibi vestimentum tuum, et sequere me.
-Misit Dominus * Angelum suum, et liberavit me de manu Herodis, alleluia.
-Tu es Petrus, * et super hanc petram aedificabo Ecclesiam meam.
+@:Ant Vespera
 
 [Capitulum Laudes]
-!Acts 12:1-3
-v. Misit Herodes rex manus, ut affligeret quosdam de Ecclesia. Occidit autem Jacobum fratrem Joannis gladio. Videns autem quia placeret Judaeis, apposuit ut apprehenderet et Petrum.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 {:H-BeatepastorPetre:}v. Beate Pastor, Petre, clemens accipe
@@ -189,16 +168,14 @@ Per universa aeternitatis saecula.
 Amen.
 
 [Ant 2]
-Quodcumque * ligaveris super terram, erit ligatum et in caelis: et quodcumque solveris super terram, erit solutum et in caelis: dicit Dominus Simoni Petro.
+@Sancti/02-22
 
 [Lectio Prima]
 !Act 12:11
-Et Petrus ad se reversus, dixit: Nunc scio vere, quia misit Dominus Angelum suum, et eripuit me de manu Herodis, et de omni exspectatione plebis Judaeorum.
+v. Et Petrus ad se reversus, dixit: Nunc scio vere, quia misit Dominus Angelum suum, et eripuit me de manu Herodis, et de omni exspectatione plebis Judaeorum.
 
 [Capitulum Tertia]
-!Acts 12:1-3
-v. Misit Herodes rex manus, ut affligeret quosdam de Ecclesia. Occidit autem Jacobum fratrem Joannis gladio. Videns autem quia placeret Judaeis, apposuit ut apprehenderet et Petrum.
-$Deo gratias
+@:Capitulum Laudes
 
 [Responsory Tertia]
 R.br. In omnem terram * Exivit sonus eorum.
@@ -228,8 +205,7 @@ V. Nimis honorati sunt amici tui Deus.
 R. Nimis confortatus est principatus eorum.
 
 [Capitulum Nona]
-!Act 12:11
-v. Et Petrus ad se reversus, dixit: Nunc scio vere, quia misit Dominus Angelum suum, et eripuit me de manu Herodis, et de omni exspectatione plebis Judaeorum.
+@:Lectio Prima
 $Deo gratias
 
 [Responsory Nona]
