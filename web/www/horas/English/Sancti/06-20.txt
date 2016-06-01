@@ -5,22 +5,8 @@ S. Silverii Papae Martyri;;Simplex;;1.1;;vide C2
 vide C3;
 OPapaM=Silverius;
 
-[Ant 1]
-This man is holy * for he hath striven for the law of his God even unto death,~
-and hath not feared for the words of the ungodly; For he had his foundation upon a~
-strong rock.
-
-[Versum 1]
-V. Thou hast crowned him with glory and honour, O Lord.
-R. And madest him to have dominion over the works of thy~
-hands.
-
 [Oratio]
-Mercifully consider our weakness, O Almighty God, and whereas by the burden of~
-our sins we are sore, let Pope Silverius your Martyr be mercifully pleased to~
-deliver us from all things which may hurt our bodies, and from all evil thoughts~
-which may defile our souls
-$Per Dominum
+@Commune/C2::s/N\./Silverius/
 
 [Lectio93]
 This Silverius was a native of Campania, and succeeded Agapitus in the Papacy~
@@ -41,9 +27,8 @@ month of December thirteen Priests, five Deacons, and nineteen Bishops for~
 divers Sees.
 &teDeum
 
-[Ant 2]
-He that hateth his life * in this world, shall keep it unto life eternal.
+[Ant 3]
+@Commune/C2:Ant 1
 
-[Versum 2]
-V. The righteous shall flourish like the palm-tree.
-R. He shall grow like a cedar in Lebanon.
+[Versum 3]
+@Commune/C2:Versum 1
