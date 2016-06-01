@@ -15,11 +15,11 @@ Sub unica concl
 No prima vespera
 
 [Ant Vespera]
-I have planted, * Apollos watered, but God gave the increase. Alleluia.;;109
-Most gladly therefore will I rather glory * in my infirmities, that the power of Christ may rest upon me.;;110
-The grace of God which was bestowed upon me was not in vain, * but His grace abideth ever in me.;;111
-In Damascus the governor * under Aretas the king was desirous to apprehend me; by the brethren in a basket was I let down by the wall, and so escaped I his hands, in the name of the Lord.;;112
-Thrice was I beaten with rods, * once was I stoned, thrice I suffered shipwreck, for Christ's name's sake.;;116
+I have planted, * Apollos watered, but God gave the increase, alleluia.
+Most gladly therefore will I rather glory * in my infirmities, that the power of Christ may rest upon me.
+The grace of God which was bestowed upon me was not in vain, * but His grace abideth ever in me.
+In Damascus the governor * under Aretas the king was desirous to apprehend me;  by the brethren in a basket was I let down by the wall, and so escaped I his hands, in the name of the Lord.
+Thrice was I beaten with rods, * once was I stoned, thrice I suffered shipwreck, for Christ's name's sake.
 
 [Capitulum Vespera]
 !2 Tim 4:7-8
@@ -102,6 +102,8 @@ R. There is laid up for me a crown of righteousness:
 * Which the Lord, the righteous Judge, shall give me at that day.
 V. I know Whom I have believed, and am persuaded that He is able to keep that which I have committed unto Him against that day.
 R. Which the Lord, the righteous Judge, shall give me at that day.
+&Gloria
+R. Which the Lord, the righteous Judge, shall give me at that day.
 
 [Lectio4]
 From the Book of St. Austin, Bishop of Hippo, touching Grace and Free-will.
@@ -172,23 +174,16 @@ If thou wilt see how these words were brought to the proof in very deed, read th
 &teDeum
 
 [Ant Laudes]
-I have planted, * Apollos watered, but God gave the increase. Alleluia.
-Most gladly therefore will I rather glory * in my infirmities, that the power of Christ may rest upon me.
-The grace of God which was bestowed upon me was not in vain, * but His grace abideth ever in me.
-In Damascus the governor * under Aretas the king was desirous to apprehend me; by the brethren in a basket was I let down by the wall, and so escaped I his hands, in the name of the Lord.
-Thrice was I beaten with rods, * once was I stoned, thrice I suffered shipwreck, for Christ's name's sake.
+@:Ant Vespera
 
 [Capitulum Laudes]
-!2 Tim 4:7-8
-v. I have fought a good fight, I have finished my course, I have kept the faith. Henceforth there is laid up for me a crown of righteousness, which the Lord, the righteous Judge, shall give me at that day.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 @Commune/C1:Hymnus Vespera
 
 [Versum 2]
-V. O Holy Apostle Paul, thou art a chosen vessel unto God.
-R. To preach the Gospel throughout the whole world.
+@:Versum 1
 
 [Ant 2]
 Thus saith the Lord: * Ye, which have followed Me, shall sit upon twelve thrones, judging the twelve tribes of Israel.
@@ -207,20 +202,10 @@ _
 v. For I am the least of the Apostles, that am not worthy to be called an Apostle, because I persecuted the Church of God. But by the grace of God I am what I am, and His grace, which was bestowed upon me, was not in vain.
 
 [Capitulum Tertia]
-!2 Tim 4:7-8
-v. I have fought a good fight, I have finished my course, I have kept the faith. Henceforth there is laid up for me a crown of righteousness, which the Lord, the righteous Judge, shall give me at that day.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
-R.br. Their sound hath gone * forth into all the earth.
-R. Their sound hath gone * forth into all the earth.
-V. And their words unto the ends of the world.
-R. Forth into all the earth.
-&Gloria
-R. Their sound hath gone * forth into all the earth.
-_
-V. Thou shalt make them princes over all the earth.
-R. They shall remember thy name, O Lord.
+@Sancti/06-29
 
 [Capitulum Sexta]
 !2 Cor. 12:7-9
@@ -228,15 +213,7 @@ v. Lest I should be exalted above measure through the greatness of the revelatio
 $Deo gratias
 
 [Responsory Sexta]
-R.br. Thou shalt make them princes * over all the earth.
-R. Thou shalt make them princes * over all the earth.
-V. They shall remember thy name, O Lord.
-R. All over the earth.
-&Gloria
-R. Thou shalt make them princes * over all the earth.
-_
-V. O God, are made exceedingly honourable.
-R. Their principality is exceedingly strengthened.
+@Sancti/06-29
 
 [Capitulum Nona]
 !1 Cor 15:9-10
@@ -244,12 +221,4 @@ v. For I am the least of the Apostles, that am not worthy to be called an Apostl
 $Deo gratias
 
 [Responsory Nona]
-R.br. O God, your friends * are made exceedingly honourable.
-R. O God, your friends * are made exceedingly honourable.
-V. Their principality is exceedingly strengthened.
-R. O God, your friends.
-&Gloria
-R. O God, your friends * are made exceedingly honourable.
-_
-V. They declared the works of God.
-R. And understood his doings.
+@Sancti/06-29
