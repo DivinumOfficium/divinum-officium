@@ -10,13 +10,15 @@ ex C1;
 Psalmi Dominica
 Antiphonas horas
 nor commemoratio
+Psalm5 Vespera=116
+Psalm5 Vespera3=138
 
 [Ant Vespera]
-Peter and John * went up together into the Temple at the hour of prayer, being the ninth hour.;;109
-Silver and gold have I none, * but such as I have, give I thee.;;110
-The Angel said unto Peter: * Cast thy garment about thee, and follow me.;;111
-The Lord hath sent * His Angel, and hath delivered me out of the hand of Herod. Alleluia.;;112
-Thou art Peter * and upon this Rock I will build My Church.;;116
+Peter and John * went up together into the Temple at the hour of prayer, being the ninth hour.
+Silver and gold have I none, * but such as I have, give I thee.
+The Angel said unto Peter: * Cast thy garment about thee, and follow me.
+The Lord hath sent * His Angel, and hath delivered me out of the hand of Herod, alleluia.
+Thou art Peter * and upon this Rock I will build My Church.
 
 [Capitulum Vespera]
 !Acts 12:1-3
@@ -46,7 +48,7 @@ Both now and ever, while unending ages flow.
 Amen.
 
 [Ant 1]
-Thou art the Shepherd of the sheep * and the Prince of the Apostles, and unto thee are given the keys of the kingdom of heaven.
+@Sancti/02-22
 
 [Oratio]
 O God, Who didst hallow this day by the Testifying of thine Holy Apostles Peter and Paul, grant unto thy Church, whose foundations Thou wast pleased to lay by their hands, the grace always in all things to remain faithful to their teaching.
@@ -62,10 +64,7 @@ Lesson from the Acts of Apostles
 5 But he looked earnestly upon them, hoping that he should receive something of them.
 
 [Responsory1]
-R. Simon Peter, before I called thee out of the ship, I knew thee, and appointed thee for a captain over My people.
-* And I have given unto thee the keys of the kingdom of heaven.
-V. Whatsoever thou shalt bind on earth, shall be bound in heaven and whatsoever thou shalt loose on earth, shall be loosed in heaven.
-R. And I have given unto thee the keys of the kingdom of heaven.
+@Sancti/02-22
 
 [Lectio2]
 !Acts 3:6-10
@@ -76,10 +75,7 @@ R. And I have given unto thee the keys of the kingdom of heaven.
 10 And they knew him, that it was he who sat begging alms at the Beautiful gate of the temple: and they were filled with wonder and amazement at that which had happened to him.
 
 [Responsory2]
-R. Simon Peter, if thou lovest Me, feed My sheep. Lord, Thou knowest that I love thee.
-* I will lay down my life for thy sake.
-V. If I should die with thee, I will not deny thee.
-R. I will lay down my life for thy sake.
+@Sancti/02-22
 
 [Lectio3]
 !Acts 3:11-16
@@ -91,12 +87,7 @@ R. I will lay down my life for thy sake.
 16 And in the faith of his name, this man, whom you have seen and known, hath his name strengthened; and the faith which is by him, hath given this perfect soundness in the sight of you all
 
 [Responsory3]
-R. Thou art Peter, and upon this rock I will build My Church, and the gates of hell shall not prevail against it.
-* And I will give unto thee the keys of the kingdom of heaven.
-V. Whatsoever thou shalt bind on earth, shall be bound in heaven and whatsoever thou shalt loose on earth, shall be loosed in heaven.
-R. And I will give unto thee the keys of the kingdom of heaven.
-&Gloria
-R. And I will give unto thee the keys of the kingdom of heaven.
+@Sancti/02-22
 
 [Lectio4]
 From the Sermons of Pope St. Leo the Great.
@@ -122,10 +113,7 @@ R. The chains are fallen off from thine hands.
 It well suited for the doing of the work which God had decreed that the multitude of kingdoms should be bound together under one rule, and that so the universal preaching of the Gospel should find easier entry into all peoples, since all were governed by the empire of one city. But this city, knowing not Him, Who had been pleased to make her great, used her lordship over almost all nations to make herself the minister of all their falsehoods and seemed to herself exceeding godly because there was no false god whom she rejected. But the tighter that Satan had bound her, the more wondrous was the work of Christ in setting her free.
 
 [Responsory6]
-R. Thou art the Shepherd of the sheep, and the Prince of the Apostles, and unto thee hath God given all the kingdoms of the world.
-* Therefore unto thee hath He given the keys of the kingdom of heaven.
-V. Whatsoever thou shalt bind on earth shall be bound in heaven and whatsoever thou shalt loose on earth shall be loosed in heaven.
-R. Therefore unto thee hath He given the keys of the kingdom of heaven.
+@Sancti/02-22:Responsory4
 &Gloria
 R. Therefore unto thee hath He given the keys of the kingdom of heaven.
 
@@ -148,10 +136,7 @@ R. And when thou art converted, strengthen thy brethren.
 But who say ye that I am? Mark, discreet reader, from the context, that a distinction is here drawn between the Apostles and mere men. The Apostles are called gods. Who, asketh the Lord, do men say that I am, but, on the other hand, who say ye that I am? They, being but men, deal in human speculations, but ye that are gods, who be ye persuaded that I am. And then Peter, as the representative of all the Apostles, uttered the testimony: Thou art the Christ, the Son of the living God. He calleth God living, to mark the difference between Him and all other that be called gods, and who are indeed dead.
 
 [Responsory8]
-R. Jesus asked His disciples, saying Who do men say that I, the Son of man, am Peter answered and said: Thou art the Christ, the Son of the living God.
-* And I say unto thee, that thou art Peter, and upon this rock I will build My Church.
-V. Blessed art thou, Simon Bar-jona, for flesh and blood hath not revealed it unto thee, but My Father Which is in heaven.
-R. And I say unto thee, that thou art Peter, and upon this rock I will build My Church.
+@Sancti/02-22:Responsory7
 &Gloria
 R. And I say unto thee, that thou art Peter, and upon this rock I will build My Church.
 
@@ -160,16 +145,10 @@ And Jesus answered and said unto him: Blessed art thou, Simon Bar-jona. The Apos
 &teDeum
 
 [Ant Laudes]
-Peter and John * went up together into the Temple at the hour of prayer, being the ninth hour.
-Silver and gold have I none, * but such as I have, give I thee.
-The Angel said unto Peter * Cast thy garment about thee, and follow me.
-The Lord hath sent * His Angel, and hath delivered me out of the hand of Herod. Alleluia.
-Thou art Peter * and upon this Rock I will build My Church.
+@:Ant Vespera
 
 [Capitulum Laudes]
-!Acts 12:1-3
-v. Herod the King stretched forth his hands, to vex certain of the Church. And he killed James, the brother of John, with the sword. And because he saw it pleased the Jews, he proceeded farther to take Peter also.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 v. Peter, blest shepherd, hearken to our cry,
@@ -189,16 +168,14 @@ Eternally alike all things in earth and heaven.
 Amen.
 
 [Ant 2]
-Whatsoever thou shalt bind * on earth, shall be bound in heaven and whatsoever thou shalt loose on earth shall be loosed in heaven, saith the Lord to Simon Peter.
+@Sancti/02-22
 
 [Lectio Prima]
 !Acts 12:11
-And when Peter was come to himself, he said Now I know of a surety that the Lord hath sent His Angel, and hath delivered me out of the hand of Herod, and from all the expectation of the people of the Jews.
+v. And when Peter was come to himself, he said Now I know of a surety that the Lord hath sent His Angel, and hath delivered me out of the hand of Herod, and from all the expectation of the people of the Jews.
 
 [Capitulum Tertia]
-!Acts 12:1-3
-v. Herod the King stretched forth his hands, to vex certain of the Church. And he killed James, the brother of John, with the sword. And because he saw it pleased the Jews, he proceeded farther to take Peter also.
-$Deo gratias
+@:Capitulum Laudes
 
 [Responsory Tertia]
 R.br. Their sound is gone out * through all the earth.
@@ -228,8 +205,7 @@ V. O God, your friends are made exceedingly honourable.
 R. Their principality is exceedingly strengthened.
 
 [Capitulum Nona]
-!Acts 12:11
-v. And when Peter was come to himself, he said: Now I know of a surety that the Lord hath sent His Angel, and hath delivered me out of the hand of Herod, and from all the expectation of the people of the Jews.
+@:Lectio Prima
 $Deo gratias
 
 [Responsory Nona]
