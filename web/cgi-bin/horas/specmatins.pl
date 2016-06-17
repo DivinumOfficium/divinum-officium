@@ -561,6 +561,20 @@ sub lectiones {
   push (@s, "\n");   
 }
 
+sub matins_lectio_responsory_alleluia(\$$) {
+  my ($r, $lang) = @_;
+  our @dayname;
+  
+  return unless $$r;
+
+  if ($dayname[0] =~ /Pasc/i && !officium_defunctorum()) {
+     my @resp=split("\n",$$r);
+     ensure_single_alleluia($resp[1],$lang);
+     ensure_single_alleluia($resp[3],$lang);
+     ensure_single_alleluia($resp[-1],$lang);
+     $$r = join("\n",@resp);
+   }
+}
 
 #*** lectio($num, $lang)
 # input $num=index number for the lectio(1-9 or 1-3) and language
@@ -826,6 +840,7 @@ sub lectio : ScriptFunc {
 	   $s = $c{"Responsory$na"}; 
 	 }	
      if (exists($winner{"Responsory$na"})) {$s = '';}
+     matins_lectio_responsory_alleluia($s,$lang);
 
      #$$$ watch initia rule
    }  
@@ -837,6 +852,7 @@ sub lectio : ScriptFunc {
      if (!$s) {
        %w = (columnsel($lang)) ? %commune : %commune2;	   
        if (exists($w{"Responsory$na"})) {$s = $w{"Responsory$na"};} 
+       matins_lectio_responsory_alleluia($s,$lang);
      }
    }
 
