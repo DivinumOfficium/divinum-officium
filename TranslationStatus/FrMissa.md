@@ -1,4 +1,4 @@
-# Divinumofficium.com - Statut des traductions de la messe en français
+# Divinumofficium.com - État des traductions de la messe en français
 
 Nous disposons désormais des traductions du missel quotidien complet édité par l'Abbaye du Barroux. Certaines n'y figurent cependant pas car elles ne sont pas dans le missel de 1962. On utilise alors les traductions du site <introibo.fr>.
 
