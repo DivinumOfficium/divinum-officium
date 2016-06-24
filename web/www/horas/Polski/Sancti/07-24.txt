@@ -1,0 +1,24 @@
+[Rank]
+Wigilja Św. Jakóba Apostoła;;Simplex;;1.5;;ex C1v
+
+[Rank1960]
+Wspomnienie Św. Krystyny;;Simplex;;1
+
+[Rule]
+ex C1v;
+Responsory Feria
+Preces feriales
+Versum Feria
+no Te Deum
+Laudes 2
+
+[Oratio]
+Daj, prosimy Cię, wszechmogący Boże aby błogosławionego Jakóba, Apostoła Twego, uroczystość, którą uprzedzamy, pomnożyła pobożność naszą i dopomogła do zbawienia.
+$Per Dominum
+
+[Commemoratio 2]
+!Wspomnienie Św. Krystyny.
+@Commune/C6:Oratio proper
+$Oremus
+Prosimy Cię, Panie, niechaj błogosławiona Krystyna Dziewica i Męczenniczka, która dzięki zasłudze czystości i wyznawaniu Twej potęgi była Ci zawsze miła, wybłaga nam przebaczenie.
+$Per Dominum

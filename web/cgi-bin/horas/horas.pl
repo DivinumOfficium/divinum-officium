@@ -191,7 +191,7 @@ sub resolve_refs {
 
 
     #red prefix
-    if ($line =~ /^\s*(R\.br|R\.|V\.|Ant\.|Benedictio\.* |Absolutio\.* )(.*)/) {
+    if ($line =~ /^\s*(R\.br\.|R\.|V\.|Ant\.|Benedictio\.* |Absolutio\.* )(.*)/) {
       my $h = $1;
       my $l = $2;
         if ($h =~ /(Benedictio|Absolutio)/) {	 

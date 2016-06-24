@@ -1,0 +1,35 @@
+[Rank]
+Św. Apolinarego Biskupa i Męczennika;;Duplex;;3;;vide C2
+
+[RankNewcal]
+Św. Apolinarego Biskupa i Męczennika;;Duplex optional;;2;;vide C2
+
+[Rule]
+vide C2;
+9 lectiones;
+
+[Oratio]
+Boże, nagrodo dusz wiernych, któryś dzień ten uświęcił męczeństwem świętego Apolinarego, racz sprawić, byśmy słudzy Twoi, obchodząc jego pamiątkę, za modlitwami jego przebaczenie otrzymali.
+$Per Dominum
+
+[Commemoratio]
+!Wspomnienie Św. Liberjusza Biskupa i Wyznawcy
+@Commune/C4:Oratio proper
+$Oremus
+Daj, prosimy Cię, wszechmogący Boże, aby chwalebna uroczystość błogosławionego Liberjusza, Wyznawcy Twego i Biskupa, pomnożyła w nas pobożność i do zbawienia dopomogła.
+$Per Dominum.
+
+[Commemoratio Sabbat](rubrica 1570 vel rubrica 1910 vel rubrica divino)
+!Wspomnienie Św. Liberjusza Biskupa i Wyznawcy
+@Commune/C4:Oratio proper
+$Oremus
+Wysłuchaj, prosimy Cię, Panie, modłów naszych, które w uroczystość błogosławionego Liberjusza, Wyznawcy Twego i Biskupa, zanosimy i za pośrednictwem zasług tego, który Ci tak godnie służył, od wszelkich grzechów nas wybaw.
+$Per Dominum
+
+[Commemoratio 3] (rubrica Divino aut rubrica Tridentina)
+!Wspomnienie Św. Krystyny.
+@Commune/C6:Oratio proper
+$Oremus
+Prosimy Cię, Panie, niechaj błogosławiona Krystyna Dziewica i Męczenniczka, która dzięki zasłudze czystości i wyznawaniu Twej potęgi była Ci zawsze miła, wybłaga nam przebaczenie.
+$Per Dominum
+
