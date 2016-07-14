@@ -1,3 +1,5 @@
+@Commune/C3
+
 [Name]
 Commune Plurimorum Martyrum Tempore Paschali
 
@@ -8,36 +10,22 @@ Psalm5 Vespera=116
 Psalm5 Vespera3=115
 
 [Ant Vespera]
-Sancti tui, * Dómine, florébunt sicut lílium, allelúia: et sicut odor bálsami erunt ante te, allelúia.;;109
-In cæléstibus regnis * Sanctórum habitátio est, allelúia: et in ætérnum réquies eórum, allelúia.;;110
-In velaménto * clamábant Sancti tui, Dómine, allelúia, allelúia, allelúia.;;111
-Spíritus et ánimæ * justórum, hymnum dícite Deo nostro, allelúia, allelúia.;;112
-Fulgébunt justi * sicut sol in conspéctu Dei, allelúia.;;116
+@Commune/C1p:Ant Laudes
 
 [Capitulum Vespera]
-!Sap 5:1
-v. Stabunt justi in magna constántia advérsus eos qui se angustiavérunt et qui abstulérunt labóres eórum.
-$Deo gratias
+@Commune/C1p
 
 [Hymnus Vespera]
 @Commune/C3:Hymnus Laudes
 
 [Versum 1]
-V. Sancti et justi in Dómino gaudéte, allelúia.
-R. Vos elégit Deus in hereditátem sibi, allelúia.
+@Commune/C1p
 
 [Ant 1]
-Lux perpétua * lucébit Sanctis tuis, Dómine, et ætérnitas témporum, allelúia.
-
-[Oratio]
-Deus, qui nos concédis sanctórum Mártyrum tuórum N. et N. natalícia cólere da nobis in ætérna beatitúdine de eórum societáte gaudére.
-$Per Dominum
+@Commune/C1p
 
 [Invit]
-Exsúltent in Dómino sancti, * Allelúia.
-
-[Hymnus Matutinum]
-@Commune/C3:Hymnus Matutinum
+@Commune/C2p
 
 [Ant Matutinum]
 Stabunt justi * in magna constántia advérsus eos qui se angustiavérunt, allelúia.;;1
@@ -56,69 +44,23 @@ Lux perpétua * lucébit Sanctis tuis, Dómine, et ætérnitas témporum, allel�
 V. Lætítia sempitérna super cápita eórum, allelúia.
 R. Gáudium et exsultatiónem obtinébunt, allelúia.
 
-[Lectio1]
-De Epistola beati Pauli Apostoli ad Romanos 
-!Rom 8:12-19
-12 Fratres: Debitóres sumus non carni, ut secúndum carnem vivámus.
-13 Si enim secúndum carnem vixéritis, moriémini: si autem spíritu facta carnis mortificavéritis, vivétis.
-14 Quicúmque enim spíritu Dei agúntur, ii sunt fílii Dei.
-15 Non enim accepístis spíritum servitútis íterum in timóre, sed accepístis spíritum adoptiónis filiórum, in quo clamámus: Abba (Pater).
-16 Ipse enim Spíritus testimónium reddit spirítui nostro quod sumus fílii Dei.
-17 Si autem fílii, et herédes: herédes, quidem Dei, coherédes autem Christi: si tamen compátimur ut et conglorificémur.
-18 Exístimo enim quod non sunt condígnæ passiónes hujus témporis ad futúram glóriam, quæ revelábitur in nobis.
-19 Nam exspectátio creatúræ revelatiónem filiórum Dei exspéctat.
-
 [Responsory1]
-R. Beátus vir qui métuit Dóminum, allelúia:
-* In mandátis ejus cupit nimis, allelúia, allelúia, allelúia.
-V. Glória et divítiæ in domo ejus, et justítia ejus manet in sǽculum sǽculi.
-R. In mandátis ejus cupit nimis, allelúia, allelúia, allelúia.
-
-[Lectio2]
-!Rom 8:28-34
-28 Scimus autem quóniam diligéntibus Deum ómnia cooperántur in bonum iis qui secúndum propósitum vocáti sunt sancti.
-29 Nam quos præscívit et prædestinávit confórmes fíeri imáginis Fílii sui ut sit ipse primogénitus in multis frátribus.
-30 Quos autem prædestinávit, hos et vocávit: et quos vocávit, hos et justificávit: quos autem justificávit, illos et glorificávit.
-31 Quid ergo dicémus ad hæc? Si Deus pro nobis, quis contra nos?
-32 Qui étiam próprio Fílio suo non pepércit, sed pro nobis ómnibus trádidit illum, quómodo non étiam cum illo ómnia nobis donávit?
-33 Quis accusábit advérsus eléctos Dei? Deus qui justíficat,
-34 quis est qui condémnet? Christus Iesus, qui mórtuus est, immo qui et resurréxit, qui est ad déxteram Dei, qui étiam interpéllat pro nobis.
+@Commune/C1p
 
 [Responsory2]
-R. Tristítia vestra, allelúia,
-* Convertétur in gáudium, allelúia, allelúia.
-V. Mundus autem gaudébit, vos vero contristabímini, sed tristítia vestra.
-R. Convertétur in gáudium, allelúia, allelúia.
-
-[Lectio3]
-!Rom 8:35-39
-35 Quis ergo nos separábit a caritáte Christi? tribulátio? an angústia? an fames? an núditas? an perículum? an persecútio? an gládius?
-36 (sicut scriptum est: Quia propter te mortificámur tota die: æstimáti sumus sicut oves occisiónis.)
-37 Sed in his ómnibus superámus propter eum qui diléxit nos.
-38 Certus sum enim quia neque mors, neque vita, neque Ángeli, neque Principátus, neque Virtútes, neque instántia, neque futúra, neque fortitúdo,
-39 neque altitúdo, neque profúndum, neque creatúra ália póterit nos separáre a caritáte Dei, quæ est in Christo Jesu Dómino nostro.
+@Commune/C1p
 
 [Responsory3]
-R. Pretiósa in conspéctu Dómini, allelúia:
-* Mors Sanctórum ejus, allelúia.
-V. Custódit Dóminus ómnia ossa eórum, unum ex his non conterétur.
-R. Mors Sanctórum ejus, allelúia.
-&Gloria
-R. Mors Sanctórum ejus, allelúia.
+@Commune/C1p
 
 [Lectio4]
-Sermo sancti Ambrósii Epíscopi.
-!Serm. 22.
-Dignum et cóngruum est, fratres, ut post lætítiam Paschæ, quam in Ecclésia celebrávimus, gáudia nostra cum sanctis Martýribus conferámus: et iis annuntiémus Domínicæ resurrectiónis glóriam, qui consórtes sunt Domínicæ passiónis. Qui enim sócii sunt contuméliæ, debent et partícipes esse lætítiæ. Ita enim dicit beátus Apóstolus: Sicut sócii passiónum estis, et resurrectiónis éritis: si tolerábimus, inquit, et conregnábimus. Qui ergo toleravérunt mala propter Christum, debent et glóriam habére cum Christo.
+@Commune/C2p
 
 [Responsory4]
-R. Lux perpétua lucébit Sanctis tuis, Dómine,
-* Et ætérnitas témporum, allelúia, allelúia.
-V. Lætítia sempitérna erit super cápita eórum: gáudium et exsultatiónem obtinébunt.
-R. Et ætérnitas témporum, allelúia, allelúia.
+@Commune/C1p
 
 [Lectio5]
-Annuntiémus inquam sanctis Martýribus Domínicæ Paschæ grátiam: ut dum sepultúræ illíus prædicámus reseráta claustra, et horum sepúlcra reseréntur: dum corpus illíus mórtuum dícimus tepéntibus venis súbito viguísse, horum quoque membra jam frígida immortalitátis calóre foveántur. Éadem enim rátio Mártyres súscitat, quæ et Dóminum suscitávit. Nam sicut viam passiónis ejus expérti sunt, ita experiéntur et vitæ; scriptum est enim in Psalmo: Notas mihi fecísti vias vitæ. Hoc útique in resurrectióne ex persóna dícitur Salvatóris: ut qui, dum post mortem ab ínferis redit ad súperos, incípiat notam habére viam vitæ, quæ ante habebátur ignóta.
+@Commune/C2p
 
 [Responsory5]
 R. In servis suis, allelúia,
@@ -127,7 +69,7 @@ V. Judicábit Dóminus pópulum suum, et in servis suis.
 R. Consolábitur Deus, allelúia.
 
 [Lectio6]
-Ignóta enim erat ante Christi advéntum via vitæ, quæ nullíus adhuc resurgéntis fúerat temeráta vestígio. At ubi Dóminus resurréxit, nota facta, solo attríta est plurimórum: de quibus sanctus Evangelísta ait: Multórum córpora Sanctórum surrexérunt cum eo, et introiérunt in sanctam civitátem. Unde cum Dóminus in resurrectióne sua díxerit, Notas mihi fecísti vias vitæ: póssumus et nos jam dícere Dómino: Notas fecísti nobis vias vitæ. Ipse enim nobis notas fecit vias vitæ, qui nobis sémitam manifestávit ad vitam. Notas enim mihi fecit vias vitæ, cum me dócuit fidem, misericórdiam, justítiam, castitátem: his enim pervenítur itinéribus ad salútem.
+@Commune/C2p
 
 [Responsory6]
 R. Fíliæ Jerúsalem, veníte et vidéte Mártyres cum corónis, quibus coronávit eos Dóminus
@@ -138,125 +80,62 @@ R. In die solemnitátis et lætítiæ, allelúia.
 R. In die solemnitátis et lætítiæ, allelúia.
 
 [Lectio7]
-Léctio sancti Evangélii secúndum Joánnem.
-!Joannes 15:1-7
-In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis vera: et Pater meus agrícola est. Et réliqua.
-_
-Homilía sancti Augustíni Epíscopi.
-!Tract. 80. in Joannem.
-Iste locus evangélicus, fratres, ubi se dicit Dóminus vitem, et discípulos suos pálmites, secúndum hoc dicit, quod est caput Ecclésiæ, nosque membra ejus, mediátor Dei, et hóminum homo Christus Jesus. Uníus quippe natúræ sunt vitis et pálmites. Propter quod cum esset Deus, cujus natúræ non sumus, factus est homo, ut in illo esset vitis humána natúra, cujus et nos hómines pálmites esse possémus.
+@Commune/C2p
 
 [Responsory7]
-R. Ego sum vitis vera, et vos pálmites:
-* Qui manet in me, et ego in eo, hic fert fructum multum, allelúia, allelúia.
-V. Sicut diléxit me Pater, et ego diléxi vos.
-R. Qui manet in me, et ego in eo, hic fert fructum multum, allelúia, allelúia.
+@Commune/C1p
 
 [Responsory7c]
-R. Tristítia vestra, allelúia,
-* Convertétur in gáudium, allelúia, allelúia.
-V. Mundus autem gaudébit, vos vero contristabímini, sed tristítia vestra.
-R. Convertétur in gáudium, allelúia, allelúia.
+@:Responsory2
 
 [Lectio8]
-Quid ergo est, Ego sum vitis vera? Numquid ut ádderet, vera, hoc ad eam vitem rétulit, unde ista similitúdo transláta est? Sic enim dícitur vitis per similitúdinem, non per proprietátem: quemádmodum dícitur ovis, agnus, leo, petra, lapis anguláris, et cétera hujúsmodi, quæ magis ipsa sunt vera, ex quibus ducúntur istæ similitúdines, non proprietátes. Sed cum dicit, Ego sum vitis vera: ab illa se útique discérnit, cui dícitur: Quómodo convérsa es in amaritúdinem vitis aliéna? Nam quo pacto est vitis vera, quæ exspectáta est ut fáceret uvam, fecit autem spinas?
+@Commune/C2p
 
 [Responsory8]
-R. Cándidi facti sunt Nazarǽi ejus, allelúia: splendórem Deo dedérunt, allelúia:
-* Et sicut lac coágulati sunt, allelúia, allelúia.
-V. Candidióres nive, nitidióres lacte, rubicundióres ébore antíquo, sapphíro pulchrióres.
-R. Et sicut lac coágulati sunt, allelúia, allelúia.
-&Gloria
-R. Et sicut lac coágulati sunt, allelúia, allelúia.
+@Commune/C1p
 
 [Lectio9]
-Ego sum, inquit, vitis vera: et Pater meus agrícola est. Numquid unum sunt agrícola et vitis? Secúndum hoc ergo vitis Christus, secúndum quod ait: Pater major me est. Secúndum autem id, quod ait: Ego, et Pater unum sumus; et ipse agrícola est: nec talis, quales sunt, qui extrínsecus operándo éxhibent ministérium: sed talis, ut det étiam intrínsecus increméntum. Nam neque qui plantat est áliquid, neque qui rigat: sed, qui increméntum dat, Deus. Sed útique Deus est Christus, quia Deus erat Verbum: unde ipse, et Pater unum sunt. Et, si Verbum caro factum est, quod non erat, manet quod erat.
-&teDeum
+@Commune/C2p
 
 [Ant Laudes]
-Sancti tui, * Dómine, florébunt sicut lílium, allelúia: et sicut odor bálsami erunt ante te, allelúia.
-In cæléstibus regnis * Sanctórum habitátio est, allelúia: et in ætérnum réquies eórum, allelúia.
-In velaménto * clamábant Sancti tui, Dómine, allelúia, allelúia, allelúia.
-Spíritus et ánimæ * justórum, hymnum dícite Deo nostro, allelúia, allelúia.
-Fulgébunt justi * sicut sol in conspéctu Dei, allelúia.
+@Commune/C1p
 
 [Capitulum Laudes]
-!Sap 5:1
-v. Stabunt justi in magna constántia advérsus eos qui se angustiavérunt et qui abstulérunt labóres eórum.
-$Deo gratias
-
-[Hymnus Laudes]
-@Commune/C3:Hymnus Laudes
+@:Capitulum Vespera
 
 [Versum 2]
-V. Pretiósa in conspéctu Dómini, allelúia.
-R. Mors Sanctórum ejus, allelúia.
+@Commune/C1p
 
 [Ant 2]
-Fíliæ Jerúsalem, * veníte et vidéte Mártyres cum corónis, quibus coronávit eos Dóminus, in die solemnitátis et lætítiæ, allelúia, allelúia.
+@Commune/C1p
 
 [Lectio Prima]
-!Rom 8:28
-v. Scimus quóniam diligéntibus Deum ómnia cooperántur in bonum, iis, qui secúndum propósitum vocáti sunt sancti.
+@Commune/C1p
 
 [Capitulum Tertia]
-!Sap 5:1
-v. Stabunt justi in magna constántia advérsus eos qui se angustiavérunt et qui abstulérunt labóres eórum.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
-R.br. Sancti et justi in Dómino gaudéte, * allelúia, allelúia.
-R. Sancti et justi in Dómino gaudéte, * allelúia, allelúia.
-V. Vos elégit Deus in hereditátem sibi.
-R. Allelúia, allelúia.
-&Gloria
-R. Sancti et justi in Dómino gaudéte, * allelúia, allelúia.
-_
-V. Lux perpétua lucébit Sanctis tuis, Dómine, allelúia.
-R. Et ætérnitas témporum, allelúia.
+@Commune/C1p
 
 [Capitulum Sexta]
-!Sap. 5.5
-v. Ecce quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est.
-$Deo gratias
+@Commune/C1p
 
 [Responsory Sexta]
-R.br. Lux perpétua lucébit Sanctis tuis, Dómine, * allelúia, allelúia.
-R. Lux perpétua lucébit Sanctis tuis, Dómine, * allelúia, allelúia.
-V. Et ætérnitas témporum.
-R. Allelúia, allelúia.
-&Gloria
-R. Lux perpétua lucébit Sanctis tuis, Dómine, * allelúia, allelúia.
-_
-V. Lætítia sempitérna super cápita eórum, allelúia.
-R. Gáudium et exsultatiónem obtinébunt, allelúia.
+@Commune/C1p
 
 [Capitulum Nona]
-!Rom 8:28
-v. Scimus quóniam diligéntibus Deum ómnia cooperántur in bonum, iis, qui secúndum propósitum vocáti sunt sancti.
-$Deo gratias
+@Commune/C1p
 
 [Responsory Nona]
-R.br. Lætítia sempitérna super cápita eórum, * Allelúia, allelúia.
-R. Lætítia sempitérna super cápita eórum, * Allelúia, allelúia.
-V. Gáudium et exsultatiónem obtinébunt.
-R. Allelúia, allelúia.
-&Gloria
-R. Lætítia sempitérna super cápita eórum, * Allelúia, allelúia.
-_
-V. Pretiósa in conspéctu Dómini, allelúia.
-R. Mors Sanctórum ejus, allelúia.
+@Commune/C1p
 
 [Ant Vespera 3]
-Sancti tui, * Dómine, florébunt sicut lílium, allelúia: et sicut odor bálsami erunt ante te, allelúia.;;109
-In cæléstibus regnis * Sanctórum habitátio est, allelúia: et in ætérnum réquies eórum, allelúia.;;110
-In velaménto * clamábant Sancti tui, Dómine, allelúia, allelúia, allelúia.;;111
-Spíritus et ánimæ * justórum, hymnum dícite Deo nostro, allelúia, allelúia.;;112
-Fulgébunt justi * sicut sol in conspéctu Dei, allelúia.;;115
+@Commune/C1p:Ant Laudes
 
 [Versum 3]
-V. Pretiósa in conspéctu Dómini, allelúia.
-R. Mors Sanctórum ejus, allelúia.
+@Commune/C1p:Versum 2
 
 [Ant 3]
-Sancti et justi * in Dómino gaudéte, allelúia: vos elégit Deus in hereditátem sibi, allelúia.
+@Commune/C1p
+
