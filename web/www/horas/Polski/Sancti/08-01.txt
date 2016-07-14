@@ -1,0 +1,130 @@
+[Rank]
+Św. Piotra w okowach;;Duplex majus;;4;;ex C1
+
+[Rule]
+ex C1;
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+Psalm5 Vespera=116
+
+[Ant Vespera]
+Król Herod * przydał, że poimał i Piotra, którego poimawszy, wsadził do ciemnice, chcąc go po Pasce wywieść ludowi.
+A Piotra * chowano w ciemnicy, lecz modlitwa bez przestanku działa się od kościoła do Boga za nim.
+Rzekł Anioł do Piotra: * Weźmij na się odzienie twoje, a idź za mną.
+Posłał Pan * Anioła swego i wyrwał mię z ręki Heroda, alleluja.
+Tyś jest opoka, * a na tej opoce zbuduje Kościół mój.
+
+[Capitulum Vespera]
+@Sancti/06-29
+
+[Hymnus Vespera]
+v. Cudownym sposobem niespodzianie zwolniony,
+Składa Piotr na rozkaz Chrystusa okowy żelazne.
+On, Pasterz owczarni i Przewodnik trzody,
+Otwiera pastwiska żywota i źródła święte
+I strzeże owiec sobie powierzonych, odgania wilków.
+_
+@Sancti/02-22::s/.*_//s
+
+[Versum 1]
+@Sancti/02-22
+
+[Ant 1]
+@Sancti/02-22
+
+[Oratio]
+Boże, któryś po uwolnieniu z więzów błogosławionego Piotra Apostoła, wypuścił go w zdrowiu z więzienia, skrusz, błagamy i nasze więzy grzechowe i oddal od nas łaskawie wszelkie zło.
+$Per Dominum
+_
+@Sancti/02-22:Commemoratio4
+
+[Commemoratio]
+!Wspomnienie Śś. Siedmiu Braci Machabeuszów Męczenników
+@Commune/C3:Oratio proper
+_
+v. Oremus.
+Spraw, Panie, niechaj korona męczeńska tych braci stanie się nam przyczyną radości, i niech wzmoże wiarę naszą, a przez powiększenie liczby pośredników w niebie napełni nas pociechą.
+$Per Dominum
+
+[Hymnus Matutinum]
+@Sancti/02-22:Hymnus Vespera
+
+[Lectio1]
+Z Dziejów Apostolskich
+!Dz 12:1-5
+1 A onegóż czasu oburzył się mocą król Herod, aby utrapił niektóre z kościoła.
+2 I zabił Jakóba, brata Janowego, mieczem.
+3 A widząc, że się podobało Żydom, przydał, że poimał i Piotra. A były dni przaśników.
+4 Którego poimawszy, wsadził do ciemnice, podawszy go czworakiéj czworostrażéj żołnierzów pod straż, chcąc go po Pasce wywieść ludowi.
+5 A Piotra chowano w ciemnicy; lecz modlitwa bez przestanku działa się od kościoła do Boga za nim.
+
+[Responsory1]
+@Sancti/02-22
+
+[Lectio2]
+!Dz 12:6-8
+6 A gdy go miał wywieść Herod, onéjże nocy spał Piotr między dwiema żołnierzmi, związany dwiema łańcuchy, a stróże przed drzwiami strzegli ciemnice.
+7 A oto Aniół Pański podle stanął, a jasność się oświeciła w mieszkaniu, a uderzywszy w bok Piotrów, obudził go, mówiąc: Wstań rychło! I opadły łańcuchy z rąk jego.
+8 I rzekł do niego Aniół: Opasz się i obuj ubranie twoje. I uczynił tak. I rzekł mu: Weźm na się odzienie twoje a idź za mną.
+
+[Responsory2]
+@Sancti/02-22
+
+[Lectio3]
+!Dz 12:9-11
+9 A wyszedłszy, szedł za nim: a nie wiedział, żeby było prawda, co się działo przez Anioła; lecz mniemał, żeby widzenie widział.
+10 A gdy minęli pierwszą i wtórą straż, przyszli do bramy żelaznéj, która wiedzie do miasta, która się im sama otworzyła. A wyszedłszy, przeszli jednę ulicę, i natychmiast odszedł Aniół od niego.
+11 A Piotr przyszedłszy k sobie, rzekł: Teraz wiem prawdziwie, iż Pan posłał Anioła swego i wyrwał mię z ręki Herodowéj i ze wszystkiego oczekiwania ludu Żydowskiego.
+
+[Responsory3]
+@Sancti/02-22
+
+[Responsory4]
+@Sancti/06-29
+
+[Responsory5]
+@Sancti/06-29
+
+[Responsory6]
+@Sancti/02-22:Responsory4
+&Gloria
+R. I dlatego tobie powierzone są klucze Królestwa Niebieskiego.
+
+[Responsory7]
+@Sancti/02-22:Responsory5
+
+[Responsory8]
+@Sancti/02-22:Responsory7
+&Gloria
+R. A Ja ci powiadam, że ty jesteś Opoką, a na tej Opoce zbuduję Kościół mój.
+
+[Ant Laudes]
+@:Ant Vespera
+
+[Capitulum Laudes]
+@:Capitulum Vespera
+
+[Hymnus Laudes]
+@Sancti/02-22
+
+[Versum 2]
+@Sancti/02-22:Versum 1
+
+[Ant 2]
+@Sancti/02-22
+
+[Lectio Prima]
+@Sancti/06-29
+
+[Capitulum Tertia]
+@:Capitulum Vespera
+
+[Capitulum Sexta]
+@Sancti/06-29
+
+[Capitulum Nona]
+@:Lectio Prima
+
+[Ant 3]
+Skrusz, * o Piotrze na rozkaz Boży ziemskie kajdany: Ty, który otwierasz błogosławionym królestwo niebieskie.
