@@ -9,11 +9,11 @@ Antiphonas Horas
 Doxology=Nat
 
 [Ant Vespera]
-Assumpta est * Maria in caelum: gaudent Angeli, laudantes benedicunt Dominum;;109
-Maria Virgo * assumpta est ad aethereum thalamum, in quo Rex regum stellato sedet solio;;112
-In odorem * unguentorum tuorum currimus: adolescentulae dilexerunt te nimis;;121
-Benedicta filia * tu a Domino: quia per te fructum vitae communicavimus;;126
-Pulchra es * et decora, filia Jerusalem, terribilis ut castrorum acies ordinata;;147
+Assumpta est * Maria in caelum: gaudent Angeli, laudantes benedicunt Dominum.;;109
+Maria Virgo * assumpta est ad aethereum thalamum, in quo Rex regum stellato sedet solio.;;112
+In odorem * unguentorum tuorum currimus: adolescentulae dilexerunt te nimis.;;121
+Benedicta filia * tu a Domino: quia per te fructum vitae communicavimus.;;126
+Pulchra es * et decora, filia Jerusalem, terribilis ut castrorum acies ordinata.;;147
 
 [Capitulum Vespera]
 !Sir 24:11-12
@@ -91,7 +91,7 @@ R. Dedi suavitatem odoris.
 
 [Responsory3]
 R. Quae est ista quae processit sicut sol, et formosa tamquam Jerusalem?
-*. Viderunt eam filiae Sion, et beatam dixerunt, et reginae laudaverunt eam.
+* Viderunt eam filiae Sion, et beatam dixerunt, et reginae laudaverunt eam.
 V. Et sicut dies verni circumdabant eam flores rosarum et lilia convallium.
 R. Viderunt eam filiae Sion, et beatam dixerunt, et reginae laudaverunt eam.
 &Gloria
@@ -124,7 +124,7 @@ Heva, quae serpentis suggestioni assensum praebuit, partus dolore, et mortis sen
 R. Beata es Virgo Maria, quae Dominum portasti Creatorem mundi:
 * Genuisti qui te fecit, et in aeternum permanes Virgo.
 V. Ave Maria, gratia plena: Dominus tecum.
-R.* Genuisti qui te fecit, et in aeternum permanes Virgo.
+R. Genuisti qui te fecit, et in aeternum permanes Virgo.
 &Gloria
 R. Genuisti qui te fecit, et in aeternum permanes Virgo.
 
@@ -159,32 +159,19 @@ Cum ergo Maria suaviter audiret verbum dulcissimum, et corde intentissimo pascer
 &teDeum
 
 [Ant Laudes]
-Assumpta est * Maria in caelum: gaudent Angeli, laudantes benedicunt Dominum.
-Maria Virgo * assumpta est ad aethereum thalamum, in quo Rex regum stellato sedet solio.
-In odorem * unguentorum tuorum currimus: adolescentulae dilexerunt te nimis.
-Benedicta filia * tu a Domino: quia per te fructum vitae communicavimus.
-Pulchra es * et decora, filia Jerusalem, terribilis ut castrorum acies ordinata.
+@:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-!Sir 24:11-12
-v. In omnibus requiem quaesivi, et in hereditate Domini morabor. Tunc praecepit, et dixit mihi Creator omnium: et qui creavit me, requievit in tabernaculo meo.
-$Deo gratias
+@:Capitulum Vespera
 
 [Versum 2]
-V. Exaltata est sancta Dei Genitrix.
-R. Super choros Angelorum ad caelestia regna.
+@:Versum 1
 
 [Ant 2]
 Quae est ista, * quae ascendit sicut aurora consurgens, pulchra ut luna, electa ut sol, terribilis ut castrorum acies ordinata?
 
-[Lectio Prima]
-!Sir 24:19-20
-v. In plateis sicut cinnamomum et balsamum aromatizans odorem dedi: quasi myrrha electa, dedi suavitatem odoris.
-
 [Capitulum Tertia]
-!Sir 24:11-12
-v. In omnibus requiem quaesivi, et in hereditate Domini morabor. Tunc praecepit, et dixit mihi Creator omnium: et qui creavit me, requievit in tabernaculo meo.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Exaltata est * Sancta Dei Genitrix.
@@ -211,12 +198,7 @@ R. Gaudent Angeli.
 R. Assumpta est Maria in caelum, * Gaudent Angeli.
 _
 V. Maria Virgo assumpta est ad aethereum thalamum.
-R. In quo Rex regum stellato sedet solo.
-
-[Capitulum Nona]
-!Sir 24:19-20
-v. In plateis sicut cinnamomum et balsamum aromatizans odorem dedi: quasi myrrha electa, dedi suavitatem odoris.
-$Deo gratias
+R. In quo Rex regum stellato sedet solio.
 
 [Responsory Nona]
 R.br. Maria Virgo assumpta est * Ad aethereum thalamum.
