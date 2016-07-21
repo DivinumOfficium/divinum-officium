@@ -516,7 +516,7 @@ sub lectiones {
 
     if ($winner =~ /sancti/i && ($winner{Rank} =~ /(s\.|ss\.)/i && $winner{Rank} !~ /vigil/i) && !$divaux) { 
       my $j = 6;
-      if ($winner{Rank} =~ /(virgin|vidua|C6|C7)/i) {$j += 2;}
+      if ($winner{Rank} =~ /(virgin|vidua|poenitentis|C6|C7)/i) {$j += 2;}
       if ($winner{Rank} =~ /ss\./i) {$j++;}  
       $a[3] = $a[$j];
     }
@@ -964,7 +964,7 @@ sub lect1960 {
   my $divaux =  ($rule =~ /Divinum auxilium/i || $commune{Rule} =~ /Divinum auxilium/i) ? 1 : 0;
   if ($winner =~ /sancti/i && $rank >= 2 && ($winner{Rank} =~ /(s\.|ss\.)/i && $winner{Rank} !~ /vigil/i) && !$divaux) { 
     my $j = 6;
-    if ($winner{Rank} =~ /(virgin|vidua)/i) {$j += 2;}
+    if ($winner{Rank} =~ /(virgin|vidua|poenitentis)/i) {$j += 2;}
     if ($winner{Rank} =~ /ss\./i) {$j++;}  
     $a[3] = $a[$j];
   }
