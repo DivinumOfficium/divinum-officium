@@ -1,0 +1,26 @@
+[Rank]
+Św. Kajetana Wyznawcy;;Duplex;;3;;vide C5
+
+[Rule]
+vide C5;
+9 lectiones
+
+[Ant 1]
+@Tempora/Pent14-0:Ant 3:s/, alleluja//
+
+[Oratio]
+Boże, któryś pozwolił Wyznawcy swemu, błogosławionemu Kajetanowi, naśladować życie Apostołów, daj nam za jego przykładem i pośrednictwem w Tobie zawsze pokładać nadzieję i pożądać jedynie dóbr niebieskich.
+$Per Dominum.
+
+[Commemoratio 2]
+!Wspomnienie Św. Donata Biskupa i Męczennika
+@Commune/C2:Oratio proper
+v. Oremus.
+Boże, chwało kapłanów Twoich, dozwól nam prosimy, doznawać opieki Świętego Męczennika i biskupa Donata, którego pamiątkę obchodzimy.
+$Per Dominum
+
+[Ant 2]
+@Tempora/Pent14-0::s/, alleluja//
+
+[Ant 3]
+@:Ant 1
