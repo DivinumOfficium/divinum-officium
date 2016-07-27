@@ -8,11 +8,11 @@ Psalm5 Vespera=116
 Psalm5 Vespera3=115
 
 [Ant Vespera]
-Wszelki, który Mię wyzna * przed ludźmi, wyznam go Ja też przed Ojcem.;;109
-Kto za Mną idzie, * nie chodzi w ciemnościach, ale będzie miał światłość żywota, mówi Pan.;;110
-Jeśli Mnie kto służy, * niech za Mną idzie: a gdziem Ja jest, tam i sługa Mój będzie.;;111
-Jeśli Mi kto będzie służył, * uczci go Ojciec Mój, który jest w niebiesiech, mówi Pan.;;112
-Chcę Ojcze, * aby, gdziem Ja jest, tam i sługa Mój był.;;116
+Wszelki, który Mię wyzna * przed ludźmi, wyznam go Ja też przed Ojcem.
+Kto za Mną idzie, * nie chodzi w ciemnościach, ale będzie miał światłość żywota, mówi Pan.
+Jeśli Mnie kto służy, * niech za Mną idzie: a gdziem Ja jest, tam i sługa Mój będzie.
+Jeśli Mi kto będzie służył, * uczci go Ojciec Mój, który jest w niebiesiech, mówi Pan.
+Chcę Ojcze, * aby, gdziem Ja jest, tam i sługa Mój był.
 
 [Capitulum Vespera]
 !Jk 1:12
@@ -103,17 +103,25 @@ R. I zakwitnie na wieki przed Panem.
 37 I stał się płacz wielki wszystkich, a upadając na szyi Pawłowéj, całowali go.
 38 Będąc najbardziej żałośni z słowa, które powiedział, że więcéj nie mieli oglądać oblicza jego. I prowadzili go do okrętu.
 
+[Responsory5]
+R. Panie, spełniłeś pragnienie jego duszy
+* I nie odmówiłeś błaganiom warg jego.
+V. Bo pomyślne błogosławieństwo wcześniej nań zesłałeś, włożyłeś mu na głowę koronę z drogich kamieni.
+R. I nie odmówiłeś błaganiom warg jego.
+
+[Responsory6]
+R. Pan odział go szatą radości
+* I włożył mu na głowę wspaniałą koronę.
+V. Pan nakarmił go chlebem życia i zrozumienia i napoił go wodą zbawiennej mądrości.
+R. I włożył mu na głowę wspaniałą koronę.
+&Gloria
+R. I włożył mu na głowę wspaniałą koronę.
+
 [Ant Laudes]
-Wszelki, który Mię wyzna * przed ludźmi, wyznam go Ja też przed Ojcem.
-Kto za Mną idzie, * nie chodzi w ciemnościach, ale będzie miał światłość żywota, mówi Pan.
-Jeśli Mnie kto służy, * niech za Mną idzie: a gdziem Ja jest, tam i sługa Mój będzie.
-Jeśli Mi kto będzie służył, * uczci go Ojciec Mój, który jest w niebiesiech, mówi Pan.
-Chcę Ojcze, * aby, gdziem Ja jest, tam i sługa Mój był.
+@:Ant Vespera
 
 [Capitulum Laudes]
-!Jk 1:12
-v. Błogosławiony mąż, który zdzierża pokusę; bo gdy będzie doświadczony, weźmie koronę żywota, którą obiecał Bóg tym, którzy go miłują.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 {:H-Invictemartyrunicum:}v. Niepokonany Męczenniku, 
@@ -165,9 +173,7 @@ $Per Dominum
 v. Obróci serce swe, aby wstawał rano do Pana, który go stworzył, a przed oczyma Nawyższego modlić się będzie.
 
 [Capitulum Tertia]
-!Jk 1:12
-v. Błogosławiony mąż, który zdzierża pokusę; bo gdy będzie doświadczony, weźmie koronę żywota, którą obiecał Bóg tym, którzy go miłują.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Chwałą i czcią * ukoronowałeś go, Panie, 
@@ -202,8 +208,7 @@ v. Obróci serce swe, aby wstawał rano do Pana, który go stworzył, a przed oc
 $Deo gratias
 
 [Versum 3]
-V. Sprawiedliwy zakwitnie jako palma. 
-R. Rozkrzewi się jako cedr na Libanie.
+@:Versum 2
 
 [Ant 3]
 Kto chce za mną iść, * niech sam siebie zaprze, i weźmie krzyż swój i pójdzie za Mną.
