@@ -1067,9 +1067,10 @@ sub oratio
     }
 
     #* deletes added commemoratio
-    if (($w =~ /(?<prelude>.*?)!commemoratio/is &&
+    $comm_regex_str = "!(" .&translate('Commemoratio',$lang) . "|Commemoratio)";
+    if (($w =~ /(?<prelude>.*?)$comm_regex_str/is &&
           $hora !~ /(laudes|vespera)/i) ||
-        ($hora =~ /laudes/i && $w =~ /!commemoratio/i &&
+        ($hora =~ /laudes/i && $w =~ /$comm_regex_str/i &&
           $w =~ /(?<prelude>.*?)(precedenti|sequenti)/is)) {
       $w = $+{prelude};
       $w =~ s/\s*_$\s*//;
@@ -1172,7 +1173,6 @@ sub oratio
 
     if ((!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i || $version =~ /(1960|monastic)/i)
     && $addconclusio ) {push(@s, $addconclusio); }
-
 }
 
 sub getind {
