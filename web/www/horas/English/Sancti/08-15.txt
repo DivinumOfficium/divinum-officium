@@ -94,11 +94,7 @@ love.
 9 thy cheeks are beautiful as the turtledove's, thy neck as jewels.
 
 [Responsory2]
-R. I was exalted like a cedar in Lebanon, and as a cypress-tree upon Mount Zion.~
-Like the best myrrh
-* I yielded a pleasant odour.
-V. Like cinnamon and sweet balsam.
-R. I yielded a pleasant odour.
+@Commune/C11:Responsory4
 
 [Lectio3]
 !Song 1:10-16
@@ -112,13 +108,7 @@ of doves.
 16 The beams of our houses are of cedar, our rafters of cypress trees.
 
 [Responsory3]
-R. Who is this that cometh up like the sun? This, comely as Jerusalem?
-* The daughters of Zion saw her, and called her blessed; the queens also, and~
-they praised her.
-V. And about her it was as the flower of roses in the spring of the year, and~
-lilies of the valleys.
-R. The daughters of Zion saw her, and called her blessed; the queens also, and~
-they praised her.
+@Commune/C11:Responsory5
 &Gloria
 R. The daughters of Zion saw her, and called her blessed; the queens also, and~
 they praised her.
@@ -137,14 +127,7 @@ wherein the condemnation was annulled, wherein the Tree of Life was planted,~
 wherein our nakedness was covered.
 
 [Responsory4]
-R. When the Lord beheld the daughter of Jerusalem adorned with her jewels, He~
-greatly desired her beauty
-* And when the daughters of Zion saw her, they cried out that she was most~
-blessed, saying thy name is as ointment poured forth.
-V. Upon thy right hand did stand the Queen in a vesture of gold wrought about~
-with divers colours.
-R. And when the daughters of Zion saw her, they cried out that she was most~
-blessed, saying thy name is as ointment poured forth.
+@Commune/C11:Responsory6:s/.\&.*/ Thy name is as ointment poured forth./s
 
 [Lectio5]
 This day the stainless maiden, who had been defiled by no earthly lust, but~
@@ -157,12 +140,7 @@ Life Itself, had not refused; but, as the Mother of the living God, she was~
 worthily taken by Him unto Himself.
 
 [Responsory5]
-R. All generations shall call me blessed. For
-* He That is Mighty, even the Lord, hath done to me great things; and Holy is~
-His Name.
-V. And His mercy is on them that fear Him, from generation to generation.
-R. He That is Mighty, even the Lord, hath done to me great things; and Holy is~
-His Name.
+@Commune/C11:Responsory8:s/.\&.*//s
 
 [Lectio6]
 Eve, who had said yea to the proposals of the serpent, was condemned to the~
@@ -180,13 +158,7 @@ there shall also My servant be how much more shall not rather His mother be with
 Him?
 
 [Responsory6]
-R. Blessed art thou, O Virgin Mary, who hast carried the Lord, the Maker of the~
-world.
-* Thou hast borne Him Who created thee, and thou abidest a virgin for ever.
-V. Hail, Mary, full of grace. The Lord is with thee.
-R. Thou hast borne Him Who created thee, and thou abidest a virgin for ever.
-&Gloria
-R. Thou hast borne Him Who created thee, and thou abidest a virgin for ever.
+@Commune/C11:Responsory3
 
 [Lectio7]
 From the Holy Gospel according to Luke
@@ -245,39 +217,20 @@ into and examine it as far as we can, that we also may be fed.
 &teDeum
 
 [Ant Laudes]
-Mary hath been taken to heaven; * the Angels rejoice; they praise and bless the Lord.
-The Virgin Mary hath been taken into the chamber on high, * where the King of kings sitteth on a throne amid the stars.
-We run after thee, on the scent of thy perfumes * the virgins love thee heartily.
-Blessed of the Lord art thou, O daughter, * for bythee we have been given to eat of the fruit (of the tree) of Life.
-Fair and comely art thou, O daughter of Jerusalem, * terrible as a fenced camp set in battle array.
+@:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-!Sir 24:11-12
-v. In all these I sought rest, and I will abide in the inheritance of the Lord.~
-So the Creator of all things gave me a commandment and said, (and He That made~
-me rested in my tabernacle).
-$Deo gratias
+@:Capitulum Vespera
 
 [Versum 2]
-V. The holy Mother of God hath been exalted.
-R. Over choirs of Angels, into the heavenly kingdom.
+@:Versum 1
 
 [Ant 2]
 Who is she * that cometh up like the rising dawn, fair as the moon, clear as~
 the sun, terrible as a fenced camp set in battle array?
 
-[Lectio Prima]
-!Sir 24:19-20
-v. As a fair olive tree in the plains, and as a plane tree by the water in the~
-streets, was I exalted. I gave a sweet smell like cinnamon. and aromatical balm: I~
-yielded a sweet odour like the best myrrh.
-
 [Capitulum Tertia]
-!Sir 24:11-12
-v. In all these I sought rest, and I will abide in the inheritance of the Lord.~
-So the Creator of all things gave me a commandment and said, (and He That made~
-me rested in my tabernacle).
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. The holy Mother of God hath been exalted.
@@ -308,13 +261,6 @@ R. Mary hath been taken to heaven; the Angels rejoice.
 _
 V. The Virgin Mary hath been taken into the chamber on high.
 R. Where the King of kings sitteth on a throne amid the stars.
-
-[Capitulum Nona]
-!Sir 24:19-20
-v. As a fair olive tree in the plains, and as a plane tree by the water in the~
-streets, was I exalted. I gave a sweet smell like cinnamon. and aromatical balm: I~
-yielded a sweet odour like the best myrrh.
-$Deo gratias
 
 [Responsory Nona]
 R.br. The Virgin Mary hath been taken into the chamber on high.
