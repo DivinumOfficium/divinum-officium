@@ -1092,10 +1092,6 @@ sub oratio
     push (@s, "v. $oremus");
     }
 
-    # Suppress Miserere at new Triduum, and the psalm Lauda in the
-    # office of All Souls' day.
-    $w =~ s/\&psalm\([0-9]+\)\s*\_\s*/_\n/i if ($version =~ /1955|1960/ || "$month$day" =~ /1102/);
-
     if ($hora =~ /(Laudes|Vespera)/i && $winner{Rule} =~ /Sub unica conc/i) {
     if ($version !~ /1960/) {
       if ($w =~ /(.*?)(\n\$Per [^\n\r]*?\s*)$/s) {$addconclusio = $2; $w = $1;}
@@ -1939,9 +1935,6 @@ sub get_prima_responsory {
 sub loadspecial
 {
   my $str = shift;
-
-  # Suppress Miserere in Triduum.
-  $str =~ s/\&psalm\([0-9]+\)\s*_\s*/_\n/i if ($version =~ /1955|1960/); 
 
   my @s = split("\n", $str);
 
