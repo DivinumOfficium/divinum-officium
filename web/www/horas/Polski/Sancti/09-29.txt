@@ -1,0 +1,58 @@
+[Rank]
+Dedykacja Św. Michała Archanioła;;Duplex 1. classis;;6;;ex Sancti/05-08
+
+[Rank1960]
+Dedykacja Św. Michała Archanioła;;Duplex 1. classis;;6;;ex Sancti/05-08
+
+[RankNewcal]
+Śś. Michała, Gabriela i Rafała Archaniołów;;Duplex 1. classis;;6;;ex Sancti/05-08
+
+[Rule]
+ex Sancti/05-08
+9 lectiones
+Psalm5 Vespera=116
+Psalm5 Vespera3=137
+Quorum Festum
+Contract8
+
+[Ant Matutinum]
+Concússum est mare, * et contrémuit terra, ubi Archángelus Míchaël descendébat de cælo.;;8
+Chwalmy Pana, * którego wychwalają Anieli, któremu Cherubini i Serini, śpiewają: Święty, Święty, Święty.;;10
+Wstąpił dym kadzenia przed oblicze Boga, z rąk Anioła.;;14
+V. Anioł stanął przed ołtarzem.
+R. Mając kadzielnicę złotą w ręku swojem.
+Míchaël Archángele, * veni in adiutórium pópulo Dei.;;18
+Míchaël * præpósitus paradísi, quem honoríficant Angelórum cives.;;23
+Gloriósus * apparuísti in conspéctu Dómini: proptérea decórem índuit te Dóminus.;;33
+V. Wstąpił dym kadzenia przed oblicze Boga.
+R. Z rąk Anioła.
+Ángelus Archángelus Míchaël, * Dei núntius pro animábus iustis, allelúia, allelúia.;;95
+Data sunt ei * incénsa multa, ut adoléret ea ante altáre áureum, quod est ante óculos Dómini.;;96
+Multa magnália * de Michaéle Archángelo, qui, fortis in prǽlio, fecit victóriam.;;102
+V. Przed oblicznością Aniołów będęć śpiewał Boże mój.
+R. Będę się kłaniał ku kościołowi twemu świętemu, i będę wyznawał imieniowi twojemu.
+
+[Lectio7]
+Czytanie Ewangelii świętej według Mateusza
+!Mt 18:1-10
+Onego czasu: Przystąpili uczniowie do Jezusa, mówiąc: „Któż, mniemasz, jest większy w Królestwie Niebieskim?” I tak dalej.
+_
+Homilia świętego Hieronima, Kapłana
+!Księga 3. Komentarza, do rozdz. 18. Ewangelii wg św. Mateusza
+Po znalezieniu statera, po zapłaceniu podatku, co ma oznaczać to nagłe pytanie Apostołów: Któż, mniemasz, jest większy w Królestwie Niebieskim? Ponieważ widzieli, że za Pana i za Piotra taki sam został zapłacony podatek, z równości ceny wywnioskowali, że Piotr został wyniesiony ponad wszystkich Apostołów; został przecież w zapłaceniu podatku przyrównany do Pana. Dlatego pytają, kto jest większy w Królestwie Niebieskim. A Jezus, widząc ich myśli i rozumiejąc przyczyny błędu, chce uleczyć pragnienie chwały ubieganiem się o pokorę.
+
+[Lectio8]
+A jeśli cię ręka twoja albo noga twoja gorszy, odetnij ją i odrzuć precz od siebie. Muszą bowiem przyjść zgorszenia, wszelako biada temu człowiekowi, który – ponieważ muszą one przyjść na świat – swoim grzechem sprawia, że przychodzą. A zatem odcina się wszelkie uczucie i całe pokrewieństwo się odrzuca, aby ze względu na więzy miłości rodzinnej nikogo z wiernych nie narazić na zgorszenie. Jeśli – powiada – tak jest, że ktoś tobie bliski niczym ręka, noga, oko i jeszcze użyteczny, zatroskany, o przenikliwym spojrzeniu i bystry, prowadzi cię do upadku i ze względu na rozbieżność w obyczajach strąca cię do piekła, lepiej jest, byś był wolny od jego pokrewieństwa i korzyści materialnych, niż żebyś znalazł przyczynę zagłady, kiedy chcesz pozyskać krewnych i bliskich.
+
+[Lectio9]
+Powiadam wam bowiem, że Aniołowie ich w niebiesiech zawsze widzą oblicze Ojca mego. Wyżej powiedział, posługując się przykładem ręki, nogi i oka, że należy odciąć wszelkie pokrewieństwa i zażyłości, które mogłyby wywołać upadek. Teraz więc surowość tej wypowiedzi powściąga, dodając zalecenie w słowach: Baczcie, abyście nie wzgardzili którymś z tych maluczkich. W taki sposób – powiada – polecam surowość, że zarazem uczę łagodności, bowiem Aniołowie ich w niebiesiech zawsze widzą oblicze Ojca. Wielka godność dusz, że każda ma od urodzenia postawionego na swej straży Anioła. Stąd czytamy w Apokalipsie Janowej: Aniołowi Kościoła efeskiego i pozostałych Kościołów napisz tak. Apostoł polecił także, aby niewiasty zakrywały głowy w kościołach ze względu na Aniołów.
+&teDeum
+
+[Responsory Tertia]
+@Sancti/05-08::s/(przed ołtarzem kościoła, \* )?Alleluja, alleluja/* przed ołtarzem kościoła/g s/\. \* p/. P/
+
+[Responsory Sexta]
+@Sancti/05-08::s/(przed oblicze Boga \* )?Alleluja, alleluja/* przed oblicze Boga/g s/\. \* p/. P/
+
+[Responsory Nona]
+@Sancti/05-08::s/(będęć śpiewał Boże mój \* )?Alleluja, alleluja/* będęć śpiewał Boże mój/g s/\. \* b/. B/
