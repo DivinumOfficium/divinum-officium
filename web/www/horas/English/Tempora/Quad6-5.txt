@@ -5,7 +5,9 @@ Feria Sexta in Parasceve;;Feria privilegiata Duplex I classis;;7
 Feria Sexta in Passione et Morte Domini;;Feria privilegiata Duplex I classis;;7
 
 [Rule]
+Duplex
 Psalmi minores Dominica
+Laudes 2
 Antiphonas horas
 Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Preces Suffragium Conclusion
 Limit Benedictiones Oratio
@@ -173,66 +175,22 @@ R. As they that be dead of old.
 They set up over his head his accusation written: * Jesus of Nazareth, King of the Jews.
 
 [Oratio]
-v. Christ became obedient for us unto death, even to the death of the cross.
-!in secret
-$Pater noster
-!lower voice
-&psalm(50)
-_
-Look down, we beseech thee, O Lord, on this thy family, for which our Lord Jesus Christ did not hesitate to be delivered up into the hands of wicked men, and to suffer the torment of the Cross.
-!Finish silently
-$Qui tecum
+@Tempora/Quad6-4::s/unto death/unto death, even to the death of the cross/
 
 [Oratio Matutinum]
-Look down, we beseech thee, O Lord, on this thy family, for which our Lord Jesus Christ did not hesitate to be delivered up into the hands of wicked men, and to suffer the torment of the Cross.
-!Finish silently
-$Qui tecum
+@Tempora/Quad6-4
 
 [Prelude Vespera] (rubrica 1955 aut rubrica 1960)
 !Today, Vespers are not said by those who assist at the solemn afternoon liturgical action.
 
 [Ant Vespera]
-I will take the chalice of salvation; * and I will call upon the name of the Lord.;;115
-With them * that hated peace I was peaceable: when I spoke to them they fought against me without cause.;;119
-From unjust men deliver me, O Lord.;;139
-Keep me * from the snare, which they have laid for me, and from the stumbling-blocks of them that work iniquity.;;140
-I looked * on my right hand, and beheld, and there was no one that would know me.;;141
+@Tempora/Quad6-4
 
 [Versum 3]
-V. He hath made me to dwell in darkness.
-R. As those that have been dead of old.
+@:Versum 2
 
 [Ant 3]
 When He had received the vinegar, * he said: It is finished! and he bowed his Head, and gave up the Ghost.
 
 [Special Completorium]
-!Special Completorium
-_
-$Confiteor
-$Misereatur
-$Indulgentiam
-
-&psalm(4)
-
-(rubrica tridentina) &psalm(30,1,6)
-
-&psalm(90)
-
-&psalm(133)
-
-&psalm(233)
-
-v. Christ became obedient for us unto death, even to the death of the cross.
-!in secret
-$Pater noster
-!lower voice
-&psalm(50)
-_
-(deinde dicuntur)
-Look down, we beseech thee, O Lord, on this thy family, for which our Lord Jesus Christ did not hesitate to be delivered up into the hands of wicked men, and to suffer the torment of the Cross.
-!Finish silently
-$Qui tecum
-(sed rubrica 1955 aut rubrica 1960 loco horum versuum dicuntur)
-Visit, we beseech thee, O Lord, this dwelling, and drive far from it the snares of the enemy. Let thy holy angels dwell herein to preserve us in peace and let thy blessing be always upon us.
-!Finish silently
-$Per Dominum
+@Tempora/Quad6-4::s/unto death/unto death, even to the death of the cross/
