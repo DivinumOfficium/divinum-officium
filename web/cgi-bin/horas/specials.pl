@@ -1067,9 +1067,10 @@ sub oratio
     }
 
     #* deletes added commemoratio
-    if (($w =~ /(?<prelude>.*?)!commemoratio/is &&
+    $comm_regex_str = "!(" .&translate('Commemoratio',$lang) . "|Commemoratio)";
+    if (($w =~ /(?<prelude>.*?)$comm_regex_str/is &&
           $hora !~ /(laudes|vespera)/i) ||
-        ($hora =~ /laudes/i && $w =~ /!commemoratio/i &&
+        ($hora =~ /laudes/i && $w =~ /$comm_regex_str/i &&
           $w =~ /(?<prelude>.*?)(precedenti|sequenti)/is)) {
       $w = $+{prelude};
       $w =~ s/\s*_$\s*//;
@@ -1168,7 +1169,6 @@ sub oratio
 
     if ((!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i || $version =~ /(1960|monastic)/i)
     && $addconclusio ) {push(@s, $addconclusio); }
-
 }
 
 sub getind {
@@ -1289,7 +1289,7 @@ sub commemoratio {
     {$w = getrefs($w{'Commemoratio Sabbat'}, $lang, 2, $w{Rule});} 
 
   
-  if ($version =~ /(1955|1960)/ && $w =~ /!.*?(Octav|Dominica)/i && nooctnat()) {return;}
+  if ($version =~ /(1955|1960)/ && $w =~ /!.*?(O[ckt]ta|Dominica)/i && nooctnat()) {return;}
   if ($version =~ /(1955|1960)/ && $hora =~ /Vespera/i && $rank >= 5 && nooctnat()) {return;} 
 
   if ($rank >= 5 && $w =~ /!.*?Octav/i && $winner =~ /Sancti/i && $hora =~ /Vespera/i && nooctnat()) {return;}       
