@@ -1,0 +1,26 @@
+[Rank]
+Św. Lina Papieża i Męczennika;;Semiduplex;;2.1;;vide C2
+
+[Rule]
+vide C2;
+9 lectiones
+OPapaM=Linie;
+
+[Oratio]
+@Commune/C2:Oratio1:s/N\./Lina/
+
+[Commemoratio]
+!Wspomnienie Św. Tekli, Panny i Męczenniczki
+@Commune/C6:Oratio proper
+v. Oremus.
+Spraw, prosimy Cię, wszechmogący Boże, niech czcząc narodzenie dla nieba świętej Tekli, Panny i Męczenniczki, i z jej uroczystości się radując, z przykładu tak wielkiej wiary korzystamy.
+$Per Dominum
+
+[Lectio7]
+@Commune/C4:Lectio71
+
+[Lectio8]
+@Commune/C4:Lectio81
+
+[Lectio9]
+@Commune/C4:Lectio91
