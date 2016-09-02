@@ -14,9 +14,9 @@ Psalmi Dominica
 Antiphonas horas
 
 [Ant Vespera]
-Quo abiit dilectus tuus, * o pulcherrima mulierum? quo declinavit dilectus tuus, et quaeremus eum tecum?;;109
+Quo abiit * dilectus tuus, o pulcherrima mulierum? quo declinavit dilectus tuus, et quaeremus eum tecum?;;109
 Recedite a me, * amare flebo, nolite incumbere, ut consolemini me.;;112
-Non est ei species, * neque decor, et vidimus eum, et non erat aspectus.;;121
+Non est ei * species, neque decor, et vidimus eum, et non erat aspectus.;;121
 A planta pedis * usque ad verticem capitis, non est in eo sanitas.;;126
 Fulcite me floribus, * stipate me malis, quia amore langueo.;;147
 
@@ -70,11 +70,7 @@ R. Quae juxta crucem Jesu constitisti.
 Nolite me considerare * quod fusca sim, quia decoloravit me sol, filii matris meae pugnaverunt contra me.
 
 [Doxology]
-Jesu, tibi sit gloria,
-Qui passus es pro servulis,
-Cum Patre et almo Spiritu,
-In sempiterna saecula.
-Amen.
+@Tempora/Quad5-5
 
 [Invit]
 Stemus juxta crucem cum Maria Matre Jesu, * Cujus animam doloris gladius pertransivit.
@@ -167,9 +163,7 @@ R. Ego et pater tuus.
 R. Dolentes quaerebamus te.
 
 [Lectio4]
-Sermo sancti Bernardi Abbatis.
-!Ex Sermone de duodecim stellis.
-Martyrium Virginis tam in Simeonis prophetia, quam in ipsa Dominicae passionis historia commendatur. Positus est hic (ait sanctus senex de puero Jesu) in signum cui contradicetur; et tuam ipsius animam (ad Mariam autem dicebat) pertransibit gladius. Vere tuam, o beata Mater, animam pertransivit: alioquin, nonnisi eam pertransiens, carnem Filii tui penetraret. Et quidem posteaquam emisit spiritum tuus ille Jesus, ipsius plane non attigit animam crudelis lancea, quae ipsius aperuit latus, sed tuam utique animam pertransivit. Ipsius nimirum anima jam ibi non erat, sed tua plane inde nequibat avelli.
+@Tempora/Quad5-5
 
 [Responsory4]
 R. Jesum bajulantem sibi crucem;
@@ -178,7 +172,7 @@ V. Filiae Jerusalem super vos ipsas flete, et super filios vestros.
 R. Sequebatur turba mulierum, quae plangebant et lamentabantur eum.
 
 [Lectio5]
-Tuam ergo pertransivit animam vis doloris, ut plusquam Martyrem non immerito praedicemus, in qua nimirum corporeae sensum passionis excesserit compassionis affectus. An non tibi plusquam gladius fuit sermo ille, revera pertransiens animam, et pertingens usque ad divisionem animae et spiritus: Mulier, ecce filius tuus? O commutationem! Joannes tibi pro Jesu traditur, servus pro Domino, discipulus pro Magistro, filius Zebedaei pro Filio Dei, homo purus pro Deo vero. Quomodo non tuam affectuosissimam animam pertransiret haec auditio, quando et nostra, licet saxea, licet ferrea pectora, sola recordatio scindit?
+@Tempora/Quad5-5
 
 [Responsory5]
 R. Postquam venerunt in locum, qui dicitur Calvariae, ibi crucifixerunt eum:
@@ -187,7 +181,7 @@ V. Tunc beatam illius animam doloris gladius pertransivit.
 R. Stabat autem juxta crucem Jesu Mater ejus.
 
 [Lectio6]
-Non miremini, fratres, quod Maria Martyr in anima fuisse dicatur. Miratur qui non meminerit se audivisse Paulum inter maxima Gentium crimina memorantem quod sine affectione fuissent. Longe id fuit a Mariae visceribus, longe sit a servulis ejus. Sed forte quis dicat: Numquid non eum praescierat moriturum? Et indubitanter. Numquid non sperabat continuo resurrecturum? Et fideliter. Super haec doluit crucifixum? Et vehementer. Alioquin quisnam tu, frater, aut unde tibi haec sapientia, ut mireris plus Mariam compatientem, quam Mariae Filium patientem? Ille etiam mori corpore potuit; ista commori corde non potuit? Fecit illud caritas, qua majorem nemo habuit: fecit et hoc caritas, cui post illam similis altera non fuit.
+@Tempora/Quad5-5
 
 [Responsory6]
 R. Joseph ab Arimathaea
@@ -232,16 +226,10 @@ Ecce, inquit, filius tuus: ecce mater tua. Testabatur de cruce Christus, et inte
 @Sancti/09-15t:Lectio93
 
 [Ant Laudes]
-Quo abiit * dilectus tuus, o pulcherrima mulierum? quo declinavit dilectus tuus, et quaeremus eum tecum?
-Recedite a me, * amare flebo, nolite incumbere, ut consolemini me.
-Non est ei * species, neque decor, et vidimus eum, et non erat aspectus.
-A planta pedis * usque ad verticem capitis, non est in eo sanitas.
-Fulcite me floribus, * stipate me malis, quia amore langueo.
+@:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-!Lam 2:13
-v. Cui comparabo te? vel cui assimilabo te, filia Jerusalem? cui exaequabo te, et consolabor te, virgo filia Sion? Magna est velut mare contritio tua.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 v. Summae Deus clementiae,
@@ -259,11 +247,7 @@ Amara contemplatio,
 Sint et dolores Virginis
 Aeterna cunctis gaudia.
 _
-Jesu, tibi sit gloria,
-Qui passus es pro servulis,
-Cum Patre et almo Spiritu,
-In sempiterna saecula.
-Amen.
+@Tempora/Quad5-5:Doxology
 
 [Versum 2]
 V. Maria Virgo per virtutem tot dolorum.
@@ -291,9 +275,7 @@ Qui passus est propter nostram salutem.
 v. Deduc quasi torrentem lacrimas per diem, et noctem: non des requiem tibi, neque taceat pupilla oculi tui.
 
 [Capitulum Tertia]
-!Lam. 2:13
-v. Cui comparabo te? vel cui assimilabo te, filia Jerusalem? cui exaequabo te, et consolabor te, virgo filia Sion? Magna est velut mare contritio tua.
-$Deo gratias
+@:Capitulum Laudes
 
 [Responsory Tertia]
 R.br. O vos omnes, * Qui transitis per viam.
@@ -323,8 +305,7 @@ V. Fasciculus myrrhae dilectus meus mihi.
 R. Inter ubera mea commorabitur.
 
 [Capitulum Nona]
-!Lam. 2:18
-v. Deduc quasi torrentem lacrimas per diem, et noctem: non des requiem tibi, neque taceat pupilla oculi tui.
+@:Lectio Prima
 $Deo gratias
 
 [Responsory Nona]
