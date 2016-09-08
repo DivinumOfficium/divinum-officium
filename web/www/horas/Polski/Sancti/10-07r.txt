@@ -1,0 +1,21 @@
+@Sancti/10-07
+
+[Rank]
+Festum Beatae Mariae Dziewicy a Rosario;;Duplex 2 classis;;5;;ex C11
+
+[Commemoratio]
+!Wspomnienie Św. Marka Papieża
+@Commune/C4:Oratio proper Gregem
+_
+$Oremus
+Wysłuchaj, Panie, próśb naszych i za przyczyną błogosławionego Marka, Wyznawcy Twego i Biskupa, udziel nam miłościwie przebaczenia i pokoju.
+$Per Dominum
+
+[Hymnus Matutinum]
+@Sancti/10-07
+
+[Lectio8]
+@Sancti/10-07::s/Gdy myślę.*//
+
+[Lectio9]
+@Sancti/10-07:Lectio8:s/.* nad tymi tajemnicami\?//s
