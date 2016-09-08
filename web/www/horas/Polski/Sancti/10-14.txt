@@ -1,0 +1,25 @@
+[Rank]
+Św. Kaliksta Papieża i Męczennika;;Duplex;;3;;vide C2
+
+[Rank1570]
+Św. Kaliksta Papieża i Męczennika;;Semiduplex;;2;;vide C2
+
+[RankNewcal]
+Św. Kaliksta Papieża i Męczennika;;Duplex optional;;2;;vide C2
+
+[Rule]
+vide C2;
+9 lectiones
+
+[Oratio]
+Boże, który widzisz, że z powodu ułomności naszej upadamy, racz w miłosierdziu swem, za pomocą przykładów Świętych Twoich, przywrócić nas do miłości swojej.
+$Per Dominum
+
+[Lectio7]
+@Commune/C4:Lectio71
+
+[Lectio8]
+@Commune/C4:Lectio81
+
+[Lectio9]
+@Commune/C4:Lectio91
