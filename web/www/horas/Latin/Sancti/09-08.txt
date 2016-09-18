@@ -124,18 +124,13 @@ Adrianus jussu Maximiani imperatoris apud Nicomediam persequens Christianos, cum
 &teDeum
 
 [Ant Laudes]
-Nativitas gloriosae Virginis Mariae * ex semine Abrahae, ortae de tribu Juda, clara ex stirpe David.
-Nativitas est hodie * sanctæ Mariæ Virginis, cujus vita inclyta cunctas illustrat ecclesias.
-Regali ex progenie * Maria exorta refulget: cujus precibus nos adjuvari mente et spiritu devotissime poscimus.
-Corde et animo * Christo canamus gloriam in hac sacra solemnitate praecelsae Genitricis Dei Mariae.
-Cum jucunditate * Nativitatem beatae Mariae celebremus, ut ipsa pro nobis intercedat ad Dominum Jesum Christum.
+@:Ant Vespera:s/;;.*//g
 
 [Ant 2]
 Nativitatem hodiernam * perpetuae Virginis Genitricis Dei Mariae solemniter celebremus, qua celsitudo throni processit, alleluia.
 
 [Versum 2]
-V. Nativitas est hodie sanctae Mariae Virginis.
-R. Cujus vita inclyta cunctas illustrat ecclesias.
+@:Versum 1
 
 [Commemoratio]
 !Commemoratio S. Hadriani, Martyris
@@ -145,8 +140,7 @@ Praesta, quaesumus, omnipotens Deus: ut qui beati Hadriani Martyris tui nataliti
 $Per Dominum
 
 [Versum 3]
-V. Nativitas est hodie sanctae Mariae Virginis.
-R. Cujus vita inclyta cunctas illustrat ecclesias.
+@:Versum 1
 
 [Ant 3]
 Nativitas tua, * Dei Genitrix Virgo, gaudium annuntiavit universo mundo: ex te enim ortus est sol justitiae, Christus Deus noster: qui solvens maledictionem, dedit benedictionem, et confundens mortem, donavit nobis vitam sempiternam.
