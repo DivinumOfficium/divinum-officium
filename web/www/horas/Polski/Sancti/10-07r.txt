@@ -12,7 +12,8 @@ Wysłuchaj, Panie, próśb naszych i za przyczyną błogosławionego Marka, Wyzn
 $Per Dominum
 
 [Hymnus Matutinum]
-@Sancti/10-07
+@Sancti/10-07:Hymnus Vespera:s/@Psalterium.*//s
+@Sancti/10-07::s/^v. //
 
 [Lectio8]
 @Sancti/10-07::s/Gdy myślę.*//
