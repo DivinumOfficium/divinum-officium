@@ -178,16 +178,10 @@ Felix Maria, cui nec humilitas defuit, nec virginitas!  Et quidem singuláris vir
 &teDeum
 
 [Ant Laudes]
-Beata es * Virgo Maria, quae omnium portasti Creatorem.
-Genuisti, * qui te fecit, et in aeternum permanes Virgo.
-Cum essem parvula, * placui Altissimo et de meis visceribus genui Deum et hominem.
-Benedicta filia * tu a Domino, quia per te fructum vitae communicavimus.
-Viderunt eam * filiae Sion, et beatam dixerunt, et reginae laudaverunt eam.
+@:Ant Vespera:s/;;.*//gm
 
 [Capitulum Laudes]
-!Sir 24:12-13
-v. Qui creavit me, requievit in tabernaculo meo, et dixit mihi: in Jacob inhabita, et in electis meis mitte radices.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 v. Te, Mater alma Numinis,
@@ -205,27 +199,20 @@ Lapsis Adami posteris:
 A te rogátus Fílius
 Deponat iram vindicem.
 _
-Jesu, tibi sit gloria,
-Qui natus es de Vírgine, 
-Cum Patre et almo Spiritu, 
-In sempiterna sæcula.
-Amen.
+@Psalterium/Doxologies:Nat
 
 [Versum 2]
 V. Germinavit radix Jesse: orta est stella ex Jacob.
 R. Virgo peperit Salvatorem: te laudamus Deus noster.
 
 [Ant 2]
-Sancta Maria, * succurre miseris, juva pusíllanimes, refove flebiles, ora pro pópulo, interveni pro clero, intercede pro devoto femineo sexu: séntiant omnes tuum juvamen, quicúmque celebrant tuam admirábilem Maternitátem.
+@Commune/C11:Ant 1:s/sanctam festivitatem/admirábilem Maternitátem/
 
 [Capitulum Tertia]
-!Sir 24:12-13
-v. Qui creavit me, requievit in tabernaculo meo, et dixit mihi: in Jacob inhabita, et in electis meis mitte radices.
-$Deo gratias
+@:Capitulum Vespera
 
 [Versum 3]
-V. Benedicta tu in mulieribus.
-R. Et Benedictus fructus ventris tui.
+@:Versum 1
 
 [Ant 3]
 Maternitas tua, * Dei Génitrix Virgo, gáudium annuntiávit universo mundo: ex te enim ortus est sol justítiæ, Christus Deus noster.
