@@ -2,11 +2,12 @@ language: "perl"
 perl:
   - "5.10"
 
-script: 'perl Build.PL && ./Build test --test_files "$(find t -name *.t -type f)" verbose=1'
+script: 'regress/scripts/travis.sh'
 
 branches:
   only:
     - calcalc
+    - master
 
 notifications:
   email:
