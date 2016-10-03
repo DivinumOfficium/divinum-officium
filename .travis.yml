@@ -2,6 +2,7 @@ language: "perl"
 perl:
   - "5.10"
 
+install: 'cpanm --installdeps --verbose .'
 script: 'regress/scripts/travis.sh'
 
 branches:
