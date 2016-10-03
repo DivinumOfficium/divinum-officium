@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 basedir="$(dirname $0)"
 source "${basedir}/util.sh"
