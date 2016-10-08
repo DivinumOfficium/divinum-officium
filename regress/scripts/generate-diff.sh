@@ -124,13 +124,9 @@ main() {
 
   # Generate diff.
   echo 'Diffing...'
-  local diff_output="${tempdir}/output.diff"
-  diff -ur \
+  git diff -p --stat \
     "$(gen_output_tree "${base_ref}")" \
-    "$(gen_output_tree "${test_ref}")" > \
-    "${diff_output}" || true
-  diffstat -p5 "${diff_output}"
-  cat "${diff_output}"
+    "$(gen_output_tree "${test_ref}")"
 }
 
 tempdir=$(mktemp -d) || die 'Failed to create temporary directory.'
