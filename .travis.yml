@@ -2,11 +2,13 @@ language: "perl"
 perl:
   - "5.10"
 
-script: 'perl Build.PL && ./Build test --test_files "$(find t -name *.t -type f)" verbose=1'
+install: 'cpanm --installdeps --verbose .'
+script: 'regress/scripts/travis.sh'
 
 branches:
   only:
     - calcalc
+    - master
 
 notifications:
   email:
