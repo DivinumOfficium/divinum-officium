@@ -57,7 +57,7 @@ run_single_test() {
   mkdir -p "${output_dir}"
 
   # Run the script and store its output, stripping off the cookie.
-  "${test_tree}/$(office_script_path "${hour}")" \
+  perl "${test_tree}/$(office_script_path "${hour}")" \
     "version=$(long_version "${short_version}")" \
     "command=$(hour_command "${hour}")" \
     "date=${date}" | \
@@ -67,7 +67,7 @@ run_single_test() {
 
 expand_dates() {
   local testspec="$1"
-  "${scriptdir}/expand-dates.pl" "${testspec}"
+  perl "${scriptdir}/expand-dates.pl" "${testspec}"
 }
 
 gen_output_tree() {
