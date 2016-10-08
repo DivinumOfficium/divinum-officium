@@ -81,7 +81,8 @@ run_test() {
   local test_tree="${tempdir}/${treedir}/${ref}"
   local output_tree="$(gen_output_tree "${ref}")"
 
-  for date in $(expand_dates "${testspec}"); do
+  dates="$(expand_dates "${testspec}")"
+  for date in ${dates}; do
     for hour in Matutinum Vespera SanctaMissa; do
       for short_version in Divino 1960; do
         run_single_test \
@@ -134,4 +135,6 @@ main() {
 
 tempdir=$(mktemp -d) || die 'Failed to create temporary directory.'
 (set -e; main "$@")
+ret=$?
 try rm -rf "${tempdir}"
+exit ${ret}
