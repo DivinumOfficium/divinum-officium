@@ -9,11 +9,11 @@ Antiphonas Horas
 Doxology=Nat
 
 [Ant Vespera]
-Assumpta est * Maria in caelum: gaudent Angeli, laudantes benedicunt Dominum;;109
-Maria Virgo * assumpta est ad aethereum thalamum, in quo Rex regum stellato sedet solio;;112
-In odorem * unguentorum tuorum currimus: adolescentulae dilexerunt te nimis;;121
-Benedicta filia * tu a Domino: quia per te fructum vitae communicavimus;;126
-Pulchra es * et decora, filia Jerusalem, terribilis ut castrorum acies ordinata;;147
+Assumpta est * Maria in caelum: gaudent Angeli, laudantes benedicunt Dominum.;;109
+Maria Virgo * assumpta est ad aethereum thalamum, in quo Rex regum stellato sedet solio.;;112
+In odorem * unguentorum tuorum currimus: adolescentulae dilexerunt te nimis.;;121
+Benedicta filia * tu a Domino: quia per te fructum vitae communicavimus.;;126
+Pulchra es * et decora, filia Jerusalem, terribilis ut castrorum acies ordinata.;;147
 
 [Capitulum Vespera]
 !Sir 24:11-12
@@ -74,10 +74,7 @@ R. Et sicut dies verni circumdabant eam flores rosarum et lilia convallium.
 9 Pulchrae sunt genae tuae sicut turturis; collum tuum sicut monilia.
 
 [Responsory2]
-R. Sicut cedrus exaltata sum in Libano, et sicut cypressus in monte Sion: quasi myrrha electa
-* Dedi suavitatem odoris.
-V. Et sicut cinnamomum et balsamum aromatizans.
-R. Dedi suavitatem odoris.
+@Commune/C11:Responsory4
 
 [Lectio3]
 !Cant 1:10-16
@@ -90,10 +87,7 @@ R. Dedi suavitatem odoris.
 16 Tigna domorum nostrarum cedrina, laquearia nostra cypressina.
 
 [Responsory3]
-R. Quae est ista quae processit sicut sol, et formosa tamquam Jerusalem?
-*. Viderunt eam filiae Sion, et beatam dixerunt, et reginae laudaverunt eam.
-V. Et sicut dies verni circumdabant eam flores rosarum et lilia convallium.
-R. Viderunt eam filiae Sion, et beatam dixerunt, et reginae laudaverunt eam.
+@Commune/C11:Responsory5
 &Gloria
 R. Viderunt eam filiae Sion, et beatam dixerunt, et reginae laudaverunt eam.
 
@@ -103,30 +97,19 @@ Sermo sancti Joannis Damasceni.
 Hodie sacra et animata arca Dei viventis, quae suum in utero concepit Creatorem, requiescit in templo Domini, quod nullis est exstructum manibus: et David exsultat ejus parens, et cum eo choros ducunt Angeli, celebrant Archangeli, Virtutes glorificant, Principatus exsultant, Potestates collaetantur, gaudent Dominationes, Throni festum diem agunt, laudant Cherubim, gloriam ejus praedicant Seraphim. Hodie Eden novi Adam paradisum suscipit animatum, in quo soluta est condemnatio, in quo plantatum est lignum vitae, in quo operta fuit nostra nuditas.
 
 [Responsory4]
-R. Ornatam monilibus filiam Jerusalem Dominus concupivit:
-* Et videntes eam filiae Sion, beatissimam praedicaverunt, dicentes: Unguentum effusum nomen tuum.
-V. Astitit regina a dextris tuis in vestitu deaurato, circumdata varietate.
-R. Et videntes eam filiae Sion, beatissimam praedicaverunt, dicentes: Unguentum effusum nomen tuum.
+@Commune/C11:Responsory6:s/.\&.*/ Unguentum effusum nomen tuum./s s/: \*/:/s
 
 [Lectio5]
 Hodie Virgo immaculata, quae nullis terrenis inquinata est affectibus, sed caelestibus educata cogitationibus, non in terram reversa est; sed, cum esset animatum caelum, in caelestibus tabernaculis collocatur. Ex qua enim omnibus vera vita manavit, quomodo illa mortem gustaret? Sed cedit legi latae ab eo quem genuit; et ut filia veteris Adam, veterem sententiam subiit: (nam et ejus Filius, qui est vita ipsa, eam non recusavit) ut autem Dei viventis Mater, ad illum ipsum digne assumitur.
 
 [Responsory5]
-R. Beatam me dicent omnes generationes:
-* Quia fecit mihi Dominus magna qui potens est, et sanctum nomen ejus.
-V. Et misericordia ejus a progenie in progenies timentibus eum.
-R. Quia fecit mihi Dominus magna qui potens est, et sanctum nomen ejus.
+@Commune/C11:Responsory8:s/.\&.*//s
 
 [Lectio6]
 Heva, quae serpentis suggestioni assensum praebuit, partus dolore, et mortis sententia damnatur, et in inferorum collocatur penetralibus. Hanc autem vere beatam, quae Dei verbo aures praestitit, et Spiritus sancti operatione repleta est, atque ad Archangeli spiritalem salutationem, sine voluptate et virili consortio, Dei Filium concepit, et sine dolore aliquo peperit, ac totam se Deo consecravit, quonam modo mors devoraret? quomodo inferi susciperent? quomodo corruptio invaderet corpus illud, in quo vita suscepta est? Huic recta, plana, et facilis ad caelum parata est via. Si enim, Ubi ego sum, illic et minister meus erit, inquit vita et veritas Christus; quomodo non potius mater cum ipso erit?
 
 [Responsory6]
-R. Beata es Virgo Maria, quae Dominum portasti Creatorem mundi:
-* Genuisti qui te fecit, et in aeternum permanes Virgo.
-V. Ave Maria, gratia plena: Dominus tecum.
-R.* Genuisti qui te fecit, et in aeternum permanes Virgo.
-&Gloria
-R. Genuisti qui te fecit, et in aeternum permanes Virgo.
+@Commune/C11:Responsory3
 
 [Lectio7]
 Lectio sancti Evangelii secundum Lucam
@@ -149,7 +132,7 @@ Dominus autem pro Maria respondit Marthae: et ipse ejus factus est advocatus, qu
 [Responsory8]
 R. Beata es Virgo Maria, Dei Genitrix, quae credidisti Domino: perfecta sunt in te quae dicta sunt tibi: ecce exaltata es super choros Angelorum:
 * Intercede pro nobis ad Dominum Deum nostrum.
-V. Ave Maria, gratia plena, Dominus tecum.
+V. Ave Maria, gratia plena: Dominus tecum.
 R. Intercede pro nobis ad Dominum Deum nostrum.
 &Gloria
 R. Intercede pro nobis ad Dominum Deum nostrum.
@@ -159,32 +142,19 @@ Cum ergo Maria suaviter audiret verbum dulcissimum, et corde intentissimo pascer
 &teDeum
 
 [Ant Laudes]
-Assumpta est * Maria in caelum: gaudent Angeli, laudantes benedicunt Dominum.
-Maria Virgo * assumpta est ad aethereum thalamum, in quo Rex regum stellato sedet solio.
-In odorem * unguentorum tuorum currimus: adolescentulae dilexerunt te nimis.
-Benedicta filia * tu a Domino: quia per te fructum vitae communicavimus.
-Pulchra es * et decora, filia Jerusalem, terribilis ut castrorum acies ordinata.
+@:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-!Sir 24:11-12
-v. In omnibus requiem quaesivi, et in hereditate Domini morabor. Tunc praecepit, et dixit mihi Creator omnium: et qui creavit me, requievit in tabernaculo meo.
-$Deo gratias
+@:Capitulum Vespera
 
 [Versum 2]
-V. Exaltata est sancta Dei Genitrix.
-R. Super choros Angelorum ad caelestia regna.
+@:Versum 1
 
 [Ant 2]
 Quae est ista, * quae ascendit sicut aurora consurgens, pulchra ut luna, electa ut sol, terribilis ut castrorum acies ordinata?
 
-[Lectio Prima]
-!Sir 24:19-20
-v. In plateis sicut cinnamomum et balsamum aromatizans odorem dedi: quasi myrrha electa, dedi suavitatem odoris.
-
 [Capitulum Tertia]
-!Sir 24:11-12
-v. In omnibus requiem quaesivi, et in hereditate Domini morabor. Tunc praecepit, et dixit mihi Creator omnium: et qui creavit me, requievit in tabernaculo meo.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Exaltata est * Sancta Dei Genitrix.
@@ -211,12 +181,7 @@ R. Gaudent Angeli.
 R. Assumpta est Maria in caelum, * Gaudent Angeli.
 _
 V. Maria Virgo assumpta est ad aethereum thalamum.
-R. In quo Rex regum stellato sedet solo.
-
-[Capitulum Nona]
-!Sir 24:19-20
-v. In plateis sicut cinnamomum et balsamum aromatizans odorem dedi: quasi myrrha electa, dedi suavitatem odoris.
-$Deo gratias
+R. In quo Rex regum stellato sedet solio.
 
 [Responsory Nona]
 R.br. Maria Virgo assumpta est * Ad aethereum thalamum.

@@ -1,0 +1,23 @@
+[Rank]
+Św. Rosae a Sancta Maria Limanae Dziewicy;;Duplex;;3;;vide C6
+
+[RankNewcal]
+Św. Rosae a Sancta Maria Limanae Dziewicy;;Duplex optional;;2;;vide C6
+
+[Rule]
+vide C6;
+9 lectiones
+
+[Oratio]
+Rozdawco dóbr wszelkich, Boże wszechmogący, któryś błogosławioną Różę wspierał niebieską rosą łaski i chciał, aby zakwitła w Indjach blaskiem dziewictwa i cierpliwości, spraw, abyśmy sługi Twoje, idąc za wonią jej cnót, zasłużyli stać się dobrym zapachem Chrystusowym:
+$Qui tecum
+
+[Commemoratio]
+!Wspominamy Śś. Feliksa i Adaukta Męczenników
+@Commune/C3:Oratio proper
+$Oremus
+Błagamy pokornie Majestatu Twego, Panie, abyś uweselając nas ciągle wspomnieniem Świętych Twoich, za ich przyczyną zawsze strzec nas raczył.
+$Per Dominum
+
+[Hymnus Matutinum]
+@Commune/C6:Hymnus Matutinum 1

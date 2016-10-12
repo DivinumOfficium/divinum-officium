@@ -1,0 +1,25 @@
+[Rank]
+Św. Eustachego i Towarzyszy Męczenników;;Duplex;;3;;vide C3
+
+[Rank1960]
+Św. Eustachego i Towarzyszy Męczenników;;Simplex;;1.1;;vide C3
+
+[Rule]
+vide C3;
+9 lectiones
+
+[Oratio]
+@Commune/C3::s/N\. i N\./Eustachego i Towarzyszy/
+
+[Lectio7]
+@Commune/C3:Lectio71
+
+[Lectio8]
+@Commune/C3:Lectio81
+
+[Oratio Vigilia]
+!Wspominamy Wigilję Św. Mateusza Apostoła
+@Commune/C1v:Oratio1:s/N\./Mateusza/
+
+[Lectio93]
+@Commune/C1v:Lectio1

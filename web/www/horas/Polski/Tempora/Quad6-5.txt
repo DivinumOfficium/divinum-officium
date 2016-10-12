@@ -175,23 +175,16 @@ R. Jako umarłych od wieków.
 I włożyli * na głowę jego winę jego napisaną: Ten jest Jezus Król żydowski.
 
 [Oratio]
-v. Chrystus stał się za nas posłusznym aż do śmierci, a śmierci krzyżowej.
-!po cichu
-$Pater noster
-!nieco głośniej
-&psalm(50)
-_
-Wejrzyj, prosimy Cię, Panie, na tę czeladkę Twoją, za którą Pan nasz Jezus Chrystus nie zawahał się ponieść męki krzyżowej i oddać się w ręce grzeszników.
-!dokończyć po cichu
-$Qui tecum
+@Tempora/Quad6-4::s/aż do śmierci/aż do śmierci, a śmierci krzyżowej/
 
 [Oratio Matutinum]
-Wejrzyj, prosimy Cię, Panie, na tę czeladkę Twoją, za którą Pan nasz Jezus Chrystus nie zawahał się ponieść męki krzyżowej i oddać się w ręce grzeszników.
-!dokończyć po cichu
-$Qui tecum
+@Tempora/Quad6-4
 
 [Prelude Vespera] (rubrica 1955 aut rubrica 1960)
 !Ci którzy biorą udział w liturgi popołudniowej, tego dnia, nie odmawiają Nieszporów.
+
+[Ant Vespera]
+@Tempora/Quad6-4
 
 [Versum 3]
 @:Versum 2
@@ -200,33 +193,4 @@ $Qui tecum
 Gdy tedy wziął ocet, * rzekł: Wykonało się; a skłoniwszy głowę, oddal ducha.
 
 [Special Completorium]
-!Kompleta specjalna
-_
-$Confiteor
-$Misereatur
-$Indulgentiam
-
-&psalm(4)
-
-(rubrica tridentina) &psalm(30,1,6)
-
-&psalm(90)
-
-&psalm(133)
-
-&psalm(233)
-
-v. Chrystus stał się za nas posłusznym aż do śmierci, a śmierci krzyżowej.
-!po cichu
-$Pater noster
-!nieco głośniej
-&psalm(50)
-_
-(deinde dicuntur)
-Wejrzyj, prosimy Cię, Panie, na tę czeladkę Twoją, za którą Pan nasz Jezus Chrystus nie zawahał się ponieść męki krzyżowej i oddać się w ręce grzeszników.
-!dokończyć po cichu
-$Qui tecum
-(sed rubrica 1955 aut rubrica 1960 loco horum versuum dicuntur)
-Nawiedź, prosimy Cię, Panie, ten dom, i oddal od niego wszelkie wrogie zasadzki: niech mieszkają w nim Twoi święci Aniołowie i strzegą nas w pokoju; a błogosławieństwo Twoje niech zawsze będzie z nami.
-!dokończyć po cichu
-$Per Dominum
+@Tempora/Quad6-4::s/aż do śmierci/aż do śmierci, a śmierci krzyżowej/

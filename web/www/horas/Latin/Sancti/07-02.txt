@@ -148,15 +148,10 @@ Quo tempore Petrus et Paulus tenebantur sub custodia Mamertini in monte Tarpejo,
 &teDeum
 
 [Ant Laudes]
-Exsurgens Maria, * abiit in montana cum festinatione in civitatem Juda.
-Intravit Maria * in domum Zachariae, et salutavit Elisabeth.
-Ut audivit * salutationem Mariae Elisabeth, exsultavit infans in utero ejus, et repleta est Spiritu Sancto, alleluia.
-Benedicta * tu inter mulieres, et benedictus fructus ventris tui.
-Ex quo facta est * vox salutationis tuae in auribus meis, exsultavit infans in utero meo, alleluia.
+@:Ant Vespera:s/;;.*//g
 
 [Versum 2]
-V. Benedicta tu in mulieribus.
-R. Et benedictus fructus ventris tui.
+@:Versum 1
 
 [Ant 2]
 Cum audisset * salutationem Mariae Elisabeth, exclamavit voce magna, et dixit: Unde hoc mihi, ut veniat Mater Domini mei ad me? Alleluia.
@@ -171,6 +166,6 @@ _
 V. Exsultabunt Sancti in gloria.
 R. Laetabuntur in cubilibus suis.
 _
-v. Oremus. 
+$Oremus
 Deus, qui nos sanctorum Martyrum tuorum Processi et Martiniani gloriosis confessionibus circumdas et protegis: da nobis et eorum imitatione proficere, et intercessione gaudere.
 $Per Dominum

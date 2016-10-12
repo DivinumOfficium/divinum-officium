@@ -943,8 +943,8 @@ sub antetpsalm {
 
   if ($dayname[0]  =~ /Pasc/i  && $hora =~ /(laudes|vespera)/i && $version !~ /monastic/i && 
       !exists($winner{"Ant $hora"}) && $communetype !~ /ex/i) { 
-    if ($ind == 0) {$ant1 = ($duplex < 3 && $version !~ /1960/) ? 'Alleluia' : 'Alleluia, * Alleluia, Alleluia.'; $ant = ''}
-    elsif ($last) {$ant1 = ''; $ant = 'Alleluia, * Alleluia, Alleluia.';}
+    if ($ind == 0) {$ant1 = ($duplex < 3 && $version !~ /1960/) ? 'Alleluia' : 'Alleluia, * alleluia, alleluia.'; $ant = ''}
+    elsif ($last) {$ant1 = ''; $ant = 'Alleluia, * alleluia, alleluia.';}
     else {$ant1 = $ant = '';}	  
   }
 
@@ -1067,9 +1067,10 @@ sub oratio
     }
 
     #* deletes added commemoratio
-    if (($w =~ /(?<prelude>.*?)!commemoratio/is &&
+    $comm_regex_str = "!(" .&translate('Commemoratio',$lang) . "|Commemoratio)";
+    if (($w =~ /(?<prelude>.*?)$comm_regex_str/is &&
           $hora !~ /(laudes|vespera)/i) ||
-        ($hora =~ /laudes/i && $w =~ /!commemoratio/i &&
+        ($hora =~ /laudes/i && $w =~ /$comm_regex_str/i &&
           $w =~ /(?<prelude>.*?)(precedenti|sequenti)/is)) {
       $w = $+{prelude};
       $w =~ s/\s*_$\s*//;
@@ -1091,10 +1092,6 @@ sub oratio
     my $oremus = translate('Oremus', $lang);
     push (@s, "v. $oremus");
     }
-
-    # Suppress Miserere at new Triduum, and the psalm Lauda in the
-    # office of All Souls' day.
-    $w =~ s/\&psalm\([0-9]+\)\s*\_\s*/_\n/i if ($version =~ /1955|1960/ || "$month$day" =~ /1102/);
 
     if ($hora =~ /(Laudes|Vespera)/i && $winner{Rule} =~ /Sub unica conc/i) {
     if ($version !~ /1960/) {
@@ -1172,7 +1169,6 @@ sub oratio
 
     if ((!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i || $version =~ /(1960|monastic)/i)
     && $addconclusio ) {push(@s, $addconclusio); }
-
 }
 
 sub getind {
@@ -1293,7 +1289,7 @@ sub commemoratio {
     {$w = getrefs($w{'Commemoratio Sabbat'}, $lang, 2, $w{Rule});} 
 
   
-  if ($version =~ /(1955|1960)/ && $w =~ /!.*?(Octav|Dominica)/i && nooctnat()) {return;}
+  if ($version =~ /(1955|1960)/ && $w =~ /!.*?(O[ckt]ta|Dominica)/i && nooctnat()) {return;}
   if ($version =~ /(1955|1960)/ && $hora =~ /Vespera/i && $rank >= 5 && nooctnat()) {return;} 
 
   if ($rank >= 5 && $w =~ /!.*?Octav/i && $winner =~ /Sancti/i && $hora =~ /Vespera/i && nooctnat()) {return;}       
@@ -1939,9 +1935,6 @@ sub get_prima_responsory {
 sub loadspecial
 {
   my $str = shift;
-
-  # Suppress Miserere in Triduum.
-  $str =~ s/\&psalm\([0-9]+\)\s*_\s*/_\n/i if ($version =~ /1955|1960/); 
 
   my @s = split("\n", $str);
 

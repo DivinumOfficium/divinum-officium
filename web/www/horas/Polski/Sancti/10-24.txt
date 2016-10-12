@@ -1,0 +1,98 @@
+[Rank]
+Św. Rafała Archanioła;;Duplex majus;;4;;ex Sancti/05-08
+
+[Rule]
+ex Sancti/05-08
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+Psalm5 Vespera=116
+Psalm5 Vespera3=137
+Horas1960 Feria
+
+[Capitulum Vespera]
+!Tb 12:12
+v. Gdyś się modliwał z płaczem i pogrzebałeś umarłe, i zostawiałeś obiad twój a kryłeś umarłe przez dzień w domu twoim, a w nocyś je pogrzebał: jam ofiarował twoję modlitwę Panu.
+$Deo gratias
+
+[Hymnus Vespera]
+@Sancti/05-08:Hymnus Laudes:s/Anioł pokoju.*?_//s s/Anioł mężny.*?_//s
+
+[Ant 1]
+Oto ja jestem Anioł Rafał, * który stoję przed Panem: wy tedy błogosławcie Boga i opowiadajcie wszystkie cuda Jego, alleluja.
+
+[Oratio]
+Boże, który błogosławionego Rafała Archanioła Tobjaszowi, słudze swemu za towarzysza w drodze dałeś, dozwól nam sługom Twoim, aby zawsze otaczała nas Jego opieka, i wspierała pomoc.
+$Per Dominum
+
+[Invit]
+@Sancti/05-08
+
+[Hymnus Matutinum]
+@Sancti/10-24:Hymnus Vespera
+
+[Lectio1]
+Z Księgi Tobiasza
+!Tb 12:1-4
+1 Tedy wezwał do siebie Tobiasz syna swego i rzekł mu: Co możemy dać mężowi temu świętemu, który z tobą przyszedł?
+2 Odpowiadając Tobiasz, rzekł ojcu swemu: Ojcze, co mu za zapłatę damy abo co może być godnego dobrodziejstw jego?
+3 Mnie prowadził i przyprowadził zdrowego, pieniądze od Gabela on odebrał, żonę on mi zjednał i czarta od niej on zahamował, radość rodzicom jej uczynił, mnie samego od pożarcia ryby wybawił, tobie też uczynił, że widzisz światłość niebieską i wszego dobra jesteśmy napełnieni przezeń. Cóż mu za to możemy dać słusznego?
+4 Ale proszę dę, ojcze mój, żebyś go prosił, jeśli snadź będzie raczył połowicę wszytkiego, co przyniesiono, sobie wziąć.
+
+[Lectio2]
+!Tb 12:5-13
+5 I przyzwawszy go, to jest ociec i z synem, odwiedli go na stronę i poczęli prosić, żeby raczył za dobre przyjąć połowicę wszytkiego, co przynieśli.
+6 Tedy im powiedział potajemnie: Błogosławcie Boga Niebieskiego a przed wszytkimi żywiącymi wyznawajcie mu, bo uczynił nad wami miłosierdzie swoje.
+7 abowiem tajemnicę królewską taić dobrze jest ale sprawy Boskie objawiać i wyznawać poczciwa rzecz jest
+8 Dobra jest modlitwa z postem i z jałmużną, więcej niżli skarby złota chować,
+9 abowiem jałmużna od śmierci wybawia i ona jest, która oczyściła grzechy i czyni, że się najduje miłosierdzie i żywot wieczny.
+10 A d, którzy czynią grzech i nieprawość, są nieprzyjaciele dusze swojej.
+11 Objawiam wam tedy prawdę i nie zataję przed wami tajemnej mowy.
+12 Gdyś się modliwał z płaczem i pogrzebałeś umarłe, i zostawiałeś obiad twój a kryłeś umarłe przez dzień w domu twoim, a w nocyś je pogrzebał: jam ofiarował twoję modlitwę Panu.
+13 A iżeś był przyjemny Bogu, potrzeba było, aby cię pokusa doświadczyła.
+
+[Ant Laudes]
+@:Ant Vespera
+
+[Hymnus Laudes]
+@Sancti/03-24
+
+[Versum 2]
+@Sancti/05-08:Versum 3
+
+[Ant 2]
+@:Ant 1
+
+[Capitulum Laudes]
+@:Capitulum Vespera
+
+[Lectio Prima]
+!Tb 12:20
+v. A tak czas jest, abych się wrócił do tego, który mię posłał; a wy błogosławcie Boga a opowiadajcie wszytkie dziwy jego.
+
+[Capitulum Tertia]
+@:Capitulum Vespera
+
+[Capitulum Sexta]
+!Tb 12:14-15
+v. A teraz posłał mię Pan, abych cię uzdrowił, i Sarę, żonę syna twego, od czarta wybawił. Jam jest bowiem Rafael Anjoł, je den z siedmi, którzy stojemy przed Panem.
+$Deo gratias
+
+[Capitulum Nona]
+@:Lectio Prima
+$Deo gratias
+
+[Responsory Tertia]
+@Sancti/05-08::s/(przed ołtarzem kościoła, \* )?Alleluja, alleluja/* Przed ołtarzem kościoła/g s/\. \*/. /
+
+[Responsory Sexta]
+@Sancti/05-08::s/(przed oblicze Boga \* )?Alleluja, alleluja/* Przed oblicze Boga/g s/\. \* p/. P/
+
+[Responsory Nona]
+@Sancti/05-08::s/(będęć śpiewał Boże mój \* )?Alleluja, alleluja/* Będęć śpiewał Boże mój/g s/\. \* b/. B/
+
+[Versum 3]
+@Sancti/05-08:Versum 2
+
+[Ant 3]
+O książę najchwalebniejszy, * Rafale Archaniele, pamiętaj o nas i proś za nami tu, wszędzie i zawsze Syna Bożego.

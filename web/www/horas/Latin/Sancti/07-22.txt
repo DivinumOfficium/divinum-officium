@@ -34,8 +34,7 @@ Saeclum per omne gloria.
 Amen.
 
 [Versum 1]
-V. Diffusa est gratia in labiis tuis.
-R. Propterea benedixit te Deus in aeternum.
+@Commune/C6:Versum 2
 
 [Ant 1]
 Mulier * quae erat in civitate peccatrix, ut cognovit quod Jesus accubuit in domo Simonis leprosi, attulit alabastrum unguenti, et stans retro secus pedes Jesu, lacrimis coepit rigare pedes ejus, et capillis capitis sui tergebat, et osculabatur pedes ejus, et unguento ungebat.
@@ -68,10 +67,7 @@ De Canticis canticorum.
 4 Paululum cum pertransissem eos, inveni quem diligit anima mea: tenui eum, nec dimittam, donec introducam illum in domum matris meae, et in cubiculum genitricis meae.
 
 [Responsory1]
-R. Maria Magdalene, et altera Maria ibant diluculo ad monumentum:
-* Jesum, quem quaeritis, non est hic: surrexit, sicut locutus est: praecedet vos in Galilaeam, ibi eum videbitis.
-V. Et valde mane una sabbatorum veniunt ad monumentum orto jam sole: et introeuntes viderunt juvenem sedentem in dextris, qui dixit illis:
-R. Jesum, quem quaeritis, non est hic: surrexit, sicut locutus est: praecedet vos in Galilaeam, ibi eum videbitis.
+@Tempora/Pasc0-1::s/[Aa]ll.*//g
 
 [Lectio2]
 !Cant 8:1-4
@@ -87,12 +83,7 @@ V. Recedentibus discipulis non recedebam, et amoris ejus igne succensa ardebam d
 R. Et dum flerem ad monumentum, vidi Dominum meum, alleluia.
 
 [Responsory2](rubrica 1960)
-R. Tulerunt Dominum meum, et nescio ubi posuerunt eum. Dicunt ei Angeli: Mulier quid ploras? surrexit, sicut dixit:
-* Praecedet vos in Galilaeam, ibi eum videbitis.
-V. Cum ergo fleret, inclinavit se, et prospexit in monumentum, et vidit duos Angelos in albis sedentes, qui dicunt ei:
-R. Praecedet vos in Galilaeam, ibi eum videbitis.
-&Gloria
-R. Praecedet vos in Galilaeam, ibi eum videbitis.
+@:Responsory3
 
 [Lectio3]
 !Cant 8:5-7
@@ -111,7 +102,7 @@ R. Praecedet vos in Galilaeam, ibi eum videbitis.
 [Lectio4]
 Sermo sancti Gregorii Papae.
 !Homilia 25. in Evang.
-Maria Magdalene, quae fuerat in civitate peccatrix, amando veritatem, lavit lacrimis maculas criminis: et vox Veritatis impletur, qua dicitur: Dimissa sunt ei peccata multa, quia dilexit multum. Quae enim prius frigida peccando remanserat, postmodum amando fortiter ardebat Quae a monumento Domini, etiam discipulis recedentibus, non recedebat: Exquirebat, quem non invenerat: flebat inquirendo, et amoris sui igne succensa ejus quem ablatum credidit, ardebat desiderio. Unde contigit, ut eum sola tunc videret, quae remanserat ut quaereret: quia nimirum virtus boni operis perseverantia est.
+Maria Magdalene, quae fuerat in civitate peccatrix, amando veritatem, lavit lacrimis maculas criminis: et vox Veritatis impletur, qua dicitur: Dimissa sunt ei peccata multa, quia dilexit multum. Quae enim prius frigida peccando remanserat, postmodum amando fortiter ardebat. Quae a monumento Domini, etiam discipulis recedentibus, non recedebat: Exquirebat, quem non invenerat: flebat inquirendo, et amoris sui igne succensa ejus quem ablatum credidit, ardebat desiderio. Unde contigit, ut eum sola tunc videret, quae remanserat ut quaereret: quia nimirum virtus boni operis perseverantia est.
 
 [Lectio5]
 Quaesivit ergo prius, et minime invenit: perseveravit ut quaereret, unde et contigit ut inveniret: actumque est, ut desideria dilata crescerent, et crescentia caperent quod invenissent. Hinc est enim, quod de eodem sponsa Ecclesia in Canticis canticorum dicit: In lectulo meo per noctes quaesivi quem diligit anima mea. Dilectum namque in lectulo quaerimus, quando in praesentis vitae aliquantula requie Redemptoris nostri desiderio suspiramus. Per noctem quaerimus: quia etsi jam in illo mens vigilat, tamen adhuc oculus caligat.
@@ -121,7 +112,7 @@ Sed qui dilectum suum non invenit, restat ut surgat, civitatem circumeat, id est
 
 [Lectio7]
 Lectio sancti Evangelii secundum Lucam.
-!Luc 7:36:50
+!Luc 7:36-50
 In illo tempore: Rogabat Jesum quidam de pharisaeis, ut manducaret cum illo. Et ingressus domum pharisaei discubuit. Et reliqua.
 _
 Homilia sancti Augustini Episcopi.
@@ -176,7 +167,5 @@ Maria * unxit pedes Jesu, et extersit capillis suis, et domus impleta est ex odo
 Mulier * quae erat in civitate peccatrix, attulit alabastrum unguenti, et stans retro secus pedes Domini, lacrimis coepit rigare pedes ejus, et capillis capitis sui tergebat.
 
 [Lectio94]
-Sermo sancti Gregórii Papæ 
-!Homilia 25. in Evang.
-María Magdaléne, quæ fúerat in civitáte peccátrix, amándo veritátem, lavit lácrimis máculas críminis: et vox Veritátis implétur, qua dícitur: Dimíssa sunt ei peccáta multa, quia diléxit multum. Quæ enim prius frígida peccándo remánserat, póstmodum amándo fórtiter ardébat. Quæ a monuménto Dómini, étiam discípulis recedéntibus, non recedébat. Exquirébat quem non invénerat; flebat inquiréndo, et amóris sui igne succénsa, ejus, quem ablátum crédidit, ardébat desidério. Unde cóntigit, ut eum sola tunc vidéret, quæ remánserat ut quæreret: quia nimírum virtus boni óperis perseverántia est.
+@:Lectio4
 &teDeum

@@ -1,0 +1,34 @@
+[Rank]
+Św. Ludwika Wyznawcy;;Semiduplex;;2;;vide C5
+
+[Rank1570]
+Św. Ludwika Wyznawcy;;Simplex;;1.1;;vide C5
+
+[RankTrident]
+Św. Ludwika Wyznawcy;;Duplex;;3;;vide C5
+
+[Rank1960]
+Św. Ludwika Wyznawcy;;Duplex;;3;;vide C5
+
+[RankNewcal]
+Św. Ludwika Wyznawcy;;Duplex optional;;2;;vide C5
+
+[Rule]
+vide C5;
+9 lectiones
+
+[Oratio]
+Boże, któryś błogosławionego Ludwika, Wyznawcę Twego, z królestwa ziemskiego do niebieskiego przeprowadził, prosimy Cię, przez jego zasługi i wstawiennictwo, abyś nas uczynił współdziedzicami Króla królów, Syna Twego, Jezusa Chrystusa.
+$Qui tecum
+
+[Lectio7]
+@Commune/C5:Lectio72
+
+[Lectio8]
+@Commune/C5:Lectio82
+
+[Lectio9]
+@Commune/C5:Lectio92
+
+[Lectio93]
+@Sancti/08-26:Lectio93

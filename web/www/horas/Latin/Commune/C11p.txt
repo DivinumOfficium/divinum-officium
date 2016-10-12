@@ -1,34 +1,7 @@
+@Commune/C11
+
 [Name]
 In Festis Beatae Mariae Virginis tempore Paschali
-
-[Rule]
-@Commune/C11:Rule
-
-[Ant Vespera]
-Dum esset Rex * in accubitu suo, nardus mea dedit odorem suavitatis. Alleluia.;;109
-Laeva ejus * sub capite meo, et dextera illius amplexabitur me. Alleluia.;;112
-Nigra sum, * sed formosa, filiae Jerusalem: ideo dilexit me Rex, et introduxit me in cubiculum suum. Alleluia.;;121
-Jam hiems transiit: * imber abiit, et recessit: surge amica mea, et veni. Alleluia.;;126
-Speciosa * facta es et suavis in deliciis tuis, sancta Dei Genitrix. Alleluia.;;147
-
-[Capitulum Vespera]
-@Commune/C11:Capitulum Vespera
-
-[Hymnus Vespera]
-@Commune/C11:Hymnus Vespera
-
-[Versum 1]
-V. Dignare me laudare te, Virgo sacrata. Alleluia.
-R. Da mihi virtutem contra hostes tuos. Alleluia.
-
-[Ant 1]
-Sancta Maria * succurre miseris, juva pusillanimes, refove flebiles, ora pro populo, interveni pro clero, intercede pro devoto femineo sexu: sentiant omnes tuum juvamen, quicumque celebrant tuam sanctam festivitatem. Alleluia.
-
-[Invit]
-Sancta Maria, Dei Genitrix Virgo, * Intercede pro nobis. Alleluia.
-
-[Hymnus Matutinum]
-@Commune/C11:Hymnus Matutinum
 
 [Ant Matutinum]
 Benedicta tu * in mulieribus, et benedictus fructus ventris tui. Alleluia.;;8
@@ -47,8 +20,6 @@ Post partum * Virgo inviolata permansisti, Dei Genitrix intercede pro nobis.;;97
 V. Elegit eam Deus, et praeelegit eam. Alleluia.
 R. In tabernaculo suo habitare facit eam. Alleluia.
 
-[Lectio1]
-@Commune/C11:Lectio1
 
 [Responsory1]
 R. Sancta et immaculata virginitas, quibus te laudibus efferam nescio:
@@ -56,18 +27,11 @@ R. Sancta et immaculata virginitas, quibus te laudibus efferam nescio:
 V. Benedicta tu in mulieribus, et benedictus fructus ventris tui.
 R. Quia quem caeli capere non poterant, tuo gremio contulisti. Alleluia.
 
-[Lectio2]
-!Prov 8:18-25
-@Commune/C11:Lectio2
-
 [Responsory2]
 R. Congratulamini mihi omnes, qui diligitis Dominum, quia cum essem parvula, placui Altissimo:
 * Et de meis visceribus genui Deum et hominem. Alleluia.
 V. Beatam me dicent omnes generationes, quia ancillam humilem respexit Deus.
 R. Et de meis visceribus genui Deum. Alleluia.
-
-[Lectio3]
-@Commune/C11:Lectio3
 
 [Responsory3]
 R. Beata es Virgo Maria, quae Dominum portasti, Creatorem mundi:
@@ -77,26 +41,17 @@ R. Genuisti qui te fecit, et in aeternum permanes Virgo. Alleluia.
 &Gloria
 R. Genuisti qui te fecit, et in aeternum permanes Virgo. Alleluia.
 
-[Lectio4]
-@Commune/C11:Lectio4
-
 [Responsory4]
 R. Sicut cedrus exaltata sum in Libano, et sicut cypressus in monte Sion: quasi myrrha electa,
 * Dedi suavitatem odoris. Alleluia.
 V. Et sicut cinnamomum et balsamum aromatizans.
 R. Dedi suavitatem odoris. Alleluia.
 
-[Lectio5]
-@Commune/C11:Lectio5
-
 [Responsory5]
 R. Quae est ista quae processit sicut sol, et formosa tamquam Jerusalem
 * Viderunt eam filiae Sion, et beatam dixerunt, et reginae laudaverunt eam. Alleluia.
 V. Et sicut dies verni circumdabant eam flores rosarum et lilia convallium.
 R. Viderunt eam filiae Sion, et beatam dixerunt, et reginae laudaverunt eam. Alleluia.
-
-[Lectio6]
-@Commune/C11:Lectio6
 
 [Responsory6]
 R. Ornatam monilibus filiam Jerusalem Dominus concupivit:
@@ -106,17 +61,11 @@ R. Et videntes eam filiae Sion, beatissimam praedicaverunt, dicentes: Alleluia.
 &Gloria
 R. Unguentum effusum nomen tuum. Alleluia.
 
-[Lectio7]
-@Commune/C11:Lectio7
-
 [Responsory7]
 R. Felix namque es, sacra Virgo Maria, et omni laude dignissima:
 * Quia ex te ortus est sol justitiae, Christus Deus noster. Alleluia.
 V. Ora pro populo, interveni pro clero, intercede pro devoto femineo sexu: sentiant omnes tuum juvamen, quicumque celebrant tuam sanctam festivitatem.
 R. Quia ex te ortus est sol justitiae, Christus Deus noster. Alleluia.
-
-[Lectio8]
-@Commune/C11:Lectio8
 
 [Responsory8]
 R. Beatam me dicent omnes generationes:
@@ -125,81 +74,3 @@ V. Et misericordia ejus a progenie in progenies timentibus eum.
 R. Quia fecit mihi Dominus magna qui potens est, et sanctum nomen ejus. Alleluia.
 &Gloria
 R. Quia fecit mihi Dominus magna qui potens est, et sanctum nomen ejus. Alleluia.
-
-[Lectio9]
-@Commune/C11:Lectio9
-
-[Ant Laudes]
-Dum esset Rex * in accubitu suo, nardus mea dedit odorem suavitatis. Alleluia.
-Laeva ejus * sub capite meo, et dextera illius amplexabitur me. Alleluia.
-Nigra sum, * sed formosa, filiae Jerusalem: ideo dilexit me Rex, et introduxit me in cubiculum suum. Alleluia.
-Jam hiems transiit, * imber abiit, et recessit: surge amica mea, et veni. Alleluia.
-Speciosa * facta es et suavis in deliciis tuis, sancta Dei Genitrix. Alleluia.
-
-[Capitulum Laudes]
-@Commune/C11:Capitulum Vespera
-
-[Hymnus Laudes]
-@Commune/C11:Hymnus Laudes
-
-[Versum 2]
-V. Diffusa est gratia in labiis tuis. Alleluia.
-R. Propterea benedixit te Deus in aeternum. Alleluia.
-
-[Ant 2]
-@Commune/C11:Ant 2
-
-[Oratio]
-@Commune/C11:Oratio
-
-[Lectio Prima]
-@Commune/C11:Lectio Prima
-
-[Capitulum Tertia]
-@Commune/C11:Capitulum Vespera
-
-[Responsory Tertia]
-R.br. Specie tua et pulchritudine tua, * alleluia, alleluia.
-R. Specie tua et pulchritudine tua, * alleluia, alleluia.
-V. Intende, prospere procede, et regna.
-R. Alleluia, alleluia.  
-&Gloria
-R. Specie tua et pulchritudine tua, * alleluia, alleluia.
-_
-V. Adjuvabit eam Deus vultu suo, alleluia.
-R. Deus in medio ejus, non commovebitur, alleluia.
-
-[Capitulum Sexta]
-@Commune/C11:Capitulum Sexta
-
-[Responsory Sexta]
-R.br. Adjuvabit eam Deus vultu suo, * alleluia, alleluia.
-R. Adjuvabit eam Deus vultu suo, * alleluia, alleluia.
-V. Deus in medio ejus, non commovebitur.
-R. Alleluia, alleluia.  
-&Gloria
-R. Adjuvabit eam Deus vultu suo, * alleluia, alleluia.
-_
-V. Elegit eam Deus, et praeelegit eam, alleluia.
-R. In tabernaculo suo habitare facit eam, alleluia.
-
-[Capitulum Nona]
-@Commune/C11:Lectio Prima
-$Deo gratias.
-
-[Responsory Nona]
-R.br. Elegit eam Deus, et praeelegit eam, * alleluia, alleluia.
-R. Elegit eam Deus, et praeelegit eam, * alleluia, alleluia.
-V. In tabernaculo suo habitare facit eam.
-R. Alleluia, alleluia.  
-&Gloria
-R. Elegit eam Deus, et praeelegit eam, * alleluia, alleluia.
-_
-V. Diffusa est gratia in labiis tuis, alleluia.
-R. Propterea benedixit te Deus in aeternum, alleluia.
-
-[Versum 3]
-@:Versum 1
-
-[Ant 3]
-Beatam me dicent * omnes generationes quia ancillam humilem respexit Deus, alleluia.

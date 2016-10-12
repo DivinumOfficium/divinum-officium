@@ -24,14 +24,13 @@ $Deo gratias
 @Commune/C4:Hymnus Vespera
 
 [Versum 1]
-V. Amávit eum Dóminus, et ornávit eum.
-R. Stolam glóriæ índuit eum.
+@Commune/C4
 
 [Ant 1]
 Similabo eum * viro sapienti, qui ædificávit domum suam supra petram.
 
 [Invit]
-Regem Confessórum Dóminum, * Veníte adorémus.
+@Commune/C4
 
 [Hymnus Matutinum]
 @Commune/C4:Hymnus Vespera
@@ -65,10 +64,7 @@ De libro Ecclesiástici
 11 ídeo stabilita sunt bona illíus in Dómino, et eleemósynas illíus enarrabit omnis ecclésia sanctórum.
 
 [Responsory1]
-R. Euge, serve bone et fidélis, quia in pauca fuísti fidélis, supra multa te constituam:
-* Intra in gáudium Dómini tui.
-V. Dómine, quinque talenta tradidisti mihi, ecce ália quinque superlucratus sum.
-R. Intra in gáudium Dómini tui.
+@Commune/C4
 
 [Lectio2]
 !Sir 32:18-20; 32:28; 33:1-3
@@ -154,12 +150,7 @@ R. Ipse intercedat pro peccátis ómnium populórum.
 Duo autem sunt, quæ jubentur, et lumbos restringere, et lucernas tenere: ut et munditia sit castitátis in córpore, et lumen veritátis in operatióne. Redemptori étenim nostro unum sine áltero placére nequáquam potest: si aut is qui bona agit, adhuc luxuriæ inquinamenta non déserit: aut is qui castitate præeminet, necdum se per bona ópera exercet. Nec castitas ergo magna est sine bono ópere, nec opus bonum est aliquod sine castitate. Sed et si utrúmque agitur, restat, ut quisquis ille est, spe ad supérnam pátriam tendat, et nequáquam se a vítiis pro mundi hujus honestate contineat.
 
 [Responsory8]
-R. Sint lumbi vestri præcincti, et lucernæ ardentes in mánibus vestris:
-* Et vos símiles homínibus exspectantibus dóminum suum, quando revertatur a núptiis.
-V. Vigiláte ergo, quia nescitis qua hora Dóminus vester ventúrus sit.
-R. Et vos símiles homínibus exspectantibus dóminum suum, quando revertatur a núptiis.
-&Gloria
-R. Et vos símiles homínibus exspectantibus dóminum suum, quando revertatur a núptiis.
+@Commune/C4
 
 [Lectio9]
 Et vos símiles homínibus exspectantibus dóminum suum, quando revertatur a núptiis: ut cum vénerit et pulsaverit, conféstim aperiant ei. Venit quippe Dóminus, cum ad judícium properat: pulsat vero, cum jam per ægritudinis molestias esse mortem vicinam designat. Cui conféstim aperimus, si hunc cum amóre suscipimus. Aperire enim judici pulsanti non vult, qui exíre de córpore trépidat: et vidére eum, quem contempsisse se meminit, júdicem formidat. Qui autem de sua spe et operatióne secúrus est, pulsanti conféstim aperit, quia lætus júdicem sústinet; et, cum tempus propinquæ mortis advénerit, de glória retributionis hilarescit.
@@ -173,9 +164,7 @@ Beátus ille servus, * quem, cum vénerit Dóminus ejus et pulsaverit jánuam, invén
 Serve bone * et fidélis, intra in gáudium Dómini tui.
 
 [Capitulum Laudes]
-!Sir 31:8-9
-v. Beátus vir, qui invéntus est sine mácula, et qui post aurum non ábiit, nec sperávit in pecúnia et thesáuris. Quis est hic, et laudabimus eum? fecit enim mirabília in vita sua.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 {:H-Jesucoronacelsior:}v. Jesu, coróna celsior,
@@ -220,8 +209,7 @@ Per omne semper sæculum,
 Amen.
 
 [Versum 2]
-V. Justum dedúxit Dóminus per vias rectas.
-R. Et osténdit illi regnum Dei.
+@Commune/C4
 
 [Ant 2]
 Euge, serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constituam, intra in gáudium Dómini tui.
@@ -230,14 +218,16 @@ Euge, serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te cons
 Deus, qui nos beáti N. Confessóris tui ánnua solemnitáte lætíficas: concéde propítius; ut cujus natalítia cólimus, étiam actiónes imitémur.
 $Per Dominum.
 
+[Oratio1]
+Intercéssio nos, quaesumus, Dómine, beáti N. Abbátis comméndet: ut, quod nostris méritis non valémus, ejus patrocínio assequámur.
+$Per Dominum.
+
 [Lectio Prima]
 !Sap 10:10
 v. Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum: honestavit illum in labóribus, et complevit labóres illíus.
 
 [Capitulum Tertia]
-!Sir 31:8-9
-v. Beátus vir, qui invéntus est sine mácula, et qui post aurum non ábiit, nec sperávit in pecúnia et thesáuris. Quis est hic, et laudabimus eum? fecit enim mirabília in vita sua.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Amávit eum Dóminus, * Et ornávit eum.
@@ -267,8 +257,7 @@ V. Lex Dei ejus in corde ipsíus.
 R. Et non supplantabúntur gressus ejus.
 
 [Capitulum Nona]
-!Sap 10:10
-v. Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum: honestavit illum in labóribus, et complevit labóres illíus.
+@:Lectio Prima
 $Deo gratias
 
 [Responsory Nona]
@@ -283,8 +272,7 @@ V. Justum dedúxit Dóminus per vias rectas.
 R. Et osténdit illi regnum Dei.
 
 [Versum 3]
-V. Justum dedúxit Dóminus per vias rectas.
-R. Et osténdit illi regnum Dei.
+@:Versum 2
 
 [Ant 3]
 Hic vir despiciens mundum * et terréna, triúmphans, divítias cælo cóndidit ore, manu.
