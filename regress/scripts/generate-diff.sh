@@ -53,12 +53,15 @@ run_single_test() {
   local date="$4"
   local hour="$5"
 
+  local version
+  version="$(long_version "${short_version}")" || die 'Failed to set version.'
+
   local output_dir="${output_tree}/${short_version}/${date}"
   mkdir -p "${output_dir}"
 
   # Run the script and store its output, stripping off the cookie.
   perl "${test_tree}/$(office_script_path "${hour}")" \
-    "version=$(long_version "${short_version}")" \
+    "version=${version}" \
     "command=$(hour_command "${hour}")" \
     "date=${date}" | \
     grep -Pv '^Set-Cookie:' > \
@@ -78,12 +81,13 @@ gen_output_tree() {
 run_test() {
   local ref="$1"
   local dates="$2"
+  local versions="$3"
   local test_tree="${tempdir}/${treedir}/${ref}"
   local output_tree="$(gen_output_tree "${ref}")"
 
   for date in ${dates}; do
     for hour in Matutinum Vespera SanctaMissa; do
-      for short_version in Divino 1960; do
+      for short_version in ${versions}; do
         run_single_test \
           "${test_tree}" \
           "${output_tree}" \
@@ -104,7 +108,7 @@ main() {
   scriptname=$(basename "$0")
   scriptdir=$(dirname "$0")
 
-  [ $# -eq 3 ] || usage
+  [ $# -ge 3 ] || usage
 
   local reporoot=$(git rev-parse --show-toplevel)
   local base_ref=$(git rev-parse --verify "$1")
@@ -113,6 +117,10 @@ main() {
   # The testspec lists date-ranges to test.  N.B.: We read this file only once
   # so that we don't break shell process substitution.
   local testspec="$3"
+
+  shift 3
+  local versions="$*";
+  [ -n "${versions}" ] || versions="Divino 1960"
 
   # Generate all the dates for the test.
   local dates="$(expand_dates "${testspec}")"
@@ -124,8 +132,8 @@ main() {
 
   # Run test against each tree.
   echo 'Testing...'
-  run_test "${base_ref}" "${dates}"
-  run_test "${test_ref}" "${dates}"
+  run_test "${base_ref}" "${dates}" "${versions}"
+  run_test "${test_ref}" "${dates}" "${versions}"
 
   # Generate diff.
   echo 'Diffing...'
