@@ -77,11 +77,10 @@ gen_output_tree() {
 
 run_test() {
   local ref="$1"
-  local testspec="$2"
+  local dates="$2"
   local test_tree="${tempdir}/${treedir}/${ref}"
   local output_tree="$(gen_output_tree "${ref}")"
 
-  dates="$(expand_dates "${testspec}")"
   for date in ${dates}; do
     for hour in Matutinum Vespera SanctaMissa; do
       for short_version in Divino 1960; do
@@ -110,7 +109,13 @@ main() {
   local reporoot=$(git rev-parse --show-toplevel)
   local base_ref=$(git rev-parse --verify "$1")
   local test_ref=$(git rev-parse --verify "$2")
+
+  # The testspec lists date-ranges to test.  N.B.: We read this file only once
+  # so that we don't break shell process substitution.
   local testspec="$3"
+
+  # Generate all the dates for the test.
+  local dates="$(expand_dates "${testspec}")"
 
   # Export the two test trees.
   echo 'Exporting...'
@@ -119,8 +124,8 @@ main() {
 
   # Run test against each tree.
   echo 'Testing...'
-  run_test "${base_ref}" "${testspec}"
-  run_test "${test_ref}" "${testspec}"
+  run_test "${base_ref}" "${dates}"
+  run_test "${test_ref}" "${dates}"
 
   # Generate diff.
   echo 'Diffing...'
