@@ -10,6 +10,11 @@ branches:
     - calcalc
     - master
 
+env:
+  - VERSION=1960
+  - VERSION=Divino
+  - VERSION=1570
+
 notifications:
   email:
     recipients:
