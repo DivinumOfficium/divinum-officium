@@ -85,7 +85,17 @@ run_test() {
   local test_tree="${tempdir}/${treedir}/${ref}"
   local output_tree="$(gen_output_tree "${ref}")"
 
-  for hour in Matutinum Vespera SanctaMissa; do
+  for hour in \
+    Matutinum    \
+    Laudes       \
+    Prima        \
+    Tertia       \
+    SanctaMissa  \
+    Sexta        \
+    Nona         \
+    Vespera      \
+    Completorium
+  do
     # Travis fails the build if it's quiet for too long, so print a heartbeat.
     echo -n "${hour}.."
     for date in ${dates}; do
