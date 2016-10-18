@@ -139,11 +139,13 @@ main() {
   run_test "${base_ref}" "${dates}" "${versions}"
   run_test "${test_ref}" "${dates}" "${versions}"
 
-  # Generate diff.
+  # Generate diff.  git-diff with the (implied) --no-index option has an exit
+  # code of 1 both when there are differences and when there are errors, so
+  # there's nothing for it but to swallow the exit code.
   echo 'Diffing...'
   git diff -p --stat \
     "$(gen_output_tree "${base_ref}")" \
-    "$(gen_output_tree "${test_ref}")"
+    "$(gen_output_tree "${test_ref}")" || true
 }
 
 tempdir=$(mktemp -d) || die 'Failed to create temporary directory.'
