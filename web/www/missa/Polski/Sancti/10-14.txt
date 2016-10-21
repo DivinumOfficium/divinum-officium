@@ -1,0 +1,48 @@
+[Rank]
+S. Callisti Papae et Martyris;;Duplex;;3;;vide C4b
+
+[Rank1570]
+S. Callisti Papae et Martyris;;Semiduplex;;2;;vide C3
+
+[RankNewcal]
+S. Callisti Papae et Martyris;;Duplex optional;;2;;vide C4b
+
+[Rule]
+vide C4b;
+Gloria
+
+[Comment]
+# 14 X – Św. Kaliksta, papieża i męczennika
+! 3 klasy
+! Szaty czerwone
+Św. Kalikst pochodził z rodziny niewolniczej. Jako archidiakon papieża uporządkował katakumby przy drodze Appijskiej, później jako papież znacznie rozszerzył ten cmentarz, który nosi odtąd jego imie. Św. Kalikst został papieżem w roku 217 i rządził Kościołem do roku 222. Umożliwił pokutę kościelną i otrzymanie rozgrzeszenia tym grzesznikom, których dawniej wykluczano od pokuty kościelnej, zostawiając ich sądowi Bożemu.
+
+[Introitus]
+@Commune/C4b:Introitus
+
+[Oratio]
+Boże, który widzisz, że upadamy wskutek swojej ułomności, odnów w nas litościwie miłość ku Tobie przez przykłady Twoich Świętych.
+$Per Dominum
+
+[Lectio]
+@Commune/C4b:Lectio
+
+[Graduale]
+@Commune/C4b:Graduale
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+Panie, niech nas wspomaga ta tajemnicza ofiara, niech nas wyzwoli od naszych przewinień i zapewni nam wieczne zbawienie.
+$Per Dominum
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+Prosimy Cię, Panie, rządź miłościwie Twoim Kościołem, krzepionym przez święty pokarm, aby pod Twoim możnym panowaniem rosła wolność Kościoła, a związek jego z Tobą trwał niezachwiany.
+$Per Dominum
