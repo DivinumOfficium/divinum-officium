@@ -124,7 +124,7 @@ O jakże szczęśliwa Maryja, której ani pokory nie brakło, ani dziewictwa! I 
 &teDeum
 
 [Ant Laudes]
-@:Ant Vespera:s/;;.*//gs
+@:Ant Vespera:s/;;.*//gm
 
 [Capitulum Laudes]
 @:Capitulum Vespera
@@ -145,7 +145,7 @@ Na upadłych potomków Adama;
 Przez Ciebie uproszony
 Niechaj Syn składa gniew karzący.
 _
-@Pslaterium/Doxologies:Nat
+@Psalterium/Doxologies:Nat
 
 [Versum 2]
 V. Zakwitła różdżka Jessego: wyszła gwiazda z Jakóba.
