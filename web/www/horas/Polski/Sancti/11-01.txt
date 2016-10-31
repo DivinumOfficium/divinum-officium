@@ -1,5 +1,5 @@
 [Rank]
-Omnium Sanctorum;;Duplex I classis cum octava communi;;6.4;;
+Wszystkich Świętych;;Duplex I classis cum octava communi;;6.4;;
 
 [Rule]
 9 lectiones
@@ -58,38 +58,6 @@ I Duchem Pocieszycielem
 Dziś i na wieki wieków.
 Amen.
 
-[HymnusM Vespera]
-{:H-PlacareChriste:}v. Christe, redémptor ómnium,
-consérva tuos fámulos,
-beátæ semper Vírginis
-placátus sanctis précibus.
-_
-Beáta quoque ágmina
-cæléstium spirítuum,
-prætérita, præséntia,
-futúra mala péllite.
-_
-Vates ætérni iúdicis
-apostolíque Dómini,
-supplíciter expóscimus
-salvári vestris précibus.
-_
-Mártyres Dei íncliti
-conféssorésque lúcidi,
-vestris oratiónibus
-nos ferte in cæléstibus.
-_
-Chori sanctárum vírginum
-monachorúmque ómnium,
-simul cum sanctis ómnibus
-consórtes Christi fácite.
-_
-Sit Trinitáti glória,
-vestrásque voces iúngite
-ut illi laudes débitas
-persolvámus alácriter.
-Amen.
-
 [Versum 1]
 V. Weselcie się w Panu o radujcie, sprawiedliwi.
 R. Wysławiajcie Go, wszyscy prawego serca.
@@ -99,11 +67,7 @@ Aniołowie, Archaniołowie, Trony i Panowania, Księstwa, Władze i Moce niebies
 
 [Oratio]
 Wszechmogący i wieczny Boże, który nam dozwalasz jedną uroczystością czcić zasługi wszystkich Świętych Twoich, daj nam, pokornie prosimy, dostąpić łask tem obfitszych, im liczniejszych do miłosierdzia Twego wzywamy pośredników.
-
 $Per Dominum
-
-[Invit]
-Regem regum Dóminum veníte adorémus: * Quia ipse est coróna Sanctórum ómnium.
 
 [Hymnus Matutinum]
 @Sancti/11-01:Hymnus Vespera
@@ -111,237 +75,147 @@ Regem regum Dóminum veníte adorémus: * Quia ipse est coróna Sanctórum ómni
 [HymnusM Matutinum]
 @Sancti/11-01:HymnusM Vespera
 
-[Ant Matutinum]
-Novit Dóminus * viam justórum, qui in lege ejus meditántur die ac nocte.;;1
-Mirificávit * Dóminus Sanctos suos, et exaudívit eos clamantes ad se.;;4
-Admirábile est * nomen tuum, Dómine: quia glória et honóre coronásti Sanctos tuos, et constituísti eos super ópera mánuum tuárum.;;8
-V. Lætámini in Dómino, et exsultáte justi.
-R. Et gloriámini omnes recti corde.
-Dómine, * qui operati sunt justítiam, habitábunt in tabernáculo tuo, et requiescent in monte sancto tuo.;;14
-Hæc est generátio * quæréntium Dóminum, quæréntium fáciem Dei Jacob.;;23
-Lætámini in Dómino, * et exsultáte justi, et gloriámini omnes recti corde.;;31
-V. Exsúltent justi in conspéctu Dei.
-R. Et delecténtur in lætítia.
-Timéte Dóminum * omnes Sancti ejus, quóniam nihil deest timéntibus eum: ecce óculi Dómini super justos, et aures ejus ad preces eórum.;;33
-Dómine, spes Sanctórum * et turris fortitúdinis eórum, dedísti hereditátem timéntibus nomen tuum, et habitábunt in tabernáculo tuo in sæcula.;;60
-Qui dilígitis Dóminum, * lætámini in Dómino, et confitémini memóriæ sanctitátis ejus.;;96
-V. Justi autem in perpétuum vivent.
-R. Et apud Dóminum est merces eórum.
-
 [Lectio1]
-De libro Apocalypsis beáti Joánnis Apóstoli.
-!Apo 4:2-8
-2 Et ecce sedes pósita erat in cælo, et supra sedem sedens.
-3 Et qui sedebat símilis erat aspectui lapidis jaspidis, et sardinis: et iris erat in circúitu sedis símilis visioni smaragdinæ.
-4 Et in circúitu sedis sedilia vigínti quátuor: et super thronos vigínti quátuor seniores sedéntes, circumamicti vestiméntis albis, et in capítibus eórum corónæ aureæ.
-5 Et de throno procedebant fúlgura, et voces, et tonitrua: et septem lampades ardentes ante thronum, qui sunt septem spíritus Dei.
-6 Et in conspéctu sedis tamquam mare vitreum simile crystallo: et in médio sedis, et in circúitu sedis quátuor animália plena óculis ante et retro.
-7 Et ánimal primum simile leoni, et secúndum ánimal simile vitulo, et tértium ánimal habens fáciem quasi hóminis, et quartum ánimal simile áquilæ volanti.
-8 Et quátuor animália, síngula eórum habébant alas senas: et in circúitu, et intus plena sunt óculis: et réquiem non habébant die ac nocte, dicentia: Sanctus, Sanctus, Sanctus Dóminus Deus omnípotens, qui erat, et qui est, et qui ventúrus est.
+Z Księgi Apokalipsy św. Jana Apostoła
+!Ap 4:2-8
+2 Natychmiast byłem w duchu: a oto stolica postawiona była w niebie, a na stolicy siedzący.
+3 A który siedział, był podobny pojrzeniu kamienia Jaspisa i Sardyna; a tęcza była około stolice podobna pojrzeniu szmaragdowemu.
+4 A około stolice stolic dwadzieścia i cztery: a na stolicach dwadzieścia i czterech starszych siedzących, obleczonych w szaty białe, a na głowiech ich korony złote.
+5 A z stolice wychodziły błyskawice i głosy i gromy: a siedm lamp gorejących przed stolicą, które są siedm duchów Bożych.
+6 A przed stolicą jako morze szklane podobne kryształowi: a w pośrodku stolice i około stolice czworo zwierząt pełnych oczu z przodku i z tyłu.
+7 A zwierzę pierwsze podobne lwowi, a wtóre zwierzę podobne cielcowi, a trzecie zwierzę, mające oblicze jako człowieka, a czwarte zwierzę podobne orłowi latającemu.
+8 A czworo zwierząt, każde z nich, miało po sześć skrzydeł w koło, i wewnątrz pełne są oczu a odpoczynku nie miały we dnie i w nocy, mówiąc: Święty, Święty, Święty Pan Bóg Wszechmogący, który był, i który jest, i który ma przyjść.
 
 [Responsory1]
-R. Vidi Dóminum sedentem super sólium excélsum et elevátum et plena erat omnis terra majestáte ejus:
-* Et ea quæ sub ipso erant, replebant templum.
-V. Séraphim stabant super illud: sex alæ uni, et sex alæ álteri.
-R. Et ea quæ sub ipso erant, replebant templum.
+@Tempora/Pent01-0
 
 [Lectio2]
-!Apo 5:1-8
-1 Et vidi in déxtera sedentis supra thronum, librum scriptum intus et foris, signátum sigillis septem.
-2 Et vidi angelum fortem, prædicantem voce magna: Quis est dignus aperire librum, et sólvere signácula ejus?
-3 Et nemo póterat neque in cælo, neque in terra, neque subtus terram aperire librum, neque respicere illum.
-4 Et ego flebam multum, quóniam nemo dignus invéntus est aperire librum, nec vidére eum.
-5 Et unus de senioribus dixit mihi: Ne fleveris: ecce vicit leo de tribu Juda, radix David, aperire librum, et sólvere septem signácula ejus.
-6 Et vidi: et ecce in médio throni et quátuor animalium, et in médio seniórum, Agnum stantem tamquam occisum, habentem córnua septem, et óculos septem: qui sunt septem spíritus Dei, missi in omnem terram.
-7 Et venit: et accépit de déxtera sedentis in throno librum.
-8 Et cum aperuisset librum, quátuor animália, et vigínti quátuor seniores cecidérunt coram Agno, habéntes sínguli citharas, et phialas aureas plenas odoramentorum, quæ sunt orationes sanctórum:
+!Ap 5:1-8
+1 I widziałem w prawéj ręce siedzącego na stolicy księgi napisane wewnątrz i zewnątrz, zapieczętowane siedmią pieczęci.
+2 I widziałem Anioła mocnego, głosem wielkim obwoływającego: Kto jest godzien otworzyć księgi i rozwiązać pieczęci ich?
+3 A żaden nie mógł ani w niebie, ani na ziemi, ani pod ziemią otworzyć ksiąg, ani na nie patrzyć.
+4 A jam wielce płakał, iż żaden nie był nalezion godny otworzyć księgi, ani na nie patrzyć.
+5 A jeden ze starszych rzekł mi: Nie płacz! oto zwyciężył lew z pokolenia Judowego, korzeń Dawidów, aby otworzył księgi i rozwiązał siedm ich pieczęci.
+6 I widziałem, a oto w pośród stolice i czworga zwierząt i w pośrodku starszych, Baranek stojący jako zabity, mający siedm rogów i oczy siedm, które są siedm duchów Bożych, posłanych na wszystką ziemię.
+7 I przyszedł, i wziął księgi z prawice siedzącego na stolicy.
+8 A gdy otworzył księgi, czworo zwierząt i czteréj a dwadzieścia starsi upadli przed Barankiem, mający każdy cytry i czasze złote pełne wonności, które są modlitwy świętych.
 
 [Responsory2]
-R. Beáta es Virgo María, Dei Génitrix quæ credidísti Dómino; perfécta sunt in te quæ dicta sunt tibi: ecce exaltata es super choros Angelórum:
-* Intercede pro nobis ad Dóminum Deum nóstrum.
-V. Ave María, grátia plena, Dóminus tecum.
-R. Intercede pro nobis ad Dóminum Deum nóstrum.
+@Sancti/08-15:Responsory8:s/&Gloria.*//s
 
 [Lectio3]
-!Apo 5:9-14
-9 et cantabant cánticum novum, dicéntes: Dignus es, Dómine, accípere librum, et aperire signácula ejus: quóniam occísus es, et redemísti nos Deo in sánguine tuo ex omni tribu, et lingua, et pópulo, et natióne:
-10 et fecísti nos Deo nostro regnum, et sacerdótes: et regnabimus super terram.
-11 Et vidi, et audívi vocem angelórum multórum in circúitu throni, et animalium, et seniórum: et erat númerus eórum míllia millium,
-12 dicéntium voce magna: Dignus est Agnus, qui occísus est, accípere virtútem, et divinitátem, et sapiéntiam, et fortitúdinem, et honórem, et glóriam, et benedictiónem.
-13 Et omnem creatúram, quæ in cælo est, et super terram, et sub terra, et quæ sunt in mari, et quæ in eo: omnes audívi dicéntes: Sedenti in throno, et Agno, benedíctio et honor, et glória, et potéstas in sæcula sæculórum.
-14 Et quátuor animália dicebant: Amen. Et vigínti quátuor seniores cecidérunt in fácies suas: et adoravérunt viventem in sæcula sæculórum.
+!Ap 5:9-14
+9 I śpiewali nową pieśń, mówiąc: Godzieneś jest, Panie! wziąć księgi i otworzyć pieczęci ich, iżeś jest zabit, i odkupiłeś nas Bogu przez krew twoję ze wszelakiego pokolenia i języka i ludu i narodu:
+10 I uczyniłeś nas Bogu naszemu królestwem i kapłanami, i będziemy królować na ziemi.
+11 I widziałem i słyszałem głos wielu Aniołów około stolice i zwierząt i starszych, a była liczba ich tysiące tysiąców,
+12 Mówiących głosem wielkim: Godzien jest Baranek, który jest zabity, wziąć moc i bóstwo i mądrość i siłę i cześć i chwałę i błogosławieństwo.
+13 A wszelkie stworzenie, które jest na niebie i na ziemi i pod ziemią, i co w morzu jest, i co w nich wszystkie słyszałem mówiące: Siedzącemu na stolicy i Barankowi błogosławieństwo i cześć i chwała i moc na wieki wieków.
+14 A czworo zwierząt mówiło: Amen. A dwadzieścia i czteréj starsi upadli na oblicze swoje i kłaniali się żywiącemu na wieki wieków.
 
 [Responsory3]
-R. In conspéctu Angelórum psallam tibi:
-* Et adorábo ad templum sanctum tuum, et confitébor nómini tuo, Dómine.
-V. Super misericórdia tua et veritáte tua, quóniam magnificásti super nos nomen sanctum tuum.
-R. Et adorábo ad templum sanctum tuum, et confitébor nómini tuo, Dómine.
+R. Przed oblicznością Aniołów będęć śpiewał:
+* Będę się kłaniał ku kościołowi twemu świętemu, i będę wyznawał imieniowi twojemu.
+V. Dla miłosierdzia twego i dla prawdy twojéj: boś uwielbił nade wszystko święte imię twoje.
+R. Będę się kłaniał ku kościołowi twemu świętemu, i będę wyznawał imieniowi twojemu.
 &Gloria
-R. Et adorábo ad templum sanctum tuum, et confitébor nómini tuo, Dómine.
-
-[Lectio4]
-Sermo sancti Bedæ Venerábilis Presbyteri.
-!Sermo 18. de Sanctis.
-Hódie, dilectíssimi, ómnium Sanctórum sub una solemnitátis lætítia celebrámus festivitátem: quorum societáte cælum exsultat, quorum patrocíniis terra lætátur, triumphis Ecclésia sancta coronátur, quorum conféssio quanto in passióne fortior, tanto est clárior in honóre: quia, dum crevit pugna, crevit et pugnantium glória, et martyrii triumphus multiplici passiónum génere adornatur: perque graviora torménta, graviora fuére et præmia: dum cathólica mater Ecclésia, quæ per totum orbem lónge latéque diffúsa est, in ipso cápite suo Christo Jesu educta est, contumélias, cruces et mortem non timére; magis magísque roborata, non resistendo, sed perferendo, univérsis, quos agmine inclyto carcer pnalis inclusit, pari et símili calóre virtútis ad gerendum certámen, glóriam triumphalem inspiravit.
-
-[Responsory4]
-R. Præcursor Dómini venit, de quo ipse testátur:
-* Nullus major inter natos mulierum Joánne Baptísta.
-V. Hic est enim prophéta, et plus quam prophéta, de quo Salvátor ait.
-R. Nullus major inter natos mulierum Joánne Baptísta.
-
-[Lectio5]
-O vere beáta mater Ecclésia, quam sic honor divínæ dignationis illúminat, quam vincentium gloriósus Mártyrum sanguis exornat, quam inviolatæ confessiónis cándida índuit virgínitas! Floribus ejus nec rosæ nec lília desunt. Certent nunc caríssimi, sínguli, ut ad utrosque honóres amplissimam accipiant dignitátem, coronas, vel de virginitáte candidas, vel de passióne purpureas. In cæléstibus castris pax et acies habent flores suos, quibus mílites Christi coronantur.
-
-[Responsory5]
-R. Isti sunt qui vivéntes in carne, plantavérunt Ecclésiam sánguine suo:
-* Cálicem Dómini biberunt, et amíci Dei facti sunt.
-V. In omnem terram exívit sonus eórum, et in fines orbis terræ verba eórum.
-R. Cálicem Dómini biberunt, et amíci Dei facti sunt.
-
-[Lectio6]
-Dei enim ineffábilis et imménsa bonitas étiam hoc provídit, ut laborum quidem tempus et agonis non extenderet, nec longum fáceret, aut ætérnum, sed breve, et ut ita dicam, momentaneum: ut in hac brevi et exígua vita agónes essent et labóres; in illa vero quæ ætérna est, corónæ et præmia meritórum: ut labóres quidem cito finirentur, meritórum vero præmia sine fine durarent: ut post hujus mundi ténebras visuri essent candidissimam lucem, et accepturi majórem passiónum cunctarum acerbitatibus beatitudinem, testante hoc idem Apóstolo, ubi ait: Non sunt condignæ passiónes hujus témporis ad superventuram glóriam, quæ revelabitur in nobis.
-
-[Responsory6]
-R. Sancti mei, qui in carne pósiti, certámen habuistis:
-* Mercédem labóris ego reddam vobis.
-V. Veníte benedícti Pátris mei, percípite regnum.
-R. Mercédem labóris ego reddam vobis.
-&Gloria
-R. Mercédem labóris ego reddam vobis.
+R. Będę się kłaniał ku kościołowi twemu świętemu, i będę wyznawał imieniowi twojemu.
 
 [Lectio7]
-Léctio sancti Evangélii secúndum Matthæum.
-!Matt 5:1-12
-In illo témpore: Videns Jesus turbas, ascéndit in montem, et cum sedisset, accesserunt ad eum discipuli ejus. Et réliqua.
+Czytanie Ewangelii świętej według Mateusza
+!Mt 5:1-12
+Onego czasu: Jezus, widząc rzesze, wstąpił na górę i gdy usiadł, przystąpili ku Niemu uczniowie Jego. I tak dalej.
 _
-Homilía sancti Augustíni Epíscopi.
-!Lib. 1. de Sermone Domini in monte, sub initium.
-Si quæritur quid significet mons, bene intellígitur significáre majóra præcépta justítiæ, quia minora erant, quæ Judæis data sunt. Unus tamen Deus per sanctos prophetas et fámulos suos, secúndum ordinatissimam distributionem témporum, dedit minora præcépta pópulo, quem adhuc timóre alligari oportébat: et per Fílium suum majóra pópulo, quem caritáte jam liberari convenerat. Cum autem minora minóribus, majóra majóribus dantur, ab eo dantur, qui solus novit congruentem suis tempóribus géneri humáno exhibere medicinam.
+Homilia świętego Augustyna, Biskupa
+!Księga 1. o Kazaniu Pana na górze, przy początku
+Jeśli się ktoś pyta, co oznacza góra, to słusznie uważa się, że oznacza ona wyższe przykazania sprawiedliwości, ponieważ niższe były te, które Bóg nadał Żydom. Jednakże ten sam Bóg, zgodnie z doskonale uporządkowanym podziałem czasu, za pośrednictwem świętych Proroków i kapłanów swoich dał niższe przykazania ludowi, który do czasu należało strachem okiełznywać; natomiast ludowi, którego wypadało już miłością wyzwolić, dał Bóg przez Syna swego wyższe przykazania. A chociaż mniejsze daje się mniejszym, a większe większym, to wszystkich udziela Ten, który sam jeden wie, jakie skuteczne lekarstwo podać w odpowiednim czasie rodzajowi ludzkiemu.
 
 [Responsory7]
-R. Sint lumbi vestri præcincti, et lucernæ ardentes in mánibus vestris:
-* Et vos símiles homínibus exspectantibus dóminum suum, quando revertatur a núptiis.
-V. Vigiláte ergo, quia nescitis qua hora Dóminus vester ventúrus sit.
-R. Et vos símiles homínibus exspectantibus dóminum suum, quando revertatur a núptiis.
+R. Niechaj biodra wasze będą przepasane i pochodnie gorejące w rękach waszych.
+* A sami bądźcie podobni do ludzi oczekujących powrotu pana swego z godów weselnych.
+V. Czuwajcie tedy, bo nie wiecie, o której godzinie przybędzie Pan wasz.
+R. A sami bądźcie podobni do ludzi oczekujących powrotu pana swego z godów weselnych.
 
 [Lectio8]
-Nec mirum est, quod dantur præcépta majóra propter regnum cælórum, et minora data sunt propter regnum terrénum, ab eódem uno Deo, qui fecit cælum et terram. De hac ergo justítia, quæ major est, per prophétam dícitur: Justítia tua sicut montes Dei: et hoc bene significat, quod ab uno magístro, solo docendis tantis rebus idoneo, docetur in monte. Sedens autem docet, quod pértinet ad dignitátem magistérii. Et accedunt ad eum discipuli ejus, ut audiéndis illíus verbis hi essent étiam córpore viciniores, qui præcéptis adimplendis étiam ánimo propinquabant. Et apériens os suum docebat eos, dicens. Ista circumlocutio, qua scríbitur, Et apériens os suum, fortassis ipsa mora comméndat aliquanto longiorem futúrum esse sermónem. Nisi forte non vacet, quod nunc eum dictum est aperuisse os suum, quod ipse in lege véteri aperire soleret ora prophetárum.
+Nic dziwnego, że jeden i ten sam Bóg, który stworzył niebo i ziemię, przez wzgląd na Królestwo Niebieskie daje wyższe przykazania, a niższe dał ze względu na królestwo ziemskie. O tej więc wyższej sprawiedliwości mówi przez Proroka: Twoja sprawiedliwość jak góry Boże. To zaś słusznie oznacza, że tylko jeden Nauczyciel, zdolny do głoszenia tak wzniosłych rzeczy, naucza sprawiedliwości na górze. A naucza siedząc, co odpowiada godności nauczyciela. I przystępują ku Niemu uczniowie Jego, bo ci, co zbliżyli się już duchem do wypełniania przykazań, chcieli być także ciałem bliżej Jego słów, których mieli słuchać. A otworzywszy usta swoje, nauczał ich, mówiąc. Zapewne ten przydługi wstęp: A otworzywszy usta swoje, samą swą rozwlekłością zapowiada dłuższą mowę; może jednak chodzi tu tylko o to, że Ten sam otworzył teraz swoje usta, który w Starym Prawie zazwyczaj otwierał usta Proroków.
 
 [Responsory8]
-R. Média nocte clamor factus est:
-* Ecce sponsus venit, exite óbviam ei.
-V. Prudentes Vírgines, aptate vestras lampades.
-R. Ecce sponsus venit, exite óbviam ei.
+R. O północy rozległo się wołanie:
+* Oto oblubieniec nadchodzi, wynijdźcie mu na spotkanie.
+V. Panny mądre, przygotujcie swe lampy.
+R. Oto oblubieniec nadchodzi, wynijdźcie mu na spotkanie.
 &Gloria
-R. Ecce sponsus venit, exite óbviam ei.
+R. Oto oblubieniec nadchodzi, wynijdźcie mu na spotkanie.
 
 [Lectio9]
-Quid ergo dicit? Beáti páuperes spíritu: quóniam ipsórum est regnum cælórum. Legimus scriptum de appetitione rerum temporalium: Ómnia vánitas, et præsumptio spíritus. Præsumptio autem spíritus, audaciam et supérbiam significat. Vulgo étiam magnos spíritus supérbi habére dicúntur: et recte, quandóquidem spíritus étiam ventus vocátur. Unde scriptum est: Ignis, grando, nix, glácies, spíritus procellárum. Quis vero nesciat supérbos inflatos dici, tamquam vento distentos? Unde est étiam illud Apóstoli: Sciéntia inflat, cáritas vero ædificat. Quaprópter recte hic intelliguntur páuperes spíritu, húmiles et timéntes Deum, id est, non habéntes inflantem spíritum.
+I cóż mówi? Błogosławieni ubodzy w duchu, albowiem ich jest Królestwo Niebieskie. O pożądaniu rzeczy doczesnych czytamy, co napisano: Wszystko to marność i zarozumiałość ducha. Zarozumiałość ducha oznacza zuchwałość i pychę. Potocznie zaś mówi się, że pyszni są wielce nadęci w duchu, i słusznie, ponieważ po łacinie słowo „duch” oznacza również ‘wiatr’, dlatego napisano: Ogniu i gradzie, śniegu i lodzie, wietrze gwałtowny. A któż nie wie, że ludzi pysznych nazywa się „nadętymi”, jakby ich wiatr rozdymał? Stąd też pochodzi owo powiedzenie Apostoła: Wiedza nadyma, a miłość buduje. I dlatego tutaj słusznie za ubogich w duchu uważa się pokornych i bojących się Boga, to jest takich, których duch nie jest nadęty pychą.
 &teDeum
 
 [Ant Laudes]
-Potem widziałem rzeszę wielką. * której nie mógł nikt przeliczyć, ze wszech narodów i pokoleń, stojących przed stolicą.
-A wszyscy Aniołowie * stali około stolicy i padli przed stolicą na oblicze swe i pokłon uczynili Bogu.
-I odkupiłeś nas * Bogu przez Krew Twoją ze wszelkiego pokolenia i języka i ludu i narodu i uczyniłeś nas Bogu naszemu królestwem.
-Błogosławcie Pana * wszyscy wybrani Jego; obchodźcie dni wesela i wyznawajcie Mu.
-Chwała wszystkim świętym Jego, * synom Izraelskim, ludowi przybliżającemu się do Niego: tać jest chwała wszystkim świętym Jego.
+@:Ant Vespera
 
 [Capitulum Laudes]
-!Apo 7:2-3
-v. Oto ja, Jan, widziałem drugiego anioła, wstępującego od wschodu słońca, mającego pieczęć Boga żywego, i zawołał głosem wielkim ku czterem Aniołom, którym dano jest szkodzić ziemi i morzu, mówiąc: Nie szkodźcie ziemi i morzu ani drzewom, dopóki nie popieczętujemy sługi Boga na czołach ich.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
-{:H-Salutisaeternae:}v. Salutis aeternae dator,
-Jesu, redemptis súbveni:
-Virgo parens clementiæ
-Dona salútem sérvulis.
+{:H-Salutisaeternae:}v. Dawco zbawienia wiekuistego,
+Jezu, wspomóż odkupionych;
+Dziewico, Matko łaskawości,
+Daj sługom zbawienie.
 _
-Vos angelórum míllia,
-Patrumque ctus, ágmina
-Canora vatum vos reis
-Precamini indulgéntiam.
+Wy, tysiące Aniołów
+I rzesze Ojców,
+Śpiewające zastępy Proroków;
+Wy winnym wyjednajcie przebaczenie.
 _
-Baptísta Christi prævius,
-Summique cæli claviger,
-Cum céteris Apóstolis
-Nexus resolvant criminum.
+Chrzciciel, poprzedzający Chrystusa,
+I Klucznik nieba najwyższego
+Z innymi Apostołami
+Niechaj rozwiążą pęta grzechów.
 _
-Cohors triúmphans mártyrum,
-Almus sacerdótum chorus,
-Et virginális castitas
-Nostros reatus abluant.
+Zwycięski hufiec Męczenników
+Błogosławiony chór Kapłanów
+I dziewicza czystość
+Niechaj obmyją nasze winy.
 _
-Quicúmque in alta siderum
-Regnatis aula príncipes,
-Favete votis súpplicum,
-Qui dona cæli flágitant.
+Którzykolwiek królujecie
+Jako Książęta na wysokim dworze gwiazd,
+Sprzyjajcie prośbom kor nych,
+Którzy błagają o dary niebieskie.
 _
-Virtus, honor, laus, glória
-Deo Patri cum Fílio,
-Sancto simul Paráclito,
-In sæculórum sæcula.
+Moc, cześć, sława, chwała
+Bogu Ojcu z Synem,
+Z Świętym także Pocieszycielem,
+Na wieki wieków.
 Amen.
 
 [Versum 2]
 V. Niechaj się radują święci z chwały swej.
 R. A niech się weselą na łożach swoich.
 
-[Ant 2]
-Te gloriósus * Apostolórum chorus, te Prophetárum laudábilis númerus, te Mártyrum candidátus laudat exércitus, te omnes Sancti et elécti voce confitentur unanimes, beáta Trínitas, unus Deus.
-
 [Lectio Prima]
-!Apo 7:12
-v. Benedíctio, et claritas, et sapiéntia, et gratiárum actio, honor, virtus, et fortitúdo Deo nostro, in sæcula sæculórum. Amen.
+!Ap 7:12
+v. Błogosławienie i chwała i mądrość i dziękowanie i cześć i moc i siła Bogu naszemu na wieki wieków. Amen.
 
 [Capitulum Tertia]
-!Apo 7:2-3
-v. Oto ja, Jan, widziałem drugiego anioła, wstępującego od wschodu słońca, mającego pieczęć Boga żywego, i zawołał głosem wielkim ku czterem Aniołom, którym dano jest szkodzić ziemi i morzu, mówiąc: Nie szkodźcie ziemi i morzu ani drzewom, dopóki nie popieczętujemy sługi Boga na czołach ich.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
-R.br. Lætámini in Dómino, * Et exsultáte justi.
-R. Lætámini in Dómino, * Et exsultáte justi.
-V. Et gloriámini omnes recti corde.
-R. Et exsultáte justi.
-&Gloria
-R. Lætámini in Dómino, * Et exsultáte justi.
-_
-V. Exsúltent justi in conspéctu Dei.
-R. Et delecténtur in lætítia.
+@Commune/C3
 
 [Capitulum Sexta]
-!Apo 7:9
-v. Post hæc vidi turbam magnam, quam dinumeráre nemo póterat ex ómnibus géntibus, et tríbubus, et pópulis, et linguis, stantes ante thronum Dei, in conspéctu Agni, amícti stolis albis, et palmæ in mánibus eórum.
+!Ap 7:9
+v. Potemem widział rzeszą wielką, któréj nie mógł nikt przeliczyć, ze wszech narodów i pokolenia i ludzi i języków, stojącą przed stolicą i przed oblicznością Baranka, przyobleczeni w szaty białe, a palmy w ręku ich.
 $Deo gratias
 
 [Responsory Sexta]
-R.br. Exsúltent justi * In conspéctu Dei.
-R. Exsúltent justi * In conspéctu Dei.
-V. Et delecténtur in lætítia.
-R. In conspéctu Dei.
-&Gloria
-R. Exsúltent justi * In conspéctu Dei.
-_
-V. Justi autem in perpétuum vivent.
-R. Et apud Dóminum est merces eórum.
+@Commune/C3
 
 [Capitulum Nona]
-!Apo 7:12
-v. Benedíctio, et claritas, et sapiéntia, et gratiárum actio, honor, virtus, et fortitúdo Deo nostro, in sæcula sæculórum. Amen.
+@:Lectio Prima
 $Deo gratias
 
 [Responsory Nona]
-R.br. Justi autem * In perpétuum vivent.
-R. Justi autem * In perpétuum vivent.
-V. Et apud Dóminum est merces eórum.
-R. In perpétuum vivent.
-&Gloria
-R. Justi autem * In perpétuum vivent.
-_
-V. Niechaj się radują święci z chwały swej.
-R. A niech się weselą na łożach swoich.
+@Commune/C3
 
 [Versum 3]
 V. Niechaj się radują święci z chwały swej.
