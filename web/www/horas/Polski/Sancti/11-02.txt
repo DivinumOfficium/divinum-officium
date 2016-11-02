@@ -1,11 +1,11 @@
 [Rank]
-In Commemoratione Omnium Fidelium Defunctorum;;Duplex;;3;;ex C9
+Wspomnienie Wszystkich Wiernych Zmarłych;;Duplex;;3;;ex C9
 
 [RankNewcal]
-In Commemoratione Omnium Fidelium Defunctorum;;Duplex Solemnity;;6;;ex C9
+Wspomnienie Wszystkich Wiernych Zmarłych;;Duplex Solemnity;;6;;ex C9
 
 [Rank1960]
-In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
+Wspomnienie Wszystkich Wiernych Zmarłych;;I. classis;;6;;ex C9
 
 [Rule]
 ex C9
@@ -22,23 +22,17 @@ no Te Deum
 (rubrica 1955 aut rubrica 1960) No prima Vespera
 
 [Ant Vespera]
-Będę się podobał Panu, * w krainie żyjących.;;114
-O ja biedny, * że mieszkanie moje przedłużyło, Panie.;;119
-Pan cię strzeże * od wszego złego: ten niech strzeże duszy twojej.;;120
-Jeśli będziesz * obaczał nieprawości Panie, Panie któż wydzierży?;;129
-Dzieła * rąk twoich, Panie, nie wzgardzaj.;;137
+@Commune/C9
 
 [Versum 1]
 V. Usłyszałem głos z nieba mówiący.
 R. Błogosławieni umarli, którzy w Panu umierają.
 
 [Versum 2]
-V. Usłyszałem głos z nieba mówiący.
-R. Błogosławieni umarli, którzy w Panu umierają.
+@:Versum 1
 
 [Versum 3]
-V. Usłyszałem głos z nieba mówiący.
-R. Błogosławieni umarli, którzy w Panu umierają.
+@:Versum 1
 
 [Initial]
 $Pater noster
@@ -66,156 +60,83 @@ $Indulgentiam
 &Dominus_vobiscum
 _
 $Oremus
-v. Fidélium, Deus, ómnium Cónditor et Redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optavérunt, piis supplicatiónibus consequántur:
+v. Stwórco i Odkupicielu wszystkich wiernych, Boże, racz odpuścić wszystkie grzechy duszom zmarłych sług i służebnic Twoich, aby przez pobożne błagania i modły nasze dostąpiły przebaczenia, którego zawsze pragnęły:
 $Qui vivis
 
-[Oratio mortuorum1]
-&pater_noster
-_ 
-V. A porta ínferi.
-R. Erue, Dómine, ánimas eórum.
-V. Requiéscant in pace.
-R. Amen.
-V. Dómine, exáudi oratiónem meam.
-R. Et clamor meus ad te véniat.
-&Dominus_vobiscum2
-_
-$Oremus
-v. Propitiáre, quæsumus, Dómine, animábus ómnium famulórum famularúmque tuárum, pro quibus majestátem tuam supplíciter exorámus: ut, per hæc piæ deprecatiónis offícia, perveníre mereántur ad réquiem sempitérnam.
-$Per Dominum 
-
 [Oratio mortuorum]
-&pater_noster
-_ 
-V. A porta ínferi.
-R. Erue, Dómine, ánimas eórum.
-V. Requiéscant in pace.
-R. Amen.
-V. Dómine, exáudi oratiónem meam.
-R. Et clamor meus ad te véniat.
-&Dominus_vobiscum2
-_
-$Oremus
-Fidélium, Deus, ómnium Cónditor et Redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optavérunt, piis supplicatiónibus consequántur:
-$Qui vivis 
-
-[Oratio mortuorum2]
-&pater_noster
-_ 
-V. A porta ínferi.
-R. Erue, Dómine, ánimas eórum.
-V. Requiéscant in pace.
-R. Amen.
-V. Dómine, exáudi oratiónem meam.
-R. Et clamor meus ad te véniat.
-&Dominus_vobiscum2
-_
-$Oremus
-Súpplices, Dómine, pro animábus ómnium famulórum famularúmque tuárum preces effúndimus: ut, quidquid conversatióne contraxérunt humána, clemens indúlgeas, et pœnis eórum finem benígnus impónas.
-$Per Dominum
+@Commune/C9:Oratio 2
 
 [Conclusio]
 &Gloria
-V. Requiescant in pace.
+V. Niech odpoczywają w pokoju.
 R. Amen.
 
 [Lectio1]
-!Job 7:16-21
-16 Przepuść mi; boć nic nie są dni moje.
-17 Cóż jest człowiek, iż go wielmożysz? albo co przykładasz ku niemu serce twoje?
-18 Nawiedzasz go rano i natychmiast doświadczasz go.
-19 Dokądże mi nie przepuścisz? ani dopuścisz mi, abym przełknął ślinę moję?
-20 Zgrzeszyłem, cóż ci uczynię, o stróżu ludzi! czemuś mię postawił przeciwnym tobie, i stałem się ciężek sam sobie?
-21 Przecz nie zgładzisz grzechu mego, i czemu nie odejmujesz nieprawości mojéj? oto teraz w prochu zasnę: a jeźli mię rano poszukasz, nie będzie mnie.
+@Commune/C9
 
 [Lectio2]
-!Job 14:1-6
-1 Człowiek urodzony z niewiasty, żywiąc przez czas krótki, napełnion bywa wielą nędz.
-2 Który wychodzi jako kwiat i skruszony bywa, a ucieka jako cień i nigdy nie trwa w tymże stanie.
-3 I masz za godną rzecz na takowego otwarzać oczy twoje i przywodzić go z sobą do sądu.
-4 Któż może czystym uczynić, który się począł z nasienia nieczystego? izali nie ty, który sam jesteś?
-5 Krótkie są dni człowiecze, liczba miesiąców jego u ciebie jest: zamierzyłeś granice jego, które nie będą mogły być przestąpione.
-6 Odstąp malutko od niego, aby odpoczynął: aż przyjdzie pożądany, jako najemnika dzień jego.
+@Commune/C9:Lectio5
 
 [Lectio3]
-!Job 19:20-27
-20 Do skóry mojéj po strawionem ciele przyschła kość moja: a zostały tylko wargi około zębów moich.
-21 Zmiłujcie się nademną, zmiłujcie się nademną, aby wżdy wy, przyjaciele moi! boć mię ręka Pańska dotknęła.
-22 Czemu mię prześladujecie jako Bóg? i najadacie się mięsa mego?
-23 Ktoby mi to dał, aby napisane były mowy moje! ktoby mi to dał, żeby je wyrysowano na księgach:
-24 Rylcem żelaznym, i na blasze ołowianéj, albo dłótem wyryto na skale!
-25 Wiem bowiem, iż odkupiciel mój żywie, a w dzień ostateczny powstanę z ziemie.
-26 I zaś obleczon będę w skórę moję i w ciele mojem oglądam Boga mego.
-27 Którego ujrzeć mam ja isty, i oczy moje oglądają, a nie inny: schowana jest ta nadzieja moja w zanadrzu mojem.
+@Commune/C9:Lectio8
 
 [Lectio4]
-Ex Libro Sancti Augustini Episcopi de cura pro mortuis gerenda
-!Cap 2 et 3
-Curátio fúneris, condítio sepultúræ, pompa exsequiárum magis sunt vivórum solatia quam subsidia mortuórum.  Nec ideo tamen contemnenda et abjícienda sunt córpora defunctórum, maximeque justórum ac fidélium, quibus tamquam órganis et vasis ad ómnia bona ópera sancte usus est spíritus.  Si enim paterna vestis et ánulus, ac si quid hujusmodi, tanto carius est posteris, quanto erga paréntes major afféctus; nullo modo ipsa spernenda sunt corpora, quæ útique multo familiarius atque conjúnctius quam quælibet induménta gestamus.  Hæc enim non ad ornaméntum vel adjutórium, quod adhibétur extrinsecus, sed ad ipsam natúram hóminis pertinent.  Unde et antiquorum justórum funera officiosa pietáte curáta sunt, et exsequiæ celebrátæ, et sepultúra provisa; ipsique, cum viverent, de sepeliéndis vel etiam transferéndis suis corpóribus fíliis mandavérunt.
+Z księgi św. Augustyna: O obowiązkach względem zmarłych
+!Rozdz. 2 i 3
+Troska o pogrzeb, uroczystości pogrzebowe i pompa ich są pociechą raczej dla żyjących, niż wsparciem dla zmarłych. Nie jest to jednak powodem, aby ciałem nieboszczyka pogardzać, zwłaszcza ciałem sprawiedliwych i wiernych, któremi dusza posługiwała się święcie jako narzędziami i pomocą do różnych dobrych uczynków. Jak odzież lub pierścień ojcowski, lub inne tego rodzaju pamiątki tem są droższe dla dzieci, im większa jest ich miłość dla rodziców, tak nie należy odnosić się bez uszanowania do ciał naszych, które są z nami bardziej spojone, niż jakakolwiek odzież. Ciała nie są bowiem nam tylko ozdobą lub obcą pomocą, lecz należą do samej natury człowieka. Dlatego z dawien dawna pobożność starała się gorliwie o oddawanie ostatniej posługi sprawiedliwym i dbała o ich pogrzeb, a i oni sami za życia wydawali polecenia synom, odnoszące się do swego pogrzebu, a nawet i do przenoszenia zwłok.
 
 [Lectio5]
-!Cap 4
-Recordántis et precántis afféctus cum defunctis a fidelibus caríssimis exhibétur, eum prodesse non dubium est iis, qui cum in corpore viverent, talia sibi post hanc vitam prodesse meruérunt.  Verum, etsi aliqua necessitas vel humari corpora, vel in sacris locis humari nulla data facultate permittat, non sunt prætermittendæ supplicatiónes pro spirítibus mortuórum: quas faciendas pro ómnibus in christiana et catholica societáte defunctis, etiam tacitis eórum nomínibus, sub generali commemoratióne suscépit Ecclésia; ut quibus ad ista desunt paréntes, aut fílii, aut quicúmque cognáti vel amici, ab una eis exhibeántur pia matre communi.  Si autem deéssent istæ supplicatiónes, quæ fiunt recta fide ac pietáte pro mórtuis, puto quod nihil prodesset spirítibus eórum, quamlibet in locis sanctis exánima córpora pónerentur.
+!Rozdz. 4
+Gdy wierni składają zmarłym ten serdeczny dowód przyjaźni przez pamięć o nich i modlitwę, czyn taki niewątpliwie jest pożyteczny tym, co za swego życia w ciele zasłużyli sobie na to, by podobne wsparcie mogło im być pomocne po śmierci. Lecz wówczas, gdy wskutek przeszkody niema możności pochowania ciała, albo pochowania go w miejscu świętem, nie należy zaniedbywać modłów za zmarłych. Dlatego właśnie kościół podjął się tej modlitwy za wszystkich zmarłych ze społeczności chrześcijańskiej, bez wymieniania ich imion, a tylko przez ogólne ich wspomnienie, aby ci, za których nie modlą się rodzice, dzieci, krewni, lub przyjaciele, otrzymali pomoc od tej jedynej wszystkich Matki. Gdyby wszakże zabrakło tych modlitw, zanoszonych za zmarłych z prostą wiarą i pobożnością, sądzę, że na nicby się ciału nie zdało, choćby na najświętszem miejscu było pochowane.
 
 [Lectio6]
-!Cap 18
-Quæ cum ita sint, non existimémus ad mórtuos, pro quibus curam gérimus, perveníre, nisi quod pro eis sive altaris, sive oratiónum, sive eleemosynárum sacrifíciis solemniter supplicámus: quamvis non pro quibus fiunt, ómnibus prosint; sed iis tantum pro quibus, dum vivunt, comparátur, ut prosint.  Sed quia non discernimus qui sunt, oportet ea pro regenerátis ómnibus fácere, ut nullus eórum prætermittátur, ad quos hæc benefícia possint et debeant perveníre.  Mélius enim superérunt ista eis, quibus nec obsunt nec prosunt; quam eis deérunt, quibus prosunt.  Diligéntius tamen facit hæc quisque pro necessariis suis, quo pro illo fiat simíliter a suis.  Corpori autem humando quidquid impénditur, non est præsidium salútis, sed humanitátis offícium, secúndum afféctum quo nemo unquam carnem suam ódio habet.  Unde oportet ut quam potest pro carne próximi curam gerat, cum ille inde recesserit, qui gerebat.  Et si hæc faciunt, qui carnis resurrectiónem non credunt, quanto magis debent fácere qui credunt; ut corpori mortuo, sed tamen resurrecturo et in æternitate mansuro, impensum ejusmodi offícium sit etiam quodammodo ejusdem fidei testimónium!
+!Rozdz. 18
+Gdy się tak rzeczy mają, bądźmy przekonani, iż oddając ostatnią posługę zmarłym, o tyle tylko możemy przyjść im z pomocą, o ile ofiarujemy za nich ofiarę ołtarza, modlitw naszych i jałmużn, jakkolwiek nie są one pomocne wszystkim, za których się modlimy, lecz tylko tym, którzy za życia zasłużyli na to, aby zasługi tychże ofiar im policzone zostały. Ponieważ wszakże nie wiemy, które to są dusze, należy przeto ofiary składać za wszystkich ochrzczonych, aby nie pozbawić pomocy tych, którzy z dobrodziejstwa tego skorzystać mogą i powinni. Lepiej bowiem, aby pomoce te ofiarowane zostały za dusze, którym nie są one ani pożyteczne, ani szkodliwe, niż pozbawiać tego dobrodziejstwa te, któreby z niego skorzystać mogły. Lecz każdy zwykle gorliwiej spełnia ten obowiązek względem swych blizkich, aby to samo krewni jego zrobili dla niego. Samo pogrzebanie ciała nie pomaga do zbawienia zmarłego, lecz jest to obowiązek ludzkości zgodny z poczuciem, wedle którego nikt swego ciała nie ma w nienawiści. Przeto, o ile możności, trzeba mieć staranie o powłokę cielesną naszych bliźnich, gdy ten, który ją nosił, opuścił ją. Jeśli tak postępują ci, co nie wierzą w zmartwychwstanie ciał, jakoż daleko bardziej czynić to mają ci, co wierzą. Ostatnia posługa oddana ciału, zmarłemu wprawdzie, ale przeznaczonemu do zmartwychwstania i do wiecznego istnienia, jest poniekąd dowodem tej wiary.
 
 [Lectio7]
-De Epistola Prima beati Pauli Apostoli ad Corinthios
-!1 Cor 15:12-22
-12 Si Christus prædicátur quod resurréxit a mórtuis, quómodo quidam dicunt in vobis quóniam resurréctio mortuórum non est?  
-13 Si autem resurréctio mortuórum non est, neque Christus resurréxit.  
-14 Si autem Christus non resurréxit, inánis est ergo prædicátio nostra, inánis est et fides vestra.  
-15 Invenímur autem et falsi testes Dei, quóniam testimónium diximus advérsus Deum quod suscitaverit Christum; quem non suscitávit, si mórtui non resurgunt.  
-16 Nam, si mórtui non resurgunt, neque Christus resurréxit.  
-17 Quod si Christus non resurréxit, vana est fides vestra, adhuc enim estis in peccátis vestris; 
-18 ergo et qui dormiérunt in Christo periérunt.  
-19 Si in hac vita tantum in Christo sperántes sumus, miserabíliores sumus ómnibus homínibus.  
-20 Nunc autem Christus resurréxit a mórtuis, primítiæ dormiéntium; 
-21 quóniam quidem per hóminem mors, et per hóminem resurréctio mortuórum.  
-22 Et sicut in Adam omnes moriúntur, ita et in Christo omnes vivificabúntur.
+Z Pierwszego Listu Świętego Pawła Apostoła do Koryntian
+!1 Kor 15:12-22
+12 A jeźliż o Chrystusie powiadają, iż zmartwychwstał, jakoż mówią niektórzy między wami, że zmartwychwstania niemasz?
+13 Lecz jeźli zmartwychwstania niemasz, ani Chrystus nie powstał z martwych.
+14 A jeźliż Chrystus nie powstał, próżne tedy jest przepowiadanie nasze, próżna jest i wiara wasza.
+15 Znajdujemy się téż fałszywymi świadki Bożymi, iżeśmy świadczyli przeciw Bogu, że Chrystusa wzbudził, którego nie wzbudził, jeźliże umarli nie powstają.
+16 Bo jeźliż umarli nie powstają, ani Chrystus nie powstał.
+17 A jeźli Chrystus nie powstał, próżna jest wiara wasza; bo jeszcze jesteście w grzechach waszych.
+18 Tedy i którzy zasnęli w Chrystusie, poginęli.
+19 Jeźliż tylko w tym żywocie w Chrystusie nadzieję mamy, jesteśmy nędzniejsi, niźli wszyscy ludzie.
+20 Lecz teraz Chrystus zmartwychwstał, pierwiastki tych, którzy zasnęli. 
+21 Ponieważ przez człowieka śmierć, i przez człowieka powstanie umarłych. 
+22 A jako w Adamie wszyscy umierają, tak i w Chrystusie wszyscy ożywieni będą.
 
 [Lectio8]
-!1 Cor 15:35-44
-35 Sed dicet áliquis: Quómodo resurgunt mórtui? qualíve corpore vénient?  
-36 Insípiens, tu quod seminas non vivificátur, nisi prius moriátur.  
-37 Et quod seminas, non corpus quod futurum est seminas, sed nudum granum, ut puta, trítici aut alicujus ceterórum; 
-38 Deus autem dat illi corpus sicut vult, et unicuíque seminum proprium corpus.  
-39 Non omnis caro éadem caro, sed alia quidem hóminum, alia vero pécorum, alia vólucrum, alia autem píscium: 
-40 et córpora cæléstia, et córpora terrestria; sed alia quidem cæléstium gloria, alia autem terrestrium.  
-41 Alia claritas solis, alia claritas lunæ, et alia claritas stellárum; stella enim a stella differt in claritate.  
-42 Sic et resurréctio mortuórum.  Seminátur in corruptióne, surget in incorruptióne; 
-43 seminátur in ignobilitate, surget in glória; seminátur in infirmitáte, surget in virtúte; 
-44 seminátur corpus animale, surget corpus spiritale.
+!1 Kor 15:35-44
+35 Ale kto rzecze: Jakoż zmartwycbwstają umarli? a w jakiem ciele przyjdą?
+36 Głupi! co ty siejesz, nie bywa ożywiono, jeźli pierwéj nie obumrze.
+37 I co siejesz, nie siejesz ciała, które ma być, ale gołe ziarno, jako na przykład, pszeniczne albo z inszych które.
+38 A Bóg daje mu ciało jako chce, a każdemu nasieniu własne ciało.
+39 Nie każde ciało tóż ciało; ale insze ludzkie, insze bydlęce, insze ptasze, insze rybie.
+40 I ciała niebieskie, i ciała ziemskie; aleć insza jest ozdoba niebieskich, a insza ziemskich.
+41 Insza jasność słońca, insza jasność księżyca a insza jasność gwiazd; albowiem gwiazda od gwiazdy różna jest w jasności.
+42 Tak i zmartwychwstanie. Bywa wsiane w skazitelności, powstanie w nieskazitelności.
+43 Bywa wsiane w sprosności, a powstanie w chwalebności. Bywa wsiane w słabości, a powstanie w potężności.
+44 Bywa wsiane ciało cielesne, a powstanie ciało duchowne.
 
 [Responsory8]
-R. Dómine, secúndum actum meum noli me judicáre: nihil dignum in conspéctu tuo egi; ideo déprecor majestátem tuam, 
-* Ut tu, Deus, deleas iniquitátem meam.
-V. Amplius lava me, Dómine, ab injustítia mea, et a delícto meo munda me.
-R. Ut tu, Deus, deleas iniquitátem meam.
+@Commune/C9
 
 [Lectio9]
-!1 Cor 15:51-58
-51 Ecce mystérium vobis dico: Omnes quidem resurgemus, sed non omnes immutábimur.  
-52 In momento, in ictu óculi, in novíssima tuba; canet enim tuba, et mórtui resúrgent incorrupti, et nos immutábimur.  
-53 Oportet enim corruptibile hoc indúere incorruptiónem, et mortale hoc indúere immortalitátem.  
-54 Cum autem mortale hoc indúerit immortalitátem, tunc fiet sermo qui scriptus est: Absorpta est mors in victoria.  
-55 Ubi est, mors, victoria tua? ubi est, mors, stímulus tuus?  
-56 Stímulus autem mortis peccátum est, virtus vero peccáti lex.  
-57 Deo autem grátias, qui dedit nobis victoriam per Dóminum nostrum Jesum Christum.  
-58 Itaque, fratres mei dilécti, stábiles estote et immobiles; abundántes in opere Dómini semper, sciéntes quod labor vester non est inánis in Dómino.
+!1 Kor 15:51-58
+51 Oto tajemnicę wam powiadam: Wszyscy wprawdzie zmartwycbwstaniemy, ale nie wszyscy odmienieni będziemy,
+52 Prędziuchno we mgnieniu oka, na trąbę ostateczną; (albowiem zatrąbi trąba), a umarli powstaną nieskażonymi, a my będziemy przemienieni.
+53 Boć musi to skazitelne przyoblec nieskazitelność: i to śmiertelne przyoblec nieśmiertelność.
+54 A gdy to śmiertelne przyoblecze nieśmiertelność, tedy się stanie mowa, która jest napisana: Pożarta jest śmierć w zwycięstwie.
+55 Gdzie jest zwycięstwo twe, o śmierci? Gdzież jest, śmierci! oścień twój?
+56 A oścień śmierci jest grzech, a moc grzechu zakon.
+57 Lecz dzięka Bogu, który nam dał zwycięstwo przez Pana naszego Jezusa Chrystusa.
+58 A tak, bracia moi mili! bądźcie stateczni a nieporuszeni, obfitując w robocie Pańskiéj zawsze, wiedząc, iż praca wasza nie jest próżna w Panu.
 
 [Responsory9]
-R. Wybaw mnie, Panie, od śmierci wiecznej, w dzień ten straszny, 
-* Gdy niebiosa i ziemia poruszone zostaną, * Gdy przyjdziesz sądzić świat przez ogień.
-V. Strwożony jestem i lękam się, gdy przyjdzie sąd i gniew przybędzie.
-R. Gdy niebiosa i ziemia poruszone zostaną.
-V. W dzień ten, w dzień gniewu, klęski i niedoli, dzień wielki i gorzki wielce.
-R. Gdy przyjdziesz sądzić świat przez ogień.
-$Requiem
-R. Wybaw mnie, Panie, od śmierci wiecznej, w dzień ten straszny, 
-* Gdy niebiosa i ziemia poruszone zostaną, * Gdy przyjdziesz sądzić świat przez ogień.
+@Commune/C9
 
 [Special Prima]
 &special('Initial', 'Latin')
@@ -232,11 +153,11 @@ $Credo
 
 &martyrologium
 
-V. In memoria aeterna erunt justi.
-R. Ab auditione mala non timebunt.
+V. W wiecznéj pamiątce będzie sprawiedliwy.
+R. Nie będzie się bał posłuchu złego.
 _
 $Oremus
-Deus, veniæ largitor et humanæ salútis amator: quæsumus cleméntiam tuam; ut ánimas ómnium fidélium qui ex hoc sæculo transiérunt, beáta Maria semper Vírgine intercedénte cum ómnibus Sanctis tuis, ad perpetuæ beatitúdinis consórtium perveníre concédas. Per Christum Dominum nostrum.
+Boże, Dawco przebaczenia i zbawienia ludzkiego miłośniku: błagamy łaskawości Twojej, abyś duszom sług i służebnic Twoich, które z tego świata zeszły, za wstawieniem się błogosławionej Marji, zawsze Panny i wszystkich Świętych Twoich, do uczestnictwa w wiecznej szczęśliwości dojść dozwolił. Przez Chrystusa Pana naszego.
 R. Amen
 
 &special('Conclusio', 'Latin')
