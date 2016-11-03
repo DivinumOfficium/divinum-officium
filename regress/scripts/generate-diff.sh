@@ -97,7 +97,6 @@ run_test() {
     Completorium
   do
     # Travis fails the build if it's quiet for too long, so print a heartbeat.
-    echo -n "${hour}.."
     for date in ${dates}; do
       echo -n .
       for short_version in ${versions}; do
@@ -146,8 +145,9 @@ main() {
 
   # Run test against each tree.
   echo 'Testing...'
-  run_test "${base_ref}" "${dates}" "${versions}"
-  run_test "${test_ref}" "${dates}" "${versions}"
+  run_test "${base_ref}" "${dates}" "${versions}" &
+  run_test "${test_ref}" "${dates}" "${versions}" &
+  wait
 
   # Generate diff.  git-diff with the (implied) --no-index option has an exit
   # code of 1 both when there are differences and when there are errors, so
