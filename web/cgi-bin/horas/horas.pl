@@ -450,12 +450,12 @@ sub psalm : ScriptFunc {
   # special third-nocturn use on the day of the Epiphany.
   my $fname = ($psnum == 94) ? 'Psalterium/Invitatorium1.txt' : "$psalmfolder/Psalm$psnum.txt";
   
+  if ($version =~ /1960/) {$fname =~ s/Psalm226/Psalm226r/;}
+  if ($version =~ /1960/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i)
+    {$fname =~ s/Psalm88/Psalm88r/;}
+  if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6)
+    {$fname =~ s/Psalm88/Psalm88a/;}
   $fname = checkfile($lang, $fname);
-  if ($version =~ /1960/ && $fname =~ /226/) {$fname =~ s/226/226r/;}
-  if ($version =~ /1960/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i && $fname =~ /88/)
-    {$fname =~ s/88/88r/;}
-  if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6 && $fname =~ /88/)
-    {$fname =~ s/88/88a/;}
     
   @lines = do_read($fname);
 
