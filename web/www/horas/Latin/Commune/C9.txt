@@ -12,50 +12,49 @@ Requiem gloria
 Votive nocturn
 
 [Ant Vespera]
-Placebo Domino * in regione vivorum.;;114
-Hei mihi, Domine, * quia incolatus meus prolongatus est.;;119
-Dominus custodit te * ab omni malo: custodiat animam tuam Dominus.;;120
-Si iniquitates * observaveris, Domine: Domine, quis sustinebit.;;129
-Opera * manuum tuarum, Domine, ne despicias.;;137
+Placébo Dómino * in regióne vivórum.;;114
+Hei mihi Dómine, * quia incolátus meus prolongátus est.;;119
+Dóminus custódit te * ab omni malo: custódiat ánimam tuam Dóminus.;;120
+Si iniquitátes * observáveris, Dómine: Dómine, quis sustinébit?;;129
+Opera * mánuum tuárum, Dómine, ne despícias.;;137
 
 [Versum 1]
-V. Audivi vocem de caelo dicentem mihi.
-R. Beati mortui qui in Domino moriuntur.
+V. Audívi vocem de cælo dicéntem mihi.
+R. Beáti mórtui qui in Dómino moriúntur.
 
 [Ant 1]
 Omne * quod dat mihi Pater, ad me veniet: et eum qui venit ad me, non ejiciam foras.
 
-[Oratio 1]
+[Oratio_a_porta]
 &pater_noster
 _
 &psalm(145)
 (sed rubrica 1955 aut rubrica 1960 omittitur)
+_
 V. A porta ínferi.
 R. Erue, Dómine, ánimas eórum.
 V. Requiéscant in pace.
 R. Amen.
 V. Dómine, exáudi oratiónem meam.
 R. Et clamor meus ad te véniat.
+
+[Oratio_Fid]
 &Dominus_vobiscum2
 _
 $Oremus
-Fidelium, Deus, ómnium conditor et redemptor, animábus famulórum famularumque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optavérunt, piis supplicatiónibus consequántur:
+v. Fidélium, Deus, ómnium conditor et redemptor, animábus famulórum famularumque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optavérunt, piis supplicatiónibus consequántur:
 $Qui vivis
 
+[Versum 3]
+@:Versum 1
+
+[Oratio 1]
+@:Oratio_a_porta
+@:Oratio_Fid
+
 [Oratio 2]
-&pater_noster
-_
-V. A porta ínferi.
-R. Erue, Dómine, ánimas eórum.
-V. Requiéscant in pace.
-R. Amen.
-V. Dómine, exáudi oratiónem meam.
-R. Et clamor meus ad te véniat.
-&Dominus_vobiscum2
-_
-$Oremus
-Fidelium, Deus, ómnium conditor et redemptor, animábus famulórum famularumque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optavérunt, piis supplicatiónibus consequántur:
-$Qui vivis
+@:Oratio_a_porta:s/&psalm.*\)//s
+@:Oratio_Fid
 
 [Oratio1]
 Absolve, quaesumus Domine, animam famuli tui N., ut defunctus saeculo tibi vivat: et quae per fragilitatem carnis humana conversatione commisit, tu venia misericordissimae pietatis absterge.
@@ -92,7 +91,13 @@ V. Ne tradas bestiis animas confitentes tibi.
 R. Et animas pauperum tuorum ne obliviscaris in finem.
 
 [Lectio1]
-@Sancti/11-02:Lectio1
+!Job 7:16-21
+16 Parce mihi, Dómine; nihil enim sunt dies mei.
+17 Quid est homo, quia magnificas eum? aut quid apponis erga eum cor tuum?
+18 Vísitas eum dilúculo, et súbito probas illum.
+19 Usquequo non parcis mihi, nec dimittis me, ut glutiam salivam meam?
+20 Peccávi, quid fáciam tibi, o custos hóminum? quare posuísti me contrárium tibi, et factus sum mihimetipsi gravis?
+21 Cur non tollis peccátum meum, et quare non aufers iniquitátem meam? Ecce nunc in púlvere dórmiam: et, si mane me quæsíeris, non subsistam.
 
 [Responsory1]
 R. Credo quod Redemptor meus vivit, et in novissimo die de terra surrecturus sum:
@@ -149,7 +154,13 @@ V. De profundis clamavi ad te, Domine: Domine, exaudi vocem meam.
 R. Nec aspiciat me visus hominis.
 
 [Lectio5]
-@Sancti/11-02:Lectio2
+!Job 14:1-6
+1 Homo, natus de muliere, brevi vivens témpore, replétur multis misériis.
+2 Qui quasi flos egréditur et contéritur, et fugit velut umbra, et numquam in eodem statu pérmanet.
+3 Et dignum ducis super hujuscémodi aperire óculos tuos, et adducere eum tecum in judícium?
+4 Quis potest fácere mundum de immundo conceptum semine? Nonne tu qui solus es?
+5 Breves dies hóminis sunt, númerus mensium ejus apud te est: constituísti términos ejus, qui præteriri non póterunt.
+6 Recede paululum ab eo, ut quiescat, donec optáta véniat, sicut mercenarii, dies ejus.
 
 [Responsory5]
 R. Hei mihi, Domine, quia peccavi nimis in vita mea: Quid faciam, miser? ubi fugiam, nisi ad te, Deus meus?
@@ -190,13 +201,21 @@ V. Deus in nomine tuo salvum me fac, et in virtute tua libera me.
 R. Quia in inferno nulla est redemptio, miserere mei Deus, et salva me.
 
 [Lectio8]
-@Sancti/11-02:Lectio3
+!Job 19:20-27
+20 Pelli meæ, consumptis carnibus, adhæsit os meum, et derelícta sunt tantummodo lábia circa dentes meos.
+21 Miserémini mei, miserémini mei, saltem vos, amíci mei, quia manus Dómini tetigit me.
+22 Quare persequímini me sicut Deus, et carnibus meis saturámini?
+23 Quis mihi tríbuat ut scribántur sermónes mei? quis mihi det ut exaréntur in libro,
+24 stylo ferreo et plumbi lámina, vel celte sculpántur in sílice?
+25 Scio enim quod redémptor meus vivit, et in novíssimo die de terra surrecturus sum:
+26 et rursum circumdábor pelle mea, et in carne mea vidébo Deum meum.
+27 Quem visurus sum ego ipse, et óculi mei conspécturi sunt, et non alius: repósita est hæc spes mea in sinu meo.
 
 [Responsory8]
-R. Domine secundum actum meum noli me judicare: nihil dignum in conspectu tuo egi: ideo deprecor majestatem tuam
-* Ut tu Deus deleas iniquitatem meam.
-V. Amplius lava me Domine ab injustitia mea, et a delicto meo munda me.
-R. Ut tu Deus deleas iniquitatem meam.
+R. Dómine, secúndum actum meum noli me judicáre: nihil dignum in conspéctu tuo egi; ideo déprecor majestátem tuam,
+* Ut tu, Deus, deleas iniquitátem meam.
+V. Amplius lava me, Dómine, ab injustítia mea, et a delícto meo munda me.
+R. Ut tu, Deus, deleas iniquitátem meam.
 
 [Lectio9]
 !Job 10:18-22
@@ -215,7 +234,15 @@ $Requiem
 R. Qui erant in poenis tenebrarum.
 
 [Responsory9]
-@Sancti/11-02:Responsory9
+R. Líbera me, Dómine, de morte æterna in die illa tremenda,
+* Quando cæli movéndi sunt et terra, * Dum veneris judicáre sæculum per ignem.
+V. Tremens factus sum ego et timeo, dum discussio venerit atque ventúra ira.
+R. Quando cæli movéndi sunt et terra.
+V. Dies illa, dies iræ, calamitátis et misériæ, dies magna et amára valde.
+R. Dum veneris judicáre sæculum per ignem.
+$Requiem
+R. Líbera me, Dómine, de morte æterna in die illa tremenda,
+* Quando cæli movéndi sunt et terra, * Dum veneris judicáre sæculum per ignem.
 
 [Ant Laudes]
 Exsultábunt Dómino * ossa humiliáta.;;50
@@ -225,8 +252,7 @@ A porta ínferi * erue, Dómine, ánimam meam.;;222
 Omnis spíritus * laudet Dóminum.;;150
 
 [Versum 2]
-V. Audívi vocem de cælo dicéntem mihi.
-R. Beáti mórtui qui in Dómino moriúntur.
+@:Versum 1
 
 [Ant 2]
 Ego sum * resurréctio et vita: qui credit in me, etiam si mórtuus fúerit, vivet; et omnis qui vivit et credit in me, non moriétur in ætérnum.
@@ -244,5 +270,5 @@ R. Et clamor meus ad te véniat.
 &Dominus_vobiscum2
 _
 $Oremus
-Fidelium, Deus, ómnium conditor et redemptor, animábus famulórum famularumque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optavérunt, piis supplicatiónibus consequántur:
+Fidelium, Deus, ómnium conditor et redemptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optavérunt, piis supplicatiónibus consequántur:
 $Qui vivis
