@@ -1,0 +1,25 @@
+[Rank]
+Św. Alberta Wielkiego Biskupa Wyznawcy i Doktora Kościoła;;Duplex;;3;;vide C4a
+
+[Name]
+Alberte
+
+[RankNewcal]
+Św. Alberta Wielkiego Biskupa Wyznawcy i Doktora Kościoła;;Duplex optional;;2;;vide C4a
+
+[Rule]
+vide C4a;
+9 lectiones
+
+[Oratio]
+Boże, który błogosławionego Alberta, Biskupa Twego i Doktora uczyniłeś wielkim przez poddanie ludzkiej mądrości wierze świętej: daj nam tak wstępować w ślady jego nauki, abyśmy światła doskonałego używali we niebie.
+$Per Dominum
+
+[Lectio7](rubrica 1570 aut rubrica 1910)
+@Commune/C4a:Lectio7
+
+[Lectio8](rubrica 1570 aut rubrica 1910)
+@Commune/C4a:Lectio8
+
+[Lectio9](rubrica 1570 aut rubrica 1910)
+@Commune/C4a:Lectio9
