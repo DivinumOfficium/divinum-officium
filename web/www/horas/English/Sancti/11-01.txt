@@ -4,7 +4,7 @@ Omnium Sanctorum;;Duplex I classis cum octava communi;;6.4;;
 [Rule]
 9 lectiones
 Psalmi Dominica
-Antiphones horas
+Antiphonas horas
 Psalm5 Vespera=116
 Psalm5 Vespera3=115
 (rubrica Tridentina aut rubrica Divino) Vesperae Defunctorum
@@ -128,11 +128,7 @@ within they are full of eyes. And they rested not day and night, saying: Holy,~
 holy, holy, Lord God Almighty, who was, and who is, and who is to come.
 
 [Responsory1]
-R. I saw the Lord sitting upon a throne, high and lifted up and the whole earth~
-was full of His glory
-* And His train filled the temple.
-V. Above it stood the Seraphim each one had six wings.
-R. And His train filled the temple.
+@Tempora/Pent01-0
 
 [Lectio2]
 !Rev 5:1-8
@@ -158,12 +154,7 @@ twenty ancients fell down before the Lamb, having every one of them harps, and~
 golden vials full of odours, which are the prayers of saints:
 
 [Responsory2]
-R. Blessed art thou, O Virgin Mary, Mother of God, that didst believe the Lord.~
-There hath been a performance in thee of those things which were told thee. Lo,~
-thou hast been exalted above the choirs of Angels.
-* Pray for us unto the Lord our God.
-V. Hail, Mary, full of grace, the Lord is with thee.
-R. Pray for us unto the Lord our God.
+@Sancti/08-15:Responsory8:s/&Gloria.*//s
 
 [Lectio3]
 !Rev 5:9-14
@@ -213,13 +204,7 @@ up to the bitter starting-post the hope of conquest and glory which hath warmed~
 them manfully to accept the race.
 
 [Responsory4]
-R. The Fore-runner of the Lord cometh, to whom He Himself bare witness, saying:
-* Among them that are born of women there hath not risen a greater than John the~
-Baptist.
-V. A Prophet? Yea, and much more than a Prophet. This is he of whom the Saviour~
-saith
-R. Among them that are born of women there hath not risen a greater than John~
-the Baptist.
+@Sancti/06-24:Responsory7
 
 [Lectio5]
 If a verity thou art blessed, O my Mother the Church! The blaze of God's mercy~
@@ -232,12 +217,7 @@ heaven peace and war have both chaplets of their own, to crown Christ's soldiers
 withal.
 
 [Responsory5]
-R. These are they who while yet they lived in the flesh, planted the Church in~
-their own blood
-* They drank of the Lord's cup, and became the friends of God.
-V. Their sound is gone out through all the earth, and their words to the ends of~
-the world.
-R. They drank of the Lord's cup, and became the friends of God.
+@Commune/C1:Responsory7
 
 [Lectio6]
 Moreover, to this also hath the unutterable and boundless goodness of God seen,~
@@ -252,12 +232,7 @@ present time are not worthy to be compared with the glory which shall be~
 revealed in us. (Rom. viii. 18.)
 
 [Responsory6]
-R. O ye My Saints, who, being in the flesh, didst have striving
-* I will render unto you a reward of your labours.
-V. Come, ye blessed of My Father, inherit the kingdom!
-R. I will render unto you a reward of your labours.
-&Gloria
-R. I will render unto you a reward of your labours.
+@Commune/C3:Responsory8
 
 [Lectio7]
 From the Holy Gospel according to Matthew
@@ -278,12 +253,7 @@ all are alike the gift of Him Who alone knoweth what is in each epoch the~
 seasonable medicine of mankind.
 
 [Responsory7]
-R. Let your loins be girded about, and your lights burning;
-* And ye yourselves like unto men that wait for their lord, when he will return~
-from the wedding.
-V. Watch therefore, for ye know not what hour your Lord doth come.
-R. And ye yourselves like unto men that wait for their lord, when he will return~
-from the wedding.
+@Commune/C4:Responsory8:s/&Gloria.*//s
 
 [Lectio8]
 Neither is it marvel that the greater commandments be given touching the kingdom~
@@ -304,31 +274,17 @@ His Own Mouth, Who, under the Old Law, had been used to open the mouths of the~
 Prophets.
 
 [Responsory8]
-R. At midnight there was a cry made:
-* Behold! the Bridegroom cometh! go ye out to meet him!
-V. Trim your lamps, O ye wise virgins.
-R. Behold! the Bridegroom cometh! go ye out to meet Him!
-&Gloria
-R. Behold! the Bridegroom cometh! go ye out to meet Him!
+@Commune/C6
 
 [Lectio9]
 And now, what saith He? Blessed are the poor in spirit, for theirs is the kingdom of heaven. We have read where it is written concerning the lusting after temporal things: The wandering of the desire is vanity and presumption of spirit. (Eccl. vi. 9.) Presumption of spirit signifieth rashness and pride. We are used to say of proud people that they are men of high spirit, and we say well, since spirit is only one of the Latin names for wind. It is so used, for instance, in Ps. cxlviii. 8, Fire, hail, snow, ice, stormy wind. Who hath not heard the proud spoken of as puffed up, as if they were blown out with wind? Hence, alas, the Apostle saith: Knowledge puffeth up, but charity edifieth. (1 Cor. viii. 1.) By the poor in spirit, who are here called blessed, are rightly to be understood such as are lowly and fear God, that is, have not got minds puffed up with windy vanity.
 &teDeum
 
 [Ant Laudes]
-I beheld, and, lo, great multitude, which no man could number, * of all nations, (and kindreds, and people, and tongues,) stood before the throne.
-And all the Angels stood round about the throne, * (and about the Elders, and the four living creatures,) and fell before the throne on their faces, and worshipped God.
-Thou, O Lord God, hast redeemed us by thy Blood, * out of every kindred, and tongue, and people, and nation, and hast made us a kingdom unto our God.
-Bless the Lord, all ye His chosen, * keep holiday, and extol Him.
-The praise of all His Saints, * even of the children of Israel, a people near unto Him; this honour have all His Saints.
+@:Ant Vespera
 
 [Capitulum Laudes]
-!Rev 7:2-3
-v. And I, John, saw another angel ascending from the rising of the sun, having the sign~
-of the living God; and he cried with a loud voice to the four angels, to whom it~
-was given to hurt the earth and the sea, Saying: Hurt not the earth, nor the sea,~
-nor the trees, till we sign the servants of our God in their foreheads.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 v. Giver of life, eternal Lord!
@@ -377,23 +333,10 @@ v. Saying: Amen. Benediction, and glory, and wisdom, and thanksgiving, honour,~
 and power, and strength to our God for ever and ever. Amen.
 
 [Capitulum Tertia]
-!Rev 7:2-3
-v. And I, John, saw another angel ascending from the rising of the sun, having the sign~
-of the living God; and he cried with a loud voice to the four angels, to whom it~
-was given to hurt the earth and the sea, Saying: Hurt not the earth, nor the sea,~
-nor the trees, till we sign the servants of our God in their foreheads.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
-R.br. Be glad in the Lord, * and rejoice, ye righteous.
-R. Be glad in the Lord, * and rejoice, ye righteous.
-V. And shout for joy, all ye that are upright in heart.
-R. And rejoice, ye righteous.
-&Gloria
-R. Be glad in the Lord, * and rejoice, ye righteous.
-_
-V. Let the righteous rejoice before God.
-R. Yea, let them exceedingly rejoice.
+@Commune/C3
 
 [Capitulum Sexta]
 !Rev 7:9
@@ -403,36 +346,17 @@ in sight of the Lamb, clothed with white robes, and palms in their hands.
 $Deo gratias
 
 [Responsory Sexta]
-R.br. Let the righteous rejoice * before God.
-R. Let the righteous rejoice * before God.
-V. Yea, let them exceedingly rejoice.
-R. Before God.
-&Gloria
-R. Let the righteous rejoice * before God.
-_
-V. The righteous live for evermore.
-R. Their reward also is with the Lord.
+@Commune/C3
 
 [Capitulum Nona]
-!Rev 7:12
-v. Saying: Amen. Benediction, and glory, and wisdom, and thanksgiving, honour,~
-and power, and strength to our God for ever and ever. Amen.
+@:Lectio Prima
 $Deo gratias
 
 [Responsory Nona]
-R.br. The righteous * live for evermore.
-R. The righteous * live for evermore.
-V. Their reward also is with the Lord.
-R. For evermore.
-&Gloria
-R. The righteous * live for evermore.
-_
-V. Let the Saints be joyful in glory.
-R. Let them sing aloud upon their beds.
+@Commune/C3
 
 [Versum 3]
-V. Let the Saints be joyful in glory.
-R. Let them sing aloud upon their beds.
+@:Versum 2
 
 [Ant 3]
 Oh! how glorious is the kingdom * where all the Saints rejoice with Christ; clothed in white robes, they follow the Lamb whithersoever he goeth!
