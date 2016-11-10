@@ -1,0 +1,21 @@
+[Rank]
+Św. Elżbiety Wdowy;;Duplex;;3;;vide C7a
+
+[Rule]
+vide C7a;
+9 lectione
+CPapaM=Poncjana;
+
+[Oratio]
+Boże miłosierny, oświeć serca wiernych Twoich i za przyczyną świętej Elżbiety daj nam wzgardzić szczęściem doczesnem, a cieszyć się zawsze weselem niebieskiem.
+$Per Dominum
+
+[Commemoratio]
+!Wspomnienie Św. Poncjana Papieża i Męczennika
+@Commune/C2:Oratio proper Gregem
+$Oremus
+Wszechmogący Boże, wejrzyj na słabość naszą, a że uginamy się pod ciężarem grzechów naszych, niech chwalebne pośrednictwo błogosławionego Poncjana, Męczennika i Biskupa Twego, nas osłania.
+$Per Dominum
+
+[Invit]
+@Commune/C7::s/N\./Elżbiecie./
