@@ -2,41 +2,24 @@
 In Commemoratione Omnium Fidelium Defunctorum;;Duplex;;3;;ex C9
 
 [RankNewcal]
-In Commemoratione Omnium Fidelium Defunctorum;;Duplex solemnity;;6;;ex C9
+In Commemoratione Omnium Fidelium Defunctorum;;Duplex Solemnity;;6;;ex C9
 
 [Rank1960]
-In Commemoratione Omnium Fidelium Defunctorum;;Duplex I. classis;;6;;ex C9
+In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
 
 [Rule]
 ex C9
-Psalmi Dominca
+Psalmi Dominica
 Antiphonas horas
-Special Conclusion
+Special Conclusio
 Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium;
+Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium
 Limit Benedictiones Oratio
 Requiem gloria
 9 lectiones
 Responsory9
-
-[Ant Vespera]
-I will walk before the Lord * in the land of the living.;;114
-Woe is me, O Lord, * that my sojourn is long.;;119
-The Lord shall keep thee from all evil, * the Lord shall keep thy soul.;;120
-If Thou, Lord, shouldest mark iniquities, * O Lord, who shall stand?;;129
-O Lord, forsake not * the works of thine own hands.;;137
-
-[Versum 1]
-V. I heard a voice from heaven, saying unto me.
-R. Blessed are the dead, which die in the Lord.
-
-[Versum 2]
-V. I heard a voice from heaven, saying unto me.
-R. Blessed are the dead, which die in the Lord.
-
-[Versum 3]
-V. I heard a voice from heaven, saying unto me.
-R. Blessed are the dead, which die in the Lord.
+no Te Deum
+(rubrica 1955 aut rubrica 1960) No prima Vespera
 
 [Initial]
 $Pater noster
@@ -61,24 +44,10 @@ $Indulgentiam
 &special('Conclusio', 'Latin')
 
 [Oratio Matutinum]
-&Dominus_vobiscum
-_
-$Oremus
-v. O God, Who art thyself at once the Maker and the Redeemer of all thy~
-faithful ones, grant unto the souls of thy servants and handmaids remission of~
-all their sins, making of our entreaties unto our Great Father, a mean whereby~
-they may have that forgiveness which they have ever hoped for.
-$Qui vivis
+@Commune/C9:Oratio_Fid:s/2//
 
 [Oratio mortuorum1]
-&pater_noster
-_
-V. From the gates of hell.
-R. Deliver their souls, O Lord.
-V. May they rest in peace.
-R. Amen.
-V. O Lord, hear my prayer.
-R. And let my cry come unto thee. 
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
 &Dominus_vobiscum2
 _
 $Oremus
@@ -86,32 +55,10 @@ v. We beseech you, O Lord, to be merciful to the souls of all your servants and 
 $Per Dominum 
 
 [Oratio mortuorum]
-&pater_noster
-_
-V. From the gates of hell.
-R. Deliver their souls, O Lord.
-V. May they rest in peace.
-R. Amen.
-V. O Lord, hear my prayer.
-R. And let my cry come unto thee. 
-&Dominus_vobiscum2
-_
-$Oremus
-O God, Who art thyself at once the Maker and the Redeemer of all thy~
-faithful ones, grant unto the souls of thy servants and handmaids remission of~
-all their sins, making of our entreaties unto our Great Father, a mean whereby~
-they may have that forgiveness which they have ever hoped for.
-$Qui vivis
+@Commune/C9:Oratio 2
 
 [Oratio mortuorum2]
-&pater_noster
-_
-V. From the gates of hell.
-R. Deliver their souls, O Lord.
-V. May they rest in peace.
-R. Amen.
-V. O Lord, hear my prayer.
-R. And let my cry come unto thee. 
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
 &Dominus_vobiscum2
 _
 $Oremus
@@ -124,48 +71,13 @@ V. May they rest in peace.
 R. Amen.
 
 [Lectio1]
-!Job 7:16-21
-16 Spare me, O Lord, for my days are nothing.
-17 What is a man that thou shouldst magnify him? or why dost thou set thy heart~
-upon him?
-18 Thou visitest him early in the morning, and thou provest him suddenly.
-19 How long wilt thou not spare me, nor suffer me to swallow down my spittle?
-20 I have sinned: what shall I do to thee, O keeper of men? why hast thou set me~
-opposite to thee, and I am become burdensome to myself?
-21 Why dost thou not remove my sin, and why dost thou not take away my iniquity?~
-Behold now I shall sleep in the dust: and if thou seek me in the morning, I~
-shall not be.
+@Commune/C9
 
 [Lectio2]
-!Job 14:1-6
-1 Man born of a woman, living for a short time, is filled with many miseries.
-2 Who cometh forth like a flower, and is destroyed, and fleeth as a shadow, and~
-never continueth in the same state.
-3 And dost thou think it meet to open thy eyes upon such an one, and to bring~
-him into judgment with thee?
-4 Who can make him clean that is conceived of unclean seed? is it not thou who~
-only art?
-5 The days of man are short, and the number of his months is with thee: thou~
-hast appointed his bounds which cannot be passed.
-6 Depart a little from him, that he may rest, until his wished for day come, as~
-that of the hireling.
+@Commune/C9:Lectio5
 
 [Lectio3]
-!Job 19:20-27
-20 The flesh being consumed. My bone hath cleaved to my skin, and nothing but~
-lips are left about my teeth.
-21 Have pity on me, have pity on me, at least you my friends, because the hand~
-of the Lord hath touched me.
-22 Why do you persecute me as God, and glut yourselves with my flesh?
-23 Who will grant me that my words may be written? Who will grant me that they~
-may be marked down in a book?
-24 With an iron pen and in a plate of lead, or else be graven with an instrument~
-in flint stone.
-25 For I know that my Redeemer liveth, and in the last day I shall rise out of~
-the earth.
-26 And I shall be clothed again with my skin, and in my flesh I will see my God.
-27 Whom I myself shall see, and my eyes shall behold, and not another: this my~
-hope is laid up in my bosom.
+@Commune/C9:Lectio8
 
 [Lectio4]
 From the book of St. Augustine, the Bishop, on the Care for the Deceased
