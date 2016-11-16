@@ -21,19 +21,6 @@ Responsory9
 no Te Deum
 (rubrica 1955 aut rubrica 1960) No prima Vespera
 
-[Ant Vespera]
-@Commune/C9
-
-[Versum 1]
-V. Usłyszałem głos z nieba mówiący.
-R. Błogosławieni umarli, którzy w Panu umierają.
-
-[Versum 2]
-@:Versum 1
-
-[Versum 3]
-@:Versum 1
-
 [Initial]
 $Pater noster
 $Ave Maria
@@ -57,11 +44,7 @@ $Indulgentiam
 &special('Conclusio', 'Latin')
 
 [Oratio Matutinum]
-&Dominus_vobiscum
-_
-$Oremus
-v. Stwórco i Odkupicielu wszystkich wiernych, Boże, racz odpuścić wszystkie grzechy duszom zmarłych sług i służebnic Twoich, aby przez pobożne błagania i modły nasze dostąpiły przebaczenia, którego zawsze pragnęły:
-$Qui vivis
+@Commune/C9:Oratio_Fid:s/2//
 
 [Oratio mortuorum]
 @Commune/C9:Oratio 2
@@ -121,9 +104,6 @@ Z Pierwszego Listu Świętego Pawła Apostoła do Koryntian
 43 Bywa wsiane w sprosności, a powstanie w chwalebności. Bywa wsiane w słabości, a powstanie w potężności.
 44 Bywa wsiane ciało cielesne, a powstanie ciało duchowne.
 
-[Responsory8]
-@Commune/C9
-
 [Lectio9]
 !1 Kor 15:51-58
 51 Oto tajemnicę wam powiadam: Wszyscy wprawdzie zmartwycbwstaniemy, ale nie wszyscy odmienieni będziemy,
@@ -135,11 +115,8 @@ Z Pierwszego Listu Świętego Pawła Apostoła do Koryntian
 57 Lecz dzięka Bogu, który nam dał zwycięstwo przez Pana naszego Jezusa Chrystusa.
 58 A tak, bracia moi mili! bądźcie stateczni a nieporuszeni, obfitując w robocie Pańskiéj zawsze, wiedząc, iż praca wasza nie jest próżna w Panu.
 
-[Responsory9]
-@Commune/C9
-
 [Special Prima]
-&special('Initial', 'Latin')
+&special('Initial', 'Polski')
 $Credo
 (sed rubrica 1960 aut rubrica innovata omittitur)
 
@@ -149,7 +126,7 @@ $Credo
 
 &psalm(31)
 
-&special('Oratio mortuorum2', 'Latin')
+&special('Oratio mortuorum2', 'Polski')
 
 &martyrologium
 
@@ -160,10 +137,10 @@ $Oremus
 Boże, Dawco przebaczenia i zbawienia ludzkiego miłośniku: błagamy łaskawości Twojej, abyś duszom sług i służebnic Twoich, które z tego świata zeszły, za wstawieniem się błogosławionej Marji, zawsze Panny i wszystkich Świętych Twoich, do uczestnictwa w wiecznej szczęśliwości dojść dozwolił. Przez Chrystusa Pana naszego.
 R. Amen
 
-&special('Conclusio', 'Latin')
+&special('Conclusio', 'Polski')
 
 [Special Tertia]
-&special('Initial', 'Latin')
+&special('Initial', 'Polski')
 
 &psalm(37,1,11)
 
@@ -171,12 +148,12 @@ R. Amen
 
 &psalm(55)
 
-&special('Oratio mortuorum', 'Latin')
+&special('Oratio mortuorum', 'Polski')
 
-&special('Conclusio', 'Latin')
+&special('Conclusio', 'Polski')
 
 [Special Sexta]
-&special('Initial', 'Latin')
+&special('Initial', 'Polski')
 
 &psalm(69)
 
@@ -184,12 +161,12 @@ R. Amen
 
 &psalm(85)
 
-&special('Oratio mortuorum', 'Latin')
+&special('Oratio mortuorum', 'Polski')
 
-&special('Conclusio', 'Latin')
+&special('Conclusio', 'Polski')
 
 [Special Nona]
-&special('Initial', 'Latin')
+&special('Initial', 'Polski')
 
 &psalm(101,1,13)
 
@@ -197,6 +174,6 @@ R. Amen
 
 &psalm(101,24,29)
 
-&special('Oratio mortuorum', 'Latin')
+&special('Oratio mortuorum', 'Polski')
 
-&special('Conclusio', 'Latin')
+&special('Conclusio', 'Polski')
