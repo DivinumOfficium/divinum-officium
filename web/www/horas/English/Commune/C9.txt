@@ -2,14 +2,14 @@
 Officium Defunctorum
 
 [Rule]
-Psalmi Dominca
+Psalmi Dominica
 Antiphonas horas
 Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium Conclusion
+Omit Incipit Hymnus Capitulum Lectio Preces Capitulum Commemoratio Suffragium
+Special Conclusio
 Limit Benedictiones Oratio
 Requiem gloria
-Special preces
-9 lectiones
+Votive nocturn
 
 [Ant Vespera]
 I will walk before the Lord * in the land of the living.;;114
@@ -25,37 +25,36 @@ R. Blessed are the dead which die in the Lord.
 [Ant 1]
 All that the Father giveth Me shall come to Me; * and him that cometh to Me I will in no wise cast out.
 
-[Oratio 1]
+[Oratio_a_porta]
 &pater_noster
 _
 &psalm(145)
 (sed rubrica 1955 aut rubrica 1960 omittitur)
+_
 V. From the gates of hell.
 R. Deliver their souls, O Lord!
 V. May they rest in peace.
 R. Amen.
-V. Hear my prayer, O Lord.
+V. O Lord, hear my prayer.
 R. And let my cry come unto thee.
+
+[Oratio_Fid]
 &Dominus_vobiscum2
 _
 $Oremus
 O God, who art thyself at once the Maker and the Redeemer of all thy faithful ones, grant unto the souls of thy servants and handmaids remission of all their sins, making of our entreaties unto our great Father a mean whereby they may have that forgiveness which they have ever hoped for.
 $Qui vivis
 
+[Versum 3]
+@:Versum 1
+
+[Oratio 1]
+@:Oratio_a_porta
+@:Oratio_Fid
+
 [Oratio 2]
-&pater_noster
-_
-V. From the gates of hell.
-R. Deliver their souls, O Lord!
-V. May they rest in peace.
-R. Amen.
-V. Hear my prayer, O Lord.
-R. And let my cry come unto thee.
-&Dominus_vobiscum2
-_
-$Oremus
-O God, who art thyself at once the Maker and the Redeemer of all thy faithful ones, grant unto the souls of thy servants and handmaids remission of all their sins, making of our entreaties unto our great Father a mean whereby they may have that forgiveness which they have ever hoped for.
-$Qui vivis
+@:Oratio_a_porta:s/&psalm.*\)//s
+@:Oratio_Fid
 
 [Oratio1]
 Lord, we pray thee to absolve the soul of thy servant or, thine handmaid N. (here express the name) who hath died unto the world, that he (or, she) may live unto thee. And whereinsoever while he (or, she) walked among men he (or, she) hath transgressed through the weakness of the flesh, do Thou in the exceeding tenderness of thy mercy forgive and put away.
@@ -93,7 +92,7 @@ R. And forget not the souls of thy poor for ever.
 
 [Lectio1]
 !Job 7:16-21
-16 I have done with hope, I shall now live no longer: spare me, for my days are nothing.
+16 Spare me, for my days are nothing.
 17 What is a man that thou shouldst magnify him? or why dost thou set thy heart upon him?
 18 Thou visitest him early in the morning, and thou provest him suddenly.
 19 How long wilt thou not spare me, nor suffer me to swallow down my spittle?
@@ -252,8 +251,7 @@ From the gates of hell * deliver my soul, O Lord.;;222
 Let everything that hath breath * praise the Lord.;;150
 
 [Versum 2]
-V. I heard a voice from heaven saying unto me.
-R. Blessed are the dead which die in the Lord.
+@:Versum 1
 
 [Ant 2]
 I am the resurrection and the life: * he that believeth in me, though he were dead, yet shall he live; and whosoever liveth and believeth in me shall never die.
@@ -266,7 +264,7 @@ V. From the gates of hell.
 R. Deliver their souls, O Lord!
 V. May they rest in peace.
 R. Amen.
-V. Hear my prayer, O Lord.
+V. O Lord, hear my prayer.
 R. And let my cry come unto thee.
 &Dominus_vobiscum2
 _

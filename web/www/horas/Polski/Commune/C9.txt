@@ -25,7 +25,7 @@ R. Błogosławieni umarli, którzy w Panu umierają.
 [Ant 1]
 Wszystko * co mnie dawa Ojciec, do mnie przyjdzie, a tego, co do mnie przychodzi, nie wyrzucę precz.
 
-[Oratio 1]
+[Oratio_a_porta]
 &pater_noster
 _
 &psalm(145)
@@ -36,27 +36,24 @@ V. Niech odpoczywają w pokoju.
 R. Amen.
 V. Panie, wysłuchaj modlitwę moją.
 R. A wołanie moje niech do Ciebie przyjdzie.
+
+[Oratio_Fid]
 &Dominus_vobiscum2
 _
 $Oremus
 Stwórco i Odkupicielu wszystkich wiernych, Boże, racz odpuścić wszystkie grzechy duszom zmarłych sług i służebnic Twoich, aby przez pobożne błagania i modły nasze dostąpiły przebaczenia, którego zawsze pragnęły:
 $Qui vivis
 
+[Versum 3]
+@:Versum 1
+
+[Oratio 1]
+@:Oratio_a_porta
+@:Oratio_Fid
 
 [Oratio 2]
-&pater_noster
-_
-V. Od wrót piekielnych.
-R. Wybaw dusze ich, Panie.
-V. Niech odpoczywają w pokoju.
-R. Amen.
-V. Panie, wysłuchaj modlitwę moją.
-R. A wołanie moje niech do Ciebie przyjdzie.
-&Dominus_vobiscum2
-_
-$Oremus
-Stwórco i Odkupicielu wszystkich wiernych, Boże, racz odpuścić wszystkie grzechy duszom zmarłych sług i służebnic Twoich, aby przez pobożne błagania i modły nasze dostąpiły przebaczenia, którego zawsze pragnęły:
-$Qui vivis
+@:Oratio_a_porta:s/&psalm.*\)//s
+@:Oratio_Fid
 
 [Oratio1]
 Wyzwól, prosimy Cię, Panie, duszę sługi Twego N., aby zmarły dla świata żył dla Ciebie: a co przez przebywanie w ułomnym ludzkim ciele popełnił, racz przebaczyć w niezgłębionej dobroci Twego miłosierdzia.

@@ -230,11 +230,7 @@ uterque etiam desideria habendi dereliquit.
 &teDeum
 
 [Ant Laudes]
-Salve crux pretiosa, * suscipe discipulum ejus, qui pependit in te magister meus Christus.
-Beatus Andreas * orabat, dicens: Domine Rex aeternae gloriae, suscipe me pendentem in patibulo.
-Andreas Christi famulus, * dignus Dei Apostolus, germanus Petri, et in passione socius.
-Maximilla Christo amabilis * tulit corpus Apostoli, optimo loco cum aromatibus sepelivit.
-Qui persequebantur justum, * demersisti eos Domine in inferno, et in ligno crucis dux justi fuisti.
+@:Ant Vespera
 
 [Capitulum Laudes]
 !Rom 10:10-11
@@ -306,11 +302,7 @@ V. Annuntiaverunt opera Dei.
 R. Et facta ejus intellexerunt.
 
 [Ant Vespera 3]
-Salve crux pretiosa, * suscipe discipulum ejus, qui pependit in te magister meus Christus.;;109
-Beatus Andreas * orabat, dicens: Domine, Rex aeternae gloriae, suscipe me pendentem in patibulo.;;112
-Andreas Christi famulus, * dignus Dei Apostolus, germanus Petri, et in passione socius.;;115
-Maximilla Christo amabilis * tulit corpus Apostoli, optimo loco cum aromatibus sepelivit.;;125
-Qui persequebantur justum, * demersisti eos, Domine, in inferno, et in ligno crucis dux justi fuisti.;;138 
+@:Ant Vespera:s/\.$/.;;109/m s/\.$/.;;112/m s/\.$/.;;115/m s/\.$/.;;125/m s/\.$/.;;138/m
 
 [Ant 3]
 Cum pervenisset * beatus Andreas ad locum, ubi crux parata erat, exclamavit et~
