@@ -409,8 +409,8 @@ sub votivenocturn {
     $i0 = 7;
   }
   foreach $i (0,1,2) {antetpsalm($psalms[$i], $i);}
-  push (@s, $psalm[3]);
-  push (@s, $psalm[4]);
+  push (@s, $psalms[3]);
+  push (@s, $psalms[4]);
   push (@s, "\n");
   if ($rule !~ /Limit.*?Benedictio/i) {push (@s, "\&pater_noster");}
   else {push(@s, "\$Pater noster");}
