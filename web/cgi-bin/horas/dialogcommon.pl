@@ -591,9 +591,9 @@ sub do_inclusion_substitutions(\$$)
   # substitute text or select line(s) (numbered from 1!)
   while (($substitutions =~ m{(?:s/([^/]*)/([^/]*)/([gism]*))|(?:(\d+)(-\d+)?)}g)) {
     if ($4) { 
-      local($s) = $4-1;
-      local($l) = $5 ? -$5-$s+1 : 1;
-      local(@t) = split(/\n/, $$text);
+      my($s) = $4 - 1;
+      my($l) = $5 ? -$5 - $s + 1 : 1;
+      my(@t) = split(/\n/, $$text);
       $$text = join("\n", splice(@t, $s, $l));
     }
     else {
