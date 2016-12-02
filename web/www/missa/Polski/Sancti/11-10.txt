@@ -1,0 +1,57 @@
+[Rank]
+S. Andreae Avellini Confessoris;;Duplex;;3;;vide C5
+
+[Rule]
+vide C5;
+Gloria
+
+[Comment]
+# 10 XI – Św. Andrzeja z Avellino, Wyznawcy
+! 3 klasy
+! Szaty białe
+Św. Andrzej urodził się na Sycylii w roku 1521. Ukończywszy studia prawnicze i teologiczne został kapłanem i występował jako adwokat w sądzie kościelnym. Gdy raz przytrafiło mu się drobne kłamstwo, po­rzucił adwokaturę i wstąpił do zakonu Teatynów, w którym oddał się pracy duszpasterskiej. Pracował jako misjonarz ludowy i kierownik dusz. Wyniszczony nieustanną pracą umarł nagle w Neapolu 10 listopada 1600 roku, gdy rozpoczynał Mszę świętą.
+
+Wspomnienie świętych Tryfona, Respicjusza i Nimfy, Męczenników. Święci Tryfon i Respicjusz ponieśli śmierć męczeńską w połowie II wieku. Św. Nimfa, dziewica, rodem z Sycylii, poniosła męczeństwo w Palermo.
+
+[Introitus]
+@Commune/C5:Introitus
+
+[Oratio]
+Boże, Tyś sprawił, że święty Andrzej, Twój Wyznawca, przez trudny ślub codziennego postępu w cnotach przedziwnie wznosił się ku Tobie; daj nam dzięki jego wstawiennictwu i zasługom taki mieć udział w tejże łasce, byśmy wykonując zawsze to, co doskonalsze, szczęśliwie doszli do szczytu Twej chwały.
+$Per Dominum
+
+[Lectio]
+@Commune/C5:Lectio
+
+[Graduale]
+@Commune/C5:Graduale
+
+[Evangelium]
+@Commune/C5:Evangelium
+
+[Offertorium]
+@Commune/C5:Offertorium
+
+[Secreta]
+@Commune/C5:Secreta
+
+[Communio]
+@Commune/C5:Communio
+
+[Postcommunio]
+@Commune/C5:Postcommunio
+
+[Commemoratio Oratio]
+!Pro Ss. Tryphone, Respicio et Nympha Virg., Mm.
+Daj nam, Panie, zawsze tak obchodzić uroczystość świętych Twoich Męczenników Tryfona, Respicjusza i Nimfy, abyśmy za ich wstawiennictwem doznali Twojej dobroczynnej opieki.
+$Per Dominum
+
+[Commemoratio Secreta]
+!Pro Ss. Tryphone, Respicio et Nympha Virg., Mm.
+Ofiarujemy Ci, Panie, te dary jako wyraz naszego oddania; przyjmij je łaskawie ku chwale Twoich Świętych i spraw w Swoim miłosierdziu, aby przyczyniły się do naszego zbawienia.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+!Pro Ss. Tryphone, Respicio et Nympha Virg., Mm.
+Prosimy Cię, Panie, za wstawiennictwem świętych Twoich Męczenników Tryfona, Respicjusza i Nimfy: daj nam przyjąć czystą duszą to, co spożyliśmy ustami.
+$Per Dominum
