@@ -1,0 +1,40 @@
+[Rank]
+S. Didaci Confessoris;;Semiduplex;;2;;vide C5b
+
+[Rule]
+vide C5b;
+Gloria
+
+[Comment]
+# 13 XI – Św. Dydaka, Wyznawcy
+! Wspomnienie
+! Szaty białe
+Św. Dydak urodził się około roku 1400 w Andaluzji. Wstąpił do zakonu Franciszkanów jako brat konwers. Był misjonarzem na wyspach Kanaryjskich. Odznaczał się taką roztropnością, że wybrano go gwar­dianem. Później w Rzymie opiekował się chorymi w klasztorze Ara Coeli. Otrzymał dar uzdrawiania chorych znakiem Krzyża świętego. Zmarł w Hiszpanii 12 listopada 1463 roku.
+
+[Introitus]
+@Commune/C5b:Introitus
+
+[Oratio]
+Wszechmogący, wiekuisty Bo­że, Ty przedziwnym zrządzeniem Twej Opatrzności wybierasz to, co słabe u świata, by zawstydzić to, co mocne; wejrzyj na naszą słabość i spraw łaskawie, abyśmy dzięki pobożnym modlitwom św. Dydaka, Twego Wyznawcy, za­służyli na wyniesienie do wiekui­stej chwały w niebie.
+$Per Dominum
+
+[Lectio]
+@Commune/C5b:Lectio
+
+[Graduale]
+@Commune/C5b:Graduale
+
+[Evangelium]
+@Commune/C5b:Evangelium
+
+[Offertorium]
+@Commune/C5b:Offertorium
+
+[Secreta]
+@Commune/C5b:Secreta
+
+[Communio]
+@Commune/C5b:Communio
+
+[Postcommunio]
+@Commune/C5b:Postcommunio

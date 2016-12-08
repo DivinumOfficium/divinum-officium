@@ -1,0 +1,50 @@
+[Name]
+Commune Confessoris Pontificis;Sacerdotes
+
+[Comment]
+# 19 – 2 Msza o Wyznawcy Biskupie – Sacerdotes tui
+Jedynym i wiecznym kapłanem Kościoła katolickiego jest Chrystus (lekcja). Powołani przez Boga ludzie w rozmaitym stopniu uczestniczą w kapłaństwie Chrystusa. Biskup otrzymuje pełny udział w kapłaństwie Zbawiciela i posłannictwo pasterskie. Święty biskup bronił powierzone] sobie trzody przed złem i karmił ją Chlebem Eucharystycznym (ewangelia).
+
+[Introitus]
+!Ps 131,9-10
+v. Niech kapłani Twoi odzieją się w sprawiedliwość, a święci Twoi niech się radują; przez wzgląd na Dawida, sługę Twojego, nie odtrącaj oblicza Twego Pomazańca.
+!Ps 131:1
+Pomnij, Panie, na Dawida i na całą jego gorliwość.
+&Gloria
+v. Niech kapłani Twoi odzieją się w sprawiedliwość, a święci Twoi niech się radują; przez wzgląd na Dawida, sługę Twojego, nie odtrącaj oblicza Twego Pomazańca.
+
+[Oratio]
+Wysłuchaj, prosimy Cię, Panie modlitw naszych, które zanosimy w uroczystość świętego N., Wyznawcy Twego i Biskupa, i przez zasługi tego, który potrafił Ci godnie służyć, odpuść nam wszystkie grzechy.
+$Per Dominum
+
+[Lectio]
+Czytanie z Listu świętego Pawła Apostoła do Hebrajczyków.
+!Hbr 7:23-27
+Bracia: Kapłanów było wielu, dlatego że śmierć im trwać przy życiu nie dozwalała, ale Ten, dlatego że pozostaje na wieki, wieczne ma kapłaństwo. Stąd też i zbawiać na wieki może tych, którzy przez Niego przystępują do Boga, bo żyje zawsze, aby się wstawiać za nami. Przystało bowiem, abyśmy takiego mieli Najwyższego Kapłana: świętego, niewinnego, niepokalanego, odłączonego od grzeszników, wyniesionego ponad niebiosa. Nie ma On potrzeby, jak inni kapłani, składać codziennie najpierw ofiary za swe przewinienia, a potem za przewinienia ludu. To bowiem uczynił raz jeden, ofiarowawszy samego siebie, Jezus Chrystus, Pan nasz.
+
+[Graduale]
+!Ps 131:16-17
+Kapłanów Syjonu odzieję zbawienną pomocą, a jego święci radośnie będą się weselić.
+V. Tam dla Dawida wzbudzę potęgę, Pomazaniec mój zajaśnieje chwalą. Alleluja, alleluja.
+!Ps 109:4
+Pan przysiągł i nie pożałuje: Tyś kapłanem na wieki na wzór Melchizedeka. Alleluja.
+
+[Evangelium]
+Początek ++ Ewangelii świętej według Mateusza.
+!Mt 24:42-47
+Onego czasu: Rzekł Jezus uczniom swoim: «Czuwajcie, bo nie wiecie, o której godzinie przybędzie wasz Pan. A to wiedzcie, że gdyby gospodarz wiedział, o której godzinie ma przyjść złodziej, czuwałby zaiste i nie dałby podkopać swego domu. Przeto i wy bądźcie gotowi, bo o godzinie, której się nie domyślacie, Syn człowieczy przyjdzie.
+Któż, mniemasz, jest sługą wiernym i roztropnym, którego postawił pan nad czeladzią swoją, by jej dawał żywność w czasie oznaczonym? Błogosławiony ów sługa, którego pan przyszedłszy znajdzie tak czyniącego. Zaprawdę powiadam wam, że postawi go nad wszystkimi dobrami swymi».
+
+[Offertorium]
+@Commune/C5:Offertorium
+
+[Secreta]
+Prosimy Cię, Panie, niech doroczna uroczystość świętego N., Twego Wyznawcy i Biskupa, uczyni nas godnymi Twojej miłości, a ta ofiara przebłagalna niech się przyczyni do jego niebieskiej chwały i wyjedna nam dary Twojej łaski.
+$Per Dominum
+
+[Communio]
+@Commune/C5:Communio
+
+[Postcommunio]
+Boże, Ty nagradzasz dusze wierne; spraw, abyśmy dostąpili przebaczenia przez prośby świętego N., Twego wyznawcy i Biskupa, którego chwalebną uroczystość obchodzimy.
+$Per Dominum
