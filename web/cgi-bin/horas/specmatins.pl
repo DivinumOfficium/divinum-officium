@@ -1036,6 +1036,7 @@ sub responsory_gloria {
   my $w = shift;
   my $num = shift;    
 
+
   $prev = $w;        
   if ($w =~ /(.*?)\&Gloria/is) {$prev = $1;}
   $prev =~ s/\s*$//gm;
@@ -1054,7 +1055,7 @@ sub responsory_gloria {
   if ($num == 3 || $num == 6 || $num == 9 || 
     ($rule =~ /9 lectiones/i && ($winner !~ /tempora/i || $dayname[0] !~ /(Adv|Quad)/i) && $num == 8) || 
 	($version =~ /1960/ && $rule =~ /9 lectiones/i && $rule =~ /Feria Te Deum/i && $num == 2 && 
-      ($dayname[0] !~ /quad/i)) || (gettype1960() > 1 && $num == 2) ||
+      ($dayname[0] !~ /quad/i)) || (gettype1960() > 1 && $num == 2 && $winner !~ /C12/) ||
 	($rank < 2 && $num == 2 && $winner =~ /(Sancti)/) || ($num == 2 && $winner =~ /C10/) ||
 	($num == 2 && ($rule =~ /Feria Te Deum/i || $dayname[0] =~ /Pasc[07]/i) && $rule !~ /9 lectiones/i) ) { 
     if ($w !~ /\&Gloria/i) {  
