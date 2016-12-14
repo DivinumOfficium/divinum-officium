@@ -1,0 +1,55 @@
+[Rank]
+S. Elisabeth Viduae;;Duplex;;3;;vide C7a
+
+[Rule]
+CPapaM=Pontiánum;
+vide C7a;
+Gloria
+
+[Comment]
+# 19 XI – Św. Elżbiety, Wdowy
+! 3 klasy
+! Szaty białe
+Św. Elżbieta, córka króla węgierskiego Andrzeja II i siostrzenica św. Jadwigi, urodziła się w roku 1207. Poślubiła Ludwika IV, landgrafa Turyngii. Z wielką gorliwością pełniła uczynki miłosierdzia, pielęgnując osobiście ubogich i trędowatych. Mając 20 lat owdowiała i została razem z trojgiem dzieci wyrzucona z zamku przez rodzinę męża. Wstąpiła do trzeciego zakonu św. Franciszka i całe swoje mienie obróciła na budowę szpitala dla ubogich. Zmarła 19 listopada 1231 roku.
+
+Wspomnienie św. Poncjana, papieża i męczennika. Św. Poncjan rządził Kościołem w latach 230 - 236. Na rozkaz cesarza Aleksandra został deportowany na Sardynię i tam umarł śmiercią męczeńską.
+
+[Introitus]
+@Commune/C7a:Introitus
+
+[Oratio]
+Miłosierny Boże, oświeć serca Twych wiernych i za chwalebną przyczyną św. Elżbiety spraw, abyśmy pogardzali pomyślnością doczesną, a zawsze doznawali niebieskiej pociechy.
+$Per Dominum.
+
+[Lectio]
+@Commune/C7a:Lectio
+
+[Graduale]
+@Commune/C7a:Graduale
+
+[Evangelium]
+@Commune/C7a:Evangelium
+
+[Offertorium]
+@Commune/C7a:Offertorium
+
+[Secreta]
+@Commune/C7a:Secreta
+
+[Communio]
+@Commune/C7a:Communio
+
+[Postcommunio]
+@Commune/C7a:Postcommunio
+
+[Commemoratio Oratio]
+!Pro S. Pontiano Papa et Martyre
+@Commune/C4b:Oratio Gregem
+
+[Commemoratio Secreta]
+!Pro S. Pontiano Papa et Martyre
+@Commune/C4b:Secreta Gregem
+
+[Commemoratio Postcommunio]
+!Pro S. Pontiano Papa et Martyre
+@Commune/C4b:Postcommunio Gregem

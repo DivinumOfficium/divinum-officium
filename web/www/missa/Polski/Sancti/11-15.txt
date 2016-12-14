@@ -1,0 +1,49 @@
+[Rank]
+S. Alberti Magni Episcopi Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[Name]
+Alberte
+
+[RankNewcal]
+S. Alberti Magni Episcopi Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
+
+[Rule]
+vide C4a;
+Gloria
+CredoDa
+
+[Comment]
+# 15 XI – Św. Alberta Wielkiego, Biskupa, Wyznawcy i Doktora Kościoła
+! 3 klasy
+! Szaty białe
+Św. Albert pochodził z rycerskiego rodu von Bollstädt ze Szwabii. W czasie studiów w Padwie wstąpił do Zakonu Kaznodziejskiego. Wykładał na wielu uniwersytetach, głównie w Paryżu i w Kolonii, gdzie jego słuchaczem był św. Tomasz z Akwinu. W roku 1260 został mianowany biskupem Regensburga. Po dwu latach zrezygnował z rządów diecezją i resztę pracowitego życia spędził w Kolonii. Zmarł 15 listopada 1280 roku. Zostawił bogatą spuściznę naukowa z dziedziny teologii, logiki, metafizyki, etyki, matematyki i nauk przyrodniczych. Bogaty zakres jego wiedzy zjednał mu nazwę «doktora powszechnego». Jest patronem nauk przyrodniczych.
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Boże, który świętego Alberta, Twego Biskupa i Doktora, uczyniłeś wielkim w podporządkowaniu ludzkiej mądrości wierze przez Boga objawionej, daj nam, prosimy Cię, tak przylgnąć do wskazań jego nauki, abyśmy w niebie cieszyli się doskonałą światłością.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+Panie, wejrzyj litościwie na tę ofiarę i spraw, abyśmy za przykładem i przyczyną św. Alberta z nabożnym sercem korzystali z owoców Męki Twego Syna, którą odnawiamy w tym misterium.
+$Per eumdem
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+Broń nas, Panie, od napaści wrogów przez ten święty Sakrament, któryśmi przyjęli, i za wstawiennictwem św. Alberta, Twego Wyznawcy i Biskupa, dozwól nam odetchnąć wiecznym pokojem.
+$Per Dominum

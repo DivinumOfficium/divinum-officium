@@ -1,0 +1,48 @@
+[Rank]
+In Dedicatione Basilicarum Ss. Apostolorum Petri et Pauli;;Duplex maius;;4;;ex C8
+
+[Rank1960]
+In Dedicatione Basilicarum Ss. Apostolorum Petri et Pauli;;Duplex;;3;;ex C8
+
+[RankNewcal]
+In Dedicatione Basilicarum Ss. Apostolorum Petri et Pauli;;Duplex optional;;2;;vide C8
+
+[Rule]
+ex C8;
+Gloria
+CredoDA
+
+[Comment]
+# 18 XI – Rocznica Konsekracji Bazylik Świętych Apostołów Piotra i Pawła, Apostołów
+! 3 klasy
+! Szaty białe
+Bazylika Św. Piotra na Watykanie jest symbolem powszechności Kościoła i prymatu papieży. W niej odbywają się koronacje papieży oraz beatyfikacje i kanonizacje świętych. Pierwotną bazylikę, wznie­sioną nad grobem św. Piotra przez cesarza Konstantyna, zastąpiono olbrzymią budowlą w XVII wieku. Konsekrował ją papież Urban VIII 13 listopada 1626 roku.
+Bazylika Św. Pawła przy drodze Ostyjskiej konsekrowana pierwszy raz 18 listopada 990 roku została zniszczona przez pożar w 1823 roku. Dźwignięta z ruin i wspaniale ozdobiona została konsekrowana 10 grudnia 1854 roku. Rocznicę konsekracji obu bazylik obchodzi się jednak nadal 18 listopada.
+
+[Introitus]
+@Commune/C8:Introitus
+
+[Oratio]
+Boże, który co roku pozwalasz nam obchodzić dzień konsekracji Twojej świątyni i uczestniczyć w świętych obrzędach, wysłuchaj próśb swojego ludu i daj wszystkim modlącym się w tym kościele radość z otrzymania Twoich darów.
+$Per Dominum
+
+[Lectio]
+@Commune/C8:Lectio
+
+[Graduale]
+@Commune/C8:Graduale
+
+[Evangelium]
+@Commune/C8:Evangelium
+
+[Offertorium]
+@Commune/C8:Offertorium
+
+[Secreta]
+@Commune/C8:Secreta
+
+[Communio]
+@Commune/C8:Communio
+
+[Postcommunio]
+@Commune/C8:Postcommunio

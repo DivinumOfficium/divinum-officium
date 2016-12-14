@@ -1,0 +1,69 @@
+[Rank]
+S. Clementis Papae et Martyris;;Duplex;;3;;vide C4b
+
+[Rank1570]
+S. Clementis Papae et Martyris;;Semiduplex;;2;;vide C2
+
+[RankNewcal]
+S. Clementis Papae et Martyris;;Duplex optional;;2;;vide C4b
+
+[Rule]
+OPapaM=Cleméntem;
+vide C4b;
+Gloria
+
+[Comment]
+# 23 XI – Św. Klemensa I, Papieża i Męczennika
+! 3 klasy
+! Szaty czerwone
+Św. Klemens, trzeci następca św. Piotra, rządził Kościołem od roku 88 do 97. Napisał list do Koryntian, który jest świadectwem znaczenia biskupa rzymskiego w pierwszym wieku. List jest przeniknięty troską o jedność chrześcijaństwa. Imię św. Klemensa wymienia się w kanonie Mszy świętej.
+
+Św. Felicyta, męczennica rzymska została pochowana na cmentarzu Maksymina. Pamiątkę jej śmierci obchodzono w Rzymie już w V wieku.
+
+[Introitus]
+!Iz 59:21; 56:7
+v. Mówi Pan: Mowy moje, które włożyłem w twoje usta, nie odstąpią od ust twoich; a ofiary twoje miłe będą na moim ołtarzu.
+!Ps 111:1
+Błogosławiony mąż, który boi się Pana i wielkaą radość znajduje w Jego nakazach.
+&Gloria
+v. Mówi Pan: Mowy moje, które włożyłem w twoje usta, nie odstąpią od ust twoich; a ofiary twoje miłe będą na moim ołtarzu.
+
+[Oratio]
+@Commune/C4b:Oratio
+
+[Commemoratio Oratio]
+!S. Felicitatis Martyris:
+Wszechmogący Boże, prosimy Cię, aby nas ochraniały modlitwy i zasługi św. Felicyty, Twojej Męczennicy, której uroczystość obchodzimy.
+$Per Dominum
+
+[Lectio]
+@Tempora/Pent23-0:Lectio
+
+[Graduale]
+@Commune/C4b:Graduale
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+@Commune/C4b:Secreta
+
+[Commemoratio Secreta]
+!Pro S. Felicitate
+Panie, wejrzyj łaskawie na ofiary Twego ludu i napełnij go radością za wstawiennictwem tej, której uroczystość pozwalasz mu obchodzić.
+$Per Dominum
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+[Secreta]
+@Commune/C4b:Postcommunio
+
+[Commemoratio Postcommunio]
+!Pro S. Felicitate
+Wszechmogący Boże, pokornie prosimy Cię, abyś za wstawiennictwem Twoich Świętych pomnażał w nas swoje dary i kierował naszym życiem.
+$Per Dominum
