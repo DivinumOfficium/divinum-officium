@@ -207,16 +207,10 @@ Sacerdótes justítia, et probátæ, immaculátæ ac sinceræ fidei exsultatión
 &teDeum
 
 [Ant Laudes]
-Tota pulchra * es, Maria, et macula originalis non est in te.
-Vestiméntum tuum * candidum quasi nix, et fácies tua sicut sol.
-Tu glória Jerusalem, * tu lætítia Israel, tu honorificéntia pópuli nostri.
-Benedicta es tu, * Virgo Maria, a Dómino Deo excélso præ ómnibus muliéribus super terram.
-Trahe nos, * Virgo immaculáta, post te currémus in odórem unguentórum tuórum.
+@:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-!Prov 8:22-24
-v. Dóminus possedit me in inítio viárum suárum, antequam quidquam fáceret a principio. Ab ætérno ordináta sum, et ex antíquis antequam terra fieret. Nondum erant abyssi, et ego jam concepta eram.
-$Deo gratias
+@:Capitulum Vespera
 
 [Versum 2]
 V. Immaculáta Conceptio est hódie sanctæ Maríæ Vírginis.
@@ -230,9 +224,7 @@ Ait Dóminus Deus * ad serpéntem: Inimicítias ponam inter te et mulierem, et s
 v. Signum magnum appáruit in cælo: Mulier amícta sole, et luna sub pédibus ejus, et in cápite ejus coróna stellárum duodecim.
 
 [Capitulum Tertia]
-!Prov 8:22-24
-v. Dóminus possedit me in inítio viárum suárum, antequam quidquam fáceret a principio. Ab ætérno ordináta sum, et ex antíquis antequam terra fieret. Nondum erant abyssi, et ego jam concepta eram.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Deus omnípotens * Præcinxit me virtúte.
@@ -262,8 +254,7 @@ V. Exaltábo te, Dómine, quóniam suscepísti me.
 R. Nec delectásti inimícos meos super me.
 
 [Capitulum Nona]
-!Apo 12:1
-v. Signum magnum appáruit in cælo: Mulier amícta sole, et luna sub pédibus ejus, et in cápite ejus coróna stellárum duodecim.
+@:Lectio Prima
 $Deo gratias
 
 [Responsory Nona]

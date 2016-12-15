@@ -9,15 +9,15 @@ Antiphonas horas
 Doxology=Nat
 
 [Ant Vespera]
-Conceptio gloriosae Virginis Mariae * ex semine Abrahae, ortae de tribu Juda, clara ex stirpe David;;109
-Conceptio est hodie * sanctae Mariae Virginis cujus vita inclyta cunctas illustrat ecclesias;;112
-Regali ex progenie * Maria exorta refulget: cujus precibus nos adjuvari mente et spiritu devotissime poscimus;;121
-Corde et animo * Christo canamus gloriam in hac sacra solemnitate praecelsae Genitricis Dei Mariae;;126
-Cum jucunditate * Conceptionem beatae Mariae celebremus, ut ipsa pro nobis intercedat ad Dominum Jesum Christum;;147
+Conceptio gloriosae Virginis Mariae * ex semine Abrahae, ortae de tribu Juda, clara ex stirpe David.;;109
+Conceptio est hodie * sanctae Mariae Virginis cujus vita inclyta cunctas illustrat ecclesias.;;112
+Regali ex progenie * Maria exorta refulget: cujus precibus nos adjuvari mente et spiritu devotissime poscimus.;;121
+Corde et animo * Christo canamus gloriam in hac sacra solemnitate praecelsae Genitricis Dei Mariae.;;126
+Cum jucunditate * Conceptionem beatae Mariae celebremus, ut ipsa pro nobis intercedat ad Dominum Jesum Christum.;;147
 
 [Capitulum Vespera]
 !Prov 8:22-24
-v. Dominus possedit me in initio viarum suarum antequam quidquam faceret a principio. Ab aeterno ordinata sum, et ex antiquis antequam terra fieret. Nondum erant abyssi, et ego jam concepta eram
+v. Dóminus possedit me in inítio viárum suárum, antequam quidquam fáceret a principio. Ab ætérno ordináta sum, et ex antíquis antequam terra fieret. Nondum erant abyssi, et ego jam concepta eram.
 $Deo gratias
 
 [Versum 1]
@@ -121,22 +121,16 @@ Jacob autem genuit Joseph. Hunc locum objecit nobis Julianus Augustus de dissona
 &teDeum
 
 [Ant Laudes]
-Conceptio gloriosae Virginis Mariae * ex semine Abrahae, ortae de tribu Juda, clara ex stirpe David.
-Conceptio est hodie * sanctae Maria
-Regali ex progenie * Maria exorta refulget: cujus precibus nos adjuvari mente et spiritu devotissime poscimus.
-Corde et animo * Christo canamus gloriam in hac sacra solemnitate praecelsae Genitricis Dei Mariae.
-Cum jucunditate * Conceptionem beatae Mariae celebremus, ut ipsa pro nobis intercedat ad Dominum Jesum Christum.
+@:Ant Vespera:s/;;.*//g
 
 [Ant 2]
 Conceptionem hodiernam * perpetuae Virginis Genitricis Dei Mariae solemniter celebremus, qua celsitudo throni processit, alleluia.
 
 [Versum 2]
-V. Conceptio est hodie sanctae Mariae Virginis.
-R. Cujus vita inclyta cunctas illustrat ecclesias
+@:Versum 1
 
 [Versum 3]
-V. Conceptio est hodie sanctae Mariae Virginis.
-R. Cujus vita inclyta cunctas illustrat ecclesias.
+@:Versum 1
 
 [Ant 3]
 Conceptio tua, * Dei Genitrix Virgo, gaudium annuntiavit universo mundo: ex te enim ortus est sol justitiae, Christus Deus noster: qui solvens maledictionem, dedit benedictionem, et confundens mortem, donavit nobis vitam sempiternam.
