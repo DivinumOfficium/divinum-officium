@@ -1,0 +1,46 @@
+[Rank]
+S. Bibianae Virginis et Martyris;;Semiduplex;;2.5;;vide C6a
+
+[Rank1570]
+S. Bibianae Virginis et Martyris;;Simplex;;1.1;;vide C6a
+
+[Rule]
+vide C6a;
+Gloria
+
+[Comment]
+# 02 XII – Św. Bibiany, Dziewicy i Męczennicy
+! 3 klasy
+! Szaty czerwone
+Według tradycji św. Bibiana Rzymianka poniosła śmierć męczeńską w obronie wiary i czystości w czasie prześladowania Juliana Apostaty w roku 363. W V wieku papież Symplicjusz wzniósł na Awentynie bazylikę pod jej wezwaniem, która ostała się do naszych czasów.
+
+[Introitus]
+@Commune/C6a:Introitus
+
+[Oratio]
+Boże, dawco wszelkich dóbr, który połączyłeś w służebnicy Twojej Bibianie palmę męczeństwa z kwiatem dziewictwa, za jej wstawiennictwem zespól nasze dusze z Tobą przez miłość, abyśmy wolni od niebezpieczeństw osiągnęli wieczną nagrodę. 
+$Per Dominum
+
+[Lectio]
+@Commune/C6a:Lectio
+
+[Graduale]
+@Commune/C6a:Graduale
+
+[Evangelium]
+@Commune/C6a:Evangelium
+
+[Offertorium]
+@Commune/C6a:Offertorium
+
+[Secreta]
+Prosimy Cię, Panie, przyjmij łaskawie ofiarę, którą Ci składamy przez zasługi świętej Bibiany Twojej Dziewicy i Męczennicy, i spraw, by nam nieustanną była pomocą.
+$Per Dominum
+
+[Communio]
+@Commune/C6a:Communio
+
+[Postcommunio]
+Darem Bożym szczodrze nasyceni, prosimy Cię, Panie Boże nasz, abyśmy za wstawiennictwem świętej Bibiany, Twojej Dziewicy i Męczennicy, zawsze czerpali zeń życie.
+$Per Dominum
+

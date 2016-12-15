@@ -1,0 +1,47 @@
+[Rank]
+S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4b
+
+[Rank1960]
+S. Damasi Papae et Confessoris;;Duplex;;3;;vide C4b
+
+[RankNewcal]
+S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4b
+
+[Rule]
+OPapaC=Dámasum;
+vide C4;
+Gloria
+
+[Comment]
+# 11 XII – Św. Damazego, Papieża i Wyznawcy
+! 3 klasy
+! Szaty białe
+Święty Damazy został nazwany przez św. Hieronima «dziewiczym nauczycielem dziewiczego Kościoła». W początkach wolności Kościoła stanął wobec konieczności obrony wiary przed herezją ariańską. Na jego życzenie św. Hieronim opracował przekład Pisma św. na język łaciński, który pod nazwą «Wulgaty» stał się urzędowym tekstem Kościoła. Ułożył wiele inskrypcji na grobach męczenników, które stanowią ważne dokumenty ich kultu. Zmarł w roku 384 i został pochowany w bazylice Św. Wawrzyńca «in Damaso», którą ufundował.
+
+[Introitus]
+@Commune/C4b:Introitus
+
+[Oratio]
+Wiekuisty Pasterzu, wejrzyj łaskawie na Swoją trzodę i otocz ją nieustanną opieką za przyczyną świętego Damazego, Papieża, którego ustanowiłeś pasterzem całego Kościoła.
+$Per Dominum
+
+[Lectio]
+@Commune/C4b:Lectio
+
+[Graduale]
+@Commune/C4b:Graduale
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+@Commune/C4b:Secreta
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+@Commune/C4b:Postcommunio
