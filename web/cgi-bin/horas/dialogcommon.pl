@@ -594,7 +594,7 @@ sub do_inclusion_substitutions(\$$)
       my($s) = $4 - 1;
       my($l) = $5 ? -$5 - $s + 1 : 1;
       my(@t) = split(/\n/, $$text);
-      $$text = join("\n", splice(@t, $s, $l));
+      $$text = join("\n", splice(@t, $s, $l))."\n";
     }
     else {
       eval "\$\$text =~ s/$1/$2/$3";
