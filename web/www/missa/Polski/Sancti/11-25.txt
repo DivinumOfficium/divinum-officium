@@ -1,0 +1,45 @@
+[Rank]
+S. Catharinae Virginis et Martyris;;Duplex;;3;;vide C6
+
+[RankNewcal]
+S. Catharinae Virginis et Martyris;;Duplex optional;;2;;vide C6
+
+[Rule]
+vide C6;
+Gloria
+
+[Comment]
+# 25 XI – Św. Katarzyny, Dziewicy i Męczennicy
+! 3 klasy
+! Szaty czerwone
+Według legendy św. Katarzyna, obdarzona wyjątkowymi zdolnościami, zdobyta w Aleksandrii wszechstronne wykształcenie i wielu uczonych pogańskich pociągnęła do wiary w Chrystusa. Odrzuciwszy prośbę cesarza Maksymina o swoją rękę została ścięta. Ciało jej aniołowie przenieśli na górę Synaj. Wzniesiono tam sławny klasztor pod jej wezwaniem.
+
+[Introitus]
+@Commune/C6:Introitus
+
+[Oratio]
+Boże, Ty na szczycie góry Synaj dałeś prawo Mojżeszowi i w tym samym miejscu cudownie umieściłeś przez świętych mnichów Swoich ciało świętej Katarzyny, Twojej Dziewicy i Męczennicy; spraw, prosimy, abyśmy przez jej zasługi i wstawiennictwo mogli dojść do Góry, którą jest Chrystus:
+$Qui tecum
+
+[Lectio]
+@Commune/C6:Lectio
+
+[Graduale]
+@Commune/C6:Graduale
+
+[Evangelium]
+@Commune/C6:Evangelium
+
+[Offertorium]
+@Commune/C6:Offertorium
+
+[Secreta]
+Przyjmij, Panie, dary, które Ci składamy w uroczystość świętej Katarzyny, Dziewicy i Męczennicy Twojej: ufamy, że jej wstawiennictwo przyczyni się do naszego wyzwolenia.
+$Per Dominum
+
+[Communio]
+@Commune/C6:Communio
+
+[Postcommunio]
+Panie, niech nas wspomaga przyjęty Sakrament, i za wstawiennictwem świętej Katarzyny, Twojej Dziewicy i Męczennicy, niech sprawi, byśmy się radowali nieustanną opieką.
+$Per Dominum

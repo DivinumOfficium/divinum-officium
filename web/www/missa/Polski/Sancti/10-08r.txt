@@ -1,0 +1,52 @@
+[Rank]
+S. Birgittae Viduae;;Duplex;;3;;vide C7a
+
+[RankNewcal]
+S. Birgittae Viduae;;Duplex optional;;2;;vide C7a
+
+[Rule]
+vide C7a;
+Gloria
+
+[Introitus]
+@Commune/C7a:Introitus
+
+[Oratio]
+Panie Boże nasz, Ty przez Jednorodzonego Syna Twego objawiłeś świętej Brygidzie niebieskie tajemnice: za jej łaskawym orędownictwem daj sługom Twoim radość i wesele w objawieniu wiekuistej Twej chwały.
+$Per eundem
+
+[Lectio]
+@Commune/C7a:Lectio1
+
+[Graduale]
+@Commune/C7a:Graduale
+
+[Evangelium]
+@Commune/C7a:Evangelium
+
+[Offertorium]
+@Commune/C7a:Offertorium
+
+[Secreta]
+@Commune/C7a:Secreta
+
+[Communio]
+@Commune/C7a:Communio
+
+[Postcommunio]
+@Commune/C7a:Postcommunio
+
+[Commemoratio Oratio]
+!Pro Ss. Sergio, Baccho, Marcello et Apulejo Martyribus
+Niech nas wspierają, Panie, błogosławione zasługi świętych Twoich Męczenników Sergiusza, Bachusa, Marcelego i Apuliusza i niech nas zapalają Twoją miłością.
+$Per Dominum
+
+[Commemoratio Secreta]
+!Pro Ss. Sergio, Baccho, Marcello et Apulejo Martyribus
+Prosimy Cię, Panie, aby ta hostia, którą składamy w ofierze, za wstawiennictwem Twoich Świętych przebłagała Twój majestat. 
+$Per Dominum
+
+[Commemoratio Postcommunio]
+!Pro Ss. Sergio, Baccho, Marcello et Apulejo Martyribus
+Przyjęte Sakramenty niech nas uzbroją, Panie, a pomoc z nieba niech nas wesprze za przyczyną świętych Twoich Męczenników Sergiusza, Bachusa, Marcelego i Apuliusza przeciw wszelkim grożącym nam niebezpieczeństwom.
+$Per Dominum

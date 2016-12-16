@@ -1,0 +1,72 @@
+[Rank]
+S. Petri Chrysologi Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[RankNewcal]
+S. Petri Chrysologi Episcopi Confessoris Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
+
+[Name]
+Petre Chrysologe
+
+[Rule]
+vide C4a;
+Gloria
+CredoDA
+
+[Comment]
+# 04 XII – Św. Piotra Chryzologa, Biskupa, Wyznawcy i Doktora Kościoła
+! 3 klasy
+! Szaty białe
+Niepospolity dar wymowy zjednał św. Piotrowi przydomek «Chryzologa», czyli «Złotoustego». Widzenie papieża Sykstusa III przyczyniło się do wyniesienia św. Piotra na stolicę biskupią w Rawennie w r. 433. Wspólnie z papieżem Leonem I bronił dogmatu o dwu naturach w Chrystusie przeciw monofizytom. Umarł w roku 450.
+
+Wspomnienie Św. Barbary, Dziewicy i Męczennicy. Św. Barbara poniosła męczeństwo w Nikomedii na przełomie III i IV wieku. Jest patronką górników i artylerzystów oraz patronką dobrej śmierci.
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Boże, Tyś cudownie objawił Swoją wolą, by na rządcę i nauczyciela Twego Kościoła wybrano św. Piotra Chryzologa, spraw, prosimy, abyśmy mogli mieć orędownikiem w niebie tego, który na ziemi był dla nas mistrzem życia.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+!Syr 44:16
+Oto wielki kapłan, który za dni swoich podobał się Bogu.
+!Ps 44:20
+Nie znalazł się jemu podobny, który by zachował prawo Najwyższego. Alleluja, alleluja.
+!Ps 109:4
+Tyś kapłanem na wieki na wzór Melchizedeka. Alleluja.
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+Panie, niech nam nie zabraknie serdecznej modlitwy świętego Piotra Chryzologa, Twego Biskupa i Doktora, która zaleci Tobie naszą ofiarę i wyjedna nam Twoje przebaczenie.
+$Per Dominum.
+
+[Communio]
+!Mt 25:20; 25:21
+Panie, dałeś mi pięć talentów, otom drugie pięć zyskał. Dobrze, sługo prawy i wierny, żeś w małym był wierny, dam ci władzę nad wieloma: wejdź do wesela Pana twego.
+
+[Postcommunio]
+Prosimy Cię, Panie, niech święty Piotr Chryzolog, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
+$Per Dominum
+
+[Commemoratio Oratio]
+!Wspomnienie Św. Barbary, Dziewicy i Męczennicy.
+Panie, niech nas broni od wszelkich przeciwności wstawiennictwo św. Barbary, Dziewicy i Męczennicy Twojej. Obyśmy za jej chwalebnym orędownictwem zasłużyli sobie przez prawdziwą pokutę i szczerą spowiedź na przyjęcie w godzinę śmierci Najświętszego Sakramentu Ciała i Krwi Pana naszego Jezusa Chrystusa:
+$Per Dominum
+
+[Commemoratio Secreta]
+!Wspomnienie Św. Barbary, Dziewicy i Męczennicy.
+Przyjmij, Panie, dary, które Ci składamy w uroczystość świętej Barbary, Dziewicy i Męczennicy Twojej: ufamy, że jej wstawiennictwo przyczyni się do naszego wyzwolenia.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+!Wspomnienie Św. Barbary, Dziewicy i Męczennicy.
+Panie, niech nas wspomaga przyjęty Sakrament, i za wstawiennictwem świętej Barbary, Twojej Dziewicy i Męczennicy, niech sprawi, byśmy się radowali nieustanną opieką. 
+$Per Dominum

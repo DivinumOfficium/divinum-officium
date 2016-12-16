@@ -2,10 +2,9 @@
 Officium parvum Beatae Mariae Virginis
 
 [Rank]
-Officium parvum Beatae Mariae Virginis tempore Adventi;;Simplex;;1;;vide C11
+Officium parvum Beatae Mariae Virginis tempore Adventi;;Simplex;;1
 
 [Rule]
-ex C11;
 Ave only
 Doxology=Nat
 Omit Suffragium Conclusion
@@ -20,81 +19,22 @@ Dabit ei Dominus * sedem David patris ejus, et regnabit in aeternum.;;126
 Ecce ancilla Domini, * fiat mihi secundum verbum tuum.;;147
 
 [Versum 1]
-V. Diffusa est gratia in labiis tuis.
-R. Propterea benedixit te Deus in aeternum.
+@Commune/C12
 
 [Ant 1]
-Spiritus Sanctus * in te descendet Maria: ne timeas, habebis in utero Filium Dei, alleluia.
+Spiritus Sanctus * in te descendet, Maria: ne timeas, habebis in utero Filium Dei, alleluia.
 
 [Oratio]
-Deus, qui de beatae Mariae Virginis utero Verbum tuum, Angelo nuntiante, carnem suscipere voluisti: praesta supplicibus tuis; ut, qui vere eam Genitricem Dei credimus, ejus apud te intercessionibus adjuvemur.
-$Per eumdem
+@Commune/C12:Oratio 2
 
 [Special Completorium]
-$Ave Maria
-$Deus in adjutorium
-_
-&psalm(128)
-_
-&psalm(129)
-_
-&psalm(130)
-_
-#Hymnus
-v. Memento, rerum Conditor,
-Nostri quod olim corporis,
-Sacrata ab alvo Virginis
-Nascendo formam sumpseris.
-_
-Maria Mater gratiae,
-Dulcis Parens clementiae,
-Tu nos ab hoste protege,
-Et mortis hora suscipe.
-_
-Jesu, tibi sit gloria,
-Qui natus es de Virgine,
-Cum Patre, et almo Spiritu,
-In sempiterna saecula. Amen.
-_
-#Capitulum
-!Isa 7:14-15
-v. Ecce virgo concipiet et pariet filium, et vocabitur nomen ejus Emmanuel. Butyrum et mel comedet, ut sciat reprobare malum, et eligere bonum.
-$Deo gratias
-_
-V. Angelus Domini nuntiavit Mariae.
-R. Et concepit de Spiritu Sancto.
-_
-Ant. Spiritus Sanctus * in te descendet Maria: ne timeas, habebis in utero Filium Dei, alleluia.
-&psalm(233)
-Ant. Spiritus Sanctus * in te descendet Maria: ne timeas, habebis in utero Filium Dei, alleluia.
-_
-Kyrie eleison. Christe eleison. Kyrie eleison.
-_
-&Dominus_vobiscum
-_
-v. Oremus
-Beatae et gloriosae semper Virginis Mariae, quaesumus Domine, intercessio gloriosa nos protegat, et ad vitam perducat aeternam.
-$Per Dominum
+@Commune/C12::s/^!.*/!Isa 7:14-15/m s/^v. .*/v. Ecce virgo concipiet et pariet filium, et vocabitur nomen ejus Emmanuel. Butyrum et mel comedet, ut sciat reprobare malum, et eligere bonum./m s/^V. Ora .*/V. Angelus Domini nuntiavit Mariae./m s/^R. Ut .*/R. Et concepit de Spiritu Sancto./m s/^Ant. .*/Ant. Spiritus Sanctus * in te descendet Maria: ne timeas, habebis in utero Filium Dei, alleluia./mg
 
 [Invit]
 Ave Maria, gratia plena * Dominus tecum.
 
 [Ant Matutinum]
-Benedicta tu * in mulieribus, et benedictus fructus ventris tui.;;8
-Sicut myrrha * electa odorem dedisti suavitatis sancta Dei Genitrix.;;18
-Ante torum * hujus Virginis frequentate nobis dulcia cantica dramatis.;;23
-V. Specie tua et pulchritudine tua.
-R. Intende, prospere procede, et regna.
-Specie tua * et pulchritudine tua intende, prospere procede, et regna.;;44
-Adjuvabit eam * Deus vultu suo: Deus in medio ejus, non commovebitur.;;45
-Sicut laetantium * omnium nostrum habitatio est in te, sancta Dei Genitrix.;;86
-V. Adjuvabit eam Deus vultu suo.
-R. Deus in medio ejus, non commovebitur.
-Gaude Maria Virgo, * cunctas haereses sola interemisti in universo mundo.;;95
-Dignare me * laudare te, Virgo sacrata: da mihi virtutem contra hostes tuos.;;96
-Angelus Domini nuntiavit Mariae, et concepit de Spiritu Sancto.;;97
-V. Elegit eam Deus, et praeelegit eam.
-R. In tabernaculo suo habitare facit eam.
+@Commune/C11::s/V\. .*/V. Diffusa est gratia in labiis tuis./g s/R\. .*/R. Propterea benedixit te Deus in aeternum./ s/^Post partum.*/Angelus Domini nuntiavit Mariae, et concepit de Spiritu Sancto.;;97/m
 
 [Lectio1]
 !Luc 1:26-28
@@ -139,11 +79,7 @@ R. Ut benedicta dicaris inter omnes mulieres.
 R. Ut benedicta dicaris inter omnes mulieres.
 
 [Ant Laudes]
-Missus est * Gabriel Angelus ad Mariam Virginem desponsatam Joseph.
-Ave Maria, * gratia plena, Dominus tecum: benedicta tu in mulieribus, alleluia.
-Ne timeas Maria: * invenisti gratiam apud Dominum: ecce concipies et paries filium, alleluia.
-Dabit ei Dominus * sedem David patris ejus, et regnabit in aeternum.
-Ecce ancilla Domini, * fiat mihi secundum verbum tuum.
+@:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
 !Isa 11:1-2
@@ -161,181 +97,13 @@ R. Et benedictus fructus ventris tui.
 @:Ant 1
 
 [Special Prima]
-$Ave Maria
-$Deus in adjutorium.
-_
-#Hymnus
-v. Memento, rerum Conditor,
-Nostri quod olim corporis
-Sacrata ab alvo Virginis
-Nascendo formam sumpseris.
-_
-Maria Mater gratiae,
-Dulcis Parens clementiae,
-Tu nos ab hoste protege,
-Et mortis hora suscipe.
-_
-Jesu, tibi sit gloria,
-Qui natus es de Virgine,
-Cum Patre, et almo Spiritu,
-In sempiterna saecula.
-Amen.
-_
-Ant. Missus est * Gabriel Angelus ad Mariam Virginem desponsatam Joseph.
-&psalm(53)
-_
-&psalm(84)
-_
-&psalm(116)
-Ant. Missus est * Gabriel Angelus ad Mariam Virginem desponsatam Joseph.
-_
-#Capitulum
-!Isa 7:14-15
-v. Ecce virgo concipiet et pariet filium, et vocabitur nomen ejus Emmanuel. Butyrum et mel comedet, ut sciat reprobare malum, et eligere bonum.
-$Deo gratias
-_
-V. Dignare me laudare te, Virgo sacrata.
-R. Da mihi virtutem contra hostes tuos.
-_
-Kyrie eleison. Christe eleison. Kyrie eleison.
-_
-$Dominus_vobiscum
-_
-v. Oremus.
-Deus, qui virginalem aulam beatae Mariae in qua habitares, eligere dignatus es: da, quaesumus; ut sua nos defensione munitos, jucundos facias suae interesse commemorationi
-$Qui vivis
+@Commune/C12::s/^!.*/!Isa 7:14-15/m s/^v. .*/v. Ecce virgo concipiet et pariet filium, et vocabitur nomen ejus Emmanuel. Butyrum et mel comedet, ut sciat reprobare malum, et eligere bonum./m s/^Ant. .*/Ant. Missus est * Gabriel Angelus ad Mariam Virginem desponsatam Joseph./mg
 
 [Special Tertia]
-$Ave Maria
-$Deus in adjutorium
-_
-#Hymnus
-v. Memento, rerum Conditor,
-Nostri quod olim corporis
-Sacrata ab alvo Virginis
-Nascendo formam sumpseris.
-_
-Maria Mater gratiae,
-Dulcis Parens clementiae,
-Tu nos ab hoste protege,
-Et mortis hora suscipe.
-_
-Jesu, tibi sit gloria,
-Qui natus es de Virgine,
-Cum Patre, et almo Spiritu
-In sempiterna saecula.
-Amen.
-_
-Ant. Ave Maria, * gratia plena, Dominus tecum: benedicta tu in mulieribus, alleluia.
-&psalm(119)
-_
-&psalm(120)
-_
-&psalm(121)
-Ant. Ave Maria, * gratia plena, Dominus tecum: benedicta tu in mulieribus, alleluia.
-_
-#Capitulum
-!Isa 11:1-2
-v. Egredietur virga de radice Jesse, et flos de radice ejus ascendet. Et requiescet super eum Spiritus Domini.
-$Deo gratias
-_
-V. Diffusa est gratia in labiis tuis.
-R. Propterea benedixit te Deus in aeternum.
-_
-Kyrie eleison. Christe eleison. Kyrie eleison.
-_
-&Dominus_vobiscum
-_
-v. Oremus.
-Deus, qui salutis aeternae, beatae Mariae virginitate fecunda, humano generi praemia praestitisti: tribue, quaesumus; ut ipsam pro nobis intercedere sentiamus, per quam meruimus auctorem vitae suscipere, Dominum nostrum Jesum Christum Filium tuum:
-$Qui tecum
+@Commune/C12::s/^!.*/!Isa 11:1-2/m s/^v. .*/v. Egredietur virga de radice Jesse, et flos de radice ejus ascendet. Et requiescet super eum Spiritus Domini./m s/^Ant. .*/Ant. Ave Maria, * gratia plena, Dominus tecum: benedicta tu in mulieribus, alleluia./mg
 
 [Special Sexta]
-$Ave Maria.
-$Deus in adjutorium
-_
-#Hymnus
-v. Memento, rerum Conditor,
-Nostri quod olim corporis
-Sacrata ab alvo Virginis
-Nascendo formam sumpseris.
-_
-Maria Mater gratiae,
-Dulcis Parens clementiae,
-Tu nos ab hoste protege,
-Et mortis hora suscipe.
-_
-Jesu, tibi sit gloria,
-Qui natus es de Virgine,
-Cum Patre, et almo Spiritu
-In sempiterna saecula.
-Amen.
-_
-Ant. Ne timeas, Maria: * invenisti gratiam apud Dominum: ecce concipies et paries filium, alleluia.
-&psalm(122)
-_
-&psalm(123)
-_
-&psalm(124)
-Ant. Ne timeas, Maria: * invenisti gratiam apud Dominum: ecce concipies et paries filium, alleluia.
-_
-#Capitulum
-!Luc 1:32-33
-v. Dabit illi Dominus Deus sedem David patris ejus, et regnabit in domo Jacob in aeternum, et regni ejus non erit finis.
-$Deo gratias
-_
-V. Benedicta tu in mulieribus.
-R. Et benedictus fructus ventris tui.
-_
-Kyrie eleison. Christe eleison. Kyrie eleison.
-_
-&Dominus_vobiscum
-_
-v. Oremus.
-Concede, misericors Deus, fragilitati nostrae praesidium: ut qui sanctae Dei Genitricis memoriam agimus, intercessionis ejus auxilio, a nostris iniquitatibus resurgamus.
-$Per eumdem
+@Commune/C12::s/^!.*/!Luc 1:32-33/m s/^v. .*/v. Dabit illi Dominus Deus sedem David patris ejus, et regnabit in domo Jacob in aeternum, et regni ejus non erit finis./m s/^Ant. .*/Ant. Ne timeas, Maria: * invenisti gratiam apud Dominum: ecce concipies et paries filium, alleluia./mg
 
 [Special Nona]
-$Ave Maria
-$Deus in adjutorium
-_
-#Hymnus
-v. Memento, rerum Conditor,
-Nostri quod olim corporis,
-Sacrata ab alvo Virginis
-Nascendo formam sumpseris.
-_
-Maria Mater gratiae,
-Dulcis parens clementiae,
-Tu nos ab hoste protege,
-Et mortis hora suscipe.
-_
-Jesu, tibi sit gloria,
-Qui natus es de Virgine,
-Cum Patre, et almo Spiritu,
-In sempiterna saecula.
-Amen.
-_
-Ant. Ecce ancilla Domini, * fiat mihi secundum verbum tuum.
-&psalm(125)
-_
-&psalm(126)
-_
-&psalm(127)
-Ant. Ecce ancilla Domini, * fiat mihi secundum verbum tuum.
-_
-#Capitulum
-!Isa 7:14-15
-v. Ecce virgo concipiet et pariet filium, et vocabitur nomen ejus Emmanuel. Butyrum et mel comedet, ut sciat reprobare malum, et eligere bonum.
-$Deo gratias.
-_
-V. Angelus Domini nuntiavit Mariae.
-R. Et concepit de Spiritu Sancto.
-_
-Kyrie eleison. Christe eleison. Kyrie eleison.
-_
-&Dominus_vobiscum
-_
-v. Oremus.
-Famulorum tuorum, quaesumus, Domine, delictis ignosce: ut qui tibi placere de actibus nostris non valemus, Genitricis Filii tui Domini nostri intercessione salvemur:
-$Qui tecum
+@Commune/C12::s/^!.*/!Isa 7:14-15/m s/^v. .*/v. Ecce virgo concipiet et pariet filium, et vocabitur nomen ejus Emmanuel. Butyrum et mel comedet, ut sciat reprobare malum, et eligere bonum./m s/^Ant. .*/Ant. Ecce ancilla Domini, * fiat mihi secundum verbum tuum./gm s/^V. Post partum.*/V. Angelus Domini nuntiavit Mariae./m s/R. Dei.*/R. Et concepit de Spiritu Sancto./m

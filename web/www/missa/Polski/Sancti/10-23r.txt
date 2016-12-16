@@ -1,0 +1,46 @@
+[Rank]
+S. Antonii Mariae Claret Episcopi Confessoris;;Duplex;;3;;vide C4
+
+[RankNewcal]
+S. Antonii Mariae Claret Episcopi Confessoris;;Duplex optional;;2;;vide C4
+
+[Rule]
+vide C4;
+Gloria
+
+[Comment]
+# 23 X – Św. Antoniego Marii Claret, Biskupa i Wyznawcy
+! 3 klasy
+! Szaty białe
+Św. Antoni Maria Claret urodził się w Sallent koło Barcelony 23 grudnia 1807 roku. W młodym wieku uczył się tkactwa. Idąc za głosem powołania wstąpił do stanu duchownego. Jako kapłan pracował najpierw w duszpasterstwie parafialnym, a później jako misjonarz apostolski w Katalonii i na Wyspach Kanaryjskich. W roku 1849 założył Zgromadzenie Synów Niepokalanego Serca Najświętszej Maryi Panny. Wkrótce potem został mianowany arcybiskupem Santiago na Kubie i gorliwie pracował nad odrodzeniem życia katolickiego w tej diecezji. Dla chrześcijańskiego wychowania dziewcząt założył Zgromadzenie Sióstr Nauczycielek pod wezwaniem Maryi Niepokalanej. W roku 1357 został odwołany do Hiszpanii i objął urząd spowiednika królowej Izabeli II. Towarzyszył jej również na wygnaniu we Francji. Na I Soborze Watykańskim bronił nieomylności papieża. Gorliwie szerzył nabożeństwo do Najświętszego Sakramentu i Niepokalanego Serca Najświętszej Maryi Panny. Zmarł we Francji 24 października 1870 roku.
+
+[Introitus]
+@Commune/C4d:Introitus
+
+[Oratio]
+Boże, który ozdobiłeś apostolskimi cnotami świętego Antoniego Marię, Swojego Wyznawcę i Biskupa, i przez niego utworzyłeś w Kościele nowe Zgromadzenia duchownych i dziewic, spraw prosimy, abyśmy kierując sie jego radami i korzystając z jego zasług zawsze szukali zbawienia dusz.
+$Per Dominum
+
+[Lectio]
+@Commune/C4d:Lectio
+
+[Graduale]
+@Commune/C4d:Graduale
+
+[Evangelium]
+@Commune/C4d:Evangelium
+
+[Offertorium]
+@Commune/C4d:Offertorium
+
+[Secreta]
+Prosimy Cię, Panie, niech doroczna uroczystość świętego Antoniego Marii Claret, Twego Wyznawcy i Biskupa, uczyni nas godnymi Twojej miłości, a ta ofiara przebłagalna niech się przyczyni do jego niebieskiej chwały i wyjedna nam dary Twojej łaski.
+$Per Dominum
+
+[Communio]
+@Commune/C4d:Communio
+
+[Postcommunio]
+Boże, Ty nagradzasz dusze wierne; spraw, abyśmy dostąpili przebaczenia przez prośby świętego Antoniego Marii Claret, Twego wyznawcy i Biskupa, którego chwalebną uroczystość obchodzimy.
+$Per Dominum
+

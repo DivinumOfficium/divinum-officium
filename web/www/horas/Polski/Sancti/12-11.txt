@@ -1,0 +1,36 @@
+[Rank]
+Św. Damazego Papieża i Wyznawcy;;Semiduplex;;2.5;;vide C4
+
+[Rank1960]
+Św. Damazego Papieża i Wyznawcy;;Duplex;;3;;vide C4
+
+[RankNewcal]
+Św. Damazego Papieża i Wyznawcy;;Semiduplex;;2.5;;vide C4
+
+[Rule]
+vide C4;
+9 lectiones;
+OPapaC=Damazego;
+Doxology=Nat
+Omit Preces
+Commemoratio3
+
+[Oratio]
+Wysłuchaj, Panie, próśb naszych a wstawiennictwem błogosławionego Damazego Wyznawcy Twego i Biskupa przebłagany, odpuść nam grzechy nasze i obdarz pokojem.
+$Per Dominum
+
+[Commemoratio 2]
+!Wspomnienie Dnia w Oktawie Niepokalanego Poczęcia N.M.P.
+@Sancti/12-08:Oratio
+
+[Lectio7]
+@Commune/C4:Lectio71
+
+[Lectio8]
+@Commune/C4:Lectio81
+
+[Lectio9]
+@Commune/C4:Lectio91
+
+[Ant 3] (rubrica Divino aut rubrica 1955 aut rubrica 1960)
+@Commune/C4:Ant 3 summi Pontificis

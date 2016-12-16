@@ -1,0 +1,59 @@
+[Rank]
+S. Silvesteri Abbatis Confessoris;;Duplex;;3;;vide C4c
+
+[Rule]
+vide C4c;
+Gloria
+
+[Comment]
+# 26 XI – Św. Katarzyny, Dziewicy i Męczennicy
+! 3 klasy
+! Szaty białe
+Św. Sylwester urodził się w Osimo w 1177 roku. Studiował prawo na uniwersytecie w Bolonii, a później został kanonikiem w rodzinnym mieście. Wstrząśnięty widokiem rozkładających się zwłok krewniaka, porzucił świat i został pustelnikiem. Gdy zgromadzili się przy nim uczniowie, założył nowy zakon oparty na regule św. Benedykta i kierował nim do śmierci w roku 1267. Zakon założony przez św. Sylwestra istnieje do dzisiaj pod nazwą Sylwestrynów.
+
+Wspomnienie Św. Piotra z Aleksandrii, Biskupa i Męczennika. Św. Piotr, biskup Aleksandrii, potępił herezję Ariusza. Pewnej nocy ukazał mu się Chrystus w rozdartej szacie, która symbolizowała Kościół rozdarty przez herezje. Św. Piotr został ścięty 25 listopada 311 roku.
+
+[Introitus]
+@Commune/C4c:Introitus
+
+[Oratio]
+Najłaskawszy Boże, gdy święty Opat Sylwester rozmyślał przy otwartym grobie nad znikomością tego świata, raczyłeś go powołać do pustelni i ozdobiłeś zasługami świętego życia; prosimy Cię pokornie, byśmy za jego przykładem, gardząc dobrami ziemskimi, zażywali wiecznego obcowania z Tobą.
+$Per Dominum
+
+[Commemoratio Oratio]
+!Pro S. Petro Alexandrino Episcopo et Martyre
+Wszechmogący Boże, wejrzyj na słabość naszą, a skoro nas obciąża brzemię własnej działalności, niech nas osłania dostojne wstawiennictwo świętego Piotra, Twojego Męczennika i Biskupa.
+$Per Dominum
+
+[Lectio]
+@Commune/C4c:Lectio
+
+[Graduale]
+@Commune/C4c:Graduale
+
+[Evangelium]
+@Commune/C4c:Evangelium
+
+[Offertorium]
+@Commune/C4c:Offertorium
+
+[Secreta]
+Gdy z czcią składamy te dary boskiemu majestatowi Twojemu, błagamy Cię, Panie, abyśmy za przykładem św. Sylwestra, Opata, przez pobożne przygotowanie umysłu i czystość serca zasłużyli godnie przyjąć Ciało i Krew Syna Twojego: 
+$Qui tecum
+
+[Commemoratio Secreta]
+!Pro S. Petro Alexandrino Episcopo et Martyre
+Panie, przyjmij łaskawie przez zasługi świętego Piotra Męczennika i Biskupa ofiarę, którą Ci składamy, i spraw, aby się stała dla nas nieustanną pomocą.
+$Per Dominum
+
+[Communio]
+@Commune/C4c:Communio
+
+[Postcommunio]
+Panie, gdy nas posiliłeś Boską ucztą, daj nam tak iść śladami świętego Opata Sylwestra, abyśmy wespół ze Świętymi otrzymali obfitą zapłatę w Królestwie Twojej chwały.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+!Pro S. Petro Alexandrino Episcopo et Martyre
+Pokrzepieni uczestnictwem w świętej uczcie prosimy Cię, Panie, Boże nasz, abyśmy za przyczyną świętego Piotra Twego Męczennika i Biskupa, doznali skutków tajemnic, które ze czcią sprawujemy.
+$Per Dominum

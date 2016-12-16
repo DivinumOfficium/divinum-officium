@@ -1,0 +1,32 @@
+[Rank]
+De III die Infra Octavam Immaculatae Concept. Beatae Mariae Virgini;;Semiduplex;;2.5;;vide Sancti/12-08
+
+[Rule]
+vide Sancti/12-08;
+9 lectiones;
+CPapaM=Melchíadem;
+Doxology=Nat
+
+[Comment]
+# 10 XII – Św. Melchiadesa, Papieża i Męczennika
+! Wspomnienie
+! Szaty czerwone
+Św. Melchiades wycierpiał wiele za wiarę w czasie ostatnich prześladowań rzymskich. Dożył jednak szczęśliwej chwili ogłoszenia edyktu mediolańskiego, którym cesarz Konstantyn zapewnił Kościołowi wolność. Zmarł w roku 314 śmiercią naturalną.
+
+[Commemoratio Oratio]
+!Pro S. Melchiade Papa et Mart. 
+@Commune/C2c:Oratio:s/N\./Melchíadis/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
+
+[Commemoratio Secreta]
+!Pro S. Melchiade Papa et Mart. 
+@Commune/C2c:Secreta:s/N\./Melchíadis/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
+
+[Commemoratio Postcommunio]
+!Pro S. Melchiade Papa et Mart. 
+@Commune/C2c:Postcommunio:s/N\./Melchíade/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem
