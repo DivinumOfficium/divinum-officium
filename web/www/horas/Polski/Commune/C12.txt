@@ -14,11 +14,6 @@ Psalmi Dominica
 Antiphonas horas
 Feria Te Deum
 
-
-[Versum 3]
-V. Rozlała się wdzięczność po wargach twoich.
-R. Dlatego cię błogosławił Bóg na wieki.
-
 [Ant 3]
 Błogosławiona Matko, * i nietknięta dziewico, chwalebna Królowo świata, wstawiaj się za nami u Pana.
 
@@ -31,30 +26,22 @@ Boże, który chciałeś, ażeby Słowo Twoje za zwiastowaniem Anielskiem z żyw
 $Per eumdem
 
 [Special Completorium]
+#Początek
 $Ave Maria
+V. Nawróć nas +++ Boże, nasz zbawco.
+R. I odwróć swój gniew od nas.
 $Deus in adjutorium
+&Gloria
+&Alleluia
 _
+#Psalmy
 &psalm(128)
 _
 &psalm(129)
 _
 &psalm(130)
 _
-#Hymnus
-v. Pomnij, Stwórco wszechrzeczy,
-Żeś ongiś, rodząc się
-Z świętego Dziewicy żywota,
-Przyjął postać ciała naszego
-_
-Marjo, Matko łaski,
-Słodka Matko miłosierdzia,
-Ty chroń nas od wroga,
-I przyjmij w godzinę śmierci.
-_
-Jezu, Tobie niechaj będzie chwała,
-który narodziłeś się z Dziewicy,
-oraz Ojcu i dobroczynnemu Duchowi,
-po nieskończone wieki. Amen.
+@:Hymnus minor
 _
 #Capitulum
 !Syr 24:24
@@ -72,7 +59,7 @@ Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
 _
 &Dominus_vobiscum
 _
-v. Módlmy się.
+$Oremus
 Niech błogosławionej i chwalebnej zawsze Dziewicy Maryi, prosimy Panie, chwalebne wstawiennictwo nas strzeże, i do życia prowadzi wiecznego.
 $Per Dominum
 
@@ -80,21 +67,7 @@ $Per Dominum
 Zdrowaś Maryjo, łaskiś pełna * Pan z Tobą.
 
 [Ant Matutinum]
-Błogosławionaś ty * między niewiastami, i błogosławiony owoc żywota twojego.;;8
-Jak mirra wybrana * zapach wydałaś słodki, święta Bogurodzico.;;18
-Przed łożem * tejże Dziewicy, śpiewajmy wciąż pieśni radosne.;;23
-V. Z ślicznością twoją i z pięknością twoją.
-R. Nadciągnij, fortunnie postępuj i króluj.
-Z ślicznością twoją * i z pięknością twoją nadciągnij, fortunnie postępuj i króluj.;;44
-Wspomoże ją * Bóg obliczem swoim: Bóg w pośrodku jej, nie będzie poruszona.;;45
-Jako weselących się * wszystkich, nasze mieszkanie jest w tobie, święta Boża Rodzicielko.;;86
-V. Wspomoże ją Bóg obliczem swoim.
-R. Bóg w pośrodku jej, nie będzie poruszona.
-Raduj się Maryjo Dziewico, * któraś sama zniszczyła wszystkie herezje w całym świecie.;;95
-Dozwól mi * chwalić Cię, Panno święta. daj mi moc przeciw nieprzyjaciołom swoim.;;96
-Porodziwszy Syna, * Dziewicą Niepokalaną pozostałaś: Boga Rodzico przyczyń się za nami.;;97
-V. Wybrał ją Bóg, i przybrał ją.
-R. W namiocie swoim dał jej mieszkanie.
+@Commune/C11::s/V\. .*/V. Rozlała się wdzięczność po wargach twoich./g s/R\. .*/R. Dlatego cię błogosławił Bóg na wieki./g
 
 [Lectio1]
 !Syr 24:11-13
@@ -120,7 +93,6 @@ R. Błogosłowionaś Dziewico Maryjo, któraś Pana nosiła, Stworzyciela świat
 V. Zdrowaś Maryjo, łaskiś pełna, Pan z Tobą.
 R. Porodziłaś Tego, który Cię stworzył, i na wieki Dziewicą pozostałaś.
 
-
 [Lectio3]
 !Syr 24:17-20
 17 Wyniesionam wzgórę jako drzewo cedrowe na Libanie i jako cyprys na górze Syjonie,
@@ -137,7 +109,6 @@ R. Bo z Ciebie wzeszło Słońce sprawiedliwości
 &Gloria
 R. Chrystus, Bóg nasz
 
-
 [Ant Laudes]
 Marja wzięta jest * do Nieba, radują się Aniołowie; wychwalając błogosławią Pana.
 Marja Dziewica * wzięta jest do niebieskiego mieszkania, w którem Król królów na gwiaździstym zasiada tronie.
@@ -150,9 +121,6 @@ Pięknaś jest * i ozdobna, córko Jeruzalem: ogromna, jako wojska uszykowane po
 v. Widziały ją córki syjońskie, i błogosławioną zwały, i królowe ją chwaliły.
 $Deo gratias.
 
-[Hymnus Laudes]
-@Commune/C11:Hymnus Laudes
-
 [Versum 2]
 V. Błogosławionaś ty między niewiastami.
 R. I błogosławiony owoc żywota twojego
@@ -160,10 +128,7 @@ R. I błogosławiony owoc żywota twojego
 [Ant 2]
 Błogosławiona Boża Rodzicielko Marjo, * zawsze Panno, świątynio Pana, Przybytku Ducha Świętego: samaś bezprzykładnie upodobała Panu naszemu Jezusowi Chrystusowi: módl się za lud, wstawiaj się za klerem, przyczyń się za niewiastami Bogu poświęconemi.
 
-[Special Prima]
-$Ave Maria
-$Deus in adjutorium.
-_
+[Hymnus minor]
 #Hymnus
 v. Pomnij, Stwórco wszechrzeczy,
 Żeś ongiś, rodząc się
@@ -178,8 +143,22 @@ _
 Jezu, Tobie niechaj będzie chwała,
 który narodziłeś się z Dziewicy,
 oraz Ojcu i dobroczynnemu Duchowi,
-po nieskończone wieki. Amen.
+po nieskończone wieki.
+Amen.
+
+[Minor intro]
+#Początek
+$Ave Maria
+$Deus in adjutorium.
+&Gloria
+&Alleluia
 _
+@:Hymnus minor
+_
+#Psalmy
+
+[Special Prima]
+@:Minor intro
 Ant. Marja wzięta jest * do Nieba, radują się Aniołowie; wychwalając błogosławią Pana
 &psalm(53)
 _
@@ -193,38 +172,18 @@ _
 v. Któraż to jest, która idzie jako zorza powstająca, piękna jako księżyc, wybrana jako słonce, ogromna jako wojska uszykowane porządnie?
 $Deo gratias
 _
-V. Dozwól mi chwalić Cię o Pani święta.
-R. Daj mi moc przeciw nieprzyjaciołom Twoim.
+@Commune/C11:Versum 1
 _
 Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
 _
 $Dominus_vobiscum
 _
-v. Módlmy się.
+$Oremus
 Boże, któryś raczył obrać sobie na mieszkanie dziewicze łono Najświętszej Panny Marji: daj prosimy; abyśmy, doznawszy Jej opieki, z radością mogli wziąć udział w Jej uroczystości.
 $Qui vivis
 
 [Special Tertia]
-$Ave Maria
-$Deus in adjutorium
-_
-#Hymnus
-v. Pomnij, Stwórco wszechrzeczy,
-Żeś ongiś, rodząc się
-Z świętego Dziewicy żywota,
-Przyjął postać ciała naszego
-_
-Marjo, Matko łaski,
-Słodka Matko miłosierdzia,
-Ty chroń nas od wroga,
-I przyjmij w godzinę śmierci.
-_
-Jezu, Tobie niechaj będzie chwała,
-który narodziłeś się z Dziewicy,
-oraz Ojcu i dobroczynnemu Duchowi,
-po nieskończone wieki.
-Amen.
-_
+@:Minor intro
 Ant. Marja Dziewica * wzięta jest do niebieskiego mieszkania, w którem Król królów na gwiaździstym zasiada tronie.
 &psalm(119)
 _
@@ -238,8 +197,7 @@ _
 v. I takem w Syjonie jest utwierdzona a w Mieście Świętym takżem odpoczywała, a w Jeruzalem władza moja.
 $Deo gratias
 _
-V. Rozlała się wdzięczność po wargach twoich.
-R. Dlatego cię błogosławił Bóg na wieki.
+@Commune/C11:Versum 2
 _
 Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
 _
@@ -250,26 +208,7 @@ Boże, któryś przez płodne dziewictwo Najświętszej Marji Panny, zgotował r
 $Qui tecum
 
 [Special Sexta]
-$Ave Maria.
-$Deus in adjutorium
-_
-#Hymnus
-v. Pomnij, Stwórco wszechrzeczy,
-Żeś ongiś, rodząc się
-Z świętego Dziewicy żywota,
-Przyjął postać ciała naszego
-_
-Marjo, Matko łaski,
-Słodka Matko miłosierdzia,
-Ty chroń nas od wroga,
-I przyjmij w godzinę śmierci.
-_
-Jezu, Tobie niechaj będzie chwała,
-który narodziłeś się z Dziewicy,
-oraz Ojcu i dobroczynnemu Duchowi,
-po nieskończone wieki.
-Amen.
-_
+@:Minor intro
 Ant. Za tobą pobieżemy * do wonności olejków twoich; Panienki umiłowały cię bardzo.
 &psalm(122)
 _
@@ -290,31 +229,12 @@ Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
 _
 &Dominus_vobiscum
 _
-v. Módlmy się.
+$Oremus
 Udziel nam, prosimy Cię, miłosierny Boże, pomocy w słabościach naszych, abyśmy, którzy świętej Bożej Rodzicielce cześć oddajemy, za jej przyczyną i wstawiennictwem, powstali z nieprawości naszych.
 $Per eumdem
 
 [Special Nona]
-$Ave Maria
-$Deus in adjutorium
-_
-#Hymnus
-v. Pomnij, Stwórco wszechrzeczy,
-Żeś ongiś, rodząc się
-Z świętego Dziewicy żywota,
-Przyjął postać ciała naszego
-_
-Marjo, Matko łaski,
-Słodka Matko miłosierdzia,
-Ty chroń nas od wroga,
-I przyjmij w godzinę śmierci.
-_
-Jezu, Tobie niechaj będzie chwała,
-który narodziłeś się z Dziewicy,
-oraz Ojcu i dobroczynnemu Duchowi,
-po nieskończone wieki.
-Amen.
-_
+@:Minor intro
 Ant. Pięknaś jest * i ozdobna, córko Jeruzalem: ogromna, jako wojska uszykowane porządnie.
 &psalm(125)
 _
@@ -335,6 +255,6 @@ Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
 _
 &Dominus_vobiscum
 _
-v. Módlmy się.
+$Oremus
 Przebacz, prosimy Cię, Panie, grzechy sług Twoich i daj, abyśmy, którzy sami z siebie w czynach swych podobać się Tobie nie potrafimy, uzyskali zbawienie za pośrednictwem Rodzicielki Syna Twojego:
 $Qui tecum
