@@ -1,8 +1,8 @@
 [Rank]
-Ss. Innocentium;;Duplex II class cum octava simplici;;5.2;;ex C3
+Św. Młodzianków;;Duplex II class cum octava simplici;;5.2;;ex C3
 
 [Rank1960]
-Ss. Innocentium;;Duplex II class;;5;;ex C3
+Św. Młodzianków;;Duplex II class;;5;;ex C3
 
 [Rule]
 ex C3;
@@ -166,6 +166,16 @@ Ci są * którzy się z niewiastami nie pokalali: bo dziewicami są, ci chodzą 
 
 [Commemoratio 3]
 @Sancti/12-25:Octava
+
+[Commemoratio 2] (rubrica trident)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+
+[Commemoratio 3] (rubrica trident)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
 
 [Lectio Prima]
 !Ap 14:4-5

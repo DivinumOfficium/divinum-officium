@@ -1,8 +1,8 @@
 [Rank]
-S. Stephani Protomartyris;;Duplex II class cum octava simplici;;5.4;;ex C2
+Św. Szczepana Pierwszego Męczennika;;Duplex II class cum octava simplici;;5.4;;ex C2
 
 [Rank1960]
-S. Stephani Protomartyris;;Duplex II class;;5;;ex C2
+Św. Szczepana Pierwszego Męczennika;;Duplex II class;;5;;ex C2
 
 [Rule]
 ex C2;
@@ -12,8 +12,7 @@ Antiphonas horas
 no Psalm5
 
 [Versum 1]
-V. Chwałą i czcią ukoronowałeś go.
-R. I postanowiłeś go nad dziełami rąk Twoich.
+@Commune/C2:Versum 1
 
 [Ant 1]
 A Szczepan * pełen łaski i mocy czynił cuda i znaki wielkie między ludem.
@@ -21,9 +20,6 @@ A Szczepan * pełen łaski i mocy czynił cuda i znaki wielkie między ludem.
 [Oratio]
 Daj nam, prosimy Cię, Panie, naśladować to, co czcimy: abyśmy się nauczyli i nieprzyjaciół miłować: gdyż obchodzimy narodziny dla nieba tego; który nawet za prześladowców umiał się modlić do Pana naszego Jezusa Chrystusa Syna Twojego.
 $Qui tecum
-
-[Invit]
-Christum natum, qui beatum hodie coronavit Stephanum * Venite adoremus.
 
 [Lectio1]
 Z Dziejów Apostolskich
@@ -118,16 +114,14 @@ V. I pogrzebli Szczepana ludzie bogobojni.
 R. I uczynili nad nim wielkie płakanie.
 
 [Ant 2]
-Szczepan pełen * łaski i mocy czynił znaki wielkie między ludem.
+@:Ant 1
 
 [Lectio Prima]
 !Dz 7:59
 v. A klęknąwszy na kolana, zawołał głosem wielkim, mówiąc: Panie! nie przyczytaj im tego grzechu. A to rzekłszy, zasnął w Panu.
 
 [Capitulum Tertia]
-!Dz 6:8
-v. A Szczepan pełen łaski i mocy czynił cuda i znaki wielkie między ludem.
-$Deo gratias
+@:Capitulum Laudes
 
 [Capitulum Sexta]
 !Dz 6:9-10
@@ -135,21 +129,14 @@ v. I powstali niektórzy z bóżnice, którą zowią Libertynów i Cyrenejczykó
 $Deo gratias
 
 [Capitulum Nona]
-!Dz 7:59
-v. A klęknąwszy na kolana, zawołał głosem wielkim, mówiąc: Panie! nie przyczytaj im tego grzechu. A to rzekłszy, zasnął w Panu.
+@:Lectio Prima
 $Deo gratias
 
 [Ant Vespera 3]
-Przy tobie przodkowanie * w dzień możności twojej w jasnościach świętości: z żywota przed jutrzenką zrodziłem cię.;;109
-Posłał odkupienie * ludowi swemu i postanowił na wieki testament swój.;;110
-Weszła w ciemnościach * światłość prawym. Miłościwy, miłosierny i sprawiedliwy Pan.;;111
-U Pana * miłosierdzie i obfite u Niego odkupienie.;;129
-Z owocu * żywota Twego posadzę na stolicy Twojej.;;131
+@Sancti/12-25:Ant Vespera 3
 
 [Capitulum Vespera]
-!Dz 6:8
-v. A Szczepan pełen łaski i mocy czynił cuda i znaki wielkie między ludem.
-$Deo gratias
+@:Capitulum Laudes
 
 [Versum 3]
 V. Szczepan ujrzał niebiosa otworzone.
@@ -165,7 +152,7 @@ _
 V. I pogrzebli Szczepana ludzie bogobojni.
 R. I uczynili nad nim wielkie płakanie.
 _
-v. Módlmy się.
+$Oremus
 Daj nam, prosimy Cię, Panie, naśladować to, co czcimy: abyśmy się nauczyli i nieprzyjaciół miłować: gdyż obchodzimy narodziny dla nieba tego; który nawet za prześladowców umiał się modlić do Pana naszego Jezusa Chrystusa Syna Twojego.
 $Qui tecum
 
@@ -182,6 +169,6 @@ _
 V. Szczepan ujrzał niebiosa otworzone.
 R. Widział i wszedł: błogosławiony mąż, któremu się niebiosa otworzyły.
 _
-v. Módlmy się.
+$Oremus
 Daj nam, prosimy Cię, Panie, naśladować to, co czcimy: abyśmy się nauczyli i nieprzyjaciół miłować: gdyż obchodzimy narodziny dla nieba tego; który nawet za prześladowców umiał się modlić do Pana naszego Jezusa Chrystusa Syna Twojego.
 $Qui tecum
