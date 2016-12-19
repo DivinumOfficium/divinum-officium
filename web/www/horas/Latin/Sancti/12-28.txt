@@ -17,7 +17,7 @@ no Te Deum
 no Psalm5
 
 [Ant 1]
-Hi sunt * qui cum mulieribus non sunt coinquinati: virgines enim sunt et~
+Hi sunt * qui cum mulieribus non sunt coinquinati: virgines enim sunt, et~
 sequuntur Agnum, quocumque ierit.
 
 [Versum 1]
@@ -238,12 +238,10 @@ In sempiterna saecula.
 Amen.
 
 [Versum 2]
-V. Herodes iratus occidit multos pueros.
-R. In Bethlehem Judae civitate David.
+@:Versum 1
 
 [Ant 2]
-Hi sunt * qui cum mulieribus non sunt coinquinati: virgines enim sunt, et~
-sequuntur Agnum, quocumque ierit.
+@:Ant 1
 
 [Commemoratio 2]
 @Sancti/12-25:Octava
@@ -279,19 +277,14 @@ sequuntur Agnum, quocumque ierit.
 $Deo gratias
 
 [Capitulum Nona]
-!Apo 14:4-5
-v. Hi empti sunt ex hominibus primitiae Deo et Agno, et in ore ipsorum non est~
-inventum mendacium: sine macula enim sunt ante thronum Dei.
+@:Lectio Prima
 $Deo gratias
 
 [Ant Vespera 3]
 @Sancti/12-25
 
 [Capitulum Vespera]
-!Apo 14:1
-v. Vidi supra montem Sion Agnum stantem, et cum eo centum quadraginta quatuor~
-millia, habentes nomen ejus, et nomen Patris ejus scriptum in frontibus suis.
-$Deo gratias
+@:Capitulum Tertia
 
 [Hymnus Vespera]
 @Sancti/12-28:Hymnus Laudes
@@ -312,17 +305,9 @@ _
 V. Herodes iratus occidit multos pueros.
 R. In Bethlehem Judae, civitate David.
 _
-v. Oremus
+$Oremus
 Deus, cujus hodierna die praeconium Innocentes Martyres non loquendo, sed moriendo confessi sunt: omnia in nobis vitiorum mala mortifica; ut fidem tuam, quam lingua nostra loquitur, etiam moribus vita fateatur.
 $Per Dominum
 
 [Octava 3]
-!Commemoratio Octavae Ss. Innocentium
-Ant. Hi sunt, qui cum mulieribus non sunt coinquinati: virgines enim sunt, et sequuntur Agnum quocumque ierit.
-_
-V. Herodes iratus occidit multos pueros.
-R. In Bethlehem Judae, civitate David.
-_
-v. Oremus
-Deus, cujus hodierna die praeconium Innocentes Martyres non loquendo, sed moriendo confessi sunt: omnia in nobis vitiorum mala mortifica; ut fidem tuam, quam lingua nostra loquitur, etiam moribus vita fateatur.
-$Per Dominum
+@:Octava 2
