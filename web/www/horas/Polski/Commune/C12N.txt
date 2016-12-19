@@ -1,0 +1,52 @@
+[Name]
+Officium parvum Beatae Mariae Virginis
+
+[Rank]
+Officium parvum Beatae Mariae Virginis;;Simplex;;1
+
+[Rule]
+Ave only
+Doxology=Nat
+Omit Suffragium Conclusion
+Special Benedictio
+Votive nocturn
+Psalmi Dominica
+Antiphonas Horas
+Feria Te Deum
+
+[Ant Vespera]
+O cudowna zamiano: * Stworzyciel rodzaju ludzkiego przyjmując ciało z duszą, raczył się narodzić z Dziewicy: i stając się człowiekiem bez udziału człowieka, udzielił nam swego Bóstwa.;;109
+Kiedyś się narodził * w niewymowny sposób z Dziewicy, wypełniły się Pisma. Zstąpiłeś jako rosa na runo, aby zbawić rodzaj ludzki! Ciebie chwalimy, Boże nasz.;;112
+W krzaku, który widział Mojżesz, * płonącym, a nie palącym się, widzimy obraz chwalebnego dziewictwa Twego: Boża Rodzicielko, wstawiaj się za nami.;;121
+Zakwitła różdżka Jessego: * wyszła gwiazda z Jakóba: Dziewica porodziła nam Zbawiciela; chwalimy cię, Boże nasz.;;126
+Oto Marja porodziła * nam Zbawiciela, którego Jan zoczywszy, zawołał: Oto Baranek Boży, oto, który gładzi grzechy świata, alleluja.;;147
+
+
+[Ant 3]
+Wielka * tajemnica dziedzictwa: świątynią Boga stało się łono nie znające męża: nie jest skalany z niej ciało przyjmujący: przyjdą wszystkie narody, i powiedzą: Chwała Tobie, Panie.
+
+
+[Oratio]
+Boże, któryś przez płodne Dziewictwo błogosławionej Maryi Panny zgotował rodzajowi ludzkiemu nagrodę żywota wiecznego, daj prosimy Cię, doznać skutków pośrednictwa Tej, przez którą otrzymaliśmy Dawcę żywota, Pana naszego Jezusa Chrystusa Syna Twego:
+$Qui tecum
+
+[Special Completorium]
+@Commune/C12:: s/^Ant. .*/Ant. Wielka * tajemnica dziedzictwa: świątynią Boga stało się łono nie znające męża: nie jest skalany z niej ciało przyjmujący: przyjdą wszystkie narody, i powiedzą: Chwała Tobie, Panie./gm
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
+
+[Ant 2]
+Cudowna tajemnica * objawiła się dzisiaj: odnowiła się natura, Bóg stał się człowiekiem: czym był - pozostał, czym nie był - to przybrał; nie cierpiąc zmieszania, ani podziału.
+
+[Special Prima]
+@Commune/C12::s/Ant. .*/Ant. O cudowna zamiano: * Stworzyciel rodzaju ludzkiego przyjmując ciało z duszą, raczył się narodzić z Dziewicy: i stając się człowiekiem bez udziału człowieka, udzielił nam swego Bóstwa./gm
+
+[Special Tertia]
+@Commune/C12::s/Ant. .*/Ant. Kiedyś się narodził * w niewymowny sposób z Dziewicy, wypełniły się Pisma. Zstąpiłeś jako rosa na runo, aby zbawić rodzaj ludzki! Ciebie chwalimy, Boże nasz./gm  
+
+[Special Sexta]
+@Commune/C12::s/Ant. .*/Ant. W krzaku, który widział Mojżesz, * płonącym, a nie palącym się, widzimy obraz chwalebnego dziewictwa Twego: Boża Rodzicielko, wstawiaj się za nami./gm
+
+[Special Nona]
+@Commune/C12::s/Ant. .*/Ant. Oto Baranek Boży, oto, który gładzi grzechy świata. Alleluja. Córko Jeruzalem, * ogromna, jako wojska uszykowane porządnie./gm
