@@ -72,7 +72,7 @@ Lúcia virgo Syracusána, génere et christiána fide nóbilis, Cátanæ ad beá
 @Commune/C7:Lectio9
 
 [Ant Laudes]
-@:Ant Vespera
+@:Ant Vespera:s/;;.*//g
 
 [Ant 2]
 Columna es * immobilis, Lucia, sponsa Christi: quia omnis plebs te exspectat, ut accipias coronam vitae, alleluia.
