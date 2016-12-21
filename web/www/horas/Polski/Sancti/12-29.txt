@@ -1,14 +1,14 @@
 [Rank]
-S. Thomae Episcopi et Martyris;;Duplex;;3;;vide C2
+Św. Tomasza Biskupa i Męczennika;;Duplex;;3;;vide C2
 
 [Rank1570]
-S. Thomae Episcopi et Martyris;;Semiduplex;;2;;vide C2
+Św. Tomasza Biskupa i Męczennika;;Semiduplex;;2;;vide C2
 
 [Rank1960]
-Die quinta post Nativitatem;;Duplex II class;;5;;ex Sancti/12-25
+Dzień V po Bożym Narodzeniu;;Duplex II class;;5;;ex Sancti/12-25
 
 [RankNewcal]
-S. Thomae Episcopi et Martyris;;Duplex optional;;2;;vide C2
+Św. Tomasza Biskupa i Męczennika;;Duplex optional;;2;;vide C2
 
 [Rule]
 vide C2;
@@ -57,14 +57,22 @@ Początek Listu św. Pawła Apostoła do Rzymian
 @Sancti/12-25:Responsory4
 
 [Ant Vespera 3]
-Przy tobie przodkowanie * w dzień możności twojej w jasnościach świętości: z żywota przed jutrzenką zrodziłem cię.;;109
-Posłał odkupienie * ludowi swemu i postanowił na wieki testament swój.;;110
-Weszła * w ciemnościach światłość prawym. Miłościwy, miłosierny i sprawiedliwy Pan.;;111
-U Pana * miłosierdzie i obfite u Niego odkupienie.;;129
-Z owocu * żywota Twego posadzę na stolicy Twojej.;;131
+@Sancti/12-25
 
 [Commemoratio 2]
 @Sancti/12-25:Octava
 
 [Commemoratio 3]
 @Sancti/12-25:Octava
+
+[Commemoratio 2] (rubrica trident)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava
+
+[Commemoratio 3] (rubrica trident)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava
