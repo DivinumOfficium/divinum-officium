@@ -588,7 +588,18 @@ sub process_conditional_lines
 sub do_inclusion_substitutions(\$$)
 {
   my ($text, $substitutions) = @_;
-  eval "\$\$text =~ s'$1'$2'$3" while ($substitutions =~ m{s/([^/]*)/([^/]*)/([gism]*)}g);
+  # substitute text or select line(s) (numbered from 1!)
+  while (($substitutions =~ m{(?:s/([^/]*)/([^/]*)/([gism]*))|(?:(\d+)(-\d+)?)}g)) {
+    if ($4) { 
+      my($s) = $4 - 1;
+      my($l) = $5 ? -$5 - $s + 1 : 1;
+      my(@t) = split(/\n/, $$text);
+      $$text = join("\n", splice(@t, $s, $l))."\n";
+    }
+    else {
+      eval "\$\$text =~ s/$1/$2/$3";
+    }
+  }
 }
 
 
