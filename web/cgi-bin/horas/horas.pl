@@ -1110,7 +1110,7 @@ sub luna {
   my $edays = date_to_days(1,0,2008);
   my $lunarmonth = 29.53059;
   my @months = ('January', 'February', 'March', 'April', 'May', 'June', 'July',
-  'Augustus', 'September', 'October', 'November', 'December');
+  'August', 'September', 'October', 'November', 'December');
   my @ordinals = ('prima', 'secunda', 'tertia', 'quarta', 'quinta', 'sexta', 'septima', 'octava', 'nona', 'decima',
    'undecima', 'duodecima', 'tertia decima', 'quarta decima', 'quinta decima', 'sexta decima', 'septima decima',
    'duodevicesima', 'undevicesima', 'vicesima', 'vicesima prima', 'vicesima secunda', 'vicesima tertia', 
