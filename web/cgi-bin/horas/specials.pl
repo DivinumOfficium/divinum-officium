@@ -1956,19 +1956,18 @@ sub loadspecial
 
 #*** delconclusio($ostr)
 # deletes the conclusio from the string
-sub delconclusio  {
- my $ostr = shift;    
- my @ostr = split("\n", $ostr);
- $ostr = '';
- my $line;
- foreach $line (@ostr) {
-   if ($line =~ /^\$/ && $line !~ /\$Oremus/) {
-     $addconclusio = "$line\n";
-     next;
-   }
-   $ostr .= "$line\n";
- }    
- return $ostr;
+sub delconclusio
+{
+  my $ostr = shift;
+
+  # Stripped conclusion, perhaps to be added in again later.
+  our $addconclusio;
+
+  if ($ostr =~ s/^(\$(?!Oremus).*?(\n|$)((_|\s*)(\n|$))*)//m) {
+    $addconclusio = $1;
+  }
+
+  return $ostr;
 }
 
 #*** replaceNdot($s, $lang)
