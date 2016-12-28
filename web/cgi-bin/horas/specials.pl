@@ -1855,7 +1855,7 @@ sub getrefs {
 	  }	
 	  if ($flag) {
         do_inclusion_substitutions($a, $substitutions);
-        $a = "_\n$a" . "_\n";
+        $a = "$a" . "_\n";
       }
 	  else {$a = '';}
 	  $w = "$before$a$after";   
