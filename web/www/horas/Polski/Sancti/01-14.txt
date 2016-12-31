@@ -1,0 +1,22 @@
+[Rank]
+Św. Hilarego Biskupa Wyznawcy Doktora Kościoła;;Duplex;;3;;vide C4a
+
+[RankNewcal]
+Św. Hilarego Biskupa Wyznawcy Doktora Kościoła;;Duplex optional;;2;;vide C4a
+
+[Name]
+Hilary
+
+[Rule]
+vide C4a;mtv
+9 lectiones
+
+[Oratio]
+@Commune/C4:Oratio2
+
+[Commemoratio]
+!Wspomnienie Św. Feliksa Prezbitera i Męczennika
+@Commune/C2:Oratio proper
+$Oremus
+Niechaj przykłady Świętych Twoich Panie, pobudzą nas do lepszego życia, abyśmy naśladowali cnoty tych, których święto obchodzimy.
+$Per Dominum
