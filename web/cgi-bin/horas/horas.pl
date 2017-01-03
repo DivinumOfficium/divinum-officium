@@ -158,7 +158,9 @@ sub resolve_refs {
     else {return "";}
   }
   if ($t[0] =~ $omit_regexp) {$t[0] =~ s/^\s*\#/\!\!\!/;}
-  else {$t[0] =~ s/^\s*\#/\!\!/;}
+  else {
+    $t[0] =~ s/^\s*(\#.*)({.*})?\s*$/'!!' . substr(translate($1, $lang), 1) . $2/e;
+  }
 
   my @resolved_lines;  # Array of blocks expanded from lines.
   my $prelude = '';    # Preceding continued lines.
