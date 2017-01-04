@@ -6,18 +6,5 @@ Officium parvum Beatae Mariae Virginis
 [Rank]
 Officium parvum Beatae Mariae Dziewicy Tempora Paschalis;;Simplex;;1
 
-[Rule]
-Ave only
-Doxology=Nat
-Omit Suffragium Conclusion
-Special Benedictio
-Votive nocturn
-Psalmi Dominica
-Antiphonas horas
-Feria Te Deum
-
-[Ant 1]
-Królowo nieba, wesel się, alleluja, bo Ten, któregoś nosiła, alleluja, zmartwychwstał jak powiedział, alleluja, módl się za nami do Boga, alleluja.
-
 [Special Completorium]
-@Commune/C12::s/^Ant. .*/Ant. Królowo nieba, wesel się, alleluja, bo Ten, któregoś nosiła, alleluja, zmartwychwstał jak powiedział, alleluja, módl się za nami do Boga, alleluja./gm
+@Commune/C12::s/^Ant. .*/Ant. Królowo nieba, * wesel się, alleluja, bo Ten, któregoś nosiła, alleluja, zmartwychwstał jak powiedział, alleluja, módl się za nami do Boga, alleluja./gm
