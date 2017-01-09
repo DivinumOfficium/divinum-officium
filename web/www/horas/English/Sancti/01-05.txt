@@ -1,5 +1,5 @@
 [Rank]
-In Vigilia Epiphaniae;;Semidulpex;;5;;ex Sancti/01-01
+In Vigilia Epiphaniae;;Semiduplex;;5;;ex Sancti/01-01
 
 [Rank1570]
 In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
@@ -15,38 +15,9 @@ Omit preces
 Feria Te Deum
 CPapaM=Telesphorus;
 
-[Capitulum Vespera]
-!Gal 4:1-2
-v. Brothers: As long as the heir is a child, he differeth nothing from a servant,~
-though he be lord of all;But is under tutors and governors until the time~
-appointed by the father:
-$Deo gratias
-
-[Hymnus Vespera]
-@Sancti/12-25:Hymnus Vespera
-
-[Ant 1]
-And Jesus advanced in wisdom * and age, and grace with God and men.
-
-[Versum 1]
-V. The Lord hath made known, alleluia.
-R. His salvation, alleluia.
-
-[Oratio]
-O Almighty and everlasting God, do Thou order all our actions in conformity with~
-thy good pleasure, that through the name of thy well-beloved Son, we may~
-worthily abound in all good works.
-$Qui tecum
-
 [Commemoratio]
 !Commemoration of St. Telesphorus Pope and Martyr
 @Commune/C2:Oratio1 Gregem
-
-[Invit]
-Christus natus est nobis: * Venite adoremus.
-
-[Hymnus Matutinum]
-@Sancti/12-25:Hymnus Vespera
 
 [Lectio1]
 Lesson from the letter of St Paul the Apostle to the Romans
@@ -57,26 +28,18 @@ Lesson from the letter of St Paul the Apostle to the Romans
 4 That the justification of the law might be fulfilled in us, who walk not according to the flesh, but according to the spirit.
 
 [Lectio2]
-!Rom 8:5-8
+!Rom 8:5-9
 5 For they that are according to the flesh, mind the things that are of the flesh; but they that are according to the spirit, mind the things that are of the spirit.
 6 For the wisdom of the flesh is death; but the wisdom of the spirit is life and peace.
 7 Because the wisdom of the flesh is an enemy to God; for it is not subject to the law of God, neither can it be.
 8 And they who are in the flesh, cannot please God.
+9 But you are not in the flesh, but in the spirit, if so be that the Spirit of God dwell in you.
 
 [Lectio3]
 !Rom 8:9-11
-9 But you are not in the flesh, but in the spirit, if so be that the Spirit of God dwell in you. Now if any man have not the Spirit of Christ, he is none of his.
+9 Now if any man have not the Spirit of Christ, he is none of his.
 10 And if Christ be in you, the body indeed is dead, because of sin; but the spirit liveth, because of justification.
 11 And if the Spirit of him that raised up Jesus from the dead, dwell in you; he that raised up Jesus Christ from the dead, shall quicken also your mortal bodies, because of his Spirit that dwelleth in you.
-
-[Responsory1]
-@Sancti/01-01:Responsory1
-
-[Responsory2]
-@Sancti/01-01:Responsory2
-
-[Responsory3]
-@Sancti/01-01:Responsory3
 
 [Lectio4]
 A sermon of St. Augustine, Bishop.
@@ -116,7 +79,7 @@ Herod who was made friends with Pilate over Christ's death, was the son of the~
 Herod who massacred the infants of Bethlehem, and the brother of Archelaus.
 
 [Lectio9]
- He shall be called a Nazarene. The Evangelist, in quoting these words, saith~
+He shall be called a Nazarene. The Evangelist, in quoting these words, saith~
 that they were spoken by the Prophets, (Plural). If he had been citing any one~
 precise passage he would have said by the Prophet, in the Singular. But he is~
 citing the sense of the Prophets, and not any individual passage in any of their~
@@ -124,75 +87,3 @@ writings. He seemeth to refer to the fact that in Hebrew the word Nazarene~
 signifieth holy, and that Christ is the Holy One of God is the common~
 declaration of all the Scriptures.
 &teDeum
-
-[Capitulum Laudes]
-!Gal 4:1-2
-v. Brothers: As long as the heir is a child, he differeth nothing from a servant,~
-though he be lord of all; But is under tutors and governors until the time~
-appointed by the father.
-$Deo gratias
-
-[Hymnus Laudes]
-@Sancti/12-25:Hymnus Laudes
-
-[Ant 2]
-While all things were in quiet silence * and that night was in the midst of her~
-swift course, thine Almighty Word, O Lord, leapt down out of thy Royal Throne.
-
-[Lectio Prima]
-!Gal 4:7
-v. Therefore now he is not a servant, but a son. And if a son, an heir also~
-through God.
-
-[Capitulum Tertia]
-!Gal 4:1-2
-v. As long as the heir is a child, he differeth nothing from a servant, though~
-he be lord of all; But is under tutors and governors until the time appointed by~
-the father.
-$Deo gratias
-
-[Responsory Tertia]
-R.br. The Word was made flesh. Alleluia, Alleluia.
-R. The Word was made flesh. Alleluia, Alleluia.
-V. And dwelt among us.
-R. Alleluia, Alleluia.
-&Gloria
-R. The Word was made flesh. Alleluia, Alleluia.
-_
-V. He shall cry unto Me, Alleluia.
-R. Thou art My Father. Alleluia.
-
-[Capitulum Sexta]
-!Gal 4:4-5
-v. But when the fulness of the time was come, God sent his Son, made of a woman,~
-made under the law, that he might redeem them who were under the law; that we~
-might receive the adoption of sons.
-$Deo gratias
-
-[Responsory Sexta]
-R.br. The Lord hath made known. Alleluia, Alleluia.
-R. The Lord hath made known. Alleluia, Alleluia.
-V. His salvation.
-R. Alleluia, Alleluia.
-&Gloria
-R. The Lord hath made known. Alleluia, Alleluia.
-_
-V. All the ends of the earth have seen Alleluia.
-R. The salvation of our God. Alleluia.
-
-[Capitulum Nona]
-!Gal 4:7
-v. Therefore now he is not a servant, but a son. And if a son, an heir also~
-through God.
-$Deo gratias
-
-[Responsory Nona]
-R.br. All the ends of the earth have seen, Alleluia, Alleluia.
-R. All the ends of the earth have seen, Alleluia, Alleluia.
-V. The salvation of our God.
-R. Alleluia, Alleluia.
-&Gloria
-R. All the ends of the earth have seen, Alleluia, Alleluia.
-_
-V. The Word was made flesh. Alleluia.
-R. And dwelt among us. Alleluia.
