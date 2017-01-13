@@ -43,7 +43,7 @@ promissum, ad Dominum deductus est. Quam vero Christus eum familiariter~
 adhiberet, illud facile declarat, quod Gentiles Salvatorem videre cupientes, ad~
 Philippum accesserunt: et Dominus, cum in solitudine hominum multitudinem pascere~
 vellet, sic Philippum affatus est: Unde ememus panes ut manducent hi? Is,~
-accepto Spiritu sancto, cum ei Scythia ad praedicandum Evangelium obtigisset,~
+accepto Spiritu Sancto, cum ei Scythia ad praedicandum Evangelium obtigisset,~
 omnem fere illam gentem ad christianam fidem convertit. Postremo cum Hierapolim~
 Phrygiae venisset, pro Christi nomine cruci affixus, lapidibusque obrutus est,~
 Kalendis Maji. Ejus corpus ibidem a Christianis sepultum, postea Romam delatum,~
@@ -60,7 +60,7 @@ creaverunt: ad quem etiam princeps Apostolorum misit, qui nuntiaret se e carcere
 ab Angelo eductum fuisse. Cum autem in concilio Jerosolymis controversia esset~
 orta de lege et circumcisione: Jacobus Petri sententiam secutus, ad fratres~
 habuit concionem, in qua vocationem Gentium probavit: fratribusque absentibus~
-scribendum esse dixit, ne Gentibus jugum Mosaicae legis imponerent De quo et~
+scribendum esse dixit, ne Gentibus jugum Mosaicae legis imponerent. De quo et~
 loquitur Apostolus ad Galatas: Alium autem Apostolorum vidi neminem, nisi~
 Jacobum fratrem Domini.
 
@@ -71,7 +71,7 @@ illi Ecclesiae sanctissime praefuisset, Christum Dei Filium constantissime~
 praedicans, lapidibus primum appetitur: mox in altissimum templi locum adductus,~
 inde praecipitatus est. Qui confractis cruribus, jacens semivivus, manus~
 tendebat ad caelum, Deumque pro illorum salute deprecabatur his verbis: Ignosce~
-eis Domine, quia nesciunt quid faciunt. Qua in oratione, graviter ejus capite~
+eis, Domine, quia nesciunt quid faciunt. Qua in oratione, graviter ejus capite~
 fullonis fuste percusso, animam Deo reddidit, septimo Neronis anno, et juxta~
 templum ubi praecipitatus fuerat, sepultus est. Unam scripsit epistolam, quae de~
 septem catholicis est.
@@ -112,11 +112,7 @@ illa domo ubi mansionem pro suo quisque accepturus est merito.
 &teDeum
 
 [Ant Laudes]
-Domine, * ostende nobis Patrem, et sufficit nobis, alleluia.
-Philippe, * qui videt me, videt et Patrem meum, alleluia.
-Tanto tempore * vobiscum sum, et non cognovistis me? Philippe, qui videt me, videt et Patrem meum, alleluia.
-Si cognovissetis me, * et Patrem meum utique cognovissetis, et amodo cognoscetis eum, et vidistis eum, alleluia, alleluia, alleluia.
-Si diligitis me, * mandata mea servate, alleluia, alleluia, alleluia.
+@:Ant Vespera:s/;;.*//g
 
 [Ant 2]
 Ego sum via, veritas, et vita, * nemo venit ad Patrem, nisi per me, alleluia.
@@ -126,8 +122,4 @@ Si manseritis in me * et verba mea in vobis manserint, quodcumque petieritis,~
 fiet vobis, alleluia, alleluia, alleluia.
 
 [Ant Vespera 3]
-Domine, * ostende nobis Patrem, et sufficit nobis, alleluia.;;109
-Philippe, * qui videt me, videt et Patrem meum, alleluia.;;112
-Tanto tempore * vobiscum sum, et non cognovistis me? Philippe, qui videt me, videt et Patrem meum, alleluia.;;115
-Si cognovissetis me, * et Patrem meum utique cognovissetis et amodo cognoscetis eum, et vidistis eum, alleluia, alleluia, alleluia.;;125
-Si diligitis me, * mandata mea servate, alleluia, alleluia, alleluia.;;138
+@:Ant Vespera:s/116/138/ s/112/125/ s/111/115/ s/110/112/ 
