@@ -943,8 +943,8 @@ sub antetpsalm {
 
   if ($dayname[0]  =~ /Pasc/i  && $hora =~ /(laudes|vespera)/i && $version !~ /monastic/i && 
       !exists($winner{"Ant $hora"}) && $communetype !~ /ex/i) { 
-    if ($ind == 0) {$ant1 = ($duplex < 3 && $version !~ /1960/) ? 'Alleluia' : 'Alleluia, * alleluia, alleluia.'; $ant = ''}
-    elsif ($last) {$ant1 = ''; $ant = 'Alleluia, * alleluia, alleluia.';}
+    if ($ind == 0) {$ant1 = Alleluia_ant($lang, 0); $ant = ''}
+    elsif ($last) {$ant1 = ''; $ant = Alleluia_ant($lang, 1); }
     else {$ant1 = $ant = '';}	  
   }
 

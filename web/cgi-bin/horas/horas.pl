@@ -289,6 +289,14 @@ sub Alleluia : ScriptFunc {
   return $text;
 }
 
+sub Alleluia_ant {
+  my ($lang, $full, $ucase) = @_;
+  my $s =  translate('Alleluia', $lang).', * '.translate('Alleluia', $lang).', '.translate('Alleluia', $lang).'.';
+  $s =~ s/,.*// if (!$full && $duplex < 3 && $version !~ /1960/);
+  $s =~ s/ ./\L$&/g unless $ucase;
+  return $s;
+}
+
 #*** Septuagesima_vesp
 # Determines whether we're saying first Vespers of Septuagesima Sunday.
 sub Septuagesima_vesp

@@ -1081,8 +1081,8 @@ sub ant_matutinum {
   
 
   if ($version =~ /1960/ && ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek >3)) && ($rank < 5 || $winner{Rank} =~ /Dominica/i)) {
-    if ($ind == 0) {return ('Alleluia, * Alleluia, Alleluia.', '');}
-	if ($ind == 12) {return ('', 'Alleluia, * Alleluia, Alleluia.');}
+    if ($ind == 0) {return (Alleluia_ant($lang,1,1), '');}
+	if ($ind == 12) {return ('', Alleluia_ant($lang,1,1));}
 	return ('','');
   }
 
@@ -1128,15 +1128,15 @@ sub ant_matutinum {
   if ($dayofweek > 0 && (!@spec || $winner =~ /\/C10/)) {  
     
    if ($rule !~ /9 lectio/i || ($version =~ /1960/ && $rank < 5)) {	
-     if ($ind == 0) {$ant1 = ($duplex < 3 && $version !~ /1960/) ? 'Alleluia' : 'Alleluia, * Alleluia, Alleluia.'; $ant = ''}
-     elsif ($version =~ /Trident/i && $ind == 5) {$ant1 = ''; $ant = 'Alleluia, * Alleluia, Alleluia.';}
-	 elsif ($ind == 12) {$ant1 = ''; $ant = 'Alleluia, * Alleluia, Alleluia.';}
+     if ($ind == 0) {$ant1 = Alleluia_ant($lang, 0); $ant = ''}
+     elsif ($version =~ /Trident/i && $ind == 5) {$ant1 = ''; $ant = Alleluia_ant($lang, 1);}
+	 elsif ($ind == 12) {$ant1 = ''; $ant = Alleluia_ant($lang, 1);}
      else {$ant1 = $ant = '';} 
   } else {  #3 nocturns
      if ($ind == 0 || $ind == 5 || $ind == 10) 
-      {$ant1 = ($duplex < 3 && $version !~ /1960/) ? 'Alleluia' : 'Alleluia, * Alleluia, Alleluia.'; $ant = '';}
+      {$ant1 = Alleluia_ant($lang, 0); $ant = '';}
      elsif ($ind == 2 || $ind == 7 || $ind == 12) 
-           {$ant1 = ''; $ant = 'Alleluia, * Alleluia, Alleluia.';}
+           {$ant1 = ''; $ant = Alleluia_ant($lang, 1);}
 	       else {$ant1 = $ant = '';}
       } 
       return ($ant1, $ant);
