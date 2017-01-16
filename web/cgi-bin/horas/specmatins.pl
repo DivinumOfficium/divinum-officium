@@ -54,7 +54,7 @@ sub invitatorium {
   $ant = chompd($ant);
   $ant = "Ant. $ant";  
   
-  if ($dayname[0] =~ /Pasc/i && $ant !~ /allel[uú][ij]a/i) {$ant .= " Alleluia.";}
+  if ($dayname[0] =~ /Pasc/i && $ant !~ /allel[uú][ij]a/i) {$ant .= " " . translate('Alleluia', $lang) . ".";}
   if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;} 
 
   my @ant = split('\*', $ant);
