@@ -1,3 +1,5 @@
+@Commune/C2
+
 [Name]
 Commune unius Martyris Tempore Paschali
 
@@ -13,17 +15,11 @@ Psalm5 Vespera3=115
 [Capitulum Vespera]
 @Commune/C1p
 
-[Hymnus Vespera]
-@Commune/C2:Hymnus Vespera
-
 [Versum 1]
 @Commune/C1p
 
 [Ant 1]
 @Commune/C1p
-
-[Oratio]
-@Commune/C2
 
 [Invit]
 Exsúltent in Dómino sancti, * Allelúia.
@@ -48,20 +44,11 @@ Lux perpétua * lucébit Sanctis tuis, Dómine, et ætérnitas témporum, allel�
 V. Lætítia sempitérna super cápita eórum, allelúia.
 R. Gáudium et exsultatiónem obtinébunt, allelúia.
 
-[Lectio1]
-@Commune/C2
-
 [Responsory1]
 @Commune/C1p
 
-[Lectio2]
-@Commune/C2
-
 [Responsory2]
 @Commune/C1p
-
-[Lectio3]
-@Commune/C2
 
 [Responsory3]
 @Commune/C1p
@@ -116,9 +103,6 @@ Ego sum, inquit, vitis vera: et Pater meus agrícola est. Numquid unum sunt agr�
 
 [Capitulum Laudes]
 @Commune/C1p:Capitulum Vespera
-
-[Hymnus Laudes]
-@Commune/C2:Hymnus Laudes
 
 [Versum 2]
 @Commune/C1p
