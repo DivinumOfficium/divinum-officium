@@ -1,0 +1,45 @@
+[Rank]
+S. Timothei Episcopi et Martyris;;Duplex;;3;;vide C2c
+
+[Rank1570]
+S. Timothei Episcopi et Martyris;;Simplex;;1.1;;vide C2c
+
+[Rule]
+vide C2;
+Gloria
+
+[Comment]
+# 24 I – Św. Tymoteusza, Biskupa i Męczennika
+! 3 klasy
+! Szaty czerwone
+Św. Tymoteusz jako młodzieniec został wybrany przez św. Pawła na towarzysza jego podróży misyjnych. Towarzyszył Apostołowi Narodów w zakładaniu pierwszych gmin chrześcijańskich i dzielił z nim więzienie. Później został biskupem w Efezie. Jako lekcję mszalną czyta się wyjątek z listu, który św. Paweł skierował do niego pod koniec swojego życia.
+
+[Introitus]
+@Commune/C2c:Introitus
+
+[Oratio]
+@Commune/C2c:Oratio
+
+[Lectio]
+Czytanie z Listu świętego Pawła Apostoła do Tymoteusza.
+!1 Tm 6:11-16
+Najmilszy: Ubiegaj się o sprawiedliwość, pobożność, wiarę, miłość, cierpliwość i łagodność. Prowadź dobry bój wiary, zdobywaj życie wieczne, do którego jesteś wezwany i dla którego złożyłeś dobre wyznanie wobec wielu świadków.
+Rozkazuję ci wobec Boga, który ożywia wszystko, i wobec Chrystusa Jezusa, który pod Poncjuszem Piłatem złożył świadectwo dobrego wyznania, abyś zachował to rozkazanie bez skazy i nienagannie aż do przyjścia Pana naszego Jezusa Chrystusa. Okaże go w swoim czasie błogosławiony i jedyny mocarz, Król królów i Pan panujących, który jedynie ma nieśmiertelność i mieszka w światłości nieprzystępnej. Żaden z ludzi Go nie widział ani też widzieć może. Jemu niech będzie chwała i panowanie wieczne. Amen.
+
+[Graduale]
+@Commune/C2c:Graduale
+
+[Evangelium]
+@Commune/C2c:Evangelium
+
+[Offertorium]
+@Commune/C2c:Offertorium
+
+[Secreta]
+@Commune/C2c:Secreta
+
+[Communio]
+@Commune/C2c:Communio
+
+[Postcommunio]
+@Commune/C2c:Postcommunio
