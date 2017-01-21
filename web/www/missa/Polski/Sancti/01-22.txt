@@ -1,0 +1,43 @@
+[Rank]
+Ss. Vincentii et Anastasii Martyrum;;Semiduplex;;2;;vide C3
+
+[Rule]
+vide C3;
+Gloria
+
+[Comment]
+# 22 I – ŚŚ. Wincentego i Anastazego, Męczenników
+! 3 klasy
+! Szaty czerwone
+Św. Wincenty był diakonem w Saragosie w Hiszpanii. Został umęczony w Walencji 22 stycznia 304 roku.
+Św. Anastazy był mnichem. Po bohaterskim zniesieniu wielu tortur został ścięty w roku 628. W Rzymie poświęcono wspólnie obu męczennikom dwa kościoły. Jeden z nich, wzniesiony obok miejsca ścięcia św. Pawła, zawiera część ich relikwii.
+
+[Introitus]
+@Commune/C3:Introitus
+
+[Oratio]
+Przychyl się, Panie, do naszych kornych próśb, a że obciążeni grzechami uświadamiamy sobie naszą winę, niech nas wyzwoli wstawiennictwo świętych Męczenników Twoich Wincentego i Anastazego.
+$Per Dominum
+
+[Lectio]
+@Commune/C3:Lectio
+
+[Graduale]
+@Commune/C3:Graduale
+
+[Evangelium]
+@Commune/C3:Evangelium
+
+[Offertorium]
+@Commune/C3:Offertorium
+
+[Secreta]
+Ofiarujemy Ci, Panie, te dary jako wyraz naszego oddania; przyjmij je łaskawie ku chwale Twoich Świętych i spraw w Swoim miłosierdziu, aby przyczyniły się do naszego zbawienia.
+$Per Dominum
+
+[Communio]
+@Commune/C3:Communio
+
+[Postcommunio]
+Prosimy Cię, wszechmogący Boże, aby pokarm niebieski, który przyjęliśmy za wstawiennictwem świętych Męczenników Twoich Wincentego i Anastazego, chronił nas od wszelkich przeciwności.
+$Per Dominum
