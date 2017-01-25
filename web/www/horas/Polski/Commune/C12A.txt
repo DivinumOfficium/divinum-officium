@@ -1,37 +1,69 @@
 [Name]
-Officium parvum Beatae Mariae Virginis
+Małe oficjum ku czci Najświętszej Marji Panny
 
 [Rank]
-Officium parvum Beatae Mariae Virginis tempore Adventi;;Simplex;;1
+Małe oficjum ku czci Najświętszej Marji Panny w czasie Adwentu;;Simplex;;1
 
-[Rule]
-Ave only
-Doxology=Nat
-Omit Suffragium Conclusion
-Special Benedictio
-Votive nocturn
+[Ant 3]
+Duch Święty * zstąpi na Cię, Marjo, nie bój się, poczniesz w żywocie Syna Bożego, alleluja.
 
-[Ant Vespera]
-Posłan jest * Anioł Gabrjel do Marji Panny, poślubionej Józefowi.;;109
-Zdrowaś Mario, * łaski pełna, Pan z Tobą, błogosławionaś Ty między niewiastami.;;112
-Nie bój się, Marjo: * znalazłaś łaskę u Pana, oto poczniesz i porodzisz syna.;;121
-Da Mu Pan * stolicę Dawida, Ojca Jego, i będzie królował na wieki.;;126
-Oto ja służebnica Pańska, * niechaj mi się stanie według słowa Twego.;;147
-
-[Ant 1]
-Duch Święty * zstąpi na Cię, Marjo, a moc Najwyższego zaćmi Tobie.
-
-[Oratio]
-@Commune/C12:Oratio 2
+[Commemoratio]
+!Wspomnienie Wszystkich Świętych
+Ant. Oto przyjdzie Pan, i wszyscy święci Jego z Nim, i będzie w onym dniu światłość wielka, alleluja.
+V. Oto się zjawi Pan w obłoku jasnym.
+R. A z nim świętych tysiące.
+$Oremus
+v. Sumienia nasze prosimy Cię, Panie, Swem nawiedzeniem oczyść, iżby przychodzący Jezus Chrystus,Syn Twój, Pan nasz, z wszystkimi świętymi, znalazł przygotowane w nas dla Siebie mieszkanie:
+$Qui tecum
+(sed rubrica 1955 aut rubrica 1960 omittitur)
 
 [Special Completorium]
-@Commune/C12::s/^!.*/!Iz 7:14-15/m s/^v. .*/v. Oto, panna pocznie i porodzi syna, i nazowią imię jego Emanuel. Masło i miód jeść będzie, aby umiał odrzucać złe i obierać dobre./m s/^V. Módl.*/V. Anioł Pański zwiastował Pannie Maryji./m s/^R. Aby.*/R. I poczęła z Ducha Świętego./m s/^Ant. .*/Ant. Duch Święty * zstąpi na Cię, Marjo: nie bój się, będziesz nosić w swem łonie syna Bożego, alleluja./mg
+#Incipit
+_
+$Ave Maria
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+V. Nawróć nas +++ Boże, nasz zbawco.
+R. I odwróć swój gniew od nas.
+$Deus in adjutorium
+&Gloria
+&Alleluia
 
-[Invit]
-Zdrowaś Maryjo, łaskiś pełna * Pan z Tobą.
+#Psalmi
+&psalm(128)
 
-[Ant Matutinum]
-@Commune/C11::s/V\. .*/V. Rozlała się wdzięczność po wargach twoich./g s/R\. .*/R. Dlatego cię błogosławił Bóg na wieki./g s/Porodziwszy .*/Anioł Pański * zwiastował Pannie Maryji, i poczęła z Ducha Świętego.;;97/m
+&psalm(129)
+
+&psalm(130)
+
+@Commune/C12:Hymnus minor
+
+#Capitulum
+@Sancti/03-25:Capitulum Vespera
+_
+@:Verse Nona
+
+#Canticum Nunc dimittis
+Ant. Duch Święty * zstąpi na Cię, Marjo: nie bój się, będziesz nosić w swem łonie syna Bożego, alleluja.
+&psalm(233)
+Ant. Duch Święty * zstąpi na Cię, Marjo: nie bój się, będziesz nosić w swem łonie syna Bożego, alleluja.
+
+@Commune/C12:Pre oratio
+@:Oratio
+
+#Conclusio
+&Dominus_vobiscum
+&Benedicamus_Domino
+Benedictio. Niech nas błogosławi i strzeże wszechmogący i miłosierny Pan, + Ojciec, i Syn, i Duch Święty.
+R. Amen.
+
+&antiphona_finalis
+V. Pomoc Boża + niech będzie zawsze z nami.
+R. Amen.
+
+$Pater noster
+$Ave Maria
+$Credo
+(sed rubrica 1955 aut rubrica 1960 omittitur)
 
 [Lectio1]
 !Łk 1:26-28
@@ -53,12 +85,6 @@ R. Oto poczniesz i porodzisz syna, a nazwan będzie Synem Najwyższego.
 32 Ten będzie wielki, a będzie zwan Synem Najwyższego: i da mu Pan Bóg stolicę Dawida, ojca jego,
 33 I będzie królował w domu Jakóbowym na wieki, a królestwa jego nie będzie końca.
 
-[Responsory2]
-R. Zdrowaś Maryjo: łaskiś pełna * Pan z Tobą:
-* Duch Święty zstąpi na cię, a moc Najwyższego zaćmi tobie: Przetóż i co się z ciebie narodzi święte, będzie nazwano Synem Bożym.
-V. Jakóż się to stanie, gdyż męża nie znam? A Aniół odpowiedziawszy, rzekł jéj:
-R. Duch Święty zstąpi na cię, a moc Najwyższego zaćmi tobie: Przetóż i co się z ciebie narodzi święte, będzie nazwano Synem Bożym.
-
 [Lectio3]
 !Łk 1:34-38
 34 A Marya rzekła do Anioła: Jakóż się to stanie, gdyż męża nie znam?
@@ -75,26 +101,6 @@ R. Abyś zwana była błogosławioną między niewiastami.
 &Gloria
 R. Abyś zwana była błogosławioną między niewiastami.
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
-[Capitulum Laudes]
-!Iz 11:1-2
-v. I wynidzie rószczka z korzenia Jessego, a kwiat z korzenia jego wyrośnie. I odpocznie na nim Duch Pański.
-$Deo gratias.
-
-[Versum 2]
-V. Błogosławionaś ty między niewiastami.
-R. I błogosławiony owoc żywota twojego
-
-[Special Prima]
-@Commune/C12::s/^!.*/!Iz 7:14-15/m s/^v. .*/v. Oto, panna pocznie i porodzi syna, i nazowią imię jego Emanuel. Masło i miód jeść będzie, aby umiał odrzucać złe i obierać dobre./m s/Ant. .*/Ant. Posłan jest * Anioł Gabrjel do Marji Panny, poślubionej Józefowi./mg
-
-[Special Tertia]
-@Commune/C12::s/^!.*/!Iz 11:1-2/m s/^v. .*/v. I wynidzie rószczka z korzenia Jessego, a kwiat z korzenia jego wyrośnie. I odpocznie na nim Duch Pański./m s/Ant. .*/Ant. Zdrowaś Mario, * łaski pełna, Pan z Tobą: błogosławionaś Ty między niewiastami, alleluja./mg
-
-[Special Sexta]
-@Commune/C12::s/^!.*/!Łk 1:32-33/m s/^v. .*/v. Da mu Pan Bóg stolicę Dawida, ojca jego, i będzie królował w domu Jakóbowym na wieki, a królestwa jego nie będzie końca./m s/Ant. .*/Ant. Nie bój się, Marjo: * znalazłaś łaskę u Pana, oto poczniesz i porodzisz syna, alleluja./mg
-
-[Special Nona]
-@Commune/C12::s/^!.*/!Iz 7:14-15/m s/^v. .*/v. Oto, panna pocznie i porodzi syna, i nazowią imię jego Emanuel. Masło i miód jeść będzie, aby umiał odrzucać złe i obierać dobre./m s/Ant. .*/Ant. Oto służebnica Pańska, * niechaj mi się stanie według słowa twego./mg s/V. Po .*/V. Anioł Pański zwiastował Pannie Maryi./m s/R. Boża .*/R. I poczęła z Ducha Świętego./m
+[Verse Nona]
+V. Anioł Pański zwiastował Pannie Maryi.
+R. I poczęła z Ducha Świętego.

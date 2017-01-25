@@ -2,22 +2,8 @@
 Officium parvum Beatae Máriae Virginis
 
 [Rank]
-Officium parvum Beatae Máriae Virginis;;Simplex;;1;;vide C11
+Officium parvum Beatae Máriae Virginis;;Simplex;;1;;ex C11
 
-[Rule]
-ex C11;
-Ave only
-Doxology=Nat
-Special Benedictio
-Votive nocturn
-Psalmi Dominica
-Antiphonas Horas
-Feria Te Deum
-
-
-[Versum 3]
-V. Kegyelem van az ajkaidon
-R. Isten ezért megáldott mindörökre
 
 [Ant 3]
 Aldott vagy * anya és sértetlen szűz, vilag dicsőséges Királynéja. Könyörogj érettünk az Úrnál
@@ -26,77 +12,69 @@ Aldott vagy * anya és sértetlen szűz, vilag dicsőséges Királynéja. Köny�
 Kérünk téged ÚrIsten, add meg nekünk szolgáidnak testünk és lelkünk egészségét és örömeit, hogy akik a Boldogságos mindig szűz Mária közbenjárását el'vezzük, szabaduljunk meg szomorúságainktől és lépjünk be örok örömödbe.
 $Per Dominum
 
-[Oratio 2]
-O God, who didst will that, at the announcement of an Angel, thy Word should take flesh in the womb of the blessed Virgin Mary, grant to us thy suppliants, that we who believe her to be truly the mother of God may be helped by her intercession with thee
-$Per eumdem
+[Pre oratio]
+
+#Oratio
+_
+v. Uram irgalmazz nekünk. Krisztus kegyelmezz nekünk. Uram irgalmazz nekünk.
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+&Dominus_vobiscum
+$Oremus
 
 [Special Completorium]
-$Ave Mária
+#Incipit
+_
+$Ave Maria
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+V. Téríts meg minket, +++ Isten, te vagy az üdvösségünk.
+R. És fordítsd el haragodat rólunk.
 $Deus in adjutorium
-_
+&Gloria
+&Alleluia
+
+#Psalmi
 &psalm(128)
-_
+
 &psalm(129)
-_
+
 &psalm(130)
-_
-!Hymnus.
-Emlékezzél meg, Alkotó,
-Hogy hozzánk jöttél egykoron,
-A Szűz méhének szenthelyén
-Testünk formáját fölvevén.
-_
-Kegyelmek Anyja, Mária,
-Irgalom édes Asszonya,
-Légy ellenségtől gyámolunk.
-S állj mellettünk, ha meghalunk.
-_
-Glória neked Jézusunk,
-Kinek a Szűz szülőanyád,
-Atya, s kegyes Lélek, neked,
-Most és örök időkön át.
-Ámen.
-_
-v. Capitulum
+
+@:Hymnus minor
+
+#Capitulum
 !Sir 24:24
 v. Én a szép szeretet anyja vagyok, és a félelemé és az ismereté és a szent reménységé.
 $Deo gratias
 _
 V. Imádkozzál érettünk Istennek szent anyja
 R. Hogy métók lehessünk a Krisztus igéreteire
-_
+
+#Nunc dimittis kantikum
 Ant. Oltalmad alá futunk * Istennek szent Szülője, könyörgésünket meg ne vesd szükségünk idején. Hanem oltalmazz meg minket minden veszedelemtől, ó dicsőséges és áldott Szűz.
 &psalm(233)
 Ant. Oltalmad alá futunk, * Istennek szent Szülője, könyörgésünket meg ne vesd szükségünk idején. Hanem oltalmazz meg minket minden veszedelemtől, ó dicsőséges és áldott Szűz.
-_
-v. Uram irgalmazz nekünk. Krisztus kegyelmezz nekünk. Uram irgalmazz nekünk.
-_
-&Dominus_vobiscum
-_
-!Oratio
-Kerünk téged Urunk, hogy a boldogságos, dicséséges mindenkoron szűz Mária közbenjárása védjen meg minket és vezessen el az örök életre
+
+@:Pre oratio
+v. Kerünk téged Urunk, hogy a boldogságos, dicséséges mindenkoron szűz Mária közbenjárása védjen meg minket és vezessen el az örök életre
 $Per Dominum
 
-[Invit]
-Üdvözlégy Mária, malaszttal teljes, * az Úr van teveled.
+#Befejezés
+&Dominus_vobiscum
+&Benedicamus_Domino
+Benedictio. Áldjon meg és őrizzen minket a mindenható és irgalmas Úr, + az Atya, a Fiú és a Szentlélek.
+R. Amen.
+
+&antiphona_finalis
+V. Divínum auxílium + máneat semper nobíscum.
+R. Amen.
+
+$Pater noster
+$Ave Maria
+$Credo
+(sed rubrica 1955 aut rubrica 1960 omittitur)
 
 [Ant Matutinum]
-Áldott vagy te az asszonyok között* és áldott a te méhednek gyümölcse Jézus;;8
-Istennek szent anyja * illatosabb vagy mint a legjobb mirha;;18
-E szent Szűz előtt * énekeljétek ujra a hála dalát ;;23
-V. A te ékességeddel és * szépségeddel
-R. Indúlj meg, járj szerencsésen és országolj
-A te ékességeddel és * szépségeddel, indúlj meg, járj szerencsésen és országolj;;44
-Nem inog meg, Isten lakik benne, Isten már hajnalban is védelmezi;;45
-Istennek szent Anyja * boldogok vagyunk ha te melletünk vagy;;86
-V. Nem inog meg, Isten lakik benne,
-R. Isten már hajnalban is védelmezi
-Boldog vagy te * O szűz Mária * legyözted a világ tévelygéseit;;95
-Szent Szűz, hallgasd meg könyörgéseinket * adj erőt ellenségeink ellen;;96
-Szűz maradtál miutan megszülted szent Fiad * Istennek szeplőtelen anyja, könyörögj érettünk;;97
-V. Isten választotta őt születése előtt
-R. Hogy sátraban lakjék színe előtt
-
+@Commune/C11::s/V\. .*/V. Kegyelem van az ajkaidon./g s/R\. .*/R. Isten ezért megáldott mindörökre./g
 
 [Lectio1]
 Olvasmány Jézus Sírák fia könyvéből
@@ -105,22 +83,10 @@ Olvasmány Jézus Sírák fia könyvéből
 12 Akkor parancsola és mondá nekem a mindenek Teremtöje, és a ki teremtett engem, megnyugovék hajlékomban,
 13 és mondá nekem: Jákobban lakjál, és Izraelben bírj örökséget, és választottaim között verj gyökeret.
 
-[Responsory1]
-R. How holy and how spotless is thy breast
-*Him Whom the heavens cannot contain.
-V. Blessed art thou among women, and blessed is the fruit of thy womb.
-R. For thou hast borne in thy breast Him Whom the heavens cannot contain.
-
 [Lectio2]
 !Sir 24:15-16
 15 És így Sionban megerösíttettem, és a megszentelt városban hasonlóképen megnyugodtam, és Jerusalemben az én hatalmam.
 16 És meggyökereztem a tiszteletre méltó nép között, és az én Istenem részében, mely az ö öröksége; és a szentek teljes gyülekezetében az én tartózkodásom.
-
-[Responsory2]
-R. Blessed art thou, O Virgin Mary, who hast carried the Lord, the Maker of the world.
-* Thou hast borne Him Who created thee, and thou abidest a virgin for ever.
-V. Hail, Mary, full of grace. The Lord is with thee.
-R. Thou hast borne Him Who created thee, and thou abidest a virgin for ever.
 
 [Lectio3]
 !Sir 24:17-20
@@ -130,42 +96,22 @@ R. Thou hast borne Him Who created thee, and thou abidest a virgin for ever.
 20 Mint a fahéj és illatozó balzsam illatoztam, s mint a válogatott mirrha adtam a jóillat gyönyöröségét
 &teDeum
 
-[Responsory3]
-R. O holy Virgin Mary, happy indeed art thou, and right worthy of all praise
-* For out of thee rose the Sun of righteousness, even Christ our God.
-V. Pray for the people, plead for the clergy, make intercession for all women vowed to God. Let all that are making this holy memorial of thee feel the might of thine assistance.
-R. For out of thee rose the Sun of righteousness
-&Gloria
-R. Even Christ our God.
-
 [Ant Laudes]
-Mary hath been taken to heaven; * the Angels rejoice; they praise and bless the Lord.
-The Virgin Mary hath been taken into the chamber on high, * where the King of kings sitteth on a throne amid the stars.
-We run after thee, on the scent of thy perfumes * the virgins love thee heartily.
-Blessed of the Lord art thou, O daughter, * for by thee we have been given to eat of the fruit (of the tree) of Life.
-Fair and comely art thou, O daughter of Jerusalem, * terrible as a fenced camp set in battle array.
+Felvétetett * Mária a mennybe, az angyalok örvendeznek és áldva dicsérik az Urat
+Szűz Mária * felvétetett a Magasságbeli lakosztályába, ahol a királyok Királya ül trónjan felcsillagozva
+Parfümöd * illata után futunk, a szűz lányok nagyon szeretnek téged
+Áldott leánya * vagy az Úrnak, általad kaptuk meg az élet (fájának) gyümölcsét
+Gyönyörűséges * és ékes vagy Jeruzsálem leánya, rettenetes, mint a táborok elrendezett serege
 
 [Capitulum Laudes]
 !Song 6:8
 v. Sion lányai, akik látják, boldognak hirdetik, királynők ünneplik.
-$Deo gratias.
+$Deo gratias
 
-[Hymnus Laudes]
-@Commune/C11:Hymnus Laudes
+[Hymnus minor]
 
-[Versum 2]
-V. Blessed art thou among women.
-R. And blessed is the Fruit of thy womb.
-
-[Ant 2]
-O Blessed Mary, * Mother of God, Virgin for ever, temple of the Lord, sanctuary of the Holy Ghost, thou, without any ensample before thee, didst make thyself well-pleasing in the sight of our Lord Jesus Christ pray for the people, plead for the clergy, make intercession for all women vowed to God.
-
-[Special Prima]
-$Ave Mária
-$Deus in adjutorium.
-_
-!Hymnus.
-Emlékezzél meg, Alkotó,
+#Hymnus
+v. Emlékezzél meg, Alkotó,
 Hogy hozzánk jöttél egykoron,
 A Szűz méhének szenthelyén
 Testünk formáját fölvevén.
@@ -180,164 +126,18 @@ Kinek a Szűz szülőanyád,
 Atya, s kegyes Lélek, neked,
 Most és örök időkön át.
 Ámen.
-_
-Ant. Mary hath been taken to heaven * the Angels rejoice; they praise and bless the Lord.
-&psalm(53)
-_
-&psalm(84)
-_
-&psalm(116)
-Ant. Mary hath been taken to heaven; * the Angels rejoice; they praise and bless the Lord.
-_
-v. Capitulum
+
+[Capitulum Prima]
 !Song 6:9
 v. Ki az, aki ugy jön mint a kelő hajnal; szép mint a hold, tiszta mint a nap, és erös mint a bekeritett erőd a csataban?
 $Deo gratias
-_
-V. Holy Virgin, my praise by thee accepted be.
-R. Give me strength against thine enemies.
-_
-v. Uram irgalmazz nekünk. Krisztus kegyelmezz nekünk. Uram irgalmazz nekünk.
-_
-$Dominus vobiscum
-_
-!Oratio.
-O God, Who wast pleased to choose for thy dwelling-place the maiden palace of Blessed Mary, grant, we beseech thee, that her protection may shield us, and make us glad in her commemoration.
-$Qui vivis
 
-[Special Tertia]
-$Ave Mária
-$Deus in adjutorium
-_
-!Hymnus
-Emlékezzél meg, Alkotó,
-Hogy hozzánk jöttél egykoron,
-A Szűz méhének szenthelyén
-Testünk formáját fölvevén.
-_
-Kegyelmek Anyja, Mária,
-Irgalom édes Asszonya,
-Légy ellenségtől gyámolunk.
-S állj mellettünk, ha meghalunk.
-_
-Glória neked Jézusunk,
-Kinek a Szűz szülőanyád,
-Atya, s kegyes Lélek, neked,
-Most és örök időkön át.
-Ámen.
-_
-Ant. The Virgin Mary * hath been taken into the chamber on high, where the King of kings sitteth on a throne amid the stars.
-&psalm(119)
-_
-&psalm(120)
-_
-&psalm(121)
-Ant. The Virgin Mary * hath been taken into the chamber on high, where the King of kings sitteth on a throne amid the stars.
-_
-v. Capitulum
+[Capitulum Tertia]
 !Sir 24:15
 v. És így Sionban megerösíttettem, és a megszentelt városban hasonlóképen megnyugodtam, és Jerusalemben az én hatalmam.
 $Deo gratias
-_
-V. Grace is poured into thy lips.
-R. Therefore God hath blessed thee for ever.
-_
-v. Uram irgalmazz nekünk. Krisztus kegyelmezz nekünk. Uram irgalmazz nekünk.
-_
-&Dominus_vobiscum
-_
-Oratio.
-O God, Who, by the fruitful virginity of the Blessed Mary, hast given unto mankind the rewards of everlasting life; grant, we beseech thee, that we may continually feel the might of her intercession through whom we have worthily received the Author of our life, our Lord Jesus Christ, thy Son:
-$Qui tecum
 
-[Special Sexta]
-$Ave Mária.
-V. Deus in adjutorium.
-_
-!Hymnus
-Emlékezzél meg, Alkotó,
-Hogy hozzánk jöttél egykoron,
-A Szűz méhének szenthelyén
-Testünk formáját fölvevén.
-_
-Kegyelmek Anyja, Mária,
-Irgalom édes Asszonya,
-Légy ellenségtől gyámolunk.
-S állj mellettünk, ha meghalunk.
-_
-Glória neked Jézusunk,
-Kinek a Szűz szülőanyád,
-Atya, s kegyes Lélek, neked,
-Most és örök időkön át.
-Ámen.
-_
-Ant. We run after thee, on the scent of thy perfumes * the virgins love thee heartily.
-&psalm(122)
-_
-&psalm(123)
-_
-&psalm(124)
-Ant. We run after thee, on the scent of thy perfumes * the virgins love thee heartily.
-_
-!!Capitulum
+[Capitulum Sexta]
 !Sir 24:16
-Meggyökereztem a tiszteletre méltó nép között, és az én Istenem részében, mely az ö öröksége; és a szentek teljes gyülekezetében az én tartózkodásom.
+v. Meggyökereztem a tiszteletre méltó nép között, és az én Istenem részében, mely az ö öröksége; és a szentek teljes gyülekezetében az én tartózkodásom.
 $Deo gratias
-_
-V. Blessed art thou among women.
-R. And blessed is the Fruit of thy womb.
-_
-v. Uram irgalmazz nekünk. Krisztus kegyelmezz nekünk. Uram irgalmazz nekünk.
-_
-&Dominus_vobiscum
-_
-!Oratio.
-Most merciful God, grant, we beseech thee, a succour unto the frailty of our nature, that as we keep ever alive the memory of the holy Mother of God, so by the help of her intercession we may be raised up from the bondage of our sins.
-$Per eumdem
-
-[Special Nona]
-$Ave Mária
-$Deus in adjutorium
-_
-!Hymnus.
-Emlékezzél meg, Alkotó,
-Hogy hozzánk jöttél egykoron,
-A Szűz méhének szenthelyén
-Testünk formáját fölvevén.
-_
-Kegyelmek Anyja, Mária,
-Irgalom édes Asszonya,
-Légy ellenségtől gyámolunk.
-S állj mellettünk, ha meghalunk.
-_
-Glória neked Jézusunk,
-Kinek a Szűz szülőanyád,
-Atya, s kegyes Lélek, neked,
-Most és örök időkön át.
-Ámen.
-_
-Ant. Fair and comely art thou * O daughter of Jerusalem, terrible as a fenced camp set in battle array.
-&psalm(125)
-_
-&psalm(126)
-_
-&psalm(127)
-Ant. Fair and comely art thou, * O daughter of Jerusalem, terrible as a fenced camp set in battle array.
-_
-!!Capitulum
-!Sir 24:19
-v. Mint a platanus viz mellett az utcákon,
-mint a fahéj és illatozó balzsam illatoztam, s mint a válogatott mirrha adtam a jóillat gyönyöröségét
-$Deo gratias.
-_
-V. After thy delivery thou still remainest a Virgin undefiled.
-R. Mother of God, pray for us.
-_
-v. Uram irgalmazz nekünk. Krisztus kegyelmezz nekünk. Uram irgalmazz nekünk.
-_
-&Dominus_vobiscum
-_
-!Oratio.
-O Lord, we beseech thee, forgive the transgressions of thy servants, and, forasmuch as by our
-own deeds we cannot please thee, may we find safety through the prayers of the Mother of thy Son and our Lord.
-$Qui tecum
