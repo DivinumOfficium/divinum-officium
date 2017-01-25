@@ -1,0 +1,51 @@
+[Rank]
+S. Joannis Chrysostomi Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[Name]
+Joannes Chrisostome
+
+[Rule]
+vide C4a
+Gloria
+CredoDA
+
+[Comment]
+# 27 I – Św. Jana Chryzostoma, Wyznawcy, Biskupa i Doktora Kościoła
+! 3 klasy
+! Szaty białe
+Św. Jan Chryzostom, urodzony około roku 354 w Antiochii, rozpoczął karierę urzędniczą. Wkrótce jednak porzucił ją i jako pustelnik oddał się ascezie i studiowaniu Pisma św. Następnie został kapłanem w Antiochii, wreszcie biskupem w Konstantynopolu. Dar wymowy zjednał mu przydomek Chryzostoma, to jest Złotoustego. Prześladowany przez cesarzową Eudoksję zmarł na wygnaniu w Poncie 14 września 407 roku. Relikwie jego spoczywają w bazylice św. Piotra w Rzymie.
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Prosimy Cię, Panie, niech łaska niebieska daje wzrost Twojemu Kościołowi, który raczyłeś oświecić nauką i chwalebnymi zasługami św. Jana Złotoustego, Wyznawcy Twego i Biskupa.
+$Per Dominum.
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+!Syr 44:16
+Oto wielki kapłan, który za dni swoich podobał się Bogu.
+!Syr 44:20
+Nie znalazł się jemu podobny, który by zachował prawo Najwyższego. Alleluja, alleluja.
+!Jk 1:12
+Błogosławiony człowiek, który zniesie pokusę, bo utwierdziwszy się otrzyma wieniec żywota. Alleluja.
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+Panie, niech nam nie zabraknie serdecznej modlitwy świętego Jana Złotoustego, Twego Biskupa i Doktora, która zaleci Tobie naszą ofiarę i wyjedna nam Twoje przebaczenie.
+$Per Dominum.
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+Prosimy Cię, Panie, niech święty Jan Złotousty, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
+$Per Dominum
