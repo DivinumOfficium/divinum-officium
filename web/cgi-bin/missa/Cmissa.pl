@@ -37,8 +37,8 @@ our $officium = 'Cmissa.pl';
 our $version1 = 'Rubrics 1960';
 our $version2= 'New Mass';
 our $version = '';
-@versions = ('Ambrosian', 'Mozarabic', 'Sharum', 'Trident 1570', 'Divino Afflatu', 'Rubrics 1960', 'Rubrics 1967', 'New Mass');
-%ordos = split(',', "Mozarabic,OrdoM,Sharum,OrdoS,Ambrosian,OrdoA,Trident 1570,Ordo," .
+@versions = ('Ambrosian', 'Mozarabic', 'Sarum', 'Trident 1570', 'Divino Afflatu', 'Rubrics 1960', 'Rubrics 1967', 'New Mass');
+%ordos = split(',', "Mozarabic,OrdoM,Sarum,OrdoS,Ambrosian,OrdoA,Trident 1570,Ordo," .
   "Divino Afflatu,Ordo,Rubrics 1960,Ordo,Rubrics 1967,Ordo67,New Mass,OrdoN");
 
 #***common variables arrays and hashes
