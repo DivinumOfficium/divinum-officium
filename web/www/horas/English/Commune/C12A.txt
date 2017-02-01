@@ -4,54 +4,6 @@ Officium parvum Beatae Mariae Virginis Tempore Adventi
 [Rank]
 Officium parvum Beatae Mariae Virginis Tempore Adventi;;Simplex;;1
 
-[Special Completorium]
-#Incipit
-_
-$Ave Maria
-(sed rubrica 1955 aut rubrica 1960 omittitur)
-V. Turn us then, +++ O God, our saviour: 
-R. And let thy anger cease from us.
-$Deus in adjutorium
-&Gloria
-&Alleluia
-
-#Psalmi
-&psalm(128)
-
-&psalm(129)
-
-&psalm(130)
-
-@Commune/C12:Hymnus minor
-
-#Capitulum
-@Sancti/03-25:Capitulum Vespera
-_
-@:Verse Nona
-
-#Canticum Nunc dimittis
-@Tempora/Adv1-0:Ant 2:s/^/Ant. /
-&psalm(233)
-@Tempora/Adv1-0:Ant 2:s/^/Ant. /
-
-@Commune/C12:Pre oratio
-@:Oratio
-
-#Conclusio
-&Dominus_vobiscum
-&Benedicamus_Domino
-Benedictio. The almighty and merciful Lord, + the Father, the Son and the Holy Spirit, bless us and keep us.
-R. Amen.
-
-&antiphona_finalis
-V. May the divine assistance + remain with us always.
-R. Amen.
-
-$Pater noster
-$Ave Maria
-$Credo
-(sed rubrica 1955 aut rubrica 1960 omittitur)
-
 [Lectio1]
 !Luke 1:26-28
 26 And in the sixth month, the angel Gabriel was sent from God into a city of Galilee, called Nazareth,
@@ -73,7 +25,3 @@ $Credo
 36 And behold thy cousin Elizabeth, she also hath conceived a son in her old age; and this is the sixth month with her that is called barren:
 37 Because no word shall be impossible with God.
 38 And Mary said: Behold the handmaid of the Lord; be it done to me according to thy word. And the angel departed from her.
-
-[Verse Nona]
-V. The Angel of the Lord announced unto Mary.
-R. And she conceived of the Holy Ghost.
