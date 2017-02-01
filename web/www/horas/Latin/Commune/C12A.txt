@@ -14,14 +14,14 @@ Votive nocturn
 [Ant Vespera]
 @Sancti/03-25
 
-[Versum 3]
-@Commune/C12
-
 [Capitulum Vespera]
 @Sancti/03-25:Lectio Prima
 $Deo gratias
 
-[Ant 3]
+[Versum 1]
+@Commune/C11:Versum 2
+
+[Ant 1]
 @Tempora/Adv1-0:Ant 2
 
 [Oratio]
@@ -38,29 +38,10 @@ $Qui tecum
 (sed rubrica 1955 aut rubrica 1960 omittitur)
 
 [Special Completorium]
-#Incipit
-_
-$Ave Maria
-(sed rubrica 1955 aut rubrica 1960 omittitur)
-V. Convérte nos +++ Deus, salutáris noster.
-R. Et avérte iram tuam a nobis.
-$Deus in adjutorium
-&Gloria
-&Alleluia
-
-#Psalmi
-&psalm(128)
-
-&psalm(129)
-
-&psalm(130)
-
-@Commune/C12:Hymnus minor
-
-#Capitulum
+@Commune/C12::s/(#Capitulum.).*/$1/s
 @Sancti/03-25:Capitulum Vespera
 _
-@:Verse Nona
+@Psalterium/Mariaant:Advent:s/.*V./V./s s/v. .*//s
 
 #Canticum Nunc dimittis
 @Tempora/Adv1-0:Ant 2:s/^/Ant. /
@@ -70,20 +51,7 @@ _
 @Commune/C12:Pre oratio
 @:Oratio
 
-#Conclusio
-&Dominus_vobiscum
-&Benedicamus_Domino
-Benedictio. Benedícat et custódiat nos omnípotens et miséricors Dóminus, + Pater, et Fílius, et Spíritus Sanctus.
-R. Amen.
-
-&antiphona_finalis
-V. Divínum auxílium + máneat semper nobíscum.
-R. Amen.
-
-$Pater noster
-$Ave Maria
-$Credo
-(sed rubrica 1955 aut rubrica 1960 omittitur)
+@Commune/C12::s/.*(.#Conclusio)/$1/s
 
 [Invit]
 @Commune/C12
@@ -193,10 +161,6 @@ _
 @Commune/C12:Versum 2
 @:Minor final
 
-[Verse Nona]
-V. Angelus Domini nuntiavit Mariae.
-R. Et concepit de Spiritu Sancto.
-
 [Special Nona]
 @Commune/C12:Minor intro
 @Sancti/03-25:Ant Vespera:5 s/^/Ant. / s/;;.*//
@@ -211,5 +175,11 @@ _
 #Capitulum
 @Sancti/03-25:Capitulum Vespera
 _
-@:Verse Nona
+@Psalterium/Mariaant:Advent:s/.*V./V./s s/v. .*//s
 @:Minor final
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+@:Ant 1
