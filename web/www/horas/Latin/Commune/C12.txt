@@ -8,6 +8,7 @@ Officium parvum Beatae Mariae Virginis;;Simplex;;1;;ex C11
 ex C11;
 Ave only
 Doxology=Nat
+Omit Suffragium
 Special Benedictio
 Votive nocturn
 Psalmi Dominica
@@ -18,34 +19,55 @@ Feria Te Deum
 @Commune/C11:Versum 2
 
 [Ant 3]
-Beata Mater, * et intacta Virgo, gloriosa Regina mundi, intercede pro nobis ad Dominum.
+@Commune/C10:Ant 1
 
 [Oratio 1]
-Concede nos famulos tuos, quaesumus, Domine Deus, perpetua mentis et corporis sanitate gaudere: et, gloriosa beatae Mariae semper Virginis intercessione, a praesenti liberari tristitia et aeterna perfrui laetitia.
-$Per Dominum
+@Commune/C10:Oratio
 
 [Oratio 2]
-Deus, qui de beatae Mariae Virginis utero Verbum tuum, Angelo nuntiante, carnem suscipere voluisti: praesta supplicibus tuis; ut, qui vere eam Genitricem Dei credimus, eius apud te intercessionibus adjuvemur.
+v. Deus, qui de beatae Mariae Virginis utero Verbum tuum, Angelo nuntiante, carnem suscipere voluisti: praesta supplicibus tuis; ut, qui vere eam Genitricem Dei credimus, eius apud te intercessionibus adjuvemur.
 $Per eumdem
+
+[Commemoratio]
+!Commemoratio de Sanctis
+Ant. Sancti Dei omnes, intercédere dignémini pro nostra omniúmque salúte.
+V. Lætamini in Dómino et exsultáte, justi.
+R. Et gloriámini, omnes recti corde.
+$Oremus
+v. Prótege, Dómine, pópulum tuum, et, Apostolórum tuórum Petri et Pauli et aliórum Apostólorum patrocínio confidéntem, perpétua defensióne consérva.
+v. Omnes Sancti tui, quǽsumus, Dómine, nos ubíque ádjuvent: ut, dum eórum mérita recólimus, patrocínia sentiámus: et pacem tuam nostris concéde tempóribus, et ab Ecclésia tua cunctam repélle nequítiam; iter, actus et voluntátes nostras et ómnium famulórum tuórum, in salútis tuæ prosperitáte dispóne, benefactóribus nostris sempitérna bona retríbue, et ómnibus fidélibus defúnctis réquiem ætérnam concéde.
+$Per Dominum
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+
+[Pre oratio]
+
+#Oratio
+_
+v. Kýrie, eléison. Christe, eléison. Kýrie, eléison.
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+&Dominus_vobiscum
+$Oremus
 
 [Special Completorium]
 #Incipit
+_
 $Ave Maria
+(sed rubrica 1955 aut rubrica 1960 omittitur)
 V. Convérte nos +++ Deus, salutáris noster.
 R. Et avérte iram tuam a nobis.
 $Deus in adjutorium
 &Gloria
 &Alleluia
-_
+
 #Psalmi
 &psalm(128)
-_
+
 &psalm(129)
-_
+
 &psalm(130)
-_
+
 @:Hymnus minor
-_
+
 #Capitulum
 !Sir 24:24
 v. Ego mater pulchrae dilectionis, et timoris, et agnitionis, et sanctae spei.
@@ -53,21 +75,33 @@ $Deo gratias
 _
 V. Ora pro nobis sancta Dei Genitrix.
 R. Ut digni efficiamur promissionibus Christi.
-_
+
+#Canticum Nunc dimittis
 Ant. Sub tuum praesidium * confugimus, sancta Dei Genitrix: nostras deprecationes ne despicias in necessitatibus, sed a periculis cunctis libera nos semper, Virgo gloriosa et benedicta.
 &psalm(233)
 Ant. Sub tuum praesidium * confugimus, sancta Dei Genitrix: nostras deprecationes ne despicias in necessitatibus, sed a periculis cunctis libera nos semper, Virgo gloriosa et benedicta.
-_
-Kyrie eleison. Christe eleison. Kyrie eleison.
-_
-&Dominus_vobiscum
-_
-$Oremus
-Beatae et gloriosae semper Virginis Mariae, quaesumus, Domine, intercessio gloriosa nos protegat, et ad vitam perducat aeternam.
+
+@:Pre oratio
+v. Beatae et gloriosae semper Virginis Mariae, quaesumus, Domine, intercessio gloriosa nos protegat, et ad vitam perducat aeternam.
 $Per Dominum
 
+#Conclusio
+&Dominus_vobiscum
+&Benedicamus_Domino
+Benedictio. Benedícat et custódiat nos omnípotens et miséricors Dóminus, + Pater, et Fílius, et Spíritus Sanctus.
+R. Amen.
+
+&antiphona_finalis
+V. Divínum auxílium + máneat semper nobíscum.
+R. Amen.
+
+$Pater noster
+$Ave Maria
+$Credo
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+
 [Invit]
-Ave Maria, gratia plena * Dominus tecum.
+@Commune/C10
 
 [Ant Matutinum]
 @Commune/C11::s/V\. .*/V. Diffusa est gratia in labiis tuis./g s/R\. .*/R. Propterea benedixit te Deus in aeternum./g
@@ -113,21 +147,18 @@ Benedicta * filia tu a Domino: quia per te fructum vitae communicavimus.
 Pulchra es, * et decora, filia Jerusalem: terribilis ut castrorum acies ordinata.
 
 [Capitulum Laudes]
-!Cant. 6:8
+!Cant 6:8
 v. Viderunt eam filiae Sion, et beatissimam praedicaverunt et reginae laudaverunt eam.
-$Deo gratias.
-
-[Hymnus Laudes]
-@Commune/C11:Hymnus Laudes
+$Deo gratias
 
 [Versum 2]
-V. Benedicta tu in mulieribus.
-R. Et benedictus fructus ventris tui.
+@Commune/C10
 
 [Ant 2]
-Beata Dei Genitrix Maria, * Virgo perpetua, templum Domini, sacrarium Spiritus Sancti: sola sine exemplo placuisti Domino nostro Jesu Christo: ora pro populo, interveni pro clero, intercede pro devoto femineo sexu.
+@Commune/C10
 
 [Hymnus minor]
+
 #Hymnus
 v. Memento, rerum Conditor,
 Nostri quod olim corporis,
@@ -147,113 +178,139 @@ Amen.
 
 [Minor intro]
 #Incipit
+_
 $Ave Maria
+(sed rubrica 1955 aut rubrica 1960 omittitur)
 $Deus in adjutorium.
 &Gloria
 &Alleluia
-_
 @:Hymnus minor
-_
+
 #Psalmi
 
-[Special Prima]
-@:Minor intro
-Ant. Assumpta est Maria in caelum: * gaudent Angeli, laudantes benedicunt Dominum.
-&psalm(53)
+[Minor final]
+
+#Conclusio
+&Dominus_vobiscum
+&Benedicamus_Domino
+$Fidelium animae
 _
-&psalm(84)
-_
-&psalm(116)
-Ant. Assumpta est Maria in caelum: * gaudent Angeli, laudantes benedicunt Dominum.
-_
-#Capitulum
+$Pater noster
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+
+[Capitulum Prima]
 !Cant 6:9
 v. Quae est ista, quae progreditur quasi aurora consurgens, pulchra ut luna, electa ut sol, terribilis ut castrorum acies ordinata?
 $Deo gratias
-_
-@Commune/C11:Versum 1
-_
-Kyrie eleison. Christe eleison. Kyrie eleison.
-_
-$Dominus_vobiscum
-_
-$Oremus
-Deus, qui virginalem aulam beatae Mariae in qua habitares, eligere dignatus es: da, quaesumus; ut sua nos defensione munitos, jucundos facias suae interesse commemorationi.
+
+[Oratio Prima]
+v. Deus, qui virginalem aulam beatae Mariae in qua habitares, eligere dignatus es: da, quaesumus; ut sua nos defensione munitos, jucundos facias suae interesse commemorationi.
 $Qui vivis
 
-[Special Tertia]
+[Special Prima]
 @:Minor intro
-Ant. Maria Virgo assumpta est * ad aethereum thalamum, in quo Rex regum stellato sedet solio.
-&psalm(119)
+@:Ant Laudes:1 s/^/Ant. /
+
+&psalm(53)
+
+&psalm(84)
+
+&psalm(116)
 _
-&psalm(120)
-_
-&psalm(121)
-Ant. Maria Virgo assumpta est * ad aethereum thalamum, in quo Rex regum stellato sedet solio.
-_
+@:Ant Laudes:1 s/^/Ant. /
+
+
 #Capitulum
+@:Capitulum Prima
+_
+@Commune/C11:Versum 1
+@:Pre oratio
+@:Oratio Prima
+@:Minor final
+
+[Capitulum Tertia]
 !Sir 24:15
 v. Et sic in Sion firmata sum, et in civitate sanctificata similiter requievi, et in Jerusalem potestas mea.
 $Deo gratias
-_
-@Commune/C11:Versum 2
-_
-Kyrie eleison. Christe eleison. Kyrie eleison.
-_
-&Dominus_vobiscum
-_
-$Oremus
-Deus, qui salutis aeternae, beatae Mariae virginitate fecunda, humano generi praemia praestitisti: tribue, quaesumus; ut ipsam pro nobis intercedere sentiamus, per quam meruimus auctorem vitae suscipere, Dominum nostrum Jesum Christum Filium tuum:
+
+[Oratio Tertia]
+v. Deus, qui salutis aeternae, beatae Mariae virginitate fecunda, humano generi praemia praestitisti: tribue, quaesumus; ut ipsam pro nobis intercedere sentiamus, per quam meruimus auctorem vitae suscipere, Dominum nostrum Jesum Christum Filium tuum:
 $Qui tecum
 
-[Special Sexta]
+[Special Tertia]
 @:Minor intro
-Ant. In odorem * unguentorum tuorum currimus: adolescentulae dilexerunt te nimis.
-&psalm(122)
+@:Ant Laudes:2 s/^/Ant. /
+&psalm(119)
+
+&psalm(120)
+
+&psalm(121)
 _
-&psalm(123)
-_
-&psalm(124)
-Ant. In odorem * unguentorum tuorum currimus: adolescentulae dilexerunt te nimis.
-_
+@:Ant Laudes:2 s/^/Ant. /
+
 #Capitulum
+@:Capitulum Tertia
+_
+@Commune/C11:Versum 2
+@:Pre oratio
+@:Oratio Tertia
+@:Minor final
+
+[Capitulum Sexta]
 !Sir 24:16
 v. Et radicavi in populo honorificato, et in parte Dei mei hereditas illius et in plenitudine sanctorum detentio mea.
 $Deo gratias
-_
-V. Benedicta tu in mulieribus.
-R. Et benedictus fructus ventris tui.
-_
-Kyrie eleison. Christe eleison. Kyrie eleison.
-_
-&Dominus_vobiscum
-_
-$Oremus
-Concede, misericors Deus, fragilitati nostrae praesidium: ut qui sanctae Dei Genitricis memoriam agimus, intercessionis ejus auxilio, a nostris iniquitatibus resurgamus.
+
+[Oratio Sexta]
+v. Concede, misericors Deus, fragilitati nostrae praesidium: ut qui sanctae Dei Genitricis memoriam agimus, intercessionis ejus auxilio, a nostris iniquitatibus resurgamus.
 $Per eumdem
+
+[Special Sexta]
+@:Minor intro
+@:Ant Laudes:3 s/^/Ant. /
+&psalm(122)
+
+&psalm(123)
+
+&psalm(124)
+_
+@:Ant Laudes:3 s/^/Ant. /
+
+#Capitulum
+@:Capitulum Sexta
+_
+@Commune/C10:Versum 2
+@:Pre oratio
+@:Oratio Sexta
+@:Minor final
+
+[Capitulum Nona]
+@Commune/C11:Lectio Prima
+$Deo gratias
+
+[Oratio Nona]
+v. Famulorum tuorum, quaesumus, Domine, delictis ignosce: ut qui tibi placere de actibus nostris non valemus, Genitricis Filii tui Domini nostri intercessione salvemur:
+$Qui tecum
+
+[Verse Nona]
+V. Post partum, Virgo, inviolata permansisti.
+R. Dei Genitrix, intercede pro nobis.
 
 [Special Nona]
 @:Minor intro
-Ant. Pulchra es * et decora, filia Jerusalem: terribilis ut castrorum acies ordinata.
+@:Ant Laudes:5 s/^/Ant. /
 &psalm(125)
-_
+
 &psalm(126)
-_
+
 &psalm(127)
-Ant. Pulchra es, * et decora, filia Jerusalem: terribilis ut castrorum acies ordinata.
 _
+@:Ant Laudes:5 s/^/Ant. /
+
 #Capitulum
-!Sir 24:19-20
-v. In plateis sicut cinnamomum et balsamum aromatizans odorem dedi: quasi myrrha electa dedi suavitatem odoris.
-$Deo gratias.
+@:Capitulum Nona
 _
-V. Post partum, Virgo, inviolata permansisti.
-R. Dei Genitrix, intercede pro nobis.
-_
-Kyrie eleison. Christe eleison. Kyrie eleison.
-_
-&Dominus_vobiscum
-_
-$Oremus
-Famulorum tuorum, quaesumus, Domine, delictis ignosce: ut qui tibi placere de actibus nostris non valemus, Genitricis Filii tui Domini nostri intercessione salvemur:
-$Qui tecum
+@:Verse Nona
+@:Pre oratio
+@:Oratio Nona
+@:Minor final

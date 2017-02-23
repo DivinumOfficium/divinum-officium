@@ -1,48 +1,53 @@
 [Name]
-Officium parvum Beatae Mariae Virginis
+Małe oficjum ku czci Najświętszej Marji Panny
 
 [Rank]
-Officium parvum Beatae Mariae Virginis;;Simplex;;1;;ex C11
-
-[Rule]
-ex C11;
-Ave only
-Doxology=Nat
-Special Benedictio
-Votive nocturn
-Psalmi Dominica
-Antiphonas horas
-Feria Te Deum
-
-[Ant 3]
-Błogosławiona Matko, * i nietknięta dziewico, chwalebna Królowo świata, wstawiaj się za nami u Pana.
-
-[Oratio 1]
-Prosimy Cię, Panie, dozwól nam sługom Twoim, radować się nieustannem zdrowiem duszy i ciała, a za chwalebnem wstawieniem się błogosławionej Marji, zawsze Dziewicy, wyzwól nas od smutków doczesnych, a daj zakosztować wiecznego wesela.
-$Per Dominum
+Małe oficjum ku czci Najświętszej Marji Panny;;Simplex;;1;;ex C11
 
 [Oratio 2]
-Boże, który chciałeś, ażeby Słowo Twoje za zwiastowaniem Anielskiem z żywota błogosławionej Marji Panny, ciało przyjęło: daj, pokornie Cię proszącym; abyśmy, którzy prawdziwie Bożą Rodzicielkę wyznajemy, za Jej wstawiennictwem u Ciebie zostali wspomożeni.
+v. Boże, który chciałeś, ażeby Słowo Twoje za zwiastowaniem Anielskiem z żywota błogosławionej Marji Panny, ciało przyjęło: daj, pokornie Cię proszącym; abyśmy, którzy prawdziwie Bożą Rodzicielkę wyznajemy, za Jej wstawiennictwem u Ciebie zostali wspomożeni.
 $Per eumdem
 
+[Commemoratio]
+!Wspomnienie Wszystkich Świętych
+Ant. Wszyscy Święci Pańscy, raczcie się wstawiać za zbawieniem nas wszystkich.
+V. Weselcie się w Panu i radujcie się sprawiedliwi.
+R. A chlubcie się wszyscy prawego serca.
+$Oremus
+v. Wspieraj lud Twój, Panie, a w opiekę Apostołów Twoich Piotra i Pawła, oraz innych Apostołów ufający, racz otaczać ustawiczną opieką.
+v. Wszyscy Święci prosimy, Panie niech nas wspomagają, iżbyśmy rozpamiętywając i czcząc ich zasługi, doznali ich wspomożenia. Pokoju Twegi użycz czasom naszym, od Kościoła Twojego wszelką nieprawość oddal. Nasze i wszystkich sług Twoich uczynki, zamiary i sprawy, racz pokierować ku szczęśliwemu osiągnięciu zbawienia. Dobrodziejów naszych nagródź wiecznemi dobrami. Wszystkim wiernym zmarłym racz dać wieczny odpoczynyk.
+$Per Dominum
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+
+[Pre oratio]
+
+#Oratio
+_
+v. Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+&Dominus_vobiscum
+$Oremus
+
 [Special Completorium]
-#Początek
+#Incipit
+_
 $Ave Maria
+(sed rubrica 1955 aut rubrica 1960 omittitur)
 V. Nawróć nas +++ Boże, nasz zbawco.
 R. I odwróć swój gniew od nas.
 $Deus in adjutorium
 &Gloria
 &Alleluia
-_
-#Psalmy
+
+#Psalmi
 &psalm(128)
-_
+
 &psalm(129)
-_
+
 &psalm(130)
-_
+
 @:Hymnus minor
-_
+
 #Capitulum
 !Syr 24:24
 v. Jam matka pięknej miłości i bogobojności, i uznania, i nadzieje świętej.
@@ -50,21 +55,30 @@ $Deo gratias
 _
 V. Módl się za nami święta Boża Rodzicielko.
 R. Abyśmy się stali godnymi obietnic Chrystusowych
-_
+
+#Canticum Nunc dimittis
 Ant. Pod Twoją obronę * uciekamy się, święta Boża Rodzicielko: naszymi prośbami racz nie gardzić w potrzebach naszych, ale od wszelakich złych przygód racz nas zawsze wybawiać, Panno chwalebna i błogosławiona.
 &psalm(233)
 Ant. Pod Twoją obronę * uciekamy się, święta Boża Rodzicielko: naszymi prośbami racz nie gardzić w potrzebach naszych, ale od wszelakich złych przygód racz nas zawsze wybawiać, Panno chwalebna i błogosławiona.
-_
-Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
-_
-&Dominus_vobiscum
-_
-$Oremus
-Niech błogosławionej i chwalebnej zawsze Dziewicy Maryi, prosimy Panie, chwalebne wstawiennictwo nas strzeże, i do życia prowadzi wiecznego.
+
+@:Pre oratio
+v. Niech błogosławionej i chwalebnej zawsze Dziewicy Maryi, prosimy Panie, chwalebne wstawiennictwo nas strzeże, i do życia prowadzi wiecznego.
 $Per Dominum
 
-[Invit]
-Zdrowaś Maryjo, łaskiś pełna * Pan z Tobą.
+#Conclusio
+&Dominus_vobiscum
+&Benedicamus_Domino
+Benedictio. Niech nas błogosławi i strzeże wszechmogący i miłosierny Pan, + Ojciec, i Syn, i Duch Święty.
+R. Amen.
+
+&antiphona_finalis
+V. Pomoc Boża + niech będzie zawsze z nami.
+R. Amen.
+
+$Pater noster
+$Ave Maria
+$Credo
+(sed rubrica 1955 aut rubrica 1960 omittitur)
 
 [Ant Matutinum]
 @Commune/C11::s/V\. .*/V. Rozlała się wdzięczność po wargach twoich./g s/R\. .*/R. Dlatego cię błogosławił Bóg na wieki./g
@@ -74,13 +88,6 @@ Zdrowaś Maryjo, łaskiś pełna * Pan z Tobą.
 11 We wszytkim szukałam odpoczynku i w dziedzictwie Pańskim mieszkać będę.
 12 Tedy przykazał i rzekł mi, Stworzyciel wszech rzeczy, a który mię stworzył, odpoczynął w przybytku moim.
 13 I rzekł mi: Mieszkaj w Jakubie a w Izraelu weźmi dziedzictwo, a między wybranymi memi rozpuść korzenie.
-
-[Responsory1]
-R. Święte i nieskalane dziewictwo, którego chwały nie zdołam wyrazić:
-* Bo Ten, którego niebiosa zmieścić nie mogły, Ty w swym łonie nosiłaś.
-V. Błogosławionaś Ty między niewiastami, i błogosławiony owoc żywota twojego
-R. Bo Ten, którego niebiosa zmieścić nie mogły, Ty w swym łonie nosiłaś.
-
 
 [Lectio2]
 !Syr 24:15-16
@@ -117,18 +124,12 @@ Błogosławionaś jest córko, * przez Boga, przez Ciebie bowiem dan nam jest ow
 Pięknaś jest * i ozdobna, córko Jeruzalem: ogromna, jako wojska uszykowane porządnie.
 
 [Capitulum Laudes]
-!Pnp. 6:8
+!Pnp 6:8
 v. Widziały ją córki syjońskie, i błogosławioną zwały, i królowe ją chwaliły.
-$Deo gratias.
-
-[Versum 2]
-V. Błogosławionaś ty między niewiastami.
-R. I błogosławiony owoc żywota twojego
-
-[Ant 2]
-Błogosławiona Boża Rodzicielko Marjo, * zawsze Panno, świątynio Pana, Przybytku Ducha Świętego: samaś bezprzykładnie upodobała Panu naszemu Jezusowi Chrystusowi: módl się za lud, wstawiaj się za klerem, przyczyń się za niewiastami Bogu poświęconemi.
+$Deo gratias
 
 [Hymnus minor]
+
 #Hymnus
 v. Pomnij, Stwórco wszechrzeczy,
 Żeś ongiś, rodząc się
@@ -146,115 +147,37 @@ oraz Ojcu i dobroczynnemu Duchowi,
 po nieskończone wieki.
 Amen.
 
-[Minor intro]
-#Początek
-$Ave Maria
-$Deus in adjutorium.
-&Gloria
-&Alleluia
-_
-@:Hymnus minor
-_
-#Psalmy
-
-[Special Prima]
-@:Minor intro
-Ant. Marja wzięta jest * do Nieba, radują się Aniołowie; wychwalając błogosławią Pana
-&psalm(53)
-_
-&psalm(84)
-_
-&psalm(116)
-Ant. Marja wzięta jest * do Nieba, radują się Aniołowie; wychwalając błogosławią Pana
-_
-#Capitulum
+[Capitulum Prima]
 !Pnp 6:9
 v. Któraż to jest, która idzie jako zorza powstająca, piękna jako księżyc, wybrana jako słonce, ogromna jako wojska uszykowane porządnie?
 $Deo gratias
-_
-@Commune/C11:Versum 1
-_
-Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
-_
-$Dominus_vobiscum
-_
-$Oremus
-Boże, któryś raczył obrać sobie na mieszkanie dziewicze łono Najświętszej Panny Marji: daj prosimy; abyśmy, doznawszy Jej opieki, z radością mogli wziąć udział w Jej uroczystości.
+
+[Oratio Prima]
+v. Boże, któryś raczył obrać sobie na mieszkanie dziewicze łono Najświętszej Panny Marji: daj prosimy; abyśmy, doznawszy Jej opieki, z radością mogli wziąć udział w Jej uroczystości.
 $Qui vivis
 
-[Special Tertia]
-@:Minor intro
-Ant. Marja Dziewica * wzięta jest do niebieskiego mieszkania, w którem Król królów na gwiaździstym zasiada tronie.
-&psalm(119)
-_
-&psalm(120)
-_
-&psalm(121)
-Ant. Marja Dziewica * wzięta jest do niebieskiego mieszkania, w którem Król królów na gwiaździstym zasiada tronie.
-_
-#Capitulum
+[Capitulum Tertia]
 !Sir 24:15
 v. I takem w Syjonie jest utwierdzona a w Mieście Świętym takżem odpoczywała, a w Jeruzalem władza moja.
 $Deo gratias
-_
-@Commune/C11:Versum 2
-_
-Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
-_
-&Dominus_vobiscum
-_
-v. Módlmy się.
-Boże, któryś przez płodne dziewictwo Najświętszej Marji Panny, zgotował rodowi ludzkiemu nagrodę zbawienia wiecznego: spraw prosimy, abyśmy doznawali pośrednictwa Tej, przez którą zasłużyliśmy otrzymać Dawcę życia wiekuistego, Pana naszego Jezusa Chrystusa:
+
+[Oratio Tertia]
+v. Boże, któryś przez płodne dziewictwo Najświętszej Marji Panny, zgotował rodowi ludzkiemu nagrodę zbawienia wiecznego: spraw prosimy, abyśmy doznawali pośrednictwa Tej, przez którą zasłużyliśmy otrzymać Dawcę życia wiekuistego, Pana naszego Jezusa Chrystusa:
 $Qui tecum
 
-[Special Sexta]
-@:Minor intro
-Ant. Za tobą pobieżemy * do wonności olejków twoich; Panienki umiłowały cię bardzo.
-&psalm(122)
-_
-&psalm(123)
-_
-&psalm(124)
-Ant. Za tobą pobieżemy * do wonności olejków twoich; Panienki umiłowały cię bardzo.
-_
-#Capitulum
+[Capitulum Sexta]
 !Syr 24:16
 v. I rozkorzeniłam się w zacnym narodzie i w dziale Boga mego dziedzictwo jego, a w pełności świętych zadzierżenie moje.
 $Deo gratias
-_
-V. Błogosławionaś ty między niewiastami.
-R. I błogosławiony owoc żywota twojego
-_
-Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
-_
-&Dominus_vobiscum
-_
-$Oremus
-Udziel nam, prosimy Cię, miłosierny Boże, pomocy w słabościach naszych, abyśmy, którzy świętej Bożej Rodzicielce cześć oddajemy, za jej przyczyną i wstawiennictwem, powstali z nieprawości naszych.
+
+[Oratio Sexta]
+v. Udziel nam, prosimy Cię, miłosierny Boże, pomocy w słabościach naszych, abyśmy, którzy świętej Bożej Rodzicielce cześć oddajemy, za jej przyczyną i wstawiennictwem, powstali z nieprawości naszych.
 $Per eumdem
 
-[Special Nona]
-@:Minor intro
-Ant. Pięknaś jest * i ozdobna, córko Jeruzalem: ogromna, jako wojska uszykowane porządnie.
-&psalm(125)
-_
-&psalm(126)
-_
-&psalm(127)
-Ant. Pięknaś jest * i ozdobna, córko Jeruzalem: ogromna, jako wojska uszykowane porządnie.
-_
-#Capitulum
-!Syr 24:19-20
-v. Na ulicach jako cynamon i balsam woniający wydałam wonność, jako mirra wyborna dałam słodkość wonności
-$Deo gratias.
-_
+[Oratio Nona]
+v. Przebacz, prosimy Cię, Panie, grzechy sług Twoich i daj, abyśmy, którzy sami z siebie w czynach swych podobać się Tobie nie potrafimy, uzyskali zbawienie za pośrednictwem Rodzicielki Syna Twojego:
+$Qui tecum
+
+[Verse Nona]
 V. Po porodzeniu Panno niepokalaną pozostałaś.
 R. Boża Rodzicielko, wstaw się za nami.
-_
-Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
-_
-&Dominus_vobiscum
-_
-$Oremus
-Przebacz, prosimy Cię, Panie, grzechy sług Twoich i daj, abyśmy, którzy sami z siebie w czynach swych podobać się Tobie nie potrafimy, uzyskali zbawienie za pośrednictwem Rodzicielki Syna Twojego:
-$Qui tecum

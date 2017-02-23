@@ -1,3 +1,5 @@
+@Commune/C12
+
 [Name]
 Officium parvum Beatae Mariae Virginis
 
@@ -7,15 +9,12 @@ Officium parvum Beatae Mariae Virginis Tempora Paschalis;;Simplex;;1
 [Rule]
 Ave only
 Doxology=Nat
-Omit Suffragium Conclusion
+Omit Suffragium
 Special Benedictio
 Votive nocturn
 Psalmi Dominica
 Antiphonas Horas
 Feria Te Deum
-
-[Ant 1]
-O Queen of heaven * rejoice! alleluia: for He whom thou didst merit to bear, alleluia, hath arisen as he said, alleluia; pray for us to God, alleluia.
 
 [Special Completorium]
 @Commune/C12::s/^Ant. .*/Ant. O Queen of heaven * rejoice! alleluia: for He whom thou didst merit to bear, alleluia, hath arisen as he said, alleluia; pray for us to God, alleluia./gm

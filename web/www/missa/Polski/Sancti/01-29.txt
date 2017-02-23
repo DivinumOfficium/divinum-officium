@@ -1,0 +1,48 @@
+[Rank]
+S. Francisci Salesii Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[Name]
+Francisce
+
+[Rule]
+vide C4a;
+Gloria
+CredoDA
+
+[Comment]
+# 29 I – Św. Franciszka Salezego, Biskupa, Wyznawcy i Doktora Kościoła
+! 3 klasy
+! Szaty białe
+W dwudziestym piątym roku życia Franciszek Salezy porzucił karierę prawniczą i wstąpił do stanu duchownego. Po otrzymaniu święceń kapłańskich w roku 1593 głosił słowo Boże wśród kalwinów. Owocem tej misji było nawrócenie około 72 tysięcy dusz do Kościoła. W roku 1602 został biskupem Genewy. Był świetnym kaznodzieją i pisarzem. Jego dzieła: Filotea oraz Traktat o miłości Bożej wskazują, jak zdobywać świętość w życiu świeckim. Św. Franciszek razem ze św. Joanną de Chantal założył zakon Sióstr Wizytek. Zmarł 28 grudnia 1622 r. Jest patronem pisarzy katolickich.
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Boże, z Twojej woli święty Franciszek, wyznawca Twój i Biskup, dla zbawienia dusz stał się wszystkim dla wszystkich; spraw łaskawie, abyśmy przepojeni słodyczą miłości Twojej, kierując się jego radami i korzystając z zasług osiągnęli radość wieczną.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Tractus]
+@Commune/C4a:Tractus
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+@Commune/C4a:Secreta
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+@Commune/C4a:Postcommunio
+

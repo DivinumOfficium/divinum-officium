@@ -4,51 +4,59 @@ Officium parvum Beatae Mariae Virginis Tempore Adventi
 [Rank]
 Officium parvum Beatae Mariae Virginis Tempore Adventi;;Simplex;;1
 
-[Rule]
-Ave only
-Doxology=Nat
-Omit Suffragium Conclusion
-Special Benedictio
-Votive nocturn
-Psalmi Dominica
-Antiphonas Horas
-
-[Ant Vespera]
-The Angel Gabriel was sent * to a virgin espoused to a man whose name was Joseph; and the virgin's name was Mary.;;109
-Hail, Mary, * full of grace, the Lord is with thee blessed art thou among women.;;112
-Fear not, Mary, * thou hast found grace with the Lord behold, thou shalt conceive, and bring forth a Son.;;121
-The Lord shall give unto Him the throne of His father David, and of His kingdom there shall be no end.;;126
-Behold the handmaid of the Lord * be it unto me according to thy word.;;147
-
-[Versum 1]
-@Commune/C12
-
-[Ant 1]
-The Holy Ghost shall come upon thee, O Mary, * fear not; thou shalt bear in thy womb the Son of God. Alleluia.
-
-[Oratio]
-@Commune/C12:Oratio 2
-
 [Special Completorium]
-@Commune/C12::s/^!.*/!Isa 7:14-15/m s/^v. .*/v. Behold, the Virgin shall conceive and bear a Son, and His Name shall be called Emmanuel. Butter and honey shall He eat, that He may know to refuse the evil, and choose the good./m s/V. Pray.*/V. The Angel of the Lord announced unto Mary./m s/R. That.*/R. And she conceived of the Holy Ghost./m s/Ant. We.*/Ant. The Holy Ghost * shall come upon thee, O Mary, * fear not; thou shalt bear in thy womb the Son of God. Alleluia./mg
+#Incipit
+_
+$Ave Maria
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+V. Turn us then, +++ O God, our saviour: 
+R. And let thy anger cease from us.
+$Deus in adjutorium
+&Gloria
+&Alleluia
 
-[Invit]
-Hail, Mary, full of grace. * the Lord is with thee.
+#Psalmi
+&psalm(128)
 
-[Ant Matutinum]
-@Commune/C11::s/V\. .*/V. Grace is poured into thy lips./g s/R\. .*/R. Therefore God hath blessed thee for ever./ s/^Post partum.*/Angelus Domini nuntiavit Mariae, et concepit de Spiritu Sancto.;;97/m
+&psalm(129)
+
+&psalm(130)
+
+@Commune/C12:Hymnus minor
+
+#Capitulum
+@Sancti/03-25:Capitulum Vespera
+_
+@:Verse Nona
+
+#Canticum Nunc dimittis
+@Tempora/Adv1-0:Ant 2:s/^/Ant. /
+&psalm(233)
+@Tempora/Adv1-0:Ant 2:s/^/Ant. /
+
+@Commune/C12:Pre oratio
+@:Oratio
+
+#Conclusio
+&Dominus_vobiscum
+&Benedicamus_Domino
+Benedictio. The almighty and merciful Lord, + the Father, the Son and the Holy Spirit, bless us and keep us.
+R. Amen.
+
+&antiphona_finalis
+V. May the divine assistance + remain with us always.
+R. Amen.
+
+$Pater noster
+$Ave Maria
+$Credo
+(sed rubrica 1955 aut rubrica 1960 omittitur)
 
 [Lectio1]
 !Luke 1:26-28
 26 And in the sixth month, the angel Gabriel was sent from God into a city of Galilee, called Nazareth,
 27 To a virgin espoused to a man whose name was Joseph, of the house of David; and the virgin's name was Mary.
 28 And the angel being come in, said unto her: Hail, full of grace, the Lord is with thee: blessed art thou among women.
-
-[Responsory1]
-R. The angel Gabriel was sent to Mary, a Virgin espoused to Joseph, to bring unto her the word of the Lord and when the Virgin saw the light she was afraid. Fear not, Mary, for thou hast found grace from the Lord.
-* Behold, thou shalt conceive and bring forth a son, and He shall be called the Son of the Highest.
-V. The Lord God shall give unto Him the throne of His father David, and He shall reign over the house of Jacob for ever.
-R. Behold, thou shalt conceive and bring forth a son, and He shall be called the Son of the Highest.
 
 [Lectio2]
 !Luke 1:29-33
@@ -58,12 +66,6 @@ R. Behold, thou shalt conceive and bring forth a son, and He shall be called the
 32 He shall be great, and shall be called the Son of the most High; and the Lord God shall give unto him the throne of David his father; and he shall reign in the house of Jacob for ever.
 33 And of his kingdom there shall be no end.
 
-[Responsory2]
-R. Hail Mary, full of grace, the Lord is with thee.
-* The Holy Ghost shall come upon thee, and the power of the highest shall overshadow thee, therefore also the Holy Thing which shall be born of thee shall be called the Son of God.
-V. How shall this be, seeing I know not men? And the Angel answered and said unto her:
-R. The Holy Ghost shall come upon thee, and the power of the highest shall overshadow thee, therefore also the Holy Thing which shall be born of thee shall be called the Son of God.
-
 [Lectio3]
 !Luke 1:34-38
 34 And Mary said to the angel: How shall this be done, because I know not man?
@@ -72,37 +74,6 @@ R. The Holy Ghost shall come upon thee, and the power of the highest shall overs
 37 Because no word shall be impossible with God.
 38 And Mary said: Behold the handmaid of the Lord; be it done to me according to thy word. And the angel departed from her.
 
-[Responsory3]
-R. Receive, O Virgin Mary, receive the word of the Lord, which is sent thee by His Angel thou shalt conceive, and shalt bring forth God and Man together.
-* And thou shalt be called blessed among all women.
-V. Thou shalt bring forth a son, and remain a maiden undefiled thou shalt conceive and be a Mother, still Virgin unspotted.
-R. And thou shalt be called blessed among all women.
-&Gloria
-R. And thou shalt be called blessed among all women. (Alleluia.)
-
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
-[Capitulum Laudes]
-!Isa 11:1-2
-v. And there shall come forth a rod out of the root of Jesse, and a flower shall rise up out of his root. And the spirit of the Lord shall rest upon him.
-$Deo gratias.
-
-[Versum 2]
-V. Blessed art thou among women.
-R. And blessed is the Fruit of thy womb.
-
-[Ant 2]
-The Holy Ghost shall come upon thee, O Mary, * fear not; thou shalt bear in thy womb the Son of God. Alleluia.
-
-[Special Prima]
-@Commune/C12::s/^!.*/!Isa 7:14-15/m s/^v. .*/v. Behold, the Virgin shall conceive and bear a Son, and His Name shall be called Emmanuel. Butter and honey shall He eat, that He may know to refuse the evil, and choose the good./m s/Ant. .*/Ant. The Angel Gabriel was sent * to a virgin espoused to a man whose name was Joseph; and the virgin\'s name was Mary./mg
-
-[Special Tertia]
-@Commune/C12::s/^!.*/!Isa 11:1-2/m s/^v. .*/v. And there shall come forth a rod out of the root of Jesse, and a flower shall rise up out of his root. And the spirit of the Lord shall rest upon him./m s/^Ant. .*/Ant. Hail, Mary * full of grace, the Lord is with thee blessed art thou among women./mg
-
-[Special Sexta]
-@Commune/C12::s/^!.*/!Luke 1:32-33/m s/^v. .*/v. And the Lord God shall give unto him the throne of David his father; and he shall reign in the house of Jacob for ever. And of his kingdom there shall be no end./m s/^Ant. .*/Ant. Fear not, Mary, * thou hast found grace with the Lord behold, thou shalt conceive, and bring forth a Son./mg
-
-[Special Nona]
-@Commune/C12::s/^!.*/!Isa 7:14-15/m s/^v. .*/v. Behold, the Virgin shall conceive and bear a Son, and His Name shall be called Emmanuel. Butter and honey shall He eat, that He may know to refuse the evil, and choose the good./m s/Ant. .*/Ant. Behold the handmaid of the Lord; * be it unto me according to thy word./mg s/V. .*/V. The Angel of the Lord announced unto Mary./m s/R. .*/R. And she conceived of the Holy Ghost./m
+[Verse Nona]
+V. The Angel of the Lord announced unto Mary.
+R. And she conceived of the Holy Ghost.

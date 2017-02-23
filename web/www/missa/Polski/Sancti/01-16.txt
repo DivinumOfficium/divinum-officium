@@ -1,0 +1,41 @@
+[Rank]
+S. Marcelli Papae et Martyris;;Semiduplex;;2;;vide C2
+
+[Rule]
+vide C2;
+Gloria
+Prefatio=Apostolis
+
+[Comment]
+# 16 I – Św. Marcelego I, Papieża i Męczennika
+! 3 klasy
+! Szaty czerwone
+Św. Marceli I rządził Kościołem w czasie ostatniego wielkiego prześladowania w cesarstwie rzymskim. Okazał prawdziwie pasterskie serce, otwierając odstępcom  drogę do pokuty i rozgrzeszenia. Zmarł na wygnaniu w roku 309.
+
+[Introitus]
+@Commune/C4b:Introitus
+
+[Oratio]
+Prosimy Cię, Panie, wysłuchaj łaskawie próśb Swojego ludu: niech nas wspierają zasługi św. Marcelego, Twojego Męczennika i Papieża, którego męczeństwo jest dla nas źródłem radości.
+$Per Dominum
+
+[Lectio]
+@Commune/C4b:Lectio
+
+[Graduale]
+@Commune/C4b:Graduale
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+@Commune/C4b:Secreta
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+@Commune/C4b:Postcommunio

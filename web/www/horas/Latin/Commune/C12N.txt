@@ -6,47 +6,95 @@ Officium parvum Beatae Mariae Virginis Tempora Nativitatis
 [Rank]
 Officium parvum Beatae Mariae Virginis Tempora Nativitatis;;Simplex;;1
 
-[Rule]
-Ave only
-Doxology=Nat
-Omit Suffragium Conclusion
-Special Benedictio
-Votive nocturn
-Psalmi Dominica
-Antiphonas Horas
-Feria Te Deum
-
 [Ant Vespera]
-O admirabile commercium: * Creator generis humani, animatum corpus sumens, de Virgine nasci dignatus est: et procedens homo sine semine, largitus est nobis suam Deitatem.;;109
-Quando natus es * ineffabiliter ex Virgine, tunc impletae sunt Scripturae: sicut pluvia in vellus descendisti, ut salvum faceres genus humanum: te laudamus, Deus noster.;;112
-Rubum quem viderat Moyses * incombustum, conservatam agnovimus tuam laudabilem virginitatem: Dei Genitrix, intercede pro nobis.;;121
-Germinavit radix Jesse, * orta est stella ex Jacob: Virgo peperit Salvatorem: te laudamus Deus noster.;;126
-Ecce Maria genuit * nobis Salvatorem, quem Joannes videns exclamavit, dicens: Ecce Agnus Dei, ecce qui tollit peccata mundi, alleluia.;;147
+@Sancti/01-01
 
-[Ant 3]
-Magnum * hereditatis mysterium: templum Dei factus est uterus nescientis virum: non est pollutus ex ea carnem assumens: omnes gentes venient dicentes: Gloria tibi, Domine.
+[Ant 1]
+@Sancti/01-01:Ant 3
 
 [Oratio]
-Deus, qui salutis aeternae, beatae Mariae virginitate foecunda, humano generi praemia praestitisti: tribue quaesumus; ut ipsam pro nobis intercedere sentiamus, per quam meruimus auctorem vitae suscipere, Dominum nostrum Jesum Christum Filium tuum:
-$Qui tecum
+@Commune/C10:Oratio 21
+
+[Commemoratio]
+@Commune/C12:Commemoratio
+(sed rubrica 1955 aut rubrica 1960 omittitur)
 
 [Special Completorium]
 @Commune/C12::s/^Ant. .*/Ant. Magnum * hereditatis mysterium: templum Dei factus est uterus nescientis virum: non est pollutus ex ea carnem assumens: omnes gentes venient dicentes: Gloria tibi, Domine./gm
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
 [Ant 2]
-Mirabile mysterium * declaratur hodie: innovantur naturae, Deus homo factus est: id quod fuit, permansit; et quod non erat assumpsit; non commixtionem passus, neque divisionem.
+@Sancti/01-01
+
+[Minor final]
+
+@:Pre oratio
+@Commune/C10:Oratio 21
+@Commune/C12:Minor final
 
 [Special Prima]
-@Commune/C12::s/Ant. .*/Ant. O admirabile commercium: * Creator generis humani, animatum corpus sumens, de Virgine nasci dignatus est: et procedens homo sine semine, largitus est nobis suam Deitatem./gm
+@:Minor intro
+@Sancti/01-01:Ant Vespera:1 s/^/Ant. / s/;;.*//
+&psalm(53)
+
+&psalm(84)
+
+&psalm(116)
+_
+@Sancti/01-01:Ant Vespera:1 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@:Capitulum Prima
+_
+@Commune/C11:Versum 1
+@:Minor final
 
 [Special Tertia]
-@Commune/C12::s/Ant. .*/Ant. Quando natus es * ineffabiliter ex Virgine, tunc impletae sunt Scripturae: sicut pluvia in vellus descendisti, ut salvum faceres genus humanum: te laudamus Deus noster./gm
+@:Minor intro
+@Sancti/01-01:Ant Vespera:2 s/^/Ant. / s/;;.*//
+&psalm(119)
+
+&psalm(120)
+
+&psalm(121)
+_
+@Sancti/01-01:Ant Vespera:2 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@:Capitulum Tertia
+_
+@Commune/C11:Versum 2
+@:Minor final
 
 [Special Sexta]
-@Commune/C12::s/Ant. .*/Ant. Rubum quem viderat Moyses * incombustum, conservatam agnovimus tuam laudabilem virginitatem: Dei Genitrix, intercede pro nobis./gm
+@:Minor intro
+@Sancti/01-01:Ant Vespera:3 s/^/Ant. / s/;;.*//
+&psalm(122)
+
+&psalm(123)
+
+&psalm(124)
+_
+@Sancti/01-01:Ant Vespera:3 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@:Capitulum Sexta
+_
+@:Versum 2
+@:Minor final
 
 [Special Nona]
-@Commune/C12::s/Ant. .*/Ant. Ecce Maria genuit * nobis Salvatorem, quem Joannes videns exclamavit, dicens: Ecce Agnus Dei, ecce qui tollit peccata mundi, alleluia./gm
+@:Minor intro
+@Sancti/01-01:Ant Vespera:5 s/^/Ant. / s/;;.*//
+&psalm(125)
+
+&psalm(126)
+
+&psalm(127)
+_
+@Sancti/01-01:Ant Vespera:5 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@:Capitulum Nona
+_
+@:Verse Nona
+@:Minor final

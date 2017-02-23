@@ -158,7 +158,9 @@ sub resolve_refs {
     else {return "";}
   }
   if ($t[0] =~ $omit_regexp) {$t[0] =~ s/^\s*\#/\!\!\!/;}
-  else {$t[0] =~ s/^\s*\#/\!\!/;}
+  else {
+    $t[0] =~ s/^\s*(\#.*)({.*})?\s*$/'!!' . substr(translate($1, $lang), 1) . $2/e;
+  }
 
   my @resolved_lines;  # Array of blocks expanded from lines.
   my $prelude = '';    # Preceding continued lines.
@@ -287,6 +289,14 @@ sub Alleluia : ScriptFunc {
   else {$text = $text[0];}
   #if ($dayname[0] =~ /Pasc/i) {$text = "Alleluia, alleluia, alleluia";}   
   return $text;
+}
+
+sub Alleluia_ant {
+  my ($lang, $full, $ucase) = @_;
+  my $s =  translate('Alleluia', $lang).', * '.translate('Alleluia', $lang).', '.translate('Alleluia', $lang).'.';
+  $s =~ s/,.*// if (!$full && $duplex < 3 && $version !~ /1960/);
+  $s =~ s/ ./\L$&/g unless $ucase;
+  return $s;
 }
 
 #*** Septuagesima_vesp
