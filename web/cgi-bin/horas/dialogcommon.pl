@@ -402,7 +402,7 @@ sub setupstring_parse_file($$$)
   my @filelines = do_read($fullpath) or return '';
   
   # Regex for matching section headers.
-  my $sectionregex = qr/^\s*\[([\pL\pN_ #-]+)\]/i;
+  my $sectionregex = qr/^\s*\[([\pL\pN_ #,:-]+)\]/i;
   
   # Regex for matching conditionals, which we shall embed into our own
   # regexes for parsing lines.

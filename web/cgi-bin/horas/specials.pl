@@ -367,9 +367,7 @@ sub specials {
 
 	if ($item =~ /(benedictus|magnificat)/i) {	 
 	  $comment = ($winner =~ /sancti/i) ? 3 : 2; 
-	  $prefix = ($lang =~ /English/i) ? 'Antiphon' : 'Antiphona';	   
-	  $prefix = ($lang =~ /Magyar/i) ? 'Antifóna' : 'Antiphona';
-	  setcomment($label, 'Source', $comment, $lang, $prefix);
+	  setcomment($label, 'Source', $comment, $lang, translate('Antiphona', $lang));
 	  next;																 
 	}
 	
@@ -737,7 +735,7 @@ sub psalmi_minor {
     if ($version =~ /1960/ && $rank < 6) {$feastflag = 0;} 	
     if ($winner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat|Pasc6/i) {$feastflag = 0;}
     if ($feastflag) {
-      $prefix = ($lang =~ /English/i) ? "Psalms for Sunday, antiphons " : "Psalmi Dominica, antiphonae ";
+      $prefix = translate("Psalmi Dominica, antiphonae", $lang).' ';
       setbuild2('Psalmi dominica');
     }  
   }
@@ -835,7 +833,7 @@ sub psalmi_major {
   else { @psalmi = split("\n", $psalmi{"Day$dayofweek $name"});}   
 	                              
   $comment = 0;                                      
-  $prefix = ($lang =~ /English/i) ? 'Psalms and antiphons' : 'Psalmi et antiphonae '; 
+  $prefix = translate("Psalmi et antiphonae", $lang).' ';
   setbuild("Psalterium/Psalmi major", "Day$dayofweek $name", 'Psalmi ord');	             
 
   if ($hora =~ /Laudes/	&& $month == 12 && ($day > 16 && $day < 24) && $dayofweek > 0) {
@@ -882,7 +880,7 @@ sub psalmi_major {
   elsif (($rule =~ /Psalmi Dominica/i || $commune{Rule} =~ /Psalmi Dominica/i  ||
      ($anterule && $anterule =~ /Psalmi Dominica/i))
      && ($antiphones[0] !~ /\;\;\s*[0-9]+/)) {  
-    $prefix = ($lang =~ /English/i) ? "Psalms, antiphons" : "Psalmi $1, antiphonae "; 
+    $prefix = translate("Psalmi, antiphonae", $lang).' ';
     my $h = ($hora =~ /laudes/i && $version !~ /monastic/i) ? "$hora" . '1' : "$hora";	   
     @p = split("\n", $psalmi{"Day0 $h"});
     if ($version =~ /monastic/i && $hora =~/laudes/i)    
@@ -911,7 +909,7 @@ sub psalmi_major {
 	  ($antiphones[$i] =~ /(.*?);;/s) ? "$1;;$p" : "$antiphones[$i];;$p";;
   }}   
   
-  $prefix = '';
+  # $prefix = ''; # this line prevent display prefix set in line 883 commented out by @mbab 2017/02/09
   if (($dayname[0] =~ /(Adv|Quad)/i || emberday()) && $hora =~ /laudes/i && $version !~ /trident/i) 
      {$prefix = "Laudes:$laudes $prefix";}      
 
