@@ -45,10 +45,7 @@ sub invitatorium {
   if ($w) {$ant = chompd($w); $comment = $c;} 
 
 
-  if ($lang =~ /Magyar/i) {
-    setcomment($label, 'Source', $comment, $lang, 'Antif.');}
-  else {
-    setcomment($label, 'Source', $comment, $lang, 'Antiph.');}
+  setcomment($label, 'Source', $comment, $lang, translate('Antiphona', $lang));
 
   $ant =~ s/^.*?\=\s*// ;
   $ant = chompd($ant);
@@ -149,9 +146,7 @@ sub psalmi_matutinum {
   my @psalmi = split("\n", $psalmi{"$d$dw"});
   setbuild("Psalterium/Psalmi matutinum", "$d$dw", 'Psalmi ord');
   $comment = 1;
-  my $prefix = ($lang =~ /English/i) ? 'Antiphons' : 'Antiphonae';
-  my $prefix = ($lang =~ /Magyar/i) ? 'Antifónák' : 'Antiphonae';
-           
+  my $prefix = translate('Antiphonae', $lang);
 
   if ($version !~ /Trident/i && $dayofweek == 0 && $dayname[0] =~ /Adv/i) {  
     @psalmi = split("\n", $psalmi{'Adv 0 Ant Matutinum'});
@@ -207,7 +202,7 @@ sub psalmi_matutinum {
   if ($w) {     
     @psalmi = split("\n", $w);
     $comment = $c;
-    $prefix .= ($lang =~ /Magyar/i) ? ' és zsoltárok' : ' et Psalmi';
+    $prefix .= ' '.translate('et Psalmi', $lang);
   }									  
  
   if ($rule =~ /Ant Matutinum ([0-9]+) special/i) {
