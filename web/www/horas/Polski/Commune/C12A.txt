@@ -4,9 +4,6 @@ Małe oficjum ku czci Najświętszej Marji Panny
 [Rank]
 Małe oficjum ku czci Najświętszej Marji Panny w czasie Adwentu;;Simplex;;1
 
-[Ant 3]
-Duch Święty * zstąpi na Cię, Marjo, nie bój się, poczniesz w żywocie Syna Bożego, alleluja.
-
 [Commemoratio]
 !Wspomnienie Wszystkich Świętych
 Ant. Oto przyjdzie Pan, i wszyscy święci Jego z Nim, i będzie w onym dniu światłość wielka, alleluja.
@@ -17,65 +14,11 @@ v. Sumienia nasze prosimy Cię, Panie, Swem nawiedzeniem oczyść, iżby przycho
 $Qui tecum
 (sed rubrica 1955 aut rubrica 1960 omittitur)
 
-[Special Completorium]
-#Incipit
-_
-$Ave Maria
-(sed rubrica 1955 aut rubrica 1960 omittitur)
-V. Nawróć nas +++ Boże, nasz zbawco.
-R. I odwróć swój gniew od nas.
-$Deus in adjutorium
-&Gloria
-&Alleluia
-
-#Psalmi
-&psalm(128)
-
-&psalm(129)
-
-&psalm(130)
-
-@Commune/C12:Hymnus minor
-
-#Capitulum
-@Sancti/03-25:Capitulum Vespera
-_
-@:Verse Nona
-
-#Canticum Nunc dimittis
-Ant. Duch Święty * zstąpi na Cię, Marjo: nie bój się, będziesz nosić w swem łonie syna Bożego, alleluja.
-&psalm(233)
-Ant. Duch Święty * zstąpi na Cię, Marjo: nie bój się, będziesz nosić w swem łonie syna Bożego, alleluja.
-
-@Commune/C12:Pre oratio
-@:Oratio
-
-#Conclusio
-&Dominus_vobiscum
-&Benedicamus_Domino
-Benedictio. Niech nas błogosławi i strzeże wszechmogący i miłosierny Pan, + Ojciec, i Syn, i Duch Święty.
-R. Amen.
-
-&antiphona_finalis
-V. Pomoc Boża + niech będzie zawsze z nami.
-R. Amen.
-
-$Pater noster
-$Ave Maria
-$Credo
-(sed rubrica 1955 aut rubrica 1960 omittitur)
-
 [Lectio1]
 !Łk 1:26-28
 26 Posłan jest Aniół Gabryel od Boga do miasta Galilejskiego, któremu imię Nazareth,
 27 Do panny poślubionéj mężowi, któremu było Józeph, z domu Dawidowego: a imię panny Marya.
 28 I wszedłszy Aniół do niéj, rzekł: Bądź pozdrowiona łaski pełna, Pan z tobą, błogosławionaś ty między niewiastami.
-
-[Responsory1]
-R. Posłan jest * Aniół Gabrjel do Marji Panny, poślubionej Józefowi, głosząc jej słowo: a zlękła się Panna światła. Nie bój się, Maryo: albowiem nalazłaś łaskę u Pana:
-* Oto poczniesz i porodzisz syna, a nazwan będzie Synem Najwyższego.
-V. Da mu Pan Bóg stolicę Dawida, ojca jego, i będzie królował w domu Jakóbowym na wieki.
-R. Oto poczniesz i porodzisz syna, a nazwan będzie Synem Najwyższego.
 
 [Lectio2]
 !Łk 1:29-33
@@ -92,15 +35,3 @@ R. Oto poczniesz i porodzisz syna, a nazwan będzie Synem Najwyższego.
 36 A oto Elżbieta, krewna twoja, i ona poczęła syna w starości swéj, a ten miesiąc szósty jest onéj, którą zowią niepłodną.
 37 Bo u Boga nie będzie żadne słowo niepodobne.
 38 I rzekła Marya: Oto służebnica Pańska, niechaj mi się stanie według słowa twego.
-
-[Responsory3]
-R. Przyjmij słowo, Panno Maryo, które ci od Pana przez Aniołą przekazane jest: poczniesz i porodzisz Boga i zarazem człowieka:
-* Abyś zwana była błogosławioną między niewiastami.
-V. Porodzisz bowiem syna, a straty panieństwa nie ucierpisz: staniesz się brzemienną, a będziesz matką zawsze nietkniętą.
-R. Abyś zwana była błogosławioną między niewiastami.
-&Gloria
-R. Abyś zwana była błogosławioną między niewiastami.
-
-[Verse Nona]
-V. Anioł Pański zwiastował Pannie Maryi.
-R. I poczęła z Ducha Świętego.
