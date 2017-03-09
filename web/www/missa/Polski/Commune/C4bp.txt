@@ -1,0 +1,49 @@
+[Name]
+Commune Summorum Pontificum Tempore Paschalis; Si diligis
+
+[Rule]
+Prefatio=Apostolis
+
+[Introitus]
+@Commune/C4b:Introitus
+
+[Oratio]
+@Commune/C4b:Oratio
+
+[Lectio]
+@Commune/C4b:Lectio
+
+[Graduale]
+Alleluja, alleluja
+!Mt 16:18
+Ty jesteś Opoką, a na tej Opoce zbuduję Kościół mój.
+!Ps 44:17-18
+Ustanowisz ich książętami po całej ziemi, przez wszystkie pokolenia głosić będą Twe imię, o Panie. Alleluja.
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+@Commune/C4b:Secreta
+
+[Secreta1]
+Múnera, quæ tibi, Dómine, lætántes offérimus, súscipe benígnus, et præsta: ut,~
+intercedénte beáto N., Ecclésia tua et fídei integritáte lætétur, et témporum~
+tranquillitáte semper exsúltet.
+$Per Dominum
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+@Commune/C4b:Postcommunio
+
+[Postcommunio1]
+Multíplica, quæsumus, Dómine, in Ecclesia tua spíritum grátiæ, quem dedísti: ut~
+beáti N. (Martyris tui atque) Summi Pontíficis deprecatióne nec pastóri~
+oboediéntia gregis nec gregi desit cura pastóris.
+$Per Dominum
+
