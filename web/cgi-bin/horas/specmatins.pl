@@ -890,8 +890,8 @@ sub lectio : ScriptFunc {
   else {$w =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;}
   if ($dayname[0] =~ /Quad/i) {$w =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;} 
 
-  #handle parentheses in English
-  if ($lang =~ /(English|Magyar)/i) {  
+  #handle parentheses in non Latin
+  if ($lang !~ /Latin/i) {
     $w =~ s/\((.*?[.,].*?)\)/parenthesised_text($1)/eg;
   }
 
