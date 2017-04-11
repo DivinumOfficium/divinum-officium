@@ -439,7 +439,15 @@ sub votivenocturn {
 sub lectiones {
   my $num = shift;     
   my $lang = shift;  
-                      
+
+  my $evan_regexp = translate('Evangelist', $lang);
+  # some vernaculars have no translated parts, so add English and Latin
+  # cannot use translate('Evangelist', 'English') as it is anavailable
+  $evan_regexp .= '|Matt|Marc|Luc|Joannes' if ($lang !~ /Latin/);
+  $evan_regexp .= '|Matt|Mark|Luke|John' if ($lang !~ /English/);
+  $evan_regexp = '!(?:' . $evan_regexp . ')\s+\d+:\d';
+  $evan_regexp = qr/$evan_regexp/;
+
   push (@s, "\n");
   if ($rule !~ /Limit.*?Benedictio/i) {push (@s, "\&pater_noster");}
   else {push(@s, "\$Pater noster");}
@@ -457,8 +465,8 @@ sub lectiones {
     $i = ($dayofweek == 1 || $dayofweek == 4) ? 1 :
     ($dayofweek == 2 || $dayofweek == 5) ? 2 : 
     ($dayofweek == 3 || $dayofweek == 6) ? 3 : 1;
-    my $w = lectio(1, $lang);	
-    if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {
+    my $w = lectio(1, $lang);
+    if ($w =~ $evan_regexp) {
 	  $j0 = $i;
 	  $i = 3;
 	}
@@ -490,7 +498,7 @@ sub lectiones {
   }
      
   my $ltype1960 = gettype1960(); 
-  if ($ltype1960) {return lect1960($lang);}
+  if ($ltype1960) {return lect1960($lang, $evan_regexp);}
   
   if ($winner =~ /sancti/i && $rule !~ /Special Evangelii Benedictio/i) {
     $i = ($num > 0) ? $num : 3;
@@ -504,8 +512,8 @@ sub lectiones {
   
   if ($i == 3 && $rule !~ /ex C1[02]/ && $rule !~ /Special Evangelii Benedictio/i) {    
                                
-    my $w = lectio($j1, $lang);	
-    if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {$a[2] = $benedictio{Evangelica};}
+    my $w = lectio($j1, $lang);
+    if ($w =~ $evan_regexp) {$a[2] = $benedictio{Evangelica};}
     elsif ($a[2] =~ /(evang|Gospel)/i) {$a[2] = $a[5];}  
     setbuild2("B$j1. : " . beginwith($a[2]));
 
@@ -521,9 +529,8 @@ sub lectiones {
 	 
     setbuild2("B$j2. : " . beginwith($a[3]));
   
-  
-    $w = lectio($j3, $lang); 
-    if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {$a[4] = $benedictio{Evangelica9};}  
+    $w = lectio($j3, $lang);
+    if ($w =~ $evan_regexp) {$a[4] = $benedictio{Evangelica9};}
     setbuild2("B$j3. : " . beginwith($a[4])); 
   
   }
@@ -883,8 +890,8 @@ sub lectio : ScriptFunc {
   else {$w =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;}
   if ($dayname[0] =~ /Quad/i) {$w =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;} 
 
-  #handle parentheses in English
-  if ($lang =~ /(English|Magyar)/i) {  
+  #handle parentheses in non Latin
+  if ($lang !~ /Latin/i) {
     $w =~ s/\((.*?[.,].*?)\)/parenthesised_text($1)/eg;
   }
 
@@ -939,16 +946,16 @@ sub beginwith  {
 # sets the benedictiones and sub calls for the 1960 version 3 lection
 sub lect1960 {
   my $lang = shift;
-  
+  my $evan_regexp = shift;
+
   my %w = (columnsel($lang)) ? %winner : %winner2;
   my %s = (columnsel($lang)) ? %scriptura : %scriptura2;
   my %benedictio = %{setupstring($datafolder, $lang, 'Psalterium/Benedictions.txt')};  
   my $i = 3;     
   if ($rank < 2 || $winner{Rank} =~ /Feria/) {$i = ($dayofweek % 3); if ($i == 0) {$i = 3;}} 
-  my $w = lectio(1, $lang);	
-  if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {$i = 3;}
+  my $w = lectio(1, $lang);
+  if ($w =~ $evan_regexp) {$i = 3;}
 
-  
   my @a = split("\n", $benedictio{"Nocturn $i"});  
   if ($rule =~ /ex C10/) {     
     my %m = (columnsel($lang)) ? %commune : %commune2;
@@ -966,8 +973,8 @@ sub lect1960 {
   if ($rule =~ /Ipsa Virgo Virginum/i || $winner{Rank} =~ /Mari\w*\b\s*Virgin/i) {$a[3] = $a[10];}
   if ($rule =~ /Quorum Festum/i && !$divaux) {$a[3] = $a[7];}
   $w = $w{'Lectio1'};
-  if (!$w) {$w = $s{'Lectio1'};}  
-  if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {$a[2] = $benedictio{Evangelica};}
+  if (!$w) {$w = $s{'Lectio1'};}
+  if ($w =~ $evan_regexp) {$a[2] = $benedictio{Evangelica};}
   else { 
     if (exists($a[5])) {$a[2] = $a[5];}
     if ($winner{Rank} =~ /dominica/i) {$a[4] = $benedictio{Evangelica9};}
