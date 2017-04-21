@@ -183,7 +183,7 @@ sub getrank {
 
   my $kalendarname = ($version =~ /Monastic/i) ? '500' 
     : ($version =~ /1570/) ? 1570 : ($version =~ /Trident/i) ? 1888 
-    : ($version =~ /newcal/i) ? '2009' : ($version =~ /1960/) ? 1960 : 1942;     
+    : ($version =~ /newcal/i) ? '2009' : ($version =~ /19(?:55|60)/) ? 1960 : 1942;     
   our %kalendar = undef;
   our $kalendarkey = ''; 
   if ( @a = do_read("$datafolder/../horas/Latin/Tabulae/K$kalendarname.txt"))
