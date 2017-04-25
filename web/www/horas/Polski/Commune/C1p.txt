@@ -11,7 +11,7 @@ Una Antiphona
 W Królestwie niebieskiem jest mieszkanie Świętych, alleluja: i odpoczynek ich na wieki, alleluja.;;110
 W cieniu * będą Ci śpiewać Święci Twoi, Panie, alleuja, alleluja, alleluja.;;111
 Duchowie i dusze * sprawiedliwych, śpiewajcie hymn Bogu naszemu, alleluja, alleluja.;;112
-Sprawiedliwi świecić będą * jako słońce przed obczliczem Boga, alleluja.;;116
+Sprawiedliwi świecić będą * jako słońce przed obliczem Boga, alleluja.;;116
 
 [Capitulum Vespera]
 !Mdr 5:1
@@ -60,11 +60,39 @@ R. Obrał was Bóg na dziedzictwo sobie, alleluja.
 [Invit]
 Pana, Króla Apostołów * pójdźmy uwielbiać, alleluja.
 
+[Ant Matutinum]
+Tedy staną sprawiedliwi * z wielką stałością przeciwko tym, którzy je cisnęli, alleluja.;;18
+;;33
+;;44
+V. Święci i sprawiedliwi, weselcie się w Panu, alleluja.
+R. Obrał was Bóg na dziedzictwo sobie, alleluja.
+Oto * jako policzeni są między syny Boże i między świętymi dział ich jest, alleluja.;;46
+;;60
+;;63
+V. Światłość wiekuista świecić będzie Świętym Twoim, Panie, alleluja.
+R. I będą mieli życie wieczne, alleluja.
+Światłość wiekuista * świecić będzie Świętym Twoim, Panie, i będą mieli życie wieczne, alleluja.;;74
+;;96
+;;98
+V. Radość wieczysta nad ich głowami, alleluja.
+R. Posiądą radość i wesele, alleluja.
 
-[Capitulum Laudes]
-!Mdr 5:1
-v. Tedy staną sprawiedliwi z wielką stałością przeciwko tym, którzy je cisnęli i którzy prace ich objęli.
-$Deo gratias
+[Responsory7]
+R. Jam jest prawdziwym krzewem winnym, a wy latoroślami.
+* Kto mieszka we Mnie, a Ja w nim, ten wiele owocu przynosi, alleluja, alleluja.
+V. Jako Mnie umiłował Ojciec i Ja was umiłowałem.
+R. Kto mieszka we Mnie, a Ja w nim, ten wiele owocu przynosi, alleluja, alleluja.
+
+[Responsory8]
+R. Białymi się stali Nazarejczycy Jego. Alleluja. Oddali Bogu chwałę, alleluja.
+* I jak mleko stężeli, alleluja, alleluja.
+V. Nad śnieg jaśniejsi i bielsi od mleka, bardziej rumiani, niż stara kość słoniowa, piękniejsi niż szafir.
+R. I jak mleko stężeli, alleluja, alleluja.
+&Gloria
+R. I jak mleko stężeli, alleluja, alleluja.
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
 
 [Hymnus Laudes]
 {:H-Paschalemundogaudium:}v. Radość wielkanocną zwiastuje
@@ -104,11 +132,6 @@ Córki Jerozolimskie, * przyjdźcie, a obaczcie męczenników z wieńcami, któr
 !Rz 8:28
 v. A wiemy, że tym, którzy miłują Boga, wszystko dopomaga ku dobremu, tym, którzy są wezwani podług postanowienia święci.
 
-[Capitulum Tertia]
-!Mdr 5:1
-v. Tedy staną sprawiedliwi z wielką stałością przeciwko tym, którzy je cisnęli i którzy prace ich objęli.
-$Deo gratias
-
 [Responsory Tertia]
 R.br. Święci i sprawiedliwi, weselcie się w Panu, * Alleluja, alleluja.
 R. Święci i sprawiedliwi, weselcie się w Panu, * Alleluja, alleluja.
@@ -116,7 +139,6 @@ V. Obrał was Bóg na dziedzictwo sobie.
 R. Alleluja, alleluja.
 &Gloria
 R. Święci i sprawiedliwi, weselcie się w Panu, * Alleluja, alleluja.
-
 _
 V. Światłość wiekuista * świecić będzie Świętym Twoim, Panie, alleluja.
 R. I będą mieli życie wieczne, alleluja.
@@ -137,11 +159,6 @@ _
 V. Radość wieczysta nad ich głowami, alleluja.
 R. Posiądą radość i wesele, alleluja.
 
-[Capitulum Nona]
-!Rz 8:28
-v. A wiemy, że tym, którzy miłują Boga, wszystko dopomaga ku dobremu, tym, którzy są wezwani podług postanowienia święci.
-$Deo gratias
-
 [Responsory Nona]
 R.br. Radość wieczysta nad ich głowami, * Alleluja, alleluja.
 R. Radość wieczysta nad ich głowami, * Alleluja, alleluja.
@@ -158,7 +175,7 @@ R. Śmierć świętych Jego, alleluja.
 W Królestwie niebieskiem jest mieszkanie Świętych, alleluja: i odpoczynek ich na wieki, alleluja.;;112
 W cieniu * będą Ci śpiewać Święci Twoi, Panie, alleuja, alleluja, alleluja.;;115
 Duchowie i dusze * sprawiedliwych, śpiewajcie hymn Bogu naszemu, alleluja, alleluja.;;125
-Sprawiedliwi świecić będą * jako słońce przed obczliczem Boga, alleluja.;;138
+Sprawiedliwi świecić będą * jako słońce przed obliczem Boga, alleluja.;;138
 
 [Ant 3]
 Święci i sprawiedliwi, * weselcie się w Panu, alleluja: obrał was Bóg na dziedzictwo sobie, alleluja.
