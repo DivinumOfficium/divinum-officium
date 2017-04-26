@@ -391,7 +391,7 @@ sub Benedicamus_Domino : ScriptFunc {
   if (Septuagesima_vesp()) {$text = $prayers{$lang}->{'Benedicamus Domino1'};}
   if ($dayname[0] !~ /Pasc0/i || $hora !~ /(Laudes|Vespera)/i) {return $text;}
   my @text = split("\n", $text);       
-  return "$text[0] Alleluia, alleluia.\n$text[1] Alleluia, alleluia.\n";
+  return "$text[0] $prayers{$lang}->{'Alleluia Duplex'}\n$text[1] $prayers{$lang}->{'Alleluia Duplex'}\n";
 }
 
 #*** antiphona_finalis
