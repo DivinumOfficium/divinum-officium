@@ -844,6 +844,14 @@ sub lectio : ScriptFunc {
      if (exists($winner{"Responsory$na"})) {$s = '';}
      matins_lectio_responsory_alleluia($s,$lang);
 
+   if ($s && $dayname[0] =~ /Pasc/i && !officium_defunctorum()) {
+     my @resp=split("\n",$s);
+     ensure_single_alleluia($resp[1],$lang);
+     ensure_single_alleluia($resp[3],$lang);
+     ensure_single_alleluia($resp[-1],$lang);
+     $s = join("\n",@resp);
+   }
+
      #$$$ watch initia rule
    }  
 
