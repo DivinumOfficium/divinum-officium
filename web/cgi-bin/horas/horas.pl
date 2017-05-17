@@ -1137,7 +1137,7 @@ sub luna {
 
   $day = $day + 0; 
   if ($lang =~ /Latin/i) {return ("Luna $ordinals[$dist-1] Anno $year\n", ' '); }
-  else {return ("$months[$month - 1] $day$sfx1 anno Domini $year. The $dist$sfx2 Day of Moon.", $months[$month-1]);}
+  else {return ("$months[$month - 1] $day$sfx1 anno Domini $year. The $dist$sfx2 day of the Moon.", $months[$month-1]);}
 }
 
 #*** laudes()
