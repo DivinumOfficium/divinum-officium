@@ -1,0 +1,52 @@
+[Rank]
+S. Polycarpi Episcopi et Martyris;;Duplex;;3;;vide C2
+
+[Rank1570]
+S. Polycarpi Episcopi et Martyris;;Simplex;;1.1;;vide C2
+
+[Rule]
+vide C2;
+Gloria
+
+[Comment]
+# 25 I – Św. Polikarpa, Biskupa i Męczennika
+! 3 klasy
+! Szaty czerwone
+Św. Polikarp był uczniem św. Jana Apostoła, który go wyniósł na biskupstwo w Smyrnie. Napisał list do Filipian, dotąd zachowany. Opis jego męczeństwa zachował się w liście, który chrześcijanie ze Smyrny skierowali do innych gmin. Prokonsulowi, który mu kazał bluźnić Chrystusowi, św. Polikarp odpowiedział: «Osiemdziesiąt sześć lat służę Jemu, nigdy mi nie wyrządził krzywdy, jakże bym mógł bluźnić mojemu Królowi i Zbawcy?»
+
+[Introitus]
+@Commune/C2b:Introitus
+
+[Oratio]
+Boże, co roku uweselasz nas uroczystością świętego Polikarpa, Twojego Męczennika i Biskupa; spraw łaskawie, abyśmy cieszyli się opieką tego, którego urodziny dla nieba obchodzimy.
+$Per Dominum
+
+[Lectio]
+Czytanie z Listu świętego Jana Apostoła.
+!1 J 3:10-16
+!x! Św. Polikarp wiernie urzeczywistnił wskazania swego mistrza św. Jana; oddał życie na dowód swojej miłości do Boga i braci.
+Najmilsi: Każdy, kto nie jest sprawiedliwy i nie miłuje brata swego, nie jest z Boga, albowiem ta jest nowina, którąście słyszeli od początku, abyście się wzajemnie miłowali. Nie jak Kain, który był z diabła i zabił brata swego. I za cóż go zabił? Dlatego że uczynki jego były złe, a brata jego sprawiedliwe.
+Nie dziwcie się, bracia, jeśli was świat nienawidzi. My wiemy, żeśmy przeszli ze śmierci do życia, bo miłujemy braci. Kto nie miłuje, trwa w śmierci. Każdy, kto nie miłuje brata swego, mordercą jest. A wiecie, że żaden morderca nie ma w sobie żywota wiecznego. Przez to poznaliśmy miłość Boga, że oddał za nas życie swoje i my winniśmy życie oddać za braci.
+
+[Graduale]
+@Commune/C2b:Graduale
+
+[Evangelium]
+Ciąg dalszy ++ Ewangelii świętej według Mateusza.
+!Mt 10:26-32
+Onego czasu: Rzekł Jezus uczniom swoim: «Nic nie ma zakrytego, co by wyjawione być nie miało, ani też tajemnego, czego by wiedzieć nie miano. Co wam mówię w ciemności, opowiadajcie na świetle, a co usłyszycie na ucho, głoście na dachach. A nie bójcie się tych, którzy zabijają ciało, duszy zaś zabić nie mogą. Raczej bójcie się tego, który może i duszę, i ciało zatracić w piekle. Czyż za drobny pieniądz nie sprzedają dwóch wróbli? A żaden z nich nie upadnie na ziemię bez Ojca waszego. A nawet włosy wasze na głowie są wszystkie policzone. Nie lękajcie się tedy, lepsi jesteście wy niż wiele wróbli.
+Każdego tedy, który mnie wyzna przed ludźmi, wyznam i ja przed Ojcem moim, który jest w niebiesiech».
+
+[Offertorium]
+@Commune/C2b:Offertorium
+
+[Secreta]
+Poświęć, Panie, złożone Ci dary i za przyczyną świętego Polikarpa Twego Męczennika i Biskupa, daj się nimi przebłagać i bądź nam przychylny.
+$Per Dominum
+
+[Communio]
+@Commune/C2b:Communio
+
+[Postcommunio]
+Panie, niech ta Komunia oczyści nas z grzechów i za przyczyną świętego Polikarpa, Twego Męczennika i Biskupa, stanie się dla nas niebieskim lekarstwem.
+$Per Dominum

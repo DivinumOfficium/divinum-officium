@@ -1,0 +1,33 @@
+[Rank]
+Św. Klemensa Papieża i Męczennika;;Duplex;;3;;vide C2
+
+[Rank1570]
+Św. Klemensa Papieża i Męczennika;;Semiduplex;;2;;vide C2
+
+[RankNewcal]
+Św. Klemensa Papieża i Męczennika;;Duplex optional;;2;;vide C2
+
+[Rule]
+vide C2;
+9 lectiones
+OPapaM=Klemensa;
+
+[Ant 1]
+Prośmy wszyscy * Pana naszego, Jezusa Chrystusa, by źródło żywe wyznawcom swym otworzył.
+
+[Oratio]
+Boże, który corocznie nas uweselasz uroczystością świętego Klemensa, Męczennika Twego i Biskupa, spraw miłościwie, niech, czcząc jego narodzenie do życia wiecznego, naśladujemy stałość, z jaką poniósł męczeństwo.
+$Per Dominum
+
+[Commemoratio]
+!Wspomnienie Św. Felicyty Męczenniczki
+@Commune/C7:Oratio proper
+$Oremus
+Spraw, Wszechmogący Boże, abyśmy obchodząc uroczystość błogosławionej Felicyty, Męczenniczki Twojej, pod opieką jej zasług i modlitw zostawali.
+$Per Dominum
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
+
+[Ant Vespera 3]
+@:Ant Vespera:s/116/115/

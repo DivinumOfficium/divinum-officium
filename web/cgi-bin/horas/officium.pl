@@ -451,17 +451,17 @@ $addlocal<BR>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF=# onclick="pset('parameters')">Options</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/versions.html" TARGET="_NEW">Versions</A>
+<A HREF="$htmlurl/Help/versions.html" TARGET="_BLANK">Versions</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/credits.html" TARGET="_NEW">Credits</A>
+<A HREF="$htmlurl/Help/credits.html" TARGET="_BLANK">Credits</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/new.html" TARGET="_NEW">What's new</A>
+<A HREF="$htmlurl/Help/new.html" TARGET="_BLANK">What's new</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/download.html" TARGET="_NEW">Download</A>
+<A HREF="$htmlurl/Help/download.html" TARGET="_BLANK">Download</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/rubrics.html" TARGET="_NEW">Rubrics</A>
+<A HREF="$htmlurl/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/Ahelp.html" TARGET="_NEW">Help</A>
+<A HREF="$htmlurl/Help/Ahelp.html" TARGET="_BLANK">Help</A>
 </FONT>
 </P>
 PrintTag
@@ -520,7 +520,7 @@ sub headline {
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
-&nbsp;<FONT COLOR=RED SIZE=+1>$version<P>
+&nbsp;<FONT COLOR=RED SIZE=+1>$version</FONT></P>
 <P ALIGN=CENTER><A HREF=# onclick="callmissa();">Sancta Missa</A>
 &nbsp;&nbsp;&nbsp;
 <INPUT TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
@@ -618,7 +618,7 @@ function linkit(name,ind,lang) {
   document.forms[0].expandnum.value=ind;  
   if (ind == 0) {   
      document.forms[0].action = 'popup.pl';
-     document.forms[0].target = '_NEW';
+     document.forms[0].target = '_BLANK';
   } else {
      var c = document.forms[0].command.value;
      if (!c.match('pray')) document.forms[0].command.value = "pray" + c;

@@ -1,0 +1,51 @@
+[Rank]
+S. Gregorii Thaumaturgi Episcopi et Confessoris;;Semiduplex;;2;;vide C4
+
+[Rank1570]
+S. Gregorii Thaumaturgi Episcopi et Confessoris;;Simplex;;1.1;;vide C4
+
+[RankTrident]
+S. Gregorii Thaumaturgi Episcopi et Confessoris;;Duplex;;3;;vide C4
+
+[Rank1960]
+S. Gregorii Thaumaturgi Episcopi et Confessoris;;Duplex;;3;;vide C4
+
+[Rule]
+vide C4;
+Gloria
+
+[Comment]
+# 17 XI – Św. Grzegorza Cudotwórcy, Biskupa i Wyznawcy
+! Wspomnienie
+! Szaty białe
+Św. Grzegorz urodził się w Neocezarei Pontyjskiej około roku 213 z rodziców pogańskich. Pod wpływem Orygenesa przyjął chrześcijaństwo, a potem został biskupem rodzinnego miasta, wówczas jeszcze zupełnie pogańskiego. Dzięki jego modlitwie, nauczaniu i cudom Neocezarea nawróciła się całkowicie do Boga. Tradycja podaje, że na jego rozkaz przeniosła się góra, aby zrobić miejsce na budowę kościoła. Św. Grze­gorz zmarł około roku 270.
+
+[Introitus]
+@Commune/C4:Introitus
+
+[Oratio]
+Spraw, prosimy Cię, wszechmogący Boże, aby chwalebna uroczystość świętego Grzegorza, Twego Wyznawcy i Biskupa, przysporzyła nam gorliwości i łaski do zbawienia.
+$Per Dominum
+
+[Lectio]
+@Commune/C4:Lectio
+
+[Graduale]
+@Commune/C4:Graduale
+
+[Evangelium]
+Ciąg dalszy ++ Ewangelii świętej według Marka.
+!Mk 11:22-24
+Onego czasu: Jezus odpowiadając swoim uczniom rzekł im «Miejcie wiarę w Boga! Zaprawdę powiadam wam, że ktokolwiek by rzekł tej górze: wznieś się i rzuć się w morze, a nie zwątpiłby w sercu swoim, lecz wierzyłby, że się stanie, cokolwiek powie, stanie się mu. Dlatego powiadam wam: Wszystko o cokolwiek modląc się prosicie – wierzcie, że otrzymacie, a stanie się wam».
+
+[Offertorium]
+@Commune/C4:Offertorium
+
+[Secreta]
+@Commune/C4:Secreta
+
+[Communio]
+@Commune/C4:Communio
+
+[Postcommunio]
+@Commune/C4:Postcommunio
