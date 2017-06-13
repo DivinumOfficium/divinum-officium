@@ -1,14 +1,15 @@
 [Rank]
 Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
 
-[Rank] (rubrica 1960 aut rubrica innovata)
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5.5;;ex Sancti/12-25
+[Rank1960]
+Dominica Infra Octavam Nativitatis;;Duplex II class;;5.5;;ex Sancti/12-25
 
 [Rule]
 9 lectiones
 ex Sancti/12-25
 Lectio1 Sancti
 Psalmi Dominica
+no commemoratio (rubrica 1960)
 
 [Ant Vespera]
 @Sancti/12-25:Ant Vespera 3
@@ -26,7 +27,7 @@ R. Et habitavit in nobis, alleluia.
 Dum medium silentium * tenerent omnia, et nox in suo cursu medium iter perageret, omnipotens sermo tuus, Domine, a regalibus sedibus venit, alleluia.
 
 [Oratio]
-Omnipotens sempiterne Deus, dirige actus nostros in beneplacito tuo: ut in nomine dilecti Filii tui mereamur bonis operibus abundare.
+Omnípotens sempitérne Deus, dírige actus nostros in beneplácito tuo: ut in nómine dilécti Fílii tui mereámur bonis opéribus abundáre:
 $Qui tecum
 
 [Commemoratio 2] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
