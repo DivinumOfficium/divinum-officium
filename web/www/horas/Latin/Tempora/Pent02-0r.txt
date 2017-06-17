@@ -11,11 +11,10 @@ Antiphonas horas
 Doxology=Corp
 
 [Ant 1]
-Puer Samuel * ministrábat ante Deum coram Heli, et sermo Dómini erat pretiósus cum eo.
+@Tempora/Pent02-0:Ant 1
 
 [Oratio]
-Sancti nóminis tui, Dómine, timórem páriter et amórem fac nos habére perpétuum: quia numquam tua gubernatióne destítuis, quos in soliditáte tuæ dilectiónis instítuis.
-$Per Dominum.
+@Tempora/Pent02-0:Oratio
 
 [Lectio1]
 @Tempora/Pent02-0:Lectio1
@@ -35,43 +34,14 @@ $Per Dominum.
 [Responsory3]
 @Tempora/Pent01-1:Responsory3
 
-[Lectio4]
-Sermo sancti Joannis. Chrysostomi.
-!Ex Hom. 60. ad pop. Antioch.
-Quoniam Verbum dicit: Hoc est corpus meum: et assentiamur, et credamus, et intellectualibus ipsum oculis intueamur. Nihil enim sensibile nobis Christus tradidit: sed sensibilibus quidem rebus, at omnia intelligibilia. Itidem et in baptismate: per rem nempe sensibilem aquam, donum confertur: intelligibile vero quod perficitur, generatio et renovatio. Si enim incorporeus esses, nuda et incorporea tibi dedisset ipse dona: sed quoniam anima corpori conserta est, in sensibilibus intelligibilia tibi praebet. Quot nunc dicunt: Vellem ipsius formam aspicere, figuram, vestimenta, calceamenta? Ecce eum vides, ipsum tangis, ipsum manducas. Et tu quidem vestimenta cupis videre: ipse vero tibi concedit non tantum videre, verum et manducare, et tangere, et intra te sumere.
-
-[Lectio5]
-Igitur accedat nemo cum nausea, nemo resolutus, omnes accensi, omnes ferventes et excitati. Nam si Judaei stantes, et calceamenta in pedibus habentes, et baculos manibus gestantes, agnum cum festinatione comedebant: te multo magis oportet esse solertem. Nam illi quidem in Palaestinam erant profecturi, et propterea viatorum figuram habebant: tu vero debes in caelum migrare. Quapropter in omnibus oportet te vigilare: nec enim parva poena proponitur indigne sumentibus. Cogita quantum adversus proditorem indignaris, et contra eos qui illum crucifixerunt: itaque considera, ne tu quoque sis reus corporis et sanguinis Christi. Illi sanctissimum corpus occiderunt, tu vero polluta suscipis anima, post tot beneficia. Neque enim illi satis fuit, hominem fieri, celaphis caedi, et crucifigi: verum et semetipsum nobis commiscet; et non fide tantum, verum et ipsa re nos suum efficit corpus.
-
-[Lectio6]
-Quo non oportet igitur esse puriorem, tali fruentem sacrificio? quo solari radio non splendidiorem manum, carnem hanc dividentem? os quod igni spiritali repletur, linguam quae tremendo nimis sanguine rubescit? Cogita quali sis insignitus honore, quali mensa fruaris. Quod Angeli videntes horrescunt, neque libere audent intueri propter emicantem inde splendorem; hoc nos pascimur, huic nos unimur, et facti sumus unum Christi corpus, et una caro. Quis loquetur potentias Domini, auditas faciet omnes laudes ejus? Quis pastor oves proprio pascit cruore? Et quid dico, pastor? Matres multae sunt, quae post partus dolores, filios aliis tradunt nutricibus. Hoc autem ipse non est passus: sed ipse nos proprio sanguine pascit, et per omnia nos sibi coagmentat.
-
 [Lectio7]
-Lectio sancti Evangelii secundum Lucam.
-!Luc 14:16-24
-In illo tempore: Dixit Jesus pharisaeis parabolam hanc: Homo quidam fecit cenam magnam, et vocavit multos. Et reliqua.
-_
-Homilia sancti Gregorii Papae
-!Homilia 36. in Evangelia.
-Hoc distare, fratres carissimi, inter delicias corporis et cordis solet: quod corporales deliciae, cum non habentur, grave in se desiderium accendunt: cum vero avide eduntur, comedentem protinus in fastidium per satietatem vertunt. At contra, spiritales deliciae, cum non habentur, in fastidio sunt; cum vero habentur, in desiderio: tantoque a comedente amplius esuriuntur, quanto et ab esuriente amplius comeduntur. In illis appetitus placet, experientia displicet: in istis appetitus vilis est, et experientia magis placet. In illis appetitus saturitatem, saturitas fastidium generat: in istis autem appetitus saturitatem, saturitas appetitum parit.
-
-[Lectio8]
-Augent enim spiritales deliciae desiderium in mente, dum satiant: quia quanto magis earum sapor percipitur, eo amplius cognoscitur quod avidius ametur: et idcirco non habitae amari non possunt, quia earum sapor ignoratur. Quis enim amare valeat quod ignorat? Proinde Psalmista nos admonet, dicens: Gustate et videte, quoniam suavis est Dominus. Ac si aperte dicat: Suavitatem ejus non cognoscitis, si hanc minime gustatis: sed cibum vitae ex palato cordis tangite, ut probantes ejus dulcedinem, amare valeatis. Has autem homo delicias tunc amisit, cum in paradiso peccavit: extra exiit, cum os a cibo aeternae dulcedinis clausit.
+@Tempora/Pent02-0:Lectio7
 
 [Responsory8]
-R. Homo quidam fecit cenam magnam, et misit servum suum hora cenae dicere invitatis, ut venirent:
-* Quia parata sunt omnia.
-V. Venite, comedite panem meum, et bibite vinum quod miscui vobis.
-R. Quia parata sunt omnia.
-&Gloria
-R. Quia parata sunt omnia.
-
-[Lectio9]
-Unde nos quoque nati in hujus peregrinationis aerumna, huc fastidiosi jam venimus, nescimus quid desiderare debeamus. Tantoque se amplius fastidii nostri morbus exaggerat, quanto se magis ab esu illius dulcedinis animus elongat. Et eo jam internas delicias non appetit, quo eas comedere, diu longeque desuevit. Fastidio ergo nostro tabescimus, et longa inediae peste fatigamur. Et quia gustare intus nolumus paratam dulcedinem, amamus foris miseri famem nostram.
-&teDeum
+@Tempora/Pent02-0:Responsory8
 
 [Ant 2]
-Homo quidam * fecit cœnam magnam, et vocávit multos: et misit servum suum hora cœnæ dicere invitátis ut venírent, quia ómnia paráta sunt, allelúja.
+@Tempora/Pent02-0:Ant 2
 
 [Ant 3]
-Exi cito * in plateas et vicos civitátis: et páuperes ac debiles, cæcos et claudos compelle intrare, ut impleátur domus mea, allelúja.
+@Tempora/Pent02-0:Ant 3
