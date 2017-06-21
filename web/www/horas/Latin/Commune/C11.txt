@@ -7,65 +7,27 @@ Antiphonas horas
 Doxology=Nat
 
 [Ant Vespera]
-Dum esset Rex * in accubitu suo, nardus mea dedit odorem suavitatis.;;109
-Laeva ejus * sub capite meo, et dextera illius amplexabitur me.;;112
-Nigra sum, * sed formosa, filiae Jerusalem: ideo dilexit me Rex, et introduxit me in cubiculum suum.;;121
-Jam hiems transiit: * imber abiit, et recessit: surge amica mea, et veni.;;126
-Speciosa * facta es et suavis in deliciis tuis, sancta Dei Genitrix.;;147
+Dum esset Rex * in accubitu suo, nardus mea dedit odórem suavitátis.;;109
+Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me.;;112
+Nigra sum, * sed formosa, fíliæ Jerusalem; ideo diléxit me Rex, et introduxit me in cubiculum suum.;;121
+Jam hiems tránsiit, * imber ábiit et recéssit: surge, amica mea, et veni.;;126
+Speciósa * facta es et suávis in deliciis tuis, sancta Dei Génitrix.;;147
 
 [Capitulum Vespera]
-!Sir 24:14
-v. Ab initio et ante saecula creata sum, et usque ad futurum saeculum non desinam, et in habitatione sancta coram ipso ministravi.
-$Deo gratias.
+@Commune/C10:Capitulum Vespera
 
 [Hymnus Vespera]
-{:H-Avemaris:}
-!Prima stropha sequentis hymni dicitur flexis genibus.
-v. Ave maris stella,
-Dei Mater alma,
-Atque semper Virgo,
-Felix caeli porta.
-_
-Sumens illud Ave
-Gabrielis ore,
-Funda nos in pace,
-Mutans Hevae nomen.
-_
-Solve vincla reis,
-Profer lumen caecis,
-Mala nostra pelle,
-Bona cuncta posce.
-_
-Monstra te esse matrem,
-Sumat per te preces,
-Qui pro nobis natus,
-Tulit esse tuus.
-_
-Virgo singularis,
-Inter omnes mitis,
-Nos culpis solutos
-Mites fac et castos.
-_
-Vitam praesta puram,
-Iter para tutum,
-Ut videntes Jesum,
-Semper collætemur.
-_
-Sit laus Deo Patri,
-Summo Christo decus,
-Spiritui Sancto,
-Tribus honor unus.
-Amen.
+@Commune/C10:Hymnus Vespera
 
 [Versum 1]
 V. Dignare me laudare te, Virgo sacrata.
-R. Da mihi virtutem contra hostes tuos.
+R. Da mihi virtútem contra hostes tuos.
 
 [Ant 1]
-Sancta Maria * succurre miseris, juva pusillanimes, refove flebiles, ora pro populo, interveni pro clero, intercede pro devoto femineo sexu: sentiant omnes tuum juvamen, quicumque celebrant tuam sanctam festivitatem.
+Sancta Maria, * succurre miseris, juva pusíllanimes, refove flebiles, ora pro pópulo, interveni pro clero, intercede pro devoto femineo sexu: séntiant omnes tuum juvamen, quicúmque celebrant tuam sanctam festivitátem.
 
 [Invit]
-Sancta Maria, Dei Genitrix Virgo, * Intercede pro nobis.
+Sancta María, Dei Génitrix Virgo, * Intercéde pro nobis.
 
 [Hymnus Matutinum]
 {:H-Quemterra:}v. Quem terra, pontus, sídera
@@ -225,99 +187,51 @@ Quinimmo beati qui audiunt verbum Dei, et custodiunt. Pulchre Salvator attestati
 &teDeum
 
 [Ant Laudes]
-Dum esset Rex * in accubitu suo, nardus mea dedit odorem suavitatis.
-Laeva ejus * sub capite meo, et dextera illius amplexabitur me.
-Nigra sum, * sed formosa, filiae Jerusalem: ideo dilexit me Rex, et introduxit me in cubiculum suum.
-Jam hiems transiit, * imber abiit, et recessit: surge amica mea, et veni.
-Speciosa * facta es et suavis in deliciis tuis, sancta Dei Genitrix.
+Dum esset Rex * in accubitu suo, nardus mea dedit odórem suavitátis.
+Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me.
+Nigra sum, * sed formosa, fíliæ Jerusalem; ideo diléxit me Rex, et introduxit me in cubiculum suum.
+Jam hiems tránsiit, * imber ábiit et recéssit: surge, amica mea, et veni.
+Speciósa * facta es et suávis in deliciis tuis, sancta Dei Génitrix.
 
 [Capitulum Laudes]
 @:Capitulum Vespera
 
 [Hymnus Laudes]
-{:H-Ogloriosavirginum:}v. O gloriosa virginum,
-Sublimis inter sidera,
-Qui te creavit, parvulum
-Lactente nutris ubere.
-_
-Quod Heva tristis abstulit,
-Tu reddis almo germine:
-Intrent ut astra flebiles,
-Caeli recludis cardines.
-_
-Tu regis alti janua,
-Et aula lucis fulgida:
-Vitam datam per Virginem
-Gentes redemptae plaudite.
-_
-* Jesu, tibi sit gloria,
-Qui natus es de Virgine,
-Cum Patre, et almo Spiritu
-In sempiterna saecula.
-Amen.
+@Commune/C10:Hymnus Laudes
 
 [Versum 2]
-V. Diffusa est gratia in labiis tuis.
-R. Propterea benedixit te Deus in aeternum.
+@Commune/C10:Versum 1
 
 [Ant 2]
-Beata es * Maria, quae credidisti: perficientur in te, quae dicta sunt tibi a Domino, alleluia.
+Beáta es, * Maria, quæ credidísti: perficiéntur in te, quæ dicta sunt tibi a Dómino, allelúja.
 
 [Oratio]
-Concede nos famulos tuos, quaesumus, Domine Deus, perpetua mentis et corporis sanitate gaudere: et gloriosa beatae Mariae semper Virginis intercessione, a praesenti liberari tristitia, et aeterna perfrui laetitia.
-$Per Dominum
+@Commune/C10:Oratio
 
 [Lectio Prima]
-!Sir 24:19-20
-v. In plateis sicut cinnamomum, et balsamum aromatizans odorem dedi: quasi myrrha electa dedi suavitatem odoris.
+@Commune/C10:Lectio Prima
 
 [Capitulum Tertia]
 @:Capitulum Vespera
 
 [Responsory Tertia]
-R.br. Specie tua * Et pulchritudine tua.
-R. Specie tua * Et pulchritudine tua.
-V. Intende, prospere procede, et regna.
-R. Et pulchritudine tua.
-&Gloria
-R. Specie tua * Et pulchritudine tua.
-_
-V. Adjuvabit eam Deus vultu suo.
-R. Deus in medio ejus, non commovebitur.
+@Commune/C10:Responsory Tertia
 
 [Capitulum Sexta]
-!Sir 24:15-16
-v. Et sic in Sion firmata sum, et in civitate sanctificata similiter requievi, et in Jerusalem potestas mea. Et radicavi in populo honorificato, et in parte Dei mei hereditas illius, et in plenitudine sanctorum detentio mea.
-$Deo gratias.
+@Commune/C10:Capitulum Sexta
 
 [Responsory Sexta]
-R.br. Adjuvabit eam * Deus vultu suo.
-R. Adjuvabit eam * Deus vultu suo.
-V. Deus in medio ejus, non commovebitur.
-R. Deus vultu suo.
-&Gloria
-R. Adjuvabit eam * Deus vultu suo.
-_
-V. Elegit eam Deus, et praeelegit eam.
-R. In tabernaculo suo habitare facit eam.
+@Commune/C10:Responsory Sexta
 
 [Capitulum Nona]
 @:Lectio Prima
-$Deo gratias.
+$Deo gratias
 
 [Responsory Nona]
-R.br. Elegit eam Deus, * Et praeelegit eam.
-R. Elegit eam Deus, * Et praeelegit eam.
-V. In tabernaculo suo habitare facit eam.
-R. Et praeelegit eam.
-&Gloria
-R. Elegit eam Deus, * Et praeelegit eam.
-_
-V. Diffusa est gratia in labiis tuis.
-R. Propterea benedixit te Deus in aeternum.
+@Commune/C10:Responsory Nona
 
 [Versum 3]
 @:Versum 1
 
 [Ant 3]
-Beatam me dicent * omnes generationes quia ancillam humilem respexit Deus.
+Beatam me dicent * omnes generatiónes, quia ancíllam húmilem respéxit Deus.
