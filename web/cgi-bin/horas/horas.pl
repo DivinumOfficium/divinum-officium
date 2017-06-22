@@ -1272,7 +1272,7 @@ sub ensure_double_alleluia(\$$)
   unless (depunct($$text) =~ /$alleluia_depunct\s*$/i)
   {
     # Add a double 'alleluia' and move the asterisk.
-    $$text =~ s/\s*\*\s*/ /;
+    $$text =~ s/\s*\*\s*(.)/ \l\1/;
     $$text =~ s/\W*?(\s*)$/, * $alleluia$1/;
   }
 }
@@ -1340,6 +1340,7 @@ sub postprocess_short_resp(\@$)
 
     for (@$capit)
     {
+
       if (/^R\.br\./ ... (/^R\./ && ++$rlines >= 3))
       {
         # Short responsory proper.
