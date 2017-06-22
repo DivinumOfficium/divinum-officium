@@ -1,0 +1,26 @@
+[Rank]
+Św. Sylwestra Opata;;Duplex;;3;;vide C5
+
+[Rule]
+vide C5;
+9 lectiones
+
+[Oratio]
+Najłaskawszy Boże, który świętego Opata Sylwestra rozmyślającego przy otwartym grobie nad marnościami tego świata, do życia pustelniczego powołać i świetnemi zasługami wysokiej bogomyślności ozdobić raczyłeś, daj, pokornie Cię błagamy, abyśmy, gardząc za jego przykładem rzeczami ziemskiemi, wiecznem obcowaniem z Tobą cieszyć się mogli.
+$Per Dominum
+
+[Commemoratio]
+!Wspomnienie Św. Piotra Aleksandryjskiego Biskupa i Męczennika
+@Commune/C2:Oratio proper
+$Oremus
+Wszechmogący Boże, wejrzyj na słabość naszą, a że uginamy się pod ciężarem grzechów naszych, niech chwalebne pośrednictwo błogosławionego Piotra, Męczennika i Biskupa Twego, nas osłania.
+$Per Dominum.
+
+[Lectio7]
+@Commune/C1:Lectio7
+
+[Lectio8]
+@Commune/C1:Lectio8
+
+[Lectio9]
+@Commune/C1:Lectio9

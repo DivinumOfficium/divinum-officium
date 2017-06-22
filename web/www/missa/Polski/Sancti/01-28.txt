@@ -1,0 +1,59 @@
+[Rank]
+S. Petri Nolasci Confessoris;;Duplex;;3;;vide C5b
+
+[Rule]
+vide C5b;
+Gloria
+
+[Comment]
+# 28 I – Św. Piotra Nolasco, Wyznawcy
+! 3 klasy
+! Szaty białe
+Św. Piotr Nolasco założył pod wpływem objawienia Matki Bożej nowy zakon, którego celem było wykupywanie chrześcijan z niewoli muzułmańskiej. Zakkonnicy zobowiązywali się specjalnym ślubem do osobistego oddania się w niewolę, jeżeli byłoby to potrzebne do uwolnienia jeńca. Św. Piotr umarł w Barcelonie 25 grudnia 1256 roku.
+
+Wspomnienie św. Agnieszki, Dziewicy i Męczennicy. Drugie święto św. Agnieszki świadczy, jak wielki był jej kult w Rzymie.
+
+[Introitus]
+@Commune/C5b:Introitus
+
+[Oratio]
+Boże, Tyś cudownie pouczył św. Piotra, by na wzór Twojej miłości obdarzył Twój Kościół nowym zgromadzeniem dla wykupu wiernych z niewoli; spraw za jego wstawiennictwem, abyśmy wykupieni z niewoli grzechu cieszyli się wiekuistą wolnością w niebieskiej ojczyźnie:
+$Qui vivis
+
+[Lectio]
+@Commune/C5b:Lectio
+
+[Graduale]
+@Commune/C5b:Graduale
+
+[Evangelium]
+@Commune/C5b:Evangelium
+
+[Offertorium]
+@Commune/C5b:Offertorium
+
+[Secreta]
+Wspominając Twoich Świętych, składamy Ci, Panie, ofiarę chwały i ufamy, że ona wybawi nas od złego teraz i w przyszłości.
+$Per Dominum
+
+[Communio]
+@Commune/C5b:Communio
+
+[Postcommunio]
+Pokrzepieni niebieskim pokarmem i napojem, błagamy Cię pokornie. Boże nasz, niech nas bronią modlitwy tego, w którego święto przyjęliśmy te dary.
+$Per Dominum
+
+[Commemoratio Oratio]
+!Drugie wspomnienie św. Agnieszki
+Boże, który co roku sprawiasz nam radość uroczystością świętej Agnieszki, Dziewicy i Męczennicy Twojej, daj, prosimy, abyśmy oddając jej cześć, szli także za przykładem jej świętego życia.
+$Per Dominum
+
+[Commemoratio Secreta]
+!Drugie wspomnienie św. Agnieszki
+Niechaj zstąpi, prosimy Cię, Panie, obfite błogosławieństwo Twoje na te dary ofiarne, niechaj nas łaskawie uświęci i rozraduje uroczystym obchodem Męczenników.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+!Drugie wspomnienie św. Agnieszki
+Panie, przyjęliśmy Sakrament obchodząc doroczną uroczystość; spraw, prosimy, niech on udzieli nam pomocy na życie doczesne i wieczne.
+$Per Dominum

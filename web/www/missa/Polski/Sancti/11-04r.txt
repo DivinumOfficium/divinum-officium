@@ -1,0 +1,57 @@
+[Rank]
+S. Caroli Episcopi et Confessoris;;Duplex;;3;;vide C4
+
+[Rule]
+vide C4;
+9 lectiones
+
+[Comment]
+# 04 XI – Św. Karola Boromeusza, Biskupa i Wyznawcy
+! 3 klasy
+! Szaty białe
+Św. Karol urodził się w Mediolanie w 1538 roku. W dwudziestym trzecim roku życia został mianowany kardynałem i arcybiskupem Me­diolanu. Współpracując ze swoim wujem papieżem Piusem IV do­prowadził do końca Sobór Trydencki. Uchwały tego soboru gorliwie wprowadzał w swojej diecezji. Zorganizował pierwsze seminarium du­chowne, odbył 16 synodów, niestrudzenie wizytował diecezje. Hojny dla ubogich, w czasie zarazy oddał im wszystko, nawet własne łóżko. Osobiście prowadził procesje pokutne, idąc boso w zgrzebnym worze i dźwigając ciężki krzyż. Zmarł 3 listopada 1584 roku
+
+Również wspomnienie św. Witalisa i Agrykoli, męczenników. Niewolnik Witalis i jego pan Agrykola ponieśli śmierć męczeńska w Bolom, za czasów Dioklecjana. Św. Ambroży uczestniczył w niesieniu ich relikwii w roku 393.
+
+[Introitus]
+@Commune/C4:Introitus
+
+[Oratio]
+Osłaniaj, Panie, swój Kościół nieustanną opieką świętego Ka­rola, Twojego Wyznawcy i Bi­skupa, a jak jemu gorliwość pa­sterska przyniosła chwałę, tak niech jego wstawiennictwo za­wsze rozpala w nas miłość ku Tobie.
+$Per Dominum
+
+[Commemoratio Oratio]
+!Pro Ss. Vitale et Agrícola Martyribus
+Spraw, prosimy Cię, wszechmogący Boże, abyśmy obchodząc uroczystość świętych Twoich Mę­czenników Witalisa i Agrykoli, doznali pomocy dzięki ich wsta­wiennictwu.
+$Per Dominum
+
+[Lectio]
+@Commune/C4:Lectio
+
+[Graduale]
+@Commune/C4:Graduale
+
+[Evangelium]
+@Commune/C4:Evangelium
+
+[Offertorium]
+@Commune/C4:Offertorium
+
+[Secreta]
+@Commune/C4:Secreta
+
+[Commemoratio Secreta]
+!Pro Ss. Vitale et Agrícola Martyribus
+Daj się przebłagać, Panie, zło­żonymi darami, a za wstawien­nictwem świętych Twoich Męczenników Witalisa i Agrykoli broń nas od wszystkich niebezpieczeństw. 
+$Per Dominum
+
+[Communio]
+@Commune/C4:Communio
+
+[Postcommunio]
+@Commune/C4:Postcommunio
+
+[Commemoratio Postcommunio]
+!Pro Ss. Vitale et Agrícola Martyribus
+Panie, niech ta Komunia oczy­ści nas z grzechów i za przyczy­ną świętych Męczenników Two­ich Witalisa i Agrykoli stanie się dla nas niebieskim lekar­stwem.
+$Per Dominum

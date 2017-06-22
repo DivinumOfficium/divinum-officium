@@ -4,10 +4,12 @@ S. Gregorii VII Papae Confessoris;;Duplex;;3;;vide C4
 [Rule]
 vide C4;
 9 lectiones
-CPapaM=Urb·num;
+CPapaM=Urb√°num;
 
 [Oratio]
-Deus, in te sperantium fortitudo, qui beatum Gregorium Confessorem tuum atque Pontificem, pro tuenda Ecclesiae libertate virtute constantiae roborasti: da nobis ejus exemplo, et intercessione, omnia adversantia fortiter superare.
+Deus, in te sper√°ntium fortit√∫do, qui be√°tum Greg√≥rium Confess√≥rem tuum atque~
+Pont√≠ficem, pro tu√©nda Eccl√©si√¶ libert√°te, virt√∫te const√°nti√¶ robor√°sti: da~
+nobis, ejus ex√©mplo et intercessi√≥ne, √≥mnia advers√°ntia f√≥rtiter super√°re.
 $Per Dominum
 
 [Commemoratio]
@@ -16,20 +18,19 @@ $Per Dominum
 
 [Commemoratio] (rubrica 1960)
 !Commemoratio S. Urbani I, Papae et Martyris
-Ant. Filiae Jerusalem, venite et videte Martyres cum coronis, quibus coronavit eos Dominus in die solemnitatis et laetitiae, alleluia, alleluia.
-_
-V. Pretiosa in conspectu Domini, alleluia.
-R. Mors sanctorum ejus, alleluia.
-_
+@Commune/C2:Oratio proper
 $Oremus.
-Deus, qui Ecclesiam tuam in apostolicae petrae soliditate fundatam, ab infernarum eruis terrore portarum: praesta, quaesumus, ut intercedente beato Urbano Martyre tuo atque Summo Pontifice, in tua veritate persistens, continua securitate muniatur.
+Deus, qui Eccl√©siam tuam, in apost√≥lic√¶ petr√¶ solidit√°te fund√°tam, ab infern√°rum~
+√©ruis terr√≥re port√°rum: pr√¶sta, quaesumus; ut, interced√©nte be√°to Urb√°no M√°rtyre~
+tuo atque Summo Pont√≠fice, in tua verit√°te pers√≠stens, cont√≠nua securit√°te~
+muni√°tur.
 $Per Dominum.
 
 [Lectio4]
 Gregorius Papa septimus, antea Hildebrandus, Suanae in Etruria natus, doctrina, sanctitate, omnique virtutum genere cum primis nobilis, mirifice universam Dei illustravit Ecclesiam. Cum parvulus ad fabri ligna edolantis pedes, jam litterarum inscius, luderet, ex rejectis tamen segmentis illa Davidici elementa oraculi: Dominabitur a mari usque ad mare: casu formasse narratur, manum pueri ductante Numine, quo significaretur, ejus fore amplissimam in mundo auctoritatem. Romam deinde profectus sub protectione sancti Petri educatus est. Juvenis Ecclesiae libertatem a laicis oppressam, ac depravatos ecclesiasticorum mores vehementius dolens, in Cluniacensi monasterio, ubi sub regula sancti Benedicti austerioris vitae observantia eo tempore maxime vigebat, monachi habitum induens, tanto pietatis ardore divinae majestati deserviebat, ut a sanctis eiusdem coenobii patribus prior sit electus. Sed divina providentia majora de eo disponente in salutem plurimorum Cluniaco eductus Hildebrandus, abbas primum monasterii sancti Pauli extra muros Urbis electus, ac postmodum Romanae Ecclesiae cardinalis creatus, sub Summis Pontificibus, Leone nono, Victore secundo, Stephano nono, Nicolao secundo, et Alexandro secundo, praecipuis muneribus et legationibus perfunctus est, sanctissimi, et purissimi consilii vir a beato Petro Damiano nuncupatus. A Victore Papa secundo legatus a latere in Galliam missus, Lugduni episcopum simoniaca labe infectum ad sui criminis confessionem miraculo adegit. Berengarium in concilio Turonensi ad iteratam haeresis abjurationem compulit. Cadaloi quoque schisma sua virtute compressit.
 
 [Lectio5]
-Mortuo Alexandro secundo, invitus, et maerens, unanimi omnium consensu, decimo Kalendas Maji, anno Christi millesimo septuagesimo tertio, Summus Pontifex electus, sicut sol effulsit in domo Dei. Nam potens opere et sermone, ecclesiasticae disciplinae reparandae, fidei propagandae, libertati Ecclesiae restituendae, exstirpandis erroribus, et corruptelis tanto studio incubuit, ut ex Apostolorum aetate nullus Pontificum fuisse tradatur, qui majores pro Ecclesia Dei labores, molestiasque pertulerit, aut qui pro ejus libertate acrius pugnaverit. Aliquot provincias a simoniaca labe expurgavit. Contra Henrici imperatoris impios conatus fortis per omnia athleta impavidus permansit, seque pro muro domui IsraÎl ponere non timuit, ac eumdem Henricum in profundum malorum prolapsum fidelium communione, regnoque privavit, atque subditos populos fide ei data liberavit.
+Mortuo Alexandro secundo, invitus, et maerens, unanimi omnium consensu, decimo Kalendas Maji, anno Christi millesimo septuagesimo tertio, Summus Pontifex electus, sicut sol effulsit in domo Dei. Nam potens opere et sermone, ecclesiasticae disciplinae reparandae, fidei propagandae, libertati Ecclesiae restituendae, exstirpandis erroribus, et corruptelis tanto studio incubuit, ut ex Apostolorum aetate nullus Pontificum fuisse tradatur, qui majores pro Ecclesia Dei labores, molestiasque pertulerit, aut qui pro ejus libertate acrius pugnaverit. Aliquot provincias a simoniaca labe expurgavit. Contra Henrici imperatoris impios conatus fortis per omnia athleta impavidus permansit, seque pro muro domui Isra√´l ponere non timuit, ac eumdem Henricum in profundum malorum prolapsum fidelium communione, regnoque privavit, atque subditos populos fide ei data liberavit.
 
 [Lectio6]
 Dum Missarum solemnia perageret, visa est viris piis columba e caelo delapsa, humero ejus dextro insidens, alis extensis caput ejus velare, quo significatum est, Spiritus Sancti afflatu, non humanae prudentiae rationibus ipsum duci in Ecclesiae regimine. Cum ab iniqui Henrici exercitu Romae gravi obsidione premeretur, excitatum ab hostibus incendium signo crucis exstinxit. De ejus manu tandem a Roberto Guiscardo duce Northmanno ereptus, Cassinum se contulit; atque inde Salernum ad dedicandam ecclesiam sancti Matthaei Apostoli contendit. Cum aliquando in ea civitate sermonem habuisset ad populum, aerumnis confectus in morbum incidit, quo se interiturum praescivit. Postrema morientis Gregorii verba fuere: Dilexi justitiam, et odivi iniquitatem, propterea morior in exsilio. Innumerabilia sunt, quae vel fortiter sustinuit, vel multis coactis in Urbe synodis sapienter constituit, vir vere sanctus, criminum vindex, et acerrimus Ecclesiae defensor. Exactis itaque in pontificatu annis duodecim, migravit in caelum anno salutis millesimo octogesimo quinto, pluribus in vita, et post mortem miraculis clarus, ejusque sacrum corpus in cathedrali basilica Salernitana est honorifice conditum.
@@ -40,7 +41,7 @@ Urbanus Romanus, Alexandro Severo imperatore, doctrina et vitae sanctitate multo
 &teDeum
 
 [Lectio94]
-GregÛrius Papa septimus, antea Hildebrandus, SuanÊ in Etruria natus, doctrÌna, sanctit·te, omnique virt˙tum gÈnere cum primis nobilis, mirifice universam Dei EcclÈsiam illustr·vit. AdolÈscens religiosi habitum Ìnduit in CluniacÈnsi monastÈrio, tantoque piet·tis ardore Deo deserviit, ut a sanctis ej˙sdem cúnobii p·tribus prior f˙erit elÈctus. Postea factus abbas monasterii sancti Pauli extra muros Urbis, ac deÌnde cre·tus RomanÊ EcclÈsiÊ cardinalis, sub Summis PontifÌcibus Leone nono, Victore secundo, Stephano nono, Nicolao secundo et Alexandro secundo, prÊcipuis munÈribus et legatiÛnibus perfunctus est. Mortuo Alexandro secundo, unanÌmiter Summus PÛntifex elÈctus, ecclesi·sticÊ libert·tis propugnator ac defensor acÈrrimus Èxstitit; quapropter multa passus, et Roma discedere coactus est. Postrema ejus moriÈntis verba fuÈre: DilÈxi justÌtiam et odÌvi iniquit·tem, proptÈrea morior in exsÌlio. Migr·vit in cÊlum, anno sal˙tis millÈsimo octogÈsimo quinto, ej˙sque corpus in cathedrali basilica Salernitana honorifice cÛnditum est.
+Greg√≥rius Papa septimus, antea Hildebrandus, Suan√¶ in Etruria natus, doctr√≠na, sanctit√°te, omnique virt√∫tum g√©nere cum primis nobilis, mirifice universam Dei Eccl√©siam illustr√°vit. Adol√©scens religiosi habitum √≠nduit in Cluniac√©nsi monast√©rio, tantoque piet√°tis ardore Deo deserviit, ut a sanctis ej√∫sdem c≈ìnobii p√°tribus prior f√∫erit el√©ctus. Postea factus abbas monasterii sancti Pauli extra muros Urbis, ac de√≠nde cre√°tus Roman√¶ Eccl√©si√¶ cardinalis, sub Summis Pontif√≠cibus Leone nono, Victore secundo, Stephano nono, Nicolao secundo et Alexandro secundo, pr√¶cipuis mun√©ribus et legati√≥nibus perfunctus est. Mortuo Alexandro secundo, unan√≠miter Summus P√≥ntifex el√©ctus, ecclesi√°stic√¶ libert√°tis propugnator ac defensor ac√©rrimus √©xstitit; quapropter multa passus, et Roma discedere coactus est. Postrema ejus mori√©ntis verba fu√©re: Dil√©xi just√≠tiam et od√≠vi iniquit√°tem, propt√©rea morior in exs√≠lio. Migr√°vit in c√¶lum, anno sal√∫tis mill√©simo octog√©simo quinto, ej√∫sque corpus in cathedrali basilica Salernitana honorifice c√≥nditum est.
 &teDeum
 
 [Lectio7]

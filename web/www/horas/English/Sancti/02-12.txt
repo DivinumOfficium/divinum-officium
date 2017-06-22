@@ -4,16 +4,19 @@ Ss. Septem Fundat. Ord. Servorum B. M. V.;;Duplex;;3;;vide C5
 [RankNewcal]
 Seven Holy Founders of the Order of the Servants of Mary;;Duplex optional;;2
 
-[Rule]
-vide C5;;
-9 lectiones
-
 [Oratio]
 Lord Jesus Christ, who, that thou mightest recall to mind the woes of thy most~
 holy Mother, didst through the Seven blessed Fathers make thy Church herself the~
 mother of a new household of her servants, grant unto us in mercy that we may so~
 share their tears as to share their blessedness also.
 $Qui vivis
+
+[Capitulum Vespera]
+!1 Pet 4:13
+v. Dearly beloved brethren, rejoice, inasmuch as you are partakers of Christ's~
+sufferings; that, when His glory shall be revealed, ye may be glad also with~
+exceeding joy.
+$Deo gratias
 
 [Versum 1]
 V. These were merciful men whose righteousness hath not been forgotten.
@@ -117,21 +120,6 @@ had been sanctioned in the jubilee year of his priesthood, decreed to them the~
 honours paid to Saints, and ordered that their memory should every year be kept~
 throughout the universal Church with an office and Mass.
 
-[Lectio7]
-@Commune/C1:Lectio7
-
-[Lectio8]
-@Commune/C1:Lectio8
-
-[Lectio9]
-@Commune/C1:Lectio9
-
-[Capitulum Laudes]
-!1 Pet 4:13
-v. Dearly beloved brethren, rejoice, inasmuch as you are partakers of Christ's~
-sufferings; that, when His glory shall be revealed, ye may be glad also with~
-exceeding joy.
-$Deo gratias
 
 [Hymnus Laudes]
 v. The Fathers lived a life in shade,
@@ -172,18 +160,6 @@ R. And let their bones flourish again out of their place.
 [Ant 2]
 Behold how good * and how pleasant it is for brethren to dwell together in unity.
 
-[Capitulum Tertia]
-!1 Pet 4:13
-v. Brethren: If you partake of the sufferings of Christ, rejoice that when his~
-glory shall be revealed, you may also be glad with exceeding joy.
-$Deo gratias
-
-[Capitulum Vespera]
-!1 Pet 4:13
-v. Brethren: If you partake of the sufferings of Christ, rejoice that when his~
-glory shall be revealed, you may also be glad with exceeding joy.
-$Deo gratias
-
 [Hymnus Vespera 3]
 v. Why Mary's inspiration led,
 A sevenfold offspring comes to light;
@@ -215,10 +191,6 @@ Confirm us in Thy Holy Grace!
 That as we may our hearts incline
 To walk in these thy servants' ways.
 Amen.
-
-[Versum 3]
-V. These were merciful men, whose righteousness hath not been forgotten.
-R. With their seed shall continually remain a good inheritance.
 
 [Ant 3]
 Their name * endureth for ever, enduring unto their sons, the glory of holy men.

@@ -8,11 +8,11 @@ Psalm5 Vespera=116
 Psalm5 Vespera3=115
 
 [Ant Vespera]
-Qui me conféssus fúerit * coram homínibus, confitébor et ego eum coram Patre meo.;;109
-Qui séquitur me, * non ámbulat in ténebris, sed habébit lumen vitæ, dicit Dóminus.;;110
-Qui mihi minístrat, * me sequátur: et ubi ego sum, illic sit et miníster meus.;;111
-Si quis mihi ministráverit, * honorificábit eum Pater meus, qui est in cælis, dicit Dóminus.;;112
-Volo Pater, * ut ubi ego sum, illic sit et miníster meus.;;116
+Qui me conféssus fúerit * coram homínibus, confitébor et ego eum coram Patre meo.
+Qui séquitur me, * non ámbulat in ténebris, sed habébit lumen vitæ, dicit Dóminus.
+Qui mihi minístrat, * me sequátur: et ubi ego sum, illic sit et miníster meus.
+Si quis mihi ministráverit, * honorificábit eum Pater meus, qui est in cælis, dicit Dóminus.
+Volo Pater, * ut ubi ego sum, illic sit et miníster meus.
 
 [Capitulum Vespera]
 !Jac 1:12
@@ -198,16 +198,10 @@ Sed percontári libet, quómodo paréntes et carnáliter propínquos præcípimu
 &teDeum
 
 [Ant Laudes]
-Qui me conféssus fúerit * coram homínibus, confitébor et ego eum coram Patre meo.
-Qui séquitur me, * non ámbulat in ténebris, sed habébit lumen vitæ, dicit Dóminus.
-Qui mihi minístrat, * me sequátur: et ubi ego sum, illic sit et miníster meus.
-Si quis mihi ministráverit, * honorificábit eum Pater meus, qui est in cælis, dicit Dóminus.
-Volo Pater, * ut ubi ego sum, illic sit et miníster meus.
+@:Ant Vespera
 
 [Capitulum Laudes]
-!Jac 1:12
-v. Beatus vir, qui suffert tentatiónem: quóniam cum probátus fúerit, accípiet corónam vitæ, quam repromísit Deus diligéntibus se.
-$Deo gratias
+@:Capitulum Vespera
 
 [Hymnus Laudes]
 {:H-Invictemartyrunicum:}v. Invícte Martyr, únicum
@@ -259,9 +253,7 @@ $Per Dominum
 v. Justus cor suum trádidit ad vigilándum dilúculo ad Dóminum, qui fecit illum, et in conspéctu Altíssimi deprecábitur.
 
 [Capitulum Tertia]
-!Jac 1:12
-v. Beatus vir, qui suffert tentatiónem: quóniam cum probátus fúerit, accípiet corónam vitæ, quam repromísit Deus diligéntibus se.
-$Deo gratias
+@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Glória et honóre * Coronásti eum, Dómine.
@@ -307,8 +299,7 @@ V. Justus ut palma florébit.
 R. Sicut cedrus Líbani multiplicábitur.
 
 [Versum 3]
-V. Justus ut palma florébit.
-R. Sicut cedrus Líbani multiplicábitur.
+@:Versum 2
 
 [Ant 3]
 Qui vult veníre post me, * ábneget semetípsum, et tollat crucem suam, et sequátur me.

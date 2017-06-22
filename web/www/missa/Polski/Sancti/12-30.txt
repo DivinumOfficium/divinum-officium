@@ -1,0 +1,38 @@
+[Rank]
+Die VI infra Octavam Nativitatis;;Semiduplex;;2;;ex Sancti/12-25m3
+
+[Rank1960]
+Die sexta post Nativitatem;;Duplex II class;;5;;ex Sancti/12-25m3
+
+[Rule]
+ex Sancti/12-25m3;
+Gloria
+Credo
+Prefatio=Nat
+
+[Introitus]
+@Sancti/12-25m3:Introitus
+
+[Oratio]
+@Sancti/12-25m3:Oratio
+
+[Lectio]
+@Sancti/12-25m2:Lectio
+
+[Graduale]
+@Sancti/12-25m3:Graduale
+
+[Evangelium]
+@Sancti/12-25m2:Evangelium
+
+[Offertorium]
+@Sancti/12-25m3:Offertorium
+
+[Secreta]
+@Sancti/12-25m3:Secreta
+
+[Communio]
+@Sancti/12-25m3:Communio
+
+[Postcommunio]
+@Sancti/12-25m3:Postcommunio

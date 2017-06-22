@@ -1,8 +1,8 @@
 [Rank]
-Dominica infra Octavam Ascensionis;;Semiduplex;;5;;ex Tempora/Pasc5-4
+Niedziela w Oktawie Wniebowstąpienia;;Semiduplex;;5;;ex Tempora/Pasc5-4
 
 [Rank1960]
-Dominica post Ascensionem;;Semiduplex;;5;;vide Tempora/Pasc5-4
+Niedziela po Wniebowstąpieniu;;Semiduplex;;5;;vide Tempora/Pasc5-4
 
 [Rule]
 ex Tempora/Pasc5-4;
@@ -87,7 +87,8 @@ R. Lecz gdy przyjdzie, nauczy was wszelkiéj prawdy, alleluja.
 @:Versum 1
 
 [Ant 3]
-Tom wam powiedział, * abyśde, gdy przyjdzie godzina, wspomnieli na to, żem ja wam powiedział, alleluja.
+Tom wam powiedział, * abyście, gdy przyjdzie godzina, wspomnieli na to, żem ja wam powiedział, alleluja.
 
 [Commemoratio 3]
-@:Commemoratio 2
+!Commemoratio Octavae Ascensionis.
+@Tempora/Pasc5-4:Oratio

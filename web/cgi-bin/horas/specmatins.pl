@@ -45,16 +45,13 @@ sub invitatorium {
   if ($w) {$ant = chompd($w); $comment = $c;} 
 
 
-  if ($lang =~ /Magyar/i) {
-    setcomment($label, 'Source', $comment, $lang, 'Antif.');}
-  else {
-    setcomment($label, 'Source', $comment, $lang, 'Antiph.');}
+  setcomment($label, 'Source', $comment, $lang, translate('Antiphona', $lang));
 
   $ant =~ s/^.*?\=\s*// ;
   $ant = chompd($ant);
   $ant = "Ant. $ant";  
   
-  if ($dayname[0] =~ /Pasc/i && $ant !~ /allel[uú][ij]a/i) {$ant .= " Alleluia.";}
+  if ($dayname[0] =~ /Pasc/i && $ant !~ /allel[uú][ij]a/i) {$ant .= " " . translate('Alleluia', $lang) . ".";}
   if ($dayname[0] =~ /Quad/i) {$ant =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;} 
 
   my @ant = split('\*', $ant);
@@ -149,9 +146,7 @@ sub psalmi_matutinum {
   my @psalmi = split("\n", $psalmi{"$d$dw"});
   setbuild("Psalterium/Psalmi matutinum", "$d$dw", 'Psalmi ord');
   $comment = 1;
-  my $prefix = ($lang =~ /English/i) ? 'Antiphons' : 'Antiphonae';
-  my $prefix = ($lang =~ /Magyar/i) ? 'Antifónák' : 'Antiphonae';
-           
+  my $prefix = translate('Antiphonae', $lang);
 
   if ($version !~ /Trident/i && $dayofweek == 0 && $dayname[0] =~ /Adv/i) {  
     @psalmi = split("\n", $psalmi{'Adv 0 Ant Matutinum'});
@@ -207,7 +202,7 @@ sub psalmi_matutinum {
   if ($w) {     
     @psalmi = split("\n", $w);
     $comment = $c;
-    $prefix .= ($lang =~ /Magyar/i) ? ' és zsoltárok' : ' et Psalmi';
+    $prefix .= ' '.translate('et Psalmi', $lang);
   }									  
  
   if ($rule =~ /Ant Matutinum ([0-9]+) special/i) {
@@ -409,8 +404,8 @@ sub votivenocturn {
     $i0 = 7;
   }
   foreach $i (0,1,2) {antetpsalm($psalms[$i], $i);}
-  push (@s, $psalm[3]);
-  push (@s, $psalm[4]);
+  push (@s, $psalms[3]);
+  push (@s, $psalms[4]);
   push (@s, "\n");
   if ($rule !~ /Limit.*?Benedictio/i) {push (@s, "\&pater_noster");}
   else {push(@s, "\$Pater noster");}
@@ -444,7 +439,15 @@ sub votivenocturn {
 sub lectiones {
   my $num = shift;     
   my $lang = shift;  
-                      
+
+  my $evan_regexp = translate('Evangelist', $lang);
+  # some vernaculars have no translated parts, so add English and Latin
+  # cannot use translate('Evangelist', 'English') as it is anavailable
+  $evan_regexp .= '|Matt|Marc|Luc|Joannes' if ($lang !~ /Latin/);
+  $evan_regexp .= '|Matt|Mark|Luke|John' if ($lang !~ /English/);
+  $evan_regexp = '!(?:' . $evan_regexp . ')\s+\d+:\d';
+  $evan_regexp = qr/$evan_regexp/;
+
   push (@s, "\n");
   if ($rule !~ /Limit.*?Benedictio/i) {push (@s, "\&pater_noster");}
   else {push(@s, "\$Pater noster");}
@@ -462,8 +465,8 @@ sub lectiones {
     $i = ($dayofweek == 1 || $dayofweek == 4) ? 1 :
     ($dayofweek == 2 || $dayofweek == 5) ? 2 : 
     ($dayofweek == 3 || $dayofweek == 6) ? 3 : 1;
-    my $w = lectio(1, $lang);	
-    if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {
+    my $w = lectio(1, $lang);
+    if ($w =~ $evan_regexp) {
 	  $j0 = $i;
 	  $i = 3;
 	}
@@ -495,7 +498,7 @@ sub lectiones {
   }
      
   my $ltype1960 = gettype1960(); 
-  if ($ltype1960) {return lect1960($lang);}
+  if ($ltype1960) {return lect1960($lang, $evan_regexp);}
   
   if ($winner =~ /sancti/i && $rule !~ /Special Evangelii Benedictio/i) {
     $i = ($num > 0) ? $num : 3;
@@ -509,14 +512,14 @@ sub lectiones {
   
   if ($i == 3 && $rule !~ /ex C1[02]/ && $rule !~ /Special Evangelii Benedictio/i) {    
                                
-    my $w = lectio($j1, $lang);	
-    if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {$a[2] = $benedictio{Evangelica};}
+    my $w = lectio($j1, $lang);
+    if ($w =~ $evan_regexp) {$a[2] = $benedictio{Evangelica};}
     elsif ($a[2] =~ /(evang|Gospel)/i) {$a[2] = $a[5];}  
     setbuild2("B$j1. : " . beginwith($a[2]));
 
     if ($winner =~ /sancti/i && ($winner{Rank} =~ /(s\.|ss\.)/i && $winner{Rank} !~ /vigil/i) && !$divaux) { 
       my $j = 6;
-      if ($winner{Rank} =~ /(virgin|vidua|C6|C7)/i) {$j += 2;}
+      if ($winner{Rank} =~ /(virgin|vidua|poenitentis|C6|C7)/i) {$j += 2;}
       if ($winner{Rank} =~ /ss\./i) {$j++;}  
       $a[3] = $a[$j];
     }
@@ -526,9 +529,8 @@ sub lectiones {
 	 
     setbuild2("B$j2. : " . beginwith($a[3]));
   
-  
-    $w = lectio($j3, $lang); 
-    if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {$a[4] = $benedictio{Evangelica9};}  
+    $w = lectio($j3, $lang);
+    if ($w =~ $evan_regexp) {$a[4] = $benedictio{Evangelica9};}
     setbuild2("B$j3. : " . beginwith($a[4])); 
   
   }
@@ -561,6 +563,20 @@ sub lectiones {
   push (@s, "\n");   
 }
 
+sub matins_lectio_responsory_alleluia(\$$) {
+  my ($r, $lang) = @_;
+  our @dayname;
+  
+  return unless $$r;
+
+  if ($dayname[0] =~ /Pasc/i && !officium_defunctorum()) {
+     my @resp=split("\n",$$r);
+     ensure_single_alleluia($resp[1],$lang);
+     ensure_single_alleluia($resp[3],$lang);
+     ensure_single_alleluia($resp[-1],$lang);
+     $$r = join("\n",@resp);
+   }
+}
 
 #*** lectio($num, $lang)
 # input $num=index number for the lectio(1-9 or 1-3) and language
@@ -826,6 +842,7 @@ sub lectio : ScriptFunc {
 	   $s = $c{"Responsory$na"}; 
 	 }	
      if (exists($winner{"Responsory$na"})) {$s = '';}
+     matins_lectio_responsory_alleluia($s,$lang);
 
      #$$$ watch initia rule
    }  
@@ -837,6 +854,7 @@ sub lectio : ScriptFunc {
      if (!$s) {
        %w = (columnsel($lang)) ? %commune : %commune2;	   
        if (exists($w{"Responsory$na"})) {$s = $w{"Responsory$na"};} 
+       matins_lectio_responsory_alleluia($s,$lang);
      }
    }
 
@@ -888,8 +906,8 @@ sub lectio : ScriptFunc {
   else {$w =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;}
   if ($dayname[0] =~ /Quad/i) {$w =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig;} 
 
-  #handle parentheses in English
-  if ($lang =~ /(English|Magyar)/i) {  
+  #handle parentheses in non Latin
+  if ($lang !~ /Latin/i) {
     $w =~ s/\((.*?[.,].*?)\)/parenthesised_text($1)/eg;
   }
 
@@ -944,16 +962,16 @@ sub beginwith  {
 # sets the benedictiones and sub calls for the 1960 version 3 lection
 sub lect1960 {
   my $lang = shift;
-  
+  my $evan_regexp = shift;
+
   my %w = (columnsel($lang)) ? %winner : %winner2;
   my %s = (columnsel($lang)) ? %scriptura : %scriptura2;
   my %benedictio = %{setupstring($datafolder, $lang, 'Psalterium/Benedictions.txt')};  
   my $i = 3;     
   if ($rank < 2 || $winner{Rank} =~ /Feria/) {$i = ($dayofweek % 3); if ($i == 0) {$i = 3;}} 
-  my $w = lectio(1, $lang);	
-  if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {$i = 3;}
+  my $w = lectio(1, $lang);
+  if ($w =~ $evan_regexp) {$i = 3;}
 
-  
   my @a = split("\n", $benedictio{"Nocturn $i"});  
   if ($rule =~ /ex C10/) {     
     my %m = (columnsel($lang)) ? %commune : %commune2;
@@ -964,15 +982,15 @@ sub lect1960 {
   my $divaux =  ($rule =~ /Divinum auxilium/i || $commune{Rule} =~ /Divinum auxilium/i) ? 1 : 0;
   if ($winner =~ /sancti/i && $rank >= 2 && ($winner{Rank} =~ /(s\.|ss\.)/i && $winner{Rank} !~ /vigil/i) && !$divaux) { 
     my $j = 6;
-    if ($winner{Rank} =~ /(virgin|vidua)/i) {$j += 2;}
+    if ($winner{Rank} =~ /(virgin|vidua|poenitentis)/i) {$j += 2;}
     if ($winner{Rank} =~ /ss\./i) {$j++;}  
     $a[3] = $a[$j];
   }
   if ($rule =~ /Ipsa Virgo Virginum/i || $winner{Rank} =~ /Mari\w*\b\s*Virgin/i) {$a[3] = $a[10];}
   if ($rule =~ /Quorum Festum/i && !$divaux) {$a[3] = $a[7];}
   $w = $w{'Lectio1'};
-  if (!$w) {$w = $s{'Lectio1'};}  
-  if ($w =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John) [0-9]+\:[0-9]/i) {$a[2] = $benedictio{Evangelica};}
+  if (!$w) {$w = $s{'Lectio1'};}
+  if ($w =~ $evan_regexp) {$a[2] = $benedictio{Evangelica};}
   else { 
     if (exists($a[5])) {$a[2] = $a[5];}
     if ($winner{Rank} =~ /dominica/i) {$a[4] = $benedictio{Evangelica9};}
@@ -1036,6 +1054,7 @@ sub responsory_gloria {
   my $w = shift;
   my $num = shift;    
 
+
   $prev = $w;        
   if ($w =~ /(.*?)\&Gloria/is) {$prev = $1;}
   $prev =~ s/\s*$//gm;
@@ -1054,7 +1073,7 @@ sub responsory_gloria {
   if ($num == 3 || $num == 6 || $num == 9 || 
     ($rule =~ /9 lectiones/i && ($winner !~ /tempora/i || $dayname[0] !~ /(Adv|Quad)/i) && $num == 8) || 
 	($version =~ /1960/ && $rule =~ /9 lectiones/i && $rule =~ /Feria Te Deum/i && $num == 2 && 
-      ($dayname[0] !~ /quad/i)) || (gettype1960() > 1 && $num == 2) ||
+      ($dayname[0] !~ /quad/i)) || (gettype1960() > 1 && $num == 2 && $winner !~ /C12/) ||
 	($rank < 2 && $num == 2 && $winner =~ /(Sancti)/) || ($num == 2 && $winner =~ /C10/) ||
 	($num == 2 && ($rule =~ /Feria Te Deum/i || $dayname[0] =~ /Pasc[07]/i) && $rule !~ /9 lectiones/i) ) { 
     if ($w !~ /\&Gloria/i) {  
@@ -1080,8 +1099,8 @@ sub ant_matutinum {
   
 
   if ($version =~ /1960/ && ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek >3)) && ($rank < 5 || $winner{Rank} =~ /Dominica/i)) {
-    if ($ind == 0) {return ('Alleluia, * Alleluia, Alleluia.', '');}
-	if ($ind == 12) {return ('', 'Alleluia, * Alleluia, Alleluia.');}
+    if ($ind == 0) {return (Alleluia_ant($lang,1,1), '');}
+	if ($ind == 12) {return ('', Alleluia_ant($lang,1,1));}
 	return ('','');
   }
 
@@ -1127,15 +1146,15 @@ sub ant_matutinum {
   if ($dayofweek > 0 && (!@spec || $winner =~ /\/C10/)) {  
     
    if ($rule !~ /9 lectio/i || ($version =~ /1960/ && $rank < 5)) {	
-     if ($ind == 0) {$ant1 = ($duplex < 3 && $version !~ /1960/) ? 'Alleluia' : 'Alleluia, * Alleluia, Alleluia.'; $ant = ''}
-     elsif ($version =~ /Trident/i && $ind == 5) {$ant1 = ''; $ant = 'Alleluia, * Alleluia, Alleluia.';}
-	 elsif ($ind == 12) {$ant1 = ''; $ant = 'Alleluia, * Alleluia, Alleluia.';}
+     if ($ind == 0) {$ant1 = Alleluia_ant($lang, 0); $ant = ''}
+     elsif ($version =~ /Trident/i && $ind == 5) {$ant1 = ''; $ant = Alleluia_ant($lang, 1);}
+	 elsif ($ind == 12) {$ant1 = ''; $ant = Alleluia_ant($lang, 1);}
      else {$ant1 = $ant = '';} 
   } else {  #3 nocturns
      if ($ind == 0 || $ind == 5 || $ind == 10) 
-      {$ant1 = ($duplex < 3 && $version !~ /1960/) ? 'Alleluia' : 'Alleluia, * Alleluia, Alleluia.'; $ant = '';}
+      {$ant1 = Alleluia_ant($lang, 0); $ant = '';}
      elsif ($ind == 2 || $ind == 7 || $ind == 12) 
-           {$ant1 = ''; $ant = 'Alleluia, * Alleluia, Alleluia.';}
+           {$ant1 = ''; $ant = Alleluia_ant($lang, 1);}
 	       else {$ant1 = $ant = '';}
       } 
       return ($ant1, $ant);

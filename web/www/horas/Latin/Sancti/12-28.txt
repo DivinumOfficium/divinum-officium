@@ -1,6 +1,9 @@
 [Rank]
 Ss. Innocentium;;Duplex II class cum octava simplici;;5.2;;ex C3
 
+[RankTrident]
+Ss. Innocentium;;Duplex II class cum octava;;5.2;;ex C3
+
 [Rank1960]
 Ss. Innocentium;;Duplex II class;;5;;ex C3
 
@@ -14,7 +17,7 @@ no Te Deum
 no Psalm5
 
 [Ant 1]
-Hi sunt * qui cum mulieribus non sunt coinquinati: virgines enim sunt et~
+Hi sunt * qui cum mulieribus non sunt coinquinati: virgines enim sunt, et~
 sequuntur Agnum, quocumque ierit.
 
 [Versum 1]
@@ -68,8 +71,8 @@ R. Virgines enim permanserunt, ideo regnant cum Deo, et Agnus Dei cum illis.
 [Lectio2]
 !Jer 31:18-20
 18 Audiens audivi Ephraim transmigrantem: Castigasti me, et eruditus sum, quasi juvenculus indomitus: converte me, et convertar, quia tu Dominus Deus meus.
-19 Postquam enim convertisti me, egi pœnitentiam: et postquam ostendisti mihi, percussi femur meum. Confusus sum, et erubui, quoniam sustinui opprobrium adolescentiae meae.
-20 Si filius honorabilis mihi Ephraim, si puer delicatus! quia ex quo locutus sum de eo, adhuc recordabor ejus. Idcirco conturbata sunt viscera mea super eum: miserans miserebor ejus, ait Dominus.
+19 Postquam enim convertisti me, egi pœnitentiam: et postquam ostendisti mihi, percussi femur meum. Confusus sum, et erubui, quoniam sustinui opprobrium adolescentiæ meæ.
+20 Si filius honorabilis mihi Ephraim, si puer delicatus! quia ex quo locutus sum de eo, adhuc recordabor ejus. 
 
 [Responsory2]
 R. Sub altare Dei audivi voces occisorum dicentium:
@@ -84,8 +87,7 @@ sustinete modicum tempus, donec impleatur numerus fratrum vestrorum.
 !Jer 31:21-23
 21 Statue tibi speculam; pone tibi amaritudines; dirige cor tuum in viam rectam in qua ambulasti: revertere, virgo Israël, revertere ad civitates tuas istas.
 22 Usquequo deliciis dissolveris, filia vaga? quia creavit Dominus novum super terram: femina circumdabit virum.
-23 Haec dicit Dominus exercituum, Deus Israël: Adhuc dicent verbum istud in terra Juda et in urbibus ejus, cum convertero captivitatem eorum: Benedicat tibi Dominus, pulchritudo justitiae, mons sanctus:
-
+23 Haec dicit Dominus exercituum, Deus Israël: Adhuc dicent verbum istud in terra Juda et in urbibus ejus, cum convertero captivitatem eorum: Benedicat tibi Dominus, pulchritudo justitiae, mons sanctus.
 
 [Responsory3]
 R. Adoraverunt viventem in saecula saeculorum,
@@ -125,7 +127,7 @@ praesentis acceperint.
 [Responsory5]
 R. Isti sunt sancti, qui passi sunt propter te Domine: vindica eos,
 * Quia clamant ad te quotidie.
-V. Vindica, Domine, sanguinem sanctorum tuorum, qui effusus est
+V. Vindica, Domine, sanguinem sanctorum tuorum, qui effusus est.
 R. Quia clamant ad te quotidie.
 
 [Lectio6]
@@ -236,18 +238,26 @@ In sempiterna saecula.
 Amen.
 
 [Versum 2]
-V. Herodes iratus occidit multos pueros.
-R. In Bethlehem Judae civitate David.
+@:Versum 1
 
 [Ant 2]
-Hi sunt * qui cum mulieribus non sunt coinquinati: virgines enim sunt, et~
-sequuntur Agnum, quocumque ierit.
+@:Ant 1
 
 [Commemoratio 2]
 @Sancti/12-25:Octava
 
 [Commemoratio 3]
 @Sancti/12-25:Octava
+
+[Commemoratio 2] (rubrica trident)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+
+[Commemoratio 3] (rubrica trident)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
 
 [Lectio Prima]
 !Apo 14:4-5
@@ -267,23 +277,14 @@ sequuntur Agnum, quocumque ierit.
 $Deo gratias
 
 [Capitulum Nona]
-!Apo 14:4-5
-v. Hi empti sunt ex hominibus primitiae Deo et Agno, et in ore ipsorum non est~
-inventum mendacium: sine macula enim sunt ante thronum Dei.
+@:Lectio Prima
 $Deo gratias
 
 [Ant Vespera 3]
-Tecum principium * in die virtutis tuae, in splendoribus sanctorum, ex utero ante luciferum genui te.;;109
-Redemptionem * misit Dominus populo suo: mandavit in aeternum testamentum suum.;;110
-Exortum est * in tenebris lumen rectis corde: misericors, et miserator, et justus Dominus.;;111
-Apud Dominum * misericordia, et copiosa apud eum redemptio.;;129
-De fructu * ventris tui ponam super sedem tuam.;;131 
+@Sancti/12-25
 
 [Capitulum Vespera]
-!Apo 14:1
-v. Vidi supra montem Sion Agnum stantem, et cum eo centum quadraginta quatuor~
-millia, habentes nomen ejus, et nomen Patris ejus scriptum in frontibus suis.
-$Deo gratias
+@:Capitulum Tertia
 
 [Hymnus Vespera]
 @Sancti/12-28:Hymnus Laudes
@@ -293,28 +294,20 @@ V. Sub throno Dei omnes sancti clamant.
 R. Vindica sanguinem nostrum Deus noster.
 
 [Ant 3]
-Innocentes * pro Christo infantes occisi sunt, ab iniquo rege lactentes~
+Innocentes pro Christo * infantes occisi sunt, ab iniquo rege lactentes~
 interfecti sunt: ipsum sequuntur Agnum sine macula, et dicunt semper: Gloria~
 tibi, Domine.
 
 [Octava 2]
-!Commemoratio Octavae Ss. Innocentium.
+!Commemoratio Octavae Ss. Innocentium
 Ant. Hi sunt, qui cum mulieribus non sunt coinquinati: virgines enim sunt, et sequuntur Agnum quocumque ierit.
 _
 V. Herodes iratus occidit multos pueros.
 R. In Bethlehem Judae, civitate David.
 _
-v. Oremus
+$Oremus
 Deus, cujus hodierna die praeconium Innocentes Martyres non loquendo, sed moriendo confessi sunt: omnia in nobis vitiorum mala mortifica; ut fidem tuam, quam lingua nostra loquitur, etiam moribus vita fateatur.
 $Per Dominum
 
 [Octava 3]
-!Commemoratio Octavae Ss. Innocentium.
-Ant. Hi sunt, qui cum mulieribus non sunt coinquinati: virgines enim sunt, et sequuntur Agnum quocumque ierit.
-_
-V. Herodes iratus occidit multos pueros.
-R. In Bethlehem Judae, civitate David.
-_
-v. Oremus
-Deus, cujus hodierna die praeconium Innocentes Martyres non loquendo, sed moriendo confessi sunt: omnia in nobis vitiorum mala mortifica; ut fidem tuam, quam lingua nostra loquitur, etiam moribus vita fateatur.
-$Per Dominum
+@:Octava 2

@@ -534,7 +534,7 @@ sub setcell {
 	    "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=80%></TD></TR>\n";
       }
 	} 
-    print "<TD $background VALIGN=TOP WIDTH=$width% ID=L$searchind>"; 
+    print "<TD $background VALIGN=TOP WIDTH=$width%". ($lang1 ne $lang?"":" ID=L$searchind"). ">";
     topnext_cell($lang);
     if ($text =~ /%(.*?)%/) {    
       my $q = $1;    
@@ -583,12 +583,12 @@ sub topnext_cell {
 sub topnext {
   if ($officium =~ /Pofficium/i) {return:}
   my $lang = shift;
-  my $str = "<FONT SIZE=1 COLOR=green><DIV ALIGN=right>";
+  my $str = "<DIV ALIGN=right><FONT SIZE=1 COLOR=green>";
   if (columnsel($lang)) {
     $str .= "<A HREF=# onclick=\"setsearch($searchind);\">Top</A>&nbsp;&nbsp;";
     $str .= "<A HREF=# onclick=\"setsearch($searchind+1);\">Next</A>";
   } else {$str .= "$searchind";}
-  $str .=  "</DIV></FONT>\n";
+  $str .=  "</FONT></DIV>\n";
   return $str;
 }
     

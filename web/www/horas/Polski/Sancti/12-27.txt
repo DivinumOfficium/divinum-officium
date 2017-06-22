@@ -1,8 +1,8 @@
 [Rank]
-S. Joannis Apostoli et Evangelistae;;Duplex II Class cum octava simplici;;5.3;;ex C1
+Św. Jana Apostoła i Ewangelisty;;Duplex II Class cum octava simplici;;5.3;;ex C1
 
 [Rank1960]
-S. Joannis Apostoli et Evangelistae;;Duplex II class;;5;;ex C1
+Św. Jana Apostoła i Ewangelisty;;Duplex II class;;5;;ex C1
 
 [Rule]
 ex C1;
@@ -101,7 +101,7 @@ Wielce czcigodny jest * błogosławiony Jan, który przy wieczerzy leżał na pi
 Ten jest uczeń, * który daje świadectwo o tem: a wiemy, iż prawdziwe jest świadectwo jego.
 To jest uczeń mój: * chcę, aby został aż przyjdę.
 Są z tych, co tu stoją, * którzy nie ukuszą śmierci, aż ujrzą Syna człowieczego, w królestwie swojem. 
-Ecce puer meus * electus, quem elegi, posui super eum Spiritum meum.
+Oto sługa mój * wybrany, któregom wybrał, położyłem nad nim Ducha mego.
 
 [Capitulum Laudes]
 !Syr 15:1-2
@@ -121,14 +121,20 @@ Ten jest Jan, * który położył się był przy wieczerzy na piersiach Jezusowy
 [Commemoratio 3]
 @Sancti/12-25:Octava
 
+[Commemoratio 2] (rubrica trident)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+
+[Commemoratio 3] (rubrica trident)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+
 [Lectio Prima]
 !Syr 15:5
 v. W pośrzód kościoła otworzy usta jego, i napełni go duchem mądrości i rozumienia, i szatą chwały przyodzieje go.
 
 [Capitulum Tertia]
-!Syr 15:1-2
-v. Kto się Boga boi, będzie czynił dobrze, a kto się trzyma sprawiedliwości, dostanie jej; i zabieży mu jako uczciwa matka.
-$Deo gratias
+@:Capitulum Laudes
 
 [Capitulum Sexta]
 !Syr 15:3
@@ -136,31 +142,23 @@ v. Nakarmi go chlebem żywota i rozumienia a wodą mądrości zbawiennej napoi g
 $Deo gratias
 
 [Capitulum Nona]
-!Sir 15:5
-v. W pośrzód kościoła otworzy usta jego, i napełni go duchem mądrości i rozumienia, i szatą chwały przyodzieje go.
+@:Lectio Prima
 $Deo gratias
 
 [Ant Vespera 3]
-Przy tobie przodkowanie * w dzień możności twojej w jasnościach świętości: z żywota przed jutrzenką zrodziłem cię.;;109
-Posłał odkupienie * ludowi swemu i postanowił na wieki testament swój.;;110
-Weszła * w ciemnościach światłość prawym. Miłościwy, miłosierny i sprawiedliwy Pan.;;111
-U Pana * miłosierdzie i obfite u Niego odkupienie.;;129
-Z owocu * żywota Twego posadzę na stolicy Twojej.;;131
+@Sancti/12-25:Ant Vespera 3
 
 [Capitulum Vespera]
-!Syr 15:1-2
-v. Kto się Boga boi, będzie czynił dobrze, a kto się trzyma sprawiedliwości, dostanie jej; i zabieży mu jako uczciwa matka.
-$Deo gratias
+@:Capitulum Laudes
 
 [Versum 3]
-V. Wielce czcigodny jest błogosławiony Jan.
-R. Który przy wieczerzy leżał na piersiach Jezusowych.
+@:Versum 1
 
 [Ant 3]
 Gruchnęła * mowa między uczniami, iż on uczeń nie umrze: lecz nie rzekł Jezus: Nie umrze, ale: Tak chcę, aby został aż przyjdę.
 
 [Octava 2]
-!Wspomnienie oktawy św Jana
+!Wspominamy oktawę św Jana
 Ant. Ten jest Jan, który położył się był przy wieczerzy na piersiach Jezusowych, szczęśliwy Apostoł, któremu objawione były tajemnice niebieskie.
 _
 V. Ten jest uczeń, który daje świadectwo o tem.
@@ -171,7 +169,7 @@ Panie oświecać zawsze Kościói Twój święty, aby, poznawszy naukę błogos�
 $Per Dominum
 
 [Octava 3]
-!Wspomnienie oktawy św. Jana
+!Wspominamy oktawę św. Jana
 Ant. Gruchnęła * mowa między uczniami, iż on uczeń nie umrze: lecz nie rzekł Jezus: Nie umrze, ale: Tak chcę, aby został aż przyjdę.
 _
 V. Wielce czcigodny jest błogosławiony Jan.

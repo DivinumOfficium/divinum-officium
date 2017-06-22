@@ -69,34 +69,10 @@ Dico vobis quia Angeli eórum in cælis semper vident fáciem Patris mei.  Supra
 &teDeum
 
 [Responsory Tertia]
-R.br. Stetit Angelus * juxta aram templi.
-R. Stetit Angelus * juxta aram templi.
-V. Habens thuribulum aureum in manu sua.
-R. Juxta aram templi.
-&Gloria
-R. Stetit Angelus * juxta aram templi.
-_
-V. Ascendit fumus aromatum in conspectu Domini.
-R. De manu Angeli.
+@Sancti/05-08::s/, allelu.a//g s/(juxta aram templi,? \* )?Allelu.a/* Juxta aram templi/g s/\. \*/./
 
 [Responsory Sexta]
-R.br. Ascendit fumus aromatum * in conspectu Domini.
-R. Ascendit fumus aromatum * in conspectu Domini.
-V. De manu Angeli.
-R. In conspectu Domini.
-&Gloria
-R. Ascendit fumus aromatum * in conspectu Domini.
-_
-V. In conspectu Angelorum psallam tibi, Deus meus.
-R. Adorabo ad templum sanctum tuum, et confitebor nomini tuo.
+@Sancti/05-08::s/, allelu.a//g s/(in conspectu Domini,? \* )?Allelu.a/* In conspectu Domini/g s/\. \*/./
 
 [Responsory Nona]
-R.br. In conspectu Angelorum * psallam tibi, Deus meus.
-R. In conspectu Angelorum * psallam tibi, Deus meus.
-V. Adorabo ad templum sanctum tuum, et confitebor nomini tuo.
-R. Psallam tibi, Deus meus.
-&Gloria
-R. In conspectu Angelorum * psallam tibi, Deus meus.
-_
-V. Adorate Deum.
-R. Omnes Angeli ejus.
+@Sancti/05-08::s/, allelu.a//g s/(psallam tibi, Deus meus,? \*)? Allelu.a/ * Psallam tibi, Deus meus/g s/\. \*/./
