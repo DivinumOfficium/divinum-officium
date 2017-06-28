@@ -179,11 +179,7 @@ Thesaurus autem cæleste est desidérium; ager vero, in quo thesáurus abscóndi
 &teDeum
 
 [Ant Laudes]
-Dum esset Rex * in accubitu suo, nardus mea dedit odórem suavitátis.
-In odórem * unguentórum tuórum currimus: adolescentulus dilexérunt te nimis.
-Jam hiems tránsiit, * imber ábiit et recéssit: surge, amica mea, et veni.
-Veni, electa mea, * et ponam in te thronum meum, allelúja.
-Ista est speciósa * inter filias Jerusalem.
+@:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
 @:Capitulum Vespera
