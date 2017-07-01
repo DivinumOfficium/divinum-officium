@@ -1,17 +1,4 @@
-[Rank]
-S. Luciae Virginis et Martyris;;Duplex;;3;;vide C6b
-
-[Rule]
-vide C6b;
-
-[Ant Vespera]
-@Sancti/12-13:Ant Vespera
-
-[Ant 1]
-@Sancti/12-13:Ant 1
-
-[Oratio]
-@Sancti/12-13:Oratio
+@Sancti/12-13
 
 [Responsory1]
 @Sancti/12-13:Responsory4
@@ -21,15 +8,3 @@ vide C6b;
 
 [Responsory3]
 @Sancti/12-13:Responsory6
-
-[Lectio94]
-@Sancti/12-13:Lectio94
-
-[Ant Laudes]
-@Sancti/12-13:Ant Laudes
-
-[Ant 2]
-@Sancti/12-13:Ant 2
-
-[Ant 3]
-@Sancti/12-13:Ant 3

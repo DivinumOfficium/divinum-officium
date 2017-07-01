@@ -1,0 +1,64 @@
+[Rank]
+S. Hilarii Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[RankNewcal]
+S. Hilarii Episcopi Confessoris Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
+
+[Name]
+Hilari
+
+[Rule]
+vide C4a;
+Gloria
+CredoDa
+
+[Comment]
+# 14 I – Św. Hilarego, Biskupa, Wyznawcy i Doktora Kościoła
+! 3 klasy
+! Szaty białe
+Św. Hilary, biskup Poiters, nieustannie gromił herezję ariańską w swoich kazaniach i przemówieniach synodalnych. Cesarz Konstancjusz, zwolennik arianizmu, dwukrotnie skazywał go na wygnanie. Oprócz innych dzieł św. Hilary napisał «Dwanaście ksiąg o Trójcy Przenajświętszej». Zmarł 13 stycznia 367 roku.
+
+Wspomnienie świętego Feliksa, kapłana i męczennika. Św. Feliks żył w Noli (południowe Włochy). W III wieku okrutnie prześladowany za wiarę otrzymał tytuł męczennika. Jego grób zasłynął cudami i stał się celem pielgrzymek. Św. Paulin jemu przypisuje swoje nawrócenie.
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Boże, Tyś dał ludowi Swemu świętego Hilarego za pośrednika zbawienia wiecznego, spraw, prosimy Cię, abyśmy mogli mieć orędownikiem w niebie tego, który na ziemi był dla nas mistrzem życia.
+$Per Dominum.
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+@Commune/C4a:Secreta
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+@Commune/C4a:Postcommunio
+
+[Commemoratio Oratio]
+!Wspomnienie św. Feliksa, Kapłana i Męczennika
+Prosimy Cię, wszechmogący Boże, niechaj przykłady Twoich Świętych zachęcą nas do lepszego życia, abyśmy obchodząc ich święta naśladowali ich czyny.
+$Per Dominum
+
+[Commemoratio Secreta]
+!Wspomnienie św. Feliksa, Kapłana i Męczennika
+Prosimy Cię, Panie, przyjmij łaskawie przez zasługi św. Feliksa, Twego Męczennika, ofiarę, którą Ci składamy, i spraw, aby się stała dla nas nieustanną pomocą.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+!Wspomnienie św. Feliksa, Kapłana i Męczennika
+Nasyceni zbawiennym Sakramentem prosimy Cię, Panie, aby wspierały nas modły św. Feliksa, Męczennika Twego, którego uroczystość obchodzimy.
+$Per Dominum

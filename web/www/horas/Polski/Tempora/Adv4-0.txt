@@ -1,8 +1,8 @@
 [Rank]
-Dominica IV Adventus;;Semiduplex;;5.6
+IV Niedziela Adwentu;;Semiduplex;;5.6
 
 [Rank1960]
-Dominica IV Adventus;;Semiduplex;;6
+IV Niedziela Adwentu;;Semiduplex;;6
 
 [Rule]
 9 lectiones
@@ -70,14 +70,10 @@ R. Jego wiek nie ma końca.
 @:Ant Vespera
 
 [Capitulum Laudes]
-!1Kor 4:1-2
-v. Bracia, tak niechaj człowiek o	nas rozumie, jako o sługach Chrystusowych i szafarzach tajemnic Bożych. To już szukają między szafarzami, aby który znaleziony był wiernym.
-$Deo gratias
+@:Capitulum Vespera
 
 [Capitulum Tertia]
-!1Kor 4:1-2
-v. Bracia, tak niechaj człowiek o	nas rozumie, jako o sługach Chrystusowych i szafarzach tajemnic Bożych. To już szukają między szafarzami, aby który znaleziony był wiernym.
-$Deo gratias
+@:Capitulum Vespera
 
 [Capitulum Sexta]
 !1Kor 4:3

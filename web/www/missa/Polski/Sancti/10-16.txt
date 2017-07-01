@@ -1,0 +1,40 @@
+[Rank]
+S. Hedwigis Viduae;;Semiduplex;;2;;vide C7a
+
+[Rule]
+vide C7a
+Gloria
+
+[Comment]
+# 16 X – Św. Jadwigi, Wdowy
+! 3 klasy
+! Szaty białe
+Św. Jadwiga urodziła się na zamku Andechs w Bawarii około roku 1174. Mając dwanaście lat, poślubiła księcia polskiego Henryka Brodatego, z którym miała dwóch synów i trzy córki. Potem oboje małżonkowie związali się ślubem doskonałej czystości i trzydzieści następnych lat przeżyli wstrzemięźliwie. Jadwiga przeżyła śmierć męża i dzieci, z wyjątkiem jednej córki. Ukochany syn, Henryk Pobożny, poległ w bitwie z Tatarami pod Legnica. Ostatnie lata swojego życia spędziła św. Jadwiga w ufundowanym przez siebie klasztorze Cysterek w Trzebnicy, gdzie jej córka Gertruda była przełożona. Zmarła 15 października 1243 roku. Relikwie spoczywają w Trzebnicy. Śląsk czci ją jako swoją Patronkę.
+
+[Introitus]
+@Commune/C7a:Introitus
+
+[Oratio]
+Boże, który św. Jadwigę pobudziłeś do przejścia całym sercem od przepychu światowego do pokornego naśladowania Krzyża Twego, spraw, abyśmy przez jej zasługi i za jej przykładem nauczyli się deptać przemijające rozkosze świata i obejmując Krzyż Twój zwyciężać wszelkie przeciwności: 
+$Qui vivis
+
+[Lectio]
+@Commune/C7a:Lectio
+
+[Graduale]
+@Commune/C7a:Graduale
+
+[Evangelium]
+@Commune/C7a:Evangelium
+
+[Offertorium]
+@Commune/C7a:Offertorium
+
+[Secreta]
+@Commune/C7a:Secreta
+
+[Communio]
+@Commune/C7a:Communio
+
+[Postcommunio]
+@Commune/C7a:Postcommunio

@@ -1,0 +1,43 @@
+[Rank]
+S. Gertrudis Virginis;;Duplex;;3;;vide C6b
+
+[Rule]
+vide C6b;
+Gloria
+
+[Comment]
+# 16 XI – Św. Gertrudy, Dziewicy
+! 3 klasy
+! Szaty białe
+Św. Gertruda urodziła się w roku 1256. Gdy miała 5 lat, oddano ją na wychowanie do klasztoru Cysterek w Helfcie. Spędziła tam całe życie, najpierw jako uczennica, a później jako mniszka. Doszła do wysokiego stopnia zjednoczenia z Bogiem. Jej życie wewnętrzne kon­centrowało się koło tajemnicy miłości Bożej. Była wielką czcicielką Serca Jezusowego. Swoje modlitwy i objawienia spisała w pozostawio­nych książkach. Zmarła w roku 1302.
+
+[Introitus]
+@Commune/C6b:Introitus
+
+[Oratio]
+Boże, Tyś sobie zgotował miłe przebywanie w sercu świętej Dziewicy Gertrudy; przez jej zasługi i wstawiennictwo obmyj ła­skawie zmazy naszego serca i daj nam radosne z nią obcowanie.
+$Per Dominum
+
+[Lectio]
+@Commune/C6b:Lectio
+
+[Graduale]
+@Commune/C6b:Graduale
+
+[Evangelium]
+@Commune/C6b:Evangelium
+
+[Offertorium]
+@Commune/C6b:Offertorium
+
+[Secreta]
+Przyjmij , Panie, ofiarę , która lud Tobie oddany składa ku czci Twoich Świętych , uznając, że dzięki ich zasługom doznał pomocy w ucisku.
+$Per eumdem
+
+[Communio]
+@Commune/C6b:Communio
+
+[Postcommunio]
+Nasyciłeś, Panie, rodzinę Twoją świętymi darami: wzmacniaj nas stale za wstawiennictwem tej, której uroczystość obchodzimy. 
+$Per Dominum
+

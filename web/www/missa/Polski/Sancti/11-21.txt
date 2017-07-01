@@ -1,0 +1,45 @@
+[Rank]
+In Presentatione Beatae Mariae Virginis;;Duplex majus;;4;;ex C11
+
+[Rank1960]
+In Presentatione Beatae Mariae Virginis;;Duplex;;3;;vide C11
+
+[Rule]
+ex C11;
+Gloria
+Credo
+Prefatio=Mariae=Presentatione
+
+[Comment]
+# 21 XI – Ofiarowanie N. M. P.
+! 3 klasy
+! Szaty białe
+Według tradycji, wywodzącej się z apokryfów, Maryja jako dziecko została przedstawiona w świątyni jerozolimskiej i przy niej się wy­chowywała. Święto to obchodzono na Wschodzie już w VII wieku w rocznicę poświęcenia Kościoła Matki Bożej w Jerozolimie. W XIV wieku święto zostało przyjęte przez Kościół Zachodni.
+
+[Introitus]
+@Tempora/C10:Introitus
+
+[Oratio]
+Boże, dzisiaj z Twojej woli Najświętszą Maryję Pannę, mie­szkanie Ducha Świętego, stawio­no w świątyni; racz sprawić, byśmy za jej przyczyną stali się godni stanąć w świątyni Twojej chwały.
+$Per Dominum ejusdem
+
+[Lectio]
+@Tempora/C10:Lectio
+
+[Graduale]
+@Tempora/C10:Graduale
+
+[Evangelium]
+@Tempora/C10:Evangelium
+
+[Offertorium]
+@Tempora/C10:Offertorium
+
+[Secreta]
+@Tempora/C10:Secreta
+
+[Communio]
+@Tempora/C10:Communio
+
+[Postcommunio]
+@Tempora/C10:Postcommunio

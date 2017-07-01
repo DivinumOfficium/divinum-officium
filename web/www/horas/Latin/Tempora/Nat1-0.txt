@@ -1,14 +1,15 @@
 [Rank]
 Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
 
-[Rank] (rubrica 1960 aut rubrica innovata)
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5.5;;ex Sancti/12-25
+[Rank1960]
+Dominica Infra Octavam Nativitatis;;Duplex II class;;5.5;;ex Sancti/12-25
 
 [Rule]
 9 lectiones
 ex Sancti/12-25
 Lectio1 Sancti
 Psalmi Dominica
+no commemoratio (rubrica 1960)
 
 [Ant Vespera]
 @Sancti/12-25:Ant Vespera 3
@@ -26,7 +27,7 @@ R. Et habitavit in nobis, alleluia.
 Dum medium silentium * tenerent omnia, et nox in suo cursu medium iter perageret, omnipotens sermo tuus, Domine, a regalibus sedibus venit, alleluia.
 
 [Oratio]
-Omnipotens sempiterne Deus, dirige actus nostros in beneplacito tuo: ut in nomine dilecti Filii tui mereamur bonis operibus abundare.
+Omnípotens sempitérne Deus, dírige actus nostros in beneplácito tuo: ut in nómine dilécti Fílii tui mereámur bonis opéribus abundáre:
 $Qui tecum
 
 [Commemoratio 2] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
@@ -47,21 +48,13 @@ Excedit quidem, dilectissimi, multumque supereminet humani eloquii facultatem di
 Gaudeamus igitur, quod ad eloquendum tantae misericordiae sacramentum impares sumus: et cum salutis nostrae altitudinem promere non valeamus, sentiamus nobis bonum esse, quod vincimur. Nemo enim ad cognitionem veritatis magis propinquat, quam qui intelligit in rebus divinis, etiam si multum proficiat, semper sibi superesse quod quaerat Nam qui se ad id, in quod tendit, pervenisse praesumit, non quaesita reperit, sed in inquisitione deficit.
 
 [Responsory5]
-R. Sancta et immaculata virginitas, quibus te laudibus efferam, nescio:
-* Quia quem caeli capere non poterant, tuo gremio contulisti.
-V. Benedicta tu in mulieribus, et benedictus fructus ventris tui.
-R. Quia quem caeli capere non poterant, tuo gremio contulisti.
+@Sancti/12-25:Responsory6
 
 [Lectio6]
 Ne autem infirmitatis nostrae perturbemur angustiis, evangelicae nos et propheticae adjuvant voces: quibus ita accendimur, et docemur, ut nos Nativitatem Domini, qua Verbum caro factum est, non tam praeteritam recolere, quam praesentem videamur inspicere. Quod enim pastoribus pro gregum suorum custodia vigilantibus nuntiavit Angelus etiam nostrum implevit auditum: et ideo Dominicis ovibus praesumus, quia verba divinitus edita cordis aure servamus: tamquam et in hodierna festivitate dicatur: Evangelizo vobis gaudium magnum, quod erit omni populo, quia natus est vobis hodie Salvator, qui est Christus Dominus, in civitate David.
 
 [Responsory6]
-R. Beata viscera Mariae Virginis, quae portaverunt aeterni Patris Filium: et beata ubera, quae lactaverunt Christum Dominum:
-* Qui hodie pro salute mundi de Virgine nasci dignatus est.
-V. Dies sanctificatus illuxit nobis: venite Gentes, et adorate Dominum
-R. Qui hodie pro salute mundi de Virgine nasci dignatus est.
-&Gloria
-R. Qui hodie pro salute mundi de Virgine nasci dignatus est.
+@Sancti/12-25:Responsory7
 
 [Lectio7]
 Lectio sancti Evangelii secundum Lucam.
@@ -73,10 +66,7 @@ Homilia sancti Ambrosii Episcopi.
 Vides uberem in omnes gratiam, Domini generatione diffusam et prophetiam incredulis negatam esse, non justis. Ecce et Simeon prophetat, in ruinam et resurrectionem plurimorum venisse Dominum Jesum Christum, ut justorum, iniquorumque merita discernat; et pro nostrorum qualitate factorum, judex verus et justus aut supplicia decernat, aut praemia.
 
 [Responsory7]
-R. Verbum caro factum est, et habitavit in nobis:
-* Et vidimus gloriam ejus, gloriam quasi Unigeniti a Patre, plenum gratiae et veritatis.
-V. Omnia per ipsum facta sunt, et sine ipso factum est nihil.
-R. Et vidimus gloriam ejus, gloriam quasi Unigeniti a Patre, plenum gratiae et veritatis.
+@Sancti/12-25:Responsory8
 
 [Lectio8]
 Et tuam ipsius animam pertransibit gladius. Nec littera, nec historia docet, ex hac vita Mariam corporalis necis passione migrasse. Non enim anima, sed corpus materiali gladio transverberatur. Et ideo prudentiam Mariae haud ignaram mysterii caelestis ostendit. Vivum enim verbum Dei, et validum, et acutius omni gladio acutissimo, penetrans usque ad divisionem animae et spiritus, artuum quoque et medullarum, cogitationes cordis et secreta scrutatur animorum, quia nuda et aperta sunt omnia Dei Filio, quem conscientiae secreta non fallunt.

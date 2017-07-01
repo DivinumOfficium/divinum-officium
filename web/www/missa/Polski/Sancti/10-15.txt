@@ -1,0 +1,41 @@
+[Rank]
+S. Teresiae Virginis;;Duplex;;3;;vide C6b
+
+[Rule]
+vide C6b;
+Gloria
+
+[Comment]
+# 15 X – Św. Teresy z Avili, Dziewicy
+! 3 klasy
+! Szaty białe
+Św. Teresa urodziła się W Avili w roku 1515. jako dziecko marzyła o męczeństwie za wiarę. W dwudziestym roku życia wstąpiła do klasztoru Karmelitanek. Idąc za natchnieniem Bożym przeprowadziła reformę swojego zakonu fundując 32 klasztory. Z pomocą św. Jana od Krzyża przedsięwzięła również reformę Karmelitów. Nową gałąź zakonu nazwano Karmelitami Bosymi. W oparciu o swoje osobiste doświadczenia św. Teresa napisała szereg dzieł, które są perłami literatury mistycznej. Zmarła 15 października 1532 roku.
+
+[Introitus]
+@Commune/C6b:Introitus
+
+[Oratio]
+Wysłuchaj nas, Boże, nasz Zbawicielu, i spraw, abyśmy radując się z uroczystości świętej Twojej Dziewicy Teresy, nabyli uczucia synowskiego oddania.
+$Per Dominum
+
+[Lectio]
+@Commune/C6b:Lectio
+
+[Graduale]
+@Commune/C6b:Graduale
+
+[Evangelium]
+@Commune/C6b:Evangelium
+
+[Offertorium]
+@Commune/C6b:Offertorium
+
+[Secreta]
+Wysłuchaj nas, Boże, nasz Zbawicielu, i spraw, abyśmy radując się z uroczystości świętej Teresy, Twojej Dziewicy, karmili się strawą jej niebieskiej nauki i nabyli uczucia synowskiego oddania.
+$Per Dominum
+
+[Communio]
+@Commune/C6b:Communio
+
+[Postcommunio]
+@Commune/C6b:Postcommunio

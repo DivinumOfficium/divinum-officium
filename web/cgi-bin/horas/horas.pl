@@ -158,7 +158,9 @@ sub resolve_refs {
     else {return "";}
   }
   if ($t[0] =~ $omit_regexp) {$t[0] =~ s/^\s*\#/\!\!\!/;}
-  else {$t[0] =~ s/^\s*\#/\!\!/;}
+  else {
+    $t[0] =~ s/^\s*(\#.*)({.*})?\s*$/'!!' . substr(translate($1, $lang), 1) . $2/e;
+  }
 
   my @resolved_lines;  # Array of blocks expanded from lines.
   my $prelude = '';    # Preceding continued lines.
@@ -289,6 +291,14 @@ sub Alleluia : ScriptFunc {
   return $text;
 }
 
+sub Alleluia_ant {
+  my ($lang, $full, $ucase) = @_;
+  my $s =  translate('Alleluia', $lang).', * '.translate('Alleluia', $lang).', '.translate('Alleluia', $lang).'.';
+  $s =~ s/,.*// if (!$full && $duplex < 3 && $version !~ /1960/);
+  $s =~ s/ ./\L$&/g unless $ucase;
+  return $s;
+}
+
 #*** Septuagesima_vesp
 # Determines whether we're saying first Vespers of Septuagesima Sunday.
 sub Septuagesima_vesp
@@ -381,7 +391,7 @@ sub Benedicamus_Domino : ScriptFunc {
   if (Septuagesima_vesp()) {$text = $prayers{$lang}->{'Benedicamus Domino1'};}
   if ($dayname[0] !~ /Pasc0/i || $hora !~ /(Laudes|Vespera)/i) {return $text;}
   my @text = split("\n", $text);       
-  return "$text[0] Alleluia, alleluia.\n$text[1] Alleluia, alleluia.\n";
+  return "$text[0] $prayers{$lang}->{'Alleluia Duplex'}\n$text[1] $prayers{$lang}->{'Alleluia Duplex'}\n";
 }
 
 #*** antiphona_finalis
@@ -450,12 +460,12 @@ sub psalm : ScriptFunc {
   # special third-nocturn use on the day of the Epiphany.
   my $fname = ($psnum == 94) ? 'Psalterium/Invitatorium1.txt' : "$psalmfolder/Psalm$psnum.txt";
   
+  if ($version =~ /1960/) {$fname =~ s/Psalm226/Psalm226r/;}
+  if ($version =~ /1960/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i)
+    {$fname =~ s/Psalm88/Psalm88r/;}
+  if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6)
+    {$fname =~ s/Psalm88/Psalm88a/;}
   $fname = checkfile($lang, $fname);
-  if ($version =~ /1960/ && $fname =~ /226/) {$fname =~ s/226/226r/;}
-  if ($version =~ /1960/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i && $fname =~ /88/)
-    {$fname =~ s/88/88r/;}
-  if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6 && $fname =~ /88/)
-    {$fname =~ s/88/88a/;}
     
   @lines = do_read($fname);
 
@@ -1110,7 +1120,7 @@ sub luna {
   my $edays = date_to_days(1,0,2008);
   my $lunarmonth = 29.53059;
   my @months = ('January', 'February', 'March', 'April', 'May', 'June', 'July',
-  'Augustus', 'September', 'October', 'November', 'December');
+  'August', 'September', 'October', 'November', 'December');
   my @ordinals = ('prima', 'secunda', 'tertia', 'quarta', 'quinta', 'sexta', 'septima', 'octava', 'nona', 'decima',
    'undecima', 'duodecima', 'tertia decima', 'quarta decima', 'quinta decima', 'sexta decima', 'septima decima',
    'duodevicesima', 'undevicesima', 'vicesima', 'vicesima prima', 'vicesima secunda', 'vicesima tertia', 
@@ -1127,7 +1137,7 @@ sub luna {
 
   $day = $day + 0; 
   if ($lang =~ /Latin/i) {return ("Luna $ordinals[$dist-1] Anno $year\n", ' '); }
-  else {return ("$months[$month - 1] $day$sfx1 anno Domini $year. The $dist$sfx2 Day of Moon.", $months[$month-1]);}
+  else {return ("$months[$month - 1] $day$sfx1 anno Domini $year. The $dist$sfx2 day of the Moon.", $months[$month-1]);}
 }
 
 #*** laudes()
@@ -1262,7 +1272,7 @@ sub ensure_double_alleluia(\$$)
   unless (depunct($$text) =~ /$alleluia_depunct\s*$/i)
   {
     # Add a double 'alleluia' and move the asterisk.
-    $$text =~ s/\s*\*\s*/ /;
+    $$text =~ s/\s*\*\s*(.)/ \l\1/;
     $$text =~ s/\W*?(\s*)$/, * $alleluia$1/;
   }
 }
@@ -1330,6 +1340,7 @@ sub postprocess_short_resp(\@$)
 
     for (@$capit)
     {
+
       if (/^R\.br\./ ... (/^R\./ && ++$rlines >= 3))
       {
         # Short responsory proper.

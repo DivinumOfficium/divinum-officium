@@ -1,3 +1,5 @@
+@Commune/C2
+
 [Name]
 Commune unius Martyris Tempore Paschali
 
@@ -13,17 +15,11 @@ Psalm5 Vespera3=115
 [Capitulum Vespera]
 @Commune/C1p
 
-[Hymnus Vespera]
-@Commune/C2:Hymnus Vespera
-
 [Versum 1]
 @Commune/C1p
 
 [Ant 1]
 @Commune/C1p
-
-[Oratio]
-@Commune/C2
 
 [Invit]
 Es mögen jubeln im Herrn die Heiligen, * Alleluja.
@@ -48,20 +44,11 @@ Ununterbrochnes Licht * scheint deinen Schützlingen, o Herr, auf ewige Zeiten, 
 V. Ewige Freude strömt auf sie herunter, alleluja.
 R. Jubel und Frohlocken erhalten sie als Besitz, alleluja.
 
-[Lectio1]
-@Commune/C2
-
 [Responsory1]
 @Commune/C1p
 
-[Lectio2]
-@Commune/C2
-
 [Responsory2]
 @Commune/C1p
-
-[Lectio3]
-@Commune/C2
 
 [Responsory3]
 @Commune/C1p
@@ -117,9 +104,6 @@ Ego sum, inquit, vitis vera: et Pater meus agrícola est. Numquid unum sunt agr�
 [Capitulum Laudes]
 @Commune/C1p:Capitulum Vespera
 
-[Hymnus Laudes]
-@Commune/C2:Hymnus Laudes
-
 [Versum 2]
 @Commune/C1p
 
@@ -161,11 +145,5 @@ Quibus ego vos láudibus pr?dicem, fortíssimi Mártyres? robur péctoris vestri
 [Lectio51]
 Vidit admírans præséntium multitúdo cæléste certámen, certámen Dei, certámen spiritále, pr?lium Christi: stetísse servos ejus voce líbera, mente incorrúpta, virtúte divína, telis quidem sæculáribus nudos, sed armis fídei ardéntis armátos. Stetérunt torti torquéntibus fortióres: et pulsántes ac laniántes úngulas, pulsáta ac laniáta membra vicérunt. Inexpugnábilem fidem superáre non pótuit s?viens diu plaga repetíta, quamvis rupta compáge víscerum torqueréntur in servis Dei jam non membra, sed vúlnera. Fluébat sanguis, qui incéndium persecutiónis exstíngueret, qui flammas et ignes gehénnæ glorióso cruóre sopíret.
 
-[Responsory51]
-@Commune/C2
-
 [Lectio61]
 O quale illud fuit spectáculum Dómino, quam sublíme, quam magnum, quam Dei óculis sacraménto ac devotióne mílitis ejus accéptum: sicut scriptum est in Psalmis, Spíritu Sancto loquénte ad nos páriter et monénte: Pretiósa est in conspéctu Dómini mors justórum ejus. Pretiósa mors hæc est, quæ emit immortalitátem prétio sui sánguinis; quæ accépit corónam de consummatióne virtútis. Quam lætus illic Christus fuit, quam libens in tálibus servis suis et pugnávit, et vicit protéctor fídei, dans credéntibus tantum, quantum se credit cápere qui sumit! Certámini suo ádfuit, præliatóres atque assertóres sui nóminis eréxit, corroborávit, animávit. Et qui pro nobis mortem semel vicit, semper vincit in nobis.
-
-[Responsory61]
-@Commune/C2

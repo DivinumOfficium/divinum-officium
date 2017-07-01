@@ -1,0 +1,40 @@
+[Rank]
+S. Eduardi Regis Confessoris;;Semiduplex;;2;;vide C5
+
+[Rule]
+vide C5;mtv
+Gloria
+
+[Comment]
+# 13 X – Św. Edwarda, króla i wyznawcy
+! 3 klasy
+! Szaty białe
+Św. Edward Wyznawca, wnuk św. Edwarda Męczennika, urodził się w roku 1003. Wychowywał się na dworze normandzkim. Po wypędzeniu z Anglii Duńczyków zasiadł na tronie w roku 1042. Gorliwie zabiegał o odrodzenie chrześcijaństwa w swoim kraju. Był wielkim opiekunem ubogich. Zmarł 5 stycznia 1086 roku.
+
+[Introitus]
+@Commune/C5:Introitus
+
+[Oratio]
+Boże, który ukoronowałeś chwałą wiekuistą Swojego Wyznawcę świętego Króla Edwarda, daj nam tak czcić go na ziemi, abyśmy mogli królować z nim w niebie.
+$Per Dominum
+
+[Lectio]
+@Commune/C5:Lectio
+
+[Graduale]
+@Commune/C5:Graduale
+
+[Evangelium]
+@Commune/C5:Evangelium
+
+[Offertorium]
+@Commune/C5:Offertorium
+
+[Secreta]
+@Commune/C5:Secreta
+
+[Communio]
+@Commune/C5:Communio
+
+[Postcommunio]
+@Commune/C5:Postcommunio

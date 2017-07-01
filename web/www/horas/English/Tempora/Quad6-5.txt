@@ -5,7 +5,9 @@ Feria Sexta in Parasceve;;Feria privilegiata Duplex I classis;;7
 Feria Sexta in Passione et Morte Domini;;Feria privilegiata Duplex I classis;;7
 
 [Rule]
+Duplex
 Psalmi minores Dominica
+Laudes 2
 Antiphonas horas
 Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Preces Suffragium Conclusion
 Limit Benedictiones Oratio
@@ -15,19 +17,19 @@ Minores sine Antiphona
 Feria
 
 [Ant Matutinum]
-The kings of the earth set themselves, and the rulers take counsel together, against the Lord, and against His Anointed.;;2
-They part my garments among them, and cast lots upon my vesture.;;21
-False witnesses are risen up against me, and iniquity hath belied itself.;;26
+The kings of the earth set themselves, * and the rulers take counsel together, against the Lord, and against His Anointed.;;2
+They part my garments among them, * and cast lots upon my vesture.;;21
+False witnesses are risen up against me, * and iniquity hath belied itself.;;26
 V. They part my garments among them.
 R. And cast lots upon my vesture.
-They that sought after my life have used violence again me.;;37
-Let them be ashamed and confounded together that seek after my soul, to destroy it.;;39
-Strangers are risen up against me, and oppressors seek after my soul.;;53
+They that sought after my life * have used violence again me.;;37
+Let them be ashamed and confounded * together that seek after my soul, to destroy it.;;39
+Strangers are risen up against me, * and oppressors seek after my soul.;;53
 V. False witnesses are risen up against me.
 R. And iniquity hath belied itself.
-O Lord, defend me from them that rise up against me, for they lie in wait for my life.;;58
-Thou hast put away mine acquaintance far from me; I am shut up, and cannot come forth.;;87
-They gather themselves together against the soul of the righteous, and condemn the innocent blood.;;93
+O Lord, defend me from them that rise up against me, * for they lie in wait for my life.;;58
+Thou hast put away mine acquaintance far from me; * I am shut up, and cannot come forth.;;87
+They gather themselves together * against the soul of the righteous, and condemn the innocent blood.;;93
 V. They have spoken against me with a lying tongue.
 R. They compassed me about also with words of hatred, and fought against me without a cause.
 
@@ -122,7 +124,7 @@ From the letter of the blessed Apostle Paul to the Hebrews
 15 For we have not a high priest, who can not have compassion on our infirmities: but one tempted in all things like as we are, without sin.
 
 [Responsory7]
-R. They have turned me over into the hands of the wicked: they also have numbered me with the trangressors, neither have they spared my life: the mighty are gathered together against me;
+R. They have turned me over into the hands of the wicked: they also have numbered me with the transgressors, neither have they spared my life: the mighty are gathered together against me;
 * And stand up against me like giants.
 V. Strangers are risen up against me, and oppressors seek after my soul.
 R. And stand up against me like giants.
@@ -137,7 +139,7 @@ R. And stand up against me like giants.
 [Responsory8]
 R. That wicked one betrayed Jesus to the chief-priests and elders of the people
 * But Peter followed Him afar off, to see the end.
-V. And they led Him away to Caiphas the High Priest, where the Scribes and Pharisees were assembled.
+V. And they led Him away to Caiaphas the High Priest, where the Scribes and Pharisees were assembled.
 R. But Peter followed Him afar off, to see the end.
 
 [Lectio9]
@@ -173,66 +175,22 @@ R. As they that be dead of old.
 They set up over his head his accusation written: * Jesus of Nazareth, King of the Jews.
 
 [Oratio]
-v. Christ became obedient for us unto death, even to the death of the cross.
-!in secret
-$Pater noster
-!lower voice
-&psalm(50)
-_
-Look down, we beseech thee, O Lord, on this thy family, for which our Lord Jesus Christ did not hesitate to be delivered up into the hands of wicked men, and to suffer the torment of the Cross.
-!Finish silently
-$Qui tecum
+@Tempora/Quad6-4::s/unto death/unto death, even to the death of the cross/
 
 [Oratio Matutinum]
-Look down, we beseech thee, O Lord, on this thy family, for which our Lord Jesus Christ did not hesitate to be delivered up into the hands of wicked men, and to suffer the torment of the Cross.
-!Finish silently
-$Qui tecum
+@Tempora/Quad6-4
 
 [Prelude Vespera] (rubrica 1955 aut rubrica 1960)
 !Today, Vespers are not said by those who assist at the solemn afternoon liturgical action.
 
 [Ant Vespera]
-I will take the chalice of salvation; * and I will call upon the name of the Lord.;;115
-With them * that hated peace I was peaceable: when I spoke to them they fought against me without cause.;;119
-From unjust men deliver me, O Lord.;;139
-Keep me * from the snare, which they have laid for me, and from the stumbling-blocks of them that work iniquity.;;140
-I looked * on my right hand, and beheld, and there was no one that would know me.;;141
+@Tempora/Quad6-4
 
 [Versum 3]
-V. He hath made me to dwell in darkness.
-R. As those that have been dead of old.
+@:Versum 2
 
 [Ant 3]
 When He had received the vinegar, * he said: It is finished! and he bowed his Head, and gave up the Ghost.
 
 [Special Completorium]
-!Special Completorium
-_
-$Confiteor
-$Misereatur
-$Indulgentiam
-
-&psalm(4)
-
-(rubrica tridentina) &psalm(30,1,6)
-
-&psalm(90)
-
-&psalm(133)
-
-&psalm(233)
-
-v. Christ became obedient for us unto death, even to the death of the cross.
-!in secret
-$Pater noster
-!lower voice
-&psalm(50)
-_
-(deinde dicuntur)
-Look down, we beseech thee, O Lord, on this thy family, for which our Lord Jesus Christ did not hesitate to be delivered up into the hands of wicked men, and to suffer the torment of the Cross.
-!Finish silently
-$Qui tecum
-(sed rubrica 1955 aut rubrica 1960 loco horum versuum dicuntur)
-Visit, we beseech thee, O Lord, this dwelling, and drive far from it the snares of the enemy. Let thy holy angels dwell herein to preserve us in peace and let thy blessing be always upon us.
-!Finish silently
-$Per Dominum
+@Tempora/Quad6-4::s/unto death/unto death, even to the death of the cross/

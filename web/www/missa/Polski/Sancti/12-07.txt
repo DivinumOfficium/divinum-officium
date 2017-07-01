@@ -1,0 +1,54 @@
+[Rank]
+S. Ambrosii Episcopi Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[Name]
+Ambrose
+
+[Rule]
+vide C4a;
+Gloria
+CredoDa
+no Vigil1960
+
+[Comment]
+# 07 XII – Św. Ambrożego, Biskupa, Wyznawcy i Doktora Kościoła
+! 3 klasy
+! Szaty białe
+Święty Ambroży był rządcą północnej Italii i prefektem Mediolanu. Jako katechumen został wybrany przez lud biskupem Mediolanu. 30 listopada 374 roku został ochrzczony, a 7 grudnia otrzymał sakrę biskupią. Dzielnie zwalczał herezję ariańską. Cesarza Teodozjusza skłonił do publicznej pokuty za rzeź w Tesalonikach. Pozyskał Kościołowi i ochrzcił św. Augustyna. Dzięki swoim pismom został uznany za jednego z czterech wielkich Doktorów Kościoła łacińskiego. Jest autorem wielu hymnów liturgicznych i organizatorem śpiewu kościelnego. Zmarł w noc Zmartwychwstania 4 kwietnia 397 roku.
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Boże, Tyś dał ludowi Swemu św. Ambrożego za pośrednika zbawienia wiecznego, spraw, prosimy Cię, abyśmy mogli mieć orędownikiem w niebie tego, który na ziemi był dla nas mistrzem życia.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+!Syr 44:16
+Oto wielki kapłan, który za dni swoich podobał się Bogu.
+!Syr 44:20
+V. Nie znalazł się jemu podob­ny, który by zachował prawo Najwyższego. Alleluja, alleluja.
+!Ps 109:4
+Pan przysiągł i nie pożałuje: «Tyś ka­płanem na wieki na wzór Mel­chizedeka». Alleluja.
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+!Ps 88:25
+Z nim moja wierność i moja łaska; w moim imieniu moc jego wzrośnie.
+
+[Secreta]
+Wszechmogący, wieczny Boże, spraw za przyczyną św. Ambrożego, Twego Wyznawcy i Biskupa, aby dary złożone Twojemu majestatowi posłużyły nam do zbawienia wiecznego.
+$Per Dominum
+
+[Communio]
+!Ps 88:36-38
+Raz przysiągłem na świętość moją: potomstwo jego trwać będzie na wieki i jego tron będzie przede mną jak słońce, jak księżyc, co na wieki zostaje, jako wierny świadek na niebie.
+
+[Postcommunio]
+Przyjmując Sakrament naszego zbawienia prosimy Cię, wszechmogący Boże, spraw, niech wszędzie nas wspiera modlitwa św. Ambrożego, Twego Wyznawcy i Biskupa, na cześć którego złożyliśmy tę Ofiarę Twojemu majestatowi.
+$Per Dominum

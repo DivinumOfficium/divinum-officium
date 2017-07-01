@@ -87,10 +87,11 @@ Esto, quaesumus Domine, propitius plebi tuae: ut, quae tibi non placent, respuen
 $Per Dominum.
 
 [Doxology]
-Jesu, tibi sit glória,
-Qui passus es pro sérvulis,
-Cum Patre et almo Spíritu,
-In sempitérna sæcula. Amen
+Jesu, tibi sit glÃ³ria,
+Qui passus es pro sÃ©rvulis,
+Cum Patre et almo SpÃ­ritu,
+In sempitÃ©rna sÇ½cula.
+Amen.
 
 [Versum Prima]
 Qui passus es propter nostram salutem.
@@ -177,7 +178,7 @@ R. Quia virgo electus ab ipso, virgo in aevum permansit.
 
 [Lectio4]
 Sermo sancti Bernardi Abbatis.
-!Ex sermone de 12 stellis.
+!Ex sermone de duodecim stellis.
 Martyrium Virginis tam in Simeonis prophetia, quam in ipsa Dominicae passionis historia commendatur. Positus est hic (ait sanctus senex de puero Jesu) in signum cui contradicetur; et tuam ipsius animam (ad Mariam autem dicebat) pertransibit gladius. Vere tuam, o beata Mater, animam pertransivit. Alioquin non nisi eam pertransiens, carnem Filii tui penetraret. Et quidem posteaquam emisit spiritum tuus ille Jesus, ipsius plane non attigit animam crudelis lancea, quae ipsius aperuit latus, sed tuam utique animam pertransivit. Ipsius nimirum anima jam ibi non erat, sed tua plane inde nequibat avelli.
 
 [Responsory4]
@@ -196,7 +197,7 @@ V. Ferrum lanceae militaris, latus quidem Salvatoris, animam vero transivit Virg
 R. Ipsam ejus Matrem, carnali orbitate graviter percussam, vehementissime contristavit.
 
 [Lectio6]
-Non miremini, fratres, quod Maria Martyr in anima fuisse dicatur. Miretur qui non meminerit se audivisse Paulum inter maxima Gentium crimina memorantem, quod sine affectione fuissent Longe id fuit a Mariae visceribus, longe sit a servulis ejus. Sed forte quis dicat: Numquid non eum praescierat moriturum? Et indubitanter. Numquid non sperabat continuo resurrecturum? Et fideliter. Super haec doluit crucifixum? Et vehementer. Alioquin quisnam tu frater, aut unde tibi haec sapientia, ut mireris plus Mariam compatientem, quam Mariae filium patientem? Ille etiam mori corpore potuit; ista commori corde non potuit? Fecit illud caritas, qua majorem nemo habuit: fecit et hoc caritas, cui post illam similis altera non fuit.
+Non miremini, fratres, quod Maria Martyr in anima fuisse dicatur. Miretur qui non meminerit se audivisse Paulum inter maxima Gentium crimina memorantem, quod sine affectione fuissent. Longe id fuit a Mariae visceribus, longe sit a servulis ejus. Sed forte quis dicat: Numquid non eum praescierat moriturum? Et indubitanter. Numquid non sperabat continuo resurrecturum? Et fideliter. Super haec doluit crucifixum? Et vehementer. Alioquin quisnam tu, frater, aut unde tibi haec sapientia, ut mireris plus Mariam compatientem, quam Mariae Filium patientem? Ille etiam mori corpore potuit; ista commori corde non potuit? Fecit illud caritas, qua majorem nemo habuit: fecit et hoc caritas, cui post illam similis altera non fuit.
 
 [Responsory6]
 R. Quis mihi det te fratrem meum sugentem ubera matris meae, et inhaerendo lateri tuo, ut sanguis tuus sanguinem meum tangat, et tergat
@@ -244,11 +245,7 @@ Pontifices et pharisaei sibi consulebant: nec tamen dicebant, Credamus. Plus eni
 &teDeum
 
 [Ant Laudes]
-Vadam ad montem * myrrhae et ad collem thuris.;;
-Dilectus meus * candidus et rubicundus: comae capitis eius sicut purpura regis vincta canalibus.;;
-Quo abiit * dilectus tuus, o pulcherrima mulierum? quo dilectus tuus declinavit?;;
-Fasciculus myrrhae * dilectus meus mihi inter ubera mea commorabitur.;;
-Fulcite me floribus * stipate me malis, quia amore langueo.;;
+@:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
 @:Capitulum Vespera
