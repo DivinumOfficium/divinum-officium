@@ -238,7 +238,7 @@ Denique Patrem et Fílium cathólice nominámus; duos autem Deos dicere, nec pó
 &teDeum
 
 [Ant Laudes]
-@:Ant Vespera
+@:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
 @:Capitulum Vespera
