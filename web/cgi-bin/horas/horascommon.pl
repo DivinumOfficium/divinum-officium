@@ -1708,6 +1708,8 @@ sub papal_antiphon_dum_esset($)
           |
             (?:hoc\s+versus\s+)?omittitur
           |
+            (?:hæc\s+versus\s+)?omittuntur
+          |
             (?:haec\s+versus\s+)?omittuntur
         )
         \b
