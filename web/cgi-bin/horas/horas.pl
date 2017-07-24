@@ -12,6 +12,7 @@ use lib "$Bin/..";
 use horas::Scripting;
 
 my @lines;
+my $precesferiales;
 
 $a = 1;
 
@@ -363,7 +364,7 @@ sub Dominus_vobiscum : ScriptFunc {
   if ($priest) {$text = "$text[0]\n$text[1]"}
   else {  
     if (!$precesferiales) {$text = "$text[2]\n$text[3]"}
-	else {$text = "$text[4]";}
+       else {$text = "$text[4]";}
     $precesferiales = 0;
   }	
   return $text;
@@ -371,7 +372,7 @@ sub Dominus_vobiscum : ScriptFunc {
 
 sub Dominus_vobiscum1 : ScriptFunc { #* prima after preces
   my $lang = shift;  
-  if (preces('Dominicales et Feriales')&& !$priest) {$precesferiales = 1; }
+  if (!preces('Dominicales et Feriales')&& !$priest) {$precesferiales = 1; }
   return Dominus_vobiscum($lang);
 }
 
@@ -703,7 +704,7 @@ sub adjust_refs
 {
   use strict;
 
-  my ($name, $lang) = shift;
+  my ($name, $lang) = @_;
 
   our ($rule, @dayname, $winner, $smallfont, $priest);
 
@@ -732,8 +733,10 @@ sub adjust_refs
       ($name =~ /&Dominus_vobiscum1/i && !preces('Dominicales et Feriales')) ||
       $name =~ /&Dominus_vobiscum2/i))
   {
-    return setfont($smallfont,
-      translate('secunda Domine exaudi omittitur', $name));
+    our %prayers;
+    my $text = $prayers{$lang}->{'Dominus'};
+    my @text = split("\n", $text);
+    return $text[4];
   }
 
   # No adjustment necessary.
