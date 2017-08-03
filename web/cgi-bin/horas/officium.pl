@@ -54,6 +54,7 @@ our $vespera; #1 | 3 index for ant, versum, oratio
 our $cvespera; #for commemoratio
 our $commemorated; #name of the commemorated for vigils
 our $comrank = 0; #rank of the commemorated office
+our $litaniaflag = 0;
 
 #filled by precedence()
 our %winner; #the hash of the winner 

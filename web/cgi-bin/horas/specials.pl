@@ -474,6 +474,7 @@ sub specials {
 	  push(@s, $w{$lname});
 	  setbuild1($item, 'Litania omnium sanctorum');
 	  $skipflag = 1;
+	  $litaniaflag = 1;
   }
 
     # Special conclusions, e.g. on All Souls' day.
