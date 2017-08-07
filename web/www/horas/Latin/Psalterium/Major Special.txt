@@ -26,7 +26,7 @@ R. Índuit Dóminus fortitúdinem, et præcínxit se virtúte.
 
 [Day0 Laudes2]
 !1 Cor 9:24
-v. Fratres: Nescitis, quod ii, qui in stadio currunt, omnes quidem currunt, sed unus áccipit bravium? Sic currite, ut comprehendatis.
+v. Fratres: Nescítis, quod ii, qui in stádio currunt, omnes quidem currunt, sed unus áccipit bravíum? Sic cúrrite, ut comprehendátis.
 $Deo gratias
 
 [Hymnus Day0 Laudes2]
@@ -118,7 +118,7 @@ R. Sicut incénsum in conspéctu tuo.
 
 [Day1 Laudes]
 !Rom 13:12-13
-v. Nox præcéssit, dies autem appropinquávit. Abjiciamus ergo ópera tenebrárum, et induamur arma lucis. Sicut in die honeste ambulémus.
+v. Nox præcéssit, dies autem appropinquávit. Abiciámus ergo ópera tenebrárum, et induámur arma lucis. Sicut in die honéste ambulémus.
 $Deo gratias
 
 [Hymnus Day1 Laudes]
@@ -173,9 +173,7 @@ V. Repléti sumus mane misericórdia tua.
 R. Exsultávimus, et delectáti sumus.
 
 [Day1 Vespera]
-!2 Cor 1:3-4
-v. Benedíctus Deus, et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolationis, qui consolátur nos in omni tribulatióne nostra.
-$Deo gratias
+@:Day0 Vespera
 
 [Hymnus Day1 Vespera]
 {:H-VespFeria:}v. Imménse caeli Cónditor,
@@ -205,13 +203,10 @@ Regnans per omne sǽculum.
 Amen.
 
 [Day1 Versum 3]
-V. Dirigátur, Dómine, orátio mea.
-R. Sicut incénsum in conspéctu tuo.
+@:Day0 Versum 3
 
 [Day2 Laudes]
-!Rom 13:12-13
-v. Nox præcéssit, dies autem appropinquávit. Abjiciamus ergo ópera tenebrárum, et induamur arma lucis. Sicut in die honeste ambulémus.
-$Deo gratias
+@:Day1 Laudes
 
 [Hymnus Day2 Laudes]
 {:H-LaudsFeria:}v. Ales diéi núntius
@@ -241,13 +236,10 @@ Nunc et per omne sǽculum.
 Amen.
 
 [Day2 Versum 2]
-V. Repléti sumus mane misericórdia tua.
-R. Exsultávimus, et delectáti sumus.
+@:Day1 Versum 2
 
 [Day2 Vespera]
-!2 Cor. 1, 3-4
-v. Benedíctus Deus, et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolationis, qui consolátur nos in omni tribulatióne nostra.
-$Deo gratias
+@:Day0 Vespera
 
 [Hymnus Day2 Vespera]
 {:H-VespFeria:}v. Tellúris alme Cónditor,
@@ -277,13 +269,10 @@ Regnans per omne sǽculum.
 Amen.
 
 [Day2 Versum 3]
-V. Dirigátur, Dómine, orátio mea.
-R. Sicut incénsum in conspéctu tuo.
+@:Day0 Versum 3
 
 [Day3 Laudes]
-!Rom. 13, 12-13
-v. Nox præcéssit, dies autem appropinquávit. Abjiciamus ergo ópera tenebrárum, et induamur arma lucis. Sicut in die honeste ambulémus.
-$Deo gratias
+@:Day1 Laudes
 
 [Hymnus Day3 Laudes]
 {:H-LaudsFeria:}v. Nox, et tenébrae, et núbila,
@@ -313,13 +302,10 @@ Nunc et per omne sǽculum.
 Amen.
 
 [Day3 Versum 2]
-V. Repléti sumus mane misericórdia tua.
-R. Exsultávimus, et delectáti sumus.
+@:Day1 Versum 2
 
 [Day3 Vespera]
-!2 Cor. 1, 3-4
-v. Benedíctus Deus, et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolationis, qui consolátur nos in omni tribulatióne nostra.
-$Deo gratias
+@:Day0 Vespera
 
 [Hymnus Day3 Vespera]
 {:H-VespFeria:}v. Cæli Deus sanctíssime,
@@ -349,13 +335,10 @@ Regnans per omne sǽculum.
 Amen.
 
 [Day3 Versum 3]
-V. Dirigátur, Dómine, orátio mea.
-R. Sicut incénsum in conspéctu tuo.
+@:Day0 Versum 3
 
 [Day4 Laudes]
-!Rom. 13, 12-13
-v. Nox præcéssit, dies autem appropinquávit. Abjiciamus ergo ópera tenebrárum, et induamur arma lucis. Sicut in die honeste ambulémus.
-$Deo gratias
+@:Day1 Laudes
 
 [Hymnus Day4 Laudes]
 {:H-LaudsFeria:}v. Lux ecce surgit áurea,
@@ -385,13 +368,10 @@ Nunc et per omne sǽculum.
 Amen.
 
 [Day4 Versum 2]
-V. Repléti sumus mane misericórdia tua.
-R. Exsultávimus, et delectáti sumus.
+@:Day1 Versum 2
 
 [Day4 Vespera]
-!2 Cor. 1, 3-4
-v. Benedíctus Deus, et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolationis, qui consolátur nos in omni tribulatióne nostra.
-$Deo gratias
+@:Day0 Vespera
 
 [Hymnus Day4 Vespera]
 {:H-VespFeria:}v. Magnæ Deus poténtiæ,
@@ -421,13 +401,10 @@ Regnans per omne sǽculum.
 Amen.
 
 [Day4 Versum 3]
-V. Dirigátur, Dómine, orátio mea.
-R. Sicut incénsum in conspéctu tuo.
+@:Day0 Versum 3
 
 [Day5 Laudes]
-!Rom. 13, 12-13
-v. Nox præcéssit, dies autem appropinquávit. Abjiciamus ergo ópera tenebrárum, et induamur arma lucis. Sicut in die honeste ambulémus.
-$Deo gratias
+@:Day1 Laudes
 
 [Hymnus Day5 Laudes]
 {:H-LaudsFeria:}v. Ætérna cæli glória,
@@ -462,13 +439,10 @@ Nunc et per omne sǽculum.
 Amen.
 
 [Day5 Versum 2]
-V. Repléti sumus mane misericórdia tua.
-R. Exsultávimus, et delectáti sumus.
+@:Day1 Versum 2
 
 [Day5 Vespera]
-!2 Cor. 1, 3-4
-v. Benedíctus Deus, et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolationis, qui consolátur nos in omni tribulatióne nostra.
-$Deo gratias
+@:Day0 Vespera
 
 [Hymnus Day5 Vespera]
 {:H-VespFeria:}v. Hóminis superne Cónditor,
@@ -498,13 +472,10 @@ Regnans per omne sǽculum.
 Amen.
 
 [Day5 Versum 3]
-V. Dirigátur, Dómine, orátio mea.
-R. Sicut incénsum in conspéctu tuo.
+@:Day0 Versum 3
 
 [Day6 Laudes]
-!Rom. 13, 12-13
-v. Nox præcéssit, dies autem appropinquávit. Abjiciamus ergo ópera tenebrárum, et induamur arma lucis. Sicut in die honeste ambulémus.
-$Deo gratias
+@:Day1 Laudes
 
 [Hymnus Day6 Laudes]
 {:H-LaudsFeria:}v. Aurora jam spargit polum:
@@ -529,12 +500,11 @@ Nunc et per omne sǽculum.
 Amen.
 
 [Day6 Versum 2]
-V. Repléti sumus mane misericórdia tua.
-R. Exsultávimus, et delectáti sumus.
+@:Day1 Versum 2
 
 [Day6 Vespera]
 !Rom 11:33
-v. O Altitúdo divitiárum sapiéntiæ, et sciéntiæ Dei, quam incomprehensibilia sunt judícia ejus, et investigábiles viæ ejus!
+v. O Altitúdo divitiárum sapiéntiæ, et sciéntiæ Dei, quam incomprehensibília sunt judícia ejus, et investigábiles viæ ejus!
 $Deo gratias
 
 [Hymnus Day6 Vespera]
@@ -618,8 +588,7 @@ Depósuit Dóminus * poténtes de sede, et exaltávit húmiles.
 Illúmina, Dómine, * sedéntes in ténebris et umbra mortis, et dírige pedes nostros in viam pacis.
 
 [Day6 Ant 3]
-Suscépit Deus * Israël, púerum suum: sicut locútus est ad Ábraham, et semen ejus usque in sæculum.
-
+Suscépit Deus * Israël, púerum suum: sicut locútus est ad Ábraham, et semen ejus usque in sǽculum.
 
 [Adv Laudes]
 !Isa 2:3
@@ -789,7 +758,7 @@ Ecce compléta sunt * ómnia, quæ dicta sunt per Angelum de Vírgine María.
  
 [Quad Laudes]
 !Isa 58:1
-v. Clama, ne cesses, quasi tuba exalta vocem tuam, et annuntia pópulo meo scélera eórum, et dómui Iacob peccáta eórum.
+v. Clama, ne cesses, quasi tuba exálta vocem tuam, et annúntia pópulo meo scélera eórum, et dómui Iacob peccáta eórum.
 $Deo gratias
 
 [Hymnus Quad Laudes]
@@ -856,8 +825,7 @@ Jejuniorum múnera.
 Amen.
 
 [Quad Versum 3]
-V. Ángelis suis Deus mandávit de te.
-R. Ut custódiant te in ómnibus viis tuis.
+@:Quad Versum 2
 
 [Quad5 Laudes]
 !Jer 11:19
@@ -1065,13 +1033,12 @@ _
 !Oratio
 !N. exprimitur nomen titularis propriæ ecclesiæ
 v. Orémus. 
-v. A cunctis nos, quǽsumus, Dómine, mentis et córporis defende perículis: et, intercedénte beáta et gloriósa semper Vírgine Dei Genitríce María, cum beáto Joseph, beátis Apóstolis tuis Petro et Paulo, atque beáto ~
-r.~
+v. A cunctis nos, quǽsumus, Dómine, mentis et córporis defende perículis: et, intercedénte beáta et gloriósa semper Vírgine Dei Genitríce María, cum beáto Joseph, beátis Apóstolis tuis Petro et Paulo, atque beáto~
 r. N. et ómnibus Sanctis, salútem nobis tríbue benígnus et pacem; ut, destructis adversitátibus et erroribus univérsis, Ecclésia tua secúra tibi sérviat libertáte.
 $Per eumdem
 
 [Suffragium11]
-Sancti omnes intercedant pro nobis ad Dóminum.
+Ant. Sancti omnes intercedant pro nobis ad Dóminum.
 _
 V. Mirificávit Dóminus Sanctos suos.
 R. Et exaudívit eos clamantes ad se.
@@ -1080,12 +1047,11 @@ _
 !N. exprimitur nomen titularis propriæ ecclesiæ
 v. Orémus. 
 v. A cunctis nos, quǽsumus, Dómine, mentis et córporis defende perículis: et, intercedénte beáto Joseph, cum beátis Apóstolis tuis Petro et Paulo, atque beáto~ 
-r.~
 r. N. et ómnibus Sanctis, salútem nobis tríbue benígnus et pacem; ut, destructis adversitátibus et erroribus univérsis, Ecclésia tua secúra tibi sérviat libertáte.
 $Per eumdem
 
 [SuffragiumTridentinumFeriale]
-Per signum Crucis de inimícis nostris líbera nos, Deus noster.
+Ant. Per signum Crucis de inimícis nostris líbera nos, Deus noster.
 _
 V. Omnis terra adóret te, et psallat tibi.
 R. Psalmum dicat nómini tuo, Dómine.
@@ -1355,7 +1321,7 @@ v. Omnípotens sempitérne Deus, miserére famulo tuo Pontífici nostro~
 r. N., et dírige eum secúndum tuam clementiam in viam salútis æternæ: ut, te donante, tibi placita cupiat, et tota virtúte perficiat.
 v. Deus, a quo sancta desidéria, recta consília et justa sunt ópera: da servis tuis illam, quam mundus dare non potest, pacem; ut et corda nostra mandátis tuis dédita, et, hóstium sublata formidine, témpora sint, tua protectióne, tranquilla.
 v. Ure igne Sancti Spíritus renes nostros et cor nóstrum, Dómine: ut tibi casto córpore serviámus, et mundo corde placeamus.
-v. Fidélium, Deus, ómnium Conditor et Redémptor, animábus famulórum famulárumque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optaverunt, piis supplicatiónibus consequantur.
+v. Fidélium, Deus, ómnium Conditor et Redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optaverunt, piis supplicatiónibus consequantur.
 v. Actiónes nostras, quæsumus, Dómine, aspirando prævéni et adjuvando proséquere: ut cuncta nostra orátio et operatio a te semper incipiat, et per te cœpta finiatur. 
 v. Omnípotens sempitérne Deus, qui vivórum domináris simul et mortuórum, omniúmque misereris quos tuos fide et ópere futuros esse prænoscis: te súpplices exoramus; ut, pro quibus effúndere preces decrevimus, quosque vel præsens sæculum adhuc in carne retinet vel futúrum jam exutos córpore, suscépit, intercedentibus ómnibus Sanctis tuis, pietátis tuæ clementia, ómnium delictórum suórum véniam consequantur.
 $Per Dominum
@@ -1713,7 +1679,7 @@ v. Omnípotens sempitérne Deus, miserére famulo tuo Pontífici nostro~
 r. N., et dírige eum secúndum tuam clementiam in viam salútis æternæ: ut, te donante, tibi placita cupiat, et tota virtúte perficiat.
 v. Deus, a quo sancta desidéria, recta consília et justa sunt ópera: da servis tuis illam, quam mundus dare non potest, pacem; ut et corda nostra mandátis tuis dédita, et, hóstium sublata formidine, témpora sint, tua protectióne, tranquilla.
 v. Ure igne Sancti Spíritus renes nostros et cor nóstrum, Dómine: ut tibi casto córpore serviámus, et mundo corde placeamus.
-v. Fidélium, Deus, ómnium Conditor et Redémptor, animábus famulórum famulárumque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optaverunt, piis supplicatiónibus consequantur.
+v. Fidélium, Deus, ómnium Conditor et Redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optaverunt, piis supplicatiónibus consequantur.
 v. Actiónes nostras, quæsumus, Dómine, aspirando prævéni et adjuvando proséquere: ut cuncta nostra orátio et operatio a te semper incipiat, et per te cœpta finiatur. 
 v. Omnípotens sempitérne Deus, qui vivórum domináris simul et mortuórum, omniúmque misereris quos tuos fide et ópere futuros esse prænoscis: te súpplices exoramus; ut, pro quibus effúndere preces decrevimus, quosque vel præsens sæculum adhuc in carne retinet vel futúrum jam exutos córpore, suscépit, intercedentibus ómnibus Sanctis tuis, pietátis tuæ clementia, ómnium delictórum suórum véniam consequantur.
 $Per Dominum
@@ -1905,7 +1871,7 @@ v. Omnípotens sempitérne Deus, miserére famulo tuo Pontífici nostro~
 r. N., et dírige eum secúndum tuam clementiam in viam salútis æternæ: ut, te donante, tibi placita cupiat, et tota virtúte perficiat.
 v. Deus, a quo sancta desidéria, recta consília et justa sunt ópera: da servis tuis illam, quam mundus dare non potest, pacem; ut et corda nostra mandátis tuis dédita, et, hóstium sublata formidine, témpora sint, tua protectióne, tranquilla.
 v. Ure igne Sancti Spíritus renes nostros et cor nóstrum, Dómine: ut tibi casto córpore serviámus, et mundo corde placeamus.
-v. Fidélium, Deus, ómnium Conditor et Redémptor, animábus famulórum famulárumque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optaverunt, piis supplicatiónibus consequantur.
+v. Fidélium, Deus, ómnium Conditor et Redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optaverunt, piis supplicatiónibus consequantur.
 v. Actiónes nostras, quæsumus, Dómine, aspirando prævéni et adjuvando proséquere: ut cuncta nostra orátio et operatio a te semper incipiat, et per te cœpta finiatur. 
 v. Omnípotens sempitérne Deus, qui vivórum domináris simul et mortuórum, omniúmque misereris quos tuos fide et ópere futuros esse prænoscis: te súpplices exoramus; ut, pro quibus effúndere preces decrevimus, quosque vel præsens sæculum adhuc in carne retinet vel futúrum jam exutos córpore, suscépit, intercedentibus ómnibus Sanctis tuis, pietátis tuæ clementia, ómnium delictórum suórum véniam consequantur.
 $Per Dominum

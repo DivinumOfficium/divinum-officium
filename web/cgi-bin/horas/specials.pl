@@ -474,6 +474,7 @@ sub specials {
 	  push(@s, $w{$lname});
 	  setbuild1($item, 'Litania omnium sanctorum');
 	  $skipflag = 1;
+	  $litaniaflag = 1;
   }
 
     # Special conclusions, e.g. on All Souls' day.
@@ -1002,7 +1003,7 @@ sub oratio
     # Before the Sunday formerly in the octave, the collect of the Epiphany is
     # said, as in the past; afterwards, the collect of the Sunday is said, in
     # which case we have to override it.
-    if ($dayname[0] =~ /Epi1/i && $rule =~ /Infra octavam Epiphaniae Domini/i &&
+    if ($dayname[0] =~ /Epi1/i && $rule =~ /Infra octavam Epiphaniæ Domini/i &&
       $version =~ /(monastic|1955|1960)/i)
     {
         $rule .= "Oratio Dominica\n";

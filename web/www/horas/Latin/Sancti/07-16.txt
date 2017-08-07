@@ -1,11 +1,11 @@
 [Rank]
-In Commemoratione Beatae Mariae Virgine de Monte Carmelo;;Duplex majus;;4;;ex C11
+In Commemoratione Beatæ Mariæ Virgine de Monte Carmelo;;Duplex majus;;4;;ex C11
 
 [Rank1960]
-In Commemoratione Beatae Mariae Virgine de Monte Carmelo;;Simplex;;1.1;;vide C11
+In Commemoratione Beatæ Mariæ Virgine de Monte Carmelo;;Simplex;;1.1;;vide C11
 
 [RankNewcal]
-In Commemoratione Beatae Mariae Virgine de Monte Carmelo;;Duplex optional;;2;;ex C11
+In Commemoratione Beatæ Mariæ Virgine de Monte Carmelo;;Duplex optional;;2;;ex C11
 
 [Rule]
 ex C11;
@@ -35,7 +35,4 @@ Cum sacra Pentecóstes die viri plúrimi, ut fertur, qui vestígiis sanctórum p
 &teDeum
 
 [Responsory7]
-R. Felix namque es, sacra Virgo Maria, et omni laude digníssima: 
-* Quia ex te ortus est sol justítiæ, Christus, Deus noster.
-V. Ora pro pópulo, intérveni pro clero, intercede pro devoto femineo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam solemnem Commemoratiónem..
-R. Et veniénte Dómino, introívit cum eo ad nuptias.
+@Commune/C11:Responsory7
