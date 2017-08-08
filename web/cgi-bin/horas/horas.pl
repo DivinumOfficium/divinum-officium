@@ -410,6 +410,7 @@ sub antiphona_finalis : ScriptFunc {
     {$t = $ant{'Quadragesimae'};}
   elsif ($dayname[0] =~ /Pasc/) {$t = $ant{'Paschalis'};}
   else {$t = $ant{'Postpentecost'};}  
+  $t = '#' . translate('Antiphona finalis BMV', $lang) . "\n$t";
   return ($t);
 }
 
