@@ -904,7 +904,7 @@ sub gettoday {
 # get date, rank, winner, preloads hashes
 sub precedence {	  
                 
-  $winner = $commemoratio = $commune = $striptura = $commemoratio1 = '';
+  $winner = $commemoratio = $commune = $scriptura = $commemoratio1 = '';
   %winner = %commemoratio = %commune = %scriptura = {};
   
   #get date
