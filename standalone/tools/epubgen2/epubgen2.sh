@@ -206,7 +206,7 @@ foreachHourInDay() {
 }
 
 foreachDayInMonth() {
-	DAYN=$(cal -h $MONTH $YEAR|egrep -v [a-z]|wc -w)
+	DAYN=$(cal $MONTH $YEAR|egrep -v [a-z]|wc -w)
 	for DAY in $(seq -w $DAYN); do
 		formatFilename
 		$1
@@ -218,7 +218,7 @@ foreachDayInYear() {
 	for MONTH in $(seq -w 12); do
 		MONTH_NUM_INDEX=1+$MONTH_NUM_INDEX
 
-		DAYN=$(cal -h $MONTH $YEAR|egrep -v [a-z]|wc -w)
+		DAYN=$(cal $MONTH $YEAR|egrep -v [a-z]|wc -w)
 		for DAY in $(seq -w $DAYN); do
 				formatFilename
 				$1
@@ -231,7 +231,7 @@ foreachHourInYear() {
 	for MONTH in $(seq -w 12); do
 		MONTH_NUM_INDEX=1+$MONTH_NUM_INDEX
 
-		DAYN=$(cal -h $MONTH $YEAR|egrep -v [a-z]|wc -w)
+		DAYN=$(cal $MONTH $YEAR|egrep -v [a-z]|wc -w)
 		for DAY in $(seq -w $DAYN); do
 			for H in $(seq 0 $HORA_INDEX_LAST); do
 				formatFilename
@@ -257,7 +257,7 @@ foreachHourInRange() {
 		MONTH_NUM_INDEX=-1 #note we cannot count using MONTH, because it is zero padded (and bash consides it an octal literal)
 		for MONTH in $(seq -w 12); do
 			MONTH_NUM_INDEX=1+$MONTH_NUM_INDEX
-			DAYN=$(cal -h $MONTH $YEAR|egrep -v [a-z]|wc -w)
+			DAYN=$(cal $MONTH $YEAR|egrep -v [a-z]|wc -w)
 			for DAY in $(seq -w $DAYN); do
 				for H in $(seq 0 $HORA_INDEX_LAST); do
 					formatFilename
