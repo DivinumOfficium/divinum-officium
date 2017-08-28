@@ -8,14 +8,14 @@ Die septima post Nativitatem;;Duplex II class;;5;;ex Sancti/12-25m3
 S. Silvestri Papae et Conf.;;Duplex optional;;2;;vide C4d
 
 [Rule]
-OPapaC=Silvéstrum;
+OPapaC=SilvÃ©strum;
 vide C4d;
 Gloria
 Credo
 Prefatio=Nat
 
 [Oratio]
-@Commune/C4:Oratio:s/N\./Silvéstri/
+@Commune/C4:Oratio:s/N\./SilvÃ©stri/
 
 [Commemoratio Oratio]
 !Pro Octava Nativitatis.
@@ -26,12 +26,12 @@ Prefatio=Nat
 
 [Graduale]
 !Eccli 44:16
-Ecce sacérdos magnus, qui in diébus suis plácuit Deo.
+Ecce sacÃ©rdos magnus, qui in diÃ©bus suis plÃ¡cuit Deo.
 !Eccli 44:20
-V. Non est invéntus símilis illi, qui conserváret legem Excélsi.~
-Allelúja, allelúja.
+V. Non est invÃ©ntus sÃ­milis illi, qui conservÃ¡ret legem ExcÃ©lsi.~
+AllelÃºja, allelÃºja.
 !Ps 88:21
-V. Invéni David servum meum: óleo sancto meo unxi eum. Allelúja.
+V. InvÃ©ni David servum meum: Ã³leo sancto meo unxi eum. AllelÃºja.
 
 [GradualeP]
 @Commue/C4
@@ -43,8 +43,8 @@ V. Invéni David servum meum: óleo sancto meo unxi eum. Allelúja.
 @Commune/C4
 
 [Secreta]
-Sancti tui nos, Dómine, quaesumus, úbique lætíficent: ut, dum eórum mérita~
-recólimus, patrocínia sentiámus.
+Sancti tui nos, DÃ³mine, quÇ½sumus, Ãºbique lÃ¦tÃ­ficent: ut, dum eÃ³rum mÃ©rita~
+recÃ³limus, patrocÃ­nia sentiÃ¡mus.
 $Per Dominum
 
 [Commemoratio Secreta]
@@ -52,7 +52,7 @@ $Per Dominum
 @Sancti/12-25m3:Secreta
 
 [Postcommunio]
-@Commune/C4:Postcommunio:s/N\./Silvéstro/
+@Commune/C4:Postcommunio:s/N\./SilvÃ©stro/
 
 [Commemoratio Postcommunio]
 !Pro Octava Nativitatis.

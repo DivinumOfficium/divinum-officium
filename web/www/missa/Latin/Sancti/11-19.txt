@@ -2,40 +2,40 @@
 S. Elisabeth Viduae;;Duplex;;3;;vide C7a
 
 [Rule]
-CPapaM=Pontiánum;
+CPapaM=PontiÃ¡num;
 vide C7a;
 Gloria
 
 [Oratio]
-Tuórum corda fidélium, Deus miserátor, illústra: et, beátæ Elisabeth précibus~
-gloriósis; fac nos próspera mundi despícere, et coelésti semper consolatióne~
-gaudére.
+TuÃ³rum corda fidÃ©lium, Deus miserÃ¡tor, illÃºstra: et, beÃ¡tÃ¦ Elisabeth prÃ©cibus~
+gloriÃ³sis; fac nos prÃ³spera mundi despÃ­cere, et coelÃ©sti semper consolatiÃ³ne~
+gaudÃ©re.
 $Per Dominum
 
 [Secreta]
-Accépta tibi sit, Dómine, sacrátæ plebis oblátio pro tuórum honóre Sanctórum:~
-quorum se méritis de tribulatióne percepísse cognóscit auxílium.
+AccÃ©pta tibi sit, DÃ³mine, sacrÃ¡tÃ¦ plebis oblÃ¡tio pro tuÃ³rum honÃ³re SanctÃ³rum:~
+quorum se mÃ©ritis de tribulatiÃ³ne percepÃ­sse cognÃ³scit auxÃ­lium.
 $Per Dominum
 
 [Postcommunio]
-Satiásti, Dómine, famíliam tuam munéribus sacris: ejus, quaesumus, semper~
-interventióne nos réfove, cujus sollémnia celebrámus.
+SatiÃ¡sti, DÃ³mine, famÃ­liam tuam munÃ©ribus sacris: ejus, quÇ½sumus, semper~
+interventiÃ³ne nos rÃ©fove, cujus sollÃ©mnia celebrÃ¡mus.
 $Per Dominum
 
 [Commemoratio Oratio]
 !Pro S. Pontiano Papa et Martyre
-@Commune/C2c:Oratio:s/N\./Pontiáni/
+@Commune/C2c:Oratio:s/N\./PontiÃ¡ni/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Oratio Gregem
 
 [Commemoratio Secreta]
 !Pro S. Pontiano Papa et Martyre
-@Commune/C2c:Secreta:s/N\./Pontiáni/
+@Commune/C2c:Secreta:s/N\./PontiÃ¡ni/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Secreta Gregem
 
 [Commemoratio Postcommunio]
 !Pro S. Pontiano Papa et Martyre
-@Commune/C2c:Postcommunio:s/N\./Pontiáno/
+@Commune/C2c:Postcommunio:s/N\./PontiÃ¡no/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Postcommunio Gregem

@@ -1,14 +1,11 @@
 [Rank]
-Św. Marjusza i Towarzyszy Męczenników;;Simplex;;1.1;;vide C3
-
-[Rule]
-vide C3;
+Św. Marjusza, Marty, Audifaksa i Abachusa Męczenników;;Simplex;;1.1;;vide C3
 
 [Oratio]
 Wysłuchaj, Panie, modlitw ludu Twego, który Cię błaga za przyczyną Świętych Twoich, abyśmy już mogli w tem doczesnem życiu cieszyć się pokojem i do osiągnięcia wiecznego pomoc Twoją otrzymać.
 $Per Dominum
 
-[Commemoratio]
+[Commemoratio] (rubrica Divino aut rubrica 1955 aut rubrica 1960)
 !Wspomnienie Św. Kanuta Męczennika
 @Commune/C2:Oratio proper
 $Oremus

@@ -182,15 +182,10 @@ Prince of the Apostles.
 &teDeum
 
 [Ant Laudes]
-Mary arose * and went into the hill country with haste, into a city of Judah.
-Mary entered * into the house of Zacharias, and saluted Elizabeth.
-When Elizabeth heard * the salutation of Mary, the babe leaped in her womb, and she was filled with the Holy Ghost. Alleluia.
-Blessed art thou among women, * and blessed is the Fruit of thy womb.
-As soon as the voice of thy salutation sounded in mine ears, the babe leaped in my womb for joy. Alleluia.
+@:Ant Vespera:s/;;.*//g
 
 [Versum 2]
-V. Blessed art thou among women.
-R. And blessed is the Fruit of thy womb.
+@:Versum 1
 
 [Ant 2]
 When Elizabeth heard the salutation * of Mary, she spoke out with a loud voice and said: Whence is this to me, that the Mother of my Lord should come to me, alleluia.
