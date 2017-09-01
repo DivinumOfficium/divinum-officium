@@ -1,32 +1,19 @@
 [Rank]
-S. Aegidii Abbatis;;Simplex;;1.1;;vide C5
+S. Ægidii Abbatis;;Simplex;;1.1;;vide C5
 
 [Rule]
 vide C5;
 
 [Oratio]
-@Commune/C5:Oratio1:s/N\./Aegídii/
+@Commune/C5:Oratio1:s/N\./Ægídii/
 
 [Commemoratio]
 !Commemoratio Ss. Duodecim Fratrum Martyrum
-@Commune/C2:Oratio proper
-v. Oremus 
-Fraterna nos, Domine, martyrum tuorum corona~
-lætificet: quæ et fidei nostræ præbeat incrementa virtutum, et multiplici~
-nos suffragio consoletur.
+@Commune/C3:Oratio proper
+$Oremus 
+Fratérna nos, Dómine, Mártyrum tuórum coróna lætíficet: quæ et fidei nostræ præbeat increménta virtútum, et multíplici nos suffrágio consolétur.
 $Per Dominum
 
 [Lectio93]
-Aegidius Atheniensis, regiæ stirpis, a prima ætate divinis litteris et~
-caritatis officiis ita deditus fuit, ut nihil præterea curare videretur. Itaque~
-parentibus mortuis, totum patrimonium in pauperes erogavit: quin etiam tunicam~
-exuit, ut segretum egentem tegeret; qua ille indutus statim convaluit. Sed~
-multis deinceps clarior miraculis, timens sui nominis celebritatem, Arelatem ad~
-beatum Cæsarium contendit: a quo post biennium discedens, secessit in eremum,~
-ubi diutius herbarum radicibus et cervas lacte, quæ statis ad eum horis~
-veniebat, admirabili sanctitate vixit. Quæ cerva, insequentibus quodam die~
-canibus regiis, cum in antrum Aegidii refugisset, Galliæ regem impulit, ut ab~
-eo summis precibus peteret, ut in loco speluncæ monasterium exstrui pateretur.~
-Cujus administrationem, flagitante rege, invitus suscepit: eoque munere aliquot~
-annis prudenter pieque gesto, migravit in cælum.
+Ægidius Atheniénsis, regiæ stirpis, a prima ætate divinis litteris et caritátis officiis ita déditus fuit, ut nihil præterea curare viderétur. Itaque, paréntibus mórtuis, totum patrimónium in páuperes erogávit; quin etiam túnicam exuit, ut ægrotum egentem tégeret, qua ille indútus, statim conváluit. Sed multis deinceps clarior miraculis, timens sui nóminis celebritátem, Arelátem ad beátum Cæsárium contendit. A quo post biennium discédens, secessit in eremum; ubi diutius herbárum radicibus et cervæ lacte, quæ státis ad eum horis veniebat, admirábili sanctitáte vixit. Quæ cerva, insequéntibus quodam die cánibus regiis, cum in antrum Ægidii refugísset, Galliæ regem ímpulit, ut ab eo summis precibus péteret, ut in loco speluncæ monastérium éxstrui paterétur. Cujus administratiónem, flagitante rege, invitus suscépit; eoque munere aliquot annis prudenter piéque gesto, migrávit in cælum.
 &teDeum
