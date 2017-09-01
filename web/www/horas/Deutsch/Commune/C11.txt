@@ -14,48 +14,10 @@ Nun ist vorbei die Winterszeit, * vorüber sind die Regengüsse: auf also, meine
 Ganz schön * bist du geworden und ganz lieblich in deinen Wonnefreuden, o heilige Gottesmutter.;;147
 
 [Capitulum Vespera]
-!Sir 24,14
-v. Von altersher und vor Jahrhunderten gehe ich hervor aus seinem Schoß, und in alle Ewigkeit hör ich nicht auf, dort zu sein; und in seiner heiligen Wohnung erweise ich ihm die gewünschten Dienste.
-$Deo gratias.
+@Commune/C10:Capitulum Vespera
 
 [Hymnus Vespera]
-{:H-Avemaris:}
-!Die erste Strophe des Hymnus wird kniend gebetet.
-v. Gruß dir, Stern im Meere,
-Jungfrau, und doch hehre
-Mutter du dem Worte,
-Sel'ge Himmelspforte!
-_
-Da wir mit dem süßen
-Engelswort dich grüßen,
-Sei stets Frieden spendend,
-Evas Namen wendend.
-_
-Lös das Band der Sünden,
-Bringe Licht den Blinden,
-Fern halt jedes Wehe,
-Alles Gut' erflehe.
-_
-Muttersinn uns zeige,
-Und durch dich stets steige
-Unser Fleh'n zum Kinde,
-Dass es Gnade finde.
-_
-O du auf der Erde
-Reinste Jungfrau, werde
-Allen uns als milde,
-Keusche Maid zum Bilde.
-_
-Mach uns rein das Leben,
-Halt den Weg uns eben,
-Dass in sel'gen Auen,
-Einst wir Jesus schauen.
-_
-Gott und seinem Sohne
-Auf dem höchsten Throne
-Und dem heil'gen, hehren
-Geist bringt ew'ge Ehren.
-Amen.
+@Commune/C10:Hymnus Vespera
 
 [Versum 1]
 V. Mach mich würdig, dich zu loben, heil'ge Jungfrau.
@@ -267,54 +229,30 @@ Selig bist du, * Maria, da du geglaubt hast, es wird sich alles an dir erfüllen
 Verleihe, wir bitten dich, o Herr und Gott, uns, deinen Dienern, die Gnade, dass wir uns eines ungestörten Wohlbefindens an Geist und Körper erfreuen, und mit Rücksicht auf die so ruhmvolle Fürsprache der heiligen, unversehrten Jungfrau Maria aus dem Elend der gegenwärtigen Welt befreit und in der ewigen Freude glücklich werden.
 $Per Dominum
 
+[Oratio]
+@Commune/C10:Oratio
+
 [Lectio Prima]
-!Sir 24,19-20
-v. Weit und breit verbreite ich wie duftiger Zimmet und Balsam Wohlgeruch, wie die feinste Myrrhe ströme ich den lieblichsten Duft aus.
+@Commune/C10:Lectio Prima
 
 [Capitulum Tertia]
 @:Capitulum Vespera
 
 [Responsory Tertia]
-R.br. Wie herrlich du bist * und wie prächtig.
-R. Wie herrlich du bist * und wie prächtig.
-V. Zieh aus nun, glücklich schreite voran und regiere.
-R. Und wie prächtig.
-&Gloria
-R. Wie herrlich du bist * und wie prächtig.
-_
-V. Es schafft ihr Freude Gott mit seinem Antlitz.
-R. Der Herr ist in ihrem Innern; darum hat sie keinen Schaden.
+@Commune/C10:Responsory Tertia
 
 [Capitulum Sexta]
-!Sir 24,15-16
-v. Und so habe ich mich festgesetzt auf Sion und in der heiligen Stadt mich niedergelassen; und nun entfalte ich in Jerusalem meine Macht. Nun bin ich festgewurzelt im auserwählten Volk, damit dieses aus den Gütern meines Gottes seinen ständigen Segen erhält; denn wo Schützlinge Gottes versammelt sind, da lasse ich mich gerne festhalten.
-$Deo gratias.
+@Commune/C10:Capitulum Sexta
 
 [Responsory Sexta]
-R.br. Es schafft ihr Freude * Gott mit seinem Antlitz.
-R. Es schafft ihr Freude * Gott mit seinem Antlitz.
-V. Der Herr ist in ihrem Innern; darum hat sie keinen Schaden.
-R. Gott mit seinem Antlitz.
-&Gloria
-R. Es schafft ihr Freude * Gott mit seinem Antlitz.
-_
-V. Es hat sie Gott erwählt und besonders bevorzugt.
-R. Und hat ihr eine Wohnung gewährt in seinem Zelte.
+@Commune/C10:Responsory Sexta
 
 [Capitulum Nona]
 @:Lectio Prima
-$Deo gratias.
+$Deo gratias
 
 [Responsory Nona]
-R.br. Es hat sie Gott erwählt * und besonders bevorzugt.
-R. Es hat sie Gott erwählt * und besonders bevorzugt.
-V. Und hat ihr eine Wohnung gewährt in seinem Zelte.
-R. Und besonders bevorzugt.
-&Gloria
-R. Es hat sie Gott erwählt * und besonders bevorzugt.
-_
-V. Liebliche Anmut umfließt dein Antlitz.
-R. So hat Gott dich gesegnet auf ewig.
+@Commune/C10:Responsory Nona
 
 [Versum 3]
 @:Versum 1
