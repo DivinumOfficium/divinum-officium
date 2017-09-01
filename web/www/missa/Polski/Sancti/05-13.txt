@@ -1,0 +1,52 @@
+[Rank]
+S.Roberti Ballarmino Episcopi Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[RankNewcal]
+S.Roberti Ballarmino Episcopi Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
+
+[Name]
+Roberte
+
+[Rule]
+Gloria
+CredoDA
+
+[Comment]
+# 13 V – Św. Roberta Bellarmina, Biskupa, Wyznawcy i Doktora Kościoła
+! 3 klasy
+! Szaty białe
+Św. Robert urodził się w Montepulciano w Toskanii w roku 1542. Mając 18 lat wstąpił do Towarzystwa Jezusowego. Pracował jako kaznodzieja i profesor teologii w Lowanium i w Rzymie, gdzie był spowiednikiem św. Alojzego Gonzagi. W Rzymie również powstało jego trzytomowe dzieło zbijające błędy protestantów oraz dwa katechizmy. Mniejszy został przetłumaczony na 60 języków. Św. Robert był doradcą trzech papieży. W roku 1599 został kardynałem i arcybiskupem Kapui. Pod koniec życia zrzekł się swoich godności i zamieszkał w domu nowicjatu, w którym umarł w roku 1621.
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Boże, Tyś dla usunięcia podstępnych błędów i dla obrony praw Stolicy Apostolskiej ozdobił św. Roberta, Twego Biskupa i Doktora, przedziwną uczonością i cnotą; spraw, niechaj dzięki jego zasługom i wstawiennictwu wzrastamy w umiłowaniu prawdy, a serca błądzących niech wrócą do jedności z Twoim Kościołem.
+$Per Dominum
+
+[Lectio]
+@Sancti/03-07:Lectio
+
+[GradualeP]
+Alleluja, alleluja.
+V. Uczeni będą świecić jak światłość sklepienia. Alleluja.
+V. Którzy ku sprawiedliwości wprawiają wielu, jak gwiazdy na wieki wieczne. Alleluja.
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+!Ps 72:28
+Mnie zaś dobrze jest być blisko Boga, w Panu Bogu pokładać nadzieję i głosić wszystkie dzieła Twoje w bramach córy Syjońskiej, alleluja.
+
+[Secreta]
+Składamy Ci, Panie, dary ofiarne jako miłą wonność; spraw, abyśmy pouczeni nauką i przykładem św. Roberta z radosnym sercem biegli drogą Twoich przykazań.
+$Per Dominum.
+
+[Communio]
+!Mt 5:14; 5:16
+Wy jesteście światłością świata. Tak niechaj świeci światłość wasza przed ludźmi, aby widzieli dobre czyny wasze i chwalili Ojca waszego, który jest w niebiesiech, alleluja.
+
+[Postcommunio]
+Panie Boże nasz, niech przyjęty przez nas Sakrament podtrzymuje w naś żar miłości, którym rozpalony św. Robert poświęcał się nieustannie dla Twojego Kościoła.
+$Per Dominum
