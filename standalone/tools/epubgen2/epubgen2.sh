@@ -261,12 +261,12 @@ foreachHourInRange() {
 			for DAY in $(seq -w $DAYN); do
 				for H in $(seq 0 $HORA_INDEX_LAST); do
 					formatFilename
-					$1
+					$1 &
 				done
+				wait
 			done
 		done
 	done
-
 	
 }
 
