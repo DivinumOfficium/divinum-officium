@@ -1,3 +1,51 @@
+[#Incipit]
+#Eröffnung
+
+[#Invitatorium]
+#Invitatorium
+
+[#Hymnus]
+#Hymnus
+
+[#Psalmi]
+#Psalmen
+
+[#Psalmi cum lectionibus]
+#Psalmen und Lesungen
+
+[#Capitulum Responsory Versus]
+#Kapitel Responsorium Versikel
+
+[#Capitulum Hymnus Versus]
+#Kapitel Hymnus Versikel
+
+[#Canticum]
+#Canticum
+
+[#Preces Dominicales]
+#Preces Dominicales
+
+[#Preces Dominicales et Feriales]
+#Gemeinsamer Teil der Preces Dominicales und der Preces feriales
+
+[#Preces Feriales]
+#Preces feriales
+
+[#Suffragium]
+#Suffragium
+
+[#Oratio]
+#Oration
+
+[#Orationes]
+#Oration
+
+[#Lectio brevis]
+#Kurzlesung
+
+[#Conclusio]
+#Abschluss
+
 [Pater noster]
 Vater unser
 
@@ -17,7 +65,7 @@ Die Ehre sei dem Vater
 Kein Die Ehre sei dem Vater
 
 [gloria]
-Glória
+Die Ehre sei dem Vater
 
 [Requiem]
 Réquiem
@@ -26,46 +74,49 @@ Réquiem
 Alleluja
 
 [Laus tibi]
-Laus tibi, Domine
+Lob sei dir, Herr
 
 [Dominus vobiscum]
 Der Herr sei mit euch
 
 [Domine exaudi]
-Dómine, exáudi
+O Herr, erhöre
+
+[secunda Domine exaudi omittitur]
+das zweite "O Herr, erhöre meine Bitten" wird ausgelassen
 
 [Confiteor]
-Confíteor
+I gestehe es Gott
 
 [Misereatur]
-Misereátur
+Es erbarme sich unser
 
 [Indulgentiam]
-Indulgéntiam
+Milde, Nachsicht, Lossprechung und Nachlassung
 
 [Domine labia]
-O Herr, du wollest
+O Herr, du wollest meine Lippen auftun
 
 [Deus in adjutorium]
-O Herr, sei nun
+O Gott, sei nun bedacht drauf, mir zu helfen
+
+[Deusinadjutorium]
+O Gott, sei nun bedacht drauf, mir zu helfen
 
 [Tu autem]
-Tu autem
+Du aber
 
 [Aperi]
 Öffne doch
 
 [Benedicamus Domino]
-Benedicámus Dómino
+Wir wollen den Herrn preisen
 
 [Benedicamus Domino alleluja]
-Benedicámus Dómino, allelúja, allelúja
+Wir wollen den Herrn preisen, alleluja, alleluja
 
 [Fidelium animae]
-Fidélium ánimæ
-
-[Oremus]
-Lasset uns beten
+Die Seelen der Verstorbenen
 
 [Hymnus]
 Hymnus
@@ -73,77 +124,74 @@ Hymnus
 [Psalmus]
 Psalm
 
+[Oremus]
+Lasset uns beten.
+
+[Benedictio]
+Benediktion
+
+[Absolutio]
+Absolution
+
 [Per Dominum]
-Per Dóminum
+Im Hinblick auf unsern Herrn Jesus Christus
 
 [Per Dominum eiusdem]
-Per Dóminum ejúsdem
+Through the same Lord Jesus Christ
 
 [Qui cum Patre]
-Qui cum Patre
+Who liveth and reigneth
 
 [Per eumdem]
-Per eúmdem
+Through the same
 
 [Qui vivis]
-Qui vivis
+Who livest
 
 [Qui tecum]
-Qui tecum
+Who with thee
 
-[Sacrosanctaea]
-Sacrosanctæa
+[Sacrosancta]
+To the most holy
 
 [Te Deum]
 Te Deum
 
 [Deo gratias]
-Deo grátias
+Gott sei Dank gesagt.
 
 [Lectio]
 Lesung
 
 [Ante]
-Ante
+Vor dem
 
 [Divinum Officium]
-Divinum Officium
+Stundengebet
 
 [Post]
-Post
+Nach dem
 
 [Commemoratio]
 Kommemoration
 
-[#Incipit]
-#Eröffnung
+[Antiphona]
+Antiphon
 
-[#Invitatorium]
-#Invitatorium
+[Antiphonae]
+Antiphonen
 
-[#Hymnus]
-#Hymnus
+[et Psalmi]
+und Psalmen
 
-[#Psalmi cum lectionibus]
-#Psalmen und Lesungen
+[Psalmi, antiphonae]
+Psalmen, Antiphonen
 
-[#Psalmi]
-#Psalmen
+[Psalmi et antiphonae]
+Psalmen und Antiphonen
 
-[#Capitulum Hymnus Versus]
-#Kapitel Hymnus Versikel
-
-[#Capitulum Responsorium Versus]
-#Kapitel Responsorium Versikel
-
-[#Lectio brevis]
-#Kurzlesung
-
-[#Oratio]
-#Oration
-
-[#Conclusio]
-#Abschluss
+[Psalmi Dominica, antiphonae]
+Psalmen vom Sonntag, Antiphonen
 
 [Evangelist]
 Mt|Mk|Lk|Joh
