@@ -1109,7 +1109,7 @@ sub precedence {
             my $key;
             foreach $key (%s)
             {
-            if ($key =~ /(Rank|Name|Rule|Lectio|Benedictio|Ant Matutinum)/i) {next;}
+            if ($key =~ /(Rank|Name|Rule|Lectio|Benedictio|Ant Matutinum|Commemoratio)/i) {next;}
             $winner{$key} = $s{$key};
             $winner2{$key} = $s2{$key};
             }
