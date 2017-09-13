@@ -519,7 +519,7 @@ sub lectiones {
 
     if ($winner =~ /sancti/i && ($winner{Rank} =~ /(s\.|ss\.)/i && $winner{Rank} !~ /vigil/i) && !$divaux) { 
       my $j = 6;
-      if ($winner{Rank} =~ /(virgin|vidua|poenitentis|C6|C7)/i) {$j += 2;}
+      if ($winner{Rank} =~ /(virgin|vidua|poenitentis|pœnitentis|C6|C7)/i) {$j += 2;}
       if ($winner{Rank} =~ /ss\./i) {$j++;}  
       $a[3] = $a[$j];
     }
@@ -535,7 +535,7 @@ sub lectiones {
   
   }
 
-  if ($version =~ /1960/ && $lang =~ /Latin/i) {$a[1] = 'Jube, Domine, benedicere.';}  
+  if ($version =~ /1960/ && $lang =~ /Latin/i) {$a[1] = 'Jube, Dómine, benedícere.';}  
 
 
   if ($num > 0) {$num = ($num -1) * 3 + 1;}
