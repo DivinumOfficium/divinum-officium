@@ -1,0 +1,67 @@
+[Rank]
+S. Bedae Venerabilis Confessoris et Ecclesiae Doctoris;;Duplex majus;;4;;vide C4a
+
+[RankNewcal]
+S. Bedae Venerabilis Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
+
+[Rule]
+vide C4a;
+CPapaM=Joánnem;
+Gloria
+
+[Comment]
+# 27 V – Św. Bedy Czcigodnego, Wyznawcy i Doktora Kościoła
+! 3 klasy
+! Szaty białe
+Św. Beda, już za życia nazywany «Czcigodnym», urodził się w Yarrow w Anglil. Już w dzieciństwie został oddany na wychowanie św. Benedyktowi Biscop, opatowi klasztoru benedyktyńskiego w Wearmuth, i sam poszedł w jego ślady. Był jednym z najuczeńszych mężów VIII wieku; napisał liczne dzieła historyczne i teologiczne, które zjednały mu tytuł Doktora Kościoła. Zmarł w Wigilię Wniebowstąpienia Pańskiego 26 maja 735 roku.
+
+Wspomnienie św. Jana I, Papieża i Męczennika. Król Teodoryk, arianin, wtrącił św. Jana I do więzienia w Rawennie, gdzie papież zmarł 18 maja 526 roku. 27 maja przeniesiono jego ciało do Rzymu.
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Boże, który wsławiłeś Swój Kościół nauką św. Bedy, Twego Wyznawcy i Doktora, spraw miłościwie, niech sługi Twoje oświeca światło jego mądrości i wspomagają jego zasługi.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[GradualeP]
+@Commune/C4a:GradualeP
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+@Commune/C4a:Secreta
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+@Commune/C4a:Postcommunio
+
+[Commemoratio Oratio]
+!Wspomnienie św. Jana I
+@Commune/C2b:Oratio:s/N\./Joánnis/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
+
+[Commemoratio Secreta]
+!Wspomnienie św. Jana I
+@Commune/C2b:Secreta:s/N\./Joánne/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
+
+[Commemoratio Postcommunio]
+!Wspomnienie św. Jana I
+@Commune/C2b:Postcommunio:s/N\./Joánne/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem
