@@ -1,0 +1,51 @@
+[Rank]
+S. Augustini Episcopi Confessoris;;Duplex;;3;;vide C4
+
+[RankNewcal]
+S. Augustini Episcopi Confessoris;;Duplex optional;;2;;vide C4
+
+[Rule]
+vide C4;mtv
+Gloria
+
+[Comment]
+# 28 V – Św. Augustyna z Canterbury, Biskupa i Wyznawcy
+! 3 klasy
+! Szaty białe
+Na życzenie władcy angielskiego papież Grzegorz I wysłał św. Augustyna z czterdziestoma mnichami do Wielkiej Brytanii. Św. Augustyn ochrzcił króla Kentu Etelberta i wielu jego poddanych w dzień Zesłania Ducha Świętego 597 roku. W tymże roku otrzymał konsekrację biskupią, a w roku 601 otrzymał paliusz arcybiskupi i godność prymasa Anglii. Zmarł 26 maja 604 roku. Za jego przyczyną modlimy się o powrót Anglii do jedności kościelnej.
+
+[Introitus]
+@Commune/C4d:Introitus
+
+[Oratio]
+Boże, który raczyłeś oświecić ludy Anglii światłem prawdziwej wiary prez nauczanie i cuda św. Augustyna, Twego Wyznawcy i Biskupa, spraw, by za jego wstawiennictwem serca zbłąkane wróciły do jedności Twej prawdy, a my byśmy się zjednoczyli w pełnieniu Twojej woli.
+$Per Dominum
+
+[Lectio]
+Czytanie z Listu świętego Pawła Apostoła do Tesaloniczan.
+!1 Tes 2:2-9
+Bracia: Zaufawszy Bogu naszemu głosiliśmy wam Ewangelię z wielką troskliwością. A upominanie nasze nie wypływało z błędu, nieczystej pobudki albo podstępu, lecz jako byliśmy przez Boga uznani za godnych, aby nam zwierzona była Ewangelia, tak też i przepowiadamy, aby się nie ludziom podobać, ale Bogu, który bada serca nasze. Nigdy bowiem nie mówiliśmy słowami pochlebnymi, jako wiecie, aniśmy też powodowali się chciwością, jak tego świadkiem jest Bóg. Nie szukaliśmy również chwały u ludzi, ani u was, ani u innych. I mogąc, jako apostołowie, być wam ciężarem, staliśmy się raczej maluczkimi pośród was, jako żywicielka tuląca dzieci swoje. Tak was umiłowaliśmy, że pragnęliśmy gorąco dać wam nie tylko Ewangelię Bożą, ale oddać nawet i życie nasze, bo staliście się dla nas najdroższymi. Wszak pamiętacie, bracia, pracę naszą i trud. Pracując we dnie i w nocy, głosiliśmy wam Ewangelię Bożą, abyśmy dla nikogo z was nie byli ciężarem.
+
+[Graduale]
+@Commune/C4d:Graduale
+
+[GradualeP]
+@Commune/C4d:GradualeP
+
+[Evangelium]
+@Sancti/04-25:Evangelium
+
+[Offertorium]
+@Commune/C4d:Offertorium
+
+[Secreta]
+Składamy Ci, Panie ofiarę w uroczystość św. Augustyna, Twego Wyznawcy i Biskupa, prosząc pokornie, by zbłąkane owieczki, wróciwszy do prawdziwej owczarni, żywiły się tym pokarmem zbawienia.
+$Per Dominum
+
+[Communio]
+@Commune/C4d:Communio
+
+[Postcommunio]
+Posileni zbawienną ofiarą, pokornie błagamy Cię, Panie, aby dzięki orędownictwu św. Augustyna na każdym miejscu nieustannie składano ją Twojemu imieniu.
+$Per dominum
+
