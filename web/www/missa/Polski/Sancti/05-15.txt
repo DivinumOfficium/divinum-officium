@@ -1,0 +1,49 @@
+[Rank]
+S. Johanni Baptistae de la Salle Confessoris;;Duplex;;3;;vide C5
+
+[Rule]
+Gloria
+
+S. Joannis Baptistæ de la Salle
+Confessoris
+Duplex
+
+[Comment]
+# 15 V – Św. Jana Chrzciciela de la Salle, Wyznawcy
+! 3 klasy
+! Szaty białe
+Św. Jan Chrzciciel de la Salle (urodzony w Reims w roku 1651), pochodził ze znakomitej rodziny. Został kapłanem i kanonikiem w rodzinnym mieście. Zrozumiawszy swoje powołanie, rozdał majątek ubogim i poświęcił się wychowaniu ubogich dzieci. Z czasem założył zgromadzenie Braci Szkół Chrześcijańskich, które wkrótce rozszerzyło się w całym Kościele kontynuując dzieło swojego założyciela. Św. Jan zmarł w Wielki Piątek 7 kwietnia 1719 roku.
+
+Msza wspólna nr 21 Os iusti, z wyjątkiem Kolekty i Ewangelii.
+
+[Introitus]
+@Commune/C5:Introitus
+
+[Oratio]
+Boże, Tyś powołał świętego Wyznawcę Jana Chrzciciela do chrześcijańskiego wychowania ubogich i umacniania młodzieży na drodze prawdy i utworzyłeś przezeń nową rodzinę zakonną w Kościele; spraw łaskawie, abyśmy za jego wstawiennictwem i przykładem, płonąc gorliwością o Twoją chwałę w dziele zbawienia dusz, mogli się stać uczestnikami jego nagrody niebieskiej.
+$Per Dominum
+
+[Lectio]
+@Commune/C5:Lectio
+
+[Graduale]
+@Commune/C5:Graduale
+
+[Graduale]
+@Commune/C5:GradualeP
+
+[Evangelium]
+@Sancti/01-31:Evangelium
+
+[Offertorium]
+@Commune/C5:Offertorium
+
+[Secreta]
+@Commune/C5:Secreta
+
+[Communio]
+@Commune/C5:Communio
+
+[Postcommunio]
+@Commune/C5:Postcommunio
+
