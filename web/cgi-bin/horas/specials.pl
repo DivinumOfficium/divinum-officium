@@ -1100,6 +1100,8 @@ sub oratio
     } else {$w =~ s/\$(Per|Qui) .*?\n//;}
     }
 
+    $w =~ s/^(?:v. )?/v. /;
+
     push (@s, $w);
     if ($rule =~ /omit .*? commemoratio/i) {return;}
 
