@@ -1,0 +1,58 @@
+[Rank]
+S. Gregorii VII Papae Confessoris;;Duplex;;3;;vide C4b
+
+[Rule]
+vide C4b;
+9 lectiones
+CPapaM=Urbánum;
+Gloria
+
+[Comment]
+# 25 V – Św. Grzegorza VII, Papieża i Wyznawcy
+! 3 klasy
+! Szaty białe
+Urodzony w Toskanii około roku 1021 Hildebrand wstąpił do sławnego opactwa benedyktyńskiego w Cluny. Był doradcą kilku papieży. W roku 1073 został wybrany papieżem i przyjął imię Grzegorza VII. Przystąpił do reformy Kościoła zwalczając symonię, małżeństwa duchownych i nadawanie urzędów kościelnych przez świeckich. Napotkał na opór cesarza Henryka IV, z którym walczył aż do śmierci. Umarł na wygnaniu w Salerno 25 maja 1085 roku. Ostatnie jego słowa były: «Umiłowałem sprawiedliwość, a nienawidziłem nieprawość, dlatego umieram na wygnaniu». Klęska św. Grzegorza była pozorna. Jego zasady wkrótce przyjęły się w całym Kościele.
+
+Msza wspólna nr 8 Si digilis, z wyjątkiem Kolekty
+
+Wspomnienie św. Urbaba, Papieża i Męczennika. Św. Urban rządził Kościołem w latach 222-230.
+
+[Introitus]
+@Commune/C4b:Introitus
+
+[Oratio]
+Boże, mocy ufających Tobie, który dla obrony wolności Kościoła umocniłeś cnotą wytrwałości św. Grzegorza, Twojego Wyznawcę i Papieża, spraw, abyśmy za jego przykładem i przyczyną mężnie pokonywali wszelkie przeciwności.
+$Per Dominum
+
+[Lectio]
+@Commune/C4b:Lectio
+
+[Graduale]
+@Commune/C4b:Graduale
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+@Commune/C4:Secreta
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+@Commune/C4:Postcommunio
+
+[Commemoratio Oratio]
+!Wspomnienie św. Urbana
+@Commune/C4b:Oratio1
+
+[Commemoratio Secreta]
+!Wspomnienie św. Urbana
+@Commune/C4b:Secreta1
+
+[Commemoratio Postcommunio]
+!Wspomnienie św. Urbana
+@Commune/C4b:Postcommunio1

@@ -1,0 +1,45 @@
+[Rank]
+S. Bernardini Senensis Confessoris;;Semiduplex;;2.1;;vide C5
+
+[Rule]
+vide C5;
+Gloria
+
+[Comment]
+# 20 V – Św. Bernardyna ze Sieny, Wyznawcy
+! 3 klasy
+! Szaty białe
+Św. Bernardyn (urodzony w Massa w roku 1380) pochodził ze znakomitej rodziny. Wyrzekł się wszystkiego, by iść za Chrystusem. Wstąpił do zakonu Franciszkanów i zasłynął jako kaznodzieja ludowy. Wespół ze św. Janem Kapistranem przeprowadził reformę zakonu. W Polsce członków zreformowanej gałęzi zakonu franciszkańskiego od jego imienia nazwano Bernardynami. Św. Bernardyn odznaczał się szczególną czcią imienia Jezus. Umarł w czasie pracy apostolskiej w Akwilei 20 maja 1444 roku.
+
+Msza wspólna nr 21 Os iusti, z wyjątkiem Kolekty
+
+[Introitus]
+@Commune/C5:Introitus
+
+[Oratio]
+Panie Jezu, któryś zapalił św. Bernardyna, Twego Wyznawcę, niezwykłą miłością świętego imienia Twojego, prosimy Cię: przez jego zasługi i orędownictwo tchnij w nas łaskawie ducha miłości ku Tobie:
+$Qui vivis
+
+[Lectio]
+@Commune/C5:Lectio
+
+[Graduale]
+@Commune/C5:Graduale
+
+[GradualeP]
+@Commune/C5:GradualeP
+
+[Evangelium]
+@Commune/C5:Evangelium
+
+[Offertorium]
+@Commune/C5:Offertorium
+
+[Secreta]
+@Commune/C5:Secreta
+
+[Communio]
+@Commune/C5:Communio
+
+[Postcommunio]
+@Commune/C5:Postcommunio

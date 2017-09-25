@@ -1,0 +1,45 @@
+[Rank]
+S. Mariae Magdalenae de Pazzis Virginis;;Semiduplex;;2.1;;vide C6
+
+[Rule]
+vide C6;
+Gloria
+
+[Comment]
+# 29 V – Św. Marii Magdaleny Pazzi, Dziewicy
+! 3 klasy
+! Szaty białe
+Św. Maria Magdalena, urodzona w 1566 roku we Florencji ze znakomitego rodu Pazzich, w 10 roku życia złożyła ślub czystości. Wkrótce wstąpiła do zakonu Karmelitanek. Oddawała się surowym umartwieniom. Za hasło obrała słowa: «Cierpieć, a nie umierać». Przez swoje cierpienia pragnęła wynagrodzić grzechy świata. Umarła 25 maja 1607 roku, a ciało poddawane za życia srogim umartwieniom zostało zachowane od zepsucia.
+
+Msza wspólna nr 26 Dilexisti, z wyjątkiem Kolekty
+
+[Introitus]
+@Commune/C6:Introitus
+
+[Oratio]
+Boże, miłośniku dziewictwa, który ozdobiłeś niebieskimi darami św. Dziewicę Marię Magdalenę, gorejącą miłością ku Tobie, spraw, abyśmy naśladowali w czystości i miłości tę, którą czcimy świątecznym obchodem.
+$Per Dominum
+
+[Lectio]
+@Commune/C6:Lectio
+
+[Graduale]
+@Commune/C6:Graduale
+
+[GradualeP]
+@Commune/C6:GradualeP
+
+[Evangelium]
+@Commune/C6:Evangelium
+
+[Offertorium]
+@Commune/C6:Offertorium
+
+[Secreta]
+@Commune/C6:Secreta
+
+[Communio]
+@Commune/C6:Communio
+
+[Postcommunio]
+@Commune/C6:Postcommunio
