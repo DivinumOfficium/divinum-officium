@@ -1,0 +1,44 @@
+[Rank]
+Ss. Cypriani et Justinae Martyrum;;Simplex;;1.1;;vide C3
+
+[Rule]
+vide C3;
+Gloria
+
+[Comment]
+# 26 IX – Śś. Cypriana i Justyny, Męczenników
+! Wspomnienie
+! Szaty czerwone
+Św. Cyprian, biskup antiocheński, został ścięty za wiarę około 304 roku. Nie znamy szczegółów życia i śmierci św. Justyny. 
+
+Msza wspólna nr 15 Salus autem, z wyjątkiem kolekty, sekrety i pokomunii
+
+[Introitus]
+@Commune/C3b:Introitus
+
+[Oratio]
+Panie, niech nas otacza ciągła opieka świętych Męczenników Cypriana i Justyny, bo nie przestajesz łaskawie spoglądać na tych, których raczysz wspierać taką pomocą.
+$Per Dominum
+
+[Lectio]
+@Commune/C3b:Lectio
+
+[Graduale]
+@Commune/C3b:Graduale
+
+[Evangelium]
+@Commune/C3b:Evangelium
+
+[Offertorium]
+@Commune/C3b:Offertorium
+
+[Secreta]
+Ofiarujemy Ci, Panie, te dary jako wyraz naszego oddania; przyjmij je łaskawie ku chwale Twoich Świętych i spraw w Swoim miłosierdziu, aby przyczyniły się do naszego zbawienia.
+$Per Dominum
+
+[Communio]
+@Commune/C3b:Communio
+
+[Postcommunio]
+Prosimy Cię, Panie, za wstawiennictwem świętych Męczenników Twoich Cypriana i Justyny, daj nam przyjąć czystą duszą to, co spożyliśmy ustami.
+$Per Dominum

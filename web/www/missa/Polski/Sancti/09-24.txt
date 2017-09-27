@@ -1,0 +1,46 @@
+[Rank]
+Beatae Mariae Virginis de Mercede;;Duplex majus;;4;;ex C11
+
+[Rank1960]
+Beatae Mariae Virginis de Mercede;;Simplex;;1.1;;ex C11
+
+[Rule]
+ex C11;
+Gloria
+Prefatio=Maria=Festivitate
+
+[Comment]
+# 24 IX – N. M. P. od Wykupu Jeńców
+! Wspomnienie
+! Szaty białe
+Święto dzisiejsze jest pamiątką założenia zakonu Najświętszej Maryi Panny od wykupu niewolników. Członkowie tego zakonu zajmowali się wykupywaniem chrześcijan z niewoli muzułmańskiej, a w razie potrzeby sami oddawali się w niewolę w miejsce współbraci. Matka Boża natchnęła tę myśl założycielom i otaczała zakon swoją opieką.
+
+Msza wspólna nr 2 Salve, sancta Parens, z wyjątkiem kolekty.
+
+[Introitus]
+@Tempora/C10:Introitus
+
+[Oratio]
+Boże, Ty przez chwalebną Matkę Syna Twojego raczyłeś wzbogacić Twój Kościół nową rodziną zakonną dla wyzwalania chrześcijan z niewoli pogańskiej; racz sprawić, abyśmy czcząc Ją jako twórczynię tak wielkiego dzieła, przez Jej zasługi i modlitwy zostali wyzwoleni ze wszystkich grzechów i z niewoli szatańskiej.
+$Per eundem
+
+[Lectio]
+@Tempora/C10:Lectio
+
+[Graduale]
+@Tempora/C10:Graduale
+
+[Evangelium]
+@Tempora/C10:Evangelium
+
+[Offertorium]
+@Tempora/C10:Offertorium
+
+[Secreta]
+@Tempora/C10:Secreta
+
+[Communio]
+@Tempora/C10:Communio
+
+[Postcommunio]
+@Tempora/C10:Postcommunio
