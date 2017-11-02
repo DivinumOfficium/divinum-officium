@@ -1871,23 +1871,30 @@ sub getrefs {
       if (!$v) {$a  = "$file Versus $ind missing\n";}
       my $o = '';	 
       if ($item !~ /proper/) {
-        $o = $s{$item};		  
+        my $i = $item; 
+        $i =~ s/\sgregem.*//i; 
+        $o = $s{$i};		  
 		    if (!$o) {$o = "$file:$item missing\n";}
 		    elsif ($o !~ /\!Oratio/i) {$o = "!Oratio\n$o";}
       }	
 	  
-
       # Special processing for Common of Supreme Pontiffs.
-      if ($version !~ /Trident/i && (my ($plural, $class, $name) = papal_commem_rule($rule))) {
-        if ($item =~ /Gregem/i)
-        {
-          $o = papal_prayer($lang, $plural, $class, $name);
-          if ($after =~ /(!Commem.*)/is) {$after = $1;} else {$after = '';}
-          $o = "\$Oremus\n" . $o;
+      my ($plural, $class, $name) = papal_commem_rule($rule);
+      if ($name) {
+        if ($version !~ /Trident/i) {
+          if ($item =~ /Gregem/i)
+          {
+            $o = papal_prayer($lang, $plural, $class, $name);
+            if ($after =~ /(!Commem.*)/is) {$after = $1;} else {$after = '';}
+            $o = "\$Oremus\n" . $o;
+          }
+          
+          # Confessor-Popes have a common Magnificat antiphon at second Vespers.
+          if ($popeclass && $popeclass =~ /C/ && $ind == 3) {$a = papal_antiphon_dum_esset($lang);}
         }
-        
-        # Confessor-Popes have a common Magnificat antiphon at second Vespers.
-        if ($popeclass && $popeclass =~ /C/ && $ind == 3) {$a = papal_antiphon_dum_esset($lang);}
+        else {
+          if ($o =~ /N\./) {$o = replaceNdot($o, $lang, $name);}
+        }
       }
 
       do_inclusion_substitutions($a, $substitutions);
