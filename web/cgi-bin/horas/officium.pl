@@ -456,8 +456,6 @@ $addlocal<BR>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/credits.html" TARGET="_BLANK">Credits</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/Abbreviations.html" TARGET="_BLANK">Abbreviations</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/download.html" TARGET="_BLANK">Download</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
