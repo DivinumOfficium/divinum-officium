@@ -462,7 +462,7 @@ $addlocal<BR>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/Ahelp.html" TARGET="_BLANK">Help</A>
+<A HREF="$htmlurl/Help/help.html" TARGET="_BLANK">Help</A>
 </FONT>
 </P>
 PrintTag
