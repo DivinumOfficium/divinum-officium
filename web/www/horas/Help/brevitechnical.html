@@ -29,7 +29,7 @@
 
 This part of the help manual is written explicitly for encouraging anyone interested
 in the topic to write his/her own system, using whatever he/she wants from these ideas.
-The only restriction is that we at the Divinum Officium Project have no legal responsibility for any mistake, 
+The only restriction is that we at The Divinum Officium Project have no legal responsibility for any mistake, 
 and the ideas cannot be copyrighted, limiting our rights or the access of others to the 
 same ideas.</FONT><BR><BR>
 
@@ -93,24 +93,24 @@ is printed in small red font.<BR><BR>
 and each is hash collection<BR>
 Naming convention is:<PRE>
 Season name w-d
-</PRE> where <I>w</I> is the week of the season, and <I>d</I> is the day of week<BR><BR>
+</PRE> where <I>w</I> is the week of the season, and <I>d</I> is the day of week. (Example: Pent04-2 represents Tuesday of the 4th week after Pentecost.)<BR><BR>
 
 <LI><span class=prma>Sancti</span> is the same collection for the 
 <span class=prma>Proprium Sanctorum</span><BR>
 Naming convention is:<PRE>
 mm-nn
-</PRE> where <I>mm</I> is the month, <I>nn</I> is the day. For practical reasons, unlike in 
+</PRE> where <I>mm</I> is the month, <I>nn</I> is the day. (Example: 07-26 represents July 26, Feast of St. Anne.) For practical reasons, unlike in 
 the Roman Breviary, the Chrismastide offices are set within the Sancti folder.
 <BR><BR>
 
 <LI><span class=prma>Commune</span> is the collection for 
 <span class=prma>Commune sanctorum</span>. The name of the office is 
-under the first key: <B>Name</B>.<BR>
-For practical reasons the <B>Officium Sanctae Mariae Sabbato</B> is among the Tempora files as C10
-<BR><BR><BR>
+under the first key: <B>Name</B>. See <a href="#specialchars">below</a> for examples.<BR>
+For practical reasons the <B>Officium Sanctae Mariae Sabbato</B> is referenced by the programlet from its position among the Tempora files as C10.
+<BR><BR>
 
 <LI><span class=prma>Martyrologium</span> contains the files named as mm-nn for the
-Martyrologium. See <A HREF=credits.html>credits</A> for the sources.<BR><BR><BR>
+Martyrologium. See <A HREF=credits.html>credits</A> for the sources.<BR><BR>
 
 <LI><span class=prma>program</span> folder in <span class=prma>Show files</span>
 list refers to the files described below in cgi-bin/horas folder. 
@@ -119,7 +119,7 @@ list refers to the files described below in cgi-bin/horas folder.
 <A NAME='programs'></A>
 <P ALIGN=CENTER><A HREF=#Top>Top</A></FONT></P>
 <span class=prmm>Programs</span><BR><BR> 
-The programs are written in Perl 5.6 and generate HTML.  The standalone version uses Tk.
+The programs are written in Perl 5.6 and generate HTML.
 
 Environment variables:
 
@@ -181,14 +181,14 @@ hash element, as mentioned earlier.<BR><BR>
  name starts with capital letter that is listed only in <I>all</I> mode, if it starts with 
  small letter, <I>psalmi</I> option will expand it.<BR><BR>
 
- <LI><span class=prma>! exclamation mark</span> will print the line with red font.<BR><BR>
+ <LI><span class=prma>!</span> An exclamation point (at the beginning of a line) will print the line with red font.<BR><BR>
 
  <LI><span class=prma>v. </span> prints the following first leter as Initiale, large red font.
  <BR><BR>
 
  <LI><span class=prma>r. </span> prints the following first letter as regular red font.<BR<BR>
 
- <LI><span class=prma>R.br  R. V. * Ant. Benedictio</span> - these starting words are printed
+ <LI><span class=prma>R.br  R. V. * Ant. Benedictio</span> These starting words are printed
  in regular red font.<BR><BR>
 
  <LI><span class=prma>double end of line</span> represents a cell end, the printout will set
@@ -245,11 +245,11 @@ Each rule is a separate line and exact spelling is required, except for capitali
  is taken from the named file from commune (<I>Cn</I>) or from the file in <I>tempora</I>
  folder (e.g. Pasc0-0 for the Easter octave)<BR><BR>
 
-<LI><span class=prma>vide filename</span> : like above, but only the matutinum lectiones and 
-the <I>antiphone , versum, oratio </I> in Laudes and Vespera are taken from the named file<BR><BR>
+<LI><span class=prma>vide filename</span> : like above, but only the Matins lections and 
+the Lauds & Vespers <I>antiphons, versum, & oratio </I> are taken from the named file.<BR><BR>
 
-<LI><span class=prma>Psalmi Dominica</span> : The Sunday psalm set is used exept if the psal
-is explicitly listen in the proprium file<BR><BR>
+<LI><span class=prma>Psalmi Dominica</span> : The Sunday psalm set is used, except if the psalm
+is explicitly listed in the proprium file.<BR><BR>
 
 <LI><span class=prma>Antiphonas horas</span> : <I>Ant Laudes</I> Antiphons are used for the minor
 hours: <BR>
@@ -259,16 +259,16 @@ hours: <BR>
  <LI>4 = Nona
  </UL><BR>
 
-<LI><span class=prma>9 lectiones</span> : Matutinum with 9 lections.<BR><BR>
+<LI><span class=prma>9 lectiones</span> : Matins with 9 lections.<BR><BR>
 
 <LI><span class=prma>omit <I>group list</I></span> : Skip the named item.<BR><BR>
 
 <LI><span class=prma>limit <I>group list</I></span> : Special (hard coded) rules for the named items.<BR><BR>
 
-<LI><span class=prma>Psalm5 Vespera=nn</span> : The last psalm in vespera is the named one.<BR><BR>
+<LI><span class=prma>Psalm5 Vespera=nn</span> : The last psalm in Vespers is the named one.<BR><BR>
 
 <LI><span class=prma>Capitulum Versum 2 [<I>hour spec</I>]</span> : Capitulum
-is substituted with the [Versum 2] item from propria. This occurs at all hours
+is substituted with the [Versum 2] item from the propria. This occurs at all hours
 other than Compline if <I>hour spec</I> is omitted, at Lauds and Vespers if
 <I>hour spec</I> is <strong>ad Laudes et Vesperas</strong>, and at Lauds only
 if <I>hour spec</I> is <strong>ad Laudes tantum.</strong>.<BR><BR>
