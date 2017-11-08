@@ -38,7 +38,7 @@ same ideas.</FONT><BR><BR>
 <P ALIGN=CENTER><A HREF=#Top>Top</A></FONT></P>
 <span class=prmm>Databases</span><BR><BR> 
 The databases are files, which contain the text of the Breviary. 
-For easier understanding and handling, they are organized into folders.<BR><R>
+For easier understanding and handling, they are organized into folders. Most files use UTF-8 encoding (which is preferred) but some files may still remain in Win-1252 encoding. If editing files, please be aware of this difference, as it can and will effect the appearance of text. If editing via GitHub in a browser, GitHub will automatically transcode files to UTF-8.<BR><BR>
 
 The top level folders are folders for the languages (Latin, English, Magyar, etc.).
 At this moment folders are filled up. The basic rule is that if a file is missing,
@@ -51,7 +51,7 @@ The style and punctuation used within the text is that of the 1962 liturgical bo
 The files itself usually are converted into <span class=prma>Hash elements.</span>
 The <span class=prma>key</span> is enclosed into square brackets 
 <span class=pram>[ ... ]</span> which is a separate line followed by the body of the element.<BR><BR>
-These elements are read and composited by the programlet. The folder and files can be 
+These elements are read and composed by the programlet. The folder and files can be 
 viewed using <span class=prma>Show files/Edit</span> feature, which shows the files
 in the following folders:<BR><BR>
 
@@ -167,7 +167,7 @@ has to be set in the beginning of a line.<BR><BR>
 <LI><span class=prma># hashmark</span> in the files
 of Ordinarium folder or generated represent a chapter label. <I>Special.pl</I> 
 program interprets and expands or limits primarily these lines. Also, they
-respresent the skeleton.<BR><BR>
+respresent the skeleton of the particular Hour.<BR><BR>
 
 <LI><span class=prma>[ name ]</span> in a separate line is the key for a
 hash element, as mentioned earlier.<BR><BR>
@@ -185,7 +185,7 @@ hash element, as mentioned earlier.<BR><BR>
  <LI><span class=prma>v. </span> prints the following first leter as Initiale, large red font.
  <BR><BR>
 
- <LI><span class=prma>r. </span> prints the following first letter as regular red font.<BR<BR>
+ <LI><span class=prma>r. </span> prints the following first letter as regular red font.<BR><BR>
 
  <LI><span class=prma>R.br  R. V. * Ant. Benedictio</span> These starting words are printed
  in regular red font.<BR><BR>
@@ -203,7 +203,7 @@ hash element, as mentioned earlier.<BR><BR>
  in small red font.<BR><BR>
 
  <LI><span class=prma>digits</span> or <span class=prma>digits:digits</span> at the beginning of
- the line in psalmi and lectiones are interpreted as verse numbers and printed in red.<BR><BR>
+ the line in psalms and readings are interpreted as verse numbers, and printed in red.<BR><BR>
  
  <LI><span class=prma>Common Offices (Cn)</span> refer to the Commune Sanctorum:<BR><BR>
  
@@ -277,7 +277,7 @@ if <I>hour spec</I> is <strong>ad Laudes tantum.</strong>.<BR><BR>
 
 <LI><span class=prma>1 nocturn</span> : Matins of one nocturn only.<BR><BR>
 
-<LI><span class=prma>Rubrica 1570 aut Rubrica 1910 aut Rubrica Divino aut Rubrica 1960</span> : Specifies usage of an element solely in one or more of these rubrical usages.<BR><BR>
+<LI><span class=prma>Rubrica 1570 aut Rubrica 1910 aut Rubrica Divino aut Rubrica 1960 (etc.)</span> : Specifies usage of an element solely in one or more of these rubrical usages.<BR><BR>
 
 </UL>
 
