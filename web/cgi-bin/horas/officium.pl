@@ -452,15 +452,15 @@ $addlocal<BR>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF=# onclick="pset('parameters')">Options</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/versions.html" TARGET="_BLANK">Versions</A>
+<A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/credits.html" TARGET="_BLANK">Credits</A>
+<A HREF="../../www/horas/Help/credits.html" TARGET="_BLANK">Credits</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/download.html" TARGET="_BLANK">Download</A>
+<A HREF="../../www/horas/Help/download.html" TARGET="_BLANK">Download</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
+<A HREF="../../www/horas/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/help.html" TARGET="_BLANK">Help</A>
+<A HREF="../../www/horas/Help/help.html" TARGET="_BLANK">Help</A>
 </FONT>
 </P>
 PrintTag
