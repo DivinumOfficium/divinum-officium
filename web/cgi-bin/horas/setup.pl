@@ -13,7 +13,7 @@ $a = 1;
 sub setuptable {
   $command = shift;	
   $title1 = $title;
-  $title1 =~ s/setup/Options/i;
+  $title1 =~ s/Setup/Options/i;
   #*** set input table
   eval("$setup{$command}");	
   setup($command, getsetuppar($command));  
