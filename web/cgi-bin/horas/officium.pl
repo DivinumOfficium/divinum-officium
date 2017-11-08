@@ -373,7 +373,7 @@ PrintTag
   print "</SELECT>\n";
 
 if ($savesetup > 1) {
-my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
 my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
 my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
 my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
@@ -382,7 +382,7 @@ my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
 <SELECT NAME=testmode SIZE=4 onchange="parchange();">
-<OPTION $sel10 VALUE='regular'>regular
+<OPTION $sel10 VALUE='Regular'>Regular
 <OPTION $sel11 VALUE='Seasonal'>Seasonal
 <OPTION $sel12 VALUE='Season'>Season
 <OPTION $sel13 VALUE='Saint'>Saint
@@ -390,12 +390,12 @@ my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
 </SELECT>
 PrintTag
 } else {
-my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
 my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
 <SELECT NAME=testmode SIZE=2 onchange="parchange();">
-<OPTION $sel10 VALUE='regular'>regular
+<OPTION $sel10 VALUE='Regular'>Regular
 <OPTION $sel11 VALUE='Seasonal'>Seasonal
 </SELECT>
 PrintTag
