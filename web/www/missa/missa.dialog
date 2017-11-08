@@ -17,12 +17,12 @@ Text width percent~>$textwidth~>Entry~>12;;
 Version~>$version~>Optionmenu~>{Tridentinum,Divino Afflatu,Reductions 1955,Rubrics 1960};;
 Testmode~>$testmode~>Optionmenu~>{Regular,Tempora,Sancti.Propers};;
 Language 2~>$lang2~>Optionmenu~>languages;;
-Votive~>$votive~>Optionmenu~>{hodie,Dedication,Defunctorum,Coronatio};;
+Votive~>$votive~>Optionmenu~>{hodie,Dedication,Defunctorum,Coronatio,Propaganda};;
 Rubrics~>$rubrics~>Checkbutton;;
 Solemn~>$solemn~>Checkbutton;;
 
 [languages]
-Latin,English,Magyar,Italiano,Deutsch,Polski
+Latin,English,Magyar,Italiano,Deutsch,Polski,French,Spanish 
 
 [communes]
 C1,Commune Apostolorum, 

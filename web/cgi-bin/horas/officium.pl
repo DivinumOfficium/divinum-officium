@@ -358,7 +358,7 @@ PrintTag
   print << "PrintTag";
 <P ALIGN=CENTER>
 &nbsp;&nbsp;&nbsp;  
-<SELECT NAME=expand SIZE=4 onchange="parchange();">
+<SELECT NAME=expand SIZE=1 onchange="parchange();">
 <OPTION $ch1 VALUE='all'>all
 <OPTION $ch2 VALUE='psalms'>psalms
 <OPTION $ch3 VALUE='nothing'>nothing
@@ -368,12 +368,12 @@ PrintTag
 PrintTag
 
   my $vsize = @versions;
-  print "<SELECT NAME=version SIZE=$vsize onchange=\"parchange();\">\n";
+  print "<SELECT NAME=version SIZE=1 onchange=\"parchange();\">\n";
   for ($i = 0; $i < @versions; $i++) {print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";}
   print "</SELECT>\n";
 
 if ($savesetup > 1) {
-my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
 my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
 my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
 my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
@@ -382,7 +382,7 @@ my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
 <SELECT NAME=testmode SIZE=4 onchange="parchange();">
-<OPTION $sel10 VALUE='regular'>regular
+<OPTION $sel10 VALUE='Regular'>Regular
 <OPTION $sel11 VALUE='Seasonal'>Seasonal
 <OPTION $sel12 VALUE='Season'>Season
 <OPTION $sel13 VALUE='Saint'>Saint
@@ -390,12 +390,12 @@ my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
 </SELECT>
 PrintTag
 } else {
-my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
 my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
-<SELECT NAME=testmode SIZE=2 onchange="parchange();">
-<OPTION $sel10 VALUE='regular'>regular
+<SELECT NAME=testmode SIZE=1 onchange="parchange();">
+<OPTION $sel10 VALUE='Regular'>Regular
 <OPTION $sel11 VALUE='Seasonal'>Seasonal
 </SELECT>
 PrintTag
@@ -407,7 +407,7 @@ $sel3 = ($votive =~ /C9/) ? 'SELECTED' : '';
 $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
 
 $addvotive = ($version !~ /monastic/i) ? "&nbsp;&nbsp;&nbsp;\n" .
-  "<SELECT NAME=votive SIZE=4 onchange='parchange()'>\n" .
+  "<SELECT NAME=votive SIZE=1 onchange='parchange()'>\n" .
   "<OPTION $sel1 VALUE='hodie'>hodie\n" .
   "<OPTION $sel2 VALUE=C8>Dedication\n" .
   "<OPTION $sel3 VALUE=C9>Defunctorum\n" .
@@ -434,7 +434,7 @@ my $lang_count = @languages;
  $vers =~ s/ /_/g; 
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
-<SELECT NAME=lang2 SIZE=$lang_count onchange="parchange()">
+<SELECT NAME=lang2 SIZE=1 onchange="parchange()">
 PrintTag
 
 foreach my $lang (@languages)
