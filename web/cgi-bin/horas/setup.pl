@@ -13,7 +13,7 @@ $a = 1;
 sub setuptable {
   $command = shift;	
   $title1 = $title;
-  $title1 =~ s/setup/options/i;
+  $title1 =~ s/Setup/Options/i;
   #*** set input table
   eval("$setup{$command}");	
   setup($command, getsetuppar($command));  
@@ -21,7 +21,7 @@ sub setuptable {
   print << "PrintTag";
 <H1 ALIGN=CENTER><FONT COLOR=MAROON><B><I>$title1</I></B></FONT></H1>
 <TABLE WIDTH=75% BORDER=0 ALIGN=CENTER><TR><TD>
-$input;
+$input
 </TD></TR></TABLE>
 <P ALIGN=CENTER>
 <INPUT TYPE=SUBMIT NAME='button' VALUE=OK>

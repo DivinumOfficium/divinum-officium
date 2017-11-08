@@ -1,0 +1,45 @@
+[Rank]
+S. Januarii Episcopi et Sociorum Martyrum;;Duplex;;3;;vide C3b
+
+[RankNewcal]
+S. Januarii Episcopi et Sociorum Martyrum;;Duplex optional;;2;;vide C3b
+
+[Rule]
+vide C3b;
+9 lectiones
+
+[Comment]
+# 19 IX – Św. Januarego i Towarzyszy, Męczenników
+! 3 klasy
+! Szaty czerwone
+Św. January był biskupem Benewentu. W roku 305 został ścięty wraz z 6 towarzyszami w Puteroli pod Neapolem. Relikwie jego spoczywają w Neapolu. Trzy razy w roku powtarza się w Neapolu «cud św. Januarego». Zakrzepła krew Męczennika, przechowywana w dwu ampułkach, po ustawieniu przed relikwiarzem z głową Świętego staje się płynna i burzy się. Zjawisko to jest notowane od roku 1389.
+
+Msza wspólna nr 15 Salus autem.
+
+[Introitus]
+@Commune/C3b:Introitus
+
+[Oratio]
+Boże, Ty co roku uweselasz nas uroczystością świętych Męczenników Twoich Januarego i Towarzyszy, spraw łaskawie, abyśmy zapalali się przykładami tych, których zasługi nas cieszą.
+$Per Dominum
+
+[Lectio]
+@Commune/C3b:Lectio
+
+[Graduale]
+@Commune/C3b:Graduale
+
+[Evangelium]
+@Sancti/01-19:Evangelium
+
+[Offertorium]
+@Commune/C3b:Offertorium
+
+[Secreta]
+@Commune/C3b:Secreta
+
+[Communio]
+@Commune/C3b:Communio
+
+[Postcommunio]
+@Commune/C3b:Postcommunio

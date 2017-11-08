@@ -1,0 +1,47 @@
+[Rank]
+S. Eustachii et Sociorum Martyrum;;Duplex;;3;;vide C3a
+
+[Rank1960]
+S. Eustachii et Sociorum Martyrum;;Simplex;;1.1;;vide C3a
+
+[Rule]
+Gloria
+
+[Comment]
+# 20 IX – Św. Eustachego i Towarzyszy, Męczenników
+! 3 klasy
+! Szaty czerwone
+Według podania św. Eustachy przyjął chrześcijaństwo zobaczywszy w czasie polowania krzyż między rogami jelenia. Razem z nim przyjęła chrzest żona i synowie. Poniósł męczeństwo z początkiem II wieku.
+
+[Oratio]
+Deus, qui nos concedis sanctorum Martyrum tuorum Eustachii et Sociorum ejus~
+natalitia colere: da nobis in aeterna beatitudine de eorum societate gaudere.
+$Per Dominum
+
+[Introitus]
+@Commune/C3a:Introitus
+
+[Oratio]
+Boże, który nam pozwalasz obchodzić narodziny dla nieba świętych Męczenników Twoich Eustachego i Towarzyszy: daj nam w wiecznej szczęśliwości radować się ich towarzystwem.
+$Per Dominum
+
+[Lectio]
+@Commune/C3a:Lectio
+
+[Graduale]
+@Commune/C3a:Graduale
+
+[Evangelium]
+@Commune/C3a:Evangelium
+
+[Offertorium]
+@Commune/C3a:Offertorium
+
+[Secreta]
+@Commune/C3a:Secreta
+
+[Communio]
+@Commune/C3a:Communio
+
+[Postcommunio]
+@Commune/C3a:Postcommunio

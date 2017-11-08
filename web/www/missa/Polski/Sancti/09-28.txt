@@ -1,0 +1,42 @@
+[Rank]
+S. Wenceslai Ducis et Martyris;;Semiduplex;;2;;vide C2
+
+[Rule]
+vide C2;
+
+[Comment]
+# 28 IX – Św. Wacława, Księcia i Męczennika
+! 3 klasy
+! Szaty czerwone
+Św. Wacław urodził się około roku 907 jako syn księcia czeskiego Wratysława I. Został wychowany po chrześcijańsku przez swoją babkę św. Ludmiłę. Po śmierci ojca, mając osiemnaście lat, objął rządy. Starał się gorliwie o rozkrzewienie chrześcijaństwa, popierając misjonarzy i dając przykład życia chrześcijańskiego. Był hojny dla ubogich i brał w opiekę prosty lud. Wywołało to opozycję możnowładców, na czele której stanął jego młodszy brat Bolesław. Zaprosił on Świętego na ucztę i po niej zamordował go u bramy kościoła 28 września 929 roku. Relikwie spoczywają w katedrze praskiej. Św. Wacław jest patronem Czech i katedry krakowskiej.
+
+Msza wspólna nr 11 In virtute, z wyjątkiem kolekty
+
+[Introitus]
+@Commune/C2:Introitus
+
+[Oratio]
+Boże, któryś przez palmę męczeństwa przeniósł świętego Wacława z ziemskiego władztwa do chwały niebieskiej, chroń nas za jego przyczyną od wszelkich przeciwności i daj nam radować się obcowaniem z nim.
+$Per Dominum
+
+[Lectio]
+@Commune/C2:Lectio
+
+[Graduale]
+@Commune/C2:Graduale
+
+[Evangelium]
+@Commune/C2:Evangelium
+
+[Offertorium]
+@Commune/C2:Offertorium
+
+[Secreta]
+@Commune/C2:Secreta
+
+[Communio]
+@Commune/C2:Communio
+
+[Postcommunio]
+@Commune/C2:Postcommunio
+

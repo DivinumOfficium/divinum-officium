@@ -1,0 +1,50 @@
+[Rank]
+S. Lini Papae et Martyris;;Semiduplex;;2;;vide C4b
+
+[Rule]
+OPapaM=Linum;
+vide C4b;
+Gloria
+
+[Comment]
+# 23 IX – Św. Linusa, Papieża i Męczennika
+! 3 klasy
+! Szaty czerwone
+Św. Linus był bezpośrednim następcą św. Piotra na stolicy rzymskiej. Zmarł około roku 79. Imię jego wymienia się w kanonie Mszy Świętej.
+
+Msza wspólna nr 8 Si digilis.
+
+Wspomnienie św. Tekli, Dziewicy i Męczennicy.
+Św. Tekla, dziewica z Małej Azji, poniosła męczeństwo za Chrystusa około roku 100. Kult jej rozpoczął się w II wieku. 
+
+[Introitus]
+@Commune/C4b:Introitus
+
+[Oratio]
+@Commune/C4b:Oratio
+
+[Lectio]
+@Commune/C4b:Lectio
+
+[Graduale]
+@Commune/C4b:Graduale
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+@Commune/C4b:Secreta
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+@Commune/C4b:Postcommunio
+
+[Commemoratio Oratio]
+! Wspomnienie św. Tekli, Dziewicy i Męczennicy
+Prosimy Cię, wszechmogący Boże, spraw, abyśmy obchodząc narodziny dla nieba świętej Tekli, Twojej Dziewicy i Męczennicy, radowali się z dorocznej uroczystości i korzystali z przykładu tak wielkiej wiary.
+$Per Dominum

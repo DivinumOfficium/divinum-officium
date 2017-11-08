@@ -126,9 +126,6 @@ O jakże szczęśliwa Maryja, której ani pokory nie brakło, ani dziewictwa! I 
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//gm
 
-[Capitulum Laudes]
-@:Capitulum Vespera
-
 [Hymnus Laudes]
 v. Ciebie, błogosławiona Matko Boga,
 Błagamy wszyscy kornie,
@@ -153,12 +150,6 @@ R. Dziewica porodziła nam Zbawiciela; chwalimy cię, Boże nasz.
 
 [Ant 2]
 @Commune/C11:Ant 1:s/Twoją/Twojego Macierzyństwa/
-
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Macierzyństwo Twoje, * Boga Rodzico Dziewico, zwiastowało wesele całemu światu: z Ciebie bowiem wyszło słońce sprawiedliwości, Chrystus, Bóg nasz.

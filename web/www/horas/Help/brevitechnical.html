@@ -4,63 +4,59 @@
   <META NAME='Resource-type' CONTENT='Document'>
   <META NAME='description' CONTENT='Breviarium Romanum'>
   <META NAME='keywords' CONTENT='Church tradition, Breviarium, Officium Divinum'>
-  <TITLE>Technical Divinum Officium</TITLE>
+  <TITLE>Divinum Officium Technical</TITLE>
   <link rel='stylesheet' href='brevi.css' type='text/css'>
 </HEAD>
 <BODY BGCOLOR='#eeeeee' TEXT='#333333'><BR><BR>
-<CENTER><TABLE WIDTH=90% BORDER=0 BGCOLOR='white' CELLSPACING=12><TR><TD>
-
-<CENTER><FONT SIZE=1>
-<A HREF='help.html'>[Getting started]</A>&nbsp;&nbsp;&nbsp;
+<CENTER>
+<A HREF='help.html'>[Help]</A>&nbsp;&nbsp;&nbsp;
 <A HREF='brevitechnical.html'>[Technical information]</A>&nbsp;&nbsp;&nbsp;
 <A HREF='rubrics.html'>[Rubrics]</A>&nbsp;&nbsp;&nbsp;
-<A HREF="../../../cgi-bin/horas/kalendarcomp.pl">[Kalendars]</A>&nbsp;&nbsp;&nbsp;
 <A HREF='credits.html'>[Credits]</A>&nbsp;&nbsp;&nbsp;
-<A HREF='Missing Offices.html'>[Missing offices]</A>&nbsp;&nbsp;&nbsp;
 <A HREF='download.html'>[Download]</A>&nbsp;&nbsp;&nbsp;
 <A HREF='versions.html'>[Versions]</A>&nbsp;&nbsp;&nbsp;
-</FONT></CENTER>
-
+</FONT></CENTER><BR><BR>
+<CENTER><TABLE WIDTH=90% BORDER=0 BGCOLOR='white' CELLSPACING=12><TR><TD>
 <A NAME='Top'></A>
 <H2 ALIGN=CENTER><FONT COLOR=MAROON>Technical information</FONT></H2>
 
-<CENTER><FONT SIZE=1>
+<CENTER>
 <A HREF=#databases>[Databases]</A>&nbsp;&nbsp;&nbsp;
 <A HREF=#programs>[Programs]</A>&nbsp;&nbsp;&nbsp;
 <A HREF=#specialchars>[Special characters]</A>&nbsp;&nbsp;&nbsp;
 <A HREF=#exceptions>[Exceptions]</A>
 </FONT></CENTER><BR><BR>
 
-<FONT SIZE=1>This part of the help manual is written explicitly for encouraging anyone interested
+This part of the help manual is written explicitly for encouraging anyone interested
 in the topic to write his/her own system, using whatever he/she wants from these ideas.
-The only restriction is that we at the Divinum Officium Project have no legal responsibility for any mistake, 
-and my ideas cannot be copyrighted, limiting our rights or the access of others to the 
+The only restriction is that we at The Divinum Officium Project have no legal responsibility for any mistake, 
+and the ideas cannot be copyrighted, limiting our rights or the access of others to the 
 same ideas.</FONT><BR><BR>
 
 
 <A NAME='databases'></A>
-<P ALIGN=CENTER><FONT SIZE=1><A HREF=#Top>Top</A></FONT></P>
+<P ALIGN=CENTER><A HREF=#Top>Top</A></FONT></P>
 <span class=prmm>Databases</span><BR><BR> 
 The databases are files, which contain the text of the Breviary. 
-For easier understanding and handling, they are organized into folders.<BR><R>
+For easier understanding and handling, they are organized into folders. Most files use UTF-8 encoding (which is preferred) but some files may still remain in Win-1252 encoding. If editing files, please be aware of this difference, as it can and will effect the appearance of text. If editing via GitHub in a browser, GitHub will automatically transcode files to UTF-8.<BR><BR>
 
-The top level folders are folders for the languages, currently Latin, English and Magyar.
+The top level folders are folders for the languages (Latin, English, Magyar, etc.).
 At this moment folders are filled up. The basic rule is that if a file is missing,
-the program automatically selects from the English<BR><BR>
+the program automatically selects from the English.<BR><BR>
 
 Each language folder contains the same set of subfolders, which represents the parts of the
 printed berviary volumes: Ordinarium, Psalterium, Tempora, Sancti, Commune. For technical reasons,
 there are separate folders for the psalms, and for the Martyrologium.<BR><BR> 
-
-The files itself usually are converted into <span class=prma>Hash elements</span>
+The style and punctuation used within the text is that of the 1962 liturgical books. One space is used between sentences. In accordance with the principles sent to the typographers of the 1960 editiones typicae, the letter J in the 1960 rubrics is transformed to the letter I. (Sacrae Congregatio Rituum, "Ordinationes ad librorum liturgicorum editores", 26.VI.1960)<BR><BR>
+The files itself usually are converted into <span class=prma>Hash elements.</span>
 The <span class=prma>key</span> is enclosed into square brackets 
-<span class=pram>[ ... ]</span> which is a separate line followed by the body of the element.
-These elements are read and composited by the programlet. The folder and files can be 
+<span class=pram>[ ... ]</span> which is a separate line followed by the body of the element.<BR><BR>
+These elements are read and composed by the programlet. The folder and files can be 
 viewed using <span class=prma>Show files/Edit</span> feature, which shows the files
-in the following folders<BR><BR>
+in the following folders:<BR><BR>
 
 <UL>
-<LI><span class=prma>Ordinarium</span> folder is the collection of the scripts describing the horas.
+<LI><span class=prma>Ordinarium</span> folder is the collection of the scripts describing the canonical hours.
 Each hour is represented by two or more files. These files are not
 converted into hash. A line starting with hashmark organizes the content. These files are used by
 <span class=prma>special.pl</span> program file. If necessary, there are separate
@@ -72,13 +68,12 @@ contains the common prayers. The rest contains the Benedictions, Doxologies, Psa
 as the Invitatory; seasonal parts for Matins (Matutinum special), Lauds, and Vespers (Major special);
 Minor hours (Minor special); antiphons and psalm sets (Psalmi Major|Matutinum|Minor); 
 Marian antiphons, and special seasonal parts for Prime.
-<BR>
-It also has the <B>Tr year</B> files in the <B>Latin/Psalterium</B> folder, and the <B>Translate</B>
-files in the other folders. The Tr=Transfer files have <PRE>
+<BR><BR>
+<LI><span class=prma>Transfer</span> folder has the <B>transfer year</B> files. The Tr=Transfer files have <PRE>
 mm-nn=filename;; 
 </PRE> lines, where 'filename' is the name of the office (from the Proprium de Tempore or Proprium Sanctorum) and the 
 mm-nn is the date in the given year to which it is transfered. For the 1960 rules, there are permanent
-and year to year rules.
+and year to year rules. For example, the TR19602018.txt file has the appropriate transfers for the 1960 rubrics in 2018. It is an ongoing project to establish a perpetual calendar calculation algorithm which would take all anomalies into account. Please help.
 <BR><BR>
 
 <LI><span class=prma>psalms</span> folder holds the 150 psalms, and the 
@@ -97,44 +92,39 @@ is printed in small red font.<BR><BR>
 and each is hash collection<BR>
 Naming convention is:<PRE>
 Season name w-d
-</PRE> where <I>w</I> is the week of the season, and <I>d</I> is the day of week<BR><BR>
+</PRE> where <I>w</I> is the week of the season, and <I>d</I> is the day of week. (Example: Pent04-2 represents Tuesday of the 4th week after Pentecost.)<BR><BR>
 
 <LI><span class=prma>Sancti</span> is the same collection for the 
 <span class=prma>Proprium Sanctorum</span><BR>
 Naming convention is:<PRE>
 mm-nn
-</PRE> where <I>mm</I> is the month, <I>nn</I> is the day. For practical reasons, unlike in 
+</PRE> where <I>mm</I> is the month, <I>nn</I> is the day. (Example: 07-26 represents July 26, Feast of St. Anne.) For practical reasons, unlike in 
 the Roman Breviary, the Chrismastide offices are set within the Sancti folder.
 <BR><BR>
 
 <LI><span class=prma>Commune</span> is the collection for 
 <span class=prma>Commune sanctorum</span>. The name of the office is 
-under the first key : <B>Name</B>.<BR>
-For practical reasons <B>Officium Santae Mariae Sabbato</B> is amont Tempora files as C10
-<BR><BR><BR>
+under the first key: <B>Name</B>. See <a href="#specialchars">below</a> for examples.<BR>
+For practical reasons, the <B>Officium Sanctae Mariae Sabbato</B> is referenced by the programlet from its position among the Tempora files as C10.
+<BR><BR>
 
 <LI><span class=prma>Martyrologium</span> contains the files named as mm-nn for the
-Martyrologium. See <A HREF=credits.html>credits</A> for the sources. There is
-no Magyar martyrology in this database.<BR><BR><BR>
+Martyrologium. Please note that the Martyrology at Prime is anticipated for the subsequent day. See <A HREF=credits.html>credits</A> for the sources.<BR><BR>
 
 <LI><span class=prma>program</span> folder in <span class=prma>Show files</span>
 list refers to the files described below in cgi-bin/horas folder. 
 </UL><BR>
 
 <A NAME='programs'></A>
-<P ALIGN=CENTER><FONT SIZE=1><A HREF=#Top>Top</A></FONT></P>
+<P ALIGN=CENTER><A HREF=#Top>Top</A></FONT></P>
 <span class=prmm>Programs</span><BR><BR> 
-The programs are written in Perl 5.6 and generate HTML.  The standalone version uses Tk.
+The programs are written in Perl 5.6 and generate HTML.
 
 Environment variables:
 
 The following program files are used: 
 <UL>
-<LI> <span class=prma>brevi.pl</span> Starts the original version. Composes the main image and
-also calls other programs.<BR><BR>
-<LI> <span class=prma>officium.pl</span> Starts the newer web version. Composes the main image and
-also calls other programs.<BR><BR>
-<LI> <span class=prma>Aofficium.pl</span> Starts the standalone version. Composes the main image and
+<LI> <span class=prma>officium.pl</span> Starts the Divinum Officium programlet. Composes the main image and
 also calls other programs.<BR><BR>
 <LI><span class=prma>horas.pl</span> Common extension of the starting perl files. Interprets the special 
 characters and prints out the officium for the selected hour.<BR><BR>
@@ -147,62 +137,50 @@ and the office for any given date, deciding about the precedences.<BR><BR>
 setup.<BR><BR>
 <LI><span class=prma>webdia.pl</span> Helper set to generate the dialog table, special html parts
 of the office tables, and also reads/writes cookies.<BR><BR>
-<LI><span class=prma>Awebdia.pl</span> helper for Aofficium, generates the dialog table
-also the office tables, and saves/reload parameters.<BR><BR>
 <LI><span class=prma>setup.pl</span> Generates the dialog box to set the parameters 
 for web versions.<BR><BR>
-<LI><span class=prma>setup.pl</span> Generates the dialog box to set the parameters 
-for standalone versions.<BR><BR>
-<LI><span class=prma>popup.pl</span> Generates a popup window if requested by the horas page
-for the web versions.<BR><BR>
-<LI><span class=prma>Apopup.pl</span> Generates a popup window if requested by the horas page 
-for the standalone version.
-<BR><BR>
+<LI><span class=prma>popup.pl</span> Generates a popup window if requested by the horas page.<BR><BR>
 <LI><span class=prma>kalendar.pl</span> List the Kalendar for the web versions and 
 makes it possibile to select a specific date. Uses horascomon.pl and horas.pl sets.<BR><BR>
-<LI><span class=prma>Akalendar.pl</span> List the Kalendar for the standalone version 
-and makes it possibile to select a specific date. Uses horascomon.pl and horas.pl sets.<BR><BR>
 <LI><span class=prma>edit.pl</span>. Shows the datebase program and other files
 for the web versions. Uses horascommon.pl set.<BR><BR>
-<LI><span class=prma>Adit.pl</span>. Shows the datebase program and other files
-for the standalone version. Uses horascommon.pl set.<BR><BR><BR>
 <LI><span class=prma>Files</span> is the collection of the internal databases for the 
 web versions.<BR><BR><BR>
 </UL>
 
 <A NAME='specialchars'></A>
-<P ALIGN=CENTER><FONT SIZE=1><A Href=#Top>Top</A></FONT></P>
+<P ALIGN=CENTER><A Href=#Top>Top</A></FONT></P>
 <span class=prmm>Special characters</span><BR><BR>
 
 Either the files in the Ordinarium, and the other files are using special characters
-to help the formatting. Each of them, whith the exception of ~ tilde sign
+to help the formatting. Each of them, with the exception of the ~ tilde sign,
 has to be set in the beginning of a line.<BR><BR>
 
 <UL>
 <LI><span class=prma># hashmark</span> in the files
 of Ordinarium folder or generated represent a chapter label. <I>Special.pl</I> 
 program interprets and expands or limits primarily these lines. Also, they
-respresent the skeleton.<BR><BR>
+respresent the skeleton of the particular Hour.<BR><BR>
 
 <LI><span class=prma>[ name ]</span> in a separate line is the key for a
 hash element, as mentioned earlier.<BR><BR>
 
  <LI><span class=prma>$ dollar</span> sign as the first character of a line, followed 
- by a name, represent a prayer found in psalterium/Prayers file. These are the candidates
+ by a name, represent a prayer found in Psalterium/Prayers file. These are the candidates
  for Popup if <I>psalmi</I> option is called. Some invokes an internal subroutine.<BR><BR>
 
  <LI><span class=prma>&</span> sign calls an internal subroutine. If the subroutine 
  name starts with capital letter that is listed only in <I>all</I> mode, if it starts with 
  small letter, <I>psalmi</I> option will expand it.<BR><BR>
 
- <LI><span class=prma>! exclamation mark</span> will print the line with red font.<BR><BR>
+ <LI><span class=prma>!</span> An exclamation point (at the beginning of a line) will print the line with red font.<BR><BR>
 
  <LI><span class=prma>v. </span> prints the following first leter as Initiale, large red font.
  <BR><BR>
 
- <LI><span class=prma>r. </span> prints the following first letter as regular red font.<BR<BR>
+ <LI><span class=prma>r. </span> prints the following first letter as regular red font.<BR><BR>
 
- <LI><span class=prma>R.br  R. V. * Ant. Benedictio</span> starting words are printed
+ <LI><span class=prma>R.br  R. V. * Ant. Benedictio</span> These starting words are printed
  in regular red font.<BR><BR>
 
  <LI><span class=prma>double end of line</span> represents a cell end, the printout will set
@@ -212,16 +190,30 @@ hash element, as mentioned earlier.<BR><BR>
  without separation.<BR><BR>
 
  <LI><span class=prma>~ tilde</span> at the end of the line represents contraction.
- Without it the end of line character will be shown as &lt;BR&gt; in the html file.<BR><BR>
+ Without it, the end of line character will be shown as &lt;BR&gt; in the html file.<BR><BR>
 
  <LI><span class=prma>( text )</span> in psalm folder will print the enclosed text 
  in small red font.<BR><BR>
 
  <LI><span class=prma>digits</span> or <span class=prma>digits:digits</span> at the beginning of
- the line in psalmi and lectiones are interpreted as verse numbers and printed in red.<BR><BR><BR>
+ the line in psalms and readings are interpreted as verse numbers, and printed in red.<BR><BR>
+ 
+ <LI><span class=prma>Common Offices (Cn)</span> refer to the Commune Sanctorum:<BR><BR>
+ 
+ <TABLE BORDER=0 ALIGN=CENTER WIDTH=100%>
+<TR><TD><B>C1</B> : Common of Apostle</TD><TD><B>C1a</B> : Common of Evangelists&nbsp;&nbsp;&nbsp;<B>C1v</B> : Vigil of Apostle</TD></TR>
+<TR><TD><B>C2</B> : Common of one Martyr</TD><TD><B>C3</B> : Common of many Martyrs</TD></TR>
+<TR><TD><B>C4</B> : Common of Confessor, Bishop or Pope (with variation)</TD><TD><B>C4a</B> : Common for Doctor of the Church, bishop</TD></TR>
+<TR><TD><B>C5</B> : Common of Confessor not Bishop</TD><TD><B>C5a</B> : Common for Doctor of the Church not a bishop</TD></TR>
+<TR><TD><B>C6</B> : Common of one Virgin</TD><TD><B>C6a</B> : Common of many Virgins</TD></TR>
+<TR><TD><B>C7</B> : Common of Martyr Holy Woman</TD><TD><B>C7a</B> : Common of Holy Woman</TD></TR>
+<TR><TD><B>C8</B> : Common for Dedication of a Church</TD><TD><B>C9</B> : Office of the Dead</TD></TR>
+<TR><TD><B>C10</B> : Office of the Blessed Virgin for Saturday</TD><TD><B>C11</B> : Common for the Blessed Virgin Mary</TD></TR>
+<TR><TD><B>other</B> : reference to Proper office</TD><TD><B>p</B> added to the name : Eastertime Office</TD></TR>
+</TABLE>
 
 <A NAME='exceptions'></A>
-<P ALIGN=CENTER><FONT SIZE=1><A Href=#Top>Top</A></FONT></P>
+<P ALIGN=CENTER><A Href=#Top>Top</A></FONT></P>
 <span class=prmm>Exceptions</span><BR><BR>
 
 Many of the files in Tempora or Sancti folders have an entry: <span class=prm>Rule</span>.
@@ -235,53 +227,55 @@ ex C4;
 Psalmi Dominica
 Antiphones horas
 9 lectiones
-</PRE><BR><BR>
+</PRE>
 
-Each rule is a separate line and exact spelling is required, except for capitalization<BR><BR>
+Each rule is a separate line and exact spelling is required, except for capitalization.<BR><BR>
 
 <UL>
-<LI><span class=prma>ex filename</span> : everything what is not in the proprium
- is taken from the named file from commune (<I>Cn</I>) or from the file in <I>tempora</I>
- folder (e.g. Pasc0-0 for the Octava Paschae)<BR><BR>
+<LI><span class=prma>ex filename</span> : everything that is not in the Proprium
+ is taken from the named file from the Commune (<I>Cn</I>) or from the file in the Tempora
+ folder (e.g. Pasc0-0 for the Easter octave)<BR><BR>
 
-<LI><span class=prma>vide filename</span> : like above, but only the matutinum lectiones and 
-the <I>antiphone , versum, oratio </I> in Laudes and Vespera are taken from the named file<BR><BR>
+<LI><span class=prma>vide filename</span> : like above, but only <I>the Matins lections and 
+the Lauds & Vespers antiphons, versum, & oratio</I> are taken from the named file.<BR><BR>
 
-<LI><span class=prma>Psalmi Dominica</span> : The Sunday psalm set is used exept if the psal
-is explicitly listen in the proprium file<BR><BR>
+<LI><span class=prma>Psalmi Dominica</span> : The Sunday psalm set is used, except if the psalm
+is explicitly listed in the proprium file.<BR><BR>
 
-<LI><span class=prma>Antiphonas horas</span> : <I>Ant Laudes</I> antifones are used for the minor
-horas: <BR>
+<LI><span class=prma>Antiphonas horas</span> : <I>Ant Laudes</I> Antiphons are used for the minor
+hours: <BR>
  <UL><LI>0 = Prima
  <LI>1 = Tertia
  <LI>2 = Sexta
  <LI>4 = Nona
- </UL><BR
+ </UL><BR>
 
-<LI><span class=prma>9 lectio</span> : Matutinum with 9 lections.<BR><BR>
+<LI><span class=prma>9 lectiones</span> : Matins with 9 lections.<BR><BR>
 
 <LI><span class=prma>omit <I>group list</I></span> : Skip the named item.<BR><BR>
 
 <LI><span class=prma>limit <I>group list</I></span> : Special (hard coded) rules for the named items.<BR><BR>
 
-<LI><span class=prma>Psalm5 Vespera=nn</span> : The last psalm in vespera is the named one.<BR><BR>
+<LI><span class=prma>Psalm5 Vespera=nn</span> : The last psalm in Vespers is the named one.<BR><BR>
 
 <LI><span class=prma>Capitulum Versum 2 [<I>hour spec</I>]</span> : Capitulum
-is substituted with the [Versum 2] item from propria. This occurs at all hours
+is substituted with the [Versum 2] item from the propria. This occurs at all hours
 other than Compline if <I>hour spec</I> is omitted, at Lauds and Vespers if
 <I>hour spec</I> is <strong>ad Laudes et Vesperas</strong>, and at Lauds only
 if <I>hour spec</I> is <strong>ad Laudes tantum.</strong>.<BR><BR>
 
-<LI><span class=prma>Una antiphone</span> : Major hours are prayed under one antiphon.<BR><BR>
+<LI><span class=prma>Una antiphona</span> : Major hours are prayed under one antiphon.<BR><BR>
 
 <LI><span class=prma>Minores sine antiphona</span> : Minor hours are prayed without an antiphon.<BR><BR>
 
 <LI><span class=prma>1 nocturn</span> : Matins of one nocturn only.<BR><BR>
 
+<LI><span class=prma>Rubrica 1570 aut Rubrica 1910 aut Rubrica Divino aut Rubrica 1960 (etc.)</span> : Specifies usage of an element solely in one or more of these rubrical usages.<BR><BR>
+
 </UL>
 
  
-<CENTER><FONT SIZE=1>
+<CENTER>
 <A HREF=#programs>[Programs]</A>&nbsp;&nbsp;&nbsp;
 <A HREF=#databases>[Databases]</A>&nbsp;&nbsp;&nbsp;
 <A HREF=#specialchars>[Special characters]</A>&nbsp;&nbsp;&nbsp;
@@ -293,13 +287,11 @@ if <I>hour spec</I> is <strong>ad Laudes tantum.</strong>.<BR><BR>
 <A HREF=# onclick='window.close();'>Close</A></CENTER>
 <BR>
 
-<CENTER><FONT SIZE=1>
-<A HREF='help.html'>[Getting started]</A>&nbsp;&nbsp;&nbsp;
+<CENTER>
+<A HREF='help.html'>[Help]</A>&nbsp;&nbsp;&nbsp;
 <A HREF='brevitechnical.html'>[Technical information]</A>&nbsp;&nbsp;&nbsp;
 <A HREF='rubrics.html'>[Rubrics]</A>&nbsp;&nbsp;&nbsp;
-<A HREF="../../../cgi-bin/horas/kalendarcomp.pl">[Kalendars]</A>&nbsp;&nbsp;&nbsp;
 <A HREF='credits.html'>[Credits]</A>&nbsp;&nbsp;&nbsp;
-<A HREF='Missing Offices.html'>[Missing offices]</A>&nbsp;&nbsp;&nbsp;
 <A HREF='download.html'>[Download]</A>&nbsp;&nbsp;&nbsp;
 <A HREF='versions.html'>[Versions]</A>&nbsp;&nbsp;&nbsp;
 </FONT></CENTER>

@@ -2,14 +2,14 @@
 Officium Defunctorum
 
 [Rule]
-Psalmi Dominca
+Psalmi Dominica
 Antiphonas horas
 Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium Conclusion
+Omit Incipit Hymnus Capitulum Lectio Preces Capitulum Commemoratio Suffragium
+Special Conclusio
 Limit Benedictiones Oratio
 Requiem gloria
-Special preces
-9 lectiones
+Votive nocturn
 
 [Ant Vespera]
 Piacerò al Signore * nella regione dei vivi.;;114
@@ -25,45 +25,44 @@ R. Beati i morti che muoiono nel Signore.
 [Ant 1]
 Verrà a me tutto * quello che mi dà il Padre, ed io non caccerò chi viene a me.
 
-[Oratio 1]
+[Oratio_a_porta]
+_
 &pater_noster
 _
 &psalm(145)
 (sed rubrica 1955 aut rubrica 1960 omittitur)
+_
 V. Dalla porta dell'inferno.
 R. Libera, o Signore, le loro anime.
 V. Riposino in pace.
 R. Amen.
 V. Signore, ascolta la mia preghiera.
 R. E il mio grido giunga a Te.
+
+[Oratio_Fid]
 &Dominus_vobiscum2
 _
 $Oremus
 O Dio, Creatore e Redentore di tutti gli uomini fedeli, concedi alle anime dei tuoi servi e delle tue serve la remissione di tutti i peccati, affinché quella misericordia che sempre desiderarono, per le pie suppliche l'ottengano,
 $Qui vivis
 
+[Versum 3]
+@:Versum 1
+
+[Oratio 1]
+@:Oratio_a_porta
+@:Oratio_Fid
+
 [Oratio 2]
-&pater_noster
-_
-V. Dalla porta dell'inferno.
-R. Libera, o Signore, le loro anime.
-V. Riposino in pace.
-R. Amen.
-V. Signore, ascolta la mia preghiera.
-R. E il mio grido giunga a Te.
-&Dominus_vobiscum2
-_
-$Oremus
-O Dio, Creatore e Redentore di tutti gli uomini fedeli, concedi alle anime dei tuoi servi e delle tue serve la remissione di tutti i peccati, affinché quella misericordia che sempre desiderarono, per le pie suppliche l'ottengano,
-$Qui vivis
+@:Oratio_a_porta:s/&psalm.*\)//s
+@:Oratio_Fid
 
 [Oratio1]
 Assolvi, ti preghiamo o Signore, l'anima del tuo servo (della tua serva) N., perché morto (morta) al mondo viva per te: e ciò che commise per fragilità della carne nella frequentazione degli uomini, Tu detergi con il perdono della tua misericordiosissima pietà.
 $Per Dominum
 
 [Oratio2]
-O Dio, Signore di misericordia, concedi alle anime di tutti i fedeli defunti, di cui ricorre l'anniversario di sepoltura, il luogo del riposo, una
-beata pace e lo splendore della luce eterna.
+O Dio, Signore di misericordia, concedi alle anime di tutti i fedeli defunti, di cui ricorre l'anniversario di sepoltura, il luogo del riposo, una beata pace e lo splendore della luce eterna.
 $Per Dominum
 
 [Conclusio]
@@ -254,8 +253,7 @@ Dalla porta dell'inferno * libera, o Signore, l'anima mia.;;222
 Ogni spirito * lodi il Signore.;;150
 
 [Versum 2]
-V. Ho udito una voce dal cielo, che mi diceva:
-R. Beati coloro che muoiono nel Signore.
+@:Versum 1
 
 [Ant 2]
 Io sono la resurrezione e la vita: * chi crede in me, benché morto, vivrà, e chi vive e crede in me, non morrà in eterno.

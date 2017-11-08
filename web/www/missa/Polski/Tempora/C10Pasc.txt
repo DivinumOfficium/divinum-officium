@@ -8,7 +8,9 @@ Prefatio=Maria=Feast;
 
 [Comment]
 # 6 – 4 Msza na święta N. M. P. – Salve, Sancta Parens
-Msza przeznaczona na Okres Wielkanocny.
+Msza przeznaczona na soboty w Okresie Wielkanocnym.
+
+Msza jak na święta N. M. P. Salve, Sancta Parens, z wyjątkiem Ewangelii i antyfony na ofiarowanie.
 
 [Introitus]
 @Tempora/C10:Introitus
@@ -20,11 +22,7 @@ Msza przeznaczona na Okres Wielkanocny.
 @Tempora/C10:Lectio
 
 [Graduale]
-Alleluja, alleluja.
-!Lb 17:8
-v. Zakwitła różczka Jessego: Dziewica zrodziła Boga-Człowieka. Bóg światu przywrócił pokój, jednocząc w sobie to co najniższe z najwyższym. Alleluja.
-!Łk 1:28
-Zdrowaś Maryjo, łaski pełna, Pan zrodziła Tobą, błogosławionaś Ty między niewiastami. Alleluja.
+@Tempora/C10:GradualeP
 
 [Evangelium]
 Ciąg dalszy ++ Ewangelii świętej według Jana.

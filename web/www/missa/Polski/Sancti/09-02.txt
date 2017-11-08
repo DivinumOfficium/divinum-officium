@@ -1,0 +1,44 @@
+[Rank]
+S. Stephani Hungariae Regis Confessoris;;Semiduplex;;2;;vide C5
+
+[Rule]
+vide C5
+Gloria
+
+[Comment]
+# 02 IX – Św. Stefana, Króla i Wyznawcy
+! 3 klasy
+! Szaty białe
+Wajk, syn księcia węgierskiego Gejzy, urodził się w Ostrzyhomiu W roku 969. Chrztu świętego udzielił mu w dzieciństwie wędrowny misjonarz. W roku 995 został bierzmowany przez św. Wojciecha. Po śmierci Gejzy objął rządy na Węgrzech i gorliwie krzewił wiarę chrześcijańską. W roku 1000 otrzymał od papieża Sylwestra II koronę królewską. Ufundował 10 diecezji z metropolitą w Ostrzyhomiu oraz sławne opactwo benedyktyńskie w Pannonhalma. Umarł 15 sierpnia 1038 roku w święto Wniebowzięcia Najświętszej Maryi Panny, którą nazywał «Wielką Panią Węgier». 
+
+Msza wspólna nr 21 Os iusti, z wyjątkiem Kolekty, Sekrety i Pokomunii
+
+[Introitus]
+@Commune/C5:Introitus
+
+[Oratio]
+Prosimy Cię, wszechmogący Boże, daj Kościołowi Twojemu, aby miał w niebie chwalebnego obrońcę w świętym Stefanie, Twoim Wyznawcy, który królując na ziemi był jego krzewicielem.
+$Per Dominum
+
+[Lectio]
+@Commune/C5:Lectio
+
+[Graduale]
+@Commune/C5:Graduale
+
+[Evangelium]
+@Sancti/08-25:Evangelium
+
+[Offertorium]
+@Commune/C5:Offertorium
+
+[Secreta]
+Wszechmogący Boże, wejrzyj na ofiary, które składamy Tobie, i praw, abyśmy sprawując misteria Męki Pańskiej, naśladowali to, co czynimy.
+$Per eundem
+
+[Communio]
+@Commune/C5:Communio
+
+[Postcommunio]
+Spraw, prosimy Cię, wszechmogący Boże, abyśmy z należnym oddaniem naśladowali wiarę świętego Stefana, Twojego Wyznawcy, który za krzewienie tej wiary zasłużył na przejście z królestwa ziemskiego do chwały Królestwa Niebieskiego.
+$Per Dominum

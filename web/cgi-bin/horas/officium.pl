@@ -373,7 +373,7 @@ PrintTag
   print "</SELECT>\n";
 
 if ($savesetup > 1) {
-my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
 my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
 my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
 my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
@@ -382,7 +382,7 @@ my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
 <SELECT NAME=testmode SIZE=4 onchange="parchange();">
-<OPTION $sel10 VALUE='regular'>regular
+<OPTION $sel10 VALUE='Regular'>Regular
 <OPTION $sel11 VALUE='Seasonal'>Seasonal
 <OPTION $sel12 VALUE='Season'>Season
 <OPTION $sel13 VALUE='Saint'>Saint
@@ -390,12 +390,12 @@ my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
 </SELECT>
 PrintTag
 } else {
-my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
 my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
 <SELECT NAME=testmode SIZE=2 onchange="parchange();">
-<OPTION $sel10 VALUE='regular'>regular
+<OPTION $sel10 VALUE='Regular'>Regular
 <OPTION $sel11 VALUE='Seasonal'>Seasonal
 </SELECT>
 PrintTag
@@ -452,17 +452,15 @@ $addlocal<BR>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF=# onclick="pset('parameters')">Options</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/versions.html" TARGET="_BLANK">Versions</A>
+<A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/credits.html" TARGET="_BLANK">Credits</A>
+<A HREF="../../www/horas/Help/credits.html" TARGET="_BLANK">Credits</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/new.html" TARGET="_BLANK">What's new</A>
+<A HREF="../../www/horas/Help/download.html" TARGET="_BLANK">Download</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/download.html" TARGET="_BLANK">Download</A>
+<A HREF="../../www/horas/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/Ahelp.html" TARGET="_BLANK">Help</A>
+<A HREF="../../www/horas/Help/help.html" TARGET="_BLANK">Help</A>
 </FONT>
 </P>
 PrintTag

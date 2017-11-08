@@ -15,7 +15,11 @@ Sub unica concl
 No prima vespera
 
 [Ant Vespera]
-@Sancti/01-25
+Jam szczepił, * Apollo polewał, ale Bóg dał pomnożenie. Alleluja.
+Rad się przechwalać * będę w krewkościach moich, aby we mnie mieszkała moc Chrystusowa.
+Łaska Boża * przeciwko mnie próżną nie była; ale łaska Boża zawsze zemną.
+W Damaszku, * narodu starosta króla Arety chciał, aby mię poimał: ale przez braci w koszu z muru spuszczon, i takem uszedł rąk jego, w imię Pana.
+Trzykroć byłem bit rózgami, * razem był ukamionowan, trzykrociem się z okrętem rozbił, dla imienia Chrystusa.
 
 [Capitulum Vespera]
 !2 Tm 4:7-8
@@ -118,22 +122,6 @@ R. Ale przez braci w koszu z muru spuszczon:
 &Gloria
 R. I takem uszedł rąk jego, w imię Pana.
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
-[Capitulum Laudes]
-@:Capitulum Vespera
-
-[Hymnus Laudes]
-@Commune/C1:Hymnus Vespera
-
-[HymnusM Laudes]
-@Commune/C1:HymnusM Vespera
-
-[Versum 2]
-V. Tyś jest naczyniem wybranem, święty Pawle Apostole.
-R. Głosicielem prawdy po całym świecie.
-
 [Ant 2]
 Vos qui secuti estis me * sedebitis super sedes, judicantes duodecim tribus Israël, dicit Dominus.
 
@@ -143,30 +131,11 @@ $Per Dominum
 _
 @Sancti/01-25:Commemoratio4
 
-[Commemoratio]
-@Sancti/06-24:Octava
-
 [Lectio Prima]
 !1 Kor 15:9-10
 v. Bom ja jest najmniejszy między Apostoły, którym nie jest godzien, aby mię zwano Apostołem, iżem prześladował kościół Boży. A z łaski Bożéj jestem to, com jest, a łaska jego przeciwko mnie próżną nie była.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-@Sancti/06-29
 
 [Capitulum Sexta]
 !2 Kor 12:7-9
 v. A żeby mię wielkość objawienia nie wynosiła, dan mi jest bodziec ciała mego, anioł szatanów, aby mię policzkował. Dlatego trzykrociem Pana prosił, aby odemnie odstąpił. I rzekł mi: Dosyć ty masz na łasce mojéj.
 $Deo gratias
-
-[Responsory Sexta]
-@Sancti/06-29
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
-@Sancti/06-29

@@ -1,0 +1,137 @@
+[Param]
+Priest~>$priest~>Checkbutton;;
+Church patron~>$churchpatron~>Entry~>12;;
+Building script~>$building~>Checkbutton;;
+Language1~>$lang1~>Optionmenu~>languages;;
+Psalmversion~>$accented~>Optionmenu~>psalmversions;;
+Border width~>$border~>Entry~>3;;
+Scroll amount~>$scrollamount~>Entry~>3;;
+
+[Colors]
+Black & cell~>$blackcell~>Font;;
+Small red~>$redsmall~>Font1;;
+Title & frame~>$titlelargeframe~>Font;;
+Link font~>$linkfont~>Font3;;
+Dialog font~>$dialogfont~>Font5;;
+Grey 1~>$voicegrey1~>Color;;
+Grey 2~>$voicegrey2~>Color;;
+
+[Chant]
+Key frequency~>$dofreq~>Scaleentry~>100~300~5;;
+Syllable time~>$basetime~>Scaleentry~>100~700~10;;
+Vowel mult / 10~>$voweltime~>Scaleentry~>10~100~2;;
+Vowel fill perc~>$vowelperc~>Scaleentry~>30~150~10;;
+
+[Voice]
+continuous~>$voicecontinue~>Checkbutton;;
+pitch1~>$pitch1~>Scaleentry~>-10~10~1;;
+voice1~>$voicename1~>Optionmenu~>@voicenames;;
+pitch2~>$pitch2~>Scaleentry~>-10~10~1;;
+voice2~>$voicename2~>Optionmenu~>@voicenames;;
+voice rate~>$voicerate~>Scaleentry~>-10~10~1;;
+volume~>$volume~>Scaleentry~>10~100~10;;
+
+[general]
+Expand~>$expand~>Optionmenu~>{all,psalms,none,skeleton};;
+Version~>$version~>Optionmenu~>{Tridentinum,Divino Afflatu,Reductions 1955,Rubrics 1960};;
+Language 2~>$lang2~>Optionmenu~>languages
+
+[languages]
+Latin,English,Magyar
+
+[psalmversions]
+accented,plain
+
+[horas]
+Ante,Matutinum,Laudes,Prima,Tertia,Sexta,Nona,Vesperae,Completorium,Post
+
+[communes]
+C1,Commune Apostolorum, 
+C1a,Commune Evangelistarum,
+C1p,Commune Apostolorum tempore Paschali, 
+C2,Commune Unius Martyris,
+C2p,Commune Unius Martyris tempore Paschali,
+C3,Commune Plurimorum Martyrum,
+C3p,Commune Plurimorum Martyrum tempore Paschali,
+C4,Commune Confessoris Pontificis,
+C4a,Commune Doctorum Pontificium,
+C5,Commune Confessoris non Pontificis,
+C6,Commune unam Virginum,
+C6a,Commune plures Virgines
+C7,Commune non Virginum, Martyrum
+C7a,Commune non Virginum, non Martyrum
+C8,Commune Dedicationis Ecclaesiae
+C9,Officium defunctorum
+C10,Beata Maria in Sabbato
+C11,Commune Beatae Mariae Virginis,
+C12,Officium parvum Beatae Mariae Virginis
+
+
+[Rank Sancti]
+1=Simplex
+2=Semiduplex
+3=Duplex
+4=Duplex majus
+5=Duplex II Classis
+6=Duplex I Classis
+
+[Rank Tempora]
+1=Feria privilegiata
+4=Dominica ordinaria
+5=II class (Dominica Feast
+6=I class (Dominica, Feria, Feast)
+
+[helpparam]
+Select Colors Chant or Voice for more parameters
+
+Priest: If unchecked = 'Domine exaudi' instead of 'Dominus vobiscum'
+Church Patron: Patron saint of the local church to be substituted for Suffragium
+Building script: If checked = building script is developed ad shown at the end of the table
+Language1: click the button and select language of the first column
+Border width: the with of the cell border
+Scroll amount: number of dots to move for one hit of up/down arrow
+
+Restore original: restores all parameters to the original state
+
+[helpcolors]
+Select Param Chant or Voice for more parameters
+
+Black font: family - size - foreground for text, background for cells
+Small red: family - foreground for red text, size for small font, background not interpreted
+Title font: family - foreground for title, size for large font, background for frame
+Link font: family - foreground for link, size - background not interpreted
+Dialog font: font for setup dialog, colors are not changeable
+Grey 1: Background for active words, line read aloud
+Grey 2: Line on the opposite column for read aloud
+
+Restore original: restores all parameters to the original state
+
+[helpvoice]
+Select Param Colors or Chant for more parameters
+The voice parameters differ related to the second column ($lang2 parameter), 
+
+Continuous = reads the full hour continuously, after the first Enter. 
+  Halt by pressing 'H', restart by 'R'.
+  Iterrupt by 'I' or clicking on 'Reload'; restart by clicking on Top Next or Enter for the subsequent cell
+
+Pitch1, Pitch2 : pitch to make different the same voice for alternate voices
+
+Voice1, Voice2 : select the choice, if different names, alternate voices per lines
+
+Rate : speed
+
+Volume : more or less laud
+
+Restore original: restores all parameters to the original state
+
+[helpchant]
+Select Param Color or Voice for more paramenters
+Chant parameters are used only if first column is Latin and chant column #1 is chosen
+
+Key frequency is the programmed frequency for MBROLA sysnthesiser
+
+Syllable time is the approximate time for a punct in milliseconds
+
+Vowel mult / 10 is the time multipler for the vowel related to everage consonant time
+
+Vowel fill perc MBROLA parameter for the percentile the vowel stands on the given frequency
