@@ -29,7 +29,7 @@ We highly recommend instead downloading the <a href="http://apps.liturgiaetmusic
 The source code for the Divinum Officium website can be found and freely downloaded from our <a href="https://github.com/DivinumOfficium/divinum-officium">GitHub repository</a>.<BR><BR>
 It is possible to download the code to one's own Windows, Mac, or Linux computer and run the code as a local web host.<BR><BR>
 There are two repositories at <a href=https://github.com/DivinumOfficium>GitHub</a>; of these, we recommend cloning <a href="https://github.com/DivinumOfficium/divinum-officium-website">divinum-officium-website</a>.<BR><BR>
-Instructions for cloning are available at the links under the 'clone URL' box on the right-hand side of the <a href="https://github.com/DivinumOfficium/divinum-officium-website">Divinum-Officium-Website GitHub</a>.<BR><BR>
+Instructions for cloning are available at the links under the 'clone URL' box on the right-hand side of the <a href="https://github.com/DivinumOfficium/divinum-officium-website">Divinum-Officium-Website GitHub</a>. If you have Git installed on your system, you can locally update the files from this repository to account for the ongoing changes and improvements to the site.<BR><BR>
 The website is contained in the web/ subdirectory of this repository. The other directories at the top level should not be served from a webserver.<BR><BR>
 Perl >= 5.10.1 is required, as are the following modules. Depending on the Perl version and distribution these might already be installed; if they are not, they can be obtained from your OS/Perl distribution or from CPAN:<BR><BR>
   CGI<BR>
@@ -45,7 +45,7 @@ Most importantly, your webserver must be configured to allow the execution of CG
 For Apache one way to achieve this is to use the following directives in a Directory element for that directory:<BR><BR>
   Options +ExecCGI<BR>
   AddHandler cgi-script .pl<BR><BR>
-This <a href=http://divinumofficium.com/www/horas/Help/httpd.conf>httpd.conf</a> file may prove useful on a Macintosh Apache host. WARNING: Use at your own risk!<BR><BR>
+This <a href=http://divinumofficium.com/www/horas/Help/httpd.conf>httpd.conf</a> file may prove useful on an Apache host; it is currently being used on a Mac OS 10.13 (High Sierra). WARNING: Use at your own risk!<BR><BR>
 
 <CENTER>+++++++++</CENTER><BR>
 
