@@ -1,7 +1,7 @@
 [parameters]
 Priest~>$priest~>Checkbutton;;
 Building script~>$building~>Checkbutton;;
-Language1~>$lang1~>Optionmenu~>languages;;
+Language 1~>$lang1~>Optionmenu~>languages;;
 White background~>$whitebground~>Checkbutton;;
 Text font~>$blackfont~>Entry~>12;;
 Small text~>$smallblack~>Entry~>12;;
@@ -43,12 +43,11 @@ C6,Commune unam Virginum,
 C6a,Commune plures Virgines
 C7,Commune non Virginum, Martyrum
 C7a,Commune non Virginum, non Martyrum
-C8,Commune Dedicationis Ecclaesiae
+C8,Commune Dedicationis Ecclesiae
 C9,Officium defunctorum
 C10,Beata Maria in Sabbato
 C11,Commune Beatae Mariae Virginis,
 C12,Officium parvum Beatae Mariae Virginis
-
 
 [Rank Sancti]
 1=Simplex
@@ -63,5 +62,3 @@ C12,Officium parvum Beatae Mariae Virginis
 4=Dominica ordinaria
 5=II class (Dominica Feast)
 6=I class (Dominica, Feria, Feast)
-
-
