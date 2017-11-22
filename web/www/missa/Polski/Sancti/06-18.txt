@@ -1,0 +1,71 @@
+[Rank]
+S. Ephraem Syri Confessoris et Ecclesiae Doctorem;;Duplex;;3;;vide C5a
+
+[RankNewcal]
+S. Ephraem Syri Confessoris et Ecclesiae Doctorem;;Duplex optional;;2;;vide C5a
+
+[Name]
+Ephraem
+
+[Rule]
+vide C5a;
+Gloria
+
+
+[Comment]
+# 18 VI – Św. Efrema, Diakona, Wyznawcy i Doktora Kościoła
+! 3 klasy
+! Szaty białe
+Św. Efrem urodził się Nisibis w Mezopotamii. W młodym wieku prowadził życie zakonne, a potem został diakonem kościoła w Edessie. Energicznie zwalczał współczesne herezje. Aby utrwalić w pamięci wiernych zasady wiary, układał hymny ku czci Chrystusa, Matki Bożej i Świętych. Nazwano go «lutnią Ducha Świętego». Napisał także komentarze do Pisma św. i homilie. Wyraźnie stwierdzał prawdę Niepokalanym Poczęciu Najświętszej Maryi Panny. Zmarł w roku 373.
+
+Msza wspólna nr 20 In medio, z wyjątkiem kolekty.
+
+Śś. Marka i Marecelina, Męczenników
+! Wspomnienie
+! Szaty czerwone
+Święci Marek i Marcelin ponieśli śmierć męczeńską w Rzymie w III wieku.
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Boże, który chciałeś oświecić swój Kościół zadziwiającą nauką i chwalebnymi zasługami życia św. Efrema, Twego Wyznawcy i Doktora; kornie Cię błagamy, abyś za jego wstawiennictwem stale bronił Swą mocą Kościoła przeciw zasadzkom błędu i zepsucia.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+@Commune/C4a:Secreta
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+@Commune/C4a:Postcommunio
+
+[Commemoratio Oratio]
+! Wspomnienie śś. Marka i Marcelina, Męczenników
+Spraw, prosimy Cię, wszechmogący Boże, aby od wszelkich niebezpieczeństw uwolniło nas wstawiennictwo świętych Marka i Marcelina, Twoich Męczenników, których narodziny dla nieba obchodzimy.
+$Per Dominum
+
+[Commemoratio Secreta]
+! Wspomnienie śś. Marka i Marcelina, Męczenników
+Poświęć, Panie, złożone Ci dary i za przyczyną świętych Twoich Męczenników Marka i Marcelina daj się nimi przebłagać i bądź nam przychylny.
+$Per Dominum
+
+
+[Commemoratio Postcommunio] 
+! Wspomnienie śś. Marka i Marcelina, Męczenników
+Posileni darem zbawiennym, pokornie błagamy Cię, Panie, aby Sakrament, który z radością przyjmujemy, za wstawiennictwem świętych Męczenników Twoich Marka i Marcelina, przyniósł nam odnowienie.
+$Per Dominum
+
