@@ -1,0 +1,42 @@
+[Rank]
+S. Gulielmi Abbatis;;Duplex;;3;;vide C4c
+
+[Rule]
+vide C4c;
+Gloria
+
+[Comment]
+# 25 VI – Św. Wilhelma, Opata
+! 3 klasy
+! Szaty białe
+Św. Wilhelm urodził się w Piemoncie w roku 1085. W młodym wieku rozpoczął życie pustelnicze w Apeninach. Gdy zgromadzili się przy nim uczniowie, zbudował klasztor na Montevergine i nadał mu regułę zbliżoną do reguły benedyktyńskiej. Zmarł 25 czerwca 1142 r.
+
+Msza wspólna nr 23 Os iusti, z wyjątkiem kolekty
+
+[Introitus]
+@Commune/C4c:Introitus
+
+[Oratio]
+Boże, który dla ułatwienia drogi zbawienia zapewniłeś naszej słabości przykład i pomoc w swoich Świętych, daj nam tak czcić zasługi św. Opata Wilhelma, byśmy pozyskali jego orędownictwo i zdążali jego śladami.
+$Per Dominum
+
+[Lectio]
+@Commune/C4c:Lectio
+
+[Graduale]
+@Commune/C4c:Graduale
+
+[Evangelium]
+@Commune/C4c:Evangelium
+
+[Offertorium]
+@Commune/C4c:Offertorium
+
+[Secreta]
+@Commune/C4c:Secreta
+
+[Communio]
+@Commune/C4c:Communio
+
+[Postcommunio]
+@Commune/C4c:Postcommunio

@@ -1,0 +1,40 @@
+[Rank]
+Dominica II. Post Pentecosten;;Semiduplex I classis;;5.9;;ex Tempora/Pent01-4
+
+[Rank1960]
+Dominica II post Octavam Pentecostes;;Duplex II classis;;5
+
+[Rule]
+ex Tempora/Pent01-4
+Gloria
+Credo
+Prefatio=Nat
+Prefatio1960=Trinitate
+
+[Introitus]
+@Tempora/Pent02-0r:Introitus
+
+[Oratio]
+@Tempora/Pent02-0r:Oratio
+
+[Lectio]
+@Tempora/Pent02-0r:Lectio
+
+[Graduale]
+@Tempora/Pent02-0r:Graduale
+
+[Evangelium]
+@Tempora/Pent02-0r:Evangelium
+
+[Offertorium]
+@Tempora/Pent02-0r:Offertorium
+
+[Secreta]
+@Tempora/Pent02-0r:Secreta
+
+[Communio]
+@Tempora/Pent02-0r:Communio
+
+[Postcommunio]
+@Tempora/Pent02-0r:Postcommunio
+
