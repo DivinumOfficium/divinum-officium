@@ -1,0 +1,43 @@
+[Rank]
+S. Pantaleon Martyr;;Simplex;;1.1;;vide C2a
+
+[Rule]
+vide C2a;
+Gloria
+
+[Comment]
+# 27 VII – Św. Pantaleona, Męczennika
+! Wspomnienie
+! Szaty czerwone
+Św. Pantaleon był lekarzem w Nikomedii. Umęczono go za wiarę około roku 305. 
+
+Msza wspólna nr 12 Laetabitur
+
+[Introitus]
+@Commune/C2a:Introitus
+
+[Oratio]
+Prosimy Cię, wszechmogący Boże, za przyczyną świętego Pantaleona, Twego Męczennika, uwolnij nasze ciała od wszelkich niebezpieczeństw, a dusze oczyść od złych myśli.
+$Per Dominum
+
+[Lectio]
+@Commune/C2a:Lectio
+
+[Graduale]
+@Commune/C2a:Graduale
+
+[Evangelium]
+@Commune/C2a:Evangelium
+
+[Offertorium]
+@Commune/C2a:Offertorium
+
+[Secreta]
+@Commune/C2a:Secreta
+
+[Communio]
+@Commune/C2a:Communio
+
+[Postcommunio]
+Pokrzepieni uczestnictwem w świętej uczcie, prosimy Cię, Panie, Boże nasz, abyśmy za przyczyną świętego Pantaleonaw, Męczennika Twego, doznali skutków tajemnicy, którą ze czcią sprawujemy.
+$Per Dominum

@@ -1,0 +1,78 @@
+[Rank]
+S. Marthae Virginis;;Semiduplex;;2;;vide C6
+
+[Rank1960]
+S. Marthae Virginis;;Semiduplex;;3;;vide C6
+
+[Rule]
+vide C6;
+Gloria
+
+[Comment]
+# 29 VII – Św. Marty, Dziewicy
+! 3 klasy
+! Szaty białe
+Bawiąc w Judei Pan Jezus chętnie zatrzymywał się w domu Łazarza, Marty i Marii w Betanii. W czasie jednej z tych wizyt Marta krzątająca koło gości prosiła Pana Jezusa o zganienie Marii, zasłuchanej w Jego słowa. Wówczas Chrystus zwrócił jej uwagę, że troska o duszę jest ważniejsza od wszelkich trosk doczesnych.
+W Kościele będą zawsze dusze powołane do życia kontemplacyjnego i inne powołane do życia czynnego. Na obydwu drogach można osiągnąć świętość, jeżeli wiernie wypełnia się swoje powołanie.
+
+Msza wspólna nr 26 Dilexisti, z wyjątkiem Ewangelii   
+
+Śś. Feliksa, Symplicjusza, Faustyna i Beatryczy, Męczenników
+! Wspomnienie
+! Szaty czerwone
+Św. Feliks męczennik rzymski przez pomyłkę bywał utożsamiany z antypapieżem Feliksem II. Bracia Symplicjusz i Faustyn oraz ich siostra Beatrycza ponieśli śmierć męczeńską w Rzymie w roku 304.
+
+Msza wspólna nr 14 Sapientiam, z wyjątkiem kolekty, sekrety i pokomunii
+
+Św. Olafa, Króla i Męczennika
+! 3 klasy
+! Szaty czerwone
+Św. Olaf II był królem norweskim w latach 1015 - 1030. Wprowadził do kraju chrześcijaństwo. Wskutek oporu pogaństwa musiał uchodzić za granicę. Wróciwszy do kraju zginął w bitwie pod Stiklestad 29 lipca 1030 roku.
+
+Msza wspólna nr 11 In virtute, z wyjątkiem kolekty:
+Boże, korono królów i zwycięstwo Męczenników: daj nam, prosimy Cię, doznać wstawiennictwa u Ciebie świętego Olafa, Króla i Męczennika Twojego; niech z Twej wspaniałomyślności, którą wielbimy w jego męczeństwie, otrzymamy wieniec życia, obiecany miłującym Ciebie. Przez Pana.
+
+[Introitus]
+@Commune/C6b:Introitus
+
+[Oratio]
+Wysłuchaj nas, Boże, nasz Zbawicielu, i spraw, abyśmy radując się z uroczystości świętej Twojej Dziewicy Marty, nabyli uczucia synowskiego oddania.
+$Per Dominum
+
+[Lectio]
+@Commune/C6b:Lectio
+
+[Graduale]
+@Commune/C6b:Graduale
+
+[Evangelium]
+Ciąg dalszy ++ Ewangelii świętej według Łukasza.
+! Łk 10:38-42
+Onego czasu: Jezus wszedł do jednej osady, a niewiasta pewna imieniem Marta przyjęła Go w domu swoim. A ta miała siostrę imieniem Maria, która też siedząc u stóp Pana, słuchała słowa Jego. Marta zaś krzątała się koło różnych posług, a zatrzymując się rzekła: «Panie, czyż nie ma to dla Ciebie znaczenia, że siostra moja zostawiła mię, abym sama posługiwała? Powiedz jej przeto, aby mi pomogła». A odpowiadając rzekł jej Pan: «Marto, Marto, o bardzo wiele rzeczy troszczysz się i kłopoczesz, a przecież jednej tylko potrzeba. Maria najlepszą cząstkę obrała, która jej nie będzie odjęta».
+
+[Offertorium]
+@Commune/C6b:Offertorium
+
+[Secreta]
+@Commune/C6b:Secreta
+
+[Communio]
+@Commune/C6b:Communio
+
+[Postcommunio]
+@Commune/C6b:Postcommunio
+
+[Commemoratio Oratio]
+! Wspomnienie śś. Feliksa, Symplicjusza, Faustyna i Beatryczy, Męczenników
+Prosimy Cię, Panie, aby lud chrześcijański, radując się z doczesnej uroczystości Męczenników Twoich Feliksa, Symplicjusza, Faustyna i Beatryczy, uczestniczył w ich radości wiecznej, a co teraz sławi modlitwą, niech otrzyma w rzeczywistości.
+$Per Dominum
+
+[Commemoratio Secreta]
+! Wspomnienie śś. Feliksa, Symplicjusza, Faustyna i Beatryczy, Męczenników
+Składamy Tobie, Panie, ofiary ku uczczeniu pamięci świętych Męczenników Twoich Feliksa, Symplicjusza, Faustyna i Beatryczy, kornie błagając, aby one wyjednały nam przebaczenie i zbawienie.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+! Wspomnienie śś. Feliksa, Symplicjusza, Faustyna i Beatryczy, Męczenników
+Prosimy Cię, wszechmogący Boże, aby uroczystość świętych Męczenników Twoich Feliksa, Symplicjusza, Faustyna i Beatryczy, obchodzona przez sprawowanie niebieskich misteriów, wyjednała nam Twe łaskawe przebaczenie.
+$Per Dominum

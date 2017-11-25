@@ -1,0 +1,42 @@
+[Rank]
+S. Vincentii a Paulo Confessoris;;Duplex;;3;;vide C5
+
+[Rule]
+vide C5
+Gloria
+
+[Comment]
+# 19 VII – Św. Wincentego a Paulo, Wyznawcy
+! 3 klasy
+! Szaty białe
+Św. Wincenty urodził się w południowej Francji w roku 1581 w ubogiej rodzinie wieśniaczej. Po odpowiednim przygotowaniu został kapłanem w roku 1600. Pięć lat później został uprowadzony przez piratów i przez dwa lata pozostawał w niewoli w Tunisie. Wróciwszy do Francji był kolejno proboszczem, kapelanem rodziny Gondich i głównym duszpasterzem galerników. Poznawszy nędzę duchową i materialną szerokich mas ludu, założył zgromadzenie Księży Misjonarzy i Sióstr Miłosierdzia. Ponadto założył cały szereg stowarzyszeń osób świeckich, które pod jego kierunkiem starały się zaradzić rozmaitym potrzebom społecznym. W celu podniesienia poziomu życia wewnętrznego duchowieństwa wprowadził zwyczaj rekolekcji„przed święceniami i zakładał seminaria duchowne pod kierownictwem Księży Misjonarzy. Umarł w Paryżu 27 września 1660 roku. Leon XIII ogłosił go patronem wszystkich dzieł miłosierdzia na całym świecie. 
+
+Msza wspólna nr 22 Iustus ut palma, z wyjątkiem kolekty i Ewangelii
+
+[Introitus]
+@Commune/C5b:Introitus
+
+[Oratio]
+Boże, który obdarowałeś św. Wincentego apostolską gorliwością dla głoszenia Ewangelii ubogim i podniesienia blasku stanu duchownego, spraw, prosimy, abyśmy czcząc jego zasługi, starali się naśladować przykład jego cnót.
+$Per Dominum
+
+[Lectio]
+@Commune/C5b:Lectio
+
+[Graduale]
+@Commune/C5b:Graduale
+
+[Evangelium]
+@Sancti/04-25:Evangelium
+
+[Offertorium]
+@Commune/C5b:Offertorium
+
+[Secreta]
+@Commune/C5b:Secreta
+
+[Communio]
+@Commune/C5b:Communio
+
+[Postcommunio]
+@Commune/C5b:Postcommunio

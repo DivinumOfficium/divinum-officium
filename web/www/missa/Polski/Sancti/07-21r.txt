@@ -1,0 +1,65 @@
+[Rank]
+S. Laurentii a Brundusio Confessoris;;Duplex;;3;;vide C5a
+
+[RankNewcal]
+S. Laurentii a Brundusio Confessoris;;Duplex optional;;2;;vide C5a
+
+[Rule]
+vide C5a;
+Gloria
+
+[Comment]
+# 21 VII – Św. Wawrzyńca z Brindisi, Wyznawcy i Doktora Kościoła
+! Wspomnienie
+! Szaty czerwone
+Św. Wawrzyniec urodził się w Brindisi (Apulia) w 1559 roku. Wstąpiwszy do zakonu Kapucynów zdobył głębokie wykształcenie teologiczne i znajomość wielu języków. Gorliwie pracował nad reformą katolicką w Italii, Szwajcarii, Niemczech i Czechach jako kaznodzieja i pisarz. Wielokrotnie pełnił urząd prowincjała, a przez 3 lata był generałem zakonu. Wielokrotnie też papieże zlecali mu odpowiedzialne poselstwa. Jego zabiegom przypisuje się zwycięstwo nad Turkami pod Białogrodem w roku 1601. Umarł w Lizbonie 22 lipca 1619 roku.
+
+Msza wspólna nr 20 In medio, z wyjątkiem kolekty
+
+Św. Praksedy, Dziewicy
+! Wspomnienie
+! Szaty białe
+Nie znamy szczegółów życia tej świętej. Starożytny kościół w Rzymie świadczy o wielkiej czci, którą cieszyła się wśród tamtejszych chrześcijan.
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Boże, który udzieliłeś św. Wawrzyńcowi, Wyznawcy Twemu i Doktorowi, ducha mądrości i męstwa do pokonywania największych trudności dla chwały Twego imienia i zbawienia dusz, daj nam w tymże duchu poznawać, co należy czynić, a gdy poznamy, za jego wstawiennictwem wykonywać.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+@Commune/C4a:Secreta
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+@Commune/C4a:Postcommunio
+
+[Commemoratio Oratio]
+! Wspomnienie św. Praksedy, Dziewicy
+Wysłuchaj nas, Boże, nasz Zbawicielu i spraw, abyśmy radując się z uroczystości świętej Twojej Dziewicy Praksedy, nabyli uczucia synowskiego oddania.
+$Per Dominum
+
+[Commemoratio Secreta]
+! Wspomnienie św. Praksedy, Dziewicy
+Przyjmij, Panie, ofiarę, którą lud Tobie oddany składa ku czci Świętych Twoich, wiedząc, że dzięki ich zasługom doznał pomocy w ucisku.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+! Wspomnienie św. Praksedy, Dziewicy
+Nasyciłeś, Panie, rodzinę Twoją świętymi darami; wzmacniaj nas za wstawiennictwem tej, której uroczystość obchodzimy.
+$Per Dominum
