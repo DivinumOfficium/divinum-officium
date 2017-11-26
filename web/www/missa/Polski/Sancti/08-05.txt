@@ -1,0 +1,46 @@
+[Rank]
+S. Mariae ad Nives;;Duplex majus;;4;;ex C11
+
+[RankNewcal]
+S. Mariae ad Nives;;Duplex optional;;2;;vide C11
+
+[Rule]
+ex C11;
+Gloria
+CredoDA
+Prefatio=Maria=Festivitate;
+
+[Comment]
+# 5 VIII – Rocznica Konsekracji N. M. P. Śnieżnej
+! 3 klasy
+! Szaty białe
+Dzisiaj obchodzimy rocznicę konsekracji największego z kościołów poświęconych Najświętszej Maryi Pannie w Rzymie, zwanego bazyliką «Najświętszej Maryi Panny Większej». Ufundował go patrycjusz rzymski, któremu Matka Boża wskazała to miejsce budowy przez niezwykły opad śniegu. Kościół ten konsekrował papież Liberiusz w wieku IV. W następnym stuleciu papież Sykstus III przebudował bazylikę i w roku 432 poświęcił ją na nowo Matce Bożej jako pomnik Soboru Efeskiego, który uroczyście ogłosił Jej Boże Macierzyństwo.
+
+Msza wspólna nr 2 Salve, sancta Parens
+
+[Introitus]
+@Tempora/C10:Introitus
+
+[Oratio]
+@Tempora/C10:Oratio
+
+[Lectio]
+@Tempora/C10:Lectio
+
+[Graduale]
+@Tempora/C10:Graduale
+
+[Evangelium]
+@Tempora/C10:Evangelium
+
+[Offertorium]
+@Tempora/C10:Offertorium
+
+[Secreta]
+@Tempora/C10:Secreta
+
+[Communio]
+@Tempora/C10:Communio
+
+[Postcommunio]
+@Tempora/C10:Postcommunio
