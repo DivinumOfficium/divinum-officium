@@ -13,7 +13,7 @@ Gloria
 ! Szaty białe
 Michał Ghislieri, urodzony w Bosco w Lombardii 17 stycznia 1504 r., mając czternaście lat wstąpił do zakony Kaznodziejskiego. W roku 1566 został wybrany papieżem i przyjął imię Piusa V. Głównymi dziełami jego pontyfikatu było przygotowanie zwycięstwa floty chrześcijańskiej pod Lepanto oraz reforma ksiąg liturgicznych. Św. Pius V zmarł w r. 1572.
 
-Msza wspólna nr 8 Si digilis, z wyjątkiem Kolekty
+Msza wspólna nr 8 Si diligis, z wyjątkiem Kolekty
 
 [Introitus]
 @Commune/C4b:Introitus
@@ -27,6 +27,9 @@ $Per Dominum
 
 [Graduale]
 @Commune/C4b:Graduale
+
+[GradualeP]
+@Commune/C4b:GradualeP
 
 [Evangelium]
 @Commune/C4b:Evangelium
