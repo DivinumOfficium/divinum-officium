@@ -139,6 +139,12 @@ if ($p) {
   setsetupvalue('parameters', 0, $priest);
 }
 
+$p = strictparam('psalmvar');
+if ($p) {
+  $psalmvar = $p;
+  setsetupvalue('parameters', 3, $psalmvar);
+}
+
 $p = strictparam('screenheight');
 if ($p) {
   $screenheight = $p;

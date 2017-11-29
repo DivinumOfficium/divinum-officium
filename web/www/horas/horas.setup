@@ -2,6 +2,7 @@
 $priest='0';;
 $building='0';;
 $lang1='Latin';;
+$psalmvar='0';;
 $whitebground='1';;
 $blackfont='black';;
 $smallblack='-1 black';;
@@ -14,7 +15,7 @@ $screenheight='1024';;
 $textwidth='100';;
 
 [parameterscheck]
-bbtbtcccccccnn
+bbtbbtcccccccnn
 
 [general]
 $expand='all';;
