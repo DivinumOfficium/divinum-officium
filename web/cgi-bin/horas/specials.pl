@@ -796,6 +796,7 @@ sub psalmi_minor {
 					 
   pop (@s);
   push (@s,'_');
+  $ant =~ s/\s*\*\s*/ /;
   push (@s, $ant);
   return;
 }
@@ -967,6 +968,7 @@ sub antetpsalm {
   }
   if ($ant) {
     $ant =~ s/\;\;[0-9\;n]+//;
+    $ant =~ s/\s*\*\s*/ /;
     push (@s, '_');
     push (@s, "Ant. $ant");
   }
@@ -1414,6 +1416,7 @@ sub getcommemoratio {
 
   our %prayers;
   my $w = "!" . &translate("Commemoratio",$lang);
+  $a =~ s/\s*\*\s*/ /;
   $w .= " $rank[0]\nAnt. $a\n_\n$v\n_\n$prayers{$lang}->{Oremus}\nv. $o\n";
   return $w;
 }
@@ -1443,6 +1446,7 @@ sub vigilia_commemoratio {
   my %p = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};  
   my $a = $p{"Day$dayofweek Ant 2"};
   my $v = $p{"Day$dayofweek Versum 2"};
+  $a =~ s/\s*\*\s*/ /;
   $w = $c . "Ant. $a" . "_\n$v" . "_\n\$Oremus\n$w"; 
   return $w;
 }
@@ -1834,6 +1838,7 @@ sub getrefs {
       if (!$a) {$a  = "Day$dayofweek Ant $ind missing";}
       my $v = chompd($s{"Day$dayofweek Versum $ind"});
       if (!$v) {$a  = "Day$dayofweek Versus $ind missing";}
+      $a =~ s/\s*\*\s*/ /;
       $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$after";
       do_inclusion_substitutions($a, $substitutions);
       do_inclusion_substitutions($v, $substitutions);
@@ -1900,7 +1905,8 @@ sub getrefs {
       do_inclusion_substitutions($a, $substitutions);
       do_inclusion_substitutions($v, $substitutions);
       do_inclusion_substitutions($o, $substitutions);
-	  $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$o" . "_\n$after";  
+      $a =~ s/\s*\*\s*/ /;
+      $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$o" . "_\n$after";
       next;
     }
 		 
