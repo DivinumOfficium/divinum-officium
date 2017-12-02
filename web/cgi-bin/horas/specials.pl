@@ -787,8 +787,9 @@ sub psalmi_minor {
   
   #quicumque
   if (($version !~ /(1955|1960)/ || $dayname[0] =~ /Pent01/i) && $hora =~ /prima/i && 
-     $dayname[0] =~ /(Epi|Pent)/i && $dayofweek == 0 && 
-     ($dayname[0] =~ /Pent01/i || checksuffragium() )) {
+      (($dayname[0] =~ /(Epi|Pent)/i) || $version =~ /Trident/i) &&
+      $dayofweek == 0 &&
+      ($dayname[0] =~ /Pent01/i || checksuffragium() )) {
     push(@s, "\&psalm(234)");
     push(@s, "\n");
     setbuild2('Quicumque');
@@ -887,7 +888,7 @@ sub psalmi_major {
     @p = split("\n", $psalmi{"Day0 $h"});
     if ($version =~ /monastic/i && $hora =~/laudes/i)    
       {@p = split("\n", $psalmi{"DaymF Laudes"});}
-    elsif ($version =~ /Trident/i && $hora =~ /laudes/i && $dayname[0] !~ /Quad[1-6]/i) 
+    elsif ($version =~ /Trident/i && $hora =~ /laudes/i)
       {@p = split("\n", $psalmi{"DayaC Laudes"});}	
 
     setbuild2('Psalmi dominica');
