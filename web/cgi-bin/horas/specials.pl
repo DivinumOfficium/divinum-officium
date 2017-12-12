@@ -1881,7 +1881,7 @@ sub getrefs {
         $i =~ s/\sgregem.*//i; 
         $o = $s{$i};		  
 		    if (!$o) {$o = "$file:$item missing\n";}
-		    elsif ($o !~ /\!Oratio/i) {$o = "!Oratio\n$o";}
+		    elsif ($o !~ /\$Oremus/i) {$o = "\$Oremus\n$o";}
       }	
 	  
       # Special processing for Common of Supreme Pontiffs.
