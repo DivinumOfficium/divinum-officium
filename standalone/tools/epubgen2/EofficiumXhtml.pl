@@ -111,7 +111,7 @@ our %translate; #translation of the skeleton label for 2nd language
 
 #internal script, cookies
 %dialog = %{setupstring($datafolder, '', 'horas.dialog')};
-if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'Ehoras.setup')};}
+if (!$setupsave) {%setup = %{setupstring('.', '', 'Ehoras.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 #if (!$setupsave && !getcookies('horasp', 'parameters')) {setcookies('horasp', 'parameters');}
