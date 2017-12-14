@@ -1,0 +1,50 @@
+[Rank]
+S. Bernardi Abbatis et Ecclesiae Doctoris;;Duplex;;3;;vide C5
+
+[Name]
+Bernarde
+
+[Rule]
+vide C5;
+Gloria
+CredoDA
+
+[Comment]
+# 20 VIII – Św. Bernarda, Opata i Doktora Kościoła
+! 3 klasy
+! Szaty białe
+Św. Bernard urodził się pod Dijon we Francji w roku 1090. Mając dwadzieścia dwa lata wstąpił do opactwa Cystersów w Citeaux, pociągając za sobą 30 towarzyszy młodości. Trzy lata później założył opactwo w Clairvaux i był jego przełożonym aż do śmierci.
+Św. Bernard był nie tylko gorliwym opatem swojej rodziny zakonnej, lecz wywarł wpływ na życie Kościoła w swojej epoce. Położył kres schizmie Anakleta w Rzymie, obalił herezję Abelarda i zdemaskował błędy Arnolda z Brescji. Z polecenia papieża głosił drugą krucjatę. Nadzwyczajny dar wymowy zjednał mu tytuł Doktora Miodopłynnego. Był jednym z największych piewców Matki Bożej. Zostawił wiele homilii i modlitw ku Jej czci, które aż do dzisiaj karmią naszą pobożność. Zmarł w Clairvaux 20 sierpnia 1153 roku.
+
+Msza wspólna nr 20 In medio
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Boże, Tyś dał ludowi Swemu świętego Bernarda za pośrednika zbawienia wiecznego, spraw, prosimy Cię, abyśmy mogli mieć orędownikiem w niebie tego, który na ziemi był dla nas mistrzem życia.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio1
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+Panie, niech nam nie zabraknie serdecznej modlitwy świętego Bernarda, Twego Biskupa i Doktora, która zaleci Tobie naszą ofiarę i wyjedna nam Twoje przebaczenie.
+$Per Dominum
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+Prosimy Cię, Panie, niech święty Bernard, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
+$Per Dominum
+

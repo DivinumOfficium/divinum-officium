@@ -914,7 +914,9 @@ sub ant_Benedictus : ScriptFunc
 
   if ($num == 1 && $duplex < 3 && $version !~ /1960/) {return "Ant. $ant_parts[0]";}
   if ($num == 1) {return "Ant. $ant";}
-  else {return "Ant. {::}$ant";}
+  else {
+    $ant =~ s/\s*\*\s*/ /;
+    return "Ant. {::}$ant";}
 }
 
 #*** ant_Magnificat($num, $lang)
@@ -958,7 +960,9 @@ sub ant_Magnificat : ScriptFunc
 
   if ($num == 1 && $duplex < 3 && $version !~ /1960/) {return "Ant. $ant_parts[0]";}
   if ($num == 1) {return "Ant. $ant";}
-  else {return "Ant. {::}$ant";}
+  else {
+    $ant =~ s/\s*\*\s*/ /;
+    return "Ant. {::}$ant";}
 }
 
 #*** canticum($psnum, $lang)

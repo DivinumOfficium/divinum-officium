@@ -1,0 +1,74 @@
+[Rank]
+S. Augustini Episcopi et Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[Name]
+Augustine
+
+[Rule]
+vide C4a;
+Gloria
+CredoDA
+
+[Comment]
+# 28 VIII – Św. Augustyna, Biskupa, Wyznawcy i Doktora Kościoła
+! 3 klasy
+! Szaty białe
+Św. Augustyn urodził się w Tagaście (Afryka północna) w roku 354 jako syn poganina Patrycjusza i gorliwej chrześcijanki św. Moniki. Mimo troskliwego wychowania przez matkę, w młodości prowadził życie grzeszne, oddając się rozpuście i ulegając herezji manichejskiej. Jako nauczyciel wymowy udał się do Kartaginy, Rzymu i Mediolanu, a za nim podążała matka, nieustannie modląc się o jego nawrócenie. Nie mogąc znaleźć spokoju sumienia, Augustyn studiował rozmaite systemy filozoficzne, wreszcie w Mediolanie pod wpływem rozmów ze św. Ambrożym i lektury listów św. Pawła znalazł prawdę. Na Wielkanoc 387 roku przyjął chrzest. Wróciwszy do Afryki, przez cztery lata oddawał się studiom i modlitwie, po czym otrzymał święcenia kapłańskie. Wkrótce został biskupem Hippony. Wpływ jego nauki ogarniał cały Kościół zachodni. Jego mowy i pisma zalicza się do najświetniejszych dzieł chrześcijaństwa. Św. Augustyn zmarł w czasie oblężenia Hippony przez Wandalów 28 sierpnia 430 roku. Jest jednym z czterech Wielkich Doktorów Kościoła zachodniego.
+
+Msza wspólna nr 20 In medio, z wyjątkiem kolekty i alleluja
+
+Św. Hermesa, Męczennika
+! Wspomnienie
+! Szaty czerwone
+Św. Hermes został ścięty za wiarę w Rzymie z początkiem II wieku.
+
+Msza wspólna nr 12 Laetabitur, z wyjątkiem kolekty, sekrety i pokomunii 
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Przychyl się ku prośbom naszym, wszechmogący Boże, a skoro pozwalasz nam ufać Twojej dobroci, za wstawiennictwem św. Augustyna, Twego Wyznawcy i Biskupa, daj nam doznać skutków właściwego Ci miłosierdzia.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+! Ps 36:30-31
+Usta sprawiedliwego głoszą mądrość i język jego mówi to, co słuszne.
+V. Prawo jego Boga mieszka w sercu jego, a kroki się jego nie chwieją. Alleluja, alleluja.
+! Ps 88:21
+Znalazłem Dawida, mojego sługę; namaściłem go świętym olejem moim. Alleluja.
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+@Commune/C4a:Secreta
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+@Commune/C4a:Postcommunio
+
+[Commemoratio Oratio]
+! Wspomnienie św. Hermesa, Męczennika
+Boże, któryś świętego Hermesa, Twego Męczennika, uzbroił cnotą stałości wśród cierpień, daj nam za jego przykładem, z miłości ku Tobie, gardzić dobrami świata i nie lękać się żadnych jego przeciwności.
+$Per Dominum
+
+[Commemoratio Secreta]
+! Wspomnienie św. Hermesa, Męczennika
+Składamy Ci, Panie, ofiarę uwielbienia, wspominając Twoich Świętych; spraw, prosimy, aby to, co im przyniosło chwałę, nam posłużyło do zbawienia.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+! Wspomnienie św. Hermesa, Męczennika
+Napełnieni niebieskim błogosławieństwem błagamy Twoją, Panie, łaskawość, abyśmy za przyczyną św. Hermesa, Twego Męczennika, doznali zbawiennych skutków ofiary, którą z pokorą sprawujemy.
+$Per Dominum
+
+

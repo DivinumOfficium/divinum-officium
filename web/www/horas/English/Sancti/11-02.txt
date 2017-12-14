@@ -43,9 +43,6 @@ $Indulgentiam
 
 &special('Conclusio', 'Latin')
 
-[Oratio Matutinum]
-@Commune/C9:Oratio_Fid:s/2//
-
 [Oratio mortuorum1]
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
 &Dominus_vobiscum2

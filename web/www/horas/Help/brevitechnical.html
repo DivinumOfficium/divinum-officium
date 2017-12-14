@@ -28,7 +28,7 @@
 </FONT></CENTER><BR><BR>
 
 This part of the help manual is written explicitly for encouraging anyone interested
-in the topic to write his/her own system, using whatever he/she wants from these ideas.
+in the topic to write his/her own system, using whatever he/she wants from these ideas. It is also meant to provide a general overview of how the programlet is internally structured.
 The only restriction is that we at The Divinum Officium Project have no legal responsibility for any mistake, 
 and the ideas cannot be copyrighted, limiting our rights or the access of others to the 
 same ideas.</FONT><BR><BR>
@@ -47,23 +47,21 @@ the program automatically selects from the English.<BR><BR>
 Each language folder contains the same set of subfolders, which represents the parts of the
 printed berviary volumes: Ordinarium, Psalterium, Tempora, Sancti, Commune. For technical reasons,
 there are separate folders for the psalms, and for the Martyrologium.<BR><BR> 
-The style and punctuation used within the text is that of the 1962 liturgical books. One space is used between sentences. In accordance with the principles sent to the typographers of the 1960 editiones typicae, the letter J in the 1960 rubrics is transformed to the letter I. (Sacrae Congregatio Rituum, "Ordinationes ad librorum liturgicorum editores", 26.VI.1960)<BR><BR>
+The style and punctuation used within the text is that of the 1962 liturgical books. One space is used between sentences. In accordance with the principles sent to the typographers of the 1960 editiones typicae, the letter J in the 1960 rubrics is transformed to the letter I. (<I>Sacrae Congregatio Rituum, "Ordinationes ad librorum liturgicorum editores", 26.VI.1960</I>)<BR><BR>
 The files itself usually are converted into <span class=prma>Hash elements.</span>
 The <span class=prma>key</span> is enclosed into square brackets 
-<span class=pram>[ ... ]</span> which is a separate line followed by the body of the element.<BR><BR>
+<span class=pram>[ ... ]</span> which is a separate line followed by the body of the element. For instance, [Ant 2] refers to the Benedictus antiphon at Lauds, while [Lectio93] normally refers to the 9th (hagiographical) reading of a commemorated saint (pre-1960), which became the 3rd reading at Matins on 3rd class feasts under 1960 rubrics.<BR><BR>
 These elements are read and composed by the programlet. The folder and files can be 
-viewed using <span class=prma>Show files/Edit</span> feature, which shows the files
+viewed within the <a href='https://github.com/divinumofficium/divinum-officium'>GitHub</a> repository, which shows the files
 in the following folders:<BR><BR>
 
 <UL>
 <LI><span class=prma>Ordinarium</span> folder is the collection of the scripts describing the canonical hours.
-Each hour is represented by two or more files. These files are not
-converted into hash. A line starting with hashmark organizes the content. These files are used by
-<span class=prma>special.pl</span> program file. If necessary, there are separate
-files for the 1960 or Tridentine version, also for Paschal time (name ending with 'p'.)<BR><BR>
+Each hour is represented by two or more files. These files are not converted into hash. A line starting with hashmark organizes the content. These files are used by
+<span class=prma>special.pl</span> program file. If necessary, there are separate files for the 1960 (name ending with 'r') or Tridentine version (name ending with 't') or for Paschal time (name ending with 'p'.)<BR><BR>
 
 <LI><span class=prma>Psalterium</span> folder holds the information usually printed
-in the Ordinarium and Psalterium sections of the Breviarium Romanum. <span class=prma>Prayers.txt</span>)
+in the Ordinarium and Psalterium sections of the <I>Breviarium Romanum</I>. <span class=prma>Prayers.txt</span>)
 contains the common prayers. The rest contains the Benedictions, Doxologies, Psalm 94 prepared
 as the Invitatory; seasonal parts for Matins (Matutinum special), Lauds, and Vespers (Major special);
 Minor hours (Minor special); antiphons and psalm sets (Psalmi Major|Matutinum|Minor); 
@@ -109,10 +107,7 @@ For practical reasons, the <B>Officium Sanctae Mariae Sabbato</B> is referenced 
 <BR><BR>
 
 <LI><span class=prma>Martyrologium</span> contains the files named as mm-nn for the
-Martyrologium. Please note that the Martyrology at Prime is anticipated for the subsequent day. See <A HREF=credits.html>credits</A> for the sources.<BR><BR>
-
-<LI><span class=prma>program</span> folder in <span class=prma>Show files</span>
-list refers to the files described below in cgi-bin/horas folder. 
+Martyrologium. Please note that the Martyrology at Prime is anticipated for the subsequent day. See <A HREF=credits.html>credits</A> for the sources.<BR>
 </UL><BR>
 
 <A NAME='programs'></A>
@@ -270,7 +265,7 @@ if <I>hour spec</I> is <strong>ad Laudes tantum.</strong>.<BR><BR>
 
 <LI><span class=prma>1 nocturn</span> : Matins of one nocturn only.<BR><BR>
 
-<LI><span class=prma>Rubrica 1570 aut Rubrica 1910 aut Rubrica Divino aut Rubrica 1960 (etc.)</span> : Specifies usage of an element solely in one or more of these rubrical usages.<BR><BR>
+<LI><span class=prma>Rubrica 1570 aut Rubrica 1910 aut Rubrica Divino aut Rubrica 1960 (etc.)</span> : Specifies usage of an element solely in one or more of these rubrical usages. The syntax is to place these conditionals in parentheses (e.g. [Lectio1](rubrica 1960), etc.)<BR><BR>
 
 </UL>
 

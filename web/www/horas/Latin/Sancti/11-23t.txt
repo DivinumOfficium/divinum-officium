@@ -1,5 +1,5 @@
 [Rank]
-S. Clementis Papæ et Martyris;;Duplex;;3;;vide C2
+S. Clementis I Papæ et Martyris;;Duplex;;3;;vide C2
 
 [Rank1570]
 S. Clementis Papæ et Martyris;;Semiduplex;;2;;vide C2
@@ -13,10 +13,10 @@ vide C2;
 OPapaM=Cleméntem;
 
 [Ant Vespera]
-Orante * sancto Clemente, appáruit ei Agnus Dei.;;109
-Non meis meritis * ad vos me misit Dóminus, vestris corónis participem fíeri.;;110
-Vidi supra montem * Agnum stántem, de sub cujus pede fons vivus emanat.;;111
-De sub cujus pede * fons vivus emanat: flúminis ímpetus lætíficat civitátem Dei.;;112
+Oránte * sancto Cleménte, appáruit ei Agnus Dei.;;109
+Non meis méritis * ad vos me misit Dóminus, vestris corónis partícipem fíeri.;;110
+Vidi supra montem * Agnum stántem, de sub cujus pede fons vivus emánat.;;111
+De sub cujus pede * fons vivus emánat: flúminis ímpetus lætíficat civitátem Dei.;;112
 Omnes gentes * per gyrum credidérunt Christo Dómino.;;116
 
 [Ant 1]
@@ -30,11 +30,11 @@ $Per Dominum
 !Commemoratio S. Felicitatis Martyris
 @Commune/C7:Oratio proper
 $Oremus
-Præsta, quǽsumus, omnípotens Deus: ut, beátæ Felicitátis Mártyris tuæ solemnia recenséntes, meritis ipsíus prótegámur et precibus. 
+Præsta, quǽsumus, omnípotens Deus: ut, beátæ Felicitátis Mártyris tuæ solémnia recenséntes, meritis ipsíus protegámur et précibus. 
 $Per Dominum
 
 [Responsory1]
-R. Orante sancto Clemente, appáruit ei Agnus Dei, 
+R. Oránte sancto Cleménte, appáruit ei Agnus Dei, 
 * De sub cujus pede fons vivus emánat: flúminis ímpetus lætíficat civitátem Dei.
 V. Vidi supra montem Agnum stántem.
 R. De sub cujus pede fons vivus emánat: flúminis ímpetus lætíficat civitátem Dei.
@@ -46,12 +46,12 @@ V. Non meis meritis ad vos me misit Dóminus vestris corónis participem fíeri.
 R. Ut digni efficiámur promissiónibus Christi.
 
 [Responsory3]
-R. Dedísti, Dómine, habitáculum Mártyri tuo Cleménti in mari, in modum templi marmorei angelicis mánibus præparátum: 
-* Iter præbens pópulo terræ, ut enarrent mirabília tua.
+R. Dedísti, Dómine, habitáculum Mártyri tuo Cleménti in mari, in modum templi marmórei angélicis mánibus præparátum: 
+* Iter præbens pópulo terræ, ut enárrent mirabília tua.
 V. Dedísti, Dómine, Sanctis tuis viam in mari, et in flumínibus sémitam.
-R. Iter præbens pópulo terræ, ut enarrent mirabília tua.
+R. Iter præbens pópulo terræ, ut enárrent mirabília tua.
 &Gloria
-R. Iter præbens pópulo terræ, ut enarrent mirabília tua.
+R. Iter præbens pópulo terræ, ut enárrent mirabília tua.
 
 [Lectio4]
 Clemens, Romanus, Faustini fílius, de regióne Cælii montis, discipulus beáti Petri, cujus méminit Paulus scribens ad Philippenses: Etiam rogo et te, germane compar, ádjuva illas quæ mecum laboravérunt in Evangelio, cum Cleménte et ceteris adjutóribus meis, quorum nómina sunt in libro vitæ. Hic septem Urbis regiónes divísit septem notariis, síngulas singulis attribuens, qui passiónes Mártyrum et res ab eis gestas, diligentíssime conquisitas, litteris mandarent. Multa scripsit et ipse accurate et salutáriter, quibus christianam religiónem illustrávit.
@@ -63,11 +63,11 @@ Cum autem doctrina ac vitæ sanctitáte multos ad Christi fidem convérteret, a 
 Quibus concitátus Trajanus, misit illuc qui Clementem, alligáta ad ejus collum ánchora, in profúndum dejícerent. Quod cum factum esset, Christiánis ad littus orántibus, mare ad tria milliaria recéssit; eoque illi accedéntes, ædiculam marmoream in templi formam et intus arcam lápideam, ubi Mártyris corpus cónditum est. Ecclésia etiam in eo ínsulæ loco unde divinitus fons manarat, ejusdem nómine dedicáta est. Vixit in pontificatu annos novem, menses sex, dies sex. Fecit ordinatiónes duas mense Decembri, quibus creávit presbyteros decem, diaconos duos, episcopos per diversa loca quindecim.
 
 [Lectio7]
-Léctio sancti Evangélii secúndum Matthǽum.
+Léctio sancti Evangélii secúndum Matthǽum
 !Matt 24:42-45
 In illo témpore: Dixit Jesus discipulis suis: Vigilate, quia nescitis qua hora Dominus vester venturus sit. Et réliqua.
 _
-Homilia sancti Hilarii Epíscopi.
+Homilía sancti Hilárii Epíscopi
 !Comment. in Matth. Can 26
 Ut ignorantiam illam diei omnibus taciti, non sine utilis silentii ratione esse sciremus, vigilare nos Dominus propter adventum furis admonuit, et orationum assiduitate detentos omnibus præceptorum suorum operibus inhærere. Furem enim esse ostendit zabulum, ad detrahenda ex nobis spolia pervigilem, et corporum nostrorum domibus insidiantem: ut ea incuriosis nobis, et somno deditis, consiliorum suorum atque illecebrarum jaculis perfodiat. Paratos igitur esse nos convenit: quia diei ignoratio intentam sollicitudinem suspensæ exspectationis exagitet.
 
@@ -86,7 +86,7 @@ Beáta Felícitas, cujus hódie natalícia celebramus, septem fílios sic post s
 @:Ant Vespera:s/;;.*//g
 
 [Ant 2]
-Cum iter ad mare cepísset, * pópulus voce magna clamábat: Dómine Jesu Christe, salva illum; et Clemens cum lácrimis dicebat: Suscipe, Pater, spíritum meum.
+Cum iter ad mare cepísset, * pópulus voce magna clamábat: Dómine Jesu Christe, salva illum; et Clemens cum lácrimis dicébat: Súscipe, Pater, spíritum meum.
 
 [Ant 3]
 @:Ant 1

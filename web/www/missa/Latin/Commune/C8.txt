@@ -4,7 +4,7 @@ Missa Dedicationis Ecclesiae, Terribilis
 [Rule]
 Gloria
 Credo
-Prefatio=Communis
+Prefatio=Dedicatio
 
 [Introitus]
 !Gen 28:17
@@ -32,13 +32,13 @@ tribulatióne ad te clamáverint, consolatiónis tuæ benefícia consequántur.
 $Per Dominum
 
 [Lectio]
-Léctio libri Apocalýpsis beáti Joánnis Apóstoli.
+Léctio libri Apocalýpsis beáti Joánnis Apóstoli
 !Apoc 21:2-5
 In diébus illis: Vidi sanctam civitátem Jerúsalem novam descendéntem de coelo a Deo, parátam sicut sponsam ornátam viro suo. Et audívi vocem magnam de throno dicéntem: Ecce tabernáculum Dei cum homínibus, et habitábit cum eis. Et ipsi pópulus ejus erunt, et ipse Deus cum eis erit eórum Deus: et abstérget Deus omnem lácrimam ab óculis eórum: et mors ultra non erit, neque luctus neque clamor neque dolor erit ultra, quia prima abiérunt. Et dixit, qui sedébat in throno: Ecce, nova fácio ómnia.
 
 [Graduale]
 Locus iste a Deo factus est, inæstimábile sacraméntum, irreprehensíbilis est.
-V. Deus, cui astat Angelórum chorus, exáudi preces servórum tuórum. Allelúja, allelúja
+V. Deus, cui astat Angelórum chorus, exáudi preces servórum tuórum. Allelúja, allelúja.
 !Ps 137:2
 Adorábo ad templum sanctum tuum: et confitébor nómini tuo. Allelúja.
 
@@ -50,13 +50,13 @@ Qui confídunt in Dómino, sicut mons Sion: non commovébitur in ætérnum, qui 
 V. Montes in circúitu ejus, et Dóminus in circúitu pópuli sui, ex hoc nunc, et usque in saeculum.
 
 [GradualeP]
-Allelúja, allelúja
+Allelúja, allelúja.
 !Ps 137:2
 Adorábo ad templum sanctum tuum: et confitébor nómini tuo.
 Allelúja. V. Bene fundáta est domus Dómini supra firmam petram. Allelúja.
 
 [Evangelium]
-Sequéntia ++ sancti Evangélii secúndum Lucam.
+Sequéntia ++ sancti Evangélii secúndum Lucam
 !Luc 19:1-10
 In illo témpore: Ingréssus Jesus perambulábat Jéricho. Et ecce, vir nómine~
 Zachaeus: et hic princeps erat publicanórum, et ipse dives: et quærébat vidére~
@@ -84,12 +84,14 @@ atque perfécta córporis et ánimæ devotióne placeámus; ut, dum hæc vota pr
 réddimus, ad ætérna praemia, te adjuvante, perveníre mereámur.
 $Per Dominum
 
-[Secreta2] Extra Ecclesiam dedicatam
+[Secreta2] 
+!Extra Ecclesiam dedicatam
 Annue, quǽsumus, Dómine, précibus nostris: ut, dum hæc vota præséntia réddimus,~
 ad ætérna praemia, te adjuvánte, perveníre mereámur.
 $Per Dominum
 
-[Secreta1] In ipsa die Dedicationis Ecclesiæ et per Octavam,
+[Secreta1] 
+!In ipsa die Dedicationis Ecclesiæ et per Octavam
 Deus, qui sacrandórum tibi auctor es múnerum, effúnde super hanc oratiónis domum~
 benedictiónem tuam: ut ab ómnibus, in ea invocántibus nomen tuum, defensiónis~
 tuæ auxílium se nitátur.
@@ -106,7 +108,8 @@ habitáculum: auxiliáre pópulo tuo supplicánti; ut, quod Ecclésiæ tuæ~
 corporálibus próficit spátiis, spirituálibus amplificétur augméntis.
 $Per Dominum
 
-[Postcommunio1] In ipsa die Dedicationis Ecclesiæ et per Octavam,
+[Postcommunio1] 
+!In ipsa die Dedicationis Ecclesiæ et per Octavam
 . Quǽsumus, omnípotens Deus: ut in hoc loco, quem nómini tuo indígni~
 dedicávimus, cunctis peténtibus aures tuæ pietátis accómmodes.
 $Per Dominum

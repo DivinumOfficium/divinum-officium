@@ -1,0 +1,51 @@
+[Rank]
+S. Angelae Mericiae Virginis;;Duplex;;3;;vide C6b
+
+[RankNewcal]
+S. Angelae Mericiae Virginis;;Duplex optional;;2;;vide C6b
+
+[Rule]
+vide C6;
+Gloria
+
+[Comment]
+# 01 VI – Św. Anieli Merici, Dziewicy
+! Wspomnienie
+! Szaty białe
+Św. Aniela urodziła się w Desenzano nad jeziorem Garda w północnej Italii. Uderzyły ją braki w wychowaniu dziewcząt. «Upadek obyczajów w społeczeństwie – mawiała – ma swoje źródła w upadku rodziny chrześcijańskiej. Mało jest matek prawdziwie chrześcijańskich, ponieważ zaniedbane jest wychowanie dziewcząt». Aby zaradzić złu, założyła nowe zgromadzenie zakonne zajmujące się wychowaniem dziewcząt. Za patronkę zgromadzenia wybrała św. Urszulę (stąd potoczna nazwa Urszulanki). Św. Aniela zmarła w Brescii w 1540 roku.
+
+Msza wspólna nr 26 Dilexisti, z wyjątkiem kolekty
+
+[Introitus]
+@Commune/C6b:Introitus
+
+[Oratio]
+Boże, Tyś chciał, by dzięki św. Anieli zakwitł w Kościele Twoim nowy zakon dziewic Tobie poświęconych; daj nam za jej przyczyną prowadzić życie anielskie, abyśmy, wyzbywając się wszystkiego co ziemskie, zasłużyli na pełnię wiekuistych radości.
+$Per Dominum
+
+[Lectio]
+@Commune/C6b:Lectio
+
+[Graduale]
+@Commune/C6b:Graduale
+
+[GradualeP]
+@Commune/C6bp:Graduale
+
+[Evangelium]
+@Commune/C6b:Evangelium
+
+[Offertorium]
+@Commune/C6b:Offertorium
+
+[Secreta]
+Ofiara, którą Tobie, Panie, składamy czcząc pamięć świętej Anieli, niech nam wybłaga przebaczenie naszych nieprawości i zjedna dary Twej łaski.
+$Per Dominum
+
+[Communio]
+@Commune/C6b:Communio
+
+[Postcommunio]
+Niebieskim pokarmem posileni, pokornie prosimy Cię, Panie, abyśmy za przykładem i przez modlitwy św. Anieli oczyszczeni z wszelkiej zmazy, duszą i ciałem podobali się Tobie.
+$Per Dominum
+

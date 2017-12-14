@@ -787,8 +787,9 @@ sub psalmi_minor {
   
   #quicumque
   if (($version !~ /(1955|1960)/ || $dayname[0] =~ /Pent01/i) && $hora =~ /prima/i && 
-     $dayname[0] =~ /(Epi|Pent)/i && $dayofweek == 0 && 
-     ($dayname[0] =~ /Pent01/i || checksuffragium() )) {
+      (($dayname[0] =~ /(Epi|Pent)/i) || $version =~ /Trident/i) &&
+      $dayofweek == 0 &&
+      ($dayname[0] =~ /Pent01/i || checksuffragium() )) {
     push(@s, "\&psalm(234)");
     push(@s, "\n");
     setbuild2('Quicumque');
@@ -796,6 +797,7 @@ sub psalmi_minor {
 					 
   pop (@s);
   push (@s,'_');
+  $ant =~ s/\s*\*\s*/ /;
   push (@s, $ant);
   return;
 }
@@ -886,7 +888,7 @@ sub psalmi_major {
     @p = split("\n", $psalmi{"Day0 $h"});
     if ($version =~ /monastic/i && $hora =~/laudes/i)    
       {@p = split("\n", $psalmi{"DaymF Laudes"});}
-    elsif ($version =~ /Trident/i && $hora =~ /laudes/i && $dayname[0] !~ /Quad[1-6]/i) 
+    elsif ($version =~ /Trident/i && $hora =~ /laudes/i)
       {@p = split("\n", $psalmi{"DayaC Laudes"});}	
 
     setbuild2('Psalmi dominica');
@@ -967,6 +969,7 @@ sub antetpsalm {
   }
   if ($ant) {
     $ant =~ s/\;\;[0-9\;n]+//;
+    $ant =~ s/\s*\*\s*/ /;
     push (@s, '_');
     push (@s, "Ant. $ant");
   }
@@ -1414,6 +1417,7 @@ sub getcommemoratio {
 
   our %prayers;
   my $w = "!" . &translate("Commemoratio",$lang);
+  $a =~ s/\s*\*\s*/ /;
   $w .= " $rank[0]\nAnt. $a\n_\n$v\n_\n$prayers{$lang}->{Oremus}\nv. $o\n";
   return $w;
 }
@@ -1443,6 +1447,7 @@ sub vigilia_commemoratio {
   my %p = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};  
   my $a = $p{"Day$dayofweek Ant 2"};
   my $v = $p{"Day$dayofweek Versum 2"};
+  $a =~ s/\s*\*\s*/ /;
   $w = $c . "Ant. $a" . "_\n$v" . "_\n\$Oremus\n$w"; 
   return $w;
 }
@@ -1834,6 +1839,7 @@ sub getrefs {
       if (!$a) {$a  = "Day$dayofweek Ant $ind missing";}
       my $v = chompd($s{"Day$dayofweek Versum $ind"});
       if (!$v) {$a  = "Day$dayofweek Versus $ind missing";}
+      $a =~ s/\s*\*\s*/ /;
       $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$after";
       do_inclusion_substitutions($a, $substitutions);
       do_inclusion_substitutions($v, $substitutions);
@@ -1875,7 +1881,7 @@ sub getrefs {
         $i =~ s/\sgregem.*//i; 
         $o = $s{$i};		  
 		    if (!$o) {$o = "$file:$item missing\n";}
-		    elsif ($o !~ /\!Oratio/i) {$o = "!Oratio\n$o";}
+		    elsif ($o !~ /\$Oremus/i) {$o = "\$Oremus\n$o";}
       }	
 	  
       # Special processing for Common of Supreme Pontiffs.
@@ -1900,7 +1906,8 @@ sub getrefs {
       do_inclusion_substitutions($a, $substitutions);
       do_inclusion_substitutions($v, $substitutions);
       do_inclusion_substitutions($o, $substitutions);
-	  $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$o" . "_\n$after";  
+      $a =~ s/\s*\*\s*/ /;
+      $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$o" . "_\n$after";
       next;
     }
 		 

@@ -1,0 +1,60 @@
+[Rank]
+S. Joannis a S. Facundo Confessoris;;Duplex;;3;;vide C5
+
+[Rule]
+vide C5
+Gloria
+
+[Comment]
+# 12 VI – Św. Jana z Facundo, Wyznawcy
+! 3 klasy
+! Szaty białe
+Jan Gonzalez urodził się w S. Facundo w Hiszpanii około r. 1430. Był kanonikiem katedralnym w Burgos, potem wstąpił do zakonu Pustelników św. Augustyna. Otrzymał od Boga nadzwyczajne łaski mistyczne i dar godzenia powaśnionych (kolekta). Zmarł w r. 1479.
+
+! Wspomnienie Śś. Bazylidesa, Cyryna, Nabora i Nazariusza, Męczenników
+! Szaty czerwone
+Bazylides, żołnierz rzymski, został umęczony za czasów Dioklecjana. Cyryn (lub Kwiryn), biskup w Kroacji, poniósł śmierć za wiarę w r. 309. Nabor i Nazariusz to dwaj Męczennicy mediolańscy, którym w Rzymie wzniesiono bazylikę. Jest prawdopodobne, że dzisiaj wypada rocznica jej konsekracji.
+
+[Introitus]
+@Commune/C5:Introitus
+
+[Oratio]
+Boże, dawco pokoju i zwolenniku miłości, któryś św. Jana, Twego Wyznawcę, ozdobił przedziwną łaską godzenia powaśnionych, spraw dla jego zasług i wstawiennictwa, abyśmy utwierdzeni w Twojej miłości, nie odłączali się od Ciebie mimo wszelkich pokus.
+$Per Dominum
+
+[Lectio]
+@Commune/C5:Lectio
+
+[Graduale]
+@Commune/C5:Graduale
+
+[Evangelium]
+@Commune/C5:Evangelium
+
+[Offertorium]
+@Commune/C5:Offertorium
+
+[Secreta]
+@Commune/C5:Secreta
+
+[Communio]
+@Commune/C5:Communio
+
+[Postcommunio]
+@Commune/C5:Postcommunio
+
+[Commemoratio Oratio]
+! Wspomnienie Śś. Męczenników
+Prosimy Cię, Panie, niech uroczystość narodzin dla nieba świętych Męczenników Twoich Bazylidesa, Cyryna, Nabora i Nazariusza zajaśnieje nam blaskiem, a to, co im daje wiekuiste wywyższenie, niech wzrośnie przez owoce naszej pobożności.
+$Per Dominum
+
+[Commemoratio Secreta]
+! Wspomnienie Śś. Męczenników
+Ku uczczeniu męczeńskiej krwi świętych Bazylidesa, Cyryna, Nabora i Nazanusza składamy Ci, Panie, uroczyście dary ofiarne, rozważając Twe cuda, bo dzięki Tobie odnieśli oni takie zwycięstwo.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+! Wspomnienie Śś. Męczenników
+Prosimy Cię, Panie, spraw, abyśmy stale obchodząc uroczystość świętych Męczenników Twoich Bazylidesa, Cyryna, Nabora i Nazariusza, nieustannie doznawali ich opieki.
+$Per Dominum
+

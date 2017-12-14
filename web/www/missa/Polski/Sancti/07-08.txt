@@ -1,0 +1,42 @@
+[Rank]
+S. Elisabeth Reg. Portugaliae Viduae;;Semiduplex;;2;;vide C7a
+
+[Rule]
+vide C7a;
+Gloria
+
+[Comment]
+# 8 VII – Św. Elżbiety, Królowej i Wdowy
+! 3 klasy
+! Szaty białe
+Św. Elżbieta urodziła się w roku 1271 jako córka króla Aragonii. Poślubiła króla portugalskiego Dionizego. Wielokrotnie godziła męża z innymi monarchami, zapobiegając rozlewowi krwi. Owdowiawszy, przywdziała habit tercjarski i oddała się modlitwie oraz uczynkom miłosierdzia. Zmarła 4 lipca 1336 roku.
+
+Msza wspólna nr 29 Cognovi, z wyjątkiem kolekty
+
+[Introitus]
+@Commune/C7a:Introitus
+
+[Oratio]
+Najłaskawszy Boże, który wśród innych wspaniałych darów obdarzyłcś świętą królowę Elżbietę przywilejem uśmierzania gróźb wojny, daj nam za jej wstawiennictwem po spokojnym życiu doczesnym, o co kornie błagamy, dojść do wiekuistych radości.
+$Per Dominum
+
+[Lectio]
+@Commune/C7a:Lectio
+
+[Graduale]
+@Commune/C7a:Graduale
+
+[Evangelium]
+@Commune/C7a:Evangelium
+
+[Offertorium]
+@Commune/C7a:Offertorium
+
+[Secreta]
+@Commune/C7a:Secreta
+
+[Communio]
+@Commune/C7a:Communio
+
+[Postcommunio]
+@Commune/C7a:Postcommunio
