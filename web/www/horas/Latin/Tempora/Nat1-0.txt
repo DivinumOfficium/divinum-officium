@@ -9,6 +9,7 @@ Dominica Infra Octavam Nativitatis;;Semiduplex;;5.5;;ex Sancti/12-25
 ex Sancti/12-25 
 Lectio1 Sancti
 Psalmi Dominica
+no commemoratio (rubrica 1960)
 
 [Ant Vespera]
 @Sancti/12-25:Ant Vespera 3
@@ -34,6 +35,11 @@ $Qui tecum
 
 [Commemoratio 3] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
 @Sancti/12-25:Octava
+
+[Responsory3](rubrica 1960)
+@Sancti/12-25:Responsory4
+&Gloria
+R. Beáta Virgo, cujus víscera meruérunt portáre Dóminum Christum.
 
 [Lectio4]
 Sermo sancti Leónis Papæ
