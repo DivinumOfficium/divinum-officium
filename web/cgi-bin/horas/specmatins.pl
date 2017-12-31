@@ -606,6 +606,7 @@ sub lectio : ScriptFunc {
       # XXX: The commemoration has been suppressed, so we hardcode a path to
       # the sanctoral part.
       $c = officestring($datafolder, $lang, "Sancti/12-$day.txt");
+      $c->{'Lectio2'} .= $c->{'Lectio3'} if (contract_scripture(2));
     } else {
       $c = (columnsel($lang)) ? \%commemoratio : \%commemoratio2;
     }
