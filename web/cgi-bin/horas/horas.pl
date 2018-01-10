@@ -441,6 +441,7 @@ sub psalm : ScriptFunc {
   															
   #$psalmfolder = ($accented =~ /plain/i) ? 'psalms' : 'psalms1';
   $psalmfolder = 'psalms1';
+  $psalmfolder = 'PiusXII' if ($lang eq 'Latin' && $psalmvar);
   
   my $psnum;
   
