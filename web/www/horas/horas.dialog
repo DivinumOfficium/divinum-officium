@@ -2,7 +2,7 @@
 Priest~>$priest~>Checkbutton;;
 Building script~>$building~>Checkbutton;;
 Language 1~>$lang1~>Optionmenu~>languages;;
-Latin psalms 1942~>$psalmvar~>Checkbutton;;
+Pius XII Psalter~>$psalmvar~>Checkbutton;;
 White background~>$whitebground~>Checkbutton;;
 Text font~>$blackfont~>Entry~>12;;
 Small text~>$smallblack~>Entry~>12;;
