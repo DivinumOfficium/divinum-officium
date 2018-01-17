@@ -147,16 +147,22 @@ if ($p) {
   setsetupvalue('parameters', 2, $lang1);
 }
 
+$p = strictparam('psalmvar');
+if ($p) {
+  $psalmvar = $p;
+  setsetupvalue('parameters', 3, $psalmvar);
+}
+
 $p = strictparam('screenheight');
 if ($p) {
   $screenheight = $p;
-  setsetupvalue('parametrs', 11, $screenheight);
+  setsetupvalue('parametrs', 12, $screenheight);
 }
 
 $p = strictparam('textwidth');
 if ($p) {
   $textwidth = $p;
-  setsetupvalue('parametrs', 11, $textwidth);
+  setsetupvalue('parametrs', 13, $textwidth);
 }
 $expand = 'all';
 

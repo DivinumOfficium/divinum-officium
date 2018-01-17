@@ -601,9 +601,17 @@ sub lectio : ScriptFunc {
   # TODO: Get rid of this special case by separating the temporal and sanctoral
   # parts of Christmas, thus allowing occurring Scripture to be defined.
   if ($num <= 3 && $rule =~ /Lectio1 Sancti/i && $winner =~ /tempora/i && $day >= 29) {   
-    my %c = (columnsel($lang)) ? %commemoratio : %commemoratio2;
-    $w{"Lectio$num"} = $c{"Lectio$num"};
-    $w{"Responsory$num"} = $c{"Responsory$num"};
+    my $c;
+    if ($rule =~ /no commemoratio/i) {
+      # XXX: The commemoration has been suppressed, so we hardcode a path to
+      # the sanctoral part.
+      $c = officestring($datafolder, $lang, "Sancti/12-$day.txt");
+      $c->{'Lectio2'} .= $c->{'Lectio3'} if (contract_scripture(2));
+    } else {
+      $c = (columnsel($lang)) ? \%commemoratio : \%commemoratio2;
+    }
+    $w{"Lectio$num"} = $c->{"Lectio$num"};
+    $w{"Responsory$num"} = $c->{"Responsory$num"};
   }
 
   #Lectio1 tempora

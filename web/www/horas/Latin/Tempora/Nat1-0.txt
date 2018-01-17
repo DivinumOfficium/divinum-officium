@@ -2,11 +2,11 @@
 Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
 
 [Rank1960]
-Dominica Infra Octavam Nativitatis;;Duplex II class;;5.5;;ex Sancti/12-25
+Dominica Infra Octavam Nativitatis;;Semiduplex;;5.5;;ex Sancti/12-25
 
 [Rule]
 9 lectiones
-ex Sancti/12-25
+ex Sancti/12-25 
 Lectio1 Sancti
 Psalmi Dominica
 no commemoratio (rubrica 1960)
@@ -24,7 +24,7 @@ V. Verbum caro factum est, allelúja.
 R. Et habitávit in nobis, allelúja.
 
 [Ant 1]
-Dum medium silentium * tenerent omnia, et nox in suo cursu medium iter perageret, omnipotens sermo tuus, Domine, a regalibus sedibus venit, allelúja.
+Dum médium siléntium * tenérent ómnia, et nox in suo cursu médium iter perágeret, omnípotens Sermo tuus, Dómine, a regálibus sédibus venit, allelúja.
 
 [Oratio]
 Omnípotens sempitérne Deus, dírige actus nostros in beneplácito tuo: ut in nómine dilécti Fílii tui mereámur bonis opéribus abundáre:
@@ -35,6 +35,11 @@ $Qui tecum
 
 [Commemoratio 3] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
 @Sancti/12-25:Octava
+
+[Responsory3](rubrica 1960)
+@Sancti/12-25:Responsory4
+&Gloria
+R. Beáta Virgo, cujus víscera meruérunt portáre Dóminum Christum.
 
 [Lectio4]
 Sermo sancti Leónis Papæ
@@ -63,7 +68,7 @@ In illo témpore: Erat Joseph, et María mater Jesu, mirántes super his, quæ d
 _
 Homilía sancti Ambrósii Epíscopi
 !Lib. 2 in cap. 2 Lucæ, prope finem
-Vides úberem in omnes grátiam, Dómini generatióne diffúsam, et prophetíam incredulis negatam esse, non justis. Ecce et Simeon prophétat, in ruínam et resurrectiónem plurimórum venisse Dóminum Jesum Christum, ut justórum, iníquorúmque merita discernat; et pro nostrórum qualitate factórum, judex verus et justus aut supplícia decernat, aut præmia.
+Vides úberem in omnes grátiam, Dómini generatióne diffúsam, et prophetíam incrédulis negátam esse, non justis. Ecce et Símeon prophétat, in ruínam et resurrectiónem plurimórum venísse Dóminum Jesum Christum, ut justórum, iníquorúmque merita discérnat; et pro nostrórum qualitáte factórum, judex verus et justus aut supplícia decérnat, aut prǽmia.
 
 [Responsory7]
 @Sancti/12-25:Responsory8
@@ -101,7 +106,7 @@ v. Itaque jam non est servus, sed fílius: quod si fílius, et hæres per Deum.
 
 [Capitulum Sexta]
 !Gal 4:4-5
-v. At ubi venit plenitúdo témporis, misit Deus Fílium suum factum ex muliere, factum sub lege, ut eos, qui sub lege erant, redímeret, ut adoptiónem filiórum recipéremus.
+v. At ubi venit plenitúdo témporis, misit Deus Fílium suum factum ex mulíere, factum sub lege, ut eos, qui sub lege erant, redímeret, ut adoptiónem filiórum recipéremus.
 $Deo gratias
 
 [Capitulum Nona]
