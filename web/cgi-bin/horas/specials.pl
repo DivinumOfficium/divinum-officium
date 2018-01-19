@@ -1172,7 +1172,7 @@ sub oratio
     }   
 
 
-    if ((!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i || $version =~ /(1960|monastic)/i)
+    if ((!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i || $version =~ /(1955|1960|monastic)/i)
     && $addconclusio ) {push(@s, $addconclusio); }
 }
 
