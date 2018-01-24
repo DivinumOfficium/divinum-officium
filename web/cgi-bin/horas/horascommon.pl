@@ -1402,9 +1402,9 @@ sub setheadline {
 	  
 	  } else {
 	     if ($version !~ /1960/) {
-		     $rankname = ($rank < 2) ? 'Ferial' : ($rank < 3) ? 'Feria major' : 'Feria privilegiata';
+		     $rankname = ($rank <= 2) ? 'Ferial' : ($rank < 3) ? 'Feria major' : 'Feria privilegiata';
          } else {
-	       my @ranktable = ('', 'IV. classis', 'III. classis', 'II. classis', 'II. classis',
+	       my @ranktable = ('', 'IV. classis', 'IV. classis', 'III. classis', 'II. classis', 'II. classis',
 		      'II. classis', 'I. classis', 'I. classis'); 
 		     $rankname = $ranktable[$rank]; 
 	     }
