@@ -1382,7 +1382,7 @@ sub setheadline {
 
     if ($name !~ /(Die|Feria|Sabbato)/i && ($dayname[0] !~ /Pasc[07]/i || $dayofweek == 0)) {
 	    my @tradtable = ('none', 'Simplex', 'Semiduplex', 'Duplex', 'Duplex majus', 
-        'Duplex II. classis', 'Duplex I. classis', 'Duplex I. clasis');
+        'Duplex II. classis', 'Duplex I. classis', 'Duplex I. classis');
         my @newtable = ('none', 'Commemoratio', 'III. classis', 'III. classis', 'III. classis',
         'II. classis', 'I. classis', 'I. classis');
     
@@ -1392,13 +1392,16 @@ sub setheadline {
           my $a = ($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i) 
             ? getweek(1) : getweek(0);  
           my @a = split('=', $a);  
-          $rankname = ($a[0] =~ /Pasc[017]/i || $a[0] =~ /Pent01/i) ? 'Duplex  1st class' :
+          $rankname = ($a[0] =~ /Pasc[017]/i || $a[0] =~ /Pent01/i) ? 'Duplex 1st class' :
             ($a[0] =~ /(Adv1|Quad[1-6])/i) ? 'Semiduplex 1st class' :
             ($a[0] =~ /(Adv[2-4]|Quadp)/i) ? 'Semiduplex 2nd class' : 'Semiduplex Dominica minor';
         }
 
-	  } elsif ($dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
-	    $rankname = 'Dies Octavae I classis';
+	  } elsif ($version =~ /1960/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
+	    $rankname = 'Dies Octavæ I. classis';
+	  
+	  } elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
+	    $rankname = ($rank =~ 7) ? 'Duplex I. classis' : 'Semiduplex';
 	  
 	  } else {
 	     if ($version !~ /1960/) {
