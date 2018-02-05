@@ -1102,7 +1102,7 @@ sub precedence {
             $winner2{'Ant 1'} = $winner2{'Ant 13'};
             $winner2{'Ant 2'} = $winner2{'Ant 23'};
         }
-        elsif ( $version !~ /1960/ && $month == 9 && $day > 8 && $day < 15 )
+        elsif ( $version !~ /(1955|1960)/ && $month == 9 && $day > 8 && $day < 15 )
         {
             my %s = %{setupstring($datafolder, $lang1, 'Sancti/09-08.txt')};
             my %s2 = %{setupstring($datafolder, $lang2, 'Sancti/09-08.txt')};
