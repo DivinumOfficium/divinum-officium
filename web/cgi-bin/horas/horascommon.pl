@@ -1392,9 +1392,9 @@ sub setheadline {
           my $a = ($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i) 
             ? getweek(1) : getweek(0);  
           my @a = split('=', $a);  
-          $rankname = ($a[0] =~ /Pasc[017]/i || $a[0] =~ /Pent01/i) ? 'Duplex 1st class' :
-            ($a[0] =~ /(Adv1|Quad[1-6])/i) ? 'Semiduplex 1st class' :
-            ($a[0] =~ /(Adv[2-4]|Quadp)/i) ? 'Semiduplex 2nd class' : 'Semiduplex Dominica minor';
+          $rankname = ($a[0] =~ /Pasc[017]/i || $a[0] =~ /Pent01/i) ? 'Duplex I. classis' :
+            ($a[0] =~ /(Adv1|Quad[1-6])/i) ? 'Semiduplex I. classis' :
+            ($a[0] =~ /(Adv[2-4]|Quadp)/i) ? 'Semiduplex II. classis' : 'Semiduplex Dominica minor';
         }
 
 	  } elsif ($version =~ /1960/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
