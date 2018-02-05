@@ -478,7 +478,7 @@ sub getrank {
 	  elsif ($srank[2] >= 5 && $crank =~ /infra octav/i) {$crank = ''; $cname = ''; %csaint = undef; @crank = '';} 
     }
 
-	if ($tvesp == 1 && $version =~ /1960/) {
+	if ($tvesp == 1 && $version =~ /(1955|1960)/) {
 	  if ((($trank[2] >= 6 && $srank[2] < 5) || ($trank[2] >= 5 && $srank[2] < 3)) 
 	    && $srank[0] !~ /Octav.*?(Epiph|Nativ|Corporis|Cordis|Ascensionis)/i )  
 	    {$srank = ''; $sname = ''; @srank =''; %saint= undef;}
