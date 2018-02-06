@@ -1102,7 +1102,7 @@ sub precedence {
             $winner2{'Ant 1'} = $winner2{'Ant 13'};
             $winner2{'Ant 2'} = $winner2{'Ant 23'};
         }
-        elsif ( $version !~ /(1955|1960)/ && $month == 9 && $day > 8 && $day < 15 )
+        elsif ( $version !~ /1960/ && $month == 9 && $day > 8 && $day < 15 )
         {
             my %s = %{setupstring($datafolder, $lang1, 'Sancti/09-08.txt')};
             my %s2 = %{setupstring($datafolder, $lang2, 'Sancti/09-08.txt')};
@@ -1403,7 +1403,11 @@ sub setheadline {
 	  } elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
 	    $rankname = ($rank =~ 7) ? 'Duplex I. classis' : 'Semiduplex';
 	  
-	  } else {
+	  }  elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] == /07-04/i && $dayofweek > 0) {
+	    $rankname = ($rank =~ 7) ? 'Duplex I. classis' : 'Semiduplex';
+	  
+	  } 
+	  else {
 	     if ($version !~ /1960/) {
 		     $rankname = ($rank <= 2) ? 'Ferial' : ($rank < 3) ? 'Feria major' : 'Feria privilegiata';
          } else {
