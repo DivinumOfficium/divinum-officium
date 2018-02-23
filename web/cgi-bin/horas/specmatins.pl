@@ -57,21 +57,24 @@ sub invitatorium {
   my @ant = split('\*', $ant);
   $ant =~ s/\s*$//;
   my $ant2 = "Ant. $ant[1]";
+
+  my $num = "";
 								  
-  $fname = checkfile($lang, "Psalterium/Invitatorium.txt");
-  if ($rule =~ /Invit([0-9])/i) {
-    my $num = $1; 
-    $fname = checkfile($lang, "Psalterium/Invitatorium$num.txt");
-  }
+  if ($rule =~ /Invit([0-9])/i)
+    {$num = $1;}
   if ($winner =~ /Tempora/i && $dayname[0] =~ /Quad[56]/i && $rule !~ /Gloria responsory/i) 
-    {$fname = checkfile($lang, "Psalterium/Invitatorium3.txt");} 
+    {$num=3;}
 
   # Per annum Monday special psalm $w = getproprium invitatory
   if (!$w && $dayofweek == 1 && $dayname[0] =~ /(Epi|Pent|Quadp)/i  && $winner =~ /Tempora/ && $rank < 2) 
-    {$fname = checkfile($lang, "Psalterium/Invitatorium4.txt");} 
+    {$num=4;}
   if (!$w && $dayofweek == 1 && $dayname[0] =~ /(Epi|Pent)/i && $w{Rank} =~ /Vigil/i  && $winner =~ /Sancti/) 
-    {$fname = checkfile($lang, "Psalterium/Invitatorium4.txt");} 
+    {$num=4;}
 
+  my $invitpath = "Psalterium/Invitatorium$num";
+  $invitpath =~ s/Psalterium/PiusXII/ if ($lang eq 'Latin' && $psalmvar);
+
+  $fname = checkfile($lang, "$invitpath.txt");
 
   if (my @a = do_read($fname)) {
     
