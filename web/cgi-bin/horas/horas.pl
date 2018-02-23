@@ -976,6 +976,7 @@ sub canticum : ScriptFunc {
   my $w = '';
   #$psalmfolder = ($accented =~ /plain/i) ? 'psalms' : 'psalms1';   
   $psalmfolder = 'psalms1';   
+  $psalmfolder = 'PiusXII' if ($lang eq 'Latin' && $psalmvar);
 
   my $fname = checkfile($lang, "$psalmfolder/Psalm$psnum.txt");    
   if (@w = do_read($fname)) {
