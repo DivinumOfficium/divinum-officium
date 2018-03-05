@@ -1061,9 +1061,9 @@ sub precedence {
   
   if ($vtv && !$missa) { 
     if ($vtv =~ /C12/i) {  
-      if ($dayname[0] =~ /adv/i) {$vtv = 'C12A';}
-      elsif ($dayname[0] =~ /Nat/i || ($month == 12 && $day > 24) || 
+      if (($month == 12 && ($day == 24 && $hora =~/Vespera|Completorium/ || ($day > 24))) ||
         $month == 1 || ($month == 2 && $day < 3)) {$vtv = 'C12N';}
+      elsif ($dayname[0] =~ /adv/i) {$vtv = 'C12A';}
       elsif ($dayname[0] =~ /Pasc/i) {$vtv = 'C12P';}
       elsif ($month == 3 && (($day == 24 && $hora =~ /(Vespera|Completorium)/i) ||
         $day == 25)) {$vtv = 'C12An';}
