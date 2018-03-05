@@ -4,6 +4,9 @@ Officium parvum Beatae Mariae Virginis Tempore Adventi
 [Rank]
 Officium parvum Beatae Mariae Virginis Tempore Adventi;;Simplex;;1
 
+[Ant Matutinum]
+@Commune/C11::s/V\. .*/V. Grace is poured into thy lips./g s/R\. .*/R. Therefore God hath blessed thee for ever./g s/After thy delivery.*\./The Angel of the Lord * announced unto Mary, and she conceived of the Holy Spirit./
+
 [Lectio1]
 !Luke 1:26-28
 26 And in the sixth month, the angel Gabriel was sent from God into a city of Galilee, called Nazareth,
