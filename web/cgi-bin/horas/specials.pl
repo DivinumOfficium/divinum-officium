@@ -141,23 +141,30 @@ sub specials {
 	  hymnus($lang);  
 	  next;
 	} elsif ($item =~ /hymnus|$hymntrans/i && $hora !~ /(laudes|vespera)/i) {
-      my ($dox, $dname) = doxology('', $lang); 
-      if (!$dox) {push(@s, $item); next;}
-      $item = translate_label($item, $lang);
-      push (@s, "$item {Doxology: $dname}");
-      while ($t[$tind] !~  /^\s*\#/) { 	
+    $item = translate_label($item, $lang);
+    my ($dox, $dname) = doxology('', $lang);
+    if ($dox) {$item="$item {Doxology: $dname}";}
+    push (@s, $item);
+    if ($hora =~ /Tertia/ && $dayname[0] =~ /Pasc7/ && $version !~ /monastic/i) {
+      my $hymn = %{setupstring($datafolder, $lang, 'Psalterium/Minor Special.txt')}{'Hymnus Pasc7 Tertia'};
+      push(@s,$hymn);
+      $skipflag = 1;
+    } else {
+      if (!$dox) {next;}
+      while ($t[$tind] !~  /^\s*\#/) {
         if ($t[$tind] =~ /^\s*\*/) {
           push (@s, $dox);
           $skipflag = 1;
           last;
         }
         else {
-          push (@s, $t[$tind]); 
+          push (@s, $t[$tind]);
           $tind++;
           next;
-       }
-     }
-     next;
+        }
+      }
+    }
+    next;
   } 
   if ($item =~ /psalm/i) { 
     $psalmnum1 = 0;
