@@ -189,25 +189,34 @@ sub specials {
       setcomment($label, 'Source', $comment, $lang);
 	    foreach $l (@capit) {push(@s, $l);}        
 	    my $primaresponsory = ($version !~ /monastic/i) ? get_prima_responsory($lang) : ''; 
-      my %wpr = (columnsel($lang)) ? %winner : %winner2;  
+      my %wpr = (columnsel($lang)) ? %winner : %winner2;
       if (exists($wpr{'Versum Prima'})) {$primaresponsory = $wpr{'Versum Prima'};}  
 
-      if ($primaresponsory) {
-        while ($tind < @t) {
-          my $item = $t[$tind];
-          if ($item =~ /^\s*\#/) {last;}
-          $tind++;
-          if ($item =~ /^\s*V\. /) {
-            $item = "V. $primaresponsory";
-            push(@s, $item);
-            last;
-         }
-         push (@s, $item);
+      push (@s, $t[$tind++]);
+      my @resp = ();
+      while ($t[$tind] !~ /^\s*\#/) {
+        if (($t[$tind] =~ /^\s*V\. /) && $primaresponsory) {
+          $t[$tind] = "V. $primaresponsory";
+          $primaresponsory = '';
         }
+        push (@resp, $t[$tind++]);
       }
+      postprocess_short_resp(@resp, $lang) if ($version !~ /monastic/i);
+      push(@s, $_) for (@resp);
+
       next;
     }
-	     
+
+    if ($item =~ /Capitulum/i && $hora =~ /Completorium/i && $version !~ /Monastic/i) {
+      $tind--;
+      while ($t[$tind] !~ /^\s*R\.br\./) { push (@s, $t[$tind++]); }
+      my @resp = ();
+      while ($t[$tind] !~ /^\s*\#/) { push (@resp, $t[$tind++]); }
+      postprocess_short_resp(@resp, $lang);
+      push(@s, $_) for (@resp);
+      next;
+    }
+
     if ($item =~ /Capitulum/i && $hora =~ /(Tertia|Sexta|Nona)/i) { 
        my %capit = %{setupstring($datafolder, $lang, 'Psalterium/Minor Special.txt')};  
        my $name = minor_getname();	
@@ -371,18 +380,23 @@ sub specials {
 	  setcomment($label, 'Source', $comment, $lang, translate('Antiphona', $lang));
 	  next;																 
 	}
-	
+
 	if ($item =~ /Nunc Dimittis/i) {
     my $w = $w{"Ant 4$vespera"};
     my $c; 
     if (!$w && $communetype =~ /ex/) {($w, $c) = getproprium("Ant 4$vespera", $lang, 1);}
-    if ($w) {
-      setbuild1($ite, 'special');
-	    push(@s, $item);
-	    push(@s, split("\n", $w));	 
-	    $skipflag = 1;
-	    next;
+    if ($w) {setbuild1($ite, 'special');}
+    $tind--;
+    my $non_first_ant = 0;
+    while ($t[$tind] !~ /^\s*$/) {
+      if ($t[$tind] =~ /^Ant/) {
+        if ($w) {$t[$tind] = (split("\n", $w))[-1*$non_first_ant];}
+        else {postprocess_ant($t[$tind], $lang) if ($version =~ /1960/ || $non_first_ant);}
+        $non_first_ant = 1;
+      }
+      push (@s, $t[$tind++]);
     }
+    next;
 	}   	  
 
     if ($item =~ /Oratio/i)
@@ -1931,6 +1945,7 @@ sub get_prima_responsory {
 
   my $key = '';                     
   if ($dayname[0] =~ /(Adv|Nat)/i) {$key = $1;} 
+  if ($dayname[0] =~ /Pasc/i) {$key = 'Pasch';}
   if ($rule =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i || 
     $scriptura{Rule}  =~ /Doxology=(Nat|Epi|Pasch|Asc)/i ||
     ($version !~ /(1960|Newcal)/ && $scriptura{Rule} =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i) ||
