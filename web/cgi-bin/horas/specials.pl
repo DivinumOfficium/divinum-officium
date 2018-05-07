@@ -1290,7 +1290,7 @@ sub commemoratio {
 	if ($ind == 1 && $item !~ /winner/i) {$code = 0;}
   } elsif (exists($w{Commemoratio})) {$w = getrefs($w{Commemoratio}, $lang, $ind, $w{Rule}); } 	
 
-  if ($hora =~ /Laudes/i && $dayofweek == 6 && exists($w{'Commemoratio Sabbat'})) 
+  if ($hora =~ /Laudes/i && $dayofweek == 6 && exists($w{'Commemoratio Sabbat'}) && $version !~ /1960/ ) 
     {$w = getrefs($w{'Commemoratio Sabbat'}, $lang, 2, $w{Rule});} 
 
   
