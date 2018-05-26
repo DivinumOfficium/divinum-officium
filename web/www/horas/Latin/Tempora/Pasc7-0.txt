@@ -9,10 +9,10 @@ Hymnus Tertia
 Prima=53
 
 [Ant Vespera]
-Cum compleréntur * dies Pentecóstes, erant omnes páriter in eódem loco, allelúja.;;109
-Spíritus Dómini * replévit orbem terrárum, allelúja.;;110
-Repléti sunt omnes * Spíritu Sancto, et cœpérunt loqui, allelúja, allelúja.;;111
-Fontes, et ómnia * quæ movéntur in aquis, hymnum dícite Deo, allelúja.;;112
+Cum compleréntur * dies Pentecóstes, erant omnes páriter in eódem loco, allelúja.
+Spíritus Dómini * replévit orbem terrárum, allelúja.
+Repléti sunt omnes * Spíritu Sancto, et cœpérunt loqui, allelúja, allelúja.
+Fontes, et ómnia * quæ movéntur in aquis, hymnum dícite Deo, allelúja.
 Loquebántur * váriis linguis Apóstoli magnália Dei, allelúja, allelúja, allelúja.;;116
 
 [Capitulum Vespera]
@@ -121,10 +121,10 @@ In sæculórum sǽcula.
 Amen.
 
 [Ant Matutinum]
-Factus est * repénte de cælo sonus adveniéntis spíritus vehementis, allelúja, allelúja.;;47
+Factus est * repénte de cælo sonus adveniéntis spíritus veheméntis, allelúja, allelúja.;;47
 Confírma hoc, Deus, * quod operátus es in nobis: a templo sancto tuo, quod est in Jerúsalem, allelúja, allelúja.;;67
 Emítte Spíritum tuum, * et creabúntur: et renovábis fáciem terræ, allelúja, allelúja.;;103
-V. Spíritus Dómini replevit orbem terrárum, allelúja.
+V. Spíritus Dómini replévit orbem terrárum, allelúja.
 R. Et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja.
 
 [Lectio1]
@@ -158,11 +158,7 @@ Et Pater meus díliget eum, et ad eum veniémus, et mansiónem apud eum faciému
 &teDeum
 
 [Ant Laudes]
-Cum compleréntur * dies Pentecóstes, erant omnes páriter in eódem loco, allelúja.
-Spíritus Dómini * replévit orbem terrárum, allelúja.
-Repléti sunt omnes * Spíritu Sancto, et cœpérunt loqui, allelúja, allelúja.
-Fontes, et ómnia * quæ movéntur in aquis, hymnum dícite Deo, allelúja.
-Loquebántur * váriis linguis Apóstoli magnália Dei, allelúja, allelúja, allelúja.
+@:Ant Vespera:s/;.*//
 
 [Capitulum Laudes]
 @:Capitulum Vespera
@@ -270,8 +266,4 @@ R. Magnália Dei, allelúja.
 Hódie * completi sunt dies Pentecóstes, allelúja: hódie Spíritus Sanctus in igne discípulis appáruit, et tríbuit eis charísmatum dona: misit eos in univérsum mundum prædicáre, et testificári: Qui credíderit et baptizátus fúerit, salvus erit, allelúja.
 
 [Ant Vespera 3]
-Cum compleréntur * dies Pentecóstes, erant omnes páriter in eódem loco, allelúja.;;109
-Spíritus Dómini * replevit orbem terrárum, allelúja.;;110
-Repléti sunt omnes * Spíritu Sancto, et cœpérunt loqui, allelúja, allelúja.;;111
-Fontes, et ómnia * quæ movéntur in aquis, hymnum dícite Deo, allelúja.;;112
-Loquebántur * variis linguis Apóstoli magnália Dei, allelúja, allelúja, allelúja.;;113
+@:Ant Vespera:s/;.*//
