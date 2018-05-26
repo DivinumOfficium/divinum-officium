@@ -11,7 +11,7 @@ Prima=53
 [Ant Vespera]
 Gdy się spełniły * dni Pięćdziesiątnicy, byli wszyscy wespół zgromadzeni ma temże miejscu, alleluja.
 Duch Pański * napełnił okrąg ziemi, alleluja.
-Napełnieni byli wszyscy * Duchem Świętym i poczęli mówić, alleluja.
+Napełnieni byli wszyscy * Duchem Świętym i poczęli mówić, alleluja, alleluja.
 Źródła i wszystko, * co żyje w wodzie, pieśń śpiewajcie Bogu, alleluja.
 Apostołowie opowiadali * rozmaitemi językami cuda Boże, alleluja, alleluja, alleluja.;;116
 
@@ -157,9 +157,6 @@ R. I zbiegło się mnóstwo ludzi mówiących, alleluja.
 I Ojciec mój umiłuje go, i przyjdziemy do niego, i przebywać u niego będziemy. Pomyślcie, najdrożsi bracia, jak wielkim jest to zaszczytem gościć w swoim sercu przybyłego Boga. Z pewnością, gdyby do waszego domu miał przybyć jakiś bogaty, potężny przyjaciel, to z wielkim pośpiechem cały dom byłby czyszczony, aby przypadkiem czego nie było, co by oczy przyjaciela razić mogło. Niechaj więc usunie brud złego czynu, kto przygotowuje dla Boga dom swego serca. Lecz zwróćcie na to uwagę, co Prawda mówi: Przyjdziemy do niego, i przebywać u niego będziemy. Do niektórych bowiem serc Bóg przychodzi, lecz w nich nie zamieszkuje, choć bowiem dzięki skrusze łaskę Boga otrzymują, jednak w czasie pokusy zapominają o tym, co ich do skruchy pobudziło i powracają do grzechów, jakby ich wcale nie opłakiwali.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera:s/;.*//
-
 [Hymnus Laudes]
 {:H-Beatanobisgaudia:}v. Błogosławione radości
 Sprowadził nam bieg roku,
@@ -231,10 +228,6 @@ _
 V. Napełnieni byli wszyscy Duchem Świętym, alleluja.
 R. I poczęli mówić, alleluja.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
 [Responsory Nona]
 R.br. Napełnieni byli wszyscy Duchem Świętym, * Alleluja, alleluja.
 R. Napełnieni byli wszyscy Duchem Świętym, * Alleluja, alleluja.
@@ -252,6 +245,3 @@ R. Cuda Boże, alleluja.
 
 [Ant 3]
 Dziś * spełniły się dni Pięćdziesiątnicy, alleluja: dzisiaj Duch Święty ukazał się uczniom w postaci ognia i udzielił im darów charyzmatów: posłał ich na wszystek świat ogłaszać słowo Boże i świadczyć: Kto uwierzy i ochrzci się, zbawion będzie, alleluja.
-
-[Ant Vespera 3]
-@:Ant Vespera:s/;.*//
