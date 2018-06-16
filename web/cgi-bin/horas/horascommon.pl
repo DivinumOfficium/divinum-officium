@@ -1387,7 +1387,7 @@ sub setheadline {
         'II. classis', 'I. classis', 'I. classis');
     
  	    $rankname = ($version !~ /1960/) ? $tradtable[$rank] : $newtable[$rank];
-	    if ($version =~ /1960/ && $dayname[1] =~ /feria/i) {$rankname = 'Feria';}
+	    if ($version =~ /(Divino|1955|1960)/ && $dayname[1] =~ /feria/i) {$rankname = 'Feria';}
 		if ($name =~ /Dominica/i && $version !~ /1960/) {
           my $a = ($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i) 
             ? getweek(1) : getweek(0);  
@@ -1399,7 +1399,7 @@ sub setheadline {
 
 	  } elsif ($version =~ /1960/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
 	    $rankname = 'Dies Octavæ I. classis';
-	  
+	    
 	  } elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
 	    $rankname = ($rank =~ 7) ? 'Duplex I. classis' : 'Semiduplex';
 	  

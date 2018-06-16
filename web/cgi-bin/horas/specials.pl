@@ -322,6 +322,7 @@ sub specials {
        my %brevis = %{setupstring($datafolder, $lang, 'Psalterium/Prima Special.txt')};  
        my $name = ($dayname[0] =~ /(Quad5|Quad6)/i) ? 'Quad5' : 
 	      ($dayname[0] =~ /Quad/i && $dayname[0] !~ /Quadp/i) ? 'Quad' :
+	      ($dayname[0] =~ /Quadp[3]/i && $dayofweek >= 3) ? 'Feria' :
 		    ($dayname[0] =~ /Adv/i) ? 'Adv' :
         ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek > 3)) ? 'Asc' :
 		    ($dayname[0] =~ /Pasc[0-6]/i) ? 'Pasc' : ($dayname[0] =~ /Pasc7/i) ? Pent :
