@@ -160,7 +160,7 @@ sub resolve_refs {
   }
   if ($t[0] =~ $omit_regexp) {$t[0] =~ s/^\s*\#/\!\!\!/;}
   else {
-    $t[0] =~ s/^\s*(\#.*)({.*})?\s*$/'!!' . substr(translate($1, $lang), 1) . $2/e;
+    $t[0] =~ s/^\s*(\#.*)(\{.*\})?\s*$/'!!' . substr(translate($1, $lang), 1) . $2/e;
   }
 
   my @resolved_lines;  # Array of blocks expanded from lines.
@@ -792,7 +792,7 @@ sub setlink
         $name = $1;
         $after = $2;
     }
-    if ( $Tk && $name =~ /(.*?)({\^.*)/ )
+    if ( $Tk && $name =~ /(.*?)(\{\^.*)/ )
     {
         $name = $1;
         $after = $2;
