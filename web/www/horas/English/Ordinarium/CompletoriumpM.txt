@@ -22,9 +22,13 @@ $Deus in adjutorium
 &Gloria
 &Alleluia
 
-#Psalmi
+&psalm(4)
 
-#Hymn
+&psalm(90)
+
+&psalm(133)
+
+#Hymnus
 v. Before the ending of the day,
 Creator of the world, we pray
 That with thy wonted favor thou
@@ -48,46 +52,14 @@ and thy name is called upon by us:~
 forsake us not, O Lord our God.  
 R. Thanks be to God.
 _
-R.br. Into thy hands, O Lord * I commend my spirit.
-R. Into thy hands, O Lord * I commend my spirit.
-V. For thou hast redeemed us, O Lord, God of truth. 
-R. I commend my spirit.
-&Gloria1
-R. Into thy hands, O Lord * I commend my spirit.
-_
 V. Keep us, Lord, as the apple of thine eye. 
 R. Protect us under the shadow of thy wings.
-
-#Canticle Nunc dimittis
-Ant. Protect us
-&canticum(3)
-&Gloria
-Ant. Protect us, * Lord, while we are awake and safeguard us while we sleep;~
-that we may keep watch with Christ, and rest in peace.
-
-#Preces Dominicales
+_
 v. Lord have mercy on us, Christ have mercy on us, Lord have mercy on us.
 &pater_noster
-$Credo
-V. Blessed are you, Lord, God of our fathers. 
-R. Worthy of praise, and glorious for ever.
-V. Let us bless the Father, the Son and the Holy Spirit.
-R. Let us praise and exalt him above all for ever.
-V. Blessed art thou in the firmament of heaven: 
-R. Worthy of praise, and glorious for ever.
-V. May the almighty and merciful God bless us and keep us.
-R. Amen.
-V. Vouchsafe, O Lord, 
-R. To keep us this night without sin.
-V. O Lord, have mercy upon us. 
-R. Have mercy upon us.
-V. O Lord, let thy mercy lighten upon us
-R. As our trust is in you.
-V. Lord, hear my prayer:
-R. And let my cry come unto thee. 
 
 #Oratio
-&Dominus_vobiscum1
+&Dominus_vobiscum
 $Oremus	
 v. Visit, we beseech thee, O Lord, this dwelling, and drive far from it the snares of the enemy; let thy holy angels dwell herein to preserve us in peace, and let thy blessing be always upon us.
 $Per Dominum
@@ -98,10 +70,6 @@ $Per Dominum
 Benedictio. The almighty and merciful Lord, + the Father, the Son and the Holy Spirit,~
 bless us and keep us.
 R. Amen.
-
-&antiphona_finalis
+_
 V. May the divine assistance + remain with us always.
-R. Amen.
-$Pater noster
-$Ave Maria
-$Credo
+R. And with our brothers, who are absent. Amen.
