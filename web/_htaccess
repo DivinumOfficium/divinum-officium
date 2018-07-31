@@ -4,4 +4,16 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^divinumofficium.net$ [OR]
 RewriteCond %{HTTP_HOST} ^www.divinumofficium.net$
 RewriteRule ^/?(.*)$ http://www.divinumofficium.com/$1 [R=301,L]
+# Change 'subdirectory' to be the directory you will use for your main domain. 
+RewriteCond %{REQUEST_URI} !^/divinumofficium/ 
+# Don't change the following two lines. 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+# Change 'subdirectory' to be the directory you will use for your main domain. 
+RewriteRule ^(.*)$ /divinumofficium/web/$1 
+# Change example.com to be your main domain again. 
+# Change 'subdirectory' to be the directory you will use for your main domain 
+# followed by / then the main file for your site, index.php, index.html, etc. 
+RewriteCond %{HTTP_HOST} ^(www.)?divinumofficium.com$ 
+RewriteRule ^(/)?$ divinumofficium/web/index.html [L]
 
