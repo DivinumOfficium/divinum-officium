@@ -6,14 +6,13 @@ ex C1;
 9 lectiones
 Psalmi Dominica
 Antiphonas horas
-Psalm5 Vespera=116
 
 [Ant Vespera]
 Herodes rex * appósuit ut apprehénderet et Petrum; quem, cum apprehendísset, misit in carcerem, volens post Pascha producere eum pópulo.
 Petrus quidem * servabátur in carcere; orátio autem fiebat sine intermissióne ab Ecclésia ad Deum pro eo.
 Dixit Angelus * ad Petrum: Circumda tibi vestiméntum tuum, et séquere me.
 Misit Dóminus * Angelum suum, et liberávit me de manu Herodis, allelúja.
-Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam.
+Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam.;;116
 
 [Capitulum Vespera]
 @Sancti/06-29
@@ -133,7 +132,7 @@ Quidnam Machabæi? Horum enim nómine dies festus præsénti frequéntia celebr�
 &teDeum
 
 [Ant Laudes]
-@:Ant Vespera
+@:Ant Vespera 3:s/;;.*//g
 
 [Capitulum Laudes]
 @:Capitulum Vespera
@@ -159,6 +158,13 @@ Quidnam Machabæi? Horum enim nómine dies festus præsénti frequéntia celebr�
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
+
+[Ant Vespera 3]
+Herodes rex * appósuit ut apprehénderet et Petrum; quem, cum apprehendísset, misit in carcerem, volens post Pascha producere eum pópulo.;;109
+Petrus quidem * servabátur in carcere; orátio autem fiebat sine intermissióne ab Ecclésia ad Deum pro eo.;;112
+Dixit Angelus * ad Petrum: Circumda tibi vestiméntum tuum, et séquere me.;;115
+Misit Dóminus * Angelum suum, et liberávit me de manu Herodis, allelúja.;;125
+Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam.;;138
 
 [Ant 3]
 Solve, * jubénte Deo, terrárum, Petre, catenas, qui facis ut pateant cæléstia regna beátis.
