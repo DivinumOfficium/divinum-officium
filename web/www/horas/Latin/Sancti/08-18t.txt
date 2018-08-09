@@ -1,17 +1,23 @@
 [Rank]
 Quarta die infra Octavam S. Assumptionis;;Semiduplex;;2;;vide Sancti/08-15
 
+[Rank1960]
+Quarta die infra Octavam S. Assumptionis;;Semiduplex;;2;;vide Sancti/08-15r
+
 [Rule]
 vide Sancti/08-15;
 9 lectiones
 
 [Commemoratio]
-!Commemoratio S. Agapiti Martyris.
+!Commemoratio S. Agapiti Martyris
 @Commune/C2:oratio proper
 $Oremus
-Lætetur Ecclesia tua, Deus, beati Agapiti Martyris tui confisa suffragiis:~
-atque ejus precibus gloriosis, et devota permaneat, et secura consistat.
+Lætétur Ecclésia tua, Deus, beáti Agápiti Mártyris tui confísa suffrágiis: atque,~
+ejus précibus gloriósis, et devóta permáneat et secúra consístat.
 $Per Dominum
+
+[Oratio] (rubrica 1955)
+@Sancti/08-18
 
 [Lectio1]
 De Canticis canticorum
@@ -20,6 +26,9 @@ De Canticis canticorum
 2 Dentes tui sicut greges tonsarum quæ ascenderunt de lavacro; omnes gemellis fœtibus, et sterilis non est inter eas.
 3 Sicut vitta coccinea labia tua, et eloquium tuum dulce. Sicut fragmen mali punici, ita genæ tuæ, absque eo quod intrinsecus latet.
 4 Sicut turris David collum tuum, quæ ædificata est cum propugnaculis; mille clypei pendent ex ea, omnis armatura fortium.
+
+[Lectio1] (rubrica 1955)
+@Sancti/08-18
 
 [Responsory1]
 @Sancti/08-15:Responsory1
@@ -31,6 +40,9 @@ De Canticis canticorum
 9 Vulnerásti cor meum, soror mea, sponsa; vulnerásti cor meum in uno oculórum tuórum, et in uno crine colli tui.
 10 Quam pulchræ sunt mammæ tuæ, soror mea sponsa! pulchrióra sunt úbera tua vino, et odor unguentórum tuórum super ómnia arómata.
 
+[Lectio2] (rubrica 1955)
+@Sancti/08-18
+
 [Responsory2]
 @Sancti/08-15:Responsory2
 
@@ -41,6 +53,9 @@ De Canticis canticorum
 13 Emissiónes tuæ paradísus malórum punicórum, cum pomórum frúctibus, cypri cum nardo.
 14 Nardus et crocus, fístula et cinnamómum, cum univérsis lignis Líbani; myrrha et áloe, cum ómnibus primis unguéntis.
 15 Fons hortórum, púteus aquárum vivéntium, quæ fluunt ímpetu de Líbano.
+
+[Lectio3] (rubrica 1955)
+@Sancti/08-18
 
 [Responsory3]
 @Sancti/08-15:Responsory3
@@ -56,6 +71,9 @@ Potestatum; et sic cum divina gloria in manus Dei sanctam tradidit animam. Ejus~
 autem corpus, quod Deum ineffabili quadam ratione suscepit, cura angelica et~
 apostolica hymnodia elatum, in loculo fuit depositum Gethsemane: quo in loco~
 Angelorum cantus mansit tres dies continuos.
+
+[Lectio4] (rubrica 1955)
+@Sancti/08-18
 
 [Responsory4]
 @Sancti/08-15:Responsory4

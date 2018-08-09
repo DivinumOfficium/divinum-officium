@@ -1,10 +1,6 @@
 [Rank]
 Quarta die infra Octavam S. Assumptionis;;Semiduplex;;2;;vide sancti/08-15
 
-[Rule]
-vide sancti/08-15;
-9 lectiones
-
 [Commemoratio]
 !Commemoratio S. Agapiti Martyris.
 @Commune/C2:oratio proper
@@ -20,8 +16,8 @@ From the Song of Songs
 3 Az ajkad, mint a karmazsin szalag, a csacsogó szád szeretni való. A halántékod, akár egy gránátalmagerezd a fátyolod alatt. 
 4 Dávidnak tornyához hasonlít a nyakad, amit kőből való bástyák díszítenek; ezernyi pajzs függ rajta, megannyi hősi pajzs. 
 
-[Responsory1]
-@Sancti/08-15:Responsory1
+[Lectio1] (rubrica 1955)
+@Sancti/08-18
 
 [Lectio2]
 !Song 4:7-10
@@ -30,8 +26,8 @@ From the Song of Songs
 9 Megigézted a szívem, jegyesem, húgocskám, megigézted a szívem szemednek egyetlen pillantásával, s nyakadnak egyetlen láncával. 
 10 Milyen vonzó, húgom, mátkám, a szerelmed! Mennyivel édesebb szerelmed a bornál, keneted illata felülmúl minden balzsamot! 
 
-[Responsory2]
-@Sancti/08-15:Responsory2
+[Lectio2] (rubrica 1955)
+@Sancti/08-18
 
 [Lectio3]
 !Song 4:11-15
@@ -41,8 +37,8 @@ From the Song of Songs
 14 nárdusszal, sáfránnyal, kálmossal, fahéjjal, mindenféle tömjéntermő fával, mirhával és aloéval, a legjobb balzsamokkal. 
 15 A kertnek forrása élő víz kútfeje, amely a Libanonról csörgedezik alá. 
 
-[Responsory3]
-@Sancti/08-15:Responsory3
+[Lectio3] (rubrica 1955)
+@Sancti/08-18
 
 [Lectio4]
 De Sermone sancti Joannis Damasceni.
@@ -55,6 +51,9 @@ Potestatum; et sic cum divina gloria in manus Dei sanctam tradidit animam. Ejus~
 autem corpus, quod Deum ineffabili quadam ratione suscepit, cura angelica et~
 apostolica hymnodia elatum, in loculo fuit depositum Gethsemane: quo in loco~
 Angelorum cantus mansit tres dies continuos.
+
+[Lectio4] (rubrica 1955)
+@Sancti/08-18
 
 [Responsory4]
 @Sancti/08-15:Responsory4
