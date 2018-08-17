@@ -2,11 +2,12 @@
 Quarta die infra Octavam S. Assumptionis;;Semiduplex;;2;;vide Sancti/08-15
 
 [Rank1960]
-Quarta die infra Octavam S. Assumptionis;;Semiduplex;;2;;vide Sancti/08-15r
+S. Agapiti Martyris;;Simplex;;1.1;;vide C2
 
 [Rule]
 vide Sancti/08-15;
 9 lectiones
+(sed rubrica 1955 omittitur)
 
 [Commemoratio]
 !Commemoratio S. Agapiti Martyris
@@ -15,9 +16,10 @@ $Oremus
 Lætétur Ecclésia tua, Deus, beáti Agápiti Mártyris tui confísa suffrágiis: atque,~
 ejus précibus gloriósis, et devóta permáneat et secúra consístat.
 $Per Dominum
+(sed rubrica 1955 omittitur)
 
-[Oratio] (rubrica 1955)
-@Sancti/08-18
+[Oratio](rubrica 1955)
+@Sancti/08-18r
 
 [Lectio1]
 De Canticis canticorum
@@ -26,12 +28,11 @@ De Canticis canticorum
 2 Dentes tui sicut greges tonsarum quæ ascenderunt de lavacro; omnes gemellis fœtibus, et sterilis non est inter eas.
 3 Sicut vitta coccinea labia tua, et eloquium tuum dulce. Sicut fragmen mali punici, ita genæ tuæ, absque eo quod intrinsecus latet.
 4 Sicut turris David collum tuum, quæ ædificata est cum propugnaculis; mille clypei pendent ex ea, omnis armatura fortium.
-
-[Lectio1] (rubrica 1955)
-@Sancti/08-18
+(sed rubrica 1955 omittitur)
 
 [Responsory1]
 @Sancti/08-15:Responsory1
+(sed rubrica 1955 omittitur)
 
 [Lectio2]
 !Cant 4:7-10
@@ -39,12 +40,11 @@ De Canticis canticorum
 8 Veni de Líbano, sponsa mea: veni de Líbano, veni, coronáberis: de cápite Amana, de vértice Sanir et Hermon, de cubílibus leónum, de móntibus pardórum.
 9 Vulnerásti cor meum, soror mea, sponsa; vulnerásti cor meum in uno oculórum tuórum, et in uno crine colli tui.
 10 Quam pulchræ sunt mammæ tuæ, soror mea sponsa! pulchrióra sunt úbera tua vino, et odor unguentórum tuórum super ómnia arómata.
-
-[Lectio2] (rubrica 1955)
-@Sancti/08-18
+(sed rubrica 1955 omittitur)
 
 [Responsory2]
 @Sancti/08-15:Responsory2
+(sed rubrica 1955 omittitur)
 
 [Lectio3]
 !Cant 4:11-15
@@ -53,12 +53,11 @@ De Canticis canticorum
 13 Emissiónes tuæ paradísus malórum punicórum, cum pomórum frúctibus, cypri cum nardo.
 14 Nardus et crocus, fístula et cinnamómum, cum univérsis lignis Líbani; myrrha et áloe, cum ómnibus primis unguéntis.
 15 Fons hortórum, púteus aquárum vivéntium, quæ fluunt ímpetu de Líbano.
-
-[Lectio3] (rubrica 1955)
-@Sancti/08-18
+(sed rubrica 1955 omittitur)
 
 [Responsory3]
 @Sancti/08-15:Responsory3
+(sed rubrica 1955 omittitur)
 
 [Lectio4]
 De Sermone sancti Joannis Damasceni
@@ -71,9 +70,6 @@ Potestatum; et sic cum divina gloria in manus Dei sanctam tradidit animam. Ejus~
 autem corpus, quod Deum ineffabili quadam ratione suscepit, cura angelica et~
 apostolica hymnodia elatum, in loculo fuit depositum Gethsemane: quo in loco~
 Angelorum cantus mansit tres dies continuos.
-
-[Lectio4] (rubrica 1955)
-@Sancti/08-18
 
 [Responsory4]
 @Sancti/08-15:Responsory4
@@ -137,4 +133,5 @@ occupata: porro unum est necessarium. Jam hoc sibi Maria elegit.
 @Sancti/08-15:Responsory8
 
 [Lectio93]
-@Sancti/08-18:Lectio93
+Agapitus Prænestínus, quindecim annos natus, Aureliáno imperatóre, martyrii cupidíssimus, cum propter constantiam religiónis, imperatóris jussu, primum nervis diutíssime cæsus, deinde in tetrum carcerem conjéctus esset, ut nihil omnino per quatuor dies gustaret, e custódia est edúctus. Et, ardéntibus carbónibus capiti ejus impositis, Deo agens grátias, íterum afféctus verbéribus, nudus ita pédibus suspénsus est, ut ingens fumus e subjecto igne os ejus obrúeret. Tum fervens aqua in ejus ventrem effúsa est, maxillǽque confractæ. Quo témpore judex, e tribunali lapsus, paulo post mórtuus est. Ea re incénso imperatóre, sanctum juvenem jubénte feris óbjici, cum illæ non audérent attingere, Præneste gládio percússus est.
+&teDeum
