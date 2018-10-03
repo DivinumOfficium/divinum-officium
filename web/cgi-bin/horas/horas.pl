@@ -160,7 +160,7 @@ sub resolve_refs {
   }
   if ($t[0] =~ $omit_regexp) {$t[0] =~ s/^\s*\#/\!\!\!/;}
   else {
-    $t[0] =~ s/^\s*(\#.*)({.*})?\s*$/'!!' . substr(translate($1, $lang), 1) . $2/e;
+    $t[0] =~ s/^\s*(\#.*)(\{.*\})?\s*$/'!!' . substr(translate($1, $lang), 1) . $2/e;
   }
 
   my @resolved_lines;  # Array of blocks expanded from lines.
@@ -792,7 +792,7 @@ sub setlink
         $name = $1;
         $after = $2;
     }
-    if ( $Tk && $name =~ /(.*?)({\^.*)/ )
+    if ( $Tk && $name =~ /(.*?)(\{\^.*)/ )
     {
         $name = $1;
         $after = $2;
@@ -1180,8 +1180,6 @@ sub getordinarium {
   my $fname = checkfile($lang, "Ordinarium/$command.txt");
   if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) 
     {$fname =~ s/\.txt/e\.txt/;}
-  if ($command =~ /(Prima|Completorium)/i && $dayname[0] =~ /Pasc/) {$fname =~ s /\.txt/p\.txt/;}
-  if ($command =~ /(Tertia)/i && $dayname[0] =~ /Pasc7/) {$fname =~ s /\.txt/p\.txt/;}
   if ($version =~ /(1955|1960)/) {$fname =~ s/\.txt/1960\.txt/;}
   if ($version =~ /trident/i && $hora =~ /(laudes|vespera)/i && $version !~ /monastic/i) 
     {$fname =~ s/\.txt/Trid\.txt/;}
@@ -1342,7 +1340,7 @@ sub postprocess_short_resp(\@$)
 {
   my ($capit, $lang) = @_;
 
-  s/&Gloria/&Gloria1/ for (@$capit);
+  s/&Gloria1?/&Gloria1/ for (@$capit);
 
   if ($dayname[0] =~ /Pasc/i)
   {
