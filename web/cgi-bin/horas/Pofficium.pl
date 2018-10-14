@@ -221,6 +221,7 @@ for ($i = 1; $i <= $completed; $i++) {$hcolor[$i] = 'maroon';}
   htmlHead($title, 2);
     print << "PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg"> 
+<body style="font-size=2em">
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
 
