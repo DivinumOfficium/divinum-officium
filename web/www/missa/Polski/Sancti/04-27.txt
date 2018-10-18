@@ -20,13 +20,34 @@ Petre
 
 Msza wspólna nr 20 In medio, z wyjątkiem kolekty.
 
+[Introitus]
+@Commune/C4a:Introitus
+
 [Oratio]
 Boże, który dla obrony prawdziwej wiary uzbroiłeś cnotą i nauką św. Piotra, Twego Wyznawcę, spraw łaskawie, niech błądzący pociągnięci jego przykładem i napomnieniami wrócą na drogę zbawienia, wierni zaś niech trwają w wyznawaniu prawdziwej wiary.
 $Per Dominum
 
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Tractus]
+@Commune/C4a:Tractus
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
 [Secreta]
 Panie, niech nam nie zabraknie serdecznej modlitwy świętego Piotra Kanizjusza, Twego Biskupa i Doktora, która zaleci Tobie naszą ofiarę i wyjedna nam Twoje przebaczenie.
 $Per Dominum.
+
+[Communio]
+@Commune/C4a:Communio
 
 [Postcommunio]
 Prosimy Cię, Panie, niech święty Piotr Kanizjusz, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
