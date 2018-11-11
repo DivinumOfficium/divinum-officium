@@ -485,7 +485,7 @@ sub setcross
     else
     {
         # Cross type 3: CROSS OF LORRAINE
-        my $csubst = "<span style='color:red; font-size:1.25em'>☨︎</span>";
+        my $csubst = "<span style='color:red; font-size:1.25em'>&☨#xFE0E</span>";
         $line =~ s/\+\+\+/$csubst/g;
         # Cross type 2: MALTESE CROSS
         my $csubst = "<span style='color:red; font-size:1.25em'>✠︎</span>";

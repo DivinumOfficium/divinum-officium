@@ -255,8 +255,8 @@ PrintTag
 } else {	#mainpage
   $pmode = 'main';
   $command = "";
-  $height = floor($screenheight * 4 / 12);
-  $height2 = floor($height / 2);
+  $height = floor($screenheight);
+  $height2 = floor($height);
 
   $headline = setheadline();
   headline($title);
