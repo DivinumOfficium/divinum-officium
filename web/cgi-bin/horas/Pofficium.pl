@@ -156,13 +156,13 @@ if ($p) {
 $p = strictparam('screenheight');
 if ($p) {
   $screenheight = $p;
-  setsetupvalue('parametrs', 12, $screenheight);
+  setsetupvalue('parameters', 12, $screenheight);
 }
 
 $p = strictparam('textwidth');
 if ($p) {
   $textwidth = $p;
-  setsetupvalue('parametrs', 13, $textwidth);
+  setsetupvalue('parameters', 13, $textwidth);
 }
 $expand = 'all';
 
@@ -220,7 +220,7 @@ for ($i = 1; $i <= $completed; $i++) {$hcolor[$i] = 'maroon';}
   #generate HTML
   htmlHead($title, 2);
     print << "PrintTag";
-<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" style="width:100vw; height: 100vw; font-size=1vmax;"> 
+<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));> 
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
 
