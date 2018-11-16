@@ -149,12 +149,18 @@ sub geteaster {
 
 #*** checkfile($lang, $filename) 
 # substitutes English if no $lang item, Latin if no English
+# if $lang contains underscore, the part before the last underscore is taken as a fallback recursively (till something exists)
 sub checkfile {
   my $lang = shift;
   my $file = shift;  
                              
   if (-e "$datafolder/$lang/$file") {return "$datafolder/$lang/$file";}
   elsif ($lang =~ /english/i) {return "$datafolder/Latin/$file";}
+  elsif ($lang =~ /_/) {
+    my $temp = $lang;
+    $temp =~ s/_[^_]+$//;
+    return checkfile($temp, $file);
+  }
   elsif (-e "$datafolder/English/$file") {return "$datafolder/English/$file";}
   else {return "$datafolder/Latin/$file";}
 }

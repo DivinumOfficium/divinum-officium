@@ -304,6 +304,13 @@ sub setupstring($$$%)
       # English layers on top of Latin.
       $base_sections = setupstring($basedir, 'Latin', $fname, 'resolve@' => RESOLVE_NONE);
     }
+    elsif ($lang =~ /_/)
+    {
+      # If $lang contains underscore, the part before the last underscore is taken as a new fallback
+      my $temp = $lang;
+      $temp =~ s/_[^_]+$//;
+      $base_sections = setupstring($basedir, $temp, $fname, 'resolve@' => RESOLVE_NONE);
+    }
     elsif ($lang && $lang ne 'Latin')
     {
       # Other non-Latin languages layer on top of English.
