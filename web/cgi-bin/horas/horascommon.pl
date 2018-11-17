@@ -155,12 +155,12 @@ sub checkfile {
   my $file = shift;  
                              
   if (-e "$datafolder/$lang/$file") {return "$datafolder/$lang/$file";}
-  elsif ($lang =~ /english/i) {return "$datafolder/Latin/$file";}
   elsif ($lang =~ /_/) {
     my $temp = $lang;
     $temp =~ s/_[^_]+$//;
     return checkfile($temp, $file);
   }
+  elsif ($lang =~ /english/i) {return "$datafolder/Latin/$file";}
   elsif (-e "$datafolder/English/$file") {return "$datafolder/English/$file";}
   else {return "$datafolder/Latin/$file";}
 }
