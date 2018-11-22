@@ -484,14 +484,14 @@ sub setcross
     }
     else
     {
-        # Cross type 3: St. Andrew's Cross
-        my $csubst = "<span style='color:red; font-size:1.25em'>x</span>";
+        # Cross type 3: Greek Cross
+        my $csubst = "<span style='color:red; font-size:1.25em'>+</span>";
         $line =~ s/\+\+\+/$csubst/g;
-        # Cross type 2: MALTESE CROSS
+        # Cross type 2: Maltese Cross
         my $csubst = "<span style='color:red; font-size:1.25em'>✠︎</span>";
         $line =~ s/\+\+/$csubst/g;
-        # cross type 1: LATIN CROSS
-        my $csubst = "<span style='color:red; font-size:1.25em'>+</span>";
+        # cross type 1: Latin Cross
+        my $csubst = "<span style='color:red; font-size:1.25em'>✝</span>";
         $line =~ s/ \+ / $csubst /g;
     }
 
