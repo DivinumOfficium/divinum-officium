@@ -172,7 +172,7 @@ for ($i = 1; $i <= 12; $i++) {
     print << "PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=$border WIDTH=90% CELLPADDING=3>
-<TR><TH>Dies</TH><TH>Temporum</TH><TH>Sanctorum</TH><TH>d.h.</TH><TR>
+<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH><TR>
 PrintTag
 
 $to = $monthlength[$kmonth - 1];   
