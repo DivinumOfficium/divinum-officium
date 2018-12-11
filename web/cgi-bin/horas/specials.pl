@@ -1781,7 +1781,7 @@ sub doxology {
             $commemoratio{Rule} =~ /Doxology=([a-z]+)/i) {$dname = $1;}
 	  
 	  elsif (($month == 8 && $day > 15 && $day < 23) ||
-	  ($month == 12 && $day > 8 && $day < 16 && $dayofweek > 0)) {$dname = 'Nat';}
+	  ($version != /1570/ && $month == 12 && $day > 8 && $day < 16 && $dayofweek > 0)) {$dname = 'Nat';}
   
       else {
         my $d = ($dayname[0]=~ /Nat/) ? $dayname[0] : "$dayname[0]-$dayofweek"; 
