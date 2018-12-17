@@ -281,7 +281,7 @@ PrintTag
 } else {	#mainpage
   $pmode = 'main';
   $command = "";
-  $height = floor($screenheight * 4 / 12);
+  $height = floor($screenheight * 4 / 14);
   $height2 = floor($height / 2);
 
   $headline = setheadline();
