@@ -319,7 +319,7 @@ PrintTag
 if ($pmode =~ /(main|hora)/i) {
   if ($votive ne 'C9') {
 print << "PrintTag";
-<P ALIGN=CENTER><I>
+<P ALIGN=CENTER><I><FONT SIZE=+1>
 <A HREF=# onclick="hset('Matutinum');"><FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
 &nbsp;&nbsp; 
 <A HREF=# onclick="hset('Laudes');"><FONT COLOR=$hcolor[2]>$horas[2]</FONT></A>
@@ -354,8 +354,8 @@ PrintTag
  
   $ch1 = ($expand =~ /all/i) ? 'SELECTED' : '';
   $ch2 = ($expand =~ /psalms/i) ? 'SELECTED' : '';
-  $ch3 = ($expand =~ /nothing/i) ? 'SELECTED' : '';
-  $ch4 = ($expand =~ /skeleton/i) ? 'SELECTED' : '';
+#  $ch3 = ($expand =~ /nothing/i) ? 'SELECTED' : '';
+#  $ch4 = ($expand =~ /skeleton/i) ? 'SELECTED' : '';
   
   @chv = splice(@chv, @chv);
   if (-e "$Bin/monastic.pl") {unshift(@versions, 'pre Trident Monastic');}
@@ -364,11 +364,9 @@ PrintTag
   print << "PrintTag";
 <P ALIGN=CENTER>
 &nbsp;&nbsp;&nbsp;  
-<SELECT NAME=expand SIZE=4 onchange="parchange();">
+<SELECT NAME=expand SIZE=2 onchange="parchange();">
 <OPTION $ch1 VALUE='all'>all
 <OPTION $ch2 VALUE='psalms'>psalms
-<OPTION $ch3 VALUE='nothing'>nothing
-<OPTION $ch4 VALUE='skeleton'>skeleton
 </SELECT>
 &nbsp;&nbsp;&nbsp;  
 PrintTag
@@ -378,34 +376,34 @@ PrintTag
   for ($i = 0; $i < @versions; $i++) {print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";}
   print "</SELECT>\n";
 
-if ($savesetup > 1) {
-my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
-my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
-my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
-my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
-my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
+#if ($savesetup > 1) {
+#my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
+#my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
+#my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
+#my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
+#my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
 
-  print << "PrintTag";
-&nbsp;&nbsp;&nbsp;
-<SELECT NAME=testmode SIZE=4 onchange="parchange();">
-<OPTION $sel10 VALUE='Regular'>Regular
-<OPTION $sel11 VALUE='Seasonal'>Seasonal
-<OPTION $sel12 VALUE='Season'>Season
-<OPTION $sel13 VALUE='Saint'>Saint
-<OPTION $sel14 VALUE='Common'>Common
-</SELECT>
-PrintTag
-} else {
-my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
-my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
-  print << "PrintTag";
-&nbsp;&nbsp;&nbsp;
-<SELECT NAME=testmode SIZE=2 onchange="parchange();">
-<OPTION $sel10 VALUE='Regular'>Regular
-<OPTION $sel11 VALUE='Seasonal'>Seasonal
-</SELECT>
-PrintTag
-}
+#  print << "PrintTag";
+#&nbsp;&nbsp;&nbsp;
+#<SELECT NAME=testmode SIZE=4 onchange="parchange();">
+#<OPTION $sel10 VALUE='Regular'>Regular
+#<OPTION $sel11 VALUE='Seasonal'>Seasonal
+#<OPTION $sel12 VALUE='Season'>Season
+#<OPTION $sel13 VALUE='Saint'>Saint
+#<OPTION $sel14 VALUE='Common'>Common
+#</SELECT>
+#PrintTag
+#} else {
+#my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
+#my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
+#  print << "PrintTag";
+#&nbsp;&nbsp;&nbsp;
+#<SELECT NAME=testmode SIZE=2 onchange="parchange();">
+#<OPTION $sel10 VALUE='Regular'>Regular
+#<OPTION $sel11 VALUE='Seasonal'>Seasonal
+#</SELECT>
+#PrintTag
+#}
 
 $sel1 = ''; #($date1 eq gettoday()) ? 'SELECTED' : '';
 $sel2 = ($votive =~ /C8/) ? 'SELECTED' : '';
@@ -414,8 +412,8 @@ $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
 
 $addvotive = ($version !~ /monastic/i) ? "&nbsp;&nbsp;&nbsp;\n" .
   "<SELECT NAME=votive SIZE=4 onchange='parchange()'>\n" .
-  "<OPTION $sel1 VALUE='hodie'>hodie\n" .
-  "<OPTION $sel2 VALUE=C8>Dedication\n" .
+  "<OPTION $sel1 VALUE='Hodie'>Hodie\n" .
+  "<OPTION $sel2 VALUE=C8>Dedicatio\n" .
   "<OPTION $sel3 VALUE=C9>Defunctorum\n" .
   "<OPTION $sel4 VALUE=C12>Parvum B.M.V.\n" .
   "</SELECT>\n" : '';
@@ -453,7 +451,7 @@ foreach my $lang (@languages)
 </SELECT>
 $addvotive
 $addlocal<BR>
-<P ALIGN=CENTER><FONT SIZE=-1>
+<P ALIGN=CENTER><FONT SIZE=+1>
 <A HREF="Cofficium.pl">Compare</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF=# onclick="pset('parameters')">Options</A>

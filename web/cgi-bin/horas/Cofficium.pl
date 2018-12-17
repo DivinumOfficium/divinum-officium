@@ -410,12 +410,10 @@ foreach my $lang (@languages)
 <A HREF="officium.pl">One version</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF=# onclick="pset('parameters')">Options</A>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/versions.html" TARGET="_NEW">Versions</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/credits.html" TARGET="_NEW">Credits</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/new.html" TARGET="_NEW">What's new</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/download.html" TARGET="_NEW">Download</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
