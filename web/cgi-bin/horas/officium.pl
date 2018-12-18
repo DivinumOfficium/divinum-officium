@@ -464,7 +464,7 @@ $addlocal<BR>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="../../www/horas/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="../../www/horas/Help/brevitechnical.html" TARGET="_BLANK">Technical</A>
+<A HREF="../../www/horas/Help/technical.html" TARGET="_BLANK">Technical</A>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <A HREF="../../www/horas/Help/help.html" TARGET="_BLANK">Help</A>
 </FONT>

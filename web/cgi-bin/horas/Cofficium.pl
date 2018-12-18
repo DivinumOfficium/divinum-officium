@@ -318,8 +318,8 @@ PrintTag
 } 
   $ch1 = ($expand =~ /all/i) ? 'SELECTED' : '';
   $ch2 = ($expand =~ /psalms/i) ? 'SELECTED' : '';
-  $ch3 = ($expand =~ /nothing/i) ? 'SELECTED' : '';
-  $ch4 = ($expand =~ /skeleton/i) ? 'SELECTED' : '';
+#  $ch3 = ($expand =~ /nothing/i) ? 'SELECTED' : '';
+#  $ch4 = ($expand =~ /skeleton/i) ? 'SELECTED' : '';
   
   @chv1 = splice(@chv, @chv);
   for ($i = 0; $i < @versions; $i++) {$chv1[$i] = ($version1 =~ /$versions[$i]/) ? 'SELECTED' : '';}
@@ -330,11 +330,9 @@ PrintTag
   print << "PrintTag";
 <P ALIGN=CENTER>
 &nbsp;&nbsp;&nbsp;  
-<SELECT NAME=expand SIZE=4 onchange="parchange();">
+<SELECT NAME=expand SIZE=2 onchange="parchange();">
 <OPTION $ch1 VALUE='all'>all
 <OPTION $ch2 VALUE='psalms'>psalms
-<OPTION $ch3 VALUE='nothing'>nothing
-<OPTION $ch4 VALUE='skeleton'>skeleton
 </SELECT>
 &nbsp;&nbsp;&nbsp;  
 PrintTag
@@ -348,36 +346,36 @@ PrintTag
   for ($i = 0; $i < @versions; $i++) {print "<OPTION $chv2[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";}
   print "</SELECT>\n";
 
-if ($savesetup > 1) {
-my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
-my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
-my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
-my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
-my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
+#if ($savesetup > 1) {
+#my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+#my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
+#my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
+#my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
+#my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
 
-  print << "PrintTag";
-&nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callkalendar();">Kalendarium</A>
-&nbsp;&nbsp;&nbsp;
-<SELECT NAME=testmode SIZE=4 onclick="parchange();">
-<OPTION $sel10 VALUE='regular'>regular
-<OPTION $sel11 VALUE='Seasonal'>Seasonal
-<OPTION $sel12 VALUE='Season'>Season
-<OPTION $sel13 VALUE='Saint'>Saint
-<OPTION $sel14 VALUE='Common'>Common
-</SELECT>
-PrintTag
-} else {
-my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
-my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
-  print << "PrintTag";
-&nbsp;&nbsp;&nbsp;
-<SELECT NAME=testmode SIZE=2 onclick="parchange();">
-<OPTION $sel10 VALUE='regular'>regular
-<OPTION $sel11 VALUE='Seasonal'>Seasonal
-</SELECT>
-PrintTag
-}
+#  print << "PrintTag";
+#&nbsp;&nbsp;&nbsp;
+#<A HREF=# onclick="callkalendar();">Kalendarium</A>
+#&nbsp;&nbsp;&nbsp;
+#<SELECT NAME=testmode SIZE=4 onclick="parchange();">
+#<OPTION $sel10 VALUE='regular'>regular
+#<OPTION $sel11 VALUE='Seasonal'>Seasonal
+#<OPTION $sel12 VALUE='Season'>Season
+#<OPTION $sel13 VALUE='Saint'>Saint
+#<OPTION $sel14 VALUE='Common'>Common
+#</SELECT>
+#PrintTag
+#} else {
+#my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+#my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
+#  print << "PrintTag";
+#&nbsp;&nbsp;&nbsp;
+#<SELECT NAME=testmode SIZE=2 onclick="parchange();">
+#<OPTION $sel10 VALUE='regular'>regular
+#<OPTION $sel11 VALUE='Seasonal'>Seasonal
+#</SELECT>
+#PrintTag
+#}
 
 $sel1 = ''; #($date1 eq gettoday()) ? 'SELECTED' : '';
 $sel2 = ($votive =~ /C8/) ? 'SELECTED' : '';
@@ -400,13 +398,13 @@ foreach my $lang (@languages)
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
 <SELECT NAME=votive SIZE=4 onclick="parchange()">
-<OPTION $sel1 VALUE='hodie'>hodie
+<OPTION $sel1 VALUE='Hodie'>Hodie
 <OPTION $sel2 VALUE=C8>Dedication
 <OPTION $sel3 VALUE=C9>Defunctorum
 <OPTION $sel4 VALUE=C12>Parvum B.M.V.
 </SELECT>
 <BR>
-<P ALIGN=CENTER><FONT SIZE=-1>
+<P ALIGN=CENTER>
 <A HREF="officium.pl">One version</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF=# onclick="pset('parameters')">Options</A>
@@ -418,6 +416,8 @@ foreach my $lang (@languages)
 <A HREF="$htmlurl/Help/download.html" TARGET="_NEW">Download</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/rubrics.html" TARGET="_NEW">Rubrics</A>
+&nbsp;&nbsp;&nbsp;&nbsp; 
+<A HREF="$htmlurl/Help/brevitechnical.html" TARGET="_NEW">Technical</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/Ahelp.html" TARGET="_NEW">Help</A>
 </FONT>
@@ -472,7 +472,7 @@ sub headline {
     "grey"; 
   build_comment_line();
   $headline = setheadline();
-  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
+  $headline =~ s{!(.*)}{$1</FONT>}s;
   print "<CENTER><TABLE BORDER=1 CELLPADDING=5><TR>" .
     "<TD $background ALIGN=CENTER WIDTH=$width%>$version1 : <FONT COLOR=$daycolor>$headline</FONT>" .
     "<BR>$comment</TD>";
@@ -487,7 +487,7 @@ sub headline {
       "grey"; 
     build_comment_line();
     $headline = setheadline();
-    $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
+    $headline =~ s{!(.*)}{$1</FONT>}s;
     print "<TD $background ALIGN=CENTER WIDTH=$width%>$version2 : <FONT COLOR=$daycolor>$headline</FONT>" .
     "<BR>$comment</TD>";
   }
