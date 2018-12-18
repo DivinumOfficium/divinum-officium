@@ -267,18 +267,18 @@ PrintTag
   for ($i = 0; $i < @versions; $i++) {print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";}
   print "</SELECT>\n";
 
-  my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
-  my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
-  my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
+#  my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+#  my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
+#  my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
 
-  print << "PrintTag";
-&nbsp;&nbsp;&nbsp;
-<SELECT NAME=testmode SIZE=3 onclick=\"document.forms[0].submit();\">
-<OPTION $sel10 VALUE='regular'>regular
-<OPTION $sel12 VALUE='Season'>Season
-<OPTION $sel13 VALUE='Saint'>Saint
-</SELECT>
-PrintTag
+#  print << "PrintTag";
+#&nbsp;&nbsp;&nbsp;
+#<SELECT NAME=testmode SIZE=3 onclick=\"document.forms[0].submit();\">
+#<OPTION $sel10 VALUE='regular'>regular
+#<OPTION $sel12 VALUE='Season'>Season
+#<OPTION $sel13 VALUE='Saint'>Saint
+#</SELECT>
+#PrintTag
 
 if ($savesetup > 1) {print "&nbsp;&nbsp;&nbsp;<A HREF=# onclick=\"readings();\">Readings</A>";}   
 
