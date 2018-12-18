@@ -1009,9 +1009,11 @@ sub martyrologium : ScriptFunc {
   $a =~ s/\s//g;                      
   my %a = %{setupstring($datafolder, $lang, "Martyrologium/Mobile.txt")}; 
   if ($version =~ /1570/ && $lang =~ /Latin/i) 
-    {%a = %{setupstring($datafolder, $lang, "Martyrologium1/Mobile.txt")};} 
-  if ($version =~ /(1955|1960)/ && $lang =~ /Latin/i) 
-    {%a = %{setupstring($datafolder, $lang, "Martyrologium2/Mobile.txt")};} 
+    {%a = %{setupstring($datafolder, $lang, "Martyrologium1570/Mobile.txt")};} 
+  if ($version =~ /1960/ && $lang =~ /Latin/i) 
+    {%a = %{setupstring($datafolder, $lang, "Martyrologium1960/Mobile.txt")};} 
+  if ($version =~ /1955/ && $lang =~ /Latin/i) 
+    {%a = %{setupstring($datafolder, $lang, "Martyrologium1955R/Mobile.txt")};} 
 
   my $mobile = '';
   my $hd = 0;
@@ -1027,10 +1029,12 @@ sub martyrologium : ScriptFunc {
   my ($m, $d) = split('-', $fname);
   my $y = ($m == 1 && $d == 1) ? $year + 1 : $year;
 
-  if ($version =~ /1570/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1/$fname.txt"))
-    {$fname = "$datafolder/Latin/Martyrologium1/$fname.txt";}
-  elsif ($version =~ /(1955|1960)/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium2/$fname.txt"))
-    {$fname = "$datafolder/Latin/Martyrologium2/$fname.txt";}
+  if ($version =~ /1570/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1570/$fname.txt"))
+    {$fname = "$datafolder/Latin/Martyrologium1570/$fname.txt";}
+  elsif ($version =~ /1960/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1960/$fname.txt"))
+    {$fname = "$datafolder/Latin/Martyrologium1960/$fname.txt";}
+  elsif ($version =~ /1955/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1955R/$fname.txt"))
+    {$fname = "$datafolder/Latin/Martyrologium1955R/$fname.txt";}
   else {$fname = checkfile($lang, "Martyrologium/$fname.txt");}  
     if (my @a = do_read($fname))
     {
