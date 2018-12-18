@@ -417,7 +417,7 @@ foreach my $lang (@languages)
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/rubrics.html" TARGET="_NEW">Rubrics</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF="$htmlurl/Help/brevitechnical.html" TARGET="_NEW">Technical</A>
+<A HREF="$htmlurl/Help/technical.html" TARGET="_NEW">Technical</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="$htmlurl/Help/Ahelp.html" TARGET="_NEW">Help</A>
 </FONT>
