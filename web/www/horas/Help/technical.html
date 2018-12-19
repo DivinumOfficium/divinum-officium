@@ -100,7 +100,7 @@ For practical reasons, the <B><I>Officium Sanctae Mariae Sabbato</I></B> is refe
 <BR><BR>
 
 <LI><span class=prma>Martyrologium</span> contains the files named as mm-nn (in the same way as the Sancti folder) for the
-Martyrologium. Please note that the Martyrology at Prime is anticipated for the subsequent day. In the Latin text, there exist different folders containing the Martyrology corresponding to the different rubrical structures. For instance, the folder ~/Latin/Martyrologium1960 represents the Martyrology as used in the 1960 rubrics, while ~/Latin/Martyrologium1955R represents that from the 1955 rubrics. Please see <A HREF=credits.html>credits</A> for the sources.<BR>
+Martyrologium. Please note that the Martyrology at Prime is anticipated for the subsequent day. In the Latin text, there exist different folders containing the Martyrology corresponding to the different rubrical structures. For instance, the folder ~/Latin/Martyrologium1960 represents the Martyrology as used in the 1960 rubrics, while ~/Latin/Martyrologium1955R will display that from the 1955 rubrics. Please see <A HREF=credits.html>credits</A> for the sources.<BR>
 </UL><BR>
 
 <A NAME='programs'></A>
@@ -117,8 +117,7 @@ also calls upon other scripts.<BR><BR>
 <B><I>Main Perl Scripts</I></B><BR><BR>
 <LI><span class=prma>horas.pl</span> Interprets the special characters and prints out the Officium for the selected hour.<BR><BR>
 <LI><span class=prma>special.pl</span> Fills up the skeleton chapters with the actual content from the databases.<BR><BR> 
-<LI><span class=prma>horascommon.pl</span> Used by <B>kalendar</B> and <B>edit</B> top level files.<BR> The file selects the current date,
-and the office for any given date, and provides rules for precedence.<BR><BR>
+<LI><span class=prma>horascommon.pl</span> The file selects the current date, and the office for any given date, and provides rules for precedence.<BR><BR>
 <B><I>Auxiliary Perl Scripts</I></B><BR><BR>
 <LI><span class=prma>dialogcommon.pl</span> Interprets the defaults and setup.<BR><BR>
 <LI><span class=prma>webdia.pl</span> Helper set to generate the dialog table, special html parts of the office tables, and also reads/writes cookies.<BR><BR>
@@ -135,9 +134,7 @@ web versions, broken down by language.<BR><BR><BR>
 <P ALIGN=CENTER><A Href=#Top>Top</A></FONT></P>
 <span class=prmm>Special characters</span><BR><BR>
 
-Either the files in the Ordinarium, and the other files are using special characters
-to help the formatting. Each of them, with the exception of the ~ tilde sign,
-has to be set in the beginning of a line.<BR><BR>
+All .txt files employ special characters to properly format the Hours. Each of them, with the exception of the ~ tilde sign, has to be set in the beginning of a line.<BR><BR>
 
 <UL>
 <LI><span class=prma># </span> in the files
