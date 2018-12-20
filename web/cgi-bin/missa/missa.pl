@@ -247,8 +247,6 @@ Rubrics : <INPUT TYPE=CHECKBOX NAME='rubrics' $crubrics Value=1  onclick="parcha
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="hset('$ctext');"><FONT COLOR=blue>$ctext</FONT></A>
 &nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="hset('Propers')">$propname</A>
-&nbsp;&nbsp;&nbsp;
 Solemn : <INPUT TYPE=CHECKBOX NAME='solemn' $csolemn Value=1 onclick="parchange()">
 </I></P>
 <P ALIGN=CENTER>
@@ -325,10 +323,10 @@ $addvotive</P>
 <P ALIGN=CENTER><FONT SIZE=+1>
 PrintTag
 
-#  print << "PrintTag"; 
-
-
-#PrintTag
+print << "PrintTag"; 
+<P ALIGN=CENTER>
+<A HREF=# onclick="hset('Propers')">$propname</A></P>
+PrintTag
 
 print "</FONT></P>\n";
 
