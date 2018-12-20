@@ -46,7 +46,7 @@ For easier understanding and handling, they are organized into folders. Most fil
 The top level folders are folders for the languages (Latin, English, Magyar, etc.). The basic rule is that if a file is missing for a specific language,
 the program automatically selects from the English.<BR><BR>
 
-Each language folder contains the same set of subfolders, which represents the parts of the printed breviary volumes: Ordinarium, Psalterium, Tempora, Sancti, Commune. For technical reasons, there are separate folders for the psalms, and for the Martyrologium. Folders marked "M" are used to display the Monastic version of the Office.<BR><BR> 
+Each language folder contains the same set of subfolders, which represents the parts of the printed breviary volumes: Ordinarium, Psalterium, Tempora, Sancti, Commune. For technical reasons, there are separate folders for the psalms and for the Martyrologium. The Latin folder "psalms" contains unaccented psalms, while "psalms1" contains the accented psalms, and "PiusXII" contains the Pius XII psalter. Folders marked "M" are used to display the Monastic version of the Office.<BR><BR> 
 The style and punctuation used within the text is that of the 1962 liturgical books (i.e. natalicio is preferred to natalitio, abicere to abjicere, etc.), with the exception that one space is used between sentences, and no space is placed before a colon or other punctuation. In accordance with the principles sent to the typographers of the 1960 editiones typicae, the letter J in the 1960 rubrics is transformed to the letter I. (<I>Sacrae Congregatio Rituum, "Ordinationes ad librorum liturgicorum editores", 26.VI.1960</I>) The programlet is capable of automatically editing the letter J to the letter I to account for the 1960 rubrics.<BR><BR>
 The files itself usually are converted into <span class=prma>hash elements</span>, e.g. [Ant Matutinum], [Capitulum Nona], etc.<BR><BR>
 The <span class=prma>key</span> is enclosed within square brackets <span class=pram>[ ... ]</span> which is a separate line followed by the body of the element. For instance, [Ant 2] refers to the Benedictus antiphon at Lauds, while [Lectio93] normally refers to the 9th (hagiographical) reading of a commemorated saint (pre-1960), which became the 3rd reading at Matins on 3rd class feasts under 1960 rubrics.<BR><BR>
@@ -61,11 +61,9 @@ Each hour is represented by two or more files. These files are not converted int
 <span class=prma>special.pl</span> program file. If necessary, there are separate files for the 1960 (name ending with 'r') or Tridentine version (name ending with 't') or for Paschal time (name ending with 'p'.)<BR><BR>
 
 <LI><span class=prma>Psalterium</span> folder holds the information usually printed
-in the Ordinarium and Psalterium sections of the <I>Breviarium Romanum</I>. <span class=prma>Prayers.txt</span>)
-contains the common prayers. The rest contains the Benedictions, Doxologies, Psalm 94 prepared
-as the Invitatory; seasonal parts for Matins (Matutinum special), Lauds, and Vespers (Major special);
-Minor hours (Minor special); antiphons and psalm sets (Psalmi Major|Matutinum|Minor); 
-Marian antiphons, and special seasonal parts for Prime.
+in the Ordinarium and Psalterium sections of the <I>Breviarium Romanum</I>. <span class=prma>Prayers.txt</span>
+contains the common prayers. The rest contains the Benedictions, Doxologies, specific forms of the Invitatory, seasonal parts for Matins (Matutinum special), Lauds & Vespers (Major special);
+Minor hours (Minor special); antiphons and psalm sets (Psalmi Major|Matutinum|Minor), Marian antiphons, and special seasonal parts for Prime (Prima special).
 <BR><BR>
 <LI><span class=prma>Transfer</span> folder has the <B>transfer table</B> files. The Tr=Transfer files have <PRE>
 mm-nn=filename;; 
@@ -84,7 +82,7 @@ and year to year rules. For example, the TR19602018.txt file has the appropriate
 
 The verses are numbered by chapter:verse numbers, and anything in parentheses is printed in small red font.<BR><BR>
 
-<LI>The <span class=prma>Tempora</span> folder holds the offices from the <span class=prma><I>Proprium de Tempore</I></span>. Each office has exactly one file, and each is a hash collection. The naming convention is:<PRE>Season name w-d</PRE> where <I>w</I> is the week of the season, and <I>d</I> is the day of week. (Example: Pent04-2 represents Tuesday of the 4th week after Pentecost.)<BR><BR>
+<LI>The <span class=prma>Tempora</span> folder holds the offices from the <span class=prma><I>Proprium de Tempore</I></span>. Each office has exactly one file, and each is a hash collection. The naming convention is:<PRE>Season name w-d</PRE> where <I>w</I> is the week of the season, and <I>d</I> is the day of week. (Example: Pent04-2 represents Tuesday of the 4th week after Pentecost. Similarly, 085-0 represents Sunday of the 5th week of August.)<BR><BR>
 
 <LI><span class=prma>Sancti</span> is the same collection of offices as found in the <span class=prma><I>Proprium Sanctorum</I></span>. The naming convention is:<PRE>mm-nn</PRE> where <I>mm</I> is the month, <I>nn</I> is the day. (Example: 07-26 represents July 26, Feast of St. Anne.) For practical reasons, unlike in the <I>Missale Romanum</I> or <I>Breviarium Romanum</I>, the Christmastide offices are placed within the Sancti folder. Files are marked with certain letters for their usage within certain rubrical structures:<BR><BR>
 <UL>
@@ -137,13 +135,10 @@ web versions, broken down by language.<BR><BR><BR>
 All .txt files employ special characters to properly format the Hours. Each of them, with the exception of the ~ tilde sign, has to be set in the beginning of a line.<BR><BR>
 
 <UL>
-<LI><span class=prma># </span> in the files
-of Ordinarium folder represent a chapter label, e.g. Incipit, Psalms, etc. The <I>Special.pl</I> 
-program interprets and expands or limits primarily these lines. Therefore, they
-represent the basic structure of the particular Hour.<BR><BR>
+<LI><span class=prma>#</span> in the files
+of the Ordinarium folder represent a chapter label, e.g. Incipit, Psalms, etc. The <I>Special.pl</I> program interprets and expands or limits primarily these lines. Therefore, they represent the basic structure of the particular Hour.<BR><BR>
 
-<LI><span class=prma>[ name ]</span> in a separate line is the key for a
-hash element, as mentioned earlier.<BR><BR>
+<LI><span class=prma>[ name ]</span> in a separate line is the key for a hash element, as mentioned earlier.<BR><BR>
 
  <LI><span class=prma>$ dollar</span> sign as the first character of a line, followed 
  by a name, represent a prayer found in Psalterium/Prayers file. These are the candidates
