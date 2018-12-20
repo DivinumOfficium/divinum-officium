@@ -247,6 +247,8 @@ Rubrics : <INPUT TYPE=CHECKBOX NAME='rubrics' $crubrics Value=1  onclick="parcha
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="hset('$ctext');"><FONT COLOR=blue>$ctext</FONT></A>
 &nbsp;&nbsp;&nbsp;
+<A HREF=# onclick="hset('Propers')">$propname</A>
+&nbsp;&nbsp;&nbsp;
 Solemn : <INPUT TYPE=CHECKBOX NAME='solemn' $csolemn Value=1 onclick="parchange()">
 </I></P>
 <P ALIGN=CENTER>
@@ -323,13 +325,10 @@ $addvotive</P>
 <P ALIGN=CENTER><FONT SIZE=+1>
 PrintTag
 
-  print << "PrintTag"; 
-<A HREF="Cmissa.pl">Compare</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF=# onclick="pset('parameters')">Options</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="hset('Propers')">$propname</A>
-PrintTag
+#  print << "PrintTag"; 
+
+
+#PrintTag
 
 print "</FONT></P>\n";
 
@@ -366,7 +365,8 @@ sub headline {
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT><P>
-<P ALIGN=CENTER><A HREF=# onclick="callofficium();">Divinum Officium</A>
+<P ALIGN=CENTER><A HREF="Cmissa.pl">Compare</A>
+&nbsp;&nbsp;&nbsp;<A HREF=# onclick="callofficium();">Divinum Officium</A>
 &nbsp;&nbsp;&nbsp;
 <INPUT TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
 <A HREF=# onclick="prevnext(-1)">&darr;</A>
@@ -374,6 +374,8 @@ $comment<BR><BR>
 <A HREF=# onclick="prevnext(1)">&uarr;</A>
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="callkalendar();">Kalendarium</A>
+&nbsp;&nbsp;&nbsp;
+<A HREF=# onclick="pset('parameters')">Options</A>
 $numsel
 </P>
 PrintTag
