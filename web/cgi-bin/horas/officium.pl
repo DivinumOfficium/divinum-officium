@@ -452,10 +452,6 @@ foreach my $lang (@languages)
 $addvotive
 $addlocal<BR>
 <P ALIGN=CENTER><FONT SIZE=+1>
-<A HREF="Cofficium.pl">Compare</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF=# onclick="pset('parameters')">Options</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <A HREF="../../www/horas/Help/credits.html" TARGET="_BLANK">Credits</A>
@@ -526,7 +522,8 @@ sub headline {
 $comment<BR><BR>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
 &nbsp;<FONT COLOR=RED SIZE=+1>$version</FONT></P>
-<P ALIGN=CENTER><A HREF=# onclick="callmissa();">Sancta Missa</A>
+<P ALIGN=CENTER><A HREF="Cofficium.pl">Compare</A>
+&nbsp;&nbsp;&nbsp;<A HREF=# onclick="callmissa();">Sancta Missa</A>
 &nbsp;&nbsp;&nbsp;
 <INPUT TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
 <A HREF=# onclick="prevnext(-1)">&darr;</A>
@@ -534,6 +531,8 @@ $comment<BR><BR>
 <A HREF=# onclick="prevnext(1)">&uarr;</A>
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="callkalendar();">Kalendarium</A>
+&nbsp;&nbsp;&nbsp;
+<A HREF=# onclick="pset('parameters')">Options</A>
 </P>
 PrintTag
 }
