@@ -242,7 +242,7 @@ for ($i = 0; $i < @versions; $i++) {$chv[$i] = $version =~ /$versions[$i]/ ? 'SE
 $ctext = ($pmode =~ /(main)/i) ? 'Sancta Missa' : 'Sancta Missa Completed';
 
 print << "PrintTag";
-<P ALIGN=CENTER><I>
+<P ALIGN=CENTER><FONT SIZE=+1><I>
 Rubrics : <INPUT TYPE=CHECKBOX NAME='rubrics' $crubrics Value=1  onclick="parchange()">
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="hset('$ctext');"><FONT COLOR=blue>$ctext</FONT></A>
@@ -258,35 +258,35 @@ PrintTag
     {print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";}
   print "</SELECT>\n";
 
-if ($savesetup > 1) {
-my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
-my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
-my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
-my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
+#if ($savesetup > 1) {
+#my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+#my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
+#my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
+#my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
 
-  print << "PrintTag";
-&nbsp;&nbsp;&nbsp;
-<SELECT NAME=testmode SIZE=4 onchange="parchange();">
-<OPTION $sel10 VALUE='regular'>regular
-<OPTION $sel11 VALUE='Seasonal'>Seasonal
-<OPTION $sel12 VALUE='Season'>Season
-<OPTION $sel13 VALUE='Saint'>Saint
-</SELECT>
-PrintTag
-} else {
-my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
-my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
-  print << "PrintTag";
-&nbsp;&nbsp;&nbsp;
-<SELECT NAME=testmode SIZE=2 onchange="parchange();">
-<OPTION $sel10 VALUE='regular'>regular
-<OPTION $sel11 VALUE='Seasonal'>Seasonal
-</SELECT>
-PrintTag
-}
+#  print << "PrintTag";
+#&nbsp;&nbsp;&nbsp;
+#<SELECT NAME=testmode SIZE=4 onchange="parchange();">
+#<OPTION $sel10 VALUE='regular'>regular
+#<OPTION $sel11 VALUE='Seasonal'>Seasonal
+#<OPTION $sel12 VALUE='Season'>Season
+#<OPTION $sel13 VALUE='Saint'>Saint
+#</SELECT>
+#PrintTag
+#} else {
+#my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+#my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
+#  print << "PrintTag";
+#&nbsp;&nbsp;&nbsp;
+#<SELECT NAME=testmode SIZE=2 onchange="parchange();">
+#<OPTION $sel10 VALUE='regular'>regular
+#<OPTION $sel11 VALUE='Seasonal'>Seasonal
+#</SELECT>
+#PrintTag
+#}
 
 @sel = ();
-@votive = ('hodie');
+@votive = ('Hodie');
 if (opendir(DIR, "$datafolder/Latin/Votive")) {
   @a = sort readdir(DIR); 
   closedir DIR;
@@ -320,15 +320,12 @@ foreach my $lang (@languages)
 print << "PrintTag";
 </SELECT>
 $addvotive</P>
-<P ALIGN=CENTER><FONT SIZE=-1>
+<P ALIGN=CENTER><FONT SIZE=+1>
 PrintTag
 
-  print << "PrintTag"; 
-<A HREF="Cmissa.pl">Compare</A>
-&nbsp;&nbsp;&nbsp;&nbsp; 
-<A HREF=# onclick="pset('parameters')">Options</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="hset('Propers')">$propname</A>
+print << "PrintTag"; 
+<P ALIGN=CENTER>
+<A HREF=# onclick="hset('Propers')">$propname</A></P>
 PrintTag
 
 print "</FONT></P>\n";
@@ -366,7 +363,8 @@ sub headline {
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT><P>
-<P ALIGN=CENTER><A HREF=# onclick="callofficium();">Divinum Officium</A>
+<P ALIGN=CENTER><A HREF="Cmissa.pl">Compare</A>
+&nbsp;&nbsp;&nbsp;<A HREF=# onclick="callofficium();">Divinum Officium</A>
 &nbsp;&nbsp;&nbsp;
 <INPUT TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
 <A HREF=# onclick="prevnext(-1)">&darr;</A>
@@ -374,6 +372,8 @@ $comment<BR><BR>
 <A HREF=# onclick="prevnext(1)">&uarr;</A>
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="callkalendar();">Kalendarium</A>
+&nbsp;&nbsp;&nbsp;
+<A HREF=# onclick="pset('parameters')">Options</A>
 $numsel
 </P>
 PrintTag

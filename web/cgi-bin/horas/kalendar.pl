@@ -148,7 +148,7 @@ $title = "Kalendarium: $monthnames[$kmonth-1] $kyear";
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
 <INPUT TYPE=HIDDEN NAME=readings VALUE="0">
 
-<P ALIGN=CENTER><FONT SIZE=1>
+<P ALIGN=CENTER>
 PrintTag
 
 for ($i = $kyear - 9; $i <= $kyear; $i++) {
@@ -162,7 +162,7 @@ for ($i = $kyear + 1; $i <= $kyear + 10; $i++) {
 }
 print "<BR><BR></FONT>\n";
 print "$version : <FONT COLOR=MAROON SIZE=+1><B><I>$title</I></B></FONT>\n";
-print "<BR><FONT SIZE=1><BR>\n";
+print "<BR><BR>\n";
 
 for ($i = 1; $i <= 12; $i++) {
   $mn = substr($monthnames[$i-1], 0, 3); 
@@ -172,7 +172,7 @@ for ($i = 1; $i <= 12; $i++) {
     print << "PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=$border WIDTH=90% CELLPADDING=3>
-<TR><TH>Dies</TH><TH>Temporum</TH><TH>Sanctorum</TH><TH>d.h.</TH><TR>
+<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH><TR>
 PrintTag
 
 $to = $monthlength[$kmonth - 1];   
@@ -247,10 +247,10 @@ for ($cday = 1; $cday <= $to; $cday++) {
 
 
   print << "PrintTag";
-<TR><TD ALIGN=CENTER><A HREF=# onclick="callbrevi(\'$date1\');"><FONT SIZE=1>$d1</FONT></A></TD>
+<TR><TD ALIGN=CENTER><A HREF=# onclick="callbrevi(\'$date1\');">$d1</FONT></A></TD>
 <TD>$c1</TD>
 <TD>$c2</TD>
-<TD ALIGN=CENTER><FONT SIZE=1>$daynames[$dayofweek]</FONT></TD>
+<TD ALIGN=CENTER>$daynames[$dayofweek]</FONT></TD>
 </TR>
 PrintTag
 }
@@ -267,18 +267,18 @@ PrintTag
   for ($i = 0; $i < @versions; $i++) {print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";}
   print "</SELECT>\n";
 
-  my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
-  my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
-  my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
+#  my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+#  my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
+#  my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
 
-  print << "PrintTag";
-&nbsp;&nbsp;&nbsp;
-<SELECT NAME=testmode SIZE=3 onclick=\"document.forms[0].submit();\">
-<OPTION $sel10 VALUE='regular'>regular
-<OPTION $sel12 VALUE='Season'>Season
-<OPTION $sel13 VALUE='Saint'>Saint
-</SELECT>
-PrintTag
+#  print << "PrintTag";
+#&nbsp;&nbsp;&nbsp;
+#<SELECT NAME=testmode SIZE=3 onclick=\"document.forms[0].submit();\">
+#<OPTION $sel10 VALUE='regular'>regular
+#<OPTION $sel12 VALUE='Season'>Season
+#<OPTION $sel13 VALUE='Saint'>Saint
+#</SELECT>
+#PrintTag
 
 if ($savesetup > 1) {print "&nbsp;&nbsp;&nbsp;<A HREF=# onclick=\"readings();\">Readings</A>";}   
 

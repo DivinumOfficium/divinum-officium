@@ -122,7 +122,7 @@ if (!$kyear) {$kyear = $year;}
   'Julius', 'Augustus', 'September', 'October', 'November', 'December');
 @monthlength = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 $title = "Kalendarium: $monthnames[$kmonth-1] $kyear";
-@daynames = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fry', 'Sat');
+@daynames = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
 
                                   
 #*** generate HTML
@@ -140,7 +140,7 @@ $title = "Kalendarium: $monthnames[$kmonth-1] $kyear";
 <INPUT TYPE=HIDDEN NAME=testmode VALUE="$testmode">
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
 
-<P ALIGN=CENTER><FONT SIZE=1>
+<P ALIGN=CENTER>
 PrintTag
 
 for ($i = $origyear[2] - 4; $i <= $origyear[2]; $i++) {
@@ -154,7 +154,7 @@ for ($i = $origyear[2] + 1; $i <= $origyear[2] + 5; $i++) {
 }
 print "<BR><BR></FONT>\n";
 print "$version : <FONT COLOR=MAROON SIZE=+1><B><I>$title</I></B></FONT>\n";
-print "<BR><FONT SIZE=1><BR>\n";
+print "<BR><BR>\n";
 
 for ($i = 1; $i <= 12; $i++) {
   $mn = substr($monthnames[$i-1], 0, 3); 
@@ -227,10 +227,10 @@ for ($cday = 1; $cday <= $to; $cday++) {
 
 
   print << "PrintTag";
-<TR><TD ALIGN=CENTER><A HREF=# onclick="callbrevi(\'$date1\');"><FONT SIZE=1>$d1</FONT></A></TD>
+<TR><TD ALIGN=CENTER><A HREF=# onclick="callbrevi(\'$date1\');">$d1</FONT></A></TD>
 <TD>$c1</TD>
 <TD>$c2</TD>
-<TD ALIGN=CENTER><FONT SIZE=1>$daynames[$dayofweek]</FONT></TD>
+<TD ALIGN=CENTER>$daynames[$dayofweek]</FONT></TD>
 </TR>
 PrintTag
 }

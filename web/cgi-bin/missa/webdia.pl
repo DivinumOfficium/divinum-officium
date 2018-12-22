@@ -94,7 +94,7 @@ sub setup {
   my ($width, $rpar, @rpar, $size, @size, $range, @range, $j);
   my $tl = 0;
 
-  $input = "<TABLE BORDER=2 CELLPADDING=5 ALIGN=CENTER BACKGROUND=\"$htmlurl/sfdia.jpg\"><TR>\n";
+  $input = "<TABLE BORDER=2 CELLPADDING=5 ALIGN=CENTER BACKGROUND=\"$htmlurl/horasbg.jpg\"><TR>\n";
   
   my $k = 0; 
   for ($i = 0; $i < @script; $i++) {

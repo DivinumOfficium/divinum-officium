@@ -266,25 +266,25 @@ PrintTag
 if ($pmode =~ /(main|hora)/i) {
   if ($votive ne 'C9') {
 print << "PrintTag";
-<P ALIGN=CENTER><I>
+<P ALIGN=CENTER><I><FONT SIZE=+1>
 <A HREF="Pofficium.pl?date1=$date1&command=prayMatutinum&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
  <FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
 &nbsp;&nbsp; 
 <A HREF="Pofficium.pl?date1=$date1&command=prayLaudes&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 <FONT COLOR=$hcolor[2]>$horas[2]</FONT></A>
-&nbsp;&nbsp; 
+<BR>
 <A HREF="Pofficium.pl?date1=$date1&command=prayPrima&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 <FONT COLOR=$hcolor[3]>$horas[3]</FONT></A>
 &nbsp;&nbsp; 
 <A HREF="Pofficium.pl?date1=$date1&command=prayTertia&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 <FONT COLOR=$hcolor[4]>$horas[4]</FONT></A>
-<BR> 
+&nbsp;&nbsp; 
 <A HREF="Pofficium.pl?date1=$date1&command=praySexta&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 <FONT COLOR=$hcolor[5]>$horas[5]</FONT></A>
 &nbsp;&nbsp; 
 <A HREF="Pofficium.pl?date1=$date1&command=prayNona&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 <FONT COLOR=$hcolor[6]>$horas[6]</FONT></A>
-&nbsp;&nbsp; 
+<BR>
 <A HREF="Pofficium.pl?date1=$date1&command=prayVespera&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 <FONT COLOR=$hcolor[7]>$horas[7]</FONT></A>
 &nbsp;&nbsp; 
@@ -311,7 +311,7 @@ PrintTag
 
   my $vsize = @versions;
   print "<TABLE ALIGN=CENTER BORDER=1><TR><TD ALIGN=CENTER>\n";
-  print "<FONT SIZE=1>Versions<BR></FONT>";
+  print "Versions<BR>";
   for ($i = 0; $i < @versions; $i++) {
     if ($i > 0) {print "<BR>";}
 	print "<A HREF=\"Pofficium.pl?date1=$date1&version=$versions[$i]&testmode=$testmode&lang2=$lang2\&votive=$votive\">" .
@@ -325,14 +325,7 @@ my $sel11 = ($testmode =~ /Seasonal/i) ? 'red' : 'blue';
 
   print << "PrintTag";
 <TR><TD ALIGN=CENTER VALIGN=MIDDLE>
-<FONT SIZE=1>Mode</FONT><BR>
-<A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=regular&lang2=$lang2&votive=$votive">
-  <FONT COLOR=$sel10>regular</FONT></A><BR>
-<A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=seasonal&lang2=$lang2&votive=$votive">
-  <FONT COLOR=$sel11>seasonal</FONT></A><BR>
-</TD></TR>
-<TR><TD ALIGN=CENTER VALIGN=MIDDLE>
-<FONT SIZE=1>Language 2</FONT><BR>
+Language 2</FONT><BR>
 PrintTag
 
 # Write a link for each language.
@@ -352,18 +345,17 @@ $sel4 = ($votive =~ /C12/) ? 'red' : 'blue';
                       
 print << "PrintTag";
 </TD></TR>
-<TR><TD ALIGN=CENTER VALIGN=MIDDLE>
-<FONT SIZE=1>Votive</FONT><BR>
-<A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=$lang2&votive=hodie">
+<TR><TD ALIGN=CENTER VALIGN=MIDDLE>Votive</FONT><BR>
+<A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=$lang2&votive=Hodie">
   <FONT COLOR=$sel1>hodie</FONT></A><BR>
 <A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=$lang2&votive=C8">
-<FONT COLOR=$sel2>Dedication</FONT></A><BR>
+<FONT COLOR=$sel2>Dedicatio</FONT></A><BR>
 <A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=$lang2&votive=C9">
 <FONT COLOR=$sel3>Defunctorum</FONT></A><BR>
 <A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=$lang2&votive=C12">
 <FONT COLOR=$sel4>Parvum B.M.V.</FONT></A><BR>
-</TD></TR></TABLE><BR>
-<P ALIGN=CENTER><FONT SIZE=-1>
+</TD></TR></TABLE>
+<P ALIGN=CENTER><FONT SIZE=+1>
 <A HREF="Pofficium.pl?date1=$date1&command=setupparameters&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 Options</A>
 </FONT>
