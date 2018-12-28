@@ -60,5 +60,8 @@ De libro Apocalypsis beati Joannis Apostoli.
 [Lectio9]
 @Sancti/01-03
 
+[Ant Vespera]
+@Sancti/12-27:Ant Laudes:s/\./_;;109/s s/\./_;;112/ s/\./_;;115/ s/\./_;;125/ s/$/;;138/ s/_/./g
+
 [Commemoratio]
 @Sancti/12-28:Octava

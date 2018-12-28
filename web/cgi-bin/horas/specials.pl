@@ -1353,8 +1353,6 @@ sub getcommemoratio {
 
   if ($winner =~ /Nat1/ && $version !~ /1960/ && $wday =~ /12-30/) {return '';}
   if ($hora =~ /Vespera/i && $rank >= 5 && $w{Rank} =~ /;;1/ && $winner !~ /Tempora/i) {return '';} #2nd class and commemorated simplex 
-  if ($hora =~ /Vespera/i && $dayname[0] =~ /Nat/i && $version =~ /Trident/i &&
-    $wday =~ /Sancti/i) {return '';}  #??????? 
 
   if ($rule =~ /no commemoratio/i && !($hora =~ /Vespera/i && $vespera == 3 && $svesp == 1) ) {return '';}
 
