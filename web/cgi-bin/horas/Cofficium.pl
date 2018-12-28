@@ -262,16 +262,16 @@ PrintTag
 <TD ALIGN=CENTER><FONT COLOR=MAROON>Proprium de tempore</FONT></TD>
 
 </TR><TR><TD ALIGN=CENTER ROWSPAN=2>
-<IMG SRC="$htmlurl/breviarium.gif" HEIGHT=$height></TD>
+<IMG SRC="$htmlurl/breviarium.jpg" HEIGHT=$height></TD>
 <TD HEIGHT=50% VALIGN=MIDDLE ALIGN=CENTER>
-<IMG SRC="$htmlurl/psalterium.gif" HEIGHT=$height2></TD>
+<IMG SRC="$htmlurl/psalterium.jpg" HEIGHT=$height2></TD>
 <TD HEIGHT=50% VALIGN=MIDDLE ALIGN=CENTER>
-<IMG SRC="$htmlurl/tempore.gif" HEIGHT=$height2></TD>
+<IMG SRC="$htmlurl/tempore.jpg" HEIGHT=$height2></TD>
 </TR><TR>
 <TD HEIGHT=50% VALIGN=MIDDLE ALIGN=CENTER>
-<IMG SRC="$htmlurl/commune.gif" HEIGHT=$height2></TD>
+<IMG SRC="$htmlurl/commune.jpg" HEIGHT=$height2></TD>
 <TD HEIGHT=50% VALIGN=MIDDLE ALIGN=CENTER>
-<IMG SRC="$htmlurl/sancti.gif" HEIGHT=$height2></TD>
+<IMG SRC="$htmlurl/sancti.jpg" HEIGHT=$height2></TD>
 </TR><TR>
 <TD ALIGN=CENTER><FONT COLOR=RED>$version</FONT></TD>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>Commune Sanctorum</FONT></TD>
