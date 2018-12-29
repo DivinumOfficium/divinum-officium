@@ -1409,6 +1409,9 @@ sub setheadline {
       } elsif ($version =~ /(1570|1910|Divino|1955)/ &&  $winner =~ /C10|C10t/) {
 	    $rankname = 'Simplex';
 	    
+	  } elsif ($version =~ /1960/ &&  $winner =~ /Pasc6-6/) {
+	    $rankname = 'I. classis';
+	    
 	  } elsif ($version =~ /1960/ &&  $month == 12  && $day > 16 && $day < 25 && $dayofweek > 0) {
 	    $rankname = 'II. classis';
 	    
