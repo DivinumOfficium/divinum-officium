@@ -984,7 +984,6 @@ sub precedence {
     && $dayofweek != 0 && $hora =~ /Laudes/i) {$transfervigil = $winner;}  
 
   if ($winner =~ /Sancti/ && $rule =~ /Tempora none/i) {$commemoratio = $scriptura = $dayname[2] = ''; }
-
   
   if ($version !~ /1960/ && $hora =~ /Vespera/ && $month == 12 && $day == 28 && $dayofweek == 6) {
      $commemoratio1 = $commemoratio;
