@@ -1165,8 +1165,6 @@ sub precedence {
 	  $rule = $winner{Rule};
     } else {$dayname[2] = '';}
   }
-
-
   # Choose the appropriate scheme for Lauds. Roughly speaking, penitential days
   # have Lauds II and others have Lauds I, although for the Tridentine rubrics
   # only the Sundays of Septuagesima and Lent have a sort of "Lauds II", with
