@@ -27,17 +27,25 @@ Download
 
 <H1 ALIGN CENTER>Download</H1>
 
-<H3 ALIGN=CENTER><FONT COLOR=MAROON>Generating .html files</FONT></H3>
+<H3 ALIGN=CENTER><FONT COLOR=MAROON>Standalone Files</FONT></H3>
 
-WARNING! Please be advised that the standalone downloadable files (as well as music files) have not been updated nor supported since the death of Laszlo Kiss in 2011. Use at your own risk!<BR><BR>
-We highly recommend instead downloading the <a href="http://apps.liturgiaetmusica.com/en/apps/brevmeum">Breviarium Meum app</a> (available for iOS) for the Breviary, as well as the iMass app for <a href="https://play.google.com/store/apps/details?id=fssp.livemass.iMass">Android</a> and <a href="https://itunes.apple.com/us/app/imass/id381131668?mt=8">iOS</a>. The <a href="https://catholicapps.com/laudate/">Laudate app</a> can be downloaded for use of the Breviary on iOS or Android devices. We are now partnering with the <a href="https://www.ipieta.com">iPieta</a> app; Divinum Officium functionality should be available on that app in the near future.<BR><BR>
-It is possible to generate Missal and Breviary files in .mobi or .ePub format, with all texts generated on a monthly basis. Please refer to our <a href="http://github.com/divinumofficium/divinum-officium">GitHub</a> site for details. They can also be downloaded from the following site: <a href="http://breviarium.srubarovi.cz">http://breviarium.srubarovi.cz</a><BR><BR>
-The source code for the Divinum Officium website can be found and freely downloaded from our <a href="https://github.com/DivinumOfficium/divinum-officium">GitHub repository</a>.<BR><BR>
-It is possible to download the code to one's own Windows, Mac, or Linux computer and run the code as a local web host.<BR><BR>
+WARNING! Please be advised that the older "stand-alone" downloadable files (as well as music files) have not been updated nor supported since the death of Laszlo Kiss in 2011. Use at your own risk!<BR>
+<H3 ALIGN=CENTER><FONT COLOR=MAROON>iOS and Android Apps</FONT></H3>
+We highly recommend instead downloading the <a href="http://apps.liturgiaetmusica.com/en/apps/brevmeum">Breviarium Meum app</a> (available for iOS) for the Breviary, as well as the iMass app for <a href="https://play.google.com/store/apps/details?id=fssp.livemass.iMass">Android</a> and <a href="https://itunes.apple.com/us/app/imass/id381131668?mt=8">iOS</a>. The <a href="https://catholicapps.com/laudate/">Laudate app</a> can be downloaded for use of the Breviary on iOS or Android devices. We are now partnering with the <a href="https://www.ipieta.com">iPieta</a> app; Divinum Officium functionality should be available on that app in the near future.<BR>
+<H3 ALIGN=CENTER><FONT COLOR=MAROON>.mobi and .ePub Files</FONT></H3>
+It is possible to generate Missal and Breviary files in .mobi or .ePub format, with all texts generated on a monthly basis. Please refer to our <a href="http://github.com/divinumofficium/divinum-officium">GitHub</a> site for details. They can also be downloaded from the following site: <a href="http://breviarium.srubarovi.cz">http://breviarium.srubarovi.cz</a><BR>
+<H3 ALIGN=CENTER><FONT COLOR=MAROON>GitHub Repository</FONT></H3>
+The source code for the Divinum Officium website can be found and freely downloaded from our <a href="https://github.com/DivinumOfficium/divinum-officium">GitHub repository</a>. From this repository, one can download the code to a Windows, Mac, or Linux computer and run the code as a local web host.<BR><BR>
 There are two repositories at <a href=https://github.com/DivinumOfficium>GitHub</a>; of these, we recommend cloning <a href="https://github.com/DivinumOfficium/divinum-officium-website">divinum-officium-website</a>.<BR><BR>
-Instructions for cloning are available at the links under the 'clone URL' box on the right-hand side of the <a href="https://github.com/DivinumOfficium/divinum-officium-website">Divinum-Officium-Website GitHub</a>. If you have Git installed on your system, you can locally update the files from this repository to account for the ongoing changes and improvements to the site.<BR><BR>
-The website is contained in the web/ subdirectory of this repository. The other directories at the top level should not be served from a webserver.<BR><BR>
-Perl >= 5.10.1 is required, as are the following modules. Depending on the Perl version and distribution these might already be installed; if they are not, they can be obtained from your OS/Perl distribution or from CPAN:<BR><BR>
+Instructions for cloning are available at the links under the 'clone URL' box on the right-hand side of the <a href="https://github.com/DivinumOfficium/divinum-officium-website">Divinum-Officium-Website GitHub</a>. If you have Git installed, it is strongly recommended to locally update the files (via git pull) from this repository to account for the ongoing changes and improvements to the site.<BR><BR>
+The website is contained in the web/ subdirectory of this repository. The other directories at the top level should not be served from a webserver.<BR>
+<H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Python</FONT></H3>
+It is possible to set up Divinum Officium as a local host using a Python script. Using an Android device, this can be done via Termux, having downloaded the appropriate packages (Git, Python, and then cloning the Git repository.) Once the divinum-officium-website repository has been cloned, the following terminal syntax may be used:<BR><BR>
+cd ~/divinum-officium-website/web && python -m CGIHTTPServer<BR><BR>
+One may need to adjust python to python2 or python3, given the installed version. One may also need to adjust the path to the directory, provided the path ends in /web.<BR><BR>
+Once the server is active and running in the terminal window, navigate to (typically) 0.0.0.0:8000 in your browser. Divinum Officium should then be functional as on the live site.<BR>
+<H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Apache</FONT></H3>
+If installing on a different server (e.g. Apache), Perl >= 5.10.1 is required, as are the following modules. Depending on the Perl version and distribution these might already be installed; if they are not, they can be obtained from your OS/Perl distribution or from CPAN:<BR><BR>
   CGI<BR>
   CGI::Carp<BR>
   CGI::Cookie<BR>

@@ -984,7 +984,6 @@ sub precedence {
     && $dayofweek != 0 && $hora =~ /Laudes/i) {$transfervigil = $winner;}  
 
   if ($winner =~ /Sancti/ && $rule =~ /Tempora none/i) {$commemoratio = $scriptura = $dayname[2] = ''; }
-
   
   if ($version !~ /1960/ && $hora =~ /Vespera/ && $month == 12 && $day == 28 && $dayofweek == 6) {
      $commemoratio1 = $commemoratio;
@@ -1166,8 +1165,6 @@ sub precedence {
 	  $rule = $winner{Rule};
     } else {$dayname[2] = '';}
   }
-
-
   # Choose the appropriate scheme for Lauds. Roughly speaking, penitential days
   # have Lauds II and others have Lauds I, although for the Tridentine rubrics
   # only the Sundays of Septuagesima and Lent have a sort of "Lauds II", with
@@ -1408,6 +1405,9 @@ sub setheadline {
 	    
       } elsif ($version =~ /(1570|1910|Divino|1955)/ &&  $winner =~ /C10|C10t/) {
 	    $rankname = 'Simplex';
+	    
+	  } elsif ($version =~ /1960/ &&  $winner =~ /Pasc6-6/) {
+	    $rankname = 'I. classis';
 	    
 	  } elsif ($version =~ /1960/ &&  $month == 12  && $day > 16 && $day < 25 && $dayofweek > 0) {
 	    $rankname = 'II. classis';
