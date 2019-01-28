@@ -805,7 +805,7 @@ sub getitem {
 
 sub Vidiaquam : ScriptFunc {
   my $lang = shift;
-  if ($solemn && $rank >=5 && $winner{Rank} !~ /(Feria|Die |Sabbato)/i && $votive !~ /Defunct/i) {
+  if ($solemn && $dayofweek == 0 && $votive !~ /Defunct/i) {
     our %prayers;
     my $name = ($dayname[0] =~ /Pasc/i) ? 'Vidi aquam' : 'Asperges me';
     my $w = $prayers{$lang}->{$name};
