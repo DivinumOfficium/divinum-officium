@@ -7,7 +7,7 @@ no Gloria
 Suffragium=Maria3;Papa;Ecclesia;;
 
 [Introitus]
-@Commune/C3
+@Commune/C3:Introitus
 
 [Oratio]
 Concéde, quǽsumus, omnípotens Deus: ut, sicut Apostolórum tuórum Simonis et~
@@ -16,7 +16,7 @@ tuam pro nobis ipsi prævéniant.
 $Per Dominum
 
 [Lectio]
-@Commune/C5b
+@Commune/C5b:Lectio
 
 [Graduale]
 !Ps 78:10; 78:2
@@ -25,7 +25,7 @@ V. Posuérunt mortália servórum tuórum, Dómine, escas volatílibus coeli: ca
 Sanctórum tuórum béstiis terræ.
 
 [Evangelium]
-@Commune/C3p
+@Commune/C3p:Evangelium
 
 [Offertorium]
 !Ps 149:5-6

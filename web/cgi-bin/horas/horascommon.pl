@@ -149,11 +149,17 @@ sub geteaster {
 
 #*** checkfile($lang, $filename) 
 # substitutes English if no $lang item, Latin if no English
+# if $lang contains dash, the part before the last dash is taken as a fallback recursively (till something exists)
 sub checkfile {
   my $lang = shift;
   my $file = shift;  
                              
   if (-e "$datafolder/$lang/$file") {return "$datafolder/$lang/$file";}
+  elsif ($lang =~ /-/) {
+    my $temp = $lang;
+    $temp =~ s/-[^-]+$//;
+    return checkfile($temp, $file);
+  }
   elsif ($lang =~ /english/i) {return "$datafolder/Latin/$file";}
   elsif (-e "$datafolder/English/$file") {return "$datafolder/English/$file";}
   else {return "$datafolder/Latin/$file";}
@@ -478,7 +484,7 @@ sub getrank {
 	  elsif ($srank[2] >= 5 && $crank =~ /infra octav/i) {$crank = ''; $cname = ''; %csaint = undef; @crank = '';} 
     }
 
-	if ($tvesp == 1 && $version =~ /1960/) {
+	if ($tvesp == 1 && $version =~ /(1955|1960)/) {
 	  if ((($trank[2] >= 6 && $srank[2] < 5) || ($trank[2] >= 5 && $srank[2] < 3)) 
 	    && $srank[0] !~ /Octav.*?(Epiph|Nativ|Corporis|Cordis|Ascensionis)/i )  
 	    {$srank = ''; $sname = ''; @srank =''; %saint= undef;}
@@ -978,7 +984,6 @@ sub precedence {
     && $dayofweek != 0 && $hora =~ /Laudes/i) {$transfervigil = $winner;}  
 
   if ($winner =~ /Sancti/ && $rule =~ /Tempora none/i) {$commemoratio = $scriptura = $dayname[2] = ''; }
-
   
   if ($version !~ /1960/ && $hora =~ /Vespera/ && $month == 12 && $day == 28 && $dayofweek == 6) {
      $commemoratio1 = $commemoratio;
@@ -1061,9 +1066,9 @@ sub precedence {
   
   if ($vtv && !$missa) { 
     if ($vtv =~ /C12/i) {  
-      if ($dayname[0] =~ /adv/i) {$vtv = 'C12A';}
-      elsif ($dayname[0] =~ /Nat/i || ($month == 12 && $day > 24) || 
+      if (($month == 12 && ($day == 24 && $hora =~/Vespera|Completorium/ || ($day > 24))) ||
         $month == 1 || ($month == 2 && $day < 3)) {$vtv = 'C12N';}
+      elsif ($dayname[0] =~ /adv/i) {$vtv = 'C12A';}
       elsif ($dayname[0] =~ /Pasc/i) {$vtv = 'C12P';}
       elsif ($month == 3 && (($day == 24 && $hora =~ /(Vespera|Completorium)/i) ||
         $day == 25)) {$vtv = 'C12An';}
@@ -1160,8 +1165,6 @@ sub precedence {
 	  $rule = $winner{Rule};
     } else {$dayname[2] = '';}
   }
-
-
   # Choose the appropriate scheme for Lauds. Roughly speaking, penitential days
   # have Lauds II and others have Lauds I, although for the Tridentine rubrics
   # only the Sundays of Septuagesima and Lent have a sort of "Lauds II", with
@@ -1382,29 +1385,45 @@ sub setheadline {
 
     if ($name !~ /(Die|Feria|Sabbato)/i && ($dayname[0] !~ /Pasc[07]/i || $dayofweek == 0)) {
 	    my @tradtable = ('none', 'Simplex', 'Semiduplex', 'Duplex', 'Duplex majus', 
-        'Duplex II. classis', 'Duplex I. classis', 'Duplex I. clasis');
+        'Duplex II. classis', 'Duplex I. classis', 'Duplex I. classis');
         my @newtable = ('none', 'Commemoratio', 'III. classis', 'III. classis', 'III. classis',
         'II. classis', 'I. classis', 'I. classis');
     
  	    $rankname = ($version !~ /1960/) ? $tradtable[$rank] : $newtable[$rank];
-	    if ($version =~ /1960/ && $dayname[1] =~ /feria/i) {$rankname = 'Feria';}
+	    if ($version =~ /(Divino|1955|1960)/ && $dayname[1] =~ /feria/i) {$rankname = 'Feria';}
 		if ($name =~ /Dominica/i && $version !~ /1960/) {
           my $a = ($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i) 
             ? getweek(1) : getweek(0);  
           my @a = split('=', $a);  
-          $rankname = ($a[0] =~ /Pasc[017]/i || $a[0] =~ /Pent01/i) ? 'Duplex  1st class' :
-            ($a[0] =~ /(Adv1|Quad[1-6])/i) ? 'Semiduplex 1st class' :
-            ($a[0] =~ /(Adv[2-4]|Quadp)/i) ? 'Semiduplex 2nd class' : 'Semiduplex Dominica minor';
+          $rankname = ($a[0] =~ /Pasc[017]/i || $a[0] =~ /Pent01/i) ? 'Duplex I. classis' :
+            ($a[0] =~ /(Adv1|Quad[1-6])/i) ? 'Semiduplex I. classis' :
+            ($a[0] =~ /(Adv[2-4]|Quadp)/i) ? 'Semiduplex II. classis' : 'Semiduplex Dominica minor';
         }
 
-	  } elsif ($dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
-	    $rankname = 'Dies Octavae I classis';
+	  } elsif ($version =~ /1960/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
+	    $rankname = 'Dies Octavæ I. classis';
+	    
+      } elsif ($version =~ /(1570|1910|Divino|1955)/ &&  $winner =~ /C10|C10t/) {
+	    $rankname = 'Simplex';
+	    
+	  } elsif ($version =~ /1960/ &&  $winner =~ /Pasc6-6/) {
+	    $rankname = 'I. classis';
+	    
+	  } elsif ($version =~ /1960/ &&  $month == 12  && $day > 16 && $day < 25 && $dayofweek > 0) {
+	    $rankname = 'II. classis';
+	    
+	  } elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
+	    $rankname = ($rank =~ 7) ? 'Duplex I. classis' : 'Semiduplex';
 	  
-	  } else {
+	  }  elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] == /07-04/i && $dayofweek > 0) {
+	    $rankname = ($rank =~ 7) ? 'Duplex I. classis' : 'Semiduplex';
+	  
+	  } 
+	  else {
 	     if ($version !~ /1960/) {
-		     $rankname = ($rank < 2) ? 'Ferial' : ($rank < 3) ? 'Feria major' : 'Feria privilegiata';
+		     $rankname = ($rank <= 2) ? 'Ferial' : ($rank < 3) ? 'Feria major' : 'Feria privilegiata';
          } else {
-	       my @ranktable = ('', 'IV. classis', 'III. classis', 'II. classis', 'II. classis',
+	       my @ranktable = ('', 'IV. classis', 'IV. classis', 'III. classis', 'II. classis', 'II. classis',
 		      'II. classis', 'I. classis', 'I. classis'); 
 		     $rankname = $ranktable[$rank]; 
 	     }

@@ -4,6 +4,9 @@ Officium parvum Beatae Mariae Virginis Tempore Adventi
 [Rank]
 Officium parvum Beatae Mariae Virginis Tempore Adventi;;Simplex;;1
 
+[Ant Matutinum]
+@Commune/C11::s/V\. .*/V. La grazia è cosparsa sulle tue labbra./g s/R\. .*/R. Perciò Iddio ti ha benedetta in eterno./g s/Dopo il parto.*\./L'Angelo del Signore * recò l'annunzio a Maria, e concepì per opera dello Spirito Santo./
+
 [Lectio1]
 !Luca 1:26-28
 26 Il sesto mese l'Angelo Gabriele fu mandato da Dio in Nazaret città di Galilea

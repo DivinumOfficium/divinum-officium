@@ -94,7 +94,7 @@ sub setup {
   my ($width, $rpar, @rpar, $size, @size, $range, @range, $j);
   my $tl = 0;
 
-  $input = "<TABLE BORDER=2 CELLPADDING=5 ALIGN=CENTER BACKGROUND=\"$htmlurl/sfdia.jpg\"><TR>\n";
+  $input = "<TABLE BORDER=2 CELLPADDING=5 ALIGN=CENTER BACKGROUND=\"$htmlurl/horasbg.jpg\"><TR>\n";
   
   my $k = 0; 
   for ($i = 0; $i < @script; $i++) {
@@ -460,13 +460,13 @@ sub setcross
     }
     else
     {
-        my $csubst = "<span style='font-size:1.25em;color:red'>&#x2628;</span>";
+        my $csubst = "<span style='font-size:1.25em;color:red'>&#x2628;&#xFE0E;</span>";
         $line =~ s/\+\+\+/$csubst/g;
         # Cross type 2: MALTESE CROSS (at the Gospel)
-        $csubst = "<span style='font-size:1.25em;color:red'>&#x2720;</span>";
+        $csubst = "<span style='color:red; font-size:1.25em'>✠︎</span>";
         $line =~ s/\+\+/$csubst/g;
-        # cross type 1: Cross of Jerusalem
-        $csubst = "<span style='font-size:1.25em;color:red'>&#x2629;</span>";
+        # cross type 1: Latin Cross
+        $csubst = "<span style='color:red; font-size:1.25em'>&#x271D;&#xFE0E;</span>";
         $line =~ s/ \+ / $csubst /g;
         #$line =~ s/(\pL)\+(\pL)/$1&nbsp;$csubst&nbsp;$2/g;
     }

@@ -1,11 +1,11 @@
 [Rank]
-In Octava S. Stephani.;;Simplex;;1.1;;vide Sancti/12-26
+In Octava S. Stephani;;Simplex;;1.1;;vide Sancti/12-26
 
 [Rank1960]
 Die Secunda Januarii;;Feria;;1.1;;vide Sancti/12-25
 
 [RankTrident]
-In Octava Sancti Stephani.;;Duplex;;3;;ex Sancti/12-26
+In Octava Sancti Stephani;;Duplex;;3;;ex Sancti/12-26
 
 [Rule]
 vide Sancti/12-26
@@ -56,6 +56,9 @@ De Actibus Apostolorum
 [Oratio]
 @Sancti/01-02
 
-[Commemoratio]
+[Ant Vespera]
+@Sancti/12-26:Ant Laudes:s/$/;;115/
+
+[Commemoratio 2]
 @Sancti/12-27:Octava
 @Sancti/12-28:Octava

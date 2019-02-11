@@ -160,7 +160,7 @@ sub resolve_refs {
   }
   if ($t[0] =~ $omit_regexp) {$t[0] =~ s/^\s*\#/\!\!\!/;}
   else {
-    $t[0] =~ s/^\s*(\#.*)({.*})?\s*$/'!!' . substr(translate($1, $lang), 1) . $2/e;
+    $t[0] =~ s/^\s*(\#.*)(\{.*\})?\s*$/'!!' . substr(translate($1, $lang), 1) . $2/e;
   }
 
   my @resolved_lines;  # Array of blocks expanded from lines.
@@ -792,7 +792,7 @@ sub setlink
         $name = $1;
         $after = $2;
     }
-    if ( $Tk && $name =~ /(.*?)({\^.*)/ )
+    if ( $Tk && $name =~ /(.*?)(\{\^.*)/ )
     {
         $name = $1;
         $after = $2;
@@ -976,6 +976,7 @@ sub canticum : ScriptFunc {
   my $w = '';
   #$psalmfolder = ($accented =~ /plain/i) ? 'psalms' : 'psalms1';   
   $psalmfolder = 'psalms1';   
+  $psalmfolder = 'PiusXII' if ($lang eq 'Latin' && $psalmvar);
 
   my $fname = checkfile($lang, "$psalmfolder/Psalm$psnum.txt");    
   if (@w = do_read($fname)) {
@@ -1008,9 +1009,11 @@ sub martyrologium : ScriptFunc {
   $a =~ s/\s//g;                      
   my %a = %{setupstring($datafolder, $lang, "Martyrologium/Mobile.txt")}; 
   if ($version =~ /1570/ && $lang =~ /Latin/i) 
-    {%a = %{setupstring($datafolder, $lang, "Martyrologium1/Mobile.txt")};} 
-  if ($version =~ /(1955|1960)/ && $lang =~ /Latin/i) 
-    {%a = %{setupstring($datafolder, $lang, "Martyrologium2/Mobile.txt")};} 
+    {%a = %{setupstring($datafolder, $lang, "Martyrologium1570/Mobile.txt")};} 
+  if ($version =~ /1960/ && $lang =~ /Latin/i) 
+    {%a = %{setupstring($datafolder, $lang, "Martyrologium1960/Mobile.txt")};} 
+  if ($version =~ /1955/ && $lang =~ /Latin/i) 
+    {%a = %{setupstring($datafolder, $lang, "Martyrologium1955R/Mobile.txt")};} 
 
   my $mobile = '';
   my $hd = 0;
@@ -1026,10 +1029,12 @@ sub martyrologium : ScriptFunc {
   my ($m, $d) = split('-', $fname);
   my $y = ($m == 1 && $d == 1) ? $year + 1 : $year;
 
-  if ($version =~ /1570/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1/$fname.txt"))
-    {$fname = "$datafolder/Latin/Martyrologium1/$fname.txt";}
-  elsif ($version =~ /(1955|1960)/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium2/$fname.txt"))
-    {$fname = "$datafolder/Latin/Martyrologium2/$fname.txt";}
+  if ($version =~ /1570/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1570/$fname.txt"))
+    {$fname = "$datafolder/Latin/Martyrologium1570/$fname.txt";}
+  elsif ($version =~ /1960/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1960/$fname.txt"))
+    {$fname = "$datafolder/Latin/Martyrologium1960/$fname.txt";}
+  elsif ($version =~ /1955/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1955R/$fname.txt"))
+    {$fname = "$datafolder/Latin/Martyrologium1955R/$fname.txt";}
   else {$fname = checkfile($lang, "Martyrologium/$fname.txt");}  
     if (my @a = do_read($fname))
     {
@@ -1115,10 +1120,10 @@ sub gregor {
  my $sfx1 = ($day > 3 && $day < 21) ? 'th' : (($day %10) == 1) ? 'st' : (($day % 10) == 2) ? 'nd' : (($day % 10)== 3) ? 'rd' : 'th';
  my $sfx2 = ($gday > 3 && $gday < 21) ? 'th' : (($gday %10) == 1) ? 'st' : (($gday % 10) == 2) ? 'nd' : (($gday % 10)== 3) ? 'rd' : 'th';
  $day = $day + 0; 
- if ($lang =~ /Latin/i) {return ("Luna $ordinals[$gday-1] Anno $year Domini\n", ' '); }
+ if ($lang =~ /Latin/i) {return ("Luna $ordinals[$gday-1] Anno Domini $year\n", ' '); }
  elsif ($lang =~ /Polski/i) {return ("Roku Pańskiego $year"); }
 
- else {return ("$months[$month - 1] $day$sfx1 anno Domini $year The $gday$sfx2 Day of Moon", $months[$month-1]);}
+ else {return ("$months[$month - 1] $day$sfx1 $year, the $gday$sfx2 day of the Moon,", $months[$month-1]);}
 
  #return sprintf("%02i", $gday);
 }
@@ -1145,8 +1150,8 @@ sub luna {
   my $sfx2 = (($dist %10) == 1) ? 'st' : (($dist % 10) == 2) ? 'nd' : (($dist % 10)== 3) ? 'rd' : 'th';
 
   $day = $day + 0; 
-  if ($lang =~ /Latin/i) {return ("Luna $ordinals[$dist-1] Anno $year\n", ' '); }
-  else {return ("$months[$month - 1] $day$sfx1 anno Domini $year. The $dist$sfx2 day of the Moon.", $months[$month-1]);}
+  if ($lang =~ /Latin/i) {return ("Luna $ordinals[$dist-1]. Anno $year\n", ' '); }
+  else {return ("$months[$month - 1] $day$sfx1 $year. The $dist$sfx2 day of the Moon.", $months[$month-1]);}
 }
 
 #*** laudes()
@@ -1179,8 +1184,6 @@ sub getordinarium {
   my $fname = checkfile($lang, "Ordinarium/$command.txt");
   if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) 
     {$fname =~ s/\.txt/e\.txt/;}
-  if ($command =~ /(Prima|Completorium)/i && $dayname[0] =~ /Pasc/) {$fname =~ s /\.txt/p\.txt/;}
-  if ($command =~ /(Tertia)/i && $dayname[0] =~ /Pasc7/) {$fname =~ s /\.txt/p\.txt/;}
   if ($version =~ /(1955|1960)/) {$fname =~ s/\.txt/1960\.txt/;}
   if ($version =~ /trident/i && $hora =~ /(laudes|vespera)/i && $version !~ /monastic/i) 
     {$fname =~ s/\.txt/Trid\.txt/;}
@@ -1341,7 +1344,7 @@ sub postprocess_short_resp(\@$)
 {
   my ($capit, $lang) = @_;
 
-  s/&Gloria/&Gloria1/ for (@$capit);
+  s/&Gloria1?/&Gloria1/ for (@$capit);
 
   if ($dayname[0] =~ /Pasc/i)
   {
