@@ -476,7 +476,7 @@ sub setcross
         my $csubst = "<span style='color:red; font-size:1.25em'>&#x03EF;</span>";
         $line =~ s/\+\+\+/$csubst/g;
         # Cross type 2: DAGGER
-        my $csubst = "<span style='color:red; font-size:1.25em'>&#x2020;</span>";
+        my $csubst = "<span style='color:red; font-size:1.25em'>&#x2020;&#xFE0E;</span>";
         $line =~ s/\+\+/$csubst/g;
         # Cross type 1: PLUS SIGN
         my $csubst = "<span style='color:red; font-size:1.25em'>+</span>";
@@ -491,7 +491,7 @@ sub setcross
         my $csubst = "<span style='color:red; font-size:1.25em'>✠︎</span>";
         $line =~ s/\+\+/$csubst/g;
         # cross type 1: Latin Cross
-        my $csubst = "<span style='color:red; font-size:1.25em'>&#x271D;&#xFE0E;</span>";
+        my $csubst = "<span style='color:red; font-size:1.25em'>&#x2020;&#xFE0E;</span>";
         $line =~ s/ \+ / $csubst /g;
     }
 
