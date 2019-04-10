@@ -475,8 +475,8 @@ sub setcross
         # cross type 3: COPTIC SMALL LETTER DEI
         my $csubst = "<span style='color:red; font-size:1.25em'>&#x03EF;</span>";
         $line =~ s/\+\+\+/$csubst/g;
-        # Cross type 2: DAGGER
-        my $csubst = "<span style='color:red; font-size:1.25em'>&#x2020;</span>";
+        # Cross type 2: Latin Cross
+        my $csubst = "<span style='color:red; font-size:1.25em'>&#x271D;&#xFE0E;</span>";
         $line =~ s/\+\+/$csubst/g;
         # Cross type 1: PLUS SIGN
         my $csubst = "<span style='color:red; font-size:1.25em'>+</span>";
@@ -484,14 +484,14 @@ sub setcross
     }
     else
     {
-        # Cross type 3: Greek Cross
-        my $csubst = "<span style='color:red; font-size:1.25em'>+</span>";
+        # Cross type 3: Outlined Greek Cross
+        my $csubst = "<span style='color:red; font-size:1.25em'>&#x2719;&#xFE0E;</span>";
         $line =~ s/\+\+\+/$csubst/g;
-        # Cross type 2: Maltese Cross
-        my $csubst = "<span style='color:red; font-size:1.25em'>✠︎</span>";
+        # Cross type 2: Greek Cross
+        my $csubst = "<span style='color:red; font-size:1.25em'>+︎</span>";
         $line =~ s/\+\+/$csubst/g;
-        # cross type 1: Latin Cross
-        my $csubst = "<span style='color:red; font-size:1.25em'>&#x271D;&#xFE0E;</span>";
+        # cross type 1: Maltese Cross
+        my $csubst = "<span style='color:red; font-size:1.25em'>✠</span>";
         $line =~ s/ \+ / $csubst /g;
     }
 

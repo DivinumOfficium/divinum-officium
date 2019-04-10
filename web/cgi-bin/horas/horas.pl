@@ -1120,10 +1120,10 @@ sub gregor {
  my $sfx1 = ($day > 3 && $day < 21) ? 'th' : (($day %10) == 1) ? 'st' : (($day % 10) == 2) ? 'nd' : (($day % 10)== 3) ? 'rd' : 'th';
  my $sfx2 = ($gday > 3 && $gday < 21) ? 'th' : (($gday %10) == 1) ? 'st' : (($gday % 10) == 2) ? 'nd' : (($gday % 10)== 3) ? 'rd' : 'th';
  $day = $day + 0; 
- if ($lang =~ /Latin/i) {return ("Luna $ordinals[$gday-1] Anno $year Domini\n", ' '); }
+ if ($lang =~ /Latin/i) {return ("Luna $ordinals[$gday-1] Anno Domini $year\n", ' '); }
  elsif ($lang =~ /Polski/i) {return ("Roku Pańskiego $year"); }
 
- else {return ("$months[$month - 1] $day$sfx1 anno Domini $year The $gday$sfx2 Day of Moon", $months[$month-1]);}
+ else {return ("$months[$month - 1] $day$sfx1 $year, the $gday$sfx2 day of the Moon,", $months[$month-1]);}
 
  #return sprintf("%02i", $gday);
 }
@@ -1150,8 +1150,8 @@ sub luna {
   my $sfx2 = (($dist %10) == 1) ? 'st' : (($dist % 10) == 2) ? 'nd' : (($dist % 10)== 3) ? 'rd' : 'th';
 
   $day = $day + 0; 
-  if ($lang =~ /Latin/i) {return ("Luna $ordinals[$dist-1] Anno $year\n", ' '); }
-  else {return ("$months[$month - 1] $day$sfx1 anno Domini $year. The $dist$sfx2 day of the Moon.", $months[$month-1]);}
+  if ($lang =~ /Latin/i) {return ("Luna $ordinals[$dist-1]. Anno $year\n", ' '); }
+  else {return ("$months[$month - 1] $day$sfx1 $year. The $dist$sfx2 day of the Moon.", $months[$month-1]);}
 }
 
 #*** laudes()
