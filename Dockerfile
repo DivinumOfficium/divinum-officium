@@ -7,7 +7,7 @@
 # or installing dependencies
 
 FROM minidocks/perl AS dev
-LABEL maintainer="Martin Hasoň <martin.hason@gmail.com>"
+LABEL maintainer="Ben Yanke <ben@benyanke.com>"
 
 RUN apk add apache2 perl-cgi && clean
 
