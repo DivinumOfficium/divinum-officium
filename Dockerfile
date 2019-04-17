@@ -7,7 +7,7 @@
 # or installing dependencies
 
 FROM minidocks/perl AS dev
-LABEL maintainer="Ben Yanke <ben@benyanke.com>"
+LABEL maintainer="Martin Hasoň <martin.hason@gmail.com>"
 
 RUN apk add apache2 perl-cgi && clean
 
@@ -20,6 +20,8 @@ COPY ./docker /
 
 EXPOSE 8080
 WORKDIR /var/www
+
+HEALTHCHECK CMD wget -S -q --spider -O/dev/null http://localhost:8080 2>&1 | grep -q 'HTTP/1.1 200'
 
 CMD ["httpd", "-DFOREGROUND"]
 
