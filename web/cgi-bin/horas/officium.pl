@@ -19,7 +19,6 @@ use CGI;
 use CGI::Cookie;;
 use CGI::Carp qw(fatalsToBrowser);
 use File::Basename;
-use LWP::Simple;
 use Time::Local;
 #use DateTime;
 use locale;
