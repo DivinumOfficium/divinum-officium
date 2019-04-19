@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  web:
+    build:
+      context: .
+      target: dev
+    volumes:
+      - ./web:/var/www/divinum-officium
+    ports:
+      - 8080:8080
