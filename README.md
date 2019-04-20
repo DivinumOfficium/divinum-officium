@@ -37,7 +37,7 @@ examples.
 
 [![Docker Repository on Quay](https://quay.io/repository/divinumofficium/divinumofficium/status "Docker Repository on Quay")](https://quay.io/repository/divinumofficium/divinumofficium)
 
-#### Production
+### Production
 
 To pull a pre-built container, see docker image `quay.io/divinumofficium/divinumofficium`. 
 This is still early alpha, but this notice will be removed when it's
@@ -58,7 +58,7 @@ When you are done, stop the container by running:
 docker-compose -f docker-compose-prod.yml down
 ```
 
-#### Development
+### Development
 
 [Docker](https://docker.com/) contains complete development environment
 necessary for running Divinum Officium website. To run this project you need to
@@ -72,6 +72,3 @@ docker-compose up
 This starts the web server and you can visit the website on
 `http://localhost`. It will mount the current web directory into the container 
 so that you can change files and do live-changes without restarting the container.
-
-
-
