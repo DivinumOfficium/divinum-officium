@@ -35,7 +35,9 @@ examples.
 
 ## Docker
 
-[![Docker Repository on Quay](https://quay.io/repository/divinumofficium/divinumofficium/status "Docker Repository on Quay")](https://quay.io/repository/divinumofficium/divinumofficium)
+[![](https://images.microbadger.com/badges/version/divinumofficiumweb/divinumofficium.svg)](https://cloud.docker.com/u/divinumofficiumweb/repository/docker/divinumofficiumweb/divinumofficium "DockerHub Container")
+
+[![](https://images.microbadger.com/badges/image/divinumofficiumweb/divinumofficium.svg)](https://cloud.docker.com/u/divinumofficiumweb/repository/docker/divinumofficiumweb/divinumofficium "DockerHub Container")
 
 ### Production
 
