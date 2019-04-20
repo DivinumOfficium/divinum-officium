@@ -32,17 +32,3 @@ encoding is also supported, but is deprecated). The files are arranged into
 sections, with each section beginning with its name enclosed in square
 brackets. Please browse the files in the aforementioned directories for
 examples.
-
-### Using docker for local development
-
-[Docker](https://docker.com/) contains complete development environment
-necessary for running Divinum Officium website. To run this project you need to
-have docker and [Docker Compose](https://docs.docker.com/compose/) installed on
-your system. Run the following command in root directory of project:
-
-```bash
-docker-compose up
-```
-
-This starts the web server and you can visit the website on
-`http://localhost:8080`.
