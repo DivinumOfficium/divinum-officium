@@ -39,7 +39,8 @@ examples.
 
 ### Production
 
-To pull a pre-built container, see docker image `quay.io/divinumofficium/divinumofficium`. 
+To pull a pre-built container, pull see docker image `divinumofficiumweb/divinumofficiumweb:latest`.
+
 This is still early alpha, but this notice will be removed when it's
 stable and ready to use.
 
