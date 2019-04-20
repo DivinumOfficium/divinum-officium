@@ -32,3 +32,43 @@ encoding is also supported, but is deprecated). The files are arranged into
 sections, with each section beginning with its name enclosed in square
 brackets. Please browse the files in the aforementioned directories for
 examples.
+
+## Docker
+
+[![Docker Repository on Quay](https://quay.io/repository/divinumofficium/divinumofficium/status "Docker Repository on Quay")](https://quay.io/repository/divinumofficium/divinumofficium)
+
+### Production
+
+To pull a pre-built container, see docker image `quay.io/divinumofficium/divinumofficium`. 
+This is still early alpha, but this notice will be removed when it's
+stable and ready to use.
+
+Or, use Docker Compose to load a copy of the container in one command:
+
+```bash
+docker-compose -f docker-compose-prod.yml up -d
+```
+
+This will download Divinum Officium, and run a local copy on your system, bound to 
+`localhost`, port 80.
+
+When you are done, stop the container by running:
+
+```bash
+docker-compose -f docker-compose-prod.yml down
+```
+
+### Development
+
+[Docker](https://docker.com/) contains complete development environment
+necessary for running Divinum Officium website. To run this project you need to
+have docker and [Docker Compose](https://docs.docker.com/compose/) installed on
+your system. Run the following command in root directory of project:
+
+```bash
+docker-compose up
+```
+
+This starts the web server and you can visit the website on
+`http://localhost`. It will mount the current web directory into the container 
+so that you can change files and do live-changes without restarting the container.

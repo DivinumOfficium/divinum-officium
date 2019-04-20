@@ -1,0 +1,10 @@
+version: '3.5'
+
+# This docker-compose file is for running in a production context
+# it does not mount the volume
+
+services:
+  web:
+    image: quay.io/divinumofficium/divinumofficium:test
+    ports:
+      - 80:8080
