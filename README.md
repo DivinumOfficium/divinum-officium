@@ -35,9 +35,9 @@ examples.
 
 ## Docker
 
-[![](https://images.microbadger.com/badges/version/divinumofficiumweb/divinumofficium.svg)](https://cloud.docker.com/u/divinumofficiumweb/repository/docker/divinumofficiumweb/divinumofficium "DockerHub Container")
+[![](https://images.microbadger.com/badges/version/divinumofficiumweb/divinumofficium.svg)](https://hub.docker.com/r/divinumofficiumweb/divinumofficium "DockerHub Container")
 
-[![](https://images.microbadger.com/badges/image/divinumofficiumweb/divinumofficium.svg)](https://cloud.docker.com/u/divinumofficiumweb/repository/docker/divinumofficiumweb/divinumofficium "DockerHub Container")
+[![](https://images.microbadger.com/badges/image/divinumofficiumweb/divinumofficium.svg)](https://hub.docker.com/r/divinumofficiumweb/divinumofficium "DockerHub Container")
 
 ### Production
 
