@@ -1,11 +1,17 @@
-version: '3.4'
+version: '3.5'
+
+# This docker-compose file is for running local development
+
+# to update the base image, run 'docker-compose build'
+# and then run 'docker-compose up' to create the development environmet
+# with the current code bind-mounted into the container for fast development
 
 services:
   web:
     build:
-      context: .
-      target: dev
+      context: ./
+      dockerfile: Dockerfile
     volumes:
-      - ./web:/var/www/divinum-officium
+      - ./web:/var/www/web
     ports:
-      - 8080:8080
+      - 80:8080
