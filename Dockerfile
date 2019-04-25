@@ -1,31 +1,41 @@
-###################
-# Divinum Officium
-###################
+FROM        perl:5.28-slim
+MAINTAINER  Ben Yanke <ben@benyanke.com>
 
-# Creates a fully running application server for Divinum
-# Officium, also enabling easy development without configuration
-# or installing dependencies
+# Set envs
+ENV APACHE_RUN_USER www-data \
+    APACHE_RUN_GROUP www-data \
+    APACHE_LOCK_DIR /var/lock/apache2 \
+    APACHE_LOG_DIR /var/log/apache2 \
+    APACHE_PID_FILE /var/run/apache2/apache2.pid \
+    APACHE_SERVER_NAME localhost
 
-FROM minidocks/perl AS dev
-LABEL maintainer="Ben Yanke <ben@benyanke.com>"
+# Install packages
+RUN apt-get update && apt-get install -y \
+    wget \
+    apache2 \
+    libcgi-session-perl \
+    && rm -rf /var/lib/apt/lists/*
 
-RUN apk add apache2 perl-cgi && clean
+# Get dumb-init to use a proper init system
+RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64 && \
+    chmod +x /usr/local/bin/dumb-init
 
-RUN sed -i 's/logs\/access.log/\/dev\/stdout.pipe/g' /etc/apache2/httpd.conf \
-    && sed -i 's/logs\/error.log/\/dev\/stderr.pipe/g' /etc/apache2/httpd.conf \
-    && sed -i 's/localhost\/cgi-bin/divinum-officium\/cgi-bin/g' /etc/apache2/httpd.conf
+# Load config files
+COPY docker/apache/ports.conf /etc/apache2/ports.conf
+COPY docker/apache/apache2.conf /etc/apache2/apache2.conf
 
-# Copy config files into container
-COPY ./docker /
+# Set permissionsso apache can write to logs without root
+RUN mkdir -p /var/run/apache2 /var/lock/apache2 /var/log/apache2 ; chown -R www-data:www-data /var/lock/apache2 /var/log/apache2 /var/run/apache2
 
-EXPOSE 8080
+# Drop permissions - everything below here done without root
+USER www-data
+
+# Copy in code
 WORKDIR /var/www
+COPY --chown=www-data:www-data web /var/www/web
 
-HEALTHCHECK CMD wget -S -q --spider -O/dev/null http://localhost:8080 2>&1 | grep -q 'HTTP/1.1 200'
+# Expose default port
+EXPOSE 8080
 
-CMD ["httpd", "-DFOREGROUND"]
-
-FROM dev AS prod
-
-# Copy web with correct permission
-COPY --chown=apache:apache ./web /var/www/divinum-officium
+ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
+CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
