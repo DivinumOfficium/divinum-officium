@@ -11,6 +11,7 @@ ENV APACHE_RUN_USER www-data \
 
 # Install packages
 RUN apt-get update && apt-get install -y \
+    curl \
     wget \
     apache2 \
     libcgi-session-perl \
