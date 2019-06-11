@@ -1,0 +1,47 @@
+[Rank]
+Dominica II Post Pentecosten infra Octavam Corporis Christi;;Semiduplex I classis;;5.9;;ex Tempora/Pent01-4
+
+[Rank1960]
+Dominica II Post Pentecosten;;Semiduplex;;5
+
+[Rule]
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+Doxology=Corp
+
+[Ant 1]
+@Tempora/Pent02-0:Ant 1
+
+[Oratio]
+@Tempora/Pent02-0:Oratio
+
+[Lectio1]
+@Tempora/Pent02-0:Lectio1
+
+[Responsory1]
+@Tempora/Pent01-1:Responsory1
+
+[Lectio2]
+@Tempora/Pent02-0:Lectio2
+
+[Responsory2]
+@Tempora/Pent01-1:Responsory2
+
+[Lectio3]
+@Tempora/Pent02-0:Lectio3
+
+[Responsory3]
+@Tempora/Pent01-1:Responsory3
+
+[Lectio7]
+@Tempora/Pent02-0:Lectio7
+
+[Responsory8]
+@Tempora/Pent02-0:Responsory8
+
+[Ant 2]
+@Tempora/Pent02-0:Ant 2
+
+[Ant 3]
+@Tempora/Pent02-0:Ant 3

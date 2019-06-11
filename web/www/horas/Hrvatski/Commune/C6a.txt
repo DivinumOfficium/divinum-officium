@@ -1,0 +1,129 @@
+[Name]
+Commune Virginum plurimorum
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+
+[Ant Vespera]
+@Commune/C6:Ant Vespera
+
+[Capitulum Vespera]
+@Commune/C6:Capitulum Vespera
+
+[Hymnus Vespera]
+@Commune/C6:Hymnus Vespera
+
+[Versum 1]
+V. Adducéntur Regi vírgines post eam:
+R. Próximæ ejus afferéntur tibi.
+
+[Ant 1]
+Prudéntes vírgines, * aptate vestras lámpades: ecce sponsus venit, exíte obviam ei.
+
+[Invit]
+@Commune/C6:Invit
+
+[Hymnus Matutinum]
+@Commune/C6:Hymnus Matutinum
+
+[Ant Matutinum]
+@Commune/C6:Ant Matutinum
+
+[Lectio1]
+@Commune/C6:Lectio1
+
+[Responsory10]
+@Commune/C6:Responsory10
+
+[Responsory1]
+@Commune/C6:Responsory1
+
+[Lectio2]
+@Commune/C6:Lectio2
+
+[Responsory2]
+@Commune/C6:Responsory2
+
+[Lectio3]
+@Commune/C6:Lectio3
+
+[Responsory3]
+@Commune/C6:Responsory3
+
+[Lectio4]
+@Commune/C6:Lectio4
+
+[Responsory4]
+@Commune/C6:Responsory4
+
+[Lectio5]
+@Commune/C6:Lectio5
+
+[Responsory5]
+@Commune/C6:Responsory5
+
+[Lectio6]
+@Commune/C6:Lectio6
+
+[Responsory6]
+@Commune/C6:Responsory6
+
+[Lectio7]
+@Commune/C6:Lectio7
+
+[Responsory7]
+@Commune/C6:Responsory7
+
+[Lectio8]
+@Commune/C6:Lectio8
+
+[Responsory8]
+@Commune/C6:Responsory8
+
+[Lectio9]
+@Commune/C6:Lectio9
+
+[Ant Laudes]
+@Commune/C6:Ant Laudes
+
+[Capitulum Laudes]
+@Commune/C6:Capitulum Vespera
+
+[Hymnus Laudes]
+@Commune/C6:Hymnus Vespera
+
+[Ant 2]
+@:Ant 1
+
+[Versum 2]
+@:Versum 1
+
+[Oratio]
+Da nobis, quǽsumus, Dómine Deus noster, sanctárum Vírginum et Mártyrum tuárum N. et N. palmas incessábili devotióne venerári: ut quas digna mente non póssumus celebráre, humílibus saltem frequentémus obséquiis.
+$Per Dominum
+
+[Lectio Prima]
+!Sir 51:13-14
+v. Dómine, Deus meus, exaltásti super terram habitatiónem meam, et pro morte defluénte deprecáta sum. Invocávi Dóminum, Patrem Dómini mei, ut non derelínquat me in die tribulatiónis meæ, et in témpore superbórum sine adjutório.
+
+[Capitulum Tertia]
+@Commune/C6:Capitulum Vespera
+
+[Responsory Tertia]
+@Commune/C6:Responsory Tertia
+
+[Capitulum Sexta]
+@Commune/C6:Capitulum Sexta
+
+[Responsory Sexta]
+@Commune/C6:Responsory Sexta
+
+[Capitulum Nona1]
+@Commune/C6:Capitulum Nona1
+
+[Capitulum Nona]
+@Commune/C6:Capitulum Nona
+
+[Responsory Nona]
+@Commune/C6:Responsory Nona
