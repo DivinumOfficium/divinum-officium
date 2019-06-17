@@ -1,0 +1,133 @@
+[Name]
+Commune non Virginum non Martyrum Tempore Paschali
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+
+[Ant Vespera]
+@Commune/C7p
+
+[Capitulum Vespera]
+@Commune/C7a
+
+[Hymnus Vespera]
+@Commune/C7:Hymnus Vespera
+
+[Versum 1]
+@Commune/C6p
+
+[Ant 1]
+@Commune/C7p
+
+[Invit]
+@Commune/C7p
+
+[Hymnus Matutinum]
+@Commune/C7:Hymnus Matutinum
+
+[Ant Matutinum]
+@Commune/C7p
+
+[Lectio1]
+@Commune/C7p
+
+[Responsory1]
+@Commune/C6p
+
+[Lectio2]
+@Commune/C7p
+
+[Responsory2]
+@Commune/C6p
+
+[Lectio3]
+@Commune/C7p
+
+[Responsory3]
+@Commune/C6p
+
+[Lectio4]
+@Commune/C7p
+
+[Responsory4]
+@Commune/C6p
+
+[Lectio5]
+@Commune/C7p
+
+[Responsory5]
+@Commune/C6p
+
+[Lectio6]
+@Commune/C7p
+
+[Responsory6]
+@Commune/C7p
+
+[Lectio7]
+@Commune/C7p
+
+[Responsory7]
+@Commune/C7p
+
+[Lectio8]
+@Commune/C7p
+
+[Responsory8]
+@Commune/C7p
+
+[Lectio9]
+@Commune/C7p
+
+[Ant Laudes]
+@Commune/C7p
+
+[Capitulum Laudes]
+@:Capitulum Vespera
+
+[Hymnus Laudes]
+@Commune/C7:Hymnus Vespera
+
+[Versum 2]
+@Commune/C6p
+
+[Ant 2]
+@Commune/C7p
+
+[Oratio]
+@Commune/C7p
+
+[Oratio1]
+@Commune/C7p
+
+[Oratio2]
+@Commune/C7p
+
+[Lectio Prima]
+@Commune/C7a
+
+[Capitulum Tertia]
+@:Capitulum Vespera
+
+[Responsory Tertia]
+@Commune/C6p
+
+[Capitulum Sexta]
+@Commune/C7a
+
+[Responsory Sexta]
+@Commune/C6p
+
+[Capitulum Nona]
+@Commune/C7a
+
+[Responsory Nona]
+@Commune/C6p
+
+[Versum 3]
+@:Versum 2
+
+[Ant 3]
+@Commune/C7p
+
