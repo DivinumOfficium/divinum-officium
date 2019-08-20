@@ -73,5 +73,5 @@ docker-compose up
 ```
 
 This starts the web server and you can visit the website on
-`http://localhost`. It will mount the current web directory into the container 
+`http://localhost:8080`. It will mount the current web directory into the container 
 so that you can change files and do live-changes without restarting the container.
