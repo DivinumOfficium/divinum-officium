@@ -1335,7 +1335,7 @@ sub commemoratio {
 	$w =~ s/ N\. / $redn /g;
     $w =~ s/\n!/\n!!/g;
 	$w =~ s/!!Oratio/!Oratio/gi;
-  $w =~ s/\$Oremus\n(v. )?/\$Oremus\nv. /g;
+  $w =~ s/\$Oremus\s*\n(v. )?/\$Oremus\nv. /g;
 	my @iw = split('!!', $w); 
 	foreach my $iw (@iw) { 
 	  if (!$iw || $iw =~ /^\s*$/) {next;}
