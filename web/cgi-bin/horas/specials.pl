@@ -1335,6 +1335,7 @@ sub commemoratio {
 	$w =~ s/ N\. / $redn /g;
     $w =~ s/\n!/\n!!/g;
 	$w =~ s/!!Oratio/!Oratio/gi;
+  $w =~ s/\$Oremus\s*\n(v. )?/\$Oremus\nv. /g;
 	my @iw = split('!!', $w); 
 	foreach my $iw (@iw) { 
 	  if (!$iw || $iw =~ /^\s*$/) {next;}
@@ -1438,7 +1439,8 @@ sub getcommemoratio {
   our %prayers;
   my $w = "!" . &translate("Commemoratio",$lang);
   $a =~ s/\s*\*\s*/ /;
-  $w .= " $rank[0]\nAnt. $a\n_\n$v\n_\n$prayers{$lang}->{Oremus}\nv. $o\n";
+  $o =~ s/^(?:v. )?/v. /;
+  $w .= " $rank[0]\nAnt. $a\n_\n$v\n_\n$prayers{$lang}->{Oremus}\n$o\n";
   return $w;
 }
 
@@ -1794,7 +1796,7 @@ sub doxology {
   }
 
   if ($dname) {
-	if ($dname =~ /Asc/i && $version =~ /1570/) {$dname .= 'T';} 
+	if ($dname =~ /Asc/ && $version =~ /1570/) {$dname .= 'T';}
     my %w = %{setupstring($datafolder, $lang, 'Psalterium/Doxologies.txt')};  
     $dox = $w{$dname};
     setbuild2("Doxology: $dname");

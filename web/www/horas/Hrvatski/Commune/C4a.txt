@@ -1,0 +1,188 @@
+[Name]
+Commune Doctore
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+Psalm5 Vespera=116
+Psalm5 Vespera3=131
+
+[Ant Vespera]
+@Commune/C4
+
+[Capitulum Vespera]
+@Commune/C4
+
+[Hymnus1 Vespera]
+@Commune/C4:Hymnus1 Vespera
+
+[Hymnus Vespera]
+@Commune/C4:Hymnus Vespera
+
+[Versum 1]
+@Commune/C4
+
+[Ant 1]
+O Doctor óptime, * Ecclésiæ sanctæ lumen, beáte N., divínæ legis amátor, deprecáre pro nobis Fílium Dei.
+
+[Invit]
+@Commune/C4
+
+[Hymnus Matutinum]
+@Commune/C4:Hymnus Vespera
+
+[Hymnus1 Matutinum]
+@Commune/C4:Hymnus1 Vespera
+
+[Ant Matutinum]
+@Commune/C4
+
+[Lectio1]
+De libro Ecclesiástici
+!Sir 39:1-5
+1 Sapiéntiam ómnium antiquorum exquiret sapiens, et in prophétis vacabit. 
+2 Narratiónem virórum nominatórum conservábit, et in versutias parabolárum simul introibit. 
+3 Occulta proverbiórum exquiret, et in abscónditis parabolárum conversábitur. 
+4 In médio magnatórum ministrabit, et in conspéctu præsidis apparébit. 
+5 In terram alienigenárum géntium pertransiet; bona enim et mala in homínibus tentabit.
+
+[Responsory1]
+@Commune/C4
+
+[Lectio2]
+!Sir 39:6-10
+6 Cor suum tradet ad vigilándum dilúculo ad Dóminum, qui fecit illum, et in conspéctu Altíssimi deprecábitur. 
+7 Aperiet os suum in oratióne, et pro delíctis suis deprecábitur. 
+8 Si enim Dóminus magnus volúerit, spíritu intelligéntiæ replébit illum:
+9 et ipse tamquam imbres mittet elóquia sapiéntiæ suæ, et in oratióne confitébitur Dómino: 
+10 et ipse diriget consílium ejus, et disciplínam, et in abscónditis suis consiliábitur.
+
+[Responsory2]
+@Commune/C4
+
+[Lectio3]
+!Sir 39:11-14
+11 Ipse palam fáciet disciplínam doctrinæ suæ, et in lege testaménti Dómini gloriábitur.
+12 Collaudábunt multi sapiéntiam ejus, et usque in sæculum non delébitur. 
+13 Non recedet memória ejus, et nomen ejus requirétur a generatióne in generatiónem.  
+14 Sapiéntiam ejus enarrábunt gentes, et laudem ejus enuntiábit Ecclésia.
+
+[Responsory3]
+@Commune/C4
+
+[Lectio4]
+@Commune/C4
+
+[Responsory4]
+@Commune/C4
+
+[Lectio5]
+@Commune/C4
+
+[Responsory5]
+@Commune/C4
+
+[Lectio6]
+@Commune/C4
+
+[Responsory6]
+@Commune/C4
+
+[Lectio7]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 5:13-19
+In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Et réliqua.
+_
+Homilía sancti Hilárii Epíscopi
+!Comm. in Matthæum, can. 4
+Vos estis sal terrae: Quod si sal infatuatum fuerit, ad nihilum valet id quod salietur. Sal, ut arbitror, terrae nullum est. Quomodo ergo Apostolos sal terrae nuncupavit? Sed proprietas est quaerenda dictorum, quam et Apostolorum officium, et ipsius salis natura monstrabit. Sal est in se uno continens aquae et ignis elementum, et hoc ex duobus est unum.
+
+[Responsory7]
+@Commune/C4
+
+[Lectio8]
+Hic igitur in omnem usum humani generis effectus, incorruptionem corporibus, quibus fuerit aspersus, impertit, et ad omnem sensum conditi saporis aptissimus est. Apostoli autem sunt rerum caelestium praedicatores, et aeternitatis velut satores, immortalitatem omnibus corporibus, quibus eorum sermo aspersus fuerit, conferentes. Merito igitur sal terrae nuncupati sunt, per doctrinae virtutem saliendi modo aeternitati corpora reservantes.
+
+[Responsory8]
+R. In médio Ecclésiæ apéruit os ejus, 
+* Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
+V. Jucunditátem et exsultatiónem thesaurizávit super eum.
+R. Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
+&Gloria
+R. Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
+
+[Lectio9]
+Sed natura salis semper eadem est, nec immutari umquam potest. Verum quia conversioni homo subjacet, et solus beatus, qui usque ad finem in omnibus Dei operibus permanserit: ideo eos sal terrae nuncupatos monet in traditae sibi potestatis virtute persistere, ne infatuati nihil saliant, et ipsi, sensu accepti saporis amisso, vivificare corrupta non possint, et projecti de Ecclesiae promptuariis, cum his quos salierint, pedibus incedentium proterantur.
+&teDeum
+
+[Ant Laudes]
+@:Ant Vespera
+
+[Capitulum Laudes]
+@:Capitulum Vespera
+
+[Hymnus Laudes]
+@Commune/C4:Hymnus Laudes
+
+[Versum 2]
+@Commune/C4
+
+[Ant 2]
+@Commune/C4
+
+[Oratio]
+Concede nos, quǽsumus, omnipotens Deus, beati N. confessoris tui atque Pontificis monita et exempla sectari: ut per terrestrium rerum conceptum aeterna gaudia consequamur.
+$Per Dominum
+
+[Oratio1]
+@Commune/C4
+
+[Oratio2]
+@Commune/C4
+
+[Oratio3]
+Da, quǽsumus, omnipotens Deus: ut beati N. Confessoris tui atque Pontificis veneranda solemnitas, et devotionem nobis augeat, et salutem.
+$Per Dominum.
+
+[Lectio Prima]
+@Commune/C4
+
+[Capitulum Tertia]
+@:Capitulum Vespera
+
+[Responsory Tertia]
+@Commune/C4
+
+[Capitulum Sexta]
+@Commune/C4
+
+[Responsory Sexta]
+@Commune/C4
+
+[Capitulum Nona]
+@Commune/C4
+
+[Responsory Nona]
+@Commune/C4
+
+[Versum 3]
+@:Versum 2
+
+[Ant 3]
+@:Ant 1
+
+[Lectio72]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 5:13-19
+In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Et réliqua.
+_
+Homilía sancti Joánnis Chrysóstomi
+!Homilia 15 in Matthæum, sub medium
+Attendite quid dixerit, Vos estis sal terrae: per quod ostendit quam necessario ista praecipiat. Non enim de vestra, inquit, tantummodo vita, sed de universo orbe vobis ratio reddenda est. Non ad duas quippe urbes, aut decem, aut viginti, neque ad unam gentem vos mitto, sicut mittebam prophetas: sed ad omnem terram prorsus ac mare, totumque mundum, et hunc variis criminibus oppressum.
+
+[Lectio82]
+Dicendo enim, Vos estis sal terrae, ostendit universam hominum infatuatam esse naturam, et peccatorum vi corruptam: et idcirco illas ab eis virtutes requirit, quae maxime ad multorum salutem procurandam necessariae sunt atque utiles. Nam qui mansuetus est ac modestus, et misericors et justus, non intra se tantummodo haec recte facta concludit, verum in aliorum quoque utilitatem praeclaros hos faciet effluere fontes. Igitur qui corde mundo est atque pacificus, et persecutionem pro veritate patitur, nihilominus in commune commodum vitam instituit.
+
+[Lectio92]
+Ne igitur putetis, inquit, ad levia vos ducendos esse certamina, neque exiguarum rerum vobis ineundam esse rationem. Vos estis sal terrae. Quid igitur? Ipsine putrefacta medicati sunt? Nequaquam: neque enim fieri potest, ut ea quae jam corrupta sunt, salis perfricatione reparentur. Non ergo hoc fecerunt, sed ante renovata, sibique tradita, atque ab illa jam putredine liberata, aspergebant sale, et in ea novitate conservabant, quam a Domino susceperant. Liberare quippe a putredine peccatorum, Christi virtutis est: ut autem ad illa iterum non revertantur, Apostolorum curae est ac laboris.
+&teDeum

@@ -1400,7 +1400,7 @@ sub setheadline {
             ($a[0] =~ /(Adv[2-4]|Quadp)/i) ? 'Semiduplex II. classis' : 'Semiduplex Dominica minor';
         }
 
-	  } elsif ($version =~ /1960/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
+	  } elsif ($version =~ /1960/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
 	    $rankname = 'Dies Octavæ I. classis';
 	    
       } elsif ($version =~ /(1570|1910|Divino|1955)/ &&  $winner =~ /C10|C10t/) {
