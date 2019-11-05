@@ -1,0 +1,26 @@
+[Rank]
+Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
+
+[Rule]
+CPapaM=Telésphorum;
+vide Sancti/01-01
+Gloria
+Prefatio=Nat 
+
+[Commemoratio Oratio]
+!Pro S. Telesphori Papæ et Mart.
+@Commune/C2b:Oratio:s/N\./Telésphori/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Oratio Gregem
+
+[Commemoratio Secreta]
+!Pro S. Telesphori Papæ et Mart.
+@Commune/C2b:Secreta:s/N\./Telésphoro/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Secreta Gregem
+
+[Commemoratio Postcommunio]
+!Pro S. Telesphori Papæ et Mart.
+@Commune/C2c:Postcommunio:s/N\./Telésphoro/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Postcommunio Gregem
