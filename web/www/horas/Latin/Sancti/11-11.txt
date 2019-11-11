@@ -4,15 +4,13 @@ S. Martini Episcopi et Confessoris;;Duplex;;3;;vide C4a
 [Rule]
 vide C4a;
 9 lectiones
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
 
-[Ant Vespera 3]
-Dixérunt discípuli * ad beátum Martínum: Cur nos, pater, déseris, aut cui nos desolátos relínquis? Invádent enim gregem tuum lupi rapáces.;;109
-Dómine, * si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua.;;110
-O virum ineffábilem, * nec labóre victum, nec morte vincéndum, qui nec mori tímuit, nec vívere recusávit!;;111
-Oculis ac mánibus * in cælum semper inténtus, invíctum ab oratióne spíritum non relaxábat, allelúja.;;112
-Martínus * Abrahæ sinu lætus excípitur: Martínus, hic pauper et módicus, cælum dives ingréditur, hymnis cæléstibus honorátur.;;131
+[Ant Vespera]
+Dixérunt discípuli * ad beátum Martínum: Cur nos, pater, déseris, aut cui nos desolátos relínquis? Invádent enim gregem tuum lupi rapáces.
+Dómine, * si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua.
+O virum ineffábilem, * nec labóre victum, nec morte vincéndum, qui nec mori tímuit, nec vívere recusávit!
+Oculis ac mánibus * in cælum semper inténtus, invíctum ab oratióne spíritum non relaxábat, allelúja.
+Martínus * Abrahæ sinu lætus excípitur: Martínus, hic pauper et módicus, cælum dives ingréditur, hymnis cæléstibus honorátur.
 
 [Ant 1]
 O beátum virum, * cujus ánima paradísum póssidet! Unde exsúltant Angeli, lætántur Archángeli, chorus Sanctórum proclámat, turba Vírginum invítat: Mane nobíscum in ætérnum.
@@ -142,11 +140,7 @@ Mennas Ægyptius, christianus miles, in persecutióne Diocletiáni et Maximiáni
 &teDeum
 
 [Ant Laudes]
-Dixérunt discípuli * ad beátum Martínum: Cur nos, pater, déseris, aut cui nos desolátos relínquis? Invádent enim gregem tuum lupi rapáces.
-Dómine, * si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua.
-O virum ineffábilem, * nec labóre victum, nec morte vincéndum, qui nec mori tímuit, nec vívere recusávit!
-Oculis ac mánibus * in cælum semper inténtus, invíctum ab oratióne spíritum non relaxábat, allelúja.
-Martínus * Abrahæ sinu lætus excípitur: Martínus, hic pauper et módicus, cælum dives ingréditur, hymnis cæléstibus honorátur.
+@:Ant Vespera
 
 [Ant 2]
 @:Ant 1
