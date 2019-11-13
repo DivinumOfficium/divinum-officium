@@ -93,7 +93,7 @@ sub setup {
 
   $input = "<TABLE BORDER=\"2\" CELLPADDING=\"5\" ALIGN=\"CENTER\"><TR>\n";
   $input = "";
-  
+
   my $k = 0;
   for ($i = 0; $i < @script; $i++) {
      if (!$parmode[$i]) {next;}
@@ -330,13 +330,13 @@ sub setfont {
   #if ($istr =~ /italic/) {$italic = "<I>"; $italice = "</I>";}
   if ($istr =~ /bold/) {$bold = "b";}
   if ($istr =~ /italic/) {$italic = "i";}
-  
-  
+
+
   #return "$font$bold$italic$text$italice$bolde</SPAN>";
   $key="$color$size$bold$italic";
-  
+
   unless(exists($fontOverrides{$key})) {die "'$key'=>'' does not exist" ;}
-  
+
   return "$fontOverrides{$key}$text$fontOverridesEnd{$key}";
 }
 
@@ -368,7 +368,7 @@ sub setcross
 sub setcell {
   #note this subroutine produces correct output only for the single-column layout
   #the double-column layout is yet to be converted to XHTML
-  
+
   my $text = shift;
 
   my $lang = shift;
@@ -376,7 +376,7 @@ sub setcell {
   my $width = ($only) ? 100 : 50;
 
     if (columnsel($lang)) { #if this is the primary language
-	  $searchind++; 
+	  $searchind++;
 	  #print "<DIV STYLE=\"width: 100%; display: table-row;\">&nbsp;</DIV><DIV STYLE=\"display: table-row;\">";
       if ($notes && $text =~ /\{\:(.*?)\:\}/) {
         my $notefile = $1;
@@ -406,9 +406,9 @@ sub setcell {
   $tdtext2 = '';
   if ($column == 1) {$tdtext1 = $text;}
   else {$tdtext2 = $text;}
-  
+
   $htmltext = '';
-  
+
   #handle two columns output (if there are two columns)
   if ($column == 2 && !$only) {
     my ($b1, $b2) = longtd($tdtext1, $tdtext2);
@@ -416,7 +416,7 @@ sub setcell {
         @tdtext2 = @$b2;
     my $item;
     my $i = 0;
-    
+
         while ($i < @tdtext1 && $i < @tdtext2) {
           $item = $tdtext1[$i];
       if ($i > 0) {$htmltext .= "<DIV STYLE=\"display: table-row;\">";}
@@ -444,9 +444,9 @@ sub setcell {
     #$htmltext .=  "<DIV STYLE=\"width: $width%; vertical-align: top;\">";
     #$htmltext .=  setfont($blackfont,$text) . "</DIV>\n";
     #if ($only || !columnsel($lang)) {$htmltext .= "</DIV>\n";}
-    
+
     $text =~ s/<BR>/<br \/>/sg;
-    #$text =~ s/\n//g;    
+    #$text =~ s/\n//g;
     print $text;
   }
 }
