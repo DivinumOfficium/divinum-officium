@@ -1,12 +1,12 @@
 #!/bin/bash
-#An alternative EPUB generator. 
+#An alternative EPUB generator.
 #
 #This script generates the office texts in EPUB format for one or several years.
 #Resulting files can easily be converted to MOBI format using kindlegen.
 #
-#It does not rely on ebook-convert to do the conversions, but the XHTML files 
-#(necessary for the EPUB format) are generated using customized perl scripts. 
-#Consequently, the resulting files are considerably smaller and the production 
+#It does not rely on ebook-convert to do the conversions, but the XHTML files
+#(necessary for the EPUB format) are generated using customized perl scripts.
+#Consequently, the resulting files are considerably smaller and the production
 #is faster.
 #
 #Up-to-date generated files using 1962 rubrics are maintained on:
@@ -25,24 +25,24 @@ This script generates the office texts in EPUB format for one or several years.
 
 OPTIONS:
    -h          Show this message
-   
-   -y NUMBER   The first year to generate the office for (e.g. 2017). 
+
+   -y NUMBER   The first year to generate the office for (e.g. 2017).
                Defaults to the current year.
-               
-   -t NUMBER   The last year to generate the office for (e.g. 2018). 
+
+   -t NUMBER   The last year to generate the office for (e.g. 2018).
                Defaults to the current year.
-               
-   -p          If specified, generate the officium for a priest 
+
+   -p          If specified, generate the officium for a priest
                ("Dominus Vobiscum" instead of "Domine, exaudi orationem meam").
-               
-   -r RUBRICS  The rubrics to use. Defaults to 1960. 
+
+   -r RUBRICS  The rubrics to use. Defaults to 1960.
                Supported values are: 1570, 1910, DA, 1955, 1960, Newcal
-               
-   -c FILENAME The cover image to use without path. It must be a file in the data 
+
+   -c FILENAME The cover image to use without path. It must be a file in the data
                directory. Defaults to "cover.jpg".
-               
+
    -o PATH     The output directory. Defaults to the current directory.
-   
+
 EOF
 
  #generation of a bilingual office is not yet fully implemented, so do not document this option until it is implemented.
@@ -89,9 +89,9 @@ do
              if ! [[ $YEAR_FROM =~ $YEAR_RE ]] ; then
                echo "Invalid year number." >&2; exit 1
              fi
-             
+
              ;;
-         t) 
+         t)
              YEAR_TO=$OPTARG
              #make sure the value is a year number
              if ! [[ $YEAR_TO =~ $YEAR_RE ]] ; then
@@ -120,12 +120,12 @@ do
          o)
              EPUBDIR=$OPTARG
              #value is validated later
-             ;;             
+             ;;
          l)
              BLANG=$OPTARG
              #TODO: validate the value
-             ;;             
-             
+             ;;
+
          ?)
              usage
              exit
@@ -162,19 +162,19 @@ fi
 #to set the  $FILENAME, $DATE and $ITEM_ID variables.
 formatFilename() {
 	FILENAME=$MONTH-$DAY-$YEAR-${HORAS_FILENAMES[${H}]}.html
-	
+
 	TOC_FILENAME_YEAR="toc$YEAR$RUBRICS_NAME.html"
 	TOC_FILENAME_MONTH="toc$YEAR-$MONTH$RUBRICS_NAME.html"
-	
+
 	#format as expected by script
 	DATE_SCRIPT=$MONTH-$DAY-$YEAR
-	
+
 	#used in OPF on two places
 	ITEM_ID="h$MONTH$DAY$H"
 }
 
 
-foreachMonthInRange() {	
+foreachMonthInRange() {
 	#might fail if $1 is a complex command, in that case it has to be replaced with nested loops
 	foreachYear "foreachMonthInYear $1"
 }
@@ -185,20 +185,20 @@ foreachYear() {
 		$1
 	done
 }
-	
+
 #This method calls $1 (the parameter given to this method - a command) for every month in the year that is set in $YEAR variable.
 foreachMonthInYear() {
 	MONTH_NUM_INDEX=-1 #note we cannot count using MONTH, because it is zero padded (and bash consides it an octal literal)
 	for MONTH in $(seq -w 12); do
 		MONTH_NUM_INDEX=1+$MONTH_NUM_INDEX
-		
+
 		formatFilename #needed to set the TOC filename
 		$1
 	done
 }
 
 foreachHourInDay() {
-	
+
 	for H in $(seq 0 $HORA_INDEX_LAST); do
 		formatFilename
 		$1
@@ -238,7 +238,7 @@ foreachHourInYear() {
 				$1
 			done
 		done
-	done	
+	done
 }
 
 foreachHourInMonth() {
@@ -248,11 +248,11 @@ foreachHourInMonth() {
 #This method calls $1 for every hour in a month (the $MONTH and $YEAR variables have to be set).
 #($DAY, $H $FILENAME, $DATE are set accordingly at every invocation.)
 foreachHourInRange() {
-	
+
 	#with too nested iteration the quoting causes chaos
 	#foreachYear "foreachMonthInYear \"foreachDayInMonth foreachHourInDay $1\""
 	#so using this instead
-	
+
 	for YEAR in $(seq $YEAR_FROM $YEAR_TO); do
 		MONTH_NUM_INDEX=-1 #note we cannot count using MONTH, because it is zero padded (and bash consides it an octal literal)
 		for MONTH in $(seq -w 12); do
@@ -267,7 +267,7 @@ foreachHourInRange() {
 			done
 		done
 	done
-	
+
 }
 
 #################################################################################################################
@@ -280,10 +280,10 @@ generateHour() {
 }
 
 generateHours() {
-	echo -e "\e[1m:: Starting to generate hours\e[0m"	
+	echo -e "\e[1m:: Starting to generate hours\e[0m"
 	foreachHourInRange generateHour
 	echo ""
-	echo -e "\e[1m:: Finished the generation of hours\e[0m"	
+	echo -e "\e[1m:: Finished the generation of hours\e[0m"
 }
 
 
@@ -293,7 +293,7 @@ generateHours() {
 
 
 printTOCEntry() {
-		printf "<td><a href=\"$FILENAME\">${HORAS_NAMES_SHORT[${H}]}</a></td>\n" 
+		printf "<td><a href=\"$FILENAME\">${HORAS_NAMES_SHORT[${H}]}</a></td>\n"
 }
 
 printTOCDay() {
@@ -323,10 +323,10 @@ outputMonthToFile() {
 	cd $WDIR
 	exec 6>&1
 	exec > $TOC_FILENAME_MONTH
-	printTOC_Header 
+	printTOC_Header
 	outputMonthTOC
 	printTOC_Footer
-	exec 1>&6 6>&-	
+	exec 1>&6 6>&-
 }
 
 
@@ -334,13 +334,13 @@ outputYearToFile() {
 	cd $WDIR
 	exec 6>&1
 	exec > $TOC_FILENAME_YEAR
-	printTOC_Header 
+	printTOC_Header
 
 	#months links
 	for M in $(seq -w 1 12); do
 		printf "<a href=\"#m$M\">$M</a> "
-	done	
-	
+	done
+
 	foreachMonthInYear outputMonthTOC
 	printTOC_Footer
 	exec 1>&6 6>&-
@@ -348,7 +348,7 @@ outputYearToFile() {
 
 
 generateTOCs() {
-	echo -e "\e[1m:: Starting to create TOCs\e[0m"	
+	echo -e "\e[1m:: Starting to create TOCs\e[0m"
 
 	#generate OPF per month
 	foreachMonthInRange outputMonthToFile
@@ -380,8 +380,8 @@ outputMonthOPFSpine() {
 }
 
 #Expects the second part of the title as a parameter.
-printOPF_Header() { 
-	
+printOPF_Header() {
+
 printf '<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
   <metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/">
@@ -429,7 +429,7 @@ outputMonthToFileOPF() {
 	exec 6>&1
 	exec > "breviarium$YEAR-$MONTH$RUBRICS_NAME.opf"
 	TOC_FILENAME=$TOC_FILENAME_MONTH
-	
+
 	printOPF_Header "$YEAR-$MONTH$RUBRICS_NAME"
 	outputMonthOPF
 	printOPF_Middle
@@ -443,7 +443,7 @@ outputYearToFileOPF() {
 	cd $WDIR
 	exec 6>&1
 	exec > "breviarium$YEAR$RUBRICS_NAME.opf"
-	
+
 	TOC_FILENAME=$TOC_FILENAME_YEAR
 	printOPF_Header "$YEAR$RUBRICS_NAME"
 	foreachMonthInYear outputMonthOPF
@@ -454,7 +454,7 @@ outputYearToFileOPF() {
 }
 
 generateOPF() {
-	echo -e "\e[1m:: Starting to create OPFs\e[0m"	
+	echo -e "\e[1m:: Starting to create OPFs\e[0m"
 
 	#generate OPF per month
 	foreachMonthInRange outputMonthToFileOPF
@@ -467,22 +467,22 @@ generateOPF() {
 
 #Expects OPF_FILENAME to be set.
 initEPUB() {
-	
+
 	#make sure directory "META-INF" exists
-	if [ ! -d "$WDIR/META-INF" ]  
-	then 
+	if [ ! -d "$WDIR/META-INF" ]
+	then
 		mkdir "$WDIR/META-INF"
 	fi
-		
+
 	#copy the needed files into the work directory
 	cp $SOURCEDATADIR/s.css $SOURCEDATADIR/$COVER_FILENAME $SOURCEDATADIR/about.xhtml $WDIR
 	cp $WDIR/$OPF_FILENAME $WDIR/content.opf
-	
+
 	#mimetype
 	echo 'application/epub+zip' > "$WDIR/mimetype"
-	
+
 	#container.xml
-	
+
 	cat  >"$WDIR/META-INF/container.xml" <<CONTAINER
 <?xml version="1.0"?>
 <container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">
@@ -518,10 +518,10 @@ CONTAINER
 	</navLabel>
 	<content src="$TOC_FILENAME"/>
 	</navPoint>
-  
+
 CONTAINER
 	#will be finished later
-	
+
 	#titlepage.xhtml
 cat >"$WDIR/titlepage.xhtml" <<CONTAINER
 <?xml version='1.0' encoding='utf-8'?>
@@ -570,24 +570,24 @@ initEPUB_End() {
   </navMap>
 </ncx>
 CONTAINER
-	
+
 }
 
 epubCleanup() {
 	rm "$WDIR/META-INF/container.xml"
-	rmdir "$WDIR/META-INF" 
+	rmdir "$WDIR/META-INF"
 }
 
 packEPUB() {
 	cd $WDIR
-	
+
 	#remove potentially existing epub
 	:>$EPUB_FILENAME
 	rm $EPUB_FILENAME
-	
+
 	#mimetype goes first, uncompressed
 	zip -X0 $EPUB_FILENAME "mimetype"
-	
+
 	#then all other files
 	zip -Xur9D $EPUB_FILENAME META-INF/container.xml toc.ncx $TOC_FILENAME titlepage.xhtml about.xhtml content.opf s.css $COVER_FILENAME -@ <filelist
 }
@@ -597,12 +597,12 @@ makeEPUBfilelistEntry() {
 	echo "$FILENAME" >> "$WDIR/filelist"
 }
 
-makeEPUBfilelistMonth() {	
+makeEPUBfilelistMonth() {
 	:> "$WDIR/filelist"
 	foreachHourInMonth makeEPUBfilelistEntry
 }
 
-makeEPUBfilelistYear() {	
+makeEPUBfilelistYear() {
 	:> "$WDIR/filelist"
 	foreachHourInYear makeEPUBfilelistEntry
 }
@@ -621,7 +621,7 @@ createEPUBMonth() {
 
 	makeEPUBfilelistMonth
 	packEPUB
-	#epubCleanup	
+	#epubCleanup
 }
 
 createEPUBYear() {
@@ -629,24 +629,24 @@ createEPUBYear() {
 	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR$RUBRICS_NAME.epub"
 	TOC_FILENAME=$TOC_FILENAME_YEAR
 	TITLE="Divinum Officium$RUBRICS_NAME - $YEAR"
-	
+
 	initEPUB
 	PLAYORDER_NUM=0
 	H=0
 	foreachDayInYear outputTOCNCXEntry
 	initEPUB_End
-	
+
 	makeEPUBfilelistYear
 	packEPUB
 	epubCleanup
 }
 
-createEPUBs() { 
-	echo -e "\e[1m:: Starting to create EPUBs for each month\e[0m"	
+createEPUBs() {
+	echo -e "\e[1m:: Starting to create EPUBs for each month\e[0m"
 	foreachMonthInRange createEPUBMonth
-	echo -e "\e[1m:: Starting to create EPUBs for each year\e[0m"	
+	echo -e "\e[1m:: Starting to create EPUBs for each year\e[0m"
 	foreachYear createEPUBYear
-	echo -e "\e[1m:: Finished the creation of EPUBs\e[0m"	
+	echo -e "\e[1m:: Finished the creation of EPUBs\e[0m"
 }
 
 #################################################################################################################

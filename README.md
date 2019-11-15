@@ -1,4 +1,5 @@
 # divinum-officium
+
 Data files and source code for the
 [Divinum Officium](http://www.divinumofficium.com/) project.
 
@@ -52,7 +53,7 @@ Or, use Docker Compose to load a copy of the container in one command:
 docker-compose -f docker-compose-prod.yml up -d
 ```
 
-This will download Divinum Officium, and run a local copy on your system, bound to 
+This will download Divinum Officium, and run a local copy on your system, bound to
 `localhost`, port 80.
 
 When you are done, stop the container by running:
@@ -73,5 +74,5 @@ docker-compose up
 ```
 
 This starts the web server and you can visit the website on
-`http://localhost:8080`. It will mount the current web directory into the container 
+`http://localhost:8080`. It will mount the current web directory into the container
 so that you can change files and do live-changes without restarting the container.

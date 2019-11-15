@@ -17,8 +17,8 @@ sub htmlHead {
   my $title = shift;
   my $flag = shift;
   if (!$title) {$title = ' ';}
-#  print "Content-type: text/html; charset=ISO-8859-1\n\n"; 
-  print "Content-type: text/html; charset=utf-8\n\n"; 
+#  print "Content-type: text/html; charset=ISO-8859-1\n\n";
+  print "Content-type: text/html; charset=utf-8\n\n";
 
 
   print << "PrintTag";
@@ -43,29 +43,29 @@ print "</HEAD>";
 # labelstring~>$default~>type~>mode~>condition
 # labelstring is the name above the widget
 # $default holds the the default value
-# type = Label | Entry~>'width' | Text~>'rows'x'columns' | 
+# type = Label | Entry~>'width' | Text~>'rows'x'columns' |
 #        Checkbutton  | Radiobutton~>'itemlist' | Optionmenu~>itemarray |
 #        Listbox~>'itemlist' | Scale~>'from'~'to' | Filesel~>stock |
 #        Color | Font | Pixel |Position | Points | Area | Ngon
 #    itemlist is a comma separated list e.g "Radiobutton~>add,sub,both"
-#    itemarray is either ~>Optionmenu~>\@oarray @oarray defined by the caller program, 
+#    itemarray is either ~>Optionmenu~>\@oarray @oarray defined by the caller program,
 #       or ~>Optionmenu~>oarray and defined by  [oarray] comma separated list entry in .setup file
 #       or ~>Optionmenu~>{item1, item2, ...} list
 #    stock option results a possibility to select the item from the stocked images
-# condition is useable if the first item is Optionselect. The item is shown only 
+# condition is useable if the first item is Optionselect. The item is shown only
 #   if condition string contains the selected item
-# 
+#
 # script usually is defined in  .dialog file, and obtained by getsetuppar($name) sub
 # the result is saved to %setup hash by getsetupvalue($name) sub
 #
-sub setup { 
+sub setup {
   my $name = shift;
   if (!$name) {$name = "noname";}
-  my $scripto = shift; 
+  my $scripto = shift;
   if (!$scripto) {beep(); $error = 'No setup parameter'; return;}
   my $script = $scripto;
-  $script =~ s/[\r\n]+//g; 
- 
+  $script =~ s/[\r\n]+//g;
+
 
   my @script = split(';;', $script);
 
@@ -82,29 +82,29 @@ sub setup {
   @parhelp = splice(@parhelp,@parhelp);
 
   for ($i = 0; $i < @script; $i++) {
-     my @elems = split('~>', $script[$i]); 
-     $parname[$i] = $elems[0]; 
+     my @elems = split('~>', $script[$i]);
+     $parname[$i] = $elems[0];
      $parvalue[$i] = $elems[1];
 	 $parmode[$i] = $elems[2];
 	 $parpar[$i] = $elems[3];
      $parfunc[$i] = $elems[4];
-	 $parhelp[$i] = $elems[5];  
+	 $parhelp[$i] = $elems[5];
   }
 
   my ($width, $rpar, @rpar, $size, @size, $range, @range, $j);
   my $tl = 0;
 
   $input = "<TABLE BORDER=2 CELLPADDING=5 ALIGN=CENTER BACKGROUND=\"$htmlurl/horasbg.jpg\"><TR>\n";
-  
-  my $k = 0; 
+
+  my $k = 0;
   for ($i = 0; $i < @script; $i++) {
-     if (!$parmode[$i]) {next;} 
+     if (!$parmode[$i]) {next;}
      my $v0 = $parvalue[0];
 
-     
+
      $input .= "<TR><TD ALIGN=left>\n";
 
-     
+
      if ($parmode[$i] !~ /label/) {
 	   if ($parhelp[$i] =~ /\#/) {$input .= "<A HREF=\"$helpfile$parhelp[$i]\" TARGET='_new'>\n";}
 	   $input .= setfont($dialogfont) . " $parname[$i]";
@@ -118,7 +118,7 @@ sub setup {
         if ($parpar[$i]) {$ilabel = wrap($ilabel, $parpar[$i], "<BR>\n");}
         $input .= "$ilabel";
         $input .= "<INPUT TYPE=HIDDEN NAME=\'I$k\' VALUE=\'$parvalue[$i]\'>\n";
-     
+
      } elsif ($parmode[$i] =~ /entry/i) {
        $width = $parpar[$i];
        if (!$width || $width == 0) {$width = 3;}
@@ -131,7 +131,7 @@ sub setup {
 		if (@size < 2) {@size = (3,12);}
         my $pv = $parvalue[$i];
         $pv =~ s/  /\n/g;
- 
+
         my $loadfile = strictparam('loadfile');
         if ($loadfile) {
           $loadfile =~ s/\.gen//;
@@ -139,7 +139,7 @@ sub setup {
             $pv = join('', @cm);
           }
         }
- 
+
         my $savefile = strictparam('savefile');
         if ($savefile) {
           $savefile =~ s/\.gen//;
@@ -157,7 +157,7 @@ sub setup {
 	     if ($parfunc[$i]) {$jsfunc = "onclick=\"$parfunc[$i];\"";}
          $input .= "<INPUT TYPE=CHECKBOX NAME=\'I$k\' ID=\'I$k\' $checked $jsfunc>\n";
 
-     } elsif ($parmode[$i] =~ /^radio/i) { 
+     } elsif ($parmode[$i] =~ /^radio/i) {
 	     if ($parmode[$i] =~ /vert/i) {$input .= "<TABLE>";}
          $rpar = $parpar[$i];
 		 @rpar = split(',', $rpar);
@@ -171,17 +171,17 @@ sub setup {
             if ($parmode[$i] =~ /vert/i) {$input .= "</TD></TR>";}
          }
 	     if ($parmode[$i] =~ /vert/i) {$input .= "</TABLE>";}
-        
-     } elsif ($parmode[$i] =~ /^updown/i) { 
+
+     } elsif ($parmode[$i] =~ /^updown/i) {
          if (!$parvalue[$i] && $parvalue[$i] != 0) {$parvalue[$i] = 5;}
 		 $input .= "<IMG SRC=\"$htmlurl/down.gif\" ALT=down ALIGN=TOP onclick=\"$parfunc[$i]($k,-1)\">\n";
          $input .= "<INPUT TYPE=TEXT NAME=\'I$k\' ID=\'I$k\' SIZE=$parpar[$i] "
 		   . "VALUE=$parvalue[$i] onchange=\"$parfunc[$i]($k,0);\">\n";
 		 $input .= "<IMG SRC=\"$htmlurl/up.gif\" ALT=up ALIGN=TOP onclick=\"$parfunc[$i]($k,1);\">\n";
-        
+
       } elsif ($parmode[$i] =~ /^scale/i) {
            $input .= "<INPUT TYPE=TEXT SIZE=6 NAME=\'I$k\' ID=\'I$k\' VALUE=$parvalue[$i]>\n";
-                
+
      } elsif ($parmode[$i] =~ /filesel/i) { #type=file value is read only
          if ($parpar[$i] =~ /stack/i) {
            $input .= "<INPUT TYPE=RADIO NAME='mousesel' VALUE='stack'"
@@ -191,8 +191,8 @@ sub setup {
             . " VALUE=\'$parvalue[$i]\'>\n";
          if ($parpar[$i] !~ /stackonly/i) {
            $input .= "<INPUT TYPE=BUTTON VALUE=' ' onclick='filesel(\"I$k\", \"$parpar[$i]\");'>\n";
-         } 
-         
+         }
+
      } elsif ($parmode[$i] =~ /color/i) {
          my $size = 3;
          if ($parpar[$i]) {$size = $parpar[$i];}
@@ -201,38 +201,38 @@ sub setup {
          $input .= "<INPUT TYPE=TEXT SIZE=8 NAME=\'I$k\' ID=\'I$k\'"
             . " VALUE=\'$parvalue[$i]\'>\n";
          $input .= "<INPUT TYPE=BUTTON VALUE=' ' onclick='colorsel(\"I$k\",$size);'>\n";
-     
+
      } elsif ($parmode[$i] =~ /font/i) {
          my $size = 16;
-         if ($parpar[$i]) {$size = $parpar[$i]}; 
+         if ($parpar[$i]) {$size = $parpar[$i]};
          $input .= "<INPUT TYPE=TEXT SIZE=$size NAME=\'I$k\' ID=\'I$k\'"
             . " VALUE=\'$parvalue[$i]\'>\n";
          $input .= "<INPUT TYPE=BUTTON VALUE=' ' "
            . "onclick='fontsel(\"I$k\");'>\n";
-     
+
      } elsif ($parmode[$i] =~ /^option/i) {
-	     my $a = $parpar[$i];  
-		   if (!$a) {$error = "Missing parameter for Optionmenu"; return "";} 
+	     my $a = $parpar[$i];
+		   if (!$a) {$error = "Missing parameter for Optionmenu"; return "";}
 		   if ($a =~ /\@/ || ref($a) =~ /ARRAY/i) {@optarray = eval($a);}
 		   elsif ($a =~ /^\s*\{(.+)\}\s*$/) {@optarray = split(',', $1);}
-		   else {@optarray = getdialogcolumn($a, '~', 0);}   
+		   else {@optarray = getdialogcolumn($a, '~', 0);}
 		   my $bgo = $i;
-       my $onclick = ($parmode[$i] =~ /select/i) ? "onchange=\'buttonclick(\"$name\");\'" : 
+       my $onclick = ($parmode[$i] =~ /select/i) ? "onchange=\'buttonclick(\"$name\");\'" :
 		     ($parfunc[$i]) ? "onchange=\"$parfunc[$i];\"" : '';
        while (!(-d "$datafolder/$optarray[-1]")) {pop(@optarray);}
-       
-       my $osize = @optarray;  
+
+       my $osize = @optarray;
        if ($osize > 5) {$osize = 5;}
-       $input .= "<SELECT SIZE=$osize NAME=\'I$k\' ID=\'I$k\' $onclick>\n"; 
-       for ($j = 0; $j < @optarray; $j++) { 
+       $input .= "<SELECT SIZE=$osize NAME=\'I$k\' ID=\'I$k\' $onclick>\n";
+       for ($j = 0; $j < @optarray; $j++) {
          my $pv = $parvalue[$i];
          $pv =~ s/[\[\]]//;
          my $ov = $optarray[$j];
-         $ov =~ s/[\[\]]//; 
+         $ov =~ s/[\[\]]//;
          my $selected = ($pv =~ /^$ov\s*$/i) ?'SELECTED' : '';
          $input .= "<OPTION VALUE=\'$optarray[$j]\' $selected>$optarray[$j]\n";
        }
-       $input .= "</SELECT>\n";   
+       $input .= "</SELECT>\n";
 
      }
      $k++;
@@ -269,11 +269,11 @@ sub cleanse($)
 
 #*** getsetupvalue($name)
 # gets the input values of the table and saves the result as $name item into %setup hash
-# the setup item contains $var='value' duple semicolon ;; separated lines. Value is 
+# the setup item contains $var='value' duple semicolon ;; separated lines. Value is
 # changed getting param('In') values, where 'n' is a sequence number (0,1,...)
 sub getsetupvalue {
   my $name = shift;
-  my $script = $setup{$name};   
+  my $script = $setup{$name};
   $script =~ s/\n\s*//g;
   my @script = split(';;', $script);
   eval($script);
@@ -281,22 +281,22 @@ sub getsetupvalue {
   $script = "";
   for ($i = 0; $i < @script; $i++) {
      $script[$i] =~ s/\=/\~\>/;
-     my @elems = split('~>', $script[$i]); 
+     my @elems = split('~>', $script[$i]);
      my $value = cleanse($q->param("I$i"));
 	 if (!$value && $value ne '0') {$value = '';}
 	 if ($value =~ /^on$/) {$value = 1;}
-	 $value =~ s/\n/  /g;     
-   
+	 $value =~ s/\n/  /g;
+
    if ($elems[0] =~ /check/i) {$value = $check;}
-   my $str = $elems[0] . '=\'' . $value . '\''; 
+   my $str = $elems[0] . '=\'' . $value . '\'';
 	 eval($str);
-	 $script .= "$str;;" 
+	 $script .= "$str;;"
   }
   $setup{$name} = $script;
 }
 
 
-     
+
 #*** beep()
 # generates a beep sound. Inactive in cgi version
 sub beep {
@@ -330,7 +330,7 @@ sub clean_setupsave
 sub setfont {
   my $istr = shift;
   my $text = shift;
-  
+
   my $size = ($istr =~ /^\.*?([0-9\-\+]+)/i) ? $1 : 0;
   my $color = ($istr =~ /([a-z]+)\s*$/i)  ? $1 : '';
   if ($istr =~ /(\#[0-9a-f]+)\s*$/i || $istr =~ /([a-z]+)\s*$/i) {$color = $1;}
@@ -378,16 +378,16 @@ sub getcookies {
     if ($c->name =~ /$cname/) {$sti = $c->value;}
   }
 
-  if ($sti) {                         
-   $sti =~ s/\s\s(\s*)/\n$1/g;   
-   @sti = split(';;;', $sti);	 
+  if ($sti) {
+   $sti =~ s/\s\s(\s*)/\n$1/g;
+   @sti = split(';;;', $sti);
 	 my $param = $setup{$name};
-	 $param =~ s/\;\;\s*$//;        
-	 my @param = split(';;', $param);  
-     											
+	 $param =~ s/\;\;\s*$//;
+	 my @param = split(';;', $param);
+
 	 #check if the structure of the parameters is the same
-	 if (@sti != @param + 1 || $sti[-1] !~ /^$check$/) { 
-	   eval($setup{$name});   
+	 if (@sti != @param + 1 || $sti[-1] !~ /^$check$/) {
+	   eval($setup{$name});
 	   return 0;
 	 }
 
@@ -397,8 +397,8 @@ sub getcookies {
      my @a = split('=', $param[$i]);
 	 if ($a[0]) {$param .= "$a[0]=$sti[$i];;";}
    }
-     
-   eval($param);  
+
+   eval($param);
    $setup{$name} = $param;
    return 1;
   }
@@ -409,26 +409,26 @@ sub getcookies {
 #saves $name setup table as cookie named $cname
 sub setcookies {
   my $cname = shift;
-  my $name = shift;      
-  my @values = split(';;', $setup{$name});  
+  my $name = shift;
+  my @values = split(';;', $setup{$name});
   my $value = '';
 
   my $checkname = $name . 'check';
   $check = $setup{$checkname};
   $check =~ s/\s//g;
-                          
+
   if (!$values[-1]) {
     my %s = %{setupstring($datafolder, '', 'horas.setup')};
     $values[-1] = $check;
   }
 
   foreach (@values) {
-    my @a = split('=', $_);  
-    $value .= "$a[1]"; 
-    while ($value !~ /\;\;\;$/) {$value .= ';'} 
+    my @a = split('=', $_);
+    $value .= "$a[1]";
+    while ($value !~ /\;\;\;$/) {$value .= ';'}
   }
 
-   $value .= "$check;;;";  
+   $value .= "$check;;;";
    $value =~ s/\r*\n/  /g;
    $c = $q->cookie(-name=>"$cname",-value=>"$value",-expires=>"$cookieexpire");
 
@@ -498,18 +498,18 @@ sub setcross
     return $line;
 }
 
-#*** setcross2($line)   
+#*** setcross2($line)
 # Version (unused) of setcross that uses gifs.
 sub setcross2
 {
-    my $line = shift;	
+    my $line = shift;
     my $csubst;
     $csubst = "<IMG SRC=$htmlurl/cross3.gif ALIGN=BASELINE ALT=''>";
-    $line =~ s/\+\+\+/$csubst/g;  
+    $line =~ s/\+\+\+/$csubst/g;
     $csubst = "<IMG SRC=$htmlurl/cross2.gif ALIGN=BASELINE ALT=''>";
     $line =~ s/\+\+/$csubst/g;
     $csubst = "<IMG SRC=$htmlurl/cross1.gif ALIGN=BASELINE ALT=''>";
-    $line =~ s/ \+ / $csubst /g;	 
+    $line =~ s/ \+ / $csubst /g;
 
     return $line;
 }
@@ -517,15 +517,15 @@ sub setcross2
 #*** setcell($text1, $lang1);
 # output the content of the cell
 sub setcell {
-  my $text = shift;  
-  
-  my $lang = shift; 
-  
-  my $width = ($only) ? 100 : 50; 
-                       
+  my $text = shift;
+
+  my $lang = shift;
+
+  my $width = ($only) ? 100 : 50;
+
   if (!$Ck) {
     if (columnsel($lang)) {
-	  $searchind++; print "<TR>"; 
+	  $searchind++; print "<TR>";
       if ($notes && $text =~ /\{\:(.*?)\:\}/) {
         my $notefile = $1;
 	    $notefile =~ s/^pc/p/;
@@ -533,11 +533,11 @@ sub setcell {
 	    print "<TR><TD COLSPAN=$colspan WIDTH=100% $background VALIGN=MIDDLE ALIGN=CENTER>\n" .
 	    "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=80%></TD></TR>\n";
       }
-	} 
+	}
     print "<TD $background VALIGN=TOP WIDTH=$width%". ($lang1 ne $lang?"":" ID=L$searchind"). ">";
     topnext_cell($lang);
-    if ($text =~ /%(.*?)%/) {    
-      my $q = $1;    
+    if ($text =~ /%(.*?)%/) {
+      my $q = $1;
       if ($officium =~ /Pofficium/i) {
         if ($hora =~ /Matutinum/i) {
           $text =~ s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=$caller&command=prayLaudes&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$q</A>}i;
@@ -548,18 +548,18 @@ sub setcell {
         }
       } else {
         if ($hora =~ /Matutinum/i) {
-          $text =~ s{%(.*?)%}{<A HREF=# onclick="hset('Laudes');">$q</A>}i; 
+          $text =~ s{%(.*?)%}{<A HREF=# onclick="hset('Laudes');">$q</A>}i;
         } elsif ($hora =~ /Vespera/i) {
-          $text =~ s{%(.*?)%}{<A HREF=# onclick="defunctorum('Vespera');">$q</A>}i; 
+          $text =~ s{%(.*?)%}{<A HREF=# onclick="defunctorum('Vespera');">$q</A>}i;
         } elsif ($hora =~ /Laudes/i) {
           $text =~ s{%(.*?)%}{<A HREF=# onclick="defunctorum('Matutinum');">$q</A>}i;
         }
       }
     }
-  }   
+  }
   $text =~ s/\_/ /g;
   $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
-  $text =~ s/\{\:.*?\:\}//sg;  
+  $text =~ s/\{\:.*?\:\}//sg;
   $text =~ s/\`//g;
 
   if ($Ck) {
@@ -567,11 +567,11 @@ sub setcell {
 	  else {push(@ctext2, $text);}
   } else {
     print  setfont($blackfont,$text) . "</TD>\n";
-    if (!columnsel($lang)) {print "</TR>\n";}  
+    if (!columnsel($lang)) {print "</TR>\n";}
   }
-} 
+}
 
-#*** topnext_Cell() 
+#*** topnext_Cell()
 #prints T N for positioning
 sub topnext_cell {
     if ($officium =~ /Pofficium/i) {return;}
@@ -591,7 +591,7 @@ sub topnext {
   $str .=  "</FONT></DIV>\n";
   return $str;
 }
-    
+
 #*** table_start
 # start main table
 sub table_start {
@@ -613,9 +613,9 @@ sub table_start {
 # prints Ante of Post call
 sub ante_post {
   my $title = shift;
-  
+
   if ($Ck) {return;}
-  my $colspan = ($only) ? '' : 'COLSPAN=2';  
+  my $colspan = ($only) ? '' : 'COLSPAN=2';
 
   print "<TR><TD $background VALIGN=TOP $colspan ALIGN=CENTER>\n";
   print "<INPUT TYPE=RADIO NAME=link onclick='linkit(\"\$$title\", 0, \"Latin\");'>\n";
@@ -637,13 +637,13 @@ sub table_end {
       print "<TD $background VALIGN=TOP WIDTH=$width%>\n";
       foreach $item (@ctext2) {print "$item<BR>\n"; $len2 += wnum($item);}
 	    print "</TD></TR>\n";
-    }	  
+    }
     print "<TR><TD $background VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len1 words</FONT></TD>";
     if (!$only) {
       print "<TD $background VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len2 words</FONT></TD></TR>";
     }
   }
-  
+
   print "</TABLE><span ID=L$searchind></span>";
 }
 
@@ -653,7 +653,7 @@ sub wnum {
   $item =~ s/\s[a-z]\.\s//ig;
   $item =~ s/[0-9,.,;:\-*]//g;
   $item =~ s/[\{\[\(].*?[\}\]\)]//g;
-  $item =~ s/\s+/ /g; 
+  $item =~ s/\s+/ /g;
   my @item = split(' ', $item);
   my $n = @item;
   return $n;
