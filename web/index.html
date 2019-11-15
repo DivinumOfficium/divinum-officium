@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<meta name="author" content="Divinum Officium Project">
-		<meta name="resource-type" content="document">
-		<meta name="description" content="Breviarium Romanum">
-		<meta name="keywords" content='Church tradition, Breviarium, Divine Office, liturgy, Tridentine, old rite, Officium Divinum, Divinum Officium, breviary, missal, Missale, Missale Romanum, Mass, Missa, Misa, liturgie, liturgia, Messe, catholique, Catholic'>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<link rel="apple-touch-icon" href="favicon.ico">
-		<title>Divinum Officium</title>
-		<style>
-			html {
-			background-color: beige;
-		}
-			div.container_main {
-			display: flex;
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Divinum Officium Project">
+	<meta name="resource-type" content="document">
+	<meta name="description" content="Breviarium Romanum">
+	<meta name="keywords"
+		content='Church tradition, Breviarium, Divine Office, liturgy, Tridentine, old rite, Officium Divinum, Divinum Officium, breviary, missal, Missale, Missale Romanum, Mass, Missa, Misa, liturgie, liturgia, Messe, catholique, Catholic'>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="apple-touch-icon" href="favicon.ico">
+	<title>Divinum Officium</title>
+	<style>
+		@font-face {
+			src: url(www/style/AnglicanText.ttf);
+			font-family: anglican;
 		}
 
-		.image_aside {
-			/*font-size: 1.2em*/;
+		@font-face {
+			src: url(www/style/Blacklettersh.ttf);
+			font-family: blackletter;
 		}
+
+		@font-face {
+			src: url(www/style/DeutscheZierschrift.ttf);
+			font-family: deutsche;
+		}
+
+		html {
+			background-color: beige;
+		}
+
+
+		div.container_main {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
 		body {
 			margin: 0;
 			background-color: beige;
 			color: black;
+			text-align: justify;
 			padding-top: 25px;
 			padding-right: 100px;
 			padding-left: 100px;
 			padding-top: 0px;
 			font-size: 1.2em;
+			text-justify: auto;
 		}
-		p {
-			/*text-align: center;*/
-		}
+
 		a {
 			text-decoration: none;
 			color: black;
@@ -47,22 +63,60 @@
 			text-decoration: underline;
 			transition-duration: 250ms;
 		}
+
 		.paypal_button {
+			text-align: center;
 			margin-right: auto;
 			margin-left: auto;
 
 		}
+
 		.title_top {
-			text-align: center;
-			font-size: 2em
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			justify-content: center;
+		}
+
+		.title_part {
+			height: 100%;
+			padding: 30px;
+			font-size: 20pt;
+			padding-top: 50px;
+			color: red;
+			font-variant: small-caps;
+		}
+
+		span.do_title {
+			font-family: deutsche;
+			font-size: 60pt;
 		}
 
 		.home_menu {
 			text-align: center;
 			margin-left: auto;
 			margin-right: auto;
-			width: 50%;
+			display: flex;
+			justify-content: space-evenly;
 			font-size: 2em
+		}
+
+		.site_backstory {
+			display: block;
+			/*
+			display: flex;
+			justify-content: space-evenly;
+			*/
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+
+		p.backstory_parts {
+			padding: 20px;
+		}
+
+		.col_right {
+			border-left: solid 2px black;
 		}
 
 		.home_bottom_menu {
@@ -71,101 +125,109 @@
 			margin-left: auto;
 			/*font-size: 1.5em*/
 		}
-a.footer {
-	color: white;
-text-decoration: none;
-}
+
+		div.image_aside {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+
 		footer {
-			margin-bottom: 0;
-			width: 100%;
-			background: #4f4f4f;
-			height: 30px;
-			padding: 5px;
-			font-size: 20px;
-			position: bottom;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			padding: 10px;
+		}
+
+		hr {
+			/* Does not work for Chrome -- replace with div */
+			color: red;
 		}
 	</style>
-	</head>
+</head>
 
-	<body>
-		<p class="title_top">
-			<b>The Divinum Officium Project</b>
-		</p>
-		<table border="1" class="home_menu">
-			<tr>
-				<td>
-					&nbsp;&nbsp;&nbsp;
-					<a href="cgi-bin/horas/officium.pl">
-						Desktop
-					</a>
-					&nbsp;&nbsp;&nbsp;
-				</td>
-				<td>
-					&nbsp;&nbsp;&nbsp;
-					<a href="cgi-bin/horas/Pofficium.pl">
-						Mobile
-					</a>
-					&nbsp;&nbsp;&nbsp;
-				</td>
-				<td>
-					&nbsp;&nbsp;&nbsp;
-					<a href="cgi-bin/missa/missa.pl">
-						Missale
-					</a>
-					&nbsp;&nbsp;&nbsp;
-				</td>
-				<td>
-					&nbsp;&nbsp;&nbsp;
-					<a href="cgi-bin/horas/kalendar.pl">
-						Ordo
-					</a>
-					&nbsp;&nbsp;&nbsp;
-				</td>
-			</tr>
-		</table>
-		<div class="container_main">
+<body>
+	<div class="title_top">
+		<div class="title_part">
+			The
+		</div>
+		<div class="title_part_main">
+			<span class="do_title">Divinum Officium</span>
+		</div>
+		<div class="title_part">
+			Project
+		</div>
+	</div>
+	<hr>
+	<div class="home_menu">
+		<div>
+			<a href="cgi-bin/horas/officium.pl">
+				Desktop
+			</a>
+		</div>
+		<div>
+			<a href="cgi-bin/horas/Pofficium.pl">
+				Mobile
+			</a>
+		</div>
+		<div>
+			<a href="cgi-bin/missa/missa.pl">
+				Missale
+			</a>
+		</div>
+		<div>
+			<a href="cgi-bin/horas/kalendar.pl">
+				Ordo
+			</a>
+		</div>
+	</div>
+	<hr>
+	<div class="container_main">
+		<div>
+			<img src="www/horas/singers.png" width="100%" alt="Singing the Divine Office">
+		</div>
+		<div class="image_aside">
+
+			<p>
+				Friends and benefactors are remembered in a monthly Mass and the Divine Office daily.
+			</p>
 			<div>
-				<img src="www/horas/singers.jpg" width="100%" alt="Singing the Divine Office">
-			</div>
-			<div class="image_aside">
-				<p class="paypal_button">
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-						<input type="hidden" name="cmd" value="_donations">
-						<input type="hidden" name="business" value="KN3ZEVAXU4PQN">
-						<input type="hidden" name="currency_code" value="USD">
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
-						<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
-					</form>
-					<br>
-				</p>
-				<p>
-					Friends and benefactors are remembered in a monthly Mass and the Divine Office daily.
-				</p>
 				<p>
 					For questions or to support the work of the Divinum Officium
 					Project, please contact:
-					<br>
 					<a href="mailto:canon.missae@gmail.com?Subject=Question regarding Divinum Officium Project.">
 						canon.missae@gmail.com
 					</a>
 				</p>
-				<br>
 				<p>
 					Ici on parle français - Hier spreekt men Nederlands - Se habla español - Wir sprechen
 					deutsch - Mówimy po polsku - Noi parliamo italiano
 				</p>
+			</div>
+			<p>
+				Please see our <a href="www/horas/Help/help.html">Help</a> page for an introduction to the
+				site.
+			</p>
+			<p>
+				What's new? A list of all changes to Divinum Officium can be
+				found on our <a href="https://github.com/DivinumOfficium/divinum-officium">GitHub
+					repository</a>.
+			</p>
+			<div class="paypal_button">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_donations">
+					<input type="hidden" name="business" value="KN3ZEVAXU4PQN">
+					<input type="hidden" name="currency_code" value="USD">
+					<input style="width: 200px;" type="image" src="www/horas/btn_donate_LG.gif" border="0" name="submit"
+						title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+					<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
 				<br>
-				<p>
-					Please see our <a href="www/horas/Help/help.html">Help</a> page for an introduction to the
-					site.<br>
-				</p>
-				<p>
-					What's new? A list of all changes to Divinum Officium can be
-					found on our <a href="https://github.com/DivinumOfficium/divinum-officium">GitHub
-						repository</a>.
-				</p>
 			</div>
 		</div>
+	</div>
+	<div class="site_backstory">
+		<!--<p class="backstory_parts">-->
 		<p>
 			This website was created and designed by the late Laszlo Kiss. Mr. Kiss, longtime
 			resident of Forrest Lake, Illinois, died
@@ -186,7 +248,7 @@ text-decoration: none;
 			forty-three years), their two sons Zoltan and Chaba, and their two
 			grandchildren Sophie and Ryan.
 		</p>
-
+		<!--<p class="col_right backstory_parts">-->
 		<p>
 			On Monday, 15 August 2011, the Solemnity of the Assumption of Our Lady, The Divinum Officium
 			Project was founded, with the permission of Laszlo's son Chaba, to preserve and further
@@ -201,28 +263,27 @@ text-decoration: none;
 			</a>
 			for further information or contact us at the above address.
 		</p>
-
-		<p style="text-align: center">
-			<b>
-				<i>
-					T.A.D.M.N.
-					<br>
-					Tu Autem, Dómine, Miserére Nobis
-				</i>
-			</b>
-		</p>
-
-		<footer>
-			<div class="home_bottom_menu">
-				<a class="footer" class="footer" href='www/horas/Help/versions.html'>Versions</a>&nbsp;&nbsp;&nbsp;
-				<a class="footer" href='www/horas/Help/credits.html'>Credits</a>&nbsp;&nbsp;&nbsp;
-				<a class="footer" href='www/horas/Help/download.html'>Download</a>&nbsp;&nbsp;&nbsp;
-				<a class="footer" href='www/horas/Help/rubrics.html'>Rubrics</a>&nbsp;&nbsp;&nbsp;
-				<a class="footer" href='www/horas/Help/technical.html'>Technical</a>&nbsp;&nbsp;&nbsp;
-				<a class="footer" href='www/horas/Help/help.html'>Help</a>&nbsp;&nbsp;&nbsp;
-			</div>
-		</footer>
-	</body>
+	</div>
+	<p style="text-align: center">
+		<b>
+			<i>
+				T.A.D.M.N.
+				<br>
+				Tu Autem, Dómine, Miserére Nobis
+			</i>
+		</b>
+	</p>
+	<hr>
+	<footer>
+		<a class="footer" href='www/horas/Help/versions.html'>Versions</a>&nbsp;&nbsp;&nbsp;
+		<a href='www/horas/Help/credits.html'>Credits</a>&nbsp;&nbsp;&nbsp;
+		<a href='www/horas/Help/download.html'>Download</a>&nbsp;&nbsp;&nbsp;
+		<a href='www/horas/Help/rubrics.html'>Rubrics</a>&nbsp;&nbsp;&nbsp;
+		<a href='www/horas/Help/technical.html'>Technical</a>&nbsp;&nbsp;&nbsp;
+		<a href='www/horas/Help/help.html'>Help</a>&nbsp;&nbsp;&nbsp;
+		</div>
+	</footer>
+</body>
 
 
 </html>
