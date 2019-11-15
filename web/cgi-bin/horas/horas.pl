@@ -16,10 +16,11 @@ my $precesferiales;
 
 $a = 1;
 
-# REPAIRS ERROR
+# REPAIRS ERROR 
 # --> EofficiumXhtml.pl: Undefined subroutine &horas::ante_post
-# called at /Users/user/divinum-officium/standalone/tools/epubgen2/../../../web/cgi-bin/horas/horas.pl line 61.
-# When generating ePub files
+# --> called at /Users/user/divinum-officium/standalone/tools/epubgen2/../../../web/cgi-bin/horas/horas.pl line 61.
+# this error occured when generating an epub for Divino Afflatu
+
 sub ante_post {
   my $title = shift;
 
@@ -27,7 +28,7 @@ sub ante_post {
   my $colspan = ($only) ? '' : 'COLSPAN=2';
 
   print "<TR><TD $background VALIGN=TOP $colspan ALIGN=CENTER>\n";
-  # it seems that this is not the right thing to have for an ePub. How to fix?
+  # it seems that <input> is not the right thing to have for an ePub. How to fix?
   print "<INPUT TYPE=RADIO NAME=link onclick='linkit(\"\$$title\", 0, \"Latin\");'>\n";
   print "<FONT SIZE=1>$title Divinum officium</FONT></TD></TR>";
 }
