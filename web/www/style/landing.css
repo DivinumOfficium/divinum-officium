@@ -1,50 +1,11 @@
 @font-face {
-  src: url(AnglicanText.ttf);
-  font-family: anglican;
-}
-
-@font-face {
-  src: url(Blacklettersh.ttf);
-  font-family: blackletter;
-}
-
-@font-face {
-  src: url(DeutscheZierschrift.ttf);
-  font-family: deutsche;
-}
-
-html {
-  background-color: beige;
+  src: url(Canterbury.ttf);
+  font-family: canterbury;
 }
 
 div.container_main {
   display: flex;
   justify-content: space-evenly;
-}
-
-body {
-  margin: 0;
-  background-color: beige;
-  color: black;
-  text-align: justify;
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 0px;
-  font-size: 1.2em;
-  text-justify: auto;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-}
-
-a:hover {
-  color: red;
-  text-decoration: underline;
-  transition-duration: 250ms;
 }
 
 .paypal_button {
@@ -54,33 +15,45 @@ a:hover {
 }
 
 .title_top {
+  /*
   margin-left: auto;
   margin-right: auto;
+  */
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .title_part {
   height: 100%;
   padding: 30px;
   font-size: 20pt;
-  padding-top: 50px;
+  padding-top: 30px;
   color: red;
   font-variant: small-caps;
+  margin: 0;
 }
 
 span.do_title {
-  font-family: deutsche;
+  font-family: canterbury;
   font-size: 60pt;
+  margin: 0;
 }
 
 .home_menu {
   text-align: center;
+  /*
   margin-left: auto;
   margin-right: auto;
+  */
   display: flex;
   justify-content: space-evenly;
   font-size: 2em;
+}
+
+.home_menu > a {
+  margin: 0;
 }
 
 .site_backstory {
@@ -101,27 +74,8 @@ p.backstory_parts {
   border-left: solid 2px black;
 }
 
-.home_bottom_menu {
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  /*font-size: 1.5em*/
-}
-
 div.image_aside {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 10px;
-}
-
-hr {
-  /* Does not work for Chrome -- replace with div */
-  color: red;
 }
