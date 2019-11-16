@@ -1,15 +1,15 @@
 @font-face {
-  src: url(www/style/AnglicanText.ttf);
+  src: url(AnglicanText.ttf);
   font-family: anglican;
 }
 
 @font-face {
-  src: url(www/style/Blacklettersh.ttf);
+  src: url(Blacklettersh.ttf);
   font-family: blackletter;
 }
 
 @font-face {
-  src: url(www/style/DeutscheZierschrift.ttf);
+  src: url(DeutscheZierschrift.ttf);
   font-family: deutsche;
 }
 
