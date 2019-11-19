@@ -1,0 +1,40 @@
+[Rank]
+S. Martini Papae et Martyris;;Semiduplex;;2;;vide C4b
+
+[Rule]
+OPapaM=Martínum;
+vide C4b
+Gloria
+
+[Comment]
+# 12 XI – S. Martinho, Papa e Mártir
+! Comemoração
+! Paramentos vermelhos
+
+
+[Introitus]
+@Commune/C4b:Introitus
+
+[Oratio]
+@Commune/C4b:Oratio
+
+[Lectio]
+@Commune/C4b:Lectio
+
+[Graduale]
+@Commune/C4b:Graduale
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+@Commune/C4b:Secreta
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+@Commune/C4b:Postcommunio

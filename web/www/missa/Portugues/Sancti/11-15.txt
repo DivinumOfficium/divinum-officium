@@ -1,0 +1,48 @@
+[Rank]
+S. Alberti Magni Episcopi Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[Name]
+Alberte
+
+[RankNewcal]
+S. Alberti Magni Episcopi Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
+
+[Rule]
+vide C4a;
+Gloria
+CredoDa
+
+[Comment]
+# 15 XI – S. Alberto Magno, Bispo Confessor e Doutor
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Ó Deus, que ao B. Alberto, vosso Pontífice e Doutor, tornastes grande na arte de sujeitar a sabedoria humana à fé divina, concedei-nos, Vos suplicamos, que de tal modo sigamos as lições do seu magistério que nos céus gozemos a luz perfeita.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+Pelos presentes sacrifícios, Senhor, Vos suplicamos, olhai aplacado para nós, a fim de que com o exemplo e intercessão do B. Alberto consigamos alcançar piedosos afectos pelo mystério, que celebramos, da paixão do vosso Filho e nosso Senhor.
+$Per eumdem
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+Por estes sacrossantos sacramentos, que recebemos, Senhor, defendei-nos dos ataques dos nossos inimigos, e, intercedendo o B. Alberto, vosso Confessor e Pontífice, permiti que gozemos a paz perpétua.
+$Per Dominum

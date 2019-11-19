@@ -1,0 +1,45 @@
+[Rank]
+In Dedicatione Basilicarum Ss. Apostolorum Petri et Pauli;;Duplex maius;;4;;ex C8
+
+[Rank1960]
+In Dedicatione Basilicarum Ss. Apostolorum Petri et Pauli;;Duplex;;3;;ex C8
+
+[RankNewcal]
+In Dedicatione Basilicarum Ss. Apostolorum Petri et Pauli;;Duplex optional;;2;;vide C8
+
+[Rule]
+ex C8;
+Gloria
+CredoDA
+
+[Comment]
+# 18 XI – Dedicação da Basílica dos S. S. Pedro e Paulo
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C8:Introitus
+
+[Oratio]
+@Commune/C8:Oratio
+
+[Lectio]
+@Commune/C8:Lectio
+
+[Graduale]
+@Commune/C8:Graduale
+
+[Evangelium]
+@Commune/C8:Evangelium
+
+[Offertorium]
+@Commune/C8:Offertorium
+
+[Secreta]
+@Commune/C8:Secreta
+
+[Communio]
+@Commune/C8:Communio
+
+[Postcommunio]
+@Commune/C8:Postcommunio
