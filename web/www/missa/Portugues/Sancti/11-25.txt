@@ -1,0 +1,42 @@
+[Rank]
+S. Catharinae Virginis et Martyris;;Duplex;;3;;vide C6
+
+[RankNewcal]
+S. Catharinae Virginis et Martyris;;Duplex optional;;2;;vide C6
+
+[Rule]
+vide C6;
+Gloria
+
+[Comment]
+# 25 XI – Santa Catarina, Virgem e Mártir
+! 3 classe
+! Paramentos vermelhos
+
+[Introitus]
+@Commune/C6:Introitus
+
+[Oratio]
+Ó Deus, que destes a Lei a Moisés no cimo do monte Sinai e que nesse lugar colocastes miraculosamente pelos vossos Santos Anjos o corpo da B. Catarina, vossa Virgem e Mártir, concedei-nos, Vos rogamos, que pelos seus méritos e intercessão possamos chegar à montanha, que é Cristo:
+$Qui tecum
+
+[Lectio]
+@Commune/C6:Lectio
+
+[Graduale]
+@Commune/C6:Graduale
+
+[Evangelium]
+@Commune/C6:Evangelium
+
+[Offertorium]
+@Commune/C6:Offertorium
+
+[Secreta]
+@Commune/C6:Secreta
+
+[Communio]
+@Commune/C6:Communio
+
+[Postcommunio]
+@Commune/C6:Postcommunio

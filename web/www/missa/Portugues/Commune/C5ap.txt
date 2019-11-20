@@ -1,0 +1,36 @@
+[Name]
+Commune confessoris doctoris Paschal time; In medio
+
+[Rule]
+Gloria
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+@Commune/C4a:Oratio
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Lectio1]
+@Commune/C4a:Lectio1
+
+[Graduale]
+Aleluia, aleluia
+!Sb 45:9
+O Senhor amou-o, ornou-o e revestiu-o com a túnica da glória.
+!Oz 14:6
+O justo germinará, como o lírio, e florescerá para sempre diante do Senhor. Aleluia.
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+@Commune/C4a:Postcommunio

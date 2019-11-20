@@ -1,0 +1,39 @@
+[Rank]
+S. Teresiae Virginis;;Duplex;;3;;vide C6b
+
+[Rule]
+vide C6b;
+Gloria
+
+[Comment]
+# 15 X – Santa Teresa, Virgem
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C6b:Introitus
+
+[Oratio]
+Ouvi-nos, ó Deus, nosso Salvador, a fim de que, assim como nos alegramos na festa da vossa B. Virgem Teresa, assim também sejamos sustentados com o pão da sua celestial doutrina e Consigamos alcançar os afectos da sua piedosa devoção.
+$Per Dominum
+
+[Lectio]
+@Commune/C6b:Lectio
+
+[Graduale]
+@Commune/C6b:Graduale
+
+[Evangelium]
+@Commune/C6b:Evangelium
+
+[Offertorium]
+@Commune/C6b:Offertorium
+
+[Secreta]
+@Commune/C6b:Secreta
+
+[Communio]
+@Commune/C6b:Communio
+
+[Postcommunio]
+@Commune/C6b:Postcommunio
