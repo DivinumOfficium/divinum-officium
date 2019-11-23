@@ -134,14 +134,14 @@ cache_prayers();
 PrintTag
 
  $text =~ s/\_/ /g;
- if ($lang1 =~ /Latin/i) {$text = spell_var($text);}
+ if ($lang1 =~ /Latin/i) {$text = jtoi($text);}
  print "<TD $background WIDTH=50% VALIGN=TOP>" . setfont($blackfont,$text) . "</TD>\n";
 
   if (!$only) {
     $text = resolve_refs($popup, $lang2);    
     #$text = resolve_refs($text, $lang2);   
  	  $text =~ s/\_/ /g;
-      if ($lang2 =~ /Latin/i) {$text = spell_var($text);}
+      if ($lang2 =~ /Latin/i) {$text = jtoi($text);}
 	  print "<TD $background VALIGN=TOP>" . setfont($blackfont,$text) . "</TD></TR>\n";
   }
   print "</TABLE><BR>\n";

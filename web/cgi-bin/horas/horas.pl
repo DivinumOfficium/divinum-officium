@@ -105,7 +105,7 @@ sub horas
 
         $text1 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
 
-        if ($lang1 =~ /Latin/i) {$text1 = spell_var($text1);}
+        if ($lang1 =~ /Latin/i) {$text1 = jtoi($text1);}
         if ($text1  && $text1 !~ /^\s+$/) {setcell($text1, $lang1);}
 
         if (!$only)
@@ -119,7 +119,7 @@ sub horas
             }
 
             $text2 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
-            if ($lang2 =~ /Latin/i) {$text2 = spell_var($text2);}
+            if ($lang2 =~ /Latin/i) {$text2 = jtoi($text2);}
             if ($text2  && $text2 !~ /^\s+$/) {setcell($text2, $lang2);}
         }
     }

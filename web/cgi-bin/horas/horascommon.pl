@@ -1589,29 +1589,24 @@ sub nooctnat {
   return 0;
 }
 
-# Latin spelling variety in versions
-sub spell_var
+# substitute i for j (in Latin text)
+sub jtoi
 {
-  my $t = shift;
-  if (our $version =~ /1960/)
-  {
-    # substitute i for j
+    my $t = shift;
     # but not in html tags!
     my @parts = split(/(<[^<>]*>)/,$t);
+    my $replace_j = (our $version =~ /1960/);
     foreach ( @parts )
     {
-      next if /^</;
-      tr/Jj/Ii/;
-      s/H\-Iesu/H-Jesu/g;
+        next if /^</;
+        if ($replace_j)
+        {
+          tr/Jj/Ii/;
+          s/H\-Iesu/H-Jesu/g;
+        }
     }
     $t = join('', @parts);
-  }
-  else
-  {
-    $t =~ s/Génetrix/Génitrix/g;
-    $t =~ s/cotidiánum/quotidiánum/g;
-  }
-  return $t;
+    return $t;
 }
 
 
