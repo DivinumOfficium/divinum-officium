@@ -1,0 +1,81 @@
+@font-face {
+  src: url(Canterbury.ttf);
+  font-family: canterbury;
+}
+
+div.container_main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.paypal_button {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title_top {
+  /*
+  margin-left: auto;
+  margin-right: auto;
+  */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.title_part {
+  height: 100%;
+  padding: 30px;
+  font-size: 20pt;
+  padding-top: 30px;
+  color: red;
+  font-variant: small-caps;
+  margin: 0;
+}
+
+span.do_title {
+  font-family: canterbury;
+  font-size: 60pt;
+  margin: 0;
+}
+
+.home_menu {
+  text-align: center;
+  /*
+  margin-left: auto;
+  margin-right: auto;
+  */
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2em;
+}
+
+.home_menu > a {
+  margin: 0;
+}
+
+.site_backstory {
+  display: block;
+  /*
+			display: flex;
+			justify-content: space-evenly;
+			*/
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+p.backstory_parts {
+  padding: 20px;
+}
+
+.col_right {
+  border-left: solid 2px black;
+}
+
+div.image_aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

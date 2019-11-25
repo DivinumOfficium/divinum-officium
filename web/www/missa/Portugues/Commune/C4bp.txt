@@ -1,0 +1,36 @@
+[Name]
+Commune Summorum Pontificum Tempore Paschalis; Si diligis
+
+[Rule]
+Prefatio=Apostolis
+
+[Introitus]
+@Commune/C4b:Introitus
+
+[Oratio]
+@Commune/C4b:Oratio
+
+[Lectio]
+@Commune/C4b:Lectio
+
+[Graduale]
+Aleluia, aleluia.
+!Mt 16:18
+V. Tu és Pedro, e sobre esta pedra edificarei a minha Igreja. Aleluia.
+!Sl 44:17-18
+Vós os constituístes príncipes em toda a terra: e eles perpetuarão, Senhor, o vosso nome. Aleluia.
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+@Commune/C4b:Secreta
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+@Commune/C4b:Postcommunio

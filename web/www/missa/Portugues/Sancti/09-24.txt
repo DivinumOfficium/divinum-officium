@@ -1,0 +1,41 @@
+[Rank]
+Beatae Mariae Virginis de Mercede;;Duplex majus;;4;;ex C11
+
+[Rank1960]
+Beatae Mariae Virginis de Mercede;;Simplex;;1.1;;ex C11
+
+[Rule]
+ex C11;
+Gloria
+Prefatio=Maria=Festivitate
+
+[Comment]
+# 24 IX – B. V. Maria das Mercês
+
+[Introitus]
+@Tempora/C10:Introitus
+
+[Oratio]
+Ó Deus, que pela gloriosíssima Mãe do vosso Filho Vos dignastes aumentar a vossa Igreja com uma nova família, destinada a libertar os fiéis de Cristo do poder dos pagãos, concedei-nos, Vos rogamos, que, venerando piedosamente a inspiradora de uma tão notável instituição, sejamos, graças aos seus méritos e intercessão, livres de todos os pecados e do cativeiro do demónio.
+$Per eundem
+
+[Lectio]
+@Tempora/C10:Lectio
+
+[Graduale]
+@Tempora/C10:Graduale
+
+[Evangelium]
+@Tempora/C10:Evangelium
+
+[Offertorium]
+@Tempora/C10:Offertorium
+
+[Secreta]
+@Tempora/C10:Secreta
+
+[Communio]
+@Tempora/C10:Communio
+
+[Postcommunio]
+@Tempora/C10:Postcommunio

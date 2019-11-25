@@ -1,0 +1,47 @@
+[Rank]
+S. Callisti Papae et Martyris;;Duplex;;3;;vide C4b
+
+[Rank1570]
+S. Callisti Papae et Martyris;;Semiduplex;;2;;vide C3
+
+[RankNewcal]
+S. Callisti Papae et Martyris;;Duplex optional;;2;;vide C4b
+
+[Rule]
+vide C4b;
+Gloria
+
+[Comment]
+# 14 X – S. Calisto I, Papa e Mártir
+! 3 classe
+! Paramentos vermelhos 
+
+[Introitus]
+@Commune/C4b:Introitus
+
+[Oratio]
+Ó Deus, que nos vedes desfalecer por causa da nossa fraqueza, dignai-Vos pela vossa misericórdia restaurar-nos no vosso amor, segundo os exemplos dos vossos Santos.
+$Per Dominum
+
+[Lectio]
+@Commune/C4b:Lectio
+
+[Graduale]
+@Commune/C4b:Graduale
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+Que esta mística oblação nos aproveite, Senhor; e que nos livre das nossas faltas e nos assegure a salvação eterna.
+$Per Dominum
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+Dignai-Vos permitir, ó Deus omnipotente, que estes dons nos purifiquem das nossas faltas e que, produzindo em nós os seus efeitos, nos façam viver santamente.
+$Per Dominum

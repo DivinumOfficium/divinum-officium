@@ -1,0 +1,44 @@
+html {
+  background-color: white;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  color: black;
+  text-align: justify;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 0px;
+  font-size: 1.2em;
+  text-justify: auto;
+}
+
+div.horizontal_rule {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: red;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+  transition-duration: 250ms;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+}
