@@ -41,9 +41,7 @@ Instructions for cloning are available at the links under the 'clone URL' box on
 The website is contained in the web/ subdirectory of this repository. The other directories at the top level should not be served from a webserver.<BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Python</FONT></H3>
 It is possible to set up Divinum Officium as a local host using a Python script, and provided Perl is installed (see below). Using an Android device, this can be done via UserLAnd with its Ubuntu distribution and installing the lxde package therein. Next, download the appropriate packages (Git, Python, and then clone the Git repository as described above). Once the divinum-officium repository has been cloned, the following terminal syntax may be used:<BR><BR>
-cd ~/divinum-officium/web && python2 -m CGIHTTPServer<BR><BR>
-or, alternatively,<BR><BR>
-cd ~/divinum-officium/web && python -m http.server --cgi<BR><BR>
+cd ~/divinum-officium/web && python -m CGIHTTPServer<BR><BR>
 One may need to adjust python to python2 or python3, given the installed version. One may also need to adjust the path to the directory, provided the path ends in /web.<BR><BR>
 Once the server is active and running in the terminal window, navigate to (typically) 0.0.0.0:8000 in your browser. Divinum Officium should then be functional as on the live site.<BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Apache</FONT></H3>
