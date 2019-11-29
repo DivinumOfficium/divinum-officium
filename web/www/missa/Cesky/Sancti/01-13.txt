@@ -1,0 +1,51 @@
+[Rank]
+Die Octava Epiphaniae;;Duplex majus;;4;;ex Sancti/01-06
+
+[Rank1960]
+In Commemoratione Baptismatis Domini Nostri Jesu Christi;;Duplex II. classis;;5;;ex Sancti/01-06
+
+[Rule]
+ex Sancti/01-06;
+Gloria
+Credo
+Prefatio=Epi
+
+[Comment]
+# Oktáv Zievení Páně
+! Bohoslužba u sv. Petra
+! 2 třída
+! Barva bílá
+Dnešní celá mše sv. je ozářena druhým tajemstvím svátku Zjevení Páne — křtem v Jordáně.
+
+[Introitus]
+@Sancti/01-06:Introitus
+
+[Oratio]
+Bože, jehož Jednorozený zjevil se v podstatě našeho těla, uděl, prosíme, abychom skrze něho, jejž jsme poznali nám zevně podobna, zasloužili si vnitřně přetvoření býti.
+$Qui tecum
+
+[Lectio]
+@Sancti/01-06:Lectio
+
+[Graduale]
+@Sancti/01-06:Graduale
+
+[Evangelium]
+Slova ++ svatého Evangelia podle Jana
+!J 1,29-34
+!x!Jelikož Pán Ježíš ve svém spasitelném díle je zástupcem hřišného lidstva, nechá si dáti od Jana křest pokání. Tím, že se voda dotekla jeho svateho těla, byla posvěcena a získala silu očistiti nás od hříchů. Nebe samo spěchá, aby oznámilo, že není Kristus hříšník jako ostatní, kteří přicházeli k Janovi.
+Za onoho času: Uzřel Jan Ježíše, an jde k němu; i řekl: „Ejhle, Beránek Boží, který snímá hříchy světa. To jest ten, o němž jsem pravil: ,Po mně přijde muž, jenž přede mnou jest, neboť byl prve nežli já.“ Ale já jsem ho neznal, ale proto jsem přišel já křtít vodou, aby uveden byl v známost v lidu israelském.“ I vydal Jan svědectví řka: „Viděl jsem Ducha jako holubici sestupovati s nebe, a zůstal na něm. A já jsem ho neznal, ale ten, jenž mě poslal křtít vodou, ten mi řekl: ,Nad kým uvidíš Ducha sestupovati a na něm zůstávati, ten jest to, jenž křtí Duchem Svatým.‘ A já jsem uviděl a vydal svědectví, že tento jest Syn Boží.“
+
+[Offertorium]
+@Sancti/01-06:Offertorium
+
+[Secreta]
+Dary obětní tobě, Pane, na památku zjevení Syna tvého přinášíme, snažně prosíce, aby on, jako jest původcem našich darů, tak je i milosrdně přijal, Ježíš Kristus, Pán náš.
+$Qui tecum.
+
+[Communio]
+@Sancti/01-06:Communio
+
+[Postcommunio]
+Nebeským světlem, prosíme, Pane, vždy a všude nás předcházej, abychom tajemství, na němž jsi chtěl, bychom měli podíl, i s čistým zírali pohledem i s hodnou přijali láskou.
+$Per Dominum

@@ -1,0 +1,78 @@
+[Rank]
+S. Thomae Episcopi et Martyris;;Duplex;;3;;vide C2
+
+[Rank1570]
+S. Thomae Episcopi et Martyris;;Semiduplex;;2;;vide C2
+
+[Rank1960]
+Die quinta post Nativitatem;;Duplex II class;;5;;ex Sancti/12-25m3
+
+[RankNewcal]
+S. Thomae Episcopi et Martyris;;Duplex optional;;2;;vide C2
+
+[Rule]
+vide C2;
+Gloria
+Credo
+Prefatio=Nat
+
+[Comment]
+# Sv. Tomáše z Canterbury, biskupa a mučedníka
+! Připomínka
+! Barva červená
+✝ 1170
+
+[Introitus]
+v. Radujme se všichni v Pánu, oslavujíce svátek na počest svatého Tomáše mučedníka, z jehož vitězného utrpení radují se Anděléva chválí Syna Božího.
+!Ž 32,1
+Plesejte, spravedliví, v Pánu; dobrým přísluší chváliti.
+&Gloria
+v. Radujme se všichni v Pánu, oslavujíce svátek na počest svatého Tomáše mučedníka, z jehož vitězného utrpení radují se Anděléva chválí Syna Božího.
+
+[Oratio]
+Bože, pro jehož Církev slavný biskup Tomáš padl pod meči bezbožných, uděl, prosime, aby všichni, kteří vzývaji jeho pomoc, dosáhli spasného vyslyšení své prosby.
+$Per Dominum
+
+[Commemoratio Oratio]
+!Připomínka Narození Páně
+@Sancti/12-25m3:Oratio
+
+[Lectio]
+Čtení z listu sv. Pavla Apoštola k Židům
+!Žd 5,1-6
+Bratři, každý velekněz, jsa brán z lidí, ustanovuje se pro lidí ve věcech, které se vztahují k Bohu, aby přinášel dary a oběti za hříchy (a to takový), který by mohl lítost míti nad nevědomými a bloudícími, jsa též sám obklíčen slabostí; a proto má za hříchy obětovati jak za lid, tak za sebe. A nikdo nebere té důstojnosti sobě sám, nýbrž jsa povolán od Boha, jakož i Aron. Tak ani Kristus neosobil si sám důstojnosti velekněze, nýbrž dal mu ji ten, jenž k němu pravil: „Syn můj jsi ty; já dnes zplodil jsem tebe“, jakož i na jiném místě dí: „Ty jsi kněz na věky podle řádu Melchisedechova.“
+
+[Graduale]
+!Sir 44,16
+Hle, kněz veliký, jenž ve dnech svých Bohu se líbil.
+!Sir 44,20
+Nikdo nebyl nalezen, jenž by podobně jako on zachovával zákona Nejvyššího. Aleluja, aleluja,
+!J 10,14
+V. Já jsem pastýř dobrý, a znám ovce své a znají mne mé. Aleluja.
+
+[Evangelium]
+@Tempora/Pasc2-0:Evangelium
+
+[Offertorium]
+!Ž 20,4-5
+Položil jsi, Pane, na hlavu jeho korunu z kamení drahého; života žádal od tebe, i udělil jsi mu, aleluja.
+
+[Secreta]
+Dary tobě, Pane, obětované, posvěť a usmířen jimi na přímluvu svatého Tomáše, mučedníka svého a biskupa, na nás milostivě pohleď.
+$Per Dominum
+
+[Commemoratio Secreta]
+!Připomínka Narození Páně
+@Sancti/12-25m3:Secreta
+
+[Communio]
+!J 10,14
+Já jsem pastýř dobrý, a znám ovce své a znají mne mé.
+
+[Postcommunio]
+Toto přijímání, Pane, nechť nás očistí od hříchů a na přímluvu svatého Tomáše, mučedníka tvého a biskupa, nechť nás učiní účastny nebeského léku.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+!Připomínka Narození Páně
+@Sancti/12-25m3:Postcommunio

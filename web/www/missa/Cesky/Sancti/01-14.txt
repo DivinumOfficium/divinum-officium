@@ -1,0 +1,64 @@
+[Rank]
+S. Hilarii Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[RankNewcal]
+S. Hilarii Episcopi Confessoris Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
+
+[Name]
+Hilari
+
+[Rule]
+vide C4a;
+Gloria
+CredoDa
+
+[Comment]
+# Sv. Hilaria, biskupa, vyznavače a Učitele Církve,
+! 3 třída
+! Barva bílá
+✝ 367 v Poitiers
+
+Připomínka sv. Kněze a Mučedníka Felixe
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+@Commune/C4a:Oratio:s/N\./Hilaria/
+$Per Dominum.
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+@Commune/C4a:Secreta:s/N\./Hilaria/
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+@Commune/C4a:Postcommunio:s/N\./Hilarius/
+
+[Commemoratio Oratio]
+!Připomínka sv. Kněze a Mučedníka Felixe
+Uděl, prosíme, všemohoucí Bože, aby příklady tvých Svatých nás k lepšímu životu pobídly, abychom také napodobovali skutky těch, jejichž slavnost konáme.
+$Per Dominum
+
+[Commemoratio Secreta]
+!Připomínka sv. Kněze a Mučedníka Felixe
+Obětní dary, Pane, obětované tobě skrze zásluhy svatého Felixe, mučedníka tvého, dobrotivě přijmi a uděl,aby se nám staly ustavičnou pomocí.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+!Připomínka sv. Kněze a Mučedníka Felixe
+Naplnění jsouce svatými tajemstvími prosíme, Pane, aby nám přímluvami svatého Felixe, mučedníka tvého, jehož slavnost konáme, pomaháno bylo.
+$Per Dominum

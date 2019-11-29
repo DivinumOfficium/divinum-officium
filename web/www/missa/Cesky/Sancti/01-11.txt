@@ -1,0 +1,31 @@
+[Rank]
+Sexta die infra Octavam Epiphaniae;;Semiduplex;;2.1;;ex Sancti/01-06
+
+[Rank1960]
+Die Undecima Januarii;;Simplex;;1.2;;vide Sancti/01-06
+
+[Rule]
+CPapaM=Hyginus;
+Gloria
+CredoDA
+Prefatio=Epi
+Suffragium=Maria2;;Papa;Ecclesia;;
+Infra octavam Epiphaniae Domini
+
+[Commemoratio Oratio]
+!Připomínka sv. Hygina, papeže a mučedníka
+@Commune/C2c:Oratio:s/N\./Hygina/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Oratio:s/N\./Hygina/
+
+[Commemoratio Secreta]
+!Připomínka sv. Hygina, papeže a mučedníka
+@Commune/C2c:Secreta:s/N\./Hygina/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Secreta
+
+[Commemoratio Postcommunio]
+!Připomínka sv. Hygina, papeže a mučedníka
+@Commune/C2c:Postcommunio:s/N\./Hygina/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Postcommunio

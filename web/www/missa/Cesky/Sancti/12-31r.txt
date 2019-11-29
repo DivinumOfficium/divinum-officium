@@ -1,0 +1,29 @@
+[Rank]
+Die septima post Nativitatem;;Duplex II class;;5;;ex Sancti/12-30
+
+[Rule]
+CPapaC=Silvéstrum;
+ex Sancti/12-30;
+Gloria
+Credo
+Prefatio=Nat
+
+[Comment]
+# Sv. Silvestra. I., papeže a vyznavače
+! Připomínka
+! Barva bílá
+✝ 335
+
+[Commemoratio Oratio]
+! Připomínka sv. Silvestra I.
+@Commune/C4b:Oratio:s/N\., Mučedníka svého a/Silvestra,/
+
+[Commemoratio Secreta]
+! Připomínka sv. Silvestra I.
+@Commune/C4b:Secreta
+
+[Commemoratio Postcommunio]
+! Připomínka sv. Silvestra I.
+@Commune/C4:Postcommunio
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem

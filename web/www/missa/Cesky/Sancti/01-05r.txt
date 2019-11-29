@@ -1,0 +1,21 @@
+[Rank]
+Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
+
+[Rule]
+CPapaM=Telésphorum;
+vide Sancti/01-01
+Gloria
+Prefatio=Nat
+
+[Comment]
+# Svatvečer Zjevení Páně
+Jinak bývá svatvečer velkých svátků obestřen smutkem pokání, dnešní den však nese na sobě radostný odlesk blízkých Vánoc. Také liturgická barva je bílá a ne fialová jako o jiných svatvečerech.
+
+[Commemoratio Oratio]
+@Sancti/01-05:Commemoratio Oratio
+
+[Commemoratio Secreta]
+@Sancti/01-05:Commemoratio Secreta
+
+[Commemoratio Postcommunio]
+@Sancti/01-05:Commemoratio Postcommunio

@@ -1,0 +1,58 @@
+[Rank]
+S. Luciae Virginis et Martyris;;Duplex;;3;;ex C6b
+
+[Rule]
+vide C6b;
+Gloria
+
+[Comment]
+# Sv. Lucie, panny a mučednice
+! 3 třídy
+! Červená barva
+✝ 304 v Syrakusách
+
+[Introitus]
+@Commune/C6b:Introitus
+
+[Oratio]
+@Commune/C6b:Oratio:s/N\./Lucie/
+
+[Commemoratio Oratio]
+!Pro Octava Conceptionis Immaculatæ.
+@Sancti/12-08:Oratio
+
+[Lectio]
+@Commune/C6b:Lectio
+
+[Graduale]
+!Ž 44,8
+Milovala jsi spravedlnost a nenáviděla jsi nepravosti.
+V. Proto pomazal tě Bůh, Bůh tvůj olejem radosti.
+Aleluja, aleluja.
+!Ž 44,3
+V. Rozlita je milost na rtech tvých, proto požehnal ti Bůh na věky, aleluja.
+
+[Evangelium]
+@Commune/C6a:Evangelium
+
+[Offertorium]
+!Ž 44,15-16
+Panny přivádějí se s ní ke Králi, družky její přivádějí se k tobě za jásotu a radosti; uvádějí se do svatyně Krále Pána.
+
+[Secreta]
+@Commune/C6b:Secreta
+
+[Commemoratio Secreta]
+!Pro Octava Conceptionis Immaculatæ.
+@Sancti/12-08:Secreta
+
+[Communio]
+!Ž 118,161-162
+Knížata pronásledovala mne bez příčiny, avšak jenom slov tvých bálo se srdce mé; já radovati se budu z řečí tvých jako ten,kdo našel hojnou kořist.
+
+[Postcommunio]
+@Commune/C6b:Postcommunio
+
+[Commemoratio Postcommunio]
+!Pro Octava Conceptionis Immaculatæ.
+@Sancti/12-08:Postcommunio
