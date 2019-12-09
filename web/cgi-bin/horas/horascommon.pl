@@ -1809,7 +1809,7 @@ sub spell_var {
     $t = join('', @parts);
   } else {
     $t =~ s/Génetrix/Génitrix/g;
-    $t =~ s/cotidiánum/quotidiánum/g;
+    $t =~ s/\bco(t[ií]d[ií])/quo$1/g;
   }
   return $t;
 }
