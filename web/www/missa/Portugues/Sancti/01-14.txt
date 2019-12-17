@@ -13,19 +13,15 @@ Gloria
 CredoDa
 
 [Comment]
-# 14 I – Św. Hilarego, Biskupa, Wyznawcy i Doktora Kościoła
+# 14 I – S. Hilário, Bispo Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
-Św. Hilary, biskup Poiters, nieustannie gromił herezję ariańską w swoich kazaniach i przemówieniach synodalnych. Cesarz Konstancjusz, zwolennik arianizmu, dwukrotnie skazywał go na wygnanie. Oprócz innych dzieł św. Hilary napisał «Dwanaście ksiąg o Trójcy Przenajświętszej». Zmarł 13 stycznia 367 roku.
-
-Wspomnienie świętego Feliksa, kapłana i męczennika. Św. Feliks żył w Noli (południowe Włochy). W III wieku okrutnie prześladowany za wiarę otrzymał tytuł męczennika. Jego grób zasłynął cudami i stał się celem pielgrzymek. Św. Paulin jemu przypisuje swoje nawrócenie.
 
 [Introitus]
 @Commune/C4a:Introitus
 
 [Oratio]
-Boże, Tyś dał ludowi Swemu świętego Hilarego za pośrednika zbawienia wiecznego, spraw, prosimy Cię, abyśmy mogli mieć orędownikiem w niebie tego, który na ziemi był dla nas mistrzem życia.
-$Per Dominum.
+@Commune/C4a:Oratio
 
 [Lectio]
 @Commune/C4a:Lectio
@@ -49,16 +45,16 @@ $Per Dominum.
 @Commune/C4a:Postcommunio
 
 [Commemoratio Oratio]
-!Comemoração św. Feliksa
-Prosimy Cię, wszechmogący Boże, niechaj przykłady Twoich Świętych zachęcą nas do lepszego życia, abyśmy obchodząc ich święta naśladowali ich czyny.
+!Comemoração de S. Félix
+Concedei-nos, ó omnipotente Deus, que os exemplos dos vossos Santos nos incitem a uma vida melhor, de que modo que imitemos tambe´m as acções daquele cuja solenidade celebramos.
 $Per Dominum
 
 [Commemoratio Secreta]
-!Comemoração św. Feliksa
-Prosimy Cię, Panie, przyjmij łaskawie przez zasługi św. Feliksa, Twego Męczennika, ofiarę, którą Ci składamy, i spraw, aby się stała dla nas nieustanną pomocą.
+!Comemoração de S. Félix
+Aceitai benignamente, Senhor, as hóstias que Vos oferecemos em honra dos méritos do B. Félix, vosso Mártir, e permiti que nos alcancem o vosso perpétuo auxílio.
 $Per Dominum
 
 [Commemoratio Postcommunio]
-!Comemoração św. Feliksa
-Nasyceni zbawiennym Sakramentem prosimy Cię, Panie, aby wspierały nas modły św. Feliksa, Męczennika Twego, którego uroczystość obchodzimy.
+!Comemoração de S. Félix
+Havendo sido saciados com os salutares dons, dignai-Vos conceder-nos, Senhor, que sejamos auxiliados pelas orações do vosso B. Mártir Félix, cuja solenidade celebrámos.
 $Per Dominum
