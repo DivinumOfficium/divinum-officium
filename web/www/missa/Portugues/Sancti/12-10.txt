@@ -8,25 +8,24 @@ CPapaM=Melchíadem;
 Doxology=Nat
 
 [Comment]
-# 10 XII – Św. Melchiadesa, Papieża i Męczennika
+# 10 XII – S. Melquíades, Papa e Mártir
 ! Wspomnienie
 ! Paramentos vermelhos
-Św. Melchiades wycierpiał wiele za wiarę w czasie ostatnich prześladowań rzymskich. Dożył jednak szczęśliwej chwili ogłoszenia edyktu mediolańskiego, którym cesarz Konstantyn zapewnił Kościołowi wolność. Zmarł w roku 314 śmiercią naturalną.
 
 [Commemoratio Oratio]
-! Wspomnienie św. Melchiadesa
-@Commune/C2c:Oratio:s/N\./Melchíadis/
+! Comemoração S. Melquíades
+@Commune/C2c:Oratio:s/N\./Melquíades/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Oratio Gregem
 
 [Commemoratio Secreta]
-! Wspomnienie św. Melchiadesa
-@Commune/C2c:Secreta:s/N\./Melchíadis/
+! Comemoração S. Melquíades
+@Commune/C2c:Secreta:s/N\./Melquíades/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Secreta Gregem
 
 [Commemoratio Postcommunio]
-! Wspomnienie św. Melchiadesa
-@Commune/C2c:Postcommunio:s/N\./Melchíade/
+! Comemoração S. Melquíades
+@Commune/C2c:Postcommunio:s/N\./Melquíades/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Postcommunio Gregem

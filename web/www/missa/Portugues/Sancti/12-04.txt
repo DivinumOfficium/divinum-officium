@@ -13,18 +13,15 @@ Gloria
 CredoDA
 
 [Comment]
-# 04 XII – Św. Piotra Chryzologa, Biskupa, Wyznawcy i Doktora Kościoła
+# 04 XII – S. Pedro Crisólogo, Bispo Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
-Niepospolity dar wymowy zjednał św. Piotrowi przydomek «Chryzologa», czyli «Złotoustego». Widzenie papieża Sykstusa III przyczyniło się do wyniesienia św. Piotra na stolicę biskupią w Rawennie w r. 433. Wspólnie z papieżem Leonem I bronił dogmatu o dwu naturach w Chrystusie przeciw monofizytom. Umarł w roku 450.
-
-Wspomnienie św. Barbary, Dziewicy i Męczennicy. Św. Barbara poniosła męczeństwo w Nikomedii na przełomie III i IV wieku. Jest patronką górników i artylerzystów oraz patronką dobrej śmierci.
 
 [Introitus]
 @Commune/C4a:Introitus
 
 [Oratio]
-Boże, Tyś cudownie objawił Swoją wolą, by na rządcę i nauczyciela Twego Kościoła wybrano św. Piotra Chryzologa, spraw, prosimy, abyśmy mogli mieć orędownikiem w niebie tego, który na ziemi był dla nas mistrzem życia.
+Ó Deus, que para governar e instruir a vossa Igreja Vos dignastes escolher o B. Pedro Crisólogo, egrégio Doutor, o qual nos foi indicado por uma forma divina, concedei-nos, Vos imploramos, que assim como o tivemos como Doutor na terra, assim também mereçamos alcançar a sua intercessão nos céus.
 $Per Dominum
 
 [Lectio]
@@ -32,11 +29,11 @@ $Per Dominum
 
 [Graduale]
 !Sb 44:16
-Oto wielki kapłan, który za dni swoich podobał się Bogu.
+Eis o grande sacerdote que nos dias da sua vida agradou a Deus.
 !Sl 44:20
-Nie znalazł się jemu podobny, który by zachował prawo Najwyższego. Aleluia, aleluia.
+Ninguém o igualou na observância das leis do Altíssimo. Aleluia, aleluia.
 !Sl 109:4
-Tyś kapłanem na wieki na wzór Melchizedeka. Aleluia.
+Tu és sacerdote para sempre, segundo a ordem de Melquisedeque. Aleluia.
 
 [Evangelium]
 @Commune/C4a:Evangelium
@@ -45,28 +42,23 @@ Tyś kapłanem na wieki na wzór Melchizedeka. Aleluia.
 @Commune/C4a:Offertorium
 
 [Secreta]
-Panie, niech nam nie zabraknie serdecznej modlitwy świętego Piotra Chryzologa, Twego Biskupa i Doktora, która zaleci Tobie naszą ofiarę i wyjedna nam Twoje przebaczenie.
-$Per Dominum.
+@Commune/C4a:Secreta
 
 [Communio]
 !Mt 25:20; 25:21
-Panie, dałeś mi pięć talentów, otom drugie pięć zyskał. Dobrze, sługo prawy i wierny, żeś w małym był wierny, dam ci władzę nad wieloma: wejdź do wesela Pana twego.
+Senhor, entregastes-me cinco talentos; eis aqui outros cinco que lucrei. «Está bem, servo bom e fiel; visto que foste fiel em pouca cousa, Eu te colocarei sobre muitas; entra na glória do teu Senhor».
 
 [Postcommunio]
-Prosimy Cię, Panie, niech święty Piotr Chryzolog, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
-$Per Dominum
+@Commune/C4a:Postcommunio
 
 [Commemoratio Oratio]
-!Comemoração św. Barbary
-Panie, niech nas broni od wszelkich przeciwności wstawiennictwo św. Barbary, Dziewicy i Męczennicy Twojej. Obyśmy za jej chwalebnym orędownictwem zasłużyli sobie przez prawdziwą pokutę i szczerą spowiedź na przyjęcie w godzinę śmierci Najświętszego Sakramentu Ciała i Krwi Pana naszego Jezusa Chrystusa:
-$Per Dominum
+!Comemoração de Santa Bárbara, Virgem e Mártir
+@Commune/C6b:Oratio
 
 [Commemoratio Secreta]
-!Comemoração św. Barbary
-Przyjmij, Panie, dary, które Ci składamy w uroczystość świętej Barbary, Dziewicy i Męczennicy Twojej: ufamy, że jej wstawiennictwo przyczyni się do naszego wyzwolenia.
-$Per Dominum
+!Comemoração de Santa Bárbara, Virgem e Mártir
+@Commune/C6b:Secreta
 
 [Commemoratio Postcommunio]
-!Comemoração św. Barbary
-Panie, niech nas wspomaga przyjęty Sakrament, i za wstawiennictwem świętej Barbary, Twojej Dziewicy i Męczennicy, niech sprawi, byśmy się radowali nieustanną opieką. 
-$Per Dominum
+!Comemoração de Santa Bárbara, Virgem e Mártir
+@Commune/C6b:Postcommunio
