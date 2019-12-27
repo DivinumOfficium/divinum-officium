@@ -1023,7 +1023,15 @@ sub psalmi_major {
   } else {
     @p = @psalmi;
   }
-  my $lim = ($version =~ /monastic/i && $hora =~ /Vespera/i) ? 4 : 5;
+  my $lim = 5;
+  if ($version =~ /monastic/i && $hora =~ /Vespera/i) {
+    $lim = 4;
+    if ($antiphones[4]) {
+      local($a1,$p1) = split(/;;/, $antiphones[3]);
+      local($a2,$p2) = split(/;;/, $antiphones[4]);
+      $antiphones[3] = "$a2;;$p1"
+    }
+  }
 
   if (@antiphones) {
     for ($i = 0; $i < $lim; $i++) {
