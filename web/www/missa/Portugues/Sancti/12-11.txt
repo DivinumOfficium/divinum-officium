@@ -13,17 +13,15 @@ vide C4;
 Gloria
 
 [Comment]
-# 11 XII – Św. Damazego, Papieża i Wyznawcy
+# 11 XII – S. Dâmaso I, Papa e Confessor
 ! 3 classe
 ! Paramentos brancos
-Święty Damazy został nazwany przez św. Hieronima «dziewiczym nauczycielem dziewiczego Kościoła». W początkach wolności Kościoła stanął wobec konieczności obrony wiary przed herezją ariańską. Na jego życzenie św. Hieronim opracował przekład Pisma św. na język łaciński, który pod nazwą «Wulgaty» stał się urzędowym tekstem Kościoła. Ułożył wiele inskrypcji na grobach męczenników, które stanowią ważne dokumenty ich kultu. Zmarł w roku 384 i został pochowany w bazylice Św. Wawrzyńca «in Damaso», którą ufundował.
 
 [Introitus]
 @Commune/C4b:Introitus
 
 [Oratio]
-Wiekuisty Pasterzu, wejrzyj łaskawie na Swoją trzodę i otocz ją nieustanną opieką za przyczyną świętego Damazego, Papieża, którego ustanowiłeś pasterzem całego Kościoła.
-$Per Dominum
+@Commune/C4b:Oratio
 
 [Lectio]
 @Commune/C4b:Lectio
