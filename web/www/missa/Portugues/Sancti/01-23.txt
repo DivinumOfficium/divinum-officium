@@ -7,18 +7,15 @@ Gloria
 !Suffragium=Maria2;;
 
 [Comment]
-# 23 I – Św. Rajmunda z Pennafort, Wyznawcy
+# 23 I – S. Raimundo de Penhafort, Confessor
 ! 3 classe
 ! Paramentos brancos
-Św. Rajmund, dominikanin, pracował w Hiszpanii nad nawróceniem Maurów. Był współzałożycielem zakonu zajmującego się wykupywaniem jeńców chrześcijańskich z niewoli. Wybitny prawnik i moralista pełnił przez dwa lata urząd generała zakonu. Jest czczony jako patron spowiedników. Zmarł w 1275 roku licząc 95 lat.
-
-Wspomnienie św. Emercjanny, Dziewicy i Męczennicy. Według akt męczeństwa św. Agnieszki, Emercjanna, jej siostra mleczna, jako katechumenka została ukamienowana przez pogan w czasie modlitwy na grobie św. Agnieszki. Przez chrzest krwi weszła do Kościoła i osiągnęła chwałę Świętych.
 
 [Introitus]
 @Commune/C5:Introitus
 
 [Oratio]
-Boże, który powołałeś św. Rajmunda na wybitnego Szafarza sakramentu Pokuty i cudownie przeprowadziłeś go po falach morskich: spraw, abyśmy za jego wstawiennictwem czynili godne owoce i zdołali zawinąć do portu wiecznego zbawienia.
+Ó Deus, que Vos dignastes escolher o B. Raimundo para o tornar em um insigne ministro do sacramento da penitência e que milagrosamente o fizestes atravessar as águas do mar, concedei-nos que por sua intercessão «façamos frutos dignos de penitência» e possamos chegar ao porto da salvação eterna.
 $Per Dominum
 
 [Lectio]
@@ -43,16 +40,13 @@ $Per Dominum
 @Commune/C5:Postcommunio
 
 [Commemoratio Oratio]
-! de św. Emercjanny
-Prosimy Cię, Panie, aby święta Emerencjana, Dziewica i Męczennica Twoja, wybłagała nam przebaczenie; ona bowiem zawsze podobała się Tobie dzięki zasłudze czystości i wyznaniu Twojej mocy.
-$Per Dominum
+! de Santa Emerenciana
+@Commune/C6a:Oratio
 
 [Commemoratio Secreta]
-! de św. Emercjanny
-Panie, wejrzyj łaskawie na ofiary, które Ci składamy, i za wstawiennictwem św. Emerencjany, Dziewicy i Męczennicy Twojej, wyzwól nas z więzów naszych grzechów.
-$Per Dominum
+! de Santa Emerenciana
+@Commune/C6a:Secreta
 
 [Commemoratio Postcommunio]
-! de św. Emercjanny
-Darem Bożym szczodrze nasyceni, prosimy Cię, Panie Boże nasz, abyśmy za wstawiennictwem świętej Emerencjany, Twojej Dziewicy i Męczennicy, zawsze czerpali zeń życie.
-$Per Dominum
+! de Santa Emerenciana
+@Commune/C6a:Postcommunio

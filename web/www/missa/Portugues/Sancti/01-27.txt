@@ -10,16 +10,15 @@ Gloria
 CredoDA
 
 [Comment]
-# 27 I – Św. Jana Chryzostoma, Wyznawcy, Biskupa i Doktora Kościoła
+# 27 I – S. João Crisóstomo, Bispo Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
-Św. Jan Chryzostom, urodzony około roku 354 w Antiochii, rozpoczął karierę urzędniczą. Wkrótce jednak porzucił ją i jako pustelnik oddał się ascezie i studiowaniu Pisma św. Następnie został kapłanem w Antiochii, wreszcie biskupem w Konstantynopolu. Dar wymowy zjednał mu przydomek Chryzostoma, to jest Złotoustego. Prześladowany przez cesarzową Eudoksję zmarł na wygnaniu w Poncie 14 września 407 roku. Relikwie jego spoczywają w bazylice św. Piotra w Rzymie.
 
 [Introitus]
 @Commune/C4a:Introitus
 
 [Oratio]
-Prosimy Cię, Panie, niech łaska niebieska daje wzrost Twojemu Kościołowi, który raczyłeś oświecić nauką i chwalebnymi zasługami św. Jana Złotoustego, Wyznawcy Twego i Biskupa.
+Vos suplicamos, Senhor, que a graça celestial aumente a vossa Igreja, a qual quisestes ilustrar com os gloriosos méritos e ensinos do B. João Crisóstomo, vosso Confessor e Pontífice.
 $Per Dominum.
 
 [Lectio]
@@ -27,11 +26,11 @@ $Per Dominum.
 
 [Graduale]
 !Sb 44:16
-Oto wielki kapłan, który za dni swoich podobał się Bogu.
+Eis o grande sacerdote que nos dias da sua vida agradou a Deus.
 !Sb 44:20
-Nie znalazł się jemu podobny, który by zachował prawo Najwyższego. Aleluia, aleluia.
+Ninguém o igualou na observância das leis do Altíssimo. Aleluia, aleluia.
 !Tg 1:12
-Błogosławiony człowiek, który zniesie pokusę, bo utwierdziwszy się otrzyma wieniec żywota. Aleluia.
+Bem-aventurado o varão que sofre com paciência a tentação, porque, quando acabar a provação, alcançará a coroa da vida. Aleluia.
 
 [Evangelium]
 @Commune/C4a:Evangelium
@@ -40,12 +39,10 @@ Błogosławiony człowiek, który zniesie pokusę, bo utwierdziwszy się otrzyma
 @Commune/C4a:Offertorium
 
 [Secreta]
-Panie, niech nam nie zabraknie serdecznej modlitwy świętego Jana Złotoustego, Twego Biskupa i Doktora, która zaleci Tobie naszą ofiarę i wyjedna nam Twoje przebaczenie.
-$Per Dominum.
+@Commune/C4a:Secreta
 
 [Communio]
 @Commune/C4a:Communio
 
 [Postcommunio]
-Prosimy Cię, Panie, niech święty Jan Złotousty, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
-$Per Dominum
+@Commune/C4a:Postcommunio
