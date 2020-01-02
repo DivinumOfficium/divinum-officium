@@ -195,6 +195,7 @@ sub specials {
 
       if ( $dayofweek > 0
         && $version !~ /1960/
+        && $version !~ /monastic/i
         && $winner{Rank} =~ /Feria|Vigilia/i
         && $commune !~ /C10/
         && ($rank < 3 || $dayname[0] =~ /Quad6/)
