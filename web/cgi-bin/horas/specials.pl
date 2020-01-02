@@ -697,7 +697,6 @@ sub psalmi_minor {
       if ($dayofweek > 0) { $i++; }
       if ($dayofweek > 1) { $i++; }
     }
-    if ($hora =~ /prima/i && $winner =~ /Sancti/i && $rank >= 4) { $i = 7; }
     $psalmi[$i] =~ s/\=/\;\;/;
     my @a = split(';;', $psalmi[$i]);
     $ant = chompd($a[1]);
@@ -851,7 +850,7 @@ sub psalmi_minor {
 
   # The rules for determining the psalmody at Prime in the Tridentine
   # rubrics are somewhat simpler.
-  unless ($version =~ /Trident/i) {
+  unless ($version =~ /Trident|monastic/i) {
 
     #prima psalm set for feasts
     if ($hora =~ /prima/i && $feastflag) {
