@@ -843,7 +843,7 @@ sub psalmi_minor {
   if ($ant) { $ant = "Ant. $ant"; }
   my @ant = split('\*', $ant);
   postprocess_ant($ant, $lang);
-  $ant1 = ($version !~ /1960/) ? $ant[0] : $ant;    #difference between 1955 and 1960
+  $ant1 = ($version !~ /1960|monastic/i) ? $ant[0] : $ant;    #difference between 1955 and 1960
   setcomment($label, 'Source', $comment, $lang, $prefix);
   $psalms =~ s/\s//g;
   @psalm = split(',', $psalms);

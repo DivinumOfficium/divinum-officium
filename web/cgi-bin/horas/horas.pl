@@ -909,7 +909,7 @@ sub ant_Benedictus : ScriptFunc {
     $ant = $specials{"Adv Ant $day" . "L"};
   }
   my @ant_parts = split('\*', $ant);
-  if ($num == 1 && $duplex < 3 && $version !~ /1960/) { return "Ant. $ant_parts[0]"; }
+  if ($num == 1 && $duplex < 3 && $version !~ /1960/ && $version !~ /monastic/i) { return "Ant. $ant_parts[0]"; }
 
   if ($num == 1) {
     return "Ant. $ant";
@@ -954,7 +954,7 @@ sub ant_Magnificat : ScriptFunc {
     $num = 2;
   }
   my @ant_parts = split('\*', $ant);
-  if ($num == 1 && $duplex < 3 && $version !~ /1960/) { return "Ant. $ant_parts[0]"; }
+  if ($num == 1 && $duplex < 3 && $version !~ /1960/ && $version !~ /monastic/i) { return "Ant. $ant_parts[0]"; }
 
   if ($num == 1) {
     return "Ant. $ant";
