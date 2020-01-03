@@ -593,8 +593,7 @@ sub getrank {
   my @cr = split(';;', $csaint{Rank});
 
   # In Festo Sanctae Mariae Sabbato according to the rubrics.
-  if ( $version !~ /monastic/i
-    && $dayname[0] !~ /(Adv|Quad[0-6])/i
+  if ( $dayname[0] !~ /(Adv|Quad[0-6])/i
     && $dayname[0] !~ /Quadp3/i
     && $testmode !~ /^season$/i)
   {
