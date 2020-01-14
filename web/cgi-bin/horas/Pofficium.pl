@@ -339,13 +339,30 @@ PrintTag
 <A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=$lang2&votive=C9">
 <FONT COLOR=$sel3>Defunctorum</FONT></A><BR>
 <A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=$lang2&votive=C12">
-<FONT COLOR=$sel4>Parvum B.M.V.</FONT></A><BR>
-</TD></TR></TABLE>
+<FONT COLOR=$sel4>Parvum B.M.V.</FONT></A><BR></TR>
 <P ALIGN=CENTER><FONT SIZE=+1>
 <A HREF="Pofficium.pl?date1=$date1&command=setupparameters&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
-Options</A>
+Options</A>&nbsp;&nbsp;&nbsp;
+<A HREF=# onclick="callmissa();">Sancta Missa</A>&nbsp;&nbsp;&nbsp;
+<A HREF=# onclick="callkalendar();">Kalendarium</A>
+</TD></TR></TABLE>
 </FONT>
 </P>
+<P ALIGN=CENTER><FONT SIZE=+1>
+<A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/credits.html" TARGET="_BLANK">Credits</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/download.html" TARGET="_BLANK">Download</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/technical.html" TARGET="_BLANK">Technical</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/help.html" TARGET="_BLANK">Help</A>
+</FONT>
+</P>
+PrintTag
 PrintTag
 }
 
@@ -435,7 +452,21 @@ function okbutton() {
   document.forms[0].submit();
 }
 
-//restart the programramlet if parameter change
+//calls kalendar
+function callkalendar() {
+  document.forms[0].action = 'kalendar.pl';
+  document.forms[0].target = "_self"
+  document.forms[0].submit();
+}
+
+//calls missa
+function callmissa() {
+  document.forms[0].action = "../missa/missa.pl";
+  document.forms[0].target = "_self"
+  document.forms[0].submit();
+}
+
+//restart the programlet if parameter change
 function parchange() {
   var c = document.forms[0].command.value;
   if (c && !c.match("change")) {
