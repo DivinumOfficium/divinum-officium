@@ -9,21 +9,16 @@ vide C2b;
 Gloria
 
 [Comment]
-# 03 II – Św. Błażeja, Biskupa i Męczennika
-! Wspomnienie
+# 03 II – S. Brás, Bispo e Mártir
+! Comemoração
 ! Paramentos vermelhos
-Św. Błażej był lekarzem, a później biskupem Sebasty w Armenii. Został ścięty za wiarę 3 lutego 316 r. Jego cześć szybko rozpowszechniła się w Kościele. W Polsce imię jego przekształcono na Włast. Wzywa się go jako patrona w chorobach gardła.
-
-Msza wspólna nr 10 Sacerdotes Dei
 
 [Oratio]
-Boże, co roku uweselasz nas uroczystością świętego Błażeja, Twojego Męczennika i Biskupa; spraw łaskawie, abyśmy cieszyli się opieką tego, którego urodziny dla nieba obchodzimy.
+Ó Deus, que nos alegrais com a solenidade anual do B. Brás, vosso Mártir e Pontífice, concedei-nos propício que, assim como celebramos o seu nascimento, assim também gozemos a sua protecção.
 $Per Dominum
 
 [Secreta]
-Poświęć, Panie, złożone Ci dary i za przyczyną świętego Błażeja, Twego Męczennika i Biskupa, daj się nimi przebłagać i bądź nam przychylny.
-$Per Dominum
+@Commune/C2b:Secreta
 
 [Postcommunio]
-Panie, niech ta Komunia oczyści nas z grzechów i za przyczyną świętego Błażeja, Twego Męczennika i Biskupa, stanie się dla nas niebieskim lekarstwem.
-$Per Dominum
+@Commune/C2b:Postcommunio

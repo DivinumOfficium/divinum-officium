@@ -44,10 +44,7 @@ examples.
 
 To pull a pre-built container, pull see docker image `divinumofficiumweb/divinumofficium:latest`.
 
-This is still early alpha, but this notice will be removed when it's
-stable and ready to use.
-
-Or, use Docker Compose to load a copy of the container in one command:
+You can also use Docker Compose to load a copy of the container in one command:
 
 ```bash
 docker-compose -f docker-compose-prod.yml up -d

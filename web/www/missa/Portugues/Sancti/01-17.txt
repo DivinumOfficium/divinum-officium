@@ -6,17 +6,15 @@ vide C4c;
 9 lectiones
 
 [Comment]
-# 17 I – Św. Antoniego, Opata
+# 17 I – S. António, Abade
 ! 3 classe
 ! Paramentos brancos
-Św. Antoni jako osiemnastoletni młodzieniec pod wpływem usłyszanych w kościele słów Ewangelii: «Jeżeli chcesz być doskonały, sprzedaj, co masz, i rozdaj ubogim», rozdał swoje mienie i usunął się na pustynię egipską. Początkowo żył samotnie. Z czasem sława jego świętości zaczęła ściągać do niego uczniów. Dla nich napisał regułę, stając się przez to ojcem życia cenobitycznego. Umarł w roku 356 mając 105 lat. Ikonografia przedstawia św. Antoniego z wieprzem lub z potworami, ze względu na straszliwe pokusy szatana, które bohatersko pokonywał.
 
 [Introitus]
 @Commune/C5:Introitus
 
 [Oratio]
-Prosimy Cię, Panie, niech nas Tobie poleca wstawiennictwo świętego Antoniego, Opata, abyśmy za jego przyczyną otrzymali to, czego nie zdołamy wyjednać naszymi zasługami.
-$Per Dominum
+@Commune/C4c:Oratio
 
 [Lectio]
 @Commune/C4c:Lectio

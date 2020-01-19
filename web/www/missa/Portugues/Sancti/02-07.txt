@@ -9,18 +9,15 @@ vide C4c;
 Gloria
 
 [Comment]
-# 07 II – Św. Romualda, Opata
+# 07 II – S. Romualdo, Abade
 ! 3 classe
 ! Paramentos brancos
-Święty był reformatorem życia zakonnego w XI wieku. Opierając się na regule św. Benedykta usiłował zespolić ideały życia wspólnego i pustelniczego. Założył nowy zakon – Kamedułów, którego nazwa pochodzi od pierwszego klasztoru w Camaldoli w Toskanii. Umarł w r. 1027 przeżywszy około 120 lat. Uczniowie św. Romualda przybyli do Polski za czasów Bolesława Chrobrego i męczeńską krwią użyźnili glebę młodego Kościoła. Obecnie istnieją w Polsce pustelnie Kamedułów na Bielanach pod Krakowem i w Bieniszewie pod Koninem.
-
 
 [Introitus]
 @Commune/C4c:Introitus
 
 [Oratio]
-Prosimy Cię, Panie, niech nas Tobie poleca wstawiennictwo świętego Romualda, Opata, abyśmy za jego przyczyną otrzymali to, czego nie zdołamy wyjednać naszymi zasługami.
-$Per Dominum.
+@Commune/C4c:Oratio
 
 [Lectio]
 @Commune/C4c:Lectio
@@ -38,12 +35,10 @@ $Per Dominum.
 @Commune/C4c:Offertorium
 
 [Secreta]
-Prosimy Cię, Panie, niech święty Romuald, Opat, wybłaga, by dary ofiarne złożone na świętym ołtarzu posłużyły nam ku zbawieniu.
-$Per Dominum
+@Commune/C4c:Secreta
 
 [Communio]
 @Commune/C4c:Communio
 
 [Postcommunio]
-Gdy przyjęliśmy Twój Sakrament, o Panie, niech nas wspomaga orędownictwo świętego Romualda, Opata, abyśmy naśladowali jego wzorowe życie i doznali skutków jego wstawiennictwa.
-$Per Dominum
+@Commune/C4c:Postcommunio

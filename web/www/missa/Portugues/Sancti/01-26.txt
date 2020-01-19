@@ -9,24 +9,20 @@ vide C2;
 Gloria
 
 [Comment]
-# 25 I – Św. Polikarpa, Biskupa i Męczennika
+# 25 I – S. Policarpo, Bispo e Mártir
 ! 3 classe
 ! Paramentos vermelhos
-Św. Polikarp był uczniem św. Jana Apostoła, który go wyniósł na biskupstwo w Smyrnie. Napisał list do Filipian, dotąd zachowany. Opis jego męczeństwa zachował się w liście, który chrześcijanie ze Smyrny skierowali do innych gmin. Prokonsulowi, który mu kazał bluźnić Chrystusowi, św. Polikarp odpowiedział: «Osiemdziesiąt sześć lat służę Jemu, nigdy mi nie wyrządził krzywdy, jakże bym mógł bluźnić mojemu Królowi i Zbawcy?»
 
 [Introitus]
 @Commune/C2b:Introitus
 
 [Oratio]
-Boże, co roku uweselasz nas uroczystością świętego Polikarpa, Twojego Męczennika i Biskupa; spraw łaskawie, abyśmy cieszyli się opieką tego, którego urodziny dla nieba obchodzimy.
-$Per Dominum
+@Commune/C2b:Oratio
 
 [Lectio]
 Czytanie z Listu świętego Jana Apostoła.
 !1 J 3:10-16
-!x! Św. Polikarp wiernie urzeczywistnił wskazania swego mistrza św. Jana; oddał życie na dowód swojej miłości do Boga i braci.
-Najmilsi: Każdy, kto nie jest sprawiedliwy i nie miłuje brata swego, nie jest z Boga, albowiem ta jest nowina, którąście słyszeli od początku, abyście się wzajemnie miłowali. Nie jak Kain, który był z diabła i zabił brata swego. I za cóż go zabił? Dlatego że uczynki jego były złe, a brata jego sprawiedliwe.
-Nie dziwcie się, bracia, jeśli was świat nienawidzi. My wiemy, żeśmy przeszli ze śmierci do życia, bo miłujemy braci. Kto nie miłuje, trwa w śmierci. Każdy, kto nie miłuje brata swego, mordercą jest. A wiecie, że żaden morderca nie ma w sobie żywota wiecznego. Przez to poznaliśmy miłość Boga, że oddał za nas życie swoje i my winniśmy życie oddać za braci.
+Caríssimos: Aquele que não é justo e não ama seu irmão não é de Deus. Porque esta é a recomendação que ouvistes desde o princípio: «Que vos ameis uns aos outros». Não seja, porém, como Caim, que era maligno o qual matou o seu irmão. E porque o matou ele? Porque as suas obras eram más, enquanto que as do seu irmão eram justas. Não vos admireis, irmãos, se o mundo vos odeia; porquanto sabemos que passamos da morte à vida, porque amamos os nossos irmãos. Aquele que não ama permanece na morte. Aquele que odeia o seu irmão é um homicida. E vós sabeis que o homicida não tem a vida eterna, permanecendo em si. Nisto conhecemos o amor de Deus: porquanto Ele deu sua vida por nós; e nós devemos também dar a nossa vida por nossos irmãos.
 
 [Graduale]
 @Commune/C2b:Graduale
@@ -38,12 +34,11 @@ Nie dziwcie się, bracia, jeśli was świat nienawidzi. My wiemy, żeśmy przesz
 @Commune/C2b:Offertorium
 
 [Secreta]
-Poświęć, Panie, złożone Ci dary i za przyczyną świętego Polikarpa Twego Męczennika i Biskupa, daj się nimi przebłagać i bądź nam przychylny.
-$Per Dominum
+@Commune/C2b:Secreta
 
 [Communio]
 @Commune/C2b:Communio
 
 [Postcommunio]
-Panie, niech ta Komunia oczyści nas z grzechów i za przyczyną świętego Polikarpa, Twego Męczennika i Biskupa, stanie się dla nas niebieskim lekarstwem.
+Fortalecidos com a participação deste dom sacratíssimo, Vos suplicamos, Senhor, nosso Deus, que, por intercessão do B. Policarpo, vosso Mártir e Pontífice, sintamos o efeito do mystério que celebrámos.
 $Per Dominum
