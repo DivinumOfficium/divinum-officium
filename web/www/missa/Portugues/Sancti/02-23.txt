@@ -12,16 +12,15 @@ vide C4;
 Gloria
 
 [Comment]
-# 23 II – Św. Piotra Damiana, Biskupa, Wyznawcy i Doktora Kościoła
+# 23 II – S. Pedro Damião, Bispo, Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
-Św. Piotr urodził się w Rawennie w r. 1007. Z wdzięczności do brata, który ułatwił mu studia przybrał także jego imię Damian. Wstąpił do klasztoru Kamedułów w Fonte Avellana. Wybrany przeorem, z wielką gorliwością reformował życie zakonne. W r. 1057 został mianowany kardynałem-biskupem Ostii i odtąd współpracuje z papieżami w dziele reformy Kościoła. Zmarł w podróży 22 lutego 1072 r. Zostawił wiele listów, mów oraz innych pism.
 
 [Introitus]
 @Commune/C4a:Introitus
 
 [Oratio]
-Prosimy Cię, wszechmogący Boże, daj nam iść za przestrogami i przykładem św. Piotra, Twego Wyznawcy i Biskupa, abyśmy wzgardziwszy dobrami doczesnymi, osiągnęli wieczne radości.
+Concedei-nos, ó Deus omnipotente, Vos suplicamos, que imitemos as lições e os exemplos do B. Pedro, vosso Confessor e Pontífice, a fim de que pelo desprezo dos bens terrenos alcancemos as alegrias eternas.
 $Per Dominum
 
 [Lectio]
@@ -40,13 +39,11 @@ $Per Dominum
 @Commune/C4a:Offertorium
 
 [Secreta]
-Panie, niech nam nie zabraknie serdecznej modlitwy świętego Piotra, Twego Biskupa i Doktora, która zaleci Tobie naszą ofiarę i wyjedna nam Twoje przebaczenie.
-$Per Dominum.
+@Commune/C4a:Secreta
 
 [Communio]
 @Commune/C4a:Communio
 
 [Postcommunio]
-Prosimy Cię, Panie, niech święty Piotr, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
-$Per Dominum
+@Commune/C4a:Postcommunio
 
