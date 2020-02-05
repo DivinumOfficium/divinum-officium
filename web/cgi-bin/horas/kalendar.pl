@@ -312,7 +312,6 @@ function callbrevi(date) {
   if (!officium || !officium.match('.pl')) officium = "officium.pl";
   document.forms[0].date.value = date;
   document.forms[0].action = officium;
-  document.forms[0].target = "_self"
   document.forms[0].submit();
 }
 
