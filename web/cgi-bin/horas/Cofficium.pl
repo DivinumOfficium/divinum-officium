@@ -192,9 +192,12 @@ our $octavam = '';    #to avoid duplication of commemorations
 # prepare title
 $daycolor =
     ($commune =~ /(C1[0-9])/) ? "blue"
-  : ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black"
-  : ($dayname[1] =~ /duplex/i) ? "red"
-  : "grey";
+  : ($dayname[1] =~ /(Cathedra|oann|Vigilia Nativitatis)/i) ? "black"
+  : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
+  : ($dayname[1] =~ /(Pentecostes|Martyr|Martyris|Martyrum|Innocentium|Apostol)/i) ? "red"
+  : ($dayname[1] =~ /(Quattuor|Vigilia|Quadragesima|Septuagesim|Sexagesim|Quinquagesim|Cinerum|Adventus)/i) ? "purple"
+  : ($dayname[1] =~ /Defunctorum/i) ? "grey"
+  : "black";
 build_comment_line();
 
 #prepare main pages
