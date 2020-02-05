@@ -35,7 +35,7 @@ our $missa = 0;
 our $officium = 'officium.pl';
 our $version = 'Rubrics 1960';
 
-@versions = ('Trident 1570', 'Trident 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
+@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
 
 #***common variables arrays and hashes
 #filled  getweek()
@@ -200,7 +200,7 @@ $daycolor =
     ($commune =~ /(C1[0-9])/) ? "blue"
   : ($dayname[1] =~ /(Cathedra|oann|Vigilia Nativitatis)/i) ? "black"
   : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
-  : ($dayname[1] =~ /(Pentecostes|Martyr|Martyris|Martyrum|Innocentium|Apostol)/i) ? "red"
+  : ($dayname[1] =~ /(Pentecostes|Martyr|Innocentium|Apostol)/i) ? "red"
   : ($dayname[1] =~ /(Quattuor|Vigilia|Quadragesima|Septuagesim|Sexagesim|Quinquagesim|Cinerum|Adventus)/i) ? "purple"
   : ($dayname[1] =~ /Defunctorum/i) ? "grey"
   : "black";
@@ -274,7 +274,7 @@ PrintTag
     horas($command);
     print << "PrintTag";
 <P ALIGN=CENTER>
-<INPUT TYPE=SUBMIT NAME='button' VALUE='$hora completed' onclick="okbutton();">
+<INPUT TYPE=SUBMIT NAME='button' VALUE='$hora persolut.' onclick="okbutton();">
 </P>
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
 <INPUT TYPE=HIDDEN NAME=popup VALUE="">
@@ -355,7 +355,7 @@ PrintTag
     #  $ch3 = ($expand =~ /nothing/i) ? 'SELECTED' : '';
     #  $ch4 = ($expand =~ /skeleton/i) ? 'SELECTED' : '';
     @chv = splice(@chv, @chv);
-    if (-e "$Bin/monastic.pl") { unshift(@versions, 'pre Trident Monastic'); }
+    if (-e "$Bin/monastic.pl") { unshift(@versions, 'Monastic'); }
     for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'SELECTED' : ''; }
     print << "PrintTag";
 <P ALIGN=CENTER>
@@ -517,7 +517,7 @@ $comment<BR><BR>
 <INPUT TYPE=BUTTON NAME=SUBMIT VALUE=" " onclick="parchange();">
 <A HREF=# onclick="prevnext(1)">&uarr;</A>
 &nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callkalendar();">Kalendarium</A>
+<A HREF=# onclick="callkalendar();">Ordo</A>
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="pset('parameters')">Options</A>
 </P>

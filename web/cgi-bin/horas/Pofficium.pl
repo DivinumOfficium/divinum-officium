@@ -33,7 +33,7 @@ our $Ck = 0;
 our $officium = 'Pofficium.pl';
 our $version = 'Rubrics 1960';
 
-@versions = ('Trident 1570', 'Trident 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
+@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
 
 #***common variables arrays and hashes
 #filled  getweek()
@@ -190,7 +190,7 @@ $daycolor =
     ($commune =~ /(C1[0-9])/) ? "blue"
   : ($dayname[1] =~ /(Cathedra|oann|Vigilia Nativitatis)/i) ? "black"
   : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
-  : ($dayname[1] =~ /(Pentecostes|Martyr|Martyris|Martyrum|Innocentium|Apostol)/i) ? "red"
+  : ($dayname[1] =~ /(Pentecostes|Martyr|Innocentium|Apostol)/i) ? "red"
   : ($dayname[1] =~ /(Quattuor|Vigilia|Quadragesima|Septuagesim|Sexagesim|Quinquagesim|Cinerum|Adventus)/i) ? "purple"
   : ($dayname[1] =~ /Defunctorum/i) ? "grey"
   : "black";
@@ -302,7 +302,7 @@ PrintTag
 PrintTag
   }
   @chv = splice(@chv, @chv);
-  if (-e "$Bin/monastic.pl") { unshift(@versions, 'pre Trident Monastic'); }
+  if (-e "$Bin/monastic.pl") { unshift(@versions, 'Monastic'); }
   for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'red' : 'blue'; }
   my $vsize = @versions;
   print "<TABLE ALIGN=CENTER BORDER=1><TR><TD ALIGN=CENTER>\n";
@@ -347,7 +347,7 @@ PrintTag
 <A HREF="Pofficium.pl?date1=$date1&command=setupparameters&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 Options</A>&nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="callmissa();">Sancta Missa</A>&nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callkalendar();">Kalendarium</A>
+<A HREF=# onclick="callkalendar();">Ordo</A>
 </TD></TR></TABLE>
 </FONT>
 </P>
