@@ -195,7 +195,7 @@ $daycolor =
   : ($dayname[1] =~ /(Cathedra|oann|Vigilia Nativitatis)/i) ? "black"
   : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
   : ($dayname[1] =~ /(Pentecostes|Martyr|Innocentium|Apostol)/i) ? "red"
-  : ($dayname[1] =~ /(Quattuor|Vigilia|Quadragesima|Septuagesim|Sexagesim|Quinquagesim|Cinerum|Adventus)/i) ? "purple"
+  : ($dayname[1] =~ /(Quattuor|Vigilia|Quadragesima|Septuagesim|Sexagesim|Quinquagesim|Ciner|Adventus)/i) ? "purple"
   : ($dayname[1] =~ /Defunctorum/i) ? "grey"
   : "black";
 build_comment_line();
@@ -507,7 +507,7 @@ sub headline {
 <INPUT TYPE=BUTTON NAME=SUBMIT VALUE=" " onclick="parchange();">
 <A HREF=# onclick="prevnext(1)">&uarr;</A>
 &nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callkalendar();">Kalendarium</A>
+<A HREF=# onclick="callkalendar();">Ordo</A>
 </P>
 PrintTag
 }
