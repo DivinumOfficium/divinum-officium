@@ -215,6 +215,7 @@ if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|P
   $h = '';
 }
 $title = "Divinum Officium$h";
+$title =~ s/Vespera/Vesperae/i;
 @horas = getdialogcolumn('horas', '~', 0);
 for ($i = 0; $i < 10; $i++) { $hcolor[$i] = 'blue'; }
 $completed = getcookie1('completed');

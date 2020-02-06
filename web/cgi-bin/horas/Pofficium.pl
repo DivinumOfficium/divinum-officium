@@ -205,6 +205,7 @@ if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|P
   $h = '';
 }
 $title = "Divinum Officium$h";
+$title =~ s/Vespera/Vesperae/i;
 @horas = getdialogcolumn('horas', '~', 0);
 for ($i = 0; $i < 10; $i++) { $hcolor[$i] = 'blue'; }
 $completed = getcookie1('completed');
@@ -393,7 +394,7 @@ sub headline {
   print << "PrintTag";
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>
-<COLOR=maroon>$h</FONT>&nbsp;&nbsp;&nbsp;
+<COLOR=maroon>$head</FONT>&nbsp;&nbsp;&nbsp;
 <A HREF="Pofficium.pl?date1=$date1&command=prev&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 &darr;</A>
 $date1
