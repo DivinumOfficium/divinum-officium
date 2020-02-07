@@ -1915,9 +1915,13 @@ sub papal_antiphon_dum_esset($) {
         (?:
             (?:dicitur|dicuntur)(?:\s+semper)?
           |
+            (?:hic\s+versus\s+)?omittitur
+          |
             (?:hoc\s+versus\s+)?omittitur
           |
             (?:hæc\s+versus\s+)?omittuntur
+          |
+            (?:hi\s+versus\s+)?omittuntur
           |
             (?:haec\s+versus\s+)?omittuntur
         )

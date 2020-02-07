@@ -52,6 +52,7 @@ our ($dirge, $initia);
 our $sanctiname = 'Sancti';
 our $temporaname = 'Tempora';
 our $communename = 'Commune';
+our $version = 'Rubrics 1960';
 
 require "$Bin/do_io.pl";
 require "$Bin/horascommon.pl";
@@ -106,9 +107,9 @@ if ($officium =~ /brevi/) {
 } else {
   $version = strictparam('version');
   @versions = (
-    'pre Trident Monastic',
-    'Trident 1570',
-    'Trident 1910',
+    'Monastic',
+    'Tridentine 1570',
+    'Tridentine 1910',
     'Divino Afflatu',
     'Reduced 1955',
     'Rubrics 1960',
@@ -128,7 +129,7 @@ if (!$kyear) { $kyear = $year; }
   'Julius', 'Augustus', 'September', 'October', 'November', 'December'
 );
 @monthlength = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-$title = "Kalendarium: $monthnames[$kmonth-1] $kyear";
+$title = "Ordo: $monthnames[$kmonth-1] $kyear";
 @daynames = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
 
 #*** generate HTML
@@ -245,7 +246,7 @@ for ($cday = 1; $cday <= $to; $cday++) {
   if (!$c1) { $c1 = "<P ALIGN=CENTER>_</P>"; }
   if (!$c2) { $c2 = "<P ALIGN=CENTER>_</P>"; }
   print << "PrintTag";
-<TR><TD ALIGN=CENTER><A HREF=# onclick="callbrevi(\'$date1\');">$d1</FONT></A></TD>
+<TR><TD ALIGN=CENTER><A HREF=# onclick="callbrevi('$date1');">$d1</FONT></A></TD>
 <TD>$c1</TD>
 <TD>$c2</TD>
 <TD ALIGN=CENTER>$daynames[$dayofweek]</FONT></TD>
@@ -261,6 +262,22 @@ my $vsize = @versions;
 print "<SELECT NAME=version SIZE=$vsize onchange=\"document.forms[0].submit();\">\n";
 for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
 print "</SELECT>\n";
+print << "PrintTag";
+<P ALIGN=CENTER>
+<A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/credits.html" TARGET="_BLANK">Credits</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/download.html" TARGET="_BLANK">Download</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/technical.html" TARGET="_BLANK">Technical</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/help.html" TARGET="_BLANK">Help</A>
+</FONT>
+</P>
+PrintTag
 
 #  my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
 #  my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';

@@ -31,7 +31,8 @@ Download
 
 WARNING! Please be advised that the older "stand-alone" downloadable files (as well as music files) have not been updated nor supported since the death of Laszlo Kiss in 2011. Use at your own risk!<BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>iOS and Android Apps</FONT></H3>
-We highly recommend instead downloading the <a href="http://apps.liturgiaetmusica.com/en/apps/brevmeum">Breviarium Meum app</a> (available for iOS) for the Breviary, as well as the iMass app for <a href="https://play.google.com/store/apps/details?id=fssp.livemass.iMass">Android</a> and <a href="https://itunes.apple.com/us/app/imass/id381131668?mt=8">iOS</a>. The <a href="https://catholicapps.com/laudate/">Laudate app</a> can be downloaded for use of the Breviary on iOS or Android devices. We are now partnering with the <a href="https://www.ipieta.com">iPieta</a> app; Divinum Officium functionality should be available on that app in the near future.<BR>
+We highly recommend instead downloading the <a href="http://apps.liturgiaetmusica.com/en/apps/brevmeum">Breviarium Meum app</a> (available for iOS) for the Breviary, as well as the iMass app for <a href="https://play.google.com/store/apps/details?id=fssp.livemass.iMass">Android</a> and <a href="https://itunes.apple.com/us/app/imass/id381131668?mt=8">iOS</a>. The <a href="https://catholicapps.com/laudate/">Laudate app</a> can be downloaded for use of the Breviary on iOS or Android devices.<BR><BR>
+We are now partnering with the <a href="https://www.ipieta.com">iPieta</a> app; Divinum Officium functionality is now available for iOS and OS X platforms.<BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>.mobi and .ePub Files</FONT></H3>
 It is possible to generate Missal and Breviary files in .mobi or .ePub format, with all texts generated on a monthly basis. Please refer to our <a href="http://github.com/divinumofficium/divinum-officium">GitHub</a> site for details. They can also be downloaded from the following site: <a href="http://breviarium.srubarovi.cz">http://breviarium.srubarovi.cz</a><BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>GitHub Repository</FONT></H3>
@@ -40,8 +41,8 @@ There are two repositories at <a href=https://github.com/DivinumOfficium>GitHub<
 Instructions for cloning are available at the links under the 'clone URL' box on the right-hand side of the <a href="https://github.com/DivinumOfficium/divinum-officium">Divinum-Officium GitHub</a>. If you have Git installed, it is strongly recommended to locally update the files (via git pull) from this repository to account for the ongoing changes and improvements to the site.<BR><BR>
 The website is contained in the web/ subdirectory of this repository. The other directories at the top level should not be served from a webserver.<BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Python</FONT></H3>
-It is possible to set up Divinum Officium as a local host using a Python script, and provided Perl is installed (see below). Using an Android device, this can be done via UserLAnd with its Ubuntu distribution and installing the lxde package therein. Next, download the appropriate packages (Git, Python, and then clone the Git repository as described above). Once the divinum-officium repository has been cloned, the following terminal syntax may be used:<BR><BR>
-cd ~/divinum-officium/web && python -m CGIHTTPServer<BR><BR>
+It is possible to set up Divinum Officium as a local host using a Python script, and provided Perl is installed (see below). Using an Android device, this can be done via UserLAnd with its Ubuntu distribution and installing the lxde package therein. Next, download the appropriate packages (Git, Python, and then clone the Git repository as described above). Once the divinum-officium repository has been cloned using Git, the following terminal syntax may be used:<BR><BR>
+cd ~/divinum-officium/web && git pull && python -m CGIHTTPServer<BR><BR>
 One may need to adjust python to python2 or python3, given the installed version. One may also need to adjust the path to the directory, provided the path ends in /web.<BR><BR>
 Once the server is active and running in the terminal window, navigate to (typically) 0.0.0.0:8000 in your browser. Divinum Officium should then be functional as on the live site.<BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Apache</FONT></H3>
@@ -58,7 +59,7 @@ Most importantly, your webserver must be configured to allow the execution of CG
 For Apache one way to achieve this is to use the following directives in a Directory element for that directory:<BR><BR>
   Options +ExecCGI<BR>
   AddHandler cgi-script .pl<BR><BR>
-This <a href=http://divinumofficium.com/www/horas/Help/httpd.conf>httpd.conf</a> file may prove useful on an Apache host; it is currently being used on a Mac OS 10.14 (Mojave). WARNING: Use at your own risk!<BR><BR>
+This <a href=http://divinumofficium.com/www/horas/Help/httpd.conf>httpd.conf</a> file may prove useful on an Apache host; it is currently being used on a Mac OS 10.15 (Catalina). WARNING: Use at your own risk!<BR><BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Docker</FONT></H3>
 
 If you are using a linux system, or another system supporting docker, Docker is by-far the easiest method. The latest updates to the application are built and pushed in realtime to Docker Hub tag <FONT COLOR=MAROON>divinumofficiumweb/divinumofficium:latest</FONT>, so you can pull and run this container image locally at any time.
@@ -84,6 +85,7 @@ $ docker-compose -f docker-compose-prod.yml down<BR>
 For more information on the docker method, see the Github Repository linked above.
 <BR><BR>
 
+<BR><BR>
 If you have any problem with installation, please send a message to canon DOT missae AT gmail DOT com<BR><BR>
 
 <CENTER><span class=tadmn>T.A.D.M.N.</span><BR></CENTER>
