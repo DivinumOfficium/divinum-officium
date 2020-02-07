@@ -192,7 +192,7 @@ our $octavam = '';    #to avoid duplication of commemorations
 # prepare title
 $daycolor =
     ($commune =~ /(C1[0-9])/) ? "blue"
-  : ($dayname[1] =~ /(Cathedra|oann|Vigilia Nativitatis|Cena)/i) ? "black"
+  : ($dayname[1] =~ /(Cathedra|oann|Pasch|Vigilia Nativitatis|Cena)/i) ? "black"
   : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
   : ($dayname[1] =~ /(Pentecostes|Martyr|Innocentium|Cruc|Apostol)/i) ? "red"
   : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
