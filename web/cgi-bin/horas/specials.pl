@@ -638,12 +638,12 @@ sub preces {
   if ($dayname[0] =~ /pasc7/i && $dayofweek == 6) { $feriales = 0; }
   if ($rule =~ /Preces/i) { $feriales = 1; }
 
-  if ($version =~ /(1955|1960)/ && $feriales == 1) {
+  if ($version =~ /(1955|1960|Newcal)/ && $feriales == 1) {
     if ($dayofweek =~ /[1246]/ && !emberday()) { $feriales = 0; }
-  } elsif ($dayname[1] =~ /vigilia/i && $version !~ /(1955|1960)/ && $dayname[1] !~ $dayname[1] !~ /(Epi|Pasc)/i) {
+  } elsif ($dayname[1] =~ /vigilia/i && $version !~ /(1955|1960|Newcal)/ && $dayname[1] !~ $dayname[1] !~ /(Epi|Pasc)/i) {
     $feriales = 1;
   }
-  if ($winner =~ /Sancti/i && $version =~ /(1955|1960)/) { $feriales = 0; }
+  if ($winner =~ /Sancti/i && $version =~ /(1955|1960|Newcal)/) { $feriales = 0; }
   if ($dayname[1] =~ /dominica/i) { $feriales = 0; }
   if ($dayname[0] =~ /Pasc[67]/i) { $feriales = $dominicales = 0; }
 

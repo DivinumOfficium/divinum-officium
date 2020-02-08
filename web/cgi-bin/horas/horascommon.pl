@@ -187,12 +187,12 @@ sub getrank {
   our %transfer = {};
   our $hymncontract = 0;
   my $kalendarname =
-      ($version =~ /Monastic/i) ? '500'
+      ($version =~ /Monastic/i) ? 'M'
     : ($version =~ /1570/) ? 1570
     : ($version =~ /Trident/i) ? 1888
-    : ($version =~ /newcal/i) ? '2009'
+    : ($version =~ /newcal/i) ? 'NC'
     : ($version =~ /1960/) ? 1960
-    : 1942;
+    : 1954;
   our %kalendar = undef;
   our $kalendarkey = '';
 
@@ -887,18 +887,18 @@ sub getrank {
   if ($winner =~ /tempora/i) { $antecapitulum = ''; }
 
   #Newcal commemoratio handling
-  if ($version =~ /Newcal/i && ($month != 12 || $day < 17 || $day > 24)) {
-    $commemoratio = $commemoratio1 = '';
-    %commemoratio = %commemoratio2 = undef;
-  }
+#  if ($version =~ /Newcal/i && ($month != 12 || $day < 17 || $day > 24)) {
+#    $commemoratio = $commemoratio1 = '';
+#    %commemoratio = %commemoratio2 = undef;
+#  }
 
   #Commemoratio for litaniis majores
-  if ($month == 4 && $day == 25 && $version =~ /(1955|1960)/ && $dayofweek == 0) {
+  if ($month == 4 && $day == 25 && $version =~ /(1955|1960|Newcal)/ && $dayofweek == 0) {
     $commemoratio = '';
     $dayname[2] = '';
   }
   $comrank =~ s/\s*//g;
-  $seasonalflag = ($testmode =~ /Seasonal/i && $winner =~ /Sancti/ && $rank < 5 && $version !~ /newcal/i) ? 0 : 1;
+  $seasonalflag = ($testmode =~ /Seasonal/i && $winner =~ /Sancti/ && $rank < 5) ? 0 : 1;
   if (($month == 12 && $day > 24) || ($month == 1 && $day < 14 && $dayname[0] !~ /Epi/i)) { $dayname[0] = "Nat$day"; }
 }
 
