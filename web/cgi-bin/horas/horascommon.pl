@@ -644,7 +644,7 @@ sub getrank {
   # Dispose of some cases in which the office can't be sanctoral:
   # if we have no sanctoral office, or it was reduced to a
   # commemoration by Cum nostra.
-  if (!$srank[2] || ($version =~ /(1955|1960)/ && $srank[2] <= 1.1)) {
+  if (!$srank[2] || ($version =~ /(1955|1960|Newcal)/ && $srank[2] <= 1.1)) {
 
     # Office is temporal; flag is correct.
   }
@@ -1460,7 +1460,7 @@ sub officestring($$$;$) {
   my %m = %{setupstring($datafolder, $lang, "$temporaname/$monthday.txt")};
 
   foreach $key (keys %m) {
-    if (($version =~ /newcal/i && $key =~ /Rank/i)) {
+    if (($version =~ //i && $key =~ /Rank/i)) {
       ;
     } else {
       $s{$key} = $m{$key};
@@ -1566,7 +1566,7 @@ sub setheadline {
         'I. classis'
       );
       $rankname = ($version !~ /1960/) ? $tradtable[$rank] : $newtable[$rank];
-      if ($version =~ /(Divino|1955|1960)/ && $dayname[1] =~ /feria/i) { $rankname = 'Feria'; }
+      if ($version =~ /(Divino|1955|1960|Newcal)/ && $dayname[1] =~ /feria/i) { $rankname = 'Feria'; }
 
       if ($name =~ /Dominica/i && $version !~ /1960/) {
         my $a = ($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i) ? getweek(1) : getweek(0);
