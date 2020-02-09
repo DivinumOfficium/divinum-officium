@@ -187,12 +187,12 @@ sub getrank {
   our %transfer = {};
   our $hymncontract = 0;
   my $kalendarname =
-      ($version =~ /Monastic/i) ? '500'
+      ($version =~ /Monastic/i) ? 'M'
     : ($version =~ /1570/) ? 1570
     : ($version =~ /Trident/i) ? 1888
-    : ($version =~ /newcal/i) ? '2009'
+    : ($version =~ /newcal/i) ? 'NC'
     : ($version =~ /1960/) ? 1960
-    : 1942;
+    : 1954;
   our %kalendar = undef;
   our $kalendarkey = '';
 
@@ -644,7 +644,7 @@ sub getrank {
   # Dispose of some cases in which the office can't be sanctoral:
   # if we have no sanctoral office, or it was reduced to a
   # commemoration by Cum nostra.
-  if (!$srank[2] || ($version =~ /(1955|1960)/ && $srank[2] <= 1.1)) {
+  if (!$srank[2] || ($version =~ /(1955|1960|Newcal)/ && $srank[2] <= 1.1)) {
 
     # Office is temporal; flag is correct.
   }
@@ -887,18 +887,18 @@ sub getrank {
   if ($winner =~ /tempora/i) { $antecapitulum = ''; }
 
   #Newcal commemoratio handling
-  if ($version =~ /Newcal/i && ($month != 12 || $day < 17 || $day > 24)) {
-    $commemoratio = $commemoratio1 = '';
-    %commemoratio = %commemoratio2 = undef;
-  }
+#  if ($version =~ /Newcal/i && ($month != 12 || $day < 17 || $day > 24)) {
+#    $commemoratio = $commemoratio1 = '';
+#    %commemoratio = %commemoratio2 = undef;
+#  }
 
   #Commemoratio for litaniis majores
-  if ($month == 4 && $day == 25 && $version =~ /(1955|1960)/ && $dayofweek == 0) {
+  if ($month == 4 && $day == 25 && $version =~ /(1955|1960|Newcal)/ && $dayofweek == 0) {
     $commemoratio = '';
     $dayname[2] = '';
   }
   $comrank =~ s/\s*//g;
-  $seasonalflag = ($testmode =~ /Seasonal/i && $winner =~ /Sancti/ && $rank < 5 && $version !~ /newcal/i) ? 0 : 1;
+  $seasonalflag = ($testmode =~ /Seasonal/i && $winner =~ /Sancti/ && $rank < 5) ? 0 : 1;
   if (($month == 12 && $day > 24) || ($month == 1 && $day < 14 && $dayname[0] !~ /Epi/i)) { $dayname[0] = "Nat$day"; }
 }
 
@@ -1460,7 +1460,7 @@ sub officestring($$$;$) {
   my %m = %{setupstring($datafolder, $lang, "$temporaname/$monthday.txt")};
 
   foreach $key (keys %m) {
-    if (($version =~ /newcal/i && $key =~ /Rank/i)) {
+    if (($version =~ //i && $key =~ /Rank/i)) {
       ;
     } else {
       $s{$key} = $m{$key};
@@ -1566,7 +1566,7 @@ sub setheadline {
         'I. classis'
       );
       $rankname = ($version !~ /1960/) ? $tradtable[$rank] : $newtable[$rank];
-      if ($version =~ /(Divino|1955|1960)/ && $dayname[1] =~ /feria/i) { $rankname = 'Feria'; }
+      if ($version =~ /(Divino|1955|1960|Newcal)/ && $dayname[1] =~ /feria/i) { $rankname = 'Feria'; }
 
       if ($name =~ /Dominica/i && $version !~ /1960/) {
         my $a = ($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i) ? getweek(1) : getweek(0);
@@ -1915,9 +1915,13 @@ sub papal_antiphon_dum_esset($) {
         (?:
             (?:dicitur|dicuntur)(?:\s+semper)?
           |
+            (?:hic\s+versus\s+)?omittitur
+          |
             (?:hoc\s+versus\s+)?omittitur
           |
             (?:hæc\s+versus\s+)?omittuntur
+          |
+            (?:hi\s+versus\s+)?omittuntur
           |
             (?:haec\s+versus\s+)?omittuntur
         )
