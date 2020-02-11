@@ -169,16 +169,19 @@ $setupsave =~ s/\r*\n*//g;
 $setupsave =~ s/\"/\~24/g;
 $version = $version1;
 setmdir($version);
-precedence("05-30-2010");    #fills our hashes et variables
+precedence($winner);    #fills our hashes et variables
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;
 
 # prepare title
 $daycolor =
     ($commune =~ /(C1[0-9])/) ? "blue"
-  : ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black"
-  : ($dayname[1] =~ /duplex/i) ? "red"
-  : "grey";
+  : ($dayname[1] =~ /(Cathedra|oann|Pasch|Confessor|Vigilia Nativitatis|Cena)/i) ? "black"
+  : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
+  : ($dayname[1] =~ /(Pentecostes|Martyr|Innocentium|Cruc|Apostol)/i) ? "red"
+  : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
+  : ($dayname[1] =~ /(Quattuor|Vigilia|Passionis|Quadragesima|Hebdomadæ Sanctæ|Septuagesim|Sexagesim|Quinquagesim|Ciner|Adventus)/i) ? "purple"
+  : "black";
 build_comment_line();
 
 #prepare main pages
@@ -190,13 +193,13 @@ htmlHead($title, 2);
 print << "PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="startup();">
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
-<P ALIGN=CENTER><FONT SIZE=1>
-<A HREF="Cmissa.pl?searchvalue=2&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Introduction]</A>&nbsp;&nbsp;
-<A HREF="Cmissa.pl?searchvalue=11&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Liturgy of the word]</A>&nbsp;&nbsp;
-<A HREF="Cmissa.pl?searchvalue=16&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Preparation]</A>&nbsp;&nbsp;
-<A HREF="Cmissa.pl?searchvalue=23&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Canon]</A>&nbsp;&nbsp;
-<A HREF="Cmissa.pl?searchvalue=38&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Communion]</A>&nbsp;&nbsp;
-<A HREF="Cmissa.pl?searchvalue=52&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Conclusion]</A></P>
+<P ALIGN=CENTER>
+<A HREF="Cmissa.pl?searchvalue=2&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Incipit]</A>&nbsp;&nbsp;
+<A HREF="Cmissa.pl?searchvalue=11&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Missa Catechumenorum]</A>&nbsp;&nbsp;
+<A HREF="Cmissa.pl?searchvalue=16&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Offertorium]</A>&nbsp;&nbsp;
+<A HREF="Cmissa.pl?searchvalue=23&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Canon Missae]</A>&nbsp;&nbsp;
+<A HREF="Cmissa.pl?searchvalue=38&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Communio]</A>&nbsp;&nbsp;
+<A HREF="Cmissa.pl?searchvalue=52&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Conclusio]</A></P>
 PrintTag
 
 if ($command !~ /setup/i) {
@@ -223,8 +226,8 @@ PrintTag
 &nbsp;&nbsp;&nbsp;
 <SELECT NAME=lang2 SIZE=2 onclick="parchange()">
 <OPTION $chl21 VALUE='Latin'>Latin
-<OPTION $chl22 VALUE=English>English
-</SELECT>&nbsp;&nbsp'&nbsp;
+<OPTION $chl22 VALUE='English'>English
+</SELECT>&nbsp;&nbsp;&nbsp;
 PrintTag
   for ($i = 0; $i < @versions; $i++) { $chv[$i] = ($version2 =~ /$versions[$i]/) ? 'SELECTED' : ''; }
   print "<SELECT NAME=version2 SIZE=$vsize onchange=\"parchange();\">\n";
@@ -248,12 +251,11 @@ if ($command =~ /setup(.*)/is) {
 <TABLE BORDER=0 WIDTH=80% ALIGN=CENTER><TR>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>$version1</FONT></TD><TD ALIGN=CENTER><FONT COLOR=MAROON>$version2</FONT></TD>
 </TR></TABLE>
-<BR>
 PrintTag
   ordo();
   print << "PrintTag";
 <P ALIGN=CENTER>
-<INPUT TYPE=SUBMIT NAME='button' VALUE='Comparation completed' onclick="okbutton();">
+<INPUT TYPE=SUBMIT NAME='button' VALUE='Æquiparantia persoluta' onclick="okbutton();">
 </P>
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
 <INPUT TYPE=HIDDEN NAME=popup VALUE="">
@@ -279,11 +281,11 @@ PrintTag
 #common widgets for main and hora
 if ($pmode =~ /(main|hora)/i) {
   print << "PrintTag";
-<P ALIGN=CENTER><FONT SIZE=-1>
-<A HREF="missa.pl">TLM only</A>
+<P ALIGN=CENTER>
+<A HREF="missa.pl">1962 only</A>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="pset('parameters')">Options</A>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
 <A HREF=\"$htmlurl/sourceC.html\" TARGET=\"_NEW\">Source</A>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <A HREF=\"$htmlurl/CompPrayers.html\" TARGET=\"_NEW\">Compare Prayers</A></FONT>
@@ -320,18 +322,21 @@ print << "PrintTag";
 </BODY></HTML>
 PrintTag
 
-#*** hedline($head) prints headlibe for main and pray
+#*** hedline($head) prints headline for main and pray
 sub headline {
   my $head = shift;
   my $width = ($only) ? 100 : 50;
   $daycolor =
-      ($commune =~ /(C1[0-9])/) ? "blue"
-    : ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black"
-    : ($dayname[1] =~ /duplex/i) ? "red"
-    : "grey";
+    ($commune =~ /(C1[0-9])/) ? "blue"
+  : ($dayname[1] =~ /(Cathedra|oann|Pasch|Confessor|Vigilia Nativitatis|Cena)/i) ? "black"
+  : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
+  : ($dayname[1] =~ /(Pentecostes|Martyr|Innocentium|Cruc|Apostol)/i) ? "red"
+  : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
+  : ($dayname[1] =~ /(Quattuor|Vigilia|Passionis|Quadragesima|Hebdomadæ Sanctæ|Septuagesim|Sexagesim|Quinquagesim|Ciner|Adventus)/i) ? "purple"
+  : "black";
   $comment = '';
   $headline = setheadline();
-  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
+  $headline =~ s{!(.*)}{$1}s;
   print "<P ALIGN=CENTER>" . "<FONT COLOR=$daycolor>$headline</FONT>" . "<BR>$comment</P>\n";
   print << "PrintTag";
 <P ALIGN=CENTER>

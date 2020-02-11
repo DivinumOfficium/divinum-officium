@@ -192,7 +192,7 @@ our $octavam = '';    #to avoid duplication of commemorations
 # prepare title
 $daycolor =
     ($commune =~ /(C1[0-9])/) ? "blue"
-  : ($dayname[1] =~ /(Cathedra|oann|Pasch|Vigilia Nativitatis|Cena)/i) ? "black"
+  : ($dayname[1] =~ /(Cathedra|oann|Pasch|Confessor|Vigilia Nativitatis|Cena)/i) ? "black"
   : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
   : ($dayname[1] =~ /(Pentecostes|Martyr|Innocentium|Cruc|Apostol)/i) ? "red"
   : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
@@ -267,7 +267,7 @@ PrintTag
 <TABLE BORDER=0 HEIGHT=$height><TR>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>Ordinarium</FONT></TD>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>Psalterium</FONT></TD>
-<TD ALIGN=CENTER><FONT COLOR=MAROON>Proprium de tempore</FONT></TD>
+<TD ALIGN=CENTER><FONT COLOR=MAROON>Proprium de Tempore</FONT></TD>
 
 </TR><TR><TD ALIGN=CENTER ROWSPAN=2>
 <IMG SRC="$htmlurl/breviarium.jpg" HEIGHT=$height></TD>
