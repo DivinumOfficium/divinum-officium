@@ -185,7 +185,7 @@ $daycolor =
 build_comment_line();
 
 #prepare main pages
-$title = "Sancta Missa";
+$title = "Sancta Missa Comparison";
 
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
