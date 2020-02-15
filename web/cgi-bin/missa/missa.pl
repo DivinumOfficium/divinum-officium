@@ -37,7 +37,7 @@ our $officium = 'missa.pl';
 our $version = 'Rubrics 1960';
 
 @versions =
-  ('Trident 1570', 'Trident 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1965-1967', '1960 Newcalendar');
+  ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1965-1967', '1960 Newcalendar');
 
 #***common variables arrays and hashes
 #filled  getweek()
@@ -176,9 +176,12 @@ precedence();    #fills our hashes et variables
 # prepare title
 $daycolor =
     ($commune =~ /(C1[0-9])/) ? "blue"
-  : ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black"
-  : ($dayname[1] =~ /duplex/i) ? "red"
-  : "grey";
+  : ($dayname[1] =~ /(Cathedra|oann|Vigilia Nativitatis|Cena)/i) ? "black"
+  : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
+  : ($dayname[1] =~ /(Pentecostes|Martyr|Innocentium|Cruc|Apostol)/i) ? "red"
+  : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
+  : ($dayname[1] =~ /(Quattuor|Vigilia|Passionis|Quadragesima|Hebdomadæ Sanctæ|Septuagesim|Sexagesim|Quinquagesim|Ciner|Adventus)/i) ? "purple"
+  : "black";
 build_comment_line();
 
 #prepare main pages
@@ -351,7 +354,7 @@ $comment<BR><BR>
 <INPUT TYPE=BUTTON NAME=SUBMIT VALUE=" " onclick="parchange();">
 <A HREF=# onclick="prevnext(1)">&uarr;</A>
 &nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callkalendar();">Kalendarium</A>
+<A HREF=# onclick="callkalendar();">Ordo</A>
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="pset('parameters')">Options</A>
 $numsel

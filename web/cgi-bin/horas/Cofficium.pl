@@ -39,8 +39,8 @@ our $version1 = 'Divino Afflatu';
 our $version2 = 'Rubrics 1960';
 our $version = '';
 
-@versions = ('Trident 1570', 'Trident 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
-if (-e "$Bin/monastic.pl") { unshift(@versions, 'pre Trident Monastic'); }
+@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
+if (-e "$Bin/monastic.pl") { unshift(@versions, 'Monastic'); }
 
 #***common variables arrays and hashes
 #filled  getweek()
@@ -192,9 +192,12 @@ our $octavam = '';    #to avoid duplication of commemorations
 # prepare title
 $daycolor =
     ($commune =~ /(C1[0-9])/) ? "blue"
-  : ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black"
-  : ($dayname[1] =~ /duplex/i) ? "red"
-  : "grey";
+  : ($dayname[1] =~ /(Cathedra|oann|Pasch|Confessor|Vigilia Nativitatis|Cena)/i) ? "black"
+  : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
+  : ($dayname[1] =~ /(Pentecostes|Martyr|Innocentium|Cruc|Apostol)/i) ? "red"
+  : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
+  : ($dayname[1] =~ /(Quattuor|Vigilia|Passionis|Quadragesima|Hebdomadæ Sanctæ|Septuagesim|Sexagesim|Quinquagesim|Ciner|Adventus)/i) ? "purple"
+  : "black";
 build_comment_line();
 
 #prepare main pages
@@ -264,7 +267,7 @@ PrintTag
 <TABLE BORDER=0 HEIGHT=$height><TR>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>Ordinarium</FONT></TD>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>Psalterium</FONT></TD>
-<TD ALIGN=CENTER><FONT COLOR=MAROON>Proprium de tempore</FONT></TD>
+<TD ALIGN=CENTER><FONT COLOR=MAROON>Proprium de Tempore</FONT></TD>
 
 </TR><TR><TD ALIGN=CENTER ROWSPAN=2>
 <IMG SRC="$htmlurl/breviarium.jpg" HEIGHT=$height></TD>
@@ -504,7 +507,7 @@ sub headline {
 <INPUT TYPE=BUTTON NAME=SUBMIT VALUE=" " onclick="parchange();">
 <A HREF=# onclick="prevnext(1)">&uarr;</A>
 &nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callkalendar();">Kalendarium</A>
+<A HREF=# onclick="callkalendar();">Ordo</A>
 </P>
 PrintTag
 }

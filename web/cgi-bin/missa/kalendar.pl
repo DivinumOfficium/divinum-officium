@@ -123,7 +123,7 @@ if (!$kyear) { $kyear = $year; }
   'Julius', 'Augustus', 'September', 'October', 'November', 'December'
 );
 @monthlength = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-$title = "Kalendarium: $monthnames[$kmonth-1] $kyear";
+$title = "Ordo: $monthnames[$kmonth-1] $kyear";
 @daynames = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
 
 #*** generate HTML
@@ -145,13 +145,13 @@ print << "PrintTag";
 PrintTag
 
 for ($i = $origyear[2] - 4; $i <= $origyear[2]; $i++) {
-  $yn = sprintf("%02i", $i - 2000);
+  $yn = sprintf("%02i", $i);
   print "<A HREF=# onclick=\"setky($yn)\">$yn</A>&nbsp;&nbsp;&nbsp;\n";
 }
 print "<A HREF=# onclick=\"callbrevi();\"><FONT COLOR=maroon>Hodie</FONT></A>&nbsp;&nbsp;&nbsp;\n";
 
 for ($i = $origyear[2] + 1; $i <= $origyear[2] + 5; $i++) {
-  $yn = sprintf("%02i", $i - 2000);
+  $yn = sprintf("%02i", $i);
   print "<A HREF=# onclick=\"setky($yn)\">$yn</A>&nbsp;&nbsp;&nbsp;\n";
 }
 print "<BR><BR></FONT>\n";

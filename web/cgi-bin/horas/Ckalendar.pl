@@ -104,7 +104,7 @@ if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completo
 }
 $version1 = strictparam('version1');
 $version2 = strictparam('version2');
-@versions = ('Trident 1570', 'Trident 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
+@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
 if (!$version1) { $version1 = 'Divino Afflatu'; }
 if (!$version2) { $version2 = 'Rubrics 1960'; }
 $testmode = strictparam('testmode');
@@ -118,7 +118,7 @@ if (!$kyear) { $kyear = $year; }
   'Julius', 'Augustus', 'September', 'October', 'November', 'December'
 );
 @monthlength = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-$title = "Kalendarium: $monthnames[$kmonth-1] $kyear";
+$title = "Ordo: $monthnames[$kmonth-1] $kyear";
 @daynames = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fry', 'Sat');
 
 #*** generate HTML
