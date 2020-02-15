@@ -12,14 +12,14 @@ Antiphonas horas
 StJamesRule=Jas
 
 [Ant Vespera]
-Dómine, * osténde nobis Patrem, et súfficit nobis, allelúia.;;109
-Philíppe, * qui videt me, videt et Patrem meum, allelúia.;;110
-Tanto témpore * vobíscum sum, et non cognovístis me? Philíppe, qui videt me, videt et Patrem meum, allelúia.;;111
-Si cognovissétis me, * et Patrem meum útique cognovissétis, et ámodo cognoscétis eum, et vidístis eum, allelúia, allelúia, allelúia.;;112
-Si dilígitis me, * mandáta mea serváte, allelúia, allelúia, allelúia.;;116
+Dómine, * osténde nobis Patrem, et súfficit nobis, allelúja.;;109
+Philíppe, * qui videt me, videt et Patrem meum, allelúja.;;110
+Tanto témpore * vobíscum sum, et non cognovístis me? Philíppe, qui videt me, videt et Patrem meum, allelúja.;;111
+Si cognovissétis me, * et Patrem meum útique cognovissétis, et ámodo cognoscétis eum, et vidístis eum, allelúja, allelúja, allelúja.;;112
+Si dilígitis me, * mandáta mea serváte, allelúja, allelúja, allelúja.;;116
 
 [Ant 1]
-Non turbétur * cor vestrum, neque formidet: creditis in Deum, et in me crédite: in domo Patris mei mansiónes multæ sunt, allelúia, allelúia.
+Non turbétur * cor vestrum, neque formidet: creditis in Deum, et in me crédite: in domo Patris mei mansiónes multæ sunt, allelúja, allelúja.
 
 [Oratio]
 Deus, qui nos ánnua Apostolórum tuórum Philíppi et Jacóbi solemnitáte lætíficas: prǽsta, quǽsumus; ut, quorum gaudémus méritis, instruámur exémplis.
@@ -63,10 +63,10 @@ Tamquam ergo essent ab illo peritúri, mérito turbabántur; sed cum áudiunt, I
 @:Ant Vespera:s/;;.*//g
 
 [Ant 2]
-Ego sum via, * véritas, et vita: nemo venit ad Patrem, nisi per me, allelúia.
+Ego sum via, * véritas, et vita: nemo venit ad Patrem, nisi per me, allelúja.
 
 [Ant 3]
-Si manséritis in me, * et verba mea in vobis mánserint, quodcúmque petiéritis, fiet vobis, allelúia, allelúia, allelúia.
+Si manséritis in me, * et verba mea in vobis mánserint, quodcúmque petiéritis, fiet vobis, allelúja, allelúja, allelúja.
 
 [Ant Vespera 3]
 @:Ant Vespera:s/116/138/ s/112/125/ s/111/115/ s/110/112/ 
