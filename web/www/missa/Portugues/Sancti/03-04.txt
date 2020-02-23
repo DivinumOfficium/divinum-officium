@@ -13,31 +13,28 @@ vide C5;
 Gloria
 
 [Comment]
-# 04 III – Św. Kazimierza, Wyznawcy
+# 04 III – S. Casimiro, Confessor
 ! 3 classe
 ! Paramentos brancos
-Królewicz Kazimierz, syn Kazimierza Jagiellończyka, wychowany przez ks. Jana Długosza, pośród niebezpieczeństw życia dworskiego stał się wzorem cnót chrześcijańskich: roztropności, czystości i miłosierdzia. Czcił gorliwie Matkę Bożą. Zmarł 4 marca 1484 r. mając 26 lat. Relikwie jego spoczywają w Wilnie.
-
-Wspomnienie św. Lucjusza I, Papieża i Męczennika. Św. Lucjusz rządził Kościołem w czasie srogich prześladowań w połowie III wieku, zaledwie przez kilka miesięcy. Zmarł w roku 254.
 
 [Oratio]
-Boże, który umocniłeś świętego Kazimierza cnotą stałości wśród rozkoszy dworu królewskiego i powabów świata: prosimy Cię, aby za jego wstawiennictwem wierni Twoi pogardzali ziemskimi dobrami, a zawsze zdążali do niebieskich.
+Ó Deus, que no meio das delícias régias e dos atractivos do mundo fortalecestes S. Casimiro com a virtude da constância, fazei, Vos rogamos, que por sua intercessão os fiéis desprezem os bens terrenos e aspirem sempre aos celestiais.
 $Per Dominum
 
 [Commemoratio Oratio]
-! de św. Lucjusza I
-@Commune/C2b:Oratio:s/N\./Lucjusza/
+! de S. Lúcio I, Papa e Mártir 
+@Commune/C2b:Oratio:s/N\./Lúcio/
 (sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio Gregem
+@Commune/C4b:Oratio
 
 [Commemoratio Secreta]
-! de św. Lucjusza I
+! de S. Lúcio I, Papa e Mártir 
 @Commune/C2b:Secreta:s/N\./Lúcio/
 (sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
+@Commune/C4b:Secreta
 
 [Commemoratio Postcommunio]
-! de św. Lucjusza I
+! de S. Lúcio I, Papa e Mártir 
 @Commune/C2b:Postcommunio:s/N\./Lúcio/
 (sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio Gregem
+@Commune/C4b:Postcommunio
