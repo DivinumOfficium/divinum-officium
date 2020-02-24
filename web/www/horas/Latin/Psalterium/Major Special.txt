@@ -3,7 +3,7 @@
 v. Benedíctio, et cláritas, et sapiéntia, et gratiárum áctio, honor, virtus, et fortitúdo Deo nostro in sǽcula sæculórum. Amen.
 $Deo gratias
 
-[Hymnus Day0 Laudes](rubrica 1570 aut rubrica monastica)
+[HymnusM Day0 Laudes]
 v. Ecce jam noctis tenuátur umbra,
 Lucis auróra rútilans corúscat:
 Nísibus totis rogitémus omnes
@@ -45,7 +45,7 @@ R. Índuit Dóminus fortitúdinem, et præcínxit se virtúte.
 v. Fratres: Nescítis, quod ii, qui in stádio currunt, omnes quidem currunt, sed unus áccipit bravíum? Sic cúrrite, ut comprehendátis.
 $Deo gratias
 
-[Hymnus Day0 Laudes2](rubrica 1570 aut rubrica monastica)
+[HymnusM Day0 Laudes2]
 v. Ætérne rerum Cónditor,
 Noctem diémque qui regis,
 Et témporum das témpora,
@@ -147,7 +147,7 @@ R. A generatióne et progénie.
 v. Benedíctus Deus, et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolatiónis, qui consolátur nos in omni tribulatióne nostra.
 $Deo gratias
 
-[Hymnus Day0 Vespera](rubrica 1570 aut rubrica monastica)
+[HymnusM Day0 Vespera]
 v. Lucis Creátor óptime,
 Lucem diérum próferens,
 Primórdiis lucis novæ
@@ -209,7 +209,7 @@ R. Sicut incénsum in conspéctu tuo.
 v. Nox præcéssit, dies autem appropinquávit. Abiciámus ergo ópera tenebrárum, et induámur arma lucis. Sicut in die honéste ambulémus.
 $Deo gratias
 
-[Hymnus Day1 Laudes](rubrica 1570 aut rubrica monastica)
+[HymnusM Day1 Laudes]
 v. Splendor patérnæ glóriæ,
 De luce lucem próferens,
 Lux lucis, et fons lúminis,
@@ -309,7 +309,7 @@ R. Exsultávimus, et delectáti sumus.
 [Day1 Vespera]
 @:Day0 Vespera
 
-[Hymnus Day1 Vespera](rubrica 1570 aut rubrica monastica)
+[HymnusM Day1 Vespera]
 v. Imménse cæli Cónditor,
 Qui mixta ne confúnderent,
 Aquæ fluénta dívidens,
@@ -368,7 +368,7 @@ Amen.
 [Day2 Laudes]
 @:Day1 Laudes
 
-[Hymnus Day2 Laudes](rubrica 1570 aut rubrica monastica)
+[HymnusM Day2 Laudes]
 v. Ales diéi núntius
 Lucem propínquam prǽcinit:
 Nos excitátor méntium,
@@ -427,7 +427,7 @@ Amen.
 [Day2 Vespera]
 @:Day0 Vespera
 
-[Hymnus Day2 Vespera](rubrica 1570 aut rubrica monastica)
+[HymnusM Day2 Vespera]
 v. Tellúris ingens Cónditor,
 Mundi solum qui éruens,
 Pulsis aquæ moléstiis,
@@ -486,7 +486,7 @@ Amen.
 [Day3 Laudes]
 @:Day1 Laudes
 
-[Hymnus Day3 Laudes](rubrica 1570 aut rubrica monastica)
+[HymnusM Day3 Laudes]
 v. Nox, et tenébr[æ], et núbila,
 Confúsa, mund[i] et túrbida:
 Lux intrat, albéscit polus:
@@ -545,7 +545,7 @@ Amen.
 [Day3 Vespera]
 @:Day0 Vespera
 
-[Hymnus Day3 Vespera](rubrica 1570 aut rubrica monastica)
+[HymnusM Day3 Vespera]
 v. Cæli Deus sanctíssime,
 Qui lúcidum centrum poli
 Candóre pingis ígneo,
@@ -604,7 +604,7 @@ Amen.
 [Day4 Laudes]
 @:Day1 Laudes
 
-[Hymnus Day4 Laudes](rubrica 1570 aut rubrica monastica)
+[HymnusM Day4 Laudes]
 v. Lux ecce surgit áurea:
 Pallens fatíscat cǽcitas,
 Quæ nosmet in præceps diu
@@ -663,7 +663,7 @@ Amen.
 [Day4 Vespera]
 @:Day0 Vespera
 
-[Hymnus Day4 Vespera](rubrica 1570 aut rubrica monastica)
+[HymnusM Day4 Vespera]
 v. Magnæ Deus poténtiæ,
 Qui ex aquis ortum genus
 Partim remíttis gúrgiti,
@@ -722,7 +722,7 @@ Amen.
 [Day5 Laudes]
 @:Day1 Laudes
 
-[Hymnus Day5 Laudes](rubrica 1570 aut rubrica monastica)
+[HymnusM Day5 Laudes]
 v. Ætérna cæli glória,
 Beáta spes mortálium,
 Celsi Tonántis Unice,
@@ -791,7 +791,7 @@ Amen.
 [Day5 Vespera]
 @:Day0 Vespera
 
-[Hymnus Day5 Vespera](rubrica 1570 aut rubrica monastica)
+[HymnusM Day5 Vespera]
 v. Plasmátor hóminis Deus,
 Qui cunct solus órdinans,
 Humum jubes prodúcere
@@ -850,7 +850,7 @@ Amen.
 [Day6 Laudes]
 @:Day1 Laudes
 
-[Hymnus Day6 Laudes](rubrica 1570 aut rubrica monastica)
+[HymnusM Day6 Laudes]
 v. Auróra jam spargit polum:
 Terris dies illábitur:
 Lucis resúltat spículum,
@@ -917,9 +917,6 @@ Tibíque, Sancte Spíritus,
 Sicut fuit, sit júgiter
 Sæclum per omne glória.
 Amen.
-
-[Hymnus Day6 Vespera](rubrica 1570)
-@:HymnusM Day6 Vespera
 
 [HymnusM Day6 Vespera]
 {:H-VespFeria:}v. O lux beata Trinitas,
@@ -1019,9 +1016,6 @@ Sancto simul Paráclito,
 In sæculórum sǽcula.
 Amen.
 
-[Hymnus Adv Laudes](rubrica 1570)
-@:HymnusM Adv Laudes
-
 [HymnusM Adv Laudes]
 {:H-LaudsAdv:}v. Vox clara ecce íntonat,
 obscúra quæque íncrepat:
@@ -1089,9 +1083,6 @@ Deo Patri cum Fílio,
 Sancto simul Paráclito,
 In sæculórum sǽcula.
 Amen.
-
-[Hymnus Adv Vespera](rubrica 1570)
-@:HymnusM Adv Vespera
 
 [HymnusM Adv Vespera]
 {:H-VespAdv:}v. Cónditor alme síderum,
@@ -1164,7 +1155,7 @@ Ecce compléta sunt * ómnia, quæ dicta sunt per Angelum de Vírgine María.
 v. Clama, ne cesses, quasi tuba exálta vocem tuam, et annúntia pópulo meo scélera eórum, et dómui Jacob peccáta eórum.
 $Deo gratias
 
-[Hymnus Quad Laudes](rubrica 1570 aut rubrica monastica)
+[HymnusM Quad Laudes]
 v. Jam Christe sol justítiæ,
 Mentis dehíscant ténebræ:
 Virtútum ut lux rédeat,
@@ -1226,7 +1217,7 @@ R. Ut custódiant te in ómnibus viis tuis.
 v. Inter vestíbulum et altáre plorábunt sacerdótes, minístri Dómini, et dicent: Parce, Dómine, parce pópulo tuo: et ne des hereditátem tuam in oppróbrium, ut dominéntur eis natiónes. 
 $Deo gratias
 
-[Hymnus Quad Vespera](rubrica 1570 aut rubrica monastica)
+[HymnusM Quad Vespera]
 v. Audi, benígne Cónditor,
 Nostras preces cum flétibus,
 In hoc sacro jejúnio
@@ -1287,7 +1278,7 @@ Amen.
 v. Veníte, mittámus lignum in panem ejus, et eradámus eum de terra vivéntium, et nomen ejus non memorétur ámplius.
 $Deo gratias
 
-[Hymnus Quad5 Laudes](rubrica 1570 aut rubrica monastica)
+[HymnusM Quad5 Laudes]
 v. Lustris sex qui jam peráctis,
 Tempus implens córporis,
 Se volénte natus ad hoc,
@@ -1383,7 +1374,7 @@ R. Et ab insurgéntibus in me líbera me.
 v. Tu autem, Dómine Sábaoth, qui júdicas juste, et probas renes et corda, vídeam ultiónem tuam ex eis: tibi enim revelávi causam meam, Dómine, Deus meus.
 $Deo gratias
 
-[Hymnus Quad5 Vespera](rubrica 1570 aut rubrica monastica)
+[HymnusM Quad5 Vespera]
 v. Vexilla Regis pródeunt:
 Fulget Crucis mystérium,
 Quo carne carnis Cónditor
@@ -1471,7 +1462,7 @@ R. A viro iníquo éripe me.
 v. Christus resúrgens ex mórtuis iam non móritur, mors illi ultra non dominábitur. Quod enim mórtuus est peccáto, mórtuus est semel: quod autem vivit, vivit Deo.
 $Deo gratias
 
-[Hymnus Pasch Laudes](rubrica 1570 aut rubrica monastica)
+[HymnusM Pasch Laudes]
 v. Auróra lucis rútilat,
 Cælum láudibus íntonat,
 Mundus exsúltans júbilat,
@@ -1541,7 +1532,7 @@ R. Cæli et terra læténtur, allelúja.
 [Pasch Vespera]
 @:Pasch Laudes
 
-[Hymnus Pasch Vespera](rubrica 1570 aut rubrica monastica)
+[HymnusM Pasch Vespera]
 v. Ad cenam Agni próvidi,
 Et stolis albis cándidi,
 Post tránsitum maris Rubri,

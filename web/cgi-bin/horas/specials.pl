@@ -297,7 +297,7 @@ sub specials {
           $name = 'Day0 Laudes2';
         }
 
-        if ($version =~ /Monastic|1570/i && exists($capit{"HymnusM $name"})) {
+        if ($version =~ /(Monastic|1570)/i && exists($capit{"HymnusM $name"})) {
           $hymn = $capit{"HymnusM $name"};
         } else {
           $hymn = $capit{"Hymnus $name"};
