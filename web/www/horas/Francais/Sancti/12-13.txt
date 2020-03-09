@@ -80,7 +80,7 @@ Lucie, vierge de Syracuse, noble par sa famille et sa foi chrétienne, obtint, �
 @Commune/C7:Lectio9
 
 [Ant Laudes]
-@:Ant Vespera:s/;;.*//g
+@:Ant Vespera :s/;;.*//g
 
 [Ant 2]
 Vous êtes une colonne * immobile, Lucie, épouse du Christ, et tout le peuple attend que vous receviez la couronne de vie, aîléluia.
