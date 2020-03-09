@@ -127,7 +127,7 @@ Adrien persécutait les Chrétiens à Nicomédie, sur l’ordre de l’empereur 
 &teDeum
 
 [Ant Laudes]
-@:Ant Vespera:s/;;.*//g
+@:Ant Vespera :s/;;.*//g
 
 [Ant 2]
 Célébrons solennellement en ce jour * la Nativité de Marie, Mère de Dieu, toujours Vierge, par qui le Roi des rois vint parmi nous, alléluia.
