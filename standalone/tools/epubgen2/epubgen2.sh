@@ -35,6 +35,8 @@ OPTIONS:
    -p          If specified, generate the officium for a priest
                ("Dominus Vobiscum" instead of "Domine, exaudi orationem meam").
 
+   -v          If specified, generate the Parvum B.M.V. votive office.
+
    -r RUBRICS  The rubrics to use. Defaults to 1960.
                Supported values are: 1570, 1910, DA, 1955, 1960, Newcal
 
@@ -54,6 +56,7 @@ BLANG=Latin
 YEAR_FROM=`date +%Y`
 YEAR_TO=$YEAR_FROM
 PRIEST='' #has to be empty or '&priest=yes'
+VOTIVE='' #='C12' for Parvum B.M.V.
 EPUBDIR=$CDUR #output
 COVER_FILENAME=cover.jpg #a jpg file name to serve as cover (it has to exist in SOURCEDATADIR) #ascensio.jpg
 RUBRICS_CODE=1960
@@ -100,6 +103,9 @@ do
              ;;
          p)
              PRIEST='&priest=yes'
+             ;;
+         v)
+             VOTIVE='C12'
              ;;
          r)
              RUBRICS_CODE=$OPTARG
@@ -276,7 +282,7 @@ foreachHourInRange() {
 
 generateHour() {
 	echo -ne "Generating $FILENAME\r"
-	$EOFFICCIUMCMD "date1=$DATE_SCRIPT&command=pray${HORAS_NAMES[${H}]}&version=$RUBRICS&testmode=regular&lang2=$BLANG&votive=$PRIEST" > $WDIR/$FILENAME
+	$EOFFICCIUMCMD "date1=$DATE_SCRIPT&command=pray${HORAS_NAMES[${H}]}&version=$RUBRICS&testmode=regular&lang2=$BLANG&votive=$VOTIVE$PRIEST" > $WDIR/$FILENAME
 }
 
 generateHours() {
