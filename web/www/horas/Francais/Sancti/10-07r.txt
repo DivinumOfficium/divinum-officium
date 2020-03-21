@@ -11,7 +11,7 @@ Pasteur éternel de l’Eglise, regardez avec bienveillance votre troupeau, prot
 $Per Dominum
 
 [Hymnus Matutinum]
-@Sancti/10-07:Hymnus Vespera:s/Edisseréntem.*//s
+@Sancti/10-07:Hymnus Vespera :s/Edisseréntem.*//s
 Edisseréntem Fílium.
 _
 @Sancti/10-07::s/^v. //
@@ -20,5 +20,5 @@ _
 @Sancti/10-07::s/ Quidquid horum cogito.*//
 
 [Lectio9]
-@Sancti/10-07:Lectio8:s/.* non sancte cogitátur\?//s
+@Sancti/10-07:Lectio8:s/.* non sancte cogitátur\ ?//s
 &teDeum

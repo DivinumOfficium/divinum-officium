@@ -2,7 +2,7 @@
 S. Ægidii Abbatis;;Simplex;;1.1;;vide C5
 
 [Rule]
-vide C5;
+vide C5 ;
 
 [Oratio]
 @Commune/C5:Oratio1:s/N\./Ægídii/
@@ -10,7 +10,7 @@ vide C5;
 [Commemoratio]
 !Commémoraison des Saints 12 Frères, Martyrs
 @Commune/C3:Oratio proper
-$Oremus 
+$Oremus
 v. Faites, Seigneur, que la couronne fraternelle de vos Martyrs soit une source de joie : qu’elle procure à notre foi une augmentation de force, et qu’elle nous console par ces intercessions multiples.
 $Per Dominum
 
