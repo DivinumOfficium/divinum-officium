@@ -1,0 +1,52 @@
+[Rank]
+S. Raymundi de Penafort Confessoris;;Semiduplex;;2;;vide C5
+
+[Rule]
+vide C5
+Gloria
+!Suffragium=Maria2;;
+
+[Comment]
+# 23 I – S. Raimundo de Penhafort, Confessor
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C5:Introitus
+
+[Oratio]
+Ó Deus, que Vos dignastes escolher o B. Raimundo para o tornar em um insigne ministro do sacramento da penitência e que milagrosamente o fizestes atravessar as águas do mar, concedei-nos que por sua intercessão «façamos frutos dignos de penitência» e possamos chegar ao porto da salvação eterna.
+$Per Dominum
+
+[Lectio]
+@Commune/C5:Lectio
+
+[Graduale]
+@Commune/C5:Graduale
+
+[Evangelium]
+@Commune/C5:Evangelium
+
+[Offertorium]
+@Commune/C5:Offertorium
+
+[Secreta]
+@Commune/C5:Secreta
+
+[Communio]
+@Commune/C5:Communio
+
+[Postcommunio]
+@Commune/C5:Postcommunio
+
+[Commemoratio Oratio]
+! de Santa Emerenciana
+@Commune/C6a:Oratio1
+
+[Commemoratio Secreta]
+! de Santa Emerenciana
+@Commune/C6a:Secreta
+
+[Commemoratio Postcommunio]
+! de Santa Emerenciana
+@Commune/C6a:Postcommunio

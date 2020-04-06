@@ -1,0 +1,42 @@
+[Rank]
+S. Martinae Virginis et Martyris;;Semiduplex;;2;;vide C6
+
+[Rule]
+vide C6;
+Gloria
+Suffragium+Maria2;Ecclesiae,Papae;;
+
+[Comment]
+# 30 I – Santa Martinha, Viúva e Mártir
+! Wspomnienie
+! Paramentos vermelhos
+
+[Introitus]
+@Commune/C6:Introitus
+
+[Oratio]
+@Commune/C6:Oratio
+
+[Lectio]
+@Commune/C6:Lectio
+
+[Graduale]
+@Commune/C6:Graduale
+
+[Tractus]
+@Commune/C6:Tractus
+
+[Evangelium]
+@Commune/C6:Evangelium
+
+[Offertorium]
+@Commune/C6:Offertorium
+
+[Secreta]
+@Commune/C6:Secreta
+
+[Communio]
+@Commune/C6:Communio
+
+[Postcommunio]
+@Commune/C6:Postcommunio

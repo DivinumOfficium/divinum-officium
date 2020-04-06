@@ -1,0 +1,53 @@
+[Rank]
+S. Caroli Episcopi et Confessoris;;Duplex;;3;;vide C4
+
+[Rule]
+vide C4;
+9 lectiones
+
+[Comment]
+# 04 XI – S. Carlos Borromeu, Bispo e Confessor
+! 3 classe
+
+[Introitus]
+@Commune/C4:Introitus
+
+[Oratio]
+Pela protecção do vosso Santo Confessor e Pontífice Carlos, dignai-Vos guardar a vossa Igreja, Senhor, a fim de que, assim como a sua solicitude pastoral o tornou glorioso, assim também a sua intercessão nos obtenha perpétuo fervor no vosso amor.
+$Per Dominum
+
+[Commemoratio Oratio]
+! dos Santos Mártires Vital e Agrícola
+Ó Deus omnipotente, Vos rogamos, permiti que, celebrando a festa dos vossos Santos Mártires Vital e Agrícola, sejamos auxiliados pela sua intercessão junto de Vós.
+$Per Dominum
+
+[Lectio]
+@Commune/C4:Lectio
+
+[Graduale]
+@Commune/C4:Graduale
+
+[Evangelium]
+@Commune/C4:Evangelium
+
+[Offertorium]
+@Commune/C4:Offertorium
+
+[Secreta]
+@Commune/C4:Secreta
+
+[Commemoratio Secreta]
+! dos Santos Mártires Vital e Agrícola
+Deixai-Vos aplacar com os dons que Vos oferecemos, Senhor, e por intercessão dos vossos Santos Mártires Vital e Agrícola preservai-nos de todos os perigos.
+$Per Dominum
+
+[Communio]
+@Commune/C4:Communio
+
+[Postcommunio]
+@Commune/C4:Postcommunio
+
+[Commemoratio Postcommunio]
+! dos Santos Mártires Vital e Agrícola
+Que esta comunhão nos purifique dos nossos crimes, Senhor, e que por intercessão dos vossos Santos Mártires Vital e Agrícola nos faça participantes do remédio celestial.
+$Per Dominum

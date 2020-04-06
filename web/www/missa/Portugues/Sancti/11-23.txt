@@ -1,0 +1,65 @@
+[Rank]
+S. Clementis Papae et Martyris;;Duplex;;3;;vide C4b
+
+[Rank1570]
+S. Clementis Papae et Martyris;;Semiduplex;;2;;vide C2
+
+[RankNewcal]
+S. Clementis Papae et Martyris;;Duplex optional;;2;;vide C4b
+
+[Rule]
+OPapaM=Cleméntem;
+vide C4b;
+Gloria
+
+[Comment]
+# 23 XI – S. Clemente, Papa e Mártir
+! 3 classe
+! Paramentos vermelhos
+
+[Introitus]
+!Is 59:21; 56:7
+v. Disse o Senhor: Minhas palavras, que pus na vossa boca, não cessarão de estar nos vossos lábios; e então os dons, que apresentardes nos meus altares, ser-me-ão agradáveis.
+!Sl 111:1
+Bem-aventurado o varão que teme o Senhor: e cujo zelo é ardente no cumprimento dos seus mandamentos.
+&Gloria
+v. Disse o Senhor: Minhas palavras, que pus na vossa boca, não cessarão de estar nos vossos lábios; e então os dons, que apresentardes nos meus altares, ser-me-ão agradáveis.
+
+[Oratio]
+@Commune/C4b:Oratio
+
+[Commemoratio Oratio]
+! de Santa Felicidade
+Concedei-nos, ó Deus omnipotente, Vos suplicamos, que, celebrando nós a solenidade da B. Felicidade, vossa Mártir, sejamos protegidos pelos seus méritos e preces.
+$Per Dominum
+
+[Lectio]
+@Tempora/Pent23-0:Lectio
+
+[Graduale]
+@Commune/C4b:Graduale
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+@Commune/C4b:Secreta
+
+[Commemoratio Secreta]
+! de Santa Felicidade
+Aceitai propício, Senhor, os votos do vosso povo e fazei-nos gozar o efeito dos sufrágios daquela cuja festa nos permitis celebrar.
+$Per Dominum
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+@Commune/C4b:Postcommunio
+
+[Commemoratio Postcommunio]
+! de Santa Felicidade
+Ó Deus omnipotente, humildemente Vos suplicamos, pela intercessão dos vossos Santos, que multipliqueis sobre nós os vossos benefícios e governeis os dias da nossa vida.
+$Per Dominum

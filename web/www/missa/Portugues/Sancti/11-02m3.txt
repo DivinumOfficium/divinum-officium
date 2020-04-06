@@ -1,0 +1,57 @@
+[Rank]
+In Commemoratione Omnium Fidelium Defunctorum Ad tertiam Missam;;Duplex;;3;;ex C9
+
+[RankNewcal]
+In Commemoratione Omnium Fidelium Defunctorum Ad tertiam Missam;;Duplex Solemnity;;6;;ex C9
+
+[Rank1960]
+In Commemoratione Omnium Fidelium Defunctorum Ad tertiam Missam;;I. classis;;6;;ex C9
+
+[Rule]
+ex C9
+no Gloria
+no Credo
+Prefatio=Defunctorum
+multiple3
+Sequentia
+Requiem gloria
+
+[Comment]
+# 02 XI – Comemoração dos Fiéis Defuntos - 3ª Missa
+
+[Introitus]
+@Commune/C9:Introitus
+
+[Oratio]
+Ó Deus, que perdoais aos pecadores e desejais a salvação dos homens, imploramos a vossa clemência, por intercessão da bem-aventurada Maria, sempre Virgem, e de todos os Santos, em favor dos nossos irmãos, parentes e benfeitores, que saíram deste mundo, a fim de que alcancem a bem-aventurança eterna.
+$Per Dominum
+
+[Lectio]
+Lição do Livro do Apocalipse do B. Ap.º João.
+!Apoc 14:13
+Naqueles dias, ouvi uma voz do céu que me dizia: «Escreve: Bem-aventurados os mortos, que morrem no Senhor; porquanto, diz o Espírito, eles vão logo descansar no Senhor, visto que suas obras os acompanham».
+
+[Graduale]
+@Commune/C9:Graduale
+
+[Sequentia]
+@Commune/C9:Sequentia
+
+[Evangelium]
+Continuação ++ do santo Evangelho segundo S. João.
+!Jo 6:51-55
+Naquele tempo, disse Jesus às turbas dos judeus: «Eu sou o pão vivo, que desci do céu. Se alguém comer deste pão, viverá eternamente; pois o pão que dou é a minha carne para a vida do mundo». Porém os judeus discutiam uns com os outros, dizendo: «Como pode Ele dar-nos a comer a sua carne?». Jesus respondeu-lhes: «Em verdade, em verdade vos digo: se não comerdes a carne do Filho do homem e não beberdes o seu sangue, não tereis a vida em vós. Aquele que come a minha carne e bebe o meu sangue tem a vida eterna, e Eu o ressuscitarei no último dia».
+
+[Offertorium]
+@Commune/C9:Offertorium
+
+[Secreta]
+Ó Deus, cuja misericórdia é infinita, ouvi benigno as nossas humildes preces, e concedei, pela virtude deste sacramento da nossa salvação, o perdão dos seus pecados às almas dos nossos irmãos, parentes e benfeitores, aos quais permitistes a graça de confessarem o vosso nome.
+$Per Dominum
+
+[Communio]
+@Commune/C9:Communio
+
+[Postcommunio]
+Ó Deus omnipotente e misericordioso, Vos pedimos, concedei às almas dos nossos irmãos, parentes e benfeitores, pelos quais oferecemos à vossa majestade este sacrifício de louvor, a graça de alcançarem da vossa misericórdia, pela virtude deste sacramento, a expiação dos pecados e a felicidade da luz eterna.
+$Per Dominum

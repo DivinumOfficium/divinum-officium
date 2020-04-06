@@ -1,0 +1,47 @@
+[Rank]
+S. Francisci Salesii Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[Name]
+Francisce
+
+[Rule]
+vide C4a;
+Gloria
+CredoDA
+
+[Comment]
+# 29 I – S. Francisco de Sales, Bispo Confessor e Doutor
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Ó Deus, que para a salvação das almas quisestes que o B. Francisco, vosso Confessor e Pontífice, se fizesse tudo para todos, concedei-nos benigno que, cheios da doçura do vosso amor, guiados pelos seus conselhos e protegidos pelos seus merecimentos, alcancemos as alegrias eternas.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Tractus]
+@Commune/C4a:Tractus
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+@Commune/C4a:Secreta
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+@Commune/C4a:Postcommunio
+

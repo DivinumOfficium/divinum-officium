@@ -1,0 +1,50 @@
+[Rank]
+S. Lini Papae et Martyris;;Semiduplex;;2;;vide C4b
+
+[Rule]
+OPapaM=Linum;
+vide C4b;
+Gloria
+
+[Comment]
+# 23 IX – S. Lino, Papa e Mártir
+
+[Introitus]
+@Commune/C4b:Introitus
+
+[Oratio]
+@Commune/C4b:Oratio
+
+[Lectio]
+@Commune/C4b:Lectio
+
+[Graduale]
+@Commune/C4b:Graduale
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+@Commune/C4b:Secreta
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+@Commune/C4b:Postcommunio
+
+[Commemoratio Oratio]
+! de Santa Tecla
+Ó Deus omnipotente, celebrando nós o nascimento da B. Tecla, vossa Virgem e Mártir, concedei-nos, Vos suplicamos, que nos alegremos com sua festa anual e nos sejam proveitosos os exemplos da sua grande fé.
+$Per Dominum
+
+[Commemoratio Secreta]
+! de Santa Tecla
+@Commune/C6:Secreta
+
+[Commemoratio Postcommunio]
+! de Santa Tecla
+@Commune/C6:Postcommunio

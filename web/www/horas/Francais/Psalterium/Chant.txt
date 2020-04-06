@@ -1,0 +1,130 @@
+[sequence]
+Lauds1:1-5, Benedictus
+Lauds2:1-5
+Prima, Tertia, Sexta, Nona, Completorium
+Vespera :1-5, Magnificat
+
+[Day0]
+6F, 4e, 7a, 8G, 1G, 8G
+1g, 2D, 7a, 2D, 2D
+8c, 2D, 8G, 5a, 8G
+7c2, 3b, 4g, 7c, 9, 1f
+
+[Day1]
+7a, 8G, 4e, 1f, 1g3, 4e
+8G, 6F, 1a, 8c, 7d
+4e, 8c, 8c, 7a, 8G
+1g2, 3g, 7b, 1f, 4g, 8G
+
+[Day2]
+2D, 6F, 1g3, 7a, 2D, 4e, 7a
+4e, 8c, 8G, 8G, 3b
+8c, 8G, 8G, 2D, 8G
+8G, 1g2, 1f, 7a, 5a, 5a
+
+[Day3]
+3g2, 8c, 6F, 4c, 4e, 1g2
+7a, 4e, 8G, 7a, 1f
+1g, 8G, 1f, 3b, 3a
+2D, 8G, 8c, 1g2, 3g, 8G
+
+[Day4]
+8G, 6F, 8c, 4e, 8c, 7a
+8G, 1f, 7a, 4e, 7a
+7a, 8c, 5a, 6F, 8G
+1a, 1g2, 3g2, 3a, 5a, 7c
+
+
+[Day5]
+6F, 2D, 7a, 5a, 1g3, 8G
+6F, 8G, 4e, 1f, 8G
+2D, 1a2, 8G, 1a, 7c
+3g2, 6F, 4e, 8c, 3a, 1f
+
+[Day6]
+8c, 7a, 7c, 3a, 7a, 8G
+4e, 2D, 2D, 5a, 8G
+8G, 8c, 8G, 1f, 5a
+6F, 8c, 1a3, 8G, 4g, 7a
+
+[Matins]
+8g, 7a, 6f, 1g, 8g, 1g2, 2d, 5a, 1g, 3f, 7a
+2d, 4e, 7c, 6f, 4e, 7c2, 8g, 8g, 8g, 3g
+4g, 1g, 2d, 7c, 4a, 8g, 6f, 2d, 8c, 6a
+1g, 6f, 4g, 4e, 7c, 8g, 8c, 8c, 2d, 4c
+4e, 8g, 2d, 7a, 1f, 8g, 8c, 6f, 8g, 4c
+7a, 5a, 2d, 4e, 3a, 6f, 8g, 8g, 1f, 6a
+5a, 7c, 4e, 8c, 2d, 7a, 6f, 8c, 1f, 6a
+
+[Matins Adv]
+1g, 2d, 3a, 4e, 5, 6f, 7d, 8g, 4e, 5g
+
+[Matins Pasc]
+5a, 5a, 5a, 6f
+2d, 6, 8g
+4e, 7a, 8c
+7a, 4e, 6f
+5a, 8c, 6f
+4g, 7c, 6f,
+1g, 4e, 8c,
+
+[Matins C1]
+1g, 7a, 7b, 8g, 8g, 8g, 6f, 6f, 4a, 4c
+
+[Matins Cp]
+8g, 3a, 1g, 6f
+
+[Matins C2]
+1d, 3b2, 7c, 1d, 2d, 2d, 7c, 4c2, 4a, 6a
+
+[Matins C3]
+4d, 7c, 7c, 8g, 4e, 3, 4e, 1g, 4e, 6a
+
+[Matins C4]
+3a2, 1g, 8g, 1d, 8g, 1g, 8g, 8g, 7a, 4c
+
+[Matins C5]
+3a2, 1g, 8g, 1d, 8g, 1g, 8g, 8g, 7a, 4c
+
+[Matins C6]
+7c, 4a, 7a, 7c, 7c, 8c, 3a, 3a2, 8a, 6a
+
+[Matins C7]
+7c, 4a, 7a, 7c, 7c, 8c, 3a, 3a2, 8a, 6a
+
+Matins C8]
+3a, 4a, 6f, 7c, 7a, 7a, 8g, 2d, 8a, 7a
+
+[Matins C9]
+7c, 8g, 8g, 8g, 8g, 4c, 2, 2, 2, 6a
+
+[Matins C11]
+4a, 4a, 4a, 7c, 7c, 7c, 4c, 4b, 1f, 7a
+
+[Matins C12]
+4a, 4a, 4a, 7c, 7c, 7c, 4c, 4b, 1f, 7a
+
+[Monastic Horas]
+7c2, 8G, 8G, 1g5, 2d, 3b, 7C2
+8G, 8G, 4A, 4A, 4A, 4A, 4A,
+1a2, 8a, 8G, 8G, 8G, 5G, 8G,
+3a, 1a2, 2D, 2D, 2D, 2D, 2D,
+9d, 9d, 9d, 9d, 9d, 9d, 9d,
+
+[Monastic Laudes]
+6F, 6F, 6F, 6F, 6F, 6F, 6F, 8G,
+6F, 8a, 8a, 8G, 1a, 1a, 1a, 6F,
+4E, 6F, 8G2, 7a, 5g, 5g, 5g, 7a,
+7a, 2D, 8a, 1g2, 2D, 2D, 2D, 1g5,
+8G2, 5a, 6F, 4E, 6F, 6F, 6F, 7a,
+1a2, 8a, 8a, 4E, 1f, 1F, 1f, 8G,
+4E, 8G, 6F, 6F, 4E, 4E, 4E, 8G,
+
+[Monastic Vespera]
+7C2, 4g, 4a, 7C, 8G,
+9, 1g2, 8a, 8a, 2D, 8G,
+8a, 9i, 9i, 4a, 5a,
+3g, 3g, 8g, 5a, 8G2,
+3g, 2g, 4g, 8a, 7c,
+8a, 6F, 6F, 8a, 1f,
+7C2, 4E, 8A, 9i, 7a,

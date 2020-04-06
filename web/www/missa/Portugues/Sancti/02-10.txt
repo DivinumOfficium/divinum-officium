@@ -1,0 +1,40 @@
+[Rank]
+S. Scholasticae Virginis;;Duplex;;3;;vide C6b
+
+[Rule]
+vide C6b;
+Gloria
+
+[Comment]
+# 10 II – Santa Escolástica, Virgem
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C6b:Introitus
+
+[Oratio]
+Ó Deus, que para mostrar a vida inocente da vossa B. Virgem Escolástica fizestes entrar no céu a sua alma sob a figura de uma pomba, concedei-nos pelos seus méritos e preces que vivamos com tanta inocência que mereçamos alcançar os gozos eternos.
+$Per Dominum.
+
+[Lectio]
+@Commune/C6b:Lectio
+
+[Graduale]
+@Commune/C6b:Graduale
+
+[Evangelium]
+@Commune/C6b:Evangelium
+
+[Offertorium]
+@Commune/C6b:Offertorium
+
+[Secreta]
+@Commune/C6b:Secreta
+
+[Communio]
+@Commune/C6b:Communio
+
+[Postcommunio]
+@Commune/C6b:Postcommunio
+

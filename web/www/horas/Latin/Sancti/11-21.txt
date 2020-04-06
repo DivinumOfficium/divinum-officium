@@ -7,13 +7,14 @@ In Præsentatione Beatæ Mariæ Virginis;;Duplex;;3;;vide C11
 [Rule]
 ex C11;
 9 lectiones
+Doxology=Nat
 Ipsa Virgo Virginum
 
 [Ant 1]
-@Commune/C10:Ant 2:s/Christo:.*/Christo, allelúia/
+@Commune/C10:Ant 2:s/Christo:.*/Christo, allelúja./
 
 [Oratio]
-Deus, qui beátam Mariam semper Vírginem, Spíritus Sancti habitáculum, hodiérna die in templo præsentári voluísti: præsta, quǽsumus; ut, ejus intercessióne, in templo glóriæ tuæ præsentári mereámur.
+Deus, qui beátam Maríam semper Vírginem, Spíritus Sancti habitáculum, hodiérna die in templo præsentári voluísti: præsta, quǽsumus; ut, ejus intercessióne, in templo glóriæ tuæ præsentári mereámur.
 $Per Dominum eiusdem
 
 [Lectio4]
@@ -34,6 +35,9 @@ Quid ergo éxsequar cibórum parsimóniam, officiórum redundantiam: álterum ul
 
 [Ant 2]
 @Commune/C10:Ant 2
+
+[Ant 3]
+@:Ant 1
 
 [Lectio94]
 Jóachim lectíssimam illam ac summis láudibus dignam mulíerem Annam matrimónio sibi copulávit. Verum, quemádmodum prisca illa Anna, cum sterilitátis morbo laboráret, per oratiónem ac promissiónem, Samuélem procreávit; eódem modo hæc étiam, per obsecratiónem et promissiónem, Dei Genetrícem a Deo accépit, ut ne hic quoque cuíquam ex illústribus matrónis céderet. Itaque grátia (nam hoc sonat Annæ vocábulum) Dóminam parit (id enim Maríæ nómine significátur). Vere étenim rerum ómnium conditárum Dómina facta est, cum Creatóris Mater éxstitit. In lucem autem éditur in domo probáticæ Jóachim, atque ad templum addúcitur. Ac deínde, in domo Dei plantáta atque per Spíritum sagináta, instar olívæ frugíferæ virtútum ómnium domicílium effícitur; ut quæ vidélicet ab omni hujúsce vitæ et carnis concupiscéntia mentem abstraxísset, atque ita vírginem una cum córpore ánimam conservásset, ut eam decébat, quæ Deum sinu suo exceptúra erat.

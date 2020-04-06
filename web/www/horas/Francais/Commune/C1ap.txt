@@ -1,0 +1,128 @@
+[Name]
+Commune Evangelistarum tempore Paschali
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+Una Antiphona
+
+[Ant Vespera]
+@Commune/C1p
+
+[Capitulum Vespera]
+@Commune/C1p
+
+[Hymnus Vespera]
+@Commune/C1p
+
+[Versum 1]
+@Commune/C1p
+
+[Ant 1]
+@Commune/C1p
+
+[Invit]
+@Commune/C1p
+
+[Hymnus Matutinum]
+@Commune/C1p:Hymnus Vespera
+
+[Ant Matutinum]
+@Commune/C1p
+
+[Lectio1]
+@Commune/C1a:Lectio1
+
+[Responsory1]
+@Commune/C1p
+
+[Lectio2]
+@Commune/C1a:Lectio2
+
+[Responsory2]
+@Commune/C1p
+
+[Lectio3]
+@Commune/C1a:Lectio3
+
+[Responsory3]
+@Commune/C1p
+
+[Lectio4]
+@Commune/C1
+
+[Responsory4]
+@Commune/C1p
+
+[Lectio5]
+@Commune/C1
+
+[Responsory5]
+@Commune/C1p
+
+[Lectio6]
+@Commune/C1
+
+[Responsory6]
+@Commune/C1p
+
+[Lectio7]
+@Commune/C1a:Lectio7
+
+[Responsory7]
+@Commune/C1p
+
+[Lectio8]
+@Commune/C1a:Lectio8
+
+[Responsory8]
+@Commune/C1p
+
+[Lectio9]
+@Commune/C1a:Lectio9
+
+[Ant Laudes]
+@Commune/C1p
+
+[Capitulum Laudes]
+@:Capitulum Vespera
+
+[Hymnus Laudes]
+@Commune/C1p
+
+[HymnusM Laudes]
+@Commune/C1p
+
+[Versum 2]
+@Commune/C1p
+
+[Ant 2]
+@Commune/C1p
+
+[Lectio Prima]
+@Commune/C1p
+
+[Capitulum Tertia]
+@:Capitulum Vespera
+
+[Responsory Tertia]
+@Commune/C1p
+
+[Capitulum Sexta]
+@Commune/C1p
+
+[Responsory Sexta]
+@Commune/C1p
+
+[Capitulum Nona]
+@Commune/C1p
+
+[Responsory Nona]
+@Commune/C1p
+
+[Ant Vespera 3]
+@Commune/C1p
+
+[Ant 3]
+@Commune/C1p
+

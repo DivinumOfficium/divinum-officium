@@ -1,0 +1,45 @@
+[Rank]
+S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4b
+
+[Rank1960]
+S. Damasi Papae et Confessoris;;Duplex;;3;;vide C4b
+
+[RankNewcal]
+S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4b
+
+[Rule]
+OPapaC=Dámasum;
+vide C4;
+Gloria
+
+[Comment]
+# 11 XII – S. Dâmaso I, Papa e Confessor
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C4b:Introitus
+
+[Oratio]
+@Commune/C4b:Oratio
+
+[Lectio]
+@Commune/C4b:Lectio
+
+[Graduale]
+@Commune/C4b:Graduale
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+@Commune/C4b:Secreta
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+@Commune/C4b:Postcommunio

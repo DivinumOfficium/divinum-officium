@@ -1,0 +1,38 @@
+[Name]
+Sancta Maria Sabbato; Salve Sancta parens
+
+[Rule]
+Gloria
+Suffr=Spiritu;;Ecclesiae,Papa
+Prefatio=Maria=Feast;
+
+[Introitus]
+@Commune/C10c:Introitus
+
+[Oratio]
+@Commune/C10c:Oratio
+
+[Lectio]
+@Commune/C10c:Lectio
+
+[Graduale]
+!  
+Bendita e venerável sois, ó Virgem Maria, que fostes Mãe do Salvador, sem que a vossa pureza sofresse a mais leve ofensa.
+V. Ó Virgem, Mãe de Deus, Aquele que nem todo o universo é capaz de conter, quando se fez homem, esteve encerrado no vosso seio. Aleluia, aleluia.
+V. Depois de haverdes dado à luz, permanecestes Virgem imaculada: Intercedei por nós, ó Mãe de Deus. Aleluia.
+
+[Evangelium]
+@Commune/C10c:Evangelium
+
+[Offertorium]
+!  
+Ave, Maria, cheia de graça: o Senhor é convosco: bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre.
+
+[Secreta]
+@Commune/C10c:Secreta
+
+[Communio]
+@Commune/C10c:Communio
+
+[Postcommunio]
+@Commune/C10c:Postcommunio

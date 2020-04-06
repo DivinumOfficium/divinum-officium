@@ -1,0 +1,64 @@
+[Rank]
+S. Petri Chrysologi Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[RankNewcal]
+S. Petri Chrysologi Episcopi Confessoris Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
+
+[Name]
+Petre Chrysologe
+
+[Rule]
+vide C4a;
+Gloria
+CredoDA
+
+[Comment]
+# 04 XII – S. Pedro Crisólogo, Bispo Confessor e Doutor
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Ó Deus, que para governar e instruir a vossa Igreja Vos dignastes escolher o B. Pedro Crisólogo, egrégio Doutor, o qual nos foi indicado por uma forma divina, concedei-nos, Vos imploramos, que assim como o tivemos como Doutor na terra, assim também mereçamos alcançar a sua intercessão nos céus.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+!Sb 44:16
+Eis o grande sacerdote que nos dias da sua vida agradou a Deus.
+!Sl 44:20
+Ninguém o igualou na observância das leis do Altíssimo. Aleluia, aleluia.
+!Sl 109:4
+Tu és sacerdote para sempre, segundo a ordem de Melquisedeque. Aleluia.
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+@Commune/C4a:Secreta
+
+[Communio]
+!Mt 25:20; 25:21
+Senhor, entregastes-me cinco talentos; eis aqui outros cinco que lucrei. «Está bem, servo bom e fiel; visto que foste fiel em pouca cousa, Eu te colocarei sobre muitas; entra na glória do teu Senhor».
+
+[Postcommunio]
+@Commune/C4a:Postcommunio
+
+[Commemoratio Oratio]
+! de Santa Bárbara, Virgem e Mártir
+@Commune/C6b:Oratio
+
+[Commemoratio Secreta]
+! de Santa Bárbara, Virgem e Mártir
+@Commune/C6b:Secreta
+
+[Commemoratio Postcommunio]
+! de Santa Bárbara, Virgem e Mártir
+@Commune/C6b:Postcommunio

@@ -1,0 +1,42 @@
+[Rank]
+S. Ubaldi Episcopi Confessoris;;Semiduplex;;2;;vide C4
+
+[Rule]
+vide C4;
+9 lectiones
+
+[Comment]
+# 16 V – S. Ubaldo, Bispo e Confessor
+! Comemoração
+! Paramentos brancos
+
+[Introitus]
+@Commune/C4:Introitus
+
+[Oratio]
+Deixai-Vos aplacar, Senhor, Vos suplicamos, e concedei-nos o vosso auxílio; e pela intercessão do B. Ubaldo, vosso Confessor e Pontífice, estendei sobre nós a vossa mão misericordiosa, a fim de que nos defenda de todas as perfídias do demónio.
+$Per Dominum
+
+[Lectio]
+@Commune/C4:Lectio
+
+[Graduale]
+@Commune/C4:Graduale
+
+[GradualeP]
+@Commune/C4:GradualeP
+
+[Evangelium]
+@Commune/C4:Evangelium
+
+[Offertorium]
+@Commune/C4:Offertorium
+
+[Secreta]
+@Commune/C4:Secreta
+
+[Communio]
+@Commune/C4:Communio
+
+[Postcommunio]
+@Commune/C4:Postcommunio

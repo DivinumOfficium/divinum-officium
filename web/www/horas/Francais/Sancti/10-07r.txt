@@ -1,0 +1,24 @@
+@Sancti/10-07
+
+[Rank]
+Festum Beatæ Mariæ Virginis a Rosario;;Duplex 2 classis;;5;;ex C11
+
+[Commemoratio]
+!Commémoraison de S. Marc, Pape et Confesseur
+@Commune/C4:Oratio proper
+$Oremus
+Pasteur éternel de l’Eglise, regardez avec bienveillance votre troupeau, protégez-le et gardez-le toujours. Nous vous le demandons par le bienheureux Pape Marc que vous avez placé comme berger à la tête de l’Eglise.
+$Per Dominum
+
+[Hymnus Matutinum]
+@Sancti/10-07:Hymnus Vespera :s/Edisseréntem.*//s
+Edisseréntem Fílium.
+_
+@Sancti/10-07::s/^v. //
+
+[Lectio8]
+@Sancti/10-07::s/ Quidquid horum cogito.*//
+
+[Lectio9]
+@Sancti/10-07:Lectio8:s/.* non sancte cogitátur\ ?//s
+&teDeum

@@ -1,0 +1,54 @@
+[Rank]
+S. Titi Episc. et Confessoris;;Duplex;;3;;vide C4
+
+[Rule]
+vide C4;
+Gloria
+
+[Comment]
+# 06 II – S. Tito, Bispo e Confessor
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C4:Introitus
+
+[Oratio]
+Ó Deus, que ornastes o B. Tito, vosso Confessor e Pontífice, com as virtudes apostólicas, concedei-nos, pelos seus méritos e intercessão, que vivendo neste mundo justa e piamente, mereçamos alcançar a pátria celestial.
+$Per Dominum.
+
+[Commemoratio Oratio]
+! de Santa Dorotéia
+@Commune/C6a:Oratio1
+
+[Lectio]
+@Commune/C4:Lectio
+
+[Graduale]
+@Commune/C4:Graduale
+
+[Tractus]
+@Commune/C4:Tractus
+
+[Evangelium]
+@Sancti/04-25:Evangelium
+
+[Offertorium]
+@Commune/C4:Offertorium
+
+[Secreta]
+@Commune/C4:Secreta
+
+[Commemoratio Secreta]
+! de Santa Dorotéia
+@Commune/C6a:Secreta
+
+[Communio]
+@Commune/C4:Communio
+
+[Postcommunio]
+@Commune/C4:Postcommunio
+
+[Commemoratio Postcommunio]
+! de Santa Dorotéia
+@Commune/C6a:Postcommunio

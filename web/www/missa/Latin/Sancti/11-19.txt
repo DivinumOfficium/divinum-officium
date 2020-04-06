@@ -1,5 +1,5 @@
 [Rank]
-S. Elisabeth Viduae;;Duplex;;3;;vide C7a
+S. Elisabeth Viduæ;;Duplex;;3;;vide C7a
 
 [Rule]
 CPapaM=Pontiánum;
@@ -26,16 +26,16 @@ $Per Dominum
 !Pro S. Pontiano Papa et Martyre
 @Commune/C2c:Oratio:s/N\./Pontiáni/
 (sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio Gregem
+@Commune/C4b:Oratio
 
 [Commemoratio Secreta]
 !Pro S. Pontiano Papa et Martyre
 @Commune/C2c:Secreta:s/N\./Pontiáni/
 (sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
+@Commune/C4b:Secreta
 
 [Commemoratio Postcommunio]
 !Pro S. Pontiano Papa et Martyre
 @Commune/C2c:Postcommunio:s/N\./Pontiáno/
 (sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio Gregem
+@Commune/C4b:Postcommunio

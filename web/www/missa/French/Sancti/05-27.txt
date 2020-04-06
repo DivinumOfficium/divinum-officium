@@ -1,0 +1,40 @@
+[Rank]
+S. Bedæ Venerabilis Confessoris et Ecclesiæ Doctoris;;Duplex majus;;4;;vide C5a
+
+[RankNewcal]
+S. Bedæ Venerabilis Confessoris et Ecclesiæ Doctoris;;Duplex optional;;2;;vide C5a
+
+[Rule]
+vide C5a;
+CPapaM=Joánnem;
+Gloria
+
+[Oratio]
+Dieu, qui illustrez votre Église par la science du bienheureux Bède votre Docteur et Confesseur, accordez dans votre bonté à vos serviteurs d’être toujours éclairés de sa sagesse et aidés de ses mérites.
+$Per Dominum
+
+[Secreta]
+Que la pieuse intercession de saint Bède, Confesseur et Docteur, ne nous fasse point défaut, Seigneur, qu’elle vous rende nos dons agréables et nous obtienne toujours votre indulgence.
+$Per Dominum
+
+[Postcommunio]
+Afin, Seigneur, que votre saint sacrifice nous procure le salut, que le bienheureux Bède, votre Confesseur et votre admirable Docteur intercède pour nous.
+$Per Dominum
+
+[Commemoratio Oratio]
+!Pro S. Joanne
+@Commune/C2b:Oratio:s/N\./Joánnis/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
+
+[Commemoratio Secreta]
+!Pro S. Joanne
+@Commune/C2b:Secreta:s/N\./Joánne/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
+
+[Commemoratio Postcommunio]
+!Pro S. Joanne
+@Commune/C2b:Postcommunio:s/N\./Joánne/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem

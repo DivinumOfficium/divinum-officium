@@ -1,0 +1,163 @@
+@Commune/C2
+
+[Name]
+Commune unius Martyris Tempore Paschali
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+Psalm5 Vespera=116
+Psalm5 Vespera3=115
+
+[Ant Vespera]
+@Commune/C1p:Ant Laudes
+
+[Capitulum Vespera]
+@Commune/C1p
+
+[Versum 1]
+@Commune/C1p
+
+[Ant 1]
+@Commune/C1p
+
+[Invit]
+Que les Saints se réjouissent dans le Seigneur, * Alléluia
+
+[Hymnus Matutinum]
+@Commune/C2:Hymnus Vespera
+
+[Ant Matutinum]
+Les justes s'éleverons * avec une grande hardiesse contre ceux qui les auront accablés d'affliction, alléluia.;;1
+;;2
+;;3
+V. Saints et justes, réjouissez-vous dans le Seigneur, alléluia.
+R. Dieu vous a choisis pour son héritage, alléluia.
+Les voici * élevés au rang des enfants de Dieu et leur héritage est avec les Saints, alléluia.;;4
+;;5
+;;6
+V. Seigneur, une lumière sans fin éclairera vos Saints, alléluia.
+R. Dans toute l'éternité, allélúia.
+Seigneur, * une lumière sans fin éclairera vos Saints, dans toute l'éternité, allélúia.;;10
+;;14
+;;20
+V. Ils seront couronnés d'une allégresse éternelle, alléluia.
+R. Ils seront dans la joie et le ravissement, alléluia.
+
+[Responsory1]
+@Commune/C1p
+
+[Responsory2]
+@Commune/C1p
+
+[Responsory3]
+@Commune/C1p
+
+[Lectio4]
+Sermon de saint Ambroise, Evêque.
+!Serm. 22.
+Il est juste et raisonnable, mes frères, qu'après avoir célébré dans l'Eglise avec tant d'allégresse la solennité de Pâque, nous partagions notre joie avec les saints Martyrs et que nous leur annoncions la gloire de la Résurrection du Seigneur, puisqu'ils ont été les compagnons de sa Passion. Car ceux qui ont part aux outrages doivent aussi avoir part à la joie. Ce sont les paroles formelles de l'Apotre qui dit : "Comme vous êtes associez aux souffrances, vous le serez aussi à la résurrection, si nous souffrons avec Lui, nous règnerons avec Lui." Ceux donc qui ont enduré des maux ici-bas pour l'amour de Jésus Chris, doivent jouïr de la gloire avec Jésus Christ.
+
+[Responsory4]
+@Commune/C1p
+
+[Lectio5]
+Annonçons, dis-je, aux Saints Martyrs, le mystère de la Pâque et de la résurrection : disons leur que le tombeau du Seigneur a été ouvert afin qu'ils espèrent que les leurs le seront aussi. Disons leur que son corps tout mort qu'il était a repris sa première vigueur et que le sang a coulé de nouveau dans ses veines, afin qu'ils attendent cette bienheureuse immortalité qui doit renimer leurs membres froids. Car ce qui a ressucité Jésus Christ, réssucitera aussi les Martyrs. Comme ils ont marché par la voie des souffrances, ils marcheront par le voie de la vie. Il est écrit dans le Psaume : "Vous m'avez fait connaitre les sentiers de la vie ", et cela est dit de la résurection du Sauveur, qui revenant du tombeau après la mort, commence à marcher par un chemin qui était inconnu auparavant.
+
+[Responsory5]
+@Commune/C2:Responsory51
+
+[Lectio6]
+Car avant l'avènement de Jésus Christ, les hommes ignoraient le chemin de la vie, qui n'avait pas encore été frayé par la résurrection de personne. Mais depuis que la résurrection du Seigneur l'a fait connaitre, plusieurs y ont marché, dont le Saint Evangéliste dit : Les Corps de plusieurs saints furent réssucités avec lui et entèrent dans la Sainte Cité. C'est pourquoi Jésus Christ réssucité ayant dit : "Vous m'avez fait connaitre les voies de la vie", nous pouvons aussi dire maintenant au Seigneur, Vous nous avez fait connaitre les voies de la vie. Car il nous les a fait connaitre, en effet, puisqu'il nous a découvert le sentier par lequel on arrive à la vie. Il m'a fait connaitre les voies de la vie lorsqu'il m'a appris à vivre selon la foi et à pratiquer la miséricorde, la justice, la charité : ces vertus étant autant de voies qui conduisent au salut.
+
+[Responsory6]
+@Commune/C2:Responsory61
+
+[Lectio7]
+Lecture du Saint Evangile selon Saint Jean.
+!Joannes 15:1-7
+En ce temps-là, Jésus dit à ses disciples : Je suis la vraie vigne, et mon Père est le vigneron. Et le reste.
+_
+!Sermon de saint Augustin, Evêque.
+!Tract. 80. in Joannem.
+Cet endroit de l'Evangile, mes frères, où Notre-Seigneur dit à ses disciples qu'il est la vigne et qu'ils en sont les branches, doit s'entendre en ce sens que Jésus-Christ homme, médiateur entre Dieu et les hommes, est le chef de l'Eglise et que nous sommes ses membres. La vigne et ses branches sont de même nature ; c'est pourquoi, comme il était Dieu et que nous n'avons pas la nature divine, il s'est fait homme, afin que la nature humaine fût en lui comme une vigne, dont nous autres hommes nous pourrions être les branches.
+
+[Responsory7]
+@Commune/C1p
+
+[Responsory7c]
+@Commune/C1p:Responsory2
+
+[Lectio8]
+Mais que veut dire : « Je suis la vraie vigne ? » En ajoutant le mot « vraie », a-t-il voulu dire qu'il se rapporte à cette vigne d'où la comparaison est tirée ? Il est en effet appelé vigne par comparaison, et non par appropriation, comme il est appelé brebis, agneau, lion, rocher, pierre angulaire et autres choses qui sont vraiment ce que leur nom signifie ; mais qui, dans le cas présent, servent à établir une comparaison et non à indiquer l'existence de propriétés réelles. Aussi, quand Jésus dit : « Je suis la vraie vigne », c'est pour se distinguer de celle à qui il est dit : « Comment as-tu dégénéré jusqu'à devenir une fausse vigne ? » Car peut-on dire qu'elle était une vraie vigne, celle dont on attendait du raisin et qui a produit des épines ?
+
+[Responsory8]
+@Commune/C1p
+
+[Lectio9]
+« Je suis la vraie vigne », dit Jésus-Christ, « et mon Père est le vigneron. Il retranchera toutes les branches qui ne portent point de fruit en moi, et il émondera toutes celles qui portent du fruit, afin qu'elles en portent davantage ». Le vigneron et la vigne sont-ils donc la même chose ? Jésus-Christ est la vigne selon la nature qui lui permet de dire : « Le Père est plus grand que moi ». Mais selon la nature qui lui permet de dire : « Le Père et moi nous sommes un », il est lui-même le vigneron ; non pas un vigneron comme ceux qui en travaillant ne peuvent donner que des soins extérieurs, mais un vigneron capable de donner l'accroissement intérieur. « Car ce n'est pas celui qui plante ni celui qui arrose qui « est quelque chose, mais c'est Dieu qui donne l'accroissement ». Or, Jésus-Christ est vraiment Dieu; car « le Verbe était Dieu », ce qui fait que le Père et lui ne sont qu'un; et si « le Verbe s'est fait chair », ce qu'il n'était pas, il est cependant resté ce qu'il était.
+&teDeum
+
+[Ant Laudes]
+@:Ant Vespera
+
+[Capitulum Laudes]
+@Commune/C1p:Capitulum Vespera
+
+[Versum 2]
+@Commune/C1p
+
+[Ant 2]
+@Commune/C1p
+
+[Lectio Prima]
+@Commune/C1p
+
+[Capitulum Tertia]
+@Commune/C1p:Capitulum Vespera
+
+[Responsory Tertia]
+@Commune/C1p
+
+[Capitulum Sexta]
+@Commune/C1p
+
+[Responsory Sexta]
+@Commune/C1p
+
+[Capitulum Nona]
+@Commune/C1p
+
+[Responsory Nona]
+@Commune/C1p
+
+[Versum 3]
+@Commune/C1p:Versum 2
+
+[Ant 3]
+@Commune/C1p
+
+[Lectio41]
+De la lettre de Saint Ciprien, Evêque et Martur, aux Martyrs et aux Confesseurs
+!Lib. 2. Epist. 6.
+Quelles louanges vous donnerai-je, ô généreux Martyrs ? De quelles paroles me servirai-je pour relever la grandeur de votre courage et la fermeté de votre foi ? Vous avez souffert jusqu'au bout de cruelles tortures et ce n'est pas vous qui avez cedé aux tourmens, mais ce sont les tourmens qui vont ont cédé. Vous avez trouvé dans la couronne du martyre la fin de vos douleurs que vous ne pouviez trouver dans des supplices sans fin. L'inhumanité des bourreaux en vous faisant souffrir si longtemps n'a pas tant servi à ébranler votre foi qu'à vous envoyer plutôt à Dieu comme des hommes de Dieu.
+
+[Responsory41]
+@Commune/C1p:Responsory4
+
+[Lectio51]
+Ceux qui étaient présents à ce spectacle ont vu avec admiration ce combat célèste, ce combat divin, ce combat spirituel, ce combat de Jésus Christ. Ils ont vu ses serviteurs confesser son nom à haute voix, avec une contenance assurée et un courage inébranlable : nus et désarmez au dehors, mais couverts au dedans des armes d'une foi à l'épreuve. Ceux qui étaient tourmentez ont fait paraitre plus de force que ceux qui les tourmentaient et les ongles de fer ont été vaincus par ceux dont ils déchiraient cruellement les membres. Les coups redoublés des fouets qui rouvraient plutôt les plaies des serviteurs de Dieu, qu'ils ne leur en faisaient de nouvelles, n'ont pas été capables de surmonter leur foi invincible ! Leur sang coulait de toutes parts pour éteindre en même temps le feu de la persécution et celui de l'enfer.
+
+[Responsory51]
+@Commune/C2
+
+[Lectio61]
+O quel spectacle était ce aux yeux du Seigneur, combien grand, combien magnifique, combien agréable, de voir ainsi ses soldats remplis de zèle conserver inviolable la fidélité de leur serment. Car c'est ce que le Saint Esprit nous a appris lui-même par ces paroles du psaume : Que la mort des Saints est précieuse aux yeux du Seigneur. Cette mort-là est bien précieuse qui achette l'immortalité au prix du sang de celui qui la souffre et qui acquiert une couronne par l'effort d'une vertu consommée. Quelle joie alors pour notre Seigneur Jésus-Christ ? Avec quel plaisir a-t-il combattu et vaincu en la personne de tels serviteurs, lui qui était le protecteur de leur foi et qui communique ses grâces à ceux qui croient en lui à proportion de leur confiance ? Il a été présent à son combat, il a soutenu ses combattants et les défenseurs de son nom et de sa gloire : il les a fortifié, il les a animé. Car c'est celui qui a une fois vaincu la mort pour nous qui est tous les jours victorieux en nous.
+
+[Responsory61]
+R. Filles de Jérusalem, venez et voyez les Martyrs avec les couronnes qu'ils ont reçus du Seigneur :
+* En ce jour de solennité et d'allegrèsse, alléluia.
+V. Le Seigneur a fortifié les serrures de vos portes et il a béni vos enfants au milieu de vous.
+R. En ce jour de solennité et d'allegrèsse, alléluia.
+&Gloria
+R. En ce jour de solennité et d'allegrèsse, alléluia.

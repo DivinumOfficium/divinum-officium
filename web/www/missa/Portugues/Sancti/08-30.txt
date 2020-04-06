@@ -1,0 +1,58 @@
+[Rank]
+S. Rosae a Sancta Maria Limange Virginis;;Duplex;;3;;vide C6b
+
+[RankNewcal]
+S. Rosae a Sancta Maria Limange Virginis;;Duplex optional;;2;;vide C6b
+
+[Rule]
+vide C6b;
+Gloria
+
+[Comment]
+# 30 VIII – Santa Rosa de Lima, Virgem
+
+[Introitus]
+@Commune/C6b:Introitus
+
+[Oratio]
+Ó Deus omnipotente, dispensador de todos os bens, que antecipadamente enriquecestes com o orvalho celestial da vossa graça a B. Rosa e que a fizestes florescer nas Índias com o brilho da virgindade e da paciência, concedei aos vossos servos que, correndo após o perfume das suas suaves virtudes, mereçamos tornar-nos o bom odor de Cristo:
+$Qui tecum
+
+[Lectio]
+@Commune/C6b:Lectio
+
+[Graduale]
+@Commune/C6b:Graduale
+
+[Evangelium]
+@Commune/C6b:Evangelium
+
+[Offertorium]
+@Commune/C6b:Offertorium
+
+[Secreta]
+@Commune/C6b:Secreta
+
+[Communio]
+@Commune/C6b:Communio
+
+[Postcommunio]
+@Commune/C6b:Postcommunio
+
+[Commemoratio Oratio]
+! dos S. S. Mártires Félix e Adauto
+Dirigimos as nossas súplicas à vossa majestade, Senhor, a fim de que, assim como nos dais, na festa dos vossos Santos, perpétuo motivo de alegria, assim também, graças às suas orações, nos defendais perpetuamente.
+$Per Dominum
+
+[Commemoratio Secreta]
+! dos S. S. Mártires Félix e Adauto
+Dignai-Vos lançar os vossos olhares, Senhor, para as hóstias do vosso povo, e, visto que ele Vo-las oferece com devoção em honra dos vossos Santos, fazei que sejam úteis à sua salvação.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+! dos S. S. Mártires Félix e Adauto
+Saciados com os sacrossantos dons, Senhor, Vos imploramos, permiti, pela intercessão dos vossos Santos, que permaneçamos sempre em acção de graças.
+$Per Dominum
+
+
+

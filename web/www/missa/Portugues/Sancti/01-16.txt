@@ -1,0 +1,40 @@
+[Rank]
+S. Marcelli Papae et Martyris;;Semiduplex;;2;;vide C2
+
+[Rule]
+vide C2;
+Gloria
+Prefatio=Apostolis
+
+[Comment]
+# 16 I – S. Marcelo, Papa e Mártir
+! 3 classe
+! Paramentos vermelhos
+
+[Introitus]
+@Commune/C4b:Introitus
+
+[Oratio]
+Senhor, dignai-Vos ouvir clementemente as preces do vosso povo, a fim de que sejamos auxiliados pelos méritos do B. Marcelo, vosso Pontífice e Mártir, cujo martírio festejamos.
+$Per Dominum
+
+[Lectio]
+@Commune/C4b:Lectio
+
+[Graduale]
+@Commune/C4b:Graduale
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+@Commune/C4b:Secreta
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+@Commune/C4b:Postcommunio

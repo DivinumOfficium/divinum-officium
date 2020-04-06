@@ -1,0 +1,26 @@
+[Rank]
+De III die Infra Octavam Immaculatæ Concept. Beatæ Mariæ Virgini;;Semiduplex;;2.5;;vide Sancti/12-08
+
+[Rule]
+vide Sancti/12-08;
+9 lectiones;
+CPapaM=Melchíadem;
+Doxology=Nat
+
+[Commemoratio Oratio]
+!Pro S. Melchiade Papa et Mart. 
+@Commune/C2c:Oratio:s/N\./Melchíadis/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
+
+[Commemoratio Secreta]
+!Pro S. Melchiade Papa et Mart. 
+@Commune/C2c:Secreta:s/N\./Melchíadis/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
+
+[Commemoratio Postcommunio]
+!Pro S. Melchiade Papa et Mart. 
+@Commune/C2c:Postcommunio:s/N\./Melchíade/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem

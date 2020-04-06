@@ -1,0 +1,31 @@
+[Rank]
+De III die Infra Octavam Immaculatae Concept. Beatae Mariae Virgini;;Semiduplex;;2.5;;vide Sancti/12-08
+
+[Rule]
+vide Sancti/12-08;
+9 lectiones;
+CPapaM=Melchíadem;
+Doxology=Nat
+
+[Comment]
+# 10 XII – S. Melquíades, Papa e Mártir
+! Wspomnienie
+! Paramentos vermelhos
+
+[Commemoratio Oratio]
+! de S. Melquíades
+@Commune/C2c:Oratio:s/N\./Melquíades/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio
+
+[Commemoratio Secreta]
+! de S. Melquíades
+@Commune/C2c:Secreta:s/N\./Melquíades/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta
+
+[Commemoratio Postcommunio]
+! de S. Melquíades
+@Commune/C2c:Postcommunio:s/N\./Melquíades/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio

@@ -1,0 +1,57 @@
+[Rank]
+In Commemoratione Omnium Fidelium Defunctorum Ad secundam Missam;;Duplex;;3;;ex C9
+
+[RankNewcal]
+In Commemoratione Omnium Fidelium Defunctorum Ad secundam Missam;;Duplex Solemnity;;6;;ex C9
+
+[Rank1960]
+In Commemoratione Omnium Fidelium Defunctorum Ad secundam Missam;;I. classis;;6;;ex C9
+
+[Rule]
+ex C9
+no Gloria
+no Credo
+Prefatio=Defunctorum
+multiple3
+Sequentia
+Requiem gloria
+
+[Comment]
+# 02 XI – Comemoração dos Fiéis Defuntos - 2ª Missa
+
+[Introitus]
+@Commune/C9:Introitus
+
+[Oratio]
+Ó Deus, Senhor das misericórdias, concedei às almas dos vossos servos o lugar do refrigério, a bem-aventurança do repouso e o esplendor da luz. 
+$Per Dominum
+
+[Lectio]
+Lição do livro dos Macabeus.
+!2 Mac 12:43-46
+Naqueles dias, um varão forte chamado Judas, havendo feito um peditório, recolheu a quantia de doze mil dracmas de prata, que enviou para Jerusalém, para ser oferecido um sacrifício pelos pecados dos mortos; pois ele possuía bons e religiosos pensamentos acerca da ressurreição (e, com efeito, se ele não esperasse que aqueles que haviam sucumbido ressuscitassem um dia, teria pensado que era vão e supérfluo orar pelos mortos). Assim, acreditava que abundante misericórdia estava reservada para aqueles que morressem piedosamente. Na verdade, é um santo e salutar pensamento orar pelos mortos, para que sejam livres dos seus pecados.
+
+[Graduale]
+@Commune/C9:Graduale
+
+[Sequentia]
+@Commune/C9:Sequentia
+
+[Evangelium]
+Continuação ++ do santo Evangelho segundo S. João.
+!Jo 6:37-40
+Naquele tempo, disse Jesus à multidão dos judeus: «Todo o que o Pai me dá, virá a mim; e o que vem a mim o não desprezarei; porquanto desci do céu, não para fazer a minha vontade, mas de quem me enviou. Ora, a vontade de meu Pai, que me enviou, é que não perca nenhum daqueles que me deu, mas que os ressuscite no último dia. Esta é a vontade de meu Pai, que me enviou: que todo aquele que vê o Filho e acredita n’Ele alcance a vida eterna; e Eu o ressuscitarei no último dia».
+
+[Offertorium]
+@Commune/C9:Offertorium
+
+[Secreta]
+Sede propício, Senhor, às nossas súplicas em favor das almas dos vossos servos; nós Vos oferecemos por elas este sacrifício de louvor, a fim de que Vos digneis admiti-las na companhia dos vossos santos.
+$Per Dominum
+
+[Communio]
+@Commune/C9:Communio
+
+[Postcommunio]
+Senhor, Vos rogamos, permiti que a alma dos vossos servos, havendo sido purificada pela virtude destes sacrifícios, receba ao mesmo tempo a indulgência e o sempiterno perdão.
+$Per Dominum

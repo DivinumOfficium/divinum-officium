@@ -1,8 +1,8 @@
 [Rank]
-S. Bedae Venerabilis Confessoris et Ecclesiae Doctoris;;Duplex majus;;4;;vide C5a
+S. Bedæ Venerabilis Confessoris et Ecclesiæ Doctoris;;Duplex majus;;4;;vide C5a
 
 [RankNewcal]
-S. Bedae Venerabilis Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C5a
+S. Bedæ Venerabilis Confessoris et Ecclesiæ Doctoris;;Duplex optional;;2;;vide C5a
 
 [Rule]
 vide C5a;
@@ -29,16 +29,16 @@ $Per Dominum
 !Pro S. Joanne
 @Commune/C2b:Oratio:s/N\./Joánnis/
 (sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio Gregem
+@Commune/C4b:Oratio
 
 [Commemoratio Secreta]
 !Pro S. Joanne
 @Commune/C2b:Secreta:s/N\./Joánne/
 (sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
+@Commune/C4b:Secreta
 
 [Commemoratio Postcommunio]
 !Pro S. Joanne
 @Commune/C2b:Postcommunio:s/N\./Joánne/
 (sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio Gregem
+@Commune/C4b:Postcommunio

@@ -1,0 +1,60 @@
+[Rank]
+In Commemoratione Omnium Fidelium Defunctorum Ad primam Missam;;Duplex;;3;;ex C9
+
+[RankNewcal]
+Commemoratione Omnium Fidelium Defunctorum Ad primam Missam;;Duplex Solemnity;;6;;ex C9
+
+[Rank1960]
+In Commemoratione Omnium Fidelium Defunctorum Ad primam Missam;;I. classis;;6;;ex C9
+
+
+[Rule]
+ex C9
+no Gloria
+no Credo
+Prefatioo=Defunctorum
+multiple3
+Sequentia
+Requiem gloria
+
+[Comment]
+# 02 XI – Comemoração dos Fiéis Defuntos - 1ª Missa
+! 1 classe
+! Paramentos vermelhos
+
+[Introitus]
+@Commune/C9:Introitus
+
+[Oratio]
+Ó Deus, Criador e Redentor de todos os fiéis, concedei às almas dos vossos servos a remissão de todos seus pecados, a fim de que pelas nossas humilíssimas orações alcancem da vossa misericórdia o perdão que sempre desejaram. 
+$Qui vivis
+
+[Lectio]
+Lição da Ep.ª do B. Ap.º Paulo aos Coríntios.
+!1 Cor 15:51-57
+Irmãos: Eis um mystério que vos revelo: Ressuscitaremos todos certamente; mas não seremos todos mudados. Num instante, num abrir e fechar de olhos, ao som da última trombeta, porque, então a trombeta soará e os mortos ressuscitarão incorruptíveis, e nós seremos transmudados. Pois é preciso que este corpo corruptível se revista da incorruptibilidade, e que este corpo mortal se revista da imortalidade. Quando este corpo corruptível se revestir da incorruptibilidade e este corpo mortal se revestir da imortalidade, então se cumprirá a palavra que está escrita: «A morte foi absorvida pela vitória. Onde está, ó morte, a tua vitória? Onde está, ó morte, o teu aguilhão?». Ora, o aguilhão da morte é o pecado; e a força do pecado é a lei. Graças, pois, sejam rendidas a Deus, que nos concedeu a vitória por Jesus Cristo, Senhor nosso.
+
+[Graduale]
+@Commune/C9:Graduale
+
+[Sequentia]
+@Commune/C9:Sequentia
+
+[Evangelium]
+Continuação ++ do santo Evangelho segundo S. João.
+!Jo 5:25-29
+Naquele tempo, disse Jesus às turbas dos judeus: «Em verdade, em verdade vos digo: A hora chega (ela chegou já) em que os mortos ouvirão a voz do Filho de Deus; e os que a ouvirem, viverão. Porque, assim como o Pai tem a vida em si, assim Ele deu ao Filho o poder de ter a vida em si; e deu-lhe, também, o poder de julgar, pois Ele é o Filho do homem. Não vos admireis disto, pois vem a hora em que todos aqueles que estão nos túmulos ouvirão a voz do Filho de Deus. Então, aqueles que tiverem praticado obras boas sairão para a ressurreição da vida eterna; e aqueles que tiverem praticado obras más ressuscitarão para a condenação».
+
+[Offertorium]
+@Commune/C9:Offertorium
+
+[Secreta]
+Olhai benigno, Senhor, Vos suplicamos, para as hóstias que Vos oferecemos pelas almas dos vossos servos, a fim de que, depois de lhes haverdes concedido o dom da fé cristã, lhes proporcioneis a recompensa.
+$Per Dominum
+
+[Communio]
+@Commune/C9:Communio
+
+[Postcommunio]
+Que as nossas humildes preces sejam proveitosas às almas dos vossos servos e servas, a fim de que, soltas das cadeias dos seus pecados, participem dos frutos da vossa redenção.
+$Qui vivis

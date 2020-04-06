@@ -1,27 +1,27 @@
 [Rank]
 Dominica de Passione;;I classis Semiduplex;;6
 
-[Rank] (rubrica 1955 aut rubrica 1960)
+[Rank](rubrica 1955 aut rubrica 1960)
 Dominica I Passionis;;I classis Semiduplex;;6
 
 [Rule]
 9 lectiones
+Symbolum Athanasium(rubrica 1570 aut rubrica 1910)
 
 [Ant 1]
-Ego sum * qui testimónium perhíbeo de meípso: et testimónium perhíbet de me, qui misit me, Pater.
+@Tempora/Quad4-6:Ant 3
 
 [Oratio]
-Quǽsumus, omnípotens Deus, famíliam tuam propítius réspice: ut, te largiénte, regátur in córpore; et, te servánte, custodiátur in mente.
-$Per Dominum
+@Tempora/Quad4-6:Oratio 3
 
 [Lectio1]
-Incipit liber Jeremíæ Prophetæ
+Incipit liber Jeremíæ Prophétæ
 !Jer 1:1-6
 1 Verba Jeremíæ fílii Helcíæ, de sacerdótibus, qui fuérunt in Anathoth, in terra Bénjamin.
 2 Quod factum est verbum Dómini ad eum in diébus Josíæ fílii Amon regis Juda, in tertiodécimo anno regni ejus.
 3 Et factum est in diébus Joakim fílii Josíæ regis Juda, usque ad consummatiónem undécimi anni Sedecíæ fílii Josíæ regis Juda, usque ad transmigratiónem Jerúsalem, in mense quinto.
 4 Et factum est verbum Dómini ad me, dicens:
-5 Priúsquam te formárem in útero, novi te: et antequam exíres de vulva, sanctificávi te, et prophétam in Géntibus dedi te.
+5 Priúsquam te formárem in útero, novi te: et ántequam exíres de vulva, sanctificávi te, et prophétam in géntibus dedi te.
 6 Et dixi: A, a, a, Dómine Deus: ecce néscio loqui, quia puer ego sum.
 
 [Responsory1]
@@ -34,11 +34,11 @@ R. Quartadécima die ad vésperum Pascha Dómini est: et in quintadécima solemn
 !Jer 1:7-13
 7 Et dixit Dóminus ad me: Noli dícere: Puer sum: quóniam ad ómnia, quæ mittam te, ibis: et univérsa, quæcúmque mandávero tibi, loquéris.
 8 Ne tímeas a fácie eórum: quia tecum ego sum, ut éruam te, dicit Dóminus.
-9 Et misit Dóminus manum suam, et tetigit os meum: et dixit Dóminus ad me: Ecce dedi verba mea in ore tuo:
+9 Et misit Dóminus manum suam, et tétigit os meum: et dixit Dóminus ad me: Ecce dedi verba mea in ore tuo:
 10 ecce constítui te hódie super gentes, et super regna, ut evéllas, et déstruas, et dispérdas, et díssipes, et ædífices, et plantes.
-11 Et factum est verbum Dómini ad me, dicens: Quid tu vides, Jeremía? Et dixi: Virgam vigilántem ego video.
+11 Et factum est verbum Dómini ad me, dicens: Quid tu vides, Jeremía? Et dixi: Virgam vigilántem ego vídeo.
 12 Et dixit Dóminus ad me: Bene vidísti, quia vigilábo ego super verbo meo, ut fáciam illud.
-13 Et factum est verbum Dómini secúndo ad me, dicens: Quid tu vides? Et dixi: Ollam succénsam ego video, et fáciem ejus a fácie Aquilónis.
+13 Et factum est verbum Dómini secúndo ad me, dicens: Quid tu vides? Et dixi: Ollam succénsam ego vídeo, et fáciem ejus a fácie Aquilónis.
 
 [Responsory2]
 R. Multiplicáti sunt qui tríbulant me, et dicunt: Non est salus illi in Deo ejus: 
@@ -51,8 +51,8 @@ R. Exsúrge, Dómine, salvum me fac, Deus meus.
 14 Et dixit Dóminus ad me: Ab Aquilóne pandétur malum super omnes habitatóres terræ.
 15 Quia ecce ego convocábo omnes cognatiónes regnórum Aquilónis, ait Dóminus: et vénient et ponent unusquísque sólium suum in intróitu portárum Jerúsalem, et super omnes muros ejus in circúitu, et super univérsas urbes Juda.
 16 Et loquar judícia mea cum eis super omnem malítiam eórum, qui dereliquérunt me, et libavérunt diis aliénis, et adoravérunt opus mánuum suárum.
-17 Tu ergo, accinge lumbos tuos, et surge, et lóquere ad eos ómnia quæ ego præcípio tibi. Ne formídes a fácie eórum: nec enim timére te fáciam vultum eórum.
-18 Ego quippe dedi te hódie in civitátem munítam, et in colúmnam férream, et in murum æreum, super omnem terram, régibus Juda, princípibus ejus, et sacerdótibus et pópulo terræ.
+17 Tu ergo, accínge lumbos tuos, et surge, et lóquere ad eos ómnia quæ ego præcípio tibi. Ne formídes a fácie eórum: nec enim timére te fáciam vultum eórum.
+18 Ego quippe dedi te hódie in civitátem munítam, et in colúmnam férream, et in murum ǽreum, super omnem terram, régibus Juda, princípibus ejus, et sacerdótibus et pópulo terræ.
 19 Et bellábunt advérsum te, et non prævalébunt: quia ego tecum sum, ait Dóminus, ut líberem te.
 
 [Responsory3]
@@ -122,15 +122,15 @@ R. Quóniam tríbulor, velóciter exáudi me.
 Sed hoc quod de réprobis Véritas lóquitur, ipsi hoc de semetípsis réprobi iníquis suis opéribus ostendunt: nam séquitur: Respondérunt ígitur Judæi et dixérunt ei: Nonne bene dicimus nos, quia Samaritánus es tu, et dæmónium habes? Accepta autem tanta contumelia, quid Dóminus respondeat, audiámus: Ego dæmónium non habeo, sed honorífico Patrem meum, et vos inhonorástis me. Quia enim Samaritánus interpretátur custos: et ipse veráciter custos est, de quo Psalmista ait: Nisi Dóminus custodíerit civitátem, in vanum vigilant qui custódiunt eam: et cui per Isaíam dícitur: Custos quid de nocte? custos quid de nocte? respondére nóluit Dóminus, Samaritánus non sum; sed, Ego dæmónium non habeo. Duo quippe ei illáta fuérunt: unum negávit, aliud tacéndo consénsit.
 
 [Responsory9]
-R. Quis dabit capiti meo aquam, et óculis meis fontem lacrimárum, et plorábo die ac nocte? quia frater propínquus supplantávit me, 
+R. Quis dabit cápiti meo aquam, et óculis meis fontem lacrimárum, et plorábo die ac nocte? quia frater propínquus supplantávit me, 
 * Et omnis amícus fraudulénter incéssit in me.
 V. Fiant viæ eórum ténebræ et lúbricum: et Angelus Dómini pérsequens eos.
-R. Et omnis amícus fraudulénter incessit in me.
+R. Et omnis amícus fraudulénter incéssit in me.
 &Gloria
-R. Quis dabit capiti meo aquam, et óculis meis fontem lacrimárum, et plorábo die ac nocte? quia frater propínquus supplantávit me, 
+R. Quis dabit cápiti meo aquam, et óculis meis fontem lacrimárum, et plorábo die ac nocte? quia frater propínquus supplantávit me, et omnis amícus fraudulénter incéssit in me.
 
 [Ant Laudes]
-Vide, Dómine, * afflictiónem meam, quóniam erectus est inimícus meus.
+Vide, Dómine, * afflictiónem meam, quóniam eréctus est inimícus meus.
 In tribulatióne * invocávi Dóminum, et exaudívit me in latitúdine.
 Judicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine Deus meus.
 Pópule meus, * quid feci tibi, aut quid moléstus fui? Respónde mihi.
@@ -145,7 +145,7 @@ $Deo gratias
 Dicébat Jesus * turbis Judæórum, et princípibus sacerdótum: Qui ex Deo est, verba Dei audit: proptérea vos non audítis, quia ex Deo non estis.
 
 [Ant Prima]
-Ego dæmónium non habeo, * sed honorífico Patrem meum, dicit Dóminus.
+Ego dæmónium non hábeo, * sed honorífico Patrem meum, dicit Dóminus.
 
 [Ant Tertia]
 Ego glóriam meam * non quæro: est qui quærat, et júdicet.

@@ -1,0 +1,39 @@
+[Rank]
+S. Andreae Corsini Episcopi et Confessoris;;Duplex;;3;;vide C4
+
+[Rule]
+vide C4;
+Gloria
+
+[Comment]
+# 04 II – S. André Corsino, Bispo e Confessor
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C4:Introitus
+
+[Oratio]
+Ó Deus, que na vossa Igreja apresentais constantemente novos exemplos de virtudes, concedei ao vosso povo que de tal modo siga os vestígios do B. André, vosso Confessor e Pontífice, que possa alcançar o mesmo prémio.
+$Per Dominum.
+
+[Lectio]
+@Commune/C4:Lectio
+
+[Graduale]
+@Commune/C4:Graduale
+
+[Evangelium]
+@Commune/C4:Evangelium
+
+[Offertorium]
+@Commune/C4:Offertorium
+
+[Secreta]
+@Commune/C4:Secreta
+
+[Communio]
+@Commune/C4:Communio
+
+[Postcommunio]
+@Commune/C4:Postcommunio

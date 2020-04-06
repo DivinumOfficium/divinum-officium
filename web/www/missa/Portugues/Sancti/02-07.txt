@@ -1,0 +1,44 @@
+[Rank]
+S. Romualdi Abbatis;;Duplex;;3;;vide C4c
+
+[RankNewcal]
+S. Romualdi Abbatis;;Duplex optional;;2;;vide C4c
+
+[Rule]
+vide C4c;
+Gloria
+
+[Comment]
+# 07 II – S. Romualdo, Abade
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C4c:Introitus
+
+[Oratio]
+@Commune/C4c:Oratio
+
+[Lectio]
+@Commune/C4c:Lectio
+
+[Graduale]
+@Commune/C4c:Graduale
+
+[Tractus]
+@Commune/C4c:Tractus
+
+[Evangelium]
+@Commune/C4c:Evangelium
+
+[Offertorium]
+@Commune/C4c:Offertorium
+
+[Secreta]
+@Commune/C4c:Secreta
+
+[Communio]
+@Commune/C4c:Communio
+
+[Postcommunio]
+@Commune/C4c:Postcommunio

@@ -1,0 +1,42 @@
+[Rank]
+S. Bibianae Virginis et Martyris;;Semiduplex;;2.5;;vide C6a
+
+[Rank1570]
+S. Bibianae Virginis et Martyris;;Simplex;;1.1;;vide C6a
+
+[Rule]
+vide C6a;
+Gloria
+
+[Comment]
+# 02 XII – Santa Bibiana, Virgem e Mártir
+! 3 classe
+! Paramentos vermelhos
+
+[Introitus]
+@Commune/C6a:Introitus
+
+[Oratio]
+Ó Deus, dispensador de todos os bens, que unistes a flor da virgindade à palma do martírio na pessoa de vossa serva Bibiana, dignai-Vos por sua intercessão unir pela caridade as nossas almas convosco, a fim de que, afastados todos os perigos, alcancemos os prémios eternos.
+$Per Dominum
+
+[Lectio]
+@Commune/C6a:Lectio
+
+[Graduale]
+@Commune/C6a:Graduale
+
+[Evangelium]
+@Commune/C6a:Evangelium
+
+[Offertorium]
+@Commune/C6a:Offertorium
+
+[Secreta]
+@Commune/C6a:Secreta
+
+[Communio]
+@Commune/C6a:Communio
+
+[Postcommunio]
+@Commune/C6a:Postcommunio

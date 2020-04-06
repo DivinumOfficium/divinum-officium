@@ -1,0 +1,49 @@
+[Rank]
+S. Petri Damiani;;Duplex;;3;;vide C4a
+
+[RankNewcal]
+S. Petri Damiani;;Duplex optional;;2;;vide C4a
+
+[Name]
+Petre
+
+[Rule]
+vide C4;
+Gloria
+
+[Comment]
+# 23 II – S. Pedro Damião, Bispo, Confessor e Doutor
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Concedei-nos, ó Deus omnipotente, Vos suplicamos, que imitemos as lições e os exemplos do B. Pedro, vosso Confessor e Pontífice, a fim de que pelo desprezo dos bens terrenos alcancemos as alegrias eternas.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Tractus]
+@Commune/C4a:Tractus
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+@Commune/C4a:Secreta
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+@Commune/C4a:Postcommunio
+

@@ -31,45 +31,64 @@ Download
 
 WARNING! Please be advised that the older "stand-alone" downloadable files (as well as music files) have not been updated nor supported since the death of Laszlo Kiss in 2011. Use at your own risk!<BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>iOS and Android Apps</FONT></H3>
-We highly recommend instead downloading the <a href="http://apps.liturgiaetmusica.com/en/apps/brevmeum">Breviarium Meum app</a> (available for iOS) for the Breviary, as well as the iMass app for <a href="https://play.google.com/store/apps/details?id=fssp.livemass.iMass">Android</a> and <a href="https://itunes.apple.com/us/app/imass/id381131668?mt=8">iOS</a>. The <a href="https://catholicapps.com/laudate/">Laudate app</a> can be downloaded for use of the Breviary on iOS or Android devices. We are now partnering with the <a href="https://www.ipieta.com">iPieta</a> app; Divinum Officium functionality should be available on that app in the near future.<BR>
+We highly recommend instead downloading the <a href="http://apps.liturgiaetmusica.com/en/apps/brevmeum">Breviarium Meum app</a> (available for iOS) for the Breviary, as well as the iMass app for <a href="https://play.google.com/store/apps/details?id=fssp.livemass.iMass">Android</a> and <a href="https://itunes.apple.com/us/app/imass/id381131668?mt=8">iOS</a>. The <a href="https://catholicapps.com/laudate/">Laudate app</a> can be downloaded for use of the Breviary on iOS or Android devices.<BR><BR>
+We are now partnering with the <a href="https://www.ipieta.com">iPieta</a> app; Divinum Officium functionality is now available for iOS and OS X platforms.<BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>.mobi and .ePub Files</FONT></H3>
 It is possible to generate Missal and Breviary files in .mobi or .ePub format, with all texts generated on a monthly basis. Please refer to our <a href="http://github.com/divinumofficium/divinum-officium">GitHub</a> site for details. They can also be downloaded from the following site: <a href="http://breviarium.srubarovi.cz">http://breviarium.srubarovi.cz</a><BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>GitHub Repository</FONT></H3>
 The source code for the Divinum Officium website can be found and freely downloaded from our <a href="https://github.com/DivinumOfficium/divinum-officium">GitHub repository</a>. From this repository, one can download the code to a Windows, Mac, or Linux computer and run the code as a local web host.<BR><BR>
-There are two repositories at <a href=https://github.com/DivinumOfficium>GitHub</a>; of these, we recommend cloning <a href="https://github.com/DivinumOfficium/divinum-officium-website">divinum-officium-website</a>.<BR><BR>
-Instructions for cloning are available at the links under the 'clone URL' box on the right-hand side of the <a href="https://github.com/DivinumOfficium/divinum-officium-website">Divinum-Officium-Website GitHub</a>. If you have Git installed, it is strongly recommended to locally update the files (via git pull) from this repository to account for the ongoing changes and improvements to the site.<BR><BR>
+There are two repositories at <a href=https://github.com/DivinumOfficium>GitHub</a>; of these, we recommend cloning <a href="https://github.com/DivinumOfficium/divinum-officium">divinum-officium</a>.<BR><BR>
+Instructions for cloning are available at the links under the 'clone URL' box on the right-hand side of the <a href="https://github.com/DivinumOfficium/divinum-officium">Divinum-Officium GitHub</a>. If you have Git installed, it is strongly recommended to locally update the files (via git pull) from this repository to account for the ongoing changes and improvements to the site.<BR><BR>
 The website is contained in the web/ subdirectory of this repository. The other directories at the top level should not be served from a webserver.<BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Python</FONT></H3>
-It is possible to set up Divinum Officium as a local host using a Python script. Using an Android device, this can be done via Termux, having downloaded the appropriate packages (Git, Python, and then cloning the Git repository.) Once the divinum-officium-website repository has been cloned, the following terminal syntax may be used:<BR><BR>
-cd ~/divinum-officium-website/web && python -m CGIHTTPServer<BR><BR>
-or, alternatively,<BR><BR>
-cd ~/divinum-officium-website/web && python -m http.server --cgi<BR><BR>
+It is possible to set up Divinum Officium as a local host using a Python script, and provided Perl is installed (see below). Using an Android device, this can be done via UserLAnd with its Ubuntu distribution and installing the lxde package therein. Next, download the appropriate packages (Git, Python, and then clone the Git repository as described above). Once the divinum-officium repository has been cloned using Git, the following terminal syntax may be used:<BR><BR>
+cd ~/divinum-officium/web && git pull && python -m CGIHTTPServer<BR><BR>
 One may need to adjust python to python2 or python3, given the installed version. One may also need to adjust the path to the directory, provided the path ends in /web.<BR><BR>
 Once the server is active and running in the terminal window, navigate to (typically) 0.0.0.0:8000 in your browser. Divinum Officium should then be functional as on the live site.<BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Apache</FONT></H3>
-If installing on a different server (e.g. Apache), Perl >= 5.10.1 is required, as are the following modules. Depending on the Perl version and distribution these might already be installed; if they are not, they can be obtained from your OS/Perl distribution or from CPAN:<BR><BR>
+If installing on a different server (e.g. Apache), Perl >= 5.10.1 is required, as are the following modules. (Perl 5.20.1 is recommended as it contains all necessary CGI packages.) Depending on the Perl version and distribution these might already be installed; if they are not, they can be obtained from your OS/Perl distribution or from CPAN:<BR><BR>
   CGI<BR>
   CGI::Carp<BR>
   CGI::Cookie<BR>
   Encode<BR>
   File::Basename<BR>
   FindBin<BR>
-  LWP::Simple<BR>
   Time::Local<BR><BR>
-(Typically, you will already have all of these except perhaps LWP::Simple.)<BR><BR>
+(Typically, you will already have all of these.)<BR><BR>
 Most importantly, your webserver must be configured to allow the execution of CGI scripts from web/cgi-bin/.<BR><BR>
 For Apache one way to achieve this is to use the following directives in a Directory element for that directory:<BR><BR>
   Options +ExecCGI<BR>
   AddHandler cgi-script .pl<BR><BR>
-This <a href=http://divinumofficium.com/www/horas/Help/httpd.conf>httpd.conf</a> file may prove useful on an Apache host; it is currently being used on a Mac OS 10.14 (Mojave). WARNING: Use at your own risk!<BR><BR>
+This <a href=http://divinumofficium.com/www/horas/Help/httpd.conf>httpd.conf</a> file may prove useful on an Apache host; it is currently being used on a Mac OS 10.15 (Catalina). WARNING: Use at your own risk!<BR><BR>
+<H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Docker</FONT></H3>
 
-<CENTER>+++++++++</CENTER><BR>
+If you are using a linux system, or another system supporting docker, Docker is by-far the easiest method. The latest updates to the application are built and pushed in realtime to Docker Hub tag <FONT COLOR=MAROON>divinumofficiumweb/divinumofficium:latest</FONT>, so you can pull and run this container image locally at any time.
+<BR><BR>
 
-If you have any problem with installation, please send a message to
-canon DOT missae AT gmail DOT com<BR><BR>
+If you're not sure how to begin, there is also a docker-compose file which wraps the needed docker commands for you. Installing docker and docker-compose are outside the scope of this guide.
 
-<CENTER><span class=tadmn>T.A.D.M.N.</span><BR>
-<A HREF=# onclick='window.close()';>Close</A></CENTER>
+<BR><BR>
+<FONT COLOR=MAROON>
+$ wget https://raw.githubusercontent.com/DivinumOfficium/divinum-officium/master/docker-compose-prod.yml<BR>
+$ docker-compose pull<BR>
+$ docker-compose -f docker-compose-prod.yml up -d<BR>
+</FONT>
+<BR>
+
+This will now expose the application on http://localhost. To bring it down, run:
+
+<BR><BR>
+<FONT COLOR=MAROON>
+$ docker-compose -f docker-compose-prod.yml down<BR>
+</FONT>
+<BR>
+For more information on the docker method, see the Github Repository linked above.
+<BR><BR>
+
+<BR><BR>
+If you have any problem with installation, please send a message to canon DOT missae AT gmail DOT com<BR><BR>
+
+<CENTER><span class=tadmn>T.A.D.M.N.</span><BR></CENTER>
 
 </TD></TR></TABLE></CENTER><BR><BR>
 

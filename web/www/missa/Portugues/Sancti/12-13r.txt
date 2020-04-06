@@ -1,0 +1,44 @@
+[Rank]
+S. Luciae Virginis et Martyris;;Duplex;;3;;ex C6b
+
+[Rule]
+vide C6b;
+Gloria
+
+[Comment]
+# 13 XII – Santa Luzia, Virgem e Mártir
+! 3 classe
+! Paramentos vermelhos
+
+[Introitus]
+@Commune/C6b:Introitus
+
+[Oratio]
+@Commune/C6b:Oratio
+
+[Lectio]
+@Commune/C6b:Lectio
+
+[Graduale]
+!Sl 44:8
+Amastes a justiça e odiastes a iniquidade.
+V. Por isso o Senhor, vosso Deus, ungiu-vos com o óleo da alegria, de preferência às vossas companheiras. Aleluia, aleluia.
+!Sl 44:3
+V. A graça espalhou-se nos vossos lábios; por isso Deus vos abençoou por todos os séculos. Aleluia.
+
+[Evangelium]
+@Commune/C7a:Evangelium
+
+[Offertorium]
+!Sl 44:15-16
+Após ela serão apresentadas virgens ao Rei; as suas companheiras serão introduzidas no meio da alegria e júbilo: serão conduzidas ao Senhor no templo do Rei.
+
+[Secreta]
+@Commune/C6b:Secreta
+
+[Communio]
+!Sl 118:161-162
+Os príncipes perseguiram-me injustamente, mas o meu coração não temeu senão as vossas palavras. Regozijar-me-ei com vossas palavras, como se um homem houvera achado ricos despojos.
+
+[Postcommunio]
+@Commune/C6b:Postcommunio

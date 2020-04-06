@@ -1,0 +1,48 @@
+[Rank]
+S. Angelae Mericiae Virginis;;Duplex;;3;;vide C6b
+
+[RankNewcal]
+S. Angelae Mericiae Virginis;;Duplex optional;;2;;vide C6b
+
+[Rule]
+vide C6;
+Gloria
+
+[Comment]
+# 01 VI – S. Ângela Merícia, Virgem
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C6b:Introitus
+
+[Oratio]
+Ó Deus, que pela B. Ângela quisestes que florescesse na vossa Igreja uma nova associação de piedosas virgens, concedei-nos a graça, pela sua intercessão, de vivermos angélicamente na terra, a fim de que, renunciando a todas as coisas terrenas, mereçamos gozar as alegrias eternas.
+$Per Dominum
+
+[Lectio]
+@Commune/C6b:Lectio
+
+[Graduale]
+@Commune/C6b:Graduale
+
+[GradualeP]
+@Commune/C6bp:Graduale
+
+[Evangelium]
+@Commune/C6b:Evangelium
+
+[Offertorium]
+@Commune/C6b:Offertorium
+
+[Secreta]
+Que a hóstia, Senhor, que Vos oferecemos em honra da memória da B. Ângela, nos obtenha misericórdia por causa dos nossos desvarios e nos alcance os dons da vossa graça.
+$Per Dominum
+
+[Communio]
+@Commune/C6b:Communio
+
+[Postcommunio]
+Havendo sido confortados com este alimento celestial, humildemente Vos imploramos, Senhor, que, pelas preces da B. Ângela e seguindo o seu exemplo, sejamos purificados de todas as manchas e Vos sejamos agradáveis no corpo e na alma.
+$Per Dominum
+

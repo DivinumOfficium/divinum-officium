@@ -1,0 +1,188 @@
+[Name]
+Commune Doctore
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+Psalm5 Vespera=116
+Psalm5 Vespera3=131
+
+[Ant Vespera]
+@Commune/C4
+
+[Capitulum Vespera]
+@Commune/C4
+
+[Hymnus1 Vespera]
+@Commune/C4:Hymnus1 Vespera
+
+[Hymnus Vespera]
+@Commune/C4:Hymnus Vespera
+
+[Versum 1]
+@Commune/C4
+
+[Ant 1]
+O Doctor óptime, * Ecclésiæ sanctæ lumen, beáte N., divínæ legis amátor, deprecáre pro nobis Fílium Dei.
+
+[Invit]
+@Commune/C4
+
+[Hymnus Matutinum]
+@Commune/C4:Hymnus Vespera
+
+[Hymnus1 Matutinum]
+@Commune/C4:Hymnus1 Vespera
+
+[Ant Matutinum]
+@Commune/C4
+
+[Lectio1]
+De libro Ecclesiastici.
+!Sir 39:1-5
+1 Sapiéntiam ómnium antiquorum exquiret sapiens, et in prophétis vacabit.
+2 Narratiónem virórum nominatórum conservábit, et in versutias parabolárum simul introibit.
+3 Occulta proverbiórum exquiret, et in abscónditis parabolárum conversábitur.
+4 In médio magnatórum ministrabit, et in conspéctu præsidis apparébit.
+5 In terram alienigenárum géntium pertransiet ; bona enim et mala in homínibus tentabit.
+
+[Responsory1]
+@Commune/C4
+
+[Lectio2]
+!Sir 39:6-10
+6 Cor suum tradet ad vigilándum dilúculo ad Dóminum, qui fecit illum, et in conspéctu Altíssimi deprecábitur.
+7 Aperiet os suum in oratióne, et pro delíctis suis deprecábitur.
+8 Si enim Dóminus magnus volúerit, spíritu intelligéntiæ replébit illum :
+9 et ipse tamquam imbres mittet elóquia sapiéntiæ suæ, et in oratióne confitébitur Dómino :
+10 et ipse diriget consílium ejus, et disciplínam, et in abscónditis suis consiliábitur.
+
+[Responsory2]
+@Commune/C4
+
+[Lectio3]
+!Sir 39:11-14
+11 Ipse palam fáciet disciplínam doctrinæ suæ, et in lege testaménti Dómini gloriábitur.
+12 Collaudábunt multi sapiéntiam ejus, et usque in sæculum non delébitur.
+13 Non recedet memória ejus, et nomen ejus requirétur a generatióne in generatiónem.
+14 Sapiéntiam ejus enarrábunt gentes, et laudem ejus enuntiábit Ecclésia.
+
+[Responsory3]
+@Commune/C4
+
+[Lectio4]
+@Commune/C4
+
+[Responsory4]
+@Commune/C4
+
+[Lectio5]
+@Commune/C4
+
+[Responsory5]
+@Commune/C4
+
+[Lectio6]
+@Commune/C4
+
+[Responsory6]
+@Commune/C4
+
+[Lectio7]
+Lecture du saint Évangile selon saint Matthieu
+!Matt 5:13-19
+En ce temps-là : Jésus dit à ses disciples : Vous êtes le sel de la terre. Mais si le sel s’affadit, avec quoi le salera-t-on ? Et le reste.
+_
+Homilía sancti Hilárii Epíscopi
+!Comm. in Matthæum, can. 4
+Vos estis sal terrae : Quod si sal infatuatum fuerit, ad nihilum valet id quod salietur. Sal, ut arbitror, terrae nullum est. Quomodo ergo Apostolos sal terrae nuncupavit ? Sed proprietas est quaerenda dictorum, quam et Apostolorum officium, et ipsius salis natura monstrabit. Sal est in se uno continens aquae et ignis elementum, et hoc ex duobus est unum.
+
+[Responsory7]
+@Commune/C4
+
+[Lectio8]
+Hic igitur in omnem usum humani generis effectus, incorruptionem corporibus, quibus fuerit aspersus, impertit, et ad omnem sensum conditi saporis aptissimus est. Apostoli autem sunt rerum caelestium praedicatores, et aeternitatis velut satores, immortalitatem omnibus corporibus, quibus eorum sermo aspersus fuerit, conferentes. Merito igitur sal terrae nuncupati sunt, per doctrinae virtutem saliendi modo aeternitati corpora reservantes.
+
+[Responsory8]
+R. In médio Ecclésiæ apéruit os ejus,
+* Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
+V. Jucunditátem et exsultatiónem thesaurizávit super eum.
+R. Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
+&Gloria
+R. Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
+
+[Lectio9]
+Sed natura salis semper eadem est, nec immutari umquam potest. Verum quia conversioni homo subjacet, et solus beatus, qui usque ad finem in omnibus Dei operibus permanserit : ideo eos sal terrae nuncupatos monet in traditae sibi potestatis virtute persistere, ne infatuati nihil saliant, et ipsi, sensu accepti saporis amisso, vivificare corrupta non possint, et projecti de Ecclesiae promptuariis, cum his quos salierint, pedibus incedentium proterantur.
+&teDeum
+
+[Ant Laudes]
+@:Ant Vespera
+
+[Capitulum Laudes]
+@:Capitulum Vespera
+
+[Hymnus Laudes]
+@Commune/C4:Hymnus Laudes
+
+[Versum 2]
+@Commune/C4
+
+[Ant 2]
+@Commune/C4
+
+[Oratio]
+Concede nos, quǽsumus, omnipotens Deus, beati N. confessoris tui atque Pontificis monita et exempla sectari : ut per terrestrium rerum conceptum aeterna gaudia consequamur.
+$Per Dominum
+
+[Oratio1]
+@Commune/C4
+
+[Oratio2]
+@Commune/C4
+
+[Oratio3]
+Da, quǽsumus, omnipotens Deus : ut beati N. Confessoris tui atque Pontificis veneranda solemnitas, et devotionem nobis augeat, et salutem.
+$Per Dominum.
+
+[Lectio Prima]
+@Commune/C4
+
+[Capitulum Tertia]
+@:Capitulum Vespera
+
+[Responsory Tertia]
+@Commune/C4
+
+[Capitulum Sexta]
+@Commune/C4
+
+[Responsory Sexta]
+@Commune/C4
+
+[Capitulum Nona]
+@Commune/C4
+
+[Responsory Nona]
+@Commune/C4
+
+[Versum 3]
+@:Versum 2
+
+[Ant 3]
+@:Ant 1
+
+[Lectio72]
+Lecture du saint Évangile selon saint Matthieu
+!Matt 5:13-19
+En ce temps-là : Jésus dit à ses disciples : Vous êtes le sel de la terre. Mais si le sel s’affadit, avec quoi le salera-t-on ? Et le reste.
+_
+Homélie de saint Jean Chrysostome
+!Homilia 15 in Matthæum, sub medium
+Remarquez ce que dit Jésus-Christ : « Vous êtes le sel de la terre ». Il montre par là combien il est nécessaire qu’il donne ces préceptes à ses Apôtres. Car, ce n’est pas seulement, leur dit-il, de votre propre vie, mais de l’univers entier que vous aurez à rendre compte. Je ne vous envoie pas comme j’envoyais les Prophètes, à deux, à dix, ou à vingt villes ni à une seule nation, mais à toute la terre, à la mer, et au monde entier, à ce monde accablé sous le poids de crimes divers.
+
+[Lectio82]
+« Vous êtes le sel de la terre », il montre que l’universalité des hommes était comme affadie et corrompue par une masse de péchés ; et c’est pourquoi il demande d’eux les vertus qui sont surtout nécessaires et utiles pour procurer le salut d’un grand nombre. Celui qui est doux, modeste, miséricordieux et juste, ne peut justement se borner à renfermer ces vertus en son âme, mais il doit avoir soin que ces sources excellentes coulent aussi pour l’avantage des autres. Ainsi celui qui a le cœur pur, qui est pacifique et qui souffre persécution pour la vérité, dirige-sa vie d’une manière utile à tous.
+
+[Lectio92]
+Ne croyez donc point, dit-il, que ce soit à de légers combats que vous serez conduits, et que ce soient des choses de peu d’importance dont il vous faudra prendre soin et rendre compte, « vous êtes le sel de la terre ». Quoi donc ? Est-ce que les Apôtres ont guéri ce qui était déjà entièrement gâté ? Non certes ; car il ne se peut faire que ce qui tombe déjà en putréfaction soit rétabli dans son premier état par l’application du sel. Ce n’est donc pas cela qu’ils ont fait, mais ce qui était auparavant renouvelé et à eux confié, ce qui était délivré déjà de cette pourriture, ils y répandaient le sel et le conservaient dans cet état de rénovation qui est une grâce reçue du Seigneur. Délivrer de la corruption du péché, c’est l’effet de la puissance du Christ ; empêcher que les hommes ne retournent au péché, voilà ce qui réclame les soins et les labeurs des Apôtres.
+&teDeum

@@ -1,3 +1,9 @@
+# vagrant files
 .vagrant
 Vagrantfile
-divinum-officium.conf
+
+# Docker compose override
+docker-compose.override.yml
+
+# Temporary files created by nano
+.*.swp

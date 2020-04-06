@@ -4,15 +4,13 @@ S. Martini Episcopi et Confessoris;;Duplex;;3;;vide C4a
 [Rule]
 vide C4a;
 9 lectiones
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
 
-[Ant Vespera 3]
-Dixérunt discípuli * ad beátum Martínum: Cur nos, pater, déseris, aut cui nos desolátos relínquis? Invádent enim gregem tuum lupi rapáces.;;109
-Dómine, * si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua.;;110
-O virum ineffábilem, * nec labóre victum, nec morte vincéndum, qui nec mori tímuit, nec vívere recusávit!;;111
-Oculis ac mánibus * in cælum semper inténtus, invíctum ab oratióne spíritum non relaxábat, allelúja.;;112
-Martínus * Abrahæ sinu lætus excípitur: Martínus, hic pauper et módicus, cælum dives ingréditur, hymnis cæléstibus honorátur.;;131
+[Ant Vespera]
+Dixérunt discípuli * ad beátum Martínum: Cur nos, pater, déseris, aut cui nos desolátos relínquis? Invádent enim gregem tuum lupi rapáces.
+Dómine, * si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua.
+O virum ineffábilem, * nec labóre victum, nec morte vincéndum, qui nec mori tímuit, nec vívere recusávit!
+Oculis ac mánibus * in cælum semper inténtus, invíctum ab oratióne spíritum non relaxábat, allelúja.
+Martínus * Abrahæ sinu lætus excípitur: Martínus, hic pauper et módicus, cælum dives ingréditur, hymnis cæléstibus honorátur.
 
 [Ant 1]
 O beátum virum, * cujus ánima paradísum póssidet! Unde exsúltant Angeli, lætántur Archángeli, chorus Sanctórum proclámat, turba Vírginum invítat: Mane nobíscum in ætérnum.
@@ -43,8 +41,8 @@ O ineffábilem virum, * per quem nobis tanta mirácula corúscant!;;8
 V. Elégit eum Dóminus sacerdótem sibi.
 R. Ad sacrificándum ei hóstiam laudis.
 Dóminus Jesus Christus, * non purpurátum aut diadémate renítentem, se ventúrum esse prædíxit.;;10
-Sacérdos Dei, Martíne, * aperti sunt tibi cæli et regnum Patris mei.;;14
-Sacérdos Dei, Martíne, * pastor egregie, ora pro nobis Deum.;;20
+Sacérdos Dei, Martíne, * apérti sunt tibi cæli et regnum Patris mei.;;14
+Sacérdos Dei, Martíne, * pastor egrégie, ora pro nobis Deum.;;20
 V. Tu es sacérdos in ætérnum.
 R. Secúndum órdinem Melchísedech.
 
@@ -75,7 +73,7 @@ R. O beátum virum Martínum antístitem,
 V. Dómine, si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua.
 R. Qui nec mori tímuit, nec vívere recusávit!
 &Gloria
-R. Qui nec mori timuit, nec vívere recusavit!
+R. Qui nec mori tímuit, nec vívere recusavit!
 
 [Lectio4]
 Martínus, Sabáriæ in Pannónia natus, cum décimum attigísset annum, invitis paréntibus ad ecclésiam confúgiens, in catechumenórum númerum adscribi vóluit. Quindecim annos natus in milítiam profectus, primum in Constantii, deinde Juliáni exercitu militávit. Qui, cum nihil haberet præter arma et vestiméntum quo tegebátur, Ambiáni, páuperi ac nudo, ab eo peténti ut Christi nómine sibi eleemosynam tribúeret, partem chlámydis dedit. Cui sequénti nocte Christus, dimidiáta illa veste indútus, appáruit, hanc mittens vocem: Martínus catechumenus hac me veste contéxit.
@@ -101,7 +99,7 @@ Sed, cum eum in illa veheménti febre supinum orántem vidérent discípuli, sup
 [Responsory6]
 R. Dixérunt discípuli ad beátum Martínum: Cur nos, pater, déseris, aut cui nos desolatos relinquis? 
 * Invadent enim gregem tuum lupi rapáces.
-V. Scimus quidem desiderare te Christum, sed salva sunt tibi tua præmia: nostri potius miserére, quos déseris.
+V. Scimus quidem desideráre te Christum, sed salva sunt tibi tua præmia: nostri potius miserére, quos déseris.
 R. Invadent enim gregem tuum lupi rapáces.
 &Gloria
 R. Invadent enim gregem tuum lupi rapáces.
@@ -142,14 +140,10 @@ Mennas Ægyptius, christianus miles, in persecutióne Diocletiáni et Maximiáni
 &teDeum
 
 [Ant Laudes]
-Dixérunt discípuli * ad beátum Martínum: Cur nos, pater, déseris, aut cui nos desolátos relínquis? Invádent enim gregem tuum lupi rapáces.
-Dómine, * si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua.
-O virum ineffábilem, * nec labóre victum, nec morte vincéndum, qui nec mori tímuit, nec vívere recusávit!
-Oculis ac mánibus * in cælum semper inténtus, invíctum ab oratióne spíritum non relaxábat, allelúja.
-Martínus * Abrahæ sinu lætus excípitur: Martínus, hic pauper et módicus, cælum dives ingréditur, hymnis cæléstibus honorátur.
+@:Ant Vespera
 
 [Ant 2]
 @:Ant 1
 
 [Ant 3]
-O beátum Pontíficem, * qui totis viscéribus diligébat Christum Regem, et non formidábat impérii principátum! o sanctíssima anima, quam etsi gládius persecutóris non ábstulit, palmam tamen martýrii non amísit!
+O beátum Pontíficem, * qui totis viscéribus diligébat Christum Regem, et non formidábat impérii principátum! o sanctíssima ánima, quam etsi gládius persecutóris non ábstulit, palmam tamen martýrii non amísit!

@@ -1,0 +1,44 @@
+[Rank]
+In Presentatione Beatae Mariae Virginis;;Duplex majus;;4;;ex C11
+
+[Rank1960]
+In Presentatione Beatae Mariae Virginis;;Duplex;;3;;vide C11
+
+[Rule]
+ex C11;
+Gloria
+Credo
+Prefatio=Mariae=Presentatione
+
+[Comment]
+# 21 XI – Apresentação da B. V. Maria
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Tempora/C10:Introitus
+
+[Oratio]
+Ó Deus, que quisestes que a B. V. Maria, em quem habitava o Espírito Santo, fosse neste dia apresentada no templo, permiti pela sua intercessão que mereçamos ser apresentados no templo da vossa glória.
+$Per Dominum ejusdem
+
+[Lectio]
+@Tempora/C10:Lectio
+
+[Graduale]
+@Tempora/C10:Graduale
+
+[Evangelium]
+@Tempora/C10:Evangelium
+
+[Offertorium]
+@Tempora/C10:Offertorium
+
+[Secreta]
+@Tempora/C10:Secreta
+
+[Communio]
+@Tempora/C10:Communio
+
+[Postcommunio]
+@Tempora/C10:Postcommunio

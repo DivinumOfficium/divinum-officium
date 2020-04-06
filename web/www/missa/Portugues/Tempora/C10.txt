@@ -1,0 +1,36 @@
+[Name]
+Sancta Maria Sabbato; Salve Sancta parens
+
+[Rule]
+Gloria
+Suffr=Spiritu;;Ecclesiae,Papa
+Prefatio=Maria=Feast;
+
+[Introitus]
+@Commune/C11:Introitus
+
+[Oratio]
+@Commune/C11:Oratio
+
+[Lectio]
+@Commune/C11:Lectio
+
+[Graduale]
+@Commune/C11:Graduale
+
+[Evangelium]
+@Commune/C11:Evangelium
+
+[Offertorium]
+!Lc 1:28; 1:42
+Ave, Maria, cheia de graça: o Senhor é convosco: bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre.
+
+[Secreta]
+@Commune/C11:Secreta
+$Per Dominum
+
+[Communio]
+@Commune/C11:Communio
+
+[Postcommunio]
+@Commune/C11:Postcommunio

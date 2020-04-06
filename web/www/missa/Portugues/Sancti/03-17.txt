@@ -1,0 +1,21 @@
+[Rank]
+S. Patricii Episcopi et Conf.;;Duplex;;3;;vide C4
+
+[RankNewcal]
+S. Patricii Episcopi et Conf.;;Duplex optional;;2;;vide C4
+
+[Rule]
+vide C4;
+Gloria
+
+[Comment]
+# 17 III – S. Patrício, Bispo e Confessor
+! 3 classe
+! Paramentos brancos
+
+[Oratio]
+Ó Deus, que Vos dignastes mandar B. Patrício, Confessor e Bispo, anunciar a vossa glória aos gentios, concedei-nos pelos seus méritos e intercessão que com o socorro da vossa misericórdia possamos cumprir o que nos ordenais.
+$Per Dominum
+
+[Postcommunio]
+@Commune/C4:Postcommunio:s/N\./Patrício/

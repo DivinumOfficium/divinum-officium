@@ -1,0 +1,38 @@
+[Rank]
+S. S. Antonii Abbatis;;Duplex;;3;;vide C4c
+
+[Rule]
+vide C4c;
+9 lectiones
+
+[Comment]
+# 17 I – S. António, Abade
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C5:Introitus
+
+[Oratio]
+@Commune/C4c:Oratio
+
+[Lectio]
+@Commune/C4c:Lectio
+
+[Graduale]
+@Commune/C4c:Graduale
+
+[Evangelium]
+@Commune/C5:Evangelium
+
+[Offertorium]
+@Commune/C4c:Offertorium
+
+[Secreta]
+@Commune/C4c:Secreta
+
+[Communio]
+@Commune/C4c:Communio
+
+[Postcommunio]
+@Commune/C4c:Postcommunio

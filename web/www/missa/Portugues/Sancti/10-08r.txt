@@ -1,0 +1,57 @@
+[Rank]
+S. Birgittae Viduae;;Duplex;;3;;vide C7a
+
+[RankNewcal]
+S. Birgittae Viduae;;Duplex optional;;2;;vide C7a
+
+[Rule]
+vide C7a;
+Gloria
+
+[Comment]
+# 08 X – Santa Brígida, Viúva
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C7a:Introitus
+
+[Oratio]
+Senhor, nosso Deus, que pelo vosso Unigénito Filho revelastes os segredos celestiais à B. Brígida, concedei-nos, já que somos vossos servos, que nos alegremos na felicidade da contemplação da vossa eterna glória.
+$Per eundem
+
+[Lectio]
+@Commune/C7a:Lectio1
+
+[Graduale]
+@Commune/C7a:Graduale
+
+[Evangelium]
+@Commune/C7a:Evangelium
+
+[Offertorium]
+@Commune/C7a:Offertorium
+
+[Secreta]
+@Commune/C7a:Secreta
+
+[Communio]
+@Commune/C7a:Communio
+
+[Postcommunio]
+@Commune/C7a:Postcommunio
+
+[Commemoratio Oratio]
+! de S. S. Sérgio, Baco e Outros, Mártires
+Fazei, Senhor, que os méritos dos vossos Santos Mártires Sérgio, Baco, Marcelo e Apúlio nos acompanhem e nos comuniquem incessantemente o fervor do vosso amor.
+$Per Dominum
+
+[Commemoratio Secreta]
+! de S. S. Sérgio, Baco e Outros, Mártires
+Que esta hóstia, que vai ser imolada em vosso louvor, Vos rogamos, Senhor, possa pelas dignas preces dos vossos Santos aplacar a vossa majestade.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+! de S. S. Sérgio, Baco e Outros, Mártires
+Que os sacramentos que recebemos, Senhor, nos confortem; e que pela intercessão dos vossos Santos Sérgio, Baco, Marcelo e Apúlio sejamos fortalecidos com as armas celestiais e defendidos contra todos os ataques dos espíritos malignos.
+$Per Dominum

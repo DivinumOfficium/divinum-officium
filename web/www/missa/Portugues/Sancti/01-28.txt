@@ -1,0 +1,56 @@
+[Rank]
+S. Petri Nolasci Confessoris;;Duplex;;3;;vide C5b
+
+[Rule]
+vide C5b;
+Gloria
+
+[Comment]
+# 28 I – S. Pedro Nolasco, Confessor
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C5b:Introitus
+
+[Oratio]
+Ó Deus, que em prova da vossa caridade quisestes inspirar sobrenaturalmente S. Pedro a fundar na vossa Igreja uma nova família, destinada à redenção dos fiéis cativos, concedei-nos por sua intercessão que, livres nós do cativeiro do pecado, gozemos perpétua liberdade na pátria celestial.
+$Qui vivis
+
+[Lectio]
+@Commune/C5b:Lectio
+
+[Graduale]
+@Commune/C5b:Graduale
+
+[Evangelium]
+@Commune/C5b:Evangelium
+
+[Offertorium]
+@Commune/C5b:Offertorium
+
+[Secreta]
+Vos oferecemos este sacrifício de louvor em memória dos vossos Santos, para que por meio deles nos livremos dos males presentes e futuros.
+$Per Dominum
+
+[Communio]
+@Commune/C5b:Communio
+
+[Postcommunio]
+Fortalecidos com o alimento e com a bebida celestiais, Vos suplicamos humildemente, ó nosso Deus, que nos protejam as preces daquele em cuja memória os recebermos.
+$Per Dominum
+
+[Commemoratio Oratio]
+! de Santa Inês
+Ó Deus, que nos alegrais com a solenidade anual da B. Inês, vossa Virgem e Mártir, concedei-nos a graça, Vos suplicamos, de imitar os exemplos daquela cuja festa celebramos.
+$Per Dominum
+
+[Commemoratio Secreta]
+! de Santa Inês
+Que estas hóstias, Senhor, que Vos oferecemos façam descer sobre nós uma bênção abundante, a qual produza em nós por vossa clemência nossa santificação e nos alegre com a solenidade dos vossos Mártires.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+! de Santa Inês
+Senhor, havendo recebido os sacramentos que Vos são oferecidos nesta festa anual, concedei-nos, Vos suplicamos, que eles nos alcancem os remédios para a vida presente e para a eterna.
+$Per Dominum

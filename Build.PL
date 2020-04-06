@@ -19,7 +19,6 @@ my $build = Module::Build->new(
     'Encode'           => 0,
     'File::Basename'   => 0,
     'FindBin'          => 0,
-    'LWP::Simple'      => 0,
     'Time::Local'      => 0,
     'Test::Cmd'        => 0,
     'Test::Carp'       => 0,
@@ -29,4 +28,3 @@ my $build = Module::Build->new(
 );
 
 $build->create_build_script();
-

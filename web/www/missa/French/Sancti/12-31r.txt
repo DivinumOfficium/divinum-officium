@@ -1,0 +1,27 @@
+[Rank]
+Die septima post Nativitatem;;Duplex II class;;5;;ex Sancti/12-30
+
+[Rule]
+CPapaC=Silvéstrum;
+ex Sancti/12-30;
+Gloria
+Credo
+Prefatio=Nat
+
+[Commemoratio Oratio]
+!Pro S. Sylvestro papa
+@Commune/C4b:Oratio:s/N\./Silvéstri/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
+
+[Commemoratio Secreta]
+!Pro S. Sylvestro papa
+@Commune/C4b:Secreta
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
+
+[Commemoratio Postcommunio]
+!Pro S. Sylvestro papa
+@Commune/C4b:Postcommunio:s/N\./Silvéstro/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem

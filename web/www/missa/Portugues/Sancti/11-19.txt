@@ -1,0 +1,52 @@
+[Rank]
+S. Elisabeth Viduae;;Duplex;;3;;vide C7a
+
+[Rule]
+CPapaM=Pontiánum;
+vide C7a;
+Gloria
+
+[Comment]
+# 19 XI – Santa Isabel, Viúva
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C7a:Introitus
+
+[Oratio]
+Ó Deus de misericórdia, esclarecei os corações dos vossos fiéis; e, pelas gloriosas preces da B. Isabel, concedei-nos a graça de desprezarmos as prosperidades deste mundo e de gozarmos perpetuamente a consolação celestial.
+$Per Dominum.
+
+[Lectio]
+@Commune/C7a:Lectio
+
+[Graduale]
+@Commune/C7a:Graduale
+
+[Evangelium]
+@Commune/C7a:Evangelium
+
+[Offertorium]
+@Commune/C7a:Offertorium
+
+[Secreta]
+@Commune/C7a:Secreta
+
+[Communio]
+@Commune/C7a:Communio
+
+[Postcommunio]
+@Commune/C7a:Postcommunio
+
+[Commemoratio Oratio]
+! de S. Ponciano
+@Commune/C4b:Oratio
+
+[Commemoratio Secreta]
+! de S. Ponciano
+@Commune/C4b:Secreta
+
+[Commemoratio Postcommunio]
+! de S. Ponciano
+@Commune/C4b:Postcommunio

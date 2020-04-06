@@ -1,0 +1,59 @@
+[Rank]
+S. Cyrilli Episc. Alexandrini Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[Name]
+Cyrille
+
+[RankNewcal]
+S. Cyrilli Episc. Alexandrini Confessoris Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
+
+[Rule]
+vide C4a;
+Gloria
+
+[Comment]
+# 09 II – S. Cirilo de Alexandria, Bispo, Confessor e Doutor
+! 3 classe
+! Paramentos brancos
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Ó Deus, que tornastes o B. Cirilo, vosso Confessor e Pontífice, defensor invencível da divina maternidade da S. S. Virgem Maria, a nós, que acreditamos que ela é verdadeiramente Mãe de Deus, concedei por sua intercessão que sejamos salvos pela sua maternal protecção.
+$Per eumdem
+
+[Commemoratio Oratio]
+! de Santa Apolónia
+@Commune/C6:Oratio
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+Deus omnipotente, olhai benigno para os nossos dons; e por intercessão do B. Cirilo, concedei-nos que possamos receber dignamente nos nossos corações a N. S. Jesus Cristo, vosso Filho Unigénito, que é coeterno convosco na glória.
+$Qui tecum
+
+[Commemoratio Secreta]
+! de Santa Apolónia
+@Commune/C6:Secreta
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+Fortalecidos, Senhor, com os divinos mystérios, Vos imploramos instantemente que, auxiliados com os exemplos e méritos do B. Pontífice Cirilo, possamos servir dignamente a S. S. Mãe do vosso Filho Unigénito.
+$Qui tecum
+
+[Commemoratio Postcommunio]
+! de Santa Apolónia
+@Commune/C6:Postcommunio

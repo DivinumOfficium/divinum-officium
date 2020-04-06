@@ -1,0 +1,49 @@
+[Rank]
+S. Gregorii Thaumaturgi Episcopi et Confessoris;;Semiduplex;;2;;vide C4
+
+[Rank1570]
+S. Gregorii Thaumaturgi Episcopi et Confessoris;;Simplex;;1.1;;vide C4
+
+[RankTrident]
+S. Gregorii Thaumaturgi Episcopi et Confessoris;;Duplex;;3;;vide C4
+
+[Rank1960]
+S. Gregorii Thaumaturgi Episcopi et Confessoris;;Duplex;;3;;vide C4
+
+[Rule]
+vide C4;
+Gloria
+
+[Comment]
+# 17 XI – S. Gregório Taumaturgo, Bispo e Confessor
+! Comemoração
+! Paramentos brancos
+
+[Introitus]
+@Commune/C4:Introitus
+
+[Oratio]
+@Commune/C4:Oratio
+
+[Lectio]
+@Commune/C4:Lectio
+
+[Graduale]
+@Commune/C4:Graduale
+
+[Evangelium]
+Continuação ++ do santo Evangelho segundo S. Marcos.
+!Mc 11:22-24
+Naquele tempo, Jesus disse aos seus discípulos: «Tende fé em Deus. Em verdade vos digo que todo aquele que disser a esta montanha «tira-te e lança-te no mar», e disser isto sem hesitar no seu coração e até acreditando que tudo o que disse acontecerá, fique certo de que o verá cumprir-se. Eis porque vos digo: Tudo quanto pedirdes na oração acreditai que o alcançareis e vereis».
+
+[Offertorium]
+@Commune/C4:Offertorium
+
+[Secreta]
+@Commune/C4:Secreta
+
+[Communio]
+@Commune/C4:Communio
+
+[Postcommunio]
+@Commune/C4:Postcommunio
