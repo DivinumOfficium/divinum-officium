@@ -10,6 +10,12 @@ Suffragium=Ecclesiae,Papa;;
 Prefatio=Quad5
 Super popul
 
+[Comment]
+# Segunda-feira Santa
+! Estação em Santa Praxedes
+! 1 classe
+! Paramentos roxos
+
 [Introitus]
 !Sl 34:1-2
 v. Julgai, Senhor, aqueles que me perseguem; exterminai aqueles que me combatem! Empunhai as armas e o escudo e erguei-Vos em meu auxílio, ó Senhor, que sois o meu sustentáculo e a minha salvação.
@@ -31,12 +37,7 @@ Naqueles dias, disse Isaías: «O Senhor e Deus abriu-me os ouvidos, e lhe não 
 v.  Erguei-Vos, Senhor, e procedei ao meu julgamento. Ó meu Deus e meu Senhor, tomai a minha causa nas vossas mãos.
 V. Desembainhai a vossa espada e enfrentai aqueles que me perseguem.
 _
-!Tractus
-!Sl 102:10
-v.  Senhor, nos não castigueis, consoante merecemos, pelos pecados que praticámos e por causa das nossas iniquidades!
-!Sl 78:8-9
-v. Esquecei-Vos, Senhor, das nossas antigas iniquidades e apressai-Vos em revestir-nos com vossas misericórdias, pois grande é a nossa miséria! (Genuflectir).
-V. Auxiliai-nos, ó Deus, nosso Salvador. Para glória do vosso Nome, perdoai-nos os nossos pecados, Senhor!
+@Tempora/Quadp3-3:Tractus1
 
 [Evangelium]
 Continuação ++ do santo Evangelho segundo S. João.
