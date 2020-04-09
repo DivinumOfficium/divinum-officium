@@ -10,18 +10,15 @@ CPapaM=Joánnem;
 Gloria
 
 [Comment]
-# 27 V – Św. Bedy Czcigodnego, Wyznawcy i Doktora Kościoła
+# 27 V – S. Beda, Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
-Św. Beda, już za życia nazywany «Czcigodnym», urodził się w Yarrow w Anglil. Już w dzieciństwie został oddany na wychowanie św. Benedyktowi Biscop, opatowi klasztoru benedyktyńskiego w Wearmuth, i sam poszedł w jego ślady. Był jednym z najuczeńszych mężów VIII wieku; napisał liczne dzieła historyczne i teologiczne, które zjednały mu tytuł Doktora Kościoła. Zmarł w Wigilię Wniebowstąpienia Pańskiego 26 maja 735 roku.
-
-Wspomnienie św. Jana I, Papieża i Męczennika. Król Teodoryk, arianin, wtrącił św. Jana I do więzienia w Rawennie, gdzie papież zmarł 18 maja 526 roku. 27 maja przeniesiono jego ciało do Rzymu.
 
 [Introitus]
 @Commune/C4a:Introitus
 
 [Oratio]
-Boże, który wsławiłeś Swój Kościół nauką św. Bedy, Twego Wyznawcy i Doktora, spraw miłościwie, niech sługi Twoje oświeca światło jego mądrości i wspomagają jego zasługi.
+Ó Deus, que ilustrais a vossa Igreja com a erudição do B. Beda, vosso Confessor e Doutor, concedei propício aos vossos servos que sejam sempre ilustrados pela sua doutrina e socorridos pelos seus méritos.
 $Per Dominum
 
 [Lectio]
@@ -49,19 +46,19 @@ $Per Dominum
 @Commune/C4a:Postcommunio
 
 [Commemoratio Oratio]
-! de św. Jana I
-@Commune/C2b:Oratio:s/N\./Joánnis/
+! de S. João, Papa e Mártir
+@Commune/C2b:Oratio:s/N\./João/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Oratio
 
 [Commemoratio Secreta]
-! de św. Jana I
-@Commune/C2b:Secreta:s/N\./Joánne/
+! de S. João, Papa e Mártir
+@Commune/C2b:Secreta:s/N\./João/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Secreta
 
 [Commemoratio Postcommunio]
-! de św. Jana I
-@Commune/C2b:Postcommunio:s/N\./Joánne/
+! de S. João, Papa e Mártir
+@Commune/C2b:Postcommunio:s/N\./João/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Postcommunio

@@ -9,18 +9,15 @@ vide C5b;
 Gloria
 
 [Comment]
-# 02 IV – Św. Franciszka z Pauli, Wyznawcy
+# 02 IV – São Francisco de Paula, WyznawcyConfessor
 ! 3 classe
 ! Paramentos brancos
-Św. Franciszek urodził się w Pauli, w królestwie Neapolu, w roku 1416. Mając 13 lat rozpoczął życie zakonne w konwencie Franciszkanów. Później oddał się życiu pustelniczemu i z natchnienia Bożego założył zakon Braci Najmniejszych (Minimów). Zakon jego rozwinął się we Francji. Św. Franciszek umarł w klasztorze Plessis-lès-Tours 2 kwietnia 1508 roku.
-
-Msza wspólna nr 22 Iustus ut palma, z wyjątkiem Kolekty, Lekcji (jak 15 I), Sekrety i Pokomunii.
 
 [Introitus]
 @Commune/C5b:Introitus
 
 [Oratio]
-Boże, wielkości pokornych, któryś wyniósł św. Wyznawcę Franciszka do chwały Twoich Świętych; spraw, prosimy, abyśmy naśladując go, dzięki jego zasługom szczęśliwie osiągnęli nagrodę obiecaną pokornym.
+Ó Deus, grandeza dos humildes, que coroastes com a glória dos vossos Santos o B. Francisco, Confessor, concedei-nos, pelos seus méritos e pela imitação das suas virtudes, Vos suplicamos, a felicidade de conseguirmos as recompensas prometidas aos humildes.
 $Per Dominum
 
 [Lectio]
@@ -36,12 +33,12 @@ $Per Dominum
 @Commune/C5b:Offertorium
 
 [Secreta]
-Panie, niech założone na Twoim ołtarzu dary oddanego Ci ludu, przez zasługi św. Franciszka będą Tobie miłe i z Twego miłosierdzia niech wyjednają nam zbawienie.
+Que estes dons do vosso povo, que depositamos nos vossos altares, se tornem agradáveis a Vós, Senhor, e salutares para nós por intercessão dos méritos do B. Francisco, e por efeito da vossa misericórdia.
 $Per Dominum
 
 [Communio]
 @Commune/C5b:Communio
 
 [Postcommunio]
-Prosimy Cię, Panie, niech przyjęty Sakrament niebieski za przyczyną św. Franciszka, Twego Wyznawcy, udzieli nam pomocy na życie doczesne i wieczne.
+Senhor, Vos suplicamos, permiti que os celestiais sacramentos, que acabámos de receber, nos consigam, pela intercessão do B. Francisco, vosso Confessor, auxílios para a vida presente e para a eterna.
 $Per Dominum

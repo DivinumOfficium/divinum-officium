@@ -4,77 +4,43 @@ Feria Quarta in Rogationibus in Vigilia ascensionis;;Feria;;1
 [Rank1960]
 In Vigilia ascensionis;;Feria;;5
 
+[Comment]
+# Vigília da Festa da Ascensão de N. S. J. C.
+! 1 classe
+! Paramentos branco
+
 [Rule]
 Gloria
 no Credo
 Suffr=Maria3
 
 [Introitus]
-!Is  48:20.
-v. Declare the word of joy, and let it be heard, alleluia: declare it even to~
-the ends of the earth; the Lord has delivered His people: alleluia, alleluia.
-!Sl. 61:1-2.
-Shout joyfully to God, all you on earth, sing praise to the glory of His name;~
-proclaim His glorious praise.
-&Gloria
-v. Declare the word of joy, and let it be heard, alleluia: declare it even to~
-the ends of the earth; the Lord has delivered His people: alleluia, alleluia.
+@Tempora/Pasc5-0:Introitus
 
 [Oratio]
-O God, from Whom all good things come, grant, we beseech You, that by Your~
-inspiration, we may think what is right and under Your guidance, accomplish it.
-$Per Dominum
+@Tempora/Pasc5-0:Oratio
 
 [Lectio]
-Lesson from the letter of St. Paul the Apostle to the Ephesians
-!Eph. 4:7-13.
-Brethren: To each one of us grace was given according to the measure of Christ�s bestowal. Thus it says, Ascending on high, He led away captives; He gave gifts to men. Now this, He ascended, what does it mean but that He also first descended into the lower parts of the earth? He Who descended, He it is Who ascended also above all the heavens, that He might fill all things. And He Himself gave some men as apostles, and some as prophets, others again as evangelists, and others as pastors and teachers, in order to perfect the saints for a work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the deep knowledge of the Son of God, to perfect manhood, to the mature measure of the fullness of Christ.
+Lição da Ep.ª do B. Ap.º Paulo aos Efésios.
+!Ef 4:7-13.
+Meus irmãos: A graça é dada a cada um de nós, segundo a medida do dom de Cristo. Por isso se diz na Escritura: «Subindo ao alto, levou consigo os cativos e repartiu os seus dons pelos homens». Que quer dizer «subiu» senão que antes tinha descido às regiões inferiores da terra? Aquele que desceu é o mesmo que subiu acima de todos os céus, a fim de completar todas as coisas. Foi Ele, também, quem deu à sua Igreja uns como Apóstolos, outros como Profetas, outros como Evangelistas, outros como Pastores e Doutores, para que uns e outros trabalhem para a perfeição dos santos, nas funções do ministério e na edificação do corpo de Cristo, até que todos cheguemos à unidade de uma só fé e do mesmo conhecimento do Filho de Deus, ao estado de um homem perfeito, a um desenvolvimento orgânico proporcionado à plenitude de Cristo.
 
 [Graduale]
-Alleluia, alleluia.
-V. Christ is risen, and has shone upon us, whom He redeemed with His Blood.~
-Alleluia.
-! Jo 16:28
-V. I came forth from the Father, and have come into the world. Again I leave the~
-world, and go to the Father. Alleluia.
+@Tempora/Pasc5-0:Graduale
 
 [Evangelium]
-Continuation + of the Holy Gospel according to John
+Continuação ++ do Santo Evangelho segundo S. João.
 ! Jo 17:1-11.
-At that time, raising His eyes to heaven, Jesus said, Father, the hour has come!~
-Glorify Your Son, that Your Son may glorify You, even as You have given Him~
-power over all flesh, in order that to all You have given Him He may give~
-everlasting life. Now this is everlasting life, that they may know You, the only~
-true God, and Him Whom You have sent, Jesus Christ. I have glorified You on~
-earth; I have accomplished the work that You have given Me to do. And now You,~
-Father, glorify Me with Yourself, with the glory that I had with You before the~
-world existed. I have manifested Your name to the men whom You have given Me out~
-of the world. They were Yours, and You have given them to Me, and they have kept~
-Your word. Now they have learnt that whatever You have given Me is from You;~
-because the words that You have given Me I have given to them. And they have~
-received them, and have known of a truth that I came forth from You, and they~
-have believed that You did send Me. I pray for them; not for the world do I pray,~
-but for those whom You have given Me, because they are Yours; and all things~
-that are Mine are Yours, and Yours are Mine; and I am glorified in them. And I~
-am no longer in the world, but these are in the world, and I am coming to You.
+Naquele tempo, levantou Jesus os olhos ao céu e disse: «Pai, veio a hora: glorificai o vosso Filho, para que o vosso Filho Vos glorifique, pois que Lhe concedestes poder sobre toda a carne humana, para que a todos quantos Lhe destes Ele dê a vida eterna! Ora a vida eterna consiste em que Vos conheçam como o único verdadeiro Deus, e a Jesus Cristo, que enviastes. Já Vos glorifiquei na terra; já cumpri a missão que me distribuístes. Agora, pois, ó Pai, glorificai-me junto de Vós com aquela glória que Eu possuía antes que o mundo fosse criado. Já manifestei o vosso nome aos homens, que me destes, no meio do mundo. Eles eram vossos, e Vós mos destes; e eles guardaram a vossa palavra. Agora já conhecem que tudo o que me destes vem de Vós; pois as palavras que me destes Eu lhas dei e as receberam: reconheceram verdadeiramente que saí de Vós e acreditaram que me enviastes. Eu rogo por eles. Não rogo pelo mundo, mas por aqueles que me destes, pois são vossos: todas minhas coisas são vossas, e sou glorificado neles. Já não pertenço mais ao mundo, porém eles ficam no mundo. E Eu vou para Vós».
 
 [Offertorium]
-!Sl 65:8-9, 20.
-Bless the Lord our God, you peoples, loudly sound His praise; He has given life~
-to my soul, and has not let my feet slip. Blessed be the Lord, Who refused me~
-not my prayer, or His kindness. Alleluia.
+@Tempora/Pasc5-0:Offertorium
 
 [Secreta]
-Accept, O Lord, the prayers and gifts of Your faithful people, that, through~
-these rites of love and devotion we may pass to the glory of heaven.
-$Per Dominum]
+@Tempora/Pasc5-0:Secreta
 
 [Communio]
-!Sl. 95:2.
-Sing to the Lord, alleluia; sing to the Lord; bless His name; announce His~
-salvation day after day, alleluia, alleluia.
+@Tempora/Pasc5-0:Communio
 
 [Postcommunio]
-Grant, O Lord, that we who have been fed with the strengthening food of Your~
-heavenly table, may desire what is right and obtain what we desire.
-$Per Dominum
+@Tempora/Pasc5-0:Postcommunio
