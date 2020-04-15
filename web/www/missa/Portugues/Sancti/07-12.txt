@@ -6,25 +6,19 @@ vide C5;
 Gloria
 
 [Comment]
-# 12 VII – Św. Jana Gwalberta, Opata
+# 12 VII – S. João Gualberto, Abade 
 ! 3 classe
 ! Paramentos brancos
-Św. Jan Gwalbert urodził się we Florencji około roku 990. Jadąc na czele zbrojnego oddziału w Wielki Piątek spotkał bezbronnego zabójcę swojego brata, któremu poprzysiągł zemstę. Zaskoczony przeciwnik prosił o litość w imię Ukrzyżowanego. Św. Jan darował zabójcy i tknięty łaską Bożą poświęcił się życiu zakonnemu. Założył w Vallis Umbrosa nowy zakon oparty na regule św. Benedykta. Zmarł w roku 1073.
 
-Msza wspólna nr 23 Os iusti, z wyjątkiem ewangelii.
-
-Śś. Nabora i Feliksa, Męczenników
-! Wspomnienie
+Comemoração dos Santos Mártires Nabor e Félix
+! Comemoração
 ! Paramentos vermelhos
-Święci Nabor i Feliks, żołnierze rzymscy, zostali umęczeni w Mediolanie w roku 303. Św. Nabor jest czczony również 12 czerwca.
-
-Msza wspólna nr 15 Salus autem, z wyjątkiem kolekty, sekrety i pokomunii
 
 [Introitus]
 @Commune/C4c:Introitus
 
 [Oratio]
-Prosimy Cię, Panie, niech nas Tobie poleca wstawiennictwo świętego Jana, Opata, abyśmy za jego przyczyną otrzymali to, czego nie zdołamy wyjednać naszymi zasługami.
+Que a intercessão do B. Abade João nos favoreça junto de Vós, Senhor, Vos suplicamos, a fim de que aquilo que não podemos conseguir com os nossos méritos o alcancemos com seu patrocínio.
 $Per Dominum
 
 [Lectio]
@@ -34,10 +28,9 @@ $Per Dominum
 @Commune/C4c:Graduale
 
 [Evangelium]
-[Evangelium]
 Continuação ++ do santo Evangelho segundo S. Mateus.
 ! Mt 5:43-48 
-Onego czasu rzekł Jezus uczniom swoim: «Słyszeliście, że powiedziano: Będziesz miłował bliźniego twego, a w nienawiści będziesz miał nieprzyjaciela twego. A ja wam powiadam: Miłujcie nieprzyjacioły wasze, dobrze czyńcie tym, którzy was mają w nienawiści, a módlcie się za prześladujących i spotwarzających was. Abyście byli synami Ojca waszego, który jest w niebiesiech, który sprawia, że słońce Jego wschodzi nad dobrymi i złymi, a deszczem zrasza sprawiedliwych i nieprawych. Gdybyście bowiem miłowali tych, którzy was miłują, cóż za nagrodę mieć będziecie? Czyż i celnicy tego nie czynią? Albo jeżeli pozdrawiacie tylko braci waszych, cóż osobliwego czynicie? Czyż i poganie tak nie czynią? Bądźcież wy tedy doskonali, jako i Ojciec wasz niebieski doskonały jest.
+Naquele tempo, disse Jesus aos seus discípulos: «Aprendestes o que vos ensinaram: «amareis o vosso próximo e aborreceis o vosso inimigo?». Pois Eu vos digo: amai os vossos inimigos; fazei bem àqueles que vos odeiam; rezai pelos que vos perseguem e caluniam, a fim de que sejais filhos do vosso Pai, que está nos céus, o qual faz nascer o sol para os maus e bons e chover para os justos e injustos. Se amais os que vos amam, que recompensa mereceis? Não procedem do mesmo modo os publicanos? Se saudais somente os vossos irmãos, que fazeis mais do que os outros? Não procedem assim os pagãos? Sede, portanto, perfeitos, como o vosso Pai celestial é perfeito».
 
 [Offertorium]
 @Commune/C4c:Offertorium
@@ -52,16 +45,16 @@ Onego czasu rzekł Jezus uczniom swoim: «Słyszeliście, że powiedziano: Będz
 @Commune/C4c:Postcommunio
 
 [Commemoratio Oratio]
-! Wspomnienie śś. Nabora i Feliksa
-Spraw, prosimy Cię, Panie, abyśmy stale doznawali pomocy świętych Męczenników Twoich  Nabora i Feliksa, skoro nie zaprzestajemy obchodzić ich narodzin dla nieba.
+! dos Santos Mártires Nabor e Félix
+Senhor, assim como nós não cessamos de celebrar o natalício dos vossos Santos Mártires Nabor e Félix, assim também, Vos suplicamos, sejamos sempre socorridos com seus sufrágios.
 $Per Dominum
 
 [Commemoratio Secreta]
-! Wspomnienie śś. Nabora i Feliksa
-Prosimy Cię, Panie, niech wstawiennictwo świętych Męczenników Twoich Nabora i Feliksa miłymi Ci uczyni dary Twego ludu, a skoro składamy je Twojemu imieniu z powodu ich zwycięstwa, niechaj też dzięki ich zasługom staną się godne przyjęcia.
+! dos Santos Mártires Nabor e Félix
+Dignai-Vos permitir, Senhor, Vos imploramos, que os dons do vosso povo Vos sejam agradáveis pelos sufrágios dos vossos Santos Nabor e Félix; e, pelos méritos daqueles em cuja honra são oferecidos ao vosso nome, fazei que sejam dignos de Vós.
 $Per Dominum
 
 [Commemoratio Postcommunio]
-! Wspomnienie śś. Nabora i Feliksa
-W rocznicę narodzin dla nieba Twoich Świętych prosimy Cię, Panie, abyśmy posileni sakramentalnym darem, mogli w wieczności nasycać się tymi dobrami, którymi teraz karmimy się z Twojej łaski.
+! dos Santos Mártires Nabor e Félix
+Fortalecidos com a recepção do sacramento que recebemos neste natalício dos vossos Santos, Vos suplicamos, Senhor, permiti que gozemos na eternidade aqueles bens com que a vossa graça nos favoreceu nesta vida.
 $Per Dominum

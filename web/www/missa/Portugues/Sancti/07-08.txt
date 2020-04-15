@@ -6,18 +6,15 @@ vide C7a;
 Gloria
 
 [Comment]
-# 8 VII – Św. Elżbiety, Królowej i Wdowy
+# 8 VII – Santa Isabel, Rainha de Portugal e Viúva
 ! 3 classe
 ! Paramentos brancos
-Św. Elżbieta urodziła się w roku 1271 jako córka króla Aragonii. Poślubiła króla portugalskiego Dionizego. Wielokrotnie godziła męża z innymi monarchami, zapobiegając rozlewowi krwi. Owdowiawszy, przywdziała habit tercjarski i oddała się modlitwie oraz uczynkom miłosierdzia. Zmarła 4 lipca 1336 roku.
-
-Msza wspólna nr 29 Cognovi, z wyjątkiem kolekty
 
 [Introitus]
 @Commune/C7a:Introitus
 
 [Oratio]
-Najłaskawszy Boże, który wśród innych wspaniałych darów obdarzyłeś świętą królowę Elżbietę przywilejem uśmierzania gróźb wojny, daj nam za jej wstawiennictwem po spokojnym życiu doczesnym, o co kornie błagamy, dojść do wiekuistych radości.
+Ó clementíssimo Deus, que entre outros eminentes dotes ornastes a B. Isabel com a prerrogativa de aplacar os furores da guerra, Concedei-nos por sua intercessão que, depois de havermos durante esta vida mortal gozado a paz, como humildemente pedimos, alcancemos também as alegrias eternas.
 $Per Dominum
 
 [Lectio]
@@ -33,10 +30,12 @@ $Per Dominum
 @Commune/C7a:Offertorium
 
 [Secreta]
-@Commune/C7a:Secreta
+Ó Deus, que quisestes que este solene sacrifício Vos fosse oferecido em honra da B. Rainha Isabel, fazei que, seguindo nós seus passos e auxiliados pelas suas preces, Vos sirvamos na terra, lembrando-nos de que «servir-Vos é reinar», e convosco reinemos no céu.
+$Per Dominum
 
 [Communio]
 @Commune/C7a:Communio
 
 [Postcommunio]
-@Commune/C7a:Postcommunio
+Permiti, ó Senhor Jesus Cristo, Vos suplicamos, que a imensa caridade e a gloriosa protecção da B. Rainha Isabel nos façam dignos do real e sagrado banquete em que Vós próprio sois a Verdadeira comida e bebida.
+$Per Dominum
