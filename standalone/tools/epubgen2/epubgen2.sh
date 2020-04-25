@@ -57,6 +57,7 @@ YEAR_FROM=`date +%Y`
 YEAR_TO=$YEAR_FROM
 PRIEST='' #has to be empty or '&priest=yes'
 VOTIVE='' #='C12' for Parvum B.M.V.
+CDUR=$(pwd)
 EPUBDIR=$CDUR #output
 COVER_FILENAME=cover.jpg #a jpg file name to serve as cover (it has to exist in SOURCEDATADIR) #ascensio.jpg
 RUBRICS_CODE=1960
@@ -141,7 +142,6 @@ done
 
 
 #other paths and file names, not specified by parameters
-CDUR=$(pwd)
 WDIR=$(mktemp -d) #temporary working directory
 SOURCEDATADIR=$CDUR/data #dir that contains s.css, and cover image as specified below
 EOFFICCIUMCMD=$CDUR/EofficiumXhtml.pl #the command to launch the genarator

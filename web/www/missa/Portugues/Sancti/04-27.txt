@@ -13,18 +13,15 @@ CredoDA
 Petre
 
 [Comment]
-# 27 IV – Św. Piotra Kanizjusza, Wyznawcy i Doktora Kościoła
+# 27 IV – S. Pedro Canísio, Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
-Św. Piotr urodził się w Nijmegen w Holandii w 1521 roku. W roku 1543 wstąpił do Towarzystwa Jezusowego. Skierowano go do krajów germańskich dla obrony Kościoła przed protestantyzmem. Niestrudzenie głosił słowo Boże i organizował życie katolickie. Założył i zreformował liczne kolegia i uniwersytety w Niemczech, Austrii i Szwajcarii. Dwukrotnie występował na Soborze Trydenckim jako teolog papieski. Napisał dzieła dla obrony wiary. Jego zasługą jest, że protestantyzm nie ogarnął Bawarii i Austrii. Nazywa się go drugim apostołem Niemiec. Umarł we Fryburgu szwajcarskim 21 grudnia 1597 roku.
-
-Msza wspólna nr 20 In medio, z wyjątkiem kolekty.
 
 [Introitus]
 @Commune/C4a:Introitus
 
 [Oratio]
-Boże, który dla obrony prawdziwej wiary uzbroiłeś cnotą i nauką św. Piotra, Twego Wyznawcę, spraw łaskawie, niech błądzący pociągnięci jego przykładem i napomnieniami wrócą na drogę zbawienia, wierni zaś niech trwają w wyznawaniu prawdziwej wiary.
+Ó Deus, que revestistes o B. Pedro, vosso Confessor, com os dons da virtude e da ciência para a defesa da fé católica, concedei-nos propício que seus exemplos e ensinos atraiam ao caminho da salvação aqueles que caíram no erro e façam perseverar os fiéis na confissão da verdade.
 $Per Dominum
 
 [Lectio]
@@ -32,6 +29,9 @@ $Per Dominum
 
 [Graduale]
 @Commune/C4a:Graduale
+
+[GradualeP]
+@Commune/C4a:GradualeP
 
 [Tractus]
 @Commune/C4a:Tractus
@@ -43,12 +43,12 @@ $Per Dominum
 @Commune/C4a:Offertorium
 
 [Secreta]
-Panie, niech nam nie zabraknie serdecznej modlitwy świętego Piotra Kanizjusza, Twego Biskupa i Doktora, która zaleci Tobie naszą ofiarę i wyjedna nam Twoje przebaczenie.
+@Commune/C4a:Secreta
 $Per Dominum.
 
 [Communio]
 @Commune/C4a:Communio
 
 [Postcommunio]
-Prosimy Cię, Panie, niech święty Piotr Kanizjusz, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
+@Commune/C4a:Postcommunio
 $Per Dominum

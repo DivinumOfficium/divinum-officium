@@ -1,0 +1,55 @@
+[Rank]
+Die IV infra octavam Paschæ;;Semiduplex I classis;;6;;ex Pasc0-0
+
+[Rule]
+ex Pasc0-0;
+1 nocturn;
+Omit Hymnus Preces Suffragium;
+Minores sine Antiphona;
+Capitulum Versum 2;
+Psalmi Dominica;
+
+[Ant Matutinum]
+@Tempora/Pasc0-0::s/^V\..*//sm
+V. Gavísi sunt discípuli, allelúja.
+R. Viso Dómino, allelúja.
+
+[Lectio1]
+Léctio sancti Evangélii secúndum Joánnem
+!Joannes 21:1-14
+In illo témpore: Manifestávit se íterum Jesus discípulis ad mare Tiberíadis. Manifestávit autem sic: Erant simul Simon Petrus, et Thomas, qui dícitur Dídymus. Et réliqua.
+_
+Homilía sancti Gregórii Papæ
+!Homilia 24 in Evangelia
+Léctio sancti Evangélii, quæ modo in áuribus vestris lecta est, fratres mei, quæstióne ánimum pulsat, sed pulsatióne sua vim discretiónis índicat. Quæri étenim potest, cur Petrus, qui piscátor ante conversiónem fuit, post conversiónem ad piscatiónem rédiit: et cum Véritas dicat: Nemo míttens manum suam ad arátrum, et aspíciens retro, aptus est regno Dei: cur repétiit quod derelíquit? Sed si virtus discretiónis inspícitur, cítius vidétur: quia nimírum negotium, quod ante conversiónem sine peccáto éxstitit, hoc étiam post conversiónem repétere culpa non fuit.
+
+[Responsory1]
+R. Ecce vicit leo de tribu Juda, radix David, aperíre librum, et sólvere septem signácula ejus:
+* Allelúja, allelúja, allelúja.
+V. Dignus est Agnus, qui occísus est, accípere virtútem, et divinitátem, et sapiéntiam, et fortitúdinem, et honórem, et glóriam, et benedictiónem.
+R. Allelúja, allelúja, allelúja.
+
+[Lectio2]
+Nam piscatórem Petrum, Matthǽum vero teloneárium scimus: et post conversiónem suam ad piscatiónem Petrus rediit, Matthǽus vero ad telónei negótium non resédit: quia áliud est victum per piscatiónem quǽrere, áliud autem telónei lucris pecúnias augére. Sunt enim pléraque negótia, quæ sine peccátis exhibéri aut vix, aut nullátenus possunt. Quæ ergo ad peccátum ímplicant, ad hæc necésse est, ut post conversiónem ánimus non recúrrat.
+
+[Responsory2]
+R. Ego sum vitis vera, et vos pálmites:
+* Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.
+V. Sicut diléxit me Pater, et ego diléxi vos.
+R. Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.
+&Gloria
+R. Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.
+
+[Lectio3]
+Quæri étiam potest, cur discípulis in mari laborántibus, post resurrectiónem suam Dóminus in líttore stetit, qui ante resurrectiónem suam coram discípulis in fluctibus maris ambulávit. Cujus rei rátio festíne cognóscitur, si ipsa, quæ tunc ínerat, causa pensétur. Quid enim mare, nisi præsens sǽculum signat, quod se cásuum tumúltibus, et undis vitæ corruptíbilis illídit? Quid per soliditátem líttoris, nisi illa perpetúitas quiétis ætérnæ figurátur? Quia ergo discípuli adhuc flúctibus mortális vitæ ínerant, in mari laborábant: quia autem Redémptor noster jam corruptiónem carnis excésserat, post resurrectiónem suam in líttore stabat.
+&teDeum
+
+[Ant 2]
+Jetez le filet à droite de la barque et vous trouverez, alléluia.
+
+[Oratio]
+O Dieu, qui nous réjouissez par la solennité annuelle de la résurrection du Seigneur, accordez-nous cette faveur que, par la célébration de ces fêtes temporelles, nous méritions d’arriver aux joies éternelles.
+$Per eumdem
+
+[Ant 3]
+Jésus dit à Ses disciples : apportez quelques-uns des poissons que vous venez de prendre. Simon Pierre monta alors sur la barque et tira le filet plein de grands poissons, alléluia.

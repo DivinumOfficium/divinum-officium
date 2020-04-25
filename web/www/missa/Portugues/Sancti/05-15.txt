@@ -9,52 +9,39 @@ Confessoris
 Duplex
 
 [Comment]
-# 15 V – Św. Jana Chrzciciela de la Salle, Wyznawcy
+# 15 V – S. João Baptista de la Salle, Confessor
 ! 3 classe
 ! Paramentos brancos
-Św. Jan Chrzciciel de la Salle (urodzony w Reims w roku 1651), pochodził ze znakomitej rodziny. Został kapłanem i kanonikiem w rodzinnym mieście. Zrozumiawszy swoje powołanie, rozdał majątek ubogim i poświęcił się wychowaniu ubogich dzieci. Z czasem założył zgromadzenie Braci Szkół Chrześcijańskich, które wkrótce rozszerzyło się w całym Kościele kontynuując dzieło swojego założyciela. Św. Jan zmarł w Wielki Piątek 7 kwietnia 1719 roku.
-
-Msza wspólna nr 21 Os iusti, z wyjątkiem Kolekty i Ewangelii.
 
 [Introitus]
-!Sl 36:30-31
-v. Usta sprawiedliwego głoszą mądrość i język jego mówi to, co słuszne; prawo jego Boga mieszka w jego sercu.
-!Sl 36:1
-Nie unoś się z powodu złoczyńców, ani nie zazdrość czyniącym nieprawość.
-&Gloria
-v. Usta sprawiedliwego głoszą mądrość i język jego mówi to, co słuszne; prawo jego Boga mieszka w jego sercu.
+@Commune/C5:Introitus
 
 [Oratio]
-Boże, Tyś powołał świętego Wyznawcę Jana Chrzciciela do chrześcijańskiego wychowania ubogich i umacniania młodzieży na drodze prawdy i utworzyłeś przezeń nową rodzinę zakonną w Kościele; spraw łaskawie, abyśmy za jego wstawiennictwem i przykładem, płonąc gorliwością o Twoją chwałę w dziele zbawienia dusz, mogli się stać uczestnikami jego nagrody niebieskiej.
+Ó Deus, que para o ensino dos pobres e para a firmeza dos jovens no caminho da verdade fizestes aparecer o Santo Confessor João Baptista, pelo qual fundastes uma nova família na Igreja, concedei-nos propício que, pela sua intercessão e seguindo o seu exemplo, sejamos devorados pelo zelo da glória de Deus para a salvação das almas, a fim de que possamos tornar-nos seus companheiros de glória no céu.
 $Per Dominum
 
 [Lectio]
-Czytanie z Księgi Syracydesa.
-! Syr 31:8-11
-Błogosławiony mąż, który okazał się bez zmazy i który nie ubiegał się za złotem, i nadziei nie pokładał w pieniądzach i skarbach. Któż to jest? – a chwalić go będziemy. Bo w życiu swym dziwów dokonał. Kto w tej sprawie jest doświadczony i doskonały, będzie miał wieczną chwałę: który mógł przestąpić, a nie przestąpił, źle czynić, a nie uczynił; przeto pewne są skarby jego u Pana, a jałmużny jego wysławiać będzie zgromadzenie świętych.
+@Commune/C5:Lectio
 
 [Graduale]
-Aleluia, aleluia.
-!Tg 1:12
-Błogosławiony człowiek, który zniesie pokusę, bo utwierdziwszy się otrzyma wieniec żywota. Aleluia.
-! Syr 45:9
-Umiłował go Pan i przyozdobił, przyodział go szatą chwały. Aleluia.
+Aleluia, aleluia
+!Tg 1:12.
+Bem-aventurado o varão que sabe sofrer a tentação, porque, quando acabar a tentação, receberá a coroa da vida. Aleluia.
+!Sb 45:9
+O Senhor amou-o, ornou-o e revestiu-o com a túnica da glória. Aleluia.
 
 [Evangelium]
 @Sancti/01-31:Evangelium
 
 [Offertorium]
-! Ps 88:25
-Z nim moja wierność i moja łaska; w moim imieniu moc jego wzrośnie.
+!Sl 88:25
+@Commune/C5:Offertorium
 
 [Secreta]
-Wspominając Twoich Świętych składamy Ci, Panie, ofiarę chwały i ufamy, że ona wybawi nas od złego teraz i w przyszłości.
-$Per Dominum
+@Commune/C5:Secreta
 
 [Communio]
-! Mt 24:46-47
-Błogosławiony sługa, którego Pan przyszedłszy znajdzie czuwającego. Zaprawdę, powiadam wam, że postawi go nad wszystkimi dobrami swymi.
+@Commune/C5:Communio
 
 [Postcommunio]
-Pokrzepieni niebieskim pokarmem i napojem, błagamy Cię pokornie, Boże nasz, niech nas bronią modlitwy tego, w którego święto przyjęliśmy te dary.
-$Per Dominum
+@Commune/C5:Postcommunio
