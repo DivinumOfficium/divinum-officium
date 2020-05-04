@@ -7,4 +7,4 @@ services:
   web:
     image: divinumofficiumweb/divinumofficium:latest
     ports:
-      - 80:8080
+      - 80:80

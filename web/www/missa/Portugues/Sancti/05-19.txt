@@ -6,20 +6,15 @@ Gloria
 Prefatio=Apostolis
 
 [Comment]
-# 19 V – Św. Piotra Celestyna, Papieża i Wyznawcy
+# 19 V – S. Pedro Celestino, Papa e Confessor
 ! 3 classe
 ! Paramentos brancos
-Św. Piotr urodził się około roku 1215. Od młodości prowadził życie pustelnicze. Z czasem założył kongregację monastyczną opartą na regule św. Benedykta. Po śmierci Mikołaja IV został obrany papieżem i przyjął imię Celestyna V. Po pięciu miesiącach zrzekł się pontyfikatu i wrócił do pustelni. Zmarł 19 maja 1296 roku.
-
-Msza wspólna nr 8 Si diligis, z wyjątkiem Kolekty.
-
-Wspomnienie św. Pudencjany, Dziewicy. Kult św. Pudencjany wiąże się z założeniem kościoła w domu senatora Pudensa. Według tradycji dom ten gościł św. Piotra.
 
 [Introitus]
 @Commune/C4b:Introitus
 
 [Oratio]
-Boże, Tyś wyniósł św. Piotra Celestyna na szczyty papiestwa i nauczyłeś go mniej je cenić niż pokorę, spraw łaskawie, abyśmy za jego przykładem gardząc wszystkim, co ziemskie, zdołali szczęśliwie osiągnąć nagrodę obiecaną pokornym.
+Ó Deus, que elevastes o B. Pedro Celestino à eminente dignidade de sumo pontífice, ensinando-o ao mesmo tempo a preferir a humildade, concedei-nos propício que, imitando o seu exemplo, aprendamos a desprezar todos os bens deste mundo, para que com felicidade mereçamos alcançar os prémios que prometestes aos humildes.
 $Per Dominum
 
 [Lectio]
@@ -46,16 +41,15 @@ $Per Dominum
 [Postcommunio]
 @Commune/C4b:Postcommunio
 
-
 [Commemoratio Oratio]
-! de św. Pudencjany
-Wysłuchaj nas, Boże, nasz Zbawicielu, i spraw, abyśmy radując się z uroczystości świętej Twojej Dziewicy Pudencjany, nabyli uczucia synowskiego oddania.
+! de Santa Pudenciana
+@Commune/C6b:Oratio
 $Per Dominum
 
 [Commemoratio Secreta]
-! de św. Pudencjany
+! de Santa Pudenciana
 @Commune/C6b:Secreta
 
 [Commemoratio Postcommunio]
-! de św. Pudencjany
+! de Santa Pudenciana
 @Commune/C6b:Postcommunio

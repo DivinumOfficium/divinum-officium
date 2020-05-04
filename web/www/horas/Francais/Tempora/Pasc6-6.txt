@@ -1,0 +1,137 @@
+[Rank]
+Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;5;;ex Tempora/Pasc5-4
+
+[Rank](rubrica 1955)
+In Vigilia Pentecostes;;Duplex;;3;;vide Tempora/Pasc5-4
+
+[Rank](rubrica 1960)
+Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;6;;vide Tempora/Pasc5-4
+
+[Rule]
+ex Tempora/Pasc5-4;
+Psalmi Dominica
+Antiphonas Horas
+9 Lectiones
+Doxology=Asc
+Feria Te Deum
+No suffragium
+No93
+
+[Rule] (rubrica 1960)
+Feria Te Deum
+Doxology=Asc
+
+[Oratio]
+@Tempora/Pasc6-0
+
+[LectioJudae1]
+Incipit Epístola cathólica beáti Judæ Apóstoli
+!Judas 1:1-4
+1 Judas, Jesu Christi servus, frater autem Jacóbi, his qui sunt in Deo Patre diléctis, et Christo Iesu conservátis, et vocátis.
+2 Misericórdia vobis, et pax, et cáritas adimpleátur.
+3 Caríssimi, omnem sollicitúdinem fáciens scribéndi vobis de commúni vestra salúte, necésse hábui scríbere vobis: déprecans supercertári semel tráditæ sanctis fídei.
+4 Subintroiérunt enim quidam hómines (qui olim præscrípti sunt in hoc judícium) ímpii, Dei nostri grátiam transferéntes in luxúriam, et solum Dominatórem, et Dóminum nostrum Iesum Christum negántes.
+
+[Lectio1]
+@:LectioJudae1
+(sed rubrica 1960)
+@:Lectio7
+
+[Responsory1] (rubrica 1960)
+R. Ego rogábo Patrem, et álium Paráclitum dabit vobis,
+* Ut máneat vobíscum in ætérnum, Spíritum veritátis, allelúja.
+V. Si enim non abíero, Paráclitus non véniet ad vos: si autem abíero, mittam eum ad vos.
+R. Ut máneat vobíscum in ætérnum, Spíritum veritátis, allelúja.
+
+[LectioJudae2]
+!Judas 1:5-8
+5 Commonére autem vos volo, sciéntes semel ómnia, quóniam Jesus pópulum de terra Ægýpti salvans, secúndo eos, qui non credidérunt, pérdidit:
+6 ángelos vero, qui non servavérunt suum principátum, sed dereliquérunt suum domicílium, in judícium magni diéi, vínculis ætérnis sub calígine reservávit.
+7 Sicut Sódoma, et Gomórrha, et finítimæ civitátes símili modo exfornicátæ, et abeúntes post carnem álteram, factæ sunt exémplum, ignis ætérni pœnam sustinéntes.
+8 Simíliter et hi carnem quidem máculant, dominatiónem autem spernunt, maiestátem autem blasphémant.
+
+[Lectio2]
+@:LectioJudae2
+(sed rubrica 1960)
+@:Lectio8
+
+[Responsory2] (rubrica 1960)
+R. Si enim non abíero, Paráclitus non véniet ad vos: si autem abíero, mittam eum ad vos.
+* Cum autem vénerit ille, docébit vos omnem veritátem, allelúja.
+V. Non enim loquétur a semetípso: sed quæcúmque áudiet, loquétur: et quæ ventúra sunt, annuntiábit vobis.
+R. Cum autem vénerit ille, docébit vos omnem veritátem, allelúja.
+&Gloria
+R. Cum autem vénerit ille, docébit vos omnem veritátem, allelúja.
+
+[LectioJudae3]
+!Judas 1:9-13
+9 Cum Míchael Archángelus cum diábolo dísputans altercarétur de Móysi córpore, non est ausus judícium inférre blasphémiæ: sed dixit: Imperet tibi Dóminus.
+10 Hi autem quæcúmque quidem ignórant, blasphémant: quæcúmque autem naturáliter, tamquam muta animália, norunt, in his corrumpúntur.
+11 Væ illis, quia in via Cain abiérunt, et erróre Bálaam mercéde effúsi sunt, et in contradictióne Core periérunt!
+12 Hi sunt in épulis suis máculæ, convivántes sine timóre, semetípsos pascéntes, nubes sine aqua, quæ a ventis circumferéntur, árbores autumnáles, infructuósæ, bis mórtuæ, eradicátæ,
+13 fluctus feri maris, despumántes suas confusiónes, sídera errántia: quibus procélla tenebrárum serváta est in ætérnum.
+
+[Lectio3]
+@:LectioJudae3
+(sed rubrica 1960)
+@:Lectio9
+
+[Responsory3]
+@Tempora/Pasc5-4:Responsory3
+
+[Lectio4]
+Ex Tractatu sancti Augustíni Epíscopi de Symbolo ad Catechumenos
+!Lib. 4. cap. 1. tom. 9.
+Dum per sacratíssimum crucis signum vos suscépit in útero sancta mater Ecclésia, quæ sicut et fratres vestros cum summa lætítia spiritáliter pariet, nova proles futura tantæ matris, quoúsque per lavacrum sanctum regeneratos veræ luci restituat, congruis alimentis eos, quos portat, pascat in útero, et ad diem partus sui lætos læta perducat: quóniam non tenétur hæc senténtia Hevæ, quæ in tristítia et gémitu parit fílios; nec ipsos gaudéntes, sed potius fléntes. Hæc enim solvit, quod illa ligaverat: ut prolem, quam per inobediéntiam sui, morti donávit, hæc per obediéntiam restituat vitæ. Omnia sacramenta, quæ acta sunt et agúntur in vobis per ministérium servórum Dei, exorcismis, oratiónibus, canticis spirituálibus, insufflatiónibus, cilício, inclinatióne cervícum, humilitate pedum, pavor ipse omni securitate appetendus: hæc ómnia, ut dixi, escæ sunt, quæ vos refíciunt in útero, ut renatos ex baptismo hílares vos mater exhibeat Christo.
+
+[Lectio5]
+Accepístis et symbolum, protectiónem parturiéntis contra venena serpéntis. In Apocalypsi Joánnis Apóstoli scriptum est hoc, quod staret draco in conspéctu mulíeris, quæ paritura erat, ut cum peperísset, natum ejus coméderet. Dracónem diabolum esse, nullus vestrum ignórat: mulierem illam Vírginem Mariam significasse, quæ caput nostrum íntegra íntegrum péperit; quæ étiam ipsa figuram in se sanctæ Ecclésiæ demonstrávit: ut quómodo Fílium pariens, Virgo permansit, ita et hæc omni témpore membra ejus pariat, et virginitátem non amittat. Ipsas senténtias sacratíssimi symboli adjuvante Dómino exponendas suscépimus, ut, quid singulæ contineant, vestris sensibus intimemus. Paráta sunt corda vestra, quia exclusus est inimícus de córdibus vestris.~
+(rubrica 1570)
+Mundata est domus, non remaneat inanis, ne cum vacuam desertor inuenerit adducat secum alios septem nequiores se, et efficiantur hominis illius posteriora, ut evangelium loquit, peiora prioribus.
+
+[Lectio6]
+(rubrica 1570)
+Mox cum exclusus fuerit pessimus inuasor, introducatur optimus possessor. Quis est inuasor? Diabolus. Quid inuasit? Hominem, quem non fecit, insuper decepit. Promisit ei immortalitatem, et propinavit iniquitatem.~
+(deinde dicitur)
+Huic vos renuntiáre professi estis: in qua professióne, non homínibus, sed Deo et Angelis ejus conscribéntibus dixistis, Renuntio. Renuntiáte non solum vócibus, sed étiam móribus: non tantum sono linguæ, sed et actu vitæ: nec tantum lábiis sonántibus, sed opéribus pronuntiántibus. Scitóte vos cum callido, antiquo, et veternoso inimico suscepísse certamen: non in vobis post renuntiatiónem invéniat ópera sua, non jure vos attrahat in servitútem suam. Deprehénderis enim, et detégeris Christiane, quando aliud agis, et aliud profitéris: fidélis in nómine, aliud demonstrans in opere, non tenens promissiónis tuæ fidem: modo ingrédiens ecclésiam oratiónes fundere, post módicum in spectaculis cum histriónibus impudíce clamáre. Quid tibi cum pompis diaboli, quibus renuntiasti?
+
+[Lectio7]
+Léctio sancti Evangélii secúndum Joánnem
+!Joannes 14:15-21
+In illo témpore: Dixit Jesus discípulis suis: Si dilígitis me, mandáta mea serváte. Et ego rogábo Patrem, et álium Paráclitum dabit vobis. Et réliqua.
+_
+Homilía sancti Augustíni Epíscopi
+!Tractatus 74 in Joannem, sub finem, et 75
+Quod ait, Rogábo Patrem, et álium Paráclitum dabit vobis: osténdit et seípsum esse Paráclitum. Paráclitus enim Latíne dícitur advocátus: et dictum est de Christo: Advocátum habémus ad Patrem, Jesum Christum justum. Sic autem mundum dixit non posse accípere Spíritum Sanctum, sicut étiam dictum est: Prudéntia carnis inimíca est Deo: legi enim Dei non est subjécta, nec enim potest: velut si dicámus: Injustítia justítia esse non potest. Mundum quippe ait hoc loco, mundi signíficans dilectóres: quæ diléctio non est a Patre. Et ídeo dilectióni hujus mundi, de qua satágimus ut minuátur et consumátur in nobis, contrária est diléctio Dei, quæ diffúnditur in córdibus nostris per Spíritum Sanctum, qui datus est nobis.
+
+[Lectio8]
+Mundus ergo eum accípere non potest, quia non videt eum, neque scit eum. Non enim habet invisíbiles óculos mundána diléctio, per quos vidéri Spíritus Sanctus potest, qui vidéri nisi invisibíliter non potest. Vos autem, inquit, cognoscétis eum: quia apud vos manébit, et in vobis erit. Erit in eis, ut máneat; non manébit, ut sit: prius est enim esse alícubi, quam manére. Sed ne putárent quod dictum est, Apud vos manébit; ita dictum, quemádmodum apud hóminem hospes visibíliter manére consuévit, expósuit quid díxerit: Apud vos manébit, cum adjúnxit et dixit, In vobis erit.
+
+[Responsory8]
+@Tempora/Pasc6-0
+
+[Lectio9]
+Ergo invisibíliter vidétur. Nec, si non sit in nobis, potest esse in nobis ejus sciéntia: sic enim a nobis vidétur in nobis et nostra consciéntia. Nam fáciem vidémus altérius, nostram vidére non póssumus: consciéntiam vero nostram vidémus, altérius non vidémus. Sed consciéntia nunquam est nisi in nobis: Spíritus autem Sanctus potest esse étiam sine nobis. Dátur quippe ut sit et in nobis: sed vidéri et sciri, quemádmodum vidéndus et sciéndus est, non potest a nobis, si non sit in nobis.~
+(deinde dicitur)
+Post promissiónem Spíritus Sancti, ne quisquam putáret, quod ita eum Dóminus datúrus fúerit velut pro seipso, ut non et ipse cum eis esset futúrus, adjécit atque ait: Non relínquam vos órphanos, véniam ad vos. Quamvis ergo nos Fílius Dei suo Patri adoptáverit fílios, et eundem Patrem nos volúerit habére per grátiam, qui ejus Pater est per natúram: tamen étiam ipse circa nos patérnum afféctum quodámmodo demónstrat, cum dicit: Non relínquam vos órphanos.
+(sed rubrica 1570 omittitur)
+&teDeum
+
+[Capitulum Laudes]
+@Tempora/Pasc6-0
+
+[Capitulum Laudes](rubrica 1960)
+@Tempora/Pasc5-4:Capitulum Laudes
+
+[Versum 2]
+@Tempora/Pasc6-0
+
+[Versum 2](rubrica 1960)
+@Tempora/Pasc5-4:Versum 2
+
+[Ant 2]
+@Tempora/Pasc6-0
+
+[Ant 2](rubrica 1960)
+@Tempora/Pasc5-4:Ant 2
+
