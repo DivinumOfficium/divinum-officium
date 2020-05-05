@@ -276,14 +276,20 @@ PrintTag
 @chv = splice(@chv, @chv);
 for ($i = 0; $i < @versions; $i++) { $chv[$i] = ($version1 =~ /$versions[$i]/) ? 'SELECTED' : ''; }
 my $vsize = @versions;
-print "<SELECT NAME=version1 SIZE=$vsize onchange=\"document.forms[0].submit();\">\n";
+print "
+  <LABEL FOR=version1 CLASS=offscreen>Version 1</LABEL>
+  <SELECT ID=version1 NAME=version1 SIZE=$vsize onchange=\"document.forms[0].submit();\">\n
+";
 for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
 print "</SELECT>\n";
 print "&nbsp;&nbsp;&nbsp;";
 @chv = splice(@chv, @chv);
 for ($i = 0; $i < @versions; $i++) { $chv[$i] = ($version2 =~ /$versions[$i]/) ? 'SELECTED' : ''; }
 my $vsize = @versions;
-print "<SELECT NAME=version2 SIZE=$vsize onchange=\"document.forms[0].submit();\">\n";
+print "
+  <LABEL FOR=version2 CLASS=offscreen>Version2</LABEL>
+  <SELECT ID=version2 NAME=version2 SIZE=$vsize onchange=\"document.forms[0].submit();\">\n
+";
 for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
 print "</SELECT>\n";
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT><\P>\n"; }
