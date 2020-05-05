@@ -297,7 +297,7 @@ for ($i = 0; $i < @versions; $i++) {
   $chv[$i] = ($version1 =~ /$versions[$i]/) ? 'SELECTED' : '';
 }
 my $vsize = @versions;
-print "<SELECT NAME=version1 SIZE=$vsize onchange=\"document.forms[0].submit();\">\n";
+print "<LABEL CLASS=offscreen FOR=version1>Version 1</LABEL><SELECT ID=version1 NAME=version1 SIZE=$vsize onchange=\"document.forms[0].submit();\">\n";
 
 for ($i = 0; $i < @versions; $i++) {
   print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";
@@ -310,7 +310,7 @@ for ($i = 0; $i < @versions; $i++) {
   $chv[$i] = ($version2 =~ /$versions[$i]/) ? 'SELECTED' : '';
 }
 my $vsize = @versions;
-print "<SELECT NAME=version2 SIZE=$vsize onchange=\"document.forms[0].submit();\">\n";
+print "<LABEL CLASS=offscreen FOR=version2>Version 2</LABEL><SELECT ID=version2 NAME=version2 SIZE=$vsize onchange=\"document.forms[0].submit();\">\n";
 
 for ($i = 0; $i < @versions; $i++) {
   print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";

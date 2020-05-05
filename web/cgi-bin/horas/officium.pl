@@ -302,16 +302,16 @@ PrintTag
 <TD ALIGN=CENTER><FONT COLOR=MAROON>Proprium de Tempore</FONT></TD>
 
 </TR><TR><TD ALIGN=CENTER ROWSPAN=2>
-<IMG SRC="$htmlurl/breviarium.jpg" HEIGHT=$height></TD>
+<IMG SRC="$htmlurl/breviarium.jpg" HEIGHT=$height ALT=""></TD>
 <TD HEIGHT=50% VALIGN=MIDDLE ALIGN=CENTER>
-<IMG SRC="$htmlurl/psalterium.jpg" HEIGHT=$height2></TD>
+<IMG SRC="$htmlurl/psalterium.jpg" HEIGHT=$height2 ALT=""></TD>
 <TD HEIGHT=50% VALIGN=MIDDLE ALIGN=CENTER>
-<IMG SRC="$htmlurl/tempore.jpg" HEIGHT=$height2></TD>
+<IMG SRC="$htmlurl/tempore.jpg" HEIGHT=$height2 ALT=""></TD>
 </TR><TR>
 <TD HEIGHT=50% VALIGN=MIDDLE ALIGN=CENTER>
-<IMG SRC="$htmlurl/commune.jpg" HEIGHT=$height2></TD>
+<IMG SRC="$htmlurl/commune.jpg" HEIGHT=$height2 ALT=""></TD>
 <TD HEIGHT=50% VALIGN=MIDDLE ALIGN=CENTER>
-<IMG SRC="$htmlurl/sancti.jpg" HEIGHT=$height2></TD>
+<IMG SRC="$htmlurl/sancti.jpg" HEIGHT=$height2 ALT=""></TD>
 </TR><TR>
 <TD ALIGN=CENTER><FONT COLOR=RED></FONT></TD>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>Commune Sanctorum</FONT></TD>
@@ -367,14 +367,16 @@ PrintTag
     print << "PrintTag";
 <P ALIGN=CENTER>
 &nbsp;&nbsp;&nbsp;
-<SELECT NAME=expand SIZE=2 onchange="parchange();">
+<LABEL FOR=expand CLASS=offscreen>Expand</LABEL>
+<SELECT ID=expand NAME=expand SIZE=2 onchange="parchange();">
 <OPTION $ch1 VALUE='all'>all
 <OPTION $ch2 VALUE='psalms'>psalms
 </SELECT>
 &nbsp;&nbsp;&nbsp;
 PrintTag
     my $vsize = @versions;
-    print "<SELECT NAME=version SIZE=$vsize onchange=\"parchange();\">\n";
+    print "<LABEL FOR=version CLASS=offscreen>Version</LABEL>";
+    print "<SELECT ID=version NAME=version SIZE=$vsize onchange=\"parchange();\">\n";
     for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
     print "</SELECT>\n";
 
@@ -412,7 +414,8 @@ PrintTag
     $addvotive =
       ($version !~ /monastic/i)
       ? "&nbsp;&nbsp;&nbsp;\n"
-      . "<SELECT NAME=votive SIZE=4 onchange='parchange()'>\n"
+      . "<LABEL FOR=votive CLASS=offscreen>Votive</LABEL>"
+      . "<SELECT ID=votive NAME=votive SIZE=4 onchange='parchange()'>\n"
       . "<OPTION $sel1 VALUE='Hodie'>Hodie\n"
       . "<OPTION $sel2 VALUE=C8>Dedicatio\n"
       . "<OPTION $sel3 VALUE=C9>Defunctorum\n"
@@ -440,7 +443,8 @@ PrintTag
     $vers =~ s/ /_/g;
     print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
-<SELECT NAME=lang2 SIZE=$lang_count onchange="parchange()">
+<LABEL FOR=lang2 CLASS=offscreen>Language</LABEL>
+<SELECT ID=lang2 NAME=lang2 SIZE=$lang_count onchange="parchange()">
 PrintTag
 
     foreach my $lang (@languages) {
@@ -519,9 +523,10 @@ $comment<BR><BR>
 <P ALIGN=CENTER><A HREF="Cofficium.pl">Compare</A>
 &nbsp;&nbsp;&nbsp;<A HREF=# onclick="callmissa();">Sancta Missa</A>
 &nbsp;&nbsp;&nbsp;
-<INPUT TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
+<LABEL FOR=date CLASS=offscreen>Date</LABEL>
+<INPUT TYPE=TEXT ID=date NAME=date VALUE="$date1" SIZE=10>
 <A HREF=# onclick="prevnext(-1)">&darr;</A>
-<INPUT TYPE=BUTTON NAME=SUBMIT VALUE=" " onclick="parchange();">
+<INPUT TYPE=submit NAME=SUBMIT VALUE=" " onclick="parchange();">
 <A HREF=# onclick="prevnext(1)">&uarr;</A>
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="callkalendar();">Ordo</A>
