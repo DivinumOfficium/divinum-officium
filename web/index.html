@@ -12,7 +12,7 @@
 <body style="background-color:white;color:black">
 <script>
 // https redirect
-if (location.protocol !== 'https:') {
+if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
     location.replace(`https:${location.href.substring(location.protocol.length)}`);
 }
 </script>
