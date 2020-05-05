@@ -192,6 +192,12 @@ $title = "Sancta Missa";
 htmlHead($title, 2);
 print << "PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="startup();">
+<script>
+// https redirect
+if (location.protocol !== 'https:') {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+}
+</script>
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
 
