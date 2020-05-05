@@ -130,6 +130,12 @@ $title = "Ordo: $monthnames[$kmonth-1] $kyear";
 htmlHead($title, 2);
 print << "PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" >
+<script>
+// https redirect
+if (location.protocol !== 'https:') {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+}
+</script>
 <FORM ACTION="kalendar.pl" METHOD=post TARGET=_self>
 <INPUT TYPE=HIDDEN NAME=setup VALUE="$setupsave">
 <INPUT TYPE=HIDDEN NAME=date1 VALUE="$date1">
