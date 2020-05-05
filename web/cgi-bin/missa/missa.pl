@@ -237,16 +237,19 @@ for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'S
 $ctext = ($pmode =~ /(main)/i) ? 'Sancta Missa' : 'Sancta Missa Completed';
 print << "PrintTag";
 <P ALIGN=CENTER><FONT SIZE=+1><I>
-Rubrics : <INPUT TYPE=CHECKBOX NAME='rubrics' $crubrics Value=1  onclick="parchange()">
+<LABEL FOR=rubrics>Rubrics : </LABEL><INPUT ID=rubrics TYPE=CHECKBOX NAME='rubrics' $crubrics Value=1  onclick="parchange()">
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="hset('$ctext');"><FONT COLOR=blue>$ctext</FONT></A>
 &nbsp;&nbsp;&nbsp;
-Solemn : <INPUT TYPE=CHECKBOX NAME='solemn' $csolemn Value=1 onclick="parchange()">
+<LABEL FOR=solemn>Solemn : </LABEL><INPUT ID=solemn TYPE=CHECKBOX NAME='solemn' $csolemn Value=1 onclick="parchange()">
 </I></P>
 <P ALIGN=CENTER>
 PrintTag
 $vsize = @versions;
-print "<SELECT NAME=version SIZE=$vsize onchange=\"parchange();\">\n";
+print "
+  <LABEL FOR=version CLASS=offscreen>Version</LABEL>
+  <SELECT ID=version NAME=version SIZE=$vsize onchange=\"parchange();\">\n
+";
 for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
 print "</SELECT>\n";
 
@@ -290,7 +293,11 @@ if (opendir(DIR, "$datafolder/Latin/Votive")) {
 $sel[0] = '';
 for ($i = 1; $i < @votive; $i++) { $sel[$i] = ($votive =~ $votive[$i]) ? 'SELECTED' : ''; }
 $osize = (@votive > $vsize) ? $vsize : @votive;
-$addvotive = "&nbsp;&nbsp;&nbsp;\n<SELECT NAME=votive SIZE=$osize onchange=\"parchange()\">\n";
+$addvotive = "
+  &nbsp;&nbsp;&nbsp;\n
+  <LABEL FOR=votive CLASS=offscreen>Votive</LABEL>
+  <SELECT ID=votive NAME=votive SIZE=$osize onchange=\"parchange()\">\n
+";
 for ($i = 0; $i < @votive; $i++) { $addvotive .= "<OPTION $sel[$i] VALUE=\"$votive[$i]\">$votive[$i]\n"; }
 $addvotive .= "</SELECT>\n";
 my @languages = ('Latin', vernaculars($datafolder));
@@ -300,7 +307,8 @@ $vers =~ s/ /_/g;
 my $propname = ($Propers) ? 'Full' : 'Propers';
 print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
-<SELECT NAME=lang2 SIZE="$lang_count" onchange="parchange()">
+<LABEL FOR=lang2 CLASS=offscreen>Language</LABEL>
+<SELECT ID=lang2 NAME=lang2 SIZE="$lang_count" onchange="parchange()">
 PrintTag
 
 foreach my $lang (@languages) {
@@ -349,9 +357,10 @@ $comment<BR><BR>
 <P ALIGN=CENTER><A HREF="Cmissa.pl">Compare</A>
 &nbsp;&nbsp;&nbsp;<A HREF=# onclick="callofficium();">Divinum Officium</A>
 &nbsp;&nbsp;&nbsp;
-<INPUT TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
+<LABEL FOR=date CLASS=offscreen>Date</LABEL>
+<INPUT ID=date TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
 <A HREF=# onclick="prevnext(-1)">&darr;</A>
-<INPUT TYPE=BUTTON NAME=SUBMIT VALUE=" " onclick="parchange();">
+<INPUT TYPE=submit NAME=SUBMIT VALUE=" " onclick="parchange();">
 <A HREF=# onclick="prevnext(1)">&uarr;</A>
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="callkalendar();">Ordo</A>
