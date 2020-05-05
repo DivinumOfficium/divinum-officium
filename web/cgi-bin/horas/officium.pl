@@ -255,7 +255,7 @@ if ($command =~ /kalendar/) {    # kalendar widget
 <script>
 // https redirect
 if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
-    location.replace("https:\${location.href.substring(location.protocol.length)}");
+    location.replace(`https:\${location.href.substring(location.protocol.length)}`);
 }
 </script>
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
