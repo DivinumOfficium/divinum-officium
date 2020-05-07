@@ -910,9 +910,16 @@ sub psalmi_major {
     if ($hora =~ /Laudes/i && $dayname[0] =~ /Pasc/i && $head =~ /Daym0/i) { $head = 'DaymP'; }
     @psalmi = split("\n", $psalmi{"$head $hora"});
 
-    if ($hora =~ /Laudes/i && $winner =~ /Sancti/ && $rank >= 4 && $dayofweek > 0) {
-      my @canticles = split("\n", $psalmi{'DaymF Canticles'});
-      $psalm[1] = $canticles[$dayofweek];
+    if ($hora =~ /Laudes/i && $head =~ /Daym\d/) {
+      $sday = get_sday($month, $day, $year);
+      unless ( (($dayname[0] =~ /Adv|Quadp/) && ($duplex < 3) && ($commune !~ /C10/))
+               || (($dayname[0] =~ /Quad\d/) && ($dayname[1] =~ /Feria/))
+               || ($dayname[1] =~ /Quattuor Temporum Septembris/)
+               || ($sday =~ /(06\-23|06\-28|08\-09|08\-14)/))
+      {
+        my @canticles = split("\n", $psalmi{'DaymF Canticles'});
+        $psalmi[3] = $canticles[$dayofweek];
+      }
     }
   } elsif ($version =~ /Trident/i
     && $testmode =~ /seasonal/i
