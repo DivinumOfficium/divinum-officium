@@ -292,8 +292,8 @@ sub getrank {
       #$tvesp = 1;
       %tn1 = %{officestring($datafolder, $lang1, "$tn1.txt", 1)};
 
-      if ($tn1{Rank} =~ /(Feria|Vigilia|infra octavam|Quat[t]*uor)/i && $tn1{Rank} !~ /in octava/i
-        && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
+#      if ($tn1{Rank} =~ /(Feria|Vigilia|infra octavam|Quat[t]*uor)/i && $tn1{Rank} !~ /in octava/i
+#        && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
       if ( $tn1{Rank} =~ /(Feria|Sabbato|infra octavam)/i
         && $tn1{Rank} !~ /in octava/i
         && $tn1{Rank} !~ /Dominica/i)
@@ -303,7 +303,7 @@ sub getrank {
         $tn1rank = '';
       } elsif ($version =~ /1955|1960/ && $tn1{Rank} =~ /Dominica Resurrectionis/i) {
         $tn1rank = '';
-      } elsif ($version =~ /1955|1960|Newcal/ && $tn1{Rank} =~ /Patrocinii S. Joseph/i) {
+      } elsif ($version =~ /(1955|1960|Newcal)/ && $tn1{Rank} =~ /Patrocinii S. Joseph/i) {
         $tn1rank = '';
       } else {
         $tn1rank = $tn1{Rank};
