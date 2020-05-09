@@ -460,7 +460,7 @@ sub psalm : ScriptFunc {
     $num = $1;
 
     if ( ($version =~ /Trident/i && $num =~ /(62|148|149)/)
-      || ($version =~ /Monastic/i && $num =~ /115/))
+      || ($version =~ /Monastic/i && $num =~ /(115|148|149)/))
     {
       $nogloria = 1;
     }
