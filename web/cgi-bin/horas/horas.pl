@@ -303,10 +303,11 @@ sub Alleluia : ScriptFunc {
 
 sub Alleluia_ant {
   my ($lang, $full, $ucase) = @_;
-  my $s =
-    translate('Alleluia', $lang) . ', * ' . translate('Alleluia', $lang) . ', ' . translate('Alleluia', $lang) . '.';
-  $s =~ s/,.*// if (!$full && $duplex < 3 && $version !~ /1960/);
-  $s =~ s/ ./\L$&/g unless $ucase;
+  my $s = translate('Alleluia', $lang);
+  if (($full || ($duplex >= 3) || ($version =~ /1960|Monastic/i))) {
+    $s .= ", * $s, $s.";
+    $s =~ s/ ./\L$&/g unless $ucase;
+  }
   return $s;
 }
 
@@ -460,7 +461,7 @@ sub psalm : ScriptFunc {
     $num = $1;
 
     if ( ($version =~ /Trident/i && $num =~ /(62|148|149)/)
-      || ($version =~ /Monastic/i && $num =~ /115/))
+      || ($version =~ /Monastic/i && $num =~ /(115|148|149)/))
     {
       $nogloria = 1;
     }
@@ -909,7 +910,7 @@ sub ant_Benedictus : ScriptFunc {
     $ant = $specials{"Adv Ant $day" . "L"};
   }
   my @ant_parts = split('\*', $ant);
-  if ($num == 1 && $duplex < 3 && $version !~ /1960/) { return "Ant. $ant_parts[0]"; }
+  if ($num == 1 && $duplex < 3 && $version !~ /1960/ && $version !~ /monastic/i) { return "Ant. $ant_parts[0]"; }
 
   if ($num == 1) {
     return "Ant. $ant";
@@ -954,7 +955,7 @@ sub ant_Magnificat : ScriptFunc {
     $num = 2;
   }
   my @ant_parts = split('\*', $ant);
-  if ($num == 1 && $duplex < 3 && $version !~ /1960/) { return "Ant. $ant_parts[0]"; }
+  if ($num == 1 && $duplex < 3 && $version !~ /1960/ && $version !~ /monastic/i) { return "Ant. $ant_parts[0]"; }
 
   if ($num == 1) {
     return "Ant. $ant";
