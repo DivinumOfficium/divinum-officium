@@ -303,10 +303,11 @@ sub Alleluia : ScriptFunc {
 
 sub Alleluia_ant {
   my ($lang, $full, $ucase) = @_;
-  my $s =
-    translate('Alleluia', $lang) . ', * ' . translate('Alleluia', $lang) . ', ' . translate('Alleluia', $lang) . '.';
-  $s =~ s/,.*// if (!$full && $duplex < 3 && $version !~ /1960/);
-  $s =~ s/ ./\L$&/g unless $ucase;
+  my $s = translate('Alleluia', $lang);
+  if (($full || ($duplex >= 3) || ($version =~ /1960|Monastic/i))) {
+    $s .= ", * $s, $s.";
+    $s =~ s/ ./\L$&/g unless $ucase;
+  }
   return $s;
 }
 

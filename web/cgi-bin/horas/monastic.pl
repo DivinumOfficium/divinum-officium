@@ -215,11 +215,11 @@ sub antetpsalm_mm {
     && $rule !~ /ex /i)
   {
     if ($ind == 0) {
-      $line[0] = ($duplex < 3) ? 'Alleluia' : 'Alleluia. * Alleluia, alleluia';
+      $line[0] = Alleluia_ant($lang, 0, 0);
       $lastantiphon = '';
     } else {
       $line[0] = '';
-      $lastantiphon = 'Alleluia. * Alleluia, alleluia';
+      $lastantiphon = Alleluia_ant($lang, 0, 0);
     }
   }
 
@@ -229,9 +229,12 @@ sub antetpsalm_mm {
     && !exists($winner{"Ant $hora"})
     && $rule !~ /ex /i)
   {
-    if ($ind == 0) { $line[0] = ($duplex < 3) ? 'Alleluia' : 'Alleluia. * Alleluia, alleluia'; $lastantiphon = ''; }
+
+    if ($ind == 0) { $line[0] = Alleluia_ant($lang, 0, 0); $lastantiphon = ''; }
     if ($ind == 1) { $line[0] = ''; $lastantiphon = ''; }
-    if ($ind == 2) { $line[0] = ''; $lastantiphon = 'Alleluia * Alleluia, alleluia'; }
+    if ($ind == 2) { $line[0] = ''; $lastantiphon = Alleluia_ant($lang, 0, 0); }
+    if ($ind == 3) { ensure_single_alleluia($line[0], $lang); }
+    if ($ind == 4) { $line[0] = Alleluia_ant($lang, 0, 0); }
   }
   if ($line[0] && $lastantiphon) { push(@s, "Ant. $lastantiphon"); push(@s, "\n"); }
   if ($line[0]) { push(@s, "Ant. $line[0]"); $lastantiphon = $line[0]; }
