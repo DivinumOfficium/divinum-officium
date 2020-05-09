@@ -996,6 +996,14 @@ sub canticum : ScriptFunc {
   }
 }
 
+sub Divinum_auxilium : ScriptFunc {
+  my $lang = shift;
+  my $text = "V. " . translate("Divinum auxilium", $lang);
+  $text =~ s/\n.*\. /\n/ unless ($version =~ /Monastic/i);
+  $text =~ s/\n/\nR. /;
+  return $text;
+}
+
 #*** martyrologium($lang)
 #returns the text of the martyrologium for the day
 sub martyrologium : ScriptFunc {
