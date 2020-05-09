@@ -224,7 +224,7 @@ sub specials {
         }
         push(@resp, $t[$tind++]);
       }
-      postprocess_short_resp(@resp, $lang) if ($version !~ /monastic/i);
+      postprocess_short_resp(@resp, $lang);
       push(@s, $_) for (@resp);
       next;
     }
@@ -362,7 +362,11 @@ sub specials {
       my ($versum, $c1) = getantvers('Versum', $ind, $lang);
       setcomment($label, 'Source', $c, $lang);
       $capit = chompd($capit) . "_\n" . $versum;
-      if ($version =~ /monastic/i) { $capit =~ s/\&Gloria/\&Gloria1/; }
+      if ($version =~ /monastic/i) {
+        (@capit) = split(/\n/, $capit);
+        postprocess_short_resp(@capit, $lang);
+        $capit = join("\n", @capit);
+      }
       push(@s, $capit);
 
       #my @capit = split("\n", chompd($capit) . "_\n" . $versum);
