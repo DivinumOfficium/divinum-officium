@@ -883,7 +883,7 @@ sub psalmi_minor {
   }
 
   #quicumque
-  if ( ($version !~ /(1955|1960)/ || $dayname[0] =~ /Pent01/i)
+  if ( ($version !~ /(1955|1960|Monastic)/i || $dayname[0] =~ /Pent01/i)
     && $hora =~ /prima/i
     && (($dayname[0] =~ /(Epi|Pent)/i) || $version =~ /Trident/i)
     && $dayofweek == 0
