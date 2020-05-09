@@ -1803,7 +1803,8 @@ sub tryoldhymn {
 # returns the [Ant $hora] item for the officium
 sub getanthoras {
   my $lang = shift;
-  my $tflag = ($version =~ /Trident/i && $winner =~ /Sancti/i) ? 1 : 0;
+  my $tflag = ($version =~ /Trident|Monastic/i && $winner =~ /Sancti/i) ? 1 : 0;
+
   my $ant = '';
   if ($rule !~ /Antiphonas horas/i && $communerule !~ /Antiphonas horas/i && !$tflag) { return ''; }
   if ($version =~ /(1955|1960)/ && ($dayofweek > 0 || $1 eq '1960') && $rank < 6) { return ''; }
@@ -1811,7 +1812,7 @@ sub getanthoras {
   my $w = $w{'Ant Laudes'};
   my $c = ($winner =~ /sancti/i) ? 3 : 2;
 
-  if (!$w && ($communetype =~ /ex\s*/i || $version =~ /Trident/i)) {
+  if (!$w && ($communetype =~ /ex\s*/i || $version =~ /Trident|Monastic/i)) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
     $w = $com{'Ant Laudes'};
     $c = 4;
