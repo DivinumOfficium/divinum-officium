@@ -14,4 +14,4 @@ services:
     volumes:
       - ./web:/var/www/web
     ports:
-      - 8080:8080
+      - 8080:80

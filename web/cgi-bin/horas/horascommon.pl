@@ -191,6 +191,7 @@ sub getrank {
     : ($version =~ /1570/) ? 1570
     : ($version =~ /Trident/i) ? 1888
     : ($version =~ /newcal/i) ? 'NC'
+    : ($version =~ /1955/) ? 1955
     : ($version =~ /1960/) ? 1960
     : 1954;
   our %kalendar = undef;
@@ -291,8 +292,8 @@ sub getrank {
       #$tvesp = 1;
       %tn1 = %{officestring($datafolder, $lang1, "$tn1.txt", 1)};
 
-      #if ($tn1{Rank} =~ /(Feria|Vigilia|infra octavam|Quat[t]*uor)/i && $tn1{Rank} !~ /in octava/i
-      #  && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
+#      if ($tn1{Rank} =~ /(Feria|Vigilia|infra octavam|Quat[t]*uor)/i && $tn1{Rank} !~ /in octava/i
+#        && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
       if ( $tn1{Rank} =~ /(Feria|Sabbato|infra octavam)/i
         && $tn1{Rank} !~ /in octava/i
         && $tn1{Rank} !~ /Dominica/i)
@@ -302,7 +303,7 @@ sub getrank {
         $tn1rank = '';
       } elsif ($version =~ /1955|1960/ && $tn1{Rank} =~ /Dominica Resurrectionis/i) {
         $tn1rank = '';
-      } elsif ($version =~ /1960/ && $tn1{Rank} =~ /Patrocinii St. Joseph/i) {
+      } elsif ($version =~ /(1955|1960|Newcal)/ && $tn1{Rank} =~ /Patrocinii S. Joseph/i) {
         $tn1rank = '';
       } else {
         $tn1rank = $tn1{Rank};
@@ -403,7 +404,7 @@ sub getrank {
     $srank[2] = 1.5;
   }    #1955: semiduplex reduced to simplex
 
-  if ( $version =~ /1960/
+  if ( $version =~ /1960|Monastic/i
     && $srank[2] < 2
     && $srank[1] =~ /Simplex/i
     && $testmode =~ /seasonal/i
@@ -592,8 +593,7 @@ sub getrank {
   my @cr = split(';;', $csaint{Rank});
 
   # In Festo Sanctae Mariae Sabbato according to the rubrics.
-  if ( $version !~ /monastic/i
-    && $dayname[0] !~ /(Adv|Quad[0-6])/i
+  if ( $dayname[0] !~ /(Adv|Quad[0-6])/i
     && $dayname[0] !~ /Quadp3/i
     && $testmode !~ /^season$/i)
   {
@@ -644,7 +644,7 @@ sub getrank {
   # Dispose of some cases in which the office can't be sanctoral:
   # if we have no sanctoral office, or it was reduced to a
   # commemoration by Cum nostra.
-  if (!$srank[2] || ($version =~ /(1955|1960|Newcal)/ && $srank[2] <= 1.1)) {
+  if (!$srank[2] || ($version =~ /(1955|1960|Monastic|Newcal)/i && $srank[2] <= 1.1)) {
 
     # Office is temporal; flag is correct.
   }
@@ -1515,7 +1515,7 @@ sub transfered {
 sub climit1960 {
   my $c = shift;
   if (!$c) { return 0; }
-  if ($version !~ /1960/ || $c !~ /sancti/i) { return 1; }
+  if ($version !~ /1960|Monastic/i || $c !~ /sancti/i) { return 1; }
 
   # Subsume commemoration in special case 7-16 with Common 10 (BVM in Sabbato)
   return 0 if $c =~ /7-16/ && $winner =~ /C10/;
@@ -1565,10 +1565,10 @@ sub setheadline {
         'I. classis',
         'I. classis'
       );
-      $rankname = ($version !~ /1960/) ? $tradtable[$rank] : $newtable[$rank];
+      $rankname = ($version !~ /1960|Monastic/i) ? $tradtable[$rank] : $newtable[$rank];
       if ($version =~ /(Divino|1955|1960|Newcal)/ && $dayname[1] =~ /feria/i) { $rankname = 'Feria'; }
 
-      if ($name =~ /Dominica/i && $version !~ /1960/) {
+      if ($name =~ /Dominica/i && $version !~ /1960|Monastic/i) {
         my $a = ($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i) ? getweek(1) : getweek(0);
         my @a = split('=', $a);
         $rankname =
@@ -1577,11 +1577,11 @@ sub setheadline {
           : ($a[0] =~ /(Adv[2-4]|Quadp)/i) ? 'Semiduplex II. classis'
           : 'Semiduplex Dominica minor';
       }
-    } elsif ($version =~ /1960/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
+    } elsif ($version =~ /1960|Monastic/i && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
       $rankname = 'Dies Octavæ I. classis';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $winner =~ /C10|C10t/) {
       $rankname = 'Simplex';
-    } elsif ($version =~ /1960/ && $winner =~ /Pasc6-6/) {
+    } elsif ($version =~ /1960|Monastic/i && $winner =~ /Pasc6-6/) {
       $rankname = 'I. classis';
     } elsif ($version =~ /1960/ && $month == 12 && $day > 16 && $day < 25 && $dayofweek > 0) {
       $rankname = 'II. classis';
@@ -1592,7 +1592,7 @@ sub setheadline {
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] == /07-04/i && $dayofweek > 0) {
       $rankname = ($rank =~ 7) ? 'Duplex I. classis' : 'Semiduplex';
     } else {
-      if ($version !~ /1960/) {
+      if ($version !~ /1960|Monastic/i) {
         $rankname = ($rank <= 2) ? 'Ferial' : ($rank < 3) ? 'Feria major' : 'Feria privilegiata';
       } else {
         my @ranktable = (

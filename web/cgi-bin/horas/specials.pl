@@ -151,7 +151,7 @@ sub specials {
       if ($dox) { $item = "$item {Doxology: $dname}"; }
       push(@s, $item);
 
-      if ($hora =~ /Tertia/ && $dayname[0] =~ /Pasc7/ && $version !~ /monastic/i) {
+      if ($hora =~ /Tertia/ && $dayname[0] =~ /Pasc7/) {
         my %h = %{setupstring($datafolder, $lang, 'Psalterium/Minor Special.txt')};
         push(@s, $h{'Hymnus Pasc7 Tertia'});
         $skipflag = 1;
@@ -195,6 +195,7 @@ sub specials {
 
       if ( $dayofweek > 0
         && $version !~ /1960/
+        && $version !~ /monastic/i
         && $winner{Rank} =~ /Feria|Vigilia/i
         && $commune !~ /C10/
         && ($rank < 3 || $dayname[0] =~ /Quad6/)
@@ -223,14 +224,19 @@ sub specials {
         }
         push(@resp, $t[$tind++]);
       }
-      postprocess_short_resp(@resp, $lang) if ($version !~ /monastic/i);
+      postprocess_short_resp(@resp, $lang);
       push(@s, $_) for (@resp);
       next;
     }
 
-    if ($item =~ /Capitulum/i && $hora =~ /Completorium/i && $version !~ /Monastic/i) {
+    if ($item =~ /Capitulum/i && $hora =~ /Completorium/i) {
       $tind--;
-      while ($t[$tind] !~ /^\s*R\.br\./) { push(@s, $t[$tind++]); }
+      if ($version =~ /Monastic/i) {
+        while ($t[$tind] !~ /^\s*V\./) { push(@s, $t[$tind++]); }
+      }
+      else {
+        while ($t[$tind] !~ /^\s*R\.br\./) { push(@s, $t[$tind++]); }
+      }
       my @resp = ();
       while ($t[$tind] !~ /^\s*\#/) { push(@resp, $t[$tind++]); }
       postprocess_short_resp(@resp, $lang);
@@ -356,7 +362,11 @@ sub specials {
       my ($versum, $c1) = getantvers('Versum', $ind, $lang);
       setcomment($label, 'Source', $c, $lang);
       $capit = chompd($capit) . "_\n" . $versum;
-      if ($version =~ /monastic/i) { $capit =~ s/\&Gloria/\&Gloria1/; }
+      if ($version =~ /monastic/i) {
+        (@capit) = split(/\n/, $capit);
+        postprocess_short_resp(@capit, $lang);
+        $capit = join("\n", @capit);
+      }
       push(@s, $capit);
 
       #my @capit = split("\n", chompd($capit) . "_\n" . $versum);
@@ -691,7 +701,6 @@ sub psalmi_minor {
       if ($dayofweek > 0) { $i++; }
       if ($dayofweek > 1) { $i++; }
     }
-    if ($hora =~ /prima/i && $winner =~ /Sancti/i && $rank >= 4) { $i = 7; }
     $psalmi[$i] =~ s/\=/\;\;/;
     my @a = split(';;', $psalmi[$i]);
     $ant = chompd($a[1]);
@@ -794,6 +803,8 @@ sub psalmi_minor {
     if ($name && $ind >= 0) {
       my @ant = split("\n", $psalmi{$name});
       $ant = chompd($ant[$ind]);
+      # add fourth alleluja
+      $ant =~ s/(\S+)\.$/\1, \1./ if ($version =~ /monastic/i && $name == 'Pasch');
       $comment = 1;
       setbuild("Psalterium/Psalmi minor", $name, "subst Antiphonas");
     }
@@ -838,14 +849,14 @@ sub psalmi_minor {
   if ($ant) { $ant = "Ant. $ant"; }
   my @ant = split('\*', $ant);
   postprocess_ant($ant, $lang);
-  $ant1 = ($version !~ /1960/) ? $ant[0] : $ant;    #difference between 1955 and 1960
+  $ant1 = ($version !~ /1960|monastic/i) ? $ant[0] : $ant;    #difference between 1955 and 1960
   setcomment($label, 'Source', $comment, $lang, $prefix);
   $psalms =~ s/\s//g;
   @psalm = split(',', $psalms);
 
   # The rules for determining the psalmody at Prime in the Tridentine
   # rubrics are somewhat simpler.
-  unless ($version =~ /Trident/i) {
+  unless ($version =~ /Trident|monastic/i) {
 
     #prima psalm set for feasts
     if ($hora =~ /prima/i && $feastflag) {
@@ -872,7 +883,7 @@ sub psalmi_minor {
   }
 
   #quicumque
-  if ( ($version !~ /(1955|1960)/ || $dayname[0] =~ /Pent01/i)
+  if ( ($version !~ /(1955|1960|Monastic)/i || $dayname[0] =~ /Pent01/i)
     && $hora =~ /prima/i
     && (($dayname[0] =~ /(Epi|Pent)/i) || $version =~ /Trident/i)
     && $dayofweek == 0
@@ -905,9 +916,16 @@ sub psalmi_major {
     if ($hora =~ /Laudes/i && $dayname[0] =~ /Pasc/i && $head =~ /Daym0/i) { $head = 'DaymP'; }
     @psalmi = split("\n", $psalmi{"$head $hora"});
 
-    if ($hora =~ /Laudes/i && $winner =~ /Sancti/ && $rank >= 4 && $dayofweek > 0) {
-      my @canticles = split("\n", $psalmi{'DaymF Canticles'});
-      $psalm[1] = $canticles[$dayofweek];
+    if ($hora =~ /Laudes/i && $head =~ /Daym\d/) {
+      $sday = get_sday($month, $day, $year);
+      unless ( (($dayname[0] =~ /Adv|Quadp/) && ($duplex < 3) && ($commune !~ /C10/))
+               || (($dayname[0] =~ /Quad\d/) && ($dayname[1] =~ /Feria/))
+               || ($dayname[1] =~ /Quattuor Temporum Septembris/)
+               || ($sday =~ /(06\-23|06\-28|08\-09|08\-14)/))
+      {
+        my @canticles = split("\n", $psalmi{'DaymF Canticles'});
+        $psalmi[3] = $canticles[$dayofweek];
+      }
     }
   } elsif ($version =~ /Trident/i
     && $testmode =~ /seasonal/i
@@ -1234,7 +1252,7 @@ sub oratio {
   }
 
   if ($hora =~ /(Laudes|Vespera)/i && $winner{Rule} =~ /Sub unica conc/i) {
-    if ($version !~ /1960/) {
+    if ($version !~ /1960|Monastic/i) {
       if ($w =~ /(.*?)(\n\$Per [^\n\r]*?\s*)$/s) { $addconclusio = $2; $w = $1; }
       if ($w =~ /(.*?)(\n\$Qui [^\n\r]*?\s*)$/s) { $addconclusio = $2; $w = $1; }
     } else {
@@ -1785,7 +1803,8 @@ sub tryoldhymn {
 # returns the [Ant $hora] item for the officium
 sub getanthoras {
   my $lang = shift;
-  my $tflag = ($version =~ /Trident/i && $winner =~ /Sancti/i) ? 1 : 0;
+  my $tflag = ($version =~ /Trident|Monastic/i && $winner =~ /Sancti/i) ? 1 : 0;
+
   my $ant = '';
   if ($rule !~ /Antiphonas horas/i && $communerule !~ /Antiphonas horas/i && !$tflag) { return ''; }
   if ($version =~ /(1955|1960)/ && ($dayofweek > 0 || $1 eq '1960') && $rank < 6) { return ''; }
@@ -1793,7 +1812,7 @@ sub getanthoras {
   my $w = $w{'Ant Laudes'};
   my $c = ($winner =~ /sancti/i) ? 3 : 2;
 
-  if (!$w && ($communetype =~ /ex\s*/i || $version =~ /Trident/i)) {
+  if (!$w && ($communetype =~ /ex\s*/i || $version =~ /Trident|Monastic/i)) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
     $w = $com{'Ant Laudes'};
     $c = 4;

@@ -6,25 +6,20 @@ vide C5;
 9 lectiones
 Gloria
 
-
 [Comment]
-# 7 VIII – Św. Kajetana, Wyznawcy
+# 7 VIII – S. Caetano, Confessor
 ! 3 classe
 ! Paramentos brancos
-Św. Kajetan urodził się w Vicenza w Italii roku 1480. Razem z Piotrem Carafa założył pierwsze zgromadzenie Kleryków Regularnych, nazwanych później Taatynami. Zakonnicy ci nie posiadali niczego i nie prosili o jałmużnę, zdając się całkowicie na łaskę Opatrzności (kolekta). Z powodu wielkiej gorliwości nazwano św. Kajetana «łowcą dusz». Zmarł on w Neapolu 7 sierpnia 1547 roku.
 
-Msza wspólna nr 21 Os iusti, z wyjątkiem kolekty, sekrety i pokomunii
-
-Św. Donata, Biskupa i Męczennika
-! Wspomnienie
+S. Donato, Bispo e Mártir
+! Comemoração
 ! Paramentos vermelhos
-Św. Donat, biskup Arezzo w Italii, poniósł śmierć męczeńską około roku 360.
 
 [Introitus]
 @Commune/C5:Introitus
 
 [Oratio]
-Boże, który pozwoliłeś świętemu Kajetanowi, Twemu Wyznawcy, naśladować sposób życia Apostołów; daj nam za jego wstawiennictwem i przykładem pokładać zawsze nadzieję w Tobie i pragnąć jedynie tego, co niebieskie.
+Ó Deus, que concedestes ao B. Caetano, vosso Confessor, a graça de imitar o modo de vida dos Apóstolos, permiti-nos, pela sua intercessão e exemplo, que sempre depositemos em Vós a nossa confiança e somente aspiremos aos bens celestiais.
 $Per Dominum
 
 [Lectio]
@@ -40,27 +35,27 @@ $Per Dominum
 @Commune/C5:Offertorium
 
 [Secreta]
-Prosimy Cię, wszechmogący Boże, aby nasza ofiara, którą w pokorze składamy Ci ku czci Twoich Świętych, była Tobie miła i oczyściła nasze dusze i ciała.
+Ó Deus omnipotente, Vos suplicamos, fazei que esta oblata da nossa humildade em honra dos vossos Santos Vos seja agradável e nos purifique ao mesmo tempo o corpo e a alma.
 $Per Dominum
 
 [Communio]
 @Commune/C5:Communio
 
 [Postcommunio]
-Prosimy Cię, wszechmogący Boże, aby pokarm niebieski, któryśmy przyjęli, chronił nas od wszelkich przeciwności za wstawiennictwem świętego Kajetana, Twojego Wyznawcy.
+Havendo recebido o alimento celestial, ó Deus omnipotente, Vos suplicamos, fazei que pela intercessão do B. Caetano, vosso Confessor, sejamos fortalecidos contra todas as adversidades.
 $Per Dominum
 
 [Commemoratio Oratio]
-! Wspomnienie św. Donata
-Boże, chwało Twych kapłanów, daj, prosimy Cię, niech doznamy pomocy świętego Donata, Twego Męczennika i Biskupa, którego święto obchodzimy.
+! S. Donato
+Ó Deus, que sois a glória dos vossos sacerdotes, permiti, Vos suplicamos, que experimentemos o auxílio do vosso Santo Mártir e Bispo Donato, cuja festa celebramos.
 $Per Dominum
 
 [Commemoratio Secreta]
-! Wspomnienie św. Donata
-Spraw, prosimy Cię, Panie, aby dzięki wstawiennictwu św. Donata, Twego Męczennika i Biskupa, którego czcimy darami złożonymi ku chwale Twojego imienia, wzrastał w nas owoc synowskiego oddania.
+! S. Donato
+Senhor, Vos suplicamos, fazei que pela intercessão do vosso Santo Mártir e Bispo Donato, a quem honramos oferecendo estes dons em louvor do vosso nome, sintamos aumentar em nós os frutos de uma devoção piedosa.
 $Per Dominum
 
 [Commemoratio Postcommunio]
-! Wspomnienie św. Donata
-Wszechmogący i miłosierny Boże, który czynisz nas uczestnikami i szafarzami Twoich Sakramentów, daj prosimy, abyśmy za wstawiennictwem św. Donata, Twego Męczennika i Biskupa, coraz więcej jednoczyli się z nim w wierze i godnej służbie.
+! S. Donato
+Omnipotente e misericordioso Deus, que nos tornastes participantes e ministros dos vossos sacramentos, concedei-nos, Vos imploramos, que pela intercessão do B. Donato, vosso Mártir e Pontífice, não só gozemos a comparticipação da sua fé, mas como ele Vos sirvamos dignamente.
 $Per Dominum

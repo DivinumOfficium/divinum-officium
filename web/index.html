@@ -10,6 +10,12 @@
 <title>Divinum Officium</title>
 </head>
 <body style="background-color:white;color:black">
+<script>
+// https redirect
+if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+}
+</script>
 <p style="text-align:center;font-size:2em"><B>The Divinum Officium Project</B>
 <table border="1" style="text-align:center;margin-left:auto;margin-right:auto;width:50%;font-size:2em">
     <tr>

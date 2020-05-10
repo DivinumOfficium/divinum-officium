@@ -8,23 +8,20 @@ CPapaM=Eleuthérium;
 Gloria
 
 [Comment]
-# 26 V – Św. Filipa Nereusza, Wyznawcy
+# 26 V – S. Filipe Néri, Confessor
 ! 3 classe
 ! Paramentos brancos
-Św. Filip urodził się we Florencji w roku 1515. W roku 1533 przeniósł się do Rzymu i tam spędził resztę życia. Do roku 1551 był prywatnym wychowawcą, a równocześnie studiował filozofię i teologię oraz pełnił liczne dzieła miłosierdzia. W roku 1551 otrzymał święcenia kapłańskie i poświęcił się pracy nad młodzieżą. Z czasem założył zgromadzenie świeckich księży zwanych Oratorianami. Ponadto św. Filip popierał studia kościelne, był kierownikiem dusz i doradcą papieży. Motorem jego działalności było głębokie życie wewnętrzne obfitujące w przeżycia mistyczne. Teksty mszalne zwracają uwagę na jego gorącą miłość ku Bogu. Św. Filip zmarł 26 maja 1595 roku.
-
-Wspomnienie św. Eleuteriusza, Papieża i Męczennika. Św. Eleuteriusz, dwunasty następca św. Piotra, rządził Kościołem w latach 175-189.
 
 [Introitus]
 !Rm 5:5
-v. Miłość Boża rozlana jest w sercach naszych przez Ducha Świętego, mieszkającego w nas. ((T. P. Aleluia, aleluia.))
+O amor de Deus difundiu-se nos nossos corações pelo seu Espírito que habita em nós. (T.P. Aleluia, aleluia.).
 !Sl 102:1
-Błogosław, duszo moja, Pana, a wszystko, co jest we mnie, święte imię Jego.
+Bendizei, ó minha alma, o Senhor: que tudo quanto me pertence bendiga o seu santo nome.
 &Gloria
-v. Miłość Boża rozlana jest w sercach naszych przez Ducha Świętego, mieszkającego w nas. ((T. P. Aleluia, aleluia.))
+O amor de Deus difundiu-se nos nossos corações pelo seu Espírito que habita em nós. (T.P. Aleluia, aleluia.).
 
 [Oratio]
-Boże, któryś wyniósł błogosławionego Filipa, Twego Wyznawcę, do chwały Świętych Swoich, dozwól łaskawie, abyśmy ciesząc się jego uroczystością, korzystali z przykładu jego cnót.
+Ó Deus, que elevastes o B. Filipe, vosso Confessor, à sublime glória dos vossos Santos, concedei-nos propício que, celebrando com alegria esta festa, alcancemos proveito com o exemplo das suas virtudes.
 $Per Dominum
 
 [Lectio]
@@ -32,51 +29,51 @@ $Per Dominum
 
 [Graduale]
 !Sl 33:12; 33:6
-Pójdźcie, synowie, słuchajcie mnie: nauczę was bojaźni Pańskiej.
-V. Na Niego patrzcie, abyście się cieszyli, by oblicza wasze nie doznały wstydu. Aleluia, aleluia.
+Vinde, meus filhos, e escutai-me: Ensinar-vos-ei a temer o Senhor.
+V. Aproximai-Vos d’Ele e ficareis iluminados: então a vossa face não ficará envergonhada.
 !Lm 1:13
-Zesłał ogień z wysoka, kazał mu wejść w moje kości i pouczył mnie. Aleluia.
+Do alto dos céus enviou e fogo sobre os meus ossos e instruiu-me. Aleluia.
 
 [GradualeP]
 Aleluia, aleluia.
 !Lm 1:13
-Zesłał ogień z wysoka, kazał mu wejść w moje kości i pouczył mnie. Aleluia.
+Do alto dos céus enviou e fogo sobre os meus ossos e instruiu-me. Aleluia
 !Sl 38:4
-Rozgorzało we mnie serce moje, gdy rozważyłem, zapłonął ogień. Aleluia.
+Meu coração inflamou-se no meu peito. Enquanto eu meditava, o fogo abrasou-me. Aleluia.
 
 [Evangelium]
 @Commune/C5:Evangelium
 
 [Offertorium]
 !Sl 118:32
-Drogą Twoich poleceń pobiegnę, gdy serce moje rozszerzysz. ((T. P. Aleluia.))
+Eu corri pelo caminho dos vossos mandamentos, porquanto dilatastes o meu coração. (T.P. Aleluia.)
 
 [Secreta]
-Wejrzyj, Panie litościwie na tę ofiarę i spraw, aby nad Duch Święty rozpalił tym ogniem, który przedziwnie przeniknął serce św. Filipa.
+Olhai aplacado para o presente sacrifício, Senhor, Vos suplicamos, e fazei que o Espírito Santo nos inflame naquele fogo que penetrou maravilhosamente no coração do B. Filipe.
 $Per Dominum ejusdem
 
 [Communio]
 !Sl 83:3
-Serce moje i ciało moje radośnie wykrzykują ku Bogu żywemu. ((T. P. Aleluia.))
+O meu coração e a minha carne exultaram em Deus vivo. (T.P. Aleluia.)
 
 [Postcommunio]
-Nasyceni niebieską ucztą, prosimy Cię, Panie, abyśmy przez zasługi i za przykładem św. Filipa, Twojego Wyznawcy, zawsze pragnęli pokarmu, który daje prawdziwe życie.
+Alimentados com as celestiais delícias, Senhor, Vos pedimos que, pelos méritos do B. Filipe, vosso Confessor, e imitando os seus exemplos, aspiremos sempre a este alimento, que nos dará a verdadeira vida.
 $Per Dominum
 
 [Commemoratio Oratio]
-! de św. Eleuteriusza
-@Commune/C2c:Oratio:s/N\./Eleuthérii/
+! de S. Eleutério, Papa e Mártir
+@Commune/C2c:Oratio:s/N\./Eleutério/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Oratio
 
 [Commemoratio Secreta]
-! de św. Eleuteriusza
-@Commune/C2c:Secreta:s/N\./Eleuthérii/
+! de S. Eleutério, Papa e Mártir
+@Commune/C2c:Secreta:s/N\./Eleutério/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Secreta
 
 [Commemoratio Postcommunio]
-! de św. Eleuteriusza
-@Commune/C2c:Postcommunio:s/N\./Eleuthério/
+! de S. Eleutério, Papa e Mártir
+@Commune/C2c:Postcommunio:s/N\./Eleutério/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Postcommunio

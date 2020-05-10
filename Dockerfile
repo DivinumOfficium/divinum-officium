@@ -28,15 +28,12 @@ COPY docker/apache/apache2.conf /etc/apache2/apache2.conf
 # Set permissionsso apache can write to logs without root
 RUN mkdir -p /var/run/apache2 /var/lock/apache2 /var/log/apache2 ; chown -R www-data:www-data /var/lock/apache2 /var/log/apache2 /var/run/apache2
 
-# Drop permissions - everything below here done without root
-USER www-data
-
 # Copy in code
 WORKDIR /var/www
 COPY --chown=www-data:www-data web /var/www/web
 
 # Expose default port
-EXPOSE 8080
+EXPOSE 80
 
 ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
 CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]

@@ -176,9 +176,9 @@ our $psalmnum2 = 0;
 # prepare title
 $daycolor =
     ($commune =~ /(C1[0-9])/) ? "blue"
-  : ($dayname[1] =~ /(Cathedra|oann|Pasch|Confessor|Vigilia Nativitatis|Cena)/i) ? "black"
+  : ($dayname[1] =~ /(Cathedra|oann|Pasch|Confessor|Ascensio|Vigilia Nativitatis|Cena)/i) ? "black"
   : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
-  : ($dayname[1] =~ /(Pentecostes|Martyr|Innocentium|Cruc|Apostol)/i) ? "red"
+  : ($dayname[1] =~ /(Pentecostes|Evangel|Martyr|Innocentium|Cruc|Apostol)/i) ? "red"
   : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
   : ($dayname[1] =~ /(Quattuor|Vigilia|Passionis|Quadragesima|Hebdomadæ Sanctæ|Septuagesim|Sexagesim|Quinquagesim|Ciner|Adventus)/i) ? "purple"
   : "black";
@@ -192,6 +192,12 @@ $title = "Sancta Missa Comparison";
 htmlHead($title, 2);
 print << "PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="startup();">
+<script>
+// https redirect
+if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
+    location.replace(`https:\${location.href.substring(location.protocol.length)}`);
+}
+</script>
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
 <P ALIGN=CENTER>
 <A HREF="Cmissa.pl?searchvalue=2&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Incipit]</A>&nbsp;&nbsp;
@@ -210,7 +216,10 @@ PrintTag
   my $vsize = @versions;
   @chv = splice(@chv, @chv);
   for ($i = 0; $i < @versions; $i++) { $chv[$i] = ($version1 =~ /$versions[$i]/) ? 'SELECTED' : ''; }
-  print "<SELECT NAME=version1 SIZE=$vsize onchange=\"parchange();\">\n";
+  print "
+    <LABEL FOR=version1 CLASS=offscreen>Version 1</LABEL>
+    <SELECT ID=version1 NAME=version1 SIZE=$vsize onchange=\"parchange();\">\n
+  ";
   for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
   print "</SELECT>\n";
   $chl11 = ($lang1 =~ /Latin/i) ? 'SELECTED' : '';
@@ -219,18 +228,23 @@ PrintTag
   $chl22 = ($lang2 =~ /English/i) ? 'SELECTED' : '';
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
-<SELECT NAME=lang1 SIZE=2 onclick="parchange()">
+<LABEL FOR=lang1 CLASS=offscreen>Language for Version 1</LABEL>
+<SELECT ID=lang1 NAME=lang1 SIZE=2 onclick="parchange()">
 <OPTION $chl11 VALUE='Latin'>Latin
 <OPTION $chl12 VALUE=English>English
 </SELECT>
 &nbsp;&nbsp;&nbsp;
-<SELECT NAME=lang2 SIZE=2 onclick="parchange()">
+<LABEL FOR=lang2 CLASS=offscreen>Language for Version 2</LABEL>
+<SELECT ID=lang2 NAME=lang2 SIZE=2 onclick="parchange()">
 <OPTION $chl21 VALUE='Latin'>Latin
 <OPTION $chl22 VALUE='English'>English
 </SELECT>&nbsp;&nbsp;&nbsp;
 PrintTag
   for ($i = 0; $i < @versions; $i++) { $chv[$i] = ($version2 =~ /$versions[$i]/) ? 'SELECTED' : ''; }
-  print "<SELECT NAME=version2 SIZE=$vsize onchange=\"parchange();\">\n";
+  print "
+    <LABEL FOR=version2 CLASS=offscreen>Version 2</LABEL>
+    <SELECT ID=version2 NAME=version2 SIZE=$vsize onchange=\"parchange();\">\n
+  ";
   for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
   print "</SELECT>\n<BR>";
 }
@@ -255,7 +269,7 @@ PrintTag
   ordo();
   print << "PrintTag";
 <P ALIGN=CENTER>
-<INPUT TYPE=SUBMIT NAME='button' VALUE='Æquiparantia persoluta' onclick="okbutton();">
+<INPUT TYPE=submit NAME='button' VALUE='Æquiparantia persoluta' onclick="okbutton();">
 </P>
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
 <INPUT TYPE=HIDDEN NAME=popup VALUE="">
@@ -342,9 +356,10 @@ sub headline {
 <P ALIGN=CENTER>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<INPUT TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
+<LABEL FOR=date CLASS=offscreen>Date</LABEL>
+<INPUT ID=date TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
 <A HREF=# onclick="prevnext(-1)">&darr;</A>
-<INPUT TYPE=BUTTON NAME=SUBMIT VALUE=" " onclick="parchange();">
+<INPUT TYPE=submit NAME=SUBMIT VALUE=" " onclick="parchange();">
 <A HREF=# onclick="prevnext(1)">&uarr;</A>
 </P>
 PrintTag
