@@ -1,0 +1,185 @@
+[Name]
+Officium parvum Beatae Mariae Virginis
+
+[Rank]
+Officium parvum Beatae Mariae Virginis tempore Adventi;;Simplex;;1
+
+[Rule]
+Ave only
+Doxology=Nat
+Omit Suffragium
+Special Benedictio
+Votive nocturn
+
+[Ant Vespera]
+@Sancti/03-25
+
+[Capitulum Vespera]
+@Sancti/03-25:Lectio Prima
+$Deo gratias
+
+[Versum 1]
+@Commune/C11:Versum 2
+
+[Ant 1]
+@Tempora/Adv1-0:Ant 2
+
+[Oratio]
+@Commune/C12:Oratio 2
+
+[Commemoratio]
+!Conmemoración de los Santos
+Ant. He aquí que el Señor vendrá y todos sus santos con Él: y habrá en aquel día una gran luz. Aleluya.
+V. He aquí que aparecerá el Señor sobre una nube resplandeciente. 
+R. Rodeado de millares de santos.
+$Oremus
+v. Dígnate, Señor, purificar nuestras conciencias con tu visitación, a fin de que cuando venga Jesucristo vuestro Hijo, Señor nuestro, con todos los santos, halle en nosotros una morada dispuesta para recibirle. 
+$Qui tecum
+(se omite en las rúbricas de 1955 y 1960)
+
+[Special Completorium]
+@Commune/C12::s/(#Capitulum.).*/$1/s
+@Sancti/03-25:Capitulum Vespera
+_
+@Psalterium/Mariaant:Advent:s/.*V./V./s s/v. .*//s
+
+#Canticum Nunc dimittis
+@Tempora/Adv1-0:Ant 2:s/^/Ant. /
+&psalm(233)
+@Tempora/Adv1-0:Ant 2:s/^/Ant. /
+
+@Commune/C12:Pre oratio
+@:Oratio
+
+@Commune/C12::s/.*(.#Conclusio)/$1/s
+
+[Invit]
+@Commune/C12
+
+[Ant Matutinum]
+@Commune/C11::s/V\. .*/V. Derramada está la gracia en tus labios./g s/R\. .*/R. Por ello el Señor te bendecirá para siempre./g s/Después del parto,*\./El Ángel del Señor \* anunció a María, la cual concibió por obra del Espíritu Santo./
+
+[Lectio1]
+!Lc 1, 26-28
+26 El Ángel Gabriel fue enviado por Dios a Nazaret, ciudad de Galilea, 
+27 a una Virgen desposada con un varón de la casa de David, llamado José, y el nombre de la Virgen era María. 
+28 Y entrando el Ángel adonde ella estaba, le dijo: Ave, oh llena de gracia; el Señor es contigo; bendita Tú eres entre las mujeres. 
+
+[Responsory1]
+@Sancti/03-25
+
+[Lectio2]
+!Lc 1, 29-33
+29 Al oír tales palabras, la Virgen se turbó, y se puso a considerar qué significaría una tal salutación. 
+30 Mas el Ángel le dijo: ¡Oh María! no temas; porque has hallado gracia en los ojos de Dios; 
+31 he aquí que has de concebir en tu seno, y darás a luz un hijo, a quien pondrás por nombre Jesús. 
+32 Este será grande, y será llamado Hijo del Altísimo, al cual el Señor Dios dará el trono de su padre David, y reinará en la casa de Jacob eternamente, 
+33 y su reino no tendrá fin.
+
+[Responsory2]
+@Sancti/03-25
+
+[Lectio3]
+!Lc 1, 34-38
+34 Mas, María dijo al Ángel: ¿Cómo ha de ser eso? Pues Yo no conozco varón alguno. 
+35 El Ángel en respuesta, le dijo: El Espíritu Santo descenderá sobre ti, y la virtud del Altísimo te cubrirá con su sombra; por lo cual el fruto santo que de ti nacerá se llamará Hijo de Dios. 
+36 Y ahí tienes a tu parienta Isabel, que en su vejez ha concebido un hijo; y la que se llamaba estéril, hoy cuenta ya el sexto mes; 
+37 ya que para Dios nada es imposible. 
+38 Entonces dijo María: He aquí la esclava del Señor, hágase en mí según tu palabra.
+
+[Responsory3]
+@Sancti/03-25
+
+[Ant Laudes]
+@Sancti/03-25:Ant Vespera:s/;;.*//g
+
+[Capitulum Laudes]
+@Sancti/03-25:Lectio Prima
+$Deo gratias
+
+[Versum 2]
+@Commune/C12
+
+[Ant 2]
+@Tempora/Adv1-0:Ant 2
+
+[Minor final]
+
+@Commune/C12:Pre oratio
+@:Oratio
+@Commune/C12:Minor final
+
+[Special Prima]
+@Commune/C12:Minor intro
+@Sancti/03-25:Ant Vespera:1 s/^/Ant. / s/;;.*//
+&psalm(53)
+
+&psalm(84)
+
+&psalm(116)
+_
+@Sancti/03-25:Ant Vespera:1 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@Sancti/03-25:Capitulum Vespera
+_
+@Commune/C11:Versum 1
+@:Minor final
+
+[Special Tertia]
+@Commune/C12:Minor intro
+@Sancti/03-25:Ant Vespera:2 s/^/Ant. / s/;;.*//
+&psalm(119)
+
+&psalm(120)
+
+&psalm(121)
+_
+@Sancti/03-25:Ant Vespera:2 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@Sancti/03-25:Lectio Prima
+$Deo gratias
+_
+@Commune/C11:Versum 2
+@:Minor final
+
+[Special Sexta]
+@Commune/C12:Minor intro
+@Sancti/03-25:Ant Vespera:3 s/^/Ant. / s/;;.*//
+&psalm(122)
+
+&psalm(123)
+
+&psalm(124)
+_
+@Sancti/03-25:Ant Vespera:3 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@Sancti/03-25:Capitulum Sexta
+_
+@Commune/C12:Versum 2
+@:Minor final
+
+[Special Nona]
+@Commune/C12:Minor intro
+@Sancti/03-25:Ant Vespera:5 s/^/Ant. / s/;;.*//
+&psalm(125)
+
+&psalm(126)
+
+&psalm(127)
+_
+@Sancti/03-25:Ant Vespera:5 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@Sancti/03-25:Capitulum Vespera
+_
+@Psalterium/Mariaant:Advent:s/.*V./V./s s/v. .*//s
+@:Minor final
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+@:Ant 1
