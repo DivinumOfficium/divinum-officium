@@ -1,0 +1,110 @@
+@Commune/C12
+
+[Name]
+Officium parvum Beatae Mariae Virginis Tempora Nativitatis
+
+[Rank]
+Officium parvum Beatae Mariae Virginis Tempora Nativitatis;;Simplex;;1
+
+[Ant Vespera]
+@Sancti/01-01
+
+[Ant 1]
+@Sancti/01-01:Ant 3
+
+[Oratio]
+@Commune/C10:Oratio 21
+
+[Commemoratio]
+@Commune/C12:Commemoratio
+(se omite en las rúbricas de 1955 y 1960)
+
+[Special Completorium]
+@Commune/C12::s/(#Canticum Nunc dimittis.).*/$1/s
+@Commune/C10:Ant 11:s/^/Ant. /
+&psalm(233)
+@Commune/C10:Ant 11:s/^/Ant. /
+@:Pre oratio
+@Commune/C10:Oratio 21
+
+@Commune/C12::s/.*(.#Conclusio)/$1/s
+
+[Ant 2]
+@Sancti/01-01
+
+[Minor final]
+
+@:Pre oratio
+@Commune/C10:Oratio 21
+@Commune/C12:Minor final
+
+[Special Prima]
+@:Minor intro
+@Sancti/01-01:Ant Vespera:1 s/^/Ant. / s/;;.*//
+&psalm(53)
+
+&psalm(84)
+
+&psalm(116)
+_
+@Sancti/01-01:Ant Vespera:1 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@:Capitulum Prima
+_
+@Commune/C11:Versum 1
+@:Minor final
+
+[Special Tertia]
+@:Minor intro
+@Sancti/01-01:Ant Vespera:2 s/^/Ant. / s/;;.*//
+&psalm(119)
+
+&psalm(120)
+
+&psalm(121)
+_
+@Sancti/01-01:Ant Vespera:2 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@:Capitulum Tertia
+_
+@Commune/C11:Versum 2
+@:Minor final
+
+[Special Sexta]
+@:Minor intro
+@Sancti/01-01:Ant Vespera:3 s/^/Ant. / s/;;.*//
+&psalm(122)
+
+&psalm(123)
+
+&psalm(124)
+_
+@Sancti/01-01:Ant Vespera:3 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@:Capitulum Sexta
+_
+@:Versum 2
+@:Minor final
+
+[Special Nona]
+@:Minor intro
+@Sancti/01-01:Ant Vespera:5 s/^/Ant. / s/;;.*//
+&psalm(125)
+
+&psalm(126)
+
+&psalm(127)
+_
+@Sancti/01-01:Ant Vespera:5 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@:Capitulum Nona
+_
+@:Verse Nona
+@:Minor final
+
+[Ant 3]
+@Sancti/01-01
