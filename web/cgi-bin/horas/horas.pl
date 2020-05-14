@@ -1224,14 +1224,12 @@ sub getordinarium {
   my $lang = shift;
   my $command = shift;
   my @script = ();
-  my $fname = checkfile($lang, "Ordinarium/$command.txt");
-  if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) { $fname =~ s/\.txt/e\.txt/; }
-  if ($version =~ /(1955|1960)/) { $fname =~ s/\.txt/1960\.txt/; }
-
-  if ($version =~ /trident/i && $hora =~ /(laudes|vespera)/i && $version !~ /monastic/i) {
-    $fname =~ s/\.txt/Trid\.txt/;
-  }
-  if ($version =~ /Monastic/i) { $fname =~ s/\.txt/M\.txt/; }
+  my $suffix = "";
+  if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) { $suffix .= "e"; }
+  if ($version =~ /(1955|1960)/) { $suffix .= "1960"; }
+  elsif ($version =~ /trident/i && $hora =~ /(laudes|vespera)/i) { $suffix .= "Trid"; }
+  elsif ($version =~ /Monastic/i) { $suffix .= "M"; }
+  my $fname = checkfile($lang, "Ordinarium/$command$suffix.txt");
   @script = process_conditional_lines(do_read($fname));
   $error = "$fname cannot be opened or gives an empty script." unless @script;
 
