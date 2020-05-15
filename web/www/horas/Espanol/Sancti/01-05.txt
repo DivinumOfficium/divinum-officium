@@ -1,0 +1,125 @@
+[Rank]
+In Vigilia Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-01
+
+[Rank1570]
+In Vigilia Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-01
+
+[Rank1960]
+Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
+
+[Rule]
+ex Sancti/01-01;
+9 lectiones
+Psalmi Dominica
+Omit preces
+Feria Te Deum
+CPapaM=Telésphorum;
+
+[Capitulum Vespera]
+@Tempora/Nat1-0:Capitulum Vespera
+
+[Hymnus Vespera]
+@Sancti/12-25:Hymnus Vespera
+
+[HymnusM Vespera]
+@Sancti/12-25:HymnusM Vespera
+
+[Ant 1]
+@Tempora/Nat1-0:Ant 3
+
+[Versum 1]
+@Sancti/12-25:Versum 2
+
+[Oratio]
+@Tempora/Nat1-0:Oratio
+
+[Commemoratio]
+!Commemoratio S. Telesphori Papæ et Martyris
+@Commune/C2:Oratio1 Gregem
+
+[Invit]
+@Sancti/12-25:Invit
+
+[Hymnus Matutinum]
+@Sancti/12-25:Hymnus Vespera
+
+[HymnusM Matutinum]
+@Sancti/12-25:HymnusM Vespera
+
+[Lectio1]
+De la Epístola a los Romanos
+!Rom 8, 1-4
+1 Nada hay de consiguiente ahora digno de condenación en aquellos que están en Cristo Jesús, y que no siguen la carne. 
+3 Porque lo que era imposible que la ley hiciese, estando como estaba debilitado por la carne, hízolo Dios cuando, habiendo enviado a su Hijo revestido de una carne semejante a la del pecado, y le echó víctima por el pecado, mató así al pecado en la carne, 
+4 a fin de que la justificación de la ley tuviese su cumplimiento en nosotros, que no vivimos conforme a la carne, sino conforme al espíritu.
+
+[Lectio2]
+!Rom 8, 5-9
+5 Los que son según la carne, tienden a las cosas carnales; los que son según el espíritu, a las cosas espirituales. 
+6 Porque las tendencias de la carne son muerte, pero las tendencias del espíritu son vida y paz. 
+7 Por lo cual las tendencias de la carne son enemistad con Dios, que no sujetan ni pueden sujetarse a la ley de Dios. 
+8 Los que están en la carne no pueden agradar a Dios.  
+9 Pero vosotros no estáis en la carne, sino en el espíritu, si es que de verdad el Espíritu de Dios habita en vosotros. Pero si alguno no tiene el Espíritu de Cristo, ése no es de Cristo. 
+
+[Lectio3]
+!Rom 8, 9-11
+9 Si alguno no tiene el Espíritu de Cristo, este tal no es de Jesucristo. 
+10 Mas si Cristo está en vosotros, aunque el cuerpo esté muerto por razón del pecado de Adán, el espíritu vive en virtud de su justificación. 
+11 Y si el Espíritu de aquel Dios, que resucitó a Jesús de la muerte, habita en vosotros, el mismo que ha resucitado a Jesucristo de la muerte dará vida también a vuestros cuerpos mortales, en virtud de su Espíritu que habita en vosotros.
+
+[Responsory1]
+@Sancti/01-01:Responsory1
+
+[Responsory2]
+@Sancti/01-01:Responsory2
+
+[Responsory3]
+@Sancti/01-01:Responsory3
+
+[Lectio4]
+Sermón de San Agustín, Obispo.
+!Sermón 13 del tiempo.
+Nuestro Señor Jesucristo, hermanos carísimos, que es eterno Creador de todas las cosas, naciendo hoy de una madre, se ha constituido nuestro Salvador. Ha nacido hoy en el tiempo por su voluntad para conducirnos a la eternidad del Padre. Dios se ha hecho hombre, a fin de hacer al hombre Dios. Para que el hombre comiera el pan de los Ángeles, hoy el Señor de los Ángeles se ha hecho hombre.
+
+[Lectio5]
+Hoy ha tenido cumplimiento aquella profecía que dice: ¡Oh cielos! derramad desde lo alto vuestro rocío, y lluevan las nubes al Justo: ábrase la tierra, y brote al Salvador”. Ha sido hecho aquel que había hecho las cosas a fin de que fuera hallado aquello que había perecido. Antes que él se humillara, yo pequé. Pecó el hombre, convirtiéndose en reo; para librar al reo, nació Dios humanado. El hombre cayó, pero Dios descendió. Cayó el hombre miserablemente, bajó Dios misericordiosamente. Cayó el hombre por la soberbia, descendió Dios con su gracia.
+
+[Lectio6]
+¡Oh milagro, oh prodigio, hermanos míos! Los derechos de la naturaleza se cambian para el hombre. Nace un Dios, una virgen es madre: es fecunda por la sola palabra de Dios. Es virgen y madre al mismo tiempo; siendo madre, es libre de corrupción; permaneciendo virgen, tiene hijo, quedando pura, pero no infecunda. Sólo ha nacido sin pecado Aquél que ha sido engendrado sin obra de hombre, no por la concupiscencia de la carne, sino por la obediencia del espíritu.
+
+[Lectio7]
+Santo Evangelio según San Mateo
+!Mt 2, 19-23
+En aquel tiempo: Después de la muerte de Herodes, he aquí que un Ángel del Señor apareció en sueños a José en Egipto diciéndole: Levántate, y toma al niño y a su madre, y vete a la  tierra de Israel. Y lo que sigue.
+_
+Homilía de San Jerónimo, Presbítero.
+!Libro 1, sobre los Coment. sobre el cap. 2 de San Mateo.
+Por estas palabras entendemos que no sólo Herodes, sino los sacerdotes y escribas determinaron en un mismo tiempo dar muerte al Señor. “Y levantándose tomó al Niño y a su Madre”. No dice el Evangelio: Tomó a su hijo y a su mujer, sino al Niño y a su Madre, como nutricio, no como marido.
+
+[Lectio8]
+Mas oyendo que Arquelao reinaba en Judea en lugar de su padre Herodes, temió ir allá. Muchos se equivocan por ignorancia de la historia, creyendo que este Herodes cuya muerte se anuncia, es el mismo que se mofó de Jesús en la pasión. Aquel Herodes que hizo las paces con Pilato, era hijo de éste, y hermano de Arquelao.
+
+[Lectio9]
+Porque será llamado Nazareno. Si hubiera puesto un ejemplo de las Escrituras, no diría el Evangelista: Fue dicho por los profetas, sino: “Según fue dicho por el Profeta”. Mas diciendo ahora profetas en plural, manifiesta que no tomó las palabras de la Escritura, sino el sentido. Nazareno significa santo; ahora bien, toda la Escritura manifiesta que el Señor había de ser santo.
+&teDeum
+
+[Capitulum Laudes]
+@Tempora/Nat1-0:Capitulum Vespera
+
+[Hymnus Laudes]
+@Sancti/12-25:Hymnus Laudes
+
+[Ant 2]
+@Tempora/Nat1-0:Ant 1
+
+[Lectio Prima]
+@Tempora/Nat1-0:Lectio Prima
+
+[Capitulum Tertia]
+@Tempora/Nat1-0:Capitulum Vespera
+
+[Capitulum Sexta]
+@Tempora/Nat1-0:Capitulum Sexta
+
+[Capitulum Nona]
+@Tempora/Nat1-0:Capitulum Nona
