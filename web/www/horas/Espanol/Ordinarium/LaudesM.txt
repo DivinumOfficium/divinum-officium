@@ -1,9 +1,13 @@
 #Incipit
+$Deus in adjutorium
+&Gloria
+&Alleluia
+
 &psalm(66)
 
 #Psalmi
 
-#Capitulum Responsory Hymnus Versus
+#Capitulum Responsorium Hymnus Versus
 
 #Canticum Benedictus
 &ant_Benedictus(1)
@@ -11,19 +15,12 @@
 &Gloria
 &ant_Benedictus(2)
 _
-v. Señor, ten piedad. Cristo, ten piedad. Señor, ten piedad.
-&pater_noster
+$MLitany
 
 #Oratio
 
 #Conclusio
 &Dominus_vobiscum
-&Benedicamus_Domino 
+&Benedicamus_Domino
 $Fidelium animae
-$Pater noster
-V. Que el Señor os conceda la paz.
-R. Y la vida eterna. Amén.
-_
-V. Que el auxilio divino + permanezca siempre con nosotros.
-R. Y con nuestros hermanos ausentes. Amén.
-
+&Divinum_auxilium
