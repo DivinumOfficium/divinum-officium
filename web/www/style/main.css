@@ -36,9 +36,13 @@ a:hover {
   transition-duration: 250ms;
 }
 
-footer {
+.footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 10px;
+}
+
+.centered_text {
+  text-align: center;
 }
