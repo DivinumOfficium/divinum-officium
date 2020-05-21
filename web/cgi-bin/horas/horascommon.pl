@@ -1116,6 +1116,12 @@ sub precedence {
   if ($version =~ /1960/ && $winner{Rule} =~ /No Sunday commemoratio/i && $dayofweek == 0) {
     $commemoratio = $commemoratio1 = $dayname[2] = '';
   }
+  
+  if ($version =~ /1960/ && $sday !~ /(05\-11|05\-31)/ && $winner == /Pasc5-3/i) {
+      $commemoratio = '';
+      %commemoratio = undef;
+      $dayname[2] = '';
+  }
 
   if ($commemoratio) {
     my $flag = ($commemoratio =~ /tempora/i && $tvesp == 1) ? 1 : 0;
