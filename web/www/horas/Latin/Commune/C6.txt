@@ -17,32 +17,6 @@ Ista est speciósa * inter fílias Jerúsalem.;;147
 v. Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est; sed quem Deus comméndat.
 $Deo gratias
 
-[Hymnus Vespera](rubrica 1570)
-v. Jesu coróna Vírginum,
-Quem Mater illa cóncipit,
-Quæ sola Virgo párturit:
-Hæc vota clemens áccipe.
-_
-Qui pascis inter lília,
-Septus choréis Vírginum,
-Sponsus decórus glória,
-Sponsísque reddens prǽmia.
-_
-Quocúmque pergis, Vírgines
-Sequúntur, atque láudibus
-Post te canéntes cúrsitant,
-Hymnósque dulces pérsonant.
-_
-Te deprecámur lárgius,
-Nostris adáuge sénsibus
-Nescíre prorsus ómnia
-Corruptiónis vúlnera.
-_
-Laus, honor, virtus, glória
-Deo Patri, et Fílio,
-Sancto simul Paráclito,
-In sæculórum sǽcula. Amen.
-
 [Hymnus Vespera]
 {:H-Jesucoronavirginum:}v. Jesu, coróna Vírginum,
 Quem Mater illa cóncipit
@@ -69,6 +43,9 @@ Deo Patri cum Fílio,
 Sancto simul Paráclito,
 In sæculórum sǽcula.
 Amen.
+
+[HymnusM Vespera]
+@:Hymnus Vespera:s/pergis/pascis/ s/tendis/pergis/ s/súpplices/lárgius/ s/ut addas/adáuge/ s/Virtus, honor, laus/Laus, honor, virtus/ s/cum/et/
 
 [Versum 1]
 V. Spécie tua et pulchritúdine tua.
@@ -102,7 +79,9 @@ Quo tibi puri resonémus almum
 Péctoris hymnum.
 _
 Glória Patri genitǽque Proli,
-Et tibi compar utriúsque semper Spíritus alme, Deus unus, omni Témpore sæcli.
+Et tibi compar utriúsque semper
+Spíritus alme, Deus unus, omni
+ Témpore sæcli
 Amen.
 
 [Hymnus Matutinum]

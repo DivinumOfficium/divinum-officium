@@ -15,7 +15,7 @@ Ista est speciósa * inter fílias Jerúsalem.;;147
 [Capitulum Vespera]
 !Sir 51:1-3
 v. Confitébor tibi, Dómine, Rex, et collaudábo te Deum Salvatórem meum. Confitébor nómini tuo: quóniam adjútor et protéctor factus es mihi, et liberásti corpus meum a perditióne.
-$Deo gratias.
+$Deo gratias
 
 [Hymnus Vespera]
 {:H-Tristeserantapostoli:}v. Fortem viríli péctore
@@ -43,6 +43,9 @@ Ejúsque soli Fílio,
 Cum Spíritu Paráclito,
 Nunc, et per omne sǽculum. 
 Amen.
+
+[HymnusM Vespera]
+@:Hymnus Vespera:s/sancto/Christi/
 
 [Versum 1]
 @Commune/C6

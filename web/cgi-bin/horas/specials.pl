@@ -1790,7 +1790,7 @@ sub tryoldhymn {
   my %source = %$source;
   my $name = shift;
   $name1 = $name;
-  $name1 =~ s/Hymnus/HymnusM/;
+  $name1 =~ s/Hymnus\S*/$&M/;
 
   if ($version =~ /(Monastic|1570)/i && $name =~ /Hymnus/i && exists($source{$name1})) {
     return $source{$name1};
