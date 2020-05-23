@@ -17,63 +17,17 @@ Serve bone * et fidélis, intra in gáudium Dómini tui.;;116
 v. Beátus vir, qui invéntus est sine mácula, et qui post aurum non ábiit, nec sperávit in pecúnia et thesáuris. Quis est hic, et laudábimus eum? fecit enim mirabília in vita sua.
 $Deo gratias
 
-[Hymnus1 Vespera]
-@Commune/C4:Hymnus1 Vespera
+[HymnusM Vespera]
+@Commune/C4:HymnusM Vespera
 
 [Hymnus Vespera]
 @Commune/C4:Hymnus Vespera
 
-[Hymnus Vespera](rubrica 1570)
-v. Iste Conféssor Dómini sacrátus,
-Festa plebs cujus célebrat per orbem,
-Hódie lætus méruit secréta
-Scándere cæli.
-_
-Qui pius, prudens, húmilis, pudícus,
-Sóbrius, castus fuit et quiétus,
-Vita dum præsens vegetávit ejus
-Córporis artus.
-_
-Ad sacram cujus túmulum frequénter
-Membra languéntem modo sanitáti,
-Quólibet morbo fúerint graváta,
-Restituúntur.
-_
-Unde nunc noster chorus in honórem
-Ipsius, hymnum canit hunc libénter:
-Ut piis ejus méritis iuvémur
-Omne per ævum.
-_
-Sit salus illi, decus atque virtus,
-Qui supra cæli résidens cacúmen,
-Tótius mundi máchinam gubérnat
-Trinus et unus. Amen.
+[Hymnus1M Vespera]
+@Commune/C4:HymnusM Vespera:s/Hódie lætus méruit secréta/Hac die lætus méruit suprémos/ s/Scándere cæli/Laudis honóres/
 
-[Hymnus1 Vespera](rubrica 1570)
-v. Iste Conféssor Dómini sacrátus,
-Festa plebs cujus célebrat per orbem,
-Hac die lætus méruit suprémos
-Laudis honóres.
-_
-Qui pius, prudens, húmilis, pudícus,
-Sóbrius, castus fuit et quiétus,
-Vita dum præsens vegetávit ejus
-Córporis artus.
-_
-Ad sacram cujus túmulum frequénter
-Membra languéntem modo sanitáti,
-Quólibet morbo fúerint graváta,
-Restituúntur.
-_
-Unde nunc noster chorus in honórem
-Ipsius, hymnum canit hunc libénter:
-Ut piis ejus méritis iuvémur
-Omne per ævum.
-_
-Sit salus illi, decus atque virtus,
-Qui supra cæli résidens cacúmen,
-Tótius mundi máchinam gubérnat
-Trinus et unus. Amen.
+[Hymnus1 Vespera]
+@Commune/C4:Hymnus1 Vespera
 
 [Versum 1]
 @Commune/C4
@@ -218,7 +172,7 @@ Serve bone * et fidélis, intra in gáudium Dómini tui.
 [Capitulum Laudes]
 @:Capitulum Vespera
 
-[Hymnus Laudes](rubrica 1570)
+[HymnusM Laudes]
 v. Jesu coróna célsior,
 Et véritas sublímior,
 Qui confiténti sérvulo
@@ -257,7 +211,8 @@ _
 Glória Patri Dómino,
 Glória Unigénito,
 Una cum Sancto Spíritu,
-In sempitérna sǽcula. Amen.
+In sempitérna sǽcula.
+Amen.
 
 [Hymnus Laudes]
 {:H-Jesucoronacelsior:}v. Jesu, coróna célsior,
