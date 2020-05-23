@@ -209,7 +209,7 @@ sub getrank {
 
   # Handle transfers
   my $vtrans =
-      ($version =~ /newcal/i) ? '1960'
+      ($version =~ /newcal/i) ? 'Newcal'
     : ($version =~ /Divino/i) ? 'DA'
     : ($version =~ /(1955|1960)/) ? '1960'
     : ($version =~ /monastic/i) ? 'M'
