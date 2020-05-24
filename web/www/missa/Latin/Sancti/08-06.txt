@@ -7,7 +7,9 @@ In Transfiguratione Domini Nostri Jesu Christi;;Duplex II classis;;5;;
 [Rule]
 Gloria
 Credo
-Prefatio=Nat (sed non rubrica 1960)
+Prefatio=Nat
+(rubrica 1960)
+Prefatio=Communis
 Festum Domini
 
 [Introitus]
