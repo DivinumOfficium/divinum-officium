@@ -193,7 +193,7 @@ sub getrank {
     : ($version =~ /newcal/i) ? 'NC'
     : ($version =~ /1955/) ? 1955
     : ($version =~ /1960/) ? 1960
-    : 1954;
+    : 1960;
   our %kalendar = undef;
   our $kalendarkey = '';
 
@@ -215,7 +215,7 @@ sub getrank {
     : ($version =~ /monastic/i) ? 'M'
     : ($version =~ /1570/) ? '1570'
     : ($version =~ /1910/) ? 1910
-    : 'DA';
+    : '1960';
 
   if ($vtrans && (@lines = do_read("$datafolder/../horas/Latin/Tabulae/Tr$vtrans.txt"))) {
     my $tr = join('', @lines);
