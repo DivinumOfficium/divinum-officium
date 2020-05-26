@@ -1,0 +1,12 @@
+@Sancti/06-20
+
+[Rule]
+vide C3;
+OPapaM=Silverio;
+1 et 2 lectiones 
+
+[Lectio2]
+@Sancti/06-20:Lectio93:s/\. Por este.*/./s
+
+[Lectio93]
+@Sancti/06-20:Lectio93:s/.*\. Por este/Por este/
