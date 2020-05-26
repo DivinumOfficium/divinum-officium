@@ -190,6 +190,7 @@ sub getrank {
       ($version =~ /Monastic/i) ? 'M'
     : ($version =~ /1570/) ? 1570
     : ($version =~ /Trident/i) ? 1888
+    : ($version =~ /Divino/i) ? '1954'
     : ($version =~ /newcal/i) ? 'NC'
     : ($version =~ /1955/) ? 1955
     : ($version =~ /1960/) ? 1960
