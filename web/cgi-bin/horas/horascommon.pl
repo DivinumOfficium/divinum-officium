@@ -1118,10 +1118,8 @@ sub precedence {
     $commemoratio = $commemoratio1 = $dayname[2] = '';
   }
   
-  if ($version =~ /1960/ && $sday !~ /(05\-11|05\-31)/ && $winner == /Pasc5-3/i) {
-      $commemoratio = '';
-      %commemoratio = undef;
-      $dayname[2] = '';
+  if ($version =~ /1960/ && $sday !~ /(05\-11|05\-31)/ && $winner =~ /Pasc5-3/i) {
+     $commemoratio = $commemoratio1 = $dayname[2] = '';
   }
 
   if ($commemoratio) {
