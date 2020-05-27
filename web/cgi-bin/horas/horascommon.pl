@@ -293,8 +293,8 @@ sub getrank {
       #$tvesp = 1;
       %tn1 = %{officestring($datafolder, $lang1, "$tn1.txt", 1)};
 
-#      if ($tn1{Rank} =~ /(Feria|Vigilia|infra octavam|Quat[t]*uor)/i && $tn1{Rank} !~ /in octava/i
-#        && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
+      if ($tn1{Rank} =~ /(Feria|Vigilia|infra octavam|Quat[t]*uor)/i && $tn1{Rank} !~ /in octava/i
+       && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
       if ( $tn1{Rank} =~ /(Feria|Sabbato|infra octavam)/i
         && $tn1{Rank} !~ /in octava/i
         && $tn1{Rank} !~ /Dominica/i)
@@ -1083,7 +1083,7 @@ sub precedence {
     # In the feriae where the octave of the Epiphany used to be, the
     # Mass is of the Epiphany ('Ecce advenit') before the Sunday, and
     # of I. Sunday after the Epiphany ('In excelso throno') afterwards.
-    if ( $version =~ /1955|1960/
+    if ( $version =~ /1955|1960|Newcal/
       && $missa
       && $dayname[0] =~ /Epi1/i
       && $winner =~ /01\-([0-9]+)/
