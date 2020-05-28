@@ -190,6 +190,7 @@ sub getrank {
       ($version =~ /Monastic/i) ? 'M'
     : ($version =~ /1570/) ? 1570
     : ($version =~ /Trident/i) ? 1888
+    : ($version =~ /Divino/i) ? '1954'
     : ($version =~ /newcal/i) ? 'NC'
     : ($version =~ /1955/) ? 1955
     : ($version =~ /1960/) ? 1960
@@ -292,8 +293,8 @@ sub getrank {
       #$tvesp = 1;
       %tn1 = %{officestring($datafolder, $lang1, "$tn1.txt", 1)};
 
-#      if ($tn1{Rank} =~ /(Feria|Vigilia|infra octavam|Quat[t]*uor)/i && $tn1{Rank} !~ /in octava/i
-#        && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
+      if ($tn1{Rank} =~ /(Feria|Vigilia|infra octavam|Quat[t]*uor)/i && $tn1{Rank} !~ /in octava/i
+       && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
       if ( $tn1{Rank} =~ /(Feria|Sabbato|infra octavam)/i
         && $tn1{Rank} !~ /in octava/i
         && $tn1{Rank} !~ /Dominica/i)
@@ -1082,7 +1083,7 @@ sub precedence {
     # In the feriae where the octave of the Epiphany used to be, the
     # Mass is of the Epiphany ('Ecce advenit') before the Sunday, and
     # of I. Sunday after the Epiphany ('In excelso throno') afterwards.
-    if ( $version =~ /1955|1960/
+    if ( $version =~ /1955|1960|Newcal/
       && $missa
       && $dayname[0] =~ /Epi1/i
       && $winner =~ /01\-([0-9]+)/
@@ -1115,12 +1116,6 @@ sub precedence {
 
   if ($version =~ /1960/ && $winner{Rule} =~ /No Sunday commemoratio/i && $dayofweek == 0) {
     $commemoratio = $commemoratio1 = $dayname[2] = '';
-  }
-  
-  if ($version =~ /1960/ && $sday !~ /(05\-11|05\-31)/ && $winner == /Pasc5-3/i) {
-      $commemoratio = '';
-      %commemoratio = undef;
-      $dayname[2] = '';
   }
 
   if ($commemoratio) {
