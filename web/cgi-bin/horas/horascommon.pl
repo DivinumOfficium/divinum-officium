@@ -388,7 +388,7 @@ sub getrank {
       || $saint{Rule} =~ /Matutinum et Laudes Defunctorum/)
     );
 
-  if ($version =~ /(1955|1960)/) {
+  if ($version =~ /(1955|1960|Newcal)/) {
     if ($srank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|12\-24)/) { $srank = ''; }
     if ($srank =~ /(infra octavam|in octava)/i && nooctnat()) { $srank = ''; }
   }    #else {if ($srank =~ /Simplex/i) {$srank = '';}}
@@ -446,7 +446,7 @@ sub getrank {
     }
     @crank = split(";;", $crank);
 
-    if ($version =~ /(1955|1960)/) {
+    if ($version =~ /(1955|1960|Newcal)/) {
       if ($crank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|08\-24)/) { $crank = ''; }
       if ($crank =~ /octav/i && $crank !~ /cum Octav/i && $crank[2] < 6) { $crank = ''; }
     }
@@ -466,7 +466,7 @@ sub getrank {
       $cname = '';
       @crank = undef;
     }    #exception for nov 2
-    if ($srank =~ /vigilia/i && ($version !~ /1960/ || $sname !~ /08\-09/)) { $srank[2] = 0; $srank = ''; }
+    if ($srank =~ /vigilia/i && ($version !~ /(1960|Newcal)/ || $sname !~ /08\-09/)) { $srank[2] = 0; $srank = ''; }
 
     # Restrict I. Vespers in 1955/1960. In particular, in 1960, II. cl.
     # feasts have I. Vespers if and only if they're feasts of the Lord.
@@ -559,19 +559,19 @@ sub getrank {
   }
 
   #Newcal optional
-  if (
-       $version =~ /newcal/i
-    && $testmode =~ /seasonal/i
-    && ($srank[2] < 3
-      || ($dayname[0] =~ /Quad[1-6]/i && $srank[2] < 5))
-    )
-  {
-    $srank = $sname = $crank = $cname = '';
-    %saint = %csaint = undef;
-    @srank = @crank = '';
-  }
-  $commemoratio = $commemoratio1 = $communetype = $commune = $commemorated = $dayname[2] = $scriptura = '';
-  $comrank = 0;
+#  if (
+#       $version =~ /newcal/i
+#   && $testmode =~ /seasonal/i
+#   && ($srank[2] < 3
+#      || ($dayname[0] =~ /Quad[1-6]/i && $srank[2] < 5))
+#    )
+#  {
+#    $srank = $sname = $crank = $cname = '';
+#    %saint = %csaint = undef;
+#    @srank = @crank = '';
+#  }
+#  $commemoratio = $commemoratio1 = $communetype = $commune = $commemorated = $dayname[2] = $scriptura = '';
+#  $comrank = 0;
   if ($version =~ /Trid/i && $trank[2] < 5.1 && $trank[0] =~ /Dominica/i) { $trank[2] = 2.9; }
   if ($version =~ /Monastic/i && $trank[2] < 5.1 && $trank[0] =~ /Dominica/i) { $trank[2] = 4.9; }
 
@@ -617,7 +617,7 @@ sub getrank {
       && $crank !~ /;;[2-7]/
       && $srank !~ /;;[5-7]/
       && $crank !~ /Vigil/i
-      && $version !~ /1960/
+      && $version !~ /(1960|Newcal)/
       && $saint{Rule} !~ /BMV/i
       && $trank !~ /;;[2-7]/
       && $srank !~ /in Octav/i)
@@ -791,7 +791,7 @@ sub getrank {
           && $trank[2] < 2
           && $srank[0] !~ /Vigil/i
           && $csaint{Rank} !~ /Vigil/i
-          && $version !~ /1960/)
+          && $version !~ /(1960|Newcal)/)
       )
       )
     {
@@ -1096,7 +1096,7 @@ sub precedence {
     $rule = $winner{Rule};
   }
 
-  if ( $version !~ /(1960|monastic)/i
+  if ( $version !~ /(1960|Newcal|monastic)/i
     && exists($winner{'Oratio Vigilia'})
     && $dayofweek != 0
     && $hora =~ /Laudes/i)
@@ -1340,7 +1340,7 @@ sub precedence {
           && $winner{Rank} !~ /(Beatae|Sanctae) Mariae/i
       )
         || $rule =~ /Laudes 2/i
-        || ($winner{Rank} =~ /vigil/i && $version !~ /(1955|1960)/)
+        || ($winner{Rank} =~ /vigil/i && $version !~ /(1955|1960|Newcal)/)
       )
       ? 2
       : 1;
