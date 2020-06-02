@@ -586,7 +586,7 @@ sub getrank {
     $trank[2] = 4.9;
   }
 
-  if ($version =~ /1960|Monastic/i && $dayofweek == 0) {
+  if ($version =~ /1960/ && $dayofweek == 0) {
     if (($trank[2] >= 6 && $srank[2] < 6) || ($trank[2] >= 5 && $srank[2] < 5)) { $srank = ''; @srank = undef; }
   }
 
@@ -1790,7 +1790,7 @@ sub days_to_date1 {
 #*** nooctnat()
 # returns 1 for 1960 not Christmas Octave days
 sub nooctnat {
-  if ($version =~ /1960/ && ($month < 12 || $day < 25)) { return 1; }
+  if ($version =~ /1960|Monastic/i && ($month < 12 || $day < 25)) { return 1; }
   return 0;
 }
 
