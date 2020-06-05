@@ -50,6 +50,9 @@ Spíritus semper, Deus unus omni
 Témporis ævo. 
 Amen.
 
+[HymnusM Vespera]
+@:Hymnus Vespera:s/Sit decus/Glória/ s/Témporis ævo/Témpore sæcli/
+
 [Versum 1]
 V. Fuit homo missus a Deo.
 R. Cui nomen erat Joánnes.
@@ -66,7 +69,7 @@ $Per Dominum
 [Invit]
 Regem Præcursóris Dóminum, * Veníte, adorémus.
 
-[Hymnus Matutinum](rubrica 1570)
+[HymnusM Matutinum]
 v. Antra desérti téneris sub annis
 Cívium turmas fúgiens, petísti.
 Ne levi saltem maculáre vitam
@@ -250,31 +253,8 @@ Tu, puer, * Prophéta Altíssimi vocáberis; præíbis ante Dóminum paráre via
 [Capitulum Laudes]
 @:Capitulum Vespera
 
-[Hymnus Laudes](rubrica 1570)
-v. O nimis felix meritíque celsi,
-Nésciens labem nívei pudóris:
-Prǽpotens Martyr, eremíque cultor,
-Máxime Vatum.
-_
-Serta ter denis álios corónant
-Aucta creméntis, duplicáta quosdam:
-Trina centéno cumuláta fructu
-Te sacer ornant.
-_
-Nunc potens nostri méritis opímis
-Péctoris duros lápides repélle:
-Asperum planans iter, et refléxos
-Dírige calles.
-_
-Ut pius mundi Sator et Redémptor,
-Méntibus pulsa livióne puris,
-Rite dignétur véniens sacratós
-Pónere gressus.
-_
-Láudibus cives célebrent supérni
-Te Deus simplex, paritérque trine:
-Súpplices et nos véniam precámur,
-Parce redémptis. Amen.
+[HymnusM Laudes]
+@:Hymnus Laudes:s/te fructu cumuláta centum/centéno cumuláta fructu/ s/Néxibus/Te sacer/ s/revélle/repélle:/ s/culpæ sine labe/pulsa livióne/ s/beátos/sacratós/
 
 [Hymnus Laudes]
 v. O nimis felix, meritíque celsi,

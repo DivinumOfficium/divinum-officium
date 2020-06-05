@@ -471,7 +471,7 @@ sub getrank {
     # Restrict I. Vespers in 1955/1960. In particular, in 1960, II. cl.
     # feasts have I. Vespers if and only if they're feasts of the Lord.
     if ( ($version =~ /1955/ && $crank[2] < 5)
-      || ($version =~ /1960/ && $crank[2] < (($csaint{Rule} =~ /Festum Domini/i && $dayofweek == 6) ? 5 : 6)))
+      || ($version =~ /1960|Monastic/i && $crank[2] < (($csaint{Rule} =~ /Festum Domini/i && $dayofweek == 6) ? 5 : 6)))
     {
       $crank = '';
       @crank = ();
@@ -576,7 +576,7 @@ sub getrank {
   if ($version =~ /Monastic/i && $trank[2] < 5.1 && $trank[0] =~ /Dominica/i) { $trank[2] = 4.9; }
 
   if (
-    $version =~ /1960/
+    $version =~ /1960|Monastic/i
     && ( floor($trank[2]) == 3
       || $dayname[0] =~ /Quad[1-5]/i
       || ($dayname[0] =~ /quadp3/i && $dayofweek >= 3))
@@ -1790,7 +1790,7 @@ sub days_to_date1 {
 #*** nooctnat()
 # returns 1 for 1960 not Christmas Octave days
 sub nooctnat {
-  if ($version =~ /1960/ && ($month < 12 || $day < 25)) { return 1; }
+  if ($version =~ /1960|Monastic/i && ($month < 12 || $day < 25)) { return 1; }
   return 0;
 }
 
