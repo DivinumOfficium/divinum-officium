@@ -200,6 +200,9 @@ sub resolve_refs {
     #cross
     $line = setcross($line);
 
+    # add dot if missing in Antiphona
+    $line =~ s/(\w)$/$&./ if ($line =~ /^\s*Ant\./);
+
     #red prefix
     if ($line =~ /^\s*(R\.br\.|R\.|V\.|Ant\.|Benedictio\.* |Absolutio\.* )(.*)/) {
       my $h = $1;
