@@ -4,9 +4,6 @@ Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;5;;ex Pasc7-0
 [Rank1960]
 Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[RankNewcal]
-Sabbato post Pentecostes;;Feria;;1;;
-
 [Rule]
 Gloria
 (rubrica 1960 et missa brevior) LectioL1
@@ -129,6 +126,9 @@ in ætérnum.
 
 [Sequentia]
 @Tempora/Pasc7-0:Sequentia
+
+[Sequentia](missa longior)
+@Tempora/Pasc7-0:Sequentia::s/Allelúja.//
 
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Lucam
