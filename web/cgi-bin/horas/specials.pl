@@ -284,7 +284,7 @@ sub specials {
     if ($item =~ /Capitulum/i && $hora =~ /(Laudes|Vespera)/i) {
       my %capit = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};
       my $name = major_getname(1);
-      if ($version =~ /monastic/i) { $name =~ s/Day[0-5]M/DayFM/i; }
+      if ($version =~ /monastic/i) { $name =~ s/Day[1-5]M/DayFM/i; }
       my $capit = $capit{$name};
       my $name = major_getname();
       my $hymn = '';
