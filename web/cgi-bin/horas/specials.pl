@@ -916,7 +916,7 @@ sub psalmi_major {
     if ($hora =~ /Laudes/i && $dayname[0] =~ /Pasc/i && $head =~ /Daym0/i) { $head = 'DaymP'; }
     @psalmi = split("\n", $psalmi{"$head $hora"});
 
-    if ($hora =~ /Laudes/i && $head =~ /Daym\d/) {
+    if ($hora =~ /Laudes/i && $head =~ /Daym[1-6]/) {
       $sday = get_sday($month, $day, $year);
       unless ( (($dayname[0] =~ /Adv|Quadp/) && ($duplex < 3) && ($commune !~ /C10/))
                || (($dayname[0] =~ /Quad\d/) && ($dayname[1] =~ /Feria/))
