@@ -1,0 +1,38 @@
+[Rank]
+Die septima post Nativitatem;;Semiduplex;;5.8;;ex Sancti/12-25
+
+[Rule]
+ex Sancti/12-25;
+9 lectiones
+CPapaC=Silvestre;
+
+[Commemoratio]
+!Conmemoración de S. Silvestre, Papa
+@Commune/C4:Oratio Gregem
+
+[Lectio1]
+@Sancti/12-31:Lectio1
+
+[Responsory1]
+@Sancti/12-25:Responsory2
+
+[Lectio2]
+@Sancti/12-31:Lectio2
+
+[Responsory2]
+@Sancti/12-25:Responsory3
+
+[Lectio3]
+@Sancti/12-31:Lectio3
+
+[Responsory3]
+@Sancti/12-25:Responsory4
+
+[Lectio4]
+@Sancti/12-31:Lectio4
+
+[Lectio5]
+@Sancti/12-31:Lectio5
+
+[Lectio6]
+@Sancti/12-31:Lectio6
