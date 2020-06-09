@@ -25,6 +25,10 @@ div.container_main {
   margin: 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .do_title {
   font-family: canterbury;
   font-size: 60pt;
