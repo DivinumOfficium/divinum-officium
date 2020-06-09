@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 use utf8;
 
-# Name : Laszlo Kiss
+# name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office
 package horas;
@@ -10,7 +10,7 @@ package horas;
 #use warnings;
 #use strict "refs";
 #use strict "subs";
-#use warnings FATAL=>qw(all);
+#use warnings FaTaL=>qw(all);
 
 use POSIX;
 use FindBin qw($Bin);
@@ -35,11 +35,11 @@ our $missa = 0;
 our $officium = 'officium.pl';
 our $version = 'Rubrics 1960';
 
-@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
+@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
 
 #***common variables arrays and hashes
 #filled  getweek()
-our @dayname;    #0=Advn|Natn|Epin|Quadpn|Quadn|Pascn|Pentn 1=winner title|2=other title
+our @dayname;    #0=advn|Natn|Epin|Quadpn|Quadn|Pascn|Pentn 1=winner title|2=other title
 
 #filled by getrank()
 our $winner;     #the folder/filename for the winner of precedence
@@ -198,18 +198,18 @@ our $octavam = '';    #to avoid duplication of commemorations
 # prepare title
 $daycolor =
     ($commune =~ /(C1[0-9])/) ? "blue"
-  : ($dayname[1] =~ /(Cathedra|oann|Pasch|Confessor|Ascensio|Vigilia Nativitatis|Cena)/i) ? "black"
+  : ($dayname[1] =~ /(Cathedra|oann|Pasch|Confessor|ascensio|Vigilia Nativitatis|Cena)/i) ? "black"
   : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
-  : ($dayname[1] =~ /(Pentecostes|Evangel|Martyr|Innocentium|Cruc|Apostol)/i) ? "red"
+  : ($dayname[1] =~ /(Pentecostes|Evangel|Martyr|Innocentium|Cruc|apostol)/i) ? "red"
   : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
-  : ($dayname[1] =~ /(Quattuor|Vigilia|Passionis|Quadragesima|Hebdomadæ Sanctæ|Septuagesim|Sexagesim|Quinquagesim|Ciner|Adventus)/i) ? "purple"
+  : ($dayname[1] =~ /(Quattuor|Vigilia|Passionis|Quadragesima|Hebdomadæ Sanctæ|Septuagesim|Sexagesim|Quinquagesim|Ciner|adventus)/i) ? "purple"
   : "black";
 build_comment_line();
 
 #prepare main pages
 my $h = $hora;
 
-if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Post|Setup)/i) {
+if ($h =~ /(ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Post|Setup)/i) {
   $h = " $1";
 } else {
   $h = '';
@@ -235,12 +235,12 @@ my @local = splice(@local, @local);
 #  my @a = readdir(DIR);
 #  close DIR;
 #  foreach my $item (@a) {
-#    if ($item =~ /K([A-Z]+)/) {push (@local, $1);}
+#    if ($item =~ /K([a-Z]+)/) {push (@local, $1);}
 #  }
 #  unshift(@local, 'none');
 #}
 if ($command =~ /kalendar/) {    # kalendar widget
-  print "Access-Control-Allow-Origin: *\n";
+  print "access-Control-allow-Origin: *\n";
   print "Content-type: text/html; charset=utf-8\n";
   print "\n";
   $headline = setheadline();
@@ -251,14 +251,16 @@ if ($command =~ /kalendar/) {    # kalendar widget
   #generate HTML
   htmlHead($title, 2);
   print << "PrintTag";
-<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="startup();">
+<body vlink=$visitedlink LINK=$link onload="startup();">
+<link rel="stylesheet" href="../../www/style/main.css" />
+<link rel="stylesheet" href="../../www/style/normalize.css" />
 <script>
 // https redirect
 if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
     location.replace(`https:\${location.href.substring(location.protocol.length)}`);
 }
 </script>
-<FORM ACTION="$officium" METHOD=post TARGET=_self>
+<form aCTION="$officium" METHOD=post TaRGET=_self>
 PrintTag
 
   if ($command =~ /setup(.*)/i) {
@@ -271,21 +273,21 @@ PrintTag
     $title = $command;
     $hora = $command;
     if (substr($title, -1) =~ /a/i) { $title .= 'm'; }
-    $head = ($title =~ /(Ante|Post)/i) ? "$title divinum officium" : "Ad $title";
-    $head =~ s/Ad Vesperam/Ad Vesperas/i;
+    $head = ($title =~ /(ante|Post)/i) ? "$title divinum officium" : "ad $title";
+    $head =~ s/ad Vesperam/ad Vesperas/i;
     $headline = setheadline();
     headline($head);
 
     #eval($setup{'parameters'});
-    $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
+    # $background = ($whitebground) ? "BGcolor=\"white\"" : "BaCKGROUND=\"../../www/horas/horasbg.jpg\"";
     horas($command);
     print << "PrintTag";
-<P ALIGN=CENTER>
-<INPUT TYPE=SUBMIT NAME='button' VALUE='$hora persolut.' onclick="okbutton();">
-</P>
-<INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
-<INPUT TYPE=HIDDEN NAME=popup VALUE="">
-<INPUT TYPE=HIDDEN NAME=popuplang VALUE="">
+<p align=center>
+<input type=SUBMIT name='button' value='$hora persolut.' onclick="okbutton();">
+</p>
+<input type=hidden name=expandnum value="">
+<input type=hidden name=popup value="">
+<input type=hidden name=popuplang value="">
 PrintTag
   } else {    #mainpage
     $pmode = 'main';
@@ -295,30 +297,31 @@ PrintTag
     $headline = setheadline();
     headline($title);
     print << "PrintTag";
-<P ALIGN=CENTER>
-<TABLE BORDER=0 HEIGHT=$height><TR>
-<TD ALIGN=CENTER><FONT COLOR=MAROON>Ordinarium</FONT></TD>
-<TD ALIGN=CENTER><FONT COLOR=MAROON>Psalterium</FONT></TD>
-<TD ALIGN=CENTER><FONT COLOR=MAROON>Proprium de Tempore</FONT></TD>
+<p align=center>
+<table border=0 HEIGHT=$height><TR>
+<TD align=center><font color=MaROON>Ordinarium</font></TD>
+<TD align=center><font color=MaROON>Psalterium</font></TD>
+<TD align=center><font color=MaROON>Proprium de Tempore</font></TD>
 
-</TR><TR><TD ALIGN=CENTER ROWSPAN=2>
-<IMG SRC="$htmlurl/breviarium.jpg" HEIGHT=$height ALT=""></TD>
-<TD HEIGHT=50% VALIGN=MIDDLE ALIGN=CENTER>
-<IMG SRC="$htmlurl/psalterium.jpg" HEIGHT=$height2 ALT=""></TD>
-<TD HEIGHT=50% VALIGN=MIDDLE ALIGN=CENTER>
-<IMG SRC="$htmlurl/tempore.jpg" HEIGHT=$height2 ALT=""></TD>
+</TR><TR><TD align=center ROWSPaN=2>
+<!-- "htmlurl" not used for image links because of slow rendering -->
+<IMG SRC="../../www/horas/breviarium.jpg" HEIGHT=$height aLT=""></TD>
+<TD HEIGHT=50% Valign=MIDDLE align=center>
+<IMG SRC="../../www/horas/psalterium.jpg" HEIGHT=$height2 aLT=""></TD>
+<TD HEIGHT=50% Valign=MIDDLE align=center>
+<IMG SRC="../../www/horas/tempore.jpg" HEIGHT=$height2 aLT=""></TD>
 </TR><TR>
-<TD HEIGHT=50% VALIGN=MIDDLE ALIGN=CENTER>
-<IMG SRC="$htmlurl/commune.jpg" HEIGHT=$height2 ALT=""></TD>
-<TD HEIGHT=50% VALIGN=MIDDLE ALIGN=CENTER>
-<IMG SRC="$htmlurl/sancti.jpg" HEIGHT=$height2 ALT=""></TD>
+<TD HEIGHT=50% Valign=MIDDLE align=center>
+<IMG SRC="../../www/horas/commune.jpg" HEIGHT=$height2 aLT=""></TD>
+<TD HEIGHT=50% Valign=MIDDLE align=center>
+<IMG SRC="../../www/horas/sancti.jpg" HEIGHT=$height2 aLT=""></TD>
 </TR><TR>
-<TD ALIGN=CENTER><FONT COLOR=RED></FONT></TD>
-<TD ALIGN=CENTER><FONT COLOR=MAROON>Commune Sanctorum</FONT></TD>
-<TD ALIGN=CENTER><FONT COLOR=MAROON>Proprium Sanctorum</FONT></TD>
-</TR></TABLE>
+<TD align=center><font color=RED></font></TD>
+<TD align=center><font color=MaROON>Commune Sanctorum</font></TD>
+<TD align=center><font color=MaROON>Proprium Sanctorum</font></TD>
+</TR></table>
 <BR>
-</P>
+</p>
 PrintTag
   }
 
@@ -326,116 +329,116 @@ PrintTag
   if ($pmode =~ /(main|hora)/i) {
     if ($votive ne 'C9') {
       print << "PrintTag";
-<P ALIGN=CENTER><I><FONT SIZE=+1>
-<A HREF=# onclick="hset('Matutinum');"><FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
+<p align=center><I><font size=+1>
+<a href=# onclick="hset('Matutinum');">$horas[1]</a>
 &nbsp;&nbsp;
-<A HREF=# onclick="hset('Laudes');"><FONT COLOR=$hcolor[2]>$horas[2]</FONT></A>
+<a href=# onclick="hset('Laudes');">$horas[2]</a>
 &nbsp;&nbsp;
-<A HREF=# onclick="hset('Prima');"><FONT COLOR=$hcolor[3]>$horas[3]</FONT></A>
+<a href=# onclick="hset('Prima');">$horas[3]</a>
 &nbsp;&nbsp;
-<A HREF=# onclick="hset('Tertia');"><FONT COLOR=$hcolor[4]>$horas[4]</FONT></A>
+<a href=# onclick="hset('Tertia');">$horas[4]</a>
 &nbsp;&nbsp;
-<A HREF=# onclick="hset('Sexta');"><FONT COLOR=$hcolor[5]>$horas[5]</FONT></A>
+<a href=# onclick="hset('Sexta');">$horas[5]</a>
 &nbsp;&nbsp;
-<A HREF=# onclick="hset('Nona');"><FONT COLOR=$hcolor[6]>$horas[6]</FONT></A>
+<a href=# onclick="hset('Nona');">$horas[6]</a>
 &nbsp;&nbsp;
-<A HREF=# onclick="hset('Vespera');"><FONT COLOR=$hcolor[7]>$horas[7]</FONT></A>
+<a href=# onclick="hset('Vespera');">$horas[7]</a>
 &nbsp;&nbsp;
-<A HREF=# onclick="hset('Completorium');"><FONT COLOR=$hcolor[8]>$horas[8]</FONT></A>
-</I></P>
+<a href=# onclick="hset('Completorium');">$horas[8]</a>
+</I></p>
 PrintTag
     } else {
       print << "PrintTag";
-<P ALIGN=CENTER><I>
-<A HREF=# onclick="hset('Matutinum');"><FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
+<p align=center><i>
+<a href=# onclick="hset('Matutinum');">$horas[1]</a>
 &nbsp;&nbsp;
-<A HREF=# onclick="hset('Laudes');"><FONT COLOR=$hcolor[2]>$horas[2]</FONT></A>
+<a href=# onclick="hset('Laudes');">$horas[2]</a>
 &nbsp;&nbsp;
-<A HREF=# onclick="hset('Vespera');"><FONT COLOR=$hcolor[7]>$horas[7]</FONT></A>
+<a href=# onclick="hset('Vespera');">$horas[7]</a>
 &nbsp;&nbsp;
-</I></P>
+</i></p>
 PrintTag
     }
-    $ch1 = ($expand =~ /all/i) ? 'SELECTED' : '';
-    $ch2 = ($expand =~ /psalms/i) ? 'SELECTED' : '';
+    $ch1 = ($expand =~ /all/i) ? 'selectED' : '';
+    $ch2 = ($expand =~ /psalms/i) ? 'selectED' : '';
 
-    #  $ch3 = ($expand =~ /nothing/i) ? 'SELECTED' : '';
-    #  $ch4 = ($expand =~ /skeleton/i) ? 'SELECTED' : '';
+    #  $ch3 = ($expand =~ /nothing/i) ? 'selectED' : '';
+    #  $ch4 = ($expand =~ /skeleton/i) ? 'selectED' : '';
     @chv = splice(@chv, @chv);
     if (-e "$Bin/monastic.pl") { unshift(@versions, 'Monastic'); }
-    for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'SELECTED' : ''; }
+    for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'selectED' : ''; }
     print << "PrintTag";
-<P ALIGN=CENTER>
+<p align=center>
 &nbsp;&nbsp;&nbsp;
-<LABEL FOR=expand CLASS=offscreen>Expand</LABEL>
-<SELECT ID=expand NAME=expand SIZE=2 onchange="parchange();">
-<OPTION $ch1 VALUE='all'>all
-<OPTION $ch2 VALUE='psalms'>psalms
-</SELECT>
+<label FOR=expand class=offscreen>Expand</label>
+<select ID=expand name=expand size=2 onchange="parchange();">
+<option $ch1 value='all'>all
+<option $ch2 value='psalms'>psalms
+</select>
 &nbsp;&nbsp;&nbsp;
 PrintTag
     my $vsize = @versions;
-    print "<LABEL FOR=version CLASS=offscreen>Version</LABEL>";
-    print "<SELECT ID=version NAME=version SIZE=$vsize onchange=\"parchange();\">\n";
-    for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
-    print "</SELECT>\n";
+    print "<label FOR=version class=offscreen>Version</label>";
+    print "<select ID=version name=version size=$vsize onchange=\"parchange();\">\n";
+    for ($i = 0; $i < @versions; $i++) { print "<option $chv[$i] value=\"$versions[$i]\">$versions[$i]\n"; }
+    print "</select>\n";
 
     #if ($savesetup > 1) {
-    #my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
-    #my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
-    #my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
-    #my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
-    #my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
+    #my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'selectED' : '';
+    #my $sel11 = ($testmode =~ /Seasonal/i) ? 'selectED' : '';
+    #my $sel12 = ($testmode =~ /^Season$/i) ? 'selectED' : '';
+    #my $sel13 = ($testmode =~ /Saint/i) ? 'selectED' : '';
+    #my $sel14 = ($testmode =~ /Common/i) ? 'selectED' : '';
     #  print << "PrintTag";
     #&nbsp;&nbsp;&nbsp;
-    #<SELECT NAME=testmode SIZE=4 onchange="parchange();">
-    #<OPTION $sel10 VALUE='Regular'>Regular
-    #<OPTION $sel11 VALUE='Seasonal'>Seasonal
-    #<OPTION $sel12 VALUE='Season'>Season
-    #<OPTION $sel13 VALUE='Saint'>Saint
-    #<OPTION $sel14 VALUE='Common'>Common
-    #</SELECT>
+    #<select name=testmode size=4 onchange="parchange();">
+    #<option $sel10 value='Regular'>Regular
+    #<option $sel11 value='Seasonal'>Seasonal
+    #<option $sel12 value='Season'>Season
+    #<option $sel13 value='Saint'>Saint
+    #<option $sel14 value='Common'>Common
+    #</select>
     #PrintTag
     #} else {
-    #my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
-    #my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
+    #my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'selectED' : '';
+    #my $sel11 = ($testmode =~ /Seasonal/i) ? 'selectED' : '';
     #  print << "PrintTag";
     #&nbsp;&nbsp;&nbsp;
-    #<SELECT NAME=testmode SIZE=2 onchange="parchange();">
-    #<OPTION $sel10 VALUE='Regular'>Regular
-    #<OPTION $sel11 VALUE='Seasonal'>Seasonal
-    #</SELECT>
+    #<select name=testmode size=2 onchange="parchange();">
+    #<option $sel10 value='Regular'>Regular
+    #<option $sel11 value='Seasonal'>Seasonal
+    #</select>
     #PrintTag
     #}
-    $sel1 = '';    #($date1 eq gettoday()) ? 'SELECTED' : '';
-    $sel2 = ($votive =~ /C8/) ? 'SELECTED' : '';
-    $sel3 = ($votive =~ /C9/) ? 'SELECTED' : '';
-    $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
+    $sel1 = '';    #($date1 eq gettoday()) ? 'selectED' : '';
+    $sel2 = ($votive =~ /C8/) ? 'selectED' : '';
+    $sel3 = ($votive =~ /C9/) ? 'selectED' : '';
+    $sel4 = ($votive =~ /C12/) ? 'selectED' : '';
     $addvotive =
       ($version !~ /monastic/i)
       ? "&nbsp;&nbsp;&nbsp;\n"
-      . "<LABEL FOR=votive CLASS=offscreen>Votive</LABEL>"
-      . "<SELECT ID=votive NAME=votive SIZE=4 onchange='parchange()'>\n"
-      . "<OPTION $sel1 VALUE='Hodie'>Hodie\n"
-      . "<OPTION $sel2 VALUE=C8>Dedicatio\n"
-      . "<OPTION $sel3 VALUE=C9>Defunctorum\n"
-      . "<OPTION $sel4 VALUE=C12>Parvum B.M.V.\n"
-      . "</SELECT>\n"
+      . "<label FOR=votive class=offscreen>Votive</label>"
+      . "<select ID=votive name=votive size=4 onchange='parchange()'>\n"
+      . "<option $sel1 value='Hodie'>Hodie\n"
+      . "<option $sel2 value=C8>Dedicatio\n"
+      . "<option $sel3 value=C9>Defunctorum\n"
+      . "<option $sel4 value=C12>Parvum B.M.V.\n"
+      . "</select>\n"
       : '';
 
     if (@local) {
       my @lsel = splice(@lsel, @lsel);
 
       for ($i = 0; $i < @local; $i++) {
-        $lsel[$i] = ($local[$i] =~ /$local/i) ? 'SELECTED' : '';
+        $lsel[$i] = ($local[$i] =~ /$local/i) ? 'selectED' : '';
       }
       my $sizelocal = (@local > 7) ? 7 : @local;
-      $addlocal = "&nbsp;&nbsp;&nbsp;\n<SELECT NAME=local SIZE=$sizelocal onchange='parchange()'>\n";
+      $addlocal = "&nbsp;&nbsp;&nbsp;\n<select name=local size=$sizelocal onchange='parchange()'>\n";
 
       for ($i = 0; $i < @local; $i++) {
-        $addlocal .= "<OPTION $lsel[$i] VALUE=$local[$i]>$local[$i]\n";
+        $addlocal .= "<option $lsel[$i] value=$local[$i]>$local[$i]\n";
       }
-      $addlocal .= "</SELECT>\n";
+      $addlocal .= "</select>\n";
     }
     my @languages = ('Latin', vernaculars($datafolder));
     my $lang_count = @languages;
@@ -443,32 +446,28 @@ PrintTag
     $vers =~ s/ /_/g;
     print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
-<LABEL FOR=lang2 CLASS=offscreen>Language</LABEL>
-<SELECT ID=lang2 NAME=lang2 SIZE=$lang_count onchange="parchange()">
+<label FOR=lang2 class=offscreen>Language</label>
+<select ID=lang2 name=lang2 size=$lang_count onchange="parchange()">
 PrintTag
 
     foreach my $lang (@languages) {
-      my $sel = ($lang2 =~ /$lang/i) ? 'SELECTED' : '';
-      print qq(<OPTION $sel VALUE="$lang">$lang\n);
+      my $sel = ($lang2 =~ /$lang/i) ? 'selectED' : '';
+      print qq(<option $sel value="$lang">$lang\n);
     }
     print << "PrintTag";
-</SELECT>
+</select>
 $addvotive
-$addlocal<BR>
-<P ALIGN=CENTER><FONT SIZE=+1>
-<A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/credits.html" TARGET="_BLANK">Credits</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/download.html" TARGET="_BLANK">Download</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/technical.html" TARGET="_BLANK">Technical</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/help.html" TARGET="_BLANK">Help</A>
-</FONT>
-</P>
+$addlocal
+<br>
+<div class="horizontal_rule"></div>
+<footer class="footer">
+  <a href="../../www/horas/Help/versions.html">Versions</a>
+  <a href="../../www/horas/Help/credits.html">Credits</a>
+  <a href="../../www/horas/Help/download.html">Download</a>
+  <a href="../../www/horas/Help/rubrics.html">Rubrics</a>
+  <a href="../../www/horas/Help/technical.html">Technical</a>
+  <a href="../../www/horas/Help/help.html">Help</a>
+</footer>
 PrintTag
 
     if ($building && $buildscript) {
@@ -477,35 +476,35 @@ PrintTag
       $buildscript =~ s/\_//g;
       $buildscript =~ s/\,\,\,/\&nbsp\;\&nbsp\;\&nbsp\;/g;
       print << "PrintTag";
-<TABLE BORDER=3 ALIGN=CENTER WIDTH=60% CELLPADDING=8><TR><TD ID=L$searchind>
+<table border=3 align=center width=60% cellpadding=8><TR><TD ID=L$searchind>
 $buildscript
-</TD></TR><TABLE><BR>
+</TD></TR><table><BR>
 PrintTag
     }
   }
 
   #common end for programs
-  if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
-  if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
+  if ($error) { print "<p align=center><font color=red>$error</font></p>\n"; }
+  if ($debug) { print "<p align=center><font color=blue>$debug</font></p>\n"; }
   $command =~ s/(pray|setup)//ig;
   print << "PrintTag";
-<INPUT TYPE=HIDDEN NAME=setup VALUE="$setupsave">
-<INPUT TYPE=HIDDEN NAME=command VALUE="$command">
-<INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
-<INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">
-<INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
-<INPUT TYPE=HIDDEN NAME=accented VALUE="$accented">
-<INPUT TYPE=HIDDEN NAME=caller VALUE='0'>
-<INPUT TYPE=HIDDEN NAME='notes' VALUE="$notes">
-</FORM>
-</BODY></HTML>
+<input type=hidden name=setup value="$setupsave">
+<input type=hidden name=command value="$command">
+<input type=hidden name=searchvalue value="0">
+<input type=hidden name=officium value="$officium">
+<input type=hidden name=browsertime value="$browsertime">
+<input type=hidden name=accented value="$accented">
+<input type=hidden name=caller value='0'>
+<input type=hidden name='notes' value="$notes">
+</form>
+</body></HTML>
 PrintTag
 }
 
 #*** headline2($head) prints just two lines of header (for widget)
 sub headline2 {
   my $head = shift;
-  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
+  $headline =~ s{!(.*)}{<font size=1>$1</font>}s;
   $comment =~ s/([\w]+)=([\w+-]+)/$1="$2"/g;
   print "<p><span style='text-align:center;color:$daycolor'>$headline<br/></span>";
   print "<span>$comment<BR/><BR/></span></p>";
@@ -514,25 +513,25 @@ sub headline2 {
 #*** headline($head) prints headline for main and pray
 sub headline {
   my $head = shift;
-  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
+  $headline =~ s{!(.*)}{<font size=1>$1</font>}s;
   print << "PrintTag";
-<P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
+<p align=center><font color=$daycolor>$headline<BR></font>
 $comment<BR><BR>
-<FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
-&nbsp;<FONT COLOR=RED SIZE=+1>$version</FONT></P>
-<P ALIGN=CENTER><A HREF="Cofficium.pl">Compare</A>
-&nbsp;&nbsp;&nbsp;<A HREF=# onclick="callmissa();">Sancta Missa</A>
+<font color=MaROON size=+1><B><I>$head</I></B></font>
+&nbsp;<font color=RED size=+1>$version</font></p>
+<p align=center><a href="Cofficium.pl">Compare</a>
+&nbsp;&nbsp;&nbsp;<a href=# onclick="callmissa();">Sancta Missa</a>
 &nbsp;&nbsp;&nbsp;
-<LABEL FOR=date CLASS=offscreen>Date</LABEL>
-<INPUT TYPE=TEXT ID=date NAME=date VALUE="$date1" SIZE=10>
-<A HREF=# onclick="prevnext(-1)">&darr;</A>
-<INPUT TYPE=submit NAME=SUBMIT VALUE=" " onclick="parchange();">
-<A HREF=# onclick="prevnext(1)">&uarr;</A>
+<label FOR=date class=offscreen>Date</label>
+<input type=TEXT ID=date name=date value="$date1" size=10>
+<a href=# onclick="prevnext(-1)">&darr;</a>
+<input type=submit name=SUBMIT value=" " onclick="parchange();">
+<a href=# onclick="prevnext(1)">&uarr;</a>
 &nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callkalendar();">Ordo</A>
+<a href=# onclick="callkalendar();">Ordo</a>
 &nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="pset('parameters')">Options</A>
-</P>
+<a href=# onclick="pset('parameters')">Options</a>
+</p>
 PrintTag
 }
 
@@ -544,7 +543,7 @@ sub horasjs {
   my $caller_flag = $caller || 0;
   print << "PrintTag";
 
-<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
+<SCRIPT type='text/JavaScript' LaNGUaGE='JavaScript1.2'>
 
 //position
 function startup() {
@@ -619,7 +618,7 @@ function linkit(name,ind,lang) {
   document.forms[0].expandnum.value=ind;
   if (ind == 0) {
      document.forms[0].action = 'popup.pl';
-     document.forms[0].target = '_BLANK';
+     document.forms[0].target = '_BLaNK';
   } else {
      var c = document.forms[0].command.value;
      if (!c.match('pray')) document.forms[0].command.value = "pray" + c;
@@ -662,7 +661,7 @@ function callmissa() {
 function prevnext(ch) {
   var dat = document.forms[0].date.value;
   var adat = dat.split('-');
-  var mtab = new Array(31,28,31,30,31,30,31,31,30,31,30,31);
+  var mtab = new array(31,28,31,30,31,30,31,31,30,31,30,31);
   var m = eval(adat[0]);
   var d = eval(adat[1]);
   var y = eval(adat[2]);

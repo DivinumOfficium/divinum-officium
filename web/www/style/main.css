@@ -47,6 +47,10 @@ a:hover {
   text-align: center;
 }
 
+select {
+  border-radius: 3px;
+}
+
 @media screen and (max-width: 1000px) {
   body {
     padding: 10px;
