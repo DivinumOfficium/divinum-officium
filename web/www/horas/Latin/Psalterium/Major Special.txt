@@ -1705,9 +1705,7 @@ R. Amen.
 $Fidelium animae
 
 [Day0M Laudes]
-!Apo 7:12
-v. Benedíctio, et claritas, et sapiéntia, et gratiárum actio, honor, virtus, et fortitúdo Deo nostro in sæcula sæculórum. Amen.
-$Deo gratias
+@:Day0 Laudes
 _
 R.br. Inclína cor meum, Deus, * In testimónia tua. 
 R. Inclína cor meum, Deus, in testimónia tua. 
@@ -1717,9 +1715,7 @@ R. In testimónia tua.
 R. Inclína cor meum, Deus, * in testimónia tua.
 
 [DayFM Laudes]
-!Rom 13:12-13
-v. Nox præcéssit, dies autem appropinquávit. Abjiciamus ergo ópera tenebrárum, et induamur arma lucis. Sicut in die honeste ambulémus.
-$Deo gratias
+@:Day1 Laudes
 _
 R.br. Sana ánimam meam, * quia peccávi tibi.
 R. Sana ánimam meam, * quia peccávi tibi.
@@ -1729,21 +1725,10 @@ R. Quia peccávi tibi.
 R. Sana ánimam meam, * quia peccávi tibi.
 
 [Day6M Laudes]
-!Rom 13:12-13
-v. Nox præcéssit, dies autem appropinquávit. Abjiciamus ergo ópera tenebrárum, et induamur arma lucis. Sicut in die honeste ambulémus.
-$Deo gratias
-_
-R.br. Sana ánimam meam, * quia peccávi tibi.
-R. Sana ánimam meam, * quia peccávi tibi.
-Ego dixi: Dómine, miserére mei
-R. Quia peccávi tibi.
-&Gloria
-R. Sana ánimam meam, * quia peccávi tibi.
+@:DayFM Laudes
 
 [Day0M Vespera]
-!2 Cor 1:3-4
-v. Benedíctus Deus, et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolationis, qui consolátur nos in omni tribulatióne nostra.
-$Deo gratias
+@:Day0 Vespera
 _
 R.br. Quam magnificáta sunt * ópera tua, Dómine.
 R. Quam magnificáta sunt * ópera tua, Dómine.
@@ -1753,9 +1738,7 @@ R. Ópera tua Dómine.
 R. Quam magnificáta sunt * ópera tua, Dómine.
 
 [DayFM Vespera]
-!2 Cor 1:3-4
-v. Benedíctus Deus, et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolationis, qui consolátur nos in omni tribulatióne nostra.
-$Deo gratias
+@:Day0 Vespera
 _
 R.br. Benedícam Dóminum * In omni témpore.
 R. Benedícam Dóminum * In omni témpore.
@@ -1765,9 +1748,7 @@ R. In omni témpore.
 R. Benedícam Dóminum * In omni témpore.
 
 [Day6M Vespera]
-!Rom 11:33
-v. O Altitúdo divitiárum sapiéntiæ, et sciéntiæ Dei quam incomprehensibilia sunt judícia ejus, et investigábiles viæ ejus!
-$Deo gratias
+@:Day6 Vespera
 _
 R.br. Magnus Dóminus noster, * et magna virtus ejus.
 R. Magnus Dóminus noster, * et magna virtus ejus.
@@ -1777,9 +1758,7 @@ R. Et magna virtus ejus.
 R. Magnus Dóminus noster, * et magna virtus ejus.
 
 [AdvM Laudes]
-!Isa 2:3
-v. Veníte, ascendámus ad montem Dómini, et ad Domum Dei Jacob, et docébit nos vias suas, et ambulabimus in sémitis ejus: quia de Sion exíbit lex, et verbum Dómini de Jerúsalem.
-$Deo gratias
+@:Adv Laudes
 _
 R.br. Veni ad liberándum nos * Dómine Deus virtútum.
 R. Veni ad liberándum nos * Dómine Deus virtútum.
@@ -1789,9 +1768,7 @@ R. Dómine Deus virtútum.
 R. Veni ad liberándum nos * Dómine Deus virtútum.
 
 [AdvM Vespera]
-!Gen 49:10
-v. Non auferátur sceptrum de Juda, et dux de fémore ejus, donec véniat qui mitténdus est; et ipse erit expectatio géntium.
-$Deo gratias
+@:Adv Vespera
 _
 R.br. Osténde nobis Dómine * Misericórdiam tuam.
 R. Osténde nobis Dómine * Misericórdiam tuam.
@@ -1801,9 +1778,7 @@ R. Misericórdiam tuam.
 R. Osténde nobis Dómine * Misericórdiam tuam.
 
 [QuadM Laudes]
-!Isa 58:1
-v. Clama ne cesses quasi tuba exálta vocem tuam et annúntia pópulo meo scélera eórum et dómui Jacob peccáta eórum
-$Deo gratias
+@:Quad Laudes
 _
 R.br. Ipse liberávit me * de láqueo venántium.
 R. Ipse liberávit me * de láqueo venántium.
@@ -1813,9 +1788,7 @@ R. De láqueo venántium.
 R. Ipse liberávit me * de láqueo venántium
 
 [QuadM Vespera]
-!Joel 2:17
-v. Inter vestíbulum et altáre plorábunt sacerdótes, minístri Dómini, et dicent: parce, Dómine, parce pópulo tuo: et ne des hereditátem tuam in oppróbrium, ut dominéntur eis natiónes.
-$Deo gratias
+@:Quad Vespera
 _
 R.br. Scápulis suis * obumbrábit tibi.
 R. Scápulis suis * obumbrábit tibi.
@@ -1825,9 +1798,7 @@ R. Obumbrábit tibi.
 R. Scápulis suis * obumbrábit tibi.
 
 [Quad5M Laudes]
-!Jer 11:19
-v. Veníte, mittamus lignum in panem ejus, et eradamus eum de terra vivéntium, et nomen ejus non memorétur ámplius.
-$Deo gratias
+@:Quad5 Laudes
 _
 R.br. Érue a frámea * Deus ánimam meam.
 R. Érue a frámea * Deus ánimam meam
@@ -1836,9 +1807,7 @@ R. Deus ánimam meam.
 R. Érue a frámea * Deus ánimam meam.
 
 [Quad5M Vespera]
-!Jer 11:20
-v. Tu autem Dómine Sábaoth qui júdicas juste et probas renes et cor vídeam ultiónem tuam ex eis tibi enim revelavi causam meam Dómine Deus meus.
-$Deo gratias
+@:Quad5 Vespera
 _
 R.br. De ore leónis * líbera me, Dómine.
 R. De ore leónis * líbera me, Dómine.
@@ -1847,9 +1816,7 @@ R. Líbera me, Dómine.
 R. De ore leónis * líbera me, Dómine.
 
 [PaschM Laudes]
-!Rom 6:9-10
-v. Christus resúrgens ex mórtuis iam non móritur, mors illi ultra non dominábitur. Quod enim mórtuus est peccáto, mórtuus est semel: quod autem vivit, vivit Deo.
-$Deo gratias
+@:Pasch Laudes
 _
 R.br. Surrexit Dóminus de sepúlcro: * Allelúja, allelúja.
 R. Surrexit Dóminus de sepúlcro: * Allelúja, allelúja.
@@ -1859,16 +1826,7 @@ R. Allelúja, allelúja.
 R. Surrexit Dóminus de sepúlcro: * Allelúja, allelúja.
 
 [PaschM Vespera]
-!Rom 6:9-10
-v. Christus resurgens ex mórtuis iam non móritur, mors illi ultra non dominábitur. Quod enim mórtuus est peccáto, mórtuus est semel: quod autem vivit, vivit Deo.
-$Deo gratias
-_
-R.br. Surrexit Dóminus vere, * allelúja, allelúja.
-R. Surrexit Dóminus vere, * allelúja, allelúja.
-V. Et appáruit Simóni.
-R. Allelúja, allelúja.
-&Gloria
-R. Surrexit Dóminus vere, * allelúja, allelúja.
+@:PaschM Laudes
 
 [LitaniaM]
 @:Litania
