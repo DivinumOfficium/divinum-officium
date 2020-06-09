@@ -20,7 +20,7 @@ div.container_main {
   padding: 30px;
   font-size: 20pt;
   padding-top: 30px;
-  color: red;
+  color: black;
   font-variant: small-caps;
   margin: 0;
 }
@@ -80,4 +80,12 @@ div.image_aside {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1000px) {
+  .do_title {
+    font-family: canterbury;
+    font-size: 3em;
+    margin: 0;
+  }
 }

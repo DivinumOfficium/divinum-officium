@@ -46,3 +46,9 @@ a:hover {
 .centered_text {
   text-align: center;
 }
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 10px;
+  }
+}
