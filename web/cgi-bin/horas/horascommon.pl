@@ -456,10 +456,10 @@ sub getrank {
     #infra octav concurrent with infra octav = crank deleted
     @crank = split(";;", $crank);
 
-    if ($version !~ /1960/ && $srank && $crank && ($tname =~ /Quadp3\-3/i || $tname =~ /Quad6\-[1-3]/i)) {
+    if ($version !~ /1960|Newcal/ && $srank && $crank && ($tname =~ /Quadp3\-3/i || $tname =~ /Quad6\-[1-3]/i)) {
       $srank[2] = 1;
     }
-    if ($version !~ /1960/ && $crank && ($tname =~ /Quadp3\-2/i || $tname =~ /Quad6\-[1-3]/i)) { $crank[2] = 1; }
+    if ($version !~ /1960|Newcal/ && $crank && ($tname =~ /Quadp3\-2/i || $tname =~ /Quad6\-[1-3]/i)) { $crank[2] = 1; }
 
     if ($crank =~ /infra octav/i && $srank =~ /infra octav/i) {
       $crank = '';
@@ -476,13 +476,13 @@ sub getrank {
       $crank = '';
       @crank = ();
     }
-    if ($trank[2] >= (($version =~ /(1955|1960)/) ? 6 : 7) && $crank[2] < 6) { $crank = ''; @crank = undef; }
+    if ($trank[2] >= (($version =~ /(1955|1960|Newcal)/) ? 6 : 7) && $crank[2] < 6) { $crank = ''; @crank = undef; }
 
     if ($version !~ /1960|Trident/ && $hora =~ /Completorium/i && $month == 11 && $day == 1 && $dayofweek != 6) {
       $crank[2] = 7;
       $crank =~ s/;;[0-9]/;;7/;
       $srank = '';
-    } elsif (($version !~ /1960/ || $dayofweek == 6)
+    } elsif (($version !~ /1960|Newcal/ || $dayofweek == 6)
       && $hora =~ /(Vespera|Completorium)/i
       && $month == 11
       && $srank =~ /Omnium Fidelium defunctorum/i
@@ -576,7 +576,7 @@ sub getrank {
   if ($version =~ /Monastic/i && $trank[2] < 5.1 && $trank[0] =~ /Dominica/i) { $trank[2] = 4.9; }
 
   if (
-    $version =~ /1960|Monastic/i
+    $version =~ /1960|Newcal|Monastic/i
     && ( floor($trank[2]) == 3
       || $dayname[0] =~ /Quad[1-5]/i
       || ($dayname[0] =~ /quadp3/i && $dayofweek >= 3))
@@ -727,7 +727,7 @@ sub getrank {
     if (transfered($tname)) {    #&& !$vflag)
       if ($hora !~ /Completorium/i) { $dayname[2] = "Transfer $trank[0]"; }
       $commemoratio = '';
-    } elsif ($version =~ /1960/ && $winner{Rule} =~ /Festum Domini/i && $trank =~ /Dominica/i) {
+    } elsif ($version =~ /1960|Newcal/ && $winner{Rule} =~ /Festum Domini/i && $trank =~ /Dominica/i) {
       $trank = '';
       @trank = undef;
 
@@ -742,7 +742,7 @@ sub getrank {
       }
       $commemoratio = $tname;
 
-      if ($cname && $version !~ /1960/) {
+      if ($cname && $version !~ /1960|Newcal/) {
         { $commemoratio1 = $cname; }    #{$commemoratio = $cname; $commemoratio1 = $tname;}
       }
       $comrank = $trank[2];
