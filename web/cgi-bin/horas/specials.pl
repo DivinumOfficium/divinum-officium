@@ -1522,7 +1522,7 @@ sub commemoratio {
   if ($rank >= 5 && $w =~ /!.*?Octav/i && $winner =~ /Sancti/i && $hora =~ /Vespera/i && nooctnat()) { return; }
 
   if ( $w
-    && $version =~ /1955|1960/
+    && $version =~ /1955|1960|Newcal/
     && $w =~ /!.*?Vigil/i
     && $ite =~ /Sancti/i
     && $ite !~ /(08\-14|06\-23|06\-28|08\-09)/)
