@@ -32,7 +32,7 @@ RUN mkdir -p /var/run/apache2 /var/lock/apache2 /var/log/apache2 ; chown -R www-
 WORKDIR /var/www
 COPY --chown=www-data:www-data web /var/www/web
 
-# Write Build Info
+# Write build info to be available at $url/buildinfo
 RUN echo "Build date: `date`" > /var/www/web/buildinfo
 
 # Expose default port
