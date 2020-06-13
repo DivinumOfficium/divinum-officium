@@ -1584,7 +1584,7 @@ sub setheadline {
       $rankname = 'Simplex';
     } elsif ($version =~ /1960|Monastic/i && $winner =~ /Pasc6-6/) {
       $rankname = 'I. classis';
-    } elsif ($version =~ /1960/ && $month == 12 && $day > 16 && $day < 25 && $dayofweek > 0) {
+    } elsif ($version =~ /1960|Newcal/ && $month == 12 && $day > 16 && $day < 25 && $dayofweek > 0) {
       $rankname = 'II. classis';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
       $rankname = ($rank =~ 7) ? 'Duplex I. classis' : 'Semiduplex';
