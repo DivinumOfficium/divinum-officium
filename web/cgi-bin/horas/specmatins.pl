@@ -1163,7 +1163,7 @@ use constant {
 sub gettype1960 {
   my $type = LT1960_DEFAULT;
 
-  if ($version =~ /1960/ && $votive !~ /(C9|Defunctorum)/i) {
+  if ($version =~ /1960|Newcal/ && $votive !~ /(C9|Defunctorum)/i) {
     if ($dayname[1] =~ /post Nativitatem/i) {
       $type = LT1960_OCTAVEII;
     } elsif ($rank < 2 || $dayname[1] =~ /(feria|vigilia|die)/i) {

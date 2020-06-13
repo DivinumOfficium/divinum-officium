@@ -471,7 +471,7 @@ sub getrank {
     # Restrict I. Vespers in 1955/1960. In particular, in 1960, II. cl.
     # feasts have I. Vespers if and only if they're feasts of the Lord.
     if ( ($version =~ /1955/ && $crank[2] < 5)
-      || ($version =~ /1960|Monastic/i && $crank[2] < (($csaint{Rule} =~ /Festum Domini/i && $dayofweek == 6) ? 5 : 6)))
+      || ($version =~ /1960|Newcal|Monastic/i && $crank[2] < (($csaint{Rule} =~ /Festum Domini/i && $dayofweek == 6) ? 5 : 6)))
     {
       $crank = '';
       @crank = ();
@@ -541,7 +541,7 @@ sub getrank {
       }
     }
 
-    if ($tvesp == 1 && $version =~ /(1955|1960)/) {
+    if ($tvesp == 1 && $version =~ /(1955|1960|Newcal)/) {
       if ((($trank[2] >= 6 && $srank[2] < 5) || ($trank[2] >= 5 && $srank[2] < 3))
         && $srank[0] !~ /Octav.*?(Epiph|Nativ|Corporis|Cordis|Ascensionis)/i)
       {
@@ -634,7 +634,7 @@ sub getrank {
     }
   }
   if ($trank[2] == 2 && $trank[0] =~ /infra octav/i) { $srank[2] += .1; }
-  if ($testmode =~ /seasonal/i && $version =~ /1960/ && $srank[2] < 5 && $dayname[0] =~ /Adv/i) { $srank[2] = 1; }
+  if ($testmode =~ /seasonal/i && $version =~ /1960|Newcal/ && $srank[2] < 5 && $dayname[0] =~ /Adv/i) { $srank[2] = 1; }
 
   # Flag to indicate whether office is sanctoral or temporal. Assume the
   # latter unless we find otherwise.
