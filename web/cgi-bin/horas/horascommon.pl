@@ -602,7 +602,7 @@ sub getrank {
       $tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
       $scriptura = $tname;
       if ($scriptura =~ /^\.txt/i) { $scriptura = $sname; }
-      $tname = "Tempora/$C10.txt";
+      $tname = "$communename/$C10.txt";
 
       if ($version =~ /Trident/i) {
         $tempora{Rank} =~ s/C10/C10t/;
@@ -623,7 +623,7 @@ sub getrank {
       && $srank !~ /in Octav/i)
     {
       $tempora{Rank} = $trank = 'Sanctae Mariae Sabbato;;Feria;;1.9;;vide C10';
-      $tname = "Tempora/C10.txt";
+      $tname = "$communename/C10.txt";
 
       if ($version =~ /Trident/i) {
         $tempora{Rank} =~ s/C10/C10t/;
@@ -797,7 +797,7 @@ sub getrank {
     {
       $tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
       $scriptura = $tname;
-      $tname = "Tempora/$C10.txt";
+      $tname = "$communename/$C10.txt";
 
       if ($version =~ /Trident/i) {
         $tempora{Rank} =~ s/C10/C10t/;
@@ -1521,7 +1521,7 @@ sub climit1960 {
   # Subsume commemoration in special case 7-16 with Common 10 (BVM in Sabbato)
   return 0 if $c =~ /7-16/ && $winner =~ /C10/;
   my %w = updaterank(setupstring($datafolder, 'Latin', $winner));
-  if ($winner !~ /tempora/i) { return 1; }
+  if ($winner !~ /tempora|C10/i) { return 1; }
   my %c = updaterank(setupstring($datafolder, 'Latin', $c));
   my @r = split(';;', $c{Rank});
 
