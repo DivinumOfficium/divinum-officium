@@ -471,7 +471,7 @@ sub getrank {
     # Restrict I. Vespers in 1955/1960. In particular, in 1960, II. cl.
     # feasts have I. Vespers if and only if they're feasts of the Lord.
     if ( ($version =~ /1955/ && $crank[2] < 5)
-      || ($version =~ /1960|Monastic/i && $crank[2] < (($csaint{Rule} =~ /Festum Domini/i && $dayofweek == 6) ? 5 : 6)))
+      || ($version =~ /1960|Newcal|Monastic/i && $crank[2] < (($csaint{Rule} =~ /Festum Domini/i && $dayofweek == 6) ? 5 : 6)))
     {
       $crank = '';
       @crank = ();
@@ -541,7 +541,7 @@ sub getrank {
       }
     }
 
-    if ($tvesp == 1 && $version =~ /(1955|1960)/) {
+    if ($tvesp == 1 && $version =~ /(1955|1960|Newcal)/) {
       if ((($trank[2] >= 6 && $srank[2] < 5) || ($trank[2] >= 5 && $srank[2] < 3))
         && $srank[0] !~ /Octav.*?(Epiph|Nativ|Corporis|Cordis|Ascensionis)/i)
       {
@@ -602,7 +602,7 @@ sub getrank {
       $tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
       $scriptura = $tname;
       if ($scriptura =~ /^\.txt/i) { $scriptura = $sname; }
-      $tname = "Tempora/$C10.txt";
+      $tname = "$communename/$C10.txt";
 
       if ($version =~ /Trident/i) {
         $tempora{Rank} =~ s/C10/C10t/;
@@ -623,7 +623,7 @@ sub getrank {
       && $srank !~ /in Octav/i)
     {
       $tempora{Rank} = $trank = 'Sanctae Mariae Sabbato;;Feria;;1.9;;vide C10';
-      $tname = "Tempora/C10.txt";
+      $tname = "$communename/C10.txt";
 
       if ($version =~ /Trident/i) {
         $tempora{Rank} =~ s/C10/C10t/;
@@ -634,7 +634,7 @@ sub getrank {
     }
   }
   if ($trank[2] == 2 && $trank[0] =~ /infra octav/i) { $srank[2] += .1; }
-  if ($testmode =~ /seasonal/i && $version =~ /1960/ && $srank[2] < 5 && $dayname[0] =~ /Adv/i) { $srank[2] = 1; }
+  if ($testmode =~ /seasonal/i && $version =~ /1960|Newcal/ && $srank[2] < 5 && $dayname[0] =~ /Adv/i) { $srank[2] = 1; }
 
   # Flag to indicate whether office is sanctoral or temporal. Assume the
   # latter unless we find otherwise.
@@ -797,7 +797,7 @@ sub getrank {
     {
       $tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
       $scriptura = $tname;
-      $tname = "Tempora/$C10.txt";
+      $tname = "$communename/$C10.txt";
 
       if ($version =~ /Trident/i) {
         $tempora{Rank} =~ s/C10/C10t/;
@@ -1521,7 +1521,7 @@ sub climit1960 {
   # Subsume commemoration in special case 7-16 with Common 10 (BVM in Sabbato)
   return 0 if $c =~ /7-16/ && $winner =~ /C10/;
   my %w = updaterank(setupstring($datafolder, 'Latin', $winner));
-  if ($winner !~ /tempora/i) { return 1; }
+  if ($winner !~ /tempora|C10/i) { return 1; }
   my %c = updaterank(setupstring($datafolder, 'Latin', $c));
   my @r = split(';;', $c{Rank});
 
@@ -1584,7 +1584,7 @@ sub setheadline {
       $rankname = 'Simplex';
     } elsif ($version =~ /1960|Monastic/i && $winner =~ /Pasc6-6/) {
       $rankname = 'I. classis';
-    } elsif ($version =~ /1960/ && $month == 12 && $day > 16 && $day < 25 && $dayofweek > 0) {
+    } elsif ($version =~ /1960|Newcal/ && $month == 12 && $day > 16 && $day < 25 && $dayofweek > 0) {
       $rankname = 'II. classis';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
       $rankname = ($rank =~ 7) ? 'Duplex I. classis' : 'Semiduplex';

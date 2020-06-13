@@ -453,7 +453,7 @@ sub votivenocturn {
       push(@s, "\n");
     }
   } else {
-    %mariae = %{setupstring($datafolder, $lang, "$temporaname/C10.txt")};
+    %mariae = %{setupstring($datafolder, $lang, "$communename/C10.txt")};
     @a = split("\n", $mariae{Benedictio});
     setbuild2('Special benedictio');
     push(@s, "Absolutio. $a[0]");
@@ -522,7 +522,7 @@ sub lectiones {
   }
 
   if ($rule =~ /Special Benedictio/) {
-    %mariae = %{setupstring($datafolder, $lang, "$temporaname/C10.txt")};
+    %mariae = %{setupstring($datafolder, $lang, "$communename/C10.txt")};
     @a = split("\n", $mariae{Benedictio});
     setbuild2('Special benedictio');
   }
@@ -784,8 +784,8 @@ sub lectio : ScriptFunc {
   }
 
   if ($commune{Rule} =~ /Special Lectio $num/) {
-    %mariae = %{setupstring($datafolder, $lang, "$temporaname/C10.txt")};
-    if ($version =~ /Trident/i) { %mariae = %{setupstring($datafolder, $lang, "$temporaname/C10t.txt")}; }
+    %mariae = %{setupstring($datafolder, $lang, "$communename/C10.txt")};
+    if ($version =~ /Trident/i) { %mariae = %{setupstring($datafolder, $lang, "$communename/C10t.txt")}; }
     $w = $mariae{sprintf("Lectio M%02i", $month)};
     if ($version !~ /1960/ && $month == 9 && $day > 8 && $day < 15) { $w = $mariae{"Lectio M101"}; }
     setbuild2("Lectio $num Mariae M$month");
@@ -1163,7 +1163,7 @@ use constant {
 sub gettype1960 {
   my $type = LT1960_DEFAULT;
 
-  if ($version =~ /1960/ && $votive !~ /(C9|Defunctorum)/i) {
+  if ($version =~ /1960|Newcal/ && $votive !~ /(C9|Defunctorum)/i) {
     if ($dayname[1] =~ /post Nativitatem/i) {
       $type = LT1960_OCTAVEII;
     } elsif ($rank < 2 || $dayname[1] =~ /(feria|vigilia|die)/i) {
