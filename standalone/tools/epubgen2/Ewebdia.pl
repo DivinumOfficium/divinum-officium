@@ -335,7 +335,7 @@ sub setfont {
   #return "$font$bold$italic$text$italice$bolde</SPAN>";
   $key="$color$size$bold$italic";
 
-  unless(exists($fontOverrides{$key})) {die "'$key'=>'' does not exist" ;}
+  #unless(exists($fontOverrides{$key})) {die "'$key'=>'' does not exist" ;}
 
   return "$fontOverrides{$key}$text$fontOverridesEnd{$key}";
 }
@@ -398,6 +398,7 @@ sub setcell {
 	}
 
   #remove auxiliary characters
+  $text =~ s/wait[0-9]+//ig;
   $text =~ s/\_/ /g;
   $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
   $text =~ s/\{\:.*?\:\}//sg;

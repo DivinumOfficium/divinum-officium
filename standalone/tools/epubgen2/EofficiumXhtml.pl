@@ -1,6 +1,5 @@
 #!/usr/bin/perl
 use utf8;
-# vim: set encoding=utf-8 :
 
 # Name : Stepan Srubar
 # Date : 2015-10-28
@@ -292,6 +291,8 @@ print << "PrintTag";
 <a href="$date1-7-Vespera.html">$horas[7]</a>
 &nbsp;&nbsp;
 <a href="$date1-8-Completorium.html">$horas[8]</a>
+<br />
+<a href="$date1-9-Missa.html">$horas[9]</a>
 </p>
 PrintTag
 } else {
@@ -358,6 +359,8 @@ $date1
 <a href="$date1-7-Vespera.html">$horas[7]</a>
 &nbsp;&nbsp;
 <a href="$date1-8-Completorium.html">$horas[8]</a>
+<br />
+<a href="$date1-9-Missa.html">$horas[9]</a>
 </p>
 PrintTag
 }
