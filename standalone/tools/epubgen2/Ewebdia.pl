@@ -349,17 +349,19 @@ sub setfont {
 # This version uses Unicode entities instead of small GIFs.
 sub setcross
 {
-    my $line = shift;
-    my $csubst = '<span class="rd">+</span>'; #the unicode symbols do not display correctly on some eReaders, just use plain + instead
     # Cross type 3: Cross of Lorraine
-    #my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x2628;</span>";
+    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x2628;</span>";
     $line =~ s/\+\+\+/$csubst/g;
     # Cross type 2: Greek Cross (Cross of Jerusalem)
-    #my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x2720;</span>";
+    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x2720;</span>";
     $line =~ s/\+\+/$csubst/g;
     # cross type 1: Latin Cross
-    #my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x271D;</span>";
+    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x271D;</span>";
     $line =~ s/ \+ / $csubst /g;
+
+    $line =~ s/>V\./>℣./g;
+    $line =~ s/>R\./>℟./g;
+
     return $line;
 }
 
