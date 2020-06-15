@@ -1567,7 +1567,7 @@ sub setheadline {
         'I. classis'
       );
       $rankname = ($version !~ /1960|Monastic/i) ? $tradtable[$rank] : $newtable[$rank];
-      if ($version =~ /(Divino|1955|1960|Newcal)/ && $dayname[1] =~ /feria/i) { $rankname = 'Feria'; }
+      if ($version =~ /(1955|1960|Newcal)/ && $dayname[1] =~ /feria/i) { $rankname = 'Feria'; }
 
       if ($name =~ /Dominica/i && $version !~ /1960|Monastic/i) {
         my $a = ($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i) ? getweek(1) : getweek(0);
