@@ -1,0 +1,189 @@
+[Name]
+Commune Doctore
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+Psalm5 Vespera=116
+Psalm5 Vespera3=131
+
+[Ant Vespera]
+@Commune/C4
+
+[Capitulum Vespera]
+@Commune/C4
+
+[Hymnus1 Vespera]
+@Commune/C4:Hymnus1 Vespera
+
+[Hymnus Vespera]
+@Commune/C4:Hymnus Vespera
+
+[Versum 1]
+@Commune/C4
+
+[Ant 1]
+¡Oh doctor admirable, * luz de la Iglesia santa, bienaventurado N., fiel cumplidor de la Ley!, ruega por nosotros al Hijo de Dios.
+
+[Invit]
+@Commune/C4
+
+[Hymnus Matutinum]
+@Commune/C4:Hymnus Vespera
+
+[Hymnus1 Matutinum]
+@Commune/C4:Hymnus1 Vespera
+
+[Ant Matutinum]
+@Commune/C4
+
+[Lectio1]
+Del Libro del Eclesiástico
+!Sir 39, 1-5
+1 El sabio indagará la sabiduría de todos los antiguos y hará estudio en los profetas. 
+2 Recogerá las explicaciones de los varones ilustres, y penetrará asimismo las agudezas de las parábolas. 
+3 Sacará el sentido oculto de los proverbios, y se ocupará en el estudio de las alegorías de los enigmas.
+4 Asistirá en medio de los magnates, y se presentará delante del que gobierna.
+5 Pasará a países de naciones extrañas, para reconocer aquello que hay de bueno y de malo entre los hombres.
+
+[Responsory1]
+@Commune/C4
+
+[Lectio2]
+!Sir 39, 6-10
+6 Despertando muy de mañana, dirigirá su corazón al Señor que le crio, y se pondrá en oración en la presencia del Altísimo. 
+7 Abrirá su boca para orar, y pedirá perdón de sus pecados.
+8 Que si aquel gran Señor quisiere, le llenará de espíritu de inteligencia, 
+9 y derramará sobre él como lluvia máximas de su sabiduría; y en la oración dará gracias al Señor. 
+10 Y pondrá en práctica sus consejos y documentos, y meditará sus ocultos juicios.
+
+[Responsory2]
+@Commune/C4
+
+[Lectio3]
+!Sir 39, 11-14
+11 Expondrá públicamente la doctrina que ha aprendido, y pondrá su gloria en la ley del testamento del Señor.
+12 Celebrarán muchos su sabiduría, la cual nunca jamás será olvidada. 
+13 No perecerá su memoria, y su nombre será repetido de generación en generación.
+14 Las naciones pregonarán su sabiduría, y la Iglesia celebrará sus alabanzas.
+
+[Responsory3]
+@Commune/C4
+
+[Lectio4]
+@Commune/C4
+
+[Responsory4]
+@Commune/C4
+
+[Lectio5]
+@Commune/C4
+
+[Responsory5]
+@Commune/C4
+
+[Lectio6]
+@Commune/C4
+
+[Responsory6]
+@Commune/C4
+
+[Lectio7]
+Lectura del santo Evangelio según San Mateo
+!Mt 5, 13-19
+En aquel tiempo: Dijo Jesús a sus discípulos: Vosotros sois la sal de la tierra. Y si la sal se hace insípida, ¿con qué se le volverá el sabor? Y lo que sigue.
+_
+Homilía de San Hilario, Obispo. 
+!Com. sobre San Mateo, can. 4
+“Vosotros sois la sal de la tierra”. Ahora bien, si la sal fuere insípida, nada valdría lo que se salara con ella. Según creo, no existe la sal en la tierra. ¿Cómo, pues, llamó a los Apóstoles sal de la tierra? A este fin debemos estudiar la propiedad de estas palabras, y para ello debemos fijarnos en el ministerio de los apóstoles, y en la naturaleza de la misma sal. La sal contiene en sí el elemento del agua y del
+fuego, y de ambos está formada.
+
+[Responsory7]
+@Commune/C4
+
+[Lectio8]
+El efecto de ésta al emplearse para el uso del humano linaje consiste en producir la incorrupción de los cuerpos, y es en gran manera apta para dar sabor a los alimentos. Ahora bien, los apóstoles son como los predicadores de las cosas celestiales y como los sembradores de la eternidad, que comunican la inmortalidad a todos los cuerpos sobre los cuales su palabra fuere derramada. Con razón, de consiguiente, fueron llamados sal de la tierra, en virtud de su doctrina, la cual a manera de sal conserva los cuerpos para la eternidad.
+
+[Responsory8]
+R. Abrió su boca en medio de la Iglesia; 
+* Y le llenó el Señor del Espíritu de sabiduría e inteligencia, 
+V. Le enriqueció de alegría y de exultación.
+R. Y le llenó el Señor del Espíritu de sabiduría e inteligencia.
+&Gloria
+R. Y le llenó el Señor del Espíritu de sabiduría e inteligencia.
+
+[Lectio9]
+Mas la naturaleza de la sal siempre es la misma; no puede mudarse jamás. Pero porque el hombre está sujeto a mudanzas, y solo es dichoso aquel que hasta el fin permane en todas las obras de Dios, por lo mismo a los apóstoles, designados con el nombre de sal, se les amonesta a que perseveren en la virtud de la potestad que les ha sido confiada, no sea que se vuelvan insípidos, y para nada sirvan, o que perdiendo el sentimiento del sabor recibido, no vivifiquen lo que está corrompido, y que, arrojados de la Iglesia sean pisados por aquellos a quienes comunicasen su insipidez.
+&teDeum
+
+[Ant Laudes]
+@:Ant Vespera
+
+[Capitulum Laudes]
+@:Capitulum Vespera
+
+[Hymnus Laudes]
+@Commune/C4:Hymnus Laudes
+
+[Versum 2]
+@Commune/C4
+
+[Ant 2]
+@Commune/C4
+
+[Oratio]
+Concede nos, quǽsumus, omnipotens Deus, beati N. confessoris tui atque Pontificis monita et exempla sectari: ut per terrestrium rerum conceptum aeterna gaudia consequamur.
+$Per Dominum
+
+[Oratio1]
+@Commune/C4
+
+[Oratio2]
+@Commune/C4
+
+[Oratio3]
+v. Te pedimos, Dios todopoderoso, que al celebrar la fiesta de San N., obispo, aumente nuestro celo por servirte, y crezca en nosotros tu obra de salvación. 
+$Per Dominum.
+
+[Lectio Prima]
+@Commune/C4
+
+[Capitulum Tertia]
+@:Capitulum Vespera
+
+[Responsory Tertia]
+@Commune/C4
+
+[Capitulum Sexta]
+@Commune/C4
+
+[Responsory Sexta]
+@Commune/C4
+
+[Capitulum Nona]
+@Commune/C4
+
+[Responsory Nona]
+@Commune/C4
+
+[Versum 3]
+@:Versum 2
+
+[Ant 3]
+@:Ant 1
+
+[Lectio72]
+Lectura del santo Evangelio según San Mateo 
+!Mt 5, 13-19
+En aquel tiempo: Dijo Jesús a sus discípulos: Vosotros sois la sal de la tierra. Y si la sal se hace insípida, ¿con qué se le volverá el sabor? Y lo que sigue.
+_
+Homilía de San Juan Crisóstomo. 
+!Homilía 15 sobre San Mateo, después del medio.
+Ved lo que dijo Jesús: “Vosotros sois la sal de la tierra”; con lo cual manifestó la necesidad de dar preceptos a los apóstoles. En efecto, dijo que no tan sólo habían de dar cuenta de su vida, sino de todo el mundo. No os envío a dos ciudades, a diez o veinte, ni a un solo pueblo, como enviaba a los profetas, sino a toda la tierra y a todos los mares, y a todo el mundo; a este mundo abatido bajo el peso de multitud de crímenes.
+
+[Lectio82]
+Al decir: “Vosotros sois la sal de la tierra”, muestra que toda la naturaleza humana se había vuelto insípida y corrompida por la fuerza de los pecados. Por lo mismo, exige de ellos aquellas virtudes que son tan necesarias y útiles para procurar la salud de muchos. Pues aquel que es pacífico y modesto, misericordioso y justo, no se limita a tener encerradas estas virtudes tan sólo dentro de sí mismo, sino que procura que estas excelentes fuentes manen también en utilidad de los otros. Aquel que tiene el corazón limpio y pacífico, y sufre la persecución por la justicia, ordena su vida para el bien de todos.
+
+[Lectio92]
+Por eso dijo, no penséis que habéis de ser conducidos a luchas fáciles, ni que debáis dar cuenta de cosas poco importantes, puesto que: “Vosotros sois la sal de la tierra”. Pero, ¿acaso los apóstoles curaron lo que estaba del todo corrompido? En manera alguna. Ya que de ningún modo puede darse que aquello que ya está corrompido, sea devuelto al estado primitivo con la aplicación de la sal. No hicieron esto, sino que, hallándose ya renovado y libre de podre lo que se les había confiado, echaban sal y lo conservaban en aquel estado en que lo recibieron del Señor. Y a la verdad, es propio de la virtud de Cristo librar de la corrupción de los pecados; pero impedir que no se recaiga en los mismos, ésta es misión y obra de los apóstoles.
+&teDeum

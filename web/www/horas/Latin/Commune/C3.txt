@@ -17,9 +17,9 @@ Mártyrum chorus * laudáte Dóminum de cælis, allelúja.;;116
 [Capitulum Vespera]
 !Sap 3:1-3
 v. Justórum ánimæ in manu Dei sunt, et non tanget illos torméntum mortis. Visi sunt óculis insipiéntium mori: illi autem sunt in pace.
-$Deo gratias.
+$Deo gratias
 
-[Hymnus Vespera](rubrica 1570)
+[HymnusM Vespera]
 v. Sanctórum méritis ínclyta gáudia
 Pangámus, sócii, géstaque fórtia:
 Nam gliscit ánimus prómere cántibus
@@ -48,7 +48,8 @@ _
 Te summa Déitas únaque póscimus,
 Ut culpas ábluas, nóxia súbtrahas,
 Des pacem fámulis, nos quoque glóriam
-Per cuncta tibi sǽcula. Amen.
+Per cuncta tibi sǽcula.
+Amen.
 
 [Hymnus Vespera]
 {:H-Sanctorummeritis:}v. Sanctórum méritis ínclita gáudia
@@ -91,6 +92,33 @@ Istórum est enim * regnum cælórum qui contempsérunt vitam mundi, et pervené
 
 [Invit]
 Regem Mártyrum Dóminum, * Veníte adorémus.
+
+[HymnusM Matutinum]
+v. Ætérna Christi múnera,
+Et Mártyrum victórias,
+Laudes canéntes débitas
+Lætis canámus méntibus.
+_
+Terróre victo sǽculi,
+Pœnísque spretis córporis,
+Mortis sacræ compéndio
+Vitam beátam póssident.
+_
+Tradúntur igni Mártyres,
+Et bestiárum déntibus;
+Armáta sævit úngulis
+Tortóris insáni manus.
+_
+Nudáta pendent víscera,
+Sanguis sacrátus fúnditur;
+Sed pérmanent immóbiles,
+Vitæ perénnis grátia.
+_
+Te nunc, Redémptor, quǽsumus,
+Ut mártyrum consórtio
+Iungas precántes sérvulos
+In sempitérna sǽcula.
+Amen.
 
 [Hymnus Matutinum]
 {:H-Christoprofusum:}v. Christo profúsum sánguinem,
@@ -259,26 +287,6 @@ Mártyrum chorus * laudáte Dóminum de cælis, allelúja.
 v. Justórum ánimæ in manu Dei sunt, et non tanget illos torméntum mortis. Visi sunt óculis insipiéntium mori: illi autem sunt in pace.
 $Deo gratias
 
-[Hymnus Laudes](rubrica 1570)
-v. Rex glorióse Mártyrum,
-Coróna confiténtium,
-Qui respuéntes térrea
-Perdúcis ad cæléstia:
-_
-Aurem benígnam prótinus
-Appóne nostris vócibus:
-Trophǽa sacra pángimus,
-Ignósce quod delíquimus.
-_
-Tu vincis in Martyribus,
-Parcéndo Confessóribus:
-Tu vince nostra crímine,
-Donándo indulgéntiam.
-_
-Deo Patri sit glória,
-Ejúsque soli Fílio,
-Cum Spíritu Paráclito,
-Et nunc et in perpétuum. Amen.
 
 [Hymnus Laudes]
 {:H-Rexgloriosemartyrum:}v. Rex glorióse Mártyrum,
@@ -301,6 +309,9 @@ Ejúsque soli Fílio,
 Cum Spíritu Paráclito,
 Nunc, et per omne sǽculum.
 Amen.
+
+[HymnusM Laudes]
+@:Hymnus Laudes:s/Inténde/Appóne/ s/Mártyres/Martýribus/ s/Parcísque/Parcéndo/ s/Largítor indulgéntiæ/Donándo indulgéntiam/
 
 [Versum 2]
 V. Exsultábunt Sancti in glória.

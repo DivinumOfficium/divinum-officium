@@ -1,0 +1,44 @@
+[Rank]
+S. Antonii de Padua Confessoris;;Duplex;;3;;vide C5a
+
+[Rank1960]
+S. Antonii de Padua Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
+
+[Rule]
+vide C5a;
+9 lectiones
+
+[Name]
+Antonio
+
+[OratioText]
+Haz, oh Dios, que la solemne festividad de tu Confesor y Doctor Antonio regocije tu Iglesia, de suerte que siempre sea fortificada con espirituales auxilios y merezca disfrutar de goces eternos.
+$Per Dominum
+
+[Oratio]
+@:OratioText
+
+[Oratio] (rubrica Divino aut rubrica tridentina)
+@:OratioText:s/ y Doctor//
+
+[Lectio1] (rubrica tridentina)
+@Commune/C5:Lectio11
+
+[Lectio2] (rubrica tridentina)
+@Commune/C5:Lectio21
+
+[Lectio3] (rubrica tridentina)
+@Commune/C5:Lectio31
+
+[Lectio4]
+Antonio, natural de Lisboa, Portugal, nació de padres nobles, que lo educaron piadosamente. De joven, abrazó la vida de los Canónigos regulares. Pero trasladados a Coimbra los cuerpos de cinco mártires, Frailes Menores, que habían sido martirizados por la fe en Marruecos, su vista abrasó a Antonio de deseos de ser martirizado e ingresó en la Orden Franciscana. Movido por este impulso, se dirigió al país de los sarracenos, pero una enfermedad lo redujo a la impotencia y tuvo que regresar. Sucedió, que a pesar de navegar con rumbo a España, los vientos llevaron el navío en que viajaba a Sicilia.
+
+[Lectio5]
+De Sicilia pasó al Capítulo General en Asís; luego se retiró a la ermita del monte San Pablo, Toscana; allí pasó mucho tiempo entregado a la contemplación divina, a los ayunos y a las vigilias. Recibidas las sagradas Ordenes, se le mandó de predicar el Evangelio. Su sabiduría y facilidad de palabra le dieron tantos triunfos y excitaron tanta admiración, que, predicando un día ante el Papa, fue llamado por él Arca del Testamento. Persiguió con rigor las herejías, y por los golpes que les asestó fue llamado martillo perpetuo de los herejes.
+
+[Lectio6]
+Siendo el primero de su Orden por el esplendor de su ciencia, explicó las sagradas Letras en Bolonia y en otras partes, y dirigió los estudios de sus hermanos. Después de recorrer muchas provincias, llegó un año antes de su muerte a Padua, en donde dejó insignes monumentos de su santidad. Finalmente, habiendo llevado a feliz término grandes trabajos por la gloria de Dios, cargado de méritos e ilustre por sus milagros, durmiose en el Señor el día 13 de junio, del año de gracia 1231. El Sumo Pontífice Gregorio IX le inscribió en el número de los santos Confesores. Fue declarado Doctor de la Iglesia por Pío XII.
+
+[Lectio94]
+Antonio nació de padres devotos en Lisboa, Portugal. Cuando era joven, ingresó al Instituto de Canónigos Regulares, pero, por el deseo de martirio, ingresó en la Orden Franciscana. Fue enviado a los sarracenos, pero se vio obligado a regresar debido a su mala salud. En el viaje de regreso, los fuertes vientos llevaron la nave a Sicilia. Antonio recibió pronto las sagradas órdenes y se dedicó a la predicación, despertando tanta admiración que fue llamado a interpretar las Sagradas Escrituras en Bolonia y otros lugares. Fue prefecto, a cargo de los estudios de los hermanos, y se lo llamó el Arca del Testamento y Martillo de Herejes. Tras muchos viajes, llegó, un año antes de morir, a Padua, donde dejó brillantes recuerdos de su santidad. Famoso por sus méritos y milagros, se durmió en el Señor el día 13 de junio del año de la salvación 1231, a la edad de 36 años. Fue declarado doctor de la Iglesia por el Papa Pío XII.
+&teDeum

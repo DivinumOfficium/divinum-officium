@@ -1,10 +1,10 @@
 [Rank]
 Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;5;;ex Tempora/Pasc5-4
 
-[Rank](rubrica 1955)
-In Vigilia Pentecostes;;Duplex;;3;;vide Tempora/Pasc5-4
+[Rank1960]
+Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;6;;vide Tempora/Pasc5-4
 
-[Rank](rubrica 1960)
+[RankNewcal]
 Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;6;;vide Tempora/Pasc5-4
 
 [Rule]
@@ -17,7 +17,7 @@ Feria Te Deum
 No suffragium
 No93
 
-[Rule] (rubrica 1960)
+[Rule] (rubrica 1960 aut rubrica innovata)
 Feria Te Deum
 Doxology=Asc
 
@@ -80,20 +80,20 @@ R. Cum autem vénerit ille, docébit vos omnem veritátem, allelúja.
 @Tempora/Pasc5-4:Responsory3
 
 [Lectio4]
-Ex Tractatu sancti Augustíni Epíscopi de Symbolo ad Catechumenos
+Ex Tractátu sancti Augustíni Epíscopi de Symbolo ad Catechúmenos
 !Lib. 4. cap. 1. tom. 9.
-Dum per sacratíssimum crucis signum vos suscépit in útero sancta mater Ecclésia, quæ sicut et fratres vestros cum summa lætítia spiritáliter pariet, nova proles futura tantæ matris, quoúsque per lavacrum sanctum regeneratos veræ luci restituat, congruis alimentis eos, quos portat, pascat in útero, et ad diem partus sui lætos læta perducat: quóniam non tenétur hæc senténtia Hevæ, quæ in tristítia et gémitu parit fílios; nec ipsos gaudéntes, sed potius fléntes. Hæc enim solvit, quod illa ligaverat: ut prolem, quam per inobediéntiam sui, morti donávit, hæc per obediéntiam restituat vitæ. Omnia sacramenta, quæ acta sunt et agúntur in vobis per ministérium servórum Dei, exorcismis, oratiónibus, canticis spirituálibus, insufflatiónibus, cilício, inclinatióne cervícum, humilitate pedum, pavor ipse omni securitate appetendus: hæc ómnia, ut dixi, escæ sunt, quæ vos refíciunt in útero, ut renatos ex baptismo hílares vos mater exhibeat Christo.
+Dum per sacratíssimum crucis signum vos suscépit in útero sancta mater Ecclésia, quæ sicut et fratres vestros cum summa lætítia spiritáliter páriet, nova proles futúra tantæ matris, quoúsque per lavácrum sanctum regenerátos veræ luci restítuat, cóngruis aliméntis eos, quos portat, pascat in útero, et ad diem partus sui lætos læta perdúcat: quóniam non tenétur hæc senténtia Hevæ, quæ in tristítia et gémitu parit fílios; nec ipsos gaudéntes, sed pótius flentes. Hæc enim solvit, quod illa ligáverat: ut prolem, quam per inobediéntiam sui, morti donávit, hæc per obediéntiam restítuat vitæ. Omnia sacraménta, quæ acta sunt et agúntur in vobis per ministérium servórum Dei, exorcísmis, oratiónibus, cánticis spirituálibus, insufflatiónibus, cilício, inclinatióne cervícum, humilitáte pedum, pavor ipse omni securitáte appeténdus: hæc ómnia, ut dixi, escæ sunt, quæ vos refíciunt in útero, ut renátos ex baptísmo hílares vos mater exhíbeat Christo.
 
 [Lectio5]
-Accepístis et symbolum, protectiónem parturiéntis contra venena serpéntis. In Apocalypsi Joánnis Apóstoli scriptum est hoc, quod staret draco in conspéctu mulíeris, quæ paritura erat, ut cum peperísset, natum ejus coméderet. Dracónem diabolum esse, nullus vestrum ignórat: mulierem illam Vírginem Mariam significasse, quæ caput nostrum íntegra íntegrum péperit; quæ étiam ipsa figuram in se sanctæ Ecclésiæ demonstrávit: ut quómodo Fílium pariens, Virgo permansit, ita et hæc omni témpore membra ejus pariat, et virginitátem non amittat. Ipsas senténtias sacratíssimi symboli adjuvante Dómino exponendas suscépimus, ut, quid singulæ contineant, vestris sensibus intimemus. Paráta sunt corda vestra, quia exclusus est inimícus de córdibus vestris.~
+Accepístis et sýmbolum, protectiónem parturiéntis contra venéna serpéntis. In Apocalýpsi Joánnis Apóstoli scriptum est hoc, quod staret draco in conspéctu mulíeris, quæ paritúra erat, ut cum peperísset, natum ejus coméderet. Dracónem diábolum esse, nullus vestrum ignórat: mulíerem illam Vírginem Maríam significásse, quæ caput nostrum íntegra íntegrum péperit; quæ étiam ipsa figúram in se sanctæ Ecclésiæ demonstrávit: ut quómodo Fílium páriens, Virgo permánsit, ita et hæc omni témpore membra ejus páriat, et virginitátem non amíttat. Ipsas senténtias sacratíssimi sýmboli adjuvánte Dómino exponéndas suscépimus, ut, quid síngulæ contíneant, vestris sénsibus intimémus. Paráta sunt corda vestra, quia exclúsus est inimícus de córdibus vestris.~
 (rubrica 1570)
-Mundata est domus, non remaneat inanis, ne cum vacuam desertor inuenerit adducat secum alios septem nequiores se, et efficiantur hominis illius posteriora, ut evangelium loquit, peiora prioribus.
+Mundáta est domus, non remáneat inánis, ne cum vácuam desértor invénerit addúcat secum álios septem nequióres se, et efficiántur hóminis illíus posterióra, ut evangélium loquit, peióra prióribus.
 
 [Lectio6]
 (rubrica 1570)
-Mox cum exclusus fuerit pessimus inuasor, introducatur optimus possessor. Quis est inuasor? Diabolus. Quid inuasit? Hominem, quem non fecit, insuper decepit. Promisit ei immortalitatem, et propinavit iniquitatem.~
+Mox cum exclúsus fúerit péssimus invásor, introducátur óptimus posséssor. Quis est invásor? Diábolus. Quid invásit? Hóminem, quem non fecit, ínsuper decépit. Promísit ei immortalitátem, et propinávit iniquitátem.~
 (deinde dicitur)
-Huic vos renuntiáre professi estis: in qua professióne, non homínibus, sed Deo et Angelis ejus conscribéntibus dixistis, Renuntio. Renuntiáte non solum vócibus, sed étiam móribus: non tantum sono linguæ, sed et actu vitæ: nec tantum lábiis sonántibus, sed opéribus pronuntiántibus. Scitóte vos cum callido, antiquo, et veternoso inimico suscepísse certamen: non in vobis post renuntiatiónem invéniat ópera sua, non jure vos attrahat in servitútem suam. Deprehénderis enim, et detégeris Christiane, quando aliud agis, et aliud profitéris: fidélis in nómine, aliud demonstrans in opere, non tenens promissiónis tuæ fidem: modo ingrédiens ecclésiam oratiónes fundere, post módicum in spectaculis cum histriónibus impudíce clamáre. Quid tibi cum pompis diaboli, quibus renuntiasti?
+Huic vos renuntiáre proféssi estis: in qua professióne, non homínibus, sed Deo et Angelis ejus conscribéntibus dixístis, Renúntio. Renuntiáte non solum vócibus, sed étiam móribus: non tantum sono linguæ, sed et actu vitæ: nec tantum lábiis sonántibus, sed opéribus pronuntiántibus. Scitóte vos cum cállido, antíquo, et veternóso inimíco suscepísse certámen: non in vobis post renuntiatiónem invéniat ópera sua, non jure vos áttrahat in servitútem suam. Deprehénderis enim, et detégeris Christiáne, quando áliud agis, et áliud profitéris: fidélis in nómine, áliud demónstrans in ópere, non tenens promissiónis tuæ fidem: modo ingrédiens ecclésiam oratiónes fúndere, post módicum in spectáculis cum histriónibus impudíce clamáre. Quid tibi cum pompis diáboli, quibus renuntiásti?
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Joánnem
@@ -111,9 +111,9 @@ Mundus ergo eum accípere non potest, quia non videt eum, neque scit eum. Non en
 @Tempora/Pasc6-0
 
 [Lectio9]
-Ergo invisibíliter vidétur. Nec, si non sit in nobis, potest esse in nobis ejus sciéntia: sic enim a nobis vidétur in nobis et nostra consciéntia. Nam fáciem vidémus altérius, nostram vidére non póssumus: consciéntiam vero nostram vidémus, altérius non vidémus. Sed consciéntia nunquam est nisi in nobis: Spíritus autem Sanctus potest esse étiam sine nobis. Dátur quippe ut sit et in nobis: sed vidéri et sciri, quemádmodum vidéndus et sciéndus est, non potest a nobis, si non sit in nobis.~
+Ergo invisibíliter vidétur. Nec, si non sit in nobis, potest esse in nobis ejus sciéntia: sic enim a nobis vidétur in nobis et nostra consciéntia. Nam fáciem vidémus altérius, nostram vidére non póssumus: consciéntiam vero nostram vidémus, altérius non vidémus. Sed consciéntia nunquam est nisi in nobis: Spíritus autem Sanctus potest esse étiam sine nobis. Datur quippe ut sit et in nobis: sed vidéri et sciri, quemádmodum vidéndus et sciéndus est, non potest a nobis, si non sit in nobis.~
 (deinde dicitur)
-Post promissiónem Spíritus Sancti, ne quisquam putáret, quod ita eum Dóminus datúrus fúerit velut pro seipso, ut non et ipse cum eis esset futúrus, adjécit atque ait: Non relínquam vos órphanos, véniam ad vos. Quamvis ergo nos Fílius Dei suo Patri adoptáverit fílios, et eundem Patrem nos volúerit habére per grátiam, qui ejus Pater est per natúram: tamen étiam ipse circa nos patérnum afféctum quodámmodo demónstrat, cum dicit: Non relínquam vos órphanos.
+Post promissiónem Spíritus Sancti, ne quisquam putáret, quod ita eum Dóminus datúrus fúerit velut pro seípso, ut non et ipse cum eis esset futúrus, adjécit atque ait: Non relínquam vos órphanos, véniam ad vos. Quamvis ergo nos Fílius Dei suo Patri adoptáverit fílios, et eúndem Patrem nos volúerit habére per grátiam, qui ejus Pater est per natúram: tamen étiam ipse circa nos patérnum afféctum quodámmodo demónstrat, cum dicit: Non relínquam vos órphanos.
 (sed rubrica 1570 omittitur)
 &teDeum
 

@@ -215,7 +215,7 @@ sub oratio {
   }
   $w = 'Oratio missing' unless $w;
 
-  if (($version =~ /1960/ || "$month$day" =~ /1102/)
+  if (($version =~ /196/ || "$month$day" =~ /1102/)
     && $w =~ /(.*?)\&psalm\([0-9]+\)\s*\_\s*(.*)/is)
   {
     $w = "$1\_\n$2";    #triduum 1960  not 1955
@@ -224,7 +224,7 @@ sub oratio {
     || ($winner{Rule} =~ /Sub unica concl(usione)?\s*$/mi);
 
   if ($sub_unica_conc) {
-    if ($version !~ /1960/) {
+    if ($version !~ /196/) {
       if ($w =~ /(.*?)(\n\$Per [^\n\r]*?\s*)$/s) {
         $addconclusio = $2;
         $w = $1;
@@ -268,12 +268,12 @@ sub oratio {
     $c = replaceNpb($c, $pope, $lang, 'p', 'um') if $coron =~ /Coronatio/i;
     $retvalue .= "_\n\$Papa\n$c";
   }
-  return resolve_refs($retvalue, $lang) if $rule =~ /omit .*? commemoratio/i || ($version =~ /1960/ && $solemn);
+  return resolve_refs($retvalue, $lang) if $rule =~ /omit .*? commemoratio/i || ($version =~ /196/ && $solemn);
   $w = '';
   our $oremusflag = "\_\n$prayers{$lang}->{Oremus}\n";
   $oremusflag = '' if $type =~ /Secreta/i || $sub_unica_conc;
 
-  if (exists($w{'$type Vigilia'}) && ($version !~ /(1955|1960)/ || $rule =~ /Vigilia/i)) {
+  if (exists($w{'$type Vigilia'}) && ($version !~ /(1955|196)/ || $rule =~ /Vigilia/i)) {
     $w = "!Commemoratio vigilia\n";
     $w .= "!$type\n" . $w{"$type Vigilia"};
     $retvalue .= "$oremusflag$w\n";
@@ -294,7 +294,7 @@ sub oratio {
   if (
     $commemoratio
     && ( $rank < 6
-      || $version !~ /(1955|1960)/i
+      || $version !~ /(1955|196)/i
       || $commemoratio{Rank} =~ /(Dominica|;;6)/i
       || ($commemoratio =~ /Tempora/i && $commemoratio{Rank} =~ /;;[23]/))
     )
@@ -308,26 +308,26 @@ sub oratio {
     $rule !~ /nocomm1960/i
     && (
       (
-        $version =~ /(1955|1960)/
+        $version =~ /(1955|196)/
         && ($winner{'Commemoratio Oratio'} !~ /Octav/i || $winner{'Commemoratio Oratio'} =~ /Octav.*?Nativ/i)
       )
-      || !($version =~ /(1955|1960)/ && $rank >= 5)
+      || !($version =~ /(1955|196)/ && $rank >= 5)
     )
     )
   {
     commemoratio('winner', $type, $lang);
 
-    if ($version !~ /1960/ || $rank < 5) {
+    if ($version !~ /196/ || $rank < 5) {
 
       #commemoratio from commemorated office
       commemoratio('commemoratio', $type, $lang) if $commemoratio;
       commemoratio('commemoratio1', $type, $lang) if $commemoratio1;
-      commemoratio('commemorated', $type, $lang) if $commemorated && $version !~ /1960/;
+      commemoratio('commemorated', $type, $lang) if $commemorated && $version !~ /196/;
     }
   }
   $retvalue = getcc($retvalue);
 
-  if ($version =~ /1955|1960/ || !checksuffragium()) {
+  if ($version =~ /1955|196/ || !checksuffragium()) {
     $retvalue .= $addconclusio;
     return resolve_refs($retvalue, $lang);
   }
@@ -371,11 +371,11 @@ sub setcc {
   # than $rank as sometimes the latter is adjusted for
   # calculating precedence.
   return
-    if ($version =~ /1960/
+    if ($version =~ /196/
     && ($rank[2] >= 5 || ($dayname[1] =~ /Feria/i && $rank[2] >= 3))
     && $ccind > 0
     && nooctnat());
-  if ($version =~ /1955|1960/ && $ccind >= 3) { return; }
+  if ($version =~ /1955|196/ && $ccind >= 3) { return; }
 
   if ($s{Rank} =~ /Dominica/i && $code < 10) {
     $key = 10;
@@ -424,7 +424,7 @@ sub commemoratio {
   my $type = shift;
   my $lang = shift;
   my $code = 10;
-  if ($rank > 6.9 || ($version =~ /(1955|1960)/ && $winner{Rank} =~ /Dominica/i)) { return ''; }
+  if ($rank > 6.9 || ($version =~ /(1955|196)/ && $winner{Rank} =~ /Dominica/i)) { return ''; }
   if ($rule =~ /no commemoratio/i) { return ''; }
   my %w;
 
@@ -446,11 +446,11 @@ sub commemoratio {
   }
   my $w = '';
   $w = $w{"Commemoratio $type"} if exists($w{"Commemoratio $type"});
-  if ($version =~ /(1955|1960)/ && ($w =~ /!.*?(Octav|Dominica)/i && $w !~ /Octav.*?Nativ/i)) { return ''; }
-  if ($version =~ /(1955|1960)/ && $w =~ /!.*?Vigil/i && $rule =~ /no Vigil1960/i) { return ''; }
+  if ($version =~ /(1955|196)/ && ($w =~ /!.*?(Octav|Dominica)/i && $w !~ /Octav.*?Nativ/i)) { return ''; }
+  if ($version =~ /(1955|196)/ && $w =~ /!.*?Vigil/i && $rule =~ /no Vigil1960/i) { return ''; }
 
   if ( $w
-    && $version =~ /1955|1960/
+    && $version =~ /1955|196/
     && $w =~ /!.*?Vigil/i
     && $ite =~ /Sancti/i
     && $ite !~ /(08\-14|06\-23|06\-28|08\-09)/)
@@ -694,7 +694,7 @@ sub checksuffragium {
 sub loadspecial {
   my $str = shift;
   my @s = split("\n", $str);
-  if ($version =~ /1960/) { return (@s); }
+  if ($version =~ /196/) { return (@s); }
   my $i;
   my $ant = 0;
 
@@ -709,8 +709,8 @@ sub loadspecial {
 # deletes the conclusio from the string
 sub delconclusio {
   $ctotalnum++;
-  if ($version =~ /(1955|1960)/ && $rank >= 5 && $ctotalnum > 2) { return ""; }
-  if ($version =~ /(1960|1960)/ && $ctotalnum > 3) { return ""; }
+  if ($version =~ /(1955|196)/ && $rank >= 5 && $ctotalnum > 2) { return ""; }
+  if ($version =~ /(196|196)/ && $ctotalnum > 3) { return ""; } # Fixme
   my $ostr = shift;
   my @ostr = split("\n", $ostr);
   $ostr = '';
@@ -900,7 +900,7 @@ sub Credo {
   if ($rank >= 5 && $winner =~ /Sancti/ && $winner{Rank} !~ /Vigil/i) { $flag = 0; }
 
   if ( ($winner{Rank} =~ /Octav/i && $winner{Rank} !~ /post Octavam/i)
-    || ($commemoratio{Rank} =~ /Octav/i && $commemoratio{Rank} !~ /post Octavam/i && $version !~ /1960/))
+    || ($commemoratio{Rank} =~ /Octav/i && $commemoratio{Rank} !~ /post Octavam/i && $version !~ /196/))
   {
     $flag = 0;
   }
@@ -910,7 +910,7 @@ sub Credo {
   } elsif ($rule =~ /Credo/i || $communerule =~ /Credo/i) {
     $flag = 0;
   }
-  if ($version =~ /(1955|1960)/ && $rule =~ /CredoDA/i) { $flag = 1; }
+  if ($version =~ /(1955|196)/ && $rule =~ /CredoDA/i) { $flag = 1; }
   if ($flag) { push(@s, "!omit."); }
   return $flag;
 }
@@ -952,10 +952,10 @@ sub evangelium : ScriptFunc {
   if ($t && $t !~ /^\s*$/) {
     $t = "v. $t";
     $t =~ s/\n/\n\$Gloria tibi\n/ unless ($rule =~ /^\s*Passio\s*$/m);
-    $t .= "\$Laus tibi\n" unless ($rule =~ /^\s*Passio\s*$/m && $version =~ /1955|1960/);
+    $t .= "\$Laus tibi\n" unless ($rule =~ /^\s*Passio\s*$/m && $version =~ /1955|196/);
   }
 
-  if ($version =~ /(1955|1960)/ && $rule =~ /Maundi/i) {
+  if ($version =~ /(1955|196)/ && $rule =~ /Maundi/i) {
     my %w = columnsel($lang) ? %winner : %winner2;
     $t .= "_\n_\n" . norubr1($w{Maundi});
   }
@@ -978,7 +978,7 @@ sub prefatio : ScriptFunc {
   my $lang = shift;
   my %pr = %{setupstring($datafolder, $lang, 'Ordo/Prefationes.txt')};
   my $name =
-      ($version =~ /(1955|1960)/ && $rule =~ /Prefatio1960=([a-z0-9]+)/i) ? $1
+      ($version =~ /(1955|196)/ && $rule =~ /Prefatio1960=([a-z0-9]+)/i) ? $1
     : ($rule =~ /Prefatio=([a-z0-9]+)/i) ? $1
     : (($month == 12 && $day > 24) || ($month == 1 && $day == 1)) ? 'Nat'
     : ($month == 1 && $day > 5 && $day < 14) ? 'Epi'
@@ -1038,7 +1038,7 @@ sub communicantes($) : ScriptFunc {
   for ($dayname[0]) {
 
     # Do we have octaves of the Epiphany and the Ascension?
-    my $have_octaves = ($version !~ /1955|1960/);
+    my $have_octaves = ($version !~ /1955|196/);
     $name =
         (($month == 12 && $day > 24) || ($month == 1 && $day == 1)) ? 'Nat'
       : ($month == 1 && ($day == 6 || ($have_octaves && $day >= 7 && $day <= 13))) ? 'Epi'
@@ -1049,7 +1049,7 @@ sub communicantes($) : ScriptFunc {
       : 'common';
   }
   my %pr = %{setupstring($datafolder, $lang, 'Ordo/Prefationes.txt')};
-  if ($version =~ /1960/) { $name .= '1962'; }    # St Joseph.
+  if ($version =~ /196/) { $name .= '1962'; }    # St Joseph.
   my $t = chompd($pr{"C-$name"});
   return norubr($t);
 }
@@ -1116,7 +1116,7 @@ sub itemissaest : ScriptFunc {
   our %prayers;
   my $text = $prayers{$lang}->{'IteMissa'};
   my @text = split("\n", $text);
-  my $benedicamus = (gloriflag() && $version !~ /1960/) || ($rule =~ /^\s*Benedicamus Domino\s*$/mi);
+  my $benedicamus = (gloriflag() && $version !~ /196/) || ($rule =~ /^\s*Benedicamus Domino\s*$/mi);
 
   return ($dayname[0] =~ /Pasc0/i) ? "$text[2]\n$text[3]" :    # Ite, missa est, alleluia, alleluia.
     ($votive =~ /Defunct/i) ? "$text[6]\n$text[7]" :           # Requiescant in pace.
@@ -1138,7 +1138,7 @@ sub Ultimaev : ScriptFunc {
   my $lang = shift;
   my ($t, %p);
 
-  if ($version =~ /(1955|1960)/ || !exists($commemoratio{Evangelium})) {
+  if ($version =~ /(1955|196)/ || !exists($commemoratio{Evangelium})) {
     our %prayers;
     $t = $prayers{$lang}->{'Ultima Evangelium'};
   } else {

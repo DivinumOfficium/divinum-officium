@@ -1,0 +1,192 @@
+[Rank]
+In Commemoratione Omnium Fidelium Defunctorum;;Duplex;;3;;ex C9
+
+[Rank1960]
+In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
+
+[Rule]
+ex C9
+Psalmi Dominica
+Antiphonas horas
+Special Conclusio
+Capitulum Versum 2 ad Laudes et Vesperas
+Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium
+Limit Benedictiones Oratio
+Requiem gloria
+9 lectiones
+Responsory9
+no Te Deum
+(rubrica 1955 aut rubrica 1960) No prima Vespera
+
+[Initial]
+$Pater noster
+$Ave Maria
+(sed rubrica 1960 aut rubrica innovata omittuntur)
+
+[Special Completorium]
+$Confiteor
+$Misereatur
+$Indulgentiam
+
+&psalm(122)
+
+&psalm(141)
+
+&psalm(142)
+
+&psalm(233)
+
+&special('Oratio mortuorum1', 'Latin')
+
+&special('Conclusio', 'Latin')
+
+[Oratio Matutinum]
+@Commune/C9:Oratio_Fid:s/&Dominus_vobiscum2/_\n&Dominus_vobiscum/
+
+[Oratio mortuorum1]
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+&Dominus_vobiscum2
+_
+$Oremus
+v. Ten misericordia, Señor, de tus siervos, por cuya salvación te ofrecemos con humildad este sacrificio de alabanza; y por este misterio de reconciliación merezcan llegar al descanso eterno.
+$Per Dominum 
+
+[Oratio mortuorum]
+@Commune/C9:Oratio 2
+
+[Oratio mortuorum2]
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+&Dominus_vobiscum2
+_
+$Oremus
+v. Humildemente te pedimos, Señor, por las almas de todos tus siervos y siervas, perdónales las faltas cometidas a lo largo de su vida, y por tu bondad da término a sus penas.
+$Per Dominum
+
+[Conclusio]
+&Gloria
+V. Descansen en paz.
+R. Amén.
+
+[Lectio1]
+@Commune/C9
+
+[Lectio2]
+@Commune/C9:Lectio5
+
+[Lectio3]
+@Commune/C9:Lectio8
+
+[Lectio4]
+Del Libro de San Agustín, Obispo, sobre los deberes para con los difuntos.
+!Cap. 2 y 3
+El cuidado del entierro, los honores de la sepultura y la pompa de los funerales, más que auxilios para los difuntos son consuelo de los vivos. No hay, sin embargo, que desdeñar los cuerpos de los difuntos, en especial los de los justos y fieles, que sirvieron como de instrumentos y vasos al alma para las buenas obras. Si los vestidos y el anillo de un padre, u otro recuerdo de esta clase, es tanto más apreciado de los hijos cuanto mayor fue su amor a sus progenitores, no hay que despreciar, en modo alguno, aquellos cuerpos que llevamos más estrechamente unidos a nosotros que cualquier vestido. Porque nuestros cuerpos no son para nosotros un simple adorno exterior puesto a nuestra disposición, sino que forman parte de la naturaleza humana. Esto explica la solícita piedad con que se atendía a las exequias de los antiguos justos, celebrando sus funerales y proveyendo a su sepultura; como también las recomendaciones que ellos, en vida, hacían a sus hijos, relativas a la inhumación, y a la traslación de sus cuerpos.
+
+[Lectio5]
+!Cap. 4
+Cuando el cariño de los fieles hacia sus difuntos se manifiesta en recuerdos y oraciones, es indudable que de ello se aprovechan las almas de los que durante su vida temporal merecieron beneficiarse de tales sufragios. Con todo, ni siquiera en los casos en que resulte imposible sepultar algún cuerpo o hacerlo en tierra sagrada, hay que omitir el orar por las almas de los difuntos. Esto ha tenido en cuenta la Iglesia al dedicar a todos los cristianos muertos en la comunión de la sociedad católica, sin mencionar sus nombres, una conmemoración general, en la que aquellas almas a quienes falten las oraciones de los padres, hijos, parientes o amigos, reciban el auxilio de una tan piadosa madre común. Sin estas oraciones, inspiradas en la fe y la piedad hacia los difuntos, creo de que nada serviría a sus almas el que sus cuerpos privados de vida fuesen depositados en un lugar santo.
+
+[Lectio6]
+!Cap. 18
+Siendo así creamos que sólo podemos favorecer a los difuntos por quienes nos interesamos, si ofrecemos por ellos el sacrificio del altar, la plegaria o la limosna. Verdad es que estas súplicas no aprovechan a todos por quienes se ofrecen, sino sólo a los que en vida merecieron se les aplicaran; pero como desconocemos quiénes son éstos, conviene ofrecerlas por todos los cristianos, para no exponernos a pasar por alto a ninguno de aquellos a quienes tales beneficios pueden y deben alcanzar; es preferible que resulten superfluos para ciertos difuntos a quienes no dañan ni aprovechan, a que falten a quienes aprovecharían. Todos nos esmeramos en ofrecer estos sufragios por nuestros parientes y amigos, a fin de que los nuestros hagan por nosotros otro tanto. En cuanto a lo que se gasta en la inhumación del cadáver, no influye en la salvación del difunto, pero constituye un testimonio de afecto o de respeto, nacido del sentimiento que nos veda odiar a nuestra propia carne. Conviene, pues, que haya quien cuide, en la medida de sus posibilidades, del cuerpo del prójimo, cuando lo ha abandonado aquél que de él cuidaba. Y si así proceden los que no creen en la resurrección, con mayor motivo deben hacerlo los fieles, aunque sólo sea para manifestar, cumpliendo los ultimos deberes con un cuerpo destinado a la resurrección y a la vida eterna, su fe en esta creencia.
+
+[Lectio7]
+De la Iª Epist. de San Pablo a los Corintios
+!1 Cor 15, 12-22
+12 Pues si de Cristo se predica que ha resucitado de los muertos, ¿cómo entre vosotros dicen algunos que no hay resurrección de los muertos? 
+13 Si la resurrección de los muertos no se da, tampoco Cristo resucitó. 
+14 Y si Cristo no resucitó, vana es nuestra predicación, vana nuestra fe. 
+15 Seremos falsos testigos de Dios, porque contra Dios testificamos que ha resucitado a Cristo, a quien no resucitó, puesto que los muertos no resucitan. 
+16 Porque si los muertos no resucitan, ni Cristo resucitó; 
+17 y si Cristo no resucitó, vana es vuestra fe, aún estáis en vuestros pecados. 
+18 Y hasta los que murieron en Cristo perecieron. 
+19 Si sólo mirando a esta vida tenemos la esperanza puesta en Cristo, somos los más miserables de todos los hombres. 
+20 Pero no, Cristo ha resucitado de entre los muertos, primicias de los que reposan. 
+21 Porque, como por un hombre vino la muerte, también por un hombre vino la resurrección de los muertos. 
+22 Y como en Adán mueren todos, así también en Cristo serán todos vivificados. 
+
+[Lectio8]
+!1 Cor 15, 35-44
+35 Pero dirá alguno: ¿Cómo resucitan los muertos? ¿Con qué cuerpo vuelven a la vida? 
+36 ¡Necio! Lo que tú siembras no nace si no muere. 
+37 Y lo que siembras no es el cuerpo que ha de nacer, sino un simple grano, por ejemplo, de trigo, o algún otro tal. 
+38 Y Dios le da el cuerpo según ha querido, a cada una de las semillas el propio cuerpo. 
+39 No es toda carne la misma carne, sino que una es la de los hombres, otra la de los ganados, otra la de las aves y otra la de los peces. 
+40 Y hay cuerpos celestes y cuerpos terrestres, y uno es el resplandor de los cuerpos celestes y otro el de los terrestres. 
+41 Uno es el resplandor del sol, otro el de la luna y otro el de las estrellas; y una estrella se diferencia de la de otra en el resplandor. 
+42 Pues así en la resurrección de los muertos. Se siembra en corrupción, y se resucita en incorrupción. 
+43 Se siembra en ignominia, y se levanta en gloria. Se siembra en flaqueza, y se levanta en poder. 
+44 Se siembra cuerpo animal, y se levanta un cuerpo espiritual. Pues si hay un cuerpo animal, también lo hay espiritual. 
+
+[Lectio9]
+!1 Cor 15, 51-58
+51 Voy a declararos un misterio: No todos dormiremos, pero todos seremos transformados. 
+52 En un instante, en un abrir y cerrar de ojos, al último toque de la trompeta, pues tocará la trompeta, los muertos resucitarán incorruptibles y nosotros seremos transformados. 
+53 Porque es preciso que este ser corruptible se revista de incorruptibilidad y que este ser mortal se revista de inmortalidad. 
+54 Y cuando este ser corruptible se revista de incorruptibilidad y este ser mortal se revista de inmortalidad, entonces se cumplirá lo que está escrito: La muerte ha sido sorbida por la victoria. 
+55 ¿Dónde está, muerte, tu victoria? ¿Dónde está, muerte, tu aguijón? 
+56 El aguijón de la muerte es el pecado, y la fuerza del pecado la Ley. 
+57 Pero gracias sean dadas a Dios, que nos da la victoria por nuestro Señor Jesucristo. 
+58 Así, pues, hermanos míos muy amados, manteneos firmes, inconmovibles, abundando siempre en la obra del Señor, teniendo presente que vuestro trabajo no es vano en el Señor. 
+
+[Special Prima]
+&special('Initial', 'Latin')
+$Credo
+(sed rubrica 1960 aut rubrica innovata omittitur)
+
+&psalm(87)
+
+&psalm(27)
+
+&psalm(31)
+
+&special('Oratio mortuorum2', 'Latin')
+
+&martyrologium
+
+V. Los justos dejan una memoria eterna.
+R. No temerán el anuncio funesto. 
+_
+$Oremus
+v. ¡Oh Dios, dispuesto al perdón, salvador de los hombres!; concédenos en tu bondad, por intercesión de Santa María, La Virgen, y de todos los santos, que tus siervos y siervas, desaparecidos ya de este mundo, alcancen tu eterna bienaventuranza. 
+R. Amén.
+
+&special('Conclusio', 'Latin')
+
+[Special Tertia]
+&special('Initial', 'Latin')
+
+&psalm(37,1,11)
+
+&psalm(37,12,23)
+
+&psalm(55)
+
+&special('Oratio mortuorum', 'Latin')
+
+&special('Conclusio', 'Latin')
+
+[Special Sexta]
+&special('Initial', 'Latin')
+
+&psalm(69)
+
+&psalm(84)
+
+&psalm(85)
+
+&special('Oratio mortuorum', 'Latin')
+
+&special('Conclusio', 'Latin')
+
+[Special Nona]
+&special('Initial', 'Latin')
+
+&psalm(101,1,13)
+
+&psalm(101,14,23)
+
+&psalm(101,24,29)
+
+&special('Oratio mortuorum', 'Latin')
+
+&special('Conclusio', 'Latin')

@@ -19,32 +19,6 @@ Volo Pater, * ut ubi ego sum, illic sit et miníster meus.
 v. Beátus vir, qui suffert tentatiónem: quóniam cum probátus fúerit, accípiet corónam vitæ, quam repromísit Deus diligéntibus se.
 $Deo gratias
 
-[Hymnus Vespera](rubrica 1570)
-v. Deus, tuórum mílitum
-Sors et coróna, prǽmium,
-Laudes canéntes Mártyris,
-Absólve nexu críminis.
-_
-Hic nempe mundi gáudia,
-Et blandiménta nóxia,
-Cadúca rite députans,
-Pervénit ad cæléstia.
-_
-Pœnas cucúrrit fórtiter,
-Et sústulit viríliter:
-Pro te effúndens sánguinem,
-Ætérna dona póssidet.
-_
-Ob hoc precátu súpplici
-Te póscimus, piíssime:
-In hoc triúmpho Mártyris,
-Dimítte noxam sérvulis.
-_
-Glória tibi Dómine,
-Qui natus es de Vírgine,
-Cum Patr[e] et Sancto Spíritu,
-In sempitérna sǽcula. Amen.
-
 [Hymnus Vespera]
 {:H-Deustuorummilitum:}v. Deus tuórum mílitum
 Sors, et córona, prǽmium,
@@ -71,6 +45,9 @@ Patri sit, atque Fílio,
 Sancto simul Paráclito,
 In sempitérna sǽcula.
 Amen.
+
+[HymnusM Vespera]
+@:Hymnus Vespera:s/blanda fraudum pábula/blandiménta nóxia/ s/Imbúta felle députans/Cadúca rite députans/ s/Fundénsque pro te/Pro te effúndens/
 
 [Versum 1]
 V. Glória et honóre coronásti eum, Dómine.
@@ -229,27 +206,6 @@ Sed percontári libet, quómodo paréntes et carnáliter propínquos præcípimu
 [Capitulum Laudes]
 @:Capitulum Vespera
 
-[Hymnus Laudes](rubrica 1570)
-v. Martyr Dei, qui únicum
-Patris sequéndo Fílium,
-Victis triúmphans hóstibus,
-Victor fruens cæléstibus:
-_
-Tui précatus múnere
-Nostrum reátum dílue,
-Arcens mali contágium,
-Vitæ rémovens tǽdium.
-_
-Solúta sunt jam víncula
-Tui sacráti córporis:
-Nos solve vinclis sǽculi,
-Amóre Fílii Dei.
-_
-Glória tibi Dómine,
-Qui natus es de Vírgine,
-Cum Patr[e] et Sancto Spíritu,
-In sempitérna sǽcula. Amen.
-
 [Hymnus Laudes]
 {:H-Invictemartyrunicum:}v. Invícte Martyr, únicum
 Patris secútus Fílium,
@@ -271,6 +227,9 @@ Ejúsque soli Fílio,
 Cum Spíritu Paráclito,
 Nunc, et per omne sǽculum.
 Amen.
+
+[HymnusM Laudes]
+@:Hymnus Laudes:s/Invícte Martyr,/Martyr Dei, qui/ s/secútus/sequéndo/ s/repéllens/rémovens/ s/Dono supérni Núminis/Amóre Filli Dei/ s/Nunc, et per omne sǽculum./Et nunc, et in perpétuum/
 
 [Versum 2]
 V. Justus ut palma florébit.

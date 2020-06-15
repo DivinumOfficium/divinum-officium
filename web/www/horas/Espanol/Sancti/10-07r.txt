@@ -1,0 +1,21 @@
+@Sancti/10-07
+
+[Rank]
+Festum Beatæ Mariæ Virginis a Rosario;;Duplex 2 classis;;5;;ex C11
+
+[Commemoratio]
+!Conmemoración de S. Marcos, Papa
+@Commune/C4:Oratio proper Gregem
+
+[Hymnus Matutinum]
+@Sancti/10-07:Hymnus Vespera:s/misterios.*//s
+misterios que ignoraban.
+_
+@Sancti/10-07::s/^v. //
+
+[Lectio8]
+@Sancti/10-07::s/ Al pensar en.*//
+
+[Lectio9]
+@Sancti/10-07:Lectio8:s/.* alto de los cielos\.//s
+&teDeum

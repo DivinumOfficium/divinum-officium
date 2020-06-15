@@ -130,6 +130,12 @@ $title = "Ordo: $monthnames[$kmonth-1] $kyear";
 htmlHead($title, 2);
 print << "PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" >
+<script>
+// https redirect
+if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
+    location.replace(`https:\${location.href.substring(location.protocol.length)}`);
+}
+</script>
 <FORM ACTION="kalendar.pl" METHOD=post TARGET=_self>
 <INPUT TYPE=HIDDEN NAME=setup VALUE="$setupsave">
 <INPUT TYPE=HIDDEN NAME=date1 VALUE="$date1">
@@ -245,7 +251,10 @@ PrintTag
 @chv = splice(@chv, @chv);
 for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'SELECTED' : ''; }
 my $vsize = @versions;
-print "<SELECT NAME=version SIZE=$vsize onchange=\"document.forms[0].submit();\">\n";
+print "
+  <LABEL FOR=version CLASS=offscreen>Version</LABEL>
+  <SELECT ID=version NAME=version SIZE=$vsize onchange=\"document.forms[0].submit();\">\n
+";
 for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
 print "</SELECT>\n";
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT><\P>\n"; }

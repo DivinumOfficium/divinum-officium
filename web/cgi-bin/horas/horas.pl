@@ -60,7 +60,7 @@ sub horas {
   $ind1 = $ind2 = 0;
   $searchind = 0;
 
-  if ($version !~ /(Monastic|1570|1955|1960)/i) {
+  if ($version !~ /(Monastic|1570|1955|1960|Newcal)/i) {
     ante_post('Ante');
   } else {
     $searchind++;
@@ -103,7 +103,7 @@ sub horas {
     }
   }
 
-  if ($version !~ /(Monastic|1570|1955|1960)/) {
+  if ($version !~ /(Monastic|1570|1955|1960|Newcal)/) {
     ante_post('Post');
   } else {
     $searchind++;
@@ -199,6 +199,9 @@ sub resolve_refs {
 
     #cross
     $line = setcross($line);
+
+    # add dot if missing in Antiphona
+    $line =~ s/(\w)$/$&./ if ($line =~ /^\s*Ant\./);
 
     #red prefix
     if ($line =~ /^\s*(R\.br\.|R\.|V\.|Ant\.|Benedictio\.* |Absolutio\.* )(.*)/) {
@@ -303,10 +306,11 @@ sub Alleluia : ScriptFunc {
 
 sub Alleluia_ant {
   my ($lang, $full, $ucase) = @_;
-  my $s =
-    translate('Alleluia', $lang) . ', * ' . translate('Alleluia', $lang) . ', ' . translate('Alleluia', $lang) . '.';
-  $s =~ s/,.*// if (!$full && $duplex < 3 && $version !~ /1960/);
-  $s =~ s/ ./\L$&/g unless $ucase;
+  my $s = translate('Alleluia', $lang);
+  if (($full || ($duplex >= 3) || ($version =~ /1960|Newcal|Monastic/i))) {
+    $s .= ", * $s, $s.";
+    $s =~ s/ ./\L$&/g unless $ucase;
+  }
   return $s;
 }
 
@@ -460,7 +464,7 @@ sub psalm : ScriptFunc {
     $num = $1;
 
     if ( ($version =~ /Trident/i && $num =~ /(62|148|149)/)
-      || ($version =~ /Monastic/i && $num =~ /115/))
+      || ($version =~ /Monastic/i && $num =~ /(115|148|149)/))
     {
       $nogloria = 1;
     }
@@ -487,9 +491,9 @@ sub psalm : ScriptFunc {
   # the invitatory, lives elsewhere, and is loaded here only for its
   # special third-nocturn use on the day of the Epiphany.
   my $fname = ($psnum == 94) ? 'Psalterium/Invitatorium1.txt' : "$psalmfolder/Psalm$psnum.txt";
-  if ($version =~ /1960/) { $fname =~ s/Psalm226/Psalm226r/; }
-  if ($version =~ /1960/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i) { $fname =~ s/Psalm88/Psalm88r/; }
-  if ($version =~ /1960/ && $num !~ /\(/ && $month == 8 && $day == 6) { $fname =~ s/Psalm88/Psalm88a/; }
+  if ($version =~ /1960|Newcal/) { $fname =~ s/Psalm226/Psalm226r/; }
+  if ($version =~ /1960|Newcal/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i) { $fname =~ s/Psalm88/Psalm88r/; }
+  if ($version =~ /1960|Newcal/ && $num !~ /\(/ && $month == 8 && $day == 6) { $fname =~ s/Psalm88/Psalm88a/; }
   $fname = checkfile($lang, $fname);
   @lines = do_read($fname);
   my $str = 'Psalmus';
@@ -909,7 +913,7 @@ sub ant_Benedictus : ScriptFunc {
     $ant = $specials{"Adv Ant $day" . "L"};
   }
   my @ant_parts = split('\*', $ant);
-  if ($num == 1 && $duplex < 3 && $version !~ /1960/) { return "Ant. $ant_parts[0]"; }
+  if ($num == 1 && $duplex < 3 && $version !~ /1960|Newcal/ && $version !~ /monastic/i) { return "Ant. $ant_parts[0]"; }
 
   if ($num == 1) {
     return "Ant. $ant";
@@ -954,7 +958,7 @@ sub ant_Magnificat : ScriptFunc {
     $num = 2;
   }
   my @ant_parts = split('\*', $ant);
-  if ($num == 1 && $duplex < 3 && $version !~ /1960/) { return "Ant. $ant_parts[0]"; }
+  if ($num == 1 && $duplex < 3 && $version !~ /1960/ && $version !~ /monastic/i) { return "Ant. $ant_parts[0]"; }
 
   if ($num == 1) {
     return "Ant. $ant";
@@ -995,6 +999,14 @@ sub canticum : ScriptFunc {
   }
 }
 
+sub Divinum_auxilium : ScriptFunc {
+  my $lang = shift;
+  my $text = "V. " . translate("Divinum auxilium", $lang);
+  $text =~ s/\n.*\. /\n/ unless ($version =~ /Monastic/i);
+  $text =~ s/\n/\nR. /;
+  return $text;
+}
+
 #*** martyrologium($lang)
 #returns the text of the martyrologium for the day
 sub martyrologium : ScriptFunc {
@@ -1012,7 +1024,7 @@ sub martyrologium : ScriptFunc {
     %a = %{setupstring($datafolder, $lang, "Martyrologium1570/Mobile.txt")};
   }
 
-  if ($version =~ /1960/ && $lang =~ /Latin/i) {
+  if ($version =~ /1960|Newcal/ && $lang =~ /Latin/i) {
     %a = %{setupstring($datafolder, $lang, "Martyrologium1960/Mobile.txt")};
   }
 
@@ -1034,7 +1046,7 @@ sub martyrologium : ScriptFunc {
 
   if ($version =~ /1570/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1570/$fname.txt")) {
     $fname = "$datafolder/Latin/Martyrologium1570/$fname.txt";
-  } elsif ($version =~ /1960/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1960/$fname.txt")) {
+  } elsif ($version =~ /1960|Newcal/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1960/$fname.txt")) {
     $fname = "$datafolder/Latin/Martyrologium1960/$fname.txt";
   } elsif ($version =~ /1955/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1955R/$fname.txt")) {
     $fname = "$datafolder/Latin/Martyrologium1955R/$fname.txt";
@@ -1215,14 +1227,12 @@ sub getordinarium {
   my $lang = shift;
   my $command = shift;
   my @script = ();
-  my $fname = checkfile($lang, "Ordinarium/$command.txt");
-  if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) { $fname =~ s/\.txt/e\.txt/; }
-  if ($version =~ /(1955|1960)/) { $fname =~ s/\.txt/1960\.txt/; }
-
-  if ($version =~ /trident/i && $hora =~ /(laudes|vespera)/i && $version !~ /monastic/i) {
-    $fname =~ s/\.txt/Trid\.txt/;
-  }
-  if ($version =~ /Monastic/i) { $fname =~ s/\.txt/M\.txt/; }
+  my $suffix = "";
+  if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) { $suffix .= "e"; }
+  if ($version =~ /(1955|1960|Newcal)/) { $suffix .= "1960"; }
+  elsif ($version =~ /trident/i && $hora =~ /(laudes|vespera)/i) { $suffix .= "Trid"; }
+  elsif ($version =~ /Monastic/i) { $suffix .= "M"; }
+  my $fname = checkfile($lang, "Ordinarium/$command$suffix.txt");
   @script = process_conditional_lines(do_read($fname));
   $error = "$fname cannot be opened or gives an empty script." unless @script;
 

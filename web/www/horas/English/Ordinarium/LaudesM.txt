@@ -1,9 +1,13 @@
 #Incipit
+$Deus in adjutorium
+&Gloria
+&Alleluia
+
 &psalm(66)
 
 #Psalmi
 
-#Capitulum Responsory Hymnus Versus
+#Capitulum Responsorium Hymnus Versus
 
 #Canticum Benedictus
 &ant_Benedictus(1)
@@ -11,18 +15,12 @@
 &Gloria
 &ant_Benedictus(2)
 _
-v. Lord have mercy upon us, Christ have mercy upon us, Lord have mercy upon us
-&pater_noster
+$MLitany
 
 #Oratio
 
 #Conclusio
 &Dominus_vobiscum
-&Benedicamus_Domino 
+&Benedicamus_Domino
 $Fidelium animae
-$Pater noster
-V. May the Lord grant us his peace
-R. And life everlasting. Amen.
-_
-V. May the divine help + remain with us always
-R. And with our brothers, who are absent. Amen.
+&Divinum_auxilium

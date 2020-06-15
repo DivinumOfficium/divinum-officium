@@ -1,0 +1,20 @@
+@Sancti/02-02
+
+[Capitulum Vespera]
+@Sancti/02-02
+_
+@CommuneM/C11:Capitulum Vespera:s/.*_//s
+
+[Capitulum Laudes]
+@Sancti/02-02
+_
+@CommuneM/C11:Capitulum Vespera:s/.*_//s
+
+[Responsory Tertia]
+@Commune/C6:Versum 1
+
+[Responsory Sexta]
+@Commune/C6:Responsory Tertia:8-9
+
+[Responsory Nona]
+@Commune/C6:Responsory Sexta:8-9

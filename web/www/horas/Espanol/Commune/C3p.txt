@@ -1,0 +1,142 @@
+@Commune/C3
+
+[Name]
+Commune Plurimorum Martyrum Tempore Paschali
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+Psalm5 Vespera=116
+Psalm5 Vespera3=115
+
+[Ant Vespera]
+@Commune/C1p:Ant Laudes
+
+[Capitulum Vespera]
+@Commune/C1p
+
+[Hymnus Vespera]
+@Commune/C3:Hymnus Laudes
+
+[Versum 1]
+@Commune/C1p
+
+[Ant 1]
+@Commune/C1p
+
+[Invit]
+@Commune/C2p
+
+[Ant Matutinum]
+
+Los justos se presentarán * con gran firmeza, ante aquellos que les persiguieron, aleluya.;;1
+;;2
+;;3
+V. Santos y justos, alegraos en el Señor, aleluya.
+R. Dios os ha escogido como su herencia, aleluya.
+He ahí * cómo fueron contados entre los hijos de Dios, y su dicha  es estar con los santos, aleluya.;;14
+;;15
+;;23
+V. Una luz perpetua iluminará, Señor, a vuestros Santos, aleluya.  
+R. Y vivirán por toda la eternidad, aleluya.
+Una luz perpetua * iluminará, Señor, a vuestros santos, y vivirán por toda la eternidad, aleluya.;;32
+;;33
+;;45
+V. Sobre ellos brillará una alegría eterna, aleluya. 
+R. Conseguirán el gozo y la exultación, aleluya.
+
+[Responsory1]
+@Commune/C1p
+
+[Responsory2]
+@Commune/C1p
+
+[Responsory3]
+@Commune/C1p
+
+[Lectio4]
+@Commune/C2p
+
+[Responsory4]
+@Commune/C1p
+
+[Lectio5]
+@Commune/C2p
+
+[Responsory5]
+R. En sus siervos, aleluya, 
+* Se consolará el Señor, aleluya, 
+V. Juzgará el Señor a su pueblo, y en sus siervos. 
+R. Se consolará el Señor, aleluya.
+
+[Lectio6]
+@Commune/C2p
+
+[Responsory6]
+R. Hijas de Jerusalén, venid y ved a los mártires con coronas, con las cuales les ha honrado el Señor. 
+* En el día de su triunfo y alegría, aleluya, 
+V. Porque ha reforzado los cerrojos de tus puertas, y bendecido en ti a tus hijos. 
+R. En el día de su triunfo y alegría, aleluya. 
+&Gloria
+R. En el día de su triunfo y alegría, aleluya. 
+
+[Lectio7]
+@Commune/C2p
+
+[Responsory7]
+@Commune/C1p
+
+[Responsory7c]
+@:Responsory2
+
+[Lectio8]
+@Commune/C2p
+
+[Responsory8]
+@Commune/C1p
+
+[Lectio9]
+@Commune/C2p
+
+[Ant Laudes]
+@Commune/C1p
+
+[Capitulum Laudes]
+@:Capitulum Vespera
+
+[Versum 2]
+@Commune/C1p
+
+[Ant 2]
+@Commune/C1p
+
+[Lectio Prima]
+@Commune/C1p
+
+[Capitulum Tertia]
+@:Capitulum Vespera
+
+[Responsory Tertia]
+@Commune/C1p
+
+[Capitulum Sexta]
+@Commune/C1p
+
+[Responsory Sexta]
+@Commune/C1p
+
+[Capitulum Nona]
+@Commune/C1p
+
+[Responsory Nona]
+@Commune/C1p
+
+[Ant Vespera 3]
+@Commune/C1p:Ant Laudes
+
+[Versum 3]
+@Commune/C1p:Versum 2
+
+[Ant 3]
+@Commune/C1p
+

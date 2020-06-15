@@ -1,74 +1,50 @@
+@Commune/C1p
+
 [Name]
 Commune Plurimorum Martyrum Tempore Paschali
 
 [Rule]
 Psalmi Dominica
 Antiphonas horas
-Psalm5 Vespera=115
 
 [Ant Vespera]
-Omnes sancti, * quanta passi sunt tormenta, ut securi pervenirent ad palmam martyrii;;109
-Cum palma * ad regna pervenerunt sancti, coronas decoris meruerunt de manu Dei;;110
-Corpora sanctorum * in pace sepulta sunt: et vivent nomina eorum in aeternum;;111
-Martyrum chorus * laudate Dominum de caelis, alleluia;;112
+@Commune/C1p::s/112/115/
 
 [Capitulum Vespera]
-!Sap 5:1
-v. Stabunt justi in magna constantia adversus eos qui se angustiaverunt et qui~
-abstulerunt labores illorum
-$Deo gratias
-_
-R.br. Lux perpetua lucebit sanctis tuis Domine, * alleluia, alleluia.
-R. Lux perpetua lucebit sanctis tuis Domine, * alleluia, alleluia.
-V. Et aeternitas temporum. 
-R. Alleluia, alleluia.
-&Gloria
-R. Lux perpetua lucebit sanctis tuis Domine, * alleluia, alleluia.
+@CommuneM/C1p
 
 [Hymnus Vespera]
-@Commune/C3:Hymnus Laudes
-
-[Versum 1]
-V. Sancti et justi in Domino gaudete, alleluia.
-R. Vos elegit Deus in hereditatem sibi, alleluia.
-
-[Ant 1]
-Lux perpetua * lucebit sanctis tuis Domine, et aeternitas temporum, alleluia.
-
-[Oratio]
-Deus, qui nos concedis sanctorum Martyrum tuorum N. et N. natalitia colere da~
-nobis in aeterna beatitudine de eorum societate gaudere.
-$Per Dominum
+@Commune/C3:Hymnus Laudes:s/Inténde/Appóne/ s/inter Mártyres/in Martýribus,/ s/Parcísque/Parcéndo/ s/Largítor indulgéntiæ/Donándo indulgéntiam/ s/Nunc, et per omne sǽculum/Et nunc et in perpétuum/
 
 [Invit]
-Exsultent in Domino sancti, * alleluia.
+@Commune/C2p
 
 [Hymnus Matutinum]
 @Commune/C3:Hymnus Matutinum
 
 [Ant Matutinum]
-Stabunt justi * in magna constantia adversus eos, qui se angustiaverunt, alleluia;;1
+Stabunt justi * in magna constántia advérsus eos qui se angustiavérunt, allelúja.;;1
 ;;2
 ;;10
 ;;14
 ;;15
 ;;23
-V. Sancti et justi in Domino gaudete, alleluia.
-R. Vos elegit Deus in hereditatem sibi, alleluia.
-Fulgebunt justi * sicut sol in conspectu Dei, alleluia;;32
+V. Sancti et justi in Dómino gaudéte, allelúja.
+R. Vos elégit Deus in hereditátem sibi, allelúja.
+Fulgébunt justi * sicut sol in conspéctu Dei, allelúja.;;32
 ;;33
 ;;45
 ;;60
 ;;63
 ;;78
-V. Lux perpetua lucebit sanctis tuis Domine, alleluia.
-R. Et aeternitas temporum, alleluia.
-Lux perpetua * lucebit sanctis tuis Domine, et aeternitas temporum, alleluia;;259;254;255
-R. Laetitia sempiterna super capita eorum, * alleluia.
-V. Gaudium et exsultationem obtinebunt, alleluia.
+V. Lux perpétua lucébit Sanctis tuis, Dómine, allelúja.
+R. Et ætérnitas témporum, allelúja.
+Lux perpétua * lucébit Sanctis tuis, Dómine, et ætérnitas témporum, allelúja.;;259;254;255
+V. Lætítia sempitérna super cápita eórum, allelúja.
+R. Gáudium et exsultatiónem obtinébunt, allelúja.
 
 [Lectio1]
-Acts 8:12-19
+!Acts 8:12-19
 12 ergo fratres debitores sumus non carni ut secundum carnem vivamus
 13 si enim secundum carnem vixeritis moriemini si autem Spiritu facta carnis~
 mortificatis vivetis
@@ -82,12 +58,6 @@ conpatimur ut et conglorificemur
 gloriam quae revelabitur in nobis
 19 nam expectatio creaturae revelationem filiorum Dei expectat
 
-[Responsory1]
-R.br. Beatus vir qui metuit Dominum, alleluia:
-*In mandatis ejus cupit nimis, alleluia, alleluia, alleluia.
-V. Gloria et divitiae in domo ejus, et justitia ejus manet in saeculum saeculi.
-R. In mandatis ejus cupit nimis, alleluia, alleluia, alleluia.
-
 [Lectio2]
 !Rom 8:28-34
 28 Scimus autem quoniam diligentibus Deum omnia cooperantur in bonum, iis qui secundum propositum vocati sunt sancti.
@@ -98,13 +68,6 @@ R. In mandatis ejus cupit nimis, alleluia, alleluia, alleluia.
 33 Quis accusabit adversus electos Dei? Deus qui justificat,
 34 quis est qui condemnet? Christus Jesus, qui mortuus est, immo qui et resurrexit, qui est ad dexteram Dei, qui etiam interpellat pro nobis.
 
-
-[Responsory2]
-R.br. Tristitia vestra, alleluia,
-* Convertetur in gaudium, alleluia, alleluia.
-V. Mundus autem gaudebit, vos vero contristabimini, sed tristitia vestra.
-R. Convertetur in gaudium, alleluia, alleluia.
-
 [Lectio3]
 !Rom 8:35-39
 35 Quis ergo nos separabit a caritate Christi? tribulatio? an angustia? an fames? an nuditas? an periculum? an persecutio? an gladius?
@@ -112,15 +75,6 @@ R. Convertetur in gaudium, alleluia, alleluia.
 37 Sed in his omnibus superamus propter eum qui dilexit nos.
 38 Certus sum enim quia neque mors, neque vita, neque angeli, neque principatus, neque virtutes, neque instantia, neque futura, neque fortitudo,
 39 neque altitudo, neque profundum, neque creatura alia poterit nos separare a caritate Dei, quae est in Christo Jesu Domino nostro.
-
-
-[Responsory3]
-R.br. Pretiosa in conspectu Domini, alleluia:
-* Mors sanctorum ejus, alleluia.
-V. Custodit Dominus omnia ossa eorum, unum ex his non conteretur.
-R. Mors sanctorum ejus, alleluia.
-&Gloria
-R. Mors sanctorum ejus, alleluia.
 
 [MM Capitulum]
 !Sap 5:5
@@ -141,12 +95,6 @@ Ita enim dicit beatus Apostolus: Sicut socii passionum estis, et resurrectionis~
 eritis: si tolerabimus, inquit, et conregnabimus. Qui ergo toleraverunt mala~
 propter Christimi, debent et gloriam habere cum Christo.
 
-[Responsory4]
-R. Lux perpetua lucebit sanctis tuis Domine,
-* Et aeternitas temporum, alleluia, alleluia.
-V. Laetitia sempiterna erit super capita eorum: gaudium et exsultationem obtinebunt.
-R. Et aeternitas temporum, alleluia, alleluia.
-
 [Lectio5]
 Annuntiomus inquam sanctis Martyribus Dominicae Paschae gratiam: ut dum~
 sepulturae illius praedicamus reserata claustra, et horum sepulcra reserentur:~
@@ -158,11 +106,9 @@ vitae. Hoc utique in resurrectione ex persona dicitur Salvatoris: ut qui, dum~
 post mortem ab inferis redit ad superos, incipiat notam habere viam vitae, quae~
 ante habebitur ignota.
 
+
 [Responsory5]
-R. In servis suis, alleluia,
-* Consolabitur Deus, alleluia.
-V. Judicabit Dominus populum suum, et in servis suis.
-R. Consolabitur Deus, alleluia.
+@Commune/C2:Responsory51
 
 [Lectio6]
 Ignota enim erat ante Christi adventum via vitae, quae nullius adhuc resurgentis~
@@ -175,13 +121,9 @@ vitae, qui nobis semitam manifestavit ad vitam. Notas enim mihi fecit vias vitae
 cum me docuit fidem, misericordiam, justitiam, castitatem. His enim pervenitur~
 itineribus ad salutem.
 
+
 [Responsory6]
-R. Filiae Jerusalem, venite et videte Martyres cum coronis, quibus coronavit eos Dominus
-* In die solemnitatis et laetitiae, alleluia.
-V. Quoniam confortavit seras portarum tuarum, benedixit filios tuos in te.
-R. In die solemnitatis et laetitiae, alleluia.
-&Gloria
-R. In die solemnitatis et laetitiae, alleluia.
+@Commune/C2:Responsory61
 
 [Lectio7]
 Lectio sancti Evangelii secundum Joannem.
@@ -245,94 +187,27 @@ R. Illi autem sunt in pace
 &Gloria
 R. Illi autem sunt in pace
 
-[Ant Laudes]
-Sancti tui Domine * florebunt sicut lilium, alleluia: et sicut odor balsami erunt ante te, alleluia.
-In caelestibus regnis * sanctorum habitatio est, alleluia: et in aeternum requies eorum, alleluia.
-In velamento * clamabant sancti tui Domine, alleluia, alleluia, alleluia.
-Spiritus et animas * justorum hymnum dicite Deo nostro, alleluia, alleluia.
-Fulgebunt justi * sicut sol in conspectu Dei, alleluia.
 
 [Capitulum Laudes]
-!Sap 5:1
-v. Stabunt justi in magna constantia adversus eos, qui se angustiaverunt, et qui~
-abstulerunt labores eorum.
-$Deo gratias
-_
-R.br. Sancti et justi in Domino gaudete, * alleluia, alleluia.
-R. Sancti et justi in Domino gaudete, * alleluia, alleluia.
-V. Vos elegit Deus in hereditatem sibi. 
-R. Alleluia, alleluia.
-&Gloria
-R. Sancti et justi in Domino gaudete, * alleluia, alleluia.
+@CommuneM/C1p
 
-[Hymnus Laudes]
-@Commune/C3:Hymnus Laudes
-
-[Versum 2]
-V. Pretiosa in conspectu Domini, alleluia
-R. Mors sanctorum ejus, alleluia
-
-[Ant 2]
-Filiae Jerusalem, * venite et videte Martyres cum coronis, quibus coronavit eos Dominus, in die solemnitatis et l�titi�, alleluia, alleluia
-
-[Lectio Prima]
-!Rom 8:28
-v. Scimus quoniam diligentibus Deum omnia cooperantur in bonum, iis, qui~
-secundum propositum vocati sunt sancti.
-
-[Capitulum Tertia]
-!Sap 5:1
-v. Stabunt justi in magna constantia adversus eos, qui se angustiaverunt, et qui~
-abstulerunt labores eorum.
-$Deo gratias
+[HymnusM Laudes]
+@:Hymnus Vespera
 
 [Responsory Tertia]
-V. Sancti et justi * in Deo gaudete, alleluia: 
-R. Vos elegit Deus in hereditdtem sibi,~
-alleluia.
-
-[Capitulum Sexta]
-!Sap. 5:5
-v. Ecce quomodo conputati sunt inter filios Dei et inter sanctos sors illorum~
-est
-$Deo gratias
+@Commune/C1p:Versum 1
 
 [Responsory Sexta]
-V. Lux perpetua lucebit sanctis tuis Domine, alleluia.
-R. Et aeternitas temporum, alleluia.
-
-[Capitulum Nona]
-!Rom 8:28
-v. Scimus quoniam diligentibus Deum omnia cooperantur in bonum, iis qui secundum~
-propositum vocati sunt sancti.
-$Deo gratias
+@Commune/C1p:Responsory Tertia:8-9
 
 [Responsory Nona]
-V. Laetitia sempiterna super capita eorum, alleluia.
-R. Gaudium et exsultationem obtinebunt, alleluia
+@Commune/C1p:Responsory Sexta:8-9
 
 [Ant Vespera 3]
-Isti sunt sancti, * qui pro testamento Dei sua corpora tradiderunt, et in sanguine Agni laverunt stolas suas;;109
-Sancti per fidem * vicerunt regna, operati sunt justitiam, adepti sunt repromissiones;;111
-Sanctorum velut aquilae * juventus renovabitur: florebunt sicut lilium in civitate Domini;;112
-Absterget Deus * omnem lacrimam ab oculis sanctorum: et jam non erit amplius neque luctus, neque clamor, sed nec ullus dolor: quoniam priora transierunt;;115
+@Commune/C1p::s/112/111/ s/115/112/ s/125/115/
 
 [Versum 3]
-V. Laetamini in Domino, et exsultate justi, alleluia.
-R. Et gloriamini omnes recti corde, alleluia.
-
-[Ant 3]
-Sancti et justi * in Domino gaudete, alleluia: vos elegit Deus in hereditatem~
-sibi, alleluia.
+@:Versum 2
 
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Joannem
-!Joannes 15:1-7
-15:1 Ego sum vitis vera, et Pater meus agricola est.
-15:2 Omnem palmitem in me non ferentem fructum, tollet eum, et omnem qui fert fructum, purgabit eum, ut fructum plus afferat.
-15:3 Jam vos mundi estis propter sermonem quem locutus sum vobis.
-15:4 Manete in me, et ego in vobis. Sicut palmes non potest fere fructum a semetipso, nisi manserit in vite, sic nec vos, nisi in me manseritis.
-15:5 Ego sum vitis, vos palmites: qui manet in me, et ego in eo, hic fert fructum multum, quia sine me nihil potestis facere.
-15:6 Si quis in me non manserit, mittetur foras sicut palmes, et arescet, et colligent eum, et in ignem mittent, et ardet.
-15:7 Si manseritis in me, et verba mea in vobis manserint, quodcumque volueritis petetis, et fiet vobis.
-$Te decet
+@CommuneM/C2p

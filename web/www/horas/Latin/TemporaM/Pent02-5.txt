@@ -1,38 +1,43 @@
+@Tempora/Pent02-5
+
 [Rank]
-Feria Sexta infra Hebdomadam II post Octavam Pentecostes;;Feria;;1
+Sanctissimi Cordis Domini Nostri Jesu Christi;;Duplex I classis;;6
 
-[Rule]
-Oratio Dominica
+[Capitulum Vespera]
+@Tempora/Pent02-5
+_
+@Tempora/Pent02-5:Responsory Sexta:1-6
 
-[Lectio1]
-De libro primo Regum.
-!1 Sam 8:4-6
-4 Congregati ergo universi majores natu Israël, venerunt ad Samuelem in Ramatha.
-5 Dixeruntque ei: Ecce tu senuisti, et filii tui non ambulant in viis tuis: constitue nobis regem, ut judicet nos, sicut et universae habent nationes.
-6 Displicuit sermo in oculis Samuelis, eo quod dixissent: Da nobis regem, ut judicet nos. Et oravit Samuel ad Dominum.
+[Capitulum Laudes]
+@Tempora/Pent02-5
+_
+@Tempora/Pent02-5:Responsory Tertia:1-6
 
+[Responsory Tertia]
+@:Versum 1
 
-[Responsory1]
-@TemporaM/Pent01-2:Responsory1
+[Responsory Sexta]
+@Tempora/Pent02-5:Responsory Tertia:8-9
 
-[Lectio2]
-!1 Sam 8:7-9
-7 Dixit autem Dominus ad Samuelem: Audi vocem populi in omnibus quae loquuntur tibi: non enim te abjecerunt, sed me, ne regnem super eos.
-8 Juxta omnia opera sua quae fecerunt, a die qua eduxi eos de Ægypto usque ad diem hanc: sicut dereliquerunt me, et servierunt diis alienis, sic faciunt etiam tibi.
-9 Nunc ergo vocem eorum audi: verumtamen contestare eos, et praedic eis jus regis, qui regnaturus est super eos.
+[Responsory Nona]
+@Tempora/Pent02-5:Responsory Sexta:8-9
 
-
-[Responsory2]
-@TemporaM/Pent01-2:Responsory2
-
-[Lectio3]
-!1 Sam 8:10-14
-10 Dixit itaque Samuel omnia verba Domini ad populum, qui petierat a se regem.
-11 Et ait: Hoc erit jus regis, qui imperaturus est vobis: filios vestros tollet, et ponet in curribus suis: facietque sibi equites et praecursores quadrigarum suarum,
-12 et constituet sibi tribunos, et centuriones, et aratores agrorum suorum, et messores segetum, et fabros armorum et curruum suorum.
-13 Filias quoque vestras faciet sibi unguentarias, et focarias, et panificas.
-14 Agros quoque vestros, et vineas, et oliveta optima tollet, et dabit servis suis.
-
-
-[Responsory3]
-@TemporaM/Pent01-2:Responsory3
+[LectioE]
+v. Sequentia Sancti Evangelii secundum Marcum
+!Marc 16:14-20
+16:14 Novissime recumbentibus illis undecim apparuit: et exprobravit~
+incredulitatem eorum et duritiam cordis: quia iis, qui viderant eum resurrexisse,~
+non crediderunt.
+16:15 Et dixit eis: Euntes in mundum universum praedicate Evangelium omni~
+creaturae.
+16:16 Qui crediderit, et baptizatus fuerit, salvus erit: qui vero non crediderit,~
+condemnabitur.
+16:17 Signa autem eos qui crediderint, haec sequentur: in nomine meo daemonia~
+ejicient: linguis loquentur novis:
+16:18 serpentes tollent: et si mortiferum quid biberint, non eis nocebit: super~
+aegros manus imponent, et bene habebunt.
+16:19 Et Dominus quidem Jesus postquam locutus est eis, assumptus est in caelum,~
+et sedet a dextris Dei.
+16:20 Illi autem profecti praedicaverunt ubique, Domino cooperante, et sermonem~
+confirmante, sequentibus signis.
+$Te decet
