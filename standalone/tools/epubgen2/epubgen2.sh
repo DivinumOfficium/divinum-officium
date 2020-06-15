@@ -37,6 +37,8 @@ OPTIONS:
 
    -v          If specified, generate the Parvum B.M.V. votive office.
 
+   -m          Generate Mass propers in addition to office texts.
+
    -r RUBRICS  The rubrics to use. Defaults to 1960.
                Supported values are: 1570, 1910, DA, 1955, 1960, Newcal
 
@@ -57,6 +59,7 @@ YEAR_FROM=`date +%Y`
 YEAR_TO=$YEAR_FROM
 PRIEST='' #has to be empty or '&priest=yes'
 VOTIVE='' #='C12' for Parvum B.M.V.
+MISSA='' #=1 to include Mass propers
 CDUR=$(pwd)
 EPUBDIR=$CDUR #output
 COVER_FILENAME=cover.jpg #a jpg file name to serve as cover (it has to exist in SOURCEDATADIR) #ascensio.jpg
@@ -64,23 +67,16 @@ RUBRICS_CODE=1960
 RUBRICS=Rubrics%201960
 RUBRICS_NAME=
 
-
 #constants
 #supported rubrics as in Eofficium.pl
 ALL_RUBRICS_CODES=(1570 1910 DA 1955 1960 Newcal)
 ALL_RUBRICS=("Trident 1570" "Trident 1910" "Divino Afflatu" "Reduced 1955" "Rubrics 1960" "1960 Newcalendar")
 ALL_RUBRICS_NAME=("_1570" "_1910" "_DA" "_1955" "" "NC")
 
-MONTHNAMES=(Ianuarius Februarius Martius Aprilis Maius Iunius Iulius Augustus September October November December)
-HORA_INDEX_LAST=7
-HORAS_FILENAMES=(1-Matutinum 2-Laudes 3-Prima 4-Tertia 5-Sexta 6-Nona 7-Vespera 8-Completorium)
-HORAS_NAMES=(Matutinum Laudes Prima Tertia Sexta Nona Vespera Completorium)
-HORAS_NAMES_SHORT=(M L P T S N V C)
-
 YEAR_RE='^[0-9]+$'
 
 #parse parameters
-while getopts "hy:t:pr:c:o:" OPTION
+while getopts "hy:t:pvmr:c:o:" OPTION
 do
      case $OPTION in
          h)
@@ -108,6 +104,9 @@ do
          v)
              VOTIVE='C12'
              ;;
+         m)
+	     MISSA=1
+	     ;;
          r)
              RUBRICS_CODE=$OPTARG
              #make sure the value is one of the expected values
@@ -140,11 +139,24 @@ do
      esac
 done
 
+MONTHNAMES=(Ianuarius Februarius Martius Aprilis Maius Iunius Iulius Augustus September October November December)
+if [[ $MISSA ]]; then
+	HORA_INDEX_LAST=8
+	HORAS_FILENAMES=(1-Matutinum 2-Laudes 3-Prima 4-Tertia 5-Sexta 6-Nona 7-Vespera 8-Completorium 9-Missa)
+	HORAS_NAMES=(Matutinum Laudes Prima Tertia Sexta Nona Vespera Completorium Missa)
+	HORAS_NAMES_SHORT=(M L P T S N V C ☧)
+else
+	HORA_INDEX_LAST=7
+	HORAS_FILENAMES=(1-Matutinum 2-Laudes 3-Prima 4-Tertia 5-Sexta 6-Nona 7-Vespera 8-Completorium)
+	HORAS_NAMES=(Matutinum Laudes Prima Tertia Sexta Nona Vespera Completorium)
+	HORAS_NAMES_SHORT=(M L P T S N V C)
+fi
 
 #other paths and file names, not specified by parameters
 WDIR=$(mktemp -d) #temporary working directory
 SOURCEDATADIR=$CDUR/data #dir that contains s.css, and cover image as specified below
 EOFFICCIUMCMD=$CDUR/EofficiumXhtml.pl #the command to launch the genarator
+EMISSACMD=$CDUR/../../../web/cgi-bin/missa/Emissa.pl #the command to launch the missa genarator
 
 #verify the existence of cover file (even if it is the default value)
 if [[ ! -e $SOURCEDATADIR/$COVER_FILENAME ]]
@@ -282,7 +294,11 @@ foreachHourInRange() {
 
 generateHour() {
 	echo -ne "Generating $FILENAME\r"
-	$EOFFICCIUMCMD "date1=$DATE_SCRIPT&command=pray${HORAS_NAMES[${H}]}&version=$RUBRICS&testmode=regular&lang2=$BLANG&votive=$VOTIVE$PRIEST" > $WDIR/$FILENAME
+	if [[ ${H} -eq 8 && $MISSA ]]; then
+		$EMISSACMD "date=$DATE_SCRIPT&command=&version=$RUBRICS&lang2=$BLANG" > $WDIR/$FILENAME
+	else
+		$EOFFICCIUMCMD "date1=$DATE_SCRIPT&command=pray${HORAS_NAMES[${H}]}&version=$RUBRICS&testmode=regular&lang2=$BLANG&votive=$VOTIVE$PRIEST" > $WDIR/$FILENAME
+	fi
 }
 
 generateHours() {
