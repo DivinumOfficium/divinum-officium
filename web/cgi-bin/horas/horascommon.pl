@@ -389,7 +389,7 @@ sub getrank {
     );
 
   if ($version =~ /(1955|1960|Newcal)/) {
-    if ($srank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|12\-24)/) { $srank = ''; }
+    if ($srank =~ /vigil/i && $sday !~ /(06\-23|06\-28r|08\-09|08\-14|12\-24)/) { $srank = ''; }
     if ($srank =~ /(infra octavam|in octava)/i && nooctnat()) { $srank = ''; }
   }    #else {if ($srank =~ /Simplex/i) {$srank = '';}}
   @srank = split(";;", $srank);
@@ -447,7 +447,7 @@ sub getrank {
     @crank = split(";;", $crank);
 
     if ($version =~ /(1955|1960|Newcal)/) {
-      if ($crank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|08\-24)/) { $crank = ''; }
+      if ($crank =~ /vigil/i && $sday !~ /(06\-23|06\-28r|08\-09|08\-14|08\-24)/) { $crank = ''; }
       if ($crank =~ /octav/i && $crank !~ /cum Octav/i && $crank[2] < 6) { $crank = ''; }
     }
     if ($csaint{Rule} =~ /No prima vespera/i) { $crank = ''; $cname = ''; }
@@ -892,9 +892,7 @@ sub getrank {
 #    $commemoratio = $commemoratio1 = '';
 #    %commemoratio = %commemoratio2 = undef;
 #  }
-   if ($version =~ /1960|Newcal/i && $srank =~ /Vigil/i && $trank == /Dominica/i) {
-     $commemoratio = $commemoratio1 = $dayname[2] = '';
-   }
+
   #Commemoratio for litaniis majores
   if ($month == 4 && $day == 25 && $version =~ /(1955|1960|Newcal)/ && $dayofweek == 0) {
     $commemoratio = '';
