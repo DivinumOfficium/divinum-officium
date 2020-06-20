@@ -1578,11 +1578,13 @@ sub setheadline {
           : ($a[0] =~ /(Adv[2-4]|Quadp)/i) ? 'Semiduplex II. classis'
           : 'Semiduplex Dominica minor';
       }
-    } elsif ($version =~ /1960|Monastic/i && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
+    } elsif ($version =~ /1960|Newcal|Monastic/i && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
       $rankname = 'Dies Octavæ I. classis';
+    } elsif ($version =~ /1960|Newcal/i && $winner =~ /06-28r/) {
+      $rankname = 'II. classis';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $winner =~ /C10|C10t/) {
       $rankname = 'Simplex';
-    } elsif ($version =~ /1960|Monastic/i && $winner =~ /Pasc6-6/) {
+    } elsif ($version =~ /1960|Newcal|Monastic/i && $winner =~ /Pasc6-6/) {
       $rankname = 'I. classis';
     } elsif ($version =~ /1960|Newcal/ && $month == 12 && $day > 16 && $day < 25 && $dayofweek > 0) {
       $rankname = 'II. classis';
