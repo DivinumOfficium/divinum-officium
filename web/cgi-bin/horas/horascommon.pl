@@ -893,8 +893,7 @@ sub getrank {
 #    %commemoratio = %commemoratio2 = undef;
 #  }
    if ($version =~ /1960|Newcal/i && $srank =~ /Vigil/i && $dayofweek == 0) {
-     $commemoratio = $commemoratio1 = '';
-     %commemoratio = %commemoratio2 = undef;
+     $srank = ''; @srank = undef;
    }
   #Commemoratio for litaniis majores
   if ($month == 4 && $day == 25 && $version =~ /(1955|1960|Newcal)/ && $dayofweek == 0) {
