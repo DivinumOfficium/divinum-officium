@@ -1580,8 +1580,6 @@ sub setheadline {
       }
     } elsif ($version =~ /1960|Newcal|Monastic/i && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
       $rankname = 'Dies Octavæ I. classis';
-    } elsif ($version =~ /1960|Newcal/i && $dayname[0] == /06-28r/i) {
-      $rankname = 'II. classis';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $winner =~ /C10|C10t/) {
       $rankname = 'Simplex';
     } elsif ($version =~ /1960|Newcal|Monastic/i && $winner =~ /Pasc6-6/) {
