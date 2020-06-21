@@ -389,7 +389,7 @@ sub getrank {
     );
 
   if ($version =~ /(1955|1960|Newcal)/) {
-    if ($srank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|12\-24)/) { $srank = ''; }
+    if ($srank =~ /vigil/i && $sday !~ /(06\-23|06\-28r|08\-09|08\-14|12\-24)/) { $srank = ''; }
     if ($srank =~ /(infra octavam|in octava)/i && nooctnat()) { $srank = ''; }
   }    #else {if ($srank =~ /Simplex/i) {$srank = '';}}
   @srank = split(";;", $srank);
@@ -447,7 +447,7 @@ sub getrank {
     @crank = split(";;", $crank);
 
     if ($version =~ /(1955|1960|Newcal)/) {
-      if ($crank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|08\-24)/) { $crank = ''; }
+      if ($crank =~ /vigil/i && $sday !~ /(06\-23|06\-28r|08\-09|08\-14|08\-24)/) { $crank = ''; }
       if ($crank =~ /octav/i && $crank !~ /cum Octav/i && $crank[2] < 6) { $crank = ''; }
     }
     if ($csaint{Rule} =~ /No prima vespera/i) { $crank = ''; $cname = ''; }
@@ -1578,11 +1578,11 @@ sub setheadline {
           : ($a[0] =~ /(Adv[2-4]|Quadp)/i) ? 'Semiduplex II. classis'
           : 'Semiduplex Dominica minor';
       }
-    } elsif ($version =~ /1960|Monastic/i && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
+    } elsif ($version =~ /1960|Newcal|Monastic/i && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
       $rankname = 'Dies Octavæ I. classis';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $winner =~ /C10|C10t/) {
       $rankname = 'Simplex';
-    } elsif ($version =~ /1960|Monastic/i && $winner =~ /Pasc6-6/) {
+    } elsif ($version =~ /1960|Newcal|Monastic/i && $winner =~ /Pasc6-6/) {
       $rankname = 'I. classis';
     } elsif ($version =~ /1960|Newcal/ && $month == 12 && $day > 16 && $day < 25 && $dayofweek > 0) {
       $rankname = 'II. classis';
