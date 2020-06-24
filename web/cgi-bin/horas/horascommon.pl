@@ -389,7 +389,7 @@ sub getrank {
     );
 
   if ($version =~ /(1955|1960|Newcal)/) {
-    if ($srank =~ /vigil/i && $sday !~ /(06\-23|06\-28r|08\-09|08\-14|12\-24)/) { $srank = ''; }
+    if ($srank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|12\-24)/) { $srank = ''; }
     if ($srank =~ /(infra octavam|in octava)/i && nooctnat()) { $srank = ''; }
   }    #else {if ($srank =~ /Simplex/i) {$srank = '';}}
   @srank = split(";;", $srank);
@@ -447,7 +447,7 @@ sub getrank {
     @crank = split(";;", $crank);
 
     if ($version =~ /(1955|1960|Newcal)/) {
-      if ($crank =~ /vigil/i && $sday !~ /(06\-23|06\-28r|08\-09|08\-14|08\-24)/) { $crank = ''; }
+      if ($crank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|08\-24)/) { $crank = ''; }
       if ($crank =~ /octav/i && $crank !~ /cum Octav/i && $crank[2] < 6) { $crank = ''; }
     }
     if ($csaint{Rule} =~ /No prima vespera/i) { $crank = ''; $cname = ''; }
@@ -1114,7 +1114,7 @@ sub precedence {
     $commemoratio1 = 'Sancti/01-04.txt';
   }
 
-  if ($version =~ /1960/ && $winner{Rule} =~ /No Sunday commemoratio/i && $dayofweek == 0) {
+  if ($version =~ /1960|Newcal/ && $winner{Rule} =~ /No Sunday commemoratio/i && $dayofweek == 0) {
     $commemoratio = $commemoratio1 = $dayname[2] = '';
   }
 
@@ -1122,12 +1122,16 @@ sub precedence {
     my $flag = ($commemoratio =~ /tempora/i && $tvesp == 1) ? 1 : 0;
     %commemoratio = %{officestring($datafolder, $lang1, $commemoratio, $flag)};
 
-    if ($version =~ /1960/ && $winner{Rule} =~ /Festum Domini/ && $commemoratio{Rule} =~ /Festum Domini/i) {
+    if ($version =~ /1960|Newcal/ && $winner{Rule} =~ /Festum Domini/ && $commemoratio{Rule} =~ /Festum Domini/i) {
       $commemoratio = '';
       %commemoratio = undef;
       $dayname[2] = '';
     }
-
+    if ($version =~ /1960|Newcal/ && $commemoratio =~ /06-28r/i && $dayofweek == 0) {
+      $commemoratio = '';
+      %commemoratio = undef;
+      $dayname[2] = '';
+    }
     if ($vespera == $svesp && $vespera == 1 && $cvespera == 3 && $commemoratio{Rule} =~ /No second Vespera/i) {
       $commemoratio = '';
       %commemoratio = undef;
