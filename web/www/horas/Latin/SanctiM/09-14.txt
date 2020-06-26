@@ -1,0 +1,53 @@
+@Sancti/09-14
+
+[Rank]
+In Exaltatione Sanctæ Crucis;;Duplex II classis;;5.5
+
+[Ant Vespera]
+@:Ant Laudes
+
+[Capitulum Vespera]
+@Sancti/05-03
+_
+@Sancti/05-03:Responsory Sexta:s/._.*//s s/, allelúja//g s/(et benedícimus tibi:? \* )?Allelúja/* Et benedícimus tibi/g s/\. \*/./
+
+[Hymnus Vespera]
+@Psalterium/Major Special:HymnusM Quad5 Vespera
+
+[Versum 1]
+@Sancti/05-03
+
+[Ant 1]
+@Sancti/05-03
+
+[Capitulum Laudes]
+@Sancti/05-03
+_
+@Sancti/05-03:Responsory Tertia:s/._.*//s s/, allelúja//g s/(erit in cælo,? \* )?Allelúja/* Erit in cælo/g s/\. \*/./
+
+[Hymnus Laudes]
+@Psalterium/Major Special:HymnusM Quad5 Laudes
+
+[Versum 2]
+@Sancti/05-03
+
+[Ant 2]
+@Sancti/05-03
+
+[Capitulum Tertia]
+@Sancti/05-03:Capitulum Vespera
+
+[Responsory Tertia]
+@Sancti/05-03:Versum 1
+
+[Capitulum Sexta]
+@Sancti/05-03
+
+[Responsory Sexta]
+@Sancti/05-03:Versum 2
+
+[Capitulum Nona]
+@Sancti/05-03
+
+[Responsory Nona]
+@Sancti/05-03:Responsory Sexta:s/.*_.//s s/, \w+\././sg
