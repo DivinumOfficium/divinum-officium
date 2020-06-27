@@ -1664,7 +1664,7 @@ sub getcommemoratio {
   postprocess_vr($v, $lang);
   our %prayers;
   my $w = "!" . &translate("Commemoratio", $lang);
-  $a =~ s/\s*\*\s*/ /;
+  $a =~ s/\s*\*\s*/ / unless ($version =~ /Monastic/i);
   $o =~ s/^(?:v. )?/v. /;
   $w .= " $rank[0]\nAnt. $a\n_\n$v\n_\n$prayers{$lang}->{Oremus}\n$o\n";
   return $w;
