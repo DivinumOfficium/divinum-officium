@@ -573,7 +573,6 @@ sub getrank {
 #  $commemoratio = $commemoratio1 = $communetype = $commune = $commemorated = $dayname[2] = $scriptura = '';
 #  $comrank = 0;
   if ($version =~ /Trid/i && $trank[2] < 5.1 && $trank[0] =~ /Dominica/i) { $trank[2] = 2.9; }
-  if ($version =~ /Monastic/i && $trank[2] < 5.1 && $trank[0] =~ /Dominica/i) { $trank[2] = 4.9; }
 
   if (
     $version =~ /1960|Newcal|Monastic/i
@@ -1127,7 +1126,7 @@ sub precedence {
       %commemoratio = undef;
       $dayname[2] = '';
     }
-    if ($version =~ /1960|Newcal/ && $commemoratio =~ /06-28r/i && $dayofweek == 0) {
+    if ($version =~ /Monastic|1960|Newcal/ && $commemoratio =~ /06-28r?/i && $dayofweek == 0) {
       $commemoratio = '';
       %commemoratio = undef;
       $dayname[2] = '';
