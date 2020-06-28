@@ -1664,7 +1664,7 @@ sub getcommemoratio {
   postprocess_vr($v, $lang);
   our %prayers;
   my $w = "!" . &translate("Commemoratio", $lang);
-  $a =~ s/\s*\*\s*/ /;
+  $a =~ s/\s*\*\s*/ / unless ($version =~ /Monastic/i);
   $o =~ s/^(?:v. )?/v. /;
   $w .= " $rank[0]\nAnt. $a\n_\n$v\n_\n$prayers{$lang}->{Oremus}\n$o\n";
   return $w;
@@ -2021,7 +2021,7 @@ sub doxology {
       && $commemoratio{Rule} =~ /Doxology=([a-z]+)/i)
     {
       $dname = $1;
-    } elsif (($month == 8 && $day > 15 && $day < 23)
+    } elsif (($month == 8 && $day > 15 && $day < 23 && $version !~ /Monastic/i)
       || ($version != /1570/ && $month == 12 && $day > 8 && $day < 16 && $dayofweek > 0))
     {
       $dname = 'Nat';

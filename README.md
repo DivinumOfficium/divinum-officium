@@ -36,6 +36,8 @@ examples.
 
 ## Docker
 
+Build status badges:
+
 [![](https://images.microbadger.com/badges/version/divinumofficiumweb/divinumofficium.svg)](https://hub.docker.com/r/divinumofficiumweb/divinumofficium "DockerHub Container")
 
 [![](https://images.microbadger.com/badges/image/divinumofficiumweb/divinumofficium.svg)](https://hub.docker.com/r/divinumofficiumweb/divinumofficium "DockerHub Container")

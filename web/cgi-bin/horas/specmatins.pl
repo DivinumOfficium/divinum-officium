@@ -482,7 +482,7 @@ sub lectiones {
   # cannot use translate('Evangelist', 'English') as it is anavailable
   $evan_regexp .= '|Matt|Marc|Luc|Joannes' if ($lang !~ /Latin/);
   $evan_regexp .= '|Matt|Mark|Luke|John' if ($lang !~ /English/);
-  $evan_regexp = '!(?:' . $evan_regexp . ')\s+\d+:\d';
+  $evan_regexp = '!(?:' . $evan_regexp . ')\s+\d+';
   $evan_regexp = qr/$evan_regexp/;
   push(@s, "\n");
 

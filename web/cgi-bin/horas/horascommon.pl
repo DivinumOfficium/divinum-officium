@@ -573,7 +573,6 @@ sub getrank {
 #  $commemoratio = $commemoratio1 = $communetype = $commune = $commemorated = $dayname[2] = $scriptura = '';
 #  $comrank = 0;
   if ($version =~ /Trid/i && $trank[2] < 5.1 && $trank[0] =~ /Dominica/i) { $trank[2] = 2.9; }
-  if ($version =~ /Monastic/i && $trank[2] < 5.1 && $trank[0] =~ /Dominica/i) { $trank[2] = 4.9; }
 
   if (
     $version =~ /1960|Newcal|Monastic/i
@@ -1114,7 +1113,7 @@ sub precedence {
     $commemoratio1 = 'Sancti/01-04.txt';
   }
 
-  if ($version =~ /1960/ && $winner{Rule} =~ /No Sunday commemoratio/i && $dayofweek == 0) {
+  if ($version =~ /1960|Newcal/ && $winner{Rule} =~ /No Sunday commemoratio/i && $dayofweek == 0) {
     $commemoratio = $commemoratio1 = $dayname[2] = '';
   }
 
@@ -1122,12 +1121,16 @@ sub precedence {
     my $flag = ($commemoratio =~ /tempora/i && $tvesp == 1) ? 1 : 0;
     %commemoratio = %{officestring($datafolder, $lang1, $commemoratio, $flag)};
 
-    if ($version =~ /1960/ && $winner{Rule} =~ /Festum Domini/ && $commemoratio{Rule} =~ /Festum Domini/i) {
+    if ($version =~ /1960|Newcal/ && $winner{Rule} =~ /Festum Domini/ && $commemoratio{Rule} =~ /Festum Domini/i) {
       $commemoratio = '';
       %commemoratio = undef;
       $dayname[2] = '';
     }
-
+    if ($version =~ /Monastic|1960|Newcal/ && $commemoratio =~ /06-28r?/i && $dayofweek == 0) {
+      $commemoratio = '';
+      %commemoratio = undef;
+      $dayname[2] = '';
+    }
     if ($vespera == $svesp && $vespera == 1 && $cvespera == 3 && $commemoratio{Rule} =~ /No second Vespera/i) {
       $commemoratio = '';
       %commemoratio = undef;
@@ -1578,11 +1581,11 @@ sub setheadline {
           : ($a[0] =~ /(Adv[2-4]|Quadp)/i) ? 'Semiduplex II. classis'
           : 'Semiduplex Dominica minor';
       }
-    } elsif ($version =~ /1960|Monastic/i && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
+    } elsif ($version =~ /1960|Newcal|Monastic/i && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
       $rankname = 'Dies Octavæ I. classis';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $winner =~ /C10|C10t/) {
       $rankname = 'Simplex';
-    } elsif ($version =~ /1960|Monastic/i && $winner =~ /Pasc6-6/) {
+    } elsif ($version =~ /1960|Newcal|Monastic/i && $winner =~ /Pasc6-6/) {
       $rankname = 'I. classis';
     } elsif ($version =~ /1960|Newcal/ && $month == 12 && $day > 16 && $day < 25 && $dayofweek > 0) {
       $rankname = 'II. classis';
