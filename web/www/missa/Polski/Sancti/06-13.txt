@@ -12,7 +12,7 @@ Gloria
 Ferdynand Bullone, urodzony w Lizbonie w r. 1195, w młodym wieku wstąpił do zakonu Kanoników Regularnych. W r. 1220 przeniósł się do zakonu Franciszkanów, w którym zasłynął jako wędrowny kaznodzieja w Portugalii, północnej Italii i południowej Francji. Wykładał również teologię na uniwersytecie w Bolonii. Z ogromnym powodzeniem zwalczał herezję albigensów. Zmarł w Padwie 13 czerwca 1231 r.
 
 [Introitus]
-@Commune/C5:Introitus
+@Commune/C4a:Introitus
 
 [Oratio]
 Niechaj uroczystość św. Antoniego, Twego Wyznawcy i Doktora, rozraduje Twój Kościół, o Panie, aby zawsze miał ku obronie moce nadprzyrodzone i zasłużył sobie na zażywanie wiekuistych radości.
@@ -22,24 +22,19 @@ $Per Dominum
 @Commune/C4a:Lectio
 
 [Graduale]
-!Ps 91:13; 91:14
-V. Sprawiedliwy zakwitnie jak palma, rozrośnie się jak cedr na Libanie w domu Pańskim.
-!Ps 91:3
-V. By głosić z rana Twoje miłosierdzie, a wierność Twoją nocami. Alleluja, alleluja.
-!Ps 45:9
-Umiłował go Pan i przyozdobił, przyodział go szatą chwały. Alleluja.
+@Commune/C4a:Graduale
 
 [Evangelium]
 @Commune/C4a:Evangelium
 
 [Offertorium]
-@Commune/C5:Offertorium
+@Commune/C4a:Offertorium
 
 [Secreta]
 Panie, niechaj obecna ofiara okaże się zbawienną dla Twego ludu, za który raczyłeś z samego siebie złożyć Ojcu żywą żertwę: Który z tymże Bogiem Ojcem i Duchem Świętym żyjesz. 
 
 [Communio]
-@Commune/C5:Communio
+@Commune/C4a:Communio
 
 [Postcommunio]
 Nasyceni Boskimi darami, prosimy Cię, Panie, abyśmy przez zasługi i wstawiennictwo św. Antoniego, Twego Wyznawcy i Doktora, doznali skutków ofiary niosącej zbawienie.
