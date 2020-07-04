@@ -196,7 +196,7 @@ $daycolor =
   : ($dayname[1] =~ /(Cathedra|oann|Pasch|Confessor|Ascensio|Vigilia\ Nativitatis|Cena)/i) ? "black"
   : ($dayname[1] =~ /(Vigilia|Quattuor|Passionis|Quadragesima|Hebdomadæ Sanctæ|Septuagesim|Sexagesim|Quinquagesim|Ciner|Adventus)/i) ? "purple"
   : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
-  : ($dayname[1] =~ /(Pentecostes|Evangel|Innocentium|Cruc|Apostol)/i) ? "red"
+  : ($dayname[1] =~ /(Pentecostes|Evangel|Innocentium|Sanguinis|Cruc|Apostol)/i) ? "red"
   : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
   : "black";
 build_comment_line();
