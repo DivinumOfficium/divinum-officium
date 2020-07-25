@@ -1184,14 +1184,13 @@ sub responsory_gloria {
     delete($winner{Responsory9});
     delete($winner2{Responsory9});
   }
-  if ($num == 8 && exists($winner{Responsory9})) { return $w; }
+  if ($num == 8 && exists($winner{Responsory9}) && ($rule !~ /12 lectio/)) { return $w; }
   if ($version =~ /Monastic/i && $num == 2 && $month == 1 && $day < 14) { return $prev; }
   my $flag = 0;
 
+  my $read_per_noct = ($rule =~ /12 lectio/) ? 4 : 3;
   if (
-       $num == 3
-    || $num == 6
-    || $num == 9
+       ($num % $read_per_noct == 0)
     || ($rule =~ /9 lectiones/i && ($winner !~ /tempora/i || $dayname[0] !~ /(Adv|Quad)/i) && $num == 8)
     || ( $version =~ /1960/
       && $rule =~ /9 lectiones/i
