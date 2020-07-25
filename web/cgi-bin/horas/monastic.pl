@@ -113,7 +113,7 @@ sub psalmi_matutinum_monastic {
   push(@s, $psalmi[7]);
   push(@s, "\n");
 
-  if ($rule =~ /(9|12) lectio/i) {
+  if ($rule =~ /(9|12) lectio/i && $rank > 4.9) {
     lectiones(1, $lang);
   } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i && $month < 11) {
     if ($winner =~ /Tempora/i
@@ -131,7 +131,7 @@ sub psalmi_matutinum_monastic {
   foreach $i (8, 9, 10, 11, 12, 13) { antetpsalm_mm($psalmi[$i], $i); }
   antetpsalm_mm('', -2);    #draw out antiphon if any
 
-  if ($dayofweek == 0 || $winner{Rule} =~ /(12|9) lectiones/i) {
+  if ($winner{Rule} =~ /(12|9) lectiones/i && $rank > 4.9) {
     push(@s, $psalmi[14]);
     push(@s, $psalmi[15]);
     push(@s, "\n");
@@ -266,11 +266,10 @@ sub monastic_lectio3 {
   return $w;
 }
 
-#*** legend_monastic($lang)
-sub legend_monastic {
+#*** absolutio_benedictio($lang)
+sub absolutio_benedictio {
   my $lang = shift;
 
-  #absolutio-benedictio
   push(@s, "\n");
   push(@s, '&pater_noster');
   my %benedictio = %{setupstring($datafolder, $lang, 'Psalterium/Benedictions.txt')};
@@ -285,37 +284,47 @@ sub legend_monastic {
   push(@s, "V. $a[1]");
   push(@s, "Benedictio. $a[4]");
   push(@s, "_");
+}
 
+#*** legend_monastic($lang)
+sub legend_monastic {
+  my $lang = shift;
   #1 lesson
+  absolutio_benedictio($lang);
   my %w = (columnsel($lang)) ? %winner : %winner2;
   my $str == '';
 
   if (exists($w{Lectio94})) {
-    push(@s, $w{Lectio94});
+    $str = $w{Lectio94};
   } else {
     $str = $w{Lectio4};
     if (exists($w{Lectio5}) && $w{Lectio5} !~ /!/) { $str .= $w{Lectio5} . $w{Lectio6}; }
-    push(@s, $str);
   }
-  push(@s, "\_");
+
+  $str =~ s/&teDeum\s*//;
+  push(@s, $str, '$Tu autem', '_');
+
+  my $resp = '';
 
   if (exists($w{Responsory6})) {
-    push(@s, $w{Responsory6});
+    $resp = $w{Responsory6};
   } else {
     my %c = (columnsel($lang)) ? %commune : %commune2;
 
     if (exists($c{Responsory6})) {
-      push(@s, $c{Responsory6});
+      $resp = $c{Responsory6};
     } else {
-      push(@s, "Responsory for ne lesson not found!");
+      $resp = "Responsory for ne lesson not found!";
     }
   }
+  push(@s, responsory_gloria($resp, 3));
 }
 
 #*** brevis_monstic($lang)
 sub brevis_monastic {
   my $lang = shift;
-  my %b = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum special.txt')};
+  absolutio_benedictio($lang);
+  my %b = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
   push(@s, $b{"MM LB$dayofweek"});
 }
 

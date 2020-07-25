@@ -1,15 +1,79 @@
 @Tempora/Pent08-0
 
+[Rule]
+12 lectiones
+
+[Lectio2]
+@Tempora/Pent08-0::s/-9/-7/ s/8.*//s
+
+[Lectio3]
+@Tempora/Pent08-0:Lectio2:s/6/8/ s/6 .*8/8/s
+
+[Lectio4]
+@Tempora/Pent08-0:Lectio3
+
+[Responsory4]
+@Tempora/Pent03-1Feria:Responsory1
+
+[Lectio5]
+@Tempora/Pent08-0:Lectio4:s/ Unde .*//s
+
+[Responsory5]
+@Tempora/Pent08-0:Responsory4
+
+[Lectio6]
+@Tempora/Pent08-0:Lectio4:s/.* Unde/Unde/s
+@Tempora/Pent08-0:Lectio5:s/ In quo.*//s
+
+[Responsory6]
+@Tempora/Pent08-0:Responsory5
+
+[Lectio7]
+@Tempora/Pent08-0:Lectio5:s/.* In quo/In quo/s
+
+[Responsory7]
+@Tempora/Pent08-0:Responsory6
+
+[Lectio8]
+@Tempora/Pent08-0:Lectio6
+
+[Responsory8]
+@Tempora/Pent03-1Feria:Responsory2
+
+[Lectio9]
+@Tempora/Pent08-0:Lectio7
+
+[Responsory9]
+@Tempora/Pent01-3:Responsory1
+
+[Lectio10]
+@Tempora/Pent08-0:Lectio8
+
+[Responsory10]
+@Tempora/Pent01-3:Responsory3
+
+[Lectio11]
+@Tempora/Pent08-0:Lectio9
+
+[Responsory11]
+@Tempora/Pent03-2Feria:Responsory1
+
+[Lectio12]
+Sin autem, inquit, carnáles divítias, quae labúntur, non bene dispensétis; veras aeternásque divítias doctrínae Dei quis credet vobis? Et si in his, aliéna quae sunt (aliénum est autem nobis omne quod sǽculi est), infidels fuístis; ea, quae vestra sunt, et próprie hómini deputáta, quis vobis crédere póterit?
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Lucam
+v. Sequéntia sancti Evangélii secúndum Lucam
 !Luc 16:1-9
-16:1 Dicebat autem et ad discipulos suos: Homo quidam erat dives, qui habebat villicum: et hic diffamatus est apud illum quasi dissipasset bona ipsius.
-16:2 Et vocavit illum, et ait illi: Quid hoc audio de te? redde rationem villicationis tuae: jam enim non poteris villicare.
-16:3 Ait autem villicus intra se: Quid faciam, quia dominus meus aufert a me villicationem? Fodere non valeo, mendicare erubesco.
-16:4 Scio quid faciam, ut, cum amotus fuero a villicatione, recipiant me in domos suas.
-16:5 Convocatis itaque singulis debitoribus domini sui, dicebat primo: Quantum debes domino meo?
-16:6 At ille dixit: Centum cados olei. Dixitque illi: Accipe cautionem tuam: et sede cito, scribe quinquaginta.
-16:7 Deinde alii dixit: Tu vero quantum debes? Qui ait: Centum coros tritici. Ait illi: Accipe litteras tuas, et scribe octoginta.
-16:8 Et laudavit dominus villicum iniquitatis, quia prudenter fecisset: quia filii hujus saeculi prudentiores filiis lucis in generatione sua sunt.
-16:9 Et ego vobis dico: facite vobis amicos de mammona iniquitatis: ut, cum defeceritis, recipiant vos in aeterna tabernacula.
+16:1 Dicébat autem et ad discípulos suos: Homo quidam erat dives, qui habébat víllicum: et hic diffamátus est apud illum quasi dissipásset bona ipsíus.
+16:2 Et vocávit illum, et ait illi: Quid hoc áudio de te? redde ratiónem villicatiónis tuæ: iam enim non póteris villicáre.
+16:3 Ait autem víllicus intra se: Quid fáciam, quia dóminus meus aufert a me villicatiónem? Fódere non váleo, mendicáre erubésco.
+16:4 Scio quid fáciam, ut, cum amótus fúero a villicatióne, recípiant me in domos suas.
+16:5 Convocátis ítaque síngulis debitóribus dómini sui, dicébat primo: Quantum debes dómino meo?
+16:6 At ille dixit: Centum cados ólei. Dixítque illi: Accipe cautiónem tuam: et sede cito, scribe quinquagínta.
+16:7 Deínde álii dixit: Tu vero quantum debes? Qui ait: Centum coros trítici. Ait illi: Accipe lítteras tuas, et scribe octogínta.
+16:8 Et laudávit dóminus víllicum iniquitátis, quia prudénter fecísset: quia fílii huius sǽculi prudentióres fíliis lucis in generatióne sua sunt.
+16:9 Et ego vobis dico: fácite vobis amícos de mammóna iniquitátis: ut, cum defecéritis, recípiant vos in ætérna tabernácula.
 $Te decet
