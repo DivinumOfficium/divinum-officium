@@ -304,17 +304,20 @@ sub legend_monastic {
   $str =~ s/&teDeum\s*//;
   push(@s, $str, '$Tu autem', '_');
 
+  my $resp = '';
+
   if (exists($w{Responsory6})) {
-    push(@s, $w{Responsory6});
+    $resp = $w{Responsory6};
   } else {
     my %c = (columnsel($lang)) ? %commune : %commune2;
 
     if (exists($c{Responsory6})) {
-      push(@s, $c{Responsory6});
+      $resp = $c{Responsory6};
     } else {
-      push(@s, "Responsory for ne lesson not found!");
+      $resp = "Responsory for ne lesson not found!";
     }
   }
+  push(@s, responsory_gloria($resp, 3));
 }
 
 #*** brevis_monstic($lang)
