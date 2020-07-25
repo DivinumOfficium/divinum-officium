@@ -574,35 +574,21 @@ sub lectiones {
   }
   if ($version =~ /1960/ && $lang =~ /Latin/i) { $a[1] = 'Jube, Dómine, benedícere.'; }
 
-  if ($num > 0) {
-    $num = ($num - 1) * 3 + 1;
-  } else {
-    $num = 1;
-  }
   push(@s, "_");
 
-  if ($rule !~ /Limit.*?Benedictio/i) {
-    push(@s, "V. $a[1]");
-    push(@s, "Benedictio. $a[2]");
-  }
-  push(@s, "\&lectio($num)");
-  push(@s, "\n");
-  $num++;
+  my $read_per_noct = ($rule =~ /12 lectio/) ? 4 : 3;
 
-  if ($rule !~ /Limit.*?Benedictio/i) {
-    push(@s, "V. $a[1]");
-    push(@s, "Benedictio. $a[3]");
-  }
-  push(@s, "\&lectio($num)");
-  push(@s, "\n");
-  $num++;
+  $num = 1 if ($num < 1);
 
-  if ($rule !~ /Limit.*?Benedictio/i) {
-    push(@s, "V. $a[1]");
-    push(@s, "Benedictio. $a[4]");
+  for my $i (1..$read_per_noct) {
+    my $l = ($num - 1) * $read_per_noct + $i;
+    if ($rule !~ /Limit.*?Benedictio/i) {
+      push(@s, "V. $a[1]");
+      push(@s, "Benedictio. $a[$i+1]");
+    }
+    push(@s, "\&lectio($l)");
+    push(@s, "\n");
   }
-  push(@s, "\&lectio($num)");
-  push(@s, "\n");
 }
 
 sub matins_lectio_responsory_alleluia(\$$) {
