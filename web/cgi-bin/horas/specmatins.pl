@@ -574,35 +574,21 @@ sub lectiones {
   }
   if ($version =~ /1960/ && $lang =~ /Latin/i) { $a[1] = 'Jube, Dómine, benedícere.'; }
 
-  if ($num > 0) {
-    $num = ($num - 1) * 3 + 1;
-  } else {
-    $num = 1;
-  }
   push(@s, "_");
 
-  if ($rule !~ /Limit.*?Benedictio/i) {
-    push(@s, "V. $a[1]");
-    push(@s, "Benedictio. $a[2]");
-  }
-  push(@s, "\&lectio($num)");
-  push(@s, "\n");
-  $num++;
+  my $read_per_noct = ($rule =~ /12 lectio/) ? 4 : 3;
 
-  if ($rule !~ /Limit.*?Benedictio/i) {
-    push(@s, "V. $a[1]");
-    push(@s, "Benedictio. $a[3]");
-  }
-  push(@s, "\&lectio($num)");
-  push(@s, "\n");
-  $num++;
+  $num = 1 if ($num < 1);
 
-  if ($rule !~ /Limit.*?Benedictio/i) {
-    push(@s, "V. $a[1]");
-    push(@s, "Benedictio. $a[4]");
+  for my $i (1..$read_per_noct) {
+    my $l = ($num - 1) * $read_per_noct + $i;
+    if ($rule !~ /Limit.*?Benedictio/i) {
+      push(@s, "V. $a[1]");
+      push(@s, "Benedictio. $a[$i+1]");
+    }
+    push(@s, "\&lectio($l)");
+    push(@s, "\n");
   }
-  push(@s, "\&lectio($num)");
-  push(@s, "\n");
 }
 
 sub matins_lectio_responsory_alleluia(\$$) {
@@ -1198,14 +1184,13 @@ sub responsory_gloria {
     delete($winner{Responsory9});
     delete($winner2{Responsory9});
   }
-  if ($num == 8 && exists($winner{Responsory9})) { return $w; }
+  if ($num == 8 && exists($winner{Responsory9}) && ($rule !~ /12 lectio/)) { return $w; }
   if ($version =~ /Monastic/i && $num == 2 && $month == 1 && $day < 14) { return $prev; }
   my $flag = 0;
 
+  my $read_per_noct = ($rule =~ /12 lectio/) ? 4 : 3;
   if (
-       $num == 3
-    || $num == 6
-    || $num == 9
+       ($num % $read_per_noct == 0)
     || ($rule =~ /9 lectiones/i && ($winner !~ /tempora/i || $dayname[0] !~ /(Adv|Quad)/i) && $num == 8)
     || ( $version =~ /1960/
       && $rule =~ /9 lectiones/i
