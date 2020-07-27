@@ -187,6 +187,12 @@ sub psalmi_matutinum_monastic {
       $w = $s{"MM Capitulum $name"};
     }
   }
+  if (!$w && $commune) {
+    my $name = $commune;
+    $name =~ s/.*M.//;
+    $name =~ s/\.txt//;
+    $w = $s{"MM Capitulum $name"};
+  }
   if (!$w) { $w = $s{'MM Capitulum'}; }
   push(@s, "!!Capitulum");
   push(@s, $w);
