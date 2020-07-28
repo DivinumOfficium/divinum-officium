@@ -26,7 +26,7 @@ sub invitatorium {
     : '';
 
   if (
-    $version =~ /Trid/
+    $version =~ /Trid|Monastic/i
     && (!$name
       || $dayname[0] =~ /Quadp/i
       || ($dayname[0] =~ /Quad/i && $dayofweek != 0))
