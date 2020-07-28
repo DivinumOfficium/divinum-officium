@@ -331,7 +331,9 @@ sub brevis_monastic {
   my $lang = shift;
   absolutio_benedictio($lang);
   my %b = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
-  push(@s, $b{"MM LB$dayofweek"});
+  my $lectio  = $b{"MM LB$dayofweek"};
+  $lectio =~ s/&Gloria1?/&Gloria1/;
+  push(@s, $lectio);
 }
 
 #*** regula($lang)
