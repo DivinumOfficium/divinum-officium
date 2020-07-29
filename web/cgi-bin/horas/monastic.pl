@@ -187,6 +187,12 @@ sub psalmi_matutinum_monastic {
       $w = $s{"MM Capitulum $name"};
     }
   }
+  if (!$w && $commune) {
+    my $name = $commune;
+    $name =~ s/.*M.//;
+    $name =~ s/\.txt//;
+    $w = $s{"MM Capitulum $name"};
+  }
   if (!$w) { $w = $s{'MM Capitulum'}; }
   push(@s, "!!Capitulum");
   push(@s, $w);
@@ -325,7 +331,9 @@ sub brevis_monastic {
   my $lang = shift;
   absolutio_benedictio($lang);
   my %b = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
-  push(@s, $b{"MM LB$dayofweek"});
+  my $lectio  = $b{"MM LB$dayofweek"};
+  $lectio =~ s/&Gloria1?/&Gloria1/;
+  push(@s, $lectio);
 }
 
 #*** regula($lang)
