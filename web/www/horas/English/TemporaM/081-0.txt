@@ -1,0 +1,11 @@
+[Lectio4]
+@Tempora/081-0:Lectio3:s/15/17/ s/19/22/ s/15 .*17/17/s
+20 
+21 
+22 
+
+[Lectio5]
+@Tempora/081-0:Lectio4:s/ The Jews.*//s
+
+[Lectio6]
+@Tempora/081-0:Lectio4:s/.* The Jews/The Jews/s
