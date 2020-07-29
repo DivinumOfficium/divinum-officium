@@ -111,6 +111,7 @@ sub hymnus {    #matutinum
   $name = ($name) ? "Hymnus $name" : "Day$dayofweek Hymnus";
   $comment = ($name) ? 1 : 5;
   if ($name =~ /^Day0 Hymnus$/i && ($month < 4 || ($monthday && $monthday =~ /^1[0-9][0-9]\-/))) { $name .= '1'; }
+  if ($version =~ /(Monastic|1570)/i) { $name =~ s/Hymnus1?/$&M/; }
   my $hymn = $hymn{$name};
   setbuild("Psalterium/Matutinum Special", $name, 'Hymnus ord');
   my $hmn =
