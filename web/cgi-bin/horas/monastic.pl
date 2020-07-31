@@ -312,13 +312,13 @@ sub legend_monastic {
 
   my $resp = '';
 
-  if (exists($w{Responsory6})) {
-    $resp = $w{Responsory6};
+  if (exists($w{Responsory1})) {
+    $resp = $w{Responsory1};
   } else {
     my %c = (columnsel($lang)) ? %commune : %commune2;
 
-    if (exists($c{Responsory6})) {
-      $resp = $c{Responsory6};
+    if (exists($c{Responsory1})) {
+      $resp = $c{Responsory1};
     } else {
       $resp = "Responsory for ne lesson not found!";
     }
