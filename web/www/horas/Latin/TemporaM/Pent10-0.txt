@@ -1,12 +1,80 @@
 @Tempora/Pent10-0
 
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Tempora/Pent10-0::s/34/33/ s/.34 .*//s
+
+[Lectio2]
+@Tempora/Pent10-0:Lectio1:s/29-34/34-37/ s/29 .*34/34/s
+@Tempora/Pent10-0:Lectio2:s/!.*// s/1 .*//s
+
+[Lectio3]
+@Tempora/Pent10-0:Lectio2:s/9:35-37; // s/35 .*1 /1 /s
+ 
+[Lectio4]
+@Tempora/Pent10-0:Lectio3
+
+[Responsory4]
+@Tempora/Pent03-1Feria:Responsory1
+
+[Lectio5]
+@Tempora/Pent10-0:Lectio4
+
+[Responsory5]
+@Tempora/Pent10-0:Responsory4
+
+[Lectio6]
+@Tempora/Pent10-0:Lectio5
+
+[Responsory6]
+@Tempora/Pent10-0:Responsory5
+
+[Lectio7]
+@Tempora/Pent10-0:Lectio6:s/exiérunt. .*/exiérunt./
+
+[Responsory7]
+@Tempora/Pent10-0:Responsory6
+
+[Lectio8]
+@Tempora/Pent10-0:Lectio6:s/.* exiérunt. //
+
+[Responsory8]
+@Tempora/Pent03-1Feria:Responsory2
+
+[Lectio9]
+@Tempora/Pent10-0:Lectio7
+
+[Responsory9]
+@Tempora/Pent01-3:Responsory1
+
+[Lectio10]
+@Tempora/Pent10-0:Lectio8:s/ Publicánus.*//
+
+[Responsory10]
+@Tempora/Pent01-3:Responsory3
+
+[Lectio11]
+@Tempora/Pent10-0:Lectio8:s/.*? Publicánus/Publicánus/
+@Tempora/Pent10-0:Lectio9:s/Adhuc .*//
+
+[Responsory11]
+@Tempora/Pent03-2Feria:Responsory1
+
+[Lectio12]
+@Tempora/Pent10-0:Lectio9:s/.*? Adhuc/Adhuc/
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Lucam
+v. Sequéntia sancti Evangélii secúndum Lucam
 !Luc 18:9-14
-18:9 Dixit autem et ad quosdam qui in se confidebant tamquam justi, et aspernabantur ceteros, parabolam istam:
-18:10 Duo homines ascenderunt in templum ut orarent: unus pharisaeus et alter publicanus.
-18:11 Pharisaeus stans, haec apud se orabat: Deus, gratias ago tibi, quia non sum sicut ceteri hominum: raptores, injusti, adulteri, velut etiam hic publicanus:
-18:12 jejuno bis in sabbato, decimas do omnium quae possideo.
-18:13 Et publicanus a longe stans, nolebat nec oculos ad caelum levare: sed percutiebat pectus suum, dicens: Deus propitius esto mihi peccatori.
-18:14 Dico vobis, descendit hic justificatus in domum suam ab illo: quia omnis qui se exaltat, humiliabitur, et qui se humiliat, exaltabitur.
+18:9 Dixit autem et ad quosdam qui in se confidébant tamquam iusti, et aspernabántur céteros, parábolam istam:
+18:10 Duo hómines ascendérunt in templum ut orárent: unus Pharisǽus et alter publicánus.
+18:11 Pharisǽus stans, hæc apud se orábat: Deus, grátias ago tibi, quia non sum sicut céteri hóminum: raptóres, iniústi, adúlteri, velut étiam hic publicánus:
+18:12 ieiúno bis in sábbato, décimas do ómnium quæ possídeo.
+18:13 Et publicánus a longe stans, nolébat nec óculos ad cælum leváre: sed percutiébat pectus suum, dicens: Deus propítius esto mihi peccatóri.
+18:14 Dico vobis, descéndit hic iustificátus in domum suam ab illo: quia omnis qui se exáltat, humiliábitur, et qui se humíliat, exaltábitur.
 $Te decet

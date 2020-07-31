@@ -93,14 +93,11 @@ sub psalmi_matutinum_monastic {
   }
 
   #** get proper Ant Matutinum
-  if (!($dayname[0] =~ /(Pasc[1-6]|Pent)/i && $month < 11) || $winner !~ /Sancti/i) {
-    my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
-
-    if ($w) {
-      @psalmi = split("\n", $w);
-      $comment = $c;
-      $prefix .= ' ' . translate('et Psalmi', $lang);
-    }
+  my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
+  if ($w) {
+    @psalmi = split("\n", $w);
+    $comment = $c;
+    $prefix .= ' ' . translate('et Psalmi', $lang);
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
   my $i = 0;
@@ -312,13 +309,13 @@ sub legend_monastic {
 
   my $resp = '';
 
-  if (exists($w{Responsory6})) {
-    $resp = $w{Responsory6};
+  if (exists($w{Responsory1})) {
+    $resp = $w{Responsory1};
   } else {
     my %c = (columnsel($lang)) ? %commune : %commune2;
 
-    if (exists($c{Responsory6})) {
-      $resp = $c{Responsory6};
+    if (exists($c{Responsory1})) {
+      $resp = $c{Responsory1};
     } else {
       $resp = "Responsory for ne lesson not found!";
     }

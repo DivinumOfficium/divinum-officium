@@ -1,5 +1,21 @@
+[Lectio7]
+@Tempora/Pent10-0:Lectio6:s/in fact. .*/in fact./
+
+[Lectio8]
+@Tempora/Pent10-0:Lectio6:s/.* in fact. //
+
+[Lectio10]
+@Tempora/Pent10-0:Lectio8:s/ But the publican.*//
+
+[Lectio11]
+@Tempora/Pent10-0:Lectio8:s/.*? But the publican/But the publican/
+@Tempora/Pent10-0:Lectio9:s/Consider .*//
+
+[Lectio12]
+@Tempora/Pent10-0:Lectio9:s/.*? Consider/Consider/
+
 [LectioE]
-Continuation of the Holy Gospel according to Luke
+v. Continuation of the Holy Gospel according to Luke
 !Luke 18:9-14
 18:9 And to some who trusted in themselves as just, and despised others, he spoke also this parable:
 18:10 Two men went up into the temple to pray: the one a Pharisee, and the other a publican.
