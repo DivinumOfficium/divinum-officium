@@ -1,5 +1,16 @@
 @Sancti/08-06
 
+[Rule]
+proper
+Festum Domini
+12 lectiones
+Psalmi Dominica
+Antiphonas horas
+
+[Lectio93]
+@:Lectio3
+ 
+
 [Capitulum Vespera]
 @Sancti/08-06
 _
@@ -7,6 +18,118 @@ _
 
 [Versum 1]
 @Sancti/08-06:Versum 2
+
+[Ant Matutinum]
+Paulo minus * ab Angelis minorátus, glória et honóre coronátus est, et constitútus super ópera mánuum Dei.;;8
+Revelávit Dóminus * condénsa, et in templo ejus omnes dicent glóriam.;;28
+Speciósus forma * præ fíliis hóminum, diffúsa est grátia in lábiis tuis.;;44
+Ecce, * nubes lúcida obumbrávit eos: patérna vos audíta est: † Hic est Fílius meus.;;45
+Petrus * et qui cum illo praeséntes erant, Christo laetificáti, † vidére glóriam Dei.;;46
+Respóndens Petrus, * ait ad Jesum: † Dómine si vis faciámus hic tria tabernácula.;;47
+V. Gloriósus apparuísti in conspéctu Dómini.
+R. Proptérea decórem índuit te Dóminus.
+Illúminans * tu mirabíliter a móntibus ætérnis: turbáti sunt omnes insipiéntes corde.;;75
+Mélior est * dies una in átriis tuis, super míllia.;;83
+Gloriósa * dicta sunt de te, cívitas Dei.;;86
+Thabor et Hermon * in nómine tuo exsultábunt: tuum brácchium cum poténtia.;;88
+Lux orta est * justo, et rectis corde lætítia.;;96
+Confessiónem * et decórem índuit, amíctus lúmine sicut vestiménto.;;103
+V. Glória et honóre coronásti eum, Dómine.
+R. Et constituísti eum super ópera mánuum tuárum.
+Hódie ad patris vocem, transfiguráto Dómino, Moyses et Elías affluérunt spléndidi, † excéssum ejus, quem completúrus erat, loquéntes.;;266;267;268
+V. Magna est glória ejus in salutári tuo.
+R. Glóriam et magnum decórem impónes super eum.
+
+[Lectio1]
+@Sancti/08-06::s/14/12/ s/13 .*//s
+
+[Lectio2]
+@Sancti/08-06:Lectio1:s/.*!/!/ s/10-14/13-15/ s/10 .*13/13/s
+@Sancti/08-06:Lectio2:s/.*15/15/s s/16.*//s
+
+[Lectio3]
+@Sancti/08-06:Lectio2:s/15/16/ s/.*16 /16 /s
+@Sancti/08-06:Lectio3:s/.*18 /18 /s s/19.*//s
+
+[Lectio4]
+@Sancti/08-06:Lectio3:s/18/19/ s/18 .*19 /19 /s
+
+[Responsory4]
+R. Assúmpsit Jesus Petrum, et Jacóbum, et Joánnem fratrem ejus; 
+* In montem excélsum seórsum ascéndens, ibi se transfigúrans, † suae glóriae claritátem eis osténdit.
+V. Ne vidéntes ejus passiónem turbaréntur, sed fortióri soliditáte firmaréntur.
+R. In montem excélsum seórsum ascéndens, ibi se transfigúrans, † suae glóriae claritátem eis osténdit.
+
+[Lectio5]
+@Sancti/08-06:Lectio4:s/Sed .*//;
+
+[Responsory5]
+@Sancti/08-06:Responsory4
+
+[Lectio6]
+@Sancti/08-06:Lectio4:s/.*Sed /Sed /s
+@Sancti/08-06:Lectio5:s/Quid .*//s
+
+[Responsory6]
+@Sancti/08-06:Responsory5
+
+[Lectio7]
+@Sancti/08-06:Lectio5:s/.*Quid /Quid /s
+
+[Responsory7]
+@Sancti/08-06:Responsory6
+
+[Lectio8]
+@Sancti/08-06:Lectio6
+
+[Responsory8]
+R. Assúmptis hódie Dóminus Jesus tribus discípulis, montem, ut oráret, súbiit excélsum solus, † et orans coram eis transfigurátus est, faciésque ejus ut sol resplénduit 
+* Ac vestiménta ejus ut nix facta sunt cándida.
+V. Ut autem testimónium habéret a lege et prophétis, † hinc inde Móyses et Elías visi sunt in majestáte.
+R. Ac vestiménta ejus ut nix facta sunt cándida.
+
+[Lectio9]
+@Sancti/08-06:Lectio7
+
+[Responsory9]
+@Sancti/08-06:Responsory7
+
+[Lectio10]
+@Sancti/08-06:Lectio8:s/Cum .*//s
+
+[Responsory10]
+@Sancti/08-06:Responsory8
+
+[Lectio11]
+@Sancti/08-06:Lectio8:s/.*Cum /Cum /s
+
+[Responsory11]
+R. Descendéntibus illis de monte praecépit Jesus dicens: † Némini dixéritis visiónem quam vidístis 
+* Donec Fílius hóminis a mórtuis resúrgat.
+V. Ne mors ejus áliquo modo impedirétur, † si haec vísio in pópulo statim divularétur.
+R. Donec Fílius hóminis a mórtuis resúrgat.
+
+[Lectio12]
+@Sancti/08-06:Lectio9
+
+[Responsory12]
+R. Dum orásset Dóminus, facta est spécies vultus ejus áltera, † et vestítus ejus albus ac refúlgens: 
+* Et duo viri loquebántur cum illo, † Móyses et Elías visi in majestáte.
+V. Dicébant autem excéssum ejus, quem completúrus erat in Jerúsalem.
+R. Et duo viri loquebántur cum illo, † Móyses et Elías visi in majestáte.
+
+[LectioE]
+v. Sequéntia sancti Evangélii secúndum Matthǽum
+!Mt 17:1-9
+17:1 Et post dies sex assúmit Iesus Petrum, et Iacóbum, et Ioánnem fratrem eius, et ducit illos in montem excélsum seórsum:
+17:2 et transfigurátus est ante eos. Et resplénduit fácies eius sicut sol: vestiménta autem eius facta sunt alba sicut nix.
+17:3 Et ecce apparuérunt illis Móyses et Elías cum eo loquéntes.
+17:4 Respóndens autem Petrus, dixit ad Iesum: Dómine, bonum est nos hic esse: si vis, faciámus tria tabernácula, tibi unum, Móysi unum, et Elíæ unum.
+17:5 Adhuc eo loquénte, ecce nubes lúcida obumbrávit eos. Et ecce vox de nube, dicens: Hic est Fílius meus diléctus, in quo mihi bene complácui: ipsum audíte.
+17:6 Et audiéntes discípuli cecidérunt in fáciem suam, et timuérunt valde.
+17:7 Et accéssit Iesus, et tétigit eos: dixítque eis: Súrgite, et nolíte timére.
+17:8 Levántes autem óculos suos, néminem vidérunt, nisi solum Iesum.
+17:9 Et descendéntibus illis de monte, præcépit eis Iesus, dicens: Némini dixéritis visiónem, donec Fílius hóminis a mórtuis resúrgat.
 
 [Capitulum Laudes]
 @Sancti/08-06
