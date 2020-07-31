@@ -93,14 +93,11 @@ sub psalmi_matutinum_monastic {
   }
 
   #** get proper Ant Matutinum
-  if (!($dayname[0] =~ /(Pasc[1-6]|Pent)/i && $month < 11) || $winner !~ /Sancti/i) {
-    my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
-
-    if ($w) {
-      @psalmi = split("\n", $w);
-      $comment = $c;
-      $prefix .= ' ' . translate('et Psalmi', $lang);
-    }
+  my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
+  if ($w) {
+    @psalmi = split("\n", $w);
+    $comment = $c;
+    $prefix .= ' ' . translate('et Psalmi', $lang);
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
   my $i = 0;
