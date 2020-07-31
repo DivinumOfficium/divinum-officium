@@ -157,8 +157,13 @@ sub psalmi_matutinum_monastic {
       if (exists($winner{LectioE})) {    #** set evangelium
         my %w = (columnsel($lang)) ? %winner : %winner2;
         my @w = split("\n", $w{LectioE});
-        $w = '';
 
+        $w[0] =~ s/^(v. )?/v./;
+        splice(@w, 1, 1, "R. " . translate("Gloria tibi Domine", $lang), $w[1]);
+        if ($w[-1] !~ /Te decet/) { push(@w, "\$Te decet"); }
+        splice(@w, -1, 1, "R. " . translate("Amen", $lang), "_", $w[-1]);
+
+        $w = '';
         foreach $item (@w) {
           if ($item =~ /^([0-9:]+)\s+(.*)/s) {
             my $rest = $2;
