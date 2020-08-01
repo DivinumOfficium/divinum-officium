@@ -5,7 +5,7 @@ S. Laurentii Martyris;;II classis;;5.1;;ex C2
 
 [Rule]
 ex C2
-9 lectiones
+12 lectiones
 Antiphonas horas
 
 [Ant Vespera 3]
@@ -37,13 +37,82 @@ Nisi granum frumenti * cadens, in terram mortuum fuerit, ipsum solum manet.;;256
 V. Magna est glória ejus in salutári tuo.
 R. Glóriam et magnum decórem impónes super eum.
 
+[Lectio1]
+@Commune/C6:Lectio11:s/7/3/ s/.4 .*//s
+
+[Lectio2]
+@Commune/C6:Lectio11:s/:1/:4/ s/.*4 /4 /s
+
+[Lectio3]
+@Sancti/08-10:Lectio2
+
+[Lectio4]
+@Sancti/08-10:Lectio3
+
+[Responsory4]
+R. Beátus Lauréntius dixit: Ego me óbtuli sacrifícium
+* In odórem suavitátis.
+V. Gáudeo plane quia hóstia Christi éffici mérui.
+R. In odórem suavitátis.
+
+[Lectio5]
+@Sancti/08-10:Lectio4:s/ Armátur.*//
+
+[Responsory5]
+@Sancti/08-10:Responsory4
+
+[Lectio6]
+@Sancti/08-10:Lectio4:s/.* Armátur/Armátur/s
+
+[Responsory6]
+@Sancti/08-10:Responsory5
+
+[Lectio7]
+@Sancti/08-10:Lectio5
+
+[Responsory7]
+@Sancti/08-10:Responsory6
+
+[Lectio8]
+@Sancti/08-10:Lectio6
+
+[Responsory8]
+R. Méruit esse hóstia levíta Lauréntius, qui dum assarétur, non negávit Dóminum
+* Et ídeo invéntus est sacrifícium laudis.
+V. In cratícula pósitus Deum non negávit, et ad ignem applicátus Christum conféssus est.
+R. Et ídeo invéntus est sacrifícium laudis.
+
+[Lectio9]
+@Sancti/08-10:Lectio7:s/Item .*//s
+
 [Responsory9]
-R. Gaudeo plane quia hostia Christi effici merui: accusatus non negavi; interrogatus: Christum confessus sum
-* Assatus, gratias ago
-V. Ego me obtuli sacrificium Deo, in odorem suavitatis
-R. Assatus, gratias ago
-&Gloria
-R. Assatus, gratias ago
+@Sancti/08-10:Responsory7
+
+[Lectio10]
+@Sancti/08-10:Lectio7:s/.* Item/Item/s
+@Sancti/08-10:Lectio8:s/Magna.*//s
+
+[Responsory10]
+@Sancti/08-10:Responsory8
+
+[Lectio11]
+@Sancti/08-10:Lectio8:s/.* Magna/Magna/s
+@Sancti/08-10:Lectio9:s/Hinc .*//s
+
+[Responsory11]
+R. Beátus Lauréntius dixit: Disce, miser, quanta est virtus Dómini
+* Nam carbónes isti non dolórem sed refrigérium mihi praestant.
+V. Ecce, miser assásti me una parte regýra áliam et mandúca.
+R. Nam carbónes isti non dolórem sed refrigérium mihi praestant.
+
+[Lectio12]
+@Sancti/08-10:Lectio9:s/.* Hinc/Hinc/s
+
+[Responsory12]
+R. Gáudeo plane, quia hóstia Christi éffici mérui: accusátus, non negávi; interrogátus, Christum conféssus sum;
+* Assátus, grátias ago.
+V. Ego me óbtuli sacrifícium Deo, in odórem suavitátis.
+R. Assátus, grátias ag
 
 [Capitulum Laudes]
 @Sancti/08-10

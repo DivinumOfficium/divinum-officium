@@ -1,0 +1,11 @@
+[Lectio4]
+@Tempora/081-0:Lectio3:s/15/17/ s/19/22/ s/15 .*17/17/s
+20 Mądrość przed domy opowiada, na ulicach swój głos wypuszcza.
+21 W główniejszych gromadach woła, we drzwiach bram miejskich wydaje słowa swe, mówiąc:
+22 Dokądże maluczcy będziecie miłować dzieciństwo, a głupi rzeczy im szkodliwych żądać będą, a nieroztropni nienawidzieć umiejętności?
+
+[Lectio5]
+@Tempora/081-0:Lectio4:s/ O ile.*//s
+
+[Lectio6]
+@Tempora/081-0:Lectio4:s/.* O ile/O ile/s

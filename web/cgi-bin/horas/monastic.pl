@@ -93,14 +93,11 @@ sub psalmi_matutinum_monastic {
   }
 
   #** get proper Ant Matutinum
-  if (!($dayname[0] =~ /(Pasc[1-6]|Pent)/i && $month < 11) || $winner !~ /Sancti/i) {
-    my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
-
-    if ($w) {
-      @psalmi = split("\n", $w);
-      $comment = $c;
-      $prefix .= ' ' . translate('et Psalmi', $lang);
-    }
+  my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
+  if ($w) {
+    @psalmi = split("\n", $w);
+    $comment = $c;
+    $prefix .= ' ' . translate('et Psalmi', $lang);
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
   my $i = 0;
@@ -160,8 +157,13 @@ sub psalmi_matutinum_monastic {
       if (exists($winner{LectioE})) {    #** set evangelium
         my %w = (columnsel($lang)) ? %winner : %winner2;
         my @w = split("\n", $w{LectioE});
-        $w = '';
 
+        $w[0] =~ s/^(v. )?/v./;
+        splice(@w, 1, 1, "R. " . translate("Gloria tibi Domine", $lang), $w[1]);
+        if ($w[-1] !~ /Te decet/) { push(@w, "\$Te decet"); }
+        splice(@w, -1, 1, "R. " . translate("Amen", $lang), "_", $w[-1]);
+
+        $w = '';
         foreach $item (@w) {
           if ($item =~ /^([0-9:]+)\s+(.*)/s) {
             my $rest = $2;
@@ -186,6 +188,12 @@ sub psalmi_matutinum_monastic {
       if ($dayname[0] =~ /Quad[56]/i) { $name .= '5'; }
       $w = $s{"MM Capitulum $name"};
     }
+  }
+  if (!$w && $commune) {
+    my $name = $commune;
+    $name =~ s/.*M.//;
+    $name =~ s/\.txt//;
+    $w = $s{"MM Capitulum $name"};
   }
   if (!$w) { $w = $s{'MM Capitulum'}; }
   push(@s, "!!Capitulum");
@@ -306,13 +314,13 @@ sub legend_monastic {
 
   my $resp = '';
 
-  if (exists($w{Responsory6})) {
-    $resp = $w{Responsory6};
+  if (exists($w{Responsory1})) {
+    $resp = $w{Responsory1};
   } else {
     my %c = (columnsel($lang)) ? %commune : %commune2;
 
-    if (exists($c{Responsory6})) {
-      $resp = $c{Responsory6};
+    if (exists($c{Responsory1})) {
+      $resp = $c{Responsory1};
     } else {
       $resp = "Responsory for ne lesson not found!";
     }
@@ -325,7 +333,9 @@ sub brevis_monastic {
   my $lang = shift;
   absolutio_benedictio($lang);
   my %b = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
-  push(@s, $b{"MM LB$dayofweek"});
+  my $lectio  = $b{"MM LB$dayofweek"};
+  $lectio =~ s/&Gloria1?/&Gloria1/;
+  push(@s, $lectio);
 }
 
 #*** regula($lang)

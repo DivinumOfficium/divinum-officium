@@ -4,16 +4,16 @@ Feria II = Veníte, * Exsultémus Dómino.
 Feria III = Jubilémus Deo, * Salutári nostro.
 Feria IV = Deum magnum Dóminum, * Veníte, adorémus.
 Feria V = Regem magnum Dóminum, * Veníte, adorémus.
-Feria VI =  Dóminum, Deum nostrum, * Veníte, adorémus.
+Feria VI = Dóminum, Deum nostrum, * Veníte, adorémus.
 Sabbato = Pópulus Dómini, et oves páscuæ ejus: * Veníte, adorémus.
 Invit 1 = Adorémus Dóminum, * Quóniam ipse fecit nos.
 
 [Invit Trid]
-Dominica=Adorémus Dóminum, * Qui fecit nos. 
+Dominica=Adorémus Dóminum, * Qui fecit nos.
 Feria II=Veníte, * Exsultémus Dómino.
-Feria III=Jubilémus Deo, * Salutári nostro. 
-Feria IV=In manu tua Domine * Omnes fines terrae. 
-Feria V=Dominum qui fecit nos, * Venite adoremus. 
+Feria III=Jubilémus Deo, * Salutári nostro.
+Feria IV=In manu tua Domine * Omnes fines terrae.
+Feria V=Dominum qui fecit nos, * Venite adoremus.
 Feria VI=Adorémus Dóminum, * Quóniam ipse fecit nos.
 Sabbato=Dóminum, Deum nostrum, * Veníte, adorémus.
 
@@ -52,25 +52,11 @@ _
 Præstet hoc nobis Déitas beáta
 Patris, ac Nati, paritérque Sancti
 Spíritus, cujus résonat per omnem
-Glória mundum.  
+Glória mundum.
 Amen.
 
 [Day0 HymnusM]
-v. Nocte surgéntes vigilémus omnes,
-Semper in Psalmis meditémur, atque
-Víribus totis Dómino cánamus
-Dulciter hymnos.
-_
-Ut pio Regi páriter canéntes,
-Cum suis sanctis mereámur aulam
-Ingredi cæ1i, simul et beátam
-Dúcere vitam.
-_
-Præstet hoc nobis Déitas beata
-Patris, ac Nati, paritérque Sancti
-Spíritus, cuius reboat per ómnem
-Glória mundum.
-Amen.
+@:Day0 Hymnus:s/Voce concórdi/Víribus totis/ s/perénnem/beátam/ s/résonat/réboat/
 
 [Day0 Hymnus1M]
 v. Primo dierum ómnium,
@@ -162,20 +148,7 @@ Regnans per omne sǽculum.
 Amen.
 
 [Day1 HymnusM]
-v. Somno reféctis, ártubus,
-Spreto cubíli, súrgimus:
-Nobis Pater canéntibus Adésse te depóscimus. _
-Te lingua primum cóncinat,
-Te mentis ardor ámbiat: Ut áctuum sequéntium Tu, Sancte, sis exórdium. _
-Cedant ténebræ lúmini,
-Et nox diúrno síderi, Ut culpa quam nox íntulit, Lucis labáscat múnere.
-_ Precamur iidem súpplices,
-Noxas ut omnes ámputes,
-Et ore te canéntium
-Laudéris in perpetuum. _
-Præsta, Pater piíssime, Patríque compar Unice,
-Cum Spíritu Paráclito
-Regnans per omne sǽculum. Amen.
+@:Day1 Hymnus:s/omni témpore/in perpetuum/
 
 [Day1 Hymnus]
 {:H-MatFeria:}v. Somno reféctis ártubus,
@@ -205,19 +178,7 @@ Regnans per omne sǽculum.
 Amen.
 
 [Day2 HymnusM]
-v. Consors patérni lúminis, Lux ipse lucis, et dies,
-Noctem canéndo rúmpimus:
-Assiste postulántibus. _
-Aufer ténebras méntium,
-Fuga catérvas dǽmonum, Expélle somnoléntiam,
-Ne pigritántes óbruat. _
-Sic, Christe, nobis ómnibus Indúlgeas credéntibus,
-Ut prosit exorántibus,
-Quod præcinéntes psállimus. _
-Præsta, Pater piíssime, Patríque compar Unice,
-Cum Spíritu Paráclito
-Regnans per omne sǽculum.
-Amen.
+@:Day2 Hymnus
 
 [Day2 Hymnus]
 {:H-MatFeria:}v. Consors patérni lúminis,
@@ -242,27 +203,7 @@ Regnans per omne sǽculum.
 Amen.
 
 [Day3 HymnusM]
-v. Rerum Creátor óptime,
-Rectórque noster, áspice:
-Nos a quiéte nóxia
-Mersos sopóre líbera. _
-Te, sancte Christe, póscimus,
-Ignósce tu criminibus:
-Ad confiténdum súrgimus, Morásque noctis rúmpimus.
-_
-Mentes manúsque tóllimus,
-Prophéta sicut nóctibus
-Nobis geréndum prǽcipit,
-Paulúsque gestis cénsuit.
-_
-Vides malum, quod géssimus:
-Occúlta nostra pándimus:
-Preces geméntes fúndimus,
-Dimítte quod peccávimus. _
-Præsta, Pater piíssime, Patríque compar Unice,
-Cum Spíritu Paráclito
-Regnans per omne sǽculum.
-Amen.
+@:Day3 Hymnus:s/culpis ómnibus/tu criminibus/
 
 [Day3 Hymnus]
 {:H-MatFeria:}v. Rerum Creátor óptime,
@@ -292,24 +233,7 @@ Regnans per omne sǽculum.
 Amen.
 
 [Day4 HymnusM]
-v. Nox atra rerum cóntegit
-Terræ colóres ómnium:
-Nos confiténtes póscimus Te, iuste Iudex córdium.
-_
-Ut áuferas piácula,
-Sordésque mentis abluas:
-Donésque, Christe, grátiam,
-Ut arceántur crímina. _
-Mens ecce torpet ímpia,
-Quam culpa mordet nóxia:
-Obscúra gestit tóllere,
-Et te, Redémptor, quǽrere. _
-Repélle tu calíginem Intrínsecus quam máxime, Ut in beáto gáudeat
-Se collocári lúmine. _
-Præsta, Pater piíssime, Patríque compar Unice,
-Cum Spíritu Paráclito
-Regnans per omne sǽculum.
-Amen.
+@:Day4 Hymnus
 
 [Day4 Hymnus]
 {:H-MatFeria:}v. Nox atra rerum cóntegit
@@ -339,26 +263,7 @@ Regnans per omne sǽculum.
 Amen.
 
 [Day5 HymnusM]
-v. Tu Trinitátis Unitas,
-Orbem poténter quæ regis, Atténde laudum cántica,
-Quæ excubántes psállimus. _
-Nam léctulo consúrgimus
-Noctis quiéto témpore,
-Ut flagitémus vúlnerum,
-A te medélam ómnium. _
-Quo fraude quidquid dǽmonum In nóctibus delíquimus,
-Abstérgat illud cǽlitus Tuæ potéstas glóriæ. _
-Ne corpus astet sórdidum,
-Nec torpor instet córdium, Ne críminis contágio
-Tepéscat ardor spíritus. _
-Ob hoc Redémptor, quǽsumus,
-Reple tuo nos lúmine,
-Per quod diérum círculis
-Nullis ruámus áctibus.
-_ Præsta, Pater piíssime, Patríque compar Unice,
-Cum Spíritu Paráclito
-Regnans per omne sǽculum.
-Amen.
+@:Day5 Hymnus:s/vúlnerum\./ómnium./ s/ómnium/vúlnerum/ s/astet/adsit/
 
 [Day5 Hymnus]
 {:H-MatFeria:}v. Tu, Trinitátis Unitas,
@@ -393,20 +298,28 @@ Regnans per omne sǽculum.
 Amen.
 
 [Day6 HymnusM]
-v. Summæ Deus cleméntiæ, Mundique Factor machinæ,
+v. Summæ Deus cleméntiæ,
+Mundique Factor machinæ,
 Unus potentialiter,
 Trinúsque personaliter:
 _
-Nostros pius cum cánticis Fletus benígne súscipe:
+Nostros pius cum cánticis
+Fletus benígne súscipe:
 Quo corde puro sórdibus
-Te perfruámur lárgius. _
+Te perfruámur lárgius.
+_
 Lumbos, iecúrque mórbidum
 Adúre igni cóngruo,
-Accíncti ut sint perpetim, Luxu remóto péssimo. _
+Accíncti ut sint perpetim,
+Luxu remóto péssimo.
+_
 Ut quique horas nóctium
 Nunc concinéndo rúmpimus,
-Donis beátæ pátriæ Ditémur omnes áffatim. _
-Præsta, Pater piíssime, Patríque compar Unice,
+Donis beátæ pátriæ
+Ditémur omnes áffatim
+_
+Præsta, Pater piíssime,
+Patríque compar Unice,
 Cum Spíritu Paráclito
 Regnans per omne sǽculum.
 Amen.
@@ -438,45 +351,27 @@ Cum Spíritu Paráclito
 Regnans per omne sǽculum.
 Amen.
 
-[Day6 HymnusM]
-{:H-MatFeria:}v. Summae Deus clementiae,
-Mundique factor machinae,
-Unus potentialiter,
-Trinusque personaliter:
-_
-Nostro pius cum canticis
-Fletus benigne suscipe,
-Quo corde puro sordibus
-Te perfruamur largius.
-_
-Lumbos jecurque morbidum
-Adure igni congruo,
-Accineti ut sint perpetim,
-Luxu remoto pessimo.
-_
-Ut quique horas noctium
-Nunc concinendo rumpimus,
-Donis beatae patriae
-Ditemur omnes affatim.
-_
-* Praesta, Pater piissime,
-Patrique compar Únice,
-Cum Spiritu Paraclito,
-Regnans per omne saeculum.
-Amen.
-
 [HymnusM Adv]
 v. Verbum supérnum, pródiens
-A Patre olim éxiens, Qui natus orbi súbvenis, Cursu declivi témporis.
-_ Illúmina nunc péctora,
-Tuóque amore cóncrema; Audito ut præcónio
-Sint pulsa tandem lúbrica. _
-Iudéxque cum post áderis Rimári facta péctoris,
+A Patre olim éxiens,
+Qui natus orbi súbvenis,
+Cursu declivi témporis.
+_
+Illúmina nunc péctora,
+Tuóque amore cóncrema;
+Audito ut præcónio
+Sint pulsa tandem lúbrica.
+_
+Iudéxque cum post áderis
+Rimári facta péctoris,
 Reddens vicem pro ábditis,
-Iustisque regnum pro bonis. _
+Iustisque regnum pro bonis.
+_
 Non demum arctémur malis
 Pro qualitáte críminis;
-Sed cum beátis compotes Simus perénnes cælibes. _
+Sed cum beátis compotes
+Simus perénnes cælibes.
+_
 Laus, honor, virtus, glória,
 Deo Patri, et Fílio,
 Sancto simul Paráclito,
@@ -490,7 +385,7 @@ Qui natus orbi súbvenis,
 Labénte cursu témporis:
 _
 Illúmina nunc péctora,
-Tuóque amore cóncrema; 
+Tuóque amore cóncrema;
 Ut cor cadúca déserens
 Cæli volúptas ímpleat.
 _
@@ -511,32 +406,12 @@ Sæclum per omne glória.
 Amen.
 
 [HymnusM Quad]
-v. Ex more docti mýstico Servémus hoc ieiúnium, Deno diérum círculo Ducto quater notíssimo.
-_ Lex et prophetæ prímitus
-Hoc prætulérunt, póstmodum
-Christus sacrávit, ómnium
-Rex atque factor témporum. _
-Utámur ergo párcius
-Verbis, cibis et pótibus,
-Somno, iocis, et árctius
-Perstémus in custódia. _
-Vitémus autem péssima,
-Quæ súbruunt mentes vagas:
-Nullúmque demus cállidi Hostis locum tyránnidi. _
-Dicámus omnes cérnui,
-Clamémus ore súpplici, Plorémus ante Júdicem, Flectámus iram víndicem. _ Nostris malis offéndimus.
-Tuam, Deus, cleméntiam:
-Effúnde nobis désuper, Remíssor, indulgéntiam.
-_ Meménto quod sumus tui, Licet cadúci, plásmatis:
-Ne des honórem nóminis
-Tui, precámur, álteri. _
-Laxa malum, quod fécimus, Auge bonum, quod póscimus:
-Placére quo tandem tibi
-Possímus hic, et pérpetim.
-_
-Præsta, beáta Trínitas,
-Concéde, simplex Únitas; Ut fructuósa sint tuis Jejuniórum múnera.
-Amen.
+@:Hymnus Quad:s/nóxia/péssima/ 1-19
+@:Hymnus Quad:24
+@:Hymnus Quad:s/ore súpplici/atque sínguli/ 23
+@:Hymnus Quad:22
+@:Hymnus Quad:21
+@:Hymnus Quad:25-44
 
 [Hymnus Quad]
 {:H-MatQuad:}v. Ex more docti mýstico
@@ -586,31 +461,14 @@ Jejuniórum múnera.
 Amen.
 
 [HymnusM Quad5]
-v. Pange, lingua, gloriósi
-Prœlium certáminis, Et super Crucis trophæum
-Dic triúmphum nóbilem,
-Quáliter Redémptor orbis Immolátus vícerit. _
-De paréntis protoplásti Fraude Factor cóndolens, Quando pomi noxiális
-Morte morsu córruit, Ipse lignum tunc notávit,
-Damna ligni ut sólveret.
-_ Hoc opus nostræ salútis
-Ordo depopóscerat,
-Multifórmis proditóris Ars ut artem fálleret, Et medélam ferret inde,
-Hostis unde lǽserat. _
-Quando venit ergo sacri Plenitúdo témporis,
-Missus est ab arce Patris
-Natus, orbis Cónditor,
-Atque ventre virgináli
-Caro factus pródiit. _
-Vagit infans inter arcta
-Cónditus præsépia:
-Membra pannis involúta Virgo Mater álligat:
-Et manus, pedésque, et crura Stricta cingit fáscia. _
+@:Hymnus Quad5:s/Láuream/Prœlium/ s/In necem morsu /Morsu in mortem cór/ s/Dei manus pedésque/manus, pedésque, et crura/ 1-33
+_
 Glória, et honor Deo
-Usqueqáque Atlissimo, Una Patri, Filióque;
+Usqueqáque Atlissimo,
+Una Patri, Filióque;
 Inclyto Paráclito:
 Cui laus est et potéstas,
-Per ætérna sæcula. Amen.
+Per ætérna sæcula. Amen.
 
 [Hymnus Quad5]
 {:H-MatQuad5:}v. Pange, lingua, gloriósi
@@ -658,8 +516,10 @@ Amen.
 
 [HymnusM Pasch]
 v. Rex sempitérne Dómine,
-Rerum Creátor ómnium, Qui eras ante sǽcula
-Semper cum Patre Fílius: _
+Rerum Creátor ómnium,
+Qui eras ante sǽcula
+Semper cum Patre Fílius:
+_
 Qui mundi in primórdio
 Adam plásmasti hominem:
 Cui tuæ imágini
@@ -679,17 +539,21 @@ Quem éditum ex Vírgine
 Pavéscit omnis ánima:
 Per quem et nos resúrgere
 Deóvta mente crédimus.
-_ Qui nobis in Baptísmate
+_
+Qui nobis in Baptísmate
 Donásti indulgéntiam,
-Qui tenebámur vínculis Ligáti consciéntiæ.
+Qui tenebámur vínculis
+Ligáti consciéntiæ.
 _
 Qui Crucem propter hóminem
 Suscípere dignátus es:
 Dedisti tuum sánguinem
 Nostræ salútis pretium.
 _
-Quǽsumus Auctor ómnium, In hoc Pascháli gáudio,
-Ab omni mortis ímpetu Tuum defénde pópulum.
+Quǽsumus Auctor ómnium,
+In hoc Pascháli gáudio,
+Ab omni mortis ímpetu
+Tuum defénde pópulum.
 _
 Glória tibi Dómine,
 Qui surrexísti a mórtuis,
@@ -741,79 +605,80 @@ Amen.
 
 [MM LB1]
 !Lam 2:19
-v. Consurge, lauda in nocte, in principio vigiliarum; effunde sicut aquam cor tuum ante conspectum Domini: leva ad eum manus tuas. 
+v. Consúrge, lauda in nocte in princípio vigiliárum: effúnde sicut aquam cor tuum ante conspéctum Dómini: leva ad eum manus tuas.
 $Tu autem
 _
-R.br. Benedicam Dominum * in omni tempore.
-R. Benedicam Dominum * in omni tempore.
-V. Semper laus eius in ore meo.
-R. In omni tempore.
+R.br. Benedícam Dóminum * In omni témpore.
+R. Benedícam Dóminum * In omni témpore.
+V. Semper laus ejus in ore meo.
+R. In omni témpore.
 &Gloria
-R. Benedicam Dominum in omni tempore.
+R. Benedícam Dóminum * In omni témpore.
 
 [MM LB2]
 !Prov 3:19-20
-v. Dominus sapientia fundavit terram; stabilivit caelos prudentia. Sapientia illius eruperunt abyssi, et nubes rore concrescunt. 
+v. Dóminus sapiéntia fundávit terram: stabilívit cælos prudéntia. Sapiéntia illíus erupérunt abýssi, et nubes rore concréscunt.
 $Tu autem
 _
-R.br. Deus in nomine tuo * salvum me fac.
-R. Deus in nomine tuo * salvum me fac.
-V. Et in misericordia tua libera me.
+R.br. Deus, in nómine tuo * salvum me fac.
+R. Deus, in nómine tuo * salvum me fac.
+V. Et in misericórdia tua líbera me.
 R. Salvum me fac.
 &Gloria
-R.br. Deus in nomine tuo salvum me fac.
+R. Deus, in nómine tuo * salvum me fac.
 
 [MM LB3]
 !Sap 1:1-2
-v. Diligite justitiam, qui judicatis terram. Sentite de Domino in bonitate, et in simplicitate cordis quaerite illum: quoniam invenitur ab his qui non tentant illum, apparet autem eis qui fidem habent in illum. 
+v. Dilígite iustítiam, qui iudicátis terram. Sentíte de Dómino in bonitáte, et in simplicitáte cordis quǽrite illum: quóniam invenítur ab his qui non tentant illum, appáret autem eis qui fidem habent in illum.
 $Tu autem
 _
-R.br. In te, Domine, speravi * non confundar in aeternum.
-R. In te, Domine, speravi * non confundar in aeternum.
-V. In justitia tua libera me et eripe me.
-R. Non confundar in aeternum.
+R.br. In te, Dómine, sperávi: * non confúndar in ætérnum.
+R. In te, Dómine, sperávi: * non confúndar in ætérnum.
+V. In justítia tua líbera me, et éripe me.
+R. Non confúndar in ætérnum.
 &Gloria
-R. In te, Domine, speravi * non confundar in aeternum.
+R. In te, Dómine, sperávi: * non confúndar in ætérnum.
 
 [MM LB4]
 !Sap 3:9
-v. Qui confidunt in illo intelligent veritatem, et fideles in dilectione acquiescent illi, quoniam donum et pax est electis ejus. 
+v. Qui confídunt in illo intélligent veritátem, et fidéles in dilectióne acquiéscent illi: quóniam donum et pax est eléctis eius.
 $Tu autem
 _
-R.br. Exsultate Deo * adjutori nostro.
-R. Exsultate Deo * adjutori nostro.
-V. Jubilate Deo Jacob.
-R. Adjutori nostro.
+R.br. Exsultáte Deo, * adjutóri nostro.
+R. Exsultáte Deo, * adjutóri nostro.
+V. Jubiláte Deo Jacob.
+R. Adjutóri nostro.
 &Gloria
-R. Exsultate Deo * adjutori nostro.
+R. Exsultáte Deo, * adjutóri nostro.
 
 [MM LB5]
 !Sap 1:6-7
-v. Benignus est enim spiritus sapientiae, et non liberabit maledicum a labiis suis: quoniam renum illius testis est Deus, et cordis illius scrutator est verus, et linguae ejus auditor. Quoniam spiritus Domini replevit orbem terrarum, et hoc quod continet omnia, scientiam habet vocis. 
+v. Benígnus est enim spíritus sapiéntiæ, et non liberábit malédicum a lábiis suis: quóniam renum illíus testis est Deus, et cordis illíus scrutátor est verus, et linguæ eius audítor. Quóniam Spíritus Dómini replévit orbem terrárum, et hoc quod cóntinet ómnia, sciéntiam habet vocis.
 $Tu autem
 _
-R.br. Misericordias tuas Domine, * In aeternum cantabo.
-R. Misericordias tuas Domine, * In aeternum cantabo.
-V. In generatione et progenie.
-R. In aeternum cantabo.
+R.br. Misericórdias tuas Dómini * in ætérnum cantábo.
+R. Misericórdias tuas Dómini * in ætérnum cantábo.
+V. In generatióne et progénie.
+R. In ætérnum cantábo.
 &Gloria
-R. Misericordias tuas Domine, * In aeternum cantabo.
+R. Misericórdias tuas Dómini * in ætérnum cantábo.
 
 [MM LB6]
-!Eccli 12:2-3
-v. Benefac justo, et invenies retributionem magnam: et si non ab ipso, certe a Domino. Non est enim ei bene qui assiduus est in malis, et eleemosynas non danti: quoniam et Altissimus odio habet peccatores, et misertus est pœnitentibus.
+!Eccl 12:2-3
+v. Bénefac iusto, et invénies retributiónem magnam: et si non ab ipso, certe a Dómino. Non est enim ei bene qui assíduus est in malis, et eleemósynas non danti: quóniam et Altíssimus ódio habet peccatóres, et misértus est pœniténtibus.
 $Tu autem
 _
-R.br. Domine * Exaudi orationem meam.
-R. Domine * Exaudi orationem meam.
-V. Et clamor meus ad te veniat.
-R. Exaudi orationem meam.
+
+R.br. Dómine, * exáudi oratiónem meam.
+R. Dómine, * exáudi oratiónem meam.
+V. Et clamor meus ad te véniat.
+R. Exáudi oratiónem meam.
 &Gloria
-R. Domine * Exaudi orationem meam.
- 
+R. Dómine, * exáudi oratiónem meam.
+
 [MM Capitulum]
 !1 Cor 16:13-14
-v. Vigilate, state in fide, viriliter agite, et confortamini. Omnia vestra in caritate fiant. 
+v. Vigiláte, state in fide, viríliter ágite, et confortámini. Omnia vestra in caritáte fiant.
 $Deo gratias
 _
 V. Beati habitant in domo tua, Domine.
@@ -821,7 +686,7 @@ R. In saecula saeculorum laudabunt te.
 
 [MM Capitulum Adv]
 !Titus 2:12-13
-v. Sobrie, et juste, et pie vivamus in hoc saeculo, exspectantes beatam spem, et adventum gloriae magni Dei, et Salvatoris nostri Jesu Christi: 
+v. Sóbrie, et juste, et pie vivámus in hoc sǽculo, exspectántes beátam spem, et advéntum glóriæ magni Dei, et Salvatóris nostri Jesu Christi.
 $Deo gratias
 _
 V. Veni, Domine, et noli tardare.
@@ -829,7 +694,7 @@ R. Relaxa facinora plebi tuae.
 
 [MM Capitulum Quad]
 !Isa 1:16-18
-v. Lavamini, mundi estote; auferte malum cogitationum vestrarum ab oculis meis: quiescite agere perverse, discite benefacere; quaerite judicium, subvenite oppresso, judicate pupillo, defendite viduam. Et venite, et arguite me, dicit Dominus. 
+v. Lavámini, mundi estóte: auférte malum cogitatiónum vestrárum ab óculis meis: quiéscite ágere pervérse, díscite benefácere: quǽrite iudícium, subveníte opprésso, iudicáte pupíllo, deféndite víduam. Et veníte, et argúite me, dicit Dóminus.
 $Deo gratias
 _
 V. In manibus portabunt te.
@@ -837,7 +702,7 @@ R. Ne forte offendas ad lapidem pedem tuum.
 
 [MM Capitulum Quad5]
 !Jer 11:18-19
-v. Tu autem, Domine, demonstrasti mihi, et cognovi: tunc ostendisti mihi studia eorum. Et ego quasi agnus mansuetus, qui portatur ad victimam. 
+v. Tu autem Dómine demonstrásti mihi, et cognóvi: tunc ostendísti mihi stúdia eórum. Et ego quasi agnus mansuétus, qui portátur ad víctimam.
 $Deo gratias
 _
 V. Eripe me, Domine, ab homine malo.
@@ -845,80 +710,107 @@ R. A viro iniquo eripe me.
 
 [MM Capitulum Pasc]
 !Rom 6:4
-v. Consepulti enim sumus cum illo per baptismum in mortem: ut quomodo Christus surrexit a mortuis per gloriam Patris, ita et nos in novitate vitae ambulemus. 
+v. Consepúlti enim sumus cum illo per baptísmum in mortem: ut quómodo Christus surréxit a mórtuis per glóriam Patris, ita et nos in novitáte vitæ ambulémus.
 $Deo gratias
 _
 V. Resurrexit Dominus, alleluia.
 R. Sicut dixit vobis, alleluia.
 
-[MM Capitulum C2]
-!Eccli 15:3
-v. Cibabit illum pane vitae et intellectus, et aqua sapientiae salutaris potabit illum Dominus Deus noster.
+[MM Capitulum C1]
+!Act 5:12
+v. Per manus autem Apostolórum fiébant signa et prodígia multa in plebe.
 $Deo gratias
-_
-V. Laetabitur justus in Domino.
-R. Et laudabuntur omnes recti corde.
 
-[MM Capitulum C3]
-!Sap 10:17
-v. Reddidit justis mercedem laborum suorum, et deduxit illos in via mirabili: et fuit illis in velamento diei, et in luce stellarum per noctem. 
+[MM Capitulum C1p]
+!Sap 5:5
+v. Ecce quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est.
+$Deo gratias
+
+[MM Capitulum C2]
+!Eccl 15:3
+v. Cibábit illum pane vitae et intelléctus, et aqua sapiéntiae salutáris potávit illum Dóminus Deus noster.
 $Deo gratias
 _
-V. Justorum animae in manu Dei sunt.
-R. Et non tanget illos tormentum mortis.
+V. Laetábitur iustus in Dómino, et sperábit in eo.
+R. Et laudabúntur omnes recti corde.
 
 [MM Capitulum C2p]
 !Sap 5:5
-v. Ecce quomodo computati sunt inter filios Dei, et inter sanctos sors illorum est. 
+v. Ecce quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est.
 $Deo gratias
 _
-V. Pretiosa in conspectu Domini, alleluia.
-R. Mors sanctorum eius, alleluia.
+V. Pretiosa in Conspectu Domini, alleluia
+R. Mors sanctorum eius, alleluia
+
+[MM Capitulum C3]
+!Sap 10:17
+v. Réddidit Deus mercédem labórum sanctórum suórum, et dedúxit illos in via mirábili: et fuit illis in velaménto diéi, et in luce stellárum nocte.
+$Deo gratias
+_
+V. Justórum ánimæ in manu Dei sunt.
+R. Et non tanget illos torméntum mortis.
 
 [MM Capitulum C3p]
-!Sap 5:5
-v. Ecce quomodo computati sunt inter filios Dei, et inter sanctos sors illorum est. 
-$Deo gratias
-_
-V. Pretiosa in Conspectu Domini, alleluia.
-R. Mosr sanctorum eius, alleluia.
+@:MM Capitulum C2p
 
 [MM Capitulum C4]
-!Eccli 44:20
-v. Non est inventus similis illi in gloria: qui conservavit legem Excelsi. Ideo jurejurando fecit illum Dominus crescere in plebem suam. 
+!Eccl 44:20
+v. Non est invéntus símilis illi, † qui conserváret legem Excélsi: * ideo jurejurándo fecit illum Dóminus créscere in plebem suam.
 $Deo gratias
 _
-V. Justus germinabit sicut lilium.
-R. Et florebit in aeternum ante Dominum.
+V. Justus germinávit sicut lílium.
+R. Et florébit in aetérnum ante Dóminum.
 
 [MM Capitulum C5]
 !Eccli 39:6
-v. Justus cor suum tradidit ad vigilandum diluculo ad Dominum, qui fecit illum, et in conspectu Altissimi deprecabitur. 
+v. Justus cor suum trádidit ad vigilándum dilúculo ad Dóminum, qui fecit illum, * et in conspéctu Altíssimi deprecábitur.
 $Deo gratias
-_
-V. Justus germinabit sicut lilium.
-R. Et florebit in aeternum ante Dominum.
+V. Justus germinávit sicut lílium.
+R. Et florébit in aetérnum ante Dóminum.
 
 [MM Capitulum C6]
 !2 Cor 11:2
-v. Aemulor enim vos Dei aemulatione. Despondi enim vos uni viro, virginem castam exhibere Christo. 
+v. Ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro, vírginem castam exhibére Christo.
 $Deo gratias
 _
-V. Dilexisti justitiam et odisti iniquitatem.
-R. Propterea unxit te Deus, Deus tuus oleo laetitiae.
+V. Dilexísti iustítiam, et odísti iniquitátem.
+R. Proptérea unxit te Deus, Deus tuus, óleo lætítiæ.
 
 [MM Capitulum C6m]
-!Eccli 51:4-5
-v. Et liberasti me, secundum multitudinem misericordiae nominis tui, a rugientibus praeparatis ad escam: de manibus quaerentium animam meam, et de portis tribulationum quae circumdederunt me; 
+!Eccl 51:4-5
+v. Liberásti me, secúndum multitúdinem misericórdiæ nóminis tui a rugiéntibus, præparátis ad escam, †: de mánibus quæréntium ánimam meam, * et de portis tribulatiónum quæ circumdedérunt me.
 $Deo gratias
 _
-V. Dilexisti justitiam et odisti iniquitatem.
-R. Propterea unxit te Deus, Deus tuus oleo laetitiae.
+V. Dilexísti iustítiam, et odísti iniquitátem.
+R. Proptérea unxit te Deus, Deus tuus, óleo lætítiæ.
 
 [MM Capitulum C7]
 !Prov 31:20-21
-v. Manum suam apéruit ínopi, et palmas suas exténdit ad páuperem. Non timébit dómui suae a frigóribus nivis. 
+v. Manum suam apéruit ínopi, † et palmas suas exténdit ad páuperem. * Non timébit dómui suæ a frigóribus nivis.
+$Deo gratias
+V. Dilexísti iustítiam, et odísti iniquitátem.
+R. Proptérea unxit te Deus, Deus tuus, óleo lætítiæ.
+
+[MM Capitulum C8]
+!Ap 21:3
+v. Et audívi vocem magnam de throno dicéntem: Ecce tabernáculum Dei cum homínibus, et habitábit cum eis. Et ipsi pópulus eius erunt, et ipse Deus cum eis erit eórum Deus.
 $Deo gratias
 _
-V. Dilexisti justitiam et odisti iniquitatem.
-R. Propterea unxit te Deus, Deus tuus, oleo laetitiae.
+V. Locus iste sanctus est, in quo orat sacérdos.
+R. Pro delíctis et peccátis pópuli.
+
+[MM Capitulum C10]
+!Si 24:26
+v. Transíte ad me, omnes qui concupíscitis me, et a generatiónibus meis implémini: spíritus enim meus super mel dulcis, et heréditas mea super mel et favum: memória mea in generatióne sæculórum.
+$Deo gratias
+_
+V. Speciósa facta es et suávis.
+R. In delíciis tuis, sancta Dei Génetrix.
+
+[MM Capitulum C11]
+!Sir 24:15-16
+v. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.
+$Deo gratias.
+_
+V. Adjuvábit eam Deus vultu suo.
+R. Deus in médio ejus, non commovébitur.
