@@ -112,7 +112,7 @@ sub psalmi_matutinum_monastic {
 
   if ($rule =~ /(9|12) lectio/i && $rank > 4.9) {
     lectiones(1, $lang);
-  } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i && $month < 11) {
+  } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i && $month < 11 && $winner{Rank} !~ /vigil/i) {
     if ($winner =~ /Tempora/i
       || !(exists($winner{Lectio94}) || exists($winner{Lectio4})))
     {
