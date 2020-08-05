@@ -1,21 +1,41 @@
 @Tempora/Pent12-0
 
+[Rule]
+12 lectiones
+
+[Lectio9]
+@Tempora/Pent12-0:Lectio7:s/Isaías.*//s
+
+[Lectio10]
+@Tempora/Pent12-0:Lectio7:s/.* Isaías/Isaías/s
+@Tempora/Pent12-0:Lectio8:s/Quos.*//s
+
+[Lectio11]
+@Tempora/Pent12-0:Lectio8:s/.* Quos/Quos/s
+@Tempora/Pent12-0:Lectio9:s/Legisperítus,.*//s
+
+[Lectio12]
+@Tempora/Pent12-0:Lectio9:s/.* Legisperítus,/Legisperítus,/s
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Lucam
+v. Sequéntia sancti Evangélii secúndum Lucam
 !Luc 10:23-37
-10:23 Et conversus ad discipulos suos, dixit: Beati oculi qui vident quae vos videtis.
-10:24 Dico enim vobis quod multi prophetae et reges voluerunt videre quae vos videtis, et non viderunt: et audire quae auditis, et non audierunt.
-10:25 Et ecce quidam legisperitus surrexit tentans illum, et dicens: Magister, quid faciendo vitam aeternam possidebo?
-10:26 At ille dixit ad eum: In lege quid scriptum est? quomodo legis?
-10:27 Ille respondens dixit: Diliges Dominum Deum tuum ex toto corde tuo, et ex tota anima tua, et ex omnibus virtutibus tuis, et ex omni mente tua: et proximum tuum sicut teipsum.
-10:28 Dixitque illi: Recte respondisti: hoc fac, et vives.
-10:29 Ille autem volens justificare seipsum, dixit ad Jesum: Et quis est meus proximus?
-10:30 Suscipiens autem Jesus, dixit: Homo quidam descendebat ab Jerusalem in Jericho, et incidit in latrones, qui etiam despoliaverunt eum: et plagis impositis abierunt semivivo relicto.
-10:31 Accidit autem ut sacerdos quidam descenderet eadem via: et viso illo praeterivit.
-10:32 Similiter et Levita, cum esset secus locum, et videret eum, pertransiit.
-10:33 Samaritanus autem quidam iter faciens, venit secus eum: et videns eum, misericordia motus est.
-10:34 Et appropians alligavit vulnera ejus, infundens oleum et vinum: et imponens illum in jumentum suum, duxit in stabulum, et curam ejus egit.
-10:35 Et altera die protulit duos denarios, et dedit stabulario, et ait: Curam illius habe: et quodcumque supererogaveris, ego cum rediero reddam tibi.
-10:36 Quis horum trium videtur tibi proximus fuisse illi, qui incidit in latrones?
-10:37 At ille dixit: Qui fecit misericordiam in illum. Et ait illi Jesus: Vade, et tu fac similiter.
+10:23 Et convérsus ad discípulos suos, dixit: Beáti óculi qui vident quæ vos vidétis.
+10:24 Dico enim vobis quod multi prophétæ et reges voluérunt vidére quæ vos vidétis, et non vidérunt: et audíre quæ audítis, et non audiérunt.
+10:25 Et ecce quidam legisperítus surréxit tentans illum, et dicens: Magíster, quid faciéndo vitam ætérnam possidébo?
+10:26 At ille dixit ad eum: In lege quid scriptum est? quómodo legis?
+10:27 Ille respóndens dixit: Díliges Dóminum Deum tuum ex toto corde tuo, et ex tota ánima tua, et ex ómnibus víribus tuis, et ex omni mente tua: et próximum tuum sicut teípsum.
+10:28 Dixítque illi: Recte respondísti: hoc fac, et vives.
+10:29 Ille autem volens iustificáre seípsum, dixit ad Jesum: Et quis est meus próximus?
+10:30 Suscípiens autem Jesus, dixit: Homo quidam descendébat ab Jerúsalem in Jéricho, et íncidit in latrónes, qui étiam despoliavérunt eum: et plagis impósitis abiérunt semivívo relícto.
+10:31 Accidit autem ut sacérdos quidam descénderet eádem via: et viso illo præterívit.
+10:32 Simíliter et Levíta, cum esset secus locum, et vidéret eum, pertránsiit.
+10:33 Samaritánus autem quidam iter fáciens, venit secus eum: et videns eum, misericórdia motus est.
+10:34 Et apprópians alligávit vúlnera ejus, infúndens óleum et vinum: et impónens illum in iuméntum suum, duxit in stábulum, et curam ejus egit.
+10:35 Et áltera die prótulit duos denários, et dedit stabulário, et ait: Curam illíus habe: et quodcúmque supererogáveris, ego cum redíero reddam tibi.
+10:36 Quis horum trium vidétur tibi próximus fuísse illi, qui íncidit in latrónes?
+10:37 At ille dixit: Qui fecit misericórdiam in illum. Et ait illi Jesus: Vade, et tu fac simíliter.
 $Te decet
