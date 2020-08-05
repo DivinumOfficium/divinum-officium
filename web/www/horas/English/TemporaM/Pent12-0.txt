@@ -1,3 +1,17 @@
+[Lectio9]
+@Tempora/Pent12-0:Lectio7:s/Isaiah,.*//s
+
+[Lectio10]
+@Tempora/Pent12-0:Lectio7:s/.* Isaiah,/Isaiah,/s
+@Tempora/Pent12-0:Lectio8:s/They.*//s
+
+[Lectio11]
+@Tempora/Pent12-0:Lectio8:s/.* They/They/s
+@Tempora/Pent12-0:Lectio9:s/This.*//s
+
+[Lectio12]
+@Tempora/Pent12-0:Lectio9:s/.* This/This/s
+
 [LectioE]
 Continuation of the Holy Gospel according to Luke
 !Luke 10:23-37

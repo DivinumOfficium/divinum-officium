@@ -1369,7 +1369,7 @@ sub monthday {
     my @d = days_to_date($t);
     my $dofweek = $d[6];
 
-    if ($version =~ /1960/) {
+    if ($version =~ /1960|Monastic/i) {
       $fday = ($dofweek == 0) ? 1 : 8 - $dofweek;
       $fmonth = $m;
     } else {
@@ -1405,11 +1405,11 @@ sub monthday {
   # Special handling for October with the 1960 rubrics: the III. week vanishes
   # in years when its Sunday would otherwise fall on the 18th-21st (i.e. when
   # the first Sunday in October falls on 4th-7th).
-  $weeks++ if ($m == 11 && $version =~ /1960/ && $weeks >= 2 && (days_to_date($ftime[11 - 9]))[3] >= 4);
+  $weeks++ if ($m == 11 && $version =~ /1960|Monastic/i && $weeks >= 2 && (days_to_date($ftime[11 - 9]))[3] >= 4);
 
   # Special handling for November: the II. week vanishes most years (and always
   # with the 1960 rubrics). Achieve this by counting backwards from Advent.
-  if ($m == 12 && ($weeks > 0 || $version =~ /1960/)) {
+  if ($m == 12 && ($weeks > 0 || $version =~ /1960|Monastic/i)) {
     my $t = date_to_days($date1[1], $date1[0] - 1, $date1[2]);
     if ($tomorrow) { $t += 1; }
     my $advent1 = getadvent($year);
