@@ -912,7 +912,7 @@ sub psalmi_major {
 
   if ($version =~ /monastic/i) {
     my $head = "Daym$dayofweek";
-    if ($winner =~ /Sancti/i && $rank >= 4) { $head = 'DaymF'; }
+    if ($winner =~ /Sancti/i && $rank >= 4 && $dayname[1] !~ /vigil/i) { $head = 'DaymF'; }
     if ($hora =~ /Laudes/i && $dayname[0] =~ /Pasc/i && $head =~ /Daym0/i) { $head = 'DaymP'; }
     @psalmi = split("\n", $psalmi{"$head $hora"});
 
