@@ -292,7 +292,7 @@ sub absolutio_benedictio {
   push(@s, "Absolutio. $a[0]");
   push(@s, "\n");
   push(@s, "V. $a[1]");
-  push(@s, "Benedictio. $a[4]");
+  push(@s, "Benedictio. $a[5]");
   push(@s, "_");
 }
 
