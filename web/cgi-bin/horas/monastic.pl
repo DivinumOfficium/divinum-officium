@@ -210,6 +210,8 @@ sub antetpsalm_mm {
   my $ind = shift;
   my @line = split(';;', $line);
   our $lastantiphon;
+  $lastantiphon =~ s/\s+\*//;
+
   if ($ind == -1) { $lastantiphon = ''; return; }
 
   if ($ind == -2) {
