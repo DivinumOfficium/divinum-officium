@@ -1,0 +1,10 @@
+[Lectio1]
+@Sancti/08-09t::s/Jak .*//s
+
+[Lectio2]
+@Sancti/08-09t:Lectio1:s/.* Jak /Jak /s s/$/~/
+@Sancti/08-09t:Lectio2:s/Pos.uchajmy.*//s
+
+[Lectio3]
+@Sancti/08-09t:Lectio2:s/.* (Pos.uchajmy)/$1/s s/$/~/
+@Sancti/08-09t:Lectio3:s/Pan .*//s
