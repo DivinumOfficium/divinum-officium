@@ -1,3 +1,17 @@
+[Lectio9]
+@Tempora/Pent13-0:Lectio7:s/We.*//s
+
+[Lectio10]
+@Tempora/Pent13-0:Lectio7:s/.* We/We/s
+@Tempora/Pent13-0:Lectio8:s/There.*//s
+
+[Lectio11]
+@Tempora/Pent13-0:Lectio8:s/.* There/There/s
+@Tempora/Pent13-0:Lectio9:s/Such.*//s
+
+[Lectio12]
+@Tempora/Pent13-0:Lectio9:s/.* Such/Such/s
+
 [LectioE]
 Continuation of the Holy Gospel according to Luke
 !Luke 17:11-19

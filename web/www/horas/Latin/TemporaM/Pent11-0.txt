@@ -1,13 +1,83 @@
 @Tempora/Pent11-0
 
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Tempora/Pent11-0:Lectio1:
+@Tempora/Pent11-0:Lectio2:s/!.*//:s/4 .*//s
+
+[Lectio2]
+@Tempora/Pent11-0:Lectio2:s/-7/-6/ :s/7 .*//s
+
+[Lectio3]
+@Tempora/Pent11-0:Lectio2:s/-7/-8/ s/4-/7-/ s/[^!]4 .*7 /\n7 /s
+@Tempora/Pent11-0:Lectio3:s/!.*//:s/9 .*//s
+
+[Lectio4]
+@Tempora/Pent11-0:Lectio3:
+
+[Responsory4]
+@Tempora/Pent03-1Feria:Responsory1
+
+[Lectio5]
+@Tempora/Pent11-0:Lectio4:s/Convertítque .*//s
+
+[Responsory5]
+@Tempora/Pent10-0:Responsory4
+
+[Lectio6]
+@Tempora/Pent11-0:Lectio4:s/.* Convertítque /Convertítque /s s/$/~/
+@Tempora/Pent11-0:Lectio5:s/Nóverat .*//s
+
+[Responsory6]
+@Tempora/Pent10-0:Responsory5
+
+[Lectio7]
+@Tempora/Pent11-0:Lectio5:s/.* Nóverat /Nóverat /s
+
+[Responsory7]
+@Tempora/Pent10-0:Responsory6
+
+[Lectio8]
+@Tempora/Pent11-0:Lectio6
+
+[Responsory8]
+@Tempora/Pent03-1Feria:Responsory2
+
+[Lectio9]
+@Tempora/Pent11-0:Lectio7:s/Dígitos .*//s
+
+[Responsory9]
+@Tempora/Pent01-3:Responsory1
+
+[Lectio10]
+@Tempora/Pent11-0:Lectio7:s/.* Dígitos /Dígitos /s
+@Tempora/Pent11-0:Lectio8:s/Qui suspíciens .*//s
+
+[Responsory10]
+@Tempora/Pent01-3:Responsory3
+
+[Lectio11]
+@Tempora/Pent11-0:Lectio8:s/.* Qui suspíciens /Qui suspíciens /s
+
+[Responsory11]
+@Tempora/Pent03-2Feria:Responsory1
+
+[Lectio12]
+@Tempora/Pent11-0:Lectio9
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Marcum
+v. Sequéntia sancti Evangélii secúndum Marcum
 !Marc 7:31-37
-7:31 Et iterum exiens de finibus Tyri, venit per Sidonem ad mare Galilaeae inter medios fines Decapoleos. 
-7:32 Et adducunt ei surdum, et mutum, et deprecabantur eum, ut imponat illi manum. 
-7:33 Et apprehendens eum de turba seorsum, misit digitos suos in auriculas ejus: et exspuens, tetigit linguam ejus: 
-7:34 et suscipiens in caelum, ingemuit, et ait illi: Ephphetha, quod est, Adaperire. 
-7:35 Et statim apertae sunt aures ejus, et solutum est vinculum linguae ejus, et loquebatur recte. 
-7:36 Et praecepit illis ne cui dicerent. Quanto autem eis praecipiebat, tanto magis plus praedicabant: 
-7:37 et eo amplius admirabantur, dicentes: Bene omnia fecit: et surdos fecit audire, et mutos loqui. 
+7:31 Et íterum éxiens de fínibus Tyri, venit per Sidónem ad mare Galilǽæ inter médios fines Decapóleos.
+7:32 Et addúcunt ei surdum, et mutum, et deprecabántur eum, ut impónat illi manum.
+7:33 Et apprehéndens eum de turba seórsum, misit dígitos suos in aurículas ejus: et éxspuens, tétigit linguam ejus:
+7:34 et suspíciens in cælum, ingémuit, et ait illi: Ephphétha, quod est, Adaperíre.
+7:35 Et statim apértæ sunt aures ejus, et solútum est vínculum linguæ ejus, et loquebátur recte.
+7:36 Et præcépit illis ne cui dícerent. Quanto autem eis præcipiébat, tanto magis plus prædicábant:
+7:37 et eo ámplius admirabántur, dicéntes: Bene ómnia fecit: et surdos fecit audíre, et mutos loqui.
 $Te decet
