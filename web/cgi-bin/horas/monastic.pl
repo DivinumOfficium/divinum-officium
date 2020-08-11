@@ -55,7 +55,12 @@ sub psalmi_matutinum_monastic {
     for ($i = $start; $i < 14; $i++) {
       my $p = $p[$i];
       if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
-      if ($i == 0 || $i == 8) { $p = "Alleluia, * alleluia, alleluia$p"; }
+      if ($i == 0 || $i == 8) {
+        my $ant = $prayers{$lang}{"Alleluia Duplex"};
+        $ant =~ s/ / * /;
+        $ant =~ s/\./$prayers{$lang}{"Alleluia Simplex"}/;
+        $p = "$ant$p";
+      }
       $psalmi[$i] = $p;
     }
     setbuild2("Antiphonas Psalmi weekday special no Quad");
