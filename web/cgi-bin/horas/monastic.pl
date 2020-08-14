@@ -126,7 +126,7 @@ sub psalmi_matutinum_monastic {
       legend_monastic($lang);
     }
   } else {
-    lectiones(1, $lang);
+    lectiones($winner{Rank} !~ /vigil/i, $lang);
   }
   push(@s, "\n");
   push(@s, '!Nocturn II.');
