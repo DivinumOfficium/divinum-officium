@@ -493,10 +493,9 @@ sub lectiones {
   }
   my %benedictio = %{setupstring($datafolder, $lang, 'Psalterium/Benedictions.txt')};
   my $i = $num;
-  $j1 = ($num == 0) ? 1 : 7;
-  $j2 = ($num == 0) ? 2 : 8;
-  $j3 = ($num == 0) ? 3 : 9;
+  
   my $j0 = 0;
+  my $j1 = 1 + (($num == 0) ? 0 : 2 * ($rule =~ /12 lectio/ ? 4 : 3));
 
   #if ($dayname[0] =~ /Pasc0/i) {$i = 3;}
   if ($num == 0) {
@@ -550,6 +549,8 @@ sub lectiones {
 
   #benedictiones for nocturn III
   if ($i == 3 && $rule !~ /ex C1[02]/ && $rule !~ /Special Evangelii Benedictio/i) {
+    ($a[3], $a[4], $a[5]) = ($a[5], $a[3], $a[4]) if ($version =~ /Monastic/i);
+
     my $w = lectio($j1, $lang);
 
     if ($w =~ $evan_regexp) {
@@ -567,10 +568,10 @@ sub lectiones {
     }
     if ($rule =~ /Ipsa Virgo Virginum/i && !$divaux) { $a[3] = $a[10]; }
     if ($rule =~ /Quorum Festum/i && !$divaux) { $a[3] = $a[7]; }
-    setbuild2("B$j2. : " . beginwith($a[3]));
-    $w = lectio($j3, $lang);
+    setbuild2("B" . ($j1+1) . ". : " . beginwith($a[3]));
+    $w = lectio($j1+2, $lang);
     if ($w =~ $evan_regexp) { $a[4] = $benedictio{Evangelica9}; }
-    setbuild2("B$j3. : " . beginwith($a[4]));
+    setbuild2("B" . ($j1+2) . ". : " . beginwith($a[4]));
   }
   if ($version =~ /1960/ && $lang =~ /Latin/i) { $a[1] = 'Jube, Dómine, benedícere.'; }
 
@@ -1103,7 +1104,7 @@ sub lect1960 {
   if ($w =~ $evan_regexp) {
     $a[2] = $benedictio{Evangelica};
   } else {
-    if (exists($a[5])) { $a[2] = $a[5]; }
+    if (exists($a[6])) { $a[2] = $a[5]; }
     if ($winner{Rank} =~ /dominica/i) { $a[4] = $benedictio{Evangelica9}; }
   }
   setbuild2("B3 : " . beginwith($a[4]));
