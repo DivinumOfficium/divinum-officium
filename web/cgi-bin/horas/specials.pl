@@ -247,6 +247,7 @@ sub specials {
     if ($item =~ /Capitulum/i && $hora =~ /(Tertia|Sexta|Nona)/i) {
       my %capit = %{setupstring($datafolder, $lang, 'Psalterium/Minor Special.txt')};
       my $name = minor_getname();
+      $name .= 'M' if ($version =~ /monastic/i);
       my $capit = $capit{$name};
       my $resp = '';
 
@@ -1711,13 +1712,7 @@ sub minor_getname {
     : ($dayname[0] =~ /Pasc/i) ? 'Pasch'
     : ($dayofweek == 0 || ($dayname[1] =~ /Duplex/i && $dayname[1] !~ /(Dominica|Vigilia)/i)) ? 'Dominica'
     : 'Feria';
-  $name .= " $hora";
-
-  if ($version =~ /monastic/i) {
-    $name .= 'M';
-    if ($dayofweek == 1 && $name =~ Feria) { $name =~ s/Feria/Feria II/i; }
-  }
-  return $name;
+  return "$name $hora";
 }
 
 #*** major_getname
