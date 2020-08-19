@@ -1,13 +1,24 @@
+[Lectio5]
+@Sancti/08-24:Lectio4:s/When .*//s
+
+[Lectio6]
+@Sancti/08-24:Lectio4:s/.* When /When /s s/$/~/
+@Sancti/08-24:Lectio5:s/This .*//s
+
+[Lectio7]
+@Sancti/08-24:Lectio5:s/.* This/This/s
+
+[Lectio9]
+@Sancti/08-24:Lectio7:s/The .*//s
+
+[Lectio10]
+@Sancti/08-24:Lectio7:s/.* The /The /s s/$/~/
+@Sancti/08-24:Lectio8:s/What doth it not.*//s
+
+[Lectio11]
+@Sancti/08-24:Lectio8:s/.* What doth it not/What doth it not/s
 
 [LectioE]
 Continuation of the Holy Gospel according to Luke
 !Luke 6:12-19
-6:12 And it came to pass in those days, that he went out into a mountain to pray, and he passed the whole night in the prayer of God.
-6:13 And when day was come, he called unto him his disciples; and he chose twelve of them (whom also he named apostles):
-6:14 Simon, whom he surnamed Peter, and Andrew his brother, James and John, Philip and Bartholomew,
-6:15 Matthew and Thomas, James the son of Alpheus, and Simon who is called Zelotes,
-6:16 And Jude, the brother of James, and Judas Iscariot, who was the traitor.
-6:17 And coming down with them, he stood in a plain place, and the company of his disciples, and a very great multitude of people from all Judea and Jerusalem, and the sea coast both of Tyre and Sidon,
-6:18 Who were come to hear him, and to be healed of their diseases. And they that were troubled with unclean spirits, were cured.
-6:19 And all the multitude sought to touch him, for virtue went out from him, and healed all.
-$Te decet
+At that time, Jesus went out to the mountain to pray, and continued all night in prayer to God. And when day broke, he summoned his disciples; and from these he chose twelve - whom he also named Apostles- Simon, whom he named Peter, and his brother Andrew; James and John; Philip and Bartholomew; Matthew and Thomas; James the son of Alpheus, and Simon called the Zealot; Jude the brother of James, and Judas Iscariot, who turned traitor. And coming down with them, he took his stand on a level stretch, with a crowd of his disciples, and a great multitude of people from all Judea and Jerusalem, and the sea coast of Tyre and Sidon, who came to listen to him and to be healed of their diseases. And those who were troubled with unclean spirits were cured. And all the crowd were trying to touch him, for power went forth from him and healed all.
