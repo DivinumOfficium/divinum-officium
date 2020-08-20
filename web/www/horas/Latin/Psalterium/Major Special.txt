@@ -323,7 +323,7 @@ Amen.
 @:Day1 Laudes
 
 [HymnusM Day2 Laudes]
-@:Hymnus Day2 Laudes
+@:Hymnus Day2 Laudes:s/Nunc et per omne sǽculum/Et nunc, et in perpétuum/
 
 [Hymnus Day2 Laudes]
 {:H-LaudsFeria:}v. Ales diéi núntius
@@ -737,6 +737,9 @@ Eréxit nobis * Dóminus cornu salútis in domo David púeri sui.
 
 [Day2 Ant 3]
 Exsultávit * spíritus meus in Deo salutári meo.
+
+[Day2 Ant 3] (rubrica Trident aut rubrica Monastic)
+Exsúltet * spíritus meus in Deo salutári meo.
 
 [Day3 Ant 2]
 De manu ómnium * qui odérunt nos, liberávit nos Dóminus.
