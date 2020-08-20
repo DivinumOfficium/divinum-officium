@@ -570,22 +570,20 @@ sub psalm : ScriptFunc {
       }
       $rest =~ s/[ ]*//;
 
-      if ($version !~ /Monastic/i) {
-        if ($prepend_dagger) {
-          $rest = "\x{2021} $rest";
-          $prepend_dagger = 0;
-        }
-
-        if ($first && $rest && $rest !~ /^\s*$/) {
-          $rest = getantcross($rest, $antline);
-
-          # Put dagger at start of second line if it would otherwise
-          # have come at the end of the first.
-          $prepend_dagger = ($rest =~ s/\x{2021}\s*$//);
-          $first = 0;
-        }
-        $rest =~ s/\x{2021}/setfont($smallfont, "\x{2021}")/e;
+      if ($prepend_dagger) {
+        $rest = "\x{2021} $rest";
+        $prepend_dagger = 0;
       }
+
+      if ($first && $rest && $rest !~ /^\s*$/) {
+        $rest = getantcross($rest, $antline);
+
+        # Put dagger at start of second line if it would otherwise
+        # have come at the end of the first.
+        $prepend_dagger = ($rest =~ s/\x{2021}\s*$//);
+        $first = 0;
+      }
+      $rest =~ s/\x{2021}/setfont($smallfont, "\x{2021}")/e;
       if ($lang =~ /magyar/i) { $rest = setasterisk($rest); }
       $rest =~ s/^\s*([a-z])/uc($1)/ei;
       $t .= "\n$lnum $line $rest";
