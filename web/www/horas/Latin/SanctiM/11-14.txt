@@ -1,0 +1,30 @@
+@SanctiM/11-02
+
+[Rank]
+In Commemoratione Omnium Defunctorum Ordinis nostri;;Duplex;;5;;ex C9
+
+[Oratio_Fid]
+@Commune/C9
+
+[Oratio 2]
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+@Commune/C9:Oratio_Fid:s/tuárum/tuárum Ordinis nostri/
+
+[Oratio mortuorum1]
+@Sancti/11-02::s/tuárum/tuárum Ordinis nostri/
+
+[Special Prima]
+Psalmi feriales
+
+@Sancti/11-02:Oratio mortuorum2:s/tuárum/tuárum Ordinis nostri/
+
+&martyrologium
+
+V. In memória ætérna erunt justi.
+R. Ab auditióne mala non timébunt.
+_
+$Oremus
+v. Deus, véniæ largítor et humánæ salútis amátor: quǽsumus cleméntiam tuam: ut nostræ congregatiónis fratres, qui ex hoc sǽculo transiérunt, beáta María semper vírgine intercedénte cum ómnibus sanctis tuis ad perpétuæ beatitúdinis consórtium perveníre concédas.
+R. Amen.
+
+&special('Conclusio', 'Latin')
