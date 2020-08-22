@@ -1,0 +1,23 @@
+@Sancti/11-01
+
+[Capitulum Vespera]
+@Sancti/11-01
+_
+@Commune/C3:Responsory Sexta:s/._.*//s
+
+[Capitulum Laudes]
+@Sancti/11-01:Capitulum Vespera
+_
+@Commune/C3:Responsory Tertia:s/._.*//s
+
+[Responsory Tertia]
+@:Versum 1
+
+[Responsory Sexta]
+@Commune/C3:Responsory Tertia:8-9
+
+[Responsory Nona]
+@Commune/C3:Responsory Sexta:8-9
+
+[Ant Vespera 3]
+@Sancti/11-01:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;115/ s/_//
