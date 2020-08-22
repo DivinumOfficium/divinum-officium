@@ -89,7 +89,7 @@ sub specials {
     {
       $skipflag = 1;
 
-      if ($item =~ /incipit/i && $version !~ /(1955|1960)/) {
+      if ($item =~ /incipit/i && $version !~ /(1955|1960|Monastic)/) {
         $comment = 2;
         setbuild1($ite, 'limit');
       } else {
@@ -98,7 +98,7 @@ sub specials {
       }
       setcomment($label, 'Preces', $comment, $lang);
 
-      if ($item =~ /incipit/i && $version !~ /(1955|1960)/) {
+      if ($item =~ /incipit/i && $version !~ /(1955|1960|Monastic)/) {
         my $p1 = translate_label('$Pater noster', $lang);
         my $p2 = translate_label('$Ave Maria', $lang);
         push(@s, (setfont($smallfont, 'secreto'), $p1, $p2));

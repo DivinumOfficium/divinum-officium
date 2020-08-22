@@ -482,7 +482,7 @@ sub getrank {
       $crank[2] = 7;
       $crank =~ s/;;[0-9]/;;7/;
       $srank = '';
-    } elsif (($version !~ /1960|Newcal/ || $dayofweek == 6)
+    } elsif (($version !~ /1960|Newcal|Monastic/ || $dayofweek == 6)
       && $hora =~ /(Vespera|Completorium)/i
       && $month == 11
       && $srank =~ /Omnium Fidelium defunctorum/i

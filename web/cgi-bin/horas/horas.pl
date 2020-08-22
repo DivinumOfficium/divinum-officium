@@ -517,7 +517,7 @@ sub psalm : ScriptFunc {
     }
   }
   if (!$t) { $t = setfont($redfont, "$str $num") . settone(1) . $pnum; }
-  my $v1 = 1;
+  my $v1 = $v = 1;
   my $v2 = 1000;
 
   # Extract limits of the division of the psalm.
@@ -562,6 +562,7 @@ sub psalm : ScriptFunc {
         $rest = $3;
         $before = $1;
         $this = $2;
+        $this =~ s/:\d+-\d+\)/:$v1-$v2)/ if ($v2 != 1000);
         $before =~ s/^\s*([a-z])/uc($1)/ei;
         $line = $before . setfont($smallfont, ($this));
       } else {
@@ -1035,6 +1036,7 @@ sub martyrologium : ScriptFunc {
   if ($month == 10 && $dayofweek == 6 && $day > 23 && $day < 31 && exists($a{'10-DU'})) { $mobile = $m{'10-DU'}; }
   if ($a =~ /Pasc0\-1/i) { $hd = 1; }
   if ($winner{Rank} =~ /ex C9/i && exists($a{'Defuncti'})) { $mobile = $a{'Defuncti'}; $hd = 1; }
+  if ($month == 11 && $day == 14 && $version =~ /Monastic/i) { $mobile = $a{'DefunctiM'}; $hd = 1; }
 
   #if ($month == 12 && $day == 25 && exists($a{'Nativity'})) {$mobile = $a{'Nativity'}; $hd = 1;}
   if ($hd == 1) { $t = "v. $mobile" . "_\n$t"; $mobile = ''; }
