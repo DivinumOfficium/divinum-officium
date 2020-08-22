@@ -1,125 +1,60 @@
 [Rank]
-In Octava Assumptionis B.M.V.;;Duplex;;3;;vide Sancti/08-15
+Immaculati Cordis Beatæ Mariæ Virginis;;Duplex II classis;;5.1;;ex C11
+
+[Rank1960]
+Immaculati Cordis Beatæ Mariæ Virginis;;Duplex II classis;;5;;ex C11
 
 [Rule]
-vide Sancti/08-15;
+ex C11;
 9 lectiones
+Doxology=Nat
 
-[Commemoratio]
-!Commemoratio Ss. Timothei, Hippolyti et Symphoriani Mart.
-@Commune/C3:Oratio proper
-$Oremus
-Auxílium tuum nobis, Dómine, quǽsumus, placátus impende: et, intercedéntibus beátis Martýribus tuis Timótheo, Hippolýto et Symphoriáno, déxteram super nos tuæ propitiatiónis exténde.
-$Per Dominum
+[Ant 1]
+Exsultávit cor meum * in Dómino, et exaltátum est cornu meum in Deo meo, quia lætáta sum in salutári tuo.
 
-[Lectio1]
-De Canticis canticorum.
-!Cant 8:5-6
-5 (Chorus) Quæ est ista quæ ascendit de deserto, deliciis affluens, innixa super dilectum suum? (Sponsus) Sub arbore malo suscitavi te; ibi corrupta est mater tua, ibi violata est genitrix tua.
-6 (Sponsa) Pone me ut signaculum super cor tuum, ut signaculum super brachium tuum, quia fortis est ut mors dilectio, dura sicut infernus æmulatio: lampades ejus lampades ignis atque flammarum.
+[Oratio]
+Omnípotens sempitérne Deus, qui in Corde beátæ Maríæ Vírginis dignum Spíritus Sancti habitáculum præparásti: concéde propítius; ut eiúsdem immaculáti Cordis festivitátem devóta mente recoléntes, secúndum Cor tuum vívere valeámus.
+$Per Dominum eiusdem
 
-[Responsory1]
-@Sancti/08-15:Responsory1
-
-[Lectio2]
-!Cant 8:7-9
-7 Aquæ multæ non potuerunt extinguere caritatem, nec flumina obruent illam. Si dederit homo omnem substantiam domus suæ pro dilectione, quasi nihil despiciet eam.
-8 (Chorus Fratrum) Soror nostra parva, et ubera non habet; quid faciemus sorori nostræ in die quando alloquenda est?
-9 Si murus est, ædificemus super eum propugnacula argentea; si ostium est, compingamus illud tabulis cedrinis.
-
-[Responsory2]
-@Sancti/08-15:Responsory2
-
-[Lectio3]
-!Cant 8:10-13;
-10 (Sponsa) Ego murus, et ubera mea sicut turris, ex quo facta sum coram eo, quasi pacem reperiens.
-11 (Chorus Fratrum) Vinea fuit pacifico in ea quæ habet populos: tradidit eam custodibus; vir affert pro fructu ejus mille argenteos.
-12 (Sponsa) Vinea mea coram me est. Mille tui pacifici, et ducenti his qui custodiunt fructus ejus.
-13 (Sponsus) Quæ habitas in hortis, amici auscultant; fac me audire vocem tuam.
-
-[Responsory3]
-@Sancti/08-15:Responsory3
+[Commemoratio 2]
+@Sancti/08-22t:Commemoratio
 
 [Lectio4]
-De Sermone sancti Bernardi Abbatis.
-!Serm. 4. de Assumptione, circa med.
-Non est equidem quod me magis delectet, sed nec est quod terreat magis, quam de~
-gloria Virginis Mariæ habere sermonem. Ecce enim si in ea laudavero~
-virginitatem, mihi multæ virgines post eam videntur offerri. Si humilitatem~
-prædicavero, invenientur forte vel pauci, qui (docente Filio ejus) mites facti~
-sunt et humiles corde. Si magnificare voluero misericordiæ ejus multitudinem,~
-sunt aliqui misericordiæ viri, étiam et mulieres. Unum est in quo nec primam~
-similem visa est, nec habere sequentem, gaudia matris habens cum virginitatis~
-honore. Mariæ privilegium est, non dabitur alteri: singulare est, sed continuo~
-étiam indicibile invenitur.
-
-[Responsory4]
-@Sancti/08-15:Responsory4
+Sermo sancti Bernardíni Senénsis
+!Ex sermone 9 de visitatione
+Quis mortálium, nisi divíno tutus oráculo, de vera Dei et hóminis Genetríce quidquam módicum, sive grande præsúmat incircumcísis, immo pollútis lábiis nomináre, quam Pater ante sǽcula Deus perpétuam prædestinávit in Vírginem, digníssimam Fílius elégit in Matrem, Spíritus Sanctus omnis grátiæ domicílium præparávit? Quibus verbis ego homúnculus sensus altíssimos virgínei Cordis, sanctíssimo ore prolátos, éfferam, quibus non súfficit lingua ómnium Angelórum? Dóminus enim ait: Bonus homo de bono thesáuro cordis profert bona; quod verbum potest étiam esse thesáurus. Quis inter puros hómines mélior homo potest excogitári, quam illa, quæ méruit éffici Mater Dei, quæ novem ménsibus in corde et in útero suo ipsum Deum hospitáta est? Quis thesáurus mélior, quam ipse divínus amor quo fornáceum cor Vírginis ardens erat?
 
 [Lectio5]
-Verumtamen non hoc tantum, si diligenter attendas, sed ceteras quoque virtutes~
-singulares prorsus invenies in María, quæ videbantur esse communes. Quæ enim~
-vel angelica puritas virginitati illi audeat comparari, quæ digna fuit Spiritus~
-sancti sacrarium fieri, et habitaculum Filii Dei? Quanta vero, et quam pretiosa~
-humilitatis virtus cum tanta puritate, cum innocentia tanta, cum conscientia~
-prorsus absque delicto, imo cum tantæ gratiæ plenitudine? Unde tibi humilitas,~
-et tanta humilitas, o beata? Digna plane quam respiceret Dominus, cujus decorem~
-concupisceret Rex, cujus odore suavissimo ab æterno illo paterni sinus~
-attraheretur accubitu.
-
-[Responsory5]
-@Sancti/08-15:Responsory5
+De hoc ígitur Corde quasi de fornáce divíni ardóris Virgo beáta prótulit verba bona, id est, verba ardentíssimæ caritátis. Sicut enim a vase summo et óptimo vino pleno, non potest exíre nisi óptimum vinum; aut sicut a fornáce summi ardóris non egréditur nisi incéndium fervens; sic quippe a Christi Matre exíre non pótuit verbum, nisi summi summéque divíni amóris atque ardóris. Sapiéntis quoque dóminæ et matrónæ est pauca verba, sólida tamen atque sententiósa habére; proínde septem vícibus quasi septem verba tantum miræ senténtiæ et virtútis a Christi benedictíssima Matre legúntur dicta, ut mýstice ostendátur ipsam fuísse plenam grátia septifórmi. Cum Angelo bis tantúmmodo est locúta. Cum Elísabeth bis étiam. Cum Fílio étiam bis, semel in templo, secúndo in núptiis. Cum minístris semel. Et in his ómnibus semper valde parum locúta est; excépto quod in laude Dei et gratiárum actióne se ámplius dilatávit, scílicet, quum ait: Magníficat ánima mea Dóminum. Ubi non cum hómine, sed cum Deo locúta fuit. Hæc septem verba secúndum septem amóris procéssus et actus sub miro gradu et órdine sunt proláta; quasi sint septem flammæ fornácei Cordis ejus.
 
 [Lectio6]
-Ecce jam quibus potiumus votis ascendentem te ad Filium deduximus, et prosecuti~
-sumus saltem a longe, Virgo benedicta. Sit pietatis tuæ, ipsam, quam apud Deum~
-gratiam invenisti, notam facere mundo, reis veniam, medelam ægris, pusillis~
-corde robur, afflictis consolationem, periclitantibus adjutorium, et~
-liberationem sanctis tuis precibus obtinendo. In hac quoque die solemnitatis et~
-lætitiæ dulcissimum Mariæ nomen cum laude invocantibus servulis, per te~
-Regina clemens, gratiæ suæ munera largiatur Jesus Christus, Filius tuus,~
-Dominus noster, qui est super omnia Deus benedictus in sæcula. Amen.
-
-[Responsory6]
-@Sancti/08-15:Responsory6
+!Ex ecclesiasticis documentis
+Cultum litúrgicum, quo Cordi Immaculáto Vírginis Maríæ débitus tribúitur honor, cuíque plures viri sancti ac mulíeres viam parárunt, ipsa Apostólica Sedes primum approbávit ineúnte sǽculo undevicésimo, cum Pius Papa séptimus festum Puríssimi Cordis Maríæ Vírginis instítuit, ab ómnibus diœcésibus et religiósis famíliis, quæ id petiíssent, pie sanctéque agéndum: quod póstmodum Pius Papa nonus Offício ac Missa própria auxit. Ardens autem stúdium atque optátum, jam sǽculo décimo séptimo exórtum et in dies invaléscens, ut nempe ejúsmodi festum, majóri solemnitáte donátum, totíus Ecclésiæ commúne efficerétur, Summus Póntifex Pius duodécimus benígne excípiens anno millésimo nongentésimo quadragésimo secúndo, bello atrocíssimo per orbem fere totum ingravescénte, infínitas populórum ærúmnas míserans, pro sua in Matrem cæléstem pietáte ac fidúcia genus hóminum univérsum illíus Cordi benigníssimo obsecratióne solémni eníxe commendávit, atque in honórem ejúsdem Immaculáti Cordis festum cum Offício et Missa própriis in perpétuum ubíque celebrándum indíxit.
 
 [Lectio7]
-Léctio sancti Evangélii secúndum Lucam
-!Luc 10:38-42
-In illo témpore: Intravit Jesus in quoddam castellum: et mulier quædam, Martha~
-nomine, excepit illum in domum suam. Et réliqua.
+Léctio sancti Evangélii secúndum Joánnem
+!Joannes 19:25-27
+In illo témpore: Stábant juxta crucem Jesu Mater ejus, et soror Matris ejus María Cléophæ, et María Magdaléne. Et réliqua.
 _
-Homilia sancti Bernardi Abbatis
-!Serm. 2. de Assumpt. B. M. V.
-Quid introisse eum dicimus in castellum? Etiam in angustissimum virginalis uteri~
-diversorium introivit. Denique et mulier quædam excepit illum in domum suam.~
-Felix mulier, cujus domus, Salvatore suscepto, inventa est munda quidem, sed~
-plane non vacua. Quis enim vacuam dixerit, quam salutat Angelus gratia plenam?~
-Neque hoc solum, sed adhuc quoque in eam superventurum asserit Spiritum sanctum.~
-Ad quid, putas, nisi ut étiam superimpleat eam? Ad quid, nisi ut adveniente jam~
-Spiritu plena sibi, eodem superveniente, nobis quoque superplena et~
-supereffluens fiat?
+Homilía sancti Robérti Bellarmíno Epíscopi
+!De septem verbis Christi in Cruce, cap. 12
+Onus et jugum impósitum a Dómino sancto Joánni, ut Vírginis Matris curam géreret, vere fuit jugum suáve et onus leve. Quis enim non libentíssime cohabitáret Matri illi, quæ Verbum incarnátum in útero novem ménsibus portávit, et illi totos trigínta annos devotíssime dulcissiméque cohabitávit? Quis non invídeat dilécto Dómini, qui in abséntia Fílii Dei præséntiam obtínuit Matris Dei? Sed, nisi fallor, póssumus et nos a benignitáte Verbi nostri causa incarnáti et ex dilectióne nímia nostri causa crucifíxi, précibus impetráre, ut dicat et nobis: Ecce Mater tua; et Matri suæ de nobis dicat: Ecce fílius tuus.
 
 [Responsory7]
 R. Felix namque es, sacra Virgo María, et omni laude digníssima:
 * Quia ex te ortus est sol justítiæ, Christus, Deus noster.
-V. Ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam Commemoratiónem.
+V. Ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem.
 R. Quia ex te ortus est sol justítiæ, Christus, Deus noster.
 
 [Lectio8]
-Intret ergo domum Salvator, et frequenter visitet eam, quam pænitens Lazarus~
-mundat, ornat Martha, et María replet internæ dedita contemplationi. Sed forte~
-curiosus quisquam requirat cur in præsenti evangelica lectione nulla prorsus~
-Lazari mentio fiat. Arbitror sane, ne id quidem a proposita similitudine~
-dissidere. Virginalem etenim domum intelligi volens Spiritus, siluit non~
-incongrue pænitentiam, quæ malum utique comitatur. Absit enim ut proprii~
-quidquam inquinamenti domus hæc aliquando habuisse dicatur, ut in ea proinde~
-scopa Lazari quæreretur.
+Non est avárus pius Dóminus gratiárum, dúmmodo ad thronum grátiæ ejus cum fide et fidúcia et non ficto corde, sed vero et sincéro accedámus. Qui nos coherédes esse vóluit regni Patris sui, non dedignábitur certe nos coherédes habére amóris Matris suæ. Sed nec ipsa Virgo benigníssima gravábitur multitúdine filiórum, cum sinum amplíssimum hábeat et valde cúpiat, nullum períre ex his, quos Fílius suus tam pretióso sánguine et tam pretiósa morte redémit. Adeámus ergo cum fidúcia ad thronum grátiæ Christi, et supplíciter nec sine lácrimis ab eo petámus, ut de unoquóque nostrum Matri suæ dicat: Ecce fílius tuus; et unicuíque nostrum de Matre sua dicat: Ecce Mater tua.
 
-[Responsory8]
-@Sancti/08-15:Responsory8
-
-[Lectio93]
-!Commemoratio Ss. Mart. Timotheo, Hippolyto et Symphoriano.
-Timotheus Antiochenus, Romam veniens, Melchíade summo Pontifice, cum per annum ibi Christi fidem prædicasset, a Tarquinio Urbis præfecto conjícitur in víncula; et, post diuturnas carceris ærúmnas, ad idola perducitur, ut eis sacrificet. Quam impietátem summa libertáte detestátus acerbíssime cæditur, et excarnificátum corpus viva calce perfunditur. In quibus aliisque suppliciis constans Martyr, cápite plectitur. Corpus via Ostiénsi prope sepúlcrum beáti Pauli Apóstoli sepelítur. Quo diéi etiam, Alexandro imperatóre, apud Ostia Tiberina Hippolytus, epíscopus Portuénsis, ob præcláram fidei confessiónem mánibus pedibúsque ligatis, in altam fóveam aquis plenam præcipitátus, martyrio coronátus est, et ibidem a Christiánis sepúltus. Quo item die, Aureliáno imperatóre, propter eamdem fidem, Augustodúni, Symphorianus adoléscens varie tortus est. Qui, dum ad ultimum supplícium ducerétur, matrem ita clamántem áudiens: Nate, nate, meménto ætérnæ vitæ, cælum suspice, et ibi regnántem intuére; tibi enim vita non eripitur, sed mutátur in mélius; fortiter Jesu Christi causa carnifici collum præbuit.
+[Lectio9]
+Quam bene nobis erit sub præsídio tantæ Matris? Quis nos detráhere audébit de sinu ejus? Quæ nos tentátio superáre póterit, confidéntes in patrocínio Matris Dei et nostræ? neque nos primi érimus in tanti consecutióne benefícii. Multi nos præcessérunt; multi, inquam, ad singuláre et plane matérnum patrocínium tantæ Vírginis accessérunt, et nemo confúsus aut tristis dimíssus est, sed omnes hílares et gaudéntes, freti patrocínio tantæ Matris. De qua enim scriptum est: Ipsa cónteret caput tuum, in ea confídunt, se quoque fidénter ambulatúros super áspidem et basilíscum, et conculcatúros leónem et dracónem. Neque enim vidétur posse períre is, de quo dictum sit Vírgini a Christo: Ecce fílius tuus, dúmmodo et ipse non surda aure áudiat, quod ei Christus díxerit: Ecce Mater tua.
 &teDeum
+
+[Ant 2]
+O beáta Virgo * María: tu grátiæ Mater, tu spes mundi, exáudi nos fílios tuos clamántes ad te.
+
+[Ant 3]
+@Sancti/08-22:Ant 1

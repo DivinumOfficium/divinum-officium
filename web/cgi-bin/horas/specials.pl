@@ -89,7 +89,7 @@ sub specials {
     {
       $skipflag = 1;
 
-      if ($item =~ /incipit/i && $version !~ /(1955|1960)/) {
+      if ($item =~ /incipit/i && $version !~ /(1955|1960|Monastic)/) {
         $comment = 2;
         setbuild1($ite, 'limit');
       } else {
@@ -98,7 +98,7 @@ sub specials {
       }
       setcomment($label, 'Preces', $comment, $lang);
 
-      if ($item =~ /incipit/i && $version !~ /(1955|1960)/) {
+      if ($item =~ /incipit/i && $version !~ /(1955|1960|Monastic)/) {
         my $p1 = translate_label('$Pater noster', $lang);
         my $p2 = translate_label('$Ave Maria', $lang);
         push(@s, (setfont($smallfont, 'secreto'), $p1, $p2));
@@ -247,6 +247,7 @@ sub specials {
     if ($item =~ /Capitulum/i && $hora =~ /(Tertia|Sexta|Nona)/i) {
       my %capit = %{setupstring($datafolder, $lang, 'Psalterium/Minor Special.txt')};
       my $name = minor_getname();
+      $name .= 'M' if ($version =~ /monastic/i);
       my $capit = $capit{$name};
       my $resp = '';
 
@@ -912,7 +913,7 @@ sub psalmi_major {
 
   if ($version =~ /monastic/i) {
     my $head = "Daym$dayofweek";
-    if ($winner =~ /Sancti/i && $rank >= 4) { $head = 'DaymF'; }
+    if ($winner =~ /Sancti/i && $rank >= 4 && $dayname[1] !~ /vigil/i) { $head = 'DaymF'; }
     if ($hora =~ /Laudes/i && $dayname[0] =~ /Pasc/i && $head =~ /Daym0/i) { $head = 'DaymP'; }
     @psalmi = split("\n", $psalmi{"$head $hora"});
 
@@ -1711,13 +1712,7 @@ sub minor_getname {
     : ($dayname[0] =~ /Pasc/i) ? 'Pasch'
     : ($dayofweek == 0 || ($dayname[1] =~ /Duplex/i && $dayname[1] !~ /(Dominica|Vigilia)/i)) ? 'Dominica'
     : 'Feria';
-  $name .= " $hora";
-
-  if ($version =~ /monastic/i) {
-    $name .= 'M';
-    if ($dayofweek == 1 && $name =~ Feria) { $name =~ s/Feria/Feria II/i; }
-  }
-  return $name;
+  return "$name $hora";
 }
 
 #*** major_getname

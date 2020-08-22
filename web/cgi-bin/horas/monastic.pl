@@ -55,7 +55,12 @@ sub psalmi_matutinum_monastic {
     for ($i = $start; $i < 14; $i++) {
       my $p = $p[$i];
       if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
-      if ($i == 0 || $i == 8) { $p = "Alleluia, * alleluia, alleluia$p"; }
+      if ($i == 0 || $i == 8) {
+        my $ant = $prayers{$lang}{"Alleluia Duplex"};
+        $ant =~ s/ / * /;
+        $ant =~ s/\./$prayers{$lang}{"Alleluia Simplex"}/;
+        $p = "$ant$p";
+      }
       $psalmi[$i] = $p;
     }
     setbuild2("Antiphonas Psalmi weekday special no Quad");
@@ -121,7 +126,7 @@ sub psalmi_matutinum_monastic {
       legend_monastic($lang);
     }
   } else {
-    lectiones(1, $lang);
+    lectiones($winner{Rank} !~ /vigil/i, $lang);
   }
   push(@s, "\n");
   push(@s, '!Nocturn II.');
@@ -210,6 +215,8 @@ sub antetpsalm_mm {
   my $ind = shift;
   my @line = split(';;', $line);
   our $lastantiphon;
+  $lastantiphon =~ s/\s+\*//;
+
   if ($ind == -1) { $lastantiphon = ''; return; }
 
   if ($ind == -2) {
@@ -290,7 +297,7 @@ sub absolutio_benedictio {
   push(@s, "Absolutio. $a[0]");
   push(@s, "\n");
   push(@s, "V. $a[1]");
-  push(@s, "Benedictio. $a[4]");
+  push(@s, "Benedictio. $a[5]");
   push(@s, "_");
 }
 

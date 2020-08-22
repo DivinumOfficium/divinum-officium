@@ -287,7 +287,7 @@ function setkm(km) {
 }
 
 function setky(ky) {
-  document.forms[0].kyear.value = ky + 2000;
+  document.forms[0].kyear.value = ky;
   document.forms[0].submit();
 }
 

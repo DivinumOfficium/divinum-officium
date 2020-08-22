@@ -1,53 +1,125 @@
-@Sancti/08-15t
+@Sancti/08-15
 
 [Rank]
 Assumptione Beatae Mariae Virginis;;Duplex I classis;;6.5;;ex C11
 
+[Rule]
+12 lectiones
+Doxology=Nat
+
 [Capitulum Vespera]
-@Sancti/08-15t
+@Sancti/08-15
 _
-@Sancti/08-15t:Responsory Sexta:1-6
+@Sancti/08-15:Responsory Sexta:1-6
+
+[HymnusM Vespera]
+@:Hymnus Vespera:s/Jesu, tibi sit glória/Glória tibi, Dómine/
 
 [Ant Matutinum]
-Exaltata est * sancta Dei Genitrix super choros Angelorum ad caelestia regna;;8
-Paradisi portae * per te nobis apertae sunt, quae hodie gloriosa cum Angelis triumphas;;18
-Benedicta tu * in mulieribus, et benedictus fructus ventris tui;;23
-Specie tua * et pulchritudine tua intende, prospere procede, et regna;;44
-Adjuvabit eam * Deus vultu suo: Deus in medio ejus, non commovebitur;;45
-Favus distillans * labia tua, Sponsa, mel et lac sub lingua tua: et odor vestimenturom tuorum sicut odoris thuris;;47
-V. Exaltata est sancta Dei Genitrix.
-R. Super choros Angelorum ad caelestia regna.
-Fons hortorum * puteus aquarum viventium, quae fluunt impetu de Libano;;84
-Sicut laetantium * omnium nostrum habitatio est in te, sancta Dei Genitrix;;86
-Gaude Maria Virgo, * cunctas haereses sola interemisti in universo mundo;;95
-Dignare me * laudare te, Virgo sacrata: da mihi virtutem contra hostes tuos;;96
-Post partum * Virgo inviolata permansisti, Dei Genitrix intercede pro nobis;;97
-Descendi * in hortum nucum, ut viderem poma convallium, et inspicerem, si floruisset vinea, et germinassent mala punica, alleluia;;98
-V. Assumpta est Maria in caelum: gaudent Angeli.
-R. Laudantes benedicunt Dominum.
-Hortus conclusus * es Dei Genitrix, fons signatus: surge propera, amica mea, et veni;;249;250;251
-V. Maria Virgo assumpta est ad aethereum thalamum.
-R. In quo Rex regum stellato sedet solio.
+Exaltáta est * sancta Dei Génetrix † super choros Angelórum ad cæléstia regna.;;8
+Paradísi portæ * per te nobis apértæ sunt, † quæ hódie gloriósa cum Angelis triúmphas.;;18
+Benedícta tu * in muliéribus, † et benedíctus fructus ventris tui.;;23
+Spécie tua * et pulchritúdine tua inténde, † próspere procéde, et regna.;;44
+Adjuvábit eam * Deus vultu suo: † Deus in médio ejus, non commovébitur.;;45
+Favus distíllans * lábia tua, Sponsa, mel et lac sub lingua tua: † et odor vestimentórum tuórum sicut odor thuris.;;47
+V. Exaltáta est sancta Dei Génetrix.
+R. Super choros Angelórum ad cæléstia regna.
+Fons hortórum, * púteus aquárum vivéntium, † quæ fluunt ímpetu de Líbano.;;84
+Sicut lætántium * ómnium nostrum habitátio est in te, † sancta Dei Génetrix.;;86
+Gaude, * María Virgo: † cunctas hǽreses sola interemísti in univérso mundo.;;95
+Dignáre me * laudáre te, Virgo sacráta: † da mihi virtútem contra hostes tuos.;;96
+Post partum, * Virgo, invioláta permansísti: † Dei Génetrix, intercéde pro nobis.;;97
+Descéndi * in hortum nucum, ut vidérem poma convállium, † et inspícerem, si floruísset vinea, et germinássent mala púnica, allelúja.;;98
+V. Assúmpta est María in cælum: gaudent Angeli.
+R. Laudántes benedícunt Dóminum.
+Hortus conclúsus * es Dei Génitrix, hortus conclúsus, fons signátus: † surge própera, amíca mea, et veni.;;249;250;251
+V. María Virgo assúmpta est ad æthéreum thálamum.
+R. In quo Rex regum stelláto sedet sólio.
 
-[Responsory2]
-@Commune/C11:Responsory4
+[Lectio1]
+@Sancti/08-15:Lectio1:s/-15/-12/ s/.13 .*//s
 
-[Responsory3]
-@Commune/C11:Responsory5
+[Lectio2]
+@Sancti/08-15:Lectio1:s/9-15/13-15/ s/9 .* 13 /13 /s
+
+[Lectio3]
+@Sancti/08-15:Lectio2
+
+[Lectio4]
+@Sancti/08-15:Lectio3
+
+[Responsory4]
+R. Super salútem et omnem pulchritúdinem dilécta es a Dómino, † et Regína cælórum vocári digna es
+* Gaudent chori angelórum consórtes et concíves nostri.
+V. Sola namque sine exémplo placuísti fémina Christo.
+R. Gaudent chori angelórum consórtes et concíves nostri.
+
+[Lectio5]
+@Sancti/08-15:Lectio4
+
+[Responsory5]
+@Commune/C11:Responsory6:s/.&Gloria.R./ */s
+
+[Lectio6]
+@Sancti/08-15:Lectio5
+
+[Responsory6]
+@Commune/C11:Responsory8
+
+[Lectio7]
+@Sancti/08-15:Lectio6:s/ Itaque.*//s
+
+[Responsory7]
+@Commune/C11:Responsory3
+
+[Lectio8]
+@Sancti/08-15:Lectio6:s/.* Itaque/Itaque/s
+
+[Responsory8]
+R. Ista est speciósa inter filias Jerúsalem, † sicut vidístis eam plenam caritáte et dilectióne
+* In cubílibus et in hortis arómatum.
+V. Ista est quæ ascéndit de desérto delíciis áffluens.
+R. In cubílibus et in hortis arómatum.
+
+[Lectio9]
+@Sancti/08-15:Lectio7:s/ Nec .*//s
 
 [Responsory9]
-R. Felix namque es, sacra Virgo Maria, et omni laude dignissima:
-* Quia ex te ortus est sol justitiae, Christus Deus noster.
-V. Ora pro populo, interveni pro clero, intercede pro devoto femineo sexu:~
-sentiant omnes tuum juvamen, quicumque celebrant tuam sanctam festivitatem.
-R. Quia ex te ortus est sol justitiae, Christus Deus noster.
-&Gloria
-R. Quia ex te ortus est sol justitiae, Christus Deus noster.
+@Sancti/08-15:Responsory7
+
+[Lectio10]
+@Sancti/08-15:Lectio7:s/.* Nec /Nec /s
+
+[Responsory10]
+@Sancti/08-15:Responsory8
+
+[Lectio11]
+@Sancti/08-15:Lectio8
+
+[Responsory11]
+R. Hódie María virgo cælos ascéndit: gaudéte
+* Quia cum Christo regnat in ætérnum.
+V. Assúmpta est María in cælum: † gaudent Angeli laudántes benedícunt Dóminum.
+R. Quia cum Christo regnat in ætérnum.
+
+[Lectio12]
+@Sancti/08-15:Lectio9
+
+[Responsory12]
+@Commune/C11:Responsory7
+
+[Ant Laudes]
+@Sancti/08-15t:Ant Vespera:s/;;.*//g
+
+[LectioE]
+Sequéntia ++ sancti Evangélii secúndum Lucam.
+!Lc 1:41-50
+v. In illo témpore: Repléta est Spíritu Sancto Elisabeth et exclamávit voce magna, et dixit: Benedícta tu inter mulíeres, et benedíctus fructus ventris tui. Et unde hoc mihi ut véniat mater Dómini mei ad me? Ecce enim ut facta est vox salutatiónis tuæ in áuribus meis, exsultávit in gáudio infans in útero meo. Et beáta, quæ credidísti, quóniam perficiéntur ea, quæ dicta sunt tibi a Dómino. Et ait María: Magníficat ánima mea Dóminum; et exsultávit spíritus meus in Deo salutári meo; quia respéxit humilitátem ancíllæ suæ, ecce enim ex hoc beátam me dicent omnes generatiónes. Quia fecit mihi magna qui potens est, et sanctum nomen ejus, et misericórdia ejus a progénie in progénies timéntibus eum.
 
 [Capitulum Laudes]
-@Sancti/08-15t:Capitulum Vespera
+@Sancti/08-15:Capitulum Vespera
 _
-@Sancti/08-15t:Responsory Nona:1-6
+@Sancti/08-15t:Responsory Nona:s/._.*//s
 
 [Responsory Tertia]
 @:Versum 1
@@ -56,14 +128,4 @@ _
 @Sancti/08-15t:Responsory Tertia:8-9
 
 [Responsory Nona]
-@Sancti/08-15t:Responsory Sexta
-
-[LectioE]
-v. Sequéntia sancti Evangélii secúndum Lucam
-!Luc 10:38-42
-10:38 Factum est autem, dum irent, et ipse intrávit in quoddam castéllum: et múlier quædam, Martha nómine, excépit illum in domum suam,
-10:39 et huic erat soror nómine María, quæ étiam sedens secus pedes Dómini, audiébat verbum illíus.
-10:40 Martha autem satagébat circa frequens ministérium: quæ stetit, et ait: Dómine, non est tibi curæ quod soror mea relíquit me solam ministráre? dic ergo illi ut me ádiuvet.
-10:41 Et respóndens dixit illi Dóminus: Martha, Martha, sollícita es, et turbáris erga plúrima,
-10:42 porro unum est necessárium. María óptimam partem elégit, quæ non auferétur ab ea.
-$Te decet
+@Sancti/08-15t:Responsory Sexta:8-9

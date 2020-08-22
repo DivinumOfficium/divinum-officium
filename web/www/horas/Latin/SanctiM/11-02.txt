@@ -1,0 +1,29 @@
+[Rank]
+In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
+
+[Rule]
+Minores sine Antiphona
+ex C9
+Special Conclusio
+Capitulum Versum 2 ad Laudes et Vesperas
+Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium
+Limit Benedictiones Oratio
+Requiem gloria
+
+[Special Completorium]
+@Sancti/11-02::s/122/4/ s/141/90/ s/142/133/
+
+[Oratio mortuorum1]
+@Sancti/11-02
+
+[Oratio mortuorum2]
+@Sancti/11-02
+
+[Conclusio]
+@Sancti/11-02
+
+[Special Prima]
+Psalmi feriales
+
+_
+@Sancti/11-02::s/.*&special\('O/&special('O/s
