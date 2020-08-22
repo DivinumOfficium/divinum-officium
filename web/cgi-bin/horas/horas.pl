@@ -562,7 +562,7 @@ sub psalm : ScriptFunc {
         $rest = $3;
         $before = $1;
         $this = $2;
-        $this =~ s/:\d+-\d+\)/:$v1-$v2)/;
+        $this =~ s/:\d+-\d+\)/:$v1-$v2)/ if ($v2 != 1000);
         $before =~ s/^\s*([a-z])/uc($1)/ei;
         $line = $before . setfont($smallfont, ($this));
       } else {
