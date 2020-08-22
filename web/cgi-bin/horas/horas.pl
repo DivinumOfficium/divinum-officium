@@ -517,7 +517,7 @@ sub psalm : ScriptFunc {
     }
   }
   if (!$t) { $t = setfont($redfont, "$str $num") . settone(1) . $pnum; }
-  my $v1 = 1;
+  my $v1 = $v = 1;
   my $v2 = 1000;
 
   # Extract limits of the division of the psalm.
@@ -562,6 +562,7 @@ sub psalm : ScriptFunc {
         $rest = $3;
         $before = $1;
         $this = $2;
+        $this =~ s/:\d+-\d+\)/:$v1-$v2)/;
         $before =~ s/^\s*([a-z])/uc($1)/ei;
         $line = $before . setfont($smallfont, ($this));
       } else {
