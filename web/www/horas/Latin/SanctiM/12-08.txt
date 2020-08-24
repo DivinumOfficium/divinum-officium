@@ -1,0 +1,21 @@
+@Sancti/12-08
+
+[Capitulum Vespera]
+@Sancti/12-08:Capitulum Vespera
+_
+@Sancti/12-08:Responsory Sexta:s/._.*//s
+
+[Capitulum Laudes]
+@Sancti/12-08:Capitulum Vespera
+_
+@Sancti/12-08:Responsory Tertia:s/._.*//s
+
+[Responsory Tertia]
+V. Deus omnípotens præcínxit me virtúte.
+R. Et pósuit immaculátam viam meam.
+
+[Responsory Sexta]
+@Sancti/12-08:Responsory Tertia:s/.*_.//s
+
+[Responsory Nona]
+@Sancti/12-08:Responsory Sexta:s/.*_.//s
