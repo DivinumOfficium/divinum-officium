@@ -1,1 +1,58 @@
 @Tempora/091-0
+
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Tempora/091-0:Lectio1:
+
+[Lectio2]
+@Tempora/091-0:Lectio2:
+
+[Lectio3]
+@Tempora/091-0:Lectio3:s/-11/-8/ s/9 .*//s
+
+[Lectio4]
+@Tempora/091-0:Lectio3:s/6-/9-/ s/6 .*9 /9 /s
+
+[Responsory4]
+@Tempora/091-1:Responsory1
+
+[Responsory5]
+@Tempora/091-0:Responsory4
+
+[Lectio5]
+@Tempora/091-0:Lectio4
+
+[Responsory6]
+@Tempora/091-0:Responsory5
+
+[Lectio6]
+@Tempora/091-0:Lectio5
+
+[Responsory7]
+@Tempora/091-0:Responsory6
+
+[Lectio7]
+@Tempora/091-0:Lectio6:s/Dicátur .*//s
+
+[Responsory8]
+@Tempora/091-1:Responsory2
+
+[Lectio8]
+@Tempora/091-0:Lectio6:s/.* Dicátur /Dicátur /s
+
+[Responsory9]
+@Tempora/091-0:Responsory7
+
+[Responsory10]
+R. Numquid supplántat judícium? aut Omnípotens subvértit quodiiustum est? † Líbera me, Dómine, et pone me juxta te:
+* Et cuiúsvis manus pugnet contra me.
+V. Apprehénde arma et scutum, et exsúrge in adiutórium mihi
+R. Et cuiúsvis manus pugnet contra me.
+
+[Responsory11]
+R. Nocte os meum perforátur dolóribus et qui me comédunt non dórmiunt: † a multitúdine eórum consúmitur vestiméntum meum comparátus sum luto
+* Et assimilátus sum fávillae et cíneri.
+V. O custos hóminum? quare posuísti me contrárium tibi, et factus sum mihimetípsi gravis? † Parce mihi, nihil enim sunt dies mei.
+R. Et assimilátus sum fávillae et cíneri.
