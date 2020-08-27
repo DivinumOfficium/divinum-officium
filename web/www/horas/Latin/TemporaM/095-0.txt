@@ -1,1 +1,64 @@
 @Tempora/095-0
+
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Tempora/095-0
+
+[Lectio2]
+@Tempora/095-0::s/ Léctuli.*//
+
+[Lectio3]
+@Tempora/095-0:Lectio2:s/5-6/6-7/ s/5 .* Léctuli /6 Léctuli /s
+@Tempora/095-0:Lectio3:s/!.*// s/8.*//s
+
+[Lectio4]
+@Tempora/095-0:Lectio3:s/7-/8-/ s/7 .*8 /8 /s
+
+[Responsory4]
+@TemporaM/094-0:Responsory4
+
+[Lectio5]
+@Tempora/095-0:Lectio4:s/Dénique .*//s
+
+[Responsory5]
+@Tempora/095-0:Responsory4
+
+[Lectio6]
+@Tempora/095-0:Lectio4:s/.* Dénique /Dénique /s s/$/~/
+@Tempora/095-0:Lectio5:s/.*// s/Nihil .*//s
+
+[Responsory6]
+@Tempora/093-0:Responsory7
+
+[Lectio7]
+@Tempora/095-0:Lectio5:s/.* Nihil /Nihil /s
+@Tempora/095-0:Lectio6:s/Et Scriptúra .*//s
+
+[Responsory7]
+@TemporaM/094-0:Responsory3
+
+[Lectio8]
+@Tempora/095-0:Lectio6:s/.* Et Scriptúra /Et Scriptúra /s
+
+[Responsory9]
+R. Dómine mi, qui rex noster es solus
+* Adiuva me solitariam.
+V. Periculum meum in manibus meis est.
+R. Adiuva me solitariam.
+
+[Responsory8]
+@TemporaM/094-0:Responsory6
+
+[Responsory9]
+@TemporaM/094-0:Responsory5
+
+[Responsory10]
+R. Domine mi, qui rex noster es solus 
+* Adjuva me solitariam.
+V. Periculum meum in manibus meis est.
+R. Adjuva me solitariam.
+
+[Responsory11]
+@TemporaM/094-0:Responsory11
