@@ -1,12 +1,25 @@
 @Tempora/Pent15-0
 
+[Rule]
+12 lectiones
+
+[Lectio9]
+@Tempora/Pent15-0:Lectio7
+
+[Lectio10]
+@Tempora/Pent15-0:Lectio8:s/Dóminus .*//s
+
+[Lectio11]
+@Tempora/Pent15-0:Lectio8:s/.* Dóminus/Dóminus/s s/$/~/
+@Tempora/Pent15-0:Lectio9:s/Alius .*//s
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8
+
+[Lectio12]
+@Tempora/Pent15-0:Lectio9:s/.* Alius /Alius /s
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Lucam
+Sequéntia ++ sancti Evangélii secúndum Lucam.
 !Luc 7:11-16
-7:11 Et factum est: deinceps ibat in civitatem quae vocatur Naim: et ibant cum eo discipuli ejus et turba copiosa.
-7:12 Cum autem appropinquaret portae civitatis, ecce defunctus efferebatur filius unicus matris suae: et haec vidua erat: et turba civitatis multa cum illa.
-7:13 Quam cum vidisset Dominus, misericordia motus super eam, dixit illi: Noli flere.
-7:14 Et accessit, et tetigit loculum. (Hi autem qui portabant, steterunt.) Et ait: Adolescens, tibi dico, surge.
-7:15 Et resedit qui erat mortuus, et c�pit loqui. Et dedit illum matri suae.
-7:16 Accepit autem omnes timor: et magnificabant Deum, dicentes: Quia propheta magnus surrexit in nobis: et quia Deus visitavit plebem suam.
-$Te decet
+In illo témpore: Ibat Jesus in civitátem, quæ vocátur Naim: et ibant cum eo discípuli ejus et turba copiósa. Cum autem appropinquáret portæ civitátis, ecce, defúnctus efferebátur fílius únicus matris suæ: et hæc vidua erat: et turba civitátis multa cum illa. Quam cum vidísset Dóminus, misericórdia motus super eam, dixit illi: Noli flere. Et accéssit et tétigit lóculum. - Hi autem, qui portábant, stetérunt. - Et ait: Adoléscens, tibi dico, surge. Et resédit, qui erat mórtuus, et cœpit loqui. Et dedit illum matri suæ. Accépit autem omnes timor: et magnificábant Deum, dicéntes: Quia Prophéta magnus surréxit in nobis: et quia Deus visitávit plebem suam.

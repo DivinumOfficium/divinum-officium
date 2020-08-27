@@ -1,19 +1,24 @@
 @Tempora/Pent17-0
 
+[Rule]
+12 lectiones
+
+[Lectio9]
+@Tempora/Pent17-0:Lectio7:s/Quid .*//s
+
+[Lectio10]
+@Tempora/Pent17-0:Lectio7:s/.* Quid/Quid/s
+
+[Lectio11]
+@Tempora/Pent17-0:Lectio8
+
+[Lectio12]
+@Tempora/Pent17-0:Lectio9
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Matthaeum
+Sequéntia ++ sancti Evangélii secúndum Matthǽum
 !Matt 22:34-46
-22:34 Pharisaei autem audientes quod silentium imposuisset sadducaeis, convenerunt in unum:
-22:35 et interrogavit eum unus ex eis legis doctor, tentans eum:
-22:36 Magister, quod est mandatum magnum in lege?
-22:37 Ait illi Jesus: Diliges Dominum Deum tuum ex toto corde tuo, et in tota anima tua, et in tota mente tua.
-22:38 Hoc est maximum, et primum mandatum.
-22:39 Secundum autem simile est huic: Diliges proximum tuum, sicut teipsum.
-22:40 In his duobus mandatis universa lex pendet, et prophetae.
-22:41 Congregatis autem pharisaeis, interrogavit eos Jesus,
-22:42 dicens: Quid vobis videtur de Christo? cujus filius est? Dicunt ei: David.
-22:43 Ait illis: Quomodo ergo David in spiritu vocat eum Dominum, dicens:
-22:44 Dixit Dominus Domino meo: Sede a dextris meis, donec ponam inimicos tuos scabellum pedum tuorum?
-22:45 Si ergo David vocat eum Dominum, quomodo filius ejus est?
-22:46 Et nemo poterat ei respondere verbum: neque ausus fuit quisquam ex illa die eum amplius interrogare.
-$Te decet
+In illo témpore: Accessérunt ad Jesum pharisǽi: et interrogávit eum unus ex eis legis doctor, tentans eum: Magíster, quod est mandátum magnum in lege? Ait illi Jesus: Díliges Dóminum, Deum tuum, ex toto corde tuo et in tota ánima tua et in tota mente tua. Hoc est máximum et primum mandátum. Secúndum autem símile est huic: Díliges próximum tuum sicut teípsum. In his duóbus mandátis univérsa lex pendet et prophétæ. Congregátis autem pharisǽis, interrogávit eos Jesus, dicens: Quid vobis vidétur de Christo? cujus fílius est? Dicunt ei: David. Ait illis: Quómodo ergo David in spíritu vocat eum Dóminum, dicens: Dixit Dóminus Dómino meo, sede a dextris meis, donec ponam inimícos tuos scabéllum pedum tuórum? Si ergo David vocat eum Dóminum, quómodo fílius ejus est? Et nemo poterat ei respóndere verbum: neque ausus fuit quisquam ex illa die eum ámplius interrogáre.
