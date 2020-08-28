@@ -294,6 +294,7 @@ sub absolutio_benedictio {
     : ($dayofweek == 3 || $dayofweek == 6) ? 3
     : 1;
   my @a = split("\n", $benedictio{"Nocturn $i"});
+  $a[5] = $a[4] if ($i == 3);
   push(@s, "Absolutio. $a[0]");
   push(@s, "\n");
   push(@s, "V. $a[1]");
