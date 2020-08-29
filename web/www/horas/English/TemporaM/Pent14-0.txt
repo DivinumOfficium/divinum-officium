@@ -1,5 +1,19 @@
+[Lectio9]
+@Tempora/Pent14-0:Lectio7:s/Mammon.*//s
+
+[Lectio10]
+@Tempora/Pent14-0:Lectio7:s/.* Mammon/Mammon/s
+@Tempora/Pent14-0:Lectio8:s/Of.*//s
+
+[Lectio11]
+@Tempora/Pent14-0:Lectio8:s/.* Of/Of/s
+@Tempora/Pent14-0:Lectio9:s/"Therefore,.*//s
+
+[Lectio12]
+@Tempora/Pent14-0:Lectio9:s/.* "Therefore,/"Therefore,/s
+
 [LectioE]
-Continuation of the Holy Gospel according to Matthew
+v. Continuation of the Holy Gospel according to Matthew
 !Matt 6:24-33
 6:24 No man can serve two masters. For either he will hate the one, and love the other: or he will sustain the one, and despise the other. You cannot serve God and mammon.
 6:25 Therefore I say to you, be not solicitous for your life, what you shall eat, nor for your body, what you shall put on. Is not the life more than the meat: and the body more than the raiment?

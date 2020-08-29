@@ -1014,7 +1014,6 @@ sub lectio : ScriptFunc {
   if ($lang !~ /Latin/i) {
     $w =~ s/\((.*?[.,].*?)\)/parenthesised_text($1)/eg;
   }
-  $w =~ s/\&Gloria/\&Gloria1/g;
   $w = replaceNdot($w, $lang);
   return $w;
 }
@@ -1168,9 +1167,11 @@ sub gettype1960 {
 #*** responsory_gloria($lectio_text, $num)
 # adds or removes \&gloria to lection
 # return the modified lectio text
+#
 sub responsory_gloria {
   my $w = shift;
   my $num = shift;
+  $w =~ s/\&Gloria1?/\&Gloria1/g;
   $prev = $w;
   if ($w =~ /(.*?)\&Gloria/is) { $prev = $1; }
   $prev =~ s/\s*$//gm;
@@ -1207,7 +1208,7 @@ sub responsory_gloria {
     if ($w !~ /\&Gloria/i) {
       $w =~ s/[\s_]*$//gs;
       $line = ($w =~ /(R\..*?$)/) ? $1 : '';
-      $w .= "\n\&Gloria\n$line";
+      $w .= "\n\&Gloria1\n$line";
     }
     return $w;
   }
