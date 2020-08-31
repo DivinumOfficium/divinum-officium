@@ -1,1 +1,54 @@
 @Tempora/092-0
+
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Tempora/092-0:Lectio1:
+@Tempora/092-0:Lectio2:s/!.*// s/6 .*//s
+
+[Lectio2]
+@Tempora/092-0:Lectio2:s/-10/-9/ s/10 .*//s
+
+[Lectio3]
+@Tempora/092-0:Lectio2:s/-10/-13/ s/6-/10-/ s/6 .*10 /10 /s
+@Tempora/092-0:Lectio3:s/!.*// s/14 .*//s
+
+[Lectio4]
+@Tempora/092-0:Lectio3:s/11-/14-/ s/11 .*14 /14 /s
+
+[Responsory4]
+@Tempora/091-1:Responsory1
+
+[Lectio5]
+@Tempora/092-0:Lectio4:s/Sanctus .*//s
+
+[Responsory5]
+@Tempora/091-0:Responsory4
+
+[Lectio6]
+@Tempora/092-0:Lectio4:s/.* Sanctus /Sanctus /s
+
+[Responsory6]
+@Tempora/091-0:Responsory5
+
+[Lectio7]
+@Tempora/092-0:Lectio5
+
+[Responsory7]
+@Tempora/091-0:Responsory6
+
+[Lectio8]
+@Tempora/092-0:Lectio6
+
+[Responsory8]
+@Tempora/091-1:Responsory2
+
+[Responsory9]
+@Tempora/091-0:Responsory7
+
+[Responsory10]
+@TemporaM/091-0:Responsory10
+
+[Responsory11]
+@TemporaM/091-0:Responsory11

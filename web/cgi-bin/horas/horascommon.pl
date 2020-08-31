@@ -741,7 +741,7 @@ sub getrank {
       }
       $commemoratio = $tname;
 
-      if ($cname && $version !~ /1960|Newcal/) {
+      if ($cname && $version !~ /1960|Newcal|Monastic/) {
         { $commemoratio1 = $cname; }    #{$commemoratio = $cname; $commemoratio1 = $tname;}
       }
       $comrank = $trank[2];

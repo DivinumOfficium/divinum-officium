@@ -241,7 +241,7 @@ $crubrics = ($rubrics) ? 'CHECKED' : '';
 $csolemn = ($solemn) ? 'CHECKED' : '';
 @chv = splice(@chv, @chv);
 for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'SELECTED' : ''; }
-$ctext = ($pmode =~ /(main)/i) ? 'Sancta Missa' : 'Sancta Missa Completed';
+$ctext = ($pmode =~ /(main)/i) ? 'Sancta Missa' : 'Sancta Missa Persoluta';
 print << "PrintTag";
 <P ALIGN=CENTER><FONT SIZE=+1><I>
 <LABEL FOR=rubrics>Rubrics : </LABEL><INPUT ID=rubrics TYPE=CHECKBOX NAME='rubrics' $crubrics Value=1  onclick="parchange()">
@@ -317,7 +317,6 @@ print << "PrintTag";
 <LABEL FOR=lang2 CLASS=offscreen>Language</LABEL>
 <SELECT ID=lang2 NAME=lang2 SIZE="$lang_count" onchange="parchange()">
 PrintTag
-
 foreach my $lang (@languages) {
   my $sel = ($lang2 =~ /$lang/i) ? 'SELECTED' : '';
   print qq(<OPTION $sel VALUE="$lang">$lang</OPTION>);
@@ -332,7 +331,23 @@ print << "PrintTag";
 <A HREF=# onclick="hset('Propers')">$propname</A></P>
 PrintTag
 print "</FONT></P>\n";
-
+    print << "PrintTag";
+</SELECT>
+<P ALIGN=CENTER><FONT SIZE=+1>
+<A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/credits.html" TARGET="_BLANK">Credits</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/download.html" TARGET="_BLANK">Download</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/technical.html" TARGET="_BLANK">Technical</A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="../../www/horas/Help/help.html" TARGET="_BLANK">Help</A>
+</FONT>
+</P>
+PrintTag
 #common end for programs
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
