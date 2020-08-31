@@ -1,4 +1,108 @@
 @Sancti/09-08
 
+[Rule]
+12 lectiones
+
 [Commemoratio]
- 
+
+
+[Lectio1]
+@Sancti/08-15t:Lectio1:s/-4/-3/ s/.4 .*//s
+
+[Lectio2]
+@Sancti/08-15t:Lectio1:s/.*!/!/s s/1-4/4-6/ s/1 .*4 /4 /s
+@Sancti/08-15t:Lectio2:s/!.*// s/7 .*//s
+
+[Lectio3]
+@Sancti/08-15t:Lectio2:s/5-9/7-10/ s/5 .*7 /7 /s
+@Sancti/08-15t:Lectio3:s/!.*// s/11 .*//s
+
+[Lectio4]
+@Sancti/08-15t:Lectio3:s/10-/11-/ s/10 .*11 /11 /s
+
+[Responsory4]
+R. Regáli ex progénie Maria exórta refúlget;
+* Cuius précibus nos adiuvári, mente et spíritu devotíssime póscimus.
+V. Corde et ánimo Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei Virginis Mariæ.
+R. Cuius précibus nos adiuvári, mente et spíritu devotíssime póscimus.
+
+[Lectio5]
+Sermo sancti Bernárdi Abbátis
+
+Et nomen inquit, Vírginis María. Loquámur pauca et super hoc nómine, quod interpretátum maris stella dícitur, et Matri Vírgini valde conveniénter aptátur. Ipsa namque aptíssime síderi comparátur, quia, sicut sine sui corruptióne sidus suum emíttit rádium, sic absque sui læsióne Virgo párturit Fílium. Nec síderi rádius suam mínuit claritátem, nec Vírgini Fílius suam integritátem.
+
+[Responsory5]
+@Sancti/09-08:Responsory4
+
+[Lectio6]
+Ipsa est ígitur nóbilis illa stella ex Iacob orta, cuius rádius univérsum orbem illúminat, cuius splendor et præfúlget in supérnis et ínferos pénetrat, terras étiam perlústrans et calefáciens magis mentes quam córpora fovet virtútem, excóquit vítia. Ipsa, inquam, est præclára et exímia stella super hoc mare magnum et spatiósum necessário subleváta, micans méritis, illústrans exémplis.
+
+[Responsory6]
+@Sancti/09-08:Responsory5
+
+[Lectio7]
+O quisquis te intélligis in huius sǽculi proflúvio magis inter procéllas et tempestátes fluctuáre quam per terram ambuláre, ne avértas óculos a fulgóre huius síderis, si non vis óbrui procéllis! Si insúrgant venti tentatiónum, si incúrras scópulos tribulatiónum, réspice stellam, voca Maríam. Si iactáris supérbiæ undis, si ambitiónis, si detractiónis, si æmulatiónis, réspice stellam, voca Maríam. Si iracúndia aut avarítia aut carnis illécebra navículam concússerit mentis, réspice ad Maríam. Si críminum immanitáte turbátus, consciéntiæ fœditáte confúsus, iudícii horróre pertérritus, báratro incípias absorbéri tristítiæ, desperatiónis abýsso, cógita Maríam.
+
+[Responsory7]
+@Sancti/09-08:Responsory6
+
+[Lectio8]
+In perículis, in angústiis, in rebus dúbiis Maríam cógita, Maríam invóca. Non recédat ab ore, non recédat a corde et, ut ímpetres eius oratiónis suffrágium, non déseras conversatiónis exémplum. Ipsam sequens non dévias, ipsam rogans non despéras, ipsam cógitans non erras; ipsa tenénte non córruis, ipsa protegénte non métuis, ipsa duce non fatigáris, ipsa propítia pérvenis et sic in temetípso experíris quam mérito dictum sit: Et nomen Vírginis María.
+
+[Responsory8]
+R. Corde et ánimo Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei Virginis Mariæ,
+* Ut ipsa pro nobis intercédat ad Dóminum.
+V. Cum iucunditáte Nativitátem beátæ Mariæ celebrémus.
+R. Ut ipsa pro nobis intercédat ad Dóminum.
+
+[Lectio9]
+@Sancti/09-08:Lectio7:s/Fílii .*//s
+
+[Responsory9]
+@Sancti/09-08:Responsory7
+
+[Lectio10]
+@Sancti/09-08:Lectio7:s/.* Fílii/Fílii/s
+
+[Responsory10]
+@Sancti/09-08:Responsory8
+
+[Lectio11]
+@Sancti/09-08:Lectio8:s/Judas .*//s
+
+[Responsory11]
+R. Nativitátem hodiérnam perpétuae Vírginis Dei Genetrícis Maríae solémniter celebrémus.
+* Qua celsitúdo throni procéssit.
+V. Regáli ex progénie María exórta refúlget.
+R. Qua celsitúdo throni procéssit.
+
+[Lectio12]
+@Sancti/09-08:Lectio8:s/.* Judas/Judas/s
+
+[Responsory12]
+R. Sancta et immaculáta virgínitas, quibus te láudibus éfferam néscio: 
+* Quia quem caeli cápere non póterant, tuo grémio contulísti.
+V. Benedícta tu in muliéribus, † et benedíctus fructus ventris tui.
+R. Quia quem caeli cápere non póterant, tuo grémio contulísti.
+
+[LectioE]
+Initium ++ sancti Evangélii secúndum Matthǽum.
+!Matt 1:1-16
+Liber generatiónis Jesu Christi, fílii David, fílii Abraham. Abraham génuit~
+Isaac. Isaac autem génuit Jacob. Jacob autem génuit Judam et fratres ejus. Judas~
+autem génuit Phares et Zaram de Thamar. Phares autem génuit Esron. Esron autem~
+génuit Aram. Aram autem génuit Amínadab. Amínadab autem génuit Naásson. Naásson~
+autem génuit Salmon. Salmon autem génuit Booz de Rahab. Booz autem génuit Obed~
+ex Ruth. Obed autem génuit Jesse. Jesse autem génuit David regem. David autem~
+rex génuit Salomónem ex ea, quæ fuit Uriæ. Sálomon autem génuit Róboam. Róboam~
+autem génuit Abíam. Abías autem génuit Asa. Asa autem génuit Josaphat. Jósaphat~
+autem génuit Joram. Joram autem génuit Ozíam. Ozías autem génuit Jóatham.~
+Jóatham autem génuit Achaz. Achaz autem génuit Ezechíam. Ezechías autem génuit~
+Manássen. Manásses autem génuit Amon. Amon autem génuit Josíam. Josías autem~
+génuit Jechoníam et fratres ejus in transmigratióne Babylónis. Et post~
+transmigratiónem Babylónis: Jechonías génuit Saláthiel. Saláthiel autem génuit~
+Zoróbabel. Zoróbabel autem génuit Abiud. Abiud autem génuit Elíacim. Elíacim~
+autem génuit Azor. Azor autem génuit Sadoc. Sadoc autem génuit Achim. Achim~
+autem génuit Eliud. Eliud autem génuit Eleázar. Eleázar autem génuit Mathan.~
+Mathan autem génuit Jacob. Jacob autem génuit Joseph, virum Maríæ, de qua natus~
+est Jesus, qui vocátur Christus.
