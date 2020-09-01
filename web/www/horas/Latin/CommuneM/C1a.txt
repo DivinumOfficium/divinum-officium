@@ -1,5 +1,38 @@
 @CommuneM/C1
 
+[Invit]
+@Commune/C1
+
+[Hymnus Matutinum]
+@Commune/C1:HymnusM Matutinum
+
+[Lectio1]
+@Commune/C1a:Lectio1:s/-4/-3/ s/4 .*//s
+
+[Responsory1]
+@Commune/C1
+
+[Lectio2]
+@Commune/C1a:Lectio1:s/.*!/!/s s/1-4/4-7/ s/1 .*4 /4 /s
+@Commune/C1a:Lectio2:s/!.*// s/8 .*//s
+
+[Responsory2]
+@Commune/C1
+
+[Lectio3]
+@Commune/C1a:Lectio2:s/5-9/8-10/ s/5 .*8 /8 /s
+@Commune/C1a:Lectio3:s/!.*// s/11 .*//s
+
+[Responsory3]
+@Commune/C1
+
+[Lectio4]
+@Commune/C1a:Lectio3:s/10-12/11-13/ s/10 .*11 /11 /s
+13 Et similitúdo animálium, aspéctus eórum quasi carbónum ignis ardéntium, et quasi aspéctus lampadárum.
+
+[Responsory4]
+@CommuneM/C1
+
 [LectioE]
 v. Sequéntia sancti Evangélii secúndum Lucam
 !Luc 10:1-9
