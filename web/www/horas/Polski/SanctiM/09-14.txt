@@ -7,3 +7,25 @@ _
 @Sancti/05-03
 _
 @Sancti/05-03:Responsory Tertia:s/._.*//s s/, allelu.a//g s/(ukaże się na niebie,? \* )?Allelu.a/* ukaże się na niebie/g s/\. \* u/. U/
+
+[Lectio2]
+@Sancti/09-14:Lectio1:s/.*!/!/s s/1-3/3-4/ s/1 .*3 /3 /s
+@Sancti/09-14:Lectio2:s/!.*// s/: i począł .*/./s
+
+[Lectio3]
+@Sancti/09-14:Lectio2:s/6-9/4-6/ s/4 .*: i począł/4 I począł/
+
+[Lectio9]
+@Sancti/09-14:Lectio7:s/Natomiast .*//s
+
+[Lectio10]
+@Sancti/09-14:Lectio7:s/.* Natomiast/Natomiast/s s/$/~/
+@Sancti/09-14:Lectio8:s/ Wszystko przyciągnąłeś .*//s
+
+[Lectio11]
+@Sancti/09-14:Lectio8:s/.*? Wszystko przyciągnąłeś /Wszystko przyciągnąłeś /s
+
+[LectioE]
+Ciąg dalszy ++ Ewangelii świętej według Jana.
+!J 12:31-36
+Onego czasu: Rzekł Jezus rzeszom żydowskim : «Teraz jest sąd świata, teraz książę tego świata precz wyrzucony zostanie. A ja, gdy nad ziemię podwyższony będę, wszystko do siebie przyciągnę». (A mówił to oznajmiając, jaką śmiercią, miał umrzeć). Odpowiedziała Mu rzesza: «My słyszeliśmy z Zakonu, że Chrystus trwa na wieki, a jakoż ty powiadasz, że trzeba, aby podwyższony był Syn Człowieczy? Któż to jest Syn Człowieczy?» Rzeki im tedy Jezus: «jeszcze tylko krótko światłość będzie pośród was. Chodźcie, póki światłość macie, aby was ciemności nie ogarnęły, a kto w ciemności chodzi, nie wie, dokąd zdąża. Dopóki światłość macie, wierzcie światłości, abyście synami światłości byli».
