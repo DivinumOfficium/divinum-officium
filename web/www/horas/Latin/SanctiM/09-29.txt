@@ -1,33 +1,132 @@
 @Sancti/05-08
 
 [Rank]
-In Dedicatione S. Michaëlis Archangelis;;Duplex 1. classis;;6
+In Dedicatione S. Michaëlis Archangelis;;Duplex I. classis;;6
+
+[Rule]
+12 lectiones
 
 [Capitulum Vespera]
 @Sancti/05-08
 _
 @Sancti/05-08:Responsory Sexta:s/._.*//s
 
+[Hymnus Matutinum]
+@:HymnusM Vespera
+
 [Ant Matutinum]
-@Sancti/09-28
+Concússum est mare, * et contrémuit terra, ubi Archángelus Míchaël descendébat de cælo.;;8
+Laudémus Dóminum, * quem laudant Ángeli, quem Chérubim et Séraphim, Sanctus, Sanctus, Sanctus proclámant.;;10
+Ascéndit * fumus arómatum in conspéctu Dómini de manu Ángeli.;;14
+Míchaël Archángele, * veni in adjutórium pópulo Dei.;;18
+Míchaël * præpósitus paradísi, quem honoríficant Angelórum cives.;;23
+Gloriósus * apparuísti in conspéctu Dómini: proptérea decórem índuit te Dóminus.;;33
+V. Stetit Angelus juxta aram templi.
+R. Habens thuríbulum aureum in manu sua.
+Sancte Míchael Archángele, defénde nos in proélio, * ut non pereámus in treméndo judício, allelúja.;;89
+Ángelus Archángelus Míchaël, * Dei núntius pro animábus justis, allelúja, allelúja.;;95
+Data sunt ei * incénsa multa, ut adoléret ea ante altáre áureum, quod est ante óculos Dómini.;;96
+Multa magnália * de Michaéle Archángelo, qui, fortis in prǽlio, fecit victóriam.;;97
+Stetit Angelus juxta aram templi, * habens thuríbulum áureum in manu sua.;;98
+Benedícite Dóminum, omnes Angeli ejus: * benedícite, minístri ejus, qui fácitis voluntátem ejus: † benedícite Dóminum.;;102
+V. Ascéndit fumus arómatum in conspéctu Dómini.
+R. De manu Angeli.
+Míchael, Gábriel, * Chérubim et Séraphim, qui non cessant clamáre quotídie, dicéntes: † Dignus es, Dómine, accípere glóriam, allelúja.;;266;267;268
+V. In conspéctu Angelórum psallam tibi, Deus meus.
+R. Adorábo ad templum sanctum tuum, et confitébor nómini tuo.
+
+[Lectio2]
+@Sancti/05-08::s/-8/-6/ s/7 .*//s
+
+[Lectio3]
+@Sancti/05-08:Lectio2:s/4-8/7-9/ s/4 .*7 /7 /s
+@Sancti/05-08:Lectio3:s/!.*// s/10 .*//s
 
 [Lectio4]
-@Sancti/09-28
+@Sancti/05-08:Lectio3:s/9-/10-/ s/9 .*10 /10 /s
+
+[Responsory4]
+R. Te sanctum Dóminum in excélsis laudant omnes Angeli, dicéntes:
+* Te decet laus et honor, Dómine.
+V. Chérubim quoque et Séraphim sanctus proclámant, † et omnis cǽlicus ordo dicens.
+R. Te decet laus et honor, Dómine.
 
 [Lectio5]
-@Sancti/09-28
+@Sancti/09-29:Lectio4
+
+[Responsory5]
+@Sancti/05-08:Responsory4
 
 [Lectio6]
-@Sancti/09-28
+@Sancti/09-29:Lectio5:s/ Hi autem.*//s
+
+[Responsory6]
+@Sancti/05-08:Responsory5
 
 [Lectio7]
-@Sancti/09-28
+@Sancti/09-29:Lectio5:s/.*Hi autem/Hi autem/s
+
+[Responsory7]
+@Sancti/05-08:Responsory6
 
 [Lectio8]
-@Sancti/09-28
+@Sancti/09-29:Lectio6
+
+[Responsory8]
+R. Míchael et Angeli eius pugnábant cum diábolo;
+* Et ille hostis antíquus victus est ab eis.
+V. Factum est proélium magnum in cælo: † Míchaël et Angeli eius præliabántur cum dracóne.
+R. Et ille hostis antíquus victus est ab eis.
 
 [Lectio9]
-@Sancti/09-28
+@Sancti/09-29:Lectio7
+
+[Responsory9]
+@Sancti/05-08:Responsory7
+
+[Lectio10]
+@Sancti/09-29:Lectio8:s/ Si, inquit.*//
+
+[Responsory10]
+@Sancti/05-08:Responsory8
+
+[Lectio11]
+@Sancti/09-29:Lectio8:s/.*Si, inquit/Si, inquit/
+
+[Responsory11]
+R. Nunc facta est salus et virtus et regnum Deo nostro et potéstas Christi ejus,
+* Quia projéctus est accusátor fratrum nostrórum, † qui accusábat illos ante conspéctum Dei nostri die ac nocte, † allelúja, allelúja.
+V. Proptérea lætámini cæli, et qui habitátis in eis.
+R. Quia projéctus est accusátor fratrum nostrórum, † qui accusábat illos ante conspéctum Dei nostri die ac nocte, † allelúja, allelúja.
+
+[Lectio12]
+@Sancti/09-29:Lectio9
+
+[Responsory12]
+R. Fidélis sermo, et omni acceptióne dignus: † Míchael Archángelus qui pugnávit cum diábolo:
+* Grátia Dei ille victor in caelis éxstitit et ille hostis antíquus pátuit ruínae magnae.
+V. Gaudent Angeli laetántur Archángeli de Michaéle Dei núntio.
+R. Grátia Dei ille victor in caelis éxstitit et ille hostis antíquus pátuit ruínae magnae.
+
+[LectioE]
+Sequéntia ++ sancti Evangélii secúndum Matthǽum.
+!Matt 18:1-10
+In illo témpore: Accessérunt discípuli ad Jesum, dicéntes: Quis, putas, major~
+est in regno cœlórum? Et ádvocans Jesus parvulum, statuit eum in médio eórum et~
+dixit: Amen, dico vobis, nisi convérsi fuéritis et efficiámini sicut párvuli,~
+non intrábitis in regnum cælorum. Quicúmque ergo humiliáverit se sicut párvulus~
+iste, hic est major in regno cœlórum. Et qui suscéperit unum párvulum talem in~
+nómine meo, me súscipit. Qui autem scandalizáverit unum de pusíllis istis, qui~
+in me credunt, expédit ei, ut suspendátur mola asinária in collo ejus, et~
+demergátur in profúndum maris. Væ mundo a scándalis! Necésse est enim, ut~
+véniant scándala: verúmtamen væ hómini illi, per quem scándalum venit! Si autem~
+manus tua vel pes tuus scandalízat te, abscíde eum et prójice abs te: bonum tibi~
+est ad vitam íngredi débilem vel cláudum, quam duas manus vel duos pedes~
+habéntem mitti in ignem ætérnum. Et si óculus tuus scandalízat te, érue eum et~
+prójice abs te: bonum tibi est cum uno óculo in vitam intráre, quam duos óculos~
+habéntem mitti in gehénnam ignis. Vidéte, ne contemnátis unum ex his pusíllis:~
+dico enim vobis, quia Angeli eórum in cœlis semper vident fáciem Patris mei,~
+qui in cœlis est.
 
 [Capitulum Laudes]
 @Sancti/05-08

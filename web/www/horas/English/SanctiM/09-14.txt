@@ -1,9 +1,108 @@
 [Capitulum Vespera]
 @Sancti/05-03
 _
-@Sancti/09-14:Responsory Sexta:s/._.*//s
+@Sancti/05-03:Responsory Sexta:s/._.*//s s/, .lleluia//g s/(and we bless thee. \* )?Alleluia/* and we bless thee/g s/\. \* a/. A/
+
+[Ant Matutinum]
+In the noble tree's uplifting, * and the nations bending low, see a proof that Christ hath triumphed o'er the legions of the foe.;;1
+In the Holy Cross * uplifted, see the rod of power exalted, wherewithal King Jesus triumphed.;;2
+Cross most gracious, * from whose aspect health to sickly souls is given, with what praises shall I praise thee, who hast brought us life from heaven?;;4
+For all that feel sin's fiery wound ensign of health the Saviour see! * May we as conquerors be found through Him Who triumphed on the tree.;;5
+O sweet wood, O sweet nails That bore his sweet burden which alone were worthy to support his body.;;8
+When by the Saviour on the Cross * the bonds of sin were riven, we by His chastisement were healed, and death to death was given.;;10
+V. This sign of the Cross shall be in heaven.
+R. When the Lord cometh to judgment.
+Before the saving Cross of Christ all Christians bend in prayer, and glory is ascribed to Him who dreadly triumphed there.;;20
+Your rod and your staff, they have comforted me, O Lord, my God.;;22
+We adore thee, O Christ, * and we bless thee, because through thy Cross Thou hast redeemed the world.;;95
+By a tree * were we brought into bondage, and by the Holy Cross are we set free. The fruit of a tree beguiled us; the Son of God hath brought us back. Alleluia.;;96
+Save us, O Saviour of the world, * Who hast redeemed us by thy Cross and Blood; help us, we beseech thee, O our God!;;97
+We adore the sign of the cross, through which we have been granted the sacrament of salvation.;;98
+V. We adore thee, O Christ, and we bless thee.
+R. Because that through thy Cross Thou hast redeemed the world.
+But God forbid that I should glory, save in the cross of our Lord Jesus Christ; by whom the world is crucified to me, and I to the world.;;246;247;248
+V. Let all the earth worship thee, and sing unto thee.
+R. Let them sing to thy Name, O Lord!
+
+[Lectio2]
+@Sancti/09-14:Lectio1:s/.*!/!/s s/1-3/3-4/ s/1 .*3 /3 /s
+@Sancti/09-14:Lectio2:s/!.*// s/ And the .*//s
+
+[Lectio3]
+@Sancti/09-14:Lectio2:s/6-9/4-6/ s/4 .* And the /4 And the /s
+
+
+[Responsory4]
+R. O blessed cross,
+* Which alone was worthy to bear the Lord and King of the heaven.
+V. O glorious and admirable cross, O cross to be venerated.
+R. Which alone was worthy to bear the Lord and King of the heaven.
+
+[Lectio6]
+@Sancti/09-14:Lectio5:s/ The Cross.*//s
+
+[Lectio7]
+@Sancti/09-14:Lectio5:s/.* The Cross/The Cross/s s/$/~/
+@Sancti/09-14:Lectio6:s/ Then spake.*//s
+
+[Responsory7]
+@Sancti/05-03:Responsory6
+
+[Lectio8]
+@Sancti/09-14:Lectio6:s/.* Then spake/Then spake/s
+
+[Responsory8]
+R. By the sign of the cross
+* Deliver us from our enemies, O our God.
+V. Save us, O Christ our Saviour, through the power of thy Cross
+V. Deliver us from our enemies, O our God.
+
+[Lectio9]
+@Sancti/09-14:Lectio7:s/But our .*//s
+
+[Responsory9]
+@Sancti/05-03:Responsory7
+
+[Lectio10]
+@Sancti/09-14:Lectio7:s/.* But our/But our/s s/$/~/
+@Sancti/09-14:Lectio8:s/ Thou .*//s
+
+[Responsory10]
+@Sancti/05-03:Responsory8
+
+[Lectio11]
+@Sancti/09-14:Lectio8:s/.*? Thou /Thou /s
+
+[Responsory11]
+R. We adore your cross, we remember your glorious passion
+* Have mercy on us, O Lord, who suffered for us.
+V. We adore Thee, O Christ, and we bless Thee, who by Thy Holy Cross hast redeemed the world.
+R. Have mercy on us, O Lord, who suffered for us.
+
+[Lectio12]
+@Sancti/09-14:Lectio9
+
+[Responsory12]
+R. Behold the Cross of the Lord, begone all evil powers, the Lion of the tribe of Judah,
+* The root of David has conquered! Alleluia.
+V. O Blessed cross, on which the King of the Angels triumphed.
+R. The root of David has conquered, Alleluia.
+
+[LectioE]
+Continuation ++ of the Holy Gospel according to John
+!John 12:31-36
+ At that time, Jesus said to the multitudes of the Jews, Now is the judgment of~
+the world; now will the prince of the world be cast out. And I, if I be lifted~
+up from the earth, will draw all things to Myself. Now he said this signifying~
+by what death He was to die. The crowd answered Him, We have heard from the Law~
+that the Christ abides forever. And how can You say, ‘The son of Man must be~
+lifted up’? Who is this Son of Man? Jesus therefore said to them, Yet a little~
+while the light is among you. Walk while you have the light, that darkness may~
+not overtake you. He who walks in the darkness does not know where he goes.~
+While you have the light, believe in the light, that you may become sons of~
+light.
 
 [Capitulum Laudes]
 @Sancti/05-03
 _
-@Sancti/09-14:Responsory Tertia:s/._.*//s
+@Sancti/05-03:Responsory Tertia:s/._.*//s s/, Alleluia//g s/(shall be in heaven. \* )?Alleluia/* shall be in heaven/g s/\. \* s/. S/

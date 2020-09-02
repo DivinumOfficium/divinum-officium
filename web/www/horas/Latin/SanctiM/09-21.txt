@@ -1,11 +1,44 @@
 @Sancti/09-21
 
+[Rule]
+12 lectiones
+
+[Lectio4]
+@CommuneM/C1a
+
+[Lectio5]
+@Sancti/09-21:Lectio4
+
+[Lectio6]
+@Sancti/09-21:Lectio5
+
+[Lectio7]
+@Sancti/09-21:Lectio6:s/ Per contemplatiónem.*//s
+
+[Lectio8]
+@Sancti/09-21:Lectio6:s/.* Per contemplatiónem/Per contemplatiónem/s s/$/~/
+Quátuor ergo fácies uni sunt, quia si requíras quid Matthǽus de incarnatióne Dómini séntiat, hoc nimírum sentit quod Marcus, Lucas et Joánnes. Si quaeras quid Joánnes séntiat, hoc procul dúbio quod Lucas, Marcus et Matthǽus. Si quaeras quid Marcus, hoc quod Matthǽus, Joánnes et Lucas. Si quaeras quid Lucas, hoc quod Joánnes, Matthǽus et Marcus sentit.
+
+[Lectio9]
+@Sancti/09-21:Lectio7
+
+[Lectio10]
+@Sancti/09-21:Lectio8:s/ Certe.*//s
+
+[Lectio11]
+@Sancti/09-21:Lectio8:s/.* Certe/Certe/s
+
+[Lectio12]
+@Sancti/09-21:Lectio9
+
 [LectioE]
-v. Sequéntia sancti Evangélii secúndum Matthǽum
-!Matt 9:9-13 
-9:9 Et, cum transíret inde Iesus, vidit hóminem sedéntem in telónio, Matthǽum nómine. Et ait illi: Séquere me. Et surgens, secútus est eum.
-9:10 Et factum est, discumbénte eo in domo, ecce multi publicáni et peccatóres veniéntes, discumbébant cum Iesu, et discípulis eius.
-9:11 Et vidéntes Pharisǽi, dicébant discípulis eius: Quare cum publicánis et peccatóribus mandúcat magíster vester?
-9:12 At Iesus áudiens, ait: Non est opus valéntibus médicus, sed male habéntibus.
-9:13 Eúntes autem díscite quid est: Misericórdiam volo, et non sacrifícium. Non enim veni vocáre iustos, sed peccatóres.
-$Te decet
+Sequéntia ++ sancti Evangélii secúndum Matthǽum.
+!Matt 9:9-13
+In illo témpore: Vidit Jesus hóminem sedéntem in telónio, Matthǽum nómine. Et~
+ait illi: Séquere me. Et surgens, secútus est eum. Et factum est, discumbénte eo~
+in domo, ecce, multi publicáni et peccatóres veniéntes discumbébant cum Jesu et~
+discípulis ejus. Et vidéntes pharisæi, dicébant discípulis ejus: Quare cum~
+publicánis et peccatóribus mánducat Magíster vester? At Jesus áudiens,ait: Non~
+est opus valéntibus médicus, sed male habéntibus. Eúntes autem díscite, quid~
+est: Misericórdiam volo, et non sacrifícium. Non enim veni vocáre justos, sed~
+peccatóres.

@@ -3,6 +3,10 @@
 [Rank]
 In Exaltatione Sanctæ Crucis;;Duplex II classis;;5.5
 
+[Rule]
+12 lectiones
+Psalmi Dominica
+
 [Ant Vespera]
 @:Ant Laudes
 
@@ -19,6 +23,129 @@ _
 
 [Ant 1]
 @Sancti/05-03
+
+[Hymnus Matutinum]
+@Psalterium/Matutinum Special:HymnusM Quad5
+
+[Ant Matutinum]
+Nóbile lignum * exaltátur, Christi fides rútilat, dum Crux ab ómnibus venerátur.;;1
+Sancta Crux * extóllitur a cunctis régibus, virga régia erígitur, in qua Salvátor triumphávit.;;2
+O Crux venerábilis, * quæ salútem attulísti míseris, quibus te éfferam præcóniis, quóniam vitam nobis cǽlitem præparásti.;;4
+O Crucis victória * et admirábile signum, in cælésti cúria fac nos captáre triúmphum.;;5
+Dulce lignum, / dulces clavos, dulce pondus sustínuit, † quae sola digna fuit portáre prétium hujus sǽculi.;;8
+Funéstæ mortis * damnátur supplícium, dum Christus, in Cruce, nostra destrúxit víncula críminum.;;10
+V. Hoc signum Crucis erit in cælo.
+R. Cum Dóminus ad judicándum vénerit.
+Rex exaltátur * in ǽthera, cum nóbile trophǽum Crucis ab univérsis christícolis adorátur per sǽcula.;;20
+Virga tua, et báculus tuus: * ipsa me consoláta sunt, † Dómine, Deus meus.;;22
+Adorámus te, Christe, * et benedícimus tibi, quia per Crucem tuam redemísti mundum.;;95
+Per lignum * servi facti sumus, et per sanctam Crucem liberáti sumus: fructus árboris sedúxit nos, Fílius Dei redémit nos, allelúja.;;96
+Salvátor mundi, * salva nos: qui per Crucem et sánguinem tuum redemísti nos, auxiliáre nobis, te deprecámur, Deus noster.;;97
+Adorámus Crucis signáculum, * per quod salútis súmpsimus sacraméntum.;;98
+V. Adorámus te, Christe, et benedícimus tibi.
+R. Quia per Crucem tuam redemísti mundum.
+Mihi autem * absit gloriári, nisi in cruce Dómini nostri Jesu Christi: per quem mihi mundus crucifíxus est, et ego mundo.;;246;247;248
+V. Omnis terra adoret te, et psallat tibi.
+R. Psalmum dicat nómini tuo, Dómine.
+
+[Lectio1]
+@Sancti/09-14:Lectio1:s/-3/-2/ s/.3 .*//s
+
+[Responsory1]
+@Sancti/05-03:Responsory1
+
+[Lectio2]
+@Sancti/09-14:Lectio1:s/.*!/!/s s/1-3/3-4/ s/1 .*3 /3 /s
+@Sancti/09-14:Lectio2:s/!.*// s/ Et .*//s
+
+[Responsory2]
+@Sancti/05-03:Responsory2
+
+[Lectio3]
+@Sancti/09-14:Lectio2:s/6-9/4-6/ s/4 .* Et /4 Et /s
+
+[Responsory3]
+@Sancti/05-03:Responsory3
+
+[Lectio4]
+@Sancti/09-14:Lectio3
+
+[Responsory4]
+R. O crux benedícta,
+* Quae sola fuísti digna portáre Regem caelórum et Dóminum!
+V. O crux gloriósa et admirábilis o crux veneránda!
+R. Quae sola fuísti digna portáre Regem caelórum et Dóminum!
+
+[Lectio5]
+@Sancti/09-14:Lectio4
+
+[Responsory5]
+@Sancti/05-03:Responsory4
+
+[Lectio6]
+@Sancti/09-14:Lectio5:s/ Ergo.*//s
+
+[Responsory6]
+@Sancti/05-03:Responsory5
+
+[Lectio7]
+@Sancti/09-14:Lectio5:s/.* Ergo/Ergo/s s/$/~/
+@Sancti/09-14:Lectio6:s/ Cumque.*//s
+
+[Responsory7]
+@Sancti/05-03:Responsory6
+
+[Lectio8]
+@Sancti/09-14:Lectio6:s/.* Cumque/Cumque/s
+
+[Responsory8]
+R. Per signum Crucis de inimícis nostris
+* Líbera nos, Deus noster.
+V. Salva nos, Christe Salvátor, per virtútem crucis.
+R. Líbera nos, Deus noster.
+
+[Lectio9]
+@Sancti/09-14:Lectio7:s/Noster .*//s
+
+[Responsory9]
+@Sancti/05-03:Responsory7
+
+[Lectio10]
+@Sancti/09-14:Lectio7:s/.* Noster/Noster/s s/$/~/
+@Sancti/09-14:Lectio8:s/ Traxísti, .*//s
+
+[Responsory10]
+@Sancti/05-03:Responsory8
+
+[Lectio11]
+@Sancti/09-14:Lectio8:s/.*? Traxísti,/Traxísti,/s
+
+[Responsory11]
+R. Tuam Crucem adorámus Dómine: † tuam gloriósam recólimus passiónem:
+* Miserére nostri, qui passus es pro nobis.
+V. Adorámus te, Christe, et benedícimus tibi: † quia per sanctam crucem tuam redemísti mundum.
+R. Miserére nostri, qui passus es pro nobis.
+
+[Lectio12]
+@Sancti/09-14:Lectio9
+
+[Responsory12]
+R. Ecce Crucem Dómini, fúgite partes advérsae, vicit Leo de tribu Juda,
+* Radix David, allelúja.
+V. Crux benedícta, in qua triumphávit Rex Angelórum.
+R. Radix David, allelúja.
+
+[LectioE]
+Sequéntia ++ sancti Evangélii secúndum Joánnem.
+!Joann 12:31-36
+In illo témpore: Dixit Jesus turbis Judæórum: Nunc judícium est mundi: nunc~
+princeps hujus mundi ejiciétur foras. Et ego si exaltátum fuero a terra, ómnia~
+traham ad meipsum. (Hoc autem dicébat, signíficans qua morte esset moritúrus.)~
+Respóndit ei turba. Nos audívimus ex lege, quia Christus manet in ætérnum: et~
+quómodo tu dicis: Opórtet exaltári Fílium hóminis? Quis est iste Fílius hóminis?~
+Dixit ergo eis Jesus: Adhuc módicum lumen in vobis est. Ambuláte, dum lucem~
+habétis, ut non vos ténebræ comprehéndant: et qui ámbulat in ténebris, nescit,~
+quo vadat. Dum lucem habétis, crédite in lucem, ut fílii lucis sitis.
 
 [Capitulum Laudes]
 @Sancti/05-03
