@@ -194,7 +194,7 @@ sub psalmi_matutinum_monastic {
       $w = $s{"MM Capitulum $name"};
     }
   }
-  if ((!$w || $commune =~ /M\/C10/) && $commune) {
+  if (!$w && $commune) {
     my $name = $commune;
     $name =~ s/.*M.//;
     $name =~ s/\.txt//;
@@ -287,25 +287,18 @@ sub absolutio_benedictio {
 
   push(@s, "\n");
   push(@s, '&pater_noster');
-  my @a;
-  if ($commune =~ /C10/) {
-    my %m = (columnsel($lang)) ? %commune : %commune2;
-    @a = split("\n", $m{Benedictio});
-    setbuild2('Special benedictio');
-  } else {
-    my %benedictio = %{setupstring($datafolder, $lang, 'Psalterium/Benedictions.txt')};
-    my $i =
-        ($dayofweek == 1 || $dayofweek == 4) ? 1
-      : ($dayofweek == 2 || $dayofweek == 5) ? 2
-      : ($dayofweek == 3 || $dayofweek == 6) ? 3
-      : 1;
-    @a = split("\n", $benedictio{"Nocturn $i"});
-    $a[4] = $a[5] if ($i != 3);
-  }
+  my %benedictio = %{setupstring($datafolder, $lang, 'Psalterium/Benedictions.txt')};
+  my $i =
+      ($dayofweek == 1 || $dayofweek == 4) ? 1
+    : ($dayofweek == 2 || $dayofweek == 5) ? 2
+    : ($dayofweek == 3 || $dayofweek == 6) ? 3
+    : 1;
+  my @a = split("\n", $benedictio{"Nocturn $i"});
+  $a[5] = $a[4] if ($i == 3);
   push(@s, "Absolutio. $a[0]");
   push(@s, "\n");
   push(@s, "V. $a[1]");
-  push(@s, "Benedictio. $a[4]");
+  push(@s, "Benedictio. $a[5]");
   push(@s, "_");
 }
 
@@ -347,16 +340,8 @@ sub legend_monastic {
 sub brevis_monastic {
   my $lang = shift;
   absolutio_benedictio($lang);
-  my $lectio;
-  if ($commune =~ /C10/) {
-    my %c = (columnsel($lang)) ? %commune : %commune2;
-    $lectio = %c{getC10readingname()} ."\n_\n" . %c{'Responsory3'};
-    setbuild2("Mariae $name");
-  }
-  else {
-    my %b = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
-    $lectio  = $b{"MM LB$dayofweek"};
-  }
+  my %b = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
+  my $lectio  = $b{"MM LB$dayofweek"};
   $lectio =~ s/&Gloria1?/&Gloria1/;
   push(@s, $lectio);
 }
