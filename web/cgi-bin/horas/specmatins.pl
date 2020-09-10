@@ -605,6 +605,14 @@ sub matins_lectio_responsory_alleluia(\$$) {
     $$r = join("\n", @resp);
   }
 }
+#
+#*** getC10readingname
+sub getC10readingname {
+  return "Lectio M101" if ($version !~ /1960|Monastic/i && $month == 9 && $day > 8 && $day < 15);
+  my $satnum = floor(($day - 1) / 7 + 1) % 5;
+  $satnum = 4 if ($satnum == 5);
+  return sprintf("Lectio M%02i%s", $month, ($version =~ /Monastic/i) ? $satnum : '');
+}
 
 #*** lectio($num, $lang)
 # input $num=index number for the lectio(1-9 or 1-3) and language
@@ -773,9 +781,9 @@ sub lectio : ScriptFunc {
   if ($commune{Rule} =~ /Special Lectio $num/) {
     %mariae = %{setupstring($datafolder, $lang, "$communename/C10.txt")};
     if ($version =~ /Trident/i) { %mariae = %{setupstring($datafolder, $lang, "$communename/C10t.txt")}; }
-    $w = $mariae{sprintf("Lectio M%02i", $month)};
-    if ($version !~ /1960/ && $month == 9 && $day > 8 && $day < 15) { $w = $mariae{"Lectio M101"}; }
-    setbuild2("Lectio $num Mariae M$month");
+    my $name = getC10readingname();
+    $w = $mariae{$name};
+    setbuild2("Mariae $name");
   }
 
   # Combine lessons 8 and 9 if there's a commemoration to be read in place of
