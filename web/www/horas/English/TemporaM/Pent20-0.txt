@@ -1,12 +1,29 @@
+[Lectio9]
+@Tempora/Pent20-0:Lectio7:s/Wherefore then.*//s
+
+[Lectio10]
+@Tempora/Pent20-0:Lectio7:s/.* Wherefore /Wherefore /s s/$/~/
+@Tempora/Pent20-0:Lectio8:s/He believed .*//s
+
+[Lectio11]
+@Tempora/Pent20-0:Lectio8:s/.* He believed /He believed /s s/$/~/
+@Tempora/Pent20-0:Lectio9:s/Thus .*//s
+
+[Lectio12]
+@Tempora/Pent20-0:Lectio9:s/.* Thus /Thus /s
+
 [LectioE]
-Continuation of the Holy Gospel according to John
+Continuation ++ of the Holy Gospel according to John
 !John 4:46-53
-4:46 He came again therefore into Cana of Galilee, where he made the water wine. And there was a certain ruler, whose son was sick at Capharnaum.
-4:47 He having heard that Jesus was come from Judea into Galilee, went to him, and prayed him to come down, and heal his son; for he was at the point of death.
-4:48 Jesus therefore said to him: Unless you see signs and wonders, you believe not.
-4:49 The ruler saith to him: Lord, come down before that my son die.
-4:50 Jesus saith to him: Go thy way; thy son liveth. The man believed the word which Jesus said to him, and went his way.
-4:51 And as he was going down, his servants met him; and they brought word, saying, that his son lived.
-4:52 He asked therefore of them the hour wherein he grew better. And they said to him: Yesterday, at the seventh hour, the fever left him.
-4:53 The father therefore knew, that it was at the same hour that Jesus said to him, Thy son liveth; and himself believed, and his whole house.
-$Te decet
+At that time, there was a certain royal official whose son was lying sick at~
+Capharnaum. When he heard that Jesus had come from Judea into Galilee, he went~
+to Him and besought Him to come down and heal his son, for he was at the point~
+of death. Jesus therefore said to him, Unless you see signs and wonders, you do~
+not believe. The royal official said to Him, Sir, come down before my child~
+dies. Jesus said to him, Go your way, your son lives. The man believed the word~
+that Jesus spoke to him, and departed. But even as he was now going down, his~
+servants met him and brought word saying that his son lived. He asked of them~
+therefore the hour in which he had got better. And they told him, Yesterday, at~
+the seventh hour, the fever left him. The father knew then that it was at that~
+very hour in which Jesus had said to him, Your son lives. And he himself~
+believed, and his whole household.
