@@ -97,12 +97,14 @@ sub psalmi_matutinum_monastic {
     for ($i = 0; $i < 3; $i++) { $psalmi[$i + 16] = $c[$i]; }
   }
 
-  #** get proper Ant Matutinum
-  my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
-  if ($w) {
-    @psalmi = split("\n", $w);
-    $comment = $c;
-    $prefix .= ' ' . translate('et Psalmi', $lang);
+  if ($rank > 3) {
+    #** get proper Ant Matutinum
+    my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
+    if ($w) {
+      @psalmi = split("\n", $w);
+      $comment = $c;
+      $prefix .= ' ' . translate('et Psalmi', $lang);
+    }
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
   my $i = 0;
