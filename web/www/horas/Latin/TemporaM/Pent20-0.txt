@@ -1,14 +1,36 @@
 @Tempora/Pent20-0
 
+[Rule]
+12 lectiones
+
+[Lectio9]
+@Tempora/Pent20-0:Lectio7:s/Quare .*//s
+
+[Lectio10]
+@Tempora/Pent20-0:Lectio7:s/.* Quare /Quare /s s/$/~/
+@Tempora/Pent20-0:Lectio8:s/Minus .*//s
+
+[Lectio11]
+@Tempora/Pent20-0:Lectio8:s/.* Minus /Minus /s s/$/~/
+@Tempora/Pent20-0:Lectio9:s/Salútem .*//s
+
+[Lectio12]
+@Tempora/Pent20-0:Lectio9:s/.* Salútem /Salútem /s
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Joannem
+Sequéntia ++ sancti Evangélii secúndum Joánnem
 !Joannes 4:46-53
-4:46 Venit ergo iterum in Cana Galilaeae, ubi fecit aquam vinum. Et erat quidam regulus, cujus filius infirmabatur Capharnaum.
-4:47 Hic cum audisset quia Jesus adveniret a Judaea in Galilaeam, abiit ad eum, et rogabat eum ut descenderet, et sanaret filium ejus: incipiebat enim mori.
-4:48 Dixit ergo Jesus ad eum: Nisi signa et prodigia videritis, non creditis.
-4:49 Dicit ad eum regulus: Domine, descende priusquam moriatur filius meus.
-4:50 Dicit ei Jesus: Vade, filius tuus vivit. Credidit homo sermoni quem dixit ei Jesus, et ibat.
-4:51 Jam autem eo descendente, servi occurrerunt ei, et nuntiaverunt dicentes, quia filius ejus viveret.
-4:52 Interrogabat ergo horam ab eis in qua melius habuerit. Et dixerunt ei: Quia heri hora septima reliquit eum febris.
-4:53 Cognovit ergo pater, quia illa hora erat in qua dixit ei Jesus: Filius tuus vivit; et credidit ipse et domus ejus tota.
-$Te decet
+In illo témpore: Erat quidam régulus, cujus fílius infirmabátur Caphárnaum. Hic~
+cum audísset, quia Jesus adveníret a Judǽa in Galilǽam, ábiit ad eum, et~
+rogábat eum, ut descénderet et sanáret fílium ejus: incipiébat enim mori. Dixit~
+ergo Jesus ad eum: Nisi signa et prodígia vidéritis, non créditis. Dicit ad eum~
+régulus: Dómine, descénde, priúsquam moriátur fílius meus. Dicit ei Jesus: Vade,~
+fílius tuus vivit. Crédidit homo sermóni, quem dixit ei Jesus, et ibat. Jam~
+autem eo descendénte, servi occurrérunt ei et nuntiavérunt, dicéntes, quia~
+fílius ejus víveret. Interrogábat ergo horam ab eis, in qua mélius habúerit. Et~
+dixérunt ei: Quia heri hora séptima relíquit eum febris. Cognóvit ergo pater,~
+quia illa hora erat, in qua dixit ei Jesus: Fílius tuus vivit: et crédidit ipse~
+et domus ejus tota.

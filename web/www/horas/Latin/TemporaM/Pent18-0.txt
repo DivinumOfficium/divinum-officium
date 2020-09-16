@@ -1,14 +1,34 @@
 @Tempora/Pent18-0
 
+[Rule]
+12 lectiones
+
+[Lectio9]
+@Tempora/Pent18-0:Lectio7:s/Nonne hic.*//s
+
+[Lectio10]
+@Tempora/Pent18-0:Lectio7:s/.* Nonne /Nonne /s s/$/~/
+@Tempora/Pent18-0:Lectio8:s/Et quid mirum.*//s
+
+[Lectio11]
+@Tempora/Pent18-0:Lectio8:s/.* Et quid mirum/Et quid mirum/s
+
+[Lectio12]
+@Tempora/Pent18-0:Lectio9
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Matthaeum
+Sequéntia ++ sancti Evangélii secúndum Matthǽum
 !Matt 9:1-8
-9:1 Et ascendens in naviculam, transfretavit, et venit in civitatem suam.
-9:2 Et ecce offerebant ei paralyticum jacentem in lecto. Et videns Jesus fidem illorum, dixit paralytico: Confide fili, remittuntur tibi peccata tua.
-9:3 Et ecce quidam de scribis dixerunt intra se: Hic blasphemat.
-9:4 Et cum vidisset Jesus cogitationes eorum, dixit: Ut quid cogitatis mala in cordibus vestris?
-9:5 Quid est facilius dicere: Dimittuntur tibi peccata tua: an dicere: Surge, et ambula?
-9:6 Ut autem sciatis, quia Filius hominis habet potestatem in terra dimittendi peccata, tunc ait paralytico: Surge, tolle lectum tuum, et vade in domum tuam.
-9:7 Et surrexit, et abiit in domum suam.
-9:8 Videntes autem turbae timuerunt, et glorificaverunt Deum, qui dedit potestatem talem hominibus.
-$Te decet
+In illo témpore: Ascéndens Jesus in navículam, transfretávit et venit in~
+civitátem suam. Et ecce, offerébant ei paralýticum jacéntem in lecto. Et videns~
+Jesus fidem illórum, dixit paralýtico: Confíde, fili, remittúntur tibi peccáta~
+tua. Et ecce, quidam de scribis dixérunt intra se: Hic blasphémat. Et cum~
+vidísset Jesus cogitatiónes eórum, dixit: Ut quid cogitátis mala in córdibus~
+vestris? Quid est facílius dícere: Dimittúntur tibi peccáta tua; an dícere:~
+Surge et ámbula? Ut autem sciátis, quia Fílius hóminis habet potestátem in terra~
+dimitténdi peccáta, tunc ait paralýtico: Surge, tolle lectum tuum, et vade in~
+domum tuam. Et surréxit et ábiit in domum suam. Vidéntes autem turbæ timuérunt,~
+et glorificavérunt Deum, qui dedit potestátem talem homínibus.

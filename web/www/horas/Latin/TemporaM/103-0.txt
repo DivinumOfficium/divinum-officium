@@ -1,1 +1,53 @@
 @Tempora/103-0
+
+[Lectio1]
+@Tempora/103-0:Lectio1:s/-6/-4/ s/5 .*//s
+
+[Lectio2]
+@Tempora/103-0:Lectio1:s/-6/-9/ s/1-/5-/ s/1 [^M].*5 /5 /s
+@Tempora/103-0:Lectio2:s/!.*// s/10 .*//s
+
+[Lectio3]
+@Tempora/103-0:Lectio2:s/-11/-13/ s/7-/10-/ s/7 .*10 /10 /s
+@Tempora/103-0:Lectio3:s/!.*// s/14 .*//s
+
+[Lectio4]
+@Tempora/103-0:Lectio3
+
+[Responsory4]
+@Tempora/101-1:Responsory1
+
+[Lectio5]
+@Tempora/103-0:Lectio4:s/Ita commísso .*//s
+
+
+[Responsory5]
+@Tempora/101-0:Responsory4
+
+[Lectio6]
+@Tempora/103-0:Lectio4:s/.* Ita commísso /Ita commísso /s s/$/~/
+@Tempora/103-0:Lectio5:s/Habes .*//s
+
+[Responsory6]
+@Tempora/101-0:Responsory5
+
+[Lectio7]
+@Tempora/103-0:Lectio5:s/.* Habes /Habes /s
+
+[Responsory7]
+@Tempora/101-0:Responsory6
+
+[Lectio8]
+@Tempora/103-0:Lectio6
+
+[Responsory8]
+@Tempora/101-1:Responsory2
+
+[Responsory9]
+@Tempora/101-0:Responsory7
+
+[Responsory10]
+@Tempora/101-1:Responsory3
+
+[Responsory11]
+@Tempora/101-2:Responsory1

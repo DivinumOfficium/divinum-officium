@@ -1,12 +1,24 @@
+[Lectio9]
+@Tempora/Pent18-0:Lectio7:s/Was not This He Who made .*//s
+
+[Lectio10]
+@Tempora/Pent18-0:Lectio7:s/.* Was not /Was not /s
+@Tempora/Pent18-0:Lectio8:s/What .*//s
+
+[Lectio11]
+@Tempora/Pent18-0:Lectio8:s/.* What /What /s
+
 [LectioE]
-Continuation of the Holy Gospel according to Matthew
+Continuation ++ of the Holy Gospel according to Matthew
 !Matt 9:1-8
-9:1 AND entering into a boat, he passed over the water and came into his own city.
-9:2 And behold they brought to him one sick of the palsy lying in a bed. And Jesus, seeing their faith, said to the man sick of the palsy: Be of good heart, son, thy sins are forgiven thee.
-9:3 And behold some of the scribes said within themselves: He blasphemeth.
-9:4 And Jesus seeing their thoughts, said: Why do you think evil in your hearts?
-9:5 Whether is easier, to say, Thy sins are forgiven thee: or to say, Arise, and walk?
-9:6 But that you may know that the Son of man hath power on earth to forgive sins, (then said he to the man sick of palsy,) Arise, take up thy bed, and go into thy house.
-9:7 And he arose, and went into his house.
-9:8 And the multitude seeing it, feared, and glorified God that gave such power to men.
-$Te decet
+At that time, Jesus, getting into a boat, crossed over and came to his own town.~
+And behold, they brought to Him a paralytic lying on a pallet. And Jesus, seeing~
+their faith, said to the paralytic, Take courage, son; your sins are forgiven~
+you. And behold, some of the scribes said within themselves, This man~
+blasphemes. And Jesus, knowing their thoughts, said, Why do you harbor evil~
+thoughts in your hearts? For which is easier, to say, ‘Your sins are forgiven~
+you,’ or to say, ‘Arise, and walk’? But that you may know that the Son of Man~
+has power on earth to forgive sins, - then He said to the paralytic - Arise,~
+take up your pallet and go to your house. And he arose, and went away to his~
+house. But when the crowds saw it, they were struck with fear, and glorified God~
+Who had given such power to men.
