@@ -145,7 +145,10 @@ sub psalmi_matutinum_monastic {
 
     if ($psalmi[16] =~ /(.*?);;(.*)/s) {
       my $ant = $1;
-      my @c = split(';', $2);
+      my $p = $2;
+      $p =~ s/[\(\-]/\,/g;
+      $p =~ s/\)//g;
+      my @c = split(';', $p);
       push(@s, "Ant. $ant");
       push(@s, "\&psalm($c[0])\n");
       push(@s, "\n");
