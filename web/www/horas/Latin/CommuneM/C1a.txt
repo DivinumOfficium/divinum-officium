@@ -33,16 +33,18 @@
 [Responsory4]
 @CommuneM/C1
 
-[LectioE]
-v. Sequéntia sancti Evangélii secúndum Lucam
-!Luc 10:1-9
-10:1 Post hæc autem designávit Dóminus et álios septuagínta duos: et misit illos binos ante fáciem suam in omnem civitátem et locum, quo erat ipse ventúrus.
-10:2 Et dicébat illis: Messis quidem multa, operárii autem pauci. Rogáte ergo dóminum messis ut mittat operários in messem suam.
-10:3 Ite: ecce ego mitto vos sicut agnos inter lupos.
-10:4 Nolíte portáre sácculum, neque peram, neque calceaménta, et néminem per viam salutavéritis.
-10:5 In quamcúmque domum intravéritis, primum dícite: Pax huic dómui:
-10:6 et si ibi fúerit fílius pacis, requiéscet super illum pax vestra: sin autem, ad vos revertétur.
-10:7 In eádem autem domo manéte, edéntes et bibéntes quæ apud illos sunt: dignus est enim operárius mercéde sua. Nolíte transíre de domo in domum.
-10:8 Et in quamcúmque civitátem intravéritis, et suscéperint vos, manducáte quæ apponúntur vobis:
-10:9 et curáte infírmos, qui in illa sunt, et dícite illis: Appropinquávit in vos regnum Dei.
-$Te decet
+[Lectio9]
+@Commune/C1a:Lectio7:s/Nemo .*//s
+
+[Lectio10]
+@Commune/C1a:Lectio7:s/.* Nemo /Nemo /s s/$/~/
+@Commune/C1a:Lectio8:s/Bene .*//s
+
+[Lectio11]
+@Commune/C1a:Lectio8:s/.* Bene /Bene /s
+
+[Lectio12]
+@Commune/C1a:Lectio9
+
+[Ant Laudes]
+@Commune/C1

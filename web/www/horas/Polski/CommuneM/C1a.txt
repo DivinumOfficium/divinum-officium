@@ -1,0 +1,13 @@
+[Lectio4]
+@Commune/C1a:Lectio3:s/10-12/11-13/ s/10 .*11 /11 /s
+13 A podobieństwo zwierząt: osoba ich jako węgla ognistego gorejącego i jako kształt pochodni.
+
+[Lectio9]
+@Commune/C1a:Lectio7:s/Nie .*//s
+
+[Lectio10]
+@Commune/C1a:Lectio7:s/.* Nie można /Nie można /s s/$/~/
+@Commune/C1a:Lectio8:s/Stosownie .*//s
+
+[Lectio11]
+@Commune/C1a:Lectio8:s/.* Stosownie /Stosownie /s
