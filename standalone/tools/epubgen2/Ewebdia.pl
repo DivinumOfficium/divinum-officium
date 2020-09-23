@@ -15,8 +15,8 @@ my $a = 4;
 #our %fontOverrides=('red113bi'=>'<b>', 'black82'=>'<em>', 'red0i'=>'<span class="ri">', 'red63'=>'<abbr>', 'red150bi'=>'<i class="a">');
 #our %fontOverridesEnd=('red113bi'=>'</b>', 'black82'=>'</em>', 'red0i'=>'</span>', 'red63'=>'</abbr>', 'red150bi'=>'</i>');
 
-our %fontOverrides=('red113bi'=>'<b>', 'black82'=>'<em>', 'red0i'=>'<span class="ri">', 'red63'=>'<span class="w">', 'red150bi'=>'<i class="a">');
-our %fontOverridesEnd=('red113bi'=>'</b>', 'black82'=>'</em>', 'red0i'=>'</span>', 'red63'=>'</span>', 'red150bi'=>'</i>');
+our %fontOverrides=('red113bi'=>'<b>', 'black82'=>'<em>', 'red0i'=>'<span class="ri">', 'red63'=>'<span class="w">', 'red150bi'=>'<span class="a">');
+our %fontOverridesEnd=('red113bi'=>'</b>', 'black82'=>'</em>', 'red0i'=>'</span>', 'red63'=>'</span>', 'red150bi'=>'</span>');
 
 #*** htmlHead($title, $flag)
 # generated the standard head with $title
@@ -421,11 +421,11 @@ sub setcell {
         while ($i < @tdtext1 && $i < @tdtext2) {
           $item = $tdtext1[$i];
       if ($i > 0) {$htmltext .= "<DIV STYLE=\"display: table-row;\">";}
-              $htmltext .="<DIV STYLE=\"width: 54%; display: table-cell; vertical-align: top; padding-right: 10pt; border-right: 1pt solid;\">";
+              $htmltext .="<DIV CLASS='lang1'>";
       $htmltext .=  setfont($blackfont,$item) . "</DIV>\n";
 
       $item = $tdtext2[$i];
-      $htmltext .="<DIV STYLE=\"width: 44%; display: table-cell; vertical-align: top; padding-left: 10pt; font-size: 80%; line-height: 1.2;\">";
+      $htmltext .="<DIV CLASS='lang2'>";
       $htmltext .=  setfont($blackfont,$item) . "</DIV></DIV>\n";
       if ($extracolumn) {
             $htmltext .="<DIV STYLE=\"width: 10%; display: table-cell; vertical-align: top; text-align: center;\">";
