@@ -1,17 +1,33 @@
+[Lectio9]
+@Tempora/Pent21-0:Lectio7:s/For if .*//s
+
+[Lectio10]
+@Tempora/Pent21-0:Lectio7:s/.* For if /For if /s s/$/~/
+@Tempora/Pent21-0:Lectio8:s/But if .*//s
+
+[Lectio11]
+@Tempora/Pent21-0:Lectio8:s/.* But if /But if /s
+
 [LectioE]
-Continuation of the Holy Gospel according to Matthew
+Continuation ++ of the Holy Gospel according to Matthew
 !Matt 18:23-35
-18:23 Therefore is the kingdom of heaven likened to a king, who would take an account of his servants.
-18:24 And when he had begun to take the account, one was brought to him, that owed him ten thousand talents.
-18:25 And as he had not wherewith to pay it, his lord commanded that he should be sold, and his wife and children and all that he had, and payment to be made.
-18:26 But that servant falling down, besought him, saying: Have patience with me, and I will pay thee all.
-18:27 And the lord of that servant being moved with pity, let him go and forgave him the debt.
-18:28 But when that servant was gone out, he found one of his fellow servants that owed him an hundred pence: and laying hold of him, throttled him, saying: Pay what thou owest.
-18:29 And his fellow servant falling down, besought him, saying: Have patience with me, and I will pay thee all.
-18:30 And he would not: but went and cast him into prison, till he paid the debt.
-18:31 Now his fellow servants seeing what was done, were very much grieved, and they came and told their lord all that was done.
-18:32 Then his lord called him; and said to him: Thou wicked servant, I forgave thee all the debt, because thou besoughtest me:
-18:33 Shouldst not thou then have had compassion also on thy fellow servant, even as I had compassion on thee?
-18:34 And his lord being angry, delivered him to the torturers until he paid all the debt.
-18:35 So also shall my heavenly Father do to you, if you forgive not every one his brother from your hearts.
-$Te decet
+At that time, Jesus spoke to His disciples this parable: The kingdom of heaven~
+is likened to a king who desired to settle accounts with his servants. And when~
+he had begun the settlement, one was brought to him who owed him ten thousand~
+talents. And as he had no means of paying, his master ordered him to be sold,~
+with his wife and children and all that he had, and payment to be made. But the~
+servant fell down and besought him, saying, ‘Have patience with me and I will~
+pay you all!’ And moved with compassion, the master of that servant released him,~
+and forgave him the debt. But as that servant went out, he met one of his~
+fellow-servants who owed him a hundred denarii and he laid hold of him, and~
+throttled him, saying, ‘Pay what you owe.’ His fellow-servant therefore fell~
+down and began to entreat him, saying, ‘Have patience with me and I will pay you~
+all.’ But he would not; but went away and cast him into prison until he should~
+pay what was due. His fellow-servants therefore, seeing what had happened, were~
+very much saddened, and they went and informed their master of what had taken~
+place. Then his master called him, and said to him, ‘Wicked servant! I forgave~
+you all the debt, because you entreated me. Should not you also have had pity on~
+your fellow-servant, even as I had pity on you?’ And his master, being angry,~
+handed him over to the torturers until he should pay all that was due to him. So~
+also My heavenly Father will do to you, if you do not each forgive your brothers~
+from your hearts.

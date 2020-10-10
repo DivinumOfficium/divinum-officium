@@ -1,19 +1,42 @@
 @Tempora/Pent21-0
 
+[Rule]
+12 lectiones
+
+[Lectio9]
+@Tempora/Pent21-0:Lectio7:s/Si enim .*//s
+
+[Lectio10]
+@Tempora/Pent21-0:Lectio7:s/.* Si enim /Si enim /s s/$/~/
+@Tempora/Pent21-0:Lectio8:s/Sin autem .*//s
+
+[Lectio11]
+@Tempora/Pent21-0:Lectio8:s/.* Sin autem /Sin autem /s
+
+[Lectio12]
+@Tempora/Pent21-0:Lectio9
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Matthaeum
+Sequéntia ++ sancti Evangélii secúndum Matthǽum
 !Matt 18:23-35
-18:23 Ideo assimilatum est regnum caelorum homini regi, qui voluit rationem ponere cum servis suis.
-18:24 Et cum c�pisset rationem ponere, oblatus est ei unus, qui debebat ei decem millia talenta.
-18:25 Cum autem non haberet unde redderet, jussit eum dominus ejus venundari, et uxorem ejus, et filios, et omnia quae habebat, et reddi.
-18:26 Procidens autem servus ille, orabat eum, dicens: Patientiam habe in me, et omnia reddam tibi.
-18:27 Misertus autem dominus servi illius, dimisit eum, et debitum dimisit ei.
-18:28 Egressus autem servus ille invenit unum de conservis suis, qui debebat ei centum denarios: et tenens suffocavit eum, dicens: Redde quod debes.
-18:29 Et procidens conservus ejus, rogabat eum, dicens: Patientiam habe in me, et omnia reddam tibi.
-18:30 Ille autem noluit: sed abiit, et misit eum in carcerem donec redderet debitum.
-18:31 Videntes autem conservi ejus quae fiebant, contristati sunt valde: et venerunt, et narraverunt domino suo omnia quae facta fuerant.
-18:32 Tunc vocavit illum dominus suus: et ait illi: Serve nequam, omne debitum dimisi tibi quoniam rogasti me:
-18:33 nonne ergo oportuit et te misereri conservi tui, sicut et ego tui misertus sum?
-18:34 Et iratus dominus ejus tradidit eum tortoribus, quoadusque redderet universum debitum.
-18:35 Sic et Pater meus caelestis faciet vobis, si non remiseritis unusquisque fratri suo de cordibus vestris.
-$Te decet
+In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Assimilátum est~
+regnum cœlórum hómini regi, qui vóluit ratiónem pónere cum servis suis. Et cum~
+cœpísset ratiónem pónere, oblátus est ei unus, qui debébat ei decem mília~
+talénta. Cum autem non habéret, unde rédderet, jussit eum dóminus ejus venúmdari~
+et uxórem ejus et fílios et ómnia, quæ habébat, et reddi. Prócidens autem servus~
+ille, orábat eum, dicens: Patiéntiam habe in me, et ómnia reddam tibi. Misértus~
+autem dóminus servi illíus, dimísit eum et débitum dimísit ei. Egréssus autem~
+servus ille, invénit unum de consérvis suis, qui debébat ei centum denários: et~
+tenens suffocábat eum, dicens: Redde, quod debes. Et prócidens consérvus ejus,~
+rogábat eum, dicens: Patiéntiam habe in me, et ómnia reddam tibi. Ille autem~
+nóluit: sed ábiit, et misit eum in cárcerem, donec rédderet débitum. Vidéntes~
+autem consérvi ejus, quæ fiébant, contristáti sunt valde: et venérunt et~
+narravérunt dómino suo ómnia, quæ facta fúerant. Tunc vocávit illum dóminus~
+suus: et ait illi: Serve nequam, omne débitum dimísi tibi, quóniam rogásti me:~
+nonne ergo opórtuit et te miseréri consérvi tui, sicut et ego tui misértus sum?~
+Et irátus dóminus ejus, trádidit eum tortóribus, quoadúsque rédderet univérsum~
+débitum. Sic et Pater meus cœléstis fáciet vobis, si non remiséritis~
+unusquísque fratri suo de córdibus vestris.

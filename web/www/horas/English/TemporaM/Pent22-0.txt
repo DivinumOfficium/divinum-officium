@@ -1,11 +1,27 @@
+[Lectio9]
+@Tempora/Pent22-0:Lectio7:s/They.*//
+
+[Lectio10]
+@Tempora/Pent22-0:Lectio7:s/.* They /They /s s/$/~/
+@Tempora/Pent22-0:Lectio8:s/They .*//s
+
+[Lectio11]
+@Tempora/Pent22-0:Lectio8:s/.* They /They /s s/$/~/
+@Tempora/Pent22-0:Lectio9:s/But if .*//s
+
+[Lectio12]
+@Tempora/Pent22-0:Lectio9:s/.* But if /But if /s
+
 [LectioE]
-Continuation of the Holy Gospel according to Matthew
+Continuation ++ of the Holy Gospel according to Matthew
 !Matt 22:15-21
-22:15 Then the Pharisees going, consulted among themselves how to insnare him in his speech.
-22:16 And they sent to him their disciples with the Herodians, saying: Master, we know that thou art a true speaker, and teachest the way of God in truth, neither carest thou for any man: for thou dost not regard the person of men.
-22:17 Tell us therefore what dost thou think, is it lawful to give tribute to Caesar, or not?
-22:18 But Jesus knowing their wickedness, said: Why do you tempt me, ye hypocrites?
-22:19 Shew me the coin of the tribute. And they offered him a penny.
-22:20 And Jesus saith to them: Whose image and inscription is this?
-22:21 They say to him: Caesar's. Then he saith to them: Render therefore to Caesar the things that are Caesar's; and to God, the things that are God's.
-$Te decet
+At that time, the Pharisees went and took counsel how they might trap Jesus in~
+His talk. And they sent to Him their disciples with the Herodians, saying,~
+Master, we know that You are truthful, and that You teach the way of God in~
+truth, and that You care naught for any man; for You do not regard the person of~
+men. Tell us, therefore, what do You think: Is it lawful to give tribute to~
+Caesar, or not? But Jesus, knowing their wickedness, said, Why do you test Me,~
+you hypocrites? Show Me the coin of the tribute. So they offered Him a~
+denarius. Then Jesus said to them, Whose are this image and the inscription?~
+They said to Him, Caesar’s. Then He said to them, Render, therefore, to Caesar~
+the things that are Caesar’s, and to God the things that are God’s.
