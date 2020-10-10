@@ -1,13 +1,34 @@
 @Tempora/Pent22-0
 
+[Rule]
+12 lectiones
+
+[Lectio9]
+@Tempora/Pent22-0:Lectio7:s/Igitur .*//s
+
+[Lectio10]
+@Tempora/Pent22-0:Lectio7:s/.* Igitur /Igitur /s s/$/~/
+@Tempora/Pent22-0:Lectio8:s/Pharisǽi .*//s
+
+[Lectio11]
+@Tempora/Pent22-0:Lectio8:s/.* Pharisǽi /Pharisǽi /s s/$/~/
+@Tempora/Pent22-0:Lectio9:s/Porro .*//s
+
+[Lectio12]
+@Tempora/Pent22-0:Lectio9:s/.* Porro /Porro /s
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Matthaeum
+Sequéntia ++ sancti Evangélii secúndum Matthǽum
 !Matt 22:15-21
-22:15 Tunc abeuntes pharisaei, consilium inierunt ut caperent eum in sermone.
-22:16 Et mittunt ei discipulos suos cum Herodianis, dicentes: Magister, scimus quia verax es, et viam Dei in veritate doces, et non est tibi cura de aliquo: non enim respicis personam hominum:
-22:17 dic ergo nobis quid tibi videtur, licet censum dare Caesari, an non?
-22:18 Cognita autem Jesus nequitia eorum, ait: Quid me tentatis, hypocritae?
-22:19 ostendite mihi numisma census. At illi obtulerunt ei denarium.
-22:20 Et ait illis Jesus: Cujus est imago haec, et superscriptio?
-22:21 Dicunt ei: Caesaris. Tunc ait illis: Reddite ergo quae sunt Caesaris, Caesari: et quae sunt Dei, Deo.
-$Te decet
+In illo témpore: Abeúntes pharisǽi consílium iniérunt, ut cáperent Jesum in~
+sermóne. Et mittunt ei discípulos suos cum Herodiánis, dicéntes: Magíster,~
+scimus, quia verax es et viam Dei in veritáte doces, et non est tibi cura de~
+áliquo: non enim réspicis persónam hóminum: dic ergo nobis, quid tibi vidétur,~
+licet censum dare Cǽsari, an non? Cógnita autem Jesus nequítia eórum, ait: Quid~
+me tentátis, hypócritæ? Osténdite mihi numísma census. At illi obtulérunt ei~
+denárium. Et ait illis Jesus: Cujus est imágo hæc et superscríptio? Dicunt ei:~
+Cǽsaris. Tunc ait illis: Réddite ergo, quæ sunt Cǽsaris, Cǽsari; et, quæ sunt~
+Dei, Deo. 
