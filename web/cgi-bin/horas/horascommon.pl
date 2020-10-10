@@ -1415,7 +1415,7 @@ sub monthday {
     my $advent1 = getadvent($year);
     my $wdist = floor(($advent1 - $t - 1) / 7);
     $weeks = 4 - $wdist;
-    if ($version =~ /1960/ && $weeks == 1) { $weeks = 0; }
+    if ($version =~ /1960|Monastic/ && $weeks == 1) { $weeks = 0; }
   }
   my $monthday = sprintf('%02i%01i-%01i', $m - 1, $weeks + 1, $dow);
   return $monthday;
