@@ -1,4 +1,36 @@
 @Sancti/11-09
 
+[Rule]
+12 lectiones
+
 [Commemoratio]
- 
+
+
+[Lectio1]
+@Sancti/11-09:Lectio1:
+@Sancti/11-09:Lectio2:s/!.*// s/12 .*//s
+
+[Lectio2]
+@Sancti/11-09:Lectio2:s/-15/-14/ s/15 .*//s
+
+[Lectio3]
+@Sancti/11-09:Lectio2:s/-15/-16/ s/12-/15-/ s/12 .*15 /15 /s
+@Sancti/11-09:Lectio3:s/!.*// s/17 .*//s
+
+[Lectio4]
+@Sancti/11-09:Lectio3:s/16-/17-/ s/16 .*17 /17 /s
+
+[Lectio5]
+@Sancti/11-09:Lectio4
+
+[Lectio6]
+@Sancti/11-09:Lectio5
+
+[Lectio7]
+@Sancti/11-09:Lectio6:s/Quo .*//s
+
+[Lectio8]
+@Sancti/11-09:Lectio6:s/.* Quo /Quo /s
+
+[LectioE]
+@CommuneM/C8
