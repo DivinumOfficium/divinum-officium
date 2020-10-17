@@ -29,6 +29,23 @@ Sint lumbi vestri * praecincti et lucernae ardentes in manibus vestris;;256;257;
 V. Tu es sacérdos in ætérnum.
 R. Secúndum órdinem Melchísedech.
 
+[HymnusM Matutinum]
+@Commune/C4:Hymnus1M Vespera
+
+[Lectio1]
+@Commune/C4:Lectio1:s/-7/-4/ s/5 .*//s
+
+[Lectio2]
+@Commune/C4:Lectio1:s/.*5 /!1 Tim 3:5-9\n5 /s
+8 Diáconos simíliter pudícos, non bilíngues, non multo vino déditos, non turpe lucrum sectántes:
+9 habéntes mystérium fídei in consciéntia pura.
+
+[Lectio3]
+@Commune/C4:Lectio2
+
+[Lectio4]
+@Commune/C4:Lectio3
+
 [Capitulum Laudes]
 @Commune/C4
 _
