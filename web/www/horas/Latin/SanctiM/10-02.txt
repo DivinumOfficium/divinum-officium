@@ -1,9 +1,17 @@
 @Sancti/10-02
 
+[Rank]
+Ss. Angelorum Custodum;;Duplex;;3
+
 [Capitulum Vespera]
 @Sancti/10-02
 _
 @Sancti/05-08:Responsory Sexta:s/._.*//s
+
+[MM Capitulum]
+@Sancti/10-02:Capitulum Sexta
+_
+@Sancti/05-08:Responsory Tertia:s/.*_//s
 
 [Capitulum Laudes]
 @Sancti/10-02

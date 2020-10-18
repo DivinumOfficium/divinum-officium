@@ -11,6 +11,22 @@ Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex;;3;;ex C11
 _
 @Sancti/10-07:Responsory Sexta:s/._.*//s
 
+[Hymnus Matutinum]
+@Sancti/10-07:Hymnus Vespera:s/.@.*//s
+_
+@Sancti/10-07:Hymnus Matutinum:s/v. // s/Nat/NatT/
+
+[Lectio94]
+@Sancti/10-07:Lectio7:s/.*_//s s/!.*//s
+@Sancti/10-07:Lectio8
+
+[MM Capitulum]
+@Sancti/10-07:Capitulum Sexta
+_
+@Sancti/10-07:Responsory Tertia:s/.*_//s
+
+
+
 [Capitulum Laudes]
 @Sancti/10-07:Capitulum Vespera
 _

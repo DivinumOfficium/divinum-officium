@@ -1,15 +1,9 @@
-@CommuneM/C1
+[Lectio9]
+@Commune/C1a:Lectio7:s/And no .*//s
 
-[LectioE]
-Continuation of the Holy Gospel according to Luke
-!Luke 10:1-9
-10:1 And after these things the Lord appointed also other seventy-two: and he sent them two and two before his face into every city and place whither he himself was to come.
-10:2 And he said to them: The harvest indeed is great, but the labourers are few. Pray ye therefore the Lord of the harvest, that he send labourers into his harvest.
-10:3 Go: Behold I send you as lambs among wolves.
-10:4 Carry neither purse, nor scrip, nor shoes; and salute no man by the way.
-10:5 Into whatsoever house you enter, first say: Peace be to this house.
-10:6 And if the son of peace be there, your peace shall rest upon him; but if not, it shall return to you.
-10:7 And in the same house, remain, eating and drinking such things as they have: for the labourer is worthy of his hire. Remove not from house to house.
-10:8 And into what city soever you enter, and they receive you, eat such things as are set before you.
-10:9 And heal the sick that are therein, and say to them: The kingdom of God is come nigh unto you.
-$Te decet
+[Lectio10]
+@Commune/C1a:Lectio7:s/.* And no /And no /s s/$/~/
+@Commune/C1a:Lectio8:s/Well .*//s
+
+[Lectio11]
+@Commune/C1a:Lectio8:s/.* Well /Well /s

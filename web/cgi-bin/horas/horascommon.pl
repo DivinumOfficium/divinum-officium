@@ -270,7 +270,7 @@ sub getrank {
   if ($testmode =~ /(Saint|Common)/i) { $tn = 'none'; }
 
   #Vespera anticipation  concurrence
-  if (-e "$datafolder/$lang1/$tn.txt" || $dayname[0] =~ /Epi0/i || ($transfer{$nday}) =~ /tempora/i) {
+  if (-e "$datafolder/Latin/$tn.txt" || $dayname[0] =~ /Epi0/i || ($transfer{$nday}) =~ /tempora/i) {
     $dofw = $dayofweek;
 
     if ($hora =~ /(vespera|completorium)/i && $testmode !~ /(Saint|Common)/i) {
@@ -291,7 +291,7 @@ sub getrank {
       }
 
       #$tvesp = 1;
-      %tn1 = %{officestring($datafolder, $lang1, "$tn1.txt", 1)};
+      %tn1 = %{officestring($datafolder, 'Latin', "$tn1.txt", 1)};
 
       if ($tn1{Rank} =~ /(Feria|Vigilia|infra octavam|Quat[t]*uor)/i && $tn1{Rank} !~ /in octava/i
        && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
@@ -314,7 +314,7 @@ sub getrank {
     }
     $tname = "$tn.txt";
     $tvesp = 3;
-    %tempora = %{officestring($datafolder, $lang1, $tname)};
+    %tempora = %{officestring($datafolder, 'Latin', $tname)};
     $trank = $tempora{Rank};
 
     if ($hora =~ /(Vespera|Completorium)/i && $tempora{Rule} =~ /No secunda Vespera/i && $version !~ /1960/) {
@@ -364,10 +364,10 @@ sub getrank {
   $snd = ($snd =~ /([0-9]+\-[0-9]+)/) ? $1 : '';
   if ($testmode =~ /^Season$/i) { $sn = 'none'; }
 
-  if (-e "$datafolder/$lang1/$sn.txt") {
+  if (-e "$datafolder/Latin/$sn.txt") {
     $sname = "$sn.txt";
     if ($caller && $hora =~ /(Matutinum|Laudes)/i) { $sname =~ s/11-02t/11-02/; }
-    %saint = updaterank(setupstring($datafolder, $lang1, $sname));
+    %saint = updaterank(setupstring($datafolder, 'Latin', $sname));
     $srank = $saint{Rank};
 
     if ($hora =~ /(Vespera|Completorium)/i && $saint{Rule} =~ /No secunda Vespera/i && $version !~ /1960/) {
@@ -437,9 +437,9 @@ sub getrank {
     if ($cday && $cday !~ /tempora/i) { $cday = "$sanctiname/$cday"; }
     if ($testmode =~ /^Season$/i) { $cday = 'none'; }
 
-    if (-e "$datafolder/$lang1/$cday.txt") {
+    if (-e "$datafolder/Latin/$cday.txt") {
       $cname = "$cday.txt";
-      %csaint = updaterank(setupstring($datafolder, $lang1, "$cname"));
+      %csaint = updaterank(setupstring($datafolder, 'Latin', "$cname"));
       $BMVSabbato = ($csaint{Rank} =~ /Vigilia/) ? 0 : 1;
       $crank = ($csaint{Rank} =~ /vigilia/i && $csaint{Rank} !~ /(;;[56]|Epi)/i) ? '' : $csaint{Rank};
       if ($crank =~ /(Feria|Vigilia)/i && $csaint{Rank} !~ /in Vigilia Epi/i) { $crank = ''; }
@@ -707,7 +707,7 @@ sub getrank {
     $rank = $srank[2];
     $dayname[1] = "$srank[0] $srank[1]";
     $winner = $sname;
-    %winner = updaterank(setupstring($datafolder, $lang1, $winner));
+    %winner = updaterank(setupstring($datafolder, 'Latin', $winner));
     $vespera = $svesp;
 
     if (my ($new_communetype, $new_commune) = extract_common($srank[3], $rank)) {
@@ -760,10 +760,10 @@ sub getrank {
       $dayname[2] = '';
       $commemoratio = '';
     }
-    %w = %{officestring($datafolder, $lang1, $winner)};
+    %w = %{officestring($datafolder, 'Latin', $winner)};
 
     if (($hora =~ /matutinum/i || (!$dayname[2] && $hora !~ /Vespera|Completorium/i)) && $rank < 7) {
-      my %scrip = %{officestring($datafolder, $lang1, $tname)};
+      my %scrip = %{officestring($datafolder, 'Latin', $tname)};
 
       if (!exists($w{"Lectio1"})
         && exists($scrip{Lectio1})
@@ -808,7 +808,7 @@ sub getrank {
 
     if ($hora !~ /Vespera/i && $rank < 1.5 && $transfervigil) {
       my $t = "Sancti/$transfervigil.txt";
-      my %w = setupstring($datafolder, $lang1, $t);
+      my %w = setupstring($datafolder, 'Latin', $t);
 
       if (%w) {
         $tname = $t;
@@ -835,7 +835,7 @@ sub getrank {
       $dayname[2] = "Transfer $srank[0]";
       $commemoratio = '';
     } elsif ($srank[2]) {
-      %w = %{officestring($datafolder, $lang1, $winner)};
+      %w = %{officestring($datafolder, 'Latin', $winner)};
       my $climit1960 = climit1960($sname);
 
       if (
@@ -1415,7 +1415,7 @@ sub monthday {
     my $advent1 = getadvent($year);
     my $wdist = floor(($advent1 - $t - 1) / 7);
     $weeks = 4 - $wdist;
-    if ($version =~ /1960/ && $weeks == 1) { $weeks = 0; }
+    if ($version =~ /1960|Monastic/ && $weeks == 1) { $weeks = 0; }
   }
   my $monthday = sprintf('%02i%01i-%01i', $m - 1, $weeks + 1, $dow);
   return $monthday;

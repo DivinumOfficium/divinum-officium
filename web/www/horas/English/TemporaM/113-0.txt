@@ -1,0 +1,9 @@
+[Lectio6]
+@Tempora/113-0:Lectio5:s/Think .*//s
+
+[Lectio7]
+@Tempora/113-0:Lectio5:s/.* Think /Think /s
+@Tempora/113-0:Lectio6:s/There .*//s
+
+[Lectio8]
+@Tempora/113-0:Lectio6:s/.* There /There /s
