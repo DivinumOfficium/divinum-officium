@@ -1,9 +1,116 @@
+
 @Sancti/12-08
+
+
+[Rule]
+12 lectiones
 
 [Capitulum Vespera]
 @Sancti/12-08:Capitulum Vespera
 _
 @Sancti/12-08:Responsory Sexta:s/._.*//s
+
+[Hymnus Matutinum]
+@Sancti/12-08::s/Jesu, tibi sit glória/Glória tibi Dómine/
+
+[Ant Matutinum]
+Admirábile est * nomen tuum, Dómine, in univérsa terra, quia in Vírgine María dignum tibi habitáculum præparásti.;;8
+In sole pósuit * Deus tabernáculum suum.;;18
+In Conceptióne sua * accépit María benedictiónem a Dómino, et misericórdiam a Deo salutári suo.;;23
+Diffúsa est * grátia in Conceptióne ejus, et speciósa appáruit inter fílias hóminum.;;44
+Adjúvit eam * Deus mane dilúculo; sanctificávit tabernáculum suum Altíssimus.;;45
+Fundátur * exsultatióne univérsae terrae mons Sion, cívitas regis magni.;;47
+V. Deus omnípotens præcínxit me virtúte.
+R. Et pósuit immaculátam viam meam.
+Misericórdia * et véritas obviavérunt sibi in Conceptióne Maríae: † justítia et pax osculátæ sunt.;;84
+Gloriósa * dicta sunt de te, cívitas Dei: fundávit te Dóminus in móntibus sanctis.;;86
+Sanctimónia et magnificéntia * in Conceptióne ejus: annuntiáte in ómnibus pópulis glóriam ejus.;;95
+Lætámini, omnes, * in Dómino: et confitémini memóriæ sanctitátis ejus.;;96
+Notum fecit * Dóminus opus suum: in conspéctu géntium revelávit glóriam Genetrícis suæ.;;97
+Exaltáte * Dóminum Deum nostrum, et adoráte tabernáculum ejus, † quóniam sanctus est.;;98
+V. In hoc cognóvi quóniam voluísti me.
+R. Quóniam non gaudébit inimícus meus super me.
+Benedícite * Dómino in ópere suo; † quia índuit Maríam vestiméntis salútis: et induménto justítiae circúmdedit eam.;;249;250;251
+V. Exaltábo te, Dómine, quóniam suscepísti me.
+R. Nec delectásti inimícos meos super me.
+
+[Lectio1]
+@Sancti/12-08:Lectio1:
+@Sancti/12-08:Lectio2:s/!.*// s/6 .*//s
+
+[Lectio2]
+@Sancti/12-08:Lectio2:
+@Sancti/12-08:Lectio3:s/!.*// s/9 .*//s
+
+[Lectio3]
+@Sancti/12-08:Lectio3:s/-15/-12/ s/13 .*//s
+
+[Lectio4]
+@Sancti/12-08:Lectio3:s/9-/13-/ s/9.*13/13/s
+
+[Responsory4]
+R. Elégit Mariam Deus et preelégit eam, et creávit eam in Spíritu Sancto:
+* Ideo nihil inquinátum in eam incúrrit.
+V. Dedit Maríae Dóminus protectiónem salútis suae, † et déxtera sua suscépit eam.
+R. Ideo nihil inquinátum in eam incúrrit.
+
+[Lectio5]
+@Sancti/12-08:Lectio4
+
+[Responsory5]
+@Sancti/12-08:Responsory4
+
+[Lectio6]
+@Sancti/12-08:Lectio5:s/Vere .*//s
+
+[Responsory6]
+@Sancti/12-08:Responsory5
+
+[Lectio7]
+@Sancti/12-08:Lectio5:s/.*Vere novum/Vere novum/s
+
+[Responsory7]
+@Sancti/12-08:Responsory6
+
+[Lectio8]
+@Sancti/12-08:Lectio6
+
+[Responsory8]
+R. Magnificáte Dóminum mecum:
+* Quia misericórdia Dómini magna est super me.
+V. Princeps hujus mundi in me non habet quidquam.
+R. Quia misericórdia Dómini magna est super me.
+
+[Lectio9]
+@Sancti/12-08:Lectio7:s/Ave, sacrosáncte.*//s
+
+[Responsory9]
+@Sancti/12-08:Responsory7
+
+[Lectio10]
+@Sancti/12-08:Lectio7:s/.* Ave, /Ave, /s s/$/~/
+@Sancti/12-08:Lectio8:s/O puríssima .*//s
+
+[Responsory10]
+@Sancti/12-08:Responsory8
+
+[Lectio11]
+@Sancti/12-08:Lectio8:s/.* O puríssima /O puríssima /s
+
+[Responsory11]
+R. Quis Deus magnus sicut Deus noster?
+* Praeelégit me Deus, et posuit immaculatam viam meam
+V. Exsultavit spiritus meus in Deo, salutari meo.
+R. Praeelégit me Deus, et posuit immaculatam viam meam
+
+[Lectio12]
+@Sancti/12-08:Lectio9
+
+[Responsory12]
+R. Osténdit nobis Dóminus civitátem sanctam Jerúsalem, habéntem claritátem Dei:
+* Et lumen ejus símile lápide pretióso, sicut crytállum.
+V. Ornatem monilibus, filiam Jerusalem Dominus concupivit.
+R. Et lumen ejus símile lápide pretióso, sicut crytállum.
 
 [Capitulum Laudes]
 @Sancti/12-08:Capitulum Vespera
@@ -18,4 +125,11 @@ R. Et pósuit immaculátam viam meam.
 @Sancti/12-08:Responsory Tertia:s/.*_.//s
 
 [Responsory Nona]
-@Sancti/12-08:Responsory Sexta:s/.*_.//s
+[LectioE]
+Sequéntia ++ sancti Evangélii secúndum Lucam
+!Luc 1:26-28
+In illo témpore: Missus est Angelus Gábriël a Deo in civitátem Galilææ, cui~
+nomen Názareth, ad Vírginem desponsátam viro, cui nomen erat Joseph, de domo~
+David, et nomen Vírginis María. Et ingréssus Angelus ad eam, dixit: Ave, grátia~
+plena; Dóminus tecum: benedícta tu in muliéribus.
+
