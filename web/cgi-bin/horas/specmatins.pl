@@ -1195,7 +1195,7 @@ sub responsory_gloria {
     delete($winner2{Responsory9});
   }
   if ($num == 8 && exists($winner{Responsory9}) && ($rule !~ /12 lectio/)) { return $w; }
-  if ($version =~ /Monastic/i && $num == 2 && $month == 1 && $day < 14) { return $prev; }
+  if ($version =~ /Monastic/i && $num == 2) { return $prev; }
   my $flag = 0;
 
   my $read_per_noct = ($rule =~ /12 lectio/) ? 4 : 3;

@@ -1,0 +1,15 @@
+[Lectio9]
+@Sancti/12-08:Lectio7:s/Witaj, raju.*//s
+
+[Lectio10]
+@Sancti/12-08:Lectio7:s/.* Witaj, raju/Witaj, raju/s s/$/~/
+@Sancti/12-08:Lectio8:s/O najczystsza .*//s
+
+[Lectio11]
+@Sancti/12-08:Lectio8:s/.* O najczystsza /O najczystsza /s
+
+[LectioE]
+Ciąg dalszy ++ Ewangelii świętej według Łukasza.
+!Łk 1:26-28
+Onego czasu: Posłany jest Anioł Gabriel od Boga do miasta galilejskiego, które zwano Nazaret, do Panny poślubionej mężowi, któremu było na imię Józef, z domu Dawidowego, a imię Panny Maryja. I wszedłszy do Niej Anioł rzekł: «Bądź pozdrowiona, łaski pełna, Pan z Tobą, błogosławionaś Ty między niewiastami».
+
