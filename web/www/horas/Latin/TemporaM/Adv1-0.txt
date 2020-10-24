@@ -1,29 +1,97 @@
 @Tempora/Adv1-0
 
+[Rule]
+12 lectiones
+
 [Capitulum Vespera]
 @Tempora/Adv1-0
 _
-@Psalterium/Major Special:AdvM Vespera:5-9
+@Psalterium/Major Special:AdvM Vespera:s/.*_//s
 
 [Capitulum Laudes]
 @Tempora/Adv1-0
 _
-@Psalterium/Major Special:AdvM Laudes:5-9
+@Psalterium/Major Special:AdvM Laudes:s/.*_//s
+
+[Lectio1]
+@Tempora/Adv1-0:Lectio1
+
+[Lectio2]
+@Tempora/Adv1-0:Lectio2
+
+[Lectio3]
+@Tempora/Adv1-0:Lectio3
+
+[Lectio4]
+!Isa 1:10-11
+10 Audíte verbum Dómini príncipes Sodomórum: percípite áuribus legem Dei nostri pópulus Gomórrhæ.
+11 Quo mihi multitúdinem victimárum vestrárum? dicit Dóminus. Plenus sum: holocáusta aríetum, et ádipem pínguium, et sánguinem vitulórum, et agnórum, et hircórum nólui.
+
+[Responsory4]
+R. Súscipe verbum, Virgo María, † quod tibi a Dómino per Angelum transmíssum est: † concípies et páries Deum páriter et hóminem,
+* Ut benedícta dicáris inter omnes mulíeres.
+V. Páries quidem fílium, et virginitátis non patiéris detriméntum: † efficiéris grávida, et eris mater semper intácta.
+R. Ut benedícta dicáris inter omnes mulíeres.
+
+[Lectio5]
+@Tempora/Adv1-0:Lectio4
+
+[Responsory5]
+@Tempora/Adv1-0:Responsory4
+
+[Lectio6]
+@Tempora/Adv1-0:Lectio5
+
+[Responsory6]
+@Tempora/Adv1-0:Responsory5
+
+[Lectio7]
+@Tempora/Adv1-0:Lectio6
+
+[Responsory7]
+@Tempora/Adv1-0:Responsory6
+
+[Lectio8]
+Quod si in hac vita diffícile est continuári, potest tamen frequénter assúmi; ut sǽpius ac diútius spiritálibus pótius quam carnálibus occupémur. Et cum melióribus curis maióres impéndimus moras, ad incorruptíbiles divítias étiam temporáles tránseunt actiónes.
+
+[Responsory8]
+R. Læténtur cæli, et exsúltet terra, iubiláte, montes, laudem: † quia Dóminus noster véniet,
+* Et páuperum suórum miserébitur.
+V. Oriétur in diébus ejus justítia, et abundántia pacis.
+R. Et páuperum suórum miserébitur.
+
+[Lectio9]
+@Tempora/Adv1-0:Lectio7
+
+[Responsory9]
+@Tempora/Adv1-0:Responsory7
+
+[Lectio10]
+@Tempora/Adv1-0:Lectio8
+
+[Responsory10]
+@Tempora/Adv1-0:Responsory8
+
+[Lectio11]
+@Tempora/Adv1-0:Lectio9
+
+[Responsory11]
+R. Ecce dies véniunt, dicit Dóminus, † et suscitábo David germen justum: † et regnábit rex, et sápiens erit, et fáciet iudícium et justítiam in terra:
+* Et hoc est nomen quod vocábunt eum: † Dóminus justus noster.
+V. In diébus illis salvábitur Iuda, et Israël habitábit confidénter.
+R. Et hoc est nomen quod vocábunt eum: † Dóminus justus noster.
+
+[Lectio12]
+Confúsio autem maris et flúctuum necdum nova exórta est. Sed cum multa praenuntiáta iam compléta sint, dúbium non est quin sequántur étiam pauca, quae restant: quia sequéntium rerum certitúdo est praeteritárum exhibítio. Haec nos, fratres caríssimi, idcírco dícimus, ut ad cautélae stúdium vestrae mentes evígilent, ne securitáte tórpeant, ne ignorántia languéscant, sed semper eas et timor sollícitet, et in bono ópere sollicitúdo confírmet.
+
+[Responsory12]
+R. Aliéni non transíbunt per Jerúsalem ámplius:
+* Nam in illa die stillábunt montes dulcédinem, † et colles fluent lac et mel, dicit Dóminus.
+V. Deus a Líbano véniet, † et Sanctus de monte umbróso et condénso.
+R. Nam in illa die stillábunt montes dulcédinem, † et colles fluent lac et mel, dicit Dóminus.
 
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Lucam
-!Luc 21:25-33
-21:25 Et erunt signa in sole, et luna, et stellis, et in terris pressura gentium~
-prae confusione sonitus maris, et fluctuum:
-21:26 arescentibus hominibus prae timore, et exspectatione, quae supervenient~
-universo orbi: nam virtutes caelorum movebuntur:
-21:27 et tunc videbunt Filium hominis venientem in nube cum potestate magna et~
-majestate.
-21:28 His autem fieri incipientibus, respicite, et levate capita vestra: quoniam~
-appropinquat redemptio vestra.
-21:29 Et dixit illis similitudinem: Videte ficulneam, et omnes arbores:
-21:30 cum producunt jam ex se fructum, scitis quoniam prope est aestas.
-21:31 Ita et vos cum videritis haec fieri, scitote quoniam prope est regnum Dei.
-21:32 Amen dico vobis, quia non praeteribit generatio haec, donec omnia fiant.
-21:33 Caelum et terra transibunt: verba autem mea non transibunt.
-$Te decet
+Sequéntia ++ sancti Evangélii secundum Lucam
+!Luc 21:25-33.
+In illo témpore: Dixit Jesus discípulis suis: Erunt signa in sole et luna et stellis, et in terris pressúra géntium præ confusióne sónitus maris et flúctuum: arescéntibus homínibus præ timóre et exspectatióne, quæ supervénient univérso orbi: nam virtútes cœlórum movebúntur. Et tunc vidébunt Fílium hóminis veniéntem in nube cum potestáte magna et majestáte. His autem fíeri incipiéntibus, respícite et leváte cápita vestra: quóniam appropínquat redémptio vestra. Et dixit illis similitúdinem: Vidéte ficúlneam et omnes árbores: cum prodúcunt jam ex se fructum, scitis, quóniam prope est æstas. Ita et vos, cum vidéritis hæc fíeri, scitóte, quóniam prope est regnum Dei. Amen, dico vobis, quia non præteríbit generátio hæc, donec ómnia fiant. Cœlum et terra transíbunt: verba autem mea non transíbunt.
+
