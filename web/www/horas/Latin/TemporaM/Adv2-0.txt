@@ -1,32 +1,99 @@
 @Tempora/Adv2-0
 
+[Rule]
+12 lectiones
+
 [Capitulum Vespera]
 @Tempora/Adv2-0
 _
-@Psalterium/Major Special:AdvM Vespera:5-9
+@Psalterium/Major Special:AdvM Vespera:s/.*_//s
 
 [Capitulum Laudes]
 @Tempora/Adv2-0
 _
-@Psalterium/Major Special:AdvM Laudes:5-9
+@Psalterium/Major Special:AdvM Laudes:s/.*_//s
+
+[Lectio4]
+!Isa 11:11-13
+11 Et erit in die illa: adíciet Dóminus secúndo manum suam ad possidéndum resíduum pópuli sui, quod relinquétur ab Assýriis, et ab Ægýpto, et a Phetros, et ab Æthiópia, et ab Ælam, et a Sénnaar, et ab Emath, et ab ínsulis maris.
+12 Et levábit signum in natiónes, et congregábit prófugos Israël, et dispérsos Juda cólliget a quátuor plagis terræ.
+13 Et auferétur zelus Ephraim, et hostes Juda períbunt.
+
+[Responsory4]
+R. Rex noster advéniet Christus,
+* Quem Joánnes prædicávit Agnum esse ventúrum.
+V. Super ipsum continébunt reges os suum, † ipsum Gentes deprecabúntur.
+R. Quem Joánnes prædicávit Agnum esse ventúrum.
+
+[Lectio5]
+@Tempora/Adv2-0:Lectio4
+
+[Responsory5]
+@Tempora/Adv2-0:Responsory4
+
+[Lectio6]
+@Tempora/Adv2-0:Lectio5
+
+[Responsory6]
+@Tempora/Adv2-0:Responsory5
+
+[Lectio7]
+@Tempora/Adv2-0:Lectio6
+
+[Responsory7]
+@Tempora/Adv2-0:Responsory6
+
+[Lectio8]
+In eódem Matthǽi volúmine légimus illud, quod in consequéntibus scríbitur: Ecce puer meus, quem elégi; eléctus meus, in quo complácuit ánimae meae: ponam Spíritum meum super illum, iudícium géntibus próferet: ad Salvatóris reférri intellegéntiam, in quo requiéscat Spíritus Dómini, id est, aetérna habitatióne permánsit.
+
+[Responsory8]
+R. Ecce Dóminus véniet, et omnes sancti ejus cum eo; † tunc aperiéntur óculi caecórum, et aures surdórum áudient; † tunc ascéndet claudus quasi cervus,
+* Et absolútae erunt línguae mutórum.
+V. Ecce Dóminus in fortitúdine véniet: et brácchium ejus dominábitur.
+R. Et absolútae erunt línguae mutórum.
+
+[Lectio9]
+@Tempora/Adv2-0:Lectio7:s/Stultum .*//s
+
+[Responsory9]
+@Tempora/Adv2-0:Responsory7
+
+[Lectio10]
+@Tempora/Adv2-0:Lectio7:s/.* Stultum /Stultum /s
+
+[Responsory10]
+@Tempora/Adv2-0:Responsory8
+
+[Lectio11]
+@Tempora/Adv2-0:Lectio8
+
+[Responsory11]
+R. Ecce Dóminus véniet cum splendóre descéndens, et virtus ejus cum eo,
+* Visitáre pópulum suum in pace, † et constitúere super eum vitam sempitérnam.
+V. Ecce Dóminus noster cum virtúte véniet.
+R. Visitáre pópulum suum in pace, † et constitúere super eum vitam sempitérnam.
+
+[Lectio12]
+@Tempora/Adv2-0:Lectio9
+
+[Responsory12]
+R. Radix Jesse, qui exsúrget iudicáre Gentes, in eum Gentes sperábunt:
+* Et erit nomen ejus benedíctum in sæcula.
+V. De radice Jesse exiet dux et flos de radice ejus ascendet.
+R. Et erit nomen ejus benedíctum in sæcula.
 
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Matthaeum
+Sequéntia ++ sancti Evangélii secúndum Matthǽum
 !Matt 11:2-10
-11:2 Joannes autem cum audisset in vinculis opera Christi, mittens duos de~
-discipulis suis,
-11:3 ait illi: Tu es, qui venturus es, an alium exspectamus?
-11:4 Et respondens Jesus ait illis: Euntes renuntiate Joanni quae audistis, et~
-vidistis.
-11:5 Caeci vident, claudi ambulant, leprosi mundantur, surdi audiunt, mortui~
-resurgunt, pauperes evangelizantur:
-11:6 et beatus est, qui non fuerit scandalizatus in me.
-11:7 Illis autem abeuntibus, c�pit Jesus dicere ad turbas de Joanne: Quid~
-existis in desertum videre? arundinem vento agitatam?
-11:8 Sed quid existis videre? hominem mollibus vestitum? Ecce qui mollibus~
-vestiuntur, in domibus regum sunt.
-11:9 Sed quid existis videre? prophetam? Etiam dico vobis, et plus quam~
-prophetam.
-11:10 Hic est enim de quo scriptum est: Ecce ego mitto angelum meum ante faciem~
-tuam, qui praeparabit viam tuam ante te.
-$Te decet
+In illo tempore: Cum audísset Joánnes in vínculis ópera Christi, mittens duos de~
+discípulis suis, ait illi: Tu es, qui ventúrus es, an alium exspectámus? Et~
+respóndens Jesus, ait illis: Eúntes renuntiáte Joánni, quæ audístis et vidístis.~
+Cæci vident, claudi ámbulant, leprósi mundántur, surdi áudiunt, mórtui resúrgunt,~
+páuperes evangelizántur: et beátus est, qui non fúerit scandalizátus in me.~
+Illis autem abeúntibus, cœpit Jesus dícere ad turbas de Joánne: Quid exístis in~
+desértum vidére? arúndinem vento agitátam? Sed quid exístis videre? hóminem~
+móllibus vestitum? Ecce, qui móllibus vestiúntur, in dómibus regum sunt. Sed~
+quid exístis vidére? Prophétam? Etiam dico vobis, et plus quam Prophétam. Hic~
+est enim, de quo scriptum est: Ecce, ego mitto Angelum meum ante fáciem tuam,~
+qui præparábit viam tuam ante te.
+

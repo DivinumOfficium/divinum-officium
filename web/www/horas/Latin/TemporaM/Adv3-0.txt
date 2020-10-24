@@ -1,34 +1,111 @@
 @Tempora/Adv3-0
 
+[Rule]
+12 lectiones
+
 [Capitulum Vespera]
 @Tempora/Adv3-0
 _
-@Psalterium/Major Special:AdvM Vespera:5-9
+@Psalterium/Major Special:AdvM Vespera:s/.*_//s
 
 [Capitulum Laudes]
 @Tempora/Adv3-0
 _
-@Psalterium/Major Special:AdvM Laudes:5-9
+@Psalterium/Major Special:AdvM Laudes:s/.*_//s
+
+[Lectio1]
+@Tempora/Adv3-0:Lectio1:s/-6/-3/ s/4 .*//s
+
+[Lectio2]
+@Tempora/Adv3-0:Lectio1:s/1-/4-/ s/1 .*4 /4 /s
+
+[Lectio3]
+@Tempora/Adv3-0:Lectio2:
+
+[Lectio4]
+@Tempora/Adv3-0:Lectio3
+
+[Responsory4]
+R. Ecce véniet Dóminus princeps regum terrae;
+* Beáti qui paráti sunt occúrrere illi, † habébunt partem in civitáte Jerúsalem.
+V. Veniens veniet Dominus, et non tardabit.
+R. Beáti qui paráti sunt occúrrere illi, † habébunt partem in civitáte Jerúsalem.
+
+[Lectio5]
+@Tempora/Adv3-0:Lectio4:s/Quid .*//s
+
+[Responsory5]
+@Tempora/Adv3-0:Responsory4
+
+[Lectio6]
+@Tempora/Adv3-0:Lectio4:s/.* Quid /Quid /s s/$/~/
+@Tempora/Adv3-0:Lectio5:s/Sed quia .*//s
+
+[Responsory6]
+@Tempora/Adv3-0:Responsory5
+
+[Lectio7]
+@Tempora/Adv3-0:Lectio5:s/.* Sed quia /Sed quia /s s/$/~/
+@Tempora/Adv3-0:Lectio6:s/Quarta .*//s
+
+[Responsory7]
+@Tempora/Adv3-0:Responsory6
+
+[Lectio8]
+@Tempora/Adv3-0:Lectio6:s/.* Quarta /Quarta /s
+
+[Responsory8]
+R. Egrediétur virga de radíce Jesse, et flos de radíce ejus ascendet:
+* Et erit justítia cíngulum lumbórum ejus, † et fides cinctórium renum ejus.
+V. Et requiéscet super eum spíritus Dómini: † spíritus sapiéntiæ, et intelléctus: spíritus consílii, et fortitúdinis.
+R. Et erit justítia cíngulum lumbórum ejus, † et fides cinctórium renum ejus.
+
+[Lectio9]
+@Tempora/Adv3-0:Lectio7:s/Cum ergo .*//s
+
+[Responsory9]
+@Tempora/Adv3-0:Responsory7
+
+[Lectio10]
+@Tempora/Adv3-0:Lectio7:s/.* Cum ergo /Cum ergo /s s/$/~/
+@Tempora/Adv3-0:Lectio8:s/Requisítus .*//s
+
+[Responsory10]
+@Tempora/Adv3-0:Responsory8
+
+[Lectio11]
+@Tempora/Adv3-0:Lectio8:s/.* Requisítus /Requisítus /s s/$/~/
+@Tempora/Adv3-0:Lectio9:s/Ad Zacharíam .*//s
+
+[Responsory11]
+R. Docébit nos Dóminus vias suas, et ambulábimus in sémitis ejus:
+* Quia de Sion exíbit lex, et verbum Dómini de Jerúsalem.
+V. Veníte, ascendámus ad montem Dómini, et ad domum Dei Jacob.
+R. Quia de Sion exíbit lex, et verbum Dómini de Jerúsalem.
+
+[Lectio12]
+@Tempora/Adv3-0:Lectio9:s/.* Ad Zacharíam /Ad Zacharíam /s
+
+[Responsory12]
+R. Súscipe verbum, Virgo María, † quod tibi a Dómino per Angelum transmíssum est: † concípies et páries Deum páriter et hóminem,
+* Ut benedícta dicáris inter omnes mulíeres.
+V. Páries quidem fílium, et virginitátis non patiéris detriméntum: † efficiéris grávida, et eris mater semper intácta.
+R. Ut benedícta dicáris inter omnes mulíeres.
 
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Joannem
-!Joannes 1:19-28
-1:19 Et hoc est testimonium Joannis, quando miserunt Judaei ab Jerosolymis~
-sacerdotes et Levitas ad eum ut interrogarent eum: Tu quis es?
-1:20 Et confessus est, et non negavit, et confessus est: Quia non sum ego~
-Christus.
-1:21 Et interrogaverunt eum: Quid ergo? Elias es tu? Et dixit: Non sum. Propheta~
-es tu? Et respondit: Non.
-1:22 Dixerunt ergo ei: Quis es ut responsum demus his qui miserunt nos? quid~
-dicis de teipso?
-1:23 Ait: Ego vox clamantis in deserto: Dirigite viam Domini, sicut dixit Isaias~
-propheta.
-1:24 Et qui missi fuerant, erant ex pharisaeis.
-1:25 Et interrogaverunt eum, et dixerunt ei: Quid ergo baptizas, si tu non es~
-Christus, neque Elias, neque propheta?
-1:26 Respondit eis Joannes, dicens: Ego baptizo in aqua: medius autem vestrum~
-stetit, quem vos nescitis.
-1:27 Ipse est qui post me venturus est, qui ante me factus est: cujus ego non~
-sum dignus ut solvam ejus corrigiam calceamenti.
-1:28 Haec in Bethania facta sunt trans Jordanem, ubi erat Joannes baptizans.
-$Te decet
+Sequéntia ++ sancti Evangélii secúndum Joánnem
+!Joann 1:19-28
+In illo tempore: Misérunt Judǽi ab Jerosólymis sacerdótes et levítas ad Joánnem,~
+ut interrogárent eum: Tu quis es? Et conféssus est, et non negávit: et conféssus~
+est: Quia non sum ego Christus. Et interrogavérunt eum: Quid ergo? Elías es tu?~
+Et dixit: Non sum. Prophéta es tu? Et respondit: Non. Dixérunt ergo ei: Quis es,~
+ut respónsum demus his, qui misérunt nos?~
+Quid dicis de te ipso? Ait: Ego vox clamántis in desérto: Dirígite viam Dómini,~
+sicut dixit Isaías Prophéta. Et qui missi fúerant, erant ex pharisǽis. Et~
+interrogavérunt eum, et dixérunt ei: Quid ergo baptízas, si tu non es Christus,~
+neque Elías, neque Prophéta? Respóndit eis Joánnes, dicens: Ego baptízo in aqua:~
+médius autem vestrum stetit, quem vos nescítis. Ipse est, qui post me ventúrus~
+est, qui ante me factus est: cujus ego non sum dignus ut solvam ejus corrígiam~
+calceaménti. Hæc in Bethánia facta sunt trans Jordánem, ubi erat Joánnes~
+baptízans.
+
