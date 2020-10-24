@@ -1,7 +1,11 @@
+@Sancti/11-02
+
 [Rank]
 In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
 
 [Rule]
+Matutinum Romanum
+9 lectiones
 Minores sine Antiphona
 ex C9
 Special Conclusio
@@ -27,3 +31,6 @@ Psalmi feriales
 
 _
 @Sancti/11-02::s/.*&special\('O/&special('O/s
+
+[Responsory9]
+@Commune/C9:Responsory91

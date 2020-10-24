@@ -192,18 +192,18 @@ sub psalmi_matutinum_monastic {
   my ($w, $c) = getproprium('MM Capitulum', $lang, 0, 1);
   my %s = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
 
+  if ((!$w || $commune =~ /M\/C10/) && $commune) {
+    my $name = $commune;
+    $name =~ s/.*M.//;
+    $name =~ s/\.txt//;
+    $w = $s{"MM Capitulum $name"};
+  }
   if (!$w) {
     if ($dayname[0] =~ /(Adv|Quad|Pasc)/i) {
       my $name = $1;
       if ($dayname[0] =~ /Quad[56]/i) { $name .= '5'; }
       $w = $s{"MM Capitulum $name"};
     }
-  }
-  if ((!$w || $commune =~ /M\/C10/) && $commune) {
-    my $name = $commune;
-    $name =~ s/.*M.//;
-    $name =~ s/\.txt//;
-    $w = $s{"MM Capitulum $name"};
   }
   if (!$w) { $w = $s{'MM Capitulum'}; }
   push(@s, "!!Capitulum");

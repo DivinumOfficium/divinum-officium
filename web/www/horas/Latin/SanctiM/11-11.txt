@@ -1,10 +1,111 @@
+
 @Sancti/11-11
+
 
 [Rank]
 S. Martini Episcopi et Confessoris;;Duplex;;5;;vide C4
 
+[Rule]
+12 lectiones
+
 [Commemoratio]
 
+
+[Ant Matutinum]
+Martínus, * adhuc catechúmenus, hac me veste contéxit.;;1
+Sanctæ Trinitátis * fidem Martínus conféssus est, et baptísmi grátiam percépit.;;2
+Ego signo crucis, * non clípeo protéctus, aut gálea, hóstium cúneos penetrábo secúrus.;;4
+Confído in Dómino * quod fília mea, précibus tuis, reddénda sit sanitáti.;;5
+Tetrádius, * cógnita Dei virtúte, ad baptísmi grátiam pervénit.;;8
+O ineffábilem virum, * per quem nobis tanta mirácula corúscant!;;10
+V. Amávit eum Dóminus, et ornávit eum.
+R. Stolam glóriæ induit eum.
+Dóminus Jesus Christus, * non purpurátum aut diadémate renítentem, se ventúrum esse prædíxit.;;14
+Dum sacraménta * offérret beátus Martínus, † globus ígneus appáruit super caput ejus.;;20
+Sínite me, * inquit, caelum vidére ut spíritus dirigátur ad Dóminum: † nihil in me repériet inimícus, sed sinus Abrahae me suscípiet.;;23
+Sacérdos Dei, Martíne, * apérti sunt tibi cæli et regnum Patris mei.;;95
+Sacérdos Dei, Martíne, * pastor egrégie, ora pro nobis Deum.;;96
+Beáti * viri corpus usque ad locum sepúlcri, † hymnis canóra caeléstibus turba proséquitur.;;97
+V. Elégit eum Dóminus sacerdótem sibi.
+R. Ad sacrificándum ei hóstiam laudis.
+O vere beátum, * o ineffábilem pietáte, misericórdia caritáte! † quarum ut viscéribus semper totus affluébat in Dómino, sic non desit nobis non desit in aevum.;;256;257;258
+V. Tu es sacérdos in ætérnum.
+R. Secúndum órdinem Melchísedech.
+
+[Lectio1]
+@CommuneM/C4:Lectio1
+
+[Lectio2]
+@CommuneM/C4:Lectio2
+
+[Lectio3]
+@CommuneM/C4:Lectio3
+
+[Lectio4]
+@CommuneM/C4:Lectio4
+
+[Responsory4]
+R. Dum sacraménta offérret beatus Martínus,
+* Globus ígneus appáruit super caput eius.
+V. Sum enim ad Deum preces emítteret, † et pro univérso grege sibi commísso deprecarétur.
+R. Globus ígneus appáruit super caput eius.
+
+[Lectio5]
+@Sancti/11-11:Lectio4
+
+[Responsory5]
+@Sancti/11-11:Responsory4
+
+[Lectio6]
+@Sancti/11-11:Lectio5:s/Qui, .*//s
+
+[Responsory6]
+@Sancti/11-11:Responsory5
+
+[Lectio7]
+@Sancti/11-11:Lectio5:s/.* Qui, /Qui, /s
+
+[Responsory7]
+@Sancti/11-11:Responsory6
+
+[Lectio8]
+@Sancti/11-11:Lectio6
+
+[Responsory8]
+R. O virum ineffábilem, nec labóre victum nec morte vincéndum,
+* Qui nec mori tímuit nec vívere recusávit!
+V. O vere beátum in cuius ore dolus non fuit, † numquam in illíus lingua, nisi Christus, nisi pax, nisi misercórdia ínerat.
+R. Qui nec mori tímuit nec vívere recusávit!
+
+[Lectio9]
+@Sancti/11-11:Lectio7
+
+[Responsory9]
+@Sancti/11-11:Responsory7
+
+[Lectio10]
+@Sancti/11-11:Lectio8:s/Dénique .*//s
+
+[Responsory9]
+@Sancti/11-11:Responsory8
+
+[Lectio11]
+@Sancti/11-11:Lectio8:s/.* Dénique /Dénique /s s/Illa.*//s
+
+[Responsory11]
+R. Martínus sacérdos Dei cui post Apóstolos tantam grátiam Dóminus cóntulit, † ut tres mórtuos suscitáret, et álias virtútes praecláras osténderet, inter álios Confessóres et Mártyres
+* Et rosa fulget in Gállia.
+V. Córpore quidem virgíneo blandum habébat elóquium gravis erat in móribus inténta mente caelo suspénsus.
+R. Et rosa fulget in Gállia.
+
+[Lectio12]
+@Sancti/11-11:Lectio8:s/.* Illa /Illa /s
+
+[Responsory12]
+R. Elégit te Dóminus sacerdótem sibi
+* Ad sacrificándum ei hóstiam laudis.
+V. Immola Deo sacrificium laudis, et redde Altissimo vota tua.
+R. Ad sacrificándum ei hóstiam laudis.
 
 [Ant Vespera 3]
 @Sancti/11-01:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//

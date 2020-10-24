@@ -1,10 +1,31 @@
+[Lectio7]
+@Commune/C1:Lectio5:s/For we .*//
+
+[Lectio8]
+@Commune/C1:Lectio5:s/.* For we/For we/s s/$/~/
+Verily, if we ask of the damsel that kept the door, she will tell us what was the measure of weakness and of strength in that Shepherd of the Church nigh to whose most holy body we are now sitting, before that the Spirit came. He was so stricken by the words of one woman, that for fear of death, he denied Life.
+
+[Lectio9]
+@Sancti/12-21:Lectio7:s/The doubts .*//s
+
+[Lectio10]
+@Sancti/12-21:Lectio7:s/.* The doubts /The doubts /s
+@Sancti/12-21:Lectio8:s/He felt, .*//s
+
+[Lectio11]
+@Sancti/12-21:Lectio8:s/.* He felt, /He felt, /s
 [LectioE]
-v. Continuation of the Holy Gospel according to John
+Continuation ++ of the Holy Gospel according to John
 !John 20:24-29
-20:24 Now Thomas, one of the twelve, who is called Didymus, was not with them when Jesus came.
-20:25 The other disciples therefore said to him: We have seen the Lord. But he said to them: Except I shall see in his hands the print of the nails, and put my finger into the place of the nails, and put my hand into his side, I will not believe.
-20:26 And after eight days again his disciples were within, and Thomas with them. Jesus cometh, the doors being shut, and stood in the midst, and said: Peace be to you.
-20:27 Then he saith to Thomas: Put in thy finger hither, and see my hands; and bring hither thy hand, and put it into my side; and be not faithless, but believing.
-20:28 Thomas answered, and said to him: My Lord, and my God.
-20:29 Jesus saith to him: Because thou hast seen me, Thomas, thou hast believed: blessed are they that have not seen, and have believed.
-$Te decet
+At that time, Thomas, one of the Twelve, called the Twin, was not with them when~
+Jesus came. The other disciples therefore said to him, We have seen the Lord.~
+But he said to them, Unless I see in His hands the print of the nails, and put~
+my finger into the place of the nails, and put my hand into His side, I will not~
+believe. And after eight days, His disciples were again inside, and Thomas with~
+them. Jesus came, the doors being closed, and stood in their midst, and said,~
+Peace be to you! Then He said to Thomas, Bring here your finger, and see My~
+hands; and bring here your hand, and put it into My side; and be not unbelieving,~
+but believing. Thomas answered and said to Him, ‘My Lord and my God! Jesus said~
+to him, Because you have seen Me, Thomas, you have believed. Blessed are they~
+who have not seen, and yet have believed.
+

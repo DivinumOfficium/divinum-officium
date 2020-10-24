@@ -1090,7 +1090,7 @@ sub antetpsalm {
   my @ant = split('\*', $line[0]);
   my $ant = $line[0];
   postprocess_ant($ant, $lang);
-  my $ant1 = ($duplex > 2 || $version =~ /1960/) ? $ant : $ant[0];    #difference between 1995, 1960
+  my $ant1 = ($duplex > 2 || $version =~ /1960|Monastic/i) ? $ant : $ant[0];    #difference between 1995, 1960
 
   if ( $dayname[0] =~ /Pasc/i
     && $hora =~ /(laudes|vespera)/i
