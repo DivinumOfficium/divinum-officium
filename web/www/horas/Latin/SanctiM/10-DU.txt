@@ -1,18 +1,21 @@
-
 @Sancti/10-DU
-
 
 [Rule]
 Festum Domini
+Psalmi Dominica
 12 lectiones
 
 [Doxology]
-@Sancti/10-DU::s/Jesu, tibi sit glória/Glória tibi Dómine/
+@Sancti/10-DU::s/Jesu, tibi sit glória/Glória tibi, Dómine/
 
 [Capitulum Vespera]
 @Sancti/10-DU
 _
-@Sancti/10-DU:Responsory Sexta:1-6
+@Sancti/10-DU:Responsory Sexta:s/._.*//s
+
+[Hymnus Vespera]
+@Sancti/10-DU::1-34
+@Sancti/10-DU:Doxology:s/Jesu, tibi sit glória/Glória tibi, Dómine/
 
 [Ant Matutinum]
 Ego autem * constitútus sum Rex ab eo super Sion montem sanctum eius, † prǽdicans præcéptum eius.;;2
@@ -159,13 +162,17 @@ perhíbeam veritáti: omnis, qui est ex veritáte, audit vocem meam.
 [Capitulum Laudes]
 @Sancti/10-DU
 _
-@Sancti/10-DU:Responsory Tertia:1-6
+@Sancti/10-DU:Responsory Tertia:s/._.*//s
+
+[Hymnus Laudes]
+@Sancti/10-DU::1-29
+@Sancti/10-DU:Doxology:s/Jesu, tibi sit glória/Glória tibi, Dómine/
 
 [Responsory Tertia]
-@Sancti/10-DU:Responsory Tertia:8-9
+@Sancti/10-DU:Responsory Tertia:s/.*_.//s
 
 [Responsory Sexta]
-@Sancti/10-DU:Responsory Sexta:8-9
+@Sancti/10-DU:Responsory Sexta:s/.*_.//s
 
 [Responsory Nona]
 @Sancti/10-DU:Versum 2
