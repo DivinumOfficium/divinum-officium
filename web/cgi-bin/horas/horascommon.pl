@@ -399,7 +399,7 @@ sub getrank {
     @srank = undef;
   }
   if ($trank[2] == 7 && $srank[2] < 6) { $srank = ''; @srank = undef; }
-  if ($version =~ /(1955|1960)/ && $trank[2] >= 6 && $srank[2] < 6) { $srank = ''; @srank = undef; }
+  if ($version =~ /(1955|1960|Monastic)/i && $trank[2] >= 6 && $srank[2] < 6) { $srank = ''; @srank = undef; }
 
   if ($version =~ /1955/ && $srank[2] == 2 && $srank[1] =~ /Semiduplex/i) {
     $srank[2] = 1.5;
