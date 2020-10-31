@@ -609,7 +609,7 @@ sub matins_lectio_responsory_alleluia(\$$) {
 #*** getC10readingname
 sub getC10readingname {
   return "Lectio M101" if ($version !~ /1960|Monastic/i && $month == 9 && $day > 8 && $day < 15);
-  my $satnum = floor(($day - 1) / 7 + 1) % 5;
+  my $satnum = floor(($day - 1) / 7 + 1);
   $satnum = 4 if ($satnum == 5);
   return sprintf("Lectio M%02i%s", $month, ($version =~ /Monastic/i) ? $satnum : '');
 }
