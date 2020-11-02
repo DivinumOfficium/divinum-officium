@@ -1,28 +1,105 @@
 @Tempora/Adv4-0
 
+[Rule]
+12 lectiones
+
 [Capitulum Vespera]
 @Tempora/Adv3-0
 _
-@Psalterium/Major Special:AdvM Vespera:5-9
+@Psalterium/Major Special:AdvM Vespera:s/.*_//s
 
 [Capitulum Laudes]
 @Tempora/Adv3-0
 _
-@Psalterium/Major Special:AdvM Laudes:5-9
+@Psalterium/Major Special:AdvM Laudes:s/.*_//s
+
+[Lectio1]
+@Tempora/Adv4-0:Lectio1:s/-7/-4/ s/5 .*//s
+
+[Lectio2]
+@Tempora/Adv4-0:Lectio1:s/1-/5-/ s/1 .*5 /5 /s
+@Tempora/Adv4-0:Lectio2:s/!.*// s/8 .*//s
+
+[Lectio3]
+@Tempora/Adv4-0:Lectio2:s/7-/8-/ s/7 .*8 /8 /s
+
+[Lectio4]
+@Tempora/Adv4-0:Lectio3
+
+[Responsory4]
+R. Parátus esto, Israel, in occúrsum Dómini, quóniam venit
+* Formans montes et creans spíritus, † et annúntians in homínibus Christum secúndum advéntum suum.
+V. Ecce Dominátor Dominus, cum virtúte véniet.
+R. Formans montes et creans spíritus, † et annúntians in homínibus Christum secúndum advéntum suum.
+
+[Lectio5]
+@Tempora/Adv4-0:Lectio4
+
+[Responsory5]
+@Tempora/Adv4-0:Responsory4
+
+[Lectio6]
+@Tempora/Adv4-0:Lectio5
+
+[Responsory6]
+@Tempora/Adv4-0:Responsory5
+
+[Lectio7]
+@Tempora/Adv4-0:Lectio6:s/Diligéndo .*//s
+
+[Responsory7]
+@Tempora/Adv4-0:Responsory6
+
+[Lectio8]
+@Tempora/Adv4-0:Lectio6:s/.* Diligéndo /Diligéndo /s
+
+[Responsory8]
+R. Montes Israël, ramos vestros expándite, † et floréte, et fructus fácite:
+* Prope est ut véniat dies Dómini.
+V. Roráte, cæli, désuper, et nubes pluant justum: † aperiátur terra, et gérminet Salvatórem.
+R. Prope est ut véniat dies Dómini.
+
+[Lectio9]
+@Tempora/Adv4-0:Lectio7
+
+[Responsory9]
+@Tempora/Adv4-0:Responsory7
+
+[Lectio10]
+@Tempora/Adv4-0:Lectio8:s/Ut enim .*//s
+
+[Responsory10]
+@Tempora/Adv4-0:Responsory8
+
+[Lectio11]
+@Tempora/Adv4-0:Lectio8:s/.* Ut enim /Ut enim /s s/$/~/
+@Tempora/Adv4-0:Lectio9:s/Neque .*//s
+
+[Responsory11]
+R. Intuémini, quantus sit iste, qui ingréditur ad salvándas gentes: † ipse est Rex justítiæ,
+* Cujus generátio non habet finem.
+V. Præcúrsor pro nobis ingréditur, secúndum órdinem Melchísedech Póntifex factus in ætérnum.
+R. Cujus generátio non habet finem.
+
+[Lectio12]
+@Tempora/Adv4-0:Lectio9:s/.* Neque /Neque /s
+
+[Responsory12]
+R. Emítte Agnum, Dómine, Dominatórem terræ,
+* De Petra desérti ad montem fíliæ Sion.
+V. Osténde nobis, Dómine, misericórdiam tuam, et salutáre tuum da nobis.
+R. De Petra desérti ad montem fíliæ Sion.
 
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Lucam
+Sequéntia ++ sancti Evangélii secundum Lucam
 !Luc 3:1-6
-3:1 Anno autem quintodecimo imperii Tiberii Caesaris, procurante Pontio Pilato~
-Judaeam, tetrarcha autem Galiaeae Herode, Philippo autem fratre ejus tetrarcha~
-Ituraeae, et Trachonitidis regionis, et Lysania Abilinae tetrarcha,
-3:2 sub principibus sacerdotum Anna et Caipha: factum est verbum Domini super~
-Joannem, Zachariae filium, in deserto.
-3:3 Et venit in omnem regionem Jordanis, praedicans baptismum p�nitentiae in~
-remissionem peccatorum,
-3:4 sicut scriptum est in libro sermonum Isaiae prophetae: Vox clamantis in~
-deserto: Parate viam Domini; rectas facite semitas ejus:
-3:5 omnis vallis implebitur, et omnis mons, et collis humiliabitur: et erunt~
-prava in directa, et aspera in vias planas:
-3:6 et videbit omnis caro salutare Dei.
-$Te decet
+Anno quintodécimo impérii Tibérii Cǽsaris, procuránte Póntio Piláto Judǽam,~
+tetrárcha autem Galilǽæ Heróde, Philíppo autem fratre ejus tetrárcha Iturǽæ et~
+Trachonítidis regionis, et Lysánia Abilínæ tetrárcha, sub princípibus sacerdotum~
+Anna et Cáipha: factum est verbum Domini super Joannem, Zacharíæ filium, in~
+deserto. Et venit in omnem regiónem Jordánis, prǽdicans baptísmum pæniténtiæ in~
+remissiónem peccatórum, sicut scriptum est in libro sermónum Isaíæ Prophétæ: Vox~
+clamántis in desérto: Paráte viam Dómini: rectas fácite sémitas ejus: omnis~
+vallis implébitur: et omnis mons et collis humiliábitur: et erunt prava in~
+dirécta, et áspera in vias planas: et vidébit omnis caro salutáre Dei.
+
