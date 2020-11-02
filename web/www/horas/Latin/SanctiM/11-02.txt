@@ -6,7 +6,6 @@ In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
 [Rule]
 Matutinum Romanum
 9 lectiones
-Minores sine Antiphona
 ex C9
 Special Conclusio
 Capitulum Versum 2 ad Laudes et Vesperas
@@ -34,3 +33,16 @@ _
 
 [Responsory9]
 @Commune/C9:Responsory91
+
+[Special Tertia]
+Psalmi feriales
+
+&special('Oratio mortuorum', 'Latin')
+
+&special('Conclusio', 'Latin')
+
+[Special Sexta]
+@:Special Tertia
+
+[Special Nona]
+@:Special Tertia
