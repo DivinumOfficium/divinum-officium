@@ -1025,7 +1025,7 @@ sub psalmi_major {
     @p = @psalmi;
   }
   my $lim = 5;
-  if ($version =~ /monastic/i && $hora =~ /Vespera/i && ($dayname[0] !~ /Quad6/ || $dayofweek < 4)) {
+  if ($version =~ /monastic/i && $hora =~ /Vespera/i && ($commune !~ /C9/) && ($dayname[0] !~ /Quad6/ || $dayofweek < 4)) {
     $lim = 4;
     if ($antiphones[4]) {
       local($a1,$p1) = split(/;;/, $antiphones[3]);
