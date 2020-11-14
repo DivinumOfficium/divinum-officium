@@ -3,13 +3,10 @@ Omnium Sanctorum Ordinis Nostri;;Duplex;;6;;
 
 [Rule]
 12 lectiones
+Psalmi Dominica
 
 [Ant Vespera]
-Fulgébunt justi * sicut sol in regno Patris eórum, dicit Dóminus.;;109
-Beáti éritis, * cum vos óderint hómines, et cum separáverint vos, et exprobráverint, et ejécerint nomen vestrum tamquam malum propter Fílium hóminis gaudéte et exsultáte: ecce enim merces vestra multa est in cælis.;;111
-Gaudent in cælis * ánimæ Sanctórum, qui Christi vestígia sunt secúti: et quia pro ejus amóre sánguinem suum fudérunt, ídeo cum Christo exsúltant sine fine.;;112
-Sancti Dómini * Dóminum benedcite in ætérnum.;;115
-O quam gloriósum est regnum * in quo cum Christo gaudent omnes Sancti, amícti stolis albis sequúntur Agnum quocúmque íerit!
+@:Ant Laudes
 
 [Capitulum Vespera]
 @:Capitulum Tertia
@@ -123,7 +120,11 @@ R. Et nómina eórum vivent in generatiónem et generatiónem.
 @CommuneM/C1
 
 [Ant Laudes]
-@:Ant Vespera
+Fulgébunt justi * sicut sol in regno Patris eórum, dicit Dóminus.
+Beáti éritis, * cum vos óderint hómines, et cum separáverint vos, et exprobráverint, et ejécerint nomen vestrum tamquam malum propter Fílium hóminis gaudéte et exsultáte: ecce enim merces vestra multa est in cælis.
+Gaudent in cælis * ánimæ Sanctórum, qui Christi vestígia sunt secúti: et quia pro ejus amóre sánguinem suum fudérunt, ídeo cum Christo exsúltant sine fine.
+Sancti Dómini * Dóminum benedcite in ætérnum.
+O quam gloriósum est regnum * in quo cum Christo gaudent omnes Sancti, amícti stolis albis sequúntur Agnum quocúmque íerit!
 
 [Ant 3]
 In regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos, super sedes duódecim, judicántes duódecim tribus Israël.
@@ -193,3 +194,6 @@ $Deo gratias
 
 [Responsory Nona]
 @Commune/C3:Responsory Sexta:8-9
+
+[Ant Vespera 3]
+@:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;115/ s/_//
