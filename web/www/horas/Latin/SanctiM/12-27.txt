@@ -3,8 +3,89 @@
 [Rank]
 S. Joanni Apostoli;;Duplex II Class;;5;;ex C1
 
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Sancti/12-27:Lectio1:s/-5/-3/ s/4 .*//s
+
+[Lectio2]
+@Sancti/12-27:Lectio1:s/.*// s/-5/-7/ s/1-/4-/ s/^1 .*4 /4 /sm
+@Sancti/12-27:Lectio2:s/!.*// s/8 .*//s
+
+[Lectio3]
+@Sancti/12-27:Lectio2:s/6-/8-/ s/6 .*8 /8 /s
+
+[Lectio4]
+@Sancti/12-27:Lectio3
+
+[Responsory4]
+R. Ecce puer meus quem elégi, dicit Dóminus, † eléctus meus
+* Complácuit sibi in illo ánimae meae.
+V. Pósui super eum spíritum meum, † iudícium géntibus nuntiábit.
+R. Complácuit sibi in illo ánimae meae.
+
+[Lectio5]
+@Sancti/12-27:Lectio4
+
+[Responsory5]
+@Sancti/12-27:Responsory4
+
+[Lectio6]
+@Sancti/12-27:Lectio5:s/Interfécto .*//s
+
+[Responsory6]
+@Sancti/12-27:Responsory5
+
+[Lectio7]
+@Sancti/12-27:Lectio5:s/.* Interfécto /Interfécto /s
+
+[Responsory7]
+@Sancti/12-27:Responsory6
+
+[Lectio8]
+@Sancti/12-27:Lectio6
+
+[Responsory8]
+R. Cibávit illum pane vitae et intelléctus † et aqua sapiéntiae salutáris potávit eum.
+* Et exaltávit eum apud próximos suos.
+V. In médio Ecclésiae apéruit os eius, † et implévit eum Dóminus spíritu sapiéntiae et intelléctus.
+R. Et exaltávit eum apud próximos suos.
+
+[Ant Matutinum 3N]
+Dedit * illi Dóminus claritátem ætérnam, † et nómine ætérno hæreditábit illum.
+
 [Lectio9]
-@Sancti/12-27::1
+@Sancti/12-27:Lectio7:s/Una declínat .*//s
+
+[Responsory9]
+@Sancti/12-27:Responsory7
+
+[Lectio10]
+@Sancti/12-27:Lectio7:s/.* Una declínat /Una declínat /s s/$/~/
+@Sancti/12-27:Lectio8:s/Una flagellátur .*//s
+
+[Responsory10]
+@Sancti/12-27:Responsory8
+
+[Lectio11]
+@Sancti/12-27:Lectio8:s/.* Una flagellátur /Una flagellátur /s s/$/~/
+@Sancti/12-27:Lectio9:s/Tota .*//s
+
+[Responsory11]
+R. Virgo est eléctus a Dómino atque inter céteros magis diléctus, † qui supra pectus eius recúmbens Evangélii fluénta de ipso sacro domínici péctoris fonte potávit,
+* Et verbi Dei grátiam in toto terrárum orbe diffúdit.
+V. Spíritus sancti grátia inebriátus, † céteris áltius divinitátis patefécit arcána.
+R. Et verbi Dei grátiam in toto terrárum orbe diffúdit.
+
+[Lectio12]
+@Sancti/12-27:Lectio9:s/.* Tota /Tota /s
+
+[Responsory12]
+R. Sic eum volo manére, donec véniam:
+* Quid ad te, tu me séquere.
+V. Hunc ergo cum vidísset Petrus, dixit ad Iesum: † Dómine hic autem quid?
+R. Quid ad te, tu me séquere.
 
 [Capitulum Laudes]
 @Sancti/12-27
@@ -18,3 +99,17 @@ _
 
 [Ant Vespera 3]
 @Sancti/12-25::s/129.*/129/s
+
+[LectioE]
+Sequéntia ++ sancti Evangélii secundum Joánnem.
+!Joann 21:19-24
+In illo témpore: Dixit Jesus Petro: Séquere me. Convérsus Petrus vidit illum~
+discípulum, quem diligébat Jesus, sequéntem, qui et recúbuit in cena super~
+pectus ejus, et dixit: Dómine, quis est qui tradet te ? Hunc ergo cum vidísset~
+Petrus, dixit Jesu: Dómine, hic autem quid? Dicit ei Jesus: Sic eum volo manére,~
+donec véniam, quid ad te? tu me séquere. Exiit ergo sermo iste inter fratres,~
+quia discípulus ille non móritur. Et non dixit ei Jesus: Non móritur; sed: Sic~
+eum volo manére, donec véniam: quid ad te? Hic est discípulus ille, qui~
+testimónium pérhibet de his, et scripsit hæc: et scimus, quia verum est~
+testimónium ejus.
+

@@ -1167,7 +1167,7 @@ sub gettype1960 {
     } elsif ($rank < 5) {
       $type = LT1960_SANCTORAL;
     }
-    if ($rule =~ /9 lectiones 1960/i) { $type = LT1960_DEFAULT; }
+    if ($rule =~ /9 lectiones 1960|12 lectiones/i) { $type = LT1960_DEFAULT; }
   }
   return $type;
 }
