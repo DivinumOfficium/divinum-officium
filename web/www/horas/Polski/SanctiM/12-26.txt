@@ -1,0 +1,15 @@
+[Lectio10]
+@Sancti/12-26:Lectio8:s/Inni .*//s
+
+[Lectio11]
+@Sancti/12-26:Lectio8:s/.* Inni/Inni/s s/$/~/
+@Sancti/12-26:Lectio9:s/Skoro .*//s
+
+[Lectio12]
+@Sancti/12-26:Lectio9:s/.* Skoro /Skoro /s
+
+[LectioE]
+Ciąg dalszy ++ Ewangelii świętej według Mateusza.
+!Mt 23:34-39
+Onego czasu: Mówił Jezus do uczonych w Piśmie i faryzeuszy: «Oto ja posyłam do was proroków i mędrców i uczonych w Piśmie, a wielu z nich zabijecie i ukrzyżujecie, a innych ubiczujecie w synagogach waszych i będziecie ścigali z miasta do miasta, aż spadnie na was krew wszystkich sprawiedliwych, która rozlana jest na ziemi, od krwi sprawiedliwego Abla aż do krwi Zachariasza, syna Barachiaszowego, którego zabiliście między świątynią a ołtarzem. Zaprawdę powiadam wam, spadnie to wszystko na to plemię. O, Jeruzalem, Jeruzalem, które zabijasz proroków i kamienujesz tych, którzy są do ciebie posłani. Ilekroć chciałem zgromadzić synów twoich, jako kokosz zgromadza pisklęta swe pod skrzydła, a nie chciałoś! Oto zostanie wam dom wasz pusty. Albowiem powiadam wam: nie ujrzycie mnie odtąd, aż powiecie: Błogosławiony, który przybywa w imię Pańskie».
+
