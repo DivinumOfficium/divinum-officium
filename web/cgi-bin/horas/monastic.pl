@@ -97,7 +97,7 @@ sub psalmi_matutinum_monastic {
     for ($i = 0; $i < 3; $i++) { $psalmi[$i + 16] = $c[$i]; }
   }
 
-  if ($rank > 3) {
+  if ($rank > 4.9) {
     #** get proper Ant Matutinum
     my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
     if ($w) {
@@ -144,7 +144,7 @@ sub psalmi_matutinum_monastic {
     push(@s, '!Nocturn III.');
 
     if ($psalmi[16] =~ /(.*?);;(.*)/s) {
-      my $ant = $1;
+      my $ant = $winner{"Ant Matutinum 3N"} || $1;
       my $p = $2;
       $p =~ s/[\(\-]/\,/g;
       $p =~ s/\)//g;
