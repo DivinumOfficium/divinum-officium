@@ -207,7 +207,7 @@ sub psalmi_matutinum_monastic {
     $w = $s{"MM Capitulum $name"};
   }
   if (!$w) {
-    if ($dayname[0] =~ /(Adv|Quad|Pasc)/i) {
+    if ($dayname[0] =~ /(Adv|Nat|Quad|Pasc)/i) {
       my $name = $1;
       if ($dayname[0] =~ /Quad[56]/i) { $name .= '5'; }
       $w = $s{"MM Capitulum $name"};
