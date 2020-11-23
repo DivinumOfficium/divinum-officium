@@ -48,18 +48,26 @@ sub psalmi_matutinum_monastic {
 
   #** special antiphons for not Quad weekdays
   if ($dayofweek > 0 && $dayname[0] !~ /Quad/i) {
-    my $start = ($dayname[0] =~ /Pasc/i) ? 0 : 8;
+    my $start = ($dayname[0] =~ /Pasc|Nat/i) ? 0 : 8;
     my @p = split("\n", $psalmi{'Daym Pasc'});
+    if (($dayname[0] =~ /Nat/)) {
+      @p = split("\n", $psalmi{'Daym Nat'});
+    }
     my $i;
 
     for ($i = $start; $i < 14; $i++) {
       my $p = $p[$i];
       if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
       if ($i == 0 || $i == 8) {
-        my $ant = $prayers{$lang}{"Alleluia Duplex"};
-        $ant =~ s/ / * /;
-        $ant =~ s/\./$prayers{$lang}{"Alleluia Simplex"}/;
-        $p = "$ant$p";
+        if ($dayname[0] !~ /Nat/) {
+          my $ant = $prayers{$lang}{"Alleluia Duplex"};
+          $ant =~ s/ / * /;
+          $ant =~ s/\./$prayers{$lang}{"Alleluia Simplex"}/;
+          $p = "$ant$p";
+        }
+        else {
+          $p = "$p[$i]$p";
+        }
       }
       $psalmi[$i] = $p;
     }
@@ -67,11 +75,13 @@ sub psalmi_matutinum_monastic {
   }
 
   #** change of versicle for Adv, Quad, Quad5, Pasc
-  if ($dayofweek > 0 && $winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i) {
+  if ($dayofweek > 0 && ($winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i)
+      || $dayname[0] =~ /(Nat)(\d)$/) {
     my $name = $1;
     my $i = $2;
     if ($name =~ /Quad/i && $i > 4) { $name = 'Quad5'; }
     $i = $dayofweek;
+    if ($name =~ /Nat/ && $i > 3) { $i -= 3; }
     my @a = split("\n", $psalmi{"$name $i Versum"});
     $psalmi[6] = $a[0];
     $psalmi[7] = $a[1];
@@ -199,7 +209,7 @@ sub psalmi_matutinum_monastic {
     $w = $s{"MM Capitulum $name"};
   }
   if (!$w) {
-    if ($dayname[0] =~ /(Adv|Quad|Pasc)/i) {
+    if ($dayname[0] =~ /(Adv|Nat|Quad|Pasc)/i) {
       my $name = $1;
       if ($dayname[0] =~ /Quad[56]/i) { $name .= '5'; }
       $w = $s{"MM Capitulum $name"};
