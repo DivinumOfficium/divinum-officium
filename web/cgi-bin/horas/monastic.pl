@@ -75,11 +75,13 @@ sub psalmi_matutinum_monastic {
   }
 
   #** change of versicle for Adv, Quad, Quad5, Pasc
-  if ($dayofweek > 0 && $winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i) {
+  if ($dayofweek > 0 && ($winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i)
+      || $dayname[0] =~ /(Nat)(\d)$/) {
     my $name = $1;
     my $i = $2;
     if ($name =~ /Quad/i && $i > 4) { $name = 'Quad5'; }
     $i = $dayofweek;
+    if ($name =~ /Nat/ && $i > 3) { $i -= 3; }
     my @a = split("\n", $psalmi{"$name $i Versum"});
     $psalmi[6] = $a[0];
     $psalmi[7] = $a[1];
