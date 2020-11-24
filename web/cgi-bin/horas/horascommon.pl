@@ -968,8 +968,19 @@ sub get_sday {
   my $month = shift;
   my $day = shift;
   my $year = shift;
-  if (leapyear($year) && $month == 2 && $day == 24) { $day = 29; }
-  if (leapyear($year) && $month == 2 && $day > 24) { $day -= 1; }
+
+  # The leap day is kept on 24 Feb, and is numbered internally as 29 Feb.
+  # Subsequent days in the calendar for the month are deferred by one day, so
+  # that offices ordinarily assigned to 24 Feb are kept on 25 Feb, and so on.
+  if (leapyear($year) && $month == 2) {
+    if ($day == 24) {
+      $day = 29;
+    }
+    elsif ($day > 24) {
+      $day -= 1;
+    }
+  }
+
   $kalendarkey = sprintf("%02i-%02i", $month, $day);
   return $kalendarkey;
 }
