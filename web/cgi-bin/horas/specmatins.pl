@@ -368,7 +368,7 @@ sub psalmi_matutinum {
     (0, 1, 2);                   # otherwise, don't mess about.
   foreach my $i (@psalm_indices) { antetpsalm($psalmi[$i], $i); }
 
-  if ($version =~ /trident/i && $rule !~ /ex C10/i) {
+  if ($version =~ /trident/i) {
     if ($rule !~ /1 nocturn/i) {
       foreach $i (3, 4, 5) { antetpsalm($psalmi[$i], $i); }
     }
