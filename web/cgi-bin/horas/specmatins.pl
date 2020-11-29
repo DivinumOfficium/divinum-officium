@@ -368,7 +368,7 @@ sub psalmi_matutinum {
     (0, 1, 2);                   # otherwise, don't mess about.
   foreach my $i (@psalm_indices) { antetpsalm($psalmi[$i], $i); }
 
-  if ($version =~ /trident/i && $rule !~ /ex C10/i) {
+  if ($version =~ /trident/i) {
     if ($rule !~ /1 nocturn/i) {
       foreach $i (3, 4, 5) { antetpsalm($psalmi[$i], $i); }
     }
@@ -1167,7 +1167,7 @@ sub gettype1960 {
     } elsif ($rank < 5) {
       $type = LT1960_SANCTORAL;
     }
-    if ($rule =~ /9 lectiones 1960/i) { $type = LT1960_DEFAULT; }
+    if ($rule =~ /9 lectiones 1960|12 lectiones/i) { $type = LT1960_DEFAULT; }
   }
   return $type;
 }

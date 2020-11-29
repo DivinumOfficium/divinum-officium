@@ -7,3 +7,22 @@ CPapaC=Silvéstrum;
 [Commemoratio 2]
 !Commemoratio Sancti Silvestri Papæ
 @Commune/C4:Oratio Gregem
+
+[Lectio1]
+@Sancti/12-30:Lectio7:s/._.*//s
+@Sancti/12-30:Lectio4
+
+[Responsory1]
+@SanctiM/12-25:Responsory11
+
+[Lectio2]
+@Sancti/12-30:Lectio5
+
+[Responsory2]
+@Sancti/12-25:Responsory8
+
+[Lectio3]
+@Sancti/12-30:Lectio6
+
+[Responsory3]
+@Tempora/Nat1-0:Responsory8

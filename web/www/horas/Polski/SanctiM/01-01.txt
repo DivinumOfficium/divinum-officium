@@ -1,0 +1,18 @@
+[Lectio9]
+@Sancti/01-01:Lectio7:s/Widzisz,.*//s
+
+[Lectio10]
+@Sancti/01-01:Lectio7:s/.* Widzisz,/Widzisz,/s
+@Sancti/01-01:Lectio8:s/Wreszcie,.*//s
+
+[Lectio11]
+@Sancti/01-01:Lectio8:s/.* Wreszcie,/Wreszcie,/s s/$/~/
+@Sancti/01-01:Lectio9:s/Jeślibyśmy .*//s
+
+[Lectio12]
+@Sancti/01-01:Lectio9:s/.* Jeślibyśmy /Jeślibyśmy /s
+
+[LectioE]
+Ciąg dalszy ++ Ewangelii świętej według Łukasza.
+!Łk 2:21
+Onego czasu: Gdy upłynęło osiem dni, aby obrzezano Dzieciątko, nazwali Je imieniem Jezus, które nadane było przez Anioła pierwej, niż się w łonie poczęło.

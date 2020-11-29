@@ -19,6 +19,12 @@ Psalm5 Vespera3=131
 [Hymnus Vespera]
 @Commune/C4:Hymnus Vespera
 
+[HymnusM Vespera]
+@Commune/C4:HymnusM Vespera
+
+[Hymnus1M Vespera]
+@Commune/C4:Hymnus1M Vespera
+
 [Versum 1]
 @Commune/C4
 
@@ -121,8 +127,17 @@ Sed natura salis semper eadem est, nec immutari umquam potest. Verum quia conver
 [Capitulum Laudes]
 @:Capitulum Vespera
 
+[Hymnus1M Matutinum]
+@Commune/C4:Hymnus1M Vespera
+
+[HymnusM Matutinum]
+@Commune/C4:HymnusM Vespera
+
 [Hymnus Laudes]
 @Commune/C4:Hymnus Laudes
+
+[HymnusM Laudes]
+@Commune/C4:HymnusM Laudes
 
 [Versum 2]
 @Commune/C4

@@ -753,7 +753,7 @@ sub psalmi_minor {
     {
       $i = 2 * $dayofweek;
     }
-    if ($hora =~ /Completorium/i && $dayofweek == 6 && $winner{Rank} =~ /Dominica/i) { $i = 12; }
+    if ($hora =~ /Completorium/i && $dayofweek == 6 && $winner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat/) { $i = 12; }
     $ant = chompd($psalmi[$i]);
     $psalms = chompd($psalmi[$i + 1]);
     if (($version =~ /1960/ && $psalms =~ /117/ && $laudes == 2) || $rule =~ /Prima=53/i) { $psalms =~ s/117/53/; }

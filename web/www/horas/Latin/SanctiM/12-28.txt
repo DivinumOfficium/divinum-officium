@@ -1,5 +1,88 @@
 @Sancti/12-28
 
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Sancti/12-28:Lectio1
+
+[Lectio2]
+@Sancti/12-28:Lectio2:s/-20/-19/ s/20 .*//s
+
+[Lectio3]
+@Sancti/12-28:Lectio2:s/-20/-21/ s/18-/20-/ s/18 .*20 /20 /s
+@Sancti/12-28:Lectio3:s/!.*// s/22 .*//s
+
+[Lectio4]
+@Sancti/12-28:Lectio3:s/21-/22-/ s/21 .*22 /22 /s
+
+[Responsory4]
+R. Vidi  Agnum stantem supra montem Sion, † et cum eo Sanctórum míllia:
+* Et habébant nomen eius, et nomen Patris eius scriptum in fróntibus suis.
+V. Hi sunt, qui tolléntes crucem suam, sequúntur agnum ubíque.
+R. Et habébant nomen eius et nomen Patris eius scriptum in fróntibus suis.
+
+[Lectio5]
+@Sancti/12-28:Lectio4:s/Nam, .*//s
+
+[Responsory5]
+@Sancti/12-28:Responsory4
+
+[Lectio6]
+@Sancti/12-28:Lectio4:s/.* Nam, /Nam, /s s/$/~/
+@Sancti/12-28:Lectio5:s/Digne .*//s
+
+[Responsory6]
+@Sancti/12-28:Responsory5
+
+[Lectio7]
+@Sancti/12-28:Lectio5:s/.* Digne /Digne /s
+
+[Responsory7]
+@Sancti/12-28:Responsory6
+
+[Lectio8]
+@Sancti/12-28:Lectio6
+
+[Responsory8]
+R. Ambulábunt  mecum in albis, quia digni sunt
+* Et non delébo nómina eórum de libro vitae.
+V. Hi sunt, qui cum muliéribus non sunt coinquináti: † vírgines enim sunt.
+R. Et non delébo nómina eórum de libro vitae.
+
+[Ant Matutinum 3N]
+Innocéntium * pássio, Christi exsultátio: † Heródes confúsus est qui eos persecútus est.
+
+[Lectio9]
+@Sancti/12-28:Lectio7
+
+[Responsory9]
+@Sancti/12-28:Responsory7
+
+[Lectio10]
+@Sancti/12-28:Lectio8
+
+[Responsory10]
+@Sancti/12-28:Responsory8
+
+[Lectio11]
+@Sancti/12-28:Lectio9:s/Respondébimus .*//s
+
+[Responsory11]
+R. Isti,  qui amicti sunt stolis albis, qui sunt, et unde venérunt? † Et dixit mihi:
+* Hi sunt, qui venérunt de tribulatióne magna, † et lavérunt stolas suas, et dealbavérunt eas in sánguine Agni.
+V. Vidi sub altáre Dei ánimas interfectórum propter verbum Dei, † et propter testimónium quod habebant.
+R. Hi sunt, qui venérunt de tribulatióne magna, † et lavérunt stolas suas, et dealbavérunt eas in sánguine Agni.
+
+[Lectio12]
+@Sancti/12-28:Lectio9:s/.* Respondébimus /Respondébimus /s
+
+[Responsory12]
+R. Sub throno  Dei Sancti clamant: † Víndica sánguinem nostrum,
+* Deus noster.
+V. Víndicta Dómine sánguinem Sanctórum tuórum qui effúsus est.
+R. Deus noster.
+
 [Capitulum Laudes]
 @Sancti/12-28
 _
@@ -9,3 +92,19 @@ _
 @Sancti/12-28:Capitulum Laudes
 _
 @Commune/C3:Responsory Sexta:1-6
+
+[LectioE]
+Sequéntia ++ sancti Evangélii secundum Matthǽum
+!Matt 2:13-18
+In illo témpore: Angelus Dómini appáruit in somnis Joseph, dicens: Surge, et~
+áccipe Púerum et Matrem ejus, et fuge in Ægýptum, et esto ibi, usque dum dicam~
+tibi. Futúrum est enim, ut Heródes quærat Púerum ad perdéndum eum. Qui~
+consúrgens accépit Púerum et Matrem ejus nocte, et secéssit in Ægýptum: et erat~
+ibi usque ad óbitum Heródis: ut adimplerétur quod dictum est a Dómino per~
+Prophétam dicéntem: Ex Ægýpto vocávi Fílium meum. Tunc Heródes videns, quóniam~
+illúsus esset a Magis, irátus est valde, et mittens occídit omnes púeros, qui~
+erant in Béthlehem et in ómnibus fínibus ejus, a bimátu et infra, secúndum~
+tempus, quod exquisíerat a Magis. Tunc adimplétum est, quod dictum est per~
+Jeremíam Prophetam dicéntem: Vox in Rama audíta est, plorátus et ululátus~
+multus: Rachel plorans fílios suos, et nóluit consolári, quia non sunt.
+
