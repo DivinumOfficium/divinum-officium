@@ -886,7 +886,7 @@ sub psalmi_minor {
   #quicumque
   if ( ($version !~ /(1955|1960|Monastic)/i || $dayname[0] =~ /Pent01/i)
     && $hora =~ /prima/i
-    && (($dayname[0] =~ /(Epi|Pent)/i) || $version =~ /Trident/i)
+    && (($dayname[0] =~ /(Adv|Epi|Pent)/i) || $version =~ /1570|1910|Divino/i)
     && $dayofweek == 0
     && ($dayname[0] =~ /Pent01/i || checksuffragium()))
   {
