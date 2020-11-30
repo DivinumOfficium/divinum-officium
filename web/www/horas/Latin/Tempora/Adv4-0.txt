@@ -8,7 +8,21 @@ Dominica IV Adventus;;Semiduplex;;6
 9 lectiones
 Antiphonas horas
 
-[Ant Vespera]
+[Ant Vespera 1](rubrica 1570 aut rubrica 1910)
+Benedíctus * Dóminus Deus meus.;;143
+Per síngulos dies * benedícam te Dómine.;;144
+Laudábo * Deum meum in vita mea.;;145
+Deo nostro * jucúnda sit laudátio.;;146
+Lauda * Jerúsalem Dóminum.;;147
+
+[Ant Vespera](rubrica divino aut rubrica 1960 aut rubrica innovata)
+Cánite tuba * in Sion, quia prope est dies Dómini: ecce véniet ad salvándum nos, allelúja, allelúja.
+Ecce véniet * desiderátus cunctis géntibus: et replébitur glória domus Dómini, allelúja.
+Erunt prava * in dirécta, et áspera in vias planas: veni, Dómine, et noli tardáre, allelúja.
+Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni ejus non erit finis: Deus, Fortis, Dominátor, Princeps pacis, allelúja, allelúja.
+Omnípotens Sermo tuus, * Dómine, a regálibus sédibus véniet, allelúja.
+
+[Ant Vespera 3](rubrica 1570 aut rubrica 1910)
 Cánite tuba * in Sion, quia prope est dies Dómini: ecce véniet ad salvándum nos, allelúja, allelúja.
 Ecce véniet * desiderátus cunctis géntibus: et replébitur glória domus Dómini, allelúja.
 Erunt prava * in dirécta, et áspera in vias planas: veni, Dómine, et noli tardáre, allelúja.
@@ -135,8 +149,11 @@ R. Cujus generátio non habet finem.
 &Gloria
 R. Cujus generátio non habet finem.
 
-[Ant Laudes]
+[Ant Laudes](rubrica divino aut rubrica 1960 aut rubrica innovata)
 @:Ant Vespera
+
+[Ant Laudes](rubrica 1570 aut rubrica 1910)
+@:Ant Vespera 3
 
 [Capitulum Laudes]
 @:Capitulum Vespera
