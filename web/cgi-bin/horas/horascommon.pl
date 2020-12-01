@@ -1613,7 +1613,7 @@ sub setheadline {
         my @ranktable = (
           '',
           'IV. classis',
-          'IV. classis',
+          'III. classis',
           'III. classis',
           'II. classis',
           'II. classis',
