@@ -4,21 +4,7 @@ v. Benedíctio, et cláritas, et sapiéntia, et gratiárum áctio, honor, virtus
 $Deo gratias
 
 [HymnusM Day0 Laudes]
-v. Ecce jam noctis tenuátur umbra,
-Lucis auróra rútilans corúscat:
-Nísibus totis rogitémus omnes
-Cunctipoténtem:
-_
-Ut Deus nostri miserátus, omnem
-Pellat languórem, tríbuat salútem,
-Donet et nobis pietáte Patris
-Regna polorum.
-_
-Præstet hoc nobis Déitas beáta
-Patris, ac Nati, paritérque Sancti
-Spíritus, cujus réboat in omni
-Glória mundo.
-Amen.
+@:Hymnus Day0 Laudes:s/Ecce,/Ecce/ s/Lux et auróræ/Lucis auróra/ s/Súpplices.*?:/Nísibus totis rogitémus omnes\nCunctipoténtem:/s s/reos culpæ miserátus/Deus nostri miserátus, / s/angórem/languórem/ s/bona.*?\./pietáte Patris\nRegna polorum./s s/résonat.*/réboat in omni\nGlória mundo.\nAmen./s
 
 [Hymnus Day0 Laudes]
 {:H-Ecceiamnoctis:}v. Ecce, jam noctis tenuátur umbra,
@@ -818,29 +804,29 @@ Amen.
 
 [HymnusM Adv Laudes]
 {:H-LaudsAdv:}v. Vox clara ecce íntonat,
-obscúra quæque íncrepat:
-procul fugéntur sómnia;
-ab æthre Christus prómicat.
+Obscúra quæque íncrepat:
+Pellántur éminus sómnia;
+Ab æthre Christus prómicat.
 _
-Mens iam resúrgat tórpida
-quæ sorde exstat sáucia;
-sidus refúlget iam novum,
-ut tollat omne nóxium.
+Mens jam resúrgat tórpida
+Quæ sorde exstat sáucia;
+Sidus refúlget jam novum,
+Ut tollat omne nóxium.
 _
 E sursum Agnus míttitur
-laxáre gratis débitum;
-omnes pro indulgéntia
-vocem demus cum lácrimis,
+Laxáre gratis débitum:
+Omnes pro indulgéntia
+Vocem demus cum lácrimis,
 _
-Secúndo ut cum fúlserit
-mundúmque horror cínxerit,
-non pro reátu púniat,
-sed nos pius tunc prótegat.
+Secúndo ut cum fúlserit,
+Mundúmque horror cínxerit,
+Non pro reátu púniat,
+Sed nos pius tunc prótegat.
 _
 Laus, honor, virtus, glória,
 Deo Patri, et Fílio,
 Sancto simul Paráclito,
-In sæculórum sæcula. 
+In sæculórum sǽcula.
 Amen.
 
 [Adv Versum 2]
@@ -886,34 +872,34 @@ Amen.
 
 [HymnusM Adv Vespera]
 {:H-VespAdv:}v. Cónditor alme síderum,
-ætérna lux credéntium,
-Christe, redémptor ómnium,
-exáudi preces súpplicum.
+Ætérna lux credéntium,
+Christe, Redémptor ómnium,
+Exáudi preces súpplicum.
 _
 Qui cóndolens intéritu
-mortis períre sæculum,
-salvásti mundum lánguidum,
-donans reis remédium,
+Mortis períre sæculum,
+Salvásti mundum lánguidum,
+Donans reis remédium,
 _
 Vergénte mundi véspere,
-uti sponsus de thálamo,
-egréssus honestíssima
+Uti sponsus de thálamo,
+Egréssus honestíssima
 Vírginis matris cláusula.
 _
-Cuius forti poténtiæ
-genu curvántur ómnia;
-cæléstia, terréstria
-nutu faténtur súbdita.
+Cujus forti poténtiæ
+Genu curvántur ómnia;
+Cæléstia, terréstria
+Nutu faténtur súbdita.
 _
 Te deprecámur, hágie,
-ventúre iudex sæculi,
-consérva nos in témpore
-hostis a telo pérfidi.
+Ventúre iudex sæculi,
+Consérva nos in témpore
+Hostis a telo pérfidi.
 _
 Laus, honor, virtus, glória,
 Deo Patri, et Fílio,
 Sancto simul Paráclito,
-In sæculórum sæcula. 
+In sæculórum sǽcula.
 Amen.
 
 [Adv Versum 1]
@@ -1019,31 +1005,7 @@ v. Inter vestíbulum et altáre plorábunt sacerdótes, minístri Dómini, et di
 $Deo gratias
 
 [HymnusM Quad Vespera]
-v. Audi, benígne Cónditor,
-Nostras preces cum flétibus,
-In hoc sacro jejúnio
-Fusas quadragenário.
-_
-Scrutátor alme córdium,
-Infírma tu scis vírium:
-Ad te revérsis éxhibe
-Remissiónis grátiam.
-_
-Multum quidem peccávimus,
-Sed parce confiténtibus:
-Ad laudem tui nóminis
-Confer medélam lánguidis.
-_
-Sic corpus extra cónteri
-Dona per abstinéntiam,
-Jejúnet ut mens sóbria
-A labe prorsus críminum.
-_
-Præsta, beáta Trínitas,
-Concéde, simplex Únitas,
-Ut fructuósa sint tuis
-Jejuniórum múnera.
-Amen.
+@:Hymnus Quad Vespera:s/nóminis laudem tui/laudem tui nóminis/ s/Concéde.*_/Sic corpus extra cónteri\nDona per abstinéntiam,\nJejúnet ut mens sóbria\nA labe prorsus críminum.\n_/s
 
 [Hymnus Quad Vespera]
 {:H-Audibenigne:}v. Audi, benígne Cónditor,
@@ -1109,10 +1071,10 @@ Quem dedit natívitas:
 Ut supérni membra Regis
 Miti tendas stípite.
 _
-Sola digna tu fuisti
+Sola digna tu fuísti
 Ferre sæcli prétium,
 Atque portum præparáre
-Nauta mundo náufrago:
+Nauta mundo náufrago,
 Quem sacer cruor perúnxit,
 Fusus Agni córpore.
 _
@@ -1126,9 +1088,9 @@ Amen.
 
 [Hymnus Quad5 Laudes]
 {:H-Lustrasex:}v. Lustra sex qui jam perégit,
-Tempus implens córporis:
+Tempus implens córporis,
 Sponte líbera Redémptor
-Passióni déditus:
+Passióni déditus,
 Agnus in Crucis levátur
 Immolándus stípite.
 _
@@ -1147,16 +1109,16 @@ Dulce ferrum, dulce lignum
 Dulce pondus sústinent.
 _
 Flecte ramos, arbor alta,
-Tensa laxa víscera:
+Tensa laxa víscera,
 Et rigor lentéscat ille,
 Quem dedit natívitas:
-Et supérni membra Régis
+Et supérni membra Regis
 Tende miti stípite.
 _
 Sola digna tu fuísti
 Ferre mundi víctimam;
 Atque portum præparáre
-Arca mundo náufrago;
+Arca mundo náufrago,
 Quam sacer cruor perúnxit,
 Fusus Agni córpore.
 _
