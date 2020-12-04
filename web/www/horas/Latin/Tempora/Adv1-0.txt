@@ -4,14 +4,15 @@ Dominica I Adventus;;Semiduplex;;6
 [Rule]
 9 lectiones
 Antiphonas horas
-Symbolum Athanasium(rubrica 1570 aut rubrica 1910)
 
-[Ant Vespera](rubrica divino aut rubrica 1955 aut rubrica 1960 aut rubrica innovata aut rubrica Monastic)
-In illa die * stillábunt montes dulcédinem, et colles fluent lac et mel, allelúja.
-Jucundáre, * fília Sion, et exsúlta satis, fília Jerúsalem, allelúja.
-Ecce Dóminus véniet, * et omnes Sancti ejus cum eo: et erit in die illa lux magna, allelúja.
-Omnes sitiéntes, * veníte ad aquas: quǽrite Dóminum, dum inveníri potest, allelúja.
-Ecce véniet * Prophéta magnus, et ipse renovábit Jerúsalem, allelúja.
+[Ant Vespera]
+@:Ant Laudes
+
+[Ant Vespera](rubrica 1570 aut rubrica 1910)
+@Psalterium/Psalmi major:Daya6 Vespera
+
+[Ant Vespera 3]
+@:Ant Laudes
 
 [Capitulum Vespera]
 !Rom 13:11
@@ -133,7 +134,11 @@ R. Et hoc est nomen quod vocábunt eum:
 R. Dóminus justus noster.
 
 [Ant Laudes]
-@:Ant Vespera
+In illa die * stillábunt montes dulcédinem, et colles fluent lac et mel, allelúja.
+Jucundáre, * fília Sion, et exsúlta satis, fília Jerúsalem, allelúja.
+Ecce Dóminus véniet, * et omnes Sancti ejus cum eo: et erit in die illa lux magna, allelúja.
+Omnes sitiéntes, * veníte ad aquas: quǽrite Dóminum, dum inveníri potest, allelúja.
+Ecce véniet * Prophéta magnus, et ipse renovábit Jerúsalem, allelúja.
 
 [Capitulum Laudes]
 @:Capitulum Vespera

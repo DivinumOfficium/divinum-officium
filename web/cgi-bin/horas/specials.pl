@@ -886,9 +886,9 @@ sub psalmi_minor {
   #quicumque
   if ( ($version !~ /(1955|1960|Monastic)/i || $dayname[0] =~ /Pent01/i)
     && $hora =~ /prima/i
-    && (($dayname[0] =~ /(Epi|Pent)/i) || $version =~ /Trident/i)
+    && ($dayname[0] =~ /(Epi|Pent)/i || $version !~ /Divino/i)
     && $dayofweek == 0
-    && ($dayname[0] =~ /Pent01/i || checksuffragium()))
+    && ($dayname[0] =~ /(Adv|Pent01)/i || checksuffragium()))
   {
     push(@s, "\&psalm(234)");
     push(@s, "\n");

@@ -7,14 +7,15 @@ Dominica II Adventus;;Semiduplex;;6
 [Rule]
 9 lectiones
 Antiphonas horas
-Symbolum Athanasium(rubrica 1570 aut rubrica 1910)
 
-[Ant Vespera](rubrica divino aut rubrica 1955 aut rubrica 1960 aut rubrica innovata)
-Ecce in núbibus cæli * Dóminus véniet cum potestáte magna, allelúja.
-Urbs fortitúdinis * nostræ Sion, Salvátor ponétur in ea murus et ántemurale: aperíte portas, quia nobíscum Deus, allelúja.
-Ecce apparébit * Dóminus, et non mentiétur: si moram fécerit, exspécta eum, quia véniet, et non tardábit, allelúja.
-Montes et colles * cantábunt coram Deo laudem, et ómnia ligna silvárum plaudent mánibus: quóniam véniet Dominátor Dóminus in regnum ætérnum, allelúja, allelúja.
-Ecce Dóminus * noster cum virtúte véniet, et illuminábit óculos servórum suórum, allelúja.
+[Ant Vespera]
+@:Ant Laudes
+
+[Ant Vespera](rubrica 1570 aut rubrica 1910)
+@Psalterium/Psalmi major:Daya6 Vespera
+
+[Ant Vespera 3]
+@:Ant Laudes
 
 [Capitulum Vespera]
 !Rom 15:4

@@ -574,17 +574,6 @@ sub getrank {
 #  $comrank = 0;
   if ($version =~ /Trid/i && $trank[2] < 5.1 && $trank[0] =~ /Dominica/i) { $trank[2] = 2.9; }
 
-  if (
-    $version =~ /1960|Newcal|Monastic/i
-    && ( floor($trank[2]) == 3
-      || $dayname[0] =~ /Quad[1-5]/i
-      || ($dayname[0] =~ /quadp3/i && $dayofweek >= 3))
-    && $srank[2] < 5
-    )
-  {
-    $trank[2] = 4.9;
-  }
-
   if ($version =~ /1960/ && $dayofweek == 0) {
     if (($trank[2] >= 6 && $srank[2] < 6) || ($trank[2] >= 5 && $srank[2] < 5)) { $srank = ''; @srank = undef; }
   }
@@ -1613,7 +1602,7 @@ sub setheadline {
         my @ranktable = (
           '',
           'IV. classis',
-          'IV. classis',
+          'III. classis',
           'III. classis',
           'II. classis',
           'II. classis',

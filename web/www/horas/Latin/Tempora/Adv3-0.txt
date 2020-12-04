@@ -7,14 +7,15 @@ Dominica III Adventus;;Semiduplex;;6
 [Rule]
 9 lectiones
 Antiphonas horas
-Symbolum Athanasium(rubrica 1570 aut rubrica 1910)
 
-[Ant Vespera](rubrica divino aut rubrica 1955 aut rubrica 1960 aut rubrica innovata)
-Véniet Dóminus, * et non tardábit, et illuminábit abscóndita tenebrárum, et manifestábit se ad omnes gentes, allelúja.
-Jerúsalem, gaude * gáudio magno, quia véniet tibi Salvátor, allelúja.
-Dabo in Sion * salútem, et in Jerúsalem glóriam meam, allelúja.
-Montes et omnes colles * humiliabúntur: et erunt prava in dirécta, et áspera in vias planas: veni, Dómine, et noli tardáre, allelúja.
-Juste et pie * vivámus, exspectántes beátam spem, et advéntum Domini.
+[Ant Vespera]
+@:Ant Laudes
+
+[Ant Vespera](rubrica 1570 aut rubrica 1910)
+@Psalterium/Psalmi major:Daya6 Vespera
+
+[Ant Vespera 3]
+@:Ant Laudes
 
 [Capitulum Vespera]
 !Phil 4:4-5
@@ -139,7 +140,11 @@ R. Quia de Sion exíbit lex, et verbum Dómini de Jerúsalem.
 R. Quia de Sion exíbit lex, et verbum Dómini de Jerúsalem.
 
 [Ant Laudes]
-@:Ant Vespera
+Véniet Dóminus, * et non tardábit, et illuminábit abscóndita tenebrárum, et manifestábit se ad omnes gentes, allelúja.
+Jerúsalem, gaude * gáudio magno, quia véniet tibi Salvátor, allelúja.
+Dabo in Sion * salútem, et in Jerúsalem glóriam meam, allelúja.
+Montes et omnes colles * humiliabúntur: et erunt prava in dirécta, et áspera in vias planas: veni, Dómine, et noli tardáre, allelúja.
+Juste et pie * vivámus, exspectántes beátam spem, et advéntum Domini.
 
 [Capitulum Laudes]
 @:Capitulum Vespera

@@ -7,14 +7,15 @@ Dominica IV Adventus;;Semiduplex;;6
 [Rule]
 9 lectiones
 Antiphonas horas
-Symbolum Athanasium(rubrica 1570 aut rubrica 1910)
 
-[Ant Vespera](rubrica divino aut rubrica 1955 aut rubrica 1960 aut rubrica innovata)
-Cánite tuba * in Sion, quia prope est dies Dómini: ecce véniet ad salvándum nos, allelúja, allelúja.
-Ecce véniet * desiderátus cunctis géntibus: et replébitur glória domus Dómini, allelúja.
-Erunt prava * in dirécta, et áspera in vias planas: veni, Dómine, et noli tardáre, allelúja.
-Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni ejus non erit finis: Deus, Fortis, Dominátor, Princeps pacis, allelúja, allelúja.
-Omnípotens Sermo tuus, * Dómine, a regálibus sédibus véniet, allelúja.
+[Ant Vespera]
+@:Ant Laudes
+
+[Ant Vespera](rubrica 1570 aut rubrica 1910)
+@Psalterium/Psalmi major:Daya6 Vespera
+
+[Ant Vespera 3]
+@:Ant Laudes
 
 [Capitulum Vespera]
 !1 Cor 4:1-2
@@ -137,7 +138,11 @@ R. Cujus generátio non habet finem.
 R. Cujus generátio non habet finem.
 
 [Ant Laudes]
-@:Ant Vespera
+Cánite tuba * in Sion, quia prope est dies Dómini: ecce véniet ad salvándum nos, allelúja, allelúja.
+Ecce véniet * desiderátus cunctis géntibus: et replébitur glória domus Dómini, allelúja.
+Erunt prava * in dirécta, et áspera in vias planas: veni, Dómine, et noli tardáre, allelúja.
+Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni ejus non erit finis: Deus, Fortis, Dominátor, Princeps pacis, allelúja, allelúja.
+Omnípotens Sermo tuus, * Dómine, a regálibus sédibus véniet, allelúja.
 
 [Capitulum Laudes]
 @:Capitulum Vespera
