@@ -925,6 +925,7 @@ sub psalmi_major {
                || ($sday =~ /(06\-23|06\-28|08\-09|08\-14)/))
       {
         my @canticles = split("\n", $psalmi{'DaymF Canticles'});
+        if ($dayofweek == 6) { $psalmi[2] = $canticles[7]; }
         $psalmi[3] = $canticles[$dayofweek];
       }
     }
