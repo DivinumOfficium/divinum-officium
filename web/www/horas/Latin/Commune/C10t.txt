@@ -43,11 +43,22 @@ Doxology=Nat
 [Benedictio]
 @Commune/C10:Benedictio
 
+[Responsory1]
+@Commune/C11:Responsory1
+
+[Responsory2]
+@Commune/C11:Responsory7
+&Gloria
+R. Christus, Deus noster.
+
 [Capitulum Laudes]
 @Commune/C10:Capitulum Laudes
 
 [Hymnus Laudes]
 @Commune/C10:Hymnus Laudes
+
+[HymnusM Laudes]
+@Commune/C10:HymnusM Laudes
 
 [Versum 2]
 @Commune/C10:Versum 2
@@ -102,6 +113,9 @@ Doxology=Nat
 
 [Ant 23]
 @:Ant 13
+
+[Ant Laudes]
+@Commune/C11:Ant Laudes
 
 [Lectio Prima]
 @Commune/C10:Lectio Prima

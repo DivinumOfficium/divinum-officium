@@ -363,8 +363,7 @@ sub psalmi_matutinum {
   my @psalm_indices = (
     $version =~ /Trident/i &&    # Tridentine rubrics, necessarily 3 lessons;
       $dayofweek == 6 &&         # on a Saturday;
-      $rule !~ /ex C10/i &&      # not of the BVM;
-      $rule !~ /1 nocturn/i
+      $rule =~ /ex C10/i
     )
     ?                            # not in the octaves of Easter or Pentecost:
     (0, 8, 2)
@@ -378,6 +377,12 @@ sub psalmi_matutinum {
     }
     $spec[0] = $psalmi[6];
     $spec[1] = $psalmi[7];
+    
+    if ($dayofweek == 6 && $rule =~ /ex C10/i) {
+      my @a = split("\n", $psalmi{"BMV Versum"});
+      $spec[0] = $a[0];
+      $spec[1] = $a[1];
+    }
 
     if ($dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i) {
       my $name = $1;
