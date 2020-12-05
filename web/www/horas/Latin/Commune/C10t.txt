@@ -34,6 +34,9 @@ Doxology=Nat
 [Invit]
 @Commune/C10:Invit
 
+[Invit](tempore paschali)
+Ave María, grátia plena, * Dóminus tecum. Allelúja.
+
 [Hymnus Matutinum]
 @Commune/C11:Hymnus Matutinum
 
@@ -46,10 +49,13 @@ Doxology=Nat
 [Responsory1]
 @Commune/C11:Responsory1
 
-[Responsory2]
-@Commune/C11:Responsory7
+[Responsory1](tempore paschali)
+@Commune/C11p:Responsory1
+
+[Responsory2](tempore paschali)
+@Commune/C11p:Responsory7
 &Gloria
-R. Christus, Deus noster.
+R. Christus, Deus noster. Allelúja.
 
 [Capitulum Laudes]
 @Commune/C10:Capitulum Laudes
