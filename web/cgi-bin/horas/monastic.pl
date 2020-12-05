@@ -88,18 +88,6 @@ sub psalmi_matutinum_monastic {
     setbuild2("Subst Matutitunun Versus $name $dayofweek");
   }
 
-  #** Feria VI psalm change if winner has proper antiphons
-  # for Lauds, so the Sunday psalm set is in effect
-  if ($dayofweek == 5 && $psalmi[4] =~ /92!75/) {
-    if (exists($winner{'Ant Laudes'})) {
-      $psalmi[4] =~ s/92!75/75/;
-      if ($psalmi[12] =~ /!(.*)/s) { $psalmi[12] = $1; }
-    } else {
-      $psalmi[4] =~ s/92!75/92/;
-      if ($psalmi[12] =~ /!(.*)/s) { $psalmi[12] = $1; }
-    }
-  }
-
   #** special cantica for quad time
   if (exists($winner{'Cantica'})) {
     my $c = split("\n", $winner{Cantica});
