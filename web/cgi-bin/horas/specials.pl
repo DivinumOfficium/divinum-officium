@@ -492,7 +492,13 @@ sub specials {
         my $suffr = '';
         my $c = ($dayname[0] =~ /(pasc)/i) ? '2' : 'TridentinumFeriale';
         if ($dayname[1] =~ /(feria|vigilia)/i) { $suffr = $suffr{"Suffragium$c"}; }
-        if ($commune !~ /(C1[0-9])/i) { $suffr .= $suffr{Suffragium3}; }
+        if ($commune !~ /(C1[0-9])/i) {
+          if (($month == 1 && $day > 13) || $month == 2 && $day == 1) {
+            $suffr .= $suffr{Suffragium3Epi};
+          } else {
+            $suffr .= $suffr{Suffragium3};
+          }
+        }
 
         if ($version !~ /1570/) {
           if ($hora =~ /vespera/i) {
@@ -925,6 +931,7 @@ sub psalmi_major {
                || ($sday =~ /(06\-23|06\-28|08\-09|08\-14)/))
       {
         my @canticles = split("\n", $psalmi{'DaymF Canticles'});
+        if ($dayofweek == 6) { $psalmi[2] = $canticles[7]; }
         $psalmi[3] = $canticles[$dayofweek];
       }
     }
