@@ -35,15 +35,13 @@ V. Exaltábo te, Dómine, quóniam suscepísti me.
 R. Nec delectásti inimícos meos super me.
 
 [Lectio1]
-@Sancti/12-08:Lectio1:
-@Sancti/12-08:Lectio2:s/!.*// s/6 .*//s
+@Sancti/12-08
 
 [Lectio2]
-@Sancti/12-08:Lectio2:
-@Sancti/12-08:Lectio3:s/!.*// s/9 .*//s
+@Sancti/12-08
 
 [Lectio3]
-@Sancti/12-08:Lectio3:s/-15/-12/ s/13 .*//s
+@Sancti/12-08:Lectio3:s/-15/-12/ s/13.*//s
 
 [Lectio4]
 @Sancti/12-08:Lectio3:s/9-/13-/ s/9.*13/13/s
@@ -125,6 +123,8 @@ R. Et pósuit immaculátam viam meam.
 @Sancti/12-08:Responsory Tertia:s/.*_.//s
 
 [Responsory Nona]
+@Sancti/12-08:Responsory Sexta:s/.*_.//s
+
 [LectioE]
 Sequéntia ++ sancti Evangélii secúndum Lucam
 !Luc 1:26-28
