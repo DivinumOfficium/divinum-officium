@@ -1,5 +1,5 @@
 [Rank]
-S. Damasi Papæ et Confessoris;;Semiduplex;;2.5;;vide C4
+S. Damasi Papæ et Confessoris;;Semiduplex;;2.9;;vide C4
 
 [Rank1960]
 S. Damasi Papæ et Confessoris;;Duplex;;3;;vide C4
@@ -12,11 +12,14 @@ Doxology=Nat
 Omit Preces
 Commemoratio3
 
+[Ant Vespera](rubrica divino)
+@Commune/C4:Ant Vespera
+
 [Oratio]
 Exaudi, Domine, preces nostras: et interveniente beato Damaso Confessore tuo atque Pontifice, indulgentiam nobis tribue placatus et pacem.
 $Per Dominum
 
-[Commemoratio 2]
+[Commemoratio 2](rubrica divino)
 !Commemoratio Diei infra Octavam Immaculatæ Conceptionis B.M.V.
 @Sancti/12-08:Oratio
 
