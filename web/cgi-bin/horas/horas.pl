@@ -590,7 +590,7 @@ sub psalm : ScriptFunc {
       $t .= "\n$lnum $line $rest";
     }
     $t .= "\n";
-    if ($num == 129 && $version == "Monastic" && $hour == 'Prima') { $t .= $prayers{$lang}->{Requiem}; }
+    if ($version != "/(1570|1910|Divino|1960|Newcal)/" && $version == "Monastic" && $num == 129 && $hour == 'Prima') { $t .= $prayers{$lang}->{Requiem}; }
     elsif ($num != 210 && !$nogloria) { $t .= "\&Gloria\n"; }
     $t .= settone(0);
     return $t;
