@@ -1003,7 +1003,7 @@ sub canticum : ScriptFunc {
 sub Divinum_auxilium : ScriptFunc {
   my $lang = shift;
   my $text = "V. " . translate("Divinum auxilium", $lang);
-  $text =~ s/\n.*\. /\n/ unless ($version =~ /Dominican/i);
+  $text =~ s/\n.*\. /\n/ unless ($version =~ /Monastic/i);
   $text =~ s/\n/\nR. /;
   return $text;
 }
