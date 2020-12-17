@@ -194,6 +194,7 @@ sub getrank {
     : ($version =~ /newcal/i) ? 'NC'
     : ($version =~ /1955/) ? 1955
     : ($version =~ /1960/) ? 1960
+    : ($version =~ /Praedicatorum/) ? 1960
     : 1960;
   our %kalendar = undef;
   our $kalendarkey = '';
