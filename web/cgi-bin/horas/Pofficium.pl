@@ -33,7 +33,7 @@ our $Ck = 0;
 our $officium = 'Pofficium.pl';
 our $version = 'Rubrics 1960';
 
-@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
+@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', 'Ordo Praedicatorum', '1960 Newcalendar');
 
 #***common variables arrays and hashes
 #filled  getweek()
