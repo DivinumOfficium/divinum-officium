@@ -959,7 +959,7 @@ sub psalmi_major {
   $prefix = translate("Psalmi et antiphonae", $lang) . ' ';
   setbuild("Psalterium/Psalmi major", "Day$dayofweek $name", 'Psalmi ord');
 
-  if ($hora =~ /Laudes/ && $month == 12 && ($day > 16 && $day < 24) && $dayofweek > 0) {
+  if (($hora =~ /Laudes/ || ($hora =~ /Vespera/ && $version =~ /Monastic/)) && $month == 12 && $day > 16 && $day < 24 && $dayofweek > 0) {
     my @p1 = split("\n", $psalmi{"Day$dayofweek Laudes3"});
     my $i;
 
