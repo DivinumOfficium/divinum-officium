@@ -959,7 +959,7 @@ sub psalmi_major {
   $prefix = translate("Psalmi et antiphonae", $lang) . ' ';
   setbuild("Psalterium/Psalmi major", "Day$dayofweek $name", 'Psalmi ord');
 
-  if ($hora =~ /Laudes/ && $month == 12 && ($day > 16 && $day < 24) && $dayofweek > 0) {
+  if (($hora =~ /Laudes/ || ($hora =~ /Vespera/ && $version =~ /Monastic/)) && $month == 12 && $day > 16 && $day < 24 && $dayofweek > 0) {
     my @p1 = split("\n", $psalmi{"Day$dayofweek Laudes3"});
     my $i;
 
@@ -1173,7 +1173,7 @@ sub oratio {
   }
 
   if ( ($rule =~ /Oratio Dominica/i && (!exists($w{Oratio}) || $hora =~ /Vespera/i))
-    || ($winner{Rank} =~ /Quattuor/i && $version !~ /1960/i && $hora =~ /Vespera/i))
+    || ($winner{Rank} =~ /Quattuor/i && $version !~ /1960|Monastic/i && $hora =~ /Vespera/i))
   {
     my $name = "$dayname[0]-0";
     if ($name =~ /(Epi1|Nat)/i) { $name = 'Epi1-0a'; }
@@ -1803,7 +1803,7 @@ sub tryoldhymn {
   $name1 = $name;
   $name1 =~ s/Hymnus\S*/$&M/;
 
-  if ($version =~ /(Monastic|1570)/i && $name =~ /Hymnus/i && exists($source{$name1})) {
+  if ($version =~ /(Monastic|1570|Praedicatorum)/i && $name =~ /Hymnus/i && exists($source{$name1})) {
     return $source{$name1};
   } else {
     return $source{$name};
