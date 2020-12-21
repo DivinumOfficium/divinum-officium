@@ -206,6 +206,7 @@ sub psalmi_matutinum_monastic {
     if ($dayname[0] =~ /(Adv|Nat|Quad|Pasc)/i) {
       my $name = $1;
       if ($dayname[0] =~ /Quad[56]/i) { $name .= '5'; }
+      if ($name eq 'Nat' && $day > 6 && $day < 13) { $name = 'Epi'; }
       $w = $s{"MM Capitulum $name"};
     }
   }
