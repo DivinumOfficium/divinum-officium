@@ -75,17 +75,18 @@ sub psalmi_matutinum_monastic {
   }
 
   #** change of versicle for Adv, Quad, Quad5, Pasc
-  if ($dayofweek > 0 && ($winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i)
-      || $dayname[0] =~ /(Nat)(\d)$/) {
+  if ($dayofweek > 0 && ( ($winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i)
+      || $dayname[0] =~ /(Nat)((?:0?[2-9])|(?:1[0-2]))$/) ) {
     my $name = $1;
     my $i = $2;
+    if ($name =~ /Nat/ && $i > 6 && $i < 13) { $name = 'Epi'; }
     if ($name =~ /Quad/i && $i > 4) { $name = 'Quad5'; }
     $i = $dayofweek;
-    if ($name =~ /Nat/ && $i > 3) { $i -= 3; }
+    if ($name =~ /Nat|Epi/ && $i > 3) { $i -= 3; }
     my @a = split("\n", $psalmi{"$name $i Versum"});
     $psalmi[6] = $a[0];
     $psalmi[7] = $a[1];
-    setbuild2("Subst Matutitunun Versus $name $dayofweek");
+    setbuild2("Subst Matutitunum Versus $name $dayofweek");
   }
 
   #** special cantica for quad time
@@ -142,8 +143,14 @@ sub psalmi_matutinum_monastic {
     push(@s, '!Nocturn III.');
 
     if ($psalmi[16] =~ /(.*?);;(.*)/s) {
-      my $ant = $winner{"Ant Matutinum 3N"} || $1;
+      my $ant = $1;
       my $p = $2;
+      if (exists($winner{"Ant Matutinum 3N"})) {
+        my @t = split("\n",$winner{"Ant Matutinum 3N"});
+        my $p2;
+        ($ant,$p2) = split(/;;/,$t[0]);
+        if ($p2) { $p = $p2; }
+      }
       $p =~ s/[\(\-]/\,/g;
       $p =~ s/\)//g;
       my @c = split(';', $p);
@@ -200,6 +207,7 @@ sub psalmi_matutinum_monastic {
     if ($dayname[0] =~ /(Adv|Nat|Quad|Pasc)/i) {
       my $name = $1;
       if ($dayname[0] =~ /Quad[56]/i) { $name .= '5'; }
+      if ($name eq 'Nat' && $day > 6 && $day < 13) { $name = 'Epi'; }
       $w = $s{"MM Capitulum $name"};
     }
   }
