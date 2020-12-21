@@ -1,15 +1,73 @@
 @Tempora/Epi4-0
 
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Tempora/Epi4-0:Lectio1:
+
+[Lectio2]
+@Tempora/Epi4-0:Lectio2:s/-14/-11/ s/12 .*//s
+
+[Lectio3]
+@Tempora/Epi4-0:Lectio2:s/8-/12-/ s/8 .*12 /12 /s
+
+[Lectio4]
+@Tempora/Epi4-0:Lectio3
+
+[Responsory4]
+@TemporaM/Epi2-0
+
+[Lectio5]
+@Tempora/Epi4-0:Lectio4:s/Tot ígitur .*//s
+
+[Responsory5]
+@TemporaM/Epi3-0
+
+[Lectio6]
+@Tempora/Epi4-0:Lectio4:s/.* Tot ígitur /Tot ígitur /s s/$/~/
+@Tempora/Epi4-0:Lectio5:s/Vanitáti quippe.*//s
+
+[Responsory6]
+@TemporaM/Epi3-0
+
+[Lectio7]
+@Tempora/Epi4-0:Lectio5:s/.* Vanitáti /Vanitáti /s
+
+[Responsory7]
+@TemporaM/Epi3-0
+
+[Lectio8]
+@Tempora/Epi4-0:Lectio6
+
+[Responsory8]
+@TemporaM/Epi2-0
+
+[Lectio9]
+@Tempora/Epi4-0:Lectio7
+
+[Responsory9]
+@TemporaM/Epi3-0
+
+[Lectio10]
+@Tempora/Epi4-0:Lectio8:s/Tunc .*//s
+
+[Responsory10]
+@TemporaM/Epi3-0
+
+[Lectio11]
+@Tempora/Epi4-0:Lectio8:s/.* Tunc /Tunc /s
+
+[Responsory11]
+@TemporaM/Epi3-0
+
+[Lectio12]
+@Tempora/Epi4-0:Lectio9
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Matthaeum
+Sequéntia ++ sancti Evangélii secúndum Matthǽum.
 !Matt 8:23-27
-8:23 Et ascendente eo in naviculam, secuti sunt eum discipuli ejus:
-8:24 et ecce motus magnus factus est in mari, ita ut navicula operiretur~
-fluctibus: ipse vero dormiebat.
-8:25 Et accesserunt ad eum discipuli ejus, et suscitaverunt eum, dicentes:~
-Domine, salva nos: perimus.
-8:26 Et dicit eis Jesus: Quid timidi estis, modicae fidei? Tunc surgens~
-imperavit ventis, et mari, et facta est tranquillitas magna.
-8:27 Porro homines mirati sunt, dicentes: Qualis est hic, quia venti et mare~
-obediunt ei?
-$Te decet
+In illo témpore: Ascendénte Jesu in navículam, secúti sunt eum discípuli ejus: et ecce, motus magnus factus est in mari, ita ut navícula operirétur flúctibus, ipse vero dormiébat. Et accessérunt ad eum discípuli ejus, et suscitavérunt eum, dicéntes: Dómine, salva nos, perímus. Et dicit eis Jesus: Quid tímidi estis, módicæ fídei? Tunc surgens, imperávit ventis et mari, et facta est tranquíllitas magna. Porro hómines miráti sunt, dicéntes: Qualis est hic, quia venti et mare obœ́diunt ei?

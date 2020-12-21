@@ -1,11 +1,35 @@
+
+[Lectio6]
+@Tempora/Epi5-0:Lectio5:s/The first .*//s
+
+[Lectio7]
+@Tempora/Epi5-0:Lectio5:s/.* The first /The first /s s/$/~/
+@Tempora/Epi5-0:Lectio6:s/For what .*//s
+
+[Lectio8]
+@Tempora/Epi5-0:Lectio6:s/.* For what /For what /s
+
+[Lectio10]
+@Tempora/Epi5-0:Lectio8:s/But they .*//s
+
+[Lectio11]
+@Tempora/Epi5-0:Lectio8:s/.* But they /But they /s s/$/~/
+@Tempora/Epi5-0:Lectio9:s/For the .*//s
+
+[Lectio12]
+@Tempora/Epi5-0:Lectio9:s/.* For the /For the /s
+
 [LectioE]
-v. Continuation of the Holy Gospel according to Matthew
+Continuation of the Holy Gospel according to St. Matthew
 !Matt 13:24-30
-13:24 Another parable he proposed to them, saying: The kingdom of heaven is likened to a man that sowed good seeds in his field.
-13:25 But while men were asleep, his enemy came and oversowed cockle among the wheat and went his way.
-13:26 And when the blade was sprung up, and had brought forth fruit, then appeared also the cockle.
-13:27 And the servants of the goodman of the house coming said to him: Sir, didst thou not sow good seed in thy field? whence then hath it cockle?
-13:28 And he said to them: An enemy hath done this. And the servants said to him: Wilt thou that we go and gather it up?
-13:29 And he said: No, lest perhaps gathering up the cockle, you root up the wheat also together with it.
-13:30 Suffer both to grow until the harvest, and in the time of the harvest I will say to the reapers: Gather up first the cockle, and bind it into bundles to burn, but the wheat gather ye into my barn.
-$Te decet
+At that time, Jesus spoke this parable to the crowds: The kingdom of heaven is~
+like a man who sowed good seed in his field; but while men were asleep, his~
+enemy came and sowed weeds among the wheat, and went away. And when the blade~
+sprang up and brought forth fruit, then the weeds appeared as well. And the~
+servants of the householder came and said to him, ‘Sir, did you not sow good~
+seed in your field? How then does it have weeds?’ He said to them, ‘An enemy~
+has done this.’ And the servants said to him, ‘Will you have us go and gather~
+them up?’ ‘No,’ he said, ‘lest in gathering the weeds you root up the wheat~
+along with them. Let both grow together until the harvest; and at harvest time I~
+will say to the reapers: Gather up the weeds first, and bind them in bundles to~
+burn; but gather the wheat into my barns.’

@@ -1,9 +1,27 @@
+
+[Lectio5]
+@Tempora/Epi4-0:Lectio4:s/In all .*//s
+
+[Lectio6]
+@Tempora/Epi4-0:Lectio4:s/.* In all /In all /s s/$/~/
+@Tempora/Epi4-0:Lectio5:s/The creature .*//s
+
+[Lectio7]
+@Tempora/Epi4-0:Lectio5:s/.* The creature /The creature /s
+
+[Lectio10]
+@Tempora/Epi4-0:Lectio8:s/Then .*//s
+
+[Lectio11]
+@Tempora/Epi4-0:Lectio8:s/.* Then /Then /s
+
 [LectioE]
-v. Continuation of the Holy Gospel according to Matthew
+Continuation of the Holy Gospel according to St. Matthew
 !Matt 8:23-27
-8:23 And when he entered into the boat, his disciples followed him:
-8:24 And behold a great tempest arose in the sea, so that the boat was covered with waves, but he was asleep.
-8:25 And they came to him, and awaked him, saying: Lord, save us, we perish.
-8:26 And Jesus saith to them: Why are you fearful, O ye of little faith? Then rising up he commanded the winds, and the sea, and there came a great calm.
-8:27 But the men wondered, saying: What manner of man is this, for the winds and the sea obey him?
-$Te decet
+At that time, Jesus got into a boat, and His disciples followed Him. And behold,~
+there arose a great storm on the sea, so that the boat was covered by the waves;~
+but He was asleep. So they came and woke Him, saying, Lord, save us! we are~
+perishing! But He said to them, Why are you fearful, O you of little faith? Then~
+He arose and rebuked the wind and the sea, and there came a great calm. And the~
+men marvelled, saying, What manner of Man is this, that even the wind and the~
+sea obey Him?

@@ -1,29 +1,108 @@
 @Tempora/Epi3-0
 
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Tempora/Epi3-0:Lectio1:
+
+[Lectio2]
+@Tempora/Epi3-0:Lectio2:s/-10/-8/ s/9 .*//s
+
+[Lectio3]
+@Tempora/Epi3-0:Lectio2:s/6-/9-/ s/6 .*9 /9 /s
+
+[Lectio4]
+@Tempora/Epi3-0:Lectio3
+
+[Responsory4]
+@TemporaM/Epi2-0
+
+[Lectio5]
+@Tempora/Epi3-0:Lectio4
+
+[Responsory5]
+R. Notas mihi fecísti, Dómine, vias vitæ:
+* Adimplébis me lætítia cum vultu tuo: † delectatiónes in déxtera tua usque in finem.
+V. Tu es, qui restítues hereditátem meam mihi.
+R. Adimplébis me lætítia cum vultu tuo: † delectatiónes in déxtera tua usque in finem.
+
+[Lectio6]
+@Tempora/Epi3-0:Lectio5:s/Et ideo .*//s
+
+[Responsory6]
+R. Díligam te, Dómine, virtus mea: † Dóminus firmaméntum meum,
+* Et refúgium meum.
+V. Liberátor meus, Deus meus, adiútor meus.
+R. Et refúgium meum.
+
+[Lectio7]
+@Tempora/Epi3-0:Lectio5:s/.* Et ideo /Et ideo /s
+
+[Responsory7]
+R. Dómini  est terra, et plenitúdo eius:
+* Orbis terrárum, et univérsi qui hábitant in eo.
+V. Ipse super mária fundávit eam, † et super flúmina præparávit illam.
+R. Orbis terrárum, et univérsi qui hábitant in eo.
+
+[Lectio8]
+@Tempora/Epi3-0:Lectio6
+
+[Responsory8]
+@TemporaM/Epi2-0
+
+[Lectio9]
+@Tempora/Epi3-0:Lectio7
+
+[Responsory9]
+R. Ad te, Dómine, levávi ánimam meam:
+* Deus meus, in te confído, non erubéscam.
+V. Custódi ánimam meam, et éripe me.
+R. Deus meus, in te confído, non erubéscam.
+
+[Lectio10]
+@Tempora/Epi3-0:Lectio8:s/Et exténdens .*//s
+
+[Responsory10]
+R. Afflícti pro peccátis nostris, quotídie cum lácrimis, expectémus finem nostrum; † dolor cordis nostri ascéndat ad te, Dómine,
+* Ut éruas nos a malis, quae innovántur in nobis.
+V. Dómine, Deus Israel, exáudi preces nostras, † áuribus pércipe dolórem cordis nostri.
+R. Ut éruas nos a malis, quae innovántur in nobis.
+
+[Lectio11]
+@Tempora/Epi3-0:Lectio8:s/.* Et exténdens /Et exténdens /s
+
+[Responsory11]
+R. Peccáta mea Dómine sicut sagíttae infíxa sunt in me, † sed ántequam vúlnera génerent in me
+* Sana me Dómine medicaménto poeniténtiae, Deus.
+V. Quóniam iniquitátem meam cognósco, † et delíctum meum contra me est semper, qui tibi soli peccávi.
+R. Sana me Dómine medicaménto poeniténtiae, Deus.
+
+[Lectio12]
+@Tempora/Epi3-0:Lectio9
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Matthaeum
+Sequéntia ++ sancti Evangélii secúndum Matthǽum.
 !Matt 8:1-13
-8:1 Cum autem descendisset de monte, secutae sunt eum turbae multae:
-8:2 et ecce leprosus veniens, adorabat eum, dicens: Domine, si vis, potes me~
-mundare.
-8:3 Et extendens Jesus manum, tetigit eum, dicens: Volo: mundare. Et confestim~
-mundata est lepra ejus.
-8:4 Et ait illi Jesus: Vide, nemini dixeris: sed vade, ostende te sacerdoti, et~
-offer munus, quod praecepit Moyses, in testimonium illis.
-8:5 Cum autem introisset Capharnaum, accessit ad eum centurio, rogans eum,
-8:6 et dicens: Domine, puer meus jacet in domo paralyticus, et male torquetur.
-8:7 Et ait illi Jesus: Ego veniam, et curabo eum.
-8:8 Et respondens centurio, ait: Domine, non sum dignus ut intres sub tectum~
-meum: sed tantum dic verbo, et sanabitur puer meus.
-8:9 Nam et ego homo sum sub potestate constitutus, habens sub me milites, et~
-dico huic: Vade, et vadit: et alii: Veni, et venit: et servo meo: Fac hoc, et~
-facit.
-8:10 Audiens autem Jesus miratus est, et sequentibus se dixit: Amen dico vobis,~
-non inveni tantam fidem in Isra�l.
-8:11 Dico autem vobis, quod multi ab oriente et occidente venient, et recumbent~
-cum Abraham, et Isaac, et Jacob in regno caelorum:
-8:12 filii autem regni ejicientur in tenebras exteriores: ibi erit fletus et~
-stridor dentium.
-8:13 Et dixit Jesus centurioni: Vade, et sicut credidisti, fiat tibi. Et sanatus~
-est puer in illa hora.
-$Te decet
+In illo témpore: Cum descendísset Jesus de monte, secútæ sunt eum turbæ multæ:~
+et ecce, leprósus véniens adorábat eum, dicens: Dómine, si vis, potes me~
+mundáre. Et exténdens Jesus manum, tétigit eum, dicens: Volo. Mundáre. Et~
+conféstim mundáta est lepra ejus. Et ait illi Jesus: Vide, némini díxeris: sed~
+vade, osténde te sacerdóti, et offer munus,~
+quod præcépit Móyses, in testimónium illis. Cum autem introísset Caphárnaum,~
+accéssit ad eum centúrio, rogans eum et dicens: Dómine, puer meus jacet in domo~
+paralýticus, et male torquetur. Et ait illi Jesus: Ego véniam, et curábo eum. Et~
+respóndens centúrio, ait: Dómine, non sum dignus, ut intres sub tectum meum: sed~
+tantum dic verbo, et sanábitur puer meus. Nam et ego homo sum sub potestáte~
+constitútus, habens sub me mílites, et dico huic: Vade, et vadit; et alii: Veni,~
+et venit; et servo meo: Fac hoc, et facit. Audiens autem Jesus, mirátus est, et~
+sequéntibus se dixit: Amen, dico vobis, non inveni tantam fidem in Israël. Dico~
+autem vobis, quod multi ab Oriénte et Occidénte vénient, et recúmbent cum~
+Abraham et Isaac et Jacob in regno cœlórum: fílii autem regni ejiciéntur in~
+ténebras exterióres: ibi erit fletus et stridor déntium. Et dixit Jesus~
+centurióni: Vade et, sicut credidísti, fiat tibi. Et sanátus est puer in illa~
+hora.
+

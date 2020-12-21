@@ -1,17 +1,92 @@
-@Tempora/Epi1-0
+@Tempora/Epi1-0a
+
+[Rank]
+Dominica I post Epiphaniam;;Semiduplex;;5;;vide SanctiM/01-06
+
+[Rule]
+12 lectiones
+Doxology=Epi
+
+[Lectio1]
+@Tempora/Epi1-0a:Lectio1:
+@Tempora/Epi1-0a:Lectio2:s/!.*// s/4 .*//s
+
+[Lectio2]
+@Tempora/Epi1-0a:Lectio2:
+@Tempora/Epi1-0a:Lectio3:s/!.*// s/10 .*//s
+
+[Lectio3]
+@Tempora/Epi1-0a:Lectio3:s/-13/-11/ s/12 .*//s 
+
+[Lectio4]
+@Tempora/Epi1-0a:Lectio3:s/10-/12-/ s/10.*12/12/s
+
+[Responsory4]
+R. Dies sanctificátus illúxit nobis: † veníte, gentes, et adoráte Dóminum: 
+* Quia hódie descéndit lux magna in terris.
+V. Vénite, adorémus eum, † quia est Dóminus Deus noster.
+R. Quia hódie descéndit lux magna in terris.
+
+[Lectio5]
+@Tempora/Epi1-0a:Lectio4
+
+[Lectio6]
+@Tempora/Epi1-0a:Lectio5:s/Hoc enim .*//s
+
+[Lectio7]
+@Tempora/Epi1-0a:Lectio5:s/.* Hoc enim /Hoc enim /s
+
+[Lectio8]
+@Tempora/Epi1-0a:Lectio6
+
+[Responsory8]
+R. Interrogábat Magos Heródes: Quod signum vidístis super natum Regem? † Stellam vidimus fulgéntem, cujus splendor illúminat mundum: 
+* Et nos cognóvimus et vénimus adoráre Dóminum.
+V. Magi véniunt ab Oriénte inquiréntes fáciem Dómini et dicéntes.
+R. Et nos cognóvimus et vénimus adoráre Dóminum.
+
+[Ant Matutinum 3N]
+Allelúja, * allelúja, allelúja.;;263;264;265
+
+[Lectio9]
+@Tempora/Epi1-0a:Lectio7
+
+[Lectio10]
+@Tempora/Epi1-0a:Lectio8:s/Alibi .*//s
+
+[Lectio11]
+@Tempora/Epi1-0a:Lectio8:s/.* Alibi /Alibi /s
+
+[Responsory11]
+R. Venit lumen tuum, Jerúsalem, † et glória Dómini super te orta est: 
+* Et ambulábunt gentes in lúmine tuo, et reges in splendóre ortus tui.
+V. Fílii tui de longe vénient et fíliæ tuæ de látere surgent.
+R. Et ambulábunt gentes in lúmine tuo, et reges in splendóre ortus tui.
+
+[Lectio12]
+@Tempora/Epi1-0a:Lectio9
+
+[Responsory12]
+R. Hic est dies praeclárus in quo Salvátor mundi appáruit, † quem prophétae predixérunt, Angeli annuntiavérunt:
+* Cujus stellam Magi vidéntes gavísi sunt, et múnera ei obtulérunt.
+V. Dies sanctificátus illúxit nobis: † veníte gentes et adoráte Dóminum.
+R. Cujus stellam Magi vidéntes gavísi sunt, et múnera ei obtulérunt.
 
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Lucam
+Sequéntia ++ sancti Evangélii secúndum Lucam.
 !Luc 2:42-52
-2:42 Et cum factus esset annorum duodecim, ascendentibus illis Jerosolymam secundum consuetudinem diei festi, 
-2:43 consummatisque diebus, cum redirent, remansit puer Jesus in Jerusalem, et non cognoverunt parentes ejus. 
-2:44 Existimantes autem illum esse in comitatu, venerunt iter diei, et requirebant eum inter cognatos et notos. 
-2:45 Et non invenientes, regressi sunt in Jerusalem, requirentes eum. 
-2:46 Et factum est, post triduum invenerunt illum in templo sedentem in medio doctorum, audientem illos, et interrogantem eos. 
-2:47 Stupebant autem omnes qui eum audiebant, super prudentia et responsis ejus. 
-2:48 Et videntes admirati sunt. Et dixit mater ejus ad illum: Fili, quid fecisti nobis sic? ecce pater tuus et ego dolentes quaerebamus te. 
-2:49 Et ait ad illos: Quid est quod me quaerebatis? nesciebatis quia in his quae Patris mei sunt, oportet me esse? 
-2:50 Et ipsi non intellexerunt verbum quod locutus est ad eos. 
-2:51 Et descendit cum eis, et venit Nazareth: et erat subditus illis. Et mater ejus conservabat omnia verba haec in corde suo. 
-2:52 Et Jesus proficiebat sapientia, et aetate, et gratia apud Deum et homines. 
-$Te decet
+Cum factus esset Jesus annórum duódecim, ascendéntibus illis Jerosólymam~
+secúndum consuetúdinem diéi festi, consummatísque diébus, cum redírent, remánsit~
+puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus. Existimántes autem~
+illum esse in comitátu, venérunt iter diéi, et requirébant eum inter cognátos et~
+notos. Et non inveniéntes, regréssi sunt in Jerúsalem, requiréntes eum. Et~
+factum est, post tríduum invenérunt illum in templo sedéntem in médio doctórum,~
+audiéntem illos et interrogántem eos. Stupébant autem omnes, qui eum audiébant,~
+super prudéntia et respónsis ejus. Et vidéntes admiráti sunt. Et dixit Mater~
+ejus ad illum: Fili, quid fecísti nobis sic? Ecce, pater tuus et ego doléntes~
+quærebámus te. Et ait ad illos: Quid est, quod me quærebátis? Nesciebátis, quia~
+in his, quæ Patris mei sunt, opórtet me esse? Et ipsi non intellexérunt verbum,~
+quod locútus est ad eos. Et descéndit cum eis, et venit Názareth: et erat~
+súbditus illis. Et Mater ejus conservábat ómnia verba hæc in corde suo. Et Jesus~
+proficiébat sapiéntia et ætáte et grátia apud Deum et hómines.
+
