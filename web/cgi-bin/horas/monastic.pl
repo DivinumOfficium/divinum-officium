@@ -142,8 +142,14 @@ sub psalmi_matutinum_monastic {
     push(@s, '!Nocturn III.');
 
     if ($psalmi[16] =~ /(.*?);;(.*)/s) {
-      my $ant = $winner{"Ant Matutinum 3N"} || $1;
+      my $ant = $1;
       my $p = $2;
+      if (exists($winner{"Ant Matutinum 3N"})) {
+        my @t = split("\n",$winner{"Ant Matutinum 3N"});
+        my $p2;
+        ($ant,$p2) = split(/;;/,$t[0]);
+        if ($p2) { $p = $p2; }
+      }
       $p =~ s/[\(\-]/\,/g;
       $p =~ s/\)//g;
       my @c = split(';', $p);
