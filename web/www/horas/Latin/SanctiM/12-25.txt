@@ -126,6 +126,9 @@ _
 [Responsory Nona]
 @Sancti/12-25:Responsory Sexta:s/.*_.//s
 
+[Ant Vespera 3]
+@Sancti/12-25::s/.*;;131//
+
 [Capitulum Vespera 3]
 @:Capitulum Laudes
 
