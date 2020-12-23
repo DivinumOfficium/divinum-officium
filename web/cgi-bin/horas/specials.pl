@@ -959,17 +959,15 @@ sub psalmi_major {
   $prefix = translate("Psalmi et antiphonae", $lang) . ' ';
   setbuild("Psalterium/Psalmi major", "Day$dayofweek $name", 'Psalmi ord');
 
+  my @antiphones;
   if (($hora =~ /Laudes/ || ($hora =~ /Vespera/ && $version =~ /Monastic/)) && $month == 12 && $day > 16 && $day < 24 && $dayofweek > 0) {
     my @p1 = split("\n", $psalmi{"Day$dayofweek Laudes3"});
-    my $i;
-
-    for ($i = 0; $i < @psalmi; $i++) {
+    for (my $i = 0; $i < @p1; $i++) {
       my @p2 = split(';;', $psalmi[$i]);
-      $psalmi[$i] = "$p1[$i];;$p2[1]";
+      $antiphones[$i] = "$p1[$i];;$p2[1]";
     }
     setbuild2("Special laudes antiphonas for week before vigil of Christmas");
   }
-  my @antiphones = splice(@antiphones, @antiphones);
 
   #look for de tempore or Sancti
   my $w = '';
