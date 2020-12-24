@@ -1278,7 +1278,7 @@ sub oratio {
   if ($rule =~ /omit .*? commemoratio/i) { return; }
 
   #*** SET COMMEMORATIONS
-  our %cc = undef;
+  our %cc = ();
   our $ccind = 0;
   our $octavcount = 0;
 
@@ -1415,16 +1415,6 @@ sub setcc {
   our %winner;
   my @rank = split(';;', $winner{Rank});
 
-  # Under the 1960 rubrics, on II. cl and higher days,
-  # allow at most one commemoration. We use @rank rather
-  # than $rank as sometimes the latter is adjusted for
-  # calculating precedence.
-  return
-    if ($version =~ /1960/
-    && ($rank[2] >= 5 || ($dayname[1] =~ /Feria/i && $rank[2] >= 3))
-    && $ccind > 0
-    && nooctnat());
-
   if ($s{Rank} =~ /Dominica/i && $code < 10) {
     $key = 10;
   }    #Dominica=10
@@ -1472,6 +1462,18 @@ sub setcc {
   }
   $ccind++;
   $cc{$key} = $str;
+
+  # Under the 1960 rubrics, on II. cl and higher days,
+  # allow at most one commemoration. We use @rank rather
+  # than $rank as sometimes the latter is adjusted for
+  # calculating precedence.
+  if ($version =~ /1960/ &&
+    ($rank[2] >= 5 || ($dayname[1] =~ /Feria/i && $rank[2] >= 3)) &&
+    $ccind > 1) {
+    my @keys = sort(keys(%cc));
+    %cc = ($keys[0] => $cc{$keys[0]});
+    $ccind = 1;
+  }
 }
 
 #*** commemoratio($winner, $ind, $lang)
