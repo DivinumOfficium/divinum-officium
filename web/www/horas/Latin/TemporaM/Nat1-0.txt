@@ -1,8 +1,13 @@
+@Tempora/Nat1-0
+
 [Rank]
 Dominica Infra Octavam Nativitatis;;Semiduplex;;5.9;;ex SanctiM/12-25
 
 [Rule]
 12 lectiones
+Psalmi Dominica
+no Commemoratio
+Antiphonas horas
 
 [Ant Matutinum]
 @SanctiM/12-25::s/V\. Ipse.*/V. Notum fecit Dóminus, allelúja.\nR. Salutáre suum, allelúja./s
@@ -98,3 +103,20 @@ de illo ómnibus, qui exspectábant redemptiónem Israël. Et ut perfecérunt ó
 secúndum legem Dómini, revérsi sunt in Galilǽam in civitátem suam Názareth. Puer autem crescébat, et confortabátur, plenus~
 sapiéntia: et grátia Dei erat in illo.
 
+[Capitulum Laudes]
+@:Capitulum Tertia
+_
+@Sancti/12-25:Responsory Tertia:s/._.*//s
+
+[Capitulum Vespera]
+@:Capitulum Laudes
+
+[Capitulum Tertia]
+@Tempora/Nat1-0:Capitulum Vespera
+
+[Versum 1]
+V. Vidérunt omnes fines terræ, allelúja.
+R. Salutáre Dei nostri, allelúja.
+
+[Versum 3]
+@:Versum 1

@@ -2,3 +2,54 @@
 
 [Rank]
 Commemoratio Baptismatis Domini Nostri Jesu Christi;;Duplex II. classis;;5;;ex Sancti/01-06
+
+[Rule]
+12 lectiones
+Doxology=Epi
+
+[Responsory1]
+@Sancti/01-06
+
+[Responsory2]
+@Sancti/01-06
+
+[Responsory3]
+@Sancti/01-06
+
+[Lectio5]
+@Sancti/01-13:Lectio4
+
+[Lectio6]
+@Sancti/01-13:Lectio5
+
+[Lectio7]
+@Sancti/01-13:Lectio6:s/Spíritus .*//s
+
+[Lectio8]
+@Sancti/01-13:Lectio6:s/.*Spíritus /Spíritus /s
+
+[Lectio9]
+@Sancti/01-13:Lectio7
+
+[Lectio10]
+@Sancti/01-13:Lectio8:s/Nam .*//s
+
+[Lectio11]
+@Sancti/01-13:Lectio8:s/.*Nam /Nam /s
+
+[Lectio12]
+@Sancti/01-13:Lectio9:s/.*Sunt /Sunt /s
+
+[LectioE]
+Sequéntia ++ sancti Evangélii secúndum Joánnem.
+!Joann 1:29-34
+In illo témpore: Vidit Joánnes Jesum veniéntem ad se, et ait: Ecce Agnus Dei,~
+ecce, qui tollit peccátum mundi. Hic est, de quo dixi: Post me venit vir, qui~
+ante me factus est: quia prior me erat. Et ego nesciébam eum, sed ut~
+manifestétur in Israël, proptérea veni ego in aqua baptízans. Et testimónium~
+perhíbuit Joánnes, dicens: Quia vidi Spíritum descendéntem quasi colúmbam de~
+coelo, et mansit super eum. Et ego nesciébam eum: sed qui misit me baptizáre in~
+aqua, ille mihi dixit: Super quem víderis Spíritum descendéntem, et manéntem~
+super eum, hic est, qui baptízat in Spíritu Sancto. Et ego vidi: et testimónium~
+perhíbui, quia hic est Fílius Dei. 
+

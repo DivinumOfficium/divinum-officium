@@ -1,8 +1,20 @@
+[Lectio4]
+!2 Cor 1:12-14
+12 For our glory is this, the testimony of our conscience, that in simplicity of heart and sincerity of God, and not in carnal wisdom, but in the grace of God, we have conversed in this world: and more abundantly towards you.  
+13 For we write no other things to you than what you have read and known. And I hope that you shall know unto the end:
+14 As also you have known us in part, that we are your glory, as you also are ours, in the day of our Lord Jesus Christ.
+
 [Responsory4]
 R. Keep me, as the apple of thy eye
 * Protect me under the shadow of thy wings.
 V. Shew forth thy wonderful mercies; thou who savest them that trust in thee.
 R. Protect me under the shadow of thy wings.
+
+[Lectio7]
+@Tempora/Epi2-0:Lectio6:s/For the .*//s
+
+[Lectio8]
+@Tempora/Epi2-0:Lectio6:s/.* For the /For the /s
 
 [Responsory8]
 R. Shew, O Lord, thy ways to me, and teach me thy paths. Direct me in thy truth, and teach me;
@@ -10,11 +22,17 @@ R. Shew, O Lord, thy ways to me, and teach me thy paths. Direct me in thy truth,
 V. The sins of my youth and my ignorances do not remember, O Lord.
 R. For thou art God my Saviour; and on thee have I waited all the day long.
 
+[Lectio10]
+@Tempora/Epi2-0:Lectio8:s/They also.*//s
+
 [Responsory10]
 R. You have afflicted us for our sins, every day we expect our end with tears; let the sorrows of our heart come before you O Lord
 * That you may deliver us from the evils that have come upon us
 V. O Lord God of Israel, hear our prayers, hearken unto the sorrows of our heart
 R. That you may deliver us from the ills that are come upon us
+
+[Lectio11]
+@Tempora/Epi2-0:Lectio8:s/.* They /They /s
 
 [Responsory11]
 R. My sins, O Lord, are fixed in me, like arrows, but before they caused wounds in me,
@@ -23,17 +41,21 @@ V. For I know my iniquity, * and my sin is always before me.
 R. Heal me, O God, with the medicine of repentance.
 
 [LectioE]
-v. Continuation of the Holy Gospel according to John
+Continuation of the Holy Gospel according to John
 !John 2:1-11
-2:1 AND the third day, there was a marriage in Cana of Galilee: and the mother of Jesus was there.
-2:2 And Jesus also was invited, and his disciples, to the marriage.
-2:3 And the wine failing, the mother of Jesus saith to him: They have no wine.
-2:4 And Jesus saith to her: Woman, what is that to me and to thee? my hour is not yet come.
-2:5 His mother saith to the waiters: Whatsoever he shall say to you, do ye.
-2:6 Now there were set there six waterpots of stone, according to the manner of the purifying of the Jews, containing two or three measures apiece.
-2:7 Jesus saith to them: Fill the waterpots with water. And they filled them up to the brim.
-2:8 And Jesus saith to them: Draw out now, and carry to the chief steward of the feast. And they carried it.
-2:9 And when the chief steward had tasted the water made wine, and knew not whence it was, but the waiters knew who had drawn the water; the chief steward calleth the bridegroom,
-2:10 And saith to him: Every man at first setteth forth good wine, and when men have well drunk, then that which is worse. But thou hast kept the good wine until now.
-2:11 This beginning of miracles did Jesus in Cana of Galilee; and manifested his glory, and his disciples believed in him.
-$Te decet
+At that time, a marriage took place at Cana of Galilee, and the mother of Jesus~
+was there. Now Jesus too was invited to the marriage, and also His disciples.~
+And the wine having run short, the mother of Jesus said to Him, They have no~
+wine. And Jesus said to her, What would you have me do, woman? My hour has not~
+yet come. His mother said to the attendants, Do whatever He tells you. Now six~
+stone water-jars were placed there, after the Jewish manner of purification,~
+each holding two or three measures. Jesus said to them, Fill the jars with~
+water. And they filled them to the brim. And Jesus said to them, Draw out now,~
+and take to the chief steward. And they took it to him. Now when the chief~
+steward had tasted the water after it had become wine, not knowing whence it was~
+- though the attendants who had drawn the water knew, - the chief steward called~
+the bridegroom, and said to him, Every man at first sets forth the good wine,~
+and when they have drunk freely, then that which is poorer. But you have kept~
+the good wine until now. This first of His signs Jesus worked at Cana of Galilee;~
+and He manifested His glory, and His disciples believed in Him.
+

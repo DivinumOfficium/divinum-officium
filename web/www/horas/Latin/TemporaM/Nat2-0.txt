@@ -1,8 +1,14 @@
 [Rank]
-Dominica Secunda Nativitatis;;Semiduplex;;5
+Dominica Secunda Nativitatis;;Semiduplex;;5;;ex TemporaM/Nat1-0
 
 [Rule]
 12 lectiones
+
+[Hymnus Vespera]
+@Sancti/12-25:HymnusM Vespera
+
+[Capitulum Vespera]
+@:Capitulum Laudes
 
 [Invit]
 @Sancti/12-25
@@ -95,3 +101,23 @@ regnáret in Judæa pro Heróde patre suo, tímuit illo ire: et, admonítus in~
 somnis, secéssit in partes Galilææ. Et véniens habitávit in civitáte, quæ~
 vocátur Názareth: ut adimplére tur quod dictum est per Prophétas: Quóniam~
 Nazaræus vocábitur.
+
+[Hymnus Laudes]
+@Sancti/12-25:HymnusM Laudes
+
+[Capitulum Laudes]
+@:Capitulum Tertia
+_
+@Sancti/12-25:Responsory Sexta:s/._.*//s
+
+[Capitulum Tertia]
+@Tempora/Nat1-0:Capitulum Vespera
+
+[Responsory Tertia]
+@Sancti/12-25:Responsory Nona:s/.*_.//s
+
+[Responsory Sexta]
+@Sancti/12-25:Versum 2
+
+[Responsory Nona]
+@TemporaM/Nat1-0:Versum 1
