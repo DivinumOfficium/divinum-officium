@@ -1,0 +1,76 @@
+[Rank]
+Feria IV Quattuor Temporum in Adventu;;Feria major;;2
+
+[Rank1960]
+Feria IV Quattuor Temporum Adventus;;Feria major;;3
+
+[RankNewcal]
+Feria IV infra Hebdomadam III Adventus;;Feria major;;2
+
+[Rule]
+Oratio Dominica
+no Gloria
+no Credo
+LectioL1
+Suffr=Maria1;Ecclesiae,Papa;;
+
+[Comment]
+# Středa Suchých dnů v Adventě
+! Shromáždění v titulu Eudoxie
+! Bohoslužba u Panny Marie větší
+! Barva fialová
+Mši sv., slavenou dnešního dne, nazývali ve středověku „missa aurea — zlatá mše“. Zabývá se většinou sladkým tajemstvím Panny Marie.
+
+[Introitus]
+!Iz 45,8
+v. Rosu dejte nebesa shůry a oblakové dštěte Spravedlivého. Otevři se země a vypuč Spasitele.
+!Ž 18,2
+Nebesa vypravují slávu Boží a obloha zvěstuje díla rukou jeho.
+&Gloria
+v. Rosu dejte nebesa shůry a oblakové dštěte Spravedlivého. Otevři se země a vypuč Spasitele.
+
+[Oratio]
+Uděl, prosíme, všemohoucí Bože, aby nastávající slavnost spásy naší přinesla nám pomoc pro nynější život a uštědřila dary blaženosti věčné.
+$Per Dominum
+
+[LectioL1]
+Čtení z proroka Isaiáše
+!Iz 2,2-5
+V těch dnech řekl prorok Isaiáš: „V posledních dnech zpevněna bude hora domu Hospodinova; bude nejvyšším vrcholem horstev, vyvýšená nad pahorky. Proudit bude k ní každý národ, hrnout se mnoho kmenů a řeknou: „Pojdte a vystupte na horu Páně, do domu boha Jakobova! Ať nás naučí svým cestám, a chodit budeme po jeho stezkách!“ Vyjdeť ze Siona nauka, a slovo Páně z Jesusalema. Porovnávat bude národy, rozsuzovat četné kmeny, že zkují v radlice své meče, a svá kopí v srpy ženců. Nezdvihne meče kmen proti kmeni, aniž cvičit se budou k boji. Nuže, dome Jakubův, pojďte, a choďme ve světle Hospodinově.
+$Deo Gratias
+
+[GradualeL1]
+!Ž 23,7; 23,3; 23,4
+v. Zvyšte, knížata, brány svoje. Zvedněte se věkovité brány, aby mohl vejíti král vítězoslavný.
+V.  Kdo smí vstoupiti na horu Páně a kdo postaviti se na místě jemu svatém? Ten, jehož ruce jsou nevinné a jehož srdce jest čisté.
+
+[OratioL1]
+Pospěš, prosíme, Pane, neotálej, a uděl nám pomoc nebeské síly, aby pookřáli útěchou tvého příchodu, kteří doufají v dobrotivost tvoji.
+$Qui vivis
+
+[Lectio]
+@Tempora/C10a:Lectio
+
+[Graduale]
+!Ž 144,18; 144,21
+Blízko, jest Pán všem, kteří jej vzývají, všem, kteří jej vzývají v pravdě.
+V. Chválu Páně nechť mluví ústa má; a každá bytost ať chvalořečí jméno svaté jeho.
+
+[Evangelium]
+@Tempora/C10a:Evangelium
+
+[Offertorium]
+!Iz 35,4
+Buďte silní a už se nebojte, nebot, hle, Bůh náš nás pomstí. On sám přijde a vysvobodí nás.
+
+[Secreta]
+Prosíme, Pane, nechť ti jsou naše prosby příjemny, jež svou nápravnou silou ať nás tvé milosti učiní hodnými a dovedou k příslibům věčným.
+$Per Dominum
+
+[Communio]
+!Iz 7,14
+Hle, Panna počne a porodí syna a jméno jeho bude slouti Emanuel.
+
+[Postcommunio]
+Nasycení jsouce, Pane, tvým spasným darem, prosíme snažně, abychom, radujíce se jeho chutnáním, jeho účinkem obnovení byli.
+$Per Dominum

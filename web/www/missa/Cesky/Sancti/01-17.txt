@@ -1,0 +1,39 @@
+[Rank]
+S. S. Antonii Abbatis;;Duplex;;3;;vide C4c
+
+[Rule]
+vide C4c;
+9 lectiones
+
+[Comment]
+# Sv. Antonína, Opata
+! 3 třída
+! Barva bílá
+✝ 356 v Horním Egyptě
+
+[Introitus]
+@Commune/C5:Introitus
+
+[Oratio]
+@Commune/C4c:Oratio:s/N\./Antonína/
+
+[Lectio]
+@Commune/C4c:Lectio
+
+[Graduale]
+@Commune/C4c:Graduale
+
+[Evangelium]
+@Commune/C5:Evangelium
+
+[Offertorium]
+@Commune/C4c:Offertorium
+
+[Secreta]
+@Commune/C4c:Secreta:s/N\./Antonín/
+
+[Communio]
+@Commune/C4c:Communio
+
+[Postcommunio]
+@Commune/C4c:Postcommunio:s/N\./Antonín/

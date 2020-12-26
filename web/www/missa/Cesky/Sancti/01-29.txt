@@ -1,0 +1,46 @@
+[Rank]
+S. Francisci Salesii Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[Name]
+Francisce
+
+[Rule]
+vide C4a;
+Gloria
+CredoDA
+
+[Comment]
+# Sv. Františka Saleského, biskupa a vyznavače, Učitele Církve, patrona katol. spisovatelů
+! Barva bílá
+✝ 1622 v Lyonu
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Bože, jenž jsi pro spásu duší chtěl, aby svatý František, vyznavač tvůj a biskup, stal se všem vším, uděl milostivě, abychom, proniknuti jsouce sladkostí tvé lásky, jeho vedoucím napomínáním a přímluvnými zásluhami dosáhli radostí věčných.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Tractus]
+@Commune/C4a:Tractus
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+@Commune/C4a:Secreta:s/N\./Františka/
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+@Commune/C4a:Postcommunio:s/N\./František/
