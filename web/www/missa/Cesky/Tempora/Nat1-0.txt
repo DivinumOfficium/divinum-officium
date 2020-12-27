@@ -1,0 +1,74 @@
+[Rank]
+Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
+
+[Rank1960]
+Dominica Infra Octavam Nativitatis;;Semiduplex;;5.5;;ex Sancti/12-25
+
+[Rule]
+Gloria
+Credo
+Prefatio=Nat
+
+[Comment]
+# Neděle mezi oktávem vánočním
+! 2 třída
+! Barva bílá
+
+[Introitus]
+!Mdr 18,14-15
+v. Zatím, co všechno v hlubokém mlčení trvalo a noc ve svém běhu k polovici cesty dospěla, všemohoucí Slovo tvé, Pane, s nebe přišlo od královských sídel.
+!Ž 92,1
+Pán kraluje, krásou jest oděn; oděn jest Pán silou a opásán.
+&Gloria
+v. Zatím, co všechno v hlubokém mlčení trvalo a noc ve svém běhu k polovici cesty dospěla, všemohoucí Slovo tvé, Pane, s nebe přišlo od královských sídel.
+
+[Oratio]
+Všemohoucí, věčný Bože, řiď činy naše podle zalíbení svého, abychom si zasloužili ve jménu milovaného Syna tvého dobrými oplývati skutky.
+$Qui tecum
+
+[Commemoratio Oratio]
+!Připomínka Narození Páně
+@Sancti/12-25m3:Oratio
+
+[Lectio]
+Čtení z listu sv. Pavla Apoštola ke Galaťanům
+!Ga 4,1-7
+!Starý zákon byl dědicem zaslíbení, ale až do příchodu Kristova byl jako nedospělý a podrobený; teprve v Kristu jsme se stali svobodnými dítkami Božími.
+Bratři! Pokud dědic jest nedospělý, nic se neliší od služebníka, ač jest pánem všeho, nýbrž jest pod poručníky a správci až do času ustanoveného napřed od otce. Tak i my, když jsme byli nedospěli, byli jsme podrobeni pod živly světa. Když však přišla plnost času, ge vyslal Bůh Syna svého, učiněného z ženy, podřízeného zákonu, aby vykoupil ty, kteří byli pod zákonem, abychom obdrželi přijetí za syny. A poněvadž jste syny, Bůh poslal Ducha Syna svého v srdce vaše, který volá: Abba, Otče! Proto není již služebník, nýbrž syn, tedy i dědic skrze Boha.
+
+[Graduale]
+!Ž 44,3; 44,2
+Krásnější jsi podobou nad syny lidské; rozlita jest milost na tvých rtech.
+V. Srdce moje kypí slovem blahým, věnuji své dílo králi; jazyk můj jako pero písaře rychle píšícího. Aleluja, aleluja.
+!Ž 92,1
+Pán kraluje, krásou jest oděn; oděn jest Pán silou a opásán. Aleluja.
+
+[Evangelium]
+Pokračování ++ sv. Evangelia podle Lukáše
+!Lk 2,33-40
+!Božské děťátko, po kterém proroci tolik toužili, stane se pyšným lidem kamenem úrazu a pokorným zárukou zmrtvýchvstání. Ono jest znamením, kterému se budou hříšníci protiviti, avšak ke své vlastní záhubě.
+Za onoho času Josef a Maria, Matka Ježíšova, divili se těm věcem, které byli praveny o něm. A Simeon je blahoslavil a řekl k Marii, Matce jeho: gege Aj, tento jest ku pádu a ku povstání mnohých v Israeli a na znamení, jemuž budou odpírati; a tvou vlastní duši pronikne meč, aby se zjevila smýšlení mnohých srdcí. A byla prorokyně Anna, dcera Fanuelova z pokolení Aserova; ta byla již pokročila ve vysokém věku, byvši živa s mužem svým sedm roků od svého panenství. A tato byla vdovou až do let osmdesáti čtyř, nevycházejíc z chrámu, oddávajíc se postům a modlitbám dnem i nocí. A ta přišedši v touž hodinu, velebila Pána a mluvila o něm všechněm, kteří očekávali vykoupení Israelovo. A když byli vykonali všecko podle zákona Páně, navrátili se do Galileje do svého města Nazareta. Dítko pak rosto a sílilo, jsouc plno moudrosti; a milost Boží byla v něm.
+
+[Offertorium]
+!Ž 92,1-2
+Bůh upevnil okrsek zemský, jenž sebou nepohne. Připraven jest trůn tvůj Bože, odedávna, od věčnosti ty jsi.
+
+[Secreta]
+Popřej, prosíme, všemohoucí Bože, aby dar před očima velebnosti tvé obětovaný nám jak milost vroucí zbožnosti zjednal, tak i uskutečnění blažené věčnosti získal.
+$Per Dominum
+
+[Commemoratio Secreta]
+!Připomínka Narození Páně
+@Sancti/12-25m3:Secreta
+
+[Communio]
+!Mt 2,20
+Vezmi dítě i matku jeho a jdi do země israelské; neboť zemřeli, kdož hledali bezživotí dítěte.
+
+[Postcommunio]
+Pane, nechť se působením tohoto tajemství hříchy naše shladí a oprávněné tužby splní.
+$Per Dominum
+
+[Commemoratio Postcommunio]
+!Připomínka Narození Páně
+@Sancti/12-25m3:Postcommunio

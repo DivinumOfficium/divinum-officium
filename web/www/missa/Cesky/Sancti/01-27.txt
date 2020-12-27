@@ -1,0 +1,48 @@
+[Rank]
+S. Joannis Chrysostomi Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
+
+[Name]
+Joannes Chrisostome
+
+[Rule]
+vide C4a
+Gloria
+CredoDA
+
+[Comment]
+Sv. Jana Zlatoústého, biskupa, vyznavače a Učitele Církve
+! Barva bílá
+✝ 407 v Komaně v Pontu
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Milost nebeská, prosíme, Pane, nechť obšťastňuje Církev tvou, kterou jsi chtěl osvítiti slavnými zásluhami a naukami svatého Jana Zlatoústého, vyznavače tvého a biskupa.
+$Per Dominum.
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+!Sir 44,16
+Hle, kněz veliký, jenž ve dnech svých Bohu se líbil.
+!Sir 44,20
+Nikdo nebyl nalezen, jenž by podobně jako on zachovával zákona Nejvyššího. Aleluja, aleluja.
+!Jak 1,12
+Blahoslavený člověk, jenž snáší pokušení, neboť když bude zkušen, obdrží korunu života. Aleluja.
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Secreta]
+@Commune/C4a:Secreta:s/N\./Jana Zlatoústého/
+
+[Communio]
+@Commune/C4a:Communio
+
+[Postcommunio]
+@Commune/C4a:Postcommunio:s/N\./Jan Zlatoústý/

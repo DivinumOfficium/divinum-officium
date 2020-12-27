@@ -1,0 +1,41 @@
+[Rank]
+S. Marcelli Papae et Martyris;;Semiduplex;;2;;vide C2
+
+[Rule]
+vide C2;
+Gloria
+Prefatio=Apostolis
+
+[Comment]
+# Sv. Marcela, papeže a mučedníka
+! 3 třída
+! Barva červená
+✝ 309 v Římě
+
+[Introitus]
+@Commune/C4b:Introitus
+
+[Oratio]
+Modlitby lidu svého, prosíme, Pane, milostivě vyslyš, aby nám pro zásluhy sv. Marcela, mučedníka tvého a biskupa, z jehož mučednické smrti se radujeme, pomoženo bylo.
+$Per Dominum
+
+[Lectio]
+@Commune/C4b:Lectio
+
+[Graduale]
+@Commune/C4b:Graduale
+
+[Evangelium]
+@Commune/C4b:Evangelium
+
+[Offertorium]
+@Commune/C4b:Offertorium
+
+[Secreta]
+@Commune/C4b:Secreta
+
+[Communio]
+@Commune/C4b:Communio
+
+[Postcommunio]
+@Commune/C4b:Postcommunio

@@ -1,0 +1,32 @@
+[Rank]
+De III die Infra Octavam Immaculatae Concept. Beatae Mariae Virgini;;Semiduplex;;2.5;;vide Sancti/12-08
+
+[Rule]
+vide Sancti/12-08;
+9 lectiones;
+CPapaM=Melchíadem;
+Doxology=Nat
+
+[Comment]
+# Sv. Melchiada, papeže a mučedníka
+! Připomínka
+! Barva červená
+✝ 314 v Římě
+
+[Commemoratio Oratio]
+! Připomínka sv. Melchiada
+@Commune/C2c:Oratio:s/N\./Melchiad/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
+
+[Commemoratio Secreta]
+! Připomínka sv. Melchiada
+@Commune/C2c:Secreta:s/N\./Melchiad/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
+
+[Commemoratio Postcommunio]
+! Připomínka sv. Melchiada
+@Commune/C2c:Postcommunio:s/N\./Melchiada/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem

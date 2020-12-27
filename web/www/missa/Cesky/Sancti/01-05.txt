@@ -1,0 +1,68 @@
+[Rank]
+In Vigilia Epiphaniae;;Semiduplex;;5;;ex Sancti/01-01
+
+[Rank1570]
+In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
+
+[Rank1960]
+Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
+
+[Rule]
+CPapaM=Telésphorum;
+ex Sancti/101-01;
+Gloria
+CredoDA
+Prefatio=Nat
+Suffragium=Maria2;;
+
+[Comment]
+# Svatvečer Zjevení Páně
+Jinak bývá svatvečer velkých svátků obestřen smutkem pokání, dnešní den však nese na sobě radostný odlesk blízkých Vánoc. Také liturgická barva je bílá a ne fialová jako o jiných svatvečerech.
+
+[Introitus]
+@Tempora/Nat1-0:Introitus
+
+[Oratio]
+@Tempora/Nat1-0:Oratio
+
+[Commemoratio Oratio]
+!Připomínka sv. Telesfora, Papeže a mučedníka
+@Commune/C2b:Oratio:s/N\./Telesfora/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Oratio:s/N\./Telesfora/ Gregem
+
+[Lectio]
+@Tempora/Nat1-0:Lectio
+
+[Graduale]
+@Tempora/Nat1-0:Graduale
+
+[Evangelium]
+Slova ++ svatého Evangelia podle Matouše
+!Mt 2,19-23
+!Dnešní Evangelium ukazuje na tajemství zítřejšího svátku, ovšem v jiném pořadí, než se historické události staly. Dnes rozjímáme o tom, jak po smrti Herodesově je cesta úplně volná pro jediného Krále-Krista.
+Za onoho času, když umřel Herodes, aj, anděl Páně ukázal se ve snách Josefovi v Egyptě, řka: „Vstaň a vezmi dítě i matku jeho a jdi do země israelské; neboť zemřeli ti, kteří hledali bezživotí dítěte.“ I vstal, vzal dítko i matku jeho a vešel do země israelské. Uslyšev však, že Archelaus kraluje v Judsku misto otce svého Heroda, obával se tam jíti, a byv napomenut ve snách, obrátil se do krajin galilejských. A přišed tam bydlel v městě, které slove Nazaret, aby se naplnilo, co bylo předpověděno skrze proroky, že Nazaretským slouti bude.
+
+[Offertorium]
+@Tempora/Nat1-0:Offertorium
+
+[Secreta]
+@Tempora/Nat1-0:Secreta
+
+[Commemoratio Secreta]
+!Připomínka sv. Telesfora, Papeže a mučedníka
+@Commune/C2b:Secreta
+(sed communi Summorum Pontificum)
+@Commune/C4b:Secreta Gregem
+
+[Communio]
+@Tempora/Nat1-0:Communio
+
+[Postcommunio]
+@Tempora/Nat1-0:Postcommunio
+
+[Commemoratio Postcommunio]
+!Připomínka sv. Telesfora, Papeže a mučedníka
+@Commune/C2c:Postcommunio
+(sed communi Summorum Pontificum)
+@Commune/C4b:Postcommunio Gregem
