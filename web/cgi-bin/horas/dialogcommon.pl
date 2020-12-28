@@ -526,7 +526,7 @@ sub do_inclusion_substitutions(\$$) {
   while (($substitutions =~ m{(?:s/([^/]*)/([^/]*)/([gism]*))|(?:(\d+)(-\d+)?)}g)) {
     if ($4) {
       my ($s) = $4 - 1;
-      my ($l) = $5 ? -$5 - $s + 1 : 1;
+      my ($l) = $5 ? -$5 - $s : 1;
       my (@t) = split(/\n/, $$text);
       $$text = join("\n", splice(@t, $s, $l)) . "\n";
     } else {
