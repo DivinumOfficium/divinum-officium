@@ -2062,7 +2062,7 @@ sub doxology {
 # versions 1956 and 1960 exclude from Ordinarium
 sub checksuffragium {
   if ($rule =~ /no suffragium/i) { return 0; }
-  if (!$dayname[0] || $dayname[0] =~ /Adv|Quad5|Quad6/i) { return 0; }    #christmas, adv, passiontime omit
+  if (!$dayname[0] || $dayname[0] =~ /Adv|Nat|Quad5|Quad6/i) { return 0; }    #christmas, adv, passiontime omit
   if ($dayname[0] =~ /Pasc[07]/i) { return 0; }
   if ($winner =~ /sancti/i && $rank >= 3 && $seasonalflag) { return 0; }
   if ($commemoratio =~ /sancti/i && $commemoratio{Rank} =~ /;duplex/i && $seasonalflag) { return 0; }
