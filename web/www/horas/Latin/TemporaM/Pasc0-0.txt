@@ -7,18 +7,18 @@ Doxology=PascM
 Antiphonas horas
 
 [Capitulum Laudes]
-!1 Cor 5:7
-v. Fratres: Expurgáte vetus ferméntum, ut sitis nova conspérsio, sicut estis ázymi. Etenim Pascha nostrum immolátus est Christus.
-$Deo gratias
+@:Capitulum Tertia
 _
-@Psalterium/Major Special:PaschM Laudes:5-9
+@Psalterium/Major Special:PaschM Laudes:3-8
 
 [Versum 2]
 V. Hæc dies, quam fécit Dominus. 
 R. Exsultémus et lætémur in ea.
 
 [Capitulum Tertia]
-@:Capitulum Laudes:1-2
+!1 Cor 5:7
+v. Fratres: Expurgáte vetus ferméntum, ut sitis nova conspérsio, sicut estis ázymi. Etenim Pascha nostrum immolátus est Christus.
+$Deo gratias
 
 [Responsory Tertia]
 V. Hæc dies quam fecit Dóminus. 
@@ -41,9 +41,9 @@ $Deo gratias
 @:Responsory Tertia
 
 [Capitulum Vespera]
-@:Capitulum Laudes:1-2
+@:Capitulum Tertia
 _
-@Psalterium/Major Special:PaschM Vespera:5-9
+@Psalterium/Major Special:PaschM Laudes:3-8
 
 [Versum 3]
 @:Versum 2
