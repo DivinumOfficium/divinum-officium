@@ -3,6 +3,15 @@
 [Rule]
 12 lectiones
 
+[Ant Matutinum]
+@CommuneM/C3:Ant Matutinum:1-9
+Isti * sunt, qui venérunt ex magna tribulatióne, † et lavérunt stolas suas in sánguine Agni.;;33
+@CommuneM/C3:Ant Matutinum:11
+Si coram * homínibus torménta passi sunt, † spes electórum est immortális in ætérnum.;;60
+@CommuneM/C3:Ant Matutinum:13-16
+Innocéntium * pássio, Christi exsultátio: † Heródes confúsus est qui eos persecútus est.;;259;254;255
+@CommuneM/C3:Ant Matutinum:18-19
+
 [Lectio1]
 @Sancti/12-28:Lectio1
 
@@ -50,9 +59,6 @@ R. Ambulábunt  mecum in albis, quia digni sunt
 V. Hi sunt, qui cum muliéribus non sunt coinquináti: † vírgines enim sunt.
 R. Et non delébo nómina eórum de libro vitae.
 
-[Ant Matutinum 3N]
-Innocéntium * pássio, Christi exsultátio: † Heródes confúsus est qui eos persecútus est.
-
 [Lectio9]
 @Sancti/12-28:Lectio7
 
@@ -86,12 +92,15 @@ R. Deus noster.
 [Capitulum Laudes]
 @Sancti/12-28
 _
-@Commune/C3:Responsory Tertia:1-6
+@Commune/C3:Responsory Tertia:s/_.*//s
 
 [Capitulum Vespera]
 @Sancti/12-28:Capitulum Laudes
 _
-@Commune/C3:Responsory Sexta:1-6
+@Commune/C3:Responsory Sexta:s/_.*//s
+
+[Ant Vespera 3]
+@Sancti/12-25::s/129/131/
 
 [LectioE]
 Sequéntia ++ sancti Evangélii secundum Matthǽum
