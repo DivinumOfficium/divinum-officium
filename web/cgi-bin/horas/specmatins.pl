@@ -672,6 +672,12 @@ sub lectio : ScriptFunc {
     $w{"Responsory$num"} = $c->{"Responsory$num"};
   }
 
+  if ((($winner eq 'TemporaM/Nat2-0.txt') || ($winner eq 'SanctiM/01-13.txt')) && $num <= 4) {
+    $c = officestring($datafolder, $lang, 
+      $winner =~ /Tempora/ ? sprintf("SanctiM/01-%02d.txt",$day) : "TemporaM/Epi1-$dayofweek.txt");
+    $w{"Lectio$num"} = $c->{"LectioM$num"} || $c->{"Lectio$num"};
+  }
+
   #Lectio1 tempora
   if ($num <= 3 && $rule =~ /Lectio1 tempora/i && exists($scriptura{"Lectio$num"})) {
     my %c = (columnsel($lang)) ? %scriptura : %scriptura2;
@@ -948,6 +954,13 @@ sub lectio : ScriptFunc {
         $s = (columnsel($lang)) ? $scriptura{"Responsory$na 1960"} : $scriptura2{"Responsory$na 1960"};
       }
     } else {
+      if ($version eq "Monastic" && $dayofweek != 0 && $month == 1 && $day > 6 && $day < 13) {
+        $na += 4 if ($dayofweek == 2 || $dayofweek == 5) ;
+        if ($dayofweek == 3) { # Saturday dont work due C10 || $dayofweek == 6 ) {
+          $na += 1 if ($na > 1);
+          $na += 8;
+        }
+      }
       if (exists($w{"Responsory$na"})) {
         $s = $w{"Responsory$na"};
       } elsif ($version =~ /1960/ && exists($commune{"Responsory$na"})) {
