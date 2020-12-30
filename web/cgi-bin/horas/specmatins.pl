@@ -672,6 +672,12 @@ sub lectio : ScriptFunc {
     $w{"Responsory$num"} = $c->{"Responsory$num"};
   }
 
+  if ((($winner eq 'TemporaM/Nat2-0.txt') || ($winner eq 'SanctiM/01-13.txt')) && $num <= 4) {
+    $c = officestring($datafolder, $lang, 
+      $winner =~ /Tempora/ ? sprintf("SanctiM/01-%02d.txt",$day) : "TemporaM/Epi1-$dayofweek.txt");
+    $w{"Lectio$num"} = $c->{"LectioM$num"} || $c->{"Lectio$num"};
+  }
+
   #Lectio1 tempora
   if ($num <= 3 && $rule =~ /Lectio1 tempora/i && exists($scriptura{"Lectio$num"})) {
     my %c = (columnsel($lang)) ? %scriptura : %scriptura2;
