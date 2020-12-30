@@ -954,6 +954,13 @@ sub lectio : ScriptFunc {
         $s = (columnsel($lang)) ? $scriptura{"Responsory$na 1960"} : $scriptura2{"Responsory$na 1960"};
       }
     } else {
+      if ($version eq "Monastic" && $dayofweek != 0 && $month == 1 && $day > 6 && $day < 13) {
+        $na += 4 if ($dayofweek == 2 || $dayofweek == 5) ;
+        if ($dayofweek == 3) { # Saturday dont work due C10 || $dayofweek == 6 ) {
+          $na += 1 if ($na > 1);
+          $na += 8;
+        }
+      }
       if (exists($w{"Responsory$na"})) {
         $s = $w{"Responsory$na"};
       } elsif ($version =~ /1960/ && exists($commune{"Responsory$na"})) {
