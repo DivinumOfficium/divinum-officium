@@ -9,7 +9,7 @@ CPapaC=Silvéstrum;
 @Commune/C4:Oratio Gregem
 
 [Lectio1]
-@Sancti/12-30:Lectio7:s/._.*//s
+@Sancti/12-30:Lectio7:s/_.*/_\n/s
 @Sancti/12-30:Lectio4
 
 [Responsory1]
