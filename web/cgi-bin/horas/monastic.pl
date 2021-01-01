@@ -48,9 +48,10 @@ sub psalmi_matutinum_monastic {
 
   #** special antiphons for not Quad weekdays
   if ($dayofweek > 0 && $dayname[0] !~ /Quad/i) {
-    my $start = ($dayname[0] =~ /Pasc|Nat/i) ? 0 : 8;
-    my @p = split("\n", $psalmi{'Daym Pasc'});
-    if (($dayname[0] =~ /Nat/)) {
+    my $start = ($dayname[0] =~ /Pasc|Nat[23]\d/i) ? 0 : 8;
+    my @p;
+    if ($dayname[0] =~ /Pasc/) { @p = split("\n", $psalmi{'Daym Pasc'}); }
+    elsif ($dayname[0] =~ /Nat[23]\d/) {
       @p = split("\n", $psalmi{'Daym Nat'});
     }
     my $i;
@@ -59,7 +60,7 @@ sub psalmi_matutinum_monastic {
       my $p = $p[$i];
       if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
       if ($i == 0 || $i == 8) {
-        if ($dayname[0] !~ /Nat/) {
+        if ($dayname[0] !~ /Nat[23]\d/) {
           my $ant = $prayers{$lang}{"Alleluia Duplex"};
           $ant =~ s/ / * /;
           $ant =~ s/\./$prayers{$lang}{"Alleluia Simplex"}/;

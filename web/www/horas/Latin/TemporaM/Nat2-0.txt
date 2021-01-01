@@ -1,5 +1,5 @@
 [Rank]
-Dominica Secunda Nativitatis;;Semiduplex;;5;;ex TemporaM/Nat1-0
+Dominica Secunda Nativitatis;;Semiduplex;;5;;vide TemporaM/Nat1-0
 
 [Rule]
 12 lectiones
@@ -16,26 +16,14 @@ Dominica Secunda Nativitatis;;Semiduplex;;5;;ex TemporaM/Nat1-0
 [Hymnus Matutinum]
 @Sancti/12-25:HymnusM Matutinum
 
-[Lectio1]
-@Sancti/01-05
-
 [Responsory1]
 @Sancti/01-01
-
-[Lectio2]
-@Sancti/01-05
 
 [Responsory2]
 @Sancti/01-01
 
-[Lectio3]
-@Sancti/01-05::s/-11/-10/ s/11.*//
-
 [Responsory3]
 @Sancti/01-01
-
-[Lectio4]
-@Sancti/01-05:Lectio3:s/9-// s/9 .*11/11/s
 
 [Responsory4]
 @SanctiM/01-01

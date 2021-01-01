@@ -1573,7 +1573,7 @@ sub getcommemoratio {
   my %w = %{officestring($datafolder, $lang, $wday, ($ind == 1) ? 1 : 0)};
   my %c = undef;
 
-  if ($winner =~ /Nat1/ && $version !~ /1960/ && $wday =~ /12-30/) { return ''; }
+  if ($version =~ /Trident|Divino/i && $wday =~ /12-30/) { return ''; }
 
   if ($hora =~ /Vespera/i && $rank >= 5 && $w{Rank} =~ /;;1/ && $winner !~ /Tempora/i) {
     return '';
@@ -2062,7 +2062,7 @@ sub doxology {
 # versions 1956 and 1960 exclude from Ordinarium
 sub checksuffragium {
   if ($rule =~ /no suffragium/i) { return 0; }
-  if (!$dayname[0] || $dayname[0] =~ /Adv|Quad5|Quad6/i) { return 0; }    #christmas, adv, passiontime omit
+  if (!$dayname[0] || $dayname[0] =~ /Adv|Nat|Quad5|Quad6/i) { return 0; }    #christmas, adv, passiontime omit
   if ($dayname[0] =~ /Pasc[07]/i) { return 0; }
   if ($winner =~ /sancti/i && $rank >= 3 && $seasonalflag) { return 0; }
   if ($commemoratio =~ /sancti/i && $commemoratio{Rank} =~ /;duplex/i && $seasonalflag) { return 0; }
