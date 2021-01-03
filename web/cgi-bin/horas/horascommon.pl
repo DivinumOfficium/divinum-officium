@@ -1112,6 +1112,10 @@ sub precedence {
   if ($version !~ /1960/ && $hora =~ /Vespera/ && $month == 1 && $day == 3 && $dayofweek == 6) {
     $commemoratio1 = 'Sancti/01-04.txt';
   }
+  
+  if ($version !~ /1960/ && $hora =~ /Vespera/ && $month == 3 && $day == 19 && $dayofweek == 0) {
+    $commemoratio1 = 'Sancti/03-19.txt';
+  }
 
   if ($version =~ /1960|Newcal/ && $winner{Rule} =~ /No Sunday commemoratio/i && $dayofweek == 0) {
     $commemoratio = $commemoratio1 = $dayname[2] = '';
