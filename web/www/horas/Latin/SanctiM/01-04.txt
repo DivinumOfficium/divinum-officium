@@ -12,3 +12,9 @@ Die Quarta Januarii;;Feria;;1.2;;vide Sancti/01-01
 $Oremus
 v. Deus, qui beátum Titum Confessórem tuum atque Pontíficem apostólicis virtútibus decorásti: ejus méritis et intercessióne concéde; ut juste et pie vivéntes in hoc sǽculo, ad cæléstem pátriam perveníre mereámur.
 $Per Dominum
+
+[LectioM3]
+@Sancti/01-04:Lectio3:s/-9// s/8.*//s
+
+[LectioM4]
+@Sancti/01-04:Lectio3:s/7/8/ s/7 .*8/8/s
