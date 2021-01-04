@@ -1113,10 +1113,6 @@ sub precedence {
     $commemoratio1 = 'Sancti/01-04.txt';
   }
   
-  if ($version !~ /1960/ && $hora =~ /Vespera/ && $month == 3 && $day == 19 && $dayofweek == 0) {
-    $commemoratio1 = 'Sancti/03-19.txt';
-  }
-
   if ($version =~ /1960|Newcal/ && $winner{Rule} =~ /No Sunday commemoratio/i && $dayofweek == 0) {
     $commemoratio = $commemoratio1 = $dayname[2] = '';
   }
@@ -1554,7 +1550,9 @@ sub setheadline {
     $name = $rank[0];
     $rank = $rank[2];
   }
-
+if ($version =~ /1960|Newcal|Monastic/i && $month == 10 && $day >= 25 && $day <= 31 && $dayofweek == 0) {
+      $winner = '10DUr.txt';
+    }
   if ($name && $rank) {
     my $rankname = '';
 
