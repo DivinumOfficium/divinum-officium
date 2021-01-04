@@ -1550,9 +1550,6 @@ sub setheadline {
     $name = $rank[0];
     $rank = $rank[2];
   }
-if ($version =~ /1960|Newcal|Monastic/i && $month == 10 && $day >= 25 && $day <= 31 && $dayofweek == 0) {
-      $winner = '10DUr.txt';
-    }
   if ($name && $rank) {
     my $rankname = '';
 
