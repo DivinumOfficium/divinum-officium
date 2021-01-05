@@ -1112,7 +1112,7 @@ sub precedence {
   if ($version !~ /1960/ && $hora =~ /Vespera/ && $month == 1 && $day == 3 && $dayofweek == 6) {
     $commemoratio1 = 'Sancti/01-04.txt';
   }
-
+  
   if ($version =~ /1960|Newcal/ && $winner{Rule} =~ /No Sunday commemoratio/i && $dayofweek == 0) {
     $commemoratio = $commemoratio1 = $dayname[2] = '';
   }
@@ -1550,7 +1550,6 @@ sub setheadline {
     $name = $rank[0];
     $rank = $rank[2];
   }
-
   if ($name && $rank) {
     my $rankname = '';
 

@@ -5,7 +5,7 @@ In Octava S. Joannis;;Simplex;;1.1;;vide Sancti/12-27
 Die Tertia Januarii;;Feria;;1.2;;vide Sancti/12-25
 
 [RankTrident]
-In Octava S. Joannis;;Duplex;;3;;ex Sancti/12-27
+In Octava S. Joannis;;Duplex;;3.01;;ex Sancti/12-27
 
 [Rule]
 vide Sancti/12-27;
@@ -15,7 +15,7 @@ Antiphonas Horas
 Feria Te Deum
 
 [Lectio1]
-Lesson from the book of Revelations
+Lesson from the book of Revelation
 !Rev 4:1-4
 1 After these things I looked, and behold a door was opened in heaven, and the~
 first voice which I heard, as it were, of a trumpet speaking with me, said: Come~
@@ -55,3 +55,6 @@ throne, saying:
 11 Thou art worthy, O Lord our God, to receive glory, and honour, and power:~
 because thou hast created all things; and for thy will they were, and have been~
 created.
+
+[Ant Vespera]
+@Sancti/12-27:Ant Laudes:s/$/;;138/
