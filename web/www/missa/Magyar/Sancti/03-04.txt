@@ -12,24 +12,3 @@ CPapaM=Lucius;
 vide C5;
 Gloria
 
-[Oratio]
-O God, Who strengthened St. Casimir with the virtue of steadfastness amid the luxuries of a royal court and the allurements of the world, we beseech You, that through his intercession Your faithful may treat earthly things as naught and ever aspire to those of heaven.
-$Per Dominum
-
-[Commemoratio Oratio]
-!For ST. LUCIUS
-@Commune/C2b:Oratio:s/N\./Lucius/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio Gregem
-
-[Commemoratio Secreta]
-!For ST. LUCIUS
-@Commune/C2b:Secreta:s/N\./Lucius/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
-
-[Commemoratio Postcommunio]
-!For ST. LUCIUS
-@Commune/C2b:Postcommunio:s/N\./Lucius/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio Gregem
