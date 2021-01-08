@@ -1,0 +1,16 @@
+
+[Lectio10]
+@Sancti/01-13:Lectio8:s/Gdyby .*//s
+
+[Lectio11]
+@Sancti/01-13:Lectio8:s/.*Gdyby /Gdyby /s s/$/~/
+@Sancti/01-13:Lectio9:s/Jedni .*//s
+
+[Lectio12]
+@Sancti/01-13:Lectio9:s/.*Jedni /Jedni /s
+
+[LectioE]
+Ciąg dalszy ++ Ewangelii świętej według Jana.
+!J 1:29-34
+Onego czasu ujrzał Jan nadchodzącego Jezusa i rzekł: «Oto Baranek Boży, oto, który gładzi grzech świata. To Ten, o którym mówiłem: po mnie przyjdzie mąż, który stał się przede mną, bo pierwej był, niźli ja. Jam Go wprawdzie nie znał, alem dlatego przyszedł chrzcząc wodą, aby mógł się okazać Izraelowi». I dał Jan świadectwo mówiąc: «Widziałem Ducha zstępującego z nieba jak gołębicę i spoczął na Nim. A jam Go nie znał, ale Ten, który mię posłał chrzcić wodą, powiedział mi: Na kogo ujrzysz, iż zstępuje Duch i zostaje na nim, ten jest, który chrzci Duchem Świętym. I sam to widziałem, i dałem świadectwo, że On jest Synem Bożym».
+
