@@ -9,6 +9,7 @@
 
 [Lectio11]
 @Sancti/01-13:Lectio8:s/.*For /For /s
+@Sancti/01-13:Lectio9:s/Some .*//s
 
 [Lectio12]
 @Sancti/01-13:Lectio9:s/.*Some /Some /s
