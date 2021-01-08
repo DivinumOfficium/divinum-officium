@@ -35,7 +35,8 @@ Doxology=Epi
 @Sancti/01-13:Lectio8:s/Nam .*//s
 
 [Lectio11]
-@Sancti/01-13:Lectio8:s/.*Nam /Nam /s
+@Sancti/01-13:Lectio8:s/.*Nam /Nam /s s/$/~/
+@Sancti/01-13:Lectio9:s/Sunt .*//s
 
 [Lectio12]
 @Sancti/01-13:Lectio9:s/.*Sunt /Sunt /s
