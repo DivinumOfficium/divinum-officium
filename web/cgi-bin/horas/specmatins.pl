@@ -645,7 +645,7 @@ sub lectio : ScriptFunc {
       && $rank < 2
       && $winner{Rank} !~ /vigil/i
       && ( $version !~ /monastic/i
-        || $dayname[0] !~ /Nat/i)
+        || $dayname[0] !~ /Nat|Epi1/i)
     )
     )
   {
