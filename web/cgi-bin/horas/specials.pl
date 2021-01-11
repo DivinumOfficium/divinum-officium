@@ -1174,7 +1174,7 @@ sub oratio {
     || ($winner{Rank} =~ /Quattuor/i && $version !~ /1960|Monastic/i && $hora =~ /Vespera/i))
   {
     my $name = "$dayname[0]-0";
-    if ($name =~ /(Epi1|Nat)/i) { $name = 'Epi1-0a'; }
+    if ($name =~ /(Epi1|Nat)/i && $version ne 'Monastic') { $name = 'Epi1-0a'; }
     %w = %{setupstring($datafolder, $lang, "$temporaname/$name.txt")};
   }
 
