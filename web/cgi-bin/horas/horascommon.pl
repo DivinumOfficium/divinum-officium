@@ -184,7 +184,7 @@ sub getrank {
   my @trank = ();
   my @srank = ();
   our $transfervigil = '';
-  our %transfer = {};
+  my %transfer;
   our $hymncontract = 0;
   my $kalendarname =
       ($version =~ /Monastic/i) ? 'M'
@@ -236,8 +236,6 @@ sub getrank {
     $tr =~ s/\=/\;\;/g;
     %transfer = split(';;', $tr);
     if (exists($transfer{dirge})) { $dirgeline = $transfer{dirge}; }    #&& !$caller
-  } else {
-    %transfer = {};
   }
   $transfer = $transfer{$sday};
 
