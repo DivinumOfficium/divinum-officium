@@ -4,6 +4,7 @@ S. Marcelli Papæ et Martyris;;Semiduplex;;2;;vide C2
 [Rule]
 vide C2;
 9 lectiones
+Lectio1 tempora(rubrica 1570 aut rubrica 1910)
 
 [Oratio]
 Preces pópuli tui, quǽsumus, Dómine, cleménter exáudi: ut beáti Marcélli~
@@ -29,9 +30,6 @@ Marcéllus Románus, a Constántio et Galério usque ad Maxéntium pontificátum
 [Lectio8]
 @Commune/C4:Lectio81
 
-[Lectio9]
-@Commune/C4:Lectio91
-
 [Responsory8]
 R. Dómine, prævenísti eum in benedictiónibus dulcédinis: 
 * Posuísti in cápite ejus corónam de lápide pretióso.
@@ -39,3 +37,19 @@ V. Vitam pétiit a te, et tribuísti ei longitúdinem diérum in sæculum sæcul
 R. Posuísti in cápite ejus corónam de lápide pretióso.
 &Gloria
 R. Posuísti in cápite ejus corónam de lápide pretióso.
+
+[Lectio9]
+@Commune/C4:Lectio91
+
+[Lectio7](rubrica tridentina)
+@Commune/C2
+
+[Lectio8](rubrica tridentina)
+@Commune/C2
+
+[Responsory8](rubrica tridentina)
+@Commune/C2
+
+[Lectio9](rubrica tridentina)
+@Commune/C2
+
