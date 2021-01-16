@@ -1,16 +1,72 @@
+[Lectio2]
+@Tempora/Quadp2-0:Lectio1:s/5:31; // s/1-4/4-6/ s/31 .*4 /4 /s
+@Tempora/Quadp2-0:Lectio2:s/!.*// s/ And being.*//s
+
+[Lectio3]
+@Tempora/Quadp2-0:Lectio2:s/5-8/6-10/ s/5.*(And being)/6 $1/s
+@Tempora/Quadp2-0:Lectio3:s/!.*// s/11 .*//s
+
+[Responsory4]
+R. In the self-same day entered Noah into the ark, and his sons,
+* And his wife and the wives of his sons.
+V. Every living substance was destroyed from the earth, and Noah only remained alive, and they that were with him in the ark.
+R. And his wife, and the wives of his sons.
+
+[Lectio5]
+@Tempora/Quadp2-0:Lectio4:s/God's .*//s
+
+[Lectio6]
+@Tempora/Quadp2-0:Lectio4:s/.* God's /God's /s
+
+[Responsory8]
+R. The Lord remembered Noah, and made a wind to pass over the earth, and the waters assuaged,
+* And the rain from heaven was restrained.
+V. And the waters returned from off the earth continually, and after the end of the hundred and fifty days the waters were abated.
+R. And the rain from heaven was restrained.
+
+[Ant Matutinum 3N]
+Some seed fell on good ground, and gave fruit one hundred-fold.
+V. Be thou exalted, O Lord, in thy own strength.
+R. We will sing and praise thy power.
+
+[Lectio9]
+@Tempora/Quadp2-0:Lectio7:s/Therefore .*//s
+
+[Lectio10]
+@Tempora/Quadp2-0:Lectio7:s/.* Therefore /Therefore /s s/$/~/
+@Tempora/Quadp2-0:Lectio8:s/If I .*//s
+
+[Lectio11]
+@Tempora/Quadp2-0:Lectio8:s/.* If I /If I /s
+
+[Responsory11]
+R. And the ark rested in the seventh month upon the mountains of Armenia
+* And the waters were going and decreasing until the tenth month.
+V. For in the tenth month, the first day of the month, the tops of the mountains appeared.
+R. And the waters were going and decreasing until the tenth month.
+
 [LectioE]
-v. Continuation of the Holy Gospel according to Luke
+Continuation ++ of the Holy Gospel according to Luke
 !Luke 8:4-15
-8:4 And when a very great multitude was gathered together, and hastened out of the cities unto him, he spoke by a similitude.
-8:5 The sower went out to sow his seed. And as he sowed, some fell by the way side, and it was trodden down, and the fowls of the air devoured it.
-8:6 And other some fell upon a rock: and as soon as it was sprung up, it withered away, because it had no moisture.
-8:7 And other some fell among thorns, and the thorns growing up with it, choked it.
-8:8 And other some fell upon good ground; and being sprung up, yielded fruit a hundredfold. Saying these things, he cried out: He that hath ears to hear, let him hear.
-8:9 And his disciples asked him what this parable might be.
-8:10 To whom he said: To you it is given to know the mystery of the kingdom of God; but to the rest in parables, that seeing they may not see, and hearing may not understand.
-8:11 Now the parable is this: The seed is the word of God.
-8:12 And they by the way side are they that hear; then the devil cometh, and taketh the word out of their heart, lest believing they should be saved.
-8:13 Now they upon the rock, are they who when they hear, receive the word with joy: and these have no roots; for they believe for a while, and in time of temptation, they fall away.
-8:14 And that which fell among thorns, are they who have heard, and going their way, are choked with the cares and riches and pleasures of this life, and yield no fruit.
-8:15 But that on the good ground, are they who in a good and perfect heart, hearing the word, keep it, and bring forth fruit in patience.
-$Te decet
+At that time, when a very great crowd was gathering together and men from every~
+town were resorting to Jesus. He said in a parable: The sower went out to sow~
+his seed. And as he sowed, some seed fell by the wayside and was trodden under~
+foot, and the birds of the air ate it up. And other seed fell upon the rock, and~
+as soon as it had sprung up it withered away, because it had no moisture. And~
+other seed fell among thorns, and the thorns sprang up with it and choked it.~
+And other seed fell upon good ground, and sprang up and yielded fruit a~
+hundredfold. As He said these things He cried out, He who has ears to hear, let~
+him hear! But His disciples then began to ask Him what this parable meant, He~
+said to them, To you it is given to know the mystery of the kingdom of God, but~
+to the rest in parables, that ‘Seeing they may not see, and hearing they may not~
+understand.’ Now the parable is this: the seed is the word of God. And those by~
+the wayside are they who have heard; then the devil comes and takes away the~
+word from their heart, that they may not believe and be saved. Now those upon~
+the rock are they who, when they have heard, receive the word with joy; and~
+these have no root, but believe for a while, and in time of temptation fall~
+away. And that which fell among the thorns, these are they who have heard, and~
+as they go their way are choked by the cares and riches and pleasures of life,~
+and their fruit does not ripen. But that upon good ground, these are they who,~
+with a right and good heart, having heard the word, hold it fast, and bear fruit~
+in patience.
+
