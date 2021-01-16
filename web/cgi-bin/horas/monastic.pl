@@ -110,12 +110,10 @@ sub psalmi_matutinum_monastic {
   my $i = 0;
   my %w = (columnsel($lang)) ? %winner : %winner2;
   antetpsalm_mm('', -1);    #initialization for multiple psalms under one antiphon
-  push(@s, '!Nocturn I.');
-  foreach $i (0, 1, 2, 3, 4, 5) { antetpsalm_mm($psalmi[$i], $i); }
+  push(@s, '!Nocturn I.', '_');
+  for (0..5) { antetpsalm_mm($psalmi[$_], $_); }
   antetpsalm_mm('', -2);    # set antiphon for multiple psalms under one antiphon situation
-  push(@s, $psalmi[6]);
-  push(@s, $psalmi[7]);
-  push(@s, "\n");
+  push(@s, $psalmi[6], $psalmi[7], "\n");
 
   if ($rule =~ /(9|12) lectio/i && $rank > 4.9) {
     lectiones(1, $lang);
@@ -130,69 +128,64 @@ sub psalmi_matutinum_monastic {
   } else {
     lectiones($winner{Rank} !~ /vigil/i, $lang);
   }
-  push(@s, "\n");
-  push(@s, '!Nocturn II.');
-  foreach $i (8, 9, 10, 11, 12, 13) { antetpsalm_mm($psalmi[$i], $i); }
+  push(@s, "\n", '!Nocturn II.', '_');
+  for (8..13) { antetpsalm_mm($psalmi[$_], $_); }
   antetpsalm_mm('', -2);    #draw out antiphon if any
 
   if ($winner{Rule} =~ /(12|9) lectiones/i && $rank > 4.9) {
-    push(@s, $psalmi[14]);
-    push(@s, $psalmi[15]);
-    push(@s, "\n");
+    push(@s, $psalmi[14], $psalmi[15], "\n");
     lectiones(2, $lang);
-    push(@s, "\n");
-    push(@s, '!Nocturn III.');
+    push(@s, "\n", '!Nocturn III.', '_');
 
+    my $ant;
+    my $p;
     if ($psalmi[16] =~ /(.*?);;(.*)/s) {
-      my $ant = $1;
-      my $p = $2;
-      if (exists($winner{"Ant Matutinum 3N"})) {
-        my @t = split("\n",$winner{"Ant Matutinum 3N"});
-        my $p2;
-        ($ant,$p2) = split(/;;/,$t[0]);
-        if ($p2) { $p = $p2; }
-      }
-      $p =~ s/[\(\-]/\,/g;
-      $p =~ s/\)//g;
-      my @c = split(';', $p);
-      push(@s, "Ant. $ant");
-      push(@s, "\&psalm($c[0])\n");
-      push(@s, "\n");
-      push(@s, "\&psalm($c[1])\n");
-      push(@s, "\n");
-      push(@s, "\&psalm($c[2])");
-      push(@s, "Ant. $ant");
-      push(@s, "\n");
-      push(@s, $psalmi[17]);
-      push(@s, $psalmi[18]);
-      push(@s, "\n");
-      lectiones(3, $lang);
-      push(@s, '&teDeum');
-      push(@s, "\n");
-
-      if (exists($winner{LectioE})) {    #** set evangelium
-        my %w = (columnsel($lang)) ? %winner : %winner2;
-        my @w = split("\n", $w{LectioE});
-
-        $w[0] =~ s/^(v. )?/v./;
-        splice(@w, 1, 1, "R. " . translate("Gloria tibi Domine", $lang), $w[1]);
-        if ($w[-1] !~ /Te decet/) { push(@w, "\$Te decet"); }
-        splice(@w, -1, 1, "R. " . translate("Amen", $lang), "_", $w[-1]);
-
-        $w = '';
-        foreach $item (@w) {
-          if ($item =~ /^([0-9:]+)\s+(.*)/s) {
-            my $rest = $2;
-            my $num = $1;
-            if ($rest =~ /^\s*([a-z])(.*)/is) { $rest = uc($1) . $2; }
-            $item = setfont($smallfont, $num) . " $rest";
-          }
-          $w .= "$item\n";
-        }
-        push(@s, $w);
-      }
-      push(@s, "\n");
+      $ant = $1;
+      $p = $2;
     }
+    my %w = (columnsel($lang)) ? %winner : %winner2;
+    if (exists($w{"Ant Matutinum 3N"})) {
+      my @t = split("\n",$w{"Ant Matutinum 3N"});
+      for(my $i=0; $i <= $#t; $i++) { $psalmi[16+$i] = $t[$i]; }
+    }
+    if ($psalmi[16] =~ /(.*?);;(.*)/s) {
+      $ant = $1;
+      $p = $2;
+    }
+    else {
+      $ant = $psalmi[16];
+    }
+    $p =~ s/[\(\-]/\,/g;
+    $p =~ s/\)//g;
+
+    push(@s, "Ant. $ant");
+    for (split(';', $p)) { push(@s, "\&psalm($_)", "\n"); } pop(@s);
+    push(@s, "Ant. $ant");
+    push(@s, "\n", $psalmi[17], $psalmi[18], "\n");
+    lectiones(3, $lang);
+    push(@s, '&teDeum', "\n");
+
+    if (exists($winner{LectioE})) {    #** set evangelium
+      my @w = split("\n", $w{LectioE});
+
+      $w[0] =~ s/^(v. )?/v./;
+      splice(@w, 1, 1, "R. " . translate("Gloria tibi Domine", $lang), $w[1]);
+      if ($w[-1] !~ /Te decet/) { push(@w, "\$Te decet"); }
+      splice(@w, -1, 1, "R. " . translate("Amen", $lang), "_", $w[-1]);
+
+      $w = '';
+      foreach $item (@w) {
+        if ($item =~ /^([0-9:]+)\s+(.*)/s) {
+          my $rest = $2;
+          my $num = $1;
+          if ($rest =~ /^\s*([a-z])(.*)/is) { $rest = uc($1) . $2; }
+          $item = setfont($smallfont, $num) . " $rest";
+        }
+        $w .= "$item\n";
+      }
+      push(@s, $w);
+    }
+    push(@s, "\n");
     return;
   }
   my ($w, $c) = getproprium('MM Capitulum', $lang, 0, 1);
@@ -213,9 +206,7 @@ sub psalmi_matutinum_monastic {
     }
   }
   if (!$w) { $w = $s{'MM Capitulum'}; }
-  push(@s, "!!Capitulum");
-  push(@s, $w);
-  push(@s, "\n");
+  push(@s, "!!Capitulum", $w, "\n");
 }
 
 #*** antetpsal_mmm($line, $i)
