@@ -1,5 +1,8 @@
 @Tempora/Quadp1-0
 
+[Rule]
+12 lectiones
+
 [Capitulum Vespera]
 @Tempora/Quadp1-0
 _
@@ -24,36 +27,82 @@ _
 _
 @Psalterium/Major Special:Day0M Vespera:3-8
 
+[Lectio1]
+@Tempora/Quadp1-0:Lectio1
+
+[Lectio2]
+@Tempora/Quadp1-0:Lectio2:s/-19/-13/ s/14 .*//s 
+
+[Lectio3]
+@Tempora/Quadp1-0:Lectio2:s/9-/14-/ s/9 .*14 /14 /s 
+
+[Lectio4]
+@Tempora/Quadp1-0:Lectio3
+
+[Responsory4]
+R. Igitur perfécti sunt cæli et terra, et omnis ornátus eórum;
+* Complevítque Deus die séptimo opus suum quod fécerat, † et requiévit ab omni ópere quod patrárat.
+V. Et benedíxit Deus diéi séptimo, et sanctificávit illum, quia in ipso cessáverat ab omni ópere suo.
+R. Complevítque Deus die séptimo opus suum quod fécerat, † et requiévit ab omni ópere quod patrárat.
+
+[Lectio5]
+@Tempora/Quadp1-0:Lectio4:s/Hinc .*//s
+
+[Responsory5]
+@Tempora/Quadp1-0:Responsory4
+
+[Lectio6]
+@Tempora/Quadp1-0:Lectio4:s/.* Hinc /Hinc /s
+
+[Responsory6]
+@Tempora/Quadp1-0:Responsory5
+
+[Lectio7]
+@Tempora/Quadp1-0:Lectio5
+
+[Responsory7]
+@Tempora/Quadp1-0:Responsory6
+
+[Lectio8]
+@Tempora/Quadp1-0:Lectio6
+
+[Responsory8]
+R. Dixit Dóminus ad Adam: † de ligno quod est in medio paradísi ne cómedas:
+* In quacúmque die coméderis, morte moreiéris.
+V. Præcépit ei Dóminus dicens: † Ex omni ligno paradísi cómede; de ligno autem sciéntiæ boni et mali ne cómedas.
+R. In quacúmque die coméderis, morte moreiéris.
+
+[Ant Matutinum 3N]
+Ite et vos in víneam meam, † et quod justum fúerit, dabo vobis.
+V. Exaltáre Dómine in virtúte tua.
+R. Cantábimus et psallémus virtútes tuas.
+
+[Lectio9]
+@Tempora/Quadp1-0:Lectio7
+
+[Responsory9]
+@Tempora/Quadp1-0:Responsory7
+
+[Lectio10]
+@Tempora/Quadp1-0:Lectio8
+
+[Responsory10]
+@Tempora/Quadp1-0:Responsory8
+
+[Lectio11]
+@Tempora/Quadp1-0:Lectio9:s/Operátor .*//s
+
+[Responsory11]
+@Tempora/Quadp1-0:Responsory9
+
+[Lectio12]
+@Tempora/Quadp1-0:Lectio9:s/.* Operátor /Operátor /s
+
+[Responsory12]
+@Tempora/Quadp1-1:Responsory2
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Matthaeum
+Sequéntia ++ sancti Evangélii secúndum Matthǽum
 !Matt 20:1-16
-20:1 Simile est regnum caelorum homini patrifamilias, qui exiit primo mane~
-conducere operarios in vineam suam.
-20:2 Conventione autem facta cum operariis ex denario diurno, misit eos in~
-vineam suam.
-20:3 Et egressus circa horam tertiam, vidit alios stantes in foro otiosos,
-20:4 et dixit illis: Ite et vos in vineam meam, et quod justum fuerit dabo~
-vobis.
-20:5 Illi autem abierunt. Iterum autem exiit circa sextam et nonam horam: et~
-fecit similiter.
-20:6 Circa undecimam vero exiit, et invenit alios stantes, et dicit illis: Quid~
-hic statis tota die otiosi?
-20:7 Dicunt ei: Quia nemo nos conduxit. Dicit illis: Ite et vos in vineam meam.
-20:8 Cum sero autem factum esset, dicit dominus vineae procuratori suo: Voca~
-operarios, et redde illis mercedem incipiens a novissimis usque ad primos.
-20:9 Cum venissent ergo qui circa undecimam horam venerant, acceperunt singulos~
-denarios.
-20:10 Venientes autem et primi, arbitrati sunt quod plus essent accepturi:~
-acceperunt autem et ipsi singulos denarios.
-20:11 Et accipientes murmurabant adversus patremfamilias,
-20:12 dicentes: Hi novissimi una hora fecerunt, et pares illos nobis fecisti,~
-qui portavimus pondus diei, et aestus.
-20:13 At ille respondens uni eorum, dixit: Amice, non facio tibi injuriam: nonne~
-ex denario convenisti mecum?
-20:14 Tolle quod tuum est, et vade: volo autem et huic novissimo dare sicut et~
-tibi.
-20:15 Aut non licet mihi quod volo, facere? an oculus tuus nequam est, quia ego~
-bonus sum?
-20:16 Sic erunt novissimi primi, et primi novissimi. Multi enim sunt vocati,~
-pauci vero electi.
-$Te decet
+In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Simile est regnum coelórum hómini patrifamílias, qui éxiit primo mane condúcere operários in víneam suam. Conventióne autem facta cum operáriis ex denário diúrno, misit eos in víneam suam. Et egréssus circa horam tértiam, vidit álios stantes in foro otiósos, et dixit illis: Ite et vos in víneam meam, et quod justum fúerit, dabo vobis. Illi autem abiérunt. Iterum autem éxiit circa sextam et nonam horam: et fecit simíliter. Circa undécimam vero éxiit, et invénit álios stantes, et dicit illis: Quid hic statis tota die otiósi? Dicunt ei: Quia nemo nos condúxit. Dicit illis: Ite et vos in víneam meam. Cum sero autem factum esset, dicit dóminus víneæ procuratóri suo: Voca operários, et redde illis mercédem, incípiens a novíssimis usque ad primos. Cum veníssent ergo qui circa undécimam horam vénerant, accepérunt síngulos denários. Veniéntes autem et primi, arbitráti sunt, quod plus essent acceptúri: accepérunt autem et ipsi síngulos denários. Et accipiéntes murmurábant advérsus patremfamílias, dicéntes: Hi novíssimi una hora fecérunt et pares illos nobis fecísti, qui portávimus pondus diéi et æstus. At ille respóndens uni eórum, dixit: Amíce, non facio tibi injúriam: nonne ex denário convenísti mecum? Tolle quod tuum est, et vade: volo autem et huic novíssimo dare sicut et tibi. Aut non licet mihi, quod volo, fácere? an óculus tuus nequam est, quia ego bonus sum? Sic erunt novíssimi primi, et primi novíssimi. Multi enim sunt vocáti, pauci vero elécti.
+

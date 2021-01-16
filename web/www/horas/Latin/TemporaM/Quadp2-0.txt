@@ -1,5 +1,8 @@
 @Tempora/Quadp2-0
 
+[Rule]
+12 lectiones
+
 [Capitulum Vespera]
 @Tempora/Quadp2-0
 _
@@ -24,28 +27,88 @@ _
 _
 @Psalterium/Major Special:Day0M Vespera:3-8
 
+[Lectio1]
+@Tempora/Quadp2-0:Lectio1:s/-4/-3/ s/4 .*//s 
+
+[Lectio2]
+@Tempora/Quadp2-0:Lectio1:s/5:31; // s/1-4/4-6/ s/31 .*4 /4 /s 
+@Tempora/Quadp2-0:Lectio2:s/!.*// s/ Et tactus.*//s
+
+[Lectio3]
+@Tempora/Quadp2-0:Lectio2:s/5-8/6-10/ s/5.*(Et tactus)/6 $1/s
+@Tempora/Quadp2-0:Lectio3:s/!.*// s/11 .*//s
+
+[Lectio4]
+@Tempora/Quadp2-0:Lectio3:s/9-/11-/ s/9.*11/11/s
+
+[Responsory4]
+R. In artículo diéi illíus ingréssus est Noë in arcam et fílii ejus,
+* Uxor illíus et uxóres filiórum ejus.
+V. Deléta sunt univérsa de terra, † remánsit autem solus Noë, et qui cum eo erant in arca.
+R. Uxor illíus et uxóres filiórum ejus.
+
+[Lectio5]
+@Tempora/Quadp2-0:Lectio4:s/Neque .*//s
+
+[Responsory5]
+@Tempora/Quadp2-0:Responsory4
+
+[Lectio6]
+@Tempora/Quadp2-0:Lectio4:s/.* Neque /Neque /s
+
+[Responsory6]
+@Tempora/Quadp2-0:Responsory5
+
+[Lectio7]
+@Tempora/Quadp2-0:Lectio5
+
+[Responsory7]
+@Tempora/Quadp2-0:Responsory6
+
+[Lectio8]
+@Tempora/Quadp2-0:Lectio6
+
+[Responsory8]
+R. Recordátus Dóminus Noë, adduxit spíritum super terram, † et imminútæ sunt aquæ:
+* Et prohíbitæ sunt pluviæ de cælis.
+V. Reversæque sunt aquæ de terra euntes et redeuntes, † et cœpérunt mínui post centum quinquagínta dies.
+R. Et prohíbitæ sunt pluviæ de cælis.
+
+[Ant Matutinum 3N]
+Semen cécidit in terram bonam, † et ortem fecit fructum céntuplum.
+V. Exaltáre Dómine in virtúte tua.
+R. Cantábimus et psallémus virtútes tuas.
+
+[Lectio9]
+@Tempora/Quadp2-0:Lectio7:s/Unde .*//s
+
+[Responsory9]
+@Tempora/Quadp2-0:Responsory7
+
+[Lectio10]
+@Tempora/Quadp2-0:Lectio7:s/.* Unde /Unde /s s/$/~/
+@Tempora/Quadp2-0:Lectio8:s/Quis .*//s
+
+[Responsory10]
+@Tempora/Quadp2-0:Responsory8
+
+[Lectio11]
+@Tempora/Quadp2-0:Lectio8:s/.* Quis /Quis /s
+
+[Responsory11]
+R. Requiévit arca mense séptimo super montes Arméniæ:
+* Et aquæ ibant et decrescébant usque ad décimum mensem.
+V. Décimo enim mense primo die mensis cacúmina móntium apparuérunt.
+R. Et aquæ ibant et decrescébant usque ad décimum mensem.
+
+[Lectio12]
+@Tempora/Quadp2-0:Lectio9
+
+[Responsory12]
+@Tempora/Quadp2-0:Responsory9
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Lucam
+Sequéntia ++ sancti Evangélii secúndum Lucam
 !Luc 8:4-15
-8:4 Cum autem turba plurima convenirent, et de civitatibus properarent ad eum,~
-dixit per similitudinem:
-8:5 Exiit qui seminat, seminare semen suum. Et dum seminat, aliud cecidit secus~
-viam, et conculcatum est, et volucres caeli comederunt illud.
-8:6 Et aliud cecidit supra petram: et natum aruit, quia non habebat humorem.
-8:7 Et aliud cecidit inter spinas, et simul exortae spinae suffocaverunt illud.
-8:8 Et aliud cecidit in terram bonam: et ortum fecit fructum centuplum. Haec~
-dicens clamabat: Qui habet aures audiendi, audiat.
-8:9 Interrogabant autem eum discipuli ejus, quae esset haec parabola.
-8:10 Quibus ipse dixit: Vobis datum est nosse mysterium regni Dei, ceteris autem~
-in parabolis: ut videntes non videant, et audientes non intelligant.
-8:11 Est autem haec parabola: Semen est verbum Dei.
-8:12 Qui autem secus viam, hi sunt qui audiunt: deinde venit diabolus, et tollit~
-verbum de corde eorum, ne credentes salvi fiant.
-8:13 Nam qui supra petram, qui cum audierint, cum gaudio suscipiunt verbum: et~
-hi radices non habent: qui ad tempus credunt, et in tempore tentationis~
-recedunt.
-8:14 Quod autem in spinas cecidit: hi sunt qui audierunt, et a sollicitudinibus,~
-et divitiis, et voluptatibus vitae euntes, suffocantur, et non referunt fructum.
-8:15 Quod autem in bonam terram: hi sunt qui in corde bono et optimo audientes~
-verbum retinent, et fructum afferunt in patientia.
-$Te decet
+In illo témpore: Cum turba plúrima convenírent, et de civitátibus properárent ad Jesum, dixit per similitúdinem: Exiit, qui séminat, semináre semen suum: et dum séminat, áliud cécidit secus viam, et conculcátum est, et vólucres coeli comedérunt illud. Et áliud cécidit supra petram: et natum áruit, quia non habébat humórem. Et áliud cécidit inter spinas, et simul exórtæ spinæ suffocavérunt illud. Et áliud cécidit in terram bonam: et ortum fecit fructum céntuplum. Hæc dicens, clamábat: Qui habet aures audiéndi, audiat. Interrogábant autem eum discípuli ejus, quæ esset hæc parábola. Quibus ipse dixit: Vobis datum est nosse mystérium regni Dei, céteris autem in parábolis: ut vidéntes non videant, et audientes non intéllegant. Est autem hæc parábola: Semen est verbum Dei. Qui autem secus viam, hi sunt qui áudiunt: déinde venit diábolus, et tollit verbum de corde eórum, ne credéntes salvi fiant. Nam qui supra petram: qui cum audierint, cum gáudio suscipiunt verbum: et hi radíces non habent: qui ad tempus credunt, et in témpore tentatiónis recédunt. Quod autem in spinas cécidit: hi sunt, qui audiérunt, et a sollicitudínibus et divítiis et voluptátibus vitæ eúntes, suffocántur, et non réferunt fructum. Quod autem in bonam terram: hi sunt, qui in corde bono et óptimo audiéntes verbum rétinent, et fructum áfferunt in patiéntia.
+

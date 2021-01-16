@@ -1,5 +1,8 @@
 @Tempora/Quadp3-0
 
+[Rule]
+12 lectiones
+
 [Capitulum Vespera]
 @Tempora/Quadp3-0
 _
@@ -24,26 +27,85 @@ _
 _
 @Psalterium/Major Special:Day0M Vespera:3-8
 
+[Lectio1]
+@Tempora/Quadp3-0:Lectio1:s/-6/-5/ s/ Cumque.*//s 
+
+[Lectio2]
+@Tempora/Quadp3-0:Lectio1:s/-6/-8/ s/1-/5-/ s/1 .*(Cumque) /5 $1/s 
+@Tempora/Quadp3-0:Lectio2:s/!.*// s/9 .*//s
+
+[Lectio3]
+@Tempora/Quadp3-0:Lectio2:s/7-/9-/ s/7.*9/9/s 
+
+[Lectio4]
+@Tempora/Quadp3-0:Lectio3
+
+[Responsory4]
+R. Dixit Dóminus ad Abram: † Sara uxor tua páriet tibi fílium 
+* Et vocábis nomen ejus Isaac.
+V. Revértens véniam ad te témpore isto, vita cómite, † et habébit fílium Sara uxor tua.
+R. Et vocábis nomen ejus Isaac.
+
+[Lectio5]
+@Tempora/Quadp3-0:Lectio4:s/Ea enim .*//s
+
+[Responsory5]
+@Tempora/Quadp3-0:Responsory4
+
+[Lectio6]
+@Tempora/Quadp3-0:Lectio4:s/.* Ea enim /Ea enim /s s/$/~/
+@Tempora/Quadp3-0:Lectio5:s/Sed sicut .*//s
+
+[Responsory6]
+@Tempora/Quadp3-0:Responsory5
+
+[Lectio7]
+@Tempora/Quadp3-0:Lectio5:s/.* Sed sicut /Sed sicut /s
+
+[Responsory7]
+@Tempora/Quadp3-0:Responsory6
+
+[Lectio8]
+@Tempora/Quadp3-0:Lectio6
+
+[Responsory8]
+R. Visitávit Dóminus Saram, sicut promíserat et implévit quæ locútus est: † concepítque et péperit fílium in senectúte sua 
+* Témpore quo prædíxerat ei Deus.
+V. Vocavítque Abraham nomen fílii sui quem génuit ei Sara, Isaac.
+R. Témpore quo prædíxerat ei Deus.
+
+[Ant Matutinum 3N]
+Miserére mei, Fili David! † Quid vis ut fáciam tibi? Dómine, ut vídeam.
+V. Exaltáre Dómine in virtúte tua.
+R. Cantábimus et psallémus virtútes tuas.
+
+[Lectio9]
+@Tempora/Quadp3-0:Lectio7
+
+[Responsory9]
+@Tempora/Quadp3-0:Responsory7
+
+[Lectio10]
+@Tempora/Quadp3-0:Lectio8:s/Cæcum .*//s
+
+[Responsory10]
+@Tempora/Quadp3-0:Responsory8
+
+[Lectio11]
+@Tempora/Quadp3-0:Lectio8:s/.* Cæcum /Cæcum /s s/$/~/
+@Tempora/Quadp3-0:Lectio9:s/Dum ígitur .*//s
+
+[Responsory11]
+@Tempora/Quadp3-1:Responsory2
+
+[Lectio12]
+@Tempora/Quadp3-0:Lectio9:s/.* Dum ígitur /Dum ígitur /s
+
+[Responsory12]
+@Tempora/Quadp3-0:Responsory9
+
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Lucam
+Sequéntia ++ sancti Evangélii secúndum Lucam
 !Luc 18:31-43
-18:31 Assumpsit autem Jesus duodecim, et ait illis: Ecce ascendimus Jerosolymam,~
-et consummabuntur omnia quae scripta sunt per prophetas de Filio hominis:
-18:32 tradetur enim gentibus, et illudetur, et flagellabitur, et conspuetur:
-18:33 et postquam flagellaverint, occident eum, et tertia die resurget.
-18:34 Et ipsi nihil horum intellexerunt, et erat verbum istud absconditum ab eis,~
-et non intelligebant quae dicebantur.
-18:35 Factum est autem, cum appropinquaret Jericho, caecus quidam sedebat secus~
-viam, mendicans.
-18:36 Et cum audiret turbam praetereuntem, interrogabat quid hoc esset.
-18:37 Dixerunt autem ei quod Jesus Nazarenus transiret.
-18:38 Et clamavit, dicens: Jesu, fili David, miserere mei.
-18:39 Et qui praeibant, increpabant eum ut taceret. Ipse vero multo magis~
-clamabat: Fili David, miserere mei.
-18:40 Stans autem Jesus jussit illum adduci ad se. Et cum appropinquasset,~
-interrogavit illum,
-18:41 dicens: Quid tibi vis faciam? At ille dixit: Domine, ut videam.
-18:42 Et Jesus dixit illi: Respice, fides tua te salvum fecit.
-18:43 Et confestim vidit, et sequebatur illum magnificans Deum. Et omnis plebs~
-ut vidit, dedit laudem Deo.
-$Te decet
+In illo témpore: Assúmpsit Jesus duódecim, et ait illis: Ecce, ascéndimus Jerosólymam, et consummabúntur ómnia, quæ scripta sunt per Prophétas de Fílio hominis. Tradétur enim Géntibus, et illudétur, et flagellábitur, et conspuétur: et postquam flagelláverint, occídent eum, et tértia die resúrget. Et ipsi nihil horum intellexérunt, et erat verbum istud abscónditum ab eis, et non intellegébant quæ dicebántur. Factum est autem, cum appropinquáret Jéricho, cæcus quidam sedébat secus viam, mendícans. Et cum audíret turbam prætereúntem, interrogábat, quid hoc esset. Dixérunt autem ei, quod Jesus Nazarénus transíret. Et clamávit, dicens: Jesu, fili David, miserére mei. Et qui præíbant, increpábant eum, ut tacéret. Ipse vero multo magis clamábat: Fili David, miserére mei. Stans autem Jesus, jussit illum addúci ad se. Et cum appropinquásset, interrogávit illum, dicens: Quid tibi vis fáciam? At ille dixit: Dómine, ut vídeam. Et Jesus dixit illi: Réspice, fides tua te salvum fecit. Et conféstim vidit, et sequebátur illum, magníficans Deum. Et omnis plebs ut vidit, dedit laudem Deo.
+
