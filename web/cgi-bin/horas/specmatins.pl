@@ -738,7 +738,7 @@ sub lectio : ScriptFunc {
   if (
     !$w
     && (
-      ($communetype =~ /^ex/i && $commune !~ /Sancti/i)
+      ($communetype =~ /^ex/i && $commune !~ /Sancti/i && $rank > 3)
       || ( $num < 4
         && $homilyflag
         && exists($commune{"Lectio$num"}))
