@@ -60,7 +60,7 @@ sub horas {
   $ind1 = $ind2 = 0;
   $searchind = 0;
 
-  if ($version !~ /(Monastic|1570|1955|1960|Newcal)/i) {
+  if ($version !~ /(Monastic|1570|1955|1960|Newcal|Praedicatorum)/i) {
     ante_post('Ante');
   } else {
     $searchind++;
@@ -103,7 +103,7 @@ sub horas {
     }
   }
 
-  if ($version !~ /(Monastic|1570|1955|1960|Newcal)/) {
+  if ($version !~ /(Monastic|1570|1955|1960|Newcal|Praedicatorum)/) {
     ante_post('Post');
   } else {
     $searchind++;
@@ -307,7 +307,7 @@ sub Alleluia : ScriptFunc {
 sub Alleluia_ant {
   my ($lang, $full, $ucase) = @_;
   my $s = translate('Alleluia', $lang);
-  if (($full || ($duplex >= 3) || ($version =~ /1960|Newcal|Monastic/i))) {
+  if (($full || ($duplex >= 3) || ($version =~ /1960|Newcal|Monastic|Praedicatorum/i))) {
     $s .= ", * $s, $s.";
     $s =~ s/ ./\L$&/g unless $ucase;
   }
@@ -495,6 +495,7 @@ sub psalm : ScriptFunc {
   if ($version =~ /1960|Newcal/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i) { $fname =~ s/Psalm88/Psalm88r/; }
   if ($version =~ /1960|Newcal/ && $num !~ /\(/ && $month == 8 && $day == 6) { $fname =~ s/Psalm88/Psalm88a/; }
   $fname = checkfile($lang, $fname);
+  # load psalms
   @lines = do_read($fname);
   my $str = 'Psalmus';
   $str = translate($str, $lang);
@@ -590,7 +591,7 @@ sub psalm : ScriptFunc {
       $t .= "\n$lnum $line $rest";
     }
     $t .= "\n";
-    if ($version eq "Monastic" && $num == 129 && $hora eq 'Prima') { $t .= $prayers{$lang}->{Requiem}; }
+    if ($version != "/(1570|1910|Divino|1960|Newcal|Praedicatorum)/" && $version == "Monastic" && $num == 129 && $hour == 'Prima') { $t .= $prayers{$lang}->{Requiem}; }
     elsif ($num != 210 && !$nogloria) { $t .= "\&Gloria\n"; }
     $t .= settone(0);
     return $t;
@@ -913,7 +914,7 @@ sub ant_Benedictus : ScriptFunc {
     $ant = $specials{"Adv Ant $day" . "L"};
   }
   my @ant_parts = split('\*', $ant);
-  if ($num == 1 && $duplex < 3 && $version !~ /1960|Newcal/ && $version !~ /monastic/i) { return "Ant. $ant_parts[0]"; }
+  if ($num == 1 && $duplex < 3 && $version !~ /1960|Newcal|Praedicatorum/ && $version !~ /monastic/i) { return "Ant. $ant_parts[0]"; }
 
   if ($num == 1) {
     return "Ant. $ant";
@@ -1233,7 +1234,9 @@ sub getordinarium {
   if ($version =~ /(1955|1960|Newcal)/) { $suffix .= "1960"; }
   elsif ($version =~ /trident/i && $hora =~ /(laudes|vespera)/i) { $suffix .= "Trid"; }
   elsif ($version =~ /Monastic/i) { $suffix .= "M"; }
+  elsif ($version =~ /Ordo Praedicatorum/i) { $suffix .= "OP"; }
   my $fname = checkfile($lang, "Ordinarium/$command$suffix.txt");
+
   @script = process_conditional_lines(do_read($fname));
   $error = "$fname cannot be opened or gives an empty script." unless @script;
 
