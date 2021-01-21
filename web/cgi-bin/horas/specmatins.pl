@@ -795,7 +795,6 @@ sub lectio : ScriptFunc {
 
   if ($commune{Rule} =~ /Special Lectio $num/) {
     %mariae = %{setupstring($datafolder, $lang, "$communename/C10.txt")};
-    if ($version =~ /Trident/i) { %mariae = %{setupstring($datafolder, $lang, "$communename/C10t.txt")}; }
     my $name = getC10readingname();
     $w = $mariae{$name};
     setbuild2("Mariae $name");

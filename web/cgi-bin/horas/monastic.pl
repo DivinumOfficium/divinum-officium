@@ -194,7 +194,7 @@ sub psalmi_matutinum_monastic {
   if ((!$w || $commune =~ /M\/C10/) && $commune) {
     my $name = $commune;
     $name =~ s/.*M.//;
-    $name =~ s/\.txt//;
+    $name =~ s/\D?\.txt//;
     $w = $s{"MM Capitulum $name"};
   }
   if (!$w) {
