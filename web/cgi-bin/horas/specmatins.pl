@@ -968,7 +968,6 @@ sub lectio : ScriptFunc {
         $s = $c{"Responsory$na"};
       }
       if (exists($winner{"Responsory$na"})) { $s = ''; }
-      matins_lectio_responsory_alleluia($s, $lang);
 
       #$$$ watch initia rule
     }
@@ -980,11 +979,10 @@ sub lectio : ScriptFunc {
       if (!$s) {
         %w = (columnsel($lang)) ? %commune : %commune2;
         if (exists($w{"Responsory$na"})) { $s = $w{"Responsory$na"}; }
-        matins_lectio_responsory_alleluia($s, $lang);
       }
     }
-    $w =~ s/\s*$//;
-    $w .= "\n\_\n$s";
+    matins_lectio_responsory_alleluia($s, $lang);
+    $w =~ s/\s*$/\n\_\n$s/;
   }
   $w = responsory_gloria($w, $num);
 
