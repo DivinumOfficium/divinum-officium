@@ -645,7 +645,7 @@ sub getantcross {
 
 sub depunct {
   my $item = shift;
-  $item =~ s/[.,:?!"';*]//g;
+  $item =~ s/[.,:?!"';*()]//g;
   $item =~ s/[áÁ]/a/g;
   $item =~ s/[éÉ]/e/g;
   $item =~ s/[íí]/i/g;
