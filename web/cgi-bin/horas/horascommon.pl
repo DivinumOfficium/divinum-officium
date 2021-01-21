@@ -590,12 +590,6 @@ sub getrank {
       $scriptura = $tname;
       if ($scriptura =~ /^\.txt/i) { $scriptura = $sname; }
       $tname = "$communename/$C10.txt";
-
-      if ($version =~ /Trident/i) {
-        $tempora{Rank} =~ s/C10/C10t/;
-        $trank =~ s/C10/C10t/;
-        $tname =~ s/C10/C10t/;
-      }
       @trank = split(";;", $trank);
     }
 
@@ -609,14 +603,8 @@ sub getrank {
       && $trank !~ /;;[2-7]/
       && $srank !~ /in Octav/i)
     {
-      $tempora{Rank} = $trank = 'Sanctae Mariae Sabbato;;Feria;;1.9;;vide C10';
-      $tname = "$communename/C10.txt";
-
-      if ($version =~ /Trident/i) {
-        $tempora{Rank} =~ s/C10/C10t/;
-        $trank =~ s/C10/C10t/;
-        $tname =~ s/C10/C10t/;
-      }
+      $tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;1.9;;vide $C10";
+      $tname = "$communename/$C10.txt";
       @trank = split(";;", $trank);
     }
   }
@@ -785,12 +773,6 @@ sub getrank {
       $tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
       $scriptura = $tname;
       $tname = "$communename/$C10.txt";
-
-      if ($version =~ /Trident/i) {
-        $tempora{Rank} =~ s/C10/C10t/;
-        $trank =~ s/C10/C10t/;
-        $tname =~ s/C10/C10t/;
-      }
       @trank = split(";;", $trank);
     }
 
@@ -1049,13 +1031,19 @@ sub precedence {
   @date1 = split('-', $date1);
   $dayname = getweek(0);
   @dayname = split('=', $dayname);
-  our $C10 =
-      ($dayname[0] =~ /Adv/i) ? 'a'
-    : ($month == 1 || ($month == 2 && $day == 1)) ? 'b'
-    : ($dayname[0] =~ /(Epi|Quad)/i) ? 'c'
-    : ($dayname[0] =~ /Pasc/i) ? 'Pasc'
-    : '';
-  $C10 = ($missa) ? "C10$C10" : 'C10';
+  our $C10 = 'C10';
+  if ($missa) {
+    $C10 .= ($dayname[0] =~ /Adv/i) ? 'a'
+            : ($month == 1 || ($month == 2 && $day == 1)) ? 'b'
+            : ($dayname[0] =~ /(Epi|Quad)/i) ? 'c'
+            : ($dayname[0] =~ /Pasc/i) ? 'Pasc'
+            : '';
+  }
+  else {
+    $C10 .= ($month == 1 || ($month == 2 && $day == 1)) ? 'n'
+            : ($dayname[0] =~ /Pasc/i) ? 'p'
+            : '';
+  }
   getrank();    #fills $winner, $commemoratio, $commune, $communetype, $rank);
   $duplex = 0;
 
@@ -1257,30 +1245,15 @@ sub precedence {
   }
 
   if (!$missa && $winner =~ /C10/) {
-    if ($month < 2 || ($month == 2 && $day < 3)) {
-      $winner{'Ant 1'} = $winner{'Ant 11'};
-      $winner{'Ant 2'} = $winner{'Ant 21'};
-      $winner2{'Ant 1'} = $winner2{'Ant 11'};
-      $winner2{'Ant 2'} = $winner2{'Ant 21'};
-      $winner{'Oratio'} = $winner{'Oratio 21'};
-      $winner2{'Oratio'} = $winner2{'Oratio 21'};
-    } elsif ($dayname[0] =~ /Pasc/i) {
-      $winner{'Ant 1'} = $winner{'Ant 13'};
-      $winner{'Ant 2'} = $winner{'Ant 23'};
-      $winner2{'Ant 1'} = $winner2{'Ant 13'};
-      $winner2{'Ant 2'} = $winner2{'Ant 23'};
-    } elsif ($version !~ /1960|Monastic/i && $month == 9 && $day > 8 && $day < 15) {
+    if ($version !~ /1960|Monastic/i && $month == 9 && $day > 8 && $day < 15) {
       my %s = %{setupstring($datafolder, $lang1, 'Sancti/09-08.txt')};
       my %s2 = %{setupstring($datafolder, $lang2, 'Sancti/09-08.txt')};
-      my $key;
-
-      foreach $key (%s) {
-        if ($key =~ /(Rank|Name|Rule|Lectio|Benedictio|Ant Matutinum|Commemoratio)/i) { next; }
-        $winner{$key} = $s{$key};
-        $winner2{$key} = $s2{$key};
+      foreach (%s) {
+        /(Rank|Name|Rule|Lectio|Benedictio|Ant Matutinum|Commemoratio)/i && next;
+        $winner{$_} = $s{$_};
+        $winner2{$_} = $s2{$_};
       }
     }
-
     # 7/16 version=1960 : partially excepted by BVM de Monte Carmelo   (#5)
     elsif ($version =~ /1960/ && $month == 7 && $day == 16) {
       my %s = %{setupstring($datafolder, $lang1, 'Sancti/07-16.txt')};
@@ -1581,7 +1554,7 @@ sub setheadline {
       }
     } elsif ($version =~ /1960|Newcal|Monastic/i && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
       $rankname = 'Dies Octavæ I. classis';
-    } elsif ($version =~ /(1570|1910|Divino|1955)/ && $winner =~ /C10|C10t/) {
+    } elsif ($version =~ /(1570|1910|Divino|1955)/ && $winner =~ /C10/) {
       $rankname = 'Simplex';
     } elsif ($version =~ /1960|Newcal|Monastic/i && $winner =~ /Pasc6-6/) {
       $rankname = 'I. classis';

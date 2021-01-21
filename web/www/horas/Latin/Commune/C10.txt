@@ -9,6 +9,7 @@ vide C10
 Special Benedictio
 Special Lectio 3
 Doxology=Nat
+Antiphonas horas
 
 [Capitulum Vespera]
 !Sir 24:14
@@ -64,12 +65,6 @@ Beáta Mater * et intácta Virgo, gloriósa Regína mundi, intercéde pro nobis 
 Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
 $Per Dominum
 
-[Ant 11]
-Magnum * hereditátis mystérium: templum Dei factus est úterus nesciéntis virum: non est pollútus ex ea carnem assúmens; omnes gentes vénient dicéntes: Glória tibi, Dómine.
-
-[Ant 13]
-Regína cæli,* lætáre, allelúja; quia quem meruísti portáre, allelúja; resurréxit, sicut dixit, allelúja: ora pro nobis Deum, allelúja.
-
 [Invit]
 Ave María, grátia plena, * Dóminus tecum.
 
@@ -85,6 +80,18 @@ Jube domne benedicere.
 Nos cum prole pia benedícat Virgo María. Amen.
 Ipsa Virgo Vírginum intercédat pro nobis ad Dóminum. Amen.
 Per Vírginem matrem concédat nobis Dóminus salútem et pacem. Amen.
+
+[Responsory1](rubrica Trident)
+@Commune/C11
+
+[Responsory2](rubrica Trident)
+@Commune/C11:Responsory7:1-3
+R. Quia ex te ortus est sol justítiæ
+&Gloria
+R. Christus, Deus noster.
+
+[Ant Laudes](rubrica Trident)
+@Commune/C11:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
 @:Capitulum Vespera
@@ -138,16 +145,6 @@ R. Et benedíctus fructus ventris tui.
 
 [Ant 2]
 Beáta Dei Génetrix, María, * Virgo perpétua, templum Dómini, sacrárium Spíritus Sancti, sola sine exémplo placuísti Dómino nostro Jesu Christo: ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu.
-
-[Ant 21]
-@Sancti/01-01:Ant 2
-
-[Oratio 21]
-Deus, qui salútis ætérnæ, beátæ Maríæ virginitáte fecúnda, humáno géneri prǽmia præstitísti: tríbue, quǽsumus; ut ipsam pro nobis intercédere sentiámus, per quam merúimus auctórem vitæ suscípere, Dóminum nostrum Jesum Christum Fílium tuum:
-$Qui tecum
-
-[Ant 23]
-@:Ant 13
 
 [Lectio Prima]
 !Sir 24:19-20
