@@ -184,7 +184,7 @@ sub getrank {
   my @trank = ();
   my @srank = ();
   our $transfervigil = '';
-  my %transfer;
+  our %transfer;
   our $hymncontract = 0;
   my $kalendarname =
       ($version =~ /Monastic/i) ? 'M'
