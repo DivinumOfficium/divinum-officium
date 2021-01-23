@@ -13,7 +13,7 @@ Officium parvum Beatae Mariae Virginis Tempora Nativitatis;;Simplex;;1
 @Sancti/01-01:Ant 3
 
 [Oratio]
-@Commune/C10:Oratio 21
+@Sancti/01-01
 
 [Commemoratio]
 @Commune/C12:Commemoratio
@@ -21,11 +21,11 @@ Officium parvum Beatae Mariae Virginis Tempora Nativitatis;;Simplex;;1
 
 [Special Completorium]
 @Commune/C12::s/(#Canticum Nunc dimittis.).*/$1/s
-@Commune/C10:Ant 11:s/^/Ant. /
+@Sancti/01-01:Ant 3:s/^/Ant. /
 &psalm(233)
-@Commune/C10:Ant 11:s/^/Ant. /
+@Sancti/01-01:Ant 3:s/^/Ant. /
 @:Pre oratio
-@Commune/C10:Oratio 21
+@Sancti/01-01:Oratio
 
 @Commune/C12::s/.*(.#Conclusio)/$1/s
 
@@ -35,7 +35,7 @@ Officium parvum Beatae Mariae Virginis Tempora Nativitatis;;Simplex;;1
 [Minor final]
 
 @:Pre oratio
-@Commune/C10:Oratio 21
+@Sancti/01-01:Oratio
 @Commune/C12:Minor final
 
 [Special Prima]
