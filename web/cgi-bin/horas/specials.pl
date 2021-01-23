@@ -486,48 +486,37 @@ sub specials {
         next;
       }
       my %suffr = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};
-      my (@suffr, $comment);
+      my ($suffr, $comment);
 
       if ($version =~ /trident/i) {
-        my $suffr = '';
-        my $c = ($dayname[0] =~ /(pasc)/i) ? '2' : 'TridentinumFeriale';
-        if ($dayname[1] =~ /(feria|vigilia)/i) { $suffr = $suffr{"Suffragium$c"}; }
-        if ($commune !~ /(C1[0-9])/i) {
-          if (($month == 1 && $day > 13) || $month == 2 && $day == 1) {
-            $suffr .= $suffr{Suffragium3Epi};
-          } else {
-            $suffr .= $suffr{Suffragium3};
+        if ($dayname[0] =~ /pasc/i && $dayname[1] =~ /(?:feria|vigilia)/i) { $suffr = $suffr{"Suffragium2"}; }
+        else {
+          if ($dayname[1] =~ /(?:feria|vigilia)/i && $commune !~ /C10/) {
+            $suffr = $suffr{"SuffragiumTridentinumFeriale"};
           }
+          if ($commune !~ /(C1[0-9])/i) {
+            if (($month == 1 && $day > 13) || $month == 2 && $day == 1) {
+              $suffr .= $suffr{Suffragium3Epi};
+            } else {
+              $suffr .= $suffr{Suffragium3};
+            }
+          }
+          my($v) = $hora =~ /vespera/i ? 1 : 2;
+          $suffr .= $suffr{"Suffragium4$v"} if ($version !~ /1570/);
+          $suffr .= $suffr{"Suffragium5$v"};
+          $suffr .= $suffr{Suffragium6};
         }
-
-        if ($version !~ /1570/) {
-          if ($hora =~ /vespera/i) {
-            $suffr .= $suffr{Suffragium41} . $suffr{Suffragium51};
-          } else {
-            $suffr .= $suffr{Suffragium42} . $suffr{Suffragium52};
-          }
-        } else {
-          if ($hora =~ /vespera/i) {
-            $suffr .= $suffr{Suffragium51};
-          } else {
-            $suffr .= $suffr{Suffragium52};
-          }
-        }
-        $suffr .= $suffr{Suffragium6};
-        if ($churchpatron) { $suffr =~ s/r\. N\./$churchpatron/; }
-        @suffr = split("\n", $suffr);
         $comment = 3;
       } else {
         $comment = ($dayname[0] =~ /(pasc)/i) ? 2 : 1;
         my $c = $comment;
         if ($c == 1 && $commune =~ /(C1[0-9])/) { $c = 11; }
         $suffr = $suffr{"Suffragium$c"};
-        if ($churchpatron) { $suffr =~ s/r\. N\./$churchpatron/; }
-        @suffr = split("\n", $suffr);
       }
+      if ($churchpatron) { $suffr =~ s/r\. N\./$churchpatron/; }
       setcomment($label, 'Suffragium', $comment, $lang);
       setbuild1("Suffragium$comment", 'included');
-      foreach $l (@suffr) { push(@s, $l); }
+      push (@s, split("\n", $suffr));
       next;
     }
 
