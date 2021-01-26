@@ -1,24 +1,31 @@
-@Sancti/02-24
+[Lectio5]
+@Sancti/02-24:Lectio4:s/There .*//s
 
-[Responsory9]
-R. Non sunt loquelae neque sermones, quorum no audiantur voces eorum
-* Their sound hath gone forth into all the earth: and their words unto the ends~
-of the world.
-V. Your friends O Lord * are made exceedingly honourable: their principality is~
-exceedingly strengthened.
-R. Their sound hath gone forth into all the earth: and their words unto the ends~
-of the world.
-&Gloria
-R. Their sound hath gone forth into all the earth: and their words unto the ends~
-of the world.
+[Lectio6]
+@Sancti/02-24:Lectio4:s/.* There /There /s s/$/~/
+@Sancti/02-24:Lectio5:s/Let us .*//s
+
+[Lectio7]
+@Sancti/02-24:Lectio5:s/.* Let us /Let us /s s/$/~/
+@Sancti/02-24:Lectio6:s/So, not .*//s
+
+[Lectio8]
+@Sancti/02-24:Lectio6:s/.* So, not /So, not /s
+
+[Lectio9]
+@Sancti/02-24:Lectio7:s/Take .*//s
+
+[Lectio10]
+@Sancti/02-24:Lectio7:s/.* Take /Take /s s/$/~/
+@Sancti/02-24:Lectio8:s/The greater .*//s
+
+[Lectio11]
+@Sancti/02-24:Lectio8:s/.* The greater /The greater /s
+
+[Lectio12]
+@Sancti/02-24:Lectio9
 
 [LectioE]
-v. Continuation of the Holy Gospel according to Matthew
-!Matt 11:25-30
-11:25 At that time Jesus answered and said: I confess to thee, O Father, Lord of heaven and earth, because thou hast hid these things from the wise and prudent, and hast revealed them to the little ones.
-11:26 Yea, Father; for so hath it seemed good in thy sight.
-11:27 All things are delivered to me by my Father. And no one knoweth the Son, but the Father: neither doth any one know the Father, but the Son, and he to whom it shall please the Son to reveal him.
-11:28 Come to me, all you that labour, and are burdened, and I will refresh you.
-11:29 Take up my yoke upon you, and learn of me, because I am meek, and humble of heart: and you shall find rest to your souls.
-11:30 For my yoke is sweet and my burden light.
-$Te decet
+Continuation ++ of the Holy Gospel according to Matthew
+!Matt. 11:25-30
+At that time, Jesus spoke and said, I praise You, Father, Lord of heaven and earth, that You hid these things from the wise and prudent, and revealed them to little ones. Yes, Father, for such was Your good pleasure. All things have been delivered to Me by My Father; and no one knows the Son except the Father; nor does anyone know the Father except the Son, and him to whom the Son chooses to reveal Him. Come to Me, all you who labor and are burdened, and I will give you rest. Take My yoke upon you, and learn from Me, for I am meek and humble of heart; and you will find rest for your souls. For My yoke is easy, and My burden light.
