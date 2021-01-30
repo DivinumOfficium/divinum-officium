@@ -1132,7 +1132,7 @@ sub gregor {
     'quinta', 'sexta', 'septima', 'octava',
     'nona', 'decima', 'undecima', 'duodecima',
     'tertia decima', 'quarta decima', 'quinta decima', 'sexta decima',
-    'septima decima', 'duodevicesima', 'undevicesima', 'vicesima',
+    'decima septima', 'duodevicesima', 'undevicesima', 'vicesima',
     'vicesima prima', 'vicesima secunda', 'vicesima tertia', 'vicesima quarta',
     'vicesima quinta', 'vicesima sexta', 'vicesima septima', 'vicesima octava',
     'vicesima nona', 'tricesima'
