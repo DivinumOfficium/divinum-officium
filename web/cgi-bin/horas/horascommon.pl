@@ -1550,7 +1550,7 @@ sub setheadline {
             ($a[0] =~ /Pasc[017]/i || $a[0] =~ /Pent01/i) ? 'Duplex I. classis'
           : ($a[0] =~ /(Adv1|Quad[1-6])/i) ? 'Semiduplex I. classis'
           : ($a[0] =~ /(Adv[2-4]|Quadp)/i) ? 'Semiduplex II. classis'
-          : ($a[0] =~ /(Epi[3-6])/i) ? 'Simplex'
+          : ($a[0] =~ /(Epi[3-6])/i && $dayofweek > 0) ? 'Simplex'
           : 'Semiduplex Dominica minor';
       }
     } elsif ($version =~ /1960|Newcal|Monastic/i && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
