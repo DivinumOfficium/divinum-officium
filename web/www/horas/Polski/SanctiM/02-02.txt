@@ -5,6 +5,32 @@
 [Lectio3]
 @Sancti/02-02:Lectio2:s/1-/4-/ s/1 .*Żadnéj/4 Żadnéj/s 
 
+[Responsory4]
+R. Przyjęliśmy, Boże, miłosierdzie twoje, wpośród kościoła twego: † jako imię twoje. Boże, tak i chwała twoja na końce ziemie: 
+* Sprawiedliwości pełna jest prawica twoja.
+V. Niech się weseli góra Syon: a niech się rozradują córki Judzkie: dla sądów twoich, Panie.
+R. Sprawiedliwości pełna jest prawica twoja.
+
+[Lectio5]
+@Sancti/02-02:Lectio4:s/Wtedy .*//s
+
+[Lectio6]
+@Sancti/02-02:Lectio4:s/.* Wtedy /Wtedy /s s/$/~/
+@Sancti/02-02:Lectio5:s/Powiedziane .*//s
+
+[Lectio7]
+@Sancti/02-02:Lectio5:s/.* Powiedziane /Powiedziane /s s/$/~/
+@Sancti/02-02:Lectio6:s/Wreszcie, .*//s
+
+[Lectio8]
+@Sancti/02-02:Lectio6:s/.* Wreszcie, /Wreszcie, /s
+
+[Responsory8]
+R. Teraz puszczasz sługę twego, Panie, w pokoju według słowa twego:
+* Gdyż oczy moje oglądały zbawienie twoje,
+V. Światłość na objawienie poganów, i chwałę ludu twego Izraelskiego.
+R. Gdyż oczy moje oglądały zbawienie twoje,
+
 [Lectio9]
 @Sancti/02-02:Lectio7:s/Dziewica .*//s
 
