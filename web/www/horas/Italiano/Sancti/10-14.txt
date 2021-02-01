@@ -4,9 +4,6 @@ S. Callisti Papae et Martyris;;Duplex;;3;;vide C2
 [Rank1570]
 S. Callisti Papae et Martyris;;Semiduplex;;2;;vide C2
 
-[RankNewcal]
-S. Callisti Papae et Martyris;;Duplex optional;;2;;vide C2
-
 [Rule]
 vide C2;
 9 lectiones
@@ -36,3 +33,12 @@ Callisto, di Roma, governò la Chiesa sotto l'imperatore Antonino Eliogabalo. Eg
 
 [Lectio9]
 @Commune/C4:Lectio91
+
+[Lectio7](rubrica tridentina)
+@Sancti/02-22:Lectio7
+
+[Lectio8](rubrica tridentina)
+@Sancti/02-22:Lectio8
+
+[Lectio9](rubrica tridentina)
+@Sancti/02-22:Lectio9
