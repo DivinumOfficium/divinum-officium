@@ -713,7 +713,7 @@ sub psalmi_minor {
       # office, and another for feasts and Paschaltide.
       $psalmkey = 'Prima '
         . (
-        (($winner =~ /Sancti/i && $winner{'Rank'} !~ /Vigil/i) || $dayname[0] =~ /Pasc/i)
+        (($winner =~ /Sancti/i && $winner{'Rank'} !~ /Vigil/i) || $winner =~ /Pasc|Quad6-[45]|Nat1-0/i)
         ? 'Festis'
         : $days[$dayofweek]
         );
