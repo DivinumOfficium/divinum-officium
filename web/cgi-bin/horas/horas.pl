@@ -1128,14 +1128,14 @@ sub gregor {
   $num -= $om[$i - 1];
   $gday = $yday - $num;
   my @ordinals = (
-    'prima', 'secunda', 'tertia', 'quarta',
-    'quinta', 'sexta', 'septima', 'octava',
-    'nona', 'decima', 'undecima', 'duodecima',
-    'tertia decima', 'quarta decima', 'quinta decima', 'sexta decima',
-    'decima septima', 'duodevicesima', 'undevicesima', 'vicesima',
-    'vicesima prima', 'vicesima secunda', 'vicesima tertia', 'vicesima quarta',
-    'vicesima quinta', 'vicesima sexta', 'vicesima septima', 'vicesima octava',
-    'vicesima nona', 'tricesima'
+    'prima', 'secúnda', 'tértia', 'quarta',
+    'quinta', 'sexta', 'séptima', 'octáva',
+    'nona', 'décima', 'undécima', 'duodécima',
+    'tértia décima', 'quarta décima', 'quinta décima', 'sexta décima',
+    'décima séptima', 'duodevicésima', 'undevicésima', 'vicésima',
+    'vicésima prima', 'vicésima secúnda', 'vicésima tértia', 'vicésima quarta',
+    'vicésima quinta', 'vicésima sexta', 'vicésima séptima', 'vicésima octáva',
+    'vicésima nona', 'tricésima'
   );
   my @months = (
     'January', 'February', 'March', 'April', 'May', 'June',
@@ -1156,7 +1156,7 @@ sub gregor {
   $day = $day + 0;
 
   if ($lang =~ /Latin/i) {
-    return ("Luna $ordinals[$gday-1] Anno Domini $year\n", ' ');
+    return ("Luna $ordinals[$gday-1] Anno Dómini $year\n", ' ');
   } elsif ($lang =~ /Polski/i) {
     return ("Roku Pańskiego $year");
   } else {
@@ -1177,14 +1177,14 @@ sub luna {
     'July', 'August', 'September', 'October', 'November', 'December'
   );
   my @ordinals = (
-    'prima', 'secunda', 'tertia', 'quarta',
-    'quinta', 'sexta', 'septima', 'octava',
-    'nona', 'decima', 'undecima', 'duodecima',
-    'tertia decima', 'quarta decima', 'quinta decima', 'sexta decima',
-    'septima decima', 'duodevicesima', 'undevicesima', 'vicesima',
-    'vicesima prima', 'vicesima secunda', 'vicesima tertia', 'vicesima quarta',
-    'vicesima quinta', 'vicesima sexta', 'vicesima septima', 'vicesima octava',
-    'vicesima nona', 'tricesima'
+    'prima', 'secúnda', 'tértia', 'quarta',
+    'quinta', 'sexta', 'séptima', 'octáva',
+    'nona', 'décima', 'undécima', 'duodécima',
+    'tértia décima', 'quarta décima', 'quinta décima', 'sexta décima',
+    'décima séptima', 'duodevicésima', 'undevicésima', 'vicésima',
+    'vicésima prima', 'vicésima secúnda', 'vicésima tértia', 'vicésima quarta',
+    'vicésima quinta', 'vicésima sexta', 'vicésima séptima', 'vicésima octáva',
+    'vicésima nona', 'tricésima'
   );
   my $sfx1 = (($day % 10) == 1) ? 'st' : (($day % 10) == 2) ? 'nd' : (($day % 10) == 3) ? 'rd' : 'th';
   my $t = (date_to_days($day, $month - 1, $year) - $edays + $epact2008);
