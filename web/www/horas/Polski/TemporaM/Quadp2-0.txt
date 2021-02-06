@@ -1,0 +1,44 @@
+[Lectio2]
+@Tempora/Quadp2-0:Lectio1:s/5:31; // s/1-4/4-6/ s/31 .*4 /4 /s
+@Tempora/Quadp2-0:Lectio2:s/!.*// s/: i ruszony.*/./s
+
+[Lectio3]
+@Tempora/Quadp2-0:Lectio2:s/5-8/6-10/ s/5.*(i ruszony)/6 \u$1/s
+@Tempora/Quadp2-0:Lectio3:s/!.*// s/11.*//s
+
+[Responsory4]
+R. Onegoż dnia wszedł Noe do korabia i synowie jego.
+* Żona jego, i żony synów jego.
+V. I wygładzone jest z ziemie: † i został sam Noe i ci, którzy z nim byli w korabiu.
+R. Żona jego, i żony synów jego.
+
+[Responsory8]
+R. Wspomniawszy potem Bóg na Noego, przywiódł wiatr na ziemię, i upadły wody.
+* I zahamowane są dżdże z nieba.
+V. I wróciły się wody z ziemie idące i wracające się, i poczęły opadać po stu i pięćdziesiąt dni.
+R. I zahamowane są dżdże z nieba.
+
+[Responsory11]
+R. I odpoczął korab miesiąca siódmego, na górach Armeńskich.
+* Lecz wody schodziły i opadały aż do dziesiątego miesiąca.
+V. Dziesiątego bowiem miesiąca, pierwszego dnia miesiąca, wierzchy gór okazały się.
+R. Lecz wody schodziły i opadały aż do dziesiątego miesiąca.
+
+[Ant Matutinum 3N]
+Ziarno padło na ziemię, na rodzajną † i gdy wzrosło, wydało plon stokrotny.
+V. Podnieś się, Panie, w mocy twojéj.
+R. Będziem śpiewać i wysławiać możności twoje.
+
+[Lectio9]
+@Tempora/Quadp2-0:Lectio7:s/Toteż .*//s
+
+[Lectio10]
+@Tempora/Quadp2-0:Lectio7:s/.* Toteż /Toteż /s s/$/~/
+@Tempora/Quadp2-0:Lectio8:s/If I .*//s
+
+[LectioE]
+Ciąg dalszy ++ Ewangelii świętej według Łukasza.
+!Łk 8:4-15
+Onego czasu: Gdy zgromadziła się rzesza wielka i z miast zdążali do Niego, mówił w przypowieści: «Wyszedł siewca rozsiewać ziarna swoje. A gdy siał, jedno padło przy drodze. I zdeptane jest, a ptaki niebieskie wydziobały je. A drugie padło na grunt skalisty, a wzszedłszy uschło, gdyż nie miało wilgoci. A inne padło między ciernie, a ciernie wzrosły wespół z nim i przygłuszyły je. A inne jeszcze padło na ziemię, na rodzajną i gdy wzrosło, wydało plon stokrotny». To mówiąc wołał: «Kto ma uszy ku słuchaniu, niechaj słucha».
+Pytali go tedy uczniowie Jego, co by to była za przypowieść. A On im rzekł: «Wam dane jest poznać tajemnicę Królestwa Bożego, innym zaś przez przypowieści, aby „patrzyli, a nie ujrzeli i usłyszeli, a nie zrozumieli”. Taką jest przypowieść: Ziarnem jest słowo Boże. Przy drodze są ci słuchacze, do których potem przychodzi szatan i porywa słowo z serca ich, aby uwierzywszy nie byli snadź zbawieni. A na gruncie skalistym są ci, którzy posłyszawszy z radością przyjmują słowo. Ale ci korzenia nie mają, wierzą do czasu, a w chwili próby ustępują. To znowu, które padło między ciernie, oznacza tych, którzy posłyszeli, ale odchodząc, przez troski, bogactwa i rozkosze życia są przygłuszeni i nie przynoszą owocu. Które jednak upadło na ziemię dobrą, oznacza tych, którzy w dobrym i szczerym sercu zachowują słowo i owoc przynoszą w wytrwałości».
+

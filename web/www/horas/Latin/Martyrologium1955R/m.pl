@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-#αινσφυϊόϋΑΙ
+#Γ΅Γ©Γ­Γ³Γ¶ΓµΓΊΓΌΓ»ΓΓ‰
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office  converts monthly files to daily files

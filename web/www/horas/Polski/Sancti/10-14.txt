@@ -4,9 +4,6 @@
 [Rank1570]
 Św. Kaliksta Papieża i Męczennika;;Semiduplex;;2;;vide C2
 
-[RankNewcal]
-Św. Kaliksta Papieża i Męczennika;;Duplex optional;;2;;vide C2
-
 [Rule]
 vide C2;
 9 lectiones
@@ -23,3 +20,12 @@ $Per Dominum
 
 [Lectio9]
 @Commune/C4:Lectio91
+
+[Lectio7](rubrica tridentina)
+@Sancti/02-22:Lectio7
+
+[Lectio8](rubrica tridentina)
+@Sancti/02-22:Lectio8
+
+[Lectio9](rubrica tridentina)
+@Sancti/02-22:Lectio9

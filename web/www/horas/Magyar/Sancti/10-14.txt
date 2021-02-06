@@ -4,47 +4,9 @@ S. Callisti Papae et Martyri;;Duplex;;3;;vide C3
 [Rank1570]
 S. Callisti Papae et Martyri;;Semiduplex;;2;;vide C3
 
-[RankNewcal]
-S. Callisti Papae et Martyri;;Duplex optional;;2;;vide C3
-
 [Rule]
 vide C3;
 9 lectiones
-
-[Oratio]
-O God, Who seest that in our own weakness we do continually fall, make, in thy~
-mercy, the ensamples of thy holy children a mean whereby to renew in us the love~
-of thyself.
-$Per Dominum
-
-[Lectio4]
-Callistus was a Roman, and ruled the Church in the time of the Emperor Antoninus~
-Heliogabalus. He confirmed the institution of the Ember Fasts, the observance of~
-which hath been received by tradition from the Apostles. He built the Church of~
-St Mary-beyond-the-Tiber, and enlarged the old burying-place on the Appian Way,~
-wherein are buried so many holy Priests and Martyrs, and which hath since been~
-called, on account of this enlargement, the Cemetery of Kallistus.
-
-[Lectio5]
-It was by his reverence that the body of the blessed Priest and Martyr~
-Calepodius, which had been cast into the Tiber, was carefully looked for, and,~
-when it had been found, honourably buried. He baptized Palmatius, of Consular,~
-and Simplicius, of Senatorial rank, and likewise Felix and Blanda, all of whom~
-in the end underwent martyrdom. On this account he was thrown into prison, where~
-he wonderfully healed a soldier named Privatus, who was full of sores, and so~
-gained him to Christ; and this Privatus had hardly received the faith, before he~
-was lashed to death with scourges loaded with lead.
-
-[Lectio6]
-Callistus sat as Pope five years, one month, and twelve days. He held five~
-Ordinations in the month of December, wherein he ordained sixteen Priests, four~
-Deacons, and eight Bishops. After being long starved, and repeatedly flogged, he~
-was pitched head - foremost down a well, and so crowned with martyrdom, under~
-the Emperor Alexander. His body was carried to the Cemetery of Calepodius on the~
-Aurelian Way, at the third mile -stone from the city, upon the 14th day of~
-October, but was afterwards taken to the Church of St Mary-beyond-the-Tiber,~
-which had been built by himself. There it lieth beneath the High Altar, and is~
-held in great reverence of all men.
 
 [Lectio7]
 @Commune/C4:Lectio71
@@ -55,6 +17,12 @@ held in great reverence of all men.
 [Lectio9]
 @Commune/C4:Lectio91
 
-[Lectio94]
-Callistus a Roman was head of the Church, while Antonius Helioglobalus was emperor. He fixed the four periods of the year for the Ember days, on which the custom of fasting, handed down by tradition from the Apostolic times, was to be observed by all. He built the Basilica of St Mary across the Tiber. Because he enlarged the old cemetery on the Appian Way, where many holy priests and martyrs were buried, it is now called the cemetery of St CAllistus. He reigned for five years one month and twelve days. After long starvation and many scourging he was thrown headforemost into a well, and so won the crow of martyrdom under the emperor Alexander. His body was buries in the cemetery of Calepodius in the Aurelian Way at the third milestone from the city, on October 14. Later it was placed under the high altar of the Basilica of St Mary across the Tiber, where it is venerated with great honor.
-&teDeum
+[Lectio7](rubrica tridentina)
+@Sancti/02-22:Lectio7
+
+[Lectio8](rubrica tridentina)
+@Sancti/02-22:Lectio8
+
+[Lectio9](rubrica tridentina)
+@Sancti/02-22:Lectio9
+

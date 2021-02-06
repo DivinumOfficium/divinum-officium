@@ -1,14 +1,98 @@
 @Sancti/02-02
 
+[Rule]
+12 lectiones
+Doxology=Nat
+Festum Domini
+
 [Capitulum Vespera]
 @Sancti/02-02
 _
-@CommuneM/C11:Capitulum Vespera:s/.*_//s
+@CommuneM/C10:Capitulum Vespera:s/.*_//s
+
+[Lectio1]
+@Sancti/02-02:Lectio1
+
+[Lectio2]
+@Sancti/02-02:Lectio2:s/-5/-4/ s/ Omne.*//s
+
+[Lectio3]
+@Sancti/02-02:Lectio2:s/1-/4-/ s/1 .*Omne/4 Omne/s
+
+[Lectio4]
+@Sancti/02-02:Lectio3
+
+[Responsory4]
+R. Suscépimus Deus misericórdiam tuam in médio templi tui: † secúndum nomen tuum, Deus, sic et laus tua in fines terræ:
+* Justítia plena est déxtera tua.
+V. Lætétur mons Sion, et exsúltent fíliæ Judæ: propter judícia tua, Dómine.
+R. Justítia plena est déxtera tua.
+
+[Lectio5]
+@Sancti/02-02:Lectio4:s/Tunc .*//s
+
+[Responsory5]
+@Sancti/02-02:Responsory4
+
+[Lectio6]
+@Sancti/02-02:Lectio4:s/.* Tunc /Tunc /s s/$/~/
+@Sancti/02-02:Lectio5:s/Dictum .*//s
+
+[Responsory6]
+@Sancti/02-02:Responsory5
+
+[Lectio7]
+@Sancti/02-02:Lectio5:s/.* Dictum /Dictum /s s/$/~/
+@Sancti/02-02:Lectio6:s/Dénique, .*//s
+
+[Responsory7]
+@Sancti/02-02:Responsory6
+
+[Lectio8]
+@Sancti/02-02:Lectio6:s/.* Dénique, /Dénique, /s
+
+[Responsory8]
+R. Nunc dimíttis servum tuum, Dómine, secúndum verbum tuum in pace:
+* Quia vidérunt óculi mei salutáre tuum.
+V. Lumen ad revelatiónem Géntium, et glóriam plebis tuæ Israël.
+R. Quia vidérunt óculi mei salutáre tuum.
+
+[Ant Matutinum 3N]
+Adórna * thálamum tuum, Sion, et súspice Regem Christum: † quem Virgo post partum, quem génuit, adorávit.
+
+[Lectio9]
+@Sancti/02-02:Lectio7:s/Virgo .*//s
+
+[Responsory9]
+@Sancti/02-02:Responsory7
+
+[Lectio10]
+@Sancti/02-02:Lectio7:s/.* Virgo /Virgo /s s/$/~/
+@Sancti/02-02:Lectio8:s/Et ipse .*//s
+
+[Responsory10]
+@Sancti/02-02:Responsory8
+
+[Lectio11]
+@Sancti/02-02:Lectio8:s/.* Et ipse /Et ipse /s s/$/~/
+@Sancti/02-02:Lectio9:s/Vides .*//s
+
+[Responsory11]
+R. Hódie María Virgo púerum offert in templo, † quem Símeon senex accépit in mánibus:
+* Et Anna vídua Christum agnóvit advenísse in terris.
+V. Cum indúcerent púerum Jesum paréntes ejus in templum, † accépit eum Símeon in ulnas suas.
+R. Et Anna vídua Christum agnóvit advenísse in terris.
+
+[Lectio12]
+@Sancti/02-02:Lectio9:s/.* Vides /Vides /s
+
+[Responsory12]
+@Sancti/03-25:Responsory8
 
 [Capitulum Laudes]
 @Sancti/02-02
 _
-@CommuneM/C11:Capitulum Vespera:s/.*_//s
+@CommuneM/C10:Capitulum Vespera:s/.*_//s
 
 [Responsory Tertia]
 @Commune/C6:Versum 1
@@ -18,3 +102,9 @@ _
 
 [Responsory Nona]
 @Commune/C6:Responsory Sexta:8-9
+
+[LectioE]
+Sequéntia ++ sancti Evangélii secúndum Lucam.
+!Luc 2:22-32.
+In illo témpore: Postquam impleti sunt dies purgatiónis Maríæ, secúndum legem Moysi, tulérunt Jesum in Jerúsalem, ut sísterent eum Dómino, sicut scriptum est in lege Dómini: Quia omne masculínum adapériens vulvam sanctum Dómino vocábitur. Et ut darent hóstiam, secúndum quod dictum est in lege Dómini, par túrturum aut duos pullos columbárum. Et ecce, homo erat in Jerúsalem, cui nomen Símeon, et homo iste justus et timorátus, exspéctans consolatiónem Israël, et Spíritus Sanctus erat in eo. Et respónsum accéperat a Spíritu Sancto, non visúrum se mortem, nisi prius vidéret Christum Dómini. Et venit in spíritu in templum. Et cum indúcerent púerum Jesum parentes ejus, ut fácerent secúndum consuetúdinem legis pro eo: et ipse accépit eum in ulnas suas, et benedíxit Deum, et dixit: Nunc dimíttis servum tuum, Dómine, secúndum verbum tuum in pace: Quia vidérunt óculi mei salutáre tuum: Quod parásti ante fáciem ómnium populórum: Lumen ad revelatiónem géntium et glóriam plebis tuæ Israël.
+

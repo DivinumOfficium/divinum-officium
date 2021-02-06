@@ -4,9 +4,6 @@ S. Callisti Papae et Martyri;;Duplex;;3;;vide C2
 [Rank1570]
 S. Callisti Papae et Martyri;;Semiduplex;;2;;vide C2
 
-[RankNewcal]
-S. Callisti Papae et Martyri;;Duplex optional;;2;;vide C2
-
 [Rule]
 vide C2;
 9 lectiones
@@ -54,6 +51,15 @@ held in great reverence of all men.
 
 [Lectio9]
 @Commune/C4:Lectio91
+
+[Lectio7](rubrica tridentina)
+@Sancti/02-22:Lectio7
+
+[Lectio8](rubrica tridentina)
+@Sancti/02-22:Lectio8
+
+[Lectio9](rubrica tridentina)
+@Sancti/02-22:Lectio9
 
 [Lectio94]
 Callistus, a Roman, was head of the Church while Antonius Heliogabalus was emperor. He fixed the four periods of the year for the Ember days, on which the custom of fasting, handed down by tradition from the Apostolic times, was to be observed by all. He built the Basilica of St. Mary across the Tiber. Because he enlarged the old cemetery on the Appian Way, where many holy priests and martyrs were buried, it is now called the cemetery of St. Callistus. He reigned for five years one month and twelve days. After long starvation and many scourging he was thrown headforemost into a well, and so won the crown of martyrdom under the emperor Alexander. His body was buried in the cemetery of Calepodius in the Aurelian Way at the third milestone from the city, on October 14. Later it was placed under the high altar of the Basilica of St. Mary across the Tiber, where it is venerated with great honor.

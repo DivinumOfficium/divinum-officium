@@ -645,7 +645,7 @@ sub lectio : ScriptFunc {
       && $rank < 2
       && $winner{Rank} !~ /vigil/i
       && ( $version !~ /monastic/i
-        || $dayname[0] !~ /Nat/i)
+        || $dayname[0] !~ /Nat|Epi1/i)
     )
     )
   {
@@ -738,7 +738,7 @@ sub lectio : ScriptFunc {
   if (
     !$w
     && (
-      ($communetype =~ /^ex/i && $commune !~ /Sancti/i)
+      ($communetype =~ /^ex/i && $commune !~ /Sancti/i && $rank > 3)
       || ( $num < 4
         && $homilyflag
         && exists($commune{"Lectio$num"}))
@@ -795,7 +795,6 @@ sub lectio : ScriptFunc {
 
   if ($commune{Rule} =~ /Special Lectio $num/) {
     %mariae = %{setupstring($datafolder, $lang, "$communename/C10.txt")};
-    if ($version =~ /Trident/i) { %mariae = %{setupstring($datafolder, $lang, "$communename/C10t.txt")}; }
     my $name = getC10readingname();
     $w = $mariae{$name};
     setbuild2("Mariae $name");
@@ -968,7 +967,6 @@ sub lectio : ScriptFunc {
         $s = $c{"Responsory$na"};
       }
       if (exists($winner{"Responsory$na"})) { $s = ''; }
-      matins_lectio_responsory_alleluia($s, $lang);
 
       #$$$ watch initia rule
     }
@@ -980,11 +978,10 @@ sub lectio : ScriptFunc {
       if (!$s) {
         %w = (columnsel($lang)) ? %commune : %commune2;
         if (exists($w{"Responsory$na"})) { $s = $w{"Responsory$na"}; }
-        matins_lectio_responsory_alleluia($s, $lang);
       }
     }
-    $w =~ s/\s*$//;
-    $w .= "\n\_\n$s";
+    matins_lectio_responsory_alleluia($s, $lang);
+    $w =~ s/\s*$/\n\_\n$s/;
   }
   $w = responsory_gloria($w, $num);
 

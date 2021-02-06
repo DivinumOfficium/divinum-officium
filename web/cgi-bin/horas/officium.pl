@@ -35,7 +35,7 @@ our $missa = 0;
 our $officium = 'officium.pl';
 our $version = 'Rubrics 1960';
 
-@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
+@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', 'Ordo Praedicatorum', '1960 Newcalendar');
 
 #***common variables arrays and hashes
 #filled  getweek()
@@ -199,7 +199,7 @@ our $octavam = '';    #to avoid duplication of commemorations
 $daycolor =
     ($commune =~ /(C1[0-9])/) ? "blue"
   : ($dayname[1] =~ /(Vigilia Pentecostes|Martyr)/i) ? "red"
-  : ($dayname[1] =~ /(Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Cena)/i) ? "black"
+  : ($dayname[1] =~ /(Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Cena)/i) ? "black"
   : ($dayname[1] =~ /(Vigilia|Quattuor|Passionis|Quadragesima|Hebdomadæ Sanctæ|Septuagesim|Sexagesim|Quinquagesim|Ciner|Adventus)/i) ? "purple"
   : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
   : ($dayname[1] =~ /(Pentecostes|Evangel|Innocentium|Sanguinis|Cruc|Apostol)/i) ? "red"

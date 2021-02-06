@@ -1,17 +1,66 @@
+[Lectio1]
+@Tempora/Quadp3-0:Lectio1:s/-6/-5/ s/And when.*//s
+
+[Lectio2]
+@Tempora/Quadp3-0:Lectio1:s/-6/-8/ s/1-/5-/ s/1 .*(And when)/5 $1/s
+@Tempora/Quadp3-0:Lectio2:s/!.*// s/9 .*//s
+
+[Responsory4]
+R. And God said to Abraham: Sara thy wife shall bear thee a son,
+* And thou shalt call his name Isaac.
+V. I will return and come to thee at this time, life accompanying, and Sara thy wife shall have a son
+R. And thou shalt call his name Isaac.
+
+[Lectio5]
+@Tempora/Quadp3-0:Lectio4:s/For that .*//s
+
+[Lectio6]
+@Tempora/Quadp3-0:Lectio4:s/.* For that /For that /s s/$/~/
+@Tempora/Quadp3-0:Lectio5:s/But as .*//s
+
+[Lectio7]
+@Tempora/Quadp3-0:Lectio5:s/.* But as /But as /s
+
+
+[Responsory8]
+R. And the Lord visited Sara, as he had promised: and fulfilled what he had spoken, and she conceived and bore a son in her old age,
+* At the time that God had foretold her.
+V. And Abraham called the name of his son, whom Sara bore him, Isaac.
+R. At the time that God had foretold her.
+
+[Ant Matutinum 3N]
+Son of David, have mercy on me. What wilt thou that I do to thee? Lord, that I may see.
+V. Be thou exalted, O Lord, in thy own strength.
+R. We will sing and praise thy power.
+
+[Lectio10]
+@Tempora/Quadp3-0:Lectio8:s/Mankind .*//s
+
+[Lectio11]
+@Tempora/Quadp3-0:Lectio8:s/.* Mankind /Mankind /s s/$/~/
+@Tempora/Quadp3-0:Lectio9:s/As, therefore, .*//s
+
+[Lectio12]
+@Tempora/Quadp3-0:Lectio9:s/.* As, therefore, /As, therefore, /s
+
 [LectioE]
-v. Continuation of the Holy Gospel according to Luke
+Continuation ++ of the Holy Gospel according to Luke
 !Luke 18:31-43
-18:31 Then Jesus took unto him the twelve, and said to them: Behold, we go up to Jerusalem, and all things shall be accomplished which were written by the prophets concerning the Son of man.
-18:32 For he shall be delivered to the Gentiles, and shall be mocked, and scourged, and spit upon:
-18:33 And after they have scourged him, they will put him to death; and the third day he shall rise again.
-18:34 And they understood none of these things, and this word was hid from them, and they understood not the things that were said.
-18:35 Now it came to pass, when he drew nigh to Jericho, that a certain blind man sat by the way side, begging.
-18:36 And when he heard the multitude passing by, he asked what this meant.
-18:37 And they told him, that Jesus of Nazareth was passing by.
-18:38 And he cried out, saying: Jesus, son of David, have mercy on me.
-18:39 And they that went before, rebuked him, that he should hold his peace: but he cried out much more: Son of David, have mercy on me.
-18:40 And Jesus standing, commanded him to be brought unto him. And when he was come near, he asked him,
-18:41 Saying: What wilt thou that I do to thee? But he said: Lord, that I may see.
-18:42 And Jesus said to him: Receive thy sight: thy faith hath made thee whole.
-18:43 And immediately he saw, and followed him, glorifying God. And all the people, when they saw it, gave praise to God.
-$Te decet
+At that time, Jesus taking to Himself the Twelve said to them, Behold, we are~
+going up to Jerusalem, and all things that have been written by the prophets~
+concerning the Son of Man will be accomplished. For He will be delivered to the~
+Gentiles, and will be mocked and scourged and spit upon; and after they have~
+scourged Him, they will put Him to death; and on the third day He will rise~
+again. And they understood none of these things and this saying was hidden from~
+them, neither did they get to know the things that were being said. Now it came~
+to pass as He drew near to Jericho, that a certain blind man was sitting by the~
+wayside, begging; but hearing a crowd passing by, he inquired what this might~
+be. And they told him that Jesus of Nazareth was passing by. And he cried out,~
+saying, Jesus, Son of David, have mercy on me! And they who went in front~
+angrily tried to silence him. But he cried out all the louder, Son of David,~
+have mercy on me! Then Jesus stopped and commanded that he should be brought to~
+Him. And when he drew near, He asked him, saying, What would you have Me do for~
+you? And he said, Lord, that I may see. And Jesus said to him, Receive your~
+sight, your faith has saved you. And at once he received his sight, and followed~
+Him, glorifying God. And all the people upon seeing it gave praise to God.
+

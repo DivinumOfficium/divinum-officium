@@ -1,0 +1,40 @@
+@Commune/C10
+
+[Capitulum Vespera]
+@CommuneM/C10
+
+[Ant 1]
+@Sancti/01-01:Ant 3
+
+[Ant 2]
+@Sancti/01-01:Ant 2
+
+[Oratio]
+@Sancti/01-01
+
+[Responsory3]
+@CommuneM/C10
+
+[Ant Prima]
+@Sancti/01-01:Ant Vespera:1
+
+[Ant Tertia]
+@Sancti/01-01:Ant Vespera:2
+
+[Ant Sexta]
+@Sancti/01-01:Ant Vespera:3
+
+[Ant Nona]
+@Sancti/01-01:Ant Vespera:5
+
+[Capitulum Laudes]
+@:Capitulum Vespera
+
+[Responsory Tertia]
+@CommuneM/C6
+
+[Responsory Sexta]
+@CommuneM/C6
+
+[Responsory Nona]
+@CommuneM/C6

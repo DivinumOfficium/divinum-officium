@@ -486,48 +486,37 @@ sub specials {
         next;
       }
       my %suffr = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};
-      my (@suffr, $comment);
+      my ($suffr, $comment);
 
       if ($version =~ /trident/i) {
-        my $suffr = '';
-        my $c = ($dayname[0] =~ /(pasc)/i) ? '2' : 'TridentinumFeriale';
-        if ($dayname[1] =~ /(feria|vigilia)/i) { $suffr = $suffr{"Suffragium$c"}; }
-        if ($commune !~ /(C1[0-9])/i) {
-          if (($month == 1 && $day > 13) || $month == 2 && $day == 1) {
-            $suffr .= $suffr{Suffragium3Epi};
-          } else {
-            $suffr .= $suffr{Suffragium3};
+        if ($dayname[0] =~ /pasc/i && $dayname[1] =~ /(?:feria|vigilia)/i) { $suffr = $suffr{"Suffragium2"}; }
+        else {
+          if ($dayname[1] =~ /(?:feria|vigilia)/i && $commune !~ /C10/) {
+            $suffr = $suffr{"SuffragiumTridentinumFeriale"};
           }
+          if ($commune !~ /(C1[0-9])/i) {
+            if (($month == 1 && $day > 13) || $month == 2 && $day == 1) {
+              $suffr .= $suffr{Suffragium3Epi};
+            } else {
+              $suffr .= $suffr{Suffragium3};
+            }
+          }
+          my($v) = $hora =~ /vespera/i ? 1 : 2;
+          $suffr .= $suffr{"Suffragium4$v"} if ($version !~ /1570/);
+          $suffr .= $suffr{"Suffragium5$v"};
+          $suffr .= $suffr{Suffragium6};
         }
-
-        if ($version !~ /1570/) {
-          if ($hora =~ /vespera/i) {
-            $suffr .= $suffr{Suffragium41} . $suffr{Suffragium51};
-          } else {
-            $suffr .= $suffr{Suffragium42} . $suffr{Suffragium52};
-          }
-        } else {
-          if ($hora =~ /vespera/i) {
-            $suffr .= $suffr{Suffragium51};
-          } else {
-            $suffr .= $suffr{Suffragium52};
-          }
-        }
-        $suffr .= $suffr{Suffragium6};
-        if ($churchpatron) { $suffr =~ s/r\. N\./$churchpatron/; }
-        @suffr = split("\n", $suffr);
         $comment = 3;
       } else {
         $comment = ($dayname[0] =~ /(pasc)/i) ? 2 : 1;
         my $c = $comment;
         if ($c == 1 && $commune =~ /(C1[0-9])/) { $c = 11; }
         $suffr = $suffr{"Suffragium$c"};
-        if ($churchpatron) { $suffr =~ s/r\. N\./$churchpatron/; }
-        @suffr = split("\n", $suffr);
       }
+      if ($churchpatron) { $suffr =~ s/r\. N\./$churchpatron/; }
       setcomment($label, 'Suffragium', $comment, $lang);
       setbuild1("Suffragium$comment", 'included');
-      foreach $l (@suffr) { push(@s, $l); }
+      push (@s, split("\n", $suffr));
       next;
     }
 
@@ -724,7 +713,7 @@ sub psalmi_minor {
       # office, and another for feasts and Paschaltide.
       $psalmkey = 'Prima '
         . (
-        (($winner =~ /Sancti/i && $winner{'Rank'} !~ /Vigil/i) || $dayname[0] =~ /Pasc/i)
+        (($winner =~ /Sancti/i && $winner{'Rank'} !~ /Vigil/i) || $winner =~ /Pasc|Quad6-[45]|Nat1-0/i)
         ? 'Festis'
         : $days[$dayofweek]
         );
@@ -919,8 +908,10 @@ sub psalmi_major {
 
   if ($version =~ /monastic/i) {
     my $head = "Daym$dayofweek";
-    if ($winner =~ /Sancti/i && $rank >= 4 && $dayname[1] !~ /vigil/i) { $head = 'DaymF'; }
-    if ($hora =~ /Laudes/i && $dayname[0] =~ /Pasc/i && $head =~ /Daym0/i) { $head = 'DaymP'; }
+    if ($hora =~ /Laudes/i) {
+      if ($rule =~ /Psalmi Dominica/ || ($winner =~ /Sancti/i && $rank >= 4 && $dayname[1] !~ /vigil/i)) { $head = 'DaymF'; }
+      if ($dayname[0] =~ /Pasc/i && $head =~ /Daym0/i) { $head = 'DaymP'; }
+    }
     @psalmi = split("\n", $psalmi{"$head $hora"});
 
     if ($hora =~ /Laudes/i && $head =~ /Daym[1-6]/) {
@@ -1174,7 +1165,7 @@ sub oratio {
     || ($winner{Rank} =~ /Quattuor/i && $version !~ /1960|Monastic/i && $hora =~ /Vespera/i))
   {
     my $name = "$dayname[0]-0";
-    if ($name =~ /(Epi1|Nat)/i) { $name = 'Epi1-0a'; }
+    if ($name =~ /(Epi1|Nat)/i && $version ne 'Monastic') { $name = 'Epi1-0a'; }
     %w = %{setupstring($datafolder, $lang, "$temporaname/$name.txt")};
   }
 

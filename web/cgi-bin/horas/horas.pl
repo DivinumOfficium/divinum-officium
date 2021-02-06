@@ -60,7 +60,7 @@ sub horas {
   $ind1 = $ind2 = 0;
   $searchind = 0;
 
-  if ($version !~ /(Monastic|1570|1955|1960|Newcal)/i) {
+  if ($version !~ /(Monastic|1570|1955|1960|Newcal|Praedicatorum)/i) {
     ante_post('Ante');
   } else {
     $searchind++;
@@ -103,7 +103,7 @@ sub horas {
     }
   }
 
-  if ($version !~ /(Monastic|1570|1955|1960|Newcal)/) {
+  if ($version !~ /(Monastic|1570|1955|1960|Newcal|Praedicatorum)/) {
     ante_post('Post');
   } else {
     $searchind++;
@@ -307,7 +307,7 @@ sub Alleluia : ScriptFunc {
 sub Alleluia_ant {
   my ($lang, $full, $ucase) = @_;
   my $s = translate('Alleluia', $lang);
-  if (($full || ($duplex >= 3) || ($version =~ /1960|Newcal|Monastic/i))) {
+  if (($full || ($duplex >= 3) || ($version =~ /1960|Newcal|Monastic|Praedicatorum/i))) {
     $s .= ", * $s, $s.";
     $s =~ s/ ./\L$&/g unless $ucase;
   }
@@ -495,6 +495,7 @@ sub psalm : ScriptFunc {
   if ($version =~ /1960|Newcal/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i) { $fname =~ s/Psalm88/Psalm88r/; }
   if ($version =~ /1960|Newcal/ && $num !~ /\(/ && $month == 8 && $day == 6) { $fname =~ s/Psalm88/Psalm88a/; }
   $fname = checkfile($lang, $fname);
+  # load psalms
   @lines = do_read($fname);
   my $str = 'Psalmus';
   $str = translate($str, $lang);
@@ -644,7 +645,7 @@ sub getantcross {
 
 sub depunct {
   my $item = shift;
-  $item =~ s/[.,:?!"';*]//g;
+  $item =~ s/[.,:?!"';*()]//g;
   $item =~ s/[áÁ]/a/g;
   $item =~ s/[éÉ]/e/g;
   $item =~ s/[íí]/i/g;
@@ -913,7 +914,7 @@ sub ant_Benedictus : ScriptFunc {
     $ant = $specials{"Adv Ant $day" . "L"};
   }
   my @ant_parts = split('\*', $ant);
-  if ($num == 1 && $duplex < 3 && $version !~ /1960|Newcal/ && $version !~ /monastic/i) { return "Ant. $ant_parts[0]"; }
+  if ($num == 1 && $duplex < 3 && $version !~ /1960|Newcal|Praedicatorum/ && $version !~ /monastic/i) { return "Ant. $ant_parts[0]"; }
 
   if ($num == 1) {
     return "Ant. $ant";
@@ -1127,14 +1128,14 @@ sub gregor {
   $num -= $om[$i - 1];
   $gday = $yday - $num;
   my @ordinals = (
-    'prima', 'secunda', 'tertia', 'quarta',
-    'quinta', 'sexta', 'septima', 'octava',
-    'nona', 'decima', 'undecima', 'duodecima',
-    'tertia decima', 'quarta decima', 'quinta decima', 'sexta decima',
-    'septima decima', 'duodevicesima', 'undevicesima', 'vicesima',
-    'vicesima prima', 'vicesima secunda', 'vicesima tertia', 'vicesima quarta',
-    'vicesima quinta', 'vicesima sexta', 'vicesima septima', 'vicesima octava',
-    'vicesima nona', 'tricesima'
+    'prima', 'secúnda', 'tértia', 'quarta',
+    'quinta', 'sexta', 'séptima', 'octáva',
+    'nona', 'décima', 'undécima', 'duodécima',
+    'tértia décima', 'quarta décima', 'quinta décima', 'sexta décima',
+    'décima séptima', 'duodevicésima', 'undevicésima', 'vicésima',
+    'vicésima prima', 'vicésima secúnda', 'vicésima tértia', 'vicésima quarta',
+    'vicésima quinta', 'vicésima sexta', 'vicésima séptima', 'vicésima octáva',
+    'vicésima nona', 'tricésima'
   );
   my @months = (
     'January', 'February', 'March', 'April', 'May', 'June',
@@ -1155,7 +1156,7 @@ sub gregor {
   $day = $day + 0;
 
   if ($lang =~ /Latin/i) {
-    return ("Luna $ordinals[$gday-1] Anno Domini $year\n", ' ');
+    return ("Luna $ordinals[$gday-1] Anno Dómini $year\n", ' ');
   } elsif ($lang =~ /Polski/i) {
     return ("Roku Pańskiego $year");
   } else {
@@ -1176,14 +1177,14 @@ sub luna {
     'July', 'August', 'September', 'October', 'November', 'December'
   );
   my @ordinals = (
-    'prima', 'secunda', 'tertia', 'quarta',
-    'quinta', 'sexta', 'septima', 'octava',
-    'nona', 'decima', 'undecima', 'duodecima',
-    'tertia decima', 'quarta decima', 'quinta decima', 'sexta decima',
-    'septima decima', 'duodevicesima', 'undevicesima', 'vicesima',
-    'vicesima prima', 'vicesima secunda', 'vicesima tertia', 'vicesima quarta',
-    'vicesima quinta', 'vicesima sexta', 'vicesima septima', 'vicesima octava',
-    'vicesima nona', 'tricesima'
+    'prima', 'secúnda', 'tértia', 'quarta',
+    'quinta', 'sexta', 'séptima', 'octáva',
+    'nona', 'décima', 'undécima', 'duodécima',
+    'tértia décima', 'quarta décima', 'quinta décima', 'sexta décima',
+    'décima séptima', 'duodevicésima', 'undevicésima', 'vicésima',
+    'vicésima prima', 'vicésima secúnda', 'vicésima tértia', 'vicésima quarta',
+    'vicésima quinta', 'vicésima sexta', 'vicésima séptima', 'vicésima octáva',
+    'vicésima nona', 'tricésima'
   );
   my $sfx1 = (($day % 10) == 1) ? 'st' : (($day % 10) == 2) ? 'nd' : (($day % 10) == 3) ? 'rd' : 'th';
   my $t = (date_to_days($day, $month - 1, $year) - $edays + $epact2008);
@@ -1233,7 +1234,9 @@ sub getordinarium {
   if ($version =~ /(1955|1960|Newcal)/) { $suffix .= "1960"; }
   elsif ($version =~ /trident/i && $hora =~ /(laudes|vespera)/i) { $suffix .= "Trid"; }
   elsif ($version =~ /Monastic/i) { $suffix .= "M"; }
+  elsif ($version =~ /Ordo Praedicatorum/i) { $suffix .= "OP"; }
   my $fname = checkfile($lang, "Ordinarium/$command$suffix.txt");
+
   @script = process_conditional_lines(do_read($fname));
   $error = "$fname cannot be opened or gives an empty script." unless @script;
 
