@@ -1,5 +1,87 @@
 @Tempora/Quad3-0
 
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Tempora/Quad3-0:Lectio1:s/-10/-4/ s/5.*//s
+
+[Lectio2]
+@Tempora/Quad3-0:Lectio1:s/2-/5-/ s/2.*5/5/s
+
+[Lectio3]
+@Tempora/Quad3-0:Lectio2:
+
+[Lectio4]
+@Tempora/Quad3-0:Lectio3
+
+[Responsory4]
+R. Tóllite hinc vobíscum múnera, et ite ad dóminum terræ: † et cum invenéritis, adoráte eum super terram:
+* Deus autem meus fáciat eum vobis placábilem: † et remittat et hunc fratrem vestrum vobíscum, † et eum quem tenet in vinculis.
+V. Súmite de óptimis terræ frugibus in vasis vestris, et deferte viro múnera.
+R. Deus autem meus fáciat eum vobis placábilem: † et remittat et hunc fratrem vestrum vobíscum, † et eum quem tenet in vinculis.
+
+[Lectio5]
+@Tempora/Quad3-0:Lectio4:s/Justum .*//s
+
+[Responsory5]
+@Tempora/Quad3-0:Responsory4
+
+[Lectio6]
+@Tempora/Quad3-0:Lectio4:s/.* Justum /Justum /s s/$/~/
+@Tempora/Quad3-0:Lectio5:s/Sed ea .*//s
+
+[Responsory6]
+@Tempora/Quad3-0:Responsory5
+
+[Lectio7]
+@Tempora/Quad3-0:Lectio5:s/.* Sed ea /Sed ea /s s/$/~/
+@Tempora/Quad3-0:Lectio6:s/Jure .*//s
+
+[Responsory7]
+@Tempora/Quad3-0:Responsory6
+
+[Lectio8]
+@Tempora/Quad3-0:Lectio6:s/.* Jure /Jure /s
+
+[Responsory8]
+R. Iste est frater vester mínimus, de quo dixerátis mihi? † Deus misereátur tibi, fili mi.
+* Festinavítque in domum, et plorávit: † quia erumpébant lácrimæ, et non póterat se continére.
+V. Attóllens autem Ioseph óculos, vidit Béniamin stántem: † et commóta sunt ómnia víscera eius super fratre suo.
+R. Festinavítque in domum, et plorávit: † quia erumpébant lácrimæ, et non póterat se continére.
+
+[Ant Matutinum 3N]
+Si in dígito Dei eício daemónia, † profécto pervénit in vos regnum Dei.
+
+[Lectio9]
+@Tempora/Quad3-0:Lectio7:s/Quidam .*//s
+
+[Responsory9]
+@Tempora/Quad3-0:Responsory7
+
+[Lectio10]
+@Tempora/Quad3-0:Lectio7:s/.* Quidam /Quidam /s s/$/~/
+@Tempora/Quad3-0:Lectio8:s/Et alii .*//s
+
+[Responsory10]
+@Tempora/Quad3-0:Responsory8
+
+[Lectio11]
+@Tempora/Quad3-0:Lectio8:s/.* Et alii /Et alii /s s/$/~/
+@Tempora/Quad3-0:Lectio9:s/Si autem omne.*//s
+
+[Responsory11]
+@Tempora/Quad3-0:Responsory9
+
+[Lectio12]
+@Tempora/Quad3-0:Lectio9:s/.* Si autem omne/Si autem omne/s
+
+[Responsory12]
+R. Dixit Ioseph úndecim frátribus suis: Ego sum Ioseph, quem vendidístis in Ægyptum: † adhuc vivit pater noster sénior, de quo dixerátis mihi?
+* Ite, addúcite eum ad me, ut possit vívere.
+V. Biénnium enim est, quod cœpit esse fames in terra: † et adhuc restant anni quinque, quibus nec arári póterit, nec meti.
+R. Ite, addúcite eum ad me, ut possit vívere.
+
 [Capitulum Vespera]
 @Tempora/Quad3-0
 _
@@ -25,31 +107,7 @@ _
 @Psalterium/Major Special:QuadM Vespera:3-8
 
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Lucam
+Sequéntia ++ sancti Evangélii secúndum Lucam.
 !Luc 11:14-28
-11:14 Et erat ejiciens daemonium, et illud erat mutum. Et cum ejecisset~
-daemonium, locutus est mutus, et admiratae sunt turbae.
-11:15 Quidam autem ex eis dixerunt: In Beelzebub principe daemoniorum ejicit~
-daemonia.
-11:16 Et alii tentantes, signum de caelo quaerebant ab eo.
-11:17 Ipse autem ut vidit cogitationes eorum, dixit eis: Omne regnum in seipsum~
-divisum desolabitur, et domus supra domum cadet.
-11:18 Si autem et Satanas in seipsum divisus est, quomodo stabit regnum ejus?~
-quia dicitis in Beelzebub me ejicere daemonia.
-11:19 Si autem ego in Beelzebub ejicio daemonia: filii vestri in quo ejiciunt?~
-ideo ipsi judices vestri erunt.
-11:20 Porro si in digito Dei ejicio daemonia: profecto pervenit in vos regnum~
-Dei.
-11:21 Cum fortis armatus custodit atrium suum, in pace sunt ea quae possidet.
-11:22 Si autem fortior eo superveniens vicerit eum, universa arma ejus auferet,~
-in quibus confidebat, et spolia ejus distribuet.
-11:23 Qui non est mecum, contra me est: et qui non colligit mecum, dispergit.
-11:24 Cum immundus spiritus exierit de homine, ambulat per loca inaquosa,~
-quaerens requiem: et non inveniens dicit: Revertar in domum meam unde exivi.
-11:25 Et cum venerit, invenit eam scopis mundatam, et ornatam.
-11:26 Tunc vadit, et assumit septem alios spiritus secum, nequiores se, et~
-ingressi habitant ibi. Et fiunt novissima hominis illius pejora prioribus.
-11:27 Factum est autem, cum haec diceret: extollens vocem quaedam mulier de~
-turba dixit illi: Beatus venter qui te portavit, et ubera quae suxisti.
-11:28 At ille dixit: Quinimmo beati, qui audiunt verbum Dei et custodiunt illud.
-$Te decet
+In illo témpore: Erat Jesus ejíciens dæmónium, et illud erat mutum. Et cum ejecísset dæmónium, locútus est mutus, et admirátæ sunt turbæ. Quidam autem ex eis dixérunt: In Beélzebub, príncipe dæmoniórum, éjicit dæmónia. Et alii tentántes, signum de cœlo quærébant ab eo. Ipse autem ut vidit cogitatiónes eórum, dixit eis: Omne regnum in seípsum divísum desolábitur, et domus supra domum cadet. Si autem et sátanas in seípsum divísus est, quómodo stabit regnum ejus? quia dícitis, in Beélzebub me ejícere dæmónia. Si autem ego in Beélzebub ejício dæmónia: fílii vestri in quo ejíciunt? Ideo ipsi júdices vestri erunt. Porro si in dígito Dei ejício dæmónia: profécto pervénit in vos regnum Dei. Cum fortis armátus custódit átrium suum, in pace sunt ea, quæ póssidet. Si autem fórtior eo supervéniens vícerit eum, univérsa arma ejus áuferet, in quibus confidébat, et spólia ejus distríbuet. Qui non est mecum, contra me est: et qui non cólligit mecum, dispérgit. Cum immúndus spíritus exíerit de hómine, ámbulat per loca inaquósa, quærens réquiem: et non invéniens, dicit: Revértar in domum meam, unde exivi. Et cum vénerit, invénit eam scopis mundátam, et ornátam. Tunc vadit, et assúmit septem alios spíritus secum nequióres se, et ingréssi hábitant ibi. Et fiunt novíssima hóminis illíus pejóra prióribus. Factum est autem, cum hæc díceret: extóllens vocem quædam múlier de turba, dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. At ille dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud.
+
