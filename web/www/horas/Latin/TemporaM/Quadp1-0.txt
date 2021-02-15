@@ -15,13 +15,13 @@ _
 @Psalterium/Major Special:Day0M Laudes:3-8
 
 [Responsory Tertia]
-@Psalterium/Minor Special:Dominica TertiaM:5-6
+@Psalterium/Minor Special:Dominica Tertia:s/.*_.//s
 
 [Responsory Sexta]
-@Psalterium/Minor Special:Dominica SextaM:5-6
+@Psalterium/Minor Special:Dominica Sexta:s/.*_.//s
 
 [Responsory Nona]
-@Psalterium/Minor Special:Dominica NonaM:5-6
+@Psalterium/Minor Special:Dominica Nona:s/.*_.//s
 
 [Capitulum Vespera 3]
 @Tempora/Quadp1-0:Capitulum Vespera
