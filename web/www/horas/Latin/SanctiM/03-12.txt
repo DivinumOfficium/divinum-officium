@@ -3,6 +3,9 @@
 [Rank]
 S. Gregorii Papæ Confessoris et Ecclesiæ Doctoris;;II Class;;5;;vide C4
 
+[Rule]
+12 lectiones
+
 [Ant Vespera]
 @:Ant Laudes
 
@@ -41,10 +44,90 @@ Sit Patri laus ingénito,
 Sit decus Unigénito:
 Sit utriúsque párili
 Majéstas summa Flámini.
-Amen. 
+Amen.
 
 [Ant 1]
 @Commune/C4a::s/N\./Gregóri/
+
+[Ant Matutinum]
+@CommuneM/C4
+
+[Hymnus Matutinum]
+Anglórum jam apóstolus,
+Nunc angelórum sócius,
+Ut tunc, Gregóri, géntibus,
+Succúrre jam credéntibus.
+_
+Tu largas opum cópias,
+Omnémque mundi glóriam
+Spernis, ut inops ínopem
+Jesum sequáris príncipem.
+_
+Vidétur egens náufragus,
+Dum stipem petit Angelus:
+Tu munus jam post géminum,
+Prǽbes et vas argénteum.
+_
+Ex hoc te Christus témpore
+Suæ præfert Ecclésiæ,
+Sic Petri gradum pércipis,
+Cujus et norman séqueris.
+_
+O Póntifex egrégie,
+Lux et decus Ecclésiæ,
+Non sinas in perículis
+Quos tot mandatis ínstruis.
+_
+Sit Patri laus ingénito,
+Sit decus Unigénito,
+Sit utriúsque párili
+Majéstas summa Flámini.
+Amen.
+
+[Lectio1]
+@Commune/C4a::s/-5/-4/ s/5.*//s
+
+[Lectio2]
+@Commune/C4a:Lectio1:s/1-5/4-7/ s/1.*5/5/s
+@Commune/C4a:Lectio2:s/!.*// s/8.*//s
+
+[Lectio3]
+@Commune/C4a:Lectio2:s/6-10/8-10/ s/6.*8/8/s
+
+[Lectio4]
+@Commune/C4a:Lectio3
+
+[Lectio5]
+@Sancti/03-12:Lectio4
+
+[Lectio6]
+@Sancti/03-12:Lectio5:s/Missis.*//s
+
+[Lectio7]
+@Sancti/03-12:Lectio5:s/.*Missis/Missis/s s/$/~/
+@Sancti/03-12:Lectio6:s/Quátuor.*//s
+
+[Lectio8]
+@Sancti/03-12:Lectio6:s/.*Quátuor/Quátuor/s
+
+[Lectio9]
+@Sancti/04-11:Lectio7:s/Manet.*//s
+
+[Lectio10]
+@Sancti/04-11:Lectio7:s/.*Manet/Manet/s s/$/~/
+@Sancti/04-11:Lectio8:s/His.*//
+
+[Lectio11]
+@Sancti/04-11:Lectio8:s/.*His/His/s s/$/~/
+@Sancti/04-11:Lectio9:s/Coróna.*//s
+
+[Lectio12]
+@Sancti/04-11:Lectio9:s/.*Coróna/Coróna/s
+
+[LectioE]
+v. Sequentia Sancti Evangelii secundum Joannem
+!Matt 16:13-19
+In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? At illi dixérunt: Alii Joánnem Baptístam, alii autem Elíam, alii vero Jeremíam aut unum ex prophétis. Dicit illis Jesus: Vos autem quem me esse dícitis? Respóndens Simon Petrus, dixit: Tu es Christus, Fílius Dei vivi. Respóndens autem Jesus, dixit ei: Beátus es, Simon Bar Jona: quia caro et sanguis non revelávit tibi, sed Pater meus, qui in cœlis est. Et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam. Et tibi dabo claves regni cœlórum. Et quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis.
 
 [Ant Laudes]
 Beátus Gregórius * in cáthedra Petri sublimátus, Vigilántis nomen factis implévit.
@@ -86,7 +169,7 @@ Majéstas summa Flámini.
 Amen.
 
 [Ant 2]
-Gregórius, * respíciens Anglórum júvenes, ait: Angélicam habent fáciem, et tales Angelórum in cælis decet esse consórtes. 
+Gregórius, * respíciens Anglórum júvenes, ait: Angélicam habent fáciem, et tales Angelórum in cælis decet esse consórtes.
 
 [Capitulum Tertia]
 !Eccl 50:1
