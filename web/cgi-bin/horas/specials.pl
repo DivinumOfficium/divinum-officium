@@ -1810,7 +1810,7 @@ sub getanthoras {
 
   my $ant = '';
   if ($rule !~ /Antiphonas horas/i && $communerule !~ /Antiphonas horas/i && !$tflag) { return ''; }
-  if ($version =~ /(1955|1960)/ && ($dayofweek > 0 || $1 eq '1960') && $rank < 6) { return ''; }
+  if ($version =~ /(1960|Newcal)/ && ($dayofweek > 0 || $1 eq '1960') && $rank < 6) { return ''; }
   my %w = (columnsel($lang)) ? %winner : %winner2;
   my $w = $w{'Ant Laudes'};
   my $c = ($winner =~ /sancti/i) ? 3 : 2;
