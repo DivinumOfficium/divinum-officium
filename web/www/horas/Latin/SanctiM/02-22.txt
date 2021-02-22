@@ -1,4 +1,21 @@
 @Sancti/02-22
 
+[Rank]
+In Cathedra S. Petri Apostoli Antiochiæ;;Duplex;;3;;ex C4
+
+[Lectio3]
+ 
+
+[Lectio4]
+@Sancti/01-18:Lectio4:s/Cujus autem.*//s
+@Sancti/01-18:Lectio5:s/.*(Ad hanc.*), et,.*/$1. /s
+@Sancti/01-18:Lectio6
+
+[Lectio5]
+ 
+
+[Lectio6]
+ 
+
 [Versum 3]
 @Sancti/02-22:Versum 1
