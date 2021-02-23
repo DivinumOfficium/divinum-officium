@@ -1,14 +1,11 @@
 [Rank]
 In Cathedra S. Petri Apostoli Antiochiæ;;Duplex majus;;4;;ex C4
 
-[Rank1960]
-In Cathedra S. Petri Apostoli;;Duplex II classis;;5;;ex C4
-
-[RankNewcal]
+[Rank](rubrica 1960)
 In Cathedra S. Petri Apostoli;;Duplex II classis;;5;;ex C4
 
 [Rule]
-ex C4 ;
+ex C4;
 Psalmi Dominica
 Antiphonas horas
 9 lectiones
@@ -16,6 +13,13 @@ Commemoratio3
 Sub unica concl
 Psalm5 Vespera=116
 Psalm5 Vespera3=131
+
+[Ant Vespera]
+Voici le grand-prêtre * qui, pendant sa vie, a plu à Dieu et a été trouvé juste.;;109
+Il ne s’en est pas trouvé * de semblable à lui pour conserver la loi du Très-Haut.;;110
+C’est pourquoi, par serment, * le Seigneur l'a fait grandir pour Son peuple.;;111
+Prêtres de Dieu, * bénissez le Seigneur ! Serviteurs du Seigneur, dites un hymne à Dieu.;;112
+Serviteur bon * et fidèle, entre dans la joie de ton Seigneur.
 
 [Hymnus Vespera]
 v. Tout ce que sur terre vos liens auront enchaîné,
