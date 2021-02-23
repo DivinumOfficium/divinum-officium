@@ -689,6 +689,8 @@ sub lectio : ScriptFunc {
       $w{"Responsory$num"} = $c{"Responsory$num"};
     }
   }
+  
+  if($version =~ /(1570|1910|Divino)/i && $month == 12 && $day == 14 && $dayofweek !~ 3){ $w{"Lectio$num"} = $c{"Lectio$num"};}
 
   #scriptura1960
   if ( $num < 3
