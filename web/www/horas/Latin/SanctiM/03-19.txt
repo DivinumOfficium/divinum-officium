@@ -1,5 +1,9 @@
 @Sancti/03-19
 
+[Rule]
+12 lectiones
+Psalmi Dominica
+
 [Ant Vespera]
 @Sancti/03-19::s/112.*/112/s
 
@@ -8,10 +12,107 @@
 _
 R.br. Invocávi Dóminum, * Patrem Dómini mei.
 R. Invocávi Dóminum, * Patrem Dómini mei.
-V. Ut non derelínquat me  in die tribulatiónis.
+V. Ut non derelínquat me in die tribulatiónis.
 R. Patrem Dómini mei.
 &Gloria
 R. Invocávi Dóminum, * Patrem Dómini mei.
+
+[Ant Matutinum]
+Ascéndit Joseph, * a Galilǽa de civitáte Názareth in Judǽam, in civitátem David, quæ vocátur Béthlehem, † ut profiterétur cum Maria.;;1
+Venérunt * pastóres festinántes; † et invenérunt Mariam, et Joseph, et Infántem pósitum in præsépio.;;2
+Ecce Angelus Dómini * appáruit in somnis Joseph, dicens: † Surge, et áccipe Púerum et Matrem ejus, et fuge in Ægýptum.;;4
+Consúrgens Joseph, * accépit Púerum et Matrem ejus nocte, et secéssit in Ægýptum; † et erat ibi usque ad óbitum Heródis.;;5
+Defúncto Heróde, * Angelus Dómini appáruit in somnis Joseph in Ægýpto, dicens: † Surge, et áccipe Puerum et Matrem ejus, et vade in terram Israël; † defúncti sunt enim, qui quærébant ánimam Pueri.;;8
+Accépit Joseph * Púerum et Matrem ejus, † et venit in terram Israël.;;10
+V. Constítuit eum dóminum domus suæ.
+R. Et príncipem omnis possessiónis suæ.
+Audiens Joseph, * quod Archeláus regnáret in Judǽa pro Heróde patre suo, † tímuit illo ire.;;14
+Admónitus * in sómnis, Joseph secéssit in partes Galilǽæ: † et véniens habitávit in civitáte, quæ vocátur Názareth; † ut adimplerétur quod dictum est per prophétas: Quóniam Nazarǽus vocábitur.;;20
+Induxérunt * púerum Jesum paréntes ejus † ut fácerent secúndum consuetúdinem legis pro eo.;;23
+Erat * Pater Jesu et Mater mirántes super his, quæ dicebántur de illo; † et benedíxit illis Símeon.;;95
+Et ut perfecérunt * ómnia secúndum legem Dómini, † revérsi sunt in Galiláeam in civitátem suam Názareth.;;96
+Mirabántur omnes * in verbis grátiæ, quæ procedébant de ore ipsíus, et dicébant: † Nonne hic est fílius Joseph?;;97
+V. Magna est glória ejus in salutári tuo.
+R. Glóriam et magnum decórem impónes super eum.
+Invénit Philíppus * Nathánæl, et dicit ei: † Quem scripsit Móyses in Lege, et Prophétæ, invénimus Jesum, fílium Joseph, a Názareth.;;256;257;258
+V. Justus germinábit sicut lílium.
+R. Et florébit in ætérnum ante Dóminum.
+
+[Lectio1]
+@Sancti/03-19:Lectio1:s/-5/-3/ s/4.*//s
+
+[Lectio2]
+@Sancti/03-19:Lectio1:s/1-/4-/ s/1.*4/4/s
+
+[Lectio3]
+@Sancti/03-19:Lectio2
+
+[Lectio4]
+@Sancti/03-19:Lectio3
+
+[Responsory4]
+R. Benedictiónes patris tui confortátæ sunt benedictiónibus patrum ejus:
+* Donec veníret desidérium cóllium æternórum.
+V. Fiant in cápite Joseph, et in vértice Nazaraéi inter fratres suos.
+R. Donec veníret desidérium cóllium æternórum.
+
+[Lectio5]
+@Sancti/03-19:Lectio4
+
+[Responsory5]
+R. Angelus Dómini appáruit Joseph, dicens: † Joseph, fili David, noli timére accípere Maríam cóniugem tuam
+* Quod enim in ea natum est de Spíritu Sancto est.
+V. Páriet autem Fílium et vocábis nomen ejus Jesus.
+R. Quod enim in ea natum est de Spíritu Sancto est.
+
+[Lectio6]
+@Sancti/03-19:Lectio5:s/Illi .*//s
+
+[Responsory6]
+@Sancti/03-19:Responsory4
+
+[Lectio7]
+@Sancti/03-19:Lectio5:s/.* Illi /Illi /s s/$/~/
+@Sancti/03-19:Lectio6:s/Non est .*//s
+
+[Responsory7]
+@Sancti/03-19:Responsory5
+
+[Lectio8]
+@Sancti/03-19:Lectio6:s/.* Non est /Non est /s
+
+[Responsory8]
+@Sancti/03-19:Responsory6
+
+[Lectio9]
+@Sancti/12-24:Lectio1
+
+[Responsory9]
+R. Ibant paréntes Jesu per omnes annos in Jerúsalem in die solémni Paschæ: † consumptísque diébus cum redírent, remánsit puer Jesus in Jerúsalem,
+* Et non cognovérunt paréntes ejus.
+V. Existimántes autem illum esse in comitátu, † requirébant eum inter cognátos et notos.
+R. Et non cognovérunt paréntes ejus.
+
+[Lectio10]
+@Sancti/12-24:Lectio2
+
+[Responsory10]
+@Sancti/03-19:Responsory7
+
+[Lectio11]
+@Sancti/12-24:Lectio3
+
+[Responsory11]
+@Sancti/03-19:Responsory8
+
+[Lectio12]
+Joseph, fili David, noli timére accípere Maríam uxórem tuam. Jam et supra díximus sponsas uxóres appelláre: quod plénius liber advérsus Helvídium docet. Et blandiéntis Angelus lóquitur, ut justítiam siléntii comprobáret. Simúlque notándum, quod Joseph fílius esse dicátur David, ut Maríria quoque de stirpe David monstrarétur.
+
+[Responsory12]
+R. Fidélis servus et prudens, quem constítuit Dóminus super famíliam suam
+* Amen dico vobis, quóniam super ómnia bona sua constítuet eum.
+V. Qui custos est Dómini sui, glorificátur.
+R. Amen dico vobis, quóniam super ómnia bona sua constítuet eum.
 
 [Capitulum Laudes]
 @Sancti/03-19
@@ -27,4 +128,8 @@ _
 [Responsory Nona]
 @Sancti/03-19:Responsory Sexta:8-9
 
+[LectioE]
+Sequéntia ++ sancti Evangélii secúndum Matthǽum
+!Matt 1:18-21
+Cum esset desponsáta Mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu Sancto. Joseph autem, vir ejus, cum esset justus et nollet eam tradúcere, vóluit occúlte dimíttere eam. Hæc autem eo cogitánte, ecce, Angelus Dómini appáruit in somnis ei, dicens: Joseph, fili David, noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu Sancto est. Páriet autem fílium, et vocábis nomen ejus Jesum: ipse enim salvum fáciet pópulum suum a peccátis eórum.
 
