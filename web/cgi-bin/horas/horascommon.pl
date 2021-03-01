@@ -680,7 +680,6 @@ sub getrank {
       $sanctoraloffice = 1;
     }
   }
-
   # Office is sanctoral.
   if ($sanctoraloffice) {
     $rank = $srank[2];
