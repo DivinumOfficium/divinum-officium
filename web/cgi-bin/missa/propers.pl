@@ -154,9 +154,9 @@ sub translate_label {
 
   if ($item =~ /Gradual/i) {
 
-    #if ($dayname[0] =~ /Quad/i || (0 && $winner{Rank} =~ /(Quattuor|Quatuor)/i)) {$item = '# Tractus';}
+    #if ($dayname[0] =~ /Quad/i || (0 && $winner{Rank} =~ /(Quattuor|Quatuor)/i)) {$item = 'Graduale & Tractus';}
     #elsif ($dayname[0] =~ /Pasc/i && $winner !~ /Defunct/i) {$item = '#Alleluia';}
-    if ($dayname[0] =~ /Pasc/i && $winner !~ /Defunct/i) {
+    if ($dayname[0] =~ /Pasc[1-5]/i && $winner !~ /Defunct/i) {
       $item = $lang =~ /Latin/i ? 'Alleluja' : 'Alleluia';
     }
   }

@@ -1,6 +1,9 @@
 [Rank]
 S. Justini Martyris;;Duplex;;3;;vide C2
 
+[RankNewcal]
+S. Justini Martyris;;Duplex;;3.1;;vide C2
+
 [Rule]
 vide C2;
 
@@ -23,12 +26,12 @@ circumventióne depúlsa, fídei firmitátem consequámur.
 $Per eundem
 
 [Commemoratio Oratio]
-!Commemoratio pro Ss. Tiburtii, Valeriani et Maximi Mm.,
+!Commemoratio pro Ss. Tiburtii, Valeriani et Maximi Martyrum
 @Sancti/04-14t:Oratio
 
 [Lectio]
-Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios.
-!1 Cor 1:18-25; 1:30;
+Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios
+!1 Cor 1:18-25; 1:30
 Fratres: Verbum crucis pereúntibus quidem stultítia est: iis autem, qui salvi fiunt, id est nobis, Dei virtus est. Scriptum est enim: Perdam sapiéntiam sapiéntium et prudéntiam prudéntium reprobábo. Ubi sápiens? ubi scriba? ubi conquisítor hujus sǽculi? Nonne stultam fecit Deus sapiéntiam hujus mundi? Nam quia in Dei sapiéntia non cognóvit mundus per sapiéntiam Deum: placuit Deo per stultítiam prædicatiónis salvos fácere credéntes. Quóniam et Judæi signa petunt, et Græci sapiéntiam quærunt: nos autem prædicámus Christum crucifíxum: Judæis quidem scándalum, géntibus autem stultítiam, ipsis autem vocátis Judæis, atque Græcis. Christum Dei virtútem et Dei sapiéntiam: quia, quod stultum est Dei, sapiéntius est homínibus: et, quod infírmum est Dei, fórtius est homínibus. Ex ipso autem vos estis in Christo Jesu, qui factus est nobis sapiéntia a Deo et justítia ei sanctificátio et redémptio.
 
 [Graduale]
@@ -36,8 +39,8 @@ Fratres: Verbum crucis pereúntibus quidem stultítia est: iis autem, qui salvi 
 v. Sapiéntia hujus mundi stultítia est apud Deum, scriptum est enim: Dóminus novit~
 cogitatiónes sapiéntium, quóniam vanæ sunt.
 !1 Cor 1:19
-Perdam sapiéntiam sapiéntium et prudentiam prudéntium reprobábo. Alleluja,~
-alleluja
+Perdam sapiéntiam sapiéntium et prudentiam prudéntium reprobábo. 
+Alleluja, alleluja.
 v. Sapiéntia hujus mundi stultítia est apud Deum, scriptum est enim: Dóminus novit~
 cogitatiónes sapiéntium, quóniam vanæ sunt, alleluia
 !Phil 3:8
@@ -45,6 +48,8 @@ Verúmtamen exístimo ómnia detriméntum esse propter eminéntem sciéntiam Jes
 Christi, Dómini mei. Allelúja.
 
 [Tractus]
+_
+!Tractus
 !1 Cor 2:2; 2:7-8
 Non judicávi me scire áliquid inter vos nisi Jesum Christum, et hunc crucifíxum.
 V. Lóquimur Dei sapiéntiam in mystério, quæ abscóndita est, quam prædestinávit

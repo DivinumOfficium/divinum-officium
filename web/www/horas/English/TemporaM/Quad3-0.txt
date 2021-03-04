@@ -1,19 +1,52 @@
+[Responsory4]
+R. Take hence presents with you, and go unto the lord of the land, and when ye be come into his presence, bow yourselves to him to the earth.
+* And my God give you mercy before the man, that he may send away again this your brother, and him which he keepeth in ward.
+V. Take of the best fruits of the land in your vessels, and carry down the man a present.
+R. And may my God give you mercy before the man, that he may send away again this your brother, and him which he keepeth in ward.
+
+[Lectio5]
+@Tempora/Quad3-0:Lectio4:s/Right .*//s
+
+[Lectio6]
+@Tempora/Quad3-0:Lectio4:s/.* Right /Right /s s/$/~/
+@Tempora/Quad3-0:Lectio5:s/But this .*//s
+
+[Lectio7]
+@Tempora/Quad3-0:Lectio5:s/.* But this /But this /s s/$/~/
+@Tempora/Quad3-0:Lectio6:s/Well, .*//s
+
+[Lectio8]
+@Tempora/Quad3-0:Lectio6:s/.* Well, /Well, /s
+
+[Responsory8]
+R. Is this your younger brother, of whom ye spake unto me? God be gracious unto thee, my son.
+* And he made haste, and entered into the house, and wept there, for his tears brake forth, and he could not refrain himself.
+V. And Joseph lifted up his eyes, and saw his brother Benjamin, and his bowels yearned upon his brother.
+R. And he made haste, and entered into the house, and wept there, for his tears brake forth, and he could not refrain himself.
+
+[Ant Matutinum 3N]
+If I by the finger of God cast out devils; doubtless the kingdom of God is come upon you.;;269;270;271
+
+[Lectio9]
+@Tempora/Quad3-0:Lectio7:s/But some .*//s
+
+[Lectio10]
+@Tempora/Quad3-0:Lectio7:s/.* But some /But some /s s/$/~/
+@Tempora/Quad3-0:Lectio8:s/And others, .*//s
+
+[Lectio11]
+@Tempora/Quad3-0:Lectio8:s/.* And others, /And others, /s
+
+[Lectio12]
+@Tempora/Quad3-0:Lectio9
+
+[Responsory12]
+R. Joseph said unto his eleven brethren I am Joseph whom ye sold into Egypt; is our father yet alive, the old man of whom ye spake unto me?
+* Go, bring him down unto me, that he may live.
+V. For these two years hath the famine been in the land; and yet there are five years, in which there shall neither be ploughing nor reaping.
+R. Go, bring him down unto me, that he may live.
+
 [LectioE]
-v. Continuation of the Holy Gospel according to Luke
+Continuation of the Holy Gospel according to Luke
 !Luke 11:14-28
-11:14 And he was casting out a devil, and the same was dumb: and when he had cast out the devil, the dumb spoke: and the multitudes were in admiration at it:
-11:15 But some of them said: He casteth out devils by Beelzebub, the prince of devils.
-11:16 And others tempting, asked of him a sign from heaven.
-11:17 But he seeing their thoughts, said to them: Every kingdom divided against itself, shall be brought to desolation, and house upon house shall fall.
-11:18 And if Satan also be divided against himself, how shall his kingdom stand? because you say, that through Beelzebub I cast out devils.
-11:19 Now if I cast out devils by Beelzebub; by whom do your children cast them out? Therefore they shall be your judges.
-11:20 But if I by the finger of God cast out devils; doubtless the kingdom of God is come upon you.
-11:21 When a strong man armed keepeth his court, those things are in peace which he possesseth.
-11:22 But if a stronger than he come upon him, and overcome him; he will take away all his armour wherein he trusted, and will distribute his spoils.
-11:23 He that is not with me, is against me; and he that gathereth not with me, scattereth.
-11:24 When the unclean spirit is gone out of a man, he walketh through places without water, seeking rest; and not finding, he saith: I will return into my house whence I came out.
-11:25 And when he is come, he findeth it swept and garnished.
-11:26 Then he goeth and taketh with him seven other spirits more wicked than himself, and entering in they dwell there. And the last state of that man becomes worse than the first.
-11:27 And it came to pass, as he spoke these things, a certain woman from the crowd, lifting up her voice, said to him: Blessed is the womb that bore thee, and the paps that gave thee suck.
-11:28 But he said: Yea rather, blessed are they who hear the word of God, and keep it.
-$Te decet
+At that time, Jesus was casting out a devil, and the same was dumb; and when He had cast out the devil, the dumb man spoke. And the crowds marveled. But some of them said, By Beelzebub, the prince of devils, He casts out devils. And others, to test Him, demanded from Him a sign from heaven. But He, seeing their thoughts, said to them: Every kingdom divided against itself is brought to desolation, and house will fall upon house. If, then, Satan also is divided against himself, how shall his kingdom stand? because you say that I cast out devils by Beelzebub. Now, if I cast out devils by Beelzebub, by whom do your children cast them out? Therefore they shall be your judges. But if I cast out devils by the finger of God, then the kingdom of God has come upon you. When the strong man, fully armed, guards his courtyard, his property is undisturbed. But if a stronger than he attacks and overcomes him, he will take away all his weapons that he relied upon, and will divide his spoils. He who is not with Me is against Me; and he who does not gather with Me scatters. When the unclean spirit has gone out of a man, he roams through waterless places in search of rest; and finding none, he says, ‘I will return to my house which I left.’ And when he has come to it, he finds the place swept. Then he goes and takes seven other spirits more evil than himself, and they enter in and dwell there; and the last state of that man becomes worse that the first. Now it came to pass as He was saying these things, that a certain woman from the crowd lifted up her voice and said to Him, Blessed is the womb that bore You, and the breasts that nursed You. But He said, Rather, blessed are they who hear the word of God and keep it.

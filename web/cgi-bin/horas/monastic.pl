@@ -76,17 +76,19 @@ sub psalmi_matutinum_monastic {
   }
 
   #** change of versicle for Adv, Quad, Quad5, Pasc
-  if ($dayofweek > 0 && ( ($winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i)
-      || $dayname[0] =~ /(Nat)((?:0?[2-9])|(?:1[0-2]))$/) ) {
+  if ( ($winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i)
+    || $dayname[0] =~ /(Nat)((?:0?[2-9])|(?:1[0-2]))$/ ) {
     my $name = $1;
     my $i = $2;
     if ($name =~ /Nat/ && $i > 6 && $i < 13) { $name = 'Epi'; }
     if ($name =~ /Quad/i && $i > 4) { $name = 'Quad5'; }
-    $i = $dayofweek;
+    $i = $dayofweek || 1;
     if ($name =~ /Nat|Epi/ && $i > 3) { $i -= 3; }
-    my @a = split("\n", $psalmi{"$name $i Versum"});
-    $psalmi[6] = $a[0];
-    $psalmi[7] = $a[1];
+    ($psalmi[6],$psalmi[7]) = split("\n", $psalmi{"$name $i Versum"});
+    if ($dayofweek == 0) {
+      ($psalmi[14],$psalmi[15]) = split("\n", $psalmi{"$name 2 Versum"});
+      ($psalmi[17],$psalmi[18]) = split("\n", $psalmi{"$name 3 Versum"});
+    }
     setbuild2("Subst Matutitunum Versus $name $dayofweek");
   }
 

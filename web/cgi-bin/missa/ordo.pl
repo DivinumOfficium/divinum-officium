@@ -317,7 +317,7 @@ sub getordinarium {
     return @script;
   }
   my $fname = 'Ordo';
-  if ($version =~ /(1967|Newcal)/i) { $fname = 'Ordo67'; }
+  if ($version =~ /1967/i) { $fname = 'Ordo67'; }
   if ($NewMass) { $fname = ($column == 1) ? $ordos{$version1} : $ordos{$version2}; }
   $fname = checkfile($lang, "Ordo/$fname.txt");
 

@@ -331,6 +331,9 @@ sub getrank {
   if ($hora =~ /Vespera/i && $dayname[0] =~ /Quadp3/ && $dayofweek == 3 && $version !~ /1960|1955/) {
     $trank =~ s/;;6/;;2/;
   }
+   elsif ($hora =~ /Vespera/i && $dayname[0] =~ /(Quad[0-5]|Quadp)/ && $dayofweek == 0 && $version =~ /1570|1910/) {
+    $trank =~ s/;;5.6/;;2/;
+  }
   @trank = split(";;", $trank);
   @tn1 = split(';;', $tn1rank);
 
@@ -677,7 +680,6 @@ sub getrank {
       $sanctoraloffice = 1;
     }
   }
-
   # Office is sanctoral.
   if ($sanctoraloffice) {
     $rank = $srank[2];

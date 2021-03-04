@@ -1,5 +1,86 @@
 @Tempora/Quad4-0
 
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Tempora/Quad4-0:Lectio1:
+@Tempora/Quad4-0:Lectio2:s/!.*// s/7.*//s
+
+[Lectio2]
+@Tempora/Quad4-0:Lectio2:s/-10/-8/ s/9.*//s
+
+[Lectio3]
+@Tempora/Quad4-0:Lectio2:s/7-10/9-12/ s/7.*9/9/s
+@Tempora/Quad4-0:Lectio3:s/!.*// s/13.*//s
+
+[Lectio4]
+@Tempora/Quad4-0:Lectio3:s/11-/13-/ s/11.*13/13/s
+
+[Responsory4]
+R. Audi, Israël, præcépta Dómini, et ea in corde tuo quasi in libro scribe:
+* Et dabo tibi terram fluéntem lac et mel.
+V. Obsérva ígitur, et audi vocem meam: † et inimícus ero inimícis tuis.
+R. Et dabo tibi terram fluéntem lac et mel.
+
+[Lectio5]
+@Tempora/Quad4-0:Lectio4:s/Quas .*//s
+
+[Responsory5]
+@Tempora/Quad4-0:Responsory4
+
+[Lectio6]
+@Tempora/Quad4-0:Lectio4:s/.* Quas /Quas /s s/$/~/
+@Tempora/Quad4-0:Lectio5:s/Quid .*//s
+
+[Responsory6]
+@Tempora/Quad4-0:Responsory5
+
+[Lectio7]
+@Tempora/Quad4-0:Lectio5:s/.* Quid Esau/Quid Esau/s
+
+[Responsory7]
+@Tempora/Quad4-0:Responsory6
+
+[Lectio8]
+@Tempora/Quad4-0:Lectio6
+
+[Responsory8]
+R. Vos, qui transitúri estis Jordánem, ædificáte altáre Dómino
+* De lapídibus, quos ferrum non tétigit: † et offérte super illud holocáusta, et hóstias pacíficas Deo vestro.
+V. Cumque intravéritis terram, quam Dóminus datúrus est vobis, † ædificáte ibi altáre Dómino.
+R. De lapídibus, quos ferrum non tétigit: † et offérte super illud holocáusta, et hóstias pacíficas Deo vestro.
+
+[Ant Matutinum 3N]
+Satiávit Dóminus quinque míllia hóminum de quinque pánibus et duóbus píscibus.;;269;270;271
+
+[Lectio9]
+@Tempora/Quad4-0:Lectio7
+
+[Responsory9]
+@Tempora/Quad4-0:Responsory7
+
+[Lectio10]
+@Tempora/Quad4-0:Lectio8:s/Fecit .*//s
+
+[Responsory10]
+@Tempora/Quad4-0:Responsory8
+
+[Lectio11]
+@Tempora/Quad4-0:Lectio8:s/.* Fecit /Fecit /s
+
+[Responsory11]
+@Tempora/Quad4-0:Responsory9
+
+[Lectio12]
+@Tempora/Quad4-0:Lectio9
+
+[Responsory12]
+R. Addúxi vos per desértum quadragínta annis ego Dóminus, † et non sunt attríta vestiménta vestra:
+* Manna de cælo plui vobis, et oblíti estis me, dicit Dóminus.
+V. Ego addúxi vos de terra Ægýpti, et de domo servitútis liberávi vos.
+R. Manna de cælo plui vobis, et oblíti estis me, dicit Dóminus.
+
 [Capitulum Vespera]
 @Tempora/Quad4-0
 _
@@ -10,46 +91,12 @@ _
 _
 @Psalterium/Major Special:QuadM Laudes:3-8
 
-[Responsory Tertia]
-@Psalterium/Minor Special:Dominica TertiaM:5-6
-
-[Responsory Sexta]
-@Psalterium/Minor Special:Dominica SextaM:5-6
-
-[Responsory Nona]
-@Psalterium/Minor Special:Dominica NonaM:5-6
-
 [Capitulum Vespera 3]
 @Tempora/Quad4-0:Capitulum Vespera
 _
 @Psalterium/Major Special:QuadM Vespera:3-8
 
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Joannem
-!Joannes 6:1-15
-6:1 Post haec abiit Jesus trans mare Galilaeae, quod est Tiberiadis:
-6:2 et sequebatur eum multitudo magna, quia videbant signa quae faciebat super~
-his qui infirmabantur.
-6:3 Subiit ergo in montem Jesus et ibi sedebat cum discipulis suis.
-6:4 Erat autem proximum Pascha dies festus Judaeorum.
-6:5 Cum sublevasset ergo oculos Jesus, et vidisset quia multitudo maxima venit~
-ad eum, dixit ad Philippum: Unde ememus panes, ut manducent hi?
-6:6 Hoc autem dicebat tentans eum: ipse enim sciebat quid esset facturus.
-6:7 Respondit ei Philippus: Ducentorum denariorum panes non sufficiunt eis, ut~
-unusquisque modicum quid accipiat.
-6:8 Dicit ei unus ex discipulis ejus, Andreas, frater Simonis Petri:
-6:9 Est puer unus hic qui habet quinque panes hordeaceos et duos pisces: sed~
-haec quid sunt inter tantos?
-6:10 Dixit ergo Jesus: Facite homines discumbere. Erat autem fœnum multum in~
-loco. Discumberunt ergo viri, numero quasi quinque millia.
-6:11 Accepit ergo Jesus panes: et cum gratias egisset, distribuit~
-discumbentibus: similiter et ex piscibus quantum volebant.
-6:12 Ut autem impleti sunt, dixit discipulis suis: Colligite quae superaverunt~
-fragmenta, ne pereant.
-6:13 Collegerunt ergo, et impleverunt duodecim cophinos fragmentorum ex quinque~
-panibus hordeaceis, quae superfuerunt his qui manducaverant.
-6:14 Illi ergo homines cum vidissent quod Jesus fecerat signum, dicebant: Quia~
-hic est vere propheta, qui venturus est in mundum.
-6:15 Jesus ergo cum cognovisset quia venturi essent ut raperent eum, et facerent~
-eum regem, fugit iterum in montem ipse solus.
-$Te decet
+Sequéntia ++ sancti Evangélii secúndum Joánnem
+!Joann 6:1-15
+In illo témpore: Abiit Jesus trans mare Galilǽæ, quod est Tiberíadis: et sequebátur eum multitúdo magna, quia vidébant signa, quæ faciébat super his, qui infirmabántur. Súbiit ergo in montem Jesus: et ibi sedébat cum discípulis suis. Erat autem próximum Pascha, dies festus Judæórum. Cum sublevásset ergo óculos Jesus et vidísset, quia multitúdo máxima venit ad eum, dixit ad Philíppum: Unde emémus panes, ut mandúcent hi? Hoc autem dicebat tentans eum: ipse enim sciébat, quid esset factúrus. Respóndit ei Philíppus: Ducentórum denariórum panes non suffíciunt eis, ut unusquísque módicum quid accípiat. Dicit ei unus ex discípulis ejus, Andréas, frater Simónis Petri: Est puer unus hic, qui habet quinque panes hordeáceos et duos pisces: sed hæc quid sunt inter tantos? Dixit ergo Jesus: Fácite hómines discúmbere. Erat autem fænum multum in loco. Discubuérunt ergo viri, número quasi quinque mília. Accépit ergo Jesus panes, et cum grátias egísset, distríbuit discumbéntibus: simíliter et ex píscibus, quantum volébant. Ut autem impléti sunt, dixit discípulis suis: Collígite quæ superavérunt fragménta, ne péreant. Collegérunt ergo, et implevérunt duódecim cóphinos fragmentórum ex quinque pánibus hordeáceis, quæ superfuérunt his, qui manducáverant. Illi ergo hómines cum vidíssent, quod Jesus fécerat signum, dicébant: Quia hic est vere Prophéta, qui ventúrus est in mundum. Jesus ergo cum cognovísset, quia ventúri essent, ut ráperent eum et fácerent eum regem, fugit íterum in montem ipse solus.

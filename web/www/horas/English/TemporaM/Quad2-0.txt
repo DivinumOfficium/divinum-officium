@@ -1,13 +1,50 @@
+
+[Responsory4]
+R. Arise, father, and eat of thy son’s venison; How couldst thou find it so quickly, my son?
+* It was the will of God that what I sought came quickly in my way.
+V. I am Esau thy firstborn: I have done as thou didst command me.
+R. It was the will of God, father, that what I sought came my way.
+
+[Lectio5]
+@Tempora/Quad2-0:Lectio4:s/Whoso .*//s
+
+[Lectio6]
+@Tempora/Quad2-0:Lectio4:s/.* Whoso /Whoso /s s/$/~/
+@Tempora/Quad2-0:Lectio5:s/That .*//s
+
+[Lectio7]
+@Tempora/Quad2-0:Lectio5:s/.* That /That /s
+
+[Responsory8]
+R. When Jacob was sleeping he saw a ladder standing upon the earth, and the top thereof touching heaven: the angels also of God ascending and descending by it;
+* And when Jacob awaked out of sleep, he said: Truly this is the house of God.
+V. Jacob took the stone which he had laid under his head and slept on, and saw in his sleep the ladder rising from it.
+R. And when Jacob awaked out of sleep, he said: Truly this is the house of God.
+
+[Ant Matutinum 3N]
+Let us make here three tabernacles, one for thee, and one for Moses, and one for Elias.;;269;270;271
+
+[Lectio9]
+@Tempora/Quad2-0:Lectio7:s/This .*//s
+
+[Lectio10]
+@Tempora/Quad2-0:Lectio7:s/.* This /This /s s/$/~/
+@Tempora/Quad2-0:Lectio8:s/This is My Son between.*//s
+
+[Lectio11]
+@Tempora/Quad2-0:Lectio8:s/.* This is My Son between/This is My Son between/s s/$/~/
+@Tempora/Quad2-0:Lectio9:s/ This is My Son Who.*//s
+
+[Lectio12]
+@Tempora/Quad2-0:Lectio9:s/.* This is My Son Who/This is My Son Who/s
+
+[Responsory12]
+R. Jacob prayed and said: O God who said to me: Return to thy land and to the place of thy birth
+* Deliver me from the hand of my brother Esau for I am greatly afraid of him.
+V. God, in whose sight my fathers walked, God that feedeth me from my youth.
+R. Deliver me from the hand of my brother Esau for I am greatly afraid of him.
+
 [LectioE]
-v. Continuation of the Holy Gospel according to Matthew
+Continuation of the Holy Gospel according to Matthew
 !Matt 17:1-9
-17:1 AND after six days Jesus taketh unto him Peter and James, and John his brother, and bringeth them up into a high mountain apart:
-17:2 And he was transfigured before them. And his face did shine as the sun: and his garments became white as snow.
-17:3 And behold there appeared to them Moses and Elias talking with him.
-17:4 And Peter answering, said to Jesus: Lord, it is good for us to be here: if thou wilt, let us make here three tabernacles, one for thee, and one for Moses, and one for Elias.
-17:5 And as he was yet speaking, behold a bright cloud overshadowed them. And lo, a voice out of the cloud, saying: This is my beloved Son, in whom I am well pleased: hear ye him.
-17:6 And the disciples hearing, fell upon their face, and were very much afraid.
-17:7 And Jesus came and touched them: and said to them, Arise, and fear not.
-17:8 And they lifting up their eyes saw no one but only Jesus.
-17:9 And as they came down from the mountain, Jesus charged them, saying: Tell the vision to no man, till the Son of man be risen from the dead.
-$Te decet
+At that time, Jesus took Peter, James and his brother John, and led them up a high mountain by themselves, and was transfigured before them. And His face shone as the sun, and His garments became white as snow. And behold, there appeared to them Moses and Elias talking together with Him. Then Peter addressed Jesus, saying, Lord, it is good for us to be here. If You will, let us set up three tents here, one for You, one for Moses, and one for Elias. As he was still speaking, behold, a bright cloud overshadowed them, and behold, a voice out of the cloud said, This is My beloved Son, in Whom I am well pleased; hear Him. And on hearing it the disciplines fell on their faces and were exceedingly afraid. And Jesus came near and touched them, and said to them, Arise, and do not be afraid. But lifting up their eyes, they saw no one but Jesus only. And as they were coming down from the mountain, Jesus cautioned them, saying, Tell the vision to no one, till the Son of Man has risen from the dead.

@@ -1,5 +1,77 @@
 @Tempora/Quad1-0
 
+[Rule]
+12 lectiones
+
+[Lectio3]
+@Tempora/Quad1-0:Lectio3:s/-9/-6/ s/7 .*//s
+
+[Lectio4]
+@Tempora/Quad1-0:Lectio3:s/4-/7-/ s/4 .*7 /7 /s
+
+[Responsory4]
+R. Tribulárer, si nescírem misericórdias tuas, Dómine; † tu dixísti: Nolo mortem peccatóris, sed ut magis convertátur et vivat:
+* Qui Chananǽam et publicánum vocásti ad pœniténtiam.
+V. Secundum multitúdinem dolórum meórum in corde meo, † consolatiónes tuæ lætificavérunt ánimam meam.
+R. Qui Chananǽam et publicánum vocásti ad pœniténtiam.
+
+[Lectio5]
+@Tempora/Quad1-0:Lectio4
+
+[Responsory5]
+@Tempora/Quad1-0:Responsory4
+
+[Lectio6]
+@Tempora/Quad1-0:Lectio5
+
+[Responsory6]
+@Tempora/Quad1-0:Responsory5
+
+[Lectio7]
+@Tempora/Quad1-0:Lectio6:s/Digna .*//s
+
+[Responsory7]
+@Tempora/Quad1-0:Responsory6
+
+[Lectio8]
+@Tempora/Quad1-0:Lectio6:s/.* Digna /Digna /s
+
+[Responsory8]
+R. Qui cognóscis ómnium occúlta, a delícto meo munda me;
+* Tempus mihi concéde, ut repǽnitens clamem: † Peccávi, miserére mei, Deus.
+V. Avérte, Dómine, fáciem tuam a peccátis meis, et omnes iniquitátes meas dele.
+R. Tempus mihi concéde, ut repǽnitens clamem: Peccávi, miserére mei, Deus.
+
+[Ant Matutinum 3N]
+Non in solo pane vivit homo, † sed in omni verbo quod procédit de ore Dei.;;269;270;271
+
+[Lectio9]
+@Tempora/Quad1-0:Lectio7:s/Sed ecce .*//s
+
+[Responsory9]
+@Tempora/Quad1-0:Responsory7
+
+[Lectio10]
+@Tempora/Quad1-0:Lectio7:s/.* Sed ecce /Sed ecce /s
+
+[Responsory10]
+@Tempora/Quad1-0:Responsory8
+
+[Lectio11]
+@Tempora/Quad1-0:Lectio8
+
+[Responsory11]
+R. Abscóndite eleemósynam in sinu páuperum, et ipsa orábit pro vobis ad Dóminum:
+* Quia sicut aqua extínguit ignem, † ita eleemósyna extínguit peccátum.
+V. Date eleemósynam, et ecce omnia munda sunt vobis.
+R. Quia sicut aqua extínguit ignem, ita eleemósyna extínguit peccátum.
+
+[Lectio12]
+@Tempora/Quad1-0:Lectio9
+
+[Responsory12]
+@Tempora/Quad1-0:Responsory9
+
 [Capitulum Vespera]
 @Tempora/Quad1-0
 _
@@ -10,40 +82,13 @@ _
 _
 @Psalterium/Major Special:QuadM Laudes:3-8
 
-[Responsory Tertia]
-@Psalterium/Minor Special:Dominica TertiaM:5-6
-
-[Responsory Sexta]
-@Psalterium/Minor Special:Dominica SextaM:5-6
-
-[Responsory Nona]
-@Psalterium/Minor Special:Dominica NonaM:5-6
-
 [Capitulum Vespera 3]
 @Tempora/Quad1-0:Capitulum Vespera
 _
 @Psalterium/Major Special:QuadM Vespera:3-8
 
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Matthaeum
+Sequéntia ++ sancti Evangélii secúndum Matthǽum
 !Matt 4:1-11
-4:1 Tunc Jesus ductus est in desertum a Spiritu, ut tentaretur a diabolo.
-4:2 Et cum jejunasset quadraginta diebus, et quadraginta noctibus, postea~
-esuriit.
-4:3 Et accedens tentator dixit ei: Si Filius Dei es, dic ut lapides isti panes~
-fiant.
-4:4 Qui respondens dixit: Scriptum est: Non in solo pane vivit homo, sed in omni~
-verbo, quod procedit de ore Dei.
-4:5 Tunc assumpsit eum diabolus in sanctam civitatem, et statuit eum super~
-pinnaculum templi,
-4:6 et dixit ei: Si Filius Dei es, mitte te deorsum. Scriptum est enim: Quia~
-angelis suis mandavit de te, et in manibus tollent te, ne forte offendas ad~
-lapidem pedem tuum.
-4:7 Ait illi Jesus: Rursum scriptum est: Non tentabis Dominum Deum tuum.
-4:8 Iterum assumpsit eum diabolus in montem excelsum valde: et ostendit ei omnia~
-regna mundi, et gloriam eorum,
-4:9 et dixit ei: Haec omnia tibi dabo, si cadens adoraveris me.
-4:10 Tunc dicit ei Jesus: Vade Satana: Scriptum est enim: Dominum Deum tuum~
-adorabis, et illi soli servies.
-4:11 Tunc reliquit eum diabolus: et ecce angeli accesserunt, et ministrabant ei.
-$Te decet
+In illo témpore: Ductus est Jesus in desértum a Spíritu, ut tentarétur a diábolo. Et cum jejunásset quadragínta diébus et quadragínta nóctibus, postea esúriit. Et accédens tentátor, dixit ei: Si Fílius Dei es, dic, ut lápides isti panes fiant. Qui respóndens, dixit: Scriptum est: Non in solo pane vivit homo, sed in omni verbo, quod procédit de ore Dei. Tunc assúmpsit eum diábolus in sanctam civitátem, et státuit eum super pinnáculum templi, et dixit ei: Si Fílius Dei es, mitte te deórsum. Scriptum est enim: Quia Angelis suis mandávit de te, et in mánibus tollent te, ne forte offéndas ad lápidem pedem tuum. Ait illi Jesus: Rursum scriptum est: Non tentábis Dóminum, Deum tuum. Iterum assúmpsit eum diábolus in montem excélsum valde: et ostendit ei ómnia regna mundi et glóriam eórum, et dixit ei: Hæc ómnia tibi dabo, si cadens adoráveris me. Tunc dicit ei Jesus: Vade, Sátana; scriptum est enim: Dóminum, Deum tuum, adorábis, et illi soli sérvies. Tunc relíquit eum diábolus: et ecce, Angeli accessérunt et ministrábant ei.
+

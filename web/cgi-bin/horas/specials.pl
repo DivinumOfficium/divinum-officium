@@ -196,7 +196,7 @@ sub specials {
       if ( $dayofweek > 0
         && $version !~ /1960/
         && $version !~ /monastic/i
-        && $winner{Rank} =~ /Feria|Vigilia/i
+        && $winner{Rank} =~ /Feria|Vigilia/i 
         && $commune !~ /C10/
         && ($rank < 3 || $dayname[0] =~ /Quad6/)
         && $dayname[0] !~ /Pasc/i)
@@ -380,7 +380,7 @@ sub specials {
       my $name =
           ($dayname[0] =~ /(Quad5|Quad6)/i) ? 'Quad5'
         : ($dayname[0] =~ /Quad/i && $dayname[0] !~ /Quadp/i) ? 'Quad'
-        : ($dayname[0] =~ /Quadp[3]/i && $dayofweek >= 3 && $version !~ /1960/) ? 'Feria'
+        : ($dayname[0] =~ /Quadp[3]/i && $dayofweek >= 3 && $version !~ /1960/) ? 'Per Annum'
         : ($dayname[0] =~ /Adv/i) ? 'Adv'
         : ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek > 3)) ? 'Asc'
         : ($dayname[0] =~ /Pasc[0-6]/i) ? 'Pasc'
@@ -1810,7 +1810,7 @@ sub getanthoras {
 
   my $ant = '';
   if ($rule !~ /Antiphonas horas/i && $communerule !~ /Antiphonas horas/i && !$tflag) { return ''; }
-  if ($version =~ /(1955|1960)/ && ($dayofweek > 0 || $1 eq '1960') && $rank < 6) { return ''; }
+  if ($version =~ /(1960|Newcal)/ && ($dayofweek > 0 || $1 eq '1960') && $rank < 6) { return ''; }
   my %w = (columnsel($lang)) ? %winner : %winner2;
   my $w = $w{'Ant Laudes'};
   my $c = ($winner =~ /sancti/i) ? 3 : 2;

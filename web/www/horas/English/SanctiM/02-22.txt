@@ -1,0 +1,4 @@
+[Lectio4]
+@Sancti/01-18:Lectio4:s/At that.*//s
+@Sancti/01-18:Lectio5:s/.*(O most.*). The.*/$1. /s
+@Sancti/01-18:Lectio6
