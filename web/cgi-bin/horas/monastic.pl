@@ -30,6 +30,7 @@ sub makeferia {
 sub psalmi_matutinum_monastic {
   $lang = shift;
   $psalmnum1 = $psalmnum2 = -1;
+  $psalmnum1 = $psalmnum2 = 0 if (($dayname[0] eq "Quad6") && ($dayofweek > 3));
 
   #** reads the set of antiphons-psalms from the psalterium
   my %psalmi = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi matutinum.txt')};
@@ -138,6 +139,14 @@ sub psalmi_matutinum_monastic {
     push(@s, $psalmi[14], $psalmi[15], "\n");
     lectiones(2, $lang);
     push(@s, "\n", '!Nocturn III.', '_');
+
+    if (($dayname[0] eq "Quad6") && ($dayofweek > 3))  {
+      for (16..18) { antetpsalm_mm($psalmi[$_], $_); }
+      antetpsalm_mm('', -2);
+      push(@s, $psalmi[19], $psalmi[20], "\n");
+      lectiones(3, $lang);
+      return;
+    }
 
     my $ant;
     my $p;
