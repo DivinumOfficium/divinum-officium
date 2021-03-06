@@ -3,6 +3,9 @@
 [Rank]
 Sabbato Sancto;;Feria privilegiata Duplex I classis;;7.1
 
+[Ant Matutinum]
+@Tempora/Quad6-6::s/15./15\n\n\n\n/s s/29./29\n\n\n\n/s
+
 [Ant Laudes]
 @Tempora/Quad6-6::s/\n/_/smg s/_/;;50\n/ s/_/;;91\n/ s/_/;;63\n/ s/_/;;226\n/ s/$/;;150\n/s
 

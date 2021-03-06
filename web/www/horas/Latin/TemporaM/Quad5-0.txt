@@ -1,9 +1,91 @@
 @Tempora/Quad5-0
 
+[Rule]
+12 lectiones
+
 [Capitulum Vespera]
 @Tempora/Quad5-0
 _
 @Psalterium/Major Special:Quad5M Vespera:3-7
+
+[Lectio3]
+@Tempora/Quad5-0:Lectio3:s/-19/-16/ s/17 .*//s
+
+[Lectio4]
+@Tempora/Quad5-0:Lectio3:s/14-/17-/ s/14.*17/17/s
+
+[Responsory4]
+R. Deus meus, éripe me de manu peccatóris: † et de manu contra legem agéntis, et iníqui:
+* Quóniam tu es patiéntia mea.
+V. Deus meus, ne elongéris a me: † Deus meus, in auxílium meum réspice.
+R. Quóniam tu es patiéntia mea.
+&Gloria
+R. Deus meus, éripe me de manu peccatóris: † et de manu contra legem agéntis, et iníqui: * Quóniam tu es patiéntia mea.
+
+[Lectio5]
+@Tempora/Quad5-0:Lectio4
+
+[Responsory5]
+@Tempora/Quad5-0:Responsory4
+
+[Lectio6]
+@Tempora/Quad5-0:Lectio5:s/Nec dubit.re .*//s
+
+[Responsory6]
+@Tempora/Quad5-0:Responsory5
+
+[Lectio7]
+@Tempora/Quad5-0:Lectio5:s/.* Nec dubit.re /Nec dubitáre /s s/$/~/
+@Tempora/Quad5-0:Lectio6:s/Beátus .*//s
+
+[Responsory7]
+@Tempora/Quad5-0:Responsory6
+
+[Lectio8]
+@Tempora/Quad5-0:Lectio6:s/.* Beátus /Beátus /s
+
+[Responsory8]
+R. Qui custodiébant ánimam meam, consílium fecérunt in unum, dicéntes: † Deus derelíquit eum,
+* Persequímini et comprehéndite eum: quia non est qui líberet eum: † Deus meus, ne elongéris a me: Deus meus, in adiutórium meum inténde.
+V. Omnes inimíci advérsum me cogitábant mala mihi: † verbum iníquum mandavérunt advérsum me, dicéntes.
+R. Persequímini et comprehéndite eum: quia non est qui líberet eum: † Deus meus, ne elongéris a me: Deus meus, in adiutórium meum inténde.
+&Gloria
+R. Qui custodiébant ánimam meam, consílium fecérunt in unum, dicéntes: † Deus derelíquit eum, * Persequímini et comprehéndite eum: quia non est qui líberet eum: † Deus meus, ne elongéris a me: Deus meus, in adiutórium meum inténde.
+
+[Ant Matutinum 3N]
+Ego * glóriam meam non quæro: † est qui quærat, et iúdicet.
+I seek not Mine Own glory; * there is One That seeketh and judgeth.
+
+[Lectio9]
+@Tempora/Quad5-0:Lectio7:s/Cæléstem .*//s
+
+[Responsory9]
+@Tempora/Quad5-0:Responsory7
+
+[Lectio10]
+@Tempora/Quad5-0:Lectio7:s/.* Cæléstem /Cæléstem /s s/$/~/
+@Tempora/Quad5-0:Lectio8:s/Hi profecto .*//s
+
+[Responsory10]
+@Tempora/Quad5-0:Responsory8
+
+[Lectio11]
+@Tempora/Quad5-0:Lectio8:s/.* Hi profecto /Hi profecto /s s/$/~/
+@Tempora/Quad5-0:Lectio9:s/Accepta .*//s
+
+[Responsory11]
+@Tempora/Quad5-0:Responsory9
+
+[Lectio12]
+@Tempora/Quad5-0:Lectio9:s/.* Accepta /Accepta /s
+
+[Responsory12]
+R. Pacífice loquebántur mihi inimíci mei, et in ira molésti erant mihi:
+* Vidísti, Dómine, ne síleas, ne discédas a me.
+V. Ego autem cum mihi molésti essent, † induébam me cilício, et humiliábam in jejúnio ánimam meam.
+R. Vidísti, Dómine, ne síleas, ne discédas a me.
+&Gloria
+R. Pacífice loquebántur mihi inimíci mei, et in ira molésti erant mihi: * Vidísti, Dómine, ne síleas, ne discédas a me.
 
 [Capitulum Laudes]
 @Tempora/Quad5-0
@@ -16,33 +98,7 @@ _
 @Psalterium/Major Special:Quad5M Vespera:3-7
 
 [LectioE]
-v. Sequentia Sancti Evangelii secundum Joannem
-!Joannes 8:46-59
-8:46 Quis ex vobis arguet me de peccato? si veritatem dico vobis, quare non~
-creditis mihi?
-8:47 Qui ex Deo est, verba Dei audit. Propterea vos non auditis, quia ex Deo non~
-estis.
-8:48 Responderunt ergo Judaei, et dixerunt ei: Nonne bene dicimus nos quia~
-Samaritanus es tu, et daemonium habes?
-8:49 Respondit Jesus: Ego daemonium non habeo: sed honorifico Patrem meum, et~
-vos inhonorastis me.
-8:50 Ego autem non quaero gloriam meam: est qui quaerat, et judicet.
-8:51 Amen, amen dico vobis: si quis sermonem meum servaverit, mortem non videbit~
-in aeternum.
-8:52 Dixerunt ergo Judaei: Nunc cognovimus quia daemonium habes. Abraham mortuus~
-est, et prophetae; et tu dicis: Si quis sermonem meum servaverit, non gustabit~
-mortem in aeternum.
-8:53 Numquid tu major es patre nostro Abraham, qui mortuus est? et prophetae~
-mortui sunt. Quem teipsum facis?
-8:54 Respondit Jesus: Si ego glorifico meipsum, gloria mea nihil est: est Pater~
-meus, qui glorificat me, quem vos dicitis quia Deus vester est,
-8:55 et non cognovistis eum: ego autem novi eum. Et si dixero quia non scio eum,~
-ero similis vobis, mendax. Sed scio eum, et sermonem ejus servo.
-8:56 Abraham pater vester exsultavit ut videret diem meum: vidit, et gavisus~
-est.
-8:57 Dixerunt ergo Judaei ad eum: Quinquaginta annos nondum habes, et Abraham~
-vidisti?
-8:58 Dixit eis Jesus: Amen, amen dico vobis, antequam Abraham fieret, ego sum.
-8:59 Tulerunt ergo lapides, ut jacerent in eum: Jesus autem abscondit se, et~
-exivit de templo.
-$Te decet
+Sequéntia ++ sancti Evangélii secúndum Joánnem.
+!Joann 8:46-59
+In illo témpore: Dicébat Jesus turbis Judæórum: Quis ex vobis árguet me de peccáto? Si veritátem dico vobis, quare non créditis mihi? Qui ex Deo est, verba Dei audit. Proptérea vos non audítis, quia ex Deo non estis. Respondérunt ergo Judæi et dixérunt ei: Nonne bene dícimus nos, quia Samaritánus es tu, et dæmónium habes? Respóndit Jesus: Ego dæmónium non hábeo, sed honorífico Patrem meum, et vos inhonorástis me. Ego autem non quæro glóriam meam: est, qui quærat et júdicet. Amen, amen, dico vobis: si quis sermónem meum serváverit, mortem non vidébit in ætérnum. Dixérunt ergo Judæi: Nunc cognóvimus, quia dæmónium habes. Abraham mórtuus est et Prophétæ; et tu dicis: Si quis sermónem meum serváverit, non gustábit mortem in ætérnum. Numquid tu major es patre nostro Abraham, qui mórtuus est? et Prophétæ mórtui sunt. Quem teípsum facis? Respóndit Jesus: Si ego glorífico meípsum, glória mea nihil est: est Pater meus, qui gloríficat me, quem vos dícitis, quia Deus vester est, et non cognovístis eum: ego autem novi eum: et si díxero, quia non scio eum, ero símilis vobis, mendax. Sed scio eum et sermónem ejus servo. Abraham pater vester exsultávit, ut vidéret diem meum: vidit, et gavísus est. Dixérunt ergo Judæi ad eum: Quinquagínta annos nondum habes, et Abraham vidísti? Dixit eis Jesus: Amen, amen, dico vobis, antequam Abraham fíeret, ego sum. Tulérunt ergo lápides, ut jácerent in eum: Jesus autem abscóndit se, et exívit de templo.
+

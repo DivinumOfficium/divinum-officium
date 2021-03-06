@@ -1,5 +1,8 @@
 @Tempora/Quad6-5
 
+[Ant Matutinum]
+@Tempora/Quad6-5::s/26./26\n\n\n\n/s s/53./53\n\n\n\n/s
+
 [Ant Laudes]
 @Tempora/Quad6-5::s/\n/_/smg s/_/;;50\n/ s/_/;;142\n/ s/_/;;84\n/ s/_/;;225\n/ s/$/;;147\n/s
 
