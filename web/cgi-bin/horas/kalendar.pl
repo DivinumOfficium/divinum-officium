@@ -108,6 +108,7 @@ if ($officium =~ /brevi/) {
   $version = strictparam('version');
   @versions = (
     'Monastic',
+    'Sarum'
     'Tridentine 1570',
     'Tridentine 1910',
     'Divino Afflatu',

@@ -701,7 +701,7 @@ sub psalmi_minor {
     my @a = split(';;', $psalmi[$i]);
     $ant = chompd($a[1]);
     $psalms = chompd($a[2]);
-  } elsif ($version =~ /trident/i) {
+  } elsif ($version =~ /trident|sarum/i) {
     my $daytype = ($dayofweek == 0) ? 'Dominica' : 'Feria';
     my %psalmlines = split(/\n|=/, $psalmi{Tridentinum});
     my $psalmkey;
@@ -756,7 +756,7 @@ sub psalmi_minor {
   setbuild("Psalterium/Psalmi minor", "$hora Day$dayofweek", 'Psalmi ord');
   $comment = 0;
 
-  if ($hora =~ /completorium/i && $version !~ /trident/i) {
+  if ($hora =~ /completorium/i && $version !~ /trident|sarum/i) {
     if ($winner =~ /tempora/i && $dayofweek > 0 && $winner{Rank} =~ /Dominica/i && $rank < 6) {
       ;
     }
