@@ -1126,6 +1126,7 @@ sub lect1960 {
   }
   if ($rule =~ /Ipsa Virgo Virginum/i || $winner{Rank} =~ /Mari\w*\b\s*Virgin/i) { $a[3] = $a[10]; }
   if ($rule =~ /Quorum Festum/i && !$divaux) { $a[3] = $a[7]; }
+  if ($rule =~ /Quarum Festum/i && !$divaux) { $a[3] = $a[9]; }
   $w = $w{'Lectio1'};
   if (!$w) { $w = $s{'Lectio1'}; }
 
