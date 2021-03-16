@@ -272,7 +272,7 @@ sub getrank {
   if (-e "$datafolder/Latin/$tn.txt" || $dayname[0] =~ /Epi0/i || ($transfer{$nday}) =~ /tempora/i) {
     $dofw = $dayofweek;
 
-    if ($hora =~ /(vespera|completorium)/i && $testmode !~ /(Saint|Common)/i) {
+    if ($hora =~ /(Vespera|Completorium)/i && $testmode !~ /(Saint|Common)/i) {
       my $a = getweek(1);
       my @a = split('=', $a);
       $dn[0] = $a[0];
@@ -427,7 +427,7 @@ sub getrank {
   if (exists($transfer{$cday}) && $transfer{$cday} !~ /Tempora/i) { $cday = $transfer{$cday}; }
   if ($tname =~ /Nat/ && $cday =~ /Nat/) { $cday = 'none'; }
 
-  if ($hora =~ /(vespera|completorium)/i) {
+  if ($hora =~ /(Vespera|Completorium)/i) {
     if ($cday !~ /(tempora|DU)/i) { $cday = "$kalendar{$cday}"; }
     my $cdayd = $cday;
     if (!$cdayd || $cdayd !~ /([0-9]+\-[0-9]+)/) { $cdayd = nextday($month, $day, $year); }
