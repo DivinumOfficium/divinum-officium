@@ -1,4 +1,4 @@
-FROM        perl:5.28-slim
+FROM        perl:5.28
 MAINTAINER  Ben Yanke <ben@benyanke.com>
 
 # Set envs
@@ -31,6 +31,10 @@ RUN mkdir -p /var/run/apache2 /var/lock/apache2 /var/log/apache2 ; chown -R www-
 # Copy in code
 WORKDIR /var/www
 COPY --chown=www-data:www-data web /var/www/web
+
+# Update dependencies
+COPY --chown=www-data:www-data Build.PL /var/www/Build.PL
+RUN cpanm .
 
 # Write build info to be available at $url/buildinfo
 RUN echo "Build date: `date`" > /var/www/web/buildinfo
