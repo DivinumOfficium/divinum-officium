@@ -7,6 +7,9 @@ use utf8;
 #use warnings;
 #use strict "refs";
 #use strict "subs";
+
+use Template::Semantic;
+
 my $a = 4;
 
 #*** htmlHead($title, $flag)
@@ -16,30 +19,8 @@ sub htmlHead {
   my $flag = shift;
   if (!$title) { $title = ' '; }
 
-  #  print "Content-type: text/html; charset=ISO-8859-1\n\n";
   print "Content-type: text/html; charset=utf-8\n\n";
-  print << "PrintTag";
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<HTML><HEAD>
-  <META NAME="Resource-type" CONTENT="Document">
-  <META NAME="description" CONTENT="Divine Office">
-  <META NAME="keywords" CONTENT="Divine Office, Breviarium, Liturgy, Traditional, Zsolozsma">
-  <META NAME="Copyright" CONTENT="Like GNU">
-  <STYLE>
-    /* https://www.30secondsofcode.org/css/s/offscreen/ */
-    .offscreen {
-      border: 0;
-      clip: rect(0 0 0 0);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-    }
-  </STYLE>
-  <TITLE>$title</TITLE>
-PrintTag
+  print Template::Semantic->process("../../template/home.html", { 'TITLE' => $title });
   if ($flag == 2) { horasjs(); }
   print "</HEAD>";
 }
