@@ -1,18 +1,11 @@
 @Tempora/Pasc0-2
 
-[LectioE]
-v. Sequentia Sancti Evangelii secundum Lucam
-!Luc 24:36-47
-24:36 Dum autem haec loquuntur, stetit Jesus in medio eorum, et dicit eis: Pax vobis: ego sum, nolite timere.
-24:37 Conturbati vero et conterriti, existimabant se spiritum videre.
-24:38 Et dixit eis: Quid turbati estis, et cogitationes ascendunt in corda vestra?
-24:39 videte manus meas, et pedes, quia ego ipse sum; palpate et videte, quia spiritus carnem et ossa non habet, sicut me videtis habere.
-24:40 Et cum hoc dixisset, ostendit eis manus et pedes.
-24:41 Adhuc autem illis non credentibus, et mirantibus prae gaudio, dixit: Habetis hic aliquid quod manducetur?
-24:42 At illi obtulerunt ei partem piscis assi et favum mellis.
-24:43 Et cum manducasset coram eis, sumens reliquias dedit eis.
-24:44 Et dixit ad eos: Haec sunt verba quae locutus sum ad vos cum adhuc essem vobiscum, quoniam necesse est impleri omnia quae scripta sunt in lege Moysi, et prophetis, et Psalmis de me.
-24:45 Tunc aperuit illis sensum ut intelligerent Scripturas,
-24:46 et dixit eis: Quoniam sic scriptum est, et sic oportebat Christum pati, et resurgere a mortuis tertia die:
-24:47 et praedicari in nomine ejus pœnitentiam, et remissionem peccatorum in omnes gentes, incipientibus ab Jerosolyma.
-$Te decet
+[Rule]
+ex Pasc0-0
+Psalmi Dominica
+
+[Ant Matutinum]
+@TemporaM/Pasc0-0
+
+[Responsory3]
+@Tempora/Pasc0-3:Responsory1

@@ -1,0 +1,10 @@
+[Lectio1]
+@Tempora/Pasc0-1:Lectio1:s/ Gdy.*//s
+
+[Lectio2]
+@Tempora/Pasc0-1:Lectio1:s/.*Gdy/Gdy/s s/$/~/
+@Tempora/Pasc0-1:Lectio2:s/Mieli.*/./s
+
+[Lectio3]
+@Tempora/Pasc0-1:Lectio2:s/.*Mieli/Mieli/s s/$/~/
+@Tempora/Pasc0-1:Lectio3
