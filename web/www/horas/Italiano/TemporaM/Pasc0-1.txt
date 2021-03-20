@@ -1,0 +1,10 @@
+[Lectio1]
+@Tempora/Pasc0-1:Lectio1:s/ Accordò.*//s
+
+[Lectio2]
+@Tempora/Pasc0-1:Lectio1:s/.*Accordò/Accordò/s s/$/~/
+@Tempora/Pasc0-1:Lectio2:s/Bisognava.*/./s
+
+[Lectio3]
+@Tempora/Pasc0-1:Lectio2:s/.* Bisognava/Bisognava/s s/$/~/
+@Tempora/Pasc0-1:Lectio3

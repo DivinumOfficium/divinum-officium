@@ -1,0 +1,19 @@
+[Lectio1]
+@Sancti/01-03::1-6 s/1-/2-/ s/1.*Nie daj tego, Boże! /2 /s
+
+[Lectio9]
+@Tempora/Pasc0-0:Lectio1:s/ Niewiasty.*//s
+
+[Lectio10]
+@Tempora/Pasc0-0:Lectio1:s/.*Niewiasty/Niewiasty/s s/$/~/
+@Tempora/Pasc0-0:Lectio2:s/ Ponieważ.*//s
+
+[Lectio11]
+@Tempora/Pasc0-0:Lectio2:s/.*Ponieważ/Ponieważ/s
+
+[LectioE]
+Ciąg dalszy ++ Ewangelii świętej według Marka.
+!Mk 16:1-7
+Onego czasu: Maria Magdalena i Maria Jakubowa, i Salome nakupiły wonności, aby pójść i namaścić Jezusa. I bardzo rano w pierwszy dzień tygodnia przyszły do grobu, gdy już wzeszło słońce. A mówiły do siebie: «Któż nam odsunie kamień od drzwi grobowca?» I spojrzawszy, ujrzały kamień odsunięty. Był bowiem bardzo wielki.~
+A wszedłszy do grobowca, ujrzały młodzieńca siedzącego po prawej stronie, ubranego w szatę białą, i zdumiały się. Ale on rzekł im: «Nie lękajcie się, szukacie Jezusa Nazareńskiego, ukrzyżowanego: powstał, nie masz Go tu, oto miejsce, gdzie Go złożono. Ale idźcie, powiedzcie uczniom Jego i Piotrowi, że was uprzedza do Galilei: tam Go ujrzycie, jako wam powiedział».
+
