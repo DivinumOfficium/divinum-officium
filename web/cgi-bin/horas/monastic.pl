@@ -61,7 +61,7 @@ sub psalmi_matutinum_monastic {
       my $p = $p[$i];
       if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
       if ($i == 0 || $i == 8) {
-        if ($dayname[0] !~ /Nat[23]\d/) {
+        if ($dayname[0] !~ /Nat[23]\d|Pasc0/) {
           my $ant = $prayers{$lang}{"Alleluia Duplex"};
           $ant =~ s/ / * /;
           $ant =~ s/\./$prayers{$lang}{"Alleluia Simplex"}/;
@@ -100,7 +100,7 @@ sub psalmi_matutinum_monastic {
     for ($i = 0; $i < 3; $i++) { $psalmi[$i + 16] = $c[$i]; }
   }
 
-  if ($rank > 4.9) {
+  if (($rank > 4.9) && !(($dayname[0] =~ /Pasc0/) && ($dayofweek > 2))) {
     #** get proper Ant Matutinum
     my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
     if ($w) {
