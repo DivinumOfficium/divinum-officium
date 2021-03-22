@@ -176,27 +176,26 @@ sub psalmi_matutinum_monastic {
     lectiones(3, $lang);
     push(@s, '&teDeum', "\n");
 
-    if (exists($winner{LectioE})) {    #** set evangelium
-      my @w = split("\n", $w{LectioE});
-
-      $w[0] =~ s/^(v. )?/v./;
-      splice(@w, 1, 1, "R. " . translate("Gloria tibi Domine", $lang), $w[1]);
-      if ($w[-1] !~ /Te decet/) { push(@w, "\$Te decet"); }
-      splice(@w, -1, 1, "R. " . translate("Amen", $lang), "_", $w[-1]);
-
-      $w = '';
-      foreach $item (@w) {
-        if ($item =~ /^([0-9:]+)\s+(.*)/s) {
-          my $rest = $2;
-          my $num = $1;
-          if ($rest =~ /^\s*([a-z])(.*)/is) { $rest = uc($1) . $2; }
-          $item = setfont($smallfont, $num) . " $rest";
-        }
-        $w .= "$item\n";
-      }
-      push(@s, $w);
+    my @e;
+    if (exists($w{LectioE})) {    #** set evangelium
+      @e = split("\n", $w{LectioE}); }
+    else {
+      my $dt = $datafolder; $dt =~ s/horas/missa/g; 
+      my $w = $winner; $w =~ s/M//g;
+      my %missa = %{setupstring($dt, $lang, $w)};
+      @e = split("\n", %missa{Evangelium});
     }
-    push(@s, "\n");
+
+    my $firstline = shift @e;
+    $firstline =~ s/^(v. )?/v./;
+    $firstline =~ s/\++/++/;
+    push(@s, $firstline, shift @e, "R. " . translate("Gloria tibi Domine", $lang));
+
+    $e[0] =~ s/^(v. )?/v./;
+    @e = grep { !/^!/ } @e;
+    for($i=0; $i<$#e-1; $i++) { $e[$i] =~ s/~$/~/ }
+
+    push(@s, @e, "R. " . translate("Amen", $lang), "_", "\$Te decet");
     return;
   }
   my ($w, $c) = getproprium('MM Capitulum', $lang, 0, 1);
