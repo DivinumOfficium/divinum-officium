@@ -1225,8 +1225,10 @@ sub precedence {
           || $day == 25)
         )
       {
-        $vtv = 'C12An';
-      }
+        $vtv = 'C12';
+      } elsif ($dayname[0] =~ /(Quadp|Quad)/i) {
+        $vtv = 'C12Q';
+      } 
     }
     $winner = "Commune/$vtv.txt";
     $commemoratio = $commemoratio1 = $scriptura = $commune = '';
