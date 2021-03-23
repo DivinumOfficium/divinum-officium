@@ -183,7 +183,7 @@ sub psalmi_matutinum_monastic {
       my $dt = $datafolder; $dt =~ s/horas/missa/g; 
       my $w = $winner; $w =~ s/M//g;
       my %missa = %{setupstring($dt, $lang, $w)};
-      @e = split("\n", %missa{Evangelium});
+      @e = split("\n", $missa{Evangelium});
     }
 
     my $firstline = shift @e;

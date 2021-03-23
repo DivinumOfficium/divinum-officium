@@ -2,7 +2,7 @@
 Officium parvum Beatae Mariae Virginis
 
 [Rank]
-Officium parvum Beatae Mariae Virginis tempore Adventi;;Simplex;;1
+Officium Parvum Beatae Mariae Virginis tempore Adventi;;Simplex;;1
 
 [Rule]
 Ave only
@@ -10,6 +10,7 @@ Doxology=Nat
 Omit Suffragium
 Special Benedictio
 Votive nocturn
+no Te Deum
 
 [Ant Vespera]
 @Sancti/03-25
@@ -88,7 +89,7 @@ _
 38 Dixit autem Maria: Ecce ancilla Domini: fiat mihi secundum verbum tuum.
 
 [Responsory3]
-@Sancti/03-25
+@Commune/C12
 
 [Ant Laudes]
 @Sancti/03-25:Ant Vespera:s/;;.*//g
