@@ -1,4 +1,84 @@
+[Rank]
+S. Marci Evangelistæ;;Duplex II classis;;5;;ex C1p
+
+[Rule]
+12 lectiones
+
+[Ant Vespera]
+@Commune/C1p
+
+[Oratio]
 @Sancti/04-25
 
-[Rank]
-S. Marci Evangelistæ;;Duplex II classis;;5.0;;ex C1
+[Hymnus Matutinum]
+@Commune/C1p:Hymnus Matutinum
+
+[Lectio1]
+@CommuneM/C1a
+
+[Responsory1]
+@Commune/C1p
+
+[Lectio2]
+@CommuneM/C1a
+
+[Responsory2]
+@Commune/C1p
+
+[Lectio3]
+@CommuneM/C1a
+
+[Responsory3]
+@Commune/C1p
+
+[Lectio4]
+@CommuneM/C1a
+
+[Lectio5]
+@Sancti/04-25:Lectio4
+
+[Responsory5]
+@Commune/C1p:Responsory4
+
+[Lectio6]
+@Sancti/04-25:Lectio5
+
+[Responsory6]
+@Commune/C1p:Responsory5
+
+[Responsory7]
+@Commune/C1p:Responsory6
+
+[Responsory8]
+@Tempora/Pasc3-1:Responsory1
+
+[Lectio9]
+@Commune/C1a:Lectio7:s/ Nemo.*//s
+
+[Responsory9]
+@Commune/C1p:Responsory7
+
+[Lectio10]
+@Commune/C1a:Lectio7:s/.*Nemo/Nemo/s s/$/~/
+@Commune/C1a:Lectio8:s/ Bene.*//s
+
+[Responsory10]
+@Commune/C1p:Responsory8
+
+[Lectio11]
+@Commune/C1a:Lectio8:s/.*Bene/Bene/s
+
+[Responsory11]
+@Tempora/Pasc0-2:Responsory2
+
+[Lectio12]
+@Commune/C1a:Lectio9
+
+[Responsory12]
+@CommuneM/C1p:Responsory12
+
+[Ant Laudes]
+@Commune/C1p
+
+[Ant Vespera 3]
+@Commune/C1p::s/125/138/
