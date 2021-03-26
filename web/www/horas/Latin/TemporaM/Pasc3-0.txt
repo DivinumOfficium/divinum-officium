@@ -25,14 +25,14 @@ _
 @Tempora/Pasc3-0:Responsory4
 
 [Lectio6]
-@Tempora/Pasc3-0:Lectio4:s/.* Locútus /Locútus /s
+@Tempora/Pasc3-0:Lectio4:s/.* Locútus /Locútus /s s/$/~/
 @Tempora/Pasc3-0:Lectio5:s/Contra .*//s
 
 [Responsory6]
 @Tempora/Pasc3-0:Responsory5
 
 [Lectio7]
-@Tempora/Pasc3-0:Lectio5:s/.* Contra /Contra /s
+@Tempora/Pasc3-0:Lectio5:s/.* Contra /Contra /s s/$/~/
 @Tempora/Pasc3-0:Lectio6:s/Majóra .*//s
 
 [Responsory7]
