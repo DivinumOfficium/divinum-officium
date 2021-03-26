@@ -191,8 +191,8 @@ sub psalmi_matutinum_monastic {
     $firstline =~ s/\++/++/;
     push(@s, $firstline, shift @e, "R. " . translate("Gloria tibi Domine", $lang));
 
-    $e[0] =~ s/^(v. )?/v./;
     @e = grep { !/^!/ } @e;
+    $e[0] =~ s/^(v. )?/v./;
     for($i=0; $i<$#e-1; $i++) { $e[$i] =~ s/~$/~/ }
 
     push(@s, @e, "R. " . translate("Amen", $lang), "_", "\$Te decet");
