@@ -1,0 +1,6 @@
+[Lectio9]
+@Tempora/Pasc2-0:Lectio7:s/Dobry Pasterz.*//s
+
+[Lectio10]
+@Tempora/Pasc2-0:Lectio7:s/.* Dobry Pasterz/Dobry Pasterz/s s/$/~/
+@Tempora/Pasc2-0:Lectio8:s/Our first .*//s

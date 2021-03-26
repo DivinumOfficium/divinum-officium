@@ -1,0 +1,11 @@
+[Lectio6]
+@Tempora/Pasc5-0:Lectio5:s/So that, .*//s
+
+[Lectio7]
+@Tempora/Pasc5-0:Lectio5:s/.* So that, /So that, /s
+
+[Lectio10]
+@Tempora/Pasc5-0:Lectio8:s/Such .*//s
+
+[Lectio11]
+@Tempora/Pasc5-0:Lectio8:s/.* Such /Such /s

@@ -1,0 +1,15 @@
+[Lectio6]
+@Tempora/Pasc2-0:Lectio5:s/In the .*//s
+
+[Lectio7]
+@Tempora/Pasc2-0:Lectio5:s/.* In the /In the /s
+
+[Lectio9]
+@Tempora/Pasc2-0:Lectio7:s/The Good Shepherd gave .*//s
+
+[Lectio10]
+@Tempora/Pasc2-0:Lectio7:s/.* The Good Shepherd gave /The Good Shepherd gave /s s/$/~/
+@Tempora/Pasc2-0:Lectio8:s/Our first .*//s
+
+[Lectio11]
+@Tempora/Pasc2-0:Lectio8:s/.* Our first /Our first /s
