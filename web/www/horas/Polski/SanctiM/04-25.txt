@@ -1,0 +1,9 @@
+[Lectio9]
+@Commune/C1a:Lectio7:s/ Nie.*//s
+
+[Lectio10]
+@Commune/C1a:Lectio7:s/.*Nie/Nie/s s/$/~/
+@Commune/C1a:Lectio8:s/ Stosownie.*//s
+
+[Lectio11]
+@Commune/C1a:Lectio8:s/.*Stosownie/Stosownie/s

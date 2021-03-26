@@ -1,12 +1,28 @@
 [Rank]
 Ss Odonis, Maioli, Odilonis et Hugonis Abbatis;;Duplex;;3;;vide C1
 
+[Invit]
+@Commune/C2p
+
+[Hymnus Matutinum]
+@Commune/C3:HymnusM Laudes
+
+[Lectio1]
+Ex Epístola sancti Petri Damiáni Epíscopi
+!Ad sanctum Hugónem Abbátum 
+Quid alíud Cluniacénse  monastérium, nisi agrum Dómini plenum díxerim, ubi velut acérvus est caeléstium ségetum, chorus tot in caritáte degéntium monachórum?  Ager ille cotidiáno sanctae praedicatiónis ligóne proscindítur, et in eo caeléstis elóquii sémina conspergúntur. Illic spirituálium frugum provéntus aggéritur, ut hórreis póstmodum caeléstibus inferátur. Cluniácus praetérea ager spirituális quidam campus est, ubi caelum et terra congréditur, ac velut aréna certáminis, ubi spirituális more palǽstrae caro frágilis advérsus potestátes aéreas colluctátur. Non est enim nobis colluctátio advérsus carnem et sánguinem, sed advérsus mundi rectóres tenebrárum harum, contra spirituália nequítiae, in cæléstibus.  Illic Iósue, non ille fílius Nun, sed cæléstis ductor exércitus, et qui spirituálium instrúctor est bellatórum, suos édocet mílites, supérbas quinque regum calcáre cervíces: super quos nimírum triumphálem noscúntur obtinére victóriam, qui tótidem sensus córporum per distríctae custódiae cóhibent disciplínam.
+
+[MM Capitulum]
+@:Capitulum Sexta
+_
+@Commune/C1p:Responsory Tertia:s/.*_.//s
+
 [Ant Laudes]
-Super nivem dealbabuntur sancti tui, Domine, allelúja.
+Super nivem dealbabúntur sancti tui, Dómine, allelúja.
 Justi confitebúntur * nómini tuo,  et habitábunt recti cum vultu tuo, allelúja
 Sancti mei, * qui in isto sǽculo  certámen habuístis,  mercédem labórum ego reddo vobis, allelúja.
 Sancti spíritus * et ánimæ justórum,  hymnum dícite Deo, allelúia.
-Sancti estis * dicit Dominus multiplicabo numerum vestrum ut oretis pro populo meo in loco isto.
+Sancti estis * dicit Dóminus multiplicábo numerum vestrum ut orétis pro pópulo meo in loco isto.
 
 [Capitulum Tertia]
 !Eccl 17:6
@@ -71,10 +87,10 @@ Cum in die * magni Sábbati beátus Hugo sacris interésset, colúmnam novæ luc
 [Capitulum Vespera]
 @:Capitulum Tertia
 _
-@Commune/C1p:Responsory Sexta:1-6
+@Commune/C1p:Responsory Sexta:s/._.*//s
 
 [Hymnus Vespera]
-v. Iucúnda patrum rédiit
+v. Jucúnda patrum rédiit
 Festívitas illústrium,
 Confessióne córdium
 Qui respuérunt sǽculum.

@@ -1,0 +1,9 @@
+[Lectio9]
+@Commune/C1a:Lectio7:s/ Infatti propriamente.*//s
+
+[Lectio10]
+@Commune/C1a:Lectio7:s/.*Infatti/Infatti/s s/$/~/
+@Commune/C1a:Lectio8:s/ E con.*//s
+
+[Lectio11]
+@Commune/C1a:Lectio8:s/.*E con/E con/s
