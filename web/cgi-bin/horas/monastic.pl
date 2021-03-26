@@ -368,7 +368,7 @@ sub brevis_monastic {
   }
   else {
     my %b = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
-    $lectio  = $b{"MM LB$dayofweek"};
+    $lectio  = $b{"MM LB" . (($dayname[0] =~ /Pasc/) ? " Pasc" : $dayofweek)};
   }
   $lectio =~ s/&Gloria1?/&Gloria1/;
   push(@s, $lectio);
