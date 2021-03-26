@@ -47,6 +47,10 @@ sub invitatorium {
   my @invit = split("\n", $invit{$name});
   setbuild('Psalterium/Matutinum Special', $name, 'Invitatorium ord');
   my $ant = chompd($invit[$i]);
+  if ($version =~ /Monastic/i && $dayofweek && $winner =~ /Pasc/) {
+    $ant = chompd($prayers{$lang}{"Alleluia Duplex"}) . $prayers{$lang}{"Alleluia Simplex"};
+    $ant =~ s/\., (.*)/, * \u\1/;
+  }
 
   #look for special from proprium the tempore or sancti
   my ($w, $c) = getproprium("Invit", $lang, $seasonalflag, 1);
@@ -55,10 +59,8 @@ sub invitatorium {
   $ant =~ s/^.*?\=\s*//;
   $ant = chompd($ant);
   $ant = "Ant. $ant";
-  if ($dayname[0] =~ /Pasc/i && $ant !~ /allel[uú][ij]a/i) { $ant .= " " . translate('Alleluia', $lang) . "."; }
-  if ($dayname[0] =~ /Quad/i) { $ant =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig; }
+  if ($dayname[0] =~ /Pasc/i) { ensure_single_alleluia($ant,$lang); } 
   my @ant = split('\*', $ant);
-  $ant =~ s/\s*$//;
   my $ant2 = "Ant. $ant[1]";
   my $num = "";
   if ($rule =~ /Invit([0-9])/i) { $num = $1; }
