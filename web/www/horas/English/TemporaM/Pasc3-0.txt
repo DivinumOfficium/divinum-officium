@@ -1,14 +1,16 @@
 [Lectio5]
-@Tempora/Pasc3-0:Lectio4
+@Tempora/Pasc3-0:Lectio4:s/Thus he.*//s
 
 [Lectio6]
-@Tempora/Pasc3-0:Lectio5
+@Tempora/Pasc3-0:Lectio4:s/.* Thus he/Thus he/s s/$/~/
+@Tempora/Pasc3-0:Lectio5:s/Of course, .*//s
 
 [Lectio7]
-Men disputed against this evidence. But what else would men do, who think of things which are of men, than to dispute about God against God? For he is God; they are men. But God knows the thoughts of men that they are vain. In carnal man the one rule which determines what shall be understood is what can be seen. What they are accustomed to see they believe; what they are not accustomed to see they do not believe. But God works miracles beyond ordinary custom because he is God.
+@Tempora/Pasc3-0:Lectio5:s/.* Of course, /Of course, /s s/$/~/
+@Tempora/Pasc3-0:Lectio6:s/Every .*//s
 
 [Lectio8]
-@Tempora/Pasc3-0:Lectio6
+@Tempora/Pasc3-0:Lectio6:s/.* Every /Every /s
 
 [Lectio9]
 @Tempora/Pasc3-0:Lectio7:s/And thus .*//s
