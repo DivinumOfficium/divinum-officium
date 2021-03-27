@@ -1,0 +1,9 @@
+[Lectio9]
+@Commune/C1a:Lectio7:s/ And no.*//s
+
+[Lectio10]
+@Commune/C1a:Lectio7:s/.*And/And/s s/$/~/
+@Commune/C1a:Lectio8:s/ Well.*//s
+
+[Lectio11]
+@Commune/C1a:Lectio8:s/.*Well/Well/s

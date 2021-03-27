@@ -1,10 +1,15 @@
-[LectioE]
-v. Continuation of the Holy Gospel according to John
-!John 10:11-16
-10:11 I am the good shepherd. The good shepherd giveth his life for his sheep.
-10:12 But the hireling, and he that is not the shepherd, whose own the sheep are not, seeth the wolf coming, and leaveth the sheep, and flieth: and the wolf catcheth, and scattereth the sheep:
-10:13 And the hireling flieth, because he is a hireling: and he hath no care for the sheep.
-10:14 I am the good shepherd; and I know mine, and mine know me.
-10:15 As the Father knoweth me, and I know the Father: and I lay down my life for my sheep.
-10:16 And other sheep I have, that are not of this fold: them also I must bring, and they shall hear my voice, and there shall be one fold and one shepherd.
-$Te decet
+[Lectio6]
+@Tempora/Pasc2-0:Lectio5:s/In the .*//s
+
+[Lectio7]
+@Tempora/Pasc2-0:Lectio5:s/.* In the /In the /s
+
+[Lectio9]
+@Tempora/Pasc2-0:Lectio7:s/The Good Shepherd gave .*//s
+
+[Lectio10]
+@Tempora/Pasc2-0:Lectio7:s/.* The Good Shepherd gave /The Good Shepherd gave /s s/$/~/
+@Tempora/Pasc2-0:Lectio8:s/Our first .*//s
+
+[Lectio11]
+@Tempora/Pasc2-0:Lectio8:s/.* Our first /Our first /s

@@ -61,7 +61,7 @@ sub psalmi_matutinum_monastic {
       my $p = $p[$i];
       if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
       if ($i == 0 || $i == 8) {
-        if ($dayname[0] !~ /Nat[23]\d/) {
+        if ($dayname[0] !~ /Nat[23]\d|Pasc0/) {
           my $ant = $prayers{$lang}{"Alleluia Duplex"};
           $ant =~ s/ / * /;
           $ant =~ s/\./$prayers{$lang}{"Alleluia Simplex"}/;
@@ -100,7 +100,7 @@ sub psalmi_matutinum_monastic {
     for ($i = 0; $i < 3; $i++) { $psalmi[$i + 16] = $c[$i]; }
   }
 
-  if ($rank > 4.9) {
+  if (($rank > 4.9) && !(($dayname[0] =~ /Pasc0/) && ($dayofweek > 2))) {
     #** get proper Ant Matutinum
     my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
     if ($w) {
@@ -176,27 +176,26 @@ sub psalmi_matutinum_monastic {
     lectiones(3, $lang);
     push(@s, '&teDeum', "\n");
 
-    if (exists($winner{LectioE})) {    #** set evangelium
-      my @w = split("\n", $w{LectioE});
-
-      $w[0] =~ s/^(v. )?/v./;
-      splice(@w, 1, 1, "R. " . translate("Gloria tibi Domine", $lang), $w[1]);
-      if ($w[-1] !~ /Te decet/) { push(@w, "\$Te decet"); }
-      splice(@w, -1, 1, "R. " . translate("Amen", $lang), "_", $w[-1]);
-
-      $w = '';
-      foreach $item (@w) {
-        if ($item =~ /^([0-9:]+)\s+(.*)/s) {
-          my $rest = $2;
-          my $num = $1;
-          if ($rest =~ /^\s*([a-z])(.*)/is) { $rest = uc($1) . $2; }
-          $item = setfont($smallfont, $num) . " $rest";
-        }
-        $w .= "$item\n";
-      }
-      push(@s, $w);
+    my @e;
+    if (exists($w{LectioE})) {    #** set evangelium
+      @e = split("\n", $w{LectioE}); }
+    else {
+      my $dt = $datafolder; $dt =~ s/horas/missa/g; 
+      my $w = $winner; $w =~ s/M//g;
+      my %missa = %{setupstring($dt, $lang, $w)};
+      @e = split("\n", $missa{Evangelium});
     }
-    push(@s, "\n");
+
+    my $firstline = shift @e;
+    $firstline =~ s/^(v. )?/v./;
+    $firstline =~ s/\++/++/;
+    push(@s, $firstline, shift @e, "R. " . translate("Gloria tibi Domine", $lang));
+
+    @e = grep { !/^!/ } @e;
+    $e[0] =~ s/^(v. )?/v./;
+    for($i=0; $i<$#e-1; $i++) { $e[$i] =~ s/~$/~/ }
+
+    push(@s, @e, "R. " . translate("Amen", $lang), "_", "\$Te decet");
     return;
   }
   my ($w, $c) = getproprium('MM Capitulum', $lang, 0, 1);
@@ -369,7 +368,7 @@ sub brevis_monastic {
   }
   else {
     my %b = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
-    $lectio  = $b{"MM LB$dayofweek"};
+    $lectio  = $b{"MM LB" . (($dayname[0] =~ /Pasc/) ? " Pasc" : $dayofweek)};
   }
   $lectio =~ s/&Gloria1?/&Gloria1/;
   push(@s, $lectio);

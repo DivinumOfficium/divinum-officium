@@ -1,0 +1,13 @@
+[Lectio1]
+@Sancti/01-03::1-6 s/1-/2-/ s/1.*Nie daj tego, Boże! /2 /s
+
+[Lectio9]
+@Tempora/Pasc0-0:Lectio1:s/ Niewiasty.*//s
+
+[Lectio10]
+@Tempora/Pasc0-0:Lectio1:s/.*Niewiasty/Niewiasty/s s/$/~/
+@Tempora/Pasc0-0:Lectio2:s/ Ponieważ.*//s
+
+[Lectio11]
+@Tempora/Pasc0-0:Lectio2:s/.*Ponieważ/Ponieważ/s
+

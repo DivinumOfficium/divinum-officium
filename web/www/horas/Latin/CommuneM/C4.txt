@@ -102,7 +102,10 @@ _
 [Responsory Nona]
 @Commune/C4:Responsory Sexta:8-9
 
-[Ant 9]
+[Ant Vespera]
+@Commune/C4:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//
+
+[Ant 3]
 @Commune/C4:Ant 3 summi Pontificis
 
 [LectioE]

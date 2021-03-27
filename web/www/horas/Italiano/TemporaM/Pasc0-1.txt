@@ -1,78 +1,10 @@
-[Rank]
-Die II infra octavam Paschae;;Duplex I classis;;6;;ex Pasc0-0
-
-[Rule]
-ex Pasc0-0;
-1 nocturn;
-Omit Hymnus Preces Suffragium Commemoratio;
-Minores sine Antiphona;
-Capitulum Versum 2;
-Psalmi Dominica;
-
 [Lectio1]
-Lettura del santo Vangelo secondo Luca.
-!Luca 24:13-35
-In quell'occasione: Due discepoli di Gesù, proprio in quei giorno, se ne andavano verso un villaggio, chiamato Emmaus, lontano sessanta stadi da Gerusalemme. Eccetera.
-_
-Omelia di san Gregorio Papa
-!Omelia 23 sul Vangelo
-Avete udito, fratelli carissimi, che il Signore apparve a due discepoli, che per vero non credevano ancora in lui, ma che tuttavia parlavano di lui mentre andavano per la via: però non mostra loro le sue fattezze, che essi avrebbero riconosciuto. Il Signore voleva apparire esternamente agli occhi del corpo tale quale era internamente agli occhi del loro cuore. Nel fondo del loro cuore essi l'amavano, ma dubitavano: ora il Signore si trovava esteriormente presso di loro, ma non si faceva vedere per chi egli era. Accordò dunque il beneficio della sua presenza, perché parlavano di lui: ma  perché esitavano, nascose loro le sue fattezze, che l'avrebbero fatto riconoscere.
-
-[Responsory1]
-R. Maria Maddalena e l'altra Maria andarono all'alba al sepolcro. 
-* Gesù che cercate non è qui, è risuscitato, come disse, vi precederà in Galilea, dove lo vedrete, alleluia, alleluia.
-V. E di gran mattino, il primo giorno della settimana, arrivarono al sepolcro sul levar del sole: ed entrate, videro un giovanetto seduto a destra, che disse loro.
-R. Gesù che cercate non è qui, è risuscitato, come disse, vi precederà in Galilea, dove lo vedrete, alleluia, alleluia.
+@Tempora/Pasc0-1:Lectio1:s/ Accordò.*//s
 
 [Lectio2]
-Egli s'intrattenne con essi, li rimproverò d'essere sì tardi a comprendere, svelò loro il senso misterioso dei passi della sacra Scrittura che lo riguardavano: ma pure, siccome era ancora uno straniero nel loro cuore quanto alla fede, egli finse d'andare più oltre. Fingere (in latino) significa anche comporre: onde gl'impastatori d'argilla li chiamiamo compositori. (Cristo), che è Verità semplice, non fece nulla con doppiezza: ma si mostrò agli occhi del loro corpo tale quale era nella loro anima. Bisognava provarli per vedere se, non amandolo come loro Dio, avrebbero potuto amarlo almeno sotto la figura d'uno straniero.
-
-[Responsory2]
-R. È risuscitato il buon pastore, che diede la vita per le sue pecorelle e si degnò morire per il suo gregge : 
-* Alleluia, alleluia, alleluia.
-V. Perché, nostro (agnello) Pasquale, è stato immolato Cristo. 
-R. Alleluia, alleluia, alleluia.
-&Gloria
-R. Alleluia, alleluia, alleluia.
+@Tempora/Pasc0-1:Lectio1:s/.*Accordò/Accordò/s s/$/~/
+@Tempora/Pasc0-1:Lectio2:s/Bisognava.*/./s
 
 [Lectio3]
-Ma siccome quelli che la Verità accompagnava non potevano essere lontani dalla carità, essi gli offrono ospitalità come a un viaggiatore. Ma  perché diciamo noi che gliela offrono, mentre è scritto: «Gli fecero viva istanza?». Da questo esempio si può conchiudere che i pellegrini non solo si devono invitare ad accettare l'ospitalità, ma anche costringere. Essi apparecchiano dunque la tavola, gli offrono del pane e altri cibi: e il Dio, che non avevano riconosciuto allorché spiegava loro la sacra Scrittura, lo riconoscono nella frazione del pane. Non ascoltando dunque i precetti divini essi sono illuminati, ma nel praticarli, essendo scritto: «Non quelli che ascoltano la legge sono giusti presso Dio, ma gli esecutori della legge saranno giustificati» Rm 2,13. Chiunque dunque vuol intendere ciò che ode, deve affrettarsi a mettere in pratica quello che ha già potuto udire. Voi vedete che il Signore non fu riconosciuto mentre parlava, e ch'egli si degnò di farsi conoscere mentre gli si porgeva da mangiare.
-&teDeum
-
-[Ant 2]
-Gesù, appressatosi * ai suoi discepoli per via si mise a camminare con loro: ma gli occhi loro erano impediti di riconoscerlo: e li riprese dicendo: O stolti e tardi di cuore a credere cose che sono già state dette tutte dai Profeti, alleluia.
-
-[Oratio]
-O Dio, che nella solennità pasquale hai conferito al mondo i rimedi: accompagna il tuo popolo colla tua grazia; affinché e meriti di conseguire la perfetta libertà e di progredire nella vita eterna.
-$Per Dominum.
-
-[Ant 3]
-Che discorsi sono quelli * che andate facendo per via, che siete così mesti? alleluia.
-
-[LectioE]
-v. Lettura del santo Vangelo secondo Luca.
-!Luca 24:13-35
-24:13 Ed ecco che due di essi andavano lo stesso dì a un castello lontano sessanta stadii da Gerusalemme, chiamato Emmaus : 
-24:14 e discorrevano insieme di tutto quel che era accaduto.
-24:15 E mentre ragionavano e conferivano insieme, Gesù, accostatosi loro, faceva strada con essi :
-24:16 ma gli occhi loro erano trattenuti così da non riconoscerlo. 
-24:17 E disse loro : Che discorsi son quelli che per istrada andate facendo e perchè siete malinconici?
-24:18 E uno di essi chiamato Cleofa rispose, e disse : Tu solo sei forestiero in Gerusalemme, e non sai quello che quivi è accaduto in questi giorni ?
-24:19 Ed egli disse loro : Che ? Ed essi risposero : Intorno a Gesù Nazareno, che fu uomo profeta, potente in opere e in parole dinanzi a Dio e a tutto il popolo :
-24:20 e come i sommi sacerdoti e i nostri capi lo hanno dato ad essere condannato a morte, e lo hanno crocifìsso :
-24:21 Or noi speravamo che egli dovesse redimere Israele : ma adesso, oltre tutto questo, è oggi il terzo giorno che tali cose sono accadute.
-24:22 Ma anche alcune donne tra noi ci hanno messi fuori di noi stessi, le quali andate innanzi giorno al sepolcro,
-24:23 e non avendo trovato il corpo di lui, sono venute a dire di avere anche veduto un'apparizione di Angeli, i quali dicono ch'egli è vivo.
-24:24 E sono andati alcuni dei nostri al sepolcro : e hanno trovato come avevano detto le donne ; ma lui non hanno trovato. 
-24:25 Ed egli disse loro : O stolti e tardi di cuore a credere a cose dette tutte dai profeti!
-24:26 Non era egli necessario che il Cristo patisse tali cose, e così entrasse nella sua gloria?
-24:27 E cominciando da Mosè e da tutti i profeti spiegava loro in tutte le Scritture quello che lo riguardava. 
-24:28 E giunsero vicino al castello dove andavano : ed egli fe' mostra d'andare più innanzi. 
-24:29 E gli fecero forza, dicendo : Resta con noi, perchè si fa sera, e il giorno declina. Ed entrò con essi.
-24:30 E avvenne che, stando a tavola con loro, prese il pane, e lo benedisse, e lo spezzò, e lo porse ad essi,
-24:31 e si aprirono i loro occhi, e lo riconobbero : ma egli sparì dai loro occhi. 
-24:32 Ed essi dissero tra di loro : Non ci ardeva forse il cuore in petto, mentre per istrada ci parlava, e ci svelava le Scritture? 
-24:33 E alzatisi nel punto stesso tornarono a Gerusalemme : e trovarono adunati insieme gli undici e gli altri che stavan con essi, 
-24:34 i quali dissero : Il Signore è veramente risuscitato, ed è apparso a Simone.
-24:35 Ed essi raccontavano quel che era seguito per istrada : e come lo avevano riconosciuto neilo spezzare del pane. 
-$Te decet
+@Tempora/Pasc0-1:Lectio2:s/.* Bisognava/Bisognava/s s/$/~/
+@Tempora/Pasc0-1:Lectio3

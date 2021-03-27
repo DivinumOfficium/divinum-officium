@@ -1,11 +1,28 @@
-[LectioE]
-v. Continuation of the Holy Gospel according to John
-!John 16:16-22
-16:16 A little while, and now you shall not see me; and again a little while, and you shall see me: because I go to the Father.
-16:17 Then some of the disciples said one to another: What is this that he saith to us: A little while, and you shall not see me; and again a little while, and you shall see me, and, because I go to the Father?
-16:18 They said therefore: What is this that he saith, A little while? we know not what he speaketh.
-16:19 And Jesus knew that they had a mind to ask him; and he said to them: Of this do you inquire among yourselves, because I said: A little while, and you shall not see me; and again a little while, and you shall see me?
-16:20 Amen, amen I say to you, that you shall lament and weep, but the world shall rejoice; and you shall be made sorrowful, but your sorrow shall be turned into joy.
-16:21 A woman, when she is in labour, hath sorrow, because her hour is come; but when she hath brought forth the child, she remembereth no more the anguish, for joy that a man is born into the world.
-16:22 So also you now indeed have sorrow; but I will see you again, and your heart shall rejoice; and your joy no man shall take from you.
-$Te decet
+[Lectio5]
+@Tempora/Pasc3-0:Lectio4:s/Thus he.*//s
+
+[Lectio6]
+@Tempora/Pasc3-0:Lectio4:s/.* Thus he/Thus he/s s/$/~/
+@Tempora/Pasc3-0:Lectio5:s/Of course, .*//s
+
+[Lectio7]
+@Tempora/Pasc3-0:Lectio5:s/.* Of course, /Of course, /s s/$/~/
+@Tempora/Pasc3-0:Lectio6:s/Every .*//s
+
+[Lectio8]
+@Tempora/Pasc3-0:Lectio6:s/.* Every /Every /s
+
+[Lectio9]
+@Tempora/Pasc3-0:Lectio7:s/And thus .*//s
+
+[Lectio10]
+@Tempora/Pasc3-0:Lectio7:s/.* And thus /And thus /s s/$/~/
+@Tempora/Pasc3-0:Lectio8:s/But He .*//s
+
+[Lectio11]
+@Tempora/Pasc3-0:Lectio8:s/.* But He /But He /s s/$/~/
+@Tempora/Pasc3-0:Lectio9:s/Therefore, .*//s
+
+[Lectio12]
+@Tempora/Pasc3-0:Lectio9:s/.* Therefore, /Therefore, /s
+

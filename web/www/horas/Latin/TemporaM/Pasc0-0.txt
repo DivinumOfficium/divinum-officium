@@ -1,10 +1,102 @@
 @Tempora/Pasc0-0
 
 [Rule]
-1 nocturn;
 Psalmi Dominica
-Doxology=PascM
 Antiphonas horas
+12 lectiones
+
+[Ant Matutinum]
+Ego sum * qui sum, et consílium meum non est cum ímpiis, † sed in lege Dómini volúntas mea est, allelúja.;;1
+;;2
+;;8
+;;15
+;;23
+;;27
+V. Surréxit Dóminus de sepúlcro, allelúja.
+R. Qui pro nobis pepéndit in ligno, allelúja.
+Terra * trémuit et quiévit, † dum exsúrgeret in judício Deus, allelúja.;;29
+;;63
+;;65
+;;75
+;;87
+;;107
+V. Surréxit Dóminus vere, allelúja.
+R. Et appáruit Simóni, allelúja.
+Nolíte expavéscere: * Jesum quǽritis Nazarénum, crucifíxum: surréxit, non est hic, allelúja.;;243;244;245
+V. Gavísi sunt discípuli, allelúja.
+R. Viso Dómino, allelúja.
+
+[Lectio1]
+@Sancti/01-03::1-6 s/1-5/2-4/ s/1.*Absit. /2 /s
+
+[Lectio2]
+@Sancti/01-03::1 s/6-11/5-7/
+@Sancti/01-03:Lectio1:7
+@Sancti/01-03::2-3
+
+[Lectio3]
+@Sancti/01-03:Lectio2:s/6-11/8-10/ s/6 .*8/8/s s/.11 .*//s
+
+[Responsory3]
+@Tempora/Pasc0-1:Responsory1
+
+[Lectio4]
+@Sancti/01-03:Lectio2:s/6-11/11-13/ s/6 .*11/11/s
+@Sancti/01-03:Lectio3:2-3
+
+[Responsory4]
+@Tempora/Pasc0-1:Responsory2
+
+[Lectio5]
+Sermo sancti Gregórii Nazianzéni
+!Sermone 2. de Paschale
+Pascha Dómini, Pascha, iterúmque Pascha dicam in honórem Trinitátis. Haec nobis festívitatum festívitas, et celebritátum celébritas, tanto céteris ómnibus, non solum humánis et humi defíxis, sed iis étiam quae ipsíus Christi sunt ac propter ipsum celebrántur, antecéllens, quanto sol stellis antecéllit. Heri agnus mactabátur, et postes ungebántur, luxítque primogénita Aegýptus, ac nos exterminátor praetériit, (signáculum quippe terróri ipsi ac veneratióni fuit), pretiosóque Sánguine protécti sumus.
+
+[Responsory5]
+@Tempora/Pasc0-2:Responsory1
+
+[Lectio6]
+Hódie Aegýptum omníno fúgimus, et amaruléntum illum dóminum pharaónem, et acérbos praeféctos: ac luto et láterum confectióne liberáti sumus: nec quisquam est, qui nos Dómino Deo nostro éxitus festum celebráre prohíbeat, et quidem celebráre, non in ferménto véteri malítiae et nequítiae, sed in ázymis sinceritátis et veritátis, nihil Aegyptíaci atque imi ferménti nobíscum feréntes. Heri cum Christo in crucem angébar: hódie simul gloríficor. Heri commoriébar: hódie simul vivíficor. Heri consepeliébar: hódie simul resúrgo.
+
+[Responsory6]
+@Tempora/Pasc0-2:Responsory2
+
+[Lectio7]
+At vero ei, qui pro nobis passus est ac resurréxit, múnera offerámus. Aurum fortásse me dícere putátis, aut argéntum, aut textúras, aut perlúcidos et ingéntis prétii lápides, fluxam fragilémque terræ matériam, humíque manéntem, cuiúsque maiórem partem ímprobi fere póssident, et servi rerum terrenárum ac mundi príncipis?  Immo vero nosmetípsos offerámus, hoc est, opes Deo caríssimas, maximéque congruéntes.  Imáginis decus imágini reddámus, dignitátem nostrum agnoscámus, exemplar nostrum honóre prosequámur, mystérii vim intellegámus, et pro quo Christus morte functus est. Simus ut Christus quoque sicut nos.  Efficiámur dii propter ipsum, quóniam quoque propter nos homo factus est.
+
+[Responsory7]
+@Tempora/Pasc0-3:Responsory1
+
+[Lectio8]
+Assúmpsit, quod detérius erat, ut det, quod paestántius est: mendícus factus est, ut nos illíus mendicitáte ditémur: servi formam suscépit nos in libertátem asserámur. Descéndit, ut evehámur: tentátus est, vincámus: contémptus: ut nos glória affíciat: mórtuus est, ut salútem nobis áfferat: ascéndit ut eos, qui in peccáti lapsu iacébant, ad seípsum trahat. Omnia quíspiam donet, ómnia ei, qui seípsum redemptiónis prétium pro nobis, ac culpae nostrae succidáneum dedit, ófferat. Nihil autem datúrus est tantum, quantum si seípsum obtúlerit huius mystérii ratiónem probe intelligéntem; ac propter illum ómnia factus fúerit, quacúmque ipse propter nos factus est.
+
+[Responsory8]
+@Tempora/Pasc0-3:Responsory2
+
+[Lectio9]
+@Tempora/Pasc0-0:Lectio1:s/ Illæ.*//s
+
+[Responsory9]
+@Tempora/Pasc0-4:Responsory1
+
+[Lectio10]
+@Tempora/Pasc0-0:Lectio1:s/.*Illæ/Illæ/s s/$/~/
+@Tempora/Pasc0-0:Lectio2:s/ Quia.*//s
+
+[Responsory10]
+@Tempora/Pasc0-4:Responsory2
+
+[Lectio11]
+@Tempora/Pasc0-0:Lectio2:s/.*Quia/Quia/s
+
+[Responsory11]
+@Tempora/Pasc0-5:Responsory1
+
+[Lectio12]
+@Tempora/Pasc0-0:Lectio3
+
+[Responsory12]
+@Tempora/Pasc0-5:Responsory2
 
 [Capitulum Laudes]
 @:Capitulum Tertia
@@ -12,7 +104,7 @@ _
 @Psalterium/Major Special:PaschM Laudes:3-8
 
 [Versum 2]
-V. Hæc dies, quam fécit Dominus. 
+V. Hæc dies, quam fécit Dominus.
 R. Exsultémus et lætémur in ea.
 
 [Capitulum Tertia]
@@ -21,7 +113,7 @@ v. Fratres: Expurgáte vetus ferméntum, ut sitis nova conspérsio, sicut estis 
 $Deo gratias
 
 [Responsory Tertia]
-V. Hæc dies quam fecit Dóminus. 
+V. Hæc dies quam fecit Dóminus.
 R. Exsultémus et lætémur in ea.
 
 [Capitulum Sexta]
@@ -48,18 +140,3 @@ _
 [Versum 3]
 @:Versum 2
 
-[LectioE]
-v. Sequentia Sancti Evangelii secundum Marcum
-!Marc 16:1-7
-16:1 Et cum transisset sabbatum, Maria Magdalene, et Maria Jacobi, et Salome~
-emerunt aromata ut venientes ungerent Jesum.
-16:2 Et valde mane una sabbatorum, veniunt ad monumentum, orto jam sole.
-16:3 Et dicebant ad invicem: Quis revolvet nobis lapidem ab ostio monumenti?
-16:4 Et respicientes viderunt revolutum lapidem. Erat quippe magnus valde.
-16:5 Et introëuntes in monumentum viderunt juvenem sedentem in dextris,~
-coopertum stola candida, et obstupuerunt.
-16:6 Qui dicit illis: Nolite expavescere: Jesum quaeritis Nazarenum, crucifixum:~
-surrexit, non est hic, ecce locus ubi posuerunt eum.
-16:7 Sed ite, dicite discipulis ejus, et Petro, quia praecedit vos in Galilaeam:~
-ibi eum videbitis, sicut dixit vobis.
-$Te decet

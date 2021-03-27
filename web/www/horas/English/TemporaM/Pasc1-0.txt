@@ -1,17 +1,23 @@
-[LectioE]
-Continuation of the Holy Gospel according to John
-!John 20:19-31
-20:19 Now when it was late that same day, the first of the week, and the doors were shut, where the disciples were gathered together, for fear of the Jews, Jesus came and stood in the midst, and said to them: Peace be to you.
-20:20 And when he had said this, he shewed them his hands and his side. The disciples therefore were glad, when they saw the Lord.
-20:21 He said therefore to them again: Peace be to you. As the Father hath sent me, I also send you.
-20:22 When he had said this, he breathed on them; and he said to them: Receive ye the Holy Ghost.
-20:23 Whose sins you shall forgive, they are forgiven them; and whose sins you shall retain, they are retained.
-20:24 Now Thomas, one of the twelve, who is called Didymus, was not with them when Jesus came.
-20:25 The other disciples therefore said to him: We have seen the Lord. But he said to them: Except I shall see in his hands the print of the nails, and put my finger into the place of the nails, and put my hand into his side, I will not believe.
-20:26 And after eight days again his disciples were within, and Thomas with them. Jesus cometh, the doors being shut, and stood in the midst, and said: Peace be to you.
-20:27 Then he saith to Thomas: Put in thy finger hither, and see my hands; and bring hither thy hand, and put it into my side; and be not faithless, but believing.
-20:28 Thomas answered, and said to him: My Lord, and my God.
-20:29 Jesus saith to him: Because thou hast seen me, Thomas, thou hast believed: blessed are they that have not seen, and have believed.
-20:30 Many other signs also did Jesus in the sight of his disciples, which are not written in this book.
-20:31 But these are written, that you may believe that Jesus is the Christ, the Son of God: and that believing, you may have life in his name.
-$Te decet
+[Lectio6]
+@Tempora/Pasc1-0:Lectio5:s/To you .*//s
+
+[Lectio7]
+@Tempora/Pasc1-0:Lectio5:s/.* To you /To you /s s/$/~/
+@Tempora/Pasc1-0:Lectio6:s/Let your .*//s
+
+[Lectio8]
+@Tempora/Pasc1-0:Lectio6:s/.* Let your /Let your /s
+
+[Ant Matutinum 3N]
+Alleluia, * Do not weep, Maria, alleluia: the Lord is risen, alleluia, alleluia.
+
+[Lectio9]
+@Tempora/Pasc1-0:Lectio7:s/That .*//s
+
+[Lectio10]
+@Tempora/Pasc1-0:Lectio7:s/.* That /That /s s/$/~/
+@Tempora/Pasc1-0:Lectio8:s/In this .*//s
+
+[Lectio11]
+@Tempora/Pasc1-0:Lectio8:s/.* In this /In this /s
+

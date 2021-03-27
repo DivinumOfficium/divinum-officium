@@ -1,0 +1,7 @@
+[Lectio9]
+@Tempora/Pasc1-0:Lectio7:s/To .*//s
+
+[Lectio10]
+@Tempora/Pasc1-0:Lectio7:s/.* To /To /s
+@Tempora/Pasc1-0:Lectio8:s/In this .*//s
+
