@@ -4,6 +4,7 @@
 Psalmi Dominica
 Antiphonas horas
 12 lectiones
+Doxology=Pasc
 
 [Ant Matutinum]
 Ego sum * qui sum, et consílium meum non est cum ímpiis, † sed in lege Dómini volúntas mea est, allelúja.;;1
@@ -113,8 +114,7 @@ v. Fratres: Expurgáte vetus ferméntum, ut sitis nova conspérsio, sicut estis 
 $Deo gratias
 
 [Responsory Tertia]
-V. Hæc dies quam fecit Dóminus.
-R. Exsultémus et lætémur in ea.
+@:Versum 2
 
 [Capitulum Sexta]
 !1 Cor 5:8
@@ -122,15 +122,13 @@ v. Itaque epulémur: non in ferménto véteri, neque in ferménto malítiæ et n
 $Deo gratias
 
 [Responsory Sexta]
-@:Responsory Tertia
+@:Versum 2
 
 [Capitulum Nona]
-!Col 3:1-2
-v. Si consurrexístis cum Christo, quæ sursum sunt quǽrite, ubi Christus est in déxtera Dei sedens: quæ sursum sunt sápite, non quæ super terram.
-$Deo gratias
+@Psalterium/Prima Special:Pasc
 
 [Responsory Nona]
-@:Responsory Tertia
+@:Versum 2
 
 [Capitulum Vespera]
 @:Capitulum Tertia
@@ -139,4 +137,3 @@ _
 
 [Versum 3]
 @:Versum 2
-
