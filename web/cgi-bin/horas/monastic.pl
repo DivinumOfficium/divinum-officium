@@ -193,7 +193,7 @@ sub psalmi_matutinum_monastic {
 
     @e = grep { !/^!/ } @e;
     $e[0] =~ s/^(v. )?/v./;
-    for($i=0; $i<$#e-1; $i++) { $e[$i] =~ s/~$/~/ }
+    for($i=0; $i<$#e; $i++) { $e[$i] =~ s/~?$/~/ }
 
     push(@s, @e, "R. " . translate("Amen", $lang), "_", "\$Te decet");
     return;
