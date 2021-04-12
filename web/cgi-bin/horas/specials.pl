@@ -937,7 +937,7 @@ sub psalmi_major {
   } elsif ($version =~ /trident/i) {
     my $dow =
       ($hora =~ /Laudes/i && $dayname[0] =~ /Pasc/i)
-      ? 0
+      ? 'P'
       : (  $hora =~ /Laudes/i
         && ($winner =~ /sancti/i || exists($winner{'Ant Laudes'}))
         && $rule !~ /Feria/i) ? 'C'
@@ -1089,8 +1089,8 @@ sub antetpsalm {
   my $ant1 = ($duplex > 2 || $version =~ /1960|Monastic/i) ? $ant : $ant[0];    #difference between 1995, 1960
 
   if ( $dayname[0] =~ /Pasc/i
-    && $hora =~ /(laudes|vespera)/i
-    && $version !~ /monastic/i
+    && (($hora =~ /vespera/i) 
+        || ($hora =~ /laudes/i && $version !~ /trident/i))
     && !exists($winner{"Ant $hora"})
     && $communetype !~ /ex/i)
   {
