@@ -1,0 +1,126 @@
+[Rank]
+In Vigilia Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-01
+
+[Rank1570]
+In Vigilia Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-01
+
+[Rank1960]
+Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
+
+[Rule]
+ex Sancti/01-01;
+9 lectiones
+Psalmi Dominica
+Omit preces
+Feria Te Deum
+CPapaM=Telésphorum;
+
+[Capitulum Vespera]
+@Tempora/Nat1-0:Capitulum Vespera
+
+[Hymnus Vespera]
+@Sancti/12-25:Hymnus Vespera
+
+[HymnusM Vespera]
+@Sancti/12-25:HymnusM Vespera
+
+[Ant 1]
+@Tempora/Nat1-0:Ant 3
+
+[Versum 1]
+@Sancti/12-25:Versum 2
+
+[Oratio]
+@Tempora/Nat1-0:Oratio
+
+[Commemoratio]
+!Commemoratio S. Telesphori Papæ et Martyris
+@Commune/C2:Oratio1 Gregem
+
+[Invit]
+@Sancti/12-25:Invit
+
+[Hymnus Matutinum]
+@Sancti/12-25:Hymnus Vespera
+
+[HymnusM Matutinum]
+@Sancti/12-25:HymnusM Vespera
+
+[Lectio1]
+De Epístola ad Romános
+!Rom 8:1-4
+1 Nihil ergo nunc damnatiónis est iis, qui sunt in Christo Jesu, qui non secúndum carnem ámbulant. 
+2 Lex enim spíritus vitæ in Christo Jesu liberávit me a lege peccáti et mórtis. 
+3 Nam quod impossíbile erat legi, in quo infirmabátur per carnem: Deus Fílium suum mittens in similitúdinem carnis peccáti, et de peccáto damnávit peccátum in carne,
+4 ut justificátio legis implerétur in nobis, qui non secúndum carnem ambulámus, sed secúndum spíritum.
+
+[Lectio2]
+!Rom 8:5-9
+5 Qui enim secúndum carnem sunt: quæ carnis sunt, sápiunt. Qui vero secúndum spíritum sunt, quæ sunt spíritus, séntiunt. 
+6 Nam prudéntia carnis, mors est: prudéntia autem spíritus, vita et pax. 
+7 Quóniam sapiéntia carnis inimíca est Deo: legi enim Dei non est subjécta: nec enim potest. 
+8 Qui autem in carne sunt, Deo placére non possunt. 
+9 Vos autem in carne non estis, sed in spíritu: si tamen Spíritus Dei hábitat in vobis.
+
+[Lectio3]
+!Rom 8:9-11
+9 Si quis autem Spíritum Christi non habet: hic non est ejus. 
+10 Si autem Christus in vobis est: corpus quidem mórtuum est propter peccátum, spíritus vero vivit propter justificatiónem. 
+11 Quod si Spíritus ejus, qui suscitávit Jesum a mórtuis, hábitat in vobis: qui suscitávit Jesum Christum a mórtuis, vivificábit, et mortália córpora vestra, propter inhabitántem Spíritum ejus in vobis.
+
+[Responsory1]
+@Sancti/01-01:Responsory1
+
+[Responsory2]
+@Sancti/01-01:Responsory2
+
+[Responsory3]
+@Sancti/01-01:Responsory3
+
+[Lectio4]
+Sermo sancti Augustíni Epíscopi
+!Sermo 13 de Tempore
+Dóminus noster Jesus Christus, fratres caríssimi, qui in ætérnum est cunctórum Creátor, hódie de matre nascéndo factus est nobis Salvátor. Natus est nobis hódie in témpore per voluntátem, ut nos perdúcat ad Patris æternitátem. Factus est Deus homo, ut homo fíeret Deus: ut panem Angelórum manducáret homo, Dóminus Angelórum hódie factus est homo.
+
+[Lectio5]
+Hódie impléta est prophetía illa, quæ dicit: Roráte, cæli, désuper, et nubes pluant justum: aperiátur terra, et gérminet Salvatórem. Factus est ígitur qui fécerat, ut invenirétur qui períerat. Sic enim in Psalmis homo confitétur: Priúsquam humiliárer, ego peccávi. Peccávit homo, et factus est reus: natus est homo Deus, ut liberarétur reus. Homo ígitur cécidit, sed Deus descéndit. Cécidit homo miserabíliter, descéndit Deus misericórditer; cécidit homo per supérbiam, descéndit Deus cum grátia.
+
+[Lectio6]
+O mirácula, o prodígia, fratres mei! Natúræ jura mutántur in hómine; Deus náscitur, virgo sine viro gravidátur, viri nésciam sermo Dei marítat: simul facta est mater et virgo; mater facta, sed incorrúpta; virgo habens fílium, nésciens virum; semper clausa, sed non infœcúnda. Solus enim sine peccáto est natus, quem sine viríli compléxu non concupiscéntia carnis, sed obediéntia génuit mentis.
+
+[Lectio7]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 2:19-23
+In illo témpore: Defúncto Heróde, ecce Angelus Dómini appáruit in somnis Joseph in Ægýpto, dicens: Surge, et áccipe púerum et matrem ejus, et vade in terram Israël. Et réliqua.
+_
+Homilía sancti Hierónymi Presbýteri
+!Liber 1 in Comment. in cap. 2 Matthæi
+Ex hoc loco intellígimus non solum Heródem, sed et sacerdótes et scribas eódem témpore necem Dómini fuísse meditátos. Qui surgens accépit púerum, et matrem ejus. Non dixit: Accépit fílium suum et uxórem suam, sed Púerum et matrem ejus; quasi nutrítius, non marítus.
+
+[Lectio8]
+Audiens autem quod Archeláus regnáret in Judǽa pro Heróde patre suo, tímuit illo ire. Multi labúntur erróre propter ignorántiam históriæ, putántes eumdem esse Heródem, a quo in passióne sua Dóminus irridétur, et qui nunc mórtuus esse referátur. Ergo Heródes ille qui cum Piláto póstea amicítias fecit, hujus Heródis fílius est, frater Archelái.
+
+[Lectio9]
+Quóniam Nazarǽus vocábitur. Si fixum de Scriptúris posuísset exémplum, numquam díceret: Quod dictum est per prophétas: sed simplíciter: Quod dictum est per prophétam. Nunc autem pluráliter prophétas vocans, osténdit se non verba de Scriptúris sumpsísse, sed sensum. Nazarǽus sanctus interpretátur; sanctum autem Dóminum futúrum omnis Scriptúra commémorat.
+&teDeum
+
+[Capitulum Laudes]
+@Tempora/Nat1-0:Capitulum Vespera
+
+[Hymnus Laudes]
+@Sancti/12-25:Hymnus Laudes
+
+[Ant 2]
+@Tempora/Nat1-0:Ant 1
+
+[Lectio Prima]
+@Tempora/Nat1-0:Lectio Prima
+
+[Capitulum Tertia]
+@Tempora/Nat1-0:Capitulum Vespera
+
+[Capitulum Sexta]
+@Tempora/Nat1-0:Capitulum Sexta
+
+[Capitulum Nona]
+@Tempora/Nat1-0:Capitulum Nona
