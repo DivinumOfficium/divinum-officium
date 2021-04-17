@@ -206,6 +206,7 @@ sub psalmi_matutinum_monastic {
     $name =~ s/.*M.//;
     $name =~ s/\D?\.txt//;
     $w = $s{"MM Capitulum $name"};
+    postprocess_vr($w,$lang) if ($dayname[0] =~ /Pasc/);
   }
   if (!$w) {
     if ($dayname[0] =~ /(Adv|Nat|Quad|Pasc)/i) {
@@ -238,31 +239,22 @@ sub antetpsalm_mm {
   }
 
   if ( $dayname[0] =~ /Pasc/i
-    && $hora =~ /Vespera/i
-    && !exists($winner{"Ant $hora"})
-    && $rule !~ /ex /i)
+    && (!exists($winner{"Ant $hora"}) || $commune =~ /C10/)
+    && ($rule !~ /ex /i || $commune =~ /C10/))
   {
-    if ($ind == 0) {
-      $line[0] = Alleluia_ant($lang, 0, 0);
-      $lastantiphon = '';
-    } else {
-      $line[0] = '';
-      $lastantiphon = Alleluia_ant($lang, 0, 0);
+    if ($hora =~ /Vespera/i)
+    {
+      if ($ind == 0) { $line[0] = Alleluia_ant($lang, 0, 0); $lastantiphon = ''; } 
+      else { $line[0] = ''; $lastantiphon = Alleluia_ant($lang, 0, 0); }
     }
-  }
-
-  if ( $dayname[0] =~ /Pasc/i
-    && $hora =~ /Laudes/i
-    && $winner{Rank} !~ /Dominica/i
-    && !exists($winner{"Ant $hora"})
-    && $rule !~ /ex /i)
-  {
-
-    if ($ind == 0) { $line[0] = Alleluia_ant($lang, 0, 0); $lastantiphon = ''; }
-    if ($ind == 1) { $line[0] = ''; $lastantiphon = ''; }
-    if ($ind == 2) { $line[0] = ''; $lastantiphon = Alleluia_ant($lang, 0, 0); }
-    if ($ind == 3) { ensure_single_alleluia($line[0], $lang); }
-    if ($ind == 4) { $line[0] = Alleluia_ant($lang, 0, 0); }
+    elsif ($hora =~ /Laudes/i && $winner{Rank} !~ /Dominica/i )
+    {
+      if ($ind == 0) { $line[0] = Alleluia_ant($lang, 0, 0); $lastantiphon = ''; }
+      if ($ind == 1) { $line[0] = ''; $lastantiphon = ''; }
+      if ($ind == 2) { $line[0] = ''; $lastantiphon = Alleluia_ant($lang, 0, 0); }
+      if ($ind == 3) { ensure_single_alleluia($line[0], $lang); }
+      if ($ind == 4) { $line[0] = Alleluia_ant($lang, 0, 0); }
+    }
   }
   if ($line[0] && $lastantiphon) { push(@s, "Ant. $lastantiphon"); push(@s, "\n"); }
   if ($line[0]) { push(@s, "Ant. $line[0]"); $lastantiphon = $line[0]; }
@@ -363,7 +355,8 @@ sub brevis_monastic {
   my $lectio;
   if ($commune =~ /C10/) {
     my %c = (columnsel($lang)) ? %commune : %commune2;
-    $lectio = $c{getC10readingname()} ."\n_\n" . $c{'Responsory3'};
+    my $name = getC10readingname();
+    $lectio = $c{$name} ."\n_\n" . $c{'Responsory3'};
     setbuild2("Mariae $name");
   }
   else {
