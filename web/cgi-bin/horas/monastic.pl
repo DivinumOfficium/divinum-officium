@@ -355,7 +355,8 @@ sub brevis_monastic {
   my $lectio;
   if ($commune =~ /C10/) {
     my %c = (columnsel($lang)) ? %commune : %commune2;
-    $lectio = $c{getC10readingname()} ."\n_\n" . $c{'Responsory3'};
+    my $name = getC10readingname();
+    $lectio = $c{$name} ."\n_\n" . $c{'Responsory3'};
     setbuild2("Mariae $name");
   }
   else {
