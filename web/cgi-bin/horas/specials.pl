@@ -1093,7 +1093,7 @@ sub antetpsalm {
     && (($hora =~ /vespera/i) 
         || ($hora =~ /laudes/i && $version !~ /trident/i))
     && !exists($winner{"Ant $hora"})
-    && $communetype !~ /ex/i)
+    && ($communetype !~ /ex/i || $commune =~ /C10/))
   {
     if ($ind == 0) {
       $ant1 = Alleluia_ant($lang, 0);
