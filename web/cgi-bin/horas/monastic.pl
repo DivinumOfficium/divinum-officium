@@ -206,6 +206,7 @@ sub psalmi_matutinum_monastic {
     $name =~ s/.*M.//;
     $name =~ s/\D?\.txt//;
     $w = $s{"MM Capitulum $name"};
+    postprocess_vr($w,$lang) if ($dayname[0] =~ /Pasc/);
   }
   if (!$w) {
     if ($dayname[0] =~ /(Adv|Nat|Quad|Pasc)/i) {
