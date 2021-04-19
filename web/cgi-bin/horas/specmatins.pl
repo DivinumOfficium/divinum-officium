@@ -46,15 +46,15 @@ sub invitatorium {
   my @invit = split("\n", $invit{$name});
   setbuild('Psalterium/Matutinum Special', $name, 'Invitatorium ord');
   my $ant = chompd($invit[$i]);
-  if ($version =~ /Monastic/i && $dayofweek && $winner =~ /Pasc/) {
+  if ($version =~ /Monastic/i && $dayofweek && $winner =~ /Pasc/ && $winner !~ /Pasc0/ && $winner !~ /Pasc5-4/) {
     $ant = chompd($prayers{$lang}{"Alleluia Duplex"}) . $prayers{$lang}{"Alleluia Simplex"};
     $ant =~ s/\., (.*)/, * \u\1/;
+  } else {
+    #look for special from proprium the tempore or sancti
+    my ($w, $c) = getproprium("Invit", $lang, $seasonalflag, 1);
+    if ($w) { $ant = chompd($w); $comment = $c; }
+    setcomment($label, 'Source', $comment, $lang, translate('Antiphona', $lang));
   }
-
-  #look for special from proprium the tempore or sancti
-  my ($w, $c) = getproprium("Invit", $lang, $seasonalflag, 1);
-  if ($w) { $ant = chompd($w); $comment = $c; }
-  setcomment($label, 'Source', $comment, $lang, translate('Antiphona', $lang));
   $ant =~ s/^.*?\=\s*//;
   $ant = chompd($ant);
   $ant = "Ant. $ant";
