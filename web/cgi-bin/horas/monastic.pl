@@ -84,13 +84,27 @@ sub psalmi_matutinum_monastic {
     if ($name =~ /Nat/ && $i > 6 && $i < 13) { $name = 'Epi'; }
     if ($name =~ /Quad/i && $i > 4) { $name = 'Quad5'; }
     $i = $dayofweek || 1;
-    if ($name =~ /Nat|Epi/ && $i > 3) { $i -= 3; }
-    ($psalmi[6],$psalmi[7]) = split("\n", $psalmi{"$name $i Versum"});
-    if ($dayofweek == 0) {
-      ($psalmi[14],$psalmi[15]) = split("\n", $psalmi{"$name 2 Versum"});
-      ($psalmi[17],$psalmi[18]) = split("\n", $psalmi{"$name 3 Versum"});
+    $_ = $winner; s+.*/++; s/.txt//;
+    if ($_ gt 'Pasc5-4' && $_ lt 'Pasc7-0') { $name = 'Asc' }
+    if ($name =~ /Nat|Epi|Asc/ && $i > 3) { $i -= 3; }
+    if ($name ne 'Asc') {
+      ($psalmi[6],$psalmi[7]) = split("\n", $psalmi{"$name $i Versum"});
+      if ($dayofweek == 0) {
+        ($psalmi[14],$psalmi[15]) = split("\n", $psalmi{"$name 2 Versum"});
+        ($psalmi[17],$psalmi[18]) = split("\n", $psalmi{"$name 3 Versum"});
+      }
     }
-    setbuild2("Subst Matutitunum Versus $name $dayofweek");
+    else {
+      my %c = (columnsel($lang)) ? %commune : %commune2;
+      my @v = split("\n", $c{"Ant Matutinum"});
+      my @f = (0,6,14,17);
+      ($psalmi[6],$psalmi[7]) = ($v[$f[$i]],$v[$f[$i]+1]);
+      if ($dayofweek == 0) {
+        ($psalmi[14],$psalmi[15]) = ($v[14],$v[15]);
+        ($psalmi[17],$psalmi[18]) = ($v[17],$v[18]);
+      }
+    }
+    setbuild2("Subst Matutinum Versus $name $dayofweek");
   }
 
   #** special cantica for quad time
