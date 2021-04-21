@@ -1,17 +1,135 @@
 @Tempora/Pasc5-4
 
+[Rank]
+In Ascensione Domini;;Duplex I classis;;7
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+12 lectiones
+Doxology=Asc
+
 [Capitulum Vespera]
 @Tempora/Pasc5-4
 _
 @Tempora/Pasc5-4:Responsory Sexta:1-6
 
+[Ant Matutinum]
+@Tempora/Pasc5-4::1-3
+@Tempora/Pasc5-4::6
+Elevámini, * elevámini, portæ æternáles: † et introíbit rex glóriæ, allelúja.;;23
+@Tempora/Pasc5-4::7
+@Tempora/Pasc5-4::4-5
+Exaltábor * in géntibus, et exaltábor in terra, allelúja.;;45
+@Tempora/Pasc5-4::8
+Læténtur * cæli, et exsúltet terra, † quia venit Dóminus, allelúja.;;95
+@Tempora/Pasc5-4::11-13
+@Tempora/Pasc5-4::9-10
+Illi autem profécti * prædicavérunt ubíque, Dómino cooperánte, et sermónem confirmánte sequéntibus signis, † allelúja, allelúja.;;243;244;245
+@Tempora/Pasc5-4::14-15
+
+[Lectio1]
+@Tempora/Pasc5-4:Lectio1:1-5 s/-5/-3/
+
+[Lectio2]
+@Tempora/Pasc5-4:Lectio1:s/.*// s/1-5/4-8/ s/1 .*4 /4 /s
+@Tempora/Pasc5-4:Lectio2:2-4
+
+[Lectio3]
+@Tempora/Pasc5-4:Lectio2:s/6-9/9-11/ s/6 .*9 /9 /s
+@Tempora/Pasc5-4:Lectio3:2-3
+
+[Lectio4]
+@Tempora/Pasc5-4:Lectio3:s/10-/12-/ s/10 .*12 /12 /s
+
+[Responsory4]
+R. Non relínquam vos órphanos allelúja: † vado, et vénio ad vos, allelúja.
+* Et gaudébit, cor vestrum, † alleluia, allelúja.
+V. In illo die vos cognoscétis quia ego sum in Patre meo, et vos in me, et ego in vobis.
+R. Et gaudébit, cor vestrum, † alleluia, allelúja.
+
+[Lectio5]
+@Tempora/Pasc5-4:Lectio4:s/Mors .*//s
+
+[Responsory5]
+@Tempora/Pasc5-4:Responsory4
+
+[Lectio6]
+@Tempora/Pasc5-4:Lectio4:s/.* Mors /Mors /s s/$/~/
+@Tempora/Pasc5-4:Lectio5:s/Et revéra .*//s
+
+[Responsory6]
+@Tempora/Pasc5-4:Responsory5
+
+[Lectio7]
+@Tempora/Pasc5-4:Lectio5:s/.* Et revéra /Et revéra /s
+
+[Responsory7]
+@Tempora/Pasc5-4:Responsory6
+
+[Lectio8]
+@Tempora/Pasc5-4:Lectio6
+
+[Responsory8]
+R. Ascéndit Deus in jubilatióne, allelúja
+* Et Dóminus in voce tubæ, † allelúja, allelúja.
+V. Ascéndens Christus in altum, captivitám duxit captivitátem.
+R. Et Dóminus in voce tubæ, † allelúja, allelúja.
+
+[Lectio9]
+@Tempora/Pasc5-4:Lectio7
+
+[Responsory9]
+@Tempora/Pasc5-4:Responsory7
+
+[Lectio10]
+@Tempora/Pasc5-4:Lectio8:s/Marcus .*//s
+
+[Responsory10]
+@Tempora/Pasc5-4:Responsory8
+
+[Lectio11]
+@Tempora/Pasc5-4:Lectio8:s/.* Marcus /Marcus /s
+
+[Responsory11]
+R. Viri Galilǽi, quid admirámini aspiciéntes in cælum? allelúja
+* Quemádmodum vidístis eum ascendéntem in cælum, ita véniet, † allelúja, allelúja, allelúja.
+V. Cumque intueréntur in cælum eúntem illum, † ecce duo viri astitérunt juxta illos in véstibus albis, qui et dixérunt.
+R. Quemádmodum vidístis eum ascendéntem in cælum, ita véniet, † allelúja, allelúja, allelúja.
+
+[Lectio12]
+@Tempora/Pasc5-4:Lectio9
+
+[Responsory12]
+R. Si enim non abíero, Paráclitus non véniet ad vos: † si autem abíero, mittam eum ad vos:
+* Cum autem vénerit ille, docébit vos omnem veritátem, allelúja.
+V. Non enim loquétur a semetípso: sed quæcúmque áudiet, loquétur: † et quæ ventúra sunt, annuntiábit vobis.
+R. Cum autem vénerit ille, docébit vos omnem veritátem, allelúja.
+
+[MM LB]
+!He 6:18-20
+v. Confúgimus ad tenéndam propósitam spem, quam sicut ánchoram habémus ánimæ tutam ac firmam, et incedéntem usque ad interióra veláminis, ubi præcúrsor pro nobis introívit Jesus, secúndum órdinem Melchísedech póntifex factus in ætérnum.
+$Tu autem
+_
+R.br. Dóminus in cælo, * Allelúja, allelúja.
+V. Dóminus in cælo, * Allelúja, allelúja.
+R. Parávit sedem suam.
+V. Allelúja, allelúja.
+&Gloria
+V. Dóminus in cælo, * Allelúja, allelúja.
+
+[MM Capitulum]
+!Ap 5-12
+@Tempora/Pasc0-3:Responsory1:3 s/V./v./
+$Deo gratias
+_
+V. Exaltáre, Dómine, allelúja, in virtúte tua, allelúja.
+R. Cantábimus et psallémus virtútes tuas, allelúja.
+
 [Capitulum Laudes]
 @Tempora/Pasc5-4
 _
 @Tempora/Pasc5-4:Responsory Tertia:1-6
-
-[Hymnus Laudes]
-@Tempora/Pasc5-4:HymnusM Vespera
 
 [Responsory Tertia]
 @:Versum 1
@@ -21,4 +139,3 @@ _
 
 [Responsory Nona]
 @Tempora/Pasc5-4:Responsory Sexta:8-9
-

@@ -48,16 +48,17 @@ sub psalmi_matutinum_monastic {
   }
 
   #** special antiphons for not Quad weekdays
-  if ($dayofweek > 0 && $dayname[0] !~ /Quad/i) {
+  if (
+    ($dayofweek > 0 && $dayname[0] !~ /Quad/i)
+    || $winner =~ /Pasc6-0/
+  ) {
     my $start = ($dayname[0] =~ /Pasc|Nat[23]\d/i) ? 0 : 8;
     my @p;
     if ($dayname[0] =~ /Pasc/) { @p = split("\n", $psalmi{'Daym Pasc'}); }
     elsif ($dayname[0] =~ /Nat[23]\d/) {
       @p = split("\n", $psalmi{'Daym Nat'});
     }
-    my $i;
-
-    for ($i = $start; $i < 14; $i++) {
+    for (my $i = $start; $i < 14; $i++) {
       my $p = $p[$i];
       if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
       if ($i == 0 || $i == 8) {
@@ -84,13 +85,27 @@ sub psalmi_matutinum_monastic {
     if ($name =~ /Nat/ && $i > 6 && $i < 13) { $name = 'Epi'; }
     if ($name =~ /Quad/i && $i > 4) { $name = 'Quad5'; }
     $i = $dayofweek || 1;
-    if ($name =~ /Nat|Epi/ && $i > 3) { $i -= 3; }
-    ($psalmi[6],$psalmi[7]) = split("\n", $psalmi{"$name $i Versum"});
-    if ($dayofweek == 0) {
-      ($psalmi[14],$psalmi[15]) = split("\n", $psalmi{"$name 2 Versum"});
-      ($psalmi[17],$psalmi[18]) = split("\n", $psalmi{"$name 3 Versum"});
+    $_ = $winner; s+.*/++; s/.txt//;
+    if ($_ gt 'Pasc5-4' && $_ lt 'Pasc7-0') { $name = 'Asc' }
+    if ($name =~ /Nat|Epi|Asc/ && $i > 3) { $i -= 3; }
+    if ($name ne 'Asc') {
+      ($psalmi[6],$psalmi[7]) = split("\n", $psalmi{"$name $i Versum"});
+      if ($dayofweek == 0) {
+        ($psalmi[14],$psalmi[15]) = split("\n", $psalmi{"$name 2 Versum"});
+        ($psalmi[17],$psalmi[18]) = split("\n", $psalmi{"$name 3 Versum"});
+      }
     }
-    setbuild2("Subst Matutitunum Versus $name $dayofweek");
+    else {
+      my %c = (columnsel($lang)) ? %commune : %commune2;
+      my @v = split("\n", $c{"Ant Matutinum"});
+      my @f = (0,6,14,17);
+      ($psalmi[6],$psalmi[7]) = ($v[$f[$i]],$v[$f[$i]+1]);
+      if ($dayofweek == 0) {
+        ($psalmi[14],$psalmi[15]) = ($v[14],$v[15]);
+        ($psalmi[17],$psalmi[18]) = ($v[17],$v[18]);
+      }
+    }
+    setbuild2("Subst Matutinum Versus $name $dayofweek");
   }
 
   #** special cantica for quad time
@@ -201,22 +216,24 @@ sub psalmi_matutinum_monastic {
   my ($w, $c) = getproprium('MM Capitulum', $lang, 0, 1);
   my %s = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
 
-  if ((!$w || $commune =~ /M\/C10/) && $commune) {
-    my $name = $commune;
-    $name =~ s/.*M.//;
-    $name =~ s/\D?\.txt//;
-    $w = $s{"MM Capitulum $name"};
-    postprocess_vr($w,$lang) if ($dayname[0] =~ /Pasc/);
-  }
-  if (!$w) {
-    if ($dayname[0] =~ /(Adv|Nat|Quad|Pasc)/i) {
-      my $name = $1;
-      if ($dayname[0] =~ /Quad[56]/i) { $name .= '5'; }
-      if ($name eq 'Nat' && $day > 6 && $day < 13) { $name = 'Epi'; }
-      $w = $s{"MM Capitulum $name"};
+  if (!$w && $commune) {
+    if ($commune =~ /(C\d+)/) {
+      $w = $s{"MM Capitulum $1"};
+    } else {
+      my %c = (columnsel($lang)) ? %commune : %commune2;
+      $w = $c{"MM Capitulum"};
     }
   }
-  if (!$w) { $w = $s{'MM Capitulum'}; }
+  if (!$w) {
+    my $name = "";
+    if ($dayname[0] =~ /(Adv|Nat|Quad|Pasc)/i) {
+      $name = " $1";
+      if ($dayname[0] =~ /Quad[56]/i) { $name .= '5'; }
+      if ($name eq ' Nat' && $day > 6 && $day < 13) { $name = ' Epi'; }
+    }
+    $w = $s{"MM Capitulum$name"};
+  }
+  postprocess_vr($w,$lang) if ($dayname[0] =~ /Pasc/);
   push(@s, "!!Capitulum", $w, "\n");
 }
 
@@ -358,8 +375,10 @@ sub brevis_monastic {
     my $name = getC10readingname();
     $lectio = $c{$name} ."\n_\n" . $c{'Responsory3'};
     setbuild2("Mariae $name");
-  }
-  else {
+  } elsif ($commune && $commune !~ /C\d/) {
+    my %c = (columnsel($lang)) ? %commune : %commune2;
+    $lectio = $c{"MM LB"};
+  } else {
     my %b = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
     $lectio  = $b{"MM LB" . (($dayname[0] =~ /Pasc/) ? " Pasc" : $dayofweek)};
   }
