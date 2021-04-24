@@ -977,7 +977,9 @@ sub psalmi_major {
       setbuild2("Antiphona $commune");
     }
   }
-  if (!$w && exists($w{"Ant $hora"})) { $w = $w{"Ant $hora"}; $c = ($winner =~ /tempora/i) ? 2 : 3; }
+  if (!$w && exists($w{"Ant $hora"}) && $winner !~ /M\/C10/) { 
+    $w = $w{"Ant $hora"}; $c = ($winner =~ /tempora/i) ? 2 : 3; 
+  }
 
   if ($w) {
     setbuild2("Antiphonas $winner");
