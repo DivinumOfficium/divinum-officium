@@ -489,7 +489,8 @@ sub specials {
       my ($suffr, $comment);
 
       if ($version =~ /trident/i) {
-        if ($dayname[0] =~ /pasc/i && $dayname[1] =~ /(?:feria|vigilia)/i) { $suffr = $suffr{"Suffragium2"}; }
+        if ($dayname[0] =~ /pasc/i && $dayname[1] =~ /(?:feria|vigilia)/i) { 
+          $suffr = ($hora =~ /Laudes/) ? $suffr{"Suffragium2"} : $suffr{"Suffragium2v"}; }
         else {
           if ($dayname[1] =~ /(?:feria|vigilia)/i && $commune !~ /C10/) {
             $suffr = $suffr{"SuffragiumTridentinumFeriale"};
@@ -922,7 +923,7 @@ sub psalmi_major {
                || ($sday =~ /(06\-23|06\-28|08\-09|08\-14)/))
       {
         my @canticles = split("\n", $psalmi{'DaymF Canticles'});
-        if ($dayofweek == 6) { $psalmi[2] = $canticles[7]; }
+        if ($dayofweek == 6) { $psalmi[1] .= '(1-7)'; $psalmi[2] = ';;142(8-12)'; }
         $psalmi[3] = $canticles[$dayofweek];
       }
     }
@@ -937,7 +938,7 @@ sub psalmi_major {
   } elsif ($version =~ /trident/i) {
     my $dow =
       ($hora =~ /Laudes/i && $dayname[0] =~ /Pasc/i)
-      ? 0
+      ? 'P'
       : (  $hora =~ /Laudes/i
         && ($winner =~ /sancti/i || exists($winner{'Ant Laudes'}))
         && $rule !~ /Feria/i) ? 'C'
@@ -976,7 +977,9 @@ sub psalmi_major {
       setbuild2("Antiphona $commune");
     }
   }
-  if (!$w && exists($w{"Ant $hora"})) { $w = $w{"Ant $hora"}; $c = ($winner =~ /tempora/i) ? 2 : 3; }
+  if (!$w && exists($w{"Ant $hora"}) && $winner !~ /M\/C10/) { 
+    $w = $w{"Ant $hora"}; $c = ($winner =~ /tempora/i) ? 2 : 3; 
+  }
 
   if ($w) {
     setbuild2("Antiphonas $winner");
@@ -1089,10 +1092,10 @@ sub antetpsalm {
   my $ant1 = ($duplex > 2 || $version =~ /1960|Monastic/i) ? $ant : $ant[0];    #difference between 1995, 1960
 
   if ( $dayname[0] =~ /Pasc/i
-    && $hora =~ /(laudes|vespera)/i
-    && $version !~ /monastic/i
+    && (($hora =~ /vespera/i) 
+        || ($hora =~ /laudes/i && $version !~ /trident/i))
     && !exists($winner{"Ant $hora"})
-    && $communetype !~ /ex/i)
+    && ($communetype !~ /ex/i || $commune =~ /C10/))
   {
     if ($ind == 0) {
       $ant1 = Alleluia_ant($lang, 0);

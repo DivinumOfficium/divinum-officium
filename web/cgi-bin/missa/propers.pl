@@ -769,9 +769,7 @@ sub replaceNpb {
 sub Gloria : ScriptFunc {
   my $lang = shift;
   if (DeTemporePassionis() && $rule !~ /Requiem gloria/) { return ""; }
-  our %prayers;
-  if ($rule =~ /Requiem gloria/i) { return $prayers{$lang}->{Requiem}; }
-  return $prayers{$lang}->{'Gloria'};
+  if ($rule =~ /Requiem gloria/i) { return ""; }
 }
 
 sub getitem {

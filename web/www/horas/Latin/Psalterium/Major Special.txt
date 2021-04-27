@@ -1408,6 +1408,10 @@ v. Orémus.
 v. Deus qui pro nobis Fílium tuum Crucis patíbulum subíre voluísti, ut inimíci a nobis expélleres potestátem: concéde nobis fámulis tuis; ut resurrectiónis grátiam consequámur.
 $Per eumdem
 
+[Suffragium2v]
+Ant. Crucem sanctam súbiit, qui inférnum confrégit; accínctus est poténtia, surréxit die tértia, allelúja.
+@:Suffragium2:2-9
+
 [Suffragium3]
 !De Beata Maria
 Ant. Sancta María succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femineo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam commemoratiónem.
@@ -1792,15 +1796,12 @@ R. De ore leónis * líbera me, Dómine.
 [PaschM Laudes]
 @:Pasch Laudes
 _
-R.br. Surrexit Dóminus de sepúlcro: * Allelúja, allelúja.
-R. Surrexit Dóminus de sepúlcro: * Allelúja, allelúja.
-V. Qui pro nobis pepéndit in ligno.
-R. Allelúja, allelúja.
-&Gloria
-R. Surrexit Dóminus de sepúlcro: * Allelúja, allelúja.
+@Psalterium/Minor Special:Responsory Pasch Tertia:s/._.*//s
 
 [PaschM Vespera]
-@:PaschM Laudes
+@:Pasch Laudes
+_
+@Psalterium/Minor Special:Responsory Pasch Sexta:s/._.*//s
 
 [LitaniaM]
 @:Litania

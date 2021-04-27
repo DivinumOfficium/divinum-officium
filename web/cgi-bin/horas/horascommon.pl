@@ -865,10 +865,10 @@ sub getrank {
 #  }
 
   #Commemoratio for litaniis majores
-  if ($month == 4 && $day == 25 && $version =~ /(1955|1960|Newcal)/ && $dayofweek == 0) {
-    $commemoratio = '';
-    $dayname[2] = '';
-  }
+#  if ($month == 4 && $day == 25 && $version =~ /(1955|1960|Newcal)/ && $dayofweek == 0) {
+#    $commemoratio = '';
+#    $dayname[2] = '';
+#  }
   $comrank =~ s/\s*//g;
   $seasonalflag = ($testmode =~ /Seasonal/i && $winner =~ /Sancti/ && $rank < 5) ? 0 : 1;
   if (($month == 12 && $day > 24) || ($month == 1 && $day < 14 && $dayname[0] !~ /Epi/i)) { $dayname[0] = "Nat$day"; }

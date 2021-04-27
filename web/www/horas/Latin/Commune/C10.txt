@@ -10,6 +10,7 @@ Special Benedictio
 Special Lectio 3
 Doxology=Nat
 Antiphonas horas
+(rubrica tridentina) Psalmi Dominica 
 
 [Capitulum Vespera]
 !Sir 24:14
@@ -90,7 +91,7 @@ R. Quia ex te ortus est sol justítiæ
 &Gloria
 R. Christus, Deus noster.
 
-[Ant Laudes](rubrica tridentina)
+[Ant Laudes](rubrica tridentina aut rubrica monastica)
 @Commune/C11:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
