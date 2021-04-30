@@ -3,6 +3,9 @@
 [Rank]
 S. Joseph Opificis;;Duplex I classis;;6;;
 
+[Rule]
+12 lectiones
+
 [Capitulum Vespera]
 @Tempora/Pasc2-3
 _
@@ -11,8 +14,90 @@ _
 [Versum 1]
 @Tempora/Pasc2-3:Responsory Tertia:8-9
 
-[Capitulum Laudes]
+[Ant Matutinum]
+@Tempora/Pasc2-3::1
+;;2
+;;4
+;;5
+;;8
+;;10
+@Tempora/Pasc2-3::4-6 s/4/14/
+;;20
+;;23
+;;95
+;;96
+;;97
+@Tempora/Pasc2-3::9-11 s/14/256;257;258/
+@Tempora/Pasc2-3::14-15
+
+[Lectio3]
+@Tempora/Pasc2-3::s/49/45/ s/ Egréssus.*//s
+
+[Responsory3]
+@Sancti/03-19:Responsory1
+
+[Lectio4]
+@Tempora/Pasc2-3:Lectio3:s/44-49/45-49/ s/44.* (Egréssus)/45 $1/s
+
+[Responsory4]
+@Tempora/Pasc2-3:Responsory3
+
+[Lectio5]
+@Tempora/Pasc2-3:Lectio4
+
+[Responsory5]
+@Tempora/Pasc2-3:Responsory4
+
+[Lectio6]
+@Tempora/Pasc2-3:Lectio5
+
+[Responsory6]
+@Tempora/Pasc2-3:Responsory5
+
+[Lectio7]
+@Tempora/Pasc2-3:Lectio6:s/Mem.nto.*//s
+
+[Responsory7]
+R. Exáudi † vocem meam, qua clamávi ad te: 
+* Miserére mei, et exáudi me, allelúja.
+V. Adjútor meus esto, ne derelínquas me.
+R. Miserére mei, et exáudi me, allelúja.
+
+[Lectio8]
+@Tempora/Pasc2-3:Lectio6:s/.*(Mem.nto)/$1/s
+
+[Responsory8]
+@Tempora/Pasc2-3:Responsory6
+
+[Lectio9]
+@Tempora/Pasc2-3:Lectio7
+
+[Responsory9]
+@Tempora/Pasc2-3:Responsory7
+
+[Lectio10]
+@Tempora/Pasc2-3:Lectio8
+
+[Responsory10]
+@Sancti/03-19:Responsory4
+
+[Lectio11]
+@Tempora/Pasc2-3:Lectio9:s/Neque.*//s
+
+[Responsory11]
+@Sancti/03-19:Responsory5
+
+[Lectio12]
+@Tempora/Pasc2-3:Lectio9:s/.*(Neque)/$1/s
+
+[Responsory12]
+@SanctiM/03-19
+
+[LectioE]
 @Tempora/Pasc2-3
+
+[Capitulum Laudes]
+@Tempora/Pasc2-3:Capitulum Vespera
 _
 @Tempora/Pasc2-3:Responsory Sexta:1-6
 

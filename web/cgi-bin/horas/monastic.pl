@@ -194,9 +194,11 @@ sub psalmi_matutinum_monastic {
     my @e;
     if (exists($w{LectioE})) {    #** set evangelium
       @e = split("\n", $w{LectioE}); }
-    else {
-      my $dt = $datafolder; $dt =~ s/horas/missa/g; 
-      my $w = $winner; $w =~ s/M//g;
+
+    if (!$e[0] || $e[0] =~ /LectioE/) {
+      my $dt = $datafolder; $dt =~ s/horas/missa/g;
+      my $w = ($e[0] =~ /(.*):LectioE/) ? "${1}.txt" : $winner;
+      $w =~ s/M//g;
       my %missa = %{setupstring($dt, $lang, $w)};
       @e = split("\n", $missa{Evangelium});
     }
