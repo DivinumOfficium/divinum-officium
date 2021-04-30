@@ -1,0 +1,32 @@
+[Lectio3]
+@Tempora/Pasc2-3::s/49/45/ s/ Then Joseph.*//s
+
+[Lectio4]
+@Tempora/Pasc2-3:Lectio3:s/44-49/45-49/ s/44.* (Then Joseph)/45 $1/s
+
+[Lectio7]
+@Tempora/Pasc2-3:Lectio6:s/Therefore.*//s
+
+[Responsory7]
+R. Hear, my voice, with which I have cried to thee: 
+* Have mercy on me and hear me.
+V. Be thou my helper, forsake me not.
+R. Have mercy on me and hear me.
+
+[Lectio8]
+@Tempora/Pasc2-3:Lectio6:s/.*(Therefore)/$1/s
+
+[Lectio11]
+@Tempora/Pasc2-3:Lectio9:s/Neque.*//s
+
+[Responsory11]
+@Sancti/03-19:Responsory5
+
+[Lectio12]
+@Tempora/Pasc2-3:Lectio9:s/.*(Neque)/$1/s
+
+[Lectio11]
+@Tempora/Pasc2-3:Lectio9:s/It is.*//s
+
+[Lectio12]
+@Tempora/Pasc2-3:Lectio9:s/.*(It is)/$1/s
