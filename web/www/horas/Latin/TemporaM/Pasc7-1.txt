@@ -1,21 +1,21 @@
 @Tempora/Pasc7-1
 
-[Capitulum Vespera]
+[Lectio1]
+@Tempora/Pasc7-1::s/ Quod.*//s
+
+[Responsory1]
 @Tempora/Pasc7-0
-_
-@Tempora/Pasc7-0:Responsory Sexta:1-6
 
-[Capitulum Laudes]
+[Lectio2]
+@Tempora/Pasc7-1:Lectio1:s/.*(Quod)/$1/s s/$/~/
+@Tempora/Pasc7-1::s/ Hoc.*//s
+
+[Responsory2]
 @Tempora/Pasc7-0
-_
-@Tempora/Pasc7-0:Responsory Tertia:1-6
 
-[Responsory Tertia]
-@Tempora/Pasc7-0:Ant Matutinum:4-5
+[Lectio3]
+@Tempora/Pasc7-1:Lectio2:s/.*(Hoc)/$1/s s/$/~/
+@Tempora/Pasc7-1
 
-[Responsory Sexta]
-@Tempora/Pasc7-0:Responsory Tertia:8-9
-
-[Responsory Nona]
-@Tempora/Pasc7-0:Versum 1
-
+[Responsory3]
+@TemporaM/Pasc7-0
