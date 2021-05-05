@@ -1,0 +1,10 @@
+[Lectio1]
+@Tempora/Pasc7-1::s/ And indeed.*//s
+
+[Lectio2]
+@Tempora/Pasc7-1:Lectio1:s/.*(And indeed)/$1/s s/$/~/
+@Tempora/Pasc7-1::s/ And this.*//s
+
+[Lectio3]
+@Tempora/Pasc7-1:Lectio2:s/.*(And this)/$1/s s/$/~/
+@Tempora/Pasc7-1

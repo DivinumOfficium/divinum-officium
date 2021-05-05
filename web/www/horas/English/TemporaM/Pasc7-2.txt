@@ -1,0 +1,10 @@
+[Lectio1]
+@Tempora/Pasc7-2::s/ And no.*//s
+
+[Lectio2]
+@Tempora/Pasc7-2:Lectio1:s/.*(And no)/$1/s s/$/~/
+@Tempora/Pasc7-2::s/ There.*//s
+
+[Lectio3]
+@Tempora/Pasc7-2:Lectio2:s/.*(There)/$1/s s/$/~/
+@Tempora/Pasc7-2

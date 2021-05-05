@@ -46,6 +46,9 @@ Build status badges:
 
 To pull a pre-built container, pull see docker image `divinumofficiumweb/divinumofficium:latest`.
 
+To get the yml file:
+`$ wget https://raw.githubusercontent.com/DivinumOfficium/divinum-officium/master/docker-compose-prod.yml`
+
 You can also use Docker Compose to load a copy of the container in one command:
 
 ```bash

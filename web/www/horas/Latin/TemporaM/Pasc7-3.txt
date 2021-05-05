@@ -1,21 +1,14 @@
 @Tempora/Pasc7-3
 
-[Capitulum Vespera]
-@Tempora/Pasc7-0
-_
-@Tempora/Pasc7-0:Responsory Sexta:1-6
-
-[Capitulum Laudes]
-@Tempora/Pasc7-0
-_
-@Tempora/Pasc7-0:Responsory Tertia:1-6
-
-[Responsory Tertia]
-@Tempora/Pasc7-0:Ant Matutinum:4-5
-
-[Responsory Sexta]
-@Tempora/Pasc7-0:Responsory Tertia:8-9
-
-[Responsory Nona]
+[Ant Matutinum]
+@Tempora/Pasc7-0::1 s/47/59/
+@Psalterium/Psalmi matutinum:Daym3:2-6 s/.*;;/;;/g
 @Tempora/Pasc7-0:Versum 1
+Apparuérunt * Apóstolis dispertítæ linguæ tamquam ignis, † Sedítque supra síngulos eórum Spíritus Sanctus, † allelúja.;;68(2-16)
+@Psalterium/Psalmi matutinum:Daym3:10-14 s/.*;;/;;/g
 
+[Responsory3]
+R. Ultimo festivitátis die dicébat Jesus: † Qui in me credit, flúmina de ventre eius fluent aquæ vivæ. 
+* Hoc autem dixit de Spíritu quem acceptúri erant credéntes in eum, † allelúja, allelúja.
+V. Qui sitit véniat et bibat, et de ventre eius fluent aquæ vivæ.
+R. Hoc autem dixit de Spíritu quem acceptúri erant credéntes in eum, † allelúja, allelúja.

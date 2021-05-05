@@ -46,7 +46,7 @@ sub invitatorium {
   my @invit = split("\n", $invit{$name});
   setbuild('Psalterium/Matutinum Special', $name, 'Invitatorium ord');
   my $ant = chompd($invit[$i]);
-  if ($version =~ /Monastic/i && $dayofweek && $winner =~ /Pasc/ && $winner !~ /Pasc0/ && $winner !~ /Pasc5-4/) {
+  if ($version =~ /Monastic/i && $dayofweek && $winner =~ /Pasc/ && $winner !~ /Pasc[07]/ && $winner !~ /Pasc5-4/) {
     $ant = chompd($prayers{$lang}{"Alleluia Duplex"}) . $prayers{$lang}{"Alleluia Simplex"};
     $ant =~ s/\., (.*)/, * \u\1/;
   } else {
@@ -924,8 +924,8 @@ sub lectio : ScriptFunc {
     }
   }
   if (($ltype1960 || ($winner =~ /Sancti/i && $rank < 2)) && $num > 2) { $num = 3; $w = addtedeum($w); }
-  if ($version =~ /monastic/i) { $w =~ s/\&teDeum//g; }
   if ($num == 3 && $winner =~ /Tempora/ && $rule !~ /9 lectiones/i && $rule =~ /Feria Te Deum/i) { $w = addtedeum($w); }
+  if ($version =~ /monastic/i) { $w =~ s/\&teDeum//g; }
 
   #get item from [Responsory$num] if no responsory
   if ($w && $w !~ /\nR\./ && $w !~ /\&teDeum/i) {

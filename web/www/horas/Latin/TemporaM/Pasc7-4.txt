@@ -1,21 +1,12 @@
 @Tempora/Pasc7-4
 
-[Capitulum Vespera]
-@Tempora/Pasc7-0
-_
-@Tempora/Pasc7-0:Responsory Sexta:1-6
+[Ant Matutinum]
+@Tempora/Pasc7-0::1 s/47/73/
+@Psalterium/Psalmi matutinum:Daym4:2-6 s/.*;;/;;/g
+@Tempora/Pasc7-0::4-5
+@TemporaM/Pasc7-3::4 s/;;.*/;;79/
+@Psalterium/Psalmi matutinum:Daym4:10-14 s/.*;;/;;/g
 
-[Capitulum Laudes]
-@Tempora/Pasc7-0
-_
-@Tempora/Pasc7-0:Responsory Tertia:1-6
-
-[Responsory Tertia]
-@Tempora/Pasc7-0:Ant Matutinum:4-5
-
-[Responsory Sexta]
-@Tempora/Pasc7-0:Responsory Tertia:8-9
-
-[Responsory Nona]
-@Tempora/Pasc7-0:Versum 1
+[Responsory3]
+@Tempora/Pasc7-2:Responsory1
 
