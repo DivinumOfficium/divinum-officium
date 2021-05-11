@@ -198,11 +198,14 @@ R. Benedicámus Patrem et Fílium cum Sancto Spíritu:
 V. Benedíctus es, Dómine, in firmaménto cæli: et laudábilis et gloriósus in sǽcula.
 R. Laudémus et superexaltémus eum in sǽcula.
 
-[Lectio8]
+[Lectio8a]
 Nec extensiónem partis alicúius ex parte, ut quidam putavérunt, Dei Fílium dícimus: nec verbum sine re, velut sonum vocis, accípimus: sed tria nómina et tres persónas uníus esse esséntiæ, uníus majestátis atque poténtiæ crédimus. Et ídeo unum Deum confitémur: quia únitas majestátis, plúrium vocábulo deos próhibet appellári. Dénique Patrem et Fílium cathólice nominámus; duos autem Deos dícere, nec póssumus, nec debémus. Non quod Fílius Dei Deus non sit, immo verus Deus de Deo vero; sed quia non aliúnde, quam de ipso uno Patre, Dei Fílium nóvimus, perínde unum Deum dícimus. Hoc enim Prophétæ, hoc Apóstoli tradidérunt: hoc ipse Dóminus dócuit, cum dicit: Ego et Pater unum sumus. Unum ad unitátem divinitátis, ut dixi, refert; Sumus autem, persónis assígnat.
 
+[Lectio8]
+@:Lectio8a
+
 [Lectio8](rubrica 1960)
-Nec extensiónem partis alicúius ex parte, ut quidam putavérunt, Dei Fílium dícimus: nec verbum sine re, velut sonum vocis, accípimus: sed tria nómina et tres persónas uníus esse esséntiæ, uníus majestátis atque poténtiæ crédimus. Et ídeo unum Deum confitémur: quia únitas majestátis, plúrium vocábulo deos próhibet appellári.
+@:Lectio8a:s/ Dénique.*//s
 
 [Responsory8]
 R. Duo Séraphim clamábant alter ad álterum: 
@@ -224,7 +227,7 @@ Duo sunt ópera misericórdiæ, quæ nos líberant, quæ bréviter ipse Dóminus
 &teDeum
 
 [Lectio9](rubrica 1960)
-Dénique Patrem et Fílium cathólice nominámus; duos autem Deos dícere, nec póssumus, nec debémus. Non quod Fílius Dei Deus non sit, immo verus Deus de Deo vero; sed quia non aliúnde, quam de ipso uno Patre, Dei Fílium nóvimus, perínde unum Deum dícimus. Hoc enim Prophétæ, hoc Apóstoli tradidérunt: hoc ipse Dóminus dócuit, cum dicit: Ego et Pater unum sumus. Unum ad unitátem divinitátis, ut dixi, refert; Sumus autem, persónis assígnat.
+@:Lectio8a:s/.*(Dénique)/$1/s
 &teDeum
 
 [Ant Laudes]
