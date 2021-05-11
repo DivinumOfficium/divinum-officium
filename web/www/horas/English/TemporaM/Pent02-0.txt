@@ -1,0 +1,21 @@
+[Lectio2]
+@Tempora/Pent01-1::s/: but Anna.*/./s
+
+[Lectio3]
+@Tempora/Pent01-1:Lectio2:s/4-8/7-8/ s/4 .*: but Anna/7 But Anna/s
+
+[Lectio6]
+@Tempora/Pent02-0:Lectio5:s/ And therefore .*//s
+
+[Lectio7]
+@Tempora/Pent02-0:Lectio5:s/.*(And therefore)/$1/s
+
+[Lectio9]
+@Tempora/Pent02-0:Lectio7:s/In the bodily.*//s
+
+[Lectio10]
+@Tempora/Pent02-0:Lectio7:s/.* (In the bodily )/$1/s s/$/~/
+@Tempora/Pent02-0:Lectio8:s/Hence .*//s
+
+[Lectio11]
+@Tempora/Pent02-0:Lectio8:s/.* (Hence)/$1/s

@@ -1,0 +1,22 @@
+[Lectio5]
+@Tempora/Pent02-5:Lectio4:s/ Wreszcie.*//s
+
+[Responsory5]
+@Tempora/Pent02-5:Responsory4
+
+[Lectio6]
+Nulli vero in hac propagáda devotióne cessit ordo monásticus, et inter omnes, tunc témporis, eminent Elphiáne virgins Gertrúdis et Mechtíldis, ex quarum vitæ actis operibúsque perspícuum est, quanto erga divínum Cor amóre flagráverint.~
+@Tempora/Pent02-5:Lectio4:s/.*(Wreszcie)/$1/s
+
+[Lectio7]
+@Tempora/Pent02-5:Lectio5:s/ Ale.*//s
+
+[Lectio10]
+@Tempora/Pent02-5:Lectio8:s/ Tak.*//s
+
+[Lectio11]
+@Tempora/Pent02-5:Lectio8:s/.*(Tak)/$1/s s/$/~/
+@Tempora/Pent02-5:Lectio9:s/ Któż.*//s
+
+[Lectio12]
+@Tempora/Pent02-5:Lectio9:s/.*(Któż nie)/$1/s
