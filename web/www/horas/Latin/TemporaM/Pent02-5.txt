@@ -3,6 +3,9 @@
 [Rank]
 Sanctissimi Cordis Domini Nostri Jesu Christi;;Duplex I classis;;6
 
+[Rule]
+12 lectiones
+
 [Doxology]
 Glória tibi Dómine,
 Qui Corde fundis grátiam,
@@ -14,6 +17,97 @@ Amen.
 @Tempora/Pent02-5
 _
 @Tempora/Pent02-5:Responsory Sexta:1-6
+
+[Ant Matutinum]
+@Tempora/Pent02-5::1
+Gustáte * et vidéte, quóniam suávis est Dóminus: † beátus vir, qui sperat in eo.;;33
+@Tempora/Pent02-5::2-3
+@Tempora/Pent02-5::6-7
+@Tempora/Pent02-5::4-5
+Dóminus * dabit benignitátem, † loquétur pacem in plebem suam.;;84
+Suávis * et mitis es, Dómine, † et multæ misericórdiæ omnibus invocántibus te.;;85
+Secúndum multitúdinem * dolórum meórum in Corde meo, † consolatiónes tuæ lætificavérunt ánimam meam.;;93
+@Tempora/Pent02-5::11-13
+@Tempora/Pent02-5::9-10
+Confitémini Dómino, * et invocate nomen ejus: † notas fácite in pópulis adinventiónes ejus.;;221;223(1-8);223(9-16)
+@Tempora/Pent02-5::14-15
+
+[Lectio1]
+@Tempora/Pent02-5
+
+[Lectio2]
+@Tempora/Pent02-5
+
+[Lectio3]
+@Tempora/Pent02-5::1-4 s/3;.*/3/
+
+[Responsory3]
+R. Auferam cor lapídeum de carne vestra, et dabo vobis cor cárneum.
+* Et spíritum meum ponam in médio vestri.
+V. Effúndam super vos aquam vivam, et mundabímini ab ómnibus inquinaméntis vestris.
+R. Et spíritum meum ponam in médio vestri.
+
+[Lectio4]
+@Tempora/Pent02-5:Lectio3:s/31:1-3; // s/1 .*31/31/s
+
+[Responsory4]
+@Tempora/Pent02-5:Responsory3
+
+[Lectio5]
+@Tempora/Pent02-5:Lectio4:s/ Próximis.*//s
+
+[Responsory5]
+@Tempora/Pent02-5:Responsory4
+
+[Lectio6]
+Nulli vero in hac propagáda devotióne cessit ordo monásticus, et inter omnes, tunc témporis, eminent Elphiáne virgins Gertrúdis et Mechtíldis, ex quarum vitæ actis operibúsque perspícuum est, quanto erga divínum Cor amóre flagráverint.~
+@Tempora/Pent02-5:Lectio4:s/.*(Próximis)/$1/s
+
+[Responsory6]
+R. Gratificávit nos Deus in dilécto Fílio suo,
+* In quo habémus redemptiónem per sánguinem ejus, redemptiónem peccatórum.
+V. Det nobis Dóminus illuminátos óculos cordis nostri in agnitióne ejus.
+R. In quo habémus redemptiónem per sánguinem ejus, redemptiónem peccatórum.
+
+[Lectio7]
+@Tempora/Pent02-5:Lectio5:s/ Quot.*//s
+
+[Responsory7]
+@Tempora/Pent02-5:Responsory5
+
+[Lectio8]
+@Tempora/Pent02-5:Lectio6
+
+[Responsory8]
+@Tempora/Pent02-5:Responsory6
+
+[Lectio9]
+@Tempora/Pent02-5:Lectio7
+
+[Responsory9]
+@Tempora/Pent02-5:Responsory7
+
+[Lectio10]
+@Tempora/Pent02-5:Lectio8:s/ Hoc.*//s
+
+[Responsory10]
+@Tempora/Quad6-0:Responsory1
+
+[Lectio11]
+@Tempora/Pent02-5:Lectio8:s/.*(Hoc)/$1/s s/$/~/
+@Tempora/Pent02-5:Lectio9:s/ Quis.*//s
+
+[Responsory11]
+R. Sicut diléxit me pater et ego diléxi vos:
+* Manéte in dilectióne mea.
+V. Si præcépta mea servavéritis, manébitis in dilectióne mea, † sicut et ego Patris mei præcépta servávi, et máneo in ejus dilectióne.
+R. Manéte in dilectióne mea.
+
+[Lectio12]
+@Tempora/Pent02-5:Lectio9:s/.*(Quis)/$1/s
+
+[Responsory12]
+@Tempora/Pent02-5:Responsory8
 
 [Capitulum Laudes]
 @Tempora/Pent02-5
