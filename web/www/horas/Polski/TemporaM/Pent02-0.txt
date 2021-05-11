@@ -1,0 +1,16 @@
+[Lectio2]
+@Tempora/Pent01-1::s/, a ona.*/./s
+
+[Lectio3]
+@Tempora/Pent01-1:Lectio2:s/4-8/7-8/ s/4 .*, a ona/7 A ona/s
+
+[Lectio9]
+@Tempora/Pent02-0:Lectio7:s/Co do .*//s
+
+[Responsory9]
+@Tempora/Pent01-3:Responsory1
+
+[Lectio10]
+@Tempora/Pent02-0:Lectio7:s/.* (Co do)/$1/s s/$/~/
+@Tempora/Pent02-0:Lectio8:s/Hence .*//s
+
