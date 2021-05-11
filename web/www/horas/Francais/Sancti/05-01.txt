@@ -9,17 +9,17 @@ Antiphonas horas
 StJamesRule=Jas
 
 [Ant Vespera]
-Dómine, * osténde nobis Patrem, et súfficit nobis, allelúja.;;109
-Philíppe, * qui videt me, videt et Patrem meum, allelúja.;;110
-Tanto témpore * vobíscum sum, et non cognovístis me? Philíppe, qui videt me, videt et Patrem meum, allelúja.;;111
-Si cognovissétis me, * et Patrem meum útique cognovissétis, et ámodo cognoscétis eum, et vidístis eum, allelúja, allelúja, allelúja.;;112
-Si dilígitis me, * mandáta mea serváte, allelúja, allelúja, allelúja.;;116
+Seigneur, * montrez-nous Votre Père et il nous suffit, alléluia.;;109
+Philíppe, * qui Me voit, voit aussi Mon Père, alléluia.;;110
+Il y a si longtemps * que Je suis avec vous et vous ne Me connaissez pas ? Philippe, qui Me voit, voit, aussi Mon Père, alléluia.;;111
+Si vous M’aviez connu, * vous auriez donc connu Mon Père ; mais bientôt vous Le connaîtrez et vous L’avez déjà vu, alléluia, alléluia, alléluia.;;112
+Si vous M’aimez, * gardez Mes commandements, alléluia, alléluia, alléluia.;;116
 
 [Ant 1]
-Non turbétur * cor vestrum, neque formidet: creditis in Deum, et in me crédite: in domo Patris mei mansiónes multæ sunt, allelúja, allelúja.
+Qu’il ne se trouble point * votre cœur et qu’il ne craigne pas : vous croyez en Dieu, croyez aussi en Moi. Il y a beaucoup de demeures en la maison de Mon Père, alléluia, alléluia.
 
 [Oratio]
-Deus, qui nos ánnua Apostolórum tuórum Philíppi et Jacóbi solemnitáte lætíficas: prǽsta, quǽsumus; ut, quorum gaudémus méritis, instruámur exémplis.
+Dieu qui nous réjouissez en la solennité annuelle de Vos Apôtres Philippe et Jacques ; faites, nous Vous en prions, que nous soyons instruits aux exemples de ceux dont les mérites nous remplissent d’allégresse.
 $Per Dominum
 
 [Lectio1]
@@ -60,10 +60,10 @@ Tamquam ergo essent ab illo peritúri, mérito turbabántur; sed cum áudiunt, I
 @:Ant Vespera:s/;;.*//g
 
 [Ant 2]
-Ego sum via, * véritas, et vita: nemo venit ad Patrem, nisi per me, allelúja.
+Moi Je suis la voie, * la vérité et la vie : personne ne vient à Mon Père que par Moi, alléluia.
 
 [Ant 3]
-Si manséritis in me, * et verba mea in vobis mánserint, quodcúmque petiéritis, fiet vobis, allelúja, allelúja, allelúja.
+Si vous demeurez en Moi * et que Mes paroles demeurent en vous, tout ce que vous demanderez, il vous sera fait, alléluia, alléluia, alléluia.
 
 [Ant Vespera 3]
 @:Ant Vespera:s/116/138/ s/112/125/ s/111/115/ s/110/112/ 
