@@ -1545,7 +1545,7 @@ sub setheadline {
         'I. classis'
       );
       $rankname = ($version !~ /1960|Monastic/i) ? $tradtable[$rank] : $newtable[$rank];
-      if ($version =~ /(1955|1960|Newcal)/ && $dayname[1] =~ /feria/i) { $rankname = 'Feria'; }
+      if ($version =~ /(1955|1960|Newcal)/ && $winner !~ /Pasc5-3/i && $dayname[1] =~ /feria/i) { $rankname = 'Feria'; }
 
       if ($name =~ /Dominica/i && $version !~ /1960|Monastic/i) {
         my $a = ($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i) ? getweek(1) : getweek(0);
@@ -1563,6 +1563,8 @@ sub setheadline {
       $rankname = 'Simplex';
     } elsif ($version =~ /1960|Newcal|Monastic/i && $winner =~ /Pasc6-6/) {
       $rankname = 'I. classis';
+    } elsif ($version =~ /1960|Newcal/i && $winner =~ /Pasc5-3/) {
+      $rankname = 'II. classis';
     } elsif ($version =~ /1960|Newcal/ && $month == 12 && $day > 16 && $day < 25 && $dayofweek > 0) {
       $rankname = 'II. classis';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {

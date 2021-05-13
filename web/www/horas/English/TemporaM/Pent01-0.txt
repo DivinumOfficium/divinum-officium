@@ -1,0 +1,62 @@
+[Ant Matutinum]
+@Tempora/Pent01-0::1-3
+@Tempora/Pent01-0::6-8 s/46/28/ s/47/32/ s/71/45/
+@Tempora/Pent01-0::4-5
+@Tempora/Pent01-0::11-13 s/95/46/ s/96/47/ s/97/71/
+Glory * and honour to God in the unity of the Trinity, Father and Son with the Holy Ghost, forever and ever.;;95
+The Father * is eternal, the son is equal, and the Holy Spirit binds them together in eternity and equality.;;96
+Holy, * holy, holy, Lord God Almighty, who was, and who is, and who is to come.;;97
+@Tempora/Pent01-0::9-10
+Praise be to God the Father, and to his co-equal Son, and to you, O Holy Ghost: with perpetual delight may it resound from our lips forever.;;266;267;268
+@Tempora/Pent01-0::14-15
+[Responsory4]
+R. Glory be to the Father, to the sole-begotten Son, and to the blessed Spirit ever equal with both, one God 
+* Throughout all ages.
+V. In heaven bestow your endless joys, and grant your gifts of grace below; from chains of strife our souls release, bind fast the gentle bands of peace.
+R. Throughout all ages.
+
+[Lectio5]
+@Tempora/Pent01-0:Lectio4:s/But we .*//s
+
+[Lectio6]
+@Tempora/Pent01-0:Lectio4:s/.* (But we)/$1/s s/$/~/
+@Tempora/Pent01-0:Lectio5:s/But since .*//s
+
+[Lectio7]
+@Tempora/Pent01-0:Lectio5:s/.* (But since)/$1/s s/$/~/
+@Tempora/Pent01-0:Lectio6:s/Of the .*//s
+
+[Lectio8]
+@Tempora/Pent01-0:Lectio6:s/.* (Of the)/$1/s
+
+[Responsory8]
+R. Honour, strength and might and power be to the three in one, the one in three, 
+* Throughout eternal ages.
+V. Bless us, O God, our God, may our God bless us.
+R. Throughout eternal ages.
+
+[Lectio9]
+@Tempora/Pent01-0:Lectio7:s/For we .*//s
+
+[Lectio10]
+@Tempora/Pent01-0:Lectio7:s/.* (For we)/$1/s s/$/~/
+@Tempora/Pent01-0:Lectio8a:s/And therefore .*//s
+
+[Responsory10]
+R. O blessed Trinity, we praise you, we bless you, we adore you: increase in us faith, increase hope, increase love, 
+* O blessed Trinity.
+V. To you be praise, to you be glory, to you thanksgiving forever.
+R. O blessed Trinity.
+
+[Lectio11]
+@Tempora/Pent01-0:Lectio8a:s/.* (And therefore)/$1/s s/This.*//s
+
+[Responsory11]
+R. You, God the unbegotten Father, you, the only begotten Son, and you Holy Spirit, the Comforter, the holy and undivided Trinity, with all our heart and mouths we confess you, we praise you, and bless you; 
+* To you be glory forever.
+V. For you only are great and do wondrous things: you are God alone.
+R. To you be glory forever.
+
+[Lectio12]
+@Tempora/Pent01-0:Lectio8a:s/.* (This)/$1/s
+
