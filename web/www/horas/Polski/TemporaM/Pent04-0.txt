@@ -1,0 +1,6 @@
+﻿[Lectio9]
+@Tempora/Pent04-0:Lectio7:s/Według .*//s
+
+[Lectio10]
+@Tempora/Pent04-0:Lectio7:s/.* Według /Według /s s/$/~/
+@Tempora/Pent04-0:Lectio8:s/To many .*//s

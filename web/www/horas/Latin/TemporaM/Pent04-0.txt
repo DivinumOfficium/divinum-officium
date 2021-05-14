@@ -1,2 +1,81 @@
 @Tempora/Pent04-0
 
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Tempora/Pent04-0:Lectio1:s/-7/-3/ s/4 .*//s
+
+[Responsory1]
+@Tempora/Pent01-1:Responsory1
+
+[Lectio2]
+@Tempora/Pent04-0:Lectio1:2 s/1-/4-/
+@Tempora/Pent04-0:Lectio1:6-9
+
+[Responsory2]
+@Tempora/Pent01-1:Responsory2
+
+[Lectio3]
+@Tempora/Pent04-0:Lectio2:
+
+[Responsory3]
+@Tempora/Pent01-1:Responsory3
+
+[Lectio4]
+@Tempora/Pent04-0:Lectio3
+
+[Responsory4]
+@Tempora/Pent03-1Feria:Responsory1
+
+[Lectio5]
+@Tempora/Pent04-0:Lectio4:s/Ante .*//s
+
+[Responsory5]
+@Tempora/Pent01-2:Responsory1
+
+[UTF8ąłć]
+
+[Lectio6]
+@Tempora/Pent04-0:Lectio4:s/.* Ante /Ante /s s/$/~/
+@Tempora/Pent04-0:Lectio5:s/Alligátus .*//s
+
+[Responsory6]
+@Tempora/Pent01-2:Responsory2
+
+[Lectio7]
+@Tempora/Pent04-0:Lectio5:s/.* Alligátus /Alligátus /s
+
+[Responsory7]
+@Tempora/Pent01-2:Responsory3
+
+[Lectio8]
+@Tempora/Pent04-0:Lectio6
+
+[Responsory8]
+@Tempora/Pent01-3:Responsory2
+
+[Lectio9]
+@Tempora/Pent04-0:Lectio7:s/Ibi adhuc .*//s
+
+[Responsory9]
+@Tempora/Pent01-3:Responsory1
+
+[Lectio10]
+@Tempora/Pent04-0:Lectio7:s/.* Ibi adhuc /Ibi adhuc /s s/$/~/
+@Tempora/Pent04-0:Lectio8:s/Et si .*//s
+
+[Responsory10]
+@Tempora/Pent01-3:Responsory3
+
+[Lectio11]
+@Tempora/Pent04-0:Lectio8:s/.* Et si /Et si /s
+
+[Responsory11]
+@Tempora/Pent03-2Feria:Responsory1
+
+[Lectio12]
+@Tempora/Pent04-0:Lectio9
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8

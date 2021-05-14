@@ -9,11 +9,20 @@ Dominica II Post Pentecosten;;Semiduplex II classis;;5
 [Lectio1]
 @Tempora/Pent01-1
 
+[Responsory1]
+@Tempora/Pent01-1:Responsory1
+
 [Lectio2]
 @Tempora/Pent01-1::s/: porro.*/./s
 
+[Responsory2]
+@Tempora/Pent01-1:Responsory2
+
 [Lectio3]
 @Tempora/Pent01-1:Lectio2:s/4-8/7-8/ s/4 .*: porro/7 Porro/s
+
+[Responsory3]
+@Tempora/Pent01-1:Responsory3
 
 [Lectio4]
 @Tempora/Pent01-1:Lectio3
