@@ -1,0 +1,6 @@
+﻿[Lectio9]
+@Tempora/Pent05-0:Lectio7:s/Dlatego.*//s
+
+[Lectio10]
+@Tempora/Pent05-0:Lectio7:s/.* Dlatego/Dlatego/s s/$/~/
+@Tempora/Pent05-0:Lectio8:s/ Then.*//s
