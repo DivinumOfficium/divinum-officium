@@ -51,7 +51,7 @@ Témporis ævo.
 Amen.
 
 [HymnusM Vespera]
-@:Hymnus Vespera:s/Sit decus/Glória/ s/Témporis ævo/Témpore sæcli/
+@:Hymnus Vespera:s/Sit decus/Glória/ s/semper/alme/ s/virtus/semper/ s/Témporis ævo/Témpore sæcli/
 
 [Versum 1]
 V. Fuit homo missus a Deo.
@@ -70,31 +70,7 @@ $Per Dominum
 Regem Præcursóris Dóminum, * Veníte, adorémus.
 
 [HymnusM Matutinum]
-v. Antra desérti téneris sub annis
-Cívium turmas fúgiens, petísti.
-Ne levi saltem maculáre vitam
-Flámine posses.
-_
-Prǽbuit durum tégumen camélus,
-Artubus sacris, stróphium bidéntes.
-Cui latex haustum, sociáta pastum
-Mella locústis.
-_
-Céteri tantum cecinére Vatum
-Corde præságo iubar affutúrum.
-Tu quidem mundi scelus auferéntem
-Indice prodis.
-_
-Non fuit vasti spátium per orbis
-Sánctior quisquam génitus Ioánne,
-Qui nefas sæcli méruit lavántem
-Tíngere lymphis.
-_
-Glória Patri genitǽque Proli,
-Et tibi compar utriúsque semper
-Spíritus alme, Deus unus, omni
-Témpore sæcli.
-Amen.
+@:Hymnus Matutinum:s/posses/saltem/ s/Crímine linguæ/Flámine posses/ s/durum/hirtum/ s/Sit decus/Glória/ s/semper/alme/ s/virtus/semper/ s/Témporis ævo/Témpore sæcli/
 
 [Hymnus Matutinum]
 v. Antra desérti téneris sub annis,
@@ -176,7 +152,8 @@ R. Qui viam Dómino præparávit in erémo.
 19 Et bellábunt advérsum te, et non prævalébunt: quia ego tecum sum, ait Dóminus, ut líberem te.
 
 [Responsory3]
-R. Priúsquam te formárem in útero, novi te: et ántequam exíres de ventre, sanctificávi te, * Et prophétam in géntibus dedi te.
+R. Priúsquam te formárem in útero, novi te: et ántequam exíres de ventre, sanctificávi te,
+* Et prophétam in géntibus dedi te.
 V. Vir diléctus a Deo, et homínibus honorátus est.
 R. Et prophétam in géntibus dedi te.
 &Gloria
