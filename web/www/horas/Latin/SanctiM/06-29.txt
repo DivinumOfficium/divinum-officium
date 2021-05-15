@@ -1,12 +1,92 @@
 @Sancti/06-29
 
+[Rule]
+12 lectiones
+
 [Capitulum Vespera]
 @Sancti/06-29
 _
 @Commune/C1:Responsory Sexta:1-6
 
+[Lectio1]
+@Sancti/06-29:Lectio1:
+
+[Lectio2]
+@Sancti/06-29:Lectio2:1-4 s/-10/-8/
+
+[Lectio3]
+@Sancti/06-29:Lectio2:s/6-10/9-11/ s/6 .*9 /9 /s
+@Sancti/06-29:Lectio3:2
+
+[Lectio4]
+@Sancti/06-29:Lectio3:s/11-/12-/ s/11 .*12 /12 /s
+
+[Responsory4]
+R. Petre, amas me? † Tu scis, Dómine, quia amo te.
+* Pasce oves meas.
+V. Simon Joánnis, díligis me plus his? † Tu scis, Dómine, quia amo te.
+R. Pasce oves meas.
+
+[Lectio5]
+@Sancti/06-29:Lectio4
+
+[Responsory5]
+@Sancti/06-29:Responsory4
+
+[Lectio6]
+@Sancti/06-29:Lectio5:s/Quamvis .*//s
+
+[Responsory6]
+@Sancti/06-29:Responsory5
+
+[Lectio7]
+@Sancti/06-29:Lectio5:s/.* Quamvis /Quamvis /s s/$/~/
+@Sancti/06-29:Lectio6:s/Hæc autem .*//s
+
+[Responsory7]
+@Sancti/06-29:Responsory6
+
+[Lectio8]
+@Sancti/06-29:Lectio6:s/.* Hæc autem /Hæc autem /s
+
+[Responsory8]
+R. Solve, jubénte Deo terrárum Petre caténas,
+* Qui facis ut páteant caeléstia regna beátis.
+V. Quodcúmque ligáveris super terram, erit ligátum et in cælis: † et quodcúmque sólveris super terram, erit solútum et in cælis.
+R. Qui facis ut páteant caeléstia regna beátis.
+
+[Lectio9]
+@Sancti/06-29:Lectio7
+
+[Responsory9]
+@Sancti/06-29:Responsory7
+
+[Lectio10]
+@Sancti/06-29:Lectio8:s/Petrus .*//s
+
+[Responsory10]
+@Sancti/06-29:Responsory8
+
+[Lectio11]
+@Sancti/06-29:Lectio8:s/.* Petrus /Petrus /s s/$/~/
+@Sancti/06-29:Lectio9:s/Quod .*//s
+
+[Responsory11]
+R. Qui regni claves et curam tradit ovílis
+* Qui cæli terrǽque Petro commíttit habénas: † ut réseret clausis et solvat vincla ligátis.
+V. Ipse tua Petre iussit vincula solvi qui te mundanos constituit solvere nexus.
+R. Qui cæli terrǽque Petro commíttit habénas: † ut réseret clausis et solvat vincla ligátis.
+
+[Lectio12]
+@Sancti/06-29:Lectio9:s/.* Quod /Quod /s
+
+[Responsory12]
+R. Beátus es Simon Bar Jona: quia caro et sanguis non revelávit tibi, sed Pater meus, qui in cælis est
+* Dicit Dóminus.
+V. Et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam.
+R. Dicit Dóminus.
+
 [Capitulum Laudes]
 @Sancti/06-29
 _
 @Commune/C1:Responsory Tertia:1-6
-
