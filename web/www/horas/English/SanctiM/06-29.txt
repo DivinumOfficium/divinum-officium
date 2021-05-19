@@ -1,2 +1,45 @@
 @Sancti/06-29
 
+[Responsory4]
+R. Peter, do you love me? Lord, You know that I love you.
+* Feed my sheep.
+V. Simon, son of Jonas, do love you me more than these? Lord, you know that I love you.
+R. Feed my sheep.
+
+[Lectio6]
+@Sancti/06-29:Lectio5:s/Thou .*//s
+
+[Lectio7]
+@Sancti/06-29:Lectio5:s/.* (Thou )/$1/s s/$/~/
+@Sancti/06-29:Lectio6:s/But .*//s
+
+[Lectio8]
+@Sancti/06-29:Lectio6:s/.* (But this)/$1/s
+
+[Responsory8]
+R. Loose the fetters of the earth O Peter at the command of God.
+* You who open the kingdom of heaven to the blessed.
+V. Whatsœver you shall bind upon earth, it shall be bound also in heaven: and whatsœver you shall loose on earth, it shall be loosed also in heaven.
+R. You who open the kingdom of heaven to the blessed.
+
+[Lectio10]
+@Sancti/06-29:Lectio8:s/And .*//s
+
+[Lectio11]
+@Sancti/06-29:Lectio8:s/.* (And )/$1/s s/$/~/
+@Sancti/06-29:Lectio9:s/What .*//s
+
+[Responsory11]
+R. And I will give to you the keys and hand over care of the flock, 
+* He who committed heaven and earth to Peter, to open that which is shut and to loose what is bound.
+V. He himself gave you the power O Peter to loosen the chains which bind together those ruled by worldly things.
+R. He who he committed heaven and earth to Peter, to open that which is shut and to loose what is bound.
+
+[Lectio12]
+@Sancti/06-29:Lectio9:s/.* (What )/$1/s
+
+[Responsory12]
+R. Blessed are you, Simon Bar-Jona: because flesh and blood has not revealed it to you, but my Father who is in heaven.
+* Says the Lord.
+V. And I say to you: that you are Peter; and upon this rock I will build my church.
+R. Says the Lord.

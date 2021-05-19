@@ -1,0 +1,21 @@
+[Responsory4]
+R. Piotrze, czy kochasz mię? Ty wiesz, Panie, że cię miłuję.
+* Paś baranki moje.
+V. Symonie Janów! miłujesz mię więcej niźli ci? Ty wiesz, Panie, że cię miłuję.
+R. Paś baranki moje.
+
+[Lectio10]
+@Sancti/06-29:Lectio8:s/Piotr .*//s
+
+[Lectio11]
+@Sancti/06-29:Lectio8:s/.* Piotr /Piotr /s s/$/~/
+@Sancti/06-29:Lectio9:s/To, .*//s
+
+[Lectio12]
+@Sancti/06-29:Lectio9:s/.* To, /To, /s
+
+[Responsory12]
+R. Błogosławionyś Szymonie Bar Jona, bo ciało i krew nie objawiły tobie, jeno Ojciec mój, który jest w niebiesiech. 
+* Rzekł Pan.
+V. A ja ci powiadam, że ty jesteś Opoką, i na tej Opoce zbuduję Kościół mój.
+R. Rzekł Pan.

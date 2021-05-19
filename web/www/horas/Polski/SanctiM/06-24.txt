@@ -1,0 +1,30 @@
+[AntMatutinum2]
+Nazarejczykiem * nazwane będzie: wina i sycery nie będzie pić, i nic nieczystego jeść nie będzie z żywota matki swojej.;;63
+Będzie bowiem * wielki przed Panem, bowiem ręka Pańska z niem jest.;;64
+A on uprzedzi * przed Nim, w duchu i mocy Eljaszowej, iżby zgotował Panu lud doskonały.;;91
+
+[Lectio9]
+@Sancti/06-24:Lectio7:s/Toteż.*//s
+
+[Lectio10]
+@Sancti/06-24:Lectio7:s/.*(Toteż)/$1/s s/$/~/
+@Sancti/06-24:Lectio8:s/Ten.*//s
+
+[Lectio11]
+@Sancti/06-24:Lectio8:s/.*(Ten)/$1/s s/$/~/
+@Sancti/06-24:Lectio9:s/Święci.*//s
+
+[Responsory11]
+R. A on uprzedzi przed nim w duchu i mocy Eliaszowéj, 
+* Aby obrócił serca ojców ku synom, a niedowiarki ku roztropności sprawiedliwych, iżby zgotował Panu lud doskonały.
+V. Albowiem będzie wielki przed Panem: i będzie napełnion Duchem Świętym. 
+R. Aby obrócił serca ojców ku synom, a niedowiarki ku roztropności sprawiedliwych, iżby zgotował Panu lud doskonały.
+
+[Lectio12]
+@Sancti/06-24:Lectio9:s/.*(Święci)/$1/s
+
+[Responsory12]
+R. A ty dzieciątko! prorokiem Najwyższego będziesz nazwane; 
+* Bo uprzedzisz przed oblicznością Pańską, abyś gotował drogi jego.
+V. Iżbyś dał naukę zbawienia ludowi jego, na odpuszczenie grzechów ich.
+R. Bo uprzedzisz przed oblicznością Pańską, abyś gotował drogi jego.
