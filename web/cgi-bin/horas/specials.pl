@@ -153,7 +153,7 @@ sub specials {
 
       if ($hora =~ /Tertia/ && $dayname[0] =~ /Pasc7/) {
         my %h = %{setupstring($datafolder, $lang, 'Psalterium/Minor Special.txt')};
-        push(@s, $h{'Hymnus Pasc7 Tertia'});
+        push(@s, $h{"Hymnus". ($version =~ /1570|Monastic/ ? 'M' : '') ." Pasc7 Tertia"});
         $skipflag = 1;
       } else {
         if (!$dox) { next; }
