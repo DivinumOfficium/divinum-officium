@@ -1,2 +1,16 @@
-@Sancti/07-25
 
+[Lectio6]
+@Sancti/07-25:Lectio5:s/From .*//s
+
+[Lectio7]
+@Sancti/07-25:Lectio5:s/.* From /From /s
+
+[Lectio9]
+@Sancti/07-25:Lectio7:s/But .*//s
+
+[Lectio10]
+@Sancti/07-25:Lectio7:s/.* But /But /s s/$/~/
+@Sancti/07-25:Lectio8:s/To .*//s
+
+[Lectio11]
+@Sancti/07-25:Lectio8:s/.* To me/To me/s
