@@ -1,0 +1,9 @@
+[Lectio9]
+@Sancti/07-25:Lectio7:s/Ale .*//s
+
+[Lectio10]
+@Sancti/07-25:Lectio7:s/.* Ale /Ale /s s/$/~/
+@Sancti/07-25:Lectio8:s/Skoro.*//s
+
+[Lectio11]
+@Sancti/07-25:Lectio8:s/.* Skoro/Skoro/s
