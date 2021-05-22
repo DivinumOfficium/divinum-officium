@@ -574,7 +574,7 @@ sub lectiones {
       my $j = 6;
       if ($winner{Rank} =~ /(virgin|vidua|poenitentis|pœnitentis|C6|C7)/i) { $j += 2; }
       if ($winner{Rank} =~ /ss\./i) { $j++; }
-      $a[3] = $a[$j];
+      $a[($version =~ /Monastic/) ? 4 : 3] = $a[$j];
     }
     if ($rule =~ /Ipsa Virgo Virginum/i && !$divaux) { $a[3] = $a[10]; }
     if ($rule =~ /Quorum Festum/i && !$divaux) { $a[3] = $a[7]; }
