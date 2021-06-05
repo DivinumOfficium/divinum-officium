@@ -16,26 +16,23 @@ Antiphonas horas
 _
 @Commune/C2:Responsory Sexta:1-6
 
-[Ant Matutinum]
-Quo progréderis * sine fílio, pater? quo, sacérdos sancte, sine minístro próperas?;;1
-Noli me derelínquere, * pater sancte, quia thesáuros tuos jam expéndi, quos tradidísti mihi.;;2
-Non ego te désero, * fili, neque derelínquo; sed majóra tibi debéntur pro Christi fide certámina.;;4
-Beátus Lauréntius * orábat, dicens: Dómine Jesu Christe, Deus de Deo, miserére mihi servo tuo.;;5
-Dixit Románus * ad beátum Lauréntium: Vídeo ante te júvenem pulchérrimum, festína me baptizáre.;;8
-Beátus Lauréntius * dixit: Mea nox obscúrum non habet, sed ómnia in luce claréscunt.;;10
-V. Glória et honóre coronásti eum, Dómine.
-R. Et constituísti eum super ópera mánuum tuarum.
-Strinxérunt * córporis membra pósita super cratículam: subiciéntibus prunas insúltat Levíta Christi.;;14
-Igne me examinásti, * et non est invénta in me iníquitas.;;16
-Interrogátus * te Dóminum conféssus sum, assátus grátias ago.;;20
+[AntMatutinumM]
 Beatus Laurentius * clamavit et dixit: Deum meum colo, et illi solo servio.;;23
 Dispersit * dedit pauperibus: justitia eius manet in seculum saeculi.;;63
 Protector tuus * ego sum noli timere: si transieris per ignem, flamma non nocebit tibi, et odor ignis non erit in te.;;91
-V. Posuísti, Dómine, super caput ejus.
-R. Corónam de lápide pretióso.
-Nisi granum frumenti * cadens, in terram mortuum fuerit, ipsum solum manet.;;256;257;258
-V. Magna est glória ejus in salutári tuo.
-R. Glóriam et magnum decórem impónes super eum.
+
+[Ant Matutinum 3N]
+Nisi granum frumenti * cadens, in terram mortuum fuerit, ipsum solum manet.
+
+[Ant Matutinum]
+@Sancti/08-10::1-3 s/3/4/
+@Sancti/08-10::6-8 s/8/10/ s/5/8/ s/4/5/
+@Sancti/08-10::4-5
+@Sancti/08-10::11-13
+@:AntMatutinumM
+@Sancti/08-10::9-10
+;;256;257;258
+@Sancti/08-10::14-15
 
 [Lectio1]
 @Commune/C6:Lectio11:s/7/3/ s/.4 .*//s

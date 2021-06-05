@@ -9,26 +9,28 @@ Psalmi Dominica
 _
 @Commune/C3:Responsory Sexta:s/._.*//s
 
-[Ant Matutinum]
-Novit Dóminus * viam justórum, qui in lege ejus meditántur die ac nocte.;;1
-Mirificávit * Dóminus Sanctos suos, et exaudívit eos clamántes ad se.;;4
-Laeténtur * omnes, qui sperant in te, Dómine, † in aetérnum exsultábunt: et habitábis in eis. † Et gloriabúntur in te omnes qui díligent nomen tuum.;;5
-Admirábile est * nomen tuum, Dómine: quia glória et honóre coronásti Sanctos tuos, et constituísti eos super ópera mánuum tuárum.;;8
-Dómine, * qui operáti sunt justítiam, habitábunt in tabernáculo tuo, et requiéscent in monte sancto tuo.;;14
-Hæc est generátio * quæréntium Dóminum, quæréntium fáciem Dei Jacob.;;23
-V. Lætámini in Dómino, et exsultáte justi.
-R. Et gloriámini omnes recti corde.
+[AntMatutinumM]
+Læténtur * omnes, qui sperant in te, Dómine, † in ætérnum exsultábunt: et habitábis in eis. † Et gloriabúntur in te omnes qui díligent nomen tuum.;;5
 Dilígite * Dóminum, omnes sancti eius, † quóniam veritátem requíret Dóminus.;;30
-Lætámini in Dómino, * et exsultáte justi, et gloriámini omnes recti corde.;;31
-Timéte Dóminum * omnes Sancti ejus, quóniam nihil deest timéntibus eum: ecce óculi Dómini super justos, et aures ejus ad preces eórum.;;33
-Dómine, spes Sanctórum * et turris fortitúdinis eórum, dedísti hereditátem timéntibus nomen tuum, et habitábunt in tabernáculo tuo in sǽcula.;;60
-Dómine, * Deus virtútum, beati omnes, qui sperant in te: † non privábis bonis eos, qui ámbulant in aequitáte: † in sǽcula sǽculorum laudábunt te.;;83
-Qui dilígitis Dóminum, * lætámini in Dómino, et confitémini memóriæ sanctitátis ejus.;;96
-V. Exsúltent justi in conspéctu Dei.
-R. Et delecténtur in lætítia.
-Laudem dícite * Deo nostro omnes Sancti eius: et qui timétis eum pusílli et magni: † quóniam regnávit Dóminus Deus noster omnípotens. † Gaudeámus, et exsultémus: et demus glóriam ei.;;259;254;255
-V. Justi autem in perpétuum vivent.
-R. Et apud Dóminum est merces eórum.
+Dómine, * Deus virtútum, beati omnes, qui sperant in te: † non privábis bonis eos, qui ámbulant in æquitáte: † in sǽcula sǽculorum laudábunt te.;;83
+
+[Ant Matutinum 3N]
+Laudem dícite * Deo nostro omnes Sancti ejus: et qui timétis eum pusílli et magni: † quóniam regnávit Dóminus Deus noster omnípotens. † Gaudeámus, et exsultémus: et demus glóriam ei.
+
+[Ant Matutinum]
+@Sancti/11-01::1-2
+@:AntMatutinumM:1
+@Sancti/11-01::3
+@Sancti/11-01::6-7
+@Sancti/11-01::4-5
+@:AntMatutinumM:2
+@Sancti/11-01::8
+@Sancti/11-01::11-12
+@:AntMatutinumM:3
+@Sancti/11-01::13
+@Sancti/11-01::9-10
+;;259;254;255
+@Sancti/11-01::14-15
 
 [Lectio1]
 @Sancti/11-01:Lectio1:s/-8/-7/ s/8 .*//s
@@ -59,7 +61,7 @@ R. Et apud Dóminum est merces eórum.
 [Responsory8]
 R. Sanctíssime Conféssor Christi Benedícte monachórum Pater et Dux
 * Intercéde pro nostra omniúmque salúte.
-V. Devótae plebi súbveni sancta intercessióne, † ut tuis adiúta précibus regna caeléstia consequátur.
+V. Devótæ plebi súbveni sancta intercessióne, † ut tuis adiúta précibus regna cæléstia consequátur.
 R. Intercéde pro nostra omniúmque salúte.
 
 [Lectio9]
@@ -72,25 +74,25 @@ R. Intercéde pro nostra omniúmque salúte.
 @Sancti/11-01:Lectio8:s/Sedens .*//s
 
 [Responsory10] 
-R. Beáta vere mater Ecclésia quam sic honor divínae dignatiónis illúminat, † quam victoriosórum gloriósus Mártyrum sanguis exórnat
+R. Beáta vere mater Ecclésia quam sic honor divínæ dignatiónis illúminat, † quam victoriosórum gloriósus Mártyrum sanguis exórnat
 * Quam invioláta confessiónis cándida índuit virgínitas.
-V. Flóribus eius nec rosae nec lília desunt.
+V. Flóribus eius nec rosæ nec lília desunt.
 R. Quam invioláta confessiónis cándida índuit virgínitas.
 
 [Lectio11]
 @Sancti/11-01:Lectio8:s/.* Sedens /Sedens /s
 
 [Responsory11] 
-R. Beáti estis, Sancti Dei omnes, qui meruístis consórtes fíeri caeléstium virtútum, † et pérfrui aetérnae claritátis glória:
+R. Beáti estis, Sancti Dei omnes, qui meruístis consórtes fíeri cæléstium virtútum, † et pérfrui ætérnæ claritátis glória:
 * Idéoque precámur, ut mémores nostri, † intercédere dignémini pro nobis ad Dóminum Deum nostrum.
-V. Gaudéte et exsultáte quóniam merces vestra multa est in caelis.
+V. Gaudéte et exsultáte quóniam merces vestra multa est in cælis.
 R. Idéoque precámur, ut mémores nostri, † intercédere dignémini pro nobis ad Dóminum Deum nostrum.
 
 [Lectio12]
 @Sancti/11-01:Lectio9
 
 [Responsory12] 
-R. Vidi Angelum ascendéntem ab ortu solis, habentem signum Dei vivi; † et clamávit voce magna quátuor Angelis, quibus datum est nocere terrae et mari, dicens: † Nolite nocére terrae et mari neque arbóribus, † quoadúsque signémus servos Dei nostri in fróntibus eórum.
+R. Vidi Angelum ascendéntem ab ortu solis, habentem signum Dei vivi; † et clamávit voce magna quátuor Angelis, quibus datum est nocere terræ et mari, dicens: † Nolite nocére terræ et mari neque arbóribus, † quoadúsque signémus servos Dei nostri in fróntibus eórum.
 * Et audívi númerum signatórum centum quadragínta quátuor míllia signáti, † ex omni tribu filiórum Israël.
 V. Et vidébunt fáciem eius, et nomen Patris eius scriptum in fróntibus suis.
 R. Et audívi númerum signatórum centum quadragínta quátuor míllia signáti, † ex omni tribu filiórum Israël.

@@ -20,18 +20,25 @@ Amen.
 _
 @Tempora/Pent02-5:Responsory Sexta:1-6
 
-[Ant Matutinum]
-@Tempora/Pent02-5::1
+[AntMatutinumM]
 Gustáte * et vidéte, quóniam suávis est Dóminus: † beátus vir, qui sperat in eo.;;33
-@Tempora/Pent02-5::2-3
-@Tempora/Pent02-5::6-7
-@Tempora/Pent02-5::4-5
 Dóminus * dabit benignitátem, † loquétur pacem in plebem suam.;;84
 Suávis * et mitis es, Dómine, † et multæ misericórdiæ omnibus invocántibus te.;;85
 Secúndum multitúdinem * dolórum meórum in Corde meo, † consolatiónes tuæ lætificavérunt ánimam meam.;;93
+
+[Ant Matutinum 3N]
+Confitémini Dómino, * et invocate nomen ejus: † notas fácite in pópulis adinventiónes ejus.
+
+[Ant Matutinum]
+@Tempora/Pent02-5::1
+@:AntMatutinumM:1
+@Tempora/Pent02-5::2-3
+@Tempora/Pent02-5::6-7
+@Tempora/Pent02-5::4-5
+@:AntMatutinumM:2-4
 @Tempora/Pent02-5::11-13
 @Tempora/Pent02-5::9-10
-Confitémini Dómino, * et invocate nomen ejus: † notas fácite in pópulis adinventiónes ejus.;;221;223(1-8);223(9-16)
+;;221;223(1-8);223(9-16)
 @Tempora/Pent02-5::14-15
 
 [Lectio1]

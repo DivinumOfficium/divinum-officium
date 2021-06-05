@@ -11,26 +11,26 @@ S. Agathae Virginis et Martyris;;Duplex majus;;4;;ex Commune/C6
 _
 @Commune/C6:Responsory Sexta:1-6
 
-[Ant Matutinum]
-Ingénua sum, * et ex spectábili génere, ut omnis parentéla mea testátur.;;1
+[Ant Matutinum 3N]
+Beata Agatha * ingréssa cárcerem, expándit manus suas ad Deum et dixit: Dómine qui me fecísti víncere torménta carnifícium, jube me ad tuam misericórdiam perveníre.
+
+[AntMatutinumM]
 Et si ingenua es, * cur te ostendis servilem personam? Quia ancilla Christia sum, ideo me ostendo servilem personam;;2
-Summa ingenúitas * ista est, in qua sérvitus Christi comprobátur.;;4
-Ancílla Christi sum, * ídeo me osténdo servílem habére persónam.;;5
-Agatha sancta * dixit: Si feras mihi promíttis, audíto Christi nómine mansuéscunt.;;8
-Si ignem adhíbeas, * rórem mihi salvíficum de cælo Angeli ministrábunt.;;10
-V. Spécie tua et pulchritúdine tua.
-R. Inténde, próspere procéde, et regna.
-Nisi diligénter * perféceris corpus meum a carnifícibus attrectári, non potest ánima mea in paradísum Dómini cum palma intráre martýrii.;;14
-Vidísti, Dómine, * agónem meum, quómodo pugnávi in stádio; sed, quia nólui obedíre mandátis príncipum, jussa sum in mamílla torquéri.;;15
-Propter fidem castitátis * jussa sum suspéndi in equúleo: ádjuva me, Dómine, Deus meus, in tortúra mamillárum meárum.;;44
-Agatha * lætíssime et gloriánter ibat ad cárcerem, quasi ad épulas invitáta; et agónem suum Dómino précibus commendábat.;;84
 Agatha ingréssa cárcerem, benedicébat Dóminum Jesum Christum;;86
 Mens mea * solidáta est, et a Christo fundáta;;95
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
-Beata Agatha * ingréssa cárcerem, expándit manus suas ad Deum et dixit: Dómine qui me fecísti víncere torménta carnifícium, jube me ad tuam misericórdiam perveníre.;;249;250;251
-V. Elégit eam Deus, et præelégit eam.
-R. In tabernáculo suo habitáre facit eam.
+
+[Ant Matutinum]
+@Sancti/02-05::1
+@:AntMatutinumM:1
+@Sancti/02-05::2-3 s/2/4/ s/3/5/
+@Sancti/02-05::6-7 s/4/8/ s/5/10/
+@Sancti/02-05::4-5
+@Sancti/02-05::11-13 s/15/44/ s/14/15/ s/10/14/
+@Sancti/02-05::8 s/8/84/
+@:AntMatutinumM:2-3
+@Sancti/02-05::9-10
+;;249;250;251
+@Sancti/02-05::14-15
 
 [Responsory9]
 R. Dum torquerétur beáta Agatha in mamílla gráviter, dixit ad júdicem:
