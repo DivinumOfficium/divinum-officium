@@ -3,13 +3,20 @@
 [Rule]
 12 lectiones
 
+[AntMatutinumM]
+Isti * sunt, qui venérunt ex magna tribulatióne, † et lavérunt stolas suas in sánguine Agni.;;33
+Si coram * homínibus torménta passi sunt, † spes electórum est immortális in ætérnum.;;60
+
+[Ant Matutinum 3N]
+Innocéntium * pássio, Christi exsultátio: † Heródes confúsus est qui eos persecútus est.
+
 [Ant Matutinum]
 @CommuneM/C3:Ant Matutinum:1-9
-Isti * sunt, qui venérunt ex magna tribulatióne, † et lavérunt stolas suas in sánguine Agni.;;33
+@:AntMatutinumM:1
 @CommuneM/C3:Ant Matutinum:11
-Si coram * homínibus torménta passi sunt, † spes electórum est immortális in ætérnum.;;60
+@:AntMatutinumM:2
 @CommuneM/C3:Ant Matutinum:13-16
-Innocéntium * pássio, Christi exsultátio: † Heródes confúsus est qui eos persecútus est.;;259;254;255
+;;259;254;255
 @CommuneM/C3:Ant Matutinum:18-19
 
 [Lectio1]

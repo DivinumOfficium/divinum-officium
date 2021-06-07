@@ -15,26 +15,25 @@ _
 [Versum 1]
 @Sancti/12-25:Versum 2
 
-[Ant Matutinum]
-Dóminus dixit * ad me: Fílius meus es tu, ego hódie génui te.;;2
-In sole pósuit * tabernáculum suum: et ipse tamquam sponsus procédens de thálamo suo.;;18
-Elevámini, * portæ æternáles, et introíbit Rex glóriæ.;;23
+[AntMatutinumM]
 Speciósus forma * præ fíliis hóminum, diffúsa est grátia in lábiis tuis.;;44
 Suscépimus, * Deus, misericórdiam tuam † in médio templi tui.;;47
 Oriétur * in diébus Dómini abundántia pacis, † et dominábitur.;;71
-V. Tamquam sponsus.
-R. Dóminus procédens de thálamo suo.
 Véritas * de terra orta est, † et justítia de cælo prospéxit.;;84
-Homo natus est * in ea, et ipse fundávit eam Altíssimus.;;86
-Exsultábunt ómnia ligna * silvárum ante fáciem Dómini, quóniam venit.;;95
-In princípio, * et ante sǽcula Deus erat Verbum, et ipse natus est hódie Salvátor mundi.;;96
-Ante lucíferum génitus, * et ante sǽcula, Dóminus Salvátor noster hódie nasci dignátus est.;;97
-Nato Dómino, * Angelórum chorus canébat, dicens: Salus Deo nostro, sedénti super thronum, et Agno.;;98
-V. Speciósus forma præ fíliis hóminum.
-R. Diffúsa est grátia in lábiis tuis.
-Beátus * venter qui te portávit, et beata úbera, † quae te lactavérunt Dóminum et Salvatórem mundi, allelúja.;;263;264;265
-V. Notum fecit Dóminus, allelúja.
-R. Salutáre suum, allelúja.
+
+[Ant Matutinum 3N]
+Beátus * venter qui te portávit, et beata úbera, † quae te lactavérunt Dóminum et Salvatórem mundi, allelúja.
+
+[Ant Matutinum]
+@Sancti/01-01::1-3
+@:AntMatutinumM:1-3
+@Sancti/01-01::4-5
+@:AntMatutinumM:4
+@Sancti/01-01::7-8
+@Sancti/01-01::11-13
+@Sancti/01-01::9-10
+;;263;264;265
+@Sancti/01-01::14-15
 
 [Lectio1]
 @Sancti/01-01:Lectio1:s/-8/-5/ s/6 .*//s

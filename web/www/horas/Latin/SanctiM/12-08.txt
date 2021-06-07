@@ -1,4 +1,3 @@
-
 @Sancti/12-08
 
 
@@ -13,26 +12,26 @@ _
 [Hymnus Matutinum]
 @Sancti/12-08::s/Jesu, tibi sit glória/Glória tibi Dómine/
 
-[Ant Matutinum]
-Admirábile est * nomen tuum, Dómine, in univérsa terra, quia in Vírgine María dignum tibi habitáculum præparásti.;;8
-In sole pósuit * Deus tabernáculum suum.;;18
-In Conceptióne sua * accépit María benedictiónem a Dómino, et misericórdiam a Deo salutári suo.;;23
-Diffúsa est * grátia in Conceptióne ejus, et speciósa appáruit inter fílias hóminum.;;44
-Adjúvit eam * Deus mane dilúculo; sanctificávit tabernáculum suum Altíssimus.;;45
-Fundátur * exsultatióne univérsae terrae mons Sion, cívitas regis magni.;;47
-V. Deus omnípotens præcínxit me virtúte.
-R. Et pósuit immaculátam viam meam.
-Misericórdia * et véritas obviavérunt sibi in Conceptióne Maríae: † justítia et pax osculátæ sunt.;;84
-Gloriósa * dicta sunt de te, cívitas Dei: fundávit te Dóminus in móntibus sanctis.;;86
-Sanctimónia et magnificéntia * in Conceptióne ejus: annuntiáte in ómnibus pópulis glóriam ejus.;;95
-Lætámini, omnes, * in Dómino: et confitémini memóriæ sanctitátis ejus.;;96
-Notum fecit * Dóminus opus suum: in conspéctu géntium revelávit glóriam Genetrícis suæ.;;97
+[Ant Matutinum 3N]
+Benedícite * Dómino in ópere suo; † quia índuit Maríam vestiméntis salútis: et induménto justítiæ circúmdedit eam.
+
+[AntMatutinumM]
+Fundátur * exsultatióne univérsæ terræ mons Sion, cívitas regis magni.;;47
+Misericórdia * et véritas obviavérunt sibi in Conceptióne Maríæ: † justítia et pax osculátæ sunt.;;84
 Exaltáte * Dóminum Deum nostrum, et adoráte tabernáculum ejus, † quóniam sanctus est.;;98
-V. In hoc cognóvi quóniam voluísti me.
-R. Quóniam non gaudébit inimícus meus super me.
-Benedícite * Dómino in ópere suo; † quia índuit Maríam vestiméntis salútis: et induménto justítiae circúmdedit eam.;;249;250;251
-V. Exaltábo te, Dómine, quóniam suscepísti me.
-R. Nec delectásti inimícos meos super me.
+
+[Ant Matutinum]
+@Sancti/12-08::1-3
+@Sancti/12-08::6-7
+@:AntMatutinumM:1
+@Sancti/12-08::4-5
+@:AntMatutinumM:2
+@Sancti/12-08::8
+@Sancti/12-08::11-13
+@:AntMatutinumM:3
+@Sancti/12-08::9-10
+;;249;250;251
+@Sancti/12-08::14-15
 
 [Lectio1]
 @Sancti/12-08
@@ -49,7 +48,7 @@ R. Nec delectásti inimícos meos super me.
 [Responsory4]
 R. Elégit Mariam Deus et preelégit eam, et creávit eam in Spíritu Sancto:
 * Ideo nihil inquinátum in eam incúrrit.
-V. Dedit Maríae Dóminus protectiónem salútis suae, † et déxtera sua suscépit eam.
+V. Dedit Maríæ Dóminus protectiónem salútis suæ, † et déxtera sua suscépit eam.
 R. Ideo nihil inquinátum in eam incúrrit.
 
 [Lectio5]
@@ -97,9 +96,9 @@ R. Quia misericórdia Dómini magna est super me.
 
 [Responsory11]
 R. Quis Deus magnus sicut Deus noster?
-* Praeelégit me Deus, et posuit immaculatam viam meam
+* Præelégit me Deus, et posuit immaculatam viam meam
 V. Exsultavit spiritus meus in Deo, salutari meo.
-R. Praeelégit me Deus, et posuit immaculatam viam meam
+R. Præelégit me Deus, et posuit immaculatam viam meam
 
 [Lectio12]
 @Sancti/12-08:Lectio9

@@ -27,26 +27,27 @@ _
 [Hymnus Matutinum]
 @Psalterium/Matutinum Special:HymnusM Quad5
 
-[Ant Matutinum]
-Nóbile lignum * exaltátur, Christi fides rútilat, dum Crux ab ómnibus venerátur.;;1
-Sancta Crux * extóllitur a cunctis régibus, virga régia erígitur, in qua Salvátor triumphávit.;;2
-O Crux venerábilis, * quæ salútem attulísti míseris, quibus te éfferam præcóniis, quóniam vitam nobis cǽlitem præparásti.;;4
-O Crucis victória * et admirábile signum, in cælésti cúria fac nos captáre triúmphum.;;5
-Dulce lignum, / dulces clavos, dulce pondus sustínuit, † quae sola digna fuit portáre prétium hujus sǽculi.;;8
-Funéstæ mortis * damnátur supplícium, dum Christus, in Cruce, nostra destrúxit víncula críminum.;;10
-V. Hoc signum Crucis erit in cælo.
-R. Cum Dóminus ad judicándum vénerit.
-Rex exaltátur * in ǽthera, cum nóbile trophǽum Crucis ab univérsis christícolis adorátur per sǽcula.;;20
+[AntMatutinumM]
+Dulce lignum, * dulces clavos, dulce pondus sustínuit, † quae sola digna fuit portáre prétium hujus sǽculi.;;8
 Virga tua, et báculus tuus: * ipsa me consoláta sunt, † Dómine, Deus meus.;;22
-Adorámus te, Christe, * et benedícimus tibi, quia per Crucem tuam redemísti mundum.;;95
-Per lignum * servi facti sumus, et per sanctam Crucem liberáti sumus: fructus árboris sedúxit nos, Fílius Dei redémit nos, allelúja.;;96
-Salvátor mundi, * salva nos: qui per Crucem et sánguinem tuum redemísti nos, auxiliáre nobis, te deprecámur, Deus noster.;;97
 Adorámus Crucis signáculum, * per quod salútis súmpsimus sacraméntum.;;98
-V. Adorámus te, Christe, et benedícimus tibi.
-R. Quia per Crucem tuam redemísti mundum.
-Mihi autem * absit gloriári, nisi in cruce Dómini nostri Jesu Christi: per quem mihi mundus crucifíxus est, et ego mundo.;;246;247;248
-V. Omnis terra adoret te, et psallat tibi.
-R. Psalmum dicat nómini tuo, Dómine.
+
+[Ant Matutinum 3N]
+Mihi autem * absit gloriári, nisi in cruce Dómini nostri Jesu Christi: per quem mihi mundus crucifíxus est, et ego mundo.
+
+[Ant Matutinum]
+@Sancti/09-14::1-3 s/3/4/
+@Sancti/09-14::6 s/4/5/
+@:AntMatutinumM:1
+@Sancti/09-14::7
+@Sancti/09-14::4-5
+@Sancti/09-14::8
+@:AntMatutinumM:2
+@Sancti/09-14::11-13
+@:AntMatutinumM:3
+@Sancti/09-14::9-10
+;;246;247;248
+@Sancti/09-14::14-15
 
 [Lectio1]
 @Sancti/09-14:Lectio1:s/-3/-2/ s/.3 .*//s

@@ -15,26 +15,24 @@ _
 [Hymnus Matutinum]
 @:HymnusM Vespera
 
-[Ant Matutinum]
-Concússum est mare, * et contrémuit terra, ubi Archángelus Míchaël descendébat de cælo.;;8
-Laudémus Dóminum, * quem laudant Ángeli, quem Chérubim et Séraphim, Sanctus, Sanctus, Sanctus proclámant.;;10
-Ascéndit * fumus arómatum in conspéctu Dómini de manu Ángeli.;;14
-Míchaël Archángele, * veni in adjutórium pópulo Dei.;;18
-Míchaël * præpósitus paradísi, quem honoríficant Angelórum cives.;;23
-Gloriósus * apparuísti in conspéctu Dómini: proptérea decórem índuit te Dóminus.;;33
-V. Stetit Angelus juxta aram templi.
-R. Habens thuríbulum aureum in manu sua.
+[AntMatutinumM]
 Sancte Míchael Archángele, defénde nos in proélio, * ut non pereámus in treméndo judício, allelúja.;;89
-Ángelus Archángelus Míchaël, * Dei núntius pro animábus justis, allelúja, allelúja.;;95
-Data sunt ei * incénsa multa, ut adoléret ea ante altáre áureum, quod est ante óculos Dómini.;;96
-Multa magnália * de Michaéle Archángelo, qui, fortis in prǽlio, fecit victóriam.;;97
 Stetit Angelus juxta aram templi, * habens thuríbulum áureum in manu sua.;;98
 Benedícite Dóminum, omnes Angeli ejus: * benedícite, minístri ejus, qui fácitis voluntátem ejus: † benedícite Dóminum.;;102
-V. Ascéndit fumus arómatum in conspéctu Dómini.
-R. De manu Angeli.
-Míchael, Gábriel, * Chérubim et Séraphim, qui non cessant clamáre quotídie, dicéntes: † Dignus es, Dómine, accípere glóriam, allelúja.;;266;267;268
-V. In conspéctu Angelórum psallam tibi, Deus meus.
-R. Adorábo ad templum sanctum tuum, et confitébor nómini tuo.
+
+[Ant Matutinum 3N]
+Míchael, Gábriel, * Chérubim et Séraphim, qui non cessant clamáre quotídie, dicéntes: † Dignus es, Dómine, accípere glóriam, allelúja.
+
+[Ant Matutinum]
+@Sancti/09-29::1-3
+@Sancti/09-29::6-8
+@Sancti/09-29::4-5
+@:AntMatutinumM:1
+@Sancti/09-29::11-13 s/102/97/
+@:AntMatutinumM:2-3
+@Sancti/09-29::9-10
+;;266;267;268
+@Sancti/09-29::14-15
 
 [Lectio2]
 @Sancti/05-08::s/-8/-6/ s/7 .*//s

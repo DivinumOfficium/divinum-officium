@@ -17,26 +17,25 @@ _
 @Sancti/10-DU::1-35
 @Sancti/10-DU:Doxology:s/Jesu, tibi sit glória/Glória tibi, Dómine/
 
-[Ant Matutinum]
-Ego autem * constitútus sum Rex ab eo super Sion montem sanctum eius, † prǽdicans præcéptum eius.;;2
-Glória * et honóre coronásti eum, Dómine: † ómnia subiecísti sub pédibus eius.;;8
-Elevámini, * portæ æternáles, † et introíbit Rex glóriæ.;;23
-Sedébit * Dóminus Rex in ætérnum: † Dóminus benedícet pópulo suo in pace.;;28
-Virga * directiónis, virga regni tui: † proptérea pópuli confitebúntur tibi in ætérnum, et in sæculum sæculi.;;44
-Psállite * Regi nostro, psállite: † quóniam Rex magnus super omnem terram.;;46
-V. Dáta est mihi omnis potéstas.
-R. In cælo et in terra.
+[AntMatutinumM]
 Hic est Deus, * Deus noster in aetérnum: ipse reget nos in sǽcula.;;47
 Benedicéntur * in ipso omnes tribus terræ; † omnes Gentes magnificábunt eum.;;71
 Dícite in géntibus quia Dóminus regnávit; † ipse judicábit orbem terrae in aequitáte, et pópulos in veritáte sua.;;95
 Dóminus * regnávit, exsúltet terra: † laeténtur ínsulae multae.;;96
 Jubiláte * in conspéctu regis Dómini, † quóniam venit judicáre terram.;;97
 Exaltáte * Dóminum Deum nostrum, † et adoráte in monte sancto eius.;;98
-V. Afférte Dómino, famíliæ populórum.
-R. Afférte Dómino glóriam et impérium.
-Christo * datus est principátus et honor regni: omnis pópulus et tribus et linguae sérvient ei in aetérnum.;;221;223(1-8);223(9-16)
-V. Adorábunt eum omnes reges terræ.
-R. Omnes gentes sérvient ei.
+
+[Ant Matutinum]
+@Sancti/10-DU::1-3
+@Sancti/10-DU::6-8
+@Sancti/10-DU::4-5
+@:AntMatutinumM
+@Sancti/10-DU::9-10
+;;221;223(1-8);223(9-16)
+@Sancti/10-DU::14-15
+
+[Ant Matutinum 3N]
+Christo * datus est principátus et honor regni: omnis pópulus et tribus et linguae sérvient ei in aetérnum.
 
 [Lectio1]
 @Sancti/10-DU:Lectio1:

@@ -15,26 +15,26 @@ _
 [HymnusM Vespera]
 @:Hymnus Vespera:s/Jesu, tibi sit glória/Glória tibi, Dómine/
 
-[Ant Matutinum]
-Exaltáta est * sancta Dei Génetrix † super choros Angelórum ad cæléstia regna.;;8
-Paradísi portæ * per te nobis apértæ sunt, † quæ hódie gloriósa cum Angelis triúmphas.;;18
-Benedícta tu * in muliéribus, † et benedíctus fructus ventris tui.;;23
-Spécie tua * et pulchritúdine tua inténde, † próspere procéde, et regna.;;44
-Adjuvábit eam * Deus vultu suo: † Deus in médio ejus, non commovébitur.;;45
+[AntMatutinumM]
 Favus distíllans * lábia tua, Sponsa, mel et lac sub lingua tua: † et odor vestimentórum tuórum sicut odor thuris.;;47
-V. Exaltáta est sancta Dei Génetrix.
-R. Super choros Angelórum ad cæléstia regna.
 Fons hortórum, * púteus aquárum vivéntium, † quæ fluunt ímpetu de Líbano.;;84
 Sicut lætántium * ómnium nostrum habitátio est in te, † sancta Dei Génetrix.;;86
-Gaude, * María Virgo: † cunctas hǽreses sola interemísti in univérso mundo.;;95
-Dignáre me * laudáre te, Virgo sacráta: † da mihi virtútem contra hostes tuos.;;96
-Post partum, * Virgo, invioláta permansísti: † Dei Génetrix, intercéde pro nobis.;;97
 Descéndi * in hortum nucum, ut vidérem poma convállium, † et inspícerem, si floruísset vinea, et germinássent mala púnica, allelúja.;;98
-V. Assúmpta est María in cælum: gaudent Angeli.
-R. Laudántes benedícunt Dóminum.
-Hortus conclúsus * es Dei Génitrix, hortus conclúsus, fons signátus: † surge própera, amíca mea, et veni.;;249;250;251
-V. María Virgo assúmpta est ad æthéreum thálamum.
-R. In quo Rex regum stelláto sedet sólio.
+
+[Ant Matutinum 3N]
+Hortus conclúsus * es Dei Génitrix, hortus conclúsus, fons signátus: † surge própera, amíca mea, et veni.
+
+[Ant Matutinum]
+@Sancti/08-15t::1-3
+@Sancti/08-15t::6-7
+@:AntMatutinumM:1
+@Sancti/08-15t::4-5
+@:AntMatutinumM:2-3
+@Sancti/08-15t::11-13
+@:AntMatutinumM:4
+@Sancti/08-15t::9-10
+;;249;250;251
+@Sancti/08-15t::14-15
 
 [Lectio1]
 @Sancti/08-15:Lectio1:s/-15/-12/ s/.13 .*//s
