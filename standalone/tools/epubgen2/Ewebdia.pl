@@ -458,6 +458,12 @@ sub table_start {
   #print "<DIV STYLE=\"display:table;\">";
 }
 
+#antepost('$title')
+# prints Ante of Post call
+sub ante_post {
+  # just function place holder
+}
+
 #table_end()
 # finishes main table
 sub table_end {
