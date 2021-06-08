@@ -22,6 +22,8 @@ use Time::Local;
 
 #use DateTime;
 use locale;
+use lib "$Bin/..";
+use DivinumOfficium::Main qw(load_versions);
 $error = '';
 $debug = '';
 
@@ -106,15 +108,7 @@ if ($officium =~ /brevi/) {
   @versions = ($version);
 } else {
   $version = strictparam('version');
-  @versions = (
-    'Monastic',
-    'Tridentine 1570',
-    'Tridentine 1910',
-    'Divino Afflatu',
-    'Reduced 1955',
-    'Rubrics 1960',
-    '1960 Newcalendar'
-  );
+  @versions = load_versions($datafolder);
 }
 if (!$version) { $version = ($version1) ? $version1 : 'Rubrics 1960'; }
 setmdir($version);

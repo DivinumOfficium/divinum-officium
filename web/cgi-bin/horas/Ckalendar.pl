@@ -22,6 +22,8 @@ use Time::Local;
 
 #use DateTime;
 use locale;
+use lib "$Bin/..";
+use DivinumOfficium::Main qw(load_versions);
 $error = '';
 $debug = '';
 
@@ -104,7 +106,6 @@ if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completo
 }
 $version1 = strictparam('version1');
 $version2 = strictparam('version2');
-@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
 if (!$version1) { $version1 = 'Divino Afflatu'; }
 if (!$version2) { $version2 = 'Rubrics 1960'; }
 $testmode = strictparam('testmode');
@@ -293,6 +294,7 @@ print << "PrintTag";
 PrintTag
 @chv = splice(@chv, @chv);
 
+@versions = load_versions($datafolder);
 for ($i = 0; $i < @versions; $i++) {
   $chv[$i] = ($version1 =~ /$versions[$i]/) ? 'SELECTED' : '';
 }

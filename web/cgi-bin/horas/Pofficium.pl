@@ -23,7 +23,7 @@ use Time::Local;
 #use DateTime;
 use locale;
 use lib "$Bin/..";
-use DivinumOfficium::Main qw(vernaculars);
+use DivinumOfficium::Main qw(vernaculars load_versions);
 $error = '';
 $debug = '';
 
@@ -32,8 +32,6 @@ our $Hk = 0;
 our $Ck = 0;
 our $officium = 'Pofficium.pl';
 our $version = 'Rubrics 1960';
-
-@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', 'Ordo Praedicatorum', '1960 Newcalendar');
 
 #***common variables arrays and hashes
 #filled  getweek()
@@ -310,7 +308,7 @@ PrintTag
 PrintTag
   }
   @chv = splice(@chv, @chv);
-  if (-e "$Bin/monastic.pl") { unshift(@versions, 'Monastic'); }
+  @versions = load_versions($datafolder);
   for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'red' : 'blue'; }
   my $vsize = @versions;
   print "<TABLE ALIGN=CENTER BORDER=1><TR><TD ALIGN=CENTER>\n";
