@@ -41,23 +41,20 @@ It is possible to generate Missal and Breviary files in .mobi or .ePub format, w
 The source code for the Divinum Officium website can be found and freely downloaded from our <a href="https://github.com/DivinumOfficium/divinum-officium">GitHub repository</a>. From this repository, one can download the code to a Windows, Mac, or Linux computer and run the code as a local web host.<BR><BR>
 There are two repositories at <a href=https://github.com/DivinumOfficium>GitHub</a>; of these, we recommend cloning <a href="https://github.com/DivinumOfficium/divinum-officium">divinum-officium</a>.<BR><BR>
 Instructions for cloning are available at the links under the 'clone URL' box on the right-hand side of the <a href="https://github.com/DivinumOfficium/divinum-officium">Divinum-Officium GitHub</a>. If you have Git installed, it is strongly recommended to locally update the files (via git pull) from this repository to account for the ongoing changes and improvements to the site.<BR><BR>
-The website is contained in the web/ subdirectory of this repository. The other directories at the top level should not be served from a webserver.<BR>
+The website is contained in the /web subdirectory of this repository. The other directories at the top level should not be served from a webserver.<BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Python</FONT></H3>
-It is possible to set up Divinum Officium as a local host using a Python script, and provided Perl is installed (see below). Using an Android device, this can be done via UserLAnd with its Ubuntu distribution and installing the lxde package therein. Next, download the appropriate packages (Git, Python, CGI.pm, and then clone the Git repository as described above). Once the divinum-officium repository has been cloned using Git, the following terminal syntax may be used:<BR><BR>
+It is possible to set up Divinum Officium as a local host using the CGI HTTP Python script from the terminal in Mac OS or Linux. Using an Android device, this can be done via UserLAnd with any of their Linux distributions. Once the selected distro is functional, download the appropriate packages (Git, Python, CGI.pm, and then clone the Git repository):<BR><BR>
+sudo apt-get install git<BR>
+sudo apt-get install CGI.pm<BR>
+sudo apt-get install python<BR>
+git clone https://github.com/divinumofficium/divinum-officium<BR><BR>
+Once the divinum-officium repository has been cloned using Git, the following terminal syntax may be used:<BR><BR>
 cd ~/divinum-officium/web && git pull && python -m CGIHTTPServer<BR><BR>
-One may need to adjust python to python2 or python3, given the installed version. One may also need to adjust the path to the directory, provided the path ends in /web.<BR><BR>
+One may also need to adjust the path to the directory, provided the path ends in /web.<BR><BR>
 Once the server is active and running in the terminal window, navigate to (typically) 0.0.0.0:8000 in your browser. Divinum Officium should then be functional as on the live site.<BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Apache</FONT></H3>
-If installing on a different server (e.g. Apache), Perl >= 5.10.1 is required, as are the following modules. (Perl 5.20.1 is recommended as it contains all necessary CGI packages.) Depending on the Perl version and distribution these might already be installed; if they are not, they can be obtained from your OS/Perl distribution or from CPAN:<BR><BR>
-  CGI<BR>
-  CGI::Carp<BR>
-  CGI::Cookie<BR>
-  Encode<BR>
-  File::Basename<BR>
-  FindBin<BR>
-  Time::Local<BR><BR>
-(Typically, you will already have all of these.)<BR><BR>
-Most importantly, your webserver must be configured to allow the execution of CGI scripts from web/cgi-bin/.<BR><BR>
+If installing on a different server (e.g. Apache), Perl >= 5.10.1 is required, as are the following modules. (Perl 5.20.1 is recommended as it contains all necessary CGI packages.) CGI.pm can be obtained from your OS/Perl distribution or from CPAN.<BR><BR>
+Your webserver must be configured to allow the execution of CGI scripts from web/cgi-bin/.<BR><BR>
 For Apache one way to achieve this is to use the following directives in a Directory element for that directory:<BR><BR>
   Options +ExecCGI<BR>
   AddHandler cgi-script .pl<BR><BR>
