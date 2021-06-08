@@ -330,106 +330,21 @@ PrintTag
 </I></P>
 PrintTag
   }
-  $ch1 = ($expand =~ /all/i) ? 'SELECTED' : '';
-  $ch2 = ($expand =~ /psalms/i) ? 'SELECTED' : '';
+  print "<P ALIGN=CENTER>";
+  print option_selector("Expand", "parchange();", $expand, qw(all psalms)); # old qw(all psalms nothing skeleton));
+  print option_selector("Version 1", "parchange();", $version1, @versions );
+  print option_selector("Version 2", "parchange();", $version2, @versions );
 
-  #  $ch3 = ($expand =~ /nothing/i) ? 'SELECTED' : '';
-  #  $ch4 = ($expand =~ /skeleton/i) ? 'SELECTED' : '';
-  @chv1 = splice(@chv, @chv);
-
-  for ($i = 0; $i < @versions; $i++) {
-    $chv1[$i] = ($version1 =~ /$versions[$i]/) ? 'SELECTED' : '';
-  }
-  @chv2 = splice(@chv, @chv);
-
-  for ($i = 0; $i < @versions; $i++) {
-    $chv2[$i] = ($version2 =~ /$versions[$i]/) ? 'SELECTED' : '';
-  }
-  print << "PrintTag";
-<P ALIGN=CENTER>
-&nbsp;&nbsp;&nbsp;
-<LABEL FOR=expand CLASS=offscreen>Expand</LABEL>
-<SELECT ID=expand NAME=expand SIZE=2 onchange="parchange();">
-<OPTION $ch1 VALUE='all'>all
-<OPTION $ch2 VALUE='psalms'>psalms
-</SELECT>
-&nbsp;&nbsp;&nbsp;
-PrintTag
-  my $vsize = @versions;
-  print "
-    <LABEL FOR=version1 CLASS=offscreen>Version 2</LABEL>
-    <SELECT ID=version1 NAME=version1 SIZE=$vsize onchange=\"parchange();\">\n
-  ";
-
-  for ($i = 0; $i < @versions; $i++) {
-    print "<OPTION $chv1[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";
-  }
-  print "</SELECT>\n";
-  print "
-    <LABEL FOR=version2 CLASS=offscreen>Version 2</LABEL>
-    <SELECT ID=version2 NAME=version2 SIZE=$vsize onchange=\"parchange();\">\n
-  ";
-
-  for ($i = 0; $i < @versions; $i++) {
-    print "<OPTION $chv2[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";
-  }
-  print "</SELECT>\n";
-
+  #$testmode = 'Regular' unless $testmode;
   #if ($savesetup > 1) {
-  #my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
-  #my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
-  #my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
-  #my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
-  #my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
-  #  print << "PrintTag";
-  #&nbsp;&nbsp;&nbsp;
-  #<A HREF=# onclick="callkalendar();">Kalendarium</A>
-  #&nbsp;&nbsp;&nbsp;
-  #<SELECT NAME=testmode SIZE=4 onclick="parchange();">
-  #<OPTION $sel10 VALUE='regular'>regular
-  #<OPTION $sel11 VALUE='Seasonal'>Seasonal
-  #<OPTION $sel12 VALUE='Season'>Season
-  #<OPTION $sel13 VALUE='Saint'>Saint
-  #<OPTION $sel14 VALUE='Common'>Common
-  #</SELECT>
-  #PrintTag
+  #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal Season Saint Common));
   #} else {
-  #my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
-  #my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
-  #  print << "PrintTag";
-  #&nbsp;&nbsp;&nbsp;
-  #<SELECT NAME=testmode SIZE=2 onclick="parchange();">
-  #<OPTION $sel10 VALUE='regular'>regular
-  #<OPTION $sel11 VALUE='Seasonal'>Seasonal
-  #</SELECT>
-  #PrintTag
+  #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
   #}
-  $sel1 = '';    #($date1 eq gettoday()) ? 'SELECTED' : '';
-  $sel2 = ($votive =~ /C8/) ? 'SELECTED' : '';
-  $sel3 = ($votive =~ /C9/) ? 'SELECTED' : '';
-  $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
-  my @languages = ('Latin', vernaculars($datafolder));
-  my $lang_count = @languages;
+  
+  print option_selector("lang2", "parchange();", $lang2, ('Latin', vernaculars($datafolder)));
+  print option_selector("Votive", "parchange();", $votive, ('Hodie;', 'Dedicatio;C8', 'Defunctorum;C9', 'Parvum B.M.V.;C12') );
   print << "PrintTag";
-&nbsp;&nbsp;&nbsp;
-<LABEL FOR=lang2 CLASS=offscreen>Language</LABEL>
-<SELECT ID=lang2 NAME=lang2 SIZE=$lang_count onchange="parchange()">
-PrintTag
-
-  foreach my $lang (@languages) {
-    my $sel = ($lang2 =~ /$lang/i) ? 'SELECTED' : '';
-    print qq(<OPTION $sel VALUE="$lang">$lang\n);
-  }
-  print << "PrintTag";
-</SELECT>
-&nbsp;&nbsp;&nbsp;
-<LABEL FOR=votive CLASS=offscreen>Votive</LABEL>
-<SELECT ID=votive NAME=votive SIZE=4 onclick="parchange()">
-<OPTION $sel1 VALUE='Hodie'>Hodie
-<OPTION $sel2 VALUE=C8>Dedication
-<OPTION $sel3 VALUE=C9>Defunctorum
-<OPTION $sel4 VALUE=C12>Parvum B.M.V.
-</SELECT>
 <BR>
 <P ALIGN=CENTER>
 <A HREF="officium.pl">One version</A>

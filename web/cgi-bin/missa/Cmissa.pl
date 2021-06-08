@@ -210,44 +210,11 @@ if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com
 PrintTag
 
 if ($command !~ /setup/i) {
-  print << "PrintTag";
-<P ALIGN=CENTER>
-&nbsp;&nbsp;&nbsp;
-PrintTag
-  my $vsize = @versions;
-  @chv = splice(@chv, @chv);
-  for ($i = 0; $i < @versions; $i++) { $chv[$i] = ($version1 =~ /$versions[$i]/) ? 'SELECTED' : ''; }
-  print "
-    <LABEL FOR=version1 CLASS=offscreen>Version 1</LABEL>
-    <SELECT ID=version1 NAME=version1 SIZE=$vsize onchange=\"parchange();\">\n
-  ";
-  for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
-  print "</SELECT>\n";
-  $chl11 = ($lang1 =~ /Latin/i) ? 'SELECTED' : '';
-  $chl12 = ($lang1 =~ /English/i) ? 'SELECTED' : '';
-  $chl21 = ($lang2 =~ /Latin/i) ? 'SELECTED' : '';
-  $chl22 = ($lang2 =~ /English/i) ? 'SELECTED' : '';
-  print << "PrintTag";
-&nbsp;&nbsp;&nbsp;
-<LABEL FOR=lang1 CLASS=offscreen>Language for Version 1</LABEL>
-<SELECT ID=lang1 NAME=lang1 SIZE=2 onclick="parchange()">
-<OPTION $chl11 VALUE='Latin'>Latin
-<OPTION $chl12 VALUE=English>English
-</SELECT>
-&nbsp;&nbsp;&nbsp;
-<LABEL FOR=lang2 CLASS=offscreen>Language for Version 2</LABEL>
-<SELECT ID=lang2 NAME=lang2 SIZE=2 onclick="parchange()">
-<OPTION $chl21 VALUE='Latin'>Latin
-<OPTION $chl22 VALUE='English'>English
-</SELECT>&nbsp;&nbsp;&nbsp;
-PrintTag
-  for ($i = 0; $i < @versions; $i++) { $chv[$i] = ($version2 =~ /$versions[$i]/) ? 'SELECTED' : ''; }
-  print "
-    <LABEL FOR=version2 CLASS=offscreen>Version 2</LABEL>
-    <SELECT ID=version2 NAME=version2 SIZE=$vsize onchange=\"parchange();\">\n
-  ";
-  for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
-  print "</SELECT>\n<BR>";
+  print "<P ALIGN=CENTER>";
+  print option_selector("Version 1", "parchange();", $version1, @versions );
+  print option_selector("lang1", "parchange();", $lang1, qw(Latin English));
+  print option_selector("lang2", "parchange();", $lang2, qw(Latin English));
+  print option_selector("Version 2", "parchange();", $version2, @versions );
 }
 
 if ($command =~ /setup(.*)/is) {
