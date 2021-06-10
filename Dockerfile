@@ -2,12 +2,15 @@ FROM        perl:5.28-slim
 MAINTAINER  Ben Yanke <ben@benyanke.com>
 
 # Set envs
-ENV APACHE_RUN_USER www-data \
-    APACHE_RUN_GROUP www-data \
-    APACHE_LOCK_DIR /var/lock/apache2 \
-    APACHE_LOG_DIR /var/log/apache2 \
-    APACHE_PID_FILE /var/run/apache2/apache2.pid \
-    APACHE_SERVER_NAME localhost
+ENV APACHE_RUN_USER www-data
+# These weren't originally set, commenting out for now
+#    APACHE_RUN_GROUP www-data \
+#    APACHE_LOCK_DIR /var/lock/apache2 \
+#    APACHE_LOG_DIR /var/log/apache2 \
+#    APACHE_PID_FILE /var/run/apache2/apache2.pid \
+#    APACHE_SERVER_NAME localhost
+
+ENV TZ America/Chicago
 
 # Install packages
 RUN apt-get update && apt-get install -y \
@@ -15,6 +18,7 @@ RUN apt-get update && apt-get install -y \
     wget \
     apache2 \
     libcgi-session-perl \
+    tzdata \
     && rm -rf /var/lib/apt/lists/*
 
 # Get dumb-init to use a proper init system
