@@ -51,23 +51,23 @@ cpan CGI::Session<BR>
 apt install python<BR>
 git clone https://github.com/divinumofficium/divinum-officium<BR><BR>
 Once the divinum-officium repository has been cloned using Git, the following terminal syntax may be used:<BR><BR>
-cd ~/divinum-officium/web && git pull && python -m CGIHTTPServer<BR><BR>
-Depending on the version of Python, one may need to use the syntax python -m http.server --cgi in order to start the server.<BR><BR>
+cd ~/divinum-officium && git pull && cd web && python -m CGIHTTPServer<BR><BR>
+Depending on the version of Python you are using, the syntax "python -m http.server --cgi" (without quotes) may need to be used instead in order to start the server.<BR><BR>
 One may also need to adjust the path to the directory, provided the path ends in divinum-officium/web.<BR><BR>
 Once the server is active and running in the terminal window, navigate to (typically) 0.0.0.0:8000 in your browser. Divinum Officium should then be functional as on the live site.<BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Apache</FONT></H3>
-If installing on a different server (e.g. Apache), Perl >= 5.10.1 is required, as are the following modules. (Perl 5.20.1 is recommended as it contains all necessary CGI packages.) CGI.pm can be obtained from your OS/Perl distribution or from CPAN.<BR><BR>
+If installing on a different server (e.g. Apache), Perl >= 5.10.1 is required, as are the modules CGI.pm and CGI::Session, which can be obtained from your OS/Perl distribution or from CPAN.<BR><BR>
 Your webserver must be configured to allow the execution of CGI scripts from web/cgi-bin/.<BR><BR>
 For Apache one way to achieve this is to use the following directives in a Directory element for that directory:<BR><BR>
   Options +ExecCGI<BR>
   AddHandler cgi-script .pl<BR><BR>
-This <a href=http://divinumofficium.com/www/horas/Help/httpd.conf>httpd.conf</a> file may prove useful on an Apache host; it is currently being used on a Mac OS 10.15 (Catalina). WARNING: Use at your own risk!<BR><BR>
+This <a href=http://divinumofficium.com/www/horas/Help/httpd.conf>httpd.conf</a> file may prove useful on an Apache host. WARNING: Use at your own risk!<BR><BR>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON>Hosting Locally: Docker</FONT></H3>
 
-If you are using a linux system, or another system supporting docker, Docker is by-far the easiest method. The latest updates to the application are built and pushed in realtime to Docker Hub tag <FONT COLOR=MAROON>divinumofficiumweb/divinumofficium:latest</FONT>, so you can pull and run this container image locally at any time.
+If you are using a system supporting Docker, this may be the easiest method. The latest updates to the application are built and pushed in realtime to Docker Hub tag <FONT COLOR=MAROON>divinumofficiumweb/divinumofficium:latest</FONT>, so you can pull and run this container image locally at any time.
 <BR><BR>
 
-If you're not sure how to begin, there is also a docker-compose file which wraps the needed docker commands for you. Installing docker and docker-compose are outside the scope of this guide.
+If you are not sure how to begin, there is also a docker-compose file which wraps the needed docker commands for you. Installing docker and docker-compose are outside the scope of this guide.
 
 <BR><BR>
 <FONT COLOR=MAROON>
