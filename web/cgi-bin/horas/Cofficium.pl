@@ -23,7 +23,7 @@ use Time::Local;
 #use DateTime;
 use locale;
 use lib "$Bin/..";
-use DivinumOfficium::Main qw(vernaculars load_versions);
+use DivinumOfficium::Main qw(vernaculars load_versions liturgical_color);
 $error = '';
 $debug = '';
 
@@ -187,15 +187,7 @@ our $psalmnum2 = 0;
 our $octavam = '';    #to avoid duplication of commemorations
 
 # prepare title
-$daycolor =
-    ($commune =~ /(C1[0-9])/) ? "blue"
-  : ($dayname[1] =~ /(Vigilia Pentecostes|Quattuor Temporum Pentecostes|Martyr)/i) ? "red"
-  : ($dayname[1] =~ /(Vigilia|Quattuor|Passionis|gesim|Hebdomadæ Sanctæ|Ciner|Adventus)/i) ? "purple"
-  : ($dayname[1] =~ /(Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Vigilia\ Nativitatis|Cena)/i) ? "black"
-  : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
-  : ($dayname[1] =~ /(Pentecostes|Evangel|Innocentium|Sanguinis|Cruc|Apostol)/i) ? "red"
-  : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
-  : "black";
+$daycolor = liturgical_color($dayname[1], $commune);
 build_comment_line();
 
 #prepare main pages
@@ -394,6 +386,14 @@ print << "PrintTag";
 </BODY></HTML>
 PrintTag
 
+sub liturgical_color2 {
+  my($_, $commune) = @_;
+  return 'blue' if ($commune =~ /C1[0-9]/);
+  return 'black' if (/(Quattuor|Feria|Vigilia)/i);
+  return 'red' if (/duplex/i);
+  return 'grey';
+}
+
 #*** hedline($head) prints headlibe for main and pray
 sub headline {
   my $head = shift;
@@ -401,11 +401,7 @@ sub headline {
   $version = $version1;
   setmdir($version);
   precedence();
-  $daycolor =
-      ($commune =~ /(C1[0-9])/) ? "blue"
-    : ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black"
-    : ($dayname[1] =~ /duplex/i) ? "red"
-    : "grey";
+  $daycolor = liturgical_color2($dayname[1], $commune);
   build_comment_line();
   $headline = setheadline();
   $headline =~ s{!(.*)}{$1</FONT>}s;
@@ -417,11 +413,7 @@ sub headline {
     $version = $version2;
     setmdir($version);
     precedence();
-    $daycolor =
-        ($commune =~ /(C1[0-9])/) ? "blue"
-      : ($dayname[1] =~ /duplex/i) ? "red"
-      : ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black"
-      : "grey";
+    $daycolor = liturgical_color2($dayname[1], $commune);
     build_comment_line();
     $headline = setheadline();
     $headline =~ s{!(.*)}{$1</FONT>}s;
