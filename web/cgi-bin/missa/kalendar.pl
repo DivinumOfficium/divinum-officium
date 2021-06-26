@@ -248,7 +248,15 @@ PrintTag
 print << "PrintTag";
 </TABLE><BR>
 PrintTag
-print option_selector("Version", "document.forms[0].submit();", $version, @versions );
+@chv = splice(@chv, @chv);
+for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'SELECTED' : ''; }
+my $vsize = @versions;
+print "
+  <LABEL FOR=version CLASS=offscreen>Version</LABEL>
+  <SELECT ID=version NAME=version SIZE=$vsize onchange=\"document.forms[0].submit();\">\n
+";
+for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
+print "</SELECT>\n";
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT><\P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT><\P>\n"; }
 print << "PrintTag";
