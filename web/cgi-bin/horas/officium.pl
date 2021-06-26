@@ -23,7 +23,7 @@ use Time::Local;
 #use DateTime;
 use locale;
 use lib "$Bin/..";
-use DivinumOfficium::Main qw(vernaculars);
+use DivinumOfficium::Main qw(vernaculars load_versions liturgical_color);
 $error = '';
 $debug = '';
 
@@ -34,8 +34,6 @@ our $notes = 0;
 our $missa = 0;
 our $officium = 'officium.pl';
 our $version = 'Rubrics 1960';
-
-@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', 'Ordo Praedicatorum', '1960 Newcalendar');
 
 #***common variables arrays and hashes
 #filled  getweek()
@@ -196,15 +194,7 @@ our $psalmnum2 = 0;
 our $octavam = '';    #to avoid duplication of commemorations
 
 # prepare title
-$daycolor =
-    ($commune =~ /(C1[0-9])/) ? "blue"
-  : ($dayname[1] =~ /(Vigilia Pentecostes|Quattuor Temporum Pentecostes|Martyr)/i) ? "red"
-  : ($dayname[1] =~ /(Vigilia|Quattuor|Passionis|gesim|Hebdomadæ Sanctæ|Ciner|Adventus)/i) ? "purple"
-  : ($dayname[1] =~ /(Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Cena)/i) ? "black"
-  : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
-  : ($dayname[1] =~ /(Pentecostes|Evangel|Innocentium|Sanguinis|Cruc|Apostol)/i) ? "red"
-  : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
-  : "black";
+$daycolor = liturgical_color($dayname[1], $commune);
 build_comment_line();
 
 #prepare main pages
@@ -357,105 +347,24 @@ PrintTag
 </I></P>
 PrintTag
     }
-    $ch1 = ($expand =~ /all/i) ? 'SELECTED' : '';
-    $ch2 = ($expand =~ /psalms/i) ? 'SELECTED' : '';
+    print "<P ALIGN=CENTER>";
+    print option_selector("Expand", "parchange();", $expand, qw(all psalms));
 
-    #  $ch3 = ($expand =~ /nothing/i) ? 'SELECTED' : '';
-    #  $ch4 = ($expand =~ /skeleton/i) ? 'SELECTED' : '';
-    @chv = splice(@chv, @chv);
-    if (-e "$Bin/monastic.pl") { unshift(@versions, 'Monastic'); }
-    for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'SELECTED' : ''; }
-    print << "PrintTag";
-<P ALIGN=CENTER>
-&nbsp;&nbsp;&nbsp;
-<LABEL FOR=expand CLASS=offscreen>Expand</LABEL>
-<SELECT ID=expand NAME=expand SIZE=2 onchange="parchange();">
-<OPTION $ch1 VALUE='all'>all
-<OPTION $ch2 VALUE='psalms'>psalms
-</SELECT>
-&nbsp;&nbsp;&nbsp;
-PrintTag
-    my $vsize = @versions;
-    print "<LABEL FOR=version CLASS=offscreen>Version</LABEL>";
-    print "<SELECT ID=version NAME=version SIZE=$vsize onchange=\"parchange();\">\n";
-    for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
-    print "</SELECT>\n";
-
+    @versions = load_versions($datafolder);
+    print option_selector("Version", "parchange();", $version, @versions );
+    #$testmode = 'Regular' unless $testmode;
     #if ($savesetup > 1) {
-    #my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
-    #my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
-    #my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
-    #my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
-    #my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
-    #  print << "PrintTag";
-    #&nbsp;&nbsp;&nbsp;
-    #<SELECT NAME=testmode SIZE=4 onchange="parchange();">
-    #<OPTION $sel10 VALUE='Regular'>Regular
-    #<OPTION $sel11 VALUE='Seasonal'>Seasonal
-    #<OPTION $sel12 VALUE='Season'>Season
-    #<OPTION $sel13 VALUE='Saint'>Saint
-    #<OPTION $sel14 VALUE='Common'>Common
-    #</SELECT>
-    #PrintTag
+    #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal Season Saint Common));
     #} else {
-    #my $sel10 = (!$testmode || $testmode =~ /Regular/i) ? 'SELECTED' : '';
-    #my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
-    #  print << "PrintTag";
-    #&nbsp;&nbsp;&nbsp;
-    #<SELECT NAME=testmode SIZE=2 onchange="parchange();">
-    #<OPTION $sel10 VALUE='Regular'>Regular
-    #<OPTION $sel11 VALUE='Seasonal'>Seasonal
-    #</SELECT>
-    #PrintTag
+    #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
     #}
-    $sel1 = '';    #($date1 eq gettoday()) ? 'SELECTED' : '';
-    $sel2 = ($votive =~ /C8/) ? 'SELECTED' : '';
-    $sel3 = ($votive =~ /C9/) ? 'SELECTED' : '';
-    $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
-    $addvotive =
-      ($version !~ /monastic/i)
-      ? "&nbsp;&nbsp;&nbsp;\n"
-      . "<LABEL FOR=votive CLASS=offscreen>Votive</LABEL>"
-      . "<SELECT ID=votive NAME=votive SIZE=4 onchange='parchange()'>\n"
-      . "<OPTION $sel1 VALUE='Hodie'>Hodie\n"
-      . "<OPTION $sel2 VALUE=C8>Dedicatio\n"
-      . "<OPTION $sel3 VALUE=C9>Defunctorum\n"
-      . "<OPTION $sel4 VALUE=C12>Parvum B.M.V.\n"
-      . "</SELECT>\n"
-      : '';
-
-    if (@local) {
-      my @lsel = splice(@lsel, @lsel);
-
-      for ($i = 0; $i < @local; $i++) {
-        $lsel[$i] = ($local[$i] =~ /$local/i) ? 'SELECTED' : '';
-      }
-      my $sizelocal = (@local > 7) ? 7 : @local;
-      $addlocal = "&nbsp;&nbsp;&nbsp;\n<SELECT NAME=local SIZE=$sizelocal onchange='parchange()'>\n";
-
-      for ($i = 0; $i < @local; $i++) {
-        $addlocal .= "<OPTION $lsel[$i] VALUE=$local[$i]>$local[$i]\n";
-      }
-      $addlocal .= "</SELECT>\n";
+    print option_selector("lang2", "parchange();", $lang2, ('Latin', vernaculars($datafolder)));
+    if ($version !~ /monastic/i) {
+      print option_selector("Votive", "parchange();", $votive, ('Hodie;', 'Dedicatio;C8', 'Defunctorum;C9', 'Parvum B.M.V.;C12') );
     }
-    my @languages = ('Latin', vernaculars($datafolder));
-    my $lang_count = @languages;
-    my $vers = $version;
-    $vers =~ s/ /_/g;
+    print option_selector("local", "parchange();", $local, @local ) if (@local);
     print << "PrintTag";
-&nbsp;&nbsp;&nbsp;
-<LABEL FOR=lang2 CLASS=offscreen>Language</LABEL>
-<SELECT ID=lang2 NAME=lang2 SIZE=$lang_count onchange="parchange()">
-PrintTag
-
-    foreach my $lang (@languages) {
-      my $sel = ($lang2 =~ /$lang/i) ? 'SELECTED' : '';
-      print qq(<OPTION $sel VALUE="$lang">$lang\n);
-    }
-    print << "PrintTag";
-</SELECT>
-$addvotive
-$addlocal<BR>
+<BR>
 <P ALIGN=CENTER><FONT SIZE=+1>
 <A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
 &nbsp;&nbsp;&nbsp;&nbsp;
