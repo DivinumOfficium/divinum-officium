@@ -22,8 +22,6 @@ use Time::Local;
 
 #use DateTime;
 use locale;
-use lib "$Bin/..";
-use DivinumOfficium::Main qw(load_versions);
 $error = '';
 $debug = '';
 
@@ -108,7 +106,15 @@ if ($officium =~ /brevi/) {
   @versions = ($version);
 } else {
   $version = strictparam('version');
-  @versions = load_versions($datafolder);
+  @versions = (
+    'Monastic',
+    'Tridentine 1570',
+    'Tridentine 1910',
+    'Divino Afflatu',
+    'Reduced 1955',
+    'Rubrics 1960',
+    '1960 Newcalendar'
+  );
 }
 if (!$version) { $version = ($version1) ? $version1 : 'Rubrics 1960'; }
 setmdir($version);
@@ -256,7 +262,15 @@ PrintTag
 print << "PrintTag";
 </TABLE><BR>
 PrintTag
-print option_selector("Version", "document.forms[0].submit();", $version, @versions );
+@chv = splice(@chv, @chv);
+for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'SELECTED' : ''; }
+my $vsize = @versions;
+print "
+  <LABEL FOR=version CLASS=offscreen>Version</LABEL>
+  <SELECT ID=version NAME=version SIZE=$vsize onchange=\"document.forms[0].submit();\">\n
+";
+for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
+print "</SELECT>\n";
 print << "PrintTag";
 <P ALIGN=CENTER>
 <A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
@@ -274,8 +288,17 @@ print << "PrintTag";
 </P>
 PrintTag
 
-# $testmode = 'Regular' unless $testmode;
-# print option_selector("testmode", "document.forms[0].submit();", $testmode, qw(Regular Seasonal));
+#  my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+#  my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
+#  my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
+#  print << "PrintTag";
+#&nbsp;&nbsp;&nbsp;
+#<SELECT NAME=testmode SIZE=3 onclick=\"document.forms[0].submit();\">
+#<OPTION $sel10 VALUE='regular'>regular
+#<OPTION $sel12 VALUE='Season'>Season
+#<OPTION $sel13 VALUE='Saint'>Saint
+#</SELECT>
+#PrintTag
 if ($savesetup > 1) { print "&nbsp;&nbsp;&nbsp;<A HREF=# onclick=\"readings();\">Readings</A>"; }
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }

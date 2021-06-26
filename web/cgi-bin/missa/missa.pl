@@ -24,7 +24,7 @@ use Time::Local;
 #use DateTime;
 use locale;
 use lib "$Bin/..";
-use DivinumOfficium::Main qw(vernaculars liturgical_color);
+use DivinumOfficium::Main qw(vernaculars);
 $error = '';
 $debug = '';
 
@@ -174,7 +174,15 @@ $setupsave =~ s/\"/\~24/g;
 precedence();    #fills our hashes et variables
 
 # prepare title
-$daycolor = liturgical_color($dayname[1], $commune);
+$daycolor =
+    ($commune =~ /(C1[0-9])/) ? "blue"
+  : ($dayname[1] =~ /(Vigilia Pentecostes|Quattuor Temporum Pentecostes|Martyr)/i) ? "red"
+  : ($dayname[1] =~ /(Vigilia|Quattuor|Passionis|gesim|Hebdomadæ Sanctæ|Ciner|Adventus)/i) ? "purple"
+  : ($dayname[1] =~ /(Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Cena)/i) ? "black"
+  : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
+  : ($dayname[1] =~ /(Pentecostes|Evangel|Innocentium|Sanguinis|Cruc|Apostol)/i) ? "red"
+  : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
+  : "black";
 build_comment_line();
 
 #prepare main pages
@@ -244,26 +252,78 @@ print << "PrintTag";
 </I></P>
 <P ALIGN=CENTER>
 PrintTag
+$vsize = @versions;
+print "
+  <LABEL FOR=version CLASS=offscreen>Version</LABEL>
+  <SELECT ID=version NAME=version SIZE=$vsize onchange=\"parchange();\">\n
+";
+for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
+print "</SELECT>\n";
 
-print option_selector("Version", "parchange();", $version, @versions );
-
-#$testmode = 'Regular' unless $testmode;
 #if ($savesetup > 1) {
-#  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal Season Saint Common));
+#my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+#my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
+#my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
+#my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
+#  print << "PrintTag";
+#&nbsp;&nbsp;&nbsp;
+#<SELECT NAME=testmode SIZE=4 onchange="parchange();">
+#<OPTION $sel10 VALUE='regular'>regular
+#<OPTION $sel11 VALUE='Seasonal'>Seasonal
+#<OPTION $sel12 VALUE='Season'>Season
+#<OPTION $sel13 VALUE='Saint'>Saint
+#</SELECT>
+#PrintTag
 #} else {
-#  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
+#my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+#my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
+#  print << "PrintTag";
+#&nbsp;&nbsp;&nbsp;
+#<SELECT NAME=testmode SIZE=2 onchange="parchange();">
+#<OPTION $sel10 VALUE='regular'>regular
+#<OPTION $sel11 VALUE='Seasonal'>Seasonal
+#</SELECT>
+#PrintTag
 #}
-my $propname = ($Propers) ? 'Full' : 'Propers';
-print option_selector("lang2", "parchange();", $lang2, ('Latin', vernaculars($datafolder)));
-@votive = ('Hodie;');
+@sel = ();
+@votive = ('Hodie');
+
 if (opendir(DIR, "$datafolder/Latin/Votive")) {
   @a = sort readdir(DIR);
   closedir DIR;
-  foreach (@a) { push(@votive, $_) if (s/\.txt//i); }
+  my $item;
+
+  foreach $item (@a) {
+    if ($item =~ /\.txt/i) { $item =~ s/\.txt//i; push(@votive, $item); }
+  }
 }
-print option_selector("Votive", "parchange();", $votive, @votive );
+$sel[0] = '';
+for ($i = 1; $i < @votive; $i++) { $sel[$i] = ($votive =~ $votive[$i]) ? 'SELECTED' : ''; }
+$osize = (@votive > $vsize) ? $vsize : @votive;
+$addvotive = "
+  &nbsp;&nbsp;&nbsp;\n
+  <LABEL FOR=votive CLASS=offscreen>Votive</LABEL>
+  <SELECT ID=votive NAME=votive SIZE=$osize onchange=\"parchange()\">\n
+";
+for ($i = 0; $i < @votive; $i++) { $addvotive .= "<OPTION $sel[$i] VALUE=\"$votive[$i]\">$votive[$i]\n"; }
+$addvotive .= "</SELECT>\n";
+my @languages = ('Latin', vernaculars($datafolder));
+my $lang_count = @languages;
+my $vers = $version;
+$vers =~ s/ /_/g;
+my $propname = ($Propers) ? 'Full' : 'Propers';
 print << "PrintTag";
-</P>
+&nbsp;&nbsp;&nbsp;
+<LABEL FOR=lang2 CLASS=offscreen>Language</LABEL>
+<SELECT ID=lang2 NAME=lang2 SIZE="$lang_count" onchange="parchange()">
+PrintTag
+foreach my $lang (@languages) {
+  my $sel = ($lang2 =~ /$lang/i) ? 'SELECTED' : '';
+  print qq(<OPTION $sel VALUE="$lang">$lang</OPTION>);
+}
+print << "PrintTag";
+</SELECT>
+$addvotive</P>
 <P ALIGN=CENTER><FONT SIZE=+1>
 PrintTag
 print << "PrintTag";
