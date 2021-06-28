@@ -387,8 +387,9 @@ print << "PrintTag";
 PrintTag
 
 sub liturgical_color2 {
-  my($_, $commune) = @_;
-  return 'blue' if ($commune =~ /C1[0-9]/);
+  $_ = shift;
+  my($commune) = @_;
+  return 'blue' if ($commune && $commune =~ /C1[0-9]/);
   return 'black' if (/(Quattuor|Feria|Vigilia)/i);
   return 'red' if (/duplex/i);
   return 'grey';

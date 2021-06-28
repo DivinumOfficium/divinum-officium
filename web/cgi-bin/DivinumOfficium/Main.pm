@@ -27,8 +27,9 @@ sub load_versions {
 }
 
 sub liturgical_color {
-  my($_, $commune) = @_;
-  return 'blue' if ($commune =~ /(C1[0-9])/);
+  $_ = shift;
+  my($commune) = @_;
+  return 'blue' if ($commune && $commune =~ /(C1[0-9])/);
   return 'red' if (/(Vigilia Pentecostes|Quattuor Temporum Pentecostes|Martyr)/i);
   return 'purple' if (/(Vigilia|Quattuor|Passionis|gesim|Hebdomadæ Sanctæ|Ciner|Adventus)/i);
   return 'black' if (/(Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Cena)/i);
