@@ -22,8 +22,6 @@ use Time::Local;
 
 #use DateTime;
 use locale;
-use lib "$Bin/..";
-use DivinumOfficium::Main qw(load_versions);
 $error = '';
 $debug = '';
 
@@ -106,6 +104,7 @@ if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completo
 }
 $version1 = strictparam('version1');
 $version2 = strictparam('version2');
+@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
 if (!$version1) { $version1 = 'Divino Afflatu'; }
 if (!$version2) { $version2 = 'Rubrics 1960'; }
 $testmode = strictparam('testmode');
@@ -292,10 +291,31 @@ PrintTag
 print << "PrintTag";
 </TABLE><BR>
 PrintTag
-@versions = load_versions($datafolder);
-print option_selector("Version1", "document.forms[0].submit();", $version1, @versions );
+@chv = splice(@chv, @chv);
+
+for ($i = 0; $i < @versions; $i++) {
+  $chv[$i] = ($version1 =~ /$versions[$i]/) ? 'SELECTED' : '';
+}
+my $vsize = @versions;
+print "<LABEL CLASS=offscreen FOR=version1>Version 1</LABEL><SELECT ID=version1 NAME=version1 SIZE=$vsize onchange=\"document.forms[0].submit();\">\n";
+
+for ($i = 0; $i < @versions; $i++) {
+  print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";
+}
+print "</SELECT>\n";
 print "&nbsp;&nbsp;&nbsp;";
-print option_selector("Version2", "document.forms[0].submit();", $version2, @versions );
+@chv = splice(@chv, @chv);
+
+for ($i = 0; $i < @versions; $i++) {
+  $chv[$i] = ($version2 =~ /$versions[$i]/) ? 'SELECTED' : '';
+}
+my $vsize = @versions;
+print "<LABEL CLASS=offscreen FOR=version2>Version 2</LABEL><SELECT ID=version2 NAME=version2 SIZE=$vsize onchange=\"document.forms[0].submit();\">\n";
+
+for ($i = 0; $i < @versions; $i++) {
+  print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";
+}
+print "</SELECT>\n";
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
 print << "PrintTag";

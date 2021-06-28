@@ -23,7 +23,7 @@ use Time::Local;
 #use DateTime;
 use locale;
 use lib "$Bin/..";
-use DivinumOfficium::Main qw(vernaculars load_versions liturgical_color);
+use DivinumOfficium::Main qw(vernaculars);
 $error = '';
 $debug = '';
 
@@ -38,6 +38,9 @@ our $officium = 'Cofficium.pl';
 our $version1 = 'Divino Afflatu';
 our $version2 = 'Rubrics 1960';
 our $version = '';
+
+@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
+if (-e "$Bin/monastic.pl") { unshift(@versions, 'Monastic'); }
 
 #***common variables arrays and hashes
 #filled  getweek()
@@ -187,7 +190,15 @@ our $psalmnum2 = 0;
 our $octavam = '';    #to avoid duplication of commemorations
 
 # prepare title
-$daycolor = liturgical_color($dayname[1], $commune);
+$daycolor =
+    ($commune =~ /(C1[0-9])/) ? "blue"
+  : ($dayname[1] =~ /(Vigilia Pentecostes|Quattuor Temporum Pentecostes|Martyr)/i) ? "red"
+  : ($dayname[1] =~ /(Vigilia|Quattuor|Passionis|gesim|Hebdomadæ Sanctæ|Ciner|Adventus)/i) ? "purple"
+  : ($dayname[1] =~ /(Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Vigilia\ Nativitatis|Cena)/i) ? "black"
+  : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
+  : ($dayname[1] =~ /(Pentecostes|Evangel|Innocentium|Sanguinis|Cruc|Apostol)/i) ? "red"
+  : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
+  : "black";
 build_comment_line();
 
 #prepare main pages
@@ -286,8 +297,6 @@ PrintTag
 PrintTag
 }
 
-@versions = load_versions($datafolder);
-
 #common widgets for main and hora
 if ($pmode =~ /(main|hora)/i) {
   if ($votive ne 'C9') {
@@ -322,21 +331,106 @@ PrintTag
 </I></P>
 PrintTag
   }
-  print "<P ALIGN=CENTER>";
-  print option_selector("Expand", "parchange();", $expand, qw(all psalms)); # old qw(all psalms nothing skeleton));
-  print option_selector("Version 1", "parchange();", $version1, @versions );
-  print option_selector("Version 2", "parchange();", $version2, @versions );
+  $ch1 = ($expand =~ /all/i) ? 'SELECTED' : '';
+  $ch2 = ($expand =~ /psalms/i) ? 'SELECTED' : '';
 
-  #$testmode = 'Regular' unless $testmode;
-  #if ($savesetup > 1) {
-  #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal Season Saint Common));
-  #} else {
-  #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
-  #}
-  
-  print option_selector("lang2", "parchange();", $lang2, ('Latin', vernaculars($datafolder)));
-  print option_selector("Votive", "parchange();", $votive, ('Hodie;', 'Dedicatio;C8', 'Defunctorum;C9', 'Parvum B.M.V.;C12') );
+  #  $ch3 = ($expand =~ /nothing/i) ? 'SELECTED' : '';
+  #  $ch4 = ($expand =~ /skeleton/i) ? 'SELECTED' : '';
+  @chv1 = splice(@chv, @chv);
+
+  for ($i = 0; $i < @versions; $i++) {
+    $chv1[$i] = ($version1 =~ /$versions[$i]/) ? 'SELECTED' : '';
+  }
+  @chv2 = splice(@chv, @chv);
+
+  for ($i = 0; $i < @versions; $i++) {
+    $chv2[$i] = ($version2 =~ /$versions[$i]/) ? 'SELECTED' : '';
+  }
   print << "PrintTag";
+<P ALIGN=CENTER>
+&nbsp;&nbsp;&nbsp;
+<LABEL FOR=expand CLASS=offscreen>Expand</LABEL>
+<SELECT ID=expand NAME=expand SIZE=2 onchange="parchange();">
+<OPTION $ch1 VALUE='all'>all
+<OPTION $ch2 VALUE='psalms'>psalms
+</SELECT>
+&nbsp;&nbsp;&nbsp;
+PrintTag
+  my $vsize = @versions;
+  print "
+    <LABEL FOR=version1 CLASS=offscreen>Version 2</LABEL>
+    <SELECT ID=version1 NAME=version1 SIZE=$vsize onchange=\"parchange();\">\n
+  ";
+
+  for ($i = 0; $i < @versions; $i++) {
+    print "<OPTION $chv1[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";
+  }
+  print "</SELECT>\n";
+  print "
+    <LABEL FOR=version2 CLASS=offscreen>Version 2</LABEL>
+    <SELECT ID=version2 NAME=version2 SIZE=$vsize onchange=\"parchange();\">\n
+  ";
+
+  for ($i = 0; $i < @versions; $i++) {
+    print "<OPTION $chv2[$i] VALUE=\"$versions[$i]\">$versions[$i]\n";
+  }
+  print "</SELECT>\n";
+
+  #if ($savesetup > 1) {
+  #my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+  #my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
+  #my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
+  #my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
+  #my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
+  #  print << "PrintTag";
+  #&nbsp;&nbsp;&nbsp;
+  #<A HREF=# onclick="callkalendar();">Kalendarium</A>
+  #&nbsp;&nbsp;&nbsp;
+  #<SELECT NAME=testmode SIZE=4 onclick="parchange();">
+  #<OPTION $sel10 VALUE='regular'>regular
+  #<OPTION $sel11 VALUE='Seasonal'>Seasonal
+  #<OPTION $sel12 VALUE='Season'>Season
+  #<OPTION $sel13 VALUE='Saint'>Saint
+  #<OPTION $sel14 VALUE='Common'>Common
+  #</SELECT>
+  #PrintTag
+  #} else {
+  #my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+  #my $sel11 = ($testmode =~ /Seasonal/i) ? 'SELECTED' : '';
+  #  print << "PrintTag";
+  #&nbsp;&nbsp;&nbsp;
+  #<SELECT NAME=testmode SIZE=2 onclick="parchange();">
+  #<OPTION $sel10 VALUE='regular'>regular
+  #<OPTION $sel11 VALUE='Seasonal'>Seasonal
+  #</SELECT>
+  #PrintTag
+  #}
+  $sel1 = '';    #($date1 eq gettoday()) ? 'SELECTED' : '';
+  $sel2 = ($votive =~ /C8/) ? 'SELECTED' : '';
+  $sel3 = ($votive =~ /C9/) ? 'SELECTED' : '';
+  $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
+  my @languages = ('Latin', vernaculars($datafolder));
+  my $lang_count = @languages;
+  print << "PrintTag";
+&nbsp;&nbsp;&nbsp;
+<LABEL FOR=lang2 CLASS=offscreen>Language</LABEL>
+<SELECT ID=lang2 NAME=lang2 SIZE=$lang_count onchange="parchange()">
+PrintTag
+
+  foreach my $lang (@languages) {
+    my $sel = ($lang2 =~ /$lang/i) ? 'SELECTED' : '';
+    print qq(<OPTION $sel VALUE="$lang">$lang\n);
+  }
+  print << "PrintTag";
+</SELECT>
+&nbsp;&nbsp;&nbsp;
+<LABEL FOR=votive CLASS=offscreen>Votive</LABEL>
+<SELECT ID=votive NAME=votive SIZE=4 onclick="parchange()">
+<OPTION $sel1 VALUE='Hodie'>Hodie
+<OPTION $sel2 VALUE=C8>Dedication
+<OPTION $sel3 VALUE=C9>Defunctorum
+<OPTION $sel4 VALUE=C12>Parvum B.M.V.
+</SELECT>
 <BR>
 <P ALIGN=CENTER>
 <A HREF="officium.pl">One version</A>
@@ -386,15 +480,6 @@ print << "PrintTag";
 </BODY></HTML>
 PrintTag
 
-sub liturgical_color2 {
-  $_ = shift;
-  my($commune) = @_;
-  return 'blue' if ($commune && $commune =~ /C1[0-9]/);
-  return 'black' if (/(Quattuor|Feria|Vigilia)/i);
-  return 'red' if (/duplex/i);
-  return 'grey';
-}
-
 #*** hedline($head) prints headlibe for main and pray
 sub headline {
   my $head = shift;
@@ -402,7 +487,11 @@ sub headline {
   $version = $version1;
   setmdir($version);
   precedence();
-  $daycolor = liturgical_color2($dayname[1], $commune);
+  $daycolor =
+      ($commune =~ /(C1[0-9])/) ? "blue"
+    : ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black"
+    : ($dayname[1] =~ /duplex/i) ? "red"
+    : "grey";
   build_comment_line();
   $headline = setheadline();
   $headline =~ s{!(.*)}{$1</FONT>}s;
@@ -414,7 +503,11 @@ sub headline {
     $version = $version2;
     setmdir($version);
     precedence();
-    $daycolor = liturgical_color2($dayname[1], $commune);
+    $daycolor =
+        ($commune =~ /(C1[0-9])/) ? "blue"
+      : ($dayname[1] =~ /duplex/i) ? "red"
+      : ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black"
+      : "grey";
     build_comment_line();
     $headline = setheadline();
     $headline =~ s{!(.*)}{$1</FONT>}s;
