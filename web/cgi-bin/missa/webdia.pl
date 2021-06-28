@@ -592,3 +592,17 @@ sub htmlcall {
 
   #return "<A HREF=# onclick=callpopup(\"$ref\");>$ref</A>\n";
 }
+
+# duplicate code from ../horas/webdia.pl
+sub option_selector {
+  my ($label, $onchange, $default, @options) = @_;
+  my $id = $label; $id =~ s/\s+//g; $id = lc($id);
+  my $output = "&nbsp;&nbsp;&nbsp;<LABEL FOR=$id CLASS=offscreen>$label</LABEL>\n";
+  $output .= sprintf("<SELECT ID=%s NAME=%s SIZE=%d onchange=\"%s\">\n", $id, $id, @options + 0, $onchange);
+  foreach (@options) {
+    my($display, $value) = split(/;/);
+    $value = $display unless $value;
+    $output .= sprintf("<OPTION %s VALUE=\"%s\">%s\n", ($value eq $default)?'SELECTED':'', $value, $display);
+  }
+  return $output . "</SELECT>\n"
+}

@@ -1012,7 +1012,7 @@ sub precedence {
       : '';
     if ($vtv !~ /(C8|C9|C12)/) { $votive = ''; }
   } else {
-    $vtv = $votive;
+    $vtv = $votive unless ($votive eq 'Hodie');
   }
 
   if ($date1) {
