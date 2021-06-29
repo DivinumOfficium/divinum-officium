@@ -91,31 +91,15 @@ Tradent enim vos * in concíliis, et in synagógis suis flagellábunt vos, et an
 [Invit]
 Regem Apostolórum Dóminum, * Veníte adorémus.
 
-[HymnusM Matutinum]
-v. Ætérna Christi múnera,
-Apostolórum glóriam,
-Laudes canéntes débitas
-Lætis canámus méntibus.
-_
-Ecclesiárum Príncipes,
-Belli triumpháles Duces,
-Cæléstis aulæ mílites,
-Et vera mundi lúmina.
-_
-Devóta Sanctórum fides,
-Invícta spes credéntium,
-Perfécta Christi cáritas
-Mundi triúmphat príncipem.
-_
-In his Patérna glória,
-In his volúntas Spíritus,
-Exsúltat in his Fílius,
-Cælum replétur gáudio.
-_
+[HymnusMMatutinumUS]
 Te nunc, Redémptor, quǽsumus,
 Ut ipsórum consórtio
-Iungas precántes sérvulos
+Jungas precántes sérvulos
 In sempitérna sǽcula.
+
+[HymnusM Matutinum]
+@:Hymnus Matutinum:s/Palmas et hymnos débitos/Laudes canéntes débitas/ s/tyránnum cónterit/triúmphat príncipem/ s/In his triúmphat Fílius,.(.*?Spíritus,)/$1\nExsúltat in his Fílius,/s s/\*.*//s
+@:HymnusMMatutinumUS
 Amen.
 
 [Hymnus Matutinum]
