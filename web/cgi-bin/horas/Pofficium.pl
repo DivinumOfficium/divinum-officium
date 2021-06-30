@@ -23,7 +23,7 @@ use Time::Local;
 #use DateTime;
 use locale;
 use lib "$Bin/..";
-use DivinumOfficium::Main qw(vernaculars);
+use DivinumOfficium::Main qw(vernaculars load_versions liturgical_color);
 $error = '';
 $debug = '';
 
@@ -32,8 +32,6 @@ our $Hk = 0;
 our $Ck = 0;
 our $officium = 'Pofficium.pl';
 our $version = 'Rubrics 1960';
-
-@versions = ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', 'Ordo Praedicatorum', '1960 Newcalendar');
 
 #***common variables arrays and hashes
 #filled  getweek()
@@ -186,15 +184,7 @@ our $psalmnum1 = 0;
 our $psalmnum2 = 0;
 
 # prepare title
-$daycolor =
-    ($commune =~ /(C1[0-9])/) ? "blue"
-  : ($dayname[1] =~ /(Vigilia Pentecostes|Quattuor Temporum Pentecostes|Martyr)/i) ? "red"
-  : ($dayname[1] =~ /(Vigilia|Quattuor|Passionis|gesim|Hebdomadæ Sanctæ|Ciner|Adventus)/i) ? "purple"
-  : ($dayname[1] =~ /(Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Cena)/i) ? "black"
-  : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
-  : ($dayname[1] =~ /(Pentecostes|Evangel|Innocentium|Sanguinis|Cruc|Apostol)/i) ? "red"
-  : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
-  : "black";
+$daycolor = liturgical_color($dayname[1], $commune);
 build_comment_line();
 
 #prepare main pages
@@ -310,7 +300,7 @@ PrintTag
 PrintTag
   }
   @chv = splice(@chv, @chv);
-  if (-e "$Bin/monastic.pl") { unshift(@versions, 'Monastic'); }
+  @versions = load_versions($datafolder);
   for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'red' : 'blue'; }
   my $vsize = @versions;
   print "<TABLE ALIGN=CENTER BORDER=1><TR><TD ALIGN=CENTER>\n";
