@@ -96,21 +96,21 @@ $command = strictparam('command');
 if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Past)/i) { $command = "pray$1"; }
 
 if ($officium =~ /brevi/) {
-  $version = 'Divino Afflatu';
+  $version = 'Rubrics 1960';
   @versions = ($version);
 } else {
   $version = strictparam('version');
   @versions = (
-    'pre Trident Monastic',
-    'Trident 1570',
-    'Trident 1910',
+    'Monastic',
+    'Tridentine 1570',
+    'Tridentine 1910',
     'Divino Afflatu',
     'Reduced 1955',
     'Rubrics 1960',
     '1960 Newcalendar'
   );
 }
-if (!$version) { $version = ($version1) ? $version1 : 'Divino Afflatu'; }
+if (!$version) { $version = ($version1) ? $version1 : 'Rubrics 1960'; }
 setmdir($version);
 $testmode = strictparam('testmode');
 $kmonth = strictparam('kmonth');
@@ -254,6 +254,9 @@ if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT><\P>\n"; }
 print << "PrintTag";
 </FORM>
 </BODY></HTML>
+PrintTag
+print << "PrintTag";
+<P ALIGN=CENTER><A HREF="Ckalendar.pl">Compare Calendars</A>
 PrintTag
 
 #*** horasjs()
