@@ -23,6 +23,7 @@ use Time::Local;
 
 #use DateTime;
 use locale;
+use lib "$Bin/..";
 use DivinumOfficium::Main qw(liturgical_color);
 $error = '';
 $debug = '';
