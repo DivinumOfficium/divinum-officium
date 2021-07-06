@@ -23,6 +23,8 @@ use Time::Local;
 
 #use DateTime;
 use locale;
+use lib "$Bin/..";
+use DivinumOfficium::Main qw(liturgical_color);
 $error = '';
 $debug = '';
 
@@ -174,15 +176,7 @@ our $psalmnum1 = 0;
 our $psalmnum2 = 0;
 
 # prepare title
-$daycolor =
-    ($commune =~ /(C1[0-9])/) ? "blue"
-  : ($dayname[1] =~ /(Vigilia Pentecostes|Quattuor Temporum Pentecostes|Martyr)/i) ? "red"
-  : ($dayname[1] =~ /(Vigilia|Quattuor|Passionis|gesim|Hebdomadæ Sanctæ|Ciner|Adventus)/i) ? "purple"
-  : ($dayname[1] =~ /(Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Cena)/i) ? "black"
-  : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
-  : ($dayname[1] =~ /(Pentecostes|Evangel|Innocentium|Sanguinis|Cruc|Apostol)/i) ? "red"
-  : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
-  : "black";
+$daycolor = liturgical_color($dayname[1], $commune);
 build_comment_line();
 
 #prepare main pages
@@ -210,44 +204,11 @@ if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com
 PrintTag
 
 if ($command !~ /setup/i) {
-  print << "PrintTag";
-<P ALIGN=CENTER>
-&nbsp;&nbsp;&nbsp;
-PrintTag
-  my $vsize = @versions;
-  @chv = splice(@chv, @chv);
-  for ($i = 0; $i < @versions; $i++) { $chv[$i] = ($version1 =~ /$versions[$i]/) ? 'SELECTED' : ''; }
-  print "
-    <LABEL FOR=version1 CLASS=offscreen>Version 1</LABEL>
-    <SELECT ID=version1 NAME=version1 SIZE=$vsize onchange=\"parchange();\">\n
-  ";
-  for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
-  print "</SELECT>\n";
-  $chl11 = ($lang1 =~ /Latin/i) ? 'SELECTED' : '';
-  $chl12 = ($lang1 =~ /English/i) ? 'SELECTED' : '';
-  $chl21 = ($lang2 =~ /Latin/i) ? 'SELECTED' : '';
-  $chl22 = ($lang2 =~ /English/i) ? 'SELECTED' : '';
-  print << "PrintTag";
-&nbsp;&nbsp;&nbsp;
-<LABEL FOR=lang1 CLASS=offscreen>Language for Version 1</LABEL>
-<SELECT ID=lang1 NAME=lang1 SIZE=2 onclick="parchange()">
-<OPTION $chl11 VALUE='Latin'>Latin
-<OPTION $chl12 VALUE=English>English
-</SELECT>
-&nbsp;&nbsp;&nbsp;
-<LABEL FOR=lang2 CLASS=offscreen>Language for Version 2</LABEL>
-<SELECT ID=lang2 NAME=lang2 SIZE=2 onclick="parchange()">
-<OPTION $chl21 VALUE='Latin'>Latin
-<OPTION $chl22 VALUE='English'>English
-</SELECT>&nbsp;&nbsp;&nbsp;
-PrintTag
-  for ($i = 0; $i < @versions; $i++) { $chv[$i] = ($version2 =~ /$versions[$i]/) ? 'SELECTED' : ''; }
-  print "
-    <LABEL FOR=version2 CLASS=offscreen>Version 2</LABEL>
-    <SELECT ID=version2 NAME=version2 SIZE=$vsize onchange=\"parchange();\">\n
-  ";
-  for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
-  print "</SELECT>\n<BR>";
+  print "<P ALIGN=CENTER>";
+  print option_selector("Version 1", "parchange();", $version1, @versions );
+  print option_selector("lang1", "parchange();", $lang1, qw(Latin English));
+  print option_selector("lang2", "parchange();", $lang2, qw(Latin English));
+  print option_selector("Version 2", "parchange();", $version2, @versions );
 }
 
 if ($command =~ /setup(.*)/is) {
@@ -341,14 +302,7 @@ PrintTag
 sub headline {
   my $head = shift;
   my $width = ($only) ? 100 : 50;
-  $daycolor =
-    ($commune =~ /(C1[0-9])/) ? "blue"
-  : ($dayname[1] =~ /(Cathedra|oann|Pasch|Confessor|Vigilia Nativitatis|Cena)/i) ? "black"
-  : ($dayname[1] =~ /(Pentecosten|Epiphaniam|post octavam)/i) ? "green"
-  : ($dayname[1] =~ /(Pentecostes|Martyr|Innocentium|Cruc|Apostol)/i) ? "red"
-  : ($dayname[1] =~ /(Defunctorum|Parasceve|Morte)/i) ? "grey"
-  : ($dayname[1] =~ /(Quattuor|Vigilia|Passionis|Quadragesima|Hebdomadæ Sanctæ|Septuagesim|Sexagesim|Quinquagesim|Ciner|Adventus)/i) ? "purple"
-  : "black";
+  $daycolor = liturgical_color($dayname[1], $commune);
   $comment = '';
   $headline = setheadline();
   $headline =~ s{!(.*)}{$1}s;
