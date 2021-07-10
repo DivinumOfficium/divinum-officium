@@ -120,12 +120,7 @@ R. Thou hast borne him who created thee, and thou abidest a virgin for ever.
 &teDeum
 
 [Responsory3]
-R. O holy Virgin Mary, happy indeed art thou, and right worthy of all praise
-* For out of thee rose the Sun of righteousness, even Christ our God.
-V. Pray for the people, plead for the clergy, make intercession for all women vowed to God. Let all that are making this holy memorial of thee feel the might of thine assistance.
-R. For out of thee rose the Sun of righteousness
-&Gloria
-R. Even Christ our God.
+@Commune/C11:Responsory7:s/May all that are keeping this thine holy Feast day/Let all that are making this holy memorial of thee/ s/(R. For out of thee rose the Sun of righteousness), (even Christ our God.)/$1.\n&Gloria\nR. \u$2/
 
 [Ant Laudes]
 Mary hath been taken to heaven; * the Angels rejoice; they praise and bless the Lord.

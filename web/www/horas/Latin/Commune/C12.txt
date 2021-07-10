@@ -128,12 +128,7 @@ R. Genuisti qui te fecit, et in aeternum permanes Virgo.
 &teDeum
 
 [Responsory3]
-R. Felix namque es, sacra Virgo Maria, et omni laude dignissima:
-* Quia ex te ortus est sol justitiae, * Christus Deus noster.
-V. Ora pro populo, interveni pro clero, intercede pro devoto femineo sexu: sentiant omnes tuum juvamen, quicumque celebrant tuam sanctam commemorationem.
-R. Quia ex te ortus est sol justitiae.
-&Gloria
-R. Christus Deus noster.
+@Commune/C11:Responsory7:s/festivitátem/commemoratiónem/ s/(R. Quia ex te ortus est sol justítiæ), (Christus, Deus noster.)/$1.\n&Gloria\nR. $2/
 
 [Ant Laudes]
 Assumpta est Maria in caelum: * gaudent Angeli, laudantes benedicunt Dominum.
