@@ -359,9 +359,7 @@ PrintTag
     #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
     #}
     print option_selector("lang2", "parchange();", $lang2, ('Latin', vernaculars($datafolder)));
-    if ($version !~ /monastic/i) {
-      print option_selector("Votive", "parchange();", $votive, ('Hodie;', 'Dedicatio;C8', 'Defunctorum;C9', 'Parvum B.M.V.;C12') );
-    }
+    print option_selector("Votive", "parchange();", $votive, ('Hodie;', 'Dedicatio;C8', 'Defunctorum;C9', 'Parvum B.M.V.;C12') );
     print option_selector("local", "parchange();", $local, @local ) if (@local);
     print << "PrintTag";
 <BR>
