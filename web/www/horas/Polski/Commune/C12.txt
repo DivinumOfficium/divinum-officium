@@ -109,12 +109,7 @@ R. Porodziłaś Tego, który Cię stworzył, i na wieki Dziewicą pozostałaś.
 &teDeum
 
 [Responsory3]
-R. Szczęśliwa jesteś, święta Panno Maryjo, i wszelkiej chwały najgodniejsza:
-* Bo z Ciebie wzeszło Słońce sprawiedliwości, Chrystus, Bóg nasz.
-V. Módl się za lud, wstawiaj się za klerem, przyczyń się za niewiastami Bogu poświęconemi: niechaj doznają Twego wsparcia wszyscy, którzy obchodzą świętą uroczystość Twoją.
-R. Bo z Ciebie wzeszło Słońce sprawiedliwości
-&Gloria
-R. Chrystus, Bóg nasz
+@Commune/C11:Responsory7:s/Twoją uroczystość/Twoje wspomnienie/ s/(R. Bo z Ciebie wzeszło Słońce sprawiedliwości), (Chrystus, Bóg nasz.)/$1.\n&Gloria\nR. $2/
 
 [Ant Laudes]
 Marja wzięta jest * do Nieba, radują się Aniołowie; wychwalając błogosławią Pana.
