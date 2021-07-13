@@ -1571,7 +1571,7 @@ sub setheadline {
       $rankname = ($rank =~ 7) ? 'Duplex I. classis' : 'Semiduplex';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] =~ /Quad/i && $dayname[0] !~ /Quad6-4|5|6/i && $dayofweek > 0) {
       $rankname = 'Simplex';
-    } elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] == /07-04/i && $dayofweek > 0) {
+    } elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] =~ /07-04/i && $dayofweek > 0) {
       $rankname = ($rank =~ 7) ? 'Duplex I. classis' : 'Semiduplex';
     } else {
       if ($version !~ /1960|Monastic/i) {
