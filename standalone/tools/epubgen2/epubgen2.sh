@@ -40,7 +40,7 @@ OPTIONS:
    -m          Generate Mass propers in addition to office texts.
 
    -r RUBRICS  The rubrics to use. Defaults to 1960.
-               Supported values are: 1570, 1910, DA, 1955, 1960, Newcal, Dominican
+               Supported values are: 1570, 1910, DA, 1955, 1960, Newcal, Dominican, Monastic
 
    -c FILENAME The cover image to use without path. It must be a file in the data
                directory. Defaults to "cover.jpg".
@@ -69,9 +69,9 @@ RUBRICS_NAME=
 
 #constants
 #supported rubrics as in Eofficium.pl
-ALL_RUBRICS_CODES=(1570 1910 DA 1955 1960 Newcal Dominican)
-ALL_RUBRICS=("Trident 1570" "Trident 1910" "Divino Afflatu" "Reduced 1955" "Rubrics 1960" "1960 Newcalendar" "Ordo Praedicatorum")
-ALL_RUBRICS_NAME=("_1570" "_1910" "_DA" "_1955" "" "NC")
+ALL_RUBRICS_CODES=(Monastic 1570 1910 DA 1955 1960 Newcal Dominican)
+ALL_RUBRICS=("Monastic" "Trident 1570" "Trident 1910" "Divino Afflatu" "Reduced 1955" "Rubrics 1960" "1960 Newcalendar" "Ordo Praedicatorum")
+ALL_RUBRICS_NAME=("_Monastic" "_1570" "_1910" "_DA" "_1955" "" "NC")
 
 YEAR_RE='^[0-9]+$'
 
