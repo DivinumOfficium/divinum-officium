@@ -1084,7 +1084,7 @@ sub antetpsalm {
   my @ant = split('\*', $line[0]);
   my $ant = $line[0];
   postprocess_ant($ant, $lang);
-  my $ant1 = ($duplex > 2 || $version =~ /1960|Monastic/i) ? $ant : $ant[0];    #difference between 1995, 1960
+  my $ant1 = ($duplex > 2 || $version =~ /1960|Monastic|Praedicatorum/i) ? $ant : $ant[0];    #difference between 1995, 1960
 
   if ( $dayname[0] =~ /Pasc/i
     && (($hora =~ /vespera/i) 
@@ -2242,8 +2242,8 @@ sub loadspecial {
   my $str = shift;
   my @s = split("\n", $str);
 
-  # Un-double the antiphons, except in 1960.
-  unless ($version =~ /1960/) {
+  # Un-double the antiphons, except in 1960 or Dominican.
+  unless ($version =~ /1960|Praedicatorum/) {
     my $i;
     my $ant = 0;
 
