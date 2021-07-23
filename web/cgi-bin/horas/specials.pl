@@ -96,7 +96,7 @@ sub specials {
         $comment = 1;
         setbuild1($label, 'omit');
       }
-      setcomment($label, 'Preces', $comment, $lang);
+      setcomment($label, 'Preces', $comment, $lang) if ($rule !~ /Omit.*? $ite[0] mute/i);
 
       if ($item =~ /incipit/i && $version !~ /(1955|1960|Monastic)/) {
         my $p1 = translate_label('$Pater noster', $lang);
