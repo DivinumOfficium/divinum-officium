@@ -17,7 +17,7 @@ $Oremus
 v. Wspieraj lud Twój, Panie, a w opiekę Apostołów Twoich Piotra i Pawła, oraz innych Apostołów ufający, racz otaczać ustawiczną opieką.
 v. Wszyscy Święci prosimy, Panie niech nas wspomagają, iżbyśmy rozpamiętywając i czcząc ich zasługi, doznali ich wspomożenia. Pokoju Twegi użycz czasom naszym, od Kościoła Twojego wszelką nieprawość oddal. Nasze i wszystkich sług Twoich uczynki, zamiary i sprawy, racz pokierować ku szczęśliwemu osiągnięciu zbawienia. Dobrodziejów naszych nagródź wiecznemi dobrami. Wszystkim wiernym zmarłym racz dać wieczny odpoczynyk.
 $Per Dominum
-(sed rubrica 1955 aut rubrica 1960 omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 
 [Pre oratio]
 
@@ -32,7 +32,7 @@ $Oremus
 #Incipit
 _
 $Ave Maria
-(sed rubrica 1955 aut rubrica 1960 omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 V. Nawróć nas +++ Boże, nasz zbawco.
 R. I odwróć swój gniew od nas.
 $Deus in adjutorium
@@ -78,7 +78,7 @@ R. Amen.
 $Pater noster
 $Ave Maria
 $Credo
-(sed rubrica 1955 aut rubrica 1960 omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 
 [Ant Matutinum]
 @Commune/C11::s/V\. .*/V. Rozlała się wdzięczność po wargach twoich./g s/R\. .*/R. Dlatego cię błogosławił Bóg na wieki./g
