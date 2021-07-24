@@ -976,6 +976,7 @@ sub lectio : ScriptFunc {
 
     if (!$s) {
       my %w = (columnsel($lang)) ? %winner : %winner2;
+      if ($winner =~ /C9/ && $na == 9) { $na = 91; }
       if (exists($w{"Responsory$na"})) { $s = $w{"Responsory$na"}; }
 
       if (!$s) {
