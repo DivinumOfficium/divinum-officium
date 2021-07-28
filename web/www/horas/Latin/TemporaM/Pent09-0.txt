@@ -25,14 +25,14 @@
 @Tempora/Pent09-0:Responsory4
 
 [Lectio6]
-@Tempora/Pent09-0:Lectio4:s/.* Illa/Illa/s
-@Tempora/Pent09-0:Lectio5:s/contemptus. .*/contemptus./s
+@Tempora/Pent09-0:Lectio4:s/.* Illa/Illa/s s/$/~/
+@Tempora/Pent09-0:Lectio5:s/contémptus. .*/contémptus./s
 
 [Responsory6]
 @Tempora/Pent09-0:Responsory5
 
 [Lectio7]
-@Tempora/Pent09-0:Lectio5:s/.*contemptus. //s
+@Tempora/Pent09-0:Lectio5:s/.*contémptus. //s
 
 [Responsory7]
 @Tempora/Pent09-0:Responsory6
