@@ -766,11 +766,11 @@ sub replaceNpb {
   return $s;
 }
 
-#This is Gloria Patri (not Gloria in Excelsis).
+# This is Gloria Patri (not Gloria in excelsis).
 sub Gloria : ScriptFunc {
   my $lang = shift;
-  our %prayers; 
-  
+  our %prayers;
+
   # No GP during Passiontide
   if (DeTemporePassionis()
     && $rule !~ /defunct/i
