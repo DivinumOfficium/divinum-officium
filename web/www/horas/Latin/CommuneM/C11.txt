@@ -3,26 +3,26 @@
 [Capitulum Vespera]
 @CommuneM/C10:Capitulum Vespera
 
-[Ant Matutinum]
-Benedícta tu * in muliéribus, † et benedíctus fructus ventris tui.;;8
-Sicut myrrha elécta, * odórem dedísti suavitátis, † sancta Dei Génetrix.;;18
-Ante torum * hujus Vírginis frequentáte nobis dúlcia cántica drámatis.;;23
-Spécie tua * et pulchritúdine tua inténde, † próspere procéde, et regna.;;44
-Adiuvábit eam * Deus vultu suo: † Deus in médio eius, non commovébitur.;;45
+[AntMatutinumM]
 Favus distíllans * lábia tua, Sponsa, mel et lac sub lingua tua: † et odor vestimentórum tuórum sicut odor thuris.;;47
-V. Spécie tua et pulchritúdine tua.
-R. Inténde, próspere procéde, et regna.
-Fons hortórum, * púteus aquárum vivéntium, † quae fluunt ímpetu de Líbano.;;84
-Sicut lætántium * ómnium nostrum habitátio est in te, † sancta Dei Génetrix.;;86
-Gaude, * María Virgo: † cunctas hǽreses sola interemísti in univérso mundo.;;95
-Dignáre me * laudáre te, Virgo sacráta: † da mihi virtútem contra hostes tuos.;;96
-Post partum, * Virgo, invioláta permansísti: † Dei Génetrix, intercéde pro nobis.;;97
-Descéndi * in hortum nucum, ut vidérem poma convállium, † et inspícerem, si floruísset vinea, et germinássent mala púnica, allelúia.;;98
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio eius, non commovébitur.
-Hortus conclúsus * es Dei Génitrix, hortus conclúsus, fons signátus: † surge própera, amíca mea, et veni.;;249;250;251
-V. Elégit eam Deus, et præelégit eam.
-R. In tabernáculo suo habitáre facit eam.
+Fons hortórum, * púteus aquárum vivéntium, † quæ fluunt ímpetu de Líbano.;;84
+Descéndi * in hortum nucum, ut vidérem poma convállium, † et inspícerem, si floruísset vinea, et germinássent mala púnica, allelúja.;;98
+
+[Ant Matutinum 3N]
+Hortus conclúsus * es Dei Génitrix, hortus conclúsus, fons signátus: † surge própera, amíca mea, et veni.
+
+[Ant Matutinum]
+@Commune/C11::1-3
+@Commune/C11::6-7
+@:AntMatutinumM:1
+@Commune/C11::4-5
+@:AntMatutinumM:2
+@Commune/C11::8
+@Commune/C11::11-13
+@:AntMatutinumM:3
+@Commune/C11::9-10
+;;249;250;251
+@Commune/C11::14-15
 
 [Responsory9]
 R. Beata es Virgo Maria, Dei Genitrix, quae credidisti Domino: perfecta sunt in~
