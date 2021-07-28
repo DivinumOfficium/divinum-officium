@@ -766,12 +766,27 @@ sub replaceNpb {
   return $s;
 }
 
+#This is Gloria Patri (not Gloria in Excelsis).
 sub Gloria : ScriptFunc {
   my $lang = shift;
-  if (DeTemporePassionis() && $rule !~ /Requiem gloria/) { return ""; }
-  our %prayers;
-  if ($rule =~ /Requiem gloria/i) { return $prayers{$lang}->{Requiem}; }
-  return $prayers{$lang}->{'Gloria'};
+  our %prayers; 
+  
+  # No GP during Passiontide
+  if (DeTemporePassionis()
+    && $rule !~ /defunct/i
+  ) {
+    return "";
+  }
+
+  # Requiem instead during Requiems
+  elsif ($rule =~ /defunct/i) {
+    return $prayers{$lang}->{Requiem};
+  }
+
+  # Gloria Patri otherwise.
+  else {
+    return $prayers{$lang}->{Gloria};
+  }
 }
 
 sub getitem {
