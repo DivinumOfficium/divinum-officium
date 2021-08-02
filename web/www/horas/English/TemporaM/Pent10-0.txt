@@ -8,7 +8,7 @@
 @Tempora/Pent10-0:Lectio8:s/ But the publican.*//
 
 [Lectio11]
-@Tempora/Pent10-0:Lectio8:s/.*? But the publican/But the publican/
+@Tempora/Pent10-0:Lectio8:s/.*? But the publican/But the publican/ s/$/~/
 @Tempora/Pent10-0:Lectio9:s/Consider .*//
 
 [Lectio12]
