@@ -22,7 +22,7 @@
 @Tempora/Pent08-0:Responsory4
 
 [Lectio6]
-@Tempora/Pent08-0:Lectio4:s/.* Unde/Unde/s
+@Tempora/Pent08-0:Lectio4:s/.* Unde/Unde/s s/$/~/
 @Tempora/Pent08-0:Lectio5:s/ In quo.*//s
 
 [Responsory6]

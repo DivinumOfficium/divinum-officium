@@ -3,7 +3,7 @@
 @Tempora/Pent09-0:Lectio4:s/ All .*//s
 
 [Lectio6]
-@Tempora/Pent09-0:Lectio4:s/.* All/All/s
+@Tempora/Pent09-0:Lectio4:s/.* All/All/s s/$/~/
 @Tempora/Pent09-0:Lectio5:s/Jews\. .*/Jews./s
 
 [Lectio7]

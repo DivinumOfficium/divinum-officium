@@ -56,7 +56,7 @@
 @Tempora/Pent01-3:Responsory3
 
 [Lectio11]
-@Tempora/Pent10-0:Lectio8:s/.*? Publicánus/Publicánus/
+@Tempora/Pent10-0:Lectio8:s/.*? Publicánus/Publicánus/ s/$/~/
 @Tempora/Pent10-0:Lectio9:s/Adhuc .*//
 
 [Responsory11]
