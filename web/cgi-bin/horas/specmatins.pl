@@ -1019,7 +1019,8 @@ sub lectio : ScriptFunc {
   my $item = 'Lectio';
   if (exists($translate{$lang}{$item})) { $item = $translate{$lang}{$item}; }
   $item =~ s/\s*$//;
-  $w = "_\n" . setfont($largefont, "$item $num") . "\n$w";
+  $item .= " %s" unless ($item =~ /%s/);
+  $w = "_\n" . setfont($largefont, sprintf($item,$num)) . "\n$w";
   my @w = split("\n", $w);
   $w = "";
 
