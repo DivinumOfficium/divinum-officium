@@ -115,7 +115,7 @@ sub psalmi_matutinum_monastic {
     for ($i = 0; $i < 3; $i++) { $psalmi[$i + 16] = $c[$i]; }
   }
 
-  if (($rank > 4.9) && !(($dayname[0] =~ /Pasc0/) && ($dayofweek > 2))) {
+  if (($rank > 4.9 || $votive =~ /C8/) && !(($dayname[0] =~ /Pasc0/) && ($dayofweek > 2))) {
     #** get proper Ant Matutinum
     my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
     if ($w) {

@@ -96,7 +96,7 @@ sub specials {
         $comment = 1;
         setbuild1($label, 'omit');
       }
-      setcomment($label, 'Preces', $comment, $lang);
+      setcomment($label, 'Preces', $comment, $lang) if ($rule !~ /Omit.*? $ite[0] mute/i);
 
       if ($item =~ /incipit/i && $version !~ /(1955|1960|Monastic)/) {
         my $p1 = translate_label('$Pater noster', $lang);
@@ -1019,7 +1019,7 @@ sub psalmi_major {
     @p = @psalmi;
   }
   my $lim = 5;
-  if ($version =~ /monastic/i && $hora =~ /Vespera/i && ($commune !~ /C9/) && ($dayname[0] !~ /Quad6/ || $dayofweek < 4)) {
+  if ($version =~ /monastic/i && $hora =~ /Vespera/i && ($winner !~ /C(?:9|12)/) && ($commune !~ /C9/) && ($dayname[0] !~ /Quad6/ || $dayofweek < 4)) {
     $lim = 4;
     if ($antiphones[4]) {
       local($a1,$p1) = split(/;;/, $antiphones[3]);
@@ -2243,7 +2243,7 @@ sub loadspecial {
   my @s = split("\n", $str);
 
   # Un-double the antiphons, except in 1960 or Dominican.
-  unless ($version =~ /1960|Praedicatorum/) {
+  unless ($version =~ /1960|Monastic|Praedicatorum/) {
     my $i;
     my $ant = 0;
 

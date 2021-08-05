@@ -1,0 +1,42 @@
+@Commune/C12
+
+[Rule]
+Omit Incipit mute
+Matutinum Romanum
+Votive nocturn
+
+[Prelude Vespera]
+#Incipit
+$Deus in adjutorium
+&Gloria
+&Alleluia
+
+[Capitulum Vespera]
+@Commune/C10
+
+[Prelude Matutinum]
+#Incipit
+$Domine labia
+$Domine labia
+$Domine labia
+
+[Prelude Laudes]
+@:Prelude Vespera
+
+[Ant Laudes]
+@Commune/C12::s/$/;;148/s
+
+[Capitulum Laudes]
+@Commune/C12
+
+[Special Tertia]
+@Commune/C12::s/Hymnus minor/HymnusM minor/
+
+[Special Sexta]
+@Commune/C12::s/Hymnus minor/HymnusM minor/
+
+[Special Nona]
+@Commune/C12::s/Hymnus minor/HymnusM minor/
+
+[Special Completorium]
+@Commune/C12::s/Hymnus minor/HymnusM minor/

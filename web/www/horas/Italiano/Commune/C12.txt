@@ -21,7 +21,7 @@ $Oremus
 #Incipit
 _
 $Ave Maria
-(sed rubrica 1955 aut rubrica 1960 omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 V. Convertici, +++ o Dio, nostro salvatore.
 R. E allontana da noi la tua ira.
 $Deus in adjutorium
@@ -67,7 +67,7 @@ R. Amen.
 $Pater noster
 $Ave Maria
 $Credo
-(sed rubrica 1955 aut rubrica 1960 omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 
 [Ant Matutinum]
 @Commune/C11::s/V\. .*/V. La grazia è cosparsa sulle tue labbra./g s/R\. .*/R. Perciò Iddio ti ha benedetta in eterno./g
@@ -77,12 +77,6 @@ $Credo
 11 E de' grandi tutti, e dei piccoli soggiogai i cuori con mia possanza, e tra tutti questi cercai dove posarmi, e fisserò mia dimora nell'eredità del Signore.
 12 Allora il Creatore di tutte le cose ordinò, e parlò a me, e quegli, che mi creò stabilì il mio tabernacolo:
 13 E mi disse: abita con Giacobbe, e tuo retaggio sia Israele, e tue radici getta ne' miei eletti 
-
-[Responsory1]
-R. Santa ed immacolata verginità, io non so con quali lodi esaltarti: 
-* poiché tu portasti nel seno colui che i cieli non possono contenere.
-V. Tu sei benedetta fra le donne e benedetto è il frutto del tuo seno.
-R. Poiché tu portasti nel seno colui che i cieli non possono contenere.
 
 [Lectio2]
 !Sir 24:15-16

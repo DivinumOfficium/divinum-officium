@@ -4,26 +4,6 @@ Officium parvum Beatae Mariae Virginis
 [Rank]
 Officium parvum Beatae Mariae Virginis;;Simplex;;1;;ex C11
 
-[Rule]
-ex C11;
-Ave only
-Doxology=Nat
-Omit Suffragium
-Special Benedictio
-Votive nocturn
-Psalmi Dominica
-Antiphonas horas
-Feria Te Deum
-
-[Versum 1]
-@Commune/C11:Versum 2
-
-[Ant 1]
-@Commune/C10
-
-[Oratio 1]
-@Commune/C10:Oratio
-
 [Oratio 2]
 v. Dios, que quisiste que a la palabra del Ángel se encarnase tu Verbo en el seno de la bienaventurada Virgen María: haz, te suplicamos, que cuantos creemos que es verdaderamente Madre de Dios, seamos ayudados delante de ti con su intercesión.
 $Per eumdem
@@ -37,14 +17,14 @@ $Oremus
 v. Protege, oh Señor, a tu pueblo, y teniendo en cuenta su confianza en la protección de tus Apóstoles San Pedro y San Pablo, y de los demás Apóstoles, consérvale siempre con tu asistencia. 
 v. Haz, Señor que todos los santos nos asistan siempre en todo lugar, a fin de que los que honramos sus méritos experimentemos los efectos de su intercesión; concédenos tu paz durante los días de nuestra vida; aleja del seno de tu Iglesia toda iniquidad; dirige nuestros pasos, nuestras acciones, nuestras voluntades y las de todos tus siervos por el camino que guía a tu gloria: concede los bienes del cielo a nuestros bienhechores y el descanso eterno a todos los fieles difuntos. 
 $Per Dominum
-(se omite en las rúbricas de 1955 y 1960)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 
 [Pre oratio]
 
 #Oratio
 _
 v. Señor, ten piedad. Cristo, ten piedad. Señor, ten piedad.
-(se omite en las rúbricas de 1955 y 1960)
+(sed rubrica 1955 aut rubrica 1960 omittitur)
 &Dominus_vobiscum
 $Oremus
 
@@ -52,7 +32,7 @@ $Oremus
 #Incipit
 _
 $Ave Maria
-(se omite en las rúbricas de 1955 y 1960)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 V. Conviértenos, +++ oh Dios, Salvador nuestro.
 R. Cesa en tu rencor contra nosotros. 
 $Deus in adjutorium
@@ -98,10 +78,7 @@ R. Amén.
 $Pater noster
 $Ave Maria
 $Credo
-(se omite en las rúbricas de 1955 y 1960)
-
-[Invit]
-@Commune/C10
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 
 [Ant Matutinum]
 @Commune/C11::s/V\. .*/V. Derramada está la gracia en tus labios./g s/R\. .*/R. Por ello el Señor te bendecirá para siempre./g
@@ -151,12 +128,6 @@ Hermosa eres * y graciosa hija de Jerusalén, terrible como un ejército formado
 v. Al verla las hijas de Sión, la proclamaron bienaventurada; y reinas cantaron sus alabanzas.	
 $Deo gratias
 
-[Versum 2]
-@Commune/C10
-
-[Ant 2]
-@Commune/C10
-
 [Hymnus minor]
 
 #Hymnus
@@ -176,28 +147,6 @@ y el Espíritu Santo,
 por los siglos de los siglos.
 Amén.
 
-[Minor intro]
-#Incipit
-_
-$Ave Maria
-(se omite en las rúbricas de 1955 y 1960)
-$Deus in adjutorium.
-&Gloria
-&Alleluia
-@:Hymnus minor
-
-#Psalmi
-
-[Minor final]
-
-#Conclusio
-&Dominus_vobiscum
-&Benedicamus_Domino
-$Fidelium animae
-_
-$Pater noster
-(se omite en las rúbricas de 1955 y 1960)
-
 [Capitulum Prima]
 !Cant 6:9
 v. ¿Quién es ésta que va subiendo cual aurora naciente, bella como la luna, brillante como el sol, terrible como un ejército formado en batalla?	
@@ -206,27 +155,6 @@ $Deo gratias
 [Oratio Prima]
 v. Oh Dios que te dignaste elegir el seno virginal de la bienaventurada María para hacer de él tu morada, concédenos, te pedimos, que, experimentando el socorro de su protección, celebremos con alegría su memoria.
 $Qui vivis
-
-[Special Prima]
-@:Minor intro
-@:Ant Laudes:1 s/^/Ant. /
-
-&psalm(53)
-
-&psalm(84)
-
-&psalm(116)
-_
-@:Ant Laudes:1 s/^/Ant. /
-
-
-#Capitulum
-@:Capitulum Prima
-_
-@Commune/C11:Versum 1
-@:Pre oratio
-@:Oratio Prima
-@:Minor final
 
 [Capitulum Tertia]
 !Sir 24:15
@@ -237,25 +165,6 @@ $Deo gratias
 v. ¡Oh Dios, que por la maternidad virginal de Santa María entregaste al género humano los tesoros de la salvación eterna!; te rogamos que sintamos  continuamente el poder de la  intercensión de aquella por la que hemos mericido recibir al Autor de la vida, nuestro Señor Jesucristo, tu Hijo:
 $Qui tecum
 
-[Special Tertia]
-@:Minor intro
-@:Ant Laudes:2 s/^/Ant. /
-&psalm(119)
-
-&psalm(120)
-
-&psalm(121)
-_
-@:Ant Laudes:2 s/^/Ant. /
-
-#Capitulum
-@:Capitulum Tertia
-_
-@Commune/C11:Versum 2
-@:Pre oratio
-@:Oratio Tertia
-@:Minor final
-
 [Capitulum Sexta]
 !Sir 24:16
 v. Fijé mi morada en medio del pueblo que Dios ha honrado y que ha escogido por herencia, habitaré para siempre en la morada de la santidad.
@@ -264,25 +173,6 @@ $Deo gratias
 [Oratio Sexta]
 v. Concede, Oh Dios misericordioso, el socorro a nuestra fragilidad, a fin de que, honrando la memoria de la Santa Madre de Dios, podamos con el auxilio de su intercesión levantarnos de nuestras iniquidades.
 $Per eumdem
-
-[Special Sexta]
-@:Minor intro
-@:Ant Laudes:3 s/^/Ant. /
-&psalm(122)
-
-&psalm(123)
-
-&psalm(124)
-_
-@:Ant Laudes:3 s/^/Ant. /
-
-#Capitulum
-@:Capitulum Sexta
-_
-@Commune/C10:Versum 2
-@:Pre oratio
-@:Oratio Sexta
-@:Minor final
 
 [Capitulum Nona]
 @Commune/C11:Lectio Prima
@@ -295,28 +185,3 @@ $Qui tecum
 [Verse Nona]
 V. Después del parto, oh Virgen, sin mancha permaneciste. 
 R. Madre de Dios, intercede por nosotros.
-
-[Special Nona]
-@:Minor intro
-@:Ant Laudes:5 s/^/Ant. /
-&psalm(125)
-
-&psalm(126)
-
-&psalm(127)
-_
-@:Ant Laudes:5 s/^/Ant. /
-
-#Capitulum
-@:Capitulum Nona
-_
-@:Verse Nona
-@:Pre oratio
-@:Oratio Nona
-@:Minor final
-
-[Versum 3]
-@:Versum 1
-
-[Ant 3]
-@Commune/C10:Ant 1

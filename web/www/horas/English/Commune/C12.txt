@@ -28,7 +28,7 @@ $Oremus
 v. Shield, O Lord, thy people, and ever keep them in thy care, who put their trust in the pleading of thy Apostles Peter and Paul, and of the other Apostles.
 v. May all thy saints, we beseech thee, O Lord, everywhere come to our help, that while we do honor to their merits, we may also enjoy their intercession: grant thy own peace unto our times, and drive away all wickedness from thy Church; direct our way, our actions, and our wishes and those of all thy servants in the way of salvation; to our benefactors render everlasting blessings, and to all the faithful departed grant eternal rest.
 $Per Dominum
-(sed rubrica 1955 aut rubrica 1960 omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 
 [Pre oratio]
 
@@ -43,7 +43,7 @@ $Oremus
 #Incipit
 _
 $Ave Maria
-(sed rubrica 1955 aut rubrica 1960 omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 V. Turn us then, +++ O God, our saviour: 
 R. And let thy anger cease from us.
 $Deus in adjutorium
@@ -89,7 +89,7 @@ R. Amen.
 $Pater noster
 $Ave Maria
 $Credo
-(sed rubrica 1955 aut rubrica 1960 omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 
 [Ant Matutinum]
 @Commune/C11::s/V\. .*/V. Grace is poured into thy lips./g s/R\. .*/R. Therefore God hath blessed thee for ever./g
@@ -133,6 +133,10 @@ Fair and comely art thou, O daughter of Jerusalem, * terrible as a fenced camp s
 !Song 6:8
 v. The daughters of Zion saw her, and called her blessed; the queens also, and they praised her.
 $Deo gratias
+
+[HymnusM minor]
+@:Hymnus minor:1-12
+@Psalterium/Doxologies:NatT
 
 [Hymnus minor]
 

@@ -25,7 +25,7 @@ $Oremus
 #Incipit
 _
 $Ave Maria
-(sed rubrica 1955 aut rubrica 1960 omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 V. Téríts meg minket, +++ Isten, te vagy az üdvösségünk.
 R. És fordítsd el haragodat rólunk.
 $Deus in adjutorium
@@ -69,13 +69,12 @@ R. Amen.
 $Pater noster
 $Ave Maria
 $Credo
-(sed rubrica 1955 aut rubrica 1960 omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 
 [Ant Matutinum]
 @Commune/C11::s/V\. .*/V. Kegyelem van az ajkaidon./g s/R\. .*/R. Isten ezért megáldott mindörökre./g
 
 [Lectio1]
-Olvasmány Jézus Sírák fia könyvéből
 !Sir 24:11-13
 11 minden nagy és kicsiny szivét legyöztem erömmel; és mindezekben nyugodalmat kerestem, és az Úr örökségében lett maradásom.
 12 Akkor parancsola és mondá nekem a mindenek Teremtöje, és a ki teremtett engem, megnyugovék hajlékomban,

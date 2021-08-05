@@ -1230,7 +1230,7 @@ sub precedence {
         $vtv = 'C12Q';
       } 
     }
-    $winner = "Commune/$vtv.txt";
+    $winner = "$communename/$vtv.txt";
     $commemoratio = $commemoratio1 = $scriptura = $commune = '';
     %winner = updaterank(setupstring($datafolder, $lang1, $winner));
     %winner2 = updaterank(setupstring($datafolder, $lang2, $winner));
@@ -1239,7 +1239,7 @@ sub precedence {
 
     if ($vtv =~ /C12/i) {
       @rank = split(';;', $winner{Rank});
-      $commune = "Commune/C11.txt";
+      $commune = "$communename/C11.txt";
       $communetype = 'ex';
       %commune = updaterank(setupstring($datafolder, $lang1, $commune));
       %commune2 = updaterank(setupstring($datafolder, $lang2, $commune));
@@ -1627,7 +1627,6 @@ sub setmdir {
     $sanctiname = 'SanctiM';
     $temporaname = 'TemporaM';
     $communename = 'CommuneM';
-    $votive = '';
   } else {
     $sanctiname = 'Sancti';
     $temporaname = 'Tempora';
