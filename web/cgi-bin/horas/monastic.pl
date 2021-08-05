@@ -186,6 +186,7 @@ sub psalmi_matutinum_monastic {
 
     push(@s, "Ant. $ant");
     for (split(';', $p)) { push(@s, "\&psalm($_)", "\n"); } pop(@s);
+    $ant =~ s/\* //;
     push(@s, "Ant. $ant");
     push(@s, "\n", $psalmi[17], $psalmi[18], "\n");
     lectiones(3, $lang);
