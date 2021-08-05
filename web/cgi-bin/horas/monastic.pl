@@ -133,7 +133,7 @@ sub psalmi_matutinum_monastic {
   antetpsalm_mm('', -2);    # set antiphon for multiple psalms under one antiphon situation
   push(@s, $psalmi[6], $psalmi[7], "\n");
 
-  if ($rule =~ /(9|12) lectio/i && $rank > 4.9) {
+  if ($rule =~ /12 lectiones/) {
     lectiones(1, $lang);
   } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i && $month < 11 && $winner{Rank} !~ /vigil|quattuor/i) {
     if ($winner =~ /Tempora/i
@@ -150,7 +150,7 @@ sub psalmi_matutinum_monastic {
   for (8..13) { antetpsalm_mm($psalmi[$_], $_); }
   antetpsalm_mm('', -2);    #draw out antiphon if any
 
-  if ($winner{Rule} =~ /(12|9) lectiones/i && $rank > 4.9) {
+  if ($winner{Rule} =~ /12 lectiones/) {
     push(@s, $psalmi[14], $psalmi[15], "\n");
     lectiones(2, $lang);
     push(@s, "\n", '!Nocturn III.', '_');
