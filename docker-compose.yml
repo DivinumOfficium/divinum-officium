@@ -1,6 +1,6 @@
 version: '3.5'
 
-# This docker-compose file is for running local development
+# This docker-compose file is for running local development.
 #
 # to update the base image, run 'docker-compose build'
 # and then run 'docker-compose up' to create the development environmet
