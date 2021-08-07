@@ -1,6 +1,6 @@
 version: '3.5'
 
-# This docker-compose file is for running in a production context
+# This docker-compose file is for running in a local production-like context
 # it does not mount the volume.
 
 services:
