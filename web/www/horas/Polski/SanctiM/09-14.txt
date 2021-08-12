@@ -8,12 +8,42 @@ _
 _
 @Sancti/05-03:Responsory Tertia:s/._.*//s s/, allelu.a//g s/(ukaże się na niebie,? \* )?Allelu.a/* ukaże się na niebie/g s/\. \* u/. U/
 
+[AntMatutinumM]
+Słodkie drzewo, * słodkie gwoździe, słodki na nim spoczął ciężar, † tylko tyś był godzien dźwigać okup za zbawienie świata.;;8
+Laska twoja, i kij twój: * te mię cieszyły, † Panie, Boże mój.;;22
+Czcijmy znak krzyża, * przez który otrzymaliśmy sakrament zbawienia.;;98
+
+[Ant Matutinum 3N]
+Nie daj Boże, * bym miał się chlubić z czego innego, jeno z krzyża Pana naszego Jezusa Chrystusa, przez którego dla mnie świat jest ukrzyżowany, a ja światu.
+
 [Lectio2]
 @Sancti/09-14:Lectio1:s/.*!/!/s s/1-3/3-4/ s/1 .*3 /3 /s
 @Sancti/09-14:Lectio2:s/!.*// s/: i począł .*/./s
 
 [Lectio3]
 @Sancti/09-14:Lectio2:s/6-9/4-6/ s/4 .*: i począł/4 I począł/
+
+[Responsory4]
+R. O Krzyżu błogosławiony,
+* Który sam jeden byłeś godny dźwigać Króla niebios i Pana!
+V. O Krzyżu chwalebny i godny podziwu, o Krzyżu uwielbiony.
+R. Który sam jeden byłeś godny dźwigać Króla niebios i Pana!
+
+[Lectio6]
+@Sancti/09-14:Lectio5:s/ I tak.*//s
+
+[Lectio7]
+@Sancti/09-14:Lectio5:s/.* I tak/I tak/s s/$/~/
+@Sancti/09-14:Lectio6:s/ Na co.*//s
+
+[Lectio8]
+@Sancti/09-14:Lectio6:s/.* Na co/Na co/s
+
+[Responsory8]
+R. Przez znak Krzyża, od nieprzyjaciół naszych
+* Wybaw nas, Boże nasz.
+V. Zbaw nas, Chryste Zbawicielu, potęgą Krzyża.
+R. Wybaw nas, Boże nasz.
 
 [Lectio9]
 @Sancti/09-14:Lectio7:s/Natomiast .*//s
