@@ -1424,7 +1424,6 @@ sub setcc {
   } elsif ($s{Rank} =~ /;;1/ || $code >= 10) {
     $key = 80;
   }    #Simplex=80;
-  if ($winner =~ /Tempora/i && $s{Rank} =~ /S\./) { $key = 90 + floor($code / 10); }    #*** commemorated main saint
   if ($s{Rule} =~ /Comkey=([0-9]+)/i) { $key = $1; }                                    #oct day Epi Cor = 20, simpl=70
 
   if ( $s{Rank} =~ /Octav.*?(Epiph|Corporis|Cordis|Ascension)/i
@@ -1505,7 +1504,6 @@ sub commemoratio {
 
   if (exists($w{"Commemoratio $ind"})) {
     $w = getrefs($w{"Commemoratio $ind"}, $lang, $ind, $w{Rule});
-    if ($ind == 1 && $item !~ /winner/i) { $code = 0; }
   } elsif (exists($w{Commemoratio})) {
     $w = getrefs($w{Commemoratio}, $lang, $ind, $w{Rule});
   }
