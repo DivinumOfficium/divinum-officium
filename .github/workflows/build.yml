@@ -1,6 +1,6 @@
 name: build
 
-# Test of CI build of docker image
+# Test of CI build of docker image - this isn't yet doing anything, but it's a start.
 
 on:
   workflow_dispatch:
