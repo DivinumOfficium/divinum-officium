@@ -159,7 +159,7 @@ if (!$first) {
 }
 
 if ($flag) {
-  setsetup('general', $version, $testmode, $lang2, $votive, $rubrics, $solemn);
+  setsetup('general', $version, $version2, $testmode, $lang2, $votive, $rubrics, $solemn);
   setcookies('missago', 'general');
 }
 if (!$version) { $version = 'Rubrics 1960'; }
