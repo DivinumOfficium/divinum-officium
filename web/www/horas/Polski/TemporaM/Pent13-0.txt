@@ -1,0 +1,6 @@
+[Lectio9]
+@Tempora/Pent13-0:Lectio7:s/Należy .*//
+
+[Lectio10]
+@Tempora/Pent13-0:Lectio7:s/.* Należy/Należy/s
+@Tempora/Pent13-0:Lectio8:s/There.*//s

@@ -52,7 +52,7 @@
 @Tempora/Pent01-3:Responsory1
 
 [Lectio10]
-@Tempora/Pent11-0:Lectio7:s/.* Dígitos /Dígitos /s
+@Tempora/Pent11-0:Lectio7:s/.* Dígitos /Dígitos /s s/$/~/
 @Tempora/Pent11-0:Lectio8:s/Qui suspíciens .*//s
 
 [Responsory10]

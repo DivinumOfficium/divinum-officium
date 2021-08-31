@@ -65,7 +65,7 @@ R. In montem excélsum seórsum ascéndens, ibi se transfigúrans, † suae gló
 @Sancti/08-06:Responsory4
 
 [Lectio6]
-@Sancti/08-06:Lectio4:s/.*Sed /Sed /s
+@Sancti/08-06:Lectio4:s/.*Sed /Sed /s s/$/~/
 @Sancti/08-06:Lectio5:s/Quid .*//s
 
 [Responsory6]

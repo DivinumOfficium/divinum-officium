@@ -2,11 +2,11 @@
 @Tempora/Pent14-0:Lectio7:s/Mammon.*//s
 
 [Lectio10]
-@Tempora/Pent14-0:Lectio7:s/.* Mammon/Mammon/s
+@Tempora/Pent14-0:Lectio7:s/.* Mammon/Mammon/s s/$/~/
 @Tempora/Pent14-0:Lectio8:s/Of.*//s
 
 [Lectio11]
-@Tempora/Pent14-0:Lectio8:s/.* Of/Of/s
+@Tempora/Pent14-0:Lectio8:s/.* Of/Of/s s/$/~/
 @Tempora/Pent14-0:Lectio9:s/"Therefore,.*//s
 
 [Lectio12]
