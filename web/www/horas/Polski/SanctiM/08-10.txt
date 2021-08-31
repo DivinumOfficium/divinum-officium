@@ -3,11 +3,11 @@
 @Sancti/08-10:Lectio7:s/Również .*//s
 
 [Lectio10]
-@Sancti/08-10:Lectio7:s/.* Również/Również/s
+@Sancti/08-10:Lectio7:s/.* Również/Również/s s/$/~/
 @Sancti/08-10:Lectio8:s/Ważna.*//s
 
 [Lectio11]
-@Sancti/08-10:Lectio8:s/.* Ważna/Ważna/s
+@Sancti/08-10:Lectio8:s/.* Ważna/Ważna/s s/$/~/
 @Sancti/08-10:Lectio9:s/Tak .*//s
 
 [Lectio12]
