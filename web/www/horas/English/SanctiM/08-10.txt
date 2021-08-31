@@ -20,11 +20,11 @@ Unless the grain of wheat * falls to the ground and dies, it only remains as suc
 @Sancti/08-10:Lectio7:s/Or .*//s
 
 [Lectio10]
-@Sancti/08-10:Lectio7:s/.* Or/Or/s
+@Sancti/08-10:Lectio7:s/.* Or/Or/s s/$/~/
 @Sancti/08-10:Lectio8:s/This.*//s
 
 [Lectio11]
-@Sancti/08-10:Lectio8:s/.* This/This/s
+@Sancti/08-10:Lectio8:s/.* This/This/s s/$/~/
 @Sancti/08-10:Lectio9:s/Some .*//s
 
 [Responsory11]

@@ -2,11 +2,11 @@
 @Tempora/Pent13-0:Lectio7:s/We.*//s
 
 [Lectio10]
-@Tempora/Pent13-0:Lectio7:s/.* We/We/s
+@Tempora/Pent13-0:Lectio7:s/.* We/We/s s/$/~/
 @Tempora/Pent13-0:Lectio8:s/There.*//s
 
 [Lectio11]
-@Tempora/Pent13-0:Lectio8:s/.* There/There/s
+@Tempora/Pent13-0:Lectio8:s/.* There/There/s s/$/~/
 @Tempora/Pent13-0:Lectio9:s/Such.*//s
 
 [Lectio12]

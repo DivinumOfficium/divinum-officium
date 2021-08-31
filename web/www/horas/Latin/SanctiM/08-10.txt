@@ -86,14 +86,14 @@ R. Et ídeo invéntus est sacrifícium laudis.
 @Sancti/08-10:Responsory7
 
 [Lectio10]
-@Sancti/08-10:Lectio7:s/.* Item/Item/s
+@Sancti/08-10:Lectio7:s/.* Item/Item/s s/$/~/
 @Sancti/08-10:Lectio8:s/Magna.*//s
 
 [Responsory10]
 @Sancti/08-10:Responsory8
 
 [Lectio11]
-@Sancti/08-10:Lectio8:s/.* Magna/Magna/s
+@Sancti/08-10:Lectio8:s/.* Magna/Magna/s s/$/~/
 @Sancti/08-10:Lectio9:s/Hinc .*//s
 
 [Responsory11]
@@ -109,7 +109,7 @@ R. Nam carbónes isti non dolórem sed refrigérium mihi praestant.
 R. Gáudeo plane, quia hóstia Christi éffici mérui: accusátus, non negávi; interrogátus, Christum conféssus sum;
 * Assátus, grátias ago.
 V. Ego me óbtuli sacrifícium Deo, in odórem suavitátis.
-R. Assátus, grátias ag
+R. Assátus, grátias ago.
 
 [Capitulum Laudes]
 @Sancti/08-10

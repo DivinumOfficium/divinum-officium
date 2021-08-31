@@ -2,11 +2,11 @@
 @Tempora/Pent12-0:Lectio7:s/Isaiah,.*//s
 
 [Lectio10]
-@Tempora/Pent12-0:Lectio7:s/.* Isaiah,/Isaiah,/s
+@Tempora/Pent12-0:Lectio7:s/.* Isaiah,/Isaiah,/s s/$/~/
 @Tempora/Pent12-0:Lectio8:s/They.*//s
 
 [Lectio11]
-@Tempora/Pent12-0:Lectio8:s/.* They/They/s
+@Tempora/Pent12-0:Lectio8:s/.* They/They/s s/$/~/
 @Tempora/Pent12-0:Lectio9:s/This.*//s
 
 [Lectio12]

@@ -16,7 +16,7 @@ R. And he brought them up into a high mountain, there being transfigured, he sho
 @Sancti/08-06:Lectio4:s/But .*//;
 
 [Lectio6]
-@Sancti/08-06:Lectio4:s/.*But /But /s
+@Sancti/08-06:Lectio4:s/.*But /But /s s/$/~/
 @Sancti/08-06:Lectio5:s/What .*//s
 
 [Lectio7]

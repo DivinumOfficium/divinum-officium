@@ -7,7 +7,7 @@
 @Tempora/Pent14-0:Lectio7:s/Mammóna.*//s
 
 [Lectio10]
-@Tempora/Pent14-0:Lectio7:s/.* Mammóna/Mammóna/s
+@Tempora/Pent14-0:Lectio7:s/.* Mammóna/Mammóna/s s/$/~/
 @Tempora/Pent14-0:Lectio8:s/Aut.*//s
 
 [Lectio11]
