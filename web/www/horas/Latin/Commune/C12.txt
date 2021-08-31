@@ -187,7 +187,7 @@ _
 _
 $Ave Maria
 (sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
-$Deus in adjutorium.
+$Deus in adjutorium
 &Gloria
 &Alleluia
 
@@ -196,7 +196,7 @@ $Deus in adjutorium.
 #Conclusio
 &Dominus_vobiscum
 &Benedicamus_Domino
-$Fidelium animæ
+$Fidelium animae
 _
 $Pater noster
 (sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
@@ -212,6 +212,8 @@ $Qui vivis
 
 [Special Prima]
 @:Minor intro
+@:Hymnus minor
+_
 @:Ant Laudes:1 s/^/Ant. /
 &psalm(53)
 
