@@ -4,11 +4,24 @@ R. Born of royal lineage, Mary shines resplendent:
 V. With all our heart and with all our soul let us sing praise to Christ on this the solemn Feast-day of Mary, the mighty Mother of God, the Virgin Mary.
 R. We earnestly entreat her to help our minds and souls by her prayers.
 
+[Lectio5]
+@Sancti/09-12:Lectio4:s/She is.*//s
+
+[Lectio6]
+@Sancti/09-12:Lectio4:s/.*She is/She is/s
+
+
+[Lectio8]
+@Sancti/09-12:Lectio6:s/{Here .*//s
+
 [Responsory8]
 R. With all our heart and with all our soul let us sing praise to Christ on this the solemn Feast-day of Mary, the mighty Mother of God, the Virgin Mary
 * That she may pray for us to the Lord.
 V. Let us keep with rejoicing the Birthday of the Blessed Virgin Mary.
 R. That she may pray for us to the Lord.
+
+[Ant Matutinum 3N]
+Today was born the blessed Virgin Mary from the seed of David: through whom the salvation of the world has appeared to those who believe.
 
 [Lectio9]
 @Sancti/09-08:Lectio7:s/"The .*//s
