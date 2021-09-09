@@ -404,6 +404,7 @@ PrintTag
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
 <INPUT TYPE=HIDDEN NAME=accented VALUE="$accented">
 <INPUT TYPE=HIDDEN NAME=caller VALUE='0'>
+<INPUT TYPE=HIDDEN NAME=compare VALUE=0>
 <INPUT TYPE=HIDDEN NAME='notes' VALUE="$notes">
 </FORM>
 </BODY></HTML>

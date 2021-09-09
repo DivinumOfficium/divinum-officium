@@ -302,6 +302,7 @@ print << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=popup VALUE="">
 <INPUT TYPE=HIDDEN NAME=first VALUE="$first">
 <INPUT TYPE=HIDDEN NAME=Propers VALUE="$Propers">
+<INPUT TYPE=HIDDEN NAME=compare VALUE=0>
 </FORM>
 </BODY></HTML>
 PrintTag
@@ -410,7 +411,7 @@ function parchange() {
 
 //calls kalendar
 function callkalendar() {
-  document.forms[0].action = 'kalendar.pl';
+  document.forms[0].action = '../horas/kalendar.pl';
   document.forms[0].target = "_self"
   document.forms[0].submit();
 }

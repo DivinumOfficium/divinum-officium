@@ -23,7 +23,7 @@ use Time::Local;
 #use DateTime;
 use locale;
 use lib "$Bin/..";
-use DivinumOfficium::Main qw(load_versions);
+use DivinumOfficium::Main qw(load_versions liturgical_color);
 $error = '';
 $debug = '';
 
@@ -45,7 +45,6 @@ our %winner;          #the hash of the winner
 our %commemoratio;    #the hash of the commemorated
 our %scriptura;       #the hash for the scriptura
 our %commune;         # the hash of the commune
-our (%winner2, %commemoratio2, %commune2);    #same for 2nd column
 our $rule;                                    # $winner{Rank}
 our $communerule;                             # $commune{Rank}
 our $duplex;                                  #1= simplex 2=semiduplex, 3=duplex 0=rest
@@ -60,16 +59,84 @@ require "$Bin/do_io.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
-require "$Bin/specmatins.pl";
-require "$Bin/horas.pl";
-require "$Bin/specials.pl";
+
+sub kalendar_entry {
+  my($date,$ver,$compare) = @_;
+
+  $winner = $commemoratio = $scriptura = $commemoratio1 = '';
+  %winner = %commemoratio = %scriptura = %commemoratio1 = {};
+  $version = $ver;
+  $initia = 0;
+  $laudesonly = '';
+  setmdir($version);
+  precedence($date);    #for the daily item
+  my @c1 = split(';;', $winner{Rank});
+  my @c2 =
+    (exists($commemoratio{Rank})) ? split(';;', $commemoratio{Rank})
+    : (
+    exists($scriptura{Rank})
+      && ($c1[3] !~ /ex C[0-9]+[a-z]*/i
+      || ($version =~ /trident/i && $c1[2] !~ /vide C[0-9]/i))
+    ) ? split(';;', "Scriptura: $scriptura{Rank}")
+    : (exists($scriptura{Rank})) ? split(';;', "Tempora: $scriptura{Rank}")
+    : splice(@c2, @c2);
+  my $smallgray = "1 maroon";
+  my($c1,$c2) = ('','');
+
+  if (@c1) {
+    my($h1,$h2) = split('~', setheadline($c1[0], $c1[2]));
+    $c1 = "<B>".setfont(liturgical_color($c1[0], $c1[3]), $h1)."</B>"
+        . setfont($smallgray, "&nbsp;&nbsp;$h2");
+    $c1 =~ s/Hebdomadam/Hebd/i;
+    $c1 =~ s/Quadragesima/Quadr/i;
+  }
+
+  if (@c2) {
+    my($h1,$h2) = split('~', setheadline($c2[0], $c2[2]));
+    $c2 = "<I>".setfont(liturgical_color($c2[0], $c2[3]), $h1)."</I>"
+        . setfont($smallgray, "&nbsp;&nbsp; $h2");
+  }
+  if ($winner =~ /sancti/i) { ($c2, $c1) = ($c1, $c2); }
+
+  if ($dirge) { $c1 .= setfont($smallblack, ' dirge'); }
+  if ($version !~ /1960/ && $initia) { $c1 .= setfont($smallfont, ' *I*'); }
+
+  if (!$c2 && $dayname[2]) {
+    $c2 = setfont($smallblack, $dayname[2]);
+  } elsif (!$c1 && $dayname[2]) {
+    $c1 = setfont($smallblack, $dayname[2]);
+  }
+
+  if ($version !~ /1955|1960/ && $winner{Rule} =~ /\;mtv/i) {
+    $c2 .= setfont($smallblack, ' m.t.v.');
+  }
+
+  if ( $version !~ /1960/
+    && $winner =~ /Sancti/
+    && exists($winner{Lectio1})
+    && $winner{Lectio1} !~ /\@Commune/i
+    && $winner{Lectio1} !~ /\!(Matt|Mark|Luke|John)\s+[0-9]+\:[0-9]+\-[0-9]+/i)
+  {
+    $c2 .= setfont($smallfont, " *L1*");
+  }
+  if ($compare) {
+    $c2 ||= '_';
+  }
+  return ($c1,$c2);
+}
 
 if (-e "$Bin/monastic.pl") { require "$Bin/monastic.pl"; }
 binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
 #*** get parameters
-getini('horas');    #files, colors
+my $compare =  strictparam('compare') || 0;
+my $officium = strictparam('officium') || 'officium.pl';
+if ($compare && $officium !~ /^C/) { $officium = 'C' . $officium; }
+unless ($compare) { $officium =~ s/^C//; }
+my $officium_name = $officium =~ /missa/ ? 'missa' : 'horas';
+getini("horas");    #files, colors
+
 $setupsave = strictparam('setup');
 $setupsave =~ s/\~24/\"/g;
 $date1 = strictparam('date1');
@@ -77,16 +144,16 @@ $browsertime = strictparam('browsertime');
 $Readings = strictparam('readings');
 
 #internal script, cookies
-%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
+%dialog = %{setupstring($datafolder, '', "$officium_name.dialog")};
 
 if (!$setupsave) {
-  %setup = %{setupstring($datafolder, '', 'horas.setup')};
+  %setup = %{setupstring($datafolder, '', "$officium_name.setup")};
 } else {
   %setup = split(';;;', $setupsave);
 }
-$officium = strictparam('officium');
-if (!$setupsave && !getcookies('horasp', 'parameters')) { setcookies('horasp', 'parameters'); }
-$ckname = ($officium =~ /officium/) ? 'horasgo' : ($Ck) ? 'horasgc' : 'horasg';
+
+if (!$setupsave && !getcookies("${officium_name}p", 'parameters')) { setcookies("${officium_name}p", 'parameters'); }
+$ckname = ($officium_name =~ /officium/) ? "${officium_name}go" : ($Ck) ? "${officium_name}gc" : "${officium_name}g";
 $csname = ($Ck) ? 'generalc' : 'general';
 if (!$setupsave && !getcookies($ckname, $csname)) { setcookies($ckname, $csname); }
 $setup{'parameters'} = clean_setupsave($setup{'parameters'});
@@ -98,26 +165,22 @@ $setupsave = printhash(\%setup, 1);
 $setupsave =~ s/\r*\n*//g;
 $setupsave =~ s/\"/\~24/g;
 $hora = '';
-precedence();    #for today
 $odate = $date1;
-$command = strictparam('command');
-if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Past)/i) { $command = "pray$1"; }
 
-if ($officium =~ /brevi/) {
-  $version = 'Divino Afflatu';
-  @versions = ($version);
-} else {
-  $version = strictparam('version');
-  @versions = load_versions($datafolder);
+$command = strictparam('command');
+if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Past)/i) {
+  $command = "pray$1";
 }
-if (!$version) { $version = ($version1) ? $version1 : 'Rubrics 1960'; }
-setmdir($version);
+
+
+my @ver = ();
+push(@ver, strictparam('version') || strictparam('version1') || 'Rubrics 1960');
+push(@ver, strictparam('version2') || 'Divino Afflatu') if ($compare);
+
 $testmode = strictparam('testmode');
-$kmonth = strictparam('kmonth');
-$kyear = strictparam('kyear');
-if (!$kmonth) { $kmonth = $month; }
-if (!$kyear) { $kyear = $year; }
-@origyear = split('-', gettoday());
+my($month,$day,$year) = split('-', gettoday());
+$kmonth = strictparam('kmonth') || $month;
+$kyear = strictparam('kyear') || $year;
 @monthnames = (
   'Januarius', 'Februarius', 'Martius', 'Aprilis', 'Majus', 'Junius',
   'Julius', 'Augustus', 'September', 'October', 'November', 'December'
@@ -145,23 +208,24 @@ if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com
 <INPUT TYPE=HIDDEN NAME=command VALUE="$command">
 <INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
+<INPUT TYPE=HIDDEN NAME=compare VALUE="$compare">
 <INPUT TYPE=HIDDEN NAME=readings VALUE="0">
 
 <P ALIGN=CENTER>
 PrintTag
 
-for ($i = $kyear - 9; $i <= $kyear; $i++) {
-  $yn = sprintf("%02i", $i);
-  print "<A HREF=# onclick=\"setky($yn)\">$yn</A>&nbsp;&nbsp;&nbsp;\n";
+for (my $i = $kyear - 9; $i <= $kyear + 10; $i++) {
+  $yn = sprintf("%04i", $i);
+  if ($i == $year) {
+    print "<A HREF=# onclick=\"callbrevi();\"><FONT COLOR=maroon>Hodie</FONT></A>&nbsp;&nbsp;&nbsp;\n";
+  }  else {
+    print "<A HREF=# onclick=\"setky($yn)\">$yn</A>&nbsp;&nbsp;&nbsp;\n";
+  }
 }
-print "<A HREF=# onclick=\"callbrevi();\"><FONT COLOR=maroon>Hodie</FONT></A>&nbsp;&nbsp;&nbsp;\n";
 
-for ($i = $kyear + 1; $i <= $kyear + 10; $i++) {
-  $yn = sprintf("%02i", $i);
-  print "<A HREF=# onclick=\"setky($yn)\">$yn</A>&nbsp;&nbsp;&nbsp;\n";
-}
 print "<BR><BR></FONT>\n";
-print "$version : <FONT COLOR=MAROON SIZE=+1><B><I>$title</I></B></FONT>\n";
+print "$ver[0]"; print " / $ver[1]" if ($compare);
+print " : <FONT COLOR=MAROON SIZE=+1><B><I>$title</I></B></FONT>\n";
 print "<BR><BR>\n";
 
 for ($i = 1; $i <= 12; $i++) {
@@ -179,72 +243,14 @@ if ($kmonth == 2 && leapyear($kyear)) { $to++; }
 
 for ($cday = 1; $cday <= $to; $cday++) {
   my $date1 = sprintf("%02i-%02i-%04i", $kmonth, $cday, $kyear);
-  $d1 = sprintf("%02i", $cday);
-  $winner = $commemoratio = $scriptura = $commemoratio1 = '';
-  %winner = %commemoratio = %scriptura = %commemoratio1 = {};
-  $initia = 0;
-  $laudesonly = '';
-  precedence($date1);    #for the daily item
-  @c1 = split(';;', $winner{Rank});
-  @c2 =
-    (exists($commemoratio{Rank})) ? split(';;', $commemoratio{Rank})
-    : (
-    exists($scriptura{Rank})
-      && ($c1[3] !~ /ex C[0-9]+[a-z]*/i
-      || ($version =~ /trident/i && $c1[2] !~ /vide C[0-9]/i))
-    ) ? split(';;', "Scriptura: $scriptura{Rank}")
-    : (exists($scriptura{Rank})) ? split(';;', "Tempora: $scriptura{Rank}")
-    : splice(@c2, @c2);
-  $smallgray = "1 maroon";
-  $c1 = $c2 = '';
-
-  if (@c1) {
-    my @cf = undef;
-    @cf = split('~', setheadline($c1[0], $c1[2]));
-    $c1 =
-        ($c1[3] =~ /(C1[0-9])/) ? setfont(' blue', $cf[0])
-      : (($c1[2] > 4 || ($c1[0] =~ /Dominica/i)) && $c1[1] !~ /feria/i) ? setfont($redfont, $cf[0])
-      : setfont($blackfont, $cf[0]);
-    $c1 = "<B>$c1</B>" . setfont($smallgray, "&nbsp;&nbsp;$cf[1]");
+  my $d1 = sprintf("%02i", $cday);
+  my(@c1,@c2) = ((),());
+  for (0..$compare) {
+    my($c1,$c2) = kalendar_entry($date1,$ver[$_],$compare);
+    push(@c1,$c1); push(@c2,$c2);
   }
-
-  if (@c2) {
-    my @cf = undef;
-    @cf = split('~', setheadline($c2[0], $c2[2]));
-    $c2 =
-        ($c2[3] =~ /(C1[0-9])/) ? setfont(' blue', $cf[0])
-      : ($c2[2] > 4) ? setfont($redfont, $cf[0])
-      : setfont($blackfont, $cf[0]);
-    $c2 = "<I>$c2</I>" . setfont($smallgray, "&nbsp;&nbsp;$cf[1]");
-  }
-  if ($winner =~ /sancti/i) { ($c2, $c1) = ($c1, $c2); }
-
-  #elsif ($c2) {$c2 .= $laudesonly;}
-  $c1 =~ s/Hebdomadam/Hebd/i;
-  $c1 =~ s/Quadragesima/Quadr/i;
-  if ($dirge) { $c1 .= setfont($smallblack, ' dirge'); }
-  if ($version !~ /1960/ && $initia) { $c1 .= setfont($smallfont, ' *I*'); }
-
-  if (!$c2 && $dayname[2]) {
-    $c2 = setfont($smallblack, $dayname[2]);
-  } elsif (!$c1 && $dayname[2]) {
-    $c1 = setfont($smallblack, $dayname[2]);
-  }
-
-  if ($version !~ /1955|1960/ && $winner{Rule} =~ /\;mtv/i) {
-    $c2 .= setfont($smallblack, ' m.t.v.');
-  }
-
-  if ( $version !~ /1960/
-    && $winner =~ /Sancti/
-    && exists($winner{Lectio1})
-    && $winner{Lectio1} !~ /\@Commune/i
-    && $winner{Lectio1} !~ /\!(Matt|Mark|Luke|John)\s+[0-9]+\:[0-9]+\-[0-9]+/i)
-  {
-    $c2 .= setfont($smallfont, " *L1*");
-  }
-  if (!$c1) { $c1 = "<P ALIGN=CENTER>_</P>"; }
-  if (!$c2) { $c2 = "<P ALIGN=CENTER>_</P>"; }
+  my $c1 = join('<BR>', @c1);
+  my $c2 = join('<BR>', @c2);
   print << "PrintTag";
 <TR><TD ALIGN=CENTER><A HREF=# onclick="callbrevi('$date1');">$d1</FONT></A></TD>
 <TD>$c1</TD>
@@ -256,7 +262,11 @@ PrintTag
 print << "PrintTag";
 </TABLE><BR>
 PrintTag
-print option_selector("Version", "document.forms[0].submit();", $version, @versions );
+my @versions = load_versions($datafolder);
+print option_selector("Version1", "document.forms[0].submit();", $ver[0], @versions);
+if ($compare) {
+  print option_selector("Version2", "document.forms[0].submit();", $ver[1], @versions);
+}
 print << "PrintTag";
 <P ALIGN=CENTER>
 <A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
@@ -284,6 +294,11 @@ print << "PrintTag";
 </BODY></HTML>
 PrintTag
 if ($Readings) { Readings(); }
+if ($compare) {
+  print '<P ALIGN=CENTER><A HREF="#" onclick="callkalendar(0)">Single Calendar</A>';
+} else {
+  print '<P ALIGN=CENTER><A HREF="#" onclick="callkalendar(1)">Compare Calendars</A>'; 
+}
 
 #*** horasjs()
 # javascript functions called by htmlhead
@@ -297,7 +312,15 @@ function callbrevi(date) {
   var officium = "$officium";
   if (!officium || !officium.match('.pl')) officium = "officium.pl";
   document.forms[0].date.value = date;
-  document.forms[0].action = officium;
+  document.forms[0].action = ((officium.match(/missa/)) ? '../missa/' : '' ) + officium;
+  document.forms[0].target = "_self"
+  document.forms[0].submit();
+}
+
+//calls compare kalendar
+function callkalendar(c) {
+  document.forms[0].action = 'kalendar.pl';
+  document.forms[0].compare.value = c;
   document.forms[0].target = "_self"
   document.forms[0].submit();
 }

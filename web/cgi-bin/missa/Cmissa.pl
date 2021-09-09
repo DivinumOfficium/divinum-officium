@@ -294,6 +294,7 @@ print << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
 <INPUT TYPE=HIDDEN NAME=accented VALUE="$accented">
+<INPUT TYPE=HIDDEN NAME=compare VALUE=1>
 </FORM>
 </BODY></HTML>
 PrintTag
@@ -407,7 +408,7 @@ function parchange() {
 
 //calls kalendar
 function callkalendar() {
-  document.forms[0].action = 'Ckalendar.pl';
+  document.forms[0].action = 'kalendar.pl';
   document.forms[0].target = "_self"
   document.forms[0].submit();
 }
