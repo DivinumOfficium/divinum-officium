@@ -55,10 +55,10 @@ our $temporaname = 'Tempora';
 our $communename = 'Commune';
 our $version = 'Rubrics 1960';
 
-require "do_io.pl";
-require "horascommon.pl";
-require "dialogcommon.pl";
-require "webdia.pl";
+require "$Bin/do_io.pl";
+require "$Bin/horascommon.pl";
+require "$Bin/dialogcommon.pl";
+require "$Bin/webdia.pl";
 
 sub kalendar_entry {
   my($date,$ver,$compare) = @_;
