@@ -1367,10 +1367,11 @@ sub oratio {
 
 sub getind {
   my ($office, $num, $day) = @_;
+
   if ($office !~ /Sancti/i) { return $num; }
   if ($hora =~ /Laudes/i) { return 2; }
   my $d = sprintf("-%02i", $day);
-  if ($office =~ /$d.*\.txt/i) { return 3; }
+  if (concurrent_office($office,$num,$day)) { return 3; }
   return 1;
 }
 
@@ -1378,14 +1379,17 @@ sub getind {
 #returns 1 if the office is concurrent
 sub concurrent_office {
   my ($office, $num, $day) = @_;
-  my $d = sprintf("%02i", $day);
+  my $office_mmdd = $1 if $office =~ /([0-9]+-[0-9]+)/;
+  my $transfered_to = transfered $office_mmdd;
+  $office_mmdd = $transfered_to if $transfered_to;
+  $office_dd = $1 if $office_mmdd =~ /[0-9]+-([0-9]+)/;
   if ($hora =~ /laudes/i) { return $num; }
 
-  if ($office eq $winner && $vespera == 1 && $office =~ /$d.*\.txt/) {
+  if ($office eq $winner && $vespera == 1 && $office_dd == $day) {
     $num = 0;
-  } elsif ($office eq $winner && $vespera == 3 && $office !~ /$d.*\.txt/) {
+  } elsif ($office eq $winner && $vespera == 3 && $office_dd != $day) {
     $num = 0;
-  } elsif ($office =~ /Sancti/i && $office !~ /$d.*\.txt/) {
+  } elsif ($office =~ /Sancti/i && $office_dd != $day) {
     $num = 0;
   }
   return $num;
