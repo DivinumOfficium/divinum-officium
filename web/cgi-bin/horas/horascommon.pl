@@ -1465,10 +1465,12 @@ sub nday {
 #*** transfered($tname | $sday)
 # returns true if the day for season or saint is transfered
 # otherwise false
+# true value is transfer key / new date
+# false value is undef
 sub transfered {
   my $str = shift;
-  if ($transfertemp && $str =~ /$transfertemp/i) { return 0; }
-  if ($transfer && $str =~ /$transfer/i) { return 0; }
+  if ($transfertemp && $str =~ /$transfertemp/i) { return undef; }
+  if ($transfer && $str =~ /$transfer/i) { return undef; }
   my $key;
 
   foreach $key (keys %transfer) {
@@ -1478,16 +1480,16 @@ sub transfered {
       && $transfer{$key} !~ /$key/
       && ($str =~ /$transfer{$key}/i || $transfer{$key} =~ /$str/i))
     {
-      return 1;
+      return $key;
     }
   }
 
   if (%transfertemp) {
     foreach $key (keys %transfertemp) {
-      if ($key !~ /dirge/i && $transfertemp{$key} =~ /$str/i && $transfer{$key} !~ /v\s*$/i) { return 1; }
+      if ($key !~ /dirge/i && $transfertemp{$key} =~ /$str/i && $transfer{$key} !~ /v\s*$/i) { return $key; }
     }
   }
-  return 0;
+  return undef;
 }
 
 #*** climit1960($commemoratio)
