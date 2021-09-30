@@ -107,11 +107,11 @@ sub kalendar_entry {
     $c1 = setfont($smallblack, $dayname[2]);
   }
 
-  if ($version !~ /1955|1960/ && $winner{Rule} =~ /\;mtv/i) {
+  if ($version !~ /1955|1960|Monastic/ && $winner{Rule} =~ /\;mtv/i) {
     $c2 .= setfont($smallblack, ' m.t.v.');
   }
 
-  if ( $version !~ /1960/
+  if ( $version !~ /1960|Monastic/
     && $winner =~ /Sancti/
     && exists($winner{Lectio1})
     && $winner{Lectio1} !~ /\@Commune/i
