@@ -1370,19 +1370,26 @@ sub getind {
 
   if ($office !~ /Sancti/i) { return $num; }
   if ($hora =~ /Laudes/i) { return 2; }
-  my $d = sprintf("-%02i", $day);
   if (concurrent_office($office,$num,$day)) { return 3; }
   return 1;
 }
 
 #*** concurrent_office($office, $num, $day)
-#returns 1 if the office is concurrent
+#returns $num if the office is concurrent and Sancti
 sub concurrent_office {
   my ($office, $num, $day) = @_;
-  my $office_mmdd = $1 if $office =~ /([0-9]+-[0-9]+)/;
-  my $transfered_to = transfered $office_mmdd;
-  $office_mmdd = $transfered_to if $transfered_to;
-  $office_dd = $1 if $office_mmdd =~ /[0-9]+-([0-9]+)/;
+  my $office_dd;
+
+  # This only makes sense for Sancti.
+  if ( $office =~ m {Sancti.*/([0-9]+-[0-9]+)} )
+  {
+    my $office_mmdd = $1;
+    my $transfered_to = transfered $office_mmdd;
+    $office_mmdd = $transfered_to if $transfered_to;
+    $office_dd = $1 if $office_mmdd =~ /[0-9]+-([0-9]+)/;
+  }
+  return 0 unless $office_dd;
+
   if ($hora =~ /laudes/i) { return $num; }
 
   if ($office eq $winner && $vespera == 1 && $office_dd == $day) {

@@ -1469,6 +1469,7 @@ sub nday {
 # false value is undef
 sub transfered {
   my $str = shift;
+  return unless $str;
   if ($transfertemp && $str =~ /$transfertemp/i) { return undef; }
   if ($transfer && $str =~ /$transfer/i) { return undef; }
   my $key;
