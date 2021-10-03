@@ -424,10 +424,10 @@ while ( $update?
     $params{$datekey}="$m1-$d1-$y1";
 
     # Encode for URL transmission
-    $_ = url_encode($_) for values %params;
+    my %encoded = %params;
+    $_ = url_encode($_) for values %encoded;
 
-    #print STDERR Dumper(\%params);             # DEBUG
-    $url->query_form(\%params);
+    $url->query_form(\%encoded);
   }
   print STDERR "URL: $url\n";
 
