@@ -247,7 +247,7 @@ PrintTag
   print << "PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=0 HEIGHT=$height><TR>
-<TD><IMG SRC="$htmlurl/missa.gif" HEIGHT=$height></TD>
+<TD><IMG SRC="$htmlurl/missa.jpg" HEIGHT=$height></TD>
 </TR></TABLE>
 <BR>
 </P>
