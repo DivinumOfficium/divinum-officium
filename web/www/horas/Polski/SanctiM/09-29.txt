@@ -1,3 +1,9 @@
+[Lectio6]
+@Sancti/09-29:Lectio5:s/ Ci tedy.*//s
+
+[Lectio7]
+@Sancti/09-29:Lectio5:s/.*Ci tedy/Ci tedy/s
+
 [Lectio10]
 @Sancti/09-29:Lectio8:s/ Jeśli.*//
 
