@@ -132,8 +132,21 @@ $q = new CGI;
 #*** get parameters
 my $compare =  strictparam('compare') || 0;
 my $officium = strictparam('officium') || 'officium.pl';
-if ($compare && $officium !~ /^C/) { $officium = 'C' . $officium; }
-unless ($compare) { $officium =~ s/^C//; }
+
+# return to Compare version iff $compare
+# except there is no P Compare version
+if ($compare)
+{
+  $officium = "C$officium" unless $officium =~ /^[PC]/;
+}
+else
+{
+  $officium =~ s/^C//;
+}
+
+# use the right date arg
+my $date_arg = $officium =~ /Pofficium/? 'date1': 'date';
+
 my $officium_name = $officium =~ /missa/ ? 'missa' : 'horas';
 getini("horas");    #files, colors
 
@@ -311,7 +324,7 @@ function callbrevi(date) {
   if (!date) date = '';
   var officium = "$officium";
   if (!officium || !officium.match('.pl')) officium = "officium.pl";
-  document.forms[0].date.value = date;
+  document.forms[0].$date_arg.value = date;
   document.forms[0].action = ((officium.match(/missa/)) ? '../missa/' : '' ) + officium;
   document.forms[0].target = "_self"
   document.forms[0].submit();
