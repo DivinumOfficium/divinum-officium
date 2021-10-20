@@ -461,9 +461,11 @@ function startup() {
     var d = new Date();
     var day = d.getDate();
     document.forms[0].browsertime.value = (d.getMonth() + 1) + "-" + day + "-" + d.getFullYear();
-    var a = (day > $day) ? "-+" : (day < $day) ? "--" : "";
-    document.forms[0].date.value = document.forms[0].browsertime.value + a;
-	  if (a) document.forms[0].submit();
+    if (!"$date1") {
+      var a = (day > $day) ? "-+" : (day < $day) ? "--" : "";
+      document.forms[0].date.value = document.forms[0].browsertime.value + a;
+      if (a) document.forms[0].submit();
+    }
   }
   var i = 1;
   while (i <= $searchvalue) {
