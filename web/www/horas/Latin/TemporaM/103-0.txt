@@ -12,7 +12,7 @@
 @Tempora/103-0:Lectio3:s/!.*// s/14 .*//s
 
 [Lectio4]
-@Tempora/103-0:Lectio3
+@Tempora/103-0:Lectio3:s/12-/14-/ s/12 .*14/14/s
 
 [Responsory4]
 @Tempora/101-1:Responsory1
