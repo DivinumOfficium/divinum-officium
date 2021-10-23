@@ -2,7 +2,7 @@
 @Tempora/102-0:Lectio5:s/For not .*//s
 
 [Lectio7]
-@Tempora/102-0:Lectio5:s/.*For not long/For not long/s
+@Tempora/102-0:Lectio5:s/.*For not long/For not long/s s/$/~/
 @Tempora/102-0:Lectio6:s/Then they.*//s
 
 [Lectio8]

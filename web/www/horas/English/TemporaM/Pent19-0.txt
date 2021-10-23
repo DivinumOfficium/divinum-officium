@@ -2,7 +2,7 @@
 @Tempora/Pent19-0:Lectio8:s/Which .*//s
 
 [Lectio11]
-@Tempora/Pent19-0:Lectio8:s/.* Which /Which /s
+@Tempora/Pent19-0:Lectio8:s/.* Which /Which /s s/$/~/
 @Tempora/Pent19-0:Lectio9:s/We profess .*//s
 
 [Lectio12]

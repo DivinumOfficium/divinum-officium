@@ -10,7 +10,7 @@
 @Tempora/Pent19-0:Lectio8:s/Qui fecit .*//s
 
 [Lectio11]
-@Tempora/Pent19-0:Lectio8:s/.* Qui fecit /Qui fecit /s
+@Tempora/Pent19-0:Lectio8:s/.* Qui fecit /Qui fecit /s s/$/~/
 @Tempora/Pent19-0:Lectio9:s/Ex duábus .*//s
 
 [Lectio12]
