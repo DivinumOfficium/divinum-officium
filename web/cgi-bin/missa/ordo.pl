@@ -43,10 +43,10 @@ sub ordo {
   if ($rule =~ /prelude/i) {
     my $str = $winner{Prelude};
     $str = norubr1($str);
-    unshift(@script1, split('_', $str));
+    unshift(@script1, split('_', $str), '');
     $str = $winner2{Prelude};
     $str = norubr1($str);
-    unshift(@script2, split('_', $str));
+    unshift(@script2, split('_', $str), '');
   }
 
   if ($rule =~ /Post Missam/i) {
