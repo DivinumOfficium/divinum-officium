@@ -19,6 +19,13 @@ Weselcie * i radujcie, że imiona wasze napisane są w niebiesiech, rzekł Pan.;
 V. Bardzo zaszczyceni są przyjaciele Twoi Boże.
 R. Bardzo się zmocniło ich panowanie.
 
+[Lectio6]
+@Commune/C1:Lectio5:s/Bo .*//s
+
+[Lectio7]
+@Commune/C1:Lectio5:s/.* Bo /Bo /s s/$/~/
+@Commune/C1:Lectio6:s/zaprzał .*/zaprzał./s
+
 [Responsory8]
 R. Postanowisz ich książętami nad wszystką ziemią: † będą wspominać Imię Twoje, Panie.
 * We wszystkich narodach i pokoleniach.
