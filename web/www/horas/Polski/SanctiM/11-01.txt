@@ -1,3 +1,9 @@
+[Lectio5]
+@Sancti/11-01:Lectio4:s/, i gdy .*/./s
+
+[Lectio6]
+@Sancti/11-01:Lectio4:s/.* i gdy /I gdy /s
+
 [Lectio10]
 @Sancti/11-01:Lectio8:s/A naucza .*//s
 
