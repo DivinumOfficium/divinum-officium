@@ -3,6 +3,7 @@
 [Rule]
 12 lectiones
 Psalmi Dominica
+Antiphonas horas
 
 [Capitulum Vespera]
 @Sancti/11-01
@@ -36,7 +37,7 @@ Laudem dícite * Deo nostro omnes Sancti ejus: et qui timétis eum pusílli et m
 @Sancti/11-01:Lectio1:s/-8/-7/ s/8 .*//s
 
 [Lectio2]
-@Sancti/11-01:Lectio1:s/2-// s/:8/:8, 5:1-5/ s/2 .*8 /8 /s
+@Sancti/11-01:Lectio1:2-9 s/2-// s/:8/:8, 5:1-5/ s/2 .*8 /8 /s
 @Sancti/11-01:Lectio2:s/!.*// s/6 .*//s
 
 [Lectio3]
