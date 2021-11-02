@@ -1,3 +1,13 @@
+[Doxology]
+@Sancti/10-DU::s/Jezu, niech Tobie będzie chwała,/Chwała Tobie, Panie/
+
+[Hymnus Vespera]
+@Sancti/10-DU::1-35
+@Sancti/10-DU:Doxology:s/Jezu, niech Tobie będzie chwała,/Chwała Tobie, Panie/
+
+[Hymnus Matutinum]
+@Sancti/10-DU::1-30
+@Sancti/10-DU:Doxology:s/Jezu, niech Tobie będzie chwała,/Chwała Tobie, Panie/
 
 [Lectio5]
 @Sancti/10-DU:Lectio4:s/Ponieważ .* Oddawna/Oddawna/s s/Lecz, .*//s
@@ -9,7 +19,7 @@
 @Sancti/10-DU:Lectio5:s/.* Aby zaś /Aby zaś /s s/, zwaną.*/./s
 
 [Lectio8]
-@Sancti/10-DU:Lectio6:s/Albowiem, .* świata.//s s/który .* odrodzenie://s s/Przeto.*//s
+@Sancti/10-DU:Lectio6:s/Albowiem .* świata.//s s/który .* odrodzenie://s s/Przeto.*//s
 
 [Lectio9]
 @Sancti/10-DU:Lectio7:s/Czy tylko .*//s
@@ -22,4 +32,3 @@
 
 [Lectio12]
 @Sancti/10-DU:Lectio8:s/.* Mógł zaś /Mógł zaś /s
-
