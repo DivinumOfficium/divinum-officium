@@ -438,6 +438,7 @@ sub getrank {
     $dirge = 1 if (($dirgeline && $cdayd && $dirgeline =~ /$cdayd/) || $saint{Rule} =~ /Vesperae Defunctorum/);
     if ($cday && $cday !~ /tempora/i) { $cday = "$sanctiname/$cday"; }
     if ($testmode =~ /^Season$/i) { $cday = 'none'; }
+    
     if (-e "$datafolder/Latin/$cday.txt") {
       $cname = "$cday.txt";
       %csaint = updaterank(setupstring($datafolder, 'Latin', "$cname"));
@@ -599,8 +600,6 @@ sub getrank {
       && $dayofweek == 5
       && $crank !~ /;;[2-7]/
       && $srank !~ /;;[5-7]/
-      && $crank !~ /Vigil/i
-      && $csaint{Rank} !~ /vigilia/i
       && $BMVSabbato == 1
       && $version !~ /(1960|Newcal)/
       && $saint{Rule} !~ /BMV/i
@@ -769,7 +768,6 @@ sub getrank {
           && $trank[2] < 2
           && $srank[0] !~ /Vigil/i
 	  && $BMVSabbato == 1
-          && $csaint{Rank} !~ /Vigil/i
           && $version !~ /(1960|Newcal)/)
       )
       )
