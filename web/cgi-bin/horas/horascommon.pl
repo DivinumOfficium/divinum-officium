@@ -316,7 +316,7 @@ sub getrank {
     %tempora = %{officestring($datafolder, 'Latin', $tname)};
     $trank = $tempora{Rank};
 
-    if ($hora =~ /(Vespera|Completorium)/i && $tempora{Rule} =~ /No secunda Vespera/i && $version !~ /1960/) {
+    if ($hora =~ /(Vespera|Completorium)/i && $tempora{Rule} =~ /No secunda Vespera/i && $version !~ /1960|Monastic/i) {
       $trank = '';
       %tempora = undef;
       $tname = '';
