@@ -1,0 +1,6 @@
+[Oratio 2]
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+@Commune/C9:Oratio_Fid:s/.woich/twoich Zakonu naszego/
+
+[Oratio mortuorum1]
+@Sancti/11-02::s/Twoich/Twoich Zakonu naszego/
