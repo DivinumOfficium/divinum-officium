@@ -1,0 +1,11 @@
+[UTF8-ałś]
+
+[Lectio6]
+@Tempora/102-0:Lectio5:s/Boć //s
+
+[Lectio7]
+@Tempora/102-0:Lectio5:s/.* Boć /Boć /s s/$/~/
+@Tempora/102-0:Lectio6:s/Potem.*//s
+
+[Lectio8]
+@Tempora/102-0:Lectio6:s/.* Potem/Potem/s
