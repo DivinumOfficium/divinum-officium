@@ -1292,7 +1292,7 @@ sub oratio {
        $hora =~ /(laudes|vespera)/i
     && $commemoratio
     && ( $hora =~ /laudes/i
-      || $version !~ /1960/
+      || $version !~ /1960|Monastic/i
       || $rank < 6
       || $commemoratio{Rank} =~ /(Dominica|;;6)/i
       || ($commemoratio =~ /Tempora/i && $commemoratio{Rank} =~ /;;[23]/))
@@ -1484,7 +1484,7 @@ sub commemoratio {
   my $code = 10;
 
   if ( $rank > 6.51
-    || ($version =~ /(1955|1960)/ && $winner{Rank} =~ /Dominica/i)
+    || ($version =~ /(1955|1960|Monastic)/i && $winner{Rank} =~ /Dominica/i)
     || ($rank >= 6 && ($dayname[0] !~ /Pasc[07]/ || $dayofweek < 2) && $item !~ /winner/i))
   {
     return;

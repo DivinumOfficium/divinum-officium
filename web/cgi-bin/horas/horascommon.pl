@@ -316,7 +316,7 @@ sub getrank {
     %tempora = %{officestring($datafolder, 'Latin', $tname)};
     $trank = $tempora{Rank};
 
-    if ($hora =~ /(Vespera|Completorium)/i && $tempora{Rule} =~ /No secunda Vespera/i && $version !~ /1960/) {
+    if ($hora =~ /(Vespera|Completorium)/i && $tempora{Rule} =~ /No secunda Vespera/i && $version !~ /1960|Monastic/i) {
       $trank = '';
       %tempora = undef;
       $tname = '';
@@ -426,7 +426,7 @@ sub getrank {
   if ($transfer{$cday} !~ /tempora/i && transfered($cday)) { $cday = 'none'; }
   if (exists($transfer{$cday}) && $transfer{$cday} !~ /Tempora/i) { $cday = $transfer{$cday}; }
   if ($tname =~ /Nat/ && $cday =~ /Nat/) { $cday = 'none'; }
-
+  $BMVSabbato = ($cday =~ /v/) ? 0 : 1;
   if ($hora =~ /(vespera|completorium)/i) {
     if ($cday !~ /(tempora|DU)/i) { $cday = "$kalendar{$cday}"; }
     my $cdayd = $cday;
@@ -438,7 +438,7 @@ sub getrank {
     $dirge = 1 if (($dirgeline && $cdayd && $dirgeline =~ /$cdayd/) || $saint{Rule} =~ /Vesperae Defunctorum/);
     if ($cday && $cday !~ /tempora/i) { $cday = "$sanctiname/$cday"; }
     if ($testmode =~ /^Season$/i) { $cday = 'none'; }
-
+    
     if (-e "$datafolder/Latin/$cday.txt") {
       $cname = "$cday.txt";
       %csaint = updaterank(setupstring($datafolder, 'Latin', "$cname"));
@@ -600,7 +600,7 @@ sub getrank {
       && $dayofweek == 5
       && $crank !~ /;;[2-7]/
       && $srank !~ /;;[5-7]/
-      && $crank !~ /Vigil/i
+      && $BMVSabbato == 1
       && $version !~ /(1960|Newcal)/
       && $saint{Rule} !~ /BMV/i
       && $trank !~ /;;[2-7]/
@@ -767,7 +767,7 @@ sub getrank {
           && $dayofweek == 5
           && $trank[2] < 2
           && $srank[0] !~ /Vigil/i
-          && $csaint{Rank} !~ /Vigil/i
+	  && $BMVSabbato == 1
           && $version !~ /(1960|Newcal)/)
       )
       )
