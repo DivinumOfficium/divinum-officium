@@ -4,9 +4,6 @@
 [Rank1570]
 Św. Klemensa Papieża i Męczennika;;Semiduplex;;2;;vide C2
 
-[RankNewcal]
-Św. Klemensa Papieża i Męczennika;;Duplex optional;;2;;vide C2
-
 [Rule]
 vide C2;
 9 lectiones
@@ -33,14 +30,26 @@ $Oremus
 Spraw, Wszechmogący Boże, abyśmy obchodząc uroczystość błogosławionej Felicyty, Męczenniczki Twojej, pod opieką jej zasług i modlitw zostawali.
 $Per Dominum
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
+[Responsory1o]
+R. Gdy modlił się święty Klemens, objawił mu się Baranek Boży.
+* Spod którego stopy wypływał strumień żywy, potok rwący dający radość miastu Bożemu.
+V. Widziałem nad górą Baranka stojącego.
+R. Spod którego stopy wypływał strumień żywy, potok rwący dający radość miastu Bożemu.
+
+[Responsory2o]
+R. Wszyscy jednym głosem mówili: Módl się za  nami, święty Klemensie;
+* Abyśmy się stali godnymi, obietnic Chrystusowych.
+V. Nie z mojej zasługi posłał mię do was Pan, abym brał udział w waszych koronach męczeństwa.
+R. Abyśmy się stali godnymi, obietnic Chrystusowych.
+
+[Responsory3o]
+R. Dałeś Panie mieszkanie męczennikowi twojemu Klemensowi, w morzu, na kształt kościoła marmurowego, Anielskimi rękami zgotowane:
+* Drogę czyniąc ludowi ziemie, aby ogłaszał dziwy twoje.
+V. Dałeś Panie, świętym twoim drogę w morzu i po rzekach ścieżkę.
+R. Drogę czyniąc ludowi ziemie, aby ogłaszał dziwy twoje.
 
 [Ant 2]
 Gdy począł iść ku morzu, * lud wołał głosem wielkim: Panie Jezu Chryste, zbaw go: a Klemens ze łzami zawołał: Przyjmij, Ojcze, ducha mego.
-
-[Ant Vespera 3]
-@:Ant Vespera:s/116/115/
 
 [Ant 3]
 Dałeś, Panie, * mieszkanie Męczennikowi Twojemu, Klemensowi, w morzu, na kształt marmurowej świątyni, rękoma anielskiemi zgotowanej: gotując drogę dla mieszkańców ziemi, aby opowiadali cuda Twoje.
