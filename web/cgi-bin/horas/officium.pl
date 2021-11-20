@@ -403,6 +403,7 @@ PrintTag
 <INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
 <INPUT TYPE=HIDDEN NAME=accented VALUE="$accented">
+<INPUT TYPE=HIDDEN NAME=version1 VALUE="$version">
 <INPUT TYPE=HIDDEN NAME=caller VALUE='0'>
 <INPUT TYPE=HIDDEN NAME=compare VALUE=0>
 <INPUT TYPE=HIDDEN NAME='notes' VALUE="$notes">
@@ -429,7 +430,7 @@ sub headline {
 $comment<BR><BR>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
 &nbsp;<FONT COLOR=RED SIZE=+1>$version</FONT></P>
-<P ALIGN=CENTER><A HREF="Cofficium.pl">Compare</A>
+<P ALIGN=CENTER><A HREF=# onclick="callcompare()">Compare</A>
 &nbsp;&nbsp;&nbsp;<A HREF=# onclick="callmissa();">Sancta Missa</A>
 &nbsp;&nbsp;&nbsp;
 <LABEL FOR=date CLASS=offscreen>Date</LABEL>
@@ -566,6 +567,13 @@ function callkalendar() {
 //calls missa
 function callmissa() {
   document.forms[0].action = "../missa/missa.pl";
+  document.forms[0].target = "_self"
+  document.forms[0].submit();
+}
+
+//calls compare
+function callcompare() {
+  document.forms[0].action = "Cofficium.pl";
   document.forms[0].target = "_self"
   document.forms[0].submit();
 }
