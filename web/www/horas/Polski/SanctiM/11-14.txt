@@ -2,5 +2,25 @@
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
 @Commune/C9:Oratio_Fid:s/.woich/twoich Zakonu naszego/
 
+[Oratio mortuorum]
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+@Commune/C9:Oratio_Fid:s/.woich/twoich Zakonu naszego/
+
 [Oratio mortuorum1]
 @Sancti/11-02::s/Twoich/Twoich Zakonu naszego/
+
+[Special Prima]
+Psalmi feriales
+
+@Sancti/11-02:Oratio mortuorum2:s/t.woich/twoich Zakonu naszego/
+
+&martyrologium
+
+V. W wiecznéj pamiątce będzie sprawiedliwy.
+R. Nie będzie się bał posłuchu złego.
+_
+$Oremus
+v. Boże, dawco przebaczenia i zbawienia ludzkiego miłośniku: błagamy łaskawości Twojej, abyś duszom braci naszego zgromadzenia, którzy z tego świata zeszli, za wstawieniem się błogosławionej Marji, zawsze Panny i wszystkich Świętych Twoich, do uczestnictwa w wiecznej szczęśliwości dojść dozwolił. Przez Chrystusa Pana naszego.
+R. Amen.
+
+&special('Conclusio', 'Latin')

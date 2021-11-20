@@ -1,5 +1,8 @@
 @Sancti/11-16
 
+[Rule]
+Antiphonas horas
+
 [Hymnus Matutinum]
 Mira noctúrnis, modulánte lingua,
 Gesta Gertrúdis celebrémus horis,
@@ -116,8 +119,7 @@ Amen.
 O digníssima * Christi sponsa, quam lux prophetíæ illustávit, zelus apostólicus inflammávit, láurea vírginum coronávit, divíni amóris incéndium consummávit.
 
 [Capitulum Sexta]
-!Cant 8:6
-v. Pone me ut signaculum super cor tuum, ut signaculum super brácchium tuum, quia fortis est ut mors diléctio.
+@:Lectio2:s/-7// s/6 /v. / s/, dura.*/.\n/s
 $Deo gratias
 
 [Capitulum Nona]
