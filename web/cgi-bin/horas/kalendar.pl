@@ -191,7 +191,7 @@ push(@ver, strictparam('version') || strictparam('version1') || 'Rubrics 1960');
 push(@ver, strictparam('version2') || 'Divino Afflatu') if ($compare);
 
 $testmode = strictparam('testmode');
-my($month,$day,$year) = split('-', gettoday());
+my($month,$day,$year) = split('-', strictparam($date_arg) || gettoday());
 $kmonth = strictparam('kmonth') || $month;
 $kyear = strictparam('kyear') || $year;
 @monthnames = (
