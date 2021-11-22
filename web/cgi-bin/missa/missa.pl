@@ -317,7 +317,7 @@ sub headline {
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT><P>
-<P ALIGN=CENTER><A HREF="Cmissa.pl">Compare</A>
+<P ALIGN=CENTER><A HREF=# onclick="callcompare()">Compare</A>
 &nbsp;&nbsp;&nbsp;<A HREF=# onclick="callofficium();">Divinum Officium</A>
 &nbsp;&nbsp;&nbsp;
 <LABEL FOR=date CLASS=offscreen>Date</LABEL>
@@ -419,6 +419,13 @@ function callkalendar() {
 //calls officium
 function callofficium() {
   document.forms[0].action = '../horas/officium.pl';
+  document.forms[0].target = "_self"
+  document.forms[0].submit();
+}
+
+//calls compare
+function callcompare() {
+  document.forms[0].action = "Cmissa.pl";
   document.forms[0].target = "_self"
   document.forms[0].submit();
 }

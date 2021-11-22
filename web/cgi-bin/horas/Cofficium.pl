@@ -339,7 +339,7 @@ PrintTag
   print << "PrintTag";
 <BR>
 <P ALIGN=CENTER>
-<A HREF="officium.pl">One version</A>
+<A HREF=# onclick="callbrevi(\'$date1\')">One version</A>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="pset('parameters')">Options</A>
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -534,6 +534,13 @@ function parchange() {
 //calls kalendar
 function callkalendar() {
   document.forms[0].action = 'kalendar.pl';
+  document.forms[0].target = "_self"
+  document.forms[0].submit();
+}
+
+function callbrevi(date) {
+  document.forms[0].date.value = date;
+  document.forms[0].action = 'officium.pl'
   document.forms[0].target = "_self"
   document.forms[0].submit();
 }
