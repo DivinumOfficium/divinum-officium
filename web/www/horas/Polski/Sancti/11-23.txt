@@ -1,4 +1,46 @@
-@Sancti/11-23t
+[Rank]
+Św. Klemensa Papieża i Męczennika;;Duplex;;3;;vide C2
 
-[Ant 3]
+[Rank1570]
+Św. Klemensa Papieża i Męczennika;;Semiduplex;;2;;vide C2
+
+[RankNewcal]
+Św. Klemensa Papieża i Męczennika;;Duplex optional;;2;;vide C2
+
+[Rule]
+vide C2;
+9 lectiones
+OPapaM=Klemensa;
+
+[Ant Vespera]
+Gdy modlił się * święty Klemens, objawił mu się Baranek Boży.;;109
+Nie z mojej zasługi * posłał mię do was Pan, abym brał udział w waszych koronach męczeństwa.;;110
+Widziałem nad górą * Baranka stojącego, spod którego stopy wypływał strumień żywy.;;111
+Spod którego stopy * wypływał strumień żywy, potok rwący dający radość miastu Bożemu.;;112
+Wszystkie narody * wokół uwierzyły Chrystusowi Panu.;;116
+
+[Ant 1]
+Prośmy wszyscy * Pana naszego, Jezusa Chrystusa, by źródło żywe wyznawcom swym otworzył.
+
+[Oratio]
+Boże, który corocznie nas uweselasz uroczystością świętego Klemensa, Męczennika Twego i Biskupa, spraw miłościwie, niech, czcząc jego narodzenie do życia wiecznego, naśladujemy stałość, z jaką poniósł męczeństwo.
+$Per Dominum
+
+[Commemoratio]
+!Wspomnienie Św. Felicyty Męczenniczki
+@Commune/C7:Oratio proper
+$Oremus
+Spraw, Wszechmogący Boże, abyśmy obchodząc uroczystość błogosławionej Felicyty, Męczenniczki Twojej, pod opieką jej zasług i modlitw zostawali.
+$Per Dominum
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
+
+[Ant 2]
+Gdy począł iść ku morzu, * lud wołał głosem wielkim: Panie Jezu Chryste, zbaw go: a Klemens ze łzami zawołał: Przyjmij, Ojcze, ducha mego.
+
+[Ant Vespera 3]
+@:Ant Vespera:s/116/115/
+
+[Ant 3](rubrica divino aut rubrica 1960 aut rubrica innovata)
 Dałeś, Panie, * mieszkanie Męczennikowi Twojemu, Klemensowi, w morzu, na kształt marmurowej świątyni, rękoma anielskiemi zgotowanej: gotując drogę dla mieszkańców ziemi, aby opowiadali cuda Twoje.
