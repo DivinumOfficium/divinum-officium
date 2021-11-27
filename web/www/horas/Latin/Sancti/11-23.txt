@@ -30,19 +30,40 @@ $Oremus
 v. Præsta, quǽsumus, omnípotens Deus: ut, beátæ Felicitátis Mártyris tuæ solémnia recenséntes, méritis ipsíus protegámur et précibus. 
 $Per Dominum
 
-[Responsory4]
+[Lectio1](rubrica tridentina)
+@Commune/C2
+
+[Responsory1o]
 R. Oránte sancto Cleménte, appáruit ei Agnus Dei, 
 * De sub cujus pede fons vivus emánat: flúminis ímpetus lætíficat civitátem Dei.
 V. Vidi supra montem Agnum stántem.
 R. De sub cujus pede fons vivus emánat: flúminis ímpetus lætíficat civitátem Dei.
 
-[Responsory5]
+[Responsory1]
+@:Responsory1o
+
+[Responsory1](rubrica divino aut rubrica 1955)
+@Commune/C2
+
+[Lectio2](rubrica tridentina)
+@Commune/C2
+
+[Responsory2o]
 R. Omnes una voce dixérunt: Ora pro nobis, sancte Clemens; 
 * Ut digni efficiámur promissiónibus Christi.
 V. Non meis méritis ad vos me misit Dóminus vestris corónis partícipem fíeri.
 R. Ut digni efficiámur promissiónibus Christi.
 
-[Responsory6]
+[Responsory2]
+@:Responsory2o
+
+[Responsory2](rubrica divino aut rubrica 1955)
+@Commune/C2
+
+[Lectio3](rubrica tridentina)
+@Commune/C2
+
+[Responsory3o]
 R. Dedísti, Dómine, habitáculum Mártyri tuo Cleménti in mari, in modum templi marmórei angélicis mánibus præparátum: 
 * Iter præbens pópulo terræ, ut enárrent mirabília tua.
 V. Dedísti, Dómine, Sanctis tuis viam in mari, et in flumínibus sémitam.
@@ -50,25 +71,37 @@ R. Iter præbens pópulo terræ, ut enárrent mirabília tua.
 &Gloria
 R. Iter præbens pópulo terræ, ut enárrent mirabília tua.
 
+[Responsory3]
+@:Responsory3o
+
+[Responsory3](rubrica divino aut rubrica 1955)
+@Commune/C2
+
 [Lectio4]
 Clemens, Románus, Faustíni fílius, de regióne Cǽlii montis, discípulus beáti Petri, cujus méminit Paulus scribens ad Philippénses: Etiam rogo et te, germáne compar, ádjuva illas quæ mecum laboravérunt in Evangélio, cum Cleménte et céteris adjutóribus meis, quorum nómina sunt in libro vitæ. Hic septem Urbis regiónes divísit septem notáriis, síngulas síngulis attríbuens, qui passiónes Mártyrum et res ab eis gestas, diligentíssime conquisítas, lítteris mandárent. Multa scripsit et ipse accuráte et salutáriter, quibus christiánam religiónem illustrávit.
 
-[Responsory1](rubrica 1960 aut rubrica innovata)
-@:Responsory4
+[Responsory4](rubrica divino aut rubrica 1955)
+@:Responsory1o
 
 [Lectio5]
 Cum autem doctrína ac vitæ sanctitáte multos ad Christi fidem convérteret, a Trajáno imperatóre relegátus est trans mare Pónticum in solitúdine urbis Chersónæ; in qua duo míllia Christianórum réperit, qui ab eódem Trajáno condemnáti fúerant. Qui cum in eruéndis et secándis marmóribus aquæ penúria laborárent, Clemens, facta oratióne, in vicínum collem ascéndit, in cujus jugo vidit Agnum déxtero pede fontem aquæ dulcis, qui inde scatébat, attingéntem; ubi omnes sitim explevérunt. Eóque miráculo multi infidéles, ad Christi fidem convérsi, Cleméntis étiam sanctitátem venerári cœpérunt.
 
-[Responsory2](rubrica 1960 aut rubrica innovata)
-@:Responsory5
+[Responsory5](rubrica divino aut rubrica 1955)
+@:Responsory2o
 
 [Lectio6]
 Quibus concitátus Trajánus, misit illuc qui Cleméntem, alligáta ad ejus collum ánchora, in profúndum dejícerent. Quod cum factum esset, Christiánis ad littus orántibus, mare ad tria milliária recéssit; eóque illi accedéntes, ædículam marmóream in templi formam et intus arcam lápideam, ubi Mártyris corpus cónditum est. Ecclésia étiam in eo ínsulæ loco unde divínitus fons manárat, ejúsdem nómine dedicáta est. Vixit in pontificátu annos novem, menses sex, dies sex. Fecit ordinatiónes duas mense Decémbri, quibus creávit presbýteros decem, diáconos duos, epíscopos per divérsa loca quíndecim.
 
-[Responsory3](rubrica 1960 aut rubrica innovata)
-@:Responsory6
+[Responsory6](rubrica divino aut rubrica 1955)
+@:Responsory3o
 
-[Lectio7](rubrica 1570 aut rubrica 1910)
+[Lectio7]
+@Commune/C4:Lectio71
+
+[Lectio8]
+@Commune/C4:Lectio81
+
+[Lectio7](rubrica tridentina)
 Léctio sancti Evangélii secúndum Matthǽum
 !Matt 24:42-45
 In illo témpore: Dixit Jesus discípulis suis: Vigiláte, quia nescítis qua hora Dóminus vester ventúrus sit. Et réliqua.
@@ -77,15 +110,9 @@ Homilía sancti Hilárii Epíscopi
 !Comment. in Matth. Can 26
 Ut ignorántiam illam diéi ómnibus táciti, non sine útilis siléntii ratióne esse scirémus, vigiláre nos Dóminus propter advéntum furis admónuit, et oratíonum assiduitáte deténtos ómnibus præceptórum suórum opéribus inhærére. Furem enim esse osténdit zábulum, ad detrahénda ex nobis spólia pervígilem, et córporum nostrórum dómibus insidiántem: ut ea incuriósis nobis, et somno déditis, consiliórum suórum atque illecebrárum jáculis perfódiat. Parátos ígitur esse nos cónvenit: quia diéi ignorátio inténtam sollicitúdinem suspénsæ exspectatiónis exágitet.
 
-[Lectio8](rubrica 1570 aut rubrica 1910)
+[Lectio8](rubrica tridentina)
 !Can 27
 Quisnam est fidélis servus et prudens, quem constítuit Dóminus super famíliam suam? Quamquam in commúne nos ad indeféssam vigilántiæ curam adhortétur: speciálem tamen pópuli princípibus, id est, epíscopis, in exspectatióne adventúque suo sollicitúdinem mandat. Hunc enim servum fidélem atque prudéntem, præpósitum famíliæ signíficat, cómmoda atque utilitátes commíssi sibi pópuli curántem. Qui si dicto aúdiens, et præcéptis obédiens erit, id est, si doctrínæ opportunitáte et veritáte infírma confírmet, disrúpta consólidet, depraváta convértat, et verbum vitæ in æternitátis cibum aléndæ famíliæ dispéndat, atque hæc agens, hisque ímmorans deprehendátur: glóriam a Dómino tamquam dispensátor fidélis et víllicus útilis consequétur, et super ómnia bona constituétur; id est, in Dei glória collocábitur, quia nihil sit ultra, quod mélius sit.
-
-[Lectio7](rubrica divino)
-@Commune/C4:Lectio71
-
-[Lectio8](rubrica divino)
-@Commune/C4:Lectio81
 
 [Lectio93]
 !Commemoratio pro S. Felicitate Martyris
@@ -104,10 +131,7 @@ Clemens, Románus, discípulus beáti Petri, septem Urbis regiónes divísit sep
 [Ant 2]
 Cum iter ad mare cepísset, * pópulus voce magna clamábat: Dómine Jesu Christe, salva illum; et Clemens cum lácrimis dicébat: Súscipe, Pater, spíritum meum.
 
-[Ant 3](rubrica 1570 aut rubrica 1910)
-@:Ant 1
-
-[Ant 3](rubrica divino aut rubrica 1960 aut rubrica innovata)
+[Ant 3]
 Dedísti, Dómine, * habitáculum Mártyri tuo Cleménti in mari, in modum templi marmórei angélicis mánibus præparátum: iter præbens pópulo terræ, ut enárrent mirabília tua.
 
 [Ant Vespera 3]
