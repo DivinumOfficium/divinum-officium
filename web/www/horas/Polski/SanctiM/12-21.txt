@@ -1,8 +1,15 @@
+[Lectio7]
+@Commune/C1:Lectio5:s/Bo .*//
+
+[Lectio8]
+@Commune/C1:Lectio5:s/.* Bo/Bo/ s/$/~/
+Verily, if we ask of the damsel that kept the door, she will tell us what was the measure of weakness and of strength in that Shepherd of the Church nigh to whose most holy body we are now sitting, before that the Spirit came. He was so stricken by the words of one woman, that for fear of death, he denied Life.
+
 [Lectio9]
 @Sancti/12-21:Lectio7:s/Więcej .*//s
 
 [Lectio10]
-@Sancti/12-21:Lectio7:s/.* Więcej /Więcej /s
+@Sancti/12-21:Lectio7:s/.* Więcej /Więcej /s s/$/~/
 @Sancti/12-21:Lectio8:s/Dotknąwszy .*//s
 
 [Lectio11]
