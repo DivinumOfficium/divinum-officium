@@ -1239,16 +1239,19 @@ sub oratio {
 
   #* limit oratio
   if ($rule !~ /Limit.*?Oratio/i) {
-    if ($priest) {
-      push(@s, "&Dominus_vobiscum");
-    } elsif (!$precesferiales) {
-      push(@s, "&Dominus_vobiscum");
-    } else {
-      our %prayers;
-      my $text = $prayers{$lang}->{'Dominus'};
-      my @text = split("\n", $text);
-      push(@s, $text[4]);
-      $precesferiales = 0;
+    # no dominus vobiscum after Te decet
+    if ($version !~ /Monastic/ || $hora ne 'Matutinum' || $rule !~ /12 lectiones/ ) {
+      if ($priest) {
+        push(@s, "&Dominus_vobiscum");
+      } elsif (!$precesferiales) {
+        push(@s, "&Dominus_vobiscum");
+      } else {
+        our %prayers;
+        my $text = $prayers{$lang}->{'Dominus'};
+        my @text = split("\n", $text);
+        push(@s, $text[4]);
+        $precesferiales = 0;
+      }
     }
     my $oremus = translate('Oremus', $lang);
     push(@s, "v. $oremus");

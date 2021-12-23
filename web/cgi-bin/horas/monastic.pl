@@ -225,7 +225,7 @@ sub psalmi_matutinum_monastic {
     $w = $s{"MM Capitulum$name"};
   }
   postprocess_vr($w,$lang) if ($dayname[0] =~ /Pasc/);
-  push(@s, "!!Capitulum", $w, "\n");
+  push(@s, "!!Capitulum", $w, "\n", '$MLitany', "\n");
 }
 
 #*** antetpsal_mmm($line, $i)
