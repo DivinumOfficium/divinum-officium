@@ -740,6 +740,11 @@ sub getrank {
     }
     %w = %{officestring($datafolder, 'Latin', $winner)};
 
+    if ($w{'Commemoratio 2'} && !$dayname[2]) {
+      ($_) = split(/\n/,$w{'Commemoratio 2'},2);
+      $dayname[2] = "Commemoratio: $_" if (s/^!Commemoratio //);
+    }
+
     if (($hora =~ /matutinum/i || (!$dayname[2] && $hora !~ /Vespera|Completorium/i)) && $rank < 7) {
       my %scrip = %{officestring($datafolder, 'Latin', $tname)};
 
