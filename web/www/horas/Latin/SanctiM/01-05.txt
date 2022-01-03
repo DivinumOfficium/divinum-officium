@@ -1,10 +1,14 @@
-@Sancti/01-05r
-
 [Rank]
 Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
 
-[Oratio]
-@Sancti/01-01
+[Lectio1]
+@Sancti/01-05
+
+[Lectio2]
+@Sancti/01-05
+
+[Lectio3]
+@Sancti/01-05
 
 [LectioM3]
 @Sancti/01-05:Lectio3:s/-11/-10/ s/11.*//

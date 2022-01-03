@@ -17,6 +17,9 @@ Psalmi Dominica
 [Hymnus Matutinum]
 @Sancti/12-25:HymnusM Matutinum
 
+[Ant Matutinum 3N]
+Allelúja, * allelúja, allelúja;;263;264;265
+
 [Responsory1]
 @Sancti/01-01
 
@@ -73,8 +76,7 @@ Psalmi Dominica
 @SanctiM/01-01
 
 [Lectio12]
-@Sancti/01-05:Lectio9:s/.* Nazarǽus sanctus /Nazarǽus sanctus /s s/$/~/
-Póssumus et áliter dícere; quod étiam eísdem verbis, juxta hebráicam veritátem, in Isáia scriptum sit: Exiet virga de radíce Iesse, et Nazarǽus de radíce ejus conscéndet.
+@Sancti/01-05:Lectio9:s/.* Nazarǽus sanctus /Nazarǽus sanctus /s s/$/ Póssumus et áliter dícere; quod étiam eísdem verbis, juxta hebráicam veritátem, in Isáia scriptum sit: Exiet virga de radíce Iesse, et Nazarǽus de radíce ejus conscéndet./m
 
 [Responsory12]
 @Tempora/Nat1-0:Responsory8

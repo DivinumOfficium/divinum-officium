@@ -1,13 +1,24 @@
+[AntMatutinumM]
+Przyjęliśmy, * Boże, miłosierdzie twoje, † wpośród kościoła twego.;;47
+Wznidzie * za dni Pańskich, obfitość pokoju: † i będzie panował.;;71
+Prawda * wyrosła z ziemie: † a sprawiedliwość z nieba pojrzała.;;84
+
 [Lectio9]
 @Sancti/01-01:Lectio7:s/Widzisz,.*//s
 
 [Lectio10]
-@Sancti/01-01:Lectio7:s/.* Widzisz,/Widzisz,/s
+@Sancti/01-01:Lectio7:s/.* Widzisz,/Widzisz,/s s/$/~/
 @Sancti/01-01:Lectio8:s/Wreszcie,.*//s
 
 [Lectio11]
 @Sancti/01-01:Lectio8:s/.* Wreszcie,/Wreszcie,/s s/$/~/
 @Sancti/01-01:Lectio9:s/Jeślibyśmy .*//s
+
+[Responsory11]
+R. Maluczki narodził się nam, i syn jest nam dany, † i stało się panowanie na ramieniu jego:
+* I nazowią go, Przedziwny, Bóg mocny.
+V. Rozmnożone będzie państwo jego, † a pokoju nie będzie końca;
+R. I nazowią go, Przedziwny, Bóg mocny.
 
 [Lectio12]
 @Sancti/01-01:Lectio9:s/.* Jeślibyśmy /Jeślibyśmy /s
