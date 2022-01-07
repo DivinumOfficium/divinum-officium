@@ -745,7 +745,7 @@ sub getrank {
       $dayname[2] = "Commemoratio: $_" if (s/^!Commemoratio //);
     }
 
-    if (($hora =~ /matutinum/i || (!$dayname[2] && $hora !~ /Vespera|Completorium/i)) && $rank < 7) {
+    if (($hora =~ /matutinum/i || (!$dayname[2] && $hora !~ /Vespera|Completorium/i)) && $rank < 7 && $trank[0]) {
       my %scrip = %{officestring($datafolder, 'Latin', $tname)};
 
       if (!exists($w{"Lectio1"})
