@@ -846,6 +846,7 @@ sub getrank {
           if (($version !~ /1960/ && $crank[2]) || ($crank[2] >= 3 || ($trank[2] == 5 && $crank[2] >= 2))) {
             $commemoratio1 = $cname;
           }
+          if ($winner =~ /Epi1-0a/ && ($hora =~ /laudes/i || $vespera == 3 )) { $commemoratio = 'Sancti/01-06.txt' }
         }
       } else {
         $dayname[2] = '';
