@@ -231,9 +231,8 @@ for (my $i = $kyear - 9; $i <= $kyear + 10; $i++) {
   $yn = sprintf("%04i", $i);
   if ($i == $year) {
     print "<A HREF=# onclick=\"callbrevi();\"><FONT COLOR=maroon>Hodie</FONT></A>&nbsp;&nbsp;&nbsp;\n";
-  }  else {
-    print "<A HREF=# onclick=\"setky($yn)\">$yn</A>&nbsp;&nbsp;&nbsp;\n";
   }
+  print "<A HREF=# onclick=\"setky($yn)\">$yn</A>&nbsp;&nbsp;&nbsp;\n";
 }
 
 print "<BR><BR></FONT>\n";
