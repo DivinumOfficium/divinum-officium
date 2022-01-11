@@ -1641,7 +1641,7 @@ sub getcommemoratio {
   }
   if (!$o) { return ''; }
   my $a = $w{"Ant $ind"};
-  if (!$a) { $i = 4 - $ind; $a = $w{"Ant $i"}; }
+  if (!$a || ($winner =~ /Epi1-0a/ && $hora =~ /vespera/i && $vespera == 3)) { $i = 4 - $ind; $a = $w{"Ant $i"}; }
   if (!$a) { $a = $c{"Ant $ind"}; }
   my $name = $w{Name};
   $a = replaceNdot($a, $lang, $name);
@@ -1666,6 +1666,9 @@ sub getcommemoratio {
   if (!$a) { return ''; }
   postprocess_ant($a, $lang);
   my $v = $w{"Versum $ind"};
+  if ($winner =~ /Epi1-0a/) { 
+    my %w = (columnsel($lang)) ? %winner : %winner2;
+    $v = ($vespera == 1 && $day == 10) ? $c{'Versum 2'} : $w{'Versum Commemoratio'}; }
   if (!$v) { $i = 4 - $ind; $v = $w{"Versum $i"}; }
   if (!$v) { $v = $c{"Versum $ind"}; }
   if (!$v) { $i = 4 - $ind; $v = $c{"Versum $i"}; }
