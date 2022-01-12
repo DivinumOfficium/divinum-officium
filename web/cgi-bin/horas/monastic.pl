@@ -79,7 +79,8 @@ sub psalmi_matutinum_monastic {
 
   #** change of versicle for Adv, Quad, Quad5, Pasc
   if ( ($winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i)
-    || $dayname[0] =~ /(Nat)((?:0?[2-9])|(?:1[0-2]))$/ ) {
+    || $dayname[0] =~ /(Nat)((?:0?[2-9])|(?:1[0-2]))$/
+    || ($dayname[0] =~ /(Epi)1/ && $day > 6 && $day < 13)) {
     my $name = $1;
     my $i = $2;
     if ($name =~ /Nat/ && $i > 6 && $i < 13) { $name = 'Epi'; }
