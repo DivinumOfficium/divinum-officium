@@ -23,7 +23,6 @@ sub htmlHead {
   print << "PrintTag";
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML><HEAD>
-  <script async defer data-domain="divinumofficium.com" src="https://stats.yanke.io/js/plausible.js"></script>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <TITLE>$title</TITLE>
 PrintTag

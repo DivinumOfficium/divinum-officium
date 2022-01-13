@@ -25,7 +25,6 @@ sub htmlHead {
   <META NAME="description" CONTENT="Divine Office">
   <META NAME="keywords" CONTENT="Divine Office, Breviarium, Liturgy, Traditional, Zsolozsma">
   <META NAME="Copyright" CONTENT="Like GNU">
-  <script async defer data-domain="divinumofficium.com" src="https://stats.yanke.io/js/plausible.js"></script>
   <STYLE>
     /* https://www.30secondsofcode.org/css/s/offscreen/ */
     .offscreen {
