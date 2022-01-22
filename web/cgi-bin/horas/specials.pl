@@ -148,28 +148,11 @@ sub specials {
     } elsif ($item =~ /hymnus|$hymntrans/i && $hora !~ /(laudes|vespera)/i) {
       $item = translate_label($item, $lang);
       my ($dox, $dname) = doxology('', $lang);
-      if ($dox) { $item = "$item {Doxology: $dname}"; }
+      if ($dox) { $item .= " {Doxology: $dname}"; }
       push(@s, $item);
 
-      if ($hora =~ /Tertia/ && $dayname[0] =~ /Pasc7/) {
-        my %h = %{setupstring($datafolder, $lang, 'Psalterium/Minor Special.txt')};
-        push(@s, $h{"Hymnus". ($version =~ /1570|Monastic/ ? 'M' : '') ." Pasc7 Tertia"});
-        $skipflag = 1;
-      } else {
-        if (!$dox) { next; }
-
-        while ($t[$tind] !~ /^\s*\#/) {
-          if ($t[$tind] =~ /^\s*\*/) {
-            push(@s, $dox);
-            $skipflag = 1;
-            last;
-          } else {
-            push(@s, $t[$tind]);
-            $tind++;
-            next;
-          }
-        }
-      }
+      my ($name) = $hora =~ /Tertia/ && $dayname[0] =~ /Pasc7/ ? 'Pasc7 ' : '';
+      push(@s, hymnusminor($datafolder, $lang, $version, $name.$hora));
       next;
     }
 
@@ -1814,6 +1797,12 @@ sub tryoldhymn {
   } else {
     return $source{$name};
   }
+}
+
+sub hymnusminor{
+  my($datafolder, $lang, $version, $name) = @_;
+  my %h = %{setupstring($datafolder, $lang, 'Psalterium/Minor Special.txt')};
+  doxology(tryoldhymn(\%h, "Hymnus $name", $version), $lang);
 }
 
 #*** getanthoras($lang)
