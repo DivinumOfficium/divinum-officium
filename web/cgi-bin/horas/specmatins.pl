@@ -99,44 +99,41 @@ sub invitatorium {
 
 #*** hymnus($lang)
 # collects and returns the hymn for matutinum
-sub hymnus {    #matutinum
+sub hymnusmatutinum {
   my $lang = shift;
-  my %hymn = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
-  $name =
-      ($dayname[0] =~ /adv/i) ? 'Adv'
-    : ($dayname[0] =~ /quad5|quad6/i) ? 'Quad5'
-    : ($dayname[0] =~ /quad[0-9]/i) ? 'Quad'
-    : ($dayname[0] =~ /pasc/i) ? 'Pasch'
-    : '';
-  if ($month == 12 && $day == 24) { $name = 'Adv'; }
-  $name = ($name) ? "Hymnus $name" : "Day$dayofweek Hymnus";
-  $comment = ($name) ? 1 : 5;
-  if ($name =~ /^Day0 Hymnus$/i && ($month < 4 || ($monthday && $monthday =~ /^1[0-9][0-9]\-/))) { $name .= '1'; }
-  my $hymn = tryoldhymn(\%hymn, $name);
-  setbuild("Psalterium/Matutinum Special", $name, 'Hymnus ord');
-  my $hmn =
-    (    !exists($winner{'Hymnus Matutinum'})
-      && ($version =~ /1955|1960/ || $winner{Rule} =~ /\;mtv/i)
-      && $winner{Rule} =~ /(C4|C5)/) ? 'Hymnus1' : 'Hymnus';
-  my ($h, $c) = getproprium("$hmn Matutinum", $lang, $seasonalflag, 1);
+  my $hymn = '';
+  my $name = 'Hymnus';
+  $name .= checkmtv($version, \%winner) unless (exists($winner{'Hymnus Matutinum'}));
+  my ($h, $c) = getproprium("$name Matutinum", $lang, $seasonalflag, 1);
 
   if ($h) {
     if ($hymncontract) {
       my $w = (columnsel($lang)) ? $winner : $winner2;
       my $h1 = $w{'Hymnus Vespera'};
-      my @h1 = split("\n", $h1);
-      while (@h1 && pop(@h1) !~ /\_/) { next; }
-      $h1 = '';
-      foreach (@h1) { $h1 .= "$_\n"; }
-      $h = "$h1$h";
+      $h =~ s/^(v. )//;
+      $h1 =~ s/\*.*/$h/s;
+      $h = $h1;
     }
     $hymn = $h;
     $comment = $c;
   }
-  $hymn = doxology($hymn, $lang);
+  else {
+    my %hymn = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
+    $name =
+        ($dayname[0] =~ /adv/i) ? 'Adv'
+      : ($dayname[0] =~ /quad5|quad6/i) ? 'Quad5'
+      : ($dayname[0] =~ /quad[0-9]/i) ? 'Quad'
+      : ($dayname[0] =~ /pasc/i) ? 'Pasch'
+      : '';
+    if ($month == 12 && $day == 24) { $name = 'Adv'; }
+    $name = ($name) ? "Hymnus $name" : "Day$dayofweek Hymnus";
+    $comment = ($name) ? 1 : 5;
+    if ($name =~ /^Day0 Hymnus$/i && ($month < 4 || ($monthday && $monthday =~ /^1[0-9][0-9]\-/))) { $name .= '1'; }
+    setbuild("Psalterium/Matutinum Special", $name, 'Hymnus ord');
+
+  }
   setcomment($label, 'Source', $comment, $lang);
-  push(@s, $hymn);
-  push(@s, "\n");
+  ($hymn, $name);
 }
 
 #*** psalmi_matutinum($lang)

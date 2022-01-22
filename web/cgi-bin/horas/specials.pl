@@ -142,20 +142,6 @@ sub specials {
       next;
     }
 
-    if ($item =~ /hymnus|$hymntrans/i && $hora =~ /matutinum/i) {
-      hymnus($lang);
-      next;
-    } elsif ($item =~ /hymnus|$hymntrans/i && $hora !~ /(laudes|vespera)/i) {
-      $item = translate_label($item, $lang);
-      my ($dox, $dname) = doxology('', $lang);
-      if ($dox) { $item .= " {Doxology: $dname}"; }
-      push(@s, $item);
-
-      my ($name) = $hora =~ /Tertia/ && $dayname[0] =~ /Pasc7/ ? 'Pasc7 ' : '';
-      push(@s, hymnusminor($datafolder, $lang, $version, $name.$hora));
-      next;
-    }
-
     if ($item =~ /psalm/i) {
       $psalmnum1 = 0;
       $psalmnum2 = 0;
@@ -261,41 +247,10 @@ sub specials {
     }
 
     if ($item =~ /Capitulum/i && $hora =~ /(Laudes|Vespera)/i) {
-      my %capit = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};
-      my $name = major_getname(1);
-      if ($version =~ /monastic/i) { $name =~ s/Day[1-5]M/DayFM/i; }
-      my $capit = $capit{$name};
-      my $name = major_getname();
-      my $hymn = '';
+      my $capit = '';
+      my $c = 0;
 
-      if ($capit =~ /!H[iy]mn(.*)/is) {
-        $hymn = $1;
-        $hymn =~ s/^[\.\s]*//;
-      } else {
-        if (
-          $name =~ /Day0 Laudes/i
-          && ( $dayname[0] =~ /Epi[2-6]/
-            || $dayname[0] =~ /Quadp/i
-            || $winner{Rank} =~ /(Octobris|Novembris)/i)
-          )
-        {
-          $name = 'Day0 Laudes2';
-        }
-
-        if ($version =~ /(Monastic|1570)/i && exists($capit{"HymnusM $name"})) {
-          $hymn = $capit{"HymnusM $name"};
-        } else {
-          $hymn = $capit{"Hymnus $name"};
-        }
-      }
-      $capit =~ s/\s*$//;
-      $capit .= "\n_\n!$hymntrans\n$hymn";
       setbuild('Psalterium/Major Special', $name, 'Capitulum ord');
-
-      #look for special from prorium the tempore or sancti
-      my ($w, $c);
-      $w = '';
-
       if (
            $hora =~ /Vespera/i
         && $vespera == 3
@@ -303,54 +258,23 @@ sub specials {
           || !exists($winner{'Capitulum Vespera'}))
         )
       {
-        ($w, $c) = getproprium("Capitulum Vespera 3", $lang, $seasonalflag, 1);
+        ($capit, $c) = getproprium("Capitulum Vespera 3", $lang, $seasonalflag, 1);
       }
-      if (!$w) { ($w, $c) = getproprium("Capitulum $hora", $lang, $seasonalflag, 1); }
-      if (!$w && !$seasonflag) { ($w, $c) = getproprium("Capitulum $hora", $lang, 1, 1); }
+      if (!$capit) { ($capit, $c) = getproprium("Capitulum $hora", $lang, $seasonalflag, 1); }
+      if (!$capit && !$seasonflag) { ($capit, $c) = getproprium("Capitulum $hora", $lang, 1, 1); }
 
-      if ($w && $w !~ /!$hymntrans/i) {
-        my $wr = '';
-        my $hmn = (($version =~ /1955|1960/ && $winner{Rule} =~ /(C4|C5)/ && $hora =~ /Vespera/i)
-            || ($winner{Rule} =~ /\;mtv/i && $hora =~ /Vespera/i)) ? 'Hymnus1' : 'Hymnus';
-
-        if (
-          (!exists($winner{"$hmn Vespera"}) && ($vespera == 3 && !exists($winner{"$hmn Vespera 3"})))
-          && (($vespera == 3 && exists($winner{"Hymnus Vespera 3"}))
-            || exists($winner{"Hymnus Vespera"}))
-          )
-        {
-          $hmn = 'Hymnus';
-        }
-
-        if ($hora =~ /Vespera/i && $vespera == 3) {
-          ($wr, $cr) = getproprium("$hmn Vespera 3", $lang, $seasonalflag, 1);
-        }
-        if (!$wr) { ($wr, $cr) = getproprium("$hmn $hora", $lang, $seasonalflag, 1); }
-        $w =~ s/\s*$//;
-        $wr ||= $hymn;
-        if ($wr) { $w .= "\n_\n!$hymntrans\n$wr"; }
+      if (!$capit) {
+        my %capit = %{setupstring($datafolder, $lang, 'Psalterium/Major Special.txt')};
+        my $name = major_getname(1);
+        $capit = $capit{$name};
       }
-
-      if ($w && $w !~ /!$hymntrans/i) {
-        $w =~ s/\s*$//;
-        $w .= "\n_\n!$hymntrans\n$hymn";
-      }
-      if ($w) { $capit = $w; $comment = $c; }
-      if ($capit) { $capit = doxology($capit, $lang); }
-      my $ind = ($hora =~ /laudes/i) ? 2 : $vespera;
-      my ($versum, $c1) = getantvers('Versum', $ind, $lang);
-      setcomment($label, 'Source', $c, $lang);
-      $capit = chompd($capit) . "_\n" . $versum;
       if ($version =~ /monastic/i) {
         (@capit) = split(/\n/, $capit);
         postprocess_short_resp(@capit, $lang);
         $capit = join("\n", @capit);
       }
+      setcomment($label, 'Source', $c, $lang);
       push(@s, $capit);
-
-      #my @capit = split("\n", chompd($capit) . "_\n" . $versum);
-      #foreach $l (@capit) {push(@s, $l);}
-      next;
     }
 
     if ($item =~ /Lectio brevis/i && $hora =~ /prima/i) {
@@ -403,6 +327,41 @@ sub specials {
       }
       setcomment($label, 'Source', $comment, $lang);
       foreach $l (@brevis) { push(@s, $l); }
+      next;
+    }
+
+    if ($item =~ /hymnus/i) {
+      my ($name, $hymn, $hymnsource, $versum) = '';
+      my $section = translate_label('Hymnus', $lang);
+
+      if ($hora =~ /matutinum/i) {
+        ($hymn, $name) = hymnusmatutinum($lang);
+        $hymnsource = 'Matutinum' if (!$hymn);
+        $section = '';
+      } elsif ($hora =~ /(laudes|vespera)/i) {
+        ($hymn, $name) = hymnusmajor($lang);
+        $name = "Hymnus $name";
+        $hymnsource = 'Major' if (!$hymn);
+        $section = "_\n!$section";
+
+        my $ind = ($hora =~ /laudes/i) ? 2 : $vespera;
+        ($versum, $cr) = getantvers('Versum', $ind, $lang);
+      } else {
+        $name = "Hymnus $hora";
+        $name =~ s/ / Pasc7 / if ($hora =~ /Tertia/ && $dayname[0] =~ /Pasc7/);
+        $hymnsource = 'Minor';
+        $section = "#". $section;
+      }
+
+      if ($hymnsource) { 
+        my %h = %{setupstring($datafolder, $lang, "Psalterium/$hymnsource Special.txt")};
+        $hymn = tryoldhymn(\%h, $name, $version);
+      }
+
+      ($hymn, $dname) = doxology($hymn, $lang);
+      $section .= " {Doxology: $dname}" if ($dname && $section);
+      push(@s, "$section\n$hymn");
+      push(@s, "\n_\n$versum") if $versum;
       next;
     }
 
@@ -1721,7 +1680,10 @@ sub major_getname {
     : ($dayname[0] =~ /Quad/i && $dayname[0] !~ /Quadp/i) ? 'Quad'
     : ($dayname[0] =~ /Pasc/i) ? 'Pasch'
     : "Day$dayofweek";
-  if ($version =~ /monastic/i && $flag) { $name .= 'M'; }
+  if ($version =~ /monastic/i && $flag) { 
+    $name .= 'M';
+    $name =~ s/Day[1-5]M/DayFM/i; 
+  }
   $name .= " $hora";
   return $name;
 }
@@ -1799,10 +1761,39 @@ sub tryoldhymn {
   }
 }
 
-sub hymnusminor{
-  my($datafolder, $lang, $version, $name) = @_;
-  my %h = %{setupstring($datafolder, $lang, 'Psalterium/Minor Special.txt')};
-  doxology(tryoldhymn(\%h, "Hymnus $name", $version), $lang);
+sub checkmtv {
+  my $version = shift;
+  my $winner = shift;
+  my %winner = %$winner;
+  ($version =~ /1955|1960/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /C[45]/ ? '1' : '';
+}
+
+sub hymnusmajor {
+  my $lang = shift;
+  my $hymn = '';
+  my $name = 'Hymnus';
+  $name .= checkmtv($version, \%winner) if ($hora =~ /Vespera/i);
+  $name = 'Hymnus' if (
+    (!exists($winner{"$name Vespera"}) && ($vespera == 3 && !exists($winner{"$name Vespera 3"})))
+    && (($vespera == 3 && exists($winner{"Hymnus Vespera 3"}))
+      || exists($winner{"Hymnus Vespera"}))
+    );
+  $name .= " $hora";
+
+  my  $cr = 0;
+  if ($hora =~ /Vespera/i && $vespera == 3) {
+    ($hymn, $cr) = getproprium("$name 3", $lang, $seasonalflag, 1);
+  }
+  if (!$hymn) { ($hymn, $cr) = getproprium("$name", $lang, $seasonalflag, 1); }
+  if (!$hymn) {
+    $name = major_getname();
+    $name = 'Day0 Laudes2' if ( $name =~ /Day0 Laudes/i
+                               && ( $dayname[0] =~ /Epi[2-6]/
+                                 || $dayname[0] =~ /Quadp/i
+                                 || $winner{Rank} =~ /(Octobris|Novembris)/i)
+                             );
+  }
+  ($hymn, $name);
 }
 
 #*** getanthoras($lang)
@@ -2012,6 +2003,7 @@ sub doxology {
     if (exists($winner{Doxology})) {
       my %w = (columnsel($lang)) ? %winner : %winner2;
       $dox = $w{Doxology};
+      $dname = 'Special';
       setbuild2("Special doxology");
     } elsif ($rule =~ /Doxology=([a-z]+)/i) {
       $dname = $1;
@@ -2043,15 +2035,15 @@ sub doxology {
     }
   }
 
-  if ($dname) {
+  if ($dname && !$dox) {
     my %w = %{setupstring($datafolder, $lang, 'Psalterium/Doxologies.txt')};
     if ($version =~ /Monastic|1570/i && $w{"${dname}T"}) { $dname .= 'T'; }
     $dox = $w{$dname};
     setbuild2("Doxology: $dname");
   }
-  if (!$hymn) { return ($dox, $dname); }
-  if ($dox && $hymn =~ /(.*?)\n\s*\*.*?[AÁ]men/si) { $hymn = "$1\n$dox"; }
-  return $hymn;
+
+  if ($dox) { $dname = '' unless ($hymn =~ s/\*.*/$dox/s) }
+  ($hymn, $dname)
 }
 
 #*** checksuffragium
