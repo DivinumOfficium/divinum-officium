@@ -219,7 +219,9 @@ sub resolve_refs {
     #red line
     elsif ($line =~ /^\s*\!(.*)/) {
       $l = $1;
-      $line = setfont($redfont, $l);
+      my $suffix = '';
+      if ($l =~ s/(\{[^:].*?\})//) { $suffix = setfont($smallblack, $1); }
+      $line = setfont($redfont, $l) . " $suffix\n";
     }
     $line =~ s{/:(.*?):/}{setfont($smallfont, $1)}e;
 
