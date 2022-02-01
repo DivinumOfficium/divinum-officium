@@ -1,9 +1,41 @@
+[Rank]
+In Conversione S. Pauli Apostoli;;Duplex majus;;4;;ex Sancti/06-30
+
+[Rule]
+ex Sancti/06-30;
+Sub unica concl
+
+[Invit]
 @Sancti/01-25
 
+[Lectio1]
+@Sancti/01-25
+
+[Responsory1]
+@Sancti/06-30:Responsory1
+
+[Lectio2]
+@Sancti/01-25
+
+[Responsory2]
+@Sancti/06-30:Responsory2
+
+[Responsory3]
+@Sancti/06-30:Responsory3
+
+[Lectio4]
+@Sancti/01-25:Lectio3
+
 [MM Capitulum]
-@:Capitulum Sexta
+@Sancti/01-25:Capitulum Sexta
 _
 @Commune/C1:Responsory Tertia:s/.*_.//s
+
+[Oratio]
+@Sancti/01-25
+
+[Ant Laudes]
+@Sancti/01-25
 
 [Capitulum Laudes]
 @Sancti/01-25:Capitulum Vespera
@@ -16,14 +48,26 @@ _
 [Ant 2]
 @Sancti/06-30
 
+[Lectio Prima]
+@Sancti/01-25
+
+[Capitulum Tertia]
+@Sancti/01-25:Capitulum Vespera
+
 [Responsory Tertia]
 @CommuneM/C1
+
+[Capitulum Sexta]
+@Sancti/01-25
 
 [Responsory Sexta]
 @CommuneM/C1
 
 [Responsory Nona]
 @CommuneM/C1
+
+[Capitulum Nona]
+@Sancti/01-25
 
 [Capitulum Vespera]
 @Sancti/01-25:Capitulum Vespera
