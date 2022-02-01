@@ -387,15 +387,6 @@ print << "PrintTag";
 </BODY></HTML>
 PrintTag
 
-sub liturgical_color2 {
-  $_ = shift;
-  my($commune) = @_;
-  return 'blue' if ($commune && $commune =~ /C1[0-9]/);
-  return 'black' if (/(Quattuor|Feria|Vigilia)/i);
-  return 'red' if (/duplex/i);
-  return 'grey';
-}
-
 #*** hedline($head) prints headlibe for main and pray
 sub headline {
   my $head = shift;
@@ -403,7 +394,7 @@ sub headline {
   $version = $version1;
   setmdir($version);
   precedence();
-  $daycolor = liturgical_color2($dayname[1], $commune);
+  $daycolor = liturgical_color($dayname[1], $commune);
   build_comment_line();
   $headline = setheadline();
   $headline =~ s{!(.*)}{$1</FONT>}s;
@@ -415,7 +406,7 @@ sub headline {
     $version = $version2;
     setmdir($version);
     precedence();
-    $daycolor = liturgical_color2($dayname[1], $commune);
+    $daycolor = liturgical_color($dayname[1], $commune);
     build_comment_line();
     $headline = setheadline();
     $headline =~ s{!(.*)}{$1</FONT>}s;
