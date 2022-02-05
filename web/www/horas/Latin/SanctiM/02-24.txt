@@ -22,10 +22,10 @@
 
 [Lectio6]
 @Sancti/02-24:Lectio4:s/.* Sacraméntum /Sacraméntum /s s/$/~/
-@Sancti/02-24:Lectio5:s/Duódecim .*//s
+@Sancti/02-24:Lectio5:s/Duódecim ergo.*//s
 
 [Lectio7]
-@Sancti/02-24:Lectio5:s/.* Duódecim /Duódecim /s s/$/~/
+@Sancti/02-24:Lectio5:s/.* Duódecim ergo/Duódecim ergo/s s/$/~/
 @Sancti/02-24:Lectio6:s/Non solum .*//s
 
 [Lectio8]
