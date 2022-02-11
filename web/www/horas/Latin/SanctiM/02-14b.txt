@@ -1,0 +1,41 @@
+@Sancti/07-07
+
+[Rank]
+Ss. Cyrilli et Methodii Pont. et Conf. Europæ Patronum;;Duplex;;5;;vide C3
+
+[Rule]
+Psalmi Dominica
+
+[Ant Laudes]
+Sapiéntiam * sanctórum narrent pópuli, et laudes eórum núntiet Ecclésia.
+Dabo sanctis meis * locum nominátum in regno Patris mei, dicit Dóminus.
+Beáti pacífici, * beáti mundo corde: quóniam ipsi Deum vidébunt.
+Sacerdótes Dei, benedícite Dóminum: servi Dómini, hymnum dícite Deo.
+Nomen sempitérnum * dabo sanctis meis, dicit Dóminus: gáudium et lætítiam obtinébunt in ætérnum.
+
+[Capitulum Laudes]
+!Sir 44:10-11
+v. Illi viri misericórdiæ sunt, quorum pietátes non defuérunt. Cum sémine eórum pérmanent bona.
+$Deo gratias
+
+[Responsory Tertia]
+@Commune/C3:Versum 1
+
+[Capitulum Sexta]
+!Sir 44:12
+v. Heréditas sancta nepótes eórum, et in testaméntis stetit semen eórum.
+$Deo gratias
+
+[Responsory Sexta]
+@Commune/C3:Responsory Tertia:s/.*_.//s
+
+[Capitulum Nona]
+!Sir 49:14
+v. In diébus suis ædificavérunt domum, et exaltavérunt templum sanctum Dómino, parátum in glóriam sempitérnam.
+$Deo gratias
+
+[Responsory Nona]
+@Commune/C3:Responsory Sexta:s/.*_.//s
+
+[Ant Vespera]
+@:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//
