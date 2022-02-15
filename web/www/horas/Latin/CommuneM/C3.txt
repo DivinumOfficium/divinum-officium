@@ -26,32 +26,79 @@ Beáti, * qui persecutiónem patiúntur propter justítiam, quoníam ipsórum es
 V. Justi autem in perpétuum vivent.
 R. Et apud Dóminum est merces eórum.
 
+[Lectio2]
+@Commune/C3:Lectio2:s/-34/-30/ :s/31 .*//s
+
+[Lectio3]
+@Commune/C3:Lectio2:s/28-/31-/ s/28 .*31 /31 /s
+
+[Lectio4]
+@Commune/C3:Lectio3
+
+[Responsory4]
+R. Sancti per fidem vicérunt regna, operáti sunt justítiam, adépti sunt promissiónes, et fortes facti sunt in bello:* Omnes testimónio fídei probáti.V. Castra vertérunt exterórum, effugavérunt áciem gládii.R. Omnes testimónio fídei probáti.
+
+[Lectio5]
+@Commune/C3:Lectio4:s/Solemnitátes .*//s
+
+[Responsory5]
+@Commune/C3:Responsory4
+
+[Lectio6]
+@Commune/C3:Lectio4:s/.* Solemnitátes /Solemnitátes /s s/$/~/
+@Commune/C3:Lectio5:s/Sed et Paulus .*//s
+
+[Responsory6]
+@Commune/C3:Responsory5
+
+[Lectio7]
+@Commune/C3:Lectio5:s/.* Sed et Paulus /Sed et Paulus /s 
+
+[Responsory7]
+@Commune/C3:Responsory6
+
+[Lectio8]
+@Commune/C3:Lectio6
+
+[Responsory8]
+R. Certámen magnum habuérunt Sancti Dei: transiérunt per ignem at aquam, et salvi facti sunt:* Et corónas accepérunt a Dómino Deo.V. Immánia enim pro Christo in suis corpóribus pertulérunt torménta.R. Et corónas accepérunt a Dómino Deo.
+
+[Lectio9]
+@Commune/C3:Lectio7:s/Pensánda .*//s
+
 [Responsory9]
-R. Justorum animae in manu Dei sunt, et non tanget illos tormentum mortis. Visi~
-sunt oculis insipientium mori: illi autem sunt in pace.
-* Illi autem sunt in pace
-V. Deus tentavit eos, et invenit illos dignos se.
-R. Illi autem sunt in pace
+@Commune/C3:Responsory7
+
+[Lectio10]
+@Commune/C3:Lectio7:s/.* Pensánda /Pensánda /s s/$/~/
+@Commune/C3:Lectio8:s/Última .*//s
+
+[Responsory10]
+@Commune/C3:Responsory8
+
+[Lectio11]
+@Commune/C3:Lectio8:s/.* Última /Última /s s/$/~/
+@Commune/C3:Lectio9:s/Ait .*//s
+
+
+[Responsory11]
+R. Córpora Sanctórum in pace sepúlta sunt,				* Et nómina eórum vivent in generatiónem et generatiónem.			V. Sapiéntiam Sanctórum narrent pópuli, et laudem eórum pronúntiet omnis Ecclésia.R. Et nómina eórum vivent in generatiónem et generatiónem.
+						
+[Lectio12]
+@Commune/C3:Lectio9:s/.* Ait /Ait /s s/\&teDeum .*//s
+
+[Responsory12]
+R. Justórum ánimae in manu Dei sunt, et non tanget illos torméntum mortis. Visi sunt óculis insipiéntium mori: illi autem sunt in pace.
+* Illi autem sunt in pace.
+V. Deus tentávit illos, et invénit eos dignos se.
+R. Illi autem sunt in pace.
 &Gloria
-R. Illi autem sunt in pace
-
-[Capitulum Laudes]
-@Commune/C3
-_
-@Commune/C3:Responsory Tertia:1-6
-
-[Responsory Tertia]
-@Commune/C3:Versum 1
-
-[Responsory Sexta]
-@Commune/C3:Responsory Tertia:8-9
-
-[Responsory Nona]
-@Commune/C3:Responsory Sexta:8-9
+R. Illi autem sunt in pace.
 
 [LectioE]
-v. Sequéntia sancti Evangélii secúndum Lucam
+v. Sequéntia ++ sancti Evangélii secúndum Lucam
 !Luc 21:9-19
+In illo témpore: Dixit Jesus discípulis suis:
 21:9 Cum autem audiéritis prœ́lia et seditiónes, nolíte terréri: opórtet primum hæc fíeri, sed nondum statim finis.
 21:10 Tunc dicébat illis: Surget gens contra gentem, et regnum advérsus regnum.
 21:11 Et terræmótus magni erunt per loca, et pestiléntiæ, et fames, terrorésque de cælo, et signa magna erunt.
@@ -64,3 +111,62 @@ v. Sequéntia sancti Evangélii secúndum Lucam
 21:18 et capíllus de cápite vestro non períbit.
 21:19 In patiéntia vestra possidébitis ánimas vestras.
 $Te decet
+
+[Capitulum Laudes]
+@Commune/C3
+_
+@Commune/C3:Responsory Tertia:1-6
+
+[Capitulum Tertia]
+@Commune/C3:Capitulum Laudes
+
+[Responsory Tertia]
+@Commune/C3:Versum 1
+
+[Responsory Sexta]
+@Commune/C3:Responsory Tertia:8-9
+
+[Responsory Nona]
+@Commune/C3:Responsory Sexta:8-9
+
+[Ant Vespera 3]
+@Commune/C3::s/112/115/ s/111/112/ s/110/111/
+
+
+[Lectio51]
+Sermo sancti Joánnis Chrysóstomi
+!Sermo 1 de Martyribus, tom. 3.
+Nemo est, qui nesciat, Mártyrum glorias ad hoc divino consílio a Dei pópulis frequentári, ut et illis débitus honor dicétur, et nobis virtútis exémpla, favénte Christo, monstréntur; ut, dum hæc ita celebrári perspícimus, cognoscámus quanta eos glória máneat in cælis, quorum natalítia táliter celebrántur in terris; quo possímus, étiam ipsi, tálibus provocári exémplis, virtúte pari, devotióne consímili ac fide; ut, Christo præstánte, dimicáre et víncere hostem possímus, ut, parta victória, cum iísdem Sanctis in regnis cæléstibus triumphémus.
+
+[Lectio61]
+Quis est enim, qui eórum volens mérito copulári, nisi prius constántiam eórum téneat, sectétur fidem, imitétur virtútem passiónis; eórum glóriam páribus vitæ lineaméntis aut invéniat aut exquírat? Qui, etsi martýrio par esse non possit, tamen múneris tanti dignitáte se quisque bonis áctibus dignum præbeat. Adest enim clementíssimus Deus, qui desiderántibus suis aut martýrium præbeat, aut, sine martýrio, cum Sanctis præmia divína retríbuat.
+
+[Lectio71]
+Ut enim infirmátur peccátor advérsis, ita justus tentatiónibus roborátur. Sic dimicárunt advérsus peccátum Sancti; sic, et laborándo fortióres, et moriéndo victóres effécti sunt. Nullus athlétes sine certámine fórtior dici, nullus sine victória póterit coronári. Nemo miles sine prœlio hostem subjécit; nemo sine bello imperatórem proméruit.
+
+[Lectio81]
+Habes, christiáne, competéntia arma, quibus hostem expúgnes; habes fortíssima tela, quibus inimícum debelles. His te jamdúdum Dóminus per grátiam ímbuit, et póstmodum Apóstolus Paulus armávit. Hæc sunt arma, quibus dimicárunt Sancti, quorum virtútes díligis et victórias admiráris. Imitáre, christiáne, quos díligis Sanctos; et quorum virtútes frequéntas, eórum vitam et institúta sectáre. Esto talis de eórum exémplo; quia et hi de superiórum tales effécti sunt. Nec enim virtus ab eo póterit imitári cujúsquam, qui ejus vitam non fúerit imitátus.
+
+[Lectio91]
+@Commune/C3:Lectio71:s/Hinc .*//s
+
+[Lectio101]
+@Commune/C3:Lectio71:s/.* Hinc /Hinc /s
+
+[Lectio111]
+@Commune/C3:Lectio81
+
+[Lectio121]
+@Commune/C3:Lectio91:s/\&teDeum .*//s
+
+[LectioE1]
+v. Sequéntia ++ sancti Evangélii secúndum Lucam
+!Luc 6:17-23
+In illo témpore:
+6:17 Descéndes Jesus de monte, stetit in loco campéstri, et turba discipulórum ejus, et multitúdo copiósa plebis ab omni Judæa, et Jerúsalem, et marítima, et Tyri, et Sidósnis,
+6:18 qui vénerant ut audírent eum, et sanaréntur a languóribus suis. Et qui vexabántur a spirítibus immúndis, curabántur.
+6:19 Et omnis turba quærébat eum tángere: quia virtus de illo exibat, et sanábat omnes.
+6:20 Et ipse elevátis óculis in discípulos suos, dicébat: Beáti páuperes: quia vestrum est regnum Dei.
+6:21 Beáti, qui nunc esurítis: quia saturabímini. Beáti, qui nunc fletis: quia ridébitis.
+6:22 Beáti éritis cum vos óderint hómines, et cum separáverint vos, et exprobráverint, et ejécerint nomen vestrum tamquam malum propter Fílium hóminis.
+6:23 Gaudéte in illa die, et exsultáte: ecce enim merces vestra multa est in cœlo.
