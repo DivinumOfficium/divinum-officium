@@ -450,8 +450,8 @@ sub psalm : ScriptFunc {
   if ($num =~ /^-(.*)/) {
     $num = $1;
 
-    if ( ($version =~ /Trident/i && $num =~ /(62|148|149)/)
-      || ($version =~ /Monastic/i && $num =~ /(115|148|149)/))
+      if ( ($version =~ /Trident/i && $num =~ /(62|148|149)/)     # Tridentine Laudes: Pss. 62/66 & 148/149/150 under 1 gloria
+        || ($version =~ /Monastic/i && $num =~ /(115|148|149)/))  # Monastic Vespers: Pss. 115/116 & 148/149/150 under 1 gloria
     {
       $nogloria = 1;
     }
@@ -990,7 +990,7 @@ sub canticum : ScriptFunc {
 sub Divinum_auxilium : ScriptFunc {
   my $lang = shift;
   my $text = "V. " . translate("Divinum auxilium", $lang);
-  $text =~ s/\n.*\. /\n/ unless ($version =~ /Monastic/i);
+  $text =~ s/\n.*\. /\n/ unless ($version =~ /Monastic/i); # contract resp. "Et cum fratribus… " to "Amen." for Roman
   $text =~ s/\n/\nR. /;
   return $text;
 }
@@ -1217,7 +1217,7 @@ sub getordinarium {
   my $command = shift;
   my @script = ();
   my $suffix = "";
-  if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) { $suffix .= "e"; }
+  if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) { $suffix .= "e"; } # for Epiphanias
   if ($version =~ /(1955|1960|Newcal)/) { $suffix .= "1960"; }
   elsif ($version =~ /trident/i && $hora =~ /(laudes|vespera)/i) { $suffix .= "Trid"; }
   elsif ($version =~ /Monastic/i) { $suffix .= "M"; }
