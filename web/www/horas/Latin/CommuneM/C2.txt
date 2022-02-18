@@ -26,13 +26,107 @@ Qui vult venire post me, * abnegat semetipsum, et tollet crucem suam, et sequatu
 V. Magna est glória ejus in salutári tuo.
 R. Glóriam et magnum decórem impónes super eum.
 
+[Lectio1]
+@Commune/C2:Lectio1:s/-24/-23/ :s/24 .*//s
+
+[Lectio2]
+@Commune/C2:Lectio1:s/.*!/!/s s/17-24/24-27/ s/^17 .*24 /24 /sm s/$/~/
+@Commune/C2:Lectio2:s/!.*// s/28 .*//s
+
+[Lectio3]
+@Commune/C2:Lectio2:s/25-31/28-32/ s/^25 .*28 /28 /sm s/$/~/
+@Commune/C2:Lectio3:s/!.*// s/33 .*//s
+
+[Lectio4]
+@Commune/C2:Lectio3:s/32-/33-/ s/32 .*33 /33 /s
+
+[Lectio1NonPontificis]
+@Commune/C3:Lectio1
+
+[Lectio2NonPontificis]
+@Commune/C3:Lectio2
+
+[Lectio3NonPontificis]
+@Commune/C3:Lectio3
+
+[Lectio4NonPontificis]
+@Commune/C3:Lectio4
+
+[Responsory4]
+R. Pósuit corónam cápiti meo, et circúmdedit me vestiménto salútis,* Ad expugnándas Gentes et omnes inimícos.V. Júdica, Dómine, nocéntes me, expúgna impugnántes me, apprehénde arma et scutum, et exsúrge in adjutórium mihi.R. Ad expugnándas Gentes et omnes inimícos.
+
+[Lectio5]
+@Commune/C2:Lectio4:s/Quod autem .*//s
+
+[Responsory5]
+@Commune/C2:Responsory4
+
+[Lectio6]
+@Commune/C2:Lectio4:s/.* Quod autem /Quod autem /s s/$/~/
+@Commune/C2:Lectio5:s/Quod enim .*//s
+
+[Responsory6]
+@Commune/C2:Responsory5
+
+[Lectio7]
+@Commune/C2:Lectio5:s/.* Quod enim /Quod enim /s 
+
+[Responsory7]
+@Commune/C2:Responsory6
+
+[Lectio8]
+@Commune/C2:Lectio6
+
+[Responsory8]
+R. Posuísti, Dómine, super cápite ejus corónam de lápide pretióso:
+* Vitam petiit a te, et tribuísti ei in sæculum sæculi.V. Desidérium ánimæ ejus tribuísti ei, et voluntáte labiórum ejus non fraudásti eum.
+R. Vitam petiit a te, et tribuísti ei in sæculum sæculi.
+
+[Lectio9]
+@Commune/C2:Lectio7:s/Quæ autem .*//s
+
 [Responsory9]
-R.br. Beatus vir qui suffert tentationem: quoniam cum probatus fuerit, accipiet coronam vitae, 
-* Quam repromisit Deus diligentibus se.
-V. Hic accipiet benedictionem a Domino, et misericordiam a Deo salutari suo
-R. Quam repromisit Deus diligentibus se.
+@Commune/C2:Responsory7
+
+[Lectio10]
+@Commune/C2:Lectio7:s/.* Quæ autem /Quæ autem /s 
+
+[Responsory10]
+@Commune/C2:Responsory8
+
+[Responsory10NonEffusorum]
+@Commune/C2:Responsory8NonEffusorum
+
+[Lectio11]
+@Commune/C3:Lectio8
+
+[Responsory11]
+R. Glória et honóre coronásti eum, Dómine, et constituísti eum super ópera mánuum tuárum:* Omnia subjecísti sub pédibus ejus.V. Quóniam prævenísti eum in benedictiónibus dulcédinis, posuísti in cápite ejus corónam de lápide pretióso.R. Omnia subjecísti sub pédibus ejus.
+
+[Lectio12]
+@Commune/C3:Lectio9:s/\&teDeum .*//s
+
+[Responsory12]
+R. Beátus vir, qui suffert tentatiónem: quóniam cum probátus fúerit, accipiet corónam vitae, 
+* Quam repromísit Deus diligéntibus se.
+V. Hic accípiet benedictiónem a Dómino, et misericórdiam a Deo salutári suo.
+R. Quam repromísit Deus diligéntibus se.
 &Gloria
-R. Quam repromisit Deus diligentibus se.
+R. Quam repromísit Deus diligéntibus se.
+
+[LectioE]
+v. Sequéntia sancti Evangélii secúndum Lucam
+!Luc 14:26-33
+In illo témpore: Dixit Jesus turbis: 
+14:26 Si quis venit ad me, et non odit patrem suum, et matrem, et uxórem, et fílios, et fratres, et soróres, adhuc autem et ánimam suam, non potest meus esse discípulus.
+14:27 Et qui non báiulat crucem suam, et venit post me, non potest meus esse discípulus.
+14:28 Quis enim ex vobis volens turrim ædificáre, non prius sedens cómputat sumptus, qui necessárii sunt, si hábeat ad perficiéndum,
+14:29 ne, posteáquam posúerit fundaméntum, et non potúerit perfícere, omnes qui vident, incípiant illúdere ei,
+14:30 dicéntes: Quia hic homo cœpit ædificáre, et non pótuit consummáre?
+14:31 Aut quis rex itúrus commíttere bellum advérsus álium regem, non sedens prius cógitat, si possit cum decem míllibus occúrrere ei, qui cum vigínti míllibus venit ad se?
+14:32 Alióquin adhuc illo longe agénte, legatiónem mittens rogat ea quæ pacis sunt.
+14:33 Sic ergo omnis ex vobis, qui non renúntiat ómnibus quæ póssidet, non potest meus esse discípulus.
+$Te decet
 
 [Capitulum Laudes]
 @Commune/C2
@@ -51,15 +145,90 @@ _
 [Responsory Nona]
 @Commune/C2:Responsory Sexta:8-9
 
-[LectioE]
-v. Sequéntia sancti Evangélii secúndum Lucam
-!Luc 14:26-33
-14:26 Si quis venit ad me, et non odit patrem suum, et matrem, et uxórem, et fílios, et fratres, et soróres, adhuc autem et ánimam suam, non potest meus esse discípulus.
-14:27 Et qui non báiulat crucem suam, et venit post me, non potest meus esse discípulus.
-14:28 Quis enim ex vobis volens turrim ædificáre, non prius sedens cómputat sumptus, qui necessárii sunt, si hábeat ad perficiéndum,
-14:29 ne, posteáquam posúerit fundaméntum, et non potúerit perfícere, omnes qui vident, incípiant illúdere ei,
-14:30 dicéntes: Quia hic homo cœpit ædificáre, et non pótuit consummáre?
-14:31 Aut quis rex itúrus commíttere bellum advérsus álium regem, non sedens prius cógitat, si possit cum decem míllibus occúrrere ei, qui cum vigínti míllibus venit ad se?
-14:32 Alióquin adhuc illo longe agénte, legatiónem mittens rogat ea quæ pacis sunt.
-14:33 Sic ergo omnis ex vobis, qui non renúntiat ómnibus quæ póssidet, non potest meus esse discípulus.
+[Ant Vespera 3]
+@Commune/C2::s/112/115/ s/111/112/ s/110/111/
+
+[Lectio51]
+Príncipes persecúti sunt me gratis: et a verbis tuis trepidávit cor meum. Bene hoc Martyr dicit, quod injúste persecutiónum torménta sustineat; qui nihil rapúerit, nullum violentus oppresserit, nullius sánguinem fuderit, nullius torum putaverit esse violándum; qui nihil légibus debeat, et gravióra latronum sustinere cogátur supplícia; qui loquátur juste, et non audiátur; qui loquátur plena salútis, et impugnétur, ut possit dicere: Cum loquébar illis, impugnábant me gratis.
+
+[Lectio61]
+Gratis ígitur persecutiónem pátitur, qui impugnátur sine crimine; impugnátur ut noxius cum sit in tali confessióne laudábilis; impugnátur quasi veneficus, qui in nómine Dómini gloriátur, cum pietas virtútum ómnium fundaméntum sit. Vere frustra impugnátur, qui apud ímpios et infidos impietátis arcessitur, cum fidei sit magister.
+
+[Lectio71]
+Verum, qui gratis impugnátur, fortis debet esse et constans; quómodo ergo subtexuit: Et a verbis tuis trepidávit cor meum? Trepidare infirmitátis est, timoris atque formidinis. Sed est étiam infirmitas ad salútem, est étiam timor sanctórum: Timéte Dóminum, omnes sancti ejus; et, Beátus vir, qui timet Dóminum. Qua ratióne beatus? Quia in mandatis ejus cupit nimis.
+
+[Lectio81]
+Pone ergo Mártyrem inter perícula constitútum, cum inde immánitas bestiárum ad incutiéndum terrórem ínfremat, aliúnde stridor candéntium laminárum et flamma fornácis ardéntis exæstuet; ex parte ália pérsonent tractus grávium catenárum, hinc cárnifex cruéntus assístat: Pone, inquam, circumspectántem ómnia plena supplíciis, deínde cogitántem mandáta divína, illum ignem perpétuum, illud sine fine incéndium perfidórum, illam pœnæ recrudescéntis ærúmnam; trepidáre corde, ne, dum præséntibus cedat, perpétuis se dedat exítiis; perturbári ánimo, dum futúri judícii rhomphæam illam terríbilem quadam conspéctus spécie contuétur. Nonne ad hanc trepidatiónem fidúciæ viri constántis, æquális in eúmdem concúrrit efféctum confidéntia cupiéntis ætérna, et divína trepidántis?
+
+[Lectio91]
+@Commune/C2:Lectio73:s/Nam .*//s
+
+[Lectio101]
+@Commune/C2:Lectio73:s/.* Nam /Nam /s s/$/~/
+@Commune/C2:Lectio83:s/Quid vero .*//s
+
+[Lectio111]
+@Commune/C2:Lectio83:s/.* Quid vero /Quid vero /s
+
+[Lectio121]
+@Commune/C2:Lectio93:s/\&teDeum .*//s
+
+[LectioE1]
+Sequéntia ++ sancti Evangélii secúndum Matthǽum!Matt 16:24-27
+In illo témpore: Dixit Jesus discípulis suis:
+16:24 Si quis vult post me veníre, ábneget semetípsum, et tollat crucem suam, et sequátur me.
+16:25 Qui enim volúerit ánimam suam salvam fácere, perdet eam: qui autem perdíderit ánimam suam propter me, invéniet eam.
+16:26 Quid enim prodest hómini, si mundum univérsum lucrétur, ánimæ vero suæ detriméntum patiátur? Aut quam dabit homo commutatiónem pro ánima sua?
+16:27 Fílius enim hóminis ventúrus est in glória Patris sui cum Angelis suis: et tunc reddet unicuíque secúndum ópera ejus.
+$Te decet
+
+[Lectio92]
+@Sancti/09-28:Lectio7:s/Ubíque .*//s
+
+[Lectio102]
+@Sancti/09-28:Lectio7:s/.* Ubíque /Ubíque /s s/$/~/
+@Sancti/09-28:Lectio8:s/Dei ígitur .*//s
+
+[Lectio112]
+@Sancti/09-28:Lectio8:s/.* Dei ígitur /Dei ígitur /s
+
+[Lectio122]
+@Sancti/09-28:Lectio9:s/\&teDeum .*//s
+
+[LectioE2]
+Sequéntia ++ sancti Evangélii secúndum Matthǽum!Matt 10:34-42
+In illo témpore: Dixit Jesus discípulis suis:
+10:34 Nolíte arbitrári, quia pacem vénerim míttere in terram: non veni pacem míttere, sed gládium. 
+10:35 Veni enim separáre hóminem advérsus patrem suum, et fíliam advérsus matrem suam, et nurum advérsus socrum suam: 
+10:36 et inimíci hóminis doméstici ejus. 
+10:37 Qui amat patrem aut matrem plus quam me, non est me dignus: et qui amat fílium aut fíliam super me, non est me dignus. 
+10:38 Et qui non áccipit crucem suam, et séquitur me, non est me dignus. 
+10:39 Qui invénit ánimam suam, perdet illam: et qui perdíderit ánimam suam propter me, invéniet eam. 
+10:40 Qui récipit vos, me récipit: et qui me récipit, récipit eum, qui me misit. 
+10:41 Qui récipit prophétam in nómine prophétæ, mercédem prophétæ accípiet: et qui récipit justum in nómine justi, mercédem justi accípiet. 
+10:42 Et quicúmque potum déderit uni ex mínimis istis cálicem aquæ frígidæ tantum in nómine discípuli: amen, dico vobis, non perdet mercédem suam.
+$Te decet
+
+[Lectio93]
+@Commune/C2:Lectio72:s/Et quod .*//s
+
+[Lectio103]
+@Commune/C2:Lectio72:s/.* Et quod /Et quod /s
+
+[Lectio113]
+@Commune/C2:Lectio82
+
+[Lectio123]
+@Commune/C2:Lectio92:s/\&teDeum .*//s
+
+[LectioE3]
+Sequéntia ++ sancti Evangélii secúndum Matthǽum!Matt 10:26-32
+In illo témpore: Dixit Jesus discípulis suis: 
+10:26 Nihil est opértum, quod non revelábitur; et occúltum, quod non sciétur. 
+10:27 Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. 
+10:28 Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere; sed pótius timéte eum, qui potest et ánimam et corpus pérdere in gehénnam. 
+10:29 Nonne duo pásseres asse véneunt: et unus ex illis non cadet super terram sine Patre vestro? 
+10:30 Vestri autem capílli cápitis omnes numerári sunt. 
+10:31 Nolíte ergo timére: multis passéribus melióres estis vos. 
+10:32 Omnis ergo, qui confitébitur me coram homínibus, confitébor et ego eum coram Patre meo, qui in coelis est.
 $Te decet
