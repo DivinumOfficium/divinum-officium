@@ -117,7 +117,7 @@ sub psalmi_matutinum_monastic {
   }
 
   if (($rank > 4.9 || $votive =~ /C8/) && !(($dayname[0] =~ /Pasc0/) && ($dayofweek > 2))) {
-    #** get proper Ant Matutinum
+    #** get proper Ant Matutinum for II. and I. class feasts unless it's Wednesday thru Saturday of the Easter Octave
     my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
     if ($w) {
       @psalmi = split("\n", $w);
@@ -135,27 +135,35 @@ sub psalmi_matutinum_monastic {
   push(@s, $psalmi[6], $psalmi[7], "\n");
 
   if ($rule =~ /12 lectiones/) {
-    lectiones(1, $lang);
+    lectiones(1, $lang);    # first Nocturn of 4 lessons (
   } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i && $month < 11 && $winner{Rank} !~ /vigil|quattuor/i) {
+      # at least before 1960 (Breviarum Monasticum 1930), the change from "summer" to "winter" matins was tied to the 1st Sunday of November
+      # not All Saints' Day. Unless this has been changed with moving the 1st Sunday of November occuring after 10-29 to after 11-01
+      # the elsif above makes a mistake and refers to non-existing scriptura of the last week of October and should be replaced by the following:
+      # } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i && monthday() !~ /^11[1-5]\-/ && $winner{Rank} !~ /vigil|quattuor/i) {
     if ($winner =~ /Tempora/i
       || !(exists($winner{Lectio94}) || exists($winner{Lectio4})))
     {
-      brevis_monastic($lang);
+      brevis_monastic($lang);   # on a ferial day in "Summer", we have just a Lectio brevis
     } elsif (exists($winner{Lectio94}) || exists($winner{Lectio4})) {
-      legend_monastic($lang);
+      legend_monastic($lang);   # on a III. class feast in "Summer", we have the contracted Saint's legend
     }
   } else {
     lectiones($winner{Rank} !~ /vigil/i, $lang);
+      # unless it's a vigil, the standard Nocturn 1 Absolutio is going to be combined with the Benedictions depending on the day of the week;
+      # for a vigil, even the Absolutio is changed as above (Is this really what the BM1963 rubrics say?)
   }
   push(@s, "\n", '!Nocturn II.', '_');
   for (8..13) { antetpsalm_mm($psalmi[$_], $_); }
   antetpsalm_mm('', -2);    #draw out antiphon if any
 
+  # In case of Matins of 3 nocturns with 12 lessons:
   if ($winner{Rule} =~ /12 lectiones/) {
-    push(@s, $psalmi[14], $psalmi[15], "\n");
-    lectiones(2, $lang);
+    push(@s, $psalmi[14], $psalmi[15], "\n");           #  V.R. directly after the Pss. #7-#12
+    lectiones(2, $lang);                                # lessons 5 – 8
     push(@s, "\n", '!Nocturn III.', '_');
 
+    # Tenebrae office:
     if (($dayname[0] eq "Quad6") && ($dayofweek > 3))  {
       for (16..18) { antetpsalm_mm($psalmi[$_], $_); }
       antetpsalm_mm('', -2);
@@ -164,6 +172,7 @@ sub psalmi_matutinum_monastic {
       return;
     }
 
+    # Prepare 3rd nocturn canticles (sub una antiphona)
     my ($ant, $p) = split(/;;/, $psalmi[16]);
     my %w = (columnsel($lang)) ? %winner : %winner2;
     if (exists($w{"Ant Matutinum 3N"})) {
@@ -180,18 +189,19 @@ sub psalmi_matutinum_monastic {
     for (split(';', $p)) { push(@s, "\&psalm($_)", "\n"); } pop(@s);
     $ant =~ s/\* //;
     push(@s, "Ant. $ant");
-    push(@s, "\n", $psalmi[17], $psalmi[18], "\n");
-    lectiones(3, $lang);
-    push(@s, '&teDeum', "\n");
+    push(@s, "\n", $psalmi[17], $psalmi[18], "\n"); # Versicle directly after the Ant.
+    lectiones(3, $lang);            # Homily with responsories #9-#12
+    push(@s, '&teDeum', "\n");      # Te Deum comes after the 12th responsory only
 
     my @e;
     if (exists($w{LectioE})) {    #** set evangelium
       @e = split("\n", $w{LectioE}); }
 
     if (!$e[0] || $e[0] =~ /LectioE/) {
+      # if the Evangelium is missing in the Sanctoral or is just a cross-reference
       my $dt = $datafolder; $dt =~ s/horas/missa/g;
       my $w = ($e[0] =~ /(.*):LectioE/) ? "${1}.txt" : $winner;
-      $w =~ s/M//g;
+      $w =~ s/M//g;         # there is no corresponding folder missa/latin/SanctiM
       my %missa = %{setupstring($dt, $lang, $w)};
       @e = split("\n", $missa{Evangelium});
     }
@@ -208,6 +218,8 @@ sub psalmi_matutinum_monastic {
     push(@s, @e, "R. " . translate("Amen", $lang), "_", "\$Te decet");
     return;
   }
+    
+  # end 2nd nocturn in ferial office
   my ($w, $c) = getproprium('MM Capitulum', $lang, 0, 1);
   my %s = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
 
@@ -231,7 +243,7 @@ sub psalmi_matutinum_monastic {
     $w = $s{"MM Capitulum$name"};
   }
   postprocess_vr($w,$lang) if ($dayname[0] =~ /Pasc/);
-  push(@s, "!!Capitulum", $w, "\n", '$MLitany', "\n");
+  push(@s, "!!Capitulum", $w, "\n", '$MLitany', "\n");  # print Capitulum, V.R., Kyrie, Pater...
 }
 
 #*** antetpsal_mmm($line, $i)
