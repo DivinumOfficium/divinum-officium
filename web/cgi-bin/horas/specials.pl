@@ -966,10 +966,10 @@ sub psalmi_major {
   my $lim = 5;
   if ($version =~ /monastic/i && $hora =~ /Vespera/i && ($winner !~ /C(?:9|12)/) && ($commune !~ /C9/) && ($dayname[0] !~ /Quad6/ || $dayofweek < 4)) {
     $lim = 4;
-    if ($antiphones[4]) {
-      local($a1,$p1) = split(/;;/, $antiphones[3]);
-      local($a2,$p2) = split(/;;/, $antiphones[4]);
-      $antiphones[3] = "$a2;;$p1"
+		if ($antiphones[4]) {															# if 5 psalms and antiphones are given
+			local($a1,$p1) = split(/;;/, $antiphones[3]);	  # split no. 4
+			local($a2,$p2) = split(/;;/, $antiphones[4]);		# spilt no. 5
+			$antiphones[3] = "$a2;;$p1"											# and say antiphone 5 with psalm no. 4
     }
   }
 
