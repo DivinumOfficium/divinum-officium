@@ -40,16 +40,16 @@ R. Glóriam et magnum decórem impónes super eum.
 [Lectio4]
 @Commune/C2:Lectio3:s/32-/33-/ s/32 .*33 /33 /s
 
-[Lectio1NonPontificis]
+[Lectio1 NonPontificis]
 @Commune/C3:Lectio1
 
-[Lectio2NonPontificis]
+[Lectio2 NonPontificis]
 @Commune/C3:Lectio2
 
-[Lectio3NonPontificis]
+[Lectio3 NonPontificis]
 @Commune/C3:Lectio3
 
-[Lectio4NonPontificis]
+[Lectio4 NonPontificis]
 @Commune/C3:Lectio4
 
 [Responsory4]
@@ -148,32 +148,33 @@ _
 [Ant Vespera 3]
 @Commune/C2::s/112/115/ s/111/112/ s/110/111/
 
-[Lectio51]
+[Lectio5 in 2 loco]
+De Expositióne sancti Ambrósii Epíscopi in Psalmum centésimum décimum octávum!Sermo 21, n. 7 et 8
 Príncipes persecúti sunt me gratis: et a verbis tuis trepidávit cor meum. Bene hoc Martyr dicit, quod injúste persecutiónum torménta sustineat; qui nihil rapúerit, nullum violentus oppresserit, nullius sánguinem fuderit, nullius torum putaverit esse violándum; qui nihil légibus debeat, et gravióra latronum sustinere cogátur supplícia; qui loquátur juste, et non audiátur; qui loquátur plena salútis, et impugnétur, ut possit dicere: Cum loquébar illis, impugnábant me gratis.
 
-[Lectio61]
+[Lectio6 in 2 loco]
 Gratis ígitur persecutiónem pátitur, qui impugnátur sine crimine; impugnátur ut noxius cum sit in tali confessióne laudábilis; impugnátur quasi veneficus, qui in nómine Dómini gloriátur, cum pietas virtútum ómnium fundaméntum sit. Vere frustra impugnátur, qui apud ímpios et infidos impietátis arcessitur, cum fidei sit magister.
 
-[Lectio71]
+[Lectio7 in 2 loco]
 Verum, qui gratis impugnátur, fortis debet esse et constans; quómodo ergo subtexuit: Et a verbis tuis trepidávit cor meum? Trepidare infirmitátis est, timoris atque formidinis. Sed est étiam infirmitas ad salútem, est étiam timor sanctórum: Timéte Dóminum, omnes sancti ejus; et, Beátus vir, qui timet Dóminum. Qua ratióne beatus? Quia in mandatis ejus cupit nimis.
 
-[Lectio81]
+[Lectio8 in 2 loco]
 Pone ergo Mártyrem inter perícula constitútum, cum inde immánitas bestiárum ad incutiéndum terrórem ínfremat, aliúnde stridor candéntium laminárum et flamma fornácis ardéntis exæstuet; ex parte ália pérsonent tractus grávium catenárum, hinc cárnifex cruéntus assístat: Pone, inquam, circumspectántem ómnia plena supplíciis, deínde cogitántem mandáta divína, illum ignem perpétuum, illud sine fine incéndium perfidórum, illam pœnæ recrudescéntis ærúmnam; trepidáre corde, ne, dum præséntibus cedat, perpétuis se dedat exítiis; perturbári ánimo, dum futúri judícii rhomphæam illam terríbilem quadam conspéctus spécie contuétur. Nonne ad hanc trepidatiónem fidúciæ viri constántis, æquális in eúmdem concúrrit efféctum confidéntia cupiéntis ætérna, et divína trepidántis?
 
-[Lectio91]
+[Lectio9 in 2 loco]
 @Commune/C2:Lectio73:s/Nam .*//s
 
-[Lectio101]
+[Lectio10 in 2 loco]
 @Commune/C2:Lectio73:s/.* Nam /Nam /s s/$/~/
 @Commune/C2:Lectio83:s/Quid vero .*//s
 
-[Lectio111]
+[Lectio11 in 2 loco]
 @Commune/C2:Lectio83:s/.* Quid vero /Quid vero /s
 
-[Lectio121]
+[Lectio12 in 2 loco]
 @Commune/C2:Lectio93:s/\&teDeum .*//s
 
-[LectioE1]
+[LectioE in 2 loco]
 Sequéntia ++ sancti Evangélii secúndum Matthǽum!Matt 16:24-27
 In illo témpore: Dixit Jesus discípulis suis:
 16:24 Si quis vult post me veníre, ábneget semetípsum, et tollat crucem suam, et sequátur me.
@@ -182,20 +183,20 @@ In illo témpore: Dixit Jesus discípulis suis:
 16:27 Fílius enim hóminis ventúrus est in glória Patris sui cum Angelis suis: et tunc reddet unicuíque secúndum ópera ejus.
 $Te decet
 
-[Lectio92]
+[Lectio9 in 3 loco]
 @Sancti/09-28:Lectio7:s/Ubíque .*//s
 
-[Lectio102]
+[Lectio10 in 3 loco]
 @Sancti/09-28:Lectio7:s/.* Ubíque /Ubíque /s s/$/~/
 @Sancti/09-28:Lectio8:s/Dei ígitur .*//s
 
-[Lectio112]
+[Lectio11 in 3 loco]
 @Sancti/09-28:Lectio8:s/.* Dei ígitur /Dei ígitur /s
 
-[Lectio122]
+[Lectio12 in 3 loco]
 @Sancti/09-28:Lectio9:s/\&teDeum .*//s
 
-[LectioE2]
+[LectioE in 3 loco]
 Sequéntia ++ sancti Evangélii secúndum Matthǽum!Matt 10:34-42
 In illo témpore: Dixit Jesus discípulis suis:
 10:34 Nolíte arbitrári, quia pacem vénerim míttere in terram: non veni pacem míttere, sed gládium. 
@@ -209,19 +210,19 @@ In illo témpore: Dixit Jesus discípulis suis:
 10:42 Et quicúmque potum déderit uni ex mínimis istis cálicem aquæ frígidæ tantum in nómine discípuli: amen, dico vobis, non perdet mercédem suam.
 $Te decet
 
-[Lectio93]
+[Lectio9 in 4 loco]
 @Commune/C2:Lectio72:s/Et quod .*//s
 
-[Lectio103]
+[Lectio10 in 4 loco]
 @Commune/C2:Lectio72:s/.* Et quod /Et quod /s
 
-[Lectio113]
+[Lectio11 in 4 loco]
 @Commune/C2:Lectio82
 
-[Lectio123]
+[Lectio12 in 4 loco]
 @Commune/C2:Lectio92:s/\&teDeum .*//s
 
-[LectioE3]
+[LectioE in 4 loco]
 Sequéntia ++ sancti Evangélii secúndum Matthǽum!Matt 10:26-32
 In illo témpore: Dixit Jesus discípulis suis: 
 10:26 Nihil est opértum, quod non revelábitur; et occúltum, quod non sciétur. 

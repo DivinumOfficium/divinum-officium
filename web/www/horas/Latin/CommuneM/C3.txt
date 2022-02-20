@@ -133,33 +133,33 @@ _
 @Commune/C3::s/112/115/ s/111/112/ s/110/111/
 
 
-[Lectio51]
+[Lectio5 in 2 loco]
 Sermo sancti Joánnis Chrysóstomi
 !Sermo 1 de Martyribus, tom. 3.
 Nemo est, qui nesciat, Mártyrum glorias ad hoc divino consílio a Dei pópulis frequentári, ut et illis débitus honor dicétur, et nobis virtútis exémpla, favénte Christo, monstréntur; ut, dum hæc ita celebrári perspícimus, cognoscámus quanta eos glória máneat in cælis, quorum natalítia táliter celebrántur in terris; quo possímus, étiam ipsi, tálibus provocári exémplis, virtúte pari, devotióne consímili ac fide; ut, Christo præstánte, dimicáre et víncere hostem possímus, ut, parta victória, cum iísdem Sanctis in regnis cæléstibus triumphémus.
 
-[Lectio61]
+[Lectio6 in 2 loco]
 Quis est enim, qui eórum volens mérito copulári, nisi prius constántiam eórum téneat, sectétur fidem, imitétur virtútem passiónis; eórum glóriam páribus vitæ lineaméntis aut invéniat aut exquírat? Qui, etsi martýrio par esse non possit, tamen múneris tanti dignitáte se quisque bonis áctibus dignum præbeat. Adest enim clementíssimus Deus, qui desiderántibus suis aut martýrium præbeat, aut, sine martýrio, cum Sanctis præmia divína retríbuat.
 
-[Lectio71]
+[Lectio7 in 2 loco]
 Ut enim infirmátur peccátor advérsis, ita justus tentatiónibus roborátur. Sic dimicárunt advérsus peccátum Sancti; sic, et laborándo fortióres, et moriéndo victóres effécti sunt. Nullus athlétes sine certámine fórtior dici, nullus sine victória póterit coronári. Nemo miles sine prœlio hostem subjécit; nemo sine bello imperatórem proméruit.
 
-[Lectio81]
+[Lectio8 in 2 loco]
 Habes, christiáne, competéntia arma, quibus hostem expúgnes; habes fortíssima tela, quibus inimícum debelles. His te jamdúdum Dóminus per grátiam ímbuit, et póstmodum Apóstolus Paulus armávit. Hæc sunt arma, quibus dimicárunt Sancti, quorum virtútes díligis et victórias admiráris. Imitáre, christiáne, quos díligis Sanctos; et quorum virtútes frequéntas, eórum vitam et institúta sectáre. Esto talis de eórum exémplo; quia et hi de superiórum tales effécti sunt. Nec enim virtus ab eo póterit imitári cujúsquam, qui ejus vitam non fúerit imitátus.
 
-[Lectio91]
+[Lectio9 in 2 loco]
 @Commune/C3:Lectio71:s/Hinc .*//s
 
-[Lectio101]
+[Lectio10 in 2 loco]
 @Commune/C3:Lectio71:s/.* Hinc /Hinc /s
 
-[Lectio111]
+[Lectio11 in 2 loco]
 @Commune/C3:Lectio81
 
-[Lectio121]
+[Lectio12 in 2 loco]
 @Commune/C3:Lectio91:s/\&teDeum .*//s
 
-[LectioE1]
+[LectioE in 2 loco]
 v. Sequéntia ++ sancti Evangélii secúndum Lucam
 !Luc 6:17-23
 In illo témpore:
@@ -170,3 +170,87 @@ In illo témpore:
 6:21 Beáti, qui nunc esurítis: quia saturabímini. Beáti, qui nunc fletis: quia ridébitis.
 6:22 Beáti éritis cum vos óderint hómines, et cum separáverint vos, et exprobráverint, et ejécerint nomen vestrum tamquam malum propter Fílium hóminis.
 6:23 Gaudéte in illa die, et exsultáte: ecce enim merces vestra multa est in cœlo.
+
+[Lectio9 in 3 loco]
+@Sancti/06-26:Lectio7
+
+[Lectio10 in 3 loco]
+@Sancti/06-26:Lectio8:s/Ne terreámini .*//s
+
+[Lectio11 in 3 loco]
+@Sancti/06-26:Lectio8:s/.* Ne terreámini /Ne terreámini /s
+
+[Lectio12 in 3 loco]
+@Sancti/06-26:Lectio9:s/\&teDeum .*//s
+
+[LectioE in 3 loco]
+@Sancti/06-26:LectioE
+
+[Lectio9 in 4 loco]
+@Sancti/09-19:Lectio7:s/Respondétur .*//s
+
+[Lectio10 in 4 loco]
+@Sancti/09-19:Lectio7:s/.* Respondétur /Respondétur /s
+
+[Lectio11 in 4 loco]
+@Sancti/09-19:Lectio8
+
+[Lectio12 in 4 loco]
+@Sancti/09-19:Lectio9:s/\&teDeum .*//s
+
+[LectioE in 4 loco]
+@Sancti/09-19:LectioE
+
+[Lectio9 in 5 loco]
+@Sancti/06-05:Lectio7:s/Beáti pacífici.*//s
+
+[Lectio10 in 5 loco]
+@Sancti/06-05:Lectio7:s/.* Beáti pacífici/Beáti pacífici/s
+
+[Lectio11 in 5 loco]
+@Sancti/06-05:Lectio8
+
+[Lectio12 in 5 loco]
+@Sancti/06-05:Lectio9:s/\&teDeum .*//s
+
+[LectioE in 5 loco]
+@Sancti/06-05:LectioE
+
+[Lectio9 in 6 loco]
+@CommuneM/C5:Lectio9 in 3 loco
+
+[Lectio10 in 6 loco]
+@CommuneM/C5:Lectio10 in 3 loco
+
+[Lectio11 in 6 loco]
+@CommuneM/C5:Lectio11 in 3 loco
+
+[Lectio12 in 6 loco]
+@CommuneM/C5:Lectio12 in 3 loco
+
+[LectioE in 6 loco]
+@CommuneM/C5:LectioE in 3 loco
+
+[Lectio9 in 7 loco]
+Léctio sancti Evangélii secúndum Lucam.
+!Luc 10:16-20
+In illo témpore: Dixit Jesus discípulis suis: Qui vos audit, me audit: et qui vos spernit. Et réliqua.
+_
+Homilía sancti Bedæ Venerábilis Presbýteri
+!Lib. 3 in Luc. cap. 10
+Ut in adiéndo quisque, vel spernéndo Evangélii prædicatóre non viles quasque persónas, sed Dóminum Salvatórem, immo ipsum Patrem spérnere se, vel audíre dísceret, ait: Qui vos audit, me audit: et qui von spernit, me spernit. Qui autem me spernit, spernit eum, qui me misit: quia procul dúbio in disípulo Magíster audítur et in fílio Pater honrátur. Potest et ita intélligi: Qui non facit misericórdiam uni de fráteribus meis mínimis, nec mihi facit: quia et ipse pro his formam servi, et páuperis hábitum suscépi.
+
+[Lectio10 in 7 loco]
+Revérsi sunt autem septuagínta duo cum gáudio, dicéntes: Dómine, étiam dæmónia subjiciúntur nobis in nómine tuo. Bene quidem conféssi sunt, deferéntes honórem nómini Christi, sed quia infírma adhuc fide gaudébant virtútibus, vide, quid áudiunt. Et ait illis: Vidébam sátanam, sicut fulgur, de cælo cadéntem: non modo vídeo, sed prius vidébam, quando córruit; quod autem ait: sicut fulgur, vel præcípitem de supérnis ad ima lapsum signíficat, vel quia dejéctus adhuc transfígúrat se in ángelum lucis.
+
+[Lectio11 in 7 loco]
+Ecce dedi vobis potestátem, calcándi supra serpéntes et scorpiónes, hoc est, omne genus immundórum spirítuum de obséssis corpóribus ejiciéndi: quamvis et ad lítteram rectíssime possit áccipi: síquidem et Paulus a vípera invásus, nihil advérsi pátitur. 
+
+[Lectio12 in 7 loco]
+Hoc sane inter serpéntes, qui dente, et scorpiónes, qui cauda nocent, distáre árbitror: quod serpéntes apérte sæviéntes, scorpiónes clánculo insidiántes, vel hómines, vel dæmones signíficent: serpéntes, qui inchoándis virtútibus venéna pravæ persuasiónis objíciunt: scorpiónes, qui consummátas virtútes ad finem vitiáre conténdunt. Verúmtamen in hoc nolíte gaudére, quia spíritus ejícere, sicut et virtútes álias fácere, intérdum non est ejus mériti, qui operátur; sed invocátio nóminis Christi hoc agit.
+
+
+[LectioE in 7 loco]
+Sequéntia ++ sancti Evangélii secúndum Lucam.
+!Luc 10:16-20
+In illo témpore: Dixit Jesus discípulis suis: Qui vos audit, me audit: et qui vos spernit, me spernit. Qui autem me spernit, spernit eum, qui misit me. Revérsi sunt autem septuagínta duo cum gáudio, dicéntes: Dómine, étiam dæmónia subjiciúntur nobis in nómine tuo. Et ait illis: Vidébam sátanam sicut fulgur de cœlo cadéntem. Ecce, dedi vobis potestátem calcandi supra serpéntes et scorpiónes, et super omnem virtútem inimíci: et nihil vobis nocébit. Verúmtamen in hoc nolíte gaudére, quia spíritus vobis subjiciúntur: gaudéte autem, quod nómina vestra scripta sunt in cœlis.
