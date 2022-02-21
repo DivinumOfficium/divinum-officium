@@ -5,9 +5,6 @@
 _
 @Commune/C4:Responsory Sexta:1-6
 
-[HymnusM Vespera]
-@Commune/C4::s/Hódie.*/Hac die lætus méruit suprémos/ s/Scándere.*/Laudis honóres./
-
 [Ant Matutinum]
 Beátus vir, * qui in lege Dómini meditátur: volúntas ejus pérmanet die ac nocte, et ómnia quæcúmque fáciet, semper prosperabúntur.;;1
 Beátus iste Sanctus, * qui confísus est in Dómino, prædicávit præcéptum Dómini, constitútus est in monte sancto ejus.;;2
@@ -29,9 +26,6 @@ Sint lumbi vestri * praecincti et lucernae ardentes in manibus vestris;;256;257;
 V. Tu es sacérdos in ætérnum.
 R. Secúndum órdinem Melchísedech.
 
-[HymnusM Matutinum]
-@Commune/C4:Hymnus1M Vespera
-
 [Lectio1]
 @Commune/C4:Lectio1:s/-7/-4/ s/5 .*//s
 
@@ -52,14 +46,27 @@ R. Ecce vere Israelíta, in quo dolus non est invéntus: † qui probátus repé
 V. Státuit ei Dóminus testaméntum sempitérnum, † et dedit illi sacerdótium magnum.
 R. Juxta órdinem Melchísedech.
 
+[Lectio5]
+@Commune/C4:Lectio4
+
 [Responsory5]
 @Commune/C4:Responsory4
+
+[Lectio6]
+@Commune/C4:Lectio5
 
 [Responsory6]
 @Commune/C4:Responsory5
 
+[Lectio7]
+@Commune/C4:Lectio6:s/ Dúplici .*//s
+
 [Responsory7]
 @Commune/C4:Responsory6
+
+[Lectio8]
+@Commune/C4:Lectio6:s/.* Dúplici /Dúplici /s s/$/~/
+Lauda ergo post perículum, prædica secúrum. Lauda navigántis felicitátem, sed cum pervénit ad portum; lauda ducis virtútem, sed cum perdúctus est ad triúmphum.
 
 [Responsory8]
 R. Justum dedúxit Dóminus per vias rectas, † et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum; 
@@ -67,20 +74,30 @@ R. Justum dedúxit Dóminus per vias rectas, † et osténdit illi regnum Dei, e
 V. Custodívit eum ab inimícis et a seductóribus tutávit illum.
 R. Honestávit illum in labóribus suis.
 
+[Lectio9]
+@Commune/C4:Lectio7:s/ Ecce .*//s
+
 [Responsory9]
 @Commune/C4:Responsory7
 
+[Lectio10]
+@Commune/C4:Lectio7:s/.* Ecce /Ecce /s s/$/~/
+@Commune/C4:Lectio8:s/ Sed homo .*//s
+
 [Responsory10]
-R. In médio Ecclésiæ apéruit os ejus, 
-* Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
-V. Jucunditátem et exsultatiónem thesaurizávit super eum.
-R. Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
+@Commune/C4:Responsory8
+
+[Lectio11]
+@Commune/C4:Lectio8:s/.* Sed homo /Sed homo /s
 
 [Responsory11]
 R. Iste sanctus digne in memóriam vértitur hóminum, qui ad gáudium tránsiit angelórum; † quóniam in hac peregrinatióne solo córpore constitútus, cogitatióne et aviditáte 
 * In illa aetérna patria conversátus est.
 V. Vinculis carnis absolútus taléntum.  sibi créditum Dómino suo duplicátum reportávit.
 R. In illa aetérna patria conversátus est.
+
+[Lectio12]
+@Commune/C4:Lectio9
 
 [Responsory12]
 R. Elégit te Dóminus sacerdótem sibi 
@@ -102,23 +119,81 @@ _
 [Responsory Nona]
 @Commune/C4:Responsory Sexta:8-9
 
-[Ant Vespera]
+[Ant Vespera 3]
 @Commune/C4:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//
 
 [Ant 3]
 @Commune/C4:Ant 3 summi Pontificis
 
 [LectioE]
-v. Sequéntia sancti Evangélii secúndum Matthǽum
+v. Sequéntia ++ sancti Evangélii secúndum Matthǽum
 !Matt 25:14-23
-25:14 Sicut enim homo péregre proficíscens, vocávit servos suos, et trádidit illis bona sua.
-25:15 Et uni dedit quinque talénta, álii autem duo, álii vero unum, unicuíque secúndum própriam virtútem: et proféctus est statim.
-25:16 Abiit autem qui quinque talénta accéperat, et operátus est in eis, et lucrátus est ália quinque.
-25:17 Simíliter et qui duo accéperat, lucrátus est ália duo.
-25:18 Qui autem unum accéperat, ábiens fodit in terram, et abscóndit pecúniam dómini sui.
-25:19 Post multum vero témporis venit dóminus servórum illórum, et pósuit ratiónem cum eis.
-25:20 Et accédens qui quinque talénta accéperat, óbtulit ália quinque talénta, dicens: Dómine, quinque talénta tradidísti mihi, ecce ália quinque superlucrátus sum.
+In illo témpore: Dixit Jesus discípulis suis parábolam hanc:
+Homo péregre proficíscens, vocávit servos suos, et trádidit illis bona sua.
+Et uni dedit quinque talénta, álii autem duo, álii vero unum, unicuíque secúndum própriam virtútem: et proféctus est statim.
+Abiit autem qui quinque talénta accéperat, et operátus est in eis, et lucrátus est ália quinque.
+Simíliter et qui duo accéperat, lucrátus est ália duo.
+Qui autem unum accéperat, ábiens fodit in terram, et abscóndit pecúniam dómini sui.
+Post multum vero témporis venit dóminus servórum illórum, et pósuit ratiónem cum eis.
+Et accédens qui quinque talénta accéperat, óbtulit ália quinque talénta, dicens: Dómine, quinque talénta tradidísti mihi, ecce ália quinque superlucrátus sum.
 25:21 Ait illi dóminus ejus: Euge serve bone, et fidélis: quia super pauca fuísti fidélis, super multa te constítuam: intra in gáudium dómini tui.
 25:22 Accéssit autem et qui duo talénta accéperat, et ait: Dómine, duo talénta tradidísti mihi, ecce ália duo lucrátus sum.
 25:23 Ait illi dóminus ejus: Euge serve bone, et fidélis: quia super pauca fuísti fidélis, super multa te constítuam: intra in gáudium dómini tui.
-$Te decet
+
+[Lectio1 in 2 loco]
+@Commune/C4:Lectio11:s/-5/-4/ s/5 .*//s
+
+[Lectio2 in 2 loco]
+@Commune/C4:Lectio11:s/.*!/!/s s/1-5/5-7/ s/^1 .*5 /5 /sm s/$/~/
+@Commune/C4:Lectio21:s/!.*// s/8 .*//s
+
+[Lectio3 in 2 loco]
+@Commune/C4:Lectio21:s/.*!/!/s s/6-9/8-11/ s/^6 .*8 /8 /sm s/$/~/
+@Commune/C4:Lectio31:s/!.*// s/12 .*//s
+
+[Lectio4 in 2 loco]
+@Commune/C4:Lectio31:s/.*!/!/s s/10-/12-/ s/^10 .*12 /12 /sm
+
+[Lectio5 in 2 loco]
+Sermo sancti Maxími Epíscopi
+!Homilía 78, de S. Eusebio 2, circa medio
+Beáti Patris N. mérita, jam in tuto pósita, secúri magnificémus; qui, gubernáculum fídei viríliter tenens, ánchoram spei tranquílla jam in statióne compósuit, et plenam cæléstibus divítiis et ætérnis mércibus navem, optáto in líttore, collocávit; qui contra omnes adversários scutum timóris Dei támdiu infatigabíliter ténuit, donec ad victóriam perveníret.
+
+[Lectio6 in 2 loco]
+Quid enim fuit totus vitæ illíus cursus, nisi uníus cum vígili hoste conflíctus? Quantis hic cæcis, a via veritátis errántibus et de summa jam in profúndum rupe pendéntibus, amíssum réddidit visum; et illum, quo Christus viderétur, reparávit intúitum?
+
+[Lectio7 in 2 loco]
+Quantórum áuribus surdis et infidelitátis obturatióne damnátis, ad percipiéndam vocem cæléstium mandatórum, pretiósum infúdit audítum; ut, vocánti Deo ad misericórdiam, respondérent per obediéntiam? Quantos intrínsecus vulnerátos, angélici oris arte et oratiónum, ab infirmitáte curávit?
+
+[Lectio8 in 2 loco]
+Quantos, per longam incúriam peccáto labe resolútos et quadam lepræ contgióne perfúsos, castigatiónibus et exhortatiónibus expiándo, Deo in se operánte, mundávit? Quantórum ánimas, vivéntes in córpore jam defúnctas et delictórum mole óbrutas ac sepúltas, ad emendatiónem tamquam ad lucem vocándo, Deo esuscitávit; ut, Dómini sui admirándus imitátor, jam mórtuas Deo, e contrário mortíficet, vitáli morte, peccáto?
+
+[Lectio9 in 2 loco]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 24:42-47
+In illo témpore: Dixit Jesus discípulis suis: Vigiláte, quia nescítis qua hora Dóminus vester ventúrus sit. Et réliqua.
+_
+Homilía sancti Hilárii Epíscopi
+!Comment. in Matth., cap. 26 in fine‚
+Ut ignorántiam illam diéi ómnibus táciti, non sine útilis siléntii ratióne esse scirémus, vigiláre nos Dóminus propter advéntum furis admónuit, et oratíonum assiduitáte deténtos ómnibus præceptórum suórum opéribus inhærére. Furem enim esse osténdit zábulum, ad detrahénda ex nobis spólia pervígilem, et córporum nostrórum dómibus insidiántem: ut ea incuriósis nobis, et somno déditis, consiliórum suórum atque illecebrárum jáculis perfódiat. Parátos ígitur esse nos cónvenit: quia diéi ignorátio inténtam sollicitúdinem suspénsæ exspectatiónis exágitet.
+
+[Lectio10 in 2 loco]
+!Cap. 27
+Quisnam est fidélis servus et prudens, quem constítuit Dóminus super famíliam suam? Quamquam in commúne nos ad indeféssam vigilántiæ curam adhortétur: speciálem tamen pópuli princípibus, id est, epíscopis, in exspectatióne adventúque suo sollicitúdinem mandat. Hunc enim servum fidélem atque prudéntem, præpósitum famíliæ signíficat, cómmoda atque utilitátes commíssi sibi pópuli curántem. 
+
+[Lectio11 in 2 loco]
+Qui si dicto áudiens, et præcéptis obédiens erit, id est, si doctrínæ opportunitáte et veritáte infírma confírmet, disrúpta consólidet, depraváta convértat, et verbum vitæ in æternitátis cibum aléndæ famíliæ dispéndat, atque hæc agens, hisque ímmorans deprehendátur: glóriam a Dómino tamquam dispensátor fidélis et víllicus útilis consequétur, et super ómnia bona constituétur; id est, in Dei glória collocábitur, quia nihil sit ultra, quod mélius sit.
+
+[Lectio12 in 2 loco]
+Quod, si cóntuens longam Dei patiéntiam, quæ in proféctum humánæ salútis exténditur, advérsum consérvos insoléscet, et sæculi malus vitiísque se tradet, præséntium tantum curam in cultu ventris exércens; desperáta die Dóminus advéniet, eúmque a bonis, quæ spopónderat, dívidet, portionémque ejus cum hypócritis in pœnæ æternitáte constítuet: quia advéntum desperávit, quia mandátis non obtemperáverit, quia præséntibus studúerit, quia vita Géntium víxerit, quia desperatióne judícii commíssam sibi famíliam fame, siti, cæde vexáverit.
+
+[LectioE in 2 loco]
+v. Séquentia ++ sancti Evangélii secúndum Matthǽum
+!Matt 24:42-47
+In illo témpore: Dixit Jesus discípulis suis: 
+42 Vigiláte, quia nescítis qua hora Dóminus vester ventúrus sit. 
+43 Illud autem scitóte, quóniam si sciret paterfamílias qua hora fur ventúrus esset, vigiláret útique, et non síneret pérfodi domum suam.
+44 Ideo et vos estóte paráti: quia qua nescítis hora Fílius hóminis ventúrus est.
+45 Quis, putas, est fidélis servus, et prudens, quem constítuit dóminus suus super famíliam suam ut det illis cibum in témpore?
+46 Beátus ille servus, quem cum vénerit dóminus eius, invénerit sic faciéntem.
+47 Amen dico vobis, quóniam super ómnia bona sua constítuet eum.
