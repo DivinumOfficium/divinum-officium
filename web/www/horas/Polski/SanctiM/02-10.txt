@@ -2,3 +2,127 @@
 @Sancti/07-22:Lectio2:s/1-/3-/ s/1 .*3/3/s
 @Sancti/07-22:Lectio3:s/.*5/5/s s/Pod .*//s
 
+[Lectio5]
+@Sancti/02-10:Lectio4:s/Kiedy.*//s
+
+[Lectio6]
+@Sancti/02-10:Lectio4:s/.* Kiedy/Kiedy/s s/$/~/
+@Sancti/02-10:Lectio5:s/Wówczas.*//s
+
+[Lectio7]
+@Sancti/02-10:Lectio5:s/.* Wówczas/Wówczas/s
+
+[Capitulum Tertia]
+!Pnp 2:13-14
+v. Wstań, przyjaciółko moja, piękna moja, a przyjdź, gołębico moja, w rozpadlinach skalnych, w maclochu parkanu: ukaż mi oblicze twoje, niechaj głos twój zabrzmi w uszach moich; albowiem głos twój wdzięczny, a oblicze twoje piękne.
+$Deo gratias
+
+[Ant Laudes]
+Odejdź teraz, bracie, * odejdź, jeśli zdołasz, a zostawiwszy mnie wracaj do klasztoru.
+Niech ci przebaczy siostro * Bóg wszechmogący: cóżeś to uczyniła?
+Oto ciebie błagałam, * a nie chciałeś mnie słuchać; błagałam Pana mego i mnie wysłuchał.
+Mówmy teraz * aż do rana o rzeczach niebieskich, w świętej rozmowie o życiu duchowym.
+Kiedy święty Benedykt * trzeciego dnia pozostawał w swej celi, wzniósłszy oczy ujrzał duszę siostry, która opuściwszy ciało, pod postacią gołębicy, przenikała tajnie nieba.
+
+[Hymnus Laudes]
+v. Gdy mroki nocy pierzchają,
+To dzień upragniony się rodzi,
+A Scholastyka dziewica
+Do Oblubieńca się zbliża.
+_
+Oddala się senność zimowa,
+Deszczu już nie ma w obłokach,
+A w polu gwieździstym wyrasta
+Wiecznie czerwona róża.
+_
+Już woła stwórca miłości,
+Więc luba się w pióra obleka,
+By gołębicą ulecieć,
+Miłosnym stać się płomieniem.
+_
+Jak piękna jesteś, gdy kroczysz,
+O, córko Księcia przemiła;
+Gdy widzi cię Opat Nursyjski,
+To Bogu wylewa dzięki.
+_
+Prawica cię Oblubieńca
+Objęła, o, pełna wesela!
+Żniwem cię zasług ozdabia,
+W potoku chwały zanurza.
+_
+Do Ciebie, nasz kwiecie dolin,
+Wołamy, Chryste, z oddaniem,
+I Ojca, i Ducha wielbimy
+Z krańców ziemi najdalszych.
+Amen.
+
+[Versum 2]
+V. Oto tyś piękna, przyjaciółko moja.
+R. Oto tyś jest piękna; oczy twoje jako gołębice.
+
+[Ant 2]
+O jak szlachetne są * zasługi błogosławionej Scholastyki! O jaka moc łez, przez które sławna dziewica ściągnęła z pogodnego nieba ulewne deszcze.
+
+[Capitulum Vespera]
+@:Capitulum Tertia
+_
+R.br. Pod postacią gołębicy. * Ukazana jest dusza Scholastyki.
+R. Pod postacią gołębicy. * Ukazana jest dusza Scholastyki.
+V. Umysł brata uradował się.
+R. Ukazana jest dusza Scholastyki.
+&Gloria
+R. Pod postacią gołębicy. * Ukazana jest dusza Scholastyki.
+
+[Hymnus Vespera]
+v. Oblubienico Chrystusa,
+Gołąbko biała wśród dziewic,
+Tobie, o, Scholastyko,
+Gwiazd żeńcy niosą pochwały;
+Niech nasze piersi cię sławią
+Śpiewami radosnej pieśni.
+_
+Niegdyś wzgardziłaś koroną,
+I świat, i berło rzuciłaś,
+Aby za bratem podążyć
+Świętej Reguły drogami;
+Łask miła woń się unosi,
+I sama gwiazd jasnych sięgasz.
+_
+Jak mocne są więzy miłości!
+Jak szczytne tryumfu ozdoby!
+Ty łez potokami sprawiłaś,
+Że strugi na ziemię spadły;
+Słowa niebiańskie nursyjski
+Mistrz posłuszeństwa ci daje.
+_
+Na szczytach najdalszych świecisz
+Jasnością tak słodką łaski,
+A blask tak wielki oznajmia,
+Że jest to płomień miłości;
+W objęciach Lubego spoczywasz,
+Chwała cię pięknie obleka.
+_
+Teraz więc rozwiej obłoki,
+Które na sercach osiadły,
+By słońce mogło pogodę
+Wieczystą wlać w nasze dusze;
+Nieustająca jasności
+Niech syci nas i weseli.
+_
+Chwałę zanośmy więc Ojcu
+I jedynemu Synowi,
+Duchowi Parakletowi
+Hołd nieśmy jednemu Bogu;
+Jego to skinienie stwarza
+I światem całym kieruje.
+Amen.
+
+[Versum 3]
+V. Któraż to jest, co jak obłoki lata.
+R. I jako gołębica do okien swoich. Iż 60, 8
+
+[Ant Vespera 3]
+@:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;121/ s/_/;;126/ s/_//
+
+[Ant 3]
+Dzisiaj * święta dziewica Scholastyka pod postacią gołębicy cała radosna podążyła ku niebu; dzisiaj zasługuje, aby ze swym bratem na wieki cieszyć się radościami życia w niebie.
