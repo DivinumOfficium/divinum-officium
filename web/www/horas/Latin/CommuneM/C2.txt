@@ -40,16 +40,16 @@ R. Glóriam et magnum decórem impónes super eum.
 [Lectio4]
 @Commune/C2:Lectio3:s/32-/33-/ s/32 .*33 /33 /s
 
-[Lectio1 NonPontificis]
+[Lectio1 non Pontificis]
 @Commune/C3:Lectio1
 
-[Lectio2 NonPontificis]
+[Lectio2 non Pontificis]
 @Commune/C3:Lectio2
 
-[Lectio3 NonPontificis]
+[Lectio3 non Pontificis]
 @Commune/C3:Lectio3
 
-[Lectio4 NonPontificis]
+[Lectio4 non Pontificis]
 @Commune/C3:Lectio4
 
 [Responsory4]
@@ -94,8 +94,8 @@ R. Vitam petiit a te, et tribuísti ei in sæculum sæculi.
 [Responsory10]
 @Commune/C2:Responsory8
 
-[Responsory10NonEffusorum]
-@Commune/C2:Responsory8NonEffusorum
+[Responsory10 non Effusorum]
+@Commune/C2:Responsory8 non Effusorum
 
 [Lectio11]
 @Commune/C3:Lectio8
@@ -118,15 +118,14 @@ R. Quam repromísit Deus diligéntibus se.
 v. Sequéntia sancti Evangélii secúndum Lucam
 !Luc 14:26-33
 In illo témpore: Dixit Jesus turbis: 
-14:26 Si quis venit ad me, et non odit patrem suum, et matrem, et uxórem, et fílios, et fratres, et soróres, adhuc autem et ánimam suam, non potest meus esse discípulus.
-14:27 Et qui non báiulat crucem suam, et venit post me, non potest meus esse discípulus.
-14:28 Quis enim ex vobis volens turrim ædificáre, non prius sedens cómputat sumptus, qui necessárii sunt, si hábeat ad perficiéndum,
-14:29 ne, posteáquam posúerit fundaméntum, et non potúerit perfícere, omnes qui vident, incípiant illúdere ei,
-14:30 dicéntes: Quia hic homo cœpit ædificáre, et non pótuit consummáre?
-14:31 Aut quis rex itúrus commíttere bellum advérsus álium regem, non sedens prius cógitat, si possit cum decem míllibus occúrrere ei, qui cum vigínti míllibus venit ad se?
-14:32 Alióquin adhuc illo longe agénte, legatiónem mittens rogat ea quæ pacis sunt.
-14:33 Sic ergo omnis ex vobis, qui non renúntiat ómnibus quæ póssidet, non potest meus esse discípulus.
-$Te decet
+Si quis venit ad me, et non odit patrem suum, et matrem, et uxórem, et fílios, et fratres, et soróres, adhuc autem et ánimam suam, non potest meus esse discípulus.
+Et qui non báiulat crucem suam, et venit post me, non potest meus esse discípulus.
+Quis enim ex vobis volens turrim ædificáre, non prius sedens cómputat sumptus, qui necessárii sunt, si hábeat ad perficiéndum,
+ne, posteáquam posúerit fundaméntum, et non potúerit perfícere, omnes qui vident, incípiant illúdere ei,
+dicéntes: Quia hic homo cœpit ædificáre, et non pótuit consummáre?
+Aut quis rex itúrus commíttere bellum advérsus álium regem, non sedens prius cógitat, si possit cum decem míllibus occúrrere ei, qui cum vigínti míllibus venit ad se?
+Alióquin adhuc illo longe agénte, legatiónem mittens rogat ea quæ pacis sunt.
+Sic ergo omnis ex vobis, qui non renúntiat ómnibus quæ póssidet, non potest meus esse discípulus.
 
 [Capitulum Laudes]
 @Commune/C2
@@ -162,26 +161,25 @@ Verum, qui gratis impugnátur, fortis debet esse et constans; quómodo ergo subt
 Pone ergo Mártyrem inter perícula constitútum, cum inde immánitas bestiárum ad incutiéndum terrórem ínfremat, aliúnde stridor candéntium laminárum et flamma fornácis ardéntis exæstuet; ex parte ália pérsonent tractus grávium catenárum, hinc cárnifex cruéntus assístat: Pone, inquam, circumspectántem ómnia plena supplíciis, deínde cogitántem mandáta divína, illum ignem perpétuum, illud sine fine incéndium perfidórum, illam pœnæ recrudescéntis ærúmnam; trepidáre corde, ne, dum præséntibus cedat, perpétuis se dedat exítiis; perturbári ánimo, dum futúri judícii rhomphæam illam terríbilem quadam conspéctus spécie contuétur. Nonne ad hanc trepidatiónem fidúciæ viri constántis, æquális in eúmdem concúrrit efféctum confidéntia cupiéntis ætérna, et divína trepidántis?
 
 [Lectio9 in 2 loco]
-@Commune/C2:Lectio73:s/Nam .*//s
+@Commune/C2:Lectio7 in 4 loco:s/Nam .*//s
 
 [Lectio10 in 2 loco]
-@Commune/C2:Lectio73:s/.* Nam /Nam /s s/$/~/
-@Commune/C2:Lectio83:s/Quid vero .*//s
+@Commune/C2:Lectio7 in 4 loco:s/.* Nam /Nam /s s/$/~/
+@Commune/C2:Lectio8 in 4 loco:s/Quid vero .*//s
 
 [Lectio11 in 2 loco]
-@Commune/C2:Lectio83:s/.* Quid vero /Quid vero /s
+@Commune/C2:Lectio8 in 4 loco:s/.* Quid vero /Quid vero /s
 
 [Lectio12 in 2 loco]
-@Commune/C2:Lectio93:s/\&teDeum .*//s
+@Commune/C2:Lectio9 in 4 loco:s/\&teDeum .*//s
 
 [LectioE in 2 loco]
 Sequéntia ++ sancti Evangélii secúndum Matthǽum!Matt 16:24-27
 In illo témpore: Dixit Jesus discípulis suis:
-16:24 Si quis vult post me veníre, ábneget semetípsum, et tollat crucem suam, et sequátur me.
-16:25 Qui enim volúerit ánimam suam salvam fácere, perdet eam: qui autem perdíderit ánimam suam propter me, invéniet eam.
-16:26 Quid enim prodest hómini, si mundum univérsum lucrétur, ánimæ vero suæ detriméntum patiátur? Aut quam dabit homo commutatiónem pro ánima sua?
-16:27 Fílius enim hóminis ventúrus est in glória Patris sui cum Angelis suis: et tunc reddet unicuíque secúndum ópera ejus.
-$Te decet
+Si quis vult post me veníre, ábneget semetípsum, et tollat crucem suam, et sequátur me.
+Qui enim volúerit ánimam suam salvam fácere, perdet eam: qui autem perdíderit ánimam suam propter me, invéniet eam.
+Quid enim prodest hómini, si mundum univérsum lucrétur, ánimæ vero suæ detriméntum patiátur? Aut quam dabit homo commutatiónem pro ánima sua?
+Fílius enim hóminis ventúrus est in glória Patris sui cum Angelis suis: et tunc reddet unicuíque secúndum ópera ejus.
 
 [Lectio9 in 3 loco]
 @Sancti/09-28:Lectio7:s/Ubíque .*//s
@@ -199,37 +197,35 @@ $Te decet
 [LectioE in 3 loco]
 Sequéntia ++ sancti Evangélii secúndum Matthǽum!Matt 10:34-42
 In illo témpore: Dixit Jesus discípulis suis:
-10:34 Nolíte arbitrári, quia pacem vénerim míttere in terram: non veni pacem míttere, sed gládium. 
-10:35 Veni enim separáre hóminem advérsus patrem suum, et fíliam advérsus matrem suam, et nurum advérsus socrum suam: 
-10:36 et inimíci hóminis doméstici ejus. 
-10:37 Qui amat patrem aut matrem plus quam me, non est me dignus: et qui amat fílium aut fíliam super me, non est me dignus. 
-10:38 Et qui non áccipit crucem suam, et séquitur me, non est me dignus. 
-10:39 Qui invénit ánimam suam, perdet illam: et qui perdíderit ánimam suam propter me, invéniet eam. 
-10:40 Qui récipit vos, me récipit: et qui me récipit, récipit eum, qui me misit. 
-10:41 Qui récipit prophétam in nómine prophétæ, mercédem prophétæ accípiet: et qui récipit justum in nómine justi, mercédem justi accípiet. 
-10:42 Et quicúmque potum déderit uni ex mínimis istis cálicem aquæ frígidæ tantum in nómine discípuli: amen, dico vobis, non perdet mercédem suam.
-$Te decet
+Nolíte arbitrári, quia pacem vénerim míttere in terram: non veni pacem míttere, sed gládium. 
+Veni enim separáre hóminem advérsus patrem suum, et fíliam advérsus matrem suam, et nurum advérsus socrum suam: 
+et inimíci hóminis doméstici ejus. 
+Qui amat patrem aut matrem plus quam me, non est me dignus: et qui amat fílium aut fíliam super me, non est me dignus. 
+Et qui non áccipit crucem suam, et séquitur me, non est me dignus. 
+Qui invénit ánimam suam, perdet illam: et qui perdíderit ánimam suam propter me, invéniet eam. 
+Qui récipit vos, me récipit: et qui me récipit, récipit eum, qui me misit. 
+Qui récipit prophétam in nómine prophétæ, mercédem prophétæ accípiet: et qui récipit justum in nómine justi, mercédem justi accípiet. 
+Et quicúmque potum déderit uni ex mínimis istis cálicem aquæ frígidæ tantum in nómine discípuli: amen, dico vobis, non perdet mercédem suam.
 
 [Lectio9 in 4 loco]
-@Commune/C2:Lectio72:s/Et quod .*//s
+@Commune/C2:Lectio7 in 3 loco:s/Et quod .*//s
 
 [Lectio10 in 4 loco]
-@Commune/C2:Lectio72:s/.* Et quod /Et quod /s
+@Commune/C2:Lectio7 in 3 loco:s/.* Et quod /Et quod /s
 
 [Lectio11 in 4 loco]
-@Commune/C2:Lectio82
+@Commune/C2:Lectio8 in 3 loco
 
 [Lectio12 in 4 loco]
-@Commune/C2:Lectio92:s/\&teDeum .*//s
+@Commune/C2:Lectio9 in 3 loco:s/\&teDeum .*//s
 
 [LectioE in 4 loco]
 Sequéntia ++ sancti Evangélii secúndum Matthǽum!Matt 10:26-32
 In illo témpore: Dixit Jesus discípulis suis: 
-10:26 Nihil est opértum, quod non revelábitur; et occúltum, quod non sciétur. 
-10:27 Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. 
-10:28 Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere; sed pótius timéte eum, qui potest et ánimam et corpus pérdere in gehénnam. 
-10:29 Nonne duo pásseres asse véneunt: et unus ex illis non cadet super terram sine Patre vestro? 
-10:30 Vestri autem capílli cápitis omnes numerári sunt. 
-10:31 Nolíte ergo timére: multis passéribus melióres estis vos. 
-10:32 Omnis ergo, qui confitébitur me coram homínibus, confitébor et ego eum coram Patre meo, qui in coelis est.
-$Te decet
+Nihil est opértum, quod non revelábitur; et occúltum, quod non sciétur. 
+Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. 
+Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere; sed pótius timéte eum, qui potest et ánimam et corpus pérdere in gehénnam. 
+Nonne duo pásseres asse véneunt: et unus ex illis non cadet super terram sine Patre vestro? 
+Vestri autem capílli cápitis omnes numerári sunt. 
+Nolíte ergo timére: multis passéribus melióres estis vos. 
+Omnis ergo, qui confitébitur me coram homínibus, confitébor et ego eum coram Patre meo, qui in coelis est.
