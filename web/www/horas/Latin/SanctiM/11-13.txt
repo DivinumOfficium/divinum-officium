@@ -32,21 +32,21 @@ _
 @SanctiM/11-01:HymnusM Laudes:s/Cœtus.*Monachórum/Monachórum/s
 
 [Lectio1]
-@Commune/C4:Lectio11:s/-5/-4/ s/5 .*//s
+@Commune/C4:Lectio1 in 2 loco:s/-5/-4/ s/5 .*//s
 
 [Responsory1]
 @SanctiM/11-01:Responsory8
 
 [Lectio2]
-@Commune/C4:Lectio11:s/1-5/5-7/ s/1 .*5/5/s
-@Commune/C4:Lectio21:s/!.*// s/8 .*//s
+@Commune/C4:Lectio1 in 2 loco:s/1-5/5-7/ s/1 .*5/5/s
+@Commune/C4:Lectio2 in 2 loco:s/!.*// s/8 .*//s
 
 [Responsory2]
 @Commune/C1
 
 [Lectio3]
-@Commune/C4:Lectio21:s/6-9/8-11/ s/6 .*8/8/s
-@Commune/C4:Lectio31:s/!.*// s/12 .*//s
+@Commune/C4:Lectio2 in 2 loco:s/6-9/8-11/ s/6 .*8/8/s
+@Commune/C4:Lectio3 in 2 loco:s/!.*// s/12 .*//s
 
 [Responsory3]
 R. Haec est vera fratérnitas, quae numquam pótuit violári certámine: † qui, effúso súnguine secúti sunt Dóminum:
@@ -55,7 +55,7 @@ V. Ecce quam bonum et quam jucúndum habitáre fratres in unum!
 R. Contemnéntes aulam régiam, pervenérunt ad regna caeléstia.
 
 [Lectio4]
-@Commune/C4:Lectio31:s/10-/12-/ s/10 .*12/12/s
+@Commune/C4:Lectio3 in 2 loco:s/10-/12-/ s/10 .*12/12/s
 
 [Responsory4]
 @Commune/C3
