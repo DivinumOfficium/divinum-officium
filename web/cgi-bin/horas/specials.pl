@@ -282,7 +282,7 @@ sub specials {
       my $name =
           ($dayname[0] =~ /(Quad5|Quad6)/i) ? 'Quad5'
         : ($dayname[0] =~ /Quad/i && $dayname[0] !~ /Quadp/i) ? 'Quad'
-        : ($dayname[0] =~ /Quadp[3]/i && $dayofweek >= 3 && $version !~ /1960/) ? 'Per Annum'
+        : ($dayname[0] =~ /Quadp[3]/i && $dayofweek >= 3 && $version !~ /1960/) ? 'Feria'
         : ($dayname[0] =~ /Adv/i) ? 'Adv'
         : ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek > 3)) ? 'Asc'
         : ($dayname[0] =~ /Pasc[0-6]/i) ? 'Pasc'
