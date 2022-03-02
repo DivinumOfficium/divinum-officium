@@ -1774,11 +1774,13 @@ sub tryoldhymn {
   }
 }
 
+#*** checkmtv(version, winner)
+# after "Cum Nostra Hac Aetate", the verse has always changed
 sub checkmtv {
   my $version = shift;
   my $winner = shift;
   my %winner = %$winner;
-  ($version =~ /1955|1960/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /C[45]/ ? '1' : '';
+  ($version =~ /1955|1960|Monastic/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /C[45]/ ? '1' : '';
 }
 
 sub hymnusmajor {
