@@ -360,7 +360,6 @@ sub specials {
 
       ($hymn, $dname) = doxology($hymn, $lang);
       $section .= " {Doxology: $dname}" if ($dname && $section);
-      $hymn =~ s/^({.*})?(v. )?/v. /g;
       $hymn =~ s/\*\s*//g;
       $hymn =~ s/_\n/_\nr. /g;
       push(@s, "$section\n$hymn");
