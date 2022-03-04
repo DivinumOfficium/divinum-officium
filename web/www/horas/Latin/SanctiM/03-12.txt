@@ -82,18 +82,18 @@ Amen.
 @Sancti/03-12:Lectio6:s/.*Quátuor/Quátuor/s
 
 [Lectio9]
-@Sancti/04-11:Lectio7:s/Manet.*//s
+@Commune/C4:Lectio7 in 2 loco:s/Manet.*//s
 
 [Lectio10]
-@Sancti/04-11:Lectio7:s/.*Manet/Manet/s s/$/~/
-@Sancti/04-11:Lectio8:s/His.*//
+@Commune/C4:Lectio7 in 2 loco:s/.*Manet/Manet/s s/$/~/
+@Commune/C4:Lectio8 in 2 loco:s/His.*//
 
 [Lectio11]
-@Sancti/04-11:Lectio8:s/.*His/His/s s/$/~/
-@Sancti/04-11:Lectio9:s/Coróna.*//s
+@Commune/C4:Lectio8 in 2 loco:s/.*His/His/s s/$/~/
+@Commune/C4:Lectio9 in 2 loco:s/Coróna.*//s
 
 [Lectio12]
-@Sancti/04-11:Lectio9:s/.*Coróna/Coróna/s
+@Commune/C4:Lectio9 in 2 loco:s/.*Coróna/Coróna/s
 
 [LectioE]
 v. Sequentia Sancti Evangelii secundum Joannem
