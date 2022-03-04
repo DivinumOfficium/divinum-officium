@@ -41,16 +41,16 @@ Amen.
 @Sancti/03-12:Lectio6:s/.*He would/Quátuor/s
 
 [Lectio9]
-@Sancti/04-11:Lectio7:s/Thus.*//s
+@Commune/C4:Lectio7 in 2 loco:s/Thus.*//s
 
 [Lectio10]
-@Sancti/04-11:Lectio7:s/.*Thus/Thus/s s/$/~/
-@Sancti/04-11:Lectio8:s/This teaching.*//
+@Commune/C4:Lectio7 in 2 loco:s/.*Thus/Thus/s s/$/~/
+@Commune/C4:Lectio8 in 2 loco:s/This teaching.*//
 
 [Lectio11]
-@Sancti/04-11:Lectio8:s/.*This teaching/This teaching/s s/$/~/
-@Sancti/04-11:Lectio9:s/My disciples.*//s
+@Commune/C4:Lectio8 in 2 loco:s/.*This teaching/This teaching/s s/$/~/
+@Commune/C4:Lectio9 in 2 loco:s/My disciples.*//s
 
 [Lectio12]
-@Sancti/04-11:Lectio9:s/.*My disciples/My disciples/s
+@Commune/C4:Lectio9 in 2 loco:s/.*My disciples/My disciples/s
 
