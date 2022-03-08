@@ -124,6 +124,14 @@ sub psalmi_matutinum_monastic {
       $comment = $c;
       $prefix .= ' ' . translate('et Psalmi', $lang);
     }
+    if ($rule =~ /Ant Matutinum ([0-9]+) special/i) {
+      my $ind = $1;
+      my %wa = (columnsel($lang)) ? %winner : %winner2;
+      my $wa = $wa{"Ant Matutinum $ind"};
+      if ($wa) {
+        $psalmi[$ind-1] =~ s/^.*?;;/$wa;;/;
+      }
+    }
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
   my $i = 0;
