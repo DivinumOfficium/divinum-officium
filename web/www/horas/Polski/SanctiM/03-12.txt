@@ -30,6 +30,30 @@ Tchnieniu, co równe im Obu
 Podzięki wznoszą się stale.
 Amen.
 
+[Lectio6]
+@Sancti/03-12:Lectio5:s/Posławszy.*//s
+
+[Lectio7]
+@Sancti/03-12:Lectio5:s/.*Posławszy/Posławszy/s s/$/~/
+@Sancti/03-12:Lectio6:s/Czterem.*//s
+
+[Lectio8]
+@Sancti/03-12:Lectio6:s/.*Czterem/Czterem/s
+
+[Lectio9]
+@Commune/C4:Lectio7 in 2 loco:s/Jest.*//s
+
+[Lectio10]
+@Commune/C4:Lectio7 in 2 loco:s/.*Jest/Jest/s s/$/~/
+@Commune/C4:Lectio8 in 2 loco:s/Z tych.*//
+
+[Lectio11]
+@Commune/C4:Lectio8 in 2 loco:s/.*Z tych/Z tych/s s/$/~/
+@Commune/C4:Lectio9 in 2 loco:s/Korona.*//s
+
+[Lectio12]
+@Commune/C4:Lectio9 in 2 loco:s/.*Korona/Korona/s
+
 [Ant Laudes]
 Błogosławiony Grzegorz * wyniesiony na katedrę Piotra imię Czuwającego czynami wypełnił.
 Wybitny pasterz * przekazał wzór i regułę życia pasterskiego.
