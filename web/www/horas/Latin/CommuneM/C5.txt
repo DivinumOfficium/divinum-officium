@@ -107,6 +107,7 @@ _
 [LectioE]
 v. Sequéntia ++ sancti Evangélii secúndum Lucam
 !Luc 12:35-40
+In illo témpore: Dixit Jesus discípulis suis:
 Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris,
 et vos símiles homínibus exspectántibus dóminum suum quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei.
 Beáti servi illi quos, cum vénerit dóminus, invénerit vigilántes: amen dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis.
@@ -152,3 +153,41 @@ Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.
 
 [Lectio8 in 2 loco]
 @Commune/C5:Lectio6 in 2 loco:s/17 post init/30 circa med/
+
+[Lectio9 in 2 loco]
+@Commune/C5:Lectio7 in 2 loco:s/ Ideóque .*//s
+
+[Lectio10 in 2 loco]
+@Commune/C5:Lectio7 in 2 loco:s/.* Ideóque /Ideóque /s s/$/~/
+@Commune/C5:Lectio8 in 2 loco:s/ Unde gloriatur .*//s
+
+[Lectio11 in 2 loco]
+@Commune/C5:Lectio8 in 2 loco:s/.* Unde gloriatur /Unde gloriatur /s
+
+[Lectio12 in 2 loco]
+@Commune/C5:Lectio9 in 2 loco
+
+[LectioE in 2 loco]
+v. Sequéntia ++ sancti Evangélii secúndum Lucam
+!Luc 12:32-34
+In illo témpore: Dixit Jesus discípulis suis: Nolíte timére, pusíllus grex, quia complácuit Patri vestro dare vobis regnum. Véndite quæ possidétis, et date eleemósynam. Fácite vobis sácculos, qui non veteráscunt, thesáurum non deficiéntem in cœlis: quo fur non apprópiat, neque tínea corrúmpit. Ubi enim thesáuros vester est, ibi et cor vestrum erit.
+
+[Lectio9 in 3 loco]
+
+[Lectio10 in 3 loco]
+
+[Lectio11 in 3 loco]
+
+[Lectio12 in 3 loco]
+
+[Lectio9 in 4 loco]
+@Commune/C5:Lectio7 in 3 loco
+
+[Lectio10 in 4 loco]
+@Commune/C5:Lectio8 in 3 loco
+
+[Lectio11 in 4 loco]
+@Commune/C5:Lectio9 in 3 loco:s/ Bene .*//s 
+
+[Lectio12 in 4 loco]
+@Commune/C5:Lectio9 in 3 loco:s/.* Bene /Bene /s
