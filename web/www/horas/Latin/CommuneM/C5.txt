@@ -114,6 +114,18 @@ Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita 
 Hoc autem scitóte, quóniam si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam.
 Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.
 
+[Lectio1 pro plurium]
+@CommuneM/C4:Lectio1 in 2 loco
+
+[Lectio2 pro plurium]
+@CommuneM/C4:Lectio2 in 2 loco
+
+[Lectio3 pro plurium]
+@CommuneM/C4:Lectio3 in 2 loco
+
+[Lectio4 pro plurium]
+@CommuneM/C4:Lectio4 in 2 loco
+
 [Lectio1 in 2 loco]
 @Commune/C5:Lectio1 in 2 loco:s/-14/-12/ s/13 .*//s
 
@@ -127,3 +139,16 @@ Et vos estóte paráti: quia qua hora non putátis, Fílius hóminis véniet.
 
 [Lectio4 in 2 loco]
 @Commune/C5:Lectio3 in 2 loco:s/4:19-20; 5/5/ s/19 .*1 /1 /s
+
+[Lectio5 in 2 loco]
+@Commune/C5:Lectio4 in 2 loco:s/ Hæc sibi .*//s
+
+[Lectio6 in 2 loco]
+@Commune/C5:Lectio4 in 2 loco:s/16/29/ s/.* Hæc sibi /Hæc sibi /s s/$/~/
+@Commune/C5:Lectio5 in 2 loco:s/ Sed hæc .*//s
+
+[Lectio7 in 2 loco]
+@Commune/C5:Lectio5 in 2 loco:s/.* Sed hæc /Sed hæc /s
+
+[Lectio8 in 2 loco]
+@Commune/C5:Lectio6 in 2 loco:s/17 post init/30 circa med/
