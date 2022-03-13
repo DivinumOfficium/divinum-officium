@@ -160,12 +160,20 @@ _
 @Commune/C5b
 
 [Lectio9 in 3 loco]
+@Sancti/02-24:Lectio7:s/ Tóllite .*//s
 
 [Lectio10 in 3 loco]
+@Sancti/02-24:Lectio7:s/.* Tóllite /Tóllite /s s/$/~/
+@Sancti/02-24:Lectio8:s/ Et quantam .*//s
 
 [Lectio11 in 3 loco]
+@Sancti/02-24:Lectio8:s/.* Et quantam /Et quantam /s
 
 [Lectio12 in 3 loco]
+@Sancti/02-24:Lectio9
+
+[LectioE in 3 loco]
+@Sancti/02-24
 
 [Lectio9 in 4 loco]
 @Commune/C5:Lectio7 in 3 loco

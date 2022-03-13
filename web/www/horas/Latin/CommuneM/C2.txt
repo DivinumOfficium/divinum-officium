@@ -134,6 +134,9 @@ _
 [Ant Vespera 3]
 @Commune/C2::s/112/115/ s/111/112/ s/110/111/
 
+[LectioE]
+@Commune/C2c
+
 [Lectio5 in 2 loco]
 De Expositióne sancti Ambrósii Epíscopi in Psalmum centésimum décimum octávum!Sermo 21, n. 7 et 8
 Príncipes persecúti sunt me gratis: et a verbis tuis trepidávit cor meum. Bene hoc Martyr dicit, quod injúste persecutiónum torménta sustineat; qui nihil rapúerit, nullum violentus oppresserit, nullius sánguinem fuderit, nullius torum putaverit esse violándum; qui nihil légibus debeat, et gravióra latronum sustinere cogátur supplícia; qui loquátur juste, et non audiátur; qui loquátur plena salútis, et impugnétur, ut possit dicere: Cum loquébar illis, impugnábant me gratis.
@@ -161,12 +164,7 @@ Pone ergo Mártyrem inter perícula constitútum, cum inde immánitas bestiárum
 @Commune/C2:Lectio9 in 4 loco:s/\&teDeum .*//s
 
 [LectioE in 2 loco]
-Sequéntia ++ sancti Evangélii secúndum Matthǽum!Matt 16:24-27
-In illo témpore: Dixit Jesus discípulis suis:
-Si quis vult post me veníre, ábneget semetípsum, et tollat crucem suam, et sequátur me.
-Qui enim volúerit ánimam suam salvam fácere, perdet eam: qui autem perdíderit ánimam suam propter me, invéniet eam.
-Quid enim prodest hómini, si mundum univérsum lucrétur, ánimæ vero suæ detriméntum patiátur? Aut quam dabit homo commutatiónem pro ánima sua?
-Fílius enim hóminis ventúrus est in glória Patris sui cum Angelis suis: et tunc reddet unicuíque secúndum ópera ejus.
+@Commune/C2b
 
 [Lectio9 in 3 loco]
 @Sancti/09-28:Lectio7:s/Ubíque .*//s
@@ -182,17 +180,7 @@ Fílius enim hóminis ventúrus est in glória Patris sui cum Angelis suis: et t
 @Sancti/09-28:Lectio9:s/\&teDeum .*//s
 
 [LectioE in 3 loco]
-Sequéntia ++ sancti Evangélii secúndum Matthǽum!Matt 10:34-42
-In illo témpore: Dixit Jesus discípulis suis:
-Nolíte arbitrári, quia pacem vénerim míttere in terram: non veni pacem míttere, sed gládium. 
-Veni enim separáre hóminem advérsus patrem suum, et fíliam advérsus matrem suam, et nurum advérsus socrum suam: 
-et inimíci hóminis doméstici ejus. 
-Qui amat patrem aut matrem plus quam me, non est me dignus: et qui amat fílium aut fíliam super me, non est me dignus. 
-Et qui non áccipit crucem suam, et séquitur me, non est me dignus. 
-Qui invénit ánimam suam, perdet illam: et qui perdíderit ánimam suam propter me, invéniet eam. 
-Qui récipit vos, me récipit: et qui me récipit, récipit eum, qui me misit. 
-Qui récipit prophétam in nómine prophétæ, mercédem prophétæ accípiet: et qui récipit justum in nómine justi, mercédem justi accípiet. 
-Et quicúmque potum déderit uni ex mínimis istis cálicem aquæ frígidæ tantum in nómine discípuli: amen, dico vobis, non perdet mercédem suam.
+@Commune/C2
 
 [Lectio9 in 4 loco]
 @Commune/C2:Lectio7 in 3 loco:s/Et quod .*//s
@@ -207,12 +195,4 @@ Et quicúmque potum déderit uni ex mínimis istis cálicem aquæ frígidæ tant
 @Commune/C2:Lectio9 in 3 loco:s/\&teDeum .*//s
 
 [LectioE in 4 loco]
-Sequéntia ++ sancti Evangélii secúndum Matthǽum!Matt 10:26-32
-In illo témpore: Dixit Jesus discípulis suis: 
-Nihil est opértum, quod non revelábitur; et occúltum, quod non sciétur. 
-Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. 
-Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere; sed pótius timéte eum, qui potest et ánimam et corpus pérdere in gehénnam. 
-Nonne duo pásseres asse véneunt: et unus ex illis non cadet super terram sine Patre vestro? 
-Vestri autem capílli cápitis omnes numerári sunt. 
-Nolíte ergo timére: multis passéribus melióres estis vos. 
-Omnis ergo, qui confitébitur me coram homínibus, confitébor et ego eum coram Patre meo, qui in coelis est.
+@Commune/C2a
