@@ -5,26 +5,23 @@
 _
 @Commune/C4:Responsory Sexta:1-6
 
+[AntMatutinumM]
+Justus Dóminus * et justítiam diléxit: æquitátem vidit vultus ejus;;10
+Cognóvit eum Dóminus * in benedictiónibus suis, et invénit grátiam coram óculis Dómini;;95
+In fide * et lenitáte ípsius Sanctum fecit illum Dóminus, et osténdit illi glóriam suam;;96
+Justus * germinábit sicut lílium: et florébit in ætérnum ante Dóminum;;97
+Sint lumbi vestri * præcíncti et lucérnæ ardéntes in mánibus vestris;;256;257;258
+
 [Ant Matutinum]
-Beátus vir, * qui in lege Dómini meditátur: volúntas ejus pérmanet die ac nocte, et ómnia quæcúmque fáciet, semper prosperabúntur.;;1
-Beátus iste Sanctus, * qui confísus est in Dómino, prædicávit præcéptum Dómini, constitútus est in monte sancto ejus.;;2
-Invocántem * exaudívit Dóminus Sanctum suum; Dóminus exaudívit eum, et constítuit eum in pace.;;4
-Læténtur omnes * qui sperant in te, Dómine; quóniam tu benedixísti justo, scuto bonæ voluntátis tuæ coronásti eum.;;5
-Dómine, Dóminus noster, * quam admirábile est nomen tuum in univérsa terra! quia glória et honóre coronásti Sanctum tuum, et constituísti eum super ópera mánuum tuárum.;;8
-Justus Dominus * et justitiam dilexit: aequitatem vidit vultus ejus;;10
-V. Amávit eum Dóminus, et ornávit eum.
-R. Stolam glóriæ índuit eum.
-Dómine, * iste Sanctus habitábit in tabernáculo tuo, operátus est justítiam, requiéscet in monte sancto tuo.;;14
-Vitam pétiit * a te, et tribuísti ei, Dómine: glóriam et magnum decórem imposuísti super eum; posuísti in cápite ejus corónam de lápide pretióso.;;20
-Hic accípiet * benedictiónem a Dómino, et misericórdiam a Deo salutári suo: quia hæc est generátio quæréntium Dóminum.;;23
-Cognovit eum Dominus * in benedictionibus suis, et invenit gratiam coram oculis Domini;;95
-In fide * et lenitate ipsius Sanctum fecit illum Dominus, et ostendit illi gloriam suam;;96
-Justus * germinabit sicut lilium: et florebit in aeternum ante Dominum;;97
-V. Elégit eum Dóminus sacerdótem sibi.
-R. Ad sacrificándum ei hóstiam laudis.
-Sint lumbi vestri * praecincti et lucernae ardentes in manibus vestris;;256;257;258
-V. Tu es sacérdos in ætérnum.
-R. Secúndum órdinem Melchísedech.
+@Commune/C4::1-2
+@Commune/C4::6-8
+@:AntMatutinumM:1
+@Commune/C4::4-5
+@Commune/C4::11-13
+@:AntMatutinumM:2-4
+@Commune/C4::9-10
+@:AntMatutinumM:5
+@Commune/C4::14-15
 
 [Lectio1]
 @Commune/C4:Lectio1:s/-7/-4/ s/5 .*//s
@@ -41,7 +38,7 @@ R. Secúndum órdinem Melchísedech.
 @Commune/C4:Lectio3
 
 [Responsory4]
-R. Ecce vere Israelíta, in quo dolus non est invéntus: † qui probátus repértus est sacérdos magnus 
+R. Ecce vere Isrælíta, in quo dolus non est invéntus: † qui probátus repértus est sacérdos magnus 
 * Juxta órdinem Melchísedech.
 V. Státuit ei Dóminus testaméntum sempitérnum, † et dedit illi sacerdótium magnum.
 R. Juxta órdinem Melchísedech.
@@ -66,7 +63,7 @@ R. Juxta órdinem Melchísedech.
 
 [Lectio8]
 @Commune/C4:Lectio6:s/.* Dúplici /Dúplici /s s/$/~/
-Lauda ergo post perículum, prædica secúrum. Lauda navigántis felicitátem, sed cum pervénit ad portum; lauda ducis virtútem, sed cum perdúctus est ad triúmphum.
+Lauda ergo post perículum, prǽdica secúrum. Lauda navigántis felicitátem, sed cum pervénit ad portum; lauda ducis virtútem, sed cum perdúctus est ad triúmphum.
 
 [Responsory8]
 R. Justum dedúxit Dóminus per vias rectas, † et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum; 
@@ -92,9 +89,9 @@ R. Honestávit illum in labóribus suis.
 
 [Responsory11]
 R. Iste sanctus digne in memóriam vértitur hóminum, qui ad gáudium tránsiit angelórum; † quóniam in hac peregrinatióne solo córpore constitútus, cogitatióne et aviditáte 
-* In illa aetérna patria conversátus est.
-V. Vinculis carnis absolútus taléntum.  sibi créditum Dómino suo duplicátum reportávit.
-R. In illa aetérna patria conversátus est.
+* In illa ætérna pátria conversátus est.
+V. Vínculis carnis absolútus taléntum, sibi créditum Dómino suo duplicátum reportávit.
+R. In illa ætérna pátria conversátus est.
 
 [Lectio12]
 @Commune/C4:Lectio9
@@ -102,7 +99,7 @@ R. In illa aetérna patria conversátus est.
 [Responsory12]
 R. Elégit te Dóminus sacerdótem sibi 
 * Ad sacrificándum ei hóstiam laudis.
-V. Immola Deo sacrificium laudis, et redde Altissimo vota tua.
+V. Ímmola Deo sacrifícium laudis, et redde Altíssimo vota tua.
 R. Ad sacrificándum ei hóstiam laudis.
 
 [Capitulum Laudes]
@@ -124,21 +121,6 @@ _
 
 [Ant 3]
 @Commune/C4:Ant 3 summi Pontificis
-
-[LectioE]
-v. Sequéntia ++ sancti Evangélii secúndum Matthǽum
-!Matt 25:14-23
-In illo témpore: Dixit Jesus discípulis suis parábolam hanc:
-Homo péregre proficíscens, vocávit servos suos, et trádidit illis bona sua.
-Et uni dedit quinque talénta, álii autem duo, álii vero unum, unicuíque secúndum própriam virtútem: et proféctus est statim.
-Abiit autem qui quinque talénta accéperat, et operátus est in eis, et lucrátus est ália quinque.
-Simíliter et qui duo accéperat, lucrátus est ália duo.
-Qui autem unum accéperat, ábiens fodit in terram, et abscóndit pecúniam dómini sui.
-Post multum vero témporis venit dóminus servórum illórum, et pósuit ratiónem cum eis.
-Et accédens qui quinque talénta accéperat, óbtulit ália quinque talénta, dicens: Dómine, quinque talénta tradidísti mihi, ecce ália quinque superlucrátus sum.
-Ait illi dóminus ejus: Euge serve bone, et fidélis: quia super pauca fuísti fidélis, super multa te constítuam: intra in gáudium dómini tui.
-Accéssit autem et qui duo talénta accéperat, et ait: Dómine, duo talénta tradidísti mihi, ecce ália duo lucrátus sum.
-Ait illi dóminus ejus: Euge serve bone, et fidélis: quia super pauca fuísti fidélis, super multa te constítuam: intra in gáudium dómini tui.
 
 [Lectio1 in 2 loco]
 @Commune/C4:Lectio1 in 2 loco:s/-5/-4/ s/5 .*//s
@@ -197,3 +179,4 @@ Ideo et vos estóte paráti: quia qua nescítis hora Fílius hóminis ventúrus 
 Quis, putas, est fidélis servus, et prudens, quem constítuit dóminus suus super famíliam suam ut det illis cibum in témpore?
 Beátus ille servus, quem cum vénerit dóminus eius, invénerit sic faciéntem.
 Amen dico vobis, quóniam super ómnia bona sua constítuet eum.
+
