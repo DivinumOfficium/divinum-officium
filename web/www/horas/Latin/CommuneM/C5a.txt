@@ -49,9 +49,6 @@ Commune Doctorum non Pontificis
 [Ant 3]
 @Commune/C4a
 
-[LectioE]
-@CommuneM/C4a
-
 [Lectio9 in 2 loco]
 @Commune/C4a:Lectio7:s/ Sal est .*//s
 
@@ -77,3 +74,4 @@ Commune Doctorum non Pontificis
 
 [Lectio12 in 3 loco]
 @Commune/C4a:Lectio9 in 3 loco:s/.* Non ergo /Non ergo /s
+

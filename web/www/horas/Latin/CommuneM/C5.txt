@@ -157,7 +157,7 @@ _
 @Commune/C5:Lectio9 in 2 loco
 
 [LectioE in 2 loco]
-@Commune/C5b
+@Commune/C5b:LectioE
 
 [Lectio9 in 3 loco]
 @Sancti/02-24:Lectio7:s/ Tóllite .*//s
@@ -173,7 +173,7 @@ _
 @Sancti/02-24:Lectio9
 
 [LectioE in 3 loco]
-@Sancti/02-24
+@Sancti/02-24:LectioE
 
 [Lectio9 in 4 loco]
 @Commune/C5:Lectio7 in 3 loco
@@ -186,3 +186,6 @@ _
 
 [Lectio12 in 4 loco]
 @Commune/C5:Lectio9 in 3 loco:s/.* Bene /Bene /s
+
+[LectioE in 4 loco]
+@Sancti/08-25:LectioE
