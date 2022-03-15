@@ -18,18 +18,18 @@
 @Sancti/02-24:Lectio3:s/23-/24-/ s/23 .*24 /24 /s
 
 [Lectio5]
-@Sancti/02-24:Lectio4:s/Sacraméntum .*//s
+@Commune/C1:Lectio4 in 2 loco:s/Sacraméntum .*//s
 
 [Lectio6]
-@Sancti/02-24:Lectio4:s/.* Sacraméntum /Sacraméntum /s s/$/~/
-@Sancti/02-24:Lectio5:s/Duódecim ergo.*//s
+@Commune/C1:Lectio4 in 2 loco:s/.* Sacraméntum /Sacraméntum /s s/$/~/
+@Commune/C1:Lectio5 in 2 loco:s/Duódecim ergo.*//s
 
 [Lectio7]
-@Sancti/02-24:Lectio5:s/.* Duódecim ergo/Duódecim ergo/s s/$/~/
-@Sancti/02-24:Lectio6:s/Non solum .*//s
+@Commune/C1:Lectio5 in 2 loco:s/.* Duódecim ergo/Duódecim ergo/s s/$/~/
+@Commune/C1:Lectio6 in 2 loco:s/Non solum .*//s
 
 [Lectio8]
-@Sancti/02-24:Lectio6:s/.* Non solum /Non solum /s
+@Commune/C1:Lectio6 in 2 loco:s/.* Non solum /Non solum /s
 
 [Lectio9]
 @Sancti/02-24:Lectio7:s/Tóllite .*//s
