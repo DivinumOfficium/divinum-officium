@@ -7,11 +7,11 @@ Commune Plurimorum Martyrum Tempore Paschali
 Psalmi Dominica
 Antiphonas horas
 
-[Hymnus Vespera]
+[HymnusM Vespera]
 @Commune/C3:HymnusM Laudes
 
-[Hymnus Matutinum]
-@Commune/C3:HymnusM Matutinum
+[HymnusM Matutinum]
+@Commune/C3
 
 [Ant Matutinum]
 Stabunt justi * in magna constántia advérsus eos qui se angustiavérunt, allelúja.;;1
@@ -55,7 +55,7 @@ R. Mors sanctorum ejus, alleluia
 @CommuneM/C2p:Lectio12 in 2 loco
 
 [HymnusM Laudes]
-@Commune/C3:HymnusM Laudes
+@Commune/C3
 
 [Oratio]
 @Commune/C3
@@ -67,12 +67,4 @@ R. Mors sanctorum ejus, alleluia
 @Commune/C3
 
 [LectioE]
-v. Sequéntia ++ sancti Evangélii secúndum Joánnem!Joannes 5:5-11
-In illo témpore: Dixit Jesus discípulis suis: 
-Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum, quia sine me nihil potéstis fácere.
-Si quis in me non mánserit, mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet.
-Si manséritis in me, et verba mea in vobis mánserint, quodcúmque voluéritis petétis, et fiet vobis.
-In hoc clarificátus est Pater meus, ut fructum plúrimum afferátis, et efficiámini mei discípuli.
-Sicut diléxit me Pater, et ego diléxi vos. Manéte in dilectióne mea.
-Si præcépta mea servavéritis, manébitis in dilectióne mea, sicut et ego Patris mei præcépta servávi, et máneo in eius dilectióne.
-Hæc locútus sum vobis: ut gáudium meum in vobis sit, et gáudium vestrum impleátur.
+@Commune/C3pp

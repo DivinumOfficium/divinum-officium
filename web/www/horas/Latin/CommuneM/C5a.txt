@@ -1,0 +1,77 @@
+@CommuneM/C5
+
+[Name]
+Commune Doctorum non Pontificis
+
+[Ant 1]
+@Commune/C4a
+
+[Lectio1]
+@Commune/C4a:Lectio1:s/-5/-4/ s/5 .*//s
+
+[Lectio2]
+@Commune/C4a:Lectio1:s/.*5 /!Sir 39:5-7\n5 /s
+@Commune/C4a:Lectio2:s/.*6 /6 /s s/8 .*//s
+
+[Lectio3]
+@Commune/C4a:Lectio2:s/.*8 /!Sir 39:8-10\n8 /s
+
+[Lectio4]
+@Commune/C4a:Lectio3
+
+[Lectio5]
+@CommuneM/C4a
+
+[Lectio6]
+@CommuneM/C4a
+
+[Lectio7]
+@CommuneM/C4a
+
+[Lectio8]
+@CommuneM/C4a
+
+[Lectio9]
+@Sancti/12-07:Lectio7
+
+[Lectio10]
+@Sancti/12-07:Lectio8
+
+[Responsory10]
+@Commune/C4a:Responsory8
+
+[Lectio11]
+@Sancti/12-07:Lectio9:s/Et hic mundum .*//s
+
+[Lectio12]
+@Sancti/12-07:Lectio9:s/.* Et hic mundum /Et hic mundum /s
+
+[Ant 3]
+@Commune/C4a
+
+[Lectio9 in 2 loco]
+@Commune/C4a:Lectio7:s/ Sal est .*//s
+
+[Lectio10 in 2 loco]
+@Commune/C4a:Lectio7:s/.* Sal est /Sal est /s s/$/~/s
+@Commune/C4a:Lectio8:s/ Apóstoli .*//s
+
+[Lectio11 in 2 loco]
+@Commune/C4a:Lectio8:s/.* Apóstoli /Apóstoli /s 
+
+[Lectio12 in 2 loco]
+@Commune/C4a:Lectio9
+
+[Lectio9 in 3 loco]
+@Commune/C4a:Lectio7 in 3 loco
+
+[Lectio10 in 3 loco]
+@Commune/C4a:Lectio8 in 3 loco:s/ Igitur .*//s
+
+[Lectio11 in 3 loco]
+@Commune/C4a:Lectio8 in 3 loco:s/.* Igitur /Igitur /s s/$/~/s
+@Commune/C4a:Lectio9 in 3 loco:s/ Non ergo .*//s
+
+[Lectio12 in 3 loco]
+@Commune/C4a:Lectio9 in 3 loco:s/.* Non ergo /Non ergo /s
+

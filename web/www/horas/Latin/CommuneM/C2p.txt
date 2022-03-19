@@ -93,16 +93,16 @@ R. Favus distíllans lábia ejus, allelúja, allelúja.
 @CommuneM/C1p
 
 [Lectio6]
-@Commune/C2p:Lectio5:s/Eadem .*//s
+@Commune/C2p:Lectio5:s/Éadem .*//s
 
 [Responsory6]
-@Commune/C2p:Responsory5 in 2 loco
+@Commune/C2p:Responsory5
 
 [Lectio7]
-@Commune/C2p:Lectio5:s/.* Eadem /Eadem /s
+@Commune/C2p:Lectio5:s/.* Éadem /Éadem /s
 
 [Responsory7]
-@Commune/C2p:Responsory6 in 2 loco
+@Commune/C2p:Responsory6
 
 [Lectio8]
 @Commune/C2p:Lectio6
@@ -114,20 +114,20 @@ V. Lætamini in Dómino et exsultáte, justi, et gloriámini.
 R. Omnes recti corde, allelúja, allelúja.	
 
 [Lectio9]
-@Sancti/10-27:Lectio1
+@Commune/C2p:Lectio7
 
 [Responsory9]
-@Commune/C2:Responsory7 in 2 loco
+@Commune/C1p:Responsory7
 
 [Lectio10]
-@Sancti/10-27:Lectio2:s/Sed cum .*//s
+@Commune/C2p:Lectio8:s/Sed cum .*//s
 
 [Responsory10]
-@Commune/C2:Responsory8 in 2 loco
+@Commune/C1p:Responsory8
 
 [Lectio11]
-@Sancti/10-27:Lectio2:s/.* Sed cum /Sed cum /s s/$/~/
-@Sancti/10-27:Lectio3:s/Numquid .*//s
+@Commune/C2p:Lectio8:s/.* Sed cum /Sed cum /s s/$/~/
+@Commune/C2p:Lectio9:s/Numquid .*//s
 
 [Responsory11]
 R. Fulgébunt justi sicut lílium:
@@ -136,25 +136,13 @@ V. Justi autem in perpétuum vivent, et apud Dóminum est merces eórum.
 R. Et sicut rosæ in Jéricho florébunt ante Dóminum, allelúja.
 
 [Lectio12]
-@Sancti/10-27:Lectio3:s/.* Numquid /Numquid /s
+@Commune/C2p:Lectio9:s/.* Numquid /Numquid /s
 
 [Responsory12]
 R. Gáudete, justi, in Dómino, allelúja:
 * Rectos decet collaudátio, allelúja, allelúja.
 V. Cantáte ei cánticum novum: bene psállite ei in vociferatióne.
 R. Rectos decet collaudátio, allelúja, allelúja.
-
-[LectioE]
-v. Sequéntia sancti Evangélii secúndum Joánnem
-!Joannes 15:1-7
-In illo témpore: Dixit Jesus discípulis suis: 
-Ego sum vitis vera, et Pater meus agrícola est.
-Omnem pálmitem in me non feréntem fructum, tollet eum, et omnem qui fert fructum, purgábit eum, ut fructum plus áfferat.
-Jam vos mundi estis propter sermónem quem locútus sum vobis.
-Manéte in me, et ego in vobis. Sicut palmes non potest ferre fructum a semetípso, nisi mánserit in vite, sic nec vos, nisi in me manséritis.
-Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum, quia sine me nihil potéstis fácere.
-Si quis in me non mánserit, mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet.
-Si manséritis in me, et verba mea in vobis mánserint, quodcúmque voluéritis petétis, et fiet vobis.
 
 [Ant Laudes]
 @Commune/C1p
@@ -215,25 +203,17 @@ Si manséritis in me, et verba mea in vobis mánserint, quodcúmque voluéritis 
 @Commune/C2p:Lectio6 in 2 loco:s/.* Pretiósa est /Pretiósa est /s
 
 [Lectio 9 in 2 loco]
-@Commune/C2:Lectio7 in 2 loco:s/Quamvis .*//s
+@Commune/C2p:Lectio7 in 2 loco:s/Quamvis .*//s
 
 [Lectio 10 in 2 loco]
-@Commune/C2:Lectio7 in 2 loco:s/.* Quamvis /Quamvis /s s/$/~/
-@Commune/C2:Lectio8 in 2 loco:s/Ligna .*//s
+@Commune/C2p:Lectio7 in 2 loco:s/.* Quamvis /Quamvis /s s/$/~/
+@Commune/C2p:Lectio8 in 2 loco:s/Ligna .*//s
 
 [Lectio 11 in 2 loco]
-@Commune/C2:Lectio8 in 2 loco:s/.* Ligna /Ligna /s
+@Commune/C2p:Lectio8 in 2 loco:s/.* Ligna /Ligna /s
 
 [Lectio 12 in 2 loco]
-@Commune/C2:Lectio9 in 2 loco
+@Commune/C2p:Lectio9 in 2 loco
 
 [LectioE in 2 loco]
-v. Sequéntia ++ sancti Evangélii secúndum Joánnem!Joannes 5:5-11
-In illo témpore: Dixit Jesus discípulis suis: 
-Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum, quia sine me nihil potéstis fácere.
-Si quis in me non mánserit, mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet.
-Si manséritis in me, et verba mea in vobis mánserint, quodcúmque voluéritis petétis, et fiet vobis.
-In hoc clarificátus est Pater meus, ut fructum plúrimum afferátis, et efficiámini mei discípuli.
-Sicut diléxit me Pater, et ego diléxi vos. Manéte in dilectióne mea.
-Si præcépta mea servavéritis, manébitis in dilectióne mea, sicut et ego Patris mei præcépta servávi, et máneo in eius dilectióne.
-Hæc locútus sum vobis: ut gáudium meum in vobis sit, et gáudium vestrum impleátur.
+@Commune/C3pp:LectioE

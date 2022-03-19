@@ -200,18 +200,20 @@ sub psalmi_matutinum_monastic {
     push(@s, "\n", $psalmi[17], $psalmi[18], "\n"); # Versicle directly after the Ant.
     lectiones(3, $lang);            # Homily with responsories #9-#12
     push(@s, '&teDeum', "\n");      # Te Deum comes after the 12th responsory only
-
+ 
     my @e;
     if (exists($w{LectioE})) {    #** set evangelium
       @e = split("\n", $w{LectioE}); }
 
-    if (!$e[0] || $e[0] =~ /LectioE/) {
+    if (!$e[0] || ($e[0] =~ s/^@//)) {
       # if the Evangelium is missing in the Sanctoral or is just a cross-reference
-      my $dt = $datafolder; $dt =~ s/horas/missa/g;
-      my $w = ($e[0] =~ /(.*):LectioE/) ? "${1}.txt" : $winner;
+      my ($w, $s) = split(/:/, $e[0]);
+      if ($w) { $w .= '.txt'; } else { $w = $winner; }
       $w =~ s/M//g;         # there is no corresponding folder missa/latin/SanctiM
+      $s =~ s/(?:LectioE)?/Evangelium/;
+      my $dt = $datafolder; $dt =~ s/horas/missa/g;
       my %missa = %{setupstring($dt, $lang, $w)};
-      @e = split("\n", $missa{Evangelium});
+      @e = split("\n", $missa{$s});
     }
 
     my $firstline = shift @e;
