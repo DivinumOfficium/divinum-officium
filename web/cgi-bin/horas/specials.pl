@@ -166,6 +166,7 @@ sub specials {
         && $version !~ /1960/
         && $version !~ /monastic/i
         && $winner{Rank} =~ /Feria|Vigilia/i 
+        && $winner{Rank} !~ /Vigilia Epi/i
         && $commune !~ /C10/
         && ($rank < 3 || $dayname[0] =~ /Quad6/)
         && $dayname[0] !~ /Pasc/i)
@@ -282,7 +283,7 @@ sub specials {
       my $name =
           ($dayname[0] =~ /(Quad5|Quad6)/i) ? 'Quad5'
         : ($dayname[0] =~ /Quad/i && $dayname[0] !~ /Quadp/i) ? 'Quad'
-        : ($dayname[0] =~ /Quadp[3]/i && $dayofweek >= 3 && $version !~ /1960/) ? 'Per Annum'
+        : ($dayname[0] =~ /Quadp[3]/i && $dayofweek >= 3 && $version !~ /1960/) ? 'Feria'
         : ($dayname[0] =~ /Adv/i) ? 'Adv'
         : ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek > 3)) ? 'Asc'
         : ($dayname[0] =~ /Pasc[0-6]/i) ? 'Pasc'
@@ -966,10 +967,10 @@ sub psalmi_major {
   my $lim = 5;
   if ($version =~ /monastic/i && $hora =~ /Vespera/i && ($winner !~ /C(?:9|12)/) && ($commune !~ /C9/) && ($dayname[0] !~ /Quad6/ || $dayofweek < 4)) {
     $lim = 4;
-    if ($antiphones[4]) {
-      local($a1,$p1) = split(/;;/, $antiphones[3]);
-      local($a2,$p2) = split(/;;/, $antiphones[4]);
-      $antiphones[3] = "$a2;;$p1"
+		if ($antiphones[4]) {															# if 5 psalms and antiphones are given
+			local($a1,$p1) = split(/;;/, $antiphones[3]);	  # split no. 4
+			local($a2,$p2) = split(/;;/, $antiphones[4]);		# spilt no. 5
+			$antiphones[3] = "$a2;;$p1"											# and say antiphone 5 with psalm no. 4
     }
   }
 
@@ -1763,11 +1764,13 @@ sub tryoldhymn {
   }
 }
 
+#*** checkmtv(version, winner)
+# after "Cum Nostra Hac Aetate", the verse has always changed
 sub checkmtv {
   my $version = shift;
   my $winner = shift;
   my %winner = %$winner;
-  ($version =~ /1955|1960/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /C[45]/ ? '1' : '';
+  ($version =~ /1955|1960|Monastic/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /C[45]/ ? '1' : '';
 }
 
 sub hymnusmajor {
