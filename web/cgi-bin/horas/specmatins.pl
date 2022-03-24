@@ -1027,14 +1027,23 @@ sub lectio : ScriptFunc {
   my @w = split("\n", $w);
   $w = "";
 
+  my $initial = $nonumbers;
   foreach $item (@w) {
     if ($item =~ /^([0-9]+)\s+(.*)/s) {
       my $rest = $2;
-      my $num = $1;
+      my $num = "\n" . setfont($smallfont, $1);
       if ($rest =~ /^\s*([a-z])(.*)/is) { $rest = uc($1) . $2; }
-      $item = setfont($smallfont, $num) . " $rest";
+      if ($initial) {
+        $num = "\nv. ";
+        $initial = 0;
+      } elsif ($nonumbers) {
+        $num = '';
+      }
+      $item = "$num $rest";
+    } else {
+      $item = "\n$item";
     }
-    $w .= "$item\n";
+    $w .= "$item";
   }
 
   if ($dayname[0] !~ /Pasc/i) {
