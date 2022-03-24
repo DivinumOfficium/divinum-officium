@@ -168,7 +168,7 @@ sub checkfile {
 
 #*** getrank() loads files from tempora and sancti
 sub getrank {
-  my $c = $dialog{'communes'};
+  my $c = getdialog('communes');
   $c =~ s/\n//sg;
   %communesname = split(',', $c);
   $dayname[0] =~ s/\s*$//g;

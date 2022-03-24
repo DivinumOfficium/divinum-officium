@@ -34,7 +34,6 @@ our $Ck = 0;
 our $missa = 1;
 our $NewMass = 0;
 our $officium = 'missa.pl';
-our $version = 'Rubrics 1960';
 
 @versions =
   ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1965-1967', '1960 Newcalendar', 'Dominican');
@@ -71,8 +70,8 @@ our $duplex;                                  #1=simplex-feria, 2=semiduplex-fer
 require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/../horas/dialogcommon.pl";
-require "$Bin/webdia.pl";
-require "$Bin/msetup.pl";
+require "$Bin/../horas/webdia.pl";
+require "$Bin/../horas/setup.pl";
 require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
 
@@ -81,21 +80,10 @@ $q = new CGI;
 
 #get parameters
 getini('missa');    #files, colors
-$setupsave = strictparam('setup');
-$setupsave =~ s/\~24/\"/g;
-our ($lang1, $lang2, $column);
+our ($version, $lang1, $lang2, $column);
 our %translate;     #translation of the skeleton label for 2nd language
-
-#internal script, cookies
-%dialog = %{setupstring($datafolder, '', 'missa.dialog')};
-
-if (!$setupsave) {
-  %setup = %{setupstring($datafolder, '', 'missa.setup')};
-} else {
-  %setup = split(';;;', $setupsave);
-}
-if (!$setupsave && !getcookies('missap', 'parameters')) { setcookies('missap', 'parameters'); }
-if (!$setupsave && !getcookies('missago', 'general')) { setcookies('missago', 'general'); }
+our $testmode;
+our $votive;
 $first = strictparam('first');
 our $Propers = strictparam('Propers');
 our $command = strictparam('command');
@@ -110,67 +98,35 @@ our $sanctiname = 'Sancti';
 our $temporaname = 'Tempora';
 our $communename = 'Commune';
 
+$setupsave = strictparam('setupm');
+loadsetup($setupsave);
+
+if (!$setupsave) {
+  getcookies('missap', 'parameters');
+  getcookies('missag', 'general');
+}
+
+set_runtime_options('general'); #$expand, $version, $lang2
+set_runtime_options('parameters'); # priest, lang1 ... etc
+
+if ($command eq 'changeparameters') { getsetupvalue($command); }
+
+setcookies('missap', 'parameters');
+setcookies('missag', 'general');
+
+# save parameters
+$setupsave = savesetup(1);
+$setupsave =~ s/\r*\n*//g;
+
 #*** handle different actions
 #after setup
-if ($command =~ /change(.*)/is) {
-  $command = $1;
-  getsetupvalue($command);
-  if ($command =~ /parameters/) { setcookies('missap', 'parameters'); }
-}
-eval($setup{'parameters'});    #$lang1, colors, sizes
-eval($setup{'general'});       #$version, $testmode,$lang2,$votive,$rubrics, $solemn
 
-#prepare testmode
-our $testmode = strictparam('testmode');
 if ($testmode !~ /(Seasonal|Season|Saint)/i) { $testmode = 'regular'; }
-our $votive = strictparam('votive');
-$p = strictparam('lang1');
 
-if ($p) {
-  $lang1 = $p;
-  setsetupvalue('parameters', 2, $lang1);
-}
-$p = strictparam('screenheight');
-
-if ($p) {
-  $screenheight = $p;
-  setsetupvalue('parametrs', 11, $screenheight);
-}
-$p = strictparam('textwidth');
-
-if ($p) {
-  $textwidth = $p;
-  setsetupvalue('parametrs', 12, $screenheight);
-}
-
-#expand (all, psalms, nothing, skeleton) parameter
-$flag = 0;
-$p = strictparam('lang2');
-if ($p) { $lang2 = $p; $flag = 1; }
-$p = strictparam('version');
-if ($p) { $version = $p; $flag = 1; }
-
-if (!$first) {
-  $first = 1;
-} else {
-  $flag = 1;
-  $rubrics = strictparam('rubrics');
-  $solemn = strictparam('solemn');
-}
-
-if ($flag) {
-  setsetup('general', $version, $version2, $testmode, $lang2, $votive, $rubrics, $solemn);
-  setcookies('missago', 'general');
-}
-if (!$version) { $version = 'Rubrics 1960'; }
-if (!$lang2) { $lang2 = 'English'; }
 $only = ($lang1 =~ /$lang2/) ? 1 : 0;
 setmdir($version);
 
 # save parameters
-$setupsave = printhash(\%setup, 1);
-$setupsave =~ s/\r*\n*//g;
-$setupsave =~ s/\"/\~24/g;
 precedence();    #fills our hashes et variables
 
 # prepare title
@@ -197,11 +153,11 @@ PrintTag
 if ($command =~ /setup(.*)/is) {
   $pmode = 'setup';
   $command = $1;
-  setuptable($command);
+  print setuptable($command, $title);
+  $command = "change" . $command;
 } elsif ($command =~ /pray/i) {
   $pmode = 'missa';
   $command =~ s/(pray|change|setup)//ig;
-  $title = "Sancta Missa";
   $head = $title;
   $headline = setheadline();
   headline($head);
@@ -293,7 +249,7 @@ if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
 $command =~ s/(pray|setup)//ig;
 print << "PrintTag";
-<INPUT TYPE=HIDDEN NAME=setup VALUE="$setupsave">
+<INPUT TYPE=HIDDEN NAME=setupm VALUE="$setupsave">
 <INPUT TYPE=HIDDEN NAME=command VALUE="$command">
 <INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
 <INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">

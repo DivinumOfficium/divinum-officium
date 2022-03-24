@@ -30,7 +30,8 @@ our $missa = 1;
 #*** collect standard items
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/../horas/dialogcommon.pl";
-require "$Bin/webdia.pl";
+require "$Bin/../horas/webdia.pl";
+require "$Bin/../horas/setup.pl";
 require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
 
@@ -40,14 +41,19 @@ binmode(STDOUT, ':encoding(utf-8)');
 
 #*** get parameters
 getini('missa');    #files, colors
-%dialog = %{setupstring($datafolder, '', 'missa.dialog')};
-%setup = %{setupstring($datafolder, '', 'missa.setup')};
-eval($setup{'parameters'});
-eval($setup{'general'});
+
+$setupsave = strictparam('setup');
+loadsetup($setupsave);
+
+if (!$setupsave) {
+  getcookies('missap', 'parameters');
+  getcookies('missago', 'general');
+}
+
+set_runtime_options('general'); #$expand, $version, $lang2
+set_runtime_options('parameters'); # priest, lang1 ... etc
+
 $popup = strictparam('popup');
-$rubrics = strictparam('rubrics');
-$lang1 = strictparam('lang1');
-$lang2 = strictparam('lang2');
 $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
 $only = ($lang1 && $lang1 =~ /$lang2/) ? 1 : 0;
 $title = "$popup";

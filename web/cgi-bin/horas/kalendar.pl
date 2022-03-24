@@ -59,6 +59,7 @@ require "$Bin/do_io.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
+require "$Bin/setup.pl";
 
 sub kalendar_entry {
   my($date,$ver,$compare) = @_;
@@ -150,33 +151,30 @@ my $date_arg = $officium =~ /Pofficium/? 'date1': 'date';
 my $officium_name = $officium =~ /missa/ ? 'missa' : 'horas';
 getini("horas");    #files, colors
 
-$setupsave = strictparam('setup');
-$setupsave =~ s/\~24/\"/g;
+$datafolder =~ s/horas$/missa/ if ($officium_name =~ /missa/);
+
 $date1 = strictparam('date1');
 $browsertime = strictparam('browsertime');
 $Readings = strictparam('readings');
 
-#internal script, cookies
-%dialog = %{setupstring($datafolder, '', "$officium_name.dialog")};
+$setupsave = strictparam('setup');
+loadsetup($setupsave);
 
-if (!$setupsave) {
-  %setup = %{setupstring($datafolder, '', "$officium_name.setup")};
-} else {
-  %setup = split(';;;', $setupsave);
-}
-
-if (!$setupsave && !getcookies("${officium_name}p", 'parameters')) { setcookies("${officium_name}p", 'parameters'); }
 $ckname = ($officium_name =~ /officium/) ? "${officium_name}go" : ($Ck) ? "${officium_name}gc" : "${officium_name}g";
 $csname = ($Ck) ? 'generalc' : 'general';
-if (!$setupsave && !getcookies($ckname, $csname)) { setcookies($ckname, $csname); }
-$setup{'parameters'} = clean_setupsave($setup{'parameters'});
-eval($setup{'parameters'});
-eval($setup{"$csname"});
+
+if (!$setupsave) {
+  getcookies("${officium_name}p", 'parameters');
+  getcookies($ckname, $csname);
+}
+
+set_runtime_options($csname); #$expand, $version, $lang2
+set_runtime_options('parameters'); # priest, lang1 ... etc
 
 #*** saves parameters
-$setupsave = printhash(\%setup, 1);
+$setupsave = savesetup(1);
 $setupsave =~ s/\r*\n*//g;
-$setupsave =~ s/\"/\~24/g;
+
 $hora = '';
 $odate = $date1;
 
