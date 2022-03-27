@@ -13,9 +13,10 @@ $smallfont='1 red';;
 $titlefont='+1 red';;
 $screenheight='1024';;
 $textwidth='100';;
+$oldhymns='0';;
 
 [parameterscheck]
-bbtbbtcccccccnn
+bbtbbbtcccccnnb
 
 [general]
 $expand='all';;

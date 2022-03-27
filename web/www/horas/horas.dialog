@@ -1,18 +1,19 @@
 [parameters]
-Priest~>$priest~>Checkbutton;;
-Building script~>$building~>Checkbutton;;
-Language 1~>$lang1~>Optionmenu~>languages;;
-Pius XII Psalter~>$psalmvar~>Checkbutton;;
-White background~>$whitebground~>Checkbutton;;
-Text font~>$blackfont~>Entry~>12;;
-Small text~>$smallblack~>Entry~>12;;
-Red font~>$redfont~>Entry~>12;;
-Initiale~>$initiale~>Entry~>12;;
-Large font~>$largefont~>Entry~>12;;
-Small red~>$smallfont~>Entry~>12;;
-Title font~>$titlefont~>Entry~>12;;
-Screen height~>$screenheight~>Entry~>12;;
-Text width percent~>$textwidth~>Entry~>12;;
+Priest~>$priest~>Checkbutton~>~>1;;
+Building script~>$building~>Checkbutton~>~>2;;
+Language 1~>$lang1~>Optionmenu~>languages~>3;;
+Pius XII Psalter~>$psalmvar~>Checkbutton~>~>4;;
+Use antique hymns~>$oldhymns~>Checkbutton~>~>15;;
+White background~>$whitebground~>Checkbutton~>~>5;;
+Text font~>$blackfont~>Entry~>12~>6;;
+Small text~>$smallblack~>Entry~>12~>7;;
+Red font~>$redfont~>Entry~>12~>8;;
+Initiale~>$initiale~>Entry~>12~>9;;
+Large font~>$largefont~>Entry~>12~>10;;
+Small red~>$smallfont~>Entry~>12~>11;;
+Title font~>$titlefont~>Entry~>12~>12;;
+Screen height~>$screenheight~>Entry~>12~>13;;
+Text width percent~>$textwidth~>Entry~>12~>14;;
 
 [general]
 Expand~>$expand~>Optionmenu~>{all,psalms,none,skeleton};;

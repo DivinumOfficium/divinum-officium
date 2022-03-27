@@ -1757,7 +1757,7 @@ sub tryoldhymn {
   $name1 = $name;
   $name1 =~ s/Hymnus\S*/$&M/;
 
-  if ($version =~ /(Monastic|1570|Praedicatorum)/i && $name =~ /Hymnus/i && exists($source{$name1})) {
+  if (($oldhymns || ($version =~ /(Monastic|1570|Praedicatorum)/i)) && $name =~ /Hymnus/i && exists($source{$name1})) {
     return $source{$name1};
   } else {
     return $source{$name};
