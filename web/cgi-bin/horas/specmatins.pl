@@ -1018,6 +1018,14 @@ sub lectio : ScriptFunc {
     $w = "$before" . "\n$tuautem\n_\n$rest";
   }
 
+  # add initial to text
+  if ($w !~ /^!/m) {
+    $w = "v. $w" 
+  } elsif ($w !~ /^\d/m) {
+    local($/) = undef;
+    $w =~ s/!.*?\n/$&v. /g;
+  }
+
   #handle verse numbers for passages
   my $item = 'Lectio';
   if (exists($translate{$lang}{$item})) { $item = $translate{$lang}{$item}; }
