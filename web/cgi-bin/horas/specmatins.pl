@@ -1020,10 +1020,9 @@ sub lectio : ScriptFunc {
 
   # add initial to text
   if ($w !~ /^!/m) {
-    $w = "v. $w" 
+    $w =~ s/^(?=\p{Letter})/v. /;
   } elsif ($w !~ /^\d/m) {
-    local($/) = undef;
-    $w =~ s/!.*?\n/$&v. /g;
+    $w =~ s/^!.*?\n(?=\p{Letter})/$&v. /gm;
   }
 
   #handle verse numbers for passages
@@ -1036,22 +1035,23 @@ sub lectio : ScriptFunc {
   $w = "";
 
   my $initial = $nonumbers;
-  foreach $item (@w) {
-    if ($item =~ /^([0-9]+)\s+(.*)/s) {
+  foreach (@w) {
+    if (/^([0-9]+)\s+(.*)/s) {
       my $rest = $2;
       my $num = "\n" . setfont($smallfont, $1);
-      if ($rest =~ /^\s*([a-z])(.*)/is) { $rest = uc($1) . $2; }
+      $rest =~ s/^./\u$&/ unless ($nonumbers);
       if ($initial) {
         $num = "\nv. ";
         $initial = 0;
       } elsif ($nonumbers) {
         $num = '';
       }
-      $item = "$num $rest";
+      $_ = "$num $rest";
     } else {
-      $item = "\n$item";
+      $initial = 1 if (/^!/ && $nonumbers);
+      $_ = "\n$_";
     }
-    $w .= "$item";
+    $w .= "$_";
   }
 
   if ($dayname[0] !~ /Pasc/i) {

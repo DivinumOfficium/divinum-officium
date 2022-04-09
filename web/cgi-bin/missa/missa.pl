@@ -37,7 +37,7 @@ our $officium = 'missa.pl';
 our $version = 'Rubrics 1960';
 
 @versions =
-  ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1965-1967', '1960 Newcalendar');
+  ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1965-1967', '1960 Newcalendar', 'Dominican');
 
 #***common variables arrays and hashes
 #filled  getweek()
