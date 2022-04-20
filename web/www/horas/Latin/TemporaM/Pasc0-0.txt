@@ -6,26 +6,27 @@ Antiphonas horas
 12 lectiones
 Doxology=Pasc
 
+[AntM Matutinum]
+Terra * trémuit et quiévit, † dum exsúrgeret in judício Deus, allelúja.;;29
+Nolíte expavéscere: * Jesum quǽritis Nazarénum, crucifíxum: surréxit, non est hic, allelúja.;;243;244;245
+
 [Ant Matutinum]
-Ego sum * qui sum, et consílium meum non est cum ímpiis, † sed in lege Dómini volúntas mea est, allelúja.;;1
+@Tempora/Pasc0-0::1
 ;;2
 ;;8
 ;;15
 ;;23
 ;;27
-V. Surréxit Dóminus de sepúlcro, allelúja.
-R. Qui pro nobis pepéndit in ligno, allelúja.
-Terra * trémuit et quiévit, † dum exsúrgeret in judício Deus, allelúja.;;29
+@Psalterium/Psalmi matutinum:Pascm0:7-8
+@:AntM Matutinum:1
 ;;63
 ;;65
 ;;75
 ;;87
 ;;107
-V. Surréxit Dóminus vere, allelúja.
-R. Et appáruit Simóni, allelúja.
-Nolíte expavéscere: * Jesum quǽritis Nazarénum, crucifíxum: surréxit, non est hic, allelúja.;;243;244;245
-V. Gavísi sunt discípuli, allelúja.
-R. Viso Dómino, allelúja.
+@Psalterium/Psalmi matutinum:Pascm0:15-16
+@:AntM Matutinum:2
+@Psalterium/Psalmi matutinum:Pascm0:18-19
 
 [Lectio1]
 @Sancti/01-03::1-6 s/1-5/2-4/ s/1.*Absit. /2 /s
@@ -126,6 +127,7 @@ $Deo gratias
 
 [Capitulum Nona]
 @Psalterium/Prima Special:Pasc
+$Deo gratias
 
 [Responsory Nona]
 @:Versum 2
