@@ -1232,6 +1232,7 @@ sub special : ScriptFunc {
 sub getordinarium {
   my $lang = shift;
   my $command = shift;
+  $command =~ s/Vesperae/Vespera/;
   my @script = ();
   my $suffix = "";
   if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) { $suffix .= "e"; } # for Epiphanias

@@ -75,11 +75,10 @@ sub savesetup {
 
 sub setuptable {
   my($command, $title) = @_;
-  my $title1 = $title;
-  $$title1 =~ s/Setup/Options/i;
+  $title =~ s/setupparameters/Options/i;
 
   my $output = << "PrintTag";
-<H1 ALIGN=CENTER><FONT COLOR=MAROON><B><I>$title1</I></B></FONT></H1>
+<H1 ALIGN=CENTER><FONT COLOR=MAROON><B><I>$title</I></B></FONT></H1>
 <TABLE WIDTH=75% BORDER=0 ALIGN=CENTER><TR><TD>
 <TABLE BORDER=2 CELLPADDING=5 ALIGN=CENTER BACKGROUND=\"$htmlurl/horasbg.jpg\">
 PrintTag
