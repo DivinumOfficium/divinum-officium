@@ -122,6 +122,8 @@ $setupsave =~ s/\r*\n*//g;
 #after setup
 
 if ($testmode !~ /(Seasonal|Season|Saint)/i) { $testmode = 'regular'; }
+$rubrics = strictparam('rubrics');
+$solemn = strictparam('solemn');
 
 $only = ($lang1 =~ /$lang2/) ? 1 : 0;
 setmdir($version);
