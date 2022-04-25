@@ -35,8 +35,8 @@ our $missa = 0;
 our @ctext1 = splice(@ctext1, @ctext1);
 our @ctext2 = splice(@ctext2, @ctext2);
 our $officium = 'Cofficium.pl';
-our $version1 = 'Divino Afflatu';
-our $version2 = 'Rubrics 1960';
+our $version1 = '';
+our $version2 = '';
 our $version = '';
 
 #***common variables arrays and hashes
@@ -83,32 +83,7 @@ $q = new CGI;
 
 #get parameters
 getini('horas');    #files, colors
-$setupsave = strictparam('setup');
-$setupsave =~ s/\~24/\"/g;
-
 our ($lang1, $lang2, $expand, $column, $accented);
-our %translate;     #translation of the skeleton label for 2nd language
-our $sanctiname = 'Sancti';
-our $temporaname = 'Tempora';
-our $communename = 'Commune';
-
-#internal script, cookies
-%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
-
-if (!$setupsave) {
-  %setup = %{setupstring($datafolder, '', 'horas.setup')};
-} else {
-  %setup = split(';;;', $setupsave);
-}
-
-if (!$setupsave && !getcookies('horasp', 'parameters')) {
-  setcookies('horasp', 'parameters');
-}
-
-if (!$setupsave && !getcookies('horasgc', 'generalc')) {
-  setcookies('horasgc', 'generalc');
-}
-
 our $command = strictparam('command');
 our $hora = $command;    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
 our $browsertime = strictparam('browsertime');
@@ -117,67 +92,41 @@ our $searchvalue = strictparam('searchvalue');
 
 if (!$searchvalue) { $searchvalue = '0'; }
 
-#*** handle different actions
-#after setup
-if ($command =~ /change(.*)/is) {
-  $command = $1;
-  getsetupvalue($command);
-  if ($command =~ /parameters/) { setcookies('horasp', 'parameters'); }
+our %translate;     #translation of the skeleton label for 2nd language
+our $sanctiname = 'Sancti';
+our $temporaname = 'Tempora';
+our $communename = 'Commune';
+
+$setupsave = strictparam('setup');
+loadsetup($setupsave);
+
+if (!$setupsave) {
+  getcookies('horasp', 'parameters');
+  getcookies('horasgc', 'generalc');
 }
-$setup{'parameters'} = clean_setupsave($setup{'parameters'});
-eval($setup{'parameters'});    #$priest, $lang1, colors, sizes
-eval($setup{'generalc'});      #$expand, $version, $lang2
+set_runtime_options('generalc'); #$expand, $version, $lang2
+set_runtime_options('parameters'); # priest, lang1 ... etc
+
+if ($command eq 'changeparameters') { getsetupvalue('parameters'); }
+
+if ($version1 eq $version2) { $version2 = 'Divino Afflatu'; }
+if ($version1 eq $version2) { $version2 = 'Rubrics 1960'; }
+
+setcookies('horasp', 'parameters');
+setcookies('horasgc', 'generalc');
+
+# save parameters
+$setupsave = savesetup(1);
+$setupsave =~ s/\r*\n*//g;
 
 #prepare testmode
 our $testmode = strictparam('testmode');
 if ($testmode !~ /(Season|Saint|Common)/i) { $testmode = 'regular'; }
 our $votive = strictparam('votive');
 $expandnum = strictparam('expandnum');
-$p = strictparam('priest');
 
-if ($p) {
-  $priest = 1;
-  setsetupvalue('parameters', 0, $priest);
-}
-$p = strictparam('psalmvar');
+$only = 0;
 
-if ($p) {
-  $psalmvar = $p;
-  setsetupvalue('parameters', 3, $psalmvar);
-}
-$p = strictparam('screenheight');
-
-if ($p) {
-  $screenheight = $p;
-  setsetupvalue('parametrs', 11, $screenheight);
-}
-
-#expand (all, psalms, nothing, skeleton) parameter
-$flag = 0;
-$p = strictparam('lang2');
-if ($p) { $lang2 = $p; $flag = 1; }
-$p = strictparam('version1');
-if ($p) { $version1 = $p; $flag = 1; }
-$p = strictparam('version2');
-if ($p) { $version2 = $p; $flag = 1; }
-$p = strictparam('expand');
-if ($p) { $expand = $p; $flag = 1; }
-$p = strictparam('accented');
-if ($p) { $accented = $p; $flag = 1; }
-
-if ($flag) {
-  setsetup('generalc', $expand, $version1, $version2, $lang2, $accented);
-  setcookies('horasgc', 'generalc');
-}
-if (!$expand) { $expand = 'psalms'; }
-if (!$version) { $version = 'Divino Afflatu'; }
-if (!$lang2) { $lang2 = 'English'; }
-$only = ($version1 =~ /$version2/) ? 1 : 0;
-
-# save parameters
-$setupsave = printhash(\%setup, 1);
-$setupsave =~ s/\r*\n*//g;
-$setupsave =~ s/\"/\~24/g;
 $version = $version1;
 $lang1 = $lang2;
 setmdir($version);
@@ -199,7 +148,7 @@ if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|P
   $h = '';
 }
 $title = "Divinum Officium$h";
-@horas = getdialogcolumn('horas', '~', 0);
+@horas = getdialog('horas', '~', 0);
 for ($i = 0; $i < 10; $i++) { $hcolor[$i] = 'blue'; }
 
 #$completed = getcookie1('completed');
@@ -226,7 +175,8 @@ PrintTag
 if ($command =~ /setup(.*)/is) {
   $pmode = 'setup';
   $command = $1;
-  setuptable($command);
+  print setuptable($command, $title);
+  $command = "change" . $command;
 } elsif ($command =~ /pray/) {
   $pmode = 'hora';
   $command =~ s/(pray|change|setup)//ig;
