@@ -186,13 +186,15 @@ PrintTag
 PrintTag
 }
 
-#common widgets for main and hora
-$crubrics = ($rubrics) ? 'CHECKED' : '';
-$csolemn = ($solemn) ? 'CHECKED' : '';
-@chv = splice(@chv, @chv);
-for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'SELECTED' : ''; }
-$ctext = ($pmode =~ /(main)/i) ? 'Sancta Missa' : 'Sancta Missa Persoluta';
-print << "PrintTag";
+
+if ($pmode =~ /(main|missa)/i) {
+  #common widgets for main and hora
+  $crubrics = ($rubrics) ? 'CHECKED' : '';
+  $csolemn = ($solemn) ? 'CHECKED' : '';
+  @chv = splice(@chv, @chv);
+  for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'SELECTED' : ''; }
+  $ctext = ($pmode =~ /(main)/i) ? 'Sancta Missa' : 'Sancta Missa Persoluta';
+  print << "PrintTag";
 <P ALIGN=CENTER><FONT SIZE=+1><I>
 <LABEL FOR=rubrics>Rubrics : </LABEL><INPUT ID=rubrics TYPE=CHECKBOX NAME='rubrics' $crubrics Value=1  onclick="parchange()">
 &nbsp;&nbsp;&nbsp;
@@ -203,7 +205,7 @@ print << "PrintTag";
 <P ALIGN=CENTER>
 PrintTag
 
-print option_selector("Version", "parchange();", $version, @versions );
+  print option_selector("Version", "parchange();", $version, @versions );
 
 #$testmode = 'Regular' unless $testmode;
 #if ($savesetup > 1) {
@@ -211,25 +213,21 @@ print option_selector("Version", "parchange();", $version, @versions );
 #} else {
 #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
 #}
-my $propname = ($Propers) ? 'Full' : 'Propers';
-print option_selector("lang2", "parchange();", $lang2, ('Latin', vernaculars($datafolder)));
-@votive = ('Hodie;');
-if (opendir(DIR, "$datafolder/Latin/Votive")) {
-  @a = sort readdir(DIR);
-  closedir DIR;
-  foreach (@a) { push(@votive, $_) if (s/\.txt//i); }
-}
-print option_selector("Votive", "parchange();", $votive, @votive );
-print << "PrintTag";
+  my $propname = ($Propers) ? 'Full' : 'Propers';
+  print option_selector("lang2", "parchange();", $lang2, ('Latin', vernaculars($datafolder)));
+  @votive = ('Hodie;');
+  if (opendir(DIR, "$datafolder/Latin/Votive")) {
+    @a = sort readdir(DIR);
+    closedir DIR;
+    foreach (@a) { push(@votive, $_) if (s/\.txt//i); }
+  }
+  print option_selector("Votive", "parchange();", $votive, @votive );
+  print << "PrintTag";
 </P>
 <P ALIGN=CENTER><FONT SIZE=+1>
-PrintTag
-print << "PrintTag";
 <P ALIGN=CENTER>
 <A HREF=# onclick="hset('Propers')">$propname</A></P>
-PrintTag
-print "</FONT></P>\n";
-    print << "PrintTag";
+</FONT></P>
 </SELECT>
 <P ALIGN=CENTER><FONT SIZE=+1>
 <A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
@@ -246,6 +244,8 @@ print "</FONT></P>\n";
 </FONT>
 </P>
 PrintTag
+}    
+
 #common end for programs
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
@@ -323,7 +323,7 @@ function pset(p) {
 
 //call an individual hora
 function hset(p) {
-  if (p.match('Completed')) {
+  if (p.match('Persoluta')) {
 	return okbutton();
   }
   if (p.match('Propers')) {
