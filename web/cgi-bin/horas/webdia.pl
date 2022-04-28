@@ -44,16 +44,9 @@ PrintTag
   print "</HEAD>";
 }
 
-#*** setup($name, $script)
-# generates an input table
-# $name is the command name listed above the table
-#
-# $script is a string scalar contisting on lines separated by ';;' two semicolons
-# each line have 3 to 5 elements separated by '~>' sign
-# labelstring~>$default~>type~>mode~>condition
-# labelstring is the name above the widget
-# $default holds the the default value
-# type = Label | Entry~>'width' | Text~>'rows'x'columns' |
+#*** htmlInput()
+# generates html inputs as input, select, checkbox
+# parmode = Label | Entry~>'width' | Text~>'rows'x'columns' |
 #        Checkbutton  | Radiobutton~>'itemlist' | Optionmenu~>itemarray |
 #        Listbox~>'itemlist' | Scale~>'from'~'to' | Filesel~>stock |
 #        Color | Font | Pixel |Position | Points | Area | Ngon
@@ -64,155 +57,123 @@ PrintTag
 #    stock option results a possibility to select the item from the stocked images
 # condition is useable if the first item is Optionselect. The item is shown only
 #   if condition string contains the selected item
-#
-# script usually is defined in  .dialog file, and obtained by getsetuppar($name) sub
-# the result is saved to %setup hash by getsetupvalue($name) sub
-#
-sub setup {
-  my $name = shift;
-  if (!$name) { $name = "noname"; }
-  my $scripto = shift;
-  if (!$scripto) { beep(); $error = 'No setup parameter'; return; }
-  my $helpfile = "$htmlurl/help/horashelp.html";
-  $helpfile =~ s/\//\\/g;
 
-  my ($width, $rpar, @rpar, $size, @size, $range, @range, $j);
-  my $tl = 0;
-  $input = "<TABLE BORDER=2 CELLPADDING=5 ALIGN=CENTER BACKGROUND=\"$htmlurl/horasbg.jpg\"><TR>\n";
+sub htmlInput {
+  my($parname, $parvalue, $parmode, $parpar, $parfunc, $parhelp) = @_;
+  my $output = '';
 
-  foreach (split(';;', $scripto)) {
-    my($parname, $parvalue, $parmode, $parpar, $parpos, $parfunc, $parhelp) = split('~>');
-    my $k = $parpos - 1;
-    if (!$parmode) { next; }
-    $input .= "<TR><TD ALIGN=left>\n";
+  if ($parmode =~ /^label/i) {
+    my $ilabel = $parvalue;
+    if ($parpar) { $ilabel = wrap($ilabel, $parpar, "<BR>\n"); }
+    $output .= "$ilabel";
+    $output .= "<INPUT TYPE=HIDDEN NAME=\'$parname\' VALUE=\'$parvalue\'>\n";
+  } elsif ($parmode =~ /entry/i) {
+    $width = $parpar;
+    if (!$width || $width == 0) { $width = 3; }
+    my $jsfunc = '';
+    if ($parfunc) { $jsfunc = "onchange=\"$parfunc;\""; }
+    $output .= "<INPUT TYPE=TEXT NAME=\'$parname\' ID=\'$parname\' $jsfunc SIZE=$width VALUE=\'$parvalue\'>\n";
+  } elsif ($parmode =~ /^text/i) {
+    my @size = split('x', $parpar);
+    if (@size < 2) { @size = (3, 12); }
+    my $pv = $parvalue;
+    $pv =~ s/  /\n/g;
+    my $loadfile = strictparam('loadfile');
 
-    if ($parmode !~ /label/) {
-      if ($parhelp =~ /\#/) { $input .= "<A HREF=\"$helpfile$parhelp\" TARGET='_new'>\n"; }
-      $input .= setfont($dialogfont) . " $parname";
-      $input .= "</FONT>\n";
-      if ($parhelp =~ /\#/) { $input .= "</A>\n"; }
-      $input .= " : </TD><TD ALIGN=right>";
+    if ($loadfile) {
+      $loadfile =~ s/\.gen//;
+
+      if (@cm = do_read("$datafolder/gen/$loadfile.gen")) {
+        $pv = join('', @cm);
+      }
     }
+    my $savefile = strictparam('savefile');
 
-    if ($parmode =~ /^label/i) {
-      my $ilabel = $parvalue;
-      if ($parpar) { $ilabel = wrap($ilabel, $parpar, "<BR>\n"); }
-      $input .= "$ilabel";
-      $input .= "<INPUT TYPE=HIDDEN NAME=\'I$k\' VALUE=\'$parvalue\'>\n";
-    } elsif ($parmode =~ /entry/i) {
-      $width = $parpar;
-      if (!$width || $width == 0) { $width = 3; }
-      my $jsfunc = '';
-      if ($parfunc) { $jsfunc = "onchange=\"$parfunc;\""; }
-      $input .= "<INPUT TYPE=TEXT NAME=\'I$k\' ID=\'I$k\' $jsfunc SIZE=$width VALUE=\'$parvalue\'>\n";
-    } elsif ($parmode =~ /^text/i) {
-      my @size = split('x', $parpar);
-      if (@size < 2) { @size = (3, 12); }
-      my $pv = $parvalue;
-      $pv =~ s/  /\n/g;
-      my $loadfile = strictparam('loadfile');
+    if ($savefile) {
+      $savefile =~ s/\.gen//;
+      do_write("$datafolder/gen/$savefile.gen", $pv);
+    }
+    $output .= "<TEXTAREA NAME=\'$parname\' ID=\'$parname\' COLS=$size[1] ROWS=$size[0]>$pv</TEXTAREA><BR>\n";
+    $output .= "<A HREF='#' onclick='loadrut();'>";
+    $output .= setfont($dialogfont) . "Load</FONT></A>";
+  } elsif ($parmode =~ /checkbutton/i) {
+    my $checked = ($parvalue) ? 'CHECKED' : '';
+    my $jsfunc = '';
+    if ($parfunc) { $jsfunc = "onclick=\"$parfunc;\""; }
+    $output .= "<INPUT TYPE=CHECKBOX NAME=\'$parname\' ID=\'$parname\' $checked $jsfunc>\n";
+  } elsif ($parmode =~ /^radio/i) {
+    if ($parmode =~ /vert/i) { $output .= "<TABLE>"; }
+    $rpar = $parpar;
+    @rpar = split(',', $rpar);
 
-      if ($loadfile) {
-        $loadfile =~ s/\.gen//;
-
-        if (@cm = do_read("$datafolder/gen/$loadfile.gen")) {
-          $pv = join('', @cm);
-        }
-      }
-      my $savefile = strictparam('savefile');
-
-      if ($savefile) {
-        $savefile =~ s/\.gen//;
-        do_write("$datafolder/gen/$savefile.gen", $pv);
-      }
-      $input .= "<TEXTAREA NAME=\'I$k\' ID=\'I$k\' COLS=$size[1] ROWS=$size[0]>$pv</TEXTAREA><BR>\n";
-      $input .= "<A HREF='#' onclick='loadrut();'>";
-      $input .= setfont($dialogfont) . "Load</FONT></A>";
-    } elsif ($parmode =~ /checkbutton/i) {
-      my $checked = ($parvalue) ? 'CHECKED' : '';
+    for ($j = 1; $j <= @rpar; $j++) {
+      my $checked = ($parvalue == $j) ? 'CHECKED' : '';
+      if ($parmode =~ /vert/i) { $output .= "<TR><TD>"; }
       my $jsfunc = '';
       if ($parfunc) { $jsfunc = "onclick=\"$parfunc;\""; }
-      $input .= "<INPUT TYPE=CHECKBOX NAME=\'I$k\' ID=\'I$k\' $checked $jsfunc>\n";
-    } elsif ($parmode =~ /^radio/i) {
-      if ($parmode =~ /vert/i) { $input .= "<TABLE>"; }
-      $rpar = $parpar;
-      @rpar = split(',', $rpar);
-
-      for ($j = 1; $j <= @rpar; $j++) {
-        my $checked = ($parvalue == $j) ? 'CHECKED' : '';
-        if ($parmode =~ /vert/i) { $input .= "<TR><TD>"; }
-        my $jsfunc = '';
-        if ($parfunc) { $jsfunc = "onclick=\"$parfunc;\""; }
-        $input .= "<INPUT TYPE=RADIO NAME=\'I$k\' ID=\'I$k\' VALUE=$j $checked $jsfunc>";
-        $input .= "<FONT SIZE=-1> $rpar[$j-1] </FONT>\n";
-        if ($parmode =~ /vert/i) { $input .= "</TD></TR>"; }
-      }
-      if ($parmode =~ /vert/i) { $input .= "</TABLE>"; }
-    } elsif ($parmode =~ /^updown/i) {
-      if (!$parvalue && $parvalue != 0) { $parvalue = 5; }
-      $input .= "<IMG SRC=\"$htmlurl/down.gif\" ALT=down ALIGN=TOP onclick=\"$parfunc($k,-1)\">\n";
-      $input .= "<INPUT TYPE=TEXT NAME=\'I$k\' ID=\'I$k\' SIZE=$parpar "
-        . "VALUE=$parvalue onchange=\"$parfunc($k,0);\">\n";
-      $input .= "<IMG SRC=\"$htmlurl/up.gif\" ALT=up ALIGN=TOP onclick=\"$parfunc($k,1);\">\n";
-    } elsif ($parmode =~ /^scale/i) {
-      $input .= "<INPUT TYPE=TEXT SIZE=6 NAME=\'I$k\' ID=\'I$k\' VALUE=$parvalue>\n";
-    } elsif ($parmode =~ /filesel/i) {    #type=file value is read only
-      if ($parpar =~ /stack/i) {
-        $input .= "<INPUT TYPE=RADIO NAME='mousesel' VALUE='stack'" . " onclick=\'mouserut(\"stack$k\");\'>\n";
-      }
-      $input .= "<INPUT TYPE=TEXT SIZE=16 NAME=\'I$k\' ID=\'I$k\'" . " VALUE=\'$parvalue\'>\n";
-
-      if ($parpar !~ /stackonly/i) {
-        $input .= "<INPUT TYPE=BUTTON VALUE=' ' onclick='filesel(\"I$k\", \"$parpar\");'>\n";
-      }
-    } elsif ($parmode =~ /color/i) {
-      my $size = 3;
-      if ($parpar) { $size = $parpar; }
-      $input .= "<INPUT TYPE=RADIO NAME='mousesel' VALUE='color'" . " onclick=\'mouserut(\"color$k\");\'>\n";
-      $input .= "<INPUT TYPE=TEXT SIZE=8 NAME=\'I$k\' ID=\'I$k\'" . " VALUE=\'$parvalue\'>\n";
-      $input .= "<INPUT TYPE=BUTTON VALUE=' ' onclick='colorsel(\"I$k\",$size);'>\n";
-    } elsif ($parmode =~ /font/i) {
-      my $size = 16;
-      if ($parpar) { $size = $parpar }
-      $input .= "<INPUT TYPE=TEXT SIZE=$size NAME=\'I$k\' ID=\'I$k\'" . " VALUE=\'$parvalue\'>\n";
-      $input .= "<INPUT TYPE=BUTTON VALUE=' ' " . "onclick='fontsel(\"I$k\");'>\n";
-    } elsif ($parmode =~ /^option/i) {
-      my $a = $parpar;
-      if (!$a) { $error = "Missing parameter for Optionmenu"; return ""; }
-
-      if ($a =~ /\@/ || ref($a) =~ /ARRAY/i) {
-        @optarray = eval($a);
-      } elsif ($a =~ /^\s*\{(.+)\}\s*$/) {
-        @optarray = split(',', $1);
-      } else {
-        @optarray = getdialogcolumn($a, '~', 0);
-      }
-      my $onclick =
-          ($parmode =~ /select/i) ? "onchange=\'buttonclick(\"$name\");\'"
-        : ($parfunc) ? "onchange=\"$parfunc;\""
-        : '';
-      while (!(-d "$datafolder/$optarray[-1]")) { pop(@optarray); }
-      my $osize = @optarray;
-      if ($osize > 5) { $osize = 5; }
-      $input .= "<SELECT SIZE=$osize NAME=\'I$k\' ID=\'I$k\' $onclick>\n";
-
-      for ($j = 0; $j < @optarray; $j++) {
-        my $pv = $parvalue;
-        $pv =~ s/[\[\]]//;
-        my $ov = $optarray[$j];
-        $ov =~ s/[\[\]]//;
-        my $selected = ($pv =~ /^$ov\s*$/i) ? 'SELECTED' : '';
-        $input .= "<OPTION VALUE=\'$optarray[$j]\' $selected>$optarray[$j]\n";
-      }
-      $input .= "</SELECT>\n";
+      $output .= "<INPUT TYPE=RADIO NAME=\'$parname\' ID=\'$parname\' VALUE=$j $checked $jsfunc>";
+      $output .= "<FONT SIZE=-1> $rpar[$j-1] </FONT>\n";
+      if ($parmode =~ /vert/i) { $output .= "</TD></TR>"; }
     }
-    $k++;
-    $input .= "</TD></TR>\n";
+    if ($parmode =~ /vert/i) { $output .= "</TABLE>"; }
+  } elsif ($parmode =~ /^updown/i) {
+    if (!$parvalue && $parvalue != 0) { $parvalue = 5; }
+    $output .= "<IMG SRC=\"$htmlurl/down.gif\" ALT=down ALIGN=TOP onclick=\"$parfunc($parpos,-1)\">\n";
+    $output .= "<INPUT TYPE=TEXT NAME=\'$parname\' ID=\'$parname\' SIZE=$parpar "
+      . "VALUE=$parvalue onchange=\"$parfunc($parpos,0);\">\n";
+    $output .= "<IMG SRC=\"$htmlurl/up.gif\" ALT=up ALIGN=TOP onclick=\"$parfunc($parpos,1);\">\n";
+  } elsif ($parmode =~ /^scale/i) {
+    $output .= "<INPUT TYPE=TEXT SIZE=6 NAME=\'$parname\' ID=\'$parname\' VALUE=$parvalue>\n";
+  } elsif ($parmode =~ /filesel/i) {    #type=file value is read only
+    if ($parpar =~ /stack/i) {
+      $output .= "<INPUT TYPE=RADIO NAME='mousesel' VALUE='stack'" . " onclick=\'mouserut(\"stack$parpos\");\'>\n";
+    }
+    $output .= "<INPUT TYPE=TEXT SIZE=16 NAME=\'$parname\' ID=\'$parname\'" . " VALUE=\'$parvalue\'>\n";
+
+    if ($parpar !~ /stackonly/i) {
+      $output .= "<INPUT TYPE=BUTTON VALUE=' ' onclick='filesel(\"$parname\", \"$parpar\");'>\n";
+    }
+  } elsif ($parmode =~ /color/i) {
+    my $size = 3;
+    if ($parpar) { $size = $parpar; }
+    $output .= "<INPUT TYPE=RADIO NAME='mousesel' VALUE='color'" . " onclick=\'mouserut(\"color$parpos\");\'>\n";
+    $output .= "<INPUT TYPE=TEXT SIZE=8 NAME=\'$parname\' ID=\'$parname\'" . " VALUE=\'$parvalue\'>\n";
+    $output .= "<INPUT TYPE=BUTTON VALUE=' ' onclick='colorsel(\"$parname\",$size);'>\n";
+  } elsif ($parmode =~ /font/i) {
+    my $size = 16;
+    if ($parpar) { $size = $parpar }
+    $output .= "<INPUT TYPE=TEXT SIZE=$size NAME=\'$parname\' ID=\'$parname\'" . " VALUE=\'$parvalue\'>\n";
+    $output .= "<INPUT TYPE=BUTTON VALUE=' ' " . "onclick='fontsel(\"$parname\");'>\n";
+  } elsif ($parmode =~ /^option/i) {
+    my $a = $parpar;
+    if (!$a) { $error = "Missing parameter for Optionmenu"; return ""; }
+
+    if ($a =~ /\@/ || ref($a) =~ /ARRAY/i) {
+      @optarray = eval($a);
+    } elsif ($a =~ /^\s*\{(.+)\}\s*$/) {
+      @optarray = split(',', $1);
+    } else {
+      @optarray = getdialog($a);
+    }
+    my $onclick =
+        ($parmode =~ /select/i) ? "onchange=\'buttonclick(\"$command\");\'"
+      : ($parfunc) ? "onchange=\"$parfunc;\""
+      : '';
+    my $osize = @optarray;
+    if ($osize > 5) { $osize = 5; }
+    $output .= "<SELECT SIZE=$osize NAME=\'$parname\' ID=\'$parname\' $onclick>\n";
+    foreach(@optarray) {
+      my($display, $value) = split(/\//);
+      $value ||= $display;
+      my $selected = $value eq $parvalue ? 'SELECTED' : '';
+      $output .= "<OPTION VALUE=\'$value\' $selected>$display\n";
+    }
+    $output .= "</SELECT>\n";
   }
-  $input .= "</TABLE>";
+  return $output;
 }
 
-# cleanse(s)
+#*** cleanse(s)
 # Return tainted string s cleansed of dangerous characters.
 sub cleanse($) {
   my $str = shift;
@@ -234,33 +195,6 @@ sub cleanse($) {
     $str = join(';', @parts);
   }
   return $str;
-}
-
-#*** getsetupvalue($name)
-# gets the input values of the table and saves the result as $name item into %setup hash
-# the setup item contains $var='value' duple semicolon ;; separated lines. Value is
-# changed getting param('In') values, where 'n' is a sequence number (0,1,...)
-sub getsetupvalue {
-  my $name = shift;
-  my $script = $setup{$name};
-  $script =~ s/\n\s*//g;
-  my @script = split(';;', $script);
-  eval($script);
-  $script = "";
-
-  for ($i = 0; $i < @script; $i++) {
-    $script[$i] =~ s/\=/\~\>/;
-    my @elems = split('~>', $script[$i]);
-    my $value = cleanse($q->param("I$i"));
-    if (!$value && $value ne '0') { $value = ''; }
-    if ($value =~ /^on$/) { $value = 1; }
-    $value =~ s/\n/  /g;
-    if ($elems[0] =~ /check/i) { $value = $check; }
-    my $str = $elems[0] . '=\'' . $value . '\'';
-    eval($str);
-    $script .= "$str;;";
-  }
-  $setup{$name} = $script;
 }
 
 #*** beep()
@@ -328,7 +262,7 @@ sub getcookies {
   my $sti = '';
   my $checkname = $name . 'check';
 
-  $check = $setup{$checkname};
+  $check = getsetup($checkname);
   $check =~ s/\s//g;
   %cookies = fetch_cookies();
 
@@ -338,26 +272,17 @@ sub getcookies {
   }
 
   if ($sti) {
-    $sti =~ s/\s\s(\s*)/\n$1/g;
     @sti = split(';;;', $sti);
-    my $param = $setup{$name};
+    my $param = getsetup($name);
     $param =~ s/\;\;\s*$//;
     my @param = split(';;', $param);
 
     #check if the structure of the parameters is the same
-    if (@sti != @param + 1 || $sti[-1] !~ /^$check$/) {
-      eval($setup{$name});
+    if (@sti != @param + 1 || (pop(@sti) ne $check)) {
+      $error = "Cookie $cname mismatch $name need $check has $param<br>== $sti[-1]";
       return 0;
     }
-    my $i;
-    $param = '';
-
-    for ($i = 0; $i < @sti; $i++) {
-      my @a = split('=', $param[$i]);
-      if ($a[0]) { $param .= "$a[0]=$sti[$i];;"; }
-    }
-    eval($param);
-    $setup{$name} = $param;
+    setsetup($name, @sti);
     return 1;
   }
   return 0;
@@ -369,15 +294,14 @@ sub setcookies {
 
   my $cname = shift;
   my $name = shift;
-  my @values = split(';;', $setup{$name});
+  my @values = split(';;', getsetup($name));
   my $value = '';
   my $checkname = $name . 'check';
 
-  $check = $setup{$checkname};
+  $check = getsetup($checkname);
   $check =~ s/\s//g;
 
   if (!$values[-1]) {
-    my %s = %{setupstring($datafolder, '', 'horas.setup')};
     $values[-1] = $check;
   }
 
@@ -530,6 +454,7 @@ sub setcell {
       }
     }
   }
+  $text =~ s/wait[0-9]+//ig;
   $text =~ s/\_/ /g;
   $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
   $text =~ s/\{\:.*?\:\}//sg;
@@ -592,8 +517,13 @@ sub ante_post {
   if ($Ck) { return; }
   my $colspan = ($only) ? '' : 'COLSPAN=2';
   print "<TR><TD $background VALIGN=TOP $colspan ALIGN=CENTER>\n";
-  print "<INPUT TYPE=RADIO NAME=link onclick='linkit(\"\$$title\", 0, \"Latin\");'>\n";
-  print "<FONT SIZE=1>$title Divinum officium</FONT></TD></TR>";
+  if ($0 =~ /missa/) {
+    print "<A HREF=\"mpopup.pl?popup=$title&rubrics=$rubrics&lang1=$lang1&lang2=$lang2\" TARGET=_NEW>$title</A>\n";
+    print "<FONT SIZE=1>Missam</FONT></TD></TR>";
+  } else {
+    print "<INPUT TYPE=RADIO NAME=link onclick='linkit(\"\$$title\", 0, \"Latin\");'>\n";
+    print "<FONT SIZE=1>$title Divinum officium</FONT></TD></TR>";
+  }
 }
 
 #table_end()

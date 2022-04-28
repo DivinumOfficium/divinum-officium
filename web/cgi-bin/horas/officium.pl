@@ -33,7 +33,7 @@ our $Ck = 0;
 our $notes = 0;
 our $missa = 0;
 our $officium = 'officium.pl';
-our $version = 'Rubrics 1960';
+our $version = '';
 
 #***common variables arrays and hashes
 #filled  getweek()
@@ -81,22 +81,8 @@ $q = new CGI;
 
 #get parameters
 getini('horas');    #files, colors
-$setupsave = strictparam('setup');
-$setupsave =~ s/\~24/\"/g;
 our ($lang1, $lang2, $expand, $column, $accented, $local);
 our %translate;     #translation of the skeleton labels
-
-#internal script, cookies
-%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
-
-if (!$setupsave) {
-  %setup = %{setupstring($datafolder, '', 'horas.setup')};
-} else {
-  %setup = split(';;;', $setupsave);
-}
-if (!$setupsave && !getcookies('horasp', 'parameters')) { setcookies('horasp', 'parameters'); }
-if (!$setupsave && !getcookies('horasgo', 'general')) { setcookies('horasgo', 'general'); }
-
 our $command = strictparam('command');
 our $hora = $command;    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
 our $browsertime = strictparam('browsertime');
@@ -113,16 +99,28 @@ our $temporaname = 'Tempora';
 our $communename = 'Commune';
 our $italicfont = 'italic';
 
+$setupsave = strictparam('setup');
+loadsetup($setupsave);
+
+if (!$setupsave) {
+  getcookies('horasp', 'parameters');
+  getcookies('horasgo', 'general');
+}
+
+set_runtime_options('general'); #$expand, $version, $lang2
+set_runtime_options('parameters'); # priest, lang1 ... etc
+
+if ($command eq 'changeparameters') { getsetupvalue($command); }
+
+setcookies('horasp', 'parameters');
+setcookies('horasgo', 'general');
+
+# save parameters
+$setupsave = savesetup(1);
+$setupsave =~ s/\r*\n*//g;
+
 #*** handle different actions
 #after setup
-if ($command =~ /change(.*)/i) {
-  $command = $1;
-  getsetupvalue($command);
-  if ($command =~ /parameters/) { setcookies('horasp', 'parameters'); }
-}
-$setup{'parameters'} = clean_setupsave($setup{'parameters'});
-eval($setup{'parameters'});    #$priest, $lang1, colors, sizes
-eval($setup{'general'});       #$expand, $version, $lang2
 
 #prepare testmode
 our $testmode = strictparam('testmode');
@@ -130,64 +128,10 @@ if ($testmode !~ /(Season|Saint|Common)/i) { $testmode = 'regular'; }
 our $votive = strictparam('votive');
 $expandnum = strictparam('expandnum');
 $notes = strictparam('notes');
-$p = strictparam('priest');
 
-if ($p) {
-  $priest = 1;
-  setsetupvalue('parameters', 0, $priest);
-}
-$p = strictparam('lang1');
-
-if ($p) {
-  $lang1 = $p;
-  setsetupvalue('parameters', 2, $lang1);
-}
-$p = strictparam('psalmvar');
-
-if ($p) {
-  $psalmvar = $p;
-  setsetupvalue('parameters', 3, $psalmvar);
-}
-$p = strictparam('screenheight');
-
-if ($p) {
-  $screenheight = $p;
-  setsetupvalue('parametrs', 12, $screenheight);
-}
-$p = strictparam('textwidth');
-
-if ($p) {
-  $textwidth = $p;
-  setsetupvalue('parametrs', 13, $textwidth);
-}
-
-#expand (all, psalms, nothing, skeleton) parameter
-$flag = 0;
-$p = strictparam('lang2');
-if ($p) { $lang2 = $p; $flag = 1; }
-$p = strictparam('version');
-if ($p) { $version = $p; $flag = 1; }
-$p = strictparam('expand');
-if ($p) { $expand = $p; $flag = 1; }
-$p = strictparam('accented');
-if ($p) { $accented = $p; $flag = 1; }
-$p = strictparam('local');
-if ($p) { $local = $p; $flag = 1; }
-
-if ($flag) {
-  setsetup('general', $expand, $version, $lang2, $accented, $local);
-  setcookies('horasgo', 'general');
-}
-if (!$expand) { $expand = 'all'; }
-if (!$version) { $version = 'Rubrics 1960'; }
-if (!$lang2) { $lang2 = 'English'; }
 $only = ($lang1 =~ /^$lang2$/i) ? 1 : 0;
 setmdir($version);
 
-# save parameters
-$setupsave = printhash(\%setup, 1);
-$setupsave =~ s/\r*\n*//g;
-$setupsave =~ s/\"/\~24/g;
 precedence();    #fills our hashes et variables
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;
@@ -207,7 +151,7 @@ if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|P
 }
 $title = "Divinum Officium$h";
 $title =~ s/Vespera/Vesperae/i;
-@horas = getdialogcolumn('horas', '~', 0);
+@horas = getdialog('horas', '~', 0);
 for ($i = 0; $i < 10; $i++) { $hcolor[$i] = 'blue'; }
 $completed = getcookie1('completed');
 
@@ -255,7 +199,8 @@ PrintTag
   if ($command =~ /setup(.*)/i) {
     $pmode = 'setup';
     $command = $1;
-    setuptable($command);
+    print setuptable($command, $title);
+    $command = "change" . $command;
   } elsif ($command =~ /pray/) {
     $pmode = 'hora';
     $command =~ s/(pray|change|setup)//ig;

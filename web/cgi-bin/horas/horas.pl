@@ -554,6 +554,7 @@ sub psalm : ScriptFunc {
         $this =~ s/:\d+-\d+\)/:$v1-$v2)/ if ($v2 != 1000);
         $before =~ s/^\s*([a-z])/uc($1)/ei;
         $line = $before . setfont($smallfont, ($this));
+        $initial = 0 if ($rest);
       } else {
         $rest = $line;
         $line = '';

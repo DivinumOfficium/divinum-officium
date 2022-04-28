@@ -168,7 +168,7 @@ sub checkfile {
 
 #*** getrank() loads files from tempora and sancti
 sub getrank {
-  my $c = $dialog{'communes'};
+  my $c = getdialog('communes');
   $c =~ s/\n//sg;
   %communesname = split(',', $c);
   $dayname[0] =~ s/\s*$//g;
@@ -1789,8 +1789,7 @@ sub nooctnat {
 sub spell_var {
   my $t = shift;
 
-  if (our $version =~ /1960/) {
-
+  if (our $version =~ /1960|Praedicatorum|Newcalendar|Monastic/) {
     # substitute i for j
     # but not in html tags!
     my @parts = split(/(<[^<>]*>)/, $t);
@@ -1799,6 +1798,7 @@ sub spell_var {
       next if /^</;
       tr/Jj/Ii/;
       s/H\-Iesu/H-Jesu/g;
+      s/er eúmdem/er eúndem/g;
     }
     $t = join('', @parts);
   } else {

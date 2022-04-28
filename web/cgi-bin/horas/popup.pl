@@ -71,23 +71,19 @@ getini('horas');    #files, colors
 @dayname = split('=', $dayname);
 $daycolor = ($dayname =~ /feria/i) ? "black" : ($dayname =~ /Sabbato|Vigil/i) ? "blue" : "red";
 $command = $hora = strictparam('command');
+
 $setupsave = strictparam('setup');
-$setupsave =~ s/\~24/\"/g;
-%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
+loadsetup($setupsave);
 
 if (!$setupsave) {
-  %setup = %{setupstring($datafolder, '', 'horas.setup')};
-} else {
-  %setup = split(';;;', $setupsave);
+  getcookies('horasp', 'parameters');
+  getcookies('horasgo', 'general');
 }
 
-# We don't use the popuplang parameter, and instead use lang1 and lang2.
-$setup{'parameters'} = clean_setupsave($setup{'parameters'});
-eval($setup{'parameters'});
-eval($setup{'general'});
+set_runtime_options('general'); #$expand, $version, $lang2
+set_runtime_options('parameters'); # priest, lang1 ... etc
+
 $popup = strictparam('popup');
-$lang1 = strictparam('lang1') || $lang1;
-$lang2 = strictparam('lang2') || $lang2;
 $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
 $only = ($lang1 && $lang1 =~ /^$lang2$/i) ? 1 : 0;
 precedence();

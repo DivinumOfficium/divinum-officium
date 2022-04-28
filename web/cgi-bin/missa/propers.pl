@@ -1146,7 +1146,7 @@ sub placeattibi {
 
 sub Communio_Populi : ScriptFunc {
   my $lang = shift;
-  return htmlcall('Communio', $lang);
+  return "<A HREF=\"mpopup.pl?popup=Communio&rubrics=$rubrics&lang1=$lang1&lang2=$lang2\" TARGET=_NEW>Communio</A>\n";
 }
 
 sub Ultimaev : ScriptFunc {

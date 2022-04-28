@@ -17,11 +17,10 @@ $textwidth='100';;
 ttobcccccccnn
 
 [general]
-$version1='Rubrics 1960';;
-$version2='New Mass';;
+$version='Rubrics 1960';;
 $testmode='regular';;
 $lang2='English';;
-$votive=' ';;
+$votive='Hodie';;
 $rubrics='1';;
 $solemn='0';;
 
@@ -29,9 +28,10 @@ $solemn='0';;
 oooobb
 
 [generalc]
-$version='Rubrics 1960';;
+$version1='Rubrics 1960';;
+$version2='New Mass';;
 $lang1='Latin';;
-$lang2='English';;
+$lang2='Latin';;
 
 [generalccheck]
-ooo
+oooo

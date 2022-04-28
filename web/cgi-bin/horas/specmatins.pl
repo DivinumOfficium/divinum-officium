@@ -1020,9 +1020,9 @@ sub lectio : ScriptFunc {
 
   # add initial to text
   if ($w !~ /^!/m) {
-    $w = "v. $w" 
+    $w =~ s/^(?=\p{Letter})/v. /;
   } elsif ($w !~ /^\d/m) {
-    $w =~ s/^!.*?\n(?=\w)/$&v. /gm;
+    $w =~ s/^!.*?\n(?=\p{Letter})/$&v. /gm;
   }
 
   #handle verse numbers for passages
