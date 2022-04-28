@@ -1,0 +1,79 @@
+@CommuneM/C5
+
+[Name]
+Commune Abbatum
+
+[Oratio]
+@Commune/C5:Oratio1
+
+[Lectio9]
+@Commune/C1:Lectio7
+
+[Lectio10]
+@Commune/C1:Lectio8:s/ Locus .*//s
+
+[Lectio11]
+@Commune/C1:Lectio8:s/.* Locus /Locus /s
+
+[Lectio12]
+@Commune/C1:Lectio9
+
+[LectioE]
+@Commune/C4c
+
+[Lectio9 in 2 loco]
+@Commune/C4:Lectio7 in 4 loco
+
+[Lectio10 in 2 loco]
+@Commune/C4:Lectio8 in 4 loco:s/ Alterum .*//s
+
+[Lectio11 in 2 loco]
+@Commune/C4:Lectio8 in 4 loco:s/.* Alterum /Alterum /s s/$/~/
+@Commune/C4:Lectio9 in 4 loco:s/ Videámus .*//s
+
+[Lectio12 in 2 loco]
+@Commune/C4:Lectio9 in 4 loco:s/.* Videámus /Videámus /s
+
+[Lectio9 in 3 loco]
+@Commune/C1:Lectio7 in 2 loco:s/ In hac .*//s
+
+[Lectio10 in 3 loco]
+@Commune/C1:Lectio7 in 2 loco:s/.* In hac /In hac /s s/$/~/
+@Commune/C1:Lectio8 in 2 loco:s/ Nemo .*//s
+
+[Lectio11 in 3 loco]
+@Commune/C1:Lectio8 in 2 loco:s/.* Nemo /Nemo /s s/$/~/
+@Commune/C1:Lectio9 in 2 loco:s/ Sciéndum .*//s
+
+[Lectio12 in 3 loco]
+@Commune/C1:Lectio9 in 2 loco:s/.* Sciéndum /Sciéndum /s
+
+[Lectio9 in 4 loco]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 16:13-19
+In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? Et réliqua.
+_
+Homilía sancti Bernárdi Abbátis
+!Declam. de verbis Evang. Ecce nos n. 1 et 2
+Fidélis sermo, et dignum (et reliqua)
+
+[Lectio10 in 4 loco]
+
+[Lectio11 in 4 loco]
+
+[Lectio12 in 4 loco]
+
+[Lectio9 in 5 loco]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 16:13-19
+In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? Et réliqua.
+_
+Homilía sancti Joánnis Chrysóstomi Abbátis
+!Homil. 7 in Cap. 3, ad Rom.
+Si céntuplum hic non recípimus, (et reliqua)
+
+[Lectio10 in 5 loco]
+
+[Lectio11 in 5 loco]
+
+[Lectio12 in 5 loco]
