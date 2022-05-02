@@ -185,6 +185,7 @@ $p = strictparam('version');
 if ($p) {$version = $p; $flag = 1;}
 $p = strictparam('accented');
 if ($p) {$accented = $p; $flag = 1;}
+$nonumbers = strictparam('nonumbers');
 if ($flag) {
   setsetup('general', $expand, $version, $lang2, $accented);
   #setcookies('horasgp', 'general');
@@ -194,12 +195,6 @@ if (!$lang2) {$lang2 = 'English';}
 $only = ($lang1 =~ $lang2) ? 1 : 0;
 
 setmdir($version);
-
-# save parameters
-$setupsave = printhash(\%setup, 1);
-$setupsave =~ s/\r*\n*//g;
-$setupsave =~ s/\"/\~24/g;
-
 
 precedence($date1); #fills our hashes et variables
 our $psalmnum1 = 0;
@@ -220,7 +215,7 @@ if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|P
   {$h = " $1";}
 else {$h = '';}
 $title = "Divinum Officium$h - $date1";
-@horas=getdialogcolumn('horas','~',0);
+@horas=getdialog('horas','~',0);
 for ($i = 0; $i < 10; $i++) {$hcolor[$i] = 'black';}
 #$completed = getcookie1('completed');
 if ($date1 eq gettoday() && $command =~ /pray/i && $completed < 8 &&
