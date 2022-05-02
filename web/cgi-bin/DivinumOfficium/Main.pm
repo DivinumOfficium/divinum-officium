@@ -33,6 +33,7 @@ sub liturgical_color {
   return 'blue' if ($commune && $commune =~ /(C1[0-9])/);
   return 'red' if (/(Vigilia Pentecostes|Quattuor Temporum Pentecostes|Martyr)/i);
   return 'grey' if (/(Defunctorum|Parasceve|Morte)/i);
+  return 'black' if (/^In Vigilia Ascensionis/);
   return 'purple' if (/(Vigilia|Quattuor|Rogatio|Passion|Palmis|gesim|(?:Majoris )?Hebdomadæ(?: Sanctæ)?|Sabbato Sancto|Dolorum|Ciner|Adventus)/i);
   return 'black' if (/(Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Cena)/i);
   return 'green' if (/(Pentecosten|Epiphaniam|post octavam)/i);
