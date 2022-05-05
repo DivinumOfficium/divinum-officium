@@ -1,3 +1,9 @@
+[Lectio6]
+@Sancti/05-01:Lectio5:s/A gdy .*//s
+
+[Lectio7]
+@Sancti/05-01:Lectio5:s/.* A gdy /A gdy /s
+
 [Lectio9]
 @Sancti/05-01:Lectio7:s/Wierzycie w Boga – powiada.*//s
 
