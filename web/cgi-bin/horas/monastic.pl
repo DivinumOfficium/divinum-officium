@@ -411,7 +411,7 @@ sub regula : ScriptFunc {
 
   my $lang = shift;
   my @a;
-  my $t = setfont($largefont, translate("Regula", $lang)) . "\n_\n";
+  my $t = setfont($largefont, translate("Regula", $lang)) . "\n";
   my $d = $day;
   my $l = leapyear($year);
 
@@ -454,6 +454,5 @@ sub regula : ScriptFunc {
       }
     }
   }
-  $t .= '$Tu autem';
   return $t;
 }

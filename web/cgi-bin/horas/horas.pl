@@ -995,19 +995,30 @@ sub canticum : ScriptFunc {
 
 sub Divinum_auxilium : ScriptFunc {
   my $lang = shift;
-  my $text = "V. " . translate("Divinum auxilium", $lang);
-  $text =~ s/\n.*\. /\n/ unless ($version =~ /Monastic/i); # contract resp. "Et cum fratribus… " to "Amen." for Roman
-  $text =~ s/\n/\nR. /;
-  return $text;
+  my @text = split(/\n/,translate("Divinum auxilium", $lang));
+  $text[-2] = "V. $text[-2]";
+  $text[-1] = "R. $text[-1]";
+  $text[-1] =~ s/\n.*\. /\n/ unless ($version =~ /Monastic/i); # contract resp. "Et cum fratribus… " to "Amen." for Roman
+  join("\n", @text);
+}
+
+sub Domine_labia : ScriptFunc {
+  my $lang = shift;
+  my $text = $prayers{$lang}{"Domine labia"};
+  if ($version =~ /monastic/i) { # triple times with one cross sign
+    $text .= "\n$text\n$text";
+    $text =~ s/\+\+/$&++/;
+    $text =~ s/\+\+ / /g;
+  }
+  $text;
 }
 
 #*** martyrologium($lang)
 #returns the text of the martyrologium for the day
 sub martyrologium : ScriptFunc {
   my $lang = shift;
-  my $t = setfont($largefont, "Martyrologium ") . setfont($smallblack, "(anticip.)") . "\n_\n";
+  my $t = setfont($largefont, "Martyrologium ") . setfont($smallblack, "(anticip.)") . "\n";
 
-  #<FONT SIZE=1>(anticipated)</FONT>\n_\n";
   my $a = getweek(1);
   my @a = split('=', $a);
   $a = "$a[0]-$nextdayofweek";
