@@ -151,7 +151,7 @@ my $date_arg = $officium =~ /Pofficium/? 'date1': 'date';
 my $officium_name = $officium =~ /missa/ ? 'missa' : 'horas';
 getini("horas");    #files, colors
 
-$datafolder =~ s/horas$/missa/ if ($officium_name =~ /missa/);
+# $datafolder =~ s/horas$/missa/ if ($officium_name =~ /missa/);
 
 $date1 = strictparam('date1');
 $browsertime = strictparam('browsertime');
