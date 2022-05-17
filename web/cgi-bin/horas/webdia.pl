@@ -589,3 +589,9 @@ sub option_selector {
   }
   return $output . "</SELECT>\n"
 }
+
+sub bottom_links_menu {
+  join("&nbsp;&nbsp;&nbsp;&nbsp;\n",
+        map { "<A HREF=\"../../www/horas/Help/" . lcfirst($_) . ".html\" TARGET=\"_BLANK\">$_</A>\n";} 
+            qw(Versions Credits Download Rubrics Technical Help));
+}

@@ -306,23 +306,10 @@ PrintTag
     print option_selector("lang2", "parchange();", $lang2, ('Latin', vernaculars($datafolder)));
     print option_selector("Votive", "parchange();", $votive, ('Hodie;', 'Dedicatio;C8', 'Defunctorum;C9', 'Parvum B.M.V.;C12') );
     print option_selector("local", "parchange();", $local, @local ) if (@local);
-    print << "PrintTag";
-<BR>
-<P ALIGN=CENTER><FONT SIZE=+1>
-<A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/credits.html" TARGET="_BLANK">Credits</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/download.html" TARGET="_BLANK">Download</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/technical.html" TARGET="_BLANK">Technical</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/help.html" TARGET="_BLANK">Help</A>
-</FONT>
-</P>
-PrintTag
+
+    print "<P ALIGN=CENTER><FONT SIZE=+1>\n";
+    print bottom_links_menu();
+    print "</FONT>\n</P>\n";
 
     if ($building && $buildscript) {
       $buildscript =~ s/[\n]+/\n/g;

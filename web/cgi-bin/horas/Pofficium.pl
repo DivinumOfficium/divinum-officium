@@ -302,22 +302,11 @@ Options</A>&nbsp;&nbsp;&nbsp;
 </TD></TR></TABLE>
 </FONT>
 </P>
-<P ALIGN=CENTER>
-<A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/credits.html" TARGET="_BLANK">Credits</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/download.html" TARGET="_BLANK">Download</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/technical.html" TARGET="_BLANK">Technical</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/help.html" TARGET="_BLANK">Help</A>
-</FONT>
-</P>
 PrintTag
-PrintTag
+
+  print "<P ALIGN=CENTER>\n";
+  print bottom_links_menu();
+  print "</P>\n";
 }
 
 #common end for programs

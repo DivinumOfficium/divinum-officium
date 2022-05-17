@@ -283,30 +283,18 @@ PrintTag
   #} else {
   #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
   #}
-  
+
   print option_selector("lang2", "parchange();", $lang2, ('Latin', vernaculars($datafolder)));
   print option_selector("Votive", "parchange();", $votive, ('Hodie;', 'Dedicatio;C8', 'Defunctorum;C9', 'Parvum B.M.V.;C12') );
-  print << "PrintTag";
-<BR>
-<P ALIGN=CENTER>
-<A HREF=# onclick="callbrevi(\'$date1\')">One version</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="pset('parameters')">Options</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="$htmlurl/Help/versions.html" TARGET="_NEW">Versions</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="$htmlurl/Help/credits.html" TARGET="_NEW">Credits</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="$htmlurl/Help/download.html" TARGET="_NEW">Download</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="$htmlurl/Help/rubrics.html" TARGET="_NEW">Rubrics</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="$htmlurl/Help/technical.html" TARGET="_NEW">Technical</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="$htmlurl/Help/help.html" TARGET="_NEW">Help</A>
-</FONT>
-</P>
-PrintTag
+
+  print "<P ALIGN=CENTER>";
+  print qq(\n<A HREF=# onclick="callbrevi(\'$date1\')">One version</A>\n);
+  print '&nbsp;' x 4;
+  print qq(\n<A HREF=# onclick="pset('parameters')">Options</A>\n);
+  print '&nbsp;' x 4;
+  print "\n";
+  print bottom_links_menu();
+  print "</P>\n";
 
   if ($building && $buildscript) {
     $buildscript =~ s/[\n]+/\n/g;
