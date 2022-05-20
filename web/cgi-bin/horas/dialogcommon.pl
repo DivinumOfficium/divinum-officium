@@ -37,7 +37,8 @@ sub getdialog {
   if (!$_dialog{'loaded'}) {
     $datafolder =~ /(missa|horas)$/;
     %_dialog = %{setupstring($datafolder, '', "$1.dialog")};
-    $_dialog{'loaded'};
+    foreach (keys %_dialog) { chomp($_dialog{$_}) }
+    $_dialog{'loaded'} = 1;
   }
   if (wantarray) {
     return split(',', $_dialog{$name});
