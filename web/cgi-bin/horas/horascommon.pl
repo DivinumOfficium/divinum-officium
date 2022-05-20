@@ -738,20 +738,19 @@ sub getrank {
       $dayname[2] = '';
       $commemoratio = '';
     }
-    %w = %{officestring($datafolder, 'Latin', $winner)};
 
-    if ($w{'Commemoratio 2'} && !$dayname[2]) {
-      ($_) = split(/\n/,$w{'Commemoratio 2'},2);
+    if (!$dayname[2]) {
+      ($_) = split(/\n/, $winner{'Commemoratio 2'} || $winner{'Commemoratio'});
       $dayname[2] = "Commemoratio: $_" if (s/^!Commemoratio //);
     }
 
     if (($hora =~ /matutinum/i || (!$dayname[2] && $hora !~ /Vespera|Completorium/i)) && $rank < 7 && $trank[0]) {
       my %scrip = %{officestring($datafolder, 'Latin', $tname)};
 
-      if (!exists($w{"Lectio1"})
+      if (!exists($winner{"Lectio1"})
         && exists($scrip{Lectio1})
         && $scrip{Lectio1} !~ /evangelii/i
-        && ($w{Rank} !~ /\;\;ex / || ($version =~ /trident/i && $w{Rank} !~ /\;\;(vide|ex) /i)))
+        && ($winner{Rank} !~ /\;\;ex / || ($version =~ /trident/i && $winner{Rank} !~ /\;\;(vide|ex) /i)))
       {
         $dayname[2] = "Scriptura: $trank[0]";
       } else {
