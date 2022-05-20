@@ -2152,8 +2152,10 @@ sub getrefs {
     if ($item =~ /oratio/i) {
       my $a = chompd($s{"Ant $ind"});
       if (!$a) { $a = "$file Ant $ind missing\n"; }
+      postprocess_ant($a, $lang);
       my $v = chompd($s{"Versum $ind"});
       if (!$v) { $a = "$file Versus $ind missing\n"; }
+      postprocess_vr($v, $lang);
       my $o = '';
 
       if ($item !~ /proper/) {
