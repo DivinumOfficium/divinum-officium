@@ -392,7 +392,12 @@ sub brevis_monastic {
   if ($commune =~ /C10/) {
     my %c = (columnsel($lang)) ? %commune : %commune2;
     my $name = getC10readingname();
-    $lectio = $c{$name} ."\n_\n" . $c{'Responsory3'};
+    my @resp = split(/\n/, $c{'Responsory3'});
+    if ($dayname[0] =~ /Pasc/i) {
+      ensure_single_alleluia($resp[1], $lang);
+      ensure_single_alleluia($resp[-1], $lang);
+    }
+    $lectio = join("\n", $c{$name}, '_', @resp);
     setbuild2("Mariae $name");
   } elsif ($commune && $commune !~ /C\d/) {
     my %c = (columnsel($lang)) ? %commune : %commune2;
