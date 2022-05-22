@@ -157,16 +157,16 @@ sub htmlInput {
     }
     my $onclick =
         ($parmode =~ /select/i) ? "onchange=\'buttonclick(\"$command\");\'"
-      : ($parfunc) ? qq(onchange="$parfunc;")
+      : ($parfunc) ? "onchange=\"$parfunc;\""
       : '';
     my $osize = @optarray;
-    chomp($optarray[-1]);
-    $output .= "<SELECT ID=$parname NAME=$parname SIZE=$osize $onclick>\n";
+    if ($osize > 5) { $osize = 5; }
+    $output .= "<SELECT SIZE=$osize NAME=\'$parname\' ID=\'$parname\' $onclick>\n";
     foreach(@optarray) {
       my($display, $value) = split(/\//);
       $value ||= $display;
       my $selected = $value eq $parvalue ? 'SELECTED' : '';
-      $output .= "<OPTION $selected VALUE=\"$value\">$display\n";
+      $output .= "<OPTION VALUE=\'$value\' $selected>$display\n";
     }
     $output .= "</SELECT>\n";
   }
@@ -278,7 +278,7 @@ sub getcookies {
     my @param = split(';;', $param);
 
     #check if the structure of the parameters is the same
-    if (@sti > @param + 1 || ($check !~ /^$sti[-1]/)) {
+    if (@sti != @param + 1 || (pop(@sti) ne $check)) {
       $error = "Cookie $cname mismatch $name need $check has $param<br>== $sti[-1]";
       return 0;
     }
@@ -588,75 +588,6 @@ sub option_selector {
     $output .= sprintf("<OPTION %s VALUE=\"%s\">%s\n", ($value eq $default)?'SELECTED':'', $value, $display);
   }
   return $output . "</SELECT>\n"
-}
-
-#*** selectables
-# generate selects from .dialog data
-sub selectables {
-  my($dialog) = @_;
-  my(@output);
-  foreach (split(/;;\n*/, getdialog($dialog))) {
-    my($parname, $parvar, $parmode, $parpar, $parpos, $parfunc, $parhelp) = split('~>');
-    my $parvalue = eval($parvar);
-    my $parlabel = $parname;
-    $parname = substr($parvar, 1);
-    my $output = "<LABEL FOR=$parname CLASS=offscreen>$parlabel</LABEL>\n";
-    $output .= htmlInput($parname, $parvalue, $parmode, $parpar, 'parchange()', $parhelp);
-    push(@output, $output);
-  }
-  join('&nbsp;&nbsp;&nbsp;', @output);
-}
-
-#*** selectable_p
-# generate signle select from .dialog for Poffice
-sub selectable_p {
-  my($dialog, $curvalue, $date1, $version, $lang2, $votive, $testmode, $title) = @_;
-  $title ||= ucfirst($dialog);
-  if ($dialog eq 'votives') { $curvalue ||= 'Hodie' }
-  my @output = ("<TR><TD ALIGN=CENTER>$title");
-  foreach (getdialog($dialog)) { chomp;
-    my($text,$name) = split(/\//);
-    $name ||= $text;
-    my $href = "Pofficium.pl?date1=$date1&version="
-             . ($dialog eq 'versions' ? $name : $version)
-             . "&testmode=$testmode&lang2="
-             . ($dialog eq 'languages' ? $name : $lang2)
-             . "&votive="
-             . ($dialog eq 'votives' ? $name : $votive);
-    my $colour = $curvalue eq $name ? 'red' : 'blue';
-    push(@output, qq(\n<A HREF="$href"><FONT COLOR=$colour>$text</FONT></A>));
-  }
-  join('<BR>', @output) . "</TD></TR>\n";
-}
-
-sub horas_menu {
-  my($completed, $date1, $version, $lang2, $votive, $testmode) = @_;
-  my @horas = getdialog('horas');
-  shift(@horas); pop(@horas);
-
-  my $i  = 0;
-  my $output = '';
-  foreach (@horas) {
-    $i += 1;
-    next if (($votive eq 'C9') && $i != 1 && $i != 2 && $i != 7);
-    my $href = '#';
-    my $onclick = '';
-    if ($0 =~ /Pofficium/) {
-      $href = qq("Pofficium.pl?date1=$date1&command=pray$_)
-            . qq(&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive")
-    } else {
-      $onclick = qq(onclick="hset('$_');");
-    }
-    my $colour = $i <= $completed ? 'maroon' : 'blue' ;
-    $output .= qq(\n<A HREF=$href $onclick><FONT COLOR=$colour>$_</FONT></A>\n);
-    if ($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 3 || $i == 7)) {
-      $output .= '<BR>';
-    } else {
-      $output .= '&nbsp;&nbsp;';
-    }
-  }
-  $output =~ s/&nbsp;&nbsp;$//;
-  $output;
 }
 
 sub bottom_links_menu {

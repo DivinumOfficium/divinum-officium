@@ -23,7 +23,7 @@ use Time::Local;
 #use DateTime;
 use locale;
 use lib "$Bin/..";
-use DivinumOfficium::Main qw(liturgical_color);
+use DivinumOfficium::Main qw(vernaculars load_versions liturgical_color);
 $error = '';
 $debug = '';
 
@@ -83,9 +83,9 @@ $q = new CGI;
 
 #get parameters
 getini('horas');    #files, colors
-our ($lang1, $lang2, $langc, $expand, $column);
+our ($lang1, $lang2, $expand, $column, $accented);
 our $command = strictparam('command');
-our $hora = substr($command,4);    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
+our $hora = $command;    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
 our $browsertime = strictparam('browsertime');
 our $buildscript = '';    #build script
 our $searchvalue = strictparam('searchvalue');
@@ -128,7 +128,7 @@ $expandnum = strictparam('expandnum');
 $only = 0;
 
 $version = $version1;
-$lang1 = $lang2 = $langc;
+$lang1 = $lang2;
 setmdir($version);
 precedence();    #fills our hashes et variables
 our $psalmnum1 = 0;
@@ -140,12 +140,16 @@ $daycolor = liturgical_color($dayname[1], $commune);
 build_comment_line();
 
 #prepare main pages
-my @horas = getdialog('horas');
+my $h = $hora;
 
-my $title = "Divinum Officium";
-if (($hora =~ /setup/) || (grep { $_ eq $hora } @horas)) {
-  $title .= " $hora";
+if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Post|Setup)/i) {
+  $h = " $1";
+} else {
+  $h = '';
 }
+$title = "Divinum Officium$h";
+@horas = getdialog('horas', '~', 0);
+for ($i = 0; $i < 10; $i++) { $hcolor[$i] = 'blue'; }
 
 #$completed = getcookie1('completed');
 #if ($date1 eq gettoday() && $command =~ /pray/i && $completed < 8 &&
@@ -177,18 +181,18 @@ if ($command =~ /setup(.*)/is) {
   $pmode = 'hora';
   $command =~ s/(pray|change|setup)//ig;
   $title = $command;
-  $title =~ s/a$/am/;
+  $hora = $command;
+  if (substr($title, -1) =~ /a/i) { $title .= 'm'; }
+  $background =
+    ($whitebground)
+    ? "BGCOLOR=\"white\""
+    : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
   $head = ($title =~ /(Ante|Post)/i) ? "$title divinum officium" : "Ad $title";
-  $head =~ s/Ad Vespera.*/Ad Vesperas/i;
-  $headline = setheadline();
   headline($head);
-
-  #eval($setup{'parameters'});
-  $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
   horas($command);
   print << "PrintTag";
 <P ALIGN=CENTER>
-<INPUT TYPE=SUBMIT NAME='button' VALUE='$command persolut.' onclick="okbutton();">
+<INPUT TYPE=SUBMIT NAME='button' VALUE='$hora completed' onclick="okbutton();">
 </P>
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
 <INPUT TYPE=HIDDEN NAME=popup VALUE="">
@@ -232,16 +236,56 @@ PrintTag
 PrintTag
 }
 
+@versions = load_versions($datafolder);
+
 #common widgets for main and hora
 if ($pmode =~ /(main|hora)/i) {
-  print "<P ALIGN=CENTER><I>";
-  print horas_menu($completed, $date1, $version, $lang2, $votive, $testmode);
-  print "</I></P>\n";
-
-  $votive ||= 'Hodie';
+  if ($votive ne 'C9') {
+    print << "PrintTag";
+<P ALIGN=CENTER><I>
+<A HREF=# onclick="hset('Matutinum');"><FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
+&nbsp;&nbsp;
+<A HREF=# onclick="hset('Laudes');"><FONT COLOR=$hcolor[2]>$horas[2]</FONT></A>
+&nbsp;&nbsp;
+<A HREF=# onclick="hset('Prima');"><FONT COLOR=$hcolor[3]>$horas[3]</FONT></A>
+&nbsp;&nbsp;
+<A HREF=# onclick="hset('Tertia');"><FONT COLOR=$hcolor[4]>$horas[4]</FONT></A>
+&nbsp;&nbsp;
+<A HREF=# onclick="hset('Sexta');"><FONT COLOR=$hcolor[5]>$horas[5]</FONT></A>
+&nbsp;&nbsp;
+<A HREF=# onclick="hset('Nona');"><FONT COLOR=$hcolor[6]>$horas[6]</FONT></A>
+&nbsp;&nbsp;
+<A HREF=# onclick="hset('Vespera');"><FONT COLOR=$hcolor[7]>$horas[7]</FONT></A>
+&nbsp;&nbsp;
+<A HREF=# onclick="hset('Completorium');"><FONT COLOR=$hcolor[8]>$horas[8]</FONT></A>
+</I></P>
+PrintTag
+  } else {
+    print << "PrintTag";
+<P ALIGN=CENTER><I>
+<A HREF=# onclick="hset('Matutinum');"><FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
+&nbsp;&nbsp;
+<A HREF=# onclick="hset('Laudes');"><FONT COLOR=$hcolor[2]>$horas[2]</FONT></A>
+&nbsp;&nbsp;
+<A HREF=# onclick="hset('Vespera');"><FONT COLOR=$hcolor[7]>$horas[7]</FONT></A>
+&nbsp;&nbsp;
+</I></P>
+PrintTag
+  }
   print "<P ALIGN=CENTER>";
-  print selectables('generalc');
-  print "</P>\n";
+  print option_selector("Expand", "parchange();", $expand, qw(all psalms)); # old qw(all psalms nothing skeleton));
+  print option_selector("Version 1", "parchange();", $version1, @versions );
+  print option_selector("Version 2", "parchange();", $version2, @versions );
+
+  #$testmode = 'Regular' unless $testmode;
+  #if ($savesetup > 1) {
+  #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal Season Saint Common));
+  #} else {
+  #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
+  #}
+
+  print option_selector("lang2", "parchange();", $lang2, ('Latin', vernaculars($datafolder)));
+  print option_selector("Votive", "parchange();", $votive, ('Hodie;', 'Dedicatio;C8', 'Defunctorum;C9', 'Parvum B.M.V.;C12') );
 
   print "<P ALIGN=CENTER>";
   print qq(\n<A HREF=# onclick="callbrevi(\'$date1\')">One version</A>\n);
@@ -275,6 +319,7 @@ print << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
 <INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
+<INPUT TYPE=HIDDEN NAME=accented VALUE="$accented">
 <INPUT TYPE=HIDDEN NAME=compare VALUE=1>
 </FORM>
 </BODY></HTML>

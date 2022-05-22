@@ -23,7 +23,7 @@ use Time::Local;
 #use DateTime;
 use locale;
 use lib "$Bin/..";
-use DivinumOfficium::Main qw(liturgical_color);
+use DivinumOfficium::Main qw(vernaculars load_versions liturgical_color);
 $error = '';
 $debug = '';
 
@@ -77,11 +77,11 @@ $q = new CGI;
 
 #get parameters
 getini('horas');    #files, colors
-our ($lang1, $lang2, $expand, $column);
+our ($lang1, $lang2, $expand, $column, $accented);
 our %translate;     #translation of the skeleton label for 2nd language
 
 our $command = strictparam('command');
-our $hora = substr($command,4);    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
+our $hora = $command;    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
 our $date1 = strictparam('date1');
 if (!$date1) { $date1 = gettoday(); }
 if ($command =~ /next/i) { $date1 = prevnext($date1, 1); $command = ''; }
@@ -125,6 +125,7 @@ $setupsave =~ s/\r*\n*//g;
 our $testmode = strictparam('testmode');
 if (!$testmode) { $testmode = strictparam('testmode1'); }
 if (!$testmode) { $testmode = 'regular'; }
+our $votive = strictparam('votive');
 $expandnum = strictparam('expandnum');
 
 $only = ($lang1 =~ $lang2) ? 1 : 0;
@@ -139,14 +140,19 @@ $daycolor = liturgical_color($dayname[1], $commune);
 build_comment_line();
 
 #prepare main pages
-my @horas = getdialog('horas');
+my $h = $hora;
 
-my $title = "Divinum Officium";
-if (($hora =~ /setup/) || (grep { $_ eq $hora } @horas)) {
-  $title .= " $hora";
+if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Post|Setup)/i) {
+  $h = " $1";
+} else {
+  $h = '';
 }
-
+$title = "Divinum Officium$h";
+$title =~ s/Vespera/Vesperae/i;
+@horas = getdialog('horas', '~', 0);
+for ($i = 0; $i < 10; $i++) { $hcolor[$i] = 'blue'; }
 $completed = getcookie1('completed');
+
 if ( $date1 eq gettoday()
   && $command =~ /pray/i
   && $completed < 8
@@ -155,6 +161,7 @@ if ( $date1 eq gettoday()
   $completed++;
   setcookie1('completed', $completed);
 }
+for ($i = 1; $i <= $completed; $i++) { $hcolor[$i] = 'maroon'; }
 
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
@@ -179,9 +186,10 @@ if ($command =~ /setup(.*)/i) {
   $pmode = 'hora';
   $command =~ s/(pray|change|setup)//ig;
   $title = $command;
-  $title =~ s/a$/am/;
+  $hora = $command;
+  if (substr($title, -1) =~ /a/i) { $title .= 'm'; }
   $head = ($title =~ /(Ante|Post)/i) ? "$title divinum officium" : "Ad $title";
-  $head =~ s/Ad Vespera.*/Ad Vesperas/i;
+  $head =~ s/Ad Vesperam/Ad Vesperas/i;
   $headline = setheadline();
   headline($head);
 
@@ -204,24 +212,97 @@ PrintTag
 
 #common widgets for main and hora
 if ($pmode =~ /(main|hora)/i) {
-  print "<P ALIGN=CENTER><I>";
-  print horas_menu($completed, $date1, $version, $lang2, $votive, $testmode);
-  print "</I></P>\n";
+  if ($votive ne 'C9') {
+    print << "PrintTag";
+<P ALIGN=CENTER><I>
+<A HREF="Pofficium.pl?date1=$date1&command=prayMatutinum&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
+ <FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
+&nbsp;&nbsp;
+<A HREF="Pofficium.pl?date1=$date1&command=prayLaudes&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
+<FONT COLOR=$hcolor[2]>$horas[2]</FONT></A>
+<BR>
+<A HREF="Pofficium.pl?date1=$date1&command=prayPrima&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
+<FONT COLOR=$hcolor[3]>$horas[3]</FONT></A>
+&nbsp;&nbsp;
+<A HREF="Pofficium.pl?date1=$date1&command=prayTertia&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
+<FONT COLOR=$hcolor[4]>$horas[4]</FONT></A>
+&nbsp;&nbsp;
+<A HREF="Pofficium.pl?date1=$date1&command=praySexta&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
+<FONT COLOR=$hcolor[5]>$horas[5]</FONT></A>
+&nbsp;&nbsp;
+<A HREF="Pofficium.pl?date1=$date1&command=prayNona&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
+<FONT COLOR=$hcolor[6]>$horas[6]</FONT></A>
+<BR>
+<A HREF="Pofficium.pl?date1=$date1&command=prayVespera&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
+<FONT COLOR=$hcolor[7]>$horas[7]</FONT></A>
+&nbsp;&nbsp;
+<A HREF="Pofficium.pl?date1=$date1&caller=$caller&command=prayCompletorium&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
+<FONT COLOR=$hcolor[8]>$horas[8]</FONT></A>
+</I></P>
+PrintTag
+  } else {
+    print << "PrintTag";
+<P ALIGN=CENTER><I>
+<A HREF="Pofficium.pl?date1=$date1&command=prayMatutinum&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive"><FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
+&nbsp;&nbsp;
+<A HREF="Pofficium.pl?date1=$date1&command=prayLaudes&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive"><FONT COLOR=$hcolor[2]>$horas[2]</FONT></A>
+&nbsp;&nbsp;
+<A HREF="Pofficium.pl?date1=$date1&command=prayVespera&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive"><FONT COLOR=$hcolor[7]>$horas[7]</FONT></A>
+&nbsp;&nbsp;
+</I></P>
+PrintTag
+  }
+  @chv = splice(@chv, @chv);
+  @versions = load_versions($datafolder);
+  for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'red' : 'blue'; }
+  my $vsize = @versions;
+  print "<TABLE ALIGN=CENTER BORDER=1><TR><TD ALIGN=CENTER>\n";
+  print "Versions<BR>";
 
+  for ($i = 0; $i < @versions; $i++) {
+    if ($i > 0) { print "<BR>"; }
+    print "<A HREF=\"Pofficium.pl?date1=$date1&version=$versions[$i]&testmode=$testmode&lang2=$lang2\&votive=$votive\">"
+      . "<FONT COLOR=$chv[$i]>$versions[$i]</FONT></A>";
+  }
+  print "</TD></TR>\n";
+  my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'red' : 'blue';
+  my $sel11 = ($testmode =~ /Seasonal/i) ? 'red' : 'blue';
   print << "PrintTag";
+<TR><TD ALIGN=CENTER VALIGN=MIDDLE>
+Language 2</FONT><BR>
+PrintTag
+
+  # Write a link for each language.
+  foreach my $language ('Latin', vernaculars($datafolder)) {
+    my $colour = ($lang2 =~ /$language/i) ? 'red' : 'blue';
+    print qq(<A HREF="Pofficium.pl?date1=$date1&)
+      . qq(version=$version&testmode=$testmode&lang2=$language&votive=$votive">)
+      . qq(<FONT COLOR=$colour>$language</FONT></A><BR>);
+  }
+  $sel1 = 'blue';
+  $sel2 = ($votive =~ /C8/) ? 'red' : 'blue';
+  $sel3 = ($votive =~ /C9/) ? 'red' : 'blue';
+  $sel4 = ($votive =~ /C12/) ? 'red' : 'blue';
+  print << "PrintTag";
+</TD></TR>
+<TR><TD ALIGN=CENTER VALIGN=MIDDLE>Votive</FONT><BR>
+<A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=$lang2&votive=Hodie">
+  <FONT COLOR=$sel1>hodie</FONT></A><BR>
+<A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=$lang2&votive=C8">
+<FONT COLOR=$sel2>Dedicatio</FONT></A><BR>
+<A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=$lang2&votive=C9">
+<FONT COLOR=$sel3>Defunctorum</FONT></A><BR>
+<A HREF="Pofficium.pl?date1=$date1&version=$version&testmode=$testmode&lang2=$lang2&votive=C12">
+<FONT COLOR=$sel4>Parvum B.M.V.</FONT></A><BR></TR>
 <P ALIGN=CENTER>
 <A HREF="Pofficium.pl?date1=$date1&command=setupparameters&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 Options</A>&nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="callmissa();">Sancta Missa</A>&nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="callkalendar();">Ordo</A>
+</TD></TR></TABLE>
+</FONT>
 </P>
 PrintTag
-
-  print "<TABLE ALIGN=CENTER BORDER=1>";
-  print selectable_p('versions', $version, $date1, $version, $lang2, $votive, $testmode);
-  print selectable_p('languages', $lang2, $date1, $version, $lang2, $votive, $testmode, 'Language 2');
-  print selectable_p('votives', $votive, $date1, $version, $lang2, $votive, $testmode);
-  print "</TABLE>\n";
 
   print "<P ALIGN=CENTER>\n";
   print bottom_links_menu();
@@ -239,6 +320,7 @@ print << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
 <INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
+<INPUT TYPE=HIDDEN NAME=accented VALUE="$accented">
 <INPUT TYPE=HIDDEN NAME=caller VALUE='0'>
 </FORM>
 </BODY></HTML>
@@ -248,6 +330,7 @@ PrintTag
 sub headline {
   my $head = shift;
   $headline =~ s{(!.*)}{<FONT SIZE=1>$1</FONT>}s;
+  my $h = ($hora =~ /(Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium)/i) ? $hora : '';
   print << "PrintTag";
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>

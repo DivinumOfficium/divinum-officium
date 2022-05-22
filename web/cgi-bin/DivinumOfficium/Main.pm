@@ -9,7 +9,7 @@ BEGIN {
   require Exporter;
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(vernaculars liturgical_color);
+  our @EXPORT_OK = qw(vernaculars load_versions liturgical_color);
 }
 
 #*** vernaculars($basedir)
@@ -19,6 +19,12 @@ sub vernaculars {
   my $basedir = shift;
   my @lines = do_read("$basedir/Linguae.txt") or croak q(Couldn't load language list.);
   return @lines;
+}
+
+sub load_versions {
+  my $basedir = shift;
+  my @versions = do_read("$basedir/Versions.txt") or croak "Couldn't load versions list from $basedir.";
+  return @versions;
 }
 
 sub liturgical_color {
