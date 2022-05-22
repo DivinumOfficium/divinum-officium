@@ -23,7 +23,7 @@ bbtbbbtcccccnnb
 $expand='all';;
 $version='Rubrics 1960';;
 $lang2='English';;
-$votive='';;
+$accented='plain';;
 
 [generalcheck]
 oooo
@@ -32,7 +32,7 @@ oooo
 $expand='all';;
 $version1='Divino Afflatu';;
 $version2='Rubrics 1960';;
-$langc='Latin';;
+$lang2='English';;
 $accented='plain';;
 
 [generalccheck]
