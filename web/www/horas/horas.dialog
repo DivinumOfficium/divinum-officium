@@ -18,19 +18,25 @@ Text width percent~>$textwidth~>Entry~>12~>14;;
 
 [general]
 Expand~>$expand~>Optionmenu~>{all,psalms,none,skeleton};;
-Version~>$version~>Optionmenu~>{Tridentinum,Divino Afflatu,Reductions 1955,Rubrics 1960};;
+Version~>$version~>Optionmenu~>versions;;
 Language 2~>$lang2~>Optionmenu~>languages;;
-Psalmversion~>$accented~>Optionmenu~>psalmversion;;
+Votive~>$votive~>Optionmenu~>votives;;
 
 [generalc]
 Expand~>$expand~>Optionmenu~>{all,psalms,none,skeleton};;
-Version 1~>$version1~>Optionmenu~>{Tridentinum,Divino Afflatu,Reductions 1955,Rubrics 1960};;
-Version 2~>$version2~>Optionmenu~>{Tridentinum,Divino Afflatu,Reductions 1955,Rubrics 1960};;
-Language 2~>$lang2~>Optionmenu~>languages;;
-Psalmversion~>$accented~>Optionmenu~>psalmversion;;
+Version 1~>$version1~>Optionmenu~>versions;;
+Version 2~>$version2~>Optionmenu~>versions;;
+Language~>$langc~>Optionmenu~>languages;;
+Votive~>$votive~>Optionmenu~>votives;;
 
 [languages]
-Latin,Deutsch,English,Espanol,Francais,Italiano,Magyar,Polski,Polski-Newer,Bea
+Latin,Deutsch,English,Español/Espanol,Français/Francais,Italiano,Magyar,Polski,Português/Portugues,Latin-Bea,Polski-Newer
+
+[versions]
+Tridentine 1570,Tridentine 1910,Divino Afflatu,Reduced 1955,Rubrics 1960,1960 Newcalendar,Monastic,Ordo Praedicatorum
+
+[votives]
+Hodie,Dedicatio/C8,Defunctorum/C9,Parvum B.M.V./C12
 
 [psalmversion]
 accented,plain

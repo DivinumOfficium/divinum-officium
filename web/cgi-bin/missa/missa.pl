@@ -214,7 +214,8 @@ PrintTag
 #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
 #}
   my $propname = ($Propers) ? 'Full' : 'Propers';
-  print option_selector("lang2", "parchange();", $lang2, ('Latin', vernaculars($datafolder)));
+  print "&nbsp;&nbsp;&nbsp;";
+  print htmlInput('lang2', $lang2, 'options', 'languages', , "parchange()" );
   @votive = ('Hodie;');
   if (opendir(DIR, "$datafolder/Latin/Votive")) {
     @a = sort readdir(DIR);
@@ -222,18 +223,9 @@ PrintTag
     foreach (@a) { push(@votive, $_) if (s/\.txt//i); }
   }
   print option_selector("Votive", "parchange();", $votive, @votive );
-  print << "PrintTag";
-</P>
-<P ALIGN=CENTER><FONT SIZE=+1>
-<P ALIGN=CENTER>
-<A HREF=# onclick="hset('Propers')">$propname</A></P>
-</FONT></P>
-</SELECT>
-PrintTag
-
-  print "<P ALIGN=CENTER><FONT SIZE=+1>\n";
-  print bottom_links_menu();
-  print "</FONT>\n</P>\n";
+  print "</P>\n";
+  print qq(<P ALIGN=CENTER><FONT SIZE=+1>\n<A HREF=# onclick="hset('Propers')">$propname</A>\n</FONT></P>\n);
+  print "<P ALIGN=CENTER><FONT SIZE=+1>\n" . bottom_links_menu() . "</FONT>\n</P>\n";
 }    
 
 #common end for programs
