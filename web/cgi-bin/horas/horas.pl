@@ -22,6 +22,7 @@ $a = 1;
 sub horas {
   $command = shift;
   $hora = $command;
+  $hora =~ s/Vesperae/Vespera/;
   our $canticum = 0;
   our $reciteindex = 0;
   our $recitelimit = 0;
@@ -1232,6 +1233,7 @@ sub special : ScriptFunc {
 sub getordinarium {
   my $lang = shift;
   my $command = shift;
+  $command =~ s/Vesperae/Vespera/;
   my @script = ();
   my $suffix = "";
   if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) { $suffix .= "e"; } # for Epiphanias

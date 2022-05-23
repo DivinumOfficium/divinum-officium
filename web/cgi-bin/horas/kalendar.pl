@@ -23,7 +23,7 @@ use Time::Local;
 #use DateTime;
 use locale;
 use lib "$Bin/..";
-use DivinumOfficium::Main qw(load_versions liturgical_color);
+use DivinumOfficium::Main qw(liturgical_color);
 $error = '';
 $debug = '';
 
@@ -272,10 +272,9 @@ PrintTag
 print << "PrintTag";
 </TABLE><BR>
 PrintTag
-my @versions = load_versions($datafolder);
-print option_selector("Version1", "document.forms[0].submit();", $ver[0], @versions);
+print htmlInput('version1', $ver[0], 'options', 'versions', , "document.forms[0].submit()");
 if ($compare) {
-  print option_selector("Version2", "document.forms[0].submit();", $ver[1], @versions);
+  print htmlInput('version2', $ver[1], 'options', 'versions', , "document.forms[0].submit()");
 }
 print "<P ALIGN=CENTER>\n" . bottom_links_menu() . "</P>\n";
 
