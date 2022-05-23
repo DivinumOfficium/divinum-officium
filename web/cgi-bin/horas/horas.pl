@@ -22,6 +22,7 @@ $a = 1;
 sub horas {
   $command = shift;
   $hora = $command;
+  $hora =~ s/Vesperae/Vespera/;
   our $canticum = 0;
   our $reciteindex = 0;
   our $recitelimit = 0;
