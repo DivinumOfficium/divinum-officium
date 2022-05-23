@@ -649,7 +649,7 @@ sub horas_menu {
     }
     my $colour = $i <= $completed ? 'maroon' : 'blue' ;
     $output .= qq(\n<A HREF=$href $onclick><FONT COLOR=$colour>$_</FONT></A>\n);
-    if ($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 3 || $i == 7)) {
+    if ($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 2 || $i == 6)) {
       $output .= '<BR>';
     } else {
       $output .= '&nbsp;&nbsp;';
