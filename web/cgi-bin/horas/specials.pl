@@ -133,6 +133,9 @@ sub specials {
         setbuild1($item, 'omit');
       } else {
         setbuild1($item, 'include');
+        if ($hora =~ /Laudes|Vespera/) {
+          push(@s, $prayers{$lang}{"Preces feriales $hora"});
+        }
       }
       next;
     }
