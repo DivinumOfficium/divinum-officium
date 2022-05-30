@@ -32,7 +32,7 @@ our $Hk = 0;
 our $Ck = 0;
 our $notes = 0;
 our $missa = 0;
-our $officium = substr($0,rindex($0, '/') + 1);
+our $officium = 'officium.pl';
 our $version = '';
 
 #***common variables arrays and hashes
@@ -52,7 +52,6 @@ our $cvespera;        #for commemoratio
 our $commemorated;    #name of the commemorated for vigils
 our $comrank = 0;     #rank of the commemorated office
 our $litaniaflag = 0;
-our $octavam = '';    #to avoid duplication of commemorations
 
 #filled by precedence()
 our %winner;          #the hash of the winner
@@ -68,7 +67,6 @@ our $duplex;                                  #1=simplex-feria, 2=semiduplex-fer
 binmode(STDOUT, ':encoding(utf-8)');
 
 #*** collect standard items
-require "$Bin/do_io.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
@@ -76,19 +74,21 @@ require "$Bin/setup.pl";
 require "$Bin/horas.pl";
 require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
-require "$Bin/monastic.pl";
+
+if (-e "$Bin/monastic.pl") { require "$Bin/monastic.pl"; }
+require "$Bin/do_io.pl";
 $q = new CGI;
 
 #get parameters
 getini('horas');    #files, colors
 our ($lang1, $lang2, $expand, $votive, $column, $local);
-our %translate;     #translation of the skeleton label for 2nd language
-
+our %translate;     #translation of the skeleton labels
 our $command = strictparam('command');
 our $hora = substr($command,4);    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
 our $browsertime = strictparam('browsertime');
 our $buildscript = '';    #build script
 our $searchvalue = strictparam('searchvalue');
+
 if (!$searchvalue) { $searchvalue = '0'; }
 
 our $caller = strictparam('caller');
@@ -97,15 +97,14 @@ our $dirgeline = '';      #dates for dirge from Trxxxxyyyy
 our $sanctiname = 'Sancti';
 our $temporaname = 'Tempora';
 our $communename = 'Commune';
+our $italicfont = 'italic';
 
 $setupsave = strictparam('setup');
 loadsetup($setupsave);
 
-my $cookies_suffix = lc(substr($officium,0,1));
-
 if (!$setupsave) {
   getcookies('horasp', 'parameters');
-  getcookies("horasg$cookies_suffix", 'general');
+  getcookies('horasgo', 'general');
 }
 
 set_runtime_options('general'); #$expand, $version, $lang2
@@ -114,7 +113,7 @@ set_runtime_options('parameters'); # priest, lang1 ... etc
 if ($command eq 'changeparameters') { getsetupvalue($command); }
 
 setcookies('horasp', 'parameters');
-setcookies("horasg$cookies_suffix", 'general');
+setcookies('horasgo', 'general');
 
 # save parameters
 $setupsave = savesetup(1);
@@ -125,24 +124,17 @@ $setupsave =~ s/\r*\n*//g;
 
 #prepare testmode
 our $testmode = strictparam('testmode');
-if (!$testmode) { $testmode = strictparam('testmode1'); }
 if ($testmode !~ /(Season|Saint|Common)/i) { $testmode = 'regular'; }
-our $expandnum = strictparam('expandnum');
+$expandnum = strictparam('expandnum');
 $notes = strictparam('notes');
 
-$only = $lang1 eq $lang;
+$only = ($lang1 =~ /^$lang2$/i) ? 1 : 0;
 setmdir($version);
 
-if ($officium eq 'Pofficium.pl') {
-  our $date1 = strictparam('date1');
-  if (!$date1) { $date1 = gettoday(); }
-  if ($command =~ /next/i) { $date1 = prevnext($date1, 1); $command = ''; }
-  if ($command =~ /prev/i) { $date1 = prevnext($date1, -1); $command = ''; }
-}
-
-precedence($date1);    #fills our hashes et variables
+precedence();    #fills our hashes et variables
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;
+our $octavam = '';    #to avoid duplication of commemorations
 
 # prepare title
 $daycolor = liturgical_color($dayname[1], $commune);
@@ -165,25 +157,29 @@ if ( $date1 eq gettoday()
   $completed++;
   setcookie1('completed', $completed);
 }
+my @local = splice(@local, @local);
 
+#if (opendir(DIR, "$datafolder/Latin/Tabulae")) {
+#  my @a = readdir(DIR);
+#  close DIR;
+#  foreach my $item (@a) {
+#    if ($item =~ /K([A-Z]+)/) {push (@local, $1);}
+#  }
+#  unshift(@local, 'none');
+#}
 if ($command =~ /kalendar/) {    # kalendar widget
   print "Access-Control-Allow-Origin: *\n";
   print "Content-type: text/html; charset=utf-8\n";
   print "\n";
   $headline = setheadline();
-  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
-  $comment =~ s/([\w]+)=([\w+-]+)/$1="$2"/g;
-  print "<p><span style='text-align:center;color:$daycolor'>$headline<br/></span>";
-  print "<span>$comment<BR/><BR/></span></p>";
-  exit;
-}
+  headline2($head);
+} else {
 
-#*** print pages (setup, hora=pray, mainpage)
-#generate HTML
-htmlHead($title, 2);
-my $onload = $officium ne 'Pofficium.pl' && ' onload="startup();"';
-print << "PrintTag";
-<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg"$onload>
+  #*** print pages (setup, hora=pray, mainpage)
+  #generate HTML
+  htmlHead($title, 2);
+  print << "PrintTag";
+<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="startup();">
 <script>
 // https redirect
 if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
@@ -193,39 +189,39 @@ if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
 
-if ($command =~ /setup(.*)/i) {
-  $pmode = 'setup';
-  $command = $1;
-  print setuptable($command, $title);
-  $command = "change" . $command;
-} elsif ($command =~ /pray/) {
-  $pmode = 'hora';
-  $command =~ s/(pray|change|setup)//ig;
-  $title = $command;
-  $title =~ s/a$/am/;
-  $head = ($title =~ /(Ante|Post)/i) ? "$title divinum officium" : "Ad $title";
-  $head =~ s/Ad Vespera.*/Ad Vesperas/i;
-  $headline = setheadline();
-  headline($head);
+  if ($command =~ /setup(.*)/i) {
+    $pmode = 'setup';
+    $command = $1;
+    print setuptable($command, $title);
+    $command = "change" . $command;
+  } elsif ($command =~ /pray/) {
+    $pmode = 'hora';
+    $command =~ s/(pray|change|setup)//ig;
+    $title = $command;
+    $title =~ s/a$/am/;
+    $head = ($title =~ /(Ante|Post)/i) ? "$title divinum officium" : "Ad $title";
+    $head =~ s/Ad Vespera.*/Ad Vesperas/i;
+    $headline = setheadline();
+    headline($head);
 
-  #eval($setup{'parameters'});
-  $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
-  horas($command);
-  if ($officium ne 'Pofficium.pl') {
+    #eval($setup{'parameters'});
+    $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
+    horas($command);
     print << "PrintTag";
 <P ALIGN=CENTER>
 <INPUT TYPE=SUBMIT NAME='button' VALUE='$command persolut.' onclick="okbutton();">
 </P>
+<INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
+<INPUT TYPE=HIDDEN NAME=popup VALUE="">
+<INPUT TYPE=HIDDEN NAME=popuplang VALUE="">
 PrintTag
-  }
-} else {    #mainpage
-  $pmode = 'main';
-  $command = "";
-  $headline = setheadline();
-  headline($title);
-  if ($officium ne 'Pofficium.pl') {
+  } else {    #mainpage
+    $pmode = 'main';
+    $command = "";
     $height = floor($screenheight * 4 / 14);
     $height2 = floor($height / 2);
+    $headline = setheadline();
+    headline($title);
     print << "PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=0 HEIGHT=$height><TR>
@@ -253,63 +249,42 @@ PrintTag
 </P>
 PrintTag
   }
-}
 
-#common widgets for main and hora
-if ($pmode =~ /(main|hora)/i) {
-  print "<P ALIGN=CENTER><I>";
-  print horas_menu($completed, $date1, $version, $lang2, $votive, $testmode);
-  print "</I></P>\n";
+  #common widgets for main and hora
+  if ($pmode =~ /(main|hora)/i) {
+    print "<P ALIGN=CENTER><I><FONT SIZE=+1>";
+    print horas_menu($completed, $date1, $version, $lang2, $votive, $testmode);
+    print "</FONT>\n</I></P>\n";
 
-  if ($officium ne 'Pofficium.pl') {
     $votive ||= 'Hodie';
     print "<P ALIGN=CENTER>";
     print selectables('general');
     print "</P>\n";
-  } else {
-    print << "PrintTag";
-<P ALIGN=CENTER>
-<A HREF="Pofficium.pl?date1=$date1&command=setupparameters&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
-Options</A>&nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callmissa();">Sancta Missa</A>&nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callkalendar();">Ordo</A>
-</P>
-PrintTag
 
-    print "<TABLE ALIGN=CENTER BORDER=1>";
-    print selectable_p('versions', $version, $date1, $version, $lang2, $votive, $testmode);
-    print selectable_p('languages', $lang2, $date1, $version, $lang2, $votive, $testmode, 'Language 2');
-    print selectable_p('votives', $votive, $date1, $version, $lang2, $votive, $testmode);
-    print "</TABLE>\n";
-  }
-  
-  print "<P ALIGN=CENTER>\n";
-  print bottom_links_menu();
-  print "</P>\n";
-  if ($building && $buildscript) {
-    $buildscript =~ s/[\n]+/\n/g;
-    $buildscript =~ s/\n/<BR>/g;
-    $buildscript =~ s/\_//g;
-    $buildscript =~ s/\,\,\,/\&nbsp\;\&nbsp\;\&nbsp\;/g;
-    print << "PrintTag";
+    print "<P ALIGN=CENTER><FONT SIZE=+1>\n";
+    print bottom_links_menu();
+    print "</FONT>\n</P>\n";
+
+    if ($building && $buildscript) {
+      $buildscript =~ s/[\n]+/\n/g;
+      $buildscript =~ s/\n/<BR>/g;
+      $buildscript =~ s/\_//g;
+      $buildscript =~ s/\,\,\,/\&nbsp\;\&nbsp\;\&nbsp\;/g;
+      print << "PrintTag";
 <TABLE BORDER=3 ALIGN=CENTER WIDTH=60% CELLPADDING=8><TR><TD ID=L$searchind>
 $buildscript
 </TD></TR><TABLE><BR>
 PrintTag
+    }
   }
-}
 
-#common end for programs
-if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT><\P>\n"; }
-if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT><\P>\n"; }
-$command =~ s/(pray|setup)//ig;
-print << "PrintTag";
-<INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
-<INPUT TYPE=HIDDEN NAME=popup VALUE="">
-<INPUT TYPE=HIDDEN NAME=popuplang VALUE="">
+  #common end for programs
+  if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
+  if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
+  $command =~ s/(pray|setup)//ig;
+  print << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=setup VALUE="$setupsave">
 <INPUT TYPE=HIDDEN NAME=command VALUE="$command">
-<INPUT TYPE=HIDDEN NAME=date1 VALUE="$date1">
 <INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
 <INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
@@ -320,6 +295,16 @@ print << "PrintTag";
 </FORM>
 </BODY></HTML>
 PrintTag
+}
+
+#*** headline2($head) prints just two lines of header (for widget)
+sub headline2 {
+  my $head = shift;
+  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
+  $comment =~ s/([\w]+)=([\w+-]+)/$1="$2"/g;
+  print "<p><span style='text-align:center;color:$daycolor'>$headline<br/></span>";
+  print "<span>$comment<BR/><BR/></span></p>";
+}
 
 #*** headline($head) prints headline for main and pray
 sub headline {
@@ -328,11 +313,8 @@ sub headline {
   print << "PrintTag";
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>
-<FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>&nbsp;
-PrintTag
-  if ($officium ne 'Pofficium.pl') {
-    print << "PrintTag";
-<FONT COLOR=RED SIZE=+1>$version</FONT></P>
+<FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
+&nbsp;<FONT COLOR=RED SIZE=+1>$version</FONT></P>
 <P ALIGN=CENTER><A HREF=# onclick="callcompare()">Compare</A>
 &nbsp;&nbsp;&nbsp;<A HREF=# onclick="callmissa();">Sancta Missa</A>
 &nbsp;&nbsp;&nbsp;
@@ -347,42 +329,17 @@ PrintTag
 <A HREF=# onclick="pset('parameters')">Options</A>
 </P>
 PrintTag
-  } else {
-    print << "PrintTag";
-&nbsp;&nbsp;
-<A HREF="Pofficium.pl?date1=$date1&command=prev&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
-&darr;</A>
-$date1
-<A HREF="Pofficium.pl?date1=$date1&command=next&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
-&uarr;</A>
-</P>
-PrintTag
-  }
-}
-
-sub prevnext {
-  my $date1 = shift;
-  my $inc = shift;
-  $date1 =~ s/\//\-/g;
-  my ($month, $day, $year) = split('-', $date1);
-  my $d = date_to_days($day, $month - 1, $year);
-  my @d = days_to_date($d + $inc);
-  $month = $d[4] + 1;
-  $day = $d[3];
-  $year = $d[5] + 1900;
-  return sprintf("%02i-%02i-%04i", $month, $day, $year);
 }
 
 #*** Javascript functions
 # the sub is called from htmlhead
 sub horasjs {
 
-  print "\n<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>\n";
   # $caller in principle might not be defined.
   my $caller_flag = $caller || 0;
+  print << "PrintTag";
 
-  if ($officium ne 'Pofficium.pl') {
-    print << "PrintTag";
+<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
 
 //position
 function startup() {
@@ -443,15 +400,6 @@ function defunctorum(hour) {
   document.forms[0].submit();
 }
 
-//calls compare
-function callcompare() {
-  document.forms[0].action = "Cofficium.pl";
-  document.forms[0].target = "_self"
-  document.forms[0].submit();
-}
-PrintTag
-  }
-  print << "PrintTag";
 //to prevent inhearitance of popup
 function clearradio() {
   var a= document.forms[0].popup;
@@ -484,7 +432,7 @@ function okbutton() {
   document.forms[0].submit();
 }
 
-//restart the programlet if parameter change
+//restart the programramlet if parameter change
 function parchange() {
   var c = document.forms[0].command.value;
   if (c && !c.match("change")) {
@@ -504,6 +452,13 @@ function callkalendar() {
 //calls missa
 function callmissa() {
   document.forms[0].action = "../missa/missa.pl";
+  document.forms[0].target = "_self"
+  document.forms[0].submit();
+}
+
+//calls compare
+function callcompare() {
+  document.forms[0].action = "Cofficium.pl";
   document.forms[0].target = "_self"
   document.forms[0].submit();
 }
