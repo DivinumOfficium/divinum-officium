@@ -1004,6 +1004,7 @@ sub gettoday {
 sub precedence {
   $winner = $commemoratio = $commune = $scriptura = $commemoratio1 = '';
   %winner = %commemoratio = %commune = %scriptura = {};
+  %winner2 = %commemoratio2 = %commune2 = %scriptura2 = {};
 
   #get date
   $dat1 = shift;

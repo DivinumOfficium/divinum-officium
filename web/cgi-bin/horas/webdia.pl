@@ -37,6 +37,17 @@ sub htmlHead {
       position: absolute;
       width: 1px;
     }
+    h1, h2 {
+      text-align: center;
+      font-weight: normal;
+    }
+    h2 {
+      margin-top: 4ex;
+      color: maroon;
+      font-size: 112%;
+      font-weight: bold;
+      font-style: italic;
+    }
   </STYLE>
   <TITLE>$title</TITLE>
 PrintTag
@@ -502,7 +513,7 @@ sub table_start {
     ($textwidth && $textwidth =~ /^[0-9]+$/ && 50 <= $textwidth && $textwidth <= 100)
     ? "$textwidth\%"
     : '80%';
-  print "<TABLE BORDER=$border ALIGN=CENTER CELLPADDING=8 WIDTH=$width ID=${hora}top>";
+  print "<TABLE BORDER=$border ALIGN=CENTER CELLPADDING=8 WIDTH=$width>";
 }
 
 #antepost('$title')
@@ -626,14 +637,13 @@ sub selectable_p {
 
 sub horas_menu {
   my($completed, $date1, $version, $lang2, $votive, $testmode) = @_;
-  my @horas = getdialog('horas');
-  shift(@horas); pop(@horas);
+  my @horas = gethoras($votive eq 'C9');
+  push(@horas, 'Omnia', 'Plures') if ($0 !~ /Cofficium/);
 
   my $i  = 0;
   my $output = '';
   foreach (@horas) {
     $i += 1;
-    next if (($votive eq 'C9') && $i != 1 && $i != 2 && $i != 7);
     my $href = '#';
     my $onclick = '';
     if ($0 =~ /Pofficium/) {
@@ -644,7 +654,7 @@ sub horas_menu {
     }
     my $colour = $i <= $completed ? 'maroon' : 'blue' ;
     $output .= qq(\n<A HREF=$href $onclick><FONT COLOR=$colour>$_</FONT></A>\n);
-    if ($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 2 || $i == 6)) {
+    if (($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 2 || $i == 6)) || (($i == (@horas - 2)) && ($0 !~ /Cofficium/))) {
       $output .= '<BR>';
     } else {
       $output .= '&nbsp;&nbsp;';
