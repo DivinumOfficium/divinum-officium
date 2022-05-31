@@ -126,7 +126,6 @@ PrintTag
 sub getsetupvalue {
   my @script;
   my @parameters = split(/;;\r?\n/, getdialog('parameters'));
-  pop(@parameters);
   my $i = 1;
   foreach (@parameters) {
     my($parname, $parvalue, $parmode, $parpar, $parpos, $parfunc, $parhelp) = split('~>');
