@@ -47,8 +47,8 @@ sub invitatorium {
   setbuild('Psalterium/Matutinum Special', $name, 'Invitatorium ord');
   my $ant = chompd($invit[$i]);
   if ($version =~ /Monastic/i && $dayofweek && $winner =~ /Pasc/ && $winner !~ /Pasc[07]/ && $winner !~ /Pasc5-4/) {
-    $ant = chompd($prayers{$lang}{"Alleluia Duplex"}) . $prayers{$lang}{"Alleluia Simplex"};
-    $ant =~ s/\., (.*)/, * \u\1/;
+    $ant = $prayers{$lang}{"Alleluia Duplex"};
+    $ant =~ s/(\S+), (\S+)\./$1, $2, * $1/;
   } else {
     #look for special from proprium the tempore or sancti
     my ($w, $c) = getproprium("Invit", $lang, $seasonalflag, 1);
