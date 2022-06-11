@@ -8,7 +8,7 @@ Sabbato Quattuor temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 Sabbato post Pentecostes;;Feria;;1;;
 
 [Rule]
-Gloria
+no Gloria
 (rubrica 1960) celebranda aut forma longior aut forma brevior
 (rubrica 1960 et missa brevior) LectioL1
 LectioL5
@@ -42,6 +42,14 @@ Alleluia.
 !John 6:64
 It is the Spirit that gives life; but the flesh profits nothing.
 
+[GradualeL1](missa brevior)
+Alleluia.
+!John 6:64
+It is the Spirit that gives life; but the flesh profits nothing.
+_
+#Gloria
+v. Glory be to God on high, and on earth peace to men of good will. We praise Thee. We bless Thee. We adore Thee. We glorify Thee. We give Thee thanks for Thy great glory. O Lord God, heavenly King, God the Father almighty. O Lord Jesus Christ, the only begotten Son. O Lord God, Lamb of God, Son of the Father. Who takest away the sins of the world, have mercy on us. Who takest away the sins of the world, receive our prayer. Who sittest at the right hand of the Father, have mercy on us. For Thou only art holy. Thou only art the Lord. Thou only art most high, O Jesus Christ. Together with the Holy Ghost + in the glory of God the Father. Amen. 	
+
 [OratioL1]
 May the Holy Spirit, we beseech You, O Lord, inflame us with that fire which our~
 Lord Jesus Christ cast upon the earth and desired that it be fanned into flame.
@@ -66,7 +74,7 @@ $Per Dominum
 
 [LectioL3]
 Lesson from the book of Deuteronomy
-!Deut. 26:1-3; 7-11.
+!Deut. 26:1-3; 7-11
 In those days, Moses said to the Israelites: Hear, O Israel, the things that I command you today. When you have come into the land which the Lord, your God, is giving you as a heritage, and have occupied it and settled in it, you shall take the first of all your fruits, and putting them in a basket, you shall go to the place which the Lord, your God, chooses for the dwelling place of His name. There you shall go to the priest in office at that time and say to him, Today I acknowledge the Lord, your God, Who heard our cry and saw our affliction, our toil and our oppression. He brought us out of Egypt with His strong hand and outstretched arm, with terrifying power, with signs and wonders; and bringing us into this country, He gave us this land flowing with milk and honey. Therefore, I have now brought you the first fruits of the products of the soil which the Lord has given me. And having set them before the Lord, your God, you shall bow down in His presence. Then you shall make merry over all these good things which the Lord, your God, has given you.
 $Deo gratias
 
@@ -108,6 +116,9 @@ Alleluia.
 !Dan 3:52
 Blessed are You, O Lord, the God of our fathers, and worthy to be praised~
 forever.
+_
+#Gloria
+v. Glory be to God on high, and on earth peace to men of good will. We praise Thee. We bless Thee. We adore Thee. We glorify Thee. We give Thee thanks for Thy great glory. O Lord God, heavenly King, God the Father almighty. O Lord Jesus Christ, the only begotten Son. O Lord God, Lamb of God, Son of the Father. Who takest away the sins of the world, have mercy on us. Who takest away the sins of the world, receive our prayer. Who sittest at the right hand of the Father, have mercy on us. For Thou only art holy. Thou only art the Lord. Thou only art most high, O Jesus Christ. Together with the Holy Ghost + in the glory of God the Father. Amen.
 
 [OratioL5]
 O God, You Who tempered the flames of fire for the three young men, mercifully~
@@ -120,7 +131,7 @@ Lesson from the letter of St. Paul the Apostle to the Romans
 Brethren: Having been justified by faith, let us have peace with God through our Lord Jesus Christ, through Whom we also have access by faith unto that grace in which we stand, and exult in the hope of the glory of the sons of God. And not only this, but we exult in tribulations also, knowing that tribulation works out endurance, and endurance tried virtue, and tried virtue hope. And hope does not disappoint, because the charity of God is poured forth in our hearts by the Holy Spirit Who has been given to us.
 
 [Graduale]
-Ps 116:1-2
+!Ps 116:1-2
 Praise the Lord, all you nations; glorify Him, all you peoples! For steadfast~
 is His kindness toward us, and the fidelity of the Lord endures forever.
 
