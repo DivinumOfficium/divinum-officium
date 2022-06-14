@@ -4,6 +4,16 @@ R. Piotrze, czy kochasz mię? Ty wiesz, Panie, że cię miłuję.
 V. Szymonie Janów, miłujesz mię więcej niźli ci? Ty wiesz, Panie, że cię miłuję.
 R. Paś baranki moje.
 
+[Lectio6]
+@Sancti/06-29:Lectio5:s/Bo .*//s
+
+[Lectio7]
+@Sancti/06-29:Lectio5:s/.* Bo /Bo /s s/$/~/
+@Sancti/06-29:Lectio6:s/To tedy .*//s
+
+[Lectio8]
+@Sancti/06-29:Lectio6:s/.* To tedy /To tedy /s
+
 [Lectio10]
 @Sancti/06-29:Lectio8:s/Piotr .*//s
 
