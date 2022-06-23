@@ -860,11 +860,10 @@ sub psalmi_major {
     @psalmi = split("\n", $psalmi{"$head $hora"});
 
     if ($hora =~ /Laudes/i && $head =~ /Daym[1-6]/) {
-      $sday = get_sday($month, $day, $year);
       unless ( (($dayname[0] =~ /Adv|Quadp/) && ($duplex < 3) && ($commune !~ /C10/))
                || (($dayname[0] =~ /Quad\d/) && ($dayname[1] =~ /Feria/))
                || ($dayname[1] =~ /Quattuor Temporum Septembris/)
-               || ($sday =~ /(06\-23|06\-28|08\-09|08\-14)/))
+               || (($dayname[0] =~ /Pent/) && ($dayname[1] =~ /Vigil/)))
       {
         my @canticles = split("\n", $psalmi{'DaymF Canticles'});
         if ($dayofweek == 6) { $psalmi[1] .= '(1-7)'; $psalmi[2] = ';;142(8-12)'; }
