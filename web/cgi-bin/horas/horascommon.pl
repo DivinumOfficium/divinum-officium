@@ -713,7 +713,9 @@ sub getrank {
         $commemoratio = $cname;
         $marian_commem = ($crank[3] =~ /C1[0-9]/);
       }
-    } elsif ($winner =~ /sancti/i && $trank[2] && $trank[2] > 1 && $trank[2] >= $crank[2] && $rank < 7) {
+    } elsif ($winner =~ /sancti/i && $trank[2] && $trank[2] > 1 && $trank[2] >= $crank[2] && $rank < 7
+      && !($version =~ /divino/i && $winner =~ /07-01/ && $tname =~ /Pent03-5/) # github #2950
+      ) {
       if ($hora !~ /Completorium/i && $trank[0] && $winner{Rule} !~ /no commemoratio/i) {
         $dayname[2] = "Commemoratio: $trank[0]";
       }
