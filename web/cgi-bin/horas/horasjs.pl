@@ -29,12 +29,6 @@ function startup() {
   }
 }
 
-//prepare position
-function setsearch(ind) {
-  document.forms[0].searchvalue.value = ind;
-  parchange();
-}
-
 //call a setup table
 function pset(p) {
   document.forms[0].command.value = "setup" + p;

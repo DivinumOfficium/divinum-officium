@@ -415,7 +415,7 @@ sub setcell {
 
   if (!$Ck) {
     if (columnsel($lang)) {
-      $searchind++;
+      $searchind++ if ($text !~ /{omittitur}/);
       print "<TR>";
 
       if ($notes && $text =~ /\{\:(.*?)\:\}/) {
@@ -426,7 +426,7 @@ sub setcell {
           . "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=80%></TD></TR>\n";
       }
     }
-    print "<TD $background VALIGN=TOP WIDTH=$width%" . ($lang1 ne $lang ? "" : " ID=L$searchind") . ">";
+    print "<TD $background VALIGN=TOP WIDTH=$width%" . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID=$hora$searchind") . ">";
     topnext_cell($lang);
 
     if ($text =~ /%(.*?)%/) {
@@ -478,22 +478,17 @@ sub topnext_cell {
   if ($officium =~ /Pofficium/i) { return; }
   my $lang = shift;
   my @a = split('<BR>', $text1);
-  if (@a > 2 && $expand !~ /skeleton/i) { print topnext($lang); }
-}
-
-sub topnext {
-  if ($officium =~ /Pofficium/i) {return:}
-  my $lang = shift;
-  my $str = "<DIV ALIGN=right><FONT SIZE=1 COLOR=green>";
-
-  if (columnsel($lang)) {
-    $str .= "<A HREF=# onclick=\"setsearch($searchind);\">Top</A>&nbsp;&nbsp;";
-    $str .= "<A HREF=# onclick=\"setsearch($searchind+1);\">Next</A>";
-  } else {
-    $str .= "$searchind";
+  if (@a > 2 && $expand !~ /skeleton/i) { 
+    my $str = "<DIV ALIGN=right><FONT SIZE=1 COLOR=green>";
+    if (columnsel($lang)) {
+      $str .= "<A HREF='#${hora}top'>Top</A>&nbsp;&nbsp;";
+      $str .= "<A HREF='#$hora" . ($searchind+1) . "'>Next</A>";
+    } else {
+      $str .= "$searchind";
+    }
+    $str .= "</FONT></DIV>\n";
+    print $str;
   }
-  $str .= "</FONT></DIV>\n";
-  return $str;
 }
 
 #*** table_start
@@ -507,7 +502,7 @@ sub table_start {
     ($textwidth && $textwidth =~ /^[0-9]+$/ && 50 <= $textwidth && $textwidth <= 100)
     ? "$textwidth\%"
     : '80%';
-  print "<TABLE BORDER=$border ALIGN=CENTER CELLPADDING=8 WIDTH=$width>";
+  print "<TABLE BORDER=$border ALIGN=CENTER CELLPADDING=8 WIDTH=$width ID=${hora}top>";
 }
 
 #antepost('$title')
@@ -549,7 +544,7 @@ sub table_end {
       print "<TD $background VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len2 words</FONT></TD></TR>";
     }
   }
-  print "</TABLE><span ID=L$searchind></span>";
+  print "</TABLE><span ID='$hora" .($searchind+1) ."'></span>";
 }
 
 sub wnum {
