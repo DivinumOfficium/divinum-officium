@@ -31,6 +31,11 @@ function startup() {
 
 //call a setup table
 function pset(p) {
+  var pc = document.createElement("input");
+  pc.setAttribute("type", "hidden");
+  pc.setAttribute("name", "pcommand");
+  pc.setAttribute("value", "pray" + document.forms[0].command.value);
+  document.forms[0].appendChild(pc);
   document.forms[0].command.value = "setup" + p;
   document.forms[0].submit();
 }
