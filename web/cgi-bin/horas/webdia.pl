@@ -37,6 +37,17 @@ sub htmlHead {
       position: absolute;
       width: 1px;
     }
+    h1, h2 {
+      text-align: center;
+      font-weight: normal;
+    }
+    h2 {
+      margin-top: 4ex;
+      color: maroon;
+      font-size: 112%;
+      font-weight: bold;
+      font-style: italic;
+    }
   </STYLE>
   <TITLE>$title</TITLE>
 PrintTag
@@ -415,7 +426,7 @@ sub setcell {
 
   if (!$Ck) {
     if (columnsel($lang)) {
-      $searchind++;
+      $searchind++ if ($text !~ /{omittitur}/);
       print "<TR>";
 
       if ($notes && $text =~ /\{\:(.*?)\:\}/) {
@@ -426,7 +437,7 @@ sub setcell {
           . "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=80%></TD></TR>\n";
       }
     }
-    print "<TD $background VALIGN=TOP WIDTH=$width%" . ($lang1 ne $lang ? "" : " ID=L$searchind") . ">";
+    print "<TD $background VALIGN=TOP WIDTH=$width%" . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID=$hora$searchind") . ">";
     topnext_cell($lang);
 
     if ($text =~ /%(.*?)%/) {
@@ -478,22 +489,17 @@ sub topnext_cell {
   if ($officium =~ /Pofficium/i) { return; }
   my $lang = shift;
   my @a = split('<BR>', $text1);
-  if (@a > 2 && $expand !~ /skeleton/i) { print topnext($lang); }
-}
-
-sub topnext {
-  if ($officium =~ /Pofficium/i) {return:}
-  my $lang = shift;
-  my $str = "<DIV ALIGN=right><FONT SIZE=1 COLOR=green>";
-
-  if (columnsel($lang)) {
-    $str .= "<A HREF=# onclick=\"setsearch($searchind);\">Top</A>&nbsp;&nbsp;";
-    $str .= "<A HREF=# onclick=\"setsearch($searchind+1);\">Next</A>";
-  } else {
-    $str .= "$searchind";
+  if (@a > 2 && $expand !~ /skeleton/i) { 
+    my $str = "<DIV ALIGN=right><FONT SIZE=1 COLOR=green>";
+    if (columnsel($lang)) {
+      $str .= "<A HREF='#${hora}top'>Top</A>&nbsp;&nbsp;";
+      $str .= "<A HREF='#$hora" . ($searchind+1) . "'>Next</A>";
+    } else {
+      $str .= "$searchind";
+    }
+    $str .= "</FONT></DIV>\n";
+    print $str;
   }
-  $str .= "</FONT></DIV>\n";
-  return $str;
 }
 
 #*** table_start
@@ -549,7 +555,7 @@ sub table_end {
       print "<TD $background VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len2 words</FONT></TD></TR>";
     }
   }
-  print "</TABLE><span ID=L$searchind></span>";
+  print "</TABLE><span ID='$hora" .($searchind+1) ."'></span>";
 }
 
 sub wnum {
@@ -631,14 +637,13 @@ sub selectable_p {
 
 sub horas_menu {
   my($completed, $date1, $version, $lang2, $votive, $testmode) = @_;
-  my @horas = getdialog('horas');
-  shift(@horas); pop(@horas);
+  my @horas = gethoras($votive eq 'C9');
+  push(@horas, 'Omnia', 'Plures') if ($0 !~ /Cofficium/);
 
   my $i  = 0;
   my $output = '';
   foreach (@horas) {
     $i += 1;
-    next if (($votive eq 'C9') && $i != 1 && $i != 2 && $i != 7);
     my $href = '#';
     my $onclick = '';
     if ($0 =~ /Pofficium/) {
@@ -649,7 +654,7 @@ sub horas_menu {
     }
     my $colour = $i <= $completed ? 'maroon' : 'blue' ;
     $output .= qq(\n<A HREF=$href $onclick><FONT COLOR=$colour>$_</FONT></A>\n);
-    if ($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 2 || $i == 6)) {
+    if (($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 2 || $i == 6)) || (($i == (@horas - 2)) && ($0 !~ /Cofficium/))) {
       $output .= '<BR>';
     } else {
       $output .= '&nbsp;&nbsp;';

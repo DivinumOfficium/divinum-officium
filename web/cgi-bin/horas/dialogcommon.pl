@@ -47,6 +47,14 @@ sub getdialog {
   }
 }
 
+sub gethoras {
+  my($C9f) = @_;
+  my @horas = getdialog('horas');
+  @horas = @horas[0,1,6] if ($C9f);
+  $horas[-1] =~ s/\s*$//;
+  @horas;
+}
+
 sub set_runtime_options {
   my($name) = @_;
   my @parameters = split(/;;\r?\n/, getdialog($name));

@@ -20,9 +20,15 @@ $a = 1;
 # resolves the references (formatting characters, prayers hash references and subs)
 #and prints the result
 sub horas {
-  $command = shift;
+  my $command = shift;
   $hora = $command;
-  $hora =~ s/Vesperae/Vespera/;
+  my $head = "Ad $command";
+  $head =~ s/a$/am/;
+  if ($hora =~ /vesper/i) {
+    $hora = 'Vespera';
+    $head = 'Ad Vesperas';
+  }
+  print "<H2 ID='${hora}top'>$head</H2>\n" if ($0 !~ /Cofficium/);
   our $canticum = 0;
   our $reciteindex = 0;
   our $recitelimit = 0;
@@ -40,7 +46,6 @@ sub horas {
   if ($Ck) { $version = $version2; setmdir($version); precedence(); }
   @script2 = getordinarium($lang2, $command);
   @script2 = specials(\@script2, $lang2);
-  $expandind = 0;
   if (!$Tk && !$Hk) { $expandnum = strictparam('expandnum'); }
   table_start();
   $ind1 = $ind2 = 0;
