@@ -397,7 +397,7 @@ sub brevis_monastic {
       ensure_single_alleluia($resp[1], $lang);
       ensure_single_alleluia($resp[-1], $lang);
     }
-    $lectio = join("\n", $c{$name}, '_', @resp);
+    $lectio = join("\n", $c{$name}, "\$Tu autem\n_", @resp);
     setbuild2("Mariae $name");
   } elsif ($commune && $commune !~ /C\d/) {
     my %c = (columnsel($lang)) ? %commune : %commune2;
