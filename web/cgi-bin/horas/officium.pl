@@ -201,7 +201,9 @@ if ($command =~ /setup(.*)/i) {
   } elsif ($horas[0]) {
     foreach (@horas) {
       $hora = $_; # precedence use global $hora !
-      if (/vesper/i && ($horas[0] !~ /vesper/i)) {
+      if (/laudes/i && ($horas[0] !~ /laudes/i)) { 
+        precedence($date1); # prevent lost commemorations
+      } elsif (/vesper/i && ($horas[0] !~ /vesper/i)) {
         precedence($date1);
         my $vesperaheadline = setheadline();
         if ($dayheadline ne $vesperaheadline) { 
