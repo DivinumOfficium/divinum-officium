@@ -78,22 +78,33 @@ sub invitatorium {
 	$fname = checkfile($lang, "$invitpath.txt");
 	
 	if (my @a = do_read($fname)) {
-		foreach $item (@a) {
-			$item = "$item\n";
-			
-			if ($item =~ /\$ant2/i) {
-				$item = "$ant2";
-			} elsif ($item =~ /\$ant/i) {
-				$item = "$ant";
-			} else {
-				$item =~ s/\(\*(.*?)\*(.*?)\)/setfont($smallfont, "($1) ") . $2/e;
-			}
-			
+    $_ = join("\n", @a);
+    s/\(\*(.*?)\*(.*?)\)/setfont($smallfont, "($1) ") . $2/eg;
+    s/\$ant2/$ant2/eg;
+    s/\$ant/$ant/eg;
+    my $g = $prayers{$lang}->{Gloria};
 			if ($dayname[0] =~ /Quad[56]/i && $winner !~ /Sancti/i && $rule !~ /Gloria responsory/i) {
-				$item =~ s/\&Gloria/\&Gloria2/i;
-			}
-			push(@s, "$item");
+      $g = '&Gloria2'
 		}
+    s/&Gloria(?!2)/$g/e;
+    # foreach (@a) {
+    #   if (/\$ant2/i) {
+    #     $_ = $ant2;
+    #   } elsif (/\$ant/i) {
+    #     $_ = $ant;
+    #   } else {
+    #     s/\(\*(.*?)\*(.*?)\)/setfont($smallfont, "($1) ") . $2/e;
+    #   }
+    #
+    #   if (/&Gloria/) {
+    #     my $g = $prayers{$lang}->{Gloria};
+    #     $_ = $g;
+    #     if ($dayname[0] =~ /Quad[56]/i && $winner !~ /Sancti/i && $rule !~ /Gloria responsory/i) {
+    #       $_ = '&Gloria2'
+    #     }
+    #   }
+      push(@s, "$_");
+    # }
 	} else {
 		$error .= "$fname cannnot open";
 	}
