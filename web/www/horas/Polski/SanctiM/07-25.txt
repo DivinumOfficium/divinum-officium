@@ -1,3 +1,9 @@
+[Lectio6]
+@Sancti/07-25:Lectio5:s/Następnie .*//s
+
+[Lectio7]
+@Sancti/07-25:Lectio5:s/.* Następnie /Następnie /s
+
 [Lectio9]
 @Sancti/07-25:Lectio7:s/Ale .*//s
 
