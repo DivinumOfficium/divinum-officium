@@ -180,7 +180,7 @@ $odate = $date1;
 
 $command = strictparam('command');
 if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Past)/i) {
-  $command = "pray$1";
+  $command = "pray" . ($compare ? $1 : $command); # Cofficium can't use Plures
 }
 
 

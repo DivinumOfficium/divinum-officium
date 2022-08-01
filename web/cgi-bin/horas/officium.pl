@@ -190,7 +190,7 @@ print bodybegin();
 if ($command =~ /setup(.*)/i) {
   $command = $1;
   print setuptable($command, "Divinum Officium setup");
-  $command = "change" . $command;
+  $command = "change" . $command . strictparam('pcommand');
 } else {
   my $dayheadline = setheadline();
   print headline( $dayheadline, $comment, $daycolor);
@@ -239,7 +239,6 @@ if ($command =~ /setup(.*)/i) {
   if ($building && $buildscript) { print buildscript($buildscript); }
 }
 
-$command =~ s/(pray|setup)//ig;
 print bodyend();
 
 sub prevnext {
