@@ -40,7 +40,7 @@ Hódie ad patris vocem, transfiguráto Dómino, Moyses et Elías affluérunt spl
 @Sancti/08-06::s/14/12/ s/13 .*//s
 
 [Lectio2]
-@Sancti/08-06:Lectio1:s/.*!/!/ s/10-14/13-15/ s/10 .*13/13/s
+@Sancti/08-06:Lectio1:s/.*!/!/s s/10-14/13-15/ s/10 .*13/13/s
 @Sancti/08-06:Lectio2:s/.*15/15/s s/16.*//s
 
 [Lectio3]

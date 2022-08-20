@@ -4,7 +4,7 @@
 @Tempora/084-0:Lectio5:s/When.*//s
 
 [Lectio7]
-@Tempora/084-0:Lectio5:s/.* When/When/s
+@Tempora/084-0:Lectio5:s/.* When/When/s s/$/~/
 @Tempora/084-0:Lectio6:s/He.*//s
 
 [Lectio8]

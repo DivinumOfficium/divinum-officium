@@ -4,8 +4,8 @@
 @Tempora/083-0:Lectio5:s/If therefore .*//s
 
 [Lectio7]
-@Tempora/083-0:Lectio5:s/.* If therefore/If therefore/s
+@Tempora/083-0:Lectio5:s/.* If therefore/If therefore/s s/$/~/
 @Tempora/083-0:Lectio6:s/The Lord.*//s
 
 [Lectio8]
-@Tempora/083-0:Lectio6:s/.* The Lord/The Lord/s
+@Tempora/083-0:Lectio6:s/.* Whosoever/Whosoever/s
