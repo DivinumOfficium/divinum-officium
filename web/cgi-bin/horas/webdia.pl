@@ -479,7 +479,7 @@ sub setcell {
     }
   } else {
     print setfont($blackfont, $text) . "</TD>\n";
-    if (!columnsel($lang)) { print "</TR>\n"; }
+    if (!columnsel($lang) || $only) { print "</TR>\n"; }
   }
 }
 
