@@ -1,0 +1,14 @@
+version: '3.5'
+
+# This docker-compose file is for generating standalone files.
+
+services:
+  generator:
+    build:
+      context: ./
+      dockerfile: ./docker/generator/Dockerfile
+    volumes:
+      - ./web:/var/www/web
+      - ./standalone/tools/epubgen2:/var/www/standalone/tools/epubgen2
+    stdin_open: true
+    tty: true
