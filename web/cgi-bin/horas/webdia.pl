@@ -555,7 +555,7 @@ sub table_end {
       print "<TD $background VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len2 words</FONT></TD></TR>";
     }
   }
-  print "</TABLE><span ID='$hora" .($searchind+1) ."'></span>";
+  print "</TABLE><A ID='$hora$searchind'></A>";
 }
 
 sub wnum {
