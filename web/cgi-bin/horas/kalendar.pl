@@ -246,7 +246,7 @@ for ($i = 1; $i <= 12; $i++) {
 print << "PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=$border WIDTH=90% CELLPADDING=3>
-<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH><TR>
+<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH></TR>
 PrintTag
 $to = $monthlength[$kmonth - 1];
 if ($kmonth == 2 && leapyear($kyear)) { $to++; }
@@ -262,10 +262,10 @@ for ($cday = 1; $cday <= $to; $cday++) {
   my $c1 = join('<BR>', @c1);
   my $c2 = join('<BR>', @c2);
   print << "PrintTag";
-<TR><TD ALIGN=CENTER><A HREF=# onclick="callbrevi('$date1');">$d1</FONT></A></TD>
+<TR><TD ALIGN=CENTER><A HREF=# onclick="callbrevi('$date1');">$d1</A></TD>
 <TD>$c1</TD>
 <TD>$c2</TD>
-<TD ALIGN=CENTER>$daynames[$dayofweek]</FONT></TD>
+<TD ALIGN=CENTER>$daynames[$dayofweek]</TD>
 </TR>
 PrintTag
 }
