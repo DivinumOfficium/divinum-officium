@@ -3,6 +3,7 @@
 [Rule]
 12 lectiones
 Doxology=Nat
+Ant Matutinum 13 special
 
 [Capitulum Vespera]
 @Sancti/03-25:Capitulum Laudes:1-3
@@ -14,14 +15,14 @@ R. Nuntiávit Maríæ.
 &Gloria
 R. Ángelus Dómini * Nuntiávit Maríæ.
 
-[Ant Matutinum]
-@CommuneM/C11::s/Post partum,.*/Angelus Dómini nuntiávit Maríæ, † et concépit de Spíritu Sancto.;;97/
+[Ant Matutinum 13]
+@Sancti/03-25:Ant Matutinum 12
 
 [Lectio3]
-@Tempora/Adv4-0:Lectio1:s/-7/-3/ s/4 .*//s
+@Tempora/Adv4-0:Lectio1:2-5 s/-7/-3/
 
 [Lectio4]
-@Tempora/Adv4-0:Lectio1:s/1-/4-/ s/1.*4/4/s
+@Tempora/Adv4-0:Lectio1:2-9 s/1-/4-/ s/1.*4/4/s
 
 [Responsory4]
 R. Quæ cum audísset, turbáta est in sermone ejus: † et cogitábat, qualis esset ista salutátio
@@ -48,7 +49,7 @@ R. Et ait Angelus ei.
 R. Dixit autem María ad Angelum: † Quómodo fiet istud, quóniam virum non cognósco?
 * Et respóndens Angelus dixit ei.
 V. Spíritus Sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi.
-R. Et respíndens Angelus dixit ei.
+R. Et respóndens Angelus dixit ei.
 
 [Lectio8]
 Verax namque misericórdia Dei, cum ad reparándum humánum genus ineffabíliter ei multa suppéterent, hanc potíssimum consuléndi viam elégit, qua ad destruéndum opus diáboli non virtúte uterétur poténtiæ, sed ratióne justítiæ. Nam supérbia hostis antíqui non inmérito sibi in omnes hómines jus tyránnicum vindicábat, nec indébito dominátu premébat, quos a mandáto Dei spontáneos in obséquium suæ voluntátis illéxerat. Non ítaque juste amítteret originálem humáni géneris servitútem, nisi de eo quod subégerat vincerétur.
@@ -60,7 +61,7 @@ V. Benedícta tu in muliéribus, et benedíctus fructus ventris tui.
 R. Fiat mihi secúndum verbum tuum.
 
 [Ant Matutinum 3N]
-Gábriel Angelus * locútus est Maríæ dicens: † Ave, grátia plena; Dóminus tecum; benedícta tu in muliéribus.
+@:Ant 3
 
 [Lectio9]
 @Sancti/03-25:Lectio7
@@ -72,7 +73,7 @@ V. Magníficat ánima mea Dóminum: † et exsultávit spíritus meus in Deo, sa
 R. Quia fecit mihi Dóminus magna qui potens est, † et sanctum nomen ejus.
 
 [Lectio10]
-Et bene utrúmque pósuit Scriptúra, ut et desponsáta esset, et virgo: virgo, ut expers virílis consórtii viderétur: desponsáta, ne temerátæ virginitátis adurerétur infámia, cujua gravis alvus corruptélæ viderétur insigne præférre. Máluit autem Dóminus áliquos de suo ortu quam de matris pudóre dubitáre. Sciébat enim téneram esse vírginis verecúndiam, et lúbricam famam pudóris: nec putávit ortus sui fidem matris iniúriis adstruéndam.
+Et bene utrúmque pósuit Scriptúra, ut et desponsáta esset, et virgo: virgo, ut expers virílis consórtii viderétur: desponsáta, ne temerátæ virginitátis adurerétur infámia, cujus gravis alvus corruptélæ viderétur insigne præférre. Máluit autem Dóminus áliquos de suo ortu quam de matris pudóre dubitáre. Sciébat enim téneram esse vírginis verecúndiam, et lúbricam famam pudóris: nec putávit ortus sui fidem matris iniúriis adstruéndam.
 
 [Responsory10]
 @Sancti/03-25:Responsory6
@@ -100,4 +101,3 @@ Et bene utrúmque pósuit Scriptúra, ut et desponsáta esset, et virgo: virgo, 
 
 [Responsory Nona]
 @Commune/C10:Responsory Sexta:8-9
-

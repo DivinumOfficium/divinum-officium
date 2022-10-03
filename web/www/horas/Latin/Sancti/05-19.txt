@@ -9,13 +9,9 @@ vide C4;
 Deus, qui beátum Petrum Cælestínum ad summi pontificátus ápicem sublimásti, quique illum humilitáti postpónere docuísti: concéde propítius; ut ejus exémplo cuncta mundi despícere, et ad promíssa humílibus prǽmia perveníre felíciter mereámur.
 $Per Dominum
 
-[Commemoratio 1]
+[Commemoratio]
 !Commemoratio S. Pudentianæ Virginis
-Ant. Veni, Sponsa Christi, áccipe corónam, quam tibi Dóminus præparávit in ætérnum, allelúja.
-_
-V. Spécie tua et pulchritúdine tua, allelúja.
-R. Inténde, próspere procéde, et regna, allelúja.
-_
+@Commune/C6:Oratio proper
 $Oremus
 v. Exáudi nos, Deus, salutáris noster: ut, sicut de beátæ Pudentiánæ Vírginis tuæ festivitáte gaudémus; ita piæ devotiónis erudiámur afféctu.
 $Per Dominum
@@ -24,37 +20,24 @@ $Per Dominum
 Petrus, a nomine quo Pontifex est appellatus, Cælestinus dictus, honestis catholicisque parentibus Aeserniæ in Samnitibus natus, adolescentiam vix ingressus, ut ánimum a mundi illecebris custodiret, in solitudinem secessit. Ibi contemplationibus mentem mitriens, corpus in servitutem redigens, ferream catenam ad nudam carnem adhibebat. Congregationem, quæ postea Cælestinorum dicta est, sub regula sancti Benedicti instituit. Hinc quasi lucerna supra candelabrum posita, cum abscondi nequiret, (Romana Ecclesia diu viduata pastore) in Petri cathedram ignorans et absens ascitus, magna novitatis admiratione non minus quam repentino gaudio cunctos affecit. Cum autem in pontificatus sublimitate collocatus, variis distentus curis, assuitis incumbere meditationibus vix posse cognosceret, oneri pariter et honori voluntarie cessit. Indeque priscam vitæ rationem repetens, obdormivit in Domino, ejusque pretiosam mortem crux præfulgens in aëre ante cubiculi ostium reddidit amplius gloriosam. Miraculis multis tam vivens, quam post obitum claruit; quibus rite examinatis, Clemens quintus anno postquam decessit undecimo, sanctorum numero adscripsit.
 
 [Lectio5]
-Ex libro Moralium sancti Gregorii Papæ.
-!Lib. 10. cap. 16. in cap. 12. Job.
-Deridetur justi simplicitas. Hujus mundi sapientia est, cor machinationibus tegere, sensum verbis velare: quæ falsa sunt, vera ostendere; quæ vera sunt, falsa demonstrare. Hæc nimirum prudentia usu a juvenibus scitur hæc a pueris pretio discitur; hanc qui sciunt, ceteros despiciendo superbiunt: hanc qui nesciunt, subjecti et timidi in aliis mirantur: quia ab eis hæc eadem duplicitatis iniquitas nomine palliata dihgitur, dimi mentis perversitas urbanitas vocatur. Hæc sibi obsequentibus præcipit honorum culmina quærere, adepta temporalis gloriæ vanitate gaudere, irrogata ab aliis mala multiphcius reddere: cum vires suppetunt, nullis resistentibus cedere: cum virtutis possibilitas deest, quidquid explere per malitiam non valent, hoc in pacifica bonitate simulare.
+@Commune/C5:Lectio4 in 2 loco
 
 [Lectio6]
-At contra, sapientia justorum est: nil per ostensionem fingere, sensum verbis aperire, vera ut sunt diligere, falsa devitare, bona gratis exhibere mala libentius tolerare quam facere; nullam injuriæ ultionem quærere, pro veritate contumeliam lucrum putare. Sed hæc justorum simplicitas deridetur: quia ab hujus mundi sapientibus puritatis virtus fatuitas creditur. Omne enim quod innocenter agitur, ab eis procul dubio stultum putatur: et quidquid in opere veritas approbat, carnali sapientiæ fatuum sonat. Quid namque stultius videtur mundo quam mentem verbis ostendere, nil callida machinatione simulare, nullas injuriis contumelias reddere, pro maledicentibus orare, paupertatem quærere, possessa relinquere, rapienti non resistere, percutienti alteram maxillam præbere?
+@Commune/C5:Lectio5 in 2 loco
 
 [Lectio7]
-@Sancti/04-11:Lectio7
+@Commune/C4:Lectio7 in 2 loco
 
 [Lectio8]
-@Sancti/04-11:Lectio8
+@Commune/C4:Lectio8 in 2 loco
 
 [Lectio9]
-@Sancti/04-11:Lectio9
+@Commune/C4:Lectio9 in 2 loco
 
 [Lectio93]
 !Pro S. Pudentiana Virgine
 Pudentiana virgo, Pudentis Romani filia, parentibus orbata, cum admirabili pietate christianam religionem coleret, una cum sorore Praxede pecuniam ex vendito patrimonio redactam pauperibus distribuit, seque jejuniis et orationibus dedit. Cujus étiam opera, tota ejus familia, in qua erant nonaginta sex homines, a Pio Pontifice baptizata est. Quod autem ab Antonino imperatore sancitum erat, ne Christiani publice sacrificia facerent, Pius Pontifex in sedibus Pudentianæ cum Christianis sacra celebrabat. Quibus illa benigne acceptis, quæ ad vitam necessaria essent, suppeditabat Itaque in his christianæ pietatis officiis migravit e vita, et in sepulcro patris ad cemeterium Priscillæ via Salaria sepulta est, decimo quarto Kalendas Junii.
 &teDeum
-
-[Commemoratio 2]
-!Commemoratio S. Pudentianæ Virginis
-Ant. Símile est regnum cælórum hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam, allelúja.
-_
-V. Diffúsa est grátia in lábiis tuis, allelúja.
-R. Proptérea benedíxit te Deus in ætérnum, allelúja.
-_
-$Oremus
-v. Exáudi nos, Deus, salutáris noster: ut, sicut de beátæ Pudentiánæ Vírginis tuæ festivitáte gaudémus; ita piæ devotiónis erudiámur afféctu.
-$Per Dominum
 
 [Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
 @Commune/C4:Ant 3 summi Pontificis

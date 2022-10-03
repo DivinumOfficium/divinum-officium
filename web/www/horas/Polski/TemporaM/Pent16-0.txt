@@ -2,6 +2,6 @@
 @Tempora/Pent16-0:Lectio7:s/Z tym .*//s
 
 [Lectio10]
-@Tempora/Pent16-0:Lectio7:s/.*Z tym /Z tym /s
+@Tempora/Pent16-0:Lectio7:s/.*Z tym /Z tym /s s/$/~/
 @Tempora/Pent16-0:Lectio8:s/Neither .*//s
 

@@ -1,3 +1,17 @@
+[Lectio5]
+@Commune/C1:Lectio4 in 2 loco:s/Wielka .*//s
+
+[Lectio6]
+@Commune/C1:Lectio4 in 2 loco:s/.* Wielka /Wielka /s s/$/~/
+@Commune/C1:Lectio5 in 2 loco:s/Przeto .*//s
+
+[Lectio7]
+@Commune/C1:Lectio5 in 2 loco:s/.* Przeto /Przeto /s s/$/~/
+@Commune/C1:Lectio6 in 2 loco:s/Nie tylko .*//s
+
+[Lectio8]
+@Commune/C1:Lectio6 in 2 loco:s/.* Nie tylko /Nie tylko /s
+
 [Lectio9]
 @Sancti/02-24:Lectio7:s/Weźmijcie .*//s
 

@@ -34,14 +34,11 @@ our $Ck = 0;
 our $NewMass = 1;
 our $missa = 1;
 our $officium = 'Cmissa.pl';
-our $version1 = 'Rubrics 1960';
-our $version2 = 'New Mass';
-our $version = '';
 
 @versions =
-  ('Ambrosian', 'Mozarabic', 'Sarum', 'Trident 1570', 'Divino Afflatu', 'Rubrics 1960', 'Rubrics 1967', 'New Mass');
+  ('Ambrosian', 'Mozarabic', 'Sarum', 'Dominican', 'Trident 1570', 'Divino Afflatu', 'Rubrics 1960', 'Rubrics 1967', 'New Mass');
 %ordos = split(',',
-      "Mozarabic,OrdoM,Sarum,OrdoS,Ambrosian,OrdoA,Trident 1570,Ordo,"
+      "Mozarabic,OrdoM,Sarum,OrdoS,Ambrosian,OrdoA,Dominican,OrdoOP,Trident 1570,Ordo,"
     . "Divino Afflatu,Ordo,Rubrics 1960,Ordo,Rubrics 1967,Ordo67,New Mass,OrdoN");
 
 #***common variables arrays and hashes
@@ -77,35 +74,44 @@ our $duplex;                                  #1=simplex-feria, 2=semiduplex-fer
 require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/../horas/dialogcommon.pl";
-require "$Bin/webdia.pl";
-require "$Bin/msetup.pl";
+require "$Bin/../horas/webdia.pl";
+require "$Bin/../horas/setup.pl";
 require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
 
 binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
+our ($version1, $version2, $lang1, $lang2, $expand, $column, $accented);
+our %translate;     #translation of the skeleton label for 2nd language
+
 #get parameters
 getini('missa');    #files, colors
-$setupsave = strictparam('setup');
-$setupsave =~ s/\~24/\"/g;
 
-our ($lang1, $lang2, $expand, $column, $accented);
-our %translate;     #translation of the skeleton label for 2nd language
+$setupsave = strictparam('setupm');
+loadsetup($setupsave);
+
+if (!$setupsave) {
+  getcookies('missapc', 'parameters');
+  getcookies('missagc', 'generalc');
+}
+
+set_runtime_options('generalc'); #$expand, $version, $lang2
+set_runtime_options('parameters'); # priest, lang1 ... etc
+
+if ($command eq 'changeparameters') { getsetupvalue($command); }
+
+setcookies('missap', 'parameters');
+setcookies('missagc', 'generalc');
+
+# save parameters
+$setupsave = savesetup(1);
+$setupsave =~ s/\r*\n*//g;
+
 our $sanctiname = 'Sancti';
 our $temporaname = 'Tempora';
 our $communename = 'Commune';
 
-#internal script, cookies
-%dialog = %{setupstring($datafolder, '', 'missa.dialog')};
-
-if (!$setupsave) {
-  %setup = %{setupstring($datafolder, '', 'missa.setup')};
-} else {
-  %setup = split(';;;', $setupsave);
-}
-if (!$setupsave && !getcookies('missapc', 'parameters')) { setcookies('missapc', 'parameters'); }
-if (!$setupsave && !getcookies('missagc', 'generalc')) { setcookies('missagc', 'generalc'); }
 our $command = strictparam('command');
 our $hora = $command;    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
 our $browsertime = strictparam('browsertime');
@@ -117,60 +123,14 @@ $rubrics = 1;
 $solemn = 0;
 if (!$command || $command =~ /^Sancta/i) { $command = 'praySanctaMissa'; }
 
-#*** handle different actions
-#after setup
-if ($command =~ /change(.*)/is) {
-  $command = $1;
-  getsetupvalue($command);
-  if ($command =~ /parameters/) { setcookies('missapc', 'parameters'); }
-}
-eval($setup{'parameters'});    #$priest, $lang1, colors, sizes
-eval($setup{'generalc'});      #$version1, $version2, $lang1, $lang2
-
 #prepare testmode
 our $testmode = 'regular';
 our $votive = '';
 $expandnum = strictparam('expandnum');
-$p = strictparam('priest');
 
-if ($p) {
-  $priest = 1;
-  setsetupvalue('parameters', 0, $priest);
-}
-$p = strictparam('screenheight');
+$only = ($lang1 eq $lang2 && $version1 eq $version2) ? 1 : 0;
 
-if ($p) {
-  $screenheight = $p;
-  setsetupvalue('parametrs', 11, $screenheight);
-}
-$expand = 'all';
-$flag = 0;
-$p = strictparam('lang1');
-if ($p) { $lang1 = $p; $flag = 1; }
-$p = strictparam('lang2');
-if ($p) { $lang2 = $p; $flag = 1; }
-$p = strictparam('version1');
-if ($p) { $version1 = $p; $flag = 1; }
-$p = strictparam('version2');
-if ($p) { $version2 = $p; $flag = 1; }
-
-if ($flag) {
-  setsetup('generalc', $version1, $version2, $testmode, $lang2, $votive, $rubrics, $solemn);
-  setcookies('missagc', 'generalc');
-}
-if (!$expand) { $expand = 'all'; }
-if (!$version1) { $version1 = 'Rubrics 1960'; }
-if (!$version2) { $version2 = 'New Mass'; }
-if (!$lang1) { $lang1 = 'Latin'; }
-if (!$lang2) { $lang2 = 'English'; }
-$only = ($lang1 =~ /$lang2/ && $version1 =~ /$version2/) ? 1 : 0;
-
-# save parameters
-$setupsave = printhash(\%setup, 1);
-$setupsave =~ s/\r*\n*//g;
-$setupsave =~ s/\"/\~24/g;
-$version = $version1;
-setmdir($version);
+setmdir($version1);
 precedence($winner);    #fills our hashes et variables
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;
@@ -214,7 +174,7 @@ if ($command !~ /setup/i) {
 if ($command =~ /setup(.*)/is) {
   $pmode = 'setup';
   $command = $1;
-  setuptable($command);
+  print setuptable($command);
 } elsif ($command =~ /pray/) {
   $pmode = 'hora';
   $command =~ s/(pray|change|setup)//ig;
@@ -288,7 +248,7 @@ if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT><\P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT><\P>\n"; }
 $command =~ s/(pray|setup)//ig;
 print << "PrintTag";
-<INPUT TYPE=HIDDEN NAME=setup VALUE="$setupsave">
+<INPUT TYPE=HIDDEN NAME=setupm VALUE="$setupsave">
 <INPUT TYPE=HIDDEN NAME=command VALUE="$command">
 <INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
 <INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">

@@ -8,7 +8,7 @@ Sabbato Quattuor temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 Sabbato post Pentecostes;;Feria;;1;;
 
 [Rule]
-Gloria
+no Gloria
 (rubrica 1960 et missa brevior) LectioL1
 (rubrica 1960) celebranda aut forma longior aut forma brevior
 LectioL5
@@ -35,9 +35,21 @@ Voici ce que dit le Seigneur Dieu : Je répandrai mon Esprit sur toute chair. Et
 $Deo gratias
 
 [GradualeL1]
+Allelúja.
+!Jo 6:64
+C'est l'Esprit qui vivifie, la chair ne sert de rien.
+
+[GradualeL1](missa brevior)
 Allelúja
 !Jo 6:64
 C'est l'Esprit qui vivifie, la chair ne sert de rien.
+_
+#Gloria
+v. G<em>loire à Dieu au plus haut des cieux</em>. Et paix sur la terre aux hommes de bonne volonté.
+Nous vous louons, nous vous bénissons, <em>nous vous adorons</em>, nous vous gloriﬁons. <em>Nous vous rendons grâces</em> pour votre immense gloire.
+Seigneur Dieu, Roi du ciel, Dieu le Père tout-puissant. Seigneur Fils Unique, <em>Jésus-Christ</em>. Seigneur Dieu, Agneau de Dieu, le Fils du Père.
+Vous qui enlevez les péchés du monde, ayez pitié de nous. Vous qui enlevez les péchés du monde, <em>accueillez notre prière</em>. Vous qui êtes assis à la droite du Père, ayez pitié de nous.
+Car vous seul êtes Saint, vous seul êtes Seigneur, vous seul êtes le Très-Haut, <em>Jésus-Christ</em>, avec le Saint-Esprit, + dans la gloire de Dieu le Père. Ainsi soit-il.
 
 [OratioL1]
 Que l'Esprit Saint allume en nous, Seigneur, le feu que Notre-Seigneur Jésus-Christ apporta sur la terre et qu'il voulait voir s'embraser avec véhémence.
@@ -97,6 +109,13 @@ $Deo Gratias
 Allelúja.
 !Dan 3:52
 Vous êtes béni, Seigneur, Dieu de nos pères, et digne de louange pour tous les siècles.
+_
+#Gloria
+v. G<em>loire à Dieu au plus haut des cieux</em>. Et paix sur la terre aux hommes de bonne volonté.
+Nous vous louons, nous vous bénissons, <em>nous vous adorons</em>, nous vous gloriﬁons. <em>Nous vous rendons grâces</em> pour votre immense gloire.
+Seigneur Dieu, Roi du ciel, Dieu le Père tout-puissant. Seigneur Fils Unique, <em>Jésus-Christ</em>. Seigneur Dieu, Agneau de Dieu, le Fils du Père.
+Vous qui enlevez les péchés du monde, ayez pitié de nous. Vous qui enlevez les péchés du monde, <em>accueillez notre prière</em>. Vous qui êtes assis à la droite du Père, ayez pitié de nous.
+Car vous seul êtes Saint, vous seul êtes Seigneur, vous seul êtes le Très-Haut, <em>Jésus-Christ</em>, avec le Saint-Esprit, + dans la gloire de Dieu le Père. Ainsi soit-il.
 
 [OratioL5]
 Ô Dieu qui, pour les trois enfants, avez adouci les flammes de la fournaise, accordez-nous avec bonté, à nous vos serviteurs, de n'être point dévorés par la flamme des vices.

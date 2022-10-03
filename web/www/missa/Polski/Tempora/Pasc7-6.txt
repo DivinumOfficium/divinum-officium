@@ -8,7 +8,7 @@ Sabbato Quattuor temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 Sabbato post Pentecostes;;Feria;;1;;
 
 [Rule]
-Gloria
+no Gloria
 (rubrica 1960 et missa brevior) LectioL1
 (rubrica 1960) celebranda aut forma longior aut forma brevior
 LectioL5
@@ -44,9 +44,17 @@ To mówi Pan Bóg; Wyleję Ducha mego na wszelkie ciało i prorokować będą sy
 $Deo gratias
 
 [GradualeL1]
-Alleluja
+Alleluja.
 !J 6:64
 Duch jest tym, który ożywia, ciało nic nie pomoże.
+
+[GradualeL1](missa brevior)
+Alleluja.
+!J 6:64
+Duch jest tym, który ożywia, ciało nic nie pomoże.
+_
+#Gloria
+v. Chwała na wysokości Bogu, a na ziemi pokój ludziom dobrej woli. Chwalimy Cię. Błogosławimy Cię. Wielbimy Cię.Wysławiamy Cię. Dzięki Ci składamy, bo wielka jest chwała Twoja. Panie Boże, Królu nieba, Boże Ojcze wszechmogący. Panie, Synu Jednorodzony, Jezu Chryste. Panie Boże, Baranku Boży, Synu Ojca. Który gładzisz grzechy świata, zmiłuj się nad nami. Który gładzisz grzechy świata, przyjm błaganie nasze. Który siedzisz po prawicy Ojca, zmiłuj się nad nami. Albowiem tylko Tyś jest święty. Tylko Tyś jest Panem. Tylko Tyś Najwyższy, Jezu Chryste. Z Duchem Świętym + w chwale Boga Ojca. Amen.
 
 [OratioL1]
 Prosimy Cię, Panie, niech Duch Święty zapali nas tym ogniem, który Pan nasz Jezus Chrystus zesłał na ziemię, pragnąc, by mocno rozgorzał:
@@ -109,9 +117,12 @@ W one dni: Anioł Pański zstąpił z Azariaszem i towarzyszami jego w piec i wy
 $Deo Gratias
 
 [GradualeL5]
-Alleluja
+Alleluja.
 !Dn 3:52
 Błogosławiony jesteś Panie, Boże ojców naszych, i chwalebny na wieki.
+_
+#Gloria
+v. Chwała na wysokości Bogu, a na ziemi pokój ludziom dobrej woli. Chwalimy Cię. Błogosławimy Cię. Wielbimy Cię.Wysławiamy Cię. Dzięki Ci składamy, bo wielka jest chwała Twoja. Panie Boże, Królu nieba, Boże Ojcze wszechmogący. Panie, Synu Jednorodzony, Jezu Chryste. Panie Boże, Baranku Boży, Synu Ojca. Który gładzisz grzechy świata, zmiłuj się nad nami. Który gładzisz grzechy świata, przyjm błaganie nasze. Który siedzisz po prawicy Ojca, zmiłuj się nad nami. Albowiem tylko Tyś jest święty. Tylko Tyś jest Panem. Tylko Tyś Najwyższy, Jezu Chryste. Z Duchem Świętym + w chwale Boga Ojca. Amen.
 
 [OratioL5]
 Boże, któryś złagodził płomienie ognia dla trzech młodzieńców, spraw łaskawie, aby nas, sług Twoich, nie strawił płomień namiętności.

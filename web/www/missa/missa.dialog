@@ -21,8 +21,14 @@ Votive~>$votive~>Optionmenu~>{hodie,Dedication,Defunctorum,Coronatio,Propaganda}
 Rubrics~>$rubrics~>Checkbutton;;
 Solemn~>$solemn~>Checkbutton;;
 
+[generalc]
+Version 1~>$version1~>Optionmenu~>{Tridentinum,Divino Afflatu,Reductions 1955,Rubrics 1960};;
+Version 2~>$version2~>Optionmenu~>{Tridentinum,Divino Afflatu,Reductions 1955,Rubrics 1960};;
+Language 1~>$lang1~>Optionmenu~>languages;;
+Language 2~>$lang2~>Optionmenu~>languages;;
+
 [languages]
-Latin,Cesky,English,Magyar,Italiano,Deutsch,Polski,French,Spanish
+Latin,Čeština/Cesky,Deutsch,English,Español/Espanol,Français/French,Italiano,Magyar,Polski,Português/Portugues
 
 [communes]
 C1,Commune Apostolorum, 

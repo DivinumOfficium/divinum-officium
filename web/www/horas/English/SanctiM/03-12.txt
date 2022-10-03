@@ -1,4 +1,4 @@
-[Hymnus Matutinum]
+[Hymnus Vespera]
 Of Angles once Apostle thou,
 Companion of the angels now,
 O Gregory, protect our race,
@@ -41,16 +41,16 @@ Amen.
 @Sancti/03-12:Lectio6:s/.*He would/Quátuor/s
 
 [Lectio9]
-@Sancti/04-11:Lectio7:s/Thus.*//s
+@Commune/C4:Lectio7 in 2 loco:s/But the.*//s
 
 [Lectio10]
-@Sancti/04-11:Lectio7:s/.*Thus/Thus/s s/$/~/
-@Sancti/04-11:Lectio8:s/This teaching.*//
+@Commune/C4:Lectio7 in 2 loco:s/.*But the/But the/s s/$/~/
+@Commune/C4:Lectio8 in 2 loco:s/And therefore.*//
 
 [Lectio11]
-@Sancti/04-11:Lectio8:s/.*This teaching/This teaching/s s/$/~/
-@Sancti/04-11:Lectio9:s/My disciples.*//s
+@Commune/C4:Lectio8 in 2 loco:s/.*And therefore/And therefore/s s/$/~/
+@Commune/C4:Lectio9 in 2 loco:s/My disciples.*//s
 
 [Lectio12]
-@Sancti/04-11:Lectio9:s/.*My disciples/My disciples/s
+@Commune/C4:Lectio9 in 2 loco:s/.*My disciples/My disciples/s
 

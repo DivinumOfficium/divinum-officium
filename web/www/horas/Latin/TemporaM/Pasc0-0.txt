@@ -6,26 +6,27 @@ Antiphonas horas
 12 lectiones
 Doxology=Pasc
 
+[AntM Matutinum]
+Terra * trémuit et quiévit, † dum exsúrgeret in judício Deus, allelúja.;;29
+Nolíte expavéscere: * Jesum quǽritis Nazarénum, crucifíxum: surréxit, non est hic, allelúja.;;243;244;245
+
 [Ant Matutinum]
-Ego sum * qui sum, et consílium meum non est cum ímpiis, † sed in lege Dómini volúntas mea est, allelúja.;;1
+@Tempora/Pasc0-0::1
 ;;2
 ;;8
 ;;15
 ;;23
 ;;27
-V. Surréxit Dóminus de sepúlcro, allelúja.
-R. Qui pro nobis pepéndit in ligno, allelúja.
-Terra * trémuit et quiévit, † dum exsúrgeret in judício Deus, allelúja.;;29
+@Psalterium/Psalmi matutinum:Pascm0:7-8
+@:AntM Matutinum:1
 ;;63
 ;;65
 ;;75
 ;;87
 ;;107
-V. Surréxit Dóminus vere, allelúja.
-R. Et appáruit Simóni, allelúja.
-Nolíte expavéscere: * Jesum quǽritis Nazarénum, crucifíxum: surréxit, non est hic, allelúja.;;243;244;245
-V. Gavísi sunt discípuli, allelúja.
-R. Viso Dómino, allelúja.
+@Psalterium/Psalmi matutinum:Pascm0:15-16
+@:AntM Matutinum:2
+@Psalterium/Psalmi matutinum:Pascm0:18-19
 
 [Lectio1]
 @Sancti/01-03::1-6 s/1-5/2-4/ s/1.*Absit. /2 /s
@@ -51,25 +52,25 @@ R. Viso Dómino, allelúja.
 [Lectio5]
 Sermo sancti Gregórii Nazianzéni
 !Sermone 2. de Paschale
-Pascha Dómini, Pascha, iterúmque Pascha dicam in honórem Trinitátis. Haec nobis festívitatum festívitas, et celebritátum celébritas, tanto céteris ómnibus, non solum humánis et humi defíxis, sed iis étiam quae ipsíus Christi sunt ac propter ipsum celebrántur, antecéllens, quanto sol stellis antecéllit. Heri agnus mactabátur, et postes ungebántur, luxítque primogénita Aegýptus, ac nos exterminátor praetériit, (signáculum quippe terróri ipsi ac veneratióni fuit), pretiosóque Sánguine protécti sumus.
+Pascha Dómini, Pascha, iterúmque Pascha dicam in honórem Trinitátis. Hæc nobis festívitatum festívitas, et celebritátum celébritas, tanto céteris ómnibus, non solum humánis et humi defíxis, sed iis étiam quæ ipsíus Christi sunt ac propter ipsum celebrántur, antecéllens, quanto sol stellis antecéllit. Heri agnus mactabátur, et postes ungebántur, luxítque primogénita Aegýptus, ac nos exterminátor prætériit, (signáculum quippe terróri ipsi ac veneratióni fuit), pretiosóque Sánguine protécti sumus.
 
 [Responsory5]
 @Tempora/Pasc0-2:Responsory1
 
 [Lectio6]
-Hódie Aegýptum omníno fúgimus, et amaruléntum illum dóminum pharaónem, et acérbos praeféctos: ac luto et láterum confectióne liberáti sumus: nec quisquam est, qui nos Dómino Deo nostro éxitus festum celebráre prohíbeat, et quidem celebráre, non in ferménto véteri malítiae et nequítiae, sed in ázymis sinceritátis et veritátis, nihil Aegyptíaci atque imi ferménti nobíscum feréntes. Heri cum Christo in crucem angébar: hódie simul gloríficor. Heri commoriébar: hódie simul vivíficor. Heri consepeliébar: hódie simul resúrgo.
+Hódie Aegýptum omníno fúgimus, et amaruléntum illum dóminum pharaónem, et acérbos præféctos: ac luto et láterum confectióne liberáti sumus: nec quisquam est, qui nos Dómino Deo nostro éxitus festum celebráre prohíbeat, et quidem celebráre, non in ferménto véteri malítiæ et nequítiæ, sed in ázymis sinceritátis et veritátis, nihil Aegyptíaci atque imi ferménti nobíscum feréntes. Heri cum Christo in crucem angébar: hódie simul gloríficor. Heri commoriébar: hódie simul vivíficor. Heri consepeliébar: hódie simul resúrgo.
 
 [Responsory6]
 @Tempora/Pasc0-2:Responsory2
 
 [Lectio7]
-At vero ei, qui pro nobis passus est ac resurréxit, múnera offerámus. Aurum fortásse me dícere putátis, aut argéntum, aut textúras, aut perlúcidos et ingéntis prétii lápides, fluxam fragilémque terræ matériam, humíque manéntem, cuiúsque maiórem partem ímprobi fere póssident, et servi rerum terrenárum ac mundi príncipis?  Immo vero nosmetípsos offerámus, hoc est, opes Deo caríssimas, maximéque congruéntes.  Imáginis decus imágini reddámus, dignitátem nostrum agnoscámus, exemplar nostrum honóre prosequámur, mystérii vim intellegámus, et pro quo Christus morte functus est. Simus ut Christus quoque sicut nos.  Efficiámur dii propter ipsum, quóniam quoque propter nos homo factus est.
+At vero ei, qui pro nobis passus est ac resurréxit, múnera offerámus. Aurum fortásse me dícere putátis, aut argéntum, aut textúras, aut perlúcidos et ingéntis prétii lápides, fluxam fragilémque terræ matériam, humíque manéntem, cujúsque majórem partem ímprobi fere póssident, et servi rerum terrenárum ac mundi príncipis?  Immo vero nosmetípsos offerámus, hoc est, opes Deo caríssimas, maximéque congruéntes.  Imáginis decus imágini reddámus, dignitátem nostrum agnoscámus, exemplar nostrum honóre prosequámur, mystérii vim intellegámus, et pro quo Christus morte functus est. Simus ut Christus quoque sicut nos.  Efficiámur dii propter ipsum, quóniam quoque propter nos homo factus est.
 
 [Responsory7]
 @Tempora/Pasc0-3:Responsory1
 
 [Lectio8]
-Assúmpsit, quod detérius erat, ut det, quod paestántius est: mendícus factus est, ut nos illíus mendicitáte ditémur: servi formam suscépit nos in libertátem asserámur. Descéndit, ut evehámur: tentátus est, vincámus: contémptus: ut nos glória affíciat: mórtuus est, ut salútem nobis áfferat: ascéndit ut eos, qui in peccáti lapsu iacébant, ad seípsum trahat. Omnia quíspiam donet, ómnia ei, qui seípsum redemptiónis prétium pro nobis, ac culpae nostrae succidáneum dedit, ófferat. Nihil autem datúrus est tantum, quantum si seípsum obtúlerit hujus mystérii ratiónem probe intelligéntem; ac propter illum ómnia factus fúerit, quacúmque ipse propter nos factus est.
+Assúmpsit, quod detérius erat, ut det, quod pæstántius est: mendícus factus est, ut nos illíus mendicitáte ditémur: servi formam suscépit nos in libertátem asserámur. Descéndit, ut evehámur: tentátus est, vincámus: contémptus: ut nos glória affíciat: mórtuus est, ut salútem nobis áfferat: ascéndit ut eos, qui in peccáti lapsu iacébant, ad seípsum trahat. Omnia quíspiam donet, ómnia ei, qui seípsum redemptiónis prétium pro nobis, ac culpæ nostræ succidáneum dedit, ófferat. Nihil autem datúrus est tantum, quantum si seípsum obtúlerit hujus mystérii ratiónem probe intelligéntem; ac propter illum ómnia factus fúerit, quacúmque ipse propter nos factus est.
 
 [Responsory8]
 @Tempora/Pasc0-3:Responsory2
@@ -126,6 +127,7 @@ $Deo gratias
 
 [Capitulum Nona]
 @Psalterium/Prima Special:Pasc
+$Deo gratias
 
 [Responsory Nona]
 @:Versum 2

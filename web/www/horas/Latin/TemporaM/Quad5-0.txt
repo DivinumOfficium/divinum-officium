@@ -15,12 +15,9 @@ _
 @Tempora/Quad5-0:Lectio3:s/14-/17-/ s/14.*17/17/s
 
 [Responsory4]
-R. Deus meus, éripe me de manu peccatóris: † et de manu contra legem agéntis, et iníqui:
-* Quóniam tu es patiéntia mea.
-V. Deus meus, ne elongéris a me: † Deus meus, in auxílium meum réspice.
-R. Quóniam tu es patiéntia mea.
+@Tempora/Quad5-1:Responsory1
 &Gloria
-R. Deus meus, éripe me de manu peccatóris: † et de manu contra legem agéntis, et iníqui: * Quóniam tu es patiéntia mea.
+@Tempora/Quad5-1:Responsory1:1-2 s/\n/ /
 
 [Lectio5]
 @Tempora/Quad5-0:Lectio4

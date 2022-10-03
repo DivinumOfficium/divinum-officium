@@ -9,18 +9,6 @@ Antiphonas horas
 Psalm5 Vespera=116
 Psalm5 Vespera3=115
 
-[Ant Vespera]
-@Commune/C1p:Ant Laudes
-
-[Capitulum Vespera]
-@Commune/C1p
-
-[Versum 1]
-@Commune/C1p
-
-[Ant 1]
-@Commune/C1p
-
 [Invit]
 Es mögen jubeln im Herrn die Heiligen, * Alleluja.
 
@@ -44,34 +32,30 @@ Ununterbrochnes Licht * scheint deinen Schützlingen, o Herr, auf ewige Zeiten, 
 V. Ewige Freude strömt auf sie herunter, alleluja.
 R. Jubel und Frohlocken erhalten sie als Besitz, alleluja.
 
-[Responsory1]
-@Commune/C1p
-
-[Responsory2]
-@Commune/C1p
-
-[Responsory3]
-@Commune/C1p
-
 [Lectio4]
 Sermo sancti Ambrosii Episcopi.
 !Serm. 22.
 Dignum et cóngruum est, fratres, ut post lætítiam Paschæ, quam in Ecclésia celebrávimus, gáudia nostra cum sanctis Martýribus conferámus: et iis annuntiémus Domínicæ resurrectiónis glóriam, qui consórtes sunt Domínicæ passiónis. Qui enim sócii sunt contuméliæ, debent et partícipes esse lætítiæ. Ita enim dicit beátus Apóstolus: Sicut sócii passiónum estis, et resurrectiónis éritis: si tolerábimus, inquit, et conregnábimus. Qui ergo toleravérunt mala propter Christum, debent et glóriam habére cum Christo.
 
-[Responsory4]
-@Commune/C1p
-
 [Lectio5]
 Annuntiémus inquam sanctis Martýribus Domínicæ Paschæ grátiam: ut dum sepultúræ illíus prædicámus reseráta claustra, et horum sepúlcra reseréntur: dum corpus illíus mortuum dícimus tepéntibus venis súbito viguísse, horum quoque membra jam frígida immortalitátis calóre foveántur. Éadem enim rátio Mártyres súscitat, quæ et Dóminum suscitávit. Nam sicut viam passiónis ejus expérti sunt, ita experiéntur et vitæ; scriptum est enim in Psalmo: Notas mihi fecísti vias vitæ. Hoc útique in resurrectióne ex persóna dícitur Salvatóris: ut qui, dum post mortem ab ínferis redit ad súperos, incípiat notam habére viam vitæ, quæ ante habebátur ignóta.
 
 [Responsory5]
-@Commune/C2:Responsory51
+R. In servis suis, allelúja,
+* Consolábitur Deus, allelúja.
+V. Judicábit Dóminus pópulum suum, et in servis suis.
+R. Consolábitur Deus, allelúja.
 
 [Lectio6]
 Ignóta enim erat ante Christi advéntum via vitæ, quæ nullíus adhuc resurgéntis fúerat temeráta vestígio. At ubi Dóminus resurréxit, nota facta, solo attríta est plurimórum: de quibus sanctus Evangelísta ait: Multórum córpora Sanctórum surrexérunt cum eo, et introiérunt in sanctam civitátem. Unde cum Dóminus in resurrectióne sua díxerit, Notas mihi fecísti vias vitæ: póssumus et nos jam dícere Dómino: Notas fecísti nobis vias vitæ. Ipse enim nobis notas fecit vias vitæ, qui nobis sémitam manifestávit ad vitam. Notas enim mihi fecit vias vitæ, cum me dócuit fidem, misericórdiam, justítiam, castitátem: his enim pervenítur itinéribus ad salútem.
 
 [Responsory6]
-@Commune/C2:Responsory61
+R. Fíliæ Jerúsalem, veníte et vidéte Mártyres cum corónis, quibus coronávit eos Dóminus
+* In die solemnitátis et lætítiæ, allelúja.
+V. Quóniam confortávit seras portárum tuárum, benedíxit fílios tuos in te.
+R. In die solemnitátis et lætítiæ, allelúja.
+&Gloria
+R. In die solemnitátis et lætítiæ, allelúja.
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Joánnem.
@@ -82,68 +66,36 @@ _
 !Tract. 80. in Joannem.
 Iste locus evangélicus, fratres, ubi se dicit Dóminus vitem, et discípulos suos pálmites, secúndum hoc dicit, quod est caput Ecclésiæ, nosque membra ejus, mediátor Dei et hóminum, homo Christus Jesus. Uníus quippe natúræ sunt vitis et pálmites. Propter quod cum esset Deus, cujus natúræ non sumus, factus est homo, ut in illo esset vitis humána natúra, cujus et nos hómines pálmites esse possémus.
 
-[Responsory7]
-@Commune/C1p
-
-[Responsory7c]
-@Commune/C1p:Responsory2
-
 [Lectio8]
 Quid ergo est, Ego sum vitis vera? Numquid ut ádderet, vera, hoc ad eam vitem rétulit, unde ista similitúdo transláta est? Sic enim dícitur vitis per similitúdinem, non per proprietátem: quemádmodum dícitur ovis, agnus, leo, petra, lapis anguláris, et cétera hujúsmodi, quæ magis ipsa sunt vera, ex quibus ducúntur istæ similitúdines, non proprietátes. Sed cum dicit, Ego sum vitis vera: ab illa se útique discérnit, cui dícitur: Quómodo convérsa es in amaritúdinem vitis aliéna? Nam quo pacto est vitis vera, quæ exspectáta est ut fáceret uvam, fecit autem spinas?
-
-[Responsory8]
-@Commune/C1p
 
 [Lectio9]
 Ego sum, inquit, vitis vera: et Pater meus agrícola est. Numquid unum sunt agrícola et vitis? Secúndum hoc ergo vitis Christus, secúndum quod ait: Pater major me est. Secúndum autem id, quod ait: Ego, et Pater unum sumus; et ipse agrícola est: nec talis, quales sunt, qui extrínsecus operándo éxhibent ministérium: sed talis, ut det étiam intrínsecus increméntum. Nam neque qui plantat est áliquid, neque qui rigat: sed, qui increméntum dat, Deus. Sed útique Deus est Christus, quia Deus erat Verbum: unde ipse, et Pater unum sunt. Et, si Verbum caro factum est, quod non erat, manet quod erat.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
-
-[Capitulum Laudes]
-@Commune/C1p:Capitulum Vespera
-
-[Versum 2]
-@Commune/C1p
-
-[Ant 2]
-@Commune/C1p
-
-[Lectio Prima]
-@Commune/C1p
-
-[Capitulum Tertia]
-@Commune/C1p:Capitulum Vespera
-
-[Responsory Tertia]
-@Commune/C1p
-
-[Capitulum Sexta]
-@Commune/C1p
-
-[Responsory Sexta]
-@Commune/C1p
-
-[Capitulum Nona]
-@Commune/C1p
-
-[Responsory Nona]
-@Commune/C1p
-
-[Ant 3]
-@Commune/C1p
-
-[Lectio41]
+[Lectio4 in 2 loco]
 De Epístola sancti Cypriáni Epíscopi et Mártyris ad Mártyres et Confessóres.
 !Lib. 2. Epist. 6.
 Quibus ego vos láudibus pr?dicem, fortíssimi Mártyres? robur péctoris vestri, et perseverántiam fídei, quo præcónio vocis exórnem? Tolerástis usque ad consummatiónem glóriæ duríssimam quæstiónem: nec cessístis supplíciis, sed vobis pótius supplícia cessérunt. Finem dolóribus, quem torménta non dabant, corónæ dedérunt. Laniéna grávior ad hoc diu perseverávit, non ut stantem fidem dejíceret, sed ut hómines Dei ad Deum velócius mítteret.
 
-[Responsory41]
-@Commune/C1p:Responsory4
-
-[Lectio51]
+[Lectio5 in 2 loco]
 Vidit admírans præséntium multitúdo cæléste certámen, certámen Dei, certámen spiritále, pr?lium Christi: stetísse servos ejus voce líbera, mente incorrúpta, virtúte divína, telis quidem sæculáribus nudos, sed armis fídei ardéntis armátos. Stetérunt torti torquéntibus fortióres: et pulsántes ac laniántes úngulas, pulsáta ac laniáta membra vicérunt. Inexpugnábilem fidem superáre non pótuit s?viens diu plaga repetíta, quamvis rupta compáge víscerum torqueréntur in servis Dei jam non membra, sed vúlnera. Fluébat sanguis, qui incéndium persecutiónis exstíngueret, qui flammas et ignes gehénnæ glorióso cruóre sopíret.
 
-[Lectio61]
+[Lectio6 in 2 loco]
 O quale illud fuit spectáculum Dómino, quam sublíme, quam magnum, quam Dei óculis sacraménto ac devotióne mílitis ejus accéptum: sicut scriptum est in Psalmis, Spíritu Sancto loquénte ad nos páriter et monénte: Pretiósa est in conspéctu Dómini mors justórum ejus. Pretiósa mors hæc est, quæ emit immortalitátem prétio sui sánguinis; quæ accépit corónam de consummatióne virtútis. Quam lætus illic Christus fuit, quam libens in tálibus servis suis et pugnávit, et vicit protéctor fídei, dans credéntibus tantum, quantum se credit cápere qui sumit! Certámini suo ádfuit, præliatóres atque assertóres sui nóminis eréxit, corroborávit, animávit. Et qui pro nobis mortem semel vicit, semper vincit in nobis.
+
+[Lectio7 in 2 loco]
+Léctio sancti Evangélii secúndum Joánnem
+!Joannes 15:5-10
+In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Et réliqua.
+_
+Homilía sancti Augustíni Epíscopi
+!Tract. 81 in Joan., sub med.
+Ne quisquam putáret saltem parvum áliquem fructum posse a semetípso pálmitem ferre: cum dixísset, Hic fert fructum multum; non ait, Quia sine me parum potéstis fácere; sed, Nihil potéstis fácere. Sive ergo parum, sive multum, sine illo fíeri non potest, sine quo nihil fíeri potest: quia etsi parum attúlerit palmes, eum purgat agrícola, ut plus áfferat; tamen nisi in vite mánserit, et víxerit de rádice, quantúmlibet fructum a semetípso non potest ferre. Quamvis autem Christus vitis non esset, nisi homo esset: tamen istam grátiam palmítibus non præbéret, nisi étiam Deus esset.
+
+[Lectio8 in 2 loco]
+Verum quia ita sine ista grátia non potest vivi, ut et mors in potestáte sit líberi arbítrii: Si quis in me, inquit, non mánserit; mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Ligna ítaque vitis tanto sunt contemptibilióra si in vite non mánserint, quanto gloriosióra si mánserint. Dénique sicut de his étiam per Ezechiélem prophétam Dóminus dicit, præcísa nullis agricolárum úsibus prosunt, nullis fabrílibus opéribus deputántur. Unum de duóbus pálmiti congruit, aut vitis, aut ignis: si in vite non est, in igne erit: ut ergo in igne non sit, in vite sit.
+
+[Lectio9 in 2 loco]
+Si manséritis in me, inquit, et verba mea in vobis mánserint: quodcúmque voluéritis petétis, et fiet vobis. Manéndo quippe in Christo, quid velle possunt, nisi quod cónvenit Christo? Quid velle possunt manéndo in Salvatóre, nisi quod non est aliénum a salúte? Áliud quippe vólumus quia sumus in Christo: et áliud vólumus quia sumus adhuc in hoc sǽculo. De mansióne namque hujus sǽculi nobis aliquándo subrépit, ut hoc petámus, quod nobis non expedíre nescímus. Sed absit ut fiat nobis, si manémus in Christo, qui non facit quando pétimus, nisi quod éxpedit nobis.
+&teDeum

@@ -1,0 +1,113 @@
+[Hymnus Vespera]
+v. Niegdyś Anglików apostoł,
+Teraz aniołów towarzysz;
+Przyjdź, pomóż ludom, Grzegorzu,
+Gdy prawą wiarę wyznały.
+_
+Bujnymi ziemi dobrami
+I sławą świata pogardzasz,
+Wolisz u biednych być biednym,
+Za Księciem ubogim podążasz.
+_
+Przed tobą staje rozbitek,
+Żebrząc, a był to anioł,
+Z sakwy podwójnie mu sypiesz
+I dajesz srebrzystą misę.
+_
+A później Chrystus cię stawia
+Na przedzie swego Kościoła,
+Byś objął Piotra urzędy
+I jego zasad przestrzegał.
+_
+Arcykapłanie przesławny,
+Klejnocie owczarni, blasku,
+Mądrością prowadź przez życie
+Bądź blisko w trwogi godzinie.
+_
+Niech Ojcu niezrodzonemu,
+Jednorodzonemu Synowi,
+Tchnieniu, co równe im Obu
+Podzięki wznoszą się stale.
+Amen.
+
+[Lectio6]
+@Sancti/03-12:Lectio5:s/Posławszy.*//s
+
+[Lectio7]
+@Sancti/03-12:Lectio5:s/.*Posławszy/Posławszy/s s/$/~/
+@Sancti/03-12:Lectio6:s/Czterem.*//s
+
+[Lectio8]
+@Sancti/03-12:Lectio6:s/.*Czterem/Czterem/s
+
+[Lectio9]
+@Commune/C4:Lectio7 in 2 loco:s/Jest.*//s
+
+[Lectio10]
+@Commune/C4:Lectio7 in 2 loco:s/.*Jest/Jest/s s/$/~/
+@Commune/C4:Lectio8 in 2 loco:s/Z tych.*//
+
+[Lectio11]
+@Commune/C4:Lectio8 in 2 loco:s/.*Z tych/Z tych/s s/$/~/
+@Commune/C4:Lectio9 in 2 loco:s/Korona.*//s
+
+[Lectio12]
+@Commune/C4:Lectio9 in 2 loco:s/.*Korona/Korona/s
+
+[Ant Laudes]
+Błogosławiony Grzegorz * wyniesiony na katedrę Piotra imię Czuwającego czynami wypełnił.
+Wybitny pasterz * przekazał wzór i regułę życia pasterskiego.
+Kiedy zgłębiał tajemnice * Pisma Świętego, ukazała się gołębica jaśniejsza od śniegu.
+Słudzy Pańscy, * błogosławcie Pana; sługa wasz Grzegorz wstąpił do nieba.
+Grzegorz, * zwierciadło mnichów, ojciec Miasta, świata osłoda.
+
+[Hymnus Laudes]
+v. Dla duszy przesłodkie miody
+Skapują z ust twych, a mowy,
+Którymi budzisz w nas wiarę,
+Czarowną wonią tchną całe.
+_
+Mistyczne Pisma Świętego
+Treści rozumiesz dlatego,
+Że Prawda uczy cię czytać,
+By sens misteriów przenikać.
+_
+A wreszcie niebiańska chwała
+Moc apostolską ci dała,
+Byś grzechy od nas oddalił,
+A dusze na wieczność ocalił.
+_
+Arcykapłanie wspaniały,
+Twe cnoty przyozdabiały
+Kościół, więc prowadź nas dobrze
+I ratuj dusze pobożne.
+_
+Niech Ojca niezrodzonego,
+Syna jednorodzonego
+I równe im obu Tchnienie
+Wysławia wciąż dziękczynienie.
+Amen.
+
+[Ant 2]
+Grzegorz * patrząc na młodzieńców angielskich rzekł: Anielskie mają oblicze, i tacy powinni być towarzyszami aniołów w niebie.
+
+[Capitulum Tertia]
+!Syr 50:1
+v. Kapłan wielki, który za żywota swego Dom podparł, a za dni swych kościół umocnił.
+$Deo gratias
+
+[Capitulum Sexta]
+!Syr 47:11-12
+v. Postanowił śpiewaki przed ołtarzem i na głosy ich uczynił wdzięczną muzykę.  I dał ozdobę świętam, i ozdobił czasy aż do skończenia żywota swego.
+$Deo gratias
+
+[Capitulum Nona]
+!Syr 47:11-12
+v. Miał pieczą o ludu swoim i wybawił ji od zatracenia. Który przemógł rozprzestrzenić miasto, który dostąpił chwały w obcowaniu z ludźmi.
+$Deo gratias
+
+[Ant Vespera 3]
+@:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//
+
+[Ant 3]
+@Commune/C4a:Ant 1:s/N\./Grzegorzu/

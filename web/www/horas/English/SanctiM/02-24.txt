@@ -1,16 +1,16 @@
 [Lectio5]
-@Sancti/02-24:Lectio4:s/There .*//s
+@Commune/C1:Lectio4 in 2 loco:s/There .*//s
 
 [Lectio6]
-@Sancti/02-24:Lectio4:s/.* There /There /s s/$/~/
-@Sancti/02-24:Lectio5:s/Let us .*//s
+@Commune/C1:Lectio4 in 2 loco:s/.* There /There /s s/$/~/
+@Commune/C1:Lectio5 in 2 loco:s/Let us .*//s
 
 [Lectio7]
-@Sancti/02-24:Lectio5:s/.* Let us /Let us /s s/$/~/
-@Sancti/02-24:Lectio6:s/So, not .*//s
+@Commune/C1:Lectio5 in 2 loco:s/.* Let us /Let us /s s/$/~/
+@Commune/C1:Lectio6 in 2 loco:s/So, not .*//s
 
 [Lectio8]
-@Sancti/02-24:Lectio6:s/.* So, not /So, not /s
+@Commune/C1:Lectio6 in 2 loco:s/.* So, not /So, not /s
 
 [Lectio9]
 @Sancti/02-24:Lectio7:s/Take .*//s

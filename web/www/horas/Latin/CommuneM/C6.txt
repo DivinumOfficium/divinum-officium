@@ -5,37 +5,76 @@
 _
 @Commune/C6:Responsory Sexta:1-6
 
+[AntMatutinumM]
+Unguéntum effúsum * nomen tuum; ideo adolescéntulæ dilexérunt te nimis;;96
+Pulchra es * et decóra fília Jerúsalem, terríbilis ut castrórum ácies ordináte;;97
+Accínxit * fortitúdine lumbos suos, et roborávit bráchium suum; ideóque lucérna ejus non exstinguétur in sempitérnum;;98
+Média nocte * clamor factus est: Ecce sponsus venit: exíte óbviam ei.;;249;250;251
+
 [Ant Matutinum]
-O quam pulchra * est casta generátio cum claritate!;;8
-Ante torum * hujus Vírginis frequentate nobis dulcia cantica drámatis.;;18
-Revertere, * revertere, Sunamítis; revertere, ut intueámur te.;;23
-Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna.;;44
-Adjuvábit eam * Deus vultu suo: Deus in médio ejus, non commovébitur.;;45
-Aquæ multæ * non potuérunt exstinguere caritátem.;;47
-V. Spécie tua et pulchritúdine tua.
-R. Inténde, próspere procéde, et regna.
-Nigra sum, * sed formosa, fíliæ Jerúsalem; ideo diléxit me Rex, et introduxit me in cubiculum suum.;;84
-Trahe me post te, * in odórem currémus unguentórum tuórum: óleum effusum nomen tuum.;;86
-Veni, Sponsa Christi, * accipe corónam, quam tibi Dóminus præparávit in ætérnum.;;95
-Unguentum effusum * nomen tuum; ideo adulescentulae dilexerunt te nimis;;96
-Pulchra es * et decore filia Jerusalem, terribilis ut castrorum acies ordinate;;97
-Accinxit * fortitudine lumbos suos, et roboravit brachium suum; ideoque lucerna ejus non exstinguetur in sempiternum;;98
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
-Media nocte * clamor factus est: Ecce sponsus venit: exite obviam ei.;;249;250;251
-V. Elégit eam Deus, et præelégit eam.
-R. In tabernáculo suo habitáre facit eam.
+@Commune/C6::1-3
+@Commune/C6::6-8
+@Commune/C6::4-5
+@Commune/C6::11-13 s/95/84/ s/96/86/ s/97/95/
+@:AntMatutinumM:1-3
+@Commune/C6::9-10
+@:AntMatutinumM:4
+@Commune/C6::14-15
+
+[Lectio1]
+@Commune/C6::1-6 s/-31/-28/
 
 [Responsory1]
 @Commune/C6:Responsory10
 
+[Lectio2]
+@Commune/C6:Lectio1:2 s/25-/29-/
+@Commune/C6:Lectio1:7-9 s/-31/-28/
+
+[Lectio3]
+@Commune/C6:Lectio2
+
+[Lectio4]
+@Commune/C6:Lectio3
+
+[Responsory4]
+R. Hæc est Virgo prudens, 
+* Quæ veniénte Sponso accépit óleum in vasis suis, et ornátis lampádibus introívit cum eo ad núptias.
+V. Hæc est Virgo sapiens, et una de número prudéntum.
+R. Quæ veniénte Sponso accépit óleum in vasis suis, et ornátis lampádibus introívit cum eo ad núptias.
+
+[Responsory5]
+@Commune/C6:Responsory4
+
+[Responsory6]
+@Commune/C6:Responsory5
+
+[Responsory7]
+R. Prudéntes vírgines, aptáte vestras lámpades.
+* Ecce sponsus venit, exíte óbviam ei.
+V. Média nocte clamor factus est:
+R. Ecce sponsus venit, exíte óbviam ei.
+
+[Responsory8]
+@Commune/C6:Responsory6
+
 [Responsory9]
-R.br. Simile est regnum caelorum decem virginibus, qui accipientes lampadas suas
-* Exierunt obviam sponso et sponsae
-V. Quinque autem ex eis erunt fatue, et quinque prudentes
-R. Exierunt obviam sponso et sponsae
-&Gloria
-R. Exierunt obviam sponso et sponsae
+@Commune/C6:Responsory7
+
+[Responsory10]
+@Commune/C6:Responsory8
+
+[Responsory11]
+R. Índuit me Dóminus vestiménto salútis, et induménto lætítiæ circúmdedit me, et tamquam sponsam 
+* Decorávit me coróna. 
+V. Quasi sponsum decorátum coróna et quasi sponsam ornátam monílibus suis.
+R. Decorávit me coróna. 
+
+[Responsory12]
+R.br. Símile est regnum cælórum decem virgínibus, qui accipiéntes lámpadas suas
+* Exiérunt óbviam sponso et sponsæ
+V. Quinque autem ex eis erunt fátue, et quinque prudéntes
+R. Exiérunt óbviam sponso et sponsæ
 
 [Capitulum Laudes]
 @Commune/C6
@@ -55,37 +94,20 @@ _
 !Sir 51:13-14
 v. Domine Deus meus, exaltasti super terram habitationem meam, et pro morte~
 defluente deprecata sum. Invocavi Dominum Patrem Domini mei, ut non derelinquat~
-me in die tribulationis meae, et in tempore superborum sine adjutorio.
+me in die tribulationis meæ, et in tempore superborum sine adjutorio.
 $Deo gratias
 
 [Responsory Nona]
 @Commune/C6:Responsory Sexta:8-9
 
-[Lectio31]
+[Lectio3 in 2 loco]
 !Sir 51:13-17
 13 Exaltasti super terram habitationem meam, et pro morte defluente deprecatus~
 sum.
 14 Invocavi Dominum patrem Domini mei, ut non derelinquat me in die~
-tribulationis meae, et in tempore superborum, sine adjutorio.
+tribulationis meæ, et in tempore superborum, sine adjutorio.
 15 Laudabo nomen tuum assidue, et collaudabo illud in confessione: et exaudita~
 est oratio mea,
 16 et liberasti me de perditione, et eripuisti me de tempore iniquo.
 17 Propterea confitebor, et laudem dicam tibi, et benedicam nomini Domini.
 
-[LectioE]
-v. Sequéntia sancti Evangélii secúndum Matthǽum
-!Matt 25:1-13
-25:1 Tunc símile erit regnum cælórum decem virgínibus: quæ accipiéntes lámpades suas exiérunt óbviam sponso et sponsæ.
-25:2 Quinque autem ex eis erant fátuæ, et quinque prudéntes:
-25:3 sed quinque fátuæ, accéptis lampádibus, non sumpsérunt óleum secum:
-25:4 prudéntes vero accepérunt óleum in vasis suis cum lampádibus.
-25:5 Moram autem faciénte sponso, dormitavérunt omnes et dormiérunt.
-25:6 Média autem nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei.
-25:7 Tunc surrexérunt omnes vírgines illæ, et ornavérunt lámpades suas.
-25:8 Fátuæ autem sapiéntibus dixérunt: Date nobis de óleo vestro, quia lámpades nostræ exstinguúntur.
-25:9 Respondérunt prudéntes, dicéntes: Ne forte non suffíciat nobis, et vobis, ite pótius ad vendéntes, et émite vobis.
-25:10 Dum autem irent émere, venit sponsus: et quæ parátæ erant, intravérunt cum eo ad núptias, et clausa est iánua.
-25:11 Novíssime vero véniunt et réliquæ vírgines, dicéntes: Dómine, dómine, áperi nobis.
-25:12 At ille respóndens, ait: Amen dico vobis, néscio vos.
-25:13 Vigiláte ítaque, quia nescítis diem, neque horam.
-$Te decet

@@ -23,7 +23,7 @@ use Time::Local;
 #use DateTime;
 use locale;
 use lib "$Bin/..";
-use DivinumOfficium::Main qw(vernaculars load_versions liturgical_color);
+use DivinumOfficium::Main qw(liturgical_color);
 $error = '';
 $debug = '';
 
@@ -35,8 +35,8 @@ our $missa = 0;
 our @ctext1 = splice(@ctext1, @ctext1);
 our @ctext2 = splice(@ctext2, @ctext2);
 our $officium = 'Cofficium.pl';
-our $version1 = 'Divino Afflatu';
-our $version2 = 'Rubrics 1960';
+our $version1 = '';
+our $version2 = '';
 our $version = '';
 
 #***common variables arrays and hashes
@@ -83,103 +83,52 @@ $q = new CGI;
 
 #get parameters
 getini('horas');    #files, colors
-$setupsave = strictparam('setup');
-$setupsave =~ s/\~24/\"/g;
-
-our ($lang1, $lang2, $expand, $column, $accented);
-our %translate;     #translation of the skeleton label for 2nd language
-our $sanctiname = 'Sancti';
-our $temporaname = 'Tempora';
-our $communename = 'Commune';
-
-#internal script, cookies
-%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
-
-if (!$setupsave) {
-  %setup = %{setupstring($datafolder, '', 'horas.setup')};
-} else {
-  %setup = split(';;;', $setupsave);
-}
-
-if (!$setupsave && !getcookies('horasp', 'parameters')) {
-  setcookies('horasp', 'parameters');
-}
-
-if (!$setupsave && !getcookies('horasgc', 'generalc')) {
-  setcookies('horasgc', 'generalc');
-}
-
+our ($lang1, $lang2, $langc, $expand, $column);
 our $command = strictparam('command');
-our $hora = $command;    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
+our $hora = substr($command,4);    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
 our $browsertime = strictparam('browsertime');
 our $buildscript = '';    #build script
 our $searchvalue = strictparam('searchvalue');
 
 if (!$searchvalue) { $searchvalue = '0'; }
 
-#*** handle different actions
-#after setup
-if ($command =~ /change(.*)/is) {
-  $command = $1;
-  getsetupvalue($command);
-  if ($command =~ /parameters/) { setcookies('horasp', 'parameters'); }
+our %translate;     #translation of the skeleton label for 2nd language
+our $sanctiname = 'Sancti';
+our $temporaname = 'Tempora';
+our $communename = 'Commune';
+
+$setupsave = strictparam('setup');
+loadsetup($setupsave);
+
+if (!$setupsave) {
+  getcookies('horasp', 'parameters');
+  getcookies('horasgc', 'generalc');
 }
-$setup{'parameters'} = clean_setupsave($setup{'parameters'});
-eval($setup{'parameters'});    #$priest, $lang1, colors, sizes
-eval($setup{'generalc'});      #$expand, $version, $lang2
+set_runtime_options('generalc'); #$expand, $version, $lang2
+set_runtime_options('parameters'); # priest, lang1 ... etc
+
+if ($command eq 'changeparameters') { getsetupvalue('parameters'); }
+
+if ($version1 eq $version2) { $version2 = 'Divino Afflatu'; }
+if ($version1 eq $version2) { $version2 = 'Rubrics 1960'; }
+
+setcookies('horasp', 'parameters');
+setcookies('horasgc', 'generalc');
+
+# save parameters
+$setupsave = savesetup(1);
+$setupsave =~ s/\r*\n*//g;
 
 #prepare testmode
 our $testmode = strictparam('testmode');
 if ($testmode !~ /(Season|Saint|Common)/i) { $testmode = 'regular'; }
 our $votive = strictparam('votive');
 $expandnum = strictparam('expandnum');
-$p = strictparam('priest');
 
-if ($p) {
-  $priest = 1;
-  setsetupvalue('parameters', 0, $priest);
-}
-$p = strictparam('psalmvar');
+$only = 0;
 
-if ($p) {
-  $psalmvar = $p;
-  setsetupvalue('parameters', 3, $psalmvar);
-}
-$p = strictparam('screenheight');
-
-if ($p) {
-  $screenheight = $p;
-  setsetupvalue('parametrs', 11, $screenheight);
-}
-
-#expand (all, psalms, nothing, skeleton) parameter
-$flag = 0;
-$p = strictparam('lang2');
-if ($p) { $lang2 = $p; $flag = 1; }
-$p = strictparam('version1');
-if ($p) { $version1 = $p; $flag = 1; }
-$p = strictparam('version2');
-if ($p) { $version2 = $p; $flag = 1; }
-$p = strictparam('expand');
-if ($p) { $expand = $p; $flag = 1; }
-$p = strictparam('accented');
-if ($p) { $accented = $p; $flag = 1; }
-
-if ($flag) {
-  setsetup('generalc', $expand, $version1, $version2, $lang2, $accented);
-  setcookies('horasgc', 'generalc');
-}
-if (!$expand) { $expand = 'psalms'; }
-if (!$version) { $version = 'Divino Afflatu'; }
-if (!$lang2) { $lang2 = 'English'; }
-$only = ($version1 =~ /$version2/) ? 1 : 0;
-
-# save parameters
-$setupsave = printhash(\%setup, 1);
-$setupsave =~ s/\r*\n*//g;
-$setupsave =~ s/\"/\~24/g;
 $version = $version1;
-$lang1 = $lang2;
+$lang1 = $lang2 = $langc;
 setmdir($version);
 precedence();    #fills our hashes et variables
 our $psalmnum1 = 0;
@@ -191,16 +140,12 @@ $daycolor = liturgical_color($dayname[1], $commune);
 build_comment_line();
 
 #prepare main pages
-my $h = $hora;
+my @horas = getdialog('horas');
 
-if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Post|Setup)/i) {
-  $h = " $1";
-} else {
-  $h = '';
+my $title = "Divinum Officium";
+if (($hora =~ /setup/) || (grep { $_ eq $hora } @horas)) {
+  $title .= " $hora";
 }
-$title = "Divinum Officium$h";
-@horas = getdialogcolumn('horas', '~', 0);
-for ($i = 0; $i < 10; $i++) { $hcolor[$i] = 'blue'; }
 
 #$completed = getcookie1('completed');
 #if ($date1 eq gettoday() && $command =~ /pray/i && $completed < 8 &&
@@ -226,23 +171,24 @@ PrintTag
 if ($command =~ /setup(.*)/is) {
   $pmode = 'setup';
   $command = $1;
-  setuptable($command);
+  print setuptable($command, $title);
+  $command = "change" . $command;
 } elsif ($command =~ /pray/) {
   $pmode = 'hora';
   $command =~ s/(pray|change|setup)//ig;
   $title = $command;
-  $hora = $command;
-  if (substr($title, -1) =~ /a/i) { $title .= 'm'; }
-  $background =
-    ($whitebground)
-    ? "BGCOLOR=\"white\""
-    : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
+  $title =~ s/a$/am/;
   $head = ($title =~ /(Ante|Post)/i) ? "$title divinum officium" : "Ad $title";
+  $head =~ s/Ad Vespera.*/Ad Vesperas/i;
+  $headline = setheadline();
   headline($head);
+
+  #eval($setup{'parameters'});
+  $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
   horas($command);
   print << "PrintTag";
 <P ALIGN=CENTER>
-<INPUT TYPE=SUBMIT NAME='button' VALUE='$hora completed' onclick="okbutton();">
+<INPUT TYPE=SUBMIT NAME='button' VALUE='$command persolut.' onclick="okbutton();">
 </P>
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
 <INPUT TYPE=HIDDEN NAME=popup VALUE="">
@@ -286,77 +232,25 @@ PrintTag
 PrintTag
 }
 
-@versions = load_versions($datafolder);
-
 #common widgets for main and hora
 if ($pmode =~ /(main|hora)/i) {
-  if ($votive ne 'C9') {
-    print << "PrintTag";
-<P ALIGN=CENTER><I>
-<A HREF=# onclick="hset('Matutinum');"><FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
-&nbsp;&nbsp;
-<A HREF=# onclick="hset('Laudes');"><FONT COLOR=$hcolor[2]>$horas[2]</FONT></A>
-&nbsp;&nbsp;
-<A HREF=# onclick="hset('Prima');"><FONT COLOR=$hcolor[3]>$horas[3]</FONT></A>
-&nbsp;&nbsp;
-<A HREF=# onclick="hset('Tertia');"><FONT COLOR=$hcolor[4]>$horas[4]</FONT></A>
-&nbsp;&nbsp;
-<A HREF=# onclick="hset('Sexta');"><FONT COLOR=$hcolor[5]>$horas[5]</FONT></A>
-&nbsp;&nbsp;
-<A HREF=# onclick="hset('Nona');"><FONT COLOR=$hcolor[6]>$horas[6]</FONT></A>
-&nbsp;&nbsp;
-<A HREF=# onclick="hset('Vespera');"><FONT COLOR=$hcolor[7]>$horas[7]</FONT></A>
-&nbsp;&nbsp;
-<A HREF=# onclick="hset('Completorium');"><FONT COLOR=$hcolor[8]>$horas[8]</FONT></A>
-</I></P>
-PrintTag
-  } else {
-    print << "PrintTag";
-<P ALIGN=CENTER><I>
-<A HREF=# onclick="hset('Matutinum');"><FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
-&nbsp;&nbsp;
-<A HREF=# onclick="hset('Laudes');"><FONT COLOR=$hcolor[2]>$horas[2]</FONT></A>
-&nbsp;&nbsp;
-<A HREF=# onclick="hset('Vespera');"><FONT COLOR=$hcolor[7]>$horas[7]</FONT></A>
-&nbsp;&nbsp;
-</I></P>
-PrintTag
-  }
-  print "<P ALIGN=CENTER>";
-  print option_selector("Expand", "parchange();", $expand, qw(all psalms)); # old qw(all psalms nothing skeleton));
-  print option_selector("Version 1", "parchange();", $version1, @versions );
-  print option_selector("Version 2", "parchange();", $version2, @versions );
+  print "<P ALIGN=CENTER><I>";
+  print horas_menu($completed, $date1, $version, $lang2, $votive, $testmode);
+  print "</I></P>\n";
 
-  #$testmode = 'Regular' unless $testmode;
-  #if ($savesetup > 1) {
-  #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal Season Saint Common));
-  #} else {
-  #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
-  #}
-  
-  print option_selector("lang2", "parchange();", $lang2, ('Latin', vernaculars($datafolder)));
-  print option_selector("Votive", "parchange();", $votive, ('Hodie;', 'Dedicatio;C8', 'Defunctorum;C9', 'Parvum B.M.V.;C12') );
-  print << "PrintTag";
-<BR>
-<P ALIGN=CENTER>
-<A HREF=# onclick="callbrevi(\'$date1\')">One version</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="pset('parameters')">Options</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="$htmlurl/Help/versions.html" TARGET="_NEW">Versions</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="$htmlurl/Help/credits.html" TARGET="_NEW">Credits</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="$htmlurl/Help/download.html" TARGET="_NEW">Download</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="$htmlurl/Help/rubrics.html" TARGET="_NEW">Rubrics</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="$htmlurl/Help/technical.html" TARGET="_NEW">Technical</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="$htmlurl/Help/help.html" TARGET="_NEW">Help</A>
-</FONT>
-</P>
-PrintTag
+  $votive ||= 'Hodie';
+  print "<P ALIGN=CENTER>";
+  print selectables('generalc');
+  print "</P>\n";
+
+  print "<P ALIGN=CENTER>";
+  print qq(\n<A HREF=# onclick="callbrevi(\'$date1\')">One version</A>\n);
+  print '&nbsp;' x 4;
+  print qq(\n<A HREF=# onclick="pset('parameters')">Options</A>\n);
+  print '&nbsp;' x 4;
+  print "\n";
+  print bottom_links_menu();
+  print "</P>\n";
 
   if ($building && $buildscript) {
     $buildscript =~ s/[\n]+/\n/g;
@@ -381,20 +275,10 @@ print << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
 <INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
-<INPUT TYPE=HIDDEN NAME=accented VALUE="$accented">
 <INPUT TYPE=HIDDEN NAME=compare VALUE=1>
 </FORM>
 </BODY></HTML>
 PrintTag
-
-sub liturgical_color2 {
-  $_ = shift;
-  my($commune) = @_;
-  return 'blue' if ($commune && $commune =~ /C1[0-9]/);
-  return 'black' if (/(Quattuor|Feria|Vigilia)/i);
-  return 'red' if (/duplex/i);
-  return 'grey';
-}
 
 #*** hedline($head) prints headlibe for main and pray
 sub headline {
@@ -403,7 +287,7 @@ sub headline {
   $version = $version1;
   setmdir($version);
   precedence();
-  $daycolor = liturgical_color2($dayname[1], $commune);
+  $daycolor = liturgical_color($dayname[1], $commune);
   build_comment_line();
   $headline = setheadline();
   $headline =~ s{!(.*)}{$1</FONT>}s;
@@ -415,7 +299,7 @@ sub headline {
     $version = $version2;
     setmdir($version);
     precedence();
-    $daycolor = liturgical_color2($dayname[1], $commune);
+    $daycolor = liturgical_color($dayname[1], $commune);
     build_comment_line();
     $headline = setheadline();
     $headline =~ s{!(.*)}{$1</FONT>}s;

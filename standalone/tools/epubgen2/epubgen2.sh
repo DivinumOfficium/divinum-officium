@@ -169,7 +169,11 @@ then
 	echo "Output path does not exist or is not a directory: $EPUBDIR" >&2; exit 1
 fi
 
-
+#handle the case when "from" year is greater than "to" year
+#(happens when the script is invoked only with the -y parameter without -t)
+if ! [[ $YEAR_FROM -lt $YEAR_TO ]] ; then
+YEAR_TO=$YEAR_FROM
+fi
 
 #################################################################################################################
 #  auxiliary functions (iteration and formating)

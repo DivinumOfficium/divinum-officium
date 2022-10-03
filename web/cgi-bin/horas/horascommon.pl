@@ -168,7 +168,7 @@ sub checkfile {
 
 #*** getrank() loads files from tempora and sancti
 sub getrank {
-  my $c = $dialog{'communes'};
+  my $c = getdialog('communes');
   $c =~ s/\n//sg;
   %communesname = split(',', $c);
   $dayname[0] =~ s/\s*$//g;
@@ -713,7 +713,9 @@ sub getrank {
         $commemoratio = $cname;
         $marian_commem = ($crank[3] =~ /C1[0-9]/);
       }
-    } elsif ($winner =~ /sancti/i && $trank[2] && $trank[2] > 1 && $trank[2] >= $crank[2] && $rank < 7) {
+    } elsif ($winner =~ /sancti/i && $trank[2] && $trank[2] > 1 && $trank[2] >= $crank[2] && $rank < 7
+      && !($version =~ /divino/i && $winner =~ /07-01/ && $tname =~ /Pent03-5/) # github #2950
+      ) {
       if ($hora !~ /Completorium/i && $trank[0] && $winner{Rule} !~ /no commemoratio/i) {
         $dayname[2] = "Commemoratio: $trank[0]";
       }
@@ -738,20 +740,19 @@ sub getrank {
       $dayname[2] = '';
       $commemoratio = '';
     }
-    %w = %{officestring($datafolder, 'Latin', $winner)};
 
-    if ($w{'Commemoratio 2'} && !$dayname[2]) {
-      ($_) = split(/\n/,$w{'Commemoratio 2'},2);
+    if (!$dayname[2]) {
+      ($_) = split(/\n/, $winner{'Commemoratio 2'} || $winner{'Commemoratio'});
       $dayname[2] = "Commemoratio: $_" if (s/^!Commemoratio //);
     }
 
     if (($hora =~ /matutinum/i || (!$dayname[2] && $hora !~ /Vespera|Completorium/i)) && $rank < 7 && $trank[0]) {
       my %scrip = %{officestring($datafolder, 'Latin', $tname)};
 
-      if (!exists($w{"Lectio1"})
+      if (!exists($winner{"Lectio1"})
         && exists($scrip{Lectio1})
         && $scrip{Lectio1} !~ /evangelii/i
-        && ($w{Rank} !~ /\;\;ex / || ($version =~ /trident/i && $w{Rank} !~ /\;\;(vide|ex) /i)))
+        && ($winner{Rank} !~ /\;\;ex / || ($version =~ /trident/i && $winner{Rank} !~ /\;\;(vide|ex) /i)))
       {
         $dayname[2] = "Scriptura: $trank[0]";
       } else {
@@ -1003,6 +1004,7 @@ sub gettoday {
 sub precedence {
   $winner = $commemoratio = $commune = $scriptura = $commemoratio1 = '';
   %winner = %commemoratio = %commune = %scriptura = {};
+  %winner2 = %commemoratio2 = %commune2 = %scriptura2 = {};
 
   #get date
   $dat1 = shift;
@@ -1570,6 +1572,10 @@ sub setheadline {
       $rankname = 'Dies Octavæ I. classis';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $winner =~ /C10/) {
       $rankname = 'Simplex';
+    } elsif ($version =~ /(1570|1910|Divino|1955)/ && $winner =~ /Quadp3-3/) {
+      $rankname = 'Feria privilegiata';
+    } elsif ($version =~ /(1570|1910|Divino|1955)/ && $winner =~ /Pasc6-5/) {
+      $rankname = 'Semiduplex';
     } elsif ($version =~ /1960|Newcal|Monastic/i && $winner =~ /Pasc6-6/) {
       $rankname = 'I. classis';
     } elsif ($version =~ /1960|Newcal/i && $winner =~ /Pasc5-3/) {
@@ -1787,8 +1793,7 @@ sub nooctnat {
 sub spell_var {
   my $t = shift;
 
-  if (our $version =~ /1960/) {
-
+  if (our $version =~ /1960|Praedicatorum|Newcalendar|Monastic/) {
     # substitute i for j
     # but not in html tags!
     my @parts = split(/(<[^<>]*>)/, $t);
@@ -1797,6 +1802,7 @@ sub spell_var {
       next if /^</;
       tr/Jj/Ii/;
       s/H\-Iesu/H-Jesu/g;
+      s/er eúmdem/er eúndem/g;
     }
     $t = join('', @parts);
   } else {

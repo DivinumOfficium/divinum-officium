@@ -20,8 +20,15 @@ $a = 1;
 # resolves the references (formatting characters, prayers hash references and subs)
 #and prints the result
 sub horas {
-  $command = shift;
+  my $command = shift;
   $hora = $command;
+  my $head = "Ad $command";
+  $head =~ s/a$/am/;
+  if ($hora =~ /vesper/i) {
+    $hora = 'Vespera';
+    $head = 'Ad Vesperas';
+  }
+  print "<H2 ID='${hora}top'>$head</H2>\n" if ($0 !~ /Cofficium/);
   our $canticum = 0;
   our $reciteindex = 0;
   our $recitelimit = 0;
@@ -39,7 +46,6 @@ sub horas {
   if ($Ck) { $version = $version2; setmdir($version); precedence(); }
   @script2 = getordinarium($lang2, $command);
   @script2 = specials(\@script2, $lang2);
-  $expandind = 0;
   if (!$Tk && !$Hk) { $expandnum = strictparam('expandnum'); }
   table_start();
   $ind1 = $ind2 = 0;
@@ -133,15 +139,7 @@ sub resolve_refs {
   my @t = split("\n", $t);
 
   #handles expanding for skeleton
-  if ($t[0] =~ /#/) {
-    if ($expandind == $expandnum) {
-      $expandflag = 1;
-    } else {
-      $expandflag = 0;
-    }
-  }
-
-  if ($expand =~ /skeleton/ && !$expandflag) {
+  if ($expand =~ /skeleton/ && $expandind != $expandnum) {
     if ($t[0] =~ /\#/) {
       return setlink($t[0], $expandind, $lang);
     } else {
@@ -182,9 +180,6 @@ sub resolve_refs {
       }    #for special chars
     }
 
-    #cross
-    $line = setcross($line);
-
     # add dot if missing in Antiphona
     $line =~ s/(\w)$/$&./ if ($line =~ /^\s*Ant\./);
 
@@ -200,6 +195,9 @@ sub resolve_refs {
       }
       $line = setfont($redfont, $h) . $l;
     }
+
+    #cross
+    $line = setcross($line);
 
     #small omitted title
     if ($line =~ /^\s*\!\!\!(.*)/) {
@@ -219,7 +217,9 @@ sub resolve_refs {
     #red line
     elsif ($line =~ /^\s*\!(.*)/) {
       $l = $1;
-      $line = setfont($redfont, $l);
+      my $suffix = '';
+      if ($l =~ s/(\{[^:].*?\})//) { $suffix = setfont($smallblack, $1); }
+      $line = setfont($redfont, $l) . " $suffix\n";
     }
     $line =~ s{/:(.*?):/}{setfont($smallfont, $1)}e;
 
@@ -448,8 +448,8 @@ sub psalm : ScriptFunc {
   if ($num =~ /^-(.*)/) {
     $num = $1;
 
-    if ( ($version =~ /Trident/i && $num =~ /(62|148|149)/)
-      || ($version =~ /Monastic/i && $num =~ /(115|148|149)/))
+      if ( ($version =~ /Trident/i && $num =~ /(62|148|149)/)     # Tridentine Laudes: Pss. 62/66 & 148/149/150 under 1 gloria
+        || ($version =~ /Monastic/i && $num =~ /(115|148|149)/))  # Monastic Vespers: Pss. 115/116 & 148/149/150 under 1 gloria
     {
       $nogloria = 1;
     }
@@ -519,6 +519,7 @@ sub psalm : ScriptFunc {
 
   if (@lines) {
     my $first = ($antline) ? 1 : 0;
+    my $initial = $nonumbers;
 
     foreach $line (@lines) {
 
@@ -536,10 +537,10 @@ sub psalm : ScriptFunc {
       }
       if ($v < $v1 && $v > 0) { next; }
       if ($v > $v2) { last; }
-      $lnum = '';
+      my $lnum = '';
 
       if ($line =~ /^([0-9]*[\:]*[0-9]+)(.*)/) {
-        $lnum = setfont($smallfont, $1);
+        $lnum = setfont($smallfont, $1) unless ($nonumbers);
         $line = $2;
       }
       my $rest;
@@ -551,9 +552,14 @@ sub psalm : ScriptFunc {
         $this =~ s/:\d+-\d+\)/:$v1-$v2)/ if ($v2 != 1000);
         $before =~ s/^\s*([a-z])/uc($1)/ei;
         $line = $before . setfont($smallfont, ($this));
+        $initial = 0 if ($rest);
       } else {
         $rest = $line;
         $line = '';
+        if ($initial) {
+          $lnum = "v. ";
+          $initial = 0;
+        }
       }
       $rest =~ s/[ ]*//;
 
@@ -775,7 +781,7 @@ sub setlink {
   my $name = shift;
   my $ind = shift;
   my $lang = shift;
-  my $disabled = ($name =~ /(omit|elmarad)/i) ? 'DISABLED' : '';
+  my $disabled = ($name =~ $omit_regexp) ? 'DISABLED' : '';
   my $smallflag = ($name =~ /(ante|post)/i) ? 1 : 0;
 
   $name =~ s/\s*$//;
@@ -987,19 +993,30 @@ sub canticum : ScriptFunc {
 
 sub Divinum_auxilium : ScriptFunc {
   my $lang = shift;
-  my $text = "V. " . translate("Divinum auxilium", $lang);
-  $text =~ s/\n.*\. /\n/ unless ($version =~ /Monastic/i);
-  $text =~ s/\n/\nR. /;
-  return $text;
+  my @text = split(/\n/,translate("Divinum auxilium", $lang));
+  $text[-2] = "V. $text[-2]";
+  $text[-1] =~ s/.*\. // unless ($version =~ /Monastic/i); # contract resp. "Et cum fratribus… " to "Amen." for Roman
+  $text[-1] = "R. $text[-1]";
+  join("\n", @text);
+}
+
+sub Domine_labia : ScriptFunc {
+  my $lang = shift;
+  my $text = $prayers{$lang}{"Domine labia"};
+  if ($version =~ /monastic/i) { # triple times with one cross sign
+    $text .= "\n$text\n$text";
+    $text =~ s/\+\+/$&++/;
+    $text =~ s/\+\+ / /g;
+  }
+  $text;
 }
 
 #*** martyrologium($lang)
 #returns the text of the martyrologium for the day
 sub martyrologium : ScriptFunc {
   my $lang = shift;
-  my $t = setfont($largefont, "Martyrologium ") . setfont($smallblack, "(anticip.)") . "\n_\n";
+  my $t = setfont($largefont, "Martyrologium ") . setfont($smallblack, "(anticip.)") . "\n";
 
-  #<FONT SIZE=1>(anticipated)</FONT>\n_\n";
   my $a = getweek(1);
   my @a = split('=', $a);
   $a = "$a[0]-$nextdayofweek";
@@ -1213,11 +1230,11 @@ sub special : ScriptFunc {
 sub getordinarium {
   my $lang = shift;
   my $command = shift;
+  $command =~ s/Vesperae/Vespera/;
   my @script = ();
   my $suffix = "";
-  if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) { $suffix .= "e"; }
+  if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) { $suffix .= "e"; } # for Epiphanias
   if ($version =~ /(1955|1960|Newcal)/) { $suffix .= "1960"; }
-  elsif ($version =~ /trident/i && $hora =~ /(laudes|vespera)/i) { $suffix .= "Trid"; }
   elsif ($version =~ /Monastic/i) { $suffix .= "M"; }
   elsif ($version =~ /Ordo Praedicatorum/i) { $suffix .= "OP"; }
   my $fname = checkfile($lang, "Ordinarium/$command$suffix.txt");

@@ -23,7 +23,7 @@ use Time::Local;
 #use DateTime;
 use locale;
 use lib "$Bin/..";
-use DivinumOfficium::Main qw(load_versions liturgical_color);
+use DivinumOfficium::Main qw(liturgical_color);
 $error = '';
 $debug = '';
 
@@ -59,6 +59,7 @@ require "$Bin/do_io.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
+require "$Bin/setup.pl";
 
 sub kalendar_entry {
   my($date,$ver,$compare) = @_;
@@ -150,39 +151,36 @@ my $date_arg = $officium =~ /Pofficium/? 'date1': 'date';
 my $officium_name = $officium =~ /missa/ ? 'missa' : 'horas';
 getini("horas");    #files, colors
 
-$setupsave = strictparam('setup');
-$setupsave =~ s/\~24/\"/g;
+# $datafolder =~ s/horas$/missa/ if ($officium_name =~ /missa/);
+
 $date1 = strictparam('date1');
 $browsertime = strictparam('browsertime');
 $Readings = strictparam('readings');
 
-#internal script, cookies
-%dialog = %{setupstring($datafolder, '', "$officium_name.dialog")};
+$setupsave = strictparam('setup');
+loadsetup($setupsave);
 
-if (!$setupsave) {
-  %setup = %{setupstring($datafolder, '', "$officium_name.setup")};
-} else {
-  %setup = split(';;;', $setupsave);
-}
-
-if (!$setupsave && !getcookies("${officium_name}p", 'parameters')) { setcookies("${officium_name}p", 'parameters'); }
 $ckname = ($officium_name =~ /officium/) ? "${officium_name}go" : ($Ck) ? "${officium_name}gc" : "${officium_name}g";
 $csname = ($Ck) ? 'generalc' : 'general';
-if (!$setupsave && !getcookies($ckname, $csname)) { setcookies($ckname, $csname); }
-$setup{'parameters'} = clean_setupsave($setup{'parameters'});
-eval($setup{'parameters'});
-eval($setup{"$csname"});
+
+if (!$setupsave) {
+  getcookies("${officium_name}p", 'parameters');
+  getcookies($ckname, $csname);
+}
+
+set_runtime_options($csname); #$expand, $version, $lang2
+set_runtime_options('parameters'); # priest, lang1 ... etc
 
 #*** saves parameters
-$setupsave = printhash(\%setup, 1);
+$setupsave = savesetup(1);
 $setupsave =~ s/\r*\n*//g;
-$setupsave =~ s/\"/\~24/g;
+
 $hora = '';
 $odate = $date1;
 
 $command = strictparam('command');
 if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Past)/i) {
-  $command = "pray$1";
+  $command = "pray" . ($compare ? $1 : $command); # Cofficium can't use Plures
 }
 
 
@@ -248,7 +246,7 @@ for ($i = 1; $i <= 12; $i++) {
 print << "PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=$border WIDTH=90% CELLPADDING=3>
-<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH><TR>
+<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH></TR>
 PrintTag
 $to = $monthlength[$kmonth - 1];
 if ($kmonth == 2 && leapyear($kyear)) { $to++; }
@@ -264,37 +262,21 @@ for ($cday = 1; $cday <= $to; $cday++) {
   my $c1 = join('<BR>', @c1);
   my $c2 = join('<BR>', @c2);
   print << "PrintTag";
-<TR><TD ALIGN=CENTER><A HREF=# onclick="callbrevi('$date1');">$d1</FONT></A></TD>
+<TR><TD ALIGN=CENTER><A HREF=# onclick="callbrevi('$date1');">$d1</A></TD>
 <TD>$c1</TD>
 <TD>$c2</TD>
-<TD ALIGN=CENTER>$daynames[$dayofweek]</FONT></TD>
+<TD ALIGN=CENTER>$daynames[$dayofweek]</TD>
 </TR>
 PrintTag
 }
 print << "PrintTag";
 </TABLE><BR>
 PrintTag
-my @versions = load_versions($datafolder);
-print option_selector("Version1", "document.forms[0].submit();", $ver[0], @versions);
+print htmlInput('version1', $ver[0], 'options', 'versions', , "document.forms[0].submit()");
 if ($compare) {
-  print option_selector("Version2", "document.forms[0].submit();", $ver[1], @versions);
+  print htmlInput('version2', $ver[1], 'options', 'versions', , "document.forms[0].submit()");
 }
-print << "PrintTag";
-<P ALIGN=CENTER>
-<A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/credits.html" TARGET="_BLANK">Credits</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/download.html" TARGET="_BLANK">Download</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/technical.html" TARGET="_BLANK">Technical</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/help.html" TARGET="_BLANK">Help</A>
-</FONT>
-</P>
-PrintTag
+print "<P ALIGN=CENTER>\n" . bottom_links_menu() . "</P>\n";
 
 # $testmode = 'Regular' unless $testmode;
 # print option_selector("testmode", "document.forms[0].submit();", $testmode, qw(Regular Seasonal));
