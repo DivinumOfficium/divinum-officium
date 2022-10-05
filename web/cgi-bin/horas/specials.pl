@@ -1627,7 +1627,7 @@ sub getcommemoratio {
   my $w = "!" . &translate("Commemoratio", $lang);
   $a =~ s/\s*\*\s*/ / unless ($version =~ /Monastic/i);
   $o =~ s/^(?:v. )?/v. /;
-  $w .= " $rank[0]\nAnt. $a\n_\n$v\n_\n\$Oremus\n$o\n";
+  $w .= " $rank[0]\nAnt. $a\n_\n$v\n_\n" . $prayers{$lang}{"Oremus"}. "\n$o\n";
   return $w;
 }
 
