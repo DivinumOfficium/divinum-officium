@@ -191,14 +191,23 @@ v. Orémus.
 [Te decet]
 v. Te decet laus, + te decet hymnus: tibi glória Deo Patri, et Fílio, cum Spíritu Sancto in sǽcula sæculórum. Amen.
 
-[MLitany]
+[Kyrie]
 v. Kýrie, eléison. Christe, eléison. Kýrie, eléison.
+
+[MLitany]
+$Kyrie
 &pater_noster
 
 [MLitany2]
-v. Kýrie, eléison. Christe, eléison. Kýrie, eléison.
-!« Pater Noster » dicitur secreto usque ad « Et ne nos indúcas in tentatiónem: »
+$Kyrie
+/: « Pater Noster » dicitur secreto usque ad « Et ne nos indúcas in tentatiónem: » :/
 &pater_noster
+
+[Divinum auxilium]
+(rubrica Monastica)
+/:Si descendendum sit a choro, concluditur dicendo.:/
+Divínum auxílium + máneat semper nobíscum.
+Et cum frátribus nostris abséntibus. Amen.
 
 [Alleluia Simplex]
 , allelúja.
