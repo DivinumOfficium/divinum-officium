@@ -794,6 +794,10 @@ sub setlink {
   }
   my $t = linkcode($name, $ind, $lang, $disabled);
 
+  if ($name =~ /Alleluia|Oremus|Deo gratias/i) {
+    $t = '';
+  }
+
   if ($name =~ /(Deus in adjutorium|Indulgentiam|Te decet)/i) {
     $suffix = " + $suffix";
   }

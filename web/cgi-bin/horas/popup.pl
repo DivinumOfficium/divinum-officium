@@ -96,7 +96,6 @@ $title =~ s/[\$\&]//;
 $expand = 'all';
 if ($popup =~ /\&/) { $popup =~ s /\s/\_/g; }
 cache_prayers();
-print STDERR "\$popup = $popup\n";
 $text = resolve_refs($popup, $lang1);
 $t = length($text);
 
