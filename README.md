@@ -7,7 +7,7 @@ This document is intended for people wishing to contribute to the project. To
 pray the office, please [visit the website](http://www.divinumofficium.com/).
 
 To generate standalone files (e.g. for electronic eBook readers) see
-[How to generate Divine Office files](standalone\tools\epubgen2\README.md).
+[How to generate Divine Office files](standalone/tools/epubgen2/README.md).
 
 ## Contributing to the project
 
