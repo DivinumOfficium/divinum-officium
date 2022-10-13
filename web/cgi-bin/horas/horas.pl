@@ -785,6 +785,7 @@ sub setlink {
   my $smallflag = ($name =~ /(ante|post)/i) ? 1 : 0;
 
   $name =~ s/\s*$//;
+  my $item = $name;
   my $suffix = '';
 
   if ($name =~ /\{.*?\}/) {
@@ -823,7 +824,9 @@ sub setlink {
     $after = $2;
   }
 
-  if ($disabled || $smallflag) {
+  if ($item =~ /Deo gratias/) {
+    return $name;
+  } elsif ($disabled || $smallflag) {
     $name = setfont($smallblack, $name);
   } elsif ($expand =~ /skeleton/i) {
     $name = setfont($largefont, substr($name, 0, 1)) . setfont($redfont, substr($name, 1));

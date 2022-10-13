@@ -23,7 +23,7 @@ Glória
 Réquiem
 
 [Alleluia]
-Allelúja
+Allelúja.
 
 [Laus tibi]
 Laus tibi, Dómine, Rex ætérnæ glóriæ.
@@ -37,8 +37,17 @@ Dómine, exáudi
 [Confiteor]
 Confíteor
 
+[ConfiteorM]
+@:Confiteor
+
+[ConfiteorOP]
+@:Confiteor
+
 [Misereatur]
 Misereátur
+
+[MisereaturOP]
+@:Misereatur
 
 [Indulgentiam]
 Indulgéntiam
@@ -98,7 +107,7 @@ Sacrosanctća
 Te Deum
 
 [Deo gratias]
-Deo grátias
+R. Deo grátias.
 
 [Lectio]
 Lectio
