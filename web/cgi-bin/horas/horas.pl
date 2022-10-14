@@ -444,6 +444,7 @@ sub psalm : ScriptFunc {
     }
   }
   my $nogloria = 0;
+  my $canticlef = 230 < $num && $num < 234;
 
   if ($num =~ /^-(.*)/) {
     $num = $1;
@@ -454,6 +455,8 @@ sub psalm : ScriptFunc {
       $nogloria = 1;
     }
   }
+
+  $nogloria ||= $canticlef;
 
   #$psalmfolder = ($accented =~ /plain/i) ? 'psalms' : 'psalms1';
   $psalmfolder = 'psalms1';
@@ -500,6 +503,10 @@ sub psalm : ScriptFunc {
 
     if ($line =~ /\s*[(]?(.*?)\s+[*]/i) {
       $t = setfont($redfont, $1) . settone(1) . $pnum;
+    }
+
+    if ($canticlef) {
+      $t = setfont($redfont, shift(@lines));
     }
   }
   if (!$t) { $t = setfont($redfont, "$str $num") . settone(1) . $pnum; }
@@ -973,29 +980,7 @@ sub canticum : ScriptFunc {
   my $psnum = shift;
   my $lang = shift;
   $psnum += 230;
-  my $w = '';
-
-  #$psalmfolder = ($accented =~ /plain/i) ? 'psalms' : 'psalms1';
-  $psalmfolder = 'psalms1';
-  $psalmfolder = 'PiusXII' if ($lang eq 'Latin' && $psalmvar);
-  my $fname = checkfile($lang, "$psalmfolder/Psalm$psnum.txt");
-
-  if (@w = do_read($fname)) {
-    $w[0] =~ s/\!//;
-    $w .= setfont($redfont, shift(@w)) . settone(2) . "\n";
-
-    foreach $item (@w) {
-      if ($item =~ /^([0-9]+\:)*([0-9]+) (.*)/) {
-        my $rest = $3;
-        my $num = "$1$2";
-        $item = setfont($smallfont, $num) . " $rest";
-      }
-      $w .= "$item\n";
-    }
-    return $w;
-  } else {
-    return "$w $datafolder/$lang/$psalmfolder/Psalm$psnum.txt not found";
-  }
+  psalm($psnum, $lang);
 }
 
 sub Divinum_auxilium : ScriptFunc {
