@@ -274,7 +274,7 @@ sub setupstring($$$%) {
     # Iterate over all sections, resolving inclusions. We make sure we
     # do [Rule] first, if it exists: we need to use the rule to work
     # out some subsequent substitutions.
-    foreach my $key ((exists $sections{'Rule'}) ? 'Rule' : (), keys %sections) {
+    foreach my $key ((exists $sections{'Rule'}) ? 'Rule' : (), sort(keys(%sections))) {
       if ($key !~ /Commemoratio|LectioE/i || $missa) {
         1 while $sections{$key} =~ s/$inclusionregex/
           get_loadtime_inclusion(\%sections, $basedir, $lang,
