@@ -444,6 +444,7 @@ sub psalm : ScriptFunc {
     }
   }
   my $nogloria = 0;
+  my $canticlef = 230 < $num && $num < 234;
 
   if ($num =~ /^-(.*)/) {
     $num = $1;
@@ -454,6 +455,8 @@ sub psalm : ScriptFunc {
       $nogloria = 1;
     }
   }
+
+  $nogloria ||= $canticlef;
 
   #$psalmfolder = ($accented =~ /plain/i) ? 'psalms' : 'psalms1';
   $psalmfolder = 'psalms1';
@@ -480,115 +483,102 @@ sub psalm : ScriptFunc {
   if ($version =~ /1960|Newcal/ && $num !~ /\(/ && $dayname[0] =~ /Nat/i) { $fname =~ s/Psalm88/Psalm88r/; }
   if ($version =~ /1960|Newcal/ && $num !~ /\(/ && $month == 8 && $day == 6) { $fname =~ s/Psalm88/Psalm88a/; }
   $fname = checkfile($lang, $fname);
-  # load psalms
-  @lines = do_read($fname);
-  my $str = 'Psalmus';
-  $str = translate($str, $lang);
-  my $pnum;
 
-  if ($column == 1) {
-    $psalmnum1++;
-    $pnum = setfont($smallblack, " [" . $psalmnum1 . "]");
-  } else {
-    $psalmnum2++;
-    $pnum = setfont($smallblack, " [" . $psalmnum2 . "]");
+  # load psalm
+  my(@lines) = do_read($fname);
+  unless (@lines > 0) {
+    return "$t$datafolder/$lang/$psalmfolder/Psalm$psnum.txt not found";
   }
-  my $t = '';
-
-  if ($num > 150 && $num < 300 && @lines) {
-    $line = $lines[0];
-
-    if ($line =~ /\s*[(]?(.*?)\s+[*]/i) {
-      $t = setfont($redfont, $1) . settone(1) . $pnum;
-    }
-  }
-  if (!$t) { $t = setfont($redfont, "$str $num") . settone(1) . $pnum; }
-  my $v1 = $v = 0;
-  my $v2 = 1000;
 
   # Extract limits of the division of the psalm.
-  if ($num =~ /\((.*?)\)/) {
-    my @v = split('-', $1);
-    $v1 = $v[0];
-    $v2 = $v[1];
+  my $v1 = $v = 0;
+  my $v2 = 1000;
+  if ($num =~ /\((?<v1>\d+)-(?<v2>\d+)\)/) { ($v1, $v2) = ($+{v1}, $+{v2}); }
+
+  # Prepare title and source if canticle
+  my $title = translate('Psalmus', $lang) . " $num";
+  my $source;
+
+  if ($num > 150 && $num < 300 && @lines) {
+    shift(@lines) =~ /\(?(?<title>.*?) \* (?<source>.*?)\)?\s*$/;
+    ($title, $source) = ($+{title}, $+{source});
+    if ($v1) { $source =~ s/:\K.*/"$v1-$v2"/e; }
   }
+
+  my $t = setfont($redfont, $title) . settone(1);
+  if (!$canticlef) { $t .= setfont($smallblack, " [" . (($column == 1) ? ++$psalmnum1 : ++$psalmnum2 ). "]"); }
+  if ($source) { $t .= "\n!$source"; }
 
   # Flag to signal that dagger should be prepended to current line.
   my $prepend_dagger = 0;
   my $formatted_antline;
+  my $first = $antline;
+  my $initial = $nonumbers;
 
-  if (@lines) {
-    my $first = ($antline) ? 1 : 0;
-    my $initial = $nonumbers;
+  foreach my $line (@lines) {
 
-    foreach $line (@lines) {
-
-      # Interleave antiphon into the psalm "Venite exsultemus".
-      if ($psnum == 94 && $line =~ /^\s*\$ant\s*$/) {
-        $formatted_antline ||= setfont($redfont, 'Ant.') . " $antline";
-        $t .= "\n$formatted_antline";
-        next;
-      }
-
-      if ($line =~ /^\s*([0-9]+)\:([0-9]+)/) {
-        $v = $2;
-      } elsif ($line =~ /^\s*([0-9]+)/) {
-        $v = $1;
-      }
-      if ($v < $v1 && $v > 0) { next; }
-      if ($v > $v2) { last; }
-      my $lnum = '';
-
-      if ($line =~ /^([0-9]*[\:]*[0-9]+)(.*)/) {
-        $lnum = setfont($smallfont, $1) unless ($nonumbers);
-        $line = $2;
-      }
-      my $rest;
-
-      if ($line =~ /(.*?)(\(.*?\))(.*)/) {
-        $rest = $3;
-        $before = $1;
-        $this = $2;
-        $this =~ s/:\d+-\d+\)/:$v1-$v2)/ if ($v2 != 1000);
-        $before =~ s/^\s*([a-z])/uc($1)/ei;
-        $line = $before . setfont($smallfont, ($this));
-        $initial = 0 if ($rest);
-      } else {
-        $rest = $line;
-        $line = '';
-        if ($initial) {
-          $lnum = "v. ";
-          $initial = 0;
-        }
-      }
-      $rest =~ s/[ ]*//;
-
-      if ($prepend_dagger) {
-        $rest = "\x{2021} $rest";
-        $prepend_dagger = 0;
-      }
-
-      if ($first && $rest && $rest !~ /^\s*$/) {
-        $rest = getantcross($rest, $antline);
-
-        # Put dagger at start of second line if it would otherwise
-        # have come at the end of the first.
-        $prepend_dagger = ($rest =~ s/\x{2021}\s*$//);
-        $first = 0;
-      }
-      $rest =~ s/\x{2021}/setfont($smallfont, "\x{2021}")/e;
-      if ($lang =~ /magyar/i) { $rest = setasterisk($rest); }
-      $rest =~ s/^\s*([a-z])/uc($1)/ei;
-      $t .= "\n$lnum $line $rest";
+    # Interleave antiphon into the psalm "Venite exsultemus".
+    if ($psnum == 94 && $line =~ /^\s*\$ant\s*$/) {
+      $formatted_antline ||= setfont($redfont, 'Ant.') . " $antline";
+      $t .= "\n$formatted_antline";
+      next;
     }
-    $t .= "\n";
-    if ($version eq "Monastic" && $num == 129 && $hora eq 'Prima') { $t .= $prayers{$lang}->{Requiem}; }
-    elsif ($num != 210 && !$nogloria) { $t .= "\&Gloria\n"; }
-    $t .= settone(0);
-    return $t;
-  } else {
-    return "$t$datafolder/$lang/$psalmfolder/Psalm$psnum.txt not found";
+
+    if ($line =~ /^\s*([0-9]+)\:([0-9]+)/) {
+      $v = $2;
+    } elsif ($line =~ /^\s*([0-9]+)/) {
+      $v = $1;
+    }
+    if ($v < $v1 && $v > 0) { next; }
+    if ($v > $v2) { last; }
+    my $lnum = '';
+
+    if ($line =~ /^([0-9]*[\:]*[0-9]+)(.*)/) {
+      $lnum = setfont($smallfont, $1) unless ($nonumbers);
+      $line = $2;
+    }
+    my $rest;
+
+    if ($line =~ /(.*?)(\(.*?\))(.*)/) {
+      $rest = $3;
+      $before = $1;
+      $this = $2;
+      $before =~ s/^\s*([a-z])/uc($1)/ei;
+      $line = $before . setfont($smallfont, ($this));
+      $initial = 0 if ($rest);
+    } else {
+      $rest = $line;
+      $line = '';
+      if ($initial) {
+        $lnum = "v. ";
+        $initial = 0;
+      }
+    }
+    $rest =~ s/[ ]*//;
+
+    if ($prepend_dagger) {
+      $rest = "\x{2021} $rest";
+      $prepend_dagger = 0;
+    }
+
+    if ($first && $rest && $rest !~ /^\s*$/) {
+      $rest = getantcross($rest, $antline);
+
+      # Put dagger at start of second line if it would otherwise
+      # have come at the end of the first.
+      $prepend_dagger = ($rest =~ s/\x{2021}\s*$//);
+      $first = 0;
+    }
+    $rest =~ s/\x{2021}/setfont($smallfont, "\x{2021}")/e;
+    if ($lang =~ /magyar/i) { $rest = setasterisk($rest); }
+    $rest =~ s/^\s*([a-z])/uc($1)/ei;
+    $t .= "\n$lnum $line $rest";
   }
+  $t .= "\n";
+  if ($version eq "Monastic" && $num == 129 && $hora eq 'Prima') { $t .= $prayers{$lang}->{Requiem}; }
+  elsif ($num != 210 && !$nogloria) { $t .= "\&Gloria\n"; }
+  $t .= settone(0);
+  return $t;
 }
 
 #*** getantcross($psalmline, $antline)
@@ -973,29 +963,7 @@ sub canticum : ScriptFunc {
   my $psnum = shift;
   my $lang = shift;
   $psnum += 230;
-  my $w = '';
-
-  #$psalmfolder = ($accented =~ /plain/i) ? 'psalms' : 'psalms1';
-  $psalmfolder = 'psalms1';
-  $psalmfolder = 'PiusXII' if ($lang eq 'Latin' && $psalmvar);
-  my $fname = checkfile($lang, "$psalmfolder/Psalm$psnum.txt");
-
-  if (@w = do_read($fname)) {
-    $w[0] =~ s/\!//;
-    $w .= setfont($redfont, shift(@w)) . settone(2) . "\n";
-
-    foreach $item (@w) {
-      if ($item =~ /^([0-9]+\:)*([0-9]+) (.*)/) {
-        my $rest = $3;
-        my $num = "$1$2";
-        $item = setfont($smallfont, $num) . " $rest";
-      }
-      $w .= "$item\n";
-    }
-    return $w;
-  } else {
-    return "$w $datafolder/$lang/$psalmfolder/Psalm$psnum.txt not found";
-  }
+  psalm($psnum, $lang);
 }
 
 sub Divinum_auxilium : ScriptFunc {
