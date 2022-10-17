@@ -156,7 +156,7 @@ fi
 WDIR=$(mktemp -d) #temporary working directory
 SOURCEDATADIR=$CDUR/data #dir that contains s.css, and cover image as specified below
 EOFFICCIUMCMD=$CDUR/EofficiumXhtml.pl #the command to launch the genarator
-EMISSACMD=$CDUR/../../../web/cgi-bin/missa/Emissa.pl #the command to launch the missa genarator
+EMISSACMD=$CDUR/../../../web/cgi-bin/missa/missa.pl #the command to launch the missa genarator
 
 #verify the existence of cover file (even if it is the default value)
 if [[ ! -e $SOURCEDATADIR/$COVER_FILENAME ]]
