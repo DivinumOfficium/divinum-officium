@@ -68,7 +68,7 @@ our $duplex;    #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
 require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/../horas/dialogcommon.pl";
-require "$Bin/webdia.pl";
+require "$Bin/../horas/webdia.pl";
 require "$Bin/../../../standalone/tools/epubgen2/Ewebdia.pl";
 require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
@@ -148,16 +148,11 @@ else {
     $solemn  = strictparam('solemn');
 }
 
-if ($flag) {
-    setsetup( 'general', $version, $testmode, $lang2, $votive, $rubrics,
-        $solemn );
-}
 if ( !$version ) { $version = 'Rubrics 1960'; }
 if ( !$lang2 )   { $lang2   = 'Latin'; }
 setmdir($version);
 
 # save parameters
-$setupsave = printhash( \%setup, 1 );
 $setupsave =~ s/\r*\n*//g;
 $setupsave =~ s/\"/\~24/g;
 precedence();    #fills our hashes et variables
@@ -168,8 +163,6 @@ build_comment_line();
 
 #prepare main pages
 $title = "Sancta Missa";
-
-#generate HTML
 
 $command =~ s/(pray|change|setup)//ig;
 $title    = "Sancta Missa";
