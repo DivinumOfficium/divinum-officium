@@ -1,7 +1,14 @@
 [Lectio9]
-@Tempora/Pent20-0:Lectio7:s/Dlaczego .*//s
+@Tempora/Pent20-0:Lectio7:s/Czemu .*//s
 
 [Lectio10]
-@Tempora/Pent20-0:Lectio7:s/.* Dlaczego /Dlaczego /s
-@Tempora/Pent20-0:Lectio8:s/He believed .*//s
+@Tempora/Pent20-0:Lectio7:s/.* Czemu /Czemu /s s/$/~/
+@Tempora/Pent20-0:Lectio8:s/Mało .*//s
+
+[Lectio11]
+@Tempora/Pent20-0:Lectio8:s/.* Mało /Mało /s s/$/~/
+@Tempora/Pent20-0:Lectio9:s/O zdrowie .*//s
+
+[Lectio12]
+@Tempora/Pent20-0:Lectio9:s/.* O zdrowie /O zdrowie /s
 
