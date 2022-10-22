@@ -271,21 +271,21 @@ if ($pmode =~ /(main|hora)/i) {
   if ($votive ne 'C9') {
 print << "PrintTag";
 <p class="cen">
-<a href="$date1-1-Matutinum.html">$horas[1]</a>
+<a href="$date1-1-Matutinum.html">Matutinum</a>
 &nbsp;&nbsp;
-<a href="$date1-2-Laudes.html">$horas[2]</a>
+<a href="$date1-2-Laudes.html">Laudes</a>
 &nbsp;&nbsp;
-<a href="$date1-3-Prima.html">$horas[3]</a>
+<a href="$date1-3-Prima.html">Prima</a>
 &nbsp;&nbsp;
-<a href="$date1-4-Tertia.html">$horas[4]</a>
+<a href="$date1-4-Tertia.html">Tertia</a>
 <br />
-<a href="$date1-5-Sexta.html">$horas[5]</a>
+<a href="$date1-5-Sexta.html">Sexta</a>
 &nbsp;&nbsp;
-<a href="$date1-6-Nona.html">$horas[6]</a>
+<a href="$date1-6-Nona.html">Nona</a>
 &nbsp;&nbsp;
-<a href="$date1-7-Vespera.html">$horas[7]</a>
+<a href="$date1-7-Vespera.html">Vespera</a>
 &nbsp;&nbsp;
-<a href="$date1-8-Completorium.html">$horas[8]</a>
+<a href="$date1-8-Completorium.html">Completorium</a>
 <br />
 <a href="$date1-9-Missa.html">$horas[9]</a>
 </p>
@@ -293,11 +293,11 @@ PrintTag
 } else {
 print << "PrintTag";
 <p class="cen">
-<a href="$date1-1-Matutinum.html">$horas[1]</a>
+<a href="$date1-1-Matutinum.html">Matutinum</a>
 &nbsp;&nbsp;
-<a href="$date1-2-Laudes.html">$horas[2]</a>
+<a href="$date1-2-Laudes.html">Laudes</a>
 &nbsp;&nbsp;
-<a href="$date1-7-Vespera.html">$horas[7]</a>
+<a href="$date1-7-Vespera.html">Vespera</a>
 &nbsp;&nbsp;
 </p>
 PrintTag
@@ -339,21 +339,21 @@ $date1
 <a href="$daten-1-Matutinum.html">&uarr;</a>
 </p>
 <p class="cen">
-<a href="$date1-1-Matutinum.html">$horas[1]</a>
+<a href="$date1-1-Matutinum.html">Matutinum</a>
 &nbsp;&nbsp;
-<a href="$date1-2-Laudes.html">$horas[2]</a>
+<a href="$date1-2-Laudes.html">Laudes</a>
 &nbsp;&nbsp;
-<a href="$date1-3-Prima.html">$horas[3]</a>
+<a href="$date1-3-Prima.html">Prima</a>
 &nbsp;&nbsp;
-<a href="$date1-4-Tertia.html">$horas[4]</a>
+<a href="$date1-4-Tertia.html">Tertia</a>
 <br />
-<a href="$date1-5-Sexta.html">$horas[5]</a>
+<a href="$date1-5-Sexta.html">Sexta</a>
 &nbsp;&nbsp;
-<a href="$date1-6-Nona.html">$horas[6]</a>
+<a href="$date1-6-Nona.html">Nona</a>
 &nbsp;&nbsp;
-<a href="$date1-7-Vespera.html">$horas[7]</a>
+<a href="$date1-7-Vespera.html">Vespera</a>
 &nbsp;&nbsp;
-<a href="$date1-8-Completorium.html">$horas[8]</a>
+<a href="$date1-8-Completorium.html">Completorium</a>
 <br />
 <a href="$date1-9-Missa.html">$horas[9]</a>
 </p>
