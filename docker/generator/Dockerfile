@@ -3,15 +3,12 @@
 FROM        alpine as gitinfo
 
 RUN apk add git
-COPY .git /build/
 WORKDIR /build
 
 # Write build info to be available at $url/buildinfo
 RUN echo "{" > /build/buildinfo
 RUN echo "  \"build-date\": \"`date +%s`\"," >> /build/buildinfo
 RUN echo "  \"build-date-human\": \"`date`\"," >> /build/buildinfo
-RUN echo "  \"commit\": \"`git rev-parse HEAD`\"," >> /build/buildinfo
-RUN echo "  \"branch\": \"`git rev-parse --abbrev-ref HEAD`\"" >> /build/buildinfo
 RUN echo "}" >> /build/buildinfo
 
 # Final container (copies in /out/buildinfo when done)
