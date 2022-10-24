@@ -186,7 +186,7 @@ sub specials {
       foreach $l (@capit) { push(@s, $l); }
       my $primaresponsory = ($version !~ /monastic/i) ? get_prima_responsory($lang) : '';
       my %wpr = (columnsel($lang)) ? %winner : %winner2;
-      if (exists($wpr{'Versum Prima'})) { $primaresponsory = $wpr{'Versum Prima'}; }
+      if (exists($wpr{'Versum Prima'}) && ($version !~ /monastic/i)) { $primaresponsory = $wpr{'Versum Prima'}; }
       push(@s, $t[$tind++]);
       my @resp = ();
 
