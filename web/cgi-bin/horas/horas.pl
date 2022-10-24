@@ -793,7 +793,7 @@ sub setlink {
     $suffix = " + $suffix";
   }
 
-  if ($name =~ /Domine labia/i) {
+  if ($name =~ /Domine[ _]labia/i) {
     $suffix = " ++ $suffix";
   }
 
