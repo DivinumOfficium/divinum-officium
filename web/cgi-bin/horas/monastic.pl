@@ -413,7 +413,6 @@ sub brevis_monastic {
 #*** regula($lang)
 #returns the text of the Regula for the day
 sub regula : ScriptFunc {
-
   my $lang = shift;
   my @a;
   my $t = setfont($largefont, translate("Regula", $lang)) . "\n";
@@ -424,40 +423,28 @@ sub regula : ScriptFunc {
   $fname = sprintf("%02i-%02i", $month, $d);
 
   if (!-e "$datafolder/Latin/Regula/$fname.txt") {
-    if (@a = do_read("$datafolder/Latin/Regula/Regulatable.txt")) {
-      my $a;
-      my %a = undef;
-
-      foreach $a (@a) {
-        my @a1 = split(';', $a);
-        $a{$a1[1]} = $a1[0];
-        $a{$a1[2]} = $a1[0];
-      }
-      $fname = $a{$fname};
+    if (@a = grep(/$fname/o, do_read("$datafolder/Latin/Regula/Regulatable.txt"))) {
+      $fname = substr($a[0],0,5);
     } else {
       return $t;
     }
   }
+
   $fname = checkfile($lang, "Regula/$fname.txt");
+  @a = do_read($fname);
+  my $title = shift(@a);
+  for (@a) { s/^$/_/; }
+  $title =~ s/.*#//;
+  unshift(@a, $title);
+  $t .= join("\n", @a);
 
-  if (@a = do_read($fname)) {
-    foreach $line (@a) {
-      $line =~ s/^.*?\#//;
-      $line =~ s/^(\s*)$/_$1/;
-      $t .= "$line\n";
-    }
-  }
-
-  if (!$l && $fname =~ /02\-23/) {
+  if ($month == 2 && $day == 23 && !$l) {
     $fname = checkfile($lang, "Regula/02-24.txt");
-
-    if (@a = do_read($fname)) {
-      foreach $line (@a) {
-        $line =~ s/^.*?\#//;
-        $line =~ s/^(\s*)$/_$1/;
-        $t .= "$line\n";
-      }
-    }
+    @a = do_read($fname);
+    shift(@a);
+    for (@a) { s/^$/_/; }
+    $t .= join("\n", @a);
   }
+
   return $t;
 }
