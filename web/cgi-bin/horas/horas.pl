@@ -292,6 +292,7 @@ sub Alleluia : ScriptFunc {
 sub Alleluia_ant {
   my ($lang, $full, $ucase) = @_;
   my $s = translate('Alleluia', $lang);
+  $s =~ s/\.$//;
   if (($full || ($duplex >= 3) || ($version =~ /1960|Newcal|Monastic|Praedicatorum/i))) {
     $s .= ", * $s, $s.";
     $s =~ s/ ./\L$&/g unless $ucase;
