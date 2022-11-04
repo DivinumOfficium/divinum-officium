@@ -43,6 +43,15 @@ $Indulgentiam
 
 &special('Conclusio', 'Latin')
 
+
+[Oratio mortuorum2]
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+&Dominus_vobiscum2
+_
+$Oremus
+v. Wylewamy, Panie, pokorne prośby za dusze wszystkich Twoich sług i służebnic; abyś łaskawie odpuścił, cokolwiek zawinili w ludzkim postępowaniu, i dobrotliwie uczynił kres ich karom.
+$Per Dominum
+
 [Conclusio]
 &Gloria
 V. Niech odpoczywają w pokoju.
