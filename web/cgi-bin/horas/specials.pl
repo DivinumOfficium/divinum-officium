@@ -845,7 +845,7 @@ sub psalmi_minor {
 # collects and return the psalms for laudes and vespera
 sub psalmi_major {
   $lang = shift;
-  if ($version =~ /monastic/i && $hora =~ /Laudes/i) { $psalmnum1 = $psalmnum2 = -1; }
+  if ($version =~ /monastic/i && $hora =~ /Laudes/i && $rule !~ /matutinum romanum/i) { $psalmnum1 = $psalmnum2 = -1; }
   my %psalmi = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi major.txt')};
   my $name = $hora;
   if ($hora =~ /Laudes/) { $name .= $laudes; }
