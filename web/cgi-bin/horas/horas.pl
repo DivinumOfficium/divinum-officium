@@ -236,6 +236,9 @@ sub resolve_refs {
       $line = $prev . setfont($initiale, substr($line, 0, 1)) . substr($line, 1);
     }
 
+    # italic for mute vovels in hymns
+    $line =~ s/\[([aeiou])\]/setfont('italic black', $1)/eg;
+
     #connect lines marked by tilde, or but linebrak
     if ($line =~ /~\s*$/) {
       $prelude .= substr($line, 0, $-[0]) . ' ';
