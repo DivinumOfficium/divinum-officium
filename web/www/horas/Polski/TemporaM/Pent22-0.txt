@@ -1,7 +1,7 @@
 [Lectio9]
-@Tempora/Pent22-0:Lectio7:s/Dlatego.*//
+@Tempora/Pent22-0:Lectio7:s/, chcą.*/./
 
 [Lectio10]
-@Tempora/Pent22-0:Lectio7:s/.* Dlatego /Dlatego /s 
+@Tempora/Pent22-0:Lectio7:s/.*, chcą/Chcą/s s/$/~/
 @Tempora/Pent22-0:Lectio8:s/They .*//s
 
