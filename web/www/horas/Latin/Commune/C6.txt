@@ -1,5 +1,5 @@
 [Name]
-Commune Virgine
+Commune Virginum
 
 [Rule]
 Psalmi Dominica
@@ -111,7 +111,7 @@ Spíritus semper, Deus unus, omni
 Témporis ævo.
 Amen.
 
-[HymnusM Matutinum 1]
+[HymnusM Matutinum pro Virgo tantum et non Martyr]
 v. Hujus obténtu, Deus alme, nobis
 Parce jam culpis, vitia remíttens,
 Quo tibi puri resonémus almum
@@ -123,7 +123,7 @@ Spíritus alme, Deus unus, omni
 Témpore sæcli.
 Amen.
 
-[Hymnus Matutinum 1]
+[Hymnus Matutinum pro Virgo tantum et non Martyr]
 {:H-Virginisproles:}v. Vírginis Proles, Opiféxque Matris,
 Virgo quem gessit, peperítque Virgo:
 Vírginis festum cánimus beátæ,
@@ -168,7 +168,7 @@ De Epístola prima beáti Pauli Apóstoli ad Corínthios
 30 et qui flent, tamquam non fléntes; et qui gaudent, tamquam non gaudéntes; et qui emunt, tamquam non possidéntes;
 31 et qui utúntur hoc mundo, tamquam non utántur; prǽterit enim figúra hujus mundi.
 
-[Responsory10]
+[Responsory1 pro Martyre]
 R. Veni Sponsa Christi, áccipe corónam, quam tibi Dóminus præparávit in ætérnum; pro cujus amóre sánguinem tuum fudísti,
 * Et cum Angelis in paradísum introísti.
 V. Veni, elécta mea, et ponam in te thronum meum;  quia concupívit Rex spéciem tuam.
@@ -298,13 +298,20 @@ v. Deus, qui inter cétera poténtiæ tuæ mirácula étiam in sexu frágili vic
 $Per Dominum
 
 [Oratio1]
-Indulgéntiam nobis, quǽsumus, Dómine, beáta N. Virgo et Martyr implóret: quæ~
-tibi grata semper éxstitit, et mérito castitátis, et tuæ professióne virtútis.
+Indulgéntiam nobis, quǽsumus, Dómine, beáta N. Virgo et Martyr implóret: quæ tibi grata semper éxstitit, et mérito castitátis, et tuæ professióne virtútis.
+$Per Dominum
+
+[Oratio pro Virgine non Martyre]
+Exaúdi nos Deus salutáris noster: ut sicut de beátæ N. Virginis tuæ festivitáte gaudémus; ita piæ devotiónis erudiámur afféctu.
 $Per Dominum
 
 [Lectio Prima]
 !Sap 4:1
 v. O quam pulchra est casta generátio cum claritáte! Immortális est enim memória illíus, quóniam apud Deum nota est, et apud hómines.
+
+[Lectio Prima pro Martyre]
+!Sir 51:13-14
+v. Dómine, Deus meus, exaltásti super terram habitatiónem meam, et pro morte defluénte deprecáta sum. Invocávi Dóminum, Patrem Dómini mei, ut non derelínquat me in die tribulatiónis meæ, et in témpore superbórum sine adjutório.
 
 [Capitulum Tertia]
 @:Capitulum Vespera
@@ -338,6 +345,10 @@ R. In tabernáculo suo habitáre facit eam.
 
 [Capitulum Nona]
 @:Lectio Prima
+$Deo gratias
+
+[Capitulum Nona pro Martyre]
+@:Lectio Prima pro Martyre
 $Deo gratias
 
 [Responsory Nona]
@@ -383,3 +394,41 @@ De libro Ecclesiástici
 15 Laudábo nomen tuum assídue, et collaudábo illud in confessióne, et exaudíta est orátio mea.
 16 Et liberásti me de perditióne, et eripuísti me de témpore iníquo.
 17 Proptérea confitébor, et laudem dicam tibi, et benedícam nómini Domini.
+
+[Lectio4 in 2 loco]
+!Ex libro S. Cypriáni, Epíscopi et Mártyris, de disciplína et hábitu Vírginum.
+Nunc nobis ad vírgines sermo est, quarum quo sublímior glória est, major et cura est. Flos est ille ecclesiástici gérminis, decus atque ornaméntum grátiæ spiritális, læta índoles, laudis et honóris opus íntegrum atque incorrúptum, Dei imágo respóndens ad sanctimóniam Dómini, illústrior pórtio gregis Christi. Gaudet per illas atque in illis lárgiter floret Ecclésiæ matris gloriósa fœcúnditas: quantóque plus copiósa virgínitas número suo addit, tanto plus gaúdium matris augéscit. Ad has lóquimur, has adhortámur affectióne pótius quam potestáte: non quod, extrémi et mínimi et humilitátis nostræ ádmodum cónscii, áliquid ad censúram licéntiæ vindicémus; sed quod ad sollicitúdinem magis cauti, plus de diáboli infestatióne timeámus. 
+
+[Lectio5 in 2 loco]
+Neque enim inánis hæc caútio est, et vana formído, quæ ad salútis viam cónsulit, quæ domínica et vitália præcépta custódit, ut quæ se Christo dicáverint, et a carnáli concupiscéntia recedéntes tam carne, quam mente se Deo vóverint, consúmment opus suum magno prǽmio destinátum, nec ornári jam, aut placére cuíquam, nisi Dómino suo, stúdeant, a quo et mercédem virginitátis expéctant, dicénte ipso: Non omnes cápiunt verbum, sed illi quibus datum est. Sunt enim spadónes, qui ex útero matris sic nati sunt: et sunt spadónes, qui coácti sunt ab homínibus; et sunt spadónes, qui seípsos castravérunt propter regnum cœlórum. 
+
+[Lectio6 in 2 loco]
+Dénuo quoque per hanc Angeli vocem continéntiæ munus osténditur, virgínitas prædicátur. Hi sunt, qui cum muliéribus se non coinquinavérunt: vírgines enim permansérunt: hi sunt qui sequúntur Agnum quocúmque íerit. Neque enim tantum másculis continéntiæ grátiam Dóminus repromíttit, et féminas prǽterit: sed quóniam fémina viri pórtio est, et ex eo sumpta atque formáta est, in Scriptúris fere ómnibus ad protoplástum Deus lóquitur, quia sunt duo in carne una, et in másculo simul significátur et fémina. Quod si Christum continéntia séquitur, et regno Dei virgínitas destinátur: quid est illis cum terréno cultu, et cum ornaméntis, quibus dum hominíbus placére géstiunt, Deum offéndunt?
+
+[Lectio7 in 2 loco]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 19:3-12
+In illo témpore: Accessérunt ad Jesum pharisæi, tentántes eum et dicéntes: Si licet hómini dimíttere uxórem suam quacúmque ex causa? Et réliqua.
+_
+Homilía S. Joánnis Chrysostomi
+!Homilia 63 in Matth., sub med.
+Dóminus noster, quia ad virginitátem hortári grave esse videbátur, a necessitáte legis de non solvéndo matrimónio, eos ad cupiditátem illíus tráhere studet. Deínde, ut eam esse possíbilem osténdat, sic inquit: Sunt eunúchi qui ex ventre matris ita nati sunt; et sunt qui ab homínibus eunúchi facti sunt, et sunt qui seípsos castravérunt propter regnum cælórum. Quibus verbis laténter eos ad eligéndam virginitátem indúcit, dum eam virtútem esse possíbilem ástruit.
+
+[Lectio8 in 2 loco]
+Id autem hoc fere modo confírmat: Cógita tecum, si aut a natúra talis esses, aut ab homínibus eam injúriam passus, quid fáceres, cum et ejúsmodi voluptáte caréres, et nullam, caréndo, mercédem consequeréris? Grátias ígitur nunc Deo agas, quod cum mercéde atque corónis idem sústines, quod illi sine corónis ac præmio tólerant. Immo vero non idem, sed multo lévius; tum quia spe erígeris et consciéntia recte facti, tum quia non ita ingéntibus concupiscéntiæ flúctibus jactáris.
+
+[Lectio9 in 2 loco]
+Cum ergo de illis eunúchis díxerit, qui, nisi étiam ipsi mente se contíneant, frustra et inutíliter tales sunt, ac de illis, qui, ut regnum cælórum consequántur, se cóntinent; subjúnxit rursus, dicens: Qui potest cápere, capiat; ut alacrióres effíciat eo ipso quod grave esse opus osténdit, et ineffábili benignitáte sua nóluit eam rem intra necessitátem legis conclúdere. Idque dicéndo, adhuc magis possíbilem esse demónstrat, ut voluntátis stúdium plus augeátur.
+&teDeum
+
+
+
+
+
+
+
+
+
+
+
+

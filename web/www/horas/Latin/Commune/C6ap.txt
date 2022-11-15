@@ -10,11 +10,11 @@ R. Próximæ ejus afferéntur tibi. Allelúja.
 [Ant 1]
 Prudéntes vírgines, * aptate vestras lámpades: ecce sponsus venit, exíte obviam ei. Allelúja.
 
-[Responsory10]
+[Responsory1 pro Martyre]
 @Commune/C6p
 
 [Responsory1]
-@Commune/C6p
+@:Responsory1 pro Martyre
 
 [Responsory2]
 @Commune/C6p
@@ -49,6 +49,12 @@ Prudéntes vírgines, * aptate vestras lámpades: ecce sponsus venit, exíte obv
 [Lectio Prima]
 @Commune/C6a
 
-[Capitulum Nona1]
+[Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
+
+[Ant 3]
+@:Ant 1
+
+[Versum 3]
+@:Versum 1
