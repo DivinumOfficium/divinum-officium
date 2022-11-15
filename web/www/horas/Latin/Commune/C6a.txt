@@ -1,18 +1,11 @@
+@Commune/C6
+
 [Name]
 Commune Virginum plurimorum
 
 [Rule]
 Psalmi Dominica
 Antiphonas horas
-
-[Ant Vespera]
-@Commune/C6:Ant Vespera
-
-[Capitulum Vespera]
-@Commune/C6:Capitulum Vespera
-
-[Hymnus Vespera]
-@Commune/C6:Hymnus Vespera
 
 [Versum 1]
 V. Adducéntur Regi Vírgines post eam:
@@ -21,77 +14,8 @@ R. Próximæ ejus afferéntur tibi.
 [Ant 1]
 Prudéntes vírgines, * aptáte vestras lámpades: ecce sponsus venit, exíte óbviam ei.
 
-[Invit]
-@Commune/C6:Invit
-
-[Hymnus Matutinum]
-@Commune/C6:Hymnus Matutinum
-
-[Ant Matutinum]
-@Commune/C6:Ant Matutinum
-
-[Lectio1]
-@Commune/C6:Lectio1
-
-[Responsory1 pro Martyre]
-@Commune/C6:Responsory1 pro Martyre
-
 [Responsory1]
-@Commune/C6:Responsory1
-
-[Lectio2]
-@Commune/C6:Lectio2
-
-[Responsory2]
-@Commune/C6:Responsory2
-
-[Lectio3]
-@Commune/C6:Lectio3
-
-[Responsory3]
-@Commune/C6:Responsory3
-
-[Lectio4]
-@Commune/C6:Lectio4
-
-[Responsory4]
-@Commune/C6:Responsory4
-
-[Lectio5]
-@Commune/C6:Lectio5
-
-[Responsory5]
-@Commune/C6:Responsory5
-
-[Lectio6]
-@Commune/C6:Lectio6
-
-[Responsory6]
-@Commune/C6:Responsory6
-
-[Lectio7]
-@Commune/C6:Lectio7
-
-[Responsory7]
-@Commune/C6:Responsory7
-
-[Lectio8]
-@Commune/C6:Lectio8
-
-[Responsory8]
-@Commune/C6:Responsory8
-
-[Lectio9]
-@Commune/C6:Lectio9
-
-[Ant Laudes]
-@Commune/C6:Ant Laudes
-
-[Capitulum Laudes]
-@Commune/C6:Capitulum Vespera
-
-[Hymnus Laudes]
-@Commune/C6:Hymnus Vespera
+@Commune/C6:Responsory1 pro Martyre
 
 [Ant 2]
 @:Ant 1
@@ -106,26 +30,9 @@ $Per Dominum
 [Lectio Prima]
 @Commune/C6:Lectio Prima pro Martyre
 
-[Capitulum Tertia]
-@Commune/C6:Capitulum Vespera
-
-[Responsory Tertia]
-@Commune/C6:Responsory Tertia
-
-[Capitulum Sexta]
-@Commune/C6:Capitulum Sexta
-
-[Responsory Sexta]
-@Commune/C6:Responsory Sexta
-
-[Capitulum Nona pro Martyre]
-@Commune/C6:Capitulum Nona pro Martyre
-
 [Capitulum Nona]
-@Commune/C6:Capitulum Nona pro Martyre
-
-[Responsory Nona]
-@Commune/C6:Responsory Nona
+@:Lectio Prima
+$Deo gratias
 
 [Ant 3]
 @:Ant 1
