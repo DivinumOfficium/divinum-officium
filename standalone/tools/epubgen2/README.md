@@ -14,7 +14,7 @@ Using docker (easier)
 
    `./epubgen2.sh`
 
-You can find the resulting files in `the standalone\tools\epubgen2` folder.
+You can find the resulting files in the `standalone\tools\epubgen2\output` folder.
 
 Without docker
 --------------

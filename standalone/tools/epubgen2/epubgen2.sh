@@ -45,7 +45,7 @@ OPTIONS:
    -c FILENAME The cover image to use without path. It must be a file in the data
                directory. Defaults to "cover.jpg".
 
-   -o PATH     The output directory. Defaults to the current directory.
+   -o PATH     The output directory. Defaults to "output".
 
 EOF
 
@@ -61,7 +61,7 @@ PRIEST='' #has to be empty or '&priest=yes'
 VOTIVE='' #='C12' for Parvum B.M.V.
 MISSA='' #=1 to include Mass propers
 CDUR=$(pwd)
-EPUBDIR=$CDUR #output
+EPUBDIR=$CDUR/output #output directory, defaults to "output" subdirectory in the folder this script is in.
 COVER_FILENAME=cover.jpg #a jpg file name to serve as cover (it has to exist in SOURCEDATADIR) #ascensio.jpg
 RUBRICS_CODE=1960
 RUBRICS=Rubrics%201960
@@ -164,9 +164,14 @@ then
 	echo "Cover image not found in: $SOURCEDATADIR/$COVER_FILENAME" >&2; exit 1
 fi
 
+#check if output directory exists and attempt to create it if it does not
 if [[ ! -d $EPUBDIR ]]
 then
-	echo "Output path does not exist or is not a directory: $EPUBDIR" >&2; exit 1
+	mkdir $EPUBDIR
+	if [[ ! -d $EPUBDIR ]]
+	then
+		echo "Output path does not exist or is not a directory (and could not be created): $EPUBDIR" >&2; exit 1
+	fi
 fi
 
 #handle the case when "from" year is greater than "to" year
