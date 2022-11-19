@@ -1394,7 +1394,9 @@ sub setcc {
   if ($s{Rule} =~ /Comkey=([0-9]+)/i) { $key = $1; }                                    #oct day Epi Cor = 20, simpl=70
 
   if ( $s{Rank} =~ /Octav.*?(Epiph|Corporis|Cordis|Ascension)/i
-    || $str =~ /!.*?Octav.*?(Epiph|Corporis|Cordis|Ascension)/i)
+    || $str =~ /!.*?Octav.*?(Epiph|Corporis|Cordis|Ascension)/i
+    || ($str =~ /!.*?Octav.*?Concept/i && $winner !~ /tempora/i)
+  )
   {
     $key = 20;
     $code = 0;
