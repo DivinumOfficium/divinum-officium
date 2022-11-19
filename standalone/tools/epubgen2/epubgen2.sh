@@ -302,7 +302,7 @@ foreachHourInRange() {
 #################################################################################################################
 
 generateHour() {
-	echo -ne "Generating $FILENAME\r"
+	echo -ne "Generating $FILENAME                \r" # with spaces to clean the line
 	if [[ ${H} -eq 8 && $MISSA ]]; then
 		$EMISSACMD "date=$DATE_SCRIPT&command=&version=$RUBRICS&lang2=$BLANG" > $WDIR/$FILENAME
 	else
@@ -341,9 +341,9 @@ outputMonthTOC() {
 }
 
 printTOC_Header() {
-	printf '<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="la">
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Breviarium $YEAR-$MONTH$RUBRICS_NAME</title></head><body><div>'
+	printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">
+<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"la\">
+<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><title>Breviarium $YEAR-$MONTH$RUBRICS_NAME</title></head><body><div>"
 }
 printTOC_Footer() {
 	printf '</div></body></html>\n'
