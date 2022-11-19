@@ -48,6 +48,10 @@ Examples
 
  `./epubgen2.sh`
 
+### Using the 1960 rubrics for the current year, including texts for Holy mass for every day
+
+ `./epubgen2.sh -m`
+
 ### Using the 1960 rubrics for years 2023, 2024 and 2025
 
  `./epubgen2.sh -y 2023 -t 2025`

@@ -306,7 +306,7 @@ generateHour() {
 	if [[ ${H} -eq 8 && $MISSA ]]; then
 		$EMISSACMD "date=$DATE_SCRIPT&command=&version=$RUBRICS&lang2=$BLANG" > $WDIR/$FILENAME
 	else
-		$EOFFICCIUMCMD "date1=$DATE_SCRIPT&command=pray${HORAS_NAMES[${H}]}&version=$RUBRICS&testmode=regular&lang2=$BLANG&votive=$VOTIVE$PRIEST" > $WDIR/$FILENAME
+		$EOFFICCIUMCMD "date1=$DATE_SCRIPT&command=pray${HORAS_NAMES[${H}]}&version=$RUBRICS&testmode=regular&lang2=$BLANG&votive=$VOTIVE$PRIEST&linkmissa=$MISSA" > $WDIR/$FILENAME
 	fi
 }
 
