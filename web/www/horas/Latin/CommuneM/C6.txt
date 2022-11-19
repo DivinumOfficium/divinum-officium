@@ -29,7 +29,7 @@ Média nocte * clamor factus est: Ecce sponsus venit: exíte óbviam ei.;;249;25
 
 [Lectio2]
 @Commune/C6:Lectio1:2 s/25-/29-/
-@Commune/C6:Lectio1:7-9 s/-31/-28/
+@Commune/C6:Lectio1:7-9 
 
 [Lectio3]
 @Commune/C6:Lectio2
@@ -43,11 +43,21 @@ R. Hæc est Virgo prudens,
 V. Hæc est Virgo sapiens, et una de número prudéntum.
 R. Quæ veniénte Sponso accépit óleum in vasis suis, et ornátis lampádibus introívit cum eo ad núptias.
 
+[Lectio5]
+@Commune/C6:Lectio4:s/ E c*/ /
+
 [Responsory5]
 @Commune/C6:Responsory4
 
+[Lectio6]
+@Commune/C6:Lectio4:s/* E c/E c/ ~
+@Commune/C6:Lectio5:s/. Nam*/. /
+
 [Responsory6]
 @Commune/C6:Responsory5
+
+[Lectio7]
+@Commune/C6:Lectio5:s/* Nam /Nam / 
 
 [Responsory7]
 R. Prudéntes vírgines, aptáte vestras lámpades.
@@ -55,20 +65,37 @@ R. Prudéntes vírgines, aptáte vestras lámpades.
 V. Média nocte clamor factus est:
 R. Ecce sponsus venit, exíte óbviam ei.
 
+[Lectio8]
+@Commune/C6:Lectio6
+
 [Responsory8]
 @Commune/C6:Responsory6
+
+[Lectio9]
+@Commune/C6:Lectio7:s/. Ecce*/. /
 
 [Responsory9]
 @Commune/C6:Responsory7
 
+[Lectio10]
+@Commune/C6:Lectio7:s/*vacuetur. Ecce /Ecce / ~
+@Commune/C6:Lectio8:s/ Sed sc*/ /
+
+
 [Responsory10]
 @Commune/C6:Responsory8
+
+[Lectio11]
+@Commune/C6:Lectio8:s/* Sed sc/Sed sc/ 
 
 [Responsory11]
 R. Índuit me Dóminus vestiménto salútis, et induménto lætítiæ circúmdedit me, et tamquam sponsam 
 * Decorávit me coróna. 
 V. Quasi sponsum decorátum coróna et quasi sponsam ornátam monílibus suis.
 R. Decorávit me coróna. 
+
+[Lectio12]
+@Commune/C6:Lectio9
 
 [Responsory12]
 R.br. Símile est regnum cælórum decem virgínibus, qui accipiéntes lámpadas suas
@@ -90,24 +117,98 @@ _
 [Responsory Sexta]
 @Commune/C6:Responsory Tertia:8-9
 
-[Capitulum Nona1]
-!Sir 51:13-14
-v. Domine Deus meus, exaltasti super terram habitationem meam, et pro morte~
-defluente deprecata sum. Invocavi Dominum Patrem Domini mei, ut non derelinquat~
-me in die tribulationis meæ, et in tempore superborum sine adjutorio.
-$Deo gratias
-
 [Responsory Nona]
 @Commune/C6:Responsory Sexta:8-9
 
-[Lectio3 in 2 loco]
-!Sir 51:13-17
-13 Exaltasti super terram habitationem meam, et pro morte defluente deprecatus~
-sum.
-14 Invocavi Dominum patrem Domini mei, ut non derelinquat me in die~
-tribulationis meæ, et in tempore superborum, sine adjutorio.
-15 Laudabo nomen tuum assidue, et collaudabo illud in confessione: et exaudita~
-est oratio mea,
-16 et liberasti me de perditione, et eripuisti me de tempore iniquo.
-17 Propterea confitebor, et laudem dicam tibi, et benedicam nomini Domini.
+[Lectio1 in 2 loco]
+@Commune/C6::1-5 s/-7/-3/
 
+[Lectio2 in 2 loco]
+@Commune/C6:Lectio1 in 2 loco:2 s/1-/4-/
+@Commune/C6:Lectio1 in 2 loco:6-9 
+
+[Lectio3 in 2 loco]
+@Commune/C6:Lectio2 in 2 loco
+
+[Lectio4 in 2 loco]
+@Commune/C6:Lectio3 in 2 loco
+
+[Lectio5 in 2 loco]
+@Commune/C6:Lectio4 in 2 loco
+
+[Lectio6 in 2 loco]
+@Commune/C6:Lectio5 in 2 loco:s/est. S*/est. /
+
+[Lectio7 in 2 loco]
+@Commune/C6:Lectio5 in 2 loco:s/* est. S/S/ ~
+@Commune/C6:Lectio6 in 2 loco:s/. Neque*/. /
+
+[Lectio8 in 2 loco]
+@Commune/C6:Lectio6 in 2 loco:s/*t. Neque /Neque / 
+
+[Lectio9 in 2 loco]
+@CommuneM/C7:Lectio9
+
+[Lectio10 in 2 loco]
+@CommuneM/C7:Lectio10
+
+[Lectio11 in 2 loco]
+@CommuneM/C7:Lectio11
+
+[Lectio12 in 2 loco]
+@CommuneM/C7:Lectio12
+
+[LectioE in 2 loco]
+@Commune/C6a:LectioE
+
+[Lectio9 in 3 loco]
+@Commune/C6:Lectio7 in 2 loco:s/ sub med./ n. 3/ s/Quibus*//
+
+[Lectio10 in 3 loco]
+@Commune/C6:Lectio7 in 2 loco:s/* Quibus /Quibus / ~
+@Commune/C6:Lectio8 in 2 loco:s/Grátias*//
+
+[Lectio11 in 3 loco]
+@Commune/C6:Lectio8 in 2 loco:s/* Grátias /Grátias / 
+
+[Lectio12 in 3 loco]
+@Commune/C6:Lectio9 in 2 loco
+
+[LectioE in 3 loco]
+@Sancti/02-05:LectioE
+
+[Lectio9 in 4 loco]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 25:1-13
+In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Simile erit regnum cælórum decem virgínibus, quæ, accipiéntes lámpades suas, exiérunt obviam sponso et sponsæ. Et réliqua.
+_
+Homilía sancti Augustíni Epíscopi
+!Sermo 93 de verbis Domini, cap. II-IV
+Intelligámus, caríssimi, ad omnes nos, id est, ad univérsam omníno Ecclésiam, istam pertinére parábolam, non ad solos præpósitos, nec ad solas plebes: sed prorsus ad omnes. Istæ quinque et quinque vírgines, omnes omníno sunt ánimæ Christianórum. Sed, ut dicámus vobis, quod Deo inspiránte sentímus, non qualescúmque ánimæ; sed tales animæ, quæ habent Cathólicam fidem, et habére vidéntur bona ópera in Ecclésia Dei: et tamen ex ipsis quinque sunt prudéntes, et quinque fátuæ.
+
+[Lectio10 in 4 loco]
+Quare ergo appellátæ sunt quinque; et quare vírgines, prius videámus. Omnis ánima in córpore ídeo quinário número censétur, quia quinque sénsibus útitur. Qui ergo se ábstinet ab illícito visu, ab illícito audítu, ab illícito odorátu, ab illícito gustátu, ab illícito tactu, propter ipsam integritátem, vírginis nomen accépit. Sed si bonum est, abstinére ab illícitis sentiéndi mótibus, et ídeo unaquæque ánima Christiána vírginis nomen accépit: quare quinque admittúntur, et quinque repellúntur? 
+
+[Lectio11 in 4 loco]
+Et vírgines sunt, et repellúntur. Párum est quia vírgines sunt: et lámpades habent. Vírgines, propter abstinéntiam ab sensibus; lámpades habent, propter ópera bona. De quibus opéribus Dóminus dicit: Lúceant ópera vestra coram homínibus. Item discípulis dicit: Sint lumbi vestri accíncti, et lucérnæ ardéntes. In lumbis accínctis, virgínitas; in lucérnis ardéntibus, ópera bona. Si ergo ab illícitis abstinéntia bona est; unde virgínitas nomen accépit, et ópera bona laudabília sunt, quæ significántur lampádibus: quare quinque admittúntur, et quinque repellúntur?
+
+[Lectio12 in 4 loco]
+Alias dixit prudéntes, alias stultas. Unde intuémur? unde discérnimus? De óleo. Aliquid magnum signíficat óleum, et valde magnum. Putas, num cáritas est? Quæréndo dícimus, non senténtiam præcipitámus. Unde mihi videátur óleum caritátem significáre, dicam vobis. Apóstolus dicit: Adhuc supereminentiórem vobis viam demónstro. Si linquis hóminum loquar et Angelórum, caritátem autem non hábeam, factus sum æraméntum sonans, aut cýmbalum tínniens. Ipsa est superéminens via: id est cáritas, quæ mérito óleo significátur. Omnibus enim humóribus óleum superéminet.
+
+[Lectio9 in 5 loco]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 25:1-13
+In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Simile erit regnum cælórum decem virgínibus, quæ, accipiéntes lámpades suas, exiérunt obviam sponso et sponsæ. Et réliqua.
+_
+Homilía sancti Augustíni Epíscopi
+!Sermo 93 de verbis Domini, cap. VI-VIII et X
+Disceptémus, fratres, de quinque virgínibus prudéntibus et quinque fátuis. Voluérunt ire óbviam sponso, corde ire, exspectáre eius advéntum. Sed ille tardábat. Dum tardat ille, dormiérunt omnes. Quid est somnus iste? Ne forte tardánte sponso, quóniam abúndat iníquitas, refrigéscit cáritas multórum, subiécit et ait: Qui autem perseveráverit usque in finem, hic salvus erit. Non ergo eis obrépsit frigus caritátis, non in eis refríguit cáritas; sed fervet usque in finem. Est álius somnus, quem nemo evádit. Non recordámini Apóstolum dicéntem: De dormiéntibus autem nolo vos ignoráre, fratres: id est, de his qui mórtui sunt? fátua sit virgo, prudens sit virgo, somnum mortis omnes patiúntur. Ad novíssimam tubam surgent omnes.
+
+[Lectio10 in 5 loco]
+Prudéntes autem illæ tulérunt óleum secum in vasis suis: stultæ vero illæ non tulérunt óleum secum.  Ibi óleum, magnum óleum. De dono Dei est hoc óleum. Tu ergo tecum porta, intus porta, ubi videt Deus, ibi porta testimónium consciéntiæ tuæ. Qui autem ámbulat ad testimónium aliénum, óleum non portat secum. Inténdat ítaque Cáritas vestra. Sapiéntium lámpades ardébant de óleo intérno, de consciéntiæ securitáte, de interióre glória, de íntima cáritate. Ardébant tamen et illárum fatuárum. Quare tunc ardébant? Quia non déerant laudes hóminum.
+
+[Lectio11 in 5 loco]
+Postea vero, quam surrexérunt, id est, in resurrectióne a mórtuis, cœpérunt aptáre lámpades suas, id est, paráre Deo óperum suórum réddere ratiónem. Et quia tunc nemo est qui laudet, omnis homo causæ suæ vacat; non erant, qui óleum vénderent, cœpérunt defícere lámpades. Clausum est óstium. Et quid illis dictum est? Non novi vos. Non illas novit, qui ómnia novit? Quid ergo est: Non novi vos? Improbo vos, réprobo vos. In arte mea non vos agnósco; ars mea nescit vítia, et iúdicat vítia; nescit fáciendo, iúdicat arguéndo: sic ergo non novi vos. Iérunt, intravérunt quinque prudéntes.
+
+[Lectio12 in 5 loco]
+Sint in vobis quinque prudéntes ad istam prudéntiam quinárii númeri pertinéntes. Véniet enim hora, et quando nescímus, véniet. Sic clausit Evangélium: Vigiláte, quia nescítis diem neque horam. Corde vígila, fide vígila, spe vígila, caritáte vígila, opéribus vígila: et quando córpore dormíveris, véniet tempus ut surgas. Cum autem surréxeris, præpara lámpades. Tunc non exstinguántur, tunc interióre consciéntiæ óleo vegeténtur: tunc sponsus ille incorpóreis néxibus amplectátur, tunc te introdúcat in domum, ubi numquam dórmias, ubi nunquam possit tua lampas exstíngui. Hódie vero laborámus, et lámpades nostræ inter ventos sæculi huius tentationésque flúctuant; sed árdeat in róbore flamma nostra, ut ventus tentatiónis áugeat ignem pótius, quam exstínguat.
