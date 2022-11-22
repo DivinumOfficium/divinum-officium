@@ -1,0 +1,11 @@
+[Lectio10]
+@Tempora/Adv4-0:Lectio8:s/Żeby .*//s
+
+[Lectio11]
+@Tempora/Adv4-0:Lectio8:s/.* Żeby /Żeby /s s/$/~/
+@Tempora/Adv4-0:Lectio9:s/Bo .*//s
+
+[Lectio12]
+@Tempora/Adv4-0:Lectio9:s/.* Bo /Bo /s
+
+
