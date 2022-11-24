@@ -1,10 +1,14 @@
 [Lectio9]
-@Tempora/Adv3-0:Lectio7:s/Nie pragnąc .*//s
-
-[Responsory9]
-@Tempora/Adv3-0:Responsory7
+@Tempora/Adv3-0:Lectio7:s/Gdy zatem .*//s
 
 [Lectio10]
-@Tempora/Adv3-0:Lectio7:s/.* Nie pragnąc /Nie pragnąc /s
-@Tempora/Adv3-0:Lectio8:s/But when .*//s
+@Tempora/Adv3-0:Lectio7:s/.* Gdy zatem /Gdy zatem /s s/$/~/
+@Tempora/Adv3-0:Lectio8:s/Pytany .*//s
+
+[Lectio11]
+@Tempora/Adv3-0:Lectio8:s/.* Pytany/Pytany/s s/$/~/
+@Tempora/Adv3-0:Lectio9:s/Do .*//s
+
+[Lectio12]
+@Tempora/Adv3-0:Lectio9:s/.* Do /Do /s
 
