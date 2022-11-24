@@ -1395,7 +1395,10 @@ sub setcc {
 
   if ( $s{Rank} =~ /Octav.*?(Epiph|Corporis|Cordis|Ascension)/i
     || $str =~ /!.*?Octav.*?(Epiph|Corporis|Cordis|Ascension)/i
-    || ($str =~ /!.*?Octav.*?Concept/i && $winner !~ /tempora/i)
+    || ($str =~ /!.*?Octav.*?Concept/i && ($winner !~ /tempora/i
+                                          # or St. Damasy on Sunday
+                                          || $hora eq "Vespera" && ($day == 10 && $vespera == 1
+                                                                   || $day == 11 && $vespera == 3)))
   )
   {
     $key = 20;
