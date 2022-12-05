@@ -126,22 +126,20 @@ sub getadvent {
 
 #*** geteaster(year)
 # returns easter date (dd,mm,yyyy);
+# code source CPAN module Date::Easter 1.22
 sub geteaster {
-
-  my $year = shift;
-  my $c = floor($year / 100);
-  my $n = $year - 19 * floor($year / 19);
-  my $k = floor(($c - 17) / 25);
-  my $i = $c - floor($c / 4) - floor(($c - $k) / 3) + 19 * $n + 15;
-
-  $i = $i - 30 * floor($i / 30);
-  $i = $i - floor($i / 28) * (1 - floor($i / 28) * floor(29 / ($i + 1))) * floor((21 - $n) / 11);
-  my $j = $year + floor($year / 4) + $i + 2 - $c + floor($c / 4);
-  $j = $j - 7 * floor($j / 7);
-  my $l = $i - $j;
-  my $m = 3 + floor(($l + 40) / 44);
-  my $d = $l + 28 - 31 * floor($m / 4);
-  return ($d, $m - 1, $year);
+  my ($year) = @_;
+  my ( $G, $C, $H, $I, $J, $L, $month, $day, );
+  $G = $year % 19;
+  $C = int( $year / 100 );
+  $H = ( $C - int( $C / 4 ) - int( ( 8 * $C + 13 ) / 25 ) + 19 * $G + 15 ) % 30;
+  $I = $H - int( $H / 28 ) *
+    ( 1 - int( $H / 28 ) * int( 29 / ( $H + 1 ) ) * int( ( 21 - $G ) / 11 ) );
+  $J     = ( $year + int( $year / 4 ) + $I + 2 - $C + int( $C / 4 ) ) % 7;
+  $L     = $I - $J;
+  $month = 3 + int( ( $L + 40 ) / 44 );
+  $day   = $L + 28 - ( 31 * int( $month / 4 ) );
+  return ( $day, $month - 1, $year );
 }
 
 #*** checkfile($lang, $filename)
