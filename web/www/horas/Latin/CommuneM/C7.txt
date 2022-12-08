@@ -1,5 +1,8 @@
 @Commune/C7
 
+[Name]
+Commune non Virginum Martyrum
+
 [Capitulum Vespera]
 @Commune/C7
 _
@@ -26,18 +29,97 @@ Inventa bona margarita * dedit omnia sua, et comparavit eam;;249;250;251
 V. Elégit eam Deus, et præelégit eam.
 R. In tabernáculo suo habitáre facit eam.
 
-[Responsory9]
-R. Beata es N. quae propter Deum mundum odisti
-* Propterea datum est tibi regnum caelorum
-V. Dilexisti justitiam et odisti iniquitatem
-R. Propterea datum est tibi regnum caelorum
+[Lectio1]
+@CommuneM/C6b
+
+[Responsory1]
+@Commune/C6
+
+[Lectio2]
+@CommuneM/C6b
+
+[Lectio3]
+@CommuneM/C6b
+
+[Lectio4]
+@CommuneM/C6b
+
+[Responsory4]
+R. Pulchra fácie, sed púlchrior fide, beáta es, N., réspuens mundum, lætáberis cum Angelis:
+* Intercéde pro ómnibus nobis. 
+V. Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna.
+R. Intercéde pro ómnibus nobis. 
 &Gloria
-R. Propterea datum est tibi regnum caelorum
+R. Intercéde pro ómnibus nobis. 
+
+[Lectio5]
+@Commune/C7:Lectio4
+
+[Responsory5]
+@Commune/C6:Responsory4
+
+[Lectio6]
+@Commune/C7:Lectio5:s/ Agrícola*/ /
+
+[Responsory6]
+@Commune/C6:Responsory5
+
+[Lectio7]
+@Commune/C7:Lectio5:s/* Agrícola/Agrícola/
+
+[Responsory7]
+@Commune/C7:Responsory6
+
+[Lectio8]
+@Commune/C7:Lectio6
+
+[Responsory8]
+R. Quam pulchra es, amíca mea, quam pulchra es et suávis! óculi tui columbárum:
+* Absque eo quod intrínsecus latet.
+V. Astitit regína a dextris tuis in vestítu deauráto, circúmdata varietáte.
+R. Absque eo quod intrínsecus latet.
+&Gloria
+R. Absque eo quod intrínsecus latet.
+
+[Lectio9]
+@Commune/C7:Lectio7
+
+[Responsory9]
+@Commune/C7:Responsory7
+
+[Lectio10]
+@Commune/C7:Lectio8:s/ Hoc autem*/ /
+
+[Responsory10]
+@Commune/C7:Responsory8
+
+[Lectio11]
+@Commune/C7:Lectio8:s/* Hoc autem/Hoc autem/
+
+[Responsory11]
+R. Accínxit fortitúdine lumbos suos, et roborávit bráchium suum;
+* Ideóque lucérna ejus non exstinguétur in sempitérnum.
+V. Adjuvábit eam Deus vultu suo, Deus in médio ejus, non commovébitur.
+R. Ideóque lucérna ejus non exstinguétur in sempitérnum. 
+
+[Lectio12]
+@Commune/C7:Lectio9
+
+[Responsory12]
+R. Beáta es, N., quæ propter Deum mundum odísti:
+* Proptérea datum est tibi regnum cælórum.
+V. Dilexísti justítiam et odísti iniquitátem.
+R. Proptérea datum est tibi regnum cælórum.
+&Gloria
+R. Proptérea datum est tibi regnum cælórum.
 
 [Capitulum Laudes]
 @Commune/C7
 _
 @Commune/C6:Responsory Tertia:1-6
+
+[Capitulum Tertia]
+@Commune/C7:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C6:Versum 1
@@ -48,3 +130,15 @@ _
 [Responsory Nona]
 @Commune/C6:Responsory Sexta:8-9
 
+[Lectio5 in 2 loco]
+@Commune/C7:Lectio4 in 2 loco
+
+[Lectio6 in 2 loco]
+@Commune/C7:Lectio5 in 2 loco:s/ Quam*/ /
+
+[Lectio7 in 2 loco]
+@Commune/C7:Lectio5 in 2 loco:s/* Quam/Quam/ ~
+@Commune/C7:Lectio6 in 2 loco:s/ Nihil enim*/ /
+
+[Lectio8 in 2 loco]
+@Commune/C7:Lectio6 in 2 loco:s/* Nihil enim/Nihil enim/
