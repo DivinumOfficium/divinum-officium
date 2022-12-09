@@ -1,0 +1,43 @@
+@CommuneM/C7
+
+[Name]
+Commune non Virginum non Martyrum
+
+[Capitulum Vespera]
+@Commune/C7a
+_
+@Commune/C6:Responsory Sexta:1-6
+
+[Lectio1]
+@Commune/C7a:Lectio1:s/-17/-15/ :s/16 .*//s
+
+[Lectio2]
+@Commune/C7a:Lectio1:s/10-17/15-20/ s/10 .*16 /16 /s
+@Commune/C7a:Lectio2:2-4
+
+[Lectio3]
+@Commune/C7a:Lectio2:s/18-24/21-26/ s/118 .*21 /21 /s
+@Commune/C7a:Lectio3:2-3
+
+[Lectio4]
+@Commune/C7a:Lectio3:s/25-/27-/ s/25 .*27 /27 /s
+
+[Capitulum Laudes]
+@Commune/C7a
+_
+@Commune/C6:Responsory Tertia:1-6
+
+[Lectio Prima]
+@Commune/C7a
+
+[Capitulum Tertia]
+@Commune/C7a:Capitulum Vespera
+
+[Capitulum Sexta]
+@Commune/C7a
+
+[Capitulum Nona]
+@:Lectio Prima
+$Deo gratias
+
+

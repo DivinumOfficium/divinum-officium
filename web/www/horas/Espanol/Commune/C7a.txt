@@ -1,3 +1,5 @@
+@Commune/C7
+
 [Name]
 Commune non Virginum non Martyrum
 
@@ -5,135 +7,49 @@ Commune non Virginum non Martyrum
 Psalmi Dominica
 Antiphonas horas
 
-[Ant Vespera]
-@Commune/C7
-
 [Capitulum Vespera]
 !Prov 31:10-11
 v. La mujer fuerte, ¿quién la hallará?; vale mucho más que las perlas. Su marido se fía de ella, y no le faltan riquezas.
 $Deo gratias
 
-[Hymnus Vespera]
-@Commune/C7:Hymnus Vespera
-
-[Versum 1]
-@Commune/C6
-
-[Ant 1]
-@Commune/C6:Ant 2
-
-[Invit]
-@Commune/C7
-
-[Hymnus Matutinum]
-@Commune/C7:Hymnus Matutinum
-
-[Ant Matutinum]
-@Commune/C7
-
 [Lectio1]
-@Commune/C7:Lectio1
-
-[Responsory1]
-@Commune/C6
+De las Parábolas de Salomón
+!Prov 31:10-17
+10 La mujer fuerte, ¿quién la hallará? Vale mucho más que las perlas. 
+11 En ella confía el corazón de su marido y no tiene nunca falta de nada. 
+12 Le proporciona siempre el bien, nunca el mal, todo el tiempo de su vida. 
+13 Ella se procura lana y lino y hace las labores con sus manos. 
+14 Es como nave de mercader, que desde lejos trae su pan. 
+15 Se levanta cuando aún es de noche, y prepara a su familia la comida y la tarea de sus criados. 
+16 Ve un campo y lo compra, y con el fruto de sus manos planta una viña. 
+17 Se ciñe de fortaleza y esfuerza sus brazos. 
 
 [Lectio2]
-@Commune/C7
-
-[Responsory2]
-@Commune/C6
+!Prov 31:18-24
+18 Ve alegre que su negocio va bien, y ni de noche apaga su lámpara. 
+19 Coge la rueca en sus manos y hace bailar el huso. 
+20 Tiende su mano al miserable y alarga la mano al menesteroso. 
+21 No teme su familia el frío de la nieve, porque todos en casa tienen vestidos dobles. 
+22 Ella se hace cobertores, y sus vestidos son de lana y púrpura. 
+23 Celebrado es en las puertas su marido cuando se sienta entre los ancianos del lugar. 
+24 Hace una hermosa tela y la vende, y vende al mercader un ceñidor. 
 
 [Lectio3]
-@Commune/C7
-
-[Responsory3]
-@Commune/C6
-
-[Lectio4]
-@Commune/C7:Lectio4
-
-[Responsory4]
-@Commune/C6
-
-[Lectio5]
-@Commune/C7
-
-[Responsory5]
-@Commune/C6
-
-[Lectio6]
-@Commune/C7
-
-[Responsory6]
-@Commune/C7
-
-[Lectio7]
-@Commune/C7
-
-[Responsory7]
-@Commune/C7
-
-[Lectio8]
-@Commune/C7
-
-[Responsory8]
-@Commune/C7
-
-[Lectio9]
-@Commune/C7
-
-[Ant Laudes]
-@Commune/C7
-
-[Capitulum Laudes]
-@:Capitulum Vespera
-
-[Hymnus Laudes]
-@Commune/C7:Hymnus Vespera
-
-[Versum 2]
-@Commune/C6
-
-[Ant 2]
-@Commune/C7
-
-[Oratio]
-@Commune/C7:Oratio
-
-[Oratio1]
-@Commune/C7:Oratio1
-
-[Oratio2]
-@Commune/C7
+!Prov 31:25-31
+25 Se reviste de fortaleza y gracia, y sonríe al porvenir. 
+26 La sabiduría abre su boca y en su lengua está la ley de bondad. 
+27 Vigila a toda su familia, y no come su pan de balde. 
+28 Alzanse sus hijos y la aclaman bienaventurada, y su marido la ensalza. 
+29 “Muchas hijas han hecho proezas, pero tú a todas sobrepasas.” 
+30 Engañosa es la gracia, fugaz la belleza; la mujer que teme a Dios, ésa es de alabar. 
+31 Dadle los frutos del trabajo de sus manos, y alábenla sus hechos en las puertas. 
 
 [Lectio Prima]
 !Prov 31:29-30
 v. Muchas mujeres reunieron riquezas, pero tú les ganas a todas. Engañosa es la gracia, fugaz la hermosura; la mujer que respeta al Señor, ésa merece alabanza.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-@Commune/C6
-
 [Capitulum Sexta]
 !Prov 31:20-21
 v. Abre sus manos al necesitado y extiende el brazo al pobre. Si nieva, no teme por la servidumbre.
 $Deo gratias.
-
-[Responsory Sexta]
-@Commune/C6
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
-@Commune/C6
-
-[Versum 3]
-@:Versum 2
-
-[Ant 3]
-@Commune/C7
 

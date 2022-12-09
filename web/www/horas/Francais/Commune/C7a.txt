@@ -1,3 +1,5 @@
+@Commune/C7
+
 [Name]
 Commune non Virginum non Martyrum
 
@@ -5,135 +7,49 @@ Commune non Virginum non Martyrum
 Psalmi Dominica
 Antiphonas horas
 
-[Ant Vespera]
-@Commune/C7
-
 [Capitulum Vespera]
 !Prov. 31:10-11
 v. La femme forte, qui la trouvera ? C'est bien loin, aux extrémités de la terre, qu'il faut aller chercher de quoi la payer. Le cœur de son mari se confie en elle et il n'aura pas besoin du butin.
 $Deo gratias
 
-[Hymnus Vespera]
-@Commune/C7:Hymnus Vespera
-
-[Versum 1]
-@Commune/C6
-
-[Ant 1]
-@Commune/C6:Ant 2
-
-[Invit]
-@Commune/C7
-
-[Hymnus Matutinum]
-@Commune/C7:Hymnus Matutinum
-
-[Ant Matutinum]
-@Commune/C7
-
 [Lectio1]
-@Commune/C7:Lectio1
-
-[Responsory1]
-@Commune/C6
+De Proverbes de Salomon
+!Prov 31:10-17
+10 Une femme parfaite, qui la trouvera ? Elle est précieuse plus que les perles !
+11 Son mari peut lui faire confiance : il ne manquera pas de ressources.
+12 Elle fait son bonheur, et non pas sa ruine, tous les jours de sa vie.
+13 Elle sait choisir la laine et le lin, et ses mains travaillent volontiers.
+14 Elle est comme les navires marchands, faisant venir ses vivres de très loin.
+15 Elle est debout quand il fait encore nuit pour préparer les repas de sa maison et donner ses ordres aux servantes.
+16 A-t-elle des visées sur un champ ? Elle l’acquiert. Avec le produit de son travail, elle plante une vigne.
+17 Elle rayonne de force et retrousse ses manches !
 
 [Lectio2]
-@Commune/C7
-
-[Responsory2]
-@Commune/C6
+!Prov 31:18-24
+18 Elle s’assure de la bonne marche des affaires, sa lampe ne s’éteint pas de la nuit.
+19 Elle tend la main vers la quenouille, ses doigts dirigent le fuseau.
+20 Ses doigts s’ouvrent en faveur du pauvre, elle tend la main au malheureux.
+21 Elle ne craint pas la neige pour sa maisonnée, car tous les siens ont des vêtements doublés.
+22 Elle s’est fait des couvertures, des vêtements de pourpre et de lin fin.
+23 Aux portes de la ville, on reconnaît son mari siégeant parmi les anciens du pays.
+24 Elle fabrique de l’étoffe pour la vendre, elle propose des ceintures au marchand.
 
 [Lectio3]
-@Commune/C7
-
-[Responsory3]
-@Commune/C6
-
-[Lectio4]
-@Commune/C7:Lectio4
-
-[Responsory4]
-@Commune/C6
-
-[Lectio5]
-@Commune/C7
-
-[Responsory5]
-@Commune/C6
-
-[Lectio6]
-@Commune/C7
-
-[Responsory6]
-@Commune/C7
-
-[Lectio7]
-@Commune/C7
-
-[Responsory7]
-@Commune/C7
-
-[Lectio8]
-@Commune/C7
-
-[Responsory8]
-@Commune/C7
-
-[Lectio9]
-@Commune/C7
-
-[Ant Laudes]
-@Commune/C7
-
-[Capitulum Laudes]
-@:Capitulum Vespera
-
-[Hymnus Laudes]
-@Commune/C7:Hymnus Vespera
-
-[Versum 2]
-@Commune/C6
-
-[Ant 2]
-@Commune/C7
-
-[Oratio]
-@Commune/C7:Oratio
-
-[Oratio1]
-@Commune/C7:Oratio1
-
-[Oratio2]
-@Commune/C7
+!Prov 31:25-31
+25 Revêtue de force et de splendeur, elle sourit à l’avenir.
+26 Sa bouche s’exprime avec sagesse et sa langue enseigne la bonté.
+27 Attentive à la marche de sa maison, elle ne mange pas le pain de l’oisiveté.
+28 Ses fils, debout, la disent bienheureuse et son mari fait sa louange :
+29 « Bien des femmes ont fait leurs preuves, mais toi, tu les surpasses toutes ! »
+30 Le charme est trompeur et la beauté s’évanouit ; seule, la femme qui craint le Seigneur mérite la louange.
+31 Célébrez-la pour les fruits de son travail : et qu’aux portes de la ville, ses œuvres disent sa louange !
 
 [Lectio Prima]
 !Prov 31:29-30
 v. Beaucoup de filles ont amassé des richesses, tu les as toutes surpassées. Trompeuse est la grâce et vaine est la beauté. C’est la femme craignant le Seigneur qui sera louée..
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-@Commune/C6
-
 [Capitulum Sexta]
 !Prov 31:20-21
 v. Elle a ouvert sa main à l’indigent et en a tendu les paumes au pauvre. Elle ne craindra point pour sa maison la froidure de la neige.
 $Deo gratias.
-
-[Responsory Sexta]
-@Commune/C6
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
-@Commune/C6
-
-[Versum 3]
-@:Versum 2
-
-[Ant 3]
-@Commune/C7
 
