@@ -1,3 +1,9 @@
+[Lectio7]
+@Tempora/Adv4-0:Lectio6:s/A zatem.*//s
+
+[Lectio8]
+@Tempora/Adv4-0:Lectio6:s/.* A zatem/A zatem/s
+
 [Lectio10]
 @Tempora/Adv4-0:Lectio8:s/Żeby .*//s
 
@@ -7,5 +13,3 @@
 
 [Lectio12]
 @Tempora/Adv4-0:Lectio9:s/.* Bo /Bo /s
-
-
