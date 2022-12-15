@@ -1415,7 +1415,7 @@ sub officestring($$$;$) {
 
   if ($fname !~ /tempora[M]*\/(Pent|Epi)/i) {
     %s = updaterank(setupstring($basedir, $lang, $fname));
-    if ($version =~ /1960/ && $s{Rank} =~ /Feria.*?(III|IV) Adv/i && $day > 16) { $s{Rank} =~ s/;;2/;;3/; }
+    if ($version =~ /1960|Monastic/ && $s{Rank} =~ /Feria.*?(III|IV) Adv/i && $day > 16) { $s{Rank} =~ s/;;2/;;3/; }
     return \%s;
   }
 
@@ -1578,7 +1578,7 @@ sub setheadline {
       $rankname = 'I. classis';
     } elsif ($version =~ /1960|Newcal/i && $winner =~ /Pasc5-3/) {
       $rankname = 'II. classis';
-    } elsif ($version =~ /1960|Newcal/ && $month == 12 && $day > 16 && $day < 25 && $dayofweek > 0) {
+    } elsif ($version =~ /1960|Newcal|Monastic/ && $month == 12 && $day > 16 && $day < 25 && $dayofweek > 0) {
       $rankname = 'II. classis';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
       $rankname = ($rank =~ 7) ? 'Duplex I. classis' : 'Semiduplex';
