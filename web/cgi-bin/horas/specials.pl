@@ -621,6 +621,13 @@ sub checkcommemoratio {
   if (exists($w{'Commemoratio 3'})) { return $w{'Commemoratio 3'}; }
   return '';
 }
+#*** get_stThomas_feria($year)
+# used in trident psalmi_{major,minor}
+sub get_stThomas_feria {
+  my($year) = shift;
+  my($sec_,$min_,$hour_,$mday_,$mon_,$year_,$wday,$yday_,$isdst_) = localtime(timelocal(0, 0, 0, 21, 11, $year));
+  $wday ? $wday : 1; # on Sunday transfer stThomas to Feria II
+}
 
 #*** psalmi_minor($lang)
 #collects and returns psalms for prim, tertia, sexta, none, completorium
@@ -735,8 +742,12 @@ sub psalmi_minor {
       : ($dayname[0] =~ /Pasc/i && ($dayname[0] !~ /Pasc7/i || $hora =~ /Completorium/i)) ? 'Pasch'
       : '';
 
-    if ($month == 12 && $day > 16 && $day < 25 && $dayofweek > 0) {
+    if ($month == 12 && $day > 16 && $day < 24 && $dayofweek > 0) {
       my $i = $dayofweek + 1;
+      if ($dayofweek == 6 && $version =~ /trident/i) { # take ants from feria occuring Dec 21st
+        $i = get_stThomas_feria($year) + 1;
+        if ($day == 23) { $i = ""; } # use Sundays ant
+      }
       $name = "Adv4$i";
     }
     if ($name =~ /pasc/i && ($dayname[0] !~ /Pasc7/i || $hora =~ /Completorium/i)) { $ind = 0; }
@@ -898,6 +909,15 @@ sub psalmi_major {
   my @antiphones;
   if (($hora =~ /Laudes/ || ($hora =~ /Vespera/ && $version =~ /Monastic/)) && $month == 12 && $day > 16 && $day < 24 && $dayofweek > 0) {
     my @p1 = split("\n", $psalmi{"Day$dayofweek Laudes3"});
+    if ($dayofweek == 6 && $version =~ /trident/i) { # take ants from feria occuring Dec 21st
+      my $expectetur = $p1[3]; # save Expectetur
+      @p1 = split("\n", $psalmi{"Day" . get_stThomas_feria($year) . " Laudes3"});
+      if ($day == 23) { # use Sundays ants
+        my %w = %{setupstring($datafolder, $lang, "$temporaname/Adv4-0.txt")};
+        @p1 = split("\n", $w{"Ant Laudes"});
+      }
+      $p1[3] = $expectetur;
+    }
     for (my $i = 0; $i < @p1; $i++) {
       my @p2 = split(';;', $psalmi[$i]);
       $antiphones[$i] = "$p1[$i];;$p2[1]";
