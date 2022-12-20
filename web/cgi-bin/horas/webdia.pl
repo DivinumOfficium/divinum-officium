@@ -372,48 +372,46 @@ sub getcookie1 {
 sub setcross {
   my $line = shift;
 
-  if (CGI::user_agent("BlackBerry")) {
+  if ($nofancychars) { return $line; }
 
+  my $csubst = '';
+
+  if (CGI::user_agent("BlackBerry")) {
     # Not enough Unicode for what we really want, below.  Fake it.
     # cross type 3: COPTIC SMALL LETTER DEI
-    my $csubst = "<span style='color:red; font-size:1.25em'>&#x03EF;</span>";
+    $csubst = "<span style='color:red; font-size:1.25em'>&#x03EF;</span>";
     $line =~ s/\+\+\+/$csubst/g;
 
     # Cross type 2: Latin Cross
-    my $csubst = "<span style='color:red; font-size:1.25em'>&#x271D;&#xFE0E;</span>";
+    $csubst = "<span style='color:red; font-size:1.25em'>&#x271D;&#xFE0E;</span>";
     $line =~ s/\+\+/$csubst/g;
 
     # Cross type 1: PLUS SIGN
-    my $csubst = "<span style='color:red; font-size:1.25em'>+</span>";
+    $csubst = "<span style='color:red; font-size:1.25em'>+</span>";
     $line =~ s/ \+ / $csubst /g;
   } else {
-
     # Cross type 3: Outlined Greek Cross
-    my $csubst = "<span style='color:red; font-size:1.25em'>&#x2719;&#xFE0E;</span>";
+    $csubst = "<span style='color:red; font-size:1.25em'>&#x2719;&#xFE0E;</span>";
     $line =~ s/\+\+\+/$csubst/g;
 
     # Cross type 2: Greek Cross
-    my $csubst = "<span style='color:red; font-size:1.25em'>+︎</span>";
+    $csubst = "<span style='color:red; font-size:1.25em'>+︎</span>";
     $line =~ s/\+\+/$csubst/g;
 
     # cross type 1: Maltese Cross
-    my $csubst = "<span style='color:red; font-size:1.25em'>✠</span>";
+    $csubst = "<span style='color:red; font-size:1.25em'>✠</span>";
     $line =~ s/ \+ / $csubst /g;
   }
   return $line;
 }
 
-#*** setcross2($line)
-# Version (unused) of setcross that uses gifs.
-sub setcross2 {
+#*** setvrbar($line)
+# set R- & V-bar
+sub setvrbar {
   my $line = shift;
-  my $csubst;
-  $csubst = "<IMG SRC=$htmlurl/cross3.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/\+\+\+/$csubst/g;
-  $csubst = "<IMG SRC=$htmlurl/cross2.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/\+\+/$csubst/g;
-  $csubst = "<IMG SRC=$htmlurl/cross1.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/ \+ / $csubst /g;
+  if ($nofancychars) { return $line; }
+  $line =~ s/^V\./℣./g;
+  $line =~ s/^R\./℟./g;
   return $line;
 }
 

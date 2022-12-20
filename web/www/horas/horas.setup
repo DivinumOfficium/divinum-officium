@@ -15,9 +15,10 @@ $screenheight='1024';;
 $textwidth='100';;
 $oldhymns='0';;
 $nonumbers='0';;
+$nofancychars='0';;
 
 [parameterscheck]
-bbtbbbtcccccnnb
+bbtbbbtcccccnnbbb
 
 [general]
 $expand='all';;
