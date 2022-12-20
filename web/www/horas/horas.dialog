@@ -5,6 +5,7 @@ Language 1~>$lang1~>Optionmenu~>languages~>3;;
 Pius XII Psalter~>$psalmvar~>Checkbutton~>~>4;;
 Use antique hymns~>$oldhymns~>Checkbutton~>~>15;;
 Hide verse numbers~>$nonumbers~>Checkbutton~>~>16;;
+Don't use fancy characters~>$nofancychars~>Checkbutton~>~>17;;
 White background~>$whitebground~>Checkbutton~>~>5;;
 Text font~>$blackfont~>Entry~>12~>6;;
 Small text~>$smallblack~>Entry~>12~>7;;
