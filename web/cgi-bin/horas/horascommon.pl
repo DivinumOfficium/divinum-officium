@@ -819,6 +819,7 @@ sub getrank {
         && $climit1960
         && ($w{Rule} !~ /No commemoratio/i
           || ($svesp == 1 && $hora =~ /vespera/i))
+        && $sname !~ /12-20o/
         )
       {
         $laudesonly = ($missa) ? '' : ($climit1960 > 1) ? ' ad Laudes tantum' : '';
