@@ -6,7 +6,6 @@ Dominica I post Epiphaniam;;Semiduplex;;5;;vide SanctiM/01-06
 [Rule]
 12 lectiones
 Doxology=Epi
-Psalmi Dominica
 
 [Lectio1]
 @Tempora/Epi1-0a:Lectio1:
@@ -23,10 +22,7 @@ Psalmi Dominica
 @Tempora/Epi1-0a:Lectio3:s/10-/12-/ s/10.*12/12/s
 
 [Responsory4]
-R. Dies sanctificátus illúxit nobis: † veníte, gentes, et adoráte Dóminum: 
-* Quia hódie descéndit lux magna in terris.
-V. Vénite, adorémus eum, † quia est Dóminus Deus noster.
-R. Quia hódie descéndit lux magna in terris.
+@SanctiM/01-06
 
 [Lectio5]
 @Tempora/Epi1-0a:Lectio4
@@ -41,10 +37,7 @@ R. Quia hódie descéndit lux magna in terris.
 @Tempora/Epi1-0a:Lectio6
 
 [Responsory8]
-R. Interrogábat Magos Heródes: Quod signum vidístis super natum Regem? † Stellam vidimus fulgéntem, cujus splendor illúminat mundum: 
-* Et nos cognóvimus et vénimus adoráre Dóminum.
-V. Magi véniunt ab Oriénte inquiréntes fáciem Dómini et dicéntes.
-R. Et nos cognóvimus et vénimus adoráre Dóminum.
+@SanctiM/01-06
 
 [Ant Matutinum 3N]
 Allelúja, * allelúja, allelúja.;;263;264;265
@@ -59,17 +52,11 @@ Allelúja, * allelúja, allelúja.;;263;264;265
 @Tempora/Epi1-0a:Lectio8:s/.* Alibi /Alibi /s
 
 [Responsory11]
-R. Venit lumen tuum, Jerúsalem, † et glória Dómini super te orta est: 
-* Et ambulábunt gentes in lúmine tuo, et reges in splendóre ortus tui.
-V. Fílii tui de longe vénient et fíliæ tuæ de látere surgent.
-R. Et ambulábunt gentes in lúmine tuo, et reges in splendóre ortus tui.
+@SanctiM/01-06
 
 [Lectio12]
 @Tempora/Epi1-0a:Lectio9
 
 [Responsory12]
-R. Hic est dies præclárus in quo Salvátor mundi appáruit, † quem prophétæ predixérunt, Angeli annuntiavérunt:
-* Cujus stellam Magi vidéntes gavísi sunt, et múnera ei obtulérunt.
-V. Dies sanctificátus illúxit nobis: † veníte gentes et adoráte Dóminum.
-R. Cujus stellam Magi vidéntes gavísi sunt, et múnera ei obtulérunt.
+@SanctiM/01-06
 
