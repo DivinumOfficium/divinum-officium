@@ -198,7 +198,7 @@ $kyear = strictparam('kyear') || $year;
 );
 @monthlength = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 $title = "Ordo: $monthnames[$kmonth-1] $kyear";
-@daynames = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
+@daynames = qw/Dom. F.II F.III F.IV F.V F.VI Sabb./;
 
 #*** generate HTML
 htmlHead($title, 2);
