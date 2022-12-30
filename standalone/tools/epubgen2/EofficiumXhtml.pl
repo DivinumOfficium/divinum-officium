@@ -302,7 +302,7 @@ print << "PrintTag";
 PrintTag
 }
 
-if (linkmissa) {
+if ($linkmissa) {
 print << "PrintTag";
 <br />
 <a href="$date1-9-Missa.html">Missa</a>
@@ -365,7 +365,7 @@ $date1
 <a href="$date1-8-Completorium.html">Completorium</a>
 PrintTag
 
-if (linkmissa) {
+if ($linkmissa) {
 print << "PrintTag";
 <br />
 <a href="$date1-9-Missa.html">Missa</a>
