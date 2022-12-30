@@ -66,6 +66,7 @@ COVER_FILENAME=cover.jpg #a jpg file name to serve as cover (it has to exist in 
 RUBRICS_CODE=1960
 RUBRICS=Rubrics%201960
 RUBRICS_NAME=
+OPTIONAL_KINDLEGEN_PATH=/usr/local/bin/kindlegen #full path to kindlegen executable, if exists, used to convert the resulting EPUB files to MOBI format as well
 
 #constants
 #supported rubrics as in Eofficium.pl
@@ -680,6 +681,34 @@ createEPUBs() {
 	echo -e "\e[1m:: Finished the creation of EPUBs\e[0m"
 }
 
+
+#################################################################################################################
+#  MOBI format
+#################################################################################################################
+
+convertMOBIMonth() {
+	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR-$MONTH$RUBRICS_NAME.epub"
+	$OPTIONAL_KINDLEGEN_PATH $EPUB_FILENAME
+}
+
+convertMOBIYear() {
+	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR$RUBRICS_NAME.epub"
+	$OPTIONAL_KINDLEGEN_PATH $EPUB_FILENAME
+}
+
+createMOBIs() {
+	if [[ ! -e "$OPTIONAL_KINDLEGEN_PATH" ]]
+	then
+		echo "\e[1m:: KindleGen not found in $OPTIONAL_KINDLEGEN_PATH, skipping the conversion to of MOBI format. \e[0m"
+	else
+		echo -e "\e[1m:: Starting the conversion to MOBI format for each month\e[0m"
+		foreachMonthInRange convertMOBIMonth
+		echo -e "\e[1m:: Starting the conversion to MOBI format for each year\e[0m"
+		foreachYear convertMOBIYear
+		echo -e "\e[1m:: Finished the conversion to MOBI format\e[0m"
+	fi	
+}
+
 #################################################################################################################
 #  launch
 #################################################################################################################
@@ -687,3 +716,4 @@ generateHours #generate the main HTML files
 generateTOCs #generate Table Of Content main HTML pages (used by both EPUB and MOBI formats)
 generateOPF  #generate OPF files (descriptors needed both for the EPUB and for the kindlegen to generate MOBI)
 createEPUBs
+createMOBIs

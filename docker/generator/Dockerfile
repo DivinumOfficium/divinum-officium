@@ -10,6 +10,9 @@ RUN apt-get update && apt-get install -y \
     libwww-perl \
     dos2unix
 
+# Copy kindlegen for Linux from another docker image (for MOBI conversions).
+COPY --from=wiltonsr/kindlegen /kindlegen /usr/local/bin/kindlegen
+
 # Copy in code
 COPY web /var/www/web
 COPY standalone/tools/epubgen2 /var/www/standalone/tools/epubgen2
