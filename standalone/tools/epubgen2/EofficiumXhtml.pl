@@ -136,6 +136,7 @@ our $temporaname = 'Tempora';
 our $communename = 'Commune';
 
 our $linkmissa = length strictparam('linkmissa');
+our $nofancychars = strictparam('nofancychars');
 
 #*** handle different actions
 #after setup

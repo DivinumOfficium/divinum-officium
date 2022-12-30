@@ -47,6 +47,8 @@ OPTIONS:
 
    -o PATH     The output directory. Defaults to "output".
 
+   -f          If specified, use "fancy" characters: [℟ ℣ +︎ ✠ ✙︎]
+
 EOF
 
  #generation of a bilingual office is not yet fully implemented, so do not document this option until it is implemented.
@@ -66,6 +68,7 @@ COVER_FILENAME=cover.jpg #a jpg file name to serve as cover (it has to exist in 
 RUBRICS_CODE=1960
 RUBRICS=Rubrics%201960
 RUBRICS_NAME=
+NOFANCYCHARS=1 #0 or 1; when 1, "fancy" characters such as  ℟ ℣ +︎ ✠ ✙︎ are replaced with R. V. + + +
 OPTIONAL_KINDLEGEN_PATH=/usr/local/bin/kindlegen #full path to kindlegen executable, if exists, used to convert the resulting EPUB files to MOBI format as well
 
 #constants
@@ -77,7 +80,7 @@ ALL_RUBRICS_NAME=("_Monastic" "_1570" "_1910" "_DA" "_1955" "" "NC")
 YEAR_RE='^[0-9]+$'
 
 #parse parameters
-while getopts "hy:t:pvmr:c:o:" OPTION
+while getopts "hy:t:pvmr:c:o:f" OPTION
 do
      case $OPTION in
          h)
@@ -106,8 +109,8 @@ do
              VOTIVE='C12'
              ;;
          m)
-	     MISSA=1
-	     ;;
+             MISSA=1
+             ;;
          r)
              RUBRICS_CODE=$OPTARG
              #make sure the value is one of the expected values
@@ -132,7 +135,9 @@ do
              BLANG=$OPTARG
              #TODO: validate the value
              ;;
-
+		 f)
+             NOFANCYCHARS=0
+             ;;
          ?)
              usage
              exit
@@ -305,9 +310,9 @@ foreachHourInRange() {
 generateHour() {
 	echo -ne "Generating $FILENAME                \r" # with spaces to clean the line
 	if [[ ${H} -eq 8 && $MISSA ]]; then
-		$EMISSACMD "date=$DATE_SCRIPT&command=&version=$RUBRICS&lang2=$BLANG" > $WDIR/$FILENAME
+		$EMISSACMD "date=$DATE_SCRIPT&command=&version=$RUBRICS&lang2=$BLANG&nofancychars=$NOFANCYCHARS" > $WDIR/$FILENAME
 	else
-		$EOFFICCIUMCMD "date1=$DATE_SCRIPT&command=pray${HORAS_NAMES[${H}]}&version=$RUBRICS&testmode=regular&lang2=$BLANG&votive=$VOTIVE$PRIEST&linkmissa=$MISSA" > $WDIR/$FILENAME
+		$EOFFICCIUMCMD "date1=$DATE_SCRIPT&command=pray${HORAS_NAMES[${H}]}&version=$RUBRICS&testmode=regular&lang2=$BLANG&votive=$VOTIVE$PRIEST&linkmissa=$MISSA&nofancychars=$NOFANCYCHARS" > $WDIR/$FILENAME
 	fi
 }
 
