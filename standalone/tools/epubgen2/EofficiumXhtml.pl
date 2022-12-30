@@ -135,6 +135,9 @@ our $sanctiname = 'Sancti';
 our $temporaname = 'Tempora';
 our $communename = 'Commune';
 
+our $linkmissa = length strictparam('linkmissa');
+our $nofancychars = strictparam('nofancychars');
+
 #*** handle different actions
 #after setup
 if ($command =~ /change/i ) {
@@ -286,9 +289,6 @@ print << "PrintTag";
 <a href="$date1-7-Vespera.html">Vespera</a>
 &nbsp;&nbsp;
 <a href="$date1-8-Completorium.html">Completorium</a>
-<br />
-<a href="$date1-9-Missa.html">$horas[9]</a>
-</p>
 PrintTag
 } else {
 print << "PrintTag";
@@ -299,9 +299,19 @@ print << "PrintTag";
 &nbsp;&nbsp;
 <a href="$date1-7-Vespera.html">Vespera</a>
 &nbsp;&nbsp;
-</p>
+
 PrintTag
 }
+
+if ($linkmissa) {
+print << "PrintTag";
+<br />
+<a href="$date1-9-Missa.html">Missa</a>
+PrintTag
+}
+print << "PrintTag";
+</p>
+PrintTag
 }
 
 #common end for programs
@@ -354,10 +364,19 @@ $date1
 <a href="$date1-7-Vespera.html">Vespera</a>
 &nbsp;&nbsp;
 <a href="$date1-8-Completorium.html">Completorium</a>
+PrintTag
+
+if ($linkmissa) {
+print << "PrintTag";
 <br />
-<a href="$date1-9-Missa.html">$horas[9]</a>
+<a href="$date1-9-Missa.html">Missa</a>
+PrintTag
+}
+
+print << "PrintTag";
 </p>
 PrintTag
+
 }
 
 sub prevnext {
