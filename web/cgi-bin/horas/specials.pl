@@ -2265,7 +2265,7 @@ sub get_prima_responsory {
   {
     $key = 'Adv';
   }
-  if ($version =~ /1960/ && $month == 1 && $day > 5 && $day < 14) { $key = 'Epi'; }
+  if ($version =~ /1960/ && $month == 1 && $day > 5 && $day < 14 && $commune !~ /C10/) { $key = 'Epi'; }
   if ($version =~ /1960/ && $key =~ /Corp/) { $key = ''; }
   if (!$key) { return ''; }
   my %t = %{setupstring($datafolder, $lang, 'Psalterium/Prima Special.txt')};
