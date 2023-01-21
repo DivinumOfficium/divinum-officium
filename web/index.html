@@ -1,229 +1,88 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-  <head>
-    <meta name="author" content="Divinum Officium Project" />
-    <meta name="resource-type" content="document" />
-    <meta name="description" content="Breviarium Romanum" />
-    <meta
-      name="keywords"
-      content="Church tradition, Breviarium, Divine Office, liturgy, Tridentine, old rite, Officium Divinum, Divinum Officium, breviary, missal, Missale, Missale Romanum, Mass, Missa, Misa, liturgie, liturgia, Messe, catholique, Catholic"
-    />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="apple-touch-icon" href="favicon.ico" />
-    <title>Divinum Officium</title>
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta name="author" content="Divinum Officium Project">
+<meta name="resource-type" content="document">
+<meta name="description" content="Breviarium Romanum">
+<meta name="keywords" content='Church tradition, Breviarium, Divine Office, liturgy, Tridentine, old rite, Officium Divinum, Divinum Officium, breviary, missal, Missale, Missale Romanum, Mass, Missa, Misa, liturgie, liturgia, Messe, catholique, Catholic'>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="apple-touch-icon" href="favicon.ico">
+<title>Divinum Officium</title>
+</head>
+<body style="background-color:white;color:black">
+<script>
+// https redirect
+if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+}
+</script>
+<p style="text-align:center;font-size:2em"><B>The Divinum Officium Project</B>
+<table border="1" style="text-align:center;margin-left:auto;margin-right:auto;width:50%;font-size:2em">
+    <tr>
+      <td>
+&nbsp;&nbsp;&nbsp;<a href="cgi-bin/horas/officium.pl">Desktop</a>&nbsp;&nbsp;&nbsp;</TD><TD>&nbsp;&nbsp;&nbsp;<a href="cgi-bin/horas/Pofficium.pl">Mobile</a>&nbsp;&nbsp;&nbsp;</TD><TD>&nbsp;&nbsp;&nbsp;<a href="cgi-bin/missa/missa.pl">Missale</a>&nbsp;&nbsp;&nbsp;</TD><TD>&nbsp;&nbsp;&nbsp;<a href="cgi-bin/horas/kalendar.pl">Ordo</a>&nbsp;&nbsp;&nbsp;</TD>
+        </TABLE>
 
-      html {
-        width: 100%;
-      }
+<div style="text-align: center"><p style="font-size:1em"><img src="www/horas/singers.jpg" width="50%" alt="Singing the Divine Office"></p>
+<p style="text-align:center"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations" />
+<input type="hidden" name="business" value="KN3ZEVAXU4PQN" />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+<br>
+Please consider signing up for a monthly sponsorship of the Divinum Officium Project.<BR>
+Friends and benefactors are remembered in a monthly Mass and the Divine Office daily.
 
-      body {
-        min-width: 100%;
-        background-color: #eaeaea;
-        color: #333;
-      }
+          <p style="text-align:center">For questions or to support the work of the Divinum Officium Project, please contact:<br>
+          canon DOT missae AT gmail DOT com<BR>
+          Ici on parle français - Hier spreekt men Nederlands - Se habla español - Wir sprechen deutsch - Mówimy po polsku - Noi parliamo italiano<BR>
+          <p style="text-align:center">Please see our <a href="www/horas/Help/help.html">Help</a> page for an introduction to the site.<br>
+          </p>
+          <p style="text-align:center">What's new? A list of all changes to Divinum Officium can be found on our <a href=
+          "https://github.com/DivinumOfficium/divinum-officium">GitHub
+          repository</a>.
+                <p style="text align:center">This website was created and designed by the late
+                Laszlo Kiss. Mr. Kiss, longtime resident of Forrest Lake, Illinois, died
+                suddenly at his home on Monday, 11 July 2011, shortly after returning
+                from a walk with his wife Marta. He was three days shy of his 73rd
+                birthday. Mr. Kiss was born in Budapest, Hungary, on 14 July 1938, and
+                married Marta Noske on 31 January 1968. He worked in Budapest as a
+                computer engineer until emigrating to the United States of America in
+                1982. In 1983, he developed “Image,” one of the first computer-controlled
+                manufacturing systems in the world (still in use to this day). He retired
+                in 2000, and, among other things, selflessly devoted hundreds of hours to
+                creating this website, which provides free access to many different versions of the Divine Office (or <em>breviary</em>), the
+                traditional daily prayer book of the Roman Catholic Church. His funeral
+                was held at St. Peter's Catholic Church in Volo, Illinois, on the Feast
+                of Our Lady of Mt. Carmel (16 July). Mr. Kiss is survived by three
+                brothers in Hungary, and in the States by his loving wife Marta (of
+                forty-three years), their two sons Zoltan and Chaba, and their two
+                grandchildren Sophie and Ryan.</p>
 
-      * {
-        box-sizing: border-box;
-      }
+                <p style="text align:center">On Monday, 15 August 2011, the Solemnity of the
+                Assumption of Our Lady, The Divinum Officium Project was founded, with
+                the permission of Laszlo's son Chaba, to preserve and further Laszlo's
+                work and to promote the worship of the Triune God through the Divine
+                Office. This website serves as a historical, educational, as well as spiritual 
+                tool for anyone to learn about this monument of Christian civilization. 
+                Currently, The Divinum Officium Project consists of a diocesan priest as well 
+                as a team of software developers who maintain the site and
+                ensure its accuracy. We are always happy to welcome new volunteers who 
+                are familiar with the Church's rites and/or Perl programming. Please see our
+                <a href="https://github.com/DivinumOfficium/divinum-officium">GitHub repository</a>
+                for further information or contact us at the above address.</p>
 
-      header {
-        text-align: center;
-        font-size: 1rem;
-        text-transform: uppercase;
-        margin: 2rem 1rem 0rem;
-      }
-
-      header h1,
-      header h3 {
-        margin: 0;
-      }
-
-      nav {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-        text-align: center;
-        margin: 1rem auto 2rem;
-        padding: 1rem;
-        font-size: 1rem;
-        max-width: 470px;
-        width: 80%;
-        border-top: 1px solid #333;
-        border-bottom: 1px solid #333;
-      }
-
-      main {
-        margin: 0 auto;
-        text-align: center;
-      }
-
-      .hero-image {
-        width: 80%;
-        max-width: 1060px;
-        margin: 0 auto;
-        display: block;
-      }
-
-      .donate {
-        margin: 1rem auto 2rem;
-      }
-
-      .text-section {
-        text-align: center;
-        margin: auto;
-        padding: 0 2rem;
-        max-width: 1060px;
-      }
-      footer {
-        font-size: 1rem;
-        text-align: center;
-        margin: 2rem auto;
-        padding: 2rem 2rem 0;
-        border-top: 1px solid #333;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-        max-width: 900px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h3>The</h3>
-      <h1>Divinum Officium Project</h1>
-    </header>
-    <nav>
-      <a href="cgi-bin/horas/officium.pl">Desktop</a>
-      <a href="cgi-bin/horas/Pofficium.pl">Mobile</a>
-      <a href="cgi-bin/missa/missa.pl">Missale</a>
-      <a href="cgi-bin/horas/kalendar.pl">Ordo</a>
-    </nav>
-
-    <main>
-      <img
-        class="hero-image"
-        src="www/horas/singers.png"
-        alt="Singing the Divine Office"
-      />
-      <form
-        action="https://www.paypal.com/cgi-bin/webscr"
-        method="post"
-        target="_top"
-        class="donate"
-      >
-        <input type="hidden" name="cmd" value="_donations" />
-        <input type="hidden" name="business" value="KN3ZEVAXU4PQN" />
-        <input type="hidden" name="currency_code" value="USD" />
-        <input
-          type="image"
-          src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-          border="0"
-          name="submit"
-          title="PayPal - The safer, easier way to pay online!"
-          alt="Donate with PayPal button"
-        />
-        <img
-          alt=""
-          border="0"
-          src="https://www.paypal.com/en_US/i/scr/pixel.gif"
-          width="1"
-          height="1"
-        />
-      </form>
-      <section class="text-section">
-        Please consider signing up for a monthly sponsorship of the Divinum
-        Officium Project.<br />
-        Friends and benefactors are remembered in a monthly Mass and the Divine
-        Office daily.
-
-        <p>
-          For questions or to support the work of the Divinum Officium Project,
-          please contact:<br />
-          canon DOT missae AT gmail DOT com<br />
-          Ici on parle français - Hier spreekt men Nederlands - Se habla español
-          - Wir sprechen deutsch - Mówimy po polsku - Noi parliamo italiano<br />
-        </p>
-
-        <p>
-          Please see our <a href="www/horas/Help/help.html">Help</a> page for an
-          introduction to the site.<br />
-        </p>
-        <p>
-          What's new? A list of all changes to Divinum Officium can be found on
-          our
-          <a href="https://github.com/DivinumOfficium/divinum-officium"
-            >GitHub repository</a
-          >.
-        </p>
-        <p>
-          This website was created and designed by the late Laszlo Kiss. Mr.
-          Kiss, longtime resident of Forrest Lake, Illinois, died suddenly at
-          his home on Monday, 11 July 2011, shortly after returning from a walk
-          with his wife Marta. He was three days shy of his 73rd birthday. Mr.
-          Kiss was born in Budapest, Hungary, on 14 July 1938, and married Marta
-          Noske on 31 January 1968. He worked in Budapest as a computer engineer
-          until emigrating to the United States of America in 1982. In 1983, he
-          developed <i>“Image”</i>, one of the first computer-controlled
-          manufacturing systems in the world (still in use to this day). He
-          retired in 2000, and, among other things, selflessly devoted hundreds
-          of hours to creating this website, which provides free access to many
-          different versions of the Divine Office (or <em>breviary</em>), the
-          traditional daily prayer book of the Roman Catholic Church. His
-          funeral was held at St. Peter's Catholic Church in Volo, Illinois, on
-          the Feast of Our Lady of Mt. Carmel (16 July). Mr. Kiss is survived by
-          three brothers in Hungary, and in the States by his loving wife Marta
-          (of forty-three years), their two sons Zoltan and Chaba, and their two
-          grandchildren Sophie and Ryan.
-        </p>
-
-        <p>
-          On Monday, 15 August 2011, the Solemnity of the Assumption of Our
-          Lady, The Divinum Officium Project was founded, with the permission of
-          Laszlo's son Chaba, to preserve and further Laszlo's work and to
-          promote the worship of the Triune God through the Divine Office. This
-          website serves as a historical, educational, as well as spiritual tool
-          for anyone to learn about this monument of Christian civilization.
-          Currently, The Divinum Officium Project consists of a diocesan priest
-          as well as a team of software developers who maintain the site and
-          ensure its accuracy. We are always happy to welcome new volunteers who
-          are familiar with the Church's rites and/or Perl programming. Please
-          see our
-          <a href="https://github.com/DivinumOfficium/divinum-officium"
-            >GitHub repository</a
-          >
-          for further information, or contact us at the above address.
-        </p>
-
-        <h4><i>T.A.D.M.N. ~ Tu Autem, Domine, Miserere Nobis</i></h4>
-      </section>
-    </main>
-    <footer>
-      <a href="www/horas/Help/versions.html">Versions</a>
-      <a href="www/horas/Help/credits.html">Credits</a>
-      <a href="www/horas/Help/download.html">Download</a>
-      <a href="www/horas/Help/rubrics.html">Rubrics</a>
-      <a href="www/horas/Help/technical.html">Technical</a>
-      <a href="www/horas/Help/help.html">Help</a>
-    </footer>
-    <script>
-      // https redirect
-      if (
-        location.protocol !== "https:" &&
-        (location.hostname == "divinumofficium.com" ||
-          location.hostname == "www.divinumofficium.com")
-      ) {
-        location.replace(
-          `https:${location.href.substring(location.protocol.length)}`
-        );
-      }
-    </script>
-  </body>
+                <p style="text-align:center"><b><i>T.A.D.M.N. ~ Tu Autem, Domine, Miserere Nobis</i></b></p>
+</div>
+<CENTER><FONT SIZE=+1>
+<A HREF='www/horas/Help/versions.html'>Versions</A>&nbsp;&nbsp;&nbsp;
+<A HREF='www/horas/Help/credits.html'>Credits</A>&nbsp;&nbsp;&nbsp;
+<A HREF='www/horas/Help/download.html'>Download</A>&nbsp;&nbsp;&nbsp;
+<A HREF='www/horas/Help/rubrics.html'>Rubrics</A>&nbsp;&nbsp;&nbsp;
+<A HREF='www/horas/Help/technical.html'>Technical</A>&nbsp;&nbsp;&nbsp;
+<A HREF='www/horas/Help/help.html'>Help</A>&nbsp;&nbsp;&nbsp;
+</CENTER><BR><BR><BR>
+</body>
 </html>
