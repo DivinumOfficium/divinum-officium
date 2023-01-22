@@ -14,7 +14,7 @@ Using docker (easier)
 
    `./epubgen2.sh`
 
-You can find the resulting files in `the standalone\tools\epubgen2` folder.
+You can find the resulting files in the `standalone\tools\epubgen2\output` folder.
 
 Without docker
 --------------
@@ -47,6 +47,10 @@ Examples
 ### Using the 1960 rubrics for the current year
 
  `./epubgen2.sh`
+
+### Using the 1960 rubrics for the current year, including texts for Holy mass for every day
+
+ `./epubgen2.sh -m`
 
 ### Using the 1960 rubrics for years 2023, 2024 and 2025
 

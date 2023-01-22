@@ -5,26 +5,23 @@
 _
 @Commune/C2:Responsory Sexta:1-6
 
+[AntMatutinumM]
+Hic accípiet * benedictiónem a Dómino, et misericórdiam a Deo salutári suo; qui hæc est generátio quæréntium Dóminum;;23
+Lætábitur justus * in Dómino et sperábit in eo, et laudabúntur omnes recti corde;;63
+Beátus * quem elegísti Dómine, habitábit in átriis tuis;;64
+Justus ut palma florébit: sicut cedrus Líbani multiplicábitur;;91
+Qui vult veníre post me, * ábnegat semetípsum, et tollet crucem suam, et sequátur me;;256;257;258
+
 [Ant Matutinum]
-In lege Dómini * fuit volúntas ejus die ac nocte.;;1
-Prǽdicans * præcéptum Dómini constitútus est in monte sancto ejus.;;2
-Fílii hóminum * scitóte quia Dóminus sanctum suum mirificávit.;;4
-Scuto bonæ voluntátis * tuæ coronásti eum Dómine.;;5
-In univérsa terra * glória et honóre coronásti eum.;;8
-Justus Dóminus, * et justítiam diléxit: æquitátem vidit vultus ejus.;;10
-V. Glória et honóre coronásti eum, Dómine.
-R. Et constituísti eum super ópera mánuum tuárum.
-Habitábit * in tabernáculo tuo: requiéscet in monte sancto tuo.;;14
-Posuísti, Dómine, * super caput ejus corónam de lápide pretióso.;;20
-Hic accipiet * benedictionem a Domino, et misericordiam a Deo salutari suo; qui haec est generatio quaerentium Dominum;;23
-Laetabitur justus * in Domino et sperabit in eo, et laudabuntur omnes recti corde;;63
-Beatus * quem elegisti Domine, habitabit in atriis tuis;;64
-Justus ut palma florebit: sicut cedrus Libani multiplicabitur;;91
-V. Posuísti, Dómine, super caput ejus.
-R. Corónam de lápide pretióso.
-Qui vult venire post me, * abnegat semetipsum, et tollet crucem suam, et sequatur me;;256;257;258
-V. Magna est glória ejus in salutári tuo.
-R. Glóriam et magnum decórem impónes super eum.
+@Commune/C2::1-2
+@Commune/C2::6-8
+@Commune/C2::11
+@Commune/C2::4-5
+@Commune/C2::12-13
+@:AntMatutinumM:1-4
+@Commune/C2::9-10
+@:AntMatutinumM:5
+@Commune/C2::14-15
 
 [Lectio1]
 @Commune/C2:Lectio1:s/-24/-23/ :s/24 .*//s
@@ -79,8 +76,9 @@ R. Pósuit corónam cápiti meo, et circúmdedit me vestiménto salútis,* Ad e
 
 [Responsory8]
 R. Posuísti, Dómine, super cápite ejus corónam de lápide pretióso:
-* Vitam petiit a te, et tribuísti ei in sæculum sæculi.V. Desidérium ánimæ ejus tribuísti ei, et voluntáte labiórum ejus non fraudásti eum.
-R. Vitam petiit a te, et tribuísti ei in sæculum sæculi.
+* Vitam pétiit a te, et tribuísti ei in sǽculum sǽculi.
+V. Desidérium ánimæ ejus tribuísti ei, et voluntáte labiórum ejus non fraudásti eum.
+R. Vitam pétiit a te, et tribuísti ei in sǽculum sǽculi.
 
 [Lectio9]
 @Commune/C2:Lectio7:s/Quæ autem .*//s
@@ -101,13 +99,13 @@ R. Vitam petiit a te, et tribuísti ei in sæculum sæculi.
 @Commune/C3:Lectio8
 
 [Responsory11]
-R. Glória et honóre coronásti eum, Dómine, et constituísti eum super ópera mánuum tuárum:* Omnia subjecísti sub pédibus ejus.V. Quóniam prævenísti eum in benedictiónibus dulcédinis, posuísti in cápite ejus corónam de lápide pretióso.R. Omnia subjecísti sub pédibus ejus.
+R. Glória et honóre coronásti eum, Dómine, et constituísti eum super ópera mánuum tuárum:* Ómnia subjecísti sub pédibus ejus.V. Quóniam prævenísti eum in benedictiónibus dulcédinis, posuísti in cápite ejus corónam de lápide pretióso.R. Ómnia subjecísti sub pédibus ejus.
 
 [Lectio12]
 @Commune/C3:Lectio9:s/\&teDeum .*//s
 
 [Responsory12]
-R. Beátus vir, qui suffert tentatiónem: quóniam cum probátus fúerit, accipiet corónam vitae, 
+R. Beátus vir, qui suffert tentatiónem: quóniam cum probátus fúerit, accípiet corónam vitæ, 
 * Quam repromísit Deus diligéntibus se.
 V. Hic accípiet benedictiónem a Dómino, et misericórdiam a Deo salutári suo.
 R. Quam repromísit Deus diligéntibus se.
@@ -196,3 +194,4 @@ Pone ergo Mártyrem inter perícula constitútum, cum inde immánitas bestiárum
 
 [LectioE in 4 loco]
 @Commune/C2a:LectioE
+

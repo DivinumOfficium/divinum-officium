@@ -349,20 +349,41 @@ sub setfont {
 # This version uses Unicode entities instead of small GIFs.
 sub setcross
 {
-    # Cross type 3: Cross of Lorraine
-    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x2628;</span>";
+    my $line = shift;
+    if ($nofancychars) { #the unicode symbols do not display correctly on some eReaders, just use plain + instead
+    	my $csubst = '<span class="rd">+</span>';
+    	$line =~ s/\+\+\+/$csubst/g;
+    	$line =~ s/\+\+/$csubst/g;
+    	$line =~ s/ \+ / $csubst /g;
+    	return $line; 
+    }
+	
+    my $csubst = '';
+	
+    # # Cross type 3: Outlined Greek Cross
+    $csubst = '<span class="rd">&#x2719;&#xFE0E;</span>';
     $line =~ s/\+\+\+/$csubst/g;
     # Cross type 2: Greek Cross (Cross of Jerusalem)
-    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x2720;</span>";
+    $csubst = '<span class="rd">︎+︎</span>';
     $line =~ s/\+\+/$csubst/g;
     # cross type 1: Latin Cross
-    my $csubst = "<span style=\"color:red; font-family:'DejaVu Sans';\">&#x271D;</span>";
+    $csubst = '<span class="rd">&#10016;</span>';
     $line =~ s/ \+ / $csubst /g;
 
     $line =~ s/>V\./>℣./g;
     $line =~ s/>R\./>℟./g;
 
     return $line;
+}
+
+#*** setvrbar($line)
+# set R- & V-bar
+sub setvrbar {
+  my $line = shift;
+  if ($nofancychars) { return $line; }
+  $line =~ s/^V\./℣./g;
+  $line =~ s/^R\./℟./g;
+  return $line;
 }
 
 #*** setcell($text1, $lang1);

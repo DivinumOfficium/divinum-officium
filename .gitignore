@@ -7,3 +7,6 @@ docker-compose.override.yml
 
 # Temporary files created by nano
 .*.swp
+
+# Generated files
+standalone/tools/epubgen2/output
