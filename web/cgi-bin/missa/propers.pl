@@ -8,6 +8,8 @@ use utf8;
 use FindBin qw($Bin);
 use lib "$Bin/..";
 
+use DivinumOfficium::Directorium qw(check_coronatio);
+
 # Defines ScriptFunc and ScriptShortFunc attributes.
 use horas::Scripting;
 $a = 4;
@@ -248,20 +250,8 @@ sub oratio {
   $orm .= "$prayers{$lang}->{Flectamus}\n" if $type =~ /Oratio/i && $rule =~ /LectioL/ && $dayname[0] !~ /Pasc/i;
   $retvalue = "$orm\n$w\n";
   $ctotalnum = 1;
-  my $coron = '';
 
-  if (my $tr = join('', do_read("$datafolder/../horas/Latin/Tabulae/Tr1960.txt"))) {
-    my %tr = split('=|;;', $tr);
-
-    # Override perpetual commemoration with this year's transfer table.
-    if (my $yearly_transfer = join('', do_read("$datafolder/../horas/Latin/Tabulae/Tr1960$year.txt"))) {
-      %tr = (%tr, split('=|;;', $yearly_transfer));
-    }
-    my $mm = sprintf("C%02i-%02i", $month, $day);
-    $coron = $tr{$mm} if exists($tr{$mm});
-  }
-
-  if ($coron) {
+  if (my $coron = check_coronatio($day, $month)) {
     $retvalue =~ s/\$(Per|Qui) .*\n//g;
     my %c = %{setupstring($datafolder, $lang, "$coron.txt")};
     my $c = $c{$type};

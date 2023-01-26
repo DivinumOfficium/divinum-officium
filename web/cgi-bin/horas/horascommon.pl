@@ -10,136 +10,14 @@ use utf8;
 use FindBin qw($Bin);
 use lib "$Bin/..";
 use horas::Scripting qw(dispatch_script_function parse_script_arguments);
-my @lines;
-my $a = 4;
+use DivinumOfficium::Date qw(getweek leapyear geteaster get_sday nextday day_of_week monthday);
+use DivinumOfficium::Directorium qw(get_kalendar get_transfer_table get_tempora_table);
 
 sub error {
   my $t = shift;
   $t .= '=';
   if (!$Tk && !$Hk) { $t .= "<BR>"; }
   $error .= "=$t";
-}
-
-#*** getweek($flag)
-# returns $week string list using date1 = mm-dd-yyy string as parameter
-# set $dayofweek
-# next day if $flag
-sub getweek {
-  my $flag = shift;
-  my $t = date_to_days($date1[1], $date1[0] - 1, $year);
-  if ($flag) { $t += 1; }
-  @d = days_to_date($t);
-
-  if (!$flag) {
-    $dayofweek = $d[6];
-  } else {
-    $nextdayofweek = $d[6];
-  }
-  my $advent1 = getadvent($year);
-  my $y = $d[5] + 1;
-  my $dy = $flag ? $nextdayofweek : $dayofweek;
-
-  #Advent in december
-  if ($t >= $advent1) {
-    if ($t < ($advent1 + 28)) {
-      $n = 1 + floor(($t - $advent1) / 7);
-      if ($month == 11 || $day < 25) { return getname("Adv$n"); }
-    }
-    return '';
-  }
-
-  if ($month == 1 && $day < 7) {
-    return '';
-  }
-  my $ordtime = date_to_days(6, 0, $year);
-  @ot = days_to_date($ordtime);
-  $ordtime += (7 - $ot[6]);
-  my $easter = date_to_days(geteaster($year));
-
-  if ($t < $easter - 63) {
-    $n = floor(($t - $ordtime) / 7) + 1;
-    return getname("Epi$n");
-  }
-  if ($t < $easter - 56) { return getname("Quadp1"); }
-  if ($t < $easter - 49) { return getname("Quadp2"); }
-  if ($t < $easter - 42) { return getname("Quadp3"); }
-
-  if ($t < ($easter)) {
-    $n = 1 + floor(($t - ($easter - 42)) / 7);
-    return getname("Quad$n");
-  }
-
-  if ($t < ($easter + 56)) {
-    $n = floor(($t - $easter) / 7);
-    return getname("Pasc$n");
-  }
-  $n = floor(($t - ($easter + 49)) / 7);
-  if ($n < 23) { return getname(sprintf("Pent%02i", $n)); }
-  my $wdist = floor(($advent1 - $t + 6) / 7);
-  if ($wdist < 2) { return "Pent24"; }
-  if ($n == 23) { return "Pent23"; }
-
-  if ($missa) {
-    return sprintf("PentEpi%1i", 8 - $wdist);
-  } else {
-    return sprintf("Epi%1i", 8 - $wdist);
-  }
-}
-
-#*** getname($abr)
-# returns the name from the abbreviation
-sub getname {
-  my $abbr = shift;
-  my @days = ('Dominica', 'Feria II', 'Feria III', 'Feria IV', 'Feria V', 'Feria VI', 'Sabbato');
-  if (!@sundaytable) { getsundaytable(); }
-  my $i = 0;
-
-  for ($i = 0; $i < @sundaytable; $i++) {
-    my $str = $sundaytable[$i];
-
-    if ($str && $str =~ /^$abbr\=(.+)/) {
-      $str = $1;
-      if ($str =~ /^\s*\*(.*)/s) { return "$abbr = $1"; }
-      if ($d[6] == 0) { return "$abbr = Dominica $str"; }
-      if ($str =~ /infra/i) { return "$abbr = $days[$dayofweek] $str"; }
-      return "$abbr=$days[$dayofweek] infra Hebdomodam $str";
-    }
-  }
-  return "$abbr";
-}
-
-#*** getsundaytable()
-# reads sundaytable.txt into @sundaytable
-sub getsundaytable {
-  @sundaytable = do_read("$datafolder/sundaytable.txt");
-}
-
-#*** getadvent($year)
-# return time for the first sunday of advent in the given year
-sub getadvent {
-  my $year = shift;
-  my $christmas = date_to_days(25, 11, $year);
-  my @ch = days_to_date($christmas);
-  my $n = ($ch[6] == 0) ? 7 : $ch[6];    #days between Christmas and 4th Sunday of Advent
-  return $christmas - ($n + 21);         #1st Sunday of Advent
-}
-
-#*** geteaster(year)
-# returns easter date (dd,mm,yyyy);
-# code source CPAN module Date::Easter 1.22
-sub geteaster {
-  my ($year) = @_;
-  my ( $G, $C, $H, $I, $J, $L, $month, $day, );
-  $G = $year % 19;
-  $C = int( $year / 100 );
-  $H = ( $C - int( $C / 4 ) - int( ( 8 * $C + 13 ) / 25 ) + 19 * $G + 15 ) % 30;
-  $I = $H - int( $H / 28 ) *
-    ( 1 - int( $H / 28 ) * int( 29 / ( $H + 1 ) ) * int( ( 21 - $G ) / 11 ) );
-  $J     = ( $year + int( $year / 4 ) + $I + 2 - $C + int( $C / 4 ) ) % 7;
-  $L     = $I - $J;
-  $month = 3 + int( ( $L + 40 ) / 44 );
-  $day   = $L + 28 - ( 31 * int( $month / 4 ) );
-  return ( $day, $month - 1, $year );
 }
 
 #*** checkfile($lang, $filename)
@@ -166,6 +44,7 @@ sub checkfile {
 
 #*** getrank() loads files from tempora and sancti
 sub getrank {
+  my($day, $month, $year, $version) = @_;
   my $c = getdialog('communes');
   $c =~ s/\n//sg;
   %communesname = split(',', $c);
@@ -184,79 +63,47 @@ sub getrank {
   our $transfervigil = '';
   our %transfer;
   our $hymncontract = 0;
-  my $kalendarname =
-      ($version =~ /Monastic/i) ? 'M'
-    : ($version =~ /1570/) ? 1570
-    : ($version =~ /Trident/i) ? 1888
-    : ($version =~ /Divino/i) ? '1954'
-    : ($version =~ /newcal/i) ? 'NC'
-    : ($version =~ /1955/) ? 1955
-    : ($version =~ /1960/) ? 1960
-    : ($version =~ /Praedicatorum/) ? 1960
-    : 1960;
-  our %kalendar = undef;
-  our $kalendarkey = '';
 
-  if (@a = do_read("$datafolder/../horas/Latin/Tabulae/K$kalendarname.txt")) {
-    foreach (@a) {
-      my @item = split('=', $_);
-      $kalendar{$item[0]} = $item[1];
-    }
-  } else {
-    error("$datafolder/../horas/Latin/Tabulae/K$kalendarname.txt cannot open");
-  }
   my $sday = get_sday($month, $day, $year);
 
-  # Handle transfers
-  my $vtrans =
-      ($version =~ /newcal/i) ? 'Newcal'
-    : ($version =~ /Divino/i) ? 'DA'
-    : ($version =~ /(1955|1960)/) ? '1960'
-    : ($version =~ /monastic/i) ? 'M'
-    : ($version =~ /1570/) ? '1570'
-    : ($version =~ /1910/) ? 1910
-    : '1960';
+  %transfertemp = get_tempora_table($version);
 
-  if ($vtrans && (@lines = do_read("$datafolder/../horas/Latin/Tabulae/Tr$vtrans.txt"))) {
-    my $tr = join('', @lines);
-    $tr =~ s/\=/\;\;/g;
-    %transfertemp = split(';;', $tr);
-    $transfertemp = $transfertemp{$sday};
-  } else {
-    %transfertemp = undef;
-    $transfertemp = '';
-  }
+  $transfertemp = $transfertemp{$sday};
+
   if ($transfertemp && $transfertemp !~ /tempora/i) { $transfertemp = "$sanctiname/$transfertemp"; }
-  $dirgeline = '';
-  $dirge = 0;
 
-  if (@lines = do_read("$datafolder/../horas/Latin/Tabulae/Tr$vtrans$year.txt")) {
-    my $tr = join('', @lines);
-    $tr =~ s/\=/\;\;/g;
-    %transfer = split(';;', $tr);
-    if (exists($transfer{dirge})) { $dirgeline = $transfer{dirge}; }    #&& !$caller
-  }
+  %transfer = get_transfer_table($year, $version);
+
   $transfer = $transfer{$sday};
+  if (exists($transfer{"Hy$sday"})) { $hymncontract = 1; }
+  $dirgeline = $transfer{dirge};
 
   if ($transfer =~ /v$/ && !(-e "$datafolder/Latin/$sanctiname/$transfer.txt")) {
     $transfervigil = $transfer;
     $transfervigil =~ s/v$//;
     $transfer = '';
   }
-  if (exists($transfer{"Hy$sday"})) { $hymncontract = 1; }
-  if ($transfer && $transfer !~ /tempora/i) { $transfer = "$sanctiname/$transfer"; }
+
+  if ($transfer) {
+    if ($transfer !~ /tempora/i) { 
+      $transfer = "$sanctiname/$transfer"; }
+    elsif ($version =~ /monastic/i) {
+      $transfer =~ s/TemporaM?/TemporaM/;
+    }
+  } 
   $vespera = 3;
   $svesp = 3;
   $tvesp = 3;
   $cvespera = 0;
   my $tn = '';
+  $dayofweek = day_of_week($day, $month, $year);
 
   if ($dayname[0]) {
     $tn = "$temporaname/$dayname[0]-$dayofweek";
     if (exists($transfertemp{$tn})) { $tn = $transfertemp{$tn}; }
   }
   if (exists($transfertemp{$sday}) && $transfertemp{$sday} =~ /tempora/i) { $tn = $transfertemp{$sday}; }
-  if (exists($transfer{$sday}) && $transfer{$sday} =~ /tempora/i) { $tn = $transfer{$sday}; }
+  if ($transfer =~ /tempora/i) { $tn = $transfer; }
   $tn1 = '';
   $tn1rank = '';
   my $nday = nextday($month, $day, $year);
@@ -268,22 +115,16 @@ sub getrank {
 
   #Vespera anticipation  concurrence
   if (-e "$datafolder/Latin/$tn.txt" || $dayname[0] =~ /Epi0/i || ($transfer{$nday}) =~ /tempora/i) {
-    $dofw = $dayofweek;
 
     if ($hora =~ /(vespera|completorium)/i && $testmode !~ /(Saint|Common)/i) {
-      my $a = getweek(1);
-      my @a = split('=', $a);
-      $dn[0] = $a[0];
-      $dn[0] =~ s/\s*$//g;
-      $dn[0] =~ s/^\s*//g;
-      $dofw = ($dayofweek + 1) % 7;
-      $tn1 = "$temporaname/$dn[0]-$dofw";
+      my $weekname = getweek($day, $month, $year, 1);
+      $tn1 = sprintf("$temporaname/%s-%d", $weekname, ($dayofweek + 1) % 7);
 
       if (exists($transfertemp{$tn1})) {
         $tn1 = $transfertemp{$tn1};
       } elsif (exists($transfer{$tn1})) {
         $tn1 = $transfer{$tn1};
-      } elsif (exists($transfer{$nday}) && $transfer{$nday} =~ /tempora/i) {
+      } elsif (exists($transfer{$nday}) && $transfer{$nday} =~ $temporaname) {
         $tn1 = $transfer{$nday};
       }
 
@@ -341,7 +182,7 @@ sub getrank {
     $trank = $tempora{Rank};
     if ($version =~ /1960/ && $tn1 =~ /Nat1/i && $day =~ /(25|26|27|28)/) { $trank =~ s/;;5/;;4/; }
     @trank = split(";;", $trank);
-    $dayname[0] = $dn[0];
+    $dayname[0] = getweek($day, $month, $year, 1, $missa);
     $tvesp = 1;
   } elsif (!$trank) {
     $tname = '';
@@ -350,7 +191,7 @@ sub getrank {
   $initia = ($tempora{Lectio1} =~ /!.*? 1\:1\-/) ? $initia = 1 : 0;
 
   #handle sancti
-  $sn = "$sanctiname/$kalendar{$sday}";
+  $sn = "$sanctiname/" . get_kalendar($version, $sday);
 
   if ($transfertemp =~ /Sancti/) {
     $sn = $transfertemp;
@@ -426,7 +267,7 @@ sub getrank {
   if ($tname =~ /Nat/ && $cday =~ /Nat/) { $cday = 'none'; }
   $BMVSabbato = ($cday =~ /v/) ? 0 : 1;
   if ($hora =~ /(vespera|completorium)/i) {
-    if ($cday !~ /(tempora|DU)/i) { $cday = "$kalendar{$cday}"; }
+    if ($cday !~ /(tempora|DU)/i) { $cday = get_kalendar($version, $cday); }
     my $cdayd = $cday;
     if (!$cdayd || $cdayd !~ /([0-9]+\-[0-9]+)/) { $cdayd = nextday($month, $day, $year); }
     $cdayd = ($cdayd =~ /([0-9]+\-[0-9]+)/) ? $1 : '';
@@ -702,7 +543,7 @@ sub getrank {
     our $marian_commem = 0;
 
     if (transfered($tname)) {    #&& !$vflag)
-      if ($hora !~ /Completorium/i) { $dayname[2] = "Transfer $trank[0]"; }
+      if ($hora !~ /Vespera|Completorium/i) { $dayname[2] = "Transfer $trank[0]"; }
       $commemoratio = '';
     } elsif ($version =~ /1960|Newcal|Monastic/i && $winner{Rule} =~ /Festum Domini/i && $trank =~ /Dominica/i) {
       $trank = '';
@@ -915,55 +756,6 @@ sub extract_common($$) {
   return ($communetype, $commune);
 }
 
-#*** next day for vespera
-# input month, day, year
-# returns the name for saint folder
-sub nextday {
-
-  my $month = shift;
-  my $day = shift;
-  my $year = shift;
-  my $time = date_to_days($day, $month - 1, $year);
-  my @d = days_to_date($time + 1);
-
-  $month = $d[4] + 1;
-  $day = $d[3];
-  $year = $d[5] + 1900;
-  return get_sday($month, $day, $year);
-}
-
-#*** leapyear($year)
-# returns 1 if leapyear, otherwise 0
-sub leapyear {
-  my $year = shift;
-  if (($year % 400) == 0) { return 1; }
-  if (($year % 100) == 0) { return 0; }
-  if (($year % 4) == 0) { return 1; }
-  return 0;
-}
-
-#*** get_sday($month, $day, $year)
-# get a name (mm-dd) for sancti folder
-sub get_sday {
-  my $month = shift;
-  my $day = shift;
-  my $year = shift;
-
-  # The leap day is kept on 24 Feb, and is numbered internally as 29 Feb.
-  # Subsequent days in the calendar for the month are deferred by one day, so
-  # that offices ordinarily assigned to 24 Feb are kept on 25 Feb, and so on.
-  if (leapyear($year) && $month == 2) {
-    if ($day == 24) {
-      $day = 29;
-    }
-    elsif ($day > 24) {
-      $day -= 1;
-    }
-  }
-
-  $kalendarkey = sprintf("%02i-%02i", $month, $day);
-  return $kalendarkey;
-}
 
 #*** emberday
 # return 1 if emberday, 0 otherwise
@@ -1011,7 +803,22 @@ sub precedence {
   $dat1 = shift;
   if (!$dat1) { $dat1 = ($Tk || $Hk) ? $date1 : strictparam('date'); }
   $date1 = $dat1;
-  if ($votive =~ /hodie/ && !$Hk) { $date1 = gettoday(); }
+  if (!$date1 || $votive =~ /hodie/ && !$Hk) { $date1 = gettoday(); }
+
+  $date1 =~ s/\//\-/g;
+  ($month, $day, $year)= split('-', $date1);
+
+  if ($month < 1 || $month > 12 || $day < 1 || $day > 31) { 
+    error("Wrong date $date1 using today");
+    $date1 = '';
+  } elsif (sprintf("%04d%02d%02d", $year, $month, $day) < '15821015') {
+    error("Date $date1 is before Gregorian calendar using today.");
+    $date1 = '';
+  }
+
+  if (!$date1) { ($month, $day, $year) = split('-', gettoday()); }
+
+  @dayname = (getweek($day, $month, $year, 0, $missa));
 
   if (!$missa) {
     $vtv =
@@ -1024,24 +831,6 @@ sub precedence {
     $vtv = $votive unless ($votive eq 'Hodie');
   }
 
-  if ($date1) {
-    $date1 =~ s/\//\-/g;
-    @date1 = split('-', $date1);
-    $month = $date1[0];
-    $day = $date1[1];
-    $year = $date1[2];
-    if ($month < 1 || $month > 12 || $day < 1 || $day > 31) { $date1 = ''; }
-  }
-  if (!$date1) { ($month, $day, $year) = split('-', gettoday()); }
-
-  if ($month) {
-    $date1 = "$month-$day-$year";
-  } else {
-    $date1 = '';
-  }
-  @date1 = split('-', $date1);
-  $dayname = getweek(0);
-  @dayname = split('=', $dayname);
   our $C10 = 'C10';
   if ($missa) {
     $C10 .= ($dayname[0] =~ /Adv/i) ? 'a'
@@ -1055,7 +844,7 @@ sub precedence {
             : ($dayname[0] =~ /Pasc/i) ? 'p'
             : '';
   }
-  getrank();    #fills $winner, $commemoratio, $commune, $communetype, $rank);
+  getrank($day, $month, $year, $version);    #fills $winner, $commemoratio, $commune, $communetype, $rank);
   $duplex = 0;
 
   if ($dayname[1] && $dayname[1] !~ /duplex/i) {
@@ -1336,76 +1125,6 @@ sub precedence {
   if ($missa && $winner{Rank} =~ /Defunctorum/) { $votive = 'Defunct'; }
 }
 
-#*** monthday($forcetomorrow)
-# returns an empty string or mmn-d format
-# e.g. 081-1 for monday after the firs Sunday of August
-sub monthday {
-  my $forcetomorrow = shift;
-  my $tomorrow;
-
-  # Get tomorrow's date if the caller requested it or if we're saying first Vespers.
-  $tomorrow = ($forcetomorrow || $tvesp == 1);
-  if ($month < 7 || $dayname[0] =~ /Adv/i) { return ''; }
-  my @ftime = splice(@ftime, @ftime);
-  my ($fday, $fmonth);
-
-  for ($m = 8; $m < 13; $m++) {
-    my $t = date_to_days(1, $m - 1, $year);    #time for the first day of month
-    my @d = days_to_date($t);
-    my $dofweek = $d[6];
-
-    if ($version =~ /1960|Monastic/i) {
-      $fday = ($dofweek == 0) ? 1 : 8 - $dofweek;
-      $fmonth = $m;
-    } else {
-      my @ldays = (31, 31, 30, 31, 30);
-
-      if ($dofweek == 0) {
-        $fday = 1;
-        $fmonth = $m;
-      } elsif ($dofweek < 4) {
-        $fday = $ldays[$m - 8] - $dofweek + 1;
-        $fmonth = $m - 1;
-      } else {
-        $fday = 8 - $dofweek;
-        $fmonth = $m;
-      }
-    }
-    $ftime[$m - 8] = date_to_days($fday, $fmonth - 1, $year);
-  }
-  my ($d1, $m1, $y1, $dow) = ($day, $month, $year, $dayofweek);
-  if ($tomorrow) { ($d1, $m1, $y1) = nday($day, $month, $year); $dow = ($dayofweek + 1) % 7; }
-  my $ta = date_to_days($d1, $m1 - 1, $y1);
-  if ($ta < $ftime[0]) { return ''; }
-
-  for ($m = 9; $m < 13; $m++) {
-    if ($ta < $ftime[$m - 8]) { last; }
-  }
-
-  # $m is now *one more* than the current month, which explains the change of
-  # offset into @ftime from -8 to -9.
-  my $tdays = $ta - $ftime[$m - 9];
-  my $weeks = floor($tdays / 7);
-
-  # Special handling for October with the 1960 rubrics: the III. week vanishes
-  # in years when its Sunday would otherwise fall on the 18th-21st (i.e. when
-  # the first Sunday in October falls on 4th-7th).
-  $weeks++ if ($m == 11 && $version =~ /1960|Monastic/i && $weeks >= 2 && (days_to_date($ftime[11 - 9]))[3] >= 4);
-
-  # Special handling for November: the II. week vanishes most years (and always
-  # with the 1960 rubrics). Achieve this by counting backwards from Advent.
-  if ($m == 12 && ($weeks > 0 || $version =~ /1960|Monastic/i)) {
-    my $t = date_to_days($date1[1], $date1[0] - 1, $date1[2]);
-    if ($tomorrow) { $t += 1; }
-    my $advent1 = getadvent($year);
-    my $wdist = floor(($advent1 - $t - 1) / 7);
-    $weeks = 4 - $wdist;
-    if ($version =~ /1960|Monastic/ && $weeks == 1) { $weeks = 0; }
-  }
-  my $monthday = sprintf('%02i%01i-%01i', $m - 1, $weeks + 1, $dow);
-  return $monthday;
-}
-
 #*** officestring($basedir, $lang, $fname, $flag)
 # same as setupstring (in dialogcommon.pl = reads the hash for $fname office)
 # with the addition that for the monthly ferias/scriptures (aug-dec)
@@ -1426,7 +1145,7 @@ sub officestring($$$;$) {
     %s = updaterank(setupstring($basedir, $lang, $fname));
     return \%s;
   }
-  $monthday = monthday($flag);    #*** was $flag
+  $monthday = monthday($day, $month, $year, ($version =~ /1960|Monastic/) + 0, $flag);
 
   if (!$monthday) {
     %s = updaterank(setupstring($basedir, $lang, $fname));
@@ -1459,17 +1178,6 @@ sub officestring($$$;$) {
   return \%s;
 }
 
-#*** nday($day, $month, $year)
-# returns ($day, $month, $year) values for the following day
-sub nday {
-  my ($day, $month, $year) = @_;
-  my $time = date_to_days($day, $month - 1, $year);
-  my @d = days_to_date($time + 1);
-  $month = $d[4] + 1;
-  $day = $d[3];
-  $year = $d[5] + 1900;
-  return ($day, $month, $year);
-}
 
 #*** transfered($tname | $sday)
 # returns true if the day for season or saint is transfered
@@ -1561,13 +1269,12 @@ sub setheadline {
       if ($version =~ /(1955|1960|Newcal)/ && $winner !~ /Pasc5-3/i && $dayname[1] =~ /feria/i) { $rankname = 'Feria'; }
 
       if ($name =~ /Dominica/i && $version !~ /1960|Monastic/i) {
-        my $a = ($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i) ? getweek(1) : getweek(0);
-        my @a = split('=', $a);
+        local $_ = getweek($day, $month, $year, $dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i);
         $rankname =
-            ($a[0] =~ /Pasc[017]/i || $a[0] =~ /Pent01/i) ? 'Duplex I. classis'
-          : ($a[0] =~ /(Adv1|Quad[1-6])/i) ? 'Semiduplex I. classis'
-          : ($a[0] =~ /(Adv[2-4]|Quadp)/i) ? 'Semiduplex II. classis'
-          : ($a[0] =~ /(Epi[3-6])/i && $dayofweek > 0) ? 'Simplex'
+            (/Pasc[017]/i || /Pent01/i) ? 'Duplex I. classis'
+          : (/(Adv1|Quad[1-6])/i) ? 'Semiduplex I. classis'
+          : (/(Adv[2-4]|Quadp)/i) ? 'Semiduplex II. classis'
+          : (/(Epi[3-6])/i && $dayofweek > 0) ? 'Simplex'
           : 'Semiduplex Dominica minor';
       }
     } elsif ($version =~ /1960|Newcal|Monastic/i && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
@@ -1759,36 +1466,10 @@ sub date_to_days {
   if ($ret < -141427) { error("Date before the Gregorian Calendar!"); }
   return $ret;
 }
-
-#*** date_to_days1($day, $month-1, $year)
-# returns the number of days from the epoch 01-01-1070
-sub date_to_days1 {
-  my ($d, $m, $y) = @_;
-  if ($y > 1970 && $y < 2038) { floor(timelocal(0, 0, 12, $d, $m, $y) / 60 * 60 * 24); }
-
-  #my $dt = DateTime->new(year=>$y, month=>$m+1, day=>$d, hour=>6);
-  #my $days = $dt->delta_days(DateTime->new(year=>1970, month=>1, day=>1))->in_units('days');
-  #if ($dt->year() < 1970) {$days = -$days;}
-  return $days;
-}
-
-#*** days_to_date1($days)
-# returns the ($sec, $min, $hour, $day, $month-1, $year-1900, $wday, $yday, 0) array from the number of days from 01-01-1970
-sub days_to_date1 {
-  my $days = shift;
-  if ($days > 0 && $days < 24837) { return localtime($days * 60 * 60 * 24 + 12 * 60 * 60); }
-
-  #my $dt = DateTime->new(year=>1970, month=>1, day=>1)->add(days=>$days);
-  #my @d = ($dt->sec(), $dt->min(), $dt->hour(), $dt->day(), $dt->month()-1,$dt->year()-1900,
-  #  ($dt->wday() % 7), $dt->doy(), 0);
-  return @d;
-}
-
 #*** nooctnat()
 # returns 1 for 1960 not Christmas Octave days
 sub nooctnat {
-  if ($version =~ /1960|Monastic/i && ($month < 12 || $day < 25)) { return 1; }
-  return 0;
+  $version =~ /1960|Monastic/i && ($month < 12 || $day < 25)
 }
 
 # Latin spelling variety in versions

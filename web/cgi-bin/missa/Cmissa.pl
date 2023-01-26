@@ -131,6 +131,7 @@ $expandnum = strictparam('expandnum');
 $only = ($lang1 eq $lang2 && $version1 eq $version2) ? 1 : 0;
 
 setmdir($version1);
+$version = $version1;
 precedence($winner);    #fills our hashes et variables
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;

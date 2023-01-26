@@ -1258,7 +1258,7 @@ sub oratio {
       || ($commemoratio1 =~ /Tempora/i && $commemoratio1{Rank} =~ /;;[23]/))
     )
   {
-    $i = getind($commemoratio1, ($hora =~ /laudes/i) ? 2 : 3, $day);
+    $i = getind($commemoratio1, ($hora =~ /laudes/i) ? 2 : $vespera, $day);
     $w = getcommemoratio($commemoratio1, $i, $lang);
     my $num = concurrent_office($commemoratio1, 1, $day);
     if ($w) { setcc($w, $num, setupstring($datafolder, $lang, $commemoratio1)); }
@@ -1918,24 +1918,13 @@ sub getantvers {
 sub getseant {
   my $lang = shift;
   my $w = '';
-  my $ver =
-      ($version =~ /monastic/i) ? 'M'
-    : ($version =~ /1570/i) ? '1570'
-    : ($version =~ /Trid/i) ? '1910'
-    : ($version =~ /Newcal/) ? 'Newcal'
-    : ($version =~ /1960/) ? '1960'
-    : 'DA';
 
-  if (my @a = do_read("$datafolder/Latin/Tabulae/Str$ver$year.txt")) {
-    my $str = join('', @a);
-    $str =~ s/\=/;;/g;
-    $str =~ s/\s*//g;
-    my %c = split(';;', $str);
-    my $key = sprintf("seant%02i-%02i", $month, $day);
-    my $d = $c{$key};
+  my $key = sprintf("seant%02i-%02i", $month, $day);
+  if (my($d) = get_stransfer($year, $version, $key)) {
     my %w = %{setupstring($datafolder, $lang, "Tempora/$d.txt")};
     $w = $w{'Ant 3'};
   }
+
   return $w;
 }
 
