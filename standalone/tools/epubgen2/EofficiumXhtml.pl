@@ -63,6 +63,7 @@ our $duplex; #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
 
 #*** collect standard items
 require "$Bin/Ewebdia.pl";
+require "$Bin/headline.pl";
 
 #allow the script to be started directly from the "standalone/tools/epubgen2" subdirectory
 if( ! -e "$Bin/do_io.pl") {
@@ -84,22 +85,8 @@ binmode(STDOUT,':encoding(utf-8)');
 
 $q = new CGI;
 
-#replaced methods
-#*** build_comment_line_xhtml()
-#  Replacement for build_comment_line() from horascommon.pl
-#
-#  Sets $comment to the HTML for the comment line.
-sub build_comment_line_xhtml()
-{
-  our @dayname;
-  our ($comment, $marian_commem);
-
-  my $commentcolor = ($dayname[2] =~ /(Feria)/i) ? '' : ($marian_commem && $dayname[2] =~ /^Commem/) ? ' rb' : ' m';
-  $comment = ($dayname[2]) ? "<span class=\"s$commentcolor\">$dayname[2]</span>" : "";
-}
-
-
-#get parameters
+#Handle parameters given to the script.
+ 
 getini('horas'); #files, colors
 
 $setupsave = strictparam('setup');
@@ -113,15 +100,19 @@ our %translate; #translation of the skeleton label for 2nd language
 if (!$setupsave) {%setup = %{setupstring('.', '', 'Ehoras.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
-#if (!$setupsave && !getcookies('horasp', 'parameters')) {setcookies('horasp', 'parameters');}
-#if (!$setupsave && !getcookies('horasgp', 'general')) {setcookies('horasgp', 'general');}
-
 our $command = strictparam('command');
 our $hora = $command; #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
+my $h = $hora;
+if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Post)/i) { 
+  $h = " $1"; # parse out the second word of the command ('prayMatutinum' => ' Matutinum')
+} else {
+  die "Unrecognized value for parameter 'command' specified: '$hora'. Expected one of prayMatutinum, prayLaudes, prayTertia, praySexta, prayNona, prayVespera, prayCompletorium, prayAnte, prayPost";
+}
+
 our $date1 = strictparam('date1');
-if (!$date1) {$date1 = gettoday();}
-if ($command =~ /next/i) {$date1 = prevnext($date1, 1); $command = '';}
-if ($command =~ /prev/i) {$date1 = prevnext($date1, -1); $command = '';}
+if (!$date1) {
+	die "No date specified. Specify parameter 'date1' with a value in MM-DD-YYYY format (e.g. 09-28-2023).";
+}
 
 our $browsertime = strictparam('browsertime');
 our $buildscript = ''; #build script
@@ -140,12 +131,6 @@ our $nofancychars = strictparam('nofancychars');
 
 #*** handle different actions
 #after setup
-if ($command =~ /change/i ) {
- $command = $';
- getsetupvalue($command);
- #if ($command =~ /parameters/) {setcookies('horasp', 'parameters');}
-}
-
 eval($setup{'parameters'}); #$priest, $lang1, colors, sizes
 eval($setup{'general'});  #$expand, $version, $lang2
 
@@ -203,194 +188,29 @@ precedence($date1); #fills our hashes et variables
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;
 
-# prepare title
-$daycolor =   ($commune =~ /(C1[0-9])/) ? "blue" :
-   ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" :
-   ($dayname[1] =~ /duplex/i) ? "red" :
-    "grey";
-
-
-build_comment_line_xhtml();
-
 #prepare main pages
-my $h = $hora;
-if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Post|Setup)/i)
-  {$h = " $1";}
-else {$h = '';}
 $title = "Divinum Officium$h - $date1";
 @horas=getdialog('horas','~',0);
-for ($i = 0; $i < 10; $i++) {$hcolor[$i] = 'black';}
-#$completed = getcookie1('completed');
-if ($date1 eq gettoday() && $command =~ /pray/i && $completed < 8 &&
-    $command =~ substr($horas[$completed+1], 0, 4)) {
-  $completed++;
-  #setcookie1('completed', $completed);
-}
-for ($i = 1; $i <= $completed; $i++) {$hcolor[$i] = 'maroon';}
 
-#*** print pages (setup, hora=pray, mainpage)
-  #generate HTML
-  htmlHead($title, 2);
-  #note the whole content is wrapped in a <div> for XHTML standard compatibilty
-    print << "PrintTag";
-<body><div>
-PrintTag
+#*** print pages (hora=pray)
+#generate HTML
 
-if ($command =~ /setup/i) {
-  $pmode = 'setup';
-  $command = $';
-  setuptable($command);
+$pmode = 'hora';
+$command =~ s/(pray)//ig;
+$title = $command;
+$hora = $command;
+if (substr($title,-1) =~ /a/i) {$title .= 'm';}
 
-} elsif ($command =~ /pray/) {
-  $pmode = 'hora';
-  $command =~ s/(pray|change|setup)//ig;
-  $title = $command;
-  $hora = $command;
-  if (substr($title,-1) =~ /a/i) {$title .= 'm';}
+$head = ($title =~ /(Ante|Post)/i) ? "$title divinum officium" : "Ad $title";
+$head =~ s/Ad Vesperam/Ad Vesperas/i;
 
-  $head = ($title =~ /(Ante|Post)/i) ? "$title divinum officium" : "Ad $title";
-  $head =~ s/Ad Vesperam/Ad Vesperas/i;
+$headline = setheadline();
+headline();
 
-  $headline = setheadline();
-  headline($head);
-
-  horas($command);
-
-  print << "PrintTag";
-PrintTag
-
-} else {	#mainpage
-  $pmode = 'main';
-  $command = "";
-  $height = floor($screenheight * 4 / 12);
-  $height2 = floor($height / 2);
-
-  $headline = setheadline();
-  headline($title);
-}
-
-#common widgets for main and hora
-if ($pmode =~ /(main|hora)/i) {
-  if ($votive ne 'C9') {
-print << "PrintTag";
-<p class="cen">
-<a href="$date1-1-Matutinum.html">Matutinum</a>
-&nbsp;&nbsp;
-<a href="$date1-2-Laudes.html">Laudes</a>
-&nbsp;&nbsp;
-<a href="$date1-3-Prima.html">Prima</a>
-&nbsp;&nbsp;
-<a href="$date1-4-Tertia.html">Tertia</a>
-<br />
-<a href="$date1-5-Sexta.html">Sexta</a>
-&nbsp;&nbsp;
-<a href="$date1-6-Nona.html">Nona</a>
-&nbsp;&nbsp;
-<a href="$date1-7-Vespera.html">Vespera</a>
-&nbsp;&nbsp;
-<a href="$date1-8-Completorium.html">Completorium</a>
-PrintTag
-} else {
-print << "PrintTag";
-<p class="cen">
-<a href="$date1-1-Matutinum.html">Matutinum</a>
-&nbsp;&nbsp;
-<a href="$date1-2-Laudes.html">Laudes</a>
-&nbsp;&nbsp;
-<a href="$date1-7-Vespera.html">Vespera</a>
-&nbsp;&nbsp;
-
-PrintTag
-}
-
-if ($linkmissa) {
-print << "PrintTag";
-<br />
-<a href="$date1-9-Missa.html">Missa</a>
-PrintTag
-}
-print << "PrintTag";
-</p>
-PrintTag
-}
+horas($command, true);
 
 #common end for programs
-  if ($error) {print "<p class=\"cen rd\">$error</p>\n";}
-  if ($debug) {print "<P ALIGN=\"cen rd\">$debug</p>\n";}
+if ($error) {print "<p class=\"cen rd\">$error</p>\n";}
+if ($debug) {print "<p class=\"cen rd\">$debug</p>\n";}
 
-  $command =~ s/(pray|setup)//ig;
-
-  print << "PrintTag";
-</div></body></html>
-PrintTag
-
-
-
-#*** hedline($head) prints headlibe for main and pray
-sub headline {
-  my $head = shift;
-  if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=\"1\">" . $' . "</FONT>";}
-  my $h = ($hora =~ /(Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium)/i) ? $hora : '';
-  my $daten = prevnext($date1, 1);
-  my $datep = prevnext($date1, -1);
-
-  #convert $daycolor to $daycolorclass
-  my $daycolorclass=""; #rely on default being black font color
-  if($daycolor eq "blue") {$daycolorclass="rb";}
-  elsif($daycolor eq "gray") {$daycolorclass="rb";}
-  elsif($daycolor eq "red") {$daycolorclass="rd";}
-
-  print << "PrintTag";
-<p class="cen"><span class="$daycolorclass">$headline<br /></span>
-$comment<br /><br />
-<span class="c">$h</span>&nbsp;&nbsp;&nbsp;
-<a href="$datep-1-Matutinum.html">&darr;</a>
-$date1
-<a href="$daten-1-Matutinum.html">&uarr;</a>
-</p>
-<p class="cen">
-<a href="$date1-1-Matutinum.html">Matutinum</a>
-&nbsp;&nbsp;
-<a href="$date1-2-Laudes.html">Laudes</a>
-&nbsp;&nbsp;
-<a href="$date1-3-Prima.html">Prima</a>
-&nbsp;&nbsp;
-<a href="$date1-4-Tertia.html">Tertia</a>
-<br />
-<a href="$date1-5-Sexta.html">Sexta</a>
-&nbsp;&nbsp;
-<a href="$date1-6-Nona.html">Nona</a>
-&nbsp;&nbsp;
-<a href="$date1-7-Vespera.html">Vespera</a>
-&nbsp;&nbsp;
-<a href="$date1-8-Completorium.html">Completorium</a>
-PrintTag
-
-if ($linkmissa) {
-print << "PrintTag";
-<br />
-<a href="$date1-9-Missa.html">Missa</a>
-PrintTag
-}
-
-print << "PrintTag";
-</p>
-PrintTag
-
-}
-
-sub prevnext {
-  my $date1 = shift;
-  my $inc = shift;
-
-  $date1 =~ s/\//\-/g;
-  my ($month,$day,$year) = split('-',$date1);
-
-  my $d= date_to_days($day,$month-1,$year);
-
-  my @d = days_to_date($d + $inc);
-  $month = $d[4]+1;
-  $day = $d[3];
-  $year = $d[5]+1900;
-  return sprintf("%02i-%02i-%04i", $month, $day, $year);
-}
+print "</div></body></html>";
