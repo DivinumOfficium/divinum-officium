@@ -13,7 +13,7 @@ my @lines;
 my $precesferiales;
 $a = 1;
 
-#*** horas($hora, $supressHead)
+#*** horas($hora)
 # collects and prints the officium for the given $hora
 # first let specials to fill the chapters
 # then break the text into units (separated by double newline)
@@ -21,8 +21,6 @@ $a = 1;
 #and prints the result
 sub horas {
   my $command = shift;
-  my $supressHead = shift || false;
-  
   $hora = $command;
   my $head = "Ad $command";
   $head =~ s/a$/am/;
@@ -30,7 +28,7 @@ sub horas {
     $hora = 'Vespera';
     $head = 'Ad Vesperas';
   }
-  unless ($supressHead) { print "<H2 ID='${hora}top'>$head</H2>\n" if ($0 !~ /Cofficium/); }
+  print "<H2 ID='${hora}top'>$head</H2>\n" if ($0 !~ /Cofficium/);
   our $canticum = 0;
   our $reciteindex = 0;
   our $recitelimit = 0;
