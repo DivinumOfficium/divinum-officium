@@ -21,3 +21,14 @@ Zmiłuj się nade mną, Synu Dawidów! Co chcesz, abym Ci uczynił? Panie, abym 
 V. Podnieś się, Panie, w mocy twojéj.
 R. Będziem śpiewać i wysławiać możności twoje.
 
+[Lectio10]
+@Tempora/Quadp3-0:Lectio8:s/Ślepcem .*//s
+
+[Lectio11]
+@Tempora/Quadp3-0:Lectio8:s/.* Ślepcem /Ślepcem /s s/$/~/
+@Tempora/Quadp3-0:Lectio9:s/Gdy więc .*//s
+
+[Lectio12]
+@Tempora/Quadp3-0:Lectio9:s/.* Gdy więc /Gdy więc /s
+
+
