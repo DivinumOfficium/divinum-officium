@@ -1,11 +1,13 @@
 [Adv1-0]
 rank=Dominica Maior Semiduplex I. classis
 
-[Adv2-0] (rubrica 1960)
-rank=Dominica Maior Semiduplex I. classis
+[Adv2-0]
+rank=Dominica Maior Semiduplex II. classis
+(sed rubrica 1960) rank=Dominica Maior Semiduplex I. classis
 
-[Adv3-0] (rubrica 1960)
-rank=Dominica Maior Semiduplex I. classis
+[Adv3-0]
+rank=Dominica Maior Semiduplex II. classis
+(sed rubrica 1960) rank=Dominica Maior Semiduplex I. classis
 
 [Adv3-3]
 Feria IV Quattuor Temporum in Adventu
@@ -19,8 +21,9 @@ Feria VI Quattuor Temporum in Adventu
 Sabbato Quattuor Temporum in Adventu
 (sed rubrica 1960) Sabbato Quattuor Temporum Adventus
 
-[Adv4-0] (rubrica 1960)
-rank=Dominica Maior Semiduplex I. classis
+[Adv4-0]
+rank=Dominica Maior Semiduplex II. classis
+(sed rubrica 1960) rank=Dominica Maior Semiduplex I. classis
 
 [Adv4-6]
 Sabbato in Hebdomadam IV Adventus
@@ -759,6 +762,7 @@ octid=CorpusChristi
 
 [Pent02-0]
 Dominica II Post Pentecosten infra Octavam Corporis Christi
+Dominica Semiduplex II. classis
 (rubrica 1570) filename=Tempora/Pent02-0o
 
 [Pent02-0] (rubrica 1960)
@@ -813,6 +817,7 @@ filename=Tempora/Pent02-6Feria
 
 [Pent03-0]
 Dominica III Post Pentecosten, infra Octavam SSmi Cordis D.N.J.C
+Dominica Semiduplex II. classis
 
 [Pent03-0] (rubrica Rubrics 1960)
 filename=Tempora/Pent03-0r
