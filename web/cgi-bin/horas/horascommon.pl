@@ -523,6 +523,7 @@ sub getrank {
       %saint = %csaint;
       %csaint = %tempsaint;
       @srank = split(";;", $srank);
+      $srank[2] = 1 if ($version =~ /trident|divino/i && $tname =~ /Quadp3\-2/i);
       @crank = split(";;", $crank);
       $vflag = 1;
 
