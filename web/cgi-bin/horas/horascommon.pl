@@ -1483,6 +1483,7 @@ sub transfered {
   my $key;
 
   foreach $key (keys %transfer) {
+    next unless ($transfer{$key});
     if ($transfer{$key} =~ /Tempora/i && $transfer{$key} !~ /Epi1\-0/i) { next; }
 
     if ( $key !~ /(dirge|Hy)/i
