@@ -178,7 +178,7 @@ $setupsave =~ s/\r*\n*//g;
 $hora = '';
 $odate = $date1;
 
-$command = strictparam('command');
+(my $command = strictparam('command')) =~ s/^pray//;
 if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Past)/i) {
   $command = "pray" . ($compare ? $1 : $command); # Cofficium can't use Plures
 }
