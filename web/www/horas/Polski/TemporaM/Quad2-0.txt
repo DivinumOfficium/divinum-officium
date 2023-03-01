@@ -2,9 +2,15 @@
 Uczyńmy tu trzy przybytki: Tobie jeden, Mojżeszowi jeden i Eliaszowi jeden.;;269;270;271
 
 [Lectio9]
-@Tempora/Quad2-0:Lectio7:s/Bo owego.*//s
+@Tempora/Quad2-0:Lectio7:s/Albowiem.*//s
 
 [Lectio10]
-@Tempora/Quad2-0:Lectio7:s/.*Bo owego/Bo owego/s
-@Tempora/Quad2-0:Lectio8:s/This is My Son between.*//s
+@Tempora/Quad2-0:Lectio7:s/.*Albowiem/Albowiem/s
+@Tempora/Quad2-0:Lectio8:s/Ten jest Syn mój,.*//s
 
+[Lectio11]
+@Tempora/Quad2-0:Lectio8:s/.* Ten jest Syn mój,/Ten jest Syn mój,/s s/$/~/
+@Tempora/Quad2-0:Lectio9:s/Ten jest Syn mój, który.*//s
+
+[Lectio12]
+@Tempora/Quad2-0:Lectio9:s/.*Ten jest Syn mój,/Ten jest Syn mój,/s
