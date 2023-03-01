@@ -440,7 +440,8 @@ sub getrank {
     if (-e "$datafolder/Latin/$cday.txt") {
       $cname = "$cday.txt";
       %csaint = updaterank(setupstring($datafolder, 'Latin', "$cname"));
-      $BMVSabbato = ($csaint{Rank} =~ /Vigilia/) ? 0 : 1;
+      @crank = split(";;", $csaint{Rank});
+      $BMVSabbato = $csaint{Rank} !~ /Vigilia/ && $crank[2] < 2;
       $crank = ($csaint{Rank} =~ /vigilia/i && $csaint{Rank} !~ /(;;[56]|Epi)/i) ? '' : $csaint{Rank};
       if ($crank =~ /(Feria|Vigilia)/i && $csaint{Rank} !~ /in Vigilia Epi/i) { $crank = ''; }
     }
