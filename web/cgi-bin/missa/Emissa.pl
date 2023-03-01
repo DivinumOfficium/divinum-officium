@@ -174,17 +174,19 @@ $only = 1; # single-column
 ordo();
 
 #common end for programs
-if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
-if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
+if ($error) { print "<p align=center><font color=red>$error</font></p>\n"; }
+if ($debug) { print "<p align=center><font color=blue>$debug</font></p>\n"; }
+print "</body></html>";
 
 #*** hedline($head) prints headlibe for main and pray
 sub headline {
     my $head = shift;
-    $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
+    $headline =~ s{!(.*)}{<font size="1">$1</font>}s;
   my $daten = prevnext($date1, 1);
   my $datep = prevnext($date1, -1);
     print << "PrintTag";
-<P ALIGN=CENTER><a href="$datep-9-Missa.html">&darr;</a>
+<?xml version='1.0' encoding='utf-8'?><html xmlns="http://www.w3.org/1999/xhtml"><head/><body>
+<p align="center"><a href="$datep-9-Missa.html">&darr;</a>
 $date1
 <a href="$daten-9-Missa.html">&uarr;</a>
 <br />
@@ -204,10 +206,10 @@ $date1
 &nbsp;&nbsp;
 <a href="$date1-8-Completorium.html">Completorium</a>
 <br />
-<FONT COLOR=$daycolor>$headline<BR></FONT>
-$comment<BR>
-<a href="$date1-9-Missa.html"><FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT></a>
-</P>
+<font color="$daycolor">$headline<br></font>
+$comment<br>
+<a href="$date1-9-Missa.html"><font color="maroon" size="+1"><b><i>$head</i></b></font></a>
+</p>
 PrintTag
 }
 
