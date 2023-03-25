@@ -1,0 +1,23 @@
+[Lectio5]
+@Commune/C1a:Lectio4:s/Auf Grund des Beschauens.*//s
+
+[Lectio6]
+@Commune/C1a:Lectio4:s/.*Auf Grund des Beschauens/Auf Grund des Beschauens/s s/$/~/
+@Commune/C1a:Lectio5:s/Also vier Gesichter.*//
+
+[Lectio7]
+@Commune/C1a:Lectio5:s/.* Also vier Gesichter/Also vier Gesichter/s s/$/~/
+@Commune/C1a:Lectio6:s/Das Gesicht der Evangelisten.*//
+
+[Lectio8]
+@Commune/C1a:Lectio6:s/.* Das Gesicht der Evangelisten/Das Gesicht der Evangelisten/s
+
+[Lectio9]
+@Commune/C1a:Lectio7:s/Von keinem.*//s
+
+[Lectio10]
+@Commune/C1a:Lectio7:s/.* Von keinem /Von keinem /s s/$/~/
+@Commune/C1a:Lectio8:s/Richtig .*//s
+
+[Lectio11]
+@Commune/C1a:Lectio8:s/.* Richtig /Richtig /s

@@ -440,7 +440,8 @@ sub getrank {
     if (-e "$datafolder/Latin/$cday.txt") {
       $cname = "$cday.txt";
       %csaint = updaterank(setupstring($datafolder, 'Latin', "$cname"));
-      $BMVSabbato = ($csaint{Rank} =~ /Vigilia/) ? 0 : 1;
+      @crank = split(";;", $csaint{Rank});
+      $BMVSabbato = $csaint{Rank} !~ /Vigilia/ && $crank[2] < 2;
       $crank = ($csaint{Rank} =~ /vigilia/i && $csaint{Rank} !~ /(;;[56]|Epi)/i) ? '' : $csaint{Rank};
       if ($crank =~ /(Feria|Vigilia)/i && $csaint{Rank} !~ /in Vigilia Epi/i) { $crank = ''; }
     }
@@ -523,6 +524,7 @@ sub getrank {
       %saint = %csaint;
       %csaint = %tempsaint;
       @srank = split(";;", $srank);
+      $srank[2] = 1 if ($version =~ /trident|divino/i && $tname =~ /Quadp3\-2/i);
       @crank = split(";;", $crank);
       $vflag = 1;
 
@@ -819,6 +821,7 @@ sub getrank {
         && $climit1960
         && ($w{Rule} !~ /No commemoratio/i
           || ($svesp == 1 && $hora =~ /vespera/i))
+        && $sname !~ /12-20o/
         )
       {
         $laudesonly = ($missa) ? '' : ($climit1960 > 1) ? ' ad Laudes tantum' : '';
@@ -1481,6 +1484,7 @@ sub transfered {
   my $key;
 
   foreach $key (keys %transfer) {
+    next unless ($transfer{$key});
     if ($transfer{$key} =~ /Tempora/i && $transfer{$key} !~ /Epi1\-0/i) { next; }
 
     if ( $key !~ /(dirge|Hy)/i

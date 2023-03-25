@@ -45,7 +45,9 @@ OPTIONS:
    -c FILENAME The cover image to use without path. It must be a file in the data
                directory. Defaults to "cover.jpg".
 
-   -o PATH     The output directory. Defaults to the current directory.
+   -o PATH     The output directory. Defaults to "output".
+
+   -f          If specified, use "fancy" characters: [℟ ℣ +︎ ✠ ✙︎]
 
 EOF
 
@@ -61,11 +63,13 @@ PRIEST='' #has to be empty or '&priest=yes'
 VOTIVE='' #='C12' for Parvum B.M.V.
 MISSA='' #=1 to include Mass propers
 CDUR=$(pwd)
-EPUBDIR=$CDUR #output
+EPUBDIR=$CDUR/output #output directory, defaults to "output" subdirectory in the folder this script is in.
 COVER_FILENAME=cover.jpg #a jpg file name to serve as cover (it has to exist in SOURCEDATADIR) #ascensio.jpg
 RUBRICS_CODE=1960
 RUBRICS=Rubrics%201960
 RUBRICS_NAME=
+NOFANCYCHARS=1 #0 or 1; when 1, "fancy" characters such as  ℟ ℣ +︎ ✠ ✙︎ are replaced with R. V. + + +
+OPTIONAL_KINDLEGEN_PATH=/usr/local/bin/kindlegen #full path to kindlegen executable, if exists, used to convert the resulting EPUB files to MOBI format as well
 
 #constants
 #supported rubrics as in Eofficium.pl
@@ -76,7 +80,7 @@ ALL_RUBRICS_NAME=("_Monastic" "_1570" "_1910" "_DA" "_1955" "" "NC")
 YEAR_RE='^[0-9]+$'
 
 #parse parameters
-while getopts "hy:t:pvmr:c:o:" OPTION
+while getopts "hy:t:pvmr:c:o:f" OPTION
 do
      case $OPTION in
          h)
@@ -105,8 +109,8 @@ do
              VOTIVE='C12'
              ;;
          m)
-	     MISSA=1
-	     ;;
+             MISSA=1
+             ;;
          r)
              RUBRICS_CODE=$OPTARG
              #make sure the value is one of the expected values
@@ -131,7 +135,9 @@ do
              BLANG=$OPTARG
              #TODO: validate the value
              ;;
-
+		 f)
+             NOFANCYCHARS=0
+             ;;
          ?)
              usage
              exit
@@ -164,9 +170,14 @@ then
 	echo "Cover image not found in: $SOURCEDATADIR/$COVER_FILENAME" >&2; exit 1
 fi
 
+#check if output directory exists and attempt to create it if it does not
 if [[ ! -d $EPUBDIR ]]
 then
-	echo "Output path does not exist or is not a directory: $EPUBDIR" >&2; exit 1
+	mkdir $EPUBDIR
+	if [[ ! -d $EPUBDIR ]]
+	then
+		echo "Output path does not exist or is not a directory (and could not be created): $EPUBDIR" >&2; exit 1
+	fi
 fi
 
 #handle the case when "from" year is greater than "to" year
@@ -297,11 +308,11 @@ foreachHourInRange() {
 #################################################################################################################
 
 generateHour() {
-	echo -ne "Generating $FILENAME\r"
+	echo -ne "Generating $FILENAME                \r" # with spaces to clean the line
 	if [[ ${H} -eq 8 && $MISSA ]]; then
-		$EMISSACMD "date=$DATE_SCRIPT&command=&version=$RUBRICS&lang2=$BLANG" > $WDIR/$FILENAME
+		$EMISSACMD "date=$DATE_SCRIPT&command=&version=$RUBRICS&lang2=$BLANG&nofancychars=$NOFANCYCHARS" > $WDIR/$FILENAME
 	else
-		$EOFFICCIUMCMD "date1=$DATE_SCRIPT&command=pray${HORAS_NAMES[${H}]}&version=$RUBRICS&testmode=regular&lang2=$BLANG&votive=$VOTIVE$PRIEST" > $WDIR/$FILENAME
+		$EOFFICCIUMCMD "date1=$DATE_SCRIPT&command=pray${HORAS_NAMES[${H}]}&version=$RUBRICS&testmode=regular&lang2=$BLANG&votive=$VOTIVE$PRIEST&linkmissa=$MISSA&nofancychars=$NOFANCYCHARS" > $WDIR/$FILENAME
 	fi
 }
 
@@ -336,9 +347,9 @@ outputMonthTOC() {
 }
 
 printTOC_Header() {
-	printf '<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="la">
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Breviarium $YEAR-$MONTH$RUBRICS_NAME</title></head><body><div>'
+	printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">
+<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"la\">
+<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><title>Breviarium $YEAR-$MONTH$RUBRICS_NAME</title></head><body><div>"
 }
 printTOC_Footer() {
 	printf '</div></body></html>\n'
@@ -675,6 +686,34 @@ createEPUBs() {
 	echo -e "\e[1m:: Finished the creation of EPUBs\e[0m"
 }
 
+
+#################################################################################################################
+#  MOBI format
+#################################################################################################################
+
+convertMOBIMonth() {
+	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR-$MONTH$RUBRICS_NAME.epub"
+	$OPTIONAL_KINDLEGEN_PATH $EPUB_FILENAME
+}
+
+convertMOBIYear() {
+	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR$RUBRICS_NAME.epub"
+	$OPTIONAL_KINDLEGEN_PATH $EPUB_FILENAME
+}
+
+createMOBIs() {
+	if [[ ! -e "$OPTIONAL_KINDLEGEN_PATH" ]]
+	then
+		echo "\e[1m:: KindleGen not found in $OPTIONAL_KINDLEGEN_PATH, skipping the conversion to of MOBI format. \e[0m"
+	else
+		echo -e "\e[1m:: Starting the conversion to MOBI format for each month\e[0m"
+		foreachMonthInRange convertMOBIMonth
+		echo -e "\e[1m:: Starting the conversion to MOBI format for each year\e[0m"
+		foreachYear convertMOBIYear
+		echo -e "\e[1m:: Finished the conversion to MOBI format\e[0m"
+	fi	
+}
+
 #################################################################################################################
 #  launch
 #################################################################################################################
@@ -682,3 +721,4 @@ generateHours #generate the main HTML files
 generateTOCs #generate Table Of Content main HTML pages (used by both EPUB and MOBI formats)
 generateOPF  #generate OPF files (descriptors needed both for the EPUB and for the kindlegen to generate MOBI)
 createEPUBs
+createMOBIs

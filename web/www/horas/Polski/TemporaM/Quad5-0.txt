@@ -1,7 +1,14 @@
 [Lectio9]
-@Tempora/Quad5-0:Lectio7:s/Odwieczna .*//s
+@Tempora/Quad5-0:Lectio7:s/Prawda .*//s
 
 [Lectio10]
-@Tempora/Quad5-0:Lectio7:s/.* Odwieczna /Odwieczna /s
-@Tempora/Quad5-0:Lectio8:s/They .*//s
+@Tempora/Quad5-0:Lectio7:s/.* Prawda /Prawda /s s/$/~/
+@Tempora/Quad5-0:Lectio8:s/Ci, .*//s
+
+[Lectio11]
+@Tempora/Quad5-0:Lectio8:s/.* Ci,/Ci,/s s/$/~/
+@Tempora/Quad5-0:Lectio9:s/Posłuchajmy.*//s
+
+[Lectio12]
+@Tempora/Quad5-0:Lectio9:s/.* Posłuchajmy/Posłuchajmy/s
 
