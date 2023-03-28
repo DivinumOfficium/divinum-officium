@@ -1,7 +1,6 @@
-01-03=01-00;;Newcal
+#= sunday letter: c, rule number: 14, next: 2083, prev: 2021
 01-03=01-06;;Newcal
-01-03=Tempora/Nat2-0;;1910 1960 DA M
-01-10=Tempora/Epi1-0a;;1570 1910
+01-03=Tempora/Nat2-0;;1910 1960 DA Newcal
 01-30=Tempora/Epi4-0;;1570 1910 DA
 01-30=Tempora/Epi4-0tt;;1570 1910
 02-23=02-23-petri-damiani;;DA
@@ -11,7 +10,6 @@
 10-30=10-31v;;1570 1910 DA
 10-31=10-DU;;DA M
 10-31=10-DUr;;1960 Newcal
-10-31=Tempora/XPRex;;DA
 11-15=11-14;;M
 11-29=11-29r;;1570 1910 DA
 12-26=Tempora/Nat1-0;;1960 Newcal M
