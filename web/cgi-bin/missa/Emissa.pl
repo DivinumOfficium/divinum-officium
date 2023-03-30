@@ -22,6 +22,7 @@ use Time::Local;
 use locale;
 use lib "$Bin/..";
 use DivinumOfficium::Main qw(vernaculars liturgical_color);
+use DivinumOfficium::Date qw(prevnext);
 $error = '';
 $debug = '';
 
@@ -211,22 +212,6 @@ $comment<br>
 <a href="$date1-9-Missa.html"><font color="maroon" size="+1"><b><i>$head</i></b></font></a>
 </p>
 PrintTag
-}
-
-sub prevnext {
-  my $date1 = shift;
-  my $inc = shift;
-
-  $date1 =~ s/\//\-/g;
-  my ($month,$day,$year) = split('-',$date1);
-
-  my $d= date_to_days($day,$month-1,$year);
-
-  my @d = days_to_date($d + $inc);
-  $month = $d[4]+1;
-  $day = $d[3];
-  $year = $d[5]+1900;
-  return sprintf("%02i-%02i-%04i", $month, $day, $year);
 }
 
 # the sub is called from htmlhead
