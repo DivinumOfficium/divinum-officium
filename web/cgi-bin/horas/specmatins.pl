@@ -6,6 +6,7 @@ use utf8;
 # Divine Office Matins subroutines
 use FindBin qw($Bin);
 use lib "$Bin/..";
+use DivinumOfficium::Directorium qw(get_stransfer);
 
 # Defines ScriptFunc and ScriptShortFunc attributes.
 use horas::Scripting;
@@ -715,8 +716,10 @@ sub lectio : ScriptFunc {
   }
 
   #** handle initia table (Str$ver$year)
-  my $file = initiarule($month, $day, $year);
-  if ($file) { %w = resolveitable(\%w, $file, $lang); }
+  if ($num < 4 && $version !~ /monastic/i) {
+    my $file = initiarule($month, $day, $year);
+    if ($file) { %w = resolveitable(\%w, $file, $lang); }
+  }
 
   #StJamesRule
   if ($num < 4 && $rule =~ /StJamesRule=([a-z,]+)\s/i)    #was also: && $version !~ /1961/
@@ -1410,26 +1413,13 @@ sub ant_matutinum {
 #*** initiarule($month, $day, $year)
 # returns the key from the proper Str$ver$year table for the date
 sub initiarule {
-
   my $month = shift;
   my $day = shift;
   my $year = shift;
-  my $ver =
-      ($version =~ /monastic/i) ? 'M'
-    : ($version =~ /1570/i) ? '1570'
-    : ($version =~ /Trid/) ? '1910'
-    : ($version =~ /1960/) ? '1960'
-    : 'DA';
-  my @lines;
 
-  if ($num < 4 && $version !~ /monastic/i && (@lines = do_read("$datafolder/Latin/Tabulae/Str$ver$year.txt"))) {
-    my $str = join('', @lines);
-    $str =~ s/\=/\;\;/g;
-    my %str = split(';;', $str);
-    my $key = sprintf("%02i-%02i", $month, $day);
-    if (exists($str{$key})) { return $str{$key}; }
-  }
-  return '';
+  my $key = sprintf("%02i-%02i", $month, $day);
+
+  return get_stransfer($year, $version, $key);
 }
 
 #*** resolveitable(\%w, $file, $lang)

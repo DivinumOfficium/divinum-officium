@@ -996,10 +996,7 @@ sub martyrologium : ScriptFunc {
   my $lang = shift;
   my $t = setfont($largefont, "Martyrologium ") . setfont($smallblack, "(anticip.)") . "\n";
 
-  my $a = getweek(1);
-  my @a = split('=', $a);
-  $a = "$a[0]-$nextdayofweek";
-  $a =~ s/\s//g;
+  my $a = getweek($day, $month, $year, 1) . "-" . (($dayofweek + 1) % 7);
   my %a = %{setupstring($datafolder, $lang, "Martyrologium/Mobile.txt")};
 
   if ($version =~ /1570/ && $lang =~ /Latin/i) {
