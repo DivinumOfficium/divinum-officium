@@ -663,7 +663,13 @@ sub horas_menu {
 }
 
 sub bottom_links_menu {
-  join("&nbsp;&nbsp;&nbsp;&nbsp;\n",
-        map { "<A HREF=\"../../www/horas/Help/" . lcfirst($_) . ".html\" TARGET=\"_BLANK\">$_</A>\n";} 
-            qw(Versions Credits Download Rubrics Technical Help));
+  my($compare) = shift;
+
+  my @options = map { "<A HREF=\"../../www/horas/Help/" . lcfirst($_) . ".html\" TARGET=\"_BLANK\">$_</A>\n";} 
+                  qw(Versions Credits Download Rubrics Technical Help);
+  if ($compare) {
+    unshift(@options, qq(<A HREF=# onclick="pset('parameters')">Options</A>\n));
+    unshift(@options, qq(<A HREF=# onclick="callbrevi(\'$date1\')">One version</A>\n));
+  }
+  join("&nbsp;&nbsp;&nbsp;&nbsp;\n", @options);
 }

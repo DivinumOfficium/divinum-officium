@@ -13,6 +13,14 @@ my @lines;
 my $precesferiales;
 $a = 1;
 
+sub adhoram {
+  my $hora = shift;
+  my $head = "Ad $hora";
+  $head =~ s/a$/am/;
+  $head = 'Ad Vesperas' if $hora =~ /vesper/i;
+  $head
+}
+
 #*** horas($hora)
 # collects and prints the officium for the given $hora
 # first let specials to fill the chapters
@@ -22,13 +30,8 @@ $a = 1;
 sub horas {
   my $command = shift;
   $hora = $command;
-  my $head = "Ad $command";
-  $head =~ s/a$/am/;
-  if ($hora =~ /vesper/i) {
-    $hora = 'Vespera';
-    $head = 'Ad Vesperas';
-  }
-  print "<H2 ID='${hora}top'>$head</H2>\n" if ($0 !~ /Cofficium/);
+  $hora = 'Vespera' if $hora =~ /vesper/i;
+  print "<H2 ID='${hora}top'>" . adhoram($hora) ."</H2>\n" if ($0 !~ /Cofficium/);
   our $canticum = 0;
   our $reciteindex = 0;
   our $recitelimit = 0;
