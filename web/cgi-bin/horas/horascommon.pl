@@ -11,7 +11,7 @@ use FindBin qw($Bin);
 use lib "$Bin/..";
 use horas::Scripting qw(dispatch_script_function parse_script_arguments);
 use DivinumOfficium::Date qw(getweek leapyear geteaster get_sday nextday day_of_week monthday);
-use DivinumOfficium::Directorium qw(get_kalendar get_transfer_table get_tempora_table);
+use DivinumOfficium::Directorium qw(get_kalendar get_transfer get_tempora transfered);
 
 sub error {
   my $t = shift;
@@ -61,22 +61,16 @@ sub getrank {
   my @trank = ();
   my @srank = ();
   our $transfervigil = '';
-  our %transfer;
-  our $hymncontract = 0;
 
   my $sday = get_sday($month, $day, $year);
 
-  %transfertemp = get_tempora_table($version);
-
-  $transfertemp = $transfertemp{$sday};
+  $transfertemp = get_tempora($version, $sday);
 
   if ($transfertemp && $transfertemp !~ /tempora/i) { $transfertemp = "$sanctiname/$transfertemp"; }
 
-  %transfer = get_transfer_table($year, $version);
-
-  $transfer = $transfer{$sday};
-  if (exists($transfer{"Hy$sday"})) { $hymncontract = 1; }
-  $dirgeline = $transfer{dirge};
+  $transfer = get_transfer($year, $version, $sday);
+  our $hymncontract = get_transfer($year, $version, "Hy$sday");
+  our $dirgeline = get_transfer($year, $version, 'dirge');
 
   if ($transfer =~ /v$/ && !(-e "$datafolder/Latin/$sanctiname/$transfer.txt")) {
     $transfervigil = $transfer;
@@ -100,9 +94,10 @@ sub getrank {
 
   if ($dayname[0]) {
     $tn = "$temporaname/$dayname[0]-$dayofweek";
-    if (exists($transfertemp{$tn})) { $tn = $transfertemp{$tn}; }
+    my $t =get_tempora($version, $tn); 
+    $tn = $t || $tn;
   }
-  if (exists($transfertemp{$sday}) && $transfertemp{$sday} =~ /tempora/i) { $tn = $transfertemp{$sday}; }
+  if ($transfertemp && $transfertemp =~ /tempora/i) { $tn = $transfertemp; }
   if ($transfer =~ /tempora/i) { $tn = $transfer; }
   $tn1 = '';
   $tn1rank = '';
@@ -114,18 +109,19 @@ sub getrank {
   if ($testmode =~ /(Saint|Common)/i) { $tn = 'none'; }
 
   #Vespera anticipation  concurrence
-  if (-e "$datafolder/Latin/$tn.txt" || $dayname[0] =~ /Epi0/i || ($transfer{$nday}) =~ /tempora/i) {
+  my $tnday = get_transfer($year, $version, $nday);
+  if (-e "$datafolder/Latin/$tn.txt" || $dayname[0] =~ /Epi0/i || ($tnday && $tnday =~ /tempora/i)) {
 
     if ($hora =~ /(vespera|completorium)/i && $testmode !~ /(Saint|Common)/i) {
       my $weekname = getweek($day, $month, $year, 1);
       $tn1 = sprintf("$temporaname/%s-%d", $weekname, ($dayofweek + 1) % 7);
 
-      if (exists($transfertemp{$tn1})) {
-        $tn1 = $transfertemp{$tn1};
-      } elsif (exists($transfer{$tn1})) {
-        $tn1 = $transfer{$tn1};
-      } elsif (exists($transfer{$nday}) && $transfer{$nday} =~ $temporaname) {
-        $tn1 = $transfer{$nday};
+      if (my $t = get_tempora($version, $tn1)) {
+        $tn1 = $t;
+      } elsif ($t = get_transfer($year, $version, $tn1)) {
+        $tn1 = $t;
+      } elsif ($tnday && $tnday =~ $temporaname) {
+        $tn1 = $tnday;
       }
 
       #$tvesp = 1;
@@ -164,7 +160,7 @@ sub getrank {
     $trank = '';
     $tname = '';
   }
-  if (transfered($tname)) { $trank = ''; }
+  if (transfered($tname, $year, $version)) { $trank = ''; }
 
   #if (transfered($tn1)) {$tn1 = '';}     #???????????
   if ($hora =~ /Vespera/i && $dayname[0] =~ /Quadp3/ && $dayofweek == 3 && $version !~ /1960|1955/) {
@@ -197,7 +193,7 @@ sub getrank {
     $sn = $transfertemp;
   } elsif ($transfer =~ /Sancti/) {
     $sn = $transfer;
-  } elsif (transfered($sn)) {
+  } elsif (transfered($sn, $year, $version)) {
     $sn = '';
   }
   my $snd = $sn;
@@ -261,9 +257,10 @@ sub getrank {
   my %csaint = {};
   my $crank = '';
   my $vflag = 0;
-  $cday = nextday($month, $day, $year);
-  if ($transfer{$cday} !~ /tempora/i && transfered($cday)) { $cday = 'none'; }
-  if (exists($transfer{$cday}) && $transfer{$cday} !~ /Tempora/i) { $cday = $transfer{$cday}; }
+  $cday = $nday;
+  $tcday = $tnday;
+  if ($tcday !~ /tempora/i && transfered($cday, $year, $version)) { $cday = 'none'; }
+  if ($tcday && $tcday !~ /Tempora/i) { $cday = $tcday; }
   if ($tname =~ /Nat/ && $cday =~ /Nat/) { $cday = 'none'; }
   $BMVSabbato = ($cday =~ /v/) ? 0 : 1;
   if ($hora =~ /(vespera|completorium)/i) {
@@ -542,7 +539,7 @@ sub getrank {
     # Is the commemoration Marian?
     our $marian_commem = 0;
 
-    if (transfered($tname)) {    #&& !$vflag)
+    if (transfered($tname, $year, $version)) {    #&& !$vflag)
       if ($hora !~ /Vespera|Completorium/i) { $dayname[2] = "Transfer $trank[0]"; }
       $commemoratio = '';
     } elsif ($version =~ /1960|Newcal|Monastic/i && $winner{Rule} =~ /Festum Domini/i && $trank =~ /Dominica/i) {
@@ -650,7 +647,7 @@ sub getrank {
     }
     if ($version =~ /1960/ && $vespera == 1 && $rank >= 6 && $comrank < 5) { $commemoratio = ''; $srank[2] = 0; }
 
-    if (transfered($vflag ? $nday : $sday) && $crank !~ /$srank/) {
+    if (transfered($vflag ? $nday : $sday, $year, $version) && $crank !~ /$srank/) {
       $dayname[2] = "Transfer $srank[0]";
       $commemoratio = '';
     } elsif ($srank[2]) {
@@ -1176,39 +1173,6 @@ sub officestring($$$;$) {
   }
   %s = updaterank(\%s);
   return \%s;
-}
-
-
-#*** transfered($tname | $sday)
-# returns true if the day for season or saint is transfered
-# otherwise false
-# true value is transfer key / new date
-# false value is undef
-sub transfered {
-  my $str = shift;
-  return unless $str;
-  if ($transfertemp && $str =~ /$transfertemp/i) { return undef; }
-  if ($transfer && $str =~ /$transfer/i) { return undef; }
-  my $key;
-
-  foreach $key (keys %transfer) {
-    next unless ($transfer{$key});
-    if ($transfer{$key} =~ /Tempora/i && $transfer{$key} !~ /Epi1\-0/i) { next; }
-
-    if ( $key !~ /(dirge|Hy)/i
-      && $transfer{$key} !~ /$key/
-      && ($str =~ /$transfer{$key}/i || $transfer{$key} =~ /$str/i))
-    {
-      return $key;
-    }
-  }
-
-  if (%transfertemp) {
-    foreach $key (keys %transfertemp) {
-      if ($key !~ /dirge/i && $transfertemp{$key} =~ /$str/i && $transfer{$key} !~ /v\s*$/i) { return $key; }
-    }
-  }
-  return undef;
 }
 
 #*** climit1960($commemoratio)

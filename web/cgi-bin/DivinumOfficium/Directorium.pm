@@ -13,7 +13,7 @@ BEGIN {
   require Exporter;
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(get_kalendar get_transfer_table get_stransfer get_tempora_table check_coronatio);
+  our @EXPORT_OK = qw(get_kalendar get_transfer get_stransfer get_tempora transfered check_coronatio);
 }
 
 ### private vars
@@ -63,6 +63,8 @@ sub load_transfer_file {
 
 sub load_kalendar {
   my($version) = @_;
+  die "Can't load kalendar for empty version" unless $version; 
+  die "Can't load kalendar for unknown version $version" unless defined $_data{$version};
   my $cache_key = "kalendar:$version";
 
   my($filename) = "$datafolder/Kalendaria/$_data{$version}{kalendar}.txt";
@@ -76,6 +78,8 @@ sub load_kalendar {
 
 sub load_tempora {
   my($version) = @_;
+  die "Can't load tempora for empty version" unless $version; 
+  die "Can't load tempora for unknown version $version" unless defined $_data{$version};
   my $cache_key = "Tempora:$version";
 
   $_dCACHE{$cache_key} = {};
@@ -90,6 +94,8 @@ sub load_tempora {
 sub load_transfer {
   my $year = shift;
   my $version = shift;
+  die "Can't load transfer for empty version" unless $version; 
+  die "Can't load transfer for unknown version $version" unless defined $_data{$version};
   my $stransferf = shift;
   my $type = 'Transfer';
   $type = 'Stransfer' if $stransferf;
@@ -132,18 +138,16 @@ sub get_kalendar {
   $_dCACHE{$cache_key}{$day}
 }
 
-#*** load_transfer($year, $version, $stransferf)
-# load transfer table based on easterday
-# full transfer hash is needed till transfered function is rewritten
-sub get_transfer_table {
-  my $year = shift;
-  my $version = shift;
+#*** get_transfer($year, $version, $key)
+# get transfer table value for key
+sub get_transfer {
+  my ($year, $version, $key) = @_;
 
   my $cache_key = "Transfer:$version:$year";
 
   load_transfer($year, $version) unless is_cached $cache_key;
 
-  %{$_dCACHE{$cache_key}}
+  $_dCACHE{$cache_key}{$key}
 }
 
 #*** get_stransfer($year, $version, $key)
@@ -160,7 +164,6 @@ sub get_stransfer {
 
 #*** get_tempora($year, $version, $key)
 # get tempora table value for key
-# # not exported now
 sub get_tempora {
   my ($version, $key) = @_;
 
@@ -171,16 +174,35 @@ sub get_tempora {
   $_dCACHE{$cache_key}{$key}
 }
 
-#*** get_tempora_table($version)
-# get tempora permanent transfer table
-# full hash is needed till transfered function is rewritten
-sub get_tempora_table {
-  my($version) = shift;
-  my $cache_key = "Tempora:$version";
+#*** transfered($tname | $sday, $year, $version)
+# returns destination if the day for season or saint is transfered
+# otherwise false
+sub transfered {
+  my $str = shift;
+  my $year = shift;
+  my $version = shift;
+  return unless $str;
 
-  load_tempora($version) unless is_cached $cache_key;
+  my %transfer = %{$_dCACHE{"Transfer:$version:$year"}};
 
-  %{$_dCACHE{$cache_key}}
+  while (my ($key, $val) = each %transfer) {
+    next unless $val;
+    next if $key =~ /(dirge|Hy)/i;
+
+    if ($val =~ /Tempora/i && $val !~ /Epi1\-0/i) { next; }
+
+    if ($val !~ /$key/ && ($str =~ /$val/i || $val =~ /$str/i)) {
+      return $key;
+    }
+  }
+
+  while (my ($key, $val) = each %{$_dCACHE{"Tempora:$version"}}) {
+    next if $key eq 'dirge';
+
+    if ($val =~ /$str/i && $transfer{$key} && $transfer{$key} !~ /v\s*$/i) { return $key; }
+  }
+
+  return;
 }
 
 #*** check_coronatio($day, $month)

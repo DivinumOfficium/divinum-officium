@@ -1360,7 +1360,7 @@ sub concurrent_office {
   if ( $office =~ m {Sancti.*/([0-9]+-[0-9]+)} )
   {
     my $office_mmdd = $1;
-    my $transfered_to = transfered $office_mmdd;
+    my $transfered_to = transfered($office_mmdd, $year, $version);
     $office_mmdd = $transfered_to if $transfered_to;
     $office_dd = $1 if $office_mmdd =~ /[0-9]+-([0-9]+)/;
   }
