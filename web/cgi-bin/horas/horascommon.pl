@@ -189,6 +189,9 @@ sub getrank {
   #handle sancti
   $sn = "$sanctiname/" . get_kalendar($version, $sday);
 
+  # prevent duplicate vigil of St. Mathias in leap years
+  $sn = '' if $sn =~ /02-23o/ && $day == 23 && leapyear($year) && day_of_week(25, $month, $year);
+
   if ($transfertemp =~ /Sancti/) {
     $sn = $transfertemp;
   } elsif ($transfer =~ /Sancti/) {

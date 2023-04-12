@@ -50,11 +50,11 @@ sub load_transfer_file {
   my $type = shift;
 
   my @lines = do_read "$datafolder/$type/$name.txt";
-  my $regexp = qr{^(?:Hy|dirge=|seant)?0[12]};
+  my $regexp = qr{^(?:Hy|dirge=|seant)?(?:01|02-[01]|02-2[0123])};
 
-  if ($filter == 1) { # Mar - Dec
+  if ($filter == 1) { # Feb 24 - Dec
     grep { !/$regexp/ } @lines ;
-  } elsif ($filter == 2) { # Jan + Feb
+  } elsif ($filter == 2) { # Jan + Feb 23
     grep { /$regexp/ } @lines;
   } else { # whole year
     @lines;
@@ -121,8 +121,16 @@ sub load_transfer {
       }
     }
 
-    %{$_dCACHE{$cache_key}} = @transfer 
+    %{$_dCACHE{$cache_key}} = @transfer;
+
+    # if St. Mathias was transfered to next day it is not case when year is leap
+    if ($_dCACHE{$cache_key}{'02-25'} && $_dCACHE{$cache_key}{'02-25'} eq '02-24' && $isleap) { 
+      $_dCACHE{$cache_key}{'02-29'} = $_dCACHE{$cache_key}{'02-25'};
+      delete $_dCACHE{$cache_key}{'02-25'};
+    }
   }
+
+  %{$_dCACHE{$cache_key}}
 }
 
 ### public functions
