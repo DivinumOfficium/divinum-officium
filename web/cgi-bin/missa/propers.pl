@@ -127,7 +127,7 @@ sub setcomment {
 
   if ($comment =~ /Source/i && $votive) { $ind = 7; }
   $label = translate_label($label, $lang);
-  my %comm = %{setupstring($datafolder, $lang, 'Ordo/Comment.txt')};
+  my %comm = %{setupstring($lang, 'Ordo/Comment.txt')};
   my @comm = split("\n", $comm{$comment});
   $comment = $comm[$ind];
   if ($prefix) { $comment = "$prefix $comment"; }
@@ -188,7 +188,7 @@ sub oratio {
   if ($rule =~ /Oratio Dominica/i && !exists($w{$type})) {
     my $name = "$dayname[0]-0";
     $name = 'Epi1-0a' if $name =~ /(Epi1|Nat)/i;
-    %w = %{officestring($datafolder, $lang, "$temporaname/$name.txt")};
+    %w = %{officestring($lang, subdirname('Tempora', $version) . "$name.txt")};
   }
 
   if ($dayofweek > 0 && exists($w{$type . "W"})) {
@@ -211,7 +211,7 @@ sub oratio {
 
   if ($winner =~ /tempora/i && !$w) {
     my $name = "$dayname[0]-0";
-    %w = %{officestring($datafolder, $lang, "$temporaname/$name.txt")};
+    %w = %{officestring($lang, subdirname('Tempora', $version) . "$name.txt")};
     $w = $w{$type};
     setbuild2("$type Dominica") if $w;
   }
@@ -253,7 +253,7 @@ sub oratio {
 
   if (my $coron = check_coronatio($day, $month)) {
     $retvalue =~ s/\$(Per|Qui) .*\n//g;
-    my %c = %{setupstring($datafolder, $lang, "$coron.txt")};
+    my %c = %{setupstring($lang, "$coron.txt")};
     my $c = $c{$type};
     $c = replaceNpb($c, $pope, $lang, 'p', 'um') if $coron =~ /Coronatio/i;
     $retvalue .= "_\n\$Papa\n$c";
@@ -278,7 +278,7 @@ sub oratio {
   #* add commemorated office
   if ($commemoratio1 && $rank < 6) {
     $w = getcommemoratio($commemoratio1, $type, $lang);
-    setcc($w, 1, setupstring($datafolder, $lang, $commemoratio1)) if $w;
+    setcc($w, 1, setupstring($lang, $commemoratio1)) if $w;
   }
 
   if (
@@ -290,7 +290,7 @@ sub oratio {
     )
   {
     $w = getcommemoratio($commemoratio, $type, $lang);
-    setcc($w, 2, setupstring($datafolder, $lang, $commemoratio)) if $w;
+    setcc($w, 2, setupstring($lang, $commemoratio)) if $w;
   }
 
   #add commemoratio in winner
@@ -326,7 +326,7 @@ sub oratio {
   if ($rule =~ /Suffr.*?=(.*?);;/i) {
     my $sf = $1;
     my @sf = split(';', $sf);
-    my %sf = %{setupstring($datafolder, $lang, 'Ordo/Suffragium.txt')};
+    my %sf = %{setupstring($lang, 'Ordo/Suffragium.txt')};
     my ($sf1, @sf1);
 
     foreach $sf (@sf) {
@@ -422,7 +422,7 @@ sub commemoratio {
     %w = (columnsel($lang)) ? %winner : %winner2;
     $ite = $winner;
   } elsif ($item =~ /commemoratio1/i) {
-    %w = %{officestring($datafolder, $lang, $commemoratio1)};
+    %w = %{officestring($lang, $commemoratio1)};
     $code = 11;
     $ite = $commmemoratio1;
   } elsif ($item =~ /commemoratio/i) {
@@ -430,7 +430,7 @@ sub commemoratio {
     $code = 22;
     $ite = $commemoratio;
   } elsif ($item =~ /commemorated/i) {
-    %w = %{officestring($datafolder, $lang, $commemorated)};
+    %w = %{officestring($lang, $commemorated)};
     $code = 13;
     $ite = $commemoratio2;
   }
@@ -460,7 +460,7 @@ sub getcommemoratio {
   my $wday = shift;
   my $type = shift;
   my $lang = shift;
-  my %w = %{officestring($datafolder, $lang, $wday)};
+  my %w = %{officestring($lang, $wday)};
   my %c = undef;
 
   if ($rule =~ /no commemoratio/i) { return ''; }
@@ -472,7 +472,7 @@ sub getcommemoratio {
     if ($file =~ /^C[0-9]+$/ && $dayname[0] =~ /Pasc/i) { $file .= 'p'; }
     $file = "$file.txt";
     if ($file =~ /^C/) { $file = "Commune/$file"; }
-    %c = %{setupstring($datafolder, $lang, $file)};
+    %c = %{setupstring($lang, $file)};
   } else {
     %$c = {};
   }
@@ -484,7 +484,7 @@ sub getcommemoratio {
   if (!$o && $w{Rule} =~ /Oratio Dominica/i) {
     $wday =~ s/\-[0-9]/-0/;
     $wday =~ s/Epi1\-0/Epi1-0a/;
-    my %w1 = %{officestring($datafolder, $lang, $wday, ($i == 1) ? 1 : 0)};
+    my %w1 = %{officestring($lang, $wday, ($i == 1) ? 1 : 0)};
 
     if (exists($w1{$type . 'W'})) {
       $o = $w1{$type . 'W'};
@@ -543,8 +543,8 @@ sub getproprium {
       )
     {
       my $fn = $1;
-      my $cn = ($fn =~ /^Sancti/i) ? $fn : "$communename/$fn";
-      my %c = %{setupstring($datafolder, $lang, "$cn.txt")};
+      my $cn = ($fn =~ /^Sancti/i) ? $fn : (subdirname('Commune', $version) . "$fn");
+      my %c = %{setupstring($lang, "$cn.txt")};
       $w = $c{$name};
       $c = 4;
     }
@@ -582,7 +582,7 @@ sub getfromcommune {
     my $fname = "$datafolder/$lang1/$c" . "p.txt";
     if ($dayname[0] =~ /Pasc/i && (-e $fname)) { $c .= 'p'; }
   }
-  my %w = %{setupstring($datafolder, $lang, "$c.txt")};
+  my %w = %{setupstring($lang, "$c.txt")};
   my $v = $w{$name};
   if (!$v) { $v = $w{"$name $ind"}; }
   if (!$v) { $ind = 4 - $ind; $v = $w{"$name $ind"}; }
@@ -798,7 +798,7 @@ sub getitem {
     my $name = "$dayname[0]-0";
     if ($name =~ /(Epi1|Nat)/i) { $name = 'Epi1-0a'; }
     if ($name =~ /Pent01/i) { $name = 'Pent01-0a'; }
-    %w = %{officestring($datafolder, $lang, "$temporaname/$name.txt")};
+    %w = %{officestring($lang, subdirname('Tempora', $version) . "$name.txt")};
     $w = $w{$type};
     if ($type =~ /Graduale/i && $dayofweek > 0 && exists($w{GradualeF})) { $w = $w{'GradualeF'}; }
   }
@@ -981,7 +981,7 @@ sub secreta : ScriptFunc {
 sub prefatio : ScriptFunc {
 
   my $lang = shift;
-  my %pr = %{setupstring($datafolder, $lang, 'Ordo/Prefationes.txt')};
+  my %pr = %{setupstring($lang, 'Ordo/Prefationes.txt')};
   my $name =
       ($version =~ /(1955|196)/ && $rule =~ /Prefatio1960=([a-z0-9]+)/i) ? $1
     : ($rule =~ /Prefatio=([a-z0-9]+)/i) ? $1
@@ -1053,7 +1053,7 @@ sub communicantes($) : ScriptFunc {
       : (/Pasc7/i || (/Pasc6/ && $dayofweek == 6)) ? 'Pent'
       : 'common';
   }
-  my %pr = %{setupstring($datafolder, $lang, 'Ordo/Prefationes.txt')};
+  my %pr = %{setupstring($lang, 'Ordo/Prefationes.txt')};
   if ($version =~ /196/) { $name .= '1962'; }    # St Joseph.
   my $t = chompd($pr{"C-$name"});
   return norubr($t);
@@ -1062,7 +1062,7 @@ sub communicantes($) : ScriptFunc {
 sub hancigitur : ScriptFunc {
   my $lang = shift;
   if ($dayname[0] !~ /Pasc[07]/) { return ''; }
-  my %pr = %{setupstring($datafolder, $lang, 'Ordo/Prefationes.txt')};
+  my %pr = %{setupstring($lang, 'Ordo/Prefationes.txt')};
   my $t = chompd($pr{'H-Pent'});
   return norubr($t);
 }

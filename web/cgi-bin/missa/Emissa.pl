@@ -26,8 +26,6 @@ use DivinumOfficium::Date qw(prevnext);
 $error = '';
 $debug = '';
 
-our $Tk       = 0;
-our $Hk       = 0;
 our $Ck       = 0;
 our $missa    = 1;
 our $NewMass  = 0;
@@ -85,7 +83,7 @@ our ( $lang1, $lang2, $column );
 our %translate;     #translation of the skeleton label for 2nd language
 
 if ( !$setupsave ) {
-    %setup = %{ setupstring( $datafolder, '', 'missa.setup' ) };
+    %setup = %{ setupstring( '', 'missa.setup' ) };
 }
 else {
     %setup = split( ';;;', $setupsave );
@@ -100,9 +98,6 @@ if ( !$command )     { $command     = 'praySanctaMissa'; }
 our $missanumber = strictparam('missanumber');
 if ( !$missanumber ) { $missanumber = 1; }
 our $caller      = strictparam('caller');
-our $sanctiname  = 'Sancti';
-our $temporaname = 'Tempora';
-our $communename = 'Commune';
 
 #*** handle different actions
 #after setup
@@ -151,7 +146,6 @@ else {
 
 if ( !$version ) { $version = 'Rubrics 1960'; }
 if ( !$lang2 )   { $lang2   = 'Latin'; }
-setmdir($version);
 
 # save parameters
 $setupsave =~ s/\r*\n*//g;
