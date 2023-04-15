@@ -125,6 +125,14 @@ function callkalendar() {
   document.forms[0].submit();
 }
 
+// for Cofficium
+function callbrevi(date) {
+  document.forms[0].date.value = date;
+  document.forms[0].action = 'officium.pl'
+  document.forms[0].target = "_self"
+  document.forms[0].submit();
+}
+
 //calls missa
 function callmissa() {
   document.forms[0].action = "../missa/missa.pl";
