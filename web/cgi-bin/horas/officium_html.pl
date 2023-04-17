@@ -12,17 +12,63 @@ if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com
 PrintTag
 }
 
+#*** daylineheader_c($head)
+# return headline for main and pray for Compare
+sub daylineheader_c {
+  my($head, $version1, $version2) = @_;
+  $version = $version2;
+  setmdir($version);
+  precedence();
+  my $daycolor = liturgical_color($dayname[1], $commune);
+  my $head2 = daylineheader(setheadline(), '', $daycolor);
+  '<CENTER><TABLE BORDER=1 CELLPADDING=5><TR>'
+    . "<TD $background ALIGN=CENTER WIDTH=50%>$version1 : $head</TD>"
+    . "<TD $background ALIGN=CENTER WIDTH=50%>$version2 : $head2</TD>"
+    . '</TR></TABLE></CENTER>'
+}
+
+#*** daylineheader($day, $comment, $color) 
+# return headline for main and pray
+sub daylineheader {
+  my ($day, $comment, $color) = @_;
+
+  qq(<FONT COLOR=$color>$day<BR></FONT>\n$comment);
+}
+
 #*** headline($head) prints headline for main and pray
 sub headline {
-  my ($day, $comment, $color) = @_;
-  my $output = par_c("<FONT COLOR=$color>$day<BR></FONT>\n$comment");
-  $output .= << "PrintTag";
+  my ($output, $variant) = @_;
+  unless ($variant eq 'C') {
+    $output = par_c($output);
+    $output .= << "PrintTag";
 <H1>
 <FONT COLOR=MAROON SIZE=+1><B><I>Divinum Officium</I></B></FONT>&nbsp;
 <FONT COLOR=RED SIZE=+1>$version</FONT>
 </H1>
 PrintTag
-  if ($officium ne 'Pofficium.pl') {
+  }
+  if ($variant eq 'P') {
+    $output .= par_c(<< "PrintTag");
+<A HREF="Pofficium.pl?date1=$date1&command=prev&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
+&darr;</A>
+$date1
+<A HREF="Pofficium.pl?date1=$date1&command=next&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
+&uarr;</A>
+PrintTag
+  } elsif ($variant eq 'C') {
+    my $title = $command ? adhoram($command): 'Divinum Officium';
+    $title =~ s/Vesper.*/Vesperas/;
+    $output .= par_c(<< "PrintTag");
+<FONT COLOR=MAROON SIZE=+1><B><I>$title</I></B></FONT>&nbsp;&nbsp;&nbsp;&nbsp;
+<LABEL FOR=date CLASS=offscreen>Date</LABEL>
+<INPUT TYPE=TEXT ID=date NAME=date VALUE="$date1" SIZE=10>
+<A HREF=# onclick="prevnext(-1)">&darr;</A>
+<INPUT TYPE=submit NAME=SUBMIT VALUE=" " onclick="parchange();">
+<A HREF=# onclick="prevnext(1)">&uarr;</A>
+&nbsp;&nbsp;&nbsp;
+<A HREF=# onclick="callkalendar();">Ordo</A>
+PrintTag
+  } else {
     $output .= par_c(<< "PrintTag");
 <A HREF=# onclick="callcompare()">Compare</A>
 &nbsp;&nbsp;&nbsp;<A HREF=# onclick="callmissa();">Sancta Missa</A>
@@ -36,14 +82,6 @@ PrintTag
 <A HREF=# onclick="callkalendar();">Ordo</A>
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="pset('parameters')">Options</A>
-PrintTag
-  } else {
-    $output .= par_c(<< "PrintTag");
-<A HREF="Pofficium.pl?date1=$date1&command=prev&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
-&darr;</A>
-$date1
-<A HREF="Pofficium.pl?date1=$date1&command=next&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
-&uarr;</A>
 PrintTag
   }
 }
@@ -129,8 +167,9 @@ sub bodyend {
 <INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
 <INPUT TYPE=HIDDEN NAME=version1 VALUE="$version">
+<INPUT TYPE=HIDDEN NAME=version2 VALUE="$version2">
 <INPUT TYPE=HIDDEN NAME=caller VALUE='0'>
-<INPUT TYPE=HIDDEN NAME=compare VALUE=0>
+<INPUT TYPE=HIDDEN NAME=compare VALUE=$Ck>
 <INPUT TYPE=HIDDEN NAME='notes' VALUE="$notes">
 <INPUT TYPE=HIDDEN NAME='plures' VALUE='$plures'>
 </FORM>
