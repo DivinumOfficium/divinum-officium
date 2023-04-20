@@ -28,6 +28,8 @@ use DivinumOfficium::Main qw(liturgical_color);
 $error = '';
 $debug = '';
 
+our $Tk = 0;
+our $Hk = 0;
 our $Ck = 0;
 our $NewMass = 1;
 our $missa = 1;
@@ -106,6 +108,10 @@ setcookies('missagc', 'generalc');
 $setupsave = savesetup(1);
 $setupsave =~ s/\r*\n*//g;
 
+our $sanctiname = 'Sancti';
+our $temporaname = 'Tempora';
+our $communename = 'Commune';
+
 our $command = strictparam('command');
 our $hora = $command;    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
 our $browsertime = strictparam('browsertime');
@@ -124,6 +130,7 @@ $expandnum = strictparam('expandnum');
 
 $only = ($lang1 eq $lang2 && $version1 eq $version2) ? 1 : 0;
 
+setmdir($version1);
 $version = $version1;
 precedence($winner);    #fills our hashes et variables
 our $psalmnum1 = 0;

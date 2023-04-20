@@ -36,7 +36,7 @@ sub getdialog {
   my ($name) = @_;
   if (!$_dialog{'loaded'}) {
     $datafolder =~ /(missa|horas)$/;
-    %_dialog = %{setupstring('', "$1.dialog")};
+    %_dialog = %{setupstring($datafolder, '', "$1.dialog")};
     foreach (keys %_dialog) { chomp($_dialog{$_}) }
     $_dialog{'loaded'} = 1;
   }
@@ -192,14 +192,13 @@ use constant {
   RESOLVE_ALL => 2
 };
 
-#*** setupstring($lang, $fname, %params)
+#*** setupstring($basedir, $lang, $fname, %params)
 # Loads the database file from path "$basedir/$lang/$fname" through
 # the cache. Inclusions are performed according to the value of
 # $params{'resolve@'}. If omitted, the default is RESOLVE_ALL.
-sub setupstring($$%) {
-  my ($lang, $fname, %params) = @_;
+sub setupstring($$$%) {
 
-  my $basedir = our $datafolder;
+  my ($basedir, $lang, $fname, %params) = @_;
   my $fullpath = "$basedir/$lang/$fname";
   our ($lang1, $lang2, $missa);
   my $inclusionregex = qr/^\s*\@
@@ -225,17 +224,17 @@ sub setupstring($$%) {
     if ($lang eq 'English') {
 
       # English layers on top of Latin.
-      $base_sections = setupstring('Latin', $fname, 'resolve@' => RESOLVE_NONE);
+      $base_sections = setupstring($basedir, 'Latin', $fname, 'resolve@' => RESOLVE_NONE);
     } elsif ($lang =~ /-/) {
 
       # If $lang contains dash, the part before the last dash is taken as a new fallback
       my $temp = $lang;
       $temp =~ s/-[^-]+$//;
-      $base_sections = setupstring($temp, $fname, 'resolve@' => RESOLVE_NONE);
+      $base_sections = setupstring($basedir, $temp, $fname, 'resolve@' => RESOLVE_NONE);
     } elsif ($lang && $lang ne 'Latin') {
 
       # Other non-Latin languages layer on top of English.
-      $base_sections = setupstring('English', $fname, 'resolve@' => RESOLVE_NONE);
+      $base_sections = setupstring($basedir, 'English', $fname, 'resolve@' => RESOLVE_NONE);
     }
 
     # Get the top layer.
@@ -264,7 +263,7 @@ sub setupstring($$%) {
     while ($sections{'__preamble'} =~ /$inclusionregex/gc) {
       my $incl_fname .= "$1.txt";
       if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
-      my $incl_sections = setupstring($lang, $incl_fname, 'resolve@' => RESOLVE_NONE);
+      my $incl_sections = setupstring($basedir, $lang, $incl_fname, 'resolve@' => RESOLVE_NONE);
       $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
     }
     delete $sections{'__preamble'};
@@ -377,7 +376,7 @@ sub process_conditional_lines {
 
     # Check for a new condition.
     if ($line =~ /^\s*$conditional_regex\s*(.*)$/o) {
-      my ($strength, $result, $backscope, $forwardscope) = parse_conditional($1 || '', $2, $3);
+      my ($strength, $result, $backscope, $forwardscope) = parse_conditional($1, $2, $3);
 
       # Sequel.
       $line = $4;
@@ -509,7 +508,7 @@ sub get_loadtime_inclusion(\%$$$$$$$) {
 
   # Load the file to resolve the reference; if none specified, it's a
   # self-reference.
-  my $inclfile = $ftitle ? setupstring($lang, "$ftitle.txt", 'resolve@' => RESOLVE_WHOLEFILE) : $sections;
+  my $inclfile = $ftitle ? setupstring($basedir, $lang, "$ftitle.txt", 'resolve@' => RESOLVE_WHOLEFILE) : $sections;
 
   if ( $version !~ /Trident/i
     && $section =~ /Gregem/i

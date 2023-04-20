@@ -28,7 +28,8 @@ use DivinumOfficium::Date qw(prevnext);
 $error = '';
 $debug = '';
 
-our $Ck = 0;
+our $Tk = 0;
+our $Hk = 0;
 our $notes = 0;
 our $missa = 0;
 our $officium = substr($0,rindex($0, '/') + 1);
@@ -94,7 +95,11 @@ if (!$searchvalue) { $searchvalue = '0'; }
 
 our $caller = strictparam('caller');
 our $dirge = 0;           #1=call from 1st vespers, 2=call from Lauds
+our $dirgeline = '';      #dates for dirge from Trxxxxyyyy
 our $expandind = 0;
+our $sanctiname = 'Sancti';
+our $temporaname = 'Tempora';
+our $communename = 'Commune';
 
 $setupsave = strictparam('setup');
 loadsetup($setupsave);
@@ -148,6 +153,7 @@ our $expandnum = strictparam('expandnum');
 $notes = strictparam('notes');
 
 $only = !$Ck && ($lang1 eq $lang2);
+setmdir($version);
 
 if ($officium eq 'Pofficium.pl') {
   our $date1 = strictparam('date1');

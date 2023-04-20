@@ -24,7 +24,7 @@ sub loadsetup {
     %_setup = split(';;;', $setup); 
   } else {
     $datafolder =~ /(missa|horas)$/;
-    %_setup = %{setupstring('', "$1.setup")};
+    %_setup = %{setupstring($datafolder, '', "$1.setup")};
   }
 }
 
