@@ -33,7 +33,7 @@ sub psalmi_matutinum_monastic {
   $psalmnum1 = $psalmnum2 = 0 if (($dayname[0] eq "Quad6") && ($dayofweek > 3));
 
   #** reads the set of antiphons-psalms from the psalterium
-  my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
+  my %psalmi = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi matutinum.txt')};
   my $dw = $dayofweek;
   if ($winner{Rank} =~ /Dominica/i) { $dw = 0; }
   my @psalmi = split("\n", $psalmi{"Daym$dw"});
@@ -211,7 +211,8 @@ sub psalmi_matutinum_monastic {
       if ($w) { $w .= '.txt'; } else { $w = $winner; }
       $w =~ s/M//g;         # there is no corresponding folder missa/latin/SanctiM
       $s =~ s/(?:LectioE)?/Evangelium/;
-      my %missa = %{setupstring("../missa/$lang", $w)};
+      my $dt = $datafolder; $dt =~ s/horas/missa/g;
+      my %missa = %{setupstring($dt, $lang, $w)};
       @e = split("\n", $missa{$s});
     }
 
@@ -230,7 +231,7 @@ sub psalmi_matutinum_monastic {
     
   # end 2nd nocturn in ferial office
   my ($w, $c) = getproprium('MM Capitulum', $lang, 0, 1);
-  my %s = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
+  my %s = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
 
   if (!$w && $commune) {
     if ($commune =~ /(C\d+)/) {
@@ -333,7 +334,7 @@ sub absolutio_benedictio {
     @a = split("\n", $m{Benedictio});
     setbuild2('Special benedictio');
   } else {
-    my %benedictio = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
+    my %benedictio = %{setupstring($datafolder, $lang, 'Psalterium/Benedictions.txt')};
     my $i =
         ($dayofweek == 1 || $dayofweek == 4) ? 1
       : ($dayofweek == 2 || $dayofweek == 5) ? 2
@@ -402,7 +403,7 @@ sub brevis_monastic {
     my %c = (columnsel($lang)) ? %commune : %commune2;
     $lectio = $c{"MM LB"};
   } else {
-    my %b = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
+    my %b = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
     $lectio  = $b{"MM LB" . (($dayname[0] =~ /Pasc/) ? " Pasc" : $dayofweek)};
   }
   $lectio =~ s/&Gloria1?/&Gloria1/;
