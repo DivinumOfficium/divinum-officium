@@ -37,19 +37,19 @@ sub horas {
   our $recitelimit = 0;
   $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;
   our %translate;
-  $translate{$lang1} = setupstring($datafolder, $lang1, "Psalterium/Translate.txt");
-  $translate{$lang2} = setupstring($datafolder, $lang2, "Psalterium/Translate.txt");
+  $translate{$lang1} = setupstring($lang1, "Psalterium/Translate.txt");
+  $translate{$lang2} = setupstring($lang2, "Psalterium/Translate.txt");
   cache_prayers();
-  %chant = %{setupstring($datafolder, 'Latin', "Psalterium/Chant.txt")};
+  %chant = %{setupstring('Latin', "Psalterium/Chant.txt")};
   $column = 1;
-  if ($Ck) { $version = $version1; setmdir($version); precedence(); }
+  if ($Ck) { $version = $version1; precedence(); }
   @script1 = getordinarium($lang1, $command);
   @script1 = specials(\@script1, $lang1);
   $column = 2;
-  if ($Ck) { $version = $version2; setmdir($version); precedence(); }
+  if ($Ck) { $version = $version2; precedence(); }
   @script2 = getordinarium($lang2, $command);
   @script2 = specials(\@script2, $lang2);
-  if (!$Tk && !$Hk) { $expandnum = strictparam('expandnum'); }
+  $expandnum = strictparam('expandnum');
   table_start();
   $ind1 = $ind2 = 0;
   $searchind = 0;
@@ -62,7 +62,7 @@ sub horas {
   my $alleluia_regex = qr/[(]*(?<!&)allel[uú][ij]a[\.\,]*[)]*/i;
   $omit_regexp = 'omit';    # to prevent display omitted Preces|Suffragium in red line 160
   {
-    my %comm = %{setupstring($datafolder, $lang2, 'Psalterium/Comment.txt')};
+    my %comm = %{setupstring($lang2, 'Psalterium/Comment.txt')};
     $omit_regexp .= '|\b' . (split("\n", $comm{'Preces'}))[1] . '\b';
     $omit_regexp .= '|\b' . (split("\n", $comm{'Suffragium'}))[0] . '\b';
   }
@@ -178,7 +178,7 @@ sub resolve_refs {
         $line = expand($line, $lang);
       }
 
-      if ((!$Tk && $line !~ /\<input/i) || ($Tk && $line !~ /\% .*? \%/)) {
+      if ($line !~ /\<input/i) {
         $line = resolve_refs($line, $lang);
       }    #for special chars
     }
@@ -401,7 +401,7 @@ sub Benedicamus_Domino : ScriptFunc {
 #return the text for the appropriate time
 sub antiphona_finalis : ScriptFunc {
   my $lang = shift;
-  my %ant = %{setupstring($datafolder, $lang, "Psalterium/Mariaant.txt")};
+  my %ant = %{setupstring($lang, "Psalterium/Mariaant.txt")};
   my $t = '';
 
   if ($dayname[0] =~ /adv/i && $winner{Rank} !~ /In Nativitate Domini/i) {
@@ -648,7 +648,7 @@ sub depunct {
 sub settone {
   if (
     (
-      (!$Hk && $Tk < 3) || $voicecolumn !~ /chant/i || ($hora =~ /Matutinum/i
+      $voicecolumn !~ /chant/i || ($hora =~ /Matutinum/i
         && !$chantmatins)
     )
     && !$notes
@@ -811,12 +811,7 @@ sub setlink {
   $name =~ s/[\#\$\&]//g;
   my $after = '';
 
-  if (!$Tk && $name =~ /(.*?)(<input.*)/i) {
-    $name = $1;
-    $after = $2;
-  }
-
-  if ($Tk && $name =~ /(.*?)(\{\^.*)/) {
+  if ($name =~ /(.*?)(<input.*)/i) {
     $name = $1;
     $after = $2;
   }
@@ -905,7 +900,7 @@ sub ant_Benedictus : ScriptFunc {
   my ($ant) = getantvers('Ant', 2, $lang);
 
   if ($month == 12 && ($day == 21 || $day == 23) && $winner =~ /tempora/i) {
-    my %specials = %{setupstring(our $datafolder, $lang, "Psalterium/Major Special.txt")};
+    my %specials = %{setupstring($lang, "Psalterium/Major Special.txt")};
     $ant = $specials{"Adv Ant $day" . "L"};
   }
   my @ant_parts = split('\*', $ant);
@@ -949,7 +944,7 @@ sub ant_Magnificat : ScriptFunc {
   }
 
   if ($month == 12 && ($day > 16 && $day < 24) && $winner =~ /tempora/i) {
-    my %specials = %{setupstring($datafolder, $lang, "Psalterium/Major Special.txt")};
+    my %specials = %{setupstring($lang, "Psalterium/Major Special.txt")};
     $ant = $specials{"Adv Ant $day"};
     $num = 2;
   }
@@ -1000,18 +995,18 @@ sub martyrologium : ScriptFunc {
   my $t = setfont($largefont, "Martyrologium ") . setfont($smallblack, "(anticip.)") . "\n";
 
   my $a = getweek($day, $month, $year, 1) . "-" . (($dayofweek + 1) % 7);
-  my %a = %{setupstring($datafolder, $lang, "Martyrologium/Mobile.txt")};
+  my %a = %{setupstring($lang, "Martyrologium/Mobile.txt")};
 
   if ($version =~ /1570/ && $lang =~ /Latin/i) {
-    %a = %{setupstring($datafolder, $lang, "Martyrologium1570/Mobile.txt")};
+    %a = %{setupstring($lang, "Martyrologium1570/Mobile.txt")};
   }
 
   if ($version =~ /1960|Newcal/ && $lang =~ /Latin/i) {
-    %a = %{setupstring($datafolder, $lang, "Martyrologium1960/Mobile.txt")};
+    %a = %{setupstring($lang, "Martyrologium1960/Mobile.txt")};
   }
 
   if ($version =~ /1955/ && $lang =~ /Latin/i) {
-    %a = %{setupstring($datafolder, $lang, "Martyrologium1955R/Mobile.txt")};
+    %a = %{setupstring($lang, "Martyrologium1955R/Mobile.txt")};
   }
   my $mobile = '';
   my $hd = 0;

@@ -50,9 +50,6 @@ our $communerule;                             # $commune{Rank}
 our $duplex;                                  #1= simplex 2=semiduplex, 3=duplex 0=rest
                                               #4 = duplex majus, 5=duplex II class 6=duplex I class 7=higher
 our ($dirge, $initia);
-our $sanctiname = 'Sancti';
-our $temporaname = 'Tempora';
-our $communename = 'Commune';
 our $version = 'Rubrics 1960';
 
 require "$Bin/do_io.pl";
@@ -69,7 +66,6 @@ sub kalendar_entry {
   $version = $ver;
   $initia = 0;
   $laudesonly = '';
-  setmdir($version);
   precedence($date);    #for the daily item
   my @c1 = split(';;', $winner{Rank});
   my @c2 =
