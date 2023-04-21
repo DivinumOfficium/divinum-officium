@@ -16,16 +16,16 @@ $a = 1;
 sub ordo {
   $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;
 
-  #???%translate = %{setupstring($datafolder, $tlang, "Ordo/Translate.txt")};
+  #???%translate = %{setupstring($tlang, "Ordo/Translate.txt")};
   cache_prayers();
   $savesolemn = $solemn;
   if ($winner =~ /Quad6-[456]/i) { $solemn = 1; }
   $column = 1;
-  if ($Ck) { $version = $version1; setmdir($version); precedence(); }
+  if ($Ck) { $version = $version1; precedence(); }
   @script1 = getordinarium($lang1, $command);
   @script1 = specials(\@script1, $lang1);
   $column = 2;
-  if ($Ck) { $version = $version2; setmdir($version); precedence(); }
+  if ($Ck) { $version = $version2; precedence(); }
   @script2 = getordinarium($lang2, $command);
   @script2 = specials(\@script2, $lang2);
   $solemn = $savesolemn;
@@ -151,7 +151,7 @@ sub resolve_refs {
         $line = expand($line, $lang);
       }
 
-      if ((!$Tk && $line !~ /\<input/i) || ($Tk && $line !~ /\% .*? \%/)) {
+      if ($line !~ /\<input/i) {
         $line = resolve_refs($line, $lang);
       }    #for special chars
     }
