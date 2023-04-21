@@ -813,18 +813,17 @@ sub precedence {
   our(%winner, %commemoratio, %commemoratio1, %commune, %scriptura) = () x 5;
   our(%winner2, %commemoratio2, %commune2, %scriptura2) = () x 4;
   our(@dayname) = ();
-  our($month, $day, $year, $date1) = ('') x 4;
+  our($month, $day, $year) = ('') x 3;
   our($rule, $communerule, $communetype, $laudes, $transfervigil) = ('') x 5;
   our($C10, $duplex) = ('') x 2;
+  # set global date
+  our($date1) = shift || strictparam('date');
+  if (!$date1 || $votive =~ /hodie/) { $date1 = gettoday(); }
 
   # globals read only
   our($hora, $version, $missa, $missanumber, $votive, $lang1, $lang2, $testmode);
   our($vespera, $cvespera, $tvesp, $svesp, $rank);
   our $datafolder;
-
-  # set global date
-  $date1 = shift || strictparam('date');
-  if (!$date1 || $votive =~ /hodie/) { $date1 = gettoday(); }
 
   $date1 =~ s/\//\-/g;
   ($month, $day, $year) = split('-', $date1);
