@@ -28,8 +28,6 @@ use DivinumOfficium::Main qw(vernaculars liturgical_color);
 $error = '';
 $debug = '';
 
-our $Tk = 0;
-our $Hk = 0;
 our $Ck = 0;
 our $missa = 1;
 our $NewMass = 0;
@@ -94,9 +92,6 @@ if (!$command) { $command = 'praySanctaMissa'; }
 our $missanumber = strictparam('missanumber');
 if (!$missanumber) { $missanumber = 1; }
 our $caller = strictparam('caller');
-our $sanctiname = 'Sancti';
-our $temporaname = 'Tempora';
-our $communename = 'Commune';
 
 $setupsave = strictparam('setupm');
 loadsetup($setupsave);
@@ -126,7 +121,6 @@ $rubrics = strictparam('rubrics');
 $solemn = strictparam('solemn');
 
 $only = ($lang1 =~ /$lang2/) ? 1 : 0;
-setmdir($version);
 
 # save parameters
 precedence();    #fills our hashes et variables
