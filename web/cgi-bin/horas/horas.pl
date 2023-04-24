@@ -375,7 +375,7 @@ sub Dominus_vobiscum : ScriptFunc {
 
 sub Dominus_vobiscum1 : ScriptFunc {    #* prima after preces
   my $lang = shift;
-  if ((!preces('Dominicales et Feriales') || $litaniaflag) && !$priest) { $precesferiales = 1; }
+  if ((preces('Dominicales et Feriales') || $litaniaflag) && !$priest) { $precesferiales = 1; }
   return Dominus_vobiscum($lang);
 }
 
@@ -757,7 +757,7 @@ sub adjust_refs {
 
   if (
     !$priest
-    && (($name =~ /&Dominus_vobiscum1/i && !preces('Dominicales et Feriales'))
+    && (($name =~ /&Dominus_vobiscum1/i && preces('Dominicales et Feriales'))
       || $name =~ /&Dominus_vobiscum2/i)
     )
   {
