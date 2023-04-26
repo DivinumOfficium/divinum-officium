@@ -143,7 +143,7 @@ sub get_kalendar {
 
   load_kalendar($version) unless is_cached $cache_key;
 
-  $_dCACHE{$cache_key}{$day}
+  $_dCACHE{$cache_key}{$day} || ''
 }
 
 #*** get_transfer($year, $version, $key)
@@ -155,7 +155,7 @@ sub get_transfer {
 
   load_transfer($year, $version) unless is_cached $cache_key;
 
-  $_dCACHE{$cache_key}{$key}
+  $_dCACHE{$cache_key}{$key} || ''
 }
 
 #*** get_stransfer($year, $version, $key)
@@ -167,7 +167,7 @@ sub get_stransfer {
 
   load_transfer($year, $version, 'Stransfer') unless is_cached $cache_key;
 
-  $_dCACHE{$cache_key}{$key}
+  $_dCACHE{$cache_key}{$key} || ''
 }
 
 #*** get_tempora($year, $version, $key)
@@ -179,7 +179,7 @@ sub get_tempora {
 
   load_tempora($version) unless is_cached $cache_key;
 
-  $_dCACHE{$cache_key}{$key}
+  $_dCACHE{$cache_key}{$key} || ''
 }
 
 #*** transfered($tname | $sday, $year, $version)
@@ -189,7 +189,7 @@ sub transfered {
   my $str = shift;
   my $year = shift;
   my $version = shift;
-  return unless $str;
+  return '' unless $str;
 
   my %transfer = %{$_dCACHE{"Transfer:$version:$year"}};
 
@@ -210,7 +210,7 @@ sub transfered {
     if ($val =~ /$str/i && $transfer{$key} && $transfer{$key} !~ /v\s*$/i) { return $key; }
   }
 
-  return;
+  return '';
 }
 
 #*** check_coronatio($day, $month)
