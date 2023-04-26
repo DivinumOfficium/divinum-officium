@@ -7,13 +7,13 @@ use FindBin qw($Bin);
 use lib "$Bin/..";
 
 use DivinumOfficium::FileIO qw(do_read);
-use DivinumOfficium::Date qw(leapyear geteaster);
+use DivinumOfficium::Date qw(leapyear geteaster get_sday nextday);
 
 BEGIN {
   require Exporter;
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(get_kalendar get_transfer get_stransfer get_tempora transfered check_coronatio);
+  our @EXPORT_OK = qw(get_kalendar get_transfer get_stransfer get_tempora transfered check_coronatio dirge);
 }
 
 ### private vars
@@ -50,7 +50,7 @@ sub load_transfer_file {
   my $type = shift;
 
   my @lines = do_read "$datafolder/$type/$name.txt";
-  my $regexp = qr{^(?:Hy|dirge=|seant)?(?:01|02-[01]|02-2[0123])};
+  my $regexp = qr{^(?:Hy|seant)?(?:01|02-[01]|02-2[0123]|dirge1)};
 
   if ($filter == 1) { # Feb 24 - Dec
     grep { !/$regexp/ } @lines ;
@@ -205,7 +205,7 @@ sub transfered {
   }
 
   while (my ($key, $val) = each %{$_dCACHE{"Tempora:$version"}}) {
-    next if $key eq 'dirge';
+    next if $key =~ /dirge/;
 
     if ($val =~ /$str/i && $transfer{$key} && $transfer{$key} !~ /v\s*$/i) { return $key; }
   }
@@ -220,6 +220,20 @@ sub check_coronatio {
   my($day, $month) = @_;
 
   $day == 20 && $month == 3 ? 'Votive/Coronatio' : ''
+}
+
+#*** dirge($version, $hora, $day, $month, $year)
+# check if defunctorum shoul be said after hora
+sub dirge {
+  my($version, $hora, $day, $month, $year) = @_;
+
+  return 0 unless $hora =~ /Vespera|Laudes/i;
+
+  my $sday = $hora =~ /Laudes/i ? get_sday($month, $day, $year) 
+                                 : nextday($month, $day, $year);
+  my $dirgeline = get_transfer($year, $version, 'dirge1') . ' '
+                . get_transfer($year, $version, 'dirge2');
+  $dirgeline =~ /$sday/
 }
 
 1;
