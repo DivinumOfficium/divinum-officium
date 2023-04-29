@@ -49,7 +49,7 @@ sub getrank {
 
   # globals set/mod here
   our($winner, $rank, $commemoratio, $comrank, $commemoratio1, $commune, $communetype);
-  our($initia, $hymncontract, $dirge, $scriptura, $laudesonly, $commemorated, $seasonalflag);
+  our($initia, $hymncontract, $scriptura, $laudesonly, $commemorated, $seasonalflag);
   our($antecapitulum, $antecapitulum2, $transfervigil) = ('') x 3;
   our($vespera, $cvespera, $tvesp, $svesp, $dayofweek);
   our($C10, $marian_commem);
@@ -74,9 +74,7 @@ sub getrank {
   if ($transfertemp && $transfertemp !~ /tempora/i) { $transfertemp = subdirname('Sancti', $version) . "$transfertemp"; }
 
   my $transfer = get_transfer($year, $version, $sday);
-
   $hymncontract = get_transfer($year, $version, "Hy$sday");
-  my $dirgeline = get_transfer($year, $version, 'dirge');
 
   if ($transfer =~ /v$/ && !(-e "$datafolder/Latin/" . subdirname('Sancti', $version) . "$transfer.txt")) {
     $transfervigil = $transfer;
@@ -225,15 +223,6 @@ sub getrank {
     $srank = '';
   }
 
-  # Recite Matins and Lauds of the dead after Lauds of the day, either because
-  # of the day within the month or because of All Souls' day.
-  $dirge = 2
-    if (
-    $hora =~ /Laudes/i
-    && (($dirgeline && $version =~ /Trident/i && $snd && $dirgeline =~ /$snd/)
-      || $saint{Rule} =~ /Matutinum et Laudes Defunctorum/)
-    );
-
   if ($version =~ /(1955|1960|Newcal)/) {
     if ($srank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|12\-24)/) { $srank = ''; }
     if ($srank =~ /(infra octavam|in octava)/i && nooctnat()) { $srank = ''; }
@@ -279,9 +268,6 @@ sub getrank {
     if (!$cdayd || $cdayd !~ /([0-9]+\-[0-9]+)/) { $cdayd = nextday($month, $day, $year); }
     $cdayd = ($cdayd =~ /([0-9]+\-[0-9]+)/) ? $1 : '';
 
-    # Recite Vespers of the dead after Vespers of the day, either because of
-    # the day within the month or because of All Souls' day.
-    $dirge = 1 if (($dirgeline && $cdayd && $dirgeline =~ /$cdayd/) || $saint{Rule} =~ /Vesperae Defunctorum/);
     if ($cday && $cday !~ /tempora/i) { $cday = subdirname('Sancti', $version) . "$cday"; }
     if ($testmode =~ /^Season$/i) { $cday = 'none'; }
     

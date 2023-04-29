@@ -24,6 +24,7 @@ use Time::Local;
 use locale;
 use lib "$Bin/..";
 use DivinumOfficium::Main qw(liturgical_color);
+use DivinumOfficium::Directorium qw(dirge);
 $error = '';
 $debug = '';
 
@@ -49,7 +50,7 @@ our $rule;                                    # $winner{Rank}
 our $communerule;                             # $commune{Rank}
 our $duplex;                                  #1= simplex 2=semiduplex, 3=duplex 0=rest
                                               #4 = duplex majus, 5=duplex II class 6=duplex I class 7=higher
-our ($dirge, $initia);
+our ($initia);
 our $version = 'Rubrics 1960';
 
 require "$Bin/do_io.pl";
@@ -95,7 +96,7 @@ sub kalendar_entry {
   }
   if ($winner =~ /sancti/i) { ($c2, $c1) = ($c1, $c2); }
 
-  if ($dirge) { $c1 .= setfont($smallblack, ' dirge'); }
+  if (dirge($version, 'Laudes', $day, $month, $year)) { $c1 .= setfont($smallblack, ' dirge'); }
   if ($version !~ /1960/ && $initia) { $c1 .= setfont($smallfont, ' *I*'); }
 
   if (!$c2 && $dayname[2]) {

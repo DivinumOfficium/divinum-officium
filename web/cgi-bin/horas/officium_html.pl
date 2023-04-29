@@ -17,7 +17,6 @@ PrintTag
 sub daylineheader_c {
   my($head, $version1, $version2) = @_;
   $version = $version2;
-  setmdir($version);
   precedence();
   my $daycolor = liturgical_color($dayname[1], $commune);
   my $head2 = daylineheader(setheadline(), '', $daycolor);

@@ -93,7 +93,6 @@ our $searchvalue = strictparam('searchvalue');
 if (!$searchvalue) { $searchvalue = '0'; }
 
 our $caller = strictparam('caller');
-our $dirge = 0;           #1=call from 1st vespers, 2=call from Lauds
 our $expandind = 0;
 
 $setupsave = strictparam('setup');
