@@ -952,7 +952,7 @@ R. I wysłuchał ich wołających do siebie.
 _
 !Modlitwa
 !Za N. wstawić imię patrona parafii
-v. Módlmy się.
+$Oremus.
 v. Broń nas, prosimy Cię, Panie, od wszelkich niebezpieczeństw duszy i ciała, a za wstawieniem się świętej i przechwalebnej Dziewicy, Bogarodzicy Marji, świętego Józefa, świętych Apostołów Twoich, Piotra i Pawła, i świętego~
 r. N. i wszystkich Świętych udziel nam łaskawie zbawienia i pokoju: aby Kościół Twój, pokonawszy przeciwności i błędy, mógł Ci służyć w bezpiecznej wolności.
 $Per eumdem
@@ -965,7 +965,7 @@ R. I wysłuchał ich wołających do siebie.
 _
 !Modlitwa
 !Za N. wstawić imię patrona parafii
-v. Módlmy się.
+$Oremus.
 v. Broń nas, prosimy Cię, Panie, od wszelkich niebezpieczeństw duszy i ciała, a za wstawieniem się, świętego Józefa, świętych Apostołów Twoich, Piotra i Pawła, i świętego~
 r. N. i wszystkich Świętych udziel nam łaskawie zbawienia i pokoju: aby Kościół Twój, pokonawszy przeciwności i błędy, mógł Ci służyć w bezpiecznej wolności.
 $Per eumdem
@@ -978,7 +978,7 @@ V. Wszystka ziemia niechaj ci się kłania, i niechaj ci śpiewa.
 R. Niech Psalm śpiewa imieniowi twemu, Panie.
 _
 !Modlitwa
-v. Módlmy się
+$Oremus
 v. Strzeż, prosimy cię Panie, w nieustannym pokoju nas, których raczyłeś odkupić przez drzewo świętego Krzyża.
 
 [Suffragium2]
@@ -988,7 +988,7 @@ V. Mówcie narodom, alleluja.
 R. Iż Pan królował z drzewa, alleluja.
 _
 !Modlitwa
-v. Módlmy się
+$Oremus
 v. Boże, któryś chciał, aby Syn Twój poniósł za nas Mękę Krzyżową i wyzwolił nas przez to od mocy nieprzyjaciół, dozwól nam, sługom Twoim, osiągnąć łaskę zmartwychwstania.
 $Per eumdem
 
@@ -1011,7 +1011,7 @@ V. Chwała i bogactwa w domu jego.
 R. A sprawiedliwość jego trwa na wieki wieków.
 _
 !Modlitwa
-v. Módlmy się
+$Oremus
 v. Boże, któryś w niewymownej Opatrzności błogosławionego Józefa, na Oblubieńca Najświętszej Rodzicielki Twojej wybrać raczył: spraw, prosimy, abyśmy, którzy go jako Patrona na ziemi czcimy, zasłużyli na jego wstawiennictwo w niebie.
 
 [Suffragium42]
@@ -1022,7 +1022,7 @@ V. Usta sprawiedliwego będą rozmyślać mądrość.
 R. A język jego będzie mówił sąd.
 _
 !Modlitwa
-v. Módlmy się
+$Oremus
 v. Boże, któryś w niewymownej Opatrzności błogosławionego Józefa, na Oblubieńca Najświętszej Rodzicielki Twojej wybrać raczył: spraw, prosimy, abyśmy, którzy go jako Patrona na ziemi czcimy, zasłużyli na jego wstawiennictwo w niebie.
 
 [Suffragium51]
@@ -1033,7 +1033,7 @@ V. Postanowisz je książęty nade wszystką ziemią.
 R. Będą wspominać Imię Twoje, Panie.
 _
 !Modlitwa
-v. Módlmy się
+$Oremus
 v. Boże, którego prawica unosiła błogosławionego Piotra idącego po falach, by nie zatonął, a Pawła, towarzysza jego w apostolstwie, po trzeciem rozbiciu okrętu z głębokości wybawiła, wysłuchaj nas łaskawie i dozwól, abyśmy przez ich zasługi dostąpili wiecznej chwały.
 
 [Suffragium52]
@@ -1044,7 +1044,7 @@ V. Na wszystką ziemię wyszedł głos ich.
 R. I na kończyny okręgu ziemi słowa ich.
 _
 !Modlitwa
-v. Módlmy się
+$Oremus
 v. Boże, którego prawica unosiła błogosławionego Piotra idącego po falach, by nie zatonął, a Pawła, towarzysza jego w apostolstwie, po trzeciem rozbiciu okrętu z głębokości wybawiła, wysłuchaj nas łaskawie i dozwól, abyśmy przez ich zasługi dostąpili wiecznej chwały.
 
 [Suffragium6]
@@ -1055,7 +1055,7 @@ V. Czyń pokój w murach Twoich.
 R. I dostatek w basztach Twoich.
 _
 !Modlitwa
-v. Módlmy się
+$Oremus
 v. Boże, od którego święte pożądania, dobre rady i sprawiedliwe pochodzą uczynki: udaruj sługi Twoje pokojem, którego świat dać nie może; ażeby serca nasze przykazaniom Twoim były posłuszne i aby dni nasze, wolne od bojaźni nieprzyjaciół, pod Twoją opieką spokojnie płynęły.
 $Per Dominum
 
@@ -1064,9 +1064,9 @@ $Per Dominum
 &Benedicamus_Domino
 _
 !Litania do Wszystkich Świętych
-v. Kyrie, eleison. Kyrie, eleison.
-Christe, eleison. Christe, eleison.
-v. Kyrie, eleison. Kyrie, eleison.
+v. Kyrie, eleison.
+Christe, eleison.
+Kyrie, eleison.
 Chryste, usłysz nas, Panie.
 Chryste, wysłuchaj nas, Panie.
 _
@@ -1233,7 +1233,7 @@ R. A wołanie moje niech do Ciebie przyjdzie.
 &Dominus_vobiscum1
 _
 !Modlitwa
-v. Módlmy się
+$Oremus
 v. Boże, któremu właściwą jest rzeczą litować się zawsze i przebaczać: przyjmij błagania nasze, by nas i wszystkie sługi Twoje, którzyśmy pętami grzechu związani, miłosierdzie Twojej litości łaskawie rozgrzeszyło.
 v. Wysłuchaj, prosimy Cię, Panie, modłów korzących się, a wyznawającym Tobie odpuść grzechy, ażebyś zarówno przebaczenie i pokój litościwie darować nam raczył.
 v. Niewysłowione miłosierdzie Twoje, Panie, okaż nam łaskawie, abyś nas i od grzechów wszystkich wyzwolił i od karania, na któreśmy przez nie zasłużyli, wybawił.
