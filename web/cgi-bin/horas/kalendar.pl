@@ -211,37 +211,48 @@ if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com
 <INPUT TYPE=HIDDEN NAME=setup VALUE="$setupsave">
 <INPUT TYPE=HIDDEN NAME=date1 VALUE="$date1">
 <INPUT TYPE=HIDDEN NAME=kmonth VALUE=$kmonth>
-<INPUT TYPE=HIDDEN NAME=kyear VALUE=$kyear>
 <INPUT TYPE=HIDDEN NAME=date VALUE="$odate">
 <INPUT TYPE=HIDDEN NAME=command VALUE="$command">
 <INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
 <INPUT TYPE=HIDDEN NAME=compare VALUE="$compare">
 <INPUT TYPE=HIDDEN NAME=readings VALUE="0">
-
-<P ALIGN=CENTER>
 PrintTag
 
-for (my $i = $kyear - 9; $i <= $kyear + 10; $i++) {
-  $yn = sprintf("%04i", $i);
-  if ($i == $year) {
-    print "<A HREF=# onclick=\"callbrevi();\"><FONT COLOR=maroon>Hodie</FONT></A>&nbsp;&nbsp;&nbsp;\n";
-  }
-  print "<A HREF=# onclick=\"setky($yn)\">$yn</A>&nbsp;&nbsp;&nbsp;\n";
-}
+print do { # print headline
+  my $vers = $ver[0];
+  $vers .= " / $ver[1]" if $compare;
 
-print "<BR><BR></FONT>\n";
-print "$ver[0]"; print " / $ver[1]" if ($compare);
-print " : <FONT COLOR=MAROON SIZE=+1><B><I>$title</I></B></FONT>\n";
-print "<BR><BR>\n";
-
-for ($i = 1; $i <= 12; $i++) {
-  $mn = substr($monthnames[$i - 1], 0, 3);
-  print "<A HREF=# onclick=\"setkm($i)\">$mn</A>\n";
-  if ($i < 12) { print "&nbsp;&nbsp;&nbsp;\n" }
-}
-print << "PrintTag";
+  my $output = << "PrintTag";
+<H1>
+<FONT COLOR=MAROON SIZE=+1><B><I>Divinum Officium</I></B></FONT>&nbsp;
+<FONT COLOR=RED SIZE=+1>$vers</FONT>
+</H1>
 <P ALIGN=CENTER>
+<FONT COLOR=MAROON SIZE=+1><B><I>Ordo $monthnames[$kmonth-1] A. D.</I></B></FONT>&nbsp;
+<LABEL FOR=kyear CLASS=offscreen>Year</LABEL>
+<INPUT TYPE=TEXT ID=kyear NAME=kyear VALUE="$kyear" SIZE=4>
+<A HREF=# onclick="prevnext(-1)">&darr;</A>
+<INPUT TYPE=submit NAME=SUBMIT VALUE=" " onclick="document.forms[0].submit();">
+<A HREF=# onclick="prevnext(1)">&uarr;</A>
+</P><P ALIGN=CENTER>
+PrintTag
+
+  my @mmenu;
+
+  push(@mmenu, "<A HREF=# onclick=\"setkm(-1)\">«</A>\n") if $kmonth == 1;
+  for ($i = 1; $i <= 12; $i++) {
+    $mn = substr($monthnames[$i - 1], 0, 3);
+    $mn = "<A HREF=# onclick=\"setkm($i)\">$mn</A>\n" unless $i == $kmonth;
+    push(@mmenu, $mn)
+  }
+  push(@mmenu, "<A HREF=# onclick=\"setkm(13)\">»</A>\n") if $kmonth == 12;
+
+  $output . join('&nbsp;' x 3, @mmenu)
+};
+
+print << "PrintTag";
+</P><P ALIGN=CENTER>
 <TABLE BORDER=$border WIDTH=90% CELLPADDING=3>
 <TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH></TR>
 PrintTag
@@ -282,7 +293,6 @@ if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
 print << "PrintTag";
 </FORM>
-</BODY></HTML>
 PrintTag
 if ($Readings) { Readings(); }
 if ($compare) {
@@ -290,6 +300,7 @@ if ($compare) {
 } else {
   print '<P ALIGN=CENTER><A HREF="#" onclick="callkalendar(1)">Compare Calendars</A>'; 
 }
+print "\n</BODY></HTML>";
 
 #*** horasjs()
 # javascript functions called by htmlhead
@@ -316,8 +327,22 @@ function callkalendar(c) {
   document.forms[0].submit();
 }
 
+function prevnext(d) {
+  document.forms[0].kyear.value = parseInt(document.forms[0].kyear.value) + d;
+}
+
 function setkm(km) {
   document.forms[0].kmonth.value = km;
+  if (km == -1) {
+    document.forms[0].kmonth.value = 12;
+    document.forms[0].kyear.value--;
+  }
+  else {
+    if (km == 13) {
+      document.forms[0].kmonth.value = 1;
+      document.forms[0].kyear.value++;
+    }
+  }
   document.forms[0].submit();
 }
 
