@@ -19,12 +19,22 @@ Sei un orto chiuso, * Madre di Dio, un fonte segnato: sorgi, affrettati e vieni.
 V. L'ha eletta Iddio e l'ha prescelta.
 R. La fa abitare nella sua dimora.
 
-[Responsory9]
+[Lectio7]
+@Commune/C11:Lectio6:s/Salve, .*//s
+
+[Lectio8]
+@Commune/C11:Lectio6:s/.* Salve, /Salve, /s
+
+[Lectio10]
+@Commune/C11:Lectio8:s/Anche noi .*//s
+
+[Lectio11]
+@Commune/C11:Lectio8:s/.* Anche noi /Anche noi /s
+
+[Responsory12]
 R. Tu se beata, Vergine Maria, Madre di dio, che credesti al Signore: sono adempiute in te le cose che ti sono state dette: ecco sei stata esaltata sopra i cori degli angeli:
 * intercedi per noi presso il Signore Iddio nostro.
 V. Ave Maria, piena di grazia, il Signore è con te.
-R. Intercedi per noi presso il Signore Iddio nostro.
-&Gloria
 R. Intercedi per noi presso il Signore Iddio nostro.
 
 [LectioE]

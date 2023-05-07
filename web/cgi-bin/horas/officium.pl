@@ -24,15 +24,15 @@ use Time::Local;
 use locale;
 use lib "$Bin/..";
 use DivinumOfficium::Main qw(liturgical_color);
+use DivinumOfficium::Date qw(prevnext);
 $error = '';
 $debug = '';
 
-our $Tk = 0;
-our $Hk = 0;
 our $Ck = 0;
 our $notes = 0;
 our $missa = 0;
 our $officium = substr($0,rindex($0, '/') + 1);
+our $Ck = substr($officium, 0, 1) eq 'C';
 our $version = '';
 
 #***common variables arrays and hashes
@@ -93,12 +93,7 @@ our $searchvalue = strictparam('searchvalue');
 if (!$searchvalue) { $searchvalue = '0'; }
 
 our $caller = strictparam('caller');
-our $dirge = 0;           #1=call from 1st vespers, 2=call from Lauds
-our $dirgeline = '';      #dates for dirge from Trxxxxyyyy
 our $expandind = 0;
-our $sanctiname = 'Sancti';
-our $temporaname = 'Tempora';
-our $communename = 'Commune';
 
 $setupsave = strictparam('setup');
 loadsetup($setupsave);
@@ -110,7 +105,7 @@ if (!$setupsave) {
   getcookies("horasg$cookies_suffix", 'general');
 }
 
-set_runtime_options('general'); #$expand, $version, $lang2
+set_runtime_options('general' . ($Ck ? 'c' : '')); #$expand, $version, $lang2
 set_runtime_options('parameters'); # priest, lang1 ... etc
 
 if ($command =~ s/changeparameters//) { getsetupvalue($command); }
@@ -131,6 +126,15 @@ our $hora = (@horas > 0) ? $horas[0] : '';
 setcookies('horasp', 'parameters');
 setcookies("horasg$cookies_suffix", 'general');
 
+if ($Ck) {
+  $version1 ||= $version;
+  $version2 ||= $version;
+  if ($version1 eq $version2) { $version2 = 'Divino Afflatu'; }
+  if ($version1 eq $version2) { $version2 = 'Rubrics 1960'; }
+  $version = $version1;
+  $lang1 = $lang2 = $langc;
+}
+
 # save parameters
 $setupsave = savesetup(1);
 $setupsave =~ s/\r*\n*//g;
@@ -142,8 +146,7 @@ if ($testmode !~ /(Season|Saint|Common)/i) { $testmode = 'regular'; }
 our $expandnum = strictparam('expandnum');
 $notes = strictparam('notes');
 
-$only = $lang1 eq $lang2;
-setmdir($version);
+$only = !$Ck && ($lang1 eq $lang2);
 
 if ($officium eq 'Pofficium.pl') {
   our $date1 = strictparam('date1');
@@ -184,6 +187,7 @@ if ($command =~ /kalendar/) {    # kalendar widget
 
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
+$background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
 htmlHead("Divinum Officium " . ($hora || $command), 2);
 print bodybegin();
 
@@ -192,9 +196,9 @@ if ($command =~ /setup(.*)/i) {
   print setuptable($command, "Divinum Officium setup");
   $command = "change" . $command . strictparam('pcommand');
 } else {
-  my $dayheadline = setheadline();
-  print headline( $dayheadline, $comment, $daycolor);
-  $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
+  my $dayheadline = daylineheader(setheadline(), $Ck ? '' : $comment, $daycolor);
+  $dayheadline = daylineheader_c($dayheadline, $version1, $version2) if $Ck;
+  print headline($dayheadline, substr($officium, 0, 1));
 
   if ($horas[0] eq 'Plures') {
     print setplures();
@@ -224,7 +228,7 @@ if ($command =~ /setup(.*)/i) {
 
   if ($officium ne 'Pofficium.pl') {
     $votive ||= 'Hodie';
-    print par_c(selectables('general'));
+    print par_c(selectables('general' . ($Ck ? 'c' : '')));
   } else {
     print par_c(pmenu());
 
@@ -235,21 +239,8 @@ if ($command =~ /setup(.*)/i) {
     print "</TABLE>\n";
   }
   
-  print par_c("\n" . bottom_links_menu());
+  print par_c("\n" . bottom_links_menu(substr($officium, 0, 1) eq 'C'));
   if ($building && $buildscript) { print buildscript($buildscript); }
 }
 
 print bodyend();
-
-sub prevnext {
-  my $date1 = shift;
-  my $inc = shift;
-  $date1 =~ s/\//\-/g;
-  my ($month, $day, $year) = split('-', $date1);
-  my $d = date_to_days($day, $month - 1, $year);
-  my @d = days_to_date($d + $inc);
-  $month = $d[4] + 1;
-  $day = $d[3];
-  $year = $d[5] + 1900;
-  return sprintf("%02i-%02i-%04i", $month, $day, $year);
-}

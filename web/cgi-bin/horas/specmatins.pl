@@ -6,6 +6,7 @@ use utf8;
 # Divine Office Matins subroutines
 use FindBin qw($Bin);
 use lib "$Bin/..";
+use DivinumOfficium::Directorium qw(get_stransfer);
 
 # Defines ScriptFunc and ScriptShortFunc attributes.
 use horas::Scripting;
@@ -15,7 +16,7 @@ $a = 4;
 # collects and returns psalm 94 with the antipones
 sub invitatorium {
   my $lang = shift;
-  my %invit = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
+  my %invit = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
   my $name =
       ($dayname[0] =~ /Adv[12]/i) ? 'Adv'
     : ($dayname[0] =~ /Adv[34]/i) ? 'Adv3'
@@ -119,7 +120,7 @@ sub hymnusmatutinum {
     $comment = $c;
   }
   else {
-    my %hymn = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
+    my %hymn = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
     $name =
         ($dayname[0] =~ /adv/i) ? 'Adv'
       : ($dayname[0] =~ /quad5|quad6/i) ? 'Quad5'
@@ -142,7 +143,7 @@ sub hymnusmatutinum {
 sub psalmi_matutinum {
   $lang = shift;
   if ($version =~ /monastic/i && $winner{Rule} !~ /Matutinum Romanum/i) { return psalmi_matutinum_monastic($lang); }
-  my %psalmi = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi matutinum.txt')};
+  my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
   my $d = ($version =~ /trident/i) ? 'Daya' : 'Day';
   my $dw = $dayofweek;
 
@@ -245,7 +246,7 @@ sub psalmi_matutinum {
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
 
-  my %spec = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi matutinum.txt')};
+  my %spec = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
   my @spec = ();
   my $i = 0;
   my %w = (columnsel($lang)) ? %winner : %winner2;
@@ -281,7 +282,7 @@ sub psalmi_matutinum {
       && $rank < 5
       && !exists($winner{'Ant Matutinum'}))
     {
-      my %psalmi = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi matutinum.txt')};
+      my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
       @psalmi = split("\n", $psalmi{"Daya$dayofweek"});
       push(@s, '!Nocturn I.');
       foreach $i (0, 1) { antetpsalm($psalmi[$i], $i); }
@@ -338,7 +339,7 @@ sub psalmi_matutinum {
     my $i;
 
     if ($tde) {
-      my %r = %{setupstring($datafolder, $lang, 'Tempora/Pasc5-4.txt')};
+      my %r = %{setupstring($lang, 'Tempora/Pasc5-4.txt')};
       @spec = split("\n", $r{'Ant Matutinum'});
     } else {
       @spec = split("\n", $spec{"Pasc Ant Dominica"});
@@ -461,7 +462,7 @@ sub votivenocturn {
       push(@s, "\n");
     }
   } else {
-    %mariae = %{setupstring($datafolder, $lang, "$communename/C10.txt")};
+    %mariae = %{setupstring($lang, subdirname('Commune', $version) . "C10.txt")};
     @a = split("\n", $mariae{Benedictio});
     setbuild2('Special benedictio');
     push(@s, "Absolutio. $a[0]");
@@ -499,7 +500,7 @@ sub lectiones {
   } else {
     push(@s, "\$Pater noster");
   }
-  my %benedictio = %{setupstring($datafolder, $lang, 'Psalterium/Benedictions.txt')};
+  my %benedictio = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
   my $i = $num;
   
   my $j0 = 0;
@@ -529,7 +530,7 @@ sub lectiones {
   }
 
   if ($rule =~ /Special Benedictio/) {
-    %mariae = %{setupstring($datafolder, $lang, "$communename/C10.txt")};
+    %mariae = %{setupstring($lang, subdirname('Commune', $version) . "C10.txt")};
     @a = split("\n", $mariae{Benedictio});
     setbuild2('Special benedictio');
   }
@@ -664,7 +665,7 @@ sub lectio : ScriptFunc {
 
       # XXX: The commemoration has been suppressed, so we hardcode a path to
       # the sanctoral part.
-      $c = officestring($datafolder, $lang, "Sancti/12-$day.txt");
+      $c = officestring($lang, "Sancti/12-$day.txt");
       $c->{'Lectio2'} .= $c->{'Lectio3'} if (contract_scripture(2));
     } else {
       $c = (columnsel($lang)) ? \%commemoratio : \%commemoratio2;
@@ -677,7 +678,7 @@ sub lectio : ScriptFunc {
   # add first nocturn lessons from the actual tempora // as TempraM/Epi1-….txt is still incomplete it leads to issues on 01-13
   # TODO: get TemporaM folder updated and completed
   if ((($winner eq 'TemporaM/Nat2-0.txt') || ($winner eq 'SanctiM/01-13.txt')) && $num <= 4) { 
-    $c = officestring($datafolder, $lang,
+    $c = officestring($lang,
     $winner =~ /Tempora/ ? sprintf("SanctiM/01-%02d.txt",$day) : "TemporaM/Epi1-$dayofweek.txt");
     $w{"Lectio$num"} = $c->{"LectioM$num"} || $c->{"Lectio$num"};
   }
@@ -715,8 +716,10 @@ sub lectio : ScriptFunc {
   }
 
   #** handle initia table (Str$ver$year)
-  my $file = initiarule($month, $day, $year);
-  if ($file) { %w = resolveitable(\%w, $file, $lang); }
+  if ($num < 4 && $version !~ /monastic/i) {
+    my $file = initiarule($month, $day, $year);
+    if ($file) { %w = resolveitable(\%w, $file, $lang); }
+  }
 
   #StJamesRule
   if ($num < 4 && $rule =~ /StJamesRule=([a-z,]+)\s/i)    #was also: && $version !~ /1961/
@@ -800,7 +803,7 @@ sub lectio : ScriptFunc {
   }
 
   if ($commune{Rule} =~ /Special Lectio $num/) {
-    %mariae = %{setupstring($datafolder, $lang, "$communename/C10.txt")};
+    %mariae = %{setupstring($lang, subdirname('Commune', $version) . "C10.txt")};
     my $name = getC10readingname();
     $w = $mariae{$name};
     setbuild2("Mariae $name");
@@ -854,7 +857,7 @@ sub lectio : ScriptFunc {
 
       if ($wc) {
         setbuild2("Last lectio Commemoratio ex Tempore #1");
-        my %comm = %{setupstring($datafolder, $lang, 'Psalterium/Comment.txt')};
+        my %comm = %{setupstring($lang, 'Psalterium/Comment.txt')};
         my @comm = split("\n", $comm{'Lectio'});
         $comment = ($commemoratio{Rank} =~ /Feria/) ? $comm[0] : ($commemoratio =~ /01\-05/) ? $comm[3] : $comm[1];
         $w = setfont($redfont, $comment) . "\n$wc";
@@ -863,7 +866,7 @@ sub lectio : ScriptFunc {
 
     if ($transfervigil) {
       if (!(-e "$datafolder/$lang/$transfervigil")) { $transfervigil =~ s/v\.txt/\.txt/; }
-      my %tro = %{setupstring($datafolder, $lang, $transfervigil)};
+      my %tro = %{setupstring($lang, $transfervigil)};
       if (exists($tro{'Lectio Vigilia'})) { $w = $tro{'Lectio Vigilia'}; }
     }
     my $cflag = 1;    #*************  03-30-10
@@ -894,7 +897,7 @@ sub lectio : ScriptFunc {
 
       if ($wc) {
         setbuild2("Last lectio: Commemoratio from Sancti #$ji");
-        my %comm = %{setupstring($datafolder, $lang, 'Psalterium/Comment.txt')};
+        my %comm = %{setupstring($lang, 'Psalterium/Comment.txt')};
         my @comm = split("\n", $comm{'Lectio'});
         $comment = $comm[2];
         $w = setfont($redfont, $comment) . "\n$wc";
@@ -1123,7 +1126,7 @@ sub lect1960 {
   my $evan_regexp = shift;
   my %w = (columnsel($lang)) ? %winner : %winner2;
   my %s = (columnsel($lang)) ? %scriptura : %scriptura2;
-  my %benedictio = %{setupstring($datafolder, $lang, 'Psalterium/Benedictions.txt')};
+  my %benedictio = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
   my $i = 3;
 
   if ($rank < 2 || $winner{Rank} =~ /Feria/) {
@@ -1308,7 +1311,7 @@ sub ant_matutinum {
     @spec = split("\n", $spec{'Ant Matutinum'});
 
     if (!@spec) {
-      %spec = %{officestring($datafolder, $lang, $commune)};
+      %spec = %{officestring($lang, $commune)};
       @spec = split("\n", $spec{'Ant Matutinum'});
     }
   }
@@ -1357,7 +1360,7 @@ sub ant_matutinum {
 
   #Sunday psalter prepares @spec
   if ($winner{Rank} =~ /Dominica/i) {
-    %spec = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi matutinum.txt')};
+    %spec = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
     @spec = split("\n", $spec{'Pasc Ant Dominica'});
   }
 
@@ -1410,26 +1413,13 @@ sub ant_matutinum {
 #*** initiarule($month, $day, $year)
 # returns the key from the proper Str$ver$year table for the date
 sub initiarule {
-
   my $month = shift;
   my $day = shift;
   my $year = shift;
-  my $ver =
-      ($version =~ /monastic/i) ? 'M'
-    : ($version =~ /1570/i) ? '1570'
-    : ($version =~ /Trid/) ? '1910'
-    : ($version =~ /1960/) ? '1960'
-    : 'DA';
-  my @lines;
 
-  if ($num < 4 && $version !~ /monastic/i && (@lines = do_read("$datafolder/Latin/Tabulae/Str$ver$year.txt"))) {
-    my $str = join('', @lines);
-    $str =~ s/\=/\;\;/g;
-    my %str = split(';;', $str);
-    my $key = sprintf("%02i-%02i", $month, $day);
-    if (exists($str{$key})) { return $str{$key}; }
-  }
-  return '';
+  my $key = sprintf("%02i-%02i", $month, $day);
+
+  return get_stransfer($year, $version, $key);
 }
 
 #*** resolveitable(\%w, $file, $lang)
@@ -1457,7 +1447,7 @@ sub resolveitable {
     
     while (@file && $i <= $lim) {   # while we have more transferals and stay in the limit
       $file = shift(@file);
-      %winit = %{setupstring($datafolder, $lang, "$temporaname/$file.txt")};
+      %winit = %{setupstring($lang, subdirname('Tempora', $version) . "$file.txt")};
 
       #$w{"Lectio$start"} = $winit{"Lectio$i"};
       #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = $winit{"Responsory$i"};}
@@ -1501,7 +1491,7 @@ sub resolveitable {
     
     while (@file && $i <= $lim) {   # second, fill the transfers beforehand
       $file = shift(@file);
-      %winit = %{setupstring($datafolder, $lang, "$temporaname/$file.txt")};
+      %winit = %{setupstring($lang, subdirname('Tempora', $version) . "$file.txt")};
 
       #$w{"Lectio$start"} = $winit{"Lectio$i"};
       #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = $winit{"Responsory$i"};}
@@ -1545,7 +1535,7 @@ sub StJamesRule {
   if ($w{Rank} =~ /Dominica/i && prevdayl1($s)) {
     my $kd = "$dayname[0]-1";
     if ($ordostatus =~ /Ordo/i) { return $kd; }
-    %w1 = %{setupstring($datafolder, $lang, "$temporaname/$kd.txt");};
+    %w1 = %{setupstring($lang, subdirname('Tempora', $version) . "$kd.txt");};
   }
 
   if ($w{Rank} =~ /Jacobi/ && $scriptura{Lectio1} =~ /!.*?($s) /i) {
@@ -1567,7 +1557,7 @@ sub prevdayl1 {
   my $m = $month;
   if ($day = 0) { $m--; $d = $monthtab[$m - 1]; }
   my $kd = sprintf("%02i-%02i", $m, $d);
-  my %w1 = %{setupstring($datafolder, $lang, "$sanctiname/$kd.txt")};
+  my %w1 = %{setupstring($lang, subdirname('Sancti', $version) . "$kd.txt")};
   my $l = $w1{Lectio1};
   if ($l =~ /!.*?$s 1:/i) { return 1; }
   return 0;

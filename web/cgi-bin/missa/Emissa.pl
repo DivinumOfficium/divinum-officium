@@ -22,11 +22,10 @@ use Time::Local;
 use locale;
 use lib "$Bin/..";
 use DivinumOfficium::Main qw(vernaculars liturgical_color);
+use DivinumOfficium::Date qw(prevnext);
 $error = '';
 $debug = '';
 
-our $Tk       = 0;
-our $Hk       = 0;
 our $Ck       = 0;
 our $missa    = 1;
 our $NewMass  = 0;
@@ -84,7 +83,7 @@ our ( $lang1, $lang2, $column );
 our %translate;     #translation of the skeleton label for 2nd language
 
 if ( !$setupsave ) {
-    %setup = %{ setupstring( $datafolder, '', 'missa.setup' ) };
+    %setup = %{ setupstring( '', 'missa.setup' ) };
 }
 else {
     %setup = split( ';;;', $setupsave );
@@ -99,9 +98,6 @@ if ( !$command )     { $command     = 'praySanctaMissa'; }
 our $missanumber = strictparam('missanumber');
 if ( !$missanumber ) { $missanumber = 1; }
 our $caller      = strictparam('caller');
-our $sanctiname  = 'Sancti';
-our $temporaname = 'Tempora';
-our $communename = 'Commune';
 
 #*** handle different actions
 #after setup
@@ -150,7 +146,6 @@ else {
 
 if ( !$version ) { $version = 'Rubrics 1960'; }
 if ( !$lang2 )   { $lang2   = 'Latin'; }
-setmdir($version);
 
 # save parameters
 $setupsave =~ s/\r*\n*//g;
@@ -211,22 +206,6 @@ $comment<br>
 <a href="$date1-9-Missa.html"><font color="maroon" size="+1"><b><i>$head</i></b></font></a>
 </p>
 PrintTag
-}
-
-sub prevnext {
-  my $date1 = shift;
-  my $inc = shift;
-
-  $date1 =~ s/\//\-/g;
-  my ($month,$day,$year) = split('-',$date1);
-
-  my $d= date_to_days($day,$month-1,$year);
-
-  my @d = days_to_date($d + $inc);
-  $month = $d[4]+1;
-  $day = $d[3];
-  $year = $d[5]+1900;
-  return sprintf("%02i-%02i-%04i", $month, $day, $year);
 }
 
 # the sub is called from htmlhead
