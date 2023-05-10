@@ -135,11 +135,7 @@ $title = "Sancta Missa";
 
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
-htmlHead($title, 2);
-print << "PrintTag";
-<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="startup();">
-<FORM ACTION="$officium" METHOD=post TARGET=_self>
-PrintTag
+htmlHead($title, 'startup()');
 
 if ($command =~ /setup(.*)/is) {
   $pmode = 'setup';
@@ -154,7 +150,7 @@ if ($command =~ /setup(.*)/is) {
   headline($head);
 
   #eval($setup{'parameters'});
-  $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
+  $background = ($whitebground) ? ' class="contrastbg"' : '';
   ordo();
   print << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
@@ -162,13 +158,13 @@ PrintTag
 } else {    #mainpage
   $pmode = 'main';
   $command = "";
-  $height = floor($screenheight * 3 / 12);
+  $height = floor($screenheight * 6 / 12);
   $headline = setheadline();
   headline($title);
   print << "PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=0 HEIGHT=$height><TR>
-<TD><IMG SRC="$htmlurl/missa.jpg" HEIGHT=$height></TD>
+<TD><IMG SRC="$htmlurl/missa.png" HEIGHT=$height></TD>
 </TR></TABLE>
 <BR>
 </P>
@@ -266,10 +262,7 @@ PrintTag
 #*** Javascript functions
 # the sub is called from htmlhead
 sub horasjs {
-  print << "PrintTag";
-
-<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
-
+qq(
 //position
 function startup() {
   var i = 1;
@@ -395,9 +388,7 @@ function prevnext(ch) {
   }
   document.forms[0].date.value = m + "-" + d + "-" + y;
 }
-
-</SCRIPT>
-PrintTag
+)
 }
 
 # This procedure handles days on which there qre more than one proper Mass.

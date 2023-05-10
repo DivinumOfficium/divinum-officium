@@ -2,7 +2,7 @@
 Pope nn,nn~>$pope~>Entry~>12;;
 Bishop nn,nn~>$bishop~>Entry~>12;;
 Language1~>$lang1~>Optionmenu~>languages;;
-White background~>$whitebground~>Checkbutton;;
+Contrast background~>$whitebground~>Checkbutton;;
 Text font~>$blackfont~>Entry~>12;;
 Small text~>$smallblack~>Entry~>12;;
 Red font~>$redfont~>Entry~>12;;
