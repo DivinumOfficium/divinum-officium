@@ -1,50 +1,29 @@
-[Rank]
-In Vigilia Nativitatis Domini;;Duplex I classis;;6.1
+@Sancti/12-24
 
 [Rule]
 9 lectiones
 Matins simplex
 Psalmi Dominica
 Antiphonas horas 
-
-[Invit]
-@Sancti/12-24:Invit
+no93
 
 [Lectio1]
 @Tempora/Adv4-0:Lectio1
 
-[Lectio1](rubrica 1960)
-@Sancti/12-24:Lectio1
-
 [Responsory1]
 @Tempora/Adv4-0:Responsory1
-
-[Responsory1](rubrica 1960)
-@Sancti/12-24:Responsory1
 
 [Lectio2]
 @Tempora/Adv4-0:Lectio2
 
-[Lectio2](rubrica 1960)
-@Sancti/12-24:Lectio2
-
 [Responsory2]
 @Tempora/Adv4-0:Responsory2
-
-[Responsory2](rubrica 1960)
-@Sancti/12-24:Responsory2
 
 [Lectio3]
 @Tempora/Adv4-0:Lectio3
 
-[Lectio3](rubrica 1960)
-@Sancti/12-24:Lectio3
-
 [Responsory3]
 @Tempora/Adv4-0:Responsory3
-
-[Responsory3](rubrica 1960)
-@Sancti/12-24:Responsory3
 
 [Lectio4]
 @Tempora/Adv4-0:Lectio4
@@ -81,52 +60,3 @@ Antiphonas horas
 
 [Responsory9]
 @Sancti/12-24:Responsory3
-
-[Ant Laudes]
-@Sancti/12-24:Ant Laudes
-
-[Capitulum Laudes]
-@Sancti/12-24:Capitulum Laudes
-
-[Versum 2]
-@Sancti/12-24:Versum 2
-
-[Ant 2]
-@Sancti/12-24:Ant 2
-
-[Oratio]
-@Sancti/12-24:Oratio
-
-[Commemoratio 2]
-!De Dominica
-Ant. Ave, María, grátia plena: Dóminus tecum: benedícta tu in muliéribus, allelúja.
-_
-V. Vox clamántis in desérto: Paráte viam Dómini. 
-R. Rectas fácite sémitas ejus.
-_
-$Oremus
-Excíta, quǽsumus, Dómine, poténtiam tuam, et veni: et magna nobis virtúte~
-succúrre; ut per auxílium grátiæ tuæ, quod nostra peccáta præpédiunt,~
-indulgéntia tuæ propitiatiónis accéleret:
-$Qui vivis
-
-[Lectio Prima]
-@Sancti/12-24:Lectio Prima
-
-[Capitulum Tertia]
-@Sancti/12-24:Capitulum Tertia
-
-[Responsory Tertia]
-@Sancti/12-24:Responsory Tertia
-
-[Capitulum Sexta]
-@Sancti/12-24:Capitulum Sexta
-
-[Responsory Sexta]
-@Sancti/12-24:Responsory Sexta
-
-[Capitulum Nona]
-@Sancti/12-24:Capitulum Nona
-
-[Responsory Nona]
-@Sancti/12-24:Responsory Nona

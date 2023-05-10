@@ -551,7 +551,7 @@ sub lectiones {
   my $ltype1960 = gettype1960();
   if ($ltype1960) { return lect1960($lang, $evan_regexp); }
   
-  if ($winner =~ /sancti/i && $rule !~ /Special Evangelii Benedictio/i) { # if winner is sanctoral
+  if ($winner =~ /sancti/i && $rule !~ /ex C1[02]/ && $rule !~ /Special Evangelii Benedictio/i) { # if winner is sanctoral
     $i = ($num > 0) ? $num : 3;
     @a = split("\n", $benedictio{"Nocturn $i"});
   }
