@@ -109,12 +109,12 @@ sub hymnusmatutinum {
   my ($h, $c) = getproprium("$name Matutinum", $lang, $seasonalflag, 1);
 
   if ($h) {
-    if ($hymncontract) {
-      my $w = (columnsel($lang)) ? $winner : $winner2;
-      my $h1 = $w{'Hymnus Vespera'};
-      $h =~ s/^(v. )//;
-      $h1 =~ s/\*.*/$h/s;
-      $h = $h1;
+		if ($hymncontract) {			# if proper Vesper hymn has been omitted due to concurrent II. Vespers
+			my ($h1, $c1) = getproprium("$name Vespera", $lang, $seasonalflag, 1);
+			$h =~ s/^(v. )//;
+			$h1 =~ s/\_(?!.*\_).*/\_\n$h/s;	# find the Doxology as last verse since e.g. Venantius(05-18) has a proper one
+			$h = $h1;
+			setbuild2("Hymnus contracted");
     }
     $hymn = $h;
     $comment = $c;
