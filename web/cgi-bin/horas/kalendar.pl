@@ -25,6 +25,7 @@ use locale;
 use lib "$Bin/..";
 use DivinumOfficium::Main qw(liturgical_color);
 use DivinumOfficium::Directorium qw(dirge);
+use DivinumOfficium::Date qw(ydays_to_date);
 $error = '';
 $debug = '';
 
@@ -189,11 +190,12 @@ $testmode = strictparam('testmode');
 my($month,$day,$year) = split('-', strictparam($date_arg) || gettoday());
 $kmonth = strictparam('kmonth') || $month;
 $kyear = strictparam('kyear') || $year;
+#entries 13 (placeholder) and 14 (actually) are added for the Whole Year (Totum) Option
 @monthnames = (
   'Januarius', 'Februarius', 'Martius', 'Aprilis', 'Majus', 'Junius',
-  'Julius', 'Augustus', 'September', 'October', 'November', 'December'
+  'Julius', 'Augustus', 'September', 'October', 'November', 'December', '', ''
 );
-@monthlength = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+@monthlength = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31, '', 365);
 $title = "Ordo: $monthnames[$kmonth-1] $kyear";
 @daynames = qw/Dom. F.II F.III F.IV F.V F.VI Sabb./;
 
@@ -235,6 +237,7 @@ print do { # print headline
 <A HREF=# onclick="prevnext(-1)">&darr;</A>
 <INPUT TYPE=submit NAME=SUBMIT VALUE=" " onclick="document.forms[0].submit();">
 <A HREF=# onclick="prevnext(1)">&uarr;</A>
+&nbsp;&nbsp;&nbsp;<A HREF=# onclick=\"setkm(14)\">Totum</A>
 </P><P ALIGN=CENTER>
 PrintTag
 
@@ -257,11 +260,25 @@ print << "PrintTag";
 <TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH></TR>
 PrintTag
 $to = $monthlength[$kmonth - 1];
-if ($kmonth == 2 && leapyear($kyear)) { $to++; }
+if (($kmonth == 2 || $kmonth == 14) && leapyear($kyear)) { $to++; } # in February or for the whole year (14)
 
 for ($cday = 1; $cday <= $to; $cday++) {
-  my $date1 = sprintf("%02i-%02i-%04i", $kmonth, $cday, $kyear);
-  my $d1 = sprintf("%02i", $cday);
+	my $date1 = "";
+	my $d1 = "";
+	if($kmonth < 13) {					# loop over the days of a single month
+		$date1 = sprintf("%02i-%02i-%04i", $kmonth, $cday, $kyear);
+		$d1 = sprintf("%02i", $cday);
+	} else {										# loop over all days of the year
+		my ($yday, $ymonth, $yyear) = ydays_to_date($cday, $kyear);
+		$date1 = sprintf("%02i-%02i-%04i", $ymonth, $yday, $yyear);
+		$d1 = sprintf("%02i", $yday);
+		if ($yday == 1) {					# add extra headline at the start of a new month
+			my $monthtitle = "$monthnames[$ymonth-1] $kyear";
+			print << "PrintTag";
+<TR><TH COLSPAN="4" ALIGN=CENTER><A HREF=# onclick=\"setkm($ymonth)\">$monthtitle</A></TH></TR>
+PrintTag
+		}
+	}
   my(@c1,@c2) = ((),());
   for (0..$compare) {
     my($c1,$c2) = kalendar_entry($date1,$ver[$_],$compare);
