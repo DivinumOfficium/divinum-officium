@@ -8,7 +8,7 @@ BEGIN {
   require Exporter;
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(getweek leapyear geteaster get_sday nextday day_of_week monthday prevnext);
+  our @EXPORT_OK = qw(getweek leapyear geteaster get_sday nextday day_of_week monthday prevnext ydays_to_date);
 }
 
 use FindBin qw($Bin);
