@@ -237,7 +237,7 @@ print do { # print headline
 <A HREF=# onclick="prevnext(-1)">&darr;</A>
 <INPUT TYPE=submit NAME=SUBMIT VALUE=" " onclick="document.forms[0].submit();">
 <A HREF=# onclick="prevnext(1)">&uarr;</A>
-&nbsp;&nbsp;&nbsp;<A HREF=# onclick=\"setkm(14)\">Totum</A>
+&nbsp;&nbsp;&nbsp;<A HREF=# onclick=\"setkm(14)\">Totus</A>
 </P><P ALIGN=CENTER>
 PrintTag
 

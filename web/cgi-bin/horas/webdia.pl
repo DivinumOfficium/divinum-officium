@@ -636,7 +636,7 @@ sub selectable_p {
 sub horas_menu {
   my($completed, $date1, $version, $lang2, $votive, $testmode) = @_;
   my @horas = gethoras($votive eq 'C9');
-  push(@horas, 'Omnia', 'Plures') if ($0 !~ /Cofficium/);
+  push(@horas, 'Omnes', 'Plures') if ($0 !~ /Cofficium/);
 
   my $i  = 0;
   my $output = '';

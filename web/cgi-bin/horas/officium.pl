@@ -117,7 +117,7 @@ if ($command =~ s/^pray//) {
   if (@horas > 1 && $votive ne 'C9') {
     $plures = join('', @horas);
   }
-  if ($horas[0] eq 'Omnia') { 
+  if ($horas[0] eq 'Omnes') { 
     @horas = gethoras($votive eq 'C9');
   }
 }
