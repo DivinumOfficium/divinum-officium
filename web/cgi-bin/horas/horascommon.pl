@@ -150,15 +150,18 @@ sub getrank {
 
       #if ($version =~ /1960/ && $tn =~ /Nat1/i && $day =~ /(25|26|27|28)/) {$tn = '';}
     }
-    $tname = "$tn.txt";
-    $tvesp = 3;
-    %tempora = %{officestring('Latin', $tname)};
-    $trank = $tempora{Rank};
 
-    if ($hora =~ /(Vespera|Completorium)/i && $tempora{Rule} =~ /No secunda Vespera/i && $version !~ /1960|Monastic/i) {
-      $trank = '';
-      %tempora = undef;
-      $tname = '';
+    if ($tn) {
+      $tname = "$tn.txt";
+      $tvesp = 3;
+      %tempora = %{officestring('Latin', $tname)};
+      $trank = $tempora{Rank};
+
+      if ($hora =~ /(Vespera|Completorium)/i && $tempora{Rule} =~ /No secunda Vespera/i && $version !~ /1960|Monastic/i) {
+        $trank = '';
+        %tempora = undef;
+        $tname = '';
+      }
     }
   } else {
     $trank = '';
@@ -253,7 +256,7 @@ sub getrank {
   #check for concurrence
   my $cday = '';
   my @crank = ();
-  my %csaint = {};
+  my %csaint = ();
   my $crank = '';
   my $vflag = 0;
   $cday = $nday;
@@ -413,7 +416,6 @@ sub getrank {
   }
 
   #if ($svesp == 3 && $srank[2] >= 5 && $dayofweek == 6) {$srank[2] += 5;}  ?????????
-  my @cr = split(';;', $csaint{Rank});
 
   # In Festo Sanctae Mariae Sabbato according to the rubrics.
   if ( $dayname[0] !~ /(Adv|Quad[0-6])/i
@@ -576,7 +578,7 @@ sub getrank {
       $commemoratio = '';
     }
 
-    if (!$dayname[2]) {
+    if (!$dayname[2] && ($winner{'Commemoratio 2'} || $winner{'Commemoratio'})) {
       ($_) = split(/\n/, $winner{'Commemoratio 2'} || $winner{'Commemoratio'});
       $dayname[2] = "Commemoratio: $_" if (s/^!Commemoratio //);
     }
@@ -790,6 +792,30 @@ sub gettoday {
   return "$month-$day-$year";
 }
 
+sub setsecondcol {
+  our($winner, $commemoratio, $commune, $scriptura);
+  our($lang2, $tvesp, $testmode);
+
+  our(%winner2, %commemoratio2, %commune2, %scriptura2) = () x 4;
+
+  %winner2 = %{officestring($lang2, $winner, $winner =~ /tempora/i && $tvesp == 1)} if $winner;
+  %commemoratio2 = %{officestring($lang2, $commemoratio)} if $commemoratio;
+  %commune2 = %{officestring($lang2, $commune)} if $commune;
+  %scriptura2 = %{officestring($lang2, $scriptura)} if $scriptura;
+
+  if ($testmode =~ /Commune/i) {
+    foreach my $key (keys %winner2) {
+      next if $key =~ /Rank/i;
+
+      if (exists($commune2{$key})) {
+        $winner2{$key} = $commune2{$key};
+      } else {
+        delete($winner2{$key});
+      }
+    }
+  }
+}
+
 #*** precedence()
 # get date, rank, winner, preloads hashes
 sub precedence {
@@ -797,20 +823,19 @@ sub precedence {
   # globals sets here
   our($winner, $commemoratio, $commune, $scriptura, $commemoratio1) = ('') x 5;
   our(%winner, %commemoratio, %commemoratio1, %commune, %scriptura) = () x 5;
-  our(%winner2, %commemoratio2, %commune2, %scriptura2) = () x 4;
   our(@dayname) = ();
   our($month, $day, $year) = ('') x 3;
   our($rule, $communerule, $communetype, $laudes, $transfervigil) = ('') x 5;
   our($C10, $duplex) = ('') x 2;
-  # set global date
-  our($date1) = shift || strictparam('date');
-  if (!$date1 || $votive =~ /hodie/) { $date1 = gettoday(); }
 
   # globals read only
   our($hora, $version, $missa, $missanumber, $votive, $lang1, $lang2, $testmode);
   our($vespera, $cvespera, $tvesp, $svesp, $rank);
   our $datafolder;
 
+  # set global date
+  our($date1) = shift || strictparam('date');
+  if (!$date1 || $votive =~ /hodie/) { $date1 = gettoday(); }
   $date1 =~ s/\//\-/g;
   ($month, $day, $year) = split('-', $date1);
 
@@ -874,7 +899,6 @@ sub precedence {
     }
     my $flag = ($winner =~ /tempora/i && $tvesp == 1) ? 1 : 0;
     %winner = %{officestring($lang1, $winner, $flag)};
-    %winner2 = %{officestring($lang2, $winner, $flag)};
 
     # In the feriae where the octave of the Epiphany used to be, the
     # Mass is of the Epiphany ('Ecce advenit') before the Sunday, and
@@ -932,8 +956,6 @@ sub precedence {
       $commemoratio = '';
       %commemoratio = undef;
       $dayname[2] = '';
-    } else {
-      %commemoratio2 = %{officestring($lang2, $commemoratio)};
     }
   }
 
@@ -950,7 +972,6 @@ sub precedence {
 
   if ($scriptura) {
     %scriptura = %{officestring($lang1, $scriptura)};
-    %scriptura2 = %{officestring($lang2, $scriptura)};
   }
 
   #Epiphany days for 1955|1960
@@ -967,15 +988,15 @@ sub precedence {
 
   if ($commune) {
     %commune = %{officestring($lang1, $commune)};
-    %commune2 = %{officestring($lang2, $commune)};
 
+    # XXX: this should moved where Responsories are in use
     if (exists($commune{Responsory7c})) {
       my @a = split("\n", $commune{Responsory7});
       my @b = split("\n", $scriptura{Responsory1});
 
       if ($a[0] =~ /$b[0]/i) {
         $commune{Responsory7} = $commune{Responsory7c};
-        $commune2{Responsory7} = $commune2{Responsory7c};
+        # $commune2{Responsory7} = $commune2{Responsory7c};
       }
     }
 
@@ -992,25 +1013,13 @@ sub precedence {
     }
 
     if ($testmode =~ /Commune/i) {
-      my $key;
-
       foreach my $key (keys %winner) {
-        if ($key =~ /Rank/i) { next; }
+        next if $key =~ /Rank/i;
 
         if (exists($commune{$key})) {
           $winner{$key} = $commune{$key};
         } else {
           delete($winner{$key});
-        }
-      }
-
-      foreach my $key (keys %winner2) {
-        if ($key =~ /Rank/i) { next; }
-
-        if (exists($commune2{$key})) {
-          $winner2{$key} = $commune2{$key};
-        } else {
-          delete($winner2{$key});
         }
       }
     }
@@ -1041,15 +1050,13 @@ sub precedence {
     $winner = subdirname('Commune', $version) . "$vtv.txt";
     $commemoratio = $commemoratio1 = $scriptura = $commune = '';
     %winner = updaterank(setupstring($lang1, $winner));
-    %winner2 = updaterank(setupstring($lang2, $winner));
-    %commemoratio = %commemoratio1 = %scriptura = %commune = %commemoratio2 = %scriptura2 = %commune2 = {};
+    %commemoratio = %commemoratio1 = %scriptura = %commune = {};
     $rule = $winner{Rule};
 
     if ($vtv =~ /C12/i) {
       $commune = subdirname('Commune', $version) . "C11.txt";
       $communetype = 'ex';
       %commune = updaterank(setupstring($lang1, $commune));
-      %commune2 = updaterank(setupstring($lang2, $commune));
     }
     $dayname[1] = $winner{Name};
     $dayname[2] = '';
@@ -1059,15 +1066,14 @@ sub precedence {
     $winner = "Votive/$vtv.txt";
     $commemoratio = $commemoratio1 = $scriptura = $commune = '';
     %winner = updaterank(setupstring($lang1, $winner));
-    %winner2 = updaterank(setupstring($lang2, $winner));
-    %commemoratio = %scriptura = %commune = %commemoratio2 = %scriptura2 = %commune2 = {};
+    %commemoratio = %scriptura = %commune = {};
     $rule = $winner{Rule};
 
     if ($vtv =~ /Maria/i) {
       $commune = "Commune/C11.txt";
       $communetype = 'ex';
       %commune = updaterank(setupstring($lang1, $commune));
-      %commune2 = updaterank(setupstring($lang2, $commune));
+      # %commune2 = updaterank(setupstring($lang2, $commune));
     }
     $dayname[1] = $winner{Name};
     $dayname[2] = '';
@@ -1193,7 +1199,7 @@ sub setheadline {
   my $rank = shift;
 
   # read only globals
-  our(%winner, $winner, @dayname, $version, $day, $month, $year, $dayofweek, $hora);
+  our(%winner, $winner, @dayname, $version, $day, $month, $year, $dayofweek, $hora, $rule);
 
   if ((!$name || !$rank) && exists($winner{Rank}) && $winner !~ /Epi1\-0a/i) {
     my @rank = split(';;', $winner{Rank});

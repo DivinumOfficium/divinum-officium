@@ -124,6 +124,7 @@ $only = ($lang1 =~ /$lang2/) ? 1 : 0;
 
 # save parameters
 precedence();    #fills our hashes et variables
+setsecondcol();
 
 # prepare title
 $daycolor = liturgical_color($dayname[1], $commune);
