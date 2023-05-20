@@ -156,6 +156,7 @@ if ($officium eq 'Pofficium.pl') {
 }
 
 precedence($date1);    #fills our hashes et variables
+setsecondcol();
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;
 
