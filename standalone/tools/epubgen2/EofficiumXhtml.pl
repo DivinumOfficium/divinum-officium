@@ -197,8 +197,6 @@ if (!$version) {$version = 'Rubrics 1960';}
 if (!$lang2) {$lang2 = 'English';}
 $only = ($lang1 =~ $lang2) ? 1 : 0;
 
-setmdir($version);
-
 precedence($date1); #fills our hashes et variables
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;
