@@ -2,12 +2,6 @@ sub bodybegin {
   my $onload = $officium ne 'Pofficium.pl' && ' onload="startup();"';
   return << "PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg"$onload>
-<script>
-// https redirect
-if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
-    location.replace(`https:\${location.href.substring(location.protocol.length)}`);
-}
-</script>
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
 }
