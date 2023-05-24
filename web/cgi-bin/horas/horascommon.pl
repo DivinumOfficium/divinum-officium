@@ -67,15 +67,14 @@ sub getrank {
   my @trank = ();
   my @srank = ();
 
-  my $sday = get_sday($month, $day, $year);
+	# Search for relevant Sanctoral office of the day (if any)
+	my $sday = get_sday($month, $day, $year); # get office string mm-dd for Sanctoral office
+	my $transfertemp = get_tempora($version, $sday); # look for permanent Transfers assigned to the day of the year (as of 2023-5-22 only 12-12n in Newcal version)
+	if ($transfertemp && $transfertemp !~ /tempora/i) { $transfertemp = subdirname('Sancti', $version) . "$transfertemp"; }	# add path to Sancti folder if necessary
+	my $transfer = get_transfer($year, $version, $sday);				# get annual transfers if applicable depending on the day of Easter
+	$hymncontract = get_transfer($year, $version, "Hy$sday");		# check if Hymns need to be contracted on this day
 
-  my $transfertemp = get_tempora($version, $sday);
-
-  if ($transfertemp && $transfertemp !~ /tempora/i) { $transfertemp = subdirname('Sancti', $version) . "$transfertemp"; }
-
-  my $transfer = get_transfer($year, $version, $sday);
-  $hymncontract = get_transfer($year, $version, "Hy$sday");
-
+	# handle the case of a transferred vigil which does not have its file "mm-ddv"
   if ($transfer =~ /v$/ && !(-e "$datafolder/Latin/" . subdirname('Sancti', $version) . "$transfer.txt")) {
     $transfervigil = $transfer;
     $transfervigil =~ s/v$//;
@@ -84,25 +83,27 @@ sub getrank {
 
   if ($transfer) {
     if ($transfer !~ /tempora/i) { 
-      $transfer = subdirname('Sancti', $version) . "$transfer"; }
+      $transfer = subdirname('Sancti', $version) . "$transfer"; }	# add path to Sancti folder if necessary
     elsif ($version =~ /monastic/i) {
-      $transfer =~ s/TemporaM?/TemporaM/;
+      $transfer =~ s/TemporaM?/TemporaM/; 	# modify path to Monastic Tempora folder if necessary
     }
-  } 
+  }
+	
+	# to begin with, assume 2nd vespers for Winner, Sanctoral and Temporal and no concurrent Sanctoral office
   $vespera = 3;
   $svesp = 3;
   $tvesp = 3;
   $cvespera = 0;
-  $dayofweek = day_of_week($day, $month, $year);
+	$dayofweek = day_of_week($day, $month, $year);	# 0 = Sunday, 1 = Mpnday, etc.
   my $tn = '';
 
-  if ($dayname[0]) {
+	if ($dayname[0]) {			# outside Nativity tide where we do not have any Temporal
     $tn = subdirname('Tempora', $version) . "$dayname[0]-$dayofweek";
-    my $t = get_tempora($version, $tn); 
+		my $t = get_tempora($version, $tn);		# look for permanent Transfers assigned to the Temporal, most prominently the Ferias in the Octaves of S. Joseph, Corpus Christi, Ssmi Cordis
     $tn = $t || $tn;
   }
-  if ($transfertemp && $transfertemp =~ /tempora/i) { $tn = $transfertemp; }
-  if ($transfer =~ /tempora/i) { $tn = $transfer; }
+	if ($transfertemp && $transfertemp =~ /tempora/i) { $tn = $transfertemp; }	# in case a Temporal office has been transfered by means of assigning it to a specific day of the year
+	if ($transfer =~ /tempora/i) { $tn = $transfer; }	# also if in that specific year depending on the day of Easter
   my $tn1 = '';
   my $tn1rank = '';
   my $nday = nextday($month, $day, $year);
@@ -114,9 +115,9 @@ sub getrank {
 
   #Vespera anticipation  concurrence
   my $tnday = get_transfer($year, $version, $nday);
-  if (-e "$datafolder/Latin/$tn.txt" || $dayname[0] =~ /Epi0/i || ($tnday && $tnday =~ /tempora/i)) {
+	if (-e "$datafolder/Latin/$tn.txt" || $dayname[0] =~ /Epi0/i || ($tnday && $tnday =~ /tempora/i)) {
 
-    if ($hora =~ /(vespera|completorium)/i && $testmode !~ /(Saint|Common)/i) {
+		if ($hora =~ /(vespera|completorium)/i && $testmode !~ /(Saint|Common)/i) {	# retrieve potential Temporal office with 1st Vespers
       my $weekname = getweek($day, $month, $year, 1);
       $tn1 = sprintf("%s%s-%d", subdirname('Tempora', $version), $weekname, ($dayofweek + 1) % 7);
 
@@ -130,23 +131,13 @@ sub getrank {
 
       #$tvesp = 1;
       %tn1 = %{officestring('Latin', "$tn1.txt", 1)};
-
-      if ($tn1{Rank} =~ /(Feria|Vigilia|infra octavam|Quat[t]*uor)/i && $tn1{Rank} !~ /in octava/i
-       && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
-      if ( $tn1{Rank} =~ /(Feria|Sabbato|infra octavam)/i
-        && $tn1{Rank} !~ /in octava/i
-        && $tn1{Rank} !~ /Dominica/i)
-      {
-        $tn1rank = '';
-      } elsif ($dayname[0] =~ /Pasc[07]/i && $dayofweek != 6) {
-        $tn1rank = '';
-      } elsif ($version =~ /1955|1960/ && $tn1{Rank} =~ /Dominica Resurrectionis/i) {
-        $tn1rank = '';
-      } elsif ($version =~ /(1955|1960|Newcal)/ && $tn1{Rank} =~ /Patrocinii S. Joseph/i) {
-        $tn1rank = '';
-      } else {
-        $tn1rank = $tn1{Rank};
-      }
+			# Sort out all cases where there cannot be any 1st Vespers of a Temporal office
+      if ($tn1{Rank} =~ /(Feria|Vigilia|infra octavam|Quat[t]*uor)/i && $tn1{Rank} !~ /in octava/i && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
+      if ($tn1{Rank} =~ /(Feria|Sabbato|infra octavam)/i && $tn1{Rank} !~ /in octava/i && $tn1{Rank} !~ /Dominica/i) { $tn1rank = ''; }
+			elsif ($dayname[0] =~ /Pasc[07]/i && $dayofweek != 6) { $tn1rank = ''; }
+			elsif ($version =~ /1955|1960/ && $tn1{Rank} =~ /Dominica Resurrectionis/i) { $tn1rank = ''; }
+			elsif ($version =~ /(1955|1960|Newcal)/ && $tn1{Rank} =~ /Patrocinii S. Joseph/i) { $tn1rank = ''; }
+			else { $tn1rank = $tn1{Rank}; }
 
       #if ($version =~ /1960/ && $tn =~ /Nat1/i && $day =~ /(25|26|27|28)/) {$tn = '';}
     }
@@ -163,27 +154,32 @@ sub getrank {
         $tname = '';
       }
     }
-  } else {
+	} else { #if there is no Temporal file and we're not in Epiphany tide and there is no transfered temporal for the following day by day of Easter
     $trank = '';
     $tname = '';
   }
-  if (transfered($tname, $year, $version)) { $trank = ''; }
+	if (transfered($tname, $year, $version)) { $trank = ''; }			### this seems to come way too late in the algorithm and should never be evaluated as true ???
 
   #if (transfered($tn1)) {$tn1 = '';}     #???????????
   if ($hora =~ /Vespera/i && $dayname[0] =~ /Quadp3/ && $dayofweek == 3 && $version !~ /1960|1955/) {
+		# before 1955, Ash Wednesday gave way at 2nd Vespers in concurrence to a Duplex
     $trank =~ s/;;6/;;2/;
   }
-   elsif ($hora =~ /Vespera/i && $dayname[0] =~ /(Quad[0-5]|Quadp)/ && $dayofweek == 0 && $version =~ /1570|1910/) {
-    $trank =~ s/;;5.6/;;2/;
+  elsif ($hora =~ /Vespera/i && $dayname[0] =~ /(Quad[0-5]|Quadp)/ && $dayofweek == 0 && $version =~ /1570|1910/) {
+		# before Divino Afflatu, the Sundays from Septuag to Judica gave way at 2nd Vespers in concurrence to a Duplex
+		$trank =~ s/;;5.6/;;2/;
   }
   @trank = split(";;", $trank);
   my @tn1 = split(';;', $tn1rank);
 
+	# sort out Concurrence in the Temporal
   if ($tn1[2] >= $trank[2]) {
+		# if the following day is of higher rank than the current day, we have 1st Vespers of the following day and discard today's temporal completely
     $tname = "$tn1.txt";
     %tempora = %tn1;
     $trank = $tempora{Rank};
-    if ($version =~ /1960/ && $tn1 =~ /Nat1/i && $day =~ /(25|26|27|28)/) { $trank =~ s/;;5/;;4/; }
+		# Rubrics 1960: the Sunday within the Octave of the Nativity does not beat the Comites in concurrence at 1st Vespers:
+		if ($version =~ /1960/ && $tn1 =~ /Nat1/i && $day =~ /(25|26|27|28)/) { $trank =~ s/;;5/;;4/; }
     @trank = split(";;", $trank);
     $dayname[0] = getweek($day, $month, $year, 1, $missa);
     $tvesp = 1;
@@ -194,7 +190,7 @@ sub getrank {
   $initia = ($tempora{Lectio1} =~ /!.*? 1\:1\-/) ? $initia = 1 : 0;
 
   #handle sancti
-  my $sn = subdirname('Sancti', $version) . get_kalendar($version, $sday);
+	my $sn = subdirname('Sancti', $version) . get_kalendar($version, $sday);	# get the filename for the Sanctoral office from the Kalendarium
 
   # prevent duplicate vigil of St. Mathias in leap years
   $sn = '' if $sn =~ /02-23o/ && $day == 23 && leapyear($year) && day_of_week(25, $month, $year);
@@ -206,9 +202,10 @@ sub getrank {
   } elsif (transfered($sn, $year, $version)) {
     $sn = '';
   }
-  my $snd = $sn;
-  if (!$snd || $snd !~ /([0-9]+\-[0-9]+)/) { $snd = $sday; }
-  $snd = ($snd =~ /([0-9]+\-[0-9]+)/) ? $1 : '';
+	# the variable $snd seems to be completely superflous as of 2023-5-22:
+	# my $snd = $sn;
+	# if (!$snd || $snd !~ /([0-9]+\-[0-9]+)/) { $snd = $sday; }
+	# $snd = ($snd =~ /([0-9]+\-[0-9]+)/) ? $1 : '';
   if ($testmode =~ /^Season$/i) { $sn = 'none'; }
 
   if (-e "$datafolder/Latin/$sn.txt") {
@@ -240,8 +237,8 @@ sub getrank {
   if ($version =~ /(1955|1960|Monastic)/i && $trank[2] >= 6 && $srank[2] < 6) { $srank = ''; @srank = undef; }
 
   if ($version =~ /1955/ && $srank[2] == 2 && $srank[1] =~ /Semiduplex/i) {
-    $srank[2] = 1.5;
-  }    #1955: semiduplex reduced to simplex
+    $srank[2] = 1.5;	#1955: semiduplex reduced to simplex
+  }
 
   if ( $version =~ /1960|Monastic/i
     && $srank[2] < 2
@@ -260,16 +257,17 @@ sub getrank {
   my $crank = '';
   my $vflag = 0;
   $cday = $nday;
-  my $tcday = $tnday;
+	my $tcday = $tnday;		# the transfered office-file from the next day given the annual transfer tables depending on the date of Easter
   if ($tcday !~ /tempora/i && transfered($cday, $year, $version)) { $cday = 'none'; }
   if ($tcday && $tcday !~ /Tempora/i) { $cday = $tcday; }
   if ($tname =~ /Nat/ && $cday =~ /Nat/) { $cday = 'none'; }
   my $BMVSabbato = ($cday =~ /v/) ? 0 : 1;
   if ($hora =~ /(vespera|completorium)/i) {
-    if ($cday !~ /(tempora|DU)/i) { $cday = get_kalendar($version, $cday); }
-    my $cdayd = $cday;
-    if (!$cdayd || $cdayd !~ /([0-9]+\-[0-9]+)/) { $cdayd = nextday($month, $day, $year); }
-    $cdayd = ($cdayd =~ /([0-9]+\-[0-9]+)/) ? $1 : '';
+		if ($cday !~ /(tempora|DU)/i ) { $cday = get_kalendar($version, $cday); } # here it breaks if the transferred string is not known in the calendar (e.g. mm-dd-anticip...)
+		# same weird code as with $sday which has not been used anywhere else
+		#my $cdayd = $cday;
+		#if (!$cdayd || $cdayd !~ /([0-9]+\-[0-9]+)/) { $cdayd = nextday($month, $day, $year); }
+		#$cdayd = ($cdayd =~ /([0-9]+\-[0-9]+)/) ? $1 : '';
 
     if ($cday && $cday !~ /tempora/i) { $cday = subdirname('Sancti', $version) . "$cday"; }
     if ($testmode =~ /^Season$/i) { $cday = 'none'; }
@@ -610,7 +608,7 @@ sub getrank {
           && $dayofweek == 5
           && $trank[2] < 2
           && $srank[0] !~ /Vigil/i
-	  && $BMVSabbato == 1
+					&& $BMVSabbato == 1
           && $version !~ /(1960|Newcal)/)
       )
       )
