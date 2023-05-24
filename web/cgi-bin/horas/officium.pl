@@ -188,9 +188,8 @@ if ($command =~ /kalendar/) {    # kalendar widget
 
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
-$background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
-htmlHead("Divinum Officium " . ($hora || $command), 2);
-print bodybegin();
+$background = ($whitebground) ? ' class="contrastbg"' : '';
+htmlHead("Divinum Officium " . ($hora || $command), $officium ne 'Pofficium.pl' && 'startup()');
 
 if ($command =~ /setup(.*)/i) {
   $command = $1;
@@ -199,7 +198,7 @@ if ($command =~ /setup(.*)/i) {
 } else {
   my $dayheadline = daylineheader(setheadline(), $Ck ? '' : $comment, $daycolor);
   $dayheadline = daylineheader_c($dayheadline, $version1, $version2) if $Ck;
-  print headline($dayheadline, substr($officium, 0, 1));
+  print headline($dayheadline, substr($officium, 0, 1), $Ck ? "$version1 / $version2" : $version);
 
   if ($horas[0] eq 'Plures') {
     print setplures();

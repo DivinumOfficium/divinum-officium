@@ -9,22 +9,24 @@ use utf8;
 #use strict "subs";
 my $a = 4;
 
-#*** htmlHead($title, $flag)
-# generated the standard head with $title
+#*** htmlHead($title, $onload)
+# generate html head
 sub htmlHead {
-  my $title = shift;
-  my $flag = shift;
-  if (!$title) { $title = ' '; }
+  my($title, $onload) = @_;
 
-  #  print "Content-type: text/html; charset=ISO-8859-1\n\n";
-  print "Content-type: text/html; charset=utf-8\n\n";
+  my($horasjs) = "<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>\n" . horasjs() . '</SCRIPT>';
+  $onload && ($onload = " onload=\"$onload\";");
+
   print << "PrintTag";
+Content-type: text/html; charset=utf-8
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML><HEAD>
   <META NAME="Resource-type" CONTENT="Document">
   <META NAME="description" CONTENT="Divine Office">
   <META NAME="keywords" CONTENT="Divine Office, Breviarium, Liturgy, Traditional, Zsolozsma">
   <META NAME="Copyright" CONTENT="Like GNU">
+  <meta name="color-scheme" content="dark light">
   <STYLE>
     /* https://www.30secondsofcode.org/css/s/offscreen/ */
     .offscreen {
@@ -48,11 +50,26 @@ sub htmlHead {
       font-weight: bold;
       font-style: italic;
     }
+    p {
+      color: black;
+    }
+    .contrastbg { background: white; }
+     \@media (prefers-color-scheme: dark) {
+    .contrastbg { background: #121212; }
+    }
   </STYLE>
   <TITLE>$title</TITLE>
+$horasjs
+</HEAD>
+<BODY VLINK=$visitedlink LINK=$link BGCOLOR="#eeeeee"$onload>
+<script>
+// https redirect
+if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
+    location.replace(`https:\${location.href.substring(location.protocol.length)}`);
+}
+</script>
+<FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
-  if ($flag == 2) { horasjs(); }
-  print "</HEAD>";
 }
 
 #*** htmlInput()
@@ -172,7 +189,7 @@ sub htmlInput {
       : '';
     my $osize = @optarray;
     chomp($optarray[-1]);
-    $output .= "<SELECT ID=$parname NAME=$parname SIZE=$osize $onclick>\n";
+    $output .= "<SELECT ID=$parname NAME=$parname SIZE=1 $onclick>\n";
     foreach(@optarray) {
       my($display, $value) = split(/\//);
       $value ||= $display;
@@ -431,11 +448,11 @@ sub setcell {
         my $notefile = $1;
         $notefile =~ s/^pc/p/;
         my $colspan = ($only) ? 1 : 2;
-        print "<TR><TD COLSPAN=$colspan WIDTH=100% $background VALIGN=MIDDLE ALIGN=CENTER>\n"
+        print "<TR><TD COLSPAN=$colspan WIDTH=100% VALIGN=MIDDLE ALIGN=CENTER>\n"
           . "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=80%></TD></TR>\n";
       }
     }
-    print "<TD $background VALIGN=TOP WIDTH=$width%" . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID=$hora$searchind") . ">";
+    print "<TD VALIGN=TOP WIDTH=$width%" . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID=$hora$searchind") . ">";
     topnext_cell($lang);
 
     if ($text =~ /%(.*?)%/) {
@@ -511,7 +528,7 @@ sub table_start {
     ($textwidth && $textwidth =~ /^[0-9]+$/ && 0 < $textwidth && $textwidth <= 100)
     ? "$textwidth\%"
     : '80%';
-  print "<TABLE BORDER=$border ALIGN=CENTER CELLPADDING=8 WIDTH=$width>";
+  print "<TABLE BORDER=$border ALIGN=CENTER CELLPADDING=8 WIDTH=$width$background>";
 }
 
 #antepost('$title')
@@ -520,7 +537,7 @@ sub ante_post {
   my $title = shift;
   if ($Ck) { return; }
   my $colspan = ($only) ? '' : 'COLSPAN=2';
-  print "<TR><TD $background VALIGN=TOP $colspan ALIGN=CENTER>\n";
+  print "<TR><TD VALIGN=TOP $colspan ALIGN=CENTER>\n";
   if ($0 =~ /missa/) {
     print "<A HREF=\"mpopup.pl?popup=$title&rubrics=$rubrics&lang1=$lang1&lang2=$lang2\" TARGET=_NEW>$title</A>\n";
     print "<FONT SIZE=1>Missam</FONT></TD></TR>";
@@ -535,7 +552,7 @@ sub ante_post {
 sub table_end {
   if ($Ck) {
     my $width = ($only) ? 100 : 50;
-    print "<TR><TD $background VALIGN=TOP WIDTH=$width%>\n";
+    print "<TR><TD VALIGN=TOP WIDTH=$width%>\n";
     my $item;
     my $len1 = 0;
     foreach $item (@ctext1) { print "$item<BR>\n"; $len1 += wnum($item); }
@@ -543,14 +560,14 @@ sub table_end {
 
     if (!$only) {
       $len2 = 0;
-      print "<TD $background VALIGN=TOP WIDTH=$width%>\n";
+      print "<TD VALIGN=TOP WIDTH=$width%>\n";
       foreach $item (@ctext2) { print "$item<BR>\n"; $len2 += wnum($item); }
       print "</TD></TR>\n";
     }
-    print "<TR><TD $background VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len1 words</FONT></TD>";
+    print "<TR><TD VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len1 words</FONT></TD>";
 
     if (!$only) {
-      print "<TD $background VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len2 words</FONT></TD></TR>";
+      print "<TD VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len2 words</FONT></TD></TR>";
     }
   }
   print "</TABLE><A ID='$hora$searchind'></A>";
@@ -585,7 +602,7 @@ sub option_selector {
   my ($label, $onchange, $default, @options) = @_;
   my $id = $label; $id =~ s/\s+//g; $id = lc($id);
   my $output = "&nbsp;&nbsp;&nbsp;<LABEL FOR=$id CLASS=offscreen>$label</LABEL>\n";
-  $output .= sprintf("<SELECT ID=%s NAME=%s SIZE=%d onchange=\"%s\">\n", $id, $id, @options + 0, $onchange);
+  $output .= sprintf("<SELECT ID=%s NAME=%s SIZE=%d onchange=\"%s\">\n", $id, $id, 1, $onchange);
   foreach (@options) {
     my($display, $value) = split(/;/);
     $value = $display unless $value;
@@ -650,7 +667,7 @@ sub horas_menu {
     } else {
       $onclick = qq(onclick="hset('$_');");
     }
-    my $colour = $i <= $completed ? 'maroon' : 'blue' ;
+    my $colour = $i <= $completed ? $visitedlink : $link ;
     $output .= qq(\n<A HREF=$href $onclick><FONT COLOR=$colour>$_</FONT></A>\n);
     if (($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 2 || $i == 6)) || (($i == (@horas - 2)) && ($0 !~ /Cofficium/))) {
       $output .= '<BR>';
@@ -667,9 +684,5 @@ sub bottom_links_menu {
 
   my @options = map { "<A HREF=\"../../www/horas/Help/" . lcfirst($_) . ".html\" TARGET=\"_BLANK\">$_</A>\n";} 
                   qw(Versions Credits Download Rubrics Technical Help);
-  if ($compare) {
-    unshift(@options, qq(<A HREF=# onclick="pset('parameters')">Options</A>\n));
-    unshift(@options, qq(<A HREF=# onclick="callbrevi(\'$date1\')">One version</A>\n));
-  }
   join("&nbsp;&nbsp;&nbsp;&nbsp;\n", @options);
 }

@@ -31,7 +31,7 @@ sub horas {
   my $command = shift;
   $hora = $command;
   $hora = 'Vespera' if $hora =~ /vesper/i;
-  print "<H2 ID='${hora}top'>" . adhoram($hora) ."</H2>\n" if ($0 !~ /Cofficium/);
+  print "<H2 ID='${hora}top'>" . adhoram($hora) ."</H2>\n";
   our $canticum = 0;
   our $reciteindex = 0;
   our $recitelimit = 0;
