@@ -263,7 +263,8 @@ sub getrank {
 	if ($tname =~ /Nat/ && $cday =~ /Nat/) { $cday = 'none'; }
 	my $BMVSabbato = ($cday =~ /v/) ? 0 : 1;
 	if ($hora =~ /(vespera|completorium)/i) {
-		if ($cday !~ /(tempora|DU)/i ) { $cday = get_kalendar($version, $cday); } # here it breaks if the transferred string is not known in the calendar (e.g. mm-dd-anticip...)
+		#if ($cday !~ /(tempora|DU)/i ) { $cday = get_kalendar($version, $cday); } # here it breaks if the transferred string is not known in the calendar (e.g. mm-dd-anticip...)
+		if ($cday !~ /(tempora|DU)/i && !$tcday || $tcday =~ /tempora/i) { $cday = get_kalendar($version, $cday); } # potential solution
 		# same weird code as with $sday which has not been used anywhere else
 		#my $cdayd = $cday;
 		#if (!$cdayd || $cdayd !~ /([0-9]+\-[0-9]+)/) { $cdayd = nextday($month, $day, $year); }
