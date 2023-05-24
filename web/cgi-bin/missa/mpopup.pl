@@ -54,7 +54,7 @@ set_runtime_options('general'); #$expand, $version, $lang2
 set_runtime_options('parameters'); # priest, lang1 ... etc
 
 $popup = strictparam('popup');
-$background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
+$background = ($whitebground) ? ' class="contrastbg"' : '';
 $only = ($lang1 && $lang1 =~ /$lang2/) ? 1 : 0;
 $title = "$popup";
 $title =~ s/[\$\&]//;
@@ -69,13 +69,11 @@ $height = ($t > 300) ? $screenheight - 100 : 3 * $screenheight / 4;
 
 #*** generate HTML
 # prints the requested item from prayers hash as popup
-htmlHead($title, 2);
+htmlHead($title, 'setsize()');
 print << "PrintTag";
-<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="setsize()">
-<FORM ACTION="popup.pl" METHOD=post TARGET=_self>
 <H3 ALIGN=CENTER><FONT COLOR=MAROON><B><I>$title</I></B></FONT></H3>
 <P ALIGN=CENTER><BR>
-<TABLE BORDER=0 WIDTH=90% ALIGN=CENTER CELLPADDING=8 CELLSPACING=$border BGCOLOR='maroon'>
+<TABLE BORDER=0 WIDTH=90% ALIGN=CENTER CELLPADDING=8 CELLSPACING=$border$background>
 <TR>
 PrintTag
 $text =~ s/\_/ /g;
@@ -95,16 +93,7 @@ print "</FORM></BODY></HTML>";
 
 #*** javascript functions
 sub horasjs {
-  print << "PrintTag";
-
-<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
-
-function setsize() {
-  window.resizeTo($width, $height);
-}
-
-</SCRIPT>
-PrintTag
+  "function setsize() { window.resizeTo($width, $height); }"
 }
 
 sub gettext {

@@ -109,8 +109,8 @@ our ($lang1, $lang2, $expand, $column, $accented);
 our %translate; #translation of the skeleton label for 2nd language
 
 #internal script, cookies
-%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
-if (!$setupsave) {%setup = %{setupstring('.', '', 'Ehoras.setup')};}
+%dialog = %{setupstring('', 'horas.dialog')};
+if (!$setupsave) {%setup = %{setupstring('', '../../../standalone/tools/epubgen2/Ehoras.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 #if (!$setupsave && !getcookies('horasp', 'parameters')) {setcookies('horasp', 'parameters');}

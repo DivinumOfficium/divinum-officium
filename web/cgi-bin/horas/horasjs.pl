@@ -2,12 +2,12 @@
 # the sub is called from htmlhead
 sub horasjs {
 
-  print "\n<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>\n";
+  my($output);
   # $caller in principle might not be defined.
   my $caller_flag = $caller || 0;
 
   if ($officium ne 'Pofficium.pl') {
-    print << "PrintTag";
+    $output .= << "PrintTag";
 
 //position
 function startup() {
@@ -75,7 +75,7 @@ function callcompare() {
 }
 PrintTag
   }
-  print << "PrintTag";
+  $output .= << "PrintTag";
 //to prevent inhearitance of popup
 function clearradio() {
   var a= document.forms[0].popup;
@@ -167,9 +167,9 @@ function prevnext(ch) {
   }
   document.forms[0].date.value = m + "-" + d + "-" + y;
 }
-
-</SCRIPT>
 PrintTag
+
+  $output
 }
 
 1;

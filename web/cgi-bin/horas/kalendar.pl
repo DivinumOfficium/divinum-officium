@@ -200,10 +200,8 @@ $title = "Ordo: $monthnames[$kmonth-1] $kyear";
 @daynames = qw/Dom. F.II F.III F.IV F.V F.VI Sabb./;
 
 #*** generate HTML
-htmlHead($title, 2);
+htmlHead($title, '');
 print << "PrintTag";
-<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" >
-<FORM ACTION="kalendar.pl" METHOD=post TARGET=_self>
 <INPUT TYPE=HIDDEN NAME=setup VALUE="$setupsave">
 <INPUT TYPE=HIDDEN NAME=date1 VALUE="$date1">
 <INPUT TYPE=HIDDEN NAME=kmonth VALUE=$kmonth>
@@ -250,7 +248,7 @@ PrintTag
 
 print << "PrintTag";
 </P><P ALIGN=CENTER>
-<TABLE BORDER=$border WIDTH=90% CELLPADDING=3>
+<TABLE BORDER=$border WIDTH=90% CELLPADDING=3 STYLE="color: black">
 <TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH></TR>
 PrintTag
 $to = $monthlength[$kmonth - 1];
@@ -316,10 +314,7 @@ print "\n</BODY></HTML>";
 #*** horasjs()
 # javascript functions called by htmlhead
 sub horasjs {
-  print << "PrintTag";
-
-<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
-
+qq(
 function callbrevi(date) {
   if (!date) date = '';
   var officium = "$officium";
@@ -366,8 +361,7 @@ function readings() {
   document.forms[0].readings.value = 1;
   document.forms[0].submit();
 }
-</SCRIPT>
-PrintTag
+)
 }
 
 sub Readings {
