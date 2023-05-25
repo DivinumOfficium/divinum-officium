@@ -257,6 +257,7 @@ sub setfont {
   my $size = ($istr =~ /^\.*?([0-9\-\+]+)/i) ? $1 : 0;
   my $color = ($istr =~ /([a-z]+)\s*$/i) ? $1 : '';
   if ($istr =~ /(\#[0-9a-f]+)\s*$/i || $istr =~ /([a-z]+)\s*$/i) { $color = $1; }
+  $color = '' if $color eq 'italic'; # italic is not a color
   my $font = "<FONT ";
   if ($size) { $font .= "SIZE=$size "; }
   if ($color) { $font .= "COLOR=\"$color\""; }
