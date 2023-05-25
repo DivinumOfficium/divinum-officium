@@ -232,7 +232,7 @@ if ($command =~ /setup(.*)/i) {
   } else {
     print par_c(pmenu());
 
-    print "<TABLE ALIGN=CENTER BORDER=1>";
+    print '<TABLE ALIGN=CENTER BORDER=1 STYLE="color: black">';
     print selectable_p('versions', $version, $date1, $version, $lang2, $votive, $testmode);
     print selectable_p('languages', $lang2, $date1, $version, $lang2, $votive, $testmode, 'Language 2');
     print selectable_p('votives', $votive, $date1, $version, $lang2, $votive, $testmode);

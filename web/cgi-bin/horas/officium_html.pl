@@ -90,7 +90,7 @@ PrintTag
 sub setplures {
   my $output = << "PrintTag";
 <H2>Elige horas</H2>
-<TABLE WIDTH=75% CELLPADDING=5 ALIGN=CENTER>
+<TABLE WIDTH=75% CELLPADDING=5 ALIGN=CENTER STYLE="color: black">
 PrintTag
 
   foreach (gethoras($votive eq 'C9')) {
