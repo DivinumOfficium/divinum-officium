@@ -240,7 +240,7 @@ sub resolve_refs {
     }
 
     # italic for mute vovels in hymns
-    $line =~ s/\[([aeiou])\]/setfont('italic black', $1)/eg;
+    $line =~ s/\[([aeiou])\]/setfont('italic', $1)/eg;
 
     #connect lines marked by tilde, or but linebrak
     if ($line =~ /~\s*$/) {

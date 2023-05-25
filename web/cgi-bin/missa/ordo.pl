@@ -185,9 +185,6 @@ sub resolve_refs {
       $line = setfont($cfont, $line);
     } elsif ($line =~ /^\s*\!\!\!(.*)/s) {
       $line = $1;
-      my $cfont = $redfont;
-      $cfont =~ s/red/black/i;
-      $line = setfont($cfont, $line);
     }
 
     #small omitted comment
