@@ -2233,7 +2233,8 @@ sub get_prima_responsory {
   my $lang = shift;
   my $key = '';
   if ($dayname[0] =~ /(Adv|Nat)/i) { $key = $1; }
-  if ($dayname[0] =~ /Pasc/i) { $key = 'Pasch'; }
+  if ($dayname[0] =~ /Pasc/i && $dayname[0] !~ /Pasc5-[4-6]/i && $dayname[0] !~ /Pasc6/i) { $key = 'Pasch'; }
+  if ($dayname[0] =~ /Pasc5-[4-6]|Pasc6/i) {$key = 'Asc';}
 
   if ( $rule =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i
     || $scriptura{Rule} =~ /Doxology=(Nat|Epi|Pasch|Asc)/i
