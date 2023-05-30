@@ -54,8 +54,12 @@ Content-type: text/html; charset=utf-8
       color: black;
     }
     .contrastbg { background: white; }
-     \@media (prefers-color-scheme: dark) {
-    .contrastbg { background: #121212; }
+    \@media (prefers-color-scheme: dark) {
+      table { color: black; }
+      .contrastbg {
+        background: #121212;
+        color: white;
+      }
     }
   </STYLE>
   <TITLE>$title</TITLE>
