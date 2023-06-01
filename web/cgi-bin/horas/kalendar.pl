@@ -110,7 +110,7 @@ if (strictparam('format') eq 'ical') {
 #entries 13 (placeholder) and 14 (actually) are added for the Whole Year (Totus) Option
 use constant MONTHNAMES => qw/''
                               Januarius Februarius Martius Aprilis Maius Junius
-                              Julius Augustus September October November December '' ''/;
+                              Julius Augustus September October November December/;
 use constant MONTHLENGTH => ('', 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31, '', 365);
 use constant DAYNAMES => qw/Dom. F.II F.III F.IV F.V F.VI Sabb./;
 
