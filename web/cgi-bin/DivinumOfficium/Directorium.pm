@@ -13,7 +13,8 @@ BEGIN {
   require Exporter;
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(get_kalendar get_transfer get_stransfer get_tempora transfered check_coronatio dirge);
+  our @EXPORT_OK = qw(get_kalendar get_transfer get_stransfer get_tempora transfered 
+                      check_coronatio dirge hymnmerge hymnshift);
 }
 
 ### private vars
@@ -237,6 +238,24 @@ sub dirge {
   my $dirgeline = get_transfer($year, $version, 'dirge1') . ' '
                 . get_transfer($year, $version, 'dirge2');
   $dirgeline =~ /$sday/
+}
+
+#*** hymnmerge($version, $day, $month, $year)
+# true if Matutinum Hymn should merged with Vesperas
+# Rule XX.3
+sub hymnmerge {
+  my($version, $day, $month, $year) = @_;
+
+  get_transfer($year, $version, sprintf("Hy%s", get_sday($month, $day, $year))) eq '1'
+}
+
+#*** hymnshift($version, $day, $month, $year)
+# true if Hymns should shifted Vespera > Matutinum > Laudes > Vespera
+# Rule XX.3
+sub hymnshift {
+  my($version, $day, $month, $year) = @_;
+
+  get_transfer($year, $version, sprintf("Hy%s", get_sday($month, $day, $year))) eq '2'
 }
 
 1;

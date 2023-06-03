@@ -10,7 +10,7 @@ use FindBin qw($Bin);
 use lib "$Bin/..";
 use horas::Scripting qw(dispatch_script_function parse_script_arguments);
 use DivinumOfficium::Date qw(getweek leapyear geteaster get_sday nextday day_of_week monthday);
-use DivinumOfficium::Directorium qw(get_kalendar get_transfer get_tempora transfered);
+use DivinumOfficium::Directorium qw(get_kalendar get_transfer get_tempora transfered );
 
 sub error {
 	my $t = shift;
@@ -49,7 +49,7 @@ sub getrank {
 	
 	# globals set/mod here
 	our($winner, $rank, $commemoratio, $comrank, $commemoratio1, $commune, $communetype);
-	our($initia, $hymncontract, $scriptura, $laudesonly, $commemorated, $seasonalflag);
+  our($initia, $scriptura, $laudesonly, $commemorated, $seasonalflag);
 	our($antecapitulum, $antecapitulum2, $transfervigil) = ('') x 3;
 	our($vespera, $cvespera, $tvesp, $svesp, $dayofweek);
 	our($C10, $marian_commem);
@@ -72,8 +72,7 @@ sub getrank {
 	my $transfertemp = get_tempora($version, $sday); # look for permanent Transfers assigned to the day of the year (as of 2023-5-22 only 12-12n in Newcal version)
 	if ($transfertemp && $transfertemp !~ /tempora/i) { $transfertemp = subdirname('Sancti', $version) . "$transfertemp"; }	# add path to Sancti folder if necessary
 	my $transfer = get_transfer($year, $version, $sday);				# get annual transfers if applicable depending on the day of Easter
-	$hymncontract = get_transfer($year, $version, "Hy$sday");		# check if Hymns need to be contracted on this day
-	
+
 	# handle the case of a transferred vigil which does not have its file "mm-ddv"
 	if ($transfer =~ /v$/ && !(-e "$datafolder/Latin/" . subdirname('Sancti', $version) . "$transfer.txt")) {
 		$transfervigil = $transfer;
