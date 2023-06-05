@@ -1229,6 +1229,8 @@ sub setheadline {
       }
     } elsif ($version =~ /1960|Newcal|Monastic/i && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0 && $winner !~ /Pasc7-0/) {
       $rankname = 'Dies Octavæ I. classis';
+    } elsif ($version =~ /(1570|1910)/ && $winner =~ /Pent01-0/) {
+      $rankname = 'Duplex II. classis';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $rule =~ /C10/) {
       $rankname = 'Simplex';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $winner =~ /Quadp3-3/) {
