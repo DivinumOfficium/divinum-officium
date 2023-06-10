@@ -1067,7 +1067,7 @@ sub lectio : ScriptFunc {
 
   #handle parentheses in non Latin
   if ($lang !~ /Latin/i) {
-    $w =~ s/\((.*?[.,].*?)\)/parenthesised_text($1)/eg;
+    $w =~ s/\((.*?[.,\d].*?)\)/parenthesised_text($1)/eg;
   }
   $w = replaceNdot($w, $lang);
   return $w;
