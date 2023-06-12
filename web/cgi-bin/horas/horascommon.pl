@@ -290,7 +290,6 @@ sub getrank {
 		if ($csaint{Rule} =~ /No prima vespera/i) { $crank = ''; $cname = ''; }
 		if ($tname =~ /Tempora\/Quad6\-3/i) { $crank = ''; $cname = ''; }
 		
-		#infra octav concurrent with infra octav = crank deleted
 		@crank = split(";;", $crank);
 		
 		if ($version !~ /1960|Newcal/ && $srank && $crank && ($tname =~ /Quadp3\-3/i || $tname =~ /Quad6\-[1-3]/i)) {
@@ -298,7 +297,7 @@ sub getrank {
 		}
 		if ($version !~ /1960|Newcal/ && $crank && ($tname =~ /Quadp3\-2/i || $tname =~ /Quad6\-[1-3]/i)) { $crank[2] = 1; }
 		
-		if ($crank =~ /infra octav/i && $srank =~ /infra octav/i) {
+		if ($crank =~ /infra octav/i && $srank =~ /infra octav/i) { #infra octav concurrent with infra octav = crank deleted
 			$crank = '';
 			$cname = '';
 			@crank = undef;
