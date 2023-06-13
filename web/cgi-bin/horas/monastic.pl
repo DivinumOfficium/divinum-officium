@@ -355,7 +355,7 @@ sub legend_monastic {
   #1 lesson
   absolutio_benedictio($lang);
   my %w = (columnsel($lang)) ? %winner : %winner2;
-  my $str == '';
+  my $str;
 
   if (exists($w{Lectio94})) {
     $str = $w{Lectio94};
@@ -365,6 +365,7 @@ sub legend_monastic {
   }
 
   $str =~ s/&teDeum\s*//;
+  $str =~ s/^(?=\p{Letter})/v. /;
   push(@s, $str, '$Tu autem', '_');
 
   my $resp = '';
@@ -380,7 +381,8 @@ sub legend_monastic {
       $resp = "Responsory for ne lesson not found!";
     }
   }
-  push(@s, responsory_gloria($resp, 3));
+  $resp = responsory_gloria($resp, 3);
+  push(@s, matins_lectio_responsory_alleluia($resp, $lang));
 }
 
 #*** brevis_monstic($lang)

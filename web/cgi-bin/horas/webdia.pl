@@ -54,20 +54,18 @@ Content-type: text/html; charset=utf-8
       color: black;
     }
     .contrastbg { background: white; }
-     \@media (prefers-color-scheme: dark) {
-    .contrastbg { background: #121212; }
+    \@media (prefers-color-scheme: dark) {
+      table { color: black; }
+      .contrastbg {
+        background: #121212;
+        color: white;
+      }
     }
   </STYLE>
   <TITLE>$title</TITLE>
 $horasjs
 </HEAD>
 <BODY VLINK=$visitedlink LINK=$link BGCOLOR="#eeeeee"$onload>
-<script>
-// https redirect
-if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
-    location.replace(`https:\${location.href.substring(location.protocol.length)}`);
-}
-</script>
 <FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
 }

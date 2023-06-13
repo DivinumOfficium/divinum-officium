@@ -131,15 +131,12 @@ sub getrank {
 			
 			#$tvesp = 1;
 			%tn1 = %{officestring('Latin', "$tn1.txt", 1)};
-			# Sort out all cases where there cannot be any 1st Vespers of a Temporal office
-			if ($tn1{Rank} =~ /(Feria|Vigilia|infra octavam|Quat[t]*uor)/i && $tn1{Rank} !~ /in octava/i && $tn1{Rank} !~ /Dominica/i) {$tn1rank = '';}
-			if ($tn1{Rank} =~ /(Feria|Sabbato|infra octavam)/i && $tn1{Rank} !~ /in octava/i && $tn1{Rank} !~ /Dominica/i) { $tn1rank = ''; }
-			elsif ($dayname[0] =~ /Pasc[07]/i && $dayofweek != 6) { $tn1rank = ''; }
-			elsif ($version =~ /1955|1960/ && $tn1{Rank} =~ /Dominica Resurrectionis/i) { $tn1rank = ''; }
-			elsif ($version =~ /(1955|1960|Newcal)/ && $tn1{Rank} =~ /Patrocinii S. Joseph/i) { $tn1rank = ''; }
-			else { $tn1rank = $tn1{Rank}; }
-			
-			#if ($version =~ /1960/ && $tn =~ /Nat1/i && $day =~ /(25|26|27|28)/) {$tn = '';}
+			unless (	# Sort out all cases where there cannot be any 1st Vespers of a Temporal office
+				($tn1{Rank} =~ /(Feria|Vigilia|infra octavam|Quat[t]*uor)/i && $tn1{Rank} !~ /in octava/i && $tn1{Rank} !~ /Dominica/i)
+				|| ($tn1{Rank} =~ /(Feria|Sabbato|infra octavam)/i && $tn1{Rank} !~ /in octava/i && $tn1{Rank} !~ /Dominica/i)
+				|| ($dayname[0] =~ /Pasc[07]/i && $dayofweek != 6)
+				|| ($version =~ /1955|1960/ && $tn1{Rank} =~ /Dominica Resurrectionis/i)
+				|| ($version =~ /(1955|1960|Newcal)/ && $tn1{Rank} =~ /Patrocinii S. Joseph/i)) { $tn1rank = ''; }
 		}
 		
 		if ($tn) {
