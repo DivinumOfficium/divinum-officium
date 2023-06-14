@@ -5,12 +5,15 @@
 @Tempora/Pent01-1:Lectio2:s/4-8/7-8/ s/4 .*, a ona/7 A ona/s
 
 [Lectio9]
-@Tempora/Pent02-0:Lectio7:s/Co do .*//s
+@Tempora/Pent02-0:Lectio7:s/W tamtych .*//s
 
 [Responsory9]
 @Tempora/Pent01-3:Responsory1
 
 [Lectio10]
-@Tempora/Pent02-0:Lectio7:s/.* (Co do)/$1/s s/$/~/
-@Tempora/Pent02-0:Lectio8:s/Hence .*//s
+@Tempora/Pent02-0:Lectio7:s/.* (W tamtych)/$1/s s/$/~/
+@Tempora/Pent02-0:Lectio8:s/I dlatego napomina .*//s
+
+[Lectio11]
+@Tempora/Pent02-0:Lectio8:s/.* (I dlatego napomina)/$1/s
 
