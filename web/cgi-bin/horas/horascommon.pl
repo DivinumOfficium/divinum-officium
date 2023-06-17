@@ -167,6 +167,9 @@ sub getrank {
    elsif ($hora =~ /Vespera/i && $dayname[0] =~ /(Quad[0-5]|Quadp)/ && $dayofweek == 0 && $version =~ /1570|1910/) {
     $trank =~ s/;;5.6/;;2/;
   }
+  if (octava_cc($tn, $version)) {
+    $trank =~ s/;;2;/;;3.9;/;
+  }
   @trank = split(";;", $trank);
   my @tn1 = split(';;', $tn1rank);
 
@@ -1200,7 +1203,7 @@ sub setheadline {
   if ($name && $rank) {
     my $rankname = '';
 
-    if ($name !~ /(Die|Feria|Sabbato)/i && ($dayname[0] !~ /Pasc[07]/i || $dayofweek == 0)) {
+    if (($name !~ /(?:Die|Feria|Sabbato)/i || octava_cc($winner, $version)) && ($dayname[0] !~ /Pasc[07]/i || $dayofweek == 0)) {
       my @tradtable = (
         'none', 'Simplex', 'Semiduplex', 'Duplex',
         'Duplex majus', 'Duplex II. classis', 'Duplex I. classis', 'Duplex I. classis'
@@ -1412,6 +1415,16 @@ sub date_to_days {
 # returns 1 for 1960 not Christmas Octave days
 sub nooctnat {
   our $version =~ /1960|Monastic/i && (our $month < 12 || our $day < 25)
+}
+
+#*** octava_cc($day, $version)
+# check if day is in Octava Corpus Christi but not th Feast nor octava day
+sub octava_cc {
+  my $day = shift;
+  my $version = shift;
+
+  $version !~ /196|1955|Monastic/
+  && $day gt 'Tempora/Pent01-4' && $day lt 'Tempora/Pent02-4'
 }
 
 # Latin spelling variety in versions
