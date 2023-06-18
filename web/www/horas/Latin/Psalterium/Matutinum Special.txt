@@ -740,9 +740,7 @@ V. Resurréxit Dóminus, allelúja.
 R. Sicut dixit vobis, allelúja.
 
 [MM Capitulum C2]
-!Eccl 15:3
-v. Cibábit illum pane vitæ et intelléctus, et aqua sapiéntiæ salutáris potávit illum Dóminus Deus noster.
-$Deo gratias
+@Commune/C2:Capitulum Sexta
 _
 V. Lætábitur justus in Dómino, et sperábit in eo.
 R. Et laudabúntur omnes recti corde.
@@ -753,9 +751,7 @@ _
 @Commune/C1p:Responsory Nona:s/.*_.//s
 
 [MM Capitulum C3]
-!Sap 10:17
-v. Réddidit Deus mercédem labórum sanctórum suórum, et dedúxit illos in via mirábili: et fuit illis in velaménto diéi, et in luce stellárum nocte.
-$Deo gratias
+@Commune/C3:Capitulum Sexta
 _
 V. Justórum ánimæ in manu Dei sunt.
 R. Et non tanget illos torméntum mortis.
@@ -764,44 +760,31 @@ R. Et non tanget illos torméntum mortis.
 @:MM Capitulum C2p
 
 [MM Capitulum C4]
-!Eccl 44:20
-v. Non est invéntus símilis illi, † qui conserváret legem Excélsi: * ídeo jurejurándo fecit illum Dóminus créscere in plebem suam.
-$Deo gratias
+@Commune/C4:Capitulum Sexta
 _
 V. Justus germinábit sicut lílium.
 R. Et florébit in ætérnum ante Dóminum.
 
 [MM Capitulum C5]
-!Eccli 39:6
-v. Justus cor suum trádidit ad vigilándum dilúculo ad Dóminum, qui fecit illum, * et in conspéctu Altíssimi deprecábitur.
-$Deo gratias
+@Commune/C5:Capitulum Sexta
 _
-V. Justus germinábit sicut lílium.
-R. Et florébit in ætérnum ante Dóminum.
+@:MM Capitulum C4:s/.*_.//s
 
 [MM Capitulum C6]
-!2 Cor 11:2
-v. Ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro, vírginem castam exhibére Christo.
-$Deo gratias
+@Commune/C6:Capitulum Sexta
 _
 V. Dilexísti justítiam, et odísti iniquitátem.
 R. Proptérea unxit te Deus, Deus tuus, óleo lætítiæ.
 
 [MM Capitulum C6m]
-!Eccl 51:4-5
-v. Liberásti me, secúndum multitúdinem misericórdiæ nóminis tui a rugiéntibus, præparátis ad escam, †: de mánibus quæréntium ánimam meam, * et de portis tribulatiónum quæ circumdedérunt me.
-$Deo gratias
+@Commune/C7:Capitulum Sexta
 _
-V. Dilexísti justítiam, et odísti iniquitátem.
-R. Proptérea unxit te Deus, Deus tuus, óleo lætítiæ.
+@:MM Capitulum C6:s/.*_.//s
 
 [MM Capitulum C7]
-!Prov 31:20-21
-v. Manum suam apéruit ínopi, † et palmas suas exténdit ad páuperem. * Non timébit dómui suæ a frigóribus nivis.
-$Deo gratias
+@Commune/C7a:Capitulum Sexta
 _
-V. Dilexísti justítiam, et odísti iniquitátem.
-R. Proptérea unxit te Deus, Deus tuus, óleo lætítiæ.
+@:MM Capitulum C6:s/.*_.//s
 
 [MM Capitulum C8]
 @Commune/C8:Capitulum Sexta

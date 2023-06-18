@@ -109,11 +109,11 @@ sub getrank {
 	my $nday = nextday($month, $day, $year);
 	
 	#if ($hora =~ /(vespera|Completorium)/i) {
-	#  if ($transfer{$nday} =~ /tempora/i) {$tn1 = $transfer{$nday};}
+	#	if ($transfer{$nday} =~ /tempora/i) {$tn1 = $transfer{$nday};}
 	#}
 	if ($testmode =~ /(Saint|Common)/i) { $tn = 'none'; }
 	
-	#Vespera anticipation  concurrence
+	#Vespera anticipation	concurrence
 	my $tnday = get_transfer($year, $version, $nday);
 	if (-e "$datafolder/Latin/$tn.txt" || $dayname[0] =~ /Epi0/i || ($tnday && $tnday =~ /tempora/i)) {
 		
@@ -157,7 +157,7 @@ sub getrank {
 	}
 	if (transfered($tname, $year, $version)) { $trank = ''; }			### this seems to come way too late in the algorithm and should never be evaluated as true ???
 	
-	#if (transfered($tn1)) {$tn1 = '';}     #???????????
+	#if (transfered($tn1)) {$tn1 = '';}		 #???????????
 	if ($hora =~ /Vespera/i && $dayname[0] =~ /Quadp3/ && $dayofweek == 3 && $version !~ /1960|1955/) {
 		# before 1955, Ash Wednesday gave way at 2nd Vespers in concurrence to a Duplex
 		$trank =~ s/;;6/;;2/;
@@ -165,6 +165,11 @@ sub getrank {
 	elsif ($hora =~ /Vespera/i && $dayname[0] =~ /(Quad[0-5]|Quadp)/ && $dayofweek == 0 && $version =~ /1570|1910/) {
 		# before Divino Afflatu, the Sundays from Septuag to Judica gave way at 2nd Vespers in concurrence to a Duplex
 		$trank =~ s/;;5.6/;;2/;
+	}
+	if (octava_cc($tn, $version)) {
+		# The days infra Octavam Corpus Christi are outranked by Duplex I. classis only but shall not outrank the Octave day itself which is only outranked by Duplex I. cl. universalis
+		# however, it fails in the way it has been done e.g. 2012!
+		$trank =~ s/;;2;/;;3.9;/;
 	}
 	@trank = split(";;", $trank);
 	my @tn1 = split(';;', $tn1rank);
@@ -223,7 +228,7 @@ sub getrank {
 	if ($version =~ /(1955|1960|Newcal)/) {
 		if ($srank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|12\-24)/) { $srank = ''; }
 		if ($srank =~ /(infra octavam|in octava)/i && nooctnat()) { $srank = ''; }
-	}    #else {if ($srank =~ /Simplex/i) {$srank = '';}}
+	}		#else {if ($srank =~ /Simplex/i) {$srank = '';}}
 	@srank = split(";;", $srank);
 	
 	if ($srank[2] < 2 && $hora =~ /(vespera|completorium)/i && $trank && !($month == 1 && $day > 6 && $day < 13)) {
@@ -298,7 +303,7 @@ sub getrank {
 			$crank = '';
 			$cname = '';
 			@crank = undef;
-		}    #exception for nov 2
+		}		#exception for nov 2
 		if ($srank =~ /vigilia/i && ($version !~ /(1960|Newcal)/ || $sname !~ /08\-09/)) { $srank[2] = 0; $srank = ''; }
 		
 		# Restrict I. Vespers in 1955/1960. In particular, in 1960, II. cl.
@@ -391,26 +396,26 @@ sub getrank {
 	}
 	
 	#Newcal optional
-	#  if (
-	#       $version =~ /newcal/i
-	#   && $testmode =~ /seasonal/i
-	#   && ($srank[2] < 3
-	#      || ($dayname[0] =~ /Quad[1-6]/i && $srank[2] < 5))
-	#    )
-	#  {
-	#    $srank = $sname = $crank = $cname = '';
-	#    %saint = %csaint = undef;
-	#    @srank = @crank = '';
-	#  }
-	#  $commemoratio = $commemoratio1 = $communetype = $commune = $commemorated = $dayname[2] = $scriptura = '';
-	#  $comrank = 0;
+	#	if (
+	#			 $version =~ /newcal/i
+	#	 && $testmode =~ /seasonal/i
+	#	 && ($srank[2] < 3
+	#			|| ($dayname[0] =~ /Quad[1-6]/i && $srank[2] < 5))
+	#		)
+	#	{
+	#		$srank = $sname = $crank = $cname = '';
+	#		%saint = %csaint = undef;
+	#		@srank = @crank = '';
+	#	}
+	#	$commemoratio = $commemoratio1 = $communetype = $commune = $commemorated = $dayname[2] = $scriptura = '';
+	#	$comrank = 0;
 	if ($version =~ /Trid/i && $trank[2] < 5.1 && $trank[0] =~ /Dominica/i) { $trank[2] = 2.9; }
 	
 	if ($version =~ /1960/ && $dayofweek == 0) {
 		if (($trank[2] >= 6 && $srank[2] < 6) || ($trank[2] >= 5 && $srank[2] < 5)) { $srank = ''; @srank = undef; }
 	}
 	
-	#if ($svesp == 3 && $srank[2] >= 5 && $dayofweek == 6) {$srank[2] += 5;}  ?????????
+	#if ($svesp == 3 && $srank[2] >= 5 && $dayofweek == 6) {$srank[2] += 5;}	?????????
 	
 	# In Festo Sanctae Mariae Sabbato according to the rubrics.
 	if ( $dayname[0] !~ /(Adv|Quad[0-6])/i
@@ -533,7 +538,7 @@ sub getrank {
 		# Is the commemoration Marian?
 		$marian_commem = 0;
 		
-		if (transfered($tname, $year, $version)) {    #&& !$vflag)
+		if (transfered($tname, $year, $version)) {		#&& !$vflag)
 			if ($hora !~ /Vespera|Completorium/i) { $dayname[2] = "Transfer $trank[0]"; }
 			$commemoratio = '';
 		} elsif ($version =~ /1960|Newcal|Monastic/i && $winner{Rule} =~ /Festum Domini/i && $trank =~ /Dominica/i) {
@@ -554,7 +559,7 @@ sub getrank {
 			$commemoratio = $tname;
 			
 			if ($cname && $version !~ /1960|Newcal|Monastic/) {
-				{ $commemoratio1 = $cname; }    #{$commemoratio = $cname; $commemoratio1 = $tname;}
+				{ $commemoratio1 = $cname; }		#{$commemoratio = $cname; $commemoratio1 = $tname;}
 			}
 			$comrank = $trank[2];
 			$cvespera = $tvesp;
@@ -592,7 +597,7 @@ sub getrank {
 			}
 			$scriptura = $tname;
 		}
-	} else {    #winner is de tempora
+	} else {		#winner is de tempora
 		if (
 			$version !~ /Monastic/i
 			&& $dayname[0] !~ /(Adv|Quad[0-6])/i
@@ -627,7 +632,7 @@ sub getrank {
 			}
 		}
 		$rank = $trank[2];
-		$dayname[1] = "$trank[0]  $trank[1]";
+		$dayname[1] = "$trank[0]	$trank[1]";
 		$winner = $tname;
 		$vespera = $tvesp;
 		
@@ -699,16 +704,16 @@ sub getrank {
 	if ($winner =~ /tempora/i) { $antecapitulum = ''; }
 	
 	#Newcal commemoratio handling
-	#  if ($version =~ /Newcal/i && ($month != 12 || $day < 17 || $day > 24)) {
-	#    $commemoratio = $commemoratio1 = '';
-	#    %commemoratio = %commemoratio2 = undef;
-	#  }
+	#	if ($version =~ /Newcal/i && ($month != 12 || $day < 17 || $day > 24)) {
+	#		$commemoratio = $commemoratio1 = '';
+	#		%commemoratio = %commemoratio2 = undef;
+	#	}
 	
 	#Commemoratio for litaniis majores
-	#  if ($month == 4 && $day == 25 && $version =~ /(1955|1960|Newcal)/ && $dayofweek == 0) {
-	#    $commemoratio = '';
-	#    $dayname[2] = '';
-	#  }
+	#	if ($month == 4 && $day == 25 && $version =~ /(1955|1960|Newcal)/ && $dayofweek == 0) {
+	#		$commemoratio = '';
+	#		$dayname[2] = '';
+	#	}
 	$comrank =~ s/\s*//g;
 	$seasonalflag = ($testmode =~ /Seasonal/i && $winner =~ /Sancti/ && $rank < 5) ? 0 : 1;
 	if (($month == 12 && $day > 24) || ($month == 1 && $day < 14 && $dayname[0] !~ /Epi/i)) { $dayname[0] = "Nat$day"; }
@@ -874,7 +879,7 @@ sub precedence {
 		: ($dayname[0] =~ /Pasc/i) ? 'p'
 		: '';
 	}
-	getrank($day, $month, $year, $version);    #fills $winner, $commemoratio, $commune, $communetype, $rank);
+	getrank($day, $month, $year, $version);		#fills $winner, $commemoratio, $commune, $communetype, $rank);
 	$duplex = 0;
 	
 	if ($dayname[1] && $dayname[1] !~ /duplex/i) {
@@ -970,9 +975,9 @@ sub precedence {
 	}
 	
 	#Epiphany days for 1955|1960
-	#if ($version =~ /(1955|1960)/ && $month == 1 && $day > 6 && $day < 13 && $winner{Rank} =~ /Die/i  &&
-	#    exists($scriptura{Rank}))
-	#  {$winner{Rank} = $scriptura{Rank}; $winner2{Rank} = $scriptura2{Rank};}
+	#if ($version =~ /(1955|1960)/ && $month == 1 && $day > 6 && $day < 13 && $winner{Rank} =~ /Die/i	&&
+	#		exists($scriptura{Rank}))
+	#	{$winner{Rank} = $scriptura{Rank}; $winner2{Rank} = $scriptura2{Rank};}
 	#no transfervigil if emberday
 	if ( $winner{Rank} =~ /Quat[t]*uor/i
 	|| $commemoratio{Rank} =~ /Quat[t]*uor/i
@@ -1204,7 +1209,7 @@ sub setheadline {
 	if ($name && $rank) {
 		my $rankname = '';
 		
-		if ($name !~ /(Die|Feria|Sabbato)/i && ($dayname[0] !~ /Pasc[07]/i || $dayofweek == 0)) {
+	if (($name !~ /(?:Die|Feria|Sabbato)/i || octava_cc($winner, $version)) && ($dayname[0] !~ /Pasc[07]/i || $dayofweek == 0)) {
 			my @tradtable = (
 			'none', 'Simplex', 'Semiduplex', 'Duplex',
 			'Duplex majus', 'Duplex II. classis', 'Duplex I. classis', 'Duplex I. classis'
@@ -1419,6 +1424,16 @@ sub nooctnat {
 	our $version =~ /1960|Monastic/i && (our $month < 12 || our $day < 25)
 }
 
+#*** octava_cc($day, $version)
+# check if day is in Octava Corpus Christi but not th Feast nor octava day
+sub octava_cc {
+	my $day = shift;
+	my $version = shift;
+
+	$version !~ /196|1955|Monastic/
+	&& $day gt 'Tempora/Pent01-4' && $day lt 'Tempora/Pent02-4'
+}
+
 # Latin spelling variety in versions
 sub spell_var {
 	my $t = shift;
@@ -1443,22 +1458,22 @@ sub spell_var {
 }
 
 #*** papal_commem_rule($rule)
-#  Determines whether a rule contains a clause for a commemorated Pope.
-#  Returns a list ($class, $name), as for papal_rule.
+#	Determines whether a rule contains a clause for a commemorated Pope.
+#	Returns a list ($class, $name), as for papal_rule.
 sub papal_commem_rule($) {
 	return papal_rule(shift, (commemoration => 1));
 }
 
 #*** papal_rule($rule, %params)
-#  Determines whether a rule contains a clause for the office of a
-#  Pope. If $params{'commemoration'} is true, a commemorated Pope
-#  (only) is checked for; otherwise, only in the office of the day.
+#	Determines whether a rule contains a clause for the office of a
+#	Pope. If $params{'commemoration'} is true, a commemorated Pope
+#	(only) is checked for; otherwise, only in the office of the day.
 #
-#  Returns a list ($plural, $class, $name), where $plural is true if
-#  the office is of several Popes; $class is 'C', 'M' or 'D' as the
-#  Pope is a confessor, doctor or martyr, respectively; and $name is
-#  the name(s) of the Pope(s). The empty list is returned if there is
-#  no match.
+#	Returns a list ($plural, $class, $name), where $plural is true if
+#	the office is of several Popes; $class is 'C', 'M' or 'D' as the
+#	Pope is a confessor, doctor or martyr, respectively; and $name is
+#	the name(s) of the Pope(s). The empty list is returned if there is
+#	no match.
 sub papal_rule($%) {
 	my ($rule, %params) = @_;
 	my $classchar = $params{'commemoration'} ? 'C' : 'O';
@@ -1466,10 +1481,10 @@ sub papal_rule($%) {
 }
 
 #*** papal_prayer($lang, $plural, $class, $name[, $type])
-#  Returns the collect, secret or postcommunion from the Common of
-#  Supreme Pontiffs, where $lang is the language; $plural, $class and
-#  $name are as returned by papal_rule; and $type optionally specifies
-#  the key for the template (otherwise, it will be 'Oratio').
+#	Returns the collect, secret or postcommunion from the Common of
+#	Supreme Pontiffs, where $lang is the language; $plural, $class and
+#	$name are as returned by papal_rule; and $type optionally specifies
+#	the key for the template (otherwise, it will be 'Oratio').
 sub papal_prayer($$$$;$) {
 	my ($lang, $plural, $class, $name, $type) = @_;
 	$type ||= 'Oratio';
@@ -1501,8 +1516,8 @@ sub papal_prayer($$$$;$) {
 }
 
 #*** papal_antiphon_dum_esset($lang)
-#  Returns the Magnificat antiphon "Dum esset" from the Common of
-#  Supreme Pontiffs, where $lang is the language.
+#	Returns the Magnificat antiphon "Dum esset" from the Common of
+#	Supreme Pontiffs, where $lang is the language.
 sub papal_antiphon_dum_esset($) {
 	my $lang = shift;
 	our $version;
@@ -1557,13 +1572,13 @@ sub papal_antiphon_dum_esset($) {
 	}
 	
 	# We have four types of scope (in each direction):
-	use constant SCOPE_NULL => 0;    # Null scope.
-	use constant SCOPE_LINE => 1;    # Single line.
-	use constant SCOPE_CHUNK => 2;   # Until the next blank line.
-	use constant SCOPE_NEST => 3;    # Until a (weakly) stronger conditional.
+	use constant SCOPE_NULL => 0;		# Null scope.
+	use constant SCOPE_LINE => 1;		# Single line.
+	use constant SCOPE_CHUNK => 2;	 # Until the next blank line.
+	use constant SCOPE_NEST => 3;		# Until a (weakly) stronger conditional.
 	
 	#*** evaluate_conditional($conditional)
-	#  Evaluates a expression from a data-file conditional directive.
+	#	Evaluates a expression from a data-file conditional directive.
 	sub evaluate_conditional($) {
 		my $conditional = shift;
 		my $expression = '';
@@ -1579,8 +1594,8 @@ sub papal_antiphon_dum_esset($) {
 	}
 	
 	#*** conditional_regex()
-	#  Returns a regex that matches conditionals, capturing stopwords,
-	#  the condition itself and scope keywords, in that order.
+	#	Returns a regex that matches conditionals, capturing stopwords,
+	#	the condition itself and scope keywords, in that order.
 	sub conditional_regex() {
 		return qr/\(\s*($stopwords_regex\b)*(.*?)($scope_regex)?\s*\)/o;
 	}
@@ -1617,7 +1632,7 @@ sub papal_antiphon_dum_esset($) {
 }
 
 #*** build_comment_line()
-#  Sets $comment to the HTML for the comment line.
+#	Sets $comment to the HTML for the comment line.
 sub build_comment_line() {
 	our @dayname;
 	our ($comment, $marian_commem);
@@ -1627,7 +1642,7 @@ sub build_comment_line() {
 }
 
 #*** cache_prayers()
-#  Loads Prayers.txt for each language into global hash.
+#	Loads Prayers.txt for each language into global hash.
 sub cache_prayers() {
 	our %prayers;
 	our ($lang1, $lang2);
@@ -1676,7 +1691,7 @@ sub expand {
 			push @args, $antline;
 		}
 		return dispatch_script_function($function_name, @args);
-	} else    # Sigil is $, so simply look up the prayer.
+	} else		# Sigil is $, so simply look up the prayer.
 	{
 		if ($expand =~ /all/i) {
 			
