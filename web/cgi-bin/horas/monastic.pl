@@ -382,7 +382,8 @@ sub legend_monastic {
     }
   }
   $resp = responsory_gloria($resp, 3);
-  push(@s, matins_lectio_responsory_alleluia($resp, $lang));
+  matins_lectio_responsory_alleluia($resp, $lang);
+  push(@s, $resp);
 }
 
 #*** brevis_monstic($lang)
