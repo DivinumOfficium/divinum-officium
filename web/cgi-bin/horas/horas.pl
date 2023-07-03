@@ -443,13 +443,6 @@ sub psalm : ScriptFunc {
     $antline = $a[4];
   }
 
-  if ($ck) {
-    if ($lang =~ $lang1) {
-      $version = $version1;
-    } else {
-      $version = $version2;
-    }
-  }
   my $nogloria = 0;
   my $canticlef = 230 < $num && $num < 234;
 
@@ -890,13 +883,6 @@ sub ant_Benedictus : ScriptFunc {
   our ($month, $day);
   our $duplex;
 
-  if (our $ck) {
-    if ($lang =~ our $lang1) {
-      $version = our $version1;
-    } else {
-      $version = our $version2;
-    }
-  }
   my ($ant) = getantvers('Ant', 2, $lang);
 
   if ($month == 12 && ($day == 21 || $day == 23) && $winner =~ /tempora/i) {
@@ -927,13 +913,6 @@ sub ant_Magnificat : ScriptFunc {
   our $rank;
   our $vespera;
 
-  if (our $ck) {
-    if ($lang =~ our $lang1) {
-      $version = our $version1;
-    } else {
-      $version = our $version2;
-    }
-  }
   my $v = ($version =~ 1960 && $winner =~ /Sancti/i && $rank < 5) ? 3 : $vespera;
   my ($ant) = getantvers('Ant', $v, $lang);
 

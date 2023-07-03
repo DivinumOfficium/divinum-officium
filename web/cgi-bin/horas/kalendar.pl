@@ -67,6 +67,12 @@ our $q = new CGI;
 my $compare =  strictparam('compare') || 0;
 my $officium = strictparam('officium') || 'officium.pl';
 
+if ($compare) {
+  $officium = "C$officium" unless $officium =~ /^[PC]/;
+} else {
+  $officium =~ s/^C//;
+}
+
 # use the right date arg
 my $date_arg = $officium =~ /Pofficium/? 'date1': 'date';
 
@@ -92,7 +98,7 @@ $setupsave = savesetup(1);
 $setupsave =~ s/\r*\n*//g;
 
 my @ver;
-push(@ver, strictparam('version') || strictparam('version1') || 'Rubrics 1960');
+push(@ver, strictparam('version') || 'Rubrics 1960');
 push(@ver, strictparam('version2') || 'Divino Afflatu') if ($compare);
 
 my ($month, $day, $year) = split('-', strictparam($date_arg) || gettoday());
@@ -313,7 +319,7 @@ PrintTag
   print kalendar_table($kyear, $kmonth);
 
   print "<P ALIGN=CENTER>\n";
-  print htmlInput('version1', $ver[0], 'options', 'versions', , "document.forms[0].submit()");
+  print htmlInput('version', $ver[0], 'options', 'versions', , "document.forms[0].submit()");
   if ($compare) {
     print htmlInput('version2', $ver[1], 'options', 'versions', , "document.forms[0].submit()");
   }
@@ -337,14 +343,6 @@ PrintTag
   (my $command = strictparam('command')) =~ s/^pray//;
   if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Past)/i) {
     $command = "pray" . ($compare ? $1 : $command); # Cofficium can't use Plures
-  }
-
-  # return to Compare version if $compare
-  # except there is no P Compare version
-  if ($compare) {
-    $officium = "C$officium" unless $officium =~ /^[PC]/;
-  } else {
-    $officium =~ s/^C//;
   }
 
   print << "PrintTag";
