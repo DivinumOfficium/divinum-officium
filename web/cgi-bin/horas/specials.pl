@@ -1254,7 +1254,7 @@ sub oratio {
       || ($commemoratio1 =~ /Tempora/i && $commemoratio1{Rank} =~ /;;[23]/))
     )
   {
-    $i = getind($commemoratio1, ($hora =~ /laudes/i) ? 2 : $vespera, $day);
+    $i = getind($commemoratio1, ($hora =~ /laudes/i) ? 2 : $cvespera, $day);
     $w = getcommemoratio($commemoratio1, $i, $lang);
     my $num = concurrent_office($commemoratio1, 1, $day);
     if ($w) { setcc($w, $num, setupstring($lang, $commemoratio1)); }

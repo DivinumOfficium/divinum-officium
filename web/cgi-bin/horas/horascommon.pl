@@ -565,7 +565,7 @@ sub getrank {
       $commemoratio1 = ($trank[2] > 1) ? $tname : '';
       $commemoratio = $cname;
       $comrank = $crank[2];
-      $cvespera = 4 - $svesp;
+      $cvespera = $commemoratio1 ? $tvesp : 4 - $svesp;
       $marian_commem = ($crank[3] =~ /C1[0-9]/);
     } elsif ($crank[2] < 6) {
       $dayname[2] = '';
