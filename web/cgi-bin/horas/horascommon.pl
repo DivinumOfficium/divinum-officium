@@ -1235,7 +1235,7 @@ sub setheadline {
       $rankname = 'Simplex';
     } elsif ($version =~ /(1570|1910|Divino|1955)/ && $winner =~ /Quadp3-3/) {
       $rankname = 'Feria privilegiata';
-    } elsif ($version =~ /(1570|1910|Divino|1955)/ && $winner =~ /Pasc6-5/) {
+    } elsif ($version =~ /(1570|1910|Divino|1955)/ && ($winner =~ /Pasc6-5/ || $name =~ /die infra/)) {
       $rankname = 'Semiduplex';
     } elsif ($version =~ /1960|Newcal|Monastic/i && $winner =~ /Pasc6-6/) {
       $rankname = 'I. classis';
