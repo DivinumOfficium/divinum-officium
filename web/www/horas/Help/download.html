@@ -74,24 +74,23 @@ The website is contained in the /web subdirectory of this repository. The other 
 </DIV>
 
 <H3>&gt; Hosting Locally: Python &lt;</H3>
-It is possible to set up Divinum Officium as a local host using the CGI HTTP Python script from the terminal in Mac OS or Linux. Using an Android device, this can be done via Termux or any other Linux app, such as UserLAnd, using any of their Linux distributions. Once the selected distro is functional, download the appropriate packages of Git, Python, CGI.pm (and CGI::Session, if using Termux), and then clone the Git repository as follows:
+It is possible to set up Divinum Officium as a local host using the CGI HTTP Python script from the terminal in Mac OS or Linux. Using an Android device, this can be done via Termux or any other Linux app, such as UserLAnd, using any of their Linux distributions. Once the selected distro is functional, download the appropriate packages of Git, Python, CGI.pm (as indicated below), and then clone the Git repository as follows:
 <PRE>apt install perl
 apt install git
-cpan CGI.pm
-cpan CGI::Session
+cpan force install MARKSTOS/CGI.pm-3.65.tar.gz
 apt install python
 git clone https://github.com/divinumofficium/divinum-officium
 </PRE>
 Once the divinum-officium repository has been cloned using Git, the following terminal syntax may be used:
 <PRE>cd ~/divinum-officium 
-git pull # if You want to update repository
+git pull # to update repository
 cd web
 python -m http.server --cgi
 </PRE>
-If You still have python2 (run <code>python --version</code> to check), the last line should be replaced with <code>python -m CGIHTTPServer</code> in order to start the server.<BR><BR>
+If you still have python2 (run <code>python --version</code> to check), the last line should be replaced with <code>python -m CGIHTTPServer</code> in order to start the server.<BR><BR>
 Once the server is active and running in the terminal window, navigate to (typically) <CODE>http://0.0.0.0:8000</CODE> in your browser. Divinum Officium should then be functional as on the live site.<BR>
 <H3>&gt; Hosting Locally: Apache &lt;</H3>
-If installing on a different server (e.g. Apache), Perl &gt;= 5.10.1 is required, as are the modules CGI.pm and CGI::Session, which can be obtained from your OS/Perl distribution or from CPAN.<BR><BR>
+If installing on a different server (e.g. Apache), Perl &gt;= 5.10.1 is required, as are the modules CGI.pm and potentially CGI::Session, which can be obtained from your OS/Perl distribution or from CPAN.<BR><BR>
 Your webserver must be configured to allow the execution of CGI scripts from web/cgi-bin/.<BR><BR>
 For Apache one way to achieve this is to use the following directives in a Directory element for that directory:
 <PRE>
