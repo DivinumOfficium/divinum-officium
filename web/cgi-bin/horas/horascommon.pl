@@ -300,7 +300,7 @@ sub getrank {
 		}
 		if ($version !~ /1960|Newcal/ && $crank && ($tname =~ /Quadp3\-2/i || $tname =~ /Quad6\-[1-3]/i)) { $crank[2] = 1; }
 		
-		if ($crank =~ /infra octav/i && $srank =~ /infra octav/i) { #infra octav concurrent with infra octav = crank deleted
+		if ($crank =~ /infra octav/i && $srank =~ /infra octav/i && $crank !~ /Dominica/i) { #infra octav concurrent with infra octav = crank deleted
 			$crank = '';
 			$cname = '';
 			@crank = undef;
@@ -371,7 +371,7 @@ sub getrank {
 				$cname = '';
 				@crank = '';
 				%csaint = undef;
-			} elsif ($srank[2] >= 5 && $crank =~ /infra octav/i) {
+			} elsif ($srank[2] >= 5 && $crank =~ /infra octav/i && $crank[0] !~ /Epiph/i) {
 				$crank = '';
 				$cname = '';
 				%csaint = undef;
@@ -447,6 +447,7 @@ sub getrank {
 		}
 	}
 	if ($trank[2] == 2 && $trank[0] =~ /infra octav/i) { $srank[2] += .1; } # Ensure that days infra Octavam are outranked by Semiduplex
+	if ($version =~ /trid/i && $trank[0] =~ /infra octavam Corp/i) { $trank[2] = 2.9; }
 	if ($tname =~/Epi1\-0/i && $srank[2] == 5.6) { $srank[2] = 2.9; } # Ensure that the infra Octavam Epi does not outrank the Sunday infra Octavam or the Feast of the Holy Family
 	if ($testmode =~ /seasonal/i && $version =~ /1960|Newcal/ && $srank[2] < 5 && $dayname[0] =~ /Adv/i) { $srank[2] = 1; }
 	
@@ -599,6 +600,7 @@ sub getrank {
 			}
 			$scriptura = $tname;
 		}
+		if ($winner =~ /01-12t/ && ($hora =~ /laudes/i || $vespera == 3 )) { $commemoratio = 'Sancti/01-06.txt' }
 	} else {		#winner is de tempora
 		if (
 			$version !~ /Monastic/i
@@ -687,7 +689,7 @@ sub getrank {
 					if (($version !~ /1960/ && $crank[2]) || ($crank[2] >= 3 || ($trank[2] == 5 && $crank[2] >= 2))) {
 						$commemoratio1 = $cname;
 					}
-					if ($winner =~ /Epi1-0a/ && ($hora =~ /laudes/i || $vespera == 3 )) { $commemoratio = 'Sancti/01-06.txt' }
+					if ($winner =~ /Epi1\-0a/ && ($hora =~ /laudes/i || $vespera == 3 )) { $commemoratio = 'Sancti/01-06.txt' }
 				}
 			} else {
 				$dayname[2] = '';
