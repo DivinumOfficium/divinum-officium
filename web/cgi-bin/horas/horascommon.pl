@@ -1237,14 +1237,14 @@ sub setheadline {
 					$rankname = (/Pasc[017]/i || /Pent01/i) ? 'Duplex I. classis'
 						: (/(Adv1|Quad[1-6])/i) ? 'Semiduplex Dominica I. classis'
 						: (/(Adv[2-4]|Quadp)/i) ? 'Semiduplex Dominica II. classis'
-						: (/(Epi[3-6])/i && $dayofweek > 0) ? 'Simplex'
+						: (/(Epi[1-6])|Pent[22-23]/i && $dayofweek > 0) ? 'Semiduplex Dominica anticipata'
 						: 'Semiduplex Dominica minor';
 				} else {
 					local $_ = getweek($day, $month, $year, $dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i);
 					$rankname = (/Pasc[017]/i || /Pent01/i) ? 'Duplex I. classis'
 					: (/(Adv1|Quad1|Quad[5-6])/i) ? 'Semiduplex Dominica I. classis'
 					: (/(Adv[2-4]|Quadp|Quad[2-4])/i) ? 'Semiduplex Dominica II. classis'
-					: (/(Epi[3-6])/i && $dayofweek > 0) ? 'Simplex'
+					: (/(Epi[1-6])|Pent[22-23]/i && $dayofweek > 0) ? 'Simplex Dominica anticipiata'
 					: 'Semiduplex Dominica minor';
 				}
 			}
