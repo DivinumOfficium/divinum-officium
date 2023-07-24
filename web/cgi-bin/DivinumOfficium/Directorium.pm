@@ -201,7 +201,7 @@ sub transfered {
 
     if ($val =~ /Tempora/i && $val !~ /Epi1\-0/i) { next; }
 
-    if ($val !~ /$key/ && ($str =~ /$val/i || $val =~ /$str/i)) {
+    if ($val !~ /$key/ && ($str =~ /$val/i || $val =~ /$str/i) && $transfer{$key} !~ /v\s*$/i) {
       return $key;
     }
   }
