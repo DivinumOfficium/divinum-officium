@@ -196,7 +196,12 @@ sub getrank {
 	my $sn = subdirname('Sancti', $version) . get_kalendar($version, $sday);	# get the filename for the Sanctoral office from the Kalendarium
 	
 	# prevent duplicate vigil of St. Mathias in leap years
-	$sn = '' if $sn =~ /02-23o/ && $day == 23 && leapyear($year) && day_of_week(25, $month, $year);
+	if($day == 23 && $month == 2 && leapyear($year)) {
+		$sn = ($sn =~ /02-22sab/) ? '02-22'
+		: ($sn =~ /02-23o/) ? ''
+		: ($sn =~ /02-23/) ? '02-23-petri-damiani' : '';
+	}
+	#$sn = '' if $sn =~ /02-23o/ && $day == 23 && leapyear($year) && day_of_week(25, $month, $year);
 	
 	if ($transfertemp =~ /Sancti/) {
 		$sn = $transfertemp;
