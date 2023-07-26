@@ -1218,7 +1218,7 @@ sub setheadline {
 	if ($name && $rank) {
 		my $rankname = '';
 		
-		if (($name !~ /(?:Die|Feria|Sabbato|^In Octava)/i) && ($dayname[0] !~ /Pasc[07]/i || $dayofweek == 0)) {
+		if (($name !~ /(?:Die|Feria|Sabbato|^In Octava)/i) && ($dayname[0] !~ /Pasc[07]/i || $dayofweek == 0 || $name !~ /Pasc|Pent/i)) {
 			my @tradtable = (
 			'none', 'Simplex', 'Semiduplex', 'Duplex',
 			'Duplex majus', 'Duplex II. classis', 'Duplex I. classis', 'Duplex I. classis'
