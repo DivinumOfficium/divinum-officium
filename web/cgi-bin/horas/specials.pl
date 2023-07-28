@@ -1594,7 +1594,7 @@ sub getcommemoratio {
 
   if (!$o && $w{Rule} =~ /Oratio Dominica/i) {
     $wday =~ s/\-[0-9]/-0/;
-    $wday =~ s/Epi1\-0/Epi1-0a/;
+    $wday =~ s/Epi1\-0/Epi1\-0a/;
     my %w1 = %{officestring($lang, $wday, ($i == 1) ? 1 : 0)};
 
     if (exists($w1{'OratioW'})) {
@@ -1616,7 +1616,7 @@ sub getcommemoratio {
   }
   if (!$o) { return ''; }
   my $a = $w{"Ant $ind"};
-  if (!$a || ($winner =~ /Epi1-0a/ && $hora =~ /vespera/i && $vespera == 3)) { $i = 4 - $ind; $a = $w{"Ant $i"}; }
+  if (!$a || ($winner =~ /Epi1\-0a/ && $hora =~ /vespera/i && $vespera == 3)) { $i = 4 - $ind; $a = $w{"Ant $i"}; }
   if (!$a) { $a = $c{"Ant $ind"}; }
   my $name = $w{Name};
   $a = replaceNdot($a, $lang, $name);
@@ -1641,7 +1641,7 @@ sub getcommemoratio {
   if (!$a) { return ''; }
   postprocess_ant($a, $lang);
   my $v = $w{"Versum $ind"};
-  if ($winner =~ /Epi1-0a/) { 
+  if ($winner =~ /Epi1\-0a|01\-12t/) {
     my %w = (columnsel($lang)) ? %winner : %winner2;
     $v = ($vespera == 1 && $day == 10) ? $c{'Versum 2'} : $w{'Versum Commemoratio'}; }
   if (!$v) { $i = 4 - $ind; $v = $w{"Versum $i"}; }
