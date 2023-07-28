@@ -1,40 +1,9 @@
-[Rank]
-St Philippe Béniti Confesseur;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5 ;mtv
-9 lectiones
-
-[Oratio]
-Dieu, Vous nous avez donné un excellent modèle d’humilité en la personne de Votre Confesseur, le bienheureux Philippe : accordez à Vos serviteurs de mépriser, à son exemple, les biens de ce monde et de chercher toujours les biens du ciel.
-$Per Dominum
-
-[Lectio4]
-Philippe, né à Florence de l’illustre famille des Beniti, donna dès son berceau des marques de sa future sainteté. A peine était-il âgé de cinq mois, que sa langue se délia miraculeusement pour engager sa mère à faire l’aumône aux Frères Servites. Encore adolescent, étant à Paris pour étudier les belles lettres, il joignit à cette étude une ardente piété et alluma le désir du ciel en plusieurs de ses compagnons. Rentré dans sa patrie, une vision de la sainte Vierge lui fit connaître sa vocation pour l’Ordre des Servites, récemment fondé. Retiré avec eux dans une grotte, du mont Senario, il y passa des jours pleins de douceur, soumettant son corps à de rudes austérités et méditant les souffrances du Seigneur crucifié. Puis il se mit à parcourir l’Europe et une grande partie de l’Asie pour y prêcher l’Évangile ; il établit des couvents des Sept-Douleurs de la Sainte Vierge et propagea son Ordre par le rare exemple de ses vertus.
-
-[Lectio5]
-Le feu de la divine charité dont il brûlait et son zèle ardent pour l’extension de la foi catholique l’ayant fait élire, malgré ses résistances, général de son Ordre, il envoya un grand nombre de ses frères prêcher l’Évangile en Russie ; lui-même parcourut les principales villes de l’Italie, apaisant les discordes qui s’élevaient de plus en plus parmi les citoyens, et en ramenant aussi plusieurs sous l’obéissance du Pontife romain. Il ne négligea rien de ce qui pouvait contribuer au salut du prochain, et fit passer des hommes très pervers, de la fange des vices à la pénitence et à l’amour de Jésus-Christ. Extrêmement assidu à l’oraison, il parut souvent ravi en extase. La virginité lui était si chère, qu’il s’infligea volontairement les plus rigoureuses mortifications pour la garder intacte jusqu’au dernier soupir.
-
-[Lectio6]
-On vit constamment briller en lui une tendre compassion envers les pauvres ; elle parut surtout avec éclat lorsque, dans un faubourg de Sienne, il donna son propre vêtement à un pauvre lépreux à peu près nu ; aussitôt que ce malheureux en fut couvert, il se trouva guéri de sa lèpre. Le bruit de ce miracle s’étant répandu de tous côtés, quelques-uns des Cardinaux réunis à Viterbe pour l’élection du successeur de Clément IV, jetèrent les yeux sur Philippe, dont ils connaissaient du reste la prudence toute céleste. A cette nouvelle, l’homme de Dieu craignant de se voir imposer la charge de pasteur suprême, s’enfuit sur le mont Tuniato, et y demeura caché jusqu’au moment où Grégoire fut proclamé souverain Pontife. En cet endroit se trouve une source d’eau qu’on appelle encore aujourd’hui Fontaine de Saint-Philippe, eau qui doit à ses prières la vertu de guérir les malades. Enfin il quitta très saintement cette vie, à Todi, l’an douze cent quatre-vingt-cinq, en embrassant le crucifix, qu’il appelait son livre. A son tombeau, des aveugles recouvrèrent la vue, des boiteux furent guéris et des morts ressuscitèrent. Devant l’éclat de ces prodiges et de beaucoup d’autres encore, le souverain Pontife Clément X l’inscrivit au nombre des Saints.
-
-[Lectio7]
-@Commune/C5:Lectio7 in 2 loco
-
-[Lectio8]
-@Commune/C5:Lectio8 in 2 loco
-
-[Lectio9]
-@Commune/C5:Lectio9 in 2 loco
+@Sancti/08-23t
 
 [Lectio Vigilia]
 !Pour la Vigile de S. Barthélemy Apôtre
-@Commune/C1v :Lectio1
+@Commune/C1v:Lectio1
 
 [Oratio Vigilia]
 !Pour la Vigile de S. Barthélemy Apôtre
-@Sancti/08-23o :Oratio
-
-[Lectio94]
-Philippe, né dans une noble famille bénédictine à Florence, a été appelé par une vision extraordinaire de la Très Sainte Vierge à rejoindre la famille récemment instituée de ses serviteurs. Tout d'abord, il se retira dans la grotte du Mont Senario, où il mena une vie austère de mortification du corps, mais douce dans la méditation des souffrances du Seigneur Jésus-Christ. Ensuite, il fonda des confréries des Sept Douleurs de la Mère de Dieu à travers presque toute l'Europe et une grande partie de l'Asie. Malgré son renoncement à la fonction de supérieur de son Ordre, il fut animé d'une ardente charité divine et parcourut de nombreuses villes d'Italie pour apaiser les querelles entre les citoyens et les ramener à l'obéissance envers le Souverain Pontife de Rome. Il convertit également de nombreux pécheurs à la pénitence. Enfin, à Todi, en l'an 1285, il quitta cette vie dans les bras de la Croix du Christ, qu'il appelait son livre, avec une grande sainteté. Le pape Clément X l'a canonisé et l'a inscrit au nombre des saints.
-&teDeum
+@Sancti/08-23o:Oratio
