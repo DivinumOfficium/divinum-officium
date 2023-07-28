@@ -50,10 +50,11 @@ sub load_transfer_file {
   my $type = shift;
 
   my @lines = do_read "$datafolder/$type/$name.txt";
-  my $regexp = qr{^(?:Hy|seant)?(?:01|02-[01]|02-2[0123]|dirge1)};
+	my $regexp = qr{^(?:Hy|seant)?(?:01|02-[01]|02-2[01239]|dirge1)};
+	my $regexp2 = qr{^(?:Hy|seant)?(?:01|02-[01]|02-2[01239]|.*=(01|02-[01]|02-2[0123])|dirge1)};
 
   if ($filter == 1) { # Feb 24 - Dec
-    grep { !/$regexp/ } @lines ;
+    grep { !/$regexp2/ } @lines ;
   } elsif ($filter == 2) { # Jan + Feb 23
     grep { /$regexp/ } @lines;
   } else { # whole year
@@ -201,7 +202,7 @@ sub transfered {
 
     if ($val =~ /Tempora/i && $val !~ /Epi1\-0/i) { next; }
 
-    if ($val !~ /$key/ && ($str =~ /$val/i || $val =~ /$str/i)) {
+    if ($val !~ /$key/ && ($str =~ /$val/i || $val =~ /$str/i) && $transfer{$key} !~ /v\s*$/i) {
       return $key;
     }
   }
