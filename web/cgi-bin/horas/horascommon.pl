@@ -218,7 +218,7 @@ sub getrank {
 	if (-e "$datafolder/Latin/$sn.txt") {
 		$sname = "$sn.txt";
 		if ($caller && $hora =~ /(Matutinum|Laudes)/i) { $sname =~ s/11-02t/11-02/; }
-		%saint = updaterank(setupstring('Latin', $sname));
+		%saint = %{setupstring('Latin', $sname)};
 		$srank = $saint{Rank};
 		
 		if ($hora =~ /(Vespera|Completorium)/i && $saint{Rule} =~ /No secunda Vespera/i && $version !~ /1960/) {
@@ -282,7 +282,7 @@ sub getrank {
 		
 		if (-e "$datafolder/Latin/$cday.txt") {
 			$cname = "$cday.txt";
-			%csaint = updaterank(setupstring('Latin', "$cname"));
+			%csaint = %{setupstring('Latin', "$cname")};
 			@crank = split(";;", $csaint{Rank});
 			$BMVSabbato = $csaint{Rank} !~ /Vigilia/ && $crank[2] < 2;
 			$crank = ($csaint{Rank} =~ /vigilia/i && $csaint{Rank} !~ /(;;[56]|Epi)/i) ? '' : $csaint{Rank};
@@ -526,7 +526,7 @@ sub getrank {
 		$rank = $srank[2];
 		$dayname[1] = "$srank[0] $srank[1]";
 		$winner = $sname;
-		%winner = updaterank(setupstring('Latin', $winner));
+		%winner = %{setupstring('Latin', $winner)};
 		$vespera = $svesp;
 		
 		if (my ($new_ct, $new_c) = extract_common($srank[3], $rank, $version, $dayname[0] =~ /Pasc/)) {
@@ -1059,14 +1059,14 @@ sub precedence {
 		}
 		$winner = subdirname('Commune', $version) . "$vtv.txt";
 		$commemoratio = $commemoratio1 = $scriptura = $commune = '';
-		%winner = updaterank(setupstring($lang1, $winner));
+		%winner = %{setupstring($lang1, $winner)};
 		%commemoratio = %commemoratio1 = %scriptura = %commune = {};
 		$rule = $winner{Rule};
 		
 		if ($vtv =~ /C12/i) {
 			$commune = subdirname('Commune', $version) . "C11.txt";
 			$communetype = 'ex';
-			%commune = updaterank(setupstring($lang1, $commune));
+			%commune = %{setupstring($lang1, $commune)};
 		}
 		$dayname[1] = $winner{Name};
 		$dayname[2] = '';
@@ -1075,14 +1075,14 @@ sub precedence {
 	if ($vtv && $missa) {
 		$winner = "Votive/$vtv.txt";
 		$commemoratio = $commemoratio1 = $scriptura = $commune = '';
-		%winner = updaterank(setupstring($lang1, $winner));
+		%winner = %{setupstring($lang1, $winner)};
 		%commemoratio = %scriptura = %commune = {};
 		$rule = $winner{Rule};
 		
 		if ($vtv =~ /Maria/i) {
 			$commune = "Commune/C11.txt";
 			$communetype = 'ex';
-			%commune = updaterank(setupstring($lang1, $commune));
+			%commune = %{setupstring($lang1, $commune)};
 			# %commune2 = updaterank(setupstring($lang2, $commune));
 		}
 		$dayname[1] = $winner{Name};
@@ -1133,19 +1133,19 @@ sub officestring($$;$) {
 	our $monthday;
 	
 	if ($fname !~ /tempora[M]*\/(Pent|Epi)/i) {
-		%s = updaterank(setupstring($lang, $fname));
+		%s = %{setupstring($lang, $fname)};
 		if ($version =~ /1960|Monastic/ && $s{Rank} =~ /Feria.*?(III|IV) Adv/i && $day > 16) { $s{Rank} =~ s/;;2/;;3/; }
 		return \%s;
 	}
 	
 	if ($fname =~ /tempora[M]*\/Pent([0-9]+)/i && $1 < 5) {
-		%s = updaterank(setupstring($lang, $fname));
+		%s = %{setupstring($lang, $fname)};
 		return \%s;
 	}
 	$monthday = monthday($day, $month, $year, ($version =~ /1960|Monastic/) + 0, $flag);
 	
 	if (!$monthday) {
-		%s = updaterank(setupstring($lang, $fname));
+		%s = %{setupstring($lang, $fname)};
 		return \%s;
 	}
 	%s = %{setupstring($lang, $fname)};
@@ -1169,7 +1169,6 @@ sub officestring($$;$) {
 			$s{$key} = $m{$key};
 		}
 	}
-	%s = updaterank(\%s);
 	return \%s;
 }
 
@@ -1186,9 +1185,9 @@ sub climit1960 {
 	
 	# Subsume commemoration in special case 7-16 with Common 10 (BVM in Sabbato)
 	return 0 if $c =~ /7-16/ && $winner =~ /C10/;
-	my %w = updaterank(setupstring('Latin', $winner));
+	my %w = %{setupstring('Latin', $winner)};
 	if ($winner !~ /tempora|C10/i) { return 1; }
-	my %c = updaterank(setupstring('Latin', $c));
+	my %c = %{setupstring('Latin', $c)};
 	my @r = split(';;', $c{Rank});
 	
 	if ($w{Rank} =~ /Dominica/i) {
@@ -1309,29 +1308,6 @@ sub setheadline {
 	} else {
 		return $dayname[1];
 	}
-}
-
-#*** updaterank \%office
-#updates $office{Rank} for 1960 Trid versions if any
-sub updaterank {
-	my $w = shift;
-	my %w = %$w;
-	if (!exists($w{Rank})) { return %w; }
-	
-	our $version;
-	
-	if ($version =~ /Newcal/i && exists($w{RankNewcal})) {
-		$w{Rank} = $w{RankNewcal};
-	} elsif ($version =~ /(1955|1960|Newcal)/ && exists($w{Rank1960})) {
-		$w{Rank} = $w{Rank1960};
-	}
-	
-	if ($version =~ /1570/i && exists($w{Rank1570})) {
-		$w{Rank} = $w{Rank1570};
-	} elsif ($version =~ /(Trident|1570)/i && exists($w{RankTrident})) {
-		$w{Rank} = $w{RankTrident};
-	}
-	return %w;
 }
 
 sub subdirname {
