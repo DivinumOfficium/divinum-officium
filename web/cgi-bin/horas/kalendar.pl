@@ -95,9 +95,9 @@ my @ver;
 push(@ver, strictparam('version') || strictparam('version1') || 'Rubrics 1960');
 push(@ver, strictparam('version2') || 'Divino Afflatu') if ($compare);
 
-my ($month, $day, $year) = split('-', strictparam($date_arg) || gettoday());
-my $kmonth = strictparam('kmonth') || $month;
-my $kyear = strictparam('kyear') || $year;
+my ($xmonth, $xday, $xyear) = split('-', strictparam($date_arg) || gettoday());
+my $kmonth = strictparam('kmonth') || $xmonth;
+my $kyear = strictparam('kyear') || $xyear;
 
 if (strictparam('format') eq 'ical') {
   ical_output()
