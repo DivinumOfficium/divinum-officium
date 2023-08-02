@@ -1812,7 +1812,14 @@ sub hymnusmajor {
     && (($vespera == 3 && exists($winner{"Hymnus Vespera 3"}))
       || exists($winner{"Hymnus Vespera"}))
     );
+
+  if (hymnshift($version, $day, $month, $year)) {
+    $name .= ' Matutinum' if $hora =~ /laudes/i;
+    $name .= ' Laudes' if $hora =~ /vespera/i;
+		setbuild2("Hymnus shifted");
+  } else {
   $name .= " $hora";
+  }
 
   my  $cr = 0;
   if ($hora =~ /Vespera/i && $vespera == 3) {
