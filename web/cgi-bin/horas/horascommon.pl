@@ -828,7 +828,6 @@ sub setsecondcol {
 #*** precedence()
 # get date, rank, winner, preloads hashes
 sub precedence {
-	
 	# globals sets here
 	our($winner, $commemoratio, $commune, $scriptura, $commemoratio1) = ('') x 5;
 	our(%winner, %commemoratio, %commemoratio1, %commune, %scriptura) = () x 5;

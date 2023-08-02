@@ -127,11 +127,10 @@ setcookies('horasp', 'parameters');
 setcookies("horasg$cookies_suffix", 'general');
 
 if ($Ck) {
-  $version1 ||= $version;
+  $version1 = $version; # save value for use in horas
   $version2 ||= $version;
-  if ($version1 eq $version2) { $version2 = 'Divino Afflatu'; }
-  if ($version1 eq $version2) { $version2 = 'Rubrics 1960'; }
-  $version = $version1;
+  if ($version eq $version2) { $version2 = 'Divino Afflatu'; }
+  if ($version eq $version2) { $version2 = 'Rubrics 1960'; }
   $lang1 = $lang2 = $langc;
 }
 
@@ -197,8 +196,8 @@ if ($command =~ /setup(.*)/i) {
   $command = "change" . $command . strictparam('pcommand');
 } else {
   my $dayheadline = daylineheader(setheadline(), $Ck ? '' : $comment, $daycolor);
-  $dayheadline = daylineheader_c($dayheadline, $version1, $version2) if $Ck;
-  print headline($dayheadline, substr($officium, 0, 1), $Ck ? "$version1 / $version2" : $version);
+  $dayheadline = daylineheader_c($dayheadline, $version, $version2) if $Ck;
+  print headline($dayheadline, substr($officium, 0, 1), $Ck ? "$version / $version2" : $version);
 
   if ($horas[0] eq 'Plures') {
     print setplures();
@@ -228,6 +227,7 @@ if ($command =~ /setup(.*)/i) {
 
   if ($officium ne 'Pofficium.pl') {
     $votive ||= 'Hodie';
+    $version = $version1 if ($Ck);
     print par_c(selectables('general' . ($Ck ? 'c' : '')));
   } else {
     print par_c(pmenu());
