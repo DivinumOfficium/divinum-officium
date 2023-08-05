@@ -6,7 +6,7 @@ use utf8;
 # Divine Office Matins subroutines
 use FindBin qw($Bin);
 use lib "$Bin/..";
-use DivinumOfficium::Directorium qw(get_stransfer);
+use DivinumOfficium::Directorium qw(get_stransfer hymnmerge hymnshift);
 
 # Defines ScriptFunc and ScriptShortFunc attributes.
 use horas::Scripting;
@@ -109,12 +109,16 @@ sub hymnusmatutinum {
 	my ($h, $c) = getproprium("$name Matutinum", $lang, $seasonalflag, 1);
 	
 	if ($h) {
-		if ($hymncontract) {			# if proper Vesper hymn has been omitted due to concurrent II. Vespers
+		if (hymnshift($version, $day, $month, $year)) {			# if 1st Vesper hymn has been omitted due to concurrent II. Vespers
+			my ($h1, $c1) = getproprium("$name Vespera", $lang, $seasonalflag, 1);
+			$h = $h1;
+			setbuild2("Hymnus shifted");
+    } elsif (hymnmerge($version, $day, $month, $year)) {	# if also 2nd Vesper been omitted
 			my ($h1, $c1) = getproprium("$name Vespera", $lang, $seasonalflag, 1);
 			$h =~ s/^(v. )//;
 			$h1 =~ s/\_(?!.*\_).*/\_\n$h/s;	# find the Doxology as last verse since e.g. Venantius(05-18) has a proper one
 			$h = $h1;
-			setbuild2("Hymnus contracted");
+			setbuild2("Hymnus merged");
 		}
 		$hymn = $h;
 		$comment = $c;

@@ -5,6 +5,7 @@ sub daylineheader_c {
   my($head, $version1, $version2) = @_;
   $version = $version2;
   precedence();
+  $version = $version1;
   my $daycolor = liturgical_color($dayname[1], $commune);
   my $head2 = daylineheader(setheadline(), '', $daycolor);
   '<TABLE CELLPADDING=5><TR>'
@@ -139,7 +140,7 @@ sub bodyend {
 <INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
 <INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
-<INPUT TYPE=HIDDEN NAME=version1 VALUE="$version">
+<INPUT TYPE=HIDDEN NAME=version VALUE="$version">
 <INPUT TYPE=HIDDEN NAME=version2 VALUE="$version2">
 <INPUT TYPE=HIDDEN NAME=caller VALUE='0'>
 <INPUT TYPE=HIDDEN NAME=compare VALUE=$Ck>
