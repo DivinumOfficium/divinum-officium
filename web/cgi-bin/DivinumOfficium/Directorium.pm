@@ -13,7 +13,8 @@ BEGIN {
   require Exporter;
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(get_kalendar get_transfer get_stransfer get_tempora transfered check_coronatio dirge);
+  our @EXPORT_OK = qw(get_kalendar get_transfer get_stransfer get_tempora transfered 
+                      check_coronatio dirge hymnmerge hymnshift);
 }
 
 ### private vars
@@ -50,10 +51,11 @@ sub load_transfer_file {
   my $type = shift;
 
   my @lines = do_read "$datafolder/$type/$name.txt";
-  my $regexp = qr{^(?:Hy|seant)?(?:01|02-[01]|02-2[0123]|dirge1)};
+	my $regexp = qr{^(?:Hy|seant)?(?:01|02-[01]|02-2[01239]|dirge1)};
+	my $regexp2 = qr{^(?:Hy|seant)?(?:01|02-[01]|02-2[01239]|.*=(01|02-[01]|02-2[0123])|dirge1)};
 
   if ($filter == 1) { # Feb 24 - Dec
-    grep { !/$regexp/ } @lines ;
+    grep { !/$regexp2/ } @lines ;
   } elsif ($filter == 2) { # Jan + Feb 23
     grep { /$regexp/ } @lines;
   } else { # whole year
@@ -189,6 +191,8 @@ sub transfered {
   my $str = shift;
   my $year = shift;
   my $version = shift;
+
+  $str =~ s+Sancti/++;
   return '' unless $str;
 
   my %transfer = %{$_dCACHE{"Transfer:$version:$year"}};
@@ -199,7 +203,7 @@ sub transfered {
 
     if ($val =~ /Tempora/i && $val !~ /Epi1\-0/i) { next; }
 
-    if ($val !~ /$key/ && ($str =~ /$val/i || $val =~ /$str/i)) {
+    if ($val !~ /$key/ && ($str =~ /$val/i || $val =~ /$str/i) && $transfer{$key} !~ /v\s*$/i) {
       return $key;
     }
   }
@@ -234,6 +238,24 @@ sub dirge {
   my $dirgeline = get_transfer($year, $version, 'dirge1') . ' '
                 . get_transfer($year, $version, 'dirge2');
   $dirgeline =~ /$sday/
+}
+
+#*** hymnmerge($version, $day, $month, $year)
+# true if Matutinum Hymn should merged with Vesperas
+# Rule XX.3
+sub hymnmerge {
+  my($version, $day, $month, $year) = @_;
+
+  get_transfer($year, $version, sprintf("Hy%s", get_sday($month, $day, $year))) eq '1'
+}
+
+#*** hymnshift($version, $day, $month, $year)
+# true if Hymns should shifted Vespera > Matutinum > Laudes > Vespera
+# Rule XX.3
+sub hymnshift {
+  my($version, $day, $month, $year) = @_;
+
+  get_transfer($year, $version, sprintf("Hy%s", get_sday($month, $day, $year))) eq '2'
 }
 
 1;

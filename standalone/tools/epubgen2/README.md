@@ -25,7 +25,7 @@ Without docker
    Then restart your machine.
    You can then access a linux shell by running `wsl`.)
 
-2. Install GIT and PERL and other prerequisities:
+2. Install GIT and PERL and other prerequisites:
 
    `sudo apt-get update && sudo apt-get install -y git curl wget apache2 libcgi-session-perl bsdmainutils zip libwww-perl`
 3. Clone the DivinumOfficium repository:

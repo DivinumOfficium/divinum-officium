@@ -88,7 +88,7 @@ sub specials {
 
       if (
            ($rule =~ /omit.*\b$label\b/i)
-        || (($version =~ /1570/) && ($item =~ / Le/))    # omit Leonine prayers issue #367
+        || (($version =~ /1570/) && ($item =~ / Leo/))    # omit Leonine prayers issue #367
         )
       {
         # Skip omitted section

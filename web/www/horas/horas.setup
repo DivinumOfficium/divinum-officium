@@ -4,8 +4,8 @@ $building='0';;
 $lang1='Latin';;
 $psalmvar='0';;
 $whitebground='1';;
-$blackfont='black';;
-$smallblack='-1 black';;
+$blackfont='';;
+$smallblack='-1';;
 $redfont=' italic red';;
 $initiale='+2 bold italic red';;
 $largefont='+1 bold italic red';;
@@ -31,7 +31,7 @@ oooo
 
 [generalc]
 $expand='all';;
-$version1='Divino Afflatu';;
+$version='Divino Afflatu';;
 $version2='Rubrics 1960';;
 $langc='Latin';;
 $accented='plain';;

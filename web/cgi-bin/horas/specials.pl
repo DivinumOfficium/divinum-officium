@@ -752,7 +752,7 @@ sub psalmi_minor {
       my @ant = split("\n", $psalmi{$name});
       $ant = chompd($ant[$ind]);
       # add fourth alleluja
-      $ant =~ s/(\S+)\.$/\1, \1./ if ($version =~ /monastic|trident/i && $name eq 'Pasch');
+      $ant =~ s/(\S+)\.$/\1, \1./ if ($version =~ /monastic/i && $name eq 'Pasch');
       $comment = 1;
       setbuild("Psalterium/Psalmi minor", $name, "subst Antiphonas");
     }
@@ -1254,7 +1254,7 @@ sub oratio {
       || ($commemoratio1 =~ /Tempora/i && $commemoratio1{Rank} =~ /;;[23]/))
     )
   {
-    $i = getind($commemoratio1, ($hora =~ /laudes/i) ? 2 : $vespera, $day);
+    $i = getind($commemoratio1, ($hora =~ /laudes/i) ? 2 : $cvespera, $day);
     $w = getcommemoratio($commemoratio1, $i, $lang);
     my $num = concurrent_office($commemoratio1, 1, $day);
     if ($w) { setcc($w, $num, setupstring($lang, $commemoratio1)); }
@@ -1594,7 +1594,7 @@ sub getcommemoratio {
 
   if (!$o && $w{Rule} =~ /Oratio Dominica/i) {
     $wday =~ s/\-[0-9]/-0/;
-    $wday =~ s/Epi1\-0/Epi1-0a/;
+    $wday =~ s/Epi1\-0/Epi1\-0a/;
     my %w1 = %{officestring($lang, $wday, ($i == 1) ? 1 : 0)};
 
     if (exists($w1{'OratioW'})) {
@@ -1616,7 +1616,7 @@ sub getcommemoratio {
   }
   if (!$o) { return ''; }
   my $a = $w{"Ant $ind"};
-  if (!$a || ($winner =~ /Epi1-0a/ && $hora =~ /vespera/i && $vespera == 3)) { $i = 4 - $ind; $a = $w{"Ant $i"}; }
+  if (!$a || ($winner =~ /Epi1\-0a/ && $hora =~ /vespera/i && $vespera == 3)) { $i = 4 - $ind; $a = $w{"Ant $i"}; }
   if (!$a) { $a = $c{"Ant $ind"}; }
   my $name = $w{Name};
   $a = replaceNdot($a, $lang, $name);
@@ -1641,7 +1641,7 @@ sub getcommemoratio {
   if (!$a) { return ''; }
   postprocess_ant($a, $lang);
   my $v = $w{"Versum $ind"};
-  if ($winner =~ /Epi1-0a/) { 
+  if ($winner =~ /Epi1\-0a|01\-12t/) {
     my %w = (columnsel($lang)) ? %winner : %winner2;
     $v = ($vespera == 1 && $day == 10) ? $c{'Versum 2'} : $w{'Versum Commemoratio'}; }
   if (!$v) { $i = 4 - $ind; $v = $w{"Versum $i"}; }
@@ -1812,7 +1812,14 @@ sub hymnusmajor {
     && (($vespera == 3 && exists($winner{"Hymnus Vespera 3"}))
       || exists($winner{"Hymnus Vespera"}))
     );
+
+  if (hymnshift($version, $day, $month, $year)) {
+    $name .= ' Matutinum' if $hora =~ /laudes/i;
+    $name .= ' Laudes' if $hora =~ /vespera/i;
+		setbuild2("Hymnus shifted");
+  } else {
   $name .= " $hora";
+  }
 
   my  $cr = 0;
   if ($hora =~ /Vespera/i && $vespera == 3) {
@@ -2233,7 +2240,8 @@ sub get_prima_responsory {
   my $lang = shift;
   my $key = '';
   if ($dayname[0] =~ /(Adv|Nat)/i) { $key = $1; }
-  if ($dayname[0] =~ /Pasc/i) { $key = 'Pasch'; }
+  if ($dayname[0] =~ /Pasc/i && $dayname[0] !~ /Pasc5-[4-6]/i && $dayname[0] !~ /Pasc6/i) { $key = 'Pasch'; }
+  if ($dayname[0] =~ /Pasc5-[4-6]|Pasc6/i) {$key = 'Asc';}
 
   if ( $rule =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i
     || $scriptura{Rule} =~ /Doxology=(Nat|Epi|Pasch|Asc)/i

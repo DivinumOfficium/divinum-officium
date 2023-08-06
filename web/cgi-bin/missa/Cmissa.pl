@@ -126,6 +126,7 @@ $only = ($lang1 eq $lang2 && $version1 eq $version2) ? 1 : 0;
 
 $version = $version1;
 precedence($winner);    #fills our hashes et variables
+setsecondcol();
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;
 
@@ -138,16 +139,8 @@ $title = "Sancta Missa Comparison";
 
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
-htmlHead($title, 2);
+htmlHead($title, 'startup()');
 print << "PrintTag";
-<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="startup();">
-<script>
-// https redirect
-if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
-    location.replace(`https:\${location.href.substring(location.protocol.length)}`);
-}
-</script>
-<FORM ACTION="$officium" METHOD=post TARGET=_self>
 <P ALIGN=CENTER>
 <A HREF="Cmissa.pl?searchvalue=2&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Incipit]</A>&nbsp;&nbsp;
 <A HREF="Cmissa.pl?searchvalue=11&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Missa Catechumenorum]</A>&nbsp;&nbsp;
@@ -174,7 +167,7 @@ if ($command =~ /setup(.*)/is) {
   $command =~ s/(pray|change|setup)//ig;
   $title = $command;
   $hora = $command;
-  $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
+  $background = ($whitebground) ? ' class="contrastbg"' : '';
   $head = $title;
   headline($head);
   print << "PrintTag";
@@ -194,14 +187,14 @@ PrintTag
 } else {    #mainpage
   $pmode = 'main';
   $command = "";
-  $height = floor($screenheight * 4 / 12);
+  $height = floor($screenheight * 6 / 12);
   $height2 = floor($height / 2);
-  $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
+  $background = ($whitebground) ? ' class="contrastbg"' : '';
   headline($title);
   print << "PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=0 HEIGHT=$height><TR>
-<TD><IMG SRC="$htmlurl/missa.jpg" HEIGHT=$height></TD>
+<TD><IMG SRC="$htmlurl/missa.png" HEIGHT=$height></TD>
 </TR></TABLE>
 <BR>
 </P>
@@ -278,10 +271,7 @@ PrintTag
 #*** Javascript functions
 # the sub is called from htmlhead
 sub horasjs {
-  print << "PrintTag";
-
-<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
-
+qq(
 //position
 function startup() {
   var i = 1;
@@ -394,7 +384,5 @@ function prevnext(ch) {
   }
   document.forms[0].date.value = m + "-" + d + "-" + y;
 }
-
-</SCRIPT>
-PrintTag
+)
 }

@@ -77,6 +77,8 @@ sub set_runtime_options {
     }
     $$parvalue = $p;
   }
+  $blackfont =~ s/black//; # can't use black in contrast mode
+  $smallblack =~ s/black//;
 }
 
 sub get_tempus_id {

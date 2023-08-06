@@ -151,6 +151,7 @@ if ( !$lang2 )   { $lang2   = 'Latin'; }
 $setupsave =~ s/\r*\n*//g;
 $setupsave =~ s/\"/\~24/g;
 precedence();    #fills our hashes et variables
+setsecondcol();
 
 # prepare title
 $daycolor = liturgical_color($dayname[1], $commune);

@@ -1,6 +1,16 @@
 ﻿[Lectio9]
 @Tempora/Pent03-0:Lectio7:s/Chociaż .*//s
 
+[Lectio9]
+@Tempora/Pent03-0:Lectio7:s/: choć .*/./s
+
 [Lectio10]
-@Tempora/Pent03-0:Lectio7:s/.* Chociaż /Chociaż /s s/$/~/
-@Tempora/Pent03-0:Lectio8:s/In their .*//s
+@Tempora/Pent03-0:Lectio7:s/.*choć /Choć /s s/$/~/
+@Tempora/Pent03-0:Lectio8:s/Bardzo .*//s s/$/~/
+
+[Lectio11]
+@Tempora/Pent03-0:Lectio8:s/.* Bardzo /Bardzo /s s/$/~/
+@Tempora/Pent03-0:Lectio9:s/W liczbie .*//s
+
+[Lectio12]
+@Tempora/Pent03-0:Lectio9:s/.* W liczbie /W liczbie /s

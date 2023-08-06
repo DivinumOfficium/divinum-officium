@@ -1,29 +1,17 @@
-sub bodybegin {
-  my $onload = $officium ne 'Pofficium.pl' && ' onload="startup();"';
-  return << "PrintTag";
-<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg"$onload>
-<script>
-// https redirect
-if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
-    location.replace(`https:\${location.href.substring(location.protocol.length)}`);
-}
-</script>
-<FORM ACTION="$officium" METHOD=post TARGET=_self>
-PrintTag
-}
-
 #*** daylineheader_c($head)
+
 # return headline for main and pray for Compare
 sub daylineheader_c {
   my($head, $version1, $version2) = @_;
   $version = $version2;
   precedence();
+  $version = $version1;
   my $daycolor = liturgical_color($dayname[1], $commune);
   my $head2 = daylineheader(setheadline(), '', $daycolor);
-  '<CENTER><TABLE BORDER=1 CELLPADDING=5><TR>'
-    . "<TD $background ALIGN=CENTER WIDTH=50%>$version1 : $head</TD>"
-    . "<TD $background ALIGN=CENTER WIDTH=50%>$version2 : $head2</TD>"
-    . '</TR></TABLE></CENTER>'
+  '<TABLE CELLPADDING=5><TR>'
+    . "<TD ALIGN=RIGHT WIDTH=50% STYLE='border-right: 1pt solid red;'>$head</TD>"
+    . "<TD ALIGN=LEFT WIDTH=50%>$head2</TD>"
+    . '</TR></TABLE>'
 }
 
 #*** daylineheader($day, $comment, $color) 
@@ -36,16 +24,15 @@ sub daylineheader {
 
 #*** headline($head) prints headline for main and pray
 sub headline {
-  my ($output, $variant) = @_;
-  unless ($variant eq 'C') {
-    $output = par_c($output);
-    $output .= << "PrintTag";
-<H1>
-<FONT COLOR=MAROON SIZE=+1><B><I>Divinum Officium</I></B></FONT>&nbsp;
-<FONT COLOR=RED SIZE=+1>$version</FONT>
-</H1>
-PrintTag
+  my ($output, $variant, $vers) = @_;
+  $output = par_c($output);
+  my ($compone);
+  if ($variant eq 'C') {
+    $compone = "<A HREF=# onclick=\"callbrevi(\'$date1\')\">One version</A>";
+  } else {
+    $compone = '<A HREF=# onclick="callcompare()">Compare</A>';
   }
+  $output .= "<H1><FONT COLOR=MAROON SIZE=+1><B><I>Divinum Officium</I></B></FONT>&nbsp;<FONT COLOR=RED SIZE=+1>$vers</FONT></H1>\n";
   if ($variant eq 'P') {
     $output .= par_c(<< "PrintTag");
 <A HREF="Pofficium.pl?date1=$date1&command=prev&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
@@ -54,23 +41,11 @@ $date1
 <A HREF="Pofficium.pl?date1=$date1&command=next&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 &uarr;</A>
 PrintTag
-  } elsif ($variant eq 'C') {
-    my $title = $command ? adhoram($command): 'Divinum Officium';
-    $title =~ s/Vesper.*/Vesperas/;
+  } else {  
     $output .= par_c(<< "PrintTag");
-<FONT COLOR=MAROON SIZE=+1><B><I>$title</I></B></FONT>&nbsp;&nbsp;&nbsp;&nbsp;
-<LABEL FOR=date CLASS=offscreen>Date</LABEL>
-<INPUT TYPE=TEXT ID=date NAME=date VALUE="$date1" SIZE=10>
-<A HREF=# onclick="prevnext(-1)">&darr;</A>
-<INPUT TYPE=submit NAME=SUBMIT VALUE=" " onclick="parchange();">
-<A HREF=# onclick="prevnext(1)">&uarr;</A>
+$compone
 &nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callkalendar();">Ordo</A>
-PrintTag
-  } else {
-    $output .= par_c(<< "PrintTag");
-<A HREF=# onclick="callcompare()">Compare</A>
-&nbsp;&nbsp;&nbsp;<A HREF=# onclick="callmissa();">Sancta Missa</A>
+<A HREF=# onclick="callmissa();">Sancta Missa</A>
 &nbsp;&nbsp;&nbsp;
 <LABEL FOR=date CLASS=offscreen>Date</LABEL>
 <INPUT TYPE=TEXT ID=date NAME=date VALUE="$date1" SIZE=10>
@@ -86,7 +61,7 @@ PrintTag
 }
 
 sub mainpage {
-  my $height = floor($screenheight * 4 / 14);
+  my $height = floor($screenheight * 7 / 14);
   my $height2 = floor($height / 2);
   return << "PrintTag";
 <TABLE BORDER=0 HEIGHT=$height><TR>
@@ -116,7 +91,7 @@ PrintTag
 sub setplures {
   my $output = << "PrintTag";
 <H2>Elige horas</H2>
-<TABLE WIDTH=75% CELLPADDING=5 ALIGN=CENTER>
+<TABLE WIDTH=75% CELLPADDING=5 ALIGN=CENTER STYLE="color: black">
 PrintTag
 
   foreach (gethoras($votive eq 'C9')) {
@@ -165,7 +140,7 @@ sub bodyend {
 <INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
 <INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">
 <INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
-<INPUT TYPE=HIDDEN NAME=version1 VALUE="$version">
+<INPUT TYPE=HIDDEN NAME=version VALUE="$version">
 <INPUT TYPE=HIDDEN NAME=version2 VALUE="$version2">
 <INPUT TYPE=HIDDEN NAME=caller VALUE='0'>
 <INPUT TYPE=HIDDEN NAME=compare VALUE=$Ck>
@@ -182,7 +157,7 @@ sub buildscript {
   s/\_//g;
   s/\,\,\,/\&nbsp\;\&nbsp\;\&nbsp\;/g;
   return << "PrintTag";
-<TABLE BORDER=3 ALIGN=CENTER WIDTH=60% CELLPADDING=8><TR><TD>
+<TABLE $background BORDER=3 ALIGN=CENTER WIDTH=60% CELLPADDING=8><TR><TD>
 $_
 </TD></TR><TABLE><BR>
 PrintTag

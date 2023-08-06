@@ -79,8 +79,7 @@ sub setuptable {
 
   my $output = << "PrintTag";
 <H1 ALIGN=CENTER><FONT COLOR=MAROON><B><I>$title</I></B></FONT></H1>
-<TABLE WIDTH=75% BORDER=0 ALIGN=CENTER><TR><TD>
-<TABLE BORDER=2 CELLPADDING=5 ALIGN=CENTER BACKGROUND=\"$htmlurl/horasbg.jpg\">
+<TABLE BORDER=2 CELLPADDING=5 ALIGN=CENTER$background>
 PrintTag
 
   my $scripto = getdialog($command);
@@ -102,8 +101,7 @@ PrintTag
     $output .= "<TR><TD ALIGN=left>\n";
     if ($parmode !~ /label/) {
       if ($parhelp =~ /\#/) { $output .= "<A HREF=\"$helpfile$parhelp\" TARGET='_new'>\n"; }
-      $output .= setfont($dialogfont) . " $parname";
-      $output .= "</FONT>\n";
+      $output .= "$parname\n";
       if ($parhelp =~ /\#/) { $output .= "</A>\n"; }
       $output .= " : </TD><TD ALIGN=right>";
     }
