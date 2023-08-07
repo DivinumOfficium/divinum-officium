@@ -2,7 +2,7 @@
 S. Laurentii a Brundusio Confessoris;;Duplex;;3;;vide C5a
 
 [Rule]
-vide C5a;
+vide C5a
 Gloria
 
 [Oratio]
@@ -15,11 +15,17 @@ Exáudi nos, Deus, salutáris noster: ut, sicut de beátæ Praxédis Vírginis t
 festivitáte gaudémus; ita piæ devotiónis erudiámur afféctu.
 $Per Dominum
 
+[Secreta]
+@Commune/C5a:Secreta1:s/N\./Lauréntii/
+
 [Commemoratio Secreta]
 !S. Praxedis Virginis
 Accépta tibi sit, Dómine, sacrátæ plebis oblátio pro tuórum honóre Sanctórum:~
 quorum se méritis de tribulatióne percepísse cognóscit auxílium.
 $Per Dominum
+
+[Postcommunio]
+@Commune/C5a:Postcommunio1:s/N\./Lauréntii/
 
 [Commemoratio Postcommunio]
 !S. Praxedis Virginis
