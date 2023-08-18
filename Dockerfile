@@ -14,7 +14,6 @@ RUN echo "}" >> /build/buildinfo
 
 # Final container (copies in /out/buildinfo when done)
 FROM        perl:5.28-slim as final
-MAINTAINER  Ben Yanke <ben@benyanke.com>
 
 # Set envs
 ENV APACHE_RUN_USER www-data \
