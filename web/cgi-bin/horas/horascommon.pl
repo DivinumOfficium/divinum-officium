@@ -571,7 +571,7 @@ sub getrank {
 			$comrank = $trank[2];
 			$cvespera = $tvesp;
 			$marian_commem = ($trank[3] =~ /C1[0-9]/);
-		} elsif ($crank[2] && ($srank[2] <= 5 || $crank[2] >= 2)) {
+		} elsif ($crank[2] && ($srank[2] <= 5 || $crank[2] > 2)) {
 			if ($hora !~ /Completorium/i && $crank[0] && $winner{Rule} !~ /no commemoratio/i) {
 				$dayname[2] = "Commemoratio: $crank[0]";
 			}
@@ -588,6 +588,7 @@ sub getrank {
 		if (!$dayname[2] && ($winner{'Commemoratio 2'} || $winner{'Commemoratio'})) {
 			($_) = split(/\n/, $winner{'Commemoratio 2'} || $winner{'Commemoratio'});
 			$dayname[2] = "Commemoratio: $_" if (s/^!Commemoratio //);
+			$dayname[2] =~ s/:/ ad Laudes tantum:/ if $srank[2] >= 5 && $winner{'Commemoratio 2'};
 		}
 		
 		if (($hora =~ /matutinum/i || (!$dayname[2] && $hora !~ /Vespera|Completorium/i)) && $rank < 7 && $trank[0]) {
