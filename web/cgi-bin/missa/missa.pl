@@ -126,10 +126,6 @@ $only = ($lang1 =~ /$lang2/) ? 1 : 0;
 precedence();    #fills our hashes et variables
 setsecondcol();
 
-# prepare title
-$daycolor = liturgical_color($dayname[1], $commune);
-build_comment_line();
-
 #prepare main pages
 $title = "Sancta Missa";
 
@@ -146,7 +142,6 @@ if ($command =~ /setup(.*)/is) {
   $pmode = 'missa';
   $command =~ s/(pray|change|setup)//ig;
   $head = $title;
-  $headline = setheadline();
   headline($head);
 
   #eval($setup{'parameters'});
@@ -159,7 +154,6 @@ PrintTag
   $pmode = 'main';
   $command = "";
   $height = floor($screenheight * 6 / 12);
-  $headline = setheadline();
   headline($title);
   print << "PrintTag";
 <P ALIGN=CENTER>
@@ -237,11 +231,10 @@ sub headline {
   my $head = shift;
   my $numsel = setmissanumber();
   $numsel = "<BR><BR>$numsel<BR>" if $numsel;
-  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
+  my $headline = html_dayhead(setheadline(), $dayname[2]);
   print << "PrintTag";
-<P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
-$comment<BR><BR>
-<FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT><P>
+<P ALIGN=CENTER>$headline</P>
+<P ALIGN=CENTER><FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT></P>
 <P ALIGN=CENTER><A HREF=# onclick="callcompare()">Compare</A>
 &nbsp;&nbsp;&nbsp;<A HREF=# onclick="callofficium();">Divinum Officium</A>
 &nbsp;&nbsp;&nbsp;

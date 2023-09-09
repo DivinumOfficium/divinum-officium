@@ -130,10 +130,6 @@ setsecondcol();
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;
 
-# prepare title
-$daycolor = liturgical_color($dayname[1], $commune);
-build_comment_line();
-
 #prepare main pages
 $title = "Sancta Missa Comparison";
 
@@ -249,12 +245,7 @@ PrintTag
 #*** hedline($head) prints headline for main and pray
 sub headline {
   my $head = shift;
-  my $width = ($only) ? 100 : 50;
-  $daycolor = liturgical_color($dayname[1], $commune);
-  $comment = '';
-  $headline = setheadline();
-  $headline =~ s{!(.*)}{$1}s;
-  print "<P ALIGN=CENTER>" . "<FONT COLOR=$daycolor>$headline</FONT>" . "<BR>$comment</P>\n";
+  print "<P ALIGN=CENTER>" . html_dayhead(setheadline()) ."\n";
   print << "PrintTag";
 <P ALIGN=CENTER>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>

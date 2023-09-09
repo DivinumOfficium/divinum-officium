@@ -153,10 +153,6 @@ $setupsave =~ s/\"/\~24/g;
 precedence();    #fills our hashes et variables
 setsecondcol();
 
-# prepare title
-$daycolor = liturgical_color($dayname[1], $commune);
-build_comment_line();
-
 #prepare main pages
 $title = "Sancta Missa";
 
@@ -177,7 +173,7 @@ print "</body></html>";
 #*** hedline($head) prints headlibe for main and pray
 sub headline {
     my $head = shift;
-    $headline =~ s{!(.*)}{<font size="1">$1</font>}s;
+  my $headline = html_dayhead($headline, $dayname[2]);
   my $daten = prevnext($date1, 1);
   my $datep = prevnext($date1, -1);
     print << "PrintTag";
@@ -202,8 +198,7 @@ $date1
 &nbsp;&nbsp;
 <a href="$date1-8-Completorium.html">Completorium</a>
 <br />
-<font color="$daycolor">$headline<br></font>
-$comment<br>
+$headline<br>
 <a href="$date1-9-Missa.html"><font color="maroon" size="+1"><b><i>$head</i></b></font></a>
 </p>
 PrintTag
