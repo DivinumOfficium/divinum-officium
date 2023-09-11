@@ -428,7 +428,7 @@ sub getrank {
 		&& $testmode !~ /^season$/i)
 	{
 		if ($dayofweek == 6 && $srank !~ /(Vigil|in Octav)/i && $trank[2] < 2 && $srank[2] < 2 && !$transfervigil) {
-			$tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
+			$tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Feria;;2;;vide $C10";
 			$scriptura = $tname;
 			if ($scriptura =~ /^\.txt/i) { $scriptura = $sname; }
 			$tname = subdirname('Commune', $version) . "$C10.txt";
@@ -445,7 +445,7 @@ sub getrank {
 		&& $trank !~ /;;[2-7]/
 		&& $srank !~ /in Octav/i)
 		{
-			$tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;1.9;;vide $C10";
+			$tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Feria;;1.9;;vide $C10";
 			$tname = subdirname('Commune', $version) . "$C10.txt";
 			@trank = split(";;", $trank);
 		}
@@ -619,7 +619,7 @@ sub getrank {
 			)
 			)
 		{
-			$tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
+			$tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Feria;;2;;vide $C10";
 			$scriptura = $tname;
 			$tname = subdirname('Commune', $version) . "$C10.txt";
 			@trank = split(";;", $trank);
@@ -1005,7 +1005,7 @@ sub precedence {
 		if ($commune =~ /C10/) {
 			$rule .= "ex $C10";
 			$rule =~ s/Oratio Dominica//gi;
-			$winner{Rank} = "Sanctae Mariae Sabbato;;Feria;;1;;ex $C10";
+			$winner{Rank} = "Sanctæ Mariæ Sabbato;;Feria;;1;;ex $C10";
 		}
 		
 		if ($winner{Rank} =~ /\;\;ex\s/
@@ -1095,7 +1095,7 @@ sub precedence {
 		(
 		(($dayname[0] =~ /Adv/i && $dayofweek != 0) || $dayname[0] =~ /Quad/i || emberday())
 		&& $winner =~ /tempora/i
-		&& $winner{Rank} !~ /(Beatae|Sanctae) Mariae/i
+		&& $winner{Rank} !~ /(Beatæ|Sanctæ) Mariæ/i
 		)
 		|| $rule =~ /Laudes 2/i
 		|| ($winner{Rank} =~ /vigil/i && $version !~ /(1955|1960|Newcal)/)
