@@ -685,3 +685,20 @@ sub bottom_links_menu {
                   qw(Versions Credits Download Rubrics Technical Help);
   join("&nbsp;&nbsp;&nbsp;&nbsp;\n", @options);
 }
+
+#*** html_dayhead($head, $subhead) 
+# return day headline in html
+sub html_dayhead {
+  my ($head, $subhead) = @_;
+
+  my $output = setfont(liturgical_color($head), $head);
+	
+	if ($subhead) {
+		($pre, $main) = split(/: /, $subhead, 2);
+		$output .= "<BR>\n<SPAN STYLE=\"font-size:82%; color:maroon;\"><I>$pre";
+		$output .= ": " . setfont(liturgical_color($main, ''), $main) if $main;
+		$output .= "</I></SPAN>\n";
+	}
+
+  $output;
+}

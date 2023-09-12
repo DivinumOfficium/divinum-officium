@@ -113,6 +113,7 @@ if ($command =~ s/changeparameters//) { getsetupvalue($command); }
 our $plures = strictparam('plures');
 my @horas = ();
 if ($command =~ s/^pray//) {
+  $command =~ s/SanctaMissa//;
   @horas = split(/(?=\p{Lu}\p{Ll}+)/, $command);
   if (@horas > 1 && $votive ne 'C9') {
     $plures = join('', @horas);
@@ -159,10 +160,6 @@ setsecondcol();
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;
 
-# prepare title
-$daycolor = liturgical_color($dayname[1], $commune);
-build_comment_line();
-
 $completed = getcookie1('completed');
 if ( $date1 eq gettoday()
   && $command =~ /pray/i
@@ -173,15 +170,15 @@ if ( $date1 eq gettoday()
   setcookie1('completed', $completed);
 }
 
+# prepare title
+my $dayhead = setheadline();
+my $html_dayhead = html_dayhead($dayhead, $dayname[2]);
+
 if ($command =~ /kalendar/) {    # kalendar widget
   print "Access-Control-Allow-Origin: *\n";
   print "Content-type: text/html; charset=utf-8\n";
   print "\n";
-  $headline = setheadline();
-  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
-  $comment =~ s/([\w]+)=([\w+-]+)/$1="$2"/g;
-  print "<p><span style='text-align:center;color:$daycolor'>$headline<br/></span>";
-  print "<span>$comment<BR/><BR/></span></p>";
+  print $html_dayhead;
   exit;
 }
 
@@ -195,9 +192,7 @@ if ($command =~ /setup(.*)/i) {
   print setuptable($command, "Divinum Officium setup");
   $command = "change" . $command . strictparam('pcommand');
 } else {
-  my $dayheadline = daylineheader(setheadline(), $Ck ? '' : $comment, $daycolor);
-  $dayheadline = daylineheader_c($dayheadline, $version, $version2) if $Ck;
-  print headline($dayheadline, substr($officium, 0, 1), $Ck ? "$version / $version2" : $version);
+  print headline($html_dayhead, substr($officium, 0, 1), $version, $version2);
 
   if ($horas[0] eq 'Plures') {
     print setplures();
@@ -208,10 +203,9 @@ if ($command =~ /setup(.*)/i) {
         precedence($date1); # prevent lost commemorations
       } elsif (/vesper/i && ($horas[0] !~ /vesper/i)) {
         precedence($date1);
-        my $vesperaheadline = setheadline();
-        if ($dayheadline ne $vesperaheadline) { 
-          $daycolor = liturgical_color($dayname[1], $commune);
-          print par_c("<BR><BR><FONT COLOR=$daycolor>$vesperaheadline</FONT>"); 
+        my $vesperahead = setheadline();
+        if ($dayhead ne $vesperahead) { 
+          print par_c("<BR><BR>" . html_dayhead($vesperahead)); 
         }
       }
       horas($hora);

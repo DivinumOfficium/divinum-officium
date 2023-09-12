@@ -169,36 +169,31 @@ sub kalendar_entry {
   our($day, $month, $year, $dayname, %scriptura, %commemoratio);
 
   precedence($date);
-  my @c1 = split(';;', $winner{Rank});
-  my @c2 =
-    (exists($commemoratio{Rank})) ? split(';;', $commemoratio{Rank})
-    : (
-    exists($scriptura{Rank})
-      && $c1[3] && ($c1[3] !~ /ex C[0-9]+[a-z]*/i
-      || ($version =~ /trident/i && $c1[2] !~ /vide C[0-9]/i))
-    ) ? split(';;', "Scriptura: $scriptura{Rank}")
-    : ($dayname[2]);
 
-  my($c1, $c2) = ('', '');
-  my($h1, $h2) = split(/\s*~\s*/, setheadline($c1[0], $c1[2]),2);
+  my($h1, $h2) = split(/\s*~\s*/, setheadline());
   return "$h1, $h2" if $winneronly; # finish here for ical
 
-  $c1 = "<B>".setfont(liturgical_color($c1[0], $c1[3]), $h1)."</B>"
+  my($c1, $c2);
+  $c1 = "<B>".setfont(liturgical_color($h1), $h1)."</B>"
       . setfont('1 maroon', "&nbsp;&nbsp;$h2");
   $c1 =~ s/Hebdomadam/Hebd/i;
   $c1 =~ s/Quadragesima/Quadr/i;
 
-  ($h1, $h2) = split(':', $c2[0],2);
-  ($h1, $h2) = ('Commemoratio', " $h1") if ($h1 && $h1 !~ /Transfer/ && !$h2);
+  $c2 = $dayname[2];
+
+	($h1, $h2) = split(/: /, $c2, 2);
   $c2 = setfont($smallblack, "$h1:") if $h1;
-  $c2 .= "<I>".setfont(liturgical_color($c2[0], $c2[3]), $h2)."</I>" if $h2;
+  $c2 .= "<I>".setfont(liturgical_color($h2), " $h2")."</I>" if $h2;
+
+  $c2 =~ s/Hebdomadam/Hebd/i;
+  $c2 =~ s/Quadragesima/Quadr/i;
 
   if (substr($date, 0, 5) lt '12-24' && substr($date, 0, 5) gt '01-13') {
     # outside Nat put Sancti winner in right column
     ($c2, $c1) = ($c1, $c2) if $winner =~ /sancti/i;
   } else {
-    # inside Nat clear right column unless it is commemoratio of saint
-    $c2 = '' unless $c2 =~ /Commemoratio/;
+    # inside Nat clear right column unless it is commemoratio of saint or scriptura
+    $c2 = '' unless $c2 =~ /Commemoratio|Scriptura/;
   }
 
   if (dirge($version, 'Laudes', $day, $month, $year)) { $c1 .= setfont($smallblack, ' dirge'); }
