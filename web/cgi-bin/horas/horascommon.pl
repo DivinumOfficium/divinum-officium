@@ -972,8 +972,16 @@ sub precedence {
 		}
 	}
 	
+	# only short readings in monastic summer
+	$scriptura = '' if ($version =~ /monastic/i && $scriptura =~ /(?:Pasc|Pent)/ && $month < 11);
+
 	if ($scriptura) {
 		%scriptura = %{officestring($lang1, $scriptura)};
+		if (!$dayname[2]) {
+			$dayname[2] = "Scriptura: $scriptura{Rank}";
+			$dayname[2] =~ s/;;.*//s;
+
+		}
 	}
 	
 	#Epiphany days for 1955|1960
