@@ -263,9 +263,8 @@ sub oratio {
   our $oremusflag = "\_\n$prayers{$lang}->{Oremus}\n";
   $oremusflag = '' if $type =~ /Secreta/i || $sub_unica_conc;
 
-  if (exists($w{'$type Vigilia'}) && ($version !~ /(1955|196)/ || $rule =~ /Vigilia/i)) {
-    $w = "!Commemoratio vigilia\n";
-    $w .= "!$type\n" . $w{"$type Vigilia"};
+  if (exists($w{"$type Vigilia"}) && ($version !~ /(1955|196)/ || $rule =~ /Vigilia/i)) {
+    $w .= $w{"$type Vigilia"};
     $retvalue .= "$oremusflag$w\n";
     $oremusflag = "";
   }
