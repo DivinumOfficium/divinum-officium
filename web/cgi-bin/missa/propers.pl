@@ -222,8 +222,9 @@ sub oratio {
   {
     $w = "$1\_\n$2";    #triduum 1960  not 1955
   }
-  my $sub_unica_conc = ($commemoratio{Rule} =~ /Sub unica conclusione in commemoratione/i)
-    || ($winner{Rule} =~ /Sub unica concl(usione)?\s*$/mi);
+  my $sub_unica_conc = $commemoratio{Rule} =~ /Sub unica conclusione in commemoratione/i
+    || $winner{Rule} =~ /Sub unica concl(usione)?\s*$/mi
+    || world_mission_sunday();
 
   if ($sub_unica_conc) {
     if ($version !~ /196/) {
@@ -407,6 +408,12 @@ sub getcc {
   return $retvalue;
 }
 
+sub world_mission_sunday {
+  $version =~ /1960/
+  && $winner{Rank} =~ /Dominica/i
+  && monthday($day, $month, $year, 1, 0) eq '104-0'
+}
+
 #*** commemoratio($item, $type, $lang)
 # adds commemoratio from $winner office $ind= hora
 sub commemoratio {
@@ -414,7 +421,11 @@ sub commemoratio {
   my $type = shift;
   my $lang = shift;
   my $code = 10;
-  if ($rank > 6.9 || ($version =~ /(1955|196)/ && $winner{Rank} =~ /Dominica/i)) { return ''; }
+  if ($rank > 6.9 
+      || $version =~ /(1955|196)/
+      && $winner{Rank} =~ /Dominica/i
+      && !world_mission_sunday()
+  ) { return ''; }
   if ($rule =~ /no commemoratio/i) { return ''; }
   my %w;
 
