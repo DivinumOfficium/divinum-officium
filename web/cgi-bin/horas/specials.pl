@@ -689,10 +689,10 @@ sub psalmi_minor {
 
     #if ($winner =~ /tempora/i && $dayofweek > 0 && $winner{Rank} =~ /Dominica/i && $rank < 6
     #  && $dayname[0] !~ /Nat/i) {$i = 2 * $dayofweek;}  #anticipated Sunday
-    if ( $version =~ /1960/
+    if ( $version =~ /19(?:55|60)/
       && $winner =~ /sancti/i
       && $rank < 6
-      && $hora =~ /(Prima|Tertia|Sexta|Nona)/i)
+      && $hora !~ /completorium/i)
     {
       $i = 2 * $dayofweek;
     }
