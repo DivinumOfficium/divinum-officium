@@ -7,10 +7,10 @@
 
 [Lectio6]
 @Commune/C1a:Lectio4:s/.*Przez rozmyślanie/Przez rozmyślanie/s s/$/~/
-@Commune/C1a:Lectio5:s/Cokolwiek.*//
+@Commune/C1a:Lectio5:s/Czworo.*//
 
 [Lectio7]
-@Commune/C1a:Lectio5:s/.* Cokolwiek/Cokolwiek/s s/$/~/
+@Commune/C1a:Lectio5:s/.* Czworo/Czworo/s s/$/~/
 @Commune/C1a:Lectio6:s/Twarz tedy Ewangelistów.*//
 
 [Lectio8]
