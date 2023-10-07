@@ -592,7 +592,8 @@ sub getrank {
 			if (!exists($winner{"Lectio1"})
 			&& exists($scrip{Lectio1})
 			&& $scrip{Lectio1} !~ /evangelii/i
-			&& ($winner{Rank} !~ /\;\;ex / || ($version =~ /trident/i && $winner{Rank} !~ /\;\;(vide|ex) /i)))
+			&& ($winner{Rank} !~ /\;\;ex / || ($version =~ /trident/i && $winner{Rank} !~ /\;\;(vide|ex) /i))
+			&& ($version !~ /monastic/i || $tname !~ /(?:Pasc|Pent)/ || $month > 10))
 			{
 				$dayname[2] = "Scriptura: $trank[0]";
 			} else {
