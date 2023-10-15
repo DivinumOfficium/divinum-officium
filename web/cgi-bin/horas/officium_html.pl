@@ -1,37 +1,31 @@
 #*** daylineheader_c($head)
 
 # return headline for main and pray for Compare
-sub daylineheader_c {
+sub html_dayhead_c {
   my($head, $version1, $version2) = @_;
   $version = $version2;
   precedence();
+  my $head2 = html_dayhead(setheadline(), $dayname[2]);
   $version = $version1;
-  my $daycolor = liturgical_color($dayname[1], $commune);
-  my $head2 = daylineheader(setheadline(), '', $daycolor);
   '<TABLE CELLPADDING=5><TR>'
-    . "<TD ALIGN=RIGHT WIDTH=50% STYLE='border-right: 1pt solid red;'>$head</TD>"
-    . "<TD ALIGN=LEFT WIDTH=50%>$head2</TD>"
+    . "<TD ALIGN=RIGHT VALIGN=TOP WIDTH=50% STYLE='border-right: 1pt solid red;'>$head</TD>"
+    . "<TD ALIGN=LEFT VALIGN=TOP WIDTH=50%>$head2</TD>"
     . '</TR></TABLE>'
-}
-
-#*** daylineheader($day, $comment, $color) 
-# return headline for main and pray
-sub daylineheader {
-  my ($day, $comment, $color) = @_;
-
-  qq(<FONT COLOR=$color>$day<BR></FONT>\n$comment);
 }
 
 #*** headline($head) prints headline for main and pray
 sub headline {
-  my ($output, $variant, $vers) = @_;
-  $output = par_c($output);
-  my ($compone);
+  my ($head, $variant, $version1, $version2) = @_;
+  my ($compone, $vers);
   if ($variant eq 'C') {
+    $head = html_dayhead_c($head, $version1, $version2);
     $compone = "<A HREF=# onclick=\"callbrevi(\'$date1\')\">One version</A>";
+    $vers = "$version1 / $version2";
   } else {
     $compone = '<A HREF=# onclick="callcompare()">Compare</A>';
+    $vers = $version;
   }
+  my $output = par_c($head);
   $output .= "<H1><FONT COLOR=MAROON SIZE=+1><B><I>Divinum Officium</I></B></FONT>&nbsp;<FONT COLOR=RED SIZE=+1>$vers</FONT></H1>\n";
   if ($variant eq 'P') {
     $output .= par_c(<< "PrintTag");

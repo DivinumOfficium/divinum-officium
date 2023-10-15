@@ -151,22 +151,7 @@ $Deo gratias
 [Ant 2]
 @Commune/C10
 
-[HymnusM minor]
-
-#Hymnus
-v. Meménto salútis auctor,
-Quod nostri quondam córporis,
-Ex illibáta Vírgine
-Nascéndo, formam súmpseris.
-_
-María Mater grátiæ,
-Mater misericórdiæ:
-Tu nos ab hoste prótege,
-Et hora mortis súscipe.
-_
-@Psalterium/Doxologies:NatT
-
-[Hymnus minor]
+[Hymnus minor] 
 
 #Hymnus
 v. Meménto, rerum Cónditor,
@@ -180,6 +165,21 @@ Tu nos ab hoste prótege,
 Et mortis hora súscipe.
 _
 @Psalterium/Doxologies:Nat
+
+[Hymnus minor](sed rubrica 1570 aut rubrica monastica dicitur)
+
+#Hymnus
+v. Meménto salútis auctor,
+Quod nostri quondam córporis,
+Ex illibáta Vírgine
+Nascéndo, formam súmpseris.
+_
+María Mater grátiæ,
+Mater misericórdiæ:
+Tu nos ab hoste prótege,
+Et hora mortis súscipe.
+_
+@Psalterium/Doxologies:NatT
 
 [Minor intro]
 #Incipit
@@ -211,7 +211,8 @@ $Qui vivis
 [Special Prima]
 @:Minor intro
 @:Hymnus minor
-_
+
+#Psalmi
 @:Ant Laudes:1 s/^/Ant. /
 &psalm(53)
 

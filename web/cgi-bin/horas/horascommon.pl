@@ -52,7 +52,7 @@ sub getrank {
   our($initia, $scriptura, $laudesonly, $commemorated, $seasonalflag);
 	our($antecapitulum, $antecapitulum2, $transfervigil) = ('') x 3;
 	our($vespera, $cvespera, $tvesp, $svesp, $dayofweek);
-	our($C10, $marian_commem);
+	our($C10);
 	our(%winner);
 	our(@dayname);
 	
@@ -428,7 +428,7 @@ sub getrank {
 		&& $testmode !~ /^season$/i)
 	{
 		if ($dayofweek == 6 && $srank !~ /(Vigil|in Octav)/i && $trank[2] < 2 && $srank[2] < 2 && !$transfervigil) {
-			$tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
+			$tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Feria;;2;;vide $C10";
 			$scriptura = $tname;
 			if ($scriptura =~ /^\.txt/i) { $scriptura = $sname; }
 			$tname = subdirname('Commune', $version) . "$C10.txt";
@@ -445,7 +445,7 @@ sub getrank {
 		&& $trank !~ /;;[2-7]/
 		&& $srank !~ /in Octav/i)
 		{
-			$tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;1.9;;vide $C10";
+			$tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Feria;;1.9;;vide $C10";
 			$tname = subdirname('Commune', $version) . "$C10.txt";
 			@trank = split(";;", $trank);
 		}
@@ -542,8 +542,6 @@ sub getrank {
 		if ($hora =~ /vespera/i && $trank[2] =~ /Feria/i) { $trank = ''; @trank = undef; }
 		
 		#if ($version =~ /1960/ && $srank[2] >= 6 && $trank[2] < 6) {$tname = $trank = ''; @trank = undef;}
-		# Is the commemoration Marian?
-		$marian_commem = 0;
 		
 		if (transfered($tname, $year, $version)) {		#&& !$vflag)
 			if ($hora !~ /Vespera|Completorium/i) { $dayname[2] = "Transfer $trank[0]"; }
@@ -555,7 +553,6 @@ sub getrank {
 			if ($crank[2] >= 6) {
 				$dayname[2] = "Commemoratio: $crank[0]";
 				$commemoratio = $cname;
-				$marian_commem = ($crank[3] =~ /C1[0-9]/);
 			}
 		} elsif ($winner =~ /sancti/i && $trank[2] && $trank[2] > 1 && $trank[2] >= $crank[2] && $rank < 7
 		&& !($version =~ /divino/i && $winner =~ /07-01/ && $tname =~ /Pent03-5/) # github #2950
@@ -570,8 +567,7 @@ sub getrank {
 			}
 			$comrank = $trank[2];
 			$cvespera = $tvesp;
-			$marian_commem = ($trank[3] =~ /C1[0-9]/);
-		} elsif ($crank[2] && ($srank[2] <= 5 || $crank[2] >= 2)) {
+		} elsif ($crank[2] && ($srank[2] <= 5 || $crank[2] > 2)) {
 			if ($hora !~ /Completorium/i && $crank[0] && $winner{Rule} !~ /no commemoratio/i) {
 				$dayname[2] = "Commemoratio: $crank[0]";
 			}
@@ -579,7 +575,6 @@ sub getrank {
 			$commemoratio = $cname;
 			$comrank = $crank[2];
 			$cvespera = $commemoratio1 ? $tvesp : 4 - $svesp;
-			$marian_commem = ($crank[3] =~ /C1[0-9]/);
 		} elsif ($crank[2] < 6) {
 			$dayname[2] = '';
 			$commemoratio = '';
@@ -588,6 +583,7 @@ sub getrank {
 		if (!$dayname[2] && ($winner{'Commemoratio 2'} || $winner{'Commemoratio'})) {
 			($_) = split(/\n/, $winner{'Commemoratio 2'} || $winner{'Commemoratio'});
 			$dayname[2] = "Commemoratio: $_" if (s/^!Commemoratio //);
+			$dayname[2] =~ s/:/ ad Laudes tantum:/ if $srank[2] >= 5 && $winner{'Commemoratio 2'};
 		}
 		
 		if (($hora =~ /matutinum/i || (!$dayname[2] && $hora !~ /Vespera|Completorium/i)) && $rank < 7 && $trank[0]) {
@@ -623,7 +619,7 @@ sub getrank {
 			)
 			)
 		{
-			$tempora{Rank} = $trank = "Sanctae Mariae Sabbato;;Feria;;2;;vide $C10";
+			$tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Feria;;2;;vide $C10";
 			$scriptura = $tname;
 			$tname = subdirname('Commune', $version) . "$C10.txt";
 			@trank = split(";;", $trank);
@@ -681,7 +677,6 @@ sub getrank {
 				
 				if ($srank[0]) {
 					$dayname[2] = "$comm$laudesonly: $srank[0]";
-					$marian_commem = ($srank[3] =~ /C1[0-9]/);
 				}
 				if ($version =~ /(monastic|1960)/i && $dayname[2] =~ /Januarii/i) { $dayname[2] = ''; }
 				
@@ -977,8 +972,16 @@ sub precedence {
 		}
 	}
 	
+	# only short readings in monastic summer
+	$scriptura = '' if ($version =~ /monastic/i && $scriptura =~ /(?:Pasc|Pent)/ && $month < 11);
+
 	if ($scriptura) {
 		%scriptura = %{officestring($lang1, $scriptura)};
+		if (!$dayname[2]) {
+			$dayname[2] = "Scriptura: $scriptura{Rank}";
+			$dayname[2] =~ s/;;.*//s;
+
+		}
 	}
 	
 	#Epiphany days for 1955|1960
@@ -1010,7 +1013,7 @@ sub precedence {
 		if ($commune =~ /C10/) {
 			$rule .= "ex $C10";
 			$rule =~ s/Oratio Dominica//gi;
-			$winner{Rank} = "Sanctae Mariae Sabbato;;Feria;;1;;ex $C10";
+			$winner{Rank} = "Sanctæ Mariæ Sabbato;;Feria;;1;;ex $C10";
 		}
 		
 		if ($winner{Rank} =~ /\;\;ex\s/
@@ -1100,7 +1103,7 @@ sub precedence {
 		(
 		(($dayname[0] =~ /Adv/i && $dayofweek != 0) || $dayname[0] =~ /Quad/i || emberday())
 		&& $winner =~ /tempora/i
-		&& $winner{Rank} !~ /(Beatae|Sanctae) Mariae/i
+		&& $winner{Rank} !~ /(Beatæ|Sanctæ) Mariæ/i
 		)
 		|| $rule =~ /Laudes 2/i
 		|| ($winner{Rank} =~ /vigil/i && $version !~ /(1955|1960|Newcal)/)
@@ -1647,16 +1650,6 @@ sub papal_antiphon_dum_esset($) {
 		}
 		return ($strength, $result, $backscope, $forwardscope);
 	}
-}
-
-#*** build_comment_line()
-#	Sets $comment to the HTML for the comment line.
-sub build_comment_line() {
-	our @dayname;
-	our ($comment, $marian_commem);
-	my $commentcolor =
-	($dayname[2] =~ /(Feria)/i) ? 'black' : ($marian_commem && $dayname[2] =~ /^Commem/) ? 'blue' : 'maroon';
-	$comment = ($dayname[2]) ? "<SPAN STYLE=\"font-size:82%; color:$commentcolor;\"><I>$dayname[2]</I></SPAN>" : "";
 }
 
 #*** cache_prayers()
