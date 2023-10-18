@@ -203,6 +203,7 @@ if ($command =~ /setup(.*)/i) {
         precedence($date1); # prevent lost commemorations
       } elsif (/vesper/i && ($horas[0] !~ /vesper/i)) {
         precedence($date1);
+        setsecondcol();
         my $vesperahead = setheadline();
         if ($dayhead ne $vesperahead) { 
           print par_c("<BR><BR>" . html_dayhead($vesperahead)); 
