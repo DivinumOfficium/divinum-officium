@@ -40,6 +40,7 @@ sub getdialog {
     foreach (keys %_dialog) { chomp($_dialog{$_}) }
     $_dialog{'loaded'} = 1;
   }
+  chomp($_dialog{$name});
   if (wantarray) {
     return split(',', $_dialog{$name});
   } else { 
