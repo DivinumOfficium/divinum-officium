@@ -2,12 +2,11 @@ name: Cleanup Old Images
 
 # Configures this workflow to run every time a change is pushed to the branch called `release`.
 on:
-  push:
-    branches: [ master, ci-build-image ]
+  # push:
+  #  branches: [ master ]
   schedule:
-    # Build the image regularly (each Friday) to get new security fixes, even if pushes don't occur
+    # cleanup old images regulary
     - cron: '13 23 * * 5'
-
 
 # Defines two custom environment variables for the workflow. These are used for the Container registry domain, and a name for the Docker image that this workflow builds.
 env:
@@ -25,8 +24,6 @@ jobs:
     steps:
       - uses: actions/delete-package-versions@v4
         with:
-          #package-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           package-name: "divinum-officium"
-          #package-name: ${{ github.repository }}
           package-type: 'container'
           min-versions-to-keep: 5
