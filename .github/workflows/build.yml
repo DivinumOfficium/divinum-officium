@@ -50,18 +50,3 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-
-  cleanup-old-images:
-    runs-on: ubuntu-latest
-    # Sets the permissions granted to the `GITHUB_TOKEN` for the actions in this job.
-    permissions:
-      contents: read
-      packages: write
-      # 
-    steps:
-      - name: Cleanup Old Versions
-        uses: actions/delete-package-versions@v4
-        with:
-          package-name: ${{ env.IMAGE_NAME }}
-          package-type: 'container'
-          min-versions-to-keep: 2
