@@ -29,4 +29,4 @@ jobs:
           package-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           package-type: 'container'
           min-versions-to-keep: 2
-
+          token: ${{ secrets.GITHUB_TOKEN }}
