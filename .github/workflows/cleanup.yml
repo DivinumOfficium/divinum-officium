@@ -25,6 +25,7 @@ jobs:
     steps:
       - uses: actions/delete-package-versions@v4
         with:
-          package-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          #package-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          package-name: "divinum-officium"
           package-type: 'container'
           min-versions-to-keep: 2
