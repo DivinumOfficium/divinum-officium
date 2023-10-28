@@ -3,7 +3,7 @@ name: Create and publish Docker image
 # Configures this workflow to run every time a change is pushed to the branch called `release`.
 on:
   push:
-    branches: [ master  ]
+    branches: [ master,ci-build-image  ]
   schedule:
     # Build the image regularly (each Friday) to get new security fixes, even if pushes don't occur
     - cron: '13 23 * * 5'
