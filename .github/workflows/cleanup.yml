@@ -21,13 +21,10 @@ jobs:
     # Sets the permissions granted to the `GITHUB_TOKEN` for the actions in this job.
     permissions:
       contents: read
-      #packages: write
-      packages: admin
-      # 
+      packages: write
     steps:
       - uses: actions/delete-package-versions@v4
         with:
           package-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           package-type: 'container'
           min-versions-to-keep: 2
-          token: ${{ secrets.GITHUB_TOKEN }}
