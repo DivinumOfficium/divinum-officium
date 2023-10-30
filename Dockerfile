@@ -4,6 +4,8 @@ RUN apk add git
 COPY .git /build/
 WORKDIR /build
 
+#fork test for BY
+
 # Write build info to be available at $url/buildinfo
 RUN echo "{" > /build/buildinfo
 RUN echo "  \"build-date\": \"`date +%s`\"," >> /build/buildinfo
