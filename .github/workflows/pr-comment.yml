@@ -1,0 +1,36 @@
+---
+
+# This workflow comments in pull requests that modify infrastructure files
+
+name: Auto Comment Infrastructure Pull Requests
+on:
+  pull_request:
+    paths:
+      - Dockerfile
+      - docker/**
+      - .github/**
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wow-actions/auto-comment@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          #issuesOpened: |
+          #  Hello @{{ author }}!
+          #  Thank you for raising an issue. We will will investigate into the matter and get back to you as soon as possible.
+          #  Please make sure you have given us as much context as possible.#
+
+
+          pullRequestOpened: |
+            Hello @{{ author }}
+            Thank you for your pull request contributing to Divinum Officium.
+
+            As this pull request involves the application deployment infrastructure, it will first need to be reviewed by:
+            @DivinumOfficium/infrastructure-team.
+
+            Feel free to reach out to one of them.
+
+            _Maintainers: please do not merge this pull request without approval from the infrastructure team, as it could
+            result in downtime on DivinumOfficium.com._
