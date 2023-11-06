@@ -22,6 +22,7 @@ use lib "$Bin/..";
 use DivinumOfficium::Main qw(liturgical_color);
 use DivinumOfficium::Directorium qw(dirge);
 use DivinumOfficium::Date qw(ydays_to_date);
+use DivinumOfficium::RunTimeOptions qw(check_version);
 
 #*** common variables arrays and hashes
 our $error;
@@ -98,8 +99,8 @@ $setupsave = savesetup(1);
 $setupsave =~ s/\r*\n*//g;
 
 my @ver;
-push(@ver, strictparam('version') || 'Rubrics 1960');
-push(@ver, strictparam('version2') || 'Divino Afflatu') if ($compare);
+push(@ver, check_version(strictparam('version') || 'Rubrics 1960'));
+push(@ver, check_version(strictparam('version2') || 'Divino Afflatu')) if ($compare);
 
 my ($xmonth, $xday, $xyear) = split('-', strictparam($date_arg) || gettoday());
 my $kmonth = strictparam('kmonth') || $xmonth;

@@ -1,9 +1,18 @@
 version,kalendar,transfer,stransfer
-Tridentine 1570,1570,1570,1570
-Tridentine 1910,1888,1910,1910
-Divino Afflatu,1954,DA,DA,DA
-Reduced 1955,1955,1960,DA,1955
-Rubrics 1960,1960,1960,1960
-1960 Newcalendar,NC,Newcal,Newcal
-Monastic,M,M,XXXX
+Tridentine - 1570,1570,1570,1570
+Tridentine - 1888,1888,1910,1910
+Divino Afflatu - 1954,1954,DA,DA,DA
+Reduced - 1955,1955,1960,DA,1955
+Rubrics 1960 - 1960,1960,1960,1960
+Rubrics 1960 - 2020 USA,NC,Newcal,Newcal
+Monastic - 1963,M,M,XXXX
+Ordo Praedicatorum - 1962,1967OP,1960,XXXX
+# - missa still uses old names
+Tridentine 1570,1570,1570,1570                                                                  │ GMT
+Tridentine 1910,1888,1910,1910                                                                  │Set-Cookie:missag=%27Rubrics%201960%27%3B%3B%3B%27regular%27%3B%3B%3B%27English%27%3B%3B%3B%27
+Divino Afflatu,1954,DA,DA,DA                                                                    │Hodie%27%3B%3B%3B%271%27%3B%3B%3B%270%27%3B%3B%3Boooobb%3B%3B%3B; path=/; expires=Tue, 05-Nov-
+Reduced 1955,1955,1960,DA,1955                                                                  │2024 12:00:56 GMT
+Rubrics 1960,1960,1960,1960                                                                     │<h1>Software error:</h1>
+1960 Newcalendar,NC,Newcal,Newcal                                                               │<pre>Can't load tempora for unknown version Rubrics 1960 at /home/m/h/bre/divinum-officium/web
+Monastic,M,M,XXXX                                                                               │/cgi-bin/missa/../DivinumOfficium/Directorium.pm line 84.
 Ordo Praedicatorum,1967OP,1960,XXXX

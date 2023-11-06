@@ -25,6 +25,8 @@ use locale;
 use lib "$Bin/..";
 use DivinumOfficium::Main qw(liturgical_color);
 use DivinumOfficium::Date qw(prevnext);
+use DivinumOfficium::RunTimeOptions qw(check_version check_horas check_language);
+
 $error = '';
 $debug = '';
 
@@ -110,16 +112,22 @@ set_runtime_options('parameters'); # priest, lang1 ... etc
 
 if ($command =~ s/changeparameters//) { getsetupvalue($command); }
 
+$version = check_version($version);
+$lang1 = check_language($lang1);
+$lang2 = check_language($lang2);
+
 our $plures = strictparam('plures');
 my @horas = ();
 if ($command =~ s/^pray//) {
   $command =~ s/SanctaMissa//;
   @horas = split(/(?=\p{Lu}\p{Ll}+)/, $command);
-  if (@horas > 1 && $votive ne 'C9') {
-    $plures = join('', @horas);
-  }
   if ($horas[0] eq 'Omnes') { 
     @horas = gethoras($votive eq 'C9');
+  } elsif ($horas[0] ne 'Plures') {
+    @horas = map { check_horas($_); } @horas;
+    if (@horas > 1 && $votive ne 'C9') {
+      $plures = join('', @horas);
+    }
   }
 }
 our $hora = (@horas > 0) ? $horas[0] : '';
@@ -129,9 +137,10 @@ setcookies("horasg$cookies_suffix", 'general');
 
 if ($Ck) {
   $version1 = $version; # save value for use in horas
+  $version2 = check_version($version2);
   $version2 ||= $version;
-  if ($version eq $version2) { $version2 = 'Divino Afflatu'; }
-  if ($version eq $version2) { $version2 = 'Rubrics 1960'; }
+  if ($version eq $version2) { $version2 = 'Divino Afflatu - 1954'; }
+  if ($version eq $version2) { $version2 = 'Rubrics 1960 - 1960'; }
   $lang1 = $lang2 = $langc;
 }
 
