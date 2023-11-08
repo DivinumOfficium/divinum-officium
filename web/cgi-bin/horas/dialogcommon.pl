@@ -112,10 +112,13 @@ sub get_tempus_id {
 
 # Returns the name of the day for use as a subject in conditionals.
 sub get_dayname_for_condition {
-  our ($day, $month, $day_of_week);
+  our ($day, $month, $day_of_week, $winner);
   our $hora;
   my $vesp_or_comp = ($hora =~ /Vespera/i) || ($hora =~ /Completorium/i);
   return 'Epiphaniæ' if ($month == 1 && ($day == 6 || ($day == 5 && $vesp_or_comp)));
+  return 'in Cœna Domini' if $winner =~ /Quad6-4/;
+  return 'in Parasceve' if $winner =~ /Quad6-5/;
+  return 'Sabbato Sancto' if $winner =~ /Quad6-6/;
   return '';
 }
 our %subjects = (

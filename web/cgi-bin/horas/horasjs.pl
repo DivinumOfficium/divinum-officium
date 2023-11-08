@@ -55,6 +55,13 @@ function hset(p, d) {
   document.forms[0].submit();
 }
 
+// call appendix
+function appendix(a) {
+  document.forms[0].command.value = "Appendix " + a;
+  console.log(document.forms[0].command.value);
+  document.forms[0].submit();
+}
+
 // Jump straight to an hour of the Office for the Dead.
 function defunctorum(hour) {
   clearradio();
