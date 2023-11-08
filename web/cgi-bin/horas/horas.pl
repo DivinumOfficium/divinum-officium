@@ -7,9 +7,9 @@ use utf8;
 use FindBin qw($Bin);
 use lib "$Bin/..";
 
+use DivinumOfficium::LanguageTextTools qw(prayer translate omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 # Defines ScriptFunc and ScriptShortFunc attributes.
-use horas::Scripting;
-my @lines;
+use DivinumOfficium::Scripting;
 my $precesferiales;
 $a = 1;
 
@@ -23,114 +23,25 @@ sub adhoram {
 
 #*** horas($hora)
 # collects and prints the officium for the given $hora
-# first let specials to fill the chapters
-# then break the text into units (separated by double newline)
-# resolves the references (formatting characters, prayers hash references and subs)
-#and prints the result
 sub horas {
   my $command = shift;
   $hora = $command;
   $hora = 'Vespera' if $hora =~ /vesper/i;
   print "<H2 ID='${hora}top'>" . adhoram($hora) ."</H2>\n";
-  our $canticum = 0;
-  our $reciteindex = 0;
-  our $recitelimit = 0;
-  $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;
-  our %translate;
-  $translate{$lang1} = setupstring($lang1, "Psalterium/Translate.txt");
-  $translate{$lang2} = setupstring($lang2, "Psalterium/Translate.txt");
-  cache_prayers();
-  %chant = %{setupstring('Latin', "Psalterium/Chant.txt")};
-  $column = 1;
+  my (@script1, @script2);
+  our ($lang1, $lang2);
   if ($Ck) { $version = $version1; precedence(); }
   @script1 = getordinarium($lang1, $command);
   @script1 = specials(\@script1, $lang1);
-  $column = 2;
-	if ($Ck) { $version = $version2; precedence(); setsecondcol(); }
-  @script2 = getordinarium($lang2, $command);
-  @script2 = specials(\@script2, $lang2);
-  $expandnum = strictparam('expandnum');
-  table_start();
-  $ind1 = $ind2 = 0;
-  $searchind = 0;
-
-  if ($version !~ /(Monastic|1570|1955|1960|Newcal|Praedicatorum)/i) {
-    ante_post('Ante');
-  } else {
-    $searchind++;
-  }
-  my $alleluia_regex = qr/[(]*(?<!&)allel[uú][ij]a[\.\,]*[)]*/i;
-  $omit_regexp = 'omit';    # to prevent display omitted Preces|Suffragium in red line 160
-  {
-    my %comm = %{setupstring($lang2, 'Psalterium/Comment.txt')};
-    $omit_regexp .= '|\b' . (split("\n", $comm{'Preces'}))[1] . '\b';
-    $omit_regexp .= '|\b' . (split("\n", $comm{'Suffragium'}))[0] . '\b';
+  if ($Ck) { $version = $version2; 
+    load_languages_data($lang1, $lang2, $version, $missa);
+    precedence(); }
+  if (!$only) {
+    @script2 = getordinarium($lang2, $command);
+    @script2 = specials(\@script2, $lang2);
   }
 
-  while ($ind1 < @script1 || $ind2 < @script2) {
-    $expandind++;
-    ($text1, $ind1) = getunit(\@script1, $ind1);
-    ($text2, $ind2) = getunit(\@script2, $ind2);
-    $column = 1;
-		if ($Ck) { $version = $version1; precedence(); }
-    $text1 = resolve_refs($text1, $lang1);
-
-    # Suppress (Alleluia) during Quadrigesima.
-    if ($dayname[0] =~ /Quad/i && !Septuagesima_vesp()) {
-      $text1 =~ s/$alleluia_regex//g;
-    }
-    $text1 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
-    if ($lang1 =~ /Latin/i) { $text1 = spell_var($text1); }
-    if ($text1 && $text1 !~ /^\s+$/) { setcell($text1, $lang1); }
-
-    if (!$only) {
-      $column = 2;
-			if ($Ck) { $version = $version2; precedence(); setsecondcol(); }
-      $text2 = resolve_refs($text2, $lang2);
-
-      if ($dayname[0] =~ /Quad/i && !Septuagesima_vesp()) {
-        $text2 =~ s/$alleluia_regex//ig;
-      }
-      $text2 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
-      if ($lang2 =~ /Latin/i) { $text2 = spell_var($text2); }
-      if ($text2 && $text2 !~ /^\s+$/) { setcell($text2, $lang2); }
-    }
-  }
-
-  if ($version !~ /(Monastic|1570|1955|1960|Newcal|Praedicatorum)/) {
-    ante_post('Post');
-  } else {
-    $searchind++;
-  }
-  table_end();
-  if ($column == 1) { $searchind++; }
-}
-
-#*** getunits(\@s, $ind)
-# break the array into units separated by double newlines
-# from $ind  to the returned new $ind
-sub getunit {
-
-  my $s = shift;
-  my @s = @$s;
-  my $ind = shift;
-  my $t = '';
-  my $plen = 1;
-
-  while ($ind < @s) {
-    my $line = chompd($s[$ind]);
-    $ind++;
-    if ($line && !($line =~ /^\s+$/)) { $t .= "$line\n"; next; }
-    if (!$t) { next; }
-    last;
-  }
-
-  if ($dayname[0] !~ /Pasc/i) {
-    $t =~ s/\(Allel[uú][ij]a.*?\)//isg;
-  } else {
-    $t =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;
-  }
-  return ($t, $ind);
+  print_content($lang1, \@script1, $lang2, \@script2, $version =~ /Divino/i);
 }
 
 #*** resolve refs($text_of_block, $lang)
@@ -150,23 +61,25 @@ sub resolve_refs {
     }
   }
 
-  if ($t[0] =~ $omit_regexp) {
+  if ($t[0] =~ omit_regexp()) {
     $t[0] =~ s/^\s*\#/\!\!\!/;
   } else {
     $t[0] =~ s/^\s*(\#.*)(\{.*\})?\s*$/'!!' . substr(translate($1, $lang), 1) . $2/e;
   }
   my @resolved_lines;    # Array of blocks expanded from lines.
-  my $prelude = '';      # Preceding continued lines.
+  my $merged_lines;      # Preceding continued lines.
 
   #cycle by lines
   for (my $it = 0; $it < @t; $it++) {
     $line = adjust_refs($t[$it], $lang);
+    $line =~ s/\s+$//;
+    $line =~ s/^\s+//;
+
+    my $merge_with_next = ($line =~ s/~$//);
 
     #$ and & references
-    if ($line =~ /^\s*[\#\$\&]/) {
+    if ($line =~ /^[\#\$\&]/) {
       $line =~ s/\.//g;
-      $line =~ s/\s+$//;
-      $line =~ s/^\s+//;
 
       #prepares reading the part of common w/ antiphona
       if ($line =~ /psalm/ && $it > 0 && $t[$it - 1] =~ /^\s*Ant\. /i) {
@@ -184,18 +97,14 @@ sub resolve_refs {
     }
 
     # add dot if missing in Antiphona
-    $line =~ s/(\w)$/$&./ if ($line =~ /^\s*Ant\./);
+    $line =~ s/(\w)$/$&./ if ($line =~ /^Ant\./);
 
     #red prefix
-    if ($line =~ /^\s*(R\.br\.|R\.|V\.|Ant\.|Benedictio\.* |Absolutio\.* )(.*)/) {
+    if ($line =~ /^(R\.br\.|R\.|V\.|Ant\.|Benedictio\.|Absolutio\.)(.*)/) {
       my $h = setvrbar($1);
       my $l = $2;
 
-      if ($h =~ /(Benedictio|Absolutio)/) {
-        my $str = $1;
-        $str = translate($str, $lang);
-        $h =~ s/(Benedictio|Absolutio)/$str/;
-      }
+      $h =~ s/(Benedictio|Absolutio)/ translate($1, $lang) /e;
       $line = setfont($redfont, $h) . $l;
     }
 
@@ -203,13 +112,13 @@ sub resolve_refs {
     $line = setcross($line);
 
     #small omitted title
-    if ($line =~ /^\s*\!\!\!(.*)/) {
+    if ($line =~ /^\!\!\!(.*)/) {
       $l = $1;
       $line = setfont($smallblack, $l);
     }
 
     #large chapter title
-    elsif ($line =~ /^\s*\!\!(.*)/) {
+    elsif ($line =~ /^\!\!(.*)/) {
       my $l = $1;
       my $suffix = '';
       if ($l =~ s/(\{[^:].*?\})//) { $suffix = setfont($smallblack, $1); }
@@ -218,25 +127,22 @@ sub resolve_refs {
     }
 
     #red line
-    elsif ($line =~ /^\s*\!(.*)/) {
+    elsif ($line =~ /^\!(.*)/) {
       $l = $1;
       my $suffix = '';
       if ($l =~ s/(\{[^:].*?\})//) { $suffix = setfont($smallblack, $1); }
       $line = setfont($redfont, $l) . " $suffix\n";
     }
-    $line =~ s{/:(.*?):/}{setfont($smallfont, $1)}e;
 
     #first letter red
-    if ($line =~ /^\s*r\.\s*(.*)/) {
-      $line = $1;
-      $line = setfont($largefont, substr($line, 0, 1)) . substr($line, 1);
+    elsif ($line =~ /^r\.\s*(.\.?)(.*)/) {
+      $line = setfont($largefont, $1) . $2;
     }
 
     # first letter initial
-    if ($line =~ /^(\s*)v\.\s*(.*)/ || $line =~ /(\{\:.*?\:\}\s*)v\.\s*(.*)/) {
-      my $prev = $1;
-      $line = $2;
-      $line = $prev . setfont($initiale, substr($line, 0, 1)) . substr($line, 1);
+    elsif ($line =~ /^v\.\s*(.*)/ || $line =~ /\{\:.*?\:\}\s*v\.\s*(.*)/) {
+      $line = $1;
+      $line = setfont($initiale, substr($line, 0, 1)) . substr($line, 1);
     }
 
     # rubrics - small red
@@ -245,17 +151,17 @@ sub resolve_refs {
     # italic for mute vovels in hymns
     $line =~ s/\[([aeiou])\]/setfont('italic', $1)/eg;
 
-    #connect lines marked by tilde, or but linebrak
-    if ($line =~ /~\s*$/) {
-      $prelude .= substr($line, 0, $-[0]) . ' ';
-    } else {
-      push @resolved_lines, $prelude . $line;
-      $prelude = '';
+    if ($merge_with_next) {
+      $merged_lines .= $line . ' ';
     }
+    else {
+      push @resolved_lines, $merged_lines . $line;
+      $merged_lines = '';
+    }
+
   }    #line by line cycle ends
 
   # Concatenate the expansions of the lines with a line break between each.
-  push @resolved_lines, $prelude if $prelude;
   push @resolved_lines, '';
   my $resolved_block = join "<BR>\n", @resolved_lines;
 
@@ -268,24 +174,21 @@ sub resolve_refs {
 #*** Pater noster($lang)
 # returns the text of the prayer without Amen, setting V. and R. to the last 2 lines
 sub pater_noster : ScriptFunc {
-  our %prayers;
-  return $prayers{shift()}->{'Pater_noster1'};
+  return prayer('Pater_noster1', shift());
 }
 
 #*** teDeum($lang)
 # returns the text of the hymn
 sub teDeum : ScriptFunc {
   my $lang = shift;
-  our %prayers;
-  return "\n_\n!Te Deum\n$prayers{$lang}->{'Te Deum'}";
+  return "\n_\n!Te Deum\n" . prayer('Te Deum', $lang);
 }
 
 #*** Alleluia($lang)
 # return the text Alleluia or Laus tibi
 sub Alleluia : ScriptFunc {
   my $lang = shift;
-  our %prayers;
-  my $text = $prayers{$lang}->{'Alleluia'};
+  my $text = prayer('Alleluia', $lang);
   my @text = split("\n", $text);
 
   if ($dayname[0] =~ /Quad/i && !Septuagesima_vesp()) {
@@ -296,16 +199,6 @@ sub Alleluia : ScriptFunc {
 
   #if ($dayname[0] =~ /Pasc/i) {$text = "Alleluia, alleluia, alleluia";}
   return $text;
-}
-
-sub Alleluia_ant {
-  my ($lang, $ucase) = @_;
-
-  my $ant = $prayers{$lang}{"Alleluia Duplex"};
-  $ant =~ s/ / * /;
-  $ant =~ s/\./$prayers{$lang}{"Alleluia Simplex"}/;
-  $ant =~ s/ ./\L$&/g unless $ucase;
-  return $ant;
 }
 
 #*** Septuagesima_vesp
@@ -334,32 +227,28 @@ sub triduum_gloria_omitted() {
 sub Gloria : ScriptFunc {
   my $lang = shift;
   if (triduum_gloria_omitted()) { return ""; }
-  our %prayers;
-  if ($rule =~ /Requiem gloria/i) { return $prayers{$lang}->{Requiem}; }
-  return $prayers{$lang}->{'Gloria'};
+  if ($rule =~ /Requiem gloria/i) { return prayer('Requiem', $lang); }
+  return prayer('Gloria', $lang);
 }
 
 sub Gloria1 : ScriptFunc {    #* responsories
   my $lang = shift;
   if ($dayname[0] =~ /(Quad5|Quad6)/i && $winner !~ /Sancti/i && $rule !~ /Gloria responsory/i) { return ""; }
-  our %prayers;
-  return $prayers{$lang}->{'Gloria1'};
+  return prayer('Gloria1', $lang);
 }
 
 sub Gloria2 : ScriptFunc {    #*Invitatorium
   my $lang = shift;
   if ($dayname[0] =~ /(Quad[56])/i) { return ""; }
-  our %prayers;
-  if ($rule =~ /Requiem gloria/i) { return $prayers{$lang}->{Requiem}; }
-  return $prayers{$lang}->{'Gloria'};
+  if ($rule =~ /Requiem gloria/i) { return prayer('Requiem', $lang); }
+  return prayer('Gloria', $lang);
 }
 
 #*** Dominus_vobiscum
 #returns the text of the 'Domine exaudi' for non priests
 sub Dominus_vobiscum : ScriptFunc {
   my $lang = shift;
-  our %prayers;
-  my $text = $prayers{$lang}->{'Dominus'};
+  my $text = prayer('Dominus', $lang);
   my @text = split("\n", $text);
 
   if ($priest) {
@@ -391,12 +280,14 @@ sub Dominus_vobiscum2 : ScriptFunc {    #* officium defunctorum
 # adds Alleluia, alleluia for Pasc0
 sub Benedicamus_Domino : ScriptFunc {
   my $lang = shift;
-  our %prayers;
-  my $text = $prayers{$lang}->{'Benedicamus Domino'};
-  if (Septuagesima_vesp()) { $text = $prayers{$lang}->{'Benedicamus Domino1'}; }
-  if ($dayname[0] !~ /Pasc0/i || $hora !~ /(Laudes|Vespera)/i) { return $text; }
-  my @text = split("\n", $text);
-  return "$text[0] $prayers{$lang}->{'Alleluia Duplex'}\n$text[1] $prayers{$lang}->{'Alleluia Duplex'}\n";
+  my $text = prayer('Benedicamus Domino', $lang);
+
+  if (($dayname[0] =~ /Pasc0/i && $hora =~ /(Laudes|Vespera)/i)
+    || Septuagesima_vesp()) {
+    $text =~ s/\.\s*\n/". " . prayer('Alleluia Duplex', $lang) . "\n"/egr
+  } else {
+    $text
+  }
 }
 
 #*** antiphona_finalis
@@ -424,7 +315,6 @@ sub antiphona_finalis : ScriptFunc {
     $name = 'Postpentecost';
   }
   my $t = %{setupstring($lang, "Psalterium/Mariaant.txt")}{$name};
-  process_inline_alleluias(\$t) if $name eq 'Ant Finalis OP';
   $t = '#' . translate($name eq 'Ant Finalis OP' ? 'Antiphonae finalis' : 'Antiphona finalis BMV', $lang) . "\n$t";
   return ($t);
 }
@@ -437,7 +327,6 @@ sub antiphona_finalis : ScriptFunc {
 # returns the visible form
 sub psalm : ScriptFunc {
   my @a = @_;
-
   my ($num, $lang, $antline, $nogloria);
 
   if (@a < 4) {
@@ -582,7 +471,7 @@ sub psalm : ScriptFunc {
     $t .= "\n$lnum $line $rest";
   }
   $t .= "\n";
-  if ($version =~ /Monastic/ && $num == 129 && $hora eq 'Prima') { $t .= $prayers{$lang}->{Requiem}; }
+  if ($version =~ /Monastic/ && $num == 129 && $hora eq 'Prima') { $t .= prayer('Requiem', $lang); }
   elsif ($num != 210 && !$nogloria) { $t .= "\&Gloria\n"; }
   $t .= settone(0);
   return $t;
@@ -761,8 +650,7 @@ sub adjust_refs {
       || $name =~ /&Dominus_vobiscum2/i)
     )
   {
-    our %prayers;
-    my $text = $prayers{$lang}->{'Dominus'};
+    my $text = prayer('Dominus', $lang);
     my @text = split("\n", $text);
     return $text[4];
   }
@@ -778,7 +666,7 @@ sub setlink {
   my $name = shift;
   my $ind = shift;
   my $lang = shift;
-  my $disabled = ($name =~ $omit_regexp) ? 'DISABLED' : '';
+  my $disabled = ($name =~ omit_regexp()) ? 'DISABLED' : '';
   my $smallflag = ($name =~ /(ante|post)/i) ? 1 : 0;
 
   $name =~ s/\s*$//;
@@ -856,28 +744,6 @@ sub get_link_name {
     $name = '&Benedicamus Domino alleluja';
   }
   return $name;
-}
-
-#*** translate($name)
-# return the translated name (called only for column2 if necessary)
-sub translate {
-  my $name = shift;
-  my $lang = shift;
-  my $n = $name;
-  my $prefix = '';
-  if ($n =~ s/(\$|\&)//) { $prefix = $1; }
-  $n =~ s/^\n*//;
-  $n =~ s/\n*$//;
-  $n =~ s/\_/ /g;
-
-  if (!exists($translate{$lang}{$n})) {
-    $n = $name;
-  } else {
-    $n = $translate{$lang}{$n};
-    if ($name !~ /(omit|elmarad)/i) { $n = $prefix . $n; }
-    $n =~ s/\n*$//;
-  }
-  return "$n";
 }
 
 #*** ant_Benedictus($num, $lang)
@@ -959,7 +825,7 @@ sub canticum : ScriptFunc {
 
 sub Divinum_auxilium : ScriptFunc {
   my $lang = shift;
-  my @text = split(/\n/, $prayers{$lang}{"Divinum auxilium"});
+  my @text = split(/\n/, prayer("Divinum auxilium", $lang));
   $text[-2] = "V. $text[-2]";
   $text[-1] =~ s/.*\. // unless ($version =~ /Monastic/i); # contract resp. "Et cum fratribus… " to "Amen." for Roman
   $text[-1] = "R. $text[-1]";
@@ -968,7 +834,7 @@ sub Divinum_auxilium : ScriptFunc {
 
 sub Domine_labia : ScriptFunc {
   my $lang = shift;
-  my $text = $prayers{$lang}{"Domine labia"};
+  my $text = prayer("Domine labia", $lang);
   if ($version =~ /monastic/i) { # triple times with one cross sign
     $text .= "\n$text\n$text";
     $text =~ s/\+\+/$&++/;
@@ -1057,8 +923,7 @@ sub martyrologium : ScriptFunc {
       }
     }
   }
-  our %prayers;
-  $t .= $prayers{$lang}->{Conclmart};
+  $t .= prayer('Conclmart', $lang);
   return $t;
 }
 
@@ -1273,55 +1138,6 @@ sub columnsel {
   return ($lang =~ /^$lang1$/i) ? 1 : 0;
 }
 
-#*** ensure_single_alleluia($text, $lang)
-# Ensures that $text ends in a single 'alleluia' (or rather the
-# appropriate translation for $lang).
-sub ensure_single_alleluia(\$$) {
-  my ($text, $lang) = @_;
-  our %prayers;
-  my $alleluia = $prayers{$lang}->{'Alleluia Simplex'};
-  $alleluia =~ s/\s+$//;
-  my $alleluia_depunct = depunct($alleluia);
-
-  # Add a single 'alleluia', unless it's already there.
-  $$text =~ s/\W*?(\s*)$/$alleluia$1/ unless depunct($$text) =~ /$alleluia_depunct\s*$/i;
-}
-
-#*** ensure_resp_paschal($text, $lang)
-# Arranges that $text should end in a double 'alleluia' (or rather the
-# appropriate translation for $lang), and that the asterisk should be
-# placed correctly, if it appears that the response is not already in
-# the Paschal form.
-sub ensure_double_alleluia(\$$) {
-  my ($text, $lang) = @_;
-  our %prayers;
-  my $alleluia = $prayers{$lang}->{'Alleluia Duplex'};
-  $alleluia =~ s/\s+$//;
-  my $alleluia_depunct = depunct($alleluia);
-
-  unless (depunct($$text) =~ /$alleluia_depunct\s*$/i) {
-
-    # Add a double 'alleluia' and move the asterisk.
-    $$text =~ s/\s*\*\s*(.)/ \l\1/;
-    $$text =~ s/\W*?(\s*)$/, * $alleluia$1/;
-  }
-}
-
-#*** process_inline_alleluia($text)
-# Removes all alleluias after Septuagesima; removes bracketed alleluias
-# outside of Paschaltide; unbrackets bracketed alleluias in
-# Paschaltide.
-sub process_inline_alleluias(\$) {
-  my $text = shift;
-  our @dayname;
-
-  if ($dayname[0] !~ /Pasc/i) {
-    $$text =~ s/\(Allel[uú][ij]a.*?\)//isg;
-  } else {
-    $$text =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;
-  }
-  if ($dayname[0] =~ /Quad/i) { $$text =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig; }
-}
 
 #*** postprocess_ant($ant, $lang)
 # Performs necessary adjustments to an antiphon.
@@ -1331,8 +1147,7 @@ sub postprocess_ant(\$$) {
 
   # Don't do anything to null antiphons.
   return unless $$ant;
-  process_inline_alleluias($$ant);
-  ensure_single_alleluia($$ant, $lang) if alleluia_required($dayname[0], $votive);
+  ensure_single_alleluia($ant, $lang) if alleluia_required($dayname[0], $votive);
 }
 
 #*** postprocess_vr($vr, $lang)
@@ -1343,13 +1158,12 @@ sub postprocess_vr(\$$) {
 
   # Don't do anything to null v/r.
   return unless $$vr;
-  process_inline_alleluias($$vr);
 
   if (alleluia_required($dayname[0], $votive)) {
     my ($versicle, $response) = split(/(?=^\s*R\.)/m, $$vr);
-    ensure_single_alleluia($versicle, $lang);
-    ensure_single_alleluia($response, $lang);
-    $$vr = $versicle . $response;
+    ensure_single_alleluia(\$versicle, $lang);
+    ensure_single_alleluia(\$response, $lang);
+    $$vr = $versicle . "\n" . $response;
   }
 }
 
@@ -1367,15 +1181,14 @@ sub postprocess_short_resp(\@$) {
 
         # Short responsory proper.
         if ((/^V\./ .. /^R\./) && /^R\./) {
-          our %prayers;
-          $_ = 'R. ' . $prayers{$lang}->{'Alleluia Duplex'};
+          $_ = 'R. ' . prayer('Alleluia Duplex', $lang);
         } elsif (/^R\./) {
-          ensure_double_alleluia($_, $lang);
+          ensure_double_alleluia(\$_, $lang);
         }
       } elsif (/^[VR]\./) {
 
         # V/R following short responsory.
-        ensure_single_alleluia($_, $lang);
+        ensure_single_alleluia(\$_, $lang);
       }
     }
   }

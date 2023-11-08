@@ -8,7 +8,7 @@ use utf8;
 # use strict;
 use FindBin qw($Bin);
 use lib "$Bin/..";
-use horas::Scripting qw(dispatch_script_function parse_script_arguments);
+use DivinumOfficium::Scripting qw(dispatch_script_function parse_script_arguments);
 use DivinumOfficium::Date qw(getweek leapyear geteaster get_sday nextday day_of_week monthday);
 use DivinumOfficium::Directorium qw(get_kalendar get_transfer get_tempora transfered );
 
@@ -1814,17 +1814,6 @@ sub papal_antiphon_dum_esset($) {
 	}
 }
 
-#*** cache_prayers()
-#	Loads Prayers.txt for each language into global hash.
-sub cache_prayers() {
-	our %prayers;
-	our ($lang1, $lang2);
-	our $datafolder;
-	my $dir = our $missa ? 'Ordo' : 'Psalterium';
-	$prayers{$lang1} = setupstring($lang1, "$dir/Prayers.txt");
-	$prayers{$lang2} = setupstring($lang2, "$dir/Prayers.txt");
-}
-
 #*** sub expand($line, $lang, $antline)
 # for & references calls the sub
 # $ references are filled from Psalterium/Prayers file
@@ -1869,8 +1858,7 @@ sub expand {
 		if ($expand =~ /all/i) {
 			
 			#actual expansion for $ references
-			our %prayers;
-			return $prayers{$lang}->{$line};
+			return prayer($line, $lang);
 		} else {
 			return setlink($sigil . $line, 0, $lang);
 		}

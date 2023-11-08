@@ -11,7 +11,7 @@ use FindBin qw($Bin);
 use lib "$Bin/..";
 
 # Defines ScriptFunc and ScriptShortFunc attributes.
-use horas::Scripting;
+use DivinumOfficium::Scripting;
 my $a = 4;
 
 #*** makeferia()
@@ -63,7 +63,7 @@ sub psalmi_matutinum_monastic {
       if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
       if ($i == 0 || $i == 8) {
         if ($dayname[0] !~ /Nat[23]\d|Pasc0/) {
-          $p = Alleluia_ant($lang) . $p;
+          $p = alleluia_ant($lang) . $p;
         }
         else {
           $p = "$p[$i]$p";
@@ -336,8 +336,8 @@ sub brevis_monastic {
     my $name = getC10readingname();
     my @resp = split(/\n/, $c{'Responsory3'});
     if ($dayname[0] =~ /Pasc/i) {
-      ensure_single_alleluia($resp[1], $lang);
-      ensure_single_alleluia($resp[-1], $lang);
+      ensure_single_alleluia(\$resp[1], $lang);
+      ensure_single_alleluia(\$resp[-1], $lang);
     }
     $lectio = join("\n", $c{$name}, "\$Tu autem\n_", @resp);
     setbuild2("Mariae $name");

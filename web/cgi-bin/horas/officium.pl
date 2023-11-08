@@ -4,7 +4,7 @@ use utf8;
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office
-package horas;
+package main;
 
 #1;
 #use warnings;
@@ -26,6 +26,7 @@ use lib "$Bin/..";
 use DivinumOfficium::Main qw(liturgical_color);
 use DivinumOfficium::Date qw(prevnext);
 use DivinumOfficium::RunTimeOptions qw(check_version check_horas check_language);
+use DivinumOfficium::LanguageTextTools qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 
 $error = '';
 $debug = '';
@@ -202,6 +203,7 @@ if ($command =~ /setup(.*)/i) {
   $command = "change" . $command . strictparam('pcommand');
 } else {
   print headline($html_dayhead, substr($officium, 0, 1), $version, $version2);
+  load_languages_data($lang1, $lang2, $version, $missa);
   if ($command =~ /appendix/i) {
     require "$Bin/appendix.pl";
     appendix($command);
@@ -252,4 +254,5 @@ if ($command =~ /setup(.*)/i) {
   if ($building && $buildscript) { print buildscript($buildscript); }
 }
 
-print bodyend();
+print hiddenfields();
+htmlEnd();

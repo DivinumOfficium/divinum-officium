@@ -14,25 +14,21 @@ $a = 1;
 # resolves the references (formatting characters, prayers hash references and subs)
 #and prints the result
 sub ordo {
-  $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;
-
-  #???%translate = %{setupstring($tlang, "Ordo/Translate.txt")};
-  cache_prayers();
-  $savesolemn = $solemn;
+  my $savesolemn = $solemn;
   if ($winner =~ /Quad6-[456]/i) { $solemn = 1; }
   $column = 1;
   if ($Ck) { $version = $version1; precedence(); }
+  my (@script1, @script2);
   @script1 = getordinarium($lang1, $command);
   @script1 = specials(\@script1, $lang1);
-  $column = 2;
-  if ($Ck) { $version = $version2; precedence(); }
-  @script2 = getordinarium($lang2, $command);
-  @script2 = specials(\@script2, $lang2);
+  if (!$only) {
+    $column = 2;
+    if ($Ck) { $version = $version2; precedence(); }
+    @script2 = getordinarium($lang2, $command);
+    @script2 = specials(\@script2, $lang2);
+  }
   $solemn = $savesolemn;
-  table_start();
-  $ind1 = $ind2 = 0;
   $searchind = 0;
-  ante_post('Ante');
 
   if ($rule =~ /Full text/i) {
     @script1 = ();
@@ -42,71 +38,27 @@ sub ordo {
 
   if ($rule =~ /prelude/i) {
     my $str = $winner{Prelude};
-    $str = norubr1($str);
+    # $str = norubr1($str);
     unshift(@script1, split('_', $str), '');
-    $str = $winner2{Prelude};
-    $str = norubr1($str);
-    unshift(@script2, split('_', $str), '');
+    if (!$only) {
+      $str = $winner2{Prelude};
+      # $str = norubr1($str);
+      unshift(@script2, split('_', $str), '');
+    }
   }
 
   if ($rule =~ /Post Missam/i) {
     my $str = $winner{'Post Missam'};
-    $str = norubr1($str);
+    # $str = norubr1($str);
     push(@script1, split('_', $str));
-    $str = $winner2{'Post Missam'};
-    $str = norubr1($str);
-    push(@script2, split('_', $str));
-  }
-
-  while ($ind1 < @script1 || $ind2 < @script2) {
-    ($text1, $ind1) = getunit(\@script1, $ind1);
-    ($text2, $ind2) = getunit(\@script2, $ind2);
-    $column = 1;
-    if ($Ck) { $version = $version1; }
-    $text1 = resolve_refs($text1, $lang1);
-    $text1 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
-    if ($lang1 =~ /Latin/i) { $text1 = spell_var($text1); }
-    if ($text1 && $text1 !~ /^\s+$/) { setcell($text1, $lang1); }
-
     if (!$only) {
-      $column = 2;
-      if ($Ck) { $version = $version2; }
-      $text2 = resolve_refs($text2, $lang2);
-      $text2 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
-      if ($lang2 =~ /Latin/i) { $text2 = spell_var($text2); }
-      if ($text2 && $text2 !~ /^\s+$/) { setcell($text2, $lang2); }
+      $str = $winner2{'Post Missam'};
+      # $str = norubr1($str);
+      push(@script2, split('_', $str));
     }
   }
-  ante_post('Post');
-  table_end();
-  if ($column == 1) { $searchind++; }
-}
 
-#*** getunits(\@s, $ind)
-# break the array into units separated by double newlines
-# from $ind  to the returned new $ind
-sub getunit {
-
-  my $s = shift;
-  my @s = @$s;
-  my $ind = shift;
-  my $t = '';
-  my $plen = 1;
-
-  while ($ind < @s) {
-    my $line = chompd($s[$ind]);
-    $ind++;
-    if ($line && !($line =~ /^\s+$/)) { $t .= "$line\n"; next; }
-    if (!$t) { next; }
-    last;
-  }
-
-  if ($dayname[0] !~ /Pasc/i) {
-    $t =~ s/\(Alleluia.*?\)//ig;
-  } else {
-    $t =~ s/\((Alleluia.*?)\)/$1/ig;
-  }
-  return ($t, $ind);
+  print_content($lang1, \@script1, $lang2, \@script2, 1);
 }
 
 #*** resolve_refs($text_of_block, $lang)
@@ -165,9 +117,7 @@ sub resolve_refs {
       my $l = $2;
 
       if ($h =~ /(Benedictio|Absolutio)/) {
-        my $str = $1;
-        if ($lang !~ /Latin/i) { $str = $translate{$str}; }
-        $h =~ s/(Benedictio|Absolutio)/$str/;
+        $h =~ s/(Benedictio|Absolutio)/ translate($str, $lang) /e;
       }
       $line = setfont($redfont, $h) . $l;
     }
@@ -255,8 +205,7 @@ sub resolve_refs {
 # return the text Alleluia or Laus tibi
 sub Alleluia {
   my $lang = shift;
-  our %prayers;
-  my $text = $prayers{$lang}->{'Alleluia'};
+  my $text = prayer('Alleluia', $lang);
   my @text = split("\n", $text);
   $text = $text[0];
 
@@ -268,8 +217,7 @@ sub Alleluia {
 # adds Alleluia, alleluia for Pasc0
 sub Benedicamus_Domino {
   my $lang = shift;
-  our %prayers;
-  my $text = $prayers{$lang}->{'Benedicamus Domino'};
+  my $text = prayer('Benedicamus Domino', $lang);
   if ($dayname[0] !~ /Pasc0/i) { return $text; }
   my @text = split("\n", $text);
   return "$text[0]. Alleluia, alleluia\n$text[1]. Alleluia, alleluia\n";
@@ -285,23 +233,6 @@ sub depunct {
   $item =~ s/[úüûÚÜÛ]/u/g;
   $item =~ s/æ/ae/g;
   return $item;
-}
-
-#*** translate($name)
-# return the translated name (called only for column2 if necessary)
-sub translate {
-  my $name = shift;
-  my $n = $name;
-  my $prefix = '';
-  if ($n =~ s/(\$|\&)//) { $prefix = $1; }
-  $n =~ s/^\n*//;
-  $n =~ s/\n*$//;
-  $n =~ s/\_/ /g;
-  if (!exists($translate{$n})) { return $name; }
-  $n = $translate{$n};
-  if ($name !~ /(omit|elmarad)/i) { $n = $prefix . $n; }
-  $n =~ s/\n*$//;
-  return "$n";
 }
 
 #*** getordinarium($lang, $command)

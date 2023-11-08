@@ -70,6 +70,12 @@ $horasjs
 PrintTag
 }
 
+sub htmlEnd {
+  if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
+  if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
+  print "</FORM></BODY></HTML>";
+}
+
 #*** htmlInput()
 # generates html inputs as input, select, checkbox
 # parmode = Label | Entry~>'width' | Text~>'rows'x'columns' |
@@ -468,6 +474,9 @@ sub setcell {
   my $lang = shift;
   my $width = ($only) ? 100 : 50;
 
+  return unless ($text && $text !~ /^[_\s]+$/);
+  $text = resolve_refs($text, $lang);
+
   if (!$Ck) {
     if (columnsel($lang)) {
       $searchind++ if ($text !~ /{omittitur}/);
@@ -482,15 +491,23 @@ sub setcell {
       }
     }
     print "<TD VALIGN=TOP WIDTH=$width%" . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID=$hora$searchind") . ">";
-    topnext_cell($lang);
+    topnext_cell(\$text, $lang) unless $popup;
+  }
 
-    if ($text =~ /%(.*?)%/) {
+  process_inline_alleluias(\$text, $dayname[0] =~ /Pasc/) unless $missa; # missa use own solution
+                                                          # which should removed
+
+  suppress_alleluia(\$text) if ($dayname[0] =~ /Quad/i && ($missa || !Septuagesima_vesp()));
+
+  # $text =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
+  if ($lang =~ /Latin/i) { $text = spell_var($text); }
+
+  if ($text =~ /%(.*?)%/) {
     $text = activate_links(\$text, $lang);
-    }
   }
   $text =~ s/wait[0-9]+//ig;
   $text =~ s/\_/ /g;
-  $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
+  # $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
   $text =~ s/\{\:.*?\:\}//sg;
   $text =~ s/\`//g;
 
@@ -510,8 +527,8 @@ sub setcell {
 #prints T N for positioning
 sub topnext_cell {
   if ($officium =~ /Pofficium/i) { return; }
-  my $lang = shift;
-  my @a = split('<BR>', $text1);
+  my ($text, $lang) = @_;
+  my @a = split('<BR>', $$text);
   if (@a > 2 && $expand !~ /skeleton/i) { 
     my $str = "<DIV ALIGN=right><FONT SIZE=1 COLOR=green>";
     if (columnsel($lang)) {
@@ -714,4 +731,51 @@ sub html_dayhead {
 	}
 
   $output;
+}
+
+sub print_content {
+  my($lang1, $script1, $lang2, $script2, $antepost) = @_;
+  our $version, $version1, $version2, $only, $expandind, $column;
+  my($ind1, $ind2);
+
+  table_start();
+  ante_post('Ante') if $antepost;
+  while ($ind1 < @$script1 || $ind2 < @$script2) {
+    $expandind++;
+
+    $column = 1;
+    $version = $version1 if $Ck;
+    ($text, $ind1) = getunit($script1, $ind1);
+    setcell($text, $lang1);
+    if (!$only) {
+      $column = 2;
+      $version = $version2 if $Ck;
+      ($text, $ind2) = getunit($script2, $ind2);
+      setcell($text, $lang2);
+    } else {
+      $ind2 = $ind1;
+    }
+  }
+  ante_post('Post') if $antepost;
+  table_end();
+}
+
+#*** getunits(\@s, $ind)
+# break the array into units separated by double newlines
+# from $ind  to the returned new $ind
+sub getunit {
+  my $s = shift;
+  my @s = @$s;
+  my $ind = shift;
+  my $t = '';
+
+  while ($ind < @s) {
+    my $line = chompd($s[$ind]);
+    $ind++;
+    if ($line && !($line =~ /^\s+$/)) { $t .= "$line\n"; next; }
+    if (!$t) { next; }
+    last;
+  }
+
+  return ($t, $ind);
 }

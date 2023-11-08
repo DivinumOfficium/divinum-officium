@@ -120,11 +120,8 @@ PrintTag
 }
 
 #common end for programs
-sub bodyend { 
-  my $output = '';
-  if ($error) { $output .= par_c("<FONT COLOR=red>$error</FONT>"); }
-  if ($debug) { $output .= par_c("<FONT COLOR=blue>$debug</FONT>"); }
-  $output .= << "PrintTag";
+sub hiddenfields { 
+  my $output = << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
 <INPUT TYPE=HIDDEN NAME=popup VALUE="">
 <INPUT TYPE=HIDDEN NAME=popuplang VALUE="">

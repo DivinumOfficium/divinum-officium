@@ -9,7 +9,7 @@ use lib "$Bin/..";
 use DivinumOfficium::Directorium qw(get_stransfer hymnmerge hymnshift);
 
 # Defines ScriptFunc and ScriptShortFunc attributes.
-use horas::Scripting;
+use DivinumOfficium::Scripting;
 $a = 4;
 
 #*** invitatorium($lang)
@@ -49,7 +49,7 @@ sub invitatorium {
 	my $ant = chompd($invit[$i]);
 	my ($w, $c);
 	if ($version =~ /Monastic/i && $dayofweek && $winner =~ /Pasc/ && $winner !~ /Pasc[07]/ && $winner !~ /Pasc5-4/) {
-		$ant = $prayers{$lang}{"Alleluia Duplex"};
+		$ant = prayer("Alleluia Duplex", $lang);
 		$ant =~ s/(\S+), (\S+)\./$1, $2, * $1/;
 	} else {
 		#look for special from proprium the tempore or sancti
@@ -153,8 +153,6 @@ sub nocturn {
 
 	# versus cant be text or reference (number)
 	my (@vs) = ($select[-1] =~ /^\d+$/ ? (@{$psalmi}[$select[-2]], @{$psalmi}[$select[-1]]) : ($select[-2], $select[-1]));
-	process_inline_alleluias($vs[0]);
-	process_inline_alleluias($vs[1]);
 	push(@s, @vs, "\n");
 }
 
@@ -445,10 +443,9 @@ sub lectiones {
 	my $lang = shift;
 	my $evan_regexp = translate('Evangelist', $lang);
 	
-	# some vernaculars have no translated parts, so add English and Latin
-	# cannot use translate('Evangelist', 'English') as it is anavailable
-	$evan_regexp .= '|Matt|Marc|Luc|Joannes' if ($lang !~ /Latin/);
-	$evan_regexp .= '|Matt|Mark|Luke|John' if ($lang !~ /English/);
+	# some vernaculars have no translated parts, so add Latin and English
+	$evan_regexp .= '|Matt|Marc|Luc|Joannes';
+	$evan_regexp .= '|' . translate('Evangelist', 'English') if ($lang !~ /English/);
 	$evan_regexp = '!(?:' . $evan_regexp . ')\s+\d+';
 	$evan_regexp = qr/$evan_regexp/;
 	push(@s, "\n");
@@ -569,11 +566,13 @@ sub lectiones {
 
 sub matins_lectio_responsory_alleluia(\$$) {
 	my ($r, $lang) = @_;
+
+	$$r =~ s/\s*~\s*/ /gs;
 	
 	my @resp = split("\n", $$r);
-	ensure_single_alleluia($resp[1], $lang);
-	ensure_single_alleluia($resp[3], $lang);
-	ensure_single_alleluia($resp[-1], $lang);
+	ensure_single_alleluia(\$resp[1], $lang);
+	ensure_single_alleluia(\$resp[3], $lang);
+	ensure_single_alleluia(\$resp[-1], $lang);
 	$$r = join("\n", @resp);
 }
 #
@@ -975,8 +974,7 @@ sub lectio : ScriptFunc {
 	
 	#add Tu autem before responsory
 	if ($expand =~ /all/) {
-		our %prayers;
-		$tuautem = $prayers{$lang}->{'Tu autem'};
+		$tuautem = prayer('Tu autem', $lang);
 	} else {
 		$tuautem = '$Tu autem';
 	}
@@ -1034,10 +1032,9 @@ sub lectio : ScriptFunc {
 		$w .= "$_";
 	}
 
-	process_inline_alleluias($w);
-	
 	#handle parentheses in non Latin
 	if ($lang !~ /Latin/i) {
+		process_inline_alleluias(\$w, $dayname[0] =~ /Pasc/);
 		$w =~ s/\((.*?[.,\d].*?)\)/parenthesised_text($1)/eg;
 	}
 	$w = replaceNdot($w, $lang);
@@ -1253,10 +1250,10 @@ sub ant_matutinum_paschal {
 	if ($dayofweek || ($dayname[0] =~ /Pasc6/ && $version =~ /196/)) {
 		if (!$proper || $winner =~ /\/C10/) {
 			@psalmi = map { s/.*?(?=;;)//r } @psalmi;
-			$psalmi[0] = Alleluia_ant($lang) . $psalmi[0];
+			$psalmi[0] = alleluia_ant($lang) . $psalmi[0];
 			if ($dayofweek && $rule =~ /9 lectio/i && ($version !~ /196/ || $rank > 3) && $rank >= 2) { #3 nocturns
-				$psalmi[5] = Alleluia_ant($lang) . $psalmi[5];
-				$psalmi[10] = Alleluia_ant($lang) . $psalmi[10];
+				$psalmi[5] = alleluia_ant($lang) . $psalmi[5];
+				$psalmi[10] = alleluia_ant($lang) . $psalmi[10];
 			}
 		}	elsif ($winner !~ /tempora/i) { # each nocturn under single antiphonas apart Ascension
 			foreach my $i (0..3) {

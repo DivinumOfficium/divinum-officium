@@ -12,7 +12,7 @@ sub do_read($) {
 
   if (open(INP, '<:encoding(UTF-8)', $file)) {
     local $/; # Slurp
-    $_ = <INP>;
+    local($_) = <INP>;
     close INP;
     s/^\x{FEFF}//;
     split(/\r?\n/);
