@@ -33,7 +33,8 @@ use constant LEGACY_VERSION_NAMES => {
   'Tridentine 1570' => 'Tridentine - 1570',
   'Tridentine 1910' => 'Tridentine - 1888',
   'Rubrics 1960' => 'Rubrics 1960 - 1960',
-  'Newcalendar' => 'Rubrics 1960 - 2020 USA'};
+  'Reduced 1955' => 'Reduced - 1955',
+  '1960 Newcalendar' => 'Rubrics 1960 - 2020 USA'};
 
 # exported
 
