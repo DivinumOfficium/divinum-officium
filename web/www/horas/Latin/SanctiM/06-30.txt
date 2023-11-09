@@ -3,20 +3,10 @@
 [Ant Vespera]
 @Sancti/06-30::s/\./_/g s/_/.;;109/ s/_/.;;112/ s/_/.;;115/ s/_/.;;138/ s/_//
 
-[Capitulum Vespera]
-@Sancti/06-30
-_
-@Commune/C1:Responsory Sexta:1-6
-
 [MM Capitulum]
 @:Capitulum Sexta
 _
 @:Ant Matutinum:9-10
-
-[Capitulum Laudes]
-@Sancti/06-30
-_
-@Commune/C1:Responsory Tertia:1-6
 
 [Versum 3]
 @:Versum 1

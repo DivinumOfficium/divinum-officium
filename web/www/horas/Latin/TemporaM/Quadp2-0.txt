@@ -4,14 +4,10 @@
 12 lectiones
 Invit2
 
-[Capitulum Vespera]
-@Tempora/Quadp2-0
-_
+[Responsory Vespera]
 @Psalterium/Major Special:Day6M Vespera:3-8
 
-[Capitulum Laudes]
-@Tempora/Quadp2-0
-_
+[Responsory Laudes]
 @Psalterium/Major Special:Day0M Laudes:3-8
 
 [Responsory TertiaM]
@@ -23,9 +19,7 @@ _
 [Responsory NonaM]
 @Psalterium/Minor Special:Dominica Nona:s/.*_.//s
 
-[Capitulum Vespera 3]
-@Tempora/Quadp2-0:Capitulum Vespera
-_
+[Responsory Vespera 3]
 @Psalterium/Major Special:Day0M Vespera:3-8
 
 [Lectio1]

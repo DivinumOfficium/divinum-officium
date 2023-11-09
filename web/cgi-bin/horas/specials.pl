@@ -211,16 +211,16 @@ sub specials {
       my $name = minor_getname();
       $name .= 'M' if ($version =~ /monastic/i);
       $name = 'Completorium' if $hora eq 'Completorium';
-      my $capit = $capit{$name};
+      my $capit = $capit{$name} =~ s/\s*$//r;
       my $resp = '';
 
       if ($version !~ /^Monastic/ && ($resp = $capit{"Responsory $name"})) {
-        $capit =~ s/\s*$/ "\n_\n" . $resp /e;
+        $resp =~ s/\s*$//;
+        $capit =~ s/\s*$/\n_\n$resp/;
       }
-      my @capit = split("\n", $capit);
 
       if ($name eq "Completorium" && $version !~ /^Ordo Praedicatorum/) {
-        push(@capit, '_', split("\n", $capit{'Versum 4'}));
+        $capit .= "\n_\n$capit{'Versum 4'}";
       } else {
         $comment = ($name =~ /(Dominica|Feria)/i) ? 5 : 1;
         setbuild('Psalterium/Minor Special', $name, 'Capitulum ord');
@@ -228,13 +228,21 @@ sub specials {
         #look for special from prorium the tempore of sancti
         my ($w, $c) = getproprium("Capitulum $hora", $lang, $seasonalflag, 1);
 
-      if ($w !~ /\_\nR\.br/i) {
-        $name = "Responsory $hora";
-        $name .= 'M' if ($version =~ /monastic/i);
-        ($wr, $cr) = getproprium($name, $lang, $seasonalflag, 1);
-        $w =~ s/\s*$//;
-        if ($wr) { $w .= "\n_\n$wr"; }
+        if ($w && $w !~ /\_\nR\.br/i) {    # add responsory if missing
+          $name = "Responsory $hora";
+          $name .= 'M' if ($version =~ /monastic/i);
+          ($wr, $cr) = getproprium($name, $lang, $seasonalflag, 1);
+          $resp = $wr || $resp;
+          $w =~ s/\s*$/\n_\n$resp/;
+        }
+
+        if ($w) {
+          $capit = $w;
+          $comment = $c;
+        }
       }
+
+      my @capit = split("\n", $capit);
       postprocess_short_resp(@capit, $lang);
 
       if ($hora eq 'Completorium') {
@@ -269,13 +277,39 @@ sub specials {
         $capit = $capit{$name};
       }
 
-      if ($version =~ /monastic/i) {
+      if ($version =~ /^Monastic/i) {
         (@capit) = split(/\n/, $capit);
         postprocess_short_resp(@capit, $lang);
         $capit = join("\n", @capit);
       }
       setcomment($label, 'Source', $c, $lang);
       push(@s, $capit);
+    }
+
+    if ($version =~ /^Monastic/i && $item =~ /Responsor/i && $hora =~ /^(?:Laudes|Vespera)/i) {
+      my $key = "Responsory $hora";
+      $key .= '1' if $winner eq 'SanctiM/12-25.txt' && $day == 24;
+      my ($resp, $c);
+
+      if ($vespera == 3) {
+        ($resp, $c) = getproprium("$key $vespera", $lang, $seasonalflag, 1);
+      }
+
+      if (!$resp) {
+        ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1);
+      }
+
+      if (!$resp) {    # take defaults from Roman minor hours
+        $key =~ s/Vespera/Sexta/;
+        $key =~ s/Laudes/Tertia/;
+        ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1);
+      }
+
+      if ($resp =~ s/\n?_.*//sr) {
+        my @resp = split("\n", $resp);
+        postprocess_short_resp(@resp, $lang);
+        push(@s, '_', @resp);
+      }
     }
 
     if ($item =~ /Lectio brevis/i && $hora =~ /prima/i) {

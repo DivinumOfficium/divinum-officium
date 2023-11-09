@@ -8,11 +8,6 @@ Antiphonas horas
 [Ant Vespera]
 @Tempora/Pasc7-0::s/\n/;;109_/ s/\n/;;110_/ s/\n/;;111_/ s/\n/;;112_/ s/_/\n/g
 
-[Capitulum Vespera]
-@Tempora/Pasc7-0
-_
-@Tempora/Pasc7-0:Responsory Sexta:1-6
-
 [Ant Matutinum]
 @Tempora/Pasc7-0::1 s/47/1/
 ;;8
@@ -117,11 +112,6 @@ _
 
 [Ant Laudes]
 @Tempora/Pasc7-0:Ant Vespera:s/;;.*//
-
-[Capitulum Laudes]
-@Tempora/Pasc7-0
-_
-@Tempora/Pasc7-0:Responsory Tertia:1-6
 
 [Responsory TertiaM]
 @Tempora/Pasc7-0:Ant Matutinum:4-5
