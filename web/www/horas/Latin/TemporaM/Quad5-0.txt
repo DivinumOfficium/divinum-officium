@@ -3,10 +3,8 @@
 [Rule]
 12 lectiones
 
-[Capitulum Vespera]
-@Tempora/Quad5-0
-_
-@Psalterium/Major Special:Quad5M Vespera:3-7
+[Responsory Vespera]
+@Psalterium/Major Special:Quad5M Vespera:3-8
 
 [Lectio3]
 @Tempora/Quad5-0:Lectio3:s/-19/-16/ s/17 .*//s
@@ -75,13 +73,5 @@ Ego * glóriam meam non quæro: † est qui quærat, et júdicet.
 [Responsory12]
 @Tempora/Quad5-1:Responsory3
 
-[Capitulum Laudes]
-@Tempora/Quad5-0
-_
-@Psalterium/Major Special:Quad5M Laudes:3-7
-
-[Capitulum Vespera 3]
-@Tempora/Quad5-0:Capitulum Vespera
-_
-@Psalterium/Major Special:Quad5M Vespera:3-7
-
+[Responsory Laudes]
+@Psalterium/Major Special:Quad5M Laudes:3-8

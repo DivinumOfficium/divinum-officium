@@ -3,15 +3,11 @@
 [Rule]
 12 lectiones
 
-[Capitulum Vespera]
-@Tempora/Adv4-0
-_
-@Psalterium/Major Special:AdvM Vespera:s/.*_//s
+[Responsory Vespera]
+@Psalterium/Major Special:AdvM Vespera:3-8
 
-[Capitulum Laudes]
-@Tempora/Adv4-0
-_
-@Psalterium/Major Special:AdvM Laudes:s/.*_//s
+[Responsory Laudes]
+@Psalterium/Major Special:AdvM Laudes:3-8
 
 [Lectio1]
 @Tempora/Adv4-0:Lectio1:s/-7/-4/ s/5 .*//s
