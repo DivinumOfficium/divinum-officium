@@ -5,11 +5,6 @@
 Psalmi Dominica
 Doxology=Epi
 
-[Capitulum Vespera]
-@Sancti/01-06
-_
-@Sancti/01-06:Responsory Sexta:1-6
-
 [AntMatutinumM]
 Suscépimus, * Deus, misericórdiam tuam, † in médio templi tui.;;47
 Homo natus est * in ea, et ipse fundávit eam Altíssimus.;;86
@@ -110,18 +105,13 @@ R. Hic est dies præclárus in quo Salvátor mundi appáruit, † quem prophét�
 V. Dies sanctificátus illúxit nobis: † veníte gentes et adoráte Dóminum.
 R. Cujus stellam Magi vidéntes gavísi sunt, et múnera ei obtulérunt.
 
-[Capitulum Laudes]
-@Sancti/01-06
-_
-@Sancti/01-06:Responsory Tertia:1-6
-
-[Responsory Tertia]
+[Responsory TertiaM]
 @Sancti/01-06:Versum 1:s/\.$/, allelúja./gm
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Sancti/01-06:Responsory Tertia:8-9
 
-[Responsory Nona]
+[Responsory NonaM]
 @Sancti/01-06:Responsory Sexta:8-9
 
 [Capitulum Nona]

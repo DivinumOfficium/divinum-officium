@@ -153,17 +153,17 @@ _
 [Capitulum Tertia]
 @Sancti/05-03:Capitulum Vespera
 
-[Responsory Tertia]
+[Responsory TertiaM]
 @Sancti/05-03:Versum 1
 
 [Capitulum Sexta]
 @Sancti/05-03
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Sancti/05-03:Versum 2
 
 [Capitulum Nona]
 @Sancti/05-03
 
-[Responsory Nona]
+[Responsory NonaM]
 @Sancti/05-03:Responsory Sexta:s/.*_.//s s/, \w+\././sg

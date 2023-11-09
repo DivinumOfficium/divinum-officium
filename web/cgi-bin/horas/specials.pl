@@ -228,17 +228,12 @@ sub specials {
         #look for special from prorium the tempore of sancti
         my ($w, $c) = getproprium("Capitulum $hora", $lang, $seasonalflag, 1);
 
-        if ($w !~ /\_\nR\.br/i) {
-          ($wr, $cr) = getproprium("Responsory $hora", $lang, $seasonalflag, 1);
-          $w =~ s/\s*$//;
-          if ($wr) { $w .= "\n_\n$wr"; }
-        }
-
-        if ($w && $w !~ /\_\nR\.br/i && !($version =~ /monastic/i && $w =~ /\_\nV\. /)) {
-          $w =~ s/\s*//;
-          $w .= "\n_\n$resp";
-        }
-        if ($w) { @capit = split("\n", $w); $comment = $c; }
+      if ($w !~ /\_\nR\.br/i) {
+        $name = "Responsory $hora";
+        $name .= 'M' if ($version =~ /monastic/i);
+        ($wr, $cr) = getproprium($name, $lang, $seasonalflag, 1);
+        $w =~ s/\s*$//;
+        if ($wr) { $w .= "\n_\n$wr"; }
       }
       postprocess_short_resp(@capit, $lang);
 
