@@ -200,11 +200,11 @@ sub kalendar_entry {
   if (dirge($version, 'Laudes', $day, $month, $year)) { $c1 .= setfont($smallblack, ' dirge'); }
   if ($version !~ /1960/ && $initia) { $c1 .= setfont($smallfont, ' *I*'); }
 
-  if ($version !~ /1955|1960|Monastic/ && $winner{Rule} =~ /\;mtv/i) {
+  if ($version !~ /1955|196/ && $winner{Rule} =~ /\;mtv/i) {
     $c2 .= setfont($smallblack, ' m.t.v.');
   }
 
-  if ( $version !~ /1960|Monastic/
+  if ( $version !~ /196/
     && $winner =~ /Sancti/
     && exists($winner{Lectio1})
     && $winner{Lectio1} !~ /\@Commune/i

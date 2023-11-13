@@ -630,7 +630,7 @@ sub matins_lectio_responsory_alleluia(\$$) {
 #
 #*** getC10readingname
 sub getC10readingname {
-	return "Lectio M101" if ($version !~ /1960|Monastic/i && $month == 9 && $day > 8 && $day < 15);
+	return "Lectio M101" if ($version !~ /196/ && $month == 9 && $day > 8 && $day < 15);
 	my $satnum = floor(($day - 1) / 7 + 1);
 	$satnum = 4 if ($satnum == 5);
 	return sprintf("Lectio M%02i%s", $month, ($version =~ /Monastic/i) ? $satnum : '');
@@ -845,7 +845,7 @@ sub lectio : ScriptFunc {
 	
 	#look for commemoratio 9
 	#if ($rule =~ /9 lectio/i && $rank < 2) {$rule =~ s/9 lectio//i;}
-	if ( $version !~ /1960|Monastic/i
+	if ( $version !~ /196/
 		&& $commune !~ /C10/
 		&& $rule !~ /no93/i
 		&& $winner{Rank} !~ /Octav.*(Epi|Corp)/i
@@ -1225,7 +1225,7 @@ use constant {
 sub gettype1960 {
 	my $type = LT1960_DEFAULT;
 	
-	if ($version =~ /196/i && $votive !~ /(C9|Defunctorum)/i) {
+	if ($version =~ /196/ && $votive !~ /(C9|Defunctorum)/i) {
 		if ($dayname[1] =~ /post Nativitatem/i) {
 			$type = LT1960_OCTAVEII;
 		} elsif ($rank < 2 || $dayname[1] =~ /(feria|vigilia|die)/i) {
@@ -1588,7 +1588,7 @@ sub prevdayl1 {
 sub contract_scripture {
 	my $num = shift;
 	if ($num != 2 || $votive =~ /(C9|Defunctorum)/i) { return 0; }
-	if ($version !~ /1960|Monastic/i) { return 0; }
+	if ($version !~ /196/) { return 0; }
 	if ($commune =~ /C10/i) { return 1; }
 	
 	if ( ($ltype1960 == LT1960_SANCTORAL || $ltype1960 == LT1960_SUNDAY)

@@ -90,7 +90,7 @@ sub specials {
     {
       $skipflag = 1;
 
-      if ($item =~ /incipit/i && $version !~ /(1955|1960|Monastic)/) {
+      if ($item =~ /incipit/i && $version !~ /1955|196/) {
         $comment = 2;
         setbuild1($ite, 'limit');
       } else {
@@ -99,7 +99,7 @@ sub specials {
       }
       setcomment($label, 'Preces', $comment, $lang) if ($rule !~ /Omit.*? $ite[0] mute/i);
 
-      if ($item =~ /incipit/i && $version !~ /(1955|1960|Monastic)/) {
+      if ($item =~ /incipit/i && $version !~ /1955|196/) {
         my $p1 = translate_label('$Pater noster', $lang);
         my $p2 = translate_label('$Ave Maria', $lang);
         push(@s, (setfont($smallfont, 'secreto'), $p1, $p2));
@@ -161,8 +161,7 @@ sub specials {
       my %brevis = %{setupstring($lang, 'Psalterium/Prima Special.txt')};
 
       if ( $dayofweek > 0
-        && $version !~ /1960/
-        && $version !~ /monastic/i
+        && $version !~ /196/
         && $winner{Rank} =~ /Feria|Vigilia/i 
         && $winner{Rank} !~ /Vigilia Epi/i
         && $commune !~ /C10/
@@ -798,7 +797,7 @@ sub psalmi_minor {
   if ($ant) { $ant = "Ant. $ant"; }
   my @ant = split('\*', $ant);
   postprocess_ant($ant, $lang);
-  $ant1 = ($version !~ /1960|monastic/i) ? $ant[0] : $ant;    #difference between 1955 and 1960
+  $ant1 = ($version !~ /196/) ? $ant[0] : $ant;    #difference between 1955 and 1960
   setcomment($label, 'Source', $comment, $lang, $prefix);
   $psalms =~ s/\s//g;
   @psalm = split(',', $psalms);
@@ -832,7 +831,7 @@ sub psalmi_minor {
   }
 
   #quicumque
-  if ( ($version !~ /(1955|1960|Monastic)/i || $dayname[0] =~ /Pent01/i)
+  if ( ($version !~ /1955|196/ || $dayname[0] =~ /Pent01/i)
     && $hora =~ /prima/i
     && ($dayname[0] =~ /(Epi|Pent)/i || $version !~ /Divino/i)
     && $dayofweek == 0
@@ -1049,7 +1048,7 @@ sub antetpsalm {
   my @ant = split('\*', $line[0]);
   my $ant = $line[0];
   postprocess_ant($ant, $lang);
-  my $ant1 = ($duplex > 2 || $version =~ /1960|Monastic|Praedicatorum/i) ? $ant : $ant[0];    #difference between 1995, 1960
+  my $ant1 = ($duplex > 2 || $version =~ /196/) ? $ant : $ant[0];    #difference between 1995, 1960
 
   if ( $dayname[0] =~ /Pasc/i
     && (($hora =~ /vespera/i) 
@@ -1119,13 +1118,13 @@ sub oratio {
   # which case we have to override it.
   if ( $dayname[0] =~ /Epi1/i
     && $rule =~ /Infra octavam Epiphaniæ Domini/i
-    && $version =~ /(monastic|1955|1960)/i)
+    && $version =~ /1955|196/)
   {
     $rule .= "Oratio Dominica\n";
   }
 
   if ( ($rule =~ /Oratio Dominica/i && (!exists($w{Oratio}) || $hora =~ /Vespera/i))
-    || ($winner{Rank} =~ /Quattuor/i && $version !~ /1960|Monastic/i && $hora =~ /Vespera/i))
+    || ($winner{Rank} =~ /Quattuor/i && $version !~ /196/ && $hora =~ /Vespera/i))
   {
     my $name = "$dayname[0]-0";
     if ($name =~ /(Epi1|Nat)/i && $version !~ /monastic/i) { $name = 'Epi1-0a'; }
@@ -1227,7 +1226,7 @@ sub oratio {
   }
 
   if ($hora =~ /(Laudes|Vespera)/i && $winner{Rule} =~ /Sub unica conc/i) {
-    if ($version !~ /1960|Monastic/i) {
+    if ($version !~ /196/) {
       if ($w =~ /(.*?)(\n\$Per [^\n\r]*?\s*)$/s) { $addconclusio = $2; $w = $1; }
       if ($w =~ /(.*?)(\n\$Qui [^\n\r]*?\s*)$/s) { $addconclusio = $2; $w = $1; }
     } else {
@@ -1264,7 +1263,7 @@ sub oratio {
        $hora =~ /(laudes|vespera)/i
     && $commemoratio
     && ( $hora =~ /laudes/i
-      || $version !~ /1960|Monastic/i
+      || $version !~ /196/
       || $rank < 6
       || $commemoratio{Rank} =~ /(Dominica|;;6)/i
       || ($commemoratio =~ /Tempora/i && $commemoratio{Rank} =~ /;;[23]/))
@@ -1330,7 +1329,7 @@ sub oratio {
     if ($key >= 900) { push(@s, delconclusio($cc{$key})); }
   }
 
-  if ((!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i || $version =~ /(1955|1960|monastic)/i)
+  if ((!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i || $version =~ /1955|196/)
     && $addconclusio)
   {
     push(@s, $addconclusio);
@@ -1462,7 +1461,7 @@ sub commemoratio {
   my $code = 10;
 
   if ( $rank > 6.51
-    || ($version =~ /(1955|1960|Monastic)/i && $winner{Rank} =~ /Dominica/i)
+    || ($version =~ /1955|196/ && $winner{Rank} =~ /Dominica/i)
     || ($rank >= 6 && ($dayname[0] !~ /Pasc[07]/ || $dayofweek < 2) && $item !~ /winner/i))
   {
     return;
@@ -1501,12 +1500,12 @@ sub commemoratio {
     $w = getrefs($w{'Commemoratio Sabbat'}, $lang, 2, $w{Rule});
   }
 
-  if ($version =~ /1955|1960|Newcal|Monastic/i && $w =~ /!.*?(O[ckt]ta|Dominica)/i && nooctnat()) { return; }
-  if ($version =~ /(1955|1960|Newcal)/ && $hora =~ /Vespera/i && $rank >= 5 && nooctnat()) { return; }
+  if ($version =~ /1955|196/ && $w =~ /!.*?(O[ckt]ta|Dominica)/i && nooctnat()) { return; }
+  if ($version =~ /1955|196/ && $hora =~ /Vespera/i && $rank >= 5 && nooctnat()) { return; }
   if ($rank >= 5 && $w =~ /!.*?Octav/i && $winner =~ /Sancti/i && $hora =~ /Vespera/i && nooctnat()) { return; }
 
   if ( $w
-    && $version =~ /1955|1960|Newcal/
+    && $version =~ /1955|196/
     && $w =~ /!.*?Vigil/i
     && $ite =~ /Sancti/i
     && $ite !~ /(08\-14|06\-23|06\-28|08\-09)/)
@@ -1799,7 +1798,7 @@ sub checkmtv {
   my $version = shift;
   my $winner = shift;
   my %winner = %$winner;
-  ($version =~ /1955|1960|Monastic/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /C[45]/ ? '1' : '';
+  ($version =~ /1955|196/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /C[45]/ ? '1' : '';
 }
 
 sub hymnusmajor {

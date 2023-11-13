@@ -299,7 +299,7 @@ sub Alleluia_ant {
   my ($lang, $full, $ucase) = @_;
   my $s = translate('Alleluia', $lang);
   $s =~ s/\.$//;
-  if (($full || ($duplex >= 3) || ($version =~ /1960|Newcal|Monastic|Praedicatorum/i))) {
+  if (($full || ($duplex >= 3) || ($version =~ /196/))) {
     $s .= ", * $s, $s.";
     $s =~ s/ ./\L$&/g unless $ucase;
   }
@@ -890,7 +890,7 @@ sub ant_Benedictus : ScriptFunc {
     $ant = $specials{"Adv Ant $day" . "L"};
   }
   my @ant_parts = split('\*', $ant);
-  if ($num == 1 && $duplex < 3 && $version !~ /1960|Newcal|Praedicatorum/ && $version !~ /monastic/i) { return "Ant. $ant_parts[0]"; }
+  if ($num == 1 && $duplex < 3 && $version !~ /196/) { return "Ant. $ant_parts[0]"; }
 
   if ($num == 1) {
     return "Ant. $ant";
@@ -928,7 +928,7 @@ sub ant_Magnificat : ScriptFunc {
     $num = 2;
   }
   my @ant_parts = split('\*', $ant);
-  if ($num == 1 && $duplex < 3 && $version !~ /1960/ && $version !~ /monastic/i) { return "Ant. $ant_parts[0]"; }
+  if ($num == 1 && $duplex < 3 && $version !~ /196/) { return "Ant. $ant_parts[0]"; }
 
   if ($num == 1) {
     return "Ant. $ant";
