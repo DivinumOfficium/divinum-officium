@@ -7,6 +7,11 @@ Dominica I post Epiphaniam;;Semiduplex;;5;;vide SanctiM/01-06
 12 lectiones
 Doxology=Epi
 
+[Capitulum Vespera]
+@Tempora/Epi1-0a
+_
+@Sancti/01-06:Responsory Sexta:s/._.*//s
+
 [Lectio1]
 @Tempora/Epi1-0a:Lectio1:
 @Tempora/Epi1-0a:Lectio2:s/!.*// s/4 .*//s
@@ -60,3 +65,7 @@ Allelúja, * allelúja, allelúja.;;263;264;265
 [Responsory12]
 @SanctiM/01-06
 
+[Capitulum Laudes]
+@Tempora/Epi1-0a:Capitulum Vespera
+_
+@Sancti/01-06:Responsory Tertia:s/._.*//s

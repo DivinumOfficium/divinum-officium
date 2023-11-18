@@ -29,11 +29,12 @@ _
 @Psalterium/Major Special:Day0M Vespera:3-8
 
 [Lectio1]
-@Tempora/Quadp2-0:Lectio1:s/-4/-3/ s/4 .*//s 
+@Tempora/Quadp2-0:Lectio1:1-6 s/-4/-3/
 
 [Lectio2]
-@Tempora/Quadp2-0:Lectio1:s/5:31; // s/1-4/4-6/ s/31 .*4 /4 /s 
-@Tempora/Quadp2-0:Lectio2:s/!.*// s/ Et tactus.*//s
+@Tempora/Quadp2-0:Lectio1:2:s/5:31; 6:1-4/6:4-6/
+@Tempora/Quadp2-0:Lectio1:7
+@Tempora/Quadp2-0:Lectio2:2-3 s/ Et tactus.*//s
 
 [Lectio3]
 @Tempora/Quadp2-0:Lectio2:s/5-8/6-10/ s/5.*(Et tactus)/6 $1/s
