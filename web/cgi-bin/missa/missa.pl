@@ -166,11 +166,11 @@ PrintTag
 }
 
 # translate from new breviary version names
+$version =~ s/ - 196.$//;
 $version =~ s/ -//;
 $version =~ s/1888/1910/;
 $version =~ s/ 1954//;
-$version =~ s/ 196.$//;
-$version =~ s/Rubrics 1960 - 2020 USA/1960 Newcalendar/;
+$version =~ s/Rubrics 1960 2020 USA/1960 Newcalendar/;
 $version =~ s/Ordo Praedicatorum/Dominican/;
 
 if ($pmode =~ /(main|missa)/i) {
