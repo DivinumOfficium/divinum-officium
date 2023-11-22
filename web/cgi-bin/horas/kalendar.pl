@@ -321,8 +321,11 @@ PrintTag
     print '<P ALIGN=CENTER><A HREF="#" onclick="callkalendar(0)">Single Calendar</A>';
   } else {
     print '<P ALIGN=CENTER><A HREF="#" onclick="callkalendar(1)">Compare Calendars</A>';
+    my $tyear;
+    ($tyear = gettoday()) =~ s/.*-//;
+    my $iyear =  $tyear != $kyear ? "&kyear=$kyear" : '';
+    print "&nbsp;&nbsp;&nbsp;<A HREF='$ENV{PATH_INFO}?format=ical&version=$ver[0]$iyear'>iCal</A>";
   }
-  print "&nbsp;&nbsp;&nbsp;<A HREF='$ENV{PATH_INFO}?format=ical&version=$ver[0]'>iCal</A>" unless $compare;
 
   my $date1 = strictparam('date1');
   my $browsertime = strictparam('browsertime');
