@@ -1,110 +1,65 @@
+@Commune/C7
+
 [Name]
 Commune non Virginum non Martyrum
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
-[Ant Vespera]
-@Commune/C7
 
 [Capitulum Vespera]
 !Prov. 31:10-11
 v. Mulíerem fortem quis invéniet? Procul et de últimis fínibus prétium ejus. Confídit in ea cor viri sui, et spóliis non indigébit.
 $Deo gratias
 
-[Hymnus Vespera]
-@Commune/C7:Hymnus Vespera
-
-[Versum 1]
-@Commune/C6
-
-[Ant 1]
-@Commune/C6:Ant 2
-
-[Invit]
-@Commune/C7
-
-[Hymnus Matutinum]
-@Commune/C7:Hymnus Matutinum
-
-[Ant Matutinum]
-@Commune/C7
-
 [Lectio1]
-@Commune/C7:Lectio1
+De Parábolis Salomónis
+!Prov 31:10-17
+10 Mulíerem fortem quis invéniet? procul et de últimis fínibus prétium ejus.
+11 Confídit in ea cor viri sui, et spóliis non indigébit.
+12 Reddet ei bonum, et non malum, ómnibus diébus vitæ suæ.
+13 Quæsívit lanam et linum, et operáta est consília mánuum suárum.
+14 Facta est quasi navis institóris, de longe portans panem suum.
+15 Et de nocte surréxit, dedítque prædam domésticis suis, et cibária ancíllis suis.
+16 Considerávit agrum, et emit eum; de fructu mánuum suárum plantávit víneam.
+17 Accínxit fortitúdine lumbos suos, et roborávit bráchium suum.
 
 [Responsory1]
 @Commune/C6
 
 [Lectio2]
-@Commune/C7
+!Prov 31:18-24
+18 Gustávit, et vidit quia bona est negotiátio ejus; non extinguétur in nocte lucérna ejus.
+19 Manum suam misit ad fórtia, et dígiti ejus apprehendérunt fusum.
+20 Manum suam apéruit ínopi, et palmas suas exténdit ad páuperem.
+21 Non timébit dómui suæ a frigóribus nivis; omnes enim doméstici ejus vestíti sunt duplícibus.
+22 Stragulátam vestem fecit sibi; byssus et púrpura induméntum ejus.
+23 Nóbilis in portis vir ejus, quando séderit cum senatóribus terræ.
+24 Síndonem fecit, et véndidit, et cíngulum trádidit Chananǽo.
 
 [Responsory2]
 @Commune/C6
 
 [Lectio3]
-@Commune/C7
+!Prov 31:25-31
+25 Fortitúdo et decor induméntum ejus, et ridébit in die novíssimo.
+26 Os suum apéruit sapiéntiæ, et lex cleméntiæ in lingua ejus.
+27 Considerávit sémitas domus suæ, et panem otiósa non comédit.
+28 Surrexérunt fílii ejus, et beatíssimam prædicavérunt; vir ejus, et laudávit eam.
+29 Multæ fíliæ congregavérunt divítias; tu supergréssa es univérsas.
+30 Fallax grátia, et vana est pulchritúdo: múlier timens Dóminum, ipsa laudábitur.
+31 Date ei de fructu mánuum suárum, et laudent eam in portis ópera ejus.
 
 [Responsory3]
 @Commune/C6
 
-[Lectio4]
-@Commune/C7:Lectio4
-
 [Responsory4]
 @Commune/C6
-
-[Lectio5]
-@Commune/C7
 
 [Responsory5]
 @Commune/C6
 
-[Lectio6]
-@Commune/C7
-
-[Responsory6]
-@Commune/C7
-
-[Lectio7]
-@Commune/C7
-
-[Responsory7]
-@Commune/C7
-
-[Lectio8]
-@Commune/C7
-
-[Responsory8]
-@Commune/C7
-
-[Lectio9]
-@Commune/C7
-
-[Ant Laudes]
-@Commune/C7
-
 [Capitulum Laudes]
 @:Capitulum Vespera
 
-[Hymnus Laudes]
-@Commune/C7:Hymnus Vespera
-
 [Versum 2]
 @Commune/C6
-
-[Ant 2]
-@Commune/C7
-
-[Oratio]
-@Commune/C7:Oratio
-
-[Oratio1]
-@Commune/C7:Oratio1
-
-[Oratio2]
-@Commune/C7
 
 [Lectio Prima]
 !Prov 31:29-30
@@ -113,27 +68,15 @@ v. Multæ fíliæ congregavérunt divítias: tu supergréssa es univérsas. Fall
 [Capitulum Tertia]
 @:Capitulum Vespera
 
-[Responsory Tertia]
-@Commune/C6
-
 [Capitulum Sexta]
 !Prov 31:20-21
 v. Manum suam apéruit ínopi, et palmas suas exténdit ad páuperem. Non timébit dómui suæ a frigóribus nivis.
-$Deo gratias.
-
-[Responsory Sexta]
-@Commune/C6
-
-[Capitulum Nona]
-@:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
-@Commune/C6
+[Capitulum Nona]
+!Prov 31:29-30
+v. Multæ fíliæ congregavérunt divítias: tu supergréssa es univérsas. Fallax grátia, et vana est pulchritúdo: múlier timens Dóminum, ipsa laudábitur.
+$Deo gratias
 
 [Versum 3]
 @:Versum 2
-
-[Ant 3]
-@Commune/C7
-

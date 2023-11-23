@@ -18,30 +18,30 @@ v. Hermanos: El que se gloría, que se gloríe en el Señor. Porque no está acr
 $Deo gratias
 
 [Hymnus Vespera]
-{:H-Jesucoronavirginum:}v. ¡Oh Jesús, corona de las vírgenes, 
-a quien concibió aquella Madre, la única 
-que da a luz permaneciendo virgen!; 
-acoge clemente estas plegarias.
+{:H-Jesucoronavirginum:}v. Jesús, corona de vírgenes,
+engendrado en aquel seno
+que solo concibe intacto,
+oye benigno estos ruegos.
 _
-Tú, que caminas entre lirios, 
-rodeado de los coros de las vírgenes, 
-y, como esposo resplandeciente de gloria, 
-otorgas premios a tus esposas.
+Entre azucenas caminas,
+y virginales conciertos:
+Esposo lleno de gracia,
+de castas esposas premio.
 _
-Adonde Tú vas, las vírgenes te siguen, 
-y corren tras de ti, 
-cantándote alabanzas, 
-y te entonan himnos armoniosos.
+Doquiera guías tus pasos,
+vírgenes forman tu séquito;
+tus alabanzas entonan,
+cantos de dulzura llenos.
 _
-Nosotros te rogamos, suplicantes, 
-que hagas que nuestros sentidos 
-no conozcan jamás 
-las heridas del pecado.
+Concédenos, te pedimos,
+que no se infiltre el veneno
+del error en nuestras almas,
+de impureza en nuestros cuerpos.
 _
-* Poder, honor, alabanza y gloria 
-sean dados a Dios Padre, 
-con el Hijo, y con el Paráclito santo, 
-por los siglos de los siglos. 
+* Honor, alabanza y gloria
+a Dios Padre y su Unigénito,
+y juntamente al Paráclito,
+por los siglos sempiternos.
 Amén.
 
 [Versum 1]
@@ -55,33 +55,33 @@ Ven Esposa de Cristo, * recibe la corona que el Señor te ha preparado desde la 
 Al Señor, Rey de las vírgenes, * Venid, adorémosle.
 
 [Hymnus Matutinum]
-{:H-Virginisproles:}v.	Oh Hijo de la Virgen y Creador de tu Madre! 
-A ti, a quien ella concibió y dio a luz permaneciendo virgen: 
-cantamos los triunfos que una Virgen reportó 
-con su gloriosa muerte.
+{:H-Virginisproles:}v. Hijo de Vírgen, creador del seno
+Que te concibe sin tener quebranto:
+Hoy nuestro canto de una Virgen mártir
+Triunfos celebra.
 _
-Esta Bienaventurada obtuvo una doble palma: 
-esforzose en domar en su cuerpo 
-la fragilidad de su sexo y venció con su muerte 
-al tirano sanguinario. 
+Doble consigue inmarcesible palma;
+De frágil carne estímulos venciendo,
+Luego muriendo con valor heroico
+Vence al tirano.
 _
-No la amedrentó la muerte 
-ni los tormentos que la acompañan; 
-derramando su sangre, 
-mereció subir al cielo.
+Penas, castigos, bárbaros tormentos,
+Con pecho arrostra varonil y fuerte:
+Plácida muerte de la gloria eterna
+La abre el camino.
 _
-Dígnate, oh Dios de bondad, perdonarnos, 
-por los méritos de esta Santa, las penas 
-merecidas por nuestros pecados, para que te cantemos 
-santos himnos con corazón puro.
+Por sus plegarias, dígnate, Dios sumo,
+Nuestras ofensas perdonar propicio;
+Libres de vicio para que a Ti alcemos
+Puras las voces.
 _
-Alabanza sea dada a ti, oh Padre, 
-y a tu Hijo Unigénito 
-juntamente con el Espíritu Consolador, 
-por los siglos de los siglos. 
+Honra perpetua al Padre y Unigénito,
+Y al procedente Espíritu divino;
+Dios uno y trino: honor, imperio y gloria,
+Siglos eternos.
 Amén.
 
-[Hymnus Matutinum 1]
+[Hymnus Matutinum pro Virgo tantum et non Martyr]
 {:H-Virginisproles:}v. Oh Hijo de la Virgen y Creador de tu Madre. 
 Tú a quien Élla concibió y dio a luz permaneciendo virgen; 
 nosotros celebramos la fiesta de una Virgen bienaventurada; 
@@ -126,7 +126,7 @@ De la primera Epístola del Apóstol S. Pablo a los Corintios
 30 Y los que lloran, como si no llorasen, y los que se huelgan, como si no se holgasen, y los que hacen compras, como si nada poseyesen. 
 31 Y los que se gozan del mundo, como si no gozasen de él, porque la escena o apariencia de este mundo pasa en un momento.
 
-[Responsory10]
+[Responsory1 pro Martyre]
 R. Ven, Esposa de Cristo, recibe la corona que el Señor te ha preparado para siempre; ya que por su amor derramaste la sangre, 
 * Y con los Ángeles entraste en el paraíso, 
 V. Ven, escogida mía, y pondré en ti mi trono; porque el Rey ha anhelado tu hermosura. 
@@ -235,12 +235,6 @@ Esta es una virgen sabia, * a quien el Señor encontró vigilante.;;
 Ven, elegida mía, * y pondré mi trono en tu corazón.;;
 Ésta es la más hermosa * de las hijas de Jerusalén.;;
 
-[Capitulum Laudes]
-@:Capitulum Vespera
-
-[Hymnus Laudes]
-@Commune/C6:Hymnus Vespera
-
 [Versum 2]
 V. En tus labios se derrama la gracia.
 R. El Señor te bendice eternamente. 
@@ -259,6 +253,10 @@ $Per Dominum
 [Lectio Prima]
 !Sab 4:1
 v. Mejor es la esterilidad con virtud, pues su memoria es inmortal, porque es conocida de Dios y de los hombres.
+
+[Lectio Prima pro Martyre]
+!Sir 51:13-14
+v. Señor Dios mío: Desde la tierra levanté mi voz, desde el umbral de la muerte te invoqué; supliqué: «Señor, Tú eres mi padre, Tú eres mi fuerte salvador; no me abandones el día del peligro, el día de la desgracia y la calamidad».	
 
 [Capitulum Tertia]
 @:Capitulum Vespera
@@ -290,10 +288,6 @@ _
 V. Dios la eligió y la predestinó.	
 R. La hizo morar en su templo santo.	
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
 [Responsory Nona]
 R.br. Dios la eligió * y la predestinó. 
 R. Dios la eligió * y la predestinó. 
@@ -304,12 +298,6 @@ R. Dios la eligió * y la predestinó.
 _
 V. En tus labios se derrama la gracia. 
 R. El Señor te bendice eternamente.	
-
-[Versum 3]
-@:Versum 2
-
-[Ant 3]
-@:Ant 1
 
 [Lectio1 in 2 loco]
 Del Libro del Eclesiástico
@@ -337,3 +325,19 @@ Del Libro del Eclesiástico
 15 Alabaré continuamente tu nombre y en mi acción de gracias te cantaré. 
 16 Escuchó el Señor mi oración, me salvó de la ruina y me sacó de todo mal. 
 17 Por esto te daré gracias y te alabaré, y bendeciré el nombre del Señor: 
+
+[Lectio7 in 2 loco]
+Lectura del santo Evangelio según San Mateo
+!Mt 19:3-12
+En aquel tiempo: Se llegaron a Jesús los fariseos para tentarle diciendo: ¿Es lícito al hombre repudiar a su mujer por cualquier motivo? Y lo que sigue.
+_
+Homilía de San Juan Crisóstomo.
+!Homilía 63 sobre San Mateo, después del medio.
+No siendo oportuno tratar directamente este tema, nuestro divino Maestro procura atraer a sus discípulos al amor de la virginidad, hablándoles de la indisolubilidad del matrimonio impuesta por la ley. Después, para mostrar que era posible, se expresa de esta suerte: “Hay eunucos que nacieron tales del seno de su madre, los hay que fueron hechos tales por mano de los hombres, y hay otros que se consagraron ellos mismos a la castidad por amor al reino de los cielos”. Con estas palabras, veladamente les induce a elegir la virginidad, demostrándoles que era posible.
+
+[Lectio8 in 2 loco]
+Pensad, parece decirles, en lo que haríais si hubieseis venido al mundo en condiciones que os hicieran incapaces para el matrimonio, o si, víctima de una injusta violencia, llegaseis al mismo resultado. ¿Qué haríais al veros privados de los placeres de las nupcias sin obtener recompensa alguna por esta privación involuntaria?  Por consiguiente da gracias a Dios, ahora, ya que tu sacrificio obtendrá su recompensa y corona, mientras que los que se encuentran en aquel estado sufren sin recompensa ni corona alguna. Además, tu carga es mucho menor, tanto porque con la esperanza y la conciencia de la buena obra te elevas, porque no eres atormentado con las ingentes olas de la concupiscencia.
+
+[Lectio9 in 2 loco]
+Después de haber hablado Jesús de las primeras categorías de personas castas, cuya continencia corporal sería vana e inútil si no la acompañase la castidad espiritual, y de las que guardan continencia para ganar el reino de los cielos, añade: Quien es ca paz de comprenderlo, que lo comprenda. Dice esto para estimular aún más a los hombres a la conquista de esta virtud mostrándole cuán elevada sea. En su inefable bondad no quiere hacer de la virginidad una ley; mas al hablarnos en esta forma nos demuestra aún su posibilidad, para aumentar el ardor de nuestros deseos.
+&teDeum

@@ -3,6 +3,16 @@ Oto * obłok jasny okrył je, głos ojca słyszany jest: Ten jest Syn mój.;;45
 Piotr * i Ci co z nim byli, uradowali się widząc chwałę Boga.;;46
 A odpowiadając Piotr, * rzekł do Jezusa: Panie, jeźli chcesz, uczyńmy tu trzy przybytki.;;47
 
+[Lectio5]
+@Sancti/08-06:Lectio4:s/Lecz .*//;
+
+[Lectio6]
+@Sancti/08-06:Lectio4:s/.*Lecz /Lecz /s s/$/~/
+@Sancti/08-06:Lectio5:s/Cóż .*//s
+
+[Lectio7]
+@Sancti/08-06:Lectio5:s/.*Cóż /Cóż /s
+
 [Lectio10]
 @Sancti/08-06:Lectio8:s/Powiedziawszy .*//s
 

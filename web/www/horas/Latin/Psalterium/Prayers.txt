@@ -43,7 +43,7 @@ v. Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaél
 @:Confiteor:s/Paulo/Paulo, beáto Patri nostro Benedícto/ s/Paulum/Paulum, beátum Patrem nostrum Benedíctum/
 
 [ConfiteorOP]
-v. Confiteor Deo omnipotenti, et beáte Maríae semper Vírgini, et beáto Domíníco Patri nostro, et omnibus Sanctis: quia peccavi nimis cogitatione, locutione, opere et omissione, me cupla: precor orare pro me.
+v. Confiteor Deo omnipotenti, et beáte Maríae semper Vírgini, et beáto Domíníco Patri nostro, et omnibus Sanctis: quia peccavi nimis cogitatione, locutione, opere et omissione, me cupla: precor beátam Maríam semper Vírginem, et beátum Domínicum Patrem nostrum, et omnes Sanctos oráre pro me.
 
 [Misereatur]
 v. Misereátur nostri omnípotens Deus, et dimíssis peccátis nostris, perdúcat nos ad vitam ætérnam. Amen.
@@ -66,6 +66,10 @@ Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen.
 
 [Tu autem]
 V. Tu autem, Dómine, miserére nobis.
+R. Deo grátias.
+
+[Tu autemOP]
+V. Tu autem, Dómine, miserére nostri.
 R. Deo grátias.
 
 [Benedicamus Domino]
@@ -191,17 +195,104 @@ v. Orémus.
 [Te decet]
 v. Te decet laus, + te decet hymnus: tibi glória Deo Patri, et Fílio, cum Spíritu Sancto in sǽcula sæculórum. Amen.
 
-[MLitany]
+[Kyrie]
 v. Kýrie, eléison. Christe, eléison. Kýrie, eléison.
+
+[MLitany]
+$Kyrie
 &pater_noster
 
 [MLitany2]
-v. Kýrie, eléison. Christe, eléison. Kýrie, eléison.
-!« Pater Noster » dicitur secreto usque ad « Et ne nos indúcas in tentatiónem: »
+$Kyrie
+/: « Pater Noster » dicitur secreto usque ad « Et ne nos indúcas in tentatiónem: » :/
 &pater_noster
+
+[Divinum auxilium]
+(rubrica Monastica)
+/:Si descendendum sit a choro, concluditur dicendo.:/
+Divínum auxílium + máneat semper nobíscum.
+Et cum frátribus nostris abséntibus. Amen.
 
 [Alleluia Simplex]
 , allelúja.
 
 [Alleluia Duplex]
 Allelúja, allelúja.
+
+[Preces feriales Laudes]
+v. Kýrie, eléison. Christe, eléison. Kýrie, eléison.
+!« Pater Noster » dicitur secreto usque ad « Et ne nos indúcas in tentatiónem: »
+&pater_noster
+V. Ego dixi: Dómine, miserére mei.
+R. Sana ánimam meam quia peccávi tibi.
+V. Convértere, Dómine, úsquequo? 
+R. Et deprecábilis esto super servos tuos.
+V. Fiat misericórdia tua, Dómine, super nos.
+R. Quemádmodum sperávimus in te.
+V. Sacerdótes tui induántur justítiam.
+R. Et sancti tui exsúltent.
+
+V. Orémus pro beatíssimo Papa nostro~
+r. N.
+R. Dóminus consérvet eum, et vivíficet eum, et beátum fáciat eum in terra, et non tradat eum in ánimam inimicórum ejus.
+V. Orémus et pro Antístite nostro ~
+r. N.
+R. Stet et pascat in fortitúdine tua, Dómine, in sublimitáte nóminis tui.
+/:Romæ præcedens Versus cum suo Responsorio omittitur; alibi vero ad litteram N. ab omnibus nomen diœcesani Episcopi exprimatur, Vacante Apostolica vel Episcopali Sede, alteruter vel uterque respectivus Versus cum suo Responsorio præteritur.:/
+(sed rubrica tridentina omittitur)
+
+V. Dómine, salvum fac regem.
+R. Et exáudi nos in die, qua invocavérimus te.
+V. Salvum fac pópulum tuum, Dómine, et bénedic hereditáti tuæ.
+R. Et rege eos, et extólle illos usque in ætérnum.
+V. Meménto Congregatiónis tuæ.
+R. Quam possedísti ab inítio.
+V. Fiat pax in virtúte tua.
+R. Et abundántia in túrribus tuis.
+
+V. Orémus pro benefactóribus nostris.
+R. Retribúere dignáre, Dómine, ómnibus, nobis bona faciéntibus propter nomen tuum, vitam ætérnam.  Amen.
+(sed rubrica tridentina omittitur)
+
+V. Orémus pro fidélibus defúnctis.
+R. Réquiem ætérnam dona eis, Dómine, et lux perpétua lúceat eis.
+V. Requiéscant in pace.
+R. Amen.
+V. Pro frátribus nostris abséntibus.
+R. Salvos fac servos tuos, Deus meus, sperántes in te.
+V. Pro afflíctis et captívis.
+R. Líbera eos, Deus Israël, ex ómnibus tribulatiónibus suis.
+V. Mitte eis, Dómine, auxílium de sancto.
+R. Et de Sion tuére eos.
+
+(sed rubrica tridentina dicuntur)
+@:Dominus:3-4
+&psalm(129) 
+
+(deinde dicuntur)
+V. Dómine, Deus virtútum, convérte nos.
+R. Et osténde fáciem tuam, et salvi érimus.
+V. Exsúrge, Christe, ádjuva nos.
+R. Et líbera nos propter nomen tuum.
+V. Dómine, exáudi oratiónem meam.
+R. Et clamor meus ad te véniat.
+
+[Preces feriales Vespera]
+@:Preces feriales Laudes:s/129/50/
+
+[Preces feriales Tertia]
+v. Kýrie, eléison. Christe, eléison. Kýrie, eléison.
+!« Pater Noster » dicitur secreto usque ad « Et ne nos indúcas in tentatiónem: »
+&pater_noster
+V. Dómine, Deus virtútum, convérte nos.
+R. Et osténde fáciem tuam, et salvi érimus.
+V. Exsúrge, Christe, ádjuva nos.
+R. Et líbera nos propter nomen tuum.
+V. Dómine, exáudi oratiónem meam.
+R. Et clamor meus ad te véniat.
+
+[Preces feriales Sexta]
+@:Preces feriales Tertia
+
+[Preces feriales Nona]
+@:Preces feriales Tertia

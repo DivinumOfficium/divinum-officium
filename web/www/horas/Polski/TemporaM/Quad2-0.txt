@@ -1,10 +1,28 @@
+[Responsory4]
+R. Wstań, ojcze, a jedz z łowu syna twego. † Jakóżeś tak rychło naleść mógł, synu mój?
+* Wola Boża była, ojcze, że mi się prędko nagodziło, czegom chciał.
+V. Jam jest pierworodny twój Ezaw: † uczyniłem, jakoś mi rozkazał.
+R. Wola Boża była, ojcze, że mi się prędko nagodziło, czegom chciał.
+
 [Ant Matutinum 3N]
 Uczyńmy tu trzy przybytki: Tobie jeden, Mojżeszowi jeden i Eliaszowi jeden.;;269;270;271
 
 [Lectio9]
-@Tempora/Quad2-0:Lectio7:s/Bo owego.*//s
+@Tempora/Quad2-0:Lectio7:s/Albowiem.*//s
 
 [Lectio10]
-@Tempora/Quad2-0:Lectio7:s/.*Bo owego/Bo owego/s
-@Tempora/Quad2-0:Lectio8:s/This is My Son between.*//s
+@Tempora/Quad2-0:Lectio7:s/.*Albowiem/Albowiem/s s/$/~/
+@Tempora/Quad2-0:Lectio8:s/Ten jest Syn mój,.*//s
 
+[Lectio11]
+@Tempora/Quad2-0:Lectio8:s/.* Ten jest Syn mój,/Ten jest Syn mój,/s s/$/~/
+@Tempora/Quad2-0:Lectio9:s/Ten jest Syn mój, który.*//s
+
+[Lectio12]
+@Tempora/Quad2-0:Lectio9:s/.*Ten jest Syn mój,/Ten jest Syn mój,/s
+
+[Responsory12]
+R. Modlił się Jakób i rzekł: † Panie, któryś mi rzekł: wróć się do ziemie narodzenia twego,
+* Wyrwij mię z ręki brata mego; boć się go bardzo boję.
+V. Bóg, przed którego obliczem chodzili ojcowie moi, † Pan, który mię żywi od młodości mojéj.
+R. Wyrwij mię z ręki brata mego; boć się go bardzo boję.

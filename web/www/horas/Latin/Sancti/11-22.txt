@@ -1,7 +1,7 @@
 [Rank]
 S. Cæciliæ Virginis et Martyris;;Duplex;;3;;vide C6b
 
-[Rank1570]
+[Rank] (rubrica 1570)
 S. Cæciliæ Virginis et Martyris;;Semiduplex;;2;;vide C6b
 
 [Rule]
@@ -43,7 +43,7 @@ R. In tabernáculo suo habitáre facit eam.
 @Commune/C6:Lectio1
 
 [Responsory1]
-R. Cantántibus organis, Cæcília virgo in corde suo soli Dómino decantábat, dicens: 
+R. Cantántibus órganis, Cæcília virgo in corde suo soli Dómino decantábat, dicens: 
 * Fiat, Dómine, cor meum et corpus meum immaculátum, ut non confúndar.
 V. Biduánis et triduánis jejúniis orans, commendábat Dómino quod timébat.
 R. Fiat, Dómine, cor meum et corpus meum immaculátum, ut non confúndar.
@@ -139,6 +139,9 @@ Benedíco te, * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exst
 Triduánas * a Dómino popósci indúcias, ut domum meam ecclésiam consecrárem.
 
 [Ant 2]
+Dum auróra * finem daret, Cæcília exclamávit dicens: Eia, mílites Christi, abjícite ópera tenebrárum et induímini arma lucis.
+
+[Ant 2](rubrica 1960)
 Dum auróra * finem daret, Cæcília exclamávit dicens: Eia, mílites Christi, abícite ópera tenebrárum et induímini arma lucis.
 
 [Ant Vespera 3]

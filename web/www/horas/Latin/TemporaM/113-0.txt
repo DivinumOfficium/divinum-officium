@@ -24,7 +24,7 @@
 @Tempora/113-0:Lectio5:s/Et ne .*//s
 
 [Lectio7]
-@Tempora/113-0:Lectio5:s/.* Et ne /Et ne /s
+@Tempora/113-0:Lectio5:s/.* Et ne /Et ne /s s/$/~/
 @Tempora/113-0:Lectio6:s/Magna .*//s
 
 [Lectio8]

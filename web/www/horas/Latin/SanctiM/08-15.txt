@@ -1,7 +1,7 @@
 @Sancti/08-15
 
 [Rank]
-Assumptione Beatae Mariae Virginis;;Duplex I classis;;6.5;;ex C11
+Assumptione Beatæ Mariæ Virginis;;Duplex I classis;;6.5;;ex C11
 
 [Rule]
 12 lectiones
@@ -10,7 +10,7 @@ Doxology=Nat
 [Capitulum Vespera]
 @Sancti/08-15
 _
-@Sancti/08-15:Responsory Sexta:1-6
+@Sancti/08-15t:Responsory Sexta:1-6
 
 [HymnusM Vespera]
 @:Hymnus Vespera:s/Jesu, tibi sit glória/Glória tibi, Dómine/
@@ -38,7 +38,8 @@ Hortus conclúsus * es Dei Génitrix, hortus conclúsus, fons signátus: † sur
 @Sancti/08-15:Lectio1:s/-15/-12/ s/.13 .*//s
 
 [Lectio2]
-@Sancti/08-15:Lectio1:s/9-15/13-15/ s/9 .* 13 /13 /s
+@Sancti/08-15:Lectio1:2 s/9-/13-/
+@Sancti/08-15:Lectio1:7-9
 
 [Lectio3]
 @Sancti/08-15:Lectio2

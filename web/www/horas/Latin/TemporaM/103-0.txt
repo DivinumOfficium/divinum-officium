@@ -4,7 +4,7 @@
 @Tempora/103-0:Lectio1:s/-6/-4/ s/5 .*//s
 
 [Lectio2]
-@Tempora/103-0:Lectio1:s/-6/-9/ s/1-/5-/ s/1 [^M].*5 /5 /s
+@Tempora/103-0:Lectio1:2-8 s/-6/-9/ s/1-/5-/ s/1 [^M].*5 /5 /s
 @Tempora/103-0:Lectio2:s/!.*// s/10 .*//s
 
 [Lectio3]

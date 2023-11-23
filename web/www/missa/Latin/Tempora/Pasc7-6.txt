@@ -5,7 +5,7 @@ Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;5;;ex Pasc7-0
 Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 
 [Rule]
-Gloria
+no Gloria
 (rubrica 1960 et missa brevior) LectioL1
 (rubrica 1960) celebranda aut forma longior aut forma brevior
 LectioL5
@@ -35,9 +35,17 @@ Hæc dicit Dóminus Deus: Effúndam Spíritum meum super omnem carnem: et prophe
 $Deo gratias
 
 [GradualeL1]
-Allelúja
+Allelúja.
 !Joannes 6:64
 Spíritus est, qui vivíficat: caro autem non prodest quidquam.
+
+[GradualeL1](missa brevior)
+Allelúja.
+!Joannes 6:64
+Spíritus est, qui vivíficat: caro autem non prodest quidquam.
+_
+#Gloria
+v. Glória in excélsis Deo. Et in terra pax homínibus bonæ voluntátis. Laudámus te. Benedícimus te. Adorámus te. Glorificámus te. Grátias ágimus tibi propter magnam glóriam tuam. Dómine Deus, Rex cæléstis, Deus Pater omnípotens. Dómine Fili unigénite, Jesu Christe. Dómine Deus, Agnus Dei, Fílius Patris. Qui tollis peccáta mundi, miserére nobis. Qui tollis peccáta mundi, súscipe deprecatiónem nostram. Qui sedes ad déxteram Patris, miserére nobis. Quóniam tu solus Sanctus. Tu solus Dóminus. Tu solus Altíssimus, Jesu Christe. Cum Sancto Spíritu + in glória Dei Patris. Amen.
 
 [OratioL1]
 Illo nos igne, quǽsumus, Dómine, Spíritus Sanctus inflámmet: quem Dóminus~
@@ -96,12 +104,15 @@ $Per Dominum.
 Léctio Daniélis Prophétæ
 !Dan 3:47-51
 In diébus illis: Angelus Dómini descéndit cum Azaría et sóciis ejus in fornácem: et excússit flammam ignis de fornáce, et fecit médium fornácis quasi ventum roris flantem. Flamma autem effundebátur super fornácem cúbitis quadragínta novem: et erúpit, et incéndit, quos répperit juxta fornácem de Chaldǽis, minístros regis, qui eam incendébant. Et non tétigit eos omníno ignis, neque contristávit, nec quidquam moléstiæ íntulit. Tunc hi tres quasi ex uno ore laudábant, et glorificábant, et benedicébant Deum in fornáce, dicéntes:
-$Deo Gratias
+$Deo gratias
 
 [GradualeL5]
 Allelúja.
 !Dan 3:52
 Benedíctus es, Dómine, Deus patrum nostrórum, et laudábilis in sǽcula.
+_
+#Gloria
+v. Glória in excélsis Deo. Et in terra pax homínibus bonæ voluntátis. Laudámus te. Benedícimus te. Adorámus te. Glorificámus te. Grátias ágimus tibi propter magnam glóriam tuam. Dómine Deus, Rex cæléstis, Deus Pater omnípotens. Dómine Fili unigénite, Jesu Christe. Dómine Deus, Agnus Dei, Fílius Patris. Qui tollis peccáta mundi, miserére nobis. Qui tollis peccáta mundi, súscipe deprecatiónem nostram. Qui sedes ad déxteram Patris, miserére nobis. Quóniam tu solus Sanctus. Tu solus Dóminus. Tu solus Altíssimus, Jesu Christe. Cum Sancto Spíritu + in glória Dei Patris. Amen.
 
 [OratioL5]
 Deus, qui tribus púeris mitigásti flammas ígnium: concéde propítius; ut nos~
@@ -123,6 +134,11 @@ córdibus nostris per Spíritum Sanctum, qui datus est nobis.
  Laudáte Dóminum, omnes gentes: et collaudáte eum, omnes pópuli.
 V. Quóniam confirmáta est super nos misericórdia ejus: et véritas Dómini manet~
 in ætérnum.
+
+[Graduale](missa brevior)
+Allelúja.
+V. (Hic genuflectitur) Veni, Sancte Spíritus, reple tuórum corda fidélium: et tui amóris in eis~
+ignem accénde.
 
 [Sequentia]
 @Tempora/Pasc7-0:Sequentia

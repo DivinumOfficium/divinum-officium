@@ -1,5 +1,8 @@
 @Tempora/Adv4-0
 
+[Rank]
+Dominica IV Adventus;;Semiduplex;;6
+
 [Rule]
 12 lectiones
 
@@ -17,7 +20,7 @@ _
 @Tempora/Adv4-0:Lectio1:s/-7/-4/ s/5 .*//s
 
 [Lectio2]
-@Tempora/Adv4-0:Lectio1:s/1-/5-/ s/1 .*5 /5 /s
+@Tempora/Adv4-0:Lectio1:2-9 s/1-/5-/ s/1 .*5 /5 /s
 @Tempora/Adv4-0:Lectio2:s/!.*// s/8 .*//s
 
 [Lectio3]

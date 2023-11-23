@@ -9,22 +9,24 @@ use utf8;
 #use strict "subs";
 my $a = 4;
 
-#*** htmlHead($title, $flag)
-# generated the standard head with $title
+#*** htmlHead($title, $onload)
+# generate html head
 sub htmlHead {
-  my $title = shift;
-  my $flag = shift;
-  if (!$title) { $title = ' '; }
+  my($title, $onload) = @_;
 
-  #  print "Content-type: text/html; charset=ISO-8859-1\n\n";
-  print "Content-type: text/html; charset=utf-8\n\n";
+  my($horasjs) = "<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>\n" . horasjs() . '</SCRIPT>';
+  $onload && ($onload = " onload=\"$onload\";");
+
   print << "PrintTag";
+Content-type: text/html; charset=utf-8
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML><HEAD>
   <META NAME="Resource-type" CONTENT="Document">
   <META NAME="description" CONTENT="Divine Office">
   <META NAME="keywords" CONTENT="Divine Office, Breviarium, Liturgy, Traditional, Zsolozsma">
   <META NAME="Copyright" CONTENT="Like GNU">
+  <meta name="color-scheme" content="dark light">
   <STYLE>
     /* https://www.30secondsofcode.org/css/s/offscreen/ */
     .offscreen {
@@ -37,11 +39,35 @@ sub htmlHead {
       position: absolute;
       width: 1px;
     }
+    h1, h2 {
+      text-align: center;
+      font-weight: normal;
+    }
+    h2 {
+      margin-top: 4ex;
+      color: maroon;
+      font-size: 112%;
+      font-weight: bold;
+      font-style: italic;
+    }
+    p {
+      color: black;
+    }
+    .contrastbg { background: white; }
+    \@media (prefers-color-scheme: dark) {
+      table { color: black; }
+      .contrastbg {
+        background: #121212;
+        color: white;
+      }
+    }
   </STYLE>
   <TITLE>$title</TITLE>
+$horasjs
+</HEAD>
+<BODY VLINK=$visitedlink LINK=$link BGCOLOR="#eeeeee"$onload>
+<FORM ACTION="$officium" METHOD=post TARGET=_self>
 PrintTag
-  if ($flag == 2) { horasjs(); }
-  print "</HEAD>";
 }
 
 #*** htmlInput()
@@ -157,16 +183,16 @@ sub htmlInput {
     }
     my $onclick =
         ($parmode =~ /select/i) ? "onchange=\'buttonclick(\"$command\");\'"
-      : ($parfunc) ? "onchange=\"$parfunc;\""
+      : ($parfunc) ? qq(onchange="$parfunc;")
       : '';
     my $osize = @optarray;
-    if ($osize > 5) { $osize = 5; }
-    $output .= "<SELECT SIZE=$osize NAME=\'$parname\' ID=\'$parname\' $onclick>\n";
+    chomp($optarray[-1]);
+    $output .= "<SELECT ID=$parname NAME=$parname SIZE=1 $onclick>\n";
     foreach(@optarray) {
       my($display, $value) = split(/\//);
       $value ||= $display;
       my $selected = $value eq $parvalue ? 'SELECTED' : '';
-      $output .= "<OPTION VALUE=\'$value\' $selected>$display\n";
+      $output .= "<OPTION $selected VALUE=\"$value\">$display\n";
     }
     $output .= "</SELECT>\n";
   }
@@ -229,6 +255,7 @@ sub setfont {
   my $size = ($istr =~ /^\.*?([0-9\-\+]+)/i) ? $1 : 0;
   my $color = ($istr =~ /([a-z]+)\s*$/i) ? $1 : '';
   if ($istr =~ /(\#[0-9a-f]+)\s*$/i || $istr =~ /([a-z]+)\s*$/i) { $color = $1; }
+  $color = '' if $color eq 'italic'; # italic is not a color
   my $font = "<FONT ";
   if ($size) { $font .= "SIZE=$size "; }
   if ($color) { $font .= "COLOR=\"$color\""; }
@@ -278,7 +305,7 @@ sub getcookies {
     my @param = split(';;', $param);
 
     #check if the structure of the parameters is the same
-    if (@sti != @param + 1 || (pop(@sti) ne $check)) {
+    if (@sti > @param + 1 || ($check !~ /^$sti[-1]/)) {
       $error = "Cookie $cname mismatch $name need $check has $param<br>== $sti[-1]";
       return 0;
     }
@@ -361,48 +388,46 @@ sub getcookie1 {
 sub setcross {
   my $line = shift;
 
-  if (CGI::user_agent("BlackBerry")) {
+  if ($nofancychars) { return $line; }
 
+  my $csubst = '';
+
+  if (CGI::user_agent("BlackBerry")) {
     # Not enough Unicode for what we really want, below.  Fake it.
     # cross type 3: COPTIC SMALL LETTER DEI
-    my $csubst = "<span style='color:red; font-size:1.25em'>&#x03EF;</span>";
+    $csubst = "<span style='color:red; font-size:1.25em'>&#x03EF;</span>";
     $line =~ s/\+\+\+/$csubst/g;
 
     # Cross type 2: Latin Cross
-    my $csubst = "<span style='color:red; font-size:1.25em'>&#x271D;&#xFE0E;</span>";
+    $csubst = "<span style='color:red; font-size:1.25em'>&#x271D;&#xFE0E;</span>";
     $line =~ s/\+\+/$csubst/g;
 
     # Cross type 1: PLUS SIGN
-    my $csubst = "<span style='color:red; font-size:1.25em'>+</span>";
+    $csubst = "<span style='color:red; font-size:1.25em'>+</span>";
     $line =~ s/ \+ / $csubst /g;
   } else {
-
     # Cross type 3: Outlined Greek Cross
-    my $csubst = "<span style='color:red; font-size:1.25em'>&#x2719;&#xFE0E;</span>";
+    $csubst = "<span style='color:red; font-size:1.25em'>&#x2719;&#xFE0E;</span>";
     $line =~ s/\+\+\+/$csubst/g;
 
     # Cross type 2: Greek Cross
-    my $csubst = "<span style='color:red; font-size:1.25em'>+︎</span>";
+    $csubst = "<span style='color:red; font-size:1.25em'>+︎</span>";
     $line =~ s/\+\+/$csubst/g;
 
     # cross type 1: Maltese Cross
-    my $csubst = "<span style='color:red; font-size:1.25em'>✠</span>";
+    $csubst = "<span style='color:red; font-size:1.25em'>✠</span>";
     $line =~ s/ \+ / $csubst /g;
   }
   return $line;
 }
 
-#*** setcross2($line)
-# Version (unused) of setcross that uses gifs.
-sub setcross2 {
+#*** setvrbar($line)
+# set R- & V-bar
+sub setvrbar {
   my $line = shift;
-  my $csubst;
-  $csubst = "<IMG SRC=$htmlurl/cross3.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/\+\+\+/$csubst/g;
-  $csubst = "<IMG SRC=$htmlurl/cross2.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/\+\+/$csubst/g;
-  $csubst = "<IMG SRC=$htmlurl/cross1.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/ \+ / $csubst /g;
+  if ($nofancychars) { return $line; }
+  $line =~ s/^V\./℣./g;
+  $line =~ s/^R\./℟./g;
   return $line;
 }
 
@@ -415,18 +440,18 @@ sub setcell {
 
   if (!$Ck) {
     if (columnsel($lang)) {
-      $searchind++;
+      $searchind++ if ($text !~ /{omittitur}/);
       print "<TR>";
 
       if ($notes && $text =~ /\{\:(.*?)\:\}/) {
         my $notefile = $1;
         $notefile =~ s/^pc/p/;
         my $colspan = ($only) ? 1 : 2;
-        print "<TR><TD COLSPAN=$colspan WIDTH=100% $background VALIGN=MIDDLE ALIGN=CENTER>\n"
+        print "<TR><TD COLSPAN=$colspan WIDTH=100% VALIGN=MIDDLE ALIGN=CENTER>\n"
           . "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=80%></TD></TR>\n";
       }
     }
-    print "<TD $background VALIGN=TOP WIDTH=$width%" . ($lang1 ne $lang ? "" : " ID=L$searchind") . ">";
+    print "<TD VALIGN=TOP WIDTH=$width%" . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID=$hora$searchind") . ">";
     topnext_cell($lang);
 
     if ($text =~ /%(.*?)%/) {
@@ -468,7 +493,7 @@ sub setcell {
     }
   } else {
     print setfont($blackfont, $text) . "</TD>\n";
-    if (!columnsel($lang)) { print "</TR>\n"; }
+    if (!columnsel($lang) || $only) { print "</TR>\n"; }
   }
 }
 
@@ -478,22 +503,17 @@ sub topnext_cell {
   if ($officium =~ /Pofficium/i) { return; }
   my $lang = shift;
   my @a = split('<BR>', $text1);
-  if (@a > 2 && $expand !~ /skeleton/i) { print topnext($lang); }
-}
-
-sub topnext {
-  if ($officium =~ /Pofficium/i) {return:}
-  my $lang = shift;
-  my $str = "<DIV ALIGN=right><FONT SIZE=1 COLOR=green>";
-
-  if (columnsel($lang)) {
-    $str .= "<A HREF=# onclick=\"setsearch($searchind);\">Top</A>&nbsp;&nbsp;";
-    $str .= "<A HREF=# onclick=\"setsearch($searchind+1);\">Next</A>";
-  } else {
-    $str .= "$searchind";
+  if (@a > 2 && $expand !~ /skeleton/i) { 
+    my $str = "<DIV ALIGN=right><FONT SIZE=1 COLOR=green>";
+    if (columnsel($lang)) {
+      $str .= "<A HREF='#${hora}top'>Top</A>&nbsp;&nbsp;";
+      $str .= "<A HREF='#$hora" . ($searchind+1) . "'>Next</A>";
+    } else {
+      $str .= "$searchind";
+    }
+    $str .= "</FONT></DIV>\n";
+    print $str;
   }
-  $str .= "</FONT></DIV>\n";
-  return $str;
 }
 
 #*** table_start
@@ -504,10 +524,10 @@ sub table_start {
     @ctext2 = splice(@ctext2, @ctext2);
   }
   my $width =
-    ($textwidth && $textwidth =~ /^[0-9]+$/ && 50 <= $textwidth && $textwidth <= 100)
+    ($textwidth && $textwidth =~ /^[0-9]+$/ && 0 < $textwidth && $textwidth <= 100)
     ? "$textwidth\%"
     : '80%';
-  print "<TABLE BORDER=$border ALIGN=CENTER CELLPADDING=8 WIDTH=$width>";
+  print "<TABLE BORDER=$border ALIGN=CENTER CELLPADDING=8 WIDTH=$width$background>";
 }
 
 #antepost('$title')
@@ -516,7 +536,7 @@ sub ante_post {
   my $title = shift;
   if ($Ck) { return; }
   my $colspan = ($only) ? '' : 'COLSPAN=2';
-  print "<TR><TD $background VALIGN=TOP $colspan ALIGN=CENTER>\n";
+  print "<TR><TD VALIGN=TOP $colspan ALIGN=CENTER>\n";
   if ($0 =~ /missa/) {
     print "<A HREF=\"mpopup.pl?popup=$title&rubrics=$rubrics&lang1=$lang1&lang2=$lang2\" TARGET=_NEW>$title</A>\n";
     print "<FONT SIZE=1>Missam</FONT></TD></TR>";
@@ -531,7 +551,7 @@ sub ante_post {
 sub table_end {
   if ($Ck) {
     my $width = ($only) ? 100 : 50;
-    print "<TR><TD $background VALIGN=TOP WIDTH=$width%>\n";
+    print "<TR><TD VALIGN=TOP WIDTH=$width%>\n";
     my $item;
     my $len1 = 0;
     foreach $item (@ctext1) { print "$item<BR>\n"; $len1 += wnum($item); }
@@ -539,17 +559,17 @@ sub table_end {
 
     if (!$only) {
       $len2 = 0;
-      print "<TD $background VALIGN=TOP WIDTH=$width%>\n";
+      print "<TD VALIGN=TOP WIDTH=$width%>\n";
       foreach $item (@ctext2) { print "$item<BR>\n"; $len2 += wnum($item); }
       print "</TD></TR>\n";
     }
-    print "<TR><TD $background VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len1 words</FONT></TD>";
+    print "<TR><TD VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len1 words</FONT></TD>";
 
     if (!$only) {
-      print "<TD $background VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len2 words</FONT></TD></TR>";
+      print "<TD VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len2 words</FONT></TD></TR>";
     }
   }
-  print "</TABLE><span ID=L$searchind></span>";
+  print "</TABLE><A ID='$hora$searchind'></A>";
 }
 
 sub wnum {
@@ -581,11 +601,104 @@ sub option_selector {
   my ($label, $onchange, $default, @options) = @_;
   my $id = $label; $id =~ s/\s+//g; $id = lc($id);
   my $output = "&nbsp;&nbsp;&nbsp;<LABEL FOR=$id CLASS=offscreen>$label</LABEL>\n";
-  $output .= sprintf("<SELECT ID=%s NAME=%s SIZE=%d onchange=\"%s\">\n", $id, $id, @options + 0, $onchange);
+  $output .= sprintf("<SELECT ID=%s NAME=%s SIZE=%d onchange=\"%s\">\n", $id, $id, 1, $onchange);
   foreach (@options) {
     my($display, $value) = split(/;/);
     $value = $display unless $value;
     $output .= sprintf("<OPTION %s VALUE=\"%s\">%s\n", ($value eq $default)?'SELECTED':'', $value, $display);
   }
   return $output . "</SELECT>\n"
+}
+
+#*** selectables
+# generate selects from .dialog data
+sub selectables {
+  my($dialog) = @_;
+  my(@output);
+  foreach (split(/;;\n*/, getdialog($dialog))) {
+    my($parname, $parvar, $parmode, $parpar, $parpos, $parfunc, $parhelp) = split('~>');
+    my $parvalue = eval($parvar);
+    my $parlabel = $parname;
+    $parname = substr($parvar, 1);
+    my $output = "<LABEL FOR=$parname CLASS=offscreen>$parlabel</LABEL>\n";
+    $output .= htmlInput($parname, $parvalue, $parmode, $parpar, 'parchange()', $parhelp);
+    push(@output, $output);
+  }
+  join('&nbsp;&nbsp;&nbsp;', @output);
+}
+
+#*** selectable_p
+# generate signle select from .dialog for Poffice
+sub selectable_p {
+  my($dialog, $curvalue, $date1, $version, $lang2, $votive, $testmode, $title) = @_;
+  $title ||= ucfirst($dialog);
+  if ($dialog eq 'votives') { $curvalue ||= 'Hodie' }
+  my @output = ("<TR><TD ALIGN=CENTER>$title");
+  foreach (getdialog($dialog)) { chomp;
+    my($text,$name) = split(/\//);
+    $name ||= $text;
+    my $href = "Pofficium.pl?date1=$date1&version="
+             . ($dialog eq 'versions' ? $name : $version)
+             . "&testmode=$testmode&lang2="
+             . ($dialog eq 'languages' ? $name : $lang2)
+             . "&votive="
+             . ($dialog eq 'votives' ? $name : $votive);
+    my $colour = $curvalue eq $name ? 'red' : 'blue';
+    push(@output, qq(\n<A HREF="$href"><FONT COLOR=$colour>$text</FONT></A>));
+  }
+  join('<BR>', @output) . "</TD></TR>\n";
+}
+
+sub horas_menu {
+  my($completed, $date1, $version, $lang2, $votive, $testmode) = @_;
+  my @horas = gethoras($votive eq 'C9');
+  push(@horas, 'Omnes', 'Plures') if ($0 !~ /Cofficium/);
+
+  my $i  = 0;
+  my $output = '';
+  foreach (@horas) {
+    $i += 1;
+    my $href = '#';
+    my $onclick = '';
+    if ($0 =~ /Pofficium/) {
+      $href = qq("Pofficium.pl?date1=$date1&command=pray$_)
+            . qq(&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive")
+    } else {
+      $onclick = qq(onclick="hset('$_');");
+    }
+    my $colour = $i <= $completed ? $visitedlink : $link ;
+    $output .= qq(\n<A HREF=$href $onclick><FONT COLOR=$colour>$_</FONT></A>\n);
+    if (($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 2 || $i == 6)) || (($i == (@horas - 2)) && ($0 !~ /Cofficium/))) {
+      $output .= '<BR>';
+    } else {
+      $output .= '&nbsp;&nbsp;';
+    }
+  }
+  $output =~ s/&nbsp;&nbsp;$//;
+  $output;
+}
+
+sub bottom_links_menu {
+  my($compare) = shift;
+
+  my @options = map { "<A HREF=\"../../www/horas/Help/" . lcfirst($_) . ".html\" TARGET=\"_BLANK\">$_</A>\n";} 
+                  qw(Versions Credits Download Rubrics Technical Help);
+  join("&nbsp;&nbsp;&nbsp;&nbsp;\n", @options);
+}
+
+#*** html_dayhead($head, $subhead) 
+# return day headline in html
+sub html_dayhead {
+  my ($head, $subhead) = @_;
+
+  my $output = setfont(liturgical_color($head), $head);
+	
+	if ($subhead) {
+		($pre, $main) = split(/: /, $subhead, 2);
+		$output .= "<BR>\n<SPAN STYLE=\"font-size:82%; color:maroon;\"><I>$pre";
+		$output .= ": " . setfont(liturgical_color($main, ''), $main) if $main;
+		$output .= "</I></SPAN>\n";
+	}
+
+  $output;
 }

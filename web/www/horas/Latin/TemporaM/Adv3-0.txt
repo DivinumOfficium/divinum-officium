@@ -1,5 +1,8 @@
 @Tempora/Adv3-0
 
+[Rank]
+Dominica III Adventus;;Semiduplex;;6
+
 [Rule]
 12 lectiones
 
@@ -17,7 +20,7 @@ _
 @Tempora/Adv3-0:Lectio1:s/-6/-3/ s/4 .*//s
 
 [Lectio2]
-@Tempora/Adv3-0:Lectio1:s/1-/4-/ s/1 .*4 /4 /s
+@Tempora/Adv3-0:Lectio1:2-8 s/1-/4-/ s/1 .*4 /4 /s
 
 [Lectio3]
 @Tempora/Adv3-0:Lectio2:
@@ -26,7 +29,7 @@ _
 @Tempora/Adv3-0:Lectio3
 
 [Responsory4]
-R. Ecce véniet Dóminus princeps regum terrae;
+R. Ecce véniet Dóminus princeps regum terræ;
 * Beáti qui paráti sunt occúrrere illi, † habébunt partem in civitáte Jerúsalem.
 V. Veniens veniet Dominus, et non tardabit.
 R. Beáti qui paráti sunt occúrrere illi, † habébunt partem in civitáte Jerúsalem.

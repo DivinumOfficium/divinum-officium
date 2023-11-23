@@ -1,7 +1,7 @@
 [Rank]
 S. Agathæ Virginis et Martyris;;Duplex;;3.1;;vide C6b
 
-[Rank1570]
+[Rank] (rubrica 1570)
 S. Agathæ Virginis et Martyris;;Semiduplex;;2;;vide C6b
 
 [Rank](rubrica 1960)
@@ -106,13 +106,7 @@ Agatha, in Sicília nobílibus paréntibus nata, in persecutióne Décii imperat
 &teDeum
 
 [Lectio7]
-Léctio sancti Evangélii secúndum Matthǽum
-!Matt 19:3-12
-In illo témpore: Accessérunt ad Jesum pharisæi, tentántes eum et dicéntes: Si licet hómini dimíttere uxórem suam quacúmque ex causa? Et réliqua.
-_
-Homilía S. Joánnis Chrysostomi
-!Homilia 63 in Matth., sub med.
-Dóminus noster, quia ad virginitátem hortári grave esse videbátur, a necessitáte legis de non solvéndo matrimónio, eos ad cupiditátem illíus tráhere studet. Deínde, ut eam esse possíbilem osténdat, sic inquit: Sunt eunúchi qui ex ventre matris ita nati sunt; et sunt qui ab homínibus eunúchi facti sunt, et sunt qui seípsos castravérunt propter regnum cælórum. Quibus verbis laténter eos ad eligéndam virginitátem indúcit, dum eam virtútem esse possíbilem ástruit.
+@Commune/C6:Lectio7 in 2 loco
 
 [Responsory7]
 R. Beáta Agatha, ingréssa cárcerem, expándit manus suas ad Deum, et dixit: Dómine, qui me fecísti víncere torménta carníficum,
@@ -121,7 +115,7 @@ V. Dómine, qui me creásti, et tulísti a me amórem sæculi, qui corpus meum a
 R. Jube me ad tuam misericórdiam perveníre.
 
 [Lectio8]
-Id autem hoc fere modo confírmat: Cógita tecum, si aut a natúra talis esses, aut ab homínibus eam injúriam passus, quid fáceres, cum et ejúsmodi voluptáte caréres, et nullam, caréndo, mercédem consequeréris? Grátias ígitur nunc Deo agas, quod cum mercéde atque corónis idem sústines, quod illi sine corónis ac præmio tólerant. Immo vero non idem, sed multo lévius; tum quia spe erígeris et consciéntia recte facti, tum quia non ita ingéntibus concupiscéntiæ flúctibus jactáris.
+@Commune/C6:Lectio8 in 2 loco
 
 [Responsory8]
 R. Medicínam carnálem córpori meo numquam exhíbui, sed hábeo Dóminum Jesum Christum, 
@@ -132,8 +126,7 @@ R. Qui solo sermóne restáurat univérsa.
 R. Qui solo sermóne restáurat univérsa.
 
 [Lectio9]
-Cum ergo de illis eunúchis díxerit, qui, nisi étiam ipsi mente se contíneant, frustra et inutíliter tales sunt, ac de illis, qui, ut regnum cælórum consequántur, se cóntinent; subjúnxit rursus, dicens: Qui potest cápere, capiat; ut alacrióres effíciat eo ipso quod grave esse opus osténdit, et ineffábili benignitáte sua nóluit eam rem intra necessitátem legis conclúdere. Idque dicéndo, adhuc magis possíbilem esse demónstrat, ut voluntátis stúdium plus augeátur.
-&teDeum
+@Commune/C6:Lectio9 in 2 loco
 
 [Ant Laudes]
 @:Ant Vespera

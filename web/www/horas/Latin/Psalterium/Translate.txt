@@ -23,10 +23,10 @@ Glória
 Réquiem
 
 [Alleluia]
-Allelúja
+Allelúja.
 
 [Laus tibi]
-Laus tibi, Domine
+Laus tibi, Dómine, Rex ætérnæ glóriæ.
 
 [Dominus vobiscum]
 Dóminus vobíscum
@@ -37,8 +37,17 @@ Dómine, exáudi
 [Confiteor]
 Confíteor
 
+[ConfiteorM]
+@:Confiteor
+
+[ConfiteorOP]
+@:Confiteor
+
 [Misereatur]
 Misereátur
+
+[MisereaturOP]
+@:Misereatur
 
 [Indulgentiam]
 Indulgéntiam
@@ -98,7 +107,7 @@ Sacrosanctća
 Te Deum
 
 [Deo gratias]
-Deo grátias
+R. Deo grátias.
 
 [Lectio]
 Lectio
@@ -134,11 +143,16 @@ Matt|Marc|Luc|Joannes
 Antiphona finalis B.M.V.
 
 [Divinum auxilium]
-Divínum auxílium + máneat semper nobíscum.
-Et cum frátribus nostris abséntibus. Amen.
+Divínum auxílium
 
 [Gloria tibi Domine]
 Glória tibi, Dómine.
 
 [#Commemoratio defunctorum]
 #Commemorátio defunctórum
+
+[MLitany]
+Kýrie … Pater noster
+
+[MLitany2]
+@:MLitany

@@ -2,12 +2,19 @@
 @Commune/C1a:Lectio3:s/10-12/11-13/ s/10 .*11 /11 /s
 13 A podobieństwo zwierząt: osoba ich jako węgla ognistego gorejącego i jako kształt pochodni.
 
-[Lectio7]
+[Lectio5]
 @Commune/C1a:Lectio4:s/Przez rozmyślanie.*//s
 
-[Lectio8]
+[Lectio6]
 @Commune/C1a:Lectio4:s/.*Przez rozmyślanie/Przez rozmyślanie/s s/$/~/
-@Commune/C1a:Lectio5:s/Czworo tedy oblicze//s
+@Commune/C1a:Lectio5:s/Czworo.*//
+
+[Lectio7]
+@Commune/C1a:Lectio5:s/.* Czworo/Czworo/s s/$/~/
+@Commune/C1a:Lectio6:s/Twarz tedy Ewangelistów.*//
+
+[Lectio8]
+@Commune/C1a:Lectio6:s/.* Twarz tedy Ewangelistów/Twarz tedy Ewangelistów/s
 
 [Lectio9]
 @Commune/C1a:Lectio7:s/Nie .*//s

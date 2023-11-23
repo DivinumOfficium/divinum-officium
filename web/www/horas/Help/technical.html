@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
 <HTML><HEAD>
-  <META NAME='author CONTENT='Divinum Officium Project'>
+  <META NAME='author' CONTENT='Divinum Officium Project'>
   <META NAME='Resource-type' CONTENT='Document'>
   <META NAME='description' CONTENT='Breviarium Romanum'>
   <META NAME='keywords' CONTENT='Church tradition, Breviarium, Divine Office, liturgy, Tridentine, old rite, Officium Divinum, Divinum Officium, breviary, missal, Missale, Missale Romanum, Mass, Missa, Misa, liturgie, liturgia, Messe, catholique, Catholic'>
@@ -104,16 +104,22 @@ Each feast is assigned a number for ranking purposes, which can be augmented by 
 Martyrologium. Please note that the Martyrology at Prime is anticipated for the subsequent day. In the Latin text, there exist different folders containing the Martyrology corresponding to the different rubrical structures. For instance, the folder ~/Latin/Martyrologium1960 represents the Martyrology as used in the 1960 rubrics, while ~/Latin/Martyrologium1955R will display that from the 1955 rubrics. Please see <A HREF=credits.html>credits</A> for the sources.
 <BR><BR>
 
-<LI><span class=prma>Tabulae</span> contains the transfer tables and are found in the ~/Latin folder. The Tr=Transfer files have <PRE>
-mm-nn=filename;; 
-</PRE> lines, where 'filename' is the name of the office (from the Proprium de Tempore or Proprium Sanctorum) and the 
-mm-nn is the date in the given year to which it is transfered. It is an ongoing project to establish a perpetual calendar calculation algorithm which would take all anomalies into account. Please help.<BR><BR>
+<LI><span class=prma>Tabulae</span> contains the transfer tables and are found only in the ~/Latin folder.<BR>
+File <CODE>data.txt</CODE> provides map information for officium versions used in files in below directories:
 <UL>
-<LI>Files beginning with K give the permanent Sanctoral calendar for a given rubrical structure (KM = Monastic, KNC = New calendar, K1954 = Divino Afflatu, etc.)
-<LI>Files beginning with Tr (Tr1570, Tr1960, etc.) and without a year indicated list the perpetually-transferred files in the Tempora directory for a given rubrical structure. 
-<LI>Files beginning with Str with a year indicated are the Scripture transfer tables for Matins for that year, and appear in the format Str(rubric)yyyy.txt. For example, Matins Scripture transfers for 2020 in Divino Afflatu rubrics are found in the file StrDA2020.txt. 
-<LI>Files beginning with Tr with a year indicated are the transfer tables for that year, and appear in the format Tr(rubric)yyyy.txt Therefore, transfers for the year 2021 under Newcalendar rubrics are found in the file TrNewcal2021.txt.<BR>
-</UL>
+  <LI><CODE>Kalendaria</CODE> sanctoral kalendar files.<BR>
+  <LI><CODE>Tempora</CODE> perpetually-transfers of the Tempora (Divino Afflatu is used as base).<BR>
+  <LI><CODE>Transfer</CODE> transfers based on Easter date.<BR>
+    Lines starts with '#-' signs are comments. Other lines are divided in three parts: before '=' char, between '=' and ';;', and after ';;'.<BR>
+      Meaning is shown in examples from file <CODE>402.txt</CODE> :<BR>
+        <CODE>03-20=03-19;;1570 1910 1960 DA M Newcal</CODE><BR>
+        on the day March 20th there is Solemnity of St. Joseph (March 19th) for versions (1570, 1910 ...) (used short versions names from mentioned above file <CODE>data.txt</CODE>)<BR>
+        <CODE>dirge1=01-23 02-03 02-20;;1570</CODE><BR>
+      lists days where Officium Defunctorum is read after Vespera and Laudes. (dirge1 is for January and February, dirge2 for remaining months).<BR>
+      <CODE>Hy05-18=1;;DA</CODE><BR>
+      marks days where major hymns should be altered according rule XX.3. (1 means merge hymns in Matutinum, 2 - shift hymns)<BR>
+
+  <LI><CODE>Stransfer</CODE> as above but for transfers of Matutinums readings.
 </UL><BR>
 
 <A NAME='programs'></A>

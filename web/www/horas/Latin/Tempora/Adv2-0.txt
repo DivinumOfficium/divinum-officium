@@ -1,7 +1,7 @@
 [Rank]
 Dominica II Adventus;;Semiduplex;;5.6
 
-[Rank1960]
+[Rank] (rubrica 1960)
 Dominica II Adventus;;Semiduplex;;6
 
 [Rule]
@@ -11,7 +11,7 @@ Antiphonas horas
 [Ant Vespera]
 @:Ant Laudes
 
-[Ant Vespera](rubrica 1570 aut rubrica 1910)
+[Ant Vespera](rubrica tridentina)
 @Psalterium/Psalmi major:Daya6 Vespera
 
 [Ant Vespera 3]
@@ -122,7 +122,7 @@ Quid est ergo dicere: Beátus qui non fúerit scandalizátus in me; nisi apérta
 [Responsory8]
 R. Festína, ne tardáveris, Dómine: 
 * Et líbera pópulum tuum.
-V. Veni, Dómine, et noli tardáre: reláxa facinóra plebi tuæ.
+V. Veni, Dómine, et noli tardáre: reláxa facínora plebi tuæ.
 R. Et líbera pópulum tuum.
 
 [Lectio9]

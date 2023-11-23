@@ -30,9 +30,11 @@ V. Podnieś się, Panie, w mocy twojéj.
 R. Będziem śpiewać i wysławiać możności twoje.
 
 [Lectio9]
-@Tempora/Quadp2-0:Lectio7:s/Toteż .*//s
+@Tempora/Quadp2-0:Lectio7:s/Stąd .*//s
 
 [Lectio10]
-@Tempora/Quadp2-0:Lectio7:s/.* Toteż /Toteż /s s/$/~/
-@Tempora/Quadp2-0:Lectio8:s/If I .*//s
+@Tempora/Quadp2-0:Lectio7:s/.* Stąd /Stąd /s s/$/~/
+@Tempora/Quadp2-0:Lectio8:s/Któż .*//s
 
+[Lectio11]
+@Tempora/Quadp2-0:Lectio8:s/.* Któż /Któż /s

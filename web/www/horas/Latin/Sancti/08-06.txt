@@ -1,7 +1,10 @@
 [Rank]
 In Transfiguratione Domini Nostri Jesu Christi;;Duplex II classis;;5.1;;
 
-[Rank1960]
+[Rank] (rubrica Trident)
+In Transfiguratione Domini Nostri Jesu Christi;;Duplex majus;;4.1;;
+
+[Rank] (rubrica 1960)
 In Transfiguratione Domini Nostri Jesu Christi;;Duplex II classis;;5;;
 
 [Rule]
@@ -60,11 +63,7 @@ In sempitérna sǽcula.
 Amen.
 
 [Doxology](rubrica monastica aut rubrica 1570)
-Glória tibi, Dómine,
-Qui apparuísti hódie,
-Cum Patre, et almo Spíritu,
-In sempitérna sǽcula.
-Amen.
+@Psalterium/Doxologies:EpiT
 
 [Versum 1]
 V. Gloriósus apparuísti in conspéctu Dómini.

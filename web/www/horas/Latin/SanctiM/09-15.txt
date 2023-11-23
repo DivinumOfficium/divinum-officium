@@ -7,11 +7,7 @@ Septem Dolorum Beatæ Mariæ Virginis;;Duplex;;3
 Psalmi Dominica
 
 [Doxology]
-Glória, tibi sit glória,
-Qui passus es pro sérvulis,
-Cum Patre et Sancto Spíritu,
-In sempitérna sǽcula.
-Amen.
+@Tempora/Quad5-5::s/Jesu, tibi sit glória/Glória tibi, Dómine/
 
 [Capitulum Vespera]
 @Sancti/09-15
@@ -31,7 +27,8 @@ _
 @Sancti/09-15:Responsory Sexta:s/.*_//s
 
 [Hymnus Laudes]
-@Sancti/09-15::s/Tempora.Quad5-5//
+@Sancti/09-15::1-15
+@:Doxology
 
 [Capitulum Laudes]
 @Sancti/09-15

@@ -109,8 +109,8 @@ our ($lang1, $lang2, $expand, $column, $accented);
 our %translate; #translation of the skeleton label for 2nd language
 
 #internal script, cookies
-%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
-if (!$setupsave) {%setup = %{setupstring('.', '', 'Ehoras.setup')};}
+%dialog = %{setupstring('', 'horas.dialog')};
+if (!$setupsave) {%setup = %{setupstring('', '../../../standalone/tools/epubgen2/Ehoras.setup')};}
 else {%setup = split(';;;', $setupsave);}
 
 #if (!$setupsave && !getcookies('horasp', 'parameters')) {setcookies('horasp', 'parameters');}
@@ -134,6 +134,9 @@ our $dirgeline = ''; #dates for dirge from Trxxxxyyyy
 our $sanctiname = 'Sancti';
 our $temporaname = 'Tempora';
 our $communename = 'Commune';
+
+our $linkmissa = length strictparam('linkmissa');
+our $nofancychars = strictparam('nofancychars');
 
 #*** handle different actions
 #after setup
@@ -185,6 +188,7 @@ $p = strictparam('version');
 if ($p) {$version = $p; $flag = 1;}
 $p = strictparam('accented');
 if ($p) {$accented = $p; $flag = 1;}
+$nonumbers = strictparam('nonumbers');
 if ($flag) {
   setsetup('general', $expand, $version, $lang2, $accented);
   #setcookies('horasgp', 'general');
@@ -192,14 +196,6 @@ if ($flag) {
 if (!$version) {$version = 'Rubrics 1960';}
 if (!$lang2) {$lang2 = 'English';}
 $only = ($lang1 =~ $lang2) ? 1 : 0;
-
-setmdir($version);
-
-# save parameters
-$setupsave = printhash(\%setup, 1);
-$setupsave =~ s/\r*\n*//g;
-$setupsave =~ s/\"/\~24/g;
-
 
 precedence($date1); #fills our hashes et variables
 our $psalmnum1 = 0;
@@ -220,7 +216,7 @@ if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|P
   {$h = " $1";}
 else {$h = '';}
 $title = "Divinum Officium$h - $date1";
-@horas=getdialogcolumn('horas','~',0);
+@horas=getdialog('horas','~',0);
 for ($i = 0; $i < 10; $i++) {$hcolor[$i] = 'black';}
 #$completed = getcookie1('completed');
 if ($date1 eq gettoday() && $command =~ /pray/i && $completed < 8 &&
@@ -276,37 +272,44 @@ if ($pmode =~ /(main|hora)/i) {
   if ($votive ne 'C9') {
 print << "PrintTag";
 <p class="cen">
-<a href="$date1-1-Matutinum.html">$horas[1]</a>
+<a href="$date1-1-Matutinum.html">Matutinum</a>
 &nbsp;&nbsp;
-<a href="$date1-2-Laudes.html">$horas[2]</a>
+<a href="$date1-2-Laudes.html">Laudes</a>
 &nbsp;&nbsp;
-<a href="$date1-3-Prima.html">$horas[3]</a>
+<a href="$date1-3-Prima.html">Prima</a>
 &nbsp;&nbsp;
-<a href="$date1-4-Tertia.html">$horas[4]</a>
+<a href="$date1-4-Tertia.html">Tertia</a>
 <br />
-<a href="$date1-5-Sexta.html">$horas[5]</a>
+<a href="$date1-5-Sexta.html">Sexta</a>
 &nbsp;&nbsp;
-<a href="$date1-6-Nona.html">$horas[6]</a>
+<a href="$date1-6-Nona.html">Nona</a>
 &nbsp;&nbsp;
-<a href="$date1-7-Vespera.html">$horas[7]</a>
+<a href="$date1-7-Vespera.html">Vespera</a>
 &nbsp;&nbsp;
-<a href="$date1-8-Completorium.html">$horas[8]</a>
-<br />
-<a href="$date1-9-Missa.html">$horas[9]</a>
-</p>
+<a href="$date1-8-Completorium.html">Completorium</a>
 PrintTag
 } else {
 print << "PrintTag";
 <p class="cen">
-<a href="$date1-1-Matutinum.html">$horas[1]</a>
+<a href="$date1-1-Matutinum.html">Matutinum</a>
 &nbsp;&nbsp;
-<a href="$date1-2-Laudes.html">$horas[2]</a>
+<a href="$date1-2-Laudes.html">Laudes</a>
 &nbsp;&nbsp;
-<a href="$date1-7-Vespera.html">$horas[7]</a>
+<a href="$date1-7-Vespera.html">Vespera</a>
 &nbsp;&nbsp;
-</p>
+
 PrintTag
 }
+
+if ($linkmissa) {
+print << "PrintTag";
+<br />
+<a href="$date1-9-Missa.html">Missa</a>
+PrintTag
+}
+print << "PrintTag";
+</p>
+PrintTag
 }
 
 #common end for programs
@@ -344,25 +347,34 @@ $date1
 <a href="$daten-1-Matutinum.html">&uarr;</a>
 </p>
 <p class="cen">
-<a href="$date1-1-Matutinum.html">$horas[1]</a>
+<a href="$date1-1-Matutinum.html">Matutinum</a>
 &nbsp;&nbsp;
-<a href="$date1-2-Laudes.html">$horas[2]</a>
+<a href="$date1-2-Laudes.html">Laudes</a>
 &nbsp;&nbsp;
-<a href="$date1-3-Prima.html">$horas[3]</a>
+<a href="$date1-3-Prima.html">Prima</a>
 &nbsp;&nbsp;
-<a href="$date1-4-Tertia.html">$horas[4]</a>
+<a href="$date1-4-Tertia.html">Tertia</a>
 <br />
-<a href="$date1-5-Sexta.html">$horas[5]</a>
+<a href="$date1-5-Sexta.html">Sexta</a>
 &nbsp;&nbsp;
-<a href="$date1-6-Nona.html">$horas[6]</a>
+<a href="$date1-6-Nona.html">Nona</a>
 &nbsp;&nbsp;
-<a href="$date1-7-Vespera.html">$horas[7]</a>
+<a href="$date1-7-Vespera.html">Vespera</a>
 &nbsp;&nbsp;
-<a href="$date1-8-Completorium.html">$horas[8]</a>
+<a href="$date1-8-Completorium.html">Completorium</a>
+PrintTag
+
+if ($linkmissa) {
+print << "PrintTag";
 <br />
-<a href="$date1-9-Missa.html">$horas[9]</a>
+<a href="$date1-9-Missa.html">Missa</a>
+PrintTag
+}
+
+print << "PrintTag";
 </p>
 PrintTag
+
 }
 
 sub prevnext {

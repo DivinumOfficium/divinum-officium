@@ -8,7 +8,7 @@ Sabbato Quattuor temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 Sabbato post Pentecostes;;Feria;;1;;
 
 [Rule]
-Gloria
+no Gloria
 (rubrica 1960 et missa brevior) LectioL1
 (rubrica 1960) celebranda aut forma longior aut forma brevior
 LectioL5
@@ -35,9 +35,17 @@ Queste cose dice il Signore Iddio: «Spanderò il mio Spirito sopra tutti gli uo
 $Deo gratias
 
 [GradualeL1]
-Allelúia
+Allelúia.
 !Ps 6:64
 È lo Spirito quello che vivifica, la carne invece non giova a nulla.
+
+[GradualeL1](missa brevior)
+Allelúia.
+!Ps 6:64
+È lo Spirito quello che vivifica, la carne invece non giova a nulla.
+_
+#Gloria
+v. Gloria a Dio nell'alto dei cieli.  E pace in terra agli uomini di buona volontà.  Noi Ti lodiamo.  Ti benediciamo.  (chiniamo il capo) Ti adoriamo.  Ti glorifichiamo.  (chiniamo il capo) Ti rendiamo grazie per la tua gloria immensa.  Signore Iddio, Re del cielo, Dio Padre onnipotente.  Signore, Figlio unigenito, (chiniamo il capo) Gesù Cristo.  Signore Iddio, Agnello di Dio, Figlio del Padre.  Tu che togli i peccati del mondo, abbi pietà di noi.  Tu che togli i peccati del mondo, (chiniamo il capo) accogli la nostra supplica.  Tu che siedi alla destra del Padre, abbi pietà di noi.  Poiché Tu solo il Santo.  Tu solo il Signore.  Tu solo l'Altissimo, (chiniamo il capo) Gesù Cristo.  Con lo Spirito Santo + (ci segniamo) nella gloria di Dio Padre. Amen.
 
 [OratioL1]
 Ti supplichiamo, o Signore: ci infiammi lo Spirito Santo di quel fuoco, che il Signore nostro Gesù Cristo portò sulla terra e volle fortemente acceso:
@@ -97,6 +105,9 @@ $Deo Gratias
 Allelúia.
 !Dan 3:52
 Benedetto sei Tu, Signore Dio dei nostri padri, e degno di lode per tutti i secoli.
+_
+#Gloria
+v. Gloria a Dio nell'alto dei cieli.  E pace in terra agli uomini di buona volontà.  Noi Ti lodiamo.  Ti benediciamo.  (chiniamo il capo) Ti adoriamo.  Ti glorifichiamo.  (chiniamo il capo) Ti rendiamo grazie per la tua gloria immensa.  Signore Iddio, Re del cielo, Dio Padre onnipotente.  Signore, Figlio unigenito, (chiniamo il capo) Gesù Cristo.  Signore Iddio, Agnello di Dio, Figlio del Padre.  Tu che togli i peccati del mondo, abbi pietà di noi.  Tu che togli i peccati del mondo, (chiniamo il capo) accogli la nostra supplica.  Tu che siedi alla destra del Padre, abbi pietà di noi.  Poiché Tu solo il Santo.  Tu solo il Signore.  Tu solo l'Altissimo, (chiniamo il capo) Gesù Cristo.  Con lo Spirito Santo + (ci segniamo) nella gloria di Dio Padre. Amen.
 
 [OratioL5]
 O Dio, che hai rese innocue per i tre giovani le fiamme ardenti, benigno concedi che non veniam bruciati dal fuoco delle nostre passioni.
@@ -111,6 +122,10 @@ Fratelli: Giustificati per mezzo della Fede, siamo ora in pace con Dio nel Crist
 !Ps 116:1-2
 Popoli tutti, lodate il Signore, esaltatelo, o genti!
 V. È forte il suo amore per noi, la verità del Signore è per sempre.
+
+[Graduale](missa brevior)
+Allelúia. 
+V. (si genuflette) Vieni, Spirito Santo, riempi i cuori dei fedeli, accendi il fuoco del tuo amore.
 
 [Sequentia]
 @Tempora/Pasc7-0:Sequentia

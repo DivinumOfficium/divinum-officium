@@ -7,13 +7,10 @@ V. And lead us not into temptation:
 R. But deliver us from evil. 
 
 [Ave Maria]
-v. Hail Mary, full of grace; The Lord is with thee; Blessed art thou amongst women,  And blessed is the fruit of thy womb, Jesus.
-Holy Mary, Mother of God,  Pray for us sinners, now and at the hour of our death. Amen.
+v. Hail Mary, full of grace, the Lord is with thee; blessed art thou amongst women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.
 
 [Credo]
-v. I believe in God, the Father almighty, Creator of heaven and earth. 
-And in Jesus Christ, his only Son, our Lord; who was conceived by the  Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was  crucified, died and was buried: he descended into hell; the third day  he arose again from the dead; he ascended into heaven; sitteth at the right hand of God the Father almighty: from thence he shall come to judge  the living and the dead. 
-I believe in the Holy Ghost, the holy catholic Church, the communion of Saints, the forgiveness of sins. The  resurrection of the body. And life everlasting. Amen.
+v. I believe in God, the Father almighty, Creator of heaven and earth. And in Jesus Christ, his only Son, our Lord; who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried: he descended into hell; the third day he arose again from the dead; he ascended into heaven; sitteth at the right hand of God the Father almighty: from thence he shall come to judge the living and the dead. I believe in the Holy Ghost, the holy catholic Church, the communion of Saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.
 
 [Gloria]
 V. Glory be to the Father, and to the Son, * and to the Holy Ghost. 
@@ -202,18 +199,93 @@ v. Let us pray.
 
 [Te decet]
 v. Thou art worthy of praise, thou art worthy of hymns, to Thee be glory: to God the Father and the Son with the Holy Ghost, world without end. Amen.
-[MLitany]
+
+[Kyrie]
 v. Lord have mercy upon us, Christ have mercy upon us, Lord have mercy upon us
-&pater_noster
 
 [MLitany2]
-v. Lord have mercy upon us, Christ have mercy upon us, Lord have mercy upon us
-!"Our Father" is said silently until "And lead us not into temptation:".
+$Kyrie
+/:"Our Father" is said silently until "And lead us not into temptation:".:/
 &pater_noster
+
+[Divinum auxilium]
+(rubrica Monastica)
+/:Then, in the public recitation of the Office, if the Community is to leave the Choir, the following Versicle is said.:/
+May the divine assistance + remain with us always.
+And with our brothers, who are absent. Amen.
 
 [Alleluia Simplex]
 , alleluia.
 
 [Alleluia Duplex]
 Alleluia, alleluia.
+
+[Preces feriales Laudes]
+v. Lord, have mercy upon us. Christ, have mercy upon us. Lord, have mercy upon us.
+!"Our Father" is said silently until "And lead us not into temptation:".
+&pater_noster
+V. I said: Lord, be merciful unto me: 
+R. Heal my soul, for I have sinned against thee.
+V. Turn thee again, O Lord; how long will it be? 
+R. And be gracious unto thy servants. 
+V. Let thy mercy, O Lord, be upon us.
+R. As we have hoped in thee.
+V. Let thy priests be clothed with justice: 
+R. And may thy saints rejoice.
+
+V. Let us pray for our most blessed Pope~
+r. N.
+R. The Lord preserve him and give him life, and make him blessed upon the earth: and deliver him not up to the will of his enemies. 
+V. Let us pray for our bishop ~
+r. N.
+R. May he stand firm and care for us in the strength of the Lord, in the might of thy name.
+/:In Rome, the preceding Versicle and its Response are omitted.  Elsewhere, the name of the local Ordinary is inserted at the letter N.  If the Holy See or the See of the local Bishop is vacant, the appropriate V. and R., either or both as the case may be, is omitted.:/
+(sed rubrica tridentina omittitur)
+
+V. O Lord, save our leaders.
+R. And mercifully hear us when we call upon thee.
+V. O Lord, save thy people, and bless thine inheritance: 
+R. Govern them and lift them up for ever.
+V. Remember thy congregation, 
+R. Which thou hast possessed from the beginning. 
+V. Let peace be in thy strength:
+R. And abundance in thy towers.
+
+V. Let us pray for our benefactors.
+R. O Lord, for thy name's sake, deign to reward with eternal life all who do us good. Amen.  
+(sed rubrica tridentina omittitur)
+
+V. Let us pray for the faithful departed.
+R. Eternal rest grant unto them, O Lord, and let perpetual light shine upon them.
+V. May they rest in peace.
+R. Amen.
+V. Let us pray for our absent brothers.
+R. Save thy servants, O God, who put their trust in thee.
+V. Let us pray for the afflicted and imprisoned.
+R. Deliver them, God of Israel, from all their tribulations.
+V. O Lord, send them help from thy sanctuary.
+R. And defend them out of Sion. 
+
+(sed rubrica tridentina dicuntur)
+@:Dominus:3-4
+&psalm(129) 
+
+(deinde dicuntur)
+V. Turn us again, O Lord, God of Hosts.
+R. Show us thy face, and we shall be whole.
+V. Arise, O Christ, and help us.
+R. And redeem us for thy name's sake.
+V. O Lord, hear my prayer.
+R. And let my cry come unto thee. 
+
+[Preces feriales Tertia]
+v. Lord have mercy on us, Christ have mercy on us, Lord have mercy on us.
+!"Our Father" is said silently until "And lead us not into temptation:".
+&pater_noster
+V. Turn us again, O Lord God of hosts:
+R. Show us thy face, and we shall be saved.
+V. Arise, O Christ, and help us
+R. And deliver us for thy name's sake.
+V. O Lord, hear my prayer:
+R. And let my cry come unto thee.
 

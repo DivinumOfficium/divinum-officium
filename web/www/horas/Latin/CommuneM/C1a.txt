@@ -33,12 +33,19 @@
 [Responsory4]
 @CommuneM/C1
 
-[Lectio7]
+[Lectio5]
 @Commune/C1a:Lectio4:s/Per contemplatiónem.*//s
 
-[Lectio8]
+[Lectio6]
 @Commune/C1a:Lectio4:s/.*Per contemplatiónem/Per contemplatiónem/s s/$/~/
 @Commune/C1a:Lectio5:s/Quátuor ergo fácies uni sunt: quia notítia.*//
+
+[Lectio7]
+@Commune/C1a:Lectio5:s/.*Quátuor ergo fácies uni sunt: quia notítia/Quátuor ergo fácies uni sunt: quia notítia/s s/$/~/
+@Commune/C1a:Lectio6:s/Evangelistárum.*//
+
+[Lectio8]
+@Commune/C1a:Lectio6:s/.* Evangelistárum/Evangelistárum/s
 
 [Lectio9]
 @Commune/C1a:Lectio7:s/Nemo .*//s

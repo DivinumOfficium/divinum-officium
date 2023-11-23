@@ -1,4 +1,4 @@
-FROM        alpine as gitinfo
+FROM public.ecr.aws/docker/library/alpine:3.14 as gitinfo
 
 RUN apk add git
 COPY .git /build/
@@ -13,8 +13,7 @@ RUN echo "  \"branch\": \"`git rev-parse --abbrev-ref HEAD`\"" >> /build/buildin
 RUN echo "}" >> /build/buildinfo
 
 # Final container (copies in /out/buildinfo when done)
-FROM        perl:5.28-slim as final
-MAINTAINER  Ben Yanke <ben@benyanke.com>
+FROM public.ecr.aws/docker/library/perl:5.28-slim as final
 
 # Set envs
 ENV APACHE_RUN_USER www-data \

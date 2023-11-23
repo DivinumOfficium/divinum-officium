@@ -5,12 +5,22 @@ Your lips, my spouse, are as a dropping honeycomb, honey and milk are under your
 The fountain of gardens: the well of living waters, which run with a strong stream from Libanus.;;84
 I went down into the garden of nuts, to see the fruits of the valleys, and to look if the vineyard had flourished, and the pomegranates budded.;;98
 
+[Lectio7]
+@Commune/C11:Lectio6:s/Hail, .*//s
+
+[Lectio8]
+@Commune/C11:Lectio6:s/.* Hail, /Hail, /s
+
+[Lectio10]
+@Commune/C11:Lectio8:s/Let us .*//s
+
+[Lectio11]
+@Commune/C11:Lectio8:s/.* Let us /Let us /s
+
 [Responsory12]
 R. O Virgin Mary, Mother of God, blessed art thou that didst believe the Lord,~
 for there hath been a performance of those things which were told thee from the~
 Lord. Behold, thou art exalted over choirs of Angels.
 * Plead for us with the Lord our God.
 V. Hail, Mary, full of grace, the Lord is with thee.
-R. Plead for us with the Lord our God.
-&Gloria
 R. Plead for us with the Lord our God.

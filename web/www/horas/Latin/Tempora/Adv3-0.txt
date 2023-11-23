@@ -1,7 +1,7 @@
 [Rank]
 Dominica III Adventus;;Semiduplex;;5.6
 
-[Rank1960]
+[Rank] (rubrica 1960)
 Dominica III Adventus;;Semiduplex;;6
 
 [Rule]
@@ -11,7 +11,7 @@ Antiphonas horas
 [Ant Vespera]
 @:Ant Laudes
 
-[Ant Vespera](rubrica 1570 aut rubrica 1910)
+[Ant Vespera](rubrica tridentina)
 @Psalterium/Psalmi major:Daya6 Vespera
 
 [Ant Vespera 3]

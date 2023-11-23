@@ -1,11 +1,11 @@
 [Rank]
 Dominica infra Octavam Ascensionis;;Semiduplex;;5;;ex Tempora/Pasc5-4
 
-[Rank1960]
+[Rank] (rubrica 1960)
 Dominica post Ascensionem;;Semiduplex;;5;;vide Tempora/Pasc5-4
 
 [Rule]
-ex Tempora/Pasc5-4;(rubrica 1570 aut rubrica 1910 aut rubrica divino)
+ex Tempora/Pasc5-4;(rubrica tridentina aut rubrica divino)
 9 lectiones
 Doxology=Asc
 StJamesRule=John,Rev
@@ -25,7 +25,7 @@ Cum vénerit Paráclitus, * quem ego mittam vobis Spíritum veritátis, qui a Pa
 Omnípotens sempitérne Deus: fac nos tibi semper et devótam gérere voluntátem; et majestáti tuæ sincéro corde servíre.
 $Per Dominum
 
-[Ant Matutinum](rubrica 1570 aut rubrica 1910 aut rubrica divino)
+[Ant Matutinum](rubrica tridentina aut rubrica divino)
 @Tempora/Pasc5-4:Ant Matutinum
 
 [Commemoratio 1]

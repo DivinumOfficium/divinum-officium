@@ -1,10 +1,10 @@
 [Rank]
 In Octava S. Joannis;;Simplex;;1.1;;vide Sancti/12-27
 
-[Rank1960]
+[Rank] (rubrica 1960)
 Die Tertia Januarii;;Feria;;1.2;;vide Sancti/01-01
 
-[RankTrident]
+[Rank] (rubrica Trident)
 In Octava S. Joannis;;Duplex;;3.01;;ex Sancti/12-27
 
 [Rule]
@@ -12,6 +12,7 @@ vide Sancti/12-27;
 Feria Te Deum
 Comkey=70
 9 lectiones
+no secunda Vespera(rubrica divino)
 
 [Capitulum Vespera] (rubrica divino aut rubrica tridentina aut rubrica monastica)
 !Sir 15:1-2

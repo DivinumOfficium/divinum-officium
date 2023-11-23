@@ -9,7 +9,7 @@ BEGIN {
   require Exporter;
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(vernaculars load_versions liturgical_color);
+  our @EXPORT_OK = qw(vernaculars liturgical_color);
 }
 
 #*** vernaculars($basedir)
@@ -21,22 +21,16 @@ sub vernaculars {
   return @lines;
 }
 
-sub load_versions {
-  my $basedir = shift;
-  my @versions = do_read("$basedir/Versions.txt") or croak "Couldn't load versions list from $basedir.";
-  return @versions;
-}
-
 sub liturgical_color {
   $_ = shift;
-  my($commune) = @_;
-  return 'blue' if ($commune && $commune =~ /(C1[0-9])/);
-  return 'red' if (/(Vigilia Pentecostes|Quattuor Temporum Pentecostes|Martyr)/i);
-  return 'grey' if (/(Defunctorum|Parasceve|Morte)/i);
-  return 'purple' if (/(Vigilia|Quattuor|Rogatio|Passion|Palmis|gesim|(?:Majoris )?Hebdomadæ(?: Sanctæ)?|Sabbato Sancto|Dolorum|Ciner|Adventus)/i);
-  return 'black' if (/(Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Cena)/i);
-  return 'green' if (/(Pentecosten|Epiphaniam|post octavam)/i);
-  return 'red' if (/(Pentecostes|Evangel|Innocentium|Sanguinis|Cruc|Apostol)/i);
+  return 'blue' if (/(?:Beat|Sanct)(?:ae|æ) Mari/ && !/Vigil/);
+  return 'red' if (/(?:Vigilia Pentecostes|Quattuor Temporum Pentecostes|Decollatione|Martyr)/i);
+  return 'grey' if (/(?:Defunctorum|Parasceve|Morte)/i);
+  return 'black' if (/^In Vigilia Ascensionis/);
+  return 'purple' if (/(?:Vigilia|Quattuor|Rogatio|Passion|Palmis|gesim|(?:Majoris )?Hebdomadæ(?: Sanctæ)?|Sabbato Sancto|Dolorum|Ciner|Adventus)/i);
+  return 'black' if (/(?:Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Cena)/i);
+  return 'green' if (/(?:Pentecosten|Epiphaniam|post octavam)/i);
+  return 'red' if (/(?:Pentecostes|Evangel|Innocentium|Sanguinis|Cruc|Apostol)/i);
   return 'black'
 }
 1;

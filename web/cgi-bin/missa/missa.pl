@@ -28,8 +28,6 @@ use DivinumOfficium::Main qw(vernaculars liturgical_color);
 $error = '';
 $debug = '';
 
-our $Tk = 0;
-our $Hk = 0;
 our $Ck = 0;
 our $missa = 1;
 our $NewMass = 0;
@@ -94,9 +92,6 @@ if (!$command) { $command = 'praySanctaMissa'; }
 our $missanumber = strictparam('missanumber');
 if (!$missanumber) { $missanumber = 1; }
 our $caller = strictparam('caller');
-our $sanctiname = 'Sancti';
-our $temporaname = 'Tempora';
-our $communename = 'Commune';
 
 $setupsave = strictparam('setupm');
 loadsetup($setupsave);
@@ -126,31 +121,17 @@ $rubrics = strictparam('rubrics');
 $solemn = strictparam('solemn');
 
 $only = ($lang1 =~ /$lang2/) ? 1 : 0;
-setmdir($version);
 
 # save parameters
 precedence();    #fills our hashes et variables
-
-# prepare title
-$daycolor = liturgical_color($dayname[1], $commune);
-build_comment_line();
+setsecondcol();
 
 #prepare main pages
 $title = "Sancta Missa";
 
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
-htmlHead($title, 2);
-print << "PrintTag";
-<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="startup();">
-<script>
-// https redirect
-if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
-    location.replace(`https:\${location.href.substring(location.protocol.length)}`);
-}
-</script>
-<FORM ACTION="$officium" METHOD=post TARGET=_self>
-PrintTag
+htmlHead($title, 'startup()');
 
 if ($command =~ /setup(.*)/is) {
   $pmode = 'setup';
@@ -161,11 +142,10 @@ if ($command =~ /setup(.*)/is) {
   $pmode = 'missa';
   $command =~ s/(pray|change|setup)//ig;
   $head = $title;
-  $headline = setheadline();
   headline($head);
 
   #eval($setup{'parameters'});
-  $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
+  $background = ($whitebground) ? ' class="contrastbg"' : '';
   ordo();
   print << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
@@ -173,19 +153,25 @@ PrintTag
 } else {    #mainpage
   $pmode = 'main';
   $command = "";
-  $height = floor($screenheight * 3 / 12);
-  $headline = setheadline();
+  $height = floor($screenheight * 6 / 12);
   headline($title);
   print << "PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=0 HEIGHT=$height><TR>
-<TD><IMG SRC="$htmlurl/missa.jpg" HEIGHT=$height></TD>
+<TD><IMG SRC="$htmlurl/missa.png" HEIGHT=$height></TD>
 </TR></TABLE>
 <BR>
 </P>
 PrintTag
 }
 
+# translate from new breviary version names
+$version =~ s/ - 196.$//;
+$version =~ s/ -//;
+$version =~ s/1888/1910/;
+$version =~ s/ 1954//;
+$version =~ s/Rubrics 1960 2020 USA/1960 Newcalendar/;
+$version =~ s/Ordo Praedicatorum/Dominican/;
 
 if ($pmode =~ /(main|missa)/i) {
   #common widgets for main and hora
@@ -214,7 +200,8 @@ PrintTag
 #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
 #}
   my $propname = ($Propers) ? 'Full' : 'Propers';
-  print option_selector("lang2", "parchange();", $lang2, ('Latin', vernaculars($datafolder)));
+  print "&nbsp;&nbsp;&nbsp;";
+  print htmlInput('lang2', $lang2, 'options', 'languages', , "parchange()" );
   @votive = ('Hodie;');
   if (opendir(DIR, "$datafolder/Latin/Votive")) {
     @a = sort readdir(DIR);
@@ -222,28 +209,9 @@ PrintTag
     foreach (@a) { push(@votive, $_) if (s/\.txt//i); }
   }
   print option_selector("Votive", "parchange();", $votive, @votive );
-  print << "PrintTag";
-</P>
-<P ALIGN=CENTER><FONT SIZE=+1>
-<P ALIGN=CENTER>
-<A HREF=# onclick="hset('Propers')">$propname</A></P>
-</FONT></P>
-</SELECT>
-<P ALIGN=CENTER><FONT SIZE=+1>
-<A HREF="../../www/horas/Help/versions.html" TARGET="_BLANK">Versions</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/credits.html" TARGET="_BLANK">Credits</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/download.html" TARGET="_BLANK">Download</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/rubrics.html" TARGET="_BLANK">Rubrics</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/technical.html" TARGET="_BLANK">Technical</A>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<A HREF="../../www/horas/Help/help.html" TARGET="_BLANK">Help</A>
-</FONT>
-</P>
-PrintTag
+  print "</P>\n";
+  print qq(<P ALIGN=CENTER><FONT SIZE=+1>\n<A HREF=# onclick="hset('Propers')">$propname</A>\n</FONT></P>\n);
+  print "<P ALIGN=CENTER><FONT SIZE=+1>\n" . bottom_links_menu() . "</FONT>\n</P>\n";
 }    
 
 #common end for programs
@@ -270,11 +238,10 @@ sub headline {
   my $head = shift;
   my $numsel = setmissanumber();
   $numsel = "<BR><BR>$numsel<BR>" if $numsel;
-  $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
+  my $headline = html_dayhead(setheadline(), $dayname[2]);
   print << "PrintTag";
-<P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
-$comment<BR><BR>
-<FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT><P>
+<P ALIGN=CENTER>$headline</P>
+<P ALIGN=CENTER><FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT></P>
 <P ALIGN=CENTER><A HREF=# onclick="callcompare()">Compare</A>
 &nbsp;&nbsp;&nbsp;<A HREF=# onclick="callofficium();">Divinum Officium</A>
 &nbsp;&nbsp;&nbsp;
@@ -295,10 +262,7 @@ PrintTag
 #*** Javascript functions
 # the sub is called from htmlhead
 sub horasjs {
-  print << "PrintTag";
-
-<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
-
+qq(
 //position
 function startup() {
   var i = 1;
@@ -424,9 +388,7 @@ function prevnext(ch) {
   }
   document.forms[0].date.value = m + "-" + d + "-" + y;
 }
-
-</SCRIPT>
-PrintTag
+)
 }
 
 # This procedure handles days on which there qre more than one proper Mass.

@@ -1,15 +1,16 @@
 [Rank]
 Beatæ Mariæ Virginis de Monte Carmelo;;Duplex majus;;4;;ex C11
 
-[Rank1960]
+[Rank] (rubrica 1960)
 Beatæ Mariæ Virginis de Monte Carmelo;;Simplex;;1.1;;vide C11
 
-[RankNewcal]
+[Rank] (rubrica Newcal)
 Beatæ Mariæ Virginis de Monte Carmelo;;Duplex optional;;2;;ex C11
 
 [Rule]
 ex C11;
 9 lectiones;
+Doxology=Nat
 
 [Oratio]
 Deus, qui beatíssimæ semper Vírginis et Genetrícis tuæ Maríæ singulári título Carméli órdinem decorásti: concéde propítius; ut, cujus hódie Commemoratiónem solémni celebrámus offício, ejus muníti præsídiis, ad gáudia sempitérna perveníre mereámur:

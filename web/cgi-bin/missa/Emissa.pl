@@ -22,11 +22,10 @@ use Time::Local;
 use locale;
 use lib "$Bin/..";
 use DivinumOfficium::Main qw(vernaculars liturgical_color);
+use DivinumOfficium::Date qw(prevnext);
 $error = '';
 $debug = '';
 
-our $Tk       = 0;
-our $Hk       = 0;
 our $Ck       = 0;
 our $missa    = 1;
 our $NewMass  = 0;
@@ -68,7 +67,7 @@ our $duplex;    #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
 require "$Bin/../horas/do_io.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/../horas/dialogcommon.pl";
-require "$Bin/webdia.pl";
+require "$Bin/../horas/webdia.pl";
 require "$Bin/../../../standalone/tools/epubgen2/Ewebdia.pl";
 require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
@@ -84,7 +83,7 @@ our ( $lang1, $lang2, $column );
 our %translate;     #translation of the skeleton label for 2nd language
 
 if ( !$setupsave ) {
-    %setup = %{ setupstring( $datafolder, '', 'missa.setup' ) };
+    %setup = %{ setupstring( '', 'missa.setup' ) };
 }
 else {
     %setup = split( ';;;', $setupsave );
@@ -99,9 +98,6 @@ if ( !$command )     { $command     = 'praySanctaMissa'; }
 our $missanumber = strictparam('missanumber');
 if ( !$missanumber ) { $missanumber = 1; }
 our $caller      = strictparam('caller');
-our $sanctiname  = 'Sancti';
-our $temporaname = 'Tempora';
-our $communename = 'Commune';
 
 #*** handle different actions
 #after setup
@@ -148,28 +144,17 @@ else {
     $solemn  = strictparam('solemn');
 }
 
-if ($flag) {
-    setsetup( 'general', $version, $testmode, $lang2, $votive, $rubrics,
-        $solemn );
-}
 if ( !$version ) { $version = 'Rubrics 1960'; }
 if ( !$lang2 )   { $lang2   = 'Latin'; }
-setmdir($version);
 
 # save parameters
-$setupsave = printhash( \%setup, 1 );
 $setupsave =~ s/\r*\n*//g;
 $setupsave =~ s/\"/\~24/g;
 precedence();    #fills our hashes et variables
-
-# prepare title
-$daycolor = liturgical_color($dayname[1], $commune);
-build_comment_line();
+setsecondcol();
 
 #prepare main pages
 $title = "Sancta Missa";
-
-#generate HTML
 
 $command =~ s/(pray|change|setup)//ig;
 $title    = "Sancta Missa";
@@ -181,17 +166,19 @@ $only = 1; # single-column
 ordo();
 
 #common end for programs
-if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
-if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
+if ($error) { print "<p align=center><font color=red>$error</font></p>\n"; }
+if ($debug) { print "<p align=center><font color=blue>$debug</font></p>\n"; }
+print "</body></html>";
 
 #*** hedline($head) prints headlibe for main and pray
 sub headline {
     my $head = shift;
-    $headline =~ s{!(.*)}{<FONT SIZE=1>$1</FONT>}s;
+  my $headline = html_dayhead($headline, $dayname[2]);
   my $daten = prevnext($date1, 1);
   my $datep = prevnext($date1, -1);
     print << "PrintTag";
-<P ALIGN=CENTER><a href="$datep-9-Missa.html">&darr;</a>
+<?xml version='1.0' encoding='utf-8'?><html xmlns="http://www.w3.org/1999/xhtml"><head/><body>
+<p align="center"><a href="$datep-9-Missa.html">&darr;</a>
 $date1
 <a href="$daten-9-Missa.html">&uarr;</a>
 <br />
@@ -211,27 +198,10 @@ $date1
 &nbsp;&nbsp;
 <a href="$date1-8-Completorium.html">Completorium</a>
 <br />
-<FONT COLOR=$daycolor>$headline<BR></FONT>
-$comment<BR>
-<a href="$date1-9-Missa.html"><FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT></a>
-</P>
+$headline<br>
+<a href="$date1-9-Missa.html"><font color="maroon" size="+1"><b><i>$head</i></b></font></a>
+</p>
 PrintTag
-}
-
-sub prevnext {
-  my $date1 = shift;
-  my $inc = shift;
-
-  $date1 =~ s/\//\-/g;
-  my ($month,$day,$year) = split('-',$date1);
-
-  my $d= date_to_days($day,$month-1,$year);
-
-  my @d = days_to_date($d + $inc);
-  $month = $d[4]+1;
-  $day = $d[3];
-  $year = $d[5]+1900;
-  return sprintf("%02i-%02i-%04i", $month, $day, $year);
 }
 
 # the sub is called from htmlhead

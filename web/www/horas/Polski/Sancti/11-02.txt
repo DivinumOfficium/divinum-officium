@@ -43,6 +43,15 @@ $Indulgentiam
 
 &special('Conclusio', 'Latin')
 
+
+[Oratio mortuorum2]
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+&Dominus_vobiscum2
+_
+$Oremus
+v. Wylewamy, Panie, pokorne prośby za dusze wszystkich Twoich sług i służebnic; abyś łaskawie odpuścił, cokolwiek zawinili w ludzkim postępowaniu, i dobrotliwie uczynił kres ich karom.
+$Per Dominum
+
 [Conclusio]
 &Gloria
 V. Niech odpoczywają w pokoju.
@@ -101,7 +110,7 @@ Z Pierwszego Listu Świętego Pawła Apostoła do Koryntian
 [Lectio9]
 !1 Kor 15:51-58
 51 Oto tajemnicę wam powiadam: Wszyscy wprawdzie zmartwycbwstaniemy, ale nie wszyscy odmienieni będziemy,
-52 Prędziuchno we mgnieniu oka, na trąbę ostateczną; (albowiem zatrąbi trąba), a umarli powstaną nieskażonymi, a my będziemy przemienieni.
+52 prędziuchno we mgnieniu oka, na trąbę ostateczną; (albowiem zatrąbi trąba), a umarli powstaną nieskażonymi, a my będziemy przemienieni.
 53 Boć musi to skazitelne przyoblec nieskazitelność: i to śmiertelne przyoblec nieśmiertelność.
 54 A gdy to śmiertelne przyoblecze nieśmiertelność, tedy się stanie mowa, która jest napisana: Pożarta jest śmierć w zwycięstwie.
 55 Gdzie jest zwycięstwo twe, o śmierci? Gdzież jest, śmierci, oścień twój?

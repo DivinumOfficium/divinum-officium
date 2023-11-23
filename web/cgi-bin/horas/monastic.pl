@@ -33,7 +33,7 @@ sub psalmi_matutinum_monastic {
   $psalmnum1 = $psalmnum2 = 0 if (($dayname[0] eq "Quad6") && ($dayofweek > 3));
 
   #** reads the set of antiphons-psalms from the psalterium
-  my %psalmi = %{setupstring($datafolder, $lang, 'Psalterium/Psalmi matutinum.txt')};
+  my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
   my $dw = $dayofweek;
   if ($winner{Rank} =~ /Dominica/i) { $dw = 0; }
   my @psalmi = split("\n", $psalmi{"Daym$dw"});
@@ -211,8 +211,7 @@ sub psalmi_matutinum_monastic {
       if ($w) { $w .= '.txt'; } else { $w = $winner; }
       $w =~ s/M//g;         # there is no corresponding folder missa/latin/SanctiM
       $s =~ s/(?:LectioE)?/Evangelium/;
-      my $dt = $datafolder; $dt =~ s/horas/missa/g;
-      my %missa = %{setupstring($dt, $lang, $w)};
+      my %missa = %{setupstring("../missa/$lang", $w)};
       @e = split("\n", $missa{$s});
     }
 
@@ -231,7 +230,7 @@ sub psalmi_matutinum_monastic {
     
   # end 2nd nocturn in ferial office
   my ($w, $c) = getproprium('MM Capitulum', $lang, 0, 1);
-  my %s = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
+  my %s = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
 
   if (!$w && $commune) {
     if ($commune =~ /(C\d+)/) {
@@ -253,7 +252,7 @@ sub psalmi_matutinum_monastic {
     $w = $s{"MM Capitulum$name"};
   }
   postprocess_vr($w,$lang) if ($dayname[0] =~ /Pasc/);
-  push(@s, "!!Capitulum", $w, "\n", '$MLitany', "\n");  # print Capitulum, V.R., Kyrie, Pater...
+  push(@s, "!!Capitulum", $w, "\n");  # print Capitulum, V.R.
 }
 
 #*** antetpsal_mmm($line, $i)
@@ -334,7 +333,7 @@ sub absolutio_benedictio {
     @a = split("\n", $m{Benedictio});
     setbuild2('Special benedictio');
   } else {
-    my %benedictio = %{setupstring($datafolder, $lang, 'Psalterium/Benedictions.txt')};
+    my %benedictio = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
     my $i =
         ($dayofweek == 1 || $dayofweek == 4) ? 1
       : ($dayofweek == 2 || $dayofweek == 5) ? 2
@@ -356,7 +355,7 @@ sub legend_monastic {
   #1 lesson
   absolutio_benedictio($lang);
   my %w = (columnsel($lang)) ? %winner : %winner2;
-  my $str == '';
+  my $str;
 
   if (exists($w{Lectio94})) {
     $str = $w{Lectio94};
@@ -366,6 +365,7 @@ sub legend_monastic {
   }
 
   $str =~ s/&teDeum\s*//;
+  $str =~ s/^(?=\p{Letter})/v. /;
   push(@s, $str, '$Tu autem', '_');
 
   my $resp = '';
@@ -381,7 +381,9 @@ sub legend_monastic {
       $resp = "Responsory for ne lesson not found!";
     }
   }
-  push(@s, responsory_gloria($resp, 3));
+  $resp = responsory_gloria($resp, 3);
+  matins_lectio_responsory_alleluia($resp, $lang);
+  push(@s, $resp);
 }
 
 #*** brevis_monstic($lang)
@@ -392,13 +394,18 @@ sub brevis_monastic {
   if ($commune =~ /C10/) {
     my %c = (columnsel($lang)) ? %commune : %commune2;
     my $name = getC10readingname();
-    $lectio = $c{$name} ."\n_\n" . $c{'Responsory3'};
+    my @resp = split(/\n/, $c{'Responsory3'});
+    if ($dayname[0] =~ /Pasc/i) {
+      ensure_single_alleluia($resp[1], $lang);
+      ensure_single_alleluia($resp[-1], $lang);
+    }
+    $lectio = join("\n", $c{$name}, "\$Tu autem\n_", @resp);
     setbuild2("Mariae $name");
   } elsif ($commune && $commune !~ /C\d/) {
     my %c = (columnsel($lang)) ? %commune : %commune2;
     $lectio = $c{"MM LB"};
   } else {
-    my %b = %{setupstring($datafolder, $lang, 'Psalterium/Matutinum Special.txt')};
+    my %b = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
     $lectio  = $b{"MM LB" . (($dayname[0] =~ /Pasc/) ? " Pasc" : $dayofweek)};
   }
   $lectio =~ s/&Gloria1?/&Gloria1/;
@@ -408,10 +415,9 @@ sub brevis_monastic {
 #*** regula($lang)
 #returns the text of the Regula for the day
 sub regula : ScriptFunc {
-
   my $lang = shift;
   my @a;
-  my $t = setfont($largefont, translate("Regula", $lang)) . "\n_\n";
+  my $t = setfont($largefont, translate("Regula", $lang)) . "\n";
   my $d = $day;
   my $l = leapyear($year);
 
@@ -419,41 +425,28 @@ sub regula : ScriptFunc {
   $fname = sprintf("%02i-%02i", $month, $d);
 
   if (!-e "$datafolder/Latin/Regula/$fname.txt") {
-    if (@a = do_read("$datafolder/Latin/Regula/Regulatable.txt")) {
-      my $a;
-      my %a = undef;
-
-      foreach $a (@a) {
-        my @a1 = split(';', $a);
-        $a{$a1[1]} = $a1[0];
-        $a{$a1[2]} = $a1[0];
-      }
-      $fname = $a{$fname};
+    if (@a = grep(/$fname/o, do_read("$datafolder/Latin/Regula/Regulatable.txt"))) {
+      $fname = substr($a[0],0,5);
     } else {
       return $t;
     }
   }
+
   $fname = checkfile($lang, "Regula/$fname.txt");
+  @a = do_read($fname);
+  my $title = shift(@a);
+  for (@a) { s/^$/_/; }
+  $title =~ s/.*#//;
+  unshift(@a, $title);
+  $t .= join("\n", @a);
 
-  if (@a = do_read($fname)) {
-    foreach $line (@a) {
-      $line =~ s/^.*?\#//;
-      $line =~ s/^(\s*)$/_$1/;
-      $t .= "$line\n";
-    }
-  }
-
-  if (!$l && $fname =~ /02\-23/) {
+  if ($month == 2 && $day == 23 && !$l) {
     $fname = checkfile($lang, "Regula/02-24.txt");
-
-    if (@a = do_read($fname)) {
-      foreach $line (@a) {
-        $line =~ s/^.*?\#//;
-        $line =~ s/^(\s*)$/_$1/;
-        $t .= "$line\n";
-      }
-    }
+    @a = do_read($fname);
+    shift(@a);
+    for (@a) { s/^$/_/; }
+    $t .= join("\n", @a);
   }
-  $t .= '$Tu autem';
+
   return $t;
 }

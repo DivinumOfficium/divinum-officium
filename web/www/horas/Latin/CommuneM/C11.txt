@@ -24,14 +24,79 @@ Hortus conclúsus * es Dei Génitrix, hortus conclúsus, fons signátus: † sur
 ;;249;250;251
 @Commune/C11::14-15
 
+[Lectio2]
+@Commune/C11:Lectio2:s/-25/-22/ :s/23 .*//s
+
+[Lectio3]
+@Commune/C11:Lectio2:s/18-25/23-25; 34/ :s/23 .*//s
+@Commune/C11:Lectio3:s/!.*// s/35 .*//s
+
+[Lectio4]
+@Commune/C11:Lectio3:s/34-/35-/ s/34 .*35 /35 /s
+
+[Responsory4]
+R. Beáta progénies, unde Christus natus est.
+* O quam gloriósa est Virgo, quæ cæli Regem génuit!
+V. Felix namques es, sacra Virgo Mária, et omni laude digníssima.
+R. O quam gloriósa est Virgo, quæ cæli Regem génuit! 
+
+[Lectio5]
+@Commune/C11:Lectio4
+
+[Responsory5]
+@Commune/C11:Responsory4
+
+[Lectio6]
+@Commune/C11:Lectio5
+
+[Responsory6]
+@Commune/C11:Responsory5
+
+[Lectio7]
+@Commune/C11:Lectio6:s/Ave .*//s
+
+[Responsory7]
+@Commune/C11:Responsory6:1-3
+R. Et vidéntes eam fíliæ Sion, beatíssimam prædicavérunt, dicéntes: Unguéntum effúsum nomen tuum.
+
+[Lectio8]
+@Commune/C11:Lectio6:s/.* Ave /Ave /s
+
+[Responsory8]
+R. Diffúsa est grátia in lábiis tuis,
+* Proptérea benedíxit te Deus in ætérnum.
+V. Myrrha et gutta et cásia a vestiméntis tuis, a grádibus ebúrneis, ex quibus delectavérunt te fíliæ regum in hoóre tuo.
+R. Proptérea benedíxit te Deus in ætérnum. 
+
+[Lectio9]
+@Commune/C11:Lectio7
+
 [Responsory9]
-R. Beata es Virgo Maria, Dei Genitrix, quae credidisti Domino: perfecta sunt in~
-te quae dicta sunt tibi: ecce exaltata es super choros Angelorum:
-* Intercede pro nobis ad Dominum Deum nostrum.
-V. Ave Maria, gratia plena, Dominus tecum.
-R. Intercede pro nobis ad Dominum Deum nostrum.
-&Gloria
-R. Intercede pro nobis ad Dominum Deum nostrum.
+@Commune/C11:Responsory7
+
+[Lectio10]
+@Commune/C11:Lectio8:s/Et nos .*//s
+
+[Responsory10]
+@Commune/C11:Responsory8
+
+[Lectio11]
+@Commune/C11:Lectio8:s/.* Et nos /Et nos /s
+
+[Responsory11]
+R. Benedícta et venerábilis es, Virgo María,
+* Cujus víscera meruérunt portáre Dóminum Christum.
+V. Benedícta tu in muliéribus et benedíctus fructus ventris tui.
+R. Cujus víscera meruérunt portáre Dóminum Christum. 
+
+[Lectio12]
+@Commune/C11:Lectio9
+
+[Responsory12]
+R. Beáta es Virgo María, Dei Génitrix, quæ credidísti Dómino: perfécta sunt in te, quæ dicta sunt tibi: ecce exaltáta es super choros Angelórum:
+* Intercéde pro nobis ad Dóminum Deum nostrum.
+V. Ave María, grátia plena, Dóminus tecum.
+R. Intercéde pro nobis ad Dóminum Deum nostrum.
 
 [Capitulum Laudes]
 @CommuneM/C10:Capitulum Vespera

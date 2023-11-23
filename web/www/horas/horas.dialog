@@ -5,7 +5,8 @@ Language 1~>$lang1~>Optionmenu~>languages~>3;;
 Pius XII Psalter~>$psalmvar~>Checkbutton~>~>4;;
 Use antique hymns~>$oldhymns~>Checkbutton~>~>15;;
 Hide verse numbers~>$nonumbers~>Checkbutton~>~>16;;
-White background~>$whitebground~>Checkbutton~>~>5;;
+Don't use fancy characters~>$nofancychars~>Checkbutton~>~>17;;
+Contrast background~>$whitebground~>Checkbutton~>~>5;;
 Text font~>$blackfont~>Entry~>12~>6;;
 Small text~>$smallblack~>Entry~>12~>7;;
 Red font~>$redfont~>Entry~>12~>8;;
@@ -14,29 +15,35 @@ Large font~>$largefont~>Entry~>12~>10;;
 Small red~>$smallfont~>Entry~>12~>11;;
 Title font~>$titlefont~>Entry~>12~>12;;
 Screen height~>$screenheight~>Entry~>12~>13;;
-Text width percent~>$textwidth~>Entry~>12~>14;;
+Text width percent~>$textwidth~>Entry~>12~>14
 
 [general]
 Expand~>$expand~>Optionmenu~>{all,psalms,none,skeleton};;
-Version~>$version~>Optionmenu~>{Tridentinum,Divino Afflatu,Reductions 1955,Rubrics 1960};;
+Version~>$version~>Optionmenu~>versions;;
 Language 2~>$lang2~>Optionmenu~>languages;;
-Psalmversion~>$accented~>Optionmenu~>psalmversion;;
+Votive~>$votive~>Optionmenu~>votives;;
 
 [generalc]
 Expand~>$expand~>Optionmenu~>{all,psalms,none,skeleton};;
-Version 1~>$version1~>Optionmenu~>{Tridentinum,Divino Afflatu,Reductions 1955,Rubrics 1960};;
-Version 2~>$version2~>Optionmenu~>{Tridentinum,Divino Afflatu,Reductions 1955,Rubrics 1960};;
-Language 2~>$lang2~>Optionmenu~>languages;;
-Psalmversion~>$accented~>Optionmenu~>psalmversion;;
+Version 1~>$version~>Optionmenu~>versions;;
+Version 2~>$version2~>Optionmenu~>versions;;
+Language~>$langc~>Optionmenu~>languages;;
+Votive~>$votive~>Optionmenu~>votives;;
 
 [languages]
-Latin,Deutsch,English,Espanol,Francais,Italiano,Magyar,Polski,Polski-Newer,Bea
+Latin,Dansk,Deutsch,English,Español/Espanol,Français/Francais,Italiano,Magyar,Polski,Português/Portugues,Latin-Bea,Polski-Newer
+
+[versions]
+Tridentine - 1570,Tridentine - 1888,Divino Afflatu - 1954,Reduced - 1955,Rubrics 1960 - 1960,Rubrics 1960 - 2020 USA,Monastic - 1963,Ordo Praedicatorum - 1962
+
+[votives]
+Hodie,Dedicatio/C8,Defunctorum/C9,Parvum B.M.V./C12
 
 [psalmversion]
 accented,plain
 
 [horas]
-Ante,Matutinum,Laudes,Prima,Tertia,Sexta,Nona,Vesperae,Completorium,Post
+Matutinum,Laudes,Prima,Tertia,Sexta,Nona,Vesperae,Completorium
 
 [communes]
 C1,Commune Apostolorum, 
