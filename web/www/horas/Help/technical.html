@@ -138,14 +138,17 @@ File <CODE>data.txt</CODE> provides map information for officium versions used i
   <LI><CODE>Tempora</CODE> perpetually-transfers of the Tempora (Divino Afflatu is used as base).<BR>
   <LI><CODE>Transfer</CODE> transfers based on Easter date.<BR>
     Lines starts with '#-' signs are comments. Other lines are divided in three parts: before '=' char, between '=' and ';;', and after ';;'.<BR>
-      Meaning is shown in examples from file <CODE>402.txt</CODE> :<BR>
-			<CODE>01-11=01-10~01-11cc;;1570 1910
-				<br>01-12=01-11;;1570 1910
-				<br>03-20=03-19;;1570 1910 1960 DA M Newcal</CODE><BR>
+      Meaning is shown in examples from files <CODE>a.txt</CODE> and <CODE>402.txt</CODE> respectively:<BR>
+			<CODE>01-11=01-10~01-11cc;;1570 1888 1906
+				<br>01-12=01-11;;1570 1888 1906</CODE><BR>
+			<UL>
+				<li>On January 11th, in all years with Dominical letter 'A' and under the Tridentine rubrics only, the office is of the 5th day of the octave (transferred from Jan. 10) but still with the commemoration of S. Hyginus.
+					<li>On January 12th, in the same years and under the same rubrics, the office is of the 6th day of the octave (transferred from Jan. 11) but without the aforementioned commemoration.
+				</UL>
+				<CODE>03-20=03-19t;;1570
+				<br>03-20=03-19;;1888 1960 DA M Newcal</CODE><BR>
 				<UL>
-					<li>On January 11th, the office is of the 5th day of the octave (transferred from Jan. 10) but still with the commemoration of S. Hyginus.
-					<li>On January 12th, the office is of the 6th day of the octave (transferred from Jan. 11) but without the aforementioned commemoration
-				<li>on the day March 20th there is Solemnity of St. Joseph (March 19th) for versions (1570, 1910 ...) (used short versions names from mentioned above file <CODE>data.txt</CODE>)<BR>
+					<li>In every year where Easter Sunday is on April 2nd, on the day March 20th there is Solemnity of St. Joseph (March 19th) for versions (1888, 1960 etc.; used short versions names from mentioned above file <CODE>data.txt</CODE>). For 1570, a different database file is used while in 1906, St. Joseph outranked the Sunday (temporarily) and does not get transferred.<BR>
 					</UL>
         <CODE>dirge1=01-23 02-03 02-20;;1570</CODE><BR>
       lists days where Officium Defunctorum is read after Vespera and Laudes. (dirge1 is for January and February, dirge2 for remaining months).<BR>
