@@ -1,12 +1,6 @@
 [Rank]
 S. Thomæ Episcopi et Martyris;;Duplex;;3;;vide C2
 
-[Rank1570]
-S. Thomæ Episcopi et Martyris;;Semiduplex;;2;;vide C2
-
-[Rank1960]
-Die quinta post Nativitatem;;Semiduplex;;5.8;;ex Sancti/12-25
-
 [Rule]
 vide C2;
 no commemoratio
@@ -15,44 +9,6 @@ no commemoratio
 [Oratio]
 Oh Dios, por cuya Iglesia murió el glorioso Pontífice Tomás al filo de las espadas de los impíos; te rogamos nos concedas que todos cuantos imploramos su auxilio, consigamos el saludable efecto de su intervención.
 $Per Dominum
-
-[Lectio1]
-Empieza la Epístola del Apóstol San Pablo a los Romanos
-!Rom 1:1-7
-1 Pablo, siervo de Cristo Jesús, llamado al apostolado, elegido para predicar el Evangelio de Dios, 
-2 que por sus profetas había prometido en las Santas Escrituras, 
-3 acerca de su Hijo, nacido de la descendencia de David según la carne, 
-4 constituido Hijo de Dios en poder según el Espíritu de santidad a partir de la resurrección de entre los muertos, Jesucristo nuestro Señor, 
-5 por el cual hemos recibido la gracia y el apostolado para promover la obediencia de la fe, para gloria de su nombre, 
-6 en todas las naciones, entre las cuales os contáis también vosotros, los llamados de Jesucristo;
-7 a todos los amados de Dios, llamados santos, que están en Roma, la gracia y la paz con vosotros de parte de Dios, nuestro Padre, y del Señor Jesucristo. 
-
-[Responsory1]
-@Sancti/12-25:Responsory2
-
-[Lectio2]
-!Rom 1:8-12
-8 Ante todo doy gracias a mi Dios por Jesucristo, por todos vosotros, de que vuestra fe es conocida en todo el mundo. 
-9 Testigo me es Dios, a quien sirvo en mi espíritu, mediante la predicación del Evangelio de su Hijo, que sin cesar hago memoria de vosotros, 
-10 suplicándole siempre en mis oraciones que por fin algún día, por voluntad de Dios, se me allane el camino para ir a veros. 
-11 Porque, a la verdad, deseo veros, para comunicaros algún don espiritual, para confirmaros, 
-12 o mejor, para consolarme con vosotros por la mutua comunicación de nuestra común fe. 
-
-[Responsory2]
-@Sancti/12-25:Responsory3
-
-[Lectio3]
-!Rom 1:13-19
-13 No quiero que ignoréis, hermanos, que muchas veces me he propuesto ir, pero he sido impedido hasta el presente, para recoger algún fruto también entre vosotros, como en las demás gentes. 
-14 Me debo tanto a los griegos como a los bárbaros, tanto a los sabios como a los ignorantes. 
-15 Así que en cuanto en mí está, pronto estoy a evangelizaros también a vosotros los de Roma. 
-16 Pues no me avergüenzo del Evangelio, que es poder de Dios para la salud de todo el que cree, del judío primero, pero también del griego, 
-17 porque en él se revela la justicia de Dios, de fe en fe, según está escrito: “El justo por la fe vivirá.” 
-18 En efecto, la ira de Dios se manifiesta desde el cielo sobre toda impiedad e injusticia de los hombres, que aprisionan la verdad con la injusticia. 
-19 Pues lo cognoscible de Dios es manifiesto entre ellos, ya que Dios se lo manifestó.
-
-[Responsory3]
-@Sancti/12-25:Responsory4
 
 [Lectio4]
 Santo Tomás nacido en Londres, Inglaterra, sucedió a Teobaldo, obispo de Cantorbery. Antes había ejercido dignamente el cargo de Canciller: En el ejercicio del episcopado se mostró fuerte e invencible. Queriendo Enrique II, rey de Inglaterra, en una asamblea de los prelados y nobles del reino, establecer leyes contrarias al bien y a la dignidad de la Iglesia, Tomás se opuso a sus deseos con tanta firmeza, que no habiendo querido ceder, no obstante las promesas y amenazas que le hiciera, viose obligado a retirarse para no ser encarcelado. Pronto todos sus parientes, amigos y partidarios fueron expulsados del reino, después de haber sido obligados a jurar, aquellos cuya edad se lo permitía, que irían a encontrar a Tomás, con el fin de quebrantar, mostrándole el deplorable estado de los suyos, la santa resolución que no habían podido modificar las privadas incomodidades. No consideró la carne ni la sangre, ni sentimiento humano alguno pudo alterar su firmeza pastoral.
@@ -79,23 +35,3 @@ Ya se lo había reprochado Ezequiel, diciendo: “¡Oh, los pastores de Israel! 
 De unos y otros se muestra diferente Jesucristo: de los que vienen para la pérdida de los demás, cuando dice: Para eso vine, para que tengan vida, y la tengan abundante; y de los que contemplan impasibles a las ovejas en las fauces del lobo, cuando afirma : El da su vida para que no perezcan sus ovejas. En efecto: al proponerse los judíos darle muerte, no por esto renunció a predicar su doctrina, ni abandonó a los que creían en Él, ni los traicionó, sino que soportó la muerte con firmeza. Pudo, pues, decir con frecuencia: Yo soy el buen Pastor. Pero como de sus palabras no tenían prueba (ya que la afirmación “doy mi vida” se cumplió más tarde, y esta otra: para que tengan vida, y la tengan abundante; no se realizará sino en la vida futura); confirmando así una de sus aserciones con la otra.
 &teDeum
 
-[Ant Vespera 3]
-@Sancti/12-25
-
-[Commemoratio 2]
-@Sancti/12-25:Octava
-
-[Commemoratio 3]
-@Sancti/12-25:Octava
-
-[Commemoratio 2] (rubrica trident)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-@Sancti/12-28:Octava
-
-[Commemoratio 3] (rubrica trident)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-@Sancti/12-28:Octava
