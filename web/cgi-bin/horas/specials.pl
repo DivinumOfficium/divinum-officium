@@ -118,7 +118,8 @@ sub specials {
     if ($rule =~ /Ave only/i && $item =~ /incipit/i) {
       setcomment($label, 'Preces', 2, $lang);
 
-      while ($t[$tind] !~ /^\s*\#/) {
+      while ($t[$tind] !~ /^\s*\#/)
+			{
         if ($t[$tind] !~ /(Pater|Credo)/) { push(@s, $t[$tind]); }
         $tind++;
       }
@@ -582,7 +583,16 @@ sub preces {
       if ($r[2] >= 3 || $commemoratio{Rank} =~ /Octav/i || checkcommemoratio(\%commemoratio) =~ /octav/i) {
         $dominicales = 0;
       }
-    }
+		} elsif (@commemoentries) {
+			foreach my $commemo (@commemoentries) {
+				if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
+				my %c = %{officestring($lang, $commemo, 0)};
+				my @cr = split(";;", $c{Rank});
+				if ($cr[2] >= 3 || $c{Rank} =~ /Octav/i || checkcommemoratio(\%c) =~ /octav/i) {
+					$dominicales = 0;
+				}
+			}
+		}
 
     if ($dominicales
         && ($winner{Rank} !~ /octav/i || $winner{Rank} =~ /post octav/i)
@@ -1131,15 +1141,15 @@ sub oratio {
     %w = %{setupstring($lang, subdirname('Tempora', $version) . "$name.txt")};
   }
 
-  if ($dayofweek > 0 && exists($w{"OratioW"}) && $rank < 5) {
-    $w = $w{"OratioW"};
+	if ($dayofweek > 0 && exists($w{"OratioW"}) && $rank < 5) {
+		$w = $w{"OratioW"};	# Ferias in 1st week after Pentecost only
   } else {
     $w = $w{"Oratio"};
   }
   if ($hora =~ /Matutinum/i && exists($w{'Oratio Matutinum'})) { $w = $w{'Oratio Matutinum'}; }
-  if (!$w) { $w = $w{"Oratio $ind"}; }
+	if (!$w) { $w = $w{"Oratio $ind"}; }	# if none yet, look for Oratio of Vespers or Lauds according to ind
 
-  if (!$w) {
+	if (!$w) {	# if none yet, look in commune.
     my %c = (columnsel($lang)) ? %commune : %commune2;
     my $i = $ind;
     $w = $c{"Oratio $i"};
@@ -1149,14 +1159,14 @@ sub oratio {
   if ($hora !~ /Matutinum/i) { setbuild($winner, "Oratio $ind", 'Oratio ord'); }
   my $i = $ind;
 
-  if (!$w) {
-    if ($i == 2) {
+	if (!$w) {	# if none yet:
+		if ($i == 2) {	# if Laudes, try 2nd Vespers
       $i = 3;
       $w = $w{"Oratio $i"};
-    } else {
+		} else {	# if Vespers, try Laudes
       $w = $w{'Oratio 2'};
     }
-    if (!$w) { $i = 4 - $i; $w = $w{"Oratio $i"}; }
+		if (!$w) { $i = 4 - $i; $w = $w{"Oratio $i"}; }		# or, try other Vesper
     if ($w && $hora !~ /Matutinum/i) { setbuild($winner, "Oratio $i", 'try'); }
   }
 
@@ -1178,7 +1188,7 @@ sub oratio {
     if ($w && $hora !~ /Matutinum/i) { setbuild2("$commune Oratio$ti"); }
   }
 
-  if ($winner =~ /tempora/i && !$w) {
+	if ($winner =~ /tempora/i && !$w) {	# if tempora, default to Sunday Oratio
     my $name = "$dayname[0]-0";
     %w = %{officestring($lang, subdirname('Tempora', $version) . "$name.txt")};
     $w = $w{Oratio};
@@ -1186,7 +1196,7 @@ sub oratio {
     if ($w) { setbuild2("Oratio Dominica"); }
   }
 
-  #* deletes added commemoratio
+  #* deletes added commemoratio unless in laudes and vespers
   $comm_regex_str = "!(" . &translate('Commemoratio', $lang) . "|Commemoratio)";
 
   if (
@@ -1238,94 +1248,310 @@ sub oratio {
   if ($rule =~ /omit .*? commemoratio/i) { return; }
 
   #*** SET COMMEMORATIONS
-  our %cc = ();
-  our $ccind = 0;
-  our $octavcount = 0;
+	our %cc = ();
+	our $ccind = 0;
+	our $octavcount = 0;
+	if($hora =~ /laudes/i && $rank < 7) {
+		our @commemoentries;
+		my $c;
+		my %c = ();
+		
+		# add commemorated from winner
+		unless(($rank >= 6 && $dayname[0] !~ /Pasc[07]/)
+		|| $rule =~ /no commemoratio/i
+		|| ($version =~ /196/ && $winner{Rule} =~ /nocomm1960/i)) {
+			if (exists($winner{"Commemoratio 2"})) {
+				$c = getrefs($winner{"Commemoratio 2"}, $lang, 2, $winner{Rule});
+			} elsif (exists($winner{Commemoratio})) {
+				$c = getrefs($winner{Commemoratio}, $lang, 2, $winner{Rule});
+			} else {
+				$c = undef;
+			}
+			
+			if ($dayofweek == 6 && exists($winner{'Commemoratio Sabbat'}) && $version !~ /1960/) {
+				$c = getrefs($winner{'Commemoratio Sabbat'}, $lang, 2, $winner{Rule});
+			}
+			
+			my $redn = setfont($largefont, 'N.');
+			$c =~ s/ N\. / $redn /g;
+			$c =~ s/\n!/\n!!/g;
+			$c =~ s/!!Oratio/!Oratio/gi;
+			$c =~ s/\$Oremus\s*\n(v. )?/\$Oremus\nv. /g;
+			my @ic = split('!!', $c);
+			
+			foreach my $ic (@ic) {
+				if (!$ic || $ic =~ /^\s*$/
+					|| ($ic =~ /!.*?(O[ckt]ta|Dominica)/i && nooctnat())
+					|| ($version =~ /19(?:55|6)/ && $ic =~ /!.*?Vigil/i && $commemo =~ /Sancti/i && $commemo !~ /08\-14|06\-23|06\-28|08\-09/)) { next;
+					}
+				if ($ic !~ /^!/) { $ic = "!$ic"; }
+				$ccind++;
+				$key = $ic =~ /Dominic[aæ]/i ? ($version !~ /trident/i ? 3000 : 7100) : $ccind + 9900; # Sundays are all privilegde commemorations under DA
+				$cc{$key} = $ic;
+			}
+		}
+		
+		# Add Commemorated Offices:
+		foreach my $commemo (@commemoentries) {
+			my $key = 0;	# let's start with lowest rank
+			if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
+			$c = getcommemoratio($commemo, 2, $lang);
+			%c = %{officestring($lang, $commemo, 0)};
+			
+			if($c) {
+				
+				my @cr = split(";;", $c{Rank});
+				if ($cr[0] =~ /Vigilia Epi|Dominica/i) {	# Sundays are all privilegde commemorations under DA
+					$key = ($version !~ /trident/i || ($version =~ /1906/ && $cr[2] > 5)) ? 7000 : 2900;	# highest rank
+				} else {
+					$key = $cr[2] * 1000;		# rank depending on the type of commemoration to be made
+				}
+				$key = 10000 - $key; # reverse order
+				$ccind++;
+				$cc{$key} = $c;
+			}
+			
+			# add commemorated from commemo
+			unless(($rank >= 6 && $dayname[0] !~ /Pasc[07]/)
+					|| $rule =~ /no commemoratio/i
+					|| ($version =~ /196/ && $c{Rule} =~ /nocomm1960/i)) {
+				if (exists($c{"Commemoratio 2"})) {
+					$c = getrefs($c{"Commemoratio 2"}, $lang, 2, $c{Rule});
+				} elsif (exists($c{Commemoratio})) {
+					$c = getrefs($c{Commemoratio}, $lang, 2, $c{Rule});
+				} else {
+					$c = undef;
+				}
+				
+				if ($dayofweek == 6 && exists($c{'Commemoratio Sabbat'}) && $version !~ /1960/) {
+					$c = getrefs($c{'Commemoratio Sabbat'}, $lang, 2, $c{Rule});
+				}
 
-  #* add commemorated office from Sancti
-  if (
-       $hora =~ /(laudes|vespera)/i
-    && $commemoratio1
-    && ( $hora =~ /laudes/i
-      || $version !~ /1960/
-      || $rank < 6
-      || $commemoratio1{Rank} =~ /Dominica|;;6/i
-      || ($commemoratio1 =~ /Tempora/i && $commemoratio1{Rank} =~ /;;[23]/))
-    )
-  {
-    $i = getind($commemoratio1, ($hora =~ /laudes/i) ? 2 : $cvespera, $day);
-    $w = getcommemoratio($commemoratio1, $i, $lang);
-    my $num = concurrent_office($commemoratio1, 1, $day);
-    if ($w) { setcc($w, $num, setupstring($lang, $commemoratio1)); }
-  }
+				my $redn = setfont($largefont, 'N.');
+				$c =~ s/ N\. / $redn /g;
+				$c =~ s/\n!/\n!!/g;
+				$c =~ s/!!Oratio/!Oratio/gi;
+				$c =~ s/\$Oremus\s*\n(v. )?/\$Oremus\nv. /g;
+				my @ic = split('!!', $c);
+				
+				foreach my $ic (@ic) {
+					if (!$ic || $ic =~ /^\s*$/
+						|| ($ic =~ /!.*?(O[ckt]ta|Dominica)/i && nooctnat())
+						|| ($version =~ /19(?:55|6)/ && $ic =~ /!.*?Vigil/i && $commemo =~ /Sancti/i && $commemo !~ /08\-14|06\-23|06\-28|08\-09/)) { next;
+					}
+					if ($ic !~ /^!/) { $ic = "!$ic"; }
+					$ccind++;
+					$key = $ic =~ /Dominic[aæ]/i ? ($version !~ /trident/i ? 3000 : 7100) : $ccind + 9900; # Sundays are all privilegde commemorations under DA
+					$cc{$key} = $ic;
+				}
+			}
+			if ($dayofweek != 0 && exists($c{'Oratio Vigilia'})) {
+				$c = vigilia_commemoratio($commemo, $lang);
+				if ($c) {
+					$ccind++;
+					$key = $ccind + 8500; # 10000 - 1.5 * 1000
+					$cc{$key} = $c;
+				}
+			}
+		}
+		
+		if ($transfervigil) {
+			if (!(-e "$datafolder/$lang/$transfervigil")) { $transfervigil =~ s/v\.txt/\.txt/; }
+			$c = vigilia_commemoratio($transfervigil, $lang);
+			if ($c) {
+				$ccind++;
+				$key = $ccind + 8500; # 10000 - 1.5 * 1000
+				$cc{$key} = $c;
+			}
+		}
+		
+	
+		# Under the 1960 rubrics, on II. cl and higher days,
+		# allow at most one commemoration. We use @rank rather
+		# than $rank as sometimes the latter is adjusted for
+		# calculating precedence.
+		my @rank = split(';;', $winner{Rank});
+		if ($version =~ /1960/ &&
+			($rank[2] >= 5 || ($dayname[1] =~ /Feria/i && $rank[2] >= 3)) &&
+			$ccind > 1) {
+				my @keys = sort(keys(%cc));
+				%cc = ($keys[0] => $cc{$keys[0]});
+				$ccind = 1;
+		}
+	} elsif ($hora =~ /vespera/i && $rank < 7) {
+		our $cwinner;
+		our @commemoentries;
+		our @ccommemoentries;
+		
+		my $c;
+		my %c = ();
 
-  if (
-       $hora =~ /(laudes|vespera)/i
-    && $commemoratio
-    && ( $hora =~ /laudes/i
-      || $version !~ /196/
-      || $rank < 6
-      || $commemoratio{Rank} =~ /(Dominica|;;6)/i
-      || ($commemoratio =~ /Tempora/i && $commemoratio{Rank} =~ /;;[23]/))
-    )
-  {
-    $i = getind($commemoratio, ($hora =~ /laudes/i) ? 2 : $cvespera, $day);
-    if ($i == 0) { $i = 1; }    #Christ the King on 10-31
-    $w = getcommemoratio($commemoratio, $i, $lang);
-    my $num = concurrent_office($commemoratio, 2, $day);
-    if ($w) { setcc($w, $num, setupstring($lang, $commemoratio)); }
-  }
-
-  #transfervigil
-  if ($hora =~ /Laudes/i && $transfervigil) {
-    if (!(-e "$datafolder/$lang/$transfervigil")) { $transfervigil =~ s/v\.txt/\.txt/; }
-    $w = vigilia_commemoratio($transfervigil, $lang);
-    if ($w) { setcc($w, 3, setupstring($lang, $transfervigil)); }
-  }
-
-  #add commemoratio in winner for lauds or first vespers
-  my $ci = $ind;
-
-  if (
-    $hora =~ /laudes/i
-    || ($version !~ /1960/ && ($vespera == 1 || $winner =~ /tempora/i)
-      || exists($winner{'Commemoratio 3'}))
-    )
-  {
-    commemoratio('winner', $ci, $lang);
-  }
-
-  #commemoratio from commemorated office
-  if ($hora =~ /vespera/i) { $ci = 4 - $ind; }
-
-  if (
-    $commemoratio
-    && ( $version !~ /1960/ && $hora =~ /vespera/i && ($cvespera == 1 || $commemoratio =~ /Tempora/i)
-      || $hora =~ /laudes/i)
-    )
-  {
-    commemoratio('commemoratio', $ci, $lang);
-  }
-
-  if (
-    $commemoratio1
-    && (($version !~ /1960/ && $hora =~ /vespera/i && $vespera == 3)
-      || $hora =~ /laudes/i)
-    )
-  {
-    commemoratio('commemoratio1', $ci, $lang);
-  }
-  if ($commemorated && $version !~ /1960/) { commemoratio('commemorated', ($hora =~ /Laudes/i) ? 2 : 1, $lang); }
-
-  if ($dayofweek != 0 && exists($commemoratio{'Oratio Vigilia'}) && $hora =~ /Laudes/i) {
-    $w = vigilia_commemoratio($commemoratio, $lang);
-    if ($w) { setcc($w, 3, setupstring($lang, $commemoratio)); }
-  }
+		# add commemorated from winner
+		unless(($rank >= 6 && $dayname[0] !~ /Pasc[07]/)
+		|| $rule =~ /no commemoratio/i
+		|| ($version =~ /196/ && $winner{Rule} =~ /nocomm1960/i)) {
+			if (exists($winner{"Commemoratio $vespera"})) {
+				$c = getrefs($winner{"Commemoratio $vespera"}, $lang, $vespera, $winner{Rule});
+			} elsif (exists($winner{Commemoratio}) && $vespera == 1) {
+				$c = getrefs($winner{Commemoratio}, $lang, 1, $winner{Rule});
+			} else {
+				$c = undef;
+			}
+	
+			my $redn = setfont($largefont, 'N.');
+			$c =~ s/ N\. / $redn /g;
+			$c =~ s/\n!/\n!!/g;
+			$c =~ s/!!Oratio/!Oratio/gi;
+			$c =~ s/\$Oremus\s*\n(v. )?/\$Oremus\nv. /g;
+			my @ic = split('!!', $c);
+			
+			foreach my $ic (@ic) {
+				if (!$ic || $ic =~ /^\s*$/
+					|| ($ic =~ /!.*?(O[ckt]ta|Dominica)/i && nooctnat())
+					|| ($version =~ /19(?:55|6)/ && $ic =~ /!.*?Vigil/i && $winner =~ /Sancti/i && $winner !~ /08\-14|06\-23|06\-28|08\-09/)) { next;
+					}
+				if ($ic !~ /^!/) { $ic = "!$ic"; }
+				$ccind++;
+				$key = $ic =~ /Dominic[aæ]/i ? ($version !~ /trident/i ? 3000 : 7100) : $ccind + 9900; # Sundays are all privilegde commemorations under DA
+				$cc{$key} = $ic;
+				setbuild2("Commemorated: $key");
+			}
+		}
+		
+		# add Concurrent Office
+		if ($cwinner) {
+			setbuild2("Concurrent office $cvespera: $cwinner");
+			
+			my $key = 0;	# let's start with lowest rank
+			if (!(-e "$datafolder/$lang/$cwinner") && $cwinner !~ /txt$/i) { $cwinner =~ s/$/\.txt/; }
+			$c = getcommemoratio($cwinner, $cvespera, $lang);
+			%c = %{officestring($lang, $cwinner, ($cvespera == 1 && $cwinner =~ /tempora/i) ? 1 : 0)};
+			
+			if($c) {
+				my @cr = split(";;", $c{Rank});
+				if ($version =~ /trident/i && $version !~ /1906/) {
+					$key = ($cr[0] =~ /Vigilia Epi|Dominica/i) ? 2900 : $cr[2] * 1000;
+				} else {
+					$key = 9000; # concurrent office comes first under DA and also 1906
+				}
+				$key = 10000 - $key; # reverse order
+				$ccind++;
+				$cc{$key} = $c;
+				setbuild2("Commemoratio: $key");
+			}
+			
+			# add commemorated from cwinner
+			unless(($rank >= 6 && $dayname[0] !~ /Pasc[07]/)
+			|| $rule =~ /no commemoratio/i
+			|| ($version =~ /196/ && $c{Rule} =~ /nocomm1960/i)) {
+				if (exists($c{"Commemoratio $cvespera"})) {
+					$c = getrefs($c{"Commemoratio $cvespera"}, $lang, $cvespera, $c{Rule});
+				} elsif (exists($c{Commemoratio}) && $cvespera == 1 ) {
+					$c = getrefs($c{Commemoratio}, $lang, 1, $c{Rule});
+				} else {
+					$c = undef;
+				}
+				
+				my $redn = setfont($largefont, 'N.');
+				$c =~ s/ N\. / $redn /g;
+				$c =~ s/\n!/\n!!/g;
+				$c =~ s/!!Oratio/!Oratio/gi;
+				$c =~ s/\$Oremus\s*\n(v. )?/\$Oremus\nv. /g;
+				my @ic = split('!!', $c);
+				
+				foreach my $ic (@ic) {
+					if (!$ic || $ic =~ /^\s*$/
+						|| ($ic =~ /!.*?(O[ckt]ta|Dominica)/i && nooctnat())
+						|| ($version =~ /19(?:55|6)/ && $ic =~ /!.*?Vigil/i && $cwinner =~ /Sancti/i && $cwinner !~ /08\-14|06\-23|06\-28|08\-09/)) { next;
+						}
+					if ($ic !~ /^!/) { $ic = "!$ic"; }
+					$ccind++;
+					$key = $ic =~ /Dominic[aæ]/i ? ($version !~ /trident/i ? 3000 : 7100) : $ccind + 9900; # Sundays are all privilegde commemorations under DA
+					$cc{$key} = $ic;
+					setbuild2("Commemorated: $key");
+				}
+			}
+		}
+		
+		# Add commemorated Offices of tomorrow and today
+		foreach my $cv ((1, 3)) {
+			my @centries = ($cv == 1) ? @ccommemoentries : @commemoentries;
+			
+			foreach my $commemo (@centries) {
+				setbuild2("Comm-$cv: $commemo");
+				
+				my $key = 0;	# let's start with lowest rank
+				if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
+				$c = getcommemoratio($commemo, $cv, $lang);
+				%c = %{officestring($lang, $commemo, 0)};
+				
+				if($c) {
+					
+					my @cr = split(";;", $c{Rank});
+					if ($cr[0] =~ /Vigilia Epi|Dominica/i) {
+						$key = ($version !~ /trident/i || ($version =~ /1906/ && $cr[2] > 5)) ? 7000 : 2900;	# under DA, all Sundays, in 1906, priviliged Sundays, are all privilegded commemorations
+					} else {
+						$key = $cr[2] * 1000;		# rank depending on the type of commemoration to be made
+					}
+					$key = 10000 - $key + $cv; # reverse order
+					$ccind++;
+					$cc{$key} = $c;
+					setbuild2("Commemoratio: $key");
+				}
+				
+				# add commemorated from commemo
+				unless(($rank >= 6 && $dayname[0] !~ /Pasc[07]/)
+				|| $rule =~ /no commemoratio/i
+				|| ($version =~ /196/ && $c{Rule} =~ /nocomm1960/i)) {
+					if (exists($c{"Commemoratio $cv"})) {
+						$c = getrefs($c{"Commemoratio $cv"}, $lang, $cv, $c{Rule});
+					} elsif (exists($c{Commemoratio}) && $cv == 1) {
+						$c = getrefs($c{Commemoratio}, $lang, $cv, $c{Rule});
+					} else {
+						$c = undef;
+					}
+					
+					my $redn = setfont($largefont, 'N.');
+					$c =~ s/ N\. / $redn /g;
+					$c =~ s/\n!/\n!!/g;
+					$c =~ s/!!Oratio/!Oratio/gi;
+					$c =~ s/\$Oremus\s*\n(v. )?/\$Oremus\nv. /g;
+					my @ic = split('!!', $c);
+					
+					foreach my $ic (@ic) {
+						if (!$ic || $ic =~ /^\s*$/
+							|| ($ic =~ /!.*?(O[ckt]ta|Dominica)/i && nooctnat())
+							|| ($version =~ /19(?:55|6)/ && $ic =~ /!.*?Vigil/i && $commemo =~ /Sancti/i && $commemo !~ /08\-14|06\-23|06\-28|08\-09/)) { next;
+							}
+						if ($ic !~ /^!/) { $ic = "!$ic"; }
+						$ccind++;
+						$key = $ic =~ /Dominic[aæ]/i ? ($version !~ /trident/i ? 3000 : 7100) : $ccind + 9900; # Sundays are all privilegde commemorations under DA
+						$cc{$key} = $ic;
+						setbuild2("Commemorated: $key");
+					}
+				}
+			}
+		}
+		
+		# Under the 1960 rubrics, on II. cl and higher days,
+		# allow at most one commemoration. We use @rank rather
+		# than $rank as sometimes the latter is adjusted for
+		# calculating precedence.
+		my @rank = split(';;', $winner{Rank});
+		if ($version =~ /1960/ &&
+				($rank[2] >= 5 || ($dayname[1] =~ /Feria/i && $rank[2] >= 3)) &&
+				$ccind > 1) {
+			my @keys = sort(keys(%cc));
+			%cc = ($keys[0] => $cc{$keys[0]});
+			$ccind = 1;
+		}
+	}
+	
   my $key;
   if ($ordostatus =~ /Ordo/i) { return %cc; }
 
   foreach $key (sort keys %cc) {
-    if (length($s[-1]) > 3) { push(@s, '_'); }
+		if (length($s[-1]) > 3) { push(@s, '_'); }
     if ($key >= 900) { push(@s, delconclusio($cc{$key})); }
   }
 
@@ -1333,210 +1559,6 @@ sub oratio {
     && $addconclusio)
   {
     push(@s, $addconclusio);
-  }
-}
-
-sub getind {
-  my ($office, $num, $day) = @_;
-
-  if ($office !~ /Sancti/i) { return $num; }
-  if ($hora =~ /Laudes/i) { return 2; }
-  if (concurrent_office($office,$num,$day)) { return 3; }
-  return 1;
-}
-
-#*** concurrent_office($office, $num, $day)
-#returns $num if the office is concurrent and Sancti
-sub concurrent_office {
-  my ($office, $num, $day) = @_;
-  my $office_dd;
-
-  # This only makes sense for Sancti.
-  if ( $office =~ m {Sancti.*/([0-9]+-[0-9]+)} )
-  {
-    my $office_mmdd = $1;
-    my $transfered_to = transfered($office_mmdd, $year, $version);
-    $office_mmdd = $transfered_to if $transfered_to;
-    $office_dd = $1 if $office_mmdd =~ /[0-9]+-([0-9]+)/;
-  }
-  return 0 unless $office_dd;
-
-  if ($hora =~ /laudes/i) { return $num; }
-
-  if ($office eq $winner && $vespera == 1 && $office_dd == $day) {
-    $num = 0;
-  } elsif ($office eq $winner && $vespera == 3 && $office_dd != $day) {
-    $num = 0;
-  } elsif ($office =~ /Sancti/i && $office_dd != $day) {
-    $num = 0;
-  }
-  return $num;
-}
-
-#*** setcc($str, $code, \%source) {
-#set str with calculated code to %cc
-sub setcc {
-
-  my $str = shift;
-  my $code = shift;
-  my $s = shift;
-  my %s = %$s;
-  my $key = 90;
-  our @dayname;
-  our %winner;
-  my @rank = split(';;', $winner{Rank});
-
-  if ($s{Rank} =~ /Dominica/i && $code < 10) {
-    $key = 10;
-  }    #Dominica=10
-  elsif ($s{Rank} =~ /;;Feria/i) {
-    $key = ($s{Rank} =~ /;;[6]/) ? 20 : 50;
-  }
-
-  #{$key = ($dayname[0] =~ /Adv/i) ? 50 : 20;} #Feria major =  (Adv) ? 50 :20
-  elsif (nooctnat() && ($s{Rank} =~ /infra Octav/i || $str =~ /octav/i)) {    #infra octavam=40
-    $key = 40;
-    $octavcount++;
-    if ($version !~ /Trident/i && $octavcount > 1) { return; }
-  } elsif ($s{Rank} =~ /Vigilia com/i || ($code % 10) == 3) {
-    $key = 60;
-  }    #vigilia communis
-  elsif ($s{Rank} =~ /;;([2-7])/ && $code < 10) {
-    $key = 30 + (8 - $1);
-  } elsif ($s{Rank} =~ /;;1/ || $code >= 10) {
-    $key = 80;
-  }    #Simplex=80;
-  if ($s{Rule} =~ /Comkey=([0-9]+)/i) { $key = $1; }                                    #oct day Epi Cor = 20, simpl=70
-
-  if ( $s{Rank} =~ /Octav.*?(Epiph|Corporis)/i
-    || ($s{Rank} =~ /Octav.*?(Cordis|Ascension)/i && $dayofweek) # not in sunday
-    || $str =~ /!.*?Octav.*?(Epiph|Corporis|Cordis|Ascension)/i
-    || ($str =~ /!.*?Octav.*?Concept/i && ($winner !~ /tempora/i
-                                          # or St. Damasy on Sunday
-                                          || $hora eq "Vespera" && ($day == 10 && $vespera == 1
-                                                                   || $day == 11 && $vespera == 3)))
-  )
-  {
-    $key = 20;
-    $code = 0;
-  } elsif ($s{Rank} =~ /Octav/i || $str =~ /!.*?Octav/i) {
-    $key = 70;
-    $code = 2;
-  }
-
-  if (($code % 10) != 1) {
-    $key .= '0';
-  }    #concurrent
-  else { $key .= '1'; }    #occurrent
-  $key .= "$ccind";
-
-  if ($code == 0) {
-
-    #$key = ($s{Rank} =~ /(Feria|Dominica)/i || $str !~ /Dominica.*?Nat/i) ? '099' : '098';
-    #$key .= $ccind;}
-    $key = '09' . floor($key / 1000) . $ccind;
-  }
-  $ccind++;
-  $cc{$key} = $str;
-
-  # Under the 1960 rubrics, on II. cl and higher days,
-  # allow at most one commemoration. We use @rank rather
-  # than $rank as sometimes the latter is adjusted for
-  # calculating precedence.
-  if ($version =~ /1960/ &&
-    ($rank[2] >= 5 || ($dayname[1] =~ /Feria/i && $rank[2] >= 3)) &&
-    $ccind > 1) {
-    my @keys = sort(keys(%cc));
-    %cc = ($keys[0] => $cc{$keys[0]});
-    $ccind = 1;
-  }
-}
-
-#*** commemoratio($winner, $ind, $lang)
-# adds commemoratio from $winner office $ind= hora
-sub commemoratio {
-  my $item = shift;
-  my $ind = shift;
-  my $lang = shift;
-  my $code = 10;
-
-  if ( $rank > 6.51
-    || ($version =~ /1955|196/ && $winner{Rank} =~ /Dominica/i)
-    || ($rank >= 6 && ($dayname[0] !~ /Pasc[07]/ || $dayofweek < 2) && $item !~ /winner/i))
-  {
-    return;
-  }
-  if ($hora !~ /(laudes|vespera)/i || ($rule =~ /no commemoratio/i && $item !~ /winner/i)) { return; }
-  if ($hora =~ /vespera/i && $winner =~ /Sancti/i && $rank >= 5 && nooctnat()) { return; }
-  my %w;
-
-  if ($item =~ /winner/i) {
-    %w = (columnsel($lang)) ? %winner : %winner2;
-    $ite = $winner;
-  } elsif ($item =~ /commemoratio1/i) {
-    %w = %{officestring($lang, $commemoratio1)};
-    $code = 11;
-    $ite = $commemoratio1;
-  } elsif ($item =~ /commemoratio/i) {
-    %w = (columnsel($lang)) ? %commemoratio : %commemoratio2;
-    $code = 12;
-    $ite = $commemoratio;
-  } elsif ($item =~ /commemorated/i) {
-    %w = %{officestring($lang, $commemorated)};
-    $code = 13;
-    $ite = $commemorated;
-  }
-  if ($version =~ /1960/ && $w{Rule} =~ /nocomm1960/i) { return; }
-  $ind = getind($ite, $ind, $day);
-  my $w = '';
-
-  if (exists($w{"Commemoratio $ind"})) {
-    $w = getrefs($w{"Commemoratio $ind"}, $lang, $ind, $w{Rule});
-  } elsif (exists($w{Commemoratio})) {
-    $w = getrefs($w{Commemoratio}, $lang, $ind, $w{Rule});
-  }
-
-  if ($hora =~ /Laudes/i && $dayofweek == 6 && exists($w{'Commemoratio Sabbat'}) && $version !~ /1960/) {
-    $w = getrefs($w{'Commemoratio Sabbat'}, $lang, 2, $w{Rule});
-  }
-
-  if ($version =~ /1955|196/ && $w =~ /!.*?(O[ckt]ta|Dominica)/i && nooctnat()) { return; }
-  if ($version =~ /1955|196/ && $hora =~ /Vespera/i && $rank >= 5 && nooctnat()) { return; }
-  if ($rank >= 5 && $w =~ /!.*?Octav/i && $winner =~ /Sancti/i && $hora =~ /Vespera/i && nooctnat()) { return; }
-
-  if ( $w
-    && $version =~ /1955|196/
-    && $w =~ /!.*?Vigil/i
-    && $ite =~ /Sancti/i
-    && $ite !~ /(08\-14|06\-23|06\-28|08\-09)/)
-  {
-    return;
-  }
-  my $sday = get_sday($month, $day, $year);
-
-  if ( $hora =~ /Vespera/i
-    && $w
-    && $ite =~ /Sancti/i
-    && $ite =~ /$sday/
-    && $w !~ /!.*Octav/i
-    && ($ind != 3 || !exists($w{'Commemoratio 3'})))
-  {
-    return;
-  }
-
-  if ($w) {
-    my $redn = setfont($largefont, 'N.');
-    $w =~ s/ N\. / $redn /g;
-    $w =~ s/\n!/\n!!/g;
-    $w =~ s/!!Oratio/!Oratio/gi;
-    $w =~ s/\$Oremus\s*\n(v. )?/\$Oremus\nv. /g;
-    my @iw = split('!!', $w);
-
-    foreach my $iw (@iw) {
-      if (!$iw || $iw =~ /^\s*$/) { next; }
-      if ($iw !~ /^!/) { $iw = "!$iw"; }
-      setcc("$iw", $code, \%w);
-    }
   }
 }
 
@@ -1548,12 +1570,7 @@ sub getcommemoratio {
   my %w = %{officestring($lang, $wday, ($ind == 1) ? 1 : 0)};
   my %c = undef;
 
-  if ($version =~ /Trident|Divino/i && $wday =~ /12-30/) { return ''; }
-
-  if ($hora =~ /Vespera/i && $rank >= 5 && $w{Rank} =~ /;;1/ && $winner !~ /Tempora/i) {
-    return '';
-  }    #2nd class and commemorated simplex
-  if ($rule =~ /no commemoratio/i && !($hora =~ /Vespera/i && $vespera == 3 && $svesp == 1)) { return ''; }
+  if ($rule =~ /no commemoratio/i && !($hora =~ /Vespera/i && $vespera == 3 && $ind == 1)) { return ''; }
 
   if ( $version =~ /1960/
     && $hora =~ /Vespera/i
@@ -1564,19 +1581,16 @@ sub getcommemoratio {
     return '';
   }
   my @rank = split(";;", $w{Rank});
-  if ($rank[1] =~ /Feria/ && $rank[2] < 2) { return; }    #no commemoration of no privileged feria
+	if ($rank[1] =~ /Feria/ && $rank[2] < 2.1) { return; }    #no commemoration of no privileged feria
 
   if ( $rank[0] =~ /Infra Octav/i
-    && $rank[2] < 2
+    && $rank[2] < 2.1
     && $rank >= 5
     && $winner =~ /Sancti/i)
   {
     return;
-  }                                                       #no commemoration of octava common in 2nd class
-      #if ($rank[2] < 3 && $wday =~ /Sancti/i && $rank >= 6) {return;} #octava communi
+  }                                                       #no commemoration of octava common in 2nd class unless in concurrence => to be checked
 
-  #my $lim = ($commemoratio =~ /tempora/i) ? 2 : 1;
-  #if ($ind == 3 && $rank[2] < $lim) {return '';}
   if ($rank[3] =~ /(ex|vide)\s+(.*)\s*$/i) {
     my $file = $2;
     if ($w{Rule} =~ /Comex=(.*?);/i && $rank < 5) { $file = $1; }
@@ -1615,10 +1629,10 @@ sub getcommemoratio {
   }
   if (!$o) { return ''; }
   my $a = $w{"Ant $ind"};
-  if (!$a || ($winner =~ /Epi1\-0a/ && $hora =~ /vespera/i && $vespera == 3)) { $i = 4 - $ind; $a = $w{"Ant $i"}; }
+  if (!$a || ($winner =~ /Epi1\-0a|01-12t/ && $hora =~ /vespera/i && $vespera == 3)) { $i = 4 - $ind; $a = $w{"Ant $i"}; }
   if (!$a) { $a = $c{"Ant $ind"}; }
-  my $name = $w{Name};
-  $a = replaceNdot($a, $lang, $name);
+	my $name = $w{Name};
+	$a = replaceNdot($a, $lang, $name);
   if ($popeclass && $popeclass =~ /C/ && $ind == 3) { $a = papal_antiphon_dum_esset($lang); }
 
   if ($wday =~ /tempora/i) {

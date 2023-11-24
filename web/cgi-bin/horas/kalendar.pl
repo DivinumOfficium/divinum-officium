@@ -28,7 +28,7 @@ use DivinumOfficium::RunTimeOptions qw(check_version);
 our $error;
 our $debug;
 
-#filled by getrank()
+#filled by occurence()
 our @dayname;    #0=Adv|{Nat|Epi|Quadp|Quad|Pass|Pent 1=winner|2=commemoratio/scriptura
 our $winner;     #the folder/filename for the winner of precedence
 our $commemoratio;    #the folder/filename for the commemorated
