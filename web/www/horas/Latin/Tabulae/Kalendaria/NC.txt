@@ -10,11 +10,11 @@
 01-08=01-08=Die Octava Januarii=1=
 01-09=01-09=Die Nona Januarii=1=
 01-10=01-10=Die Decima Januarii=1=
-01-11=01-11=Die Undecima Januarii=1=S. Hyginus Pape Martyris=1=
+01-11=01-11~01-11cc=Die Undecima Januarii=1=S. Hyginus Pape Martyris=1=
 01-12=01-12=Die Duodecima Januarii=1=
 01-13=01-13=Commemoratio Baptismi Domini=5=
-01-14=01-14=S. Hilarii Episcopi Confessoris et Ecclesiae Doctoris=3=S. Felicis Presbyteri et Mart.=1=
-01-15=01-15=S. Pauli primi Eremitae et Confessoris=3=S. Mauri Abbatis=1=
+01-14=01-14~01-14cc=S. Hilarii Episcopi Confessoris et Ecclesiae Doctoris=3=S. Felicis Presbyteri et Mart.=1=
+01-15=01-15~01-15cc=S. Pauli primi Eremitae et Confessoris=3=S. Mauri Abbatis=1=
 01-16=01-16=S. Marcelli Papae et Martyris=2=
 01-17=01-17=S. S. Antonii Abbatis=3=
 01-18=01-18r=S Priscae Virginis=1=
@@ -189,7 +189,7 @@
 08-17=08-17=S. Hyacinthi Confessoris=3=
 08-18=08-18r=S. Agapiti Martyris=1=
 08-19=08-19=S. Joannis Eudes Confessoris=3=
-08-20=08-20=S. Bernardi Abbatis et Ecclesiae Doctoris=3=
+08-20=08-20~08-20cc=S. Bernardi Abbatis et Ecclesiae Doctoris=3=die infra 8vam=2=
 08-21=08-21=S. Joanne Franciscae Fremiot de Chantal Viduae=3=
 08-22=08-22=Festum Immaculati Cordis Beatae Mariae Virginis=5=Ss. Timothei=Hippolyti et Symphoriani Mart=1=
 08-23=08-23=S. Philippi Beniti Confessoris=3=
@@ -212,8 +212,8 @@
 09-11=09-11=Ss. Proti et Hyacinthi Martyrum=1=
 09-12=09-12=S. Nominis Beatae Mariae Virginis=3=
 09-14=09-14=In Exaltatione Sanctae crucis=5=
-09-15=09-15=Septem Dolorum Beatae Mariae Virginis=5=
-09-16=09-16=Ss. Cornelii et Cypriani Pontificium et Martyrum=2=Ss. Euphemiae=Luciae et Geminiani Martyrum=1=
+09-15=09-15~09-15cc=Septem Dolorum Beatae Mariae Virginis=5=S. Nicomedis=1=
+09-16=09-16~09-16cc=Ss. Cornelii et Cypriani Pontificium et Martyrum=2=Ss. Euphemiae=Luciae et Geminiani Martyrum=1=
 09-17=09-17=Impressionis Stigmatum S. Francisci=1=
 09-18=09-18r=S. Joseph Cupertino=3=
 09-19=09-19=S. Januarii Episcopi et Sociorum Martyrum=3=
@@ -300,5 +300,4 @@
 12-27=12-27=Die tertia infra octavam Nativitati=5=Commemoratio S. Joannis Apostoli 
 12-28=12-28r=Die quarta infra octavam Nativitati=5=Commemoratio Ss. Innocentium
 12-29=12-29r=Die quinta infra octavam Nativitati=5=Commemoratio S. Thomae Episcopi et Martyris
-12-30=12-30=Die sexta infra Octavam Nativitatis=5=
 12-31=12-31r=Die septima infra octavam Nativitati=5=Commemoratio S. Silvestri Papae et Conf

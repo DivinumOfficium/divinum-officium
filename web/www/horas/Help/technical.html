@@ -33,10 +33,10 @@ Technical
 </FONT></CENTER><BR><BR>
 
 This part of the help manual is written explicitly for encouraging anyone interested in the topic to write his/her own system, using whatever he/she wants from these ideas. It is also meant to provide a general overview of how Divinum Officium and Sancta Missa are internally structured.
-Following the provisions of the <a href='https://opensource.org/licenses/MIT'>MIT License</a>, and in accordance with the wishes of the late Laszlo Kiss, the only restriction is that we at The Divinum Officium Project have no legal responsibility for any errata, and the ideas cannot be copyrighted, limiting our rights or the access of others to the same ideas.</FONT><BR><BR>
+Following the provisions of the <a href="https://opensource.org/licenses/MIT">MIT License</a>, and in accordance with the wishes of the late Laszlo Kiss, the only restriction is that we at The Divinum Officium Project have no legal responsibility for any errata, and the ideas cannot be copyrighted, limiting our rights or the access of others to the same ideas.</FONT><BR><BR>
 
 
-<A NAME='databases'></A>
+<A NAME="databases"></A>
 <P ALIGN=CENTER><A HREF=#Top>Top</A></FONT></P>
 <span class=prmm>Databases</span><BR><BR> 
 The databases are files, which contain the text of the Breviary. 
@@ -50,8 +50,9 @@ The files itself usually are converted into <span class=prma>hash elements</span
 The <span class=prma>key</span> is enclosed within square brackets <span class=pram>[ ... ]</span> which is a separate line followed by the body of the element. For instance, [Ant 2] refers to the Benedictus antiphon at Lauds, while [Lectio93] normally refers to the 9th (hagiographical) reading of a commemorated saint (pre-1960), which became the 3rd reading at Matins on 3rd class feasts under 1960 rubrics.<BR><BR>
 In all cases, the hash and key are on one line (followed by any conditional rubrics within parentheses), and the text is placed on the subsequent line after a single carriage return.<BR><BR>
 These elements are read and composed by the code.<BR><BR>
-The folder and files can be viewed within the <a href='https://github.com/divinumofficium/divinum-officium'>GitHub</a> repository, which shows the files
+The folder and files can be viewed within the <a href="https://github.com/divinumofficium/divinum-officium">GitHub</a> repository, which shows the files
 in the following folders in the directory ~/horas and, subsequently, ~/horas/Latin (or any modern language):<BR>
+
 
 <UL>
 <LI>The <span class=prma>Ordinarium</span> folder is the collection of the scripts structuring the canonical hours.
@@ -76,27 +77,50 @@ The verses are numbered by chapter:verse numbers, and anything in parentheses is
 
 <LI>The <span class=prma>Tempora</span> folder holds the offices from the <span class=prma><I>Proprium de Tempore</I></span>. Each office has exactly one file, and each is a hash collection. The naming convention is:<PRE>Season name w-d</PRE> where <I>w</I> is the week of the season, and <I>d</I> is the day of week. (Example: Pent04-2 represents Tuesday of the 4th week after Pentecost. Similarly, 085-0 represents Sunday of the 5th week of August.)<BR><BR>
 
-<LI><span class=prma>Sancti</span> is the same collection of offices as found in the <span class=prma><I>Proprium Sanctorum</I></span>. The naming convention is:<PRE>mm-nn</PRE> where <I>mm</I> is the month, <I>nn</I> is the day. (Example: 07-26 represents July 26, Feast of St. Anne.) For practical reasons, unlike in the <I>Missale Romanum</I> or <I>Breviarium Romanum</I>, the Christmastide offices are placed within the Sancti folder. Files are marked with certain letters for their usage within certain rubrical structures:<BR><BR>
+<LI><span class=prma>Sancti</span> is the same collection of offices as found in the <span class=prma><I>Proprium Sanctorum</I></span>. The naming convention is:<PRE>mm-nn</PRE> where <I>mm</I> is the month, <I>nn</I> is the day. (Example: 07-26 represents July 26, Feast of St. Anne.) For practical reasons, unlike in the <I>Missale Romanum</I> or <I>Breviarium Romanum</I>, the Christmastide offices <I>are split and the "Sanctoral parts" only</I> are placed within the Sancti folder. Files are marked with certain letters for their usage within certain rubrical structures:<BR><BR>
 <UL>
-  <LI>r = 1960 rubrics;
-  <LI>da = Divino Afflatu rubrics;
   <LI>t = 1570 rubrics;
-  <LI>o = 1910 rubrics;
+  <LI>o = 1888 / 1906 rubrics;
+	<LI>r = 1960 rubrics;
+	<LI>da = Divino Afflatu rubrics;
   <LI>n = 1960 rubrics with new calendar additions;
   <LI>p = Paschaltide;
   <LI>q (appended as suffix to one of the previous) = file to be used during Lent;
   <LI>t (appended as suffix to one of the previous) = file to be used when an office is to be transferred.
+	<LI>cc = Simplex feasts perpetually impeded <I>(hence only commemorated, and adressed accordingly in the Kalendarium and Transfer files; see below)</I>
   </UL><BR>
-Each feast is assigned a number for ranking purposes, which can be augmented by a decimal to slightly increase or decrease the rank. Generally, the following enumeration is used:<BR><BR>
-<UL>
-<LI>1 = Simplex;
-<LI>2 = Semiduplex;
-<LI>3 = Duplex;
-<LI>4 = Duplex majus;
-<LI>5 = Duplex II Classis;
-<LI>6 = Duplex I Classis
-</UL><BR>
+Each feast is assigned a number for ranking purposes, which can be augmented by a decimal to slightly increase or decrease the rank. <I>To ensure consistency across the database, ranking information is solely extracted from the Latin language files (with the exception of translations of an offices name); everything after the first <code>;;</code> mark in the <code>[Rank]</code> hash of other languages is ignored.</I> To accomodated the various rubrical structures and their slightly different rules for Occurrence, Concurrence, and Commemorations, apart from very few exceptions, the following ranks are used:<BR><BR>
+<TABLE ALIGN=CENTER WIDTH=90% CELLPADDING=12  style="border-collapse: collapse;">
+<TR><TH ROWSPAN=2>General Rank</TH><TH COLSPAN=2>Duplex</TH><TH COLSPAN=2  style="background-color: lightgrey;">Semiduplex</TH><TH COLSPAN=2  style="background-color: darkgrey;">Simplex</TH><TH ROWSPAN=2>Rank</TH></TR>
+<TR style="border-bottom: 1px solid darkgrey;"><TH>Festum</TH><TH>Dies 8va</TH><TH  style="background-color: lightgrey;">Dominic&aelig;</TH><TH  style="background-color: lightgrey;">Dies infra 8vam</TH><TH style="color: #4b006e; background-color: darkgrey">Vigili&aelig;</TH><TH style="background-color: darkgrey;">Feri&aelig;</TH></TR>
+<TR><TH ROWSPAN=7>I. classis</TH><TD style="color: darkorange;">Duplex I. cl. (max. sollem.)</TD><TD></TD><TD  style="background-color: lightgrey;"></TD><TD ROWSPAN=2 style="color: darkorange; background-color: lightgrey;">I. ordinis</TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD>7.0</TD></TR>
+<TR><TD></TD><TD></TD><TD style="color: #4b006e; background-color: lightgrey;">I. classis</TD><TD  style="color: #4b006e; background-color: lightgrey;">Pentecostes (I. classis)</TD><TD  style="color: #4b006e; background-color: darkgrey;">Feria privilegiata</TD><TD>6.9</TD></TR>
+<TR><TD>Duplex I. classis</TD><TD></TD><TD style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD style="color: #4b006e; background-color: white;">Nativitatis (I. classis)</TD><TD  style="background-color: darkgrey;"></TD><TD>6.5</TD></TR>
+<TR><TD></TD><TD style="color: darkorange;">II. ordinis</TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD>6.3</TD></TR>
+<TR><TD>Patronus Eccl.</TD><TD></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD>6.2</TD></TR>
+<TR><TD></TD><TD></TD><TD style="color: #4b006e; background-color: lightgrey;">II. classis <I>(Trid. pre-1900: "IS. ordinis"</I>)</TD><TD  style="background-color: lightgrey;"></TD><TD  style="color: darkorange; background-color: lightgrey;">Epiphani&aelig; <I>(Trid.: "IS. ordinis"</I>)</TD><TD style="background-color: darkgrey;"></TD><TD>6.1</TD></TR>
+<TR style="border-bottom: 1px solid lightgrey;"><TD>Duplex I. classis <I>(in Adventu &amp; Quadr.)</I></TD><TD></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD>6.0</TD></TR>
+<TR><TH ROWSPAN=2>II. classis</TH><TD></TD><TD></TD><TD style="color: #4b006e; background-color: lightgrey;">II. classis <I>(1906 &amp; Divino)</I></TD><TD style="color: darkorange; background-color: lightgrey;">II. ordinis <I>(Divino)</I></TD><TD style="background-color: lightgrey;"></TD><TD style="background-color: darkgrey;"></TD><TD>5.6</TD></TR>
+<TR style="border-bottom: 1px solid lightgrey;"><TD>Duplex II. classis</TD><TD></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD>5.0</TD></TR>
+<TR><TH ROWSPAN=4>Majus</TH><TD></TD><TD style="color: darkorange">Corpus Christi <I>(Trid.: "IIS. ordinis")</I></TD><TD style="color: green; background-color: lightgrey;">per annum <I>(Divino)</I></TD><TD style="background-color: lightgrey;"></TD><TD  style="color: #4b006e; background-color: lightgrey;">Epiphani&aelig; (<I>Divino:</I> II. classis)</TD><TD  style="color: #4b006e; background-color: darkgrey;">Feria privilegiata II. ordinis <I>(Monastic juxta Divino)</I></TD><TD>4.9</TD></TR>
+<TR><TD></TD><TD>III. ordinis</TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD>4.2</TD></TR>
+<TR><TD></TD><TD>communis <I>(Divino)</I></TD><TD style="background-color: lightgrey;"></TD><TD style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD>4.1</TD></TR>
+<TR style="border-bottom: 1px solid lightgrey;"><TD>Duplex majus</TD><TD></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD>4.0</TD></TR>
+<TR><TH ROWSPAN=2>minus</TH><TD></TD><TD>communis <I>(Trid.)</I></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD>3.1</TD></TR>
+<TR style="border-bottom: 1px solid lightgrey;"><TD>Duplex minus</TD><TD></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD>3.0</TD></TR>
+<TR><TH ROWSPAN=5 style="background-color: lightgrey;">Semiduplex</TH><TD style="background-color: lightgrey;"></TD><TD style="background-color: lightgrey;"></TD><TD style="color: green; background-color: lightgrey;">Dominica minor <I>(Trid.)</I></TD><TD style="color: darkorange; background-color: lightgrey;">Corpus Christi <I>(Trid.: "IIS. ordinis")</I></TD><TD  style="color: #4b006e; background-color: lightgrey;">Epiphani&aelig; <I>(Trid.: tamquam Dominica)</I></TD><TD  style="background-color: darkgrey;"></TD><TD style="background-color: lightgrey;">2.9</TD></TR>
+<TR><TD style="background-color: lightgrey;">Semiduplex</TD><TD style="background-color: lightgrey;"></TD><TD style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;"></TD><TD style="background-color: lightgrey;">2.2</TD></TR>
+<TR><TD style="background-color: lightgrey;"></TD><TD style="background-color: lightgrey;"></TD><TD style="background-color: lightgrey;"></TD><TD  style="color: #000099; background-color: lightgrey;">Immaculat&aelig; Conceptionis <I>(quia in Adventu)</I></TD><TD  style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;"></TD><TD style="background-color: lightgrey;">2.19</TD></TR>
+<TR><TD style="background-color: lightgrey;"></TD><TD style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;">III. ordinis</TD><TD  style="background-color: darkgrey;"></TD><TD  style="color: #4b006e; background-color: darkgrey;">Feria major</TD><TD style="background-color: lightgrey;">2.1</TD></TR>
+<TR style="border-bottom: 1px solid lightgrey;"><TD style="background-color: lightgrey;"></TD><TD style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;"></TD><TD  style="background-color: lightgrey;">communis</TD><TD  style="background-color: darkgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD style="background-color: lightgrey;">2.0</TD></TR>
+<TR><TH ROWSPAN=5 style="background-color: darkgrey;">Simplex</TH><TD style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD style="color: #4b006e; background-color: darkgrey;">Vigilia communis</TD><TD style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;">1.5</TD></TR>
+<TR><TD style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;">Simplex <I>(Divino)</I></TD><TD  style="background-color: darkgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;">1.3</TD></TR>
+<TR><TD style="color: #000099; background-color: darkgrey;">S. Maria in Sabbato</TD><TD style="background-color: darkgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;">1.2</TD></TR>
+<TR><TD style="background-color: darkgrey;">Simplex</TD><TD style="background-color: darkgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;">1.1</TD></TR>
+<TR><TD style="background-color: darkgrey;">Commemoratio</TD><TD style="background-color: darkgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD  style="background-color: darkgrey;"></TD><TD style="background-color: darkgrey;"></TD><TD style="color: green; background-color: darkgrey;">Feria minor</TD><TD style="background-color: darkgrey;">1.0</TD></TR>
+</TABLE>
 
+<BR><BR>
 <LI><span class=prma>Commune</span> is the collection for <span class=prma><I>Commune Sanctorum</I></span>. The name of the office is under the first key: <B>Name</B>. See <a href="#specialchars">below</a> for examples.
 <BR><BR>
 
@@ -108,12 +132,21 @@ Martyrologium. Please note that the Martyrology at Prime is anticipated for the 
 File <CODE>data.txt</CODE> provides map information for officium versions used in files in below directories:
 <UL>
   <LI><CODE>Kalendaria</CODE> sanctoral kalendar files.<BR>
+		Lines starting with <code>*</code> or <CODE>#-</CODE> signs are comments. Other lines are devided in multiple parts by the <CODE>=</CODE> char. Within the second section, multiple offices can be assigned to a single day, the latter ones by way of commemoration. These are divided by the <CODE>~</CODE> char. Please note that everything after the second <CODE>=</CODE> is for information only and not used by the code itself. <br> Meaning is explained in example from file <CODE>1888.txt</CODE> : </BR>
+			<CODE>01-11=01-11~01-11cc=Sexta die infra Octavam Epiphaniae=2=S. Hygini Pap&aelig; et Martyris=1=</CODE> <br>
+			On January 11, there is the office contained in file <CODE>01-11</CODE> (the 6th day of the octave of the Epiphany) with a commemoration of S. Hyginus Pope and Martyr contained in the seperate file <CODE>01-11cc</CODE>.
   <LI><CODE>Tempora</CODE> perpetually-transfers of the Tempora (Divino Afflatu is used as base).<BR>
   <LI><CODE>Transfer</CODE> transfers based on Easter date.<BR>
     Lines starts with '#-' signs are comments. Other lines are divided in three parts: before '=' char, between '=' and ';;', and after ';;'.<BR>
       Meaning is shown in examples from file <CODE>402.txt</CODE> :<BR>
-        <CODE>03-20=03-19;;1570 1910 1960 DA M Newcal</CODE><BR>
-        on the day March 20th there is Solemnity of St. Joseph (March 19th) for versions (1570, 1910 ...) (used short versions names from mentioned above file <CODE>data.txt</CODE>)<BR>
+			<CODE>01-11=01-10~01-11cc;;1570 1910
+				<br>01-12=01-11;;1570 1910
+				<br>03-20=03-19;;1570 1910 1960 DA M Newcal</CODE><BR>
+				<UL>
+					<li>On January 11th, the office is of the 5th day of the octave (transferred from Jan. 10) but still with the commemoration of S. Hyginus.
+					<li>On January 12th, the office is of the 6th day of the octave (transferred from Jan. 11) but without the aforementioned commemoration
+				<li>on the day March 20th there is Solemnity of St. Joseph (March 19th) for versions (1570, 1910 ...) (used short versions names from mentioned above file <CODE>data.txt</CODE>)<BR>
+					</UL>
         <CODE>dirge1=01-23 02-03 02-20;;1570</CODE><BR>
       lists days where Officium Defunctorum is read after Vespera and Laudes. (dirge1 is for January and February, dirge2 for remaining months).<BR>
       <CODE>Hy05-18=1;;DA</CODE><BR>
@@ -264,7 +297,7 @@ if <I>hour spec</I> is <strong>ad Laudes tantum.</strong><BR><BR>
 
 <LI><span class=prma>1 nocturn</span> : Matins of one nocturn only.<BR><BR>
 
-<LI><span class=prma>Rubrica 1570 aut Rubrica 1910 aut Rubrica Divino aut Rubrica 1960 (etc.)</span> : Specifies usage of an element solely in one or more of these rubrical usages. The syntax used by the code is to place these conditionals in parentheses (e.g. [Lectio1](rubrica 1960), etc.)<BR><BR>
+<LI><span class=prma>Rubrica 1570 aut Rubrica 1888 aut Rubrica Tridentina aut Rubrica Divino aut Rubrica 1960 (etc.)</span> : Specifies usage of an element solely in one or more of these rubrical usages. The syntax used by the code is to place these conditionals in parentheses (e.g. [Lectio1](rubrica 1960), etc.)<BR><BR>
 
 </UL>
 
