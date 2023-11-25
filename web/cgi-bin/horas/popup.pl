@@ -30,7 +30,7 @@ $q = new CGI;
 #filled  getweek()
 our @dayname;    #0=Adv|{Nat|Epi|Quadp|Quad|Pass|Pen 1=winner title|2=other title
 
-#filled by getrank()
+#filled by occurence()
 our $winner;     #the folder/filename for the winner of precedence
 our $commemoratio;    #the folder/filename for the commemorated
 our $commune;         #the folder/filename for the used commune

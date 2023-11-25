@@ -1,21 +1,6 @@
 [Rank]
 Fest der Unschuldigen Kinder;;Duplex II class cum octava simplici;;5.2;;ex C3
 
-[RankTrident]
-Fest der Unschuldigen Kinder;;Duplex II class cum octava;;5.2;;ex C3
-
-[Rank1960]
-Fest der Unschuldigen Kinder;;Duplex II class;;5;;ex C3
-
-[Rule]
-ex C3;
-Ant Matutinum 11 special
-Psalmi dominica
-Antiphonas Horas
-9 lectiones
-no Te Deum
-no Psalm5
-
 [Ant 1]
 Das sind die, * die sich mit Weibern nicht befleckt haben: denn sie sind jungfräuliche Wesen und folgen dem Lamm, wohin es geht.
 
@@ -190,22 +175,6 @@ Amen.
 
 [Ant 2]
 @:Ant 1
-
-[Commemoratio 2]
-@Sancti/12-25:Octava
-
-[Commemoratio 3]
-@Sancti/12-25:Octava
-
-[Commemoratio 2] (rubrica trident)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-
-[Commemoratio 3] (rubrica trident)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
 
 [Lectio Prima]
 !Offb 14,4-5

@@ -1,21 +1,6 @@
 [Rank]
 Ss. Innocentium;;Duplex II class cum octava simplici;;5.2;;ex C3
 
-[RankTrident]
-Ss. Innocentium;;Duplex II class cum octava;;5.2;;ex C3
-
-[Rank1960]
-Ss. Innocentium;;Duplex II class;;5;;ex C3
-
-[Rule]
-ex C3;
-Ant Matutinum 11 special
-Psalmi dominica
-Antiphonas Horas
-9 lectiones
-no Te Deum
-no Psalm5
-
 [Ant 1]
 Éstos son * los que no se mancharon con mujeres, pues son vírgenes. Éstos son el cortejo del Cordero, adondequiera que vaya.
 
@@ -203,28 +188,6 @@ gloria sea dada a ti, en unión
 con el Padre y el Espíritu Santo, 
 por los siglos sempiternos. 
 Amén.
-
-[Versum 2]
-@:Versum 1
-
-[Ant 2]
-@:Ant 1
-
-[Commemoratio 2]
-@Sancti/12-25:Octava
-
-[Commemoratio 3]
-@Sancti/12-25:Octava
-
-[Commemoratio 2] (rubrica trident)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-
-[Commemoratio 3] (rubrica trident)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
 
 [Lectio Prima]
 !Ap 14:4-5

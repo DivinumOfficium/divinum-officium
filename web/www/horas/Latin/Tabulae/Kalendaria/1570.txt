@@ -9,11 +9,11 @@
 01-08=01-08=Tertia die infra Octavam Epiphaniae=2=
 01-09=01-09=Quarta die infra Octavam Epiphaniae=2=
 01-10=01-10=Quinta die infra Octavam Epiphaniae=2=
-01-11=01-11=Sexta die infra Octavam Epiphaniae=2=
+01-11=01-11~01-11cc=Sexta die infra Octavam Epiphaniae=2=S. Hygini Papæ et Martyris=1=
 01-12=01-12t=Dominica infra Octavam Epiphaniae=2=
 01-13=01-13=Die Octava Epiphaniae=3=
-01-14=01-14=S. Hilary bishop and confessor=2=S. Felicis Presbyteri et Mart=1=
-01-15=01-15=S. Pauli primi Eremitae et Confessoris=2=S. Mauri Abbatis=1=
+01-14=01-14~01-14cc=S. Hilary bishop and confessor=2=S. Felicis Presbyteri et Mart=1=
+01-15=01-15~01-15cc=S. Pauli primi Eremitae et Confessoris=2=S. Mauri Abbatis=1=
 01-16=01-16=S. Marcelli Papae et Martyris=2= 
 01-17=01-17=S. S. Antonii Abbatis=3= 
 01-18=01-18=Chain of St Peter Rome=3=Commemoratio S. Prisca virgin martyr=1=
@@ -128,16 +128,16 @@
 08-08=08-08=Ss. Cyriacus, Largus and Smaragdus martyrs=2=
 08-09=08-09t=Vigilia S. Laurentii=1.5=commemoration of St. Romanus martyr=1=
 08-10=08-10=S. Laurence martyr=3=
-08-11=08-11t=Second day of the octave of St Laurence=2=commemoration of Saints Tiburtius and Susanna martyrs=1=
-08-12=08-12t=Third day of the octave=2=commemoration of St Clare virgin=1=
-08-13=08-13t=Fourth day of the octave=2=commemoration of St Hippolytus and his companions and of Cassian martyrs=1=
-08-14=08-14t=Fifth day of the octave=2=commemoration of the Vigil and of St Eusebius confessor=1=
+08-11=08-11t~08-11=Second day of the octave of St Laurence=2=commemoration of Saints Tiburtius and Susanna martyrs=1=
+08-12=08-12t~08-12=Third day of the octave=2=commemoration of St Clare virgin=1=
+08-13=08-13t~08-13=Fourth day of the octave=2=commemoration of St Hippolytus and his companions and of Cassian martyrs=1=
+08-14=08-14t~08-14cc=Fifth day of the octave=2=commemoration of the Vigil and of St Eusebius confessor=1=
 08-15=08-15t=Assumption of the Blessed Virgin Mary=3=
 08-16=08-16o=Second day of the octave of the Assumption of Blessed Mary=2=commemoration of the Octave of St. Laurence=1=
 08-17=08-17t=Octave of St. Laurence=3=commemoration of the Octave of the Assumption=1=
 08-18=08-18=Fourth day of the octave for Assumption=2=commemoration of St Agapitus martyr=1=
 08-19=08-19o=Fifth day of the octave=2=
-08-20=08-20=S. Bernard Abbot=3=commemoration of the Octave of the Assumption=2=
+08-20=08-20~08-20cc=S. Bernard Abbot=3=commemoration of the Octave of the Assumption=2=
 08-21=08-21o=Seventh day of the Octave=2=
 08-22=08-22t=Octave of the Assumption of Blessed Mary=3=commemoration of Ss Timothy, Hippolytus, and Symphorianus martyrs=1=
 08-23=08-23o=Vigilia S.Barthalomei Apostoli=1.5=
@@ -156,8 +156,8 @@
 09-12=09-12t=Fifth day of the octave=2=
 09-13=09-13t=Sixth day of the octave=2=
 09-14=09-14=Exaltation of the Holy Cross=3=commemoration of the Octave of the Nativity of St. Mary=2=
-09-15=09-15t=Octave of the Nativity of Blessed Mary, Double=3=commemoration of St. Nicomedes martyr=1=
-09-16=09-16=Ss. Cornelius and Cyprian bishops and martyrs=2=commemoration of Ss Euphemia, Lucy and Geminianus martyrs=1=
+09-15=09-15t~09-15cc=Octave of the Nativity of Blessed Mary, Double=3=commemoration of St. Nicomedes martyr=1=
+09-16=09-16~09-16cc=Ss. Cornelius and Cyprian bishops and martyrs=2=commemoration of Ss Euphemia, Lucy and Geminianus martyrs=1=
 09-20=09-20o=Vigilia S. Matthew Apostle=1.5=commemoration of St Eustace and Companions martyrs=1=
 09-21=09-21=S. Matthew Apostle=3=
 09-22=09-22o=Ss. Maurice and companions martyrs=1=
@@ -220,5 +220,4 @@
 12-27=12-27o=S. John Apostle and Evangelist=3=
 12-28=12-28o=Ss. Innocents=3=
 12-29=12-29o=S. Thomas bishop of Canterbury and martyr=2=
-12-30=12-30o=Sixth day of the Octave=2=
 12-31=12-31o=S. Sylvester pope and confessor=3=

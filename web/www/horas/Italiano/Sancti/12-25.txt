@@ -1,16 +1,6 @@
 [Rank]
 In Nativitate Domini;;Duplex I Classis;;6.9
 
-[Rank1960]
-In Nativitate Domini;;Duplex I Classis;;7
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Doxology=Nat
-Special Evangelii Benedictio
-
 [Ant Vespera]
 Il Re pacifico * s'è mostrato magnifico; il suo volto tutta la terra desidera di vedere.;;109
 S'è mostrato magnifico *il Re pacifico su tutti i re di tutta quanta la terra.;;110
@@ -60,9 +50,6 @@ insieme col Padre e collo Spirito Santo,
 per i secoli eterni.
 Amen.
 
-[HymnusM Vespera]
-@SanctiM/12-25:HymnusM Vespera
-
 [Versum 1]
 V. Domani sarà cancellata l'iniquità della terra.
 R. E regnerà su di noi il Salvatore del mondo.
@@ -76,12 +63,6 @@ $Per eumdem
 
 [Invit]
 Cristo è nato per noi: * Venite, adoriamolo.
-
-[Hymnus Matutinum]
-@Sancti/12-25:Hymnus Vespera
-
-[HymnusM Matutinum]
-@:HymnusM Vespera
 
 [Ant Matutinum]
 Il Signore disse * a me Tu sei mio Figlio, oggi io t'ho generato.;;2

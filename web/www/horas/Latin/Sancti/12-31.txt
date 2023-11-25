@@ -2,49 +2,22 @@
 S. Silvestri Papæ et Confessoris;;Duplex;;3;;vide C4
 
 [Rank](rubrica 1960)
-Die septima post Nativitatem;;Semiduplex;;5;;ex Sancti/12-25
+S. Silvestri Papæ et Confessoris;;Simplex;;1.1;;vide C4
 
 [Rule]
 vide C4;
 9 lectiones
 OPapaC=Silvéstrum;
 
+[Ant Vespera]
+@Sancti/12-25:Ant Vespera 3
+
 [Oratio]
-Da, quǽsumus, omnípotens Deus: ut beáti Silvéstri Confessóris tui atque~
-Pontíficis veneránda solémnitas, et devotiónem nobis aúgeat et salútem.
+Da, quǽsumus, omnípotens Deus: ut beáti Silvéstri Confessóris tui atque Pontíficis veneránda solémnitas, et devotiónem nobis aúgeat et salútem.
 $Per Dominum.
 
-[Lectio1]
-De Epístola ad Romános
-!Rom 3:19-22
-19 Scimus autem quóniam quæcúmque lex lóquitur, iis, qui in lege sunt, lóquitur: ut omne os obstruátur, et súbditus fiat omnis mundus Deo:
-20 quia ex opéribus legis non justificábitur omnis caro coram illo. Per legem enim cognítio peccáti. 
-21 Nunc autem sine lege justítia Dei manifestáta est: testificáta a lege et prophétis.
-22 Justítia autem Dei per fidem Jesu Christi in omnes, et super omnes, qui credunt in eum: non enim est distínctio.
-
-[Responsory1]
-@Sancti/12-25:Responsory2
-
-[Lectio2]
-!Rom 3:23-26
-23 Omnes enim peccavérunt et egent glória Dei. 
-24 Justificáti gratis per grátiam ipsíus, per redemptiónem, quæ est in Christo Jesu,
-25 quem propósuit Deus propitiatiónem per fidem in sánguine ipsíus, ad ostensiónem justítiæ suæ propter remissiónem præcedéntium delictórum 
-26 in sustentatióne Dei, ad ostensiónem justítiæ ejus in hoc témpore: ut sit ipse justus, et justíficans eum, qui est ex fide Jesu Christi.
-
-[Responsory2]
-@Sancti/12-25:Responsory3
-
-[Lectio3]
-!Rom 3:27-31
-27 Ubi est ergo gloriátio tua? Exclúsa est. Per quam legem? Factórum? Non: sed per legem fídei. 
-28 Arbitrámur enim justificári hóminem per fidem sine opéribus legis. 
-29 An Judæórum Deus tantum? nonne et géntium? Immo et géntium: 
-30 quóniam quidem unus est Deus, qui justíficat circumcisiónem ex fide, et præpútium per fidem. 
-31 Legem ergo destrúimus per fidem? Absit: sed legem statúimus. 
-
-[Responsory3]
-@Sancti/12-25:Responsory4
+[Oratio] (rubrica 1960)
+@Commune/C4:Oratio Gregem
 
 [Lectio4]
 Silvéster Románus, patre Rufíno, a prima ætáte óperam dedit Cyríno presbýtero; cujus doctrínam et mores egrégie imitátus est. Hic, sæviénte persecutióne, in Sorácte monte latitáverat; et trigésimum annum agens, présbyter sanctæ Románæ Ecclésiæ a Marcellíno Pontífice creátur. Quo in múnere cum omni laude cléricis áliis antecélleret, in Melchíadis póstea locum succéssit, imperatóre Constantíno, qui ántea pacem Ecclésiæ Christi lege pública déderat. Vix Ecclésiæ gubernácula tractánda suscéperat, Constantínum, jam Crucis signo cǽlitus illustrátum, et de hoste Maxéntio victórem, ad tuéndam propagandámque christiánam religiónem impénse fovit. Quem étiam, uti vetus Ecclésiæ Románæ refert tradítio, Apostolórum imágines recognóscere fecit, sacro baptísmate tinxit, et ab infidelitátis lepra mundávit.
@@ -57,16 +30,15 @@ Idem præscripsísse tráditur tempus ómnibus, qui ordínibus initiáti essent,
 
 [Lectio7]
 @Commune/C4:Lectio7 in 2 loco
+(sed rubrica tridentina)
+@Commune/C5
 
 [Lectio8]
 @Commune/C4:Lectio8 in 2 loco
+(sed rubrica tridentina)
+@Commune/C5
 
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
-
-[Commemoratio 2]
-@Sancti/12-25:Octava
-
-[Commemoratio 3]
-@Sancti/12-25:Octava
-
+(sed rubrica tridentina)
+@Commune/C5

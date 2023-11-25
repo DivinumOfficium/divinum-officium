@@ -107,12 +107,17 @@ sub load_transfer {
     my $isleap = leapyear($year);
     my @easter = geteaster($year);
     my $easter =  $easter[1] * 100 + $easter[0];
+		
+		my $letter = ($easter - 319 + ($easter[1]==4?1:0))%7;
+    my @letters = ('a','b','c','d','e','f','g');
 
-    my @lines = load_transfer_file($easter, $isleap, $type);
+    my @lines = load_transfer_file($letters[$letter], $isleap, $type);
+    push(@lines, load_transfer_file($easter, $isleap, $type));
     if ($isleap) { # load Jan & Feb from next file
       $easter++;
       $easter = 401 if $easter == 332;
-      push(@lines, load_transfer_file($easter, 2, $type)) 
+      push(@lines, load_transfer_file($letters[$letter-6], 2, $type));
+			push(@lines, load_transfer_file($easter, 2, $type));
     }
 
     my(@transfer) = ();
@@ -125,11 +130,6 @@ sub load_transfer {
 
     %{$_dCACHE{$cache_key}} = @transfer;
 
-    # if St. Mathias was transfered to next day it is not case when year is leap
-    if ($_dCACHE{$cache_key}{'02-25'} && $_dCACHE{$cache_key}{'02-25'} eq '02-24' && $isleap) { 
-      $_dCACHE{$cache_key}{'02-29'} = $_dCACHE{$cache_key}{'02-25'};
-      delete $_dCACHE{$cache_key}{'02-25'};
-    }
   }
 
   %{$_dCACHE{$cache_key}}
@@ -203,7 +203,7 @@ sub transfered {
 
     if ($val =~ /Tempora/i && $val !~ /Epi1\-0/i) { next; }
 
-    if ($val !~ /$key/ && ($str =~ /$val/i || $val =~ /$str/i) && $transfer{$key} !~ /v\s*$/i) {
+    if ($val !~ /^$key/ && ($str =~ /$val/i || $val =~ /$str/i) && $transfer{$key} !~ /v\s*$/i) {
       return $key;
     }
   }

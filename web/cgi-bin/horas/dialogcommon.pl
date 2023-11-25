@@ -249,6 +249,15 @@ sub setupstring($$%) {
       # Fill in the missing things from the layer below.
       ${$new_sections}{'__preamble'} .= "\n${$base_sections}{'__preamble'}";
       ${$new_sections}{$_} ||= ${$base_sections}{$_} foreach (keys(%{$base_sections}));
+			
+			# Ensure consistency in ranking of Offices by always defaulting to Latin even if there is a Translation itself
+			my @baserank = split(';;', ${$base_sections}{Rank});
+			if(@baserank) {
+				my @newrank = split(';;', ${$new_sections}{Rank});
+				$baserank[0] = $newrank[0];
+				${$new_sections}{Rank} = join(';;', @baserank);
+			}
+			
     } else {
       $new_sections = $base_sections;
     }

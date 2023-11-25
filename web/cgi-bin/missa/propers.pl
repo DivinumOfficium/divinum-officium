@@ -281,17 +281,25 @@ sub oratio {
     setcc($w, 1, setupstring($lang, $commemoratio1)) if $w;
   }
 
-  if (
-    $commemoratio
-    && ( $rank < 6
-      || $version !~ /(1955|196)/i
-      || $commemoratio{Rank} =~ /(Dominica|;;6)/i
-      || ($commemoratio =~ /Tempora/i && $commemoratio{Rank} =~ /;;[23]/))
-    )
+	our @commemoentries;
+	foreach my $commemo (@commemoentries) {
+		if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
+		my %c = %{setupstring($lang, $commemo)};
+		
+		if (
+			$commemo
+			&& ( $rank < 6
+			|| $version !~ /(1955|196)/i
+			|| $c{Rank} =~ /(Dominica|;;6)/i
+		|| ($commemo =~ /Tempora/i && $c{Rank} =~ /;;[234]/))
+		)
   {
-    $w = getcommemoratio($commemoratio, $type, $lang);
-    setcc($w, 2, setupstring($lang, $commemoratio)) if $w;
-  }
+		$w = getcommemoratio($commemo, $type, $lang);
+		setcc($w, 2, %c) if $w;
+	}
+	}
+	
+	
 
   #add commemoratio in winner
   if (
