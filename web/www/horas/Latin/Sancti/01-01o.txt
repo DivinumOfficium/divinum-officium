@@ -5,3 +5,20 @@ ex Sancti/12-25;
 Psalmi Dominica
 Antiphonas Horas
 9 lectiones
+
+[Lectio1]
+De Epístola beati Pauli Apóstoli ad Rómanos
+!Rom 3:1-6
+1 Quid ergo ámplius Iudǽo est? aut quæ utílitas circumcisiónis?
+2 Multum per omnem modum. Primum quidem quia crédita sunt illis elóquia Dei.
+3 Quid enim si quidam illórum non credidérunt? numquid incredúlitas illórum fidem Dei evacuábit? Absit.
+4 Est autem Deus verax: omnis autem homo mendax, sicut scriptum est: Ut iustificéris in sermónibus tuis: et vincas cum iudicáris.
+5 Si autem iníquitas nostra iustítiam Dei comméndat, quid dicémus? Numquid iníquus est Deus, qui infert iram?
+6 secúndum hóminem dico. Absit. Alióquin quómodo iudicábit Deus hunc mundum?
+
+[Lectio2]
+@Tempora/Nat31:Lectio3:s/27-31/29-31; 4:1-8/s s/27.*29 /29 /s~
+@Sancti/01-01:Lectio1:s/.*1 /1 /s
+
+[Lectio3]
+@Sancti/01-01:Lectio2

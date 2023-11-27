@@ -809,7 +809,6 @@ sub concurrence {
 			if ($commemo =~ /tempora/i && $trank[2] < 2) { next; }	# Feria minor and Vigils have no Vespers if superseded
 			if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
 			%cstr = %{officestring('Latin', $commemo, 0)};
-			#$dayname[2] .= " occ: $commemo $cstr{Rank}";
 			if (%cstr) {
 				my @cr = split(";;", $cstr{Rank});
 				unless (($cr[2] < $ranklimit && !($cr[2] == 2.1 || $cr[2] == 2.99)) || $cstr{Rule} =~ /No secunda vespera/i) { push(@comentries, $commemo); }   # sort out Simplex
@@ -826,7 +825,6 @@ sub concurrence {
 			if ($commemo =~ /tempora/i && $trank[2] < 2) { next; }	# Feria minor and Vigils have no Vespers if superseded
 			if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
 			%cstr = %{officestring('Latin', $commemo, 0)};
-			#$dayname[2] .= " occ: $commemo $cstr{Rank}";
 			if (%cstr) {
 				my @cr = split(";;", $cstr{Rank});
 				unless (($cr[2] < $ranklimit && !($cr[2] == 2.1 || $cr[2] == 2.99)) || $cstr{Rule} =~ /No secunda vespera/i) { push(@comentries, $commemo); }   # sort out (Semi-)duplex and infra 8vam communis except for Feria major / Dominica major
