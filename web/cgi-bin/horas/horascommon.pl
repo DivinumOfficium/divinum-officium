@@ -177,7 +177,7 @@ sub occurrence {
 		} elsif ($transfer =~ /Sancti/) {
 			$sfile = $transfer;
 			@commemoentries = @transfers;
-		} elsif (transfered($sfile, $year, $version)) {
+		} elsif ($sfile && transfered($sfile, $year, $version)) {
 			$sfile = '';
 		} elsif ($transfer =~ /tempora/i && @transfers) {
 			foreach my $tr (@transfers) {
