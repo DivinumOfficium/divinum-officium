@@ -41,7 +41,7 @@ examples.
 
 ### Production
 
-To pull a pre-built container, pull see docker image `divinumofficiumweb/divinumofficium:latest`.
+To pull a pre-built container, pull see docker image `ghcr.io/divinumofficium/divinum-officium:master`.
 
 To get the yml file:
 `$ wget https://raw.githubusercontent.com/DivinumOfficium/divinum-officium/master/docker-compose-prod.yml`
