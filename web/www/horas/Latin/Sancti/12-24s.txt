@@ -2,9 +2,15 @@
 
 [Rule]
 9 lectiones
+Psalmi Dominica
+Antiphonas horas
+no93
+
+[Rule] (rubrica 196)
 Matins simplex
 Psalmi Dominica
-Antiphonas horas 
+Antiphonas horas
+Tempora none
 no93
 
 [Lectio1]
@@ -60,3 +66,6 @@ no93
 
 [Responsory9]
 @Sancti/12-24:Responsory3
+
+[Ant 2]
+@Sancti/12-24:Ant 2

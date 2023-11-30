@@ -1,59 +1,22 @@
 [Rank]
-S. Thomæ Episcopi et Martyris;;Duplex;;3;;vide C2
+S. Thomæ Cantuariensis Episcopi et Martyris;;Duplex;;3;;vide C2
 
-[Rank] (rubrica Trident)
-S. Thomæ Episcopi et Martyris;;Semiduplex;;2.1;;vide C2
+[Rank] (rubrica 1570 aut rubrica 1888)
+S. Thomæ Cantuariensis Episcopi et Martyris;;Semiduplex;;2.2;;vide C2
 
 [Rank](rubrica 1960)
-Die quinta post Nativitatem;;Duplex II class;;5;;ex Sancti/12-25
+S. Thomæ Cantuariensis Episcopi et Martyris;;Simplex;;1.1;;vide C2
 
 [Rule]
 vide C2;
 9 lectiones
 
+[Ant Vespera]
+@Sancti/12-25:Ant Vespera 3
+
 [Oratio]
-Deus, pro cujus Ecclésia gloriósus Póntifex Thomas gládiis impiórum occúbuit:~
-præsta, quǽsumus; ut omnes, qui ejus implórant auxílium, petitiónis suæ~
-salutárem consequántur efféctum.
+Deus, pro cujus Ecclésia gloriósus Póntifex Thomas gládiis impiórum occúbuit: præsta, quǽsumus; ut omnes, qui ejus implórant auxílium, petitiónis suæ salutárem consequántur efféctum.
 $Per Dominum
-
-[Lectio1]
-Incipit Epístola beáti Pauli Apóstoli ad Romános
-!Rom 1:1-7
-1 Paulus, servus Jesu Christi, vocátus Apóstolus, segregátus in Evangélium Dei,
-2 quod ante promíserat per prophétas suos in Scriptúris sanctis
-3 de Fílio suo, qui factus est ei ex sémine David secúndum carnem,
-4 qui prædestinátus est Fílius Dei in virtúte secúndum spíritum sanctificatiónis ex resurrectióne mortuórum Jesu Christi Dómini nostri:
-5 per quem accépimus grátiam, et apostolátum ad obediéndum fídei in ómnibus géntibus pro nómine ejus,
-6 in quibus estis et vos vocáti Jesu Christi:
-7 ómnibus qui sunt Romæ, diléctis Dei, vocátis sanctis. Grátia vobis, et pax a Deo Patre nostro, et Dómino Jesu Christo.
-
-[Responsory1]
-@Sancti/12-25:Responsory2
-
-[Lectio2]
-!Rom 1:8-12
-8 Primum quidem grátias ago Deo meo per Jesum Christum pro ómnibus vobis: quia fides vestra annuntiátur in univérso mundo.
-9 Testis enim mihi est Deus, cui sérvio in spíritu meo in Evangélio Fílii ejus, quod sine intermissióne memóriam vestri fácio
-10 semper in oratiónibus meis: óbsecrans, si quómodo tandem aliquándo prósperum iter hábeam in voluntáte Dei veniéndi ad vos.
-11 Desídero enim vidére vos, ut áliquid impértiar vobis grátiæ spirituális ad confirmándos vos:
-12 id est, simul consolári in vobis per eam quæ ínvicem est, fidem vestram atque meam.
-
-[Responsory2]
-@Sancti/12-25:Responsory3
-
-[Lectio3]
-!Rom 1:13-19
-13 Nolo autem vos ignoráre fratres: quia sæpe propósui veníre ad vos (et prohíbitus sum usque adhuc) ut áliquem fructum hábeam et in vobis, sicut et in céteris géntibus.
-14 Græcis ac bárbaris, sapiéntibus, et insipiéntibus débitor sum:
-15 ita (quod in me) promptum est et vobis, qui Romæ estis, evangelizáre.
-16 Non enim erubésco Evangélium. Virtus enim Dei est in salútem omni credénti, Judǽo primum, et Græco.
-17 Justítia enim Dei in eo revelátur ex fide in fidem: sicut scriptum est: Justus autem ex fide vivit.
-18 Revelátur enim ira Dei de cælo super omnem impietátem, et iniustítiam hóminum eórum, qui veritátem Dei in iniustítia détinent:
-19 quia quod notum est Dei, maniféstum est in illis. Deus enim illis manifestávit.
-
-[Responsory3]
-@Sancti/12-25:Responsory4
 
 [Lectio4]
 Thomas, Londíni in Anglia natus, Theobáldo succéssit Cantuariénsi epíscopo: et qui ántea in administrándo cancelláriæ múnere præcláre se gésserat, in episcopáli offício fortis et invíctus fuit. Cum enim Henrícus secúndus Angliæ rex, convocátis ad se epíscopis et procéribus regni, leges ferret utilitáti ac dignitáti ecclesiásticæ repugnántes, ádeo constánter óbstitit régiæ cupiditáti, ut neque pollicitatiónibus, neque terróribus de senténtia decédens, próxime conjíciendus in cárcerem clam recésserit. Inde propínqui ejus omnis ætátis ejécti, amíci, fautóres omnes, iis, quibus per ætátem licéret, jurejurándo adstríctis, univérsos Thomam aditúros, si fortásse miserábili suórum calamitátis aspéctu moverétur, qui a sancto propósito privátis incómmodis deterréri mínime potuísset. Non respéxit carnem aut sánguinem, neque ullus in eo humanitátis sensus offícii constántiam labefactávit.
@@ -83,20 +46,3 @@ Verum ab utróque se dissidére osténdit Christus: ab illis quidem, qui in ali�
 [Ant Vespera 3]
 @Sancti/12-25
 
-[Commemoratio 2]
-@Sancti/12-25:Octava
-
-[Commemoratio 3]
-@Sancti/12-25:Octava
-
-[Commemoratio 2] (rubrica tridentina)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-@Sancti/12-28:Octava
-
-[Commemoratio 3] (rubrica tridentina)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-@Sancti/12-28:Octava

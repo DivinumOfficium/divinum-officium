@@ -1,14 +1,17 @@
 [Rank]
 Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
 
+[Rank] (rubrica tridentina)
+Dominica Infra Octavam Nativitatis;;Semiduplex;;2.93;;ex Sancti/12-25
+
 [Rank] (rubrica 1960)
 Dominica Infra Octavam Nativitatis;;Semiduplex;;5.5;;ex Sancti/12-25
 
 [Rule]
 9 lectiones
 ex Sancti/12-25 
-Lectio1 Sancti
 Psalmi Dominica
+Lectio1 OctNat
 
 [Ant Vespera]
 @Sancti/12-25:Ant Vespera 3
@@ -32,7 +35,16 @@ $Qui tecum
 [Commemoratio] (rubrica divino)
 @Sancti/12-25:Octava
 
+[Commemoratio 3] (rubrica divino)
+@Sancti/12-25:Octava
+
 [Commemoratio] (rubrica tridentina)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava
+
+[Commemoratio 3] (rubrica tridentina)
 @Sancti/12-25:Octava
 @Sancti/12-26:Octava
 @Sancti/12-27:Octava

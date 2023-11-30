@@ -678,18 +678,17 @@ sub lectio : ScriptFunc {
 	#Nat1-0 special rule
 	# TODO: Get rid of this special case by separating the temporal and sanctoral
 	# parts of Christmas, thus allowing occurring Scripture to be defined.
-	if ($num <= 3 && $rule =~ /Lectio1 Sancti/i && $winner =~ /tempora/i && $day >= 29) {
+	if ($num <= 3 && $rule =~ /Lectio1 OctNat/i) {
 		my $c;
 		
-		if ($rule =~ /no commemoratio/i) {
-			
-			# XXX: The commemoration has been suppressed, so we hardcode a path to
-			# the sanctoral part.
+		if ($day < 29) {
 			$c = officestring($lang, "Sancti/12-$day.txt");
-			$c->{'Lectio2'} .= $c->{'Lectio3'} if (contract_scripture(2));
 		} else {
-			$c = (columnsel($lang)) ? \%commemoratio : \%commemoratio2;
+			my $tfile = "Tempora/Nat$day" . ($version =~ /trident/i ? "o.txt" : ".txt");
+			$c = officestring($lang, $tfile);
 		}
+		$c->{'Lectio2'} .= $c->{'Lectio3'} if (contract_scripture(2));
+		
 		$w{"Lectio$num"} = $c->{"Lectio$num"};
 		$w{"Responsory$num"} = $c->{"Responsory$num"};
 	}
@@ -849,20 +848,22 @@ sub lectio : ScriptFunc {
 		&& $commune !~ /C10/
 		&& $rule !~ /no93/i
 		&& $winner{Rank} !~ /Octav.*(Epi|Corp)/i
-	&& ($dayofweek != 0 || $winner =~ /Sancti/i || $winner =~ /Nat2/i)
-	&& (($rule =~ /9 lectio/i && $num == 9) || ($rule !~ /9 lectio/i && $num == 3 && $winner !~ /Tempora/i))
-	|| ($rank < 2 && $winner =~ /Sancti/i && $num == 4))
+		#&& ($dayofweek != 0 || $winner =~ /Sancti/i || $winner =~ /Nat2/i)
+		&& (($rule =~ /9 lectio/i && $num == 9 && !exists($winner{Responsory9})) || ($rule !~ /9 lectio/i && $num == 3 && $winner !~ /Tempora/i && !exists($winner{Responsory3})))
+			|| ($rank < 2 && $winner =~ /Sancti/i && $num == 4))
 	{
 		%w = (columnsel($lang)) ? %winner : %winner2;
 		
 		if (($w{Rank} =~ /Simplex/i || ($version =~ /1955/ && $rank == 1.5)) && exists($w{'Lectio94'})) {
+			setbuild2("Last lectio Commemoratio ex Legenda historica (#94)");
 			$w = $w{'Lectio94'};
 		} elsif (exists($w{'Lectio93'})) {
+			setbuild2("Last lectio Commemoratio ex Sanctorum (#93)");
 			$w = $w{'Lectio93'};
 		}
 		
 		if (
-			($commemoratio =~ /tempora/i || $commemoratio =~ /01\-05/)
+			($commemoratio =~ /tempora/i && $commemoratio !~ /Nat30/i || $commemoratio =~ /01\-05/)
 			&& ($homilyflag || exists($commemoratio{Lectio7}))
 		&& $comrank > 1
 		&& ( $rank > 4
@@ -890,8 +891,8 @@ sub lectio : ScriptFunc {
 			if (exists($tro{'Lectio Vigilia'})) { $w = $tro{'Lectio Vigilia'}; }
 		}
 		my $cflag = 1;    #*************  03-30-10
-		if ($winner{Rule} =~ /9 lectiones/i && exists($winner{Responsory9})) { $cflag = 0; }
-		if ($winner{Rule} !~ /9 lectiones/i && exists($winner{Responsory3})) { $cflag = 0; }
+		#if ($winner{Rule} =~ /9 lectiones/i && exists($winner{Responsory9})) { $cflag = 0; }
+		#if ($winner{Rule} !~ /9 lectiones/i && exists($winner{Responsory3})) { $cflag = 0; }
 		
 		if ( $commemoratio =~ /sancti/i
 			&& $commemoratio{Rank} =~ /S\. /i
@@ -917,16 +918,21 @@ sub lectio : ScriptFunc {
 			
 			if ($wc) {
 				setbuild2("Last lectio: Commemoratio from Sancti #$ji");
-				my %comm = %{setupstring($lang, 'Psalterium/Comment.txt')};
-				my @comm = split("\n", $comm{'Lectio'});
-				$comment = $comm[2];
-				$w = setfont($redfont, $comment) . "\n$wc";
+				if($wc !~ /\!/) {	# add Commemoratio comment if not there already
+					my %comm = %{setupstring($lang, 'Psalterium/Comment.txt')};
+					my @comm = split("\n", $comm{'Lectio'});
+					$comment = $comm[2];
+					$w = setfont($redfont, $comment) . "\n$wc";
+				} else {
+					$w = $wc;
+				}
+				
 			}
 		}
 		if ($winner{Rank} =~ /Octav.*(Epi|Corp)/i && $w !~ /!.*Vigil/i) { $w = $wo; }
 		;    #*** if removed from top
 		if (exists($w{'Lectio Vigilia'})) { $w = $w{'Lectio Vigilia'}; }
-		if ($w =~ /!.*?Octav/i || $w{Rank} =~ /Octav/i) { $w = $wo; }
+		#if ($w =~ /!.*?Octav/i || $w{Rank} =~ /Octav/i) { $w = $wo; setbuild2("transfervigil deleted");}
 		$w = addtedeum($w);
 	}
 	

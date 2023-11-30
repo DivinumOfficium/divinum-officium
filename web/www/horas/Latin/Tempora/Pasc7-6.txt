@@ -1,8 +1,5 @@
 [Rank]
-Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[Rank]
-Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
+Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6.9;;ex Pasc7-0
 
 [Rule]
 ex Pasc7-0;
@@ -12,6 +9,7 @@ Psalmi Dominica;
 Hymnus Tertia
 Feria Te Deum
 no93
+no secunda vesperas
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. Repléti sunt omnes Spíritu Sancto, allelúja.\nR. Et cœpérunt loqui, allelúja./s

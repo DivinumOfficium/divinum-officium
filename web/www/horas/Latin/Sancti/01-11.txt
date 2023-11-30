@@ -24,12 +24,6 @@ De Epístola ad Romános
 [Responsory1]
 @Sancti/01-06:Responsory1InfraOctavam
 
-[Responsory2]
-@Sancti/01-06:Responsory2
-
-[Responsory3]
-@Sancti/01-06:Responsory3
-
 [Lectio2]
 !Rom 15:5-11
 5 Deus autem patiéntiæ et solátii, det vobis idípsum sápere in altérutrum secúndum Jesum Christum: 
@@ -40,6 +34,9 @@ De Epístola ad Romános
 10 Et íterum dicit: Lætámini, gentes, cum plebe ejus. 
 11 Et íterum: Laudáte, omnes gentes, Dóminum, et magnificáte eum, omnes pópuli.
 
+[Responsory2]
+@Sancti/01-06:Responsory2
+
 [Lectio3]
 !Rom 15:12-16
 12 Et rursus Isaías ait: Erit radix Jesse, et qui exsúrget régere gentes, in eum gentes sperábunt. 
@@ -47,6 +44,9 @@ De Epístola ad Romános
 14 Certus sum autem, fratres mei, et ego ipse de vobis, quóniam et ipsi pleni estis dilectióne, repléti omni sciéntia, ita ut possítis altérutrum monére. 
 15 Audácius autem scripsi vobis, fratres, ex parte, tamquam in memóriam vos redúcens: propter grátiam, quæ data est mihi a Deo,
 16 ut sim miníster Christi Jesu in géntibus: sanctíficans Evangélium Dei, ut fiat oblátio géntium accépta, et sanctificáta in Spíritu Sancto.
+
+[Responsory3]
+@Sancti/01-06:Responsory3
 
 [Lectio4]
 Sermo sancti Fulgéntii Epíscopi
@@ -81,6 +81,5 @@ Vénient ad te, * qui detrahébant tibi, et adorábunt vestígia pedum tuórum.
 [Ant 3]
 Admóniti Magi * in somnis, per áliam viam revérsi sunt in regiónem suam.
 
-[Commemoratio]
-!Commemoratio S. Hygini Papæ et Martyris
-@Commune/C2:Oratio Gregem
+[Ant 1]
+@Sancti/01-10:Ant 3
