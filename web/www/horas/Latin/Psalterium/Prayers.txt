@@ -14,6 +14,28 @@ v. Credo in Deum, Patrem omnipoténtem, Creatórem cæli et terræ.
 Et in Jesum Christum, Fílium ejus únicum, Dóminum nostrum: qui concéptus est de Spíritu Sancto, natus ex María Vírgine, passus sub Póntio Piláto, crucifíxus, mórtuus, et sepúltus: descéndit ad ínferos; tértia die resurréxit a mórtuis; ascéndit ad cælos; sedet ad déxteram Dei Patris omnipoténtis: inde ventúrus est judicáre vivos et mórtuos.
 Credo in Spíritum Sanctum, sanctam Ecclésiam cathólicam, Sanctórum communiónem, remissiónem peccatórum, carnis resurrectiónem, vitam ætérnam. Amen.
 
+[Pater secreto]
+!« Pater Noster » dicitur secreto usque ad « Et ne nos indúcas in tentatiónem: »
+&pater_noster
+
+[Credo secreto]
+!« Credo » dicitur secreto usque ad « Carnis resurrectiónem. »
+v. Credo in Deum, Patrem omnipoténtem, Creatórem cæli et terræ. Et in Jesum Christum, Fílium ejus únicum, Dóminum nostrum: qui concéptus est de Spíritu Sancto, natus ex María Vírgine, passus sub Póntio Piláto, crucifíxus, mórtuus, et sepúltus: descéndit ad ínferos; tértia die resurréxit a mórtuis; ascéndit ad cælos; sedet ad déxteram Dei Patris omnipoténtis: inde ventúrus est judicáre vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Ecclésiam cathólicam, Sanctórum communiónem, remissiónem peccatórum.
+V. Carnis resurrectiónem.
+R. Vitam ætérnam. Amen.
+
+[Adjutorium nostrum]
+V. Adjutórium nóstrum + in nómine Dómini. 
+R. Qui fecit cælum et terram.
+
+[Converte nos]
+V. Convérte nos +++ Deus, salutáris noster.
+R. Et avérte iram tuam a nobis.
+
+[Dominus det]
+V. Dóminus det nobis suam pacem.
+R. Et vitam ætérnam. Amen.
+
 [Gloria]
 V. Glória Patri, et Fílio, * et Spirítui Sancto.
 R. Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen.
@@ -204,8 +226,7 @@ $Kyrie
 
 [MLitany2]
 $Kyrie
-/: « Pater Noster » dicitur secreto usque ad « Et ne nos indúcas in tentatiónem: » :/
-&pater_noster
+$Pater secreto
 
 [Divinum auxilium]
 (rubrica Monastica)
@@ -220,9 +241,8 @@ Et cum frátribus nostris abséntibus. Amen.
 Allelúja, allelúja.
 
 [Preces feriales Laudes]
-v. Kýrie, eléison. Christe, eléison. Kýrie, eléison.
-!« Pater Noster » dicitur secreto usque ad « Et ne nos indúcas in tentatiónem: »
-&pater_noster
+$Kyrie
+$Pater secreto
 V. Ego dixi: Dómine, miserére mei.
 R. Sana ánimam meam quia peccávi tibi.
 V. Convértere, Dómine, úsquequo? 
@@ -281,9 +301,8 @@ R. Et clamor meus ad te véniat.
 @:Preces feriales Laudes:s/129/50/
 
 [Preces feriales Tertia]
-v. Kýrie, eléison. Christe, eléison. Kýrie, eléison.
-!« Pater Noster » dicitur secreto usque ad « Et ne nos indúcas in tentatiónem: »
-&pater_noster
+$Kyrie
+$Pater secreto
 V. Dómine, Deus virtútum, convérte nos.
 R. Et osténde fáciem tuam, et salvi érimus.
 V. Exsúrge, Christe, ádjuva nos.

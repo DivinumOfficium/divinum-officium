@@ -14,6 +14,29 @@ v. Ich glaube an Gott, den allmächtigen Vater, Schöpfer des Himmels und der Er
 Und an Jesus Christus, Seinen eingeborenen Sohn, unsern Herrn, der empfangen ist vom Heiligen Geist, geboren aus Maria, der Jungfrau, gelitten unter Pontius Pilatus, gekreuzigt, gestorben und begraben, abgestiegen zu der Hölle, am dritten Tage wieder auferstanden von den Toten, aufgefahren in den Himmel; Er sitzet zur Rechten Gottes, des allmächtigen Vaters; von dannen er kommen wird zu richten die Lebendigen und die Toten.
 Ich glaube an den Heiligen Geist, die heilige katholische Kirche, Gemeinschaft der Heiligen, Nachlaß der Sünden, Auferstehung des Fleisches und das ewige Leben. Amen.
 
+[Pater secreto]
+!Das « Vater unser » wird still gebetet bis « Und führe uns nicht in Versuchung: »
+&pater_noster
+
+[Credo secreto]
+!Das « Credo » wird still gebetet bis « Auferstehung des Fleisches. »
+v. Ich glaube an Gott, den allmächtigen Vater, Schöpfer des Himmels und der Erde.
+Und an Jesus Christus, Seinen eingeborenen Sohn, unsern Herrn, der empfangen ist vom Heiligen Geist, geboren aus Maria, der Jungfrau, gelitten unter Pontius Pilatus, gekreuzigt, gestorben und begraben, abgestiegen zu der Hölle, am dritten Tage wieder auferstanden von den Toten, aufgefahren in den Himmel; Er sitzet zur Rechten Gottes, des allmächtigen Vaters; von dannen er kommen wird zu richten die Lebendigen und die Toten.
+Ich glaube an den Heiligen Geist, die heilige katholische Kirche, Gemeinschaft der Heiligen, Nachlaß der Sünden.
+V. Auferstehung des Fleisches.
+R. Und das ewige Leben. Amen.
+
+[Adjutorium nostrum]
+V. Unsere Hilfe ist + im Namen des Herrn. 
+R. Der Himmel und Erde erschaffen hat.
+
+V. O wende unsere Lage, +++ Gott, du Urquell unseres Segens.
+R. Und laß uns ganz von deinem Zorn befreit sein.
+
+[Dominus det]
+V. Gott gebe uns seinen Frieden.
+R. Und das ewige Leben. Amen.
+
 [Gloria]
 V. Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste.
 R. Wie es war im Anfang, so auch jetzt und alle Zeit und in Ewigkeit. Amen.
@@ -185,15 +208,14 @@ $Deo gratias
 v. Lasset uns beten.
 
 [Te decet]
-v. Te décet laus, + te decet hymnus: tibi glória Deo Patri, et Fílio, cum Spíritu Sancto in sǽcula sæculórum. Amen.
+v. Dir gebührt Lob, + Dir gebührt ein Lobgesang: Ehre sei Dir Gott dem Vater, und dem Sohne mit dem Heiligen Geiste von Ewigkeit zu Ewigkeit. Amen.
 
 [Kyrie]
 v. Herr, erbarme Dich! Christus, erbarme Dich! Herr, erbarme Dich!
 
 [MLitany2]
 $Kyrie
-/:"Vater unser" wird still gebet bis zum "Und führe uns nicht in Versuchung:".:/
-&pater_noster
+$Pater secreto
 
 [Divinum auxilium]
 Die Hilfe Gottes + möge ständig bei uns bleiben.
@@ -207,7 +229,7 @@ Alleluja, alleluja.
 
 [Preces feriales Laudes]
 $Kyrie
-&pater_noster
+$Pater secreto
 V. Ach, ich klage, Herr, erbarme dich meiner.
 R. Heile meine Seele, denn ich habe gegen dich gesündigt.
 V. Wende dich uns zu, o Herr, wie lange willst du zögern?
@@ -264,7 +286,7 @@ R. Und laß mein Rufen zu dir kommen.
 
 [Preces feriales Tertia]
 $Kyrie
-&pater_noster
+$Pater secreto
 V. O Herr, du mächtiger Gott, wend' unsre Lage.
 R. Und zeige uns dein Antlitz, daß wir Heil erhalten.
 V. Auf, Christus, sei unser Beistand.

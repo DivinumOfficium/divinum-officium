@@ -12,6 +12,28 @@ v. Hail Mary, full of grace, the Lord is with thee; blessed art thou amongst wom
 [Credo]
 v. I believe in God, the Father almighty, Creator of heaven and earth. And in Jesus Christ, his only Son, our Lord; who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried: he descended into hell; the third day he arose again from the dead; he ascended into heaven; sitteth at the right hand of God the Father almighty: from thence he shall come to judge the living and the dead. I believe in the Holy Ghost, the holy catholic Church, the communion of Saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.
 
+[Pater secreto]
+!"Our Father" is said silently until "And lead us not into temptation:".
+&pater_noster
+
+[Credo secreto]
+!"Credo" is said silently until "The resurrection of the body."
+v. I believe in God, the Father almighty, Creator of heaven and earth. And in Jesus Christ, his only Son, our Lord; who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried: he descended into hell; the third day he arose again from the dead; he ascended into heaven; sitteth at the right hand of God the Father almighty: from thence he shall come to judge the living and the dead. I believe in the Holy Ghost, the holy catholic Church, the communion of Saints, the forgiveness of sins. 
+V. The resurrection of the body. 
+R. And life everlasting. Amen.
+
+[Adjutorium nostrum]
+V. Our help is + in the name of the Lord,  
+R. Who made heaven and earth.
+
+[Converte nos]
+V. Turn us then, +++ O God, our saviour: 
+R. And let thy anger cease from us.
+
+[Dominus det]
+V. May the Lord grant us his peace.
+R. And life everlasting. Amen.
+
 [Gloria]
 V. Glory be to the Father, and to the Son, * and to the Holy Ghost. 
 R. As it was in the beginning, is now, * and ever shall be, world without end. Amen.
@@ -221,9 +243,8 @@ And with our brothers, who are absent. Amen.
 Alleluia, alleluia.
 
 [Preces feriales Laudes]
-v. Lord, have mercy upon us. Christ, have mercy upon us. Lord, have mercy upon us.
-!"Our Father" is said silently until "And lead us not into temptation:".
-&pater_noster
+$Kyrie
+$Pater secreto
 V. I said: Lord, be merciful unto me: 
 R. Heal my soul, for I have sinned against thee.
 V. Turn thee again, O Lord; how long will it be? 
@@ -279,9 +300,8 @@ V. O Lord, hear my prayer.
 R. And let my cry come unto thee. 
 
 [Preces feriales Tertia]
-v. Lord have mercy on us, Christ have mercy on us, Lord have mercy on us.
-!"Our Father" is said silently until "And lead us not into temptation:".
-&pater_noster
+$Kyrie
+$Pater secreto
 V. Turn us again, O Lord God of hosts:
 R. Show us thy face, and we shall be saved.
 V. Arise, O Christ, and help us
