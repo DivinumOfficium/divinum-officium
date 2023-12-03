@@ -200,7 +200,7 @@ sub occurrence {
 	
 			if ($tomorrow) {
 				$svesp = 1;
-				$BMVSabbato = ($saint{Rank} !~ /Vigilia/ && $srank[2] < 2 && $version !~ /(1960|Monastic)/ && $dayofweek == 6);
+				$BMVSabbato = ($saint{Rank} !~ /Vigilia/ && $srank[2] < 2 && $version !~ /196/ && $dayofweek == 6);
 
 				if ($version !~ /196|Trident/ && $hora =~ /Completorium/i && $month == 11 && $day == 1 && $dayofweek != 6) {
 					$srank[2] = 7; # Office of All Souls supersedes All Saints at Completorium from 1911 to 1959
@@ -274,7 +274,7 @@ sub occurrence {
 			unless($tomorrow) {
 				$scriptura = $tname =~ /Epi0/i ? $sname : $tname;
 			}
-			$tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Feria;;1.2;;vide $C10";
+			$tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Simplex;;1.2;;vide $C10";
 			$tname = subdirname('Commune', $version) . "$C10.txt";
 			@trank = split(";;", $trank);
 		}
