@@ -46,7 +46,7 @@ sub horas {
   @script1 = getordinarium($lang1, $command);
   @script1 = specials(\@script1, $lang1);
   $column = 2;
-  if ($Ck) { $version = $version2; precedence(); }
+	if ($Ck) { $version = $version2; precedence(); setsecondcol(); }
   @script2 = getordinarium($lang2, $command);
   @script2 = specials(\@script2, $lang2);
   $expandnum = strictparam('expandnum');
@@ -72,7 +72,7 @@ sub horas {
     ($text1, $ind1) = getunit(\@script1, $ind1);
     ($text2, $ind2) = getunit(\@script2, $ind2);
     $column = 1;
-    $version = $version1 if $Ck;
+		if ($Ck) { $version = $version1; precedence(); }
     $text1 = resolve_refs($text1, $lang1);
 
     # Suppress (Alleluia) during Quadrigesima.
@@ -85,7 +85,7 @@ sub horas {
 
     if (!$only) {
       $column = 2;
-      if ($Ck) { $version = $version2; }
+			if ($Ck) { $version = $version2; precedence(); setsecondcol(); }
       $text2 = resolve_refs($text2, $lang2);
 
       if ($dayname[0] =~ /Quad/i && !Septuagesima_vesp()) {
@@ -1252,7 +1252,7 @@ sub setasterisk {
 
 sub columnsel {
   my $lang = shift;
-  if ($Ck) { return ($column == 1) ? 1 : 0; }
+	if ($Ck) { return ($column == 1) ? 1 : 0; }
   return ($lang =~ /^$lang1$/i) ? 1 : 0;
 }
 

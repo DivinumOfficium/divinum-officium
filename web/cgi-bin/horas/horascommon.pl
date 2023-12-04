@@ -441,7 +441,7 @@ sub occurrence {
 		}
 		elsif($srank[2] && $climit1960
 				&& $tempora{Rule} !~ /omit.*? commemoratio/i
-				&& ($tempora{Rule} !~ /No commemoratio/i || ($svesp == 1 && $hora =~ /vespera/i))
+				&& $tempora{Rule} !~ /No commemoratio/i
 				&& $sname !~ /12-20o/) {
 			
 			if (($hora =~ /laudes/i || $missa) || $climit1960 == 1) {
@@ -465,7 +465,9 @@ sub occurrence {
 			}
 					
 			if ($version =~ /196/i && $dayname[2] =~ /Januarii/i) { $dayname[2] = ''; }
-		} elsif (my $transferedC = $commemoentries[0]) {
+		} elsif (my $transferedC = $commemoentries[0]
+				&& $tempora{Rule} !~ /omit.*? commemoratio/i
+				&& ($tempora{Rule} !~ /No commemoratio/i)) {
 			$commemoratio = "$transferedC.txt";
 			my %tc = %{setupstring('Latin', "$transferedC.txt")};
 			my @cr = split(";;", $tc{Rank});
@@ -640,7 +642,7 @@ sub concurrence {
 		}
 	} elsif (!$sanctoraloffice && !$csanctoraloffice) {
 		# two "concurrent" Tempora
-		if ($crank >= $rank) {
+		if ($crank >= $rank || $tempora{Rule} =~ /No secunda vespera/i) {
 			$vespera = 1;
 			$tvesp = 1;
 			$cvespera = 0;
@@ -962,6 +964,7 @@ sub precedence {
 	our($rule, $communerule, $communetype, $laudes, $transfervigil) = ('') x 5;
 	our($C10, $duplex) = ('') x 2;
 	
+	our($antecapitulum, $antecapitulum2) = ('') x 2;;
 	our($tname, $sname, $sanctoraloffice, $ctname, $csname, $csanctoraloffice) = ('') x 6;
 	our(@trank, @srank, @ctrank, @csrank, @commemoentries, @ccommemoentries) = () x 6;
 	our(%tempora, %saint, %ctempora, %csaint) = () x 2;
@@ -1347,19 +1350,29 @@ sub climit1960 {
 sub setheadline {
 	my $name = shift;
 	my $rank = shift;
+	my $latname;
 	
 	# read only globals
-	our(%winner, $winner, @dayname, $version, $day, $month, $year, $dayofweek, $hora, $rule);
+	our(%winner, $winner, @dayname, $version, $day, $month, $year, $dayofweek, $hora, $rule, $lang);
 	
 	if ((!$name || !$rank) && exists($winner{Rank}) && $winner !~ /Epi1\-0a/i) {
 		my @rank = split(';;', $winner{Rank});
 		$name = $rank[0];
 		$rank = $rank[2];
 	}
-	if ($name && $rank) {
+	
+	if ($lang !~ /Latin/i) {
+		my %latwinner = %{setupstring('Latin', $winner)};
+		my @latrank = split(';;', $latwinner{Rank});
+		$latname = $latrank[0];
+	} else {
+		$latname = $name;
+	}
+	
+	if ($latname && $rank) {
 		my $rankname = '';
 		
-		if (($name !~ /(?:Die|Feria|Sabbato|^In Octava)/i) && ($dayname[0] !~ /Pasc[07]/i || $dayofweek == 0 || $name !~ /Pasc|Pent/i)) {
+		if (($latname !~ /(?:Die|Feria|Sabbato|^In Octava)/i) && ($dayname[0] !~ /Pasc[07]/i || $dayofweek == 0 || $name !~ /Pasc|Pent/i)) {
 			my @tradtable = (
 			'none', 'Simplex', 'Semiduplex', 'Duplex',
 			'Duplex majus', 'Duplex II. classis', 'Duplex I. classis', 'Duplex I. classis'
@@ -1379,15 +1392,15 @@ sub setheadline {
 			
 			if ($version =~ /1570/i) { $rankname =~ s/ majus//;	} # no Duplex majus yet in 1570
 			
-			if($name =~ /Vigilia Epi/i) {
+			if($latname =~ /Vigilia Epi/i) {
 				$rankname = ($version =~ /trident/i) ? 'Semiduplex' : 'Semiduplex Vigilia II. classis';
 			}
 			
-			if($name =~ /Sanctæ Fami/i) {
+			if($latname =~ /Sanctæ Fami/i) {
 				$rankname = 'Duplex majus';
 			}
 			
-			if ($name =~ /Dominica/i && $version !~ /196/) {
+			if ($latname =~ /Dominica/i && $version !~ /196/) {
 				if ($version !~ /trident/i) {
 					local $_ = getweek($day, $month, $year, $dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i);
 					$rankname = (/Pasc[017]/i || /Pent01/i) ? 'Duplex I. classis'
@@ -1420,15 +1433,15 @@ sub setheadline {
 			#$rankname = 'Semiduplex';
 		} elsif ($version !~ /196/ && $dayname[0] =~ /Pasc[07]/i && $dayofweek > 0) {
 			$rankname = ($rank =~ 7) ? 'Duplex I. classis' : 'Semiduplex'; # Paschal & pentecost Octave pre 1960
-		} elsif ($version =~ /trid/i && $name =~ /^In Octava/i) {
+		} elsif ($version =~ /trid/i && $latname =~ /^In Octava/i) {
 			$rankname = 'Duplex'; # all other Octaves pre Divino
-		} elsif ($version =~ /trid/i && $name =~ /infra Octavam|post Octavam Asc|Vigilia Pent/i) {
+		} elsif ($version =~ /trid/i && $latname =~ /infra Octavam|post Octavam Asc|Vigilia Pent/i) {
 			$rankname = 'Semiduplex'; # all other Octaves pre Divino
-		} elsif ($version =~ /Divino/ && $name =~ /^In Octava|infra Octavam|post Octavam Asc|Vigilia Pent/i) {
+		} elsif ($version =~ /Divino/ && $latname =~ /^In Octava|infra Octavam|post Octavam Asc|Vigilia Pent/i) {
 			$rankname = ($rank < 2) ? 'Simplex'
-				: ($rank < 3 && $name !~ /Asc|Nat|Cord/i || $name =~ /post|Joan/) ? 'Semiduplex'
+				: ($rank < 3 && $latname !~ /Asc|Nat|Cord/i || $latname =~ /post|Joan/) ? 'Semiduplex'
 				: ($rank < 3) ? 'Semiduplex III. ordinis'
-				: ($rank < 5 && $name !~ /Asc|Nat|Cord/i) ? 'Duplex majus'
+				: ($rank < 5 && $latname !~ /Asc|Nat|Cord/i) ? 'Duplex majus'
 			  : ($rank < 5) ? 'Duplex majus III. ordinis'
 				: ($rank < 5.61) ? 'Semiduplex II. ordinis'
 				: ($rank < 6.5) ? 'Duplex majus II. ordinis'
