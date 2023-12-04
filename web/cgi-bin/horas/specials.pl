@@ -1261,9 +1261,9 @@ sub oratio {
 		|| $rule =~ /no commemoratio/i
 		|| ($version =~ /196/ && $winner{Rule} =~ /nocomm1960/i)) {
 			if (exists($w{"Commemoratio 2"})) {
-				$c = getrefs($w{"Commemoratio 2"}, $lang, 2, $winner{Rule});
+				$c = getrefs($w{"Commemoratio 2"}, $lang, 2, $w{Rule});
 			} elsif (exists($w{Commemoratio})) {
-				$c = getrefs($w{Commemoratio}, $lang, 2, $winner{Rule});
+				$c = getrefs($w{Commemoratio}, $lang, 2, $w{Rule});
 			} else {
 				$c = undef;
 			}
@@ -1391,9 +1391,9 @@ sub oratio {
 				|| $rule =~ /no commemoratio/i
 				|| ($version =~ /196/ && $winner{Rule} =~ /nocomm1960/i)) {
 			if (exists($w{"Commemoratio $vespera"})) {
-				$c = getrefs($w{"Commemoratio $vespera"}, $lang, $vespera, $winner{Rule});
+				$c = getrefs($w{"Commemoratio $vespera"}, $lang, $vespera, $w{Rule});
 			} elsif (exists($w{Commemoratio}) && $vespera == 1) {
-				$c = getrefs($w{Commemoratio}, $lang, 1, $winner{Rule});
+				$c = getrefs($w{Commemoratio}, $lang, 1, $w{Rule});
 			} else {
 				$c = undef;
 			}
