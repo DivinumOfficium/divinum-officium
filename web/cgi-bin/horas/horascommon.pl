@@ -962,6 +962,7 @@ sub precedence {
 	our($rule, $communerule, $communetype, $laudes, $transfervigil) = ('') x 5;
 	our($C10, $duplex) = ('') x 2;
 	
+	our($antecapitulum, $antecapitulum2) = ('') x 2;;
 	our($tname, $sname, $sanctoraloffice, $ctname, $csname, $csanctoraloffice) = ('') x 6;
 	our(@trank, @srank, @ctrank, @csrank, @commemoentries, @ccommemoentries) = () x 6;
 	our(%tempora, %saint, %ctempora, %csaint) = () x 2;
