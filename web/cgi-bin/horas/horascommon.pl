@@ -441,7 +441,7 @@ sub occurrence {
 		}
 		elsif($srank[2] && $climit1960
 				&& $tempora{Rule} !~ /omit.*? commemoratio/i
-				&& ($tempora{Rule} !~ /No commemoratio/i || ($svesp == 1 && $hora =~ /vespera/i))
+				&& ($tempora{Rule} !~ /No commemoratio/i)  # || ($svesp == 1 && $hora =~ /vespera/i) <= concurrence is treated elsewhere
 				&& $sname !~ /12-20o/) {
 			
 			if (($hora =~ /laudes/i || $missa) || $climit1960 == 1) {
@@ -465,7 +465,9 @@ sub occurrence {
 			}
 					
 			if ($version =~ /196/i && $dayname[2] =~ /Januarii/i) { $dayname[2] = ''; }
-		} elsif (my $transferedC = $commemoentries[0]) {
+		} elsif (my $transferedC = $commemoentries[0]
+				&& $tempora{Rule} !~ /omit.*? commemoratio/i
+				&& ($tempora{Rule} !~ /No commemoratio/i)) {
 			$commemoratio = "$transferedC.txt";
 			my %tc = %{setupstring('Latin', "$transferedC.txt")};
 			my @cr = split(";;", $tc{Rank});
@@ -640,7 +642,7 @@ sub concurrence {
 		}
 	} elsif (!$sanctoraloffice && !$csanctoraloffice) {
 		# two "concurrent" Tempora
-		if ($crank >= $rank) {
+		if ($crank >= $rank || $tempora{Rule} =~ /No secunda vespera/i) {
 			$vespera = 1;
 			$tvesp = 1;
 			$cvespera = 0;
@@ -1363,10 +1365,10 @@ sub setheadline {
 		my %latwinner = %{setupstring('Latin', $winner)};
 		my @latrank = split(';;', $latwinner{Rank});
 		$latname = $latrank[0];
-		setbuild2("looking for latinname")
+		#setbuild2("looking for latinname");
 	} else {
 		$latname = $name;
-		setbuild2("not looking for latinname")
+		#setbuild2("not looking for latinname");
 	}
 
 	
