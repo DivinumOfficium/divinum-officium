@@ -441,7 +441,7 @@ sub occurrence {
 		}
 		elsif($srank[2] && $climit1960
 				&& $tempora{Rule} !~ /omit.*? commemoratio/i
-				&& ($tempora{Rule} !~ /No commemoratio/i)  # || ($svesp == 1 && $hora =~ /vespera/i) <= concurrence is treated elsewhere
+				&& $tempora{Rule} !~ /No commemoratio/i
 				&& $sname !~ /12-20o/) {
 			
 			if (($hora =~ /laudes/i || $missa) || $climit1960 == 1) {
@@ -1365,12 +1365,9 @@ sub setheadline {
 		my %latwinner = %{setupstring('Latin', $winner)};
 		my @latrank = split(';;', $latwinner{Rank});
 		$latname = $latrank[0];
-		#setbuild2("looking for latinname");
 	} else {
 		$latname = $name;
-		#setbuild2("not looking for latinname");
 	}
-
 	
 	if ($latname && $rank) {
 		my $rankname = '';

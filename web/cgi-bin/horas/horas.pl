@@ -1252,7 +1252,6 @@ sub setasterisk {
 
 sub columnsel {
   my $lang = shift;
-	#	if ($Ck) { return 1; } #
 	if ($Ck) { return ($column == 1) ? 1 : 0; }
   return ($lang =~ /^$lang1$/i) ? 1 : 0;
 }
