@@ -1260,16 +1260,16 @@ sub oratio {
 		unless(($rank >= 6 && $dayname[0] !~ /Pasc[07]/)
 		|| $rule =~ /no commemoratio/i
 		|| ($version =~ /196/ && $winner{Rule} =~ /nocomm1960/i)) {
-			if (exists($winner{"Commemoratio 2"})) {
-				$c = getrefs($winner{"Commemoratio 2"}, $lang, 2, $winner{Rule});
-			} elsif (exists($winner{Commemoratio})) {
-				$c = getrefs($winner{Commemoratio}, $lang, 2, $winner{Rule});
+			if (exists($w{"Commemoratio 2"})) {
+				$c = getrefs($w{"Commemoratio 2"}, $lang, 2, $winner{Rule});
+			} elsif (exists($w{Commemoratio})) {
+				$c = getrefs($w{Commemoratio}, $lang, 2, $winner{Rule});
 			} else {
 				$c = undef;
 			}
 			
-			if ($dayofweek == 6 && exists($winner{'Commemoratio Sabbat'}) && $version !~ /1960/) {
-				$c = getrefs($winner{'Commemoratio Sabbat'}, $lang, 2, $winner{Rule});
+			if ($dayofweek == 6 && exists($w{'Commemoratio Sabbat'}) && $version !~ /1960/) {
+				$c = getrefs($w{'Commemoratio Sabbat'}, $lang, 2, $w{Rule});
 			}
 			
 			my $redn = setfont($largefont, 'N.');
@@ -1388,16 +1388,16 @@ sub oratio {
 
 		# add commemorated from winner
 		unless(($rank >= 6 && $dayname[0] !~ /Pasc[07]/)
-		|| $rule =~ /no commemoratio/i
-		|| ($version =~ /196/ && $winner{Rule} =~ /nocomm1960/i)) {
-			if (exists($winner{"Commemoratio $vespera"})) {
-				$c = getrefs($winner{"Commemoratio $vespera"}, $lang, $vespera, $winner{Rule});
-			} elsif (exists($winner{Commemoratio}) && $vespera == 1) {
-				$c = getrefs($winner{Commemoratio}, $lang, 1, $winner{Rule});
+				|| $rule =~ /no commemoratio/i
+				|| ($version =~ /196/ && $winner{Rule} =~ /nocomm1960/i)) {
+			if (exists($w{"Commemoratio $vespera"})) {
+				$c = getrefs($w{"Commemoratio $vespera"}, $lang, $vespera, $winner{Rule});
+			} elsif (exists($w{Commemoratio}) && $vespera == 1) {
+				$c = getrefs($w{Commemoratio}, $lang, 1, $winner{Rule});
 			} else {
 				$c = undef;
 			}
-	
+
 			my $redn = setfont($largefont, 'N.');
 			$c =~ s/ N\. / $redn /g;
 			$c =~ s/\n!/\n!!/g;
@@ -2126,7 +2126,7 @@ sub getrefs {
   my $item = '';
   my $flag = 0;
   my %s = {};
-
+	
   while (
     $w =~ /
       (.*?)               # Prelude
