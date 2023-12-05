@@ -324,7 +324,7 @@ sub triduum_gloria_omitted() {
   return
        $dayname[0] =~ /Quad6/i
     && $dayofweek > 3
-    && $tvesp == 3;
+    && $tvesp != 1;
 }
 
 #*** Gloria
