@@ -691,15 +691,15 @@ sub concurrence {
 				$cvespera = 0;
 				@ccommemoentries = ();
 				$ccomrank = 0;
-			} elsif ($rank < 2		# no 2nd Vespers of a Simplex
+		} elsif ($rank < 2		# no 2nd Vespers of a Simplex
 				|| ($version =~ /196/ && $cwinner{Rank} =~ /Dominica/i && $rank < 5) # on any Sunday, nothing of a preceding III. cl feast
-				|| ($crank >= 6 && !($rank == 2.1 || $rank == 2.99 || $rank >= 4.2 ) && $cwrank[0] !~ /Dominica|feria|in.*octava/i)  # in 1st Vespers of Duplex I. cl. only commemoration of Feria major, Dominica (major), 8va privilegiata and Duplex II./I. cl
+				|| ($crank >= 6 && !($rank == 2.1 || $rank == 2.99 || $rank == 3.9 || $rank >= 4.2 ) && $cwrank[0] !~ /Dominica|feria|in.*octava/i)  # in 1st Vespers of Duplex I. cl. only commemoration of Feria major, Dominica (major), 8va privilegiata and Duplex II./I. cl
 				|| ($cwinner =~ /12-25|01-01/) # on Christmas Eve and New Year's Eve, nothing of a preceding Sunday
 				|| ($crank >= 5 && !($rank == 2.1 || $rank >= 2.99) && $cwrank[0] !~ /Dominica|feria|in.*octava/i)) { # in 1st Vespers of Duplex II. cl. also commemoration of any Duplex
 			@dayname = @tomorrowname;
 			$vespera = 1;
 			$cvespera = 3;
-			if ($comrank == 2.1 || $comrank == 2.99) { # privilidged Feria, Dominica, or infra 8vam
+			if ($comrank == 2.1 || $comrank == 2.99 || $comrank == 3.9) { # privilidged Feria, Dominica, or infra 8vam
 				$dayname[2] .= "<br>Vespera de sequenti; commemoratio de off. priv. tantum";
 			} else {
 				$dayname[2] .= "<br>Vespera de sequenti; nihil de præcedenti";
@@ -818,7 +818,7 @@ sub concurrence {
 			%cstr = %{officestring('Latin', $commemo, 0)};
 			if (%cstr) {
 				my @cr = split(";;", $cstr{Rank});
-				unless (($cr[2] < $ranklimit && !($cr[2] == 2.1 || $cr[2] == 2.99)) || $cstr{Rule} =~ /No secunda vespera/i) { push(@comentries, $commemo); }   # sort out Simplex
+				unless (($cr[2] < $ranklimit && !($cr[2] == 2.1 || $cr[2] == 2.99 || $cr[2] == 3.9)) || $cstr{Rule} =~ /No secunda vespera/i) { push(@comentries, $commemo); }   # sort out Simplex
 			}
 		}
 		@commemoentries = @comentries;
@@ -834,7 +834,7 @@ sub concurrence {
 			%cstr = %{officestring('Latin', $commemo, 0)};
 			if (%cstr) {
 				my @cr = split(";;", $cstr{Rank});
-				unless (($cr[2] < $ranklimit && !($cr[2] == 2.1 || $cr[2] == 2.99)) || $cstr{Rule} =~ /No secunda vespera/i) { push(@comentries, $commemo); }   # sort out (Semi-)duplex and infra 8vam communis except for Feria major / Dominica major
+				unless (($cr[2] < $ranklimit && !($cr[2] == 2.1 || $cr[2] == 2.99 || $cr[2] == 3.9)) || $cstr{Rule} =~ /No secunda vespera/i) { push(@comentries, $commemo); }   # sort out (Semi-)duplex and infra 8vam communis except for Feria major / Dominica major
 			}
 		}
 		@commemoentries = @comentries;
