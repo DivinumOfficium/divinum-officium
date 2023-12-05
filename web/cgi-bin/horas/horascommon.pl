@@ -277,9 +277,14 @@ sub occurrence {
 	
 	if ($version =~ /Trid/i && (($trank[2] < 5.1 && $trank[2] > 4.2 && $trank[0] =~ /Dominica/i) || $trank[0] =~ /infra octavam Corp/i)) { $trank[2] = 2.9; } # before Divino: Dominica minor and infra 8vam CC is outranked by any Duplex
 	elsif ($version =~ /divino/i && ($trank[2] < 5.1 && $trank[0] =~ /Dominica/i)) { $trank[2] = 4.9; }
-	
+	elsif ($version =~ /196/ && $tname =~ /Nat1/i && $day > 28) {	# commemoration of the Christmas Octave according to the rubrics
+		$sname = subdirname('Tempora', $version) . "Nat$day";
+		%saint = %{setupstring('Latin', $sname)};
+		$srank = $saint{Rank};
+		@srank = split(";;", $srank);
+	}
 	if ($tname =~/Epi1\-0/i && $srank[2] == 5.6) { $srank[2] = 2.9; } # Ensure that the infra Octavam Epi does not outrank the Sunday infra Octavam or the Feast of the Holy Family
-	if ($testmode =~ /seasonal/i && $version =~ /1960|Newcal/ && $srank[2] < 5 && $dayname[0] =~ /Adv/i) { $srank[2] = 1; }
+	if ($testmode =~ /seasonal/i && $version =~ /196/ && $srank[2] < 5 && $dayname[0] =~ /Adv/i) { $srank[2] = 1; }
 	
 	# Sort out occurrence between the sanctoral and temporal cycles.
 	# Dispose of some cases in which the office can't be sanctoral:
@@ -335,7 +340,7 @@ sub occurrence {
 			$commemoratio = 'Sancti/01-06.txt';
 			$comrank = 5.6;
 		}
-		elsif(($srank[2] < 7 && $sname !~ /01-01/) && $trank[2] > 2 && !($srank[0] =~ /Sangu/i && $trank[0] =~ /Cord/i)) { # incl. github #2950
+		elsif(($srank[2] < 7 && $sname !~ /01-01/) && $trank[2] >= ($srank[2] >= 5 ? 2.1 : 2) && !($srank[0] =~ /Sangu/i && $trank[0] =~ /Cord/i)) { # incl. github #2950
 			unshift(@commemoentries, $tname);
 			$commemoratio = $tname;
 			$comrank = $trank[2];
@@ -531,7 +536,7 @@ sub concurrence {
 	our(@trank, @srank, @ctrank, @csrank, @commemoentries, @ccommemoentries);
 	our(%tempora, %saint, %ctempora, %csaint);
 	our($antecapitulum, $antecapitulum2);
-	our($vespera, $cvespera);
+	our($vespera, $cvespera, $octvespera);
 	our($tvesp, $svesp, $dayofweek);
 	our($C10);
 	our(%winner);
@@ -577,9 +582,17 @@ sub concurrence {
 		# after Divino Afflatu, the Sundays from Septuag to Judica gave way at 2nd Vespers in concurrence to a Duplex II. cl.
 		$rank = $wrank[2] = 4.9;
 	}
+	
 	if ($cwrank[0] =~ /Dominica/i && $cwrank[0] !~ /infra octavam/i && $version !~ /1955|196/) {
 		$cwrank[2] = $crank = $version =~ /trident/i ? 2.9 : 4.9;
 	}
+	
+	if ($cwrank[0] =~ /in.*octava/i && $wrank[0] =~ /Dominica/i  && $version =~ /divino/i) {
+		$octvespera = 1; # Commemoration of resumed Octave on Sunday from 1st Vespers (Divino only)
+	} elsif ($cwrank[0] =~ /Dominica/i && $trank[0] =~ /in.*octava/i) {
+		$octvespera = 3;  # Commemoration of Octave on Saturday from 2nd Vespers
+	}
+
 	if ($ctrank[0] =~ /Dominica/i && !($version =~ /19(?:55|6)/ && $ctrank[0] =~ /Dominica Resurrectionis/i)) {
 		# if tomorrow is a Sunday, get rid of today's tempora completely; necessary Commemorations are handled in the Sunday database file
 		if($sanctoraloffice && $srank[0] !~ /infra octavam Nat/i) {
@@ -600,7 +613,7 @@ sub concurrence {
 			|| ($version =~ /1955/ && $cwrank[2] < 5)	# Reduced 1955: No 1st Vespers except for Duplex I. cl & II. cl & Dominica
 			|| ($version =~ /196/i && $cwrank[2] < (($cwrank[0] =~ /Dominica/i || ($cwinner{Rule} =~ /Festum Domini/i && $dayofweek == 6)) ? 5 : 6)) # In 1960, II. cl. feasts have I. Vespers if and only if they're feasts of the Lord on a Sunday.
 			|| ($cwinner{Rank} =~ /Feria|Sabbato|Vigilia|Quat[t]*uor/i && $cwinner{Rank} !~ /in Vigilia Epi|in octava|infra octavam|Dominica|C10/i) # no Ferias, Vigils and infra Oct days
-			|| ($cwinner{Rank} =~ /infra octavam/i && $cwinner{Rank} !~ /Dominica/i && ($version =~ /trident/i || $sanctoraloffice == $csanctoraloffice))  # before DA infra octavam always gets commemorated as at 2nd Vespers; after DA also when the office of the octave
+			|| ($cwinner{Rank} =~ /infra octavam/i && $cwinner{Rank} !~ /Dominica/i && ($version =~ /trident/i || $sanctoraloffice == $csanctoraloffice))  # before DA infra octavam always gets commemorated as at 2nd Vespers; after DA also when the office is of the octave
 			|| ($weekname =~ /Pasc[07]/i && $cwinner{Rank} !~ /Dominica/i)	# infra 8vam Pasch & Pent
 			|| ($winner =~ /01-01/ && $version !~ /trident/i)							# no commemoration of the Octave of S. Stephen after DA
 			|| ($cwinner{Rank} =~ /C10/i && $winner{Rank} =~ /C1[01]/i)		# sort out BVM concurrent with BMV
@@ -654,7 +667,7 @@ sub concurrence {
 			$rank = $crank;
 			$commune = $ccommune;
 			$communetype = $ccommunetype;
-			$dayname[2] .= "<br>Vespera de sequenti; nihil de præcedenti (tempora)";
+			$dayname[2] .= "<br>Vespera de sequenti; nihil de præcedenti (tempora) ";
 			$cwinner = '';
 			%cwinner = undef;
 			@cwrank = undef;
@@ -834,7 +847,7 @@ sub concurrence {
 			%cstr = %{officestring('Latin', $commemo, 0)};
 			if (%cstr) {
 				my @cr = split(";;", $cstr{Rank});
-				unless (($cr[2] < $ranklimit && !($cr[2] == 2.1 || $cr[2] == 2.99 || $cr[2] == 3.9)) || $cstr{Rule} =~ /No secunda vespera/i) { push(@comentries, $commemo); }   # sort out (Semi-)duplex and infra 8vam communis except for Feria major / Dominica major
+				unless (($cr[2] < $ranklimit && !($cr[2] == 2.1 || $cr[2] == 2.99 || $cr[2] == 3.9)) || $cstr{Rule} =~ /No secunda vespera/i || $cr[0] =~ /De VII di/i) { push(@comentries, $commemo); }   # sort out (Semi-)duplex and infra 8vam communis except for Feria major / Dominica major
 			}
 		}
 		@commemoentries = @comentries;
