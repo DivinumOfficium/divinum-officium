@@ -267,8 +267,7 @@ sub occurrence {
 		if ($dayname[0] !~ /(Adv|Quad[0-6]|Quadp3)/i && $testmode !~ /^season$/i && $BMVSabbato
 				&& $srank !~ /(Vigil|in Octav)/i && $trank[2] < 2 && $srank[2] < 2 && !$transfervigil) {
 			unless($tomorrow) {
-				$scriptura = $tname;
-				if ($scriptura =~ /^\.txt/i) { $scriptura = $sname; }
+				$scriptura = $tname =~ /Epi0/i ? $sname : $tname;
 			}
 			$tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Feria;;1.2;;vide $C10";
 			$tname = subdirname('Commune', $version) . "$C10.txt";
@@ -351,7 +350,7 @@ sub occurrence {
 			$cvespera = $svesp;
 			$officename[2] = "Commemoratio: $cr[0]";
 			if ($version =~ /196/i) {
-				$officename[2] =~ s/:/ ad Laudes tantum:/ if $srank[2] >= 5 && $cr[2] < 2;
+				$officename[2] =~ s/:/ ad Laudes tantum:/ if $cr[2] < 6;
 			} elsif ($version !~ /trident/i && $srank[2] >= 6) {
 				$officename[2] =~ s/:/ ad Laudes tantum:/ if $cr[2] < 4.2 && $cr[2] != 2.1 && $srank[0] !~ /infra octavam/i;
 			}else {
@@ -378,7 +377,7 @@ sub occurrence {
 		if (!$officename[2] && ($saint{'Commemoratio 2'} || $saint{'Commemoratio'})) {
 			($_) = split(/\n/, $saint{'Commemoratio 2'} || $saint{'Commemoratio'});
 			$officename[2] = "Commemoratio: $_" if (s/^!Commemoratio //);
-			$officename[2] =~ s/:/ ad Laudes tantum:/ if $srank[2] >= 5 && $saint{'Commemoratio 2'};
+			$officename[2] =~ s/:/ ad Laudes tantum:/ if ($srank[2] >= 5 && $saint{'Commemoratio 2'} || $version =~ /196/);
 		}
 		
 		if (($hora =~ /matutinum/i || (!$officename[2] && $hora !~ /Vespera|Completorium/i)) && $rank < 7 && $trank[0]) {
@@ -457,14 +456,14 @@ sub occurrence {
 			$officename[2] = "$comm: $srank[0]";
 					
 			if ($version =~ /196/i) {
-				$officename[2] =~ s/:/ ad Laudes tantum:/ if $trank[2] >= 5 && $srank[2] < 2;
+				$officename[2] =~ s/:/ ad Laudes tantum:/ if ($trank[2] >= 5 && $srank[2] < 2) || ($climit1960 == 2);
 			} elsif ($version !~ /trident/i && $trank[2] >= 6) {
 				$officename[2] =~ s/:/ ad Laudes tantum:/ if $srank[2] < 4.2 && $srank[2] != 2.1 && $trank[0] !~ /infra octavam|cinerum|majoris hebd/i && $tname !~ /Adv|Quad/i;
 			}else {
 				$officename[2] =~ s/:/ ad Laudes \& Matutinum:/ if $trank[2] >= 5 && $srank[2] < 2 && $trank[0] !~ /infra octavam|cinerum|majoris hebd/i && $tname !~ /Adv|Quad/i;
 			}
 					
-			if ($version =~ /196/i && $dayname[2] =~ /Januarii/i) { $dayname[2] = ''; }
+			if ($version =~ /196/i && $officename[2] =~ /Januarii/i) { $officename[2] = ''; }
 		} elsif (my $transferedC = $commemoentries[0]
 				&& $tempora{Rule} !~ /omit.*? commemoratio/i
 				&& ($tempora{Rule} !~ /No commemoratio/i)) {
@@ -617,9 +616,9 @@ sub concurrence {
 			$cwinner = '';
 			$crank = 0;
 			$cvespera = 0;
-		} elsif ($csanctoraloffice && $cwrank[0] !~ /infra octavam Epi/i || $cwinner =~ /Nat2-0/i) {
+		} elsif (($csanctoraloffice && $cwrank[0] !~ /infra octavam Epi/i || $cwinner =~ /Nat2-0/i) && $version !~ /1955|196/) {
 			$vespera = 3;
-			$dayname[2] = "<br>Vespera de Officium occurente; nihil de sequenti";
+			$dayname[2] .= "<br>Vespera de Officium occurente; nihil de sequenti";
 			$cwrank = '';
 			$csname = '';
 			%cwinner = undef;
@@ -630,7 +629,8 @@ sub concurrence {
 			@ccommemoentries = ();
 		} else {
 			$vespera = 3;
-			$dayname[2] = "<br>Vespera de Officium occurente ";
+			$dayname[2] = '' unless $dayname[2] =~ /Dominica|Advent|Quadr|Pass/i;
+			$dayname[2] .= "<br>Vespera de Officium occurente " unless $version =~ /1955|196/;
 			$cwrank = '';
 			$ctname = '';
 			%cwinner = undef;
@@ -1121,7 +1121,7 @@ sub precedence {
 	if ($scriptura) {
 		%scriptura = %{officestring($lang1, $scriptura)};
 		if (!$dayname[2]) {
-			$dayname[2] = "Scriptura: $scriptura{Rank}";
+			$dayname[2] = "Scriptura: $scriptura{Rank}  $scriptura";
 			$dayname[2] =~ s/;;.*//s;
 
 		}
