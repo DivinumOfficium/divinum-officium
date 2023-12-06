@@ -166,7 +166,7 @@ sub monthday {
   return '' if $month < 7;
 
   my $leapyear = leapyear $year;
-  my $day_of_year = date_to_ydays $day, $month, $year;
+  my $day_of_year = date_to_ydays($day, $month, $year);
   $day_of_year++ if $tomorrow;
 
   my $lit_month = 0;

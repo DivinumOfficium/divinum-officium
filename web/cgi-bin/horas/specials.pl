@@ -1606,7 +1606,7 @@ sub getcommemoratio {
   if (!$v) { $v = 'versus missing'; }
   postprocess_vr($v, $lang);
   our %prayers;
-  my $w = "!" . &translate("Commemoratio", $lang);
+	my $w = "!" . &translate("Commemoratio", $lang) . (($lang !~ /latin/i || $wday =~ /tempora/i) ? ':' : ''); # Adding : except for Latin Sancti which are in Genetiv
   $a =~ s/\s*\*\s*/ / unless ($version =~ /Monastic/i);
   $o =~ s/^(?:v. )?/v. /;
   $w .= " $rank[0]\nAnt. $a\n_\n$v\n_\n\$Oremus\n$o\n";

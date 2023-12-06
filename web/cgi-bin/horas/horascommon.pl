@@ -56,7 +56,6 @@ sub occurrence {
 	our($vespera, $cvespera);
 	our($tvesp, $svesp, $dayofweek);
 	our($C10);
-	our(%winner);
 	our(@dayname, @tomorrowname);
 	
 	# locals only
@@ -730,7 +729,7 @@ sub concurrence {
 			$vespera = 1;
 			$cvespera = 3;
 			$commemoratio = $winner;
-			$tomorrowname[2] = "Commemoratio: $cwrank[0]";
+			$tomorrowname[2] = "Commemoratio: $wrank[0]";
 			$winner = $cwinner;
 			$cwinner = $commemoratio;
 			@dayname = @tomorrowname;
@@ -743,7 +742,7 @@ sub concurrence {
 			$vespera = 3;
 			$cvespera = 1;
 			$commemoratio = $cwinner;
-			$dayname[2] = "Commemoratio: $wrank[0]";
+			$dayname[2] = "Commemoratio: $cwrank[0]";
 			$dayname[2] .= "<br>Vespera de præcedenti; commemoratio de sequenti Dominica";
 		} elsif ($flcrank == $flrank) {			# "flattend ranks" are equal => a capitulo
 			$commemoratio = $winner;
@@ -1057,7 +1056,7 @@ sub precedence {
 			$wm =~ s/\.txt/m$missanumber\.txt/i;
 			if ($missanumber && (-e "$datafolder/Latin/$wm")) { $winner = $wm; }
 		}
-		my $flag = ($winner =~ /tempora/i && $tvesp == 1) ? 1 : 0;
+		my $flag = ($winner =~ /tempora/i && $vespera == 1) ? 1 : 0;
 		%winner = %{officestring($lang1, $winner, $flag)};
 		
 		# In the feriae where the octave of the Epiphany used to be, the
