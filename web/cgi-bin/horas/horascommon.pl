@@ -730,7 +730,7 @@ sub concurrence {
 			$vespera = 1;
 			$cvespera = 3;
 			$commemoratio = $winner;
-			$tomorrowname[2] = "Commemoratio: $cwrank[0]";
+			$tomorrowname[2] = "Commemoratio: $wrank[0]";
 			$winner = $cwinner;
 			$cwinner = $commemoratio;
 			@dayname = @tomorrowname;
@@ -743,7 +743,7 @@ sub concurrence {
 			$vespera = 3;
 			$cvespera = 1;
 			$commemoratio = $cwinner;
-			$dayname[2] = "Commemoratio: $wrank[0]";
+			$dayname[2] = "Commemoratio: $cwrank[0]";
 			$dayname[2] .= "<br>Vespera de præcedenti; commemoratio de sequenti Dominica";
 		} elsif ($flcrank == $flrank) {			# "flattend ranks" are equal => a capitulo
 			$commemoratio = $winner;
