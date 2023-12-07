@@ -1319,6 +1319,16 @@ sub oratio {
 				$cc{$key} = $ic;
 				setbuild2("Commemorated: $key");
 			}
+					
+			if ($transfervigil) {
+				if (!(-e "$datafolder/$lang/$transfervigil")) { $transfervigil =~ s/v\.txt/\.txt/; }
+				$c = vigilia_commemoratio($transfervigil, $lang);
+				if ($c) {
+					$ccind++;
+					$key = $ccind + 8500; # 10000 - 1.5 * 1000
+					$cc{$key} = $c;
+				}
+			}
 		}
 
 		if($hora =~ /vespera/i) {
