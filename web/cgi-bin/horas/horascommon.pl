@@ -100,8 +100,10 @@ sub occurrence {
 	
 	# handle the case of a transferred vigil which does not have its own file "mm-ddv"
 	if ($transfers[0] =~ /v$/ && !(-e "$datafolder/Latin/$transfers[0].txt")) {
-		$transfervigil = shift @transfers;
-		$transfervigil =~ s/v$/\.txt/;
+		unless (leapyear($year) && $transfers[0] =~ /02-23v/) {
+			$transfervigil = shift @transfers;
+			$transfervigil =~ s/v$/\.txt/;
+		}
 		$transfer = '';
 	} else {
 		$transfer = shift @transfers;
@@ -168,9 +170,6 @@ sub occurrence {
 		}
 		$sfile = shift @commemoentries;	# get the filename for the Sanctoral office from the Kalendarium
 		
-		# prevent duplicate vigil of St. Mathias in leap years
-		if($day == 23 && $month == 2 && leapyear($year)) { $sfile = ($sfile =~ /02-22sab/) ? '02-22' : ($sfile =~ /02-23o/) ? ''	: ($sfile =~ /02-23/) ? '02-23-petri-damiani' : '';	}
-		
 		if ($transfertemp && $transfertemp =~ /Sancti/ && !transfered($transfertemp, $year, $version)) {
 			$sfile = $transfertemp;
 		} elsif ($transfer =~ /Sancti/) {
@@ -182,6 +181,11 @@ sub occurrence {
 			foreach my $tr (@transfers) {
 				push (@commemoentries, $tr);
 			}
+		}
+
+		# prevent duplicate vigil of St. Mathias in leap years
+		if($day == 23 && $month == 2 && leapyear($year)) {
+			$sfile = subdirname('Sancti', $version) . (($sfile =~ /02-23o/) ? ''	: ($sfile =~ /02-23/) ? '02-23r' : '');
 		}
 		
 		$BMVSabbato = ($sfile =~ /v/ || $dayofweek !~ 6) ? 0 : 1; # nicht sicher, ob das notwendig ist
@@ -378,6 +382,16 @@ sub occurrence {
 			$commemoratio = '';
 		}
 		
+		if (!$officename[2] && $transfervigil) {
+			my %vw = %{setupstring('Latin', $transfervigil)};
+			if (%vw) {
+				my $o = $vw{'Oratio Vigilia'};
+				if ($o =~ /!.*?(Vigilia .*)/) {
+					$officename[2] = "Commemoratio: $1";
+				}
+			}
+		}
+		
 		if (!$officename[2] && ($saint{'Commemoratio 2'} || $saint{'Commemoratio'})) {
 			($_) = split(/\n/, $saint{'Commemoratio 2'} || $saint{'Commemoratio'});
 			$officename[2] = "Commemoratio: $_" if (s/^!Commemoratio //);
@@ -401,7 +415,7 @@ sub occurrence {
 		
 	} else { # winner is Tempora
 		if ($hora !~ /Vespera/i && $trank[2] < 1.5 && $transfervigil) {   # Vigil transfered to an empty or Simplex only day
-			my $t = "$transfervigil.txt";
+			my $t = $transfervigil;
 			my %w = setupstring('Latin', $t);
 			
 			if (%w) {
@@ -432,7 +446,7 @@ sub occurrence {
 		
 		my $climit1960 = climit1960($sname);
 		if ($srank[0] =~ /vigil/i && $srank[0] !~ /Epiph/i) {
-			$laudesonly = ($dayname[0] =~ /(Adv|Quad[0-6])/i) ? ' ad Missam tantum' : ' ad Laudes tantum';
+			$laudesonly = ($dayname[0] =~ /(Adv|Quad[0-6])/i || ($dayname[0] =~ /Quadp3/i && $dayofweek >= 4)) ? ' ad Missam tantum' : ' ad Laudes tantum';
 		} else {
 			$laudesonly = ($missa) ? '' : ($climit1960 == 2) ? ' ad Laudes tantum' : '';
 		}
@@ -460,17 +474,17 @@ sub occurrence {
 			$officename[2] = "$comm: $srank[0]";
 					
 			if ($version =~ /196/i) {
-				$officename[2] =~ s/:/ ad Laudes tantum:/ if ($trank[2] >= 5 && $srank[2] < 2) || ($climit1960 == 2);
+				$officename[2] =~ s/:/ $laudesonly:/ if ($trank[2] >= 5 && $srank[2] < 2) || ($climit1960 == 2);
 			} elsif ($version !~ /trident/i && $trank[2] >= 6) {
 				$officename[2] =~ s/:/ ad Laudes tantum:/ if $srank[2] < 4.2 && $srank[2] != 2.1 && $trank[0] !~ /infra octavam|cinerum|majoris hebd/i && $tname !~ /Adv|Quad/i;
-			}else {
+			} elsif ($laudesonly) {
+				$officename[2] =~ s/:/ $laudesonly:/;
+			} else {
 				$officename[2] =~ s/:/ ad Laudes \& Matutinum:/ if $trank[2] >= 5 && $srank[2] < 2 && $trank[0] !~ /infra octavam|cinerum|majoris hebd/i && $tname !~ /Adv|Quad/i;
 			}
 					
 			if ($version =~ /196/i && $officename[2] =~ /Januarii/i) { $officename[2] = ''; }
-		} elsif (my $transferedC = $commemoentries[0]
-				&& $tempora{Rule} !~ /omit.*? commemoratio/i
-				&& ($tempora{Rule} !~ /No commemoratio/i)) {
+		} elsif (my $transferedC = $commemoentries[0] && $tempora{Rule} !~ /omit.*? commemoratio/i && ($tempora{Rule} !~ /No commemoratio/i)) {
 			$commemoratio = "$transferedC.txt";
 			my %tc = %{setupstring('Latin', "$transferedC.txt")};
 			my @cr = split(";;", $tc{Rank});
@@ -478,10 +492,12 @@ sub occurrence {
 			$cvespera = $svesp;
 			$officename[2] = "Commemoratio: $cr[0]";
 			if ($version =~ /196/i) {
-				$officename[2] =~ s/:/ ad Laudes tantum:/ if $trank[2] >= 5 && $cr[2] < 2;
+				$officename[2] =~ s/:/ $laudesonly:/ if ($trank[2] >= 5 && $cr[2] < 2) || ($climit1960 == 2);
 			} elsif ($version !~ /trident/i && $trank[2] >= 6) {
 				$officename[2] =~ s/:/ ad Laudes tantum:/ if $cr[2] < 4.2 && $cr[2] != 2.1 && $trank[0] !~ /infra octavam|cinerum|majoris hebd/i;
-			}else {
+			} elsif ($laudesonly) {
+				$officename[2] =~ s/:/ $laudesonly:/;
+			} else {
 				$officename[2] =~ s/:/ ad Laudes \& Matutinum:/ if $trank[2] >= 5 && $cr[2] < 2 && $trank[0] !~ /infra octavam|cinerum|majoris hebd/i;
 			}
 		} elsif (transfered($sday, $year, $version)) {
