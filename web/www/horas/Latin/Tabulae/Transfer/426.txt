@@ -1,11 +1,5 @@
 #= sunday letter: d, rule number: 36, next: 3784, prev: ----
 02-23=02-22;;1570
-#= sunday letter: d, general rule
-01-04=Tempora/Nat2-0;;DA Newcal 1960
-01-12=01-11;;1570 1888 1906
-01-18=01-00;;1888 1906
-01-28=01-18;;1888 1906
-02-29=02-22sab;;1888 1906
 dirge1=01-23 02-03;;1570
 dirge1=02-11;;1888 1906
-#= This file is for Leap Years only and valid only before 02-24!
+#= This file is for Leap Years only and valid only up to the leap day encoded as 02-29 not from 02-24 (i.e. Feb 25 of a leap year) onwards.
