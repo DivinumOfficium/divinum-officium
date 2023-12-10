@@ -603,10 +603,10 @@ sub preces {
   }
 
   if ($item =~ /Feriales/i
-      && $dayofweek 
-      && ($winner !~ /sancti/i && ($rule =~ /Preces/i || $dayname[0] =~ /Adv|Quad(?!p)/i || emberday())
-          || ($version !~ /1955|1960|Newcal/ && $winner{Rank} =~ /vigil/i && $dayname[1] !~ /Epi|Pasc/i))
-      && ($version !~ /1955|1960|Newcal/ || $dayofweek =~ /[35]/ || emberday())
+      && $dayofweek && !($dayofweek == 6 && $hora =~ /vespera/i)
+			&& ($winner !~ /sancti/i && ($rule =~ /Preces/i || $dayname[0] =~ /Adv|Quad(?!p)/i || emberday())	#
+				|| ($version !~ /1955|1960|Newcal/ && $winner{Rank} =~ /vigil/i && $dayname[1] !~ /Epi|Pasc/i)) # certain vigils before 1955
+			&& ($version !~ /1955|1960|Newcal/ || $dayofweek =~ /[35]/ || emberday())		# in 1955 and 1960, only Wednesdays, Fridays and emberdays
      ) {
     $precesferiales = 1;
     return 1;
@@ -1434,12 +1434,12 @@ sub oratio {
 				|| ($version =~ /196/ && $c{Rule} =~ /nocomm1960/i)) {
 					if (exists($c{"Commemoratio $cv"})) {
 						$c = getrefs($c{"Commemoratio $cv"}, $lang, $cv, $c{Rule});
-					} elsif (exists($c{Commemoratio}) && $cv == 1) {
+					} elsif (exists($c{Commemoratio}) && ($cv != 3 || $commemo =~ /Tempora/i || $c{Commemoratio} =~ /!.*O[ckt]ta/i)) {
 						$c = getrefs($c{Commemoratio}, $lang, $cv, $c{Rule});
 					} else {
 						$c = undef;
 					}
-
+					
 					if($c && $octvespera && $c =~ /$octavestring/ ) {
 						setbuild2("Substitute Commemoratio of Octave to $octvespera");
 						if (exists($c{"Commemoratio $octvespera"})) {
@@ -1490,9 +1490,7 @@ sub oratio {
 		# than $rank as sometimes the latter is adjusted for
 		# calculating precedence.
 		my @rank = split(';;', $winner{Rank});
-		if ($version =~ /1960/ &&
-			($rank[2] >= 5 || ($dayname[1] =~ /Feria/i && $rank[2] >= 3)) &&
-			$ccind > 1) {
+		if ($version =~ /1960/ && ($rank[2] >= 5 || ($dayname[1] =~ /Feria/i && $rank[2] >= 3)) && $ccind > 1) {
 				my @keys = sort(keys(%cc));
 				%cc = ($keys[0] => $cc{$keys[0]});
 				$ccind = 1;
