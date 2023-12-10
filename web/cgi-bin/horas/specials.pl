@@ -603,10 +603,10 @@ sub preces {
   }
 
   if ($item =~ /Feriales/i
-      && $dayofweek 
-      && ($winner !~ /sancti/i && ($rule =~ /Preces/i || $dayname[0] =~ /Adv|Quad(?!p)/i || emberday())
-          || ($version !~ /1955|1960|Newcal/ && $winner{Rank} =~ /vigil/i && $dayname[1] !~ /Epi|Pasc/i))
-      && ($version !~ /1955|1960|Newcal/ || $dayofweek =~ /[35]/ || emberday())
+      && $dayofweek && !($dayofweek == 6 && $hora =~ /vespera/i)
+			&& ($winner !~ /sancti/i && ($rule =~ /Preces/i || $dayname[0] =~ /Adv|Quad(?!p)/i || emberday())	#
+				|| ($version !~ /1955|1960|Newcal/ && $winner{Rank} =~ /vigil/i && $dayname[1] !~ /Epi|Pasc/i)) # certain vigils before 1955
+			&& ($version !~ /1955|1960|Newcal/ || $dayofweek =~ /[35]/ || emberday())		# in 1955 and 1960, only Wednesdays, Fridays and emberdays
      ) {
     $precesferiales = 1;
     return 1;
