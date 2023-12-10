@@ -1408,7 +1408,7 @@ sub setheadline {
 				$rankname = ($version =~ /trident/i) ? 'Semiduplex' : 'Semiduplex Vigilia II. classis';
 			}
 			
-			if($latname =~ /Sanctæ Fami/i) {
+			if($latname =~ /Sanctæ Fami/i && $version !~ /196/) {
 				$rankname = 'Duplex majus';
 			}
 			
