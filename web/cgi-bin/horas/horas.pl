@@ -918,10 +918,13 @@ sub ant_Magnificat : ScriptFunc {
 
   # Special processing for Common of Supreme Pontiffs. Confessor-Popes
   # have a common Magnificat antiphon at second Vespers.
-  if ($version !~ /Trident/i && $v == 3 && (my (undef, $class) = papal_rule($winner{Rule})) && $class =~ /C/i) {
+	my $popeclass = '';
+	if ($version !~ /Trident/i && $v == 3 && ( (undef, $popeclass, undef) = papal_rule($winner{Rule})) && $popeclass =~ /C/i) {
     $ant = papal_antiphon_dum_esset($lang);
+		setbuild2("subst: Special Magnificat Ant. Dum esset");
   }
-
+	
+	
   if ($month == 12 && ($day > 16 && $day < 24) && $winner =~ /tempora/i) {
     my %specials = %{setupstring($lang, "Psalterium/Major Special.txt")};
     $ant = $specials{"Adv Ant $day"};
