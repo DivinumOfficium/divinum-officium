@@ -2222,7 +2222,7 @@ sub get_prima_responsory {
   }
   if ($dayname[0] =~ /Pasc7/i) { $key = 'Pent'; }
 
-  if ( ($version =~ /1960/ && $month == 12 && $day > 8 && $day < 16)
+  if ( ($version =~ /1960/ && $month == 12 && $day > 8 && $day < 16 && $version !~ /Newcal/ && $day !~ 12)
     || ($version !~ /Trident/i && $winner{Rank} =~ /Adventus/))
   {
     $key = 'Adv';
