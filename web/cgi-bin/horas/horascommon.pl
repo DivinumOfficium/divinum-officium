@@ -241,7 +241,9 @@ sub occurrence {
 			}
 		
 			if (($trank[2] >= (($version =~ /19(?:55|6)/i) ? 6 : 7) && $srank[2] < 6)
-					|| $version =~ /19(?:55|6)/i && (($srank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|12\-24)/) || ($srank =~ /(infra octavam|in octava)/i && nooctnat())) # TODO: to be made obsolte s.a.
+					|| ($trank !~ /Dominica|Feria|Sabbato/i && (($trank[2] >= 6 && $srank[2] < 2.1)			# on Duplex I. cl nothing of Simplex and common octaves
+					|| ($trank[2] >= 5 && $srank[2] == 2 && $srank[2] =~ /infra octavam/i)))					# on Duplex II. cl nothing of common octaves
+					|| ($version =~ /19(?:55|6)/i && (($srank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|12\-24)/) || ($srank =~ /(infra octavam|in octava)/i && nooctnat()))) # TODO: to be made obsolte s.a.
 					|| ($version =~ /1960/ && $dayofweek == 0 && (($trank[2] >= 6 && $srank[2] < 6) || ($trank[2] >= 5 && $srank[2] < 5)))) {
 				$srank = '';
 				%saint = undef;
