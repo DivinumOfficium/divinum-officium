@@ -764,7 +764,7 @@ sub concurrence {
 			$dayname[2] .= "<br>Vespera de præcedenti; commemoratio de sequenti Dominica";
 		} elsif ($flcrank == $flrank) {			# "flattend ranks" are equal => a capitulo
 			$commemoratio = $winner;
-			%commune = %{officestring($lang1, $commune, 0)};
+			%commune = ($version =~ /trident/ || $flrank >= 5) ? %{officestring($lang1, $commune, 0)} : ();	#	Commune psalms only in Trident or Dpx I./II.cl
 			$tomorrowname[2] = "Commemoratio: $wrank[0]";
 			$antecapitulum = (exists($winner{'Ant Vespera 3'})) ? $winner{'Ant Vespera 3'}
 			: (exists($winner{'Ant Vespera'})) ? $winner{'Ant Vespera'}
