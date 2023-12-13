@@ -59,13 +59,13 @@ R. Intercéde pro ómnibus nobis.
 @Commune/C6:Responsory4
 
 [Lectio6]
-@Commune/C7:Lectio5:s/ Agrícola*/ /
+@Commune/C7:Lectio5:s/ Agrícola.*/ /
 
 [Responsory6]
 @Commune/C6:Responsory5
 
 [Lectio7]
-@Commune/C7:Lectio5:s/* Agrícola/Agrícola/
+@Commune/C7:Lectio5:s/.* Agrícola/Agrícola/
 
 [Responsory7]
 @Commune/C7:Responsory6
@@ -88,13 +88,13 @@ R. Absque eo quod intrínsecus latet.
 @Commune/C7:Responsory7
 
 [Lectio10]
-@Commune/C7:Lectio8:s/ Hoc autem*/ /
+@Commune/C7:Lectio8:s/ Hoc autem.*/ /
 
 [Responsory10]
 @Commune/C7:Responsory8
 
 [Lectio11]
-@Commune/C7:Lectio8:s/* Hoc autem/Hoc autem/
+@Commune/C7:Lectio8:s/.* Hoc autem/Hoc autem/
 
 [Responsory11]
 R. Accínxit fortitúdine lumbos suos, et roborávit bráchium suum;
@@ -134,11 +134,11 @@ _
 @Commune/C7:Lectio4 in 2 loco
 
 [Lectio6 in 2 loco]
-@Commune/C7:Lectio5 in 2 loco:s/ Quam*/ /
+@Commune/C7:Lectio5 in 2 loco:s/ Quam.*/ /
 
 [Lectio7 in 2 loco]
-@Commune/C7:Lectio5 in 2 loco:s/* Quam/Quam/ ~
-@Commune/C7:Lectio6 in 2 loco:s/ Nihil enim*/ /
+@Commune/C7:Lectio5 in 2 loco:s/.* Quam/Quam/ s/$/~/s
+@Commune/C7:Lectio6 in 2 loco:s/ Nihil enim.*/ /
 
 [Lectio8 in 2 loco]
-@Commune/C7:Lectio6 in 2 loco:s/* Nihil enim/Nihil enim/
+@Commune/C7:Lectio6 in 2 loco:s/.* Nihil enim/Nihil enim/
