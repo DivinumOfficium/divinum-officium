@@ -44,20 +44,20 @@ V. Hæc est Virgo sapiens, et una de número prudéntum.
 R. Quæ veniénte Sponso accépit óleum in vasis suis, et ornátis lampádibus introívit cum eo ad núptias.
 
 [Lectio5]
-@Commune/C6:Lectio4:s/ E c*/ /
+@Commune/C6:Lectio4:s/ E c.*/ /
 
 [Responsory5]
 @Commune/C6:Responsory4
 
 [Lectio6]
-@Commune/C6:Lectio4:s/* E c/E c/ ~
-@Commune/C6:Lectio5:s/. Nam*/. /
+@Commune/C6:Lectio4:s/.* E c/E c/ s/$/~/s
+@Commune/C6:Lectio5:s/. Nam.*/. /
 
 [Responsory6]
 @Commune/C6:Responsory5
 
 [Lectio7]
-@Commune/C6:Lectio5:s/* Nam /Nam / 
+@Commune/C6:Lectio5:s/.* Nam /Nam / 
 
 [Responsory7]
 R. Prudéntes vírgines, aptáte vestras lámpades.
@@ -72,21 +72,21 @@ R. Ecce sponsus venit, exíte óbviam ei.
 @Commune/C6:Responsory6
 
 [Lectio9]
-@Commune/C6:Lectio7:s/. Ecce*/. /
+@Commune/C6:Lectio7:s/. Ecce.*/. /
 
 [Responsory9]
 @Commune/C6:Responsory7
 
 [Lectio10]
-@Commune/C6:Lectio7:s/*vacuetur. Ecce /Ecce / ~
-@Commune/C6:Lectio8:s/ Sed sc*/ /
+@Commune/C6:Lectio7:s/.*vacuetur. Ecce /Ecce / s/$/~/s
+@Commune/C6:Lectio8:s/ Sed sc.*/ /
 
 
 [Responsory10]
 @Commune/C6:Responsory8
 
 [Lectio11]
-@Commune/C6:Lectio8:s/* Sed sc/Sed sc/ 
+@Commune/C6:Lectio8:s/.* Sed sc/Sed sc/ 
 
 [Responsory11]
 R. Índuit me Dóminus vestiménto salútis, et induménto lætítiæ circúmdedit me, et tamquam sponsam 
@@ -137,14 +137,14 @@ _
 @Commune/C6:Lectio4 in 2 loco
 
 [Lectio6 in 2 loco]
-@Commune/C6:Lectio5 in 2 loco:s/est. S*/est. /
+@Commune/C6:Lectio5 in 2 loco:s/est. S.*/est. /
 
 [Lectio7 in 2 loco]
-@Commune/C6:Lectio5 in 2 loco:s/* est. S/S/ ~
-@Commune/C6:Lectio6 in 2 loco:s/. Neque*/. /
+@Commune/C6:Lectio5 in 2 loco:s/.* est. S/S/ s/$/~/s
+@Commune/C6:Lectio6 in 2 loco:s/. Neque.*/. /
 
 [Lectio8 in 2 loco]
-@Commune/C6:Lectio6 in 2 loco:s/*t. Neque /Neque / 
+@Commune/C6:Lectio6 in 2 loco:s/.*t. Neque /Neque / 
 
 [Lectio9 in 2 loco]
 @CommuneM/C7:Lectio9
@@ -162,14 +162,14 @@ _
 @Commune/C6a:LectioE
 
 [Lectio9 in 3 loco]
-@Commune/C6:Lectio7 in 2 loco:s/ sub med./ n. 3/ s/Quibus*//
+@Commune/C6:Lectio7 in 2 loco:s/ sub med./ n. 3/ s/Quibus.*//
 
 [Lectio10 in 3 loco]
-@Commune/C6:Lectio7 in 2 loco:s/* Quibus /Quibus / ~
-@Commune/C6:Lectio8 in 2 loco:s/Grátias*//
+@Commune/C6:Lectio7 in 2 loco:s/.* Quibus /Quibus / s/$/~/s
+@Commune/C6:Lectio8 in 2 loco:s/Grátias.*//
 
 [Lectio11 in 3 loco]
-@Commune/C6:Lectio8 in 2 loco:s/* Grátias /Grátias / 
+@Commune/C6:Lectio8 in 2 loco:s/.* Grátias /Grátias / 
 
 [Lectio12 in 3 loco]
 @Commune/C6:Lectio9 in 2 loco
