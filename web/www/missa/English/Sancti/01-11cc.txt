@@ -1,0 +1,21 @@
+[Rank]
+S. Hyginus Pape Martyris;;Simplex;;1.1;;vide C4b
+
+[Rule]
+vide C4b;
+CPapaM=Hyginus;
+
+[Oratio]
+@Commune/C2c:Oratio:s/N\./Hyginus/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Oratio Gregem
+
+[Secreta]
+@Commune/C2c:Secreta:s/N\./Hyginus/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Secreta Gregem
+
+[Postcommunio]
+@Commune/C2c:Postcommunio:s/N\./Hyginus/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Postcommunio Gregem

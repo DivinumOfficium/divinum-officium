@@ -1,0 +1,21 @@
+[Rank]
+San Igino Papa e Mart.;;Simplex;;1.1;;vide C4b
+
+[Rule]
+vide C4b;
+CPapaM=Igino;
+
+[Oratio]
+@Commune/C2c:Oratio:s/N\./Igino/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Oratio Gregem
+
+[Secreta]
+@Commune/C2c:Secreta:s/N\./Igino/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Secreta Gregem
+
+[Commemoratio Postcommunio]
+@Commune/C2c:Postcommunio:s/N\./Igino/
+(sed communi Summorum Pontificum)
+@Commune/C4b:Postcommunio Gregem
