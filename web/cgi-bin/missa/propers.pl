@@ -1003,6 +1003,7 @@ sub prefatio : ScriptFunc {
   my $name =
       ($version =~ /(1955|196)/ && $rule =~ /Prefatio1960=([a-z0-9]+)/i) ? $1
     : ($rule =~ /Prefatio=([a-z0-9]+)/i) ? $1
+    : ($dayname[0] =~ /Adv[1-4]/i) ? 'Adv'
     : (($month == 12 && $day > 24) || ($month == 1 && $day == 1)) ? 'Nat'
     : ($month == 1 && $day > 5 && $day < 14) ? 'Epi'
     : ($dayname[0] =~ /Quad[1-4]/i) ? 'Quad'
