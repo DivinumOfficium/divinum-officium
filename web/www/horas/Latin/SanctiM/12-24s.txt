@@ -1,0 +1,94 @@
+@Sancti/12-24
+
+[Rule]
+12 lectiones
+no commemoratio
+
+[Lectio1]
+@TemporaM/Adv4-0
+
+[Responsory1]
+@Tempora/Adv4-0
+
+[Lectio2]
+@TemporaM/Adv4-0
+
+[Responsory2]
+@Tempora/Adv4-0
+
+[Lectio3]
+@TemporaM/Adv4-0
+
+[Responsory3]
+@Tempora/Adv4-0
+
+[Lectio4]
+@Tempora/Adv4-0:Lectio3
+
+[Responsory4]
+@TemporaM/Adv4-0
+
+[Lectio5]
+@Tempora/Adv4-0:Lectio4
+
+[Responsory5]
+@Tempora/Adv4-0:Responsory4
+
+[Lectio6]
+@Tempora/Adv4-0:Lectio5
+
+[Responsory6]
+@Tempora/Adv4-0:Responsory5
+
+[Lectio7]
+@TemporaM/Adv4-0
+
+[Responsory7]
+@Tempora/Adv4-0:Responsory6
+
+[Lectio8]
+@TemporaM/Adv4-0
+
+[Responsory8]
+@Tempora/Adv1-2:Responsory1
+
+[Lectio9]
+@Sancti/12-24:Lectio1
+
+[Responsory9]
+@Sancti/12-24:Responsory1
+
+[Lectio10]
+@Sancti/12-24:Lectio2
+
+[Responsory10]
+@Sancti/12-24:Responsory2
+
+[Lectio11]
+@Sancti/12-24:Lectio3
+
+[Responsory11]
+@Sancti/12-24:Responsory3
+
+[Lectio12]
+@SanctiM/03-19
+
+[Responsory12]
+R. Nascétur nobis párvulus, et vocábitur Deus, Fortis: † Ipse sedébit super thronum David patris sui, et imperábit: 
+* Cujus potéstas super húmerum ejus.
+V. Multiplicábitur ejus impérium, † et pacis non erit finis.
+R. Cujus potéstas super húmerum ejus.
+
+[Capitulum Laudes]
+@Sancti/12-24:Capitulum Laudes
+_
+@Sancti/12-24:Responsory Tertia:s/._.*//s
+
+[Responsory Tertia]
+@Sancti/12-24::s/.*_.//s
+
+[Responsory Sexta]
+@Sancti/12-24::s/.*_.//s
+
+[Responsory Nona]
+@Sancti/12-24::s/.*_.//s
