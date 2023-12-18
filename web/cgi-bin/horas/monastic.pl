@@ -116,7 +116,7 @@ sub psalmi_matutinum_monastic {
      ($psalmi[17],$psalmi[18]) = split("\n", $psalmi{"Nat24 Versum"});
     }
     setbuild2('Subst Versus Nat24');
-    comment = 1;
+    $comment = 1;
   }
 
   #** special cantica for quad time
