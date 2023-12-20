@@ -109,6 +109,16 @@ sub psalmi_matutinum_monastic {
     setbuild2("Subst Matutinum Versus $name $dayofweek");
   }
 
+  if ($month == 12 && $day == 24) {
+    if ($dayofweek) {
+     ($psalmi[6],$psalmi[7]) = split("\n", $psalmi{"Nat24 Versum"});
+    } else {
+     ($psalmi[17],$psalmi[18]) = split("\n", $psalmi{"Nat24 Versum"});
+    }
+    setbuild2('Subst Versus Nat24');
+    $comment = 1;
+  }
+
   #** special cantica for quad time
   if (exists($winner{'Cantica'})) {
     my $c = split("\n", $winner{Cantica});
