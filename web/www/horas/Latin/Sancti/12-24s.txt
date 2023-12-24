@@ -1,28 +1,88 @@
 @Sancti/12-24
 
 [Rule]
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+no93
+
+[Rule] (rubrica 196)
 Matins simplex
 Psalmi Dominica
 Antiphonas horas
 Tempora none
 no93
 
-[Lectio1] 
+[Lectio1]
+@Tempora/Adv4-0:Lectio1
+
+[Lectio1] (rubrica 196)
 @Sancti/12-24:Lectio1
 
 [Responsory1]
+@Tempora/Adv4-0:Responsory1
+
+[Responsory1] (rubrica 196)
 @Sancti/12-24:Responsory1
 
-[Lectio2] 
+[Lectio2]
+@Tempora/Adv4-0:Lectio2
+
+[Lectio2] (rubrica 196)
 @Sancti/12-24:Lectio2
 
 [Responsory2]
+@Tempora/Adv4-0:Responsory2
+
+[Responsory2] (rubrica 196)
 @Sancti/12-24:Responsory2
 
 [Lectio3]
+@Tempora/Adv4-0:Lectio3
+
+[Lectio3] (rubrica 196)
 @Sancti/12-24:Lectio3
 
 [Responsory3]
+@Tempora/Adv4-0:Responsory3
+
+[Responsory3] (rubrica 196)
+@Sancti/12-24:Responsory3
+
+[Lectio4]
+@Tempora/Adv4-0:Lectio4
+
+[Responsory4]
+@Tempora/Adv4-0:Responsory4
+
+[Lectio5]
+@Tempora/Adv4-0:Lectio5
+
+[Responsory5]
+@Tempora/Adv4-0:Responsory5
+
+[Lectio6]
+@Tempora/Adv4-0:Lectio6
+
+[Responsory6]
+@Tempora/Adv4-0:Responsory6
+
+[Lectio7]
+@Sancti/12-24:Lectio1
+
+[Responsory7]
+@Sancti/12-24:Responsory1
+
+[Lectio8]
+@Sancti/12-24:Lectio2
+
+[Responsory8]
+@Sancti/12-24:Responsory2
+
+[Lectio9]
+@Sancti/12-24:Lectio3
+
+[Responsory9]
 @Sancti/12-24:Responsory3
 
 [Ant 2]
