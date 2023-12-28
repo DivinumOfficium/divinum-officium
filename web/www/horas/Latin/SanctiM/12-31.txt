@@ -9,20 +9,24 @@ CPapaC=Silvéstrum;
 @Commune/C4:Oratio Gregem
 
 [Lectio1]
-@Sancti/12-30:Lectio7:s/_.*/_\n/s
-@Sancti/12-30:Lectio4
+@Tempora/Nat30:Lectio7:s/_.*/_\n/s
+@Tempora/Nat30:Lectio4
 
 [Responsory1]
 @SanctiM/12-25:Responsory11
 
 [Lectio2]
-@Sancti/12-30:Lectio5
+@Tempora/Nat30:Lectio5
 
 [Responsory2]
 @Sancti/12-25:Responsory8
 
 [Lectio3]
-@Sancti/12-30:Lectio6
+@Tempora/Nat30:Lectio6
 
 [Responsory3]
 @Tempora/Nat1-0:Responsory8
+
+[MM Capitulum]
+@Psalterium/Matutinum Special:MM Capitulum Nat:1-4
+@Sancti/12-25:Versum 2

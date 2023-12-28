@@ -5,10 +5,10 @@ Die V infram Octavam Nativitatem Domini;;Duplex II class;;4.9;;ex Sancti/12-25
 no commemoratio
 
 [Lectio1]
-@Sancti/12-30:Lectio7:s/_.*//s
+@Tempora/Nat30:Lectio7:s/_.*//s
 _
 Homilía sancti Bedæ Venerábilis Presbýteri
-!.
+!Hom. 1,7, in Nativ. Domini
 Pastóres quidem illi felíci gáudio festinárunt vidére quod audíerant: et quia ardénti amóre quæsiérunt, contínuo Salvatórem quem quæsiérunt, inveníre meruérunt. Sed et intellectuálium pastóres gregum, immo cuncti fidéles qua mentis indústria Christum quǽrere débeant, dictis páriter suis ostendérunt, et factis. Transeámus, ínquiunt, usque Béthlehem, et videámus hoc verbum quod factum est. Transeámus ergo et nos, fratres caríssimi, cogitándo usque Béthlehem civitátem David, et recolámus amándo quod in ea verbum caro factum est, atque ejus incarnatiónem dignis celebrémus honóribus. Transeámus, abjéctis concupiscéntiis carnálibus, toto mentis desidério usque Béthlehem supérnam, id est, domum panis vivi non manufáctam, sed ætérnam in cælis, et recolámus amándo, quia verbum caro factum est. Illo eum tota virtútum instántia sequámur, et sollícita cordis et córporis castigatióne procurémus, ut quem illi in præsépio vidére vagiéntem, nos in patris sólio mereámur vidére regnántem.
 
 [Responsory1]
@@ -25,3 +25,7 @@ Vidéntes autem cognovérunt de verbo, quod dictum erat illis de Púero hoc. Et 
 
 [Responsory3]
 @Tempora/Nat1-0:Responsory8
+
+[MM Capitulum]
+@Psalterium/Matutinum Special:MM Capitulum Nat:1-4
+@Sancti/12-25:Versum 2
