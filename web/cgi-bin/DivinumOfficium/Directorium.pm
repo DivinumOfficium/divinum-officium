@@ -194,7 +194,11 @@ sub get_tempora {
 
   load_tempora($version) unless is_cached $cache_key;
 
-  $_dCACHE{$cache_key}{$key} || ''
+  my $rv = $_dCACHE{$cache_key}{$key};
+  return $rv if $rv;
+  my $ver = $_data{$version}{base};
+  return '' unless $ver;
+  return get_tempora($ver, $key);
 }
 
 #*** transfered($tname | $sday, $year, $version)
