@@ -30,10 +30,11 @@ sub load_data_data {
   if (@lines == 0) { die "Can't open $datafolder/data.txt"; }
   shift @lines;
   foreach (@lines) {
-    my($ver,$kal,$tra,$str) = split(/,/);
+    my($ver,$kal,$tra,$str,$base) = split(/,/);
     $_data{$ver}{kalendar} = $kal;
     $_data{$ver}{transfer} = $tra;
     $_data{$ver}{stransfer} = $str;
+    $_data{$ver}{base} = $base;
   }
   $_dCACHE{loaded} = 1;
 }
@@ -145,7 +146,11 @@ sub get_kalendar {
 
   load_kalendar($version) unless is_cached $cache_key;
 
-  $_dCACHE{$cache_key}{$day} || ''
+  my $rv = $_dCACHE{$cache_key}{$day};
+  return $rv if $rv;
+  my $ver = $_data{$version}{base};
+  return '' unless $ver;
+  return get_kalendar($ver, $day);
 }
 
 #*** get_transfer($year, $version, $key)
@@ -157,7 +162,11 @@ sub get_transfer {
 
   load_transfer($year, $version) unless is_cached $cache_key;
 
-  $_dCACHE{$cache_key}{$key} || ''
+  my $rv = $_dCACHE{$cache_key}{$key};
+  return $rv if $rv;
+  my $ver = $_data{$version}{base};
+  return '' unless $ver;
+  return get_transfer($year, $ver, $key);
 }
 
 #*** get_stransfer($year, $version, $key)
@@ -169,7 +178,11 @@ sub get_stransfer {
 
   load_transfer($year, $version, 'Stransfer') unless is_cached $cache_key;
 
-  $_dCACHE{$cache_key}{$key} || ''
+  my $rv = $_dCACHE{$cache_key}{$key};
+  return $rv if $rv;
+  my $ver = $_data{$version}{base};
+  return '' unless $ver;
+  return get_stransfer($year, $ver, $key);
 }
 
 #*** get_tempora($year, $version, $key)
