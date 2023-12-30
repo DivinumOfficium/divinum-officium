@@ -682,7 +682,7 @@ sub lectio : ScriptFunc {
 		my $c;
 		
 		if ($day < 29) {
-			$c = officestring($lang, "Sancti/12-$day.txt");
+			$c = officestring($lang, "Sancti/12-25.txt"); # GitHub3539: in 1960 rubrics, Scripture on Sunday (26-28) comes from Nativity
 		} else {
 			my $tfile = "Tempora/Nat$day" . ($version =~ /trident/i ? "o.txt" : ".txt");
 			$c = officestring($lang, $tfile);
