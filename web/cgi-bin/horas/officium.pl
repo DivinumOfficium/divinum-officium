@@ -202,29 +202,34 @@ if ($command =~ /setup(.*)/i) {
   $command = "change" . $command . strictparam('pcommand');
 } else {
   print headline($html_dayhead, substr($officium, 0, 1), $version, $version2);
+  if ($command =~ /appendix/i) {
+    require "$Bin/appendix.pl";
+    appendix($command);
+  } else {
 
-  if ($horas[0] eq 'Plures') {
-    print setplures();
-  } elsif ($horas[0]) {
-    foreach (@horas) {
-      $hora = $_; # precedence use global $hora !
-      if (/laudes/i && ($horas[0] !~ /laudes/i)) { 
-        precedence($date1); # prevent lost commemorations
-      } elsif (/vesper/i && ($horas[0] !~ /vesper/i)) {
-        precedence($date1);
-        setsecondcol();
-        my $vesperahead = setheadline();
-        if ($dayhead ne $vesperahead) { 
-          print par_c("<BR><BR>" . html_dayhead($vesperahead)); 
+    if ($horas[0] eq 'Plures') {
+      print setplures();
+    } elsif ($horas[0]) {
+      foreach (@horas) {
+        $hora = $_; # precedence use global $hora !
+        if (/laudes/i && ($horas[0] !~ /laudes/i)) { 
+          precedence($date1); # prevent lost commemorations
+        } elsif (/vesper/i && ($horas[0] !~ /vesper/i)) {
+          precedence($date1);
+          setsecondcol();
+          my $vesperahead = setheadline();
+          if ($dayhead ne $vesperahead) { 
+            print par_c("<BR><BR>" . html_dayhead($vesperahead)); 
+          }
         }
+        horas($hora);
       }
-      horas($hora);
+      if ($officium ne 'Pofficium.pl' && @horas == 1) {
+        print par_c("<INPUT TYPE=SUBMIT VALUE='$hora persolut.' onclick='okbutton();'>");
+      }
+    } elsif ($officium ne 'Pofficium.pl') {
+      print par_c(mainpage());
     }
-    if ($officium ne 'Pofficium.pl' && @horas == 1) {
-      print par_c("<INPUT TYPE=SUBMIT VALUE='$hora persolut.' onclick='okbutton();'>");
-    }
-  } elsif ($officium ne 'Pofficium.pl') {
-    print par_c(mainpage());
   }
 
   print par_c('<I>' . horas_menu($completed, $date1, $version, $lang2, $votive, $testmode) . '</I>');

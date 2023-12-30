@@ -431,6 +431,36 @@ sub setvrbar {
   return $line;
 }
 
+#*** activate_links($text)
+# replace %Laudes% etc. with html link
+sub activate_links {
+  my($text, $lang) = @_;
+  our($date1, $caller, $version, $testmode, $lang2, $votive, $hora, $command);
+  local($_) = $$text;
+  if ($officium =~ /Pofficium/i) {
+    if ($hora =~ /Matutinum/i) {
+      s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=$caller&command=prayLaudes&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$1</A>}i;
+    } elsif ($hora =~ /Vespera/i) {
+      s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayVespera&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$1</A>}i;
+    } elsif ($hora =~ /Laudes/i) {
+      s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayMatutinum&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$1</A>}i;
+    } elsif ($command =~ /Appendix/i) {
+      s{%(.*?)%}{qq(<A HREF="Pofficium.pl?date1=$date1&caller=1&command=Appendix $1&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">) . translate($1, $lang) . '</A>'}ie;
+    }
+  } else {
+    if ($hora =~ /Matutinum/i) {
+      s{%(.*?)%}{<A HREF=# onclick="hset('Laudes');">$1</A>}i;
+    } elsif ($hora =~ /Vespera/i) {
+      s{%(.*?)%}{<A HREF=# onclick="defunctorum('Vespera');">$1</A>}i;
+    } elsif ($hora =~ /Laudes/i) {
+      s{%(.*?)%}{<A HREF=# onclick="defunctorum('Matutinum');">$1</A>}i;
+    } elsif ($command =~ /Appendix/i) {
+      s{%(.*?)%}{'<A HREF=# onclick="appendix(\''. $1. '\');">' . translate($1, $lang) . '</A>'}ie;
+    }
+  }
+  $_;
+}
+
 #*** setcell($text1, $lang1);
 # output the content of the cell
 sub setcell {
@@ -455,28 +485,7 @@ sub setcell {
     topnext_cell($lang);
 
     if ($text =~ /%(.*?)%/) {
-      my $q = $1;
-
-      if ($officium =~ /Pofficium/i) {
-        if ($hora =~ /Matutinum/i) {
-          $text =~
-            s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=$caller&command=prayLaudes&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$q</A>}i;
-        } elsif ($hora =~ /Vespera/i) {
-          $text =~
-            s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayVespera&version=$version&testmode=$testmode&lang2=$lang2&votive=C9">$q</A>}i;
-        } elsif ($hora =~ /Laudes/i) {
-          $text =~
-            s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayMatutinum&version=$version&testmode=$testmode&lang2=$lang2&votive=C9">$q</A>}i;
-        }
-      } else {
-        if ($hora =~ /Matutinum/i) {
-          $text =~ s{%(.*?)%}{<A HREF=# onclick="hset('Laudes');">$q</A>}i;
-        } elsif ($hora =~ /Vespera/i) {
-          $text =~ s{%(.*?)%}{<A HREF=# onclick="defunctorum('Vespera');">$q</A>}i;
-        } elsif ($hora =~ /Laudes/i) {
-          $text =~ s{%(.*?)%}{<A HREF=# onclick="defunctorum('Matutinum');">$q</A>}i;
-        }
-      }
+    $text = activate_links(\$text, $lang);
     }
   }
   $text =~ s/wait[0-9]+//ig;
@@ -674,7 +683,11 @@ sub horas_menu {
       $output .= '&nbsp;&nbsp;';
     }
   }
-  $output =~ s/&nbsp;&nbsp;$//;
+  my $a = ($0 =~ /Pofficium/) ?
+             qq(HREF="Pofficium.pl?date1=$date1&command=Appendix Index)
+           . qq(&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive") :
+             qq(HREF=# onclick="appendix('Index')");
+  $output .= qq(\n<A $a><FONT COLOR=$colour>Appendix</FONT></A>\n) if ($0 !~ /Cofficium/);
   $output;
 }
 
