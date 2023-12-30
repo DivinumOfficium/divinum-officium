@@ -16,26 +16,26 @@ Antiphonas horas
 @SanctiM/12-25
 
 [Lectio1]
-@Sancti/12-29
+@Tempora/Nat29
 
 [Responsory1]
 @Sancti/12-25:Responsory2
 
 [Lectio2]
-@Sancti/12-29::s/-12/-10/ s/11 .*//s
+@Tempora/Nat29::s/-12/-10/ s/11 .*//s
 
 [Responsory2]
 @Sancti/12-25:Responsory3
 
 [Lectio3]
-@Sancti/12-29:Lectio2:s/8-12/11-13/ s/8 .*11 /11 /s
-@Sancti/12-29:Lectio3:s/.*13 /13 /s s/14 .*//s
+@Tempora/Nat29:Lectio2:s/8-12/11-13/ s/8 .*11 /11 /s
+@Tempora/Nat29:Lectio3:s/.*13 /13 /s s/14 .*//s
 
 [Responsory3]
 @SanctiM/12-25:Responsory4
 
 [Lectio4]
-@Sancti/12-29:Lectio3:s/13-/14-/ s/13 .*14 /14 /s
+@Tempora/Nat29:Lectio3:s/13-/14-/ s/13 .*14 /14 /s
 
 [Responsory4]
 @Sancti/12-25
