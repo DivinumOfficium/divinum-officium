@@ -1,0 +1,18 @@
+@Tempora/Adv1-3
+
+[Lectio1]
+@Tempora/Adv1-3::s/-4/-5/
+@Tempora/Adv1-3:Lectio2:2
+
+[Lectio2]
+@Tempora/Adv1-3:Lectio2:1 s/5-7/6-9/
+@Tempora/Adv1-3:Lectio2:3-4
+@Tempora/Adv1-3:Lectio3:2-3 s/abscondérunt.*/abscondérunt./
+
+[Lectio3]
+@Tempora/Adv1-3:Lectio3:1 s/8-11/9-15/
+@Tempora/Adv1-3:Lectio3:3-5 s/.*abscondérunt: (.*)/9 \u\1/
+12 Pópulum meum exactóres sui spoliavérunt, et mulíeres dominátæ sunt eis. Pópule meus, qui te beátum dicunt, ipsi te decípiunt, et viam gréssuum tuórum díssipant.
+13 Stat ad iudicándum Dóminus, et stat ad iudicándos pópulos.
+14 Dóminus ad iudícium véniet cum sénibus pópuli sui, et princípibus eius: vos enim depásti estis víneam, et rapína páuperis in domo vestra.
+15 Quare attéritis pópulum meum, et fácies páuperum commólitis? dicit Dóminus Deus exercítuum.

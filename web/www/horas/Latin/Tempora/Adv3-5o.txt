@@ -1,0 +1,14 @@
+@Tempora/Adv3-5
+
+[Lectio1]
+@Tempora/Adv3-5::s/$/~/
+@Tempora/Adv3-5:Lectio2:s/retardávit. .*/retardávit./
+
+[Lectio2]
+@Tempora/Adv3-5::s/.*Díscite,/Díscite,/ s/.$/:~/
+etenim quae propter officium venerat, inhaerebat officio. Mansit ergo mensibus tribus, non quod domus eam delectaret aliena, sed quia frequentius videri in publico displicebat.~
+@Tempora/Adv3-5:Lectio3:s/ Contuéndum.*//
+
+[Lectio3]
+@Tempora/Adv3-5::s/.*Contuéndum/Contuéndum/ s/$/~/
+Denique etiam postea, ut sanctificaret baptismum Ioannis, Dominus venit ad baptismum. Cito quoque adventus Mariae, et praesensentiae dominicae beneficia declarantur. Simul enim ut audivit salutationem Mariae Elizabeth, exsultavit infans in utero eius. Et repleta est Spiritu sancto.  Vide distinctionem, singulorumque verborum proprietates. Vocem prior Elizabeth audivit, sed Ioannes prior gratiam sensit: illa naturae ordine audivit, iste exsultavit ratione mysterii: illa Mariae, iste Domini sensit adventum: femina mulieris, et pignus pignoris. Istae gratiam loquuntur, illi intus operantur, pietatisque mysterium maternis adoriuntur profectibus; duplicique miraculo prophetant matres spiritu parvulorum. Exsultavit infans, repleta est mater.  Non prius mater repleta, quam filius: sed cum filius esset repletus Spiritu sancto, replevit et matrem. Exsultavit Ioannes, exsultavit et Mariae spiritus.  Exsultante Ioanne, repletur Elizabeth: Mariam tamen non repleri Spiritu, sed spiritum eius exsultare cognovimus; incomprehensibilis enim incomprehensibiliter operabatur in matre. Et illa post conceptum repletur, ista ante conceptum.
