@@ -36,7 +36,7 @@ sub getweek {
     return "Nat$tDay";
   }
 
-  if ($month == 1 && $day < 7) {
+  if ($month == 1 && $day < (7-$tomorrow)) {
     return '';
   }
   my $ordtime = 6 + 7 - day_of_week(6, 1, $year);
