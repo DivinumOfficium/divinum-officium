@@ -312,11 +312,10 @@ sub occurrence {
 			} else {
 				$sanctoraloffice = 0;
 			}
-		}	elsif ($saint{Rule} =~ /Festum Domini/i && $srank[2] >= 2 && $trank[2] <= 5) { # Pre-1960, feasts of the Lord of nine lessons take precedence over a lesser Sunday.
+		} elsif ($saint{Rule} =~ /Festum Domini/i && $srank[2] >= 2 && $trank[2] <= 5) { # Pre-1960, feasts of the Lord of nine lessons take precedence over a lesser Sunday.
 			$sanctoraloffice = 1;
 			$srank[2] = 4.9 + $srank[2] / 100; # to keep the Vespers in concurrence with other Duplex feasts
-		}
-		else {
+		} else {
 			$sanctoraloffice = 0;
 		}
 	} else {
@@ -528,7 +527,7 @@ sub occurrence {
 		}
 	}
 	
-	if ($month == 1 && $day < 14 && $dayname[0] !~ /Epi/i) { $officename[0] = "Nat$day"; }
+	if ($month == 1 && $day < 14 && $officename[0] !~ /Epi/i) { $officename[0] = "Nat$day"; }
 	if ($tomorrow) {
 		@tomorrowname = @officename;
 	} else {
@@ -584,7 +583,7 @@ sub concurrence {
 	occurrence($day, $month, $year, $version, 0); # get today's office
 	%winner = $sanctoraloffice ? %saint : %tempora;
 	my @wrank = $sanctoraloffice ? @srank : @trank;
-	
+
 	if ($winner{Rule} =~ /No secunda Vespera/i && $version !~ /1960|Monastic/i) {
 		@wrank = undef;
 		%winner = undef;
@@ -711,7 +710,7 @@ sub concurrence {
 		elsif ($version =~ /1906/ && $cwinner{Rank} =~ /infra Octavam/i && $rank == 2.2) { $flrank = 2.2; }
 		
 		if (($rank >= (($version =~ /19(?:55|6)/) ? 6 : 7) && $crank < 6) # e.g. 05-26-2022
-			|| ($version =~ /196/ && ($cwinner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat1/i && $crank <= 5)	&& ($rank >= 5 && $winner{Rule} =~ /Festum Domini/i)) #on a II. cl Sunday nothing at 1st Vespers in concurrence with a Feast of the Lord
+			|| ($version =~ /196/ && ($cwinner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat1/i && $crank <= 5) && ($rank >= 5 && $winner{Rule} =~ /Festum Domini/i)) #on a II. cl Sunday nothing at 1st Vespers in concurrence with a Feast of the Lord
 			|| ($rank >= ($version =~ /trident/i ? 6 : 5) && $winner !~ /feria|in.*octava/i && $crank < 2.1)) {		# on Duplex I. cl / II. cl no commemoration of following Simplex and Common Octaves
 				$dayname[2] .= "<br>Vespera de præcedenti; nihil de sequenti";
 				$cwinner = '';
@@ -1385,7 +1384,7 @@ sub setheadline {
 	# read only globals
 	our(%winner, $winner, @dayname, $version, $day, $month, $year, $dayofweek, $hora, $rule, $lang);
 	
-	if ((!$name || !$rank) && exists($winner{Rank}) && $winner !~ /Epi1\-0a/i) {
+	if ((!$name || !$rank) && exists($winner{Rank})) {
 		my @rank = split(';;', $winner{Rank});
 		$name = $rank[0];
 		$rank = $rank[2];
