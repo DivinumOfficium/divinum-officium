@@ -1359,7 +1359,7 @@ sub oratio {
 				}
 				
 				# add commemorated from cwinner
-				unless(($rank >= 6 && $dayname[0] !~ /Pasc[07]|Nat06/)
+				unless(($rank >= 6 && $dayname[0] !~ /Pasc[07]|Nat0?6/)
 				|| $rule =~ /no commemoratio/i
 				|| ($version =~ /196/ && $c{Rule} =~ /nocomm1960/i)) {
 					if (exists($c{"Commemoratio $cvespera"})) {
