@@ -1359,7 +1359,7 @@ sub oratio {
 				}
 				
 				# add commemorated from cwinner
-				unless(($rank >= 6 && $dayname[0] !~ /Pasc[07]/)
+				unless(($rank >= 6 && $dayname[0] !~ /Pasc[07]|Nat06/)
 				|| $rule =~ /no commemoratio/i
 				|| ($version =~ /196/ && $c{Rule} =~ /nocomm1960/i)) {
 					if (exists($c{"Commemoratio $cvespera"})) {
@@ -1391,8 +1391,7 @@ sub oratio {
 					foreach my $ic (@ic) {
 						if (!$ic || $ic =~ /^\s*$/
 							|| ($ic =~ /$octavestring|!.*?$sundaystring/i && nooctnat())
-							|| ($version =~ /19(?:55|6)/ && $ic =~ /!.*?Vigil/i && $cwinner =~ /Sancti/i && $cwinner !~ /08\-14|06\-23|06\-28|08\-09/)) { next;
-							}
+							|| ($version =~ /19(?:55|6)/ && $ic =~ /!.*?Vigil/i && $cwinner =~ /Sancti/i && $cwinner !~ /08\-14|06\-23|06\-28|08\-09/)) { next; }
 						if ($ic !~ /^!/) { $ic = "!$ic"; }
 						$ccind++;
 						$key = ($ic =~ /$sundaystring/i) ? ($version !~ /trident/i ? 3000 : 7100) : $ccind + 9900; # Sundays are all privilegde commemorations under DA
