@@ -74,7 +74,7 @@ OPTIONAL_KINDLEGEN_PATH=/usr/local/bin/kindlegen #full path to kindlegen executa
 #constants
 #supported rubrics as in Eofficium.pl
 ALL_RUBRICS_CODES=(Monastic 1570 1910 DA 1955 1960 Newcal Dominican)
-ALL_RUBRICS=("Monastic" "Trident 1570" "Trident 1910" "Divino Afflatu" "Reduced 1955" "Rubrics 1960" "1960 Newcalendar" "Ordo Praedicatorum")
+ALL_RUBRICS=("Monastic" "Tridentine 1570" "Tridentine 1910" "Divino Afflatu" "Reduced 1955" "Rubrics 1960" "1960 Newcalendar" "Ordo Praedicatorum")
 ALL_RUBRICS_NAME=("_Monastic" "_1570" "_1910" "_DA" "_1955" "" "NC")
 
 YEAR_RE='^[0-9]+$'
