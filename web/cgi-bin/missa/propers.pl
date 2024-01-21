@@ -828,6 +828,12 @@ sub getitem {
   } else {
     $w =~ s/\(Allel.*?\)//ig;
   }
+  # To deal with Allelujas written in Cyrillic.
+   if ($dayname[0] =~ /Pasc/i) {
+    $w =~ s/\((Аліл.*?)\)/$1/ig;
+  } else {
+    $w =~ s/\(Аліл.*?\)//ig;
+  }
 
   #}
   if ($w && $w !~ /^\s*$/) {
