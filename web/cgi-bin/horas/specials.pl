@@ -1040,9 +1040,9 @@ sub psalmi_major {
   setcomment($label, 'Source', $comment, $lang, $prefix);
 
   if ($version =~ /monastic/i) {
-    antetpsalm_mm('', -1);
-    for ($i = 0; $i < @psalmi; $i++) { antetpsalm_mm($psalmi[$i], $i); }
-    antetpsalm_mm('', -2);
+    my $lastant;
+    for ($i = 0; $i < @psalmi; $i++) { antetpsalm_mm($psalmi[$i], $i, \$lastant, $lang); }
+    antetpsalm_mm('', -2, \$lastant);
   } else {
     for ($i = 0; $i < @psalmi; $i++) {
       my $last = ($i == (@psalmi - 1)) ? 1 : 0;

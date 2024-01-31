@@ -1,12 +1,33 @@
 [Rank]
-In Conversione S. Pauli Apostoli;;Duplex majus;;4;;ex Sancti/06-30
+In Conversione S. Pauli Apostoli;;Duplex majus;;5;;ex Sancti/06-30
+
+[Rank] (rubrica 196)
+In Conversione S. Pauli Apostoli;;Duplex;;3;;ex Sancti/06-30
 
 [Rule]
-ex Sancti/06-30;
+12 lectiones
+
+[Rule] (rubrica 196)
 Sub unica concl
 
 [Invit]
 @Sancti/01-25
+
+[AntM Matutinum]
+Ter virgis cæsus sum, * semel lapidátus sum, ter naufrágium pértuli pro Christo Dómino.;;97
+Grátia Dei * sum id quod sum: et grátia ejus in me vácua non fuit.;;98
+Súfficit tibi, * Paule, grátia mea: nam virtus mea in infirmitáte perfícitur.;;100
+Ecce ego † mitto vos sicut oves in médio lupórum, dicit Dóminus: estóte ergo prudéntes sicut serpéntes, et símplices sicut colúmbæ.;;253;254;255
+
+[Ant Matutinum]
+@Sancti/06-30::1-3
+@Sancti/06-30::6-8
+@Sancti/06-30::4-5
+@Sancti/06-30::11-13 s/96/95/ s/98/96/
+@:AntM Matutinum::1-3
+@Sancti/06-30::9-10
+@:AntM Matutinum::4
+@Sancti/06-30::14-15
 
 [Lectio1]
 @Sancti/01-25
@@ -23,13 +44,89 @@ Sub unica concl
 [Responsory3]
 @Sancti/06-30:Responsory3
 
+[Lectio3] 
+@Sancti/01-25::1-4 s/16/12/
+
+[Lectio3] (rubrica 196)
+
+
 [Lectio4]
+@Sancti/01-25:Lectio3:1 s/10-/13-/
+@Sancti/01-25:Lectio3:5-8
+
+[Responsory4]
+R. Audístis enim † conversatiónem meam aliquándo in Judaísmo: quóniam proficiébam.
+* Supra multos coætáneos meos in génere meo. 
+V. Abundántius æmulátor exsístens paternárum meárum traditiónum.
+R. Supra multos coætáneos meos in génere meo. 
+
+[Lectio4] (rubrica 196)
 @Sancti/01-25:Lectio3
 
 [MM Capitulum]
 @Sancti/01-25:Capitulum Sexta
 _
 @Commune/C1:Responsory Tertia:s/.*_.//s
+
+[Lectio5]
+@Sancti/01-25:Lectio4:s/ Erat.*//
+
+[Responsory5]
+@Sancti/06-30:Responsory4
+
+[Lectio6]
+@Sancti/01-25:Lectio4:3 s/.* Erat/Erat/ s/$/~/
+@Sancti/01-25:Lectio5:s/erat.*/erat./
+
+[Responsory6]
+@Sancti/06-30:Responsory5
+
+[Lectio7]
+@Sancti/01-25:Lectio5:s/.*erat.//
+
+[Responsory7]
+@Sancti/06-30:Responsory6
+
+[Lectio8]
+@Sancti/01-25:Lectio6
+
+[Responsory8]
+R. Scio † cui crédidi, et certus sum quia potens est depósitum meum serváre.
+* In illum diem justus judex.
+V. Repósita est mihi coróna justítiæ, quam reddet mihi Dóminus.
+R. In illum diem justus judex.
+
+[Lectio9]
+@Commune/C1:Lectio7 in 2 loco:s/ In hac.*//
+
+[Responsory9]
+@Sancti/06-30:Responsory7
+
+[Lectio10]
+@Commune/C1:Lectio7 in 2 loco:s/.*In hac/In hac/s s/$/~/
+@Commune/C1:Lectio8 in 2 loco:s/ Nemo.*//
+
+[Responsory10]
+@Sancti/06-30:Responsory8
+
+[Lectio11]
+@Commune/C1:Lectio8 in 2 loco:s/.*Nemo/Nemo/ s/$/~/
+@Commune/C1:Lectio9 in 2 loco:s/Sciéndum.*//g
+
+[Responsory11]
+R. Magnus † sanctus Paulus, vas electiónis, vere digne est glorificándus.
+* Qui et méruit thronum duodécimum possidére.
+V. A Christo de caelo vocátus, et in terram prostrátus, ex persecutóre efféctus est vas electiónis.
+R. Qui et méruit thronum duodécimum possidére.
+
+[Lectio12]
+@Commune/C1:Lectio9 in 2 loco:s/.* Sciéndum/Sciéndum/g
+
+[Responsory12]
+R. Mihi vívere † Christus est, et mori lucrum:
+* Gloriári me opórtet in cruce Dómini mei Jesu Christi.
+V. Per quem mihi mundus crucifíxus est, et ego mundo.
+R. Gloriári me opórtet in cruce Dómini mei Jesu Christi.
 
 [Oratio]
 @Sancti/01-25

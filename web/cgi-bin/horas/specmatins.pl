@@ -153,7 +153,7 @@ sub nocturn {
 		antetpsalm_mm('', -1, \$lastant, $lang);    # set antiphon for multiple psalms under one antiphon situation
 		$antet = \&antetpsalm_mm;
 	}
-	push(@s, '!' . translate('Nocturn', $lang) . ' ' . ('I' x $num) . '.', '_');
+	push(@s, '!' . translate('Nocturn', $lang) . ' ' . ('I' x $num) . '.');
 	for(my $i=0; $i<(@select - 2); $i++) {
 		&$antet(@{$psalmi}[$select[$i]], $select[$i], \$lastant, $lang)
 	}
