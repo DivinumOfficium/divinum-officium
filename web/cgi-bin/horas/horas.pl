@@ -299,14 +299,13 @@ sub Alleluia : ScriptFunc {
 }
 
 sub Alleluia_ant {
-  my ($lang, $full, $ucase) = @_;
-  my $s = translate('Alleluia', $lang);
-  $s =~ s/\.$//;
-  if (($full || ($duplex >= 3) || ($version =~ /196/))) {
-    $s .= ", * $s, $s.";
-    $s =~ s/ ./\L$&/g unless $ucase;
-  }
-  return $s;
+  my ($lang, $ucase) = @_;
+
+  my $ant = $prayers{$lang}{"Alleluia Duplex"};
+  $ant =~ s/ / * /;
+  $ant =~ s/\./$prayers{$lang}{"Alleluia Simplex"}/;
+  $ant =~ s/ ./\L$&/g unless $ucase;
+  return $ant;
 }
 
 #*** Septuagesima_vesp
@@ -1320,25 +1319,25 @@ sub process_inline_alleluias(\$) {
 # Performs necessary adjustments to an antiphon.
 sub postprocess_ant(\$$) {
   my ($ant, $lang) = @_;
-  our @dayname;
+  our (@dayname, $votive);
 
   # Don't do anything to null antiphons.
   return unless $$ant;
   process_inline_alleluias($$ant);
-  ensure_single_alleluia($$ant, $lang) if ($dayname[0] =~ /Pasc/i && !officium_defunctorum());
+  ensure_single_alleluia($$ant, $lang) if alleluia_required($dayname[0], $votive);
 }
 
 #*** postprocess_vr($vr, $lang)
 # Performs necessary adjustments to a versicle and repsonse.
 sub postprocess_vr(\$$) {
   my ($vr, $lang) = @_;
-  our @dayname;
+  our (@dayname, $votive);
 
   # Don't do anything to null v/r.
   return unless $$vr;
   process_inline_alleluias($$vr);
 
-  if ($dayname[0] =~ /Pasc/i && !officium_defunctorum()) {
+  if (alleluia_required($dayname[0], $votive)) {
     my ($versicle, $response) = split(/(?=^\s*R\.)/m, $$vr);
     ensure_single_alleluia($versicle, $lang);
     ensure_single_alleluia($response, $lang);
@@ -1374,10 +1373,11 @@ sub postprocess_short_resp(\@$) {
   }
 }
 
-#*** officium_defunctorum()
-# Detects whether the office is of the dead. This is checked in lots
-# of different ways throughout the program; this function is the
-# beginning of an attempt at uniformity.
-sub officium_defunctorum() {
-  return our $votive =~ /C9|Defunctorum/i;
+#*** alleluia_required
+# check if alleluia addition is required 
+# it is Paschaltide and not officium defunctorum or BMV Parv.
+sub alleluia_required {
+  my($dayname, $votive) = @_;
+
+  $dayname =~ /Pasc/i && $votive !~ /C(?:9|12)/;
 }
