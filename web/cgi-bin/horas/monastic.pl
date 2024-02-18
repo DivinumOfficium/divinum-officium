@@ -63,10 +63,7 @@ sub psalmi_matutinum_monastic {
       if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
       if ($i == 0 || $i == 8) {
         if ($dayname[0] !~ /Nat[23]\d|Pasc0/) {
-          my $ant = $prayers{$lang}{"Alleluia Duplex"};
-          $ant =~ s/ / * /;
-          $ant =~ s/\./$prayers{$lang}{"Alleluia Simplex"}/;
-          $p = "$ant$p";
+          $p = Alleluia_ant($lang) . $p;
         }
         else {
           $p = "$p[$i]$p";
@@ -144,8 +141,6 @@ sub psalmi_matutinum_monastic {
     }
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
-  my $i = 0;
-  my %w = (columnsel($lang)) ? %winner : %winner2;
   nocturn(1, $lang, \@psalmi, (0..7));
 
   if ($rule =~ /12 lectiones/) {
@@ -165,15 +160,13 @@ sub psalmi_matutinum_monastic {
     push(@s, "\n");
   } else {
     lectiones(0, $lang);
-      # unless it's a vigil, the standard Nocturn 1 Absolutio is going to be combined with the Benedictions depending on the day of the week;
-      # for a vigil, even the Absolutio is changed as above (Is this really what the BM1963 rubrics say?)
   }
+  $psalmi[14] = $psalmi[15] = '' if ($rule !~ /12 lectiones/);
   nocturn(2, $lang, \@psalmi, (8..15));
 
   # In case of Matins of 3 nocturns with 12 lessons:
   if ($winner{Rule} =~ /12 lectiones/) {
     lectiones(2, $lang);                                # lessons 5 – 8
-    # push(@s, "\n", '!Nocturn III.', '_');
 
     # Tenebrae office:
     # commented out tenebre is Roman Matutinum
@@ -263,59 +256,6 @@ sub psalmi_matutinum_monastic {
   push(@s, "!!Capitulum", $w, "\n");  # print Capitulum, V.R.
 }
 
-#*** antetpsal_mmm($line, $i)
-# format of line is antiphona;;psalm number
-# sets the antiphon and psalm call into the output flow
-# handles the multiple psalms under one antiphon situation
-sub antetpsalm_mm {
-  my ($line, $ind, $lastantiphon, $lang) = @_;
-  my @line = split(';;', $line);
-  $$lastantiphon =~ s/\s+\*//;
-
-  if ($ind == -1) { $$lastantiphon = ''; return; }
-
-  if ($ind == -2) {
-    if ($$lastantiphon) { push(@s, "Ant. $$lastantiphon"); push(@s, "\n"); $$lastantiphon = ''; }
-    return;
-  }
-
-  if ( $dayname[0] =~ /Pasc/i
-    && (!exists($winner{"Ant $hora"}) || $commune =~ /C10/)
-    && ($rule !~ /ex /i || $commune =~ /C10/))
-  {
-    if ($hora =~ /Vespera/i)
-    {
-      if ($ind == 0) { $line[0] = Alleluia_ant($lang, 0, 0); $$lastantiphon = ''; } 
-      else { $line[0] = ''; $$lastantiphon = Alleluia_ant($lang, 0, 0); }
-    }
-    elsif ($hora =~ /Laudes/i && $winner{Rank} !~ /Dominica/i )
-    {
-      if ($ind == 0) { $line[0] = Alleluia_ant($lang, 0, 0); $$lastantiphon = ''; }
-      if ($ind == 1) { $line[0] = ''; $$lastantiphon = ''; }
-      if ($ind == 2) { $line[0] = ''; $$lastantiphon = Alleluia_ant($lang, 0, 0); }
-      if ($ind == 3) { ensure_single_alleluia($line[0], $lang); }
-      if ($ind == 4) { $line[0] = Alleluia_ant($lang, 0, 0); }
-    }
-  }
-  if ($line[0] && $$lastantiphon) { push(@s, "Ant. $$lastantiphon"); push(@s, "\n"); }
-  postprocess_ant($line[0], $lang);
-  if ($line[0]) { push(@s, "Ant. $line[0]"); $$lastantiphon = $line[0]; }
-  my $p = $line[1];
-  my @p = split(';', $p);
-  my $i = 0;
-
-  foreach my $p (@p) {
-    if (!$p || $p =~ /^\s*$/) { next; }
-    $p =~ s/[\(\-]/\,/g;
-    $p =~ s/\)//;
-    if (!$line[0]) { push(@s, "\n"); }
-    if ($i < (@p - 1)) { $p = '-' . $p; }
-    push(@s, "\&psalm($p)");
-    push(@s, "\_");
-    $i++;
-  }
-}
-
 #*** monstic_lectio3($w, $lang)
 # return the legend if appropriate
 sub monastic_lectio3 {
@@ -389,7 +329,7 @@ sub legend_monastic {
     }
   }
   $resp = responsory_gloria($resp, 3);
-  matins_lectio_responsory_alleluia($resp, $lang);
+  matins_lectio_responsory_alleluia($resp, $lang) if alleluia_required($dayname[0], $votive);
   push(@s, $resp);
 }
 

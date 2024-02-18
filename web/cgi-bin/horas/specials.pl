@@ -1033,23 +1033,33 @@ sub psalmi_major {
     }
   }
 
-  # $prefix = ''; # this line prevent display prefix set in line 883 commented out by @mbab 2017/02/09
+  if (alleluia_required($dayname[0], $votive)
+    && (!exists($winner{"Ant $hora"}) || $commune =~ /C10/)
+    && $communetype !~ /ex/i
+    && ($version !~ /trident/i || $hora =~ /vespera/i) 
+    && ($version !~ /monastic/i || $hora !~ /laudes/i || $winner{Rank} !~ /Dominica/i)
+  )
+  {
+    $psalmi[0] =~ s/.*(?=;;)/ Alleluia_ant($lang) /e;
+    $psalmi[1] =~ s/.*(?=;;)//;
+    $psalmi[2] =~ s/.*(?=;;)//;
+    $psalmi[-1] =~ s/.*(?=;;)//;
+    if ($version =~ /monastic/i && $hora =~ /laudes/i) {
+      $psalmi[-1] =~ s/.*(?=;;)/ Alleluia_ant($lang) /e;
+    } else {
+      $psalmi[3] =~ s/.*(?=;;)//;
+    }
+  }
+
   if (($dayname[0] =~ /(Adv|Quad)/i || emberday()) && $hora =~ /laudes/i && $version !~ /trident/i) {
     $prefix = "Laudes:$laudes $prefix";
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
 
-  if ($version =~ /monastic/i) {
-    my $lastant;
-    for ($i = 0; $i < @psalmi; $i++) { antetpsalm_mm($psalmi[$i], $i, \$lastant, $lang); }
-    antetpsalm_mm('', -2, \$lastant);
-  } else {
-    for ($i = 0; $i < @psalmi; $i++) {
-      my $last = ($i == (@psalmi - 1)) ? 1 : 0;
-      antetpsalm($psalmi[$i], $i, $last, $lang);
-    }
-  }
-  return;
+  my $lastant;
+  for ($i = 0; $i < @psalmi; $i++) { antetpsalm($psalmi[$i], $i, \$lastant, $lang); }
+  pop(@s);
+  push(@s, "Ant. $lastant", "\n");
 }
 
 #*** antetpsalm($line, $i, $last, $lang)
@@ -1057,34 +1067,20 @@ sub psalmi_major {
 # returns the psalm included into the starting end ending antiphones
 # handles duplex or no attribute, and the nonreadeable beginnings
 sub antetpsalm {
-  my ($line, $ind, $last, $lang) = @_;
+  my ($line, $ind, $lastantiphon, $lang) = @_;
   my @line = split(';;', $line);
-  my @ant = split('\*', $line[0]);
   my $ant = $line[0];
+  my @ant = split(/\s*\*\s*/, $ant);
   postprocess_ant($ant, $lang);
   my $ant1 = ($duplex > 2 || $version =~ /196/) ? $ant : $ant[0];    #difference between 1995, 1960
 
-  if ( $dayname[0] =~ /Pasc/i
-    && (($hora =~ /vespera/i) 
-        || ($hora =~ /laudes/i && $version !~ /trident/i))
-    && !exists($winner{"Ant $hora"})
-    && ($communetype !~ /ex/i || $commune =~ /C10/))
-  {
-    if ($ind == 0) {
-      $ant1 = Alleluia_ant($lang, 0);
-      $ant = '';
-    } elsif ($last) {
-      $ant1 = '';
-      $ant = Alleluia_ant($lang, 1);
-    } else {
-      $ant1 = $ant = '';
-    }
-  }
-  if ($hora =~ /Matutinum/i && $dayname[0] =~ /Pasc[1-6]/i) { ($ant1, $ant) = ant_matutinum($ant1, $ant, $ind); }
-  $ant1 =~ s/\;\;[0-9\;n]+//;
-  if ($ant1) { push(@s, "Ant. $ant1"); }
-  my $p = $line[1];
-  my @p = split(';', $p);
+  if ($ant1) {
+    if ($$lastantiphon) { pop(@s); push(@s, "Ant. $$lastantiphon", "\n"); }
+    $ant1 =~ s/\,$/./;
+    push(@s, "Ant. $ant1"); $$lastantiphon = ($ant =~ s/\* //r);
+  } 
+
+  my @p = split(';', $line[1]);
 
   for (my $i = 0; $i < @p; $i++) {
     if ($expand =~ /(psalms|all)/i && $i > 0) { push(@s, "\_"); }
@@ -1096,12 +1092,6 @@ sub antetpsalm {
     if ($i < (@p - 1)) { push(@s, "\n"); }
   }
 
-  if ($ant) {
-    $ant =~ s/\;\;[0-9\;n]+//;
-    $ant =~ s/\s*\*\s*/ /;
-    push(@s, '_');
-    push(@s, "Ant. $ant");
-  }
   push(@s, "\n");
 }
 
