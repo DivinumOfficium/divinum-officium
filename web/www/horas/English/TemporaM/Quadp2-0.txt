@@ -1,6 +1,7 @@
 [Lectio2]
-@Tempora/Quadp2-0:Lectio1:s/5:31; // s/1-4/4-6/ s/31 .*4 /4 /s
-@Tempora/Quadp2-0:Lectio2:s/!.*// s/ And being.*//s
+@Tempora/Quadp2-0:Lectio1:2:s/5:31; 6:1-4/6:4-6/
+@Tempora/Quadp2-0:Lectio1:7
+@Tempora/Quadp2-0:Lectio2:2-3 s/ And being.*//s
 
 [Lectio3]
 @Tempora/Quadp2-0:Lectio2:s/5-8/6-10/ s/5.*(And being)/6 $1/s
