@@ -92,6 +92,7 @@ if (!$setupsave) {
 }
 
 set_runtime_options($csname); #$expand, $version, $lang2
+$votive = 'Hodie';
 set_runtime_options('parameters'); # priest, lang1 ... etc
 
 #*** saves parameters

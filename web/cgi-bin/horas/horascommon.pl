@@ -1023,19 +1023,6 @@ sub precedence {
 	
 	@dayname = (getweek($day, $month, $year, 0, $missa), '', '');
 	
-	my $vtv;
-	
-	if (!$missa) {
-		$vtv =
-		($votive =~ /(Dedication|C8)/i) ? 'C8'
-		: ($votive =~ /(Defunctorum|C9)/i) ? 'C9'
-		: ($votive =~ /(Parvum|C12)/i) ? 'C12'
-		: '';
-		if ($vtv !~ /(C8|C9|C12)/) { $votive = ''; }
-	} else {
-		$vtv = $votive unless ($votive eq 'Hodie');
-	}
-	
 	$C10 = 'C10';
 	if ($missa) {
 		$C10 .= ($dayname[0] =~ /Adv/i) ? 'a'
@@ -1208,6 +1195,8 @@ sub precedence {
 		}
 	}
 	
+	my $vtv = $votive =~ /^C1?\da?/ ? $votive : '';
+
 	if ($vtv && !$missa) {
 		if ($vtv =~ /C12/i) {
 			if ( ($month == 12 && ($day == 24 && $hora =~ /Vespera|Completorium/ || ($day > 24)))
