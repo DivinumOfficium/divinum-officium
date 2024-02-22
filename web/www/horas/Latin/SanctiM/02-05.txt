@@ -1,15 +1,25 @@
-@Sancti/02-05
-
 [Rank]
-S. Agathae Virginis et Martyris;;Duplex majus;;4;;ex Commune/C6
+S. Agathæ Virginis et Martyris;;Duplex majus;;4;;ex CommuneM/C6
+
+[Rank] (rubrica 196)
+S. Agathae Virginis et Martyris;;Duplex;;3;;ex CommuneM/C6
+
+[Rule]
+12 lectiones
+
+[Rule] (rubrica 196)
+Lectio1 tempora
 
 [Ant Vespera 3]
 @Sancti/02-05:Ant Vespera:s/\./_/gs s/_/.;;109/ s/_/.;;111/ s/_/.;;112/ s/_/.;;126/ s/_//
 
 [Capitulum Vespera]
-@Sancti/02-05:Capitulum Vespera
+@Commune/C7:Capitulum Vespera
 _
 @Commune/C6:Responsory Sexta:1-6
+
+[Oratio]
+@Commune/C6::s/N\./Agathæ/
 
 [Ant Matutinum 3N]
 Beata Agatha * ingréssa cárcerem, expándit manus suas ad Deum et dixit: Dómine qui me fecísti víncere torménta carnifícium, jube me ad tuam misericórdiam perveníre.
@@ -32,17 +42,124 @@ Mens mea * solidáta est, et a Christo fundáta;;95
 ;;249;250;251
 @Sancti/02-05::14-15
 
+[Lectio1]
+@CommuneM/C6:Lectio1 in 2 loco
+
+[Responsory1]
+@Sancti/02-05
+
+[Lectio2]
+@CommuneM/C6:Lectio2 in 2 loco
+
+[Lectio2] (rubrica 196)
+@Commune/C6:Lectio2 in 2 loco
+
+[Responsory2]
+@Sancti/02-05
+
+[Lectio3]
+@CommuneM/C6:Lectio3 in 2 loco
+
+[Lectio3] (rubrica 196)
+@Commune/C6:Lectio3 in 2 loco
+
+[Responsory3]
+@Sancti/02-05
+
+[Lectio4]
+@CommuneM/C6:Lectio4 in 2 loco
+
+[Lectio94]
+@Sancti/02-05:Lectio94
+
+[Responsory4]
+R. Gaudeamus † omnes in Domino, diem festum celebrantes sub honore beatæ Agathæ Virginis;
+* De cujus passióne gaudent Angeli, et colláudant Fílium Dei.
+V. Immaculatus Dominus immaculatam sibi famulam in hoc fragili corpore positam misericorditer consecravit.
+R. De cujus passióne gaudent Angeli, et colláudant Fílium Dei.
+
+[Lectio5]
+@Sancti/02-05:Lectio4:s/ Quæ.*//s
+
+[Responsory5]
+@Sancti/02-05:Responsory4
+
+[Lectio6]
+@Sancti/02-05:Lectio4:s/.*tradit. //s
+
+[Responsory6]
+@Sancti/02-05:Responsory5
+
+[Lectio7]
+@Sancti/02-05:Lectio5
+
+[Responsory7]
+@Sancti/02-05:Responsory6
+
+[Lectio8]
+@Sancti/02-05:Lectio6
+
+[Responsory8]
+R. Qui me dignátus est † ab omni plaga curáre, et mamíllam meam meo péctori restitúere,
+* Ipsum ínvoco Deum vivum.
+V. Medicínam carnálem córpori meo numquam exhíbui, sed hábeo Dóminum Jesum Christum, qui solo sermóne restáurat univérsa.
+R. Ipsum ínvoco Deum vivum.
+
+[Lectio9]
+@CommuneM/C6:Lectio9 in 3 loco
+
 [Responsory9]
-R. Dum torquerétur beáta Agatha in mamílla gráviter, dixit ad júdicem:
-* Impie, crudélis, et dire tyránne, non es confúsus amputáre in fémina, quod ipse in matre suxísti?
-V. Ego enim hábeo mamíllas íntegras intus in ánima mea, quas ab infántia Dómino consecrávi.
-R. Impie, crudélis, et dire tyránne, non es confúsus amputáre in fémina, quod ipse in matre suxísti?
+@Sancti/02-05:Responsory7
+
+[Lectio10]
+@CommuneM/C6:Lectio10 in 3 loco
+
+[Responsory10]
+@Sancti/02-05:Responsory8
+
+[Lectio11]
+@CommuneM/C6:Lectio11 in 3 loco
+
+[Responsory11]
+R. Benedíctus es, † Dómine, qui liberásti corpus meum a pollutióne, et fecísti me víncere vínculum, gládium et ignem:
+* Súscipe me, Dómine, in número ancillárum tuárum.
+V. Laudem tibi réferens, grátias ago, qui liberásti corpus meum a pollutióne.
+R. Súscipe me, Dómine, in número ancillárum tuárum.
+
+[Lectio12]
+@CommuneM/C6:Lectio12 in 3 loco
+
+[Responsory12]
+R. Veni, † Sponsa Christi, áccipe corónam, quam tibi Dóminus præparávit in ætérnum; pro cujus amóre sánguinem tuum fudísti,
+* Et cum Angelis in paridísum introísti.
+V. Veni, elécta mea, et ponam in te thronum meum; quia concupívit Rex spéciem tuam.
+R. Et cum Angelis in paridísum introísti.
+
+[LectioE]
+@Commune/C6a:Evangelium1
 
 [MM Capitulum]
 @Psalterium/Matutinum Special:MM Capitulum C6m
 
+[Ant Laudes]
+@Sancti/02-05:Ant Vespera
+
+[Ant 2]
+@Sancti/02-05
+
 [Capitulum Laudes]
-@Sancti/02-05:Capitulum Vespera
+@Commune/C7:Capitulum Vespera
 _
 @Commune/C6:Responsory Tertia:1-6
 
+[Capitulum Tertia]
+@Commune/C7:Capitulum Vespera
+
+[Capitulum Sexta]
+@Commune/C7
+
+[Capitulum Nona]
+@Commune/C7
+
+[Ant 3]
+@Sancti/02-05

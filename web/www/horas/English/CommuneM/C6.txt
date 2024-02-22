@@ -37,3 +37,13 @@ $Deo gratias
 15 I will praise thy name continually, and will praise it with thanksgiving, and my prayer was heard.
 16 And thou hast saved me from destruction, and hast delivered me from the evil time. 
 17 Therefore I will give thanks, and praise thee, and bless the name of the Lord.
+
+[Lectio9 in 3 loco]
+@Commune/C6:Lectio7 in 2 loco:s/ In.*//s
+
+[Lectio10 in 3 loco]
+@Commune/C6:Lectio7 in 2 loco:s/.*In/In/s s/$/~/
+@Commune/C6:Lectio8 in 2 loco:s/ Give.*//s
+
+[Lectio11 in 3 loco]
+@Commune/C6:Lectio8 in 2 loco:s/.*Give/Give/s
