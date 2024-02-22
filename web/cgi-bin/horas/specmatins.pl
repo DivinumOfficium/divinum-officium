@@ -1056,7 +1056,7 @@ sub addtedeum {
 	my $w = shift;
 	
 	if ($rule =~ /no Te Deum/i
-		|| ($winner =~ /(Tempora|C12A|C12Q)/i && $dayname[0] =~ /(Adv|Quad)/i) && $winner{Rank} !~ /Septem dolorum/i)
+		|| ($winner =~ /(Tempora|C12A|C12Q)/i) && $winner{Rank} !~ /Septem dolorum/i)
 	{
 		$w =~ s/\&teDeum//;
 	}
