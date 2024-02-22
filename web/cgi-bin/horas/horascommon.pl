@@ -220,7 +220,7 @@ sub occurrence {
 			} elsif ($hora =~ /(Vespera|Completorium)/i) {
 				$svesp = 3;
 				# restrict II. Vespers
-				if (($saint{Rule} =~ /No secunda Vespera/i && $version !~ /1960/)
+				if (($saint{Rule} =~ /No secunda Vespera/i && $version !~ /196/)
 						|| ($srank =~ /vigilia/i && ($version !~ /196/ || $sname !~ /08\-09/)) # Vigils with the ackward exception of S. Lawrence in 1960 rules
 						|| ($version !~ /1960|Trident/ && $hora =~ /Completorium/i && $month == 11 && $day == 1 && $dayofweek != 6) # Office of All Souls supersedes All Saints at Completorium from 1911 to 1959
 						|| ($srank[2] < 2 && $trank && !($month == 1 && $day > 6 && $day < 13)) # Simplex end after None.
@@ -279,7 +279,7 @@ sub occurrence {
 			@trank = split(";;", $trank);
 		}
 	}
-	
+
 	if ($version =~ /Trid/i && (($trank[2] < 5.1 && $trank[2] > 4.2 && $trank[0] =~ /Dominica/i) || $trank[0] =~ /infra octavam Corp/i)) { $trank[2] = 2.9; } # before Divino: Dominica minor and infra 8vam CC is outranked by any Duplex
 	elsif ($version =~ /divino/i && ($trank[2] < 5.1 && $trank[0] =~ /Dominica/i)) { $trank[2] = 4.9; }
 	elsif ($version =~ /196/ && $tname =~ /Nat1/i && $day > 28) {	# commemoration of the Christmas Octave according to the rubrics
@@ -1023,19 +1023,6 @@ sub precedence {
 	
 	@dayname = (getweek($day, $month, $year, 0, $missa), '', '');
 	
-	my $vtv;
-	
-	if (!$missa) {
-		$vtv =
-		($votive =~ /(Dedication|C8)/i) ? 'C8'
-		: ($votive =~ /(Defunctorum|C9)/i) ? 'C9'
-		: ($votive =~ /(Parvum|C12)/i) ? 'C12'
-		: '';
-		if ($vtv !~ /(C8|C9|C12)/) { $votive = ''; }
-	} else {
-		$vtv = $votive unless ($votive eq 'Hodie');
-	}
-	
 	$C10 = 'C10';
 	if ($missa) {
 		$C10 .= ($dayname[0] =~ /Adv/i) ? 'a'
@@ -1208,6 +1195,8 @@ sub precedence {
 		}
 	}
 	
+	my $vtv = $votive =~ /^C1?\da?/ ? $votive : '';
+
 	if ($vtv && !$missa) {
 		if ($vtv =~ /C12/i) {
 			if ( ($month == 12 && ($day == 24 && $hora =~ /Vespera|Completorium/ || ($day > 24)))
@@ -1431,18 +1420,18 @@ sub setheadline {
 			
 			if ($latname =~ /Dominica/i && $version !~ /196/) {
 				if ($version !~ /trident/i) {
-					local $_ = getweek($day, $month, $year, $dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i);
+					local $_ = getweek($day, $month, $year, $dayofweek == 6 && $hora =~ /Vespera|Completorium/i);
 					$rankname = (/Pasc[017]/i || /Pent01/i) ? 'Duplex I. classis'
 						: (/(Adv1|Quad[1-6])/i) ? 'Semiduplex Dominica I. classis'
 						: (/(Adv[2-4]|Quadp)/i) ? 'Semiduplex Dominica II. classis'
-						: (/(Epi[1-6])|Pent[22-23]/i && $dayofweek > 0 && !($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i)) ? 'Semiduplex Dominica anticipata'
+						: (/(Epi[1-6])|Pent[22-23]/i && $dayofweek > 0 && !($dayofweek == 6 && $hora =~ /Vespera|Completorium/i)) ? 'Semiduplex Dominica anticipata'
 						: 'Semiduplex Dominica minor';
 				} else {
-					local $_ = getweek($day, $month, $year, $dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i);
+					local $_ = getweek($day, $month, $year, $dayofweek == 6 && $hora =~ /Vespera|Completorium/i);
 					$rankname = (/Pasc[017]/i || /Pent01/i) ? 'Duplex I. classis'
 					: (/(Adv1|Quad1|Quad[5-6])/i) ? 'Semiduplex Dominica I. classis'
 					: (/(Adv[2-4]|Quadp|Quad[2-4])/i) ? 'Semiduplex Dominica II. classis'
-					: (/(Epi[1-6])|Pent[22-23]/i && $dayofweek > 0 && !($dayofweek == 6 && $hora =~ /(Vespera|Completorium)/i)) ? 'Simplex Dominica anticipiata'
+					: (/(Epi[1-6])|Pent[22-23]/i && $dayofweek > 0 && !($dayofweek == 6 && $hora =~ /Vespera|Completorium/i)) ? 'Simplex Dominica anticipiata'
 					: 'Semiduplex Dominica minor';
 				}
 			}

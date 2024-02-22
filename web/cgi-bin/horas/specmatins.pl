@@ -60,7 +60,7 @@ sub invitatorium {
 	$ant =~ s/^.*?\=\s*//;
 	$ant = chompd($ant);
 	$ant = "Ant. $ant";
-	if ($dayname[0] =~ /Pasc/i) { ensure_single_alleluia($ant,$lang); }
+	postprocess_ant($ant, $lang);
 	my @ant = split('\*', $ant);
 	my $ant2 = "Ant. $ant[1]";
 	my $num = "";
@@ -142,6 +142,25 @@ sub hymnusmatutinum {
 	($hymn, $name);
 }
 
+sub nocturn {
+	my($num, $lang, $psalmi, @select) = @_;
+	our($version);
+	my $lastant = '';
+
+	push(@s, '!' . translate('Nocturn', $lang) . ' ' . ('I' x $num) . '.');
+	for(my $i=0; $i<(@select - 2); $i++) {
+		antetpsalm(@{$psalmi}[$select[$i]], $select[$i], \$lastant, $lang)
+	}
+	pop(@s);
+	push(@s, "Ant. $lastant", "\n");
+
+	# versus cant be text or reference (number)
+	my (@vs) = ($select[-1] =~ /^\d+$/ ? (@{$psalmi}[$select[-2]], @{$psalmi}[$select[-1]]) : ($select[-2], $select[-1]));
+	process_inline_alleluias($vs[0]);
+	process_inline_alleluias($vs[1]);
+	push(@s, @vs, "\n");
+}
+
 #*** psalmi_matutinum($lang)
 # collects and returns psalms and lections for matutinum
 sub psalmi_matutinum {
@@ -187,7 +206,6 @@ sub psalmi_matutinum {
 		)                                      # Christmas- and Epiphanytide.
 		)
 		)
-		&& $winner{Rule} !~ /Matutinum Romanum/i
 	)
 	{
 		my $name = $1;
@@ -195,29 +213,14 @@ sub psalmi_matutinum {
 		if ($name =~ /Quad/i && $i > 4) { $name = 'Quad5'; }
 		
 		if ($dayofweek == 0) {
-			my @a = split("\n", $psalmi{"$name 1 Versum"});
-			$psalmi[3] = $a[0];
-			$psalmi[4] = $a[1];
-			my @a = split("\n", $psalmi{"$name 2 Versum"});
-			$psalmi[8] = $a[0];
-			$psalmi[9] = $a[1];
-			my @a = split("\n", $psalmi{"$name 3 Versum"});
-			$psalmi[13] = $a[0];
-			$psalmi[14] = $a[1];
-			if ($version =~ /1960/) { $psalmi[13] = $psalmi[3]; $psalmi[14] = $psalmi[4]; }
+			foreach my $i (1..3) {
+				($psalmi[($i-1)*5 + 3], $psalmi[($i-1)*5+4]) = split("\n", $psalmi{"$name $i Versum"}, 2);
+			}
+			if ($version =~ /1960/) { ($psalmi[13], $psalmi[14]) = ($psalmi[3], $psalmi[4]); }
 		} else {
-			$i = $dayofweek;
-			my @a = split("\n", $psalmi{"$name $i Versum"});
-			$psalmi[13] = $a[0];
-			$psalmi[14] = $a[1];
+			($psalmi[13], $psalmi[14]) = split("\n", $psalmi{"$name $dayofweek Versum"}, 2);
 		}
 		setbuild2("Subst Matutitunun Versus $name $dayofweek");
-	}
-	
-	if ($version =~ /Trident/i && $dayofweek == 0 && $dayname[0] =~ /(Adv|Pasc)/i) {
-		my @a = split("\n", $psalmi{"$1$dayofweek"});
-		my $n;
-		foreach $n (3, 4, 8, 9, 13, 14) { $psalmi[$n] = $a[$n]; }
 	}
 	my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
 	
@@ -225,6 +228,10 @@ sub psalmi_matutinum {
 		@psalmi = split("\n", $w);
 		$comment = $c;
 		$prefix .= ' ' . translate('et Psalmi', $lang);
+	}
+
+	if ($dayname[0] =~ /Pasc[1-6]/i && $votive !~ /C9/) {
+		@psalmi = ant_matutinum_paschal(\@psalmi, $lang, length($w));
 	}
 	
 	if ($rule =~ /Ant Matutinum ([0-9]+) special/i) {
@@ -234,8 +241,11 @@ sub psalmi_matutinum {
 		$wa =~ s/\s*$//;
 		
 		if ($wa) {
-			$psalmi[$ind] =~ s/^.*?;;/$wa;;/;
-			if ($ind == 12 && $dayname[0] =~ /Pasc/i) { $psalmi[10] =~ s/^.*?;;/$wa;;/; }
+			if ($ind == 12 && $dayname[0] =~ /Pasc/i) { 
+				$psalmi[10] =~ s/^.*?;;/$wa;;/; 
+			} else {
+				$psalmi[$ind] =~ s/^.*?;;/$wa;;/;
+			}
 		}
 	}
 	
@@ -263,8 +273,7 @@ sub psalmi_matutinum {
 		if ($dayname[0] =~ /Pasc/i && !exists($winner{'Ant Matutinum'}) && $rank < 5) {    #??? ex
 			my $dname = ($winner{Rank} =~ /Dominica/i) ? 'Dominica' : 'Feria';
 			@spec = split("\n", $spec{"Pasc Ant $dname"});
-			my $i;
-			foreach $i (3, 4, 8, 9, 13, 14) { $psalmi[$i] = $spec[$i]; }
+			foreach my $i (3, 4, 8, 9, 13, 14) { $psalmi[$i] = $spec[$i]; }
 		} elsif ($winner =~ /tempora/i
 		&& $dayname[0] =~ /(Adv|Quad|Pasc)/i
 		&& !exists($winner{'Ant Matutinum'}))
@@ -289,48 +298,20 @@ sub psalmi_matutinum {
 		{
 			my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
 			@psalmi = split("\n", $psalmi{"Daya$dayofweek"});
-			push(@s, '!Nocturn I.');
-			foreach $i (0, 1) { antetpsalm($psalmi[$i], $i); }
-			push(@s, $psalmi[6]);
-			push(@s, $psalmi[7]);
-			push(@s, "\n");
+			nocturn(1, $lang, \@psalmi, (0,1,6,7));
 			lectiones(1, $lang);
-			push(@s, "\n");
-			push(@s, '!Nocturn II.');
-			foreach $i (2, 3) { antetpsalm($psalmi[$i], $i); }
-			push(@s, $psalmi[6]);
-			push(@s, $psalmi[7]);
-			push(@s, "\n");
+			nocturn(2, $lang, \@psalmi, (2,3,6,7));
 			lectiones(2, $lang);
-			push(@s, "\n");
-			push(@s, '!Nocturn III.');
-			foreach $i (4, 5) { antetpsalm($psalmi[$i], $i); }
-			push(@s, $psalmi[6]);
-			push(@s, $psalmi[7]);
-			push(@s, "\n");
+			nocturn(3, $lang, \@psalmi, (4,5,6,7));
 			lectiones(3, $lang);
-			push(@s, "\n");
 			return;
 		}
-		push(@s, '!Nocturn I.');
-		foreach $i (0, 1, 2) { antetpsalm($psalmi[$i], $i); }
-		push(@s, $psalmi[3]);
-		push(@s, $psalmi[4]);
-		push(@s, "\n");
+
+		nocturn(1, $lang, \@psalmi, (0..4));
 		lectiones(1, $lang);
-		push(@s, "\n");
-		push(@s, '!Nocturn II.');
-		foreach $i (5, 6, 7) { antetpsalm($psalmi[$i], $i); }
-		push(@s, $psalmi[8]);
-		push(@s, $psalmi[9]);
-		push(@s, "\n");
+		nocturn(2, $lang, \@psalmi, (5..9));
 		lectiones(2, $lang);
-		push(@s, "\n");
-		push(@s, '!Nocturn III.');
-		foreach $i (10, 11, 12) { antetpsalm($psalmi[$i], $i); }
-		push(@s, $psalmi[13]);
-		push(@s, $psalmi[14]);
-		push(@s, "\n");
+		nocturn(3, $lang, \@psalmi, (10..14));
 		lectiones(3, $lang);
 		push(@s, "\n");
 		return;
@@ -349,7 +330,7 @@ sub psalmi_matutinum {
 		} else {
 			@spec = split("\n", $spec{"Pasc Ant Dominica"});
 		}
-		foreach $i (3, 4, 8, 9, 13, 14) { $psalmi[$i] = $spec[$i]; }
+		foreach my $i (3, 4, 8, 9, 13, 14) { $psalmi[$i] = $spec[$i]; }
 		if ($dayofweek == 0 || $dayofweek == 1 || $dayofweek == 4) { $psalmi[13] = $psalmi[3]; $psalmi[14] = $psalmi[4]; }
 		if ($dayofweek == 2 || $dayofweek == 5) { $psalmi[13] = $psalmi[8]; $psalmi[14] = $psalmi[9]; }
 	}
@@ -360,53 +341,34 @@ sub psalmi_matutinum {
 	} else {
 		setbuild1("One nocturn");
 	}
-	push(@s, '!Nocturn I');
-	push(@s, "\n");
 	
-	# In the office of the BVM on Saturday under the Tridentine rubrics, Psalm 99
-	# is replaced by Psalm 91, as the former is said at Lauds.
-	my @psalm_indices = (
-	$version =~ /Trident/i &&    # Tridentine rubrics, necessarily 3 lessons;
-	$dayofweek == 6 &&         # on a Saturday;
-	$rule =~ /ex C10/i
-	)
-	?                            # not in the octaves of Easter or Pentecost:
-	(0, 8, 2)
-	:                            # Replace Ps. 91 by Ps. 99;
-	(0, 1, 2);                   # otherwise, don't mess about.
-	foreach my $i (@psalm_indices) { antetpsalm($psalmi[$i], $i); }
-	
+	my @psalm_indices = (0, 1, 2); 
+
 	if ($version =~ /trident/i) {
 		if ($rule !~ /1 nocturn/i) {
-			foreach $i (3, 4, 5) { antetpsalm($psalmi[$i], $i); }
+			push(@psalm_indices, 3, 4, 5)
 		}
-		$spec[0] = $psalmi[6];
-		$spec[1] = $psalmi[7];
+		@spec = ($psalmi[6], $psalmi[7]);
 		
 		if ($dayofweek == 6 && $rule =~ /ex C10/i) {
-			my @a = split("\n", $psalmi{"BMV Versum"});
-			$spec[0] = $a[0];
-			$spec[1] = $a[1];
+			@spec = split("\n", $psalmi{"BMV Versum"});
+			# In the office of the BVM on Saturday under the Tridentine rubrics, Psalm 99
+			# is replaced by Psalm 91, as the former is said at Lauds.
+			$psalm_indices[1] = 8;
 		}
 		
 		if ($dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i) {
 			my $name = $1;
 			my $i = $2;
 			if ($name =~ /Quad/i && $i > 4) { $name = 'Quad5'; }
-			$i = $dayofweek;
-			my @a = split("\n", $psalmi{"$name $i Versum"});
-			$spec[0] = $a[0];
-			$spec[1] = $a[1];
+			@spec = split("\n", $psalmi{"$name $dayofweek Versum"});
 		}
 	}
-	
 	if (@psalmi > 9) {
-		foreach $i (5, 6, 7) { antetpsalm($psalmi[$i], $i); }
-		foreach $i (10, 11, 12) { antetpsalm($psalmi[$i], $i); }
+		push(@psalm_indices, 5, 6, 7, 10, 11, 12);
 		
 		# Versum for 3 lectiones is variable
-		$spec[0] = $psalmi[13];
-		$spec[1] = $psalmi[14];
+		@spec = ($psalmi[13], $psalmi[14]);
 		setbuild2('Ord Versus per annum');
 		$comment = 5;
 	}
@@ -418,15 +380,15 @@ sub psalmi_matutinum {
 	}
 	
 	if ($dayname[0] =~ /Pasc[07]/i) {
-		$spec[0] = $psalmi[3];
-		$spec[1] = $psalmi[4];
+		@spec = ($psalmi[3], $psalmi[4]);
 		setbuild2('Subst Versus for de tempore');
 		$comment = 2;
 	}
-	push(@s, $spec[0]);
-	push(@s, $spec[1]);
+
+	push(@psalm_indices, @spec[0,1]);
+
+	nocturn(1, $lang, \@psalmi, @psalm_indices);
 	lectiones(0, $lang);
-	push(@s, "\n");
 	return;
 }
 
@@ -437,23 +399,18 @@ sub votivenocturn {
 	setbuild1("3 psalms 3 lectiones");
 	my %w = (columnsel($lang)) ? %winner : %winner2;
 	my @psalms = split('\n', $w{'Ant Matutinum'});
-	push(@s, '!Nocturn I');
-	push(@s, "\n");
-	my $i0 = 1;
+	my $i0;
 	
 	if ($dayofweek == 2 || $dayofweek == 5) {
-		for ($i = 0; $i < 5; $i++) { $psalms[$i] = $psalms[5 + $i]; }
+		nocturn(1, $lang, \@psalms, (5..9));
 		$i0 = 4;
-	}
-	
-	if ($dayofweek == 3 || $dayofweek == 6) {
-		for ($i = 0; $i < 5; $i++) { $psalms[$i] = $psalms[10 + $i]; }
+	} elsif ($dayofweek == 3 || $dayofweek == 6) {
+		nocturn(1, $lang, \@psalms, (10..14));
 		$i0 = 7;
+	} else {
+		nocturn(1, $lang, \@psalms, (0..4));
+	  $i0 = 1;
 	}
-	foreach $i (0, 1, 2) { antetpsalm($psalms[$i], $i); }
-	push(@s, $psalms[3]);
-	push(@s, $psalms[4]);
-	push(@s, "\n");
 	
 	if ($rule !~ /Limit.*?Benedictio/i) {
 		push(@s, "\&pater_noster");
@@ -480,7 +437,6 @@ sub votivenocturn {
 			push(@s, "\n");
 		}
 	}
-	push(@s, "\n");
 	return;
 }
 
@@ -616,16 +572,12 @@ sub lectiones {
 
 sub matins_lectio_responsory_alleluia(\$$) {
 	my ($r, $lang) = @_;
-	our @dayname;
-	return unless $$r;
 	
-	if ($dayname[0] =~ /Pasc/i && !officium_defunctorum()) {
-		my @resp = split("\n", $$r);
-		ensure_single_alleluia($resp[1], $lang);
-		ensure_single_alleluia($resp[3], $lang);
-		ensure_single_alleluia($resp[-1], $lang);
-		$$r = join("\n", @resp);
-	}
+	my @resp = split("\n", $$r);
+	ensure_single_alleluia($resp[1], $lang);
+	ensure_single_alleluia($resp[3], $lang);
+	ensure_single_alleluia($resp[-1], $lang);
+	$$r = join("\n", @resp);
 }
 #
 #*** getC10readingname
@@ -1016,7 +968,7 @@ sub lectio : ScriptFunc {
 				if (exists($w{"Responsory$na"})) { $s = $w{"Responsory$na"}; }
 			}
 		}
-		matins_lectio_responsory_alleluia($s, $lang);
+		matins_lectio_responsory_alleluia($s, $lang) if alleluia_required($dayname[0], $votive);
 		$w =~ s/\s*$/\n\_\n$s/;
 	}
 	$w = responsory_gloria($w, $num);
@@ -1056,9 +1008,7 @@ sub lectio : ScriptFunc {
 	}
 	
 	#handle verse numbers for passages
-	my $item = 'Lectio';
-	if (exists($translate{$lang}{$item})) { $item = $translate{$lang}{$item}; }
-	$item =~ s/\s*$//;
+	my $item = translate('Lectio', $lang);
 	$item .= " %s" unless ($item =~ /%s/);
 	$w = "_\n" . setfont($largefont, sprintf($item,$num)) . "\n$w";
 	my @w = split("\n", $w);
@@ -1083,13 +1033,8 @@ sub lectio : ScriptFunc {
 		}
 		$w .= "$_";
 	}
-	
-	if ($dayname[0] !~ /Pasc/i) {
-		$w =~ s/\(Allel[uú][ij]a.*?\)//isg;
-	} else {
-		$w =~ s/\((Allel[uú][ij]a.*?)\)/$1/isg;
-	}
-	if ($dayname[0] =~ /Quad/i) { $w =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig; }
+
+	process_inline_alleluias($w);
 	
 	#handle parentheses in non Latin
 	if ($lang !~ /Latin/i) {
@@ -1297,143 +1242,42 @@ sub responsory_gloria {
 	return $prev;
 }
 
-#*** ant matutinum($ant1, $ant, $ind)
-# changes $ant $ant1 for Eastertime
-# - 1 nocturn rule (Pasch0 Pent0 week)
-# weekdays (Alleluia)
-# Sundays special antiphonas
-# only one antiphon for a nocturn
-sub ant_matutinum {
-	my $ant1 = shift;
-	my $ant = shift;
-	my $ind = shift;
-	
-	if ( $version =~ /1960/
-		&& ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek > 3))
-		&& ($rank < 5 || $winner{Rank} =~ /Dominica/i))
-	{
-		if ($ind == 0) { return (Alleluia_ant($lang, 1, 1), ''); }
-		if ($ind == 12) { return ('', Alleluia_ant($lang, 1, 1)); }
-		return ('', '');
-	}
-	
-	#Pasc0 Pent0 week
-	if ($rule =~ /1 nocturn/i) {
-		my %w = (columnsel($lang)) ? %winner : %winner2;
-		if (!exists($w{'Ant Matutinum'}) && $winner{Rank} =~ /ex/i) { %w = (columnsel($lang)) ? %commune : %commune2; }
-		my @ant = split("\n", $w{'Ant Matutinum'});
-		$ant = $ant1 = $ant[$ind];
-		@ant = split('\*', $ant);
-		if ($duplex < 3 && $version !~ /1960/) { $ant1 = $ant[0]; }
-		return ($ant, $ant);
-	}
-	if ($winner =~ /Pasc5-4/i || $winner{Rank} =~ /ex tempora\/Pasc5\-4/i) { return ($ant1, $ant); }
-	
-	# special Ant Matutinum, used for Eastertime 1st and 2nd class feasts
-	my @spec = splice(@spec, @spec);
-	
-	if (exists($winner{'Ant Matutinum'}) || $winner{Rank} =~ /\;\;ex /) {
-		%spec = (columnsel($lang)) ? %winner : %winner2;
-		@spec = split("\n", $spec{'Ant Matutinum'});
-		
-		if (!@spec) {
-			%spec = %{officestring($lang, $commune)};
-			@spec = split("\n", $spec{'Ant Matutinum'});
-		}
-	}
-	
-	#Rule Ant Matutinum n special
-	if ($rule =~ /Ant Matutinum ([0-9]+) special/i) {
-		my $ind = $1;
-		%wa = (columnsel($lang)) ? %winner : %winner2;
-		$wa = $wa{"Ant Matutinum $ind"};
-		$wa =~ s/\s*$//;
-		
-		if ($wa) {
-			$spec[$ind] =~ s/^.*?;;/$wa;;/;
-			if ($ind == 12 && $dayname[0] =~ /Pasc/i) { $spec[10] =~ s/^.*?;;/$wa;;/; }
-		}
-	}
-	
-	#weekday psalter returns  $ant1, $ant
-	if ($dayofweek > 0 && (!@spec || $winner =~ /\/C10/)) {
-		if ($rule !~ /9 lectio/i || ($version =~ /1960/ && $rank < 5)) {
-			if ($ind == 0) {
-				$ant1 = Alleluia_ant($lang, 0);
-				$ant = '';
-			} elsif ($version =~ /Trident/i && $ind == 5) {
-				$ant1 = '';
-				$ant = Alleluia_ant($lang, 1);
-			} elsif ($ind == 12) {
-				$ant1 = '';
-				$ant = Alleluia_ant($lang, 1);
-			} else {
-				$ant1 = $ant = '';
+#*** ant matutinum_paschal(@_ref, $lang)
+# sets matutinum antiphonas in pascal tide
+sub ant_matutinum_paschal {
+	my ($psalmi_ref, $lang, $proper) = @_;
+	my @psalmi = @$psalmi_ref;
+	our(@dayname, $version, $winner);
+
+	if ($dayofweek || ($dayname[0] =~ /Pasc6/ && $version =~ /196/)) {
+		if (!$proper || $winner =~ /\/C10/) {
+			@psalmi = map { s/.*?;/;/r } @psalmi;
+			$psalmi[0] = Alleluia_ant($lang) . $psalmi[0];
+			if ($dayofweek && $rule =~ /9 lectio/i && ($version !~ /196/ || $rank > 3) && $rank >= 2) { #3 nocturns
+				$psalmi[5] = Alleluia_ant($lang) . $psalmi[5];
+				$psalmi[10] = Alleluia_ant($lang) . $psalmi[10];
 			}
-		} else {    #3 nocturns
-			if ($ind == 0 || $ind == 5 || $ind == 10) {
-				$ant1 = Alleluia_ant($lang, 0);
-				$ant = '';
-			} elsif ($ind == 2 || $ind == 7 || $ind == 12) {
-				$ant1 = '';
-				$ant = Alleluia_ant($lang, 1);
-			} else {
-				$ant1 = $ant = '';
+		}	elsif ($winner !~ /tempora/i) { # each nocturn under single antiphonas apart Ascension
+			foreach my $i (0..3) {
+				$psalmi[$i*5+1] =~ s/.*;;/;;/;
+				$psalmi[$i*5+2] =~ s/.*;;/;;/;
 			}
 		}
-		return ($ant1, $ant);
-	}
-	
-	#Sunday psalter prepares @spec
-	if ($winner{Rank} =~ /Dominica/i) {
-		%spec = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
-		@spec = split("\n", $spec{'Pasc Ant Dominica'});
-	}
-	
-	#one antiphon for a nocturn
-	if ($rule !~ /9 lectio/i || ($version =~ /1960/ && ($rank < 5 || $winner{Rank} =~ /Dominica/i))) {
-		if ($ind == 0) {
-			$ant1 = $spec[0];
-			$ant = '';
-		} elsif ($ind == 12) {
-			$ant1 = '';
-			$ant = $spec[0];
-		} else {
-			$ant1 = $ant = '';
-		}
-	} elsif ($ind == 0) {
-		$ant1 = $spec[0];
-		$psalmi[3] = $spec[3];
-		$psalmi[4] = $spec[4];
-		$ant = '';
-	} elsif ($ind == 5) {
-		$ant1 = $spec[5];
-		$psalmi[8] = $spec[8];
-		$psalmi[9] = $spec[9];
-		$ant = '';
-	} elsif ($ind == 10) {
-		$ant1 = $spec[10];
-		$psalmi[13] = $spec[12];
-		$psalmi[14] = $spec[14];
-		$ant = '';
-	} elsif ($ind == 2) {
-		$ant1 = '';
-		$ant = $spec[0];
-	} elsif ($ind == 7) {
-		$ant1 = '';
-		$ant = $spec[5];
-	} elsif ($ind == 12) {
-		$ant1 = '';
-		$ant = $spec[10];
 	} else {
-		$ant1 = $ant = '';
+		if ($dayname[0] =~ /Pasc[1-5]/i && $dayname[1] =~ /Dominica/) {
+			my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
+			my @a = split("\n", $psalmi{Pasc0});
+			for (my $i=0; $i<@psalmi; $i++) {
+				$psalmi[$i] =~ s/.*;;/$a[$i]/;
+			}
+			if ($version =~ /196/) { # one nocturn under single antiophona
+				for (my $i=1; $i<@psalmi; $i++) {
+					$psalmi[$i] =~ s/.*;;/;;/;
+				}
+			}
+		}
 	}
-	
-	if ($ant1 && $duplex < 3 && ($ind == 0 || $ind == 5 || $ind == 10) && $version !~ /1960/) {
-		@ant = split('\*', $ant1);
-		$ant1 = $ant[0];
-	}
-	return ($ant1, $ant);
+	@psalmi;
 }
 
 #*** initiarule($month, $day, $year)
