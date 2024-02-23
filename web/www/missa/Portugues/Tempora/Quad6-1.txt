@@ -1,20 +1,14 @@
 [Rank]
-Feria Secunda Majoris Hebdomadæ;;Feria privilegiata;;6
+Feria Secunda Majoris Hebdomadæ;;Feria privilegiata;;6.9
 
 [Rank] (rubrica 1955 aut rubrica 1960)
 Feria Secunda Hebdomadæ Sanctæ;;Feria privilegiata;;6
 
 [Rule]
 no Gloria
-Suffragium=Ecclesiae,Papa;;
+Suffragium=Ecclesiæ,Papa;;
 Prefatio=Quad5
 Super popul
-
-[Comment]
-# Segunda-feira Santa
-! Estação em Santa Praxedes
-! 1 classe
-! Paramentos roxos
 
 [Introitus]
 !Sl 34:1-2
@@ -37,7 +31,12 @@ Naqueles dias, disse Isaías: «O Senhor e Deus abriu-me os ouvidos, e lhe não 
 v.  Erguei-Vos, Senhor, e procedei ao meu julgamento. Ó meu Deus e meu Senhor, tomai a minha causa nas vossas mãos.
 V. Desembainhai a vossa espada e enfrentai aqueles que me perseguem.
 _
-@Tempora/Quadp3-3:Tractus1
+!Tractus
+!Sl 102:10
+Senhor, nos não castigueis, consoante merecemos, pelos pecados que praticámos: nem nos julgueis, segundo as nossas iniquidades.
+!Ps 78:8-9
+Esquecei-Vos, Senhor, das nossas iniquidades passa- das, apressai-Vos em revestir-nos com vossas misericórdias, pois grande é a nossa miséria. (genuflectir)
+V. Auxiliai-nos, ó Deus, nosso Salvador, e, pela glória do vosso nome, livrai-nos, Senhor, e perdoai os nossos pecados por causa do vosso nome.
 
 [Evangelium]
 Continuação ++ do santo Evangelho segundo S. João.
