@@ -1,7 +1,7 @@
 [Rank]
 In Purificatione Beatæ Mariæ Virginis;;Duplex 2 class;;5.1;;ex C11
 
-[Rank1960]
+[Rank] (rubrica 196)
 In Purificatione Beatæ Mariæ Virginis;;Duplex 2 class;;5;;ex C11
 
 [Rule]
@@ -12,14 +12,9 @@ Prefatio=Nat
 (rubrica 1960) Festum Domini
 Prelude
 
-[Comment]
-# 02 II – Purificação da B. V. Maria
-! 2 classe
-! Paramentos brancos
-
-[De Benedictione Candelarum]
-! Se a bênção das velas e a procissão não poderem ser feitas na sua forma solene, devido à ausência de ministros sagrados, é aceitável fazer-se da forma simples, até sem canto, desde que pelo menos três acólitos assistam o celebrante.
-! O celebrante paramenta-se com capa branca ou sem casula, e segue com os ministros que se vestem similarmente para abençoar as velas, que são colocadas no centro do altar ou no lado da epístola. Em pé, de frente para o altar, o padre canta sem entoação, com as mão unidas:
+[Prelude](rubrica 1570 aut rubrica divino)
+!! Benedictio Candelarum
+! Se a bênção das velas e a procissão não poderem ser feitas na sua forma solene, devido à ausência de ministros sagrados, é aceitável fazer-se da forma simples, até sem canto, desde que pelo menos três acólitos assistam o celebrante. O celebrante paramenta-se com capa branca ou sem casula, e segue com os ministros que se vestem similarmente para abençoar as velas, que são colocadas no centro do altar ou no lado da epístola. Em pé, de frente para o altar, o padre canta sem entoação, com as mão unidas:
 V. O Senhor seja convosco.
 R. E com o vosso espírito.
 v. Oremos. Senhor santo, Pai omnipotente, Deus eterno, que criastes todas as coisas do nada e por ordem de quem as abelhas compõem a substância para se formarem estas velas, e que neste dia atendestes à petição do justo Simeão: humildemente Vos rogamos, pela invocação do vosso santo nome, pela intercessão da B. Maria, sempre Virgem, cuja festividade hoje celebramos piedosamente, e pelas preces de todos vossos Santos, que Vos digneis benzer ++ e santificar ++ estas velas para uso dos homens e para a saúde dos corpos e das almas, quer na terra, quer no mar. Ouvi, lá do vosso celestial santuário e do trono da vossa majestade, os votos do vosso povo, aqui presente, que deseja levar reverentemente em suas mãos estas velas e louvar-Vos com seus cânticos; enfim, sede propício para com todos que por Vós clamam, os quais resgatastes pelo precioso Sangue do vosso Filho:
@@ -40,16 +35,15 @@ _
 _ 
 v. Oremos. Senhor Jesus Cristo, que, aparecendo hoje entre os homens na substância da nossa carne, fostes por vossos Pais apresentado no templo, e a quem o venerável Simeão, ilustrado pela luz do vosso Espírito, aceitou em suas mãos, reconheceu e abençoou, concedei-nos propício que, iluminados e ilustrados pela graça do Espírito Santo, verdadeiramente Vos reconheçamos e fielmente Vos amemos.
 R.: Amen.
+_
+_
 ! O celebrante asperge as velas três vezes com água benta, dizendo a antífona Asperges me, e incenssado-as também três vezes.
 _
-_
-[De Distributione Candelarum]
-! Depois o clérigo sénior vai até ao altar e o celebrante, sem genuflectir, recebe dele a vela. De seguida, o celebrante fica no centro virado para o altar, vira-se para o povo e distribui as velas. Primeiro ao clérigo sénior de quem recebeu a vela, depois ao diácono e subdiácono, depois aos outros clérigos por ordem, um por um, e por fim ao povo. Todos se ajoelham, exceptuando os prelados, se presentes. Quando a distribuição das velas começa canta-se:
-
 !Antífona Lc 2:32
 Ant. A luz que iluminará as nações e a glória de Israel, vosso povo.
 !Lc 2:29-31
 v. Agora, Senhor, deixai ir em paz o vosso servo, segundo a vossa palavra.
+! Repete-se a Ant. "A luz que iluminará..."
 Ant. A luz que iluminará as nações e a glória de Israel, vosso povo.
 v. Pois os meus olhos já viram a vossa salvação.
 Ant. A luz que iluminará as nações e a glória de Israel, vosso povo.
@@ -62,6 +56,7 @@ Ant. A luz que iluminará as nações e a glória de Israel, vosso povo.
 _
 _
 ! Depois canta-se:
+!Ant. Sl 43:26.
 Ant. Erguei-Vos, Senhor, auxiliai-nos e salvai-nos, pela honra do vosso nome.
 !Sl 43:26
 Ó Deus, ouvimos com nossos ouvidos, nossos pais contaram-nos as vossas maravilhas.
@@ -78,8 +73,7 @@ v. Dignai-vos ouvir o vosso povo, Senhor, e fazei que pela luz da vossa graça r
 R. Amen.
 _
 _
-[De Processione]
-! Primeiro, o celebrante coloca incenso turíbulo, depois o diácono vira-se para o povo e diz:
+! Se existir procissão, primeiro, o celebrante coloca incenso turíbulo, depois o diácono vira-se para o povo e diz:
 V. Caminhemos em paz.
 R. Em nome de Cristo. Amen.
 ! O incensador vai primeiro, carregando o turíbulo, seguido pelo subdiácono, que carrega a cruz entre dois acólitos com velas acesas, depois os clérigos por ordem, finalmente o celebrante com o diácono à sua esquerda. Todos seguram velas acesas. A seguinte antífona é cantada:
