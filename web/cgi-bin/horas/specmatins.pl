@@ -63,37 +63,33 @@ sub invitatorium {
 	postprocess_ant($ant, $lang);
 	my @ant = split('\*', $ant);
 	my $ant2 = "Ant. $ant[1]";
-	my $num = "";
-	if ($rule =~ /Invit([0-9])/i) { $num = $1; }
-	if ($winner =~ /Tempora/i && $dayname[0] =~ /Quad[56]/i && $rule !~ /Gloria responsory/i) { $num = 3; }
-	
-	# Per annum Monday special psalm $w = getproprium invitatory
-	if (!$w && $dayofweek == 1 && $dayname[0] =~ /(Epi|Pent|Quadp)/i && $winner =~ /Tempora/ && $rank < 2) { $num = 4; }
-	
-	if (!$w && $dayofweek == 1 && $dayname[0] =~ /(Epi|Pent)/i && $w{Rank} =~ /Vigil/i && $winner =~ /Sancti/) {
-		$num = 4;
-	}
-	my $invitpath = "Psalterium/Invitatorium$num";
+
+	my $invitpath = "Psalterium/Invitatorium.txt";
 	$invitpath =~ s/Psalterium/PiusXII/ if ($lang eq 'Latin' && $psalmvar);
-	$fname = checkfile($lang, "$invitpath.txt");
+	$fname = checkfile($lang, $invitpath);
 	
 	if (my @a = do_read($fname)) {
-		foreach $item (@a) {
-			$item = "$item\n";
-			
-			if ($item =~ /\$ant2/i) {
-				$item = "$ant2";
-			} elsif ($item =~ /\$ant/i) {
-				$item = "$ant";
-			} else {
-				$item =~ s/\(\*(.*?)\*(.*?)\)/setfont($smallfont, "($1) ") . $2/e;
-			}
-			
-			if ($dayname[0] =~ /Quad[56]/i && $winner !~ /Sancti/i && $rule !~ /Gloria responsory/i) {
-				$item =~ s/\&Gloria/\&Gloria2/i;
-			}
-			push(@s, "$item");
+    $_ = join("\n", @a);
+
+		if ($rule =~ /Invit2/i) { 
+			# old Invitatorium2 = Quadp[123]-0
+			s/ \*.*//;
+		} elsif ($dayname[0] =~ /Quad[56]/i && $winner =~ /tempora/i && $rule !~ /Gloria responsory/i) {
+			# old Invitatorium3
+      s/&Gloria/\&Gloria2/;
+			s/v\. .* \^ (.)/v. \u\1/m;
+			s/\$ant2\s*(?=\$)//s;
+		} elsif (!$w && $dayofweek == 1 && $dayname[0] =~ /(Epi|Pent|Quadp)/i && $winner =~ /Tempora/) { 
+			# old Invitatorium4
+			s/^v\. .* \+ (.)/v. \u\1/m;
 		}
+
+		s{[+*^] }{}g; # clean division marks
+
+    s/\$ant2/$ant2/eg;
+    s/\$ant/$ant/eg;
+
+    push(@s, $_);
 	} else {
 		$error .= "$fname cannnot open";
 	}
