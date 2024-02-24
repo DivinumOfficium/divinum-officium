@@ -1,0 +1,25 @@
+[Rank]
+S. Casimiri Confessoris;;Duplex;;3;;vide C5
+
+[Rule]
+CPapaM=Lucio;
+
+[Oratio]
+¡Oh Dios!, que en medio de los regalos de la corte y de los peligros del mundo, has fortalecido a san Casimiro con la virtud de la constancia, te suplicamos que por su intercesión desprecien tus fieles lo terreno y aspiren siempre a lo celestial.
+_
+!De S. Lucio
+@Commune/C2b:Oratio:s/N\./Lucio/
+
+[Secreta]
+Te ofrecemos, Señor, este sacrificio de alabanza en memoria de tus santos, por cuya intercesión confiamos vernos libres de los males presentes y futuros.
+_
+!De S. Lucio
+@Commune/C2b:Secreta:s/N\./Lucio/
+
+[Postcommunio]
+Alimentados por la comida y bebida celestiales, te rogamos humildes, Dios nuestro, que nos auxilien también sus oraciones en memoria de aquel de quien participamos.
+_
+!De S. Lucio
+@Commune/C2b:Postcommunio:s/N\./Lucio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem
