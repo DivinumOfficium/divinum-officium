@@ -909,8 +909,10 @@ sub lectio : ScriptFunc {
 	}
 	if (($ltype1960 || ($winner =~ /Sancti/i && $rank < 2)) && $num > 2) { $num = 3; $w = addtedeum($w); }
 	if ($num == 3 && $winner =~ /Tempora/ && $rule !~ /9 lectiones/i && $rule =~ /Feria Te Deum/i) { $w = addtedeum($w); }
-	if ($version =~ /monastic/i) { $w =~ s/\&teDeum//g; } # remove te deum from ninth/twelve lesson as it comes only after the last response
-	
+	if ($rule =~ /no Te Deum/i 
+		|| $version =~ /monastic/i)  # te deum is added as needed after the last responsory
+	{ $w =~ s/\&teDeum//g; }	
+
 	#get item from [Responsory$num] if no responsory
 	if ($w && $w !~ /\nR\./ && $w !~ /\&teDeum/i) {
 		my $s = '';
