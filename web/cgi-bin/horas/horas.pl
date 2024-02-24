@@ -1021,7 +1021,6 @@ sub martyrologium : ScriptFunc {
   }
 
   if (my @a = do_read($fname)) {
-		setbuild2("$m $d");
 		my ($luna, $mo) =
       ($year >= 1900 && $year < 2200)
       ? gregor($m, $d, $y, $lang)
@@ -1069,7 +1068,7 @@ sub gregor {
   my @epact = (29, 10, 21, 2, 13, 24, 5, 16, 27, 8, 19, 30, 11, 22, 3, 14, 25, 6, 17);
   my @om = (30, 29, 30, 29, 30, 29, 30, 29, 30, 29, 30, 29, 30, 100);
   my @firstmonth = (2, 21, 10, 29, 18, 7, 26, 15, 4, 23, 12, 1, 20, 9, 28, 17, 6, 25, 14);
-  my $leapday = 0;  # only set in the last days of February in a leap year
+  my $leapday;  # only set in the last days of February in a leap year
 	
   if ($golden == 18) {
     $om[12] = 29;
@@ -1081,8 +1080,8 @@ sub gregor {
   if ($golden == 8 || $golden == 11) { unshift(@om, 30); }
 
 	if(leapyear($year) && $month == 2 && $day >= 24) {
-			$cday = ($day + 1) % 30;  #  24->25, 25->26, "29"->0
-			if ($day == 29) { $day = 24; }
+		$leapday = ($day + 1) % 30;  #  24->25, 25->26, "29"->0
+		if ($day == 29) { $day = 24; }
 	}
 	
   my $t = date_to_days($day, $month - 1, $year);
@@ -1112,7 +1111,7 @@ sub gregor {
     'January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December'
   );
-	$day = $cday||$day;
+	$day = $leapday||$day;  # recover English date in Leap Years
   my $sfx1 =
       ($day > 3 && $day < 21) ? 'th'
     : (($day % 10) == 1) ? 'st'
