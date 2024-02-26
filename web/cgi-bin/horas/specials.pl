@@ -536,7 +536,7 @@ sub setcomment {
   my $lang = shift;
   my $prefix = shift;
 
-  if ($comment =~ /Source/i && $votive !~ /hodie/i) { $ind = 7; }
+  if ($comment =~ /Source/i && $votive && $votive !~ /hodie/i) { $ind = 7; }
   $label = translate_label($label, $lang);
   my %comm = %{setupstring($lang, 'Psalterium/Comment.txt')};
   my @comm = split("\n", $comm{$comment});
