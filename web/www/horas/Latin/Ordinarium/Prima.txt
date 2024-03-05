@@ -23,13 +23,9 @@ V. Exsúrge, Christe, ádjuva nos.
 R. Et líbera nos propter nomen tuum. 
 
 #Preces Dominicales et Feriales
-v. Kýrie, eléison. Christe, eléison. Kýrie, eléison.
-!« Pater Noster » dicitur secreto usque ad « Et ne nos indúcas in tentatiónem: »
-&pater_noster
-!« Credo » dicitur secreto usque ad « Carnis resurrectiónem. »
-v. Credo in Deum, Patrem omnipoténtem, Creatórem cæli et terræ. Et in Jesum Christum, Fílium ejus únicum, Dóminum nostrum: qui concéptus est de Spíritu Sancto, natus ex María Vírgine, passus sub Póntio Piláto, crucifíxus, mórtuus, et sepúltus: descéndit ad ínferos; tértia die resurréxit a mórtuis; ascéndit ad cælos; sedet ad déxteram Dei Patris omnipoténtis: inde ventúrus est judicáre vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Ecclésiam cathólicam, Sanctórum communiónem, remissiónem peccatórum.
-V. Carnis resurrectiónem.
-R. Vitam ætérnam. Amen.
+$Kyrie
+$Pater secreto
+$Credo secreto
 V. Et ego ad te, Dómine, clamávi.
 R. Et mane orátio mea prævéniet te.
 V. Repleátur os meum laude.
@@ -70,8 +66,7 @@ V. Qui replet in bonis desidérium tuum.
 R. Renovábitur ut áquilæ juvéntus tua.
 
 #Preces Dominicales et Feriales
-V. Adjutórium nóstrum + in nómine Dómini.
-R. Qui fecit cælum et terram.
+$adjutorium nostrum
 $Confiteor
 $Misereatur
 $Indulgentiam
@@ -86,7 +81,7 @@ R. Et clamor meus ad te véniat.
 
 #Orationes
 &Dominus_vobiscum1
-v. Orémus.
+$Oremus
 v. Dómine Deus omnípotens, qui ad princípium hujus diéi nos perveníre fecísti: tua nos hódie salva virtúte; ut in hac die ad nullum declinémus peccátum, sed semper ad tuam justítiam faciéndam nostra procédant elóquia, dirigántur cogitatiónes et ópera.
 $Per Dominum
 &Dominus_vobiscum
@@ -107,7 +102,7 @@ V. Deus in adjutórium meum inténde.
 R. Dómine, ad adjuvándum me festína.
 &Gloria
 
-v. Kýrie, eléison. Christe, eléison. Kýrie, eléison.
+$Kyrie
 &pater_noster
 V. Réspice in servos tuos, Dómine, et in ópera tua, et dírige fílios eórum.
 R. Et sit splendor Dómini Dei nostri super nos, et ópera mánuum nostrárum dírige super nos, et opus mánuum nostrárum dírige.
@@ -120,8 +115,7 @@ R. Amen.
 V. Jube, domne, benedícere.
 Benedictio. Dies et actus nostros in sua pace dispónat Dóminus omnípotens. Amen.
 #Lectio brevis
-V. Tu autem, Dómine, miserére nobis.
-R. Deo grátias.
+$Tu autem
 
 #Conclusio
 V. Adjutórium nóstrum + in nómine Dómini. 

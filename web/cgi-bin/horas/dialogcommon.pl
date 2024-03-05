@@ -249,6 +249,15 @@ sub setupstring($$%) {
 
     if (%$new_sections) {
 
+			# Fill in missing "pre-Urban hymn translations to avoid being overriden by Latin
+			foreach my $seckey (keys(%{$new_sections})) {
+				if ($seckey =~ /Hymnus(.*?) (.*)/) {
+					unless (exists(${$new_sections}{"Hymnus$1M $2"})) {
+						${$new_sections}{"Hymnus$1M $2"} = ${$new_sections}{$seckey}
+					}
+				}
+			}
+			
       # Fill in the missing things from the layer below.
       ${$new_sections}{'__preamble'} .= "\n${$base_sections}{'__preamble'}";
       ${$new_sections}{$_} ||= ${$base_sections}{$_} foreach (keys(%{$base_sections}));
@@ -273,13 +282,13 @@ sub setupstring($$%) {
   # Take a copy.
   my %sections = %{${$inclusioncache}{$fullpath}};
   $params{'resolve@'} = RESOLVE_ALL unless (exists $params{'resolve@'});
-
+	
   # Do whole-file inclusions.
   unless ($params{'resolve@'} == RESOLVE_NONE) {
     while ($sections{'__preamble'} =~ /$inclusionregex/gc) {
       my $incl_fname .= "$1.txt";
       if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
-      my $incl_sections = setupstring($lang, $incl_fname, 'resolve@' => RESOLVE_NONE);
+			my $incl_sections = setupstring($lang, $incl_fname, 'resolve@' => RESOLVE_WHOLEFILE);	# ensure daisy-chain (especially for Monastic)
       $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
     }
     delete $sections{'__preamble'};

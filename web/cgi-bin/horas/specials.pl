@@ -1707,7 +1707,7 @@ sub getproprium {
 
   if (!$w && $communetype && ($communetype =~ /ex/i || $flag)) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
-
+	
     if (exists($com{$name})) {
       $w = tryoldhymn(\%com, $name);
       $c = 4;
@@ -1929,7 +1929,7 @@ sub getfromcommune {
   if (!$c) { return; }
 
   if ($c =~ /^C/) {
-    $c = "Commune/$c";
+    $c = subdirname('Commune', $version) . "$c";
     my $fname = "$datafolder/$lang1/$c" . "p.txt";
     if ($dayname[0] =~ /Pasc/i && (-e $fname)) { $c .= 'p'; }
   }
