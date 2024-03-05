@@ -193,12 +193,9 @@ sub psalmi_matutinum_monastic {
 
     postprocess_ant($ant, $lang);
 
-    # insert canticles as single entries in psalmi
-    my @p = split(';', $p);  
-    $psalmi[16] = $ant . ';;' . shift @p;
-    splice(@psalmi, 17, 0, map { ';;' . $_ } @p);
+    $psalmi[16] = $ant . ';;' . $p;
 
-    nocturn(3, $lang, \@psalmi, (16..20));
+    nocturn(3, $lang, \@psalmi, (16..18));
     lectiones(3, $lang);            # Homily with responsories #9-#12
     push(@s, '&teDeum', "\n");      # Te Deum comes after the 12th responsory only
  
