@@ -228,15 +228,10 @@ sub psalmi_matutinum_monastic {
     
   # end 2nd nocturn in ferial office
   my ($w, $c) = getproprium('MM Capitulum', $lang, 0, 1);
-  my %s = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
 
   if (!$w && $commune) {
-    if ($commune =~ /(C\d+)/) {
-      $w = $s{"MM Capitulum $1"};
-    } else {
-      my %c = (columnsel($lang)) ? %commune : %commune2;
-      $w = $c{"MM Capitulum"};
-    }
+    my %c = (columnsel($lang)) ? %commune : %commune2;
+    $w = $c{"MM Capitulum"};
   }
 
   if (!$w) {
@@ -247,6 +242,7 @@ sub psalmi_matutinum_monastic {
       if ($name eq ' Nat' && $day > 6 && $day < 13) { $name = ' Epi'; }
       if ($name eq ' Epi1') { $name = ($day > 6 && $day < 13) ? ' Epi' : ''; }
     }
+    my %s = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
     $w = $s{"MM Capitulum$name"};
   }
   postprocess_vr($w,$lang) if ($dayname[0] =~ /Pasc/);
