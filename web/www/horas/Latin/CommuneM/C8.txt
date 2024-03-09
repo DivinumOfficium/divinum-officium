@@ -112,6 +112,11 @@ R. Et audívi vocem de throno dicéntem: Ecce tabernáculam Dei cum homínibus, 
 [Lectio12]
 @Commune/C8:Lectio9
 
+[MM Capitulum]
+@Commune/C8:Capitulum Sexta
+_
+@Commune/C8:Responsory Tertia:s/.*_.//s
+
 [Capitulum Laudes]
 @Commune/C8:Capitulum Vespera
 _
@@ -125,4 +130,3 @@ _
 
 [Responsory Nona]
 @Commune/C8:Versum 1
-
