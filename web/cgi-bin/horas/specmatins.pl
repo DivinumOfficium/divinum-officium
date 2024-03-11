@@ -79,7 +79,8 @@ sub invitatorium {
       s/&Gloria/\&Gloria2/;
 			s/v\. .* \^ (.)/v. \u\1/m;
 			s/\$ant2\s*(?=\$)//s;
-		} elsif (!$w && $dayofweek == 1 && $dayname[0] =~ /(Epi|Pent|Quadp)/i && $winner =~ /Tempora/) { 
+		} elsif (!$w && $dayofweek == 1 && $winner =~ /Tempora/
+				&& ($dayname[0] =~ /(Epi|Pent|Quadp)/i || ($dayname[0] =~ /Quad/i && $version =~ /Trident|Monastic/i))) { 
 			# old Invitatorium4
 			s/^v\. .* \+ (.)/v. \u\1/m;
 		}
