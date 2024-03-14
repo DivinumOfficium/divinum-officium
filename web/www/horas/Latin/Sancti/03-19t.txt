@@ -12,11 +12,13 @@ Psalm5 Vespera=116
 @Sancti/03-19:Oratio
 
 [Lectio4]
-@Sancti/03-19:Lectio4
-Síquidem ille Joseph, fratérna ex invídia vénditus et ductus in Ægýptum, Christi venditiónem præfigurávit: iste Joseph, Herodiánam invídiam fúgiens, Christum in Ægýptum portávit. Ille dómino suo fidem servans, dominæ nóluit commiscéri: iste Dominam suam, Dómini sui matrem, vírginem agnóscens et ipse cóntinens, fidéliter custodívit.
+@Sancti/03-19::s/$/~/
+@Sancti/03-19:Lectio5:s/ Illi.*//
 
 [Lectio5]
-Illi data est intellegéntia in mystériis somniórum: isti datum est cónscium fíeri atque partícipem cæléstium sacramentórum. Ille fruménta servávit non sibi, sed omni pópulo: iste Panem vivum e cælo servándum accépit tam sibi quam toti mundo. Non est dubium, quin bonus et fidélis homo fúerit iste Joseph, cui Mater desponsáta est Salvatóris. Fidélis, inquam, servus, et prudens, quem constítuit Dóminus suæ Matris solátium, suæ carnis nutrítium, solum dénique in terris magni consílii coadjutórem fidelíssimum. Huc accedit quod dicitur fuísse de domo David. Vere enim de domo David, vere de regia stirpe descenditur iste vir Joseph nobili genere, mente nobilior: plane filius David non degerans a patre suo David.
+@Sancti/03-19::s/.*Illi/Illi/s s/$/~/
+@Sancti/03-19:Lectio6:s/$/~/
+Huc accedit quod dicitur fuísse de domo David. Vere enim de domo David, vere de regia stirpe descenditur iste vir Joseph nobili genere, mente nobilior: plane filius David non degerans a patre suo David.
 
 [Lectio6]
 Prorsus, inquam, filius David non tantum carne, sed fide, sed sanctitate,~
@@ -29,11 +31,10 @@ audire & non audierunt; non solum videre et audire, sed étiam portare,~
 deducere, amplecti, deosculari, & nutrire & custodire.
 
 [Lectio7]
-@Sancti/12-24:Lectio1
+@Sancti/12-24o:Lectio1
 
 [Lectio8]
-@Sancti/12-24:Lectio2
+@Sancti/12-24o:Lectio2
 
 [Lectio9]
-@Sancti/12-24:Lectio3
-
+@Sancti/12-24o:Lectio3

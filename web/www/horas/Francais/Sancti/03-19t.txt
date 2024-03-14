@@ -1,21 +1,8 @@
-[Rank]
-S. Joseph Sponsi B.M.V. Confessoris;;Duplex;;3;;ex C5
-
-[Rule]
-ex C5;
-Psalmi Dominica
-Antiphonas horas
-9 lectiones;
-Psalm5 Vespera=116
-
 [Lectio4]
-Sermon de saint Bernard, Abbé de Clairvaux.
-!Homélie 2, sur "Il fut envoyé", vers la fin
-Quel homme fut le bienheureux Joseph, vous pouvez vous en faire idée d’après le titre dont il a mérité d’être honoré, le Seigneur ayant voulu qu’on l’appelât et qu’on le crût père du Fils de Dieu, titre qui n’est vrai cependant, qu’au sens de nourricier. Jugez-en aussi d’après son propre nom qu’on interprète, vous le savez, par accroissement. Rappelez-vous, en même temps, le grand Patriarche qui fut autrefois vendu en Égypte ; et sachez que non seulement celui-ci a été l’héritier de son nom, mais qu’il eut encore sa chasteté, son innocence et sa grâce.
+@Sancti/03-19::s/$/~/
+@Sancti/03-19:Lectio5:s/ A .*//
 
 [Lectio5]
-Si ce Joseph, vendu par l’envie de ses frères et conduit en Égypte, préfigura le Christ qui devait être vendu, lu : aussi, saint Joseph fuyant la haine d’Hérode porta le Christ en Égypte. Le premier, pour demeurer fidèle à son maître, refusa de consentir à la passion de la maîtresse (de maison ; le second, reconnaissant une Maîtresse (sainte) dans la vierge devenue mère de son Maître (divin) vécut aussi dans la continence et se montra son fidèle gardien. A l’un fut donnée l’intelligence des songes mystérieux ; à l’autre, il a été accordé d’être le confident des mystères célestes, et d’y coopérer pour sa part.
-
-
-[Lectio6]
-L’un a mis du blé en réserve, non pour lui, mais pour tout un peuple ; l’autre a reçu la garde du pain du ciel, tant pour lui que pour le monde entier. On ne peut douter que ce Joseph à qui fut fiancée la mère du Sauveur, n’ait été un homme bon et fidèle. C’est, dis-je, le serviteur fidèle et prudent que le Seigneur a établi (sur sa famille), pour être ! le consolateur de sa mère, le nourricier de son enfance, enfin le seul et très digne coopérateur, ici-bas, de l’accomplissement de son grand dessein.
+@Sancti/03-19::s/.*A /A / s/$/~/
+@Sancti/03-19:Lectio6:s/$/~/
+Huc accedit quod dicitur fuísse de domo David. Vere enim de domo David, vere de regia stirpe descenditur iste vir Joseph nobili genere, mente nobilior: plane filius David non degerans a patre suo David.
