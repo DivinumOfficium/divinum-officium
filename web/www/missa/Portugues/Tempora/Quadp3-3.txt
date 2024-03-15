@@ -1,5 +1,5 @@
 [Rank]
-Feria IV Cinerum;;Feria Privilegiata;;6
+Feria IV Cinerum;;Feria Privilegiata;;6.9
 
 [Rank] (rubrica 196)
 Feria IV Cinerum;;Feria privilegiata;;7
@@ -12,13 +12,8 @@ Super populum
 Prelude
 (rubrica 1960) omit incipit
 
-[Comment]
-# Quarta-feira de Cinzas
-! 1 classe
-! Paramentos roxos
-
 [Prelude]
-!!Bênção das Cinzas
+#Benedictio cinerum
 !Antífona
 !Sl 68:17
 v. Ouvi-nos, Senhor, pois a vossa misericórdia é compassiva. Lançai para nós os vossos olhares, Senhor, segundo a grandeza da vossa misericórdia.
@@ -28,18 +23,22 @@ Salvai-me, ó Deus, porque as águas penetraram até ao íntimo da minha alma.
 v. Ouvi-nos, Senhor, pois a vossa misericórdia é compassiva. Lançai para nós os vossos olhares, Senhor, segundo a grandeza da vossa misericórdia.
 _
 _
+!Deinde Sacerdos in cornu Epistolæ, non vertens se ad populum, manibus junctis (quod servatur etiam in orationibus omnium benedictionum quoad manus junctas) dicit:
 P. O Senhor seja convosco.
 R. E com o vosso espírito.
 v. Oremos. 
 Deus, omnipotente e eterno, perdoai aos penitentes, sede propício para com os suplicantes e dignai-Vos enviar do céu o vosso Anjo para abençoar ++ e santificar ++ estas Cinzas, a fim de que sejam remédio salutar para todos os que imploram humildemente o vosso santo nome, e, reconhecendo os seus delitos, a si mesmos se acusam, deplorando esses crimes, diante da vossa divina clemência, e suplicando instante e humildemente a vossa compassiva misericórdia. Dignai-Vos permitir que pela invocação do vosso santíssimo nome todos os que com estas Cinzas forem aspergidos alcancem, além da remissão dos pecados, saúde para o corpo e protecção para a alma. Por Cristo, nosso Senhor.
+R. Amen.
 _
 _
 v. Oremos. 
 Ó Deus, que não quereis a morte dos pecadores, mas que façam penitência, olhai benigníssimo para a fragilidade da natureza humana, e dignai-Vos misericordiosamente abençoar ++ estas Cinzas, que desejamos sejam impostas nas nossas cabeças em sinal de humildade e para merecermos o perdão, a fim de que, reconhecendo que não somos senão cinza e que nos tornaremos em pó em punição da nossa malícia, mereçamos da vossa bondade alcançar o perdão dos nossos pecados e as recompensas prometidas aos que fazem penitência. Por Cristo, nosso Senhor.
+R. Amen.
 _
 _
 v. Oremos. 
 Ó Deus, que pela humilhação Vos inclinais a perdoar e pela satisfação Vos aplacais, dignai-Vos benignamente escutar as nossas preces, infundindo nos vossos servos, cujas cabeças recebem estas Cinzas, a graça da vossa bênção; e, enchendo-os com o espírito de compunção, concedei-lhes o que com justiça Vos suplicarem, a fim de que perpetuamente conservem, firme e intacto, o que de Vós houverem alcançado. Por Cristo, nosso Senhor.
+R. Amen.
 _
 _
 v. Oremos. 
@@ -68,15 +67,16 @@ Reparemos o mal que praticámos por ignorância, para que não aconteça que, su
 Auxiliai-nos, ó Deus, nosso Salvador, e, pela honra do vosso nomes, salvai-nos, Senhor. Ouvi-nos, Senhor, e tende misericórdia de nós, pois pecámos contra Vós.
 V. Glória ao Pai, e ao Filho e ao Espírito Santo. Ouvi-nos, Senhor, e tende misericórdia de nós, pois pecámos contra Vós.
 !Sacerdos vero, dum cantantur Antiphonæ et Responsorium, detecto capite, primo imponit cineres digniori Sacerdoti, a quo ipse accepit, deinde Ministris paratis, genibus flexis coram Altari, dicens:
-!Imposition of the Ashes.
 !Gen. 3:19 
 Lembra-te, homem, que és pó e que em pó te hás-de tornar.
 _
 _
+!Postea veniunt alii, primo Clerus per ordinem, deinde populus: et genibus flexis ante Altare, singulatim recipiunt cinerem a Sacerdote, ut dictum est de Ministris. Completa cinerum impositione, Sacerdos dicit:
 P. O Senhor seja convosco.
 R. E com o vosso espírito.
 v. Oremos. 
 Permiti, Senhor, que iniciemos com estes salutares jejuns esta estação da milícia cristã, a fim de que, havendo nós de combater contra os espíritos do mal, estejamos munidos contra os seus esforços com os auxílios da abstinência. Por Cristo, nosso Senhor.
+R. Amen.
 
 [Introitus]
 !Sb 11:24-25, 27.
@@ -99,11 +99,11 @@ Eis o que diz o Senhor: Convertei-vos a mim, de todo o coração, com jejuns, l�
 !Sl 56:2, 4.
 Tende misericórdia de mim, ó Deus; tende misericórdia de mim; pois a minha alma confia em Vós.
 V. Mandou auxílio do céu, livrando-me, e condenou ao opróbrio aqueles que me espezinhavam.
-
-[Tractus1]
+_
+!Tractus
 !Sl 102:10
 Senhor, nos não castigueis, consoante merecemos, pelos pecados que praticámos: nem nos julgueis, segundo as nossas iniquidades.
-Sl 78:8-9
+!Sl 78:8-9
 Esquecei-Vos, Senhor, das nossas iniquidades passa- das, apressai-Vos em revestir-nos com vossas misericórdias, pois grande é a nossa miséria. (genuflectir)
 V. Auxiliai-nos, ó Deus, nosso Salvador, e, pela glória do vosso nome, livrai-nos, Senhor, e perdoai os nossos pecados por causa do vosso nome.
 
@@ -129,8 +129,11 @@ Senhor, permiti que os sacramentos, que recebemos, nos propiciem o auxílio de q
 $Per Dominum
 
 [Super populum]
+!Deinde Sacerdos absolute dicit:
 !Sobre o Povo
 v. Oremos.
+!Et Diaconus, si in officio Diaconatus serviat versus ad populum, junctis manibus, dicit. Alioquin ipse Sacerdos, stans in eodem loco ante librum, et non vertens se ad populum.
 v. Inclinai as vossas cabeças diante de Deus.
+_
 v. Atendei, Senhor, benignamente aos que se prostam ante a vossa Majestade, afim de que, saciados com o dom divino, sejam sempre nutridos com celestes auxílios.
 $Per Dominum
