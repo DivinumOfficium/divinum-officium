@@ -12,6 +12,28 @@ v. Ave, o Maria, piena di grazia, il Signore è con te. Tu sei benedetta tra le 
 [Credo]
 v. Io Credo in Dio, Padre onnipotente, creatore del cielo e della terra; e in Gesù Cristo, suo unico Figlio, nostro Signore, il quale fu concepito di Spirito Santo, nacque da Maria Vergine, patì sotto Ponzio Pilato, fu crocifisso, morì e fu sepolto; discese agli inferi; il terzo giorno risuscitò da morte; salì al cielo, siede alla destra di Dio Padre onnipotente; di là verrà a giudicare i vivi e i morti. Credo nello Spirito Santo, la santa Chiesa cattolica, la comunione dei santi, la remissione dei peccati, la risurrezione della carne, la vita eterna. Amen.
 
+[Pater secreto]
+!« Padre nostro » si prega in silenzio fino a « E non ci indurre in tentazione: »
+&pater_noster
+
+[Credo secreto]
+!« Io Credo » si prega in silenzio fino a « La risurrezione della carne. »
+v. Io Credo in Dio, Padre onnipotente, creatore del cielo e della terra; e in Gesù Cristo, suo unico Figlio, nostro Signore, il quale fu concepito di Spirito Santo, nacque da Maria Vergine, patì sotto Ponzio Pilato, fu crocifisso, morì e fu sepolto; discese agli inferi; il terzo giorno risuscitò da morte; salì al cielo, siede alla destra di Dio Padre onnipotente; di là verrà a giudicare i vivi e i morti. Credo nello Spirito Santo, la santa Chiesa cattolica, la comunione dei santi, la remissione dei peccati. 
+V. La risurrezione della carne. 
+R. La vita eterna. Amen.
+
+[Adjutorium nostrum]
+V. Il nostro aiuto + è nel nome del Signore.
+R. Che ha fatto il cielo e la terra.
+
+[Converte nos]
+V. Convertici, +++ o Dio, nostro salvatore.
+R. E allontana da noi la tua ira.
+
+[Dominus det]
+V. Il Signore ci doni la sua pace.
+R. E la vita eterna. Amen.
+
 [Gloria]
 V. Gloria al Padre, e al Figlio, * e allo Spirito Santo.
 R. Come era nel principio e ora e sempre *  nei secoli dei secoli. Amen.
@@ -195,8 +217,8 @@ E con i nostri fratelli assenti. Amen.
 Alleluia, alleluia.
 
 [Preces feriales Laudes]
-v. Signore, pietà di noi. Cristo, pietà di noi. Signore, pietà di noi.
-&pater_noster
+$Kyrie
+$Pater secreto
 V. Io dissi: Signore abbi pietà di me. 
 R. Sana l'anima mia, perché ho peccato contro di te.
 V. Volgiti a noi, o Signore, e fino a quando [sarai sdegnato]? 
@@ -252,8 +274,8 @@ V. Signore, esaudisci la mia preghiera.
 R. Ed il mio grido giunga a te.
 
 [Preces feriales Tertia]
-v. Signore, pietà di noi. Cristo, pietà di noi. Signore, pietà di noi.
-&pater_noster
+$Kyrie
+$Pater secreto
 V. Signore, Dio degli eserciti, convertici.
 R. E mostraci la tua faccia e saremo salvi.
 V. Sorgi, Cristo, aiutaci. 
