@@ -1,5 +1,5 @@
 [Pater noster]
-v. Padre nostro che sei nei cieli, sia santificato il tuo nome; venga il tuo regno, sia fatta la tua volontà, come in cielo così in terra. Dacci oggi il nostro pane quotidiano, rimetti a noi i nostri debiti, come noi li rimettiamo ai nostri debitori e non ci indurre in tentazione, ma liberaci dal male. Amen.  
+v. Padre nostro che sei nei cieli, sia santificato il tuo nome; venga il tuo regno, sia fatta la tua volontà, come in cielo così in terra. Dacci oggi il nostro pane quotidiano, rimetti a noi i nostri debiti, come noi li rimettiamo ai nostri debitori e non ci indurre in tentazione, ma liberaci dal male. Amen.
 
 [Pater_noster1]
 v. Padre nostro che sei nei cieli, sia santificato il tuo nome; venga il tuo regno, sia fatta la tua volontà, come in cielo così in terra. Dacci oggi il nostro pane quotidiano, rimetti a noi i nostri debiti, come noi li rimettiamo ai nostri debitori:
@@ -13,13 +13,13 @@ v. Ave, o Maria, piena di grazia, il Signore è con te. Tu sei benedetta tra le 
 v. Io Credo in Dio, Padre onnipotente, creatore del cielo e della terra; e in Gesù Cristo, suo unico Figlio, nostro Signore, il quale fu concepito di Spirito Santo, nacque da Maria Vergine, patì sotto Ponzio Pilato, fu crocifisso, morì e fu sepolto; discese agli inferi; il terzo giorno risuscitò da morte; salì al cielo, siede alla destra di Dio Padre onnipotente; di là verrà a giudicare i vivi e i morti. Credo nello Spirito Santo, la santa Chiesa cattolica, la comunione dei santi, la remissione dei peccati, la risurrezione della carne, la vita eterna. Amen.
 
 [Pater secreto]
-!« Padre nostro » si prega in silenzio fino a « E non ci indurre in tentazione: »
+!Si dice il «Padre nostro» sottovoce fino a «E non ci indurre in tentazione».
 &pater_noster
 
 [Credo secreto]
-!« Io Credo » si prega in silenzio fino a « La risurrezione della carne. »
-v. Io Credo in Dio, Padre onnipotente, creatore del cielo e della terra; e in Gesù Cristo, suo unico Figlio, nostro Signore, il quale fu concepito di Spirito Santo, nacque da Maria Vergine, patì sotto Ponzio Pilato, fu crocifisso, morì e fu sepolto; discese agli inferi; il terzo giorno risuscitò da morte; salì al cielo, siede alla destra di Dio Padre onnipotente; di là verrà a giudicare i vivi e i morti. Credo nello Spirito Santo, la santa Chiesa cattolica, la comunione dei santi, la remissione dei peccati. 
-V. La risurrezione della carne. 
+!Si dice il «Credo» sottovoce fino a «E non La risurrezione della carne».
+v. Io Credo in Dio, Padre onnipotente, creatore del cielo e della terra; e in Gesù Cristo, suo unico Figlio, nostro Signore, il quale fu concepito di Spirito Santo, nacque da Maria Vergine, patì sotto Ponzio Pilato, fu crocifisso, morì e fu sepolto; discese agli inferi; il terzo giorno risuscitò da morte; salì al cielo, siede alla destra di Dio Padre onnipotente; di là verrà a giudicare i vivi e i morti. Credo nello Spirito Santo, la santa Chiesa cattolica, la comunione dei santi, la remissione dei peccati.
+V. La risurrezione della carne.
 R. La vita eterna. Amen.
 
 [Adjutorium nostrum]
@@ -31,7 +31,7 @@ V. Convertici, +++ o Dio, nostro salvatore.
 R. E allontana da noi la tua ira.
 
 [Dominus det]
-V. Il Signore ci doni la sua pace.
+V. Il Signore ci dia la sua pace.
 R. E la vita eterna. Amen.
 
 [Gloria]
@@ -42,8 +42,8 @@ R. Come era nel principio e ora e sempre *  nei secoli dei secoli. Amen.
 V. Gloria al Padre, e al Figlio, * e allo Spirito Santo.
 
 [Requiem]
-V. L'eterno riposo * dona loro, o Signore. 
-R. E splenda ad essi * la luce perpetua. 
+V. L'eterno riposo * dona loro, o Signore.
+R. E splenda ad essi * la luce perpetua.
 
 [Alleluia]
 v. Alleluia.
@@ -53,11 +53,14 @@ v. Lode a te o Signore, Re di eterna gloria.
 V. Il Signore sia con voi.
 R. E con il tuo spirito.
 V. O Signore, esaudisci la mia preghiera.
-R. E il mio grido giunga fino a Te. 
+R. E il mio grido giunga fino a Te.
 /:Si omette il secondo 'O Signore, esaudisci la mia preghiera':/
 
 [Confiteor]
-v. Confesso a Dio onnipotente, alla beata sempre Vergine Maria, al beato Michele Arcangelo, al beato Giovanni Battista, ai Santi Apostoli Pietro e Paolo e a tutti i Santi, di aver molto peccato, in pensieri, parole ed opere: /:ci si batte il petto per tre volte:/ per mia colpa, per mia colpa, per mia grandissima colpa. E perciò supplico la beata sempre Vergine Maria, il beato Michele Arcangelo, il beato Giovanni Battista, i Santi Apostoli Pietro e Paolo e tutti i Santi, di pregare per me il Signore Dio nostro. 
+v. Confesso a Dio onnipotente, alla beata sempre Vergine Maria, al beato Michele Arcangelo, al beato Giovanni Battista, ai Santi Apostoli Pietro e Paolo e a tutti i Santi, di aver molto peccato, in pensieri, parole ed opere: /:ci si batte il petto per tre volte:/ per mia colpa, per mia colpa, per mia grandissima colpa. E perciò supplico la beata sempre Vergine Maria, il beato Michele Arcangelo, il beato Giovanni Battista, i Santi Apostoli Pietro e Paolo e tutti i Santi, di pregare per me il Signore Dio nostro.
+
+[ConfiteorM]
+@:Confiteor:s/Paolo e a/Paolo, al nostro beato Padre Benedetto e a/ s/Paolo e tutti/Paolo, il nostro beato Padre Benedetto e tutti/
 
 [Misereatur]
 v. Abbia misericordia di noi l'onnipotente Iddio, e, rimessi i nostri peccati, ci conduca alla vita eterna. Amen.
@@ -70,7 +73,7 @@ V. Signore, ++ tu aprirai le mie labbra.
 R. E la mia bocca annunzierà le tue lode.
 
 [Deus in adjutorium]
-V. Provvedi, + o Dio, al mio soccorso. 
+V. Provvedi, + o Dio, al mio soccorso.
 R. Signore, affrettati ad aiutarmi.
 v. Gloria al Padre, e al Figlio, * e allo Spirito Santo.
 Come era nel principio e ora e sempre *  nei secoli dei secoli. Amen.
@@ -132,7 +135,7 @@ Te, eterno Padre, * venera tutta la terra.
 A te gli Angeli tutti, * a te i Cieli e tutte quante le Potestà:
 A te i Cherubini e i Serafini * con incessante voce acclamano:
 _
-/:(chiniamo il capo):/  Santo, Santo, Santo * è il Signore Dio degli eserciti. 
+/:(chiniamo il capo):/  Santo, Santo, Santo * è il Signore Dio degli eserciti.
 _
 I cieli e la terra sono pieni * della maestà della tua gloria.
 Te degli Apostoli * il glorioso coro,
@@ -169,16 +172,16 @@ Ho sperato in te, o Signore: * non sarò confuso in eterno.
 
 [Ante]
 /:ci inginocchiamo:/
-v. Apri, o Signore, la mia bocca, purifica il mio cuore da tutti i vani, perversi e profani pensieri: illumina l'intelletto, infiamma la volontà, perché degnamente, attentamente e devotamente io possa recitare quest'Uffizio e meriti di essere esaudito davanti il trono della tua Divina Maestà. Per Cristo Nostro Signore. 
-R. Amen. 
+v. Apri, o Signore, la mia bocca, purifica il mio cuore da tutti i vani, perversi e profani pensieri: illumina l'intelletto, infiamma la volontà, perché degnamente, attentamente e devotamente io possa recitare quest'Uffizio e meriti di essere esaudito davanti il trono della tua Divina Maestà. Per Cristo Nostro Signore.
+R. Amen.
 v. Signore, unendo la mia alla tua divina intenzione, con la quale Tu in terra lodasti il tuo divin Padre, così pure io con questa Ora [oppure: queste Ore] adempio questa lode.
 
 [Post]
 v. Alla Sacrosanta ed indivisibile Trinità all'Umanità di nostro Signore Gesù Cristo crocifisso, alla feconda integrità della beatissima e gloriosissima e sempre Vergine Maria, ed a tutti i Santi si dia sempiterna lode, onore, potenza, e gloria da tutte le creature, ed a noi sia concessa la remissione di tutti i peccati, per gl'infiniti secoli dei secoli.
-R. Amen. 
+R. Amen.
 _
 V. Beato il seno della Vergine Maria, che portò il Figlio dell'eterno Padre.
-R. E beato il petto che allattò Cristo Signore. 
+R. E beato il petto che allattò Cristo Signore.
 _
 r. Padre Nostro.
 r. Ave Maria
@@ -206,6 +209,11 @@ v. A Te si deve la lode, + a Te l'inno, a Te la gloria o Dio Padre e Figlio, ins
 [Kyrie]
 v. Signore, pietà. Cristo, pietà. Signore, pietà.
 
+[MLitany2]
+$Kyrie
+/:Si dice il «Padre nostro» sottovoce fino a «E non ci indurre in tentazione:».:/
+&pater_noster
+
 [Divinum auxilium]
 Il divin aiuto + sia sempre con noi.
 E con i nostri fratelli assenti. Amen.
@@ -219,9 +227,9 @@ Alleluia, alleluia.
 [Preces feriales Laudes]
 $Kyrie
 $Pater secreto
-V. Io dissi: Signore abbi pietà di me. 
+V. Io dissi: Signore abbi pietà di me.
 R. Sana l'anima mia, perché ho peccato contro di te.
-V. Volgiti a noi, o Signore, e fino a quando [sarai sdegnato]? 
+V. Volgiti a noi, o Signore, e fino a quando [sarai sdegnato]?
 R. Placati coi tuoi servi.
 V. Discenda sopra di noi, o Signore, la tua misericordia.
 R. Come noi abbiamo sperato in te.
@@ -229,21 +237,21 @@ V. I tuoi Sacerdoti si rivestano di giustizia.
 R. E i tuoi santi esultino.
 
 V. Preghiamo per il beatissimo nostro Papa~
-r. N. 
+r. N.
 R. Il Signore lo conservi, gli dia vigore, e lo renda felice sulla terra, e non lo abbandoni alla malvolenza dei suoi nemici.
 V. Preghiamo anche per il nostro Vescovo~
-r. N. 
+r. N.
 R. Stia saldo e coltivi [il suo gregge] colla tua fortezza, o Signore, nella sublimità del tuo nome.
 /:A Roma si omette il precedente Versetto col suo Responsorio; altrove invece alla lettera N. si esprima da tutti il nome del Vescovo della Diocesi. Durante la vacanza della Sede Apostolica od Episcopale, l'uno o l'altro o ambidue i rispettivi Versetti col proprio Responsorio si tralasciano.:/
 (sed rubrica tridentina omittitur)
 
 V. Signore, fa salvo il Re.
 R. Ed esaudiscici nel giorno in cui ti invocheremo.
-V. Salva il tuo popolo, Signore, e benedici la tua eredità. 
+V. Salva il tuo popolo, Signore, e benedici la tua eredità.
 R. E guidali e innalzali fino alla vita eterna.
-V. Ricordati del tuo Popolo. 
+V. Ricordati del tuo Popolo.
 R. Che hai posseduto fin da principio.
-V. Regni la pace nelle tue mura. 
+V. Regni la pace nelle tue mura.
 R. E l'abbondanza nelle tue torri.
 
 V. Preghiamo per i nostri benefattori.
@@ -252,25 +260,25 @@ R. Degnati, o Signore, di ricambiare con la vita eterna tutti coloro, che ci fan
 
 V. Preghiamo per i fedeli defunti.
 R. L'eterno riposo dona loro, o Signore, e splenda ad essi la luce perpetua.
-V. Riposino in pace. 
+V. Riposino in pace.
 R. Amen.
-V. Per i nostri fratelli assenti. 
+V. Per i nostri fratelli assenti.
 R. Salva, mio Dio, i tuoi servi, che sperano in te.
-V. Per gli afflitti e i prigionieri. 
+V. Per gli afflitti e i prigionieri.
 R. Liberali, o Dio d'Israele, da tutte le loro tribolazioni.
 V. Manda loro, Signore, soccorso dal tuo santuario.
 R. E da Sion difendili.
 
 (sed rubrica tridentina dicuntur)
 @:Dominus:3-4
-&psalm(129) 
+&psalm(129)
 
 (deinde dicuntur)
 V. Signore, Dio degli eserciti, convertici.
 R. E mostraci la tua faccia, e saremo salvi.
 V. Sorgi, o Cristo, aiutaci.
 R. E liberaci per il nome tuo.
-V. Signore, esaudisci la mia preghiera. 
+V. Signore, esaudisci la mia preghiera.
 R. Ed il mio grido giunga a te.
 
 [Preces feriales Tertia]
@@ -278,8 +286,15 @@ $Kyrie
 $Pater secreto
 V. Signore, Dio degli eserciti, convertici.
 R. E mostraci la tua faccia e saremo salvi.
-V. Sorgi, Cristo, aiutaci. 
+V. Sorgi, Cristo, aiutaci.
 R. E liberaci per il tuo nome.
-V. Signore, esaudisci la mia preghiera. 
+V. Signore, esaudisci la mia preghiera.
 R. E il mio grido giunga a te.
 
+[A porta inferi]
+V. Dalle porte degli inferi.
+R. Libera, Signore, le loro anime.
+V. Riposino in pace.
+R. Amen.
+@:Dominus:3-4
+&Dominus_vobiscum2
