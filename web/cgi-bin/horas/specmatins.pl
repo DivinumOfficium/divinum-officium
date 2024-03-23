@@ -1252,7 +1252,7 @@ sub ant_matutinum_paschal {
 
 	if ($dayofweek || ($dayname[0] =~ /Pasc6/ && $version =~ /196/)) {
 		if (!$proper || $winner =~ /\/C10/) {
-			@psalmi = map { s/.*?;/;/r } @psalmi;
+			@psalmi = map { s/.*?(?=;;)//r } @psalmi;
 			$psalmi[0] = Alleluia_ant($lang) . $psalmi[0];
 			if ($dayofweek && $rule =~ /9 lectio/i && ($version !~ /196/ || $rank > 3) && $rank >= 2) { #3 nocturns
 				$psalmi[5] = Alleluia_ant($lang) . $psalmi[5];
