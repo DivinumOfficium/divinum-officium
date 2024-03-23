@@ -1,17 +1,14 @@
 [Rank]
-Sabbato infra Hebdomadam Passionis;;Feria major;;2
+Sabbato infra Hebdomadam Passionis;;Feria major;;2.1
+
+[Rank](rubrica 1960)
+Sabbato infra Hebdomadam Passionis;;Feria major;;4.9
 
 [Rule]
 no Gloria
-Suffragium=Ecclesiae,Papa;;
+Suffragium=Ecclesiæ,Papa;;
 Prefatio=Quad5
 Super popul
-
-[Comment]
-# Sábado da Semana da Paixão
-! Estação em S. João em frente à Porta Latina
-! 3 classe
-! Paramentos roxos
 
 [Introitus]
 @Tempora/Quad5-5Feria:Introitus
