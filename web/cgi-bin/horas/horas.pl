@@ -311,8 +311,8 @@ sub Alleluia_ant {
 #*** Septuagesima_vesp
 # Determines whether we're saying first Vespers of Septuagesima Sunday.
 sub Septuagesima_vesp {
-  our ($dayofweek, @dayname, $hora);
-  return ($dayofweek == 6 && $dayname[0] =~ /Quadp1/ && $hora =~ /Vespera/i);
+  our ($dayofweek, @dayname, $hora, $vespera, $cwinner);
+  return ($dayofweek == 6 && $hora =~ /Vespera/i && (($vespera == 1 && $dayname[0] =~ /Quadp1/) || ($vespera == 3 && $cwinner =~ /Quadp1\-0/)));
 }
 
 #*** triduum_gloria_omitted
