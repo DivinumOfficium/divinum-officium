@@ -1,0 +1,211 @@
+[Name]
+Commune Doctore
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+Psalm5 Vespera=116
+Psalm5 Vespera3=131
+
+[Ant Vespera]
+@Commune/C4
+
+[Capitulum Vespera]
+@Commune/C4
+
+[Hymnus1 Vespera]
+@Commune/C4:Hymnus1 Vespera
+
+[Hymnus Vespera]
+@Commune/C4:Hymnus Vespera
+
+[HymnusM Vespera]
+@Commune/C4:HymnusM Vespera
+
+[Hymnus1M Vespera]
+@Commune/C4:Hymnus1M Vespera
+
+[Versum 1]
+@Commune/C4
+
+[Ant 1]
+{name:O Doctor optime;annotation:2.D;mode:2;book:The Liber Usualis, 1961, p. 1188 & Liber antiphonarius, 1960, p. [66] & Liber antiphonarius, 1960, p. 577.17;transcriber:Andrew Hinkley;%%(f3) O(ehhg) Do(h)ctor(f) ó(gf)pti(ef)me,(f'_) *(,) Ec(f)clé(fg)si(f)ae(f) san(g_[uh:l]h)ctae(fg) lu(ff)men,(e.) (;) be(f)á(cf)te(f) N. (;) di(j)ví(j')nae(i) le(h)gis(hg) a(f!gwh)má(h)tor :(e.) (:) de(eh)pre(g')cá(h)re(g') pro(f) no(g)bis(f.) (,) Fí(e_[uh:l]f)li(h_g)um(e) De(gg)i.(f.) (::)}
+(sed rubrica monastica)
+{name:O Doctor optime;annotation:2.D;mode:2;book:Antiphonale Monasticum, 1934, p. 665;transcriber:Matthias Bry;%%(f3)O(ehhg) Do(hg)ctor(f) óp(gf)ti(ef)me,(f'_) <v>\greheightstar</v>(,) Ec(f)clé(fg)si(f)æ(f) san(g_h)ctæ(fg) lu(f)men,(e.) (;) be(f)á(ef)te(f) N. (,) di(j)ví(j)næ(i') le(h)gis(hg) a(f!gwh)má(h)tor :(e.) (;) de(eh)pre(g)cá(h')re(g) pro(f') no(g)bis(f.) (,) Fí(e_f)li(h_g)um(e) De(gh)i.(f.)  (::)}
+
+[Invit]
+@Commune/C4
+
+[Hymnus Matutinum]
+@Commune/C4:Hymnus Vespera
+
+[Hymnus1 Matutinum]
+@Commune/C4:Hymnus1 Vespera
+
+[HymnusM Matutinum]
+@Commune/C4:HymnusM Vespera
+
+[Hymnus1M Matutinum]
+@Commune/C4:Hymnus1M Vespera
+
+[Ant Matutinum]
+@Commune/C4
+
+[Lectio1]
+De libro Ecclesiástici
+!Sir 39:1-5
+1 Sapiéntiam ómnium antiquórum exquíret sápiens, et in prophétis vacábit. 
+2 Narratiónem virórum nominatórum conservábit, et in versútias parabolárum simul introíbit. 
+3 Occúlta proverbiórum exquíret, et in abscónditis parabolárum conversábitur. 
+4 In médio magnatórum ministrábit, et in conspéctu prǽsidis apparébit. 
+5 In terram alienigenárum géntium pertránsiet; bona enim et mala in homínibus tentábit.
+
+[Responsory1]
+@Commune/C4
+
+[Lectio2]
+!Sir 39:6-10
+6 Cor suum tradet ad vigilándum dilúculo ad Dóminum, qui fecit illum, et in conspéctu Altíssimi deprecábitur. 
+7 Apériet os suum in oratióne, et pro delíctis suis deprecábitur. 
+8 Si enim Dóminus magnus volúerit, spíritu intellegéntiæ replébit illum:
+9 et ipse tamquam imbres mittet elóquia sapiéntiæ suæ, et in oratióne confitébitur Dómino: 
+10 et ipse díriget consílium ejus, et disciplínam, et in abscónditis suis consiliábitur.
+
+[Responsory2]
+@Commune/C4
+
+[Lectio3]
+!Sir 39:11-14
+11 Ipse palam fáciet disciplínam doctrínæ suæ, et in lege testaménti Dómini gloriábitur.
+12 Collaudábunt multi sapiéntiam ejus, et usque in sǽculum non delébitur. 
+13 Non recédet memória ejus, et nomen ejus requirétur a generatióne in generatiónem.  
+14 Sapiéntiam ejus enarrábunt gentes, et laudem ejus enuntiábit Ecclésia.
+
+[Responsory3]
+@Commune/C4
+
+[Lectio4]
+@Commune/C4
+
+[Responsory4]
+@Commune/C4
+
+[Lectio5]
+@Commune/C4
+
+[Responsory5]
+@Commune/C4
+
+[Lectio6]
+@Commune/C4
+
+[Responsory6]
+@Commune/C4
+
+[Lectio7]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 5:13-19
+In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Et réliqua.
+_
+Homilía sancti Hilárii Epíscopi
+!Comm. in Matthæum, cap. 4, n. 10
+Vos estis sal terræ: Quod si sal infatuátum fúerit, ad níhilum valet id quod saliétur. Sal, ut árbitror, terræ nullum est. Quómodo ergo Apóstolos sal terræ nuncupávit? Sed propríetas est quærénda dictórum, quam et Apostolórum offícium, et ipsíus salis natúra monstrábit. Sal est in se uno cóntinens aquæ et ignis eleméntum, et hoc ex duóbus est unum.
+
+[Responsory7]
+@Commune/C4
+
+[Lectio8]
+Hic ígitur in omnem usum humáni géneris efféctus, incorruptiónem corpóribus, quibus fúerit aspérsus, impértit, et ad omnem sensum cónditi sapóris aptíssimus est. Apóstoli autem sunt rerum cæléstium prædicatóres, et æternitátis velut satóres, immortalitátem ómnibus corpóribus, quibus eórum sermo aspérsus fúerit, conferéntes. Mérito ígitur sal terræ nuncupáti sunt, per doctrínæ virtútem saliéndi modo æternitáti córpora reservántes.
+
+[Responsory8]
+R. In médio Ecclésiæ apéruit os ejus, 
+* Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
+V. Jucunditátem et exsultatiónem thesaurizávit super eum.
+R. Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
+&Gloria
+R. Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
+
+[Lectio9]
+Sed natúra salis semper éadem est, nec immutári umquam potest. Verum quia conversióni homo súbjacet, et solus beátus, qui usque ad finem in ómnibus Dei opéribus permánserit: ídeo eos sal terræ nuncupátos monet in tráditæ sibi potestátis virtúte persístere, ne infatuáti nihil sáliant, et ipsi, sensu accépti sapóris amísso, vivificáre corrúpta non possint, et projécti de Ecclésiæ promptuáriis, cum his quos salíerint, pédibus incedéntium proterántur.
+&teDeum
+
+[Ant Laudes]
+@:Ant Vespera
+
+[Capitulum Laudes]
+@:Capitulum Vespera
+
+[Hymnus1M Matutinum]
+@Commune/C4:Hymnus1M Vespera
+
+[HymnusM Matutinum]
+@Commune/C4:HymnusM Vespera
+
+[Hymnus Laudes]
+@Commune/C4:Hymnus Laudes
+
+[HymnusM Laudes]
+@Commune/C4:HymnusM Laudes
+
+[Versum 2]
+@Commune/C4
+
+[Ant 2]
+@Commune/C4
+
+[Oratio]
+Concéde nos, quǽsumus, omnípotens Deus, beáti N. confessóris tui atque Pontíficis mónita et exémpla sectári: ut per terréstrium rerum contémptum ætérna gáudia consequámur.
+$Per Dominum
+
+[Oratio1]
+@Commune/C4
+
+[Oratio2]
+@Commune/C4
+
+[Oratio3]
+Da, quǽsumus, omnípotens Deus: ut beáti N. Confessóris tui atque Pontíficis veneránda solémnitas, et devotiónem nobis áugeat, et salútem.
+$Per Dominum.
+
+[Lectio Prima]
+@Commune/C4
+
+[Capitulum Tertia]
+@:Capitulum Vespera
+
+[Responsory Tertia]
+@Commune/C4
+
+[Capitulum Sexta]
+@Commune/C4
+
+[Responsory Sexta]
+@Commune/C4
+
+[Capitulum Nona]
+@Commune/C4
+
+[Responsory Nona]
+@Commune/C4
+
+[Versum 3]
+@:Versum 2
+
+[Ant 3]
+@:Ant 1
+
+[Lectio7 in 3 loco]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 5:13-19
+In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Et réliqua.
+_
+Homilía sancti Joánnis Chrysóstomi
+!Homilia 15 in Matthæum, sub medium
+Atténdite quid díxerit, Vos estis sal terræ: per quod osténdit quam necessário ista præcípiat. Non enim de vestra, inquit, tantúmmodo vita, sed de univérso orbe vobis ratio reddénda est. Non ad duas quippe urbes, aut decem, aut vigínti, neque ad unam gentem vos mitto, sicut mittébam prophétas: sed ad omnem terram prorsus ac mare, totúmque mundum, et hunc váriis crimínibus oppréssum.
+
+[Lectio8 in 3 loco]
+Dicéndo enim, Vos estis sal terræ, osténdit univérsam hóminum infatuátam esse natúram, et peccatórum vi corrúptam: et idcírco illas ab eis virtútes requírit, quæ máxime ad multórum salútem procurándam necessáriæ sunt atque útiles. Nam qui mansuétus est ac modéstus, et miséricors et justus, non intra se tantúmmodo hæc recte facta conclúdit, verum in aliórum quoque utilitátem præcláros hos fáciet efflúere fontes. Igitur qui corde mundo est atque pacíficus, et persecutiónem pro veritáte pátitur, nihilóminus in commúne cómmodum vitam instítuit.
+
+[Lectio9 in 3 loco]
+Ne ígitur putétis, inquit, ad lévia vos ducéndos esse certámina, neque exiguárum rerum vobis ineúndam esse ratiónem. Vos estis sal terræ. Quid ígitur? Ipsine putrefácta medicáti sunt? Nequáquam: neque enim fíeri potest, ut ea quæ jam corrúpta sunt, salis perfricatióne reparéntur. Non ergo hoc fecérunt, sed ante renováta, sibíque trádita, atque ab illa jam putrédine liberáta, aspergébant sale, et in ea novitáte conservábant, quam a Dómino suscéperant. Liberáre quippe a putrédine peccatórum, Christi virtútis est: ut autem ad illa íterum non revertántur, Apostolórum curæ est ac labóris.
+&teDeum
