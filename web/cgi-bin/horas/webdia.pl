@@ -1,6 +1,5 @@
 #!/usr/bin/perl
 use utf8;
-use LWP::Simple;
 
 # Name : Laszlo Kiss
 # Date : 01-11-04
