@@ -151,7 +151,7 @@ sub nocturn {
 	pop(@s);
 	push(@s, "Ant. $lastant", "\n");
 
-	# versus cant be text or reference (number)
+	# versus can't be text or reference (number)
 	my (@vs) = ($select[-1] =~ /^\d+$/ ? (@{$psalmi}[$select[-2]], @{$psalmi}[$select[-1]]) : ($select[-2], $select[-1]));
 	process_inline_alleluias($vs[0]);
 	process_inline_alleluias($vs[1]);
@@ -219,8 +219,8 @@ sub psalmi_matutinum {
 		}
 		setbuild2("Subst Matutitunun Versus $name $dayofweek");
 	}
-	my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
 	
+	my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
 	if ($w) {
 		@psalmi = split("\n", $w);
 		$comment = $c;
@@ -246,6 +246,22 @@ sub psalmi_matutinum {
 		}
 	}
 	
+	if ($lang =~/gabc/i) {
+		foreach my $psalmline (@psalmi) {
+			my @a = split(';;', $psalmline); # retrieve psalmtone behind second ;;
+			if (@a > 2) {
+				my $ant0 = chompd($a[0]);
+				my @psalm0 = split(';', chompd($a[1]));
+				my $psalmTone = chompd($a[2]);
+				foreach my $ps0 (@psalm0) {
+					$ps0 = "'$ps0,$psalmTone'"; # combine psalm tone with all psalms
+				}
+				my $psalm0 = join(';', @psalm0);
+				$psalmline = "$ant0;;$psalm0"; # recombine antiphone line
+			}
+		}
+	}
+	
 	if ( $version =~ /Trident/i
 		&& $testmode =~ /seasonal/i
 		&& $winner =~ /Sancti/i
@@ -267,16 +283,14 @@ sub psalmi_matutinum {
 	if ($rule =~ /9 lectio/i && !$ltype1960 && $rank >= 2 && !($version =~ /trident/i && $winner{Rank} =~ /Dominica/i && $dayofweek>0)) {
 		setbuild2("9 lectiones");
 		
-		if ($dayname[0] =~ /Pasc/i && !exists($winner{'Ant Matutinum'}) && $rank < 5) {    #??? ex
+		if ($dayname[0] =~ /Pasc/i && !exists($winner{'Ant Matutinum'}) && $rank < 5) {    # Paschal tide
 			my $dname = ($winner{Rank} =~ /Dominica/i) ? 'Dominica' : 'Feria';
 			@spec = split("\n", $spec{"Pasc Ant $dname"});
-			foreach my $i (3, 4, 8, 9, 13, 14) { $psalmi[$i] = $spec[$i]; }
-		} elsif ($winner =~ /tempora/i
-		&& $dayname[0] =~ /(Adv|Quad|Pasc)/i
-		&& !exists($winner{'Ant Matutinum'}))
+			foreach my $i (3, 4, 8, 9, 13, 14) { $psalmi[$i] = $spec[$i]; }		# replace Versicles at Nocturns
+		} elsif ($winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)/i && !exists($winner{'Ant Matutinum'})) # Advent, Quad, and Paschaltide
 		{
-			$tmp = $1;
-			if ($dayname[0] =~ /(Quad5|Quad6)/) { $tmp = 'Quad5'; }
+			$tmp = $1;		# Adv or Quad or Pasc
+			if ($dayname[0] =~ /(Quad5|Quad6)/) { $tmp = 'Quad5'; }	# change for Passiontide
 			@spec = split("\n", $spec{"$tmp 1 Versum"});
 			if (@spec) { $psalmi[3] = $spec[0]; $psalmi[4] = $spec[1]; }
 			@spec = split("\n", $spec{"$tmp 2 Versum"});
@@ -456,7 +470,7 @@ sub lectiones {
 	if ($rule !~ /Limit.*?Benedictio/i) {
 		push(@s, "\&pater_noster");
 	} else {
-		push(@s, "\$Pater noster");
+		push(@s, "\$Pater totum secreto");
 	}
 	my %benedictio = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
 	my $i = $num;
@@ -508,8 +522,8 @@ sub lectiones {
 	#absolutiones
 	if ($rule !~ /Limit.*?Benedictio/i) {
 		push(@s, "Absolutio. $a[0]");
-		push(@s, "\n");
 	}
+	push(@s, "\n");
 	
 	# if 1960 or monastic of ferial type diverge to sub routine
 	my $ltype1960 = gettype1960();
@@ -1219,21 +1233,18 @@ sub responsory_gloria {
 	my $flag = 0;
 	
 	my $read_per_noct = ($rule =~ /12 lectio/) ? 4 : 3;
-	if (
-		($num % $read_per_noct == 0)
-		|| ($rule =~ /9 lectiones/i && ($winner !~ /tempora/i || $dayname[0] !~ /(Adv|Quad)/i) && $num == 8)
-		|| ( $version =~ /1960/
-		&& $rule =~ /9 lectiones/i
-		&& $rule =~ /Feria Te Deum/i
-		&& $num == 2
-		&& ($dayname[0] !~ /quad/i))
-		|| (gettype1960() > 1 && $num == 2 && $winner !~ /C12/)
-		|| ($rank < 2 && $num == 2 && $winner =~ /(Sancti)/)
-		|| ($num == 2 && $winner =~ /C10/)
-		|| ($num == 2 && ($rule =~ /Feria Te Deum/i || $dayname[0] =~ /Pasc[07]/i) && $rule !~ /9 lectiones/i)
-		)
-	{
-		if ($w !~ /\&Gloria/i) {
+	if (($num % $read_per_noct == 0)		# we are at the last Lesson of the Nocturn
+			|| ($rule =~ /9 lectiones/i && ($winner !~ /tempora/i || $dayname[0] !~ /(Adv|Quad)/i) && $num == 8) # or at the 8th Lesson with Te Deum
+			|| ( $version =~ /1960/ && $rule =~ /9 lectiones/i && $rule =~ /Feria Te Deum/i
+				&& $num == 2 && ($dayname[0] !~ /quad/i))	# or at the 2nd Lesson at a 1960s with Te Deum
+			|| (gettype1960() > 1 && $num == 2 && $winner !~ /C12/)
+			|| ($rank < 2 && $num == 2 && $winner =~ /(Sancti)/)	# or a simple Matins at the 2nd
+			|| ($num == 2 && $winner =~ /C10/)  # or at BMV in Sabbato
+			|| ($num == 2 && ($rule =~ /Feria Te Deum/i || $dayname[0] =~ /Pasc[07]/i) && $rule !~ /9 lectiones/i))	{ # let's add the Gloria
+		if ($lang =~ /gabc/ && $w =~ /\{.*\}/) {
+			if ($w =~ /\_\s\{gabc:/) { $w =~ s/\_\s\{gabc:(.*)\}/\_ \{gabc:$1-gloria\}/; } # choose Responsory with Gloria #TODO: check T.P.!
+				
+		}	elsif ($w !~ /\&Gloria/i) {
 			$w =~ s/[\s_]*$//gs;
 			$line = ($w =~ /(R\..*?$)/) ? $1 : '';
 			$w .= "\n\&Gloria1\n$line";
