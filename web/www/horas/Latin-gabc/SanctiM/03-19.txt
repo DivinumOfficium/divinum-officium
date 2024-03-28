@@ -1,0 +1,133 @@
+@Sancti/03-19
+
+[Rule]
+12 lectiones
+Psalmi Dominica
+
+[Ant Vespera]
+@Sancti/03-19::s/112.*/112/s
+
+[Capitulum Vespera]
+@Sancti/03-19:Capitulum Laudes
+_
+{gabc:Sancti/03-19/rb--invocavi_dominum--solesmes_1957}
+
+[AntMatutinumM]
+Induxérunt * púerum Jesum paréntes ejus † ut fácerent secúndum consuetúdinem legis pro eo.;;23
+Et ut perfecérunt * ómnia secúndum legem Dómini, † revérsi sunt in Galiláeam in civitátem suam Názareth.;;96
+Mirabántur omnes * in verbis grátiæ, quæ procedébant de ore ipsíus, et dicébant: † Nonne hic est fílius Joseph?;;97
+
+[Ant Matutinum 3N]
+Invénit Philíppus * Nathánæl, et dicit ei: † Quem scripsit Móyses in Lege, et Prophétæ, invénimus Jesum, fílium Joseph, a Názareth.
+
+[Ant Matutinum]
+@Sancti/03-19::1-3 s/3/4/
+@Sancti/03-19::6-8 s/8/10/ s/5/8/ s/4/5/
+@Sancti/03-19::4-5
+@Sancti/03-19::11-12
+@:AntMatutinumM:1
+@Sancti/03-19::13 s/23/95/
+@:AntMatutinumM:2-3
+@Sancti/03-19::9-10
+;;256;257;258
+@Sancti/03-19::14-15
+
+[Lectio1]
+@Sancti/03-19:Lectio1:s/-5/-3/ s/4.*//s
+
+[Lectio2]
+@Sancti/03-19:Lectio1:s/1-/4-/ s/1.*4/4/s
+
+[Lectio3]
+@Sancti/03-19:Lectio2
+
+[Lectio4]
+@Sancti/03-19:Lectio3
+
+[Responsory4]
+R. Benedictiónes patris tui confortátæ sunt benedictiónibus patrum ejus:
+* Donec veníret desidérium cóllium æternórum.
+V. Fiant in cápite Joseph, et in vértice Nazaraéi inter fratres suos.
+R. Donec veníret desidérium cóllium æternórum.
+
+[Lectio5]
+@Sancti/03-19:Lectio4
+
+[Responsory5]
+R. Angelus Dómini appáruit Joseph, dicens: † Joseph, fili David, noli timére accípere Maríam cónjugem tuam
+* Quod enim in ea natum est de Spíritu Sancto est.
+V. Páriet autem Fílium et vocábis nomen ejus Jesus.
+R. Quod enim in ea natum est de Spíritu Sancto est.
+
+[Lectio6]
+@Sancti/03-19:Lectio5:s/Illi .*//s
+
+[Responsory6]
+@Sancti/03-19:Responsory4
+
+[Lectio7]
+@Sancti/03-19:Lectio5:s/.* Illi /Illi /s s/$/~/
+@Sancti/03-19:Lectio6:s/Non est .*//s
+
+[Responsory7]
+@Sancti/03-19:Responsory5
+
+[Lectio8]
+@Sancti/03-19:Lectio6:s/.* Non est /Non est /s
+
+[Responsory8]
+@Sancti/03-19:Responsory6
+
+[Lectio9]
+@Sancti/12-24:Lectio1
+
+[Responsory9]
+R. Ibant paréntes Jesu per omnes annos in Jerúsalem in die solémni Paschæ: † consumptísque diébus cum redírent, remánsit puer Jesus in Jerúsalem,
+* Et non cognovérunt paréntes ejus.
+V. Existimántes autem illum esse in comitátu, † requirébant eum inter cognátos et notos.
+R. Et non cognovérunt paréntes ejus.
+
+[Lectio10]
+@Sancti/12-24:Lectio2
+
+[Responsory10]
+@Sancti/03-19:Responsory7
+
+[Lectio11]
+@Sancti/12-24:Lectio3
+
+[Responsory11]
+@Sancti/03-19:Responsory8
+
+[Lectio12]
+Joseph, fili David, noli timére accípere Maríam uxórem tuam. Jam et supra díximus sponsas uxóres appelláre: quod plénius liber advérsus Helvídium docet. Et blandiéntis Angelus lóquitur, ut justítiam siléntii comprobáret. Simúlque notándum, quod Joseph fílius esse dicátur David, ut María quoque de stirpe David monstrarétur.
+
+[Responsory12]
+R. Fidélis servus et prudens, quem constítuit Dóminus super famíliam suam
+* Amen dico vobis, quóniam super ómnia bona sua constítuet eum.
+V. Qui custos est Dómini sui, glorificátur.
+R. Amen dico vobis, quóniam super ómnia bona sua constítuet eum.
+
+[Ant Laudes]
+{name:Ibant parentes Jesu;mode:7;annotation:7.d;book:Antiphonale Monasticum, 1934, p. 841;transcriber:Dominique CROCHU;%%(c3)I(e_i)bant(i') *() pa(i)rén(j')tes(h) Je(jk)su(i'_) (,) per(i) om(i')nes(g) an(ij)nos(i') in(h) Je(hg)rú(fe)sa(fh)lem,(h'_) (,) in(i) di(h)e(hg) so(fe)lém(fg)ni(f) † Pas(e.)chæ.(e.) (::) <i>T. P.</i> Pas(e)chæ,(e_f) al(g>)le(fg)lú(e.)ia.(e.) (::)};;;;7d
+{name:Cum redirent;mode:2;annotation:2. d;book:Antiphonale Monasticum, 1934, p. 841;transcriber:Dominique CROCHU;%%(f3)CUM(f) red(c)í(ef)rent,(f_e) *(,) re(h)mán(i)sit(gf) pu(ghg)er(fe) Je(fh)sus(h) in(i') Je(h)rú(ij)sa(ih)lem,(h.) (;) et(hji) non(hg) co(f')gno(g)vé(ff)runt(e.) (,) † pa(g_h)rén(i>)tes(hg) e(f.)jus.(f.) (::) <i>T. P.</i> pa(g_h)rén(i'>)tes(h) e(hg~)jus,(fe) al(f)le(hg)lú(f.)ia.(f.) (::)};;;;2-monasticus
+{name:Non invenientes Jesum;mode:3;annotation:3. a2;book:Antiphonale Monasticum, 1934, p. 842;transcriber:Dominique CROCHU;%%(c4)NON(e) in(f)ve(e_f)ni(d_g)én(g)tes(hi) Je(ij)sum,(i.) *(,) re(i_j)grés(k)si(j) sunt(kl) in(k) Je(j')ru(k)sá(ji)lem(h.) (,) re(h)qui(j)rén(ji)tes(hi) e(h)um:(g.) (:) et(g) post(h') trí(g)du(hi)um(i'_) (,) in(j)ve(i_j)né(k)runt(ji) il(h)lum(g') in(e) tem(fg~)plo(g'_) (,) se(g)dén(hi)tem(h) in(gf~) mé(gh)di(g)o(fd) doc(e)tó(ef)rum,(e.) (;) au(e)di(f)én(ed~)tem(g'_) et(g) in(h)ter(g')ro(f)gán(gh)tem(gf) † e(e.)os.(e.) (::) <i>T. P.</i> † e(e)os,(e_f) al(g)le(gf)lú(e.)ia.(e.) (::)};;;;3-antiquo-a2
+{name:Dixit Mater ejus ad illum;annotation:4. E;mode:4;book:Antiphonale Monasticum, 1934, p. 842;transcriber:Dominique CROCHU;%%(c4) DIx(f)it(e') Ma(f)ter(d') e(c)jus(df) ad(fe) il(d_e)lum :(e.) *(;) Fi(e!gh)li,(h'_) quid(h) fe(hg)cí(hi)sti(hv_GF) no(gh)bis(gf) sic ?(eef.) (;) Ec(d)ce(g') pa(h)ter(g') tu(f)us(dc) et(de) e(e)go(e'_) (,) do(f)lén(e.d!ewf)tes(d_') † quæ(f)re(e_f)bá(gh)mus(g) te.(e.) (::)<i>T. P.</i> quæ(f)re(e_f)bá(gh)mus(g) te,(e_f) al(g)le(gf)lú(e.)ia.(e.) (::)};;;;4-antiquo-E
+{name:Descendit Jesus cum eis;Annotation:8. G;mode:8;book:Antiphonale Monasticum, 1934, p. 842;transcriber:Dominique CROCHU;%%(c4)DE(g)scén(g_f)dit(d) *() Je(e_f)sus(gh) cum(h) e(g.)is,(g.) (;) et(g) ve(f')nit(h) Ná(j_k)za(j)reth,(ji/jkj.) (,) et(hj~) e(ji)rat(gf) † súb(g_h)di(i)tus(h) il(g.)lis.(g.) (::)<i>T. P.</i> súb(g_h)di(i)tus(h') il(g)lis,(g_h) al(i')le(h)lú(g.)ia.(g.) (::)};;;;8G
+
+[Capitulum Laudes]
+@Sancti/03-19
+_
+@Sancti/03-19:Responsory Tertia:1-6
+
+[Responsory Tertia]
+@:Versum 1
+
+[Responsory Sexta]
+@Sancti/03-19:Responsory Tertia:8-9
+
+[Responsory Nona]
+@Sancti/03-19:Responsory Sexta:8-9
+
+[Ant Vespera 3]
+@:Ant Laudes
