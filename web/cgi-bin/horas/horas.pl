@@ -494,10 +494,14 @@ sub psalm : ScriptFunc {
     return "$t$datafolder/$lang/$psalmfolder/Psalm$psnum.txt not found";
   }
 
-  # Extract limits of the division of the psalm.
+  # Extract limits of the division of the psalm. (potentially within a psalm verse)
   my $v1 = $v = 0;
   my $v2 = 1000;
-  if ($num =~ /\((?<v1>\d+)-(?<v2>\d+)\)/) { ($v1, $v2) = ($+{v1}, $+{v2}); }
+	my $c1 = $cc = '';
+	my $c2 = '';
+	if ($num =~ /\((?<v1>\d+)(?<c1>[abc]?)-(?<v2>\d+)(?<c2>[abc]?)\)/) {
+		($v1, $v2, $c1, $c2) = ($+{v1}, $+{v2}, $+{c1}, $+{c2});
+	}
 
   # Prepare title and source if canticle
   my $title = translate('Psalmus', $lang) . " $num";
@@ -528,37 +532,39 @@ sub psalm : ScriptFunc {
       next;
     }
 
-    if ($line =~ /^\s*([0-9]+)\:([0-9]+)/) {
-      $v = $2;
-    } elsif ($line =~ /^\s*([0-9]+)/) {
-      $v = $1;
-    }
-    if ($v < $v1 && $v > 0) { next; }
-    if ($v > $v2) { last; }
-    my $lnum = '';
-
-    if ($line =~ /^([0-9]*[\:]*[0-9]+)(.*)/) {
-      $lnum = setfont($smallfont, $1) unless ($nonumbers);
-      $line = $2;
-    }
-    my $rest;
-
-    if ($line =~ /(.*?)(\(.*?\))(.*)/) {
-      $rest = $3;
-      $before = $1;
-      $this = $2;
-      $before =~ s/^\s*([a-z])/uc($1)/ei;
-      $line = $before . setfont($smallfont, ($this));
-      $initial = 0 if ($rest);
-    } else {
-      $rest = $line;
-      $line = '';
-      if ($initial) {
-        $lnum = "v. ";
-        $initial = 0;
-      }
-    }
-    $rest =~ s/[ ]*//;
+		if ($line =~ /^\s*([0-9]+)\:([0-9]+)([abc]?)/) {
+			$v = $2; $cc = $3;
+		} elsif ($line =~ /^\s*([0-9]+)([abc]?)/) {
+			$v = $1; $cc = $2;
+		}
+		if ($v < $v1 && $v > 0) { next; }
+		if($cc && $v == $v1 && $cc lt $c1) { next; } # breaking within a Psalm Verse
+		if ($v > $v2) { last; }
+		if($cc && $v == $v2 && $cc gt $c2) { last; } # breaking within a Psalm Verse
+		my $lnum = '';
+		
+		if ($line =~ /^([0-9]*[\:]*[0-9]+[abc]?)(.*)/) {
+			$lnum = setfont($smallfont, $1) unless ($nonumbers);
+			$line = $2;
+		}
+		my $rest;
+			
+		if ($line =~ /(.*?)(\(.*?\))(.*)/) {
+			$rest = $3;
+			$before = $1;
+			$this = $2;
+			$before =~ s/^\s*([a-z])/uc($1)/ei;
+			$line = $before . setfont($smallfont, ($this));
+			$initial = 0 if ($rest);
+		} else {
+			$rest = $line;
+			$line = '';
+			if ($initial) {
+				$lnum = "v. ";
+				$initial = 0;
+			}
+		}
+		$rest =~ s/[ ]*//;
 
     if ($prepend_dagger) {
       $rest = "\x{2021} $rest";
