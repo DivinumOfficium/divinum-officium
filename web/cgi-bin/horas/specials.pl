@@ -130,9 +130,6 @@ sub specials {
       $skipflag = !preces($item);
       setcomment($label, 'Preces', $skipflag, $lang);
       setbuild1($item, $skipflag ? 'omit' : 'include');
-			if(!$skipflag && $precesferiales && $item =~ /Dominicales/i) {
-				push(@s, '/:flexis genibus:/');	# as a reminder //TODO: needs to be "translated"
-			}
       if (!$skipflag && $hora =~ /Laudes|Tertia|Sexta|Nona|Vespera/) {
         push(@s, $prayers{$lang}{"Preces feriales $hora"});
       }
@@ -202,7 +199,6 @@ sub specials {
 
     if ($item =~ /Capitulum/i && $hora =~ /Completorium/i) {
       $tind--;
-			if ($lang =~ /gabc/i) {  push(@s, $t[$tind++]); next; } # GABC: don't look for start of response
       while ($tind < @t && $t[$tind] !~ /^\s*(?:V|R.br)\./) { push(@s, $t[$tind++]); }
       my @resp = ();
       while ($tind < @t && $t[$tind] !~ /^\s*\#/) { push(@resp, $t[$tind++]); }
@@ -570,8 +566,8 @@ sub translate_label {
 # returns 1 = yes or 0 = omit after deciding about the preces
 sub preces {
 
-  return 0 if (
-    $winner =~ /C12/i
+  return 0 if ( 
+    $winner =~ /C12/i 
     || $rule =~ /Omit.*? Preces/i
     || ($duplex > 2 && $seasonalflag) 
     || $dayname[0] =~ /Pasc[67]/i
@@ -606,7 +602,8 @@ sub preces {
     }
   }
 
-  if ($dayofweek && !($dayofweek == 6 && $hora =~ /vespera/i) # Domincales at Completorium are also said if Feriales at Vespers!
+  if ($item =~ /Feriales/i
+      && $dayofweek && !($dayofweek == 6 && $hora =~ /vespera/i)
 			&& ($winner !~ /sancti/i && ($rule =~ /Preces/i || $dayname[0] =~ /Adv|Quad(?!p)/i || emberday())	#
 				|| ($version !~ /1955|1960|Newcal/ && $winner{Rank} =~ /vigil/i && $dayname[1] !~ /Epi|Pasc/i)) # certain vigils before 1955
 			&& ($version !~ /1955|1960|Newcal/ || $dayofweek =~ /[35]/ || emberday())		# in 1955 and 1960, only Wednesdays, Fridays and emberdays
@@ -643,8 +640,7 @@ sub psalmi_minor {
   my $lang = shift;
   my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi minor.txt')};
   my (@psalmi, $ant, $psalms);
-	my $psalmTone;
-	
+
   if ($version =~ /monastic/i) {
     @psalmi = split("\n", $psalmi{Monastic});
     my $i =
@@ -662,7 +658,6 @@ sub psalmi_minor {
     my @a = split(';;', $psalmi[$i]);
     $ant = chompd($a[1]);
     $psalms = chompd($a[2]);
-		if($lang =~ /gabc/i) { $psalmTone = chompd($a[3]); } # retrieve Psalm Tone
   } elsif ($version =~ /trident/i) {
     my $daytype = ($dayofweek == 0) ? 'Dominica' : 'Feria';
     my %psalmlines = split(/\n|=/, $psalmi{Tridentinum});
@@ -691,10 +686,9 @@ sub psalmi_minor {
       # Sext and None is different on Sundays.
       $psalmkey = ($hora =~ /Completorium/i) ? 'Completorium' : "$hora $daytype";
     }
-		my @a = split(';;', $psalmlines{$psalmkey});
-		$ant = chompd($a[0]);
-		$psalms = chompd($a[1]);
-		if($lang =~ /gabc/i) { $psalmTone = chompd($a[2]); } # retrieve Psalm Tone
+    ($ant, $psalms) = split(';;', $psalmlines{$psalmkey});
+    $ant = chompd($ant);
+    $psalms = chompd($psalms);
   } else {
     @psalmi = split("\n", $psalmi{$hora});
     my $i = 2 * $dayofweek;
@@ -806,22 +800,12 @@ sub psalmi_minor {
 
   if ($w{Rule} =~ /Minores sine Antiphona/i) {
     $ant = '';
-		$psalmTone = ($version =~ /monastic/) ? 'in-dir-monasticus' : 'in-directum';
     setbuild2('Sine antiphonae');
   }
-
-	if ($lang =~ /gabc/i) { # retrieve Psalm Tone
-		if ($ant =~ s/;;(.*);;(.*)/;;$1/ ) { # strip from antiphone
-			$psalmTone = $2;
-			$ant =~ s/;;\s*$//;
-		}
-	}
-	
   if ($ant =~ /(.*?)\;\;/s) { $ant = $1; }
   if ($dayname[0] =~ /Quad/i) { $ant =~ s/[(]*allel[uú][ij]a[\.\,]*[)]*//ig; }
   if ($ant) { $ant = "Ant. $ant"; }
   my @ant = split('\*', $ant);
-	if ($lang =~ /gabc/i && $ant =~ /\{.*\}/) { $ant[0] =~ s/(.*)(\(.*?\))\s*$/$1\.$2 (::)\}/; } # undouble GABC-Antiphone
   postprocess_ant($ant, $lang);
   $ant1 = ($version !~ /196/) ? $ant[0] : $ant;    #difference between 1955 and 1960
   setcomment($label, 'Source', $comment, $lang, $prefix);
@@ -852,11 +836,7 @@ sub psalmi_minor {
     $p =~ s/[\[\]]//g;
     $p =~ s/[\(\-]/\,/g;
     $p =~ s /\)//;
-		if ($lang =~ /gabc/i && $psalmTone) {
-			push (@s, "&psalm(\'$p,$psalmTone\')");  # GABC format: 'Psalmnumber,PsalmTone'
-		} else {
-			push(@s, "\&psalm($p)");
-		}
+    push(@s, "\&psalm($p)");
     push(@s, "\n");
   }
 
@@ -887,17 +867,15 @@ sub psalmi_major {
   my $name = $hora;
   if ($hora =~ /Laudes/) { $name .= $laudes; }
   my @psalmi = splice(@psalmi, @psalmi);
-	my @psalmTones;
-	
-  if ($version =~ /monastic/i && !($hora =~ /Laudes/i && $rule =~ /Matutinum romanum/i)) { # Triduum like Roman
+
+  if ($version =~ /monastic/i) {
     my $head = "Daym$dayofweek";
     if ($hora =~ /Laudes/i) {
       if ($rule =~ /Psalmi Dominica/ || ($winner =~ /Sancti/i && $rank >= 4 && $dayname[1] !~ /vigil/i)) { $head = 'DaymF'; }
       if ($dayname[0] =~ /Pasc/i && $head =~ /Daym0/i) { $head = 'DaymP'; }
     }
     @psalmi = split("\n", $psalmi{"$head $hora"});
-		setbuild("Psalterium/Psalmi major", "$head $hora", 'Psalmi ord');
-		
+
     if ($hora =~ /Laudes/i && $head =~ /Daym[1-6]/) {
       unless ( (($dayname[0] =~ /Adv|Quadp/) && ($duplex < 3) && ($commune !~ /C10/))
                || (($dayname[0] =~ /Quad\d/) && ($dayname[1] =~ /Feria/))
@@ -917,7 +895,6 @@ sub psalmi_major {
     && !exists($winner{'Ant Laudes'}))
   {    #ferial office
     @psalmi = split("\n", $psalmi{"Daya$dayofweek $name"});
-		setbuild("Psalterium/Psalmi major", "Daya$dayofweek $name", 'Psalmi ord');
   } elsif ($version =~ /trident/i) {
     my $dow =
       ($hora =~ /Laudes/i && $dayname[0] =~ /Pasc/i)
@@ -927,14 +904,12 @@ sub psalmi_major {
         && $rule !~ /Feria/i) ? 'C'
       : $dayofweek;
     @psalmi = split("\n", $psalmi{"Daya$dow $name"});
-		setbuild("Psalterium/Psalmi major", "Daya$dow $name", 'Psalmi ord');
   } else {
     @psalmi = split("\n", $psalmi{"Day$dayofweek $name"});
-		setbuild("Psalterium/Psalmi major", "Day$dayofweek $name", 'Psalmi ord');
   }
   $comment = 0;
   $prefix = translate("Psalmi et antiphonae", $lang) . ' ';
-  
+  setbuild("Psalterium/Psalmi major", "Day$dayofweek $name", 'Psalmi ord');
 
   my @antiphones;
   if (($hora =~ /Laudes/ || ($hora =~ /Vespera/ && $version =~ /Monastic/)) && $month == 12 && $day > 16 && $day < 24 && $dayofweek > 0) {
@@ -990,18 +965,6 @@ sub psalmi_major {
   if ($antecapitulum) { $w = (columnsel($lang)) ? $antecapitulum : $antecapitulum2; }
   if ($w) { @antiphones = split("\n", $w); $comment = $c; }
 
-	if ($lang =~ /gabc/ && @antiphones) {
-		# strip Psalm Tones from Antiphones
-		foreach $myant (@antiphones) {
-			if ($myant =~ s/;;(.*);;(.*)/;;$1/ ) {
-				push (@psalmTones, $2);
-				$myant =~ s/;;\s*$//;
-			} else {
-				push (@psalmTones, '');
-			}
-		}
-	}
-
   #Psalmi de dominica
   if ( $version =~ /Trident/i
     && $testmode =~ /seasonal/i
@@ -1039,8 +1002,7 @@ sub psalmi_major {
 		if ($antiphones[4]) {															# if 5 psalms and antiphones are given
 			local($a1,$p1) = split(/;;/, $antiphones[3]);	  # split no. 4
 			local($a2,$p2) = split(/;;/, $antiphones[4]);		# spilt no. 5
-			$antiphones[3] = "$a2;;$p1";										# and say antiphone 5 with psalm no. 4
-			if (@psalmTones) { $psalmTones[3] = "$psalmTones[4]"; } # and use the Tone of the 5th antiphone
+			$antiphones[3] = "$a2;;$p1"											# and say antiphone 5 with psalm no. 4
     }
   }
 
@@ -1048,8 +1010,8 @@ sub psalmi_major {
     for ($i = 0; $i < $lim; $i++) {
       my $aflag = 0;
       $p = ($p[$i] =~ /;;(.*)/s) ? $1 : 'missing';
-			
-			if ( $i == 4
+
+      if ( $i == 4
         && $hora =~ /vespera/i
         && !$antecapitulum
         && $rule !~ /no Psalm5/i
@@ -1064,27 +1026,13 @@ sub psalmi_major {
         setbuild2("Psalm5 = $p");
         $aflag = 1;
       }
-			
-			if ($lang =~ /gabc/i ) { 
-				# recombine antiphones with psalms and psalmtones according to antiphone
-				$p = ($p =~ /\'(.*),/s) ? $1 : $p;
-
-				$p = ($antiphones[$i] =~ s/\;\;([0-9\;\n]+)// && !$aflag) ? $1 : $p;
-				my @p = split(';', $p);
-				foreach $p1 (@p) {
-					$p1 = "\'$p1,$psalmTones[$i]\'";
-				}
-				$p = join(';', @p);
-				$psalmi[$i] = ($antiphones[$i] =~ /(.*?);;/s) ? "$1;;$p" : "$antiphones[$i];;$p";
-			} else {
-				$psalmi[$i] =
-					($antiphones[$i] =~ /\;\;[0-9\;\n]+/ && !$aflag) ? $antiphones[$i]
-						: ($antiphones[$i] =~ /(.*?);;/s) ? "$1;;$p"
-						: "$antiphones[$i];;$p";
-			}
+      $psalmi[$i] =
+          ($antiphones[$i] =~ /\;\;[0-9\;\n]+/ && !$aflag) ? $antiphones[$i]
+        : ($antiphones[$i] =~ /(.*?);;/s) ? "$1;;$p"
+        : "$antiphones[$i];;$p";
     }
   }
-	
+
   if (alleluia_required($dayname[0], $votive)
     && (!exists($winner{"Ant $hora"}) || $commune =~ /C10/)
     && $communetype !~ /ex/i
@@ -1102,7 +1050,7 @@ sub psalmi_major {
       $psalmi[3] =~ s/.*(?=;;)//;
     }
   }
-	
+
   if (($dayname[0] =~ /(Adv|Quad)/i || emberday()) && $hora =~ /laudes/i && $version !~ /trident/i) {
     $prefix = "Laudes:$laudes $prefix";
   }
@@ -1123,7 +1071,6 @@ sub antetpsalm {
   my @line = split(';;', $line);
   my $ant = $line[0];
   my @ant = split(/\s*\*\s*/, $ant);
-	if ($lang =~ /gabc/i && $ant =~ /\{.*\}/) { $ant[0] =~ s/(.*)(\(.*?\))\s*$/$1\.$2 (::)\}/; } # undouble antiphone
   postprocess_ant($ant, $lang);
   my $ant1 = ($duplex > 2 || $version =~ /196/) ? $ant : $ant[0];    #difference between 1995, 1960
 
@@ -1134,12 +1081,12 @@ sub antetpsalm {
   } 
 
   my @p = split(';', $line[1]);
-	for (my $i = 0; $i < @p; $i++) {
+
+  for (my $i = 0; $i < @p; $i++) {
     $p = $p[$i];
     $p =~ s/[\(\-]/\,/g;
     $p =~ s/\)//;
-		if ($i < (@p - 1)) { $p = '-' . $p; }
-		$p =~ s/\-\'/\'\-/; # ensure dash behind apostrophe to be passed through to psalm script
+    if ($i < (@p - 1)) { $p = '-' . $p; }
     push(@s, "\&psalm($p)");
     if ($i < (@p - 1)) { push(@s, "\n"); }
   }
@@ -1660,10 +1607,6 @@ sub getcommemoratio {
   if (!$v) { $v = getfrompsalterium('Versum', $ind, $lang); }
   if (!$v) { $v = 'versus missing'; }
   postprocess_vr($v, $lang);
-	if ($lang =~/gabc/i) {
-		$v =~ s/\([a-zA-Z0-9\_\.\~\>\<\']+?\) \(::\)/\(f\.\) \(::\)/g; # Change Versicle into the simple tone
-		$v =~ s/\((?:hi|hr|h\_0|fe|f\_h|\,)\)/\(h\)/g; # More changes for solemn Versicle
-	}
   our %prayers;
 	my $w = "!" . &translate("Commemoratio", $lang) . (($lang !~ /latin/i || $wday =~ /tempora/i) ? ':' : ''); # Adding : except for Latin Sancti which are in Genetiv
   $a =~ s/\s*\*\s*/ / unless ($version =~ /Monastic/i);
@@ -2059,7 +2002,7 @@ sub doxology {
     {
       $dname = $1;
     } elsif (($month == 8 && $day > 15 && $day < 23 && $version !~ /Monastic/i)
-      || ($version !~ /1570/ && $month == 12 && $day > 8 && $day < 16 && $dayofweek > 0))
+      || ($version != /1570/ && $month == 12 && $day > 8 && $day < 16 && $dayofweek > 0))
     {
       $dname = 'Nat';
     } else {

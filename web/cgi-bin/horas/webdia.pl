@@ -63,9 +63,6 @@ Content-type: text/html; charset=utf-8
     }
   </STYLE>
   <TITLE>$title</TITLE>
-	<SCRIPT TYPE='text/JavaScript' SRC='js/util.js'></SCRIPT>
-	<SCRIPT TYPE='text/JavaScript' SRC='js/jquery.min.js'></SCRIPT>
-	<SCRIPT TYPE='text/JavaScript' SRC='js/exsurge.js'></SCRIPT>
 $horasjs
 </HEAD>
 <BODY VLINK=$visitedlink LINK=$link BGCOLOR="#eeeeee"$onload>
@@ -215,7 +212,7 @@ sub cleanse($) {
     @parts = split(/;/, $str);
 
     foreach my $part (@parts) {
-			unless ($part =~ /^([^'`"\\={}()]*|'[^'`"\\]*'|\$\w+='[^'`"\\]*')$/i) {  #` #accente grave for editor
+      unless ($part =~ /^([^'`"\\={}()]*|'[^'`"\\]*'|\$\w+='[^'`"\\]*')$/i) {
 
         #print STDERR "erasing $part\n";
         $part = '';
@@ -471,84 +468,32 @@ sub setcell {
   my $lang = shift;
   my $width = ($only) ? 100 : 50;
 
-	if (!$Ck) {
-		if (columnsel($lang)) {
-			$searchind++ if ($text !~ /{omittitur}/);
-			print "<TR>";
-			
-			if ($notes && $text =~ /\{\:(.*?)\:\}/) {
-				my $notefile = $1;
-				$notefile =~ s/^pc/p/;
-				my $colspan = ($only) ? 1 : 2;
-				print "<TR><TD COLSPAN=$colspan WIDTH=100% VALIGN=MIDDLE ALIGN=CENTER>\n"
-				. "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=80%></TD></TR>\n";
-			}
-		}
-		print "<TD VALIGN=TOP WIDTH=$width%" . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID=$hora$searchind") . ">";
-		topnext_cell($lang);
-		
-		if ($lang =~ /gabc/i) {	# post process GABC chants
-			my $dId = 0;
-			
-			# retrieve all GABC scores from files
-			while($text =~ /\{gabc:(.+?)\}/is) {
-				my $temp = $1;
-				my $gregFile = "chants/$1.gabc";
-				$gregFile = checkfile($lang, $gregFile);
-				if ($gregFile =~ /\/Latin\/.*gloria\.gabc/i ) { # if second Responsory GABC doesnot exist
-					$gregFile = "chants/$temp.gabc";
-					$gregFile =~ s/\-gloria//;
-					$gregFile = checkfile($lang, $gregFile);
-				}
-				my(@gregScore) = do_read($gregFile);
-				$text =~ s/gabc:$temp/@gregScore/s;
-			}
-			
-			# identify all GABC sections and post process to be suitable for JavaScript
-			while($text =~ /\{(\(|name:|initial-style:|centering-scheme:)(.+?)\(\:\:\)\}/is) {
-				$dId++;
-				$text =~ s/\{(\(|name:|initial-style:|centering-scheme:)/<DIV ID="GABC$hora$searchind$dId" class="GABC">$1/s;
-				$text =~ s/<i>T.\s?P.<\/i>/\_\^T. P.\^\_ /g;
-			  $text =~ s/<\/?i>/\_/g;
-				$text =~ s/<\/?b>|<v>\\greheightstar<\/v>/*/g;
-				$text =~ s/<\/?sc>/\%/g;
-				$text =~ s/<\/?c>/\^/g;
-				$text =~ s/<sp>\'(?:ae|æ)<\/sp>/ǽ/g;
-				$text =~ s/<sp>\'(?:oe|œ)<\/sp>/œ́/g;
-				$text =~ s/<sp>(?:ae|æ)<\/sp>/æ/g;
-				$text =~ s/<sp>(?:oe|œ)<\/sp>/œ/g;
-				$text =~ s/; <br>\n/;\n/gi;
-				$text =~ s/%% <br>\n/%%\n/gi;
-				$text =~ s/%%\(/%%\n\(/gi;
-				$text =~ s/;([a-z\%\(])/;\n$1/gi;
-				$text =~ s/(\(\:\:\)\}?) <br>\n/$1 \n/gi;
-				$text =~ s/\* /\*() /g;
-				$text =~ s/†\((.+?)\)/($1) † /g;
-				$text =~ s/\^?†\^?\(?\)?/^†^() /g;
-				$text =~ s/<sp>V\/<\/sp>\.?/V\/\.() /g;
-				$text =~ s/<sp>R\/<\/sp>\.?/R\/\.() /g;
-				$text =~ s/<\/?nlba>//g;
-				$text =~ s/\(\:\:\)\}/\(\:\:\)<\/DIV><DIV ID="GCHANT$hora$searchind$dId" class="GCHANT" width="100\%"><\/DIV>/s;
-				$text =~ s/\_/\|\|/g;
-			}
-		} else {	# post process non-GABC
-			if ($text =~ /%(.*?)%/) {
-				$text = activate_links(\$text, $lang);
-			}
-		}
-	}
-	$text =~ s/wait[0-9]+//ig;
-	$text =~ s/\_/ /g;
-	$text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
-	$text =~ s/\{\:.*?\:\}//sg;
-	$text =~ s/\`//g;			#` #accent grave for editor
-	
-	# Remove line breaks from chants
-	if($lang =~ /gabc/i) {
-		$text =~ s/\|\|(<BR>)/<BR>/g;
-		$text =~ s/\|\|/\_/g;
-	}
-	
+  if (!$Ck) {
+    if (columnsel($lang)) {
+      $searchind++ if ($text !~ /{omittitur}/);
+      print "<TR>";
+
+      if ($notes && $text =~ /\{\:(.*?)\:\}/) {
+        my $notefile = $1;
+        $notefile =~ s/^pc/p/;
+        my $colspan = ($only) ? 1 : 2;
+        print "<TR><TD COLSPAN=$colspan WIDTH=100% VALIGN=MIDDLE ALIGN=CENTER>\n"
+          . "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=80%></TD></TR>\n";
+      }
+    }
+    print "<TD VALIGN=TOP WIDTH=$width%" . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID=$hora$searchind") . ">";
+    topnext_cell($lang);
+
+    if ($text =~ /%(.*?)%/) {
+    $text = activate_links(\$text, $lang);
+    }
+  }
+  $text =~ s/wait[0-9]+//ig;
+  $text =~ s/\_/ /g;
+  $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
+  $text =~ s/\{\:.*?\:\}//sg;
+  $text =~ s/\`//g;
+
   if ($Ck) {
     if ($column == 1) {
       push(@ctext1, $text);
