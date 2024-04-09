@@ -852,10 +852,8 @@ sub psalmi_minor {
     setbuild2('Quicumque');
   }
   pop(@s);
-  push(@s, '_');
   $ant =~ s/\s*\*\s*/ /;
   push(@s, $ant);
-  return;
 }
 
 #*** psalmi_major($lang)
