@@ -1,0 +1,22 @@
+@Tempora/Epi3-0
+
+[Rank]
+Dominica III quæ superfuit Post Epiphaniam;;Semiduplex;;5
+
+[Rule]
+Gloria
+Credo
+Prefatio=Trinitate
+Suffr=Sanctorum;Maria3,Ecclesiæ,Papa;;
+
+[Introitus]
+@Tempora/Pent23-0:Introitus
+
+[Graduale]
+@Tempora/Pent23-0:Graduale
+
+[Offertorium]
+@Tempora/Pent23-0:Offertorium
+
+[Communio]
+@Tempora/Pent23-0:Communio
