@@ -1187,14 +1187,18 @@ sub oratio {
     if ($w) { setbuild2("Oratio Dominica"); }
   }
 
-	if($w =~ /N\. /) {
+	if($w =~ /N\./) {
 		my $name;
-		if (exists($w{Name})) {
+		if (exists($w{Name}) && !$votive) {
 			$name = $w{Name};
 		} elsif (my ($plural, $class, $pname) = papal_rule($w{Rule})) {
 			$name = $pname;
 		}
-		if($name) { $w = replaceNdot($w, $lang, $name); }
+		if($name) { 
+      $w = replaceNdot($w, $lang, $name); 
+    } else {
+      $w =~ s/N\./ setfont($redfont, $&) /ge;
+    }
 	}
 	
   #* deletes added commemoratio unless in laudes and vespers
