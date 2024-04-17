@@ -842,7 +842,7 @@ sub concurrence {
 		$ranklimit =  ($wrank[0] =~ /Dominica|feria|in.*octava/i) ? 2 : ($rank >= 6 && $version !~ /trident/i) ? 4.2 : $rank >= 5 ? 2.1 : 2;
 		@comentries = ();
 		foreach $commemo (@commemoentries) {
-			if ($commemo =~ /tempora/i && $trank[2] < 2) { next; }	# Feria minor and Vigils have no Vespers if superseded
+			if ($commemo =~ /tempora/i && ($trank[2] < 2 || $trank[0] =~ /Rogatio|Quattuor.*Sept/i)) { next; }	# Feria minor and Vigils have no Vespers if superseded
 			if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
 			%cstr = %{officestring('Latin', $commemo, 0)};
 			if (%cstr) {
@@ -858,7 +858,7 @@ sub concurrence {
 		my %cstr = ();
 		@comentries = ();
 		foreach $commemo (@commemoentries) {
-			if ($commemo =~ /tempora/i && $trank[2] < 2) { next; }	# Feria minor and Vigils have no Vespers if superseded
+			if ($commemo =~ /tempora/i && ($trank[2] < 2 || $trank[0] =~ /Rogatio|Quattuor.*Sept/i)) { next; }	# Feria minor and Vigils have no Vespers if superseded
 			if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
 			%cstr = %{officestring('Latin', $commemo, 0)};
 			if (%cstr) {
