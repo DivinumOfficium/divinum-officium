@@ -68,3 +68,30 @@ V. {::}Ora pro nobis, sancta Dei Génetrix.
 R. Ut digni efficiámur promissiónibus Christi.
 v. Orémus. 	
 v. Omnípotens sempitérne Deus, qui gloriósæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum éffici mererétur, Spíritu Sancto cooperánte, præparásti: da, ut, cujus commemoratióne lætámur, ejus pia intercessióne, ab instántibus malis et a morte perpétua liberémur. Per eúmdem Christum Dóminum nóstrum. Amen.
+
+[Ant ad S_Dominicum]
+Ant. O Lumen Ecclesiae, doctor veritatis, rosa patientiae, ebur~
+castitatis: aquam sapientiae propinásti gratis, praedicator~
+gratiae, nos iunge beatis. (Allelúja.)
+_
+V. Ora pro nobis, beate Pater Dominice. (Allelúja.)
+R. Ut digni efficiamur promissionibus Christi. (Allelúja.)
+_
+$Oremus
+v. Concede, quaesumus omnipotens Deus, ut qui peccatorum nostrorum~
+pondere premimur, beati Dominici confessoris tui Patris nostri~
+patrocinio sublevemur.~
+$Per Christum
+_
+$Fidelium animae
+
+[Ant Finalis OP]
+@:Postpentecost:s/.*v\./ Ant. / s/.V\..*//s s/$/~ /gm s/~ $/ \(Allelúja.\)\n/s
+_
+@:Quadragesimae:s/.*_.V\./V./s 1-2 s/\.$/. (Allelúja.)/gm
+_
+$Oremus
+@Commune/C10:Oratio:1 s/$/~/ s/^(?:v\.)?/v. /
+$Per Christum
+_
+@:Ant ad S_Dominicum

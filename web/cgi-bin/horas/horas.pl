@@ -403,26 +403,29 @@ sub Benedicamus_Domino : ScriptFunc {
 #return the text for the appropriate time
 sub antiphona_finalis : ScriptFunc {
   my $lang = shift;
-  my %ant = %{setupstring($lang, "Psalterium/Mariaant.txt")};
-  my $t = '';
+  my $name;
 
-  if ($dayname[0] =~ /adv/i && $winner{Rank} !~ /In Nativitate Domini/i) {
-    $t = $ant{'Advent'};
+  if ($version =~ /^Ordo Praedicatorum/) {
+    $name = 'Ant Finalis OP'
+  } elsif ($dayname[0] =~ /adv/i && $winner{Rank} !~ /In Nativitate Domini/i) {
+    $name = 'Advent';
   } elsif ($dayname[0] =~ /Nat/i
     || ($month == 12 && $day > 23)
     || $month == 1
     || ($month == 2 && $day < 2)
     || ($month == 2 && $day == 2 && $hora !~ /Completorium/i))
   {
-    $t = $ant{'Nativiti'};
+    $name = 'Nativiti';
   } elsif (($month == 2 || $month == 3 || $dayname[0] =~ /Quad/i) && $dayname[0] !~ /Pasc/i) {
-    $t = $ant{'Quadragesimae'};
+    $name = 'Quadragesimae';
   } elsif ($dayname[0] =~ /Pasc/) {
-    $t = $ant{'Paschalis'};
+    $name = 'Paschalis';
   } else {
-    $t = $ant{'Postpentecost'};
+    $name = 'Postpentecost';
   }
-  $t = '#' . translate('Antiphona finalis BMV', $lang) . "\n$t";
+  my $t = %{setupstring($lang, "Psalterium/Mariaant.txt")}{$name};
+  process_inline_alleluias(\$t) if $name eq 'Ant Finalis OP';
+  $t = '#' . translate($name eq 'Ant Finalis OP' ? 'Antiphonae finalis' : 'Antiphona finalis BMV', $lang) . "\n$t";
   return ($t);
 }
 
