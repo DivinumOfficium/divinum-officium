@@ -823,6 +823,27 @@ sub canticum : ScriptFunc {
   psalm($psnum, $lang);
 }
 
+sub Nunc_dimittis {
+  my $lang = shift;
+  my $ant, $ant2, $_antl;
+  my($w,$c) = getproprium("Ant 4$vespera", $lang, 1);
+  if ($w) {
+    setbuild1($ite, 'special');
+    ($ant, $ant2) = split("\n", $w)
+  } else {
+    my %a = %{setupstring($lang, "Psalterium/Psalmi minor.txt")};
+    $ant = $a{'Ant Nunc dimittis'};
+    if (alleluia_required($dayname[0], $votive)) {
+      ensure_single_alleluia(\$ant, $lang);
+    }
+  }
+  push(@s, translate('#Canticum Nunc dimittis',$lang),
+           'Ant. ' . ($version =~ /196/ ? $ant : substr($ant, 0, index($ant, ' *'))),
+           '&psalm(233)',
+           'Ant. ' . ($ant2 || $ant =~ s/\ \*//r));
+ # FIXME Ordo Praedicatorum has Ant depended on Tempora
+}
+
 sub Divinum_auxilium : ScriptFunc {
   my $lang = shift;
   my @text = split(/\n/, prayer("Divinum auxilium", $lang));
@@ -1074,6 +1095,11 @@ sub getordinarium {
   if ($version =~ /(1955|1960|Newcal)/) { $suffix .= "1960"; }
   elsif ($version =~ /Monastic/i) { $suffix .= "M"; }
   elsif ($version =~ /Ordo Praedicatorum/i) { $suffix .= "OP"; }
+
+  # don't loose time for non existent files
+  $suffix = '' if $command =~ /^Completorium$/;
+  $lang = 'Latin' if $command !~ /^(?:Matutinum|Prima)$/; 
+
   my $fname = checkfile($lang, "Ordinarium/$command$suffix.txt");
 
   @script = process_conditional_lines(do_read($fname));

@@ -126,8 +126,11 @@ sub specials {
       $skipflag = !preces($item);
       setcomment($label, 'Preces', $skipflag, $lang);
       setbuild1($item, $skipflag ? 'omit' : 'include');
-      if (!$skipflag && $hora =~ /Laudes|Tertia|Sexta|Nona|Vespera/) {
+      next if $skipflag;
+      if ($hora =~ /Laudes|Tertia|Sexta|Nona|Vespera/) {
         push(@s, prayer("Preces feriales $hora", $lang));
+      } elsif ($hora eq 'Completorium') {
+        push(@s, prayer("Preces Dominicales", $lang));
       }
       next;
     }
@@ -193,52 +196,54 @@ sub specials {
       next;
     }
 
-    if ($item =~ /Capitulum/i && $hora =~ /Completorium/i) {
-      $tind--;
-      while ($tind < @t && $t[$tind] !~ /^\s*(?:V|R.br)\./) { push(@s, $t[$tind++]); }
-      my @resp = ();
-      while ($tind < @t && $t[$tind] !~ /^\s*\#/) { push(@resp, $t[$tind++]); }
-      postprocess_short_resp(@resp, $lang);
-      push(@s, @resp);
-      next;
+    if ($item =~ /Lectio brevis/i && $hora eq 'Completorium') {
+      my %lectio = %{setupstring($lang, 'Psalterium/Minor Special.txt')};
+      push(@s, $item, $lectio{'Lectio Completorium'});
+      next
     }
 
-    if ($item =~ /Capitulum/i && $hora =~ /(Tertia|Sexta|Nona)/i) {
+    if ($item =~ /Capitulum/i && $hora =~ /^(?:Tertia|Sexta|Nona|Completorium)$/i) {
       my %capit = %{setupstring($lang, 'Psalterium/Minor Special.txt')};
       my $name = minor_getname();
       $name .= 'M' if ($version =~ /monastic/i);
+      $name = 'Completorium' if $hora eq 'Completorium';
       my $capit = $capit{$name};
       my $resp = '';
 
-      if ($capit !~ /\_\nR\.br. (.*)/is) {
+      if ($version !~ /^Monastic/) {
         $resp = $capit{"Responsory $name"};
         $capit =~ s/\s*$//;
         $capit .= "\n_\n$resp";
-      } else {
-        $resp = "R.br. $1";
       }
       my @capit = split("\n", $capit);
-      $comment = ($name =~ /(Dominica|Feria)/i) ? 5 : 1;
-      setbuild('Psalterium/Minor Special', $name, 'Capitulum ord');
 
-      #look for special from prorium the tempore of sancti
-      my ($w, $c) = getproprium("Capitulum $hora", $lang, $seasonalflag, 1);
+      if ($name eq "Completorium" && $version !~ /^Ordo Praedicatorum/) {
+        push(@capit, '_', split("\n", $capit{'Versum 4'}));
+      } else {
+        $comment = ($name =~ /(Dominica|Feria)/i) ? 5 : 1;
+        setbuild('Psalterium/Minor Special', $name, 'Capitulum ord');
 
-      if ($w !~ /\_\nR\.br/i) {
-        ($wr, $cr) = getproprium("Responsory $hora", $lang, $seasonalflag, 1);
-        $w =~ s/\s*$//;
-        if ($wr) { $w .= "\n_\n$wr"; }
-      }
+        #look for special from prorium the tempore of sancti
+        my ($w, $c) = getproprium("Capitulum $hora", $lang, $seasonalflag, 1);
 
-      if ($w && $w !~ /\_\nR\.br/i && !($version =~ /monastic/i && $w =~ /\_\nV\. /)) {
-        $w =~ s/\s*//;
-        $w .= "\n_\n$resp";
-      }
-      if ($w) { 
-        @capit = split("\n", $w); $comment = $c; 
+        if ($w !~ /\_\nR\.br/i) {
+          ($wr, $cr) = getproprium("Responsory $hora", $lang, $seasonalflag, 1);
+          $w =~ s/\s*$//;
+          if ($wr) { $w .= "\n_\n$wr"; }
+        }
+
+        if ($w && $w !~ /\_\nR\.br/i && !($version =~ /monastic/i && $w =~ /\_\nV\. /)) {
+          $w =~ s/\s*//;
+          $w .= "\n_\n$resp";
+        }
+        if ($w) { @capit = split("\n", $w); $comment = $c; }
       }
       postprocess_short_resp(@capit, $lang);
-      setcomment($label, 'Source', $comment, $lang);
+      if ($hora eq 'Completorium') {
+        push(@s, translate($item, $lang))
+      } else {
+        setcomment($label, 'Source', $comment, $lang);
+      }
       push(@s, @capit);
       next;
     }
@@ -346,6 +351,9 @@ sub specials {
       } else {
         $name = "Hymnus $hora";
         $name =~ s/ / Pasc7 / if ($hora =~ /Tertia/ && $dayname[0] =~ /Pasc7/);
+        if ($hora eq 'Completorium' && $version =~ /^Ordo Praedicatorum/) {
+          $versum = %{setupstring($lang, 'Psalterium/Minor Special.txt')}{'Versum 4'};
+        }
         $hymnsource = 'Minor';
         $section = "#". $section;
       }
@@ -361,7 +369,10 @@ sub specials {
       $hymn =~ s/\*\s*//g;
       $hymn =~ s/_\n(?!!)/_\nr. /g;
       push(@s, "$section\n$hymn");
-      push(@s, "\n_\n$versum") if $versum;
+      if ($versum) {
+        postprocess_vr($versum, $lang);
+        push(@s, "_\n$versum");
+      }
       next;
     }
 
@@ -372,24 +383,7 @@ sub specials {
     }
 
     if ($item =~ /Nunc Dimittis/i) {
-      my $w = $w{"Ant 4$vespera"};
-      my $c;
-      if (!$w && $communetype =~ /ex/) { ($w, $c) = getproprium("Ant 4$vespera", $lang, 1); }
-      if ($w) { setbuild1($ite, 'special'); }
-      $tind--;
-      my $non_first_ant = 0;
-
-      while ($t[$tind] !~ /^\s*$/) {
-        if ($t[$tind] =~ /^Ant/) {
-          if ($w) {
-            $t[$tind] = (split("\n", $w))[-1 * $non_first_ant];
-          } else {
-            postprocess_ant($t[$tind], $lang) if ($version =~ /1960/ || $non_first_ant);
-          }
-          $non_first_ant = 1;
-        }
-        push(@s, $t[$tind++]);
-      }
+      Nunc_dimittis($lang);
       next;
     }
 
@@ -698,7 +692,7 @@ sub psalmi_minor {
   setbuild("Psalterium/Psalmi minor", "$hora Day$dayofweek", 'Psalmi ord');
   $comment = 0;
 
-  if ($hora =~ /completorium/i && $version !~ /trident/i) {
+  if ($hora =~ /completorium/i && $version !~ /trident|monastic/i) {
     if ($winner =~ /tempora/i && $dayofweek > 0 && $winner{Rank} =~ /Dominica/i && $rank < 6) {
       ;
     }
@@ -780,8 +774,15 @@ sub psalmi_minor {
       $prefix = translate("Psalmi Dominica, antiphonae", $lang) . ' ';
       setbuild2('Psalmi dominica');
     }
+  } else {
+    $ant = '' if $version =~ /Monastic/
   }
 
+  if ($hora eq 'Completorium' && $version =~ /^(?:Trident|Monastic)/) {
+    push(@s, '#' . translate('Psalmi', $lang))
+  } else {
+    setcomment($label, 'Source', $comment, $lang, $prefix);
+  }
 
   if ($w{Rule} =~ /Minores sine Antiphona/i) {
     $ant = '';
@@ -792,7 +793,7 @@ sub psalmi_minor {
   postprocess_ant($ant, $lang);
   my @ant = split('\*', $ant);
   $ant1 = ($version !~ /196/) ? $ant[0] : $ant;    #difference between 1955 and 1960
-  setcomment($label, 'Source', $comment, $lang, $prefix);
+
   $psalms =~ s/\s//g;
   @psalm = split(',', $psalms);
 
@@ -813,7 +814,7 @@ sub psalmi_minor {
       setbuild2("First psalms #99 and  #92");
     }
   }
-  push(@s, $ant1);
+  push(@s, $ant1) if $ant1;
 
   foreach $p (@psalm) {
     if ($p =~ /[\[\]]/ && ($laudes != 2 || $version =~ /1960/)) { next; }
