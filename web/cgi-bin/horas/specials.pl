@@ -536,7 +536,7 @@ sub setcomment {
   my $lang = shift;
   my $prefix = shift;
 
-  if ($comment =~ /Source/i && $votive) { $ind = 7; }
+  if ($comment =~ /Source/i && $votive && $votive !~ /hodie/i) { $ind = 7; }
   $label = translate_label($label, $lang);
   my %comm = %{setupstring($lang, 'Psalterium/Comment.txt')};
   my @comm = split("\n", $comm{$comment});
@@ -852,10 +852,8 @@ sub psalmi_minor {
     setbuild2('Quicumque');
   }
   pop(@s);
-  push(@s, '_');
   $ant =~ s/\s*\*\s*/ /;
   push(@s, $ant);
-  return;
 }
 
 #*** psalmi_major($lang)
@@ -1083,7 +1081,6 @@ sub antetpsalm {
   my @p = split(';', $line[1]);
 
   for (my $i = 0; $i < @p; $i++) {
-    if ($expand =~ /(psalms|all)/i && $i > 0) { push(@s, "\_"); }
     $p = $p[$i];
     $p =~ s/[\(\-]/\,/g;
     $p =~ s/\)//;
@@ -1190,14 +1187,18 @@ sub oratio {
     if ($w) { setbuild2("Oratio Dominica"); }
   }
 
-	if($w =~ /N\. /) {
+	if($w =~ /N\./) {
 		my $name;
-		if (exists($w{Name})) {
+		if (exists($w{Name}) && !$votive) {
 			$name = $w{Name};
 		} elsif (my ($plural, $class, $pname) = papal_rule($w{Rule})) {
 			$name = $pname;
 		}
-		if($name) { $w = replaceNdot($w, $lang, $name); }
+		if($name) { 
+      $w = replaceNdot($w, $lang, $name); 
+    } else {
+      $w =~ s/N\./ setfont($redfont, $&) /ge;
+    }
 	}
 	
   #* deletes added commemoratio unless in laudes and vespers
@@ -1708,7 +1709,7 @@ sub getproprium {
 
   if (!$w && $communetype && ($communetype =~ /ex/i || $flag)) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
-
+	
     if (exists($com{$name})) {
       $w = tryoldhymn(\%com, $name);
       $c = 4;
@@ -1930,7 +1931,7 @@ sub getfromcommune {
   if (!$c) { return; }
 
   if ($c =~ /^C/) {
-    $c = "Commune/$c";
+    $c = subdirname('Commune', $version) . "$c";
     my $fname = "$datafolder/$lang1/$c" . "p.txt";
     if ($dayname[0] =~ /Pasc/i && (-e $fname)) { $c .= 'p'; }
   }
@@ -2042,17 +2043,32 @@ sub doxology {
 sub checksuffragium {
   if ($rule =~ /no suffragium/i) { return 0; }
   if (!$dayname[0] || $dayname[0] =~ /Adv|Nat|Quad5|Quad6/i) { return 0; }    #christmas, adv, passiontime omit
-  if ($dayname[0] =~ /Pasc[07]/i) { return 0; }
-  if ($winner =~ /sancti/i && $rank >= 3 && $seasonalflag) { return 0; }
-  if ($commemoratio =~ /sancti/i && $commemoratio{Rank} =~ /;duplex/i && $seasonalflag) { return 0; }
+  if ($dayname[0] =~ /Pasc[07]/i) { return 0; }	# Octaves of Pascha and Pentecost
+  if ($winner =~ /sancti/i && $rank >= 3 && $seasonalflag) { return 0; } # All Duplex Saints (except Patr. S. Joseph)
+	if ($winner{Rank} =~ /octav/i && $winner{Rank} !~ /post Octavam/i) { return 0; }
 
-  if ($winner{Rank} =~ /octav/i && $winner{Rank} !~ /post Octavam/i) {
-    return 0;
-  }                                                                       # && $winner{Rank} !~ /Feria/i) {return 0;}
-  if ($commemoratio{Rank} =~ /octav/i) { return 0; }
+	if ($commemoratio && $seasonalflag) {
+		my @r = split(';;', $commemoratio{Rank});
+		if ($r[2] >= 3 || $commemoratio{Rank} =~ /in.*Octav/i || checkcommemoratio(\%commemoratio) =~ /octav/i) {
+			return 0;
+		} 
+		if (@commemoentries || @ccommemoentries) {
+			my @cccentries = (@commemoentries, @ccommemoentries);
+			foreach my $commemo (@cccentries) {
+				if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
+				my %c = %{officestring($lang, $commemo, 0)};
+				my @cr = split(";;", $c{Rank});
+				if ($cr[2] >= 3 || $c{Rank} =~ /in.*Octav/i || checkcommemoratio(\%c) =~ /octav/i) {
+					return 0;
+				}
+			}
+		}
+	}
+	if ($commemoratio{Rank} =~ /octav/i) { return 0; }
   if ($octavcount) { return 0; }
+	
   if ($winner =~ /C12/) { return 1; }
-  if ($duplex > 2 && $version !~ /trident/i && $seasonalflag) { return 0; }
+  if ($duplex > 2 && $seasonalflag) { return 0; } # && $version !~ /trident/i ??? #all Duplex in the Tempora folders
   return 1;
 }
 

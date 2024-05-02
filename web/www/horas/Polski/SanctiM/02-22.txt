@@ -1,0 +1,21 @@
+[Lectio4]
+!1P 1:13-21
+13 Przetóż przepasawszy biodra umysłu waszego, trzeźwimi będąc, doskonale miejcie nadzieję o łasce, którą wam ofiarują przez objawienie Chrystusa Jezusa.
+14 Jako synowie posłuszeństwa, nie przypodobając się przeszłym pożądliwościom nieumiejętności waszéj,
+15 ale według onego, który was wezwał Świętego, i wy bądźcie świętymi we wszelakiem obcowaniu,
+16 ponieważ napisano jest: Będziecie świętymi, iżem Ja jest święty.
+17 A jeźli wzywacie Ojca tego, który bez względu na osoby sądzi wedle uczynku każdego, w bojaźni obcujcie czasu przemieszkiwania waszego,
+18 Wiedząc, iż nie skazitelnemi złotem albo śrebrem jesteście wykupieni od próżnego obcowania waszego ojcowskiego podania,
+19 ale drogą krwią, jako baranka niezmazanego i niepokalanego, Chrystusa;
+20 acz przejrzanego przed założeniem świata, ale czasów ostatecznych okazanego dla was,
+21 którzy przezeń wiernymi jesteście Bogu, który go wzbudził z martwych i dał mu chwałę, aby wiara i nadzieja wasza w Bogu była.
+
+[Lectio5]
+@Sancti/01-18:Lectio4:s/A z .*//
+
+[Lectio6]
+@Sancti/01-18:Lectio4:s/.*A z /A z /s s/$/~/
+@Sancti/01-18:Lectio5:s/Do.*//
+
+[Lectio7]
+@Sancti/01-18:Lectio5:s/.*Do/Do/

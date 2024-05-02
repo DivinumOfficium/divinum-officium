@@ -193,12 +193,9 @@ sub psalmi_matutinum_monastic {
 
     postprocess_ant($ant, $lang);
 
-    # insert canticles as single entries in psalmi
-    my @p = split(';', $p);  
-    $psalmi[16] = $ant . ';;' . shift @p;
-    splice(@psalmi, 17, 0, map { ';;' . $_ } @p);
+    $psalmi[16] = $ant . ';;' . $p;
 
-    nocturn(3, $lang, \@psalmi, (16..20));
+    nocturn(3, $lang, \@psalmi, (16..18));
     lectiones(3, $lang);            # Homily with responsories #9-#12
     push(@s, '&teDeum', "\n");      # Te Deum comes after the 12th responsory only
  
@@ -231,15 +228,10 @@ sub psalmi_matutinum_monastic {
     
   # end 2nd nocturn in ferial office
   my ($w, $c) = getproprium('MM Capitulum', $lang, 0, 1);
-  my %s = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
 
   if (!$w && $commune) {
-    if ($commune =~ /(C\d+)/) {
-      $w = $s{"MM Capitulum $1"};
-    } else {
-      my %c = (columnsel($lang)) ? %commune : %commune2;
-      $w = $c{"MM Capitulum"};
-    }
+    my %c = (columnsel($lang)) ? %commune : %commune2;
+    $w = $c{"MM Capitulum"};
   }
 
   if (!$w) {
@@ -250,6 +242,7 @@ sub psalmi_matutinum_monastic {
       if ($name eq ' Nat' && $day > 6 && $day < 13) { $name = ' Epi'; }
       if ($name eq ' Epi1') { $name = ($day > 6 && $day < 13) ? ' Epi' : ''; }
     }
+    my %s = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
     $w = $s{"MM Capitulum$name"};
   }
   postprocess_vr($w,$lang) if ($dayname[0] =~ /Pasc/);

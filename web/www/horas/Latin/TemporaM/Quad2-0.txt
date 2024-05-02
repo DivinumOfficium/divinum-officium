@@ -4,14 +4,16 @@
 12 lectiones
 
 [Lectio1]
-@Tempora/Quad2-0:Lectio1:s/-10/-4/ s/5.*//s
+@Tempora/Quad2-0:Lectio1:1-6 s/-10/-4/
 
 [Lectio2]
-@Tempora/Quad2-0:Lectio1:s/-10/-12/ s/1-/5-/ s/1 .*5/5/s
-@Tempora/Quad2-0:Lectio2:s/!.*// s/13.*//s
+@Tempora/Quad2-0:Lectio1:2 s/1-10/5-12/
+@Tempora/Quad2-0:Lectio1:7-13
+@Tempora/Quad2-0:Lectio2:2-3
 
 [Lectio3]
-@Tempora/Quad2-0:Lectio2:s/11-/13-/ s/11.*13/13/s
+@Tempora/Quad2-0:Lectio2:1 s/11-/13-/
+@Tempora/Quad2-0:Lectio2:4-11
 
 [Lectio4]
 @Tempora/Quad2-0:Lectio3

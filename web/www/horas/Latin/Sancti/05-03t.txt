@@ -2,3 +2,27 @@
 
 [Rank]
 Inventione Sanctæ Crucis;;Duplex II classis;;5.1;;
+
+[Ant Vespera]
+@:Ant Laudes
+
+[Lectio3]
+@Sancti/05-03::s/9-/8-/ s/9 /8 Vidéte ne quis vos decípiat per philosóphiam, et inánem falláciam secúndum traditiónem hóminum, secúndum eleménta mundi, et non secúndum Christum:\n9 /
+
+[Lectio7]
+@Sancti/05-03::s/$/~/
+@Sancti/05-03:Lectio8:s/ Respóndit.*//
+
+[Lectio8]
+@Sancti/05-03::s/.*Respóndit/Respóndit/ s/$/~/
+Cum ergo ex eo numero Nicodemus esset, venit ad Dominum: sed nocte venit; et hoc forte ad rem pertinet. Ad Dominum venit, et nocte venit: ad lucem venit, et in tenebris venit. Renati autem ex aqua et Spiritu, quid audiunt ab Apostolo? Fuistis aliquando tenebrae; nunc autem lux in Domino: sicut filii lucis ambulate.
+
+[Ant Laudes]
+Helena Constantini mater Jerusalem petiit, alleluja.
+Tunc praecepit eos omnes igne cremari at illi timentes tradiderunt Judam, alleluja.
+Mors et vita apposita sunt tibi si non ostendas mihi crucem Christi, alleluia.
+Cumque ascendisset Judas de lacu perrexit ad locum ubi jacebat sancta crux, alleluja.
+Orabat Judas deus deus meus ostende mihi lignum sanctae crucis, alleluja.
+
+[Commemoratio]
+@Sancti/05-03:Commemoratio 2

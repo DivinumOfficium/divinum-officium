@@ -98,6 +98,11 @@ R. Beáta es Virgo María, Dei Génitrix, quæ credidísti Dómino: perfécta su
 V. Ave María, grátia plena, Dóminus tecum.
 R. Intercéde pro nobis ad Dóminum Deum nostrum.
 
+[MM Capitulum]
+@Commune/C10:Capitulum Sexta
+_
+@Commune/C10:Responsory Tertia:s/.*_.//s
+
 [Capitulum Laudes]
 @CommuneM/C10:Capitulum Vespera
 
@@ -112,4 +117,3 @@ R. Intercéde pro nobis ad Dóminum Deum nostrum.
 
 [Responsory Nona]
 @CommuneM/C10:Responsory Nona
-

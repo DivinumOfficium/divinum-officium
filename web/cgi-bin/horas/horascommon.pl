@@ -200,7 +200,7 @@ sub occurrence {
 	
 			if ($tomorrow) {
 				$svesp = 1;
-				$BMVSabbato = ($saint{Rank} !~ /Vigilia/ && $srank[2] < 2 && $version !~ /(1960|Monastic)/ && $dayofweek == 6);
+				$BMVSabbato = ($saint{Rank} !~ /Vigilia/ && $srank[2] < 2 && $version !~ /196/ && $dayofweek == 6);
 
 				if ($version !~ /196|Trident/ && $hora =~ /Completorium/i && $month == 11 && $day == 1 && $dayofweek != 6) {
 					$srank[2] = 7; # Office of All Souls supersedes All Saints at Completorium from 1911 to 1959
@@ -274,7 +274,7 @@ sub occurrence {
 			unless($tomorrow) {
 				$scriptura = $tname =~ /Epi0/i ? $sname : $tname;
 			}
-			$tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Feria;;1.2;;vide $C10";
+			$tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Simplex;;1.2;;vide $C10";
 			$tname = subdirname('Commune', $version) . "$C10.txt";
 			@trank = split(";;", $trank);
 		}
@@ -842,7 +842,7 @@ sub concurrence {
 		$ranklimit =  ($wrank[0] =~ /Dominica|feria|in.*octava/i) ? 2 : ($rank >= 6 && $version !~ /trident/i) ? 4.2 : $rank >= 5 ? 2.1 : 2;
 		@comentries = ();
 		foreach $commemo (@commemoentries) {
-			if ($commemo =~ /tempora/i && $trank[2] < 2) { next; }	# Feria minor and Vigils have no Vespers if superseded
+			if ($commemo =~ /tempora/i && ($trank[2] < 2 || $trank[0] =~ /Rogatio|Quattuor.*Sept/i)) { next; }	# Feria minor and Vigils have no Vespers if superseded
 			if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
 			%cstr = %{officestring('Latin', $commemo, 0)};
 			if (%cstr) {
@@ -852,13 +852,13 @@ sub concurrence {
 		}
 		@commemoentries = @comentries;
 	} else { # We have 1st Vespers
-		my $ranklimit = ($rank >= 6 && $wrank[0] !~ /Dominica|feria|in.*octava/i) ? 4.2 : ($rank >= 5 && $wrank[0] !~ /Dominica|feria|in.*octava/i) ? 2.99 : 2;
+		my $ranklimit = ($rank >= 6 && $cwrank[0] !~ /Dominica|feria|in.*octava/i) ? 4.2 : ($rank >= 5 && $cwrank[0] !~ /Dominica|feria|in.*octava/i) ? 2.99 : 2;
 		# in Concurrence (i.e. today): Duplex I. cl excludes below Duplex II. cl., Duplex II. cl exludes below Duplex; Simplex have no 2nd Vespers
 		my @comentries = ();
 		my %cstr = ();
 		@comentries = ();
 		foreach $commemo (@commemoentries) {
-			if ($commemo =~ /tempora/i && $trank[2] < 2) { next; }	# Feria minor and Vigils have no Vespers if superseded
+			if ($commemo =~ /tempora/i && ($trank[2] < 2 || $trank[0] =~ /Rogatio|Quattuor.*Sept/i)) { next; }	# Feria minor and Vigils have no Vespers if superseded
 			if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
 			%cstr = %{officestring('Latin', $commemo, 0)};
 			if (%cstr) {
@@ -869,7 +869,7 @@ sub concurrence {
 		@commemoentries = @comentries;
 		
 		# In Occurencce (i.e. tomorrow):
-		$ranklimit =  ($wrank[0] =~ /Dominica|feria|in.*octava/i) ? 1.1 : ($rank >= 6 && $version !~ /trident/i) ? 4.2 : $rank >= 5 ? 2.2 : 1.1;
+		$ranklimit =  ($cwrank[0] =~ /Dominica|feria|in.*octava/i) ? 1.1 : ($rank >= 6 && $version !~ /trident/i) ? 4.2 : ($rank >= 5) ? 2.2 : 1.1;
 		@comentries = ();
 		foreach $commemo (@ccommemoentries) {
 			if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }

@@ -132,8 +132,8 @@ our %subjects = (
 our %predicates = (
   tridentina => sub { shift =~ /Trident/ },
   monastica => sub { shift =~ /Monastic/ },
-  innovata => sub { shift =~ /NewCal/i },
-  innovatis => sub { shift =~ /NewCal/i },
+  innovata => sub { shift =~ /2020 USA|NewCal/i },
+  innovatis => sub { shift =~ /2020 USA|NewCal/i },
   paschali => sub { shift =~ /Paschæ|Ascensionis|Octava Pentecostes/i },
   'post septuagesimam' => sub { shift =~ /Septua|Quadra|Passio/i },
   prima => sub { shift == 1 },
@@ -249,6 +249,15 @@ sub setupstring($$%) {
 
     if (%$new_sections) {
 
+			# Fill in missing "pre-Urban hymn translations to avoid being overriden by Latin
+			foreach my $seckey (keys(%{$new_sections})) {
+				if ($seckey =~ /Hymnus(.*?) (.*)/) {
+					unless (exists(${$new_sections}{"Hymnus$1M $2"})) {
+						${$new_sections}{"Hymnus$1M $2"} = ${$new_sections}{$seckey}
+					}
+				}
+			}
+			
       # Fill in the missing things from the layer below.
       ${$new_sections}{'__preamble'} .= "\n${$base_sections}{'__preamble'}";
       ${$new_sections}{$_} ||= ${$base_sections}{$_} foreach (keys(%{$base_sections}));
@@ -273,13 +282,13 @@ sub setupstring($$%) {
   # Take a copy.
   my %sections = %{${$inclusioncache}{$fullpath}};
   $params{'resolve@'} = RESOLVE_ALL unless (exists $params{'resolve@'});
-
+	
   # Do whole-file inclusions.
   unless ($params{'resolve@'} == RESOLVE_NONE) {
     while ($sections{'__preamble'} =~ /$inclusionregex/gc) {
       my $incl_fname .= "$1.txt";
       if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
-      my $incl_sections = setupstring($lang, $incl_fname, 'resolve@' => RESOLVE_NONE);
+			my $incl_sections = setupstring($lang, $incl_fname, 'resolve@' => RESOLVE_WHOLEFILE);	# ensure daisy-chain (especially for Monastic)
       $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
     }
     delete $sections{'__preamble'};

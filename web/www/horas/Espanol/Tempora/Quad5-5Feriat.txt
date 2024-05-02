@@ -1,1 +1,9 @@
 @Tempora/Quad5-5Feria
+
+[Lectio1]
+@Tempora/Quad5-5Feria::s/$/~/
+@Tempora/Quad5-5Feria:Lectio2:s/ Mas.*//
+
+[Lectio2]
+@Tempora/Quad5-5Feria:Lectio2:s/.*Mas/Mas/ s/$/~/
+@Tempora/Quad5-5Feria:Lectio3

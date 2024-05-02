@@ -15,6 +15,11 @@
 [Lectio4]
 @CommuneM/C6:Lectio4 in 2 loco
 
+[MM Capitulum]
+@Commune/C7:Capitulum Sexta
+_
+@CommuneM/C6::s/.*_.//s
+
 [Lectio Prima]
 @Commune/C6:Lectio Prima pro Martyre
 

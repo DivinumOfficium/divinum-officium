@@ -1,0 +1,231 @@
+[Incipit]
+/: Sacerdos :/~
+(sed rubrica Monastica)
+/: Superior vel Sacerdos hebdomadarius :/~
+/: benedicturus mensam, incipit :/
+Benedicite. /:et alii repetunt:/ Benedicite.
+/: Deinde incipit Versum. :/
+
+[Versus Ante]
+$REGULAR_VERSUS
+(sed tempore Nativitatis)
+V. Verbum caro factum est, alleluja.
+(sed die Sabbato Sancto)
+V. Vespere autem sabbati, quae lucescit in prima sabbati, alleluia.
+(sed tempore Octava Paschæ)
+V. Haec dies quam fecit Dominus, alleluia.
+(sed tempore Octava Ascensionis)
+V. Ascendit Deus in jubilatione, alleluia.
+(sed tempore Octava Pentecostes)
+V. Spiritus Domini replevit orbem terrarum, alleluia.
+_
+(sed tempore Nativitatis)
+V. Et habitavit in nobis, alleluja
+(sed die Sabbato Sancto)
+R. Venit Maria Magdalene, et altera Maria, videre sepulcrum, alleluia.
+(sed tempore Octava Paschæ)
+R. Exsultemus et laetemur in ea, alleluia.
+(sed tempore Octava Ascensionis)
+R. Et Dominus in voce tubae, alleluia.
+(sed tempore Octava Pentecostes)
+R. Et hoc quod continet omnia, scientiam habet vocis, alleluia.
+
+[Versus Ante Prandium]
+@:Versus Ante:s/\$REGULAR_VERSUS/V. Oculi omnium, * in te sperant, Domine, et tu das escam illorum in tempore opportuno. Aperis tu manum tuam, et imples omne animal benedictione./
+
+[Versus Ante Coenam]
+@:Versus Ante:s/\$REGULAR_VERSUS/V. Edent pauperes, et saturabuntur, et laudabunt Dominum, qui requirunt eum : vivent corda eorum in saeculum saeculi./
+
+[Oratio Ante]
+/: Postea :/~
+/: Sacerdos :/~
+(sed rubrica Monastica)
+/: Superior vel Sacerdos hebdomadarius :/~
+/: dicit: :/
+$Oremus
+Benedic, Domine, nos, et haec tua dona, quae de tua largitate sumus sumpturi. Per Christum Dominum nostrum,
+R. Amen.
+
+[Benedictio Ante Prandium]
+/: Deinde Lector :/
+Jube, domne, benedicere.
+Benedictio. Mensae coelestis participes faciat nos Rex aeternae gloriae,
+R. Amen.
+
+[Benedictio Ante coenam]
+/: Deinde Lector :/
+Jube, domne, benedicere.
+Benedictio. Ad coenam vitae aeternae perducat nos Rex aeternae gloriae.
+R. Amen.
+
+[Incipit Post]
+/: Aguntur gratiae hoc modo. :/
+/: Dicto a Lectore :/
+Tu autem, Domine, miserere nobis,
+R. Deo gratias.
+/: Omnes surgunt et :/~
+/: Sacerdos :/~
+(sed rubrica Monastica)
+/: Superior vel Sacerdos hebdomadarius :/~
+/: incipit : :/
+
+[Versus Post]
+$REGULAR_VERSUS1
+(sed tempore Nativitatis)
+V. Notum fecit Dominus, alleluja. 
+(sed die Sabbato Sancto)
+V. Vespere autem sabbati, quae lucescit in prima sabbati, alleluia.
+(sed tempore Octava Paschæ)
+V. Haec dies quam fecit Dominus, alleluia.
+(sed tempore Octava Ascensionis)
+V. Ascendens Christus in altum, alleluia.
+(sed tempore Octava Pentecostes)
+V. Repleti sunt omnes Spiritu sancto, alleluia.
+$REGULAR_VERSUS2
+(sed tempore Nativitatis)
+R. Salutare suum, alleluja.
+(sed die Sabbato Sancto)
+R. Venit Maria Magdalene, et altera Maria, videre sepulcrum, alleluia.
+(sed tempore Octava Paschæ)
+R. Exsultemus et laetemur in ea, alleluia.
+(sed tempore Octava Ascensionis)
+R. Captivam duxit captivitatem, alleluia.
+(sed tempore Octava Pentecostes)
+R. Et coeperunt loqui, alleluia.
+
+[Versus Post Prandium]
+@:Versus Post:s/\$REGULAR_VERSUS1/V. Confiteantur tibi, Domine, omnia opera tua./ s/\$REGULAR_VERSUS2/R. Et Sancti tui benedicant tibi./
+
+[Versus Post Coenam]
+@:Versus Post:s/\$REGULAR_VERSUS1/V. Memoriam fecit mirabilium suorum misericors et miserator Dominus,/ s/\$REGULAR_VERSUS2/R. Escam dedit timentibus se./
+
+[Oratio Post]
+V. Dispersit, dedit pauperibus.
+R. Justitia ejus manet in saeculum saeculi.
+V. Benedicam Dominum in omni tempore.
+R. Semper laus ejus in ore meo.
+V. In Domino laudabitur anima mea.
+R. Audiant mansueti, et laetentur,
+V. Magnificate Dominum mecum.
+R. Et exaltemus nomen ejus in idipsum.
+V. Sit nomen Domini benedictum.
+R. Ex hoc nunc et usque in saeculum.
+/: Deinde sine Oremus. :/
+V. Retribuere dignare, Domine, omnibus nobis bona facientibus propter nomen tuum vitam aeternam,
+R. Amen.
+V. Benedicamus Domino.
+R. Deo gratias.
+V. Fidelium animae per misericordiam Dei requiescant in pace.
+R. Amen.
+$Pater noster
+/: Quo finito, dicit Sacerdos : :/
+V. Deus det nobis suam pacem,
+R. Amen.
+
+[Gratiarum Prandium]
+/: Postea :/~
+/: Sacerdos :/~
+(sed rubrica Monastica)
+/: Superior vel Sacerdos hebdomadarius :/~
+/: absolute dicat : :/
+v. Agimus tibi gratias omnipotens Deus, pro universis beneficiis tuis : Qui vivis et regnas in saecula saeculorum.
+R. Amen.
+/: Deinde alternatim dicitur :/
+
+[Gratiarum Coenam]
+/: Sacerdos dicat : :/
+v. Benedictus Deus in donis suis, et sanctus in omnibus operibus suis : Qui vivit et regnat in saecula saeculorum.
+R. Amen.
+/: Deinde alternatim dicitur :/
+
+[Benedictio mensae]
+@:ANTE PRANDIUM
+(sed die Sabbato Sancto)
+
+
+_
+@:POST PRANDIUM
+(sed die Sabbato Sancto)
+
+
+_
+@:ANTE COENAM
+
+_
+@:IN FINE COENE
+
+
+[Benedictio mensae in CD et P]
+#ANTE COENAM
+/: Dicitur absolute et sine nota. :/
+V. Christus factus est pro nobis obediens usque ad mortem.
+/: Deinde totum secreto. :/
+$Pater noster
+/: Quo dicto, sine pronuntiatione aliqua, Sacerdos signo Crucis benedicit mensam, nec dicitur Jube, domne nec Tu autem. :/
+
+_
+#IN FINE COENE
+V. Christus factus est pro nobis obediens usque ad mortem.
+&psalm(50,1)
+/: secreto dicitur  :/
+$Pater noster.
+/: Deinde Sacerdos dicit absolute Orationem. :/
+/: Oratio. :/
+v. Respice, quaesumus Domine, super hanc familiam tuam, pro qua Dominus noster Jesus Christus non dubitavit manibus tradi nocentium, et crucis subire tormentum.
+/: Et non pronuntiatur Qui tecum. nec Fidelium animae, sed secreto dicitur  :/
+$Pater noster
+/: nec additur Deus det nobis suam pacem. :/
+
+[Benedictio mensae] (sed die in Cœna Domini dicitur)
+@:Benedictio mensae in CD et P
+
+[Benedictio mensae] (sed die in Parasceve dicitur)
+@:Benedictio mensae in CD et P:s/mortem./mortem, mortem autem crucis./g
+
+[Do not include below in vernacular]
+
+[ANTE PRANDIUM]
+#ANTE PRANDIUM
+@:Incipit
+@:Versus Ante Prandium
+&Gloria
+$MLitany
+@:Oratio Ante
+@:Benedictio Ante Prandium
+
+[POST PRANDIUM]
+#POST PRANDIUM
+@:Incipit Post
+@:Versus Post Prandium
+&Gloria
+@:Gratiarum Prandium
+&psalm(50)
+(sed tempore Nativitatis)
+&psalm(97) 
+(sed tempore Octava Paschæ aut tempore post Octavam Paschæ)
+&psalm(117)
+(sed tempore Octava Ascensionis)
+&psalm(46)
+(sed tempore Octava Pentecostes)
+&psalm(47)
+$MLitany
+@:Oratio Post
+
+[ANTE COENAM]
+#ANTE COENAM
+@:Incipit
+@:Versus Ante Coenam
+&Gloria
+$MLitany
+@:Oratio Ante
+@:Benedictio Ante coenam
+
+[IN FINE COENE]
+#IN FINE COENE
+@:Incipit Post
+@:Versus Post Coenam
+&Gloria
+@:Gratiarum Coenam
+&psalm(116)
+$MLitany
+@:Oratio Post

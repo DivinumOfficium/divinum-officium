@@ -63,37 +63,34 @@ sub invitatorium {
 	postprocess_ant($ant, $lang);
 	my @ant = split('\*', $ant);
 	my $ant2 = "Ant. $ant[1]";
-	my $num = "";
-	if ($rule =~ /Invit([0-9])/i) { $num = $1; }
-	if ($winner =~ /Tempora/i && $dayname[0] =~ /Quad[56]/i && $rule !~ /Gloria responsory/i) { $num = 3; }
-	
-	# Per annum Monday special psalm $w = getproprium invitatory
-	if (!$w && $dayofweek == 1 && $dayname[0] =~ /(Epi|Pent|Quadp)/i && $winner =~ /Tempora/ && $rank < 2) { $num = 4; }
-	
-	if (!$w && $dayofweek == 1 && $dayname[0] =~ /(Epi|Pent)/i && $w{Rank} =~ /Vigil/i && $winner =~ /Sancti/) {
-		$num = 4;
-	}
-	my $invitpath = "Psalterium/Invitatorium$num";
+
+	my $invitpath = "Psalterium/Invitatorium.txt";
 	$invitpath =~ s/Psalterium/PiusXII/ if ($lang eq 'Latin' && $psalmvar);
-	$fname = checkfile($lang, "$invitpath.txt");
+	$fname = checkfile($lang, $invitpath);
 	
 	if (my @a = do_read($fname)) {
-		foreach $item (@a) {
-			$item = "$item\n";
-			
-			if ($item =~ /\$ant2/i) {
-				$item = "$ant2";
-			} elsif ($item =~ /\$ant/i) {
-				$item = "$ant";
-			} else {
-				$item =~ s/\(\*(.*?)\*(.*?)\)/setfont($smallfont, "($1) ") . $2/e;
-			}
-			
-			if ($dayname[0] =~ /Quad[56]/i && $winner !~ /Sancti/i && $rule !~ /Gloria responsory/i) {
-				$item =~ s/\&Gloria/\&Gloria2/i;
-			}
-			push(@s, "$item");
+    $_ = join("\n", @a);
+
+		if ($rule =~ /Invit2/i) { 
+			# old Invitatorium2 = Quadp[123]-0
+			s/ \*.*//;
+		} elsif ($dayname[0] =~ /Quad[56]/i && $winner =~ /tempora/i && $rule !~ /Gloria responsory/i) {
+			# old Invitatorium3
+      s/&Gloria/\&Gloria2/;
+			s/v\. .* \^ (.)/v. \u\1/m;
+			s/\$ant2\s*(?=\$)//s;
+		} elsif (!$w && $dayofweek == 1 && $winner =~ /Tempora/
+				&& ($dayname[0] =~ /(Epi|Pent|Quadp)/i || ($dayname[0] =~ /Quad/i && $version =~ /Trident|Monastic/i))) { 
+			# old Invitatorium4
+			s/^v\. .* \+ (.)/v. \u\1/m;
 		}
+
+		s{[+*^] }{}g; # clean division marks
+
+    s/\$ant2/$ant2/eg;
+    s/\$ant/$ant/eg;
+
+    push(@s, $_);
 	} else {
 		$error .= "$fname cannnot open";
 	}
@@ -599,6 +596,7 @@ sub lectio : ScriptFunc {
 	if ($winner =~ /C12/i) { $ltype1960 = 0; }  # Officium parvum B.M.V.
 	
 	if ($ltype1960 == 2 && $num == 3) {     # 3rd reading in a Sunday office
+		setbuild2("Lectio 3 diverged to Homily");
 		$num = 7;       # diverge to Gospel / Homily
 	} elsif (
 	($ltype1960 == 3 && $num == 3 && $votive !~ /(C9|Defunctorum)/i) # 3rd reading in sanctoral office of 3 readings
@@ -909,8 +907,10 @@ sub lectio : ScriptFunc {
 	}
 	if (($ltype1960 || ($winner =~ /Sancti/i && $rank < 2)) && $num > 2) { $num = 3; $w = addtedeum($w); }
 	if ($num == 3 && $winner =~ /Tempora/ && $rule !~ /9 lectiones/i && $rule =~ /Feria Te Deum/i) { $w = addtedeum($w); }
-	if ($version =~ /monastic/i) { $w =~ s/\&teDeum//g; } # remove te deum from ninth/twelve lesson as it comes only after the last response
-	
+	if ($rule =~ /no Te Deum/i 
+		|| $version =~ /monastic/i)  # te deum is added as needed after the last responsory
+	{ $w =~ s/\&teDeum//g; }	
+
 	#get item from [Responsory$num] if no responsory
 	if ($w && $w !~ /\nR\./ && $w !~ /\&teDeum/i) {
 		my $s = '';
@@ -1105,6 +1105,9 @@ sub lect1960 {
 		if ($i == 0) { $i = 3; }
 	}
 	my $w = lectio(1, $lang);
+	if (!$w) { $w = $w{'Lectio1'}; }
+	if (!$w) { $w = $s{'Lectio1'}; }
+	
 	if ($w =~ $evan_regexp) { $i = 3; }
 	my @a = split("\n", $benedictio{"Nocturn $i"});
 	
@@ -1124,9 +1127,7 @@ sub lect1960 {
 	if ($rule =~ /Ipsa Virgo Virginum/i || $winner{Rank} =~ /Mari\w*\b\s*Virgin/i) { $a[3] = $a[10]; }
 	if ($rule =~ /Quorum Festum/i && !$divaux) { $a[3] = $a[7]; }
 	if ($rule =~ /Quarum Festum/i && !$divaux) { $a[3] = $a[9]; }
-	$w = $w{'Lectio1'};
-	if (!$w) { $w = $s{'Lectio1'}; }
-	
+
 	if ($w =~ $evan_regexp) {
 		$a[2] = $benedictio{Evangelica};
 	} else {
@@ -1251,7 +1252,7 @@ sub ant_matutinum_paschal {
 
 	if ($dayofweek || ($dayname[0] =~ /Pasc6/ && $version =~ /196/)) {
 		if (!$proper || $winner =~ /\/C10/) {
-			@psalmi = map { s/.*?;/;/r } @psalmi;
+			@psalmi = map { s/.*?(?=;;)//r } @psalmi;
 			$psalmi[0] = Alleluia_ant($lang) . $psalmi[0];
 			if ($dayofweek && $rule =~ /9 lectio/i && ($version !~ /196/ || $rank > 3) && $rank >= 2) { #3 nocturns
 				$psalmi[5] = Alleluia_ant($lang) . $psalmi[5];

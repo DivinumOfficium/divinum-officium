@@ -311,8 +311,8 @@ sub Alleluia_ant {
 #*** Septuagesima_vesp
 # Determines whether we're saying first Vespers of Septuagesima Sunday.
 sub Septuagesima_vesp {
-  our ($dayofweek, @dayname, $hora);
-  return ($dayofweek == 6 && $dayname[0] =~ /Quadp1/ && $hora =~ /Vespera/i);
+  our ($dayofweek, @dayname, $hora, $vespera, $cwinner);
+  return ($dayofweek == 6 && $hora =~ /Vespera/i && (($vespera == 1 && $dayname[0] =~ /Quadp1/) || ($vespera == 3 && $cwinner =~ /Quadp1\-0/)));
 }
 
 #*** triduum_gloria_omitted
@@ -403,26 +403,29 @@ sub Benedicamus_Domino : ScriptFunc {
 #return the text for the appropriate time
 sub antiphona_finalis : ScriptFunc {
   my $lang = shift;
-  my %ant = %{setupstring($lang, "Psalterium/Mariaant.txt")};
-  my $t = '';
+  my $name;
 
-  if ($dayname[0] =~ /adv/i && $winner{Rank} !~ /In Nativitate Domini/i) {
-    $t = $ant{'Advent'};
+  if ($version =~ /^Ordo Praedicatorum/) {
+    $name = 'Ant Finalis OP'
+  } elsif ($dayname[0] =~ /adv/i && $winner{Rank} !~ /In Nativitate Domini/i) {
+    $name = 'Advent';
   } elsif ($dayname[0] =~ /Nat/i
     || ($month == 12 && $day > 23)
     || $month == 1
     || ($month == 2 && $day < 2)
     || ($month == 2 && $day == 2 && $hora !~ /Completorium/i))
   {
-    $t = $ant{'Nativiti'};
+    $name = 'Nativiti';
   } elsif (($month == 2 || $month == 3 || $dayname[0] =~ /Quad/i) && $dayname[0] !~ /Pasc/i) {
-    $t = $ant{'Quadragesimae'};
+    $name = 'Quadragesimae';
   } elsif ($dayname[0] =~ /Pasc/) {
-    $t = $ant{'Paschalis'};
+    $name = 'Paschalis';
   } else {
-    $t = $ant{'Postpentecost'};
+    $name = 'Postpentecost';
   }
-  $t = '#' . translate('Antiphona finalis BMV', $lang) . "\n$t";
+  my $t = %{setupstring($lang, "Psalterium/Mariaant.txt")}{$name};
+  process_inline_alleluias(\$t) if $name eq 'Ant Finalis OP';
+  $t = '#' . translate($name eq 'Ant Finalis OP' ? 'Antiphonae finalis' : 'Antiphona finalis BMV', $lang) . "\n$t";
   return ($t);
 }
 
@@ -461,8 +464,6 @@ sub psalm : ScriptFunc {
       $nogloria = 1;
     }
   }
-
-  $nogloria ||= $canticlef;
 
   #$psalmfolder = ($accented =~ /plain/i) ? 'psalms' : 'psalms1';
   $psalmfolder = 'psalms1';
@@ -1021,7 +1022,7 @@ sub martyrologium : ScriptFunc {
   }
 
   if (my @a = do_read($fname)) {
-    my ($luna, $mo) =
+		my ($luna, $mo) =
       ($year >= 1900 && $year < 2200)
       ? gregor($m, $d, $y, $lang)
       : luna($m, $d, $y, $lang);
@@ -1043,7 +1044,7 @@ sub martyrologium : ScriptFunc {
     my $prefix = "v. ";
 
     foreach $line (@a) {
-      if (length($line) > 3) {
+      if (length($line) > 3 && $line !~ /^\/\:/) { # allowing /:rubrics:/ in Martyrology
         $t .= "$prefix$line\n";
       } else {
         $t .= "$line\n";
@@ -1068,16 +1069,22 @@ sub gregor {
   my @epact = (29, 10, 21, 2, 13, 24, 5, 16, 27, 8, 19, 30, 11, 22, 3, 14, 25, 6, 17);
   my @om = (30, 29, 30, 29, 30, 29, 30, 29, 30, 29, 30, 29, 30, 100);
   my @firstmonth = (2, 21, 10, 29, 18, 7, 26, 15, 4, 23, 12, 1, 20, 9, 28, 17, 6, 25, 14);
-
+  my $leapday;  # only set in the last days of February in a leap year
+	
   if ($golden == 18) {
     $om[12] = 29;
   } else {
     $om[12] = 30;
   }
-  if (leapyear($year) && ($month > 2 || ($month == 2 && $day > 24))) { $om[1] = 30; }
+	if (leapyear($year) && ($month > 2)) { $om[1] = 30;	} # || ($month == 2 && $day > 24)
   if ($golden == 0) { unshift(@om, 30); }
   if ($golden == 8 || $golden == 11) { unshift(@om, 30); }
 
+	if(leapyear($year) && $month == 2 && $day >= 24) {
+		$leapday = ($day + 1) % 30;  #  24->25, 25->26, "29"->0
+		if ($day == 29) { $day = 24; }
+	}
+	
   my $t = date_to_days($day, $month - 1, $year);
   my @d = days_to_date($t);
   my $yday = $d[7];
@@ -1105,6 +1112,7 @@ sub gregor {
     'January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December'
   );
+	$day = $leapday||$day;  # recover English date in Leap Years
   my $sfx1 =
       ($day > 3 && $day < 21) ? 'th'
     : (($day % 10) == 1) ? 'st'
