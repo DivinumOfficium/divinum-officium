@@ -362,7 +362,11 @@ sub occurrence {
 				$officename[2] =~ s/:/ ad Laudes tantum:/ if $cr[2] < 6;
 			} elsif ($version !~ /trident/i && $srank[2] >= 6) {
 				$officename[2] =~ s/:/ ad Laudes tantum:/ if $cr[2] < 4.2 && $cr[2] != 2.1 && $srank[0] !~ /infra octavam/i;
-			}else {
+			} elsif ($srank[2] >= 6 && $srank[0] !~ /in.*octava/i && $cr[2] < 3.1 ) { # for Tridentine:  either Transfer or no Commemoration in Duplex I. cl. (of Sanctoral) unless dies 8va
+				$commemoratio = '';
+				$comrank = 0;
+				@commemoentries = undef;
+			} else {
 				$officename[2] =~ s/:/ ad Laudes \& Matutinum:/ if $srank[2] >= 5 && $cr[2] < 2 && $srank[0] !~ /infra octavam/i;
 			}
 		} elsif (transfered($tday, $year, $version)) {		#&& !$vflag)
@@ -839,7 +843,7 @@ sub concurrence {
 		@ccommemoentries = @comentries;
 		
 		# In Occurence (i.e. today): Simplex end after None.
-		$ranklimit =  ($wrank[0] =~ /Dominica|feria|in.*octava/i) ? 2 : ($rank >= 6 && $version !~ /trident/i) ? 4.2 : $rank >= 5 ? 2.1 : 2;
+		$ranklimit =  ($wrank[0] =~ /Dominica|feria|in.*octava/i) ? 2 : $rank >= 6 ? ($version !~ /trident/i ? 4.2 : 3.1) : $rank >= 5 ? 2.1 : 2;
 		@comentries = ();
 		foreach $commemo (@commemoentries) {
 			if ($commemo =~ /tempora/i && ($trank[2] < 2 || $trank[0] =~ /Rogatio|Quattuor.*Sept/i)) { next; }	# Feria minor and Vigils have no Vespers if superseded
@@ -869,7 +873,7 @@ sub concurrence {
 		@commemoentries = @comentries;
 		
 		# In Occurencce (i.e. tomorrow):
-		$ranklimit =  ($cwrank[0] =~ /Dominica|feria|in.*octava/i) ? 1.1 : ($rank >= 6 && $version !~ /trident/i) ? 4.2 : ($rank >= 5) ? 2.2 : 1.1;
+		$ranklimit =  ($cwrank[0] =~ /Dominica|feria|in.*octava/i) ? 1.1 : $rank >= 6 ? ($version !~ /trident/i ? 4.2 : 3.1) : $rank >= 5 ? 2.2 : 1.1;
 		@comentries = ();
 		foreach $commemo (@ccommemoentries) {
 			if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
