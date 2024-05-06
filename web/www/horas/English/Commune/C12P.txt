@@ -17,4 +17,52 @@ Antiphonas Horas
 Feria Te Deum
 
 [Special Completorium]
-@Commune/C12::s/^Ant. .*/Ant. O Queen of heaven * rejoice! alleluia: for He whom thou didst merit to bear, alleluia, hath arisen as he said, alleluia; pray for us to God, alleluia./gm
+#Incipit
+_
+$Ave Maria
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+V. Turn us then, +++ O God, our saviour: 
+R. And let thy anger cease from us.
+$Deus in adjutorium
+&Alleluia
+
+#Psalmi
+&psalm(128)
+
+&psalm(129)
+
+&psalm(130)
+
+@:Hymnus minor
+
+#Capitulum
+!Sir 24:24
+v. I am mother of fair love, and fear, and knowledge, and holy hope.
+$Deo gratias
+_
+V. Pray for us, O holy Mother of God.
+R. That we may be made worthy of the promises of Christ.
+
+#Canticum Nunc dimittis
+Ant. O Queen of heaven * rejoice! alleluia: for He whom thou didst merit to bear, alleluia, hath arisen as he said, alleluia; pray for us to God, alleluia.
+&canticum(3)
+Ant. O Queen of heaven * rejoice! alleluia: for He whom thou didst merit to bear, alleluia, hath arisen as he said, alleluia; pray for us to God, alleluia.
+
+@:Pre oratio
+v. O Lord, we pray thee, that the glorious intercession of Mary, blessed, and glorious, and everlastingly Virgin, may shield us and bring us on toward eternal life.
+$Per Dominum
+
+#Conclusio
+&Dominus_vobiscum
+&Benedicamus_Domino
+Benedictio. The almighty and merciful Lord, + the Father, the Son and the Holy Spirit, bless us and keep us.
+R. Amen.
+
+&antiphona_finalis
+V. May the divine assistance + remain with us always.
+R. Amen.
+
+$Pater noster
+$Ave Maria
+$Credo
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica)
