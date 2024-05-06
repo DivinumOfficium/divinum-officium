@@ -1168,7 +1168,9 @@ sub Ultimaev : ScriptFunc {
   my $lang = shift;
   my ($t, %p);
 
-  if ($version =~ /(1955|196)/ || !exists($commemoratio{Evangelium})) {
+  if ($version =~ /(1955|196)/ ||
+      !exists($commemoratio{Evangelium}) ||
+      $commemoratio{Rule} =~ /Evangelium non appropriatum/) {
     our %prayers;
     $t = $prayers{$lang}->{'Ultima Evangelium'};
   } else {
