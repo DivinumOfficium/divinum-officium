@@ -158,19 +158,16 @@ sub hymnusmatutinum {
 sub nocturn {
   my ($num, $lang, $psalmi, @select) = @_;
   our ($version);
-  my $lastant = '';
 
   push(@s, '!' . translate('Nocturn', $lang) . ' ' . ('I' x $num) . '.');
 
-  for (my $i = 0; $i < (@select - 2); $i++) {
-    antetpsalm(@{$psalmi}[$select[$i]], $select[$i], \$lastant, $lang);
-  }
-  pop(@s);
-  push(@s, "Ant. $lastant", "\n");
+  my @psalmi_n = map { $psalmi->[$select[$_]] } 0 .. @select - 3;
+  my $duplexf = $version =~ /196/ || ($duplex > 2 && $rule !~ /Matins simplex/);
+  antetpsalm(\@psalmi_n, $duplexf, $lang);
 
-  # versus cant be text or reference (number)
+  # versus can be text or reference (number)
   my (@vs) = ($select[-1] =~ /^\d+$/ ? (@{$psalmi}[$select[-2]], @{$psalmi}[$select[-1]]) : ($select[-2], $select[-1]));
-  push(@s, @vs, "\n");
+  push(@s, "\n", @vs, "\n");
 }
 
 #*** psalmi_matutinum($lang)

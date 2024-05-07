@@ -28,16 +28,25 @@ sub makeferia {
 # generates the appropriate psalm and lessons
 # for the monastic version
 sub psalmi_matutinum_monastic {
-  $lang = shift;
-  $psalmnum1 = $psalmnum2 = -1;
-  $psalmnum1 = $psalmnum2 = 0 if (($dayname[0] eq "Quad6") && ($dayofweek > 3));
+  my $lang = shift;
+  our $psalmnum1 = our $psalmnum2 = -1;    # Psalm 3 as 0
 
   #** reads the set of antiphons-psalms from the psalterium
   my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
-  my $dw = $dayofweek;
+  my @psalmi = split("\n", $psalmi{"Daym$dayofweek"});
 
-  my @psalmi = split("\n", $psalmi{"Daym$dw"});
-  setbuild("Psalterium/Psalmi matutinum monastic", "dayM$dw", 'Psalmi ord');
+  if ($dayofweek == 5) {
+    if ( $rule =~ /Psalmi Dominica/i
+      || $commune{Rule} =~ /Psalmi Dominica/i)
+    {    # replace 92 99
+      $psalmi[4] =~ s/92!//;
+      $psalmi[12] =~ s/.*99!//;
+    } else {
+      $psalmi[4] =~ s/!75//;
+      $psalmi[12] =~ s/99!.*/99/;
+    }
+  }
+  setbuild("Psalterium/Psalmi matutinum monastic", "dayM$dayofweek", 'Psalmi ord');
   $comment = 1;
   my $prefix = translate('Antiphonae', $lang);
 
@@ -171,21 +180,9 @@ sub psalmi_matutinum_monastic {
   ) {
 
     if (exists($winner{'Ant Matutinum'})) {
-      my $start = 0;
       my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 0);
-      my @p = split("\n", $w);
-
-      for (my $i = $start; $i < 14; $i++) {
-        my $p = $p[$i];
-        if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
-
-        if ($i == 0 || $i == 8) {
-          $p = "$p[$i]$p";
-        }
-        $psalmi[$i] = $p;
-      }
+      @psalmi = split("\n", $w);
       setbuild2("Antiphonas Psalmi Octavam special");
-
     }
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
