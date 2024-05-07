@@ -4,7 +4,7 @@ use utf8;
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office   popup
-package horas;
+package main;
 
 #1;
 #use warnings;
@@ -19,6 +19,9 @@ use CGI::Cookie;
 use CGI::Carp qw(fatalsToBrowser);
 use File::Basename;
 use Time::Local;
+
+use lib "$Bin/..";
+use DivinumOfficium::LanguageTextTools qw(prayer translate load_languages_data);
 
 #use DateTime;
 use locale;
@@ -82,17 +85,16 @@ set_runtime_options('parameters'); # priest, lang1 ... etc
 
 $popup = strictparam('popup');
 $background = ($whitebground) ? ' class="contrastbg"' : '';
-$only = ($lang1 && $lang1 =~ /^$lang2$/i) ? 1 : 0;
+$border = 0;
+$textwidth = 90;
+$only = $lang1 && $lang1 =~ /^$lang2$/i;
 precedence();
 
-foreach my $lang ('Latin', $lang1, $lang2) {
-  $translate{$lang} ||= setupstring($lang, 'Psalterium/Translate.txt');
-}
-$title = translate(get_link_name($popup), 'Latin');
+load_languages_data($lang1, $lang2, $version, $missa);
+$title = translate(get_link_name($popup), $lang1);
 $title =~ s/[\$\&]//;
 $expand = 'all';
 if ($popup =~ /\&/) { $popup =~ s /\s/\_/g; }
-cache_prayers();
 $text = resolve_refs($popup, $lang1);
 $t = length($text);
 
@@ -103,29 +105,11 @@ $height = ($t > 300) ? $screenheight - 100 : 3 * $screenheight / 4;
 #*** generate HTML
 # prints the requested item from prayers hash as popup
 htmlHead($title, 'setsize()');
-print << "PrintTag";
-<H3 ALIGN=CENTER><FONT COLOR=MAROON><B><I>$title</I></B></FONT></H3>
-<P ALIGN=CENTER><BR>
-<TABLE BORDER=0 WIDTH=90% ALIGN=CENTER CELLPADDING=8 CELLSPACING=$border$background>
-<TR>
-PrintTag
-$text =~ s/\_/ /g;
-if ($lang1 =~ /Latin/i) { $text = spell_var($text); }
-print "<TD $background WIDTH=50% VALIGN=TOP>" . setfont($blackfont, $text) . "</TD>\n";
-
-if (!$only) {
-  $text = resolve_refs($popup, $lang2);
-
-  #$text = resolve_refs($text, $lang2);
-  $text =~ s/\_/ /g;
-  if ($lang2 =~ /Latin/i) { $text = spell_var($text); }
-  print "<TD $background VALIGN=TOP>" . setfont($blackfont, $text) . "</TD></TR>\n";
-}
-print "</TABLE><BR>\n";
-print "<A HREF=# onclick=\"window.close()\">Close</A>";
-if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
-if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
-print "</FORM></BODY></HTML>";
+print "<H3 ALIGN=CENTER><FONT COLOR=MAROON><B><I>$title</I></B></FONT></H3>\n";
+my @script = ($popup);
+print_content($lang1, \@script, $lang2, \@script);
+print "<P ALIGN=CENTER><A HREF=# onclick=\"window.close()\">Close</A></P>";
+htmlEnd();
 
 #*** javascript functions
 sub horasjs {

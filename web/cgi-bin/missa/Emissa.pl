@@ -4,7 +4,7 @@ use utf8;
 # Name : Geremia (based off missa.pl)
 # Date : 2020-06-13
 # Sancta Missa
-package missa;
+package main;
 
 #use warnings;
 #use strict "refs";
@@ -162,6 +162,7 @@ $head     = $title;
 $headline = setheadline();
 headline($head);
 
+load_languages_data($lang1, $lang2, $version, $missa);
 $only = 1; # single-column
 ordo();
 

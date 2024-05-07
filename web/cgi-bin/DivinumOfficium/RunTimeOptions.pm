@@ -14,7 +14,7 @@ BEGIN {
 
 sub unequivocal {
   my($value, $tablename) = @_;
-  my @values_array = horas::getdialog($tablename);
+  my @values_array = main::getdialog($tablename);
 
   my @r = grep { /$value/ } @values_array;
   if (@r == 1) { 

@@ -5,7 +5,7 @@ use utf8;
 # Name : Laszlo Kiss
 # Date : 03-30-10
 # Sancta Missa
-package missa;
+package main;
 
 #1;
 #use warnings;
@@ -25,6 +25,7 @@ use Time::Local;
 use locale;
 use lib "$Bin/..";
 use DivinumOfficium::Main qw(vernaculars liturgical_color);
+use DivinumOfficium::LanguageTextTools qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 $error = '';
 $debug = '';
 
@@ -143,6 +144,7 @@ if ($command =~ /setup(.*)/is) {
   $command =~ s/(pray|change|setup)//ig;
   $head = $title;
   headline($head);
+  load_languages_data($lang1, $lang2, $version, $missa);
 
   #eval($setup{'parameters'});
   $background = ($whitebground) ? ' class="contrastbg"' : '';
