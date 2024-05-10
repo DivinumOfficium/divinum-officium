@@ -56,11 +56,11 @@ V. O Signore, esaudisci la mia preghiera.
 R. E il mio grido giunga fino a Te.
 /:Si omette il secondo 'O Signore, esaudisci la mia preghiera':/
 
-[Confiteor]
+[Confiteor_]
 v. Confesso a Dio onnipotente, alla beata sempre Vergine Maria, al beato Michele Arcangelo, al beato Giovanni Battista, ai Santi Apostoli Pietro e Paolo e a tutti i Santi, di aver molto peccato, in pensieri, parole ed opere: /:ci si batte il petto per tre volte:/ per mia colpa, per mia colpa, per mia grandissima colpa. E perciò supplico la beata sempre Vergine Maria, il beato Michele Arcangelo, il beato Giovanni Battista, i Santi Apostoli Pietro e Paolo e tutti i Santi, di pregare per me il Signore Dio nostro.
 
-[ConfiteorM]
-@:Confiteor:s/Paolo e a/Paolo, al nostro beato Padre Benedetto e a/ s/Paolo e tutti/Paolo, il nostro beato Padre Benedetto e tutti/
+[Confiteor] (rubrica Monastica)
+@:Confiteor_:s/Paolo e a/Paolo, al nostro beato Padre Benedetto e a/ s/Paolo e tutti/Paolo, il nostro beato Padre Benedetto e tutti/
 
 [Misereatur]
 v. Abbia misericordia di noi l'onnipotente Iddio, e, rimessi i nostri peccati, ci conduca alla vita eterna. Amen.
@@ -282,6 +282,27 @@ R. E liberaci per il tuo nome.
 V. Signore, esaudisci la mia preghiera.
 R. E il mio grido giunga a te.
 
+[Preces Dominicales]
+v. Signore, pietà di noi. Cristo, pietà di noi. Signore, pietà di noi.
+&pater_noster
+$Credo
+V. Benedetto sei tu, Signore, Dio dei padri nostri.
+R. E degno di lode e glorioso nei secoli.
+V. Benediciamo il Padre e il Figlio con lo Spirito Santo.
+R. Lodiamolo e sopraesaltiamolo nei secoli.
+V. Benedetto sei tu. Signore, nel firmamento del cielo.
+R. E degno di lode e glorioso e sopraesaltato nei secoli.
+V. Ci benedica e ci custodisca l'onnipotente e misericordioso Signore. 
+R. Amen.
+V. Degnati, Signore, in questa notte.
+R. Di preservarci dal peccato.
+V. Abbi pietà di noi, Signore.
+R. Abbi pietà di noi.
+V. Sia la tua misericordia, Signore, sopra di noi. 
+R. Come abbiamo sperato in te.
+V. Signore, esaudisci la mia preghiera.
+R. E il mio grido giunga a te.
+
 [A porta inferi]
 V. Dalle porte degli inferi.
 R. Libera, Signore, le loro anime.
@@ -289,3 +310,19 @@ V. Riposino in pace.
 R. Amen.
 @:Dominus:3-4
 &Dominus_vobiscum2
+
+[Per Christum]
+Per lo stesso Cristo Signor nostro.
+
+[Oratio Visita_]
+r. Visita, o Signore, te ne preghiamo, quest’abitazione e respingi lungi da essa tutte le insidie del nemico: i tuoi Santi Angeli abitino in essa, ci custodiscano in pace; e la tua benedizione sia sempre sopra di noi. 
+
+[Examen]
+/:Esame di coscienza o Padre nostro sotto voce.:/
+
+[Benedictio Completorium_]
+V. Comanda o Signore, la benedizione.
+Benedictio. Il Signore onnipotente ci conceda una notte tranquilla e una fine perfetta.
+
+[Benedictio Completorium2]
+Benedictio. Ci benedica e custodisca l'onnipotente e misericordioso Signore, + il Padre, e il Figlio, e lo Spirito Santo.

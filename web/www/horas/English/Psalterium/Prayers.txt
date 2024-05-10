@@ -56,19 +56,19 @@ V. O Lord, hear my prayer.
 R. And let my cry come unto thee.
 /:skip second 'O Lord, hear my prayer':/
 
-[Confiteor]
+[Confiteor_]
 v. I confess to almighty God, to blessed Mary ever Virgin, to blessed Michael the Archangel, to blessed John the Baptist, to the holy Apostles Peter and Paul, and to all the Saints, that I have sinned exceedingly in thought, word and deed: /:strikes his breast:/ through my fault, through my fault, through my most grievous fault. Therefore I beseech blessed Mary ever Virgin, blessed Michael the Archangel, blessed John the Baptist, the holy Apostles Peter and Paul, and all the Saints, to pray for me to the Lord our God. 
 
-[ConfiteorOP]
+[Confiteor] (rubrica Ordo Praedicatorum)
 v.  I confess to almighty God, to blessed Mary ever Virgin, to blessed Dominic our father, to all the Saints and to you, brethren, that I have sinned exceedingly by thought, word, deed and omission, through my fault: I beseech you to pray for me.
 
-[ConfiteorM]
-@:Confiteor:s/Paul/Paul, our holy Father Benedict/g
+[Confiteor] (rubrica Monastica)
+@:Confiteor_:s/Paul/Paul, our holy Father Benedict/g
 
 [Misereatur]
 v. May almighty God have mercy on us, forgive us our sins, and bring us to everlasting life. Amen.
 
-[MisereaturOP]
+[Misereatur] (rubrica Ordo Praedicatorum)
 v. May almighty God have mercy upon you and forgive you all your sins: may he free you from all evil, strengthen and confirm you in every good work, and bring you to life everlasting.
 
 [Indulgentiam]
@@ -84,7 +84,7 @@ R. O Lord, make haste to help me.
 v. Glory be to the Father, and to the Son, * and to the Holy Ghost. 
 As it was in the beginning, is now, * and ever shall be, world without end. Amen.
 
-[Tu autem]
+[Tu autem_]
 V. But thou, O Lord, have mercy upon us.
 R. Thanks be to God.
 
@@ -102,15 +102,6 @@ R. Thanks be to God.
 [Fidelium animae]
 V. May the souls of the faithful, through the mercy of God, rest in peace.
 R. Amen.
-
-[FinalAntiphonOP]
-Light of the church, teacher of truth, rose of patience, ivory of chastity, you freely poured forth the waters of wisdow; preacher of grace, unite us with the blessed.
-V. Blessed Father, Dominic, pray for us.
-_
-R. That we may be made worth of the promises of Christ.
-Let us pray.
-_
-Grant, we beseech you, almighty God, that we who are weighed down by the burden of our sins, may be relieved through the patronage of the blessed Dominic, your confessor and our father. Through Christ our Lord. Amen.
 
 [Per Dominum]
 r. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end.
@@ -299,6 +290,28 @@ R. And deliver us for thy name's sake.
 V. O Lord, hear my prayer:
 R. And let my cry come unto thee.
 
+[Preces Dominicales]
+#Preces Dominicales
+$Kyrie
+$Pater secreto
+$Credo secreto
+V. Blessed are you, Lord, God of our fathers. 
+R. Worthy of praise, and glorious for ever.
+V. Let us bless the Father, the Son and the Holy Spirit.
+R. Let us praise and exalt him above all for ever.
+V. Blessed art thou in the firmament of heaven: 
+R. Worthy of praise, and glorious for ever.
+V. May the almighty and merciful God bless us and keep us.
+R. Amen.
+V. Vouchsafe, O Lord, 
+R. To keep us this night without sin.
+V. O Lord, have mercy upon us. 
+R. Have mercy upon us.
+V. O Lord, let thy mercy lighten upon us
+R. As our trust is in you.
+V. Lord, hear my prayer:
+R. And let my cry come unto thee. 
+
 [A porta inferi]
 V. From the gates of hell.
 R. Deliver their souls, O Lord!
@@ -309,3 +322,19 @@ R. Amen.
 
 [Per Christum]
 Through Christ our Lord.
+
+[Oratio Visita_]
+v. Visit, we beseech thee, O Lord, this dwelling, and drive far from it the snares of the enemy; let thy holy angels dwell herein to preserve us in peace, and let thy blessing be always upon us.
+
+[Examen]
+/:There follows an examination of conscience, or the Our Father said silently.:/
+
+[Benedictio Completorium_]
+V. Grant, Lord, a blessing.
+Benedictio. May almighty God grant us a quiet night and a perfect end. Amen.
+
+[Benedictio Completorium2]
+Benedictio. The almighty and merciful Lord, + the Father, the Son and the Holy Spirit, bless us and keep us.
+
+[Benedictio Completorium2] (rubrica Ordo Praedicatorum)
+Benedictio. May the blessing of almighty God, + the Father, the Son, and the Holy Spirit come down to us and remain forever.

@@ -24,6 +24,15 @@ v. Credo in Deum, Patrem omnipoténtem, Creatórem cæli et terræ. Et in Jesum 
 V. Carnis resurrectiónem.
 R. Vitam ætérnam. Amen.
 
+[Pater Ave]
+@:Pater noster
+@:Ave Maria
+
+[Pater Ave Credo]
+@:Pater noster
+@:Ave Maria
+@:Credo
+
 [Adjutorium nostrum]
 V. Adjutórium nóstrum + in nómine Dómini. 
 R. Qui fecit cælum et terram.
@@ -58,19 +67,22 @@ V. Dómine, exáudi oratiónem meam.
 R. Et clamor meus ad te véniat.
 /:secunda 'Domine, exaudi' omittitur:/
 
-[Confiteor]
+[Confiteor_]
 v. Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Joánni Baptístæ, sanctis Apóstolis Petro et Paulo, et ómnibus Sanctis,  quia peccávi nimis, cogitatióne, verbo et ópere: /:percutit sibi pectus:/ mea culpa, mea culpa, mea máxima culpa. Ídeo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Joánnem Baptístam, sanctos Apóstolos Petrum et Paulum, et omnes Sanctos, oráre pro me ad Dóminum Deum nostrum.
 
-[ConfiteorM]
-@:Confiteor:s/Paulo/Paulo, beáto Patri nostro Benedícto/ s/Paulum/Paulum, beátum Patrem nostrum Benedíctum/
+[Confiteor]
+@:Confiteor_
 
-[ConfiteorOP]
+[Confiteor] (rubrica Monastica)
+@:Confiteor_:s/Paulo/Paulo, beáto Patri nostro Benedícto/ s/Paulum/Paulum, beátum Patrem nostrum Benedíctum/
+
+[Confiteor] (rubrica Ordo Praedicatorum)
 v. Confiteor Deo omnipotenti, et beáte Maríae semper Vírgini, et beáto Domíníco Patri nostro, et omnibus Sanctis: quia peccavi nimis cogitatione, locutione, opere et omissione, me cupla: precor beátam Maríam semper Vírginem, et beátum Domínicum Patrem nostrum, et omnes Sanctos oráre pro me.
 
 [Misereatur]
 v. Misereátur nostri omnípotens Deus, et dimíssis peccátis nostris, perdúcat nos ad vitam ætérnam. Amen.
 
-[MisereaturOP]
+[Misereatur] (rubrica Ordo Praedicatorum)
 v. Misereatur mei omnipotens Deus, et dimittat mihi omnia peccata mea, liberet me ab omni malo, salvet, et confirmet in omni opere bono, et perducat me ad vitam aeternam. Amen.
 
 [Indulgentiam]
@@ -86,13 +98,15 @@ R. Dómine, ad adjuvándum me festína.
 v. Glória Patri, et Fílio, * et Spirítui Sancto.
 Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen.
 
-[Tu autem]
+[Tu autem_]
 V. Tu autem, Dómine, miserére nobis.
 R. Deo grátias.
 
-[Tu autemOP]
-V. Tu autem, Dómine, miserére nostri.
-R. Deo grátias.
+[Tu autem]
+@:Tu autem_
+
+[Tu autem] (rubrica Ordo Praedicatorum)
+@:Tu autem_:s/nobis/nostri/
 
 [Benedicamus Domino]
 V. Benedicámus Dómino.
@@ -306,6 +320,27 @@ R. Et clamor meus ad te véniat.
 [Preces feriales Nona]
 @:Preces feriales Tertia
 
+[Preces Dominicales]
+$Kyrie
+$Pater secreto
+$Credo secreto
+V. Benedíctus es, Dómine, Deus patrum nostrórum. 
+R. Et laudábilis et gloriósus in sǽcula.
+V. Benedicámus Patrem et Fílium cum Sancto Spíritu. 
+R. Laudémus, et superexaltémus eum in sǽcula.
+V. Benedíctus es, Dómine, in firmaménto cæli. 
+R. Et laudábilis, et gloriósus, et superexaltátus in sǽcula.
+V. Benedícat et custódiat nos omnípotens et miséricors Dóminus. 
+R. Amen.
+V. Dignáre, Dómine, nocte ista. 
+R. Sine peccáto nos custodíre.
+V. Miserére nostri, Dómine. 
+R. Miserére nostri.
+V. Fiat misericórdia tua, Dómine, super nos. 
+R. Quemádmodum sperávimus in te.
+V. Dómine, exáudi oratiónem meam.
+R. Et clamor meus ad te véniat.
+
 [A porta inferi]
 V. A porta ínferi.
 R. Erue, Dómine, ánimas eórum.
@@ -314,5 +349,48 @@ R. Amen.
 @:Dominus:3-4
 &Dominus_vobiscum2
 
+[Amen]
+R. Amen.
+
 [Per Christum]
 Per Christum Dominum nostrum.
+
+[Oratio Visita_]
+v. Vísita, quǽsumus, Dómine, habitatiónem istam, et omnes insídias inimíci ab ea lónge repélle: Ángeli tui sancti hábitent in ea, qui nos in pace custódiant; et benedíctio tua sit super nos semper.
+
+[Oratio_Visita]
+@:Oratio Visita_
+
+[Oratio_Visita] (rubrica Ordo Praedicatorum)
+@:Oratio Visita_:s/Ángeli tui sancti hábitent/et Ángeli tui sancti habitántes/ s/qui //
+
+[Oratio Visita]
+(rubrica Monastica dicitur)
+$MLitany2
+&Dominus_vobiscum1
+(sed rubrica 196 aut rubrica 1955 dicitur)
+&Dominus_vobiscum
+$Oremus
+@:Oratio_Visita
+$Per Dominum
+
+[Examen]
+/:Examen conscientiæ vel Pater Noster totum secreto.:/
+
+[Benedictio Completorium_]
+V. Jube, domne, benedícere.
+(sed rubrica 196 aut rubrica 1955 dicitur)
+V. Jube, Dómine, benedícere
+Benedictio. Noctem quiétam et finem perféctum concédat nobis Dóminus omnípotens.
+
+[Benedictio Completorium]
+@:Benedictio Completorium_
+
+[Benedictio Completorium] (rubrica Ordo Praedicatorum)
+@:Benedictio Completorium_:s/concédat/tríbuat/
+
+[Benedictio Completorium2]
+Benedictio. Benedícat et custódiat nos omnípotens et miséricors Dóminus, + Pater, et Fílius, et Spíritus Sanctus.
+
+[Benedictio Completorium2] (rubrica Ordo Praedicatorum)
+Benedictio. Benedíctio Dei omnipoténtis + Patris, et Fílii, et Spíritus Sancti descéndat super nos et máneat semper.

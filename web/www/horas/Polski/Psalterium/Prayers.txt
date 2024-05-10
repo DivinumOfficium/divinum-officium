@@ -60,14 +60,20 @@ V. Panie, wysłuchaj modlitwy mojej.
 R. A wołanie moje niech do Ciebie przyjdzie.
 /:opuścić drugie „Panie, wysłuchaj”:/
 
-[Confiteor]
+[Confiteor_]
 v. Spowiadam się Bogu wszechmogącemu, Najświętszej Maryi zawsze Dziewicy, świętemu Michałowi Archaniołowi, świętemu Janowi Chrzcicielowi, świętym Apostołom Piotrowi i Pawłowi, i wszystkim Świętym, że bardzo zgrzeszyłem, myślą, mową i uczynkiem: /:bijąc się w piersi:/ moja wina, moja wina, moja bardzo wielka wina. Przeto błagam Najświętszą Maryję zawsze Dziewicę, świętego Michała Archanioła, świętego Jana Chrzciciela, świętych Apostołów Piotra i Pawła, i wszystkich świętych, o modlitwę za mnie do Pana Boga naszego.
 
-[ConfiteorM]
-@:Confiteor:s/Pawłowi/Pawłowi, Świętemu Ojcu naszemu Benedyktowi/ s/Pawła/Pawła, Świętego Ojca naszego Benedykta/
+[Confiteor] (rubrica Monastica)
+@:Confiteor_:s/Pawłowi/Pawłowi, Świętemu Ojcu naszemu Benedyktowi/ s/Pawła/Pawła, Świętego Ojca naszego Benedykta/
+
+[Confiteor] (rubrica Ordo Praedicatorum)
+v. Spowiadam się Bogu wszechmogącemu, i Najświętszej Maryi zawsze Dziewicy, i świętemu Dominikowi Ojcu naszemu, i wszystkim Świętym: że bardzo zgrzeszyłem, myślą, mową, uczynkiem i zaniedbaniem, moja wina: przeto błagam Najświętszą Maryję zawsze Dziewicę, i świętego Dominika Ojca naszego i wszystkich świętych, módlcie się za mnie.
 
 [Misereatur]
 v. Niech się zmiłuje nad nami Bóg wszechmogący, a odpuściwszy nam grzechy, doprowadzi nas do życia wiecznego. Amen.
+
+[Misereatur] (rubrica Ordo Praedicatorum)
+v. Niech się zmiłuje nade mną, Bóg wszechmogący, a odpuściwszy mi wszystkie grzechy moje, uwolni mnie od wszystkiego złego, i umocni mnie we wszystkich dobrych czynach, i doprowadzi mnie do życia wiecznego. Amen.
 
 [Indulgentiam]
 v. Przebaczenia, + rozgrzeszenia i odpuszczenia grzechów naszych, niech nam udzieli Pan wszechmogący i miłosierny. Amen.
@@ -285,6 +291,27 @@ R. I wyzwól nas dla imienia Twego.
 V. Panie, wysłuchaj modlitwy mojej.
 R. A wołanie moje niech do Ciebie przyjdzie.
 
+[Preces Dominicales]
+$Kyrie
+$Pater secreto
+$Credo secreto
+V. Błogosławiony jesteś, Panie, Boże ojców naszych.
+R. I chwalebny i sławny na wieki.
+V. Błogosławmy Ojca i Syna z Duchem Świętym.
+R. Chwalmy, i wywyższajmy Go na wieki.
+V. Błogosławiany jesteś, Panie, na sklepieniu nieba.
+R. I chwalebny, i sławny, i przenajwyższy na wieki.
+V. Niech nas błogosławi i strzeże wszechmogący i miłosierny Pan.
+R. Amen.
+V. Racz Panie, tej nocy.
+R. Od grzechu nas zachować.
+V. Zmiłuj się nad nami, Panie.
+R. Zmiłuj się nad nami.
+V. Niech miłosierdzie twoje trwa nad nami, Panie.
+R. Bo w Tobie pokładamy nadzieję.
+V. Panie, wysłuchaj modlitwy mojej.
+R. A wołanie moje niech do Ciebie przyjdzie.
+
 [A porta inferi]
 V. Od wrót piekielnych.
 R. Wybaw dusze ich, Panie.
@@ -295,3 +322,22 @@ R. Amen.
 
 [Per Christum]
 Przez Chrystusa Pana naszego.
+
+[Oratio Visita_]
+v. Nawiedź, prosimy Cię, Panie, ten dom, i oddal od niego wszelkie wrogie zasadzki: niech mieszkają w nim Twoi święci Aniołowie i strzegą nas w pokoju; a błogosławieństwo Twoje niech zawsze będzie z nami.
+
+[Examen]
+/:Rachunek sumienia lub Ojcze nasz całe po cichu:/
+
+[Benedictio Completorium_]
+V. Pobłogosław, ojcze.
+Benedictio. Noc spokojną i koniec doskonały niech nam da Pan wszechmogący.
+
+[Benedictio Completorium]
+@:Benedictio Completorium_
+
+[Benedictio Completorium2]
+Benedictio. Niech nas błogosławi i strzeże wszechmogący i miłosierny Pan, + Ojciec, i Syn, i Duch Święty.
+
+[Benedictio Completorium2] (rubrica Ordo Praedicatorum)
+Benedictio. Błogosławieństwo Boga wszechmogącego + Ojca i Syna, i Ducha Świętego, niech spocznie na nas i z nami zostanie na zawsze.
