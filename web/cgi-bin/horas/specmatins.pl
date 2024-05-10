@@ -547,8 +547,6 @@ sub lectiones {
 	}
 	if ($version =~ /1960/ && $lang =~ /Latin/i) { $a[1] = 'Jube, Dómine, benedícere.'; }
 	
-	push(@s, "_");
-	
 	my $read_per_noct = ($rule =~ /12 lectio/) ? 4 : 3;
 	
 	$num = 1 if ($num < 1);

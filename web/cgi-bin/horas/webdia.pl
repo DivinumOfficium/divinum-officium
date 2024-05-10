@@ -501,7 +501,7 @@ sub setcell {
 
   suppress_alleluia(\$text) if ($dayname[0] =~ /Quad/i && ($missa || !Septuagesima_vesp()));
 
-  # $text =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
+  $text =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
   if ($lang =~ /Latin/i) { $text = spell_var($text); }
 
   if ($text =~ /%(.*?)%/) {
