@@ -258,6 +258,8 @@ sub clean_setupsave {
 sub setfont {
   my $istr = shift;
   my $text = shift;
+  return $text unless $istr;
+
   my $size = ($istr =~ /^\.*?([0-9\-\+]+)/i) ? $1 : 0;
   my $color = ($istr =~ /([a-z]+)\s*$/i) ? $1 : '';
   if ($istr =~ /(\#[0-9a-f]+)\s*$/i || $istr =~ /([a-z]+)\s*$/i) { $color = $1; }
