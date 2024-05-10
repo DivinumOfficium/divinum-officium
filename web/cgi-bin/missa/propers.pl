@@ -836,7 +836,7 @@ sub Vidiaquam : ScriptFunc {
   if ($solemn && $dayofweek == 0 && $votive !~ /Defunct/i) {
     my $name = ($dayname[0] =~ /Pasc/i) ? 'Vidi aquam' : 'Asperges me';
     my $w = prayer($name, $lang);
-    return resolve_refs($w);
+    return resolve_refs($w, $lang);
   } else {
     return '';
   }
