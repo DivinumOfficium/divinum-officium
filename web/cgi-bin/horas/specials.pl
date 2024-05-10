@@ -2199,31 +2199,31 @@ sub getrefs {
 
 sub get_prima_responsory {
   my $lang = shift;
-  my $key = '';
-  if ($dayname[0] =~ /(Adv|Nat)/i) { $key = $1; }
-  if ($dayname[0] =~ /Pasc/i && $dayname[0] !~ /Pasc5-[4-6]/i && $dayname[0] !~ /Pasc6/i) { $key = 'Pasch'; }
-  if ($dayname[0] =~ /Pasc5-[4-6]|Pasc6/i) {$key = 'Asc';}
+  my $key;
+
+  if ($dayname[0] =~ /^(Adv|Nat)/i) {
+    $key = $1;
+  } elsif ($dayname[0] =~ /^Pasc/i) {
+    $key = $dayname[0] eq 'Pasc7' ? 'Pent' :
+            ($dayname[0] eq 'Pasc5' && $dayofweek > 4)
+              || $dayname[0] eq 'Pasc6' ? 'Asc' : 'Pasch';
+  }
 
   if ( $rule =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i
-    || $scriptura{Rule} =~ /Doxology=(Nat|Epi|Pasch|Asc)/i
-    || ($version !~ /(1960|Newcal)/ && $scriptura{Rule} =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i)
-    || ($version !~ /(1960|Newcal)/ && $commemoratio{Rule} =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i))
+    || $commemoratio{Rule} =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i)
   {
     $key = $1;
-  } elsif ($version !~ /1960/ && $month == 8 && $day > 15 && $day < 23) {
+  } elsif ($version !~ /196/ && $month == 8 && $day > 15 && $day < 23) {
     $key = 'Nat';
   }
-  if ($dayname[0] =~ /Pasc7/i) { $key = 'Pent'; }
-  if ($day !~ 31 && $dayname[0] == /Pasc5-5/i) {$key = 'Asc';}
 
-  if ( ($version =~ /1960/ && $month == 12 && $day > 8 && $day < 16 && $version !~ /Newcal/ && $day !~ 12)
-    || ($version !~ /Trident/i && $winner{Rank} =~ /Adventus/))
-  {
+  if ($version =~ /196/ && $month == 12 && $day > 8 && $day < 16 && $version !~ /Newcal/ && $day !~ 12) {
     $key = 'Adv';
   }
-  if ($version =~ /1960/ && $month == 1 && $day > 5 && $day < 14 && $commune !~ /C10/) { $key = 'Epi'; }
-  if ($version =~ /1960/ && $key =~ /Corp/) { $key = ''; }
-  if (!$key) { return ''; }
+
+  if ($version =~ /196/ && $key =~ /Corp|Heart/) { $key = ''; }
+  return '' unless $key;
+
   my %t = %{setupstring($lang, 'Psalterium/Prima Special.txt')};
   return $t{"Responsory $key"};
 }
