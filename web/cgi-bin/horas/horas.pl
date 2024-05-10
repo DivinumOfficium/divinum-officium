@@ -181,7 +181,7 @@ sub pater_noster : ScriptFunc {
 # returns the text of the hymn
 sub teDeum : ScriptFunc {
   my $lang = shift;
-  return "\n_\n!Te Deum\n" . prayer('Te Deum', $lang);
+  return "\n!Te Deum\n" . prayer('Te Deum', $lang);
 }
 
 #*** Alleluia($lang)
