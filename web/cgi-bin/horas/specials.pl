@@ -353,6 +353,7 @@ sub specials {
         $name =~ s/ / Pasc7 / if ($hora =~ /Tertia/ && $dayname[0] =~ /Pasc7/);
         if ($hora eq 'Completorium' && $version =~ /^Ordo Praedicatorum/) {
           $versum = %{setupstring($lang, 'Psalterium/Minor Special.txt')}{'Versum 4'};
+          postprocess_vr($versum, $lang);
         }
         $hymnsource = 'Minor';
         $section = "#". $section;
@@ -370,7 +371,6 @@ sub specials {
       $hymn =~ s/_\n(?!!)/_\nr. /g;
       push(@s, "$section\n$hymn");
       if ($versum) {
-        postprocess_vr($versum, $lang);
         push(@s, "_\n$versum");
       }
       next;
