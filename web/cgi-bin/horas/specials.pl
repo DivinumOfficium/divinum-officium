@@ -2213,6 +2213,7 @@ sub get_prima_responsory {
     $key = 'Nat';
   }
   if ($dayname[0] =~ /Pasc7/i) { $key = 'Pent'; }
+  if ($dayname[0] == /Pasc5-5/i) {$key = 'Asc';}
 
   if ( ($version =~ /1960/ && $month == 12 && $day > 8 && $day < 16 && $version !~ /Newcal/ && $day !~ 12)
     || ($version !~ /Trident/i && $winner{Rank} =~ /Adventus/))
