@@ -5,7 +5,7 @@ use utf8;
 # Date : 2015-10-28
 # Divine Office
 
-package horas;
+package main;
 #1;
 
 #use warnings;
@@ -78,7 +78,11 @@ require "$Bin/horas.pl";
 require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
 if (-e "$Bin/monastic.pl") {require "$Bin/monastic.pl";}
+require "$Bin/webdia.pl";
+require "$Bin/horasjs.pl";
 #require "$Bin/tfertable.pl";
+use lib "$Bin/../../../web/cgi-bin";
+use  DivinumOfficium::LanguageTextTools qw(load_languages_data);
 
 binmode(STDOUT,':encoding(utf-8)');
 
@@ -240,6 +244,7 @@ if ($command =~ /setup/i) {
   setuptable($command);
 
 } elsif ($command =~ /pray/) {
+  load_languages_data($lang1, $lang2, $version, $missa);
   $pmode = 'hora';
   $command =~ s/(pray|change|setup)//ig;
   $title = $command;
