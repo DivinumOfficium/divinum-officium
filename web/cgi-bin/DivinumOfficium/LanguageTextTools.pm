@@ -99,7 +99,7 @@ sub translate {
   my $name = shift;
   my $lang = shift;
 
-  return $_translate{Latin}{$name} =~ s/\s*$//r || $name if $lang eq 'Latin';
+  return $_translate{Latin}{$name} =~ s/\s*$//r || $name if $lang =~ /Latin/;
 
   my $prefix = '';
   if ($name =~ s/^([\$&])//) { $prefix = $1; }
@@ -122,8 +122,9 @@ sub prayer {
 sub load_languages_data {
   my($lang1, $lang2, $version, $missaf) = @_;
   my @langs = qw/Latin English/;
-  push(@langs, $lang1) unless $lang1 =~ /Latin|English/;
-  push(@langs, $lang2) unless $lang2 =~ /Latin|English/;
+  push(@langs, $lang1) unless $lang1 =~ /(?:Latin|English)$/;
+  push(@langs, $lang2) unless $lang2 =~ /(?:Latin|English)$/;
+  main::error(join('+',@langs));
   my $dir = $missaf ? 'Ordo' : 'Psalterium';
   foreach my $lang (@langs) {
     $_prayers{"$lang$version"} = main::setupstring($lang, "$dir/Prayers.txt");
