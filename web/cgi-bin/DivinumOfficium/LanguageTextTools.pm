@@ -124,7 +124,6 @@ sub load_languages_data {
   my @langs = qw/Latin English/;
   push(@langs, $lang1) unless $lang1 =~ /(?:Latin|English)$/;
   push(@langs, $lang2) unless $lang2 =~ /(?:Latin|English)$/;
-  main::error(join('+',@langs));
   my $dir = $missaf ? 'Ordo' : 'Psalterium';
   foreach my $lang (@langs) {
     $_prayers{"$lang$version"} = main::setupstring($lang, "$dir/Prayers.txt");
