@@ -1,5 +1,8 @@
+-b
+-bext=/
 -i=2
 --cuddled-blocks
+--cuddled-paren-brace
 --cuddled-break-option=2
 -nsbl
 --nospace-for-semicolon
@@ -10,6 +13,8 @@
 --square-bracket-tightness=2
 --block-brace-tightness=1
 -novalign
+--valign-side-comments
+--valign-block-comments
 --opening-token-right
 --add-newlines
 --delete-old-newlines
@@ -22,3 +27,9 @@
 --comma-arrow-breakpoints=0
 --keep-old-blank-lines=1
 --keyword-group-blanks
+--extended-continuation-indentation
+--want-trailing-commas=m
+--add-trailing-commas
+--delete-trailing-commas
+--delete-weld-interfering-commas
+--one-line-block-nesting=0
