@@ -10,18 +10,19 @@ local %_setup;
 #*** getsetup($name)
 sub getsetup {
   my ($name) = @_;
+
   if (wantarray) {
     return split(',', $_setup{$name});
-  }
-  else {
+  } else {
     return $_setup{$name};
   }
 }
 
 sub loadsetup {
-  my($setup) = @_;
-  if ($setup) { 
-    %_setup = split(';;;', $setup); 
+  my ($setup) = @_;
+
+  if ($setup) {
+    %_setup = split(';;;', $setup);
   } else {
     $datafolder =~ /(missa|horas)$/;
     %_setup = %{setupstring('', "$1.setup")};
@@ -43,8 +44,9 @@ sub setsetupvalue {
 #*** setsetup($name, $value1, $value2 ...)
 # set the values into $setup{$name} hash item
 sub setsetup {
-  my($name, @values) = @_;
-  for(my $i=0; $i<@values; $i++) {
+  my ($name, @values) = @_;
+
+  for (my $i = 0; $i < @values; $i++) {
     setsetupvalue($name, $i, $values[$i]);
   }
 }
@@ -66,6 +68,7 @@ sub savesetup {
   }
   return $str;
 }
+
 #*** setuptable($command, $title)
 # generates page for options, using data from horas.dialog hash (in www/horas folder)
 #
@@ -74,7 +77,7 @@ sub savesetup {
 # labelstring~>$default~>type~>mode~>condition
 
 sub setuptable {
-  my($command, $title) = @_;
+  my ($command, $title) = @_;
   $title =~ s/setupparameters/Options/i;
 
   my $output = << "PrintTag";
@@ -89,9 +92,11 @@ PrintTag
 
   my ($width, $rpar, @rpar, $size, @size, $range, @range, $j);
   my $i = 1;
+
   foreach (split(';;', $scripto)) {
-    my($parname, $parvar, $parmode, $parpar, $parpos, $parfunc, $parhelp) = split('~>');
+    my ($parname, $parvar, $parmode, $parpar, $parpos, $parfunc, $parhelp) = split('~>');
     my $parvalue = eval($parvar);
+
     if (!$parpos) {
       $parpos = $i;
       $i++;
@@ -99,6 +104,7 @@ PrintTag
     if (!$parmode) { next; }
 
     $output .= "<TR><TD ALIGN=left>\n";
+
     if ($parmode !~ /label/) {
       if ($parhelp =~ /\#/) { $output .= "<A HREF=\"$helpfile$parhelp\" TARGET='_new'>\n"; }
       $output .= "$parname\n";
@@ -106,7 +112,7 @@ PrintTag
       $output .= " : </TD><TD ALIGN=right>";
     }
     $output .= htmlInput("I$parpos", $parvalue, $parmode, $parpar, $parfunc, $parhelp);
-    $output .= "</TD></TR>\n";  
+    $output .= "</TD></TR>\n";
   }
   $output .= << "PrintTag";
 </TABLE>
@@ -125,9 +131,11 @@ sub getsetupvalue {
   my @script;
   my @parameters = split(/;;\r?\n/, getdialog('parameters'));
   my $i = 1;
+
   foreach (@parameters) {
-    my($parname, $parvalue, $parmode, $parpar, $parpos, $parfunc, $parhelp) = split('~>');
+    my ($parname, $parvalue, $parmode, $parpar, $parpos, $parfunc, $parhelp) = split('~>');
     $parvalue = substr($parvalue, 1);
+
     if (!$parpos) {
       $parpos = $i;
       $i++;

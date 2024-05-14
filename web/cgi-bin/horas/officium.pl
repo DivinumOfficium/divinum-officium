@@ -26,7 +26,8 @@ use lib "$Bin/..";
 use DivinumOfficium::Main qw(liturgical_color);
 use DivinumOfficium::Date qw(prevnext);
 use DivinumOfficium::RunTimeOptions qw(check_version check_horas check_language);
-use DivinumOfficium::LanguageTextTools qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
+use DivinumOfficium::LanguageTextTools
+  qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 
 $error = '';
 $debug = '';
@@ -34,7 +35,7 @@ $debug = '';
 our $Ck = 0;
 our $notes = 0;
 our $missa = 0;
-our $officium = substr($0,rindex($0, '/') + 1);
+our $officium = substr($0, rindex($0, '/') + 1);
 our $Ck = substr($officium, 0, 1) eq 'C';
 our $version = '';
 
@@ -43,7 +44,7 @@ our $version = '';
 our @dayname;    #0=Advn|Natn|Epin|Quadpn|Quadn|Pascn|Pentn 1=winner title|2=other title
 
 #filled by occurence()
-our $winner;     #the folder/filename for the winner of precedence
+our $winner;          #the folder/filename for the winner of precedence
 our $commemoratio;    #the folder/filename for the commemorated
 our $scriptura;       #the folder/filename for the scripture reading (if winner is sancti)
 our $commune;         #the folder/filename for the used commune
@@ -58,15 +59,15 @@ our $litaniaflag = 0;
 our $octavam = '';    #to avoid duplication of commemorations
 
 #filled by precedence()
-our %winner;          #the hash of the winner
-our %commemoratio;    #the hash of the commemorated
-our %scriptura;       #the hash for the scriptura
-our %commune;         # the hash of the commune
-our (%winner2, %commemoratio2, %commune2);    #same for 2nd column
-our $rule;                                    # $winner{Rank}
-our $communerule;                             # $commune{Rank}
-our $duplex;                                  #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
-    # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
+our %winner;                                 #the hash of the winner
+our %commemoratio;                           #the hash of the commemorated
+our %scriptura;                              #the hash for the scriptura
+our %commune;                                # the hash of the commune
+our (%winner2, %commemoratio2, %commune2);   #same for 2nd column
+our $rule;                                   # $winner{Rank}
+our $communerule;                            # $commune{Rank}
+our $duplex;                                 #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
+                                             # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
 
 binmode(STDOUT, ':encoding(utf-8)');
 
@@ -82,10 +83,12 @@ require "$Bin/specmatins.pl";
 require "$Bin/monastic.pl";
 require "$Bin/horasjs.pl";
 require "$Bin/officium_html.pl";
+
 $q = new CGI;
 
 #get parameters
 getini('horas');    #files, colors
+
 our ($lang1, $lang2, $expand, $votive, $column, $local);
 our %translate;     #translation of the skeleton label for 2nd language
 
@@ -93,6 +96,7 @@ our $command = strictparam('command');
 our $browsertime = strictparam('browsertime');
 our $buildscript = '';    #build script
 our $searchvalue = strictparam('searchvalue');
+
 if (!$searchvalue) { $searchvalue = '0'; }
 
 our $caller = strictparam('caller');
@@ -101,15 +105,15 @@ our $expandind = 0;
 $setupsave = strictparam('setup');
 loadsetup($setupsave);
 
-my $cookies_suffix = lc(substr($officium,0,1));
+my $cookies_suffix = lc(substr($officium, 0, 1));
 
 if (!$setupsave) {
   getcookies('horasp', 'parameters');
   getcookies("horasg$cookies_suffix", 'general');
 }
 
-set_runtime_options('general' . ($Ck ? 'c' : '')); #$expand, $version, $lang2
-set_runtime_options('parameters'); # priest, lang1 ... etc
+set_runtime_options('general' . ($Ck ? 'c' : ''));    #$expand, $version, $lang2
+set_runtime_options('parameters');                    # priest, lang1 ... etc
 
 if ($command =~ s/changeparameters//) { getsetupvalue($command); }
 
@@ -119,13 +123,16 @@ $lang2 = check_language($lang2);
 
 our $plures = strictparam('plures');
 my @horas = ();
+
 if ($command =~ s/^pray//) {
   $command =~ s/SanctaMissa//;
   @horas = split(/(?=\p{Lu}\p{Ll}+)/, $command);
-  if ($horas[0] eq 'Omnes') { 
+
+  if ($horas[0] eq 'Omnes') {
     @horas = gethoras($votive eq 'C9');
   } elsif ($horas[0] ne 'Plures') {
     @horas = map { check_horas($_); } @horas;
+
     if (@horas > 1 && $votive ne 'C9') {
       $plures = join('', @horas);
     }
@@ -137,7 +144,7 @@ setcookies('horasp', 'parameters');
 setcookies("horasg$cookies_suffix", 'general');
 
 if ($Ck) {
-  $version1 = $version; # save value for use in horas
+  $version1 = $version;    # save value for use in horas
   $version2 = check_version($version2);
   $version2 ||= $version;
   if ($version eq $version2) { $version2 = 'Divino Afflatu - 1954'; }
@@ -171,6 +178,7 @@ our $psalmnum1 = 0;
 our $psalmnum2 = 0;
 
 $completed = getcookie1('completed');
+
 if ( $date1 eq gettoday()
   && $command =~ /pray/i
   && $completed < 8
@@ -204,6 +212,7 @@ if ($command =~ /setup(.*)/i) {
 } else {
   print headline($html_dayhead, substr($officium, 0, 1), $version, $version2);
   load_languages_data($lang1, $lang2, $version, $missa);
+
   if ($command =~ /appendix/i) {
     require "$Bin/appendix.pl";
     appendix($command);
@@ -213,19 +222,22 @@ if ($command =~ /setup(.*)/i) {
       print setplures();
     } elsif ($horas[0]) {
       foreach (@horas) {
-        $hora = $_; # precedence use global $hora !
-        if (/laudes/i && ($horas[0] !~ /laudes/i)) { 
-          precedence($date1); # prevent lost commemorations
+        $hora = $_;    # precedence use global $hora !
+
+        if (/laudes/i && ($horas[0] !~ /laudes/i)) {
+          precedence($date1);    # prevent lost commemorations
         } elsif (/vesper/i && ($horas[0] !~ /vesper/i)) {
           precedence($date1);
           setsecondcol();
           my $vesperahead = setheadline();
-          if ($dayhead ne $vesperahead) { 
-            print par_c("<BR><BR>" . html_dayhead($vesperahead)); 
+
+          if ($dayhead ne $vesperahead) {
+            print par_c("<BR><BR>" . html_dayhead($vesperahead));
           }
         }
         horas($hora);
       }
+
       if ($officium ne 'Pofficium.pl' && @horas == 1) {
         print par_c("<INPUT TYPE=SUBMIT VALUE='$hora persolut.' onclick='okbutton();'>");
       }
@@ -249,7 +261,7 @@ if ($command =~ /setup(.*)/i) {
     print selectable_p('votives', $votive, $date1, $version, $lang2, $votive, $testmode);
     print "</TABLE>\n";
   }
-  
+
   print par_c("\n" . bottom_links_menu(substr($officium, 0, 1) eq 'C'));
   if ($building && $buildscript) { print buildscript($buildscript); }
 }

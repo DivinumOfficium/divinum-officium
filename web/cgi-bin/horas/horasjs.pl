@@ -2,7 +2,8 @@
 # the sub is called from htmlhead
 sub horasjs {
 
-  my($output);
+  my ($output);
+
   # $caller in principle might not be defined.
   my $caller_flag = $caller || 0;
 
@@ -176,7 +177,7 @@ function prevnext(ch) {
 }
 PrintTag
 
-  $output
+  $output;
 }
 
 1;

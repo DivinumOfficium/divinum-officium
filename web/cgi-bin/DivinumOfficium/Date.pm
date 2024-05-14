@@ -19,14 +19,14 @@ use FindBin qw($Bin);
 sub getweek {
   my ($day, $month, $year, $tomorrow, $missa) = @_;
 
-  my $t= date_to_ydays($day, $month, $year);
+  my $t = date_to_ydays($day, $month, $year);
   $t++ if $tomorrow;
   my $n;
 
   my $advent1 = getadvent($year);
-	my $christmas = date_to_ydays(25, 12, $year);
-	my $tDay = $tomorrow ? $day+1 : $day;
-	
+  my $christmas = date_to_ydays(25, 12, $year);
+  my $tDay = $tomorrow ? $day + 1 : $day;
+
   #Advent in december
   if ($t >= $advent1) {
     if ($t < $christmas) {
@@ -36,7 +36,7 @@ sub getweek {
     return "Nat$tDay";
   }
 
-  if ($month == 1 && $day < (7-$tomorrow)) {
+  if ($month == 1 && $day < (7 - $tomorrow)) {
     return '';
   }
   my $ordtime = 6 + 7 - day_of_week(6, 1, $year);
@@ -79,7 +79,7 @@ sub getadvent {
   my @christmas = (25, 12, $year);
   my $christmas = date_to_ydays(@christmas);
   my $christmas_dow = day_of_week(@christmas) || 7;
-  return $christmas - $christmas_dow - 21;         #1st Sunday of Advent
+  return $christmas - $christmas_dow - 21;    #1st Sunday of Advent
 }
 
 #*** geteaster(year)
@@ -87,59 +87,58 @@ sub getadvent {
 # code source CPAN module Date::Easter 1.22
 sub geteaster {
   my ($year) = @_;
-  my ( $G, $C, $H, $I, $J, $L, $month, $day, );
+  my ($G, $C, $H, $I, $J, $L, $month, $day);
   $G = $year % 19;
-  $C = int( $year / 100 );
-  $H = ( $C - int( $C / 4 ) - int( ( 8 * $C + 13 ) / 25 ) + 19 * $G + 15 ) % 30;
-  $I = $H - int( $H / 28 ) *
-    ( 1 - int( $H / 28 ) * int( 29 / ( $H + 1 ) ) * int( ( 21 - $G ) / 11 ) );
-  $J     = ( $year + int( $year / 4 ) + $I + 2 - $C + int( $C / 4 ) ) % 7;
-  $L     = $I - $J;
-  $month = 3 + int( ( $L + 40 ) / 44 );
-  $day   = $L + 28 - ( 31 * int( $month / 4 ) );
-  return ( $day, $month, $year );
+  $C = int($year / 100);
+  $H = ($C - int($C / 4) - int((8 * $C + 13) / 25) + 19 * $G + 15) % 30;
+  $I = $H - int($H / 28) * (1 - int($H / 28) * int(29 / ($H + 1)) * int((21 - $G) / 11));
+  $J = ($year + int($year / 4) + $I + 2 - $C + int($C / 4)) % 7;
+  $L = $I - $J;
+  $month = 3 + int(($L + 40) / 44);
+  $day = $L + 28 - (31 * int($month / 4));
+  return ($day, $month, $year);
 }
 
 #*** leapyear($year)
 # returns true if year is leap
 sub leapyear {
   my $year = shift;
-  !(($year % 4) or !($year % 100) and ($year % 400))
+  !(($year % 4) or !($year % 100) and ($year % 400));
 }
 
 #*** day_of_week($day, $month, $year)
 # day of week
 sub day_of_week {
-  my($day, $month, $year) = @_;
+  my ($day, $month, $year) = @_;
 
-  ($year*365 + int(($year-1) / 4) - int(($year-1) / 100) + int(($year-1) / 400) - 1 + date_to_ydays(@_)) % 7
+  ($year * 365 + int(($year - 1) / 4) - int(($year - 1) / 100) + int(($year - 1) / 400) - 1 + date_to_ydays(@_)) % 7;
 }
 
 ###* ydays_to_date($days, $year)
 # date for day number in year
 sub ydays_to_date {
-  my($days, $year) = @_;
+  my ($days, $year) = @_;
 
   my @months = (0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
   if (leapyear($year)) { $months[2]++ }
 
   my $month = 1;
-  my $day =$days;
+  my $day = $days;
 
   while ($day > $months[$month] && $month < 13) {
-      $day -= $months[$month];
-      $month++;
+    $day -= $months[$month];
+    $month++;
   }
 
-  ($day, $month, $year)
+  ($day, $month, $year);
 }
 my @MONTHSUP = (0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334);
 
 # day number in year
 sub date_to_ydays {
-  my($day, $month, $year) = @_;
+  my ($day, $month, $year) = @_;
 
-  $MONTHSUP[$month-1] + $day + ($month > 2) * leapyear($year)
+  $MONTHSUP[$month - 1] + $day + ($month > 2) * leapyear($year);
 }
 
 #*** next day for vespera
@@ -150,11 +149,12 @@ sub nextday {
   my $day = shift;
   my $year = shift;
   my $time = date_to_ydays($day, $month, $year) + 1;
+
   if ($time > 365 && (!leapyear($year) || $time == 367)) {
-    get_sday(1, 1, $year + 1)
+    get_sday(1, 1, $year + 1);
   } else {
     my @d = ydays_to_date($time, $year);
-    get_sday($d[1], $d[0], $d[2])
+    get_sday($d[1], $d[0], $d[2]);
   }
 }
 
@@ -171,21 +171,24 @@ sub monthday {
 
   my $lit_month = 0;
   my @first_sunday_day_of_year = ();
-  for (8..12) { # fill above table from Aug to Dec, find lit(urgial)_month
+
+  for (8 .. 12) {    # fill above table from Aug to Dec, find lit(urgial)_month
     my $first_of_month = $MONTHSUP[$_ - 1] + 1 + $leapyear;
     my $dofweek = day_of_week(1, $_, $year);
     push @first_sunday_day_of_year, $first_of_month - $dofweek;
     $first_sunday_day_of_year[$#first_sunday_day_of_year] += 7
       if $dofweek >= 4 || ($dofweek and $modernstyle);
+
     if ($day_of_year >= $first_sunday_day_of_year[$#first_sunday_day_of_year]) {
-      $lit_month = $_
+      $lit_month = $_;
     } else {
-      last
+      last;
     }
   }
   return '' unless $lit_month;
 
   my $advent;
+
   if ($lit_month > 10) {
     $advent = getadvent($year);
     return '' if $day_of_year >= $advent;
@@ -196,8 +199,11 @@ sub monthday {
   # Special handling for October with the 1960 rubrics: the III. week vanishes
   # in years when its Sunday would otherwise fall on the 18th-21st (i.e. when
   # the first Sunday in October falls on 4th-7th).
-  $week++ if $lit_month == 10 && $modernstyle && $week >= 2
-             && (ydays_to_date($first_sunday_day_of_year[10 - 8], $year))[0] >= 4;
+  $week++
+    if $lit_month == 10
+    && $modernstyle
+    && $week >= 2
+    && (ydays_to_date($first_sunday_day_of_year[10 - 8], $year))[0] >= 4;
 
   # Special handling for November: the II. week vanishes most years (and always
   # with the 1960 rubrics). Achieve this by counting backwards from Advent.
@@ -225,8 +231,7 @@ sub get_sday {
   if (leapyear($year) && $month == 2) {
     if ($day == 24) {
       $day = 29;
-    }
-    elsif ($day > 24) {
+    } elsif ($day > 24) {
       $day -= 1;
     }
   }
@@ -240,9 +245,11 @@ sub prevnext {
   $date1 =~ s/\//\-/g;
   my ($month, $day, $year) = split('-', $date1);
   my $d = date_to_ydays($day, $month, $year) + $inc;
-  ($day, $month, $year) = $d > 365 && (!leapyear($year) || $d == 367) ? (1, 1, $year + 1)
-                          : $d ? ydays_to_date($d, $year) : (31, 12, $year - 1);
-  sprintf("%02i-%02i-%04i", $month, $day, $year)
+  ($day, $month, $year) =
+      $d > 365 && (!leapyear($year) || $d == 367) ? (1, 1, $year + 1)
+    : $d ? ydays_to_date($d, $year)
+    : (31, 12, $year - 1);
+  sprintf("%02i-%02i-%04i", $month, $day, $year);
 }
 
 1;
