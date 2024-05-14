@@ -210,10 +210,8 @@ sub specials {
       my $capit = $capit{$name};
       my $resp = '';
 
-      if ($version !~ /^Monastic/) {
-        $resp = $capit{"Responsory $name"};
-        $capit =~ s/\s*$//;
-        $capit .= "\n_\n$resp";
+      if ($version !~ /^Monastic/ && ($resp = $capit{"Responsory $name"})) {
+        $capit =~ s/\s*$/ "\n_\n" . $resp /e
       }
       my @capit = split("\n", $capit);
 
