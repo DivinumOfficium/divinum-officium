@@ -224,6 +224,7 @@ sub occurrence {
 						|| ($srank =~ /vigilia/i && ($version !~ /196/ || $sname !~ /08\-09/)) # Vigils with the ackward exception of S. Lawrence in 1960 rules
 						|| ($version !~ /1960|Trident/ && $hora =~ /Completorium/i && $month == 11 && $day == 1 && $dayofweek != 6) # Office of All Souls supersedes All Saints at Completorium from 1911 to 1959
 						|| ($srank[2] < 2 && $trank && !($month == 1 && $day > 6 && $day < 13)) # Simplex end after None.
+						|| ($version =~ /1955|1963/ && $srank[2] >= 2.2 && $srank[2] < 2.9 && $srank[1] =~ /Semiduplex/i) # Reduced to Simplex/Comm ad Laudes tantum ends after None.
 					) {
 					$srank = '';
 					%saint = undef;
@@ -256,8 +257,8 @@ sub occurrence {
 				$tname = $trank = '';
 				@trank = undef;
 				%tempora = undef;
-			}	elsif ($version =~ /1955/ && $srank[2] >= 2 && $srank[2] <= 2.2 && $srank[1] =~ /Semiduplex/i) {
-				$srank[2] = 1.5; #1955: semiduplex reduced to simplex
+			}	elsif ($version =~ /1955|1963/ && $srank[2] >= 2.2 && $srank[2] < 2.9 && $srank[1] =~ /Semiduplex/i) {
+				$srank[2] = ($version =~ /monastic/i) ? 1.1 : 1.19; #1955: semiduplex reduced to simplex; Monastic post-DA reduced to "Memoria"
 			} elsif ($version =~ /196/i && $srank[2] < 2 && $srank[1] =~ /Simplex/i	&& $testmode =~ /seasonal/i	&& ($month > 1 || $day > 13))	{
 				$srank[2] = 1;
 			}
@@ -1399,6 +1400,7 @@ sub setheadline {
 			'none', 'Simplex', 'Semiduplex', 'Duplex',
 			'Duplex majus', 'Duplex II. classis', 'Duplex I. classis', 'Duplex I. classis'
 			);
+			if ($version =~ /1955/) { $tradtable[2] = 'Simplex'; }
 			my @newtable = (
 			'none',
 			'Commemoratio',
