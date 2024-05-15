@@ -145,17 +145,17 @@ sub psalmi_matutinum_monastic {
 
   if ($rule =~ /12 lectiones/) {
     lectiones(1, $lang);    # first Nocturn of 4 lessons (
-  } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i && $month < 11 && $winner{Rank} !~ /vigil|quattuor/i) {
-      # at least before 1960 (Breviarum Monasticum 1930), the change from "summer" to "winter" matins was tied to the 1st Sunday of November
-      # not All Saints' Day. Unless this has been changed with moving the 1st Sunday of November occuring after 10-29 to after 11-01
-      # the elsif above makes a mistake and refers to non-existing scriptura of the last week of October and should be replaced by the following:
-      # } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i && monthday() !~ /^11[1-5]\-/ && $winner{Rank} !~ /vigil|quattuor/i) {
-    if ($winner =~ /Tempora/i
-      || !(exists($winner{Lectio94}) || exists($winner{Lectio4})))
-    {
-      brevis_monastic($lang);   # on a ferial day in "Summer", we have just a Lectio brevis
+	} elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i && monthday() !~ /^11[1-5]\-/ && $winner{Rank} !~ /vigil|quat(t?)uor|infra octavam|post octavam asc|secunda.*roga/i) {
+		# from Low Sunday till the first Sunday of November, unless there is a Homily, i.e., outside Ascensiontide (pre-55), Rogation Monday, Pentecost, Vigils, Ember days and Octaves:
+		# The change from "summer" to "winter" matins (pre- and post-1960) is tied to the 1st Sunday of November not All Saints' Day.
+		# Unless this has been changed with moving the 1st Sunday of November occuring after 10-29 to after 11-01
+		# The previous elsif made a mistake and referred to non-existing scriptura of the last week of October
+    if ($winner =~ /Tempora/i || !(exists($winner{Lectio94}) || exists($winner{Lectio4}))) {
+      brevis_monastic($lang);
+			# on a ferial day in "Summer", we have just a Lectio brevis
     } elsif (exists($winner{Lectio94}) || exists($winner{Lectio4})) {
-      legend_monastic($lang);   # on a III. class feast in "Summer", we have the contracted Saint's legend
+      legend_monastic($lang);   
+			# on a III. class feast in "Summer", we have the contracted Saint's legend
     }
     push(@s, "\n");
   } else {
