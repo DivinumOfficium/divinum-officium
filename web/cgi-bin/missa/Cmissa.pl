@@ -25,8 +25,7 @@ use Time::Local;
 use locale;
 use lib "$Bin/..";
 use DivinumOfficium::Main qw(liturgical_color);
-use DivinumOfficium::LanguageTextTools
-  qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
+use DivinumOfficium::LanguageTextTools qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 $error = '';
 $debug = '';
 
@@ -35,29 +34,18 @@ our $NewMass = 1;
 our $missa = 1;
 our $officium = 'Cmissa.pl';
 
-@versions = (
-  'Ambrosian',
-  'Mozarabic',
-  'Sarum',
-  'Dominican',
-  'Trident 1570',
-  'Divino Afflatu',
-  'Rubrics 1960',
-  'Rubrics 1967',
-  'New Mass',
-);
-%ordos = split(
-  ',',
-  "Mozarabic,OrdoM,Sarum,OrdoS,Ambrosian,OrdoA,Dominican,OrdoOP,Trident 1570,Ordo,"
-    . "Divino Afflatu,Ordo,Rubrics 1960,Ordo,Rubrics 1967,Ordo67,New Mass,OrdoN",
-);
+@versions =
+  ('Ambrosian', 'Mozarabic', 'Sarum', 'Dominican', 'Trident 1570', 'Divino Afflatu', 'Rubrics 1960', 'Rubrics 1967', 'New Mass');
+%ordos = split(',',
+      "Mozarabic,OrdoM,Sarum,OrdoS,Ambrosian,OrdoA,Dominican,OrdoOP,Trident 1570,Ordo,"
+    . "Divino Afflatu,Ordo,Rubrics 1960,Ordo,Rubrics 1967,Ordo67,New Mass,OrdoN");
 
 #***common variables arrays and hashes
 #filled  getweek()
 our @dayname;    #0=Advn|Natn|Epin|Quadpn|Quadn|Pascn|Pentn 1=winner title|2=other title
 
 #filled by occurence()
-our $winner;          #the folder/filename for the winner of precedence
+our $winner;     #the folder/filename for the winner of precedence
 our $commemoratio;    #the folder/filename for the commemorated
 our $scriptura;       #the folder/filename for the scripture reading (if winner is sancti)
 our $commune;         #the folder/filename for the used commune
@@ -70,15 +58,15 @@ our $commemorated;    #name of the commemorated for Vigils
 our $comrank = 0;     #rank of the commemorated office
 
 #filled by precedence()
-our %winner;                                 #the hash of the winner
-our %commemoratio;                           #the hash of the commemorated
-our %scriptura;                              #the hash for the scriptura
-our %commune;                                # the hash of the commune
-our (%winner2, %commemoratio2, %commune2);   #same for 2nd column
-our $rule;                                   # $winner{Rank}
-our $communerule;                            # $commune{Rank}
-our $duplex;                                 #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
-                                             # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
+our %winner;          #the hash of the winner
+our %commemoratio;    #the hash of the commemorated
+our %scriptura;       #the hash for the scriptura
+our %commune;         # the hash of the commune
+our (%winner2, %commemoratio2, %commune2);    #same for 2nd column
+our $rule;                                    # $winner{Rank}
+our $communerule;                             # $commune{Rank}
+our $duplex;                                  #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
+    # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
 
 #*** collect standard items
 #require "ordocommon.pl";
@@ -94,7 +82,7 @@ binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
 our ($version1, $version2, $lang1, $lang2, $expand, $column, $accented);
-our %translate;    #translation of the skeleton label for 2nd language
+our %translate;     #translation of the skeleton label for 2nd language
 
 #get parameters
 getini('missa');    #files, colors
@@ -107,8 +95,8 @@ if (!$setupsave) {
   getcookies('missagc', 'generalc');
 }
 
-set_runtime_options('generalc');      #$expand, $version, $lang2
-set_runtime_options('parameters');    # priest, lang1 ... etc
+set_runtime_options('generalc'); #$expand, $version, $lang2
+set_runtime_options('parameters'); # priest, lang1 ... etc
 
 if ($command eq 'changeparameters') { getsetupvalue($command); }
 
@@ -120,7 +108,7 @@ $setupsave = savesetup(1);
 $setupsave =~ s/\r*\n*//g;
 
 our $command = strictparam('command');
-our $hora = $command;                 #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
+our $hora = $command;    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
 our $browsertime = strictparam('browsertime');
 our $searchvalue = strictparam('searchvalue');
 if (!$searchvalue) { $searchvalue = '0'; }
@@ -161,10 +149,10 @@ PrintTag
 
 if ($command !~ /setup/i) {
   print "<P ALIGN=CENTER>";
-  print option_selector("Version 1", "parchange();", $version1, @versions);
+  print option_selector("Version 1", "parchange();", $version1, @versions );
   print option_selector("lang1", "parchange();", $lang1, qw(Latin English));
   print option_selector("lang2", "parchange();", $lang2, qw(Latin English));
-  print option_selector("Version 2", "parchange();", $version2, @versions);
+  print option_selector("Version 2", "parchange();", $version2, @versions );
 }
 
 if ($command =~ /setup(.*)/is) {
@@ -259,7 +247,7 @@ PrintTag
 #*** hedline($head) prints headline for main and pray
 sub headline {
   my $head = shift;
-  print "<P ALIGN=CENTER>" . html_dayhead(setheadline()) . "\n";
+  print "<P ALIGN=CENTER>" . html_dayhead(setheadline()) ."\n";
   print << "PrintTag";
 <P ALIGN=CENTER>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
@@ -276,7 +264,7 @@ PrintTag
 #*** Javascript functions
 # the sub is called from htmlhead
 sub horasjs {
-  qq(
+qq(
 //position
 function startup() {
   var i = 1;

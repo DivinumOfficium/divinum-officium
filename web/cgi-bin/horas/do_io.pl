@@ -11,8 +11,8 @@ sub do_read($) {
   my $file = shift;
 
   if (open(INP, '<:encoding(UTF-8)', $file)) {
-    local $/;    # Slurp
-    local ($_) = <INP>;
+    local $/; # Slurp
+    local($_) = <INP>;
     close INP;
     s/^\x{FEFF}//;
     split(/\r?\n/);
