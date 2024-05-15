@@ -84,9 +84,9 @@ sub script_attr_handler {
     # symbol table, with the effect that we can't get the sub's name yet. Defer
     # the actual registration till later.
     push @deferred_functions, {
-        'package' => $pkg,
-        'code' => $code_ref,
-        'params' => \%params,
+      'package' => $pkg,
+      'code' => $code_ref,
+      'params' => \%params
       };
   }
 }

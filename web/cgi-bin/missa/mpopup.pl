@@ -50,8 +50,8 @@ if (!$setupsave) {
   getcookies('missago', 'general');
 }
 
-set_runtime_options('general');       #$expand, $version, $lang2
-set_runtime_options('parameters');    # priest, lang1 ... etc
+set_runtime_options('general'); #$expand, $version, $lang2
+set_runtime_options('parameters'); # priest, lang1 ... etc
 
 $popup = strictparam('popup');
 $background = ($whitebground) ? ' class="contrastbg"' : '';
@@ -77,7 +77,7 @@ htmlEnd();
 
 #*** javascript functions
 sub horasjs {
-  "function setsize() { window.resizeTo($width, $height); }";
+  "function setsize() { window.resizeTo($width, $height); }"
 }
 
 sub gettext {
@@ -87,7 +87,7 @@ sub gettext {
   my %popup_files = (
     Ante => 'Ante.txt',
     Communio => 'Communio.txt',
-    Post => 'Post.txt',
+    Post => 'Post.txt'
   );
 
   # File must be one of those explicitly permitted.

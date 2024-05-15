@@ -13,38 +13,35 @@ BEGIN {
 # private
 
 sub unequivocal {
-  my ($value, $tablename) = @_;
+  my($value, $tablename) = @_;
   my @values_array = main::getdialog($tablename);
 
-  my @r = grep {/$value/} @values_array;
-
-  if (@r == 1) {
-    return $r[0];
-  } else {
+  my @r = grep { /$value/ } @values_array;
+  if (@r == 1) { 
+    return $r[0]
+  } else { 
     @r = grep { $_ eq $value } @values_array;
-
     if (@r == 1) {
-      return $r[0];
+      return $r[0]
     } else {
-      return;
+      return
     }
   }
 }
 
-use constant LEGACY_VERSION_NAMES => {
+use constant LEGACY_VERSION_NAMES => { 
   'Tridentine 1570' => 'Tridentine - 1570',
   'Tridentine 1910' => 'Tridentine - 1888',
   'Rubrics 1960' => 'Rubrics 1960 - 1960',
   'Reduced 1955' => 'Reduced - 1955',
-  '1960 Newcalendar' => 'Rubrics 1960 - 2020 USA',
-};
+  '1960 Newcalendar' => 'Rubrics 1960 - 2020 USA'};
 
 # exported
 
 sub check_version {
   my $v = shift;
 
-  LEGACY_VERSION_NAMES->{$v} || unequivocal($v, 'versions');
+  LEGACY_VERSION_NAMES->{$v} || unequivocal($v, 'versions')
 }
 
 sub check_horas {

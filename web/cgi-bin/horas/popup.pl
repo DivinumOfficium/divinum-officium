@@ -34,7 +34,7 @@ $q = new CGI;
 our @dayname;    #0=Adv|{Nat|Epi|Quadp|Quad|Pass|Pen 1=winner title|2=other title
 
 #filled by occurence()
-our $winner;          #the folder/filename for the winner of precedence
+our $winner;     #the folder/filename for the winner of precedence
 our $commemoratio;    #the folder/filename for the commemorated
 our $commune;         #the folder/filename for the used commune
 our $communetype;     #ex|vide
@@ -44,9 +44,9 @@ our $vespera;         #1 | 3 index for ant, versum, oratio
 our $cvespera;        #for commemoratio
 
 #filled by precedence()
-our %winner;                                  #the hash of the winner
-our %commemoratio;                            #the hash of the commemorated
-our %commune;                                 # the hash of the commune
+our %winner;          #the hash of the winner
+our %commemoratio;    #the hash of the commemorated
+our %commune;         # the hash of the commune
 our (%winner2, %commemoratio2, %commune2);    #same for 2nd column
 our $rule;                                    # $winner{Rank}
 our $communerule;                             # $commune{Rank}
@@ -80,8 +80,8 @@ if (!$setupsave) {
   getcookies('horasgo', 'general');
 }
 
-set_runtime_options('general');       #$expand, $version, $lang2
-set_runtime_options('parameters');    # priest, lang1 ... etc
+set_runtime_options('general'); #$expand, $version, $lang2
+set_runtime_options('parameters'); # priest, lang1 ... etc
 
 $popup = strictparam('popup');
 $background = ($whitebground) ? ' class="contrastbg"' : '';
@@ -113,5 +113,5 @@ htmlEnd();
 
 #*** javascript functions
 sub horasjs {
-  "function setsize() { window.resizeTo($width, $height); }";
+  "function setsize() { window.resizeTo($width, $height); }"
 }
