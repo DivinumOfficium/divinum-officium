@@ -152,7 +152,6 @@ sub psalmi_matutinum_monastic {
 		# from Low Sunday till the first Sunday of November, unless there is a Homily,
 		# i.e., outside Ascensiontide and Rogation Monday (pre-55), Pentecost, Vigils, Ember days and Octaves:
 		# The change from "summer" to "winter" matins (pre- and post-1960) is tied to the 1st Sunday of November not All Saints' Day.
-		# Unless this has been changed with moving the 1st Sunday of November occuring after 10-29 to after 11-01
 		# The previous elsif made a mistake and referred to non-existing scriptura of the last week of October
     if ($winner =~ /Tempora/i || !(exists($winner{Lectio94}) || exists($winner{Lectio4}))) {
       brevis_monastic($lang);
