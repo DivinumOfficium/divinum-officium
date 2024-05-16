@@ -145,8 +145,11 @@ sub psalmi_matutinum_monastic {
 
   if ($rule =~ /12 lectiones/) {
     lectiones(1, $lang);    # first Nocturn of 4 lessons (
-	} elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i && monthday() !~ /^11[1-5]\-/ && $winner{Rank} !~ /vigil|quat(t?)uor|infra octavam|post octavam asc|secunda.*roga/i) {
-		# from Low Sunday till the first Sunday of November, unless there is a Homily, i.e., outside Ascensiontide (pre-55), Rogation Monday, Pentecost, Vigils, Ember days and Octaves:
+	} elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i && monthday() !~ /^11[1-5]\-/
+		&& ($winner{Rank} !~ /vigil|quat(t?)uor|infra octavam|post octavam asc/i || ($winner{Rank} !~ secunda.*roga && $version !~ /196/))
+		&& $rule !~ /3 lectiones/) {
+		# from Low Sunday till the first Sunday of November, unless there is a Homily,
+		# i.e., outside Ascensiontide and Rogation Monday (pre-55), Pentecost, Vigils, Ember days and Octaves:
 		# The change from "summer" to "winter" matins (pre- and post-1960) is tied to the 1st Sunday of November not All Saints' Day.
 		# Unless this has been changed with moving the 1st Sunday of November occuring after 10-29 to after 11-01
 		# The previous elsif made a mistake and referred to non-existing scriptura of the last week of October
