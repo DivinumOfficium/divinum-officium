@@ -12,6 +12,7 @@ sub appendix {
   my @script1 = split("\n", $a1{$appendix});
   @script1 = specials(\@script1, $lang1);
   my @script2;
+
   if (!$only) {
     my %a2 = %{setupstring($lang2, $fname)};
     @script2 = split("\n", $a2{$appendix});

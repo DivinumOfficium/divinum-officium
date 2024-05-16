@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 use utf8;
+
 # vim: set encoding=utf-8 :
 
 # Name : Laszlo Kiss
@@ -7,6 +8,7 @@ use utf8;
 # Divine Office
 
 package horas;
+
 #1;
 
 #use warnings;
@@ -17,16 +19,18 @@ package horas;
 use POSIX;
 use FindBin qw($Bin);
 use CGI;
-use CGI::Cookie;;
+use CGI::Cookie;
 use CGI::Carp qw(fatalsToBrowser);
 use File::Basename;
 use LWP::Simple;
 use Time::Local;
+
 #use DateTime;
 use locale;
 
 $error = '';
 $debug = '';
+
 our $Tk = 0;
 our $Hk = 0;
 our $Ck = 0;
@@ -37,31 +41,31 @@ our $version = 'Divino Afflatu';
 
 #***common variables arrays and hashes
 #filled  getweek()
-our @dayname; #0=Advn|Natn|Epin|Quadpn|Quadn|Pascn|Pentn 1=winner title|2=other title
+our @dayname;    #0=Advn|Natn|Epin|Quadpn|Quadn|Pascn|Pentn 1=winner title|2=other title
 
 #filled by getrank()
-our $winner; #the folder/filename for the winner of precedence
-our $commemoratio; #the folder/filename for the commemorated
-our $scriptura; #the folder/filename for the scripture reading (if winner is sancti)
-our $commune; #the folder/filename for the used commune
-our $communetype; #ex|vide
-our $rank; #the rank of the winner
-our $laudes; #1 or 2
-our $vespera; #1 | 3 index for ant, versum, oratio
-our $cvespera; #for commemoratio
-our $commemorated; #name of the commemorated  for vigils
-our $comrank = 0; #rank of the commemorated office
+our $winner;          #the folder/filename for the winner of precedence
+our $commemoratio;    #the folder/filename for the commemorated
+our $scriptura;       #the folder/filename for the scripture reading (if winner is sancti)
+our $commune;         #the folder/filename for the used commune
+our $communetype;     #ex|vide
+our $rank;            #the rank of the winner
+our $laudes;          #1 or 2
+our $vespera;         #1 | 3 index for ant, versum, oratio
+our $cvespera;        #for commemoratio
+our $commemorated;    #name of the commemorated  for vigils
+our $comrank = 0;     #rank of the commemorated office
 
 #filled by precedence()
-our %winner; #the hash of the winner 
-our %commemoratio; #the hash of the commemorated
-our %scriptura; #the hash for the scriptura
-our %commune; # the hash of the commune
-our (%winner2, %commemoratio2, %commune2); #same for 2nd column
-our $rule; # $winner{Rank}
-our $communerule; # $commune{Rank}
-our $duplex; #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex 
-             # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
+our %winner;                                 #the hash of the winner
+our %commemoratio;                           #the hash of the commemorated
+our %scriptura;                              #the hash for the scriptura
+our %commune;                                # the hash of the commune
+our (%winner2, %commemoratio2, %commune2);   #same for 2nd column
+our $rule;                                   # $winner{Rank}
+our $communerule;                            # $commune{Rank}
+our $duplex;                                 #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
+                                             # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
 
 #*** collect standard items
 require "$Bin/do_io.pl";
@@ -74,64 +78,70 @@ require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
 require "$Bin/tfertable.pl";
 
-binmode(STDOUT,':encoding(utf-8)');
+binmode(STDOUT, ':encoding(utf-8)');
 
 $q = new CGI;
 
 #get parameters
-getini('horas'); #files, colors
+getini('horas');    #files, colors
 
 $setupsave = strictparam('setup');
 $setupsave =~ s/\~24/\"/g;
 
 our ($lang1, $lang2, $expand, $column, $accented);
-our %translate; #translation of the skeleton label for 2nd language 
+our %translate;     #translation of the skeleton label for 2nd language
 our $sanctiname = 'Sancti';
 our $temporaname = 'Tempora';
 our $communename = 'Commune';
 
 #internal script, cookies
 %dialog = %{setupstring($datafolder, '', 'horas.dialog')};
-if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'horas.setup')};}
-else {%setup = split(';;;', $setupsave);}
 
-if (!$setupsave && !getcookies('horasp', 'parameters')) {setcookies('horasp', 'parameters');}
-if (!$setupsave && !getcookies('horasg', 'general')) {setcookies('horasg', 'general');}
+if (!$setupsave) {
+  %setup = %{setupstring($datafolder, '', 'horas.setup')};
+} else {
+  %setup = split(';;;', $setupsave);
+}
+
+if (!$setupsave && !getcookies('horasp', 'parameters')) { setcookies('horasp', 'parameters'); }
+if (!$setupsave && !getcookies('horasg', 'general')) { setcookies('horasg', 'general'); }
 
 our $command = strictparam('command');
-our $hora = $command; #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
-our $buildscript = ''; #build script
+our $hora = $command;     #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
+our $buildscript = '';    #build script
 our $searchvalue = strictparam('searchvalue');
-if (!$searchvalue) {$searchvalue = '0';}
+if (!$searchvalue) { $searchvalue = '0'; }
 our $browsertime = strictparam('browsertime');
 our $italicfont = 'italic';
 
 @versions = ('Divino Afflatu');
 $version = 'Divino Afflatu';
-    
+
 #*** handle different actions
 #after setup
-if ($command =~ /change/i ) { 
- $command = $';                 
- getsetupvalue($command);   
- if ($command =~ /parameters/) {setcookies('horasp', 'parameters');}
-}    
+if ($command =~ /change/i) {
+  $command = $';
+  getsetupvalue($command);
+  if ($command =~ /parameters/) { setcookies('horasp', 'parameters'); }
+}
 
 eval($setup{'parameters'});
-eval($setup{'general'}); #$priest, $lang1, colors, sizes        
+eval($setup{'general'});    #$priest, $lang1, colors, sizes
 
 #prepare edit, testmode
 our $testmode = strictparam('testmode');
-if ($testmode !~ /(Season|Saint|Common)/i) {$testmode = 'regular';}
+if ($testmode !~ /(Season|Saint|Common)/i) { $testmode = 'regular'; }
 our $votive = strictparam('votive');
 $expandnum = strictparam('expandnum');
 
 $p = strictparam('priest');
+
 if ($p) {
   $priest = 1;
   setsetupvalue('parameters', 0, $priest);
 }
 $p = strictparam('screenheight');
+
 if ($p) {
   $screenheight = $p;
   setsetupvalue('parametrs', 11, $screenheight);
@@ -140,65 +150,73 @@ if ($p) {
 #expand (all, psalms, none, skeleton) parameter
 $flag = 0;
 $p = strictparam('lang2');
-if ($p) {$lang2 = $p; $flag = 1;}
+if ($p) { $lang2 = $p; $flag = 1; }
 $p = strictparam('version');
-if ($p) {$version = $p; $flag = 1;}
+if ($p) { $version = $p; $flag = 1; }
 $p = strictparam('expand');
-if ($p) {$expand = $p; $flag = 1;}
+if ($p) { $expand = $p; $flag = 1; }
 $p = strictparam('accented');
-if ($p) {$accented = $p; $flag = 1;}   
+if ($p) { $accented = $p; $flag = 1; }
+
 if ($flag) {
   setsetup('general', $expand, $version, $lang2, $accented);
   setcookies('horasg', 'general');
 }
-if (!$expand) {$expand = 'psalms';}
-if (!$lang2) {$lang2 = 'English';}
+if (!$expand) { $expand = 'psalms'; }
+if (!$lang2) { $lang2 = 'English'; }
 $only = ($lang1 =~ /$lang2/i || $lang2 =~ /$lang1/i) ? 1 : 0;
 
 $version = 'Divino Afflatu';
-precedence(); #fills our hashes et variables  
-our $psalmnum1 = 0;  #to count psalms
-our $psalmnum2 = 0;                           
-our $octavam = ''; #to avoid duplication of commemorations
+precedence();          #fills our hashes et variables
+our $psalmnum1 = 0;    #to count psalms
+our $psalmnum2 = 0;
+our $octavam = '';     #to avoid duplication of commemorations
 
 # prepare title
-$daycolor =   ($commune =~ /(C1[0-9])/) ? "blue" :
-   ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black" : 
-   ($dayname[1] =~ /duplex/i) ? "red" : 
-    "grey"; 
+$daycolor =
+    ($commune =~ /(C1[0-9])/) ? "blue"
+  : ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black"
+  : ($dayname[1] =~ /duplex/i) ? "red"
+  : "grey";
 build_comment_line();
 
-
 # save parameters
-$setupsave = printhash(\%setup, 1);   
+$setupsave = printhash(\%setup, 1);
 $setupsave =~ s/\r*\n*//g;
-$setupsave =~ s/\"/\~24/g;	  
+$setupsave =~ s/\"/\~24/g;
 
 #prepare main pages
 my $h = $hora;
-if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Post|Setup)/i)
-  {$h = " $1";}
-else {$h = '';}
+
+if ($h =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Post|Setup)/i) {
+  $h = " $1";
+} else {
+  $h = '';
+}
 $title = "Divinum Officium$h";
-@horas=getdialogcolumn('horas','~',0);
-for ($i = 0; $i < 10; $i++) {$hcolor[$i] = 'blue';}
+@horas = getdialogcolumn('horas', '~', 0);
+for ($i = 0; $i < 10; $i++) { $hcolor[$i] = 'blue'; }
 $completed = getcookie1('completed');
-if ($date1 eq gettoday() && $command =~ /pray/i && $completed < 8 && 
-  $command =~ substr($horas[$completed+1], 0, 4)) {
+
+if ( $date1 eq gettoday()
+  && $command =~ /pray/i
+  && $completed < 8
+  && $command =~ substr($horas[$completed + 1], 0, 4))
+{
   $completed++;
   setcookie1('completed', $completed);
 }
-for ($i = 1; $i <= $completed; $i++) {$hcolor[$i] = 'maroon';}
+for ($i = 1; $i <= $completed; $i++) { $hcolor[$i] = 'maroon'; }
 
-#*** print pages (setup, hora=pray, mainpage)  
-  #generate HTML
-  htmlHead($title, 2);
-    print << "PrintTag";
+#*** print pages (setup, hora=pray, mainpage)
+#generate HTML
+htmlHead($title, 2);
+print << "PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="startup();"> 
 <FORM ACTION="brevi.pl" METHOD=post TARGET=_self>
 PrintTag
 
-if ($command =~ /setup/i) {	  
+if ($command =~ /setup/i) {
   $pmode = 'setup';
   $command = $';
   setuptable($command);
@@ -208,7 +226,7 @@ if ($command =~ /setup/i) {
   $command =~ s/(pray|change|setup)//ig;
   $title = $command;
   $hora = $command;
-  if (substr($title,-1) =~ /a/i) {$title .= 'm';}
+  if (substr($title, -1) =~ /a/i) { $title .= 'm'; }
 
   $head = ($title =~ /(Ante|Post)/i) ? "$title divinum officium" : "Ad $title";
   $head =~ s/Ad Vesparam/Ad vesperas/i;
@@ -218,7 +236,7 @@ if ($command =~ /setup/i) {
 
   #eval($setup{'parameters'});
   $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
-  horas($command); 
+  horas($command);
 
   print << "PrintTag";
 <P ALIGN=CENTER>
@@ -229,7 +247,7 @@ if ($command =~ /setup/i) {
 <INPUT TYPE=HIDDEN NAME=popuplang VALUE="">
 PrintTag
 
-} else {	#mainpage
+} else {    #mainpage
   $pmode = 'main';
   $command = "";
   $height = floor($screenheight * 4 / 12);
@@ -237,7 +255,7 @@ PrintTag
 
   $headline = setheadline();
   headline($title);
-  
+
   print << "PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=0 HEIGHT=$height><TR>
@@ -269,7 +287,7 @@ PrintTag
 #common widgets for main and hora
 if ($pmode =~ /(main|hora)/i) {
   if ($votive ne 'C9') {
-print << "PrintTag";
+    print << "PrintTag";
 <P ALIGN=CENTER><I>
 <A HREF=# onclick="hset('Matutinum');"><FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
 &nbsp;&nbsp; 
@@ -288,8 +306,8 @@ print << "PrintTag";
 <A HREF=# onclick="hset('Completorium');"><FONT COLOR=$hcolor[8]>$horas[8]</FONT></A>
 </I></P>
 PrintTag
-} else {
-print << "PrintTag";
+  } else {
+    print << "PrintTag";
 <P ALIGN=CENTER><I>
 <A HREF=# onclick="hset('Matutinum');"><FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
 &nbsp;&nbsp; 
@@ -299,14 +317,13 @@ print << "PrintTag";
 &nbsp;&nbsp; 
 </I></P>
 PrintTag
-}
- 
+  }
+
   $ch1 = ($expand =~ /all/i) ? 'SELECTED' : '';
   $ch2 = ($expand =~ /psalms/i) ? 'SELECTED' : '';
   $ch3 = ($expand =~ /nothing/i) ? 'SELECTED' : '';
   $ch4 = ($expand =~ /skeleton/i) ? 'SELECTED' : '';
 
-  
   print << "PrintTag";
 <P ALIGN=CENTER>
 <SELECT NAME=expand SIZE=4 onchange="parchange();">
@@ -317,13 +334,13 @@ PrintTag
 </SELECT>
 PrintTag
 
-if ($savesetup > 1) {
-my $sel11 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
-my $sel12 = ($testmode =~ /Season/i) ? 'SELECTED' : '';
-my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
-my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
+  if ($savesetup > 1) {
+    my $sel11 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
+    my $sel12 = ($testmode =~ /Season/i) ? 'SELECTED' : '';
+    my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
+    my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
 
-  print << "PrintTag";
+    print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
 Test: <SELECT NAME=testmode SIZE=4 onclick="parchange();">
 <OPTION $sel11 VALUE='regular'>Regular
@@ -332,15 +349,15 @@ Test: <SELECT NAME=testmode SIZE=4 onclick="parchange();">
 <OPTION $sel14 VALUE='Common'>Common
 </SELECT>
 PrintTag
-}
+  }
 
-$chl1 = ($lang2 =~ /Latin/i) ? 'SELECTED' : '';
-$chl2 = ($lang2 =~ /English/i) ? 'SELECTED' : '';
-$chl3 = ($lang2 =~ /Magyar/i) ? 'SELECTED' : '';
-$sel1 = ''; #($date1 eq gettoday()) ? 'SELECTED' : '';
-$sel2 = ($votive =~ /C8/) ? 'SELECTED' : '';
-$sel3 = ($votive =~ /C9/) ? 'SELECTED' : '';
-$sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
+  $chl1 = ($lang2 =~ /Latin/i) ? 'SELECTED' : '';
+  $chl2 = ($lang2 =~ /English/i) ? 'SELECTED' : '';
+  $chl3 = ($lang2 =~ /Magyar/i) ? 'SELECTED' : '';
+  $sel1 = '';    #($date1 eq gettoday()) ? 'SELECTED' : '';
+  $sel2 = ($votive =~ /C8/) ? 'SELECTED' : '';
+  $sel3 = ($votive =~ /C9/) ? 'SELECTED' : '';
+  $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
 
   print << "PrintTag";
 &nbsp;&nbsp;&nbsp;
@@ -377,7 +394,7 @@ $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
 <A HREF="officium.pl">click</A> here</FONT></P>
 PrintTag
 
-  if ($building && $buildscript ) { 
+  if ($building && $buildscript) {
     $buildscript =~ s/[\n]+/\n/g;
     $buildscript =~ s/\n/<BR>/g;
     $buildscript =~ s/\_//g;
@@ -391,12 +408,12 @@ PrintTag
 }
 
 #common end for programs
-  if ($error) {print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n";}
-  if ($debug) {print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n";}
+if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
+if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
 
-  $command =~ s/(pray|setup)//ig;
+$command =~ s/(pray|setup)//ig;
 
-  print << "PrintTag";
+print << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=setup VALUE="$setupsave">
 <INPUT TYPE=HIDDEN NAME=command VALUE="$command">
 <INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
@@ -407,12 +424,10 @@ PrintTag
 </BODY></HTML>
 PrintTag
 
-
-
 #*** hedline($head) prints headlibe for main and pray
 sub headline {
   my $head = shift;
-	if ($headline =~ /\!/) {$headline = $` . "<FONT SIZE=1>" . $' . "</FONT>";}
+  if ($headline =~ /\!/) { $headline = $` . "<FONT SIZE=1>" . $' . "</FONT>"; }
   print << "PrintTag";
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>
@@ -428,11 +443,10 @@ $comment<BR><BR>
 PrintTag
 }
 
-
 #*** Javascript functions
 # the sub is called from htmlhead
 sub horasjs {
- print << "PrintTag";
+  print << "PrintTag";
 
 <SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
 
@@ -560,5 +574,5 @@ function prevnext(ch) {
 
 </SCRIPT>
 PrintTag
-} 
+}
 

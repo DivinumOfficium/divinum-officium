@@ -25,7 +25,8 @@ use Time::Local;
 use locale;
 use lib "$Bin/..";
 use DivinumOfficium::Main qw(vernaculars liturgical_color);
-use DivinumOfficium::LanguageTextTools qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
+use DivinumOfficium::LanguageTextTools
+  qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 $error = '';
 $debug = '';
 
@@ -34,15 +35,23 @@ our $missa = 1;
 our $NewMass = 0;
 our $officium = 'missa.pl';
 
-@versions =
-  ('Tridentine 1570', 'Tridentine 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1965-1967', '1960 Newcalendar', 'Dominican');
+@versions = (
+  'Tridentine 1570',
+  'Tridentine 1910',
+  'Divino Afflatu',
+  'Reduced 1955',
+  'Rubrics 1960',
+  '1965-1967',
+  '1960 Newcalendar',
+  'Dominican',
+);
 
 #***common variables arrays and hashes
 #filled  getweek()
 our @dayname;    #0=Advn|Natn|Epin|Quadpn|Quadn|Pascn|Pentn 1=winner title|2=other title
 
 #filled by occurence()
-our $winner;     #the folder/filename for the winner of precedence
+our $winner;          #the folder/filename for the winner of precedence
 our $commemoratio;    #the folder/filename for the commemorated
 our $scriptura;       #the folder/filename for the scripture reading (if winner is sancti)
 our $commune;         #the folder/filename for the used commune
@@ -54,15 +63,15 @@ our $commemorated;    #name of the commemorated for vigils
 our $comrank = 0;     #rank of the commemorated office
 
 #filled by precedence()
-our %winner;          #the hash of the winner
-our %commemoratio;    #the hash of the commemorated
-our %scriptura;       #the hash for the scriptura
-our %commune;         # the hash of the commune
-our (%winner2, %commemoratio2, %commune2);    #same for 2nd column
-our $rule;                                    # $winner{Rank}
-our $communerule;                             # $commune{Rank}
-our $duplex;                                  #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
-    # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
+our %winner;                                 #the hash of the winner
+our %commemoratio;                           #the hash of the commemorated
+our %scriptura;                              #the hash for the scriptura
+our %commune;                                # the hash of the commune
+our (%winner2, %commemoratio2, %commune2);   #same for 2nd column
+our $rule;                                   # $winner{Rank}
+our $communerule;                            # $commune{Rank}
+our $duplex;                                 #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
+                                             # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
 
 #*** collect standard items
 #require "$Bin/ordocommon.pl";
@@ -102,8 +111,8 @@ if (!$setupsave) {
   getcookies('missag', 'general');
 }
 
-set_runtime_options('general'); #$expand, $version, $lang2
-set_runtime_options('parameters'); # priest, lang1 ... etc
+set_runtime_options('general');       #$expand, $version, $lang2
+set_runtime_options('parameters');    # priest, lang1 ... etc
 
 if ($command eq 'changeparameters') { getsetupvalue($command); }
 
@@ -176,6 +185,7 @@ $version =~ s/Rubrics 1960 2020 USA/1960 Newcalendar/;
 $version =~ s/Ordo Praedicatorum/Dominican/;
 
 if ($pmode =~ /(main|missa)/i) {
+
   #common widgets for main and hora
   $crubrics = ($rubrics) ? 'CHECKED' : '';
   $csolemn = ($solemn) ? 'CHECKED' : '';
@@ -193,28 +203,29 @@ if ($pmode =~ /(main|missa)/i) {
 <P ALIGN=CENTER>
 PrintTag
 
-  print option_selector("Version", "parchange();", $version, @versions );
+  print option_selector("Version", "parchange();", $version, @versions);
 
-#$testmode = 'Regular' unless $testmode;
-#if ($savesetup > 1) {
-#  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal Season Saint Common));
-#} else {
-#  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
-#}
+  #$testmode = 'Regular' unless $testmode;
+  #if ($savesetup > 1) {
+  #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal Season Saint Common));
+  #} else {
+  #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
+  #}
   my $propname = ($Propers) ? 'Full' : 'Propers';
   print "&nbsp;&nbsp;&nbsp;";
-  print htmlInput('lang2', $lang2, 'options', 'languages', , "parchange()" );
+  print htmlInput('lang2', $lang2, 'options', 'languages', "parchange()");
   @votive = ('Hodie;');
+
   if (opendir(DIR, "$datafolder/Latin/Votive")) {
     @a = sort readdir(DIR);
     closedir DIR;
     foreach (@a) { push(@votive, $_) if (s/\.txt//i); }
   }
-  print option_selector("Votive", "parchange();", $votive, @votive );
+  print option_selector("Votive", "parchange();", $votive, @votive);
   print "</P>\n";
   print qq(<P ALIGN=CENTER><FONT SIZE=+1>\n<A HREF=# onclick="hset('Propers')">$propname</A>\n</FONT></P>\n);
   print "<P ALIGN=CENTER><FONT SIZE=+1>\n" . bottom_links_menu() . "</FONT>\n</P>\n";
-}    
+}
 
 #common end for programs
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
@@ -264,7 +275,7 @@ PrintTag
 #*** Javascript functions
 # the sub is called from htmlhead
 sub horasjs {
-qq(
+  qq(
 //position
 function startup() {
   var i = 1;

@@ -2,7 +2,7 @@
 
 # return headline for main and pray for Compare
 sub html_dayhead_c {
-  my($head, $version1, $version2) = @_;
+  my ($head, $version1, $version2) = @_;
   $version = $version2;
   precedence();
   my $head2 = html_dayhead(setheadline(), $dayname[2]);
@@ -10,13 +10,14 @@ sub html_dayhead_c {
   '<TABLE CELLPADDING=5><TR>'
     . "<TD ALIGN=RIGHT VALIGN=TOP WIDTH=50% STYLE='border-right: 1pt solid red;'>$head</TD>"
     . "<TD ALIGN=LEFT VALIGN=TOP WIDTH=50%>$head2</TD>"
-    . '</TR></TABLE>'
+    . '</TR></TABLE>';
 }
 
 #*** headline($head) prints headline for main and pray
 sub headline {
   my ($head, $variant, $version1, $version2) = @_;
   my ($compone, $vers);
+
   if ($variant eq 'C') {
     $head = html_dayhead_c($head, $version1, $version2);
     $compone = "<A HREF=# onclick=\"callbrevi(\'$date1\')\">One version</A>";
@@ -26,7 +27,9 @@ sub headline {
     $vers = $version;
   }
   my $output = par_c($head);
-  $output .= "<H1><FONT COLOR=MAROON SIZE=+1><B><I>Divinum Officium</I></B></FONT>&nbsp;<FONT COLOR=RED SIZE=+1>$vers</FONT></H1>\n";
+  $output .=
+    "<H1><FONT COLOR=MAROON SIZE=+1><B><I>Divinum Officium</I></B></FONT>&nbsp;<FONT COLOR=RED SIZE=+1>$vers</FONT></H1>\n";
+
   if ($variant eq 'P') {
     $output .= par_c(<< "PrintTag");
 <A HREF="Pofficium.pl?date1=$date1&command=prev&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
@@ -35,7 +38,7 @@ $date1
 <A HREF="Pofficium.pl?date1=$date1&command=next&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 &uarr;</A>
 PrintTag
-  } else {  
+  } else {
     $output .= par_c(<< "PrintTag");
 $compone
 &nbsp;&nbsp;&nbsp;
@@ -89,8 +92,10 @@ sub setplures {
 PrintTag
 
   foreach (gethoras($votive eq 'C9')) {
-    $output .= "<TR><TD WIDTH='50%' ALIGN=RIGHT>$_</TD><TD ALIGN=LEFT>" 
-             . htmlInput($_, 0 + ($plures =~ $_), 'checkbutton') ."</TD></TR>";
+    $output .=
+        "<TR><TD WIDTH='50%' ALIGN=RIGHT>$_</TD><TD ALIGN=LEFT>"
+      . htmlInput($_, 0 + ($plures =~ $_), 'checkbutton')
+      . "</TD></TR>";
   }
 
   $output .= "</TABLE>";
@@ -106,7 +111,7 @@ thisform.target = "_self";
 thisform.submit();
 SubmitTag
 
-  $output .= par_c("<INPUT TYPE=SUBMIT VALUE='Procede' ONCLICK='$submit'>")
+  $output .= par_c("<INPUT TYPE=SUBMIT VALUE='Procede' ONCLICK='$submit'>");
 }
 
 # for Pofficium Options Sancta Missa Ordo
@@ -120,7 +125,7 @@ PrintTag
 }
 
 #common end for programs
-sub hiddenfields { 
+sub hiddenfields {
   my $output = << "PrintTag";
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
 <INPUT TYPE=HIDDEN NAME=popup VALUE="">
@@ -143,7 +148,7 @@ PrintTag
 }
 
 sub buildscript {
-  local($_) = @_;
+  local ($_) = @_;
   s/[\n]+/<BR>/g;
   s/\_//g;
   s/\,\,\,/\&nbsp\;\&nbsp\;\&nbsp\;/g;

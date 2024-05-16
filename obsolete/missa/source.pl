@@ -8,6 +8,7 @@ use utf8;
 # Show/edit files
 
 package missa;
+
 #1;
 
 #use warnings;
@@ -22,6 +23,7 @@ use CGI::Carp qw(fatalsToBrowser);
 use File::Basename;
 use LWP::Simple;
 use Time::Local;
+
 #use DateTime;
 
 $q = new CGI;
@@ -34,34 +36,43 @@ require "$Bin/webdia.pl";
 binmode(STDOUT, ':encoding(utf-8)');
 
 #*** collect parameters
-getini('missa'); #files, colors
+getini('missa');    #files, colors
 
 %dialog = %{setupstring($datafolder, '', 'missa.dialog')};
-if (!$setupsave) {%setup = %{setupstring($datafolder, '', 'missa.setup')};}
-else {%setup = split(';;;', $setupsave);}
+
+if (!$setupsave) {
+  %setup = %{setupstring($datafolder, '', 'missa.setup')};
+} else {
+  %setup = split(';;;', $setupsave);
+}
 
 eval($setup{'parameters'});
-eval($setup{'general'});	 
+eval($setup{'general'});
 
-
-#*** load files 
+#*** load files
 $title = 'Sources';
-                                           
+
 $source = '';
 $line = '';
+
 if (my @sources = do_read("$datafolder/source.txt")) {
-    $_ = "$_<BR>" for @sources;
-    $source = join('',@sources);
-} else {$error .= "$datafolder/source.txt cannot open";}
+  $_ = "$_<BR>" for @sources;
+  $source = join('', @sources);
+} else {
+  $error .= "$datafolder/source.txt cannot open";
+}
 
 my @toc;
+
 if (@toc = do_read("$datafolder/TOC1920.txt")) {
   $_ = "$_\n" for @toc;
-} else {$error .= "$datafolder/TOC1920.txt cannot open";}
+} else {
+  $error .= "$datafolder/TOC1920.txt cannot open";
+}
 
 $setupsave = printhash(\%setup, 1);
 $setupsave =~ s/\r*\n*//g;
-$setupsave =~ s/\"/\~24/g;	 
+$setupsave =~ s/\"/\~24/g;
 
 #*** generate HTML head widgets
 htmlHead($title, 2);
@@ -75,37 +86,40 @@ $source</TD></TR></TABLE>
 <TABLE ALIGN=CENTER BORDER=0 CELLPADDING=1 BGCOLOR=white>
 PrintTag
 $flag = 1;
+
 foreach $item (@toc) {
   if ($item =~ /([0-9]+)\s*$/) {
     $str = $`;
-	$num = $1;
-	$str =~ s/\s*$//;
-	print "<TR><TD>";
-	if ($flag) {
-	  print "<FONT SIZE=+1><B><A HREF=\"$htmlurl/m1920.pdf#page=$num\" TARGET=_NEW>$str</A></B></FONT></TD>\n";} 
-	  else {print "&nbsp;&nbsp;<A HREF=\"$htmlurl/m1920.pdf#page=$num\" TARGET=_NEW>$str</A></TD>\n";}
-	$flag = 0;
-	print "<TD>$num</TD></TR>\n";
+    $num = $1;
+    $str =~ s/\s*$//;
+    print "<TR><TD>";
+
+    if ($flag) {
+      print "<FONT SIZE=+1><B><A HREF=\"$htmlurl/m1920.pdf#page=$num\" TARGET=_NEW>$str</A></B></FONT></TD>\n";
+    } else {
+      print "&nbsp;&nbsp;<A HREF=\"$htmlurl/m1920.pdf#page=$num\" TARGET=_NEW>$str</A></TD>\n";
+    }
+    $flag = 0;
+    print "<TD>$num</TD></TR>\n";
   } else {
     $flag = 1;
-	print "<TR><TD COLSPAN=2> </TD></TR>";
+    print "<TR><TD COLSPAN=2> </TD></TR>";
   }
-}  		 
+}
 
 print "</TABLE>\n";
 
-if ($error) {print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n";}
+if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
 
 print "</FORM></BODY></HTML>\n";
 
- 
 #*** javascript functions
 sub horasjs {
- print << "PrintTag";
+  print << "PrintTag";
 
 <SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
 
 </SCRIPT>
 PrintTag
-} 
+}
 
