@@ -12,9 +12,9 @@ my $a = 4;
 #*** htmlHead($title, $onload)
 # generate html head
 sub htmlHead {
-  my($title, $onload) = @_;
+  my ($title, $onload) = @_;
 
-  my($horasjs) = "<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>\n" . horasjs() . '</SCRIPT>';
+  my ($horasjs) = "<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>\n" . horasjs() . '</SCRIPT>';
   $onload && ($onload = " onload=\"$onload\";");
 
   print << "PrintTag";
@@ -91,7 +91,7 @@ sub htmlEnd {
 #   if condition string contains the selected item
 
 sub htmlInput {
-  my($parname, $parvalue, $parmode, $parpar, $parfunc, $parhelp) = @_;
+  my ($parname, $parvalue, $parmode, $parpar, $parfunc, $parhelp) = @_;
   my $output = '';
 
   if ($parmode =~ /^label/i) {
@@ -194,8 +194,9 @@ sub htmlInput {
     my $osize = @optarray;
     chomp($optarray[-1]);
     $output .= "<SELECT ID=$parname NAME=$parname SIZE=1 $onclick>\n";
-    foreach(@optarray) {
-      my($display, $value) = split(/\//);
+
+    foreach (@optarray) {
+      my ($display, $value) = split(/\//);
       $value ||= $display;
       my $selected = $value eq $parvalue ? 'SELECTED' : '';
       $output .= "<OPTION $selected VALUE=\"$value\">$display\n";
@@ -263,7 +264,7 @@ sub setfont {
   my $size = ($istr =~ /^\.*?([0-9\-\+]+)/i) ? $1 : 0;
   my $color = ($istr =~ /([a-z]+)\s*$/i) ? $1 : '';
   if ($istr =~ /(\#[0-9a-f]+)\s*$/i || $istr =~ /([a-z]+)\s*$/i) { $color = $1; }
-  $color = '' if $color eq 'italic'; # italic is not a color
+  $color = '' if $color eq 'italic';    # italic is not a color
   my $font = "<FONT ";
   if ($size) { $font .= "SIZE=$size "; }
   if ($color) { $font .= "COLOR=\"$color\""; }
@@ -350,7 +351,7 @@ sub setcookies {
   $c = $q->cookie(
     -name => "$cname",
     -value => "$value",
-    -expires => "$cookieexpire"
+    -expires => "$cookieexpire",
   );
 
   if (length($c) < 4096) {
@@ -370,7 +371,7 @@ sub setcookie1 {
   $c = $q->cookie(
     -name => "$cname",
     -value => "$value",
-    -expires => $t
+    -expires => $t,
   );
   print "Set-Cookie:$c\n";
 }
@@ -401,6 +402,7 @@ sub setcross {
   my $csubst = '';
 
   if (CGI::user_agent("BlackBerry")) {
+
     # Not enough Unicode for what we really want, below.  Fake it.
     # cross type 3: COPTIC SMALL LETTER DEI
     $csubst = "<span style='color:red; font-size:1.25em'>&#x03EF;</span>";
@@ -414,6 +416,7 @@ sub setcross {
     $csubst = "<span style='color:red; font-size:1.25em'>+</span>";
     $line =~ s/ \+ / $csubst /g;
   } else {
+
     # Cross type 3: Outlined Greek Cross
     $csubst = "<span style='color:red; font-size:1.25em'>&#x2719;&#xFE0E;</span>";
     $line =~ s/\+\+\+/$csubst/g;
@@ -442,9 +445,10 @@ sub setvrbar {
 #*** activate_links($text)
 # replace %Laudes% etc. with html link
 sub activate_links {
-  my($text, $lang) = @_;
-  our($date1, $caller, $version, $testmode, $lang2, $votive, $hora, $command);
-  local($_) = $$text;
+  my ($text, $lang) = @_;
+  our ($date1, $caller, $version, $testmode, $lang2, $votive, $hora, $command);
+  local ($_) = $$text;
+
   if ($officium =~ /Pofficium/i) {
     if ($hora =~ /Matutinum/i) {
       s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=$caller&command=prayLaudes&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$1</A>}i;
@@ -492,12 +496,13 @@ sub setcell {
           . "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=80%></TD></TR>\n";
       }
     }
-    print "<TD VALIGN=TOP WIDTH=$width%" . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID=$hora$searchind") . ">";
+    print "<TD VALIGN=TOP WIDTH=$width%"
+      . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID=$hora$searchind") . ">";
     topnext_cell(\$text, $lang) unless $popup;
   }
 
-  process_inline_alleluias(\$text, $dayname[0] =~ /Pasc/) unless $missa; # missa use own solution
-                                                          # which should removed
+  process_inline_alleluias(\$text, $dayname[0] =~ /Pasc/) unless $missa;    # missa use own solution
+                                                                            # which should removed
 
   suppress_alleluia(\$text) if ($dayname[0] =~ /Quad/i && ($missa || !Septuagesima_vesp()));
 
@@ -509,6 +514,7 @@ sub setcell {
   }
   $text =~ s/wait[0-9]+//ig;
   $text =~ s/\_/ /g;
+
   # $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
   $text =~ s/\{\:.*?\:\}//sg;
   $text =~ s/\`//g;
@@ -531,11 +537,13 @@ sub topnext_cell {
   if ($officium =~ /Pofficium/i) { return; }
   my ($text, $lang) = @_;
   my @a = split('<BR>', $$text);
-  if (@a > 2 && $expand !~ /skeleton/i) { 
+
+  if (@a > 2 && $expand !~ /skeleton/i) {
     my $str = "<DIV ALIGN=right><FONT SIZE=1 COLOR=green>";
+
     if (columnsel($lang)) {
       $str .= "<A HREF='#${hora}top'>Top</A>&nbsp;&nbsp;";
-      $str .= "<A HREF='#$hora" . ($searchind+1) . "'>Next</A>";
+      $str .= "<A HREF='#$hora" . ($searchind + 1) . "'>Next</A>";
     } else {
       $str .= "$searchind";
     }
@@ -565,6 +573,7 @@ sub ante_post {
   if ($Ck) { return; }
   my $colspan = ($only) ? '' : 'COLSPAN=2';
   print "<TR><TD VALIGN=TOP $colspan ALIGN=CENTER>\n";
+
   if ($0 =~ /missa/) {
     print "<A HREF=\"mpopup.pl?popup=$title&rubrics=$rubrics&lang1=$lang1&lang2=$lang2\" TARGET=_NEW>$title</A>\n";
     print "<FONT SIZE=1>Missam</FONT></TD></TR>";
@@ -627,24 +636,28 @@ sub linkcode1 {
 
 sub option_selector {
   my ($label, $onchange, $default, @options) = @_;
-  my $id = $label; $id =~ s/\s+//g; $id = lc($id);
+  my $id = $label;
+  $id =~ s/\s+//g;
+  $id = lc($id);
   my $output = "&nbsp;&nbsp;&nbsp;<LABEL FOR=$id CLASS=offscreen>$label</LABEL>\n";
   $output .= sprintf("<SELECT ID=%s NAME=%s SIZE=%d onchange=\"%s\">\n", $id, $id, 1, $onchange);
+
   foreach (@options) {
-    my($display, $value) = split(/;/);
+    my ($display, $value) = split(/;/);
     $value = $display unless $value;
-    $output .= sprintf("<OPTION %s VALUE=\"%s\">%s\n", ($value eq $default)?'SELECTED':'', $value, $display);
+    $output .= sprintf("<OPTION %s VALUE=\"%s\">%s\n", ($value eq $default) ? 'SELECTED' : '', $value, $display);
   }
-  return $output . "</SELECT>\n"
+  return $output . "</SELECT>\n";
 }
 
 #*** selectables
 # generate selects from .dialog data
 sub selectables {
-  my($dialog) = @_;
-  my(@output);
+  my ($dialog) = @_;
+  my (@output);
+
   foreach (split(/;;\n*/, getdialog($dialog))) {
-    my($parname, $parvar, $parmode, $parpar, $parpos, $parfunc, $parhelp) = split('~>');
+    my ($parname, $parvar, $parmode, $parpar, $parpos, $parfunc, $parhelp) = split('~>');
     my $parvalue = eval($parvar);
     my $parlabel = $parname;
     $parname = substr($parvar, 1);
@@ -658,19 +671,22 @@ sub selectables {
 #*** selectable_p
 # generate signle select from .dialog for Poffice
 sub selectable_p {
-  my($dialog, $curvalue, $date1, $version, $lang2, $votive, $testmode, $title) = @_;
+  my ($dialog, $curvalue, $date1, $version, $lang2, $votive, $testmode, $title) = @_;
   $title ||= ucfirst($dialog);
   if ($dialog eq 'votives') { $curvalue ||= 'Hodie' }
   my @output = ("<TR><TD ALIGN=CENTER>$title");
-  foreach (getdialog($dialog)) { chomp;
-    my($text,$name) = split(/\//);
+
+  foreach (getdialog($dialog)) {
+    chomp;
+    my ($text, $name) = split(/\//);
     $name ||= $text;
-    my $href = "Pofficium.pl?date1=$date1&version="
-             . ($dialog eq 'versions' ? $name : $version)
-             . "&testmode=$testmode&lang2="
-             . ($dialog eq 'languages' ? $name : $lang2)
-             . "&votive="
-             . ($dialog eq 'votives' ? $name : $votive);
+    my $href =
+        "Pofficium.pl?date1=$date1&version="
+      . ($dialog eq 'versions' ? $name : $version)
+      . "&testmode=$testmode&lang2="
+      . ($dialog eq 'languages' ? $name : $lang2)
+      . "&votive="
+      . ($dialog eq 'votives' ? $name : $votive);
     my $colour = $curvalue eq $name ? 'red' : 'blue';
     push(@output, qq(\n<A HREF="$href"><FONT COLOR=$colour>$text</FONT></A>));
   }
@@ -678,70 +694,76 @@ sub selectable_p {
 }
 
 sub horas_menu {
-  my($completed, $date1, $version, $lang2, $votive, $testmode) = @_;
+  my ($completed, $date1, $version, $lang2, $votive, $testmode) = @_;
   my @horas = gethoras($votive eq 'C9');
   push(@horas, 'Omnes', 'Plures') if ($0 !~ /Cofficium/);
 
-  my $i  = 0;
+  my $i = 0;
   my $output = '';
+
   foreach (@horas) {
     $i += 1;
     my $href = '#';
     my $onclick = '';
+
     if ($0 =~ /Pofficium/) {
       $href = qq("Pofficium.pl?date1=$date1&command=pray$_)
-            . qq(&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive")
+        . qq(&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive");
     } else {
       $onclick = qq(onclick="hset('$_');");
     }
-    my $colour = $i <= $completed ? $visitedlink : $link ;
+    my $colour = $i <= $completed ? $visitedlink : $link;
     $output .= qq(\n<A HREF=$href $onclick><FONT COLOR=$colour>$_</FONT></A>\n);
-    if (($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 2 || $i == 6)) || (($i == (@horas - 2)) && ($0 !~ /Cofficium/))) {
+
+    if (($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 2 || $i == 6)) || (($i == (@horas - 2)) && ($0 !~ /Cofficium/)))
+    {
       $output .= '<BR>';
     } else {
       $output .= '&nbsp;&nbsp;';
     }
   }
-  my $a = ($0 =~ /Pofficium/) ?
-             qq(HREF="Pofficium.pl?date1=$date1&command=Appendix Index)
-           . qq(&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive") :
-             qq(HREF=# onclick="appendix('Index')");
+  my $a =
+    ($0 =~ /Pofficium/)
+    ? qq(HREF="Pofficium.pl?date1=$date1&command=Appendix Index)
+    . qq(&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive")
+    : qq(HREF=# onclick="appendix('Index')");
   $output .= qq(\n<A $a><FONT COLOR=$colour>Appendix</FONT></A>\n) if ($0 !~ /Cofficium/);
   $output;
 }
 
 sub bottom_links_menu {
-  my($compare) = shift;
+  my ($compare) = shift;
 
-  my @options = map { "<A HREF=\"../../www/horas/Help/" . lcfirst($_) . ".html\" TARGET=\"_BLANK\">$_</A>\n";} 
-                  qw(Versions Credits Download Rubrics Technical Help);
+  my @options = map { "<A HREF=\"../../www/horas/Help/" . lcfirst($_) . ".html\" TARGET=\"_BLANK\">$_</A>\n"; }
+    qw(Versions Credits Download Rubrics Technical Help);
   join("&nbsp;&nbsp;&nbsp;&nbsp;\n", @options);
 }
 
-#*** html_dayhead($head, $subhead) 
+#*** html_dayhead($head, $subhead)
 # return day headline in html
 sub html_dayhead {
   my ($head, $subhead) = @_;
 
   my $output = setfont(liturgical_color($head), $head);
-	
-	if ($subhead) {
-		($pre, $main) = split(/: /, $subhead, 2);
-		$output .= "<BR>\n<SPAN STYLE=\"font-size:82%; color:maroon;\"><I>$pre";
-		$output .= ": " . setfont(liturgical_color($main, ''), $main) if $main;
-		$output .= "</I></SPAN>\n";
-	}
+
+  if ($subhead) {
+    ($pre, $main) = split(/: /, $subhead, 2);
+    $output .= "<BR>\n<SPAN STYLE=\"font-size:82%; color:maroon;\"><I>$pre";
+    $output .= ": " . setfont(liturgical_color($main, ''), $main) if $main;
+    $output .= "</I></SPAN>\n";
+  }
 
   $output;
 }
 
 sub print_content {
-  my($lang1, $script1, $lang2, $script2, $antepost) = @_;
+  my ($lang1, $script1, $lang2, $script2, $antepost) = @_;
   our $version, $version1, $version2, $only, $expandind, $column;
-  my($ind1, $ind2);
+  my ($ind1, $ind2);
 
   table_start();
   ante_post('Ante') if $antepost;
+
   while ($ind1 < @$script1 || $ind2 < @$script2) {
     $expandind++;
 
@@ -749,6 +771,7 @@ sub print_content {
     $version = $version1 if $Ck;
     ($text, $ind1) = getunit($script1, $ind1);
     setcell($text, $lang1);
+
     if (!$only) {
       $column = 2;
       $version = $version2 if $Ck;

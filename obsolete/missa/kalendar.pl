@@ -30,7 +30,7 @@ $debug = '';
 our @dayname;    #0=Adv|{Nat|Epi|Quadp|Quad|Pass|Pent 1=winner|2=commemoratio/scriptura
 
 #filled by getrank()
-our $winner;     #the folder/filename for the winner of precedence
+our $winner;          #the folder/filename for the winner of precedence
 our $commemoratio;    #the folder/filename for the commemorated
 our $scriptura;       #the folder/filename for the scripture reading (if winner is sancti)
 our $commune;         #the folder/filename for the used commune
@@ -39,10 +39,10 @@ our $rank;            #the rank of the winner
 our $vespera;         #1 | 3 index for ant, versum, oratio
 
 #filled by precedence()
-our %winner;          #the hash of the winner
-our %commemoratio;    #the hash of the commemorated
-our %scriptura;       #the hash for the scriptura
-our %commune;         # the hash of the commune
+our %winner;                                  #the hash of the winner
+our %commemoratio;                            #the hash of the commemorated
+our %scriptura;                               #the hash for the scriptura
+our %commune;                                 # the hash of the commune
 our (%winner2, %commemoratio2, %commune2);    #same for 2nd column
 our $rule;                                    # $winner{Rank}
 our $communerule;                             # $commune{Rank}
@@ -107,7 +107,7 @@ if ($officium =~ /brevi/) {
     'Divino Afflatu',
     'Reduced 1955',
     'Rubrics 1960',
-    '1960 Newcalendar'
+    '1960 Newcalendar',
   );
 }
 if (!$version) { $version = ($version1) ? $version1 : 'Rubrics 1960'; }
@@ -120,7 +120,7 @@ if (!$kyear) { $kyear = $year; }
 @origyear = split('-', gettoday());
 @monthnames = (
   'Januarius', 'Februarius', 'Martius', 'Aprilis', 'Majus', 'Junius',
-  'Julius', 'Augustus', 'September', 'October', 'November', 'December'
+  'Julius', 'Augustus', 'September', 'October', 'November', 'December',
 );
 @monthlength = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 $title = "Ordo: $monthnames[$kmonth-1] $kyear";
@@ -183,9 +183,9 @@ for ($cday = 1; $cday <= $to; $cday++) {
   @c2 =
     (exists($commemoratio{Rank})) ? split(';;', $commemoratio{Rank})
     : (
-    exists($scriptura{Rank})
+      exists($scriptura{Rank})
       && ($c1[3] !~ /ex C[0-9]+[a-z]*/i
-      || ($version =~ /trident/i && $c1[2] !~ /vide C[0-9]/i))
+        || ($version =~ /trident/i && $c1[2] !~ /vide C[0-9]/i))
     ) ? split(';;', "Scriptura: $scriptura{Rank}")
     : (exists($scriptura{Rank})) ? split(';;', "Tempora: $scriptura{Rank}")
     : splice(@c2, @c2);
@@ -242,7 +242,7 @@ PrintTag
 print << "PrintTag";
 </TABLE><BR>
 PrintTag
-print option_selector("Version", "document.forms[0].submit();", $version, @versions );
+print option_selector("Version", "document.forms[0].submit();", $version, @versions);
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT><\P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT><\P>\n"; }
 print << "PrintTag";

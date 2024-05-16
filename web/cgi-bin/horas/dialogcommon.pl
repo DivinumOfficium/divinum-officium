@@ -34,6 +34,7 @@ local %_dialog;
 # of this split is collected onto the returned array.
 sub getdialog {
   my ($name) = @_;
+
   if (!$_dialog{'loaded'}) {
     $datafolder =~ /(missa|horas)$/;
     %_dialog = %{setupstring('', "$1.dialog")};
@@ -41,44 +42,50 @@ sub getdialog {
     $_dialog{'loaded'} = 1;
   }
   chomp($_dialog{$name});
+
   if (wantarray) {
     return split(',', $_dialog{$name});
-  } else { 
+  } else {
     return $_dialog{$name};
   }
 }
 
 sub gethoras {
-  my($C9f) = @_;
+  my ($C9f) = @_;
   my @horas = getdialog('horas');
-  @horas = @horas[0,1,6] if ($C9f);
+  @horas = @horas[0, 1, 6] if ($C9f);
   $horas[-1] =~ s/\s*$//;
   @horas;
 }
 
 sub set_runtime_options {
-  my($name) = @_;
+  my ($name) = @_;
   my @parameters = split(/;;\r?\n/, getdialog($name));
+
   # pop(@parameters);
   my @setupt = split(/;;/, getsetup($name));
+
   # pop(@setupt);
   my $p = undef;
   my $i = 1;
+
   foreach (@parameters) {
-    my($parname, $parvalue, $parmode, $parpar, $parpos, $parfunc, $parhelp) = split('~>');
+    my ($parname, $parvalue, $parmode, $parpar, $parpos, $parfunc, $parhelp) = split('~>');
+
     if ($parpos !~ /^\d+$/) {
       $parpos = $i;
       $i++;
     }
-    $parvalue = substr($parvalue,1);
-    if ($p = strictparam($parvalue)) { 
+    $parvalue = substr($parvalue, 1);
+
+    if ($p = strictparam($parvalue)) {
       setsetupvalue($name, $parpos - 1, $p);
     } else {
-      $p = substr($setupt[$parpos - 1], index($setupt[$parpos - 1], '=') + 2, -1)
+      $p = substr($setupt[$parpos - 1], index($setupt[$parpos - 1], '=') + 2, -1);
     }
     $$parvalue = $p;
   }
-  $blackfont =~ s/black//; # can't use black in contrast mode
+  $blackfont =~ s/black//;    # can't use black in contrast mode
   $smallblack =~ s/black//;
 }
 
@@ -195,7 +202,7 @@ our %setupstring_caches_by_version;
 use constant {
   RESOLVE_NONE => 0,
   RESOLVE_WHOLEFILE => 1,
-  RESOLVE_ALL => 2
+  RESOLVE_ALL => 2,
 };
 
 #*** setupstring($lang, $fname, %params)
@@ -203,6 +210,7 @@ use constant {
 # the cache. Inclusions are performed according to the value of
 # $params{'resolve@'}. If omitted, the default is RESOLVE_ALL.
 sub setupstring($$%) {
+
   my ($lang, $fname, %params) = @_;
 
   my $basedir = our $datafolder;
@@ -249,27 +257,28 @@ sub setupstring($$%) {
 
     if (%$new_sections) {
 
-			# Fill in missing "pre-Urban hymn translations to avoid being overriden by Latin
-			foreach my $seckey (keys(%{$new_sections})) {
-				if ($seckey =~ /Hymnus(.*?) (.*)/) {
-					unless (exists(${$new_sections}{"Hymnus$1M $2"})) {
-						${$new_sections}{"Hymnus$1M $2"} = ${$new_sections}{$seckey}
-					}
-				}
-			}
-			
+      # Fill in missing "pre-Urban hymn translations to avoid being overriden by Latin
+      foreach my $seckey (keys(%{$new_sections})) {
+        if ($seckey =~ /Hymnus(.*?) (.*)/) {
+          unless (exists(${$new_sections}{"Hymnus$1M $2"})) {
+            ${$new_sections}{"Hymnus$1M $2"} = ${$new_sections}{$seckey};
+          }
+        }
+      }
+
       # Fill in the missing things from the layer below.
       ${$new_sections}{'__preamble'} .= "\n${$base_sections}{'__preamble'}";
       ${$new_sections}{$_} ||= ${$base_sections}{$_} foreach (keys(%{$base_sections}));
-			
-			# Ensure consistency in ranking of Offices by always defaulting to Latin even if there is a Translation itself
-			my @baserank = split(';;', ${$base_sections}{Rank});
-			if(@baserank) {
-				my @newrank = split(';;', ${$new_sections}{Rank});
-				$baserank[0] = $newrank[0];
-				${$new_sections}{Rank} = join(';;', @baserank);
-			}
-			
+
+      # Ensure consistency in ranking of Offices by always defaulting to Latin even if there is a Translation itself
+      my @baserank = split(';;', ${$base_sections}{Rank});
+
+      if (@baserank) {
+        my @newrank = split(';;', ${$new_sections}{Rank});
+        $baserank[0] = $newrank[0];
+        ${$new_sections}{Rank} = join(';;', @baserank);
+      }
+
     } else {
       $new_sections = $base_sections;
     }
@@ -282,13 +291,14 @@ sub setupstring($$%) {
   # Take a copy.
   my %sections = %{${$inclusioncache}{$fullpath}};
   $params{'resolve@'} = RESOLVE_ALL unless (exists $params{'resolve@'});
-	
+
   # Do whole-file inclusions.
   unless ($params{'resolve@'} == RESOLVE_NONE) {
     while ($sections{'__preamble'} =~ /$inclusionregex/gc) {
       my $incl_fname .= "$1.txt";
       if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
-			my $incl_sections = setupstring($lang, $incl_fname, 'resolve@' => RESOLVE_WHOLEFILE);	# ensure daisy-chain (especially for Monastic)
+      my $incl_sections =
+        setupstring($lang, $incl_fname, 'resolve@' => RESOLVE_WHOLEFILE); # ensure daisy-chain (especially for Monastic)
       $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
     }
     delete $sections{'__preamble'};
@@ -374,8 +384,7 @@ sub setupstring_parse_file($$$) {
   foreach my $key (keys %sections) {
 
     # The extra empty string gives us a newline at the end.
-    $sections{$key} = join "\n",
-      (process_conditional_lines(@{$sections{$key}}), '');
+    $sections{$key} = join "\n", (process_conditional_lines(@{$sections{$key}}), '');
   }
   return \%sections;
 }
@@ -484,7 +493,7 @@ sub process_conditional_lines {
       do {
         pop @conditional_stack;
         } while (@conditional_stack
-        && ${$conditional_stack[-1]}[0] == COND_DUMMY_FRAME);
+          && ${$conditional_stack[-1]}[0] == COND_DUMMY_FRAME);
 
       # If we've emptied the conditional stack, push an always-true,
       # unbounded frame to allow uniformity in testing.

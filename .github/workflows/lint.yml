@@ -1,0 +1,40 @@
+name: Check code
+
+on:
+  pull_request:
+    paths:
+      - '**/*.pl'
+      - '**/*.pm'
+
+jobs:
+  perl-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Perl
+        uses: shogo82148/actions-setup-perl@v1
+        with:
+          perl-version: '5.28'
+
+      - name: Install perltidy
+        run: cpanm Perl::Tidy
+
+      - name: Install reviewdog
+        run: wget -O - -q https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | sh -s -- -b /usr/local/bin/ 2>&1
+
+      - name: Run perltidy
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          result=0
+          for file in $(git ls-files '*.pl' '*.pm'); do
+            check="$(perltidy -st "$file" | git diff --no-index -- "$file" - | reviewdog -f=diff -name="perltidy" -reporter=local -filter-mode=nofilter)"
+            if [ -n "$check" ]; then
+              echo -e "\033[1;31mError:\033[0m [perltidy] $file:"
+              echo "$check"
+              result=1
+            fi
+          done
+          exit $result

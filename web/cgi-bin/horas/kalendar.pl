@@ -29,8 +29,8 @@ our $error;
 our $debug;
 
 #filled by occurence()
-our @dayname;    #0=Adv|{Nat|Epi|Quadp|Quad|Pass|Pent 1=winner|2=commemoratio/scriptura
-our $winner;     #the folder/filename for the winner of precedence
+our @dayname;         #0=Adv|{Nat|Epi|Quadp|Quad|Pass|Pent 1=winner|2=commemoratio/scriptura
+our $winner;          #the folder/filename for the winner of precedence
 our $commemoratio;    #the folder/filename for the commemorated
 our $scriptura;       #the folder/filename for the scripture reading (if winner is sancti)
 our $commune;         #the folder/filename for the used commune
@@ -43,10 +43,10 @@ our %winner;          #the hash of the winner
 our %commemoratio;    #the hash of the commemorated
 our %scriptura;       #the hash for the scriptura
 our %commune;         # the hash of the commune
-our $rule;                                    # $winner{Rank}
-our $communerule;                             # $commune{Rank}
-our $duplex;                                  #1= simplex 2=semiduplex, 3=duplex 0=rest
-                                              #4 = duplex majus, 5=duplex II class 6=duplex I class 7=higher
+our $rule;            # $winner{Rank}
+our $communerule;     # $commune{Rank}
+our $duplex;          #1= simplex 2=semiduplex, 3=duplex 0=rest
+                      #4 = duplex majus, 5=duplex II class 6=duplex I class 7=higher
 our $initia;
 our $dayofweek;
 
@@ -65,7 +65,7 @@ binmode(STDOUT, ':encoding(utf-8)');
 our $q = new CGI;
 
 #*** get parameters
-my $compare =  strictparam('compare') || 0;
+my $compare = strictparam('compare') || 0;
 my $officium = strictparam('officium') || 'officium.pl';
 
 if ($compare) {
@@ -75,12 +75,13 @@ if ($compare) {
 }
 
 # use the right date arg
-my $date_arg = $officium =~ /Pofficium/? 'date1': 'date';
+my $date_arg = $officium =~ /Pofficium/ ? 'date1' : 'date';
 
 my $officium_name = $officium =~ /missa/ ? 'missa' : 'horas';
 getini("horas");    #files, colors
 
-my $ckname = ($officium_name =~ /officium/) ? "${officium_name}go" : ($compare) ? "${officium_name}gc" : "${officium_name}g";
+my $ckname =
+  ($officium_name =~ /officium/) ? "${officium_name}go" : ($compare) ? "${officium_name}gc" : "${officium_name}g";
 my $csname = $compare ? 'generalc' : 'general';
 
 my $setupsave = strictparam('setup');
@@ -91,9 +92,9 @@ if (!$setupsave) {
   getcookies($ckname, $csname);
 }
 
-set_runtime_options($csname); #$expand, $version, $lang2
+set_runtime_options($csname);         #$expand, $version, $lang2
 $votive = 'Hodie';
-set_runtime_options('parameters'); # priest, lang1 ... etc
+set_runtime_options('parameters');    # priest, lang1 ... etc
 
 #*** saves parameters
 $setupsave = savesetup(1);
@@ -108,17 +109,17 @@ my $kmonth = strictparam('kmonth') || $xmonth;
 my $kyear = strictparam('kyear') || $xyear;
 
 if (strictparam('format') eq 'ical') {
-  ical_output()
+  ical_output();
 } else {
-  html_output()
+  html_output();
 }
 
 # End of program
 
 #entries 13 (placeholder) and 14 (actually) are added for the Whole Year (Totus) Option
 use constant MONTHNAMES => qw/''
-                              Januarius Februarius Martius Aprilis Maius Junius
-                              Julius Augustus September October November December/;
+  Januarius Februarius Martius Aprilis Maius Junius
+  Julius Augustus September October November December/;
 use constant MONTHLENGTH => ('', 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31, '', 365);
 use constant DAYNAMES => qw/Dom. F.II F.III F.IV F.V F.VI Sabb./;
 
@@ -160,40 +161,41 @@ sub abbreviate_entry {
   s/post Octavam/post Oct./;
   s/Augusti/Aug./;
   s/(Septem|Octo|Novem|Decem)bris/${1}b./;
-  $_
+  $_;
 }
 
 # prepare one day entry
 sub kalendar_entry {
-  my($date, $ver, $compare, $winneronly) = @_;
+  my ($date, $ver, $compare, $winneronly) = @_;
 
   our $version = $ver;
-  our($day, $month, $year, $dayname, %scriptura, %commemoratio);
+  our ($day, $month, $year, $dayname, %scriptura, %commemoratio);
 
   precedence($date);
 
-  my($h1, $h2) = split(/\s*~\s*/, setheadline());
-  return "$h1, $h2" if $winneronly; # finish here for ical
+  my ($h1, $h2) = split(/\s*~\s*/, setheadline());
+  return "$h1, $h2" if $winneronly;    # finish here for ical
 
-  my($c1, $c2);
-  $c1 = "<B>".setfont(liturgical_color($h1), $h1)."</B>"
-      . setfont('1 maroon', "&nbsp;&nbsp;$h2");
+  my ($c1, $c2);
+  $c1 = "<B>" . setfont(liturgical_color($h1), $h1) . "</B>" . setfont('1 maroon', "&nbsp;&nbsp;$h2");
   $c1 =~ s/Hebdomadam/Hebd/i;
   $c1 =~ s/Quadragesima/Quadr/i;
 
   $c2 = $dayname[2];
 
-	($h1, $h2) = split(/: /, $c2, 2);
+  ($h1, $h2) = split(/: /, $c2, 2);
   $c2 = setfont($smallblack, "$h1:") if $h1;
-  $c2 .= "<I>".setfont(liturgical_color($h2), " $h2")."</I>" if $h2;
+  $c2 .= "<I>" . setfont(liturgical_color($h2), " $h2") . "</I>" if $h2;
 
   $c2 =~ s/Hebdomadam/Hebd/i;
   $c2 =~ s/Quadragesima/Quadr/i;
 
   if (substr($date, 0, 5) lt '12-24' && substr($date, 0, 5) gt '01-13') {
+
     # outside Nat put Sancti winner in right column
     ($c2, $c1) = ($c1, $c2) if $winner =~ /sancti/i;
   } else {
+
     # inside Nat clear right column unless it is commemoratio of saint or scriptura
     $c2 = '' unless $c2 =~ /Commemoratio|Scriptura/;
   }
@@ -222,7 +224,7 @@ sub kalendar_entry {
 
 # prepare html table with entries
 sub kalendar_table {
-  my($kyear, $kmonth) = @_;
+  my ($kyear, $kmonth) = @_;
 
   my $output = << "PrintTag";
 <P ALIGN=CENTER>
@@ -231,18 +233,21 @@ sub kalendar_table {
 PrintTag
 
   my $to = (MONTHLENGTH)[$kmonth];
-  if (($kmonth == 2 || $kmonth == 14) && leapyear($kyear)) { $to++; } # in February or for the whole year (14)
-  for my $cday (1..$to) {
+  if (($kmonth == 2 || $kmonth == 14) && leapyear($kyear)) { $to++; }    # in February or for the whole year (14)
+
+  for my $cday (1 .. $to) {
     my $date1;
     my $d1;
-    if($kmonth < 13) {					# loop over the days of a single month
+
+    if ($kmonth < 13) {                                                  # loop over the days of a single month
       $date1 = sprintf("%02i-%02i-%04i", $kmonth, $cday, $kyear);
       $d1 = sprintf("%02i", $cday);
-    } else {										# loop over all days of the year
+    } else {                                                             # loop over all days of the year
       my ($yday, $ymonth, $yyear) = ydays_to_date($cday, $kyear);
       $date1 = sprintf("%02i-%02i-%04i", $ymonth, $yday, $yyear);
       $d1 = sprintf("%02i", $yday);
-      if ($yday == 1) {					# add extra headline at the start of a new month
+
+      if ($yday == 1) {    # add extra headline at the start of a new month
         $output .= << "PrintTag";
 <TR><TH COLSPAN="4" ALIGN=CENTER">
 <A HREF=# onclick=\"setkm($ymonth)\">@{[(MONTHNAMES)[$ymonth]]} $kyear</A>
@@ -250,10 +255,12 @@ PrintTag
 PrintTag
       }
     }
-    my(@c1, @c2) = ((), ());
-    for (0..$compare) {
-      my($c1, $c2) = kalendar_entry($date1, $ver[$_], $compare);
-      push(@c1, $c1); push(@c2, $c2);
+    my (@c1, @c2) = ((), ());
+
+    for (0 .. $compare) {
+      my ($c1, $c2) = kalendar_entry($date1, $ver[$_], $compare);
+      push(@c1, $c1);
+      push(@c2, $c2);
     }
     my $c1 = join('<BR>', @c1);
     my $c2 = join('<BR>', @c2);
@@ -265,7 +272,7 @@ PrintTag
 </TR>
 PrintTag
   }
-  $output . '</TABLE></P>'
+  $output . '</TABLE></P>';
 }
 
 # prepare html page
@@ -273,7 +280,7 @@ sub html_output {
 
   htmlHead("Ordo: @{[(MONTHNAMES)[$kmonth]]} $kyear");
 
-  print do { # print headline
+  print do {    # print headline
     my $vers = $ver[0];
     $vers .= " / $ver[1]" if $compare;
 
@@ -295,28 +302,31 @@ PrintTag
 
     my @mmenu;
     push(@mmenu, "<A HREF=# onclick=\"setkm(-1)\">«</A>\n") if $kmonth == 1;
-    foreach my $i (1..12) {
+
+    foreach my $i (1 .. 12) {
       my $mn = substr((MONTHNAMES)[$i], 0, 3);
       $mn = "<A HREF=# onclick=\"setkm($i)\">$mn</A>\n" unless $i == $kmonth;
-      push(@mmenu, $mn)
+      push(@mmenu, $mn);
     }
     push(@mmenu, "<A HREF=# onclick=\"setkm(13)\">»</A>\n") if $kmonth == 12;
 
-    $output . join('&nbsp;' x 3, @mmenu) . '</P>'
+    $output . join('&nbsp;' x 3, @mmenu) . '</P>';
   };
 
   print kalendar_table($kyear, $kmonth);
 
   print "<P ALIGN=CENTER>\n";
-  print htmlInput('version', $ver[0], 'options', 'versions', , "document.forms[0].submit()");
+  print htmlInput('version', $ver[0], 'options', 'versions', "document.forms[0].submit()");
+
   if ($compare) {
-    print htmlInput('version2', $ver[1], 'options', 'versions', , "document.forms[0].submit()");
+    print htmlInput('version2', $ver[1], 'options', 'versions', "document.forms[0].submit()");
   }
   print "</P><P ALIGN=CENTER>\n" . bottom_links_menu() . "</P>\n";
 
   # if ($savesetup > 1) { print "&nbsp;&nbsp;&nbsp;<A HREF=# onclick=\"readings();\">Readings</A>"; }
   if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
   if ($debug) { print "<P ALIGN=CENTER><FONT COLOR=blue>$debug</FONT></P>\n"; }
+
   # if ($Readings) { Readings(); } # not reachable
   if ($compare) {
     print '<P ALIGN=CENTER><A HREF="#" onclick="callkalendar(0)">Single Calendar</A>';
@@ -324,17 +334,19 @@ PrintTag
     print '<P ALIGN=CENTER><A HREF="#" onclick="callkalendar(1)">Compare Calendars</A>';
     my $tyear;
     ($tyear = gettoday()) =~ s/.*-//;
-    my $iyear =  $tyear != $kyear ? "&kyear=$kyear" : '';
+    my $iyear = $tyear != $kyear ? "&kyear=$kyear" : '';
     print "&nbsp;&nbsp;&nbsp;<A HREF='$ENV{PATH_INFO}?format=ical&version=$ver[0]$iyear'>iCal</A>";
   }
 
   my $date1 = strictparam('date1');
   my $browsertime = strictparam('browsertime');
+
   # my $Readings = strictparam('readings'); # unused
 
   (my $command = strictparam('command')) =~ s/^pray//;
+
   if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Past)/i) {
-    $command = "pray" . ($compare ? $1 : $command); # Cofficium can't use Plures
+    $command = "pray" . ($compare ? $1 : $command);    # Cofficium can't use Plures
   }
 
   print << "PrintTag";
@@ -355,7 +367,7 @@ PrintTag
 
 # prepare ical output
 sub ical_output {
-  my($output) = << "EOH";
+  my ($output) = << "EOH";
 Content-Type: text/calendar; charset=utf-8
 Content-Disposition: attachment; filename="$ver[0] - $kyear.ics"
 
@@ -366,16 +378,17 @@ CALSCALE:GREGORIAN
 SOURCE:https://divinumofficium.com/cgi-bin/horas/kalendar.pl
 EOH
 
-  my($to) = 365 + leapyear($kyear);
-  my(@date) = reverse((localtime(time()))[0..5]);
-  $date[0] += 1900; $date[1]++;
-  my($dtstamp) = sprintf("%04i%02i%02iT%02i%02i%02i", @date);
+  my ($to) = 365 + leapyear($kyear);
+  my (@date) = reverse((localtime(time()))[0 .. 5]);
+  $date[0] += 1900;
+  $date[1]++;
+  my ($dtstamp) = sprintf("%04i%02i%02iT%02i%02i%02i", @date);
 
-  for my $cday (1..$to) {
+  for my $cday (1 .. $to) {
     my ($yday, $ymonth, $yyear) = ydays_to_date($cday, $kyear);
-    my($dtstart) = sprintf("%04i%02i%02i", $yyear, $ymonth, $yday);
+    my ($dtstart) = sprintf("%04i%02i%02i", $yyear, $ymonth, $yday);
     my $day = sprintf("%02i-%02i-%04i", $ymonth, $yday, $yyear);
-    my($e) = kalendar_entry($day, $ver[0], '', 'winneronly');
+    my ($e) = kalendar_entry($day, $ver[0], '', 'winneronly');
     $e = abbreviate_entry($e);
     $output .= << "EOE";
 BEGIN:VEVENT
@@ -392,7 +405,7 @@ EOE
 #*** horasjs()
 # javascript functions called by htmlhead
 sub horasjs {
-qq(
+  qq(
 function callbrevi(date) {
   if (!date) date = '';
   var officium = "$officium";
