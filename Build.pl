@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# Module::Build Build.PL script.  Used for generating scripts to run automated
+# Module::Build Build.pl script.  Used for generating scripts to run automated
 # tests.
 
 use lib 'web/cgi-bin';
