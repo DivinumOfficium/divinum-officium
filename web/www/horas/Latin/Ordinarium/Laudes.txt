@@ -1,13 +1,18 @@
 #Incipit
-$Pater noster
-$Ave Maria
-_
+$Pater Ave L
 $Deus in adjutorium
 &Alleluia
+
+(rubrica Monastica dicitur)
+&psalm(66)
 
 #Psalmi
 
 #Capitulum Hymnus Versus
+(sed rubrica Monastica omittitur)
+
+(rubrica Monastica dicitur)
+#Capitulum Responsorium Hymnus Versus
 
 #Canticum Benedictus
 &ant_Benedictus(1)
@@ -15,17 +20,25 @@ $Deus in adjutorium
 &ant_Benedictus(2)
 
 #Preces Feriales
+(sed rubrica Monastica omittitur)
 
 #Oratio
 
 #Suffragium
+(sed rubrica 196 aut rubrica 1955 omittitur)
 
 #Conclusio
 &Dominus_vobiscum
 &Benedicamus_Domino
 $Fidelium animae
+(rubrica Monastica dicitur)
+&Divinum_auxilium
+
+$Secreto
 $Pater noster
 $Dominus det
+(sed rubrica 196 aut rubrica 1955 omittitur)
 
 &antiphona_finalis
 &Divinum_auxilium
+(sed rubrica 196 aut rubrica 1955 omittitur)
