@@ -24,14 +24,60 @@ v. Credo in Deum, Patrem omnipoténtem, Creatórem cæli et terræ. Et in Jesum 
 V. Carnis resurrectiónem.
 R. Vitam ætérnam. Amen.
 
+[Pater post]
+/:Deinde dicitur tantum « Pater Noster » secreto, nisi sequatur alia Hora.:/
+@:Pater noster
+
+[Pater post V]
+/:Et si tunc terminetur Officium, dicitur tantum « Pater Noster » secreto.:/
+@:Pater noster
+
+[Secreto]
+/:secreto:/
+
+[Secreto L]
+/:Si Matutinum a Laudibus separatur, tunc dicitur secreto::/
+
+[Clara voce]
+/:Deinde, clara voce, dicitur Versus::/
+
+[Secus absolute]
+/:Secus absolute incipiuntur, ut sequitur::/
+
 [Pater Ave]
+@:Secreto
 @:Pater noster
 @:Ave Maria
+_
+@:Clara voce
+
+[Pater Ave] (rubrica 196 aut rubrica 1955)
+
+[Pater Ave L] 
+
+[Pater Ave L] (rubrica divino)
+@:Secreto L
+@:Pater noster
+@:Ave Maria
+_
+@:Secus absolute
 
 [Pater Ave Credo]
+@:Secreto
 @:Pater noster
 @:Ave Maria
 @:Credo
+_
+@:Clara voce
+
+[Pater Ave Credo] (rubrica 196 aut rubrica 1955)
+
+[Pater Ave Credo C]
+/:Deinde dicitur secreto:/
+@:Pater noster
+@:Ave Maria
+@:Credo
+/:Si post Completorium immediate sequatur Matutinum, tunc bis dicitur:/ Pater noster, Ave Maria /:et:/ Credo, /:pro fune videlicet Officii diei præcedentis, et pro initio Officii diei sequentis.:/
 
 [Adjutorium nostrum]
 V. Adjutórium nóstrum + in nómine Dómini. 
