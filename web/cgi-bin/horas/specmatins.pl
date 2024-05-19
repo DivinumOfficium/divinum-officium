@@ -421,7 +421,7 @@ sub votivenocturn {
   if ($rule !~ /Limit.*?Benedictio/i) {
     push(@s, "\&pater_noster");
   } else {
-    push(@s, "\$Pater noster");
+    push(@s, "\$Pater totum secreto");
   }
 
   if ($winner !~ /C12/i) {
@@ -464,7 +464,7 @@ sub lectiones {
   if ($rule !~ /Limit.*?Benedictio/i) {
     push(@s, "\&pater_noster");
   } else {
-    push(@s, "\$Pater noster");
+    push(@s, "\$Pater totum secreto");
   }
   my %benedictio = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
   my $i = $num;

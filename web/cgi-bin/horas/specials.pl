@@ -115,7 +115,11 @@ sub specials {
       setcomment($label, 'Preces', 2, $lang);
 
       while ($t[$tind] !~ /^\s*\#/) {
-        if ($t[$tind] !~ /(Pater|Credo)/) { push(@s, $t[$tind]); }
+        if ($t[$tind] !~ /(Pater|Credo)/) {
+          push(@s, $t[$tind]);
+        } elsif ($t[$tind] =~ /Ave/) {
+          push(@s, '$Ave Maria');
+        }
         $tind++;
       }
       next;
