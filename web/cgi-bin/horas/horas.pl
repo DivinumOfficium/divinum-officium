@@ -1128,8 +1128,8 @@ sub getordinarium {
   my @script = ();
   my $suffix = "";
   if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) { $suffix .= "e"; }    # for Epiphanias
-	if ($command =~ /Tertia|Sexta|Nona/i) { $command = 'Minor'; } 		# identical for Terz/Sext/Non
-	
+  if ($command =~ /Tertia|Sexta|Nona/i) { $command = 'Minor'; }    # identical for Terz/Sext/Non
+
   if ($version =~ /(1955|1960|Newcal)/) {
     $suffix .= "1960";
   } elsif ($version =~ /Monastic/i) {
