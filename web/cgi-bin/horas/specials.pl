@@ -254,50 +254,38 @@ sub specials {
       next;
     }
 
-    if ($item =~ /Capitulum/i && $hora =~ /(Laudes|Vespera)/i) {
-      my $capit = '';
-      my $c = 0;
+    if ($item =~ /Capitulum/i && $hora =~ /^(?:Laudes|Vespera)/) {
+      my $name = "Capitulum $hora";
+      # special case only 1 time
+      $name .= ' 1' if $winner =~ /12-25/ && $vespera == 1;
 
       setbuild('Psalterium/Major Special', $name, 'Capitulum ord');
 
-      if (
-           $hora =~ /Vespera/i
-        && $vespera == 3
-        && (exists($winner{'Capitulum Vespera 3'})
-          || !exists($winner{'Capitulum Vespera'}))
-      ) {
-        ($capit, $c) = getproprium("Capitulum Vespera 3", $lang, $seasonalflag, 1);
-      }
-      if (!$capit) { ($capit, $c) = getproprium("Capitulum $hora", $lang, $seasonalflag, 1); }
-      if (!$capit && !$seasonflag) { ($capit, $c) = getproprium("Capitulum $hora", $lang, 1, 1); }
+      my ($capit, $c) = getproprium($name, $lang, $seasonalflag, 1);
+      if (!$capit && !$seasonflag) { ($capit, $c) = getproprium($name, $lang, 1, 1); }
 
       if (!$capit) {
         my %capit = %{setupstring($lang, 'Psalterium/Major Special.txt')};
-        my $name = major_getname(1);
+        $name = major_getname(1);
         $capit = $capit{$name};
       }
 
-      if ($version =~ /^Monastic/i) {
+      if ($version =~ /^Monastic/) {
         (@capit) = split(/\n/, $capit);
         postprocess_short_resp(@capit, $lang);
         $capit = join("\n", @capit);
       }
+
       setcomment($label, 'Source', $c, $lang);
       push(@s, $capit);
     }
 
     if ($version =~ /^Monastic/i && $item =~ /Responsor/i && $hora =~ /^(?:Laudes|Vespera)/i) {
       my $key = "Responsory $hora";
-      $key .= '1' if $winner eq 'SanctiM/12-25.txt' && $day == 24;
-      my ($resp, $c);
+      # special case only 4 times
+      $key .= ' 1' if ($winner =~ /(?:12-25|Quadp[123]-0)/ && $vespera == 1); 
 
-      if ($vespera == 3) {
-        ($resp, $c) = getproprium("$key $vespera", $lang, $seasonalflag, 1);
-      }
-
-      if (!$resp) {
-        ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1);
-      }
+      my ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1);
 
       if (!$resp) {    # take defaults from Roman minor hours
         $key =~ s/Vespera/Sexta/;
@@ -305,7 +293,8 @@ sub specials {
         ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1);
       }
 
-      if ($resp =~ s/\n?_.*//sr) {
+      $resp =~ s/\n?_.*//s;
+      if ($resp) {
         my @resp = split("\n", $resp);
         postprocess_short_resp(@resp, $lang);
         push(@s, '_', @resp);
