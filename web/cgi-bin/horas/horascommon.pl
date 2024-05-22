@@ -1520,7 +1520,9 @@ sub precedence {
   } else {
     $laudes = (
         (
-             (($dayname[0] =~ /Adv/i && $dayofweek != 0) || $dayname[0] =~ /Quad/i || emberday())
+             (($dayname[0] =~ /Adv/i && $dayofweek != 0) 
+               || $dayname[0] =~ /Quad/i 
+               || (emberday() && $dayname[0] !~ /Pasc/))
           && $winner =~ /tempora/i
           && $winner{Rank} !~ /(Beatæ|Sanctæ) Mariæ/i
         )
