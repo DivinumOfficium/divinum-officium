@@ -405,103 +405,103 @@ sub setvrbar {
 
 #*** setcell($text1, $lang1);
 # output the content of the cell
-sub setcell {
-
-  #note this subroutine produces correct output only for the single-column layout
-  #the double-column layout is yet to be converted to XHTML
-
-  my $text = shift;
-
-  my $lang = shift;
-
-  my $width = ($only) ? 100 : 50;
-
-  if (columnsel($lang)) {    #if this is the primary language
-    $searchind++;
-
-    #print "<DIV STYLE=\"width: 100%; display: table-row;\">&nbsp;</DIV><DIV STYLE=\"display: table-row;\">";
-    if ($notes && $text =~ /\{\:(.*?)\:\}/) {
-      my $notefile = $1;
-      $notefile =~ s/^pc/p/;
-      my $colspan = ($only) ? 1 : 2;
-      print "<TR><TD COLSPAN=\"$colspan\" WIDTH=\"100%\" VALIGN=\"MIDDLE\" ALIGN=\"CENTER\">\n"
-        . "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=\"80%\"></TD></TR>\n";
-    }
-
-    if ($text =~ /%([^;].*?)%/) {
-      my $q = $1;
-
-      if ($hora =~ /Matutinum/i) {
-        $text =~ s{%(.*?)%}{<a href="$date1-2-Laudes.html">$q</a>}i;
-      } elsif ($hora =~ /Vespera/i) {
-        $text =~ s{%(.*?)%}{<a href="$date1-7-Vespera.html">$q</a>}i;
-      } elsif ($hora =~ /Laudes/i) {
-        $text =~ s{%(.*?)%}{<a href="$date1-1-Matutinum.html">$q</a>}i;
-      }
-    }
-  }
-
-  #remove auxiliary characters
-  $text =~ s/wait[0-9]+//ig;
-  $text =~ s/\_/ /g;
-  $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
-  $text =~ s/\{\:.*?\:\}//sg;
-  $text =~ s/\`//g;
-
-  $tdtext2 = '';
-
-  if ($column == 1) {
-    $tdtext1 = $text;
-  } else {
-    $tdtext2 = $text;
-  }
-
-  $htmltext = '';
-
-  #handle two columns output (if there are two columns)
-  if ($column == 2 && !$only) {
-    my ($b1, $b2) = longtd($tdtext1, $tdtext2);
-    @tdtext1 = @$b1;
-    @tdtext2 = @$b2;
-    my $item;
-    my $i = 0;
-
-    while ($i < @tdtext1 && $i < @tdtext2) {
-      $item = $tdtext1[$i];
-      if ($i > 0) { $htmltext .= "<DIV STYLE=\"display: table-row;\">"; }
-      $htmltext .= "<DIV CLASS='lang1'>";
-      $htmltext .= setfont($blackfont, $item) . "</DIV>\n";
-
-      $item = $tdtext2[$i];
-      $htmltext .= "<DIV CLASS='lang2'>";
-      $htmltext .= setfont($blackfont, $item) . "</DIV></DIV>\n";
-
-      if ($extracolumn) {
-        $htmltext .= "<DIV STYLE=\"width: 10%; display: table-cell; vertical-align: top; text-align: center;\">";
-        $htmltext .= "$filler</DIV>\n";
-      }
-      if ($filler && $filler ne ' ') { $filler = ' '; }
-
-      $i++;
-    }
-    @tdtext1 = splice(@tdtext1, @tdtext1);
-    @tdtext2 = splice(@tdtext2, @tdtext2);
-    print $htmltext;
-  }
-
-  #otherwise simply output
-  if ($only) {
-
-    #$htmltext .=  "<DIV STYLE=\"width: $width%; vertical-align: top;\">";
-    #$htmltext .=  setfont($blackfont,$text) . "</DIV>\n";
-    #if ($only || !columnsel($lang)) {$htmltext .= "</DIV>\n";}
-
-    $text =~ s/<BR>/<br \/>/sg;
-
-    #$text =~ s/\n//g;
-    print $text;
-  }
-}
+# sub setcell {
+#
+#   #note this subroutine produces correct output only for the single-column layout
+#   #the double-column layout is yet to be converted to XHTML
+#
+#   my $text = shift;
+#
+#   my $lang = shift;
+#
+#   my $width = ($only) ? 100 : 50;
+#
+#   if (columnsel($lang)) {    #if this is the primary language
+#     $searchind++;
+#
+#     #print "<DIV STYLE=\"width: 100%; display: table-row;\">&nbsp;</DIV><DIV STYLE=\"display: table-row;\">";
+#     if ($notes && $text =~ /\{\:(.*?)\:\}/) {
+#       my $notefile = $1;
+#       $notefile =~ s/^pc/p/;
+#       my $colspan = ($only) ? 1 : 2;
+#       print "<TR><TD COLSPAN=\"$colspan\" WIDTH=\"100%\" VALIGN=\"MIDDLE\" ALIGN=\"CENTER\">\n"
+#         . "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=\"80%\"></TD></TR>\n";
+#     }
+#
+#     if ($text =~ /%([^;].*?)%/) {
+#       my $q = $1;
+#
+#       if ($hora =~ /Matutinum/i) {
+#         $text =~ s{%(.*?)%}{<a href="$date1-2-Laudes.html">$q</a>}i;
+#       } elsif ($hora =~ /Vespera/i) {
+#         $text =~ s{%(.*?)%}{<a href="$date1-7-Vespera.html">$q</a>}i;
+#       } elsif ($hora =~ /Laudes/i) {
+#         $text =~ s{%(.*?)%}{<a href="$date1-1-Matutinum.html">$q</a>}i;
+#       }
+#     }
+#   }
+#
+#   #remove auxiliary characters
+#   $text =~ s/wait[0-9]+//ig;
+#   $text =~ s/\_/ /g;
+#   $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
+#   $text =~ s/\{\:.*?\:\}//sg;
+#   $text =~ s/\`//g;
+#
+#   $tdtext2 = '';
+#
+#   if ($column == 1) {
+#     $tdtext1 = $text;
+#   } else {
+#     $tdtext2 = $text;
+#   }
+#
+#   $htmltext = '';
+#
+#   #handle two columns output (if there are two columns)
+#   if ($column == 2 && !$only) {
+#     my ($b1, $b2) = longtd($tdtext1, $tdtext2);
+#     @tdtext1 = @$b1;
+#     @tdtext2 = @$b2;
+#     my $item;
+#     my $i = 0;
+#
+#     while ($i < @tdtext1 && $i < @tdtext2) {
+#       $item = $tdtext1[$i];
+#       if ($i > 0) { $htmltext .= "<DIV STYLE=\"display: table-row;\">"; }
+#       $htmltext .= "<DIV CLASS='lang1'>";
+#       $htmltext .= setfont($blackfont, $item) . "</DIV>\n";
+#
+#       $item = $tdtext2[$i];
+#       $htmltext .= "<DIV CLASS='lang2'>";
+#       $htmltext .= setfont($blackfont, $item) . "</DIV></DIV>\n";
+#
+#       if ($extracolumn) {
+#         $htmltext .= "<DIV STYLE=\"width: 10%; display: table-cell; vertical-align: top; text-align: center;\">";
+#         $htmltext .= "$filler</DIV>\n";
+#       }
+#       if ($filler && $filler ne ' ') { $filler = ' '; }
+#
+#       $i++;
+#     }
+#     @tdtext1 = splice(@tdtext1, @tdtext1);
+#     @tdtext2 = splice(@tdtext2, @tdtext2);
+#     print $htmltext;
+#   }
+#
+#   #otherwise simply output
+#   if ($only) {
+#
+#     #$htmltext .=  "<DIV STYLE=\"width: $width%; vertical-align: top;\">";
+#     #$htmltext .=  setfont($blackfont,$text) . "</DIV>\n";
+#     #if ($only || !columnsel($lang)) {$htmltext .= "</DIV>\n";}
+#
+#     $text =~ s/<BR>/<br \/>/sg;
+#
+#     #$text =~ s/\n//g;
+#     print $text;
+#   }
+# }
 
 #*** table_start
 # start main table
