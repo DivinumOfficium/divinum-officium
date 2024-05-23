@@ -67,7 +67,6 @@ our $duplex;                                 #1=simplex-feria, 2=semiduplex-feri
                                              # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
 
 #*** collect standard items
-require "$Bin/Ewebdia.pl";
 
 #allow the script to be started directly from the "standalone/tools/epubgen2" subdirectory
 if (!-e "$Bin/do_io.pl") {
@@ -85,6 +84,7 @@ require "$Bin/specmatins.pl";
 
 if (-e "$Bin/monastic.pl") { require "$Bin/monastic.pl"; }
 require "$Bin/webdia.pl";
+require "./Ewebdia.pl";
 require "$Bin/horasjs.pl";
 
 #require "$Bin/tfertable.pl";
