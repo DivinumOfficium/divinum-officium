@@ -8,9 +8,6 @@ Antiphonas horas
 [Ant Vespera]
 @Commune/C5
 
-[Capitulum Vespera]
-@Commune/C5
-
 [Hymnus1 Vespera]
 @Commune/C4:Hymnus1 Vespera
 
@@ -110,7 +107,7 @@ R. Et non supplantabúntur gressus ejus.
 @Commune/C5
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+@Commune/C5
 
 [Hymnus Laudes]
 @Commune/C5
@@ -126,9 +123,6 @@ R. Et non supplantabúntur gressus ejus.
 
 [Lectio Prima]
 @Commune/C5
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C5

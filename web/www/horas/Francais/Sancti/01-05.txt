@@ -18,9 +18,6 @@ Omit preces
 Feria Te Deum
 CPapaM=Telésphore;
 
-[Capitulum Vespera]
-@Tempora/Nat1-0:Capitulum Vespera
-
 [Hymnus Vespera]
 @Sancti/12-25:Hymnus Vespera
 
@@ -108,7 +105,7 @@ Ce passage nous fait entendre que non seulement Hérode, mais aussi les prêtres
 &teDeum
 
 [Capitulum Laudes]
-@Tempora/Nat1-0:Capitulum Vespera
+@Tempora/Nat1-0:Capitulum Laudes
 
 [Hymnus Laudes]
 @Sancti/12-25:Hymnus Laudes
@@ -118,9 +115,6 @@ Ce passage nous fait entendre que non seulement Hérode, mais aussi les prêtres
 
 [Lectio Prima]
 @Tempora/Nat1-0:Lectio Prima
-
-[Capitulum Tertia]
-@Tempora/Nat1-0:Capitulum Vespera
 
 [Capitulum Sexta]
 @Tempora/Nat1-0:Capitulum Sexta

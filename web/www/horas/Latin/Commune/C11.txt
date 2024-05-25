@@ -13,9 +13,6 @@ Nigra sum, * sed formósa, fíliæ Jerúsalem; ídeo diléxit me Rex, et introd�
 Jam hiems tránsiit, * imber ábiit et recéssit: surge, amíca mea, et veni.;;126
 Speciósa * facta es et suávis in delíciis tuis, sancta Dei Génetrix.;;147
 
-[Capitulum Vespera]
-@Commune/C10:Capitulum Vespera
-
 [Hymnus Vespera]
 @Commune/C10:Hymnus Vespera
 
@@ -193,7 +190,7 @@ Quinímmo beáti qui áudiunt verbum Dei et custódiunt. Pulchre Salvátor attes
 @:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+@Commune/C10
 
 [Hymnus Laudes]
 @Commune/C10:Hymnus Laudes
@@ -212,9 +209,6 @@ Beáta es, * María, quæ credidísti: perficiéntur in te, quæ dicta sunt tibi
 
 [Lectio Prima]
 @Commune/C10:Lectio Prima
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C10:Responsory Tertia

@@ -12,9 +12,6 @@ Psalm5 Vespera3=115
 [Ant Vespera]
 @Commune/C1p:Ant Laudes
 
-[Capitulum Vespera]
-@Commune/C1p
-
 [Versum 1]
 @Commune/C1p
 
@@ -110,7 +107,7 @@ En este lugar del Evangelio, en donde el Señor se da el nombre de vid, y a sus 
 @:Ant Vespera
 
 [Capitulum Laudes]
-@Commune/C1p:Capitulum Vespera
+@Commune/C1p:Capitulum Laudes
 
 [Versum 2]
 @Commune/C1p
@@ -120,9 +117,6 @@ En este lugar del Evangelio, en donde el Señor se da el nombre de vid, y a sus 
 
 [Lectio Prima]
 @Commune/C1p
-
-[Capitulum Tertia]
-@Commune/C1p:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C1p

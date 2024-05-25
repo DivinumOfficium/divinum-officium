@@ -18,11 +18,6 @@ Comme j’était toute petite, * j’ai plu au Très-Haut, et de mes entrailles,
 Vous êtes fille bénie * par le Seigneur, puisque c’est par vous que nous avons été mis en communion avec le fruit de vie.;;126
 Elles l’ont vue, * les filles de Sion, et l’ont proclamée bienheureuse et les reines l’ont louée.;;147
 
-[Capitulum Vespera]
-!Sir 24:12-13
-v. Celui qui m'a créée a reposé dans ma tente. Et Il m'a dit : Habite dans Jacob, qu'Israël soit ton héritage et prends racine parmi Mes élus.
-$Deo gratias
-
 [Versum 1]
 V. Vous êtes bénie entre toutes les femmes,
 R. Et le fruit de vos entrailles est béni.
@@ -181,7 +176,9 @@ Heureuse Marie à qui n’ont manqué ni l’humilité ni la virginité ! Singul
 @:Ant Vespera :s/;;.*//gm
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Sir 24:12-13
+v. Celui qui m'a créée a reposé dans ma tente. Et Il m'a dit : Habite dans Jacob, qu'Israël soit ton héritage et prends racine parmi Mes élus.
+$Deo gratias
 
 [Hymnus Laudes]
 v. C’est toi, féconde Mère de Dieu
@@ -211,9 +208,6 @@ R. La Vierge a enfanté le Sauveur ; nous Vous louons, ô notre Dieu.
 
 [Ant 2]
 Sainte Marie, * secourez les malheureux, aidez les faibles, consolez les affligés, priez pour le peuple, intervenez en faveur du clergé, intercédez pour les religieuses ; que tous ceux-là sentent votre assistance, qui célèbrent votre admirable Maternité.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Versum 3]
 @:Versum 1

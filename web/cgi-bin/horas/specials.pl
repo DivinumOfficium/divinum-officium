@@ -225,8 +225,11 @@ sub specials {
         $comment = ($name =~ /(Dominica|Feria)/i) ? 5 : 1;
         setbuild('Psalterium/Minor Special', $name, 'Capitulum ord');
 
-        #look for special from prorium the tempore of sancti
-        my ($w, $c) = getproprium("Capitulum $hora", $lang, $seasonalflag, 1);
+        #look for special from prorium the tempore or sancti
+        # use Laudes for Tertia apart C12
+        my $key = "Capitulum $hora";
+        $key =~ s/Tertia/Laudes/ if ($hora eq 'Tertia' && $votive !~ /C12/);
+        my ($w, $c) = getproprium($key, $lang, $seasonalflag, 1);
 
         if ($w && $w !~ /\_\nR\.br/i) {    # add responsory if missing
           $name = "Responsory $hora";
@@ -255,9 +258,9 @@ sub specials {
     }
 
     if ($item =~ /Capitulum/i && $hora =~ /^(?:Laudes|Vespera)/) {
-      my $name = "Capitulum $hora";
-      # special case only 1 time
-      $name .= ' 1' if $winner =~ /12-25/ && $vespera == 1;
+      my $name = "Capitulum Laudes";    # same for Vespera
+                                        # special case only 1 time
+      $name = 'Capitulum Vespera 1' if $winner =~ /12-25/ && $vespera == 1;
 
       setbuild('Psalterium/Major Special', $name, 'Capitulum ord');
 
@@ -282,8 +285,9 @@ sub specials {
 
     if ($version =~ /^Monastic/i && $item =~ /Responsor/i && $hora =~ /^(?:Laudes|Vespera)/i) {
       my $key = "Responsory $hora";
+
       # special case only 4 times
-      $key .= ' 1' if ($winner =~ /(?:12-25|Quadp[123]-0)/ && $vespera == 1); 
+      $key .= ' 1' if ($winner =~ /(?:12-25|Quadp[123]-0)/ && $vespera == 1);
 
       my ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1);
 
@@ -294,6 +298,7 @@ sub specials {
       }
 
       $resp =~ s/\n?_.*//s;
+
       if ($resp) {
         my @resp = split("\n", $resp);
         postprocess_short_resp(@resp, $lang);

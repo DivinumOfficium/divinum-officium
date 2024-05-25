@@ -10,11 +10,6 @@ ex Tempora/Pasc5-4;
 Doxology=Asc
 StJamesRule=John,Rev
 
-[Capitulum Vespera]
-!1 Petri 4:7-8
-v. Mes bien-aîmés, soyez prudents et veillez dans la prière. Mais, avant tout, ayez les uns pour les autres, une charité constante ; car la charité couvre la multitude des péchés.
-$Deo gratias
-
 [Versum 1]
 @Tempora/Pasc5-4:Versum 2
 
@@ -90,10 +85,9 @@ Ensuite il ajouta, comme conséquemment, ces paroles que nous avons entrepris d�
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
-
-[Capitulum Tertia]
-@:Capitulum Vespera
+!1 Petri 4:7-8
+v. Mes bien-aîmés, soyez prudents et veillez dans la prière. Mais, avant tout, ayez les uns pour les autres, une charité constante ; car la charité couvre la multitude des péchés.
+$Deo gratias
 
 [Capitulum Sexta]
 !1 Petri 4:7-8
@@ -122,4 +116,3 @@ Je vous ai dit ces choses * pour que, leur heure étant venue, vous vous souveni
 [Commemoratio]
 !Commemoration de l'octave de l'Ascension
 @Tempora/Pasc5-4:Oratio
-

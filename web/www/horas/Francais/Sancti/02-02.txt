@@ -13,11 +13,6 @@ Festum Domini
 [Ant Vespera]
 @Sancti/01-01:Ant Vespera
 
-[Capitulum Vespera]
-!Mal 3:1
-v. Voici que J'envoie Mon Ange, et il préparera la voie devant Ma face ; et aussitôt viendra dans Son temple le Dominateur que vous cherchez, et l'Ange de l'alliance que vous désirez.
-$Deo gratias
-
 [Versum 1]
 V. Siméon reçut cette réponse de l’Esprit-Saint.
 R. Qu’il ne verrait point la mort avant d’avoir vu le Christ du Seigneur.
@@ -142,7 +137,9 @@ Ainsi donc, que celui qui veut recevoir son congé vienne au temple, vienne à J
 @:Ant Vespera 3:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Mal 3:1
+v. Voici que J'envoie Mon Ange, et il préparera la voie devant Ma face ; et aussitôt viendra dans Son temple le Dominateur que vous cherchez, et l'Ange de l'alliance que vous désirez.
+$Deo gratias
 
 [Ant 2]
 Comme ses parents apportaient * l’enfant Jésus, Siméon le reçut dans ses bras et bénit le Seigneur en disant : Maintenant, laissez votre serviteur partir en paix.
@@ -150,9 +147,6 @@ Comme ses parents apportaient * l’enfant Jésus, Siméon le reçut dans ses br
 [Lectio Prima]
 !Mal 3:4
 v. Et le sacrifice de Juda et de Jérusalem sera agréable au Seigneur, comme aux jours anciens et comme aux années d’autrefois, dit le Seigneur tout-puissant.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 !Mal 3:1-2

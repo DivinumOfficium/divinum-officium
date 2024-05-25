@@ -13,9 +13,6 @@ Je suis noire, * mais je suis belle, filles de Jérusalem : c’est pour quoi le
 Déjà l’hiver est passé, * la pluie a cessé, elle s’est retirée, levez- vous, mon amie, et venez.;;126
 Toute belle * vous avez été faite, Sainte Mère de Dieu, et vous êtes pleine de douceur au milieu de vos délices.;;147
 
-[Capitulum Vespera]
-@Commune/C10:Capitulum Vespera
-
 [Hymnus Vespera]
 @Commune/C10:Hymnus Vespera
 
@@ -170,9 +167,6 @@ R. Car le Seigneur, lui qui est puissant, m’a fait de grandes choses, et son n
 [Ant Laudes]
 @:Ant Vespera :s/;;.*//g
 
-[Capitulum Laudes]
-@:Capitulum Vespera
-
 [Hymnus Laudes]
 @Commune/C10:Hymnus Laudes
 
@@ -187,9 +181,6 @@ Vous êtes bienheureuse, * Marie, vous qui avez cru : car ce qui vous a été di
 
 [Lectio Prima]
 @Commune/C10:Lectio Prima
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C10:Responsory Tertia

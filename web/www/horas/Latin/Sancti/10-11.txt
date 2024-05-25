@@ -18,11 +18,6 @@ Cum essem párvula, * plácui Altíssimo et de meis viscéribus génui Deum et h
 Benedícta fília * tu a Dómino, quia per te fructum vitæ communicávimus.;;126
 Vidérunt eam * fíliæ Sion, et beátam dixérunt, et regínæ laudavérunt eam.;;147
 
-[Capitulum Vespera]
-!Sir 24:12-13
-v. Qui creávit me, requiévit in tabernáculo meo, et dixit mihi: in Jacob inhábita, et in eléctis meis mitte radíces.
-$Deo gratias
-
 [Versum 1]
 V. Benedícta tu in muliéribus.
 R. Et benedíctus fructus ventris tui.
@@ -181,7 +176,9 @@ Felix María, cui nec humílitas défuit, nec virgínitas! Et quidem singuláris
 @:Ant Vespera:s/;;.*//gm
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Sir 24:12-13
+v. Qui creávit me, requiévit in tabernáculo meo, et dixit mihi: in Jacob inhábita, et in eléctis meis mitte radíces.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Te, Mater alma Núminis,
@@ -207,9 +204,6 @@ R. Virgo péperit Salvatórem: te laudámus Deus noster.
 
 [Ant 2]
 @Commune/C11:Ant 1:s/sanctam festivitátem/admirábilem Maternitátem/
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Versum 3]
 @:Versum 1

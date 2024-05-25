@@ -1,11 +1,6 @@
 [Rank]
 Weißer Sonntag in der Osteroktav;;Duplex majus I. classis;;7;;
 
-[Capitulum Vespera]
-!1 Joh 5,4
-v. Geliebteste: Alles, was seinen Ursprung in Gott hat, das überwindet die Welt: und das ist die siegreiche Kraft, die die Welt überwindet, unser Glaube.
-$Deo gratias
-
 [Versum 1]
 @Psalterium/Major Special:Pasc Versum 3
 
@@ -101,16 +96,15 @@ Dixit eis: Pax vobis. Sicut misit me Pater, et ego mitto vos: id est, sicut misi
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!1 Joh 5,4
+v. Geliebteste: Alles, was seinen Ursprung in Gott hat, das überwindet die Welt: und das ist die siegreiche Kraft, die die Welt überwindet, unser Glaube.
+$Deo gratias
 
 [Versum 2]
 @Psalterium/Major Special:Pasch Versum 2
 
 [Ant 2]
 @:Ant 1
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 !1 Joh 5,5-6

@@ -16,11 +16,6 @@ Repléti sunt omnes * Spíritu Sancto, et cœpérunt loqui, allelúja, allelúja
 Fontes, et ómnia * quæ movéntur in aquis, hymnum dícite Deo, allelúja.
 Loquebántur * váriis linguis Apóstoli magnália Dei, allelúja, allelúja, allelúja.;;116
 
-[Capitulum Vespera]
-!Act. 2:1-2
-v. Cum compleréntur dies Pentecóstes, erant omnes discípuli páriter in eódem loco: et factus est repénte de cælo sonus, tamquam adveniéntis spíritus veheméntis, et replévit totam domum, ubi erant sedéntes.
-$Deo gratias
-
 [HymnusM Vespera]
 @:Hymnus Vespera:s/díceris Paráclitus/Paráclitus díceris/ s/Altíssimi donum Dei/Donum Dei Altíssimi/ s/Dígitus patérnæ déxteræ/Dextræ Dei tu dígitus/ s/Teque/Te/
 
@@ -211,7 +206,9 @@ Et Pater meus díliget eum, et ad eum veniémus, et mansiónem apud eum faciému
 @:Ant Vespera:s/;.*//
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Act. 2:1-2
+v. Cum compleréntur dies Pentecóstes, erant omnes discípuli páriter in eódem loco: et factus est repénte de cælo sonus, tamquam adveniéntis spíritus veheméntis, et replévit totam domum, ubi erant sedéntes.
+$Deo gratias
 
 [HymnusM Laudes]
 @:Hymnus Laudes:s/Illápsus est Apóstolis/Effúlsit in discípulos/ s/círculo/número/
@@ -265,9 +262,6 @@ v. Judǽi quoque et Prosélyti, Cretes et Arabes: audívimus eos loquéntes nost
 
 [Hymnus Tertia]
 @:Hymnus Vespera
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Spíritus Dómini replévit orbem terrárum, * Allelúja, allelúja.

@@ -19,11 +19,6 @@ Vous êtes la gloire de Jérusalem, * vous êtes la joie d’Israël, vous êtes
 Vous êtes bénie, * ô Vierge Marie, par le Seigneur, le Dieu très haut, plus que toutes les femmes, sur la terre.;;126
 Entraînez-nous, * Vierge immaculée, nous courrons à votre suite, à l’odeur de vos parfums.;;147
 
-[Capitulum Vespera]
-!Prov 8:22-24
-v. Le Seigneur m'a possédée au commencement de Ses voies, avant de faire quoi que ce soit, dès le principe. J'ai été établie dès l'éternité, et dès les temps anciens, avant que la terre fût créée. Les abîmes n'étaient pas encore, et déjà j'étais conçue.
-$Deo gratias
-
 [Versum 1]
 V. C’est aujourd’hui l’immaculée Conception de la sainte Vierge Marie.
 R. Qui a écrasé la tête du serpent de son pied virginal.
@@ -194,7 +189,9 @@ Revêtez magnifiquement les prêtres de justice et inspirez-leur les transports 
 @:Ant Vespera :s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Prov 8:22-24
+v. Le Seigneur m'a possédée au commencement de Ses voies, avant de faire quoi que ce soit, dès le principe. J'ai été établie dès l'éternité, et dès les temps anciens, avant que la terre fût créée. Les abîmes n'étaient pas encore, et déjà j'étais conçue.
+$Deo gratias
 
 [Versum 2]
 @:Versum 1
@@ -205,9 +202,6 @@ Le Seigneur dit * au serpent : Je mettrai une inimitié entre toi et la femme, e
 [Lectio Prima]
 !Apo 12:1
 v. Un grand prodige parut dans le ciel : une Femme revêtue du soleil, la lune sous ses pieds et, sur sa tête, une couronne de douze étoiles.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Le Dieu tout-puissant * M’a ceinte de force.

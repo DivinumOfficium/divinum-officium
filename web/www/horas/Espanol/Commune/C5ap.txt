@@ -8,9 +8,6 @@ Antiphonas horas
 [Ant Vespera]
 @Commune/C5p
 
-[Capitulum Vespera]
-@Commune/C5
-
 [Hymnus1 Vespera]
 @Commune/C4:Hymnus1 Vespera
 
@@ -90,7 +87,7 @@ Antiphonas horas
 @Commune/C5p
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+@Commune/C5
 
 [Hymnus Laudes]
 @Commune/C5:Hymnus Laudes
@@ -106,9 +103,6 @@ Antiphonas horas
 
 [Lectio Prima]
 @Commune/C5
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C5p

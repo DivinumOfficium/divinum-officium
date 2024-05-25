@@ -20,11 +20,6 @@ Il n’a plus ni beauté, * ni décor ; nous l’avons vu, il n’était pas à 
 De la plante des pieds, * au sommet de la tête, il n’y a en lui plus rien de sain.;;126
 Soutenez-moi avec des fleurs, * fortifiez-moi avec des fruits ; car je languis d’amour.;;147
 
-[Capitulum Vespera]
-!Lam 2:13
-v. A qui te comparer ? Ou bien à qui t’assimiler, fille de Jérusalem ? A qui t’égaler pour te consoler, vierge fille de Sion ? Grande est comme la mer, la douleur qui te broie.
-$Deo gratias
-
 [Hymnus Vespera]
 v. Retirez-vous du ciel, astre des nuits ;
 Soleil épouvanté, précipitez votre course ;
@@ -220,7 +215,9 @@ R. Afin que, dans leur plénitude, vous receviez miséricorde et bénédiction.
 @:Ant Vespera :s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Lam 2:13
+v. A qui te comparer ? Ou bien à qui t’assimiler, fille de Jérusalem ? A qui t’égaler pour te consoler, vierge fille de Sion ? Grande est comme la mer, la douleur qui te broie.
+$Deo gratias
 
 [Hymnus Laudes]
 v. O Dieu dont la clémence est infinie,
@@ -261,9 +258,6 @@ $Qui vivis
 [Lectio Prima]
 !Lam. 2:18
 v. Verse, comme un torrent, des larmes, jour et nuit ; ne te donne pas de repos et qu’elle ne se taise pas, la pupille de ton œil.
-
-[Capitulum Tertia]
-@:Capitulum Laudes
 
 [Responsory Tertia]
 R.br. O vous tous * Qui passez par le chemin.

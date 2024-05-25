@@ -10,11 +10,6 @@ Psalmi Dominica
 Antiphonas horas
 Doxology=Corp
 
-[Capitulum Vespera]
-!1 Jn 3:13-14
-v. No os sorprenda, hermanos, que el mundo os odie; nosotros sabemos que hemos pasado de la muerte a la vida porque amamos a los hermanos.
-$Deo gratias
-
 [Hymnus Vespera]
 @Tempora/Pent01-4:Hymnus Vespera
 
@@ -86,7 +81,9 @@ De aquí proviene que, habiendo nacido en las penas de este destierro, lleguemos
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!1 Jn 3:13-14
+v. No os sorprenda, hermanos, que el mundo os odie; nosotros sabemos que hemos pasado de la muerte a la vida porque amamos a los hermanos.
+$Deo gratias
 
 [Hymnus Laudes]
 @Tempora/Pent01-4:Hymnus Laudes
@@ -101,9 +98,6 @@ Un hombre * dispuso una gran cena, y a la hora de cenar envió un criado a decir
 [Lectio Prima]
 !1 Jn 3:18
 v. Hijos míos, no amemos de palabra y de boca, sino de verdad y con obras.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Tempora/Pent01-4

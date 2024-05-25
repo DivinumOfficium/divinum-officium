@@ -6,11 +6,6 @@ Vierter Sonntag nach Ostern;;Semiduplex;;5;;
 Una Antiphona
 StJamesRule=Jas
 
-[Capitulum Vespera]
-!Jak 1,17
-v. Geliebteste, alles, was es an guten Gaben und an allseitig guten Spenden gibt, stammt von oben und geht aus von dem alles beglückenden Vater, bei dem es keine Umwandlung gibt und keinen Schatten einer Wesenänderung.
-$Deo gratias
-
 [Versum 1]
 @Tempora/Pasc1-0:Versum 1
 
@@ -130,16 +125,15 @@ Was also soll das, dass er hier spricht: „Das habe ich euch von Anfang an nich
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Jak 1,17
+v. Geliebteste, alles, was es an guten Gaben und an allseitig guten Spenden gibt, stammt von oben und geht aus von dem alles beglückenden Vater, bei dem es keine Umwandlung gibt und keinen Schatten einer Wesenänderung.
+$Deo gratias
 
 [Versum 2]
 @Tempora/Pasc1-0:Versum 2
 
 [Ant 2]
 @:Ant 1
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 !Jak 1,19-20

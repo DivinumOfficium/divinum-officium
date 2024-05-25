@@ -8,8 +8,8 @@ Psalmi Dominica
 [Hymnus Vespera]
 @Sancti/12-25:HymnusM Vespera
 
-[Capitulum Vespera]
-@:Capitulum Laudes
+[Capitulum Laudes]
+@Tempora/Nat1-0
 
 [Invit]
 @Sancti/12-25
@@ -87,13 +87,8 @@ Allelúja, * allelúja, allelúja;;263;264;265
 [Hymnus Laudes]
 @Sancti/12-25:HymnusM Laudes
 
-[Capitulum Laudes]
-@:Capitulum Tertia
-_
+[Responsory Laudes]
 @Sancti/12-25:Responsory Sexta:s/._.*//s
-
-[Capitulum Tertia]
-@Tempora/Nat1-0:Capitulum Vespera
 
 [Responsory TertiaM]
 @Sancti/12-25:Responsory Nona:s/.*_.//s

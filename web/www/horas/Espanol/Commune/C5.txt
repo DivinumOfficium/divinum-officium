@@ -12,11 +12,6 @@ Este es el criado fiel * y solícito, a quien el Señor ha puesto al frente de s
 Dichoso el criado * a quien su señor, al llegar y llamar a la puerta, lo encuentra velando.;;112
 Siervo bueno * y fiel, pasa al banquete de tu Señor.;;116
 
-[Capitulum Vespera]
-!Sir 31:8-9
-v. ¡Dichoso el hombre que es hallado intachable: que no corrió detrás del dinero ni puso su confianza en las riquezas! ¿Quién es ése?, y lo felicitaremos. Porque ha hecho maravillas en su pueblo.
-$Deo gratias
-
 [Hymnus1 Vespera]
 @Commune/C4:Hymnus1 Vespera
 
@@ -164,7 +159,9 @@ Dichoso el criado * a quien su señor, al llegar y llamar a la puerta, lo encuen
 Siervo bueno * y fiel, pasa al banquete de tu Señor.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Sir 31:8-9
+v. ¡Dichoso el hombre que es hallado intachable: que no corrió detrás del dinero ni puso su confianza en las riquezas! ¿Quién es ése?, y lo felicitaremos. Porque ha hecho maravillas en su pueblo.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Jesucoronacelsior:}v. Jesús, excelsa corona,
@@ -225,9 +222,6 @@ $Per Dominum.
 [Lectio Prima]
 !Sab 10:10
 v. El Señor condujo al justo por sendas llanas, le mostró el reino de Dios y le dio a conocer las cosas santas. Lo hizo prosperar en sus tareas, hizo fecundos sus trabajos.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. El Señor lo amó * Y lo enalteció. 

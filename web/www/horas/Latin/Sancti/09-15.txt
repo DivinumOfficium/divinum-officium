@@ -17,11 +17,6 @@ Non est ei * spécies neque decor, et vídimus eum, et non erat aspéctus.;;121
 A planta pedis * usque ad vérticem cápitis non est in eo sánitas.;;126
 Fulcíte me flóribus, * stipáte me malis, quia amóre lángueo.;;147
 
-[Capitulum Vespera]
-!Lam 2:13
-v. Cui comparábo te? vel cui assimilábo te, fília Jerúsalem? cui exæquábo te, et consolábor te, virgo fília Sion? Magna est velut mare contrítio tua.
-$Deo gratias
-
 [Hymnus Vespera]
 v. Jam toto súbitus vesper eat polo,
 Et sol attónitum præcípitet diem,
@@ -223,7 +218,9 @@ Ecce, inquit, fílius tuus: ecce mater tua. Testabátur de cruce Christus, et in
 @:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Lam 2:13
+v. Cui comparábo te? vel cui assimilábo te, fília Jerúsalem? cui exæquábo te, et consolábor te, virgo fília Sion? Magna est velut mare contrítio tua.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Summæ Deus cleméntiæ,
@@ -260,9 +257,6 @@ $Qui vivis
 [Lectio Prima]
 !Lam. 2:18
 v. Deduc quasi torréntem lácrimas per diem et noctem; non des réquiem tibi, neque táceat pupílla óculi tui.
-
-[Capitulum Tertia]
-@:Capitulum Laudes
 
 [Responsory Tertia]
 R.br. O vos omnes, * Qui transítis per viam.

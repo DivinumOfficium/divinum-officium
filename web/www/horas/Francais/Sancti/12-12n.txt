@@ -18,11 +18,6 @@ Des fleurs ont fleuri * dans notre terre : nous vous louons, Sainte Mère de Die
 Chantez-lui un cantique nouveau : * annoncez sa gloire parmi les nations. ;;126
 Vous êtes la gloire de Jérusalem, * la joie d'Israël, l'honneur de votre peuple.;;147
 
-[Capitulum Vespera]
-!Prov 8:34-35
-v. Heureux l'homme qui m'écoute, qui veille chaque jour à mes portes, qui garde le seuil de ma demeure. Celui qui me trouve, trouve la vie et obtient le salut du Seigneur.
-$Deo gratias
-
 [Versum 1]
 V. Il n'a pas agi ainsi envers toutes les nations.
 R. Et il ne leur a pas fait connaître ses jugements.
@@ -48,7 +43,9 @@ En l'an 1531, à Mexico, sur la colline de Tepeyac, la Vierge Marie se manifesta
 @:Ant Vespera :s/109/92/ s/112/99/ s/121/62/ s/126/210/ s/147/148/
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Prov 8:34-35
+v. Heureux l'homme qui m'écoute, qui veille chaque jour à mes portes, qui garde le seuil de ma demeure. Celui qui me trouve, trouve la vie et obtient le salut du Seigneur.
+$Deo gratias
 
 [Hymnus Laudes]
 !Ex S. Anselmo Ep. Cantuariensi

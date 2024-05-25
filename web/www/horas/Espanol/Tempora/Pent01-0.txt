@@ -18,9 +18,6 @@ Resuene la alabanza * en todos los labios, a gloria del Padre, del Hijo engendra
 Alabanza a Dios Padre, * y al Hijo, y que nuestros labios te canten, Espíritu Santo, por toda la eternidad.;;112
 Gloria por siempre * a aquel de quien todo procede, por quien todo existe, y en quien todo subsiste.;;116
 
-[Capitulum Vespera]
-@Psalterium/Major Special:Day6 Vespera
-
 [Hymnus Vespera]
 @Psalterium/Major Special:Hymnus Day6 Vespera
 
@@ -211,7 +208,7 @@ Nombramos distintamente al Padre y al Hijo, pero no podemos ni debemos decir dos
 @:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+@Psalterium/Major Special:Day6 Vespera
 
 [Hymnus Laudes]
 v. Tú, Unidad de la Trinidad, 
@@ -250,9 +247,6 @@ $Per Dominum
 [Lectio Prima]
 !1 Jn 5:7
 v. Tres son los que dan testimonio en el cielo: el Padre, el Verbo y el Espíritu Santo; y estos tres son Uno.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Bendigamos al Padre y al Hijo, * Con el Espíritu Santo. 

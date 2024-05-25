@@ -19,11 +19,6 @@ Tú eres la gloria de Jerusalén, * Tú eres la alegría de Israel, Tú eres el 
 Bendita eres Tú, * Virgen María, del Señor Dios Altísimo, entre todas las mujeres de la tierra.;;126
 Atráenos hacia ti, * Virgen Inmaculada, seguiremos el aroma de tus perfumes.;;147
 
-[Capitulum Vespera]
-!Prov 8:22-24
-v. El Señor me estableció al principio de sus tareas, al comienzo de sus obras antiquísimas; en un tiempo remotísimo fui formada, antes de comenzar la tierra. Antes de los abismos fui engendrada.
-$Deo gratias
-
 [Versum 1]
 V. Hoy es la Inmaculada Concepción de Santa María, la Virgen.
 R. Cuyo pie virginal aplastó la cabeza de la serpiente.
@@ -194,7 +189,9 @@ Reviste espléndidamente a los sacerdotes de justicia y de los sentimientos de u
 @:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Prov 8:22-24
+v. El Señor me estableció al principio de sus tareas, al comienzo de sus obras antiquísimas; en un tiempo remotísimo fui formada, antes de comenzar la tierra. Antes de los abismos fui engendrada.
+$Deo gratias
 
 [Versum 2]
 @:Versum 1
@@ -205,9 +202,6 @@ El Señor dijo * a la serpiente: pondré enemistades entre ti y la mujer, entre 
 [Lectio Prima]
 !Apo 12:1
 v. Y apareció en el cielo un gran signo: Una mujer revestida de sol, con la luna bajo sus pies, y sobre su cabeza una corona de doce estrellas.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Dios omnipotente * Me ciñe de valor. 

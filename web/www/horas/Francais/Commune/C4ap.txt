@@ -14,9 +14,6 @@ C’est pourquoi, par serment, * le Seigneur l'a fait grandir pour Son peuple, a
 Prêtres de Dieu, * bénissez le Seigneur ! Serviteurs du Seigneur, dites un hymne à Dieu, alléluia, alléluia.;;112
 Serviteur bon * et fidèle, entre dans la joie de ton Seigneur, alléluia.;;116
 
-[Capitulum Vespera]
-@Commune/C4
-
 [Hymnus1 Vespera]
 @Commune/C4:Hymnus1 Vespera
 
@@ -144,7 +141,7 @@ Prêtres de Dieu, bénissez le Seigneur : serviteurs du Seigneur, dites une hymn
 Serviteur bon et fidèle, entre dans la joie de ton Seigneur. Alléluia.
 
 [Capitulum Laudes]
-@Commune/C4:Capitulum Vespera
+@Commune/C4:Capitulum Laudes
 
 [Hymnus Laudes]
 @Commune/C4:Hymnus Laudes
@@ -171,9 +168,6 @@ $Per Dominum
 
 [Lectio Prima]
 @Commune/C4
-
-[Capitulum Tertia]
-@Commune/C4:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Le Seigneur l’a aimé. * Et l’a paré. * Alléluia, alléluia.
