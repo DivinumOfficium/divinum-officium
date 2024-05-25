@@ -12,11 +12,6 @@ Jam hiems tránsiit, * imber ábiit et recéssit: surge, amíca mea, et veni.;;1
 Veni, elécta mea, * et ponam in te thronum meum, allelúja.;;126
 Ista est speciósa * inter fílias Jerúsalem.;;147
 
-[Capitulum Vespera]
-!Sir 51:1-3
-v. Confitébor tibi, Dómine, Rex, et collaudábo te Deum Salvatórem meum. Confitébor nómini tuo: quóniam adjútor et protéctor factus es mihi, et liberásti corpus meum a perditióne.
-$Deo gratias
-
 [Hymnus Vespera]
 {:H-Tristeserantapostoli:}v. Fortem viríli péctore
 Laudémus omnes féminam,
@@ -162,7 +157,9 @@ Thesáurus autem cæléste est desidérium; ager vero, in quo thesáurus abscón
 @:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Sir 51:1-3
+v. Confitébor tibi, Dómine, Rex, et collaudábo te Deum Salvatórem meum. Confitébor nómini tuo: quóniam adjútor et protéctor factus es mihi, et liberásti corpus meum a perditióne.
+$Deo gratias
 
 [Hymnus Laudes]
 @Commune/C7:Hymnus Vespera
@@ -191,9 +188,6 @@ $Per Dominum
 [Lectio Prima]
 !Sir 51:8; 51:12
 v. Laudábit usque ad mortem ánima mea Dóminum, quóniam éruis sustinéntes te, et líberas eos de manu angústiæ, Dómine, Deus noster.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C6

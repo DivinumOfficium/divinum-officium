@@ -14,7 +14,7 @@ Votive nocturn
 [Ant Vespera]
 @Sancti/03-25
 
-[Capitulum Vespera]
+[Capitulum Laudes]
 @Sancti/03-25:Lectio Prima
 $Deo gratias
 
@@ -36,22 +36,6 @@ $Oremus
 v. Dígnate, Señor, purificar nuestras conciencias con tu visitación, a fin de que cuando venga Jesucristo vuestro Hijo, Señor nuestro, con todos los santos, halle en nosotros una morada dispuesta para recibirle. 
 $Qui tecum
 (se omite en las rúbricas de 1955 y 1960)
-
-[Special Completorium]
-@Commune/C12::s/(#Capitulum.).*/$1/s
-@Sancti/03-25:Capitulum Vespera
-_
-@Psalterium/Mariaant:Advent:s/.*V./V./s s/v. .*//s
-
-#Canticum Nunc dimittis
-@Tempora/Adv1-0:Ant 2:s/^/Ant. /
-&psalm(233)
-@Tempora/Adv1-0:Ant 2:s/^/Ant. /
-
-@Commune/C12:Pre oratio
-@:Oratio
-
-@Commune/C12::s/.*(.#Conclusio)/$1/s
 
 [Invit]
 @Commune/C12
@@ -86,100 +70,3 @@ _
 36 Y ahí tienes a tu parienta Isabel, que en su vejez ha concebido un hijo; y la que se llamaba estéril, hoy cuenta ya el sexto mes; 
 37 ya que para Dios nada es imposible. 
 38 Entonces dijo María: He aquí la esclava del Señor, hágase en mí según tu palabra.
-
-[Responsory3]
-@Sancti/03-25
-
-[Ant Laudes]
-@Sancti/03-25:Ant Vespera:s/;;.*//g
-
-[Capitulum Laudes]
-@Sancti/03-25:Lectio Prima
-$Deo gratias
-
-[Versum 2]
-@Commune/C12
-
-[Ant 2]
-@Tempora/Adv1-0:Ant 2
-
-[Minor final]
-
-@Commune/C12:Pre oratio
-@:Oratio
-@Commune/C12:Minor final
-
-[Special Prima]
-@Commune/C12:Minor intro
-@Sancti/03-25:Ant Vespera:1 s/^/Ant. / s/;;.*//
-&psalm(53)
-
-&psalm(84)
-
-&psalm(116)
-_
-@Sancti/03-25:Ant Vespera:1 s/^/Ant. / s/;;.*//
-
-#Capitulum
-@Sancti/03-25:Capitulum Vespera
-_
-@Commune/C11:Versum 1
-@:Minor final
-
-[Special Tertia]
-@Commune/C12:Minor intro
-@Sancti/03-25:Ant Vespera:2 s/^/Ant. / s/;;.*//
-&psalm(119)
-
-&psalm(120)
-
-&psalm(121)
-_
-@Sancti/03-25:Ant Vespera:2 s/^/Ant. / s/;;.*//
-
-#Capitulum
-@Sancti/03-25:Lectio Prima
-$Deo gratias
-_
-@Commune/C11:Versum 2
-@:Minor final
-
-[Special Sexta]
-@Commune/C12:Minor intro
-@Sancti/03-25:Ant Vespera:3 s/^/Ant. / s/;;.*//
-&psalm(122)
-
-&psalm(123)
-
-&psalm(124)
-_
-@Sancti/03-25:Ant Vespera:3 s/^/Ant. / s/;;.*//
-
-#Capitulum
-@Sancti/03-25:Capitulum Sexta
-_
-@Commune/C12:Versum 2
-@:Minor final
-
-[Special Nona]
-@Commune/C12:Minor intro
-@Sancti/03-25:Ant Vespera:5 s/^/Ant. / s/;;.*//
-&psalm(125)
-
-&psalm(126)
-
-&psalm(127)
-_
-@Sancti/03-25:Ant Vespera:5 s/^/Ant. / s/;;.*//
-
-#Capitulum
-@Sancti/03-25:Capitulum Vespera
-_
-@Psalterium/Mariaant:Advent:s/.*V./V./s s/v. .*//s
-@:Minor final
-
-[Versum 3]
-@:Versum 1
-
-[Ant 3]
-@:Ant 1

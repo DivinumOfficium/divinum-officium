@@ -15,7 +15,7 @@ no Te Deum
 [Ant Vespera]
 @Sancti/03-25
 
-[Capitulum Vespera]
+[Capitulum Laudes]
 @Sancti/03-25:Lectio Prima
 $Deo gratias
 
@@ -40,7 +40,7 @@ $Qui tecum
 
 [Special Completorium]
 @Commune/C12::s/(#Capitulum.).*/$1/s
-@Sancti/03-25:Capitulum Vespera
+@Sancti/03-25:Capitulum Laudes
 _
 @Psalterium/Mariaant:Advent:s/.*V./V./s s/v. .*//s
 
@@ -122,7 +122,7 @@ _
 @Sancti/03-25:Ant Vespera:1 s/^/Ant. / s/;;.*//
 
 #Capitulum
-@Sancti/03-25:Capitulum Vespera
+@Sancti/03-25:Capitulum Laudes
 _
 @Commune/C11:Versum 1
 @:Minor final
@@ -174,7 +174,7 @@ _
 @Sancti/03-25:Ant Vespera:5 s/^/Ant. / s/;;.*//
 
 #Capitulum
-@Sancti/03-25:Capitulum Vespera
+@Sancti/03-25:Capitulum Laudes
 _
 @Psalterium/Mariaant:Advent:s/.*V./V./s s/v. .*//s
 @:Minor final

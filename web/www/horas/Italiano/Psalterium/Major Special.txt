@@ -1303,9 +1303,7 @@ R. Amen.
 $Fidelium animae
 
 [Day0M Laudes]
-!Apo 7:12
-v. Benedizione, e gloria, e sapienza, e ringraziamento, onore, potenza e fortezza al nostro Dio nei secoli dei secoli. Così sia.
-$Deo gratias
+@:Day0 Laudes
 _
 R.br. Inclina il mio cuore o Dio * ai tuoi comandamenti.
 R. Inclina il mio cuore o Dio ai tuoi comandamenti.
@@ -1315,9 +1313,7 @@ R. Ai tuoi comandamenti.
 R. Inclina il mio cuore o Dio ai tuoi comandamenti.
 
 [DayFM Laudes]
-!Rom 13:12-13
-v. La notte è inoltrata e il giorno si avvicina. Gettiamo via dunque le opere delle tenebre e indossiamo le armi della luce. Camminiamo onestamente, come in pieno giorno.
-$Deo gratias
+@:Day1 Laudes
 _
 R.br. Salva l'anima mia, * perché ho peccato contro di te.
 R. Salva l'anima mia, * perché ho peccato contro di te.
@@ -1327,21 +1323,10 @@ R. Perché ho peccato contro di te.
 R. Salva l'anima mia, * perché ho peccato contro di te.
 
 [Day6M Laudes]
-!Rom 13:12-13
-v. La notte è inoltrata e il giorno si avvicina. Gettiamo via dunque le opere delle tenebre e indossiamo le armi della luce. Camminiamo onestamente, come in pieno giorno.
-$Deo gratias
-_
-R.br. Salva l'anima mia, * perché ho peccato contro di te.
-R. Salva l'anima mia, * perché ho peccato contro di te.
-V. Ho detto: Signore, abbi pietà di me.
-R. Perché ho peccato contro di te.
-&Gloria
-R. Salva l'anima mia, * perché ho peccato contro di te.
+@:DayFM Laudes
 
 [Day0M Vespera]
-!2 Cor 1:3-4
-v. Benedetto Iddio e Padre di nostro Signore Gesù Cristo, Padre delle misericordie e Dio di ogni consolazione, che ci consola in ogni nostra tribolazione.
-$Deo gratias
+@:Day0 Vespera
 _
 R.br. Come sono grandi * le tue opere o Signore.
 R. Come sono grandi * le tue opere o Signore.
@@ -1351,9 +1336,7 @@ R. Le tue opere o Signore.
 R. Come sono grandi * le tue opere o Signore.
   
 [DayFM Vespera]
-!2 Cor 1:3-4
-v. Benedetto Iddio e Padre di nostro Signore Gesù Cristo, Padre delle misericordie e Dio di ogni consolazione, che ci consola in ogni nostra tribolazione.
-$Deo gratias
+@:Day0 Vespera
 _
 R.br. Io benedirò il Signore * in ogni tempo.
 R. Io benedirò il Signore * in ogni tempo.
@@ -1363,9 +1346,7 @@ R. In ogni tempo.
 R. Io benedirò il Signore * in ogni tempo.
 
 [Day6M Vespera]
-!Rom 11:33
-v. O abisso delle ricchezze della sapienza e scienza di Dio: quanto incomprensibili sono i suoi giudizi e imperscrutabili  le sue vie!
-$Deo gratias
+@:Day6 Vespera
 _
 R.br. Grande è il Signore nostro, * e grande è la sua potenza.
 R. Grande è il Signore nostro, * e grande è la sua potenza.
@@ -1375,9 +1356,7 @@ R. E grande è la sua potenza.
 R. Grande è il Signore nostro, * e grande è la sua potenza.
 
 [AdvM Laudes]
-!Isa 2:3
-v. Venite, ascendiamo al monte del Signore e alla casa del Dio di Giacobbe.  Egli c'insegnerà le sue vie, e noi cammineremo per i suoi sentieri: perché da Sion uscirà la legge, e la parola del Signore da
-$Deo gratias
+@:Adv Laudes
 _
 R.br. Vieni a liberarci, * o Signore, Dio degli eserciti.
 R. V. Vieni a liberarci, * o Signore, Dio degli eserciti.
@@ -1387,9 +1366,7 @@ R. O Signore, Dio degli eserciti.
 R. Vieni a liberarci, * o Signore, Dio degli eserciti.
 
 [AdvM Vespera]
-!Gen 49:10
-v. Non sarà tolto lo scettro da Giuda, né il comando dalla sua discendenza, finché non venga Colui che dev'essere mandato: Egli sarà l'aspettato delle genti.
-$Deo gratias
+@:Adv Vespera
 _
 R.br. Mostraci, o Signore, * la tua misericordia.
 R. Mostraci, o Signore, * la tua misericordia.
@@ -1399,9 +1376,7 @@ R. La tua misericordia.
 R. Mostraci, o Signore, * la tua misericordia.
 
 [QuadM Laudes]
-!Isa 58:1
-v. Grida senza posa, alza la tua voce come tromba, e annunzia al mio popolo le sue scelleratezze, e alla casa di Giacobbe i suoi peccati.
-$Deo gratias
+@:Quad Laudes
 _
 R.br. Egli mi ha liberato * dal laccio dei cacciatori.
 R. Egli mi ha liberato * dal laccio dei cacciatori.
@@ -1411,9 +1386,7 @@ R. Dal laccio dei cacciatori.
 R. Egli mi ha liberato * dal laccio dei cacciatori.
 
 [QuadM Vespera]
-!Gioele 2:17
-v. Tra il vestibolo e l'altare gemeranno i sacerdoti, ministri del Signore, e diranno: Perdona, o Signore, perdona al tuo popolo, e non abbandonare la tua eredità al ludibrio d'essere dominata dalle nazioni.
-$Deo gratias
+@:Quad Vespera
 _
 R.br Ti metterà all'ombra * sotto le sue spalle.
 R. Ti metterà all'ombra * sotto le sue spalle.
@@ -1423,9 +1396,7 @@ R. Ti metterà all'ombra.
 R. Ti metterà all'ombra * sotto le sue spalle.
 
 [Quad5M Laudes]
-!Ger 11:19
-v. Venite, mettiamogli del legno in luogo di pane e sterminiamolo dalla terra dei viventi, e nemmeno il suo nome sia più ricordato.
-$Deo gratias
+@:Quad5 Laudes
 _
 R.br. Libera dalla spada, * o Dio, la mia anima. 
 R. Libera dalla spada, * o Dio, la mia anima.
@@ -1434,19 +1405,16 @@ R. O Dio, la mia anima.
 R. Libera dalla spada, * o Dio, la mia anima.
 
 [Quad5M Vespera]
-!Ger 11:20
-v.  Tu, o Signore degli eserciti, che giudichi con giustizia e scruti l'intimo dei cuori, fammi vedere la tua vendetta sopra di loro, poiché a Te, o Signore Dio mio, io ho affidato la mia causa.
-$Deo gratias
+@:Quad5 Vespera
 _
 R.br. Dalla bocca del leone * liberami, o Signore.
 R. Dalla bocca del leone * liberami, o Signore.
 V. E dalle corna dei bufali la mia debolezza.
+R. Liberami, o Signore.
 R. Dalla bocca del leone * liberami, o Signore.
 
 [PaschM Laudes]
-!Rom 6:9-10
-v. Cristo risuscitato da morte, non muore più; la morte non avrà più dominio su dì Lui. Infatti se Egli è morto per il peccato, è morto una volta soltanto; ma ora Egli vive, e vive per Iddìo.
-$Deo gratias
+@:Pasch Laudes
 _
 R.br. Il Signore è risorto dal sepolcro, * alleluia, alleluia.
 R. Il Signore è risorto dal sepolcro, * alleluia, alleluia.
@@ -1456,9 +1424,7 @@ R. Alleluia, alleluia
 R. Il Signore è risorto dal sepolcro, * alleluia, alleluia.
 
 [PaschM Vespera]
-!Rom 6:9-10
-v. Cristo risuscitato da morte, non muore più; la morte non avrà più dominio su dì Lui. Infatti se Egli è morto per il peccato, è morto una volta soltanto; ma ora Egli vive, e vive per Iddìo.
-$Deo gratias
+@:Pasch Laudes
 _
 R.br. Il Signore è veramente risorto, * alleluia, alleluia.
 R. Il Signore è veramente risorto, * alleluia, alleluia.

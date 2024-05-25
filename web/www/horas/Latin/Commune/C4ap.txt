@@ -14,9 +14,6 @@ Ideo jurejurándo * fecit illum Dóminus créscere in plebem suam, allelúja.;;1
 Sacerdótes Dei, * benedícite Dóminum: servi Dómini, hymnum dícite Deo, allelúja, allelúja.;;112
 Serve bone * et fidélis, intra in gáudium Dómini tui, allelúja.;;116
 
-[Capitulum Vespera]
-@Commune/C4
-
 [Hymnus1 Vespera]
 @Commune/C4:Hymnus1 Vespera
 
@@ -149,7 +146,7 @@ Sacerdótes Dei, * benedícite Dóminum: servi Dómini, hymnum dícite Deo, alle
 Serve bone * et fidélis, intra in gáudium Dómini tui, allelúja.
 
 [Capitulum Laudes]
-@Commune/C4:Capitulum Vespera
+@Commune/C4:Capitulum Laudes
 
 [Hymnus Laudes]
 @Commune/C4:Hymnus Laudes
@@ -176,9 +173,6 @@ $Per Dominum
 
 [Lectio Prima]
 @Commune/C4
-
-[Capitulum Tertia]
-@Commune/C4:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Amávit eum Dóminus, et ornávit eum. * Allelúja, allelúja.

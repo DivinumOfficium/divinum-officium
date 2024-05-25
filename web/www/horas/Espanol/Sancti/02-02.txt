@@ -13,11 +13,6 @@ Festum Domini
 [Ant Vespera]
 @Sancti/01-01:Ant Vespera
 
-[Capitulum Vespera]
-!Mal 3:1
-v. Mirad, yo envío mi mensajero, para que prepare el camino ante mí. De pronto entrará en el santuario el Señor, a quien vosotros buscáis, el mensajero de la alianza que vosotros deseáis.
-$Deo gratias
-
 [Versum 1]
 V. Simeón había recibido un oráculo del Espíritu Santo.
 R. Que no vería la muerte antes de ver al Mesías del Señor.
@@ -142,7 +137,9 @@ Pero el que así anhela partir, debe encaminarse al Templo en Jerusalén, espera
 @:Ant Vespera 3:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Mal 3:1
+v. Mirad, yo envío mi mensajero, para que prepare el camino ante mí. De pronto entrará en el santuario el Señor, a quien vosotros buscáis, el mensajero de la alianza que vosotros deseáis.
+$Deo gratias
 
 [Ant 2]
 Cuando los padres * llevaron al Niño Jesús, Simeón lo tomó en brazos y bendijo a Dios diciendo: Ahora puedes dejar a tu siervo irse en paz.
@@ -150,9 +147,6 @@ Cuando los padres * llevaron al Niño Jesús, Simeón lo tomó en brazos y bendi
 [Lectio Prima]
 !Mal 3:4
 v. Entonces agradará al Señor la ofrenda de Judá y de Jerusalén, como en los días pasados, como en los años antiguos, dice el Señor de los ejércitos.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 !Mal 3:1-2

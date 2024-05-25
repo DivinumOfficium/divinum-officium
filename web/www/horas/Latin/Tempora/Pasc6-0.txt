@@ -10,11 +10,6 @@ ex Tempora/Pasc5-4;(rubrica tridentina aut rubrica divino)
 Doxology=Asc
 StJamesRule=John,Rev
 
-[Capitulum Vespera]
-!1 Petri 4:7-8
-v. Caríssimi: Estóte prudéntes, et vigiláte in oratiónibus. Ante ómnia autem mútuam in vobismetípsis caritátem contínuam habéntes, quia cáritas óperit multitúdinem peccatórum.
-$Deo gratias
-
 [Versum 1]
 @Tempora/Pasc5-4:Versum 2
 
@@ -92,10 +87,9 @@ Deínde tamquam consequénter adjúnxit, unde modo disputáre suscépimus: Cum a
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
-
-[Capitulum Tertia]
-@:Capitulum Vespera
+!1 Petri 4:7-8
+v. Caríssimi: Estóte prudéntes, et vigiláte in oratiónibus. Ante ómnia autem mútuam in vobismetípsis caritátem contínuam habéntes, quia cáritas óperit multitúdinem peccatórum.
+$Deo gratias
 
 [Capitulum Sexta]
 !1 Petri 4:7-8

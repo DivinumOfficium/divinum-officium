@@ -15,9 +15,6 @@ Omit preces
 Feria Te Deum
 CPapaM=Telésphorum;
 
-[Capitulum Vespera]
-@Tempora/Nat1-0:Capitulum Vespera
-
 [Hymnus Vespera]
 @Sancti/12-25:Hymnus Vespera
 
@@ -105,7 +102,7 @@ Quóniam Nazarǽus vocábitur. Si fixum de Scriptúris posuísset exémplum, num
 &teDeum
 
 [Capitulum Laudes]
-@Tempora/Nat1-0:Capitulum Vespera
+@Tempora/Nat1-0:Capitulum Laudes
 
 [Hymnus Laudes]
 @Sancti/12-25:Hymnus Laudes
@@ -115,9 +112,6 @@ Quóniam Nazarǽus vocábitur. Si fixum de Scriptúris posuísset exémplum, num
 
 [Lectio Prima]
 @Tempora/Nat1-0:Lectio Prima
-
-[Capitulum Tertia]
-@Tempora/Nat1-0:Capitulum Vespera
 
 [Capitulum Sexta]
 @Tempora/Nat1-0:Capitulum Sexta

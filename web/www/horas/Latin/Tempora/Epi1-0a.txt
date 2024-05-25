@@ -7,11 +7,6 @@ ex Sancti/01-06
 Initia cum responsory
 Psalm5 Vespera=113(rubrica tridentina)
 
-[Capitulum Vespera]
-!Rom 12:1
-v. Fratres: Obsécro vos per misericórdiam Dei, ut exhibeátis córpora vestra hóstiam vivéntem, sanctam, Deo placéntem, rationábile obséquium vestrum.
-$Deo gratias
-
 [Versum 1]
 @Sancti/01-06
 
@@ -82,16 +77,15 @@ Et venit Názareth, et erat súbditus illis. Quid enim magíster virtútis, nisi
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Rom 12:1
+v. Fratres: Obsécro vos per misericórdiam Dei, ut exhibeátis córpora vestra hóstiam vivéntem, sanctam, Deo placéntem, rationábile obséquium vestrum.
+$Deo gratias
 
 [Versum 2]
 @Sancti/01-06
 
 [Ant 2]
 @:Ant 1
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 !Rom 12:3
@@ -112,4 +106,3 @@ Fili, quid fecísti * nobis sic? Ego et pater tuus doléntes quærebámus te. Qu
 [Versum Commemoratio]
 V. Omnes de Saba vénient, allelúja.
 R. Aurum et thus deferéntes, allelúja.
-

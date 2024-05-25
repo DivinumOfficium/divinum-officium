@@ -10,11 +10,6 @@ ex Sancti/06-30 ;
 Sub unica concl
 Psalm5Vespera=116
 
-[Capitulum Vespera]
-!Act 9:1-2
-v. Cependant Saul, ne respirant encore que menaces et mort contre les disciples du Seigneur, se rendit chez le prince des prêtres, et lui demanda des lettres pour les synagogues de Damas, afin que, s’il trouvait des hommes et des femmes engagés dans cette voie, il les conduisît enchaînés à Jérusalem.
-$Deo gratias
-
 [Hymnus Vespera]
 @Sancti/06-30:Hymnus Matutinum
 
@@ -74,7 +69,9 @@ Il allait donc respirant et exhalant le carnage : c’est- à-dire, le matin, ra
 @:Ant Vespera 3:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Act 9:1-2
+v. Cependant Saul, ne respirant encore que menaces et mort contre les disciples du Seigneur, se rendit chez le prince des prêtres, et lui demanda des lettres pour les synagogues de Damas, afin que, s’il trouvait des hommes et des femmes engagés dans cette voie, il les conduisît enchaînés à Jérusalem.
+$Deo gratias
 
 [Oratio]
 O Dieu, qui avez instruit le monde entier par la parole du bienheureux Apôtre Paul, accordez-nous, à nous qui célébrons aujourd’hui sa Conversion, de marcher vers vous en suivant ses exemples.
@@ -98,9 +95,6 @@ $Qui vivis
 [Lectio Prima]
 !Act 9:22
 v. Saulus autem multo magis convalescébat, et confundébat Judǽos qui habitábant Damásci, affírmans quóniam hic est Christus.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C1:Responsory Tertia

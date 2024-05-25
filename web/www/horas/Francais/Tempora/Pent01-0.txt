@@ -18,9 +18,6 @@ Qu’une louange * résonne sur les lèvres de tous à la gloire du Père et du 
 Louange à Dieu le Père * et au Fils qui Lui est égal et que notre bouche fasse toujours retentir Votre louange avec un constant amour, ô Esprit-Saint.;;112
 Tout est de Lui, * tout est par Lui, tout est en Lui : à Lui la gloire dans tous les siècles.;;116
 
-[Capitulum Vespera]
-@Psalterium/Major Special:Day6 Vespera
-
 [Hymnus Vespera]
 @Psalterium/Major Special:Hymnus Day6 Vespera
 
@@ -211,7 +208,7 @@ Enfin nous nommons distinctement, conformément aux règles catholiques du langa
 @:Ant Vespera :s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+@Psalterium/Major Special:Day6 Vespera
 
 [Hymnus Laudes]
 v. O Vous, Unité de la Trinité,
@@ -250,9 +247,6 @@ $Per Dominum
 [Lectio Prima]
 !1 Joann. 5:7
 v. Il y en a trois qui rendent témoignage dans le ciel : le Père, le Verbe, et l'Esprit-Saint, et ces trois sont un.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Bénissons le Père et le Fils * Avec le Saint-Esprit.

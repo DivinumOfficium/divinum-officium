@@ -1,7 +1,7 @@
 @Commune/C11
 
-[Capitulum Vespera]
-@CommuneM/C10:Capitulum Vespera
+[Capitulum Laudes]
+@CommuneM/C10
 
 [Responsory Vespera]
 @CommuneM/C10
@@ -107,7 +107,7 @@ _
 @Commune/C10:Responsory Tertia:s/.*_.//s
 
 [Capitulum Laudes]
-@CommuneM/C10:Capitulum Vespera
+@CommuneM/C10
 
 [Responsory Laudes]
 @CommuneM/C10:Responsory Vespera

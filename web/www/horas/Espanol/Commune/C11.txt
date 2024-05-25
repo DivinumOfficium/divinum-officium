@@ -13,9 +13,6 @@ Morena soy, * pero hermosa, hijas de Jerusalén. Por esto el rey me ha amado y m
 Ya ha pasado el invierno * y han cesado las lluvias: levántate, amiga mía, y ven.;;126
 Eres hermosa * y buena, y llena de gracia, Santa Madre de Dios.;;147
 
-[Capitulum Vespera]
-@Commune/C10:Capitulum Vespera
-
 [Hymnus Vespera]
 @Commune/C10:Hymnus Vespera
 
@@ -189,9 +186,6 @@ Más bien bienaventurados los que escuchan la palabra de Dios, y la ponen en pr�
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g
 
-[Capitulum Laudes]
-@:Capitulum Vespera
-
 [Hymnus Laudes]
 @Commune/C10:Hymnus Laudes
 
@@ -206,9 +200,6 @@ Dichosa eres, * Virgen María, porque has creído: se cumplirá en ti lo que te 
 
 [Lectio Prima]
 @Commune/C10:Lectio Prima
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C10:Responsory Tertia

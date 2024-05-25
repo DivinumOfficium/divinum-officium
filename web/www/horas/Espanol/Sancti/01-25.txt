@@ -7,11 +7,6 @@ ex Sancti/06-30;
 Sub unica concl
 Psalm5Vespera=116
 
-[Capitulum Vespera]
-!Act 9:1-2
-v. Saulo seguía respirando amenazas de muerte contra los discípulos del Señor; fue a ver al sumo sacerdote, y le pidió cartas para la sinagoga de Damasco, autorizándolo para traer presos a Jerusalén a cuantos hombres y mujeres descubriera que seguían este camino.
-$Deo gratias
-
 [Hymnus Vespera]
 @Sancti/06-30:Hymnus Matutinum
 
@@ -71,7 +66,9 @@ Iba deseando y anhelando matanzas, es decir, devorando por la mañana. Así, cua
 @:Ant Vespera 3:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Act 9:1-2
+v. Saulo seguía respirando amenazas de muerte contra los discípulos del Señor; fue a ver al sumo sacerdote, y le pidió cartas para la sinagoga de Damasco, autorizándolo para traer presos a Jerusalén a cuantos hombres y mujeres descubriera que seguían este camino.
+$Deo gratias
 
 [Oratio]
 Oh Dios, que enseñaste a todo el mundo con la predicación del bienaventurado apóstol Pablo, te rogamos que nos concedas que cuantos celebramos hoy su Conversión, imitando sus ejemplos, lleguemos a ti.
@@ -95,9 +92,6 @@ $Qui vivis
 [Lectio Prima]
 !Act 9:22
 v. Pablo se crecía y dejaba confusos a los judíos de Damasco, demostrando que Jesús es el Mesías.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C1:Responsory Tertia

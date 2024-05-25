@@ -10,11 +10,6 @@ ex Tempora/Pasc5-4;
 Doxology=Asc
 StJamesRule=John,Rev
 
-[Capitulum Vespera]
-!1 Pe 4:7-8
-v. Queridos hermanos: Sed moderados y sobrios, para poder orar. Ante todo, mantened en tensión el amor mutuo, porque el amor cubre la multitud de los pecados.
-$Deo gratias
-
 [Versum 1]
 @Tempora/Pasc5-4:Versum 2
 
@@ -89,7 +84,9 @@ Después, como consecuencia, añadió aquello que hace poco empezamos a tratar: 
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!1 Pe 4:7-8
+v. Queridos hermanos: Sed moderados y sobrios, para poder orar. Ante todo, mantened en tensión el amor mutuo, porque el amor cubre la multitud de los pecados.
+$Deo gratias
 
 [Ant 2]
 @:Ant 1
@@ -108,4 +105,3 @@ Os he hablado de esto * para que, cuando llegue la hora, os acordéis de que Yo 
 [Commemoratio]
 !Conmemoración de la Octava de la Ascensión.
 @Tempora/Pasc5-4:Oratio
-

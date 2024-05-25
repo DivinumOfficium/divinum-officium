@@ -10,11 +10,6 @@ ex Tempora/Pasc5-4;
 Doxology=Asc
 StJamesRule=John,Rev
 
-[Capitulum Vespera]
-!1. Pietro 4:7-8
-v. Carissimi: Siate prudenti, e vegliate nella preghiera. Ma sopra tutto abbiate l'un per l'altro una carità perseverante: perché la carità copre una moltitudine di peccati.
-$Deo gratias
-
 [Versum 1]
 @Tempora/Pasc5-4:Versum 2
 
@@ -24,7 +19,6 @@ Quando verrà il Consolatore, * che io vi manderò, lo Spirito di verità, che p
 [Oratio]
 Dio onnipotente ed eterno, fa che la nostra volontà ti sia sempre devota, e che serviamo alla tua maestà con cuore sincero. 
 $Per Dominum
-
 
 [Lectio1]
 Incomincia la prima Lettera dell'Apostolo san Giovanni
@@ -75,7 +69,6 @@ Il Signore Gesù, nel discorso che tenne ai suoi discepoli dopo la cena, prossim
 [Lectio8]
 Poi indicò chiaramente che i Giudei dovevano essere i persecutori suoi e loro: affinché apparisse senza ambagi che coloro i quali perseguitano i santi sono anch'essi compresi sotto quest'appellazione di mondo da condannare. E dopo aver detto (dei Giudei) ch'essi non conoscevano affatto colui che l'aveva mandato; e che nondimeno odiavano il Figlio e il Padre, cioè quello ch'era stato mandato e quello da cui egli era stato mandato (cose tutte di cui abbiamo già parlato in altri discorsi), arrivò a questo punto dove dice: «Tuttavia deve adempiersi la parola scritta nella loro legge: Mi hanno odiato senza ragione» (Joann. 15,25).
 
-
 [Responsory8]
 R. Poiché se io non vado, non verrà a voi il Consolatore: ma quando sarò andato, ve lo manderò. 
 * E quando sarà venuto lui, v'insegnerà ogni verità, alleluia.
@@ -89,7 +82,9 @@ Quindi aggiunse, come conseguenza, queste parole che abbiamo cominciato a spiega
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!1. Pietro 4:7-8
+v. Carissimi: Siate prudenti, e vegliate nella preghiera. Ma sopra tutto abbiate l'un per l'altro una carità perseverante: perché la carità copre una moltitudine di peccati.
+$Deo gratias
 
 [Ant 2]
 @:Ant 1
@@ -108,4 +103,3 @@ Vi ho detto questo, * affinché, giunta quell'ora, vi ricordiate ch'io ve l'ho d
 [Commemoratio]
 !Commemorazione dell'Ottava dell'Ascensione.
 @Tempora/Pasc5-4:Oratio
-

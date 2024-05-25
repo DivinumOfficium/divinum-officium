@@ -5,9 +5,6 @@ Ste Thérèse, Vierge;;Duplex;;3;;vide C6
 vide C6 ;
 9 lectiones
 
-[Capitulum Vespera]
-@Commune/C6
-
 [Hymnus Vespera]
 v. Messagère du Roi suprême,
 Tu quittes la maison paternelle,
@@ -51,7 +48,7 @@ Thérèse naquit à Avila, en Espagne, de pieux et nobles parents. Encore fillet
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+@Commune/C6
 
 [Hymnus Laudes]
 v. Voici venu le jour,

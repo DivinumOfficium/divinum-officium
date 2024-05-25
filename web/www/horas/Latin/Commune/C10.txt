@@ -12,11 +12,6 @@ Doxology=Nat
 Antiphonas horas
 (rubrica tridentina) Psalmi Dominica 
 
-[Capitulum Vespera]
-!Sir 24:14
-v. Ab inítio et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi.
-$Deo gratias.
-
 [Hymnus Vespera]
 /:Prima stropha sequentis hymni dicitur flexis genibus.:/
 v. Ave maris stella,
@@ -94,7 +89,9 @@ R. Christus, Deus noster.
 @Commune/C11:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Sir 24:14
+v. Ab inítio et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi.
+$Deo gratias.
 
 [HymnusM Laudes]
 v. O gloriósa Dómina,
@@ -149,9 +146,6 @@ Beáta Dei Génetrix, María, * Virgo perpétua, templum Dómini, sacrárium Sp�
 [Lectio Prima]
 !Sir 24:19-20
 v. In platéis sicut cinnamómum et bálsamum aromatízans odórem dedi: quasi myrrha elécta, dedi suavitátem odóris.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Spécie tua * Et pulchritúdine tua.

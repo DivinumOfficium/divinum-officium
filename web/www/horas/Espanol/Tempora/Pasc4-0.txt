@@ -6,11 +6,6 @@ Dominica IV Post Pascha;;Semiduplex;;5;;
 Una Antiphona
 StJamesRule=Jas
 
-[Capitulum Vespera]
-!Sant 1:17
-v. Queridos hermanos: Todo beneficio y todo don perfecto viene de arriba, del Padre de los astros, en el cual no hay fases ni períodos de sombra.
-$Deo gratias
-
 [Ant 1]
 Me voy * al que me envió, y ninguno de vosotros me pregunta: ¿A dónde vas? Aleluya, aleluya.
 
@@ -127,13 +122,12 @@ R. Y cantar salmos, aleluya.
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Sant 1:17
+v. Queridos hermanos: Todo beneficio y todo don perfecto viene de arriba, del Padre de los astros, en el cual no hay fases ni períodos de sombra.
+$Deo gratias
 
 [Ant 2]
 @:Ant 1
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 !Sant 1:19-20

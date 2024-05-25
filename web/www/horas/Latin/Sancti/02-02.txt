@@ -10,11 +10,6 @@ Festum Domini
 [Ant Vespera]
 @Sancti/01-01:Ant Vespera
 
-[Capitulum Vespera]
-!Mal 3:1
-v. Ecce ego mitto Angelum meum, et præparábit viam ante fáciem meam. Et statim véniet ad templum sanctum suum Dominátor, quem vos quǽritis, et Angelus Testaménti, quem vos vultis.
-$Deo gratias
-
 [Versum 1]
 V. Respónsum accépit Símeon a Spíritu Sancto.
 R. Non visúrum se mortem, nisi vidéret Christum Dómini.
@@ -139,7 +134,9 @@ Sed qui vult dimítti, véniat in templum, véniat in Jerúsalem, exspéctet Chr
 @:Ant Vespera 3:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Mal 3:1
+v. Ecce ego mitto Angelum meum, et præparábit viam ante fáciem meam. Et statim véniet ad templum sanctum suum Dominátor, quem vos quǽritis, et Angelus Testaménti, quem vos vultis.
+$Deo gratias
 
 [Ant 2]
 Cum indúcerent * púerum Jesum paréntes ejus, accépit eum Símeon in ulnas suas, et benedíxit Deum, dicens: Nunc dimíttis servum tuum in pace.
@@ -147,9 +144,6 @@ Cum indúcerent * púerum Jesum paréntes ejus, accépit eum Símeon in ulnas su
 [Lectio Prima]
 !Mal 3:4
 v. Et placébit Dómino sacrifícium Juda et Jerúsalem sicut dies sǽculi et sicut anni antíqui, dicit Dóminus omnípotens.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 !Mal 3:1-2

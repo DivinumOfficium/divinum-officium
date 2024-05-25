@@ -10,11 +10,6 @@ Psalmi Dominica
 Antiphonas horas
 Doxology=Corp
 
-[Capitulum Vespera]
-!1 Joann. 3:13-14
-v. Caríssimi: Nolíte mirári, si odit vos mundus. Nos scimus quóniam transláti sumus de morte ad vitam, quóniam dilígimus fratres.
-$Deo gratias
-
 [Hymnus Vespera]
 @Tempora/Pent01-4:Hymnus Vespera
 
@@ -86,7 +81,9 @@ Unde nos quoque, nati in hujus peregrinatiónis ærúmna, huc fastidiósi jam v�
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!1 Joann. 3:13-14
+v. Caríssimi: Nolíte mirári, si odit vos mundus. Nos scimus quóniam transláti sumus de morte ad vitam, quóniam dilígimus fratres.
+$Deo gratias
 
 [Versum 2]
 V. Panem cæli dedit eis, allelúja.
@@ -98,9 +95,6 @@ Homo quidam * fecit cenam magnam, et vocávit multos: et misit servum suum hora 
 [Lectio Prima]
 !1 Joann. 3:18
 v. Filíoli mei, non diligámus verbo neque lingua, sed ópere et veritáte.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 !1 Joann. 3:16
@@ -120,4 +114,3 @@ Exi cito * in platéas et vicos civitátis: et páuperes ac débiles, cæcos et 
 [Commemoratio]
 !Commemoratio de Octava Corporis Christi
 @Tempora/Pent01-4:Oratio
-

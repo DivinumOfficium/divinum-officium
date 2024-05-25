@@ -17,11 +17,6 @@ Quo abiit * dilectus tuus, o pulcherrima mulierum? quo dilectus tuus declinavit.
 Fasciculus myrrhæ * dilectus meus mihi inter ubera mea commorabitur.;;140
 Fulcite me floribus * stipate me malis, quia amore langueo.;;141
 
-[Capitulum Vespera]
-!Isa 53:1-2
-v. Quis credidit auditui nostro? et brachium Domini cui revelatum est? Et ascendet sicut virgultum coram eo, et sicut radix de terra sitienti.
-$Deo gratias
-
 [Hymnus Vespera]
 {:H-Stabatmater:}v. Stabat Mater dolorosa
 Juxta crucem lacrimosa,
@@ -242,7 +237,9 @@ R. Et Dominicæ passionis fructum sentiamus.
 @:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Isa 53:1-2
+v. Quis credidit auditui nostro? et brachium Domini cui revelatum est? Et ascendet sicut virgultum coram eo, et sicut radix de terra sitienti.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Stabatmater:}v. Virgo virginum præclara,
@@ -290,9 +287,6 @@ $Per Dominum
 [Lectio Prima]
 !Isa 53:8
 Generationem ejus quis enarrabit, quia abscissus est de terra viventium; propter scelus populi mei percussi eum.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Posuit me * Desolatam.

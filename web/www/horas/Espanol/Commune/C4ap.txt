@@ -14,9 +14,6 @@ Por esto, Dios le juró * que su pueblo crecería.;;111
 Sacerdotes de Dios, * bendecid al Señor; siervos del Señor, cantad un himno a Dios. Aleluya.;;112
 Siervo bueno * y fiel, pasa al banquete de tu Señor.;;116
 
-[Capitulum Vespera]
-@Commune/C4
-
 [Hymnus1 Vespera]
 @Commune/C4:Hymnus1 Vespera
 
@@ -143,7 +140,7 @@ Sacerdotes de Dios, * bendecid al Señor; siervos del Señor, cantad un himno a 
 Siervo bueno * y fiel, pasa al banquete de tu Señor. Aleluya.
 
 [Capitulum Laudes]
-@Commune/C4:Capitulum Vespera
+@Commune/C4:Capitulum Laudes
 
 [Hymnus Laudes]
 @Commune/C4:Hymnus Laudes
@@ -170,9 +167,6 @@ $Per Dominum
 
 [Lectio Prima]
 @Commune/C4
-
-[Capitulum Tertia]
-@Commune/C4:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. El Señor lo amó y lo enalteció. * Aleluya, aleluya.
