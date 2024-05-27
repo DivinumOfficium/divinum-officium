@@ -41,12 +41,26 @@ R. Vitam ætérnam. Amen.
 
 [Secreto L]
 /:Si Matutinum a Laudibus separatur, tunc dicitur secreto::/
+(sed rubrica monastica)
+/:In Festi Simplicis, et in Officio Ferialis, et si Matutinum a Laudibus separatur, tunc dicitur secreto::/
 
 [Clara voce]
 /:Deinde, clara voce, dicitur Versus::/
 
 [Secus absolute]
 /:Secus absolute incipiuntur, ut sequitur::/
+(sed rubrica ^Trident)
+/:Dicto Hymno:/ Te Deum laudamus /:vel ultimo Responsorio, absolute dicitur Versus::/
+
+[Rubrica Matutinum]
+!Reliqua omittuntur, nisi %Laudes% separandæ sint.
+(sed rubrica tridentina)
+!Dicto Hymno « Te Deum » aut nono vel tertio Responsorio ejus loco ponitur, statim inchoantur %Laudes%, præterquam in Nocte Nativitatis Domini; quia tunc dicitur Oratio, postea celebratur Missa, ut suo loco notatur.
+
+[Rubrica Matutinum] (rubrica monastica)
+!Reliqua omittuntur, nisi %Laudes% separandæ sint.
+(sed rubrica tridentina aut rubrica divino)
+!Reliqua omittuntur in Officium duodecim Lectionum, quando immediatæ subsequuntur %Laudes%. Sed in Festi Simplicis, et in Officio Ferialis tam trium, quam unius Lectionis semper dicuntur ut sequitur.
 
 [Pater Ave]
 @:Secreto
@@ -57,14 +71,17 @@ _
 
 [Pater Ave] (rubrica 196 aut rubrica 1955)
 
-[Pater Ave L] 
+[Pater Ave L] (rubrica tridentina)
+@:Secus absolute
 
-[Pater Ave L] (rubrica divino)
+[Pater Ave L] (rubrica divino aut rubrica monastica)
 @:Secreto L
 @:Pater noster
 @:Ave Maria
 _
 @:Secus absolute
+
+[Pater Ave L]  (rubrica 196 aut rubrica 1955)
 
 [Pater Ave Credo]
 @:Secreto
@@ -73,6 +90,8 @@ _
 @:Credo
 _
 @:Clara voce
+(sed die Epiphaniæ)
+ ~
 
 [Pater Ave Credo] (rubrica 196 aut rubrica 1955)
 

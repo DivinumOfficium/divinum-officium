@@ -39,12 +39,26 @@ R. żywot wieczny. Amen.
 
 [Secreto L]
 /:Jeżeli Jutrznia i Jutrznia są rozdzielone, to odmawia się je po cichu::/
+(sed rubrica monastica)
+/:W święta Simplex i dni powszednie oraz jeśli Jutrznia jest oddzielona od Jutrzni, rozpoczyna się w ciszy::/
 
 [Clara voce]
 /:Następnie słyszalnym głosem odmawia się werset::/
 
 [Secus absolute]
 /:W przeciwnym razie godzina rozpoczyna się bezpośrednio w następujący sposób::/
+(sed rubrica ^Trident)
+/:Po hymnie:/ Te Deum laudamus /:lub odmówieniu ostatniego responsorium, godzina rozpoczyna się bezpośrednio w następujący sposób::/
+
+[Rubrica Matutinum]
+!Opuścić resztę, jeśli %Laudesy% nie są odmawiane osobno.
+(sed rubrica tridentina)
+!Po odmówieniu hymnu Te Deum laudamus lub dziewiątego lub trzeciego responsorium rozpoczyna się bezpośrednio od %Laudesy%, z wyjątkiem Nocy Bożego Narodzenia: w tym czasie odmawia się Oratio, a następnie odprawia się Mszę Bożonarodzeniową obchodzony tak, jak podano w odpowiednim miejscu.
+
+[Rubrica Matutinum] (rubrica monastica)
+!Opuścić resztę, jeśli %Laudesy% nie są odmawiane osobno.
+(sed rubrica tridentina aut rubrica divino)
+!Opuścić resztę w Oficjach 12 lekcji, jeśli %Laudesy% nie są odmawiane osobno. W święta Simplex i dni świąteczne (z trzema lub jednym czytaniem) zawsze odmawia się następującą modlitwę.
 
 [Pater Ave Credo C]
 /:Następnie mówi się cicho:/

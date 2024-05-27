@@ -27,12 +27,26 @@ Hiszek Szentlélekben. Katolikus keresztény Anyaszentegyházat; a szenteknek eg
 
 [Secreto L]
 /:Ha Matins és Lauds elválik, akkor némán kimondják::/
+(sed rubrica monastica)
+/:Simplex lakomákon és fergeteges napokon, és ha a Matins elkülönül a Lauds-tól, az ember csendben kezdődik::/
 
 [Clara voce]
 /:Ezután hallható hangon elhangzik a vers::/
 
 [Secus absolute]
 /:Egyébként az óra közvetlenül a következőképpen kezdődik::/
+(sed rubrica ^Trident)
+/:A himnusz után:/ Te Deum laudamus /:vagy az utolsó reszponzórium elhangzott, az óra közvetlenül a következőképpen kezdődik::/
+
+[Rubrica Matutinum]
+!Hagyd ki a többit, kivéve ha a %Laudest% külön imádkozod.
+(sed rubrica tridentina)
+!A himnusz után Te Deum laudamus vagy a kilencedik vagy a harmadik reszponzórium elmondása után az ember közvetlenül a %Laudest%-szal kezdődik, a karácsony éjszakája kivételével: ebben az oratio imádkozik, majd a karácsonyi mise. a megfelelő helyen megünnepeljük.
+
+[Rubrica Matutinum] (rubrica monastica)
+!Hagyd ki a többit, kivéve ha a %Laudest% külön imádkozod.
+(sed rubrica tridentina aut rubrica divino)
+!Hagyd ki a többit az Offices of 12 lessons-ban, kivéve ha a %Laudest% külön imádkozod. Simplex ünnepeken és lázas napokon (legyen az három vagy egy felolvasás) mindig a következőket imádkozzák.
 
 [Pater Ave Credo C]
 /:Ezután némán kimondják:/
