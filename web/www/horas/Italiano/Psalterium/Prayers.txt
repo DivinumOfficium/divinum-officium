@@ -39,12 +39,26 @@ R. La vita eterna. Amen.
 
 [Secreto L]
 /:Se Mattutino e Lodi sono separati, allora si dice in silenzio::/
+(sed rubrica monastica)
+/:Nelle feste del Simplesso e nei giorni feriali, e se il Mattutino è separato dalle Lodi, si comincia in silenzio::/
 
 [Clara voce]
 /:Poi, con voce udibile, si dice il Versetto::/
 
 [Secus absolute]
 /:Altrimenti l'ora viene avviata direttamente come segue::/
+(sed rubrica ^Trident)
+/:Dopo l'inno:/ Te Deum laudamus /:oppure recitato l'ultimo responsorio, l'ora inizia direttamente così::/
+
+[Rubrica Matutinum]
+!Si salta il resto, a meno che si preghino le %Lodi% separatamente.
+(sed rubrica tridentina)
+!Dopo aver recitato l'inno Te Deum laudamus o il nono o il terzo responsorio, si comincia direttamente con le %Lodi%, ad eccezione della notte di Natale: in questa si prega l'Oratio e poi si celebra la messa di Natale celebrato come indicato nel luogo opportuno.
+
+[Rubrica Matutinum] (rubrica monastica)
+!Si salta il resto, a meno che si preghino le %Lodi% separatamente.
+(sed rubrica tridentina aut rubrica divino)
+!Si salta il resto negli Uffici di 12 lezioni, a meno che si preghino le %Lodi% separatamente. Nelle feste del Simplesso e nei giorni feriali (sia con tre che con una lettura) si prega sempre quanto segue.
 
 [Pater Ave Credo C]
 /: Successivamente si dice in silenzio:/

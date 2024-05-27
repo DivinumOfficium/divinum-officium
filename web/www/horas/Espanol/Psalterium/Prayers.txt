@@ -43,12 +43,26 @@ R. Y la vida eterna. Amén.
 
 [Secreto L]
 /:Si se separan maitines y laudes, entonces se dice en silencio::/
+(sed rubrica monastica)
+/:En las fiestas Simplex y en los días feriales, y si los maitines están separados de las Laudes, se comienza en silencio::/
 
 [Clara voce]
 /:Después, con voz audible, se dice el Versículo::/
 
 [Secus absolute]
 /:En caso contrario, la hora se inicia directamente de la siguiente manera::/
+(sed rubrica ^Trident)
+/:Después del himno:/ Te Deum laudamus /:o recitado el último responsorio, la hora comienza directamente de la siguiente manera::/
+
+[Rubrica Matutinum]
+!El resto se omite, salvo que %Laúdes% se haga aparte.
+(sed rúbrica tridentina)
+!Después de recitado el himno Te Deum laudamus o el noveno o tercer responsorio, se comienza directamente con las %Laudes%, a excepción de la Noche de Navidad: en ésta se reza la Oratio y luego la misa de Navidad. se celebra como se indica en el lugar correspondiente.
+
+[Rubrica Matutinum] (rubrica monastica)
+!El resto se omite, salvo que %Laúdes% se haga aparte.
+(sed rubrica tridentina aut rubrica divino)
+!El resto se omite en Oficios de 12 lecciones, salvo que %Laúdes% se haga aparte. En las fiestas Simplex y en los días feriales (ya sea con tres o una lectura) siempre se reza lo siguiente.
 
 [Pater Ave Credo C]
 /:Después se dice en silencio:/

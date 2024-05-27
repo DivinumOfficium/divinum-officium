@@ -39,12 +39,26 @@ R. And life everlasting. Amen.
 
 [Secreto L]
 /:If Matins and Lauds are separated, then is said silently::/
+(sed rubrica monastica)
+/:On Simplex feasts and on ferial days, and if Matins are separate from Lauds, one begins in silence::/
 
 [Clara voce]
 /:Thereafter, with hearable voice, the Versicle is said::/
 
 [Secus absolute]
 /:Otherwise, the hour is started directly as follows::/
+(sed rubrica ^Trident)
+/:After the hymn:/ Te Deum laudamus /:or the last responsory has been recited, the hour begins directly as follows::/
+
+[Rubrica Matutinum]
+!Skip the rest, unless praying %Lauds% separately.
+(sed rubrica tridentina)
+!After the hymn Te Deum laudamus or the ninth or third responsory has been recited, one begins directly with the %Laudes%, with the exception of Christmas Night: in this one prays the Oratio and then the Christmas mass is celebrated as it is stated at the appropriate place.
+
+[Rubrica Matutinum] (rubrica monastica)
+!Skip the rest, unless praying %Lauds% separately.
+(sed rubrica tridentina aut rubrica divino)
+!Skip the rest in Offices of 12 lessons, unless praying %Lauds% separately. On Simplex feasts and on ferial days (be it with three or one reading) the following is always prayed.
 
 [Pater Ave Credo C]
 /:Thereafter is said silently:/

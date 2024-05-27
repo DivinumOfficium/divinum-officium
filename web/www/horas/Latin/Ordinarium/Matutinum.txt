@@ -1,10 +1,20 @@
 #Incipit
-$Pater noster
-$Ave Maria
-$Credo
-$Domine labia
+$Pater Ave Credo
+$Domine labia 
+(sed rubrica monastica)
+ ~
 $Deus in adjutorium
+(sed rubrica 1963)
+ ~
 &Alleluia
+(sed rubrica 1963)
+ ~
+(rubrica monastica dicitur)
+&Domine_labia
+(rubrica monastica dicitur)
+_
+(rubrica monastica dicitur)
+&psalm(3)
 
 #Invitatorium
 
@@ -12,12 +22,19 @@ $Deus in adjutorium
 
 #Psalmi cum lectionibus
 
-!Reliqua omittuntur, nisi %Laudes% separandæ sint.
+$Rubrica Matutinum
+(rubrica monastica omittitur)
 
 #Oratio
+
+(rubrica monastica dicitur)
+$Rubrica Matutinum
 
 #Conclusio
 &Dominus_vobiscum
 &Benedicamus_Domino
 $Fidelium animae
+(sed rubrica ^Trident omittitur)
+
 $Pater noster
+(sed rubrica 196 aut rubrica 1955 aut rubrica ^Trident omittitur)

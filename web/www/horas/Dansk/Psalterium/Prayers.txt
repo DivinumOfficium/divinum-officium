@@ -34,12 +34,26 @@ $Pater noster
 
 [Secreto L]
 /:Hvis Matins og Lauds er adskilt, så siges der stille::/
+(sed rubrica monastica)
+/:På simple fester og på ferialistiske dage, og hvis Matins er adskilt fra Lauds, begynder man i stilhed::/
 
 [Clara voce]
 /:Derefter siges Versiklen med hørelig stemme::/
 
 [Secus absolute]
 /:Ellers startes timen direkte på følgende måde::/
+(sed rubrica ^Trident)
+/:Efter salmen:/ Te Deum laudamus /:eller sidste svarskrift er blevet reciteret, begynder timen direkte således::/
+
+[Rubrica Matutinum]
+!Spring resten over, medmindre du beder %Lauds% separat.
+(sed rubrica tridentina)
+!Efter at salmen Te Deum laudamus eller den niende eller tredje responsorium er blevet reciteret, begynder man direkte med %Laudes%, med undtagelse af Julenat: i denne beder man Oratio og så fejres julemessen som det hedder. på det rette sted.
+
+[Rubrica Matutinum] (rubrica monastica)
+!Spring resten over, medmindre du beder %Lauds% separat.
+(sed rubrica tridentina aut rubrica divino)
+!Spring resten over i kontorer med 12 lektioner, medmindre du beder %Lauds% separat. På simple højtider og på ferialistiske dage (det være sig med tre eller én læsning) bedes altid følgende.
 
 [Pater Ave Credo C]
 /:Derefter siges stille:/
