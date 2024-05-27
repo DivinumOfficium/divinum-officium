@@ -1130,15 +1130,15 @@ sub getordinarium {
   if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) { $suffix .= "e"; }    # for Epiphanias
   if ($command =~ /Tertia|Sexta|Nona/i) { $command = 'Minor'; }    # identical for Terz/Sext/Non
 
-	if ($command =~ /Prima/i) {
-		if ($version =~ /(1955|1960|Newcal)/) {
-			$suffix .= "1960";
-		} elsif ($version =~ /Monastic/i) {
-			$suffix .= "M";
-		} elsif ($version =~ /Ordo Praedicatorum/i) {
-			$suffix .= "OP";
-		}
-	}
+  if ($command =~ /Prima/i) {
+    if ($version =~ /(1955|1960|Newcal)/) {
+      $suffix .= "1960";
+    } elsif ($version =~ /Monastic/i) {
+      $suffix .= "M";
+    } elsif ($version =~ /Ordo Praedicatorum/i) {
+      $suffix .= "OP";
+    }
+  }
 
   # don't loose time for non existent files
   $lang = 'Latin' if $command !~ /^(?:Prima)$/;

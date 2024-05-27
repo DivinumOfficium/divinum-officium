@@ -714,9 +714,13 @@ sub concurrence {
     $rank = $wrank[2] = 4.9;
   }
 
-  if ($cwrank[0] =~ /Dominica/i && $cwrank[0] !~ /infra octavam/i && $cwrank[1] =~ /semiduplex/i && $version !~ /1955|196/) {
-		
-		# before 1955, even Major Sundays gave way at I Vespers to a Duplex (or Duplex II. cl.)
+  if ( $cwrank[0] =~ /Dominica/i
+    && $cwrank[0] !~ /infra octavam/i
+    && $cwrank[1] =~ /semiduplex/i
+    && $version !~ /1955|196/)
+  {
+
+    # before 1955, even Major Sundays gave way at I Vespers to a Duplex (or Duplex II. cl.)
     $cwrank[2] = $crank = $version =~ /trident/i ? 2.9 : 4.9;
   }
 
@@ -745,11 +749,14 @@ sub concurrence {
 
   if (
     $cwinner{Rule} =~ /No prima vespera/i
-    || ( $version =~ /1955/ && $cwrank[2] < 5)    # Reduced 1955: No 1st Vespers except for Duplex I. cl & II. cl & Dominica
+    || ( $version =~ /1955/
+      && $cwrank[2] < 5)    # Reduced 1955: No 1st Vespers except for Duplex I. cl & II. cl & Dominica
     || ( $version =~ /196/i
-					&& $cwrank[2] < (($cwrank[0] =~ /Dominica/i || ($cwinner{Rule} =~ /Festum Domini/i && $dayofweek == 6)) ? 5 : 6)
-			 )    # In 1960, II. cl. feasts have I. Vespers if and only if they're feasts of the Lord on a Sunday.
-    || ( $cwinner{Rank} =~ /Feria|Sabbato|Vigilia|Quat[t]*uor/i && $cwinner{Rank} !~ /in Vigilia Epi|in octava|infra octavam|Dominica|C10/i)    # no Ferias, Vigils and infra Oct days
+      && $cwrank[2] < (($cwrank[0] =~ /Dominica/i || ($cwinner{Rule} =~ /Festum Domini/i && $dayofweek == 6)) ? 5 : 6)
+    )    # In 1960, II. cl. feasts have I. Vespers if and only if they're feasts of the Lord on a Sunday.
+    || ( $cwinner{Rank} =~ /Feria|Sabbato|Vigilia|Quat[t]*uor/i
+      && $cwinner{Rank} !~
+      /in Vigilia Epi|in octava|infra octavam|Dominica|C10/i)    # no Ferias, Vigils and infra Oct days
     || ( $cwinner{Rank} =~ /infra octavam/i
       && $cwinner{Rank} !~ /Dominica/i
       && ($version =~ /trident/i || $sanctoraloffice == $csanctoraloffice)
@@ -810,14 +817,14 @@ sub concurrence {
       $tvesp = 1;
       $cvespera = 0;
       $winner = $cwinner;
-			
+
       if ($crank < 7 && $comrank >= $ccomrank && $comrank > 2) {
         $tomorrowname[2] = $dayname[2] .= "<br>Vespera de sequenti; nihil de præcedenti (tempora)";
-			} else {
-				$tomorrowname[2] .= "<br>Vespera de sequenti; nihil de præcedenti";
-				@commemoentries = ();
-				$commemoratio = '';
-			}
+      } else {
+        $tomorrowname[2] .= "<br>Vespera de sequenti; nihil de præcedenti";
+        @commemoentries = ();
+        $commemoratio = '';
+      }
       @dayname = @tomorrowname;
       $rank = $crank;
       $commune = $ccommune;
@@ -880,10 +887,13 @@ sub concurrence {
       $ccomrank = 0;
     } elsif (
       $rank < 2    # no 2nd Vespers of a Simplex
-      || ( $version =~ /196/ && $cwinner{Rank} =~ /Dominica/i && $rank < 5)    # on any Sunday, nothing of a preceding III. cl feast
+      || ( $version =~ /196/
+        && $cwinner{Rank} =~ /Dominica/i
+        && $rank < 5)    # on any Sunday, nothing of a preceding III. cl feast
       || ( $crank >= 6
-						&& !($rank == 2.1 || $rank == 2.99 || $rank == 3.9 || $rank >= 4.2) && $cwrank[0] !~ /Dominica|feria|in.*octava/i
-						) # in 1st Vespers of Duplex I. cl. only commemoration of Feria major, Dominica (major), 8va privilegiata and Duplex II./I. cl
+        && !($rank == 2.1 || $rank == 2.99 || $rank == 3.9 || $rank >= 4.2)
+        && $cwrank[0] !~ /Dominica|feria|in.*octava/i
+      ) # in 1st Vespers of Duplex I. cl. only commemoration of Feria major, Dominica (major), 8va privilegiata and Duplex II./I. cl
       || ($cwinner =~ /12-25|01-01/)    # on Christmas Eve and New Year's Eve, nothing of a preceding Sunday
       || ($crank >= 5 && !($rank == 2.1 || $rank >= 2.99) && $cwrank[0] !~ /Dominica|feria|in.*octava/i)
       )
@@ -1522,9 +1532,11 @@ sub precedence {
   } else {
     $laudes = (
         (
-             (($dayname[0] =~ /Adv/i && $dayofweek != 0) 
-               || $dayname[0] =~ /Quad/i 
-               || (emberday() && $dayname[0] !~ /Pasc/))
+          (
+               ($dayname[0] =~ /Adv/i && $dayofweek != 0)
+            || $dayname[0] =~ /Quad/i
+            || (emberday() && $dayname[0] !~ /Pasc/)
+          )
           && $winner =~ /tempora/i
           && $winner{Rank} !~ /(Beatæ|Sanctæ) Mariæ/i
         )
