@@ -8,12 +8,27 @@ S. Birgittæ Viduæ;;Duplex optional;;2;;vide C7a
 vide C7a;
 Gloria
 
-[Oratio]
-Heer, onze God, Gij hebt de heilige Birgitta door uw enige Zoon hemelse geheimen geopenbaard. Doe ons, uw dienaren, door haar liefdevolle voorspraak eens vreugdevol genieten van de openbaring van uw eeuwige heerlijkheid.
-$Per eundem
+[Introitus]
+@Commune/C7a:Introitus
 
 [Lectio]
 @Commune/C7a:Lectio1
+
+[Graduale]
+@Commune/C7a:Graduale
+
+[Evangelium]
+@Commune/C7a:Evangelium
+
+[Offertorium]
+@Commune/C7a:Offertorium
+
+[Communio]
+@Commune/C7a:Communio
+
+[Oratio]
+Heer, onze God, Gij hebt de heilige Birgitta door uw enige Zoon hemelse geheimen geopenbaard. Doe ons, uw dienaren, door haar liefdevolle voorspraak eens vreugdevol genieten van de openbaring van uw eeuwige heerlijkheid.
+$Per eundem
 
 [Secreta]
 Moge, o Heer, het offer, door het U toegewijde volk ter ere van uw heiligen gebracht, U aangenaam zijn, want door hun verdiensten weten wij ons uit de nood gered.
