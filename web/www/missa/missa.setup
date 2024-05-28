@@ -12,9 +12,10 @@ $smallfont='1 red';;
 $titlefont='+1 red';;
 $screenheight='1024';;
 $textwidth='100';;
+$nofancychars='0';;
 
 [parameterscheck]
-ttobcccccccnn
+ttobcccccccnnb
 
 [general]
 $version='Rubrics 1960';;
