@@ -724,6 +724,7 @@ sub psalmi_minor {
     {
       $ant = chompd($psalmi[0]);
       $psalms = chompd($psalmi[1]);
+      $prefix = '';
       $comment = 6;
     }
   }
