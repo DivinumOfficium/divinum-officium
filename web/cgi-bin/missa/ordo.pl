@@ -120,7 +120,7 @@ sub resolve_refs {
 
     #red prefix
     if ($line =~ /^\s*(R\.|V\.|S\.|P\.|M\.|A\.|O\.|C\.|D\.|Benedictio\.* |Absolutio\.* |Ant\. |Ps\. )(.*)/s) {
-      my $h = $1;
+      my $h = setvrbar($1);
       my $l = $2;
 
       if ($h =~ /(Benedictio|Absolutio)/) {

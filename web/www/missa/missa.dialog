@@ -12,6 +12,7 @@ Small red~>$smallfont~>Entry~>12;;
 Title font~>$titlefont~>Entry~>12;;
 Screen height~>$screenheight~>Entry~>12;;
 Text width percent~>$textwidth~>Entry~>12;;
+Don't use fancy characters~>$nofancychars~>Checkbutton;;
 
 [general]
 Version~>$version~>Optionmenu~>{Tridentinum,Divino Afflatu,Reductions 1955,Rubrics 1960};;

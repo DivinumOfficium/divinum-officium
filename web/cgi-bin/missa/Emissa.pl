@@ -115,6 +115,7 @@ our $testmode = strictparam('testmode');
 if ($testmode !~ /(Seasonal|Season|Saint)/i) { $testmode = 'regular'; }
 our $votive = strictparam('votive');
 $p = strictparam('lang1');
+our $nofancychars = strictparam('nofancychars');
 
 if ($p) {
   $lang1 = $p;
