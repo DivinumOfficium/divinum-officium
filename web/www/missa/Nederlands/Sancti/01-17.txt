@@ -5,9 +5,30 @@ S. Antonii Abbatis;;Duplex;;3;;vide C4c
 vide C4c;
 9 lectiones
 
+[Introitus]
+@Commune/C4c:Introitus
+
 [Oratio]
 Wij vragen U, Heer, dat de voorspraak van uw heilige abt Antonius ons een aanbeveling mag zijn, opdat wij door zijn bescherming mogen verwerven wat wij door eigen verdiensten niet vermogen.
 $Per Dominum
 
+[Lectio]
+@Commune/C4c:Lectio
+
+[Graduale]
+@Commune/C4c:Graduale
+
 [Evangelium]
 @Commune/C5:Evangelium
+
+[Offertorium]
+@Commune/C4c:Offertorium
+
+[Secreta]
+@Commune/C4c:Secreta
+
+[Communio]
+@Commune/C4c:Communio
+
+[Postcommunio]
+@Commune/C4c:Postcommunio
