@@ -1148,6 +1148,7 @@ sub Ultimaev : ScriptFunc {
     || !exists($commemoratio{Evangelium})
     || $commemoratio{Rule} =~ /Evangelium non appropriatum/)
   {
+    return '' if $Propers;
     our %prayers;
     $t = prayer('Ultima Evangelium', $lang);
   } else {
