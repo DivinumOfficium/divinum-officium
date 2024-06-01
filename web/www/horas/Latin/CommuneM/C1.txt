@@ -1,10 +1,5 @@
 @Commune/C1
 
-[Capitulum Vespera]
-@Commune/C1
-_
-@Commune/C1:Responsory Sexta:1-6
-
 [Ant Matutinum]
 In omnem terram * exívit sonus eórum, et in fines orbis terræ verba eórum.;;18
 Clamavérunt justi, * et Dóminus exaudívit eos.;;33
@@ -95,26 +90,18 @@ R. In omnem terram exívit sonus eórum, † et in fines orbis terræ verba eór
 [MM Capitulum]
 @:Capitulum Sexta
 _
-@:Responsory Sexta
-
-[Capitulum Laudes]
-@Commune/C1
-_
-@Commune/C1:Responsory Tertia:1-6
+@:Responsory SextaM
 
 [Hymnus Laudes]
 @:Hymnus Vespera
 
-[Capitulum Tertia]
-@Commune/C1:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory TertiaM]
 @Commune/C1:Versum 1
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Commune/C1:Responsory Tertia:8-9
 
-[Responsory Nona]
+[Responsory NonaM]
 @Commune/C1:Responsory Sexta:8-9
 
 [Ant Vespera 3]

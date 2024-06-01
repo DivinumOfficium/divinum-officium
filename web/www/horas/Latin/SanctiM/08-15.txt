@@ -7,9 +7,7 @@ Assumptione Beatæ Mariæ Virginis;;Duplex I classis;;6.5;;ex C11
 12 lectiones
 Doxology=Nat
 
-[Capitulum Vespera]
-@Sancti/08-15
-_
+[Responsory Vespera]
 @Sancti/08-15t:Responsory Sexta:1-6
 
 [HymnusM Vespera]
@@ -110,16 +108,14 @@ R. Quia cum Christo regnat in ætérnum.
 [Ant Laudes]
 @Sancti/08-15t:Ant Vespera:s/;;.*//g
 
-[Capitulum Laudes]
-@Sancti/08-15:Capitulum Vespera
-_
+[Responsory Laudes]
 @Sancti/08-15t:Responsory Nona:s/._.*//s
 
-[Responsory Tertia]
+[Responsory TertiaM]
 @:Versum 1
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Sancti/08-15t:Responsory Tertia:8-9
 
-[Responsory Nona]
+[Responsory NonaM]
 @Sancti/08-15t:Responsory Sexta:8-9

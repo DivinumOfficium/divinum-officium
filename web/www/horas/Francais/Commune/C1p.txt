@@ -13,11 +13,6 @@ Dans le sanctuaire * vos saints clamaient, Seigneur, alléluia, alléluia, allé
 Esprits et âmes * des justes, chantez un hymne à notre Dieu, alléluia, alléluia.;;112
 Les justes resplendiront * comme le soleil devant la face de Dieu, alléluia.;;116
 
-[Capitulum Vespera]
-!Sap 5:1
-v. Les justes seront debout avec une grande assurance devant ceux qui les ont tourmentés et qui leur ont arraché le fruit de leurs travaux.
-$Deo gratias
-
 [Hymnus Vespera]
 {:H-Tristeserantapostoli:}v. Tristes étaient les Apôtres
 de la mort amère du Christ, 
@@ -169,7 +164,9 @@ Esprits et âmes * des justes, chantez un hymne à notre Dieu, alléluia, allél
 Les justes resplendiront * comme le soleil devant la face de Dieu, alléluia.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Sap 5:1
+v. Les justes seront debout avec une grande assurance devant ceux qui les ont tourmentés et qui leur ont arraché le fruit de leurs travaux.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Paschalemundogaudium:}v. Un soleil plus beau 
@@ -235,9 +232,6 @@ Filles de Jérusalem, * venez et voyez les Martyrs avec les couronnes dont Dieu 
 [Lectio Prima]
 !Rom 8:28
 v. Nous savons, du reste, que toutes choses concourent au bien de ceux qui aiment Dieu, de ceux qui sont appelés selon son dessein.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Saints et justes, réjouissez-vous dans le Seigneur, * alléluia, alléluia.

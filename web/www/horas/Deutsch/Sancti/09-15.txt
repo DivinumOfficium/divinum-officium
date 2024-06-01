@@ -14,11 +14,6 @@ Er hat nichts an sich * von Schönheit und nichts von Anmut, wenn man ihn ansieh
 Von der Fußsohle * bis zum Scheitel ist nichts Gesundes an ihm.;;126
 Gewährt mir Erfrischung durch Blumen, * legt mir Früchte um, denn ich verschmachte vor Liebe.;;147
 
-[Capitulum Vespera]
-!Klgl 2,13
-v. Wem soll ich dich ähnlich nennen und mit wem dich, Tochter Jerusalem, vergleichen? Wem dich, Jungfrau, Tochter Sion, an die Seite stellen, um dir einen Trost zu reichen? Groß wie das Meer ist dein Leid.
-$Deo gratias
-
 [Hymnus Vespera]
 v. Abend, senke dich rasch nieder in Finsternis!
 Sonne, stürze den Tag jäh an den tiefsten Ort,
@@ -219,7 +214,9 @@ R. Auf dass Sühne gewirkt werde und Segen.
 @:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Klgl 2,13
+v. Wem soll ich dich ähnlich nennen und mit wem dich, Tochter Jerusalem, vergleichen? Wem dich, Jungfrau, Tochter Sion, an die Seite stellen, um dir einen Trost zu reichen? Groß wie das Meer ist dein Leid.
+$Deo gratias
 
 [Hymnus Laudes]
 v. O Gott, du Spender aller Huld,
@@ -256,9 +253,6 @@ $Qui vivis
 [Lectio Prima]
 !Klgl 2,18
 v. Lass gleich einem Sturzbach Tränen fließen Tag und Nacht; gönn dir keine Ruh' und lass die Augenlider auf stets neues Weinen lauern.
-
-[Capitulum Tertia]
-@:Capitulum Laudes
 
 [Responsory Tertia]
 R.br. O ihr alle, * die ihr vorbeikommt auf dem Wege.

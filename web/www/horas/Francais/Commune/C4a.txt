@@ -10,9 +10,6 @@ Psalm5 Vespera3=131
 [Ant Vespera]
 @Commune/C4
 
-[Capitulum Vespera]
-@Commune/C4
-
 [Hymnus1 Vespera]
 @Commune/C4:Hymnus1 Vespera
 
@@ -119,7 +116,7 @@ Mais la nature du sel est toujours la même et ne peut jamais être modifiée. L
 @:Ant Vespera
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+@Commune/C4
 
 [Hymnus Laudes]
 @Commune/C4:Hymnus Laudes
@@ -146,9 +143,6 @@ $Per Dominum.
 
 [Lectio Prima]
 @Commune/C4
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C4

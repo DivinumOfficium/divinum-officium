@@ -7,9 +7,6 @@ Commune non Virginum non Martyrum Tempore Paschali
 Psalmi Dominica
 Antiphonas horas
 
-[Capitulum Vespera]
-@Commune/C7a
-
 [Ant 1]
 @Commune/C7p
 
@@ -50,7 +47,7 @@ Antiphonas horas
 @Commune/C7p
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+@Commune/C7a
 
 [Hymnus Laudes]
 @Commune/C7:Hymnus Vespera
@@ -60,9 +57,6 @@ Antiphonas horas
 
 [Lectio Prima]
 @Commune/C7a
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 @Commune/C7a
@@ -76,4 +70,3 @@ $Deo gratias
 
 [Versum 3]
 @:Versum 2
-

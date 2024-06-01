@@ -12,18 +12,13 @@ Duplex
 Doxology=Asc
 Psalm5 vespera=116
 No Commemoratio
-			
+
 [Ant Vespera]
 Viri Galilǽi, * quid aspícitis in cælum? Hic Jesus qui assúmptus est a vobis in cælum, sic véniet, allelúja.
 Cumque intueréntur * in cælum eúntem illum, dixérunt, allelúja.
 Elevátis mánibus, * benedíxit eis, et ferebátur in cælum, allelúja.
 Exaltáte Regem regum, * et hymnum dícite Deo, allelúja.
 Vidéntibus illis, * elevátus est, et nubes suscépit eum in cælo, allelúja.
-
-[Capitulum Vespera]
-!Act. 1:1-2
-v. Primum quidem sermónem feci de ómnibus, o Theóphile, quæ cœpit Jesus fácere et docére usque in diem, qua præcípiens Apóstolis per Spíritum Sanctum, quos elégit, assúmptus est.
-$Deo gratias
 
 [HymnusM Vespera]
 v. Jesu nostra redémptio,
@@ -267,7 +262,9 @@ Omnis autem creatúræ áliquid habet homo. Habet namque commúne esse cum lapí
 @:Ant Vespera
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Act. 1:1-2
+v. Primum quidem sermónem feci de ómnibus, o Theóphile, quæ cœpit Jesus fácere et docére usque in diem, qua præcípiens Apóstolis per Spíritum Sanctum, quos elégit, assúmptus est.
+$Deo gratias
 
 [Hymnus Laudes]
 @:Hymnus Vespera
@@ -297,9 +294,6 @@ $Per eumdem
 [Lectio Prima]
 !Act. 1:11
 v. Viri Galilǽi, quid statis aspiciéntes in cælum? Hic Jesus qui assúmptus est a vobis in cælum, sic véniet, quemádmodum vidístis eum eúntem in cælum.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Ascéndit Deus in jubilatióne, * Allelúja, allelúja.

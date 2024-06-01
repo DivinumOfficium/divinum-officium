@@ -16,11 +16,6 @@ Das ist das Haus des Herrn, * das fest gebaut ist, und es hat eine gute Grundlag
 Eine gute Grundlage hat * das Haus des Herrn auf einem festen Felsen.;;112
 Edelstein * ist all dein ganzes Mauerwerk, und die Türme Jerusalems werden aus Perlen gebaut.;;147
 
-[Capitulum Vespera]
-!Offb 21,2
-v. Ich sah, wie die heilige Stadt, das neue Jerusalem, sich vom Himmel von Gott herniederließ, ausgestattet wie eine für ihren Bräutigam geschmückte Braut.
-$Deo gratias
-
 [Hymnus Vespera]
 {:H-Caelestisurbs:}v. Cæléstis urbs Jerúsalem,
 Beáta pacis vísio,
@@ -247,7 +242,9 @@ Bene fundáta est * domus Dómini supra firmam petram.
 Lapides pretiósi * omnes muri tui, et turres Jerúsalem gemmis ædificabúntur.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Offb 21,2
+v. Ich sah, wie die heilige Stadt, das neue Jerusalem, sich vom Himmel von Gott herniederließ, ausgestattet wie eine für ihren Bräutigam geschmückte Braut.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Altoexolympi:}v. Alto ex Olýmpi vértice
@@ -332,9 +329,6 @@ Zachǽe, * festínans descénde, quia hódie in domo tua opórtet me manére. At
 [Lectio Prima]
 !Apo 21:4-5
 v. Et absterget Deus omnem lácrimam ab óculis eórum: et mors ultra non erit, neque luctus, neque clamor, neque dolor erit ultra, quia prima abiérunt. Et dixit qui sedébat in throno: Ecce nova facio ómnia.
-
-[Capitulum Tertia]
-@:Capitulum Laudes
 
 [Responsory Tertia]
 R.br. Domum tuam, Dómine, * Decet sanctitúdo.

@@ -13,10 +13,8 @@ Lectio1 tempora
 [Ant Vespera 3]
 @Sancti/02-05:Ant Vespera:s/\./_/gs s/_/.;;109/ s/_/.;;111/ s/_/.;;112/ s/_/.;;126/ s/_//
 
-[Capitulum Vespera]
-@Commune/C7:Capitulum Vespera
-_
-@Commune/C6:Responsory Sexta:1-6
+[Capitulum Laudes]
+@Commune/C7
 
 [Oratio]
 @Commune/C6::s/N\./Agathæ/
@@ -148,12 +146,7 @@ R. Et cum Angelis in paridísum introísti.
 @Sancti/02-05
 
 [Capitulum Laudes]
-@Commune/C7:Capitulum Vespera
-_
-@Commune/C6:Responsory Tertia:1-6
-
-[Capitulum Tertia]
-@Commune/C7:Capitulum Vespera
+@Commune/C7
 
 [Capitulum Sexta]
 @Commune/C7

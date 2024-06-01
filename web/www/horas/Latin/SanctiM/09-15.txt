@@ -9,9 +9,7 @@ Psalmi Dominica
 [Doxology]
 @Tempora/Quad5-5::s/Jesu, tibi sit glória/Glória tibi, Dómine/
 
-[Capitulum Vespera]
-@Sancti/09-15
-_
+[Responsory Vespera]
 @Sancti/09-15:Responsory Nona:s/._.*//s
 
 [Lectio94]
@@ -30,22 +28,20 @@ _
 @Sancti/09-15::1-15
 @:Doxology
 
-[Capitulum Laudes]
-@Sancti/09-15
-_
+[Responsory Laudes]
 @Sancti/09-15:Responsory Sexta:s/._.*//s
 
 [Commemoratio]
 
 
-[Responsory Tertia]
-@Sancti/09-15::s/.*_.//s
+[Responsory TertiaM]
+@Sancti/09-15:Responsory Tertia:s/.*_.//s
 
-[Responsory Sexta]
-@Sancti/09-15::s/.*_.//s
+[Responsory SextaM]
+@Sancti/09-15:Responsory Sexta:s/.*_.//s
 
-[Responsory Nona]
-@Sancti/09-15::s/.*_.//s
+[Responsory NonaM]
+@Sancti/09-15:Responsory Nona:s/.*_.//s
 
 [Hymnus Vespera]
 @:Hymnus Laudes

@@ -15,11 +15,6 @@ Todos quedaron llenos * del Espíritu Santo y empezaron a hablar. Aleluya, alelu
 Fuentes y cuanto * se mueve en el agua, cantad un himno a Dios. Aleluya.
 Los apóstoles * hablaban en varias lenguas de las maravillas de Dios. Aleluya, aleluya, aleluya.;;116
 
-[Capitulum Vespera]
-!Act 2:1-2
-v. Llegó el día de Pentecostés y estaban todos los discípulos reunidos en un mismo sitio; de pronto vino del cielo un ruido, como de un viento recio, que llenó toda la casa donde estaban.
-$Deo gratias
-
 [Hymnus Vespera]
 {:H-Venicreator:}
 !La primera estrofa de este himno se dice de rodillas.
@@ -161,7 +156,9 @@ R. Y se juntó la multitud de los que decían aleluya.
 @:Ant Vespera:s/;.*//
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Act 2:1-2
+v. Llegó el día de Pentecostés y estaban todos los discípulos reunidos en un mismo sitio; de pronto vino del cielo un ruido, como de un viento recio, que llenó toda la casa donde estaban.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Beatanobisgaudia:}v. Festivos gozos nos vuelve
@@ -212,9 +209,6 @@ v. Judíos y prosélitos, cretenses y árabes les estamos oyendo hablar en nuest
 
 [Hymnus Tertia]
 @:Hymnus Vespera
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. El Espíritu del Señor llenó toda la tierra * Aleluya, aleluya. 

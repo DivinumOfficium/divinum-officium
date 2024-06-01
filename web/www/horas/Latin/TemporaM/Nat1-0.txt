@@ -93,17 +93,6 @@ Antiphonas horas
 [Versum 2]
 @Sancti/12-25:Responsory Sexta:s/.*_.//s
 
-[Capitulum Laudes]
-@:Capitulum Tertia
-_
-@Sancti/12-25:Responsory Tertia:s/._.*//s
-
-[Capitulum Vespera]
-@:Capitulum Laudes
-
-[Capitulum Tertia]
-@Tempora/Nat1-0:Capitulum Vespera
-
 [Versum 1]
 V. Vidérunt omnes fines terræ, allelúja.
 R. Salutáre Dei nostri, allelúja.

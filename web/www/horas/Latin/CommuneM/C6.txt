@@ -1,10 +1,5 @@
 @Commune/C6
 
-[Capitulum Vespera]
-@Commune/C6
-_
-@Commune/C6:Responsory Sexta:1-6
-
 [AntMatutinumM]
 Unguéntum effúsum * nomen tuum; ideo adolescéntulæ dilexérunt te nimis;;96
 Pulchra es * et decóra fília Jerúsalem, terríbilis ut castrórum ácies ordináte;;97
@@ -81,7 +76,6 @@ R. Ecce sponsus venit, exíte óbviam ei.
 @Commune/C6:Lectio7:s/.*vacuetur. Ecce /Ecce / s/$/~/s
 @Commune/C6:Lectio8:s/ Sed sc.*/ /
 
-
 [Responsory10]
 @Commune/C6:Responsory8
 
@@ -103,21 +97,13 @@ R.br. Símile est regnum cælórum decem virgínibus, qui accipiéntes lámpadas
 V. Quinque autem ex eis erunt fátue, et quinque prudéntes
 R. Exiérunt óbviam sponso et sponsæ
 
-[Capitulum Laudes]
-@Commune/C6
-_
-@Commune/C6:Responsory Tertia:1-6
-
-[Capitulum Tertia]
-@Commune/C6
-
-[Responsory Tertia]
+[Responsory TertiaM]
 @Commune/C6:Versum 1
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Commune/C6:Responsory Tertia:8-9
 
-[Responsory Nona]
+[Responsory NonaM]
 @Commune/C6:Responsory Sexta:8-9
 
 [Lectio1 in 2 loco]

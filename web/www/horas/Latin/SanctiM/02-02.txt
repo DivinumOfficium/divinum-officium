@@ -5,10 +5,8 @@
 Doxology=Nat
 Festum Domini
 
-[Capitulum Vespera]
-@Sancti/02-02
-_
-@CommuneM/C10:Capitulum Vespera:s/.*_//s
+[Responsory Vespera]
+@CommuneM/C10
 
 [Lectio1]
 @Sancti/02-02:Lectio1
@@ -89,17 +87,15 @@ R. Et Anna vídua Christum agnóvit advenísse in terris.
 [Responsory12]
 @Sancti/03-25:Responsory8
 
-[Capitulum Laudes]
-@Sancti/02-02
-_
-@CommuneM/C10:Capitulum Vespera:s/.*_//s
+[Responsory Laudes]
+@CommuneM/C10:Responsory Vespera
 
-[Responsory Tertia]
+[Responsory TertiaM]
 @Commune/C6:Versum 1
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Commune/C6:Responsory Tertia:8-9
 
-[Responsory Nona]
+[Responsory NonaM]
 @Commune/C6:Responsory Sexta:8-9
 

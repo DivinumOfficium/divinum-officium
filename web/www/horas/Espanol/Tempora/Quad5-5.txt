@@ -17,11 +17,6 @@ Mi amado * es radiante y bermejo, y tu melena, como púrpura regia, se recoge en
 Bolsita de mirra * es mi amado para mí: entre mis pechos descansa.;;140
 Tendedme entre las flores, * recostadme entre las manzanas, porque estoy enferma de amor.;;141
 
-[Capitulum Vespera]
-!Is 53:1-2
-v. ¿Quién creyó nuestro anuncio?; ¿a quién se reveló el brazo del Señor? Creció en su presencia como brote, como raíz en tierra árida.
-$Deo gratias
-
 [Hymnus Vespera]
 {:H-Stabatmater:}v. La madre piadosa estaba
 junto a la Cruz y lloraba,
@@ -242,7 +237,9 @@ R. Y experimentemos el fruto de la pasión del Señor.
 @:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Is 53:1-2
+v. ¿Quién creyó nuestro anuncio?; ¿a quién se reveló el brazo del Señor? Creció en su presencia como brote, como raíz en tierra árida.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Stabatmater:}v. Virgen de vírgenes santas,
@@ -289,9 +286,6 @@ $Per Dominum
 [Lectio Prima]
 !Is 53:8
 v. ¿Quién se preocupará de su estirpe? Lo arrancaron de la tierra de los vivos, por los pecados de mi pueblo lo hirieron.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Me ha dejado * Desolada. 

@@ -8,9 +8,6 @@ Antiphonas horas
 [Ant Vespera]
 @Commune/C5
 
-[Capitulum Vespera]
-@Commune/C5
-
 [Hymnus1 Vespera]
 @Commune/C4:Hymnus1 Vespera
 
@@ -104,7 +101,7 @@ R. Y andará con firmes pasos.
 @Commune/C5
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+@Commune/C5
 
 [Hymnus Laudes]
 @Commune/C5
@@ -120,9 +117,6 @@ R. Y andará con firmes pasos.
 
 [Lectio Prima]
 @Commune/C5
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C5

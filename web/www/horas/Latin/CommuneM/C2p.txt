@@ -10,9 +10,6 @@ Antiphonas horas
 [Ant Vespera]
 @Commune/C1p
 
-[Capitulum Vespera]
-@CommuneM/C1p
-
 [Versum 1]
 @Commune/C1p
 
@@ -68,7 +65,6 @@ De libro Sapiéntiæ
 !Sap 5:16-17
 16 Justi autem in perpétuum vivent, et apud Dóminum est merces eórum, et cogitátio illórum apud Altíssimum.
 17 Ideo accípient regnum decóris, et diadéma speciéi de manu Dómini: quóniam déxtera sua teget eos, et bráchio sancto suo deféndet illos.
-
 
 [Responsory3]
 @Commune/C1p:Responsory3
@@ -148,7 +144,7 @@ R. Rectos decet collaudátio, allelúja, allelúja.
 @Commune/C1p
 
 [Capitulum Laudes]
-@CommuneM/C1p
+@Commune/C1p
 
 [HymnusM Laudes]
 @Commune/C2:HymnusM Laudes
@@ -162,22 +158,19 @@ R. Rectos decet collaudátio, allelúja, allelúja.
 [Lectio Prima]
 @Commune/C1p
 
-[Capitulum Tertia]
-@Commune/C1p
-
-[Responsory Tertia]
+[Responsory TertiaM]
 @:Versum 1
 
 [Capitulum Sexta]
 @Commune/C1p
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Commune/C1p:Responsory Tertia:8-9
 
 [Capitulum Nona]
 @Commune/C1p
 
-[Responsory Nona]
+[Responsory NonaM]
 @Commune/C1p:Responsory Sexta:8-9
 
 [Versum 3]

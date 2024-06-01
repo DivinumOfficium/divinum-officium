@@ -15,9 +15,6 @@ Omit preces
 Feria Te Deum
 CPapaM=Telésphorum;
 
-[Capitulum Vespera]
-@Tempora/Nat1-0:Capitulum Vespera
-
 [Hymnus Vespera]
 @Sancti/12-25:Hymnus Vespera
 
@@ -104,7 +101,7 @@ Porque será llamado Nazareno. Si hubiera puesto un ejemplo de las Escrituras, n
 &teDeum
 
 [Capitulum Laudes]
-@Tempora/Nat1-0:Capitulum Vespera
+@Tempora/Nat1-0:Capitulum Laudes
 
 [Hymnus Laudes]
 @Sancti/12-25:Hymnus Laudes
@@ -114,9 +111,6 @@ Porque será llamado Nazareno. Si hubiera puesto un ejemplo de las Escrituras, n
 
 [Lectio Prima]
 @Tempora/Nat1-0:Lectio Prima
-
-[Capitulum Tertia]
-@Tempora/Nat1-0:Capitulum Vespera
 
 [Capitulum Sexta]
 @Tempora/Nat1-0:Capitulum Sexta

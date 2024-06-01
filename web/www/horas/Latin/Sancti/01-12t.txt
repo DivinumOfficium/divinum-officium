@@ -8,9 +8,6 @@ Doxology=Epi
 Feria Te Deum
 Infra octavam Epiphaniæ Domini
 
-[Capitulum Vespera]
-@Tempora/Epi1-0a
-
 [Versum 1]
 @Tempora/Epi1-0a
 
@@ -57,16 +54,13 @@ Infra octavam Epiphaniæ Domini
 @Tempora/Epi1-0a
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+@Tempora/Epi1-0a
 
 [Versum 2]
 @Sancti/01-06
 
 [Ant 2]
 @:Ant 1
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 @Tempora/Epi1-0a

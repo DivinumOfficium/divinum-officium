@@ -3,11 +3,6 @@
 [Rule]
 12 lectiones
 
-[Capitulum Vespera]
-@Sancti/11-30:Capitulum Vespera
-_
-@Commune/C1:Responsory Sexta:s/._.*//s
-
 [AntMatutinumM]
 Christus me misit, * ad istam provínciam, in qua non parvum pópulum aquisívi;;46
 Ego si crucis * patíbulum expavéscerem, † crucis glóriam non prædicárem.;;60
@@ -106,14 +101,6 @@ R. Diléxit Andréam Dóminus in odórem suavitátis, dum pendéret in cruce, �
 * Et ídeo amícus Dei appellátus est.
 V. Andréas, Christi fámulus, dignus Dei Apóstolus, germánus Petri, et is possessióne sócius.
 R. Et ídeo amícus Dei appellátus est.
-
-[Capitulum Laudes]
-@Sancti/11-30:Capitulum Vespera
-_
-@Commune/C1:Responsory Tertia:s/._.*//s
-
-[Capitulum Tertia]
-@Sancti/11-30:Capitulum Vespera
 
 [Ant Vespera 3]
 @Sancti/11-30:Ant Vespera:s/\.$/.;;109/m s/\.$/.;;112/m s/\.$/.;;115/m s/\.$/.;;138/m

@@ -8,11 +8,6 @@ Divinum auxilium
 [Ant Vespera]
 @Commune/C8::s/112/147/
 
-[Capitulum Vespera]
-@Commune/C8
-_
-@Commune/C8:Responsory Sexta:1-6
-
 [AntMatutinumM]
 Introíbo * in domum tuam, Dómine, † et adorábo ad templum sanctum tuum.;;5
 Dóminus * in templo sancto suo, † Dóminus in cælo sedes ejus.;;10
@@ -118,15 +113,13 @@ _
 @Commune/C8:Responsory Tertia:s/.*_.//s
 
 [Capitulum Laudes]
-@Commune/C8:Capitulum Vespera
-_
-@Commune/C8:Responsory Tertia:1-6
+@Commune/C8
 
-[Responsory Tertia]
+[Responsory TertiaM]
 @Commune/C8:Versum 3
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Commune/C8:Responsory Tertia:8-9
 
-[Responsory Nona]
+[Responsory NonaM]
 @Commune/C8:Versum 1

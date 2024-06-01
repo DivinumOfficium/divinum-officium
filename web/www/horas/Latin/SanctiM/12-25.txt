@@ -4,15 +4,19 @@
 12 lectiones
 Special Evangelii Benedictio
 
-[Capitulum Vespera]
-@Sancti/12-25:Capitulum Vespera
-_
+[Responsory Vespera 1]
 R.br. Hódie sciétis * Quia véniet Dóminus.
 R. Hódie sciétis * Quia véniet Dóminus.
 V. Et mane vidébitis glóriam ejus.
 R. Hódie sciétis * Quia véniet Dóminus.
 &Gloria
 R. Hódie sciétis * Quia véniet Dóminus.
+
+[Responsory Vespera]
+@:Responsory Tertia:s/._.*//s
+
+[Responsory Laudes]
+@:Responsory Tertia:s/._.*//s
 
 [Ant Matutinum 3N]
 Párvulus * fílius hódie natus est nobis: † et vocábitur Deus, Fortis, allelúja, allelúja.
@@ -119,25 +123,17 @@ R. Hoc erat in princípio apud Deum.
 [Responsory12]
 @Sancti/12-25:Responsory8
 
-[Capitulum Laudes]
-@Sancti/12-25:Capitulum Laudes
-_
-@Sancti/12-25:Responsory Tertia:s/._.*//s
-
-[Responsory Tertia]
+[Responsory TertiaM]
 @Sancti/12-25:Responsory Nona:s/.*_.//s
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Sancti/12-25:Versum 2
 
-[Responsory Nona]
+[Responsory NonaM]
 @Sancti/12-25:Responsory Sexta:s/.*_.//s
 
 [Ant Vespera 3]
 @Sancti/12-25::s/.*;;131//
-
-[Capitulum Vespera 3]
-@:Capitulum Laudes
 
 [LectioE]
 @Sancti/09-08

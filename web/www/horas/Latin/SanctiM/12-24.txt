@@ -5,16 +5,14 @@
 _
 @Sancti/12-24:Responsory Tertia:s/.*_//s
 
-[Capitulum Laudes]
-@Sancti/12-24:Capitulum Laudes
-_
+[Responsory Laudes]
 @Sancti/12-24:Responsory Tertia:s/._.*//s
 
-[Responsory Tertia]
-@Sancti/12-24::s/.*_.//s
+[Responsory TertiaM]
+@Sancti/12-24:Responsory Tertia:s/.*_.//s
 
-[Responsory Sexta]
-@Sancti/12-24::s/.*_.//s
+[Responsory SextaM]
+@Sancti/12-24:Responsory Sexta:s/.*_.//s
 
-[Responsory Nona]
-@Sancti/12-24::s/.*_.//s
+[Responsory NonaM]
+@Sancti/12-24:Responsory Nona:s/.*_.//s

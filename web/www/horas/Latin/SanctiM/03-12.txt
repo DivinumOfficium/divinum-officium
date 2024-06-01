@@ -9,10 +9,10 @@ S. Gregorii Papæ Confessoris et Ecclesiæ Doctoris;;II Class;;5;;vide C4
 [Ant Vespera]
 @:Ant Laudes
 
-[Capitulum Vespera]
-@:Capitulum Tertia
-_
-@Commune/C4:Responsory Sexta:1-6
+[Capitulum Laudes]
+!Eccl 50:1
+v. Ecce sacérdos magnus, qui in vita sua suffúlsit domum, et in diébus suis corroborávit templum.
+$Deo gratias
 
 [Hymnus Vespera]
 v. Anglórum jam Apóstolus,
@@ -109,11 +109,6 @@ Dum páginæ sacræ * mystéria pánderet, colúmba nive candídior appáruit.
 Servi Dómini * benedícite Dóminum: servus vester Gregórius cælos ascéndit.
 Gregórius, * monachórum spéculum, pater Urbis, orbis delíciæ.
 
-[Capitulum Laudes]
-@:Capitulum Tertia
-_
-@Commune/C4:Responsory Tertia:1-6
-
 [Hymnus Laudes]
 v. Mella cor obdulcántia
 Tua distíllant lábia:
@@ -144,12 +139,7 @@ Amen.
 [Ant 2]
 Gregórius, * respíciens Anglórum júvenes, ait: Angélicam habent fáciem, et tales Angelórum in cælis decet esse consórtes.
 
-[Capitulum Tertia]
-!Eccl 50:1
-v. Ecce sacérdos magnus, qui in vita sua suffúlsit domum, et in diébus suis corroborávit templum.
-$Deo gratias
-
-[Responsory Tertia]
+[Responsory TertiaM]
 @Commune/C4:Versum 1
 
 [Capitulum Sexta]
@@ -157,7 +147,7 @@ $Deo gratias
 v. Stare fecit cantóres contra altáre, et in sono eórum dulces fecit modos. Et dedit in celebratiónibus decus, et ornávit témpora usque ad consummatiónem vitæ.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Commune/C4:Responsory Tertia:8-9
 
 [Capitulum Nona]
@@ -165,7 +155,7 @@ $Deo gratias
 v. Curávit gentem suam, et liberávit eam a perditióne. Qui præváluit amplificáre civitátem, qui adéptus est glóriam in conversatióne gentis.
 $Deo gratias
 
-[Responsory Nona]
+[Responsory NonaM]
 @Commune/C4:Responsory Sexta:8-9
 
 [Ant Vespera 3]

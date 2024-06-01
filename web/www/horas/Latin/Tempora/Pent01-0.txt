@@ -22,14 +22,8 @@ Glória laudis * résonet in ore ómnium, Patri, genitǽque Proli, Spirítui San
 Laus Deo Patri, * parilíque Proli, et tibi, Sancte, stúdio perénni, Spíritus, nostro résonet ab ore, omne per ævum.;;112
 Ex quo ómnia, * per quem ómnia, in quo ómnia: ipsi glória in sǽcula.;;116
 
-[Capitulum Vespera]
-@Psalterium/Major Special:Day6 Vespera
-
 [Hymnus Vespera]
 @Psalterium/Major Special:Hymnus Day6 Vespera
-
-[HymnusM Vespera]
-@Psalterium/Major Special:HymnusM Day6 Vespera
 
 [HymnusM Vespera]
 @Psalterium/Major Special:HymnusM Day6 Vespera
@@ -240,7 +234,7 @@ Duo sunt ópera misericórdiæ, quæ nos líberant, quæ bréviter ipse Dóminus
 @:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+@Psalterium/Major Special:Day6 Vespera
 
 [HymnusM Laudes]
 @:Hymnus Laudes:s/laudis cánticum/laudum cántica/ s/Quod/Quæ/ s/Præítque solem núntius/Sparsámque lucem núntiat/ s/Cadunt ténebræ/Cadit calígo/ s/Nunc, et per omne sǽculum/Et nunc et in perpétuum/
@@ -282,9 +276,6 @@ $Per Dominum
 [Lectio Prima]
 !1 Joann. 5:7
 v. Tres sunt, qui testimónium dant in cælo: Pater, Verbum et Spíritus Sanctus, et hi tres unum sunt.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Benedicámus Patrem et Fílium * Cum Sancto Spíritu.

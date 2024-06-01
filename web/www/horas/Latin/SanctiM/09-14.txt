@@ -10,10 +10,8 @@ Psalmi Dominica
 [Ant Vespera]
 @:Ant Laudes
 
-[Capitulum Vespera]
+[Capitulum Laudes]
 @Sancti/05-03
-_
-@Sancti/05-03:Responsory Sexta:s/._.*//s s/, allelúja//g s/(et benedícimus tibi:? \* )?Allelúja/* Et benedícimus tibi/g s/\. \*/./
 
 [Hymnus Vespera]
 @Psalterium/Major Special:HymnusM Quad5 Vespera
@@ -138,8 +136,6 @@ R. Radix David, allelúja.
 
 [Capitulum Laudes]
 @Sancti/05-03
-_
-@Sancti/05-03:Responsory Tertia:s/._.*//s s/, allelúja//g s/(erit in cælo,? \* )?Allelúja/* Erit in cælo/g s/\. \*/./
 
 [Hymnus Laudes]
 @Psalterium/Major Special:HymnusM Quad5 Laudes
@@ -150,20 +146,17 @@ _
 [Ant 2]
 @Sancti/05-03
 
-[Capitulum Tertia]
-@Sancti/05-03:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory TertiaM]
 @Sancti/05-03:Versum 1
 
 [Capitulum Sexta]
 @Sancti/05-03
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Sancti/05-03:Versum 2
 
 [Capitulum Nona]
 @Sancti/05-03
 
-[Responsory Nona]
+[Responsory NonaM]
 @Sancti/05-03:Responsory Sexta:s/.*_.//s s/, \w+\././sg

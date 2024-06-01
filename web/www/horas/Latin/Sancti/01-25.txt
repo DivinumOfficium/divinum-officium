@@ -7,11 +7,6 @@ ex Sancti/06-30;
 Sub unica concl
 Psalm5Vespera=116
 
-[Capitulum Vespera]
-!Act 9:1-2
-v. Saulus autem adhuc spirans minárum et cædis in discípulos Dómini, accéssit ad príncipem sacerdótum, et pétiit ab eo epístolas in Damáscum ad synagógas: ut si quos invenísset hujus viæ viros ac mulíeres, vinctos perdúceret in Jerúsalem.
-$Deo gratias
-
 [Hymnus Vespera]
 @Sancti/06-30:Hymnus Matutinum
 
@@ -80,7 +75,9 @@ Ibat spirans et anhélans cædes: hoc est, mane rápiens. Nam et quando lapidát
 @:Ant Vespera 3:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Act 9:1-2
+v. Saulus autem adhuc spirans minárum et cædis in discípulos Dómini, accéssit ad príncipem sacerdótum, et pétiit ab eo epístolas in Damáscum ad synagógas: ut si quos invenísset hujus viæ viros ac mulíeres, vinctos perdúceret in Jerúsalem.
+$Deo gratias
 
 [Oratio]
 Deus, qui univérsum mundum beáti Pauli Apóstoli prædicatióne docuísti: da nobis, quǽsumus; ut, qui ejus hódie Conversiónem cólimus, per ejus ad te exémpla gradiámur.
@@ -104,9 +101,6 @@ $Qui vivis
 [Lectio Prima]
 !Act 9:22
 v. Saulus autem multo magis convalescébat, et confundébat Judǽos qui habitábant Damásci, affírmans quóniam hic est Christus.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C1:Responsory Tertia

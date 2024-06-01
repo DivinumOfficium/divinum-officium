@@ -3,10 +3,17 @@
 [Name]
 Commune non Virginum non Martyrum
 
-[Capitulum Vespera]
+[Capitulum Laudes]
 @Commune/C7a
-_
+
+[Responsory Vespera]
 @Commune/C6:Responsory Sexta:1-6
+
+[MM Capitulum]
+@Commune/C7a:Capitulum Sexta
+_
+R. Dilexísti justítiam, et odísti iniquitátem:
+V. Proptérea unxit te Deus, Deus tuus, oleo lætítiæ.
 
 [Lectio1]
 @Commune/C7a:Lectio1:s/-17/-15/ :s/16 .*//s
@@ -24,14 +31,12 @@ _
 
 [Capitulum Laudes]
 @Commune/C7a
-_
+
+[Responsory Laudes]
 @Commune/C6:Responsory Tertia:1-6
 
 [Lectio Prima]
 @Commune/C7a
-
-[Capitulum Tertia]
-@Commune/C7a:Capitulum Vespera
 
 [Capitulum Sexta]
 @Commune/C7a

@@ -11,11 +11,6 @@ Doxology=Nat
 [Ant Vespera]
 @Sancti/08-15t
 
-[Capitulum Vespera]
-!Judith 13:22-23
-v. Benedíxit te Dóminus in virtúte sua, quia per te ad níhilum redégit inimícos nostros. Benedícta es tu, fília, a Dómino Deo excélso, præ ómnibus muliéribus super terram.
-$Deo gratias
-
 [Hymnus Vespera]
 v. O prima, Virgo, pródita
 E Conditóris spíritu,
@@ -200,7 +195,9 @@ Felix dies, qui tam pretiósum munus de hujus mundi desérto transmísit, et ad 
 @Sancti/08-15t:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Judith 13:22-23
+v. Benedíxit te Dóminus in virtúte sua, quia per te ad níhilum redégit inimícos nostros. Benedícta es tu, fília, a Dómino Deo excélso, præ ómnibus muliéribus super terram.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Solis, o Virgo, rádiis amícta,
@@ -243,9 +240,6 @@ Amen.
 [Lectio Prima]
 !Judith 15:10
 v. Tu glória Jerúsalem, tu lætítia Israël, tu honorificéntia pópuli nostri.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Sancti/08-15t

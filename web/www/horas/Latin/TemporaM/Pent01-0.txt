@@ -5,11 +5,6 @@
 Psalmi Dominica
 Antiphonas horas
 
-[Capitulum Vespera]
-@Tempora/Pent01-0
-_
-@Tempora/Pent01-0:Responsory Sexta:1-6
-
 [AntMatutinumM]
 Glória * et honor Deo in unitáte Trinitátis, † Patri et Fílio cum Sancto Spíritu, in sempitérna sǽcula.;;95
 In Patre * manet ætérnitas, in Fílio æquálitas, † in Spíritu Sancto æternitátis æqualitatísque connéxio.;;96
@@ -108,19 +103,14 @@ R. Tibi glória in sǽcula.
 [Responsory12]
 @Tempora/Pent01-0:Responsory8
 
-[Capitulum Laudes]
-@Tempora/Pent01-0
-_
-@Tempora/Pent01-0:Responsory Tertia:1-6
-
 [Hymnus Laudes]
 @Tempora/Pent01-0:HymnusM Vespera
 
-[Responsory Tertia]
+[Responsory TertiaM]
 @:Versum 1
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Tempora/Pent01-0:Responsory Tertia:8-9
 
-[Responsory Nona]
+[Responsory NonaM]
 @Tempora/Pent01-0:Responsory Sexta:8-9

@@ -10,9 +10,6 @@ Psalm5 Vespera3=131
 [Ant Vespera]
 @Commune/C4
 
-[Capitulum Vespera]
-@Commune/C4
-
 [Hymnus1 Vespera]
 @Commune/C4:Hymnus1 Vespera
 
@@ -119,7 +116,7 @@ Mas la naturaleza de la sal siempre es la misma; no puede mudarse jamás. Pero p
 @:Ant Vespera
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+@Commune/C4
 
 [Hymnus Laudes]
 @Commune/C4:Hymnus Laudes
@@ -146,9 +143,6 @@ $Per Dominum.
 
 [Lectio Prima]
 @Commune/C4
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 @Commune/C4

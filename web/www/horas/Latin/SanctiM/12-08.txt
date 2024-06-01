@@ -3,9 +3,7 @@
 [Rule]
 12 lectiones
 
-[Capitulum Vespera]
-@Sancti/12-08:Capitulum Vespera
-_
+[Responsory Vespera]
 @Sancti/12-08:Responsory Sexta:s/._.*//s
 
 [Hymnus Matutinum]
@@ -108,18 +106,16 @@ R. Osténdit nobis Dóminus civitátem sanctam Jerúsalem, habéntem claritátem
 V. Ornátam monílibus, fíliam Jerúsalem Dóminus concupívit.
 R. Et lumen ejus símile lápide pretióso, sicut crystállum.
 
-[Capitulum Laudes]
-@Sancti/12-08:Capitulum Vespera
-_
+[Responsory Laudes]
 @Sancti/12-08:Responsory Tertia:s/._.*//s
 
-[Responsory Tertia]
+[Responsory TertiaM]
 V. Deus omnípotens præcínxit me virtúte.
 R. Et pósuit immaculátam viam meam.
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Sancti/12-08:Responsory Tertia:s/.*_.//s
 
-[Responsory Nona]
+[Responsory NonaM]
 @Sancti/12-08:Responsory Sexta:s/.*_.//s
 

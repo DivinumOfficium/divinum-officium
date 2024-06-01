@@ -1,10 +1,5 @@
 @Commune/C3
 
-[Capitulum Vespera]
-@Commune/C3
-_
-@Commune/C3:Responsory Sexta:1-6
-
 [Ant Matutinum]
 Secus decúrsus aquárum * plantávit víneam justórum, et in lege Dómini fuit volúntas eórum.;;1
 Tamquam aurum * in fornáce probávit eléctos Dóminus: et quasi holocáusta accépit eos in ætérnum.;;2
@@ -80,10 +75,9 @@ R. Certámen magnum habuérunt Sancti Dei: transiérunt per ignem at aquam, et s
 @Commune/C3:Lectio8:s/.* Última /Última /s s/$/~/
 @Commune/C3:Lectio9:s/Ait .*//s
 
-
 [Responsory11]
 R. Córpora Sanctórum in pace sepúlta sunt,				* Et nómina eórum vivent in generatiónem et generatiónem.			V. Sapiéntiam Sanctórum narrent pópuli, et laudem eórum pronúntiet omnis Ecclésia.R. Et nómina eórum vivent in generatiónem et generatiónem.
-						
+
 [Lectio12]
 @Commune/C3:Lectio9:s/.* Ait /Ait /s s/\&teDeum .*//s
 
@@ -95,21 +89,13 @@ R. Illi autem sunt in pace.
 &Gloria
 R. Illi autem sunt in pace.
 
-[Capitulum Laudes]
-@Commune/C3
-_
-@Commune/C3:Responsory Tertia:1-6
-
-[Capitulum Tertia]
-@Commune/C3:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory TertiaM]
 @Commune/C3:Versum 1
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Commune/C3:Responsory Tertia:8-9
 
-[Responsory Nona]
+[Responsory NonaM]
 @Commune/C3:Responsory Sexta:8-9
 
 [Ant Vespera 3]

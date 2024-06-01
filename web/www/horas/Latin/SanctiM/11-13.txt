@@ -8,9 +8,12 @@ Psalmi Dominica
 [Ant Vespera]
 @:Ant Laudes
 
-[Capitulum Vespera]
-@:Capitulum Tertia
-_
+[Capitulum Laudes]
+!Isa 8:18
+v. Ecce ego et púeri mei quos dedit mihi Dóminus in signum, et in porténtum Israël a Dómino exercítuum, qui hábitat in monte Sion.
+$Deo gratias
+
+[Responsory Vespera]
 @Commune/C3:Responsory Sexta:s/._.*//s
 
 [Ant 1]
@@ -135,9 +138,7 @@ O quam gloriósum est regnum * in quo cum Christo gaudent omnes Sancti, amícti 
 [Ant 3]
 In regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos, super sedes duódecim, judicántes duódecim tribus Israël.
 
-[Capitulum Laudes]
-@:Capitulum Tertia
-_
+[Responsory Laudes]
 @Commune/C3:Responsory Tertia:s/._.*//s
 
 [Hymnus Laudes]
@@ -177,12 +178,7 @@ Amen.
 Concéde, quǽsumus omnípotens Deus, ut ad meliórem vitam sanctórum Monachórum exémplua non próvocent: † quátenus, quorum solémnia ágimus, * étiam actus imitémur.
 $Per Dominum
 
-[Capitulum Tertia]
-!Isa 8:18
-v. Ecce ego et púeri mei quos dedit mihi Dóminus in signum, et in porténtum Israël a Dómino exercítuum, qui hábitat in monte Sion.
-$Deo gratias
-
-[Responsory Tertia]
+[Responsory TertiaM]
 @Commune/C3:Versum 1
 
 [Capitulum Sexta]
@@ -190,7 +186,7 @@ $Deo gratias
 v. Omnes isti in generatiónibus gentis suæ glóriam adépti sunt, et in diébus suis habéntur in láudibus.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Commune/C3:Responsory Tertia:8-9
 
 [Capitulum Nona]
@@ -198,7 +194,7 @@ $Deo gratias
 v. Fílii eórum propter illos usque in ætérnum manent: semen eórum et glória eórum non derelinquétur.
 $Deo gratias
 
-[Responsory Nona]
+[Responsory NonaM]
 @Commune/C3:Responsory Sexta:8-9
 
 [Ant Vespera 3]

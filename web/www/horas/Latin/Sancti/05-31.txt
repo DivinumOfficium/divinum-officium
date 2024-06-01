@@ -12,11 +12,6 @@ Doxology=Nat
 Antiphonas horas
 Psalmi Dominica
 
-[Capitulum Vespera]
-!Sir 24:5; 24:7
-v. Ego ex ore Altíssimi prodívi, primogénita ante omnem creatúram; ego in altíssimis habitávi, et thronus meus in colúmna nubis.
-$Deo gratias
-
 [Versum 1]
 V. Salve, Regína misericórdiæ. (Allelúja.)
 R. Ex qua natus est Christus, Rex noster. (Allelúja.)
@@ -186,7 +181,9 @@ María Regína est et dispensátrix grátiæ, quod designátum fuit in libro Est
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Sir 24:5; 24:7
+v. Ego ex ore Altíssimi prodívi, primogénita ante omnem creatúram; ego in altíssimis habitávi, et thronus meus in colúmna nubis.
+$Deo gratias
 
 [Versum 2]
 V. María Virgo cælos ascéndit. (Allelúja.)
@@ -198,9 +195,6 @@ Regína mundi digníssima, * María, Virgo perpétua, intercéde pro nostra pace
 [Lectio Prima]
 !Sir 24:30-31
 v. Qui audit me, non confundétur, et qui operántur in me, non peccábunt: qui elúcidant me, vitam ætérnam habébunt.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Responsory Tertia]
 R.br. Salve, * Regína misericórdiæ.
