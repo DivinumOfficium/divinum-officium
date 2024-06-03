@@ -1404,6 +1404,7 @@ sub oratio {
           $ccind++;
           $key = $ccind + 8500;    # 10000 - 1.5 * 1000
           $cc{$key} = $c;
+          setbuild2("Commemorated Vigil: $key");
         }
       }
     }
