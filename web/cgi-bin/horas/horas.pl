@@ -1132,22 +1132,7 @@ sub getordinarium {
   if ($command =~ /Matutinum/i && $rule =~ /Special Matutinum Incipit/i) { $suffix .= "e"; }    # for Epiphanias
   if ($command =~ /Tertia|Sexta|Nona/i) { $command = 'Minor'; }    # identical for Terz/Sext/Non
 
-  if ($command =~ /Prima/i) {
-    if ($version =~ /(1955|1960|Newcal)/) {
-      $suffix .= "1960";
-    } elsif ($version =~ /1963/) {
-      $suffix .= "M1963";
-    } elsif ($version =~ /Monastic/i) {
-      $suffix .= "M";
-    } elsif ($version =~ /Ordo Praedicatorum/i) {
-      $suffix .= "OP";
-    }
-  }
-
-  # don't loose time for non existent files
-  $lang = 'Latin' if $command !~ /^(?:Prima)$/;
-
-  my $fname = checkfile($lang, "Ordinarium/$command$suffix.txt");
+  my $fname = checkfile('Latin', "Ordinarium/$command$suffix.txt");
 
   @script = process_conditional_lines(do_read($fname));
   $error = "$fname cannot be opened or gives an empty script." unless @script;
