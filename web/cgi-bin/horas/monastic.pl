@@ -157,7 +157,7 @@ sub psalmi_matutinum_monastic {
   if ($rule =~ /12 lectiones/) {
     lectiones(1, $lang);    # first Nocturn of 4 lessons (
   } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i
-    && monthday() !~ /^11[1-5]\-/
+    && monthday($day, $month, $year, ($version =~ /196/) + 0, 0) !~ /^11[1-5]\-/
     && $winner{Rank} !~ /vigil|quat(t?)uor|infra octavam|post octavam asc/i
     && ($winner{Rank} !~ /secunda.*roga/i || $version =~ /196/)
     && $rule !~ /3 lectiones/)

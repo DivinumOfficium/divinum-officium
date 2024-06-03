@@ -209,17 +209,17 @@ sub specials {
     if ($item =~ /Capitulum/i && $hora =~ /^(?:Tertia|Sexta|Nona|Completorium)$/i) {
       my %capit = %{setupstring($lang, 'Psalterium/Minor Special.txt')};
       my $name = minor_getname();
-      $name .= 'M' if ($version =~ /monastic/i);
       $name = 'Completorium' if $hora eq 'Completorium';
+      $name .= 'M' if ($version =~ /monastic/i);
       my $capit = $capit{$name} =~ s/\s*$//r;
       my $resp = '';
 
-      if ($version !~ /^Monastic/ && ($resp = $capit{"Responsory $name"})) {
+      if ($resp = $capit{"Responsory $name"}) {
         $resp =~ s/\s*$//;
         $capit =~ s/\s*$/\n_\n$resp/;
       }
 
-      if ($name eq "Completorium" && $version !~ /^Ordo Praedicatorum/) {
+      if ($name =~ /Completorium/ && $version !~ /^Ordo Praedicatorum/) {
         $capit .= "\n_\n$capit{'Versum 4'}";
       } else {
         $comment = ($name =~ /(Dominica|Feria)/i) ? 5 : 1;
