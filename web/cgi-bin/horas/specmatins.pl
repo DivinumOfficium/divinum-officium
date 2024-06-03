@@ -743,6 +743,10 @@ sub lectio : ScriptFunc {
   my $homilyflag = (exists($commemoratio{Lectio1})
       && $commemoratio{Lectio1} =~ /\!(Matt|Mark|Marc|Luke|Luc|Joannes|John)\s+[0-9]+\:[0-9]+\-[0-9]+/i) ? 1 : 0;
 
+  if ($homilyflag && $commemoratio{Rank} =~ /vigilia/i) {
+    $homilyflag = 9;
+  }
+
   if (
     !$w    # we don't have a lectio yet
     && (
@@ -751,7 +755,7 @@ sub lectio : ScriptFunc {
         && $rank > 3)    # either we have 'ex C.' on Duplex majus or higher
       || (
         ($num < 4 || ($num == 4 && $rule =~ /12 lectiones/i))    # or we are in the first nocturn
-        && $homilyflag                                           # and there is a homily to be commemorated
+        && $homilyflag == 1                                      # and there is a homily to be commemorated
         && exists($commune{"Lectio$num"})                        # which has not been superseded by the sanctoral
       )
     )
@@ -853,11 +857,11 @@ sub lectio : ScriptFunc {
 
     if (
          ($commemoratio =~ /tempora/i && $commemoratio !~ /Nat30/i || $commemoratio =~ /01\-05/)
-      && ($homilyflag || exists($commemoratio{Lectio7}))
+      && ($homilyflag == 1 || exists($commemoratio{Lectio7}))
       && $comrank > 1
       && ( $rank > 4
         || ($rank >= 3 && $version =~ /Trident/i)
-        || $homilyflag
+        || $homilyflag == 1
         || exists($winner{Lectio1}))
     ) {
       %w = (columnsel($lang)) ? %commemoratio : %commemoratio2;
@@ -877,6 +881,14 @@ sub lectio : ScriptFunc {
       if (!(-e "$datafolder/$lang/$transfervigil")) { $transfervigil =~ s/v\.txt/\.txt/; }
       my %tro = %{setupstring($lang, $transfervigil)};
       if (exists($tro{'Lectio Vigilia'})) { $w = $tro{'Lectio Vigilia'}; }
+    } elsif ($homilyflag == 9) {
+      my %tro = (columnsel($lang)) ? %commemoratio : %commemoratio2;
+
+      if (exists($tro{'Lectio1'})) {
+        my $trorank = $tro{Rank};
+        $trorank =~ s/;;.*//;
+        $w = '!' . translate('Commemoratio', $lang) . ": $trorank\n" . $tro{'Lectio1'};
+      }
     }
     my $cflag = 1;    #*************  03-30-10
                       #if ($winner{Rule} =~ /9 lectiones/i && exists($winner{Responsory9})) { $cflag = 0; }
