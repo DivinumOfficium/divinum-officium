@@ -389,11 +389,9 @@ R. Et clamor meus ad te véniat.
 [Preces feriales Nona]
 @:Preces feriales Tertia
 
-[Preces Dominicales]
-$Kyrie
-$Pater secreto
-$Credo secreto
-V. Benedíctus es, Dómine, Deus patrum nostrórum. 
+
+[Preces Dominicales_]
+V. Benedíctus es, Dómine, Deus patrum nostrórum.
 R. Et laudábilis et gloriósus in sǽcula.
 V. Benedicámus Patrem et Fílium cum Sancto Spíritu. 
 R. Laudémus, et superexaltémus eum in sǽcula.
@@ -410,11 +408,25 @@ R. Quemádmodum sperávimus in te.
 V. Dómine, exáudi oratiónem meam.
 R. Et clamor meus ad te véniat.
 
-[A porta inferi]
+[Preces Dominicales]
+@:Kyrie
+@:Pater secreto
+@:Credo secreto
+@:Preces Dominicales_
+
+[Preces Dominicales] (rubrica ^Monastic)
+@:MLitany2
+@:Credo secreto
+@:Preces Dominicales_:9-10
+@:Preces Dominicales_:15-16
+
+[A_porta_inferi]
 V. A porta ínferi.
 R. Erue, Dómine, ánimas eórum.
-V. Requiéscant in pace.
-R. Amen.
+
+[A porta inferi]
+@:A_porta_inferi
+@:Requiescant
 @:Dominus:3-4
 &Dominus_vobiscum2
 
@@ -442,6 +454,168 @@ $MLitany2
 $Oremus
 @:Oratio_Visita
 $Per Dominum
+
+[Preces Dominicales Prima_1]
+V. Et ego ad te, Dómine, clamávi.
+R. Et mane orátio mea prævéniet te.
+V. Repleátur os meum laude.
+R. Ut cantem glóriam tuam, tota die magnitúdinem tuam.
+V. Dómine, avérte fáciem tuam a peccátis meis.
+R. Et omnes iniquitátes meas dele.
+V. Cor mundum crea in me, Deus.
+R. Et spíritum rectum ínnova in viscéribus meis.
+V. Ne projícias me a fácie tua.
+R. Et spíritum sanctum tuum ne áuferas a me.
+V. Redde mihi lætítiam salutáris tui.
+R. Et spíritu principáli confírma me.
+
+[Preces Dominicales Prima_2]
+V. Dignáre, Dómine, die isto.
+R. Sine peccáto nos custodíre.
+V. Miserére nostri, Dómine.
+R. Miserére nostri.
+V. Fiat misericórdia tua, Dómine, super nos.
+R. Quemádmodum sperávimus in te.
+V. Dómine, exáudi oratiónem meam.
+R. Et clamor meus ad te véniat.
+
+[Preces Dominicales Prima 1]
+@:Kyrie
+@:Pater secreto
+@:Credo secreto
+@:Preces Dominicales Prima_1
+
+[Preces Dominicales Prima 1] (rubrica ^Monastic)
+@:MLitany2
+@:Credo secreto
+@:Adjutorium nostrum
+$Confiteor
+@:Misereatur
+@:Indulgentiam
+@:Preces Dominicales Prima_2:1-2
+@:Preces Dominicales Prima_2:11-12
+
+[Preces Dominicales Prima 2]
+@:Adjutorium nostrum
+$Confiteor
+@:Misereatur
+@:Indulgentiam
+@:Preces Dominicales Prima_2
+
+[Preces feriales Prima]
+V. Éripe me, Dómine, ab hómine malo.
+R. A viro iníquo éripe me.
+V. Éripe me de inimícis meis, Deus meus.
+R. Et ab insurgéntibus in me líbera me.
+V. Éripe me de operántibus iniquitátem.
+R. Et de viris sánguinum salva me.
+V. Sic psalmum dicam nómini tuo in sǽculum sǽculi.
+R. Ut reddam vota mea de die in diem.
+V. Exáudi nos, Deus, salutáris noster.
+R. Spes ómnium fínium terræ, et in mari longe.
+V. Deus in adjutórium meum inténde.
+R. Dómine, ad adjuvándum me festína.
+V. Sanctus Deus, Sanctus fortis, Sanctus immortális.
+R. Miserére nobis.
+V. Bénedic, ánima mea, Dómino.
+R. Et ómnia, quæ intra me sunt, nómini sancto ejus.
+V. Bénedic, ánima mea, Dómino.
+R. Et noli oblivísci omnes retributiónes ejus.
+V. Qui propitiátur ómnibus iniquitátibus tuis.
+R. Qui sanat omnes infirmitátes tuas.
+V. Qui rédimit de intéritu vitam tuam.
+R. Qui corónat te in misericórdia et miseratiónibus.
+V. Qui replet in bonis desidérium tuum.
+R. Renovábitur ut áquilæ juvéntus tua.
+
+[Rubrica Martyrologium] (rubrica monastica)
+/:Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum.:/
+
+[Rubrica Regula] (rubrica monastica)
+/:Extra Chorum etiam laudabiliter dicitur lectio ex S. Regulæ; secus dicitur Lectio brevis.:/
+
+[Pretiosa_]
+V. Pretiósa in conspéctu Dómini.
+R. Mors Sanctórum ejus.
+v. Sancta María et omnes Sancti intercédant pro nobis ad Dóminum, ut nos mereámur ab eo adjuvári et salvári, qui vivit et regnat in sǽcula sæculórum.
+
+[Respice_]
+V. Réspice in servos tuos, Dómine, et in ópera tua, et dírige fílios eórum.
+R. Et sit splendor Dómini Dei nostri super nos, et ópera mánuum nostrárum dírige super nos, et opus mánuum nostrárum dírige.
+
+[Dirigere_]
+v. Dirígere et sanctificáre, régere et gubernáre dignáre, Dómine Deus, Rex cæli et terræ, hódie corda et córpora nostra, sensus, sermónes et actus nostros in lege tua, et in opéribus mandatórum tuórum: ut hic et in ætérnum, te auxiliánte, salvi et líberi esse mereámur, Salvátor mundi: 
+
+[Benedictio Prima]
+V. Jube, domne, benedícere.
+(sed rubrica 196 aut rubrica 1955 dicitur)
+V. Jube, Dómine, benedícere.
+Benedictio. Dies et actus nostros in sua pace dispónat Dóminus omnípotens.
+
+[Benedictio Prima2]
+Benedictio. Dóminus nos benedícat, + et ab omni malo deféndat, * et ad vitam perdúcat ætérnam.
+
+[Benedicite]
+V. Benedícite.
+R. Deus.
+
+[Commemoratio omnium]
+R.br. Commemorátio ómnium fratrum, familiárum Órdinis nostri, atque benefactórum nostrórum.
+
+[Requiescant]
+V. Requiéscant in pace.
+R. Amen.
+
+[Deus veniae]
+v. Deus véniæ largítor et humánæ salútis amátor: quǽsumus cleméntiam tuam: ut nostræ congregatiónis fratres, propínquos et benefactóres, qui ex hoc sǽculo transiérunt, beáta María semper vírgine intercedénte cum ómnibus sanctis tuis ad perpétuæ beatitúdinis consórtium perveníre concédas.
+
+[Oratio_Domine]
+v. Dómine Deus omnípotens, qui ad princípium hujus diéi nos perveníre fecísti: tua nos hódie salva virtúte; ut in hac die ad nullum declinémus peccátum, sed semper ad tuam justítiam faciéndam nostra procédant elóquia, dirigántur cogitatiónes et ópera.
+
+[Oratio Domine]
+(rubrica 1963 dicitur)
+$MLitany2
+(sed rubrica 1617 aut rubrica 1930 dicitur)
+&MLitany2
+&Dominus_vobiscum1
+(sed rubrica 196 aut rubrica 1955 dicitur)
+&Dominus_vobiscum
+$Oremus
+@:Oratio_Domine
+$Per Dominum
+
+[Pretiosa]
+@:Pretiosa_
+$Amen
+_
+@:Deus in adjutorium:1-2 s/\+ //
+@:Deus in adjutorium:1-2 s/\+ //
+@:Deus in adjutorium:1-2 s/\+ //
+&Gloria
+_
+@:MLitany2
+@:Respice_
+&Gloria
+@:Oremus
+@:Dirigere_
+@:Qui vivis
+
+[Defunctorum]
+@:Commemoratio omnium
+@:Requiescant
+_
+&psalm(129)
+_
+@:A_porta_inferi
+@:Requiescant
+@:Dominus:3-4
+&Dominus_vobiscum2
+@:Oremus
+@:Deus veniae
+@:Per Dominum
+_
+@:Requiem: s/\* //g
+@:Requiescant
 
 [Examen]
 /:Examen conscientiæ vel Pater Noster totum secreto.:/
