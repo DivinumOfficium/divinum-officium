@@ -1,7 +1,48 @@
 @Sancti/12-07
 
-[Rank]
-S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4
+[Rank] (rubrica divino)
+S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex majus;;4;;vide C4a
 
-[Responsory3]
+[Rule]
+vide C4a;mtv
+12 lectiones
+
+[Lectio1](rubrica tridentina)
+@CommuneM/C4:Lectio1
+
+[Lectio2](rubrica tridentina)
+@CommuneM/C4:Lectio2
+
+[Lectio3](rubrica tridentina)
+@CommuneM/C4:Lectio3
+
+[Lectio4](rubrica tridentina)
+@CommuneM/C4:Lectio4
+
+[Responsory3] (rubrica 1963)
 @Commune/C4a:Responsory8
+
+[Lectio5]
+@Sancti/12-07:Lectio4
+
+[Lectio6]
+@Sancti/12-07:Lectio5: s/Factus episcopus.*//s 
+
+[Lectio7]
+@Sancti/12-07:Lectio5: s/.* Factus/Factus/s ~
+@Sancti/12-07:Lectio6: s/Ergo sanctus.*//s 
+
+[Lectio8]
+@Sancti/12-07:Lectio6: s/.* Ergo sanctus/Ergo sanctus/s ~
+
+[Lectio9]
+@CommuneM/C4a
+
+[Lectio10]
+@CommuneM/C4a
+
+[Lectio11]
+@CommuneM/C4a
+
+[Lectio12]
+@CommuneM/C4a

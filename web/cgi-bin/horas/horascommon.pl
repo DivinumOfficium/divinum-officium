@@ -25,8 +25,13 @@ sub checkfile {
   my $file = shift;
   our $datafolder;
 
+  my $tempFile = $file;
+  $tempFile =~ s/(Sancti|Tempora)M/$1/;
+
   if (-e "$datafolder/$lang/$file") {
     return "$datafolder/$lang/$file";
+  } elsif (-e "$datafolder/$lang/$tempFile") {
+    return "$datafolder/$lang/$tempFile";
   } elsif ($lang =~ /-/) {
     my $temp = $lang;
     $temp =~ s/-[^-]+$//;
@@ -88,10 +93,12 @@ sub occurrence {
     ;    # look for permanent Transfers assigned to the day of the year (as of 2023-5-22 only 12-12n in Newcal version)
 
   if ($transfertemp && $transfertemp !~ /tempora/i) {
-    $transfertemp = subdirname('Sancti', $version) . "$transfertemp";
-  }      # add path to Sancti folder if necessary
+    $transfertemp = subdirname('Sancti', $version) . "$transfertemp";    # add path to Sancti folder if necessary
+  } elsif ($transfertemp && $version =~ /monastic/i) {
+    $transfertemp =~ s/TemporaM?/TemporaM/;    # modify path to Monastic Tempora folder if necessary
+  }
   my $transfers =
-    get_transfer($year, $version, $sday);    # get annual transfers if applicable depending on the day of Easter
+    get_transfer($year, $version, $sday);      # get annual transfers if applicable depending on the day of Easter
   my @transfers = split("~", $transfers);
 
   foreach $transfer (@transfers) {
@@ -138,7 +145,12 @@ sub occurrence {
       $tfile = '';
     }
 
-    if ($tfile && (-e "$datafolder/Latin/$tfile.txt" || $weekname =~ /Epi0/i)) {
+    if (
+      $tfile
+      && ( -e "$datafolder/Latin/$tfile.txt"
+        || $weekname =~ /Epi0/i
+        || ($tfile =~ /(Sancti|Tempora)M(.*)/ && -e "$datafolder/Latin/$1$2.txt"))
+    ) {
 
       $tname = "$tfile.txt";
 
@@ -203,7 +215,7 @@ sub occurrence {
 
     $BMVSabbato = ($sfile =~ /v/ || $dayofweek !~ 6) ? 0 : 1;    # nicht sicher, ob das notwendig ist
 
-    if (-e "$datafolder/Latin/$sfile.txt") {
+    if (-e "$datafolder/Latin/$sfile.txt" || ($sfile =~ /(Sancti|Tempora)M(.*)/ && -e "$datafolder/Latin/$1$2.txt")) {
       $sname = "$sfile.txt";
       if ($caller && $hora =~ /(Matutinum|Laudes)/i) { $sname =~ s/11-02t/11-02/; }    # special for All Souls day
 
