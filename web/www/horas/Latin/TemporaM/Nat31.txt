@@ -1,1 +1,34 @@
 @Tempora/Nat31
+
+[Rank] (rubrica 1963)
+Die VII infra Octavam Nativitatis;;Duplex II classis;;5;;ex Sancti/12-25
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+
+[Ant Matutinum]
+@TemporaM/Nat1-0tt
+
+[Lectio1]
+@Tempora/Nat30:Lectio7:s/_.*/_\n/s
+@Tempora/Nat30:Lectio4
+
+[Responsory1]
+@SanctiM/12-25:Responsory11
+
+[Lectio2]
+@Tempora/Nat30:Lectio5
+
+[Responsory2]
+@Sancti/12-25:Responsory8
+
+[Lectio3]
+@Tempora/Nat30:Lectio6
+
+[Responsory3]
+@Tempora/Nat1-0:Responsory8
+
+[MM Capitulum]
+@Psalterium/Matutinum Special:MM Capitulum Nat:1-4
+@Sancti/12-25:Versum 2

@@ -177,6 +177,7 @@ PrintTag
 }
 
 # translate from new breviary version names
+$version =~ s/Monastic(.*)/Monastic/;
 $version =~ s/ - 196.$//;
 $version =~ s/ -//;
 $version =~ s/1888/1910/;

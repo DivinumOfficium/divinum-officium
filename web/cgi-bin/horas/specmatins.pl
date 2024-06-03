@@ -650,7 +650,7 @@ sub lectio : ScriptFunc {
       $c = officestring($lang, "Sancti/12-25.txt")
         ;    # GitHub3539: in 1960 rubrics, Scripture on Sunday (26-28) comes from Nativity
     } else {
-      my $tfile = "Tempora/Nat$day" . ($version =~ /trident/i ? "o.txt" : ".txt");
+      my $tfile = subdirname('Tempora', $version) . "Nat$day" . ($version =~ /trident/i ? "o.txt" : ".txt");
       $c = officestring($lang, $tfile);
     }
     $c->{'Lectio2'} .= $c->{'Lectio3'} if (contract_scripture(2));
@@ -664,12 +664,11 @@ sub lectio : ScriptFunc {
   # TODO: get TemporaM folder updated and completed
   if ((($winner eq 'TemporaM/Nat2-0.txt') || ($winner eq 'SanctiM/01-13.txt')) && $num <= 4) {
     $c =
-      officestring($lang, $winner =~ /Tempora/ ? sprintf("SanctiM/01-%02d.txt", $day) : "TemporaM/Epi1-$dayofweek.txt",
-      );
+      officestring($lang, $winner =~ /Tempora/ ? sprintf("SanctiM/01-%02d.txt", $day) : "TemporaM/Epi1-$dayofweek.txt");
     $w{"Lectio$num"} = $c->{"LectioM$num"} || $c->{"Lectio$num"};
   }
 
-  #Lectio1 tempora
+  #Lectio1 tempora: special fule for Octave of Epiphany
   if ($num <= 3 && $rule =~ /Lectio1 tempora/i && exists($scriptura{"Lectio$num"})) {
     my %c = (columnsel($lang)) ? %scriptura : %scriptura2;
     $w{"Lectio$num"} = $c{"Lectio$num"};
@@ -731,7 +730,11 @@ sub lectio : ScriptFunc {
     $w = '';
   }    # Q.T. Septembris...
 
-  if ($w && $num % 3 == 1) {
+  if (($num == 4 && $rule =~ /12 lectiones/i) && !exists($w{Lectio1})) {
+    $w = '';
+  }    # accidental Lectio4 from Roman version
+
+  if ($w && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) {
     my @n = split('/', $winner);
     setbuild2("Lectio$num ex $n[0]");
   }

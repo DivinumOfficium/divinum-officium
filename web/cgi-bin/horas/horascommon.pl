@@ -696,7 +696,7 @@ sub concurrence {
   %winner = $sanctoraloffice ? %saint : %tempora;
   my @wrank = $sanctoraloffice ? @srank : @trank;
 
-  if ($winner{Rule} =~ /No secunda Vespera/i && $version !~ /1960|Monastic/i) {
+  if ($winner{Rule} =~ /No secunda Vespera/i && $version !~ /196[03]/i) {
     @wrank = undef;
     %winner = undef;
     $winner = '';
@@ -1681,7 +1681,9 @@ sub setheadline {
         'I. classis',
         'I. classis',
       );
+
       $rankname = ($version !~ /196/) ? $tradtable[$rank] : $newtable[$rank];
+
       if ($version =~ /19(?:55|60)/ && $winner !~ /Pasc5-3/i && $dayname[1] =~ /feria/i) { $rankname = 'Feria'; }
 
       if ($version =~ /1570/i) { $rankname =~ s/ majus//; }    # no Duplex majus yet in 1570

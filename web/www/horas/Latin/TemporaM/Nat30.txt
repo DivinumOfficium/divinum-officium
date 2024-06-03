@@ -1,9 +1,14 @@
-[Rank]
-Die VI infra Octavam Nativitatem Domini;;Duplex II class;;4.9;;ex Sancti/12-25
+@Tempora/Nat30
+
+[Rank] (rubrica 1963)
+Die VI infra Octavam Nativitatis;;Duplex II classis;;5;;ex Sancti/12-25
 
 [Rule]
 Psalmi Dominica
 Antiphonas horas
+
+[Ant Matutinum]
+@TemporaM/Nat1-0tt
 
 [Lectio1]
 @Tempora/Nat30:Lectio7
