@@ -60,7 +60,7 @@ sub horas {
     @script2 = specials(\@script2, $lang2);
   }
 
-  print_content($lang1, \@script1, $lang2, \@script2, $version =~ /Divino/i);
+  print_content($lang1, \@script1, $lang2, \@script2, $version !~ /(1570|1955|196)/);
 }
 
 #*** resolve refs($text_of_block, $lang)
@@ -370,9 +370,11 @@ sub psalm : ScriptFunc {
     $num = $1;
 
     if (
-      ($version =~ /Trident/i && $num =~ /(62|148|149)/)    # Tridentine Laudes: Pss. 62/66 & 148/149/150 under 1 gloria
+      (    $version =~ /Trident/i
+        && $version !~ /Monastic/i
+        && $num =~ /(62|148|149)/)    # Tridentine Romanum Laudes: Pss. 62/66 & 148/149/150 under 1 gloria
       || ($version =~ /Monastic/i && $num =~ /(115|148|149)/)
-      )    # Monastic Vespers: Pss. 115/116 & 148/149/150 under 1 gloria
+      )                               # Monastic Vespers: Pss. 115/116 & 148/149/150 under 1 gloria
     {
       $nogloria = 1;
     }
@@ -1133,6 +1135,8 @@ sub getordinarium {
   if ($command =~ /Prima/i) {
     if ($version =~ /(1955|1960|Newcal)/) {
       $suffix .= "1960";
+    } elsif ($version =~ /1963/) {
+      $suffix .= "M1963";
     } elsif ($version =~ /Monastic/i) {
       $suffix .= "M";
     } elsif ($version =~ /Ordo Praedicatorum/i) {

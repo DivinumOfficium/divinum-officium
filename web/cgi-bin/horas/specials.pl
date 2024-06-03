@@ -945,26 +945,32 @@ sub psalmi_major {
 
   my @antiphones;
 
-  if ( ($hora =~ /Laudes/ || ($hora =~ /Vespera/ && $version =~ /Monastic/))
+  if ( ($hora =~ /Laudes/ || ($hora =~ /Vespera/ && $version =~ /1963/))
     && $month == 12
     && $day > 16
     && $day < 24
     && $dayofweek > 0)
   {
+    # TODO: is this really the case in Monastic 1963 Vespers throughout the week?
     my @p1 = split("\n", $psalmi{"Day$dayofweek Laudes3"});
 
-    if ($dayofweek == 6) {
-      if ($version =~ /trident/i) {    # take ants from feria occuring Dec 21st
-        my $expectetur = $p1[3];       # save Expectetur
+    if ($dayofweek == 6 && $version =~ /trident|monastic/i) {
+      my $expectetur = $p1[3];    # save Expectetur
+
+      if ($version =~ /trident|monastic.*divino/i) {    # take ants from feria occuring Dec 21st
         @p1 = split("\n", $psalmi{"Day" . get_stThomas_feria($year) . " Laudes3"});
 
-        if ($day == 23) {              # use Sundays ants
+        if ($day == 23 && $version !~ /divino/i) {      # use Sundays ants
           my %w = %{setupstring($lang, subdirname('Tempora', $version) . "Adv4-0.txt")};
           @p1 = split("\n", $w{"Ant Laudes"});
         }
+      }
+
+      if ($version =~ /monastic/i) {
+        $p1[2] = $expectetur;
+        $p1[3] = '';
+      } else {
         $p1[3] = $expectetur;
-      } elsif ($version =~ /monastic/i) {
-        ($p1[2], $p1[3]) = ($p1[3], '');    # both Canticle parts under Expectetur
       }
     }
 
@@ -972,7 +978,7 @@ sub psalmi_major {
       my @p2 = split(';;', $psalmi[$i]);
       $antiphones[$i] = "$p1[$i];;$p2[1]";
     }
-    setbuild2("Special laudes antiphonas for week before vigil of Christmas");
+    setbuild2("Special Laudes antiphonas for week before vigil of Christmas");
   }
 
   #look for de tempore or Sancti
@@ -1929,7 +1935,7 @@ sub hymnusmajor {
 sub getanthoras {
   my $lang = shift;
   my $tflag = ($version =~ /Trident|Monastic/i && $winner =~ /Sancti/i) ? 1 : 0;
-  $tflag = 0 if ($winner =~ /SanctiM.01-(?:(?:0[2-5789])|(?:1[012]))/);
+  $tflag = 0 if ($version =~ /1963/ && $winner =~ /SanctiM.01-(?:(?:0[2-5789])|(?:1[012]))/);
 
   my $ant = '';
   if ($rule !~ /Antiphonas horas/i && $communerule !~ /Antiphonas horas/i && !$tflag) { return ''; }
@@ -2129,8 +2135,8 @@ sub doxology {
       && $commemoratio{Rule} =~ /Doxology=([a-z]+)/i)
     {
       $dname = $1;
-    } elsif (($month == 8 && $day > 15 && $day < 23 && $version !~ /Monastic/i)
-      || ($version != /1570/ && $month == 12 && $day > 8 && $day < 16 && $dayofweek > 0))
+    } elsif (($month == 8 && $day > 15 && $day < 23 && $version !~ /1955|1963/i)
+      || ($version !~ /1570|1617/ && $month == 12 && $day > 8 && $day < 16 && $dayofweek > 0))
     {
       $dname = 'Nat';
     } else {

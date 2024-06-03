@@ -1,0 +1,100 @@
+[Rank]
+Dominica Secunda Nativitatis;;Semiduplex;;5;;vide TemporaM/Nat1-0
+
+[Rule]
+12 lectiones
+Psalmi Dominica
+
+[Hymnus Vespera]
+@Sancti/12-25:HymnusM Vespera
+
+[Capitulum Laudes]
+@Tempora/Nat1-0
+
+[Invit]
+@Sancti/12-25
+
+[Hymnus Matutinum]
+@Sancti/12-25:HymnusM Matutinum
+
+[Ant Matutinum 3N]
+Allelúja, * allelúja, allelúja;;263;264;265
+
+[Responsory1]
+@Sancti/01-01
+
+[Responsory2]
+@Sancti/01-01
+
+[Responsory3]
+@Sancti/01-01
+
+[Responsory4]
+@SanctiM/01-01
+
+[Responsory5]
+@Sancti/01-01:Responsory4
+
+[Lectio5]
+@Sancti/01-05:Lectio4:s/Factus .*//s
+
+[Lectio6]
+@Sancti/01-05:Lectio4:s/.* Factus/Factus/s s/$/~/
+@Sancti/01-05:Lectio5:s/Factus .*//s
+
+[Responsory6]
+@Sancti/01-01:Responsory5
+
+[Lectio7]
+@Sancti/01-05:Lectio5:s/.* Factus/Factus/s
+
+[Responsory7]
+@Sancti/01-01:Responsory6
+
+[Lectio8]
+@Sancti/01-05:Lectio6
+
+[Responsory8]
+@SanctiM/01-01:Responsory8
+
+[Lectio9]
+@Sancti/01-05:Lectio7
+
+[Responsory9]
+@Commune/C11:Responsory1
+
+[Lectio10]
+@Sancti/01-05:Lectio8
+
+[Responsory10]
+@Sancti/01-01:Responsory8
+
+[Lectio11]
+@Sancti/01-05:Lectio9:s/Nazarǽus sanctus .*//s
+
+[Responsory11]
+@SanctiM/01-01
+
+[Lectio12]
+@Sancti/01-05:Lectio9:s/.* Nazarǽus sanctus /Nazarǽus sanctus /s s/$/ Póssumus et áliter dícere; quod étiam eísdem verbis, juxta hebráicam veritátem, in Isáia scriptum sit: Exiet virga de radíce Jesse, et Nazarǽus de radíce ejus conscéndet./m
+
+[Responsory12]
+@Tempora/Nat1-0:Responsory8
+
+[LectioE]
+@Sancti/01-05
+
+[Hymnus Laudes]
+@Sancti/12-25:HymnusM Laudes
+
+[Responsory Laudes]
+@Sancti/12-25:Responsory Sexta:s/._.*//s
+
+[Responsory TertiaM]
+@Sancti/12-25:Responsory Nona:s/.*_.//s
+
+[Responsory SextaM]
+@Sancti/12-25:Versum 2
+
+[Responsory NonaM]
+@TemporaM/Nat1-0:Versum 1

@@ -215,6 +215,10 @@ sub setupstring($$%) {
 
   my $basedir = our $datafolder;
   my $fullpath = "$basedir/$lang/$fname";
+
+  if (!-e "$basedir/Latin/$fname" && $fname =~ /(Sancti|Tempora)M(.*)/i && -e "$basedir/Latin/$1$2") {
+    $fullpath = "$basedir/$lang/$1$2";    # Allow for Fallback to Roman folder if fallback is used in Latin
+  }
   our ($lang1, $lang2, $missa);
   my $inclusionregex = qr/^\s*\@
     ([^\n:]+)?                    # Filename (self-reference if omitted).
