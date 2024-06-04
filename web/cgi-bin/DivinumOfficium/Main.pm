@@ -27,7 +27,7 @@ sub liturgical_color {
   return 'blue' if (/(?:Beat|Sanct)(?:ae|æ) Mari/ && !/Vigil/);
   return 'red' if (/(?:Vigilia Pentecostes|Quattuor Temporum Pentecostes|Decollatione|Martyr)/i);
   return 'grey' if (/(?:Defunctorum|Parasceve|Morte)/i);
-  return 'black' if (/^In Vigilia Ascensionis/);
+  return 'black' if (/^In Vigilia Ascensionis|^In Vigilia Epiphaniæ/);
   return 'purple'
     if (
     /(?:Vigilia|Quattuor|Rogatio|Passion|Palmis|gesim|(?:Majoris )?Hebdomadæ(?: Sanctæ)?|Sabbato Sancto|Dolorum|Ciner|Adventus)/i

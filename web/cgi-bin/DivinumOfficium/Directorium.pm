@@ -19,7 +19,7 @@ BEGIN {
 
 ### private vars
 
-my $datafolder = "$Bin/../../www/horas/Latin/Tabulae";
+my $datafolder = "$Bin/../../www/Tabulae";
 my %_data;
 my %_dCACHE;    # cache everything mainly for kalendar.pl
 
