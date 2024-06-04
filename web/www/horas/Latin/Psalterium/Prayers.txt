@@ -273,6 +273,11 @@ r. Ave Maria.
 [Conclmart]
 V. Et álibi aliórum plurimórum sanctórum Mártyrum et Confessórum, atque sanctárum Vírginum.
 $Deo gratias
+_
+V. Pretiósa in conspéctu Dómini.
+R. Mors Sanctórum ejus.
+v. Sancta María et omnes Sancti intercédant pro nobis ad Dóminum, ut nos mereámur ab eo adjuvári et salvári, qui vivit et regnat in sǽcula sæculórum.
+$Amen
 
 [DefunctV]
 &Dominus_vobiscum
@@ -534,16 +539,11 @@ R. Renovábitur ut áquilæ juvéntus tua.
 [Rubrica Regula] (rubrica monastica)
 /:Extra Chorum etiam laudabiliter dicitur lectio ex S. Regulæ; secus dicitur Lectio brevis.:/
 
-[Pretiosa_]
-V. Pretiósa in conspéctu Dómini.
-R. Mors Sanctórum ejus.
-v. Sancta María et omnes Sancti intercédant pro nobis ad Dóminum, ut nos mereámur ab eo adjuvári et salvári, qui vivit et regnat in sǽcula sæculórum.
-
-[Respice_]
+[Respice]
 V. Réspice in servos tuos, Dómine, et in ópera tua, et dírige fílios eórum.
 R. Et sit splendor Dómini Dei nostri super nos, et ópera mánuum nostrárum dírige super nos, et opus mánuum nostrárum dírige.
 
-[Dirigere_]
+[Dirigere]
 v. Dirígere et sanctificáre, régere et gubernáre dignáre, Dómine Deus, Rex cæli et terræ, hódie corda et córpora nostra, sensus, sermónes et actus nostros in lege tua, et in opéribus mandatórum tuórum: ut hic et in ætérnum, te auxiliánte, salvi et líberi esse mereámur, Salvátor mundi: 
 
 [Benedictio Prima]
@@ -584,21 +584,10 @@ $Oremus
 @:Oratio_Domine
 $Per Dominum
 
-[Pretiosa]
-@:Pretiosa_
-$Amen
-_
+[Deus in adjutorium iij]
 @:Deus in adjutorium:1-2 s/\+ //
 @:Deus in adjutorium:1-2 s/\+ //
 @:Deus in adjutorium:1-2 s/\+ //
-&Gloria
-_
-@:MLitany2
-@:Respice_
-&Gloria
-@:Oremus
-@:Dirigere_
-@:Qui vivis
 
 [Defunctorum]
 @:Commemoratio omnium
