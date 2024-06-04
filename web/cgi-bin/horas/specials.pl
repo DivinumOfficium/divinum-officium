@@ -132,15 +132,28 @@ sub specials {
       setbuild1($item, $skipflag ? 'omit' : 'include');
       next if $skipflag;
 
-      if ($hora =~ /Laudes|Tertia|Sexta|Nona|Vespera/) {
-        push(@s, prayer("Preces feriales $hora", $lang));
+      if ($hora =~ /Tertia|Sexta|Nona/) {
+        my %brevis = %{setupstring($lang, 'Psalterium/Minor Special.txt')};
+        my @prec = split("\n", $brevis{"Preces Feriales"});
+        push(@s, @prec);
+      } elsif ($hora =~ /Laudes|Vespera/) {
+        my %brevis = %{setupstring($lang, 'Psalterium/Major Special.txt')};
+        my @prec = split("\n", $brevis{"Preces feriales $hora"});
+        foreach my $line (@prec) { $line =~ s/^\s*$/\_/; }
+        push(@s, @prec);
       } elsif ($hora eq 'Completorium') {
-        push(@s, prayer("Preces Dominicales", $lang));
+        my %brevis = %{setupstring($lang, 'Psalterium/Minor Special.txt')};
+        my @prec = split("\n", $brevis{"Preces Dominicales"});
+        push(@s, @prec);
       } elsif ($item =~ /Dominicales/i) {
-        push(@s, prayer("Preces Dominicales Prima $precdomfer", $lang));
+        my %brevis = %{setupstring($lang, 'Psalterium/Prima Special.txt')};
+        my @prec = split("\n", $brevis{"Preces Dominicales Prima $precdomfer"});
+        push(@s, @prec);
         $precdomfer++;
       } else {
-        push(@s, prayer("Preces feriales Prima", $lang));
+        my %brevis = %{setupstring($lang, 'Psalterium/Prima Special.txt')};
+        my @prec = split("\n", $brevis{"Preces feriales Prima"});
+        push(@s, @prec);
       }
       next;
     }
@@ -488,6 +501,11 @@ sub specials {
       setcomment($label, 'Suffragium', $comment, $lang);
       setbuild1("Suffragium$comment", 'included');
       push(@s, split("\n", $suffr));
+      next;
+    }
+
+    if ($item =~ /Martyrologium/i) {
+      setcomment($label, 'Martyrologium', 0, $lang);
       next;
     }
 

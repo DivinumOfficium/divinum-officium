@@ -58,7 +58,7 @@ Tu autem
 [Benedicamus Domino]
 Benedicámus Dómino
 
-[Benedicamus Domino alleluja]
+[Benedicamus Domino1]
 Benedicámus Dómino, allelúja, allelúja
 
 [Fidelium animae]
@@ -142,14 +142,18 @@ Divínum auxílium
 [Gloria tibi Domine]
 Glória tibi, Dómine.
 
-[#Commemoratio defunctorum]
-#Commemorátio defunctórum
+[Kyrie]
+Kýrie
 
 [MLitany]
-Kýrie … Pater noster
+@:Kyrie
+…
+@:Pater noster
 
 [MLitany2]
-@:MLitany
+@:Kyrie
+…
+@:Pater secreto
 
 [Dominica]
 Dominic[aæ]
@@ -181,5 +185,94 @@ Nocturn
 [Adjutorium nostrum]
 Adjutorium nostrum
 
+[Respice]
+Réspice
+
+[Dirigere]
+Dirígere
+
+[Pater secreto_]
+Et ne nos
+
+[Pater totum secreto_]
+/:totum secreto:/
+
+[Credo secreto_]
+Carnis resurrectiónem
+
+[Pater Ave L_]
+/:rubrica a Laudibus:/
+
+[Deus in adjutorium iij_]
+/:ter:/
+
+[Benedictio Prima]
+Jube, … Dies et actus
+
+[Benedictio Prima2]
+Dóminus nos benedícat
+
+[Benedicite]
+Benedícite
+
+[Defunctorum]
+@:#Commemoratio defunctorum: s/#//
+
+[Pater totum secreto]
+@:Pater noster
+@:Pater totum secreto_
+
+[Pater post]
+@:Pater totum secreto
+
+[Pater post V]
+@:Pater totum secreto
+
 [Pater secreto]
-Pater noster
+@:Pater noster
+…
+@:Pater secreto_
+
+[Credo secreto]
+@:Credo
+…
+@:Credo secreto_
+
+[Pater Ave Credo]
+@:Pater noster
+…
+@:Ave Maria
+…
+@:Credo
+
+[Pater Ave]
+@:Pater noster
+…
+@:Ave Maria
+
+[Pater Ave L]
+@:Pater Ave
+@:Pater Ave L_
+
+[Pater Ave Credo C]
+@:Pater Ave Credo
+
+[Deus in adjutorium iij]
+@:Deus in adjutorium
+@:Deus in adjutorium iij_
+
+[Oratio Domine]
+@:Domine exaudi
+…
+@:Oremus
+…
+Dómine Deus
+
+[Oratio Domine] (rubrica ^Monastic)
+@:MLitany
+…
+@:Domine exaudi
+…
+@:Oremus
+…
+Dómine Deus

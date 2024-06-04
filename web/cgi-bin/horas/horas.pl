@@ -713,7 +713,7 @@ sub setlink {
     $t = '';
   }
 
-  if ($name =~ /(Deus in adjutorium|Indulgentiam|Te decet)/i) {
+  if ($name =~ /(Deus in adjutorium$|Indulgentiam|Te decet|Benedictio Prima2)/i) {
     $suffix = " + $suffix";
   }
 
@@ -905,7 +905,7 @@ sub Domine_labia : ScriptFunc {
 #returns the text of the martyrologium for the day
 sub martyrologium : ScriptFunc {
   my $lang = shift;
-  my $t = setfont($largefont, "Martyrologium ") . setfont($smallblack, "(anticip.)") . "\n";
+  my $t = '';    # Title and Comment is now set in specials.pl for #Martyrolgium
 
   my $a = getweek($day, $month, $year, 1) . "-" . (($dayofweek + 1) % 7);
   my %a = %{setupstring($lang, "Martyrologium/Mobile.txt")};

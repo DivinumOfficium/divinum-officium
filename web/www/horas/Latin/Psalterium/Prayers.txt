@@ -136,6 +136,9 @@ V. Dómine, exáudi oratiónem meam.
 R. Et clamor meus ad te véniat.
 /:secunda 'Domine, exaudi' omittitur:/
 
+[Domine exaudi]
+@:Dominus:3-4
+
 [Confiteor_]
 v. Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Joánni Baptístæ, sanctis Apóstolis Petro et Paulo, et ómnibus Sanctis, quia peccávi nimis, cogitatióne, verbo et ópere: /:percutit sibi pectus:/ mea culpa, mea culpa, mea máxima culpa. Ídeo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Joánnem Baptístam, sanctos Apóstolos Petrum et Paulum, et omnes Sanctos, oráre pro me ad Dóminum Deum nostrum.
 
@@ -166,6 +169,11 @@ V. Deus + in adjutórium meum inténde.
 R. Dómine, ad adjuvándum me festína.
 v. Glória Patri, et Fílio, * et Spirítui Sancto.
 Sicut erat in princípio, et nunc, et semper, * et in sǽcula sæculórum. Amen.
+
+[Deus in adjutorium iij]
+@:Deus in adjutorium:1-2 s/\+ //
+@:Deus in adjutorium:1-2 s/\+ //
+@:Deus in adjutorium:1-2 s/\+ //
 
 [Tu autem_]
 V. Tu autem, Dómine, miserére nobis.
@@ -273,6 +281,11 @@ r. Ave Maria.
 [Conclmart]
 V. Et álibi aliórum plurimórum sanctórum Mártyrum et Confessórum, atque sanctárum Vírginum.
 $Deo gratias
+_
+V. Pretiósa in conspéctu Dómini.
+R. Mors Sanctórum ejus.
+v. Sancta María et omnes Sancti intercédant pro nobis ad Dóminum, ut nos mereámur ab eo adjuvári et salvári, qui vivit et regnat in sǽcula sæculórum.
+$Amen
 
 [DefunctV]
 &Dominus_vobiscum
@@ -313,113 +326,6 @@ Et cum frátribus nostris abséntibus. Amen.
 [Alleluia Duplex]
 Allelúja, allelúja.
 
-[Preces feriales Laudes]
-$Kyrie
-$Pater secreto
-V. Ego dixi: Dómine, miserére mei.
-R. Sana ánimam meam quia peccávi tibi.
-V. Convértere, Dómine, úsquequo? 
-R. Et deprecábilis esto super servos tuos.
-V. Fiat misericórdia tua, Dómine, super nos.
-R. Quemádmodum sperávimus in te.
-V. Sacerdótes tui induántur justítiam.
-R. Et sancti tui exsúltent.
-
-V. Orémus pro beatíssimo Papa nostro~
-r. N.
-R. Dóminus consérvet eum, et vivíficet eum, et beátum fáciat eum in terra, et non tradat eum in ánimam inimicórum ejus.
-V. Orémus et pro Antístite nostro ~
-r. N.
-R. Stet et pascat in fortitúdine tua, Dómine, in sublimitáte nóminis tui.
-/:Romæ præcedens Versus cum suo Responsorio omittitur; alibi vero ad litteram N. ab omnibus nomen diœcesani Episcopi exprimatur, Vacante Apostolica vel Episcopali Sede, alteruter vel uterque respectivus Versus cum suo Responsorio præteritur.:/
-(sed rubrica tridentina omittitur)
-
-V. Dómine, salvum fac regem.
-R. Et exáudi nos in die, qua invocavérimus te.
-V. Salvum fac pópulum tuum, Dómine, et bénedic hereditáti tuæ.
-R. Et rege eos, et extólle illos usque in ætérnum.
-V. Meménto Congregatiónis tuæ.
-R. Quam possedísti ab inítio.
-V. Fiat pax in virtúte tua.
-R. Et abundántia in túrribus tuis.
-
-V. Orémus pro benefactóribus nostris.
-R. Retribúere dignáre, Dómine, ómnibus, nobis bona faciéntibus propter nomen tuum, vitam ætérnam.  Amen.
-(sed rubrica tridentina omittitur)
-
-V. Orémus pro fidélibus defúnctis.
-R. Réquiem ætérnam dona eis, Dómine, et lux perpétua lúceat eis.
-V. Requiéscant in pace.
-R. Amen.
-V. Pro frátribus nostris abséntibus.
-R. Salvos fac servos tuos, Deus meus, sperántes in te.
-V. Pro afflíctis et captívis.
-R. Líbera eos, Deus Israël, ex ómnibus tribulatiónibus suis.
-V. Mitte eis, Dómine, auxílium de sancto.
-R. Et de Sion tuére eos.
-
-(sed rubrica tridentina dicuntur)
-@:Dominus:3-4
-&psalm(129) 
-
-(deinde dicuntur)
-V. Dómine, Deus virtútum, convérte nos.
-R. Et osténde fáciem tuam, et salvi érimus.
-V. Exsúrge, Christe, ádjuva nos.
-R. Et líbera nos propter nomen tuum.
-V. Dómine, exáudi oratiónem meam.
-R. Et clamor meus ad te véniat.
-
-[Preces feriales Vespera]
-@:Preces feriales Laudes:s/129/50/
-
-[Preces feriales Tertia]
-$Kyrie
-$Pater secreto
-V. Dómine, Deus virtútum, convérte nos.
-R. Et osténde fáciem tuam, et salvi érimus.
-V. Exsúrge, Christe, ádjuva nos.
-R. Et líbera nos propter nomen tuum.
-V. Dómine, exáudi oratiónem meam.
-R. Et clamor meus ad te véniat.
-
-[Preces feriales Sexta]
-@:Preces feriales Tertia
-
-[Preces feriales Nona]
-@:Preces feriales Tertia
-
-
-[Preces Dominicales_]
-V. Benedíctus es, Dómine, Deus patrum nostrórum.
-R. Et laudábilis et gloriósus in sǽcula.
-V. Benedicámus Patrem et Fílium cum Sancto Spíritu. 
-R. Laudémus, et superexaltémus eum in sǽcula.
-V. Benedíctus es, Dómine, in firmaménto cæli. 
-R. Et laudábilis, et gloriósus, et superexaltátus in sǽcula.
-V. Benedícat et custódiat nos omnípotens et miséricors Dóminus. 
-R. Amen.
-V. Dignáre, Dómine, nocte ista. 
-R. Sine peccáto nos custodíre.
-V. Miserére nostri, Dómine. 
-R. Miserére nostri.
-V. Fiat misericórdia tua, Dómine, super nos. 
-R. Quemádmodum sperávimus in te.
-V. Dómine, exáudi oratiónem meam.
-R. Et clamor meus ad te véniat.
-
-[Preces Dominicales]
-@:Kyrie
-@:Pater secreto
-@:Credo secreto
-@:Preces Dominicales_
-
-[Preces Dominicales] (rubrica ^Monastic)
-@:MLitany2
-@:Credo secreto
-@:Preces Dominicales_:9-10
-@:Preces Dominicales_:15-16
-
 [A_porta_inferi]
 V. A porta ínferi.
 R. Erue, Dómine, ánimas eórum.
@@ -455,95 +361,17 @@ $Oremus
 @:Oratio_Visita
 $Per Dominum
 
-[Preces Dominicales Prima_1]
-V. Et ego ad te, Dómine, clamávi.
-R. Et mane orátio mea prævéniet te.
-V. Repleátur os meum laude.
-R. Ut cantem glóriam tuam, tota die magnitúdinem tuam.
-V. Dómine, avérte fáciem tuam a peccátis meis.
-R. Et omnes iniquitátes meas dele.
-V. Cor mundum crea in me, Deus.
-R. Et spíritum rectum ínnova in viscéribus meis.
-V. Ne projícias me a fácie tua.
-R. Et spíritum sanctum tuum ne áuferas a me.
-V. Redde mihi lætítiam salutáris tui.
-R. Et spíritu principáli confírma me.
-
-[Preces Dominicales Prima_2]
-V. Dignáre, Dómine, die isto.
-R. Sine peccáto nos custodíre.
-V. Miserére nostri, Dómine.
-R. Miserére nostri.
-V. Fiat misericórdia tua, Dómine, super nos.
-R. Quemádmodum sperávimus in te.
-V. Dómine, exáudi oratiónem meam.
-R. Et clamor meus ad te véniat.
-
-[Preces Dominicales Prima 1]
-@:Kyrie
-@:Pater secreto
-@:Credo secreto
-@:Preces Dominicales Prima_1
-
-[Preces Dominicales Prima 1] (rubrica ^Monastic)
-@:MLitany2
-@:Credo secreto
-@:Adjutorium nostrum
-$Confiteor
-@:Misereatur
-@:Indulgentiam
-@:Preces Dominicales Prima_2:1-2
-@:Preces Dominicales Prima_2:11-12
-
-[Preces Dominicales Prima 2]
-@:Adjutorium nostrum
-$Confiteor
-@:Misereatur
-@:Indulgentiam
-@:Preces Dominicales Prima_2
-
-[Preces feriales Prima]
-V. Éripe me, Dómine, ab hómine malo.
-R. A viro iníquo éripe me.
-V. Éripe me de inimícis meis, Deus meus.
-R. Et ab insurgéntibus in me líbera me.
-V. Éripe me de operántibus iniquitátem.
-R. Et de viris sánguinum salva me.
-V. Sic psalmum dicam nómini tuo in sǽculum sǽculi.
-R. Ut reddam vota mea de die in diem.
-V. Exáudi nos, Deus, salutáris noster.
-R. Spes ómnium fínium terræ, et in mari longe.
-V. Deus in adjutórium meum inténde.
-R. Dómine, ad adjuvándum me festína.
-V. Sanctus Deus, Sanctus fortis, Sanctus immortális.
-R. Miserére nobis.
-V. Bénedic, ánima mea, Dómino.
-R. Et ómnia, quæ intra me sunt, nómini sancto ejus.
-V. Bénedic, ánima mea, Dómino.
-R. Et noli oblivísci omnes retributiónes ejus.
-V. Qui propitiátur ómnibus iniquitátibus tuis.
-R. Qui sanat omnes infirmitátes tuas.
-V. Qui rédimit de intéritu vitam tuam.
-R. Qui corónat te in misericórdia et miseratiónibus.
-V. Qui replet in bonis desidérium tuum.
-R. Renovábitur ut áquilæ juvéntus tua.
-
 [Rubrica Martyrologium] (rubrica monastica)
 /:Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum.:/
 
 [Rubrica Regula] (rubrica monastica)
 /:Extra Chorum etiam laudabiliter dicitur lectio ex S. Regulæ; secus dicitur Lectio brevis.:/
 
-[Pretiosa_]
-V. Pretiósa in conspéctu Dómini.
-R. Mors Sanctórum ejus.
-v. Sancta María et omnes Sancti intercédant pro nobis ad Dóminum, ut nos mereámur ab eo adjuvári et salvári, qui vivit et regnat in sǽcula sæculórum.
-
-[Respice_]
+[Respice]
 V. Réspice in servos tuos, Dómine, et in ópera tua, et dírige fílios eórum.
 R. Et sit splendor Dómini Dei nostri super nos, et ópera mánuum nostrárum dírige super nos, et opus mánuum nostrárum dírige.
 
-[Dirigere_]
+[Dirigere]
 v. Dirígere et sanctificáre, régere et gubernáre dignáre, Dómine Deus, Rex cæli et terræ, hódie corda et córpora nostra, sensus, sermónes et actus nostros in lege tua, et in opéribus mandatórum tuórum: ut hic et in ætérnum, te auxiliánte, salvi et líberi esse mereámur, Salvátor mundi: 
 
 [Benedictio Prima]
@@ -583,22 +411,6 @@ $MLitany2
 $Oremus
 @:Oratio_Domine
 $Per Dominum
-
-[Pretiosa]
-@:Pretiosa_
-$Amen
-_
-#De Officio Capituli
-@:Deus in adjutorium:1-2 s/\+ //
-@:Deus in adjutorium:1-2 s/\+ //
-@:Deus in adjutorium:1-2 s/\+ //
-&Gloria
-@:MLitany2
-@:Respice_
-&Gloria
-@:Oremus
-@:Dirigere_
-@:Qui vivis
 
 [Defunctorum]
 @:Commemoratio omnium
