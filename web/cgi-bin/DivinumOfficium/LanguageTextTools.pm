@@ -101,10 +101,10 @@ sub translate {
   my $name = shift;
   my $lang = shift;
 
-  return $_translate{Latin}{$name} =~ s/\s*$//r || $name if $lang =~ /Latin/;
-
   my $prefix = '';
   if ($name =~ s/^([\$&])//) { $prefix = $1; }
+
+  return $prefix . ($_translate{Latin}{$name} =~ s/\s*$//r || $name) if $lang =~ /Latin/;
 
   my $output =
     $prefix . ($_translate{$lang}{$name} || $_translate{English}{$name} || $_translate{Latin}{$name} || $name);

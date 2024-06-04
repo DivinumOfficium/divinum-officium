@@ -564,3 +564,46 @@ R. In manus tuas, Dómine, * Comméndo spíritum meum.
 [Versum 4]
 V. Custódi nos, Dómine, ut pupíllam óculi.
 R. Sub umbra alárum tuárum prótege nos.
+
+[Preces feriales_]
+V. Dómine, Deus virtútum, convérte nos.
+R. Et osténde fáciem tuam, et salvi érimus.
+V. Exsúrge, Christe, ádjuva nos.
+R. Et líbera nos propter nomen tuum.
+V. Dómine, exáudi oratiónem meam.
+R. Et clamor meus ad te véniat.
+
+[Preces Dominicales_]
+V. Benedíctus es, Dómine, Deus patrum nostrórum.
+R. Et laudábilis et gloriósus in sǽcula.
+V. Benedicámus Patrem et Fílium cum Sancto Spíritu. 
+R. Laudémus, et superexaltémus eum in sǽcula.
+V. Benedíctus es, Dómine, in firmaménto cæli. 
+R. Et laudábilis, et gloriósus, et superexaltátus in sǽcula.
+V. Benedícat et custódiat nos omnípotens et miséricors Dóminus. 
+R. Amen.
+V. Dignáre, Dómine, nocte ista. 
+R. Sine peccáto nos custodíre.
+V. Miserére nostri, Dómine. 
+R. Miserére nostri.
+V. Fiat misericórdia tua, Dómine, super nos. 
+R. Quemádmodum sperávimus in te.
+V. Dómine, exáudi oratiónem meam.
+R. Et clamor meus ad te véniat.
+
+[Preces Feriales]
+$Kyrie
+$Pater secreto
+@:Preces feriales_
+
+[Preces Dominicales]
+$Kyrie
+$Pater secreto
+$Credo secreto
+@:Preces Dominicales_
+
+[Preces Dominicales] (rubrica ^Monastic)
+$MLitany2
+$Credo secreto
+@:Preces Dominicales_:9-10
+@:Preces Dominicales_:15-16

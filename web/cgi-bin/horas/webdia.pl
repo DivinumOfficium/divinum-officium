@@ -765,11 +765,11 @@ sub print_content {
   ante_post('Ante') if $antepost;
 
   while ($ind1 < @$script1 || $ind2 < @$script2) {
-    $expandind++;
-
     $column = 1;
     $version = $version1 if $Ck;
     ($text, $ind1) = getunit($script1, $ind1);
+
+    $expandind++ if ($text =~ /^\#/);
     setcell($text, $lang1);
 
     if (!$only) {
@@ -787,7 +787,7 @@ sub print_content {
 
 #*** getunits(\@s, $ind)
 # break the array into units separated by double newlines
-# from $ind  to the returned new $ind
+# from $ind to the returned new $ind
 sub getunit {
   my $s = shift;
   my @s = @$s;
