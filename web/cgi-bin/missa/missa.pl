@@ -35,17 +35,6 @@ our $missa = 1;
 our $NewMass = 0;
 our $officium = 'missa.pl';
 
-@versions = (
-  'Tridentine 1570',
-  'Tridentine 1910',
-  'Divino Afflatu',
-  'Reduced 1955',
-  'Rubrics 1960',
-  '1965-1967',
-  '1960 Newcalendar',
-  'Dominican',
-);
-
 #***common variables arrays and hashes
 #filled  getweek()
 our @dayname;    #0=Advn|Natn|Epin|Quadpn|Quadn|Pascn|Pentn 1=winner title|2=other title
@@ -191,7 +180,6 @@ if ($pmode =~ /(main|missa)/i) {
   $crubrics = ($rubrics) ? 'CHECKED' : '';
   $csolemn = ($solemn) ? 'CHECKED' : '';
   @chv = splice(@chv, @chv);
-  for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'SELECTED' : ''; }
   $ctext = ($pmode =~ /(main)/i) ? 'Sancta Missa' : 'Sancta Missa Persoluta';
   print << "PrintTag";
 <P ALIGN=CENTER><FONT SIZE=+1><I>
@@ -204,26 +192,15 @@ if ($pmode =~ /(main|missa)/i) {
 <P ALIGN=CENTER>
 PrintTag
 
-  print option_selector("Version", "parchange();", $version, @versions);
-
   #$testmode = 'Regular' unless $testmode;
   #if ($savesetup > 1) {
   #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal Season Saint Common));
   #} else {
   #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
   #}
-  my $propname = ($Propers) ? 'Full' : 'Propers';
-  print "&nbsp;&nbsp;&nbsp;";
-  print htmlInput('lang2', $lang2, 'options', 'languages', "parchange()");
-  @votive = ('Hodie;');
-
-  if (opendir(DIR, "$datafolder/Latin/Votive")) {
-    @a = sort readdir(DIR);
-    closedir DIR;
-    foreach (@a) { push(@votive, $_) if (s/\.txt//i); }
-  }
-  print option_selector("Votive", "parchange();", $votive, @votive);
+  print(selectables('general' . ($Ck ? 'c' : '')));
   print "</P>\n";
+  my $propname = ($Propers) ? 'Full' : 'Propers';
   print qq(<P ALIGN=CENTER><FONT SIZE=+1>\n<A HREF=# onclick="hset('Propers')">$propname</A>\n</FONT></P>\n);
   print "<P ALIGN=CENTER><FONT SIZE=+1>\n" . bottom_links_menu() . "</FONT>\n</P>\n";
 }
@@ -255,7 +232,7 @@ sub headline {
   my $headline = html_dayhead(setheadline(), $dayname[2]);
   print << "PrintTag";
 <P ALIGN=CENTER>$headline</P>
-<P ALIGN=CENTER><FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT></P>
+<P ALIGN=CENTER><FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B>&nbsp;<FONT COLOR=RED SIZE=+1>$version</FONT></FONT></P>
 <P ALIGN=CENTER><A HREF=# onclick="callcompare()">Compare</A>
 &nbsp;&nbsp;&nbsp;<A HREF=# onclick="callofficium();">Divinum Officium</A>
 &nbsp;&nbsp;&nbsp;

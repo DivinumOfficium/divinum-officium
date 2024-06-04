@@ -1476,9 +1476,7 @@ sub precedence {
     }
   }
 
-  my $vtv = $votive =~ /^C1?\da?/ ? $votive : '';
-
-  if ($vtv && !$missa) {
+  if (my $vtv = $votive ne 'Hodie' ? $votive : '') {
     if ($vtv =~ /C12/i) {
       if ( ($month == 12 && ($day == 24 && $hora =~ /Vespera|Completorium/ || ($day > 24)))
         || $month == 1
@@ -1509,24 +1507,6 @@ sub precedence {
       $commune = subdirname('Commune', $version) . "C11.txt";
       $communetype = 'ex';
       %commune = %{setupstring($lang1, $commune)};
-    }
-    $dayname[1] = $winner{Name};
-    $dayname[2] = '';
-  }
-
-  if ($vtv && $missa) {
-    $winner = "Votive/$vtv.txt";
-    $commemoratio = $commemoratio1 = $scriptura = $commune = '';
-    %winner = %{setupstring($lang1, $winner)};
-    %commemoratio = %scriptura = %commune = {};
-    $rule = $winner{Rule};
-
-    if ($vtv =~ /Maria/i) {
-      $commune = "Commune/C11.txt";
-      $communetype = 'ex';
-      %commune = %{setupstring($lang1, $commune)};
-
-      # %commune2 = updaterank(setupstring($lang2, $commune));
     }
     $dayname[1] = $winner{Name};
     $dayname[2] = '';
