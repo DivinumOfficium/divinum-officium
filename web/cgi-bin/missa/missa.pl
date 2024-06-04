@@ -198,7 +198,7 @@ PrintTag
   #} else {
   #  print option_selector("testmode", "parchange();", $testmode, qw(Regular Seasonal));
   #}
-  print (selectables('general' . ($Ck ? 'c' : '')));
+  print(selectables('general' . ($Ck ? 'c' : '')));
   print "</P>\n";
   my $propname = ($Propers) ? 'Full' : 'Propers';
   print qq(<P ALIGN=CENTER><FONT SIZE=+1>\n<A HREF=# onclick="hset('Propers')">$propname</A>\n</FONT></P>\n);
