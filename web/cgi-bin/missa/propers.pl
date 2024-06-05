@@ -918,7 +918,7 @@ sub Credo {
   } elsif ($rule =~ /Credo/i || $communerule =~ /Credo/i) {
     $flag = 0;
   }
-  if ($version =~ /(1955|196)/ && $rule =~ /CredoDA/i) { $flag = 1; }
+  if ($version =~ /(196)/ && $rule =~ /CredoDA/i) { $flag = 1; }
   if ($flag) { push(@s, "!omit."); }
   return $flag;
 }
