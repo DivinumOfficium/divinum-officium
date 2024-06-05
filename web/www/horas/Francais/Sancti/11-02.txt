@@ -145,14 +145,15 @@ $Credo
 
 &special('Oratio mortuorum2', 'English')
 
+#Martyrologium
 &martyrologium
-
+_
 V. En souvenir éternel seront les justes.
 R. L ’annonce du malheur, ils ne la craindront pas.
 _
 $Oremus 
 v. O Dieu, qui donnez le pardon et aimez le salut de l’homme, nous demandons à votre clémence d’accorder, par l’intercession de la bienheureuse Marie toujours Vierge et de tous vos Saints, aux âmes de tous les fidèles qui sont sortis de ce monde, la grâce de parvenir au partage de l’éternelle béatitude. Par le Christ Notre- Seigneur.
-R. Amen.
+$Amen
 
 &special('Conclusio', 'English')
 
