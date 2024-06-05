@@ -99,11 +99,11 @@ sub specials {
       setcomment($label, 'Preces', $comment, $lang) if ($rule !~ /Omit.*? $ite[0] mute/i);
 
       if ($item =~ /incipit/i && $version !~ /1955|196/) {
-				if ($hora =~ /Laudes/i) {
-					push(@s, setfont($smallfont, 'Si Laudes extra Chorum separentur a Matutino, ante eas dicitur secreto'));
-				} else {
-					push(@s, setfont($smallfont, 'secreto'));
-				}
+        if ($hora =~ /Laudes/i) {
+          push(@s, setfont($smallfont, 'Si Laudes extra Chorum separentur a Matutino, ante eas dicitur secreto'));
+        } else {
+          push(@s, setfont($smallfont, 'secreto'));
+        }
         push(@s, '$Pater noster', '$Ave Maria');
         if ($hora =~ /(matutinum|prima)/i) { push(@s, '$Credo'); }
       }
