@@ -157,14 +157,15 @@ $Credo
 
 &special('Oratio mortuorum2', 'Espanol')
 
+#Martyrologium
 &martyrologium
-
+_
 V. Los justos dejan una memoria eterna.
 R. No temerán el anuncio funesto. 
 _
 $Oremus
 v. ¡Oh Dios, dispuesto al perdón, salvador de los hombres!; concédenos en tu bondad, por intercesión de Santa María, La Virgen, y de todos los santos, que tus siervos y siervas, desaparecidos ya de este mundo, alcancen tu eterna bienaventuranza. 
-R. Amén.
+$Amen
 
 &special('Conclusio', 'Espanol')
 

@@ -223,14 +223,15 @@ $Credo
 
 &special('Oratio mortuorum2', 'Italiano')
 
+#Martyrologium
 &martyrologium
-
+_
 V. I giusti saranno ricordati eternamente.
 R. Non temeranno di udire sinistre parole.
 _
 $Oremus
 O Dio, largitore di perdono e amatore della salvezza degli uomini: preghiamo la tua clemenza, di concedere che le anime di tutti i fedeli, che sono uscite di questo mondo, per intercessione della beata sempre Vergine Maria e di tutti i tuoi Santi, giungano al possesso della beatitudine eterna. Per Cristo Signor nostro.
-R. Amen
+$Amen
 
 &special('Conclusio', 'Italiano')
 

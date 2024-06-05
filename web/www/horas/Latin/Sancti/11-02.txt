@@ -141,14 +141,15 @@ $Credo
 
 &special('Oratio mortuorum2', 'Latin')
 
+#Martyrologium
 &martyrologium
-
+_
 V. In memória ætérna erunt justi.
 R. Ab auditióne mala non timébunt.
 _
 $Oremus
 v. Deus, véniæ largítor et humánæ salútis amátor: quǽsumus cleméntiam tuam; ut ánimas ómnium fidélium qui ex hoc sǽculo transiérunt, beáta María semper Vírgine intercedénte cum ómnibus Sanctis tuis, ad perpétuæ beatitúdinis consórtium perveníre concédas. Per Christum Dóminum nostrum.
-R. Amen.
+$Amen
 
 &special('Conclusio', 'Latin')
 
