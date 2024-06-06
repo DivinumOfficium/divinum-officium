@@ -304,7 +304,7 @@ sub getcookies {
 
   foreach (keys %cookies) {
     my $c = $cookies{$_};
-    if ($c->name =~ /$cname/) { $sti = $c->value; }
+    if ($c->name eq $cname) { $sti = $c->value; }
   }
 
   if ($sti) {

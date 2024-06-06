@@ -144,6 +144,9 @@ function callbrevi(date) {
 //calls missa
 function callmissa() {
   document.forms[0].action = "../missa/missa.pl";
+  if (document.forms[0].command.value != "") {
+    document.forms[0].command.value = "praySanctaMissa"
+  }
   document.forms[0].target = "_self"
   document.forms[0].submit();
 }

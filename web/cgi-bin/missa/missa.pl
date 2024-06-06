@@ -87,7 +87,6 @@ our $command = strictparam('command');
 our $browsertime = strictparam('browsertime');
 our $searchvalue = strictparam('searchvalue');
 if (!$searchvalue) { $searchvalue = '0'; }
-if (!$command) { $command = 'praySanctaMissa'; }
 our $missanumber = strictparam('missanumber');
 if (!$missanumber) { $missanumber = 1; }
 our $caller = strictparam('caller');
