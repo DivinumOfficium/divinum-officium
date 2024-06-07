@@ -27,6 +27,9 @@ $debug = '';
 $q = new CGI;
 our $missa = 1;
 
+use lib "$Bin/..";
+use DivinumOfficium::LanguageTextTools qw(prayer translate load_languages_data);
+
 #*** collect standard items
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/../horas/dialogcommon.pl";
