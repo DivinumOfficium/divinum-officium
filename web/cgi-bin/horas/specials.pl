@@ -86,6 +86,7 @@ sub specials {
         && $rule =~ /Capitulum Versum 2( etiam ad Vesperas)?/i
         && (($1 && $hora =~ /Vespera/i) || $hora =~ /Laudes/i)
       )
+      && ($rule !~ /Omit ad Matutinum/ || $hora eq 'Matutinum')
     ) {
       $skipflag = 1;
 
