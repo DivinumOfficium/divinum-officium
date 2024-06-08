@@ -1,1 +1,100 @@
-@Tempora/Pasc2-3Feria
+@Tempora/Pasc2-3
+
+[Rule]
+12 lectiones
+Psalmi Dominica
+
+[Rank]
+In Solemnitate S. Joseph Sponsi B.M.V., Confessoris et Ecclesie Universalis Patroni;;Duplex I classis;;6;;
+
+[Versum 1]
+@Tempora/Pasc2-3:Responsory Tertia:s/.*_.//s
+
+[Ant Matutinum]
+@Tempora/Pasc2-3::1-2
+;;4
+;;5
+;;8
+;;10
+@Tempora/Pasc2-3::4-5
+@Tempora/Pasc2-3::6 s/;;4/;;14/
+;;20
+;;23
+;;95
+;;96
+;;97
+@Tempora/Pasc2-3::9-10
+@Tempora/Pasc2-3::11 s/;;14/;;256;257;258/
+@Tempora/Pasc2-3::14-15
+
+[Lectio3]
+@Tempora/Pasc2-3::s/-49/-45/ s/ Egr.*//s
+
+[Responsory3]
+@Sancti/03-19:Responsory1
+
+[Lectio4]
+@Tempora/Pasc2-3:Lectio3:s/44-/45-/ s/.* Egr/45 Egr/s
+
+[Responsory4]
+@Tempora/Pasc2-3:Responsory3
+
+[Lectio5]
+@Tempora/Pasc2-3:Lectio4
+
+[Responsory5]
+@Tempora/Pasc2-3:Responsory4
+
+[Lectio6]
+@Tempora/Pasc2-3:Lectio5
+
+[Responsory6]
+@Tempora/Pasc2-3:Responsory5
+
+[Lectio7]
+@Tempora/Pasc2-3:Lectio6:s/Mem.*//s
+
+[Responsory7]
+@SanctiM/05-01
+
+[Lectio8]
+@Tempora/Pasc2-3:Lectio6:s/.* Mem/Mem/s
+
+[Responsory8]
+@Tempora/Pasc2-3:Responsory6
+
+[Lectio9]
+@Tempora/Pasc2-3:Lectio7
+
+[Responsory9]
+@Tempora/Pasc2-3:Responsory7
+
+[Lectio10]
+@Tempora/Pasc2-3:Lectio8
+
+[Responsory10]
+@Sancti/03-19:Responsory4
+
+[Lectio11]
+@Tempora/Pasc2-3:Lectio9:s/Neque.*//s
+
+[Responsory11]
+@Tempora/Pasc2-3:Responsory8
+
+[Lectio12]
+@Tempora/Pasc2-3:Lectio9:s/.*Neque/Neque/s
+
+[Responsory12]
+@SanctiM/03-19
+
+[LectioE]
+@Tempora/Pasc2-3
+
+[Responsory TertiaM]
+@Tempora/Pasc2-3:Responsory Tertia:s/.*_.//s
+
+[Responsory SextaM]
+@Tempora/Pasc2-3:Responsory Sexta:s/.*_.//s
+
+[Responsory NonaM]
+@Tempora/Pasc2-3:Responsory Nona:s/.*_.//s
