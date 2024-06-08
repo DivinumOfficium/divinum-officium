@@ -1,9 +1,12 @@
 @Sancti/12-13
 
-[Rank]
-S. Luciæ Virginis et Martyris;;Duplex;;3;;ex C6
+[Rank] (rubrica divino)
+S. Luciæ Virginis et Martyris;;Duplex majus;;5;;ex C6b
 
-[Rule]
+[Rule] (rubrica divino)
+ex C6b;
+12 lectiones;
+Lectio1 tempora
 
 [Responsory1]
 @:Responsory4
@@ -14,5 +17,54 @@ S. Luciæ Virginis et Martyris;;Duplex;;3;;ex C6
 [Responsory3]
 @:Responsory6
 
-[MM Capitulum]
-@CommuneM/C6b
+[Lectio4]
+
+[Responsory4]
+
+[Lectio5]
+@Sancti/12-13:Lectio4
+
+[Responsory5]
+@Sancti/12-13:Responsory4
+
+[Lectio6]
+@Sancti/12-13:Lectio5
+
+[Responsory6]
+@Sancti/12-13:Responsory5
+
+[Lectio7]
+@Sancti/12-13:Lectio6:s/ Quam ob.*//
+
+[Responsory7]
+@Sancti/12-13:Responsory6
+
+[Lectio8]
+@Sancti/12-13:Lectio6:s/.*Quam ob/Quam ob/
+
+[Responsory8]
+@Commune/C6:Responsory7
+
+[Lectio9]
+@CommuneM/C6:Lectio9 in 2 loco
+
+[Responsory9]
+@Sancti/12-13:Responsory7
+
+[Lectio10]
+@CommuneM/C6:Lectio10 in 2 loco
+
+[Responsory10]
+@Sancti/12-13:Responsory8
+
+[Lectio11]
+@CommuneM/C6:Lectio11 in 2 loco
+
+[Responsory11]
+@CommuneM/C6:Responsory7
+
+[Lectio12]
+@CommuneM/C6:Lectio12 in 2 loco
+
+[Responsory12]
+@Commune/C6:Responsory6
