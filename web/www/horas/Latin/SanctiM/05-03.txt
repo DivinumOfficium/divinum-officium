@@ -1,4 +1,93 @@
-@Sancti/05-03r
+@Sancti/05-03
 
-[Rank]
-Ss. Alexándri, Evéntii et Theodúli Martyrum;;Simplex;;1.1;;vide C3
+[Rule]
+12 lectiones
+Psalmi Dominica
+
+[Ant Matutinum]
+@Sancti/05-03::1
+;;2
+;;4
+;;5
+;;8
+;;14
+@Sancti/05-03::4-6 s/4/22/
+;;26
+;;75
+;;95
+;;96
+;;97
+@Sancti/05-03::9-11 s/95/246;247;248/
+@Sancti/05-03::14-15
+
+[Lectio3]
+@Sancti/05-03::1-6 s/-15/-12/
+
+[Lectio4]
+@Sancti/05-03:Lectio3:s/.*!/!/s s/9-/13-/ s/9.*13/13/s
+
+[Responsory4]
+@SanctiM/09-14
+
+[Lectio5]
+@Sancti/05-03:Lectio4
+
+[Responsory5]
+@Sancti/05-03:Responsory4
+
+[Lectio6]
+@Sancti/05-03:Lectio5
+
+[Responsory6]
+@Sancti/05-03:Responsory5
+
+[Lectio7]
+@Sancti/05-03:Lectio6:s/Clavos.*//s
+
+[Responsory7]
+@Sancti/05-03:Responsory6
+
+[Lectio8]
+@Sancti/05-03:Lectio6:s/.*(Clavos)/$1/s
+
+[Responsory8]
+@SanctiM/09-14
+
+[Lectio9]
+@Sancti/05-03:Lectio7:s/Et de.*//s
+
+[Responsory9]
+@Sancti/05-03:Responsory7
+
+[Lectio10]
+@Sancti/05-03:Lectio7:s/.* (Et de)/$1/s
+
+[Responsory10]
+@Sancti/05-03:Responsory8
+
+[Lectio11]
+@Sancti/05-03:Lectio8:s/Int.ndat.*//s
+
+[Responsory11]
+@SanctiM/09-14
+
+[Lectio12]
+@Sancti/05-03:Lectio8:s/.*(Int.ndat)/$1/s
+
+[Responsory12]
+@SanctiM/09-14
+
+[LectioE]
+@Sancti/05-03
+
+[Versum 3]
+@Sancti/05-03:Responsory Nona:8-9
+
+[Responsory TertiaM]
+@Sancti/05-03:Responsory Nona:8-9
+
+[Responsory SextaM]
+@Sancti/05-03:Responsory Tertia:8-9
+
+[Responsory NonaM]
+@Sancti/05-03:Responsory Sexta:8-9
