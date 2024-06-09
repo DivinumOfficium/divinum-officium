@@ -806,9 +806,9 @@ sub psalmi_minor {
     if ($month == 12 && $day > 16 && $day < 24 && $dayofweek > 0) {
       my $i = $dayofweek + 1;
 
-      if ($dayofweek == 6 && $version =~ /trident/i) {    # take ants from feria occuring Dec 21st
+      if ($dayofweek == 6 && $version =~ /trident|monastic.*divino/i) {    # take ants from feria occuring Dec 21st
         $i = get_stThomas_feria($year) + 1;
-        if ($day == 23) { $i = ""; }                      # use Sundays ant
+        if ($day == 23) { $i = ""; }                                       # use Sundays ant
       }
       $name = "Adv4$i";
     }
@@ -942,7 +942,8 @@ sub psalmi_major {
     @psalmi = split("\n", $psalmi{"$head $hora"});
 
     if ($hora =~ /Laudes/i && $head =~ /Daym[1-6]/) {
-      unless ((($dayname[0] =~ /Adv|Quadp/) && ($duplex < 3) && ($commune !~ /C10/))
+      unless ($version =~ /trident/i
+        || (($dayname[0] =~ /Adv|Quadp/) && ($duplex < 3) && ($commune !~ /C10/))
         || (($dayname[0] =~ /Quad\d/) && ($dayname[1] =~ /Feria/))
         || ($dayname[1] =~ /Quattuor Temporum Septembris/)
         || (($dayname[0] =~ /Pent/) && ($dayname[1] =~ /Vigil/)))
@@ -1691,7 +1692,7 @@ sub getcommemoratio {
   if ($rank[3] =~ /(ex|vide)\s+(.*)\s*$/i) {
     my $file = $2;
     if ($w{Rule} =~ /Comex=(.*?);/i && $rank < 5) { $file = $1; }
-    if ($file =~ /^C[0-9]+$/ && $dayname[0] =~ /Pasc/i) { $file .= 'p'; }
+    if ($file =~ /^C[0-7]+$/ && $dayname[0] =~ /Pasc/i) { $file .= 'p'; }
     $file = "$file.txt";
     if ($file =~ /^C/) { $file = "Commune/$file"; }
     %c = %{setupstring($lang, $file)};

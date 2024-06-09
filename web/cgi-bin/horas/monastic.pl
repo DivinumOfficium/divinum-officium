@@ -35,7 +35,7 @@ sub psalmi_matutinum_monastic {
   #** reads the set of antiphons-psalms from the psalterium
   my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
   my $dw = $dayofweek;
-  if ($winner{Rank} =~ /Dominica/i) { $dw = 0; }
+
   my @psalmi = split("\n", $psalmi{"Daym$dw"});
   setbuild("Psalterium/Psalmi matutinum monastic", "dayM$dw", 'Psalmi ord');
   $comment = 1;
@@ -130,10 +130,20 @@ sub psalmi_matutinum_monastic {
     for ($i = 0; $i < 3; $i++) { $psalmi[$i + 16] = $c[$i]; }
   }
 
-  if (($rank > 4.9 || $votive =~ /C8/) && !(($dayname[0] =~ /Pasc0/) && ($dayofweek > 2))) {
-
+  if (
+    (
+      (
+           ($rank > 4.9 || $votive =~ /C8/)
+        || (($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
+      )
+      && $dayname[1] !~ /feria|sabbato|Die.*infra octavam/i
+    )
+    && !($dayname[0] =~ /Pasc0/ && $dayofweek > 2)
+    && $winner !~ /Pasc6-6/i
+    && !($dayname[1] =~ /infra.*Nativitatis/i && $dayofweek && $version !~ /196/)
+  ) {
     #** get proper Ant Matutinum for II. and I. class feasts unless it's Wednesday thru Saturday of the Easter Octave
-    my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
+    my ($w, $c) = getproprium('Ant Matutinum', $lang, $version !~ /196/, 1); # for Trid. und Divino also look in Commune
 
     if ($w) {
       @psalmi = split("\n", $w);
@@ -150,11 +160,36 @@ sub psalmi_matutinum_monastic {
         $psalmi[$ind - 1] =~ s/^.*?;;/$wa;;/;
       }
     }
+    setbuild2("Antiphonas Psalmi Proprium aut Communem");
+  } elsif ($dayname[1] =~ /(?:Die|Feria|Sabbato).*infra octavam|post Octavam Asc|in Vigilia Pent/i
+    && !($dayname[0] =~ /Pasc0/ && $dayofweek > 2))
+  {
+    if (exists($winner{'Ant Matutinum'})) {
+      my $start = 0;
+      my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 0);
+      my @p = split("\n", $w);
+
+      for (my $i = $start; $i < 14; $i++) {
+        my $p = $p[$i];
+        if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
+
+        if ($i == 0 || $i == 8) {
+          $p = "$p[$i]$p";
+        }
+        $psalmi[$i] = $p;
+      }
+      setbuild2("Antiphonas Psalmi Octavam special");
+
+    }
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
   nocturn(1, $lang, \@psalmi, (0 .. 7));
 
-  if ($rule =~ /12 lectiones/) {
+  if (
+    $rule =~ /12 lectiones/
+    || ((($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
+      && $dayname[1] !~ /feria|sabbato|infra octavam/i)
+  ) {
     lectiones(1, $lang);    # first Nocturn of 4 lessons (
   } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i
     && monthday($day, $month, $year, ($version =~ /196/) + 0, 0) !~ /^11[1-5]\-/
@@ -178,12 +213,18 @@ sub psalmi_matutinum_monastic {
     push(@s, "\n");
   } else {
     lectiones(0, $lang);
+
+    # the Absolutio and the Benedictions are taken depending on the day of the week;
   }
   $psalmi[14] = $psalmi[15] = '' if ($rule !~ /12 lectiones/);
   nocturn(2, $lang, \@psalmi, (8 .. 15));
 
   # In case of Matins of 3 nocturns with 12 lessons:
-  if ($winner{Rule} =~ /12 lectiones/) {
+  if (
+    $winner{Rule} =~ /12 lectiones/
+    || ((($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
+      && $dayname[1] !~ /feria|sabbato|infra octavam/i)
+  ) {
     lectiones(2, $lang);    # lessons 5 – 8
 
     # Tenebrae office:
