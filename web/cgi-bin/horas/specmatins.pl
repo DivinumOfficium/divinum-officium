@@ -12,6 +12,15 @@ use DivinumOfficium::Directorium qw(get_stransfer hymnmerge hymnshift);
 use DivinumOfficium::Scripting;
 $a = 4;
 
+use constant {
+  LT1960_DEFAULT => 0,
+  LT1960_FERIAL => 1,
+  LT1960_SUNDAY => 2,
+  LT1960_SANCTORAL => 3,
+  LT1960_OCTAVEII => 4,
+  LT1960_OCTAVE => 5,
+};
+
 #*** invitatorium($lang)
 # collects and returns psalm 94 with the antipones
 sub invitatorium {
@@ -609,25 +618,26 @@ sub lectio : ScriptFunc {
   my $num = shift;
   my $lang = shift;
   $ltype1960 = gettype1960();
-  if ($winner =~ /C12/i) { $ltype1960 = 0; }    # Officium parvum B.M.V.
+  if ($winner =~ /C12/i) { $ltype1960 = LT1960_DEFAULT; }    # Officium parvum B.M.V.
 
-  if ($ltype1960 == 2 && $num == 3) {           # 3rd reading in a Sunday office
-    setbuild2("Lectio 3 diverged to Homily");
-    $num = 7;                                   # diverge to Gospel / Homily
+  if ($ltype1960 == LT1960_SUNDAY && $num == 3) {            # 3rd reading in a Sunday office
+    $num = 7;                                                # diverge to Gospel / Homily
+    setbuild("L3: Diverged to Homily");
   } elsif (
-    ($ltype1960 == 3 && $num == 3 && $votive !~ /(C9|Defunctorum)/i)    # 3rd reading in sanctoral office of 3 readings
-    || (
-         $version !~ /1960/
+    (    $ltype1960 == LT1960_SANCTORAL
+      && $num == 3
+      && $votive !~ /(C9|Defunctorum)/i)                     # 3rd reading in sanctoral office of 3 readings
+    || ( $version !~ /1960/
       && $rule !~ /1 et 2 lectiones/i
       && $num == 3
       && $winner =~ /Sancti/i
       && $rank < 2
       && $winner{Rank} !~ /vigil/i
-      && ( $version !~ /monastic/i
-        || $dayname[0] !~ /Nat|Epi1/i)
-    ) # sanctoral simplex feast (unless monastic in Nativitytide and Epiphany => prevent the former Octave days of Stephanus, Joannes, Innocents)
-  ) {
+      && !($version =~ /1963/i && $dayname[0] != /Nat|Epi1/i))
+    )
+  { # sanctoral simplex feast (unless monastic in Nativitytide and Epiphany => prevent the former Octave days of Stephanus, Joannes, Innocents)
     $num = 4;    # diverge to legend
+    setbuild("L3: Diverged to Legend");
   }
   my %w = (columnsel($lang)) ? %winner : %winner2;
 
@@ -641,8 +651,7 @@ sub lectio : ScriptFunc {
   }
 
   #Nat1-0 special rule
-  # TODO: Get rid of this special case by separating the temporal and sanctoral
-  # parts of Christmas, thus allowing occurring Scripture to be defined.
+  # TODO: Get rid of this special case by separating the temporal and sanctoral parts of Christmas, thus allowing occurring Scripture to be defined.
   if ($num <= 3 && $rule =~ /Lectio1 OctNat/i) {
     my $c;
 
@@ -844,7 +853,8 @@ sub lectio : ScriptFunc {
     && ( ($rule =~ /9 lectio/i && $num == 9 && !exists($winner{Responsory9}))
       || ($rule !~ /9 lectio/i && $num == 3 && $winner !~ /Tempora/i && !exists($winner{Responsory3})))
     || ($rank < 2 && $winner =~ /Sancti/i && $num == 4)
-  ) {
+    )
+  {    # diverged to legend
     %w = (columnsel($lang)) ? %winner : %winner2;
 
     if (($w{Rank} =~ /Simplex/i || ($version =~ /1955/ && $rank == 1.5)) && exists($w{'Lectio94'})) {
@@ -927,7 +937,6 @@ sub lectio : ScriptFunc {
         } else {
           $w = $wc;
         }
-
       }
     }
     if ($winner{Rank} =~ /Octav.*(Epi|Corp)/i && $w !~ /!.*Vigil/i) { $w = $wo; }
@@ -938,7 +947,7 @@ sub lectio : ScriptFunc {
     $w = addtedeum($w);
   }
 
-  if ($ltype1960 == 3 && $num == 4) {
+  if ($ltype1960 == LT1960_SANCTORAL && $num == 4) {
     if (exists($w{'Lectio94'})) {
       $w = $w{'Lectio94'};
     }    #contracted legend for commemoratio
@@ -1008,6 +1017,7 @@ sub lectio : ScriptFunc {
         my %c = (columnsel($lang)) ? %commune : %commune2;
         $s = $c{"Responsory$na"};
       }
+
       if (exists($winner{"Responsory$na"})) { $s = ''; }
 
       #$$$ watch initia rule
@@ -1214,13 +1224,6 @@ sub lect1960 {
   push(@s, "\&lectio(3)");
   push(@s, "\n");
 }
-use constant {
-  LT1960_DEFAULT => 0,
-  LT1960_FERIAL => 1,
-  LT1960_SUNDAY => 2,
-  LT1960_SANCTORAL => 3,
-  LT1960_OCTAVEII => 4,
-};
 
 #*** gettype1960
 #returns for 1960 version
@@ -1228,7 +1231,7 @@ use constant {
 #  2 for Sunday office
 #  3 for saint's office
 #  4 for office within II. cl. octave
-# 0 for the other versions or if there are 9 lectiones
+#  0 for the other versions or if there are 9 lectiones
 sub gettype1960 {
   my $type = LT1960_DEFAULT;
 
