@@ -296,6 +296,12 @@ sub Dominus_vobiscum2 : ScriptFunc {    #* officium defunctorum
   return Dominus_vobiscum($lang);
 }
 
+sub MLitany2 : ScriptFunc {
+  my $lang = shift;
+  if (preces('Dominicales')) { return; }
+  return prayer('MLitany2', $lang);
+}
+
 #*** Benedicamus_Domino
 # adds Alleluia, alleluia for Pasc0
 sub Benedicamus_Domino : ScriptFunc {
