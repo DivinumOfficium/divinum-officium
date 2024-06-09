@@ -219,7 +219,7 @@ sub cleanse($) {
     @parts = split(/;/, $str);
 
     foreach my $part (@parts) {
-      unless ($part =~ /^([^'`"\\={}()]*|'[^'`"\\]*'|\$\w+='[^'`"\\]*')$/i) {
+      unless ($part =~ /^([^'`"\\={}()]*|'[^'`"\\]*'|\$\w+='[^'`"\\]*')$/i) {    #`
 
         #print STDERR "erasing $part\n";
         $part = '';
@@ -517,7 +517,7 @@ sub setcell {
 
   # $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
   $text =~ s/\{\:.*?\:\}//sg;
-  $text =~ s/\`//g;
+  $text =~ s/\`//g;    #`
 
   if ($Ck) {
     if ($column == 1) {
