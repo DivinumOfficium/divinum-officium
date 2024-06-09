@@ -1,1 +1,35 @@
-@Tempora/Pasc3-1Feria
+[Rank]
+De VI die infra Octavam S. Joseph;;Semiduplex;;2;;ex TemporaM/Pasc2-3
+
+[Rule]
+ex TemporaM/Pasc2-3;
+Psalmi Dominica
+
+[Ant Matutinum]
+@Tempora/Pasc2-3::1 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@Tempora/Pasc2-3::4-5
+@Tempora/Pasc2-3::6 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+
+[Lectio1]
+@Tempora/Pasc3-1:Lectio4
+
+[Lectio2]
+@Tempora/Pasc3-1:Lectio5
+
+[Lectio3]
+@Tempora/Pasc3-1:Lectio6
+
+[MM Capitulum]
+@Tempora/Pasc2-3:Capitulum Sexta
+_
+@TemporaM/Pasc2-3:Responsory Sexta

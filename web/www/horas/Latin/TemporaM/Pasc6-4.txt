@@ -1,18 +1,88 @@
 @Tempora/Pasc6-4
 
 [Rank]
+In Octava Ascensionis;;Duplex majus;;4.2;;ex TemporaM/Pasc5-4
+
+[Rank] (rubrica 1570)
+In Octava Ascensionis;;Duplex;;3.1;;ex TemporaM/Pasc5-4
+
+[Rank] (rubrica 196)
 Feria V post Ascensionem;;Feria;;1;;vide TemporaM/Pasc5-4
 
 [Rule]
+ex TemporaM/Pasc5-4;
+12 lectiones
+Psalmi Dominica
+Feria Te Deum
+Antiphonas Horas
+Doxology=Asc
 
-[Oratio]
+[Rule] (rubrica 196)
+
+[Oratio] (rubrica 196)
 @Tempora/Pasc6-0
 
-[Capitulum Laudes]
+[Lectio1]
+@Tempora/Pasc6-4::1-8 s/-8/-6/
+
+[Lectio1] (rubrica tridentina)
+@Tempora/Pasc6-3::1-5 s/-5/-3/
+
+[Lectio2]
+@Tempora/Pasc6-4:Lectio2:1 s/9-14/7-10/
+@Tempora/Pasc6-4:Lectio1:9-10
+@Tempora/Pasc6-4:Lectio2:2-3
+
+[Lectio2] (rubrica tridentina)
+@Tempora/Pasc6-3:Lectio1:2 s/1-5/4-6a/
+@Tempora/Pasc6-3:Lectio1:6-7
+@Tempora/Pasc6-3:Lectio2:2 s/\. .*/./
+
+[Lectio3]
+@Tempora/Pasc6-4:Lectio2:1 s/9-/11-/
+@Tempora/Pasc6-4:Lectio2:4-7
+
+[Lectio3] (rubrica tridentina)
+@Tempora/Pasc6-3:Lectio2:1 s/6/6b/
+@Tempora/Pasc6-3:Lectio2:2 s/6 .*?\./6 /
+@Tempora/Pasc6-3:Lectio2:3-5
+
+[Lectio4]
+@Tempora/Pasc6-4:Lectio3
+
+[Lectio4] (rubrica tridentina)
+@Tempora/Pasc6-3:Lectio3
+
+[Lectio5]
+@Tempora/Pasc6-4:Lectio4: s/Ascénsio .*//
+
+[Lectio6]
+@Tempora/Pasc6-4:Lectio4: s/.* Ascénsio/Ascénsio/s
+
+[Lectio7]
+@Tempora/Pasc6-4:Lectio5
+
+[Lectio8]
+@Tempora/Pasc6-4:Lectio6
+
+[Lectio9]
+@Tempora/Pasc6-4:Lectio7
+
+[Lectio10]
+@Tempora/Pasc6-4:Lectio8: s/Ecce, .*//
+
+[Lectio11]
+@Tempora/Pasc6-4:Lectio8: s/.* Ecce,/Ecce,/
+@Tempora/Pasc6-4:Lectio9: s/Desidéria .*//
+
+[Lectio12]
+@Tempora/Pasc6-4:Lectio9: s/.* Desidéria/Desidéria/
+
+[Capitulum Laudes] (rubrica 196)
 @TemporaM/Pasc5-5
 
-[Capitulum Sexta]
+[Capitulum Sexta] (rubrica 196)
 @TemporaM/Pasc5-5
 
-[Capitulum Nona]
+[Capitulum Nona] (rubrica 196)
 @TemporaM/Pasc5-5

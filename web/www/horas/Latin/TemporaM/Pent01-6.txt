@@ -1,8 +1,46 @@
 @Tempora/Pent01-6
 
-[Rank]
-Sabbato infra Hebdomadam I post Octavam Pentecostes;;Feria;;1
-
 [Rule]
- 
+ex TemporaM/Pent01-4;
+3 Lectiones
+Doxology=Corp
+Feria Te Deum
 
+[Rule] (rubrica 196)
+
+
+[Ant Matutinum]
+@Tempora/Pent01-4::3 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@Tempora/Pent01-4::14-15
+@Tempora/Pent01-4::6 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+
+[Lectio1]
+@Tempora/Pent01-6:Lectio7
+
+[Lectio2]
+@Tempora/Pent01-6:Lectio8
+
+[Lectio3]
+@Tempora/Pent01-6:Lectio9
+
+[Responsory1]
+@Tempora/Pent01-4:Responsory7
+
+[Responsory2]
+@Tempora/Pent01-4:Responsory8
+
+[Responsory3]
+@TemporaM/Pent01-4:Responsory11
+
+[MM Capitulum] (rubrica tridentina aut rubrica divino)
+@TemporaM/Pent01-5

@@ -4,7 +4,7 @@
 @Tempora/Pasc7-0::1 s/47/73/
 @Psalterium/Psalmi matutinum:Daym4:2-6 s/.*;;/;;/g
 @Tempora/Pasc7-0::4-5
-@TemporaM/Pasc7-3::4 s/;;.*/;;79/
+@TemporaM/Pasc7-3:AntMatutinumM: s/;;.*/;;79/
 @Psalterium/Psalmi matutinum:Daym4:10-14 s/.*;;/;;/g
 
 [Responsory3]

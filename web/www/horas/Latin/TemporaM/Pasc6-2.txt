@@ -1,18 +1,46 @@
-@Tempora/Pasc6-2
+@TemporaM/Pasc5-5
 
 [Rank]
+Feria III infra Octavam Ascensionis;;Semiduplex;;2.1;;ex TemporaM/Pasc5-4
+
+[Rank] (rubrica tridentina)
+Feria III infra Octavam Ascensionis;;Semiduplex;;2;;ex TemporaM/Pasc5-4
+
+[Rank] (rubrica 196)
 Feria III post Ascensionem;;Feria;;1;;vide TemporaM/Pasc5-4
 
-[Rule]
-
-[Oratio]
+[Oratio] (rubrica 196)
 @Tempora/Pasc6-0
 
-[Capitulum Laudes]
-@TemporaM/Pasc5-5
+[Ant Matutinum]
+@TemporaM/Pasc5-4:AntMatutinumM:2 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@Tempora/Pasc5-4::9-10
+@Tempora/Pasc5-4::8 s/;;.*//
+;;
+;;
+;;
+;;
+;;
 
-[Capitulum Sexta]
-@TemporaM/Pasc5-5
+[Lectio1]
+@Tempora/Pasc6-2:Lectio7
 
-[Capitulum Nona]
-@TemporaM/Pasc5-5
+[Lectio2]
+@Tempora/Pasc6-2:Lectio8
+
+[Lectio3]
+@Tempora/Pasc6-2:Lectio9
+
+[Responsory1]
+@Tempora/Pasc5-4:Responsory4
+
+[Responsory2]
+@Tempora/Pasc5-4:Responsory5
+
+[Responsory3]
+@Tempora/Pasc5-4:Responsory6
