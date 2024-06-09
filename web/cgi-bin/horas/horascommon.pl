@@ -1173,7 +1173,7 @@ sub extract_common {
       $commune .= 'p' if -e $paschal_fname;
     }
     $commune = subdirname('Commune', $version) . "$commune.txt" if ($commune);
-  } elsif ($common_field =~ /(ex|vide)\s*Sancti\/(.*)\s*$/i) {
+  } elsif ($common_field =~ /(ex|vide)\s*SanctiM?\/(.*)\s*$/i) {
 
     # Another sanctoral office used as a pseudo-common.
     $communetype = $1;
@@ -1182,6 +1182,7 @@ sub extract_common {
   } elsif ($common_field =~ /(ex|vide)\s*(.*)\s*$/i) {
     $communetype = $1;
     my $name = $2;
+    $name =~ s/TemporaM?\///i;    # ensure consistency also for Monastic
 
     if ($name !~ /Sancti|Commune|Tempora/i) {
       $commune = subdirname('Tempora', $version) . "$name.txt";
