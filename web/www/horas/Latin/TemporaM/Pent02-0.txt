@@ -1,63 +1,99 @@
-@Tempora/Pent02-0r
-
-[Rank]
-Dominica II Post Pentecosten;;Semiduplex II classis;;5
+@Tempora/Pent02-0
 
 [Rule]
 12 lectiones
+ex TemporaM/Pent01-4; 
+Doxology=Corp
+
+[Rule] (rubrica 196)  
+12 lectiones
+
+[Ant Vespera] (rubrica tridentina aut rubrica divino)
+@TemporaM/Pent01-4:Ant Vespera 3
+
+[Ant Vespera 3] (rubrica tridentina aut rubrica divino)
+@TemporaM/Pent01-4:Ant Vespera 
+
+[Responsory Vespera]
+@Tempora/Pent01-4:Responsory Tertia
+
+[Responsory Laudes]
+@Tempora/Pent01-4:Responsory Sexta
+
+
+[Ant Matutinum] (rubrica tridentina aut rubrica divino)
+@TemporaM/Pent01-4:Ant Matutinum
 
 [Lectio1]
 @Tempora/Pent01-1
 
-[Responsory1]
+[Responsory1] 
+@TemporaM/Pent01-4
+(sed rubrica 196)
 @Tempora/Pent01-1:Responsory1
 
 [Lectio2]
 @Tempora/Pent01-1::s/: porro.*/./s
 
 [Responsory2]
+@TemporaM/Pent01-4
+(sed rubrica 196)
 @Tempora/Pent01-1:Responsory2
 
 [Lectio3]
 @Tempora/Pent01-1:Lectio2:s/4-8/7-8/ s/4 .*: porro/7 Porro/s
 
 [Responsory3]
+@TemporaM/Pent01-4
+(sed rubrica 196)
 @Tempora/Pent01-1:Responsory3
 
 [Lectio4]
 @Tempora/Pent01-1:Lectio3
 
 [Responsory4]
+@TemporaM/Pent01-4
+(sed rubrica 196)
 @Tempora/Pent03-1Feria:Responsory1
 
 [Lectio5]
 @Tempora/Pent02-0:Lectio4
 
 [Responsory5]
+@TemporaM/Pent01-4
+(sed rubrica 196)
 @Tempora/Pent01-2:Responsory1
 
 [Lectio6]
 @Tempora/Pent02-0:Lectio5:s/ Quaprópter .*//s
 
 [Responsory6]
+@TemporaM/Pent01-4
+(sed rubrica 196)
 @Tempora/Pent01-2:Responsory2
 
 [Lectio7]
 @Tempora/Pent02-0:Lectio5:s/.*(Quaprópter)/$1/s
 
 [Responsory7]
+@TemporaM/Pent01-4
+(sed rubrica 196)
 @Tempora/Pent01-2:Responsory3
 
 [Lectio8]
 @Tempora/Pent02-0:Lectio6
 
 [Responsory8]
+@TemporaM/Pent01-4
+(sed rubrica 196)
 @Tempora/Pent01-3:Responsory2
 
 [Lectio9]
 @Tempora/Pent02-0:Lectio7:s/In illis .*//s
 
 [Responsory9]
+@TemporaM/Pent01-4
+(sed rubrica 196)
 @Tempora/Pent01-3:Responsory1
 
 [Lectio10]
@@ -65,16 +101,25 @@ Dominica II Post Pentecosten;;Semiduplex II classis;;5
 @Tempora/Pent02-0:Lectio8:s/Proínde .*//s
 
 [Responsory10]
+@TemporaM/Pent01-4
+(sed rubrica 196)
 @Tempora/Pent01-3:Responsory3
 
 [Lectio11]
 @Tempora/Pent02-0:Lectio8:s/.* (Proínde)/$1/s
 
 [Responsory11]
+@TemporaM/Pent01-4
+(sed rubrica 196)
 @Tempora/Pent03-2Feria:Responsory1
 
 [Lectio12]
 @Tempora/Pent02-0:Lectio9
 
 [Responsory12]
+@Tempora/Pent02-0:Responsory8
+(sed rubrica 196)
 @Tempora/Pent01-0:Responsory8
+
+[Commemoratio] (rubrica 196)
+

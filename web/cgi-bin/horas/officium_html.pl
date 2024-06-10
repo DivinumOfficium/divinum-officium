@@ -30,6 +30,11 @@ sub headline {
   $output .=
     "<H1><FONT COLOR=MAROON SIZE=+1><B><I>Divinum Officium</I></B></FONT>&nbsp;<FONT COLOR=RED SIZE=+1>$vers</FONT></H1>\n";
 
+  # add warning for older Monastic versions temporarily
+  $output .=
+    "<H2><FONT COLOR=RED SIZE=+1>Please note that the database for this version ($vers) is still incomplete and under construction.</FONT></H2>\n"
+    if $vers =~ /1617|1930/;
+
   if ($variant eq 'P') {
     $output .= par_c(<< "PrintTag");
 <A HREF="Pofficium.pl?date1=$date1&command=prev&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">

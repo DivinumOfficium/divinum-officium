@@ -1,5 +1,48 @@
-@Tempora/Pasc5-6
+@TemporaM/Pasc5-5
 
 [Rank]
+Sabbato infra Octavam Ascensionis;;Semiduplex;;2.1;;ex TemporaM/Pasc5-4
+
+[Rank] (rubrica tridentina)
+Sabbato infra Octavam Ascensionis;;Semiduplex;;2;;ex TemporaM/Pasc5-4
+
+[Rank] (rubrica 196)
 Sabbato post Ascensionem;;Feria;;1;;vide TemporaM/Pasc5-5
 
+[Ant Matutinum]
+@Tempora/Pasc5-4::3 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@Tempora/Pasc5-4::14-15
+@Tempora/Pasc5-4::6 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+
+[Lectio1]
+@Tempora/Pasc5-6:Lectio7
+
+[Lectio2]
+@Tempora/Pasc5-6:Lectio8
+
+[Lectio3]
+@Tempora/Pasc5-6:Lectio9
+
+[Responsory1]
+@Tempora/Pasc5-4:Responsory7
+
+[Responsory2]
+@Tempora/Pasc5-4:Responsory8
+
+[Responsory3]
+@TemporaM/Pasc5-4:Responsory11
+
+[MM Capitulum] (rubrica tridentina aut rubrica divino)
+@Tempora/Pasc5-4:Capitulum Sexta
+_
+@Tempora/Pasc5-4:Ant Matutinum:9-10

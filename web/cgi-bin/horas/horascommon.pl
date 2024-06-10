@@ -259,7 +259,7 @@ sub occurrence {
             && $day == 1
             && $dayofweek != 6)    # Office of All Souls supersedes All Saints at Completorium from 1911 to 1959
           || ($srank[2] < 2 && $trank && !($month == 1 && $day > 6 && $day < 13))    # Simplex end after None.
-          || ( $version =~ /1955|1963/
+          || ( $version =~ /1955|Monastic.*Divino|1963/
             && $srank[2] >= 2.2
             && $srank[2] < 2.9
             && $srank[1] =~ /Semiduplex/i)    # Reduced to Simplex/Comm ad Laudes tantum ends after None.
@@ -323,11 +323,15 @@ sub occurrence {
         $tname = $trank = '';
         @trank = undef;
         %tempora = undef;
-      } elsif ($version =~ /1955|1963/ && $srank[2] >= 2.2 && $srank[2] < 2.9 && $srank[1] =~ /Semiduplex/i) {
+      } elsif ($version =~ /1955|Monastic.*Divino|1963/
+        && $srank[2] >= 2.2
+        && $srank[2] < 2.9
+        && $srank[1] =~ /Semiduplex/i)
+      {
         $srank[2] =
-          ($version =~ /monastic/i)
+          ($version =~ /Monastic/i)
           ? 1.1
-          : 1.19;    #1955: semiduplex reduced to simplex; Monastic post-DA reduced to "Memoria"
+          : 1.19;    #1955: semiduplex reduced to simplex // Monastic post-DA reduced to "Memoria" unless Octave
       } elsif ($version =~ /196/i
         && $srank[2] < 2
         && $srank[1] =~ /Simplex/i
@@ -383,8 +387,10 @@ sub occurrence {
 
   # Sort out occurrence between the sanctoral and temporal cycles.
   # Dispose of some cases in which the office can't be sanctoral:
-  if (!$srank[2] || ($version =~ /19(?:55|6)/i && $srank[2] <= 1.1) || $trank[0] =~ /Sanctæ Mariaæ Sabbato/i) {
-
+  if ( !$srank[2]
+    || ($version =~ /19(?:55|6)|Monastic.*Divino/i && $srank[2] <= 1.1)
+    || $trank[0] =~ /Sanctæ Mariaæ Sabbato/i)
+  {
     # if we have no sanctoral office, or it was reduced to a commemoration by Cum nostra or its our Lady on Saturday
     $sanctoraloffice = 0;    # Office is temporal
   } elsif ($srank[2] > $trank[2]) {
@@ -1663,7 +1669,12 @@ sub setheadline {
         'none', 'Simplex', 'Semiduplex', 'Duplex',
         'Duplex majus', 'Duplex II. classis', 'Duplex I. classis', 'Duplex I. classis',
       );
-      if ($version =~ /1955/) { $tradtable[2] = 'Simplex'; }
+
+      if ($version =~ /Monastic.*Divino/i) {
+        $tradtable[1, 2] = 'Memoria';
+      } elsif ($version =~ /1955/) {
+        $tradtable[1, 2] = 'Simplex';
+      }
       my @newtable = (
         'none',
         'Commemoratio',
@@ -1679,7 +1690,7 @@ sub setheadline {
 
       if ($version =~ /19(?:55|60)/ && $winner !~ /Pasc5-3/i && $dayname[1] =~ /feria/i) { $rankname = 'Feria'; }
 
-      if ($version =~ /1570/i) { $rankname =~ s/ majus//; }    # no Duplex majus yet in 1570
+      if ($version =~ /1570|1617/i) { $rankname =~ s/ majus//; }    # no Duplex majus yet in 1570/1617
 
       if ($latname =~ /Vigilia Epi/i) {
         $rankname = ($version =~ /trident/i) ? 'Semiduplex' : 'Semiduplex Vigilia II. classis';

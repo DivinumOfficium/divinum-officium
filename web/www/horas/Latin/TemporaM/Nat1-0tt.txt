@@ -1,0 +1,66 @@
+@Tempora/Nat1-0
+
+[Rank]
+Dominica Infra Octavam Nativitatis;;Semiduplex;;5.9;;ex SanctiM/12-25
+
+[Rule]
+3 lectiones
+Psalmi Dominica
+Antiphonas horas
+
+[Ant Matutinum]
+@Sancti/01-01::11 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@Sancti/01-01::4-5
+Natus est nobis * hódie Savátor, qui est Christus Dóminus, in civitáte David.
+;;
+;;
+;;
+;;
+;;
+
+[Lectio1]
+@Tempora/Nat1-0:Lectio7
+
+[Responsory1]
+@SanctiM/12-25:Responsory11
+
+[Lectio2]
+@Tempora/Nat1-0:Lectio8
+
+[Responsory2]
+@Sancti/12-25:Responsory8
+
+[Lectio3]
+@Tempora/Nat1-0:Lectio9
+
+[Responsory3]
+@Tempora/Nat1-0:Responsory8
+
+[MM Capitulum]
+@Psalterium/Matutinum Special:MM Capitulum Nat:1-4
+@Sancti/12-25:Versum 2
+
+[Versum 2]
+@Sancti/12-25:Responsory Sexta:s/.*_.//s
+
+[Capitulum Laudes]
+@:Capitulum Tertia
+_
+@Sancti/12-25:Responsory Tertia:s/._.*//s
+
+[Capitulum Vespera]
+@:Capitulum Laudes
+
+[Capitulum Tertia]
+@Tempora/Nat1-0:Capitulum Vespera
+
+[Versum 1]
+@TemporaM/Nat1-0
+
+[Versum 3]
+@:Versum 1

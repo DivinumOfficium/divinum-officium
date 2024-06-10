@@ -1,8 +1,53 @@
 @Tempora/Pent02-4
 
-[Rank]
-Feria V infra Hebdomadam II post Octavam Pentecostes;;Feria;;1
-
 [Rule]
- 
+ex TemporaM/Pent01-4
+12 lectiones
+Doxology=Corp
+Psalmi Dominica
+Feria Te Deum
+Antiphonas Horas
 
+[Rule] (rubrica 196)
+
+[Ant Vespera] (rubrica tridentina aut rubrica divino)
+@TemporaM/Pent01-4:Ant Vespera 3
+
+[Lectio1]
+@TemporaM/Pent01-4
+
+[Lectio2]
+@TemporaM/Pent01-4
+
+[Lectio3]
+@TemporaM/Pent01-4
+
+[Lectio4]
+@TemporaM/Pent01-4
+
+[Lectio5]
+@Tempora/Pent02-4:Lectio4
+
+[Lectio6]
+@Tempora/Pent02-4:Lectio5: s/Nam in.*//
+
+[Lectio7]
+@Tempora/Pent02-4:Lectio5: s/.*(Nam in)/$1/
+
+[Lectio8]
+@Tempora/Pent02-4:Lectio6
+
+[Lectio9]
+@Tempora/Pent02-4:Lectio7: s/Simili .*//
+
+[Lectio10]
+@Tempora/Pent02-4:Lectio7: s/.*(Simili)/$1/
+
+[Lectio11]
+@Tempora/Pent02-4:Lectio8
+
+[Lectio12]
+@Tempora/Pent02-4:Lectio9
+
+[LectioE]
+@Tempora/Pent01-4

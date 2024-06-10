@@ -1,1 +1,36 @@
-@Tempora/Pasc3-3Feria
+[Rank]
+In Octava Patrocinii S. Joseph;;Duplex majus;;4.1;;ex TemporaM/Pasc2-3
+
+[Rule]
+ex TemporaM/Pasc2-3
+Antiphonas horas
+12 lectiones
+Psalmi Dominica
+
+[Lectio5]
+@Tempora/Pasc3-3:Lectio4
+
+[Lectio6]
+@Tempora/Pasc3-3:Lectio5:s/ Et rursum.*//s
+
+[Lectio7]
+@Tempora/Pasc3-3:Lectio5:s/.* Et rursum/Et rursum/s
+
+[Lectio8]
+@Tempora/Pasc3-3:Lectio6
+
+[Lectio9]
+@Tempora/Pasc3-3:Lectio7
+
+[Lectio10]
+@Tempora/Pasc3-3:Lectio8:s/ Joseph ergo.*//s
+
+[Lectio11]
+@Tempora/Pasc3-3:Lectio8:s/.* Joseph ergo/Joseph ergo/s s/$/~/s
+@Tempora/Pasc3-3:Lectio9:s/\; tamquam.*/./s
+
+[Lectio12]
+@Tempora/Pasc3-3:Lectio9:s/.* tamquam/Tamquam/s
+
+[LectioE]
+@Tempora/Pasc2-3

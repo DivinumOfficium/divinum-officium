@@ -1,6 +1,8 @@
 @Tempora/Pasc2-3
 
 [Rule]
+proper
+Antiphonas horas
 12 lectiones
 Psalmi Dominica
 
@@ -23,18 +25,17 @@ In Solemnitate S. Joseph Sponsi B.M.V., Confessoris et Ecclesie Universalis Patr
 ;;95
 ;;96
 ;;97
-@Tempora/Pasc2-3::9-10
-@Tempora/Pasc2-3::11 s/;;14/;;256;257;258/
+@Tempora/Pasc2-3::9-11 s/;;14/;;256;257;258/
 @Tempora/Pasc2-3::14-15
 
 [Lectio3]
-@Tempora/Pasc2-3::s/-49/-45/ s/ Egr.*//s
+@Tempora/Pasc2-3:Lectio3:s/-49/-45a/ s/ Egréssus.*//s
 
 [Responsory3]
 @Sancti/03-19:Responsory1
 
 [Lectio4]
-@Tempora/Pasc2-3:Lectio3:s/44-/45-/ s/.* Egr/45 Egr/s
+@Tempora/Pasc2-3:Lectio3::s/44-/45b-/ s/44.*Egréssus/45 Egréssus/s
 
 [Responsory4]
 @Tempora/Pasc2-3:Responsory3
@@ -55,7 +56,7 @@ In Solemnitate S. Joseph Sponsi B.M.V., Confessoris et Ecclesie Universalis Patr
 @Tempora/Pasc2-3:Lectio6:s/Mem.*//s
 
 [Responsory7]
-@SanctiM/05-01
+@SanctiM/05-01r
 
 [Lectio8]
 @Tempora/Pasc2-3:Lectio6:s/.* Mem/Mem/s
