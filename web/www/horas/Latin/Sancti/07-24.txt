@@ -1,9 +1,6 @@
 [Rank]
 In Vigilia S. Jacobi Ap.;;Simplex;;1.5;;ex C1v
 
-[Rank] (rubrica 1960)
-S. Christinæ Virginis et Martyris;;Simplex;;1.1;;vide C6b
-
 [Rule]
 ex C1v;
 Responsory Feria
@@ -16,9 +13,5 @@ Laudes 2
 Da, quǽsumus, omnípotens Deus: ut beáti Jacobi, Apóstoli tui, quam prævenimus, veneranda solemnitas, et devotiónem nobis augeat et salútem.  
 $Per Dominum
 
-[Commemoratio 2]
-!Commemoratio S. Christinæ Virg. et Mart.
-@Commune/C6:Oratio proper
-$Oremus
-v. Indulgéntiam nobis, quǽsumus, Dómine, beáta Christína Virgo et Martyr implóret: quæ tibi gráta semper éxstitit, et mérito castitátis, et tuæ professióne virtútis.
-$Per Dominum
+[Lectio1]
+@Commune/C1v
