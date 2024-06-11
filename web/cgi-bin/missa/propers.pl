@@ -253,17 +253,18 @@ sub oratio {
 
   if (exists($w{"$type Vigilia"}) && ($version !~ /(1955|196)/ || $rule =~ /Vigilia/i)) {
     $w .= $w{"$type Vigilia"};
-		if ($version =~ /(1955|196)/) {
-			$retvalue .= "$oremusflag$w\n";
-			$oremusflag = "";
-		} else {
-			setcc($w, 3, %c);
-		}
-	} elsif ($transfervigil) {
-		my %ctv = %{setupstring($lang, "$transfervigil")};
-		$w .= $ctv{"$type Vigilia"};
-		setcc($w, 3, %c);
-	}
+
+    if ($version =~ /(1955|196)/) {
+      $retvalue .= "$oremusflag$w\n";
+      $oremusflag = "";
+    } else {
+      setcc($w, 3, %c);
+    }
+  } elsif ($transfervigil) {
+    my %ctv = %{setupstring($lang, "$transfervigil")};
+    $w .= $ctv{"$type Vigilia"};
+    setcc($w, 3, %c);
+  }
 
   # add IV Temporum lectio/gradual/collect  (LectioLn) for the main oration
   if ($type =~ /Oratio/ && $rule =~ /LectioL/) {
