@@ -1,7 +1,10 @@
 [Rank]
 Sabbato post Cineres;;Feria major;;2.1
 
-[Rank](rubrica 1960)
+[Rank] (rubrica 1930)
+Sabbato post Cineres;;Feria major;;4.9
+
+[Rank] (rubrica 196)
 Sabbato post Cineres;;Feria major;;3.9
 
 [Rule]
@@ -30,6 +33,8 @@ Verum ille non oblivíscitur oratiónem páuperum, neque avértit fáciem suam a
 
 [Responsory3]
 @Tempora/Quadp3-1:Responsory1
+(sed rubrica monastica)
+@Tempora/Quadp3-1:Responsory2
 
 [Versum 2]
 @Tempora/Quadp3-4:Versum 2

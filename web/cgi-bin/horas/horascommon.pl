@@ -1762,7 +1762,7 @@ sub setheadline {
       if ($version !~ /196/) {
         $rankname =
             ($rank < 2) ? 'Ferial'
-          : ($rank < 3) ? 'Feria major'
+          : ($rank < 3) ? ($version =~ /monastic.*divino/i ? 'Feria privilegiata III. ordinis' : 'Feria major')
           : ($rank < 5) ? 'Feria privilegiata II. ordinis'
           : 'Feria privilegiata';
       } else {

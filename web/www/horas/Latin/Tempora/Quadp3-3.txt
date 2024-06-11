@@ -1,7 +1,7 @@
 [Rank]
-Feria IV Cinerum;;Feria privilegiata;;6
+Feria IV Cinerum;;Feria privilegiata;;6.9
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Feria IV Cinerum;;Feria privilegiata;;7
 
 [Rule]
@@ -30,6 +30,8 @@ Cum enim cœ́perint alíquibus tentatiónibus ea ipsa scílicet illis súbtrahi
 
 [Responsory3]
 @Tempora/Quadp3-1:Responsory1
+(sed rubrica monastica)
+@Tempora/Quadp3-1:Responsory2
 
 [Ant 2]
 Cum jejunátis, * nolíte fíeri sicut hypócritæ, tristes.
