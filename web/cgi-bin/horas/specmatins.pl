@@ -641,7 +641,7 @@ sub lectio : ScriptFunc {
     (    $ltype1960 == LT1960_SANCTORAL
       && $num == 3
       && $votive !~ /(C9|Defunctorum)/i)                     # 3rd reading in sanctoral office of 3 readings
-    || ( $version !~ /1960/
+    || ( $version !~ /196/
       && $rule !~ /1 et 2 lectiones/i
       && $num == 3
       && $winner =~ /Sancti/i

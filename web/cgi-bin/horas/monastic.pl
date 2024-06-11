@@ -136,7 +136,7 @@ sub psalmi_matutinum_monastic {
            ($rank > 4.9 || $votive =~ /C8/)
         || (($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
       )
-      && $dayname[1] !~ /feria|sabbato|Die.*infra octavam/i
+      && ($duplex == 3 || $dayname[1] !~ /feria|sabbato|Die.*infra octavam/i)
     )
     && !($dayname[0] =~ /Pasc0/ && $dayofweek > 2)
     && $winner !~ /Pasc6-6/i
@@ -161,9 +161,15 @@ sub psalmi_matutinum_monastic {
       }
     }
     setbuild2("Antiphonas Psalmi Proprium aut Communem");
-  } elsif ($dayname[1] =~ /(?:Die|Feria|Sabbato).*infra octavam|post Octavam Asc|in Vigilia Pent/i
-    && !($dayname[0] =~ /Pasc0/ && $dayofweek > 2))
-  {
+  } elsif (
+    (
+      $dayname[1] =~ /(?:Die|Feria|Sabbato).*infra octavam|post Octavam Asc|Quattuor Temporum Pent/
+      || ($dayname[1] =~ /in Vigilia Pent/i && $version !~ /196/)
+
+    )
+    && !($dayname[0] =~ /Pasc0/ && $dayofweek > 2)
+  ) {
+
     if (exists($winner{'Ant Matutinum'})) {
       my $start = 0;
       my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 0);
