@@ -1694,6 +1694,8 @@ sub setheadline {
 
       if ($latname =~ /Vigilia Epi/i) {
         $rankname = ($version =~ /trident/i) ? 'Semiduplex' : 'Semiduplex Vigilia II. classis';
+      } elsif ($latname =~ /^In Vigilia/i && $rank <= 2.5) {
+        $rankname = 'Simplex';
       }
 
       if ($latname =~ /Sanctæ Fami/i && $version !~ /196/) {
