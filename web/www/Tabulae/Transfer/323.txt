@@ -1,10 +1,11 @@
-#= sunday letter: e, rule number:  2, next: 2160, prev: 1913
+#= sunday letter: e, rule number:  2, next: 2160, prev: 1913 and 2008
 01-14=Tempora/Epi2-0;;1570
 01-16=Tempora/Epi2-0;;1888 1906
 01-18=Tempora/Epi2-0;;DA
 01-23=01-14;;1570
 01-28=Tempora/Nat2-0;;1888 1906
-02-03=02-02;;1570 1888 1906 DA 1960
+02-02=02-02-quadp;;1960
+02-03=02-02;;1570 1888 1906 DA
 02-11=02-09;;1888 1906
 02-23=X-X;;1570
 03-04=03-04rq;;1960
