@@ -1,36 +1,24 @@
+@Tempora/Pent03-0r
+
 [Rank]
-Dominica III Post Pentecosten;;Semiduplex;;5
+Dominica III Post Pentecosten infra Octavam SSmi Cordis D.N.J.C;;Semiduplex;;5
 
 [Rule]
 Gloria
 Credo
-Prefatio=Trinitate (rubrica tridentina)
-Prefatio=Cord (rubrica divino)
+Prefatio=Cord
 Prefatio1960=Trinitate
 
-[Introitus]
-@Tempora/Pent03-0r:Introitus
+[Commemoratio Oratio]
+!Pro Octava sacratissimi Cordis Jesu
+@Tempora/Pent02-5:Oratio
 
-[Oratio]
-@Tempora/Pent03-0r:Oratio
+[Commemoratio Secreta]
+!Pro Octava sacratissimi Cordis Jesu
+@Tempora/Pent02-5:Secreta
 
-[Lectio]
-@Tempora/Pent03-0r:Lectio
+[Commemoratio Postcommunio]
+!Pro Octava sacratissimi Cordis Jesu
+@Tempora/Pent02-5:Postcommunio
 
-[Graduale]
-@Tempora/Pent03-0r:Graduale
 
-[Evangelium]
-@Tempora/Pent03-0r:Evangelium
-
-[Offertorium]
-@Tempora/Pent03-0r:Offertorium
-
-[Secreta]
-@Tempora/Pent03-0r:Secreta
-
-[Communio]
-@Tempora/Pent03-0r:Communio
-
-[Postcommunio]
-@Tempora/Pent03-0r:Postcommunio
