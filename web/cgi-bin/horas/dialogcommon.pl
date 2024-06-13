@@ -114,6 +114,17 @@ sub get_tempus_id {
     : /^Pasc6-(5|6)/ ? 'post Octavam Ascensionis'
     : /^Pasc(\d)/ && $1 < 7 ? 'Octava Ascensionis'
     : /^Pasc/ ? 'Octava Pentecostes'
+    : /^Pent01/ && $dayofweek == 4 ? 'Corpus Christi post Pentecosten'
+    : /^Pent0(\d)/
+    && ( ($1 == 1 && $dayofweek > 4 && !($dayofweek == 6 && $vesp_or_comp))
+      || ($1 == 2 && ($dayofweek < 5 || ($dayofweek == 6 && $vesp_or_comp))))
+    && $version !~ /19(?:55|6)/ ? 'Octava Corpus Christi post Pentecosten'
+    : /^Pent02/ && $dayofweek == 5 && $version !~ /1570/ ? 'SSmi Cordis post Pentecosten'
+    : /^Pent0(\d)/
+    && ( ($1 == 2 && $dayofweek > 5 && !($dayofweek == 6 && $vesp_or_comp))
+      || ($1 == 3 && ($dayofweek < 6 || ($dayofweek == 6 && $vesp_or_comp))))
+    && $version =~ /Divino/i
+    ? 'Octava SSmi Cordis post Pentecosten'
     : 'post Pentecosten';
 }
 
