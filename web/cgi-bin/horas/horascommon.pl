@@ -906,8 +906,8 @@ sub concurrence {
     } elsif (
       $rank < 2    # no 2nd Vespers of a Simplex
       || ( $version =~ /196/
-        && $cwinner{Rank} =~ /Dominica/i
-        && $rank < 5)    # on any Sunday, nothing of a preceding III. cl feast
+        && ($cwrank[0] =~ /Dominica/i || ($cwinner{Rule} =~ /Festum Domini/i && $dayofweek == 6))
+        && $rank < 5)    # on any Sunday or 1st Vespers of a Feast of the Lord , nothing of a preceding III. cl feast
       || ( $crank >= 6
         && !($rank == 2.1 || $rank == 2.99 || $rank == 3.9 || $rank >= 4.2)
         && $cwrank[0] !~ /Dominica|feria|in.*octava/i
