@@ -9,9 +9,15 @@ CredoDA
 [Name]
 Basili
 
+[Introitus]
+@Commune/C4a
+
 [Oratio]
 Te pedimos, Señor, que escuches las súplicas que en la solemnidad de tu santo confesor y pontífice Basilio, elevamos, para que nos absuelvas de todos los pecados por la intercesión de aquel que mereció servirte dignamente.
 $Per Dominum
+
+[Lectio]
+@Commune/C4a
 
 [Graduale]
 !Ps 36:30-31
@@ -33,6 +39,9 @@ Mi lealtad y mi gracia son con el justo; y en mi nombre se hará grande su poder
 [Secreta]
 Te suplicamos, Señor, que nos haga aceptos a tu majestad la solemnidad anual de tu santo Confesor y Pontífice Basilio, para que, por este culto de piadosa expiación, reciba él aumento de gloria y a nosotros nos concilie los dones de tu gracia.
 $Per Dominum
+
+[Communio]
+@Commune/C4
 
 [Postcommunio]
 Oh Dios, remunerador de las almas fieles: haz que consigamos el perdón de nuestros pecados por la intercesión de tu santo Confesor y Pontífice San Basilio, cuya venerable festividad celebramos.
