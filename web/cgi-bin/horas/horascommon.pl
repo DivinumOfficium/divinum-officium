@@ -293,9 +293,14 @@ sub occurrence {
         )                                          # on Duplex II. cl nothing of common octaves
         || (
           $version =~ /19(?:55|6)/i
-          && ( ($srank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|12\-24)/)
-            || ($srank =~ /(infra octavam|in octava)/i && nooctnat()))
-        )                                          # TODO: to be made obsolte s.a.
+          && (
+            (
+              $srank =~ /vigil/i && $sday !~ /(06\-23|06\-28|08\-09|08\-14|12\-24)/
+              || ($dayofweek == 0 && $month < 12)    # #3873: ensure no Vigil on Sunday except Nativity
+            )
+            || ($srank =~ /(infra octavam|in octava)/i && nooctnat())
+          )
+        )
         || ( $version =~ /1960/
           && $dayofweek == 0
           && (($trank[2] >= 6 && $srank[2] < 6) || ($trank[2] >= 5 && $srank[2] < 5)))
