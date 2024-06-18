@@ -38,16 +38,10 @@ sub horas {
     $version = $version1;
     precedence();
   }
+
   @script1 = getordinarium($lang1, $command);
   @script1 = specials(\@script1, $lang1);
   $column = 2;    # This prevents the duplications in the Building Script
-
-  if ($Ck) {
-    $version = $version1;
-    precedence();
-  }
-  @script1 = getordinarium($lang1, $command);
-  @script1 = specials(\@script1, $lang1);
 
   if ($Ck) {
     $version = $version2;
