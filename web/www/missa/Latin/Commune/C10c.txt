@@ -2,23 +2,16 @@
 Sancta Maria Sabbato ex Purificatione ad Pascham: Salve Sancta parens
 
 [Rule]
-Gloria
-Suffr=Spiritu;Ecclesiæ,Papa;;
-Prefatio=Maria=veneratione;
+@Commune/C10
 
 [Introitus]
 @Commune/C10
 
 [Oratio]
-Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis~
-sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a~
-præsénti liberári tristítia, et ætérna pérfrui lætítia.
-$Per Dominum
+@Commune/C10
 
 [Lectio]
-Léctio libri Sapiéntiæ.
-!Eccli 24:14-16
-Ab inítio et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.
+@Commune/C10
 
 [Graduale]
 Benedícta et venerábilis es, Virgo María: quæ sine tactu pudóris invénta es~
@@ -49,16 +42,10 @@ Felix namque es, sacra Virgo María, et omni laude digníssima: quia ex te ortus
 est sol justítiæ, Christus, Deus noster.
 
 [Secreta]
-Tua, Dómine, propitiatióne, et beátæ Maríæ semper Vírginis intercessióne, ad~
-perpétuam atque præséntem hæc oblátio nobis profíciat prosperitátem et pacem.
-$Per Dominum
+@Commune/C10
 
 [Communio]
-!  
-Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium.
+@Commune/C10
 
 [Postcommunio]
-Sumptis, Dómine, salútis nostræ subsídiis: da, quǽsumus, beátæ Maríæ semper~
-Vírginis patrocíniis nos ubíque prótegi; in cujus veneratióne hæc tuæ obtúlimus~
-majestáti.
-$Per Dominum
+@Commune/C10
