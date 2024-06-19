@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 use utf8;
+use v5.10;
 
 # Name : Laszlo Kiss
 # Date : 01-20-08
@@ -2208,6 +2209,14 @@ sub doxology {
 #*** checksuffragium
 # versions 1956 and 1960 exclude from Ordinarium
 sub checksuffragium {
+  state $suffragium;
+
+  return $suffragium if defined $suffragium;
+
+  $suffragium = _checksuffragium()
+}
+
+sub _checksuffragium {
   if ($rule =~ /no suffragium/i) { return 0; }
   if (!$dayname[0] || $dayname[0] =~ /Adv|Nat|Quad5|Quad6/i) { return 0; }  #christmas, adv, passiontime omit
   if ($dayname[0] =~ /Pasc[07]/i) { return 0; }                             # Octaves of Pascha and Pentecost
@@ -2225,8 +2234,8 @@ sub checksuffragium {
       my @cccentries = (@commemoentries, @ccommemoentries);
 
       foreach my $commemo (@cccentries) {
-        if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
-        my %c = %{officestring($lang, $commemo, 0)};
+        if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
+        my %c = %{officestring('Latin', $commemo, 0)};
         my @cr = split(";;", $c{Rank});
 
         if ($cr[2] >= 3 || $c{Rank} =~ /in.*Octav/i || checkcommemoratio(\%c) =~ /octav/i) {
