@@ -1,6 +1,5 @@
 #!/usr/bin/perl
 use utf8;
-use v5.10;
 
 # Name : Laszlo Kiss
 # Date : 01-20-08
@@ -2209,14 +2208,6 @@ sub doxology {
 #*** checksuffragium
 # versions 1956 and 1960 exclude from Ordinarium
 sub checksuffragium {
-  state $suffragium;
-
-  return $suffragium if defined $suffragium;
-
-  $suffragium = _checksuffragium()
-}
-
-sub _checksuffragium {
   if ($rule =~ /no suffragium/i) { return 0; }
   if (!$dayname[0] || $dayname[0] =~ /Adv|Nat|Quad5|Quad6/i) { return 0; }  #christmas, adv, passiontime omit
   if ($dayname[0] =~ /Pasc[07]/i) { return 0; }                             # Octaves of Pascha and Pentecost
