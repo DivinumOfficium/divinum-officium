@@ -1,44 +1,7 @@
+@Commune/C6
+
 [Name]
 Commune Virgine Tempore Paschale
 
 [Rule]
 Gloria
-
-[Introitus]
-!Ps 118:46-47
-v. Loquébar de testimóniis tuis in conspéctu regum, et non confundébar: et~
-meditábar in mandátis tuis, quæ diléxi nimis. Allelúja, allelúja.
-!Ps 118:1
-Beáti immaculáti in via: qui ámbulant in lege Dómini.
-&Gloria
-v. Loquébar de testimóniis tuis in conspéctu regum, et non confundébar: et~
-meditábar in mandátis tuis, quæ diléxi nimis. Allelúja, allelúja.
-
-[Oratio]
-@Commune/C6:Oratio
-
-[Lectio]
-@Commune/C6:Lectio
-
-[Graduale]
-@Commune/C6:Graduale
-
-[GradualeP]
-@Commune/C6:GradualeP
-
-[Evangelium]
-@Commune/C6:Evangelium
-
-[Offertorium]
-@Commune/C6:Offertorium
-Allelúja.
-
-[Secreta]
-@Commune/C6:Secreta
-
-[Communio]
-@Commune/C6:Communio
-Allelúja.
-
-[Postcommunio]
-@Commune/C6:Postcommunio
