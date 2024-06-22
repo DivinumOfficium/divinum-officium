@@ -335,7 +335,8 @@ sub antiphona_finalis : ScriptFunc {
   } else {
     $name = 'Postpentecost';
   }
-  my $t = %{setupstring($lang, "Psalterium/Mariaant.txt")}{$name};
+  my %ant = %{setupstring($lang, "Psalterium/Mariaant.txt")};
+  my $t = $ant{$name};
   $t = '#' . translate($name eq 'Ant Finalis OP' ? 'Antiphonae finalis' : 'Antiphona finalis BMV', $lang) . "\n$t";
   return ($t);
 }
