@@ -410,7 +410,7 @@ sub getcc {
 }
 
 sub world_mission_sunday {
-  $version =~ /1960/
+  $version =~ /DA|1955|196/
     && $winner{Rank} =~ /Dominica/i
     && monthday($day, $month, $year, 1, 0) eq '104-0';
 }
