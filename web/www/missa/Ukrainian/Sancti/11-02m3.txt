@@ -1,0 +1,29 @@
+[Rank]
+In Commemoratione Omnium Fidelium Defunctorum Ad tertiam Missam;;Duplex;;3;;ex C9
+
+[Rank] (rubrica 196)
+In Commemoratione Omnium Fidelium Defunctorum Ad tertiam Missam;;I. classis;;6;;ex C9
+
+[Rule]
+ex C9
+no Gloria
+no Credo
+Prefatio=Defunctorum
+multiple3
+Sequentia
+
+[Oratio]
+Боже, Ти даруєш прощення та бажаєш людського спасіння: благаємо Тебе в Твоїй милості й за заступництвом блаженної Приснодіви Марії з усіма святими Твоїми, щоб Ти благоволив привести до співучасті в постійному блаженстві братів, близьких та доброчинців усіх тут зібраних.
+$Per Dominum
+
+[Lectio]
+@Commune/C9:Lectio
+
+[Evangelium]
+@Commune/C9:Evangelium
+
+[Secreta]
+@Commune/C9:Secreta2
+
+[Postcommunio]
+@Commune/C9:Postcommunio2
