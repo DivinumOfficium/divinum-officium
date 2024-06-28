@@ -1426,7 +1426,11 @@ sub precedence {
   #	}
 
   # only short readings in monastic summer
-  $scriptura = '' if ($version =~ /monastic/i && $scriptura =~ /(?:Pasc|Pent)/ && $month < 11);
+  $scriptura = ''
+    if ( $version =~ /monastic/i
+      && $scriptura =~ /(?:Pasc|Pent)/
+      && $month < 11
+      && $dayname[1] !~ /Vigilia/);
 
   if ($scriptura) {
     %scriptura = %{officestring($lang1, $scriptura)};
