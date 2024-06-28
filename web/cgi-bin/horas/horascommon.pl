@@ -893,14 +893,15 @@ sub concurrence {
     }
 
     if (
-      ($rank >= (($version =~ /19(?:55|6)/) ? 6 : 7) && $crank < 6)    # e.g. 05-26-2022
+      (    $rank >= (($version =~ /19(?:55|6)/ && $dayofweek < 6) ? 6 : 7)
+        && $crank < 6)    # On Saturday, 1st Vespers gets commemorated in Festis I. cl. github #3907
       || ( $version =~ /196/
         && ($cwinner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat1/i && $crank <= 5)
         && ($rank >= 5 && $winner{Rule} =~ /Festum Domini/i)
-      )    #on a II. cl Sunday nothing at 1st Vespers in concurrence with a Feast of the Lord
+      )                   #on a II. cl Sunday nothing at 1st Vespers in concurrence with a Feast of the Lord
       || ($rank >= ($version =~ /trident/i ? 6 : 5) && $winner !~ /feria|in.*octava/i && $crank < 2.1)
       )
-    {      # on Duplex I. cl / II. cl no commemoration of following Simplex and Common Octaves
+    {                     # on Duplex I. cl / II. cl no commemoration of following Simplex and Common Octaves
       $dayname[2] .= "<br>Vespera de præcedenti; nihil de sequenti";
       $cwinner = '';
       %cwinner = ();
@@ -969,7 +970,8 @@ sub concurrence {
       $cvespera = 1;
       $commemoratio = $cwinner;
       $dayname[2] = "Commemoratio: $cwrank[0]";
-      $dayname[2] .= "<br>Vespera de præcedenti; commemoratio de sequenti Dominica";
+      $dayname[2] .= "<br>Vespera de præcedenti; commemoratio de sequenti";
+      $dayname[2] .= " Dominica" if $cwinner{Rank} =~ /Dominica/i;
     } elsif ($flcrank == $flrank) {    # "flattend ranks" are equal => a capitulo
       $commemoratio = $winner;
       %commune =
