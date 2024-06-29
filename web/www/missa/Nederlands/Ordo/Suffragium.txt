@@ -29,19 +29,16 @@ Moge deze communie, o Heer, ons reinigen van onze misslagen en door de voorspraa
 $Per eundem
 
 [Oratio Maria3]
-!de S. Maria
-Wij vragen U, Heer, laat ons, uw dienaren, een bestendige gezondheid naar ziel en lichaam genieten en op voorspraak van de heilige Maria, altijd Maagd, verlost worden van de droefheid van dit leven en de eeuwige vreugde smaken.
-$Per Dominum
+!de S. Maria (vel ad libitum)
+@Commune/C10:Oratio
 
 [Secreta Maria3]
-!de S. Maria
-Moge deze offerande, Heer, door uw goedgunstigheid en de voorbede van de heilige Maria, altijd Maagd, ons strekken tot eeuwig en tijdelijk geluk en vrede.
-$Per Dominum
+!de S. Maria (vel ad libitum)
+@Commune/C10:Secreta
 
 [Postcommunio Maria3]
-!de S. Maria
-Nu wij, Heer, de hulpmiddelen ter zaligheid ontvangen hebben, vragen wij U, laat ons altijd door de bescherming van de heilige Maria, altijd Maagd, omringd worden, want haar ter ere hebben wij ook dit offer opgedragen.
-$Per Dominum
+!de S. Maria (vel ad libitum)
+@Commune/C10:Postcommunio
 
 [Oratio Ecclesiæ]
 !Contra persecutores Ecclesiæ
