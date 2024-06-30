@@ -1,1 +1,54 @@
-@Tempora/Pent03-5Feria
+@Tempora/Pent03-5
+
+[Rule]
+ex TemporaM/Pent02-5
+12 lectiones
+Doxology=Heart
+Psalmi Dominica
+Feria Te Deum
+Antiphonas Horas
+
+
+[Lectio1]
+@TemporaM/Pent02-5
+
+[Lectio2]
+@TemporaM/Pent02-5
+
+[Lectio3]
+@TemporaM/Pent02-5
+
+[Lectio4]
+@TemporaM/Pent02-5
+
+[Lectio5]
+@Tempora/Pent03-2:Lectio4:1
+@Tempora/Pent03-2:Lectio5: s/ígitur // s/$/~/
+@Tempora/Pent03-2:Lectio6
+
+[Lectio6]
+@Tempora/Pent03-4:Lectio4:2
+
+[Lectio7]
+@Tempora/Pent03-4:Lectio5
+
+[Lectio8]
+@Tempora/Pent03-4:Lectio6
+
+[Lectio9]
+@Tempora/Pent03-5:Lectio7: s/Hoc .*//
+
+[Lectio10]
+@Tempora/Pent03-5:Lectio7: s/.*(Hoc)/$1/s s/$/~/
+@Tempora/Pent03-5:Lectio8: s/O mors .*//
+
+[Lectio11]
+@Tempora/Pent03-5:Lectio8: s/.*(O mors)/$1/
+
+[Lectio12]
+@Tempora/Pent03-5:Lectio9
+
+[LectioE]
+@Tempora/Pent02-5
+
+

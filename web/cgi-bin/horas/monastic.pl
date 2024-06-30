@@ -163,7 +163,7 @@ sub psalmi_matutinum_monastic {
     setbuild2("Antiphonas Psalmi Proprium aut Communem");
   } elsif (
     (
-      $dayname[1] =~ /(?:Die|Feria|Sabbato).*infra octavam|post Octavam Asc|Quattuor Temporum Pent/
+      $dayname[1] =~ /(?:Die|Feria|Sabbato).*infra octavam|post Octavam Asc|Quattuor Temporum Pent/i
       || ($dayname[1] =~ /in Vigilia Pent/i && $version !~ /196/)
 
     )
