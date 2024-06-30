@@ -1,0 +1,14 @@
+[Lectio5]
+@Tempora/Pent03-2:Lectio4:1
+@Tempora/Pent03-2:Lectio5: s/thus // s/$/~/
+@Tempora/Pent03-2:Lectio6
+
+[Lectio9]
+@Tempora/Pent03-5:Lectio7: s/All .*//
+
+[Lectio10]
+@Tempora/Pent03-5:Lectio7: s/.*(All)/$1/s s/$/~/
+@Tempora/Pent03-5:Lectio8: s/What .*//
+
+[Lectio11]
+@Tempora/Pent03-5:Lectio8: s/.*(What)/$1/

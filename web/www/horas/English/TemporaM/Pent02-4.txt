@@ -1,0 +1,12 @@
+[Lectio6]
+@Tempora/Pent02-4:Lectio5: s/Under.*//
+
+[Lectio7]
+@Tempora/Pent02-4:Lectio5: s/.*(Under)/$1/
+
+[Lectio9]
+@Tempora/Pent02-4:Lectio7: s/Another .*//
+
+[Lectio10]
+@Tempora/Pent02-4:Lectio7: s/.*(Another)/$1/s
+
