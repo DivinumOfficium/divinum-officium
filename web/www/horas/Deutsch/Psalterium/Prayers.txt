@@ -54,12 +54,12 @@ R. Und das ewige Leben. Amen.
 (sed rubrica ^Trident)
 /:Nachdem der Hymnus:/ Te Deum laudamus /:oder das letzte Responsorium vorgetragen wurde, beginnt man die Hore direkt wie folgt::/
 
-[Rubrica Matutinum]
+[rubrica Matutinum]
 !Das Folgende betet man nur, wenn sich die %Laudes% nicht unmittelbar anschließen.
 (sed rubrica tridentina)
 !Nachdem der Hymnus Te Deum laudamus oder das neunte oder dritte Responsorium vorgetragen wurde, beginnt man direkt mit den %Laudes%, mit Ausnahme der Heiligen Nacht: in dieser betet man die Oratio und im Anschluß wird die Christmette zelebriert wie es an entsprechender Stelle angegeben ist.
 
-[Rubrica Matutinum] (rubrica monastica)
+[rubrica Matutinum] (rubrica monastica)
 !Das Folgende betet man nur, wenn sich die %Laudes% nicht unmittelbar anschließen.
 (sed rubrica tridentina aut rubrica divino)
 !Das Folgende betet man in Offizien mit 12 Lesungen nur, wenn sich die %Laudes% nicht unmittelbar anschließen. An Simplexfesten und im Ferialoffizium (sei es mit drei oder einer Lesung) betet man das folgende stets.
@@ -274,41 +274,41 @@ Im Hinblick auf Christus, unsern Herrn.
 [Oratio Visita_]
 v. Nimm, wir bitten dich, o Herr, Wohnung in diesem Gemach und alle Nachstellungen des Feindes scheuche weit von ihm weg; deine heiligen Engel mögen in ihm Wohnung nehmen, die uns im Frieden beschützen, und dein Segen walte stets über uns.
 
-[Rubrica Martyrologium] (rubrica monastica)
+[rubrica Martyrologium] (rubrica monastica)
 /:Danach wird in Choro das Martyrologium gelesen, wo es sich ziemt auch extra Chorum.:/
 
-[Rubrica Regula] (rubrica monastica)
+[rubrica Regula] (rubrica monastica)
 /:Extra Chorum ziemt es sich ebenso aus der Hl. Regula zu lesen; andernfalls betet man die folgende Kurzlesung.:/
 
-[Respice]
+[respice]
 V. Schau doch hernieder,  o Herr, auf deine Knechte, die du selbst geschaffen, und leite richtig ihre Kinder.
 R. Es leuchte deine Huld, o Herr und unser Gott, nun über uns und leite die Werke unserer Hände durch dein Walten über uns und lenke das, was unsere Hände auszuführen haben.
 
-[Dirigere]
+[dirigere]
 v. Würdige dich, o Herr und Gott, du König des Himmels und der Erde, heute zu leiten und zu heiligen, zu beherrschen und zu lenken unsere Herzen und alles, was in uns ist, die Gedanken, die Worte und die Werke gemäß deinem Gesetz und so, daß sie zu den Werken gehören, die deinen Vorschriften entsprechen, damit wir, hier und auf ewig, mit deiner Hilfe würdig werden, heil und vom Übel frei zu sein, o du Heiland der Welt, 
 
-[Benedictio Prima]
+[benedictio Prima]
 V. Laß, o Herr, den Segen erteilen.
 Benedictio. Unsere Tage und unsere Werke mag, daß wir in Freundschaft mit ihm bleiben, ordnen der allmächtige Herr. Amen.
 
-[Benedictio Prima2]
+[benedictio Prima2]
 Benedictio. Der Herr möge uns segnen + und uns vor allem Schaden bewahren und uns zum ewigen Leben führen. Und die Seelen der verstorbenen Gläubigen mögen auf Grund der Barmherzigkeit Gottes zur Ruhe im Frieden gelangen.
 
 [Benedicite]
 V. Gebt den Segen.
 R. Gott [möge ihn geben].
 
-[Commemoratio omnium]
+[commemoratio omnium]
 R.br. Gedenken an alle Brüder, Familien unseres Ordens und unsere Wohltäter.
 
 [Requiescant]
 V. Laß sie ruhen in Frieden.
 R. Amen.
 
-[Deus veniae]
+[deus veniae]
 v. O Gott, der Du barmherzig bist und das Heil der Menschen liebst: wir bitten Dich um Deine Milde: auf daß Du allen Brüdern unserer Kongregation, Freunde und Wohltäter, die aus dieser Welt geschieden sind, durch die Fürsprache der seligen allzeit reinen Jungfrau Maria und aller Heiligen die Gemeinschaft in der ewigen Glückseligkeit gewähren mögest. 
 
-[Oratio_Domine]
+[oratio_Domine]
 v. O allmächtiger Herr und Gott, der du uns zum Beginn dieses Tages hast gelangen lassen, erhalte uns heute heil auf Grund deiner Kraft, damit wir an diesem Tage zu keiner Sünde abweichen, sondern daß stets zum Erfüllen dessen, was bei dir Recht ist, das ausgehe, was wir reden, und das geleitet werde, was wir denken und tun.
 
 [Examen]

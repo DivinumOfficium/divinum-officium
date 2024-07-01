@@ -23,12 +23,21 @@ $Deus in adjutorium
 (sed rubrica 196 aut rubrica 1955 aut rubrica ^Monastic omittitur)
 
 #Oratio
-$Oratio Domine
+(rubrica 1963 dicitur)
+$MLitany2
+(sed rubrica 1617 aut rubrica 1930 dicitur)
+&MLitany2
+&Dominus_vobiscum1
+(sed rubrica 196 aut rubrica 1955 dicitur)
+&Dominus_vobiscum
+$Oremus
+$oratio_Domine
+$Per Dominum
 &Dominus_vobiscum
 &Benedicamus_Domino
 
 (rubrica ^Monastic dicitur)
-$Rubrica Martyrologium
+$rubrica Martyrologium
 #Martyrologium
 &martyrologium
 
@@ -36,12 +45,13 @@ $Rubrica Martyrologium
 $Deus in adjutorium iij
 &Gloria
 $MLitany2
-$Respice
+$respice
 &Gloria
 $Oremus
-$Dirigere
+$dirigere
+$Amen
 
-$Benedictio Prima
+$benedictio Prima
 (rubrica ^Monastic dicitur)
 &regula
 #Lectio brevis
@@ -50,7 +60,7 @@ $Tu autem
 #Conclusio
 $Adjutorium nostrum
 $Benedicite
-$Benedictio Prima2
+$benedictio Prima2
 $Amen
 
 $Pater post
@@ -58,4 +68,3 @@ $Pater post
 
 (rubrica ^Monastic dicuntur)
 #Commemoratio defunctorum
-$Defunctorum

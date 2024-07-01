@@ -46,12 +46,12 @@ $Pater noster
 (sed rubrica ^Trident)
 /:Après l'hymne :/ Te Deum laudamus /:ou le dernier répons a été récité, l'heure commence directement comme suit ::/
 
-[Rubrica Matutinum]
+[rubrica Matutinum]
 !Sauter le reste, à moins de prier %Lauds% séparément.
 (sed rubrica tridentina)
 !Après avoir récité l'hymne Te Deum laudamus ou le neuvième ou le troisième répons, on commence directement par les %Laudes%, à l'exception de la Nuit de Noël : dans celle-ci on récite l'Oratio puis la messe de Noël est célébré comme il est indiqué à l'endroit approprié.
 
-[Rubrica Matutinum] (rubrica monastica)
+[rubrica Matutinum] (rubrica monastica)
 !Sauter le reste, à moins de prier %Lauds% séparément.
 (sed rubrica tridentina aut rubrica divino)
 !Sauter le reste dans les offices de 12 leçons, à moins de prier %Lauds% séparément. Lors des fêtes Simplex et des jours fériés (que ce soit avec trois ou une lecture), ce qui suit est toujours prié.
@@ -275,39 +275,38 @@ Par le même J.-C. N.-S.
 [Oratio Visita_]
 v. Visitez, s’il vous plaît, Seigneur, cette maison et éloignez-en toutes les embûches de l’ennemi ; que vos saints Anges y habitent, qu’ils nous gardent dans la paix et que votre bénédiction demeure toujours sur nous.
 
-[Oratio_Domine]
+[oratio_Domine]
 v. Seigneur, Dieu tout-puissant, qui nous avez fait parvenir au commencement de ce jour, sauvez-nous aujourd'hui par Votre puissance, afin que durant le cours de cette journée nous ne nous laissions aller à aucun péché : mais que nos paroles, nos pensées et nos œuvres tendent toujours à l'accomplissement de Votre justice.
 
-[Rubrica Martyrologium] (rubrica monastica)
+[rubrica Martyrologium] (rubrica monastica)
 /:Puis le Martyrologe est lu en chœur.:/
 
-[Respice]
+[respice]
 V. Jetez, Seigneur, un regard favorable sur Vos serviteurs et sur Vos œuvres, et guidez leurs enfants.
 R. Et que la lumière du Seigneur notre Dieu brille sur nous. Dirigez les œuvres de nos mains. Oui, dirigez l'œuvre de nos mains.
 
-[Dirigere]
+[dirigere]
 v. Daignez, Seigneur Dieu, Roi du Ciel et de la terre, diriger et sanctifier, régir et gouverner en ce jour nos cœurs et nos corps, nos sentiments, nos paroles et nos actes, selon Votre loi et l'accomplissement de Vos préceptes, afin qu'ici-bas et pour l'Eternité, nous obtenions d'être sauvés et délivrés par Votre secours, ô Sauveur du monde, qui vivez et régnez dans les siècles des siècles.
-R. Amen.
 
-[Benedictio Prima]
+[benedictio Prima]
 V. Seigneur, veuillez me bénir.
 Benedictio. Que le Seigneur tout-puissant établisse dans Sa paix nos jours et nos actions. 
 R. Ainsi soit-il.
 
-[Benedictio Prima2]
+[benedictio Prima2]
 Benedictio. Que le Seigneur tout-puissant nous bénisse, + nous protège de tout mal et nous conduise à la vie éternelle. Et que par la miséricorde de Dieu, les âmes des fidèles trépassés reposent en paix. 
 
 [Benedicite]
 V. Seigneur, veuillez me bénir.
 
-[Commemoratio omnium]
+[commemoratio omnium]
 R.br. Souvenons-nous de tous nos frères, amis de notre Ordre et de nos bienfaiteurs.
 
 [Requiescant]
 V. Qu'ils reposent en paix.
 R. Amen.
 
-[Deus veniae]
+[deus veniae]
 v. Ô Dieu qui donnez le pardon et qui aimez le salut des hommes, nous implorons votre clémence : accordez aux frères de notre congrégation, à nos proches et à nos bienfaiteurs, qui ont quitté ce monde, la bienheureuse Marie, toujours Vierge, intercédant auprès de tous les saints, de parvenir à la communion de l'éternelle béatitude.
 
 [Examen]

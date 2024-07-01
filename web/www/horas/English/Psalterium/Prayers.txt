@@ -50,12 +50,12 @@ R. And life everlasting. Amen.
 (sed rubrica ^Trident)
 /:After the hymn:/ Te Deum laudamus /:or the last responsory has been recited, the hour begins directly as follows::/
 
-[Rubrica Matutinum]
+[rubrica Matutinum]
 !Skip the rest, unless praying %Lauds% separately.
 (sed rubrica tridentina)
 !After the hymn Te Deum laudamus or the ninth or third responsory has been recited, one begins directly with the %Laudes%, with the exception of Christmas Night: in this one prays the Oratio and then the Christmas mass is celebrated as it is stated at the appropriate place.
 
-[Rubrica Matutinum] (rubrica monastica)
+[rubrica Matutinum] (rubrica monastica)
 !Skip the rest, unless praying %Lauds% separately.
 (sed rubrica tridentina aut rubrica divino)
 !Skip the rest in Offices of 12 lessons, unless praying %Lauds% separately. On Simplex feasts and on ferial days (be it with three or one reading) the following is always prayed.
@@ -278,43 +278,42 @@ Through Christ our Lord.
 [Oratio Visita_]
 v. Visit, we beseech thee, O Lord, this dwelling, and drive far from it the snares of the enemy; let thy holy angels dwell herein to preserve us in peace, and let thy blessing be always upon us.
 
-[Oratio_Domine]
+[oratio_Domine]
 v. O Lord, our heavenly Father, Almighty and everlasting God, who has safely brought us to the beginning of this day: defend us by thy mighty power; and grant that this day we fall into no sin, but that all our doings may be ordered by thy governance, to do always what is righteous in thy sight.
 
-[Rubrica Martyrologium] (rubrica monastica)
+[rubrica Martyrologium] (rubrica monastica)
 /:Then the Martyrology is read in Choir.:/
 
-[Rubrica Regula] (rubrica monastica)
+[rubrica Regula] (rubrica monastica)
 /:Even outside of Choir, it is laudible to read the Holy Regula; otherwise, the Short Reading is prayed:/
 
-[Respice]
+[respice]
 V. Look upon thy servants and upon thy works: and direct their children.
 R. And let the brightness of the Lord our God be upon us. Direct thou the works of our hands; yea, the work of our hands do thou direct.
 
-[Dirigere]
+[dirigere]
 v. O Lord, Almighty God, King of heaven and earth, Saviour of the world, bless, lead, rule and govern our hearts and bodies, our senses, words and deeds today, following thy law and commandments, that here and for eternity with thy help we shall be saved in freedom. Who livest and reignest, world without end.
-R. Amen.
 
-[Benedictio Prima]
+[benedictio Prima]
 V. Grant, Lord, a blessing.
 Benedictio. May Almighty God arrange our deeds and our day in His peace. 
 R. Amen.
 
-[Benedictio Prima2]
+[benedictio Prima2]
 Benedictio. May the Lord bless us, + protect us from all evil and bring us to everlasting life. And may the souls of the faithful, through the mercy of God, rest in peace. 
 
 [Benedicite]
 V. Let us bless.
 R. God.
 
-[Commemoratio omnium]
+[commemoratio omnium]
 R.br. Commemoration of all brothers, friends of our Order, and our benefactors.
 
 [Requiescant]
 V. May they rest in peace.
 R. Amen.
 
-[Deus veniae]
+[deus veniae]
 v. O God the giver of pardon, and the lover of human salvation, we beseech thy clemency: that thou grant the brethren of our congregation, kinsfolk, and benefactors, which are departed out of this world, blessed Mary ever Virgin making intercession with all the saints, to come to the fellowship of eternal blessedness.
 
 [Examen]
