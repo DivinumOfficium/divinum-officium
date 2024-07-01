@@ -5,5 +5,14 @@ S. Antonii Abbatis;;Duplex;;3;;vide C4c
 vide C4c;
 9 lectiones
 
+[Oratio]
+@Commune/C4c:Oratio:s/N\./Antonii/
+
+[Secreta]
+@Commune/C4c:Secreta:s/N\./Antonii/
+
+[Postcommunio]
+@Commune/C4c:Secreta:s/N\./Antonii/
+
 [Evangelium]
 @Commune/C5:Evangelium

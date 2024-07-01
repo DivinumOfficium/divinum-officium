@@ -21,7 +21,8 @@ Deus, qui nos beáti Pauli Confessóris tui ánnua sollemnitáte lætíficas: co
 $Per Dominum
 
 [Commemoratio Oratio]
-@Commune/C4c:Oratio
+!Pro S. Mauro Abbate
+@Commune/C4c:Oratio:s/N\./Mauro/
 
 [Lectio]
 Léctio Epístolæ beáti Pauli Apóstoli ad Philippénses
@@ -51,7 +52,7 @@ $Per Dominum
 
 [Commemoratio Secreta]
 !Pro S. Mauro Abbate
-@Commune/C4c:Secreta
+@Commune/C4c:Secreta:s/N\./Mauro/
 
 [Communio]
 !Ps 63:11
@@ -63,4 +64,4 @@ $Per Dominum
 
 [Commemoratio Postcommunio]
 !Pro S. Mauro Abbate
-@Commune/C4c:Postcommunio
+@Commune/C4c:Postcommunio:s/N\./Mauro/
