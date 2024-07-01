@@ -5,11 +5,10 @@ S. Sabbæ Abbatis;;Simplex;;1.1;;vide C4c
 vide C4c;
 
 [Oratio]
-@Commune/C4c
+@Commune/C4c:Oratio:s/N\./Sabbas/
 
 [Secreta]
 @Commune/C4c:Secreta:s/N\./Sabbas/
 
 [Postcommunio]
-Prótegat nos, Dómine, cum tui perceptióne sacraménti beátus Sabbas, pro nobis intercedéndo: ut et conversatiónis ejus experiámur insígnia, et intercessiónis percipiámus suffrágia.
-$Per Dominum
+@Commune/C4c:Postcommunio:s/N\./Sabbas/
