@@ -117,9 +117,9 @@ set_runtime_options('parameters');                    # priest, lang1 ... etc
 
 if ($command =~ s/changeparameters//) { getsetupvalue($command); }
 
-$version = check_version($version);
-$lang1 = check_language($lang1);
-$lang2 = check_language($lang2);
+$version = check_version($version) || (error("Unknown version: $version") && 'Rubrics 1960 - 1960');
+$lang1 = check_language($lang1) || (error("Unknown language: $lang1") && 'Latin');
+$lang2 = check_language($lang2) || 'English';
 
 our $plures = strictparam('plures');
 my @horas = ();

@@ -19,12 +19,12 @@ sub unequivocal {
   my @r = grep {/$value/} @values_array;
 
   if (@r == 1) {
-    return $r[0];
+    return $r[0] =~ s/.*\///r;
   } else {
     @r = grep { $_ eq $value } @values_array;
 
     if (@r == 1) {
-      return $r[0];
+      return $r[0] =~ s/.*\///r;
     } else {
       return;
     }
@@ -45,7 +45,7 @@ use constant LEGACY_VERSION_NAMES => {
 sub check_version {
   my $v = shift;
 
-  LEGACY_VERSION_NAMES->{$v} || unequivocal($v, 'versions') =~ s/.*\///r;
+  LEGACY_VERSION_NAMES->{$v} || unequivocal($v, 'versions');
 }
 
 sub check_horas {
@@ -57,7 +57,7 @@ sub check_horas {
 sub check_language {
   my $l = shift;
 
-  unequivocal($l, 'languages') =~ s/.*\///r;
+  unequivocal($l, 'languages');
 }
 
 1;
