@@ -338,15 +338,15 @@ sub specials {
       my %brevis = %{setupstring($lang, 'Psalterium/Prima Special.txt')};
       my $name =
           ($dayname[0] =~ /(Quad5|Quad6)/i) ? 'Quad5'
-        : ($dayname[0] =~ /Quad/i && $dayname[0] !~ /Quadp/i) ? 'Quad'
-        : ($dayname[0] =~ /Quadp[3]/i && $dayofweek >= 3 && $version !~ /1960/) ? 'Feria'
+        : ($dayname[0] =~ /Quad(?!p)/i) ? 'Quad'
+        : ($dayname[0] =~ /Quadp[3]/i && $dayofweek >= 3 && $version !~ /196/) ? 'Feria'
         : ($dayname[0] =~ /Adv/i) ? 'Adv'
         : ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek > 3)) ? 'Asc'
         : ($dayname[0] =~ /Pasc[0-6]/i) ? 'Pasc'
         : ($dayname[0] =~ /Pasc7/i) ? Pent
         : 'Per Annum';
 
-      if ($version =~ /1960/) {
+      if ($version =~ /196/) {
         my $d = ($dayname[0] =~ /Nat/i) ? $dayname[0] : "$dayname[0]-$dayofweek";
         if ($d =~ /Nat/i) { $name = 'Nat'; }
 
@@ -362,7 +362,7 @@ sub specials {
       setbuild('Psalterium/Prima Special', $name, 'Lectio brevis ord');
 
       #look for [Lectio Prima]
-      if ($version !~ /(1955|1960)/) {
+      if ($version !~ /(1955|196)/) {
         %w = (columnsel($lang)) ? %winner : %winner2;
         my $b = '';
 
