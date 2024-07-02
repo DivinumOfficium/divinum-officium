@@ -50,12 +50,12 @@ R. żywot wieczny. Amen.
 (sed rubrica ^Trident)
 /:Po hymnie:/ Te Deum laudamus /:lub odmówieniu ostatniego responsorium, godzina rozpoczyna się bezpośrednio w następujący sposób::/
 
-[Rubrica Matutinum]
+[rubrica Matutinum]
 !Opuścić resztę, jeśli %Laudesy% nie są odmawiane osobno.
 (sed rubrica tridentina)
 !Po odmówieniu hymnu Te Deum laudamus lub dziewiątego lub trzeciego responsorium rozpoczyna się bezpośrednio od %Laudesy%, z wyjątkiem Nocy Bożego Narodzenia: w tym czasie odmawia się Oratio, a następnie odprawia się Mszę Bożonarodzeniową obchodzony tak, jak podano w odpowiednim miejscu.
 
-[Rubrica Matutinum] (rubrica monastica)
+[rubrica Matutinum] (rubrica monastica)
 !Opuścić resztę, jeśli %Laudesy% nie są odmawiane osobno.
 (sed rubrica tridentina aut rubrica divino)
 !Opuścić resztę w Oficjach 12 lekcji, jeśli %Laudesy% nie są odmawiane osobno. W święta Simplex i dni świąteczne (z trzema lub jednym czytaniem) zawsze odmawia się następującą modlitwę.
@@ -275,41 +275,41 @@ Przez Chrystusa Pana naszego.
 [Oratio Visita_]
 v. Nawiedź, prosimy Cię, Panie, ten dom, i oddal od niego wszelkie wrogie zasadzki: niech mieszkają w nim Twoi święci Aniołowie i strzegą nas w pokoju; a błogosławieństwo Twoje niech zawsze będzie z nami.
 
-[Oratio_Domine]
+[oratio_Domine]
 v. Panie Boże wszechmogący, który bezpiecznie nas doprowadziłeś do początku dnia dzisiejszego: ochraniaj nas dzisiaj Swą mocą; abyśmy się tego dnia nie skłonili do żadnego grzechu, ale zawsze kierowali swoje myśli i uczynki do czynienia twojej sprawiedliwości.
 
-[Rubrica Martyrologium] (rubrica monastica)
+[rubrica Martyrologium] (rubrica monastica)
 /:Następnie w chórze czyta się Martyrologium, co jest chwalebne także poza chórem.:/
 
-[Rubrica Regula] (rubrica monastica)
+[rubrica Regula] (rubrica monastica)
 /:Poza chórem chwalebne jest czytanie z Reguły; inaczej czyta się Czytanie krótkie.:/
 
-[Respice]
+[respice]
 V. Wejrzyj na sługi Swoje, Panie, i na dzieła Twoje, i prowadź ich dzieci.
 R. I niech jasność Pana Boga naszego będzie nad nami, i prowadź pracę rąk naszych, i dzieła rąk naszych prowadź.
 
-[Dirigere]
+[dirigere]
 v. Panie Boże, królu nieba i ziemi, racz dzisiaj prowadzić i uświęcać, władać i kierować, serca i ciała nasze, zmysły, słowa i czyny nasze według prawa Twojego, i według przykazań Twoich: abyśmy teraz i w wieczności, przez Ciebie wspierani, zasłużyli na zbawienie i wyzwolenie, Zbawicielu świata: Który żyjesz i królujesz na wieki wieków.
 
-[Benedictio Prima]
+[benedictio Prima]
 V. Pobłogosław, ojcze.
 Benedictio. Dniem i czynami naszymi niech w swoim pokoju rozporządza Pan wszechmogący. Amen.
 
-[Benedictio Prima2]
+[benedictio Prima2]
 Benedictio. Niech Pan nas błogosławi, + i broni od wszelkiego zła, i doprowadzi do życia wiecznego. A dusze wiernych zmarłych przez miłosierdzie Boże niech odpoczywają w pokoju.
 
 [Benedicite]
 V. Błogosław nam.
 R. Boże.
 
-[Commemoratio omnium]
+[commemoratio omnium]
 R.br. Wspomnienie wszystkich braci, przyjaciół Zakonu naszego, a także dobroczyńców naszych.
 
 [Requiescant]
 V. Niech odpoczywają w pokoju.
 R. Amen
 
-[Deus veniae]
+[deus veniae]
 v. Boże, dawco przebaczenia i zbawienia ludzkiego miłośniku: błagamy łaskawości Twojej, abyś braci naszego zgromadzenia, naszych bliskich i dobroczyńców, którzy z tego świata zeszli, za wstawieniem się błogosławionej Marji, zawsze Panny i wszystkich Świętych Twoich, do uczestnictwa w wiecznej szczęśliwości dojść dozwolił.
 
 [Examen]

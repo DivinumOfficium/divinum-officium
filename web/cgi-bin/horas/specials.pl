@@ -516,6 +516,14 @@ sub specials {
       next;
     }
 
+    if ($item eq '#Commemoratio defunctorum') {
+      $item =~ s/.//;
+      push @s, translate($label, $lang);
+      my %ps = %{setupstring($lang, 'Psalterium/Prima Special.txt')};
+      push @s, $ps{$item};
+      next;
+    }
+
     #flag for Litaniae majores for St Marks day: for Easter Sunday (in 1960 also from Easter Monday) to Tuesday,
     my $flag = 0;
 

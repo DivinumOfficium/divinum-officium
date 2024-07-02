@@ -38,12 +38,12 @@ Hiszek Szentlélekben. Katolikus keresztény Anyaszentegyházat; a szenteknek eg
 (sed rubrica ^Trident)
 /:A himnusz után:/ Te Deum laudamus /:vagy az utolsó reszponzórium elhangzott, az óra közvetlenül a következőképpen kezdődik::/
 
-[Rubrica Matutinum]
+[rubrica Matutinum]
 !Hagyd ki a többit, kivéve ha a %Laudest% külön imádkozod.
 (sed rubrica tridentina)
 !A himnusz után Te Deum laudamus vagy a kilencedik vagy a harmadik reszponzórium elmondása után az ember közvetlenül a %Laudest%-szal kezdődik, a karácsony éjszakája kivételével: ebben az oratio imádkozik, majd a karácsonyi mise. a megfelelő helyen megünnepeljük.
 
-[Rubrica Matutinum] (rubrica monastica)
+[rubrica Matutinum] (rubrica monastica)
 !Hagyd ki a többit, kivéve ha a %Laudest% külön imádkozod.
 (sed rubrica tridentina aut rubrica divino)
 !Hagyd ki a többit az Offices of 12 lessons-ban, kivéve ha a %Laudest% külön imádkozod. Simplex ünnepeken és lázas napokon (legyen az három vagy egy felolvasás) mindig a következőket imádkozzák.
@@ -260,28 +260,28 @@ Ugyanazon Jézus Krisztus a te fiad által.
 [Oratio Visita_]
 v. Látogasd meg, Urunk, hajlékunkat, és az ellenség minden cselvetését tartsd távol tőlünk; angyalaid lakjanak velünk, akik békében védelmeznek minket; és áldásod legyen velünk mindig.
 
-[Oratio_Domine]
+[oratio_Domine]
 v. Mindenható Isten, aki a mai napot megadtad nekünk, őrizz meg minket a te erőddel, hogy ne engedjünk a bűn kísértésének és mindig a te igazságod vezesse gondolatainkat és cselekedeteinket.
 
-[Respice]
+[respice]
 V. Figyelj, Uram, szolgáidra és cselekedeteikre, irányítsd fiaidat.
 R. Az Úr fényessége legyen felettünk és cselekedeteink felett; irányítsa minden döntésünket.
 
-[Dirigere]
+[dirigere]
 v. Urunk és Istenünk, ég és föld királya, irányítsd és szenteld meg, vezesd és kormányozd szívünket és testünket, érzékeinket, beszédünket és cselekedeteinket a mai napon a te parancsaid szerint, hogy most és örökre a te segítségeddel, világ Megváltója, szabadok és épek maradhassunk. Aki élsz és uralkodol mindörökkön-örökké.
 
-[Benedictio Prima]
+[benedictio Prima]
 V. Áldj meg minket Uram.
 Benedictio. Napjaink és cselekedeteink a te békédben teljenek el, mindenható Isten. Ámen.
 
-[Benedictio Prima2]
+[benedictio Prima2]
 Benedictio. Áldjon meg minket az Úr, + szabadítson meg minden gonosztól és vezessen el az örök életre, és a megholt hívek lelkei Isten irgalmasságából nyugodjanak békességben.
 
 [Benedicite]
 V. Mondjatok áldást.
 R. Istenünk.
 
-[Commemoratio omnium]
+[commemoratio omnium]
 R.br. Megemlékezés testvéreinkről, rendünk barátairól es jótevőinkről.
 
 [Requiescant]

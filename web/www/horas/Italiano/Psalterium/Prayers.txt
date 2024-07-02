@@ -50,12 +50,12 @@ R. La vita eterna. Amen.
 (sed rubrica ^Trident)
 /:Dopo l'inno:/ Te Deum laudamus /:oppure recitato l'ultimo responsorio, l'ora inizia direttamente così::/
 
-[Rubrica Matutinum]
+[rubrica Matutinum]
 !Si salta il resto, a meno che si preghino le %Lodi% separatamente.
 (sed rubrica tridentina)
 !Dopo aver recitato l'inno Te Deum laudamus o il nono o il terzo responsorio, si comincia direttamente con le %Lodi%, ad eccezione della notte di Natale: in questa si prega l'Oratio e poi si celebra la messa di Natale celebrato come indicato nel luogo opportuno.
 
-[Rubrica Matutinum] (rubrica monastica)
+[rubrica Matutinum] (rubrica monastica)
 !Si salta il resto, a meno che si preghino le %Lodi% separatamente.
 (sed rubrica tridentina aut rubrica divino)
 !Si salta il resto negli Uffici di 12 lezioni, a meno che si preghino le %Lodi% separatamente. Nelle feste del Simplesso e nei giorni feriali (sia con tre che con una lettura) si prega sempre quanto segue.
@@ -270,36 +270,35 @@ Per lo stesso Cristo Signor nostro.
 [Oratio Visita_]
 r. Visita, o Signore, te ne preghiamo, quest’abitazione e respingi lungi da essa tutte le insidie del nemico: i tuoi Santi Angeli abitino in essa, ci custodiscano in pace; e la tua benedizione sia sempre sopra di noi. 
 
-[Oratio_Domine]
+[oratio_Domine]
 v. Signore Dio onnipotente, che ci hai fatti pervenire al principio di questo giorno: difendici oggi colla tua potenza, affinché in questa giornata non ci pieghiamo ad alcun peccato, ma ad operare secondo la tua giustizia siano sempre rivolte le nostre parole, siano diretti i nostri pensieri ed azioni. 
 
-[Respice]
+[respice]
 V. Rivolgi, o Signore, lo sguardo sui tuoi servi e sulle tue opere, e guida i loro figli.
 R. E la luce del Signore Dio nostro sia sopra di noi, e dirigi tu in noi i lavori delle nostre mani, e guida l'opera delle nostre mani.
 
-[Dirigere]
+[dirigere]
 v. Degnati, Signore Iddio, Re del cielo e della terra, di dirigere e di santificare, di reggere e di governare oggi i cuori e i corpi nostri, i sensi, i discorsi e gli atti nostri, secondo la tua legge, e le opere [prescritte] dai tuoi comandamenti: affinché qui, ed in eterno, col tuo aiuto meritiamo di essere salvi e liberi, o Salvatore del mondo: Che vivi e regni nei secoli dei secoli. 
-R. Amen.
 
-[Benedictio Prima]
+[benedictio Prima]
 V. Comanda, o Signore, la benedizione
 Benedictio. Il Signore onnipotente disponga i giorni e gli atti nostri nella sua pace.
 
-[Benedictio Prima2]
+[benedictio Prima2]
 Benedictio. Signore ci benedica, + e ci difenda da ogni male, e ci conduca alla vita eterna. E le anime dei fedeli per la misericordia di Dio riposino in pace.
 
 [Benedicite]
 V. Benedite.
 R. O Dio.
 
-[Commemoratio omnium]
+[commemoratio omnium]
 R.br. Commemorazione di tutti i fratelli, famigliari del nostro Ordine, e dei nostri benefattori.
 
 [Requiescant]
 V. Riposino in pace.
 R. Amen.
 
-[Deus veniae]
+[deus veniae]
 v. Dio, che sei generoso nel perdono e vuoi la  salvezza degli uomini, noi supplichiamo la tua clemenza: per l'intercessione della beata Vergine Maria e dei tuoi santi, concedi alle anime di tutti i fedeli, che hanno lasciato questo mondo, di essere partecipi della felicità eterna.
 
 [Examen]

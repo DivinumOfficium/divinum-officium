@@ -54,12 +54,12 @@ R. Y la vida eterna. Amén.
 (sed rubrica ^Trident)
 /:Después del himno:/ Te Deum laudamus /:o recitado el último responsorio, la hora comienza directamente de la siguiente manera::/
 
-[Rubrica Matutinum]
+[rubrica Matutinum]
 !El resto se omite, salvo que %Laúdes% se haga aparte.
 (sed rúbrica tridentina)
 !Después de recitado el himno Te Deum laudamus o el noveno o tercer responsorio, se comienza directamente con las %Laudes%, a excepción de la Noche de Navidad: en ésta se reza la Oratio y luego la misa de Navidad. se celebra como se indica en el lugar correspondiente.
 
-[Rubrica Matutinum] (rubrica monastica)
+[rubrica Matutinum] (rubrica monastica)
 !El resto se omite, salvo que %Laúdes% se haga aparte.
 (sed rubrica tridentina aut rubrica divino)
 !El resto se omite en Oficios de 12 lecciones, salvo que %Laúdes% se haga aparte. En las fiestas Simplex y en los días feriales (ya sea con tres o una lectura) siempre se reza lo siguiente.
@@ -278,35 +278,35 @@ Por el mismo Jesucristo nuestro Señor.
 [Oratio Visita_]
 v. Visita, Señor, esta habitación: aleja de ella las insidias del enemigo; que tus ángeles santos habiten en ella y nos guarden en paz.
 
-[Oratio_Domine]
+[oratio_Domine]
 v. Señor, Dios omnipotente, que nos has concedido llegar al principio de este día: sálvanos hoy con tu virtud; para que en este día no caigamos en ningún pecado; sino que nuestras palabras, pensamientos y obras se dirijan siempre al cumplimiento de vuestra santa ley.
 
-[Respice]
+[respice]
 V. Mira a tus siervos, Señor, mira a tus obras y guía a tus hijos.  
 R. Baje a nosotros la gloria del Señor, nuestro Dios, y haga prósperas las obras de nuestras manos y dirige este mismo trabajo nuestro.
 
-[Dirigere]
+[dirigere]
 v. Dígnate, Señor Dios, Rey del cielo y de la tierra, dirigir y santificar, regir y gobernar hoy nuestros corazones, nuestros cuerpos, sentidos, palabras y actos en la observancia de tu ley, y en las obras de tus mandamientos, para que aquí y eternamente merezcamos con tu auxilio ser salvos y libres, Salvador del mundo. 
 
-[Benedictio Prima]
+[benedictio Prima]
 V. Dígnate, Señor, dar tu bendición. 
 Bendición. El Señor todopoderoso ordene con su paz nuestros días y tareas. Amén.
 
-[Benedictio Prima2]
+[benedictio Prima2]
 Bendición. El Señor nos bendiga, + nos defienda de todo mal y nos lleve a la vida eterna. Y las almas de los fieles, por la misericordia de Dios, descansen en paz.
 
 [Benedicite]
 V. Bendecid.
 R. Oh Dios.
 
-[Commemoratio omnium]
+[commemoratio omnium]
 R.br. Conmemoración de todos nuestros hermanos, de parientes de nuestra Orden, y de nuestros benefactores.
 
 [Requiescant]
 V. Descansed en paz.
 R. Amén
 
-[Deus veniae]
+[deus veniae]
 v. ¡Oh Dios, dispuesto al perdón y salvador de los hombres!; concédenos en tu bondad, por intercesión de Santa María, la Virgen, y de todos los santos, que nuestros hermanos, parientes y bienhechores, desaparecidos ya de este mundo, alcancen tu eterna bienaventuranza. Por nuestro Señor Jesucristo.
 
 [Examen]

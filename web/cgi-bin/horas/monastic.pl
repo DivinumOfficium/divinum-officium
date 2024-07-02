@@ -469,6 +469,6 @@ sub regula : ScriptFunc {
   }
 
   $t .= "\n" . prayer("Tu autem", $lang);
-  $t .= "\n_\n" . prayer("Rubrica Regula", $lang) . "\n_";
+  $t .= "\n_\n" . prayer("rubrica Regula", $lang) . "\n_";
   return $t;
 }

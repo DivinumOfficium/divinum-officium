@@ -52,12 +52,12 @@ R. Vitam ætérnam. Amen.
 (sed rubrica ^Trident)
 /:Dicto Hymno:/ Te Deum laudamus /:vel ultimo Responsorio, absolute dicitur Versus::/
 
-[Rubrica Matutinum]
+[rubrica Matutinum]
 !Reliqua omittuntur, nisi %Laudes% separandæ sint.
 (sed rubrica tridentina)
 !Dicto Hymno « Te Deum » aut nono vel tertio Responsorio ejus loco ponitur, statim inchoantur %Laudes%, præterquam in Nocte Nativitatis Domini; quia tunc dicitur Oratio, postea celebratur Missa, ut suo loco notatur.
 
-[Rubrica Matutinum] (rubrica monastica)
+[rubrica Matutinum] (rubrica monastica)
 !Reliqua omittuntur, nisi %Laudes% separandæ sint.
 (sed rubrica tridentina aut rubrica divino)
 !Reliqua omittuntur in Officium duodecim Lectionum, quando immediatæ subsequuntur %Laudes%. Sed in Festi Simplicis, et in Officio Ferialis tam trium, quam unius Lectionis semper dicuntur ut sequitur.
@@ -124,6 +124,9 @@ V. Glória Patri, et Fílio, * et Spirítui Sancto.
 [Requiem]
 V. Réquiem ætérnam * dona eis, Dómine.
 R. Et lux perpétua * lúceat eis.
+
+[Requiem2]
+@:Requiem:s/\ \*//g
 
 [Alleluia]
 v. Allelúja.
@@ -351,7 +354,7 @@ v. Vísita, quǽsumus, Dómine, habitatiónem istam, et omnes insídias inimíci
 [Oratio_Visita] (rubrica Ordo Praedicatorum)
 @:Oratio Visita_:s/Ángeli tui sancti hábitent/et Ángeli tui sancti habitántes/ s/qui //
 
-[Oratio Visita]
+[oratio Visita]
 (rubrica 1963 dicitur)
 $MLitany2
 (sed rubrica 1617 aut rubrica 1930 dicitur)
@@ -363,75 +366,45 @@ $Oremus
 @:Oratio_Visita
 $Per Dominum
 
-[Rubrica Martyrologium] (rubrica monastica)
+[rubrica Martyrologium] (rubrica monastica)
 /:Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum.:/
 
-[Rubrica Regula] (rubrica monastica)
+[rubrica Regula] (rubrica monastica)
 /:Extra Chorum etiam laudabiliter dicitur lectio ex S. Regulæ; secus dicitur Lectio brevis.:/
 
-[Respice]
+[respice]
 V. Réspice in servos tuos, Dómine, et in ópera tua, et dírige fílios eórum.
 R. Et sit splendor Dómini Dei nostri super nos, et ópera mánuum nostrárum dírige super nos, et opus mánuum nostrárum dírige.
 
-[Dirigere]
+[dirigere]
 v. Dirígere et sanctificáre, régere et gubernáre dignáre, Dómine Deus, Rex cæli et terræ, hódie corda et córpora nostra, sensus, sermónes et actus nostros in lege tua, et in opéribus mandatórum tuórum: ut hic et in ætérnum, te auxiliánte, salvi et líberi esse mereámur, Salvátor mundi: Qui vivis et regnas in sǽcula sæculórum.
-R. Amen.
 
-[Benedictio Prima]
+[benedictio Prima]
 V. Jube, domne, benedícere.
 (sed rubrica 196 aut rubrica 1955 dicitur)
 V. Jube, Dómine, benedícere.
 Benedictio. Dies et actus nostros in sua pace dispónat Dóminus omnípotens.
 R. Amen.
 
-[Benedictio Prima2]
+[benedictio Prima2]
 Benedictio. Dóminus nos benedícat, + et ab omni malo deféndat, et ad vitam perdúcat ætérnam. Et fidélium ánimæ per misericórdiam Dei requiéscant in pace.
 
 [Benedicite]
 V. Benedícite.
 R. Deus.
 
-[Commemoratio omnium]
+[commemoratio omnium]
 R.br. Commemorátio ómnium fratrum, familiárum Órdinis nostri, atque benefactórum nostrórum.
 
 [Requiescant]
 V. Requiéscant in pace.
 R. Amen.
 
-[Deus veniae]
+[deus veniae]
 v. Deus véniæ largítor et humánæ salútis amátor: quǽsumus cleméntiam tuam: ut nostræ congregatiónis fratres, propínquos et benefactóres, qui ex hoc sǽculo transiérunt, beáta María semper vírgine intercedénte cum ómnibus sanctis tuis ad perpétuæ beatitúdinis consórtium perveníre concédas.
 
-[Oratio_Domine]
+[oratio_Domine]
 v. Dómine Deus omnípotens, qui ad princípium hujus diéi nos perveníre fecísti: tua nos hódie salva virtúte; ut in hac die ad nullum declinémus peccátum, sed semper ad tuam justítiam faciéndam nostra procédant elóquia, dirigántur cogitatiónes et ópera.
-
-[Oratio Domine]
-(rubrica 1963 dicitur)
-$MLitany2
-(sed rubrica 1617 aut rubrica 1930 dicitur)
-&MLitany2
-&Dominus_vobiscum1
-(sed rubrica 196 aut rubrica 1955 dicitur)
-&Dominus_vobiscum
-$Oremus
-@:Oratio_Domine
-$Per Dominum
-
-[Defunctorum]
-@:Commemoratio omnium
-@:Requiescant
-_
-&psalm(129)
-_
-@:A_porta_inferi
-@:Requiescant
-@:Dominus:3-4
-&Dominus_vobiscum2
-@:Oremus
-@:Deus veniae
-@:Per Dominum
-_
-@:Requiem: s/\* //g
-@:Requiescant
 
 [Examen]
 /:Examen conscientiæ vel Pater Noster totum secreto.:/

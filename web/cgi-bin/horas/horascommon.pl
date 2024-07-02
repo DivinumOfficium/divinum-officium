@@ -2137,15 +2137,12 @@ sub expand {
   our ($expand, $missa);
   local $expand = $missa ? 'all' : $expand;
 
-  #returns the link or text for & references
-  if ($sigil eq '&') {
-
-    # Make popup link if we shouldn't expand.
-    if ($expand =~ /none/i
-      || ($expand !~ /all|skeleton/i && ($line =~ /^(?:[A-Z]|pater_noster)/)))
-    {
-      return setlink($sigil . $line, 0, $lang);
-    }
+  # Make popup link if we shouldn't expand.
+  if ($expand =~ /none/i
+    || ($expand !~ /all|skeleton/i && ($line =~ /^(?:[A-Z]|pater_noster)/)))
+  {
+    setlink($sigil . $line, 0, $lang);
+  } elsif ($sigil eq '&') {
 
     # Actual expansion for & references.
     # Get function name and any parameters.
@@ -2157,16 +2154,10 @@ sub expand {
       $antline =~ s/^\s*Ant\. //i;
       push @args, $antline;
     }
-    return dispatch_script_function($function_name, @args);
+    dispatch_script_function($function_name, @args);
   } else    # Sigil is $, so simply look up the prayer.
   {
-    if ($expand =~ /all|skeleton/i) {
-
-      #actual expansion for $ references
-      return prayer($line, $lang);
-    } else {
-      return (length prayer($line, $lang) > 1) ? setlink($sigil . $line, 0, $lang) : '';
-    }
+    prayer($line, $lang);
   }
 }
 1;
