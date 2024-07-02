@@ -741,7 +741,7 @@ sub setlink {
   } elsif ($expand =~ /skeleton/i) {
     $name = setfont($largefont, substr($name, 0, 1)) . setfont($redfont, substr($name, 1));
   } else {
-    $name = setfont($largefont, substr($name, 0, 1)) . substr($name, 1);
+    $name = setfont($largefont, uc(substr($name, 0, 1))) . substr($name, 1);
   }
   return "$t$name$after";
 }
