@@ -10,9 +10,6 @@ Limit Benedictiones, Oratio
 9 lectiones 1960
 Capitulum Versum 2 ad Laudes tantum
 
-[Ant Laudes]
-@Tempora/Quad6-6::s/\n/_/smg s/_/;;50\n/ s/_/;;91\n/ s/_/;;63\n/ s/_/\n/ s/$/;;150\n/s
-
 [Oratio 2]
 @Tempora/Quad6-6r:Oratio 2
 

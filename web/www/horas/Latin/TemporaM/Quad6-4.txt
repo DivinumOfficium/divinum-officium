@@ -6,9 +6,7 @@ Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Preces Suffragium
 Limit Benedictiones, Oratio
 9 lectiones 1960
 Capitulum Versum 2 ad Laudes tantum
-
-[Ant Laudes]
-@Tempora/Quad6-4::s/\n/_/smg s/_/;;50\n/ s/_/;;89\n/ s/_/;;35\n/ s/_/;;224\n/ s/_$/;;146\n/s
+Feria
 
 [Special Prima]
 &psalm(53)

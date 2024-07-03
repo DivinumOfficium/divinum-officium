@@ -260,7 +260,7 @@ sub psalmi_major {
   if ($hora =~ /Laudes/) { $name .= $laudes; }
   my @psalmi;
 
-  if ($version =~ /monastic/i) {
+  if ($version =~ /monastic/i && !($hora =~ /Laudes/i && $rule =~ /Matutinum romanum/i)) {    # Triduum like Roman
     my $head = "Daym$dayofweek";
 
     if ($hora =~ /Laudes/i) {
@@ -270,6 +270,7 @@ sub psalmi_major {
       if ($dayname[0] =~ /Pasc/i && $head =~ /Daym0/i) { $head = 'DaymP'; }
     }
     @psalmi = split("\n", $psalmi{"$head $hora"});
+    setbuild("Psalterium/Psalmi major", "$head $hora", 'Psalmi ord');
 
     if ($hora =~ /Laudes/i && $head =~ /Daym[1-6]/) {
       unless ($version =~ /trident/i
@@ -280,7 +281,7 @@ sub psalmi_major {
       {
         my @canticles = split("\n", $psalmi{'DaymF Canticles'});
         if ($dayofweek == 6) { $psalmi[1] .= '(1-7)'; $psalmi[2] = ';;142(8-12)'; }
-        $psalmi[3] = $canticles[$dayofweek];
+        $psalmi[-2] = $canticles[$dayofweek];
       }
     }
   } elsif ($version =~ /Trident/i
@@ -291,6 +292,7 @@ sub psalmi_major {
     && !exists($winner{'Ant Laudes'}))
   {    #ferial office
     @psalmi = split("\n", $psalmi{"Daya$dayofweek $name"});
+    setbuild("Psalterium/Psalmi major", "Daya$dayofweek $name", 'Psalmi ord');
   } elsif ($version =~ /trident/i) {
     my $dow =
       ($hora =~ /Laudes/i && $dayname[0] =~ /Pasc/i) ? 'P'
@@ -299,12 +301,13 @@ sub psalmi_major {
         && $rule !~ /Feria/i) ? 'C'
       : $dayofweek;
     @psalmi = split("\n", $psalmi{"Daya$dow $name"});
+    setbuild("Psalterium/Psalmi major", "Daya$dow $name", 'Psalmi ord');
   } else {
     @psalmi = split("\n", $psalmi{"Day$dayofweek $name"});
+    setbuild("Psalterium/Psalmi major", "Day$dayofweek $name", 'Psalmi ord');
   }
   $comment = 0;
   $prefix = translate("Psalmi et antiphonae", $lang) . ' ';
-  setbuild("Psalterium/Psalmi major", "Day$dayofweek $name", 'Psalmi ord');
 
   my @antiphones;
 
