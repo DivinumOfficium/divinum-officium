@@ -2,7 +2,7 @@
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::1 s/47/85/
-@Psalterium/Psalmi matutinum:Daym5:2-6 s/.*;;/;;/g
+@Psalterium/Psalmi matutinum:Daym5:2-6 s/.*;;/;;/g s/92/75/
 @Tempora/Pasc7-0:Responsory Tertia:s/.*_.//s
 @TemporaM/Pasc7-3:AntMatutinumM: s/;;.*/;;95/
 @Psalterium/Psalmi matutinum:Daym5:10-14 s/.*;;/;;/g
