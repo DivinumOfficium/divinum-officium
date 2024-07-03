@@ -260,7 +260,7 @@ sub psalmi_major {
   if ($hora =~ /Laudes/) { $name .= $laudes; }
   my @psalmi;
 
-  if ($version =~ /monastic/i) {
+  if ($version =~ /monastic/i && !($hora =~ /Laudes/i && $rule =~ /Matutinum romanum/i)) {    # Triduum like Roman
     my $head = "Daym$dayofweek";
 
     if ($hora =~ /Laudes/i) {
