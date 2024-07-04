@@ -1,4 +1,4 @@
-@Commune/C7
+@Commune/C7a
 
 [Name]
 Commune non Virginum non Martyrum Tempore Paschali
@@ -13,20 +13,11 @@ Antiphonas horas
 [Versum 1]
 @Commune/C6p
 
-[Lectio1]
-@Commune/C7a
-
 [Responsory1]
 @Commune/C6p
 
-[Lectio2]
-@Commune/C7a
-
 [Responsory2]
 @Commune/C6p
-
-[Lectio3]
-@Commune/C7a
 
 [Responsory3]
 @Commune/C6p
@@ -46,27 +37,14 @@ Antiphonas horas
 [Responsory8]
 @Commune/C7p
 
-[Capitulum Laudes]
-@Commune/C7a
-
 [Hymnus Laudes]
 @Commune/C7:Hymnus Vespera
 
 [Versum 2]
 @Commune/C6p
 
-[Lectio Prima]
-@Commune/C7a
-
-[Capitulum Sexta]
-@Commune/C7a
-
 [Responsory Sexta]
 @Commune/C6p
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
 
 [Versum 3]
 @:Versum 2
