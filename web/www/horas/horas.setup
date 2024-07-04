@@ -16,6 +16,8 @@ $textwidth='100';;
 $oldhymns='0';;
 $nonumbers='0';;
 $nofancychars='0';;
+$noinnumbers='1';;
+$noflexa='1';;
 
 [parameterscheck]
 bbtbbbtcccccnnbbb
