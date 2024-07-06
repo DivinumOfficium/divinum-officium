@@ -2139,7 +2139,7 @@ sub expand {
 
   # Make popup link if we shouldn't expand.
   if ($expand =~ /none/i
-    || ($expand !~ /all|skeleton/i && ($line =~ /^(?:[A-Z]|pater_noster)/)))
+    || ($expand !~ /all|skeleton/i && ($line =~ /^(?:[A-Z](?!men)|pater_noster)/)))
   {
     setlink($sigil . $line, 0, $lang);
   } elsif ($sigil eq '&') {

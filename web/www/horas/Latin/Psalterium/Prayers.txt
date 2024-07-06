@@ -329,12 +329,12 @@ Et cum frátribus nostris abséntibus. Amen.
 [Alleluia Duplex]
 Allelúja, allelúja.
 
-[A_porta_inferi]
+[Aportainferi]
 V. A porta ínferi.
 R. Erue, Dómine, ánimas eórum.
 
 [A porta inferi]
-@:A_porta_inferi
+@:Aportainferi
 @:Requiescant
 @:Dominus:3-4
 &Dominus_vobiscum2
@@ -406,7 +406,7 @@ v. Deus véniæ largítor et humánæ salútis amátor: quǽsumus cleméntiam tu
 [oratio_Domine]
 v. Dómine Deus omnípotens, qui ad princípium hujus diéi nos perveníre fecísti: tua nos hódie salva virtúte; ut in hac die ad nullum declinémus peccátum, sed semper ad tuam justítiam faciéndam nostra procédant elóquia, dirigántur cogitatiónes et ópera.
 
-[Examen]
+[examen]
 /:Examen conscientiæ vel Pater Noster totum secreto.:/
 
 [Benedictio Completorium_]
@@ -415,11 +415,14 @@ V. Jube, domne, benedícere.
 V. Jube, Dómine, benedícere.
 Benedictio. Noctem quiétam et finem perféctum concédat nobis Dóminus omnípotens.
 
-[Benedictio Completorium]
+[benedictio Completorium]
 @:Benedictio Completorium_
 
-[Benedictio Completorium] (rubrica Ordo Praedicatorum)
+[benedictio Completorium] (rubrica Ordo Praedicatorum)
 @:Benedictio Completorium_:s/concédat/tríbuat/
+
+[benedictio Completorium Final]
+@:Benedictio Completorium2
 
 [Benedictio Completorium2]
 Benedictio. Benedícat et custódiat nos omnípotens et miséricors Dóminus, + Pater, et Fílius, et Spíritus Sanctus.
