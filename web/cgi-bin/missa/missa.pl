@@ -165,13 +165,17 @@ PrintTag
 }
 
 # translate from new breviary version names
-$version =~ s/Monastic(.*)/Monastic/;
-$version =~ s/ - 196.$//;
-$version =~ s/ -//;
-$version =~ s/1888/1910/;
-$version =~ s/ 1954//;
-$version =~ s/Rubrics 1960 2020 USA/1960 Newcalendar/;
-$version =~ s/Ordo Praedicatorum/Dominican/;
+if ($version =~ /Monastic/i) {
+  if ($version =~ /Trid/i) {
+    $version = 'Tridentinum - 1570';
+  } elsif ($version =~ /Divino/i) {
+    $version = 'Divino Afflatu - 1954';
+  } else {
+    $version = 'Rubrics 1960 - 1960';
+  }
+}
+$version =~ s/(1888|1906)/1910/;
+$version =~ s/Ordo Praedicatorum.*/Dominican/;
 
 if ($pmode =~ /(main|missa)/i) {
 
@@ -205,6 +209,7 @@ PrintTag
 }
 
 #common end for programs
+if ($building && $buildscript) { print buildscript($buildscript); }
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
 $command =~ s/(pray|setup)//ig;
