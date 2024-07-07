@@ -289,9 +289,7 @@ sub setupstring($$%) {
       }
 
       # Fill in the missing things from the layer below.
-      unless (${$new_sections}{'__preamble'} eq ${$base_sections}{'__preamble'}) {
-        ${$new_sections}{'__preamble'} .= "\n${$base_sections}{'__preamble'}";
-      }
+      ${$new_sections}{'__preamble'} .= "\n${$base_sections}{'__preamble'}";
       ${$new_sections}{$_} ||= ${$base_sections}{$_} foreach (keys(%{$base_sections}));
 
       # Ensure consistency in ranking of Offices by always defaulting to Latin even if there is a Translation itself
@@ -335,25 +333,13 @@ sub setupstring($$%) {
     # out some subsequent substitutions.
     foreach my $key ((exists $sections{'Rule'}) ? 'Rule' : (), sort(keys(%sections))) {
       if ($key !~ /Commemoratio|LectioE/i || $missa) {
-        my $iiij = 0;
-        my $iiiT = $sections{$key};
-
-        while (
-          $sections{$key} =~ s/$inclusionregex/
+        1 while $sections{$key} =~ s/$inclusionregex/
           get_loadtime_inclusion(\%sections, $basedir, $lang,
           $1,             # Filename.
           $2 ? $2 : $key, # Keyword.
           $3,             # Substitutions.
           $fname)         # Caller's filename.
-				/ge
-        ) {
-
-          if ($iiij++ > 6) {
-            $error .= "Error in resolving $fname : $key :: $lang ::: $iiiT<br>";
-            $sections{$key} = "Cannot resolve too deeply nested Hashes";
-            last;
-          }
-        }
+          /ge;
       }
     }
   } else {
