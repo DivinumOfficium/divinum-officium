@@ -32,12 +32,9 @@ sub unequivocal {
 }
 
 use constant LEGACY_VERSION_NAMES => {
-  'Tridentine 1570' => 'Tridentine - 1570',
-  'Tridentine 1910' => 'Tridentine - 1906',
-  'Rubrics 1960' => 'Rubrics 1960 - 1960',
-  'Reduced 1955' => 'Reduced - 1955',
+  'Tridentine - 1910' => 'Tridentine - 1906',
   'Monastic' => 'Monastic - 1963',
-  '1960 Newcalendar' => 'Rubrics 1960 - 2020 USA',
+  'Dominican' => 'Ordo Praedicatorum - 1962',
 };
 
 # exported
