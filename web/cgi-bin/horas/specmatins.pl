@@ -815,7 +815,8 @@ sub lectio : ScriptFunc {
       $w = $scrips[$num - 1];
     }
 
-    if ($version =~ /Trident/ && $winner =~ /Sancti/ && $rank < 2) { 
+    if ($version =~ /Trident/ && $winner =~ /Sancti/ && $rank < 2) {
+
       # dirty hack to fix 3932
       $w{Responsory1} = $w{Responsory2} = undef;
     }
