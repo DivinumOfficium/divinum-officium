@@ -88,7 +88,7 @@ sub specials {
 
       if (
            ($rule =~ /omit.*\b$label\b/i)
-        || (($version =~ /1570/) && ($item =~ / Leo/))    # omit Leonine prayers issue #367
+        || (($version =~ /1570/) && ($item =~ / Leo/i))    # omit Leonine prayers issue #367
       ) {
         # Skip omitted section
         $tind++ while ($tind < @t && $t[$tind] !~ $section_regex);
@@ -410,7 +410,7 @@ sub getcc {
 }
 
 sub world_mission_sunday {
-  $version =~ /DA|1955|196/
+  $version =~ /Divino|1955|196/
     && $winner{Rank} =~ /Dominica/i
     && monthday($day, $month, $year, 1, 0) eq '104-0';
 }
