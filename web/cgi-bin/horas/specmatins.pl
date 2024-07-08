@@ -814,6 +814,12 @@ sub lectio : ScriptFunc {
       }
       $w = $scrips[$num - 1];
     }
+
+    if ($version =~ /Trident/ && $winner =~ /Sancti/ && $rank < 2) {
+
+      # dirty hack to fix 3932
+      $w{Responsory1} = $w{Responsory2} = undef;
+    }
     if ($w && $num == 1) { setbuild2("Lectio1 ex scriptura"); }
   } elsif (!$w && $num == 4 && exists($commemoratio{"Lectio$num"}) && ($version =~ /1960/i))
   {    # handle diverged 3rd lesson in 1960
