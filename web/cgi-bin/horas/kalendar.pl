@@ -281,8 +281,8 @@ sub html_output {
   htmlHead("Ordo: @{[(MONTHNAMES)[$kmonth]]} $kyear");
 
   print do {    # print headline
-    my $vers = $ver[0];
-    $vers .= " / $ver[1]" if $compare;
+    my $vers = version_displayname($ver[0]);
+    $vers .= ' / ' . version_displayname($ver[1]) if $compare;
 
     my $output = << "PrintTag";
 <H1>
