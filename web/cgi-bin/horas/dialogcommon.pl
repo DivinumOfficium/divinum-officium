@@ -605,10 +605,11 @@ sub version_displayname {
   my $version = shift;
   my $s = getdialog('versions');
   my $i = index($s, $version) - 1;
+
   if ($i == -1 || (substr($s, $i, 1) eq ',')) {
-    $version
+    $version;
   } else {
-    my $k = rindex(substr($s,0,$i - 1), ',') + 1;
+    my $k = rindex(substr($s, 0, $i - 1), ',') + 1;
     substr($s, $k, $i - $k);
   }
 }

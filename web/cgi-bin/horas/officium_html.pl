@@ -18,6 +18,7 @@ sub headline {
   my ($head, $variant, $version1, $version2) = @_;
   my $compone;
   my $vers = version_displayname($version1);
+
   if ($variant eq 'C') {
     $head = html_dayhead_c($head, $version1, $version2);
     $compone = "<A HREF=# onclick=\"callbrevi(\'$date1\')\">One version</A>";
