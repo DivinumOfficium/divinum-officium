@@ -16,21 +16,21 @@ sub html_dayhead_c {
 #*** headline($head) prints headline for main and pray
 sub headline {
   my ($head, $variant, $version1, $version2) = @_;
-  my ($compone, $vers);
+  my $compone;
+  my $vers = version_displayname($version1);
 
   if ($variant eq 'C') {
     $head = html_dayhead_c($head, $version1, $version2);
     $compone = "<A HREF=# onclick=\"callbrevi(\'$date1\')\">One version</A>";
-    $vers = "$version1 / $version2";
+    $vers .= '/' . version_displayname($version2);
   } else {
     $compone = '<A HREF=# onclick="callcompare()">Compare</A>';
-    $vers = $version;
   }
   my $output = par_c($head);
   $output .=
     "<H1><FONT COLOR=MAROON SIZE=+1><B><I>Divinum Officium</I></B></FONT>&nbsp;<FONT COLOR=RED SIZE=+1>$vers</FONT></H1>\n";
 
-  # add warning for older Monastic versions temporarily
+  # add warning for uncompleted versions
   $output .=
     "<H2><FONT COLOR=RED SIZE=+1>Please note that the database for this version ($vers) is still incomplete and under construction.</FONT></H2>\n"
     if $vers =~ /1617|1930|1962/;
