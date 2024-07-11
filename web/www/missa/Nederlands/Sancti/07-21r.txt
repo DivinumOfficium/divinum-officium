@@ -2,7 +2,7 @@
 S. Laurentii a Brundusio Confessoris;;Duplex;;3;;vide C5a
 
 [Rule]
-vide C5a
+vide C4a
 Gloria
 
 [Oratio]
@@ -15,18 +15,19 @@ Verhoor ons, Heer, onze Redder, opdat wij niet alleen vreugde vinden in het fees
 $Per Dominum
 
 [Secreta]
-@Commune/C5a:Secreta1:s/N\./Lauréntii/
+@Commune/C4a:Secreta1:s/N\./Laurentius/
+
+[Communio]
+@Commune/C4
 
 [Commemoratio Secreta]
 !S. Praxedis Virginis
-Moge, o Heer, het offer door het U toegewijde volk ter ere van uw heiligen gebracht, U aangenaam zijn, want door hun verdiensten weten wij ons uit de nood gered.
-$Per Dominum
+@Commune/C6b:Secreta
 
 [Postcommunio]
-@Commune/C5a:Postcommunio1:s/N\./Lauréntii/
+@Commune/C4a:Postcommunio1:s/N\./Laurentius/
 
 [Commemoratio Postcommunio]
 !S. Praxedis Virginis
-Gij hebt, o Heer, uw gezin verzadigd met heilige gaven. Wij vragen U, verkwik ons blijvend door de bemiddeling van haar, wier feest wij vieren.
-$Per Dominum
+@Commune/C6b:PostCommunio
 
