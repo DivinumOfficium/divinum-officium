@@ -9,21 +9,14 @@ vide C5;
 Gloria
 
 [Introitus]
-!Ps 91:13-14
-v. De rechtvaardige zal als een palmboom bloeien. Als een ceder van de Libanon gedijen, geplant in het huis des Heren, in de voorhoven van het huis van onze God.
-!Ps 91:2
-Heerlijk is het de Heer te loven, uw Naam te bezingen, o Allerhoogste.
-&Gloria
-v. De rechtvaardige zal als een palmboom bloeien. Als een ceder van de Libanon gedijen, geplant in het huis des Heren, in de voorhoven van het huis van onze God.
+@Commune/C5b
 
 [Oratio]
-God, Gij verblijdt ons met het jaarlijkse feest van uw heilige belijder Paulus. Laat ons, die zijn geboortefeest vieren, door uw genade zijn daden ook navolgen.
-$Per Dominum
+@Commune/C5:Oratio:s/N\./Paulus/
 
 [Commemoratio Oratio]
 !Pro S. Mauro Abbate
-Wij vragen U, Heer, dat de voorspraak van uw heilige abt Maurus ons een aanbeveling mag zijn, opdat wij door zijn bescherming mogen verwerven wat wij door eigen verdiensten niet vermogen.
-$Per Dominum
+@Commune/C4c:Oratio:s/N\./Maurus/
 
 [Lectio]
 Lezing uit de Brief van de heilige Apostel Paulus aan de Philippenzen
@@ -44,8 +37,7 @@ Vervolg ++ van het heilig Evangelie volgens Mattheüs
 In die tijd nam Jezus het woord en sprak: Ik prijs U, Vader, Heer van hemel en aarde, omdat Gij deze dingen verborgen gehouden hebt voor wijzen en verstandigen, maar ze hebt geopenbaard aan kinderen. Ja, Vader, want zo was het U welgevallig. Alles is mij door mijn Vader in handen gegeven. En niemand kent de Zoon, behalve de Vader, en niemand kent de Vader, behalve de Zoon en hij, aan wie de Zoon het wil openbaren. Komt allen tot Mij, die belast en beladen zijt, en Ik zal u verkwikken. Neemt mijn juk op en leert van Mij; want Ik ben zachtmoedig en nederig van harte; dan zult gij rust vinden voor uw zielen. Want mijn juk is zacht en mijn last is licht.
 
 [Offertorium]
-!Ps 20:2-3
-Om uw macht, o Heer, verheugt zich de rechtvaardige, om uw bijstand jubelt hij van vreugde. Zijn hartewens hebt Gij verhoord.
+@Commune/C5b
 
 [Secreta]
 Wij offeren U, o Heer, dit offer van lof op het gedachtenisfeest van uw heiligen en vertrouwen, dat wij daardoor bevrijd worden van alle ongeluk, nu en in de toekomst.
@@ -53,8 +45,7 @@ $Per Dominum
 
 [Commemoratio Secreta]
 !Pro S. Mauro Abbate
-Moge deze offeranden, die wij op uw heilig altaar hebben neergelegd, ons heil brengen. Dat vragen wij U, Heer, door de voorspraak van de heilige abt Maurus.
-$Per Dominum
+@Commune/C4c:Secreta:s/N\./Maurus/
 
 [Communio]
 !Ps 63:11
@@ -66,5 +57,4 @@ $Per Dominum
 
 [Commemoratio Postcommunio]
 !Pro S. Mauro Abbate
-Moge, o Heer, naast het ontvangen van uw Sacrament de voorspraak van de heilige abt Maurus ons beschermen, opdat wij het grootse van zijn leven durven proberen en daarbij de steun van zijn voorspraak ontvangen.
-$Per Dominum
+@Commune/C4c:Postcommunio:s/N\./Maurus/
