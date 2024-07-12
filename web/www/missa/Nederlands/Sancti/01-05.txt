@@ -4,7 +4,7 @@ In Vigilia Epiphaniæ;;Semiduplex;;4.9;;ex Sancti/01-01
 [Rank] (rubrica tridentina)
 In Vigilia Epiphaniæ;;Semiduplex;;2.9;;ex Sancti/01-01
 
-[Rank] (rubrica 196)
+[Rank] (rubrica 196 aut rubrica 1955)
 Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rule]
@@ -29,9 +29,7 @@ $Qui tecum
 
 [Commemoratio Oratio]
 !Pro S. Telesphori Papæ et Mart.
-@Commune/C2b:Oratio:s/N\./Telésphori/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Oratio Gregem
+@Commune/C2b:Oratio:s/N\./Telesforus/
 
 [Lectio]
 Lezing uit de Brief van de heilige Apostel Paulus aan de Galaten
@@ -60,10 +58,7 @@ $Per Dominum
 
 [Commemoratio Secreta]
 !Pro S. Telesphori Papæ et Mart.
-@Commune/C2b:Secreta:s/N\./Telésphoro/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Secreta Gregem
-
+@Commune/C2b:Secreta:s/N\./Telesforus/
 
 [Communio]
 !Matt 2:20
@@ -75,6 +70,4 @@ $Per Dominum
 
 [Commemoratio Postcommunio]
 !Pro S. Telesphori Papæ et Mart.
-@Commune/C2c:Postcommunio:s/N\./Telésphoro/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Postcommunio Gregem
+@Commune/C2c:Postcommunio:s/N\./Telesforus/
