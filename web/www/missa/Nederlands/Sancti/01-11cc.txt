@@ -11,17 +11,16 @@ vide C4b;
 CPapaM=Hygínum;
 Prefatio=Epi
 
-
 [Oratio] 
-@Commune/C2c::s/N\./Hygíni/
+@Commune/C2c::s/N\./Hyginus/
 (sed communi Summorum Pontificum)
-@Commune/C4b:Oratio Gregem
+@Commune/C4b:Oratio
 
 [Secreta] (rubrica tridentina)
-@Commune/C2c::s/N\./Hygíno/
+@Commune/C2c::s/N\./Hyginus/
 
 [Postcommunio] (rubrica tridentina)
-@Commune/C2c::s/N\./Hygíno/
+@Commune/C2c::s/N\./Hyginus/
 
 
 
