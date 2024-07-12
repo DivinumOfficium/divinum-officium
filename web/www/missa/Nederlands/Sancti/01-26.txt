@@ -9,16 +9,10 @@ vide C2;
 Gloria
 
 [Introitus]
-!Dan 3:84; 3:87
-v. Priesters van God, prijst de Heer. Heiligen en nederigen van hart, zingt God lof.
-!Dan 3:57
-Prijst alle werken des Heren de Heer. Prijst en verheft Hem in alle eeuwen.
-&Gloria
-v. Priesters van God, prijst de Heer. Heiligen en nederigen van hart, zingt God lof.
+@Commune/C2b
 
 [Oratio]
-God, Gij verblijdt ons met het jaarlijkse feest van uw heilige martelaar en bisschop Polycarpus. Laat ons, die zijn geboortefeest vieren, door uw goedheid ons ook mogen verheugen over zijn bescherming.
-$Per Dominum
+@Commune/C2b:Oratio:s/N\./Polycarpus/
 
 [Lectio]
 Lezing uit de eerste Brief van de heilige Apostel Johannes
@@ -26,34 +20,22 @@ Lezing uit de eerste Brief van de heilige Apostel Johannes
 Veelgeliefden, ieder die niet rechtvaardig is, is niet uit God; evenmin degene, die zijn broeder niet bemint. Want dit is de boodschap, die gij vernomen hebt vanaf het begin, dat gij elkander moet liefhebben. Niet zoals Caïn, die uit de boze was, en zijn broeder vermoordde. En waarom vermoordde hij hem? Omdat zijn eigen werken slecht waren, die van zijn broeder echter goed. Wilt u niet verwonderen, broeders, als de wereld u haat. Wij weten, dat wij zijn overgebracht van de dood naar het leven, daar wij immers onze broeders beminnen. Wie geen liefde heeft, blijft nog in de dood. Ieder, die zijn broeder haat, is een moordenaar. En gij weet, dat geen moordenaar eeuwig leven in zich draagt. Hieraan hebben wij de liefde van God leren kennen, dat Hij zijn leven voor ons gegeven heeft; ook wij moeten ons leven geven voor onze broeders.
 
 [Graduale]
-!Ps 8:6-7
-Met heerlijkheid en eer hebt Gij hem gekroond.
-V. Hem gesteld over de werken uwer handen, o Heer. Alleluia, alleluia.
-V. Dit is de priester, die de Heer de zegekroon verleende. Alleluia.
+@Commune/C2b
 
 [Tractus]
-!Ps 111:1-2
-Gelukkig de man die de Heer vreest, zich in zijn geboden ten zeerste verheugt.
-V. Zijn nakomelingschap zal machtig zijn op aarde. Het geslacht der rechtvaardigen wordt gezegend. 
-!Ps 20:3-4
-Desidérium ánimæ ejus tribuísti ei: et voluntáte labiórum ejus non fraudásti eum.
-V. Quóniam prævenísti eum in benedictiónibus dulcédinis.
-V. Posuísti in cápite ejus corónam de lápide pretióso.
+@Commune/C2b
 
 [Evangelium]
-@Commune/C2a:Evangelium
+@Commune/C2a
 
 [Offertorium]
-!Ps 88:21-22
-Ik heb David gevonden, mijn dienaar, met mijn heilige olie hem gezalfd. Mijn hand zal hem bijstaan, mijn arm hem sterken.
+@Commune/C2b
 
 [Secreta]
-Heilig, o Heer, de gaven die wij U wijden. Laat U erdoor verzoenen en sla genadig acht op ons om de voorspraak van uw heilige martelaar en bisschop Polycarpus.
-$Per Dominum
+@Commune/C2b:Secreta:s/N\./Polycarpus/
 
 [Communio]
-!Ps 20:4
-Gij hebt, o Heer, een kroon van edelgesteente hem op het hoofd gedrukt.
+@Commune/C2b
 
 [Postcommunio]
 Verkwikt door de deelname aan de heilige gave, vragen wij U, Heer, onze God, dat wij door de tussenkomst van uw heilige martelaar en bisschop Polycarpus de uitwerking mogen ondervinden van wat wij in deze eredienst verrichten.
