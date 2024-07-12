@@ -12,15 +12,15 @@ CPapaM=Hygínum;
 Prefatio=Epi
 
 [Oratio] 
-@Commune/C2c::s/N\./Hygíni/
+@Commune/C2c:Oratio:s/N\./Hygíni/
 (sed communi Summorum Pontificum)
 @Commune/C4b:Oratio
 
 [Secreta] (rubrica tridentina)
-@Commune/C2c::s/N\./Hygíno/
+@Commune/C2c:Secreta:s/N\./Hygíno/
 
 [Postcommunio] (rubrica tridentina)
-@Commune/C2c::s/N\./Hygíno/
+@Commune/C2c:Postcommunio:s/N\./Hygíno/
 
 
 
