@@ -7,20 +7,21 @@ vide Sancti/01-01
 Gloria
 Prefatio=Nat 
 
+
 [Commemoratio Oratio]
 !Pro S. Telesphori Papæ et Mart.
-@Commune/C2b:Oratio:s/N\./Telésphori/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Oratio Gregem
+@Commune/C2b:Oratio:s/N\./Telesforus/
+!De S. Maria
+@Commune/C10b:Oratio
 
 [Commemoratio Secreta]
 !Pro S. Telesphori Papæ et Mart.
-@Commune/C2b:Secreta:s/N\./Telésphoro/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Secreta Gregem
+@Commune/C2b:Secreta:s/N\./Telesforus/
+!De S. Maria
+@Commune/C10:Secreta
 
 [Commemoratio Postcommunio]
 !Pro S. Telesphori Papæ et Mart.
-@Commune/C2c:Postcommunio:s/N\./Telésphoro/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Postcommunio Gregem
+@Commune/C2c:Postcommunio:s/N\./Telesforus/
+!De S. Maria
+@Commune/C10:Postcommunio
