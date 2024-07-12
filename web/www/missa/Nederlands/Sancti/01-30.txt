@@ -7,6 +7,12 @@ Gloria
 Suffragium+Maria2;Ecclesiæ,Papæ;;
 
 [Oratio]
-God, Gij hebt onder al de wonderwerken van uw macht ook aan het zwakke geslacht de overwinning van het martelaarschap gegeven. Laat in uw goedheid ons, die het geboortefeest vieren van uw heilige maagd Martina, naar haar voorbeeld tot U mogen komen. 
-$Per Dominum
+@Commune/C6:Oratio:s/N\./Martina/
+
+[Secreta]
+@Commune/C6:Secreta:s/N\./Martina/
+
+[Postcommunio]
+@Commune/C6:Postcommunio:s/N\./Martina/
+
 
