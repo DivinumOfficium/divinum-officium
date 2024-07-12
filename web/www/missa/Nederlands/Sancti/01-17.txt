@@ -9,8 +9,7 @@ vide C4c;
 @Commune/C4c:Introitus
 
 [Oratio]
-Wij vragen U, Heer, dat de voorspraak van uw heilige abt Antonius ons een aanbeveling mag zijn, opdat wij door zijn bescherming mogen verwerven wat wij door eigen verdiensten niet vermogen.
-$Per Dominum
+@Commune/C4c:Oratio:s/N\./Antonius/
 
 [Lectio]
 @Commune/C4c:Lectio
@@ -25,10 +24,10 @@ $Per Dominum
 @Commune/C4c:Offertorium
 
 [Secreta]
-@Commune/C4c:Secreta
+@Commune/C4c:Secreta:s/N\./Antonius/
 
 [Communio]
 @Commune/C4c:Communio
 
 [Postcommunio]
-@Commune/C4c:Postcommunio
+@Commune/C4c:Postcommunio:s/N\./Antonius/
