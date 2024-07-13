@@ -5,8 +5,7 @@ S. Apollonia virgin and martyr;;Simplex;;1.1;;vide C6
 vide C6;
 
 [Oratio]
-God, Gij hebt onder al de wonderwerken van uw macht ook aan het zwakke geslacht de overwinning van het martelaarschap gegeven. Zorg in uw goedheid, dat wij, die het geboortefeest vieren van uw heilige maagd en martelares Apollonia, naar haar voorbeeld tot U mogen komen.
-$Per Dominum
+@Commune/C6:Oratio:s/N\./Appolonia/
 
 [Introitus]
 
@@ -19,5 +18,9 @@ $Per Dominum
 [Offertorium]
 
 [Secreta]
+@Commune/C6:Secreta:s/N\./Appolonia/
+
+[Communio]
 
 [Postcommunio]
+@Commune/C6:Postcommunio:s/N\./Appolonia/
