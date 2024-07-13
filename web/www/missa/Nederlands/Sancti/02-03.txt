@@ -6,13 +6,10 @@ vide C2b;
 Gloria
 
 [Oratio]
-God, Gij verblijdt ons met het jaarlijks feest van uw heilige martelaar en bisschop Blasius, laat in uw goedheid ons, die zijn geboortefeest vieren, ons ook mogen verheugen over zijn bescherming.
-$Per Dominum
+@Commune/C2b:Oratio:s/N\./Blasius/
 
 [Secreta]
-Heilig, o Heer, de gaven, die wij U wijden. Laat U er door verzoenen en sla genadig acht op ons, op voorspraak van de heilige martelaar en bisschop Blasius.
-$Per Dominum
+@Commune/C2b:Secreta:s/N\./Blasius/
 
 [Postcommunio]
-Moge, Heer, deze communie ons van zonden zuiveren en op voorspraak van uw heilige martelaar en bisschop Blasius doen delen in zijn hemelse heilskracht.
-$Per Dominum
+@Commune/C2b:Postcommunio:s/N\./Blasius/
