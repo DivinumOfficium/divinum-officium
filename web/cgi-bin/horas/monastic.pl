@@ -49,9 +49,10 @@ sub psalmi_matutinum_monastic {
   setbuild("Psalterium/Psalmi matutinum monastic", "dayM$dayofweek", 'Psalmi ord');
   $comment = 1;
   my $prefix = translate('Antiphonae', $lang);
+  my $name = gettempora('Psalmi Matutinum Monastic');
 
   #** special Adv - Pasc antiphons for Sundays
-  if ($dayofweek == 0 && $dayname[0] =~ /(Adv|Pasc)/i) {
+  if ($dayofweek == 0 && $name =~ /^(Adv|Pasch)$/i) {
     @psalmi = split("\n", $psalmi{$1 . 'm0'});
     setbuild2("Antiphonas Psalmi Dominica special for Adv Pasc");
   }
@@ -64,7 +65,7 @@ sub psalmi_matutinum_monastic {
     my @p;
 
     if ($dayname[0] =~ /Pasc/) {
-      @p = split("\n", $psalmi{'Daym Pasc'});
+      @p = split("\n", $psalmi{'Daym Pasch'});
     } elsif ($dayname[0] =~ /Nat[23]\d/) {
       @p = split("\n", $psalmi{'Daym Nat'});
     }
@@ -86,20 +87,9 @@ sub psalmi_matutinum_monastic {
   }
 
   #** change of versicle for Adv, Quad, Quad5, Pasc
-  if ( ($winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i)
-    || $dayname[0] =~ /(Nat)((?:0?[2-9])|(?:1[0-2]))$/
-    || ($dayname[0] =~ /(Epi)1/ && $day > 6 && $day < 13))
-  {
-    my $name = $1;
-    my $i = $2;
-    if ($name =~ /Nat/ && $i > 6 && $i < 13) { $name = 'Epi'; }
-    if ($name =~ /Quad/i && $i > 4) { $name = 'Quad5'; }
-    $i = $dayofweek || 1;
-    $_ = $winner;
-    s+.*/++;
-    s/.txt//;
-    if ($_ gt 'Pasc5-4' && $_ lt 'Pasc7-0') { $name = 'Asc' }
-    if ($name =~ /Nat|Epi|Asc/ && $i > 3) { $i -= 3; }
+  if ($name && ($winner =~ /^Tempora/ || $name =~ /^(Nat|Epi)$/)) {
+    my $i = $dayofweek || 1;
+    if ($i > 3) { $i -= 3; }
 
     if ($name ne 'Asc') {
       ($psalmi[6], $psalmi[7]) = split("\n", $psalmi{"$name $i Versum"});
@@ -186,6 +176,7 @@ sub psalmi_matutinum_monastic {
     }
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
+
   nocturn(1, $lang, \@psalmi, (0 .. 7));
 
   if (
@@ -306,14 +297,7 @@ sub psalmi_matutinum_monastic {
   }
 
   if (!$w) {
-    my $name = "";
-
-    if ($dayname[0] =~ /(Adv|Nat|Epi1|Quad|Pasc)/i) {
-      $name = " $1";
-      if ($dayname[0] =~ /Quad[56]/i) { $name .= '5'; }
-      if ($name eq ' Nat' && $day > 6 && $day < 13) { $name = ' Epi'; }
-      if ($name eq ' Epi1') { $name = ($day > 6 && $day < 13) ? ' Epi' : ''; }
-    }
+    my $name = gettempora('MM Capitulum');
     my %s = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
     $w = $s{"MM Capitulum$name"};
   }
@@ -422,7 +406,7 @@ sub brevis_monastic {
     $lectio = $c{"MM LB"};
   } else {
     my %b = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
-    $lectio = $b{"MM LB" . (($dayname[0] =~ /Pasc/) ? " Pasc" : $dayofweek)};
+    $lectio = $b{"MM LB" . (($dayname[0] =~ /Pasc/) ? " Pasch" : $dayofweek)};
   }
   $lectio =~ s/&Gloria1?/&Gloria1/;
   push(@s, $lectio);

@@ -2160,4 +2160,57 @@ sub expand {
     prayer($line, $lang);
   }
 }
+
+#*** sub gettempora($caller)
+# return $name of tempora
+# depending on caller
+sub gettempora {
+  our ($version, @dayname, $dayofweek, $day);
+  my $caller = shift;
+  my $tname =
+      ($dayname[0] =~ /^Adv[34]$/ && $caller eq 'Invitatorium') ? 'Adv3'
+    : ($dayname[0] =~ /^Adv/ && $caller ne 'Doxology') ? 'Adv'
+    : ($dayname[0] =~ /^Quad[56]/ && $caller ne 'Doxology') ? 'Quad5'
+    : ($dayname[0] =~ /^Quad(?!p)/ && $caller ne 'Doxology') ? 'Quad'
+    : ($dayname[0] =~ /^Pasc6/ || ($dayname[0] =~ /Pasc5/i && $dayofweek > 3 && $dayname[1] !~ /^Dominica/)) ? 'Asc'
+    : ($dayname[0] =~ /^Pasc[0-5]/) ? 'Pasch'
+    : ($dayname[0] =~ /^Pasc7/) ? 'Pent'
+    : '';
+
+  if ( ($caller eq 'Psalmi minor' || $caller eq 'Invitatorium' || $caller eq 'Hymnus matutinum')
+    && ($tname eq 'Asc' || $tname eq 'Pent'))
+  {
+    $tname = 'Pasch';
+  }
+
+  if ($caller eq 'Lectio brevis Prima') {
+    $tname = 'Feria'
+      if ($version !~ /196/ && $dayofweek >= 3 && $dayname[0] eq 'Quadp3');
+    $tname = 'Per Annum'
+      unless $tname;
+  }
+
+  if ($caller eq 'Capitulum minor' && !$tname) {
+    $tname =
+      $dayofweek == 0 || ($dayname[1] =~ /Duplex/i && $dayname[1] !~ /(Dominica|Vigilia)/i) ? 'Dominica' : 'Feria';
+  }
+
+  if ($caller =~ /major$/ && !$tname) {    # caller is Capitulum or Hymnus major or getfrompsalterium
+    $tname = "Day$dayofweek";
+  }
+
+  if ($caller eq 'Doxology' || $caller eq 'Prima responsory' || ($version =~ /196/ && $caller ne 'Psalmi minor')) {
+    if ($dayname[0] =~ /^Nat/) {
+      $tname = ($day >= 6 && $day < 13) ? 'Epi' : 'Nat';
+    } elsif ($dayname[0] =~ /^Epi[01]/i && $day < 14) {
+      $tname = 'Epi';
+    }
+  }
+
+  if ($caller eq 'MM Capitulum' && $tname) {
+    $tname = " $tname";
+  }
+
+  $tname;
+}
 1;

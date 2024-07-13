@@ -123,33 +123,29 @@ sub psalmi_minor {
 
   if ($winner =~ /tempora/i || $testmode =~ /seasonal/i || $dayname[0] =~ /pasc/i) {
 
-    #*** look for Adv, Quad Pasc
     my $ind =
         ($hora =~ /Prima/i) ? 0
       : ($hora =~ /Tertia/i) ? 1
       : ($hora =~ /Sexta/i) ? 2
       : ($hora =~ /Nona/i) ? 4
       : -1;
-    my $name =
-        ($dayname[0] =~ /Adv1/i) ? 'Adv1'
-      : ($dayname[0] =~ /Adv2/i) ? 'Adv2'
-      : ($dayname[0] =~ /Adv3/i) ? 'Adv3'
-      : ($dayname[0] =~ /Adv4/i) ? 'Adv4'
-      : ($dayname[0] =~ /(Quad5|Quad6)/i) ? 'Quad5'
-      : ($dayname[0] =~ /Quad/i && $dayname[0] !~ /Quadp/i) ? 'Quad'
-      : ($dayname[0] =~ /Pasc/i && ($dayname[0] !~ /Pasc7/i || $hora =~ /Completorium/i)) ? 'Pasch'
-      : '';
+    my $name = gettempora('Psalmi minor');
 
-    if ($month == 12 && $day > 16 && $day < 24 && $dayofweek > 0) {
-      my $i = $dayofweek + 1;
+    if ($name eq 'Adv') {
+      $name = $dayname[0];
 
-      if ($dayofweek == 6 && $version =~ /trident|monastic.*divino/i) {    # take ants from feria occuring Dec 21st
-        $i = get_stThomas_feria($year) + 1;
-        if ($day == 23) { $i = ""; }                                       # use Sundays ant
+      if ($day > 16 && $day < 24 && $dayofweek) {
+        my $i = $dayofweek + 1;
+
+        if ($dayofweek == 6 && $version =~ /trident|monastic.*divino/i) {    # take ants from feria occuring Dec 21st
+          $i = get_stThomas_feria($year) + 1;
+          if ($day == 23) { $i = ""; }                                       # use Sundays ant
+        }
+        $name = "Adv4$i";
       }
-      $name = "Adv4$i";
     }
-    if ($name =~ /pasc/i && ($dayname[0] !~ /Pasc7/i || $hora =~ /Completorium/i)) { $ind = 0; }
+
+    $ind = 0 if ($hora eq 'Completorium' && $name eq 'Pasch');
 
     if ($name && $ind >= 0) {
       my @ant = split("\n", $psalmi{$name});
@@ -161,6 +157,7 @@ sub psalmi_minor {
       setbuild("Psalterium/Psalmi minor", $name, "subst Antiphonas");
     }
   }
+
   my %w = (columnsel($lang)) ? %winner : %winner2;
   $ant =~ s/^.*?=\s*//;
   $feastflag = 0;

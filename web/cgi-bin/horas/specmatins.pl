@@ -26,14 +26,7 @@ use constant {
 sub invitatorium {
   my $lang = shift;
   my %invit = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
-  my $name =
-      ($dayname[0] =~ /Adv[12]/i) ? 'Adv'
-    : ($dayname[0] =~ /Adv[34]/i) ? 'Adv3'
-    : ($month == 12 && $day == 24) ? 'Nat24'
-    : ($dayname[0] =~ /(Quad5|Quad6)/i) ? 'Quad5'
-    : ($dayname[0] =~ /Quad/i && $dayname[0] !~ /Quadp/i) ? 'Quad'
-    : ($dayname[0] =~ /Pasc/i) ? 'Pasch'
-    : '';
+  my $name = gettempora('Invitatorium');
 
   if ($version =~ /Trid|Monastic/i && (!$name || ($name eq 'Quad' && $dayofweek != 0))) {
     $name = 'Trid';
@@ -138,13 +131,7 @@ sub hymnusmatutinum {
     $comment = $c;
   } else {
     my %hymn = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
-    $name =
-        ($dayname[0] =~ /adv/i) ? 'Adv'
-      : ($dayname[0] =~ /quad5|quad6/i) ? 'Quad5'
-      : ($dayname[0] =~ /quad[0-9]/i) ? 'Quad'
-      : ($dayname[0] =~ /pasc/i) ? 'Pasch'
-      : '';
-    if ($month == 12 && $day == 24) { $name = 'Adv'; }
+    $name = gettempora('Hymnus matutinum');
     $name = ($name) ? "Hymnus $name" : "Day$dayofweek Hymnus";
     $comment = ($name) ? 1 : 5;
     if ($name =~ /^Day0 Hymnus$/i && ($month < 4 || ($monthday && $monthday =~ /^1[0-9][0-9]\-/))) { $name .= '1'; }
@@ -200,36 +187,22 @@ sub psalmi_matutinum {
     setbuild2("Psalm #50 replaced by breaking #49");
   }
 
-  if (
-    $version !~ /Trident/i
-    && (
-      ($winner =~ /tempora/i && $dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i)
-      || (
-           $month == 1
-        && $version =~ /1960|1955/
-        && $winner =~ /Sancti/i
-        &&    # TODO: Temporary condition
-        (
-          ($day < 6 && 'Nat' =~ /(Nat)/) ||    # pending implementation of
-          ($day <= 13 && 'Epi' =~ /(Epi)/)
-        )                                      # Christmas- and Epiphanytide.
-      )
-    )
-  ) {
-    my $name = $1;
-    my $i = $2;
-    if ($name =~ /Quad/i && $i > 4) { $name = 'Quad5'; }
+  my $name = gettempora('Psalmi Matutinum');
 
+  if ($name && $version !~ /Trident/i && ($winner =~ /tempora/i || $name eq 'Nat' || $name eq 'Epi')) {
     if ($dayofweek == 0) {
       foreach my $i (1 .. 3) {
         ($psalmi[($i - 1) * 5 + 3], $psalmi[($i - 1) * 5 + 4]) = split("\n", $psalmi{"$name $i Versum"}, 2);
       }
       if ($version =~ /1960/) { ($psalmi[13], $psalmi[14]) = ($psalmi[3], $psalmi[4]); }
     } else {
-      ($psalmi[13], $psalmi[14]) = split("\n", $psalmi{"$name $dayofweek Versum"}, 2);
+      my $i = $dayofweek;
+      $i -= 3 if $i > 3;
+      ($psalmi[13], $psalmi[14]) = split("\n", $psalmi{"$name $i Versum"}, 2);
     }
     setbuild2("Subst Matutitunun Versus $name $dayofweek");
   }
+
   my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
 
   if ($w) {
@@ -244,8 +217,8 @@ sub psalmi_matutinum {
 
   if ($rule =~ /Ant Matutinum ([0-9]+) special/i) {
     my $ind = $1;
-    %wa = (columnsel($lang)) ? %winner : %winner2;
-    $wa = $wa{"Ant Matutinum $ind"};
+    my %wa = (columnsel($lang)) ? %winner : %winner2;
+    my $wa = $wa{"Ant Matutinum $ind"};
     $wa =~ s/\s*$//;
 
     if ($wa) {
@@ -282,23 +255,19 @@ sub psalmi_matutinum {
   {
     setbuild2("9 lectiones");
 
-    if ($dayname[0] =~ /Pasc/i && !exists($winner{'Ant Matutinum'}) && $rank < 5) {    #??? ex
-      my $dname = ($winner{Rank} =~ /Dominica/i) ? 'Dominica' : 'Feria';
-      @spec = split("\n", $spec{"Pasc Ant $dname"});
-      foreach my $i (3, 4, 8, 9, 13, 14) { $psalmi[$i] = $spec[$i]; }
-    } elsif ($winner =~ /tempora/i
-      && $dayname[0] =~ /(Adv|Quad|Pasc)/i
-      && !exists($winner{'Ant Matutinum'}))
-    {
-      $tmp = $1;
-      if ($dayname[0] =~ /(Quad5|Quad6)/) { $tmp = 'Quad5'; }
-      @spec = split("\n", $spec{"$tmp 1 Versum"});
-      if (@spec) { $psalmi[3] = $spec[0]; $psalmi[4] = $spec[1]; }
-      @spec = split("\n", $spec{"$tmp 2 Versum"});
-      if (@spec) { $psalmi[8] = $spec[0]; $psalmi[9] = $spec[1]; }
-      @spec = split("\n", $spec{"$tmp 3 Versum"});
-      if (@spec) { $psalmi[13] = $spec[0]; $psalmi[14] = $spec[1]; }
-      setbuild2("$tmp special versums for nocturns");
+    unless (exists($winner{'Ant Matutinum'})) {
+      if (($name eq 'Pasch' || $name eq 'Asc') && $rank < 5) {    #??? ex
+        my $dname = ($winner{Rank} =~ /Dominica/i) ? 'Dominica' : 'Feria';
+        @spec = split("\n", $spec{"Pasch Ant $dname"});
+        foreach my $i (3, 4, 8, 9, 13, 14) { $psalmi[$i] = $spec[$i]; }
+      } elsif ($winner =~ /tempora/i
+        && $name =~ /^(?:Adv|Quad|Pasch)$/i)
+      {
+        foreach my $i (1 .. 3) {
+          ($psalmi[($i - 1) * 5 + 3], $psalmi[($i - 1) * 5 + 4]) = split("\n", $spec{"$name $i Versum"}, 2);
+        }
+        setbuild2("$name special versums for nocturns");
+      }
     }
 
     if ( $version =~ /Trident/i
@@ -332,19 +301,20 @@ sub psalmi_matutinum {
   # Here we begin the logic for an office of three lessons. On nine-lesson days
   # we've already returned.
   if ($dayname[0] =~ /Pasc[1-6]/i && $version !~ /Trident/i) {    #??? ex
-    my $tde =
-      ($version =~ /196/ && ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek > 3))) ? '1' : '';
-    my $i;
-
-    if ($tde) {
+    if ($version =~ /196/ && $name eq 'Asc') {
       my %r = %{setupstring($lang, 'Tempora/Pasc5-4.txt')};
       @spec = split("\n", $r{'Ant Matutinum'});
     } else {
-      @spec = split("\n", $spec{"Pasc Ant Dominica"});
+      @spec = split("\n", $spec{"Pasch Ant Dominica"});
     }
     foreach my $i (3, 4, 8, 9, 13, 14) { $psalmi[$i] = $spec[$i]; }
-    if ($dayofweek == 0 || $dayofweek == 1 || $dayofweek == 4) { $psalmi[13] = $psalmi[3]; $psalmi[14] = $psalmi[4]; }
-    if ($dayofweek == 2 || $dayofweek == 5) { $psalmi[13] = $psalmi[8]; $psalmi[14] = $psalmi[9]; }
+    my $i = $dayofweek || 1;
+
+    if ($i % 3 == 1) {
+      ($psalmi[13], $psalmi[14]) = ($psalmi[3], $psalmi[4]);
+    } elsif ($i % 3 == 2) {
+      ($psalmi[13], $psalmi[14]) = ($psalmi[8], $psalmi[9]);
+    }
   }
   if ($rule =~ /votive nocturn/i) { return votivenocturn($lang); }
 
@@ -370,11 +340,10 @@ sub psalmi_matutinum {
       $psalm_indices[1] = 8;
     }
 
-    if ($dayname[0] =~ /(Adv|Quad|Pasc)([0-9])/i) {
-      my $name = $1;
-      my $i = $2;
-      if ($name =~ /Quad/i && $i > 4) { $name = 'Quad5'; }
-      @spec = split("\n", $psalmi{"$name $dayofweek Versum"});
+    if ($name =~ /^(?:Adv|Quad5?|Pasch)$/) {
+      my $i = $dayofweek;
+      $i -= 3 if $i > 3;
+      @spec = split("\n", $psalmi{"$name $i Versum"});
     }
   }
 
@@ -1376,7 +1345,7 @@ sub ant_matutinum_paschal {
   } else {
     if ($dayname[0] =~ /Pasc[1-5]/i && $dayname[1] =~ /Dominica/) {
       my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
-      my @a = split("\n", $psalmi{Pasc0});
+      my @a = split("\n", $psalmi{Pasch0});
 
       for (my $i = 0; $i < @psalmi; $i++) {
         $psalmi[$i] =~ s/.*;;/$a[$i]/;

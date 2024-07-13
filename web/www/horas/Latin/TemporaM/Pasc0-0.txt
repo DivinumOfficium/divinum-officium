@@ -4,7 +4,6 @@
 Psalmi Dominica
 Antiphonas horas
 12 lectiones
-Doxology=Pasc
 
 [AntM Matutinum]
 Terra * trémuit et quiévit, † dum exsúrgeret in judício Deus, allelúja.;;29
@@ -17,16 +16,16 @@ Nolíte expavéscere: * Jesum quǽritis Nazarénum, crucifíxum: surréxit, non 
 ;;15
 ;;23
 ;;27
-@Psalterium/Psalmi matutinum:Pascm0:7-8
+@Psalterium/Psalmi matutinum:Paschm0:7-8
 @:AntM Matutinum:1
 ;;63
 ;;65
 ;;75
 ;;87
 ;;107
-@Psalterium/Psalmi matutinum:Pascm0:15-16
+@Psalterium/Psalmi matutinum:Paschm0:15-16
 @:AntM Matutinum:2
-@Psalterium/Psalmi matutinum:Pascm0:18-19
+@Psalterium/Psalmi matutinum:Paschm0:18-19
 
 [Lectio1]
 @Sancti/01-03::1-6 s/1-5/2-4/ s/1.*Absit. /2 /s
@@ -124,7 +123,7 @@ $Deo gratias
 @:Versum 2
 
 [Capitulum Nona]
-@Psalterium/Prima Special:Pasc
+@Psalterium/Prima Special:Pasch
 $Deo gratias
 
 [Responsory NonaM]
