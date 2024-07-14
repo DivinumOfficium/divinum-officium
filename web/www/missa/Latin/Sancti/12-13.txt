@@ -9,8 +9,7 @@ Gloria
 @Commune/C6b
 
 [Oratio]
-Exáudi nos, Deus, salutáris noster: ut, sicut de beátæ Luciæ Vírginis tuæ festivitáte gaudémus; ita piæ devotiónis erudiámur afféctu.
-$Per Dominum
+@Commune/C6b::s/N\./Luciæ/
 
 [Commemoratio Oratio]
 !Pro Octava Conceptionis Immaculatæ
@@ -34,8 +33,7 @@ V. Diffúsa est grátia in lábiis tuis: proptérea benedíxit te Deus in ætér
 Afferéntur Regi Vírgines post eam: próximæ ejus afferéntur tibi in lætítia et exsultatióne: adducéntur in templum Regi Dómino.
 
 [Secreta]
-Accépta tibi sit, Dómine, sacrátæ plebis oblátio pro tuorum honore Sanctórum: quorum se meritis de tribulatione percepísse cognóscit auxílium.
-$Per Dominum
+@Commune/C6b::s/N\./Luciæ/
 
 [Commemoratio Secreta]
 !Pro Octava Conceptionis Immaculatæ.
@@ -46,7 +44,7 @@ $Per Dominum
 Príncipes persecúti sunt me gratis, et a verbis tuis formidávit cor meum: lætábor ego super elóquia tua, quasi qui invénit spólia multa.
 
 [Postcommunio]
-@Commune/C6b
+@Commune/C6b::s/N\./Luciæ/
 
 [Commemoratio Postcommunio]
 !Pro Octava Conceptionis Immaculatæ.
