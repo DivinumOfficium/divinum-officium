@@ -6,11 +6,10 @@ vide C6b;
 Gloria
 
 [Oratio]
-Exáudi nos, Deus, salutáris noster: ut, sicut de beátæ Terésiæ Vírginis tuæ festivitáte gaudémus; ita cœléstis ejus doctrínæ pábulo nutriámur, et piæ devotiónis erudiámur affectu.
-$Per Dominum
+@Commune/C6b::s/N\./Terésiæ/
 
 [Secreta]
-@Commune/C6b
+@Commune/C6b::s/N\./Terésiæ/
 
 [Postcommunio]
-@Commune/C6b
+@Commune/C6b::s/N\./Terésiæ/
