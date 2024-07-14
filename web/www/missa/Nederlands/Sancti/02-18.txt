@@ -5,13 +5,10 @@ S. Simeonis Faustini Episcopi et Martyris;;Simplex;;1.1;;vide C2
 vide C2;
 
 [Oratio]
-Geef acht op onze zwakheid, almachtige God, en laat de glorievolle voorspraak van uw heilige martelaar en bisschop Simeon ons beschermen, daar de last van eigen daden zwaar op ons drukt.
-$Per Dominum
+@Commune/C2c:Oratio:s/N\./Simeon/
 
 [Secreta]
-Ontvang genadig, o Heer, de offers die U worden aangeboden door de verdiensten van de heilige Simeon, uw martelaar en bisschop, en geef dat ze voor ons een blijvende bron van kracht mogen worden.
-$Per Dominum
+@Commune/C2c:Secreta:s/N\./Simeon/
 
 [Postcommunio]
-Verkwikt door het deelnemen aan Uw heilig geschenk, smeken wij U, o Heer onze God, dat wij door de voorspraak van de heilige Simeon, uw martelaar en bisschop, de uitwerking mogen ervaren van datgene wat wij vieren.
-$Per Dominum
+@Commune/C2c:Postcommunio:s/N\./Simeon/
