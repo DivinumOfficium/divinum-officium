@@ -1,12 +1,11 @@
 [Rank]
-S. Apolloniæ Virginis et Martyris;;Simplex;;1.1;;vide C6
+S. Appolloniæ Virginis et Martyris;;Simplex;;1.1;;vide C6
 
 [Rule]
 vide C6;
 
 [Oratio]
-Deus qui inter cétera poténtiæ tuæ mirácula étiam in sexu frágili victóriam martýrii contulísti: concéde propítius; ut, qui beátæ Apollóniæ Vírginis et Mártyris tuæ natalícia cólimus, per ejus ad te exémpla gradiámur.
-$Per Dominum
+@Commune/C6:Oratio:s/N\./Appollóniæ/
 
 [Introitus]
 
@@ -19,8 +18,6 @@ $Per Dominum
 [Offertorium]
 
 [Secreta]
-Súscipe, Dómine, múnera, quæ in beátæ Appollóniæ Vírginis et Mártyris tuæ sollemnitáte~
-deférimus: cujus nos confídimus patrocínio liberári.
-$Per Dominum
+@Commune/C6:Secreta:s/N\./Appollóniæ/
 
 [Postcommunio]
