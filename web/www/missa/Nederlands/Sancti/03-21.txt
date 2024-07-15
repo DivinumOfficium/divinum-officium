@@ -12,13 +12,10 @@ vide C4c;
 Gloria
 
 [Oratio]
-Wij vragen U, Heer, dat de voorspraak van uw heilige abt Benedictus ons een aanbeveling mag zijn, opdat wij door zijn bescherming mogen verwerven wat wij door eigen verdiensten niet vermogen.
-$Per Dominum
+@Commune/C4c:Oratio:s/N\./Benedictus/
 
 [Secreta]
-Wij vragen U, Heer, mogen deze offergaven, die wij op uw altaar neerleggen, door de voorspraak van de heilige abt Benedictus onze zaligheid ten goede komen.
-$Per Dominum
+@Commune/C4c:Secreta:s/N\./Benedictus/
 
 [Postcommunio]
-Moge, o Heer, met het ontvangen van uw Sacrament, de voorspraak van de heilige abt Benedictus ons beschermen, opdat wij het grootse van zijn leven durven proberen en daarbij de steun van zijn voorspraak ontvangen.
-$Per Dominum
+@Commune/C4c:Postcommunio:s/N\./Benedictus/
