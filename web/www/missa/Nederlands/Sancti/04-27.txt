@@ -14,9 +14,7 @@ God, Gij hebt uw belijder Petrus een krachtige deugd en grote kennis gegeven om 
 $Per Dominum
 
 [Secreta]
-Moge, o Heer, het liefdevol gebed van uw heilige belijder en kerkleraar Petrus ons niet ontbreken. Moge het onze gaven U welgevallig maken en ons altijd vergeving verwerven.
-$Per Dominum.
+@Commune/C4a:Secreta1:s/N\./Petrus/
 
 [Postcommunio]
-Wij vragen U, o Heer, dat uw heilige belijder en uitgelezen leraar Petrus als onze voorspreker optreedt, opdat deze heilige offers ons het heil verzekeren.
-$Per Dominum
+@Commune/C4a:Postcommunio1:s/N\./Petrus/
