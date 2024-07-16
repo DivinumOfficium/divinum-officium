@@ -10,12 +10,10 @@ Mogen de verdiensten van uw heilige belijder en bisschop Antoninus ons bijstaan,
 $Per Dominum
 
 [Secreta]
-Wij vragen U, Heer, mogen uw heiligen ons altijd gelukkig doen zijn, opdat wij bij de herdenking van hun verdiensten hun bescherming mogen ondervinden.
-$Per Dominum.
+@Commune/C4
 
 [Postcommunio]
-Dankbaar voor de ontvangen gaven, vragen wij U, almachtige God, dat wij op voorspraak van uw heilige belijder en bisschop Antoninus, de hogere gaven mogen genieten.
-$Per Dominum
+@Commune/C4:Postcommunio:s/N\./Antoninus/
 
 [Commemoratio Oratio]
 !Pro Ss. Gordiano et Epimacho Martyribus
