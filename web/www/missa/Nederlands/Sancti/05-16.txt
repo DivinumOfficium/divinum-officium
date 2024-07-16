@@ -10,9 +10,7 @@ Wij vragen U, Heer, verleen ons genadig uw hulp en strek op voorspraak van uw he
 $Per Dominum
 
 [Secreta]
-Wij vragen U, Heer, mogen uw heiligen ons altijd verblijden, opdat wij bij de herdenking van hun verdiensten hun bescherming mogen ondervinden.
-$Per Dominum
+@Commune/C4
 
 [Postcommunio]
-Dankbaar voor de ontvangen gaven vragen wij U, almachtige God, dat wij op voorspraak van uw heilige belijder en bisschop Ubaldus de hogere gaven mogen genieten.
-$Per Dominum
+@Commune/C4:Postcommunio:s/N\./Ubaldus/
