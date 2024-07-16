@@ -4,15 +4,33 @@ S. Pii V Papæ Confessoris;;Duplex;;3;;vide C4b
 [Rule]
 Gloria
 
+[Introitus]
+@Commune/C4b
+
 [Oratio]
 Deus, qui, ad conteréndos Ecclésiæ tuæ hostes et ad divínum cultum reparándum, beátum Pium Pontíficem Máximum elígere dignátus es: fac nos ipsíus deféndi præsídiis et ita tuis inhærére obséquiis; ut, ómnium hóstium superátis insídiis, perpétua pace lætémur.
 $Per Dominum
+
+[Lectio]
+@Commune/C4b
+
+[Graduale]
+@Commune/C4b
+
+[Evangelium]
+@Commune/C4b
+
+[Offertorium]
+@Commune/C4b
 
 [Secreta]
 Sancti tui, quǽsumus, Dómine, nos úbique lætíficent: ut, dum eórum mérita recólimus, patrocínia sentiámus.
 $Per Dominum
 
 [Secreta](rubrica 1960)
+@Commune/C4b
+
+[Communio]
 @Commune/C4b
 
 [Postcommunio]
