@@ -810,7 +810,7 @@ sub getitem {
   }
   if (!$w) { $w = "$type missing!\n" }
 
-  #if ($type =~ /(Introitus|Offertorium!Communio)/) {
+  #if ($type =~ /(Introitus|Offertorium|Communio)/) {
   if ($dayname[0] =~ /Pasc/i) {
     $w =~ s/\((Allel.*?)\)/$1/ig;
   } else {
