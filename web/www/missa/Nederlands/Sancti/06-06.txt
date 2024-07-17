@@ -10,9 +10,7 @@ God, Gij hebt uw heilige belijder en bisschop Norbertus een uitmuntend heraut va
 $Per Dominum
 
 [Secreta]
-Wij vragen U, Heer, mogen uw heiligen ons altijd verheugen, opdat wij bij de herdenking van hun verdiensten hun bescherming mogen genieten.
-$Per Dominum
+@Commune/C4
 
 [Postcommunio]
-Dankbaar voor de ontvangen gaven, vragen wij U, almachtige God, dat wij op voorspraak van uw heilige belijder en bisschop Norbertus de hogere gaven mogen genieten.
-$Per Dominum
+@Commune/C4:Postcommunio:s/N\./Norbertus/
