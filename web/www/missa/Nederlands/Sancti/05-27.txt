@@ -11,27 +11,25 @@ God, Gij verheerlijkt uw Kerk door de wijsheid van uw heilige belijder en leraar
 $Per Dominum
 
 [Secreta]
-Moge, o Heer, het liefdevol gebed van uw heilige belijder en kerkleraar Beda ons niet ontbreken. Moge het onze gaven U welgevallig maken, en ons steeds ontferming verwerven.
-$Per Dominum
+@Commune/C4a:Secreta1:s/N\./Beda/
 
 [Postcommunio]
-Wij bidden U, o Heer, dat de heilige belijder en uitgelezen kerkleraar Beda als onze voorspreker mag optreden, opdat deze heilige dienst ons het heil verzekere.
-$Per Dominum
+@Commune/C4a:Postcommunio1:s/N\./Beda/
 
 [Commemoratio Oratio]
 !Pro S. Joanne
-@Commune/C2b:Oratio:s/N\./Joánnis/
+@Commune/C2b:Oratio:s/N\./Johannes/
 (sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio
+@Commune/C4b:Oratio:s/N\./Johannes/
 
 [Commemoratio Secreta]
 !Pro S. Joanne
-@Commune/C2b:Secreta:s/N\./Joánne/
+@Commune/C2b:Secreta:s/N\./Johannes/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Secreta
 
 [Commemoratio Postcommunio]
 !Pro S. Joanne
-@Commune/C2b:Postcommunio:s/N\./Joánne/
+@Commune/C2b:Postcommunio:s/N\./Johannes/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Postcommunio
