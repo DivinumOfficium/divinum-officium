@@ -7,12 +7,24 @@ vide C4b;
 CPapaM=Urbánum;
 Gloria
 
+[Introitus]
+@Commune/C4b
+
 [Oratio]
 God, sterkte van die op U hopen, Gij hebt uw heilige belijder en bisschop Gregorius in de deugd van standvastigheid de kracht gegeven om de vrijheid van uw Kerk te verdedigen. Doe ons naar zijn voorbeeld en op zijn voorspraak al wat ons tegentreedt met kracht overwinnen.
 $Per Dominum
 
+[Lectio]
+@Commune/C4b
+
+[Evangelium]
+@Commune/C4b
+
 [Secreta]
 @Commune/C4
+
+[Communio]
+@Commune/C4b
 
 [Postcommunio]
 @Commune/C4:Postcommunio:s/N\./Gregorius/
