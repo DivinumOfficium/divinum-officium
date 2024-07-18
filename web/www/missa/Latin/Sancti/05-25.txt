@@ -7,13 +7,25 @@ vide C4b;
 CPapaM=Urbánum;
 Gloria
 
+[Introitus]
+@Commune/C4b
+
 [Oratio]
 Deus, in te sperántium fortitúdo, qui beátum Gregórium Confessórem tuum atque Pontíficem, pro tuénda Ecclésiæ libertáte, virtúte constántiæ roborásti: da nobis, ejus exémplo et intercessióne, ómnia adversántia fórtiter superáre.
 $Per Dominum
 
+[Lectio]
+@Commune/C4b
+
+[Evangelium]
+@Commune/C4b
+
 [Secreta]
 Sancti tui, quǽsumus, Dómine, nos ubique lætíficent: ut, dum eórum mérita recólimus, patrocínia sentiámus.
 $Per Dominum
+
+[Communio]
+@Commune/C4b
 
 [Postcommunio]
 Præsta, quǽsumus, omnípotens Deus: ut, de percéptis munéribus grátias exhibéntes, intercedénte beáto Gregório Confessóre tuo atque Pontífice, benefícia potióra sumámus.
