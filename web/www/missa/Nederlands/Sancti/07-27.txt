@@ -6,5 +6,7 @@ vide C2a;
 Gloria
 
 [Oratio]
-Wij vragen U, almachtige God, bewerk, dat wij door de voorspraak van uw heilige martelaar Pantaleon, naar het lichaam voor alle onheil gespaard blijven en onze geest zuiver houden van kwade gedachten.
-$Per Dominum
+@Commune/C2a:Oratio:s/N\./Pantaleon/
+
+[Postcommunio]
+@Commune/C2a:Postcommunio:s/N\./Pantaleon/
