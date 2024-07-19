@@ -24,7 +24,7 @@ $Per Dominum
 
 [Commemoratio Oratio]
 !S. Christophori Martyris
-@Commune/C2:Oratio:s/\N./Christoforus/
+@Commune/C2:Oratio:s/N\./Christoforus/
 
 [Lectio]
 Lezing uit de eerste Brief van de heilige Apostel Paulus aan de Corinthiërs
@@ -51,7 +51,7 @@ $Per Dominum
 
 [Commemoratio Secreta]
 !Pro S. Christophoro
-@Commune/C2:Secreta:s/\N./Christoforus/
+@Commune/C2:Secreta
 
 [Communio]
 !Matt 19:28
@@ -63,5 +63,5 @@ $Per Dominum
 
 [Commemoratio Postcommunio]
 !Pro S. Christophoro
-@Commune/C2:Postcommunio:s/\N./Christoforus/
+@Commune/C2:Postcommunio
 
