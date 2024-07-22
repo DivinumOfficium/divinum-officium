@@ -1,7 +1,74 @@
 @Sancti/07-22
 
-[Rank]
-S. Mariæ Magdalenæ Pœnitentis;;Duplex;;3;;vide C7a
+[Rank] (rubrica 1930)
+S. Mariæ Magdalenæ Pœnitentis;;Duplex majus;;5;;ex C7
 
-[Ant 3]
+[Rule] (rubrica 1930)
+12 lectiones
+
+[Lectio1]
+@Sancti/07-22
+
+[Lectio2]
+@Sancti/07-22::1-3 s/-4/-2/
+
+[Lectio3]
+@Sancti/07-22:Lectio2:1 s/1-4/3-5/
+@Sancti/07-22:Lectio2:4-5
+@Sancti/07-22:Lectio3:2
+
+[Lectio4]
+@Sancti/07-22:Lectio3:1 s/5-/6-/
+@Sancti/07-22:Lectio3:3-4
+
+[Responsory4]
+@Tempora/Pasc0-0:Responsory2:s/, all.*/./g
+
+[Lectio5]
+@Sancti/07-22:Lectio4
+
+[Responsory5]
+@Commune/C6:Responsory4
+
+[Lectio6]
+@Sancti/07-22:Lectio5
+
+[Responsory6]
+@Commune/C6:Responsory5
+
+[Lectio7]
+@Sancti/07-22:Lectio6:s/ Quæréntes.*//
+
+[Responsory7]
+@Commune/C7:Responsory6
+
+[Lectio8]
+@Sancti/07-22:Lectio6:s/.* Quæréntes/Quæréntes/
+
+[Lectio9]
+@Sancti/07-22:Lectio7:s/Nóverat.*//
+
+[Responsory9]
+@Commune/C7:Responsory7
+
+[Lectio10]
+@Sancti/07-22:Lectio7:s/.*Nóverat/Nóverat/s s/$/~/
+@Sancti/07-22:Lectio8:s/Quia.*//
+
+[Responsory10]
+@Commune/C7:Responsory8
+
+[Lectio11]
+@Sancti/07-22:Lectio8:s/.* Quia/Quia/
+
+[Lectio12]
+@Sancti/07-22:Lectio9
+
+[Responsory12]
+@CommuneM/C7::s/N\./María Magdaléna/
+
+[LectioE]
+@Tempora/Quad5-4
+
+[Ant 3] (rubrica 1963)
 @:Ant 1
