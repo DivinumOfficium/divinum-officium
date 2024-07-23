@@ -23,7 +23,8 @@ $Per Dominum
 !Eccli 44:16
 Ecce sacérdos magnus, qui in diébus suis plácuit Deo. 
 !Eccli 44:20
-Non est inventus símilis illi, qui conserváret legem Excélsi. Allelúja, allelúja
+Non est inventus símilis illi, qui conserváret legem Excélsi. 
+Allelúja, allelúja.
 !Jac 1:12
 Beátus vir, qui suffert tentatiónem: quóniam, cum probátus fúerit, accípiet corónam vitæ. Allelúja.
 
@@ -40,12 +41,10 @@ V. Glória et divítiæ in domo ejus: et justítia ejus manet in sǽculum sǽcul
 @Commune/C4a
 
 [Secreta]
-Sancti Joánnis Chrysóstomi Pontíficis tui atque Doctóris nobis, Dómine, pia non desit orátio: quæ et múnera nostra concíliet; et tuam nobis indulgéntiam semper obtíneat.
-$Per Dominum
+@Commune/C4a:Secreta:s/N\./Joánnis Chrysóstomi/
 
 [Communio]
 @Commune/C4
 
 [Postcommunio]
-Ut nobis, Dómine, tua sacrifícia dent salútem: beátus Joánnes Chrysóstomus Póntifex tuus et Doctor egrégius, quǽsumus, precátor accédat.
-$Per Dominum
+@Commune/C4a:Postcommunio:s/N\./Joánnes Chrysóstomus/
