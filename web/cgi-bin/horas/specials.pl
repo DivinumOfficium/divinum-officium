@@ -224,7 +224,7 @@ sub specials {
 
     if ($item =~ /Capitulum/i && $hora =~ /^(?:Tertia|Sexta|Nona|Completorium)$/i) {
       my %capit = %{setupstring($lang, 'Psalterium/Minor Special.txt')};
-      my $name = minor_getname();
+      my $name = gettempora('Capitulum minor') . " $hora";
       $name = 'Completorium' if $hora eq 'Completorium';
       $name .= 'M' if ($version =~ /monastic/i);
       my $capit = $capit{$name} =~ s/\s*$//r;
@@ -285,7 +285,13 @@ sub specials {
 
       if (!$capit) {
         my %capit = %{setupstring($lang, 'Psalterium/Major Special.txt')};
-        $name = major_getname(1);
+        $name = gettempora('Capitulum major');
+
+        if ($version =~ /monastic/i) {
+          $name .= 'M';
+          $name =~ s/Day[1-5]M/DayFM/i;
+        }
+        $name .= " $hora";
         $capit = $capit{$name};
       }
 
@@ -324,27 +330,7 @@ sub specials {
 
     if ($item =~ /Lectio brevis/i && $hora =~ /prima/i) {
       my %brevis = %{setupstring($lang, 'Psalterium/Prima Special.txt')};
-      my $name =
-          ($dayname[0] =~ /(Quad5|Quad6)/i) ? 'Quad5'
-        : ($dayname[0] =~ /Quad(?!p)/i) ? 'Quad'
-        : ($dayname[0] =~ /Quadp[3]/i && $dayofweek >= 3 && $version !~ /196/) ? 'Feria'
-        : ($dayname[0] =~ /Adv/i) ? 'Adv'
-        : ($dayname[0] =~ /Pasc6/i || ($dayname[0] =~ /Pasc5/i && $dayofweek > 3)) ? 'Asc'
-        : ($dayname[0] =~ /Pasc[0-6]/i) ? 'Pasc'
-        : ($dayname[0] =~ /Pasc7/i) ? Pent
-        : 'Per Annum';
-
-      if ($version =~ /196/) {
-        my $d = ($dayname[0] =~ /Nat/i) ? $dayname[0] : "$dayname[0]-$dayofweek";
-        if ($d =~ /Nat/i) { $name = 'Nat'; }
-
-        if ($d =~ /Nat([0-9]+)/i) {
-          my $n = $1;
-          if ($1 > 5 && $1 < 14) { $name = 'Epi'; }
-        }
-        if ($d =~ /Epi1\-[0-9]/i && $day < 14) { $name = 'Epi'; }
-        if ($d =~ /Pasc/i && $d ge 'Pasc5-4' && $d lt 'Pasc7-0') { $name = 'Asc'; }
-      }
+      my $name = gettempora("Lectio brevis Prima");
       my @brevis = split("\n", $brevis{$name});
       $comment = ($name =~ /per annum/i) ? 5 : 1;
       setbuild('Psalterium/Prima Special', $name, 'Lectio brevis ord');
@@ -1268,38 +1254,6 @@ sub vigilia_commemoratio {
   return $w;
 }
 
-#*** minor_getname()
-# returns the database hashname for minor horas from' minor special.txt' file
-sub minor_getname {
-  my $name =
-      ($dayname[0] =~ /Adv/i) ? 'Adv'
-    : ($dayname[0] =~ /(Quad5|Quad6)/i) ? 'Quad5'
-    : ($dayname[0] =~ /Quad/i && $dayname[0] !~ /Quadp/i) ? 'Quad'
-    : ($dayname[0] =~ /Pasc/i) ? 'Pasch'
-    : ($dayofweek == 0 || ($dayname[1] =~ /Duplex/i && $dayname[1] !~ /(Dominica|Vigilia)/i)) ? 'Dominica'
-    : 'Feria';
-  return "$name $hora";
-}
-
-#*** major_getname
-# returns the database hashname for vespera laudes from 'Major Special.txt' file
-sub major_getname {
-  my $flag = shift;
-  my $name =
-      ($dayname[0] =~ /Adv/i) ? 'Adv'
-    : ($dayname[0] =~ /(Quad5|Quad6)/i) ? 'Quad5'
-    : ($dayname[0] =~ /Quad/i && $dayname[0] !~ /Quadp/i) ? 'Quad'
-    : ($dayname[0] =~ /Pasc/i) ? 'Pasch'
-    : "Day$dayofweek";
-
-  if ($version =~ /monastic/i && $flag) {
-    $name .= 'M';
-    $name =~ s/Day[1-5]M/DayFM/i;
-  }
-  $name .= " $hora";
-  return $name;
-}
-
 #*** getproprium($name, $lang, $flag, $buidflag)
 # returns $name item from tempora or sancti file
 # if $flag and no item in the proprium checks commune
@@ -1486,8 +1440,8 @@ sub getfrompsalterium {
 
   #get from psalterium
   my %c = %{setupstring($lang, 'Psalterium/Major Special.txt')};
-  my $name = major_getname();
-  $name =~ s/(Laudes|Vespera)/$item/i;
+  my $name = gettempora('getfrompsalterium major') . " $item";
+
   my $w = $c{"$name $ind"};
   if (!$w) { $w = $c{"$name 1"}; }
   if (!$w) { $w = $c{"$name 3"}; }
@@ -1748,17 +1702,7 @@ sub getrefs {
 
 sub get_prima_responsory {
   my $lang = shift;
-  my $key;
-
-  if ($dayname[0] =~ /^(Adv|Nat)/i) {
-    $key = $1;
-  } elsif ($dayname[0] =~ /^Pasc/i) {
-    $key =
-      $dayname[0] eq 'Pasc7' ? 'Pent'
-      : ($dayname[0] eq 'Pasc5' && $dayofweek > 4)
-      || $dayname[0] eq 'Pasc6' ? 'Asc'
-      : 'Pasch';
-  }
+  my $key = gettempora('Prima responsory');
 
   if ( $rule =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i
     || $commemoratio{Rule} =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i)

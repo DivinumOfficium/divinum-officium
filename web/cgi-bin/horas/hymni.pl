@@ -37,15 +37,15 @@ sub gethymn {
     $hymn = tryoldhymn(\%h, $name, $version);
   }
 
-  if ($hymn =~ /\*/) {    # doxology needed
+  if ($version !~ /1960/ && $hymn =~ /\*/) {    # doxology needed
     my ($dox, $dname) = doxology($lang);
     if ($dname) { $hymn =~ s/\*.*/$dox/s }
     $section .= " {Doxology: $dname}" if ($dname && $section);
   }
 
-  $hymn =~ s/^(?:v\.\s*)?(\p{Lu})/v. $1/;    # add initial
-  $hymn =~ s/\*\s*//g;                       # remove star
-  $hymn =~ s/_\n(?!!)/_\nr. /g;              # start stropha with red letter
+  $hymn =~ s/^(?:v\.\s*)?(\p{Lu})/v. $1/;       # add initial
+  $hymn =~ s/\*\s*//g;                          # remove star
+  $hymn =~ s/_\n(?!!)/_\nr. /g;                 # start stropha with red letter
 
   my $output = "$section\n$hymn";
   $output .= "_\n$versum" if $versum;
@@ -81,7 +81,7 @@ sub hymnusmajor {
   if (!$hymn) { ($hymn, $cr) = getproprium("$name", $lang, $seasonalflag, 1); }
 
   if (!$hymn) {
-    $name = major_getname();
+    $name = gettempora('Hymnus major') . " $hora";
     $name = 'Day0 Laudes2'
       if (
         $name =~ /Day0 Laudes/i
@@ -95,8 +95,6 @@ sub hymnusmajor {
 
 sub doxology {
   our ($version, $rule, @dayname, %winner, %winner2, %commemoratio, $day, $month, $year, $dayofweek);
-  return ('', '') if ($version =~ /1960/);
-
   my $lang = shift;
   my $dox = '';
   my $dname = '';
@@ -119,19 +117,7 @@ sub doxology {
     {
       $dname = 'Nat';
     } else {
-      my $d = ($dayname[0] =~ /Nat/) ? $dayname[0] : "$dayname[0]-$dayofweek";
-
-      if ($d =~ /Nat([0-9]+)/i && ($1 >= 25 || $1 < 6)) {
-        $dname = 'Nat';
-      } elsif ($d =~ /Nat/i) {
-        $dname = 'Epi';
-      } elsif ($d =~ /Pasc/i && $d ge 'Pasc1-0' && $d lt 'Pasc5-4') {
-        $dname = 'Pasc';
-      } elsif ($d =~ /Pasc/i && $d ge 'Pasc5-4' && $d lt 'Pasc7-0') {
-        $dname = 'Asc';
-      } elsif ($d =~ /Pasc/i && $d ge 'Pasc7-0') {
-        $dname = 'Pent';
-      }
+      $dname = gettempora('Doxology');
     }
 
     if ($dname) {
