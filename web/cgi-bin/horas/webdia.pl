@@ -517,7 +517,9 @@ sub setcell {
 
   # $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
   $text =~ s/\{\:.*?\:\}//sg;
-  $text =~ s/\`//g;    #`
+  $text =~ s/\`//g;                                      #`
+  $text =~ s/\s([»!?;:])/&nbsp;$1/g;                     # no-break space before punctutation (mostly French)
+  $text =~ s/«\s/«&nbsp;/g unless $lang eq 'Deutsch';    # no-break space after begin quote
 
   if ($Ck) {
     if ($column == 1) {
