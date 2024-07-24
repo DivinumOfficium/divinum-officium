@@ -6,12 +6,10 @@ vide C2b;
 Gloria
 
 [Oratio]
-Deus, qui nos beáti Blásii Mártyris tui atque Pontíficis ánnua solemnitáte lætíficas: concéde propítius; ut cujus natalítia cólimus, de eiúsdem étiam protectióne gaudeámus.
-$Per Dominum
+@Commune/C2b:s/N\./Blásii/
 
 [Secreta]
-@Commune/C2b::s/N\./Blásio/
+@Commune/C2b:s/N\./Blásio/
 
 [Postcommunio]
-Hæc nos commúnio, Dómine, purget a crímine: et, intercedénte beáto Blásio Mártyre tuo atque Pontífice, coeléstis remédii fáciat esse consórtes.
-$Per Dominum
+@Commune/C2b:s/N\./Blásio/
