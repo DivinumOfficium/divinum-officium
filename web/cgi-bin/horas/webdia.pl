@@ -517,7 +517,9 @@ sub setcell {
 
   # $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
   $text =~ s/\{\:.*?\:\}//sg;
-  $text =~ s/\`//g;    #`
+  $text =~ s/\`//g;                     #`
+  $text =~ s/\s([»!?;:])/&nbsp;$1/g;    # no-break space (mostly French)
+  $text =~ s/«\s/«&nbsp;/g;             # dito
 
   if ($Ck) {
     if ($column == 1) {
