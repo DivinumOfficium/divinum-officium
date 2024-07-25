@@ -27,6 +27,11 @@ sub gethymn {
       my %ant = %{setupstring($lang, 'Psalterium/Minor Special.txt')};
       $versum = $ant{'Versum 4'};
       postprocess_vr($versum, $lang);
+      my $tempname = gettempora('*');
+
+      if ($tempname =~ /^(?:Quad5?|Pasch|Asc|Pent)$/) {
+        $name .= " $tempname";
+      }
     }
     $hymnsource = 'Minor';
     $section = "#" . $section;
