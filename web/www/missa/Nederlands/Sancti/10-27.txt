@@ -7,14 +7,14 @@ no Gloria
 Suffragium=Maria3;Papa;Ecclesia;;
 
 [Introitus]
-@Commune/C3:Introitus
+@Commune/C3
 
 [Oratio]
 Wij vragen U, almachtige God, laat uw apostelen Simon en Judas, op wier glorierijk feest wij vooruitlopen, ons bij uw Majesteit voorkomen om uw weldaden te verkrijgen.
 $Per Dominum
 
 [Lectio]
-@Commune/C5b:Lectio
+@Commune/C5b
 
 [Graduale]
 !Ps 78:10; 78:2
@@ -22,19 +22,17 @@ Wreek, o Heer, het bloed van uw dienaren, dat vergoten werd.
 V. De lijken van uw dienaren, o Heer, hebben zij tot aas geworpen voor de vogelen des hemels, de lichamen van uw getrouwen voor de wilde dieren op het veld.
 
 [Evangelium]
-@Commune/C3p:Evangelium
+@Commune/C2p
 
 [Offertorium]
-!Ps 149:5-6
-De heiligen zullen juichen in hun glorie, zich verblijden op hun legersteden. Gods lof zij in hun mond.
+@Commune/C3a
 
 [Secreta]
 Met onze offergaven, Heer, vieren wij de vooravond van uw heilige apostelen Simon en Judas. Wij bidden U nederig, dat deze gaven, waarvoor de staat van ons geweten een beletsel betekent, door hun verdiensten U welgevallig mogen worden.
 $Per Dominum
 
 [Communio]
-!Ps 78:2; 78:11
-De lijken van uw dienaren, o Heer, hebben zij tot aas geworpen voor de vogelen des hemels, de lichamen van uw getrouwen voor de wilde dieren op het veld. Behoed met de kracht van uw arm de zonen van hen, die met de dood zijn gestraft.
+@Sancti/06-12o
 
 [Postcommunio]
 Nu wij uw Sacrament genuttigd hebben, smeken wij U nederig, Heer, dat wij door de voorspraak van uw heilige apostelen Simon en Judas een eeuwig leven mogen ontvangen voor wat wij in de tijd vieren.
