@@ -296,6 +296,16 @@ sub MLitany2 : ScriptFunc {
   return prayer('MLitany2', $lang);
 }
 
+#*** versiculum_ante_laudes($lang)
+# return versiculum ante Laudes used in Ordo Praedicatorum only
+sub versiculum_ante_laudes : ScriptFunc {
+  my $lang = shift;
+
+  my ($v, $c) = getantvers('Versum', 0, $lang);
+
+  $v;
+}
+
 #*** Benedicamus_Domino
 # adds Alleluia, alleluia for Pasc0
 sub Benedicamus_Domino : ScriptFunc {
