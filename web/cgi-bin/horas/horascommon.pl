@@ -2169,7 +2169,7 @@ sub gettempora {
   my $caller = shift;
   my $tname =
       ($dayname[0] =~ /^Adv[34]$/ && $caller eq 'Invitatorium') ? 'Adv3'
-    : ($dayname[0] =~ /^Adv/ && $caller ne 'Doxology') ? 'Adv'
+    : ($dayname[0] =~ /^Adv/ && $caller ne 'Doxology' && $caller ne 'Nunc dimittis') ? 'Adv'
     : ($dayname[0] =~ /^Quad[56]/ && $caller ne 'Doxology') ? 'Quad5'
     : ($dayname[0] =~ /^Quad(?!p)/ && $caller ne 'Doxology') ? 'Quad'
     : ($dayname[0] =~ /^Pasc6/ || ($dayname[0] =~ /Pasc5/i && $dayofweek > 3 && $dayname[1] !~ /^Dominica/)) ? 'Asc'
@@ -2199,7 +2199,10 @@ sub gettempora {
     $tname = "Day$dayofweek";
   }
 
-  if ($caller eq 'Doxology' || $caller eq 'Prima responsory' || ($version =~ /196/ && $caller ne 'Psalmi minor')) {
+  if ( $caller eq 'Doxology'
+    || $caller eq 'Prima responsory'
+    || ($version =~ /196/ && $caller ne 'Psalmi minor' && $caller ne 'Nunc dimittis'))
+  {
     if ($dayname[0] =~ /^Nat/) {
       $tname = ($day >= 6 && $day < 13) ? 'Epi' : 'Nat';
     } elsif ($dayname[0] =~ /^Epi[01]/i && $day < 14) {
@@ -2207,8 +2210,12 @@ sub gettempora {
     }
   }
 
-  if ($caller eq 'MM Capitulum' && $tname) {
+  if (($caller eq 'MM Capitulum' || $caller eq 'Nunc dimittis') && $tname) {
     $tname = " $tname";
+
+    if ($caller eq 'Nunc dimittis' && $dayname[0] =~ /^Quad[34]/) {
+      $tname .= '3';
+    }
   }
 
   $tname;
