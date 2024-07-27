@@ -11,19 +11,13 @@ CredoDa
 no Vigil1960
 
 [Introitus]
-!Eccli 15:5
-v. Midden in de vergadering opende hij zijn mond en de Heer vervulde Hem met de geest van wijsheid en verstand; met een eregewaad bekleedde Hij hem.
-!Ps 91:2
-Heerlijk is het de Heer te loven, uw Naam te bezingen, o Allerhoogste.
-&Gloria
-v. Midden in de vergadering opende hij zijn mond en de Heer vervulde Hem met de geest van wijsheid en verstand; met een eregewaad bekleedde Hij hem.
+@Commune/C4a
 
 [Oratio]
-God, Gij hebt uw volk de heilige Ambrosius als bedienaar van het eeuwig heil geschonken. Wij vragen U, laat ons in de hemel als voorspreker hebben, die wij op aarde als leraar van het leven hadden.
-$Per Dominum
+@Commune/C4a:Oratio:s/N\./Ambrosius/
 
 [Lectio]
-@Commune/C4a:Lectio
+@Commune/C4a
 
 [Graduale]
 !Eccli 44:16
@@ -34,19 +28,17 @@ Niemand werd er gevonden, die als hij, aan de wet van de Allerhoogste getrouw bl
 De Heer heeft gezworen en het zal Hem niet berouwen: Gij zijt priester voor eeuwig naar de wijze van Melchisedech. Alleluia.
 
 [Evangelium]
-@Commune/C4a:Evangelium
+@Commune/C4a
 
 [Offertorium]
-!Ps 88:25
-Mijn trouw en barmhartigheid zullen met hem zijn en in mijn Naam zal zijn hoorn zich verheffen.
+@Commune/C2c
 
 [Secreta]
 Almachtige, eeuwige God, mogen de gaven, die wij uw majesteit hebben opgedragen, door de voorspraak van uw heilige belijder en bisschop Ambrosius onze eeuwige zaligheid ten goede komen.
 $Per Dominum
 
 [Communio]
-!Ps 88:36-38
-Eens voor altijd heb Ik bij mijn heiligheid gezworen: Zijn nakroost zal eeuwig voortbestaan, zijn troon zal voor mijn aanschijn standhouden als de zon; als de maan die eeuwig blijft, een trouwe getuige aan de hemel.
+@Commune/C2c
 
 [Postcommunio]
 Bij het ontvangen van de geheimen van onze zaligheid vragen wij U, almachtige God, laat het gebed van uw heilige belijder en bisschop Ambrosius, op wiens feest wij dit offer uw Majesteit brengen, ons overal tot steun zijn.
