@@ -10,9 +10,7 @@ God, Gij hebt ter verheerlijking van uw Kerk de heilige koning Canutus met de pa
 $Per eundem
 
 [Secreta]
-Moge wat wij U wijden in uw ogen genade vinden, o Heer, en dat het ons tot heil mag strekken door de bede van hem, op wiens feest we dit offer brengen.
-$Per Dominum
+@Commune/C2a
 
 [Postcommunio]
-Verkwikt door de deelname aan de heilige gave, varagen wij U, Heer, onze God, dat wij door de voorspraak van uw heilige martelaar Canutus de uitwerking mogen ondervinden van wat wij in deze eredienst verrichten.
-$Per Dominum
+@Commune/C2a:Postcommunio:s/N\./Canutus/
