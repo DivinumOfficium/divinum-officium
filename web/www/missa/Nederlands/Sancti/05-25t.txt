@@ -7,28 +7,23 @@ vide C4b;
 Gloria
 
 [Oratio]
-God, sterkte van die op U hopen, Gij hebt uw heilige belijder en bisschop Gregorius in de deugd van standvastigheid de kracht gegeven om de vrijheid van uw Kerk te verdedigen. Doe ons naar zijn voorbeeld en op zijn voorspraak al wat ons tegentreedt met kracht overwinnen.
-$Per Dominum
+@Sancti/05-25
 
 [Secreta]
 Wij vragen U, Heer, mogen uw heiligen ons altijd gelukkig doen zijn, en laat ons daarom bij de herdenking van hun verdiensten hun bescherming ondervinden.
 $Per Dominum
 
 [Postcommunio]
-Dankbaar voor de ontvangen gaven, vragen wij U, almachtige God, dat wij op voorspraak van uw heilige belijder en bisschop Gregorius de hogere gaven mogen genieten.
-$Per Dominum
+@Commune/C4:Postcommunio:s/N\./Gregorius/
 
 [Commemoratio Oratio]
 !Pro S. Urbano
-God, Gij hebt uw Kerk gesticht op de vaste grond van de rots der apostelen, en redt haar uit de verschrikking van de poorten der hel. Wij vragen U, laat haar op voorspraak van uw heilige martelaar en paus Urbanus in uw waarheid mogen volharden en in uw voortdurende bescherming alijd veilig zijn.
-$Per Dominum
+@Commune/C4b:Oratio1:s/N\./Urbanus/
 
 [Commemoratio Secreta]
 !Pro S. Urbano
-Aanvaard genadig, Heer, de gaven, die wij U vol vreugde opdragen, opdat uw Kerk op voorspraak van de heilige Urbanus zich altijd mag verheugen over een ongerept geloof en zich altijd gelukkig prijzen in de rust der tijden.
-$Per Dominum
+@Commune/C4b:Secreta1:s/N\./Urbanus/
 
 [Commemoratio Postcommunio]
 !Pro S. Urbano
-Wij smeken U, Heer, vermeerder in uw Kerk de geest van genade, die Gij hebt gegeven, opdat door de voorspraak van uw heilige martelaar en paus Urbanus uw kudde niet te kort schiet in gehoorzaamheid aan zijn herder, en de herder niet in zorg voor zijn kudde.
-$Per Dominum
+@Commune/C4b:Postcommunio1:s/N\./Urbanus/
