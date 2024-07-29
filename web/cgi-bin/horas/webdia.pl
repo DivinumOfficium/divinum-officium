@@ -395,41 +395,10 @@ sub getcookie1 {
 # + is "make a cross over the forehead and abdomen: cross yourself"
 # This version uses Unicode entities instead of small GIFs.
 sub setcross {
-  my $line = shift;
-
-  if ($nofancychars) { return $line; }
-
-  my $csubst = '';
-
-  if (CGI::user_agent("BlackBerry")) {
-
-    # Not enough Unicode for what we really want, below.  Fake it.
-    # cross type 3: COPTIC SMALL LETTER DEI
-    $csubst = "<span style='color:red; font-size:1.25em'>&#x03EF;</span>";
-    $line =~ s/\+\+\+/$csubst/g;
-
-    # Cross type 2: Latin Cross
-    $csubst = "<span style='color:red; font-size:1.25em'>&#x271D;&#xFE0E;</span>";
-    $line =~ s/\+\+/$csubst/g;
-
-    # Cross type 1: PLUS SIGN
-    $csubst = "<span style='color:red; font-size:1.25em'>+</span>";
-    $line =~ s/ \+ / $csubst /g;
-  } else {
-
-    # Cross type 3: Outlined Greek Cross
-    $csubst = "<span style='color:red; font-size:1.25em'>&#x2719;&#xFE0E;</span>";
-    $line =~ s/\+\+\+/$csubst/g;
-
-    # Cross type 2: Greek Cross
-    $csubst = "<span style='color:red; font-size:1.25em'>+︎</span>";
-    $line =~ s/\+\+/$csubst/g;
-
-    # cross type 1: Maltese Cross
-    $csubst = "<span style='color:red; font-size:1.25em'>✠</span>";
-    $line =~ s/ \+ / $csubst /g;
-  }
-  return $line;
+  $_[0] =~ s/ (\+{1,3}) /" <span style='color:red; font-size:1.25em'>" .
+                          ($nofancychars ? $1 : $1 eq '+++' ? '✙︎' :
+                                                $1 eq '++' ? '➕' : '✠') .
+                          "<\/span> "/ger;
 }
 
 #*** setvrbar($line)
