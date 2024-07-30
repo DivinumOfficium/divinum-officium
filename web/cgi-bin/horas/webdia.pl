@@ -397,7 +397,7 @@ sub getcookie1 {
 sub setcross {
   $_[0] =~ s/ (\+{1,3}) /" <span style='color:red; font-size:1.25em'>" .
                           ($nofancychars ? $1 : $1 eq '+++' ? '✙︎' :
-                                                $1 eq '++' ? '➕' : '✠') .
+                                                $1 eq '++' ? '+' : '✠') .
                           "<\/span> "/ger;
 }
 
