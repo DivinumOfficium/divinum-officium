@@ -14,8 +14,7 @@ $Per Dominum
 
 [Commemoratio Oratio]
 !Pro Octava Omnium Sanctorum
-Omnípotens sempitérne Deus, qui nos ómnium Sanctórum tuórum mérita sub una tribuísti celebritáte venerári: quǽsumus; ut desiderátam nobis tuæ propitiatiónis abundántiam, multiplicátis intercessóribus, largiáris.
-$Per Dominum
+@Sancti/11-01:Oratio
 _
 !Pro Ss. Vitale et Agrícola Martyribus
 Præsta, quǽsumus, omnípotens Deus: ut, qui sanctórum Mártyrum tuórum Vitális et Agrícolæ sollémnia cólimus, eórum apud te intercessiónibus adjuvémur.
@@ -39,16 +38,14 @@ Allelúja, allelúja.
 @Commune/C2b
 
 [Secreta]
-Sancti tui, quǽsumus, Dómine, nos ubique lætíficent: ut, dum eórum mérita recólimus, patrocínia sentiámus.
-$Per Dominum
+@Commune/C4
 
 [Commemoratio Secreta]
 !Pro Octava Omnium Sanctorum
-@Sancti/01-22:Secreta
+@Sancti/11-01:Secreta
 _
 !Pro Ss. Vitale et Agrícola Martyribus
-Oblátis, quǽsumus, Dómine, placáre munéribus: et, intercedéntibus sanctis Martýribus tuis Vitále et Agrícola, a cunctis nos defénde perículis.
-$Per Dominum
+@Commune/C3b:Secreta:s/N\. et N\./Vitále et Agrícola/
 
 [Communio]
 @Commune/C4
@@ -57,10 +54,7 @@ $Per Dominum
 @Commune/C4::s/N\./Cárolo/
 
 [Commemoratio Postcommunio]
-!Pro Octava Omnium Sanctorum
-Da, quǽsumus, Dómine, fidélibus pópulis ómnium Sanctórum semper veneratióne lætári: et eórum perpétua supplicatióne muníri.
-$Per Dominum
+@Sancti/11-01:Postcommunio
 _
 !Pro Ss. Vitale et Agrícola Martyribus
-Hæc nos commúnio, Dómine, purget a crímine: et, intercedéntibus sanctis Martýribus tuis Vitále et Agrícola, cœléstis remédii fáciat esse consórtes.
-$Per Dominum
+@Commune/C3b:Postcommunio:s/N\. et N\./Vitále et Agrícola/
