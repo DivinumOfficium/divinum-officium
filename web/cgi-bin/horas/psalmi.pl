@@ -419,6 +419,11 @@ sub psalmi_major {
     }
   }
 
+  if ($version =~ /^Ordo Praedicatorum/ && @antiphones == 1) { #  psalmi ad Vesperam sub una antiphopna
+    $lim = 1;
+    @psalmi = ();
+  }
+
   if (@antiphones) {
     for ($i = 0; $i < $lim; $i++) {
       my $aflag = 0;
