@@ -10,9 +10,7 @@ God, Gij hebt Mozes de wet gegeven op de top van de berg Sinaï, en op wonderbar
 $Qui tecum
 
 [Secreta]
-Aanvaard, Heer, de gaven, die wij U brengen op het feest van uw heilige maagd en martelares Catharina, door wier bescherming wij vertrouwen te worden verlost.
-$Per Dominum
+@Commune/C6:Secreta:s/N\./Catharina/
 
 [Postcommunio]
-Moge de nuttiging van uw geheimen, o Heer, ons een steun zijn, en bewerken, dat wij door de voorspraak van de heilige maagd en martelares Catharina een blijvende bescherming genieten.
-$Per Dominum
+@Commune/C6:Postcommunio:s/N\./Catharina/
