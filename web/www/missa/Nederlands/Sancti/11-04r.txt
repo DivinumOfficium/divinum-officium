@@ -9,8 +9,7 @@ vide C4;
 @Commune/C2c
 
 [Oratio]
-Behoed uw Kerk, o Heer, door de blijvende bescherming van uw heilige bisschop en belijder Carolus, opdat zijn voorspraak ons altijd doe branden van liefde tot U, zoals zijn herderlijke zorg hem de glorie heeft bereid.
-$Per Dominum
+@Sancti/11-04
 
 [Commemoratio Oratio]
 !Pro Ss. Vitale et Agrícola Martyribus
@@ -21,28 +20,20 @@ $Per Dominum
 @Commune/C4
 
 [Graduale]
-!Eccli 44:16
-Zie de hogepriester, die in zijn dagen aan God heeft behaagd.
-!Eccli 44:20
-Niemand werd er gevonden, die zo trouw als hij de wet van de Allerhoogste onderhield. Alleluia, alleluia.
-!Ps 109:4
-Gij zijt priester voor eeuwig naar de wijze van Melchisedech. Alleluia.
+@Sancti/11-04
 
 [Evangelium]
-Vervolg ++ van het heilig Evangelie volgens Mattheüs
 @Commune/C4
 
 [Offertorium]
 @Commune/C2b
 
 [Secreta]
-Wij vragen U, Heer, mogen uw heiligen ons altijd verblijden, opdat wij bij de herdenking van hun verdiensten hun bescherming mogen ondervinden.
-$Per Dominum
+@Commune/C4
 
 [Commemoratio Secreta]
 !Pro Ss. Vitale et Agrícola Martyribus
-Wij vragen U, Heer, laat U verzoenen door de offergaven en verdedig ons op voorspraak van uw heilige martelaren Vitalis en Agricola tegen alle gevaren.
-$Per Dominum
+@Commune/C3b:Secreta:s/N\. en N\./Vitalis en Agricola/
 
 [Communio]
 @Commune/C4
@@ -52,5 +43,4 @@ $Per Dominum
 
 [Commemoratio Postcommunio]
 !Pro Ss. Vitale et Agrícola Martyribus
-Moge, o Heer, deze communie ons van zonden zuiveren, en op voorspaak van uw heilige martelaren Vitalis en Agricola doen delen in zijn hemelse heilskracht.
-$Per Dominum
+@Commune/C3b:Postcommunio:s/N\. en N\./Vitalis en Agricola/
