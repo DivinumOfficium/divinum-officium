@@ -5,6 +5,15 @@ S. Hilarionis Abbatis;;Simplex;;1.1;;vide C4c
 vide C4c;
 Suffragium=Maria3;Papa;Ecclesia;;
 
+[Oratio]
+@Commune/C4c:Oratio:s/N\./Hilarion/
+
+[Secreta]
+@Commune/C4c:Secreta:s/N\./Hilarion/
+
+[Postcommunio]
+@Commune/C4c:Postcommunio:s/N\./Hilarion/
+
 [Commemoratio Oratio]
 !Pro Ss. Ursula et Sociabus mm
 @Commune/C6a:Oratio:s/N\. en N\./Ursula en Gezellinnen/
