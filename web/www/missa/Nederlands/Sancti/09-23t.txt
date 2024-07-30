@@ -1,0 +1,23 @@
+[Rank]
+S. Lini Papæ et Martyris;;Semiduplex;;2.2;;vide C4b
+
+[Rule]
+OPapaM=Linum;
+vide C4b;
+Gloria
+
+[Oratio]
+@Commune/C2b:Oratio:s/N\./Linus/
+
+[Commemoratio Oratio]
+!Pro S. Thecla Virg. et Mart.
+Wij vragen U, almachtige God, doe ons, die het geboortefeest vieren van uw heilige maagd en martelares Thecla in de jaarlijkse plechtigheid vreugde vinden, en door zulk een voorbeeld van geloof voortgang maken.
+$Per Dominum
+
+[Commemoratio Secreta]
+!Pro S. Thecla Virg. et Mart.
+@Commune/C6:Secreta:s/N\./Thecla/
+
+[Commemoratio Postcommunio]
+!Pro S. Thecla Virg. et Mart.
+@Commune/C6:Postcommunio:s/N\./Thecla/
