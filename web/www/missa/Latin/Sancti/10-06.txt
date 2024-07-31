@@ -10,10 +10,7 @@ Sancti Brunónis Confessóris tui, quǽsumus, Dómine, intercessiónibus adjuvé
 $Per Dominum
 
 [Secreta]
-Laudis tibi, Dómine, hóstias immolámus in tuórum commemoratióne Sanctórum: quibus nos et præséntibus éxui malis confídimus et futúris.
-$Per Dominum
+@Commune/C5
 
 [Postcommunio]
-Quǽsumus, omnípotens Deus: ut, qui cœlestia aliménta percépimus, intercedénte beáto Brunóne Confessóre tuo, per hæc contra ómnia advérsa muniámur.
-$Per Dominum
-
+@Commune/C5b:Postcommunio:s/N\./Brunóne/

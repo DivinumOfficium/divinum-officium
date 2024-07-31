@@ -2,7 +2,7 @@
 S. Petri Damiani Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 
 [Name]
-Petre
+Petrus
 
 [Rule]
 vide C4;
@@ -13,8 +13,7 @@ Wij vragen U, almachtige God, doe ons de lessen en voorbeelden van uw heilige be
 $Per Dominum
 
 [Secreta]
-Moge, o Heer, het liefdevol gebed van uw heilige bisschop en kerklaar Petrus ons niet ontbreken. Moge het onze gaven U welgevallig maken en ons steeds uw ontferming verwerven.
-$Per Dominum
+@Commune/C4a:Secreta:s/N\./Petrus/
 
 [Postcommunio]
 @Commune/C4a:Postcommunio:s/N\./Petrus/

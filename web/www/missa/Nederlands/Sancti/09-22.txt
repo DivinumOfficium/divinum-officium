@@ -14,20 +14,16 @@ Moge Heer, het jaarlijkse feest van uw heilige belijder en bisschop Thomas ons i
 $Per Dominum
 
 [Postcommunio]
-God, Beloner van trouwe zielen, doe ons door de gebeden van uw heilige belijder en bisschop Thomas, wiens roemrijk feest wij vieren, vergiffenis verkrijgen.
-$Per Dominum
+@Commune/C4d:Postcommunio:s/N\./Thomas/
 
 [Commemoratio Oratio]
 !Pro Ss. Mauritio et Sociis
-Wij vragen U, almachtige God, laat de feestelijke plechtigheid van uw heilige martelaren Mauritius en Gezellen ons vreugde schenken, opdat wij, die op hun hulp bouwen, op hun geboortefeest mogen roemen.
-$Per Dominum
+@Sancti/09-22o:Oratio
 
 [Commemoratio Secreta]
 !Pro Ss. Mauritio et Sociis
-Wij vragen U, Heer, sla acht op de gaven, die wij U opdragen bij de gedachtenis van uw heilige martelaren Mauritius en Gezellen, en doe ze eeuwige waarde voor ons krijgen door de voorspraak van hen, door wier verering ze U welgevallig zijn.
-$Per Dominum
+@Sancti/09-22o:Secreta
 
 [Commemoratio Postcommunio]
 !Pro Ss. Mauritio et Sociis
-Vervuld van de hemelse Sacramenten en vreugden, vragen wij U nederig, Heer, dat wij de beschermende hulp mogen ondervinden van hen, over wier overwinningen wij roemen.
-$Per Dominum
+@Sancti/09-22o:Postcommunio

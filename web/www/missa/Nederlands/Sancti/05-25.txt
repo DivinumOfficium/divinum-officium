@@ -4,7 +4,7 @@ S. Gregorii VII Papæ Confessoris;;Duplex;;3;;vide C4b
 [Rule]
 vide C4b;
 9 lectiones
-CPapaM=Urbánum;
+CPapaM=Urbanus;
 Gloria
 
 [Introitus]
@@ -17,13 +17,7 @@ $Per Dominum
 [Lectio]
 @Commune/C4b
 
-[Graduale]
-@Commune/C4b
-
 [Evangelium]
-@Commune/C4b
-
-[Offertorium]
 @Commune/C4b
 
 [Secreta]
@@ -41,9 +35,8 @@ $Per Dominum
 
 [Commemoratio Secreta]
 !Pro S. Urbano
-@Commune/C4b:Oratio1:s/N\./Urbanus/
+@Commune/C4b:Secreta1:s/N\./Urbanus/
 
 [Commemoratio Postcommunio]
 !Pro S. Urbano
 @Commune/C4b:Postcommunio1:s/N\./Urbanus/
-$Per Dominum

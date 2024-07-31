@@ -11,12 +11,7 @@ Credo
 Prefatio=Maria=Nativitate
 
 [Introitus]
-!Sedulius.
-v. Wees gegroet, heilige Moeder, die de Koning gebaard hebt, die hemel en aarde bestuurt in de eeuwen der eeuwen.
-!Ps 44:2
-Een heerlijk lied welt op uit mijn hart. De Koning wijd ik mijn zang.
-&Gloria
-v. Wees gegroet, heilige Moeder, die de Koning gebaard hebt, die hemel en aarde bestuurt in de eeuwen der eeuwen.
+@Commune/C10
 
 [Oratio]
 Wij vragen U, Heer, schenk uw dienaren de gave van de hemelse genade, opdat het plechtig feest van de geboorte van de heilige Maagd aan hen, voor wie haar geboorte het begin van het heil betekende, vermeerdering van vrede mag brengen.
@@ -33,19 +28,17 @@ V. Maagd, Moeder van God, die de hele wereld niet kan bevatten, Hij sloot zich i
 V. Gelukkig zijt Gij, heilige Maagd Maria, en alle lof waardig, want uit U is opgegaan de Zon der gerechtigheid, Christus, onze God. Alleluia.
 
 [Evangelium]
-Begin ++ van het heilig Evangelie volgens Mattheüs.
-!Matt 1:1-16
-Geslachtslijst van Jezus Christus, zoon van David, zoon van Abraham. Abraham was de vader van Isaäc, Isaäc van Jacob, Jacob van Juda en zijn broeders. Juda was de vader van Phares en Zara, die uit Thamar geboren werden. Phares was de vader van Esrom, Esrom van Aram, Aram van Aminadab, Aminadab van Naäson, Naäson van Salmon, Salmon van Booz, die uit Rahab geboren werd. Booz was de vader van Obed, geboren uit Ruth. Obed was de vader van Jesse, en Jesse van David, de koning. David, de koning, was de vader van Salomon, die geboren werd uit de vroegere vrouw van Urias. Salomon was de vader van Roboam, Roboam van Abias, Abias van Asa, Asa van Josaphat, Josaphat van Joram, Joram van Ozias, Ozias van Joatham, Joatham van Achaz, Achaz van Ezechias, Ezechias van Manasses, Manasses van Amon, Amon van Josias, Josias van Jechonias en zijn broeders omstreeks de tijd der wegvoering naar Babylon. En na de wegvoering naar Babylon werd Jechonias de vader van Salathiël, Salathiël van Zorobabel, Zorobabel van Abiud, Abiud van Eliacim, Eliacim van Azor, Azor van Sadoc, Sadoc van Achim, Achim van Eliud, Eliud van Eleazar, Eleazar van Mathan, en Mathan van Jacob. Jacob nu was de vader van Jozef, de man van Maria uit wie Jezus geboren is, die Christus genoemd wordt.
+@Sancti/08-16
 
 [Offertorium]
-Gelukkig zijt Gij, Maagd Maria, Gij hebt de Schepper van het heelal gedragen. Gij hebt Hem gebaard, die U heeft gemaakt, en in eeuwigheid blijft Gij Maagd.
+@Commune/C10Pasc
 
 [Secreta]
 Moge, o Heer, de menselijke natuur van uw enige Zoon ons te hulp komen. Dat Hij, die uit een Maagd geboren is en de ongereptheid van zijn Moeder niet schond, maar heiligde, op het feest van haar geboorte ons aan onze zonden ontrukke, en onze offerande U welgevallig doe zijn.
 $Qui tecum.
 
 [Communio]
-Gelukkig de schoot van de Maagd Maria, die de Zoon van de eeuwige Vader heeft gedragen.
+@Commune/C10
 
 [Postcommunio]
 Wij hebben, o Heer, de heilige geheimen ontvangen op dit jaarlijks feest. Wij vragen U, laat ze ons een heilmiddel zijn in dit en het eeuwig leven.
@@ -53,15 +46,12 @@ $Per Dominum
 
 [Commemoratio Oratio]
 !Pro S. Adriani, Mart
-Wij vragen U, almachtige God, dat wij, die het geboortefeest vieren van uw heilige martelaar Hadrianus, op zijn voorspraak in liefde voor uw Naam mogen worden versterkt.
-$Per Dominum
+@Commune/C2:Oratio:s/N\./Hadrianus/
 
 [Commemoratio Secreta]
 !Pro S. Hadriano
-Nu Gij onze gaven en gebeden hebt aanvaard, vragen wij U, o Heer, reinig ons door de hemelse geheimen en verhoor ons goedgunstig.
-$Per Dominum
+@Commune/C2:Secreta
 
 [Commemoratio Postcommunio]
 !Pro S. Hadriano
-Wij vragen U, Heer, onze God, doe ons, die nu in de tijd dankbaar de gedachtenis vieren van uw heiligen, in de eeuwigheid blijde hun aanblik genieten.
-$Per Dominum
+@Commune/C2:Postcommunio

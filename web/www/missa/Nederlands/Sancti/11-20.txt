@@ -10,9 +10,7 @@ God, Gij hebt U gewaardigd om op hemelse wijze uw heilige belijder Felix uit de 
 $Per Dominum
 
 [Secreta]
-Wij vragen U, almachtige God, moge onze nederige offerande U welgevallig zijn als eerbewijs voor uw heiligen, en ons naar ziel en lichaam zuiveren.
-$Per Dominum
+@Commune/C5b
 
 [Postcommunio]
-Wij vragen U, almachtige God, dat wij, die het hemels voedsel ontvangen hebben, door tussenkomst van uw heilige belijder Felix daardoor voor alle onheil bewaard mogen blijven.
-$Per Dominum
+@Commune/C5b:Postcommunio:s/N\./Felix/

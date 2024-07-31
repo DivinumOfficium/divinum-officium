@@ -5,7 +5,7 @@ S. Casimiri Confessoris;;Semiduplex;;2.1;;vide C5
 S. Casimiri Confessoris;;Duplex;;3;;vide C5
 
 [Rule]
-CPapaM=Lúcium;
+CPapaM=Lucius;
 vide C5;
 Gloria
 
@@ -17,7 +17,7 @@ $Per Dominum
 !Pro S. Lucio I
 @Commune/C2b:Oratio:s/N\./Lucius/
 (sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio
+@Commune/C4b:Oratio:s/N\./Lucius/
 
 [Commemoratio Secreta]
 !Pro S. Lucio I

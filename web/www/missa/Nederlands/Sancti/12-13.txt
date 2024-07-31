@@ -6,23 +6,17 @@ vide C6b;
 Gloria
 
 [Introitus]
-!Ps 44:8
-v. Gij hebt de gerechtigheid liefgehad en de boosheid gehaat. Daarom heeft God, uw God, U gezalfd met vreugde-olie boven uw genoten.
-!Ps 44:2
-Een heerlijk lied welt op uit mijn hart. De Koning wijd ik mijn zang.
-&Gloria
-v. Gij hebt de gerechtigheid liefgehad en de boosheid gehaat. Daarom heeft God, uw God, U gezalfd met vreugde-olie boven uw genoten.
+@Commune/C6b
 
 [Oratio]
-Verhoor ons, Heer, onze Redder, opdat wij niet alleen vreugde vinden in het feest van uw heilige maagd en martelares Lucia, maar ook van haar liefdevolle, trouwe toewijding mogen leren.
-$Per Dominum
+@Commune/C6b:Oratio:s/N\./Lucia/
 
 [Commemoratio Oratio]
 !Pro Octava Conceptionis Immaculatæ
 @Sancti/12-08:Oratio
 
 [Lectio]
-@Commune/C6b:Lectio
+@Commune/C6b
 
 [Graduale]
 !Ps 44:8
@@ -32,18 +26,16 @@ V. Daarom heeft God, uw God, u gezalfd met de olie der vreugde. Alleluia, allelu
 Bevalligheid ligt op uw lippen. Daarom heeft God u gezegend voor eeuwig. Alleluia.
 
 [Evangelium]
-@Commune/C6a:Evangelium
+@Commune/C6a
 
 [Offertorium]
-!Ps 44:15-16
-Jonkvrouwen worden in haar gevolg tot de Koning geleid. Haar gezellinnen worden bij U gebracht in vreugde en gejubel. Zij worden in het paleis geleid tot voor de Koning, de Heer.
+@Commune/C6
 
 [Secreta]
-Moge, o Heer, het offer door het U toegewijde volk tere ere van uw heiligen gebracht, U aangenaam zijn, want door hun verdiensten weten wij ons uit de nood gered.
-$Per Dominum
+@Commune/C6b:Secreta:s/N\./Lucia/
 
 [Commemoratio Secreta]
-!Pro Octava Conceptionis Immaculatæ.
+!Pro Octava Conceptionis Immaculatæ
 @Sancti/12-08:Secreta
 
 [Communio]
@@ -51,9 +43,8 @@ $Per Dominum
 Vorsten vervolgen mij zonder reden, maar voor uw woord slechts vreest mijn hart. Ik verheug mij over uw woord, als iemand, die rijke buit heeft gemaakt.
 
 [Postcommunio]
-Gij hebt, o Heer, uw gezin verzadigd met heilige gaven. Wij vragen U, koester ons altijd in haar bescherming, wier feest wij vieren.
-$Per Dominum
+@Commune/C6b::s/N\./Lucia/
 
 [Commemoratio Postcommunio]
-!Pro Octava Conceptionis Immaculatæ.
+!Pro Octava Conceptionis Immaculatæ
 @Sancti/12-08:Postcommunio

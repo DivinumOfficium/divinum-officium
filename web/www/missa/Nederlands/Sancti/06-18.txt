@@ -2,7 +2,7 @@
 S. Ephræm Syri Confessoris et Ecclesiæ Doctorem;;Duplex;;3;;vide C5a
 
 [Name]
-Ephræm
+Ephrem
 
 [Rule]
 vide C5a;
@@ -13,8 +13,10 @@ God, Gij hebt uw Kerk willen verheerlijken door de wonderbare kennis en het buit
 $Per Dominum
 
 [Secreta]
-Moge, o Heer, het liefdevol gebed van uw heilige belijder en kerkleraar Ephrem ons niet ontbreken. Moge het onze gaven U welgevallig maken en ons steeds ontferming verwerven.
-$Per Dominum
+@Commune/C4a:Secreta1:s/N\./Ephrem/
+
+[Postcommunio]
+@Commune/C4a:Postcommunio1:s/N\./Ephrem/
 
 [Commemoratio Oratio]
 !SS. Marci et Marcelliani Martyrum
@@ -27,7 +29,3 @@ $Per Dominum
 [Commemoratio Postcommunio]
 !Pro SS. Marco et Marcelliano Martyribus
 @Sancti/06-18t:Postcommunio
-
-[Postcommunio]
-@Commune/C4a:Postcommunio1:s/N\./Ephrem/
-

@@ -10,6 +10,10 @@ CredoDA
 [Introitus]
 @Commune/C4a
 
+[Oratio]
+Deus, qui Ecclésiam tuam beáti Bedæ Confessóris tui atque Doctóris eruditióne claríficas: concéde propítius fámulis tuis; ejus semper ilustrári sapiéntia et méritis adjuvári.
+$Per Dominum
+
 [Lectio]
 @Commune/C4a
 
@@ -19,18 +23,11 @@ CredoDA
 [Graduale]
 @Commune/C4b
 
-[Oratio]
-Deus, qui Ecclésiam tuam beáti Bedæ Confessóris tui atque Doctóris eruditióne claríficas: concéde propítius fámulis tuis; ejus semper ilustrári sapiéntia et méritis adjuvári.
-$Per Dominum
-
 [Secreta]
-Sancti Bedæ Confessóris tui atque Doctoris nobis, Dómine, pia non desit orátio: quæ et múnera nostra concíliet; et tuam nobis indulgéntiam semper obtíneat.
-$Per Dominum
+@Commune/C4a:Secreta1:s/N\./Bedæ/
 
 [Postcommunio]
-Ut nobis, Dómine, tua sacrifícia dent salútem: beátus Beda Conféssor tuus et
-Doctor egrégius, quǽsumus, precátor accédat.
-$Per Dominum
+@Commune/C4a:Postcommunio1:s/N\./Beda/
 
 [Commemoratio Oratio]
 !Pro S. Joanne

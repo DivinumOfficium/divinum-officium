@@ -6,25 +6,22 @@ vide C4c;
 Gloria
 
 [Oratio]
-@Commune/C4c:Oratio:s/N\./Gulielmi/
+@Commune/C4c:Oratio:s/N\./Guliélmi/
 
 [Secreta]
-@Commune/C4c:Secreta:s/N\./Gulielmi/
+@Commune/C4c:Secreta:s/N\./Guliélmi/
 
 [Postcommunio]
-@Commune/C4c:Postcommunio:s/N\./Gulielmi/
+@Commune/C4c:Postcommunio:s/N\./Guliélmi/
 
 [Commemoratio Oratio]
-!Pro Octava S. Johannis Baptistæ
-Deus, qui præséntem diem honorábilem nobis in beáti Joánnis nativitáte fecísti: da pópulis tuis spirituálium grátiam gaudiórum; et ómnium fidélium mentes dirige in viam salútis ætérnæ.
-$Per Dominum
+!Pro Octava S. Joannis Baptistæ
+@Sancti/06-25o:Oratio
 
 [Commemoratio Secreta]
-!Pro Octava S. Johannis Baptistæ
-Tua, Dómine, munéribus altária cumulámus: illíus nativitátem honóre débito celebrántes, qui Salvatórem mundi et cécinit ad futúrum et adésse monstravit, Dóminum nostrum Jesum Christum, Fílium tuum:
-$Qui tecum
+!Pro Octava S. Joannis Baptistæ
+@Sancti/06-25o:Secreta
 
 [Commemoratio Postcommunio]
-!Pro Octava S. Johannis Baptistæ
-Sumat Ecclésia tua, Deus, beáti Joánnis Baptístæ generatióne lætítiam: per quem suæ regeneratiónis cognóvit auctórem, Dóminum nostrum Jesum Christum, Fílium tuum:
-$Qui tecum
+!Pro Octava S. Joannis Baptistæ
+@Sancti/06-25o:Postcommunio

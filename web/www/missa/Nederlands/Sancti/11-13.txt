@@ -10,9 +10,7 @@ Almachtige, eeuwige God, volgens wonderbaar bestel kiest Gij het zwakke in de we
 $Per Dominum
 
 [Secreta]
-Wij vragen U, almachtige God, moge onze nederige offerande U welgevallig zijn als eerbewijs voor uw heiligen, en ons naar ziel en lichaam zuiveren.
-$Per Dominum
+@Commune/C5b
 
 [Postcommunio]
-Wij vragen U, almachtige God, dat wij, die het hemelse voedsel ontvangen hebben, door de voorspraak van uw heilige belijder Didacus, daardoor voor alle onheil bewaard mogen blijven.
-$Per Dominum
+@Commune/C5b:Postcommunio:s/N\./Didacus/

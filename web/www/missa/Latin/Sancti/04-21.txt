@@ -7,14 +7,10 @@ Gloria
 CredoDA
 
 [Oratio]
-@Commune/C4a:Oratio:s/N\./Anselmi/
+@Commune/C4a:Oratio:s/N\./Ansélmi/
 
 [Secreta]
-!Pro Doctore pontifice
-Sancti Ansélmi Pontíficis tui atque Doctóris nobis, Dómine, pia non desit orátio: quæ et múnera nostra concíliet; et tuam nobis indulgéntiam semper obtíneat.
-$Per Dominum.
+@Commune/C4a:Secreta:s/N\./Ansélmi/
 
 [Postcommunio]
-! Pro Doctore Pontifice.
-Ut nobis, Dómine, tua sacrifícia dent salútem: beátus Ansélmus Póntifex tuus et Doctor egrégius, quǽsumus, precátor accédat.
-$Per Dominum
+@Commune/C4a:Secreta:s/N\./Ansélmus/

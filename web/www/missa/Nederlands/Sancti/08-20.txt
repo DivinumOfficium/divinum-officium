@@ -10,16 +10,10 @@ Gloria
 CredoDA
 
 [Introitus]
-!Eccli 15:5
-v. Midden in de vergadering opende hij zijn mond en de Heer vervulde Hem met de geest van wijsheid en verstand; met een eregewaad bekleedde Hij hem.
-!Ps 91:2
-Het is heerlijk de Heer te loven, uw Naam te bezingen, o Allerhoogste.
-&Gloria
-v. Midden in de vergadering opende hij zijn mond en de Heer vervulde Hem met de geest van wijsheid en verstand; met een eregewaad bekleedde Hij hem.
+@Commune/C4a
 
 [Oratio]
-God, Gij hebt uw volk de heilige Bernardus als bedienaar van het eeuwig heil geschonken. Wij vragen U, geef ons als een voorspreker in de hemel, die wij op aarde tot leraar van het leven hadden.
-$Per Dominum
+@Commune/C4a:Oratio:s/N\./Bernardus/
 
 [Commemoratio Oratio]
 !Infra Octavam Assumptionis
@@ -27,9 +21,7 @@ Famulorum tuórum, quǽsumus, Dómine, delíctis ignósce: ut, qui tibi placére
 $Qui tecum
 
 [Lectio]
-Lezing uit het Boek der Wijsheid
-!Eccli 39:6-14
-De rechtvaardige zal 's morgens reeds bij het ontwaken zijn hart richten op de Heer, die hem maakte, en zijn gebed verrichten voor het oog van de Allerhoogste. Hij zal zijn mond openen om te bidden, en vergiffenis vragen voor zijn zonden. Want als de opperste Heer het wil, zal Hij hem vervullen met de geest van wijsheid. Dan doet hij zijn wijze woorden stromen als regen, en verheerlijkt in zijn gebeden de Heer. In kennis en inzicht blijft hij rechtzinnig, en hij denkt na over hetgeen hem verborgen is. Hij zal zijn wijze leer onderrichten, en zijn roem zoeken in de Wet van 's Heren Verbond. Velen zullen zijn wijsheid loven, en in eeuwigheid zal zij niet vergaan. Zijn aandenken zal niet worden vergeten, en naar zijn naam zal men vragen van geslacht tot geslacht. De volkeren zullen van zijn wijsheid gewagen, en de Kerk zal zijn roem blijven verkondigen.
+@Commune/C4a:Lectio1
 
 [Graduale]
 !Ps 36:30-31
@@ -39,17 +31,13 @@ V. De wet van zijn God blijft in zijn hart en zijn schreden wankelen niet. Allel
 De Heer had hem lief en tooide hem. Met een eregewaad heeft Hij hem bekleed. Alleluia.
 
 [Evangelium]
-Vervolg ++ van het heilig Evangelie volgens Mattheüs
-!Matt 5:13-19
-In die tijd sprak Jezus tot zijn leerlingen: Gij zijt het zout der aarde. Maar als het zout zijn kracht verliest, waarmee zal men het dan zouten? Het deugt nergens meer voor, dan om weggeworpen en door de mensen vertreden te worden. Gij zijt het licht der wereld. Een stad, die op een berg ligt, kan niet verborgen blijven. Ook steekt men geen lamp aan om ze onder de korenmaat te zetten; maar men plaatst ze op de kandelaar, om ze te laten schijnen voor allen, die in huis zijn. Laat zó ook uw licht schijnen voor de mensen, opdat zij uw goede werken zien, en uw Vader verheerlijken, die in de hemel is. Meent niet, dat Ik ben gekomen, om de Wet of de Profeten af te schaffen. Ik ben niet gekomen om af te schaffen, maar om tot volmaaktheid te brengen. Want voorwaar, Ik zeg U: totdat hemel en aarde vergaan, zal er van de Wet geen jota of stipje vergaan, voordat alles is geschied. Wie derhalve een van de geringste dezer geboden afschaft, en aldus leert aan de mensen, hij zal de minste zijn in het rijk der hemelen; maar wie ze onderhoudt en ze leert, hij zal groot zijn in het rijk der hemelen.
+@Commune/C4a
 
 [Offertorium]
-!Ps 91:13
-De rechtvaardige zal bloeien als een palmboom, als een ceder van de Libanon gedijen.
+@Commune/C4a
 
 [Secreta]
-Moge, o Heer, het liefdevol gebed van uw heilige belijder en kerkleraar Bernardus ons niet ontbreken. Moge het onze gaven U welgevallig maken en ons steeds uw ontferming verwerven.
-$Per Dominum
+@Commune/C4a:Secreta1:s/N\./Bernardus/
 
 [Commemoratio Secreta]
 !Infra Octavam Assumptionis
@@ -57,12 +45,10 @@ Subvéniat, Dómine, plebi tuæ Dei Genetrícis orátio: quam etsi pro conditió
 $Per eundem
 
 [Communio]
-!Luc 12:42
-Een trouwe en verstandige knecht was hij, die de Heer over zijn gezin aanstelde om hun op tijd de maat tarwe uit te reiken.
+@Commune/C4
 
 [Postcommunio]
-Wij vragen U, Heer, dat uw heilige belijder en uitgelezen kerklaar Bernardus als voorspreker voor ons optrede, opdat deze heilige offers ons het heil verzekeren.
-$Per Dominum
+@Commune/C4a:Postcommunio1:s/N\./Bernardus/
 
 [Commemoratio Postcommunio]
 !Infra Octavam Assumptionis

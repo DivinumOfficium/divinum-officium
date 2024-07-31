@@ -445,6 +445,68 @@ Amen.
 [HymnusM Completorium]
 @:Hymnus Completorium:s/pro tua/sólita/ s/et custódia/ad custódiam/ s/piíssime.*/omnípotens,\nPer Jesum Christum Dóminum,\nQui tecum in perpétuum\nRegnat cum Sancto Spíritu.\nAmen./s
 
+[Hymnus Completorium Quad]
+Christe, qui lux es et dies,
+Noctis tenébras détegis,
+Lucísque lumen créderis,
+Lumen beátum prǽdicans.
+_
+Precámur sancte Dómine,
+defénde nos in hac nocte:
+Sit nobis in te réquies,
+Quiétam noctem tríbue.
+_
+Ne gravis somnus írruat,
+Nec hostis nos subrípiat,
+Nec caro illi conséntiens
+Nos tibi reos státuat.
+_
+Oculi somnum cápiant,
+Cor ad te semper vígilet:
+Déxtera tua prótegat
+Fámulos, qui te díligunt.
+_
+Defénsor noster áspice,
+Insidiántes réprime,
+Gubérna tuos fámulos,
+/:Ad hunc Vers. genuflectatur:/
+Quos Sánguine mercátus es.
+_
+Meménto nostri, Dómine,
+In gravi isto córpore:
+Qui es defénsor ánimæ,
+Adésto nobis, Dómine.
+_
+Præsta Pater omnípotens,
+Per Jesum Christum Dóminum,
+Qui tecum in perpétuum
+Regnat cum Sancto Spíritu.
+Amen.
+
+[Hymnus Completorium Quad5]
+@:Hymnus Completorium Quad
+
+[Hymnus Completorium Pasch] (rubrica Ordo Praedicatorum)
+@Tempora/Pasc5-4:HymnusM Vespera:1-20
+@Psalterium/Major Special:HymnusM Pasch Vespera:31-40
+
+[Hymnus Completorium Asc] (rubrica Ordo Praedicatorum)
+@Tempora/Pasc5-4:HymnusM Vespera:1-24
+_
+@Psalterium/Doxologies:AscT
+
+[Hymnus Completorium Pent Dox] (rubrica Ordo Praedicatorum)
+Sit laus Patri cum Fílio,
+Sancto simul Paráclito:
+Nobísque mittat Fílius
+Charisma Sancti Spíritus.
+Amen.
+
+[Hymnus Completorium Pent] (rubrica Ordo Praedicatorum)
+@Tempora/Pasc5-4:HymnusM Vespera:1-20
+@Tempora/Pasc7-0:Hymnus Laudes:26-30
+@:Hymnus Completorium Pent Dox
+
 [Hymnus Tertia]
 v. Nunc, Sancte, nobis, Spíritus,
 Unum Patri cum Fílio,
@@ -564,6 +626,28 @@ R. In manus tuas, Dómine, * Comméndo spíritum meum.
 [Versum 4]
 V. Custódi nos, Dómine, ut pupíllam óculi.
 R. Sub umbra alárum tuárum prótege nos.
+
+[Ant 4]
+Salva nos, * Dómine, vigilántes, custódi nos dormiéntes;  ut vigilémus cum Christo, et requiescámus in pace.
+
+[Ant 4 Quad]
+Evígila super nos, * ætérne Salvátor, ne nos apprehéndat cállidus tentátor, quia tu nobis factus es sempitérnus adjútor.
+
+[Ant 4 Quad3]
+Média vita in mórte sumus: quem quǽrimus adjutórem, nísi te, Dómine, qui pro peccátis nóstris juste irásceris? * Sancte Deus, Sancte fortis, Sancte et miséricors Salvátor, amáræ morti ne trádas nos.
+V. Ne projícias nos in témpore senectutis; cum defécerit virtus nostra, ne derelínquas nos, Dómine. Sancte Deus.
+
+[Ant 4 Quad5]
+O Rex glorióse inter Sanctos tuos, qui semper es laudábilis et tamen ineffábilis: tu in nobis es, Dómine, et nomen sanctum tuum invocátum est super nos: ne derelínquas nos Deus noster: ut in die judícii nos collocáre dignéris inter Sanctos et Eléctos tuos, Rex benedícte.
+
+[Ant 4 Pasch]
+Allelúja. Resurréxit Dóminus, allelúja: sicut dixit vobis, allelúja, allelúja.
+
+[Ant 4 Asc]
+Allelúja. Ascéndens Christus in altum, allelúja, captívam duxit captivitátem, allelúja, allelúja.
+
+[Ant 4 Pent]
+Allelúja. Spíritus Paráclitus, allelúja, docébit vos ómnia, allelúja, allelúja.
 
 [Preces feriales_]
 V. Dómine, Deus virtútum, convérte nos.

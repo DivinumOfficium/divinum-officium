@@ -7,6 +7,7 @@ S. Annæ Matris B.M.V.;;Duplex II classis;;5;;ex C7a
 [Rule]
 vide C7a;
 Gloria
+CredoDA
 
 [Introitus]
 v. Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Annæ: de cujus sollemnitáte gaudent Angeli et colláudant Fílium Dei.
@@ -23,7 +24,12 @@ $Per eundem
 @Commune/C7a
 
 [Graduale]
-@Sancti/07-21
+!Ps 44:8
+Dilexísti justítiam, et odísti iniquitátem. 
+V. Proptérea unxit te Deus, Deus tuus, óleo lætítiæ. 
+Allelúja, allelúja.
+!Ps 44:3
+Diffúsa est grátia in lábiis tuis: proptérea benedíxit te Deus in ætérnum. Allelúja.
 
 [Evangelium]
 @Commune/C6a

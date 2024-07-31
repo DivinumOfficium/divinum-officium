@@ -2,7 +2,7 @@
 S. Elisabeth Viduæ;;Duplex;;3;;vide C7a
 
 [Rule]
-CPapaM=Pontiánum;
+CPapaM=Pontianus;
 vide C7a;
 Gloria
 
@@ -11,27 +11,25 @@ Verlicht, God van erbarmen, de harten van uw gelovigen en doe ons door de roemri
 $Per Dominum
 
 [Secreta]
-Moge, o Heer, het offer, door het U toegewijde volk gebracht ter ere van uw heiligen, U aangenaam zijn, want door hun voorbede weten wij ons uit de nood gered.
-$Per Dominum
+@Commune/C6b
 
 [Postcommunio]
-Gij hebt, o Heer, uw gezin verzadigd met heilige gaven. Wij vragen U, verkwik ons blijvend door de bemiddeling van haar, wier feest wij vieren.
-$Per Dominum
+@Commune/C6b
 
 [Commemoratio Oratio]
 !Pro S. Pontiano Papa et Martyre
-@Commune/C2c:Oratio:s/N\./Pontiáni/
+@Commune/C2c:Oratio:s/N\./Pontianus/
 (sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio
+@Commune/C4b:Oratio:s/N\./Pontianus/
 
 [Commemoratio Secreta]
 !Pro S. Pontiano Papa et Martyre
-@Commune/C2c:Secreta:s/N\./Pontiáni/
+@Commune/C2c:Secreta:s/N\./Pontianus/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Secreta
 
 [Commemoratio Postcommunio]
 !Pro S. Pontiano Papa et Martyre
-@Commune/C2c:Postcommunio:s/N\./Pontiáno/
+@Commune/C2c:Postcommunio:s/N\./Pontianus/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Postcommunio

@@ -10,28 +10,24 @@ Almachtige en goedertieren God, Gij hebt de heilige Johannes Maria gemaakt tot e
 $Per eundem
 
 [Secreta]
-Wij offeren U, Heer, dit offer van lof op het gedachtenisfeest van uw heiligen en vertrouwen, dat wij daardoor bevrijd worden van alle ongeluk, nu en in de toekomst.
-$Per Dominum
+@Commune/C5
 
 [Postcommunio]
-Verkwikt door de hemelse spijs en drank, bidden wij U, onze God, nederig, dat wij gesterkt mogen worden door de gebeden van hem, tot wiens gedachtenis wij ze nuttigden.
-$Per Dominum
+@Commune/C5
 
 [Commemoratio Oratio]
 !Vigilia S. Laurentii
 @Sancti/08-09t:Oratio
 _
 !Pro S. Romano Martyre
-Wij vragen U, almachtige God, dat wij door de voorspraak van uw heilige martelaar Romanus, naar het lichaam van alle onheil bevrijd en naar de ziel van alle boze gedachten gezuiverd mogen worden.
-$Per Dominum
+@Commune/C2a:Oratio:s/N\./Romanus/
 
 [Commemoratio Secreta]
 !Vigilia S. Laurentii
 @Sancti/08-09t:Secreta
 _
 !Pro S. Romano Martyre
-Nu Gij onze gaven en gebeden hebt aanvaard, vragen wij U, o Heer; reinig ons door de hemelse geheimen en verhoor ons goedgunstig.
-$Per Dominum
+@Commune/C2:Secreta
 
 [Commemoratio Postcommunio]
 !Vigilia S. Laurentii

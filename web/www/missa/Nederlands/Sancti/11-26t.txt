@@ -5,13 +5,10 @@ S. Petri Alexandrini Martyri;;Simplex;;1.1;;vide C2
 vide C2;
 
 [Oratio]
-Geef acht op onze zwakheid, almachtige God, en laat de glorievolle voorspraak van uw heilige martelaar en bisschop Petrus ons beschermen, daar de last van eigen daden zwaar op ons drukt.
-$Per Dominum
+@Commune/C2c:Oratio:s/N\./Petrus/
 
 [Secreta]
-Aanvaard goedgunstig, Heer, de offers, die wij U wijden met de verdiensten van uw heilige martelaar en bisschop Petrus, en laat het ons voor altijd een steun zijn.
-$Per Dominum
+@Commune/C2c:Secreta:s/N\./Petrus/
 
 [Postcommunio]
-Verkwikt door de deelname aan de heilige gave, vragen wij U, Heer, onze God, dat wij door de tussenkomst van uw heilige martelaar en bisschop Petrus de uitwerking mogen ondervinden van wat wij in deze eredienst voltrekken.
-$Per Dominum
+@Commune/C2c:Postcommunio:s/N\./Petrus/

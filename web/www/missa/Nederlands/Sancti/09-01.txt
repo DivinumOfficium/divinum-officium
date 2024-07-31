@@ -5,8 +5,13 @@ S. Ægidii Abbatis;;Simplex;;1.1;;vide C5
 vide C5;
 
 [Oratio]
-Intercéssio nos, quǽsumus, Dómine, beáti Ægídii Abbátis comméndet: ut, quod nostris méritis non valémus, eius patrocínio assequámur.
-$Per Dominum
+@Commune/C4c:Oratio:s/N\./Egidius/
+
+[Secreta]
+@Commune/C4c:Secreta:s/N\./Egidius/
+
+[Postcommunio]
+@Commune/C4c:Postcommunio:s/N\./Egidius/
 
 [Commemoratio Oratio]
 !Pro Duodecim Fratribus Martyribus

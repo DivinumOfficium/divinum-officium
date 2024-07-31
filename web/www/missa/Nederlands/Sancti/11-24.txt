@@ -10,25 +10,20 @@ God, Gij hebt uw heilige belijder en leraar Johannes een buitengewone liefde voo
 $Per Dominum
 
 [Secreta]
-Moge, o Heer, het liefdevol gebed van uw heilige belijder en kerkleraar Johannes ons niet ontbreken. Moge het onze gaven U welgevallig maken en ons steeds onferming verwerven.
-$Per Dominum
+@Commune/C4a:Secreta1:s/N\./Johannes/
 
 [Postcommunio]
-Wij bidden U, Heer, dat uw heilige belijder en uitgelezen kerkleraar Johannes als voorspreker voor ons optrede, opdat deze heilige gaven ons het heil verzekeren.
-$Per Dominum
+@Commune/C4a:Postcommunio1:s/N\./Johannes/
 
 [Commemoratio Oratio]
 !Commemoratio S. Chrysogoni Martyris
-Luister, o Heer, naar ons smeken, opdat wij, die ons schuldig weten door onze zonden, door de voorspraak van uw heilige martelaar Chrysogonus bevrijd mogen worden.
-$Per Dominum
+@Sancti/11-24o:Oratio
 
 [Commemoratio Secreta]
 !Commemoratio S. Chrysogoni Martyris
-Wij vragen U, Heer, laat U verzoenen door de offergaven en verdedig ons op voorspraak van uw heilige martelaar Chrysogonus tegen alle gevaren.
-$Per Dominum
+@Sancti/11-24o:Secreta
 
 [Commemoratio Postcommunio]
 !Commemoratio S. Chrysogoni Martyris
-Mogen wij, Heer, door het ontvangen van uw Sacrament van onze verborgen zonden gezuiverd worden, en uit de hinderlagen van de vijanden bevrijd.
-$Per Dominum
+@Sancti/11-24o:Postcommunio
 

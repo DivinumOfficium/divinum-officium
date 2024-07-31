@@ -6,31 +6,29 @@ vide C4;
 Gloria
 
 [Introitus]
-@Commune/C4d:Introitus
+@Commune/C4d
 
 [Oratio]
 O God, die de heilige Antonius Maria, uw belijder en bisschop, heeft verheerlijkt vanwege zijn ijver voor de zielen, en door hem nieuwe families van mannelijke en vrouwelijke religieuzen in de Kerk heeft gevestigd, wij smeken U om dat toe te staan, met zijn raadgevingen als leidraad: en door de verdiensten van zijn gebeden kunnen we ons voortdurend toeleggen op het zoeken naar de redding van zielen.
 $Per Dominum
 
 [Lectio]
-@Commune/C4d:Lectio
+@Commune/C4d
 
 [Graduale]
-@Commune/C4d:Graduale
+@Commune/C4d
 
 [Evangelium]
-@Commune/C4d:Evangelium
+@Commune/C4d
 
 [Offertorium]
-@Commune/C5:Offertorium
+@Commune/C2c
 
 [Secreta]
-Wij smeken U, O Heer, moge het jaarlijkse feest van de heilige Antonius Maria, uw belijder en bisschop, ons behagen in uw liefdevolle vriendelijkheid, zodat deze dienst van heilige verzoening een gezegende beloning voor hem mag zijn en ons de gaven van uw verzoening veilig kan stellen.
-$Per Dominum
+@Commune/C4d:Secreta:s/N\./Antonius Maria/
 
 [Communio]
-@Commune/C5:Communio
+@Commune/C4d
 
 [Postcommunio]
-O God, die trouwe zielen beloont, schenk dat wij, door de gebeden van de heilige Antonius Maria, uw belijder en bisschop, wiens heilig feest wij vieren, vergeving voor onze zonden mogen verkrijgen.
-$Per Dominum
+@Commune/C4d:Postcommunio:s/N\./Antonius Maria/

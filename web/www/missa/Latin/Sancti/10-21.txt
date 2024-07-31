@@ -6,25 +6,22 @@ vide C4c;
 Suffragium=Maria3;Papa;Ecclesia;;
 
 [Oratio]
-@Commune/C4c:Oratio:s/N\./Hilarionis/
+@Commune/C4c:Oratio:s/N\./Hilariónis/
 
 [Secreta]
-@Commune/C4c:Secreta:s/N\./Hilarionis/
+@Commune/C4c:Secreta:s/N\./Hilariónis/
 
 [Postcommunio]
-@Commune/C4c:Postcommunio:s/N\./Hilarionis/
+@Commune/C4c:Postcommunio:s/N\./Hilariónis/
 
 [Commemoratio Oratio]
 !Pro Ss. Ursula et Sociabus mm
-Da nobis, quǽsumus, Dómine, Deus noster, sanctárum Vírginum et Mártyrum tuárum Ursulæ et Sociárum ejus palmas incessábili devotióne venerári: ut, quas digna mente non póssumus celebráre, humílibus saltem frequentémus obséquiis.
-$Per Dominum
+@Commune/C6a:Oratio:s/N\. et N\./Ursulæ et Sociárum/
 
 [Commemoratio Secreta]
 !Pro Ss. Ursula et Sociabus mm
-Inténde, quǽsumus, Dómine, múnera altáribus tuis pro sanctárum Virginum et Mártyrum tuárum Ursulæ et Sociárum ejus festivitáte propósita: ut, sicut per hæc beáta mystéria illis glóriam contulísti; ita nobis indulgéntiam largiáris.
-$Per Dominum
+@Commune/C6a:Secreta:s/N\. et N\./Ursulæ et Sociárum/
 
 [Commemoratio Postcommunio]
 !Pro Ss. Ursula et Sociabus mm
-Præsta nobis, quǽsumus, Dómine: intercedéntibus sanctis Virgínibus et Martýribus tuis Ursula et Sociábus ejus: ut, quod ore contíngimus, pura mente capiámus.
-$Per Dominum
+@Commune/C6a:Postcommunio:s/N\. et N\./Ursula et Sociábus/

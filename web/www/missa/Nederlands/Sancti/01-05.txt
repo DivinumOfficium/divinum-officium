@@ -8,15 +8,15 @@ In Vigilia Epiphaniæ;;Semiduplex;;2.9;;ex Sancti/01-01
 Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rule]
-CPapaM=Telésphorum;
-ex Sancti/101-01;
+CPapaM=Telesforus;
+ex Sancti/01-01;
 Gloria
 CredoDA
 Prefatio=Nat
 Suffragium=Maria2;;
 
 [Introitus]
-!Sap 18:14-15.
+!Sap 18:14-15
 @Tempora/Nat1-0
 
 [Oratio]

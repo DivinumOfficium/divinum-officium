@@ -15,10 +15,12 @@ vide C4;
 Gloria
 
 [Oratio]
-Wij vragen U, almachtige God, dat het roemrijk feest van uw heilige belijder en bisschop Gregorius onze godsvrucht mag bevorderen en onze zaligheid.
-$Per Dominum.
+@Commune/C4:Oratio:s/N\./Gregorius/
 
 [Evangelium]
 Vervolg ++ van het heilig Evangelie volgens Marcus
 !Marc 11:22-24
 In die tijd nam Jezus het woord en sprak tot zijn leerlingen: Hebt geloof in God. Voorwaar Ik zeg u: alwie tot deze berg zegt: "Ga en werp u in zee," en niet aarzelt bij zich zelf maar gelooft, dat alles wat hij zegt, zal geschieden -  het zal hem geworden. Daarom zeg Ik u: wat gij ook vraagt in uw gebed, gelooft, dat gij het zult verkrijgen, en het zal u geworden.
+
+[Postcommunio]
+@Commune/C4:Postcommunio:s/N\./Gregorius/
