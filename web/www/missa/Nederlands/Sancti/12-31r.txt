@@ -2,7 +2,7 @@
 Die septima post Nativitatem;;Duplex II class;;5;;ex Tempora/Nat30
 
 [Rule]
-CPapaC=Silvéstrum;
+CPapaC=Silvester;
 ex Tempora/Nat30;
 Gloria
 Credo
@@ -10,7 +10,7 @@ Prefatio=Nat
 
 [Commemoratio Oratio]
 !Pro S. Sylvestro papa
-@Commune/C4b:Oratio:s/N\./Silvéstri/
+@Commune/C4b:Oratio:s/N\./Silvester/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Oratio
 
@@ -22,6 +22,6 @@ Prefatio=Nat
 
 [Commemoratio Postcommunio]
 !Pro S. Sylvestro papa
-@Commune/C4b:Postcommunio:s/N\./Silvéstro/
+@Commune/C4b:Postcommunio:s/N\./Silvester/
 (sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Postcommunio
