@@ -29,10 +29,7 @@ $Per Dominum.
 @Commune/C2:Oratio
 
 [Oratio3]
-Præsta, quǽsumus, omnípotens Deus: ut, intercedénte beáto N. Mártyre tuo, et a~
-cunctis adversitátibus liberémur in córpore, et a pravis cogitatiónibus mundémur~
-in mente.
-$Per Dominum.
+@Commune/C2a:Oratio
 
 [Lectio]
 Léctio libri Sapiéntiæ
@@ -74,9 +71,7 @@ $Per Dominum.
 @Commune/C2b:Secreta
 
 [Secreta3]
-Accépta sit in conspéctu tuo, Dómine, nostra devótio: et ejus nobis fiat~
-supplicatióne salutáris, pro cujus sollemnitáte defértur.
-$Per Dominum.
+@Commune/C2a:Secreta
 
 [Communio]
 !Ps 63:11
@@ -84,10 +79,7 @@ Lætábitur justus in Dómino, et sperábit in eo: et laudabúntur omnes recti c
 allelúja, allelúja.
 
 [Postcommunio]
-Refécti participatióne múneris sacri, quǽsumus, Dómine, Deus noster: ut, cujus~
-exséquimur cultum, intercedénte beáto N. Mártyre tuo atque Pontífice, sentiámus~
-efféctum.
-$Per Dominum.
+@Commune/C2a
 
 [Postcommunio1]
 Hæc nos commúnio Dómine, purget a crímine: et, intercedénte beáto N. Mártyre tuo~
@@ -98,6 +90,4 @@ $Per Dominum
 @Commune/C2:Postcommunio
 
 [Postcommunio3]
-Refécti participatióne múneris sacri, quǽsumus, Dómine, Deus noster: ut, cujus~
-exséquimur cultum; intercedénte beáto N. Mártyre tuo, sentiámus efféctum.
-$Per Dominum
+@Commune/C2a:Postcommunio
