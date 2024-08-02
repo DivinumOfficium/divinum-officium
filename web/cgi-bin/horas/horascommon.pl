@@ -25,13 +25,13 @@ sub checkfile {
   my $file = shift;
   our $datafolder;
 
-  my $tempFile = $file;
-  $tempFile =~ s/(Sancti|Tempora)M/$1/;
+  # my $tempFile = $file;
+  # $tempFile =~ s/(Sancti|Tempora)M/$1/;
 
   if (-e "$datafolder/$lang/$file") {
     return "$datafolder/$lang/$file";
-  } elsif (-e "$datafolder/$lang/$tempFile") {
-    return "$datafolder/$lang/$tempFile";
+  # } elsif (-e "$datafolder/$lang/$tempFile") {
+  #   return "$datafolder/$lang/$tempFile";
   } elsif ($lang =~ /-/) {
     my $temp = $lang;
     $temp =~ s/-[^-]+$//;
@@ -43,6 +43,17 @@ sub checkfile {
   } else {
     return "$datafolder/Latin/$file";
   }
+}
+
+sub checklatinfile {
+  my $file_ref = shift;
+  my $file = $$file_ref;
+  our $datafolder;
+  my $txt = $file =~ s/\.txt$// ? '.txt' : '';
+
+  -e "$datafolder/Latin/$file.txt"
+    || $file =~ s/(Sancti|Tempora|Commune)(?:M|OP)(.*)/$1$2/ &&
+       (-e "$datafolder/Latin/$file.txt" ) && ($$file_ref = "$file$txt")
 }
 
 sub occurrence {
@@ -97,6 +108,7 @@ sub occurrence {
   } elsif ($transfertemp && $version =~ /monastic/i) {
     $transfertemp =~ s/TemporaM?/TemporaM/;    # modify path to Monastic Tempora folder if necessary
   }
+
   my $transfers =
     get_transfer($year, $version, $sday);      # get annual transfers if applicable depending on the day of Easter
   my @transfers = split("~", $transfers);
@@ -145,13 +157,7 @@ sub occurrence {
       $tfile = '';
     }
 
-    if (
-      $tfile
-      && ( -e "$datafolder/Latin/$tfile.txt"
-        || $weekname =~ /Epi0/i
-        || ($tfile =~ /(Sancti|Tempora)M(.*)/ && -e "$datafolder/Latin/$1$2.txt"))
-    ) {
-
+    if ( $tfile && (checklatinfile(\$tfile) || $weekname =~ /Epi0/i)) {
       $tname = "$tfile.txt";
 
       if ($tomorrow) {
@@ -215,7 +221,7 @@ sub occurrence {
 
     $BMVSabbato = ($sfile =~ /v/ || $dayofweek !~ 6) ? 0 : 1;    # nicht sicher, ob das notwendig ist
 
-    if (-e "$datafolder/Latin/$sfile.txt" || ($sfile =~ /(Sancti|Tempora)M(.*)/ && -e "$datafolder/Latin/$1$2.txt")) {
+    if (checklatinfile(\$sfile)) {
       $sname = "$sfile.txt";
       if ($caller && $hora =~ /(Matutinum|Laudes)/i) { $sname =~ s/11-02t/11-02/; }    # special for All Souls day
 
@@ -1578,16 +1584,13 @@ sub officestring($$;$) {
   # set this global here
   our $monthday;
 
-  if ($fname !~ /tempora[M]*\/(Pent|Epi)/i) {
+  if ($fname !~ m{^Tempora[^/]*/(?:Pent|Epi)} 
+      || $fname =~ m{^Tempora[^/]*/Pent0[1-5]}) {
     %s = %{setupstring($lang, $fname)};
     if ($version =~ /196/ && $s{Rank} =~ /Feria.*?(III|IV) Adv/i && $day > 16) { $s{Rank} =~ s/;;2.1/;;4.9/; }
     return \%s;
   }
 
-  if ($fname =~ /tempora[M]*\/Pent([0-9]+)/i && $1 < 5) {
-    %s = %{setupstring($lang, $fname)};
-    return \%s;
-  }
   $monthday = monthday($day, $month, $year, ($version =~ /196/) + 0, $flag);
 
   if (!$monthday) {
@@ -1800,7 +1803,8 @@ sub setheadline {
 
 sub subdirname {
   my ($subdir, $version) = @_;
-  $subdir .= 'M' if $version =~ /monastic/i;
+  return "${subdir}M/" if $version =~ /^Monastic/;
+  return "${subdir}OP/" if $version =~ /^Ordo Praedicatorum/;
   "$subdir/";
 }
 

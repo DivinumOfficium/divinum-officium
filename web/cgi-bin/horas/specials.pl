@@ -1340,7 +1340,7 @@ sub checkmtv {
 sub getanthoras {
   my $lang = shift;
   my $tflag = ($version =~ /Trident|Monastic/i && $winner =~ /Sancti/i) ? 1 : 0;
-  $tflag = 0 if ($version =~ /1963/ && $winner =~ /SanctiM.01-(?:(?:0[2-5789])|(?:1[012]))/);
+  $tflag = 0 if ($version =~ /1963/ && $winner =~ /SanctiM?.01-(?:(?:0[2-5789])|(?:1[012]))/);
 
   my $ant = '';
   if ($rule !~ /Antiphonas horas/i && $communerule !~ /Antiphonas horas/i && !$tflag) { return ''; }

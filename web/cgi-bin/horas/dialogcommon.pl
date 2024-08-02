@@ -221,23 +221,18 @@ use constant {
 # the cache. Inclusions are performed according to the value of
 # $params{'resolve@'}. If omitted, the default is RESOLVE_ALL.
 sub setupstring($$%) {
-
   my ($lang, $fname, %params) = @_;
-
   my $basedir = our $datafolder;
+
+  if ($lang =~ /\.\.\/missa\/(.+)/) { # For Monastic look-up of Evangelium, prevent __preamble from 
+    $lang = $1;                       # to infinite cycles github #525
+    $basedir =~ s/horas/missa/g;       # horas file to contaminate missa structure which could lead 
+  }
+
+  checklatinfile(\$fname); # modifies $fname if fallback to Roman folder from Monastic or OP is used in Latin
+
   my $fullpath = "$basedir/$lang/$fname";
-
-  if ($lang =~ /\.\.\/missa\/(.+)/) {
-
-    # For Monastic look-up of Evangelium, prevent __preamble from horas file to contaminate missa structure which could lead to infinite cycles github #525
-    $basedir =~ s/horas/missa/;
-    $lang = $1;
-  }
-
-  if (!-e "$basedir/Latin/$fname" && $fname =~ /(Sancti|Tempora)M(.*)/i && -e "$basedir/Latin/$1$2") {
-    $fullpath = "$basedir/$lang/$1$2";    # Allow for Fallback to Roman folder if fallback is used in Latin
-  }
-  our ($lang1, $lang2, $missa);
+  our ($missa);
   my $inclusionregex = qr/^\s*\@
     ([^\n:]+)?                    # Filename (self-reference if omitted).
     (?::([^\n:]+?))?              # Optional keywords.
