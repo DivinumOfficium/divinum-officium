@@ -5,12 +5,10 @@ S. Sabbæ Abbatis;;Simplex;;1.1;;vide C4c
 vide C4c;
 
 [Oratio]
-Wij vragen U, Heer, dat de voorspraak van uw heilige abt Sabbas ons een aanbeveling mag zijn, opdat wij door zijn bescherming mogen verwerven, wat wij door eigen verdiensten niet vermogen.
-$Per Dominum
+@Commune/C4c:Oratio:s/N\./Sabbas/
 
 [Secreta]
 @Commune/C4c:Secreta:s/N\./Sabbas/
 
 [Postcommunio]
-Moge, o Heer, naast het ontvangen van uw Sacrament, de voorspraak van de heilige Sabbas ons beschermen, opdat wij het grootse van zijn leven durven proberen, en daarbij de steun van zijn voorspraak ontvangen.
-$Per Dominum
+@Commune/C4c:Postcommunio:s/N\./Sabbas/
