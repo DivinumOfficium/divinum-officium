@@ -25,13 +25,8 @@ sub checkfile {
   my $file = shift;
   our $datafolder;
 
-  # my $tempFile = $file;
-  # $tempFile =~ s/(Sancti|Tempora)M/$1/;
-
   if (-e "$datafolder/$lang/$file") {
     return "$datafolder/$lang/$file";
-  # } elsif (-e "$datafolder/$lang/$tempFile") {
-  #   return "$datafolder/$lang/$tempFile";
   } elsif ($lang =~ /-/) {
     my $temp = $lang;
     $temp =~ s/-[^-]+$//;
@@ -52,8 +47,9 @@ sub checklatinfile {
   my $txt = $file =~ s/\.txt$// ? '.txt' : '';
 
   -e "$datafolder/Latin/$file.txt"
-    || $file =~ s/(Sancti|Tempora|Commune)(?:M|OP)(.*)/$1$2/ &&
-       (-e "$datafolder/Latin/$file.txt" ) && ($$file_ref = "$file$txt")
+    || $file =~ s/(Sancti|Tempora|Commune)(?:M|OP)(.*)/$1$2/
+    && (-e "$datafolder/Latin/$file.txt")
+    && ($$file_ref = "$file$txt");
 }
 
 sub occurrence {
@@ -157,7 +153,7 @@ sub occurrence {
       $tfile = '';
     }
 
-    if ( $tfile && (checklatinfile(\$tfile) || $weekname =~ /Epi0/i)) {
+    if ($tfile && (checklatinfile(\$tfile) || $weekname =~ /Epi0/i)) {
       $tname = "$tfile.txt";
 
       if ($tomorrow) {
@@ -1584,8 +1580,9 @@ sub officestring($$;$) {
   # set this global here
   our $monthday;
 
-  if ($fname !~ m{^Tempora[^/]*/(?:Pent|Epi)} 
-      || $fname =~ m{^Tempora[^/]*/Pent0[1-5]}) {
+  if ( $fname !~ m{^Tempora[^/]*/(?:Pent|Epi)}
+    || $fname =~ m{^Tempora[^/]*/Pent0[1-5]})
+  {
     %s = %{setupstring($lang, $fname)};
     if ($version =~ /196/ && $s{Rank} =~ /Feria.*?(III|IV) Adv/i && $day > 16) { $s{Rank} =~ s/;;2.1/;;4.9/; }
     return \%s;
