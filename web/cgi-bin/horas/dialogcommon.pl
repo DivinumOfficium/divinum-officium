@@ -224,12 +224,12 @@ sub setupstring($$%) {
   my ($lang, $fname, %params) = @_;
   my $basedir = our $datafolder;
 
-  if ($lang =~ /\.\.\/missa\/(.+)/) { # For Monastic look-up of Evangelium, prevent __preamble from 
-    $lang = $1;                       # to infinite cycles github #525
-    $basedir =~ s/horas/missa/g;       # horas file to contaminate missa structure which could lead 
+  if ($lang =~ /\.\.\/missa\/(.+)/) {    # For Monastic look-up of Evangelium, prevent __preamble from
+    $lang = $1;                          # to infinite cycles github #525
+    $basedir =~ s/horas/missa/g;         # horas file to contaminate missa structure which could lead
   }
 
-  checklatinfile(\$fname); # modifies $fname if fallback to Roman folder from Monastic or OP is used in Latin
+  checklatinfile(\$fname);    # modifies $fname if fallback to Roman folder from Monastic or OP is used in Latin
 
   my $fullpath = "$basedir/$lang/$fname";
   our ($missa);
