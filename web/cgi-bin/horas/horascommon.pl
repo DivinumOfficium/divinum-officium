@@ -365,7 +365,7 @@ sub occurrence {
       && !$transfervigil)
     {
       unless ($tomorrow) {
-        $scriptura = $tname =~ /Epi0/i ? $sname : $tname;
+        $scriptura = ($month == 1 && $day < 13) ? $sname : $tname;
       }
       $tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Simplex;;1.2;;vide $C10";
       $tname = subdirname('Commune', $version) . "$C10.txt";
