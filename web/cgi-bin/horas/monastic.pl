@@ -250,8 +250,7 @@ sub psalmi_matutinum_monastic {
     $psalmi[16] = $ant . ';;' . $p;
 
     nocturn(3, $lang, \@psalmi, (16 .. 18));
-    lectiones(3, $lang);          # Homily with responsories #9-#12
-    push(@s, '&teDeum', "\n");    # Te Deum comes after the 12th responsory only
+    lectiones(3, $lang);    # Homily with responsories #9-#12
 
     my @e;
 

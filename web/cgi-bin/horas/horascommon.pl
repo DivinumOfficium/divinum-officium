@@ -1368,6 +1368,10 @@ sub precedence {
       $commune = 'Tempora/Epi1-0a.txt';
     }
     $rule = $winner{Rule};
+
+    if ($winner =~ /12-28/ && $dayofweek == 0) {
+      $rule =~ s/no Te Deum//;
+    }
   }
 
   if ($version !~ /196/ && exists($winner{'Oratio Vigilia'}) && $dayofweek != 0 && $hora =~ /Laudes/i) {
