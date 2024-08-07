@@ -9,7 +9,6 @@ no Gloria
 Credo
 Prefatio=Quad5
 
-
 [Introitus]
 !Joann 19:25
 v. Naast het Kruis van Jezus stond zijn Moeder, en de zuster van zijn Moeder, Maria van Cleophas, en Maria Magdalena.
@@ -24,8 +23,7 @@ $Qui vivis
 
 [Commemoratio Oratio]
 !Pro Feria
-Wij vragen U, Heer, stort welwillend uw genade uit in onze harten, opdat wij in de beteugeling van onze zondige neigingen door vrijwillige tuchtiging, liever nu ons lichaam afmatten, dan tot de eeuwige straffen gedoemd te worden.
-$Per Dominum
+@Tempora/Quad5-5Feria:Oratio
 
 [Lectio]
 Lezing uit het Boek Judith
@@ -135,9 +133,7 @@ glorie in het Paradijs.
 Amen.
 
 [Evangelium]
-Vervolg ++ van het heilig Evangelie volgens Johannes
-!Joann 19:25-27
-In die tijd stonden bij het kruis van Jezus zijn Moeder en de zuster van zijn Moeder, Maria van Cleophas, en Maria Magdalena. Toen Jezus dan zijn Moeder en de leerling, die Hij liefhad, zag staan, sprak Hij tot zijn Moeder: Vrouwe, ziedaar uw zoon. Daarop sprak Hij tot de leerling: Ziedaar uw Moeder. En van dat ogenblik af nam de leerling Haar bij zich.
+@Commune/C10Pasc
 
 [Offertorium]
 !Jer 18:20
@@ -149,8 +145,7 @@ $Qui vivis
 
 [Commemoratio Secreta]
 !Pro Feria
-Verleen ons, goedertieren God, de genade altijd waardig de dienst van uw altaren te mogen waarnemen en door de herhaalde deelname er aan zalig te worden.
-$Per Dominum
+@Tempora/Quad5-5Feria:Secreta
 
 [Communio] 
 Gelukkige zintuigen van de heilige Maagd Maria, die zonder te sterven, de palm van het martelaarschap verdienden onder het Kruis van onze Heer.
@@ -161,5 +156,4 @@ $Qui vivis
 
 [Commemoratio Postcommunio]
 !Pro Feria
-Heer, laat de blijvende bescherming van het offer, dat wij genuttigd hebben, ons niet ontbreken en altijd al, wat ons schaden kan, van ons afweren.
-$Per Dominum
+@Tempora/Quad5-5Feria:Postcommunio
