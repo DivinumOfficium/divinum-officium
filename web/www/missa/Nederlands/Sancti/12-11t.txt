@@ -1,3 +1,5 @@
+@Commune/C4b
+
 [Rank]
 S. Damasi Papæ et confessoris;;Semiduplex;;2.5;;vide C4b
 
@@ -9,9 +11,6 @@ OPapaC=Damasus;
 vide C4;
 Gloria
 
-[Introitus]
-@Commune/C4b
-
 [Oratio]
 @Commune/C4b:Oratio:s/N\./Damasus/
 
@@ -19,32 +18,10 @@ Gloria
 !Pro Octava Conceptionis Immaculatæ.
 @Sancti/12-08:Oratio
 
-[Lectio]
-@Commune/C4b
-
-[Graduale]
-@Commune/C4b
-
-[Evangelium]
-@Commune/C4b
-
-[Offertorium]
-@Commune/C4b
-
-[Secreta]
-@Commune/C4b
-
 [Commemoratio Secreta]
 !Pro Octava Conceptionis Immaculatæ.
 @Sancti/12-08:Secreta
 
-[Communio]
-@Commune/C4b
-
-[Postcommunio]
-@Commune/C4b
-
 [Commemoratio Postcommunio]
 !Pro Octava Conceptionis Immaculatæ.
 @Sancti/12-08:Postcommunio
-
