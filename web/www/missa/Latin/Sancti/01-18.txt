@@ -8,12 +8,7 @@ Credo
 !Prefatio Apostolis
 
 [Introitus]
-!Eccli 45:30.
-v. Státuit ei Dóminus testaméntum pacis, et príncipem fecit eum: ut sit illi sacerdótii dígnitas in ætérnum.
-!Ps 131:1
-Meménto, Dómine, David: et omnis mansuetúdinis ejus.
-&Gloria
-v. Státuit ei Dóminus testaméntum pacis, et príncipem fecit eum: ut sit illi sacerdótii dígnitas in ætérnum.
+@Commune/C2c
 
 [Oratio]
 Deus, qui beáto Petro Apóstolo tuo, collátis clávibus regni cœléstis, ligándi atque solvéndi pontifícium tradidísti:~
@@ -30,11 +25,7 @@ $Qui vivis
 @Commune/Coronatio
 
 [GradualeP]
-Allelúja, allelúja.
-!Ps 106:15
-Confiteántur Dómino misericórdiæ ejus; et mirabília ejus fíliis hóminum. Allelúja.
-!Matt 16:18
-V. Tu es Petrus, et super hanc petram ædificábo Ecclésiam meam. Allelúja.
+@Commune/Coronatio
 
 [Evangelium]
 @Commune/C4b
@@ -61,10 +52,7 @@ sentiámus.
 $Per Dominum
 _
 !Pro S. Prisca virg.
-Da, quǽsumus, omnípotens Deus: ut, qui beátæ Priscæ Vírginis et Mártyris tuæ~
-natalítia cólimus; et ánnua sollemnitáte lætémur, et tantæ fídei proficiámus~
-exémplo.
-$Per Dominum
+@Sancti/01-18r:Oratio
 
 [Commemoratio Secreta]
 !Pro S. Paulo
@@ -73,10 +61,7 @@ tuo grata sunt institúto, gratióra fiant patrocínio supplicántis.
 $Per Dominum
 _
 !Pro S. Prisca virg.
-Hæc hóstia, quǽsumus, Dómine, quam Sanctórum tuórum natalítia recenséntes~
-offérimus, et víncula nostræ pravitátis absólvat, et tuæ nobis misericórdiæ dona~
-concíliet.
-$Per Dominum
+@Sancti/01-18r:Secreta
 
 [Commemoratio Postcommunio]
 !Pro S. Paulo
@@ -85,6 +70,4 @@ orátio, cujus nos donásti patrocínio gubernari.
 $Per Dominum
 _
 !Pro S. Prisca virg.
-Quǽsumus, Dómine, salutáribus repléti mystériis: ut, cujus sollémnia celebrámus,~
-ejus oratiónibus adjuvémur.
-$Per Dominum
+@Sancti/01-18r:Postcommunio
