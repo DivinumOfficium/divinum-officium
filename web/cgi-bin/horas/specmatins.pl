@@ -853,10 +853,12 @@ sub lectio : ScriptFunc {
     && $commune !~ /C10/
     && $rule !~ /no93/i
     && $winner{Rank} !~ /Octav.*(Epi|Corp)/i
-
-    #&& ($dayofweek != 0 || $winner =~ /Sancti/i || $winner =~ /Nat2/i)
     && (
-         ($rule =~ /9 lectio/i && $num == 9 && !exists($winner{Responsory9}))
+      (
+           $rule =~ /9 lectio/i
+        && $num == 9
+        && !(exists($winner{Responsory9}) || ($winner{Rank} =~ /Dominica/i && $version !~ /Trid/i))
+      )
       || ($rule !~ /(9|12) lectio/i && $num == 3 && $winner !~ /Tempora/i && !exists($winner{Responsory3}))
       || ( $rule =~ /12 lectio/i
         && $num == 12
@@ -864,7 +866,7 @@ sub lectio : ScriptFunc {
     )
     || ($rank < 2 && $winner =~ /Sancti/i && $num == 4)
     )
-  {    # diverged to legend
+  {    # 9th lesson diverged to Legend of Commemorated Saint
     %w = (columnsel($lang)) ? %winner : %winner2;
 
     if (($w{Rank} =~ /Simplex/i || ($version =~ /1955/ && $rank == 1.5)) && exists($w{'Lectio94'})) {
@@ -933,6 +935,14 @@ sub lectio : ScriptFunc {
         }
       }
       $wc ||= $w{"Lectio93"};
+
+      if (!$wc && $w{Rank} =~ /infra octav/i) {
+        if (my $commemo1 = $commemoentries[1]) {
+          %w = %{setupstring($lang, $commemo1 . ".txt")};
+          $wc = $w{Lectio94} || ($w{Lectio4} . $w{Lectio5} . $w{Lectio6}) || $w{Lectio93};
+          setbuild2("entered $commemo1");
+        }
+      }
 
       if ($wc) {
         setbuild2("Last lectio: Commemoratio from Sancti #$ji");
