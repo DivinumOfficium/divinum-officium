@@ -1824,7 +1824,6 @@ sub papal_antiphon_dum_esset($) {
   return $papalcommon{'Ant 3 summi Pontificis'};
 }
 
-
 #*** sub expand($line, $lang, $antline)
 # for & references calls the sub
 # $ references are filled from Psalterium/Prayers file
