@@ -73,7 +73,6 @@ binmode(STDOUT, ':encoding(utf-8)');
 
 #*** collect standard items
 require "$Bin/do_io.pl";
-require "$Bin/../DivinumOfficium/HashParser.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
