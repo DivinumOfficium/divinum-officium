@@ -55,7 +55,6 @@ our $smallblack;
 our $smallfont;
 
 require "$Bin/do_io.pl";
-require "$Bin/../DivinumOfficium/HashParser.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
