@@ -31,6 +31,7 @@ use lib "$Bin/..";
 use DivinumOfficium::LanguageTextTools qw(prayer translate load_languages_data);
 
 #*** collect standard items
+require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/../horas/dialogcommon.pl";
 require "$Bin/../horas/webdia.pl";
