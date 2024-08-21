@@ -8,10 +8,12 @@ BEGIN {
   require Exporter;
   our $VERSION = 1.00;
   our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(getweek leapyear geteaster get_sday nextday day_of_week monthday prevnext ydays_to_date);
+  our @EXPORT_OK =
+    qw(getweek leapyear geteaster get_sday nextday day_of_week monthday prevnext ydays_to_date date_to_days days_to_date);
 }
 
 use FindBin qw($Bin);
+use Time::Local;
 
 #*** getweek($flag)
 # returns $week string list using date1 = mm-dd-yyy string as parameter
@@ -250,6 +252,109 @@ sub prevnext {
     : $d ? ydays_to_date($d, $year)
     : (31, 12, $year - 1);
   sprintf("%02i-%02i-%04i", $month, $day, $year);
+}
+
+#*** days_to_date($days)
+# returns the ($sec, $min, $hour, $day, $month-1, $year-1900, $wday, $yday, 0) array from the number of days from 01-01-1970
+sub days_to_date {
+  my $days = shift;
+  if ($days > 0 && $days < 24837) { return localtime($days * 60 * 60 * 24 + 12 * 60 * 60); }
+  if ($days < -141427) { error("Date before the Gregorian Calendar!"); }
+  my @d = ();
+  $d[0] = 0;
+  $d[1] = 0;
+  $d[2] = 6;
+  $d[6] = (($days % 7) + 4) % 7;
+  $d[8] = 0;
+
+  my $count = 10957;
+  my $yc = 20;
+  my $add;
+  my $oldadd;
+  my $oldcount = $count;
+  my $oldyc = $yc;
+
+  if ($days < $count) {
+    while ($days < $count) { $yc--; $add = (($yc % 4) == 0) ? 36525 : 36524; $count -= $add; }
+  } else {
+    while ($days >= $count) {
+      $oldcount = $count;
+      $oldyc = $yc;
+      $add = (($yc % 4) == 0) ? 36525 : 36524;
+      $count += $add;
+      $yc++;
+    }
+    $count = $oldcount;
+    $yc = $oldyc;
+  }
+  $add = 4 * 365;
+  if (($yc % 4) == 0) { $add += 1; }
+  $yc *= 100;
+  $oldcount = $count;
+  $oldyc = $yc;
+  while ($count <= $days) { $oldcount = $count; $oldyc = $yc; $count += $add; $add = 4 * 365 + 1; $yc += 4; }
+  $count = $oldcount;
+  $yc = $oldyc;
+  $add = 366;
+  if (($yc % 100) == 0 && ($yc % 400) > 0) { $add = 365; }
+  $oldyc = $yc;
+  while ($count <= $days) { $oldadd = $add; $oldyc = $yc; $count += $add; $add = 365; $yc++; }
+  $count -= $oldadd;
+  $yc = $oldyc;
+  $d[5] = $yc - 1900;
+  $d[7] = $days - $count + 1;
+  my @months = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+
+  if (($yc % 4) == 0) {
+    $months[1] = 29;
+  } else {
+    $months[1] = 28;
+  }
+  if (($yc % 100) == 0 && ($yc % 400) > 0) { $months[1] = 28; }
+  my $c = 0;
+  while ($count <= $days) { $count += $months[$c]; $c++; }
+  $c--;
+  $count -= $months[$c];
+  $d[4] = $c;
+  $d[3] = $days - $count + 1;
+  return @d;
+}
+
+#*** date_to_days($day, $month-1, $year)
+# returns the number of days from the epoch 01-01-1070
+sub date_to_days {
+  my ($d, $m, $y) = @_;
+  if ($y > 1970 && $y < 2038) { floor(timelocal(0, 0, 12, $d, $m, $y) / 60 * 60 * 24); }
+  my $yc = floor($y / 100);
+  my $c = 20;
+  my $ret = 10957;
+  my $add;
+
+  if ($y < 2000) {
+    while ($c > $yc) { $c--; $add = (($c % 4) == 0) ? 36525 : 36524; $ret -= $add; }
+  } else {
+    while ($c < $yc) { $add = (($c % 4) == 0) ? 36525 : 36524; $ret += $add; $c++; }
+  }
+  $add = 4 * 365;
+  if (($yc % 4) == 0) { $add += 1; }
+  $yc *= 100;
+  while ($yc < ($y - ($y % 4))) { $ret += $add; $add = 4 * 365 + 1; $yc += 4; }
+  $add = 366;
+  if (($yc % 100) == 0 && ($yc % 400) > 0) { $add = 365; }
+  while ($yc < $y) { $ret += $add; $add = 365; $yc++; }
+  my @months = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+
+  if (($y % 4) == 0) {
+    $months[1] = 29;
+  } else {
+    $months[1] = 28;
+  }
+  if (($y % 100) == 0 && ($y % 400) > 0) { $months[1] = 28; }
+  $c = 0;
+  while ($c < $m) { $ret += $months[$c]; $c++; }
+  $ret += ($d - 1);
+  if ($ret < -141427) { error("Date before the Gregorian Calendar!"); }
+  return $ret;
 }
 
 1;
