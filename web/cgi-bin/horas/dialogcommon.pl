@@ -223,10 +223,12 @@ use constant {
 sub setupstring($$%) {
   my ($lang, $fname, %params) = @_;
   my $basedir = our $datafolder;
+  my $calledlang = $lang;
+  our $error;
 
   if ($lang =~ /\.\.\/missa\/(.+)/) {    # For Monastic look-up of Evangelium, prevent __preamble from
-    $lang = $1;                          # to infinite cycles github #525
-    $basedir =~ s/horas/missa/g;         # horas file to contaminate missa structure which could lead
+    $lang = $1;                          # horas file to contaminate missa structure which could lead
+    $basedir =~ s/horas/missa/g;         # to infinite cycles github #525
   }
 
   checklatinfile(\$fname);    # modifies $fname if fallback to Roman folder from Monastic or OP is used in Latin
@@ -234,13 +236,13 @@ sub setupstring($$%) {
   my $fullpath = "$basedir/$lang/$fname";
   our ($missa);
   my $inclusionregex = qr/^\s*\@
-    ([^\n:]+)?                    # Filename (self-reference if omitted).
-    (?::([^\n:]+?))?              # Optional keywords.
-    [^\S\n\r]*                    # Ignore trailing whitespace.
-    (?::(.*))?                    # Optional substitutions.
-    $
-    \n?                           # Eat up to one newline.
-    /mx;
+	([^\n:]+)?                    # Filename (self-reference if omitted).
+	(?::([^\n:]+?))?              # Optional keywords.
+	[^\S\n\r]*                    # Ignore trailing whitespace.
+	(?::(.*))?                    # Optional substitutions.
+	$
+	\n?                           # Eat up to one newline.
+	/mx;
   our $version;
 
   $setupstring_caches_by_version{$version} = {} unless (exists $setupstring_caches_by_version{$version});
@@ -256,17 +258,19 @@ sub setupstring($$%) {
     if ($lang eq 'English') {
 
       # English layers on top of Latin.
-      $base_sections = setupstring('Latin', $fname, 'resolve@' => RESOLVE_NONE);
+      my $baselang = $calledlang =~ /\.\.\/missa/ ? '../missa/Latin' : 'Latin';
+      $base_sections = setupstring($baselang, $fname, 'resolve@' => RESOLVE_NONE);
     } elsif ($lang =~ /-/) {
 
       # If $lang contains dash, the part before the last dash is taken as a new fallback
-      my $temp = $lang;
+      my $temp = $calledlang;
       $temp =~ s/-[^-]+$//;
       $base_sections = setupstring($temp, $fname, 'resolve@' => RESOLVE_NONE);
     } elsif ($lang && $lang ne 'Latin') {
 
       # Other non-Latin languages layer on top of English.
-      $base_sections = setupstring('English', $fname, 'resolve@' => RESOLVE_NONE);
+      my $baselang = $calledlang =~ /\.\.\/missa/ ? '../missa/English' : 'English';
+      $base_sections = setupstring($baselang, $fname, 'resolve@' => RESOLVE_NONE);
     }
 
     # Get the top layer.
@@ -317,7 +321,8 @@ sub setupstring($$%) {
       my $incl_fname .= "$1.txt";
       if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
       my $incl_sections =
-        setupstring($lang, $incl_fname, 'resolve@' => RESOLVE_WHOLEFILE); # ensure daisy-chain (especially for Monastic)
+        setupstring($calledlang, $incl_fname, 'resolve@' => RESOLVE_WHOLEFILE)
+        ;    # ensure daisy-chain (especially for Monastic)
       $sections{$_} ||= ${$incl_sections}{$_} foreach (keys %{$incl_sections});
     }
     delete $sections{'__preamble'};
@@ -335,12 +340,12 @@ sub setupstring($$%) {
 
         while (
           $sections{$key} =~ s/$inclusionregex/
-          get_loadtime_inclusion(\%sections, $basedir, $lang,
-          $1,             # Filename.
-          $2 ? $2 : $key, # Keyword.
-          $3,             # Substitutions.
-          $fname)         # Caller's filename.
-				/ge
+            get_loadtime_inclusion(\%sections, $basedir, $calledlang,
+              $1,             # Filename.
+              $2 ? $2 : $key, # Keyword.
+              $3,             # Substitutions.
+              $fname)         # Caller's filename.
+          /ge
         ) {
 
           if ($iiij++ > 6) {
