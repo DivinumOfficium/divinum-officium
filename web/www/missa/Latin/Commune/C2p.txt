@@ -14,16 +14,10 @@ v. Protexísti me, Deus, a convéntu malignántium, allelúja: a multitúdine~
 operántium iniquitátem, allelúja, allelúja.
 
 [Oratio]
-Infirmitátem nostram réspice, omnípotens Deus: et, quia pondus própriæ actiónis~
-gravat, beáti N. Mártyris tui atque Pontíficis intercéssio gloriósa nos~
-prótegat.
-$Per Dominum
+@Commune/C2c
 
 [Oratio1]
-Deus, qui nos beáti N. Mártyris tui atque Pontíficis ánnua sollemnitáte~
-lætíficas: concéde propítius; ut, cujus natalítia cólimus, de ejúsdem étiam~
-protectióne gaudeámus.
-$Per Dominum
+@Commune/C2b:Oratio
 
 [Oratio2]
 @Commune/C2:Oratio
@@ -63,9 +57,7 @@ quodcúmque voluéritis, petétis, et fiet vobis.
 Confitebúntur cœli mirabília tua, Dómine: et veritátem tuam in ecclésia sanctórum, allelúja, allelúja.
 
 [Secreta]
-Hóstias tibi, Dómine, beáti N. Mártyris tui atque Pontíficis dicátas méritis,~
-benígnus assúme: et ad perpétuum nobis tríbue proveníre subsídium.
-$Per Dominum.
+@Commune/C2c
 
 [Secreta1]
 @Commune/C2b:Secreta
@@ -82,12 +74,10 @@ Lætábitur justus in Dómino, et sperábit in eo: et laudabúntur omnes recti c
 allelúja, allelúja.
 
 [Postcommunio]
-@Commune/C2a
+@Commune/C2c
 
 [Postcommunio1]
-Hæc nos commúnio Dómine, purget a crímine: et, intercedénte beáto N. Mártyre tuo~
-atque Pontífice, cæléstis remédii fáciat esse consórtes.
-$Per Dominum
+@Commune/C2b:Postcommunio
 
 [Postcommunio2]
 @Commune/C2:Postcommunio
