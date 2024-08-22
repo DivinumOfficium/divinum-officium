@@ -1,34 +1,6 @@
 [Name]
 In Festis Beatae Mariae Virginis tempore Paschali
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-
-[Ant Vespera]
-Kiedy Król * był na pokoju swoim, spikanard mój wydał wdzięczną wonność, alleluja.;;109
-Lewa ręka * jego pod głową moją, a prawica jego obejmuje mię, alleluja.;;112
-Czarnaciem. * ale piękna, córki Jerozolimskie, przeto umiłował mię Król i wprowadził mię do pokoju swego, alleluja.;;121
-Już minęła zima, * deszcz przeszedł i przestał; wstań przyjaciółko moja, a przyjdź, alleluja.;;126
-Piękna * jesteś i słodka wśród rozkoszy swoich święta Boża Rodzicielko, alleluja.;;147
-
-[Hymnus Vespera]
-@Commune/C11:Hymnus Vespera
-
-[Versum 1]
-V. Dozwól mi chwalić Cię, Panno święta, alleluja.
-R. Daj mi moc przeciw nieprzyjaciołom swoim, alleluja.
-
-[Ant 1]
-Święta Marjo, * wspomóż nieszczęśliwych, wesprzyj bojaźliwych, pociesz zasmuconych, módl się za lud, wstawiaj się za klerem, przyczyń się za niewiastami Bogu poświęconemi: niechaj doznają Twego wsparcia wszyscy, którzy obchodzą świętą uroczystość Twoją, alleluja.
-
-[Invit]
-Święta Maryjo, Bogurodzico Dziewico, * Wstawiaj się za nami, alleluja.
-
-[Hymnus Matutinum]
-@Commune/C11:Hymnus Matutinum
-
 [Ant Matutinum]
 Błogosławionaś ty * między niewiastami, i błogosławiony owoc żywota twojego, alleluja.;;8
 Jak mirra wybrana * zapach wydałaś słodki, święta Bogurodzico.;;18
@@ -46,43 +18,11 @@ Porodziwszy Syna, * Dziewicą Niepokalaną pozostałaś: Boga Rodzico przyczyń 
 V. Wybrał ją Bóg, i przybrał ją, alleluja.
 R. W namiocie swoim dał jej mieszkanie, alleluja.
 
-[Lectio1]
-Z Przysłów Salomona
-!Prz 8:12-17
-12 Ja, mądrość mieszkam w radzie, a przy myślach ćwiczonych bywam.
-13 Bojaźń Pańska nienawidzi złości:pychą i hardością, i drogą złą, i usty dwujęzycznemi brzydzę się.
-14 Moja jest rada i prawość, moja jest roztropność, moje jest męstwo.
-15 Przez mię królowie królują, i prawodawcy stanowią sprawiedliwość.
-16 Przez mię książęta panują, i mocarze skazują sprawiedliwie.
-17 Ja miłuję tych, którzy mię miłują: a którzy rano czują do mnie, najdą mię.
-
 [Responsory1]
 R. Święte i nieskalane dziewictwo, którego chwały nie zdołam wyrazić:
 * Bo Ten, którego niebiosa zmieścić nie mogły, Ty w swym łonie nosiłaś, alleluja.
 V. Błogosławionaś Ty między niewiastami, i błogosławiony owoc żywota twojego
 R. Bo Ten, którego niebiosa zmieścić nie mogły, Ty w swym łonie nosiłaś, alleluja.
-
-[Lectio2]
-!Prz 8:18-25
-18 Przy mnie są bogactwa i sława, pyszne majętności i sprawiedliwość.
-19 Lepszy bowiem jest owoc mój niż złoto i kamienie drogie: a urodzaje moje niż śrebro wyborne.
-20 Na drogach sprawiedliwości chodzę, w pośrodku ścieżek sądowych:
-21 Abych ubogaciła te, którzy mię miłują, i skarby ich abym napełniła.
-22 Pan mię posiągł na początku dróg swoich, pierwéj niźli co czynił z początku.
-23 Od wiekum jest zrządzona i z starodawna, pierwéj niźli się ziemia stała.
-24 Jeszcze nie było przepaści, a jam już poczęta była: ani jeszcze źródła wód były wyniknęły:
-25 Ani jeszcze góry ciężką wielkością były stanęły przed pagórkami, jam się rodziła.
-
-[Lectio3]
-!Prz 8:34-36, 9:1-5
-34 Błogosławiony człowiek, który mię słucha: i który czuje u drzwi moich na każdy dzień, i pilnuje u podwojów drzwi moich.
-35 Kto mię najdzie, najdzie żywot i wyczerpnie zbawienie od Pana.
-36 Ale kto przeciw mnie zgrzeszy, obrazi duszę swoję. Wszyscy, którzy mię nienawidzą, kochają się w śmierci.
-1  Mądrość zbudowała sobie dom, wyciosała siedm filarów.
-2 Ofiarowała ofiary swoje, roztworzyła wino i stół swój wystawiła.
-3 Posłała dziewki swe, (aby przyzwały), na zamek i na mury miejskie:
-4 Jeźli kto jest maluczkim, niechaj przyjdzie do mnie.
-5 I głupcom mówiła: Pójdźcie, pożywajcie chleba mego i pijcie wino, którem wam roztworzyła.
 
 [Responsory3]
 R. Błogosłowionaś Dziewico Maryjo, któraś Pana nosiła, Stworzyciela świata:
@@ -125,83 +65,3 @@ V. A miłosierdzie jego od narodu do narodów, bojącym się jego.
 R. Albowiem uczynił mi wielkie rzeczy, który możny jest, i święte imię jego, alleluja.
 &Gloria
 R. Albowiem uczynił mi wielkie rzeczy, który możny jest, i święte imię jego, alleluja.
-
-[Ant Laudes]
-Kiedy Król * był na pokoju swoim, spikanard mój wydał wdzięczną wonność, alleluja.
-Lewa ręka * jego pod głową moją, a prawica jego obejmuje mię, alleluja.
-Czarnaciem. * ale piękna, córki Jerozolimskie, przeto umiłował mię Król i wprowadził mię do pokoju swego, alleluja.
-Już minęła zima, * deszcz przeszedł i przestał; wstań przyjaciółko moja, a przyjdź, alleluja.
-Piękna * jesteś i słodka wśród rozkoszy swoich święta Boża Rodzicielko, alleluja.
-
-[Capitulum Laudes]
-!Syr 24:14
-v. Od początku i przed wieki jestem stworzona i aż do przyszłego wieku nie ustanę, a w mieszkaniu świętym służyłam przed nim.
-$Deo gratias.
-
-[Hymnus Laudes]
-@Commune/C11:Hymnus Laudes
-
-[Versum 2]
-V. Rozlała się wdzięczność po wargach twoich, alleluja.
-R. Dlatego cię błogosławił Bóg na wieki, alleluja.
-
-[Ant 2]
-Błogosławiona jesteś * Maryjo, któraś uwierzyła: wypełni się w Tobie, co zostało Ci powiedziane od Pana, alleluja.
-
-[Oratio]
-Prosimy Cię, Panie, dozwól nam sługom Twoim, radować się nieustannem zdrowiem duszy i ciała, a za chwalebnem wstawieniem się błogosławionej Marji, zawsze Dziewicy, wyzwól nas od smutków doczesnych, a daj zakosztować wiecznego wesela.
-$Per Dominum
-
-[Lectio Prima]
-!Syr 24:19-20
-v. Na ulicach jako cynamon i balsam woniający wydałam wonność, jako mirra wyborna dałam słodkość wonności.
-
-[Responsory Tertia]
-R.br. Z ślicznością twoją i z pięknością twoją, * Alleluja, alleluja.
-R. Z ślicznością twoją i z pięknością twoją, * Alleluja, alleluja.
-V. Nadciągnij, fortunnie postępuj i króluj.
-R. Alleluja, alleluja.
-&Gloria
-R. Z ślicznością twoją i z pięknością twoją, * Alleluja, alleluja.
-_
-V. Wspomoże ją Bóg obliczem swoim, alleluja.
-R. Bóg w pośrodku jej, nie będzie poruszona, alleluja.
-
-[Capitulum Sexta]
-!Syr 24:15-16
-v. I takem w Syjonie jest utwierdzona a w Mieście Świętym takżem odpoczywała, a w Jeruzalem władza moja. I rozkorzeniłam się w zacnym narodzie i w dziale Boga mego dziedzictwo jego a w pełności świętych zadzierżenie moje.
-$Deo gratias.
-
-[Responsory Sexta]
-R.br. Wspomoże ją Bóg obliczem swoim, * Alleluja, alleluja.
-R. Wspomoże ją Bóg obliczem swoim, * Alleluja, alleluja.
-V. Bóg w pośrodku jej, nie będzie poruszona.
-R. Alleluja, alleluja.
-&Gloria
-R. Wspomoże ją Bóg obliczem swoim, * Alleluja, alleluja.
-_
-V. Wybrał ją Bóg, i przybrał ją, alleluja.
-R. W namiocie swoim dał jej mieszkanie, alleluja.
-
-[Capitulum Nona]
-!Syr 24:19-20
-v. Na ulicach jako cynamon i balsam woniający wydałam wonność, jako mirra wyborna dałam słodkość wonności
-$Deo gratias.
-
-[Responsory Nona]
-R.br. Wybrał ją Bóg, i przybrał ją, * Alleluja, alleluja.
-R. Wybrał ją Bóg, i przybrał ją, * Alleluja, alleluja.
-V. W namiocie swoim dał jej mieszkanie.
-R. Alleluja, alleluja.
-&Gloria
-R. Wybrał ją Bóg, i przybrał ją, * Alleluja, alleluja.
-_
-V. Rozlała się wdzięczność po wargach twoich, alleluja.
-R. Dlatego cię błogosławił Bóg na wieki, alleluja.
-
-[Versum 3]
-V. Dozwól mi chwalić Cię, Panno święta, alleluja.
-R. Daj mi moc przeciw nieprzyjaciołom swoim, alleluja.
-
-[Ant 3]
-Błogosławioną mię zwać * będą wszystkie narody, albowiem Bóg wejrzał na niskość służebnicy swojej, alleluja.
