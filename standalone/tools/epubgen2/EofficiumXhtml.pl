@@ -74,6 +74,7 @@ if (!-e "$Bin/do_io.pl") {
 }
 
 require "$Bin/do_io.pl";
+require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 
