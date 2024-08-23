@@ -56,6 +56,7 @@ our ($lang1, $lang2);
 
 #*** collect standard items
 require "$Bin/do_io.pl";
+require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
 require "$Bin/webdia.pl";
