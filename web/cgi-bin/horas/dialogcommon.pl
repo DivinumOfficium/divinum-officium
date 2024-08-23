@@ -5,6 +5,7 @@ use utf8;
 # Date : 01-25-04
 # dialog/setup related subs
 $a = 4;
+require "$Bin/../DivinumOfficium/SetupString.pl";
 
 #*** getini(file)
 # loads and interprets .ini file
