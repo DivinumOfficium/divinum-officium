@@ -329,35 +329,9 @@ sub specials {
     }
 
     if ($item =~ /Lectio brevis/i && $hora =~ /prima/i) {
-      my %brevis = %{setupstring($lang, 'Psalterium/Prima Special.txt')};
-      my $name = gettempora("Lectio brevis Prima");
-      my @brevis = split("\n", $brevis{$name});
-      $comment = ($name =~ /per annum/i) ? 5 : 1;
-      setbuild('Psalterium/Prima Special', $name, 'Lectio brevis ord');
-
-      #look for [Lectio Prima]
-      if ($version !~ /(1955|196)/) {
-        %w = (columnsel($lang)) ? %winner : %winner2;
-        my $b = '';
-
-        if (exists($w{'Lectio Prima'})) {
-          $b = $w{'Lectio Prima'};
-          if ($b) { setbuild2("Subst Lectio Pima $winner"); $comment = 3; }
-        }
-
-        if (!$b && $communetype =~ /ex/i && exists($commune{'Lectio Prima'})) {
-          $b = (columnsel($lang)) ? $commune{'Lectio Prima'} : $commune2{'Lectio Prima'};
-          if ($b) { setbuild2("Subst Lectio Pima $commune"); $comment = 3; }
-        }
-
-        if (!$b && ($winner =~ /sancti/i || $commune =~ /C10/)) {
-          $b = getfromcommune("Lectio", "Prima", $lang, 1, 1);
-          if ($b) { $comment = 4; }
-        }
-        if ($b) { @brevis = split("\n", $b); }
-      }
-      setcomment($label, 'Source', $comment, $lang);
-      push(@s, @brevis);
+      my ($b, $c) = lectio_brevis_prima($lang);
+      setcomment($label, 'Source', $c, $lang);
+      push(@s, $b);
       next;
     }
 
@@ -1779,4 +1753,42 @@ sub replaceNdot {
     $s =~ s/N\./$name/;
   }
   return $s;
+}
+
+sub lectio_brevis_prima {
+
+  my $lang = shift;
+
+  my %brevis = %{setupstring($lang, 'Psalterium/Prima Special.txt')};
+  my $name = gettempora("Lectio brevis Prima");
+  my $brevis = $brevis{$name};
+  my $comment = ($name =~ /per annum/i) ? 5 : 1;
+
+  setbuild('Psalterium/Prima Special', $name, 'Lectio brevis ord');
+
+  #look for [Lectio Prima]
+  if ($version !~ /(1955|196)/) {
+    %w = (columnsel($lang)) ? %winner : %winner2;
+    my $b;
+
+    if (exists($w{'Lectio Prima'})) {
+      $b = $w{'Lectio Prima'};
+      if ($b) { setbuild2("Subst Lectio Prima $winner"); $comment = 3; }
+    }
+
+    if (!$b && $communetype =~ /ex/i && exists($commune{'Lectio Prima'})) {
+      $b = (columnsel($lang)) ? $commune{'Lectio Prima'} : $commune2{'Lectio Prima'};
+      if ($b) { setbuild2("Subst Lectio Prima $commune"); $comment = 3; }
+    }
+
+    if (!$b && ($winner =~ /sancti/i || $commune =~ /C10/)) {
+      $b = getfromcommune("Lectio", "Prima", $lang, 1, 1);
+      if ($b) { $comment = 4; }
+    }
+
+    $brevis = $b || $brevis;
+  }
+  $brevis = prayer('benedictio Prima', $lang) . "\n$brevis" unless $version =~ /^Monastic/;
+  $brevis .= "\n" . prayer("Tu autem", $lang);
+  ($brevis, $comment);
 }
