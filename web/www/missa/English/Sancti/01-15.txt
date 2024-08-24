@@ -9,10 +9,7 @@ vide C5;
 Gloria
 
 [Oratio]
-O God, Who each year give us the joyful feast of blessed Paul, Your Confessor,~
-mercifully grant that we may imitate the deeds of him whose anniversary we~
-celebrate.
-$Per Dominum
+@Commune/C5:Oratio:s/N\./Paul/
 
 [Lectio]
 Lesson from the letter of St. Paul the Apostle to the Philippians
@@ -44,11 +41,7 @@ heart; and you will find rest for your souls. For My yoke is easy, and My burden
 light.
 
 [Secreta]
-O Lord, in memory of Your saints, we offer You sacrifices of praise, trusting~
-them to deliver us from both present and future evils.
-$Per Dominum
+@Commune/C5
 
 [Communio]
-!Ps 63:11
-The just man is glad in the Lord and takes refuge in Him; all the upright of~
-heart shall be praised.
+@Commune/C2p
