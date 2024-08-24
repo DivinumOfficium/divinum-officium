@@ -53,11 +53,14 @@ $Oremus
 $dirigere
 $Amen
 
-$benedictio Prima
 (rubrica ^Monastic dicitur)
 &regula
+
+(rubrica Ordo Praedicatorum dicitur)
+&regula_vel_evangelium
+
 #Lectio brevis
-$Tu autem
+(sed rubrica Ordo Praedicatorum omittitur)
 
 #Conclusio
 $Adjutorium nostrum
