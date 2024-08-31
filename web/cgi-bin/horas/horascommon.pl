@@ -1212,12 +1212,12 @@ sub gettoday {
 
 sub setsecondcol {
   our ($winner, $commemoratio, $commune, $scriptura);
-  our ($lang2, $tvesp, $testmode);
+  our ($lang2, $vespera, $cvespera, $testmode);
 
   our (%winner2, %commemoratio2, %commune2, %scriptura2) = () x 4;
 
-  %winner2 = %{officestring($lang2, $winner, $winner =~ /tempora/i && $tvesp == 1)} if $winner;
-  %commemoratio2 = %{officestring($lang2, $commemoratio)} if $commemoratio;
+  %winner2 = %{officestring($lang2, $winner, $winner =~ /tempora/i && $vespera == 1)} if $winner;
+  %commemoratio2 = %{officestring($lang2, $commemoratio, $commemoratio =~ /tempora/i && $cvespera == 1)} if $commemoratio;
   %commune2 = %{officestring($lang2, $commune)} if $commune;
   %scriptura2 = %{officestring($lang2, $scriptura)} if $scriptura;
 
