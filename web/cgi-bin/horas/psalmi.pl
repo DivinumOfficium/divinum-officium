@@ -366,7 +366,10 @@ sub psalmi_major {
     $c = ($winner =~ /tempora/i) ? 2 : 3;
   }
 
-  if ($w) {
+  if ($antecapitulum) {
+    $w = (columnsel($lang)) ? $antecapitulum : $antecapitulum2;
+    setbuild2("Antiphonas ante Capitulum de praecedenti");
+  } elsif ($w) {
     setbuild2("Antiphonas $winner");
   } elsif ($communetype =~ /ex/
     || ($version =~ /Trident/i && $hora =~ /Laudes/i && $winner =~ /Sancti/i))
@@ -374,7 +377,6 @@ sub psalmi_major {
     ($w, $c) = getproprium("Ant $hora", $lang, 1, 1);
     setbuild2("Antiphona $commune");
   }
-  if ($antecapitulum) { $w = (columnsel($lang)) ? $antecapitulum : $antecapitulum2; }
   if ($w) { @antiphones = split("\n", $w); $comment = $c; }
 
   #Psalmi de dominica
@@ -429,19 +431,26 @@ sub psalmi_major {
       my $aflag = 0;
       $p = ($p[$i] =~ /;;(.*)/s) ? $1 : 'missing';
 
-      if ( $i == 4
+      # For 5th (last) Psalm in Vespers we check the rules if we have to change it
+      # In 2nd Vespers (vespera=3) we first check for a "Psalm5 Vespera3" rule
+      # Otherwise (both vespers) we check for a "Psalm5 Vespera" rule
+      # In the case of "Vespera a capitulum de sequenti", we check the 'hi-jacked' 6th line instead
+      if (
+           $i == 4
         && $hora =~ /vespera/i
-        && !$antecapitulum
         && $rule !~ /no Psalm5/i
-        && ($rule =~ /Psalm5 Vespera=([0-9]+)/i || $commune{Rule} =~ /Psalm5 Vespera=([0-9]+)/i))
-      {
-        $p = $1;
-
-        if ($rule =~ /Psalm5 Vespera3=([0-9]+)/i || $commune{Rule} =~ /Psalm5 Vespera3=([0-9]+)/i) {
-          my $p1 = $1;
-          if ($vespera == 3 || ($rank < 6 && $dayofweek == 5)) { $p = $p1; }
-        }
-        setbuild2("Psalm5 = $p");
+        && (
+          (
+            !$antecapitulum
+            && ($vespera == 3
+              && ($rule =~ /Psalm5 (Vespera3)=([0-9]+)/i || $commune{Rule} =~ /Psalm5 (Vespera3)=([0-9]+)/i)
+              || ($rule =~ /Psalm5 (Vespera)=([0-9]+)/i || $commune{Rule} =~ /Psalm5 (Vespera)=([0-9]+)/i))
+          )
+          || $antecapitulum =~ /Psalm5 (VesperaAnte)=([0-9]+)/i
+        )
+      ) {
+        $p = $2;
+        setbuild2("subst: Psalm5 $1 = $p");
         $aflag = 1;
       }
       $psalmi[$i] =
