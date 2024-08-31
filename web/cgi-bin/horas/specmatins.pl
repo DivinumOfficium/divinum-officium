@@ -759,6 +759,16 @@ sub lectio : ScriptFunc {
     if ($w && $num == 1) { setbuild2("Lectio1-3 from Tempora/$file replacing homily"); }
   }
 
+  #look for commune if sancti and 'ex commune'
+  if (!$w && $winner =~ /sancti/i && $rule =~ /ex C/) {
+    my %com = (columnsel($lang)) ? %commune : %commune2;
+
+    if (exists($com{"Lectio$num"})) {
+      $w = $com{"Lectio$num"};
+      if ($w && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) { setbuild2("Lectio$num ex $commune{Name}"); }
+    }
+  }
+
   # fill with Scriptura for 1st nocturn if possible
   if (
     !$w    # we still don't have a lectio yet as there is no homily
@@ -810,16 +820,6 @@ sub lectio : ScriptFunc {
     $w .= $w1;
   }
   if ($version =~ /monastic/i && $num == 3) { $w = monastic_lectio3($w, $lang); }
-
-  #look for commune if sancti and 'ex' or 'vide'
-  if (!$w && $winner =~ /sancti/i && $rule =~ /(ex\s*C|vide\s*C)/i) {
-    my %com = (columnsel($lang)) ? %commune : %commune2;
-
-    if (exists($com{"Lectio$num"})) {
-      $w = $com{"Lectio$num"};
-      if ($w && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) { setbuild2("Lectio$num ex $commune{Name}"); }
-    }
-  }
 
   if (!$w && exists($commune{"Lectio$num"})) {
     my %c = (columnsel($lang)) ? %commune : %commune2;

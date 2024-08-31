@@ -1,7 +1,7 @@
 [Rank]
 In Præsentatione Beatæ Mariæ Virginis;;Duplex majus;;4;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Præsentatione Beatæ Mariæ Virginis;;Duplex;;3;;vide C11
 
 [Rule]
@@ -9,6 +9,9 @@ ex C11;
 9 lectiones
 Doxology=Nat
 Ipsa Virgo Virginum
+
+[Rule] (rubrica 196)
+
 
 [Ant 1]
 @Commune/C10:Ant 2:s/Christo:.*/Christo, allelúja./
