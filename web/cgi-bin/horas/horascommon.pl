@@ -1494,10 +1494,24 @@ sub precedence {
     %commemoratio = %commemoratio1 = %scriptura = %commune = {};
     $rule = $winner{Rule};
 
+    if ($version =~ /^Trident|^Divino/i) {
+
+      # Make Votive Matutinum fully Sanctoral (Duplex, 3 Nocturns) irrespective of rank of the day
+      $rule .= "\n9 lectiones";
+      $rank = 4;
+      $duplex = 3;
+    }
+
     if ($vtv =~ /C12/i) {
       $commune = subdirname('Commune', $version) . "C11.txt";
       $communetype = 'ex';
       %commune = %{setupstring($lang1, $commune)};
+    } else {
+
+      # Self-referencing of Commune to safeguard "getproprium" function
+      $commune = $winner;
+      $communetype = 'ex';
+      %commune = %winner;
     }
     $dayname[1] = $winner{Name};
     $dayname[2] = '';
