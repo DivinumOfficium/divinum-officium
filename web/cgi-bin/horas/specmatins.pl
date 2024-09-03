@@ -1146,7 +1146,7 @@ sub tedeum_required {
     && ($winner !~ /(?:Adv|Quad)/ || $version =~ /^Monastic/)
     && (
          (!$dayofweek && $dayname[1] !~ /(Vigilia)/)
-      || ($winner =~ /Sancti/i && $dayname[1] !~ /(Vigilia)/)
+      || ($winner =~ /Sancti|Commune/i && $dayname[1] !~ /(Vigilia)/)           # Commune = Votive
       || $rule =~ /Feria Te Deum/i
       || $winner =~ /Pasc|Nat|C10/
       || ($winner =~ /^Tempora/ && $rank > 5 && $dayofweek)
