@@ -1,50 +1,10 @@
+@Commune/C4
+
 [Name]
 Commune Doctore
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
-
-[Ant Vespera]
-@Commune/C4
-
-[Hymnus1 Vespera]
-@Commune/C4:Hymnus1 Vespera
-
-[Hymnus Vespera]
-@Commune/C4:Hymnus Vespera
-
-[HymnusM Vespera]
-@Commune/C4:HymnusM Vespera
-
-[Hymnus1M Vespera]
-@Commune/C4:Hymnus1M Vespera
-
-[Versum 1]
-@Commune/C4
-
 [Ant 1]
 O Doctor óptime, * Ecclésiæ sanctæ lumen, beáte N., divínæ legis amátor, deprecáre pro nobis Fílium Dei.
-
-[Invit]
-@Commune/C4
-
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
-
-[HymnusM Matutinum]
-@Commune/C4:HymnusM Vespera
-
-[Hymnus1M Matutinum]
-@Commune/C4:Hymnus1M Vespera
-
-[Ant Matutinum]
-@Commune/C4
 
 [Lectio1]
 De libro Ecclesiástici
@@ -55,9 +15,6 @@ De libro Ecclesiástici
 4 In médio magnatórum ministrábit, et in conspéctu prǽsidis apparébit. 
 5 In terram alienigenárum géntium pertránsiet; bona enim et mala in homínibus tentábit.
 
-[Responsory1]
-@Commune/C4
-
 [Lectio2]
 !Sir 39:6-10
 6 Cor suum tradet ad vigilándum dilúculo ad Dóminum, qui fecit illum, et in conspéctu Altíssimi deprecábitur. 
@@ -66,9 +23,6 @@ De libro Ecclesiástici
 9 et ipse tamquam imbres mittet elóquia sapiéntiæ suæ, et in oratióne confitébitur Dómino: 
 10 et ipse díriget consílium ejus, et disciplínam, et in abscónditis suis consiliábitur.
 
-[Responsory2]
-@Commune/C4
-
 [Lectio3]
 !Sir 39:11-14
 11 Ipse palam fáciet disciplínam doctrínæ suæ, et in lege testaménti Dómini gloriábitur.
@@ -76,41 +30,29 @@ De libro Ecclesiástici
 13 Non recédet memória ejus, et nomen ejus requirétur a generatióne in generatiónem.  
 14 Sapiéntiam ejus enarrábunt gentes, et laudem ejus enuntiábit Ecclésia.
 
-[Responsory3]
-@Commune/C4
-
 [Lectio4]
-@Commune/C4
-
-[Responsory4]
-@Commune/C4
+Ex libro Morálium sancti Gregórii Papæ
+!Lib. 9. cap. 11., n. 45
+Qui, post Oríonas, Hýadum nómine, nisi Doctóres sanctæ Ecclésiæ designántur? Qui, subdúctis Martýribus, eo jam témpore ad mundi notítiam venérunt, quo fides clárius elúcet, et, représsa infidelitátis híeme, áltius per corda fidélium sol veritátis calet. Qui, remóta tempestáte persecutiónis, explétis longis nóctibus infidelitátis, tunc sanctæ Ecclésiæ orti sunt, cum ei jam per credulitátis vernum lucídior annus aperítur.
 
 [Lectio5]
-@Commune/C4
+Nec immérito Doctóres sancti Hýadum nuncupatióne signántur. Græco quippe elóquio hýetos plúvia vocátur, et Hýades nomen a plúviis accepérunt, quia ortæ procul dúbio imbres ferunt. Bene ergo Hýadum appellatióne expréssi sunt, qui, ad statum universális Ecclésiæ quasi in cæli fáciem dedúcti, super aréntem terram humáni péctoris, sanctæ prædicatiónis imbres fudérunt. Si enim prædicatiónis sermo plúvia non esset, Móyses mínime dixísset: Exspectétur sicut plúvia elóquium meum; et nequáquam per Isaíam Véritas díceret: Mandábo núbibus meis, ne pluant super eam imbrem; atque hoc, quod paulo ante protúlimus: Quam ob rem prohíbitæ sunt stellæ pluviárum.
 
-[Responsory5]
-@Commune/C4
 
 [Lectio6]
-@Commune/C4
-
-[Responsory6]
-@Commune/C4
+Dum ergo Hýades cum plúviis véniunt, ad cæli spátia altióra sol dúcitur: quia, apparénte Doctórum sciéntia, dum mens nostra imbre prædicatiónis infúnditur, fídei calor augétur. Et perfúsa terra ad fructum próficit, cum lumen ætheris ignéscit: quia ubérius frugem boni óperis réddimus, dum per sacræ eruditiónis flammam in corde clárius ardémus. Dumque per eos diébus síngulis magis magísque sciéntia cæléstis osténditur, quasi intérni nobis lúminis vernum tempus aperítur; ut novus sol nostris méntibus rútilet, et, eórum verbis nobis cógnitus, seípso quotídie clárior micet. Urgénte étenim mundi fine, supérna sciéntia próficit, et lárgius cum témpore excréscit.
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Matthǽum
 !Matt 5:13-19
 In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Et réliqua.
 _
-Homilía sancti Hilárii Epíscopi
-!Comm. in Matthæum, cap. 4, n. 10
-Vos estis sal terræ: Quod si sal infatuátum fúerit, ad níhilum valet id quod saliétur. Sal, ut árbitror, terræ nullum est. Quómodo ergo Apóstolos sal terræ nuncupávit? Sed propríetas est quærénda dictórum, quam et Apostolórum offícium, et ipsíus salis natúra monstrábit. Sal est in se uno cóntinens aquæ et ignis eleméntum, et hoc ex duóbus est unum.
-
-[Responsory7]
-@Commune/C4
+Homilía sancti Augustíni Epíscopi
+!Lib. 1 de Sermone Domini in monte, cap. 6
+Osténdit Dóminus fátuos esse judicándos, qui temporálium bonórum vel cópiam sectántes vel inópiam metuéntes, amíttunt ætérna, quæ nec dari possunt ab homínibus nec auférri.  Itaque, si sal infatuátum fúerit, in quo saliétur? Id est, si vos, per quos condiéndi sunt quodámmodo pópuli, metu persecutiónum temporálium amiséritis regna cælórum; qui erunt hómines, per quos a vobis error auferátur, cum vos elégerit Deus, per quos errórem áuferat ceterórum?
 
 [Lectio8]
-Hic ígitur in omnem usum humáni géneris efféctus, incorruptiónem corpóribus, quibus fúerit aspérsus, impértit, et ad omnem sensum cónditi sapóris aptíssimus est. Apóstoli autem sunt rerum cæléstium prædicatóres, et æternitátis velut satóres, immortalitátem ómnibus corpóribus, quibus eórum sermo aspérsus fúerit, conferéntes. Mérito ígitur sal terræ nuncupáti sunt, per doctrínæ virtútem saliéndi modo æternitáti córpora reservántes.
+Ergo ad níhilum valet sal infatuátum, nisi ut mittátur foras et calcétur ab homínibus.  Non ítaque calcátur ab homínibus qui pátitur persecutiónem; sed qui, persecutiónem timéndo, infatuátur. Calcári enim non potest nisi inférior; sed inférior non est, qui, quamvis córpore multa in terra sustíneat, corde tamen fixus in cælo est.
 
 [Responsory8]
 R. In médio Ecclésiæ apéruit os ejus, 
@@ -121,64 +63,34 @@ R. Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
 R. Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
 
 [Lectio9]
-Sed natúra salis semper éadem est, nec immutári umquam potest. Verum quia conversióni homo súbjacet, et solus beátus, qui usque ad finem in ómnibus Dei opéribus permánserit: ídeo eos sal terræ nuncupátos monet in tráditæ sibi potestátis virtúte persístere, ne infatuáti nihil sáliant, et ipsi, sensu accépti sapóris amísso, vivificáre corrúpta non possint, et projécti de Ecclésiæ promptuáriis, cum his quos salíerint, pédibus incedéntium proterántur.
+Vos estis lumen mundi. Quómodo dixit supérius sal terræ, sic nunc dicit lumen mundi. Nam, neque supérius ista terra accipiénda est, quam pédibus corpóreis calcámus; sed hómines, qui in terra hábitant, vel étiam peccatóres, quorum condiéndis et exstinguéndis putóribus apostólicum salem Dóminus misit. Et hic mundum non cælum et terram, sed hómines qui sunt in mundo vel díligunt mundum, opórtet intélligi; quibus illuminándis Apóstoli missi sunt. Non potest cívitas abscóndi super montem pósita; id est, fundáta super insígnem magnámque justítiam, quam signíficat étiam ipse mons, in quo dísputat Dóminus.
 &teDeum
-
-[Ant Laudes]
-@:Ant Vespera
-
-[Capitulum Laudes]
-@Commune/C4
-
-[Hymnus Laudes]
-@Commune/C4:Hymnus Laudes
-
-[HymnusM Laudes]
-@Commune/C4:HymnusM Laudes
-
-[Versum 2]
-@Commune/C4
-
-[Ant 2]
-@Commune/C4
 
 [Oratio]
 Concéde nos, quǽsumus, omnípotens Deus, beáti N. confessóris tui atque Pontíficis mónita et exémpla sectári: ut per terréstrium rerum contémptum ætérna gáudia consequámur.
 $Per Dominum
 
-[Oratio1]
-@Commune/C4
-
-[Oratio2]
-@Commune/C4
-
 [Oratio3]
-Da, quǽsumus, omnípotens Deus: ut beáti N. Confessóris tui atque Pontíficis veneránda solémnitas, et devotiónem nobis áugeat, et salútem.
-$Per Dominum.
-
-[Lectio Prima]
-@Commune/C4
-
-[Responsory Tertia]
-@Commune/C4
-
-[Capitulum Sexta]
-@Commune/C4
-
-[Responsory Sexta]
-@Commune/C4
-
-[Capitulum Nona]
-@Commune/C4
-
-[Responsory Nona]
-@Commune/C4
-
-[Versum 3]
-@:Versum 2
+@Commune/C4:Oratio
 
 [Ant 3]
 @:Ant 1
+
+[Lectio7 in 2 loco]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 5:13-19
+In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Et réliqua.
+_
+Homilía sancti Hilárii Epíscopi
+!Comm. in Matthæum, cap. 4, n. 10
+Vos estis sal terræ: Quod si sal infatuátum fúerit, ad níhilum valet id quod saliétur. Sal, ut árbitror, terræ nullum est. Quómodo ergo Apóstolos sal terræ nuncupávit? Sed propríetas est quærénda dictórum, quam et Apostolórum offícium, et ipsíus salis natúra monstrábit. Sal est in se uno cóntinens aquæ et ignis eleméntum, et hoc ex duóbus est unum.
+
+[Lectio8 in 2 loco]
+Hic ígitur in omnem usum humáni géneris efféctus, incorruptiónem corpóribus, quibus fúerit aspérsus, impértit, et ad omnem sensum cónditi sapóris aptíssimus est. Apóstoli autem sunt rerum cæléstium prædicatóres, et æternitátis velut satóres, immortalitátem ómnibus corpóribus, quibus eórum sermo aspérsus fúerit, conferéntes. Mérito ígitur sal terræ nuncupáti sunt, per doctrínæ virtútem saliéndi modo æternitáti córpora reservántes.
+
+[Lectio9 in 2 loco]
+Sed natúra salis semper éadem est, nec immutári umquam potest. Verum quia conversióni homo súbjacet, et solus beátus, qui usque ad finem in ómnibus Dei opéribus permánserit: ídeo eos sal terræ nuncupátos monet in tráditæ sibi potestátis virtúte persístere, ne infatuáti nihil sáliant, et ipsi, sensu accépti sapóris amísso, vivificáre corrúpta non possint, et projécti de Ecclésiæ promptuáriis, cum his quos salíerint, pédibus incedéntium proterántur.
+&teDeum
 
 [Lectio7 in 3 loco]
 Léctio sancti Evangélii secúndum Matthǽum

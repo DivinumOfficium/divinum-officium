@@ -85,16 +85,16 @@ Sacérdos et Póntifex, * et virtútum ópifex, pastor bone in pópulo, ora pro 
 Regem Confessórum Dóminum, * Veníte, adorémus.
 
 [Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
+@:Hymnus Vespera
 
 [HymnusM Matutinum]
-@Commune/C4:HymnusM Vespera
+@:HymnusM Vespera
 
 [Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
+@:Hymnus1 Vespera
 
 [Hymnus1M Matutinum]
-@Commune/C4:Hymnus1M Vespera
+@:Hymnus1M Vespera
 
 [Ant Matutinum]
 Beátus vir, * qui in lege Dómini meditátur: volúntas ejus pérmanet die ac nocte, et ómnia quæcúmque fáciet, semper prosperabúntur.;;1
@@ -226,11 +226,7 @@ Sed is, qui quinque talénta accéperat, ália quinque lucrátus est: quia sunt 
 &teDeum
 
 [Ant Laudes]
-Ecce sacérdos magnus, * qui in diébus suis plácuit Deo, et invéntus est justus.
-Non est invéntus * símilis illi, qui conserváret legem Excélsi.
-Ideo jurejurándo * fecit illum Dóminus créscere in plebem suam.
-Sacerdótes Dei, * benedícite Dóminum: servi Dómini, hymnum dícite Deo. Allelúja.
-Serve bone * et fidélis, intra in gáudium Dómini tui.
+@:Ant Vespera
 
 [Capitulum Laudes]
 !Sir 44:16-17
@@ -374,6 +370,17 @@ De libro Ecclesiastici
 14 Córpora ipsórum in pace sepúlta sunt, et nomen eórum vivit in generatiónem et generatiónem.
 15 Sapiéntiam ipsórum narrent pópuli, et laudem eórum núntiet ecclésia.
 
+[Lectio4 in 2 loco]
+Sermo sancti Maxími Epíscopi
+!Homilía 78, de S. Eusebio 2, circa medio
+Beáti Patris N. mérita, jam in tuto pósita, secúri magnificémus; qui, gubernáculum fídei viríliter tenens, ánchoram spei tranquílla jam in statióne compósuit, et plenam cæléstibus divítiis et ætérnis mércibus navem, optáto in líttore, collocávit; qui contra omnes adversários scutum timóris Dei támdiu infatigabíliter ténuit, donec ad victóriam perveníret. Quid enim fuit totus vitæ illíus cursus, nisi uníus cum vígili hoste conflíctus?
+
+[Lectio5 in 2 loco]
+Quantis hic cæcis, a via veritátis errántibus et de summa jam in profúndum rupe pendéntibus, amíssum réddidit visum; et illum, quo Christus viderétur, reparávit intúitum? Quantórum áuribus surdis et infidelitátis obturatióne damnátis, ad percipiéndam vocem cæléstium mandatórum, pretiósum infúdit audítum; ut, vocánti Deo ad misericórdiam, respondérent per obediéntiam? Quantos intrínsecus vulnerátos, angélici oris arte et oratiónum, ab infirmitáte curávit?
+
+[Lectio6 in 2 loco]
+Quantos, per longam incúriam peccáto labe resolútos et quadam lepræ contgióne perfúsos, castigatiónibus et exhortatiónibus expiándo, Deo in se operánte, mundávit? Quantórum ánimas, vivéntes in córpore jam defúnctas et delictórum mole óbrutas ac sepúltas, ad emendatiónem tamquam ad lucem vocándo, Deo esuscitávit; ut, Dómini sui admirándus imitátor, jam mórtuas Deo, e contrário mortíficet, vitáli morte, peccáto?
+
 [Lectio7 in 2 loco]
 Léctio sancti Evangélii secúndum Matthǽum
 !Matt 16:13-19
@@ -400,10 +407,7 @@ De Homilía venerábilis Bedæ Presbýteri
 Duo sunt órdines electórum in judício futúri: unus judicántium cum Dómino, de quibus hoc loco mémorat, qui reliquérunt ómnia, et secúti sunt illum: alius judicandórum a Dómino, qui non quidem ómnia sua páriter reliquérunt, sed de his tamen quæ habébant, quotidiánas dare eleemósynas Christi paupéribus curábant: unde et auditúri sunt in judício: Veníte, benedícti Patris mei, possidíte præparátum vobis regnum a constitutióne mundi. Esurívi enim, et dedístis mihi manducáre: sitívi, et dedístis mihi bíbere.
 
 [Responsory7 in 4 loco]
-R. Iste est qui ante Deum magnas virtutes operatus est, et de omni corde suo laudavit Dominum:
-* Ipse intercedat pro peccatis omnium populorum.
-V. Ecce homo sine querela, verus Dei cultor, abstinens se ab omni opere malo, et permanens in innocentia sua.
-R. Ipse intercedat pro peccatis omnium populorum.
+@Commune/C5:Responsory7
 
 [Lectio8 in 4 loco]
 Sed et reprobórum duos ibi futúros órdines Dómino narránte comperímus: unum eórum, qui fídei christiánæ mystériis initiáti, ópera fídei exercére contémnunt, quibus in judício testátur: Discédite a me maledícti in ignem aetérnum, qui præparátus est diábolo, et ángelis ejus: esurívi enim, et non dedístis mihi manducáre. Alterum eórum, qui fídem et mystéria Christi vel numquam suscepére, vel suscéptam per apostasíam deseruére: de quibus dicit: Qui autem non credit, jam judicatus est: quia non credit in nómine unigéniti Fílii Dei.
