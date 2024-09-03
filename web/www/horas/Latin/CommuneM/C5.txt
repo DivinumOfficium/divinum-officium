@@ -1,9 +1,5 @@
 @Commune/C5
 
-[Oratio2]
-Adésto, Dómine, supplicatiónibus nostris, quas in beáti N. Confessóris tui solemnitáte deférimus: ut, qui nostræ justítiæ fidúciam non habémus, ejus, qui tibi plácuit, précibus adjuvémur.
-$Per Dominum.
-
 [Ant Matutinum]
 @CommuneM/C4:Ant Matutinum:1-14
 @Commune/C4:Ant Matutinum:9-10
@@ -169,7 +165,7 @@ R. Ætérnæ vitæ conjúnctus est.
 @Commune/C5:Lectio8 in 3 loco
 
 [Lectio11 in 4 loco]
-@Commune/C5:Lectio9 in 3 loco:s/ Bene .*//s 
+@Commune/C5:Lectio9 in 3 loco:s/ Bene .*//s
 
 [Lectio12 in 4 loco]
 @Commune/C5:Lectio9 in 3 loco:s/.* Bene /Bene /s

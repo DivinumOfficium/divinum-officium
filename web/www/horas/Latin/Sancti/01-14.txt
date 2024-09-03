@@ -1,6 +1,9 @@
 [Rank]
 S. Hilarii Episcopi Confessoris Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 
+[Rank] (rubrica innovata)
+S. Hilarii Episcopi Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
+
 [Rank](rubrica 1570 aut rubrica 1617)
 S. Hilarii Episcopi Confessoris;;Semiduplex;;2.2;;vide C4a
 
@@ -42,7 +45,15 @@ Eum a multis Pátribus et conciliis insignem Ecclésiæ Doctórem nuncupátum, a
 [Lectio6](rubrica 1570)
 @Sancti/01-14:Lectio6beginning
 
+[Lectio7]
+@Commune/C4a:Lectio7 in 2 loco
+
+[Lectio8]
+@Commune/C4a:Lectio8 in 2 loco
+
+[Lectio9]
+@Commune/C4a:Lectio9 in 2 loco
+
 [Lectio94]
 Hilárius, in Aquitánia nóbili génere natus, doctrína et eloquéntia excélluit. Pictavórum epíscopus creátus, tale munus sic gessit, ut a fidélibus summam laudem consequerétur. Ob cathólicam fidem, quam strénue propugnávit, quadriénnio apud Phrýgiam relegátus, inter ália mirácula, mórtuum suscitávit. Duódecim libros scripsit de Trinitáte contra Ariános, et Gálliam univérsam addúxit, ut Arianórum impietátem condemnáret. Multos libros scripsit mira eruditióne; quos omnes sanctus Hierónymus ad Lætam sine ulla erróris suspicióne legi posse testátur illis verbis: Hilárii libros inoffénso decúrrat pede. Migrávit in cælum idibus januárii, anno trecentésimo sexagésimo nono. Eum Pius nonus Póntifex máximus, instánte sýnodo Burdigalénsi, Doctórem universális Ecclésiæ declarávit et confirmávit.
 &teDeum
-
