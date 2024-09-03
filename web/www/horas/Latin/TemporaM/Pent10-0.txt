@@ -7,7 +7,7 @@
 @Tempora/Pent10-0::s/34/33/ s/.34 .*//s
 
 [Lectio2]
-@Tempora/Pent10-0:Lectio1:s/29-34/34-37/ s/29 .*34/34/s
+@Tempora/Pent10-0:Lectio1:2-8 s/29-34/34-37/ s/29 .*34/34/s
 @Tempora/Pent10-0:Lectio2:s/!.*// s/1 .*//s
 
 [Lectio3]
