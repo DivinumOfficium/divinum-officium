@@ -290,29 +290,28 @@ sub monastic_lectio3 {
 sub absolutio_benedictio {
   my $lang = shift;
 
-  push(@s, "\n");
-  push(@s, '&pater_noster');
   my @a;
+  my ($abs, $ben);
 
   if ($commune =~ /C10/) {
     my %m = (columnsel($lang)) ? %commune : %commune2;
     @a = split("\n", $m{Benedictio});
+    $abs = $a[0];
+    $ben = $a[3];
     setbuild2('Special benedictio');
   } else {
-    my %benedictio = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
-    my $i =
-        ($dayofweek == 1 || $dayofweek == 4) ? 1
-      : ($dayofweek == 2 || $dayofweek == 5) ? 2
-      : ($dayofweek == 3 || $dayofweek == 6) ? 3
-      : 1;
-    @a = split("\n", $benedictio{"Nocturn $i"});
-    $a[4] = $a[5] if ($i != 3);
+    my %ben = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
+    my $i = dayofweek2i();
+    @a = split(/\n/, $ben{"Nocturn $i"});
+    my @abs = split(/\n/, $ben{Absolutiones});
+    $abs = $abs[dayofweek2i() - 1];
+    $ben = $a[3 - ($i == 3)];
   }
-  push(@s, "Absolutio. $a[0]");
-  push(@s, "\n");
-  push(@s, "V. $a[1]");
-  push(@s, "Benedictio. $a[4]");
-  push(@s, "_");
+
+  push(@s, "\n", '&pater_noster', '_');
+  push(@s, "Absolutio. $abs", '$Amen', "\n");
+  push(@s, "V. " . prayer('Jube domne', $lang));
+  push(@s, "Benedictio. $ben", '$Amen', '_');
 }
 
 #*** legend_monastic($lang)
