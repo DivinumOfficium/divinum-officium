@@ -1294,7 +1294,7 @@ sub precedence {
   }
 
   ### Get the relevant Office and Commemorations
-  if ($hora =~ /vespera|completorium/i) {
+  if ($hora =~ /vespera|completorium/i && $votive !~ /C12/i) {
     concurrence($day, $month, $year, $version);
   } else {
     occurrence($day, $month, $year, $version, 0);
@@ -1489,24 +1489,25 @@ sub precedence {
       }
     }
     $winner = subdirname('Commune', $version) . "$vtv.txt";
-    $commemoratio = $commemoratio1 = $scriptura = $commune = '';
+    $commemoratio = $commemoratio1 = $cwinner = $scriptura = $commune = '';
     %winner = %{setupstring($lang1, $winner)};
-    %commemoratio = %commemoratio1 = %scriptura = %commune = {};
+    %commemoratio = %commemoratio1 = %cwinner = %scriptura = %commune = {};
+    @commemoentries = @ccommemoentries = ();
     $rule = $winner{Rule};
-
-    if ($version =~ /^Trident|^Divino/i) {
-
-      # Make Votive Matutinum fully Sanctoral (Duplex, 3 Nocturns) irrespective of rank of the day
-      $rule .= "\n9 lectiones";
-      $rank = 4;
-      $duplex = 3;
-    }
 
     if ($vtv =~ /C12/i) {
       $commune = subdirname('Commune', $version) . "C11.txt";
       $communetype = 'ex';
       %commune = %{setupstring($lang1, $commune)};
     } else {
+
+      if ($version =~ /^Trident|^Divino/i) {
+
+        # Make Votive Matutinum fully Sanctoral (Duplex, 3 Nocturns) irrespective of rank of the day
+        $rule .= "\n9 lectiones";
+        $rank = 4;
+        $duplex = 3;
+      }
 
       # Self-referencing of Commune to safeguard "getproprium" function
       $commune = $winner;
