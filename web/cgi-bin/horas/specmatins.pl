@@ -465,7 +465,7 @@ sub get_absolutio_et_benedictiones {
     unshift @ben, $abs[$num - 1];
 
     ## BMV special cases
-  } elsif ($commune =~ /C1[02]/) {
+  } elsif ($winner =~ /C1[02]/) {
     my %mariae = %{setupstring($lang, subdirname('Commune', $version) . "C10.txt")};
     @ben = split("\n", $mariae{Benedictio});
     setbuild2('Special benedictio');
