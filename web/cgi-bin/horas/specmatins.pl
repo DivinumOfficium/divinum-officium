@@ -517,7 +517,7 @@ sub lectiones {
 
   if ($rule !~ /Limit.*?Benedictio/i) {
     push(@s, "\&pater_noster");
-    push(@s, '_', "Absolutio. $a[0]", '$Amen') unless $version =~ /^Ordo Praedicatorum/;
+    push(@s, "Absolutio. $a[0]", '$Amen') unless $version =~ /^Ordo Praedicatorum/;
   } else {
     push(@s, "\$Pater totum secreto");
   }
