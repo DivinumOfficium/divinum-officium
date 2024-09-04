@@ -1,9 +1,5 @@
 [Rank]
-S. Martini Episcopi et Confessoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-9 lectiones
+S. Martini Episcopi et Confessoris;;Duplex;;3;;vide C4
 
 [Ant Laudes]
 Dijeron los discípulos * a San Martín: Padre, ¿por qué nos dejas, por qué nos abandonas? Lobos rapaces invadirán tu grey.
@@ -46,26 +42,17 @@ Martín, sacerdote de Dios, * pastor egregio, ruega a Dios por nosotros.;;20
 V. Tú eres sacerdote eterno.
 R. Según el orden de Melquisedec.
 
-[Lectio1]
-@Commune/C4:Lectio1
-
 [Responsory1]
 R. Este es Martín, Pontífice escogido de Dios, a quién el Señor se dignó conceder, después de los Apóstoles, una gracia tan grande, 
 * Que, ayudado por el poder de la divina Trinidad, mereció la gloria de resucitar tres muertos. 
 V. Martín confesó su fe en la santa Trinidad. 
 R. Que, ayudado por el poder de la divina Trinidad, mereció la gloria de resucitar tres muertos.
 
-[Lectio2]
-@Commune/C4:Lectio2
-
 [Responsory2]
 R. Señor, si todavía soy necesario a tu pueblo, no me niego a someterme al trabajo por ellos: 
 * Hágase tu voluntad. 
 V. Con los ojos y las manos siempre levantados al cielo, su espíritu invicto se entregaba incansablemente a la oración. 
 R. Hágase tu voluntad.
-
-[Lectio3]
-@Commune/C4:Lectio3
 
 [Responsory3]
 R. Oh bienaventurado obispo Martín, 
@@ -85,7 +72,7 @@ V. Mientras el bienaventurado Martín celebraba los santos Misterios, apareció 
 R. Perseveraba sin cesar en la oración, sin que su ánimo desfalleciera.
 
 [Lectio5]
-A los 18 años recibió el bautismo. Por lo cual, abandonando la vida militar, pasó al lado de Hilario, Obispo de Poitiers, quien lo recibió en el número de los acólitos. Siendo más adelante Obispo de Tours, edificó un monasterio, en donde vivió algún tiempo muy santamente en compañía de ochenta monjes. Cayó muy enfermo de calenturas, en Candes, pueblo de su diócesis, y no cesaba de rogar a Dios que le librara de la prisión de este cuerpo mortal. Al oírle sus discípulos le dijeron: Padre, ¿por qué nos abandonas? ¿A quién dejarás al cuidado de tus pobres hijos? Y conmovido Martín, rogaba a Dios en esta forma: Oh Señor, si todavía soy necesario a tu pueblo, no rehúso el trabajo. 
+A los 18 años recibió el bautismo. Por lo cual, abandonando la vida militar, pasó al lado de Hilario, Obispo de Poitiers, quien lo recibió en el número de los acólitos. Siendo más adelante Obispo de Tours, edificó un monasterio, en donde vivió algún tiempo muy santamente en compañía de ochenta monjes. Cayó muy enfermo de calenturas, en Candes, pueblo de su diócesis, y no cesaba de rogar a Dios que le librara de la prisión de este cuerpo mortal. Al oírle sus discípulos le dijeron: Padre, ¿por qué nos abandonas? ¿A quién dejarás al cuidado de tus pobres hijos? Y conmovido Martín, rogaba a Dios en esta forma: Oh Señor, si todavía soy necesario a tu pueblo, no rehúso el trabajo.
 
 [Responsory5]
 R. Conocedor el bienaventurado Martín, desde largo tiempo, de la proximidad de su muerte, dijo a sus hermanos 
@@ -138,12 +125,6 @@ R. Entra rico en el empíreo, glorificado por himnos celestiales.
 !Conmemoración de S. Menas, Mártir
 En la persecución de Diocleciano y Maximiano, emperadores, Menas, soldado cristiano, natural de Egipto, se había retirado al desierto para hacer penitencia. En el día del natalicio de los emperadores, que el pueblo celebraba con espectáculos, entró en el teatro y se pronunció contra las supersticiones paganas. Por ello fue preso y conducido a Cotyea, metrópoli de la Frigia, gobernada por Pirro. Tras haber sido azotado con unas correas, le atormentaron en el caballete, le quemaron con ascuas los costados, frotaron sus llagas con un cilicio, le arrastraron ligado de pies y manos sobre un zarzo erizado de puntas de hierro, le hirieron pegándole con azotes plumbeados, y por fin, le acabaron con la espada y le arrojaron al fuego. Retirado de allí su cuerpo, e inhumado por los cristianos, fue trasladado a Constantinopla.
 &teDeum
-
-[Ant Vespera 3]
-@:Ant Laudes
-
-[Ant 2]
-@:Ant 1
 
 [Ant 3]
 Santo pontífice, * que amaba de todo corazón a Cristo Rey, y no temía el poder de los reyes. Alma santísima, que no fue arrancada de este mundo por la espada de los perseguidores y mereció la palma del martirio.

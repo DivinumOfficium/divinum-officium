@@ -1,12 +1,6 @@
 [Name]
 Commun des confesseurs pontifes
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
-
 [Ant Vespera]
 Voici le grand-prêtre * qui, pendant sa vie, a plu à Dieu et a été trouvé juste.
 Il ne s’en est pas trouvé * de semblable à lui pour conserver la loi du Très-Haut.
@@ -77,12 +71,6 @@ Prêtre et Pontife * artisan des vertus, bon pasteur du peuple, priez pour nous 
 
 [Invit]
 Au Seigneur, Roi des Confesseurs, * Venez, offrons l'adoration.
-
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
 
 [Ant Matutinum]
 Bienheureux l’homme qui médite la loi du Seigneur : sa volonté reste constante, jour et nuit, et toutes ses oeuvres toujours réussiront.;;1
@@ -212,13 +200,6 @@ R. Soyez semblables à des hommes qui attendent que leur maître revienne des no
 [Lectio9]
 Mais celui qui avait reçu cinq talents, en gagna cinq autres : il est en effet des hommes qui, bien qu’ils ne sachent pas pénétrer les choses profondes et cachées, s’efforcent, en vue de la patrie céleste, d’enseigner le bien à ceux à qui ils peuvent l’enseigner. Des talents extérieurs qu’ils ont reçus, ils apportent le double en se gardant des attaques de la chair et de l’ambition des choses terrestres et de la jouissance des choses visibles, et en apprenant aussi aux autres à s’en garder. D’autres hommes sont comme enrichis de deux talents, à savoir l’intelligence et l’action : ils comprennent les subtilités des choses profondes et font à l’extérieur des oeuvres admirables. En prêchant aux autres par leur science et par leurs actions, ils rapportent de ce négoce un double gain.
 
-[Ant Laudes]
-Voici le grand-prêtre * qui, pendant sa vie, a plu à Dieu et a été trouvé juste.
-Il ne s’en est pas trouvé * de semblable à lui pour conserver la loi du Très-Haut.
-C’est pourquoi, par serment, * le Seigneur l’a fait grandir pour Son peuple.
-Prêtres de Dieu, * bénissez le Seigneur ! Serviteurs du Seigneur, dites un hymne à Dieu, alléluia ! 
-Serviteur bon * et fidèle, entre dans la joie de ton Seigneur.
-
 [Capitulum Laudes]
 !Sir 44:16-17
 v. Voici un grand-prêtre qui, aux jours de sa vie, a plu à Dieu et a été trouvé juste, et qui, au temps de sa colère, est devenu réconciliation.
@@ -309,10 +290,6 @@ _
 V. Tu es prêtre pour l’éternité.
 R. Selon l’ordre de Melchisédech.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
 [Responsory Nona]
 R.br. Tu es prêtre * Pour l’éternité.
 R. Tu es prêtre * Pour l’éternité.
@@ -323,9 +300,6 @@ R. Tu es prêtre * Pour l’éternité.
 _
 V.Le Seigneur l'a conduit par des voies de droiture.
 R. Et il lui a montré le royaume de Dieu.
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 Le Seigneur l'a aimé, * et l'a paré. Il l'a revêtu de la robe de gloire et l'a couronné aux portes du paradis.

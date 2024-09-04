@@ -1,3 +1,13 @@
+[Lectio5 in 2 loco]
+@Commune/C4:Lectio4 in 2 loco: s/Le cours .*//
+
+[Lectio6 in 2 loco]
+@Commune/C4:Lectio4 in 2 loco: s/.*Le cours/Le cours/
+@Commune/C4:Lectio5 in 2 loco: s/A combien .*//
+
+[Lectio7 in 2 loco]
+@Commune/C4:Lectio5 in 2 loco: s/.*A combien/A combien/
+
 [MM Capitulum]
 @Commune/C4:Capitulum Sexta
 _
