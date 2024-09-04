@@ -1,52 +1,18 @@
-[Name]
-Commúne Confessóris non pontíficis
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
 [Ant Vespera]
-Panie, * dałeś mi pięć talentów, otom drugie pięć zyskał.;;109
-Dobrzeć sługo dobry * gdyżeś nad małem był wiernym, wnijdź do wesela Pana twego.;;110
-Oto jest sługa wierny * i roztropny, którego postanowił pan jego nad czeladzią swoją.;;111
-Błogosławiony on sługa, * którego przyszedłszy Pan, znajdzie czuwającego.;;112
-Sługo dobry i wierny, wnijdź do wesela Pana twego.;;116
-
-[Hymnus1 Vespera]
-@Commune/C4:Hymnus1 Vespera
-
-[Hymnus Vespera]
-@Commune/C4:Hymnus Vespera
-
-[Versum 1]
-@Commune/C4
+Panie, * dałeś mi pięć talentów, otom drugie pięć zyskał.
+Dobrzeć sługo dobry * i wierny, gdyżeś nad małem był wiernym, wnijdź do wesela Pana twego.
+Oto jest sługa wierny * i roztropny, którego postanowił pan jego nad czeladzią swoją.
+Błogosławiony on sługa, * którego przyszedłszy Pan, znajdzie czuwającego.
+Sługo dobry i wierny, wnijdź do wesela Pana twego.
 
 [Ant 1]
 Będzie przypodobany * mężowi mądremu, który zbudował dom swój na opoce.
 
-[Invit]
-@Commune/C4
-
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
-
 [Ant Matutinum]
-Błogosławiony mąż, * który w Zakonie Pańskim, rozmyśla: wola jego trwa we dnie i w nocy, wszystko co uczyni zawżdy się mu poszczęści.;;1
-Błogosławiony ten Święty, * który ufał Panu, ogłaszał przykazania Pańskie, postawiony jest na górze świętej jego;;2
-Tyś jest chwałą moją, * tyś obrońcą moim Panie: ty wywyższający głowę moje i wysłuchałeś mie z góry świętej twojej.;;3
-V. Umiłował go Pan, i przyozdobił go.
-R. Szatą chwały przyodział go.
-Wzywającego * Pan wysłuchał Świętego swego, Pan go wysłuchał i postawił w pokoju.;;4
-Niech się weselą * wszyscy którzy mają w Tobie nadzieję Panie, boś ty błogosławił sprawiedliwemu, jako tarczą dobrej woli obtoczyłeś go.;;5
-Panie, Panie nasz, * jakóż dziwne jest imię twoje po wszystkiéj ziemi, bo chwałą i czcią ukoronowałeś Świętego swego i postanowiłeś go nad dziełami rąk twoich.;;8
+@Commune/C4::1-8
 V. Usta sprawiedliwego będą rozmyślać mądrość.
 R. A język jego będzie mówił sąd.
-Panie, * ten Święty będzie mieszkał w przybytku twoim i czynił sprawiedliwość, odpocznie na górze twojéj świętéj.;;14
-Żywota prosił * u ciebie: i dałeś mu Panie, sławę i wielką ozdobę włożyłeś nań, położyłeś na głowę jego koronę z kamienia drogiego.;;20
-Ten weźmie * błogosławieństwo od Pana: i miłosierdzie od Boga, zbawiciela swego: bo ten jest naród szukających Pana.;;23
+@Commune/C4::11-13
 V. Zakon Boga jego w sercu jego.
 R. A nie będą przerzucone kroki jego
 
@@ -57,9 +23,6 @@ Z Księgi Ekklezjastyka
 9 Któż jest taki, a będziem go chwalić, abowiem uczynił dziwy w żywocie swoim.
 10 Kto jest w tym doświadczony, a jest doskonały, będzie miał chwałę wieczną, który mógł zgrzeszyć, a nie zgrzeszył, źle czynić, a nie czynił.
 11 I przetoż utwierdzone są dobra jego w Panu, a jałmużny jego będzie wysławiało wszytko zgromadzenie świętych.
-
-[Responsory1]
-@Commune/C4
 
 [Lectio2]
 !Syr 32:18-20; 32:28; 33:1-3
@@ -104,9 +67,6 @@ R. Oto ten, który wielkich dzieł dokonał przed Bogiem i z całego serca chwal
 * Niech więc oręduje za grzesznikami spośród wszystkich ludów.
 V. Oto człowiek bez zarzutu, prawdziwy czciciel Boga; wstrzymywał się od wszelkiego zła, trwając w swojej niewinności.
 R. Niech więc oręduje za grzesznikami spośród wszystkich ludów.
-
-[Responsory8]
-@Commune/C4
 
 [Ant Laudes]
 Panie, * dałeś mi pięć talentów, otom drugie pięć zyskał.
@@ -162,9 +122,6 @@ Oraz Świętemu Pocieszycielowi,
 Po wszystek zawsze wiek.
 Amen.
 
-[Versum 2]
-@Commune/C4
-
 [Ant 2]
 Dobrzeć, sługo dobry * i wierny, gdyżeś nad małem był wiernym, nad wielem cię postanowię, wnidź do wesela Pana twego.
 
@@ -207,10 +164,6 @@ _
 V. Zakon Boga jego w sercu jego.
 R. A nie będą przerzucone kroki jego
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
 [Responsory Nona]
 R.br. Zakon Boga jego * W sercu jego.
 R. Zakon Boga jego * W sercu jego.
@@ -221,9 +174,6 @@ R. Zakon Boga jego * W sercu jego.
 _
 V. Sprawiedliwego prowadził Pan drogami prostymi.
 R. I okazał mu królestwo Boże.
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 Ten mąż, wzgardziwszy światem * i dobrami ziemskiemi, triumfuje, zebrawszy czynami i słowy skarby dla nieba.

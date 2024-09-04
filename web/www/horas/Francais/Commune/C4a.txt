@@ -1,38 +1,5 @@
-[Name]
-Commune Doctore
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
-
-[Ant Vespera]
-@Commune/C4
-
-[Hymnus1 Vespera]
-@Commune/C4:Hymnus1 Vespera
-
-[Hymnus Vespera]
-@Commune/C4:Hymnus Vespera
-
-[Versum 1]
-@Commune/C4
-
 [Ant 1]
 O docteur excellent, * lumière de la Sainte Eglise, bienheureux N., amoureux de la loi divine, priez pour nous le Fils de Dieu.
-
-[Invit]
-@Commune/C4
-
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
-
-[Ant Matutinum]
-@Commune/C4
 
 [Lectio1]
 De libro Ecclesiastici.
@@ -43,9 +10,6 @@ De libro Ecclesiastici.
 04 Il aura une place au service des grands, il se fera remarquer par les chefs, il voyagera dans les pays étrangers, car il a l’expérience du bien et du mal que font les hommes.
 05 Il s’appliquera de tout son cœur à servir dès le matin le Seigneur qui l’a créé. Il présentera sa supplication devant le Très-Haut, il ouvrira la bouche pour la prière et il suppliera pour ses péchés.
 
-[Responsory1]
-@Commune/C4
-
 [Lectio2]
 !Sir 39:6-10
 06 Si le Seigneur souverain le veut, il sera rempli de l’esprit d’intelligence, il répandra comme une ondée ses paroles de sagesse, et dans la prière il rendra grâce au Seigneur.
@@ -54,9 +18,6 @@ De libro Ecclesiastici.
 09 Beaucoup feront l’éloge de son intelligence ; et jamais on ne l’oubliera. Son souvenir ne disparaîtra pas, son nom vivra de génération en génération.
 10 Les nations raconteront sa sagesse, l’assemblée proclamera ses louanges.
 
-[Responsory2]
-@Commune/C4
-
 [Lectio3]
 !Sir 39:11-14
 11 S’il prolonge sa vie, son nom passe avant mille autres, et s’il meurt, son œuvre est accomplie.
@@ -64,41 +25,19 @@ De libro Ecclesiastici.
 13 Écoutez-moi, génération de saints : croissez comme la rose plantée au bord des eaux.
 14 Comme le Liban, exhalez votre parfum, et fleurissez comme le lis. Élevez la voix, chantez ensemble, et bénissez le Seigneur en toutes ses œuvres.
 
-[Responsory3]
-@Commune/C4
-
 [Lectio4]
-@Commune/C4
-
-[Responsory4]
-@Commune/C4
-
-[Lectio5]
-@Commune/C4
-
-[Responsory5]
-@Commune/C4
-
-[Lectio6]
-@Commune/C4
-
-[Responsory6]
-@Commune/C4
+Du Livre des Morala de Saint Grégoire Pape.
+!Livre 9, Chapitre 6
+« Qui, après les Orionides appelés Hyades, sinon les docteurs de la sainte Église, sont désignés ? Ceux-ci ont surgi à l'époque où les martyrs étaient absents, lorsque la foi resplendit de manière plus éclatante. Alors que l'hiver de l'infidélité était écarté, le soleil de la vérité brille plus intensément dans les cœurs des fidèles. Après la tempête de la persécution, lorsque les longues nuits de l'infidélité sont terminées, ils sont apparus comme une aurore pour l'Église sainte, lorsque pour elle s'ouvre maintenant une année plus claire grâce à la vigueur de la croyance.»
 
 [Lectio7]
-Lecture du saint Évangile selon saint Matthieu
+Lecture du saint Evangile selon Saint Matthieu
 !Matt 5:13-19
-En ce temps-là : Jésus dit à ses disciples : Vous êtes le sel de la terre. Mais si le sel s’affadit, avec quoi le salera-t-on ? Et le reste.
+En ce temps-là, Jésus dit à ses disciples : Vous êtes le sel de la terre, si le sel perd sa force , avec quoi le salera-t-on ? Et le reste.
 _
-Homélie de saint Hilaire, Évêque.
-!Comm. de Matthieu, can. 4
-Vous êtes le sel de la terre. Si le sel s’affadit, ce qu’il salera ne vaudra rien. A mon avis, il n’y a pas de sel de la terre Comment donc appelle-t-il les Apôtres le sel de la terre? Mais il faut chercher la vraie signification de ces paroles, que montreront l’office des Apôtres et la nature du sel lui-même. Le sel contient en lui l’élément de l’eau et celui du feu, et il est composé de l’un et de l’autre.
-
-[Responsory7]
-@Commune/C4
-
-[Lectio8]
-CE sel qui est devenu d’usage universel pour le genre, humain rend incorruptibles les corps qui en sont saupoudrés, et il est très apte à donner le goût de toute saveur cachée. Or les Apôtres sont les prédicateurs des choses célestes et comme les dispensateurs de l’éternité, conférant l’immortalité à tous les corps aspergés de leur parole. C’est donc à bon droit qu’ils sont nommés sel de la terre, puisqu’à la manière du sel, par la vertu de la doctrine, ils conservent les corps pour l’éternité.
+Homélie de Saint Augustin, Evêque.
+!Livre 1 du Sermon du Seigneur sur la montagne, chap. 6
+Notre Seigneur montre que ceux qui par la crainte de perdre, ou par le désir d'acquérir les biens temporels perdent les éternels que les hommes ne peuvent ni donner ni ôter, doivent être regardez comme un sel qui n'a plus force. Si donc le sel perd sa force, quoi le salera-t-on ? C’est à dire : si vous autres, qui devez être à l’égard des peuples ce qu’est le sel à l’égard des viandes, perdez le royaume des cieux par la crainte des persécutions. Qui seront ceux qui vous délivreront de cette erreur , puisque c’est vous que Dieu a choisis pour en délivrer les autres ?
 
 [Responsory8]
 R. Au milieu de l’Église, il a ouvert la bouche.
@@ -108,62 +47,25 @@ R. Et le Seigneur Ta rempli de l’Esprit de Sagesse et d’intelligence.
 &Gloria
 R. Et le Seigneur Ta rempli de l’Esprit de Sagesse et d’intelligence.
 
-[Lectio9]
-Mais la nature du sel est toujours la même et ne peut jamais être modifiée. L’homme, par contre, est sujet au changement, et seul est bienheureux celui qui sera demeuré jusqu’au bout persévérant dans toutes les oeuvres de Dieu. Aussi, les nommer sel de la terre, c’est les avertir qu’ils persévèrent dans la vertu du pouvoir qui leur est confié, de peur qu’affadis, ils ne vaillent plus rien, qu’eux-mêmes, ayant perdu le sens de la saveur reçue, ne puissent plus vivifier les âmes corrompues, et que rejetés des greniers de l’Église avec ceux qu’ils auront salés, ils ne soient foulés aux pieds des passants.
-&teDeum
-
-[Ant Laudes]
-@:Ant Vespera
-
-[Capitulum Laudes]
-@Commune/C4
-
-[Hymnus Laudes]
-@Commune/C4:Hymnus Laudes
-
-[Versum 2]
-@Commune/C4
-
-[Ant 2]
-@Commune/C4
-
 [Oratio]
 Nous vous en prions, Dieu tout-puissant, accordez-nous de suivre les enseignements et les exemples du bienheureux N., votre Confesseur et Pontife, afin qu’au moyen du mépris des choses terrestres, nous arrivions aux joies éternelles.
 $Per Dominum
 
-[Oratio1]
-@Commune/C4
+[Lectio7 in 2 loco]
+Lecture du saint Évangile selon saint Matthieu
+!Matt 5:13-19
+En ce temps-là : Jésus dit à ses disciples : Vous êtes le sel de la terre. Mais si le sel s’affadit, avec quoi le salera-t-on ? Et le reste.
+_
+Homélie de saint Hilaire, Évêque.
+!Comm. de Matthieu, can. 4
+Vous êtes le sel de la terre. Si le sel s’affadit, ce qu’il salera ne vaudra rien. A mon avis, il n’y a pas de sel de la terre Comment donc appelle-t-il les Apôtres le sel de la terre? Mais il faut chercher la vraie signification de ces paroles, que montreront l’office des Apôtres et la nature du sel lui-même. Le sel contient en lui l’élément de l’eau et celui du feu, et il est composé de l’un et de l’autre.
 
-[Oratio2]
-@Commune/C4
+[Lectio8 in 2 loco]
+CE sel qui est devenu d’usage universel pour le genre, humain rend incorruptibles les corps qui en sont saupoudrés, et il est très apte à donner le goût de toute saveur cachée. Or les Apôtres sont les prédicateurs des choses célestes et comme les dispensateurs de l’éternité, conférant l’immortalité à tous les corps aspergés de leur parole. C’est donc à bon droit qu’ils sont nommés sel de la terre, puisqu’à la manière du sel, par la vertu de la doctrine, ils conservent les corps pour l’éternité.
 
-[Oratio3]
-Accordez-nous, s'il Vous plaît, Seigneur tout-puissant, que la vénérable solennité de votre bienheureux N., Votre Confesseur et Pontife augmente en nous dévotion et salut.
-$Per Dominum.
-
-[Lectio Prima]
-@Commune/C4
-
-[Responsory Tertia]
-@Commune/C4
-
-[Capitulum Sexta]
-@Commune/C4
-
-[Responsory Sexta]
-@Commune/C4
-
-[Capitulum Nona]
-@Commune/C4
-
-[Responsory Nona]
-@Commune/C4
-
-[Versum 3]
-@:Versum 2
-
-[Ant 3]
-@:Ant 1
+[Lectio9 in 2 loco]
+Mais la nature du sel est toujours la même et ne peut jamais être modifiée. L’homme, par contre, est sujet au changement, et seul est bienheureux celui qui sera demeuré jusqu’au bout persévérant dans toutes les oeuvres de Dieu. Aussi, les nommer sel de la terre, c’est les avertir qu’ils persévèrent dans la vertu du pouvoir qui leur est confié, de peur qu’affadis, ils ne vaillent plus rien, qu’eux-mêmes, ayant perdu le sens de la saveur reçue, ne puissent plus vivifier les âmes corrompues, et que rejetés des greniers de l’Église avec ceux qu’ils auront salés, ils ne soient foulés aux pieds des passants.
+&teDeum
 
 [Lectio7 in 3 loco]
 Lecture du saint Évangile selon saint Matthieu

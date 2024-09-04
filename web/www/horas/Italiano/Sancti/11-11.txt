@@ -1,10 +1,6 @@
 [Rank]
 S. Martini Episcopi et Confessoris;;Duplex;;3;;vide C4a
 
-[Rule]
-vide C4a;
-9 lectiones
-
 [Ant Laudes]
 Dissero i discepoli * al beato Martino: Perché, padre, ci abbandoni, e a chi desolati ci lasci? Perché dei lupi rapaci invaderanno il tuo gregge.
 Signore, * s'io sono ancora necessario al tuo popolo, non ricuso la fatica: sia fatta la tua volontà.
@@ -46,26 +42,17 @@ Sacerdote di Dio Martino, * ottimo pastore, prega Dio per noi.;;20
 V. Tu sei sacerdote in eterno.
 R. Secondo l'ordine di Melchisedech.
 
-[Lectio1]
-@Commune/C4:Lectio1
-
 [Responsory1]
 R. Questi è Martino, eletto Vescovo di Dio, cui il Signore si degnò di conferire tanta grazia, dopo gli Apostoli, 
 * Che, col potere della santa Trinità, meritò la gloria di risuscitare tre morti,
 V. Martino confessò la fede nella santa Trinità. 
 R. Che, col potere della santa Trinità, meritò la gloria di risuscitare tre morti,
 
-[Lectio2]
-@Commune/C4:Lectio2
-
 [Responsory2]
 R. Signore, s'io sono ancora necessario al tuo popolo, non ricuso di sottopormi per loro alla fatica: 
 * Sia fatta la tua volontà.
 V. Cogli occhi e colle mani sempre rivolte al cielo, egli non distoglieva lo spirito invitto dall'orazione.
 R. Sia fatta la tua volontà.
-
-[Lectio3]
-@Commune/C4:Lectio3
 
 [Responsory3]
 R. O beato uomo Martino vescovo, 
@@ -138,9 +125,6 @@ R. Entra ricco in cielo, ed è onorato con inni celesti,
 !Commemorazione per S. Menna Mart.
 Menna, Egiziano, soldato cristiano, ritiratosi nella solitudine, durante la persecuzione degl'imperatori Diocleziano e Massimiano, per fare penitenza, il giorno della nascita degl'imperatori, che il popolo celebrava con grandi spettacoli, irruppe nel teatro gridando arditamente contro le superstizioni pagane. Perciò preso, legato e condotto a Cati, metropoli della Frigia, governata dal prefetto Pirro, venne crudelmente flagellato con correggie di cuoio. Poi, torturato sul cavalletto, bruciato ai fianchi con torce accese e fregatene le piaghe con un cilicio, quindi trascinato, legato mani e piedi su graticci seminati di punte di ferro, pesto inoltre con verghe guarnite di piombo, finalmente venne ucciso di spada e gettato nel fuoco. Il suo corpo, ritirato dai Cristiani, fu sepolto e in seguito trasportato a Costantinopoli.
 &teDeum
-
-[Ant Vespera 3]
-@:Ant Laudes
 
 [Ant 3]
 O beato Vescovo * che con tutte le forze amava Cristo Re, e non temeva punto la potenza dei cesari, o santissima anima, che, sebbene non separata dalla spada del carnefice, non ha perduto però la palma del martirio!

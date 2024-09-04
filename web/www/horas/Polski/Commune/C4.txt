@@ -1,18 +1,9 @@
-[Name]
-Commune Confessoris Pontificis
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
-
 [Ant Vespera]
-Oto kapłan wielki, * który za dni swoich podobał się Bogu i znalezion jest sprawiedliwym.;;109
-Nie jest znalezion, * podobny jemu, któryby zachował prawo Najwyższego.;;110
-Dlatego * pod przysięgą dał mu Pan chwałę w narodzie jego.;;111
-Kapłani Boga, * błogosławcie Panu: słudzy Pańscy, śpiewajcie hymn Bogu, alleluja.;;112
-Sługo dobry * i wierny, wnijdź do wesela Pana Twego.;;116
+Oto kapłan wielki, * który za dni swoich podobał się Bogu i znalezion jest sprawiedliwym.
+Nie jest znalezion, * podobny jemu, któryby zachował prawo Najwyższego.
+Dlatego * pod przysięgą dał mu Pan chwałę w narodzie jego.
+Kapłani Boga, * błogosławcie Panu: słudzy Pańscy, śpiewajcie hymn Bogu, alleluja.
+Sługo dobry * i wierny, wnijdź do wesela Pana Twego.
 
 [Hymnus Vespera]
 {:H-Isteconfessor:}v. Wyznawca Pański, którego narody,
@@ -77,12 +68,6 @@ Kapłanie i Biskupie * pełniący cnotę, dobry Pasterzu ludu, módl się za nam
 
 [Invit]
 Pana, Króla Wyznawców, * Pójdźmy uwielbiać.
-
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
 
 [Ant Matutinum]
 Błogosławiony mąż, który w zakonie Pańskim rozmyśla: wola jego trwa we dnie i w nocy, i wszystko, cokolwiek czynić będzie, poszczęści się.;;1
@@ -178,13 +163,6 @@ R. A sami bądźcie podobni do ludzi oczekujących powrotu pana swego z godów w
 &Gloria
 R. A sami bądźcie podobni do ludzi oczekujących powrotu pana swego z godów weselnych.
 
-[Ant Laudes]
-Oto kapłan wielki, * który za dni swoich podobał się Bogu i znalezion jest sprawiedliwym.
-Nie jest znalezion, * podobny jemu, któryby zachował prawo Najwyższego.
-Dlatego * pod przysięgą dał mu Pan chwałę w narodzie jego.
-Kapłani Boga, * błogosławcie Panu: słudzy Pańscy, śpiewajcie hymn Bogu, alleluja.
-Sługo dobry * i wierny, wnijdź do wesela Pana Twego.
-
 [Capitulum Laudes]
 !Syr 44:16-17
 v. Oto kapłan wielki, który za dni swoich podobał się Bogu i znalezion jest sprawiedliwym: a czasu rozgniewania stał się pojednaniem.
@@ -275,10 +253,6 @@ _
 V. Tyś jest kapłanem na wieki.
 R. Według obrządku Melchizedeka.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
 [Responsory Nona]
 R.br. Tyś jest kapłanem * Na wieki.
 R. Tyś jest kapłanem * Na wieki.
@@ -289,9 +263,6 @@ R. Tyś jest kapłanem * Na wieki.
 _
 V. Sprawiedliwego prowadził Pan drogami prostymi.
 R. I okazał mu królestwo Boże.
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 Umiłował go Pan * i przyozdobił go: szatą chwały przyodział go: u bram nieba ukoronował go.

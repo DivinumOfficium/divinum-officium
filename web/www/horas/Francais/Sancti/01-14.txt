@@ -1,19 +1,14 @@
 [Rank]
-S. Hilaire Ev^eque et  Confesseur Docteur de l'Eglise;;Duplex;;3;;vide C4a
+S. Hilaire Ev^eque et Confesseur Docteur de l'Eglise;;Duplex;;3;;vide C4a
 
-[RankNewcal]
-S. Hilaire Ev^eque et  Confesseur Docteur de l'Eglise;;Duplex optional;;2;;vide C4a
+[Rank] (rubrica innovata)
+S. Hilaire Ev^eque et Confesseur Docteur de l'Eglise;;Duplex optional;;2;;vide C4a
 
 [Name]
 Hilaire
 
-[Rule]
-vide C4a ;mtv
-9 lectiones
-
 [Oratio]
-v. Dieu, qui avez accordé à votre peuple le bienheureux Hilaire, comme ministre du salut éternel, faites, nous vous en prions, que l'ayant eu sur terre comme docteur de vie, nous méritions de l’avoir comme intercesseur dans les cieux.
-$Per Dominum
+@Commune/C4:Oratio2:s/N\./Hilaire/
 
 [Lectio4]
 Hilaire, né en Aquitaine de noble lignée, excella en doctrine et en éloquence. Il vécut d’abord dans le mariage comme un moine ; puis, à cause de ses rares vertus, il fut créé évêque de Poitiers, et exerça la charge épiscopale de façon à mériter les plus grands éloges des fidèles. Comme, à cette époque, l’empereur Constance tourmentait les Catholiques par des mesures terrifiantes, la confiscation de leurs biens, l’exil et toutes sortes de cruautés, s’ils ne passaient dans les rangs des Ariens, Hilaire, s’opposant comme un mur inébranlable aux Ariens, attira leur fureur contre sa personne. Aussi, exposé à de nombreux pièges, il fut enfin grâce à la fcuiberie de Saturnin, évêque d’Arles, relégué du synode de Béziers, en Phrygie où il ressuscita un mort et écrivit contre les Ariens douze livres sur la Trinité.

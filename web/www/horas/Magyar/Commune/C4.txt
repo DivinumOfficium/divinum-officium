@@ -1,12 +1,3 @@
-[Name]
-Commune Confessoris pontificis
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
-
 [Hymnus Vespera]
 {:H-Isteconfessor:}v. Ím a hitvalló, kit a föld határán
 Minden hívő nép szeret és magasztal,
@@ -71,12 +62,6 @@ Pap és főpap * erényekben ékes. néped jó pásztora, imádd az Urat érett�
 [Invit]
 Az Úr a hitvallók királya * jöjjetek imádjuk
 
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
-
 [Lectio1]
 Olvasmány szent Pál apostol Timóteushoz írott első leveléből
 !1 Tim 3:1-7
@@ -112,6 +97,10 @@ From the Epistola ad Titus.
 Evangélium szent Máté Apostol kőnyvéből
 !Matt 25:14-23
 Azon időben így szólt Jézus tanítványaihoz: Úgy lesz, mint azzal az emberrel, aki idegenbe készült. Összehívta szolgáit, s rájuk bízta vagyonát. És így tovább.
+_
+Homily by Pope St Gregory (the Great.)
+!9th on the Gospels.
+Dearly beloved brethren, this Lesson from the Holy Gospel moveth us to take good heed lest we, who are seen in this world to have received more than others, should thereby bring ourselves into greater condemnation from the Maker of this world. To whom much is given, of the same is much required. Therefore, let him that receiveth much, strive to be all the more lowly, and all the more ready to do God service, for his very gifts’ sake, knowing that he will be obliged to give account thereof. Behold, a man, travelling into a far country, calleth his own servants, and delivereth unto them talents, to the end that they may trade therewith. After a long time, the lord of those servants cometh, and reckoneth with them, and to them that have done well He rendereth a reward of their labours, but that servant which was careless of his master’s work He condemneth.
 
 [Capitulum Laudes]
 !Sir 44:16-17
@@ -203,11 +192,6 @@ _
 V. Te pap vagy mindörökké
 R. Melkizedek rendje szerint`
 
-[Capitulum Nona]
-!Sir 45:19-20
-v. Örök szövetséget kötött vele, nem talál magához hasonlót dicsőségben; ő megtartotta a Fölséges törvényét, és szövetségben volt vele.
-$Deo gratias
-
 [Responsory Nona]
 R.br. Te pap vagy mindörökké
 R.br. Te pap vagy mindörökké
@@ -221,10 +205,6 @@ R. Megmutatta neki Isten országát
 
 [Ant 3]
 Az Úr szerette * és felékesítette Ő, a dicsőség köntösébe öltöztette es megkoronázta a paradicsom kapujában
-
-[Versum 3]
-V. Az igazat az Úr vezette egyenes utakon
-R. Megmutatta neki Isten országát
 
 [Ant 3 summi Pontificis]
 Igazi főpap volt, a földiek nem tántoritották el, dicsőséggel ment a mennybe
@@ -253,9 +233,3 @@ Olvasmány Jézus Sírák fia könyvéből
 13 És ezek fiai érettök örökké megmaradnak; ivadékuk és dicsőségök nem fog elhagyatni.
 14 Testeik békeségben temettettek el, és nevök él nemzedékröl nemzedékre.
 15 Bölcseségöket beszélik a népek, és dicséretöket hirdeti a gyülekezet.
-
-[Responsory7 in 4 loco]
-@Commune/C5:Responsory7
-
-[Responsory8 in 4 loco]
-@Commune/C5:Responsory8

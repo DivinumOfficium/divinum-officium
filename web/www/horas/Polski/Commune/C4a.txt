@@ -1,43 +1,5 @@
-[Name]
-Commune Doctore
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
-
-[Ant Vespera]
-Oto kapłan wielki, * który za dni swoich podobał się Bogu i znalezion jest sprawiedliwym.;;109
-Nie jest znalezion, * podobny jemu, któryby zachował prawo Najwyższego.;;110
-Dlatego * pod przysięgą dał mu Pan chwałę w narodzie jego.;;111
-Kapłani Boga, * błogosławcie Panu: słudzy Pańscy, śpiewajcie hymn Bogu, alleluja.;;112
-Sługo dobry * i wierny, wnijdź do wesela Pana Twego.;;116
-
-[Hymnus1 Vespera]
-@Commune/C4:Hymnus1 Vespera
-
-[Hymnus Vespera]
-@Commune/C4:Hymnus Vespera
-
-[Versum 1]
-V. Umiłował go Pan, i przyozdobił go.
-R. Szatą chwały przyodział go.
-
 [Ant 1]
 O Doktorze najlepszy, * światłości Kościoła świętego, błogosławiony N., miłośniku prawa Bożego, błagaj za nami Syna Bożego.
-
-[Invit]
-Pana, Króla Wyznawców, * Pójdźmy uwielbiać.
-
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
-
-[Ant Matutinum]
-@Commune/C4:Ant Matutinum
 
 [Lectio1]
 Z Księgi Ekklezjastyka.
@@ -63,114 +25,12 @@ Z Księgi Ekklezjastyka.
 13 I nie ustanie pamiątka jego, i o imieniu jego pytać się będą od narodu do narodu.
 14 Mądrość jego narodowie wysławiać będą, a kościół chwałę jego opowiadać będzie.
 
-[Responsory3]
-R. Przysiągł Pan, a nie będzie mu żal:
-* Tyś jest kapłanem na wieki, według porządku Melchisedechowego.
-V. Rzekł Pan Panu memu: siedź po prawicy mojej.
-R. Tyś jest kapłanem na wieki, według porządku Melchisedechowego.
-&Gloria
-R. Tyś jest kapłanem na wieki, według porządku Melchisedechowego.
-
-[Responsory7]
-R. Umiłował go Pan, i przyozdobił go: szatą chwały przyodział go
-* U bram nieba ukoronował go.
-V. Induit eum Dominus loricam fidei, i przyozdobił go.
-R. U bram nieba ukoronował go.
-
 [Responsory8]
 R. W pośrzód kościoła otworzy usta jego,
 * I napełni go Pan duchem mądrości i rozumienia.
 V. Wesele i radość będzie skarbiła nad nim.
 R. I napełni go Pan duchem mądrości i rozumienia.
 
-[Ant Laudes]
-Oto kapłan wielki, * który za dni swoich podobał się Bogu i znalezion jest sprawiedliwym.
-Nie jest znalezion, * podobny jemu, któryby zachował prawo Najwyższego.
-Dlatego * pod przysięgą dał mu Pan chwałę w narodzie jego.
-Kapłani Boga, * błogosławcie Panu: słudzy Pańscy, śpiewajcie hymn Bogu, alleluja.
-Sługo dobry * i wierny, wnijdź do wesela Pana Twego.
-
-[Capitulum Laudes]
-!Syr 44:16-17
-v. Oto kapłan wielki, * który za dni swoich podobał się Bogu i znalezion jest sprawiedliwym: a czasu rozgniewania stał się pojednaniem.
-$Deo gratias.
-
-[Hymnus Laudes]
-@Commune/C4:Hymnus Laudes
-
-[Versum 2]
-V. Sprawiedliwego prowadził Pan drogami prostymi.
-R. I okazał mu królestwo Boże.
-
-[Ant 2]
-Dobrzeć, * sługo dobry i wierny, gdyżeś nad małem był wiernym, nad wielem cię postanowię, mówi Pan.
-
 [Oratio]
 Wysłuchaj nas, prosimy Cię, wszechmogący Boże, i daj iść za nauką i przykładem świętego N. Biskupa i Wyznawcy Twego, abyśmy wzgardziwszy dobrami doczesnemi, dostąpili radości żywota wiecznego.
 $Per Dominum
-
-[Oratio1]
-Wysłuchaj, prosimy Cię, Panie, modłów naszych, które w uroczystość błogosławionego N., Wyznawcy Twego i Biskupa, zanosimy i za pośrednictwem zasług tego, który Ci tak godnie służył, od wszelkich grzechów nas wybaw.
-$Per Dominum.
-
-[Oratio2]
-Boże, któryś ludowi swemu na drodze do zbawienia błogosławionego N., dał za pomocnika, spraw, prosimy, abyśmy tego, który nam był mistrzem na ziemi, pośrednikiem w Niebie mieć zasłużyli.
-$Per Dominum
-
-[Oratio3]
-Daj, prosimy Cię, wszechmogący Boże, aby chwalebna uroczystość błogosławionego N., Wyznawcy Twego i Biskupa, pomnożyła w nas pobożność i do zbawienia dopomogła.
-$Per Dominum.
-
-[Lectio Prima]
-!Sir 45:19-20
-v. Aby sprawował urząd kapłański i miał urząd chwalenia w imię Jego, i ofiarował Mu kadzenie godne jako dobrą wonność.
-
-[Responsory Tertia]
-R.br. Umiłował go Pan, * I przyozdobił go.
-R. Umiłował go Pan, * I przyozdobił go.
-V. Szatą chwały przyodział go.
-R. I przyozdobił go.
-&Gloria
-R. Umiłował go Pan, * I przyozdobił go.
-_
-V. Obrał go Pan kapłanem sobie.
-R. Aby Mu złożył ofiarę chwały.
-
-[Capitulum Sexta]
-!Syr 44:20; 44:22
-v. Nie jest nalezion jemu podobien, który zachował Zakon Nawyższego: przetoż pod przysięgą dał mu Pan rozmnożyć się w narodzie swoim.
-$Deo gratias
-
-[Responsory Sexta]
-R.br. Obrał go Pan * Kapłanem sobie.
-R. Obrał go Pan * Kapłanem sobie.
-V. Aby Mu złożył ofiarę chwały.
-R. Kapłanem sobie.
-&Gloria
-R. Obrał go Pan * Kapłanem sobie.
-_
-V. Tyś jest kapłanem na wieki.
-R. Według obrządku Melchizedeka.
-
-[Capitulum Nona]
-!Syr 45:19-20
-v. Aby sprawował urząd kapłański i miał urząd chwalenia w imię Jego, i ofiarował Mu kadzenie godne jako dobrą wonność.
-$Deo gratias
-
-[Responsory Nona]
-R.br. Tyś jest kapłanem * Na wieki.
-R. Tyś jest kapłanem * Na wieki.
-V. Według obrządku Melchizedeka.
-R. Na wieki.
-&Gloria
-R. Tyś jest kapłanem * Na wieki.
-_
-V. Sprawiedliwego prowadził Pan drogami prostymi.
-R. I okazał mu królestwo Boże.
-
-[Versum 3]
-V. Sprawiedliwego prowadził Pan drogami prostymi.
-R. I okazał mu królestwo Boże.
-
-[Ant 3]
-O Doktorze najlepszy, * światłości Kościoła świętego, błogosławiony N., miłośniku prawa Bożego, błagaj za nami Syna Bożego.
