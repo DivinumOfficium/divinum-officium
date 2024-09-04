@@ -1,8 +1,5 @@
 @CommuneM/C5
 
-[Name]
-Commune Doctorum non Pontificis
-
 [Ant 1]
 @Commune/C4a
 
@@ -50,17 +47,17 @@ Commune Doctorum non Pontificis
 @Commune/C4a
 
 [Lectio9 in 2 loco]
-@Commune/C4a:Lectio7:s/ Sal est .*//s
+@Commune/C4a:Lectio7 in 2 loco:s/ Sal est .*//s
 
 [Lectio10 in 2 loco]
-@Commune/C4a:Lectio7:s/.* Sal est /Sal est /s s/$/~/s
-@Commune/C4a:Lectio8:s/ Apóstoli .*//s
+@Commune/C4a:Lectio7 in 2 loco:s/.* Sal est /Sal est /s s/$/~/s
+@Commune/C4a:Lectio8 in 2 loco:s/ Apóstoli .*//s
 
 [Lectio11 in 2 loco]
-@Commune/C4a:Lectio8:s/.* Apóstoli /Apóstoli /s 
+@Commune/C4a:Lectio8 in 2 loco:s/.* Apóstoli /Apóstoli /s
 
 [Lectio12 in 2 loco]
-@Commune/C4a:Lectio9
+@Commune/C4a:Lectio9 in 2 loco
 
 [Lectio9 in 3 loco]
 @Commune/C4a:Lectio7 in 3 loco
@@ -74,4 +71,3 @@ Commune Doctorum non Pontificis
 
 [Lectio12 in 3 loco]
 @Commune/C4a:Lectio9 in 3 loco:s/.* Non ergo /Non ergo /s
-

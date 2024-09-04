@@ -1,64 +1,28 @@
+@Commune/C4
+
 [Name]
 Commúne Confessóris non Pontíficis
 
 [Rule]
 Psalmi Dominica
 Antiphonas horas
+Psalm5 Vespera=116
 
 [Ant Vespera]
-Dómine, quinque talénta * tradidísti mihi, ecce ália quinque superlucrátus sum.;;109
-Euge, serve bone * in módico fidélis, intra in gáudium Dómini tui.;;110
-Fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam.;;111
-Beátus ille servus, * quem, cum vénerit Dóminus ejus et pulsáverit jánuam, invénerit vigilántem.;;112
-Serve bone * et fidélis, intra in gáudium Dómini tui.;;116
-
-[HymnusM Vespera]
-@Commune/C4:HymnusM Vespera
-
-[Hymnus Vespera]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1M Vespera]
-@Commune/C4:Hymnus1M Vespera
-
-[Hymnus1 Vespera]
-@Commune/C4:Hymnus1 Vespera
-
-[Versum 1]
-@Commune/C4
+Dómine, quinque talénta * tradidísti mihi, ecce ália quinque superlucrátus sum.
+Euge, serve bone * in módico fidélis, intra in gáudium Dómini tui.
+Fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam.
+Beátus ille servus, * quem, cum vénerit Dóminus ejus et pulsáverit jánuam, invénerit vigilántem.
+Serve bone * et fidélis, intra in gáudium Dómini tui.
 
 [Ant 1]
 Similabo eum * viro sapienti, qui ædificávit domum suam supra petram.
 
-[Invit]
-@Commune/C4
-
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
-
-[HymnusM Matutinum]
-@Commune/C4:HymnusM Vespera
-
-[Hymnus1M Matutinum]
-@Commune/C4:Hymnus1M Vespera
-
 [Ant Matutinum]
-Beátus vir, * qui in lege Dómini meditatur: volúntas ejus pérmanet die ac nocte, et ómnia quæcúmque fáciet, semper prosperabúntur.;;1
-Beátus iste Sanctus, * qui confísus est in Dómino, prædicávit præcéptum Dómini, constitútus est in monte sancto ejus.;;2
-Tu es glória mea, * tu es suscéptor meus, Dómine: tu exáltans caput meum, et exaudísti me de monte sancto tuo.;;3
-V. Amávit eum Dóminus, et ornávit eum.
-R. Stolam glóriæ índuit eum.
-Invocántem * exaudívit Dóminus Sanctum suum, Dóminus exaudívit eum, et constítuit eum in pace.;;4
-Læténtur omnes, * qui sperant in te, Dómine: quóniam tu benedixísti justo, scuto bonæ voluntátis tuæ coronásti eum.;;5
-Dómine, Dóminus noster, * quam admirábile est nomen tuum in univérsa terra! quia glória et honóre coronásti Sanctum tuum, et constituísti eum super ópera mánuum tuárum.;;8
+@Commune/C4::1-8
 V. Os justi meditábitur sapiéntiam.
 R. Et lingua ejus loquétur judícium.
-Dómine, * iste Sanctus habitábit in tabernáculo tuo, operátus est justítiam, requiéscet in monte sancto tuo.;;14
-Vitam pétiit * a te, et tribuísti ei, Dómine: glóriam et magnum decórem imposuísti super eum: posuísti in cápite ejus corónam de lápide pretióso.;;20
-Hic accípiet * benedictiónem a Dómino, et misericórdiam a Deo salutári suo: quia hæc est generátio quæréntium Dóminum.;;23
+@Commune/C4::11-13
 V. Lex Dei ejus in corde ipsíus.
 R. Et non supplantabúntur gressus ejus.
 
@@ -69,9 +33,6 @@ De libro Ecclesiástici
 9 Quis est hic? et laudábimus eum: fecit enim mirabília in vita sua.
 10 Qui probátus est in illo, et perféctus est, erit illi glória ætérna: Qui pótuit tránsgredi, et non est transgréssus; fácere mala, et non fecit:
 11 ídeo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum.
-
-[Responsory1]
-@Commune/C4
 
 [Lectio2]
 !Sir 32:18-20; 32:28; 33:1-3
@@ -156,19 +117,12 @@ R. Ipse intercédat pro peccátis ómnium populórum.
 [Lectio8]
 Duo autem sunt, quæ jubéntur, et lumbos restríngere, et lucérnas tenére: ut et mundítia sit castitátis in córpore, et lumen veritátis in operatióne. Redemptóri étenim nostro unum sine áltero placére nequáquam potest: si aut is qui bona agit, adhuc luxúriæ inquinaménta non déserit: aut is qui castitáte præéminet, necdum se per bona ópera exércet. Nec cástitas ergo magna est sine bono ópere, nec opus bonum est áliquod sine castitáte. Sed et si utrúmque ágitur, restat, ut quisquis ille est, spe ad supérnam pátriam tendat, et nequáquam se a vítiis pro mundi hujus honestáte contíneat.
 
-[Responsory8]
-@Commune/C4
-
 [Lectio9]
 Et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis: ut cum vénerit et pulsáverit, conféstim apériant ei. Venit quippe Dóminus, cum ad judícium próperat: pulsat vero, cum jam per ægritúdinis moléstias esse mortem vicínam desígnat. Cui conféstim aperímus, si hunc cum amóre suscípimus. Aperíre enim júdici pulsánti non vult, qui exíre de córpore trépidat: et vidére eum, quem contempsísse se méminit, júdicem formídat. Qui autem de sua spe et operatióne secúrus est, pulsanti conféstim áperit, quia lætus júdicem sústinet; et, cum tempus propínquæ mortis advénerit, de glória retributiónis hilaréscit.
 &teDeum
 
 [Ant Laudes]
-Dómine, quinque talénta * tradidísti mihi, ecce ália quinque superlucrátus sum.
-Euge, serve bone * in módico fidélis, intra in gáudium Dómini tui.
-Fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam.
-Beátus ille servus, * quem, cum vénerit Dóminus ejus et pulsáverit jánuam, invénerit vigilántem.
-Serve bone * et fidélis, intra in gáudium Dómini tui.
+@:Ant Vespera
 
 [Capitulum Laudes]
 !Sir 31:8-9
@@ -259,9 +213,6 @@ Sanctóque sit Paráclito,
 Per omne semper sǽculum.
 Amen.
 
-[Versum 2]
-@Commune/C4
-
 [Ant 2]
 Euge, serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, intra in gáudium Dómini tui.
 
@@ -271,6 +222,10 @@ $Per Dominum.
 
 [Oratio1]
 Intercéssio nos, quǽsumus, Dómine, beáti N. Abbátis comméndet: ut, quod nostris méritis non valémus, ejus patrocínio assequámur.
+$Per Dominum.
+
+[Oratio2]
+Adésto, Dómine, supplicatiónibus nostris, quas in beáti N. Confessóris tui solemnitáte deférimus: ut, qui nostræ justítiæ fidúciam non habémus, ejus, qui tibi plácuit, précibus adjuvémur.
 $Per Dominum.
 
 [Lectio Prima]
@@ -335,7 +290,7 @@ De libro Sapiéntiæ
 11 Raptus est, ne malítia mutaret intelléctum ejus, aut ne fictio deciperet ánimam illíus.
 12 Fascinatio enim nugacitatis obscurat bona, et inconstantia concupiscéntiæ transvertit sensum sine malítia.
 13 Consummátus in brevi, explévit témpora multa;
-14 placita enim erat Deo ánima illíus: propter hoc properavit edúcere illum de médio iniquitátum. 
+14 placita enim erat Deo ánima illíus: propter hoc properavit edúcere illum de médio iniquitátum.
 
 [Lectio2 in 2 loco]
 !Sap 4:14-19

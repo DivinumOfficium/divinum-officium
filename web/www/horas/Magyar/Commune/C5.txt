@@ -1,53 +1,18 @@
-[Name]
-Commune confessoris non pontificis
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
 [Ant Vespera]
-Uram, öt talentumot adtál * nézd, másik ötöt nyertem rajta;;109
-Jól van, te hűséges, derék szolga * minthogy a kevésben hű voltál, menj be urad örömébe!;;110
-Hű és okos szolga * akit ura háza népe fölé rendelt;;111
-Boldog az a szolga * akit ura amikor megerkezik és kinyitja a kaput munkában talál;;112
-Jól van, te hűséges, derék szolga * menj be urad örömébe!;;116
-
-[Hymnus1 Vespera]
-@Commune/C4:Hymnus1 Vespera
-
-[Hymnus Vespera]
-@Commune/C4:Hymnus Vespera
-
-[Versum 1]
-V. Szerette az Úr és felékesitette őt
-R. A dicsőség ruhájába öltöztette
+Uram, öt talentumot adtál * nézd, másik ötöt nyertem rajta.
+Jól van, te hűséges, derék szolga * minthogy a kevésben hű voltál, menj be urad örömébe!
+Hű és okos szolga * akit ura háza népe fölé rendelt,
+Boldog az a szolga * akit ura amikor megerkezik és kinyitja a kaput munkában talál.
+Jól van, te hűséges, derék szolga * menj be urad örömébe!
 
 [Ant 1]
 Ő az okos ember * aki sziklára építette a házát.
 
-[Invit]
-Az Úr a hitvallók királya * jöjjetek imádjuk
-
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
-
 [Ant Matutinum]
-Boldog aki * örömét leli Isten törvényében, s parancsairól elmélkedik nappal és éjjel, siker koronázza minden tettét;;1
-Boldog a szent * aki az Úrban bízik és az Ő törvényét hirdeti, a szent hegyen van a lakóhelye;;2
-Te vagy a dicsóségem * és védőpajzsom Uram, csüggedt fejem felemeled, meghallgattál szent hegyedről;;3
-V. Szerette az Úr és felékesítette
-R. A dicsőség ruháiba öltöztette
-Az Úr meghallgatja * azt aki hívja Őt, meghallgatja és békességet ad neki;;4
-Örvendezzenek * akik az Úrban bíznak, az Úr megáldja az igazat, kegyelme védőpajzsként borul feléje, és megkoronázza őt;;5
-Uram, mi Urunk * milyen csodálatos széles e világon a te neved! dicsőséggel, tisztességgel koszorúztad, hatalmat adtál neki kezed műve fölött, mindent lába alá vetettél;;8
+@Commune/C4::1-8
 V. Az igaznak szája bölcsességet szól
 R. Nyelve azt hirdeti, ami helyes`.
-Uram * a szent sátraidban időzhet, az igazat cselekszi és megnyugszik szent hegyeden;;14
-Életet kért tőled * és megadtad neki Urunk, fönséggel és dicsőséggel övezted, dragakőből keszült koronával koronáztad meg;;20
-Az Úr az ilyet magáldja * Istenétől, gyámolától megkapja jutalmát, mert nemzetsege Istent keresi;;23
+@Commune/C4::11-13
 V. Istennek törvényét a szívében hordozza
 R. Ezért lépései nem ingadozók.
 
@@ -83,6 +48,7 @@ Evangélium szent Lukács Evangélista kőnyvéből
 !Luke 12:35-40
 Azon időben így szólt Jézus tanítványaihoz: Csípőtök legyen felövezve és égjen a lámpásotok. És így tovább
 _
+
 [Ant Laudes]
 Uram, öt talentumot adtál * nézd, másik ötöt nyertem rajta.
 Jól van, te hűséges, derék szolga * minthogy a kevésben hű voltál, menj be urad örömébe!
@@ -137,10 +103,6 @@ _
 Most és örök időkön át.
 Ámen.
 
-[Versum 2]
-V. Az igazat Isten egyenes utakon vezeti
-R. Megmutatja neki Isten országát
-
 [Ant 2]
 Jól van, te hűséges, derék szolga * minthogy a kevésben hű voltál, sokat bízok rád: menj be urad örömébe!
 
@@ -179,11 +141,6 @@ _
 V. Istennek törvényét a szívében hordozza
 R. Ezért lépései nem ingadozók.
 
-[Capitulum Nona]
-!Wis 10:10
-v. Az Úr vezette az igazat egyenes utakon, megmutatta neki Isten országát és szent dolgokkal ismertette meg, nehéz munkájában jóléthez segítette, és fáradozásait bőséggel jutalmazta.
-$Deo gratias
-
 [Responsory Nona]
 R.br. Istennek törvényét a szívében hordozza
 R. Istennek törvényét a szívében hordozza
@@ -192,10 +149,6 @@ R. Szívében hordozza
 &Gloria
 R. Istennek törvényét a szívében hordozza
 _
-V. Az igazat az Úr egyenes utakon vezeti
-R. Megmutatja neki Isten országát
-
-[Versum 3]
 V. Az igazat az Úr egyenes utakon vezeti
 R. Megmutatja neki Isten országát
 
@@ -230,7 +183,7 @@ Olvasmány a Bölcsesség könyvéből
 1 Akkor az igaz teljes biztonsággal áll szemben azokkal, akik sanyargatták, és lebecsülték a fáradozását.
 2 Amikor ezt látják, iszonyú félelem fogja el őket, és nem tudnak hová lenni; annak nem várt üdvössége miatt.
 3 Bánkódva szólnak egymáshoz, és sóhajtoznak lelkük félelmében:
-4 "Ez az, akit egykor kinevettünk és akiből gúnyt űztünk. Mi esztelenek! Életmódját őrültségnek tartottuk és halálát dicstelennek.
+4 „Ez az, akit egykor kinevettünk és akiből gúnyt űztünk. Mi esztelenek! Életmódját őrültségnek tartottuk és halálát dicstelennek.
 5 Hogy lehet az, hogy Isten fiai közé sorolták és a szentek között van az osztályrésze?
 
 [Lectio7 in 2 loco]
@@ -238,7 +191,15 @@ Evangélium szent Lukács Evangélista kőnyvéből
 !Luke 12:32-35
 Ne félj, te kisded nyáj, hisz Atyátok úgy látta jónak, hogy nektek adja országát. És így tovább
 _
+Homily by the Venerable Bede, Priest at Jarrow, and Doctor of the Church.
+!Bk. iv. Ch. 54 on Luke xii.
+The elect are called a little flock, perchance because the reprobate are far more in number than they, but, more probably, because they love to be lowly, since it is God's will that however much His Church should grow in numbers, she should grow with lowliness even unto the end of the world, and should enter lowly into that kingdom which is hers by His promise. That kingdom He promiseth to her here, when He biddeth her to seek only the kingdom of God, and, to comfort her in her travail, He doth so sweetly and so graciously say that her Father will give it to her.
+
 [Lectio7 in 3 loco]
 Evangélium szent Lukács Evangélista kőnyvéből
 !Luke 19:12-25
 Azon időben Jézus ezt a példabeszédet mondta tanitványainak: Egy főember kezdte messze földre indult, hogy királyságot szerezzen magának, s aztán visszatérjen. És így tovább.
+_
+Homily by St. Ambrose, Bishop (of Milan.)
+!Book viii. on Luke.
+It is well ordered that, being about to call the Gentiles, and to command the destruction of those Jews, who would not have Christ to reign over them, He should put forth first this parable; lest it should be said He had given the Jews no means of becoming better. How can they be asked to repay who have received nothing? That is not a piece of silver of little worth, which, when the woman before mentioned in this Gospel (xv. 8) hath lost, she lighteth a candle, and sweepeth the house, and searcheth diligently until she findeth it.

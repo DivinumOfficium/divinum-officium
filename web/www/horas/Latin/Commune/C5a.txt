@@ -1,177 +1,49 @@
-[Name]
-Commune Doctore non Pontificis
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
-[Ant Vespera]
 @Commune/C5
 
-[Hymnus1 Vespera]
-@Commune/C4:Hymnus1 Vespera
-
-[Hymnus Vespera]
-@Commune/C4:Hymnus Vespera
-
-[Versum 1]
-@Commune/C4
+[Name]
+Commune Doctore non Pontificis
 
 [Ant 1]
 @Commune/C4a
 
-[Invit]
-@Commune/C4
-
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
-
-[HymnusM Matutinum]
-@Commune/C4:HymnusM Vespera
-
-[Hymnus1M Matutinum]
-@Commune/C4:Hymnus1M Vespera
-
-[Ant Matutinum]
-Beátus vir, * qui in lege Dómini meditátur: volúntas ejus pérmanet die ac nocte, et ómnia quæcúmque fáciet, semper prosperabúntur.;;1
-Beátus iste Sanctus, * qui confísus est in Dómino, prædicávit præcéptum Dómini, constitútus est in monte sancto ejus.;;2
-Tu es glória mea, * tu es suscéptor meus, Dómine; tu exáltans caput meum, et exaudísti me de monte sancto tuo.;;3
-V. Amávit eum Dóminus, et ornávit eum.
-R. Stolam glóriæ induit eum.
-Invocántem * exaudívit Dóminus Sanctum suum; Dóminus exaudívit eum, et constítuit eum in pace.;;4
-Læténtur omnes * qui sperant in te, Dómine; quóniam tu benedixísti justo, scuto bonæ voluntátis tuæ coronásti eum.;;5
-Dómine, Dóminus noster, * quam admirábile est nomen tuum in univérsa terra! quia glória et honóre coronásti Sanctum tuum, et constituísti eum super ópera mánuum tuarum.;;8
-V. Os justi meditábitur sapiéntiam.
-R. Et lingua ejus loquétur judícium.
-Dómine, * iste Sanctus habitábit in tabernáculo tuo, operátus est justítiam, requiéscet in monte sancto tuo.;;14
-Vitam pétiit * a te, et tribuísti ei, Dómine: glóriam et magnum decórem imposuísti super eum; posuísti in cápite ejus corónam de lápide pretióso.;;20
-Hic accípiet * benedictiónem a Dómino, et misericórdiam a Deo salutári suo: quia hæc est generátio quæréntium Dóminum.;;23
-V. Lex Dei ejus in corde ipsíus.
-R. Et non supplantabúntur gressus ejus.
-
 [Lectio1]
 @Commune/C4a
-
-[Responsory1]
-@Commune/C4
 
 [Lectio2]
 @Commune/C4a
 
-[Responsory2]
-@Commune/C5
-
 [Lectio3]
 @Commune/C4a
 
-[Responsory3]
-@Commune/C5
-
 [Lectio4]
-@Commune/C5
-
-[Responsory4]
-@Commune/C5
+@Commune/C4a
 
 [Lectio5]
-@Commune/C5
-
-[Responsory5]
-@Commune/C5
+@Commune/C4a
 
 [Lectio6]
-@Commune/C5
-
-[Responsory6]
-@Commune/C5
+@Commune/C4a
 
 [Lectio7]
-@Commune/C5
-
-[Responsory7]
-@Commune/C4:Responsory7 in 4 loco
+@Commune/C4a
 
 [Lectio8]
-@Commune/C5
+@Commune/C4a
 
 [Responsory8]
-@Commune/C4
+@Commune/C4a
 
 [Lectio9]
-@Commune/C5
-
-[Ant Laudes]
-@Commune/C5
-
-[Capitulum Laudes]
-@Commune/C5
-
-[Hymnus Laudes]
-@Commune/C5
-
-[Versum 2]
-@Commune/C4
-
-[Ant 2]
-@Commune/C5
+@Commune/C4a
 
 [Oratio]
-@Commune/C5
+@Commune/C4:Oratio2
 
-[Lectio Prima]
-@Commune/C5
-
-[Responsory Tertia]
-@Commune/C5
-
-[Capitulum Sexta]
-@Commune/C5
-
-[Responsory Sexta]
-@Commune/C5
-
-[Capitulum Nona]
-@Commune/C5
-
-[Responsory Nona]
-@Commune/C5
-
-[Versum 3]
-@:Versum 2
+[Oratio3]
+@Commune/C5:Oratio
 
 [Ant 3]
 @:Ant 1
-
-[Lectio1 in 2 loco]
-@Commune/C5
-
-[Lectio2 in 2 loco]
-@Commune/C5
-
-[Lectio3 in 2 loco]
-@Commune/C5
-
-[Lectio7 in 2 loco]
-@Commune/C5
-
-[Lectio8 in 2 loco]
-@Commune/C5
-
-[Lectio9 in 2 loco]
-@Commune/C5
-
-[Lectio7 in 3 loco]
-@Commune/C5
-
-[Lectio8 in 3 loco]
-@Commune/C5
-
-[Lectio9 in 3 loco]
-Et hic possumus decem mnas decem verba intelligere, id est, legis doctrinam; quinque autem mnas, magisteria disciplinae. Sed legisperitum in omnibus volo esse perfectum; non enim in sermone, sed in virtute est regnum Dei. Bene autem, quia de Judaeis dicit, duo soli multiplicatam pecuniam deferunt, non utique aeris, sed dispensationis usuris. Alia est enim pecuniae foenebris, alia doctrinae caelestis usura.
-&teDeum
 
 [Lectio7 in 4 loco]
 Lectio sancti Evangelii secundum Matthæum

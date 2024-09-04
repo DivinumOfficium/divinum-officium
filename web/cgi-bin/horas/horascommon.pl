@@ -962,6 +962,19 @@ sub concurrence {
           : (exists($commune2{'Ant Vespera 3'})) ? $commune2{'Ant Vespera 3'}
           : (exists($commune2{'Ant Vespera'})) ? $commune2{'Ant Vespera'}
           : '';
+
+        if (
+             $winner{Rule} !~ /no Psalm5/i
+          && $version !~ /monastic/i
+          && ( $winner{Rule} =~ /Psalm5 Vespera3=([0-9]+)/i
+            || $commune{Rule} =~ /Psalm5 Vespera3=([0-9]+)/i
+            || $winner{Rule} =~ /Psalm5 Vespera=([0-9]+)/i
+            || $commune{Rule} =~ /Psalm5 Vespera=([0-9]+)/i)
+        ) {
+          #	Hi-jacking an "unused" 6th line to pass on Psalm5 Vespera information to psalmi.pl
+          $antecapitulum .= "\nPsalm5 VesperaAnte=$1";
+        }
+
       }
       $vespera = 1;
       $cvespera = 3;

@@ -1,18 +1,12 @@
 [Name]
-Commune Confessoris Pontificis
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
+Commune eines Bekenners und Bischofs
 
 [Ant Vespera]
-Seht, ein erhabener Priester, * der während seines Lebens Gott gefallen und als rechter Gottesdiener gegolten hat.;;109
-Es gab keinen, * der ihm ähnlich gewesen wäre in der Beobachtung des göttlichen Gebotes.;;110
-Darum hat ihn in Erfüllung eines Eides * Gott immer größer werden lassen in seinem Volke.;;111
-Ihr Priester des Herrn, * preiset den Herrn auf ewig, alleluja.;;112
-Du guter Diener, * und so getreu, gehe ein in das Freudengemach deines Herrn.;;116
+Seht, ein erhabener Priester, * der während seines Lebens Gott gefallen und als rechter Gottesdiener gegolten hat.
+Es gab keinen, * der ihm ähnlich gewesen wäre in der Beobachtung des göttlichen Gebotes.
+Darum hat ihn in Erfüllung eines Eides * Gott immer größer werden lassen in seinem Volke.
+Ihr Priester des Herrn, * preiset den Herrn auf ewig, alleluja.
+Du guter Diener, * und so getreu, gehe ein in das Freudengemach deines Herrn.
 
 [Hymnus Vespera]
 {:H-Isteconfessor:}v. Heil dem Bekenner, den wir heut besingen,
@@ -77,12 +71,6 @@ O du Hohepriester und Bischof * und Wirker großer Werke, o du guter Hirt für d
 
 [Invit]
 Den Herrn, den König der Bekenner, * Kommt, ihn wollen wir anbeten.
-
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
 
 [Ant Matutinum]
 Glückselig ist der Mensch, * der allzeit um Gottes Gesetz besorgt ist, dessen Willen also bleibt bei Nacht und Tage, und alles, was er unternimmt, hat guten Fortgang.;;1
@@ -163,17 +151,11 @@ R. Ich habe David ausgesucht mir, meinen Diener, und ihr gesalbt mit meinem Öle
 V. Nicht soll dem Feinde gegen ihn gelingen und keine Frevlerbrut ihm jemals Schaden antun.
 R. Denn meine Hand dient ihm als Stärkung.
 
-[Lectio5]
-Quidquid igitur in hac sancta plebe potest esse virtutis et gratiae, de hoc quasi quodam fonte lucidissimo omnium rivulorum puritas emanavit. Etenim quia castitatis pollebat vigore, quia abstinentiae gloriabatur angustiis, quia blandimentis erat praeditus lenitatis, omnium civium in Deum provocavit affectum: quia Pontificis administratione fulgebat, plures e discipulis reliquit sui sacerdotii successores.
-
 [Responsory5]
 R. Ich schaff durch meinen Beistand einen starken Mann mir und ruhmreich mach ich den aus meinem Volk erwählten;
 * Denn meine Hand dient ihm als Stärkung.
 V. Ich habe David ausgesucht mir, meinen Diener, und ihr gesalbt mit meinem heiligen Öle.
 R. Denn meine Hand dient ihm als Stärkung.
-
-[Lectio6]
-Bene et congrue in hac die, quam nobis beati Patris nostri N. ad paradisum transitus exsultabilem reddit, praesentis Psalmi versiculum decantavimus In memoria aeterna erit justus. Digne enim in memoriam vertitur hominum, qui ad gaudium transiit Angelorum. Dicit sermo divinus: Ne laudes hominem in vita sua: tamquam si diceret: Lauda post vitam, magnifica post consummationem. Duplici enim ex causa utilius est hominum magis memoriae laudem dare, quam vitae; ut illo potissimum tempore merita sanctitatis extollas, quando nec laudantem adulatio movet, nec laudatum tentat elatio.
 
 [Responsory6]
 R. Das ist einer, der vor Gott große und tüchtige Werke vollbracht hat und von dessen Lehrtätigkeit die ganze Erde erfüllt ist.
@@ -213,13 +195,6 @@ R. Und verhaltet euch ähnlich wie die Leute, die auf ihren Herrn warten, wenn e
 Sed is, qui quinque talenta acceperat, alia quinque lucratus est: quia sunt nonnulli, qui etsi interna ac mystica penetrare nesciunt, pro intentione tamen supernae patriae docent recta quos possunt, de ipsis exterioribus, quae acceperunt, duplum talentum portant: dumque se a carnis petulantia, et a terrenarum rerum ambitu, atque a visibilium voluptate custodiunt, ab his etiam alios admonendo compescunt. Et sunt nonnulli, qui quasi duobus talentis ditati, intellectum atque operationem percipiunt, subtilia de internis intelligunt, mira in exterioribus operantur. Cumque et intelligendo et operando aliis praedicant, quasi duplicatum de negotio lucrum reportant.
 &teDeum
 
-[Ant Laudes]
-Seht, ein erhabener Priester, * der während seines Lebens Gott gefallen und als rechter Gottesdiener gegolten hat.
-Es gab keinen, * der ihm ähnlich gewesen wäre in der Beobachtung des göttlichen Gebotes.
-Darum hat ihn in Erfüllung eines Eides * Gott immer größer werden lassen in seinem Volke.
-Ihr Priester des Herrn, * preiset den Herrn auf ewig, alleluja.
-Du guter Diener, * und so getreu, gehe ein in das Freudengemach deines Herrn.
-
 [Capitulum Laudes]
 !Sir 44,16-17
 v. Seht da, ein erhabener Priester, der während seines Lebens Gott gefallen hat, und der zur Zeit der drohenden Strafe ein Werkzeug der Versöhnung geworden ist.
@@ -253,7 +228,7 @@ Jetzt und in alle Ewigkeit.
 Amen.
 
 [Versum 2]
-V. Seinen Diener führte der Herr auf rechten Wegen.
+V. Den Gerechten führte der Herr auf rechten Wegen.
 R. Und ließ das Gottesreich ihn sehen.
 
 [Ant 2]
@@ -310,11 +285,6 @@ _
 V. Du bist ein Priester auf ewig.
 R. Wie Melchisedech es vorgebildet.
 
-[Capitulum Nona]
-!Sir 45,19-20
-v. Er vermochte das Priesteramt zu verwalten und sich Lob zu verdienen bei seiner (Gottes) Majestät und ihr ein ihrer würdiges Opferbrennwerk darzubringen zu einem lieblichen Wohlgeruch.
-$Deo gratias
-
 [Responsory Nona]
 R.br. Du bist ein Priester * auf ewig.
 R. Du bist ein Priester * auf ewig.
@@ -332,44 +302,6 @@ Der Herr hat ihn geliebt * und hat ihn ausgezeichnet, ein herrliches Gewand hat 
 [Ant 3 summi Pontificis]
 Während er höchster Bischof war, * fürchtete er nichts auf Erden, sondern schritt in feierlicher Weise voran zum himmlischen Reiche.
 
-[Versum 3]
-V. Seinen Diener führte der Herr auf rechten Wegen.
-R. Und ließ das Gottesreich ihn sehen.
-
-[Lectio1 in 2 loco]
-De libro Ecclesiastici
-!Sir 44:1-5
-1 Laudémus viros gloriósos, et paréntes nostros in generatióne sua.
-2 Multam glóriam fecit Dóminus: magnificéntia sua a sǽculo.
-3 Dominántes in potestátibus suis, hómines magni virtúte et prudéntia sua prǽditi, nuntiántes in prophétis dignitátem prophetárum:
-4 et imperántes in præsénti pópulo, et virtúte prudéntiæ pópulis sanctíssima verba:
-5 in perítia sua requiréntes modos músicos, et narrántes cármina Scripturárum:
-
-[Lectio2 in 2 loco]
-!Sir 44:6-9
-6 Hómines dívites in virtúte, pulchritúdinis stúdium habéntes, pacificántes in dómibus suis.
-7 Omnes isti in generatiónibus gentis suæ glóriam adépti sunt, et in diébus suis habéntur in láudibus.
-8 Qui de illis nati sunt reliquérunt nomen narrándi laudes eórum.
-9 Et sunt quorum non est memória: periérunt quasi qui non fúerint: et nati sunt quasi non nati, et fílii ipsórum cum ipsis.
-
-[Lectio3 in 2 loco]
-!Sir 44:10-15
-10 Sed illi viri misericórdiæ sunt, quorum pietátes non defuérunt.
-11 Cum sémine eórum pérmanent bona:
-12 hæréditas sancta nepótes eórum, et in testaméntis stetit semen eórum:
-13 et fílii eórum propter illos usque in ætérnum manent: semen eórum et glória eórum non derelinquétur.
-14 Córpora ipsórum in pace sepúlta sunt, et nomen eórum vivit in generatiónem et generatiónem.
-15 Sapiéntiam ipsórum narrent pópuli, et laudem eórum núntiet ecclésia.
-
-[Lectio7 in 2 loco]
-Léctio sancti Evangélii secúndum Matthǽum
-!Matt 16:13-19
-In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? Et réliqua.
-_
-Homilía sancti Leónis Papæ
-!Sermo 2 in anniversario assumpt. suæ ante medium
-Cum, sicut evangélica lectióne reserátum est, interrogásset Dóminus discípulos, quem ipsum (multis divérsa opinántibus) créderent; respondissétque beátus Petrus, dicens: Tu es Christus Fílius Dei vivi; Dóminus ait: Beátus es, Simon Bar-Jona, quia caro et sanguis non revelávit tibi, sed Pater meus, qui in cælis est: et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam. Et tibi dabo claves regni cælórum: et quodcúmque ligáveris super terram, erit ligátum et in cælis: et quodcúmque sólveris super terram, erit solútum et in cælis. Manet ergo disposítio veritátis, et beátus Petrus, in accépta fortitúdine petræ persevérans, suscépta Ecclésiæ gubernácula non relíquit.
-
 [Lectio8 in 2 loco]
 In univérsa namque Ecclésia, Tu es Christus Fílius Dei vivi, quotídie Petrus dicit; et omnis lingua, quæ confitétur Dóminum, magistério hujus vocis imbúitur. Hæc fides diábolum vincit et captivórum ejus víncula dissólvit. Hæc érutos mundo, ínserit cælo, et portæ ínferi advérsus eam prævalére non possunt. Tanta enim divínitus soliditáte muníta est, ut eam neque hærética umquam corrúmpere právitas, nec pagána potúerit superáre perfídia. His ítaque modis, dilectíssimi, rationábile obséquio celebrétur hodiérna festívitas: ut in persóna humilitátis meæ ille intelligátur, ille honorétur, in quo et ómnium pastórum sollicitúdo, cum commendatárum sibi óvium custódia persevérat, et cujus étiam dígnitas in indígno heréde non déficit.
 
@@ -377,26 +309,8 @@ In univérsa namque Ecclésia, Tu es Christus Fílius Dei vivi, quotídie Petrus
 Cum ergo cohortatiónes nostras áuribus vestræ sanctitátis adhibémus, ipsum vobis, cujus vice fúngimur, loqui crédite: quia et illíus vos afféctu monémus, et non áliud vobis, quam quod dócuit, prædicámus; obsecrántes, ut succíncti lumbos mentis vestræ, castam et sóbriam vitam in Dei timóre ducátis. Coróna mea, sicut Apóstolus ait, et gáudium vos estis, si fides vestra, quæ ab inítio Evangélii in univérso mundo prædicáta est, in dilectióne et sanctitáte permánserit. Nam licet omnem Ecclésiam, quæ in toto est orbe terrárum, cunctis opórteat florére virtútibus; vos tamen præcípue inter céteros pópulos decet méritis pietátis excéllere, quos in ipsa apostólicæ petræ arce fundátos, et Dóminus noster Jesus Christus cum ómnibus redémit, et beátus Apóstolus Petrus præ ómnibus erudívit.
 &teDeum
 
-[Lectio7 in 4 loco]
-Léctio sancti Evangélii secúndum Matthǽum
-!Matt 19:27-29
-In illo tempore: Dixit Petrus ad Jesum: Ecce nos reliquimus omnia, et secuti sumus te: quid ergo erit nobis? Et reliqua. 
-_
-De Homilía venerábilis Bedæ Presbýteri
-!In Natali S. Benedicti
-Duo sunt ordines electorum in judicio futuri: unus judicantium cum Domino, de quibus hoc loco memorat, qui reliquerunt omnia, et secuti sunt illum: alius judicandorum a Domino, qui non quidem omnia sua pariter reliquerunt, sed de his tamen quae habebant, quotidianas dare eleemosynas Christi pauperibus curabant: unde et audituri sunt in judicio: Venite benedicti Patris mei, possidete praeparatum vobis regnum a constitutione mundi. Esurivi enim, et dedistis mihi manducare: sitivi, et dedistis mihi bibere.
-
-[Responsory7 in 4 loco]
-R. Iste est qui ante Deum magnas virtutes operatus est, et de omni corde suo laudavit Dominum:
-* Ipse intercedat pro peccatis omnium populorum.
-V. Ecce homo sine querela, verus Dei cultor, abstinens se ab omni opere malo, et permanens in innocentia sua.
-R. Ipse intercedat pro peccatis omnium populorum.
-
 [Lectio8 in 4 loco]
 Sed et reproborum duos ibi futuros ordines Domino narrante comperimus: unum eorum, qui fidei christianae mysteriis initiati, opera fidei exercere contemnunt, quibus in judicio testatur: Discedite a me maledicti in ignem aeternum, qui praeparatus est diabolo, et angelis ejus: esurivi enim, et non dedistis mihi manducare. Alterum eorum, qui fidem et mysteria Christi vel numquam suscepere, vel susceptam per apostasiam deseruere: de quibus dicit: Qui autem non credit, jam judicatus est: quia non credit in nomine unigeniti Filii Dei.
-
-[Responsory8 in 4 loco]
-@:Responsory8
 
 [Lectio9 in 4 loco]
 Verum his cum timore et pavore debito paulisper commemoratis, ad laetissima potius Domini et Salvatoris nostri promissa convertamus auditum. Videamus quae tantae gratia pietatis: non aeternae tantummodo vitae praemia suis sequacibus, sed et praesentis munera pollicetur eximia. Et omnis, inquit, qui reliquerit domum, vel fratres, aut sorores, aut patrem, aut matrem, aut uxorem, aut filios, aut agros, propter nomen meum, centuplum accipiet, et vitam aeternam possidebit. Qui enim terrenis affectibus sive possessionibus pro Christi discipulatu renuntiaverit, quo plus in ejus amórem profecerit, eo plures inveniet, qui se interno suscipere affectu, et suis gaudeant sustentare substantiis.

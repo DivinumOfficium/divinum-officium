@@ -1,54 +1,20 @@
-[Name]
-Commúne Confessóris non Pontíficis
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
 [Ant Vespera]
-Señor, cinco talentos * me dejaste; mira, otros cinco talentos he ganado.;;109
-Bien, siervo bueno * y fiel: en lo poco has sido fiel, pasa al banquete de tu Señor.;;110
-Este es el criado fiel * y solícito, a quien el Señor ha puesto al frente de su servidumbre.;;111
-Dichoso el criado * a quien su señor, al llegar y llamar a la puerta, lo encuentra velando.;;112
-Siervo bueno * y fiel, pasa al banquete de tu Señor.;;116
-
-[Hymnus1 Vespera]
-@Commune/C4:Hymnus1 Vespera
-
-[Hymnus Vespera]
-@Commune/C4:Hymnus Vespera
-
-[Versum 1]
-@Commune/C4
+Señor, cinco talentos * me dejaste; mira, otros cinco talentos he ganado.
+Bien, siervo bueno * y fiel: en lo poco has sido fiel, pasa al banquete de tu Señor.
+Este es el criado fiel * y solícito, a quien el Señor ha puesto al frente de su servidumbre.
+Dichoso el criado * a quien su señor, al llegar y llamar a la puerta, lo encuentra velando.
+Siervo bueno * y fiel, pasa al banquete de tu Señor.
 
 [Ant 1]
 Él se parece * a un hombre sensato que cimentó su casa en roca. 
 
-[Invit]
-@Commune/C4
-
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
-
 [Ant Matutinum]
-Dichoso aquel varón, * que medita en la ley del Señor; su voluntad es fiel constantemente, y todas sus obras siempre prosperarán.;;1
-Dichoso este Santo, * que ha confiado en el Señor, publicó sus preceptos, y fue constituido en su santo monte.;;2
-Tú eres, Señor, mi gloria, * el que me has recibido; Tú me has exaltado, y me oíste desde tu santo monte.;;3
-V. El Señor le amó y le honró.
-R. Le vistió con vestiduras de gloria.
-El Señor ha oído a su Santo que le invocaba; * le oyó y constituyó en la paz.;;4
-Alégrense todos, * los que en ti esperan, Señor; porque Tú has bendecido al justo; le esforzaste con el escudo de la buena voluntad.;;5
-Oh Señor, Dueño nuestro, * ¡cuán admirable es tu santo nombre en toda la redondez de la tierra! porque has coronado de gloria y honor a tu Santo, y le constituiste sobre las obras de tus manos.;;8
+@Commune/C4::1-8
 V. La boca del justo derramará sabiduría. 
 R. Y su lengua hablará juiciosamente.
-Señor, * este Santo habitará en tu templo; ha practicado la justicia y morará en tu monte santo.;;14
-Te pidió la vida, * y Tú, Señor, se la has concedido; le revestiste de una gran gloria y esplendor; pusiste sobre su frente una corona de piedras preciosas.;;20
-Este es * el que obtendrá la bendición del Señor; y la misericordia de Dios su Salvador, porque tal es el linaje de los que le buscan.;;23
+@Commune/C4::11-13
 V. La ley de su Dios la tiene en medio del corazón.  
-R. Y andará con firmes pasos. 
+R. Y andará con firmes pasos.
 
 [Lectio1]
 Del Libro del Eclesiástico
@@ -56,10 +22,7 @@ Del Libro del Eclesiástico
 8 Venturoso el varón irreprensible que fue hallado sin culpa, y no corre tras el oro, ni ambiciona el dinero ni los tesoros.
 9 ¿Quién es éste para que le alabemos porque hizo maravillas en su pueblo? 
 10 ¿Quién se apegó a aquel que tuviera salud y gloria? ¿Quién pudo prevaricar y no prevaricó, hacer el mal y no lo hizo? 
-11 Su dicha se consolidará, y la asamblea pregonará con alabanzas sus limosmas. 
-
-[Responsory1]
-@Commune/C4
+11 Su dicha se consolidará, y la asamblea pregonará con alabanzas sus limosmas.
 
 [Lectio2]
 !Sir 32, 18-20; 32, 28; 33, 1-3
@@ -69,7 +32,7 @@ Del Libro del Eclesiástico
 28 Quien atiende a la Ley guarda su alma, y quien confía en el Señor no sufrirá menoscabo. 
 1 Al que teme al Señor no le sobrevendrá la desgracia, y, si es puesto a prueba, el Señor le librará. 
 2 No es sabio quien no observa la Ley, y será agitado como nave en la tormenta. 
-3 El hombre sensato confía en la Ley, y la Ley es para él fidedigna como la respuesta de los “urim”. 
+3 El hombre sensato confía en la Ley, y la Ley es para él fidedigna como la respuesta de los “urim”.
 
 [Responsory2]
 R. El justo brotará como el lirio: 
@@ -85,7 +48,7 @@ R. Y florecerá eternamente ante el Señor.
 17 Dichosa el alma que teme al Señor. 
 18 ¿En quién se apoya y quién es su sostén? 
 19 Los ojos del Señor están puestos sobre los que le aman. Es su fuerte escudo, su apoyo poderoso, abrigo contra el solano, contra el ardor del mediodía. 
-20 Guarda contra el tropiezo, auxilio contra la caída. Eleva el alma y alumbra los ojos, da la salud, la vida y la bendición. 
+20 Guarda contra el tropiezo, auxilio contra la caída. Eleva el alma y alumbra los ojos, da la salud, la vida y la bendición.
 
 [Responsory3]
 R. Este conoció la justicia, vio grandes maravillas, y rogó al Altísimo: 
@@ -143,9 +106,6 @@ R. El mismo intercederá por los pecados de todos los pueblos.
 
 [Lectio8]
 Dos son las cosas que se nos ordenan, tener ceñidas las cinturas y encendidas las antorchas, de suerte que la pureza de la castidad reine en el cuerpo, y la luz de la verdad en las obras. Y ciertamente no es posible agradar a nuestro Redentor sin ambas cosas, es decir, que si aquel que obra bien, no deja el mal de la lujuria, o aquel que se distingue por la castidad no se ejercita con buenas obras, no le puede ser agradable en manera alguna. Por tanto, ni la castidad debe tenerse en mucho si no va acompañada de buenas obras, ni puede darse obra buena sin la castidad. Pero al que posee ambas, no le resta más que tender con la esperanza hacia la eterna patria, y tener cuidado, al abstenerse de los vicios, de no hacerlo movido por el honor de este mundo.
-
-[Responsory8]
-@Commune/C4
 
 [Lectio9]
 Y vosotros sed semejantes a los criados que aguardan a su amo cuando vuelve de las bodas, a fin de abrirle prontamente luego que llegue y llame a la puerta. Viene el Señor, en efecto, cuando se acerca para juzgarnos; llama, cuando mediante las molestias de las enfermedades muestra que la muerte está cercana. Le abrimos al instante, si le recibimos con amor. No quiere abrir al juez cuando llama, aquel que tiembla de abandonar el cuerpo, y se espanta de ver aquel juez al que recuerda haber despreciado. Mas el que está tranquilo, por su esperanza y obras, abre al instante al que llama, ya que alegremente aguarda al juez, y al acercarse el tiempo de la muerte, se goza con la gloria de la retribución.
@@ -205,9 +165,6 @@ con el Espíritu Santo,
 por siglos y eternamente.
 Amén.
 
-[Versum 2]
-@Commune/C4
-
 [Ant 2]
 Bien, siervo bueno * y fiel: en lo poco has sido fiel, te daré un cargo importante, pasa al banquete de tu Señor. 
 
@@ -250,10 +207,6 @@ _
 V. Lleva en el corazón la ley de su Dios. 
 R. Y sus pasos no vacilan.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
 [Responsory Nona]
 R.br. Lleva en el corazón * La ley de su Dios. 
 R. Lleva en el corazón * La ley de su Dios. 
@@ -264,9 +217,6 @@ R. Lleva en el corazón * La ley de su Dios.
 _
 V. El Señor condujo al justo por sendas llanas.
 R. Y le mostró el reino de Dios.
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 Este santo, despreciando el mundo * y los bienes de la tierra, acumuló con sus palabras y obras bienes para el cielo, donde él triunfa.
@@ -281,7 +231,7 @@ Del Libro de la Sabiduría
 11 Fue arrebatado porque la maldad no pervirtiese su inteligencia y el engaño no extraviase su alma. 
 12 Que la fascinación del vicio corrompe el bien, el vértigo de la pasión pervierte la mente sana. 
 13 Llegado en poco tiempo a la perfección, vivió una larga vida. 
-14 Pues su alma era grata al Señor; por esto se dio prisa a sacarle de en medio de la maldad. 
+14 Pues su alma era grata al Señor; por esto se dio prisa a sacarle de en medio de la maldad.
 
 [Lectio2 in 2 loco]
 !Sab 4:14-19
@@ -300,7 +250,7 @@ Del Libro de la Sabiduría
 2 Al verlo se turbarán con terrible espanto, y quedarán fuera de sí ante lo inesperado de aquella salud. 
 3 Arrepentidos, se dirán, gimiendo por la angustia de su espíritu: “Este es el que algún tiempo tomamos a risa y fue objeto de nuestro escarnio. 
 4 Nosotros, insensatos, tuvimos su vida por locura, y su fin por deshonra. 
-5 ¡Cómo son contados entre los hijos de Dios y tienen su heredad entre los santos! 
+5 ¡Cómo son contados entre los hijos de Dios y tienen su heredad entre los santos!
 
 [Lectio7 in 2 loco]
 Lectura del santo Evangelio según San Lucas

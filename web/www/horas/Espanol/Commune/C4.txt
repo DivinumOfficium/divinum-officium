@@ -1,12 +1,3 @@
-[Name]
-Commune Confessoris Pontificis
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
-
 [Ant Vespera]
 Este es el gran sacerdote * que agradó a Dios en su vida y fue hallado intachable.
 Nadie lo iguala * en la gloria de observar la ley del Altísimo. 
@@ -78,12 +69,6 @@ Sacerdote y pontífice, * que has practicado las virtudes; pastor bueno del pueb
 [Invit]
 Al Señor, Rey de los confesores, * Venid, adorémosle.
 
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
-
 [Ant Matutinum]
 Dichoso aquel varón, * que medita en la ley del Señor; su voluntad es fiel constantemente, y todas sus obras siempre prosperarán.;;1
 Dichoso este Santo, * que ha confiado en el Señor, publicó sus preceptos, y fue constituido en su santo monte.;;2
@@ -110,7 +95,7 @@ De la primera Epístola del Apóstol San Pablo a Timoteo
 4 que sepa gobernar bien su propia casa, que tenga los hijos en sujeción, con toda honestidad; 
 5 pues quien no sabe gobernar su casa, ¿cómo gobernará la Iglesia de Dios? 
 6 No neófito, no sea que, hinchado, venga a incurrir en el juicio del diablo. 
-7 Conviene asimismo que tenga buena fama ante los de fuera, porque no caiga en infamia y en las redes del diablo. 
+7 Conviene asimismo que tenga buena fama ante los de fuera, porque no caiga en infamia y en las redes del diablo.
 
 [Responsory1]
 R. Alégrate, siervo bueno y fiel, ya que has sido fiel en lo poco, te constituiré sobre lo mucho: 
@@ -125,7 +110,7 @@ De la Epístola del Apóstol San Pablo a Tito
 8 sino hospitalario, amador de los buenos, modesto, justo, santo, continente, 
 9 guardador de la palabra fiel; que se ajuste a la doctrina, de suerte que pueda exhortar con doctrina sana y argüir a los contradictores. 
 10 Porque hay muchos, indisciplinados, charlatanes, embaucadores, sobre todo los de la circuncisión, 
-11 a los cuales es preciso tapar la boca, que revuelven del todo las casas, enseñando lo que no deben, llevados del deseo de torpe ganancia. 
+11 a los cuales es preciso tapar la boca, que revuelven del todo las casas, enseñando lo que no deben, llevados del deseo de torpe ganancia.
 
 [Responsory2]
 R. He ahí el gran sacerdote, que en sus días agradó a Dios: 
@@ -142,7 +127,7 @@ R. Por esto el Señor, fiel a su juramento, le hizo crecer en su pueblo.
 5 a ser prudentes y honestas, hacendosas, bondadosas, dóciles a sus maridos, a fin de que no sea infamada la palabra de Dios. 
 6 Asimismo a los jóvenes exhórtales a ser ponderados en todo, 
 7 mostrándote tú ejemplo de buenas obras, de integridad en la doctrina, de gravedad, 
-8 de palabra sana e irreprensible, para que los adversarios se confundan, no teniendo nada malo que decir de nosotros. 
+8 de palabra sana e irreprensible, para que los adversarios se confundan, no teniendo nada malo que decir de nosotros.
 
 [Responsory3]
 R. El Señor ha jurado y no se arrepentirá: 
@@ -212,13 +197,6 @@ R. Sed semejantes a los criados que aguardan a su amo cuando vuelve de las bodas
 [Lectio9]
 Aquel que recibió cinco talentos, ganó otros cinco; ya que hay algunos que, si bien no saben entender las cosas internas y místicas, con todo, por el deseo de la patria eterna, instituyen en el bien a aquellos a quienes pueden enseñárselo. Al hacer valer los talentos externos que han recibido, aportan a su dueño un doble valor, pues, mientras se apartan ellos de los placeres de la carne, de la vanidad de las cosas terrenas y del placer de las visibles, con sus admoniciones apartan también de estas cosas a los demás. Y hay no pocos que, enriquecidos con dos talentos, reciben a la vez el don de la inteligencia y el de la acción; entienden lo más sutil de las ciencias más profundas, y ejercitan externamente cosas admirables, y así predicando a los demás con su ciencia y sus obras, reportan un doble lucro de su modo de proceder.
 &teDeum
-
-[Ant Laudes]
-Este es el gran sacerdote * que agradó a Dios en su vida y fue hallado intachable.
-Nadie lo iguala * en la gloria de observar la ley del Altísimo. 
-Por esto, Dios le juró * que su pueblo crecería. 
-Sacerdotes de Dios, * bendecid al Señor; siervos del Señor, cantad un himno a Dios. Aleluya.
-Siervo bueno * y fiel, pasa al banquete de tu Señor. 
 
 [Capitulum Laudes]
 !Sir 44:16-17
@@ -310,10 +288,6 @@ _
 V. Tú eres sacerdote eterno.
 R. Según el rito de Melquisedec.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
 [Responsory Nona]
 R.br. Tú eres sacerdote * Eterno. 
 R. Tú eres sacerdote * Eterno. 
@@ -324,9 +298,6 @@ R. Tú eres sacerdote * Eterno.
 _
 V. El Señor condujo al justo por sendas llanas.
 R. Y le mostró el reino de Dios.
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 El Señor lo amó * y lo enalteció: lo vistió con un traje de honor y lo coronó a la entrada del Paraíso.
@@ -384,17 +355,8 @@ Homilía de San Beda Venerable, Presbítero.
 !Homilía en el natalicio de San Benito.
 Dos son los órdenes de elegidos, que habrá en el juicio futuro: unos que juzgarán con el Señor, de quienes se hace mención en este lugar, que lo dejaron todo y le siguieron. El otro es el de los que han de ser juzgados por el Señor, los cuales, si bien es verdad que no lo dejaron todo, se servían, no obstante, de lo que tenían, para dar limosna cada día a los pobres de Cristo, por lo cual oirán en el juicio: Venid, benditos de mi Padre, poseed el reino que os está preparado desde el principio del mundo, pues tuve hambre, y me disteis de comer; tuve sed, y me disteis de beber.
 
-[Responsory7 in 4 loco]
-R. Este es el que ha realizado grandes obras ante Dios, y toda la tierra está llena de su doctrina. 
-* El mismo interceda por los pecados de todos los pueblos. 
-V. Este es el que ha despreciado la vida del siglo, y ha llegado a los reinos celestes. 
-R. El mismo interceda por los pecados de todos los pueblos. 
-
 [Lectio8 in 4 loco]
-Mas también habrá allí dos órdenes de réprobos, según nos dice el Señor: el primero de aquellos que, iniciados en los misterios de la fe cristiana, han menospreciado el ejercicio de las obras de la fe, a los cuales en el juicio se les dirá: “Apartaos de mí, malditos, al fuego eterno que está preparado para el diablo y sus ángeles; pues tuve hambre, y no me disteis de comer". El segundo es de aquellos que, o no recibieron jamás la fe y los misterios de Cristo, o habiéndolos recibido los abandonaron por la apostasía, de los cuales se dice: El que no cree, ya está juzgado, porque no cree en el nombre del Unigénito Hijo de Dios.
-
-[Responsory8 in 4 loco]
-@:Responsory8
+Mas también habrá allí dos órdenes de réprobos, según nos dice el Señor: el primero de aquellos que, iniciados en los misterios de la fe cristiana, han menospreciado el ejercicio de las obras de la fe, a los cuales en el juicio se les dirá: “Apartaos de mí, malditos, al fuego eterno que está preparado para el diablo y sus ángeles; pues tuve hambre, y no me disteis de comer”. El segundo es de aquellos que, o no recibieron jamás la fe y los misterios de Cristo, o habiéndolos recibido los abandonaron por la apostasía, de los cuales se dice: El que no cree, ya está juzgado, porque no cree en el nombre del Unigénito Hijo de Dios.
 
 [Lectio9 in 4 loco]
 Después de haber recordado todo esto con el debido temor y espanto, fijemos mejor nuestra atención en las agradabilísimas promesas de nuestro Señor y Salvador. Consideremos cuán grandes sean las manifestaciones de su bondad. No solamente promete premios eternos a los que le siguen, sino que también les obsequia con dones eximios en la vida presente. “Y todo aquel, dice, que dejare la casa, o los hermanos, o las hermanas, o el padre, o la madre, o los hijos, o las posesiones por mi nombre, recibirá el céntuplo, y poseerá la vida eterna”. En verdad, quien renunciare a los afectos o a las posesiones terrenas para ser discípulo de Jesucristo, por esta renuncia adelantará en su amor y encontrará para recibirle con profundo afecto y compartir con él sus bienes, más hermanos de los que haya dejado.

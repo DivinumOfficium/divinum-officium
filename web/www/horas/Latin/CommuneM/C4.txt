@@ -1,5 +1,9 @@
 @Commune/C4
 
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+
 [AntMatutinumM]
 Justus Dóminus * et justítiam diléxit: æquitátem vidit vultus ejus;;10
 Cognóvit eum Dóminus * in benedictiónibus suis, et invénit grátiam coram óculis Dómini;;95
@@ -124,18 +128,17 @@ R. Ad sacrificándum ei hóstiam laudis.
 @Commune/C4:Lectio3 in 2 loco:s/.*!/!/s s/10-/12-/ s/^10 .*12 /12 /sm
 
 [Lectio5 in 2 loco]
-Sermo sancti Maxími Epíscopi
-!Homilía 78, de S. Eusebio 2, circa medio
-Beáti Patris N. mérita, jam in tuto pósita, secúri magnificémus; qui, gubernáculum fídei viríliter tenens, ánchoram spei tranquílla jam in statióne compósuit, et plenam cæléstibus divítiis et ætérnis mércibus navem, optáto in líttore, collocávit; qui contra omnes adversários scutum timóris Dei támdiu infatigabíliter ténuit, donec ad victóriam perveníret.
+@Commune/C4:Lectio4 in 2 loco: s/Quid enim .*//
 
 [Lectio6 in 2 loco]
-Quid enim fuit totus vitæ illíus cursus, nisi uníus cum vígili hoste conflíctus? Quantis hic cæcis, a via veritátis errántibus et de summa jam in profúndum rupe pendéntibus, amíssum réddidit visum; et illum, quo Christus viderétur, reparávit intúitum?
+@Commune/C4:Lectio4 in 2 loco: s/.*Quid enim/Quid enim/
+@Commune/C4:Lectio5 in 2 loco: s/Quantórum .*//
 
 [Lectio7 in 2 loco]
-Quantórum áuribus surdis et infidelitátis obturatióne damnátis, ad percipiéndam vocem cæléstium mandatórum, pretiósum infúdit audítum; ut, vocánti Deo ad misericórdiam, respondérent per obediéntiam? Quantos intrínsecus vulnerátos, angélici oris arte et oratiónum, ab infirmitáte curávit?
+@Commune/C4:Lectio5 in 2 loco: s/.*Quantórum/Quantórum/
 
 [Lectio8 in 2 loco]
-Quantos, per longam incúriam peccáto labe resolútos et quadam lepræ contgióne perfúsos, castigatiónibus et exhortatiónibus expiándo, Deo in se operánte, mundávit? Quantórum ánimas, vivéntes in córpore jam defúnctas et delictórum mole óbrutas ac sepúltas, ad emendatiónem tamquam ad lucem vocándo, Deo esuscitávit; ut, Dómini sui admirándus imitátor, jam mórtuas Deo, e contrário mortíficet, vitáli morte, peccáto?
+@Commune/C4:Lectio6 in 2 loco
 
 [Lectio9 in 2 loco]
 Léctio sancti Evangélii secúndum Matthǽum

@@ -1,10 +1,14 @@
 [Rank]
-S. Antonii de Padua Confessoris;;Duplex;;3;;vide C5a
+S. Antonii de Padua Confessoris;;Duplex;;3;;vide C5
 
 [Rank] (rubrica divino aut rubrica 196)
 S. Antonii de Padua Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
 
 [Rule]
+vide C5;
+9 lectiones
+
+[Rule] (rubrica divino aut rubrica 196)
 vide C5a;
 9 lectiones
 
