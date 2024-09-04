@@ -373,12 +373,13 @@ R. Et sit splendor Dómini Dei nostri super nos, et ópera mánuum nostrárum d�
 [dirigere]
 v. Dirígere et sanctificáre, régere et gubernáre dignáre, Dómine Deus, Rex cæli et terræ, hódie corda et córpora nostra, sensus, sermónes et actus nostros in lege tua, et in opéribus mandatórum tuórum: ut hic et in ætérnum, te auxiliánte, salvi et líberi esse mereámur, Salvátor mundi: Qui vivis et regnas in sǽcula sæculórum.
 
-[benedictio Prima]
-V. Jube, domne, benedícere.
-(sed rubrica 196 aut rubrica 1955 dicitur)
-V. Jube, Dómine, benedícere.
+[benedictio Prima_]
 Benedictio. Dies et actus nostros in sua pace dispónat Dóminus omnípotens.
 R. Amen.
+
+[benedictio Prima]
+@:Jube domne
+@:benedictio Prima_
 
 [benedictio Prima2]
 Benedictio. Dóminus nos benedícat, + et ab omni malo deféndat, et ad vitam perdúcat ætérnam. Et fidélium ánimæ per misericórdiam Dei requiéscant in pace.
@@ -404,15 +405,14 @@ v. Dómine Deus omnípotens, qui ad princípium hujus diéi nos perveníre fecí
 /:Examen conscientiæ vel Pater Noster totum secreto.:/
 
 [Benedictio Completorium_]
-V. Jube, domne, benedícere.
-(sed rubrica 196 aut rubrica 1955 dicitur)
-V. Jube, Dómine, benedícere.
 Benedictio. Noctem quiétam et finem perféctum concédat nobis Dóminus omnípotens.
 
 [benedictio Completorium]
+@:Jube domne
 @:Benedictio Completorium_
 
 [benedictio Completorium] (rubrica Ordo Praedicatorum)
+@:Jube domne
 @:Benedictio Completorium_:s/concédat/tríbuat/
 
 [benedictio Completorium Final]
@@ -425,6 +425,6 @@ Benedictio. Benedícat et custódiat nos omnípotens et miséricors Dóminus, + 
 Benedictio. Benedíctio Dei omnipoténtis + Patris, et Fílii, et Spíritus Sancti descéndat super nos et máneat semper.
 
 [Jube domne]
-Jube, domne, benedícere.
+V. Jube, domne, benedícere.
 (sed rubrica 1960 dicitur)
-Jube, Dómine, benedícere.
+V. Jube, Dómine, benedícere.

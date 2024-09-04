@@ -530,7 +530,7 @@ sub lectiones {
     my $l = ($num - 1) * $rpn + $i;
 
     if ($rule !~ /Limit.*?Benedictio/i) {
-      push(@s, "V. " . prayer('Jube domne', $lang));
+      push(@s, prayer('Jube domne', $lang));
       push(@s, "Benedictio. $a[$i]", '$Amen');
     }
     push(@s, "\&lectio($l)", "\n");    # the lesson is going to be added by the subroutine below at a later time
