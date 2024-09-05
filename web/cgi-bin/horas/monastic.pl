@@ -310,7 +310,7 @@ sub absolutio_benedictio {
 
   push(@s, "\n", '&pater_noster', '_');
   push(@s, "Absolutio. $abs", '$Amen', "\n");
-  push(@s, "V. " . prayer('Jube domne', $lang));
+  push(@s, prayer('Jube domne', $lang));
   push(@s, "Benedictio. $ben", '$Amen', '_');
 }
 
