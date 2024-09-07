@@ -1789,6 +1789,6 @@ sub lectio_brevis_prima {
     $brevis = $b || $brevis;
   }
   $brevis = prayer('benedictio Prima', $lang) . "\n$brevis" unless $version =~ /^Monastic/;
-  $brevis .= "\n" . prayer("Tu autem", $lang);
+  $brevis .= "\n\$Tu autem";
   ($brevis, $comment);
 }

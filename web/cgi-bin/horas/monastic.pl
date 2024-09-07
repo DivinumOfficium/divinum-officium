@@ -493,7 +493,7 @@ sub regula : ScriptFunc {
     $t .= join("\n", @a);
   }
 
-  $t .= "\n" . prayer("Tu autem", $lang);
+  $t .= "\n\$Tu autem";
   $t .= "\n_\n" . prayer("rubrica Regula", $lang) . "\n_";
   return $t;
 }
