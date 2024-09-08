@@ -506,7 +506,9 @@ sub getcommemoratio {
     $o = papal_prayer($lang, $plural, $class, $name, $type);
   }
   if (!$o) { return ''; }
-  $w = "! Commemoratio $rank[0]\nv. $o\n";
+  my $comm = translate_label('Commemoratio', $lang);
+  $comm =~ s/\s$//;
+  $w = "!" . $comm . " $rank[0]\nv. $o\n";
   return $w;
 }
 
