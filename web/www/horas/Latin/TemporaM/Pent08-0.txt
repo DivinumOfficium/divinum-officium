@@ -4,10 +4,11 @@
 12 lectiones
 
 [Lectio2]
-@Tempora/Pent08-0::s/-9/-7/ s/8.*//s
+@Tempora/Pent08-0::1-3 s/-9/-7/
 
 [Lectio3]
-@Tempora/Pent08-0:Lectio2:s/6/8/ s/6 .*8/8/s
+@Tempora/Pent08-0:Lectio2:1 s/6/8/
+@Tempora/Pent08-0:Lectio2:4-5 s/\p{Letter}/\u$&/
 
 [Lectio4]
 @Tempora/Pent08-0:Lectio3
