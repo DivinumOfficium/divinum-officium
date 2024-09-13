@@ -512,7 +512,7 @@ sub psalm : ScriptFunc {
       $prepend_dagger = 0;
     }
 
-    if ($first && $rest && $rest !~ /^\s*$/) {
+    if ($first && $rest && $rest !~ /^\s*$/ && $num != 232) {
       $rest = getantcross($rest, $antline);
 
       # Put dagger at start of second line if it would otherwise
@@ -801,114 +801,89 @@ sub get_link_name {
   return $name;
 }
 
-#*** ant_Benedictus($num, $lang)
-# returns the antiphona $num=1 = for beginning =2 for end
-sub ant_Benedictus : ScriptFunc {
-
-  my $num = shift;
-  my $lang = shift;
-  our ($version, $winner);
-  our ($month, $day);
-  our $duplex;
-
-  my ($ant) = getantvers('Ant', 2, $lang);
-
-  if ($month == 12 && ($day == 21 || $day == 23) && $winner =~ /tempora/i) {
-    my %specials = %{setupstring($lang, "Psalterium/Major Special.txt")};
-    $ant = $specials{"Adv Ant $day" . "L"};
-  }
-  my @ant_parts = split('\*', $ant);
-  if ($num == 1 && $duplex < 3 && $version !~ /196/) { return "Ant. $ant_parts[0]"; }
-
-  if ($num == 1) {
-    return "Ant. $ant";
-  } else {
-    $ant =~ s/\s*\*\s*/ /;
-    return "Ant. {::}$ant";
-  }
-}
-
-#*** ant_Magnificat($num, $lang)
-# returns the antiphon for $num=1 the beginning, or =2 for the end
-sub ant_Magnificat : ScriptFunc {
-
-  my $num = shift;    #1=before, 2=after
+#*** ant_special($lang)
+# return special ant. for canticum major hours & duplexflag;
+sub ant123_special {
   my $lang = shift;
 
-  our ($version, $winner);
-  our ($month, $day);
-  our $duplex;
-  our $rank;
-  our $vespera;
-
-  my $v = ($version =~ 1960 && $winner =~ /Sancti/i && $rank < 5) ? 3 : $vespera;
-  my ($ant) = getantvers('Ant', $v, $lang);
-
-  # Special processing for Common of Supreme Pontiffs. Confessor-Popes
-  # have a common Magnificat antiphon at second Vespers.
-  my $popeclass = '';
-
-  if ( $version !~ /Trident/i
-    && $v == 3
-    && ((undef, $popeclass, undef) = papal_rule($winner{Rule}))
-    && $popeclass =~ /C/i)
-  {
-    $ant = papal_antiphon_dum_esset($lang);
-    setbuild2("subst: Special Magnificat Ant. Dum esset");
-  }
+  my $ant, $duplexf;
 
   if ($month == 12 && ($day > 16 && $day < 24) && $winner =~ /tempora/i) {
-    my %specials = %{setupstring($lang, "Psalterium/Major Special.txt")};
-    $ant = $specials{"Adv Ant $day"};
-    $num = 2;
-  }
-  my @ant_parts = split('\*', $ant);
-  if ($num == 1 && $duplex < 3 && $version !~ /196/) { return "Ant. $ant_parts[0]"; }
+    my %specials = %{setupstring($lang, 'Psalterium/Major Special.txt')};
 
-  if ($num == 1) {
-    return "Ant. $ant";
-  } else {
-    $ant =~ s/\s*\*\s*/ /;
-    return "Ant. {::}$ant";
+    if ($hora eq 'Laudes' && ($day == 21 || $day == 23)) {
+      $ant = $specials{"Adv Ant $day" . 'L'};
+    } elsif ($hora eq 'Vespera') {
+      $ant = $specials{"Adv Ant $day"};
+      $duplexf = 1;
+    }
+  } elsif ($winner =~ /^Sancti/ && $version !~ /Trident/ && $vespera == 3) {
+
+    # Special processing for Common of Supreme Pontiffs. Confessor-Popes
+    # have a common Magnificat antiphon at second Vespers.
+    my $popeclass;
+
+    if (((undef, $popeclass, undef) = papal_rule($winner{Rule}))
+      && $popeclass =~ /C/i)
+    {
+      $ant = papal_antiphon_dum_esset($lang);
+      setbuild2('subst: Special Magnificat Ant. Dum esset');
+    }
   }
+  ($ant, $duplexf);
 }
 
 #*** canticum($psnum, $lang)
 # returns the formatted text of Benedictus, Magnifificat or Nunc dimittis ($num=1-3)
-sub canticum : ScriptFunc {
-  my $psnum = shift;
-  my $lang = shift;
-  $psnum += 230;
-  psalm($psnum, $lang);
-}
+# with antiphones
+sub canticum {
 
-sub Nunc_dimittis {
+  my $item = shift;
   my $lang = shift;
+
+  our ($hora, $vespera);
+  my $num =
+      $hora eq 'Laudes' ? 2
+    : $hora eq 'Completorium' ? 4
+    : 3;
+
   my $ant, $ant2;
-  my ($w, $c) = getproprium("Ant 4$vespera", $lang, 1);
+  my $duplexf = $version =~ /196/;
 
-  if ($w) {
-    setbuild1($ite, 'special');
-    ($ant, $ant2) = split("\n", $w);
+  if ($hora eq 'Completorium') {
+    push(@s, '#' . translate(substr($item, 1), $lang));
+    my ($w, $c) = getproprium("Ant 4$vespera", $lang, 1);
+
+    if ($w) {
+      setbuild1($ite, 'special');
+      ($ant, $ant2) = split("\n", $w);
+    } else {
+      my %a = %{setupstring($lang, 'Psalterium/Minor Special.txt')};
+      my $name;
+      $name = gettempora('Nunc dimittis') if $version =~ /^Ordo Praedicatorum/;
+      $ant = $a{"Ant 4$name"};
+
+      if ($version =~ /^Ordo Praedicatorum/ && $name eq ' Quad3') {
+        ($ant, $ant2) = split("\n", $ant);
+        $ant2 = "$ant\n$ant2";
+      }
+    }
   } else {
-    my %a = %{setupstring($lang, "Psalterium/Minor Special.txt")};
-    my $name;
-    $name = gettempora('Nunc dimittis') if $version =~ /^Ordo Praedicatorum/;
-    $ant = $a{"Ant 4$name"};
+    $comment = ($winner =~ /sancti/i) ? 3 : 2;
+    setcomment($item, 'Source', $comment, $lang, translate('Antiphona', $lang));
 
-    if ($version =~ /^Ordo Praedicatorum/ && $name eq ' Quad3') {
-      ($ant, $ant2) = split("\n", $ant);
-      $ant2 = "$ant\n$ant2";
+    $duplexf ||= $duplex > 2;
+    my $key = $num == 3 ? $vespera : $num;
+    my $df;
+    ($ant, $df) = ant123_special($lang);
+
+    unless ($ant) {
+      ($ant, $c) = getantvers('Ant', $key, $lang);
+    } else {
+      $duplexf ||= $df;
     }
   }
-
-  if (alleluia_required($dayname[0], $votive)) {
-    ensure_single_alleluia(\$ant, $lang);
-  }
-
-  my @psalmi = ("$ant;;233");
-  my $duplexf = $version =~ /196/;
-  push(@s, translate('#Canticum Nunc dimittis', $lang));
+  my @psalmi = ("$ant;;" . (229 + $num));
   antetpsalm(\@psalmi, $duplexf, $lang);
   $s[-1] = "Ant. $ant2" if $ant2;
 }

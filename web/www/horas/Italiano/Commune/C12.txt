@@ -21,7 +21,7 @@ $Oremus
 #Incipit
 _
 $Ave Maria
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 196 omittitur)
 V. Convertici, +++ o Dio, nostro salvatore.
 R. E allontana da noi la tua ira.
 $Deus in adjutorium
@@ -44,10 +44,9 @@ _
 V. Prega per noi, o Santa Madre di Dio.
 R. Affinché siam fatti degni delle promesse di Cristo.
 
-#Canticum Nunc dimittis
+#Canticum: Nunc dimittis
 Ant.  Sotto la tua protezione * cerchiamo rifugio, Santa Madre di Dio: non disprezzare le suppliche di noi che siamo nella prova, ma liberaci da ogni pericolo, o Vergine gloriosa e benedetta.
-&canticum(3)
-&Gloria
+&psalm(233)
 Ant.  Sotto la tua protezione * cerchiamo rifugio, Santa Madre di Dio: non disprezzare le suppliche di noi che siamo nella prova, ma liberaci da ogni pericolo, o Vergine gloriosa e benedetta.
 
 @:Pre oratio
@@ -67,7 +66,7 @@ R. Amen.
 $Pater noster
 $Ave Maria
 $Credo
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 196 omittitur)
 
 [Ant Matutinum]
 @Commune/C11::s/V\. .*/V. La grazia è cosparsa sulle tue labbra./g s/R\. .*/R. Perciò Iddio ti ha benedetta in eterno./g

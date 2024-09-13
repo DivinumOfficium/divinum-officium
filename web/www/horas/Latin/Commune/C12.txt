@@ -52,7 +52,7 @@ $Oremus
 #Incipit
 _
 $Ave Maria
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 196 omittitur)
 V. Convérte nos +++ Deus, salutáris noster.
 R. Et avérte iram tuam a nobis.
 $Deus in adjutorium
@@ -75,10 +75,9 @@ _
 V. Ora pro nobis sancta Dei Génetrix.
 R. Ut digni efficiámur promissiónibus Christi.
 
-#Canticum Nunc dimittis
+#Canticum: Nunc dimittis
 Ant. Sub tuum præsídium * confúgimus, sancta Dei Génetrix: nostras deprecatiónes ne despícias in necessitátibus, sed a perículis cunctis libera nos semper, Virgo gloriósa et benedícta.
-&canticum(3)
-&Gloria
+&psalm(233)
 Ant. Sub tuum præsídium * confúgimus, sancta Dei Génetrix: nostras deprecatiónes ne despícias in necessitátibus, sed a perículis cunctis libera nos semper, Virgo gloriósa et benedícta.
 
 @:Pre oratio
@@ -98,7 +97,7 @@ R. Amen.
 $Pater noster
 $Ave Maria
 $Credo
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 196 omittitur)
 
 [Invit]
 @Commune/C10

@@ -497,6 +497,7 @@ sub antetpsalm {
 
     if ($ant) {
       if ($lastant) { pop(@s); push(@s, "Ant. $lastant", "\n"); }
+      $ant =~ s/~?\n/ /g;
       postprocess_ant($ant, $lang);
       my $antp = $ant;
 
