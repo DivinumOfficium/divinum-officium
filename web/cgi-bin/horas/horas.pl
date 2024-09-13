@@ -163,7 +163,7 @@ sub resolve_refs {
     $line =~ s{/:(.*?):/}{setfont($smallfont, $1)}eg;
 
     # italic for mute vovels in hymns
-    $line =~ s/\[([aeiou])\]/setfont('italic', $1)/eg;
+    $line =~ s/\[([æaeiou]m?)\]/setfont('italic', $1)/eg;
 
     if ($merge_with_next) {
       $merged_lines .= $line . ' ';
