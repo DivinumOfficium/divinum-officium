@@ -25,7 +25,7 @@ $Oremus
 #Incipit
 _
 $Ave Maria
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 196 omittitur)
 V. Téríts meg minket, +++ Isten, te vagy az üdvösségünk.
 R. És fordítsd el haragodat rólunk.
 $Deus in adjutorium
@@ -48,10 +48,9 @@ _
 V. Imádkozzál érettünk Istennek szent anyja
 R. Hogy métók lehessünk a Krisztus igéreteire
 
-#Canticum Nunc dimittis
+#Canticum: Nunc dimittis
 Ant. Oltalmad alá futunk * Istennek szent Szülője, könyörgésünket meg ne vesd szükségünk idején. Hanem oltalmazz meg minket minden veszedelemtől, ó dicsőséges és áldott Szűz.
-&canticum(3)
-&Gloria
+&psalm(233)
 Ant. Oltalmad alá futunk, * Istennek szent Szülője, könyörgésünket meg ne vesd szükségünk idején. Hanem oltalmazz meg minket minden veszedelemtől, ó dicsőséges és áldott Szűz.
 
 @:Pre oratio
@@ -69,7 +68,7 @@ R. Amen.
 $Pater noster
 $Ave Maria
 $Credo
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 196 omittitur)
 
 [Ant Matutinum]
 @Commune/C11::s/V\. .*/V. Kegyelem van az ajkaidon./g s/R\. .*/R. Isten ezért megáldott mindörökre./g

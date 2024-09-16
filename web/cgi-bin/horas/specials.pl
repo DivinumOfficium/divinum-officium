@@ -341,14 +341,8 @@ sub specials {
       next;
     }
 
-    if ($item =~ /(benedictus|magnificat)/i) {
-      $comment = ($winner =~ /sancti/i) ? 3 : 2;
-      setcomment($label, 'Source', $comment, $lang, translate('Antiphona', $lang));
-      next;
-    }
-
-    if ($item =~ /Nunc Dimittis/i) {
-      Nunc_dimittis($lang);
+    if ($item =~ /Canticum/i) {
+      canticum($item, $lang);
       next;
     }
 

@@ -23,7 +23,7 @@ Officium parvum Beatae Mariae Virginis Tempora Nativitatis;;Simplex;;1
 (sed rubrica 1955 aut rubrica 1960 omittitur)
 
 [Special Completorium]
-@Commune/C12::s/(#Canticum Nunc dimittis.).*/$1/s
+@Commune/C12::s/(#Canticum: Nunc dimittis.).*/$1/s
 @Sancti/01-01:Ant 3:s/^/Ant. /
 &psalm(233)
 @Sancti/01-01:Ant 3:s/^/Ant. /

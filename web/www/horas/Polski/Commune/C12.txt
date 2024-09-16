@@ -32,7 +32,7 @@ $Oremus
 #Incipit
 _
 $Ave Maria
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 196 omittitur)
 V. Nawróć nas +++ Boże, nasz zbawco.
 R. I odwróć swój gniew od nas.
 $Deus in adjutorium
@@ -55,10 +55,9 @@ _
 V. Módl się za nami święta Boża Rodzicielko.
 R. Abyśmy się stali godnymi obietnic Chrystusowych
 
-#Canticum Nunc dimittis
+#Canticum: Nunc dimittis
 Ant. Pod Twoją obronę * uciekamy się, święta Boża Rodzicielko: naszymi prośbami racz nie gardzić w potrzebach naszych, ale od wszelakich złych przygód racz nas zawsze wybawiać, Panno chwalebna i błogosławiona.
-&canticum(3)
-&Gloria
+&psalm(233)
 Ant. Pod Twoją obronę * uciekamy się, święta Boża Rodzicielko: naszymi prośbami racz nie gardzić w potrzebach naszych, ale od wszelakich złych przygód racz nas zawsze wybawiać, Panno chwalebna i błogosławiona.
 
 @:Pre oratio
@@ -78,7 +77,7 @@ R. Amen.
 $Pater noster
 $Ave Maria
 $Credo
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 196 omittitur)
 
 [Ant Matutinum]
 @Commune/C11::s/V\. .*/V. Rozlała się wdzięczność po wargach twoich./g s/R\. .*/R. Dlatego cię błogosławił Bóg na wieki./g
