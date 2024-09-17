@@ -98,7 +98,7 @@ sub specials {
       }
       setcomment($label, 'Preces', $comment, $lang) if ($rule !~ /Omit.*? $ite[0] mute/i);
 
-      if ($item =~ /incipit/i && $version !~ /1955|196/) {
+      if ($item =~ /incipit/i && $version !~ /1955|196/ && $winner !~ /C12/) {
         if ($hora =~ /Laudes/i) {
           push(@s, setfont($smallfont, 'Si Laudes extra Chorum separentur a Matutino, ante eas dicitur secreto'));
         } else {
@@ -302,8 +302,9 @@ sub specials {
 
     if ($item =~ /Capitulum/i && $hora =~ /^(?:Laudes|Vespera)/) {
       my $name = "Capitulum Laudes";    # same for Vespera
-                                        # special case only 1 time
+                                        # special cases
       $name = 'Capitulum Vespera 1' if $winner =~ /12-25/ && $vespera == 1;
+      $name = 'Capitulum Vespera' if $winner =~ /C12/;
 
       setbuild('Psalterium/Major Special', $name, 'Capitulum ord');
 
@@ -824,7 +825,7 @@ sub oratio {
       if (exists($w{"Commemoratio $vespera"})) {
         $c = getrefs($w{"Commemoratio $vespera"}, $lang, $vespera, $w{Rule});
       } elsif (exists($w{Commemoratio})
-        && ($vespera != 3 || $winner =~ /Tempora/i || $w{Commemoratio} =~ /!.*O[ckt]ta/i))
+        && ($vespera != 3 || $winner =~ /Tempora|C12/i || $w{Commemoratio} =~ /!.*O[ckt]ta/i))
       {
         $c = getrefs($w{Commemoratio}, $lang, $vespera, $w{Rule});
       } else {
