@@ -7,21 +7,21 @@ sub gethymn {
   our ($hora, $version, $vespera, @dayname);
   my $section = translate('Hymnus', $lang);
 
-  if ($hora =~ /matutinum/i) {
+  if ($hora eq 'Matutinum') {
     ($hymn, $name) = hymnusmatutinum($lang);
     $hymnsource = 'Matutinum' if (!$hymn);
     $section = '';
-  } elsif ($hora =~ /(laudes|vespera)/i) {
+  } elsif ($hora eq 'Laudes' || $hora eq 'Vespera') {
     ($hymn, $name) = hymnusmajor($lang);
     $name = "Hymnus $name";
     $hymnsource = 'Major' if (!$hymn);
     $section = "_\n!$section";
 
-    my $ind = ($hora =~ /laudes/i) ? 2 : $vespera;
+    my $ind = $hora eq 'Laudes' ? 2 : $vespera;
     ($versum, $cr) = getantvers('Versum', $ind, $lang);
   } else {    # minor hours
     $name = "Hymnus $hora";
-    $name =~ s/ / Pasc7 / if ($hora =~ /Tertia/ && $dayname[0] =~ /Pasc7/);
+    $name =~ s/ / Pasc7 / if ($hora eq 'Tertia' && $dayname[0] =~ /Pasc7/);
 
     if ($hora eq 'Completorium' && $version =~ /^Ordo Praedicatorum/) {
       my %ant = %{setupstring($lang, 'Psalterium/Minor Special.txt')};
@@ -34,7 +34,7 @@ sub gethymn {
       }
     }
     $hymnsource = 'Minor';
-    $section = "#" . $section;
+    $section = '#' . $section;
   }
 
   if ($hymnsource) {
@@ -62,17 +62,17 @@ sub hymnusmajor {
   my $lang = shift;
   my $hymn = '';
   my $name = 'Hymnus';
-  $name .= checkmtv($version, \%winner) if ($hora =~ /Vespera/i);
+  $name .= checkmtv($version, \%winner) if $hora eq 'Vespera';
   $name = 'Hymnus'
     if (
       (!exists($winner{"$name Vespera"}) && ($vespera == 3 && !exists($winner{"$name Vespera 3"})))
-      && (($vespera == 3 && exists($winner{"Hymnus Vespera 3"}))
-        || exists($winner{"Hymnus Vespera"}))
+      && (($vespera == 3 && exists($winner{'Hymnus Vespera 3'}))
+        || exists($winner{'Hymnus Vespera'}))
     );
 
   if (hymnshift($version, $day, $month, $year)) {
-    $name .= ' Matutinum' if $hora =~ /laudes/i;
-    $name .= ' Laudes' if $hora =~ /vespera/i;
+    $name .= ' Matutinum' if $hora eq 'Laudes';
+    $name .= ' Laudes' if $hora eq 'Vespera';
     setbuild2("Hymnus shifted");
   } else {
     $name .= " $hora";
@@ -80,7 +80,7 @@ sub hymnusmajor {
 
   my $cr = 0;
 
-  if ($hora =~ /Vespera/i && $vespera == 3) {
+  if ($hora eq 'Vespera' && $vespera == 3) {
     ($hymn, $cr) = getproprium("$name 3", $lang, $seasonalflag, 1);
   }
   if (!$hymn) { ($hymn, $cr) = getproprium("$name", $lang, $seasonalflag, 1); }
@@ -105,10 +105,10 @@ sub doxology {
   my $dname = '';
 
   if (exists($winner{Doxology})) {
-    my %w = (columnsel($lang)) ? %winner : %winner2;
+    my %w = columnsel($lang) ? %winner : %winner2;
     $dox = $w{Doxology};
     $dname = 'Special';
-    setbuild2("Special doxology");
+    setbuild2('Special doxology');
   } else {
     if ($rule && $rule =~ /Doxology=([a-z]+)/i) {
       $dname = $1;
