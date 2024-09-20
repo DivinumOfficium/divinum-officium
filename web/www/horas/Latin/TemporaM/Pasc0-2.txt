@@ -4,6 +4,60 @@
 ex Pasc0-0
 Psalmi Dominica
 
+[Rule] (rubrica trident aut rubrica divino)
+ex Pasc0-0;
+12 lectiones;
+Psalmi Dominica;
+Antiphonas horas
+No commemoration
+
+[Lectio1] (rubrica tridentina aut rubrica divino)
+@Tempora/Pasc2-0::1
+@Tempora/Pasc2-0:Lectio2:1 s/21\-25/25-28/
+@Tempora/Pasc2-0:Lectio2:6
+@Tempora/Pasc2-0:Lectio3:2-4
+
+[Lectio2] (rubrica tridentina aut rubrica divino)
+@Tempora/Pasc2-0:Lectio3:1 s/26\-33/29-31/
+@Tempora/Pasc2-0:Lectio3:5-7
+
+[Lectio3] (rubrica tridentina aut rubrica divino)
+@Tempora/Pasc2-0:Lectio3:1 s/26/32/
+@Tempora/Pasc2-0:Lectio3:8-9
+
+[Lectio4]
+!Act. 13:34-37
+34 Quod autem suscitávit eum a mórtuis, ámplius iam non reversúrum in corruptiónem, ita dixit: Quia dabo vobis sancta David fidélia.
+35 Ideóque et álias dicit: Non dabis sanctum tuum vidére corruptiónem.
+36 David enim in sua generatióne cum administrásset, voluntáti Dei dormívit: et appósitus est ad patres suos, et vidit corruptiónem.
+37 Quem vero Deus suscitávit a mórtuis, non vidit corruptiónem.
+
+[Lectio5]
+Sermo sancti Joánnis Chrysóstomi
+!Inter Sermones ineditos S. Leonis Magni Pp. Sermo IV; de Pascha II, n. 1 et 2
+Licet omnes solemnitátes, dilectíssimi, quæ in Ecclésiis pro Dei honóre celebrántur, sanctæ sint atque venerábiles: tamen hodiérna Domínicæ resurrectiónis dies peculiárem festivitátem habet. Ideo útique, quia omnes álii dies vivéntium in se tantum cóntinent gáudium: hæc lætítiam defunctórum.
+
+[Lectio6]
+Commúnis est ergo inférnis simul ac supérnis ista festívitas, quia resúrgens Dóminus a mórtuis, et illic festivitátem dedit, ubi mortem vicit: et istic, ubi victor a morte remeávit. Et ídeo bene Psalmísta lóquitur de hac peculiáriter die dicens: Hæc est dies, quam fecit Dóminus; exsultémus et lætémur in ea.
+
+[Lectio7]
+Prænúntians enim Domínicam resurrectiónem, non supérnis tantum, sed et inférnis diem salutíferæ exsultatiónis indíxit. Descendénte in tenebrósam inferórum calíginem Dómino, étiam illic tunc absque dúbio dies splendidíssimus fuit, ubi Salvátor illúxit. Unde pulchre Evangelísta: Et lux, inquit, in ténebris lucet: et ténebræ eam non comprehendérunt. Quia licet in ténebras Dóminus descénderit, tenebrárum tamen obscúra non sensit.
+
+[Lectio8]
+Ténuit in illo noctis horróre inviolábilem majestátis suæ splendórem: luxit sempitérnæ natúræ splendóre, ac sic non lux a nocte, sed nox a luce superáta est. Lætémur ergo, dilectíssimi, et exsultémus in Dómino: hódie enim nobis data est a Dómino lux salútis secúndum illud, quod idem Psalmísta in consequéntibus ait: Deus Dóminus et illúxit nobis.
+
+[Lectio9]
+@Tempora/Pasc0-2:Lectio1
+
+[Lectio10]
+@Tempora/Pasc0-2:Lectio2
+
+[Lectio11]
+@Tempora/Pasc0-2:Lectio3: s/Et vidétur.*//s
+
+[Lectio12]
+@Tempora/Pasc0-2:Lectio3: s/.* Et vidétur/Et vidétur/s
+
 [Ant Matutinum]
 @TemporaM/Pasc0-0
 
