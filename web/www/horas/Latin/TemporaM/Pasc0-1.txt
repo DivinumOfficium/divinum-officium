@@ -4,24 +4,89 @@
 ex Pasc0-0
 Psalmi Dominica
 
+[Rule] (rubrica trident aut rubrica divino)
+ex Pasc0-0;
+12 lectiones;
+Psalmi Dominica;
+Antiphonas horas
+No commemoration
+
 [Lectio1]
+De Epístola prima beáti Pauli Apóstoli ad Corínthios
+!1Cor 15:1-6
+1 Notum autem vobis fácio, fratres, Evangélium, quod prædicávi vobis, quod et accepístis, in quo et statis,
+2 per quod et salvámini: qua ratióne prædicáverim vobis, si tenétis, nisi frustra credidístis.
+3 Trádidi enim vobis in primis quod et accépi: quóniam Christus mórtuus est pro peccátis nostris secúndum Scriptúras:
+4 et quia sepúltus est, et quia resurréxit tértia die secúndum Scriptúras:
+5 et quia visus est Cephæ, et post hoc úndecim:
+6 deínde visus est plus quam quingéntis frátribus simul: ex quibus multi manent usque adhuc, quidam autem dormiérunt:
+
+[Lectio2]
+!1Cor 15:7-11
+7 Deínde visus est Iacóbo, deínde Apóstolis ómnibus:
+8 novíssime autem ómnium tamquam abortívo, visus est et mihi.
+9 Ego enim sum mínimus Apostolórum, qui non sum dignus vocári Apóstolus, quóniam persecútus sum Ecclésiam Dei.
+10 Grátia autem Dei sum id quod sum, et grátia eius in me vácua non fuit, sed abundántius illis ómnibus laborávi: non ego autem, sed grátia Dei mecum:
+11 sive enim ego, sive illi: sic prædicámus, et sic credidístis.
+
+[Lectio3]
+!1Cor 15:12-16
+12 Si autem Christus prædicátur quod resurréxit a mórtuis, quómodo quidam dicunt in vobis, quóniam resurréctio mortuórum non est?
+13 Si autem resurréctio mortuórum non est: neque Christus resurréxit.
+14 Si autem Christus non resurréxit, inánis est ergo prædicátio nostra, inánis est et fides vestra:
+15 invenímur autem et falsi testes Dei: quóniam testimónium díximus advérsus Deum quod suscitáverit Christum, quem non suscitávit, si mórtui non resúrgunt.
+16 Nam si mórtui non resúrgunt, neque Christus resurréxit.
+
+[Lectio4]
+!1Cor 15:17-22
+17 Quod si Christus non resurréxit, vana est fides vestra: adhuc enim estis in peccátis vestris.
+18 Ergo et qui dormiérunt in Christo, periérunt.
+19 Si in hac vita tantum in Christo sperántes sumus, miserabilióres sumus ómnibus homínibus.
+20 Nunc autem Christus resurréxit a mórtuis primítiæ dormiéntium,
+21 quóniam quidem per hóminem mors, et per hóminem resurréctio mortuórum.
+22 Et sicut in Adam omnes moriúntur, ita et in Christo omnes vivificabúntur.
+
+[Lectio5]
+Sermo sancti Máximi epíscopi
+!Hom. LVII; de Pascha III
+Non immérito, fratres, hodiérna die Psalmus hic légitur, in quo Prophéta exsultándum præcipit et lætándum. Omnes enim creatúras ad hujus diéi festivitátem David sanctus invítat. Nam in hac die per resurrectiónem Christi aperítur tártarus, per neóphytos Ecclésiæ innovátur terra, cælum per Spíritum Sanctum reserátur.
+
+[Lectio6]
+Apértus enim tártarus reddit mórtuos, innováta terra gérminat resurgéntes, cælum reserátum súscipit ascendéntes. Dénique ascéndit latro in paradísum, Sanctórum córpora ingrediúntur in sanctam civitátem: ad vivos mórtui revertúntur, et proféctu quodam in resurrectióne Christi ad altióra cuncta eleménta se tollunt.
+
+[Lectio7]
+Tártarus quos habet, reddit ad súperos; terra quos sépelit, mittit ad cælum; cælum quos súscipit, repræséntat ad Dóminum. Et una eadémque operatióne Salvatóris pássio élevat de imis, súscitat de terrénis, cóllocat in excélsis. Resurréctio enim Christi defúnctis est vita, peccatóribus vénia, Sanctis est glória. Omnem ergo creatúram ad festivitátem resurrectiónis Christi David sanctus invítat. ait enim exsultándum in hac die, quam fecit Dóminus, et lætándum.
+
+[Lectio8]
+Igitur, fratres, omnes in hac die sancta exsultáre debémus; nullus se a commúni lætítia peccatórum consciéntia súbtrahat, nullus a públicis votis delictórum sárcina revocétur: étenim peccátor in hac die de indulgéntia non debet desperáre; est enim prærogatíva non parva. Si enim latro paradísum méruit, cur non mereátur véniam christiánus? Et si illi Dóminus, cum crucifígitur, miserébitur, cum resúrgit. Et si passiónis humílitas tantum præstitit confiténti, resurrectiónis glória quantum tríbuet deprecánti? Lárgior enim ad præstándum solet esse, sicut ipsi scitis, læta victória, quam addícta captívitas.
+
+[Lectio9]
 @Tempora/Pasc0-1:Lectio1:s/ De se.*//s
+
+[Lectio10]
+@Tempora/Pasc0-1:Lectio1:s/.*De se/De se/s s/$/~/
+@Tempora/Pasc0-1:Lectio2:s/Prob.ndi.*//s
+
+[Lectio11]
+@Tempora/Pasc0-1:Lectio2:s/.*Prob.ndi/Probándi/s s/$/~/
+@Tempora/Pasc0-1:Lectio3:s/Mensam .*//s
+
+[Lectio12]
+@Tempora/Pasc0-1:Lectio3: s/.* Mensam/Mensam/s
+
+[Lectio1] (rubrica 196)
+@:Lectio9
 
 [Responsory1]
 @Tempora/Pasc1-0:Responsory2
 
-[Lectio2]
-@Tempora/Pasc0-1:Lectio1:s/.*De se/De se/s s/$/~/
-@Tempora/Pasc0-1:Lectio2:s/Prob.ndi.*//s
+[Lectio2] (rubrica 196)
+@:Lectio10
 
 [Responsory2]
 @Tempora/Pasc0-0
 
-[Lectio3]
-@Tempora/Pasc0-1:Lectio2:s/.*Prob.ndi/Probándi/s s/$/~/
-@Tempora/Pasc0-1:Lectio3
+[Lectio3] (rubrica 196)
+@:Lectio11: s/$/~/
+@:Lectio12
 
-[Responsory3]
-@Tempora/Pasc0-1:Responsory1
-
-[utf8 ą]
