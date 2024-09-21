@@ -318,6 +318,7 @@ sub occurrence {
       %saint = undef;
       $sname = '';
       @srank = undef;
+      @commemoentries = undef;
     }
 
     # In Festo Sanctae Mariae Sabbato according to the rubrics.
@@ -436,8 +437,9 @@ sub occurrence {
         $officename[2] =~ s/:/ ad Laudes tantum:/ if $cr[2] < 6;
       } elsif ($version !~ /trident/i && $srank[2] >= 6) {
         $officename[2] =~ s/:/ ad Laudes tantum:/ if $cr[2] < 4.2 && $cr[2] != 2.1 && $srank[0] !~ /infra octavam/i;
-      } elsif ($srank[2] >= 6 && $srank[0] !~ /in.*octava/i && $cr[2] < 3.1)
-      {    # for Tridentine:  either Transfer or no Commemoration in Duplex I. cl. (of Sanctoral) unless dies 8va
+      } elsif ($srank[2] >= 6 && $srank[0] !~ /in.*octava/i && $cr[2] < 3.1) {
+
+        # for Tridentine:  either Transfer or no Commemoration in Duplex I. cl. (of Sanctoral) unless dies 8va
         $commemoratio = '';
         $comrank = 0;
         @commemoentries = undef;
@@ -526,7 +528,11 @@ sub occurrence {
       $officename[1] .= " $communetype $communesname{$commune} [$commune]";
     }
 
-    if ($version =~ /1960/ && $vespera == 1 && $rank >= 6 && $comrank < 5) { $commemoratio = ''; $srank[2] = 0; }
+    if ($version =~ /1960/ && $vespera == 1 && $rank >= 6 && $comrank < 5) {
+      $commemoratio = '';
+      $srank[2] = 0;
+      @commemoentries = undef;
+    }
 
     my $climit1960 = climit1960($sname);
 
@@ -582,26 +588,35 @@ sub occurrence {
       }
 
       if ($version =~ /196/i && $officename[2] =~ /Januarii/i) { $officename[2] = ''; }
-    } elsif (my $transferedC =
-      $commemoentries[0] && $tempora{Rule} !~ /omit.*? commemoratio/i && ($tempora{Rule} !~ /No commemoratio/i))
+    } elsif ((my $transferedC = $commemoentries[0])
+      && $tempora{Rule} !~ /omit.*? commemoratio/i
+      && ($tempora{Rule} !~ /No commemoratio/i))
     {
       $commemoratio = "$transferedC.txt";
-      my %tc = %{setupstring('Latin', "$transferedC.txt")};
-      my @cr = split(";;", $tc{Rank});
-      $comrank = $cr[2];
-      $cvespera = $svesp;
-      $officename[2] = "Commemoratio: $cr[0]";
+      $climit1960 = climit1960($commemoratio);
 
-      if ($version =~ /196/i) {
-        $officename[2] =~ s/:/ $laudesonly:/ if ($trank[2] >= 5 && $cr[2] < 2) || ($climit1960 == 2);
-      } elsif ($version !~ /trident/i && $trank[2] >= 6) {
-        $officename[2] =~ s/:/ ad Laudes tantum:/
-          if $cr[2] < 4.2 && $cr[2] != 2.1 && $trank[0] !~ /infra octavam|cinerum|majoris hebd/i;
-      } elsif ($laudesonly) {
-        $officename[2] =~ s/:/ $laudesonly:/;
+      if ($climit1960) {
+        $laudesonly = ($missa) ? '' : ($climit1960 == 2) ? ' ad Laudes tantum' : '';
+        my %tc = %{setupstring('Latin', "$transferedC.txt")};
+        my @cr = split(";;", $tc{Rank});
+        $comrank = $cr[2];
+        $cvespera = $svesp;
+        $officename[2] = "Commemoratio: $cr[0]";
+
+        if ($version =~ /196/i) {
+          $officename[2] =~ s/:/ $laudesonly:/ if ($trank[2] >= 5 && $cr[2] < 2) || ($climit1960 == 2);
+        } elsif ($version !~ /trident/i && $trank[2] >= 6) {
+          $officename[2] =~ s/:/ ad Laudes tantum:/
+            if $cr[2] < 4.2 && $cr[2] != 2.1 && $trank[0] !~ /infra octavam|cinerum|majoris hebd/i;
+        } elsif ($laudesonly) {
+          $officename[2] =~ s/:/ $laudesonly:/;
+        } else {
+          $officename[2] =~ s/:/ ad Laudes \& Matutinum:/
+            if $trank[2] >= 5 && $cr[2] < 2 && $trank[0] !~ /infra octavam|cinerum|majoris hebd/i;
+        }
       } else {
-        $officename[2] =~ s/:/ ad Laudes \& Matutinum:/
-          if $trank[2] >= 5 && $cr[2] < 2 && $trank[0] !~ /infra octavam|cinerum|majoris hebd/i;
+        $commemoratio = '';
+        @commemoentries = undef;
       }
     } elsif (transfered($sday, $year, $version)) {
       if ($hora !~ /Vespera|Completorium/i) {
