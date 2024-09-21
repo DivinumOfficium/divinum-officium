@@ -173,7 +173,7 @@ sub psalmi_matutinum_monastic {
       my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 0);
       my @p = split("\n", $w);
 
-      for (my $i = $start; $i < 14; $i++) {
+      for (my $i = 0; $i < 14; $i++) {
         my $p = $p[$i];
         if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
 
