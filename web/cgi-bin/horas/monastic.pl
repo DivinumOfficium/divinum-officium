@@ -171,7 +171,17 @@ sub psalmi_matutinum_monastic {
 
     if (exists($winner{'Ant Matutinum'})) {
       my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 0);
-      @psalmi = split("\n", $w);
+      my @p = split("\n", $w);
+
+      for (my $i = $start; $i < 14; $i++) {
+        my $p = $p[$i];
+        if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
+
+        if ($i == 0 || $i == 8) {
+          $p = "$p[$i]$p";
+        }
+        $psalmi[$i] = $p;
+      }
       setbuild2("Antiphonas Psalmi Octavam special");
     }
   }
