@@ -1,19 +1,11 @@
 [Rank]
 Najświętszej Panny Marji Różańcowej;;Duplex 2 classis;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Najświętszej Panny Marji Różańcowej;;Duplex 2 classis;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Najświętszej Panny Marji Różańcowej;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Marka;
 
 [Ant Vespera]
 Któraż to jest, * piękna jako gołębica, jako róża wsadzona nad strumieniem wód?;;109
@@ -21,11 +13,6 @@ Panna można * jako wieża Dawidowa: tysiąc tarcz wisi na niej, wszystka broń 
 Bądź pozdrowiona, * łaski pełna, Pan z Tobą, błogosławionaś Ty między niewiastami.;;121
 Ubłogosławił Cię Pan * w mocy swojej, iż przez Cię w niwecz obrócił nieprzyjacioły nasze.;;126
 Widziały ją * córki Sionu rozkwitającą jako kwiat róży i błogosławioną ogłaszają.;;147
-
-[Capitulum Laudes]
-!Syr 24:25; 39:17
-v. We mnie wszelka łaska drogi i prawdy, we mnie wszytka nadzieja żywota i cnoty: a jako róża wsadzona nad strumieniem wód owoc wydałam.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Poseł przybył z niebios dworu,
@@ -65,19 +52,6 @@ Błogosławionaś, * Panno Marjo, Boża Rodzicielko, któraś uwierzyła Panu; w
 [Oratio]
 Boże, którego Syn Jednorodzony, życiem, śmiercią i zmartwychwstaniem swojem przygotował nam nagrodę zbawienia wiecznego: dozwól, prosimy, abyśmy rozpamiętywując Tajemnice świętego Różańca Błogosławionej Marji Panny, naśladowali to, co one zawierają i dostąpili tego, co obiecują.
 $Per eumdem
-
-[Commemoratio 2]
-!Wspominamy Św. Marka Papieża
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Wysłuchaj, Panie, próśb naszych i za przyczyną błogosławionego Marka, Wyznawcy Twego i Biskupa, udziel nam miłościwie przebaczenia i pokoju.
-$Per Dominum
-_
-!Wspominamy Śś. Sergjusza, Bachusa, Marcelego i Apuleusza Męczenników
-@Commune/C3:Oratio proper
-$Oremus
-Niech błogosławione zasługi świętych Męczenników Twoich, Panie, Sergjusza, Bachusa, Marcelego i Apuleusza, nieustannie nam towarzyszą i uczynią nas zawsze gorliwymi w miłości Twojej.
-$Per Dominum
 
 [Invit]
 Obchodząc święto Różańca Panny Marji: * jej Synowi Chrystusowi, Panu się kłaniajmy.
@@ -191,6 +165,11 @@ Duch Pański * napełnił okrąg ziemi.
 Wzięta jest * Marja do Nieba, radują się Aniołowie; wychwalając błogosławią Pana, alleluja.
 Podniesiona jest * Panna Marja ponad chóry Anielskie, i na jej głowie wieniec z gwiazd dwunastu.
 
+[Capitulum Laudes]
+!Syr 24:25; 39:17
+v. We mnie wszelka łaska drogi i prawdy, we mnie wszytka nadzieja żywota i cnoty: a jako róża wsadzona nad strumieniem wód owoc wydałam.
+$Deo gratias
+
 [Hymnus Laudes]
 v. Już zniszczywszy śmierć,
 Chrystus zwycięzca wraca z piekieł,
@@ -225,6 +204,19 @@ R. W namiocie swoim dał jej mieszkanie.
 
 [Ant 2]
 Uroczystość dzisiejszą * najświęszego Różańca Rodzicielki Bożej Marji pobożnie obchodźmy, aby ta wstawiała się za nami u Pana Jezusa Chrystusa.
+
+[Commemoratio 2]
+!Wspominamy Św. Marka Papieża
+@Commune/C4:Oratio proper Gregem
+$Oremus
+Wysłuchaj, Panie, próśb naszych i za przyczyną błogosławionego Marka, Wyznawcy Twego i Biskupa, udziel nam miłościwie przebaczenia i pokoju.
+$Per Dominum
+_
+!Wspominamy Śś. Sergjusza, Bachusa, Marcelego i Apuleusza Męczenników
+@Commune/C3:Oratio proper
+$Oremus
+Niech błogosławione zasługi świętych Męczenników Twoich, Panie, Sergjusza, Bachusa, Marcelego i Apuleusza, nieustannie nam towarzyszą i uczynią nas zawsze gorliwymi w miłości Twojej.
+$Per Dominum
 
 [Lectio Prima]
 !Syr 24:17-18

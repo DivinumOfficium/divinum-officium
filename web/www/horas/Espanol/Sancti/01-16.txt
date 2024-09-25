@@ -1,10 +1,6 @@
 [Rank]
 S. Marcelli Papæ et Martyris;;Semiduplex;;2;;vide C2
 
-[Rule]
-vide C2;
-9 lectiones
-
 [Oratio]
 Señor, escucha con clemencia las súplicas de tu pueblo, para que seamos ayudados por intercesión de San Marcelo, papa y mártir, cuya muerte gloriosa celebramos.
 $Per Dominum
@@ -28,9 +24,6 @@ Marcelo, romano, Papa desde el reinado de Constancio y Galerio hasta el de Majen
 [Lectio8]
 @Commune/C4:Lectio8 in 2 loco
 
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
-
 [Responsory8]
 R. Señor, Tú le preveniste con amorosas bendiciones. 
 * Pusiste sobre su frente una corona de piedras preciosas, 
@@ -38,3 +31,6 @@ V. Te pidió la vida, y le concediste longura de días por los siglos de los sig
 R. Pusiste sobre su frente una corona de piedras preciosas. 
 &Gloria
 R. Pusiste sobre su frente una corona de piedras preciosas. 
+
+[Lectio9]
+@Commune/C4:Lectio9 in 2 loco

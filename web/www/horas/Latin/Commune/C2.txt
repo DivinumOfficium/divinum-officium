@@ -55,7 +55,7 @@ Iste Sanctus * pro lege Dei sui certávit usque ad mortem, et a verbis impiórum
 Regem Mártyrum Dóminum, * Veníte, adorémus.
 
 [Hymnus Matutinum]
-@Commune/C2:Hymnus Vespera
+@:Hymnus Vespera
 
 [HymnusM Matutinum]
 @:HymnusM Vespera
@@ -64,16 +64,18 @@ Regem Mártyrum Dóminum, * Veníte, adorémus.
 In lege Dómini * fuit volúntas ejus die ac nocte.;;1
 Prǽdicans * præcéptum Dómini constitútus est in monte sancto ejus.;;2
 Voce mea * ad Dóminum clamávi: et exaudívit me de monte sancto suo.;;3
-V. Glória et honóre coronásti eum, Dómine.
-R. Et constituísti eum super ópera mánuum tuárum.
 Fílii hóminum * scitóte quia Dóminus sanctum suum mirificávit.;;4
 Scuto bonæ voluntátis * tuæ coronásti eum Dómine.;;5
 In univérsa terra * glória et honóre coronásti eum.;;8
-V. Posuísti, Dómine, super caput ejus.
-R. Corónam de lápide pretióso.
 Justus Dóminus, * et justítiam diléxit: æquitátem vidit vultus ejus.;;10
 Habitábit * in tabernáculo tuo: requiéscet in monte sancto tuo.;;14
 Posuísti, Dómine, * super caput ejus corónam de lápide pretióso.;;20
+
+[Nocturn 2 Versum]
+V. Posuísti, Dómine, super caput ejus.
+R. Corónam de lápide pretióso.
+
+[Nocturn 3 Versum]
 V. Magna est glória ejus in salutári tuo.
 R. Glóriam et magnum decórem impónes super eum.
 
@@ -262,48 +264,38 @@ $Per Dominum
 !Sir 39:6
 v. Justus cor suum trádidit ad vigilándum dilúculo ad Dóminum, qui fecit illum, et in conspéctu Altíssimi deprecábitur.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Glória et honóre * Coronásti eum, Dómine.
 R. Glória et honóre * Coronásti eum, Dómine.
 V. Et constituísti eum super ópera mánuum tuárum.
 R. Coronásti eum, Dómine.
 &Gloria
 R. Glória et honóre * Coronásti eum, Dómine.
-_
-V. Posuísti, Dómine, super caput ejus.
-R. Corónam de lápide pretióso.
 
 [Capitulum Sexta]
 !Sir 15:3
 v. Cibávit illum pane vitæ et intelléctus, et aqua sapiéntiæ salutáris potávit illum Dóminus Deus noster.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Posuísti, Dómine, * Super caput ejus.
 R. Posuísti, Dómine, * Super caput ejus.
 V. Corónam de lápide pretióso.
 R. Super caput ejus.
 &Gloria
 R. Posuísti, Dómine, * Super caput ejus.
-_
-V. Magna est glória ejus in salutári tuo.
-R. Glóriam et magnum decórem impónes super eum.
 
 [Capitulum Nona]
-!Sir 39:6
-v. Justus cor suum trádidit ad vigilándum dilúculo ad Dóminum, qui fecit illum, et in conspéctu Altíssimi deprecábitur.
+@:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Magna est glória ejus * In salutári tuo.
 R. Magna est glória ejus * In salutári tuo.
 V. Glóriam et magnum decórem impónes super eum.
 R. In salutári tuo.
 &Gloria
 R. Magna est glória ejus * In salutári tuo.
-_
-V. Justus ut palma florébit.
-R. Sicut cedrus Líbani multiplicábitur.
 
 [Versum 3]
 @:Versum 2

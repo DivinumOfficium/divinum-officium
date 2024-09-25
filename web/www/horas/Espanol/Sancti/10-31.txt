@@ -1,13 +1,9 @@
 [Rank]
 In Vigilia Omnium Sanctorum;;Vigilia;;1.5
 
-[Rule]
-Responsory Feria
-Preces feriales
-Versum Feria
-no Te Deum
-Laudes 2 
-No Suffragium 
+[Oratio]
+Multiplica, Señor, en nosotros la efusión de tu gracia, y haz que seamos merecedores, con una vida santa, de seguir en la felicidad eterna a aquellos cuya fiesta solemne anticipamos.
+$Per Dominum
 
 [Lectio1]
 @Commune/C3:Lectio7 in 2 loco
@@ -17,7 +13,3 @@ No Suffragium
 
 [Lectio3]
 @Commune/C3:Lectio9 in 2 loco
-
-[Oratio]
-Multiplica, Señor, en nosotros la efusión de tu gracia, y haz que seamos merecedores, con una vida santa, de seguir en la felicidad eterna a aquellos cuya fiesta solemne anticipamos.
-$Per Dominum

@@ -1,21 +1,9 @@
-[Name]
-Commune non Virginum Martyrum
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
 [Ant Vespera]
 Mientras el rey * reposaba en su lecho, mi nardo exhaló su aroma.;;109
 Seguimos al olor * de tus perfumes: todos te aman.;;112
 Ya ha pasado el invierno * y han cesado las lluvias: levántate, amiga mía, y ven.;;121
 Ven, elegida mía, * y pondré mi trono en tu corazón.;;126
-Esta es la más hermosa * de las hijas de Jerusalén.;;147 
-
-[Capitulum Laudes]
-!Sir 51:1-3
-v. Yo te alabo, Rey y Señor mío, te doy gracias, mi Dios y Salvador; anunciaré tu nombre porque me has protegido. Arrancaste mi cuerpo de la perdición.
-$Deo gratias.
+Esta es la más hermosa * de las hijas de Jerusalén.;;147
 
 [Hymnus Vespera]
 {:H-Tristeserantapostoli:}v. Loor a la mujer fuerte,
@@ -47,34 +35,8 @@ Amén.
 [Invit]
 Alabemos a nuestro Dios, * En la confesión de la bienaventurada N.
 
-[Hymnus Matutinum]
-{:H-Virginisproles:}v. Por sus plegarias, dígnate, Dios sumo,
-Nuestras ofensas perdonar propicio:
-Libres de vicio para que a Ti alcemos
-Puras las voces.
-_
-Honra perpetua al Padre y su Unigénito,
-Y al procedente Espíritu divino;
-Dios uno y trino: honor, imperio y gloria,
-Siglos eternos.
-Amén.
-
-[Ant Matutinum]
-¡Oh cuán bella, * cuán esclarecida es una generación casta!;;8
+[Ant Matutinum2]
 Pondrá su mano izquierda * debajo de mi cabeza; y con su diestra me abrazará.;;18
-Vuélvete, * vuélvete, oh Sulamite; vuélvete, vuélvete para que podamos contemplarte.;;23
-V. Con esa tu gallardía y hermosura.
-R. Camina, avanza prósperamente y reina.
-Con esa tu gallardía * y hermosura, camina, avanza prósperamente, y reina.;;44
-Dios la protegerá * con su faz; en medio de ella está Dios; no será conmovida.;;45
-Las muchas aguas * no podrán apagar el incendio de la caridad.;;47
-V. Dios la protegerá con su faz.
-R. En medio de ella está Dios; no será conmovida.
-Negra soy, * pero soy bella, hijas de Jerusalén; por esto me ha amado el Rey y me ha introducido en su morada.;;95
-Atráeme en pos de ti * y correremos al olor de tus aromas; tu nombre es óleo derramado.;;96
-Ven, Esposa de Cristo, * recibe la corona que te ha preparado el Señor para siempre.;;97
-V. El Señor la eligió sobre todas las demás. 
-R. Y la hizo habitar en su tabernáculo.
 
 [Lectio4]
 Del Libro de San Ambrosio, Obispo, sobre las viudas.
@@ -125,20 +87,16 @@ R. Al que vi, en quien creí, y al que amé.
 El tesoro es el celestial deseo; el campo, en el que se oculta el tesoro, es una vida digna del cielo. Adquiere este campo, después de haber vendido todas las cosas, el que renunciando a los placeres de la carne, holla todo los deseos terrenos mediante la observancia de la disciplina celestial, de tal suerte que ya nada guste de cuanto halaga a la carne, nada huya de cuanto pueda mortificar la vida de los placeres de la carne.
 &teDeum
 
+[Capitulum Laudes]
+!Sir 51:1-3
+v. Yo te alabo, Rey y Señor mío, te doy gracias, mi Dios y Salvador; anunciaré tu nombre porque me has protegido. Arrancaste mi cuerpo de la perdición.
+$Deo gratias.
+
 [Ant 2]
 Cantadle * por el éxito de su trabajo, que sus obras la alaben en la ciudad. 
 
 [Oratio]
-Escúchanos, Dios Salvador nuestro, para que, en la alegría de la fiesta de Santa N. aprendamos a servirte con amor. 	
-$Per Dominum
-
-[Oratio1]
-Es una maravilla de tu poder, Señor, el triunfo por el martirio de la mujer indefensa; concédenos, a quienes celebramos la victoria de Santa N., mártir, caminar hacia ti, siguiendo sus ejemplos.
-$Per Dominum.
-
-[Oratio2]
-Concédenos, Señor Dios nuestro, celebrar siempre con amor la victoria de tus santas mártires N. y N., para que honremos con humildes obsequios a quienes no podemos venerar dignamente.	
-$Per Dominum
+@Commune/C6::s/virgen y //
 
 [Lectio Prima]
 !Sir 51, 8; 51, 12

@@ -5,21 +5,13 @@ ex C11;
 12 lectiones
 Antiphonas horas
 Doxology=Nat
-
-[Capitulum Vespera]
-@CommuneM/C10
-
-[Hymnus Matutinum]
-@CommuneM/C11:HymnusM Matutinum
+Ant Matutinum 13 special
 
 [Ant Matutinum 3N]
 Hodie concepta est beata virgo Maria ex progenie David, * per quam salus mundi credentibus apparuit.
 
-[Ant Matutinum]
-@CommuneM/C11::1-6
-@Commune/C11::11-12
-Angelus Domini nuntiavit Mariæ, * et concepit de Spiritu Sancto.;;97
-@CommuneM/C11::8-11
+[Ant Matutinum 13]
+@Sancti/03-25:Ant Matutinum 12
 
 [Lectio1]
 @Sancti/12-08o::s/11.*//s s/-13/-11/
@@ -67,10 +59,6 @@ R. Conceptio gloriosæ virginis Mariæ ex femine Abrahæ, ortæ de tribu Juda, c
 V. Hodie concepta est beata virgo Maria ex progenie David.
 R. Cujus vita inclyta cunctas illustrat Ecclesias.
 
-[Lectio6]
-@Sancti/12-08o:Lectio4:s/.*Primus/Primus/s ~
-@Sancti/12-08o:Lectio5:s/Corde .*//s
-
 [Responsory6]
 R. Cum jucunditate Conceptionem beatæ Mariæ celebremus.
 * Ut ipsa pro nobis intercedat ad Dominum Iesum Christum.
@@ -99,7 +87,7 @@ R. Ut ipsa intercedat pro nobis ad Dominum.
 @Sancti/09-13:Lectio7:s/Nam illa .*//s
 
 [Responsory9]
-@Sancti/07-02:Responsory7 
+@Sancti/07-02:Responsory7
 
 [Lectio10]
 @Sancti/09-13:Lectio7:s/.* Nam illa/Nam illa/s s/$/~/
@@ -109,7 +97,7 @@ R. Ut ipsa intercedat pro nobis ad Dominum.
 @Sancti/12-08:Responsory8
 
 [Lectio11]
-@Sancti/09-13:Lectio8:s/.* Neque/Neque/s 
+@Sancti/09-13:Lectio8:s/.* Neque/Neque/s
 
 [Responsory11]
 R. Conceptionem hodiernam perpetuæ virginis Dei genitricis Mariæ solemniter celebremus:
@@ -128,7 +116,3 @@ R. Quia quem cæli capere non poterant, tuo gremio contulisti.
 
 [LectioE]
 @Sancti/09-08
-
-[Capitulum Laudes]
-@CommuneM/C10
-

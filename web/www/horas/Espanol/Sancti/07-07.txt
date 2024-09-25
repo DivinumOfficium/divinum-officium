@@ -1,10 +1,6 @@
 [Rank]
 Ss. Cyrilli et Methodii Pont. et Conf.;;Duplex;;3;;vide C4
 
-[Rule]
-vide C4;
-9 lectiones
-
 [Hymnus Vespera]
 v. Cantad, oh pueblos fieles, a los dos vencedores 
 que hoy celebran su entrada en las moradas 
@@ -61,6 +57,10 @@ Hechos tan notables llegaron a los oídos de Roma, y el Papa Nicolás I llamó a
 [Lectio6]
 Acusado ante Juan VIII, sucesor de Adriano, como suspecto en la fe y de haber cambiado las costumbres, fue llamado a Roma para defenderse ante el Papa, los Obispos y algunos miembros del clero romano. No le costó poner de manifiesto su fidelidad en conservar la fe católica y su celo en enseñar a los demás; y en cuanto al empleo de la lengua eslava en los sagrados ritos, les convenció de que había obrado legítimamente, obedeciendo a sólidos motivos y con anuencia del Papa Adriano, y de que, por otra parte, nada hay en las Sagradas Escrituras que se oponga a esta práctica. Ante tales razones, el romano Pontífice se puso de parte de Metodio, y mandó reconocer su potestad arzobispal y la legitimidad de su misión en los países eslavos, a cuyo efecto publicó él mismo una carta. De vuelta a Moravia, continuó Metodio cumpliendo el cargo que se le confiara, sufriendo de buen grado, hasta el destierro. Condujo a la fe al príncipe de los Bohemios y a su esposa, y extendió por todo el país el nombre de cristiano. Habiendo llevado la luz del Evangelio a Polonia, instituyó una sede episcopal; penetró, según algunos historiadores, en la Moscovia y fundó el obispado de Kiev; volvió por último a Moravia entre los suyos, sintiendo cerca el fin de su carrera, designó él mismo su sucesor, y tras dirigir al clero y al pueblo sus postreras recomendaciones, terminó esta vida, que había sido para él el camino del cielo. Sus funerales tuvieron lugar en Moravia, con los mismos honores tributados a Cirilo en Roma. El Papa León XIII dispuso que la fiesta de ambos, celebrada ya de antiguo entre los eslavos, lo fuera también por toda Iglesia con Oficio y Misa propios.
 
+[Lectio94]
+Cirilo y Metodio eran hermanos, nacidos de una piadosa familia en Tesalónica. El emperador Miguel III los envió a Moravia, donde en poco tiempo llevaron a la nación a la fe de Cristo. Cuando un informe favorable de lo que habían hecho fue llevado a Roma, el Papa San Nicolás I los llamó. En Roma fueron consagrados obispos por el papa Adriano, sucesor de Nicolás. Al poco tiempo, Cirilo murió santamente en Roma, y Metodio regresó a Moravia aumentando su celo en defensa del catolicismo. Confirmó a los bohemios, los pannónimos, los búlgaros y los dálmatas en la fe cristiana, y se esforzó en llevar a los carintios a la adoración del único Dios verdadero. Trajo la luz del Evangelio a Polonia y, como algunos escritores dicen, fundó el obispado de Lemberg. Luego se dirigió a Moscovia y estableció la sede pontificia de Kiev. Por fin regresó a Moravia, exhortó al clero y al pueblo a la virtud con sus últimas palabras, y murió pacíficamente. La festividad de Cirilo y Metodio, ya celebrada por los pueblos eslavos, fue extendida a toda la Iglesia por León XIII.
+&teDeum
+
 [Lectio7]
 @Commune/C1a:Lectio7
 
@@ -114,12 +114,5 @@ R. Y la asamblea pregona su alabanza.
 [Ant 2]
 Con santidad * y justicia sirvieron al Señor todos los días de su vida. Por eso el Señor Dios de Israel los vistió con un traje de gloria.
 
-[Versum 3]
-@:Versum 1
-
 [Ant 3]
 Estos son * los santos que fueron amigos de Dios, gloriosos pregoneros de la verdad divina. Sus lenguas fueron llaves del cielo.
-
-[Lectio94]
-Cirilo y Metodio eran hermanos, nacidos de una piadosa familia en Tesalónica. El emperador Miguel III los envió a Moravia, donde en poco tiempo llevaron a la nación a la fe de Cristo. Cuando un informe favorable de lo que habían hecho fue llevado a Roma, el Papa San Nicolás I los llamó. En Roma fueron consagrados obispos por el papa Adriano, sucesor de Nicolás. Al poco tiempo, Cirilo murió santamente en Roma, y Metodio regresó a Moravia aumentando su celo en defensa del catolicismo. Confirmó a los bohemios, los pannónimos, los búlgaros y los dálmatas en la fe cristiana, y se esforzó en llevar a los carintios a la adoración del único Dios verdadero. Trajo la luz del Evangelio a Polonia y, como algunos escritores dicen, fundó el obispado de Lemberg. Luego se dirigió a Moscovia y estableció la sede pontificia de Kiev. Por fin regresó a Moravia, exhortó al clero y al pueblo a la virtud con sus últimas palabras, y murió pacíficamente. La festividad de Cirilo y Metodio, ya celebrada por los pueblos eslavos, fue extendida a toda la Iglesia por León XIII.
-&teDeum

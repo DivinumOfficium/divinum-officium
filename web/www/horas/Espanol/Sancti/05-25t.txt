@@ -1,10 +1,6 @@
 [Rank]
 S. Gregorii VII Papæ et Confessoris;;Duplex;;3;;vide C4
 
-[Rule]
-vide C4;
-9 lectiones
-
 [Oratio]
 @Sancti/05-25
 
@@ -28,6 +24,9 @@ $Per Dominum.
 [Lectio6]
 @Sancti/05-25
 
+[Lectio94]
+@Sancti/05-25
+
 [Lectio93]
 @Sancti/05-25o
 
@@ -41,6 +40,3 @@ _
 $Oremus.
 Señor Dios, sobre la roca inquebrantable de los apóstoles has fundado a tu Iglesia y la libras del poder de los infiernos; te pedimos, por la intercesión de San Urbano, mártir y sumo pontífice, que se mantenga firme en su verdad y sea protegida por ti siempre.
 $Per Dominum.
-
-[Lectio94]
-@Sancti/05-25

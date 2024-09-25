@@ -1,13 +1,6 @@
 [Rank]
 Sts Philippe et Jacques;;Duplex II classis;;5.1;;ex C1
 
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-StJamesRule=Jas
-
 [Ant Vespera]
 Seigneur, * montrez-nous Votre Père et il nous suffit, alléluia.;;109
 Philíppe, * qui Me voit, voit aussi Mon Père, alléluia.;;110
@@ -62,8 +55,8 @@ Comme ils craignaient donc de périr éloignés de lui, ils étaient à bon droi
 [Ant 2]
 Moi Je suis la voie, * la vérité et la vie : personne ne vient à Mon Père que par Moi, alléluia.
 
+[Ant Vespera 3]
+@:Ant Vespera:s/116/138/ s/112/125/ s/111/115/ s/110/112/
+
 [Ant 3]
 Si vous demeurez en Moi * et que Mes paroles demeurent en vous, tout ce que vous demanderez, il vous sera fait, alléluia, alléluia, alléluia.
-
-[Ant Vespera 3]
-@:Ant Vespera:s/116/138/ s/112/125/ s/111/115/ s/110/112/ 

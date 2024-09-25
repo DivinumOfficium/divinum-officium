@@ -4,26 +4,18 @@
 Psalmi Dominica
 Antiphonas horas
 
-[Ant Matutinum]
-Secus decúrsus aquárum * plantávit víneam justórum, et in lege Dómini fuit volúntas eórum.;;1
-Tamquam aurum * in fornáce probávit eléctos Dóminus: et quasi holocáusta accépit eos in ætérnum.;;2
+[AntMatutinumM]
 Oculi Dómini * respexérunt in páuperes, † cum peccatóres arcus suos in eos inténderent.;;10
-Dabo Sanctis meis * locum nominátum in regno Patris mei, dicit Dóminus.;;14
-Sanctis, qui in terra sunt ejus, * mirificávit omnes voluntátes meas inter illos.;;15
-Sancti qui sperant in Dómino, * habébunt fortitúdinem, assúment pennas ut áquilæ, volábunt, et non defícient.;;23
-V. Lætámini in Dómino, et exsultáte justi.
-R. Et gloriámini omnes recti corde.
-Justi autem * in perpétuum vivent, et apud Dóminum est merces eórum.;;32
-Tradidérunt * córpora sua in mortem, ne servírent idólis: ídeo coronáti póssident palmam.;;33
-Ecce merces * Sanctórum copiósa est apud Deum: ipsi vero mórtui sunt pro Christo, et vivent in ætérnum.;;45
 Istorum est enim  * regnum cælórum, qui contempsérunt vitam mundi, et pervenérunt ad premia regni, et lavérunt stolas suas in sanguine Agni;;60
 Sanguis sanctórum martyrum * pro Christo effúsus est in terra; ideo adépti sunt munera sempitérna;;63
 Vindica Domine * sanguinem Sanctórum tuórum, qui effúsus est super terram;;78
-V. Exsúltent justi in conspéctu Dei.
-R. Et delecténtur in lætítia.
 Beáti, * qui persecutiónem patiúntur propter justítiam, quoníam ipsórum est regnum cælórum;;259;254;255
-V. Justi autem in perpétuum vivent.
-R. Et apud Dóminum est merces eórum.
+
+[Ant Matutinum]
+@Commune/C3::1-2
+@:AntMatutinumM:1
+@Commune/C3::4-9
+@:AntMatutinumM:2-5
 
 [Lectio2]
 @Commune/C3:Lectio2:s/-34/-30/ :s/31 .*//s
@@ -54,7 +46,7 @@ R. Omnes testimónio fídei probáti.
 @Commune/C3:Responsory5
 
 [Lectio7]
-@Commune/C3:Lectio5:s/.* Sed et Paulus /Sed et Paulus /s 
+@Commune/C3:Lectio5:s/.* Sed et Paulus /Sed et Paulus /s
 
 [Responsory7]
 @Commune/C3:Responsory6
@@ -101,15 +93,6 @@ V. Deus tentávit illos, et invénit eos dignos se.
 R. Illi autem sunt in pace.
 &Gloria
 R. Illi autem sunt in pace.
-
-[Responsory TertiaM]
-@Commune/C3:Versum 1
-
-[Responsory SextaM]
-@Commune/C3:Responsory Tertia:8-9
-
-[Responsory NonaM]
-@Commune/C3:Responsory Sexta:8-9
 
 [Ant Vespera 3]
 @Commune/C3::s/112/115/ s/111/112/ s/110/111/

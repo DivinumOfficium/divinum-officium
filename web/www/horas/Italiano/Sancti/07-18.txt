@@ -1,16 +1,18 @@
 [Rank]
 S. Camilli de Lellis Confessoris;;Duplex;;3;;vide C5
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Camilli de Lellis Confessoris;;Duplex optional;;2;;vide C5
-
-[Rule]
-vide C5;mtv
-9 lectiones;
-m.t.v.
 
 [Oratio]
 O Dio, che adornasti san Camillo della prerogativa d'una singolare carità per aiutare le anime lottanti nell'estrema agonia: per i suoi meriti infondi in noi lo spirito del tuo amore ; affinché, nell'ora della nostra morte meritiamo di vincere il nemico, e di giungere alla corona celeste. 
+$Per Dominum
+
+[Commemoratio]
+!Commemorazione per i Ss. Sinforosa e i sette figli Martiri.   
+@Commune/C3:Oratio proper
+v. Preghiamo
+O Signore, che ci dai la grazia di celebrare l'entrata in cielo dei tuoi santi Martiri Sinforosa e dei suoi figli, concedici di godere la loro compagnia nell'eterna felicità del cielo.
 $Per Dominum
 
 [Lectio4]
@@ -38,22 +40,11 @@ Che pensare, fratelli miei? c'è forse un comandamento solo di amarci l'un l'alt
 [Lectio8]
 Ora che cosa può mancare dov'è la carità? E che cosa mai può giovare ove ella non è? Il demonio crede, ma non ama: chi non crede niente, non ama affatto. Così chi non ama, benché non gli sia tolta la speranza del perdono, pure lo spera invano; ma chi ama non può disperarsi. Pertanto dov'è l'amore, c'è di necessità anche la fede e la speranza; e dov'è l'amore del prossimo c'è pure e di necessità l'amore di Dio. Infatti, se uno non ama Dio, come potrà amare il prossimo come se stesso? E chi è che non ami neppure se stesso? È l'empio e l'iniquo; che chi ama l'iniquità, certo non ama, ma odia l'anima sua.
 
-[Lectio93]
-!Commemorazione per i Ss. Sinforosa e i sette figli Martiri.   
-Sinforosa di Tivoli, sposa del Martire Getulio ebbe da lui sette figli, Crescenzio, Giuliano, Nemesio, Primitivo, Giustino, Statteo ed Eugenio; i quali tutti furono arrestati con la loro madre sotto l'imperatore Adriano, perché professavano la fede cristiana. La loro pietà rimanendo invincibile in mezzo a numerosi e diversi tormenti, la madre, che era stata la maestra dei suoi figli nella fede, fu così anche loro di guida al martirio. Infatti attaccatale una pietra al collo, fu precipitata nel fiume: suo fratello Eugenio ne raccolse il corpo e lo seppellì. Il giorno dopo che fu il 18 di Luglio, i sette fratelli attaccati a dei pali furono uccisi in diverse maniere: Crescenzio venne sgozzato; Giuliano ebbe trafitto il petto; Nemesio ebbe perforato il cuore; Primitivo fu trapassato nell'ombelico; Giustino fatto a pezzi; Statteo trafitto con frecce; Eugenio fu squartato in due parti. Così furono immolate a Dio otto ostie accettissime. I loro corpi gettati in una fossa profonda sulla via Tiburtina a nove miglia da Roma, furono poi trasportati a Roma e deposti nella chiesa di sant'Angelo in piscina.
-&teDeum
-
 [Lectio9]
 Osserviamo dunque il comandamento di amare il Signore, al fine di amarci l'un l'altro, e adempiremo così tutto il resto; poiché tutto il resto è compreso in ciò. Un tale amore poi si distingue da quello onde si amano gli uomini tra di loro; e perché si distinguesse, egli ha aggiunto:«Come vi ho amati io» (Giov.15,12). Infatti, perché Cristo ci ama se non perché possiamo regnare con Cristo? Amiamoci dunque in modo da distinguerci dal resto degli uomini che non possono amare gli altri, perché non amano punto se stessi. Quelli invece che si amano per possedere Dio, questi si che si amano. Quindi essi amano Dio per amarsi. Questo amore non c'è in tutti gli uomini, perché son pochi quelli che si amano, affinché Dio sia tutto in tutti. 
 &teDeum
 
-[Commemoratio]
+[Lectio93]
 !Commemorazione per i Ss. Sinforosa e i sette figli Martiri.   
-@Commune/C3:Oratio proper
-v. Preghiamo
-O Signore, che ci dai la grazia di celebrare l'entrata in cielo dei tuoi santi Martiri Sinforosa e dei suoi figli, concedici di godere la loro compagnia nell'eterna felicità del cielo.
-$Per Dominum
-
-[Lectio94]
-Camillo nacque a Bucchianico, nella diocesi di Chieti, dalla nobile famiglia de Lellis. Giovanetto, seguì la carriera militare, lasciandosi andare per qualche tempo ai vizi, ma poi, preso dal rimorso di aver offeso Dio, si presentò in un convento dei Cappuccini, pregandoli insistentemente di riceverlo tra loro. Due volte gli venne accordato quanto domandava; ma, riapertasi un'ulcera incurabile alla gamba di cui aveva sofferto in precedenza, si sottomise umilmente alla volontà dei superiori che per due volte l'avevano accettato e poi dimesso. Partì per Roma e, ordinato sacerdote, fondò la Congregazione dei Chierici regolari con l'obbligo di un quarto voto: di assistere gli ammalati di peste. Affranto dai digiuni e dall'assiduo lavoro, dopo aver sopportato coraggiosamente cinque moleste e lunghe malattie, che egli chiamava le misericordie divine, si addormentò nel Signore il 14 luglio 1614, all'età di sessantacinque anni. Leone XIII lo dichiarò celeste patrono di tutti gli ospedali e degli infermi e, nelle litanie degli agonizzanti, fece inserire l'invocazione del nome di san Camillo.
+Sinforosa di Tivoli, sposa del Martire Getulio ebbe da lui sette figli, Crescenzio, Giuliano, Nemesio, Primitivo, Giustino, Statteo ed Eugenio; i quali tutti furono arrestati con la loro madre sotto l'imperatore Adriano, perché professavano la fede cristiana. La loro pietà rimanendo invincibile in mezzo a numerosi e diversi tormenti, la madre, che era stata la maestra dei suoi figli nella fede, fu così anche loro di guida al martirio. Infatti attaccatale una pietra al collo, fu precipitata nel fiume: suo fratello Eugenio ne raccolse il corpo e lo seppellì. Il giorno dopo che fu il 18 di Luglio, i sette fratelli attaccati a dei pali furono uccisi in diverse maniere: Crescenzio venne sgozzato; Giuliano ebbe trafitto il petto; Nemesio ebbe perforato il cuore; Primitivo fu trapassato nell'ombelico; Giustino fatto a pezzi; Statteo trafitto con frecce; Eugenio fu squartato in due parti. Così furono immolate a Dio otto ostie accettissime. I loro corpi gettati in una fossa profonda sulla via Tiburtina a nove miglia da Roma, furono poi trasportati a Roma e deposti nella chiesa di sant'Angelo in piscina.
 &teDeum

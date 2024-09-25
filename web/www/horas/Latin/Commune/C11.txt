@@ -1,3 +1,5 @@
+@Commune/C6
+
 [Name]
 In Festis Beatae Mariae Virginis
 
@@ -6,15 +8,57 @@ Psalmi Dominica
 Antiphonas horas
 Doxology=Nat
 
-[Ant Vespera]
-Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suavitátis.;;109
+[Ant VesperaBMV]
 Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me.;;112
-Nigra sum, * sed formósa, fíliæ Jerúsalem; ídeo diléxit me Rex, et introdúxit me in cubículum suum.;;121
-Jam hiems tránsiit, * imber ábiit et recéssit: surge, amíca mea, et veni.;;126
 Speciósa * facta es et suávis in delíciis tuis, sancta Dei Génetrix.;;147
 
+[Ant Vespera]
+@Commune/C7::1
+@:Ant VesperaBMV:1
+@Commune/C6:Ant Matutinum:7 s/95/121/
+@Commune/C7::3 s/121/126/
+@:Ant VesperaBMV:2
+
 [Hymnus Vespera]
-@Commune/C10
+/:Prima stropha sequentis hymni dicitur flexis genibus.:/
+v. Ave maris stella,
+Dei Mater alma,
+Atque semper Virgo,
+Felix cæli porta.
+_
+Sumens illud Ave
+Gabriélis ore,
+Funda nos in pace,
+Mutans Hevæ nomen.
+_
+Solve vincla reis,
+Profer lumen cæcis,
+Mala nostra pelle,
+Bona cuncta posce.
+_
+Monstra te esse matrem,
+Sumat per te preces,
+Qui pro nobis natus,
+Tulit esse tuus.
+_
+Virgo singuláris,
+Inter omnes mitis,
+Nos culpis solútos
+Mites fac et castos.
+_
+Vitam præsta puram,
+Iter para tutum,
+Ut vidéntes Jesum,
+Semper collætémur.
+_
+Sit laus Deo Patri,
+Summo Christo decus,
+Spirítui Sancto,
+Tribus honor unus.
+Amen.
+
+[HymnusM Vespera]
+@:Hymnus Vespera
 
 [Versum 1]
 V. Dignáre me laudáre te, Virgo sacráta.
@@ -56,22 +100,22 @@ Cum Patre, et almo Spíritu
 In sempitérna sǽcula.
 Amen.
 
-[Ant Matutinum]
+[Ant MatutinumBMV]
 Benedícta tu * in muliéribus, et benedíctus fructus ventris tui.;;8
 Sicut myrrha * elécta, odórem dedísti suavitátis, sancta Dei Génetrix.;;18
 Ante torum * hujus Vírginis frequentáte nobis dúlcia cántica drámatis.;;23
-V. Spécie tua et pulchritúdine tua.
-R. Inténde, próspere procéde, et regna.
-Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna.;;44
-Adjuvábit eam * Deus vultu suo: Deus in médio ejus, non commovébitur.;;45
 Sicut lætántium * ómnium nostrum habitátio est in te, sancta Dei Génetrix.;;86
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
 Gaude, María Virgo: * cunctas hǽreses sola interemísti in univérso mundo.;;95
 Dignáre me * laudáre te, Virgo sacráta: da mihi virtútem contra hostes tuos.;;96
 Post partum, * Virgo, invioláta permansísti: Dei Génetrix, intercéde pro nobis.;;97
-V. Elégit eam Deus, et præelégit eam.
-R. In tabernáculo suo habitáre facit eam.
+
+[Ant Matutinum]
+@:Ant MatutinumBMV:1-3
+@Commune/C6::4-5
+@:Ant MatutinumBMV:4-7
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 1
 
 [Lectio1]
 De Parábolis Salomónis
@@ -191,43 +235,82 @@ V. Ora pro nobis sancta Dei Génetrix.
 R. Ut digni efficiámur promissiónibus Christi.
 
 [Ant Laudes]
-@:Ant Vespera:s/;;.*//g
+@Commune/C7:Ant Vespera:1 s/;;.*//g
+@:Ant VesperaBMV:1 s/;;.*//g
+@Commune/C6:Ant Matutinum:7 s/;;.*//
+@Commune/C7:Ant Vespera:3 s/;;.*//
+@:Ant VesperaBMV:2 s/;;.*//
 
 [Capitulum Laudes]
-@Commune/C10
+!Sir 24:14
+v. Ab inítio et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi.
+$Deo gratias.
 
 [Hymnus Laudes]
-@Commune/C10
+{:Ogloriosavirginum:}v. O gloriósa vírginum,
+Sublímis inter sídera,
+Qui te creávit, párvulum
+Lacténte nutris úbere.
+_
+Quod Heva tristis ábstulit,
+Tu reddis almo gérmine:
+Intrent ut astra flébiles,
+Cæli reclúdis cárdines.
+_
+Tu Regis alti jánua
+Et aula lucis fúlgida:
+Vitam datam per Vírginem,
+Gentes redémptæ, pláudite.
+_
+* Jesu tibi sit glória,
+Qui natus es de Vírgine,
+Cum Patre, et almo Spíritu,
+In sempitérna sǽcula.
+Amen.
 
 [HymnusM Laudes]
-@Commune/C10
-
-[Versum 2]
-@Commune/C10:Versum 1
+v. O gloriósa Dómina,
+Excélsa super sídera:
+Qui te creávit, próvide
+Lactásti sacro úbere.
+_
+Quod Heva tristis ábstulit,
+Tu reddis almo gérmine:
+Intrent ut astra flébiles,
+Cæli fenéstra facta es.
+_
+Tu Regis alti jánua,
+Et porta lucis fúlgida:
+Vitam datam per Vírginem,
+Gentes redémptæ, pláudite.
+_
+Glória tibi Dómine,
+Qui natus es de Vírgine,
+Cum Patr[e] et Sancto Spíritu,
+In sempitérna sǽcula. Amen.
 
 [Ant 2]
 Beáta es, * María, quæ credidísti: perficiéntur in te, quæ dicta sunt tibi a Dómino, allelúja.
 
 [Oratio]
-@Commune/C10
+Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
+$Per Dominum
 
 [Lectio Prima]
-@Commune/C10
-
-[Responsory Tertia]
-@Commune/C10
+!Sir 24:19-20
+v. In platéis sicut cinnamómum et bálsamum aromatízans odórem dedi: quasi myrrha elécta, dedi suavitátem odóris.
 
 [Capitulum Sexta]
-@Commune/C10
-
-[Responsory Sexta]
-@Commune/C10
+!Sir 24:15-16
+v. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.
+$Deo gratias.
 
 [Capitulum Nona]
-@Commune/C10
+@:Lectio Prima
+$Deo gratias.
 
-[Responsory Nona]
-@Commune/C10
+[Versum Nona]
+@Commune/C6:Versum 2
 
 [Versum 3]
 @:Versum 1

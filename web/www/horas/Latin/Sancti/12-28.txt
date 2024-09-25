@@ -1,11 +1,11 @@
 [Rank]
 Ss. Innocentium;;Duplex II class cum octava simplici;;5.2;;ex C3
 
-[Rank] (rubrica Trident)
-Ss. Innocentium;;Duplex II class cum octava;;5.2;;ex C3
-
 [Rank] (rubrica 196)
 Ss. Innocentium;;Duplex II class;;5.2;;ex C3
+
+[Rank] (rubrica tridentina)
+Ss. Innocentium;;Duplex II class cum octava;;5.2;;ex C3
 
 [Rule]
 ex C3;
@@ -16,16 +16,25 @@ Antiphonas Horas
 no Te Deum
 no Psalm5
 
-[Ant 1]
-Hi sunt, * qui cum muliéribus non sunt coinquináti: vírgines enim sunt, et sequúntur Agnum quocúmque íerit.
+[Hymnus Vespera]
+@Sancti/12-28:Hymnus Laudes
+
+[HymnusM Vespera]
+@Sancti/12-28:HymnusM Laudes
 
 [Versum 1]
 V. Heródes irátus occídit multos púeros.
 R. In Béthlehem Judæ civitáte David.
 
+[Ant 1]
+Hi sunt, * qui cum muliéribus non sunt coinquináti: vírgines enim sunt, et sequúntur Agnum quocúmque íerit.
+
 [Oratio]
 Deus, cujus hodiérna die præcónium Innocéntes Mártyres non loquéndo, sed moriéndo conféssi sunt: ómnia in nobis vitiórum mala mortífica; ut fidem tuam, quam lingua nostra lóquitur, étiam móribus vita fateátur.
 $Per Dominum
+
+[Octava 1]
+@:Octava 3
 
 [Hymnus Matutinum]
 v. Audit tyránnus ánxius
@@ -51,6 +60,9 @@ Amen.
 
 [HymnusM Matutinum]
 @:Hymnus Matutinum:s/Jesu, tibi sit glória/Glória tibi Dómine/
+
+[Ant Matutinum 11]
+Isti sunt qui venérunt * ex magna tribulatióne, et lavérunt stolas suas in sánguine Agni.
 
 [Lectio1]
 De Jeremía Prophéta
@@ -122,9 +134,6 @@ R. Ambulábunt mecum in albis, quia digni sunt.
 &Gloria
 R. Ambulábunt mecum in albis, quia digni sunt.
 
-[Ant Matutinum 11]
-Isti sunt qui venérunt * ex magna tribulatióne, et lavérunt stolas suas in sánguine Agni.
-
 [Lectio7]
 Léctio sancti Evangélii secúndum Matthǽum
 !Matt 2:13-18
@@ -172,9 +181,6 @@ Sub throno Dei * omnes Sancti clamant: Víndica sánguinem nostrum, Deus noster.
 v. Vidi supra montem Sion Agnum stántem, et cum eo centum quadragínta quátuor míllia habéntes nomen ejus, et nomen Patris ejus scriptum in fróntibus suis.
 $Deo gratias
 
-[HymnusM Laudes]
-@:Hymnus Laudes:s/sub/ante/ s/Jesu, tibi sit glória/Glória tibi Dómine/
-
 [Hymnus Laudes]
 v. Salvéte, flores Mártyrum,
 Quos lucis ipso in límine
@@ -192,11 +198,25 @@ Cum Patre et almo Spíritu,
 In sempitérna sǽcula.
 Amen.
 
+[HymnusM Laudes]
+@:Hymnus Laudes:s/sub/ante/ s/Jesu, tibi sit glória/Glória tibi Dómine/
+
 [Versum 2]
 @:Versum 1
 
 [Ant 2]
 @:Ant 1
+
+[Octava 2]
+!Commemoratio Octavæ Ss. Innocentium
+Ant. Hi sunt, qui cum muliéribus non sunt coinquináti: vírgines enim sunt, et sequúntur Agnum quocúmque íerit.
+_
+V. Heródes irátus occídit multos púeros.
+R. In Béthlehem Judæ civitáte David.
+_
+$Oremus
+v. Deus, cujus hodiérna die præcónium Innocéntes Mártyres non loquéndo, sed moriéndo conféssi sunt: ómnia in nobis vitiórum mala mortífica; ut fidem tuam, quam lingua nostra lóquitur, étiam móribus vita fateátur.
+$Per Dominum
 
 [Lectio Prima]
 !Apo 14:4-5
@@ -214,29 +234,12 @@ $Deo gratias
 [Ant Vespera 3]
 @Sancti/12-25
 
-[Hymnus Vespera]
-@Sancti/12-28:Hymnus Laudes
-
-[HymnusM Vespera]
-@Sancti/12-28:HymnusM Laudes
-
 [Versum 3]
 V. Sub throno Dei omnes Sancti clamant.
 R. Víndica sánguinem nostrum, Deus noster.
 
 [Ant 3]
 Innocéntes pro Christo * infántes occísi sunt, ab iníquo rege lacténtes interfécti sunt: ipsum sequúntur Agnum sine mácula, et dicunt semper: Glória tibi, Dómine.
-
-[Octava 2]
-!Commemoratio Octavæ Ss. Innocentium
-Ant. Hi sunt, qui cum muliéribus non sunt coinquináti: vírgines enim sunt, et sequúntur Agnum quocúmque íerit.
-_
-V. Heródes irátus occídit multos púeros.
-R. In Béthlehem Judæ civitáte David.
-_
-$Oremus
-v. Deus, cujus hodiérna die præcónium Innocéntes Mártyres non loquéndo, sed moriéndo conféssi sunt: ómnia in nobis vitiórum mala mortífica; ut fidem tuam, quam lingua nostra lóquitur, étiam móribus vita fateátur.
-$Per Dominum
 
 [Octava 3]
 !Commemoratio Octavæ Ss. Innocentium
@@ -248,6 +251,3 @@ _
 $Oremus
 v. Deus, cujus hodiérna die præcónium Innocéntes Mártyres non loquéndo, sed moriéndo conféssi sunt: ómnia in nobis vitiórum mala mortífica; ut fidem tuam, quam lingua nostra lóquitur, étiam móribus vita fateátur.
 $Per Dominum
-
-[Octava 1]
-@:Octava 3

@@ -3,6 +3,9 @@
 [Ant Vespera]
 @Sancti/06-30::s/\./_/g s/_/.;;109/ s/_/.;;112/ s/_/.;;115/ s/_/.;;138/ s/_//
 
+[Hymnus Vespera]
+@:HymnusM Matutinum
+
 [MM Capitulum]
 @:Capitulum Sexta
 _
@@ -13,6 +16,3 @@ _
 
 [Ant 3]
 @:Ant 1
-
-[Hymnus Vespera]
-@:HymnusM Matutinum

@@ -1,17 +1,11 @@
 [Rank]
 Septem Dolorum Beatae Mariae Virginis;;Duplex 2nd class;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Septem Dolorum Beatae Mariae Virginis;;Duplex 2nd class;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Septem Dolorum Beatae Mariae Virginis;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
 
 [Ant Vespera]
 Dov'è andato * il tuo diletto, o bellissima fra le donne? dove s'è portato il tuo diletto, e lo cercheremo con te?;;109
@@ -19,6 +13,59 @@ Allontanatevi da me, * piangerò amaramente, non vogliate affannarvi a consolarm
 Egli non ha * né forma né bellezza, e noi l'abbiam visto, ma non aveva aspetto.;;121
 Dalla pianta dei piedi * fino alla sommità del capo non c'è in lui parte sana.;;126
 Sostenetemi coi fiori, * confortatemi colle mele, perch'io languisco d'amore.;;147
+
+[Hymnus Vespera]
+v. La notte s'affretti a calare per tutto il cielo, 
+e il sole acceleri lo sbigottito giorno, 
+mentre commemoro le ignominie della morte crudele, 
+e la catastrofe d'un Dio.
+_
+Assistevi spettatrice, o Madre, al supplizio 
+fra un mar di pene, mostrando cuore adamantino; 
+allorché il Figlio penzoloni dalla funerea croce 
+mandò un gran grido.
+_
+La vista del Figlio pendente, lacero 
+per atroci battiture, del Figlio squarciato 
+da larghe ferite, di quanti pungenti 
+aculei non ti trafisse!
+_
+Ah! gli sputi, gli schiaffi, i flagelli, le piaghe, 
+i chiodi, il fiele, l'aloe, la spugna, la lancia, 
+la sete, le spine, il sangue con quale svariata tirannide 
+oppressero il tuo tenero cuore!
+_
+Frattanto, più generosa di tutti i Martiri, 
+la Vergine sta intrepida: con prodigio nuovo, 
+tu, Madre, muori senza morire, 
+trafitta da tanti orribili dolori.
+_
+Alla somma Triade sia gloria, lode, onore, 
+alla quale domando umilmente, con istante preghiera, 
+di poter imitare la forza della Vergine 
+nelle cose avverse.
+Amen.
+
+[Versum 1]
+V. Regina dei Martiri, prega per noi.
+R. Tu che rimanesti intrepida presso la croce di Gesù.
+
+[Doxology]
+O Gesù, sia gloria a te, 
+che hai patito per i servi, 
+insieme col Padre e collo Spirito Santo, 
+per i secoli eterni.
+Amen.
+
+[Ant 1]
+Non badate * s'io sono bruna, perché m'ha abbronzata il sole: i figli di mia madre mi fecero guerra.
+
+[Oratio]
+O Dio, nella cui passione, secondo la profezia di Simeone, la spada del dolore trapassò l'anima dolcissima della gloriosa Vergine e Madre Maria: concedi benigno, che, come ne celebriamo con venerazione i dolori, Così conseguiamo abbondante il frutto della tua passione: 
+$Qui vivis
+
+[Invit]
+Stiamo presso la Croce con Maria Madre di Gesù, * La cui anima fu trapassata dalla spada del dolore.
 
 [Hymnus Matutinum]
 v. O in qual mar di lacrime, 
@@ -55,55 +102,6 @@ sia alla sovrana Trinità
 gloria eterna, 
 lode perenne e onore, 
 ora e per tutti i secoli.
-Amen.
-
-[Versum 1]
-V. Regina dei Martiri, prega per noi.
-R. Tu che rimanesti intrepida presso la croce di Gesù.
-
-[Ant 1]
-Non badate * s'io sono bruna, perché m'ha abbronzata il sole: i figli di mia madre mi fecero guerra.
-
-[Doxology]
-O Gesù, sia gloria a te, 
-che hai patito per i servi, 
-insieme col Padre e collo Spirito Santo, 
-per i secoli eterni.
-Amen.
-
-[Invit]
-Stiamo presso la Croce con Maria Madre di Gesù, * La cui anima fu trapassata dalla spada del dolore.
-
-[Hymnus Vespera]
-v. La notte s'affretti a calare per tutto il cielo, 
-e il sole acceleri lo sbigottito giorno, 
-mentre commemoro le ignominie della morte crudele, 
-e la catastrofe d'un Dio.
-_
-Assistevi spettatrice, o Madre, al supplizio 
-fra un mar di pene, mostrando cuore adamantino; 
-allorché il Figlio penzoloni dalla funerea croce 
-mandò un gran grido.
-_
-La vista del Figlio pendente, lacero 
-per atroci battiture, del Figlio squarciato 
-da larghe ferite, di quanti pungenti 
-aculei non ti trafisse!
-_
-Ah! gli sputi, gli schiaffi, i flagelli, le piaghe, 
-i chiodi, il fiele, l'aloe, la spugna, la lancia, 
-la sete, le spine, il sangue con quale svariata tirannide 
-oppressero il tuo tenero cuore!
-_
-Frattanto, più generosa di tutti i Martiri, 
-la Vergine sta intrepida: con prodigio nuovo, 
-tu, Madre, muori senza morire, 
-trafitta da tanti orribili dolori.
-_
-Alla somma Triade sia gloria, lode, onore, 
-alla quale domando umilmente, con istante preghiera, 
-di poter imitare la forza della Vergine 
-nelle cose avverse.
 Amen.
 
 [Ant Matutinum]
@@ -263,16 +261,12 @@ R. Facci godere nel regno dei cieli.
 [Ant 2]
 Venite, * saliamo al monte del Signore, e vedete se c'è dolore simile al mio dolore.
 
-[Oratio]
-O Dio, nella cui passione, secondo la profezia di Simeone, la spada del dolore trapassò l'anima dolcissima della gloriosa Vergine e Madre Maria: concedi benigno, che, come ne celebriamo con venerazione i dolori, Così conseguiamo abbondante il frutto della tua passione: 
-$Qui vivis
-
-[Versum Prima]
-Che soffrì per la nostra salvezza.
-
 [Lectio Prima]
 !Lam. 2:18
 v. Spandi qual torrente le lacrime di giorno e di notte; non darti requie, e non quieti la pupilla del tuo occhio.
+
+[Versum Prima]
+Che soffrì per la nostra salvezza.
 
 [Responsory Tertia]
 R.br. O voi tutti, * Che passate per la via.
@@ -316,10 +310,6 @@ R. Mazzetto di mirra * È il mio diletto per me.
 _
 V. L'anima mia si liquefece.
 R. Appena il diletto ebbe parlato.
-
-[Versum 3]
-V. Regina dei Martiri, prega per noi.
-R. Tu che rimanesti intrepida presso la croce di Gesù.
 
 [Ant 3]
 Il dolore mi oppresse, * e la mia faccia si gonfiò per il pianto, e le mie palpebre si ottenebrarono.

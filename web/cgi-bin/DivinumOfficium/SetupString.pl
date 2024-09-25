@@ -8,7 +8,7 @@ use DivinumOfficium::FileIO qw(do_read);
 use DivinumOfficium::Date qw(monthday);
 
 # Read only global variables
-our $version;
+our $version, $datafolder;
 
 # Global Variables to be filled here
 our %setupstring_caches_by_version;

@@ -1,16 +1,15 @@
 [Rank]
 Oktawa Św. Szczepana Pierwszego Męczennika;;Simplex;;1.1;;vide Sancti/12-26
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1955)
 Drugi dzień stycznia;;Feria;;1.2;;vide Sancti/01-01
 
 [Rank] (rubrica tridentina)
 Oktawa Św. Szczepana Pierwszego Męczennika;;Duplex;;3;;ex Sancti/12-26
 
-[Rule]
-vide Sancti/12-26
-Feria Te Deum
-Comkey=70
+[Oratio] (rubrica divino aut rubrica tridentina aut rubrica monastica)
+Wszechmogący, wieczny Boże, który poświęciłeś pierwociny Męczenników we krwi błogosławionego diakona Szczepana; pozwól, prosimy, aby on, który się nawet za swoich prześladowców modlił, wstawiał się i za nami do Pana naszego, Jezusa Chrystusa, Syna Twojego:
+$Qui tecum
 
 [Lectio1]
 Z Listu św. Pawła Apostoła do Rzymian
@@ -19,7 +18,7 @@ Z Listu św. Pawła Apostoła do Rzymian
 2 przez którego téż przez wiarę mamy przystęp ku téj łasce, w któréj stoimy i chlubimy się, w nadziei chwał synów Bożych. 
 3 A nie tylko, ale się téż i w uciskach chlubimy, wiedząc, iż ucisk sprawuje cierpliwość, 
 4 a cierpliwość doświadczenie, a doświadczenie nadzieję;
-5 a nadzieja nie pohańbia, iż miłość Boża rozlana jest w sercach naszych przez Ducha Świętego, który nam jest dan. 
+5 a nadzieja nie pohańbia, iż miłość Boża rozlana jest w sercach naszych przez Ducha Świętego, który nam jest dan.
 
 [Lectio2]
 !Rz 5:6-9
@@ -33,7 +32,3 @@ Z Listu św. Pawła Apostoła do Rzymian
 10 Bo jeźli, gdyśmy byli nieprzyjaciółmi, jesteśmy pojednani z Bogiem przez śmierć Syna jego, daleko więcéj pojednani, będziemy zbawieni w żywocie jego.
 11 A nie tylko; ale się téż i chlubimy w Bogu przez Pana naszego, Jezusa Chrystusa, przez któregośmy teraz pojednanie otrzymali.
 12 Dlatego, jako przez jednego człowieka grzech na ten świat wszedł, a przez grzech śmierć, i tak na wszystkie ludzie śmierć przeszła, w którym wszyscy zgrzeszyli.
-
-[Oratio] (rubrica divino aut rubrica tridentina aut rubrica monastica)
-Wszechmogący, wieczny Boże, który poświęciłeś pierwociny Męczenników we krwi błogosławionego diakona Szczepana; pozwól, prosimy, aby on, który się nawet za swoich prześladowców modlił, wstawiał się i za nami do Pana naszego, Jezusa Chrystusa, Syna Twojego:
-$Qui tecum

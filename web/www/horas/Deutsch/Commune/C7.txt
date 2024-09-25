@@ -1,29 +1,15 @@
 [Name]
-Commune non Virginum Martyrum
+Commune der Märtyrerinnen und Witwen
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
-[Capitulum Laudes]
-!Sir 51:1-3
-v. Ich danke dir, o Herr und König, und preise dich, o Gott, mein Retter. Ich danke deiner Majestät; denn du bist mein Helfer und Beschützer geworden und hast mich bewahrt vor dem Untergang.
-$Deo gratias.
+[Ant Vespera]
+Als der König sich aufhielt * in seinem Gemach, ließ meine Nardentaube den lieblichsten Geruch zu ihm aufsteigen.;;109
+We will run after thee, * in the savour of thy good ointments. The virgins love them exceedingly.;;112
+Nun ist vorbei die Winterszeit, * vorüber sind die Regengüsse: auf also, meine Geliebte, und komm zu mir.;;121
+Come, O My chosen one, * and I will establish My throne in thee. Alleluia.;;126
+She is beautiful * among the daughters of Jerusalem.;;147
 
 [Invit]
 Wir wollen unsern Gott loben * Am Festtag der heiligen N.
-
-[Hymnus Matutinum]
-{:H-Virginisproles:}v. Auf der Heil'gen Fleh'n, hehrer Gott, verzeih uns
-Die verdiente Straf', und in Gnad' gewähr uns:
-Dass mit reiner Brust wir dir Dank darbringen
-Im ew'gen Singen.
-_
-Ruhm sei, Vater, dir, Ruhm dir, Eingebor'ner,
-Ruhm dir, Heil'ger Geist auf dem gleichen Throne,
-Als der beiden Kraft, drum in gleichen Weisen
-Ewig zu preisen.
-Amen.
 
 [Lectio7]
 Lesung aus dem heiligen Evangelium nach Matthäus
@@ -55,20 +41,16 @@ R. Den ich gesehen habe, den ich liebgewonnen habe, dem ich geglaubt habe, den i
 Der Schatz ist aber der ersehnte Himmel; der Acker nun, in dem der Schatz versteckt wird, das arbeitsame Streben nach dem Himmel. Diesen Acker also schafft sich nach Verkauf alles Besitzes der an, der nach Verzicht auf sinnliche Vergnügungen alle seine irdischen Wünsche durch die Wachsamkeit im Streben nach dem Himmel gleichsam mit Füßen tritt, so dass der Geist nichts von dem anstrebt, wonach das Fleisch lechzt, und vor nichts zurückschreckt, was das Sinnlichkeitsleben abtötet.
 &teDeum
 
+[Capitulum Laudes]
+!Sir 51:1-3
+v. Ich danke dir, o Herr und König, und preise dich, o Gott, mein Retter. Ich danke deiner Majestät; denn du bist mein Helfer und Beschützer geworden und hast mich bewahrt vor dem Untergang.
+$Deo gratias.
+
 [Ant 2]
 Gebt ihr, * was sie verdient hat mit ihren Händen, und ihr Lob sollen am Stadttor ihre Werke kundtun.
 
 [Oratio]
-Erhöre uns, o Gott, du Urquell unseres Segens, damit wir, wie wir am Feste deiner heiligen Jungfrau N. Freude haben, so auch in der Gesinnung veredelt und zur liebevollen Unterwürfigkeit angeleitet werden.
-$Per Dominum
-
-[Oratio1]
-O Gott, der du unter anderen Wunderwerken deiner Allmacht auch in das schwache Geschlecht die siegreiche Kraft zum blutigen Zeugnis für dich hineingelegt hast, verleihe uns in deiner Huld die Gnade, dass wir, die wir deiner heiligen Martyrin N. Eingang zum Leben feiern, durch Befolgung ihres Beispiels zu dir voranschreiten.
-$Per Dominum.
-
-[Oratio2]
-Gib uns, wir bitten dich, o Herr, unser Gott, die Gnade, dass wir die von deinen heiligen Martyrinnen N. und N. errungenen Siegespalmen in ununterbrochener Andacht verehren, damit wir an sie, die wir mit einer Gesinnung, wie sie ihrer würdig wäre, gar nicht preisen können, wenigstens mit demütiger Huldigung herantreten.
-$Per Dominum
+@Commune/C6::s/Jungfrau und //
 
 [Lectio Prima]
 !Sir 51,8; 51,12

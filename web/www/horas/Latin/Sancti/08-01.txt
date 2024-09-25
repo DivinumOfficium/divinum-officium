@@ -14,19 +14,6 @@ Dixit Angelus * ad Petrum: Circúmda tibi vestiméntum tuum, et séquere me.
 Misit Dóminus * Angelum suum, et liberávit me de manu Heródis, allelúja.
 Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam.;;116
 
-[HymnusM Vespera]
-v. Petrus beátus catenárum láqueos,
-Christo jubénte, rupit mirabíliter:
-Custos ovílis et Doctor Ecclésiæ,
-Pastórque gregis, conservátor óvium,
-Arcet lupórum truculéntam rábiem.
-_
-Glória Patri per imménsa sǽcula,
-Sit tibi Nate decus et impérium,
-Honor, potéstas, Sanctóque Spirítui:
-Sit Trinitáti salus indivídua,
-Per infiníta sæculórum sǽcula. Amen.
-
 [Hymnus Vespera]
 v. Miris modis repénte liber, férrea,
 Christo jubénte, vincla Petrus éxuit:
@@ -40,6 +27,19 @@ Tibíque laudes concinámus ínclytas,
 Honor tibi decúsque: sancta júgiter
 Laudétur omne Trínitas per sǽculum.
 Amen.
+
+[HymnusM Vespera]
+v. Petrus beátus catenárum láqueos,
+Christo jubénte, rupit mirabíliter:
+Custos ovílis et Doctor Ecclésiæ,
+Pastórque gregis, conservátor óvium,
+Arcet lupórum truculéntam rábiem.
+_
+Glória Patri per imménsa sǽcula,
+Sit tibi Nate decus et impérium,
+Honor, potéstas, Sanctóque Spirítui:
+Sit Trinitáti salus indivídua,
+Per infiníta sæculórum sǽcula. Amen.
 
 [Versum 1]
 @Sancti/02-22
@@ -113,6 +113,10 @@ Quo ex témpore honos, qui eo die profánis Gentílium celebritátibus tríbui s
 &Gloria
 R. Et ídeo tibi tráditæ sunt claves regni cælórum.
 
+[Lectio94]
+Theodósio junióre imperánte, Eudócia ejus uxor Jerosólymæ insígne præ céteris donum accépit férreæ caténæ, quam illam esse affirmábant, qua Petrus Apóstolus ab Heróde vinctus fúerat. Eudócia caténam pie veneráta, Romam ad fíliam Eudóxiam misit, ubi a summo Pontífice compósita cum ea, qua Neróne imperatóre idem beátus Apóstolus constríctus fúerat, ambæ inter se sic connéxæ sunt, ut non duæ, sed una caténa ab uno artífice confécta esse viderétur. Hinc, cum et ægrotórum salus et obsessórum liberátio, sacro horum vinculórum contáctu, sæpe obtinerétur, tantus honor sacris illis vínculis habéri cœpit, ut proptérea hoc nómine sancti Petri ad víncula ecclésia, título Eudóxiæ, dedicáta sit in Exquíliis, ejúsque memóriæ dies festus, profánis Gentílium solemnitátibus abólitis, institútus fúerit Kaléndis Augústi.
+&teDeum
+
 [Lectio7]
 Léctio sancti Evangélii secúndum Matthǽum
 !Matt 16:13-19
@@ -150,7 +154,7 @@ Quidnam Machabǽi? Horum enim nómine dies festus præsénti frequéntia celebr�
 @Sancti/02-22
 
 [Versum 2]
-@Sancti/02-22:Versum 1
+@:Versum 1
 
 [Ant 2]
 @Sancti/02-22
@@ -163,13 +167,10 @@ Quidnam Machabǽi? Horum enim nómine dies festus præsénti frequéntia celebr�
 
 [Capitulum Nona]
 @:Lectio Prima
+$Deo gratias
 
 [Ant Vespera 3]
 @:Ant Vespera:s/\./_;;109/s s/\./_;;112/ s/\./_;;115/ s/\./_;;125/ s/116/138/ s/_/./g
 
 [Ant 3]
 Solve, * jubénte Deo, terrárum, Petre, caténas, qui facis ut páteant cæléstia regna beátis.
-
-[Lectio94]
-Theodósio junióre imperánte, Eudócia ejus uxor Jerosólymæ insígne præ céteris donum accépit férreæ caténæ, quam illam esse affirmábant, qua Petrus Apóstolus ab Heróde vinctus fúerat. Eudócia caténam pie veneráta, Romam ad fíliam Eudóxiam misit, ubi a summo Pontífice compósita cum ea, qua Neróne imperatóre idem beátus Apóstolus constríctus fúerat, ambæ inter se sic connéxæ sunt, ut non duæ, sed una caténa ab uno artífice confécta esse viderétur. Hinc, cum et ægrotórum salus et obsessórum liberátio, sacro horum vinculórum contáctu, sæpe obtinerétur, tantus honor sacris illis vínculis habéri cœpit, ut proptérea hoc nómine sancti Petri ad víncula ecclésia, título Eudóxiæ, dedicáta sit in Exquíliis, ejúsque memóriæ dies festus, profánis Gentílium solemnitátibus abólitis, institútus fúerit Kaléndis Augústi.
-&teDeum

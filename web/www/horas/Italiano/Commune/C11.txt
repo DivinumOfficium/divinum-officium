@@ -1,17 +1,47 @@
 [Name]
 In Festis Beatæ Mariæ Virginis
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-
-[Ant Vespera]
-Mentre il re * era adagiato alla sua mensa, il mio nardo mandò soave profumo.;;109
+[Ant VesperaBMV]
 La sua sinistra * mi circonda il capo, e la sua destra mi tiene abbracciata.;;112
-Sono bruna * ma bella, o figlie di Gerusalemme, perciò il Re mi amò e mi introdusse nella sua dimora.;;121
-L'inverno è già passato, * la pioggia è cessata e sparita: sorgi, amica mia, e vieni.;;127
 Tu sei diventata bella * e dolce nelle tue delizie, o santa Madre di Dio.;;147
+
+[Hymnus Vespera]
+/:La prima strofa del seguente inno si dice inginocchiati.:/
+v. Ave, stella del mare,
+augusta  Madre di Dio
+e sempre Vergine,
+felice porta del cielo.
+_
+Ricevendo quell'Ave
+dalla bocca di Gabriele,
+fondaci nella pace
+mutando il nome di Eva.
+_
+Spezza le catene ai rei,
+da' luce ai ciechi
+scaccia i nostri mali
+e dacci ogni bene.
+_
+Mostra di essere madre,
+ascolti per mezzo di te le suppliche,
+Colui che nato per noi
+volle farsi tuo Figlio.
+_
+Vergine singolare,
+la più dolce di tutte,
+liberaci dalle colpe
+e rendici dolci e puri.
+_
+Accordaci una vita illibata
+insegnaci la retta via,
+affinché vedendo Gesù,
+godiamo con te per sempre.
+_
+Sia lode a Dio Padre,
+onore al sommo Cristo
+e allo Spirito Santo,
+e a tutti e tre un solo onore.
+Amen.
 
 [Versum 1]
 V. Fammi degno di lodarti, Vergine santa.
@@ -50,22 +80,14 @@ con il Padre e lo Spirito Santo,
 per tutti i secoli.
 Amen.
 
-[Ant Matutinum]
+[Ant MatutinumBMV]
 Tu sei benedetta * fra le donne e benedetto è il frutto del tuo seno.;;8
 Santa Madre di Dio * come aroma prezioso, hai emanato soave profumo.;;18
 Al prodigio * della sua verginità innalziamo festosi un cantico di gioia.;;23
-V. Con il tuo splendore e con la tua bellezza.
-R. Vieni, avanza lietamente, e regna.
-Con il tuo splendore * e con la tua bellezza, vieni, avanza lietamente, e regna.;;44
-L'aiuterà * Dio con la sua presenza: Dio è in lei; non vacillerà.;;45
 Siamo nella gioia, * tutti noi che abitiamo in te, o santa Madre di Dio.;;86
-V. L'aiuterà Iddio con la sua presenza.
-R. Dio è in lei; non sarà scossa.
 Rallegrati, * o vergine Maria, perché da sola hai distrutto tutte le eresie nel mondo intero.;;95
 Fammi degno * di lodarti, o Vergine santa: dammi forza contro i tuoi nemici.;;96
 Dopo il parto, * o Vergine, sei rimasta inviolata: Madre di Dìo, intercedi per noi.;;97
-V. L'ha eletta Iddio e l'ha prescelta.
-R. La fa abitare nella sua dimora.
 
 [Lectio1]
 Lettura dal libro dei Proverbi
@@ -185,12 +207,42 @@ R. Perché grandi cose ha fatto in me il Signore che è potente, e il cui nome �
 v. Da principio e prima dei secoli  io sono stata creata, e fino all'età futura non cesserò di esistere, ed ho servito nel santuario alla sua presenza.
 $Deo gratias.
 
-[Versum 2]
-V. La grazia è cosparsa sulle tue labbra.
-R. Perciò Iddio ti ha benedetta in eterno.
+[Hymnus Laudes]
+v. O gloriosa tra le Vergini,
+assisa al di sopra degli astri,
+Colui che t'ha creata
+tu nutrì col latte del tuo seno.
+_
+Ciò che a noi tolse la triste Eva,
+tu rendi colla tua augusta prole;
+affinché i miseri trovino adito nell'empireo,
+tu del cielo schiudi le porte.
+_
+Tu del gran Re sei la porta,
+Tu sei la corte fulgente di luce.
+O genti redente, applaudite
+alla vita dataci dalla Vergine.
+_
+Sia gloria a te, o Gesù,
+che sei nato dalla Vergine,
+insieme col Padre e con lo Spirito Santo,
+per tutti i secoli. Amen.
 
 [Ant 2]
 Tu sei beata, o Maria, * perché hai creduto: si adempiranno in te le cose che ti sono state dette dal Signore, alleluia.
+
+[Oratio]
+Concedi a noi tuoi servi, o Signore, di godere perpetua sanità di anima e di corpo e di esser liberati, per intercessione della beata Vergine Maria, dalla tristezza nella vita presente e di essere ammessi all'eterno gaudio del cielo.
+$Per Dominum
+
+[Lectio Prima]
+!Sir 24:19-20
+v. Nelle piazze ho mandato profumo come la cannella e il balsamo aromatico: ho emanato soave profumo come di mirra squisita.
+
+[Capitulum Sexta]
+!Sir 24:15-16
+v. E così ebbi stabile dimora in Sion, e nella città santa trovai anche il mio riposo, e in Gerusalemme la mia potenza. E misi radici in mezzo al popolo glorioso, che ha la sua eredità nel dominio del mio Dio, e la mia dimora è nell'assemblea dei santi.  
+$Deo gratias.
 
 [Ant 3]
 Tutte le generazioni mi chiameranno beata, * poiché Dio guardò ad un umile ancella.

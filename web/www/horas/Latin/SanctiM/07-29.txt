@@ -1,5 +1,30 @@
-[Rank]
-Ss. Felicis, Simplicii, Faustini et Beatricis Martyrum;;Simplex;;1.1
+@Sancti/07-29
 
-[Commemoratio]
-@Sancti/07-29:Commemoratio
+[Rule]
+vide C6b:
+12 lectiones;
+
+[Lectio5]
+@Sancti/07-29:Lectio4: s/ Sed.*//
+
+[Lectio6]
+@Sancti/07-29:Lectio4: s/.* Sed/Sed/
+@Sancti/07-29:Lectio5: s/ Magdalena.*//
+
+[Lectio7]
+@Sancti/07-29:Lectio5: s/.* Magdalena/Magdalena/
+
+[Lectio8]
+@Sancti/07-29:Lectio6
+
+[Lectio9]
+@Sancti/07-29:Lectio7
+
+[Lectio10]
+@Sancti/07-29:Lectio8: s/ Habebat.*//
+
+[Lectio11]
+@Sancti/07-29:Lectio8: s/.* Habebat/Habebat/
+
+[Lectio12]
+@Sancti/07-29:Lectio9

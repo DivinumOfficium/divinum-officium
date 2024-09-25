@@ -1,47 +1,16 @@
 [Rank]
 In Commemoratione Omnium Fidelium Defunctorum;;Duplex;;3;;ex C9
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
-
-[Rule]
-ex C9
-Psalmi Dominica
-Antiphonas horas
-Special Conclusio
-Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium
-Limit Benedictiones Oratio
-Requiem gloria
-9 lectiones
-Responsory9
-no Te Deum
-(rubrica 1955 aut rubrica 1960) No prima Vespera
 
 [Initial]
 $Pater noster
 $Ave Maria
 (sed rubrica 1960 aut rubrica innovata omittuntur)
 
-[Special Completorium]
-$Confiteor
-$Misereatur
-$Indulgentiam
-
-&psalm(122)
-
-&psalm(141)
-
-&psalm(142)
-
-&psalm(233)
-
-&special('Oratio mortuorum1', 'Espanol')
-
-&special('Conclusio', 'Espanol')
-
-[Oratio Matutinum]
-@Commune/C9:Oratio_Fid:s/&Dominus_vobiscum2/_\n&Dominus_vobiscum/
+[Oratio mortuorum]
+@Commune/C9:Oratio 2
 
 [Oratio mortuorum1]
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
@@ -49,23 +18,10 @@ $Indulgentiam
 _
 $Oremus
 v. Ten misericordia, Señor, de tus siervos, por cuya salvación te ofrecemos con humildad este sacrificio de alabanza; y por este misterio de reconciliación merezcan llegar al descanso eterno.
-$Per Dominum 
-
-[Oratio mortuorum]
-@Commune/C9:Oratio 2
-
-[Oratio mortuorum2]
-@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
-&Dominus_vobiscum2
-_
-$Oremus
-v. Humildemente te pedimos, Señor, por las almas de todos tus siervos y siervas, perdónales las faltas cometidas a lo largo de su vida, y por tu bondad da término a sus penas.
 $Per Dominum
 
-[Conclusio]
-&Gloria
-V. Descansen en paz.
-R. Amén.
+[Oratio Matutinum]
+@Commune/C9:Oratio_Fid:s/&Dominus_vobiscum2/_\n&Dominus_vobiscum/
 
 [Lectio1]
 @Commune/C9
@@ -102,7 +58,7 @@ De la Iª Epist. de San Pablo a los Corintios
 19 Si sólo mirando a esta vida tenemos la esperanza puesta en Cristo, somos los más miserables de todos los hombres. 
 20 Pero no, Cristo ha resucitado de entre los muertos, primicias de los que reposan. 
 21 Porque, como por un hombre vino la muerte, también por un hombre vino la resurrección de los muertos. 
-22 Y como en Adán mueren todos, así también en Cristo serán todos vivificados. 
+22 Y como en Adán mueren todos, así también en Cristo serán todos vivificados.
 
 [Lectio8]
 !1 Cor 15:35-44
@@ -115,7 +71,7 @@ De la Iª Epist. de San Pablo a los Corintios
 41 Uno es el resplandor del sol, otro el de la luna y otro el de las estrellas; y una estrella se diferencia de la de otra en el resplandor. 
 42 Pues así en la resurrección de los muertos. Se siembra en corrupción, y se resucita en incorrupción. 
 43 Se siembra en ignominia, y se levanta en gloria. Se siembra en flaqueza, y se levanta en poder. 
-44 Se siembra cuerpo animal, y se levanta un cuerpo espiritual. Pues si hay un cuerpo animal, también lo hay espiritual. 
+44 Se siembra cuerpo animal, y se levanta un cuerpo espiritual. Pues si hay un cuerpo animal, también lo hay espiritual.
 
 [Responsory8]
 R. Señor, no me juzgues según merecen mis obras; nada digno he hecho en tu presencia; por esto ruego a tu majestad. 
@@ -132,7 +88,7 @@ R. Que Tú, oh Dios, borres mi pecado.
 55 ¿Dónde está, muerte, tu victoria? ¿Dónde está, muerte, tu aguijón? 
 56 El aguijón de la muerte es el pecado, y la fuerza del pecado la Ley. 
 57 Pero gracias sean dadas a Dios, que nos da la victoria por nuestro Señor Jesucristo. 
-58 Así, pues, hermanos míos muy amados, manteneos firmes, inconmovibles, abundando siempre en la obra del Señor, teniendo presente que vuestro trabajo no es vano en el Señor. 
+58 Así, pues, hermanos míos muy amados, manteneos firmes, inconmovibles, abundando siempre en la obra del Señor, teniendo presente que vuestro trabajo no es vano en el Señor.
 
 [Responsory9]
 R. Líbrame, Señor, de la muerte eterna, en aquel tremendo día, 
@@ -143,6 +99,19 @@ V. Día aquél, día de ira, de calamidad y miseria, día grande y amargo sobrem
 R. Cuando vinieres a juzgar al siglo con el fuego.  
 $Requiem
 R. Líbrame, Señor, de la muerte eterna, en aquel tremendo día, * En que serán conmovidos los cielos y la tierra. * Cuando vinieres a juzgar al siglo con el fuego. 
+
+[Conclusio]
+&Gloria
+V. Descansen en paz.
+R. Amén.
+
+[Oratio mortuorum2]
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+&Dominus_vobiscum2
+_
+$Oremus
+v. Humildemente te pedimos, Señor, por las almas de todos tus siervos y siervas, perdónales las faltas cometidas a lo largo de su vida, y por tu bondad da término a sus penas.
+$Per Dominum
 
 [Special Prima]
 &special('Initial', 'Espanol')
@@ -205,5 +174,22 @@ $Amen
 &psalm(101,24,29)
 
 &special('Oratio mortuorum', 'Espanol')
+
+&special('Conclusio', 'Espanol')
+
+[Special Completorium]
+$Confiteor
+$Misereatur
+$Indulgentiam
+
+&psalm(122)
+
+&psalm(141)
+
+&psalm(142)
+
+&psalm(233)
+
+&special('Oratio mortuorum1', 'Espanol')
 
 &special('Conclusio', 'Espanol')

@@ -1,7 +1,7 @@
 [Rank]
 S. Laurentii a Brundusio Confessoris;;Duplex;;3;;vide C5a
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Laurentii a Brundusio Confessoris;;Duplex optional;;2;;vide C5a
 
 [Rule]
@@ -9,8 +9,11 @@ vide C5a;
 Gloria
 
 [Oratio]
-O God, Who, to enable him to accomplish tasks, no matter how difficult, for the~
-glory of Your name and the salvation of souls, endowed blessed Lawrence, Your~
-Confessor and Doctor, with the spirit of wisdom and fortitude; grant us, in the~
-same spirit, ever to know our duty, and through his prayers to do it.
+O God, Who, to enable him to accomplish tasks, no matter how difficult, for the glory of Your name and the salvation of souls, endowed blessed Lawrence, Your Confessor and Doctor, with the spirit of wisdom and fortitude; grant us, in the same spirit, ever to know our duty, and through his prayers to do it.
 $Per Dominum
+
+[Secreta]
+@Commune/C4a:Secreta1:s/N\./Lawrence/
+
+[Postcommunio]
+@Commune/C4a:Postcommunio1:s/N\./Lawrence/

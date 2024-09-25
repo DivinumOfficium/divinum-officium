@@ -1,11 +1,6 @@
 [Rank]
 S. Joannis Apostoli ante Portam Latinam;;Duplex majus;;4;;ex C1
 
-[Rule]
-ex C1;
-9 lectiones
-StJamesRule=John,Rev
-
 [Ant 1]
 San Juan Apóstol * fue arrojado a una tina de aceite hirviendo, pero protegido por la divina gracia, salió indemne, aleluya.
 
@@ -31,7 +26,12 @@ El apóstol Juan, uno de los discípulos del Señor y según se cree el más jov
 Juan fue Apóstol, Evangelista y Profeta. Apóstol, porque escribió a las Iglesias como maestro; Evangelista, porque publicó el libro de su Evangelio, lo cual, excepto Mateo, no hicieron los demás Apóstoles; Profeta, ya que vio en la isla de Patmos, a la que fue desterrado por Domiciano, por su testimonio confirmando la fe en Jesucristo, el Apocalipsis, que contiene muchos misterios. Además, refiere Tertuliano que mientras estaba en Roma fue echado en una tinaja de aceite hirviente, y que de ella salió más sano y fuerte que antes.
 
 [Lectio6]
-Su Evangelio se eleva más que los otros. Mateo empieza, como si se tratara de un hombre: “Libro de la generación de Jesucristo, hijo de David, hijo de Abrahán”; Lucas comienza por el sacerdocio de Zacarías; Marcos por las profecías de Malaquías e Isaías. El primero tiene por atributo la figura de un hombre, por esta misma genealogía; el segundo, la de un buey, por el sacerdocio; el tercero, la de un león, por la voz que clama en el desierto: "Preparad los caminos del Señor, enderezad sus sendas”. Nuestro Juan se eleva como águila a lo más alto, y llega el Padre, diciendo: “En el principio era el Verbo, y el Verbo estaba en Dios y el Verbo era Dios”.
+Su Evangelio se eleva más que los otros. Mateo empieza, como si se tratara de un hombre: “Libro de la generación de Jesucristo, hijo de David, hijo de Abrahán”; Lucas comienza por el sacerdocio de Zacarías; Marcos por las profecías de Malaquías e Isaías. El primero tiene por atributo la figura de un hombre, por esta misma genealogía; el segundo, la de un buey, por el sacerdocio; el tercero, la de un león, por la voz que clama en el desierto: “Preparad los caminos del Señor, enderezad sus sendas”. Nuestro Juan se eleva como águila a lo más alto, y llega el Padre, diciendo: “En el principio era el Verbo, y el Verbo estaba en Dios y el Verbo era Dios”.
+
+[Lectio94]
+Del libro de San Jerónimo, Presbítero, contra Joviniano.
+El apóstol Juan, uno de los discípulos del Señor y según se cree el más joven de los apóstoles, era virgen cuando abrazó la fe de Jesucristo, y permaneció virgen. Por eso fue más amado del Señor, y descansó sobre el pecho de Jesús. Lo que Pedro, que estaba casado, no se atrevió a preguntar por sí mismo, rogó a Juan que lo preguntase a Jesús en su nombre. Al anunciarles María Magdalena que el Señor había resucitado, corrieron ambos hacia el sepulcro, mas Juan llegó el primero. Estando la barca pescando en el lago de Genesaret, Jesús se presentó en la playa y los Apóstoles no le conocieron; sólo el discípulo virgen conoció al Maestro y dijo a Pedro: “Es el Señor”. Juan fue Apóstol, Evangelista y Profeta. Además, refiere Tertuliano que mientras estaba en Roma fue echado en una tinaja de aceite hirviente, y que de ella salió más sano y fuerte que antes.
+&teDeum
 
 [Lectio7]
 Lectura del Santo Evangelio según San Mateo
@@ -43,16 +43,8 @@ Homilía de San Jerónimo, Presbítero.
 ¿De dónde saca la madre de los hijos del Zebedeo esta idea acerca del reino de Jesucristo, cuando, al declarar el Señor que “el Hijo del hombre será entregado a los príncipes de los sacerdotes, y a los escribas, y le condenarán a muerte, y le entregarán a los gentiles para que le escarnezcan, y azoten, y crucifiquen”, y al anunciar a los discípulos espantados las ignominias de la Pasión, ella pide la gloria del triunfo? Me parece que de lo que añade el Señor: “Mas al tercer día resucitará”. Esta mujer se imagina que entonces empezará a reinar, después de su resurrección; que lo referido al segundo advenimiento va a cumplirse en el primero; y, con precipitación, olvidando lo por venir, quiere asegurarse lo presente.
 
 [Lectio8]
-Pregunta la madre, pero el Señor responde a los hijos; sabe que la madre preguntó por su indicación. “¿Podéis beber el cáliz que yo he de beber?". En las Sagradas Escrituras la palabra cáliz significa pasión, según esta frase: “Padre mío, si es posible, pase de mí este cáliz”; y esta del Salmista: “¿Cómo podré corresponder al Señor por todas las mercedes que me ha hecho? Tomaré el cáliz de la salud, e invocaré el nombre del Señor”. Y al punto indica cuál es este cáliz: “Es de gran precio a los ojos del Señor la muerte de sus santos”.
+Pregunta la madre, pero el Señor responde a los hijos; sabe que la madre preguntó por su indicación. “¿Podéis beber el cáliz que yo he de beber?”. En las Sagradas Escrituras la palabra cáliz significa pasión, según esta frase: “Padre mío, si es posible, pase de mí este cáliz”; y esta del Salmista: “¿Cómo podré corresponder al Señor por todas las mercedes que me ha hecho? Tomaré el cáliz de la salud, e invocaré el nombre del Señor”. Y al punto indica cuál es este cáliz: “Es de gran precio a los ojos del Señor la muerte de sus santos”.
 
 [Lectio9]
 ¿Cómo los hijos del Zebedeo, Santiago y Juan, bebieron el cáliz del martirio? Según la Escritura, solo el apóstol Santiago murió degollado por Herodes, en tanto que San Juan salió de esta vida por muerte natural. Pero si leemos la historia eclesiástica, veremos que San Juan también dio testimonio de Jesucristo, pues fue por su causa sumergido en una caldera de aceite hirviendo, de la cual salió este valeroso atleta de Jesucristo para recibir la corona, y al punto fue desterrado a la isla de Patmos; de todo lo cual deducimos que no le faltaron para el martirio ni el valor ni la voluntad; bebió, pues, también el cáliz del sufrimiento, como lo bebieron los tres jóvenes en el horno ardiente aunque el perseguidor no derramara su sangre.
-&teDeum
-
-[Ant 3]
-@:Ant 1
-
-[Lectio94]
-Del libro de San Jerónimo, Presbítero, contra Joviniano.
-El apóstol Juan, uno de los discípulos del Señor y según se cree el más joven de los apóstoles, era virgen cuando abrazó la fe de Jesucristo, y permaneció virgen. Por eso fue más amado del Señor, y descansó sobre el pecho de Jesús. Lo que Pedro, que estaba casado, no se atrevió a preguntar por sí mismo, rogó a Juan que lo preguntase a Jesús en su nombre. Al anunciarles María Magdalena que el Señor había resucitado, corrieron ambos hacia el sepulcro, mas Juan llegó el primero. Estando la barca pescando en el lago de Genesaret, Jesús se presentó en la playa y los Apóstoles no le conocieron; sólo el discípulo virgen conoció al Maestro y dijo a Pedro: “Es el Señor”. Juan fue Apóstol, Evangelista y Profeta. Además, refiere Tertuliano que mientras estaba en Roma fue echado en una tinaja de aceite hirviente, y que de ella salió más sano y fuerte que antes.
 &teDeum

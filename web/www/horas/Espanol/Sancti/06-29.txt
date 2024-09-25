@@ -1,17 +1,8 @@
 [Rank]
 SS. Apostolorum Petri et Pauli;;Duplex I classis cum octava communi;;6.5;;ex C1
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 SS. Apostolorum Petri et Pauli;;Duplex I classis;;6;;ex C1
-
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-nor commemoratio
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
 
 [Ant Vespera]
 Pedro y Juan * subían al templo a la hora de nona para orar.
@@ -19,28 +10,6 @@ No tengo plata ni oro: * mas te doy lo que tengo.
 Dijo el Ángel a Pedro: * Cíñete tu vestido y sígueme.
 Envió el Señor * su Ángel, y me ha librado del poder de Herodes, aleluya.
 Tú eres Pedro * y sobre esta piedra edificaré mi Iglesia.
-
-[HymnusM Vespera]
-v. La brillante luz de la eternidad ha iluminado 
-con sus fulgores el áureo día que señala 
-el triunfo de los Príncipes de los Apóstoles, 
-y facilita a los pecadores el camino hacia el cielo.
-_
-El Doctor del mundo y el Portero de los cielos, Padres 
-de la Roma cristiana, y árbitros de las naciones, entran 
-coronados de laureles en la posesión de la vida, triunfando 
-el uno bajo el filo de la espada y el otro por su muerte en la cruz.
-_
-¡Oh feliz Roma, que has sido ennoblecida 
-con la sangre de estos dos príncipes! 
-Enrojecida con su sangre, aventajas en hermosura 
-a todos los demás pueblos de la tierra.
-_
-Gloria para siempre, honor, poder, 
-y cánticos de alegría a la Trinidad en la Unidad, 
-la cual gobierna todo el universo 
-en su decurso de todos los siglos.
-Amén.
 
 [Hymnus Vespera]
 {:H-Decoralux:}v. La brillante luz de la eternidad ha iluminado 
@@ -64,11 +33,52 @@ la cual gobierna todo el universo
 en su decurso de todos los siglos.
 Amén.
 
-[Ant 1]
-@Sancti/02-22
+[HymnusM Vespera]
+v. La brillante luz de la eternidad ha iluminado 
+con sus fulgores el áureo día que señala 
+el triunfo de los Príncipes de los Apóstoles, 
+y facilita a los pecadores el camino hacia el cielo.
+_
+El Doctor del mundo y el Portero de los cielos, Padres 
+de la Roma cristiana, y árbitros de las naciones, entran 
+coronados de laureles en la posesión de la vida, triunfando 
+el uno bajo el filo de la espada y el otro por su muerte en la cruz.
+_
+¡Oh feliz Roma, que has sido ennoblecida 
+con la sangre de estos dos príncipes! 
+Enrojecida con su sangre, aventajas en hermosura 
+a todos los demás pueblos de la tierra.
+_
+Gloria para siempre, honor, poder, 
+y cánticos de alegría a la Trinidad en la Unidad, 
+la cual gobierna todo el universo 
+en su decurso de todos los siglos.
+Amén.
 
 [Oratio]
 ¡Oh Dios, que has consagrado este día con el martirio de tus Apóstoles San Pedro y San Pablo!; concede a tu Iglesia, que siga en todo las enseñanzas de aquellos por quienes tuvo principio la religión. 
+$Per Dominum
+
+[Octava 11] (rubrica 1570 aut rubrica 1910)
+!Conmemoración de la Octava de S. Pedro
+Ant. Tú eres el Pastor de las ovejas, * el Príncipe de los Apóstoles, y a ti se te darán las llaves del reino de los cielos.
+_
+V. Tú eres Pedro.
+R. Y sobre esta piedra edificaré mi Iglesia.
+_
+$Oremus
+Oh Dios, que has consagrado este día con el martirio de tus Apóstoles Pedro y Pablo: concede a tu Iglesia que siga en todo las enseñanzas de aquellos por quienes tuvo principio la religión.
+$Per Dominum
+
+[Octava 1]
+!Conmemoración de la Octava de los Ss. Apóstoles
+Ant. Pedro Apóstol, * y Pablo el doctor de los pueblos, nos enseñan tu ley, Señor.
+_
+V. Les constituirás príncipes sobre toda la tierra.
+R. Se acordarán, Señor, de tu nombre.
+_
+$Oremus 
+Oh Dios, que has consagrado este día con el martirio de tus Apóstoles Pedro y Pablo: concede a tu Iglesia que siga en todo las enseñanzas de aquellos por quienes tuvo principio la religión.
 $Per Dominum
 
 [Lectio1]
@@ -78,7 +88,7 @@ De los Hechos de los Apóstoles
 2 Había un hombre tullido desde el seno de su madre, que traían y ponían cada día a la puerta del templo llamada la Hermosa para pedir limosna a los que entraban en el templo. 
 3 Este, viendo a Pedro y a Juan que se disponían a entrar en el templo, extendió la mano pidiendo limosna. 
 4 Pedro y Juan, fijando en él los ojos, le dijeron: Míranos. 
-5 Él los miró esperando recibir de ellos alguna cosa. 
+5 Él los miró esperando recibir de ellos alguna cosa.
 
 [Responsory1]
 @Sancti/02-22
@@ -150,7 +160,7 @@ V. Estas cosas no te las ha revelado la carne ni la sangre, sino mi Padre que es
 R. Y tú, cuando te hubieres convertido, confirma a tus hermanos.
 
 [Lectio8]
-"Y vosotros, ¿quién decís que soy Yo?” Lector prudente, pon atención, a la continuación del discurso, en que los Apóstoles no son del todo llamados hombres, sino dioses; porque sólo tras haber dicho: ¿Quién dicen los hombres que es el Hijo del hombre?, añade: Y vosotros, ¿quién decís que soy Yo? Mientras que los otros, porque son hombres, piensan de mí cosas humanas, vosotros, que sois dioses, ¿quién creéis que soy Yo? Pedro, en nombre de los Apóstoles, hace esta profesión de fe: “Tú eres el Cristo, el Hijo de Dios vivo”. Dice Dios vivo, a diferencia de esos que pasan por dioses, pero que están muertos.
+“Y vosotros, ¿quién decís que soy Yo?” Lector prudente, pon atención, a la continuación del discurso, en que los Apóstoles no son del todo llamados hombres, sino dioses; porque sólo tras haber dicho: ¿Quién dicen los hombres que es el Hijo del hombre?, añade: Y vosotros, ¿quién decís que soy Yo? Mientras que los otros, porque son hombres, piensan de mí cosas humanas, vosotros, que sois dioses, ¿quién creéis que soy Yo? Pedro, en nombre de los Apóstoles, hace esta profesión de fe: “Tú eres el Cristo, el Hijo de Dios vivo”. Dice Dios vivo, a diferencia de esos que pasan por dioses, pero que están muertos.
 
 [Responsory8]
 @Sancti/02-22:Responsory7
@@ -169,23 +179,6 @@ Y respondiendo Jesús, dijo: Bienaventurado eres, Simón Bar Jona. Corresponde a
 v. El rey Herodes se puso a perseguir a algunos de la Iglesia. Hizo decapitar a Santiago, hermano de Juan. Viendo que esto agradaba a los judíos, mandó detener también a Pedro.
 $Deo gratias
 
-[HymnusM Laudes]
-v. Bienaventurado Pastor Pedro, recibe clemente 
-las preces de los que te ruegan; y con tu palabra 
-quiebra las ataduras de los pecados, tú, a quien fue dado 
-el poder de abrir y cerrar el cielo a los mortales.
-_
-Ilustre Doctor Pablo, dirige nuestra vida, 
-y atrae en pos de ti nuestros corazones al cielo; 
-hasta que la fe, ahora velada, descubra el mediodía, 
-y sola, semejante al sol, reine la caridad.
-_
-Eterna gloria sea dada a la Trinidad; 
-honor, poder y exultación 
-a la unidad que lo dirige todo, 
-por todos los siglos de los siglos. 
-Amén.
-
 [Hymnus Laudes]
 {:H-BeatepastorPetre:}v. Bienaventurado Pastor Pedro, recibe clemente 
 las preces de los que te ruegan; y con tu palabra 
@@ -203,49 +196,22 @@ a la unidad que lo dirige todo,
 por todos los siglos de los siglos. 
 Amén.
 
-[Ant 2]
-@Sancti/02-22
-
-[Lectio Prima]
-!Act 12:11
-v. Entonces Pedro cayó en la cuenta y dijo: Ahora veo claro que el Señor ha mandado a su ángel y me ha librado de las manos de Herodes y de la expectación del pueblo judío.
-
-[Capitulum Sexta]
-!Act 12:5
-v. Mientras tenían a Pedro en la cárcel bajo custodia, la Iglesia oraba a Dios insistentemente por él.
-$Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Ant Vespera 3]
-@Commune/C1
-
-[Ant 3]
-En este día * subió al patíbulo de la cruz Simón Pedro, aleluya; en este día voló gozoso a Jesucristo el Portero de los cielos; en este día el Apóstol Pablo, lumbrera del mundo, inclinando la cabeza, fue coronado con el martirio por el nombre de Jesucristo, aleluya.	
-
-[Octava 1]
-!Conmemoración de la Octava de los Ss. Apóstoles
-Ant. Pedro Apóstol, * y Pablo el doctor de los pueblos, nos enseñan tu ley, Señor.
+[HymnusM Laudes]
+v. Bienaventurado Pastor Pedro, recibe clemente 
+las preces de los que te ruegan; y con tu palabra 
+quiebra las ataduras de los pecados, tú, a quien fue dado 
+el poder de abrir y cerrar el cielo a los mortales.
 _
-V. Les constituirás príncipes sobre toda la tierra.
-R. Se acordarán, Señor, de tu nombre.
+Ilustre Doctor Pablo, dirige nuestra vida, 
+y atrae en pos de ti nuestros corazones al cielo; 
+hasta que la fe, ahora velada, descubra el mediodía, 
+y sola, semejante al sol, reine la caridad.
 _
-$Oremus 
-Oh Dios, que has consagrado este día con el martirio de tus Apóstoles Pedro y Pablo: concede a tu Iglesia que siga en todo las enseñanzas de aquellos por quienes tuvo principio la religión.
-$Per Dominum
-
-[Octava 11](rubrica 1570 aut rubrica 1910)
-!Conmemoración de la Octava de S. Pedro
-Ant. Tú eres el Pastor de las ovejas, * el Príncipe de los Apóstoles, y a ti se te darán las llaves del reino de los cielos.
-_
-V. Tú eres Pedro.
-R. Y sobre esta piedra edificaré mi Iglesia.
-_
-$Oremus
-Oh Dios, que has consagrado este día con el martirio de tus Apóstoles Pedro y Pablo: concede a tu Iglesia que siga en todo las enseñanzas de aquellos por quienes tuvo principio la religión.
-$Per Dominum
+Eterna gloria sea dada a la Trinidad; 
+honor, poder y exultación 
+a la unidad que lo dirige todo, 
+por todos los siglos de los siglos. 
+Amén.
 
 [Octava 2]
 !Conmemoración de la Octava de los Ss. Apóstoles
@@ -257,3 +223,15 @@ _
 $Oremus
 Oh Dios, que has consagrado este día con el martirio de tus Apóstoles Pedro y Pablo: concede a tu Iglesia que siga en todo las enseñanzas de aquellos por quienes tuvo principio la religión.
 $Per Dominum
+
+[Lectio Prima]
+!Act 12:11
+v. Entonces Pedro cayó en la cuenta y dijo: Ahora veo claro que el Señor ha mandado a su ángel y me ha librado de las manos de Herodes y de la expectación del pueblo judío.
+
+[Capitulum Sexta]
+!Act 12:5
+v. Mientras tenían a Pedro en la cárcel bajo custodia, la Iglesia oraba a Dios insistentemente por él.
+$Deo gratias
+
+[Ant 3]
+En este día * subió al patíbulo de la cruz Simón Pedro, aleluya; en este día voló gozoso a Jesucristo el Portero de los cielos; en este día el Apóstol Pablo, lumbrera del mundo, inclinando la cabeza, fue coronado con el martirio por el nombre de Jesucristo, aleluya.	

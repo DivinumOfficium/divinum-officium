@@ -1,17 +1,8 @@
 [Rank]
 Quinta die infra Octavam Epiphaniae;;Semiduplex;;2;;ex Sancti/01-06
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Die Decima Januarii;;Feria;;1.2;;vide Sancti/01-06
-
-[Rule]
-ex Sancti/01-06
-Lectio1 tempora
-Doxology=Epi
-9 lectiones
-Feria Te Deum
-(rubrica divino aut rubrica tridentina aut rubrica monastica) CPapaM=Igino;
-Infra octavam Epiphaniae Domini
 
 [Lectio1]
 Dalla Lettera ai Romani
@@ -24,18 +15,15 @@ Dalla Lettera ai Romani
 [Responsory1]
 @Sancti/01-06:Responsory1InfraOctavam
 
-[Responsory2]
-@Sancti/01-06:Responsory2
-
-[Responsory3]
-@Sancti/01-06:Responsory3
-
 [Lectio2]
 !Rom 14:5-8
 5 Infatti uno fa distinzione fra giorno e giorno: un altro poi ritiene tutti i giorni uguali: ognuno segua il proprio parere. 
 6 Chi bada al giorno, ci bada per il Signore: E chi mangia, mangia per il Signore: tant'è vero che ne rende grazie a Dio. E chi non mangia, non mangia per il Signore, e così rende grazie a Dio. 
 7 Nessuno infatti di noi vive per se stesso, e nessuno muore per se stesso. 
 8 Poiché se viviamo, viviamo per il Signore: se moriamo, moriamo per il Signore. Sia dunque che viviamo o che moriamo noi siamo del Signore.
+
+[Responsory2]
+@Sancti/01-06:Responsory2
 
 [Lectio3]
 !Rom 14:9-13
@@ -44,6 +32,9 @@ Dalla Lettera ai Romani
 11 Poiché sta scritto; «Vivo io, dice il Signore, ogni ginocchio si piegherà davanti a me: e ogni lingua confesserà Dio» (Is. 45,24). 
 12 Ognuno di noi quindi renderà conto di sé a Dio. 
 13 Dunque non giudichiamoci più gli uni gli altri.
+
+[Responsory3]
+@Sancti/01-06:Responsory3
 
 [Lectio4]
 Sermone di san Massimo Vescovo
@@ -77,4 +68,3 @@ Tutte le nazioni verranno da lungi portando i loro doni, alleluia.
 
 [Ant 3]
 Verranno tutti quelli di Saba * portando oro ed incenso, alleluia, alleluia.
-

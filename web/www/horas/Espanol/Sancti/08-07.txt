@@ -1,23 +1,12 @@
 [Rank]
 S. Cajetani Confessoris;;Duplex;;3;;vide C5
 
-[Rule]
-vide C5;
-9 lectiones
-
 [Ant 1]
 @Tempora/Pent14-0:Ant 3:s/, aleluya//
 
 [Oratio]
 Oh Dios, que concediste al bienaventurado Cayetano, tu Confesor, imitar la vida apostólica: otórganos por su intercesión y ejemplo, que confiemos siempre en ti, y deseemos tan sólo las cosas celestiales.
 $Per Dominum.
-
-[Commemoratio 2]
-!Conmemoración de S. Donato, Obispo y Mártir
-@Commune/C2:Oratio proper
-$Oremus
-v. ¡Oh Dios, gloria de tus sacerdotes!; al celebrar la fiesta de San Donato, obispo y mártir, concédenos el beneficio de su ayuda.
-$Per Dominum
 
 [Lectio4]
 Cayetano nació en Vicenza de la noble familia de Thienna, siendo ofrecido por su madre a la Virgen María. La inocencia que brilló en él desde su infancia le granjeó el renombre de santo. En Padua obtuvo el título de doctor en ambos derechos; después marchó a Roma donde Julio II le adscribió entre los Prelados; pero después de recibir el sacerdocio, el fuego del amor de Dios le impelió a dejar la corte y a consagrarse por entero al servicio divino. Fundó a expensas suyas algunos hospitales, sirviendo en persona aun a los atacados de la peste; y por su celo incansable en la salvación de las almas mereció el sobrenombre de Cazador de almas.
@@ -28,6 +17,10 @@ Para restaurar la relajada disciplina eclesiástica según el modelo de la vida 
 [Lectio6]
 Se esforzó en promover el amor del culto divino, el celo por el esplendor de la casa de Dios, la observancia de los sagrados ritos y una mayor frecuencia de la sagrada Comunión. Más de una vez pulverizó los errores y las simulaciones de los herejes. Se entregaba a la oración con tal ardor, que con frecuencia, estaba unas ocho horas, acompañada de lágrimas. Muchas veces se le vio en éxtasis, y brilló por su don de profecía. En Roma, en la noche de Navidad, recibió en sus brazos al Niño Jesús de manos de la Virgen Madre. Algunas veces castigaba su cuerpo con disciplinas durante toda la noche. Nunca se logró que mitigase la austeridad, que llegaba hasta el punto de desear morir tendido sobre la ceniza y revestido de un cilicio. La pena que le causaron las ofensas contra Dios en que incurrió la plebe amotinada, le ocasionó una enfermedad, de la cual murió en Nápoles, confortado con una celestial visión, siendo muy venerado su cuerpo en la iglesia de S. Pablo de esta ciudad. Ilustre por los muchas milagros que obró en vida y después de la muerte, el Sumo Pontífice Clemente X le inscribió en el número de los Santos.
 
+[Lectio94]
+Cayetano nació en Vicenza de la noble familia de Thienna; fue ofrecido por su madre a la Virgen Madre de Dios. Tras doctorarse en derecho civil y canónico en Padua se fue a Roma, donde fue nombrado prelado por Julio II y luego ordenado sacerdote. Fundó hospitales con sus bienes, y con sus propias manos atendió a los enfermos, incluso a los afectados por enfermedades contagiosas. Trabajó con tanto celo por la salvación de los demás que llegó a llamarse Cazador de almas. Como la disciplina del clero se había relajado, con el objeto de restaurarla según el modelo de la vida apostólica, fundó la Orden de Clérigos regulares, los cuales debían abandonar toda participación en asuntos mundanos, carecer de toda renta y no rogar por su subsistencia a los fieles, sino vivir sólo de las limosnas ofrecidas. Y así, con la aprobación de Clemente VII, Cayetano hizo los votos solemnes en el Altar Mayor de la Basílica Vaticana, junto a Juan Pedro Carafa, obispo de Chieti, luego Pablo IV, y otros dos hombres muy santos. Promovió el amor al culto de Dios, del esplendor en la casa de Dios, la observancia de los ritos y de la frecuente recepción de la Comunión. Consolado celestialmente, murió en Nápoles; es muy venerado en la Iglesia de San Pablo.
+&teDeum
+
 [Lectio7]
 Lectura del Santo Evangelio según San Mateo
 !Mt 6:24-33
@@ -35,7 +28,7 @@ En aquel tiempo: Dijo Jesús a sus discípulos: Nadie puede servir a dos señore
 _
 Homilía de San Agustín, Obispo.
 !Del Sermón de la Montaña, libro 2.
-"Nadie puede servir a dos señores”. A esto se refiere lo que Nuestro Señor expone a continuación: “Porque o tendrá aversión al uno y amor al otro, o si se sujeta al primero, mirará con desdén al segundo”. Prestemos atención a este pasaje, pues nos dice quiénes son estos dos señores cuando añade: “No podéis servir a Dios y a Mammón”. Los hebreos dan a las riquezas el nombre de Mammón. En lengua púnica tiene el mismo sentido, porque mammón significa ganancia. Servir a mammón es ser esclavo de aquel cuya perversidad le ha puesto a la cabeza de las cosas terrenales, y a éste llama el Señor: “Príncipe de este mundo”. Por eso, o el hombre le odiará y amará a otro, esto es, a Dios, “o se sujetará a aquel y mirará con desdén a éste”. Porque el que se hace esclavo de las riquezas, se sujeta a un señor duro y cruel; pues, encadenado por su codicia, soporta la tiranía del demonio, al cual, ciertamente, no ama, porque, en efecto, ¿quién puede amar el demonio? Ello, no obstante, soporta su yugo.
+“Nadie puede servir a dos señores”. A esto se refiere lo que Nuestro Señor expone a continuación: “Porque o tendrá aversión al uno y amor al otro, o si se sujeta al primero, mirará con desdén al segundo”. Prestemos atención a este pasaje, pues nos dice quiénes son estos dos señores cuando añade: “No podéis servir a Dios y a Mammón”. Los hebreos dan a las riquezas el nombre de Mammón. En lengua púnica tiene el mismo sentido, porque mammón significa ganancia. Servir a mammón es ser esclavo de aquel cuya perversidad le ha puesto a la cabeza de las cosas terrenales, y a éste llama el Señor: “Príncipe de este mundo”. Por eso, o el hombre le odiará y amará a otro, esto es, a Dios, “o se sujetará a aquel y mirará con desdén a éste”. Porque el que se hace esclavo de las riquezas, se sujeta a un señor duro y cruel; pues, encadenado por su codicia, soporta la tiranía del demonio, al cual, ciertamente, no ama, porque, en efecto, ¿quién puede amar el demonio? Ello, no obstante, soporta su yugo.
 
 [Lectio8]
 Por esto os digo: No os acongojéis por el cuidado de encontrar qué comer para sustentar vuestra vida, o de dónde sacaréis vestidos para cubrir el cuerpo. No sea que, tras renunciar a las cosas superfluas, se divida el corazón al buscar las necesarias, y para adquirirlas se tuerza nuestra intención en las obras que creemos realizar por un motivo de misericordia. Es decir, que, cuando nos desvivimos por los intereses del prójimo, no procuremos más nuestro provecho que su utilidad, y con todo nos consideremos exentos de falta al pretender sólo lo necesario, y no lo superfluo.
@@ -48,9 +41,9 @@ Donato, despuués del martirio de sus padres por la fe de Jesucristo, se retiró
 [Ant 2]
 @Tempora/Pent14-0::s/, aleluya//
 
-[Ant 3]
-@:Ant 1
-
-[Lectio94]
-Cayetano nació en Vicenza de la noble familia de Thienna; fue ofrecido por su madre a la Virgen Madre de Dios. Tras doctorarse en derecho civil y canónico en Padua se fue a Roma, donde fue nombrado prelado por Julio II y luego ordenado sacerdote. Fundó hospitales con sus bienes, y con sus propias manos atendió a los enfermos, incluso a los afectados por enfermedades contagiosas. Trabajó con tanto celo por la salvación de los demás que llegó a llamarse Cazador de almas. Como la disciplina del clero se había relajado, con el objeto de restaurarla según el modelo de la vida apostólica, fundó la Orden de Clérigos regulares, los cuales debían abandonar toda participación en asuntos mundanos, carecer de toda renta y no rogar por su subsistencia a los fieles, sino vivir sólo de las limosnas ofrecidas. Y así, con la aprobación de Clemente VII, Cayetano hizo los votos solemnes en el Altar Mayor de la Basílica Vaticana, junto a Juan Pedro Carafa, obispo de Chieti, luego Pablo IV, y otros dos hombres muy santos. Promovió el amor al culto de Dios, del esplendor en la casa de Dios, la observancia de los ritos y de la frecuente recepción de la Comunión. Consolado celestialmente, murió en Nápoles; es muy venerado en la Iglesia de San Pablo.
-&teDeum
+[Commemoratio 2]
+!Conmemoración de S. Donato, Obispo y Mártir
+@Commune/C2:Oratio proper
+$Oremus
+v. ¡Oh Dios, gloria de tus sacerdotes!; al celebrar la fiesta de San Donato, obispo y mártir, concédenos el beneficio de su ayuda.
+$Per Dominum

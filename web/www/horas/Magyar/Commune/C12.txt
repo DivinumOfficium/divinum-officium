@@ -4,14 +4,6 @@ Officium parvum Beatae Máriae Virginis
 [Rank]
 Officium parvum Beatae Máriae Virginis;;Simplex;;1;;ex C11
 
-
-[Ant 3]
-Aldott vagy * anya és sértetlen szűz, vilag dicsőséges Királynéja. Könyörogj érettünk az Úrnál
-
-[Oratio 1]
-Kérünk téged ÚrIsten, add meg nekünk szolgáidnak testünk és lelkünk egészségét és örömeit, hogy akik a Boldogságos mindig szűz Mária közbenjárását el'vezzük, szabaduljunk meg szomorúságainktől és lépjünk be örok örömödbe.
-$Per Dominum
-
 [Pre oratio]
 
 #Oratio
@@ -70,9 +62,6 @@ $Ave Maria
 $Credo
 (sed rubrica 1955 aut rubrica 196 omittitur)
 
-[Ant Matutinum]
-@Commune/C11::s/V\. .*/V. Kegyelem van az ajkaidon./g s/R\. .*/R. Isten ezért megáldott mindörökre./g
-
 [Lectio1]
 !Sir 24:11-13
 11 minden nagy és kicsiny szivét legyöztem erömmel; és mindezekben nyugodalmat kerestem, és az Úr örökségében lett maradásom.
@@ -126,14 +115,4 @@ Most és örök időkön át.
 [Capitulum Prima]
 !Song 6:9
 v. Ki az, aki ugy jön mint a kelő hajnal; szép mint a hold, tiszta mint a nap, és erös mint a bekeritett erőd a csataban?
-$Deo gratias
-
-[Capitulum Tertia]
-!Sir 24:15
-v. És így Sionban megerösíttettem, és a megszentelt városban hasonlóképen megnyugodtam, és Jerusalemben az én hatalmam.
-$Deo gratias
-
-[Capitulum Sexta]
-!Sir 24:16
-v. Meggyökereztem a tiszteletre méltó nép között, és az én Istenem részében, mely az ö öröksége; és a szentek teljes gyülekezetében az én tartózkodásom.
 $Deo gratias

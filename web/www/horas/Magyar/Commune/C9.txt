@@ -1,33 +1,12 @@
 [Name]
 Officium Defunctorum
 
-[Rule]
-Psalmi Dominca
-Antiphonas horas
-Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium Conclusion
-Limit Benedictiones Oratio
-Requiem gloria
-Special preces
-9 lectiones
-
 [Oratio_Fid]
 &Dominus_vobiscum2
 _
 $Oremus
-v. Isten ki a mindenség teremtője és megvátója vagy bocsásd meg szolgáid~
-és szolgálóid vétkeit, és könyörgéseink által add meg nekik a megbocsájtást~
-amire mindig vágyakoztak
+v. Isten ki a mindenség teremtője és megvátója vagy bocsásd meg szolgáid és szolgálóid vétkeit, és könyörgéseink által add meg nekik a megbocsájtást amire mindig vágyakoztak
 $Qui vivis
-
-[Oratio 1]
-&pater_noster
-_
-&psalm(145)
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
-_
-[Oratio 2]
-&pater_noster
 
 [Invit]
 A Királyt, aki által minden él * jöjjetek, imádjuk!
@@ -94,9 +73,9 @@ Jób könyvéből
 2 Valóban, gúnyolódók céltáblája lettem, s azt kell egyre néznem, hogyan civakodnak.
 3 Tégy le óvadékot értem önmagadnál! Ki volna más, ki értem kezességet vállal?
 11 Napjaim elenyésznek, terveim meg egyre távolabb kerülnek, a szívem rostjait szétmarcangolták.
-12 "A napnak kitér az éj - így szokták mondani -, közel a fény, amely elűzi a sötétséget."
+12 „A napnak kitér az éj - így szokták mondani -, közel a fény, amely elűzi a sötétséget.”
 13 Alvilágban lakni, ez a reménységem, ágyamat megvetni, ott a sötétségben.
-14 Síromhoz így szólok: "Az apám vagy nékem!" A férgekhez meg: "Anyám, s nővéreim!"
+14 Síromhoz így szólok: „Az apám vagy nékem!” A férgekhez meg: „Anyám, s nővéreim!”
 15 Hol marad számomra még bármi reménység, ki leli meg - a boldogságomat?
 
 [Lectio8]

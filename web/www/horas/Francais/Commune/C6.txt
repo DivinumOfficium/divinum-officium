@@ -1,21 +1,9 @@
-[Name]
-Commune Virgine
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
 [Ant Vespera]
 Voici la vierge sage, * et l'une des vierges prudentes.;;109
 Voici la vierge sage, * que le Seigneur a trouvé veillant.;;112
 Voici celle * qui n'a pas connu d'union coupable : elle en sera récompensée quand Dieu visitera les âmes saintes.;;121
 Venez, vous que J'ai choisie * et J'établirai en vous Mon trône, alleluia.;;126
 Elle est belle * entre toutes les filles de Jérusalem.;;147
-
-[Capitulum Laudes]
-!2 Cor 10:17-18
-v. Mes frères, que celui qui se glorifie, se glorifie dans le Seigneur. Car ce n'est pas celui qui se recommande lui-même qui est un homme éprouvé, c'est celui que Dieu recommande.
-$Deo gratias
 
 [Hymnus Vespera]
 {:H-Jesucoronavirginum:}v. Jésus, couronne des Vierges,
@@ -45,14 +33,22 @@ Dans les siècles des siècles.
 Ainsi soit-il.
 
 [Versum 1]
-V. Dans votre éclat et votre beauté.
+V. Dans votre éclat, et votre beauté.
 R. Avancez, triomphez et régnez.
 
 [Ant 1]
 Venez épouse du Christ, * recevez la couronne que le Seigneur vous a préparée pour l'éternité.
 
+[Nocturn 1 Versum]
+V. Dans ta beauté et tes charmes
+R. Va de l'avant, prospère et règne.
+
 [Invit]
 Au Seigneur, Roi des Vierges, * Venez, offrons l'adoration.
+
+[Nocturn 2 Versum] (translatio altera)
+V. Dieu l’aidera par sa contemplation.
+R. Dieu est en son cœur, elle ne sera pas ébranlée.
 
 [Hymnus Matutinum]
 {:H-Virginisproles:}v. Fils de la Vierge, Créateur de votre mère,
@@ -81,56 +77,39 @@ Gloire à vous, Dieu unique, gloire à vous,
 Dans tous les siècles.
 Ainsi soit-il.
 
-[Hymnus Matutinum pro Virgo tantum et non Martyr]
-{:H-Virginisproles:}v. Fils de la Vierge, Créateur de votre mère,
-Vous qu'elle a porté vierge et que verge elle a enfanté ;
-Nous célébrons la fête d'une Vierge bienheureuse,
-Recevez nos vœux.
-_
-Au nom de cette sainte, Dieu bon, nous vous prions,
-Daignez nous remettre les peines dues à nos péchés,
-Afin que d'un cœur pur,
-Nous vous chantions de saints cantiques.
-_
-Gloire au Père, au Fils engendré du Père,
-Gloire à vous, Esprit-Saint, égal au Père, égal au Fils,
-Gloire à vous, Dieu unique, gloire à vous,
-Dans tous les siècles.
-Ainsi soit-il.
-
 [Ant Matutinum]
 O qu’elle est belle la génération chaste en son rayonnement !;;8
 Devant le trône de cette Vierge, répétez-nous les doux cantiques du drame (de son amour).;;18
 Reviens, reviens, Sunamite ; reviens, reviens, pour que nous te contemplions.;;23
-V. Dans ta beauté et tes charmes
-R. Va de l'avant, prospère et règne.
 Dans ta beauté et tes charmes, va de l’avant, prospère et règne.;;44
 Dieu l’aidera par la contemplation : Dieu est en son coeur, elle ne sera pas ébranlée.;;45
 Les grandes eaux (de la tribulation) n’ont pu éteindre la charité.;;47
-V. Dieu l’aidera par sa contemplation.
-R. Dieu est en son cœur, elle ne sera pas ébranlée.
 Noire je suis mais belle, filles de Jérusalem, aussi le roi m’a aimée et il m’a fait entrer dans son heu de repos.;;95
 Entraînez-moi après vous ; nous courrons à l’odeur de vos parfums ; parfum répandu est votre nom.;;96
 Viens, Épouse du Christ, reçois cette couronne que le Seigneur t’a préparée dans l’éternité.;;97
+
+[Nocturn 3 Versum] (translatio altera)
 V. Dieu l’a choisie et l’a préférée.
 R. Dans son tabernacle, il la fait habiter.
+
+[Nocturn 2 Versum]
+V. Dieu la protégera de Son regard.
+R. Dieu est au milieu d'elle ; elle ne sera pas ébranlée.
+
+[Nocturn 3 Versum]
+V. Dieu la choisit et la prédestina.
+R. Il la fit habiter dans Son tabernacle.
 
 [Lectio1]
 De la première Épître du bienheureux Paul, Apôtre, aux Corinthiens.
 !1 Cor 7:25-31
 Quant aux vierges, je n’ai pas de précepte du Seigneur ; mais je donne un conseil, en tant que digne de foi, de par la miséricorde reçue du Seigneur. J’estime donc que c’est une chose excellente, à cause de la nécessité présente1, que c’est une chose excellente pour l’homme d’être ainsi. Es-tu lié à une femme ? ne cherche pas à te délier. Es-tu sans liens avec une femme, ne cherche pas une femme. Mais si tu épouses une femme, tu ne pèches pas ; et si une vierge se marie, elle ne pèche pas. Ces gens cependant auront du tourment dans la chair2 ; or moi, je voudrais vous l’épargner. Voici donc ce que je dis, mes frères : Le temps est court : il faut donc que ceux-là même qui ont des femmes soient comme n’en ayant pas ; et ceux qui pleurent, comme ne pleurant pas ; et ceux qui se réjouissent, comme ne se réjouissant pas ; et ceux qui achètent, comme ne possédant pas ; et ceux qui usent de ce monde, comme n’en usant pas : car la figure du monde passe.
 
-[Responsory1 pro Martyre]
+[Responsory1]
 R. Viens, Épouse du Christ, reçois la couronne que t’a préparée pour l’éternité le Seigneur pour l’amour duquel tu as répandu ton sang,
 * Et tu es entrée avec les Anges en Paradis.
 V. Viens mon élue et je placerai en toi mon trône ; car le Roi s’est épris de ta beauté.
 R. Et tu es entrée avec les Anges en Paradis.
-
-[Responsory1]
-R. Viens mon élue et je placerai en toi mon trône
-* Car le Roi s’est épris de ta beauté.
-V. Dans ta beauté et tes charmes, va de l’avant, prospère et règne.
-R. Car le Roi s’est épris de ta beauté.
 
 [Lectio2]
 !1 Cor 7:32-35
@@ -214,12 +193,10 @@ R. Voici l’époux qui vient, sortez au-devant de lui.
 C'est bien dans les cinq sens du corps que chacun vit ; ce nombre doublé parfait la dizaine. Et parce que la multitude des fidèles se compose des deux sexes, la sainte Église est comparée à dix vierges. Et puisque dans l’Église les méchants sont mêlés aux bons, les réprouvés aux élus, c’est avec raison, qu’elle est comparée à des vierges sages et à des vierges étourdies. Il y a en effet beaucoup de chastes qui se gardent de l’appétit du bien extérieur et sont emportés par l’espérance, à la poursuite des biens intérieurs ; ils mortifient leur chair et de tout leur désir tendent à la patrie céleste, ils convoitent les récompenses étemelles et, pour leurs labeurs, ne veulent rien recevoir des louanges humaines. Ceux-là au moins ne mettent pas leur gloire dans la bouche des hommes, mais la cachent dans l’intérieur de leur conscience. Il y en a beaucoup aussi qui affligent leur corps par l’abstinence mais désirent recueillir, de leur abstinence, les faveurs des hommes.
 &teDeum
 
-[Ant Laudes]
-Voici la vierge sage, * et l'une des vierges prudentes.;;
-Voici la vierge sage, * que le Seigneur a trouvé veillant.;;
-Voici celle * qui n'a pas connu d'union coupable : elle en sera récompensée quand Dieu visitera les âmes saintes.;;
-Venez, vous que J'ai choisie * et J'établirai en vous Mon trône, alleluia.;;
-Elle est belle * entre toutes les filles de Jérusalem.;;
+[Capitulum Laudes]
+!2 Cor 10:17-18
+v. Mes frères, que celui qui se glorifie, se glorifie dans le Seigneur. Car ce n'est pas celui qui se recommande lui-même qui est un homme éprouvé, c'est celui que Dieu recommande.
+$Deo gratias
 
 [Versum 2]
 V. La grâce est répandue sur vos lèvres.
@@ -229,59 +206,45 @@ R. C'est pourquoi Dieu vous a bénie pour toujours.
 Le royaume des cieux est semblable * à un marchand qui cherche de belles perles ; en ayant trouvé une de grand prix, il vend tout ce qu'il a et l'achète.
 
 [Oratio]
-v. O Dieu, qui, entre autres miracles de Votre puissance, avez accordé même au sexe faible la victoire du martyre, faites, dans Votre bonté, qu'honorant la naissance de Votre bienheureuse Vierge et Martyre N., nous allions à Vous en imitant ses exemples.
+O Dieu, qui, entre autres miracles de Votre puissance, avez accordé même au sexe faible la victoire du martyre, faites, dans Votre bonté, qu'honorant la naissance de Votre bienheureuse Vierge et Martyre N., nous allions à Vous en imitant ses exemples.
 $Per Dominum
 
 [Oratio1]
-De grâce, Seigneur, que la bienheureuse Vierge et Martyre N. implore pour nous le pardon, ~
-elle qui Vous a toujours été agréable, et par le mérite de sa chasteté, et par la confession de Votre puissance.
+De grâce, Seigneur, que la bienheureuse Vierge et Martyre N. implore pour nous le pardon, elle qui Vous a toujours été agréable, et par le mérite de sa chasteté, et par la confession de Votre puissance.
 $Per Dominum
 
 [Lectio Prima]
-!Sap 4:1
-v. Qu'elle est belle avec éclat la race chaste ! Sa mémoire est immortelle, car elle est connue de Dieu et des hommes.
-
-[Lectio Prima pro Martyre]
 !Sir 51:13-14
 v. Seigneur, mon Dieu, tu as exalté ma demeure sur la terre et j'ai prié pour que la mort passe. J'ai invoqué le Seigneur, le père de mon Seigneur, pour qu'il ne me laisse pas au jour de ma détresse, et au temps des orgueilleux sans secours.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Dans votre éclat * Et votre beauté.
 R. Dans votre éclat * Et votre beauté.
 V. Avancez, triomphez et régnez.
 R. Et votre beauté.
 &Gloria
 R. Dans votre éclat * Et votre beauté.
-_
-V. Dieu la protégera de Son regard.
-R. Dieu est au milieu d'elle ; elle ne sera pas ébranlée.
 
 [Capitulum Sexta]
 !2 Cor 11:2
 v. J'ai conçu pour vous une jalousie de Dieu, car je vous ai fiancés à un époux unique, pour vous présenter au Christ comme une vierge pure.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Dieu la protégera * de Son regard.
 R. Dieu la protégera * de Son regard.
 V. Dieu est au milieu d'elle ; elle ne sera pas ébranlée.
 R. De Son regard.
 &Gloria
 R. Dieu la protégera * de Son regard.
-_
-V. Dieu la choisit et la prédestina.
-R. Il la fit habiter dans Son tabernacle.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Dieu la choisit * Et la prédestina.
 R. Dieu la choisit * Et la prédestina.
 V. Il la fit habiter dans Son tabernacle.
 R. Et la prédestina.
 &Gloria
 R. Dieu la choisit * Et la prédestina.
-_
-V. La grâce est répandue sur vos lèvres.
-R. C'est pourquoi Dieu vous a bénie pour toujours.
 
 [Lectio1 in 2 loco]
 Du livre de l’Ecclésiastique.
@@ -296,7 +259,7 @@ Jusqu’à la mort, mon âme louera le Seigneur ; car ma vie s’approchait de l
 !Sir 51:13-17
 Vous avez élevé sur la terre mon habitation ; et à cause de la mort qui découlait sur moi j’ai fait des supplications. J’ai invoqué le Seigneur, Père de mon Seigneur, afin qu’il ne me laisse point sans secours au jour de ma tribulation et au temps des superbes. Je louerai votre nom sans cesse et je le glorifierai dans mes louanges, car ma prière a été exaucée. Et vous m’avez délivré de la perdition, et vous m’avez arraché au temps de l’iniquité. C’est pourquoi je vous glorifierai et je vous dirai une louange, et je bénirai le nom du Seigneur.
 
-[Lectio7 in 2 loco]
+[Lectio7 in 3 loco]
 Lecture du saint Évangile selon saint Matthieu.
 !Matt 19:3-12
 En ce temps-là, des Pharisiens s’approchèrent de Jésus pour le mettre à l’épreuve, et lui dirent : Est-il permis à un homme de répudier sa femme, pour n’importe quelle raison ? Et le reste.
@@ -305,9 +268,9 @@ Homélie de saint Jean Chrysostôme.
 !Homilia 63 in Matth., sub med.
 Notre-Seigneur voyant qu’il était difficile d’exhorter directement à la virginité, s’efforce de la leur faire désirer, en raison de la contrainte qu’impose la loi d’indissolubilité du mariage. Ensuite pour leur montrer qu’elle est possible, il s’exprime ainsi : Il y a des eunuques qui sont sortis ainsi du sein de leur mère, et il y en a que les hommes ont faits tels et il y en a qui le sont volontairement à cause du royaume des cieux. Par ces paroles il les induit directement à choisir la virginité, en établissant qu’elle est une vertu possible.
 
-[Lectio8 in 2 loco]
+[Lectio8 in 3 loco]
 Et il le confirme à peu près ainsi : Pense en toi-même, à ce que tu ferais, si tu étais ainsi par nature ou par la main des hommes, manquant de ces sortes de voluptés, et sans pour autant obtenir aucun mérite ? Rends donc grâces à Dieu de ce que c’est avec l’espoir d’une récompense et d’une couronne, que tu supportes ce que ceux-là tolèrent sans récompense, ni couronne. Bien plus, ce n’est pas la même chose, mais c’est beaucoup plus facile, tant parce que tu es soulevé par l’espoir et la conscience du bien accompli, que parce qu’ainsi tu n’es point ballotté par les grandes vagues de la concupiscence.
 
-[Lectio9 in 2 loco]
+[Lectio9 in 3 loco]
 Après avoir ainsi parlé de ces eunuques qui le sont en vain et inutilement, s’ils ne sont pas aussi chastes d’esprit, et de ceux qui vivent dans la continence, pour mériter le royaume des cieux, il ajoute aussitôt : Que celui qui peut comprendre, comprenne, pour les rendre plus empressés, du fait qu’il a montré la difficulté de l’œuvre et que, dans son ineffable bonté, il n’a pas voulu en faire l’objet de l’obligation d’une loi. En parlant ainsi, il manifeste mieux la possibilité de cette œuvre, afin d’en accroître le désir dans la volonté.
 &teDeum

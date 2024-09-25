@@ -1,14 +1,6 @@
 [Rank]
 S. Gabrielis Archangeli;;Duplex majus;;4;;ex Sancti/05-08
 
-[Rule]
-ex Sancti/05-08
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=137
-Psalm5 Vespera3=116
-
 [Ant Vespera]
 Zacharie étant entré * dans le temple du Seigneur, l’Ange Gabriel lui apparut, se tenant debout à droite de l’autel des parfums (Alléluia).
 L’Ange lui dit alors : * ne crains point, Zacharie, parce que ta prière a été exhaussée (Alléluia).
@@ -37,11 +29,6 @@ la Divinité bienheureuse :
 Père, Fils et Saint-Esprit,
 Elle dont le monde entier proclame la gloire. 
 Amen.
-
-[Capitulum Laudes]
-!Dan 9:21-22
-v. Voilà que Gabriel, l’homme que j’avais vu dans la vision, au commencement, volant vite, me toucha au temps du sacrifice du soir. Et il m’instruisit et me parla et dit : Daniel, maintenant je suis sorti afin de t’instruire et que tu comprennes.
-$Deo gratias
 
 [Versum 1]
 V. L’Ange s’arrêta devant l’autel du temple. (Alléluia.)
@@ -149,20 +136,17 @@ Lecture du saint Évangile selon saint Luc.
 En ce temps-là : l’Ange Gabriel fut envoyé de Dieu dans une ville de Galilée, appelée Nazareth, auprès d’une vierge fiancée à un homme de la maison de David, nommé Joseph ; et le nom de la vierge était Marie. Et le reste.
 _
 Homélie de saint Bernard, Abbé.
-!Homélie 1 sur "II fut envoyé", n. 2.
+!Homélie 1 sur « II fut envoyé» , n. 2.
 Je ne pense pas qu’il soit ici question d’un de ces Anges de moindre dignité, qui viennent souvent sur la terre y remplir une mission pour un motif quelconque. Le contraire est donné clairement à entendre par son nom que l’on dit signifier Force de Dieu, et se conclut aussi de cette particularité rapportée qu’il est envoyé, non par quelque autre esprit, probablement supérieur, comme cela a lieu d’ordinaire, mais par Dieu même. C’est donc sans doute pour attirer notre attention sur la dignité de l’envoyé céleste qu’ont été mis ces mots : De Dieu. Ou bien il a été dit, de Dieu, pour qu’il ne nous semble pas que Dieu, avant de révéler son dessein à la Vierge, en ait fait part à un des esprits bienheureux qu’à l’Archange Gabriel qui seul entre ses compagnons de gloire fut jugé digne de porter un tel nom et un tel message.
 
 [Responsory7]
 R. L’Ange Gabriel fut envoyé à une vierge nommée Marie, qu’avait épousée Joseph, et la Vierge s’effraya de la lumière.
 * Ne craignez point, Marie ; vous avez trouvé grâce devant le Seigneur ; voilà que vous concevrez, et vous enfanterez, et il sera appelé le Fils du Très-Haut. (Alleluia.)
 V. Lorsqu’elle l’eut entendu, elle fut troublée de ses paroles, et elle se demandait quelle pouvait être cette salutation ; mais l’Ange lui dit.
-R.  Ne craignez point, Marie ; vous avez trouvé grâce devant le Seigneur ; voilà que vous concevrez, et vous enfanterez, et il sera appelé le Fils du Très-Haut. (Alleluia.)
+R. Ne craignez point, Marie ; vous avez trouvé grâce devant le Seigneur ; voilà que vous concevrez, et vous enfanterez, et il sera appelé le Fils du Très-Haut. (Alleluia.)
 
 [Lectio8]
-Le nom s’harmonise bien avec le message. Par qui convenait-il mieux que fut annoncé le Christ, vertu de Dieu, que par cet ange qui a l’honneur d’avoir avec lui une similitude de nom ? Et la force, qu’est-elle sinon la vertu ? N’allez pas croire qu’il n’était, ni digne ni convenable que le Maître et l’envoyé portassent un nom analogue, car si tous deux s’appellent de même, cette appellation "semblable n’a cependant pas une raison d’être commune de part et d’autre. En effet c’est sous des rapports différents que le Christ et l’Ange sont nommés force ou vertu .de Dieu : l’Ange ne l’est que nominalement, mais le Christ l’est substantiellement.
-
-[Lectio9]
-Le Christ est appelé et est en effet la vertu de Dieu ; il est ce plus fort qui survient et, de son bras puissant, terrasse le fort armé qui jusque-là avait gardé sa maison en paix, et lui enlève ainsi les dépouilles de la captivité. Quant à l’Ange, s’il est appelé la force de Dieu, c’est, ou parce qu’il a pour office d’annoncer la venue de cette force elle-même, ou bien parce qu’il devait rassurer une vierge naturellement timide, simple et pudique, que la nouvelle du miracle qui devait s’accomplir en elle allait troubler. « Ne craignez pas, Marie, lui dit-il, vous avez trouvé grâce devant Dieu ». Ce n’est donc pas sans motif que Gabriel est choisi pour ce message, ou plutôt parce qu’il a reçu cette mission, il est désigné à bon droit sous un tel nom.
+Le nom s’harmonise bien avec le message. Par qui convenait-il mieux que fut annoncé le Christ, vertu de Dieu, que par cet ange qui a l’honneur d’avoir avec lui une similitude de nom ? Et la force, qu’est-elle sinon la vertu ? N’allez pas croire qu’il n’était, ni digne ni convenable que le Maître et l’envoyé portassent un nom analogue, car si tous deux s’appellent de même, cette appellation « semblable n’a cependant pas une raison d’être commune de part et d’autre. En effet c’est sous des rapports différents que le Christ et l’Ange sont nommés force ou vertu .de Dieu : l’Ange ne l’est que nominalement, mais le Christ l’est substantiellement.
 
 [Responsory8]
 R. Réjouissez-vous, Vierge Marie, vous seule avez détruit toutes les hérésies :
@@ -172,12 +156,20 @@ R. Vous avez cru aux paroles de l’Archange Gabriel, vous avez conçu, en resta
 &Gloria
 R. Vous avez cru aux paroles de l’Archange Gabriel, vous avez conçu, en restant vierge, un Dieu-homme, et, après l’enfantement, vous êtes demeurée vierge et sans tache. (Alleluia.)
 
+[Lectio9]
+Le Christ est appelé et est en effet la vertu de Dieu ; il est ce plus fort qui survient et, de son bras puissant, terrasse le fort armé qui jusque-là avait gardé sa maison en paix, et lui enlève ainsi les dépouilles de la captivité. Quant à l’Ange, s’il est appelé la force de Dieu, c’est, ou parce qu’il a pour office d’annoncer la venue de cette force elle-même, ou bien parce qu’il devait rassurer une vierge naturellement timide, simple et pudique, que la nouvelle du miracle qui devait s’accomplir en elle allait troubler. « Ne craignez pas, Marie, lui dit-il, vous avez trouvé grâce devant Dieu ». Ce n’est donc pas sans motif que Gabriel est choisi pour ce message, ou plutôt parce qu’il a reçu cette mission, il est désigné à bon droit sous un tel nom.
+
 [Ant Laudes]
 Zacharie étant entré * dans le temple du Seigneur, l’Ange Gabriel lui apparut, se tenant debout à droite de l’autel des parfums (Alléluia).
 L’Ange lui dit alors : * ne crains point, Zacharie, parce que ta prière a été exhaussée (Alléluia).
 Je suis l’Ange Gabriel, * qui me tiens devant Dieu et j’ai été envoyé pour te parler (Alléluia).
 L’Ange Gabriel * parla à Marie en disant : voici que vous concevrez dans votre sein et vous enfanterez un fils et vous l’appellerez du nom de Jésus (Alléluia).
 Et Marie dit * à l’Ange : comment cela se fera-t-il puisque je ne connais point d’homme ? Et l’Ange Gabriel lui répondit : l’Esprit-Saint surviendra en vous et la puissance du Très-Haut vous couvrira de Son ombre (Alléluia).
+
+[Capitulum Laudes]
+!Dan 9:21-22
+v. Voilà que Gabriel, l’homme que j’avais vu dans la vision, au commencement, volant vite, me toucha au temps du sacrifice du soir. Et il m’instruisit et me parla et dit : Daniel, maintenant je suis sorti afin de t’instruire et que tu comprennes.
+$Deo gratias
 
 [Hymnus Laudes]
 v. O Christ, pardonnez à vos serviteurs,
@@ -222,10 +214,6 @@ $Deo gratias
 !Dan 9:23-24
 v. Et je suis venu pour te l’annoncer, car tu es un homme de désirs. Soixante-dix semaines ont été décrétées, pour que le péché trouve sa fin, que la vision et la prophétie soient accomplies, et que le Saint des saints reçoive l’onction.
 $Deo gratias
-
-[Versum 3]
-V. En présence des Anges, je vous chanterai des hymnes, mon Dieu. (Alleluia.)
-R. J’adorerai vers Votre saint temple, et je glorifierai Votre Nom. (Alleluia.)
 
 [Ant 3]
 L’Archange Gabriel * dit à Marie : rien n’est impossible à Dieu. Et Marie reprit : voici la servante du Seigneur, qu’il me soit fait selon votre parole. Et l’Ange s’éloigna d’elle. (Alleluia.)

@@ -1,19 +1,11 @@
 [Rank]
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex 2 classis;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex 2 classis;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Marco;
 
 [Ant Vespera]
 Chi è costei * bella come una colomba, come una rosa piantata in riva alle acque?;;109
@@ -64,19 +56,6 @@ Beata sei tu, * o Vergine Maria, Madre di Dio, che hai creduto al Signore; si so
 [Oratio]
 O Dio, il cui Unigenito colla sua vita, morte e risurrezione ci ha meritato il premio dell'eterna salvezza: concedi, che. meditando questi misteri col sacratissimo Rosario della beata Vergine Maria, e imitiamo ciò che contengono, e conseguiamo ciò che promettono.
 $Per eumdem
-
-[Commemoratio 2]
-!Commemorazione di S. Marco Papa
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Esaudisci, o Signore, le nostre preghiere: e, per intercessione del tuo beato Confessore e Papa Marco, accordaci benigno il perdono e la pace,
-$Per Dominum
-_
-!Commemorazione dei Ss. Martiri Sergio, Bacco, Marcello ed Apuleio
-@Commune/C3:Oratio proper
-$Oremus
-Ci accompagnino, o Signore, i ricchi meriti dei tuoi santi Martiri Sergio, Bacco, Marcello ed Apuleio: e ci rendano sempre ferventi nel tuo amore.
-$Per Dominum
 
 [Invit]
 Celebriamo la solennità del Rosario della Vergine Maria: * Adoriamo Cristo Signore suo Figlio.
@@ -290,6 +269,19 @@ R. E l'ha fatta abitare nella sua dimora.
 [Ant 2]
 Celebriamo quest'oggi * con devozione la solennità dei sacratissimo Rosario della Madre di Dio Maria, affinch'ella interceda per noi presso il Signore Gesù Cristo.
 
+[Commemoratio 2]
+!Commemorazione di S. Marco Papa
+@Commune/C4:Oratio proper Gregem
+$Oremus
+Esaudisci, o Signore, le nostre preghiere: e, per intercessione del tuo beato Confessore e Papa Marco, accordaci benigno il perdono e la pace,
+$Per Dominum
+_
+!Commemorazione dei Ss. Martiri Sergio, Bacco, Marcello ed Apuleio
+@Commune/C3:Oratio proper
+$Oremus
+Ci accompagnino, o Signore, i ricchi meriti dei tuoi santi Martiri Sergio, Bacco, Marcello ed Apuleio: e ci rendano sempre ferventi nel tuo amore.
+$Per Dominum
+
 [Lectio Prima]
 !Sir 24:17-18
 v. Mi elevai come il cedro in sul Libano, e come il cipresso sul monte di Sion: mi elevai come la palma in Cades, e come la pianta di rosa in Gerico.
@@ -368,10 +360,6 @@ che sei nato dalla Vergine,
 insieme col Padre, e collo Spirito Santo, 
 per i secoli eterni.
 Amen.
-
-[Versum 3]
-V. Regina del sacratissimo Rosario, prega per noi.
-R. Affinché siam fatti degni delle promesse di Cristo.
 
 [Ant 3]
 Beata Madre * e Vergine intatta, gloriosa Regina del mondo, sentano la tua protezione tutti quelli che celebrano la solennità del tuo sacratissimo Rosario.

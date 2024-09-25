@@ -1,27 +1,15 @@
 [Rank]
 Hl. Damasus, Papst und Bekenner;;Semiduplex;;2.5;;vide C4
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Hl. Damasus, Papst und Bekenner;;Duplex;;3;;vide C4
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Hl. Damasus, Papst und Bekenner;;Semiduplex;;2.5;;vide C4
-
-[Rule]
-vide C4;
-9 lectiones;
-OPapaC=Damasus;
-Doxology=Nat
-Omit Preces
-Commemoratio3
 
 [Oratio]
 Erhöre, o Herr, unser Flehen, und auf die Fürsprache deines heiligen Bekenners und Bischofs Damasus gewähre und gnädigst Nachsicht und Segen.
 $Per Dominum
-
-[Commemoratio 2]
-!Kommemoration des Tags innerhalb der Oktav der unbefleckten Empfängnis Mariä
-@Sancti/12-08:Oratio
 
 [Lectio4]
 Damasus, ein Spanier, ein hervorragender und in der Heiligen Schrift bewanderter Mann, hat durch die Abhaltung des ersten Konzils von Konstantinopel die abscheuliche Irrlehre des Eunomius und Mazedonius ausgerottet. Derselbe hat die Versammlung von Rimini, der vorher schon von Liberius die Bestätigung versagt worden war, nochmals verurteilt, auf der, wie der heilige Hieronymus schreibt, hauptsächlich durch die Schliche des Valens und des Ursazius die Verurteilung des nizäischen Glaubensbekenntnisses ausgerufen worden war; und so wunderte sich aufseufzend die Welt, dass sie arianisch sei.
@@ -44,6 +32,6 @@ Damasus stammte aus Spanien. Er war ein hervorragender Mann und wohlbewandert in
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
-
+[Commemoratio 2]
+!Kommemoration des Tags innerhalb der Oktav der unbefleckten Empfängnis Mariä
+@Sancti/12-08:Oratio

@@ -1,16 +1,15 @@
 [Rank]
 Beatæ Mariæ Virginis Reginæ;;Duplex II classis;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Beatæ Mariæ Virginis Reginæ;;Duplex II classis;;5;;ex C11
 
-[Rule]
-ex C11;
-9 lectiones
-Ipsa Virgo Virginum
-Doxology=Nat
-Antiphonas horas
-Psalmi Dominica
+[Ant Vespera]
+Pendant que le Roi * se reposait, mon nard a exhalé une suave odeur.;;109
+Sa main gauche * est sous ma tête ; et sa droite m’embrassera.;;112
+Je suis noire, * mais je suis belle, filles de Jérusalem : c’est pour quoi le Roi m’a aimée et m’a introduite dans le lieu de son repos.;;121
+Déjà l’hiver est passé, * la pluie a cessé, elle s’est retirée, levez- vous, mon amie, et venez.;;126
+Toute belle * vous avez été faite, Sainte Mère de Dieu, et vous êtes pleine de douceur au milieu de vos délices.;;147
 
 [Versum 1]
 V. Salut, Reine de miséricorde.
@@ -136,7 +135,7 @@ R. Et vous-même, un glaive vous transpercera l’âme. alleluia.
 
 [Lectio6]
 De l’Encyclique du Pape Pie XII 
-!Encyclica "Ad cæli Regínam", diei 11 Octobris 1954
+!Encyclica « Ad cæli Regínam» , diei 11 Octobris 1954
 Les monuments de l’antiquité chrétienne, les prières de la liturgie, le sens religieux inné du peuple chrétien, les œuvres d’art, nous ont fourni des témoignages qui affirment l’excellence de la Vierge Mère de Dieu en sa dignité royale. Nous avons aussi prouvé que les raisons déduites par la théologie du trésor de la foi divine confirment pleinement cette vérité. De tant de témoignages cités, il se forme un concert dont l’écho résonne au loin pour célébrer le caractère suprême de la gloire royale de la Mère de Dieu et des hommes, « élevée désormais au royaume céleste au-dessus des chœurs angéliques. » ; Ayant acquis, après de mûres et longues réflexions, la conviction que de grands avantages en découleront pour l’Église si cette vérité solidement démontrée resplendit avec plus d’évidence aux yeux de tous, comme une lampe brille davantage posée sur son candélabre, par Notre Autorité Apostolique, Nous décrétons et instituons la Fête de Marie Reine que l’on célébrera chaque année dans le monde entier le 31 mai.
 
 [Responsory6]
@@ -234,20 +233,13 @@ $Deo gratias
 [Responsory Nona]
 R.br. Toutes les générations * Me diront bienheureuse.
 R. Toutes les générations * Me diront bienheureuse.
-V. Parce que  le Puissant a accompli de grandes choses en moi.
+V. Parce que le Puissant a accompli de grandes choses en moi.
 R. Me diront bienheureuse.
 &Gloria
 R. Toutes les générations * Me diront bienheureuse.
 _
 V. La Vierge Marie est montée au ciel. . (Alléluia.)
 R. Et avec le Christ règne pour toujours. . (Alléluia.)
-
-[Ant Vespera]
-Pendant que le Roi * se reposait, mon nard a exhalé une suave odeur.;;109
-Sa main gauche * est sous ma tête ; et sa droite m’embrassera.;;112
-Je suis noire, * mais je suis belle, filles de Jérusalem : c’est pour quoi le Roi m’a aimée et m’a introduite dans le lieu de son repos.;;121
-Déjà l’hiver est passé, * la pluie a cessé, elle s’est retirée, levez- vous, mon amie, et venez.;;126
-Toute belle * vous avez été faite, Sainte Mère de Dieu, et vous êtes pleine de douceur au milieu de vos délices.;;147
 
 [Versum 3]
 V. La Vierge Marie est montée aux cieux. (Alléluia.)

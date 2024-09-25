@@ -1,11 +1,9 @@
 @Sancti/11-01
 
 [Rule]
+vide C3;
 12 lectiones
 Psalmi Dominica
-
-[Responsory Vespera]
-@Commune/C3:Responsory Sexta:s/._.*//s
 
 [AntMatutinumM]
 Læténtur * omnes, qui sperant in te, Dómine, † in ætérnum exsultábunt: et habitábis in eis. † Et gloriabúntur in te omnes qui díligent nomen tuum.;;5
@@ -18,17 +16,12 @@ Laudem dícite * Deo nostro omnes Sancti ejus: et qui timétis eum pusílli et m
 [Ant Matutinum]
 @Sancti/11-01::1-2
 @:AntMatutinumM:1
-@Sancti/11-01::3
-@Sancti/11-01::6-7
-@Sancti/11-01::4-5
+@Sancti/11-01::3-5
 @:AntMatutinumM:2
-@Sancti/11-01::8
-@Sancti/11-01::11-12
+@Sancti/11-01::6-8
 @:AntMatutinumM:3
-@Sancti/11-01::13
-@Sancti/11-01::9-10
+@Sancti/11-01::9
 ;;259;254;255
-@Sancti/11-01::14-15
 
 [Lectio1]
 @Sancti/11-01:Lectio1:s/-8/-7/ s/8 .*//s
@@ -65,13 +58,13 @@ R. Intercéde pro nostra omniúmque salúte.
 [Lectio9]
 @Sancti/11-01:Lectio7
 
-[Responsory9] 
+[Responsory9]
 @Commune/C6:Responsory8
 
 [Lectio10]
 @Sancti/11-01:Lectio8:s/Sedens .*//s
 
-[Responsory10] 
+[Responsory10]
 R. Beáta vere mater Ecclésia quam sic honor divínæ dignatiónis illúminat, † quam victoriosórum gloriósus Mártyrum sanguis exórnat
 * Quam invioláta confessiónis cándida índuit virgínitas.
 V. Flóribus ejus nec rosæ nec lília desunt.
@@ -80,7 +73,7 @@ R. Quam invioláta confessiónis cándida índuit virgínitas.
 [Lectio11]
 @Sancti/11-01:Lectio8:s/.* Sedens /Sedens /s
 
-[Responsory11] 
+[Responsory11]
 R. Beáti estis, Sancti Dei omnes, qui meruístis consórtes fíeri cæléstium virtútum, † et pérfrui ætérnæ claritátis glória:
 * Idéoque precámur, ut mémores nostri, † intercédere dignémini pro nobis ad Dóminum Deum nostrum.
 V. Gaudéte et exsultáte quóniam merces vestra multa est in cælis.
@@ -89,23 +82,11 @@ R. Idéoque precámur, ut mémores nostri, † intercédere dignémini pro nobis
 [Lectio12]
 @Sancti/11-01:Lectio9
 
-[Responsory12] 
+[Responsory12]
 R. Vidi Angelum ascendéntem ab ortu solis, habentem signum Dei vivi; † et clamávit voce magna quátuor Angelis, quibus datum est nocere terræ et mari, dicens: † Nolite nocére terræ et mari neque arbóribus, † quoadúsque signémus servos Dei nostri in fróntibus eórum.
 * Et audívi númerum signatórum centum quadragínta quátuor míllia signáti, † ex omni tribu filiórum Israël.
 V. Et vidébunt fáciem ejus, et nomen Patris ejus scriptum in fróntibus suis.
 R. Et audívi númerum signatórum centum quadragínta quátuor míllia signáti, † ex omni tribu filiórum Israël.
-
-[Responsory Laudes]
-@Commune/C3:Responsory Tertia:s/._.*//s
-
-[Responsory TertiaM]
-@:Versum 1
-
-[Responsory SextaM]
-@Commune/C3:Responsory Tertia:8-9
-
-[Responsory NonaM]
-@Commune/C3:Responsory Sexta:8-9
 
 [Ant Vespera 3]
 @Sancti/11-01:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;115/ s/_//

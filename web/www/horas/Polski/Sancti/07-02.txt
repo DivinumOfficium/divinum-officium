@@ -1,16 +1,8 @@
 [Rank]
 Nawiedzenie Najświętszej Marji Panny;;Duplex II classis;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Nawiedzenie Najświętszej Marji Panny;;Duplex II classis;;5;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Ipsa Virgo Virginum
-Doxology=Nat
-Antiphonas horas
-Psalmi Dominica
 
 [Ant Vespera]
 Powstawszy Marja, * poszła na góry z kwapieniem do miasta Judzkiego.;;109
@@ -122,12 +114,5 @@ Nie tylko bowiem z przyjaźni długo tam pozostawała, lecz szło Jej o dobro ta
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g
 
-[Versum 2]
-@:Versum 1
-
 [Ant 2]
 Skoro słyszała * Elżbieta pozdrowienie Maryi, i zawołała głosem wielkim i rzekła: A skądże mnie to, że przyszła matka Pana mego do mnie? Alleluja.
-
-[Versum 3]
-@:Versum 1
-

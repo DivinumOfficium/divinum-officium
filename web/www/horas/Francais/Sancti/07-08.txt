@@ -1,10 +1,6 @@
 [Rank]
 Ste. Elisabeth Reine du Portugal veuve;;Semiduplex;;2;;vide C7a
 
-[Rule]
-vide C7a;
-9 lectiones
-
 [Hymnus Vespera]
 v. Dompter les mouvements de son cœur
 Et servir Dieu dans la pauvreté,
@@ -49,6 +45,10 @@ Dans la vie conjugale, Élisabeth ne mettait pas moins de soin à cultiver les v
 [Lectio6]
 Modèle de toutes les vertus pour les jeunes filles pendant sa jeunesse, et pour les épouses pendant son mariage, elle le fut aussi pour les veuves, dans l’isolement. Après la mort du roi Denys, prenant aussitôt l’habit des religieuses de sainte Claire, elle assista sans faiblir aux funérailles du prince, et se rendit peu après à Compostelle, afin d’y offrir pour l’âme de son époux de nombreux présents, des étoffes de soie, de l’argent, de l’or et des pierres précieuses. A son retour, elle convertit en pieux et saints usages tout ce qui lui restait de cher et de précieux. C’est ainsi qu’elle acheva le monastère vraiment royal de Coïmbre qu’elle avait fondé pour des vierges. Nourrir les pauvres, protéger les veuves, défendre les orphelins, soulager tous les malheureux, était toute sa vie ; elle vivait, non pour elle, mais pour Dieu et pour le bien de tous. Dans le but de rétablir la paix entre deux rois, son fils et son gendre, elle se rendit à Estrenoz, place forte célèbre : ce fut là que, tombée malade par suite des fatigues de la route, visitée par la Vierge Mère de Dieu, elle mourut saintement, le quatrième jour de juillet de l’an mil trois cent trente-six. Après sa mort, la sainteté d’Élisabeth fut marquée par un grand nombre de miracles, spécialement par l’odeur très suave de son corps exempt de corruption depuis bientôt trois siècles ; aussi est-elle restée constamment célèbre sous le surnom de la sainte reine. Enfin, l’année du jubilé, l’an de notre salut mil six cent vingt-cinq, aux applaudissements de tout le monde chrétien et au milieu d’un immense concours, Urbain VIII l’a solennellement inscrite au nombre des Saints.
 
+[Lectio94]
+Elisabeth naquit en l'an de grâce 1271, fille des rois d'Aragon. La joie de sa naissance transforma en concorde les dissensions pernicieuses entre son grand-père et son père, révélant ainsi qu'elle serait une pacificatrice heureuse des rois et des royaumes. Elle était admirable dans la discipline de son corps, dans la récitation assidue de prières et dans l'exercice des œuvres de charité. Lorsqu'elle fut donnée en mariage au roi Denis de Portugal, elle se consacra avec autant d'ardeur à cultiver les vertus qu'à éduquer ses enfants, cherchant à plaire non seulement à son mari, mais surtout à Dieu. Elle construisit et dota magnifiquement des monastères, des collèges et des églises. Elle était admirable dans la résolution des conflits entre les rois et infatigable dans l'aide aux calamités des mortels, tant privées que publiques, et elle était renommée pour ses miracles. Après la mort du roi Denis, elle prit l'habit de l'Ordre séraphique. Elle offrit tout ce qui lui était cher ou précieux pour l'âme du roi, au temple de Compostelle, et le consacra à des fins sacrées et pieuses. Enfin, elle mourut dans une sainteté exemplaire, visitée par la Vierge Marie elle-même, atteinte d'une maladie contractée lors d'un voyage, pacifiant ainsi deux rois, son fils et son gendre. Elisabeth, célèbre pour ses miracles, fut canonisée par le pape Urbain VIII et comptée parmi les saints.
+&teDeum
+
 [Capitulum Laudes]
 @Commune/C7a:Capitulum Laudes
 
@@ -76,12 +76,5 @@ R. Seigneur, soyez propice à votre peuple.
 [Ant 2]
 Vous êtes la gloire de Jérusalem, * vous êtes la joie d’Israël, vous êtes l’honneur de votre peuple.
 
-[Versum 3]
-@:Versum 1
-
 [Ant 3]
 Élisabeth, * mère de la paix et de la patrie, triomphante dans le ciel, donnez-nous la paix.
-
-[Lectio94]
-Elisabeth naquit en l'an de grâce 1271, fille des rois d'Aragon. La joie de sa naissance transforma en concorde les dissensions pernicieuses entre son grand-père et son père, révélant ainsi qu'elle serait une pacificatrice heureuse des rois et des royaumes. Elle était admirable dans la discipline de son corps, dans la récitation assidue de prières et dans l'exercice des œuvres de charité. Lorsqu'elle fut donnée en mariage au roi Denis de Portugal, elle se consacra avec autant d'ardeur à cultiver les vertus qu'à éduquer ses enfants, cherchant à plaire non seulement à son mari, mais surtout à Dieu. Elle construisit et dota magnifiquement des monastères, des collèges et des églises. Elle était admirable dans la résolution des conflits entre les rois et infatigable dans l'aide aux calamités des mortels, tant privées que publiques, et elle était renommée pour ses miracles. Après la mort du roi Denis, elle prit l'habit de l'Ordre séraphique. Elle offrit tout ce qui lui était cher ou précieux pour l'âme du roi, au temple de Compostelle, et le consacra à des fins sacrées et pieuses. Enfin, elle mourut dans une sainteté exemplaire, visitée par la Vierge Marie elle-même, atteinte d'une maladie contractée lors d'un voyage, pacifiant ainsi deux rois, son fils et son gendre. Elisabeth, célèbre pour ses miracles, fut canonisée par le pape Urbain VIII et comptée parmi les saints.
-&teDeum

@@ -9,7 +9,7 @@ In Nativitate Domini;;Duplex I Classis;;7
 Psalmi Dominica
 Antiphonas Horas
 Doxology=Nat
-No commemoratio 
+No commemoratio
 
 [Ant Vespera]
 Rex pacíficus * magnificátus est, cujus vultum desíderat univérsa terra.;;109
@@ -22,43 +22,6 @@ Leváte cápita vestra: * ecce appropínquat redémptio vestra.;;116
 !Titus 3:4-5
 v. Appáruit benígnitas, et humánitas Salvatóris nostri Dei: non ex opéribus justítiæ, quæ fécimus nos, sed secúndum suam misericórdiam salvos nos fecit.
 $Deo gratias
-
-[HymnusM Vespera]
-v. Christe Redémptor ómnium,
-Ex Patre Patris únice,
-Solus ante princípium
-Natus ineffabíliter.
-_
-Tu lumen, tu splendor Patris,
-Tu spes perénnis ómnium:
-Inténde quas fundunt preces
-Tui per orbem fámuli.
-_
-Meménto salútis Auctor,
-Quod nostri quondam córporis,
-Ex illibáta Vírgine
-Nascéndo, formam súmpseris.
-_
-Sic præsens testátur dies,
-Currens per anni círculum,
-Quod solus a sede Patris
-Mundi salus advéneris.
-_
-Hunc cælum, terra, hunc mare,
-Hunc omne quod in eis est,
-Auctórem advéntus tui,
-Laudans exsúltat cántico.
-_
-Nos quoque, qui sancto tuo
-Redémpti sánguine sumus,
-Ob diem natális tui,
-Hymnum novum concínimus.
-_
-Glória tibi Dómine,
-Qui natus es de Vírgine,
-Cum Patr[e] et Sancto Spíritu,
-In sempitérna sǽcula.
-Amen.
 
 [Hymnus Vespera]
 {:H-Jesuredemptoromnium:}v. Jesu, Redémptor ómnium,
@@ -97,6 +60,43 @@ Cum Patre et almo Spíritu,
 In sempitérna sǽcula.
 Amen.
 
+[HymnusM Vespera]
+v. Christe Redémptor ómnium,
+Ex Patre Patris únice,
+Solus ante princípium
+Natus ineffabíliter.
+_
+Tu lumen, tu splendor Patris,
+Tu spes perénnis ómnium:
+Inténde quas fundunt preces
+Tui per orbem fámuli.
+_
+Meménto salútis Auctor,
+Quod nostri quondam córporis,
+Ex illibáta Vírgine
+Nascéndo, formam súmpseris.
+_
+Sic præsens testátur dies,
+Currens per anni círculum,
+Quod solus a sede Patris
+Mundi salus advéneris.
+_
+Hunc cælum, terra, hunc mare,
+Hunc omne quod in eis est,
+Auctórem advéntus tui,
+Laudans exsúltat cántico.
+_
+Nos quoque, qui sancto tuo
+Redémpti sánguine sumus,
+Ob diem natális tui,
+Hymnum novum concínimus.
+_
+Glória tibi Dómine,
+Qui natus es de Vírgine,
+Cum Patr[e] et Sancto Spíritu,
+In sempitérna sǽcula.
+Amen.
+
 [Versum 1]
 V. Crástina die delébitur iníquitas terræ.
 R. Et regnábit super nos Salvátor mundi.
@@ -107,6 +107,9 @@ Cum ortus fúerit * sol de cælo, vidébitis Regem regum procedéntem a Patre, t
 [Oratio]
 Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet.
 $Per eumdem
+
+[Octava 1]
+@:Octava 3
 
 [Invit]
 Christus natus est nobis: * Veníte, adorémus.
@@ -270,9 +273,6 @@ Párvulus fílius * hódie natus est nobis: et vocábitur Deus, Fortis, allelúj
 v. Multifáriam, multísque modis olim Deus loquens pátribus in prophétis: novíssime diébus istis locútus est nobis in Fílio, quem constítuit herédem universórum, per quem fecit et sǽcula.
 $Deo gratias
 
-[HymnusM Laudes]
-@:Hymnus Laudes:s/auctor/Auctor/ s/Concépit alvo/Verbo concépit/ s/Enítitur/Eníxa est/ s/ventre Matris/matris alvo/ s/Baptísta clausum/Clausus Joánnes/ s/Et lacte módico/Parvóque lacte/ s/Jesu, tibi sit glória/Glória tibi Dómine/ s/almo/Sancto/
-
 [Hymnus Laudes]
 {:H-Asolisortus:}v. A solis ortus cárdine
 Ad usque terræ límitem,
@@ -315,12 +315,26 @@ Cum Patre, et almo Spíritu,
 In sempitérna sǽcula.
 Amen.
 
+[HymnusM Laudes]
+@:Hymnus Laudes:s/auctor/Auctor/ s/Concépit alvo/Verbo concépit/ s/Enítitur/Eníxa est/ s/ventre Matris/matris alvo/ s/Baptísta clausum/Clausus Joánnes/ s/Et lacte módico/Parvóque lacte/ s/Jesu, tibi sit glória/Glória tibi Dómine/ s/almo/Sancto/
+
 [Versum 2]
 V. Notum fecit Dóminus, allelúja.
 R. Salutáre suum, allelúja.
 
 [Ant 2]
 Glória in excélsis Deo, * et in terra pax homínibus bonæ voluntátis, allelúja, allelúja.
+
+[Octava 2]
+!Commemoratio Octavæ Nativitatis
+Ant. Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis, allelúja, allelúja.
+_
+V. Notum fecit Dóminus, allelúja.
+R. Salutáre suum, allelúja.
+_
+$Oremus
+v. Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet.
+$Per eumdem
 
 [Lectio Prima]
 !Heb 1:11-12
@@ -394,17 +408,3 @@ _
 $Oremus
 v. Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet.
 $Per eumdem
-
-[Octava 2]
-!Commemoratio Octavæ Nativitatis
-Ant. Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis, allelúja, allelúja.
-_
-V. Notum fecit Dóminus, allelúja.
-R. Salutáre suum, allelúja.
-_
-$Oremus
-v. Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet.
-$Per eumdem
-
-[Octava 1]
-@:Octava 3

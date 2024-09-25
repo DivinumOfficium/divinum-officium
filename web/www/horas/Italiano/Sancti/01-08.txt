@@ -1,16 +1,8 @@
 [Rank]
 Tertia die infra Octavam Epiphaniae;;Semiduplex;;2;;ex Sancti/01-06
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Die Octava Januarii;;Feria;;1.2;;vide Sancti/01-06
-
-[Rule]
-ex Sancti/01-06
-Lectio1 tempora
-Doxology=Epi
-9 lectiones
-Feria Te Deum
-Infra octavam Epiphaniae Domini
 
 [Lectio1]
 Dalla Lettera ai Romani
@@ -22,12 +14,6 @@ Dalla Lettera ai Romani
 [Responsory1]
 @Sancti/01-06:Responsory1InfraOctavam
 
-[Responsory2]
-@Sancti/01-06:Responsory2
-
-[Responsory3]
-@Sancti/01-06:Responsory3
-
 [Lectio2]
 !Rom 12:4-8
 4 Come infatti in un unico corpo noi abbiamo molte membra, e non tutte le membra hanno la stessa funzione: 
@@ -35,6 +21,9 @@ Dalla Lettera ai Romani
 6 Avendo perciò doni differenti, secondo la grazia che ci è stata data, chi ha il dono della profezia (la eserciti) secondo la regola della fede; 
 7 chi il ministero, nelle funzioni del ministero; chi il dono dell'insegnamento, nell'insegnare; 
 8 chi dell'esortatore, nell'esortare; chi fa elemosina, (la faccia) con semplicità; chi presiede, usi diligenza; chi fa opere di misericordia, (le faccia) con amabilità.
+
+[Responsory2]
+@Sancti/01-06:Responsory2
 
 [Lectio3]
 !Rom 12:9-16
@@ -46,6 +35,9 @@ Dalla Lettera ai Romani
 14 Benedite coloro che vi perseguitano: benedite e non vogliate maledire. 
 15 Rallegrarsi con quelli che sono allegri, piangere con quelli che piangono: 
 16 Regni tra voi la concordia: Non aspirando a cose alte, ma avendo simpatia per gli umili.
+
+[Responsory3]
+@Sancti/01-06:Responsory3
 
 [Lectio4]
 Dal Sermone di sant'Agostino Vescovo

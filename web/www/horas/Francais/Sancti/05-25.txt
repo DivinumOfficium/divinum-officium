@@ -1,11 +1,6 @@
 [Rank]
 S. Gregoire VII Pape et Confesseur;;Duplex;;3;;vide C4
 
-[Rule]
-vide C4;
-9 lectiones
-CPapaM=Urbain;
-
 [Oratio]
 O Dieu, force de ceux qui espèrent en Vous, Vous qui avez fortifié le bienheureux Grégoire, Votre Confesseur et Pontife par la vertu de constance dans la défense de la liberté de l'Eglise, accordez-nous, par son exemple et son intercession, de triompher courageusement de toute adversité.
 $Per Dominum
@@ -30,9 +25,6 @@ II étant mort, le moine Hildebrand fut élu souverain pontife à l’unanimité
 [Lectio6]
 Pendant qu’il célébrait le saint Sacrifice, de pieux personnages virent une colombe descendre du ciel, se reposer sur son épaule droite et voiler sa tête de ses ailes étendues : prodige signifiant que l’Esprit-Saint lui-même, et non la sagesse humaine, le guidait dans le gouvernement de l’Église. Rome se trouvant serrée de près par les troupes du criminel Henri, le Saint Pontife éteignit d’un signe de croix un incendie allumé par l’ennemi. Quand Robert Guiscard, chef des Normands, l’eut arraché aux mains de son persécuteur, il gagna le mont Cassin, et de là se rendit à Salerne pour y dédier une église en l’honneur de saint Matthieu. Épuisé par tant d’épreuves, il se vit, un jour que dans cette ville, il parlait au peuple, saisi d’un mal qu’il sut d’avance être mortel. Les dernières paroles de Grégoire expirant, furent : « J’ai aimé la justice et j’ai haï l’iniquité : voilà pourquoi je meurs en exil ». Innombrables furent, et les contradictions qu’eut à souffrir, et les sages décrets que porta, dans beaucoup de conciles qu’il tint à Rome, cet homme véritablement saint, ce vengeur des crimes et ce très vaillant défenseur de l’Église. Il avait passé douze années dans le souverain pontificat, lorsqu’il partit pour le ciel, l’an du salut mil quatre-vingt-cinq. Beaucoup de miracles illustrèrent sa vie et sa mort, et sa sainte dépouille fut ensevelie avec honneur dans l’église principale de Salerne.
 
-[Lectio93]
-@Sancti/05-25o
-
 [Lectio94]
 Grégoire VII, de son premier nom, Hildebrand, naquit à Sovana en Toscane. Remarquable entre les plus remarquables, par la science, la sainteté, comme par toute espèce de vertus, il en répandit le merveilleux éclat à travers toute l’Église de Dieu. Jeune encore il prit l’habit religieux au monastère de Cluny et se consacra au service de Dieu avec une piété si ardente que, bientôt, les saints religieux de ce même monastère le choisirent comme prieur. Élu ensuite abbé du monastère de Saint-Paul-hors-les-murs, puis créé Cardinal de PÉglise Romaine, il fut chargé de fonctions et de missions des plus importantes, sous les pontifes Léon IX, Victor II, Étienne IX, Nicolas II et Alexandre II. Élu Pape à l’unanimité à la mort d’Alexandre II, il fut le champion et le défenseur très ardent de la liberté ecclésiastique. Il souffrit beaucoup pour ce motif et fut obligé de s’éloigner de Rome. Ses dernières paroles en mourant, furent : « J’ai aimé la justice et haï l’iniquité ; voilà pourquoi je meurs en exil. » Il partit pour le ciel, l’an du salut mil quatre-vingt-cinq, et sa précieuse dépouille fut ensevelie avec honneur dans la basilique cathédrale de Salerne
 &teDeum
@@ -46,6 +38,5 @@ Grégoire VII, de son premier nom, Hildebrand, naquit à Sovana en Toscane. Rema
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
-
+[Lectio93]
+@Sancti/05-25o

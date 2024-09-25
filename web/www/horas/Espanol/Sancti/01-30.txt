@@ -1,9 +1,5 @@
 [Rank]
-S. Martinæ Virginis et Martyris;;Semiduplex;;2;;vide C6b
-
-[Rule]
-vide C6b;
-9 lectiones
+S. Martinæ Virginis et Martyris;;Semiduplex;;2;;vide C6
 
 [Oratio]
 @Commune/C6::s/N\./Martina/
@@ -68,6 +64,10 @@ Algunos verdugos, sorprendidos por el milagro, y movidos por la gracia de Dios, 
 [Lectio6]
 Enojado el juez por estos prodigios, y por su constancia, mandó que la decapitasen. Cumplida esta orden, se oyó una voz que la llamaba al cielo, y toda la ciudad se estremeció, y muchos idólatras se convirtieron a la fe de Jesucristo. El cuerpo de Santa Martina, martirizada en tiempo del papa San Urbano I, fue hallado bajo el pontificado de Urbano VIII junto al de los santos mártires Concordio, Epifanio y sus compañeros en una iglesia, cerca de la prisión Mamertina, del monte Capitolino. Esta iglesia fue reconstruida y ornamentada bajo un nuevo plan, y recibió el cuerpo de la Santa, depositado allí en presencia de un gran concurso del pueblo, con gran alegría de toda la ciudad.
 
+[Lectio94]
+Martina, virgen romana de una familia ilustre, huérfana desde joven, distribuyó su vasta fortuna a los pobres. Bajo el emperador Alejandro, se le ordenó sacrificar a los dioses, negándose a cometer este crimen. Fue sometida a muchos tipos de torturas y, finalmente, condenada a las bestias en el anfiteatro, quedó ilesa por protección divina. Luego la arrojaron a un horno ardiente, y de nuevo se conservó ilesa. Algunos de sus atormentadores movidos por este milagro abrazaron la fe de Cristo y recibieron la corona del martirio. Por las oraciones de Martina, Dios hizo muchas maravillas. Enfurecido por esto y confundido por la constancia de la Virgen, el juez ordenó su decapitación. Todo sucedió durante el papado de San Urbano I. Bajo Urbano VIII, su cuerpo fue encontrado en la antigua iglesia que lleva su nombre en la prisión de Mamertiae junto al de los santos mártires Concordio, Epifanio y sus compañeros. Restaurada la iglesia, fue sepultada solemnemente, en medio del regocijo de toda la ciudad.
+&teDeum
+
 [Hymnus Laudes]
 v. Guarda ¡oh Martina! incólume
 tu suelo generoso:
@@ -97,10 +97,3 @@ no seduzcan nuestra alma;
 mas de tu gloria espléndida
 la alumbre el resplandor.
 Amén.
-
-[Hymnus Vespera 3]
-@:Hymnus Laudes
-
-[Lectio94]
-Martina, virgen romana de una familia ilustre, huérfana desde joven, distribuyó su vasta fortuna a los pobres. Bajo el emperador Alejandro, se le ordenó sacrificar a los dioses, negándose a cometer este crimen. Fue sometida a muchos tipos de torturas y, finalmente, condenada a las bestias en el anfiteatro, quedó ilesa por protección divina. Luego la arrojaron a un horno ardiente, y de nuevo se conservó ilesa. Algunos de sus atormentadores movidos por este milagro abrazaron la fe de Cristo y recibieron la corona del martirio. Por las oraciones de Martina, Dios hizo muchas maravillas. Enfurecido por esto y confundido por la constancia de la Virgen, el juez ordenó su decapitación. Todo sucedió durante el papado de San Urbano I. Bajo Urbano VIII, su cuerpo fue encontrado en la antigua iglesia que lleva su nombre en la prisión de Mamertiae junto al de los santos mártires Concordio, Epifanio y sus compañeros. Restaurada la iglesia, fue sepultada solemnemente, en medio del regocijo de toda la ciudad.
-&teDeum

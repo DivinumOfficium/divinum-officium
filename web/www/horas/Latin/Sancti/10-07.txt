@@ -4,6 +4,9 @@ Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex 2 classis;;5.1;;ex C11
 [Rank] (rubrica 196)
 Beatæ Mariæ Virginis a Rosario;;Duplex 2 classis;;5;;ex C11
 
+[Rank] (rubrica innovata)
+Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex;;3;;ex C11
+
 [Rule]
 ex C11;
 9 lectiones
@@ -57,19 +60,6 @@ Beáta es, * Virgo María, Dei Génetrix, quæ credidísti Dómino; perfécta su
 [Oratio]
 Deus, cujus Unigénitus per vitam, mortem et resurrectiónem suam nobis salútis ætérnæ prǽmia comparávit: concéde, quǽsumus; ut hæc mystéria sacratíssimo beátæ Maríæ Vírginis Rosário recoléntes, et imitémur quod cóntinent, et quod promíttunt, assequámur.
 $Per eumdem
-
-[Commemoratio 2]
-!Commemoratio S. Marci Papæ
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Exaudi, Domine, preces nostras: et, interveniente beato Marco, Confessore tuo atque Pontifice, indulgentiam nobis tribue placatus et pacem.
-$Per Dominum
-_
-!Commemoratio Ss. Mártyrum Sergii, Bacchi, Marcelli et Apuleji
-@Commune/C3:Oratio proper
-$Oremus
-Sanctórum Mártyrum tuórum nos, Dómine, Sergii, Bacchi, Marcelli et Apuleji beáta merita prosequántur: et tuo semper fáciant amóre fervéntes. 
-$Per Dominum
 
 [Invit]
 Solemnitátem Rosárii Vírginis Maríæ celebrémus: * Christum ejus Fílium adorémus Dóminum.
@@ -277,6 +267,19 @@ R. Et habitáre eam fecit in tabernáculo suo.
 
 [Ant 2]
 Solemnitátem hodiérnam * sacratíssimi Rosárii Genetrícis Dei Maríæ devóte celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum.
+
+[Commemoratio 2]
+!Commemoratio S. Marci Papæ
+@Commune/C4:Oratio proper Gregem
+$Oremus
+Exaudi, Domine, preces nostras: et, interveniente beato Marco, Confessore tuo atque Pontifice, indulgentiam nobis tribue placatus et pacem.
+$Per Dominum
+_
+!Commemoratio Ss. Mártyrum Sergii, Bacchi, Marcelli et Apuleji
+@Commune/C3:Oratio proper
+$Oremus
+Sanctórum Mártyrum tuórum nos, Dómine, Sergii, Bacchi, Marcelli et Apuleji beáta merita prosequántur: et tuo semper fáciant amóre fervéntes. 
+$Per Dominum
 
 [Lectio Prima]
 !Sir 24:17-18

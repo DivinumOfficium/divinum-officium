@@ -1,16 +1,6 @@
 [Rank]
 St Etienne Protomartyr;;Duplex II class cum octava simplici;;5.4;;ex C2
 
-[Rule]
-ex C2 ;
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-no Psalm5
-
-[Versum 1]
-@Commune/C2:Versum 1
-
 [Ant 1]
 Étienne * plein de grâce et de force faisait de grands prodiges parmi le peuple.
 
@@ -131,32 +121,6 @@ $Deo gratias
 V. Des hommes craignant Dieu ensevelirent Étienne.
 R. Et lui firent de grandes lamentations.
 
-[Ant 2]
-@:Ant 1
-
-[Lectio Prima]
-!Act. 7:59
-v. S'étant agenouillé, il cria d'une voix forte, disant a Seigneur, ne leur imputez pas ce péché. Et après avoir dit cela, il s’endormit dans le Seigneur.
-
-[Capitulum Sexta]
-!Act. 6:9-10
-v. Voici que se levèrent certains hommes de la synagogue qui est appelée des Affranchis et des Cyrénéens et des Alexandrins et de ceux originaires de Cilicie et d’Asie, disputant avec Étienne ; et ils ne pouvaient résister à la sagesse et à l’Esprit qui parlait [par lui].
-$Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Ant Vespera 3]
-@Sancti/12-25:Ant Vespera 3
-
-[Versum 3]
-V. Étienne vit les cieux ouverts.
-R. Il vit et il entra ; bienheureux l’homme pour qui les cieux s’ouvrirent.
-
-[Ant 3]
-Des hommes craignant Dieu * ensevelirent Etienne et lui firent une grande lamentation.
-
 [Octava 2]
 !Commémoraison de l'Octave de St Etienne :
 Ant. Étienne * plein de grâce et de force faisait de grands prodiges parmi le peuple.
@@ -167,6 +131,22 @@ _
 $Oremus
 v. Donnez-nous, Seigneur, nous vous le demandons, d’imiter ce que nous célébrons, afin que nous apprenions à aimer nos ennemis, puisque nous fêtons la naissance au ciel de celui qui a su prier pour ses persécuteurs Notre Seigneur Jésus-Christ, votre Fils :
 $Qui tecum
+
+[Lectio Prima]
+!Act. 7:59
+v. S'étant agenouillé, il cria d'une voix forte, disant a Seigneur, ne leur imputez pas ce péché. Et après avoir dit cela, il s’endormit dans le Seigneur.
+
+[Capitulum Sexta]
+!Act. 6:9-10
+v. Voici que se levèrent certains hommes de la synagogue qui est appelée des Affranchis et des Cyrénéens et des Alexandrins et de ceux originaires de Cilicie et d’Asie, disputant avec Étienne ; et ils ne pouvaient résister à la sagesse et à l’Esprit qui parlait [par lui].
+$Deo gratias
+
+[Versum 3]
+V. Étienne vit les cieux ouverts.
+R. Il vit et il entra ; bienheureux l’homme pour qui les cieux s’ouvrirent.
+
+[Ant 3]
+Des hommes craignant Dieu * ensevelirent Etienne et lui firent une grande lamentation.
 
 [Octava 3]
 !Commemoratio Octavæ S. Stéphani

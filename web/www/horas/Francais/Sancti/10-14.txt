@@ -4,10 +4,6 @@ St Calixte Ier, Pape et Martyr;;Duplex;;3;;vide C2
 [Rank] (rubrica 1570)
 St Calixte Ier, Pape et Martyr;;Semiduplex;;2;;vide C2
 
-[Rule]
-vide C2 ;
-9 lectiones
-
 [Oratio]
 O Dieu, qui nous voyez défaillir à cause de notre faiblesse, raffermissez-nous miséricordieusement dans votre amour au moyen des exemples de vos Saints.
 $Per Dominum
@@ -28,17 +24,17 @@ Le Romain Calixte gouverna l’Église sous l’empereur , Antonin Héliogabale.
 [Lectio7]
 @Commune/C4:Lectio7 in 2 loco
 
+[Lectio7] (rubrica tridentina)
+@Sancti/02-22:Lectio7
+
 [Lectio8]
 @Commune/C4:Lectio8 in 2 loco
+
+[Lectio8] (rubrica tridentina)
+@Sancti/02-22:Lectio8
 
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
-[Lectio7](rubrica tridentina)
-@Sancti/02-22:Lectio7
-
-[Lectio8](rubrica tridentina)
-@Sancti/02-22:Lectio8
-
-[Lectio9](rubrica tridentina)
+[Lectio9] (rubrica tridentina)
 @Sancti/02-22:Lectio9

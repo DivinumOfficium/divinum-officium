@@ -1,22 +1,11 @@
 [Rank]
 In Octava S. Joannis;;Simplex;;1.1;;vide Sancti/12-27
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1955)
 Die Tertia Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rank] (rubrica tridentina)
 In Octava S. Joannis;;Duplex;;3;;ex Sancti/12-27
-
-[Rule]
-vide Sancti/12-27;
-Feria Te Deum
-Comkey=70
-9 lectiones
-
-[Capitulum Laudes] (rubrica divino aut rubrica monastica)
-!Sir 15:1-2
-v. Chi teme Dio, farà il bene: e chi osserva la giustizia con esattezza, possederà la sapienza, ed essa gli andrà incontro qual madre veneranda.
-$Deo gratias
 
 [Lectio1]
 Dalla Lettera ai Romani
@@ -27,6 +16,9 @@ Dalla Lettera ai Romani
 4 Siamo dunque stati, mediante il battesimo, sepolti con lui nella sua morte; affinché come Cristo è risuscitato da morte, mediante la gloria del Padre, così anche noi viviamo una vita nuova. 
 5 Se infatti siamo diventati una sola pianta con lui per la somiglianza della sua morte, lo saremo pure per quella della risurrezione.
 
+[Responsory1]
+@Sancti/01-01:Responsory4
+
 [Lectio2]
 !Rom 6:6-11
 6 Sapendo questo, che il nostro uomo vecchio è stato crocifisso con lui, affinché fosse distrutto il corpo del peccato, 
@@ -35,6 +27,9 @@ Dalla Lettera ai Romani
 9 noi crediamo che anche vivremo con Cristo: poiché sappiamo che Cristo risuscitato da morte non muore più, la morte non avrà più dominio su lui. 
 10 Infatti s'egli è morto per il peccato, è morto una volta soltanto: ma ora egli vive, e vive per Iddio. 
 11 Così anche voi consideratevi d'esser morti al peccato, e di vivere per Iddio in Gesù Cristo Signore nostro.
+
+[Responsory2]
+@Sancti/01-01:Responsory5
 
 [Lectio3]
 !Rom 6:12-18
@@ -46,19 +41,8 @@ Dalla Lettera ai Romani
 17 Grazie però a Dio che foste sì servi del peccato, ma avete poi obbedito di cuore a quella forma di dottrina sulla quale siete stati formati. 
 18 E, liberati dal peccato, siete divenuti servi della giustizia.
 
-[Responsory1]
-@Sancti/01-01:Responsory4
-
-[Responsory2]
-@Sancti/01-01:Responsory5
-
 [Responsory3]
 @Sancti/01-01:Responsory6
-
-[Lectio93]
-Dal Trattato di sant'Agostino Vescovo su Giovanni
-!Tratt. 36
-Dei quattro Vangeli, o piuttosto dei quattro libri dello stesso Vangelo, il più elevato e più sublime è quello di san Giovanni Apostolo, il quale, paragonato, non ingiustamente e in un senso spirituale, all'aquila, sorpassò col suo racconto gli altri tre; e nella sua elevazione, volle sollevare anche i nostri cuori. Difatti gli altri tre Evangelisti sembrano camminare sulla terra col Signore, considerandolo come uomo, e ci dicono poco della sua divinità: questo invece quasi gli rincrescesse di vivere sulla terra, elevò talmente la voce che, come appare dal principio stesso del suo scritto, si sollevò non solo al disopra della terra, dell'atmosfera, e degli astri, ma ancora al disopra di tutto l'esercito degli Angeli e di tutte le Potenze invisibili stabilite da Dio, giungendo a colui che ha fatto tutte le cose, dicendo: «Nel principio era il Verbo, e il Verbo era presso Dio, anzi il Verbo era Dio» (Joann. 1,1).
 
 [Lectio4]
 Dal Trattato di sant'Agostino Vescovo su Giovanni
@@ -86,3 +70,13 @@ Poiché Pietro diceva ciò con grandissima carità, ne volendo essere diviso da 
 [Lectio9]
 Si sparse perciò questa voce tra i fratelli che quel discepolo non muore. E Gesù non disse : Egli non muore : ma : Se voglio che egli rimanga fino a tanto che io venga, che importa a te? Non pensare, disse, che io abbia disposto di voi nel medesimo modo. E ciò disse per togliere l'affetto fuori tempo e il desiderio della compagnia. Infatti visto che si sarebbero presi cura di tutta la terra, non era opportuno che fossero oltre insieme: sarebbe stato infatti grande danno per il mondo. Perciò disse: Hai preso un compito, consideralo: completa, lavora, ed esponiti alle lotte. Che ti importa, se voglio che rimanga qui? Tu pensa al tuo compito, ed eseguilo.
 &teDeum
+
+[Lectio93]
+Dal Trattato di sant'Agostino Vescovo su Giovanni
+!Tratt. 36
+Dei quattro Vangeli, o piuttosto dei quattro libri dello stesso Vangelo, il più elevato e più sublime è quello di san Giovanni Apostolo, il quale, paragonato, non ingiustamente e in un senso spirituale, all'aquila, sorpassò col suo racconto gli altri tre; e nella sua elevazione, volle sollevare anche i nostri cuori. Difatti gli altri tre Evangelisti sembrano camminare sulla terra col Signore, considerandolo come uomo, e ci dicono poco della sua divinità: questo invece quasi gli rincrescesse di vivere sulla terra, elevò talmente la voce che, come appare dal principio stesso del suo scritto, si sollevò non solo al disopra della terra, dell'atmosfera, e degli astri, ma ancora al disopra di tutto l'esercito degli Angeli e di tutte le Potenze invisibili stabilite da Dio, giungendo a colui che ha fatto tutte le cose, dicendo: «Nel principio era il Verbo, e il Verbo era presso Dio, anzi il Verbo era Dio» (Joann. 1,1).
+
+[Capitulum Laudes] (rubrica divino aut rubrica monastica)
+!Sir 15:1-2
+v. Chi teme Dio, farà il bene: e chi osserva la giustizia con esattezza, possederà la sapienza, ed essa gli andrà incontro qual madre veneranda.
+$Deo gratias

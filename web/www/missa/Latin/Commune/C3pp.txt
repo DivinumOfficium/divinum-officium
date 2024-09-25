@@ -12,16 +12,13 @@ Exaltábo te, Deus meus, Rex: et benedícam nómini tuo in sǽculum, et in 
 v. Sancti tui, Dómine, benedícent te: glóriam regni tui dicent, allelúja, allelúja.
 
 [Oratio]
-Beatórum Mártyrum paritérque Pontíficum N. et N. nos, quǽsumus, Dómine, festa tueántur: et eórum comméndet orátio veneránda.
-$Per Dominum.
+@Commune/C3
 
 [Oratio1]
-Deus, qui nos concédis sanctórum Mártyrum tuórum N. et N. natalítia cólere: da nobis in ætérna beatitúdine de eórum societáte gaudére.
-$Per Dominum.
+@Commune/C3a:Oratio
 
 [Oratio2]
-Deus, qui nos ánnua sanctórum Mártyrum tuorum N. et N. sollemnitáte lætíficas: concéde propítius; ut, quorum gaudémus méritis, accendámur exémplis.
-$Per Dominum.
+@Commune/C3b:Oratio
 
 [Lectio]
 Léctio Epístolæ beáti Petri Apóstoli
@@ -45,16 +42,13 @@ In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis, vos pálmites: qu
 Lætámini in Dómino et exsultáte, justi: et gloriámini, omnes recti corde, allelúja, allelúja.
 
 [Secreta]
-Adésto, Dómine, supplicatiónibus nostris, quas in Sanctórum tuórum commemoratióne deférimus: ut, qui nostræ justítiæ fidúciam non habémus, eórum, qui tibi placuérunt, méritis adjuvémur.
-$Per Dominum.
+@Commune/C3
 
 [Secreta1]
-Múnera tibi, Dómine, nostræ devotiónis offérimus: quæ et pro tuórum tibi grata sint honóre Justórum, et nobis salutária, te miseránte, reddántur.
-$Per Dominum.
+@Commune/C3a:Secreta
 
 [Secreta2]
-Oblátis, quǽsumus, Dómine, placáre munéribus: et, intercedéntibus sanctis Martýribus tuis N. et N., a cunctis nos defénde perículis.
-$Per Dominum
+@Commune/C3b:Secreta
 
 [Communio]
 !Ps 32:1
@@ -65,9 +59,7 @@ Quǽsumus, Dómine, salutitáribus repléti mystériis: ut, quorum sollé
 $Per Dominum.
 
 [Postcommunio1]
-Præsta nobis, quǽsumus, Dómine: intercedéntibus sanctis Martýribus tuis N. et N.; ut, quod ore contíngimus, pura mente capiámus.
-$Per Dominum
+@Commune/C3a:Postcommunio
 
 [Postcommunio2]
-Hæc nos commúnio, Dómine, purget a crimine: et, intercedéntibus sanctis Martýribus tuis N. et N.; cœléstis remédii fáciat esse consórtes.
-$Per Dominum
+@Commune/C3b:Postcommunio

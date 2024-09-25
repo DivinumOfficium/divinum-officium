@@ -1,16 +1,15 @@
 [Rank]
 In Octava S. Stephani;;Simplex;;1.1;;vide Sancti/12-26
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1955)
 Die Secunda Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rank] (rubrica tridentina)
 In Octava Sancti Stephani;;Duplex;;3;;ex Sancti/12-26
 
-[Rule]
-vide Sancti/12-26
-Feria Te Deum
-Comkey=70
+[Oratio] (rubrica divino aut rubrica tridentina aut rubrica monastica)
+Oh Dios omnipotente y eterno, que consagraste las primicias de los Mártires con la sangre del bienaventurado levita Esteban; te rogamos nos concedas que sea nuestro intercesor, aquel que también rogó por sus perseguidores a nuestro Señor Jesucristo tu Hijo.
+$Qui tecum
 
 [Lectio1]
 De la Epístola a los Romanos 
@@ -19,7 +18,10 @@ De la Epístola a los Romanos
 2 por quien en virtud de la fe hemos obtenido también el acceso a esta gracia, en que nos mantenemos y nos gloriamos, en la esperanza de la gloria de Dios. 
 3 Y no sólo esto, sino que nos gloriamos hasta en las tribulaciones, sabedores de que la tribulación produce la paciencia; 
 4 la paciencia, la virtud probada; y la virtud probada, la esperanza. 
-5 Y la esperanza no quedará confundida, pues el amor de Dios se ha derramado en nuestros corazones por virtud del Espíritu Santo, que nos ha sido dado. 
+5 Y la esperanza no quedará confundida, pues el amor de Dios se ha derramado en nuestros corazones por virtud del Espíritu Santo, que nos ha sido dado.
+
+[Responsory1]
+@Sancti/01-01:Responsory1
 
 [Lectio2]
 !Rom 5:6-9
@@ -28,26 +30,17 @@ De la Epístola a los Romanos
 8 pero Dios probó su amor hacia nosotros en que, siendo pecadores, murió Cristo por nosotros. 
 9 Con mayor razón, pues, justificados ahora por su sangre, seremos por Él salvos de la ira.
 
+[Responsory2]
+@Sancti/01-01:Responsory2
+
 [Lectio3]
 !Rom 5:10-12
 10 Porque, si siendo enemigos, fuimos reconciliados con Dios por la muerte de su Hijo, mucho más, reconciliados ya, seremos salvos en su vida. 
 11 No sólo reconciliados, sino que nos gloriamos en Dios por nuestro Señor Jesucristo, por quien recibimos ahora la reconciliación. 
-12 Así, pues, como por un hombre entró el pecado en el mundo, y por el pecado la muerte, y así la muerte pasó a todos los hombres, por cuanto todos pecaron. 
-
-[Responsory1]
-@Sancti/01-01:Responsory1
-
-[Responsory2]
-@Sancti/01-01:Responsory2
+12 Así, pues, como por un hombre entró el pecado en el mundo, y por el pecado la muerte, y así la muerte pasó a todos los hombres, por cuanto todos pecaron.
 
 [Responsory3]
 @Sancti/01-01:Responsory3
-
-[Lectio93]
-Sermón de San Agustín, Obispo. 
-!Sermón 2 de San Esteban.
-Cristo, cabeza de los Mártires, primero padeció por nosotros, dejándonos su ejemplo para que sigamos sus vestigios. Seguidos por el beatísimo Esteban, fue lapidado por los Judíos por haber confesado a Cristo. Así mereció la corona que parece designar su nombre; ya que Esteban en griego, es lo mismo que corona en latín. Su nombre significaba corona, por lo cual llevaba ya de antemano en su nombre un presagio de la palma del martirio. Al ser apedreado, no sólo no esperaba vengarse de sus perseguidores, sino que más bien pedía a Dios indulgencia en favor de ellos.
-&teDeum
 
 [Lectio4]
 Sermón de San Agustín, Obispo.
@@ -58,7 +51,7 @@ Tras la gran solemnidad de ayer, que nos es alumbrada por la Natividad de Cristo
 Cristo, cabeza de los Mártires, primero padeció por nosotros, dejándonos su ejemplo para que sigamos sus vestigios. Seguidos por el beatísimo Esteban, fue lapidado por los Judíos por haber confesado a Cristo. Así mereció la corona que parece designar su nombre; ya que Esteban en griego, es lo mismo que corona en latín. Su nombre significaba corona, por lo cual llevaba ya de antemano en su nombre un presagio de la palma del martirio.
 
 [Lectio6]
-Al ser apedreado, no sólo no esperaba vengarse de sus perseguidores, sino que más bien pedía a Dios indulgencia en favor de ellos. En la mente tenía lo que había dicho el Señor: «Mía es la venganza, yo te daré tu recompensa, dice el Señor» (Heb 10, 30). Más aún: «No digas: "Yo me vengaré", sino espera en el Señor, y Él te librará». El Señor Dios nos manda que tengamos paciencia, pues, en el día de la retribución, nos será hecha justicia con los santos Mártires.
+Al ser apedreado, no sólo no esperaba vengarse de sus perseguidores, sino que más bien pedía a Dios indulgencia en favor de ellos. En la mente tenía lo que había dicho el Señor: «Mía es la venganza, yo te daré tu recompensa, dice el Señor» (Heb 10, 30). Más aún: «No digas: “Yo me vengaré”, sino espera en el Señor, y Él te librará». El Señor Dios nos manda que tengamos paciencia, pues, en el día de la retribución, nos será hecha justicia con los santos Mártires.
 
 [Lectio7]
 Lección del Santo Evangelio según S. Mateo 
@@ -67,7 +60,7 @@ En aquel tiempo: Decía Jesús a los escribas y fariseos: He ahí que Yo os env�
 _
 Homilía de San Jerónimo, Presbítero.
 !Libro 4, de los coment. sobre el cap. 23 de San Mateo.
-Estas palabras “Llenad la medida de vuestros padres”, que ya dijimos se referían a la persona del Señor, por cuanto había de ser crucificado por ellos, pueden también aplicarse a sus discípulos, de quienes ahora se dice: “He aquí que Yo os envío profetas y sabios y escribas”. Al propio tiempo debemos observar, conforme lo advierte el Apóstol escribiendo a los Corintios, que son diversos los dones de los discípulos de Cristo. Unos son profetas, los cuales anuncian lo venidero; otros tienen el don de la sabiduría por el cual disciernen cuándo es oportuno hablar; otros son doctores muy peritos en la ley. Entre estos últimos, Esteban fue apedreado; Pablo muerto; crucificado Pedro, y azotados los discípulos, según los Hechos de los Apóstoles. 
+Estas palabras “Llenad la medida de vuestros padres”, que ya dijimos se referían a la persona del Señor, por cuanto había de ser crucificado por ellos, pueden también aplicarse a sus discípulos, de quienes ahora se dice: “He aquí que Yo os envío profetas y sabios y escribas”. Al propio tiempo debemos observar, conforme lo advierte el Apóstol escribiendo a los Corintios, que son diversos los dones de los discípulos de Cristo. Unos son profetas, los cuales anuncian lo venidero; otros tienen el don de la sabiduría por el cual disciernen cuándo es oportuno hablar; otros son doctores muy peritos en la ley. Entre estos últimos, Esteban fue apedreado; Pablo muerto; crucificado Pedro, y azotados los discípulos, según los Hechos de los Apóstoles.
 
 [Lectio8]
 Preguntamos quién sea este Zacarías hijo de Baraquías; ya que conocemos por la Biblia varios Zacarías. Mas para que no pudiésemos equivocarnos, se añade: “Al que matasteis entre el templo y el altar”. En diversos autores he podido leer diversas opiniones, y por lo mismo debo manifestar la opinión de cada uno. Unos dicen que este Zacarías hijo de Baraquías es el undécimo de los profetas por llevar su padre el nombre citado en el Evangelio. Mas que fuera muerto entre el templo y el altar, la Escritura no lo dice, y, por otra parte, en sus tiempos apenas existían las ruinas del templo. Otros, influidos por las fantasías de algunos apócrifos, sostienen que se trata de Zacarías, padre de Juan Bautista, pretendiendo que fue muerto, por haber predicado la venida del Salvador.
@@ -76,6 +69,8 @@ Preguntamos quién sea este Zacarías hijo de Baraquías; ya que conocemos por l
 Otros quieren que este Zacarías sea el que mató Joás, rey de Judá, entre el templo y el altar, según la historia de los Reyes. Mas aquel Zacarías no es hijo de Baraquías, sino hijo del sacerdote Joíada. Por lo cual dice la Escritura: “No se acordó Joás de que su padre Joíada le había hecho muchos beneficios”. Teniendo, pues, por una parte, a Zacarías, y siendo, por otra, el lugar en que sufrió la muerte el antes indicado, preguntamos: ¿por qué se dice hijo de Baraquías y no de Joíada? Baraquías en nuestra lengua significa Bendito del Señor, y en hebreo Joíada significa justicia. En el Evangelio de que se sirven los Nazarenos en lugar de hijo de Baraquías, hallamos hijo de Joíada.
 &teDeum
 
-[Oratio] (rubrica divino aut rubrica tridentina aut rubrica monastica)
-Oh Dios omnipotente y eterno, que consagraste las primicias de los Mártires con la sangre del bienaventurado levita Esteban; te rogamos nos concedas que sea nuestro intercesor, aquel que también rogó por sus perseguidores a nuestro Señor Jesucristo tu Hijo.
-$Qui tecum
+[Lectio93]
+Sermón de San Agustín, Obispo. 
+!Sermón 2 de San Esteban.
+Cristo, cabeza de los Mártires, primero padeció por nosotros, dejándonos su ejemplo para que sigamos sus vestigios. Seguidos por el beatísimo Esteban, fue lapidado por los Judíos por haber confesado a Cristo. Así mereció la corona que parece designar su nombre; ya que Esteban en griego, es lo mismo que corona en latín. Su nombre significaba corona, por lo cual llevaba ya de antemano en su nombre un presagio de la palma del martirio. Al ser apedreado, no sólo no esperaba vengarse de sus perseguidores, sino que más bien pedía a Dios indulgencia en favor de ellos.
+&teDeum

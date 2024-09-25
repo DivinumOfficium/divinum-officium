@@ -4,8 +4,14 @@
 12 lectiones
 Doxology=Nat
 
+[Responsory Vespera]
+@CommuneM/C10
+
 [Commemoratio]
 
+
+[Ant Matutinum 3N]
+Hódie * nata est beáta Virgo María ex progénie David: † per quam salus mundi credéntibus appáruit.
 
 [Lectio1]
 @Sancti/08-15t:Lectio1:s/-4/-3/ s/.4 .*//s
@@ -54,9 +60,6 @@ R. Corde et ánimo Christo canámus glóriam in hac sacra solemnitáte præcéls
 V. Cum jucunditáte Nativitátem beátæ Mariæ celebrémus.
 R. Ut ipsa pro nobis intercédat ad Dóminum.
 
-[Ant Matutinum 3N]
-Hódie * nata est beáta Virgo María ex progénie David: † per quam salus mundi credéntibus appáruit.
-
 [Lectio9]
 @Sancti/09-08:Lectio7:s/Fílii .*//s
 
@@ -83,9 +86,6 @@ R. Qua celsitúdo throni procéssit.
 
 [Responsory12]
 @Commune/C11:Responsory1
-
-[Responsory Vespera]
-@CommuneM/C10
 
 [Responsory Laudes]
 @CommuneM/C10

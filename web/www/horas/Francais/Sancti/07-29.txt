@@ -1,26 +1,11 @@
 [Rank]
-Ste Marthe Vierge;;Semiduplex;;2;;vide C6
+Ste Marthe Vierge;;Semiduplex;;2;;vide C6b
 
 [Rank] (rubrica 1960)
- Ste Marthe Vierge;;Semiduplex;;3;;vide C6
-
-[Rule]
-vide C6;
-9 lectiones;
+Ste Marthe Vierge;;Semiduplex;;3;;vide C6b
 
 [Oratio]
-Exaucez-nous, ô Dieu notre Sauveur, si bien qu'en nous donnant la joie, la fête de Votre bienheureuse Vierge Marthe nous instruise par le sentiment d'une pieuse dévotion.
-$Per Dominum
-
-[Commemoratio]
-!mémoire de St Félix, Pape, et des Sts Simplice, Faustin et Béatrice, Martyrs :
-@Commune/C3:Oratio proper
-$Oremus
-v. Accordez-nous, s'il Vous plaît, Seigneur, que le peuple chrétien qui se réjouit ici-bas de la solennité temporelle de Vos Martyrs Félix, Simplice, Faustin et Béatrice, jouisse de même un jour de leur fête éternelle et qu'il possède éternellement ce qu'il célèbre par ses vœux.
-$Per Dominum
-
-[Hymnus Matutinum]
-@Commune/C6:Hymnus Matutinum pro Virgo tantum et non Martyr
+@Commune/C6b::s/N\./Marthe/
 
 [Lectio4]
 Marthe, issue de parents nobles et riches, est célèbre par l’hospitalité qu’elle donna au Seigneur. Après l’ascension de Jésus dans les cieux, les Juifs s’emparèrent d’elle, de son frère, de sa sœur, de Marcelle leur servante et de beaucoup d’autres Chrétiens, parmi lesquels Maximin, l’un des soixante-douze disciples, qui avait baptisé toute cette famille. Marthe fut embarquée sur un vaisseau sans voiles ni rames, et exposée à un naufrage certain sur l’immensité de la mer ; mais la main de Dieu dirigea le navire, qui les conduisit tous sains et saufs à Marseille.
@@ -30,6 +15,10 @@ Leur prédication, jointe à ce miracle, convertit à Jésus-Christ les habitant
 
 [Lectio6]
 Pour ce qui est de Marthe, dont l’éminente sainteté de vie et la charité provoquèrent l’amour et l’admiration de tous les Marseillais, elle se retira avec quelques femmes d’une haute vertu dans un lieu solitaire ; elle y vécut de longues années avec une grande réputation de piété et de prudence. Enfin, après s’être illustrée par des miracles et avoir prédit longtemps à l’avance le jour de sa mort, elle s’en alla vers le Seigneur, le quatrième jour des calendes d’août. A Tarascon on entoure son corps d’une grande vénération.
+
+[Lectio94]
+Marthe était née de parents nobles et fortunés ; mais elle est surtout célèbre par l’hospitalité qu’elle donna au Christ. Après l’Ascension, les Juifs la prirent, avec son frère, sa sœur et un grand nombre d’autres chrétiens, et les embarquèrent sur un navire sans voiles ni rames qui aborda à Marseille. A la suite de ce miracle et de leur prédication, les habitants de cette ville et ceux des contrées voisines crurent au Christ. Marthe conquit l’amour et l’admiration de tous les habitants de Marseille, par l’étonnante sainteté de sa vie et de sa charité. Elle se retira, avec quelques femmes des plus honorables, dans une retraite interdite aux hommes. Elle y vécut longtemps, en grande réputation de piété et de prudence. Enfin, elle rendit son âme au Seigneur, après avoir prédit sa mort longtemps à l’avance et avoir accompli d’éclatants miracles.
+&teDeum
 
 [Lectio7]
 Lecture du saint Évangile selon saint Luc
@@ -45,8 +34,4 @@ Marthe le reçut comme on reçoit un hôte, mais c’était néanmoins la servan
 
 [Lectio9]
 C’est donc ainsi que le Seigneur fut reçu en qualité d’hôte ; « lui qui est venu chez lui, et les siens ne l’ont point reçu, mais à tous ceux qui l’ont reçu, il a donné le pouvoir d’être faits enfants de Dieu », adoptant des esclaves et les prenant pour enfants, rachetant des captifs et les faisant ses cohéritiers. Qu’il n’arrive cependant à aucun de vous de dire : ô bienheureux ceux qui ont eu l’honneur de recevoir le Christ dans leur propre maison ! Garde-toi de te plaindre et de murmurer de ce que tu es né à une époque où tu ne vois plus le Seigneur en sa chair. Il ne t’a point privé de cette faveur. « Chaque fois que vous l’avez fait à un de ces plus petits d’entre mes frères, dit-il, c’est à moi que vous l’avez fait ». En voilà assez sur la nourriture corporelle à offrir au Seigneur. Quant à la nourriture spirituelle qu’il nous donne, nous en dirons quelques mots à l’occasion.
-&teDeum
-
-[Lectio94]
-Marthe était née de parents nobles et fortunés ; mais elle est surtout célèbre par l’hospitalité qu’elle donna au Christ. Après l’Ascension, les Juifs la prirent, avec son frère, sa sœur et un grand nombre d’autres chrétiens, et les embarquèrent sur un navire sans voiles ni rames qui aborda à Marseille. A la suite de ce miracle et de leur prédication, les habitants de cette ville et ceux des contrées voisines crurent au Christ. Marthe conquit l’amour et l’admiration de tous les habitants de Marseille, par l’étonnante sainteté de sa vie et de sa charité. Elle se retira, avec quelques femmes des plus honorables, dans une retraite interdite aux hommes. Elle y vécut longtemps, en grande réputation de piété et de prudence. Enfin, elle rendit son âme au Seigneur, après avoir prédit sa mort longtemps à l’avance et avoir accompli d’éclatants miracles.
 &teDeum

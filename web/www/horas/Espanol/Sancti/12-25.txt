@@ -1,13 +1,6 @@
 [Rank]
 In Nativitate Domini;;Duplex I Classis;;6.9
 
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Doxology=Nat
-Special Evangelii Benedictio
-
 [Ant Vespera]
 El rey de la paz * ha sido glorificado. Toda la tierra desea contemplar su rostro.;;109
 El rey de la paz * ha sido glorificado sobre todos los reyes de la tierra.;;110
@@ -20,8 +13,8 @@ Alzad la cabeza: * se acerca vuestra redención.;;116
 v. Ha aparecido la Bondad de Dios y su amor al hombre. No por las obras de justicia que hayamos hecho nosotros, sino que según su propia misericordia nos ha salvado.
 $Deo gratias
 
-[HymnusM Vespera]
-v. Jesus, Redentor de todos,
+[Hymnus Vespera]
+{:H-Jesuredemptoromnium:}v. Jesus, Redentor de todos,
 antes que luciese el alba,
 igual con el Padre en gloria,
 naciste de sus entrañas.
@@ -57,8 +50,8 @@ con el Padre y almo Espíritu,
 por siglos que nunca acaban.
 Amén.
 
-[Hymnus Vespera]
-{:H-Jesuredemptoromnium:}v. Jesus, Redentor de todos,
+[HymnusM Vespera]
+v. Jesus, Redentor de todos,
 antes que luciese el alba,
 igual con el Padre en gloria,
 naciste de sus entrañas.
@@ -138,7 +131,7 @@ R. Y me dirá: «Tú eres mi Padre». Aleluya.
 3 Multiplicaste la nación; mas no aumentaste la alegría. Sin embargo, se alegrarán algún día delante de ti, como los que se alegran en la siega, o como se huelgan los vencedores con el botín que cogieron, al repartirse los despojos. 
 4 Porque su pesado yugo y la vara que hería sus espaldas, y el bastón de su tirano, tú los hiciste pedazos, como en la jornada de Madián. 
 5 Porque todo despojo hecho con violencia y tumulto, y los vestidos manchados de sangre serán quemados y hechos pábulo del fuego. 
-6 Ahora que ha nacido un parvulito para nosotros, y se nos ha dado un hijo, el cual lleva sobre sus hombros el principado, o la divisa de rey, y tendrá por nombre el Admirable, el Consejero, Dios, el Fuerte, el Padre del siglo venidero, el Príncipe de paz. 
+6 Ahora que ha nacido un parvulito para nosotros, y se nos ha dado un hijo, el cual lleva sobre sus hombros el principado, o la divisa de rey, y tendrá por nombre el Admirable, el Consejero, Dios, el Fuerte, el Padre del siglo venidero, el Príncipe de paz.
 
 [Responsory1]
 R. Hoy se ha dignado nacer de la Virgen para nosotros, el Rey de los cielos para restituir al hombre a los reinos celestiales: 
@@ -267,8 +260,8 @@ Hoy nos ha nacido * un niño que se llamará Dios fuerte. Aleluya, aleluya.
 v. En distintas ocasiones y de muchas maneras habló Dios antiguamente a nuestros padres por los profetas. Ahora, en esta etapa final, nos ha hablado por el Hijo, al que ha nombrado heredero de todo, y por medio del cual ha ido realizando las edades del mundo.
 $Deo gratias
 
-[HymnusM Laudes]
-v. Desde el Oriente al ocaso,
+[Hymnus Laudes]
+{:H-Asolisortus:}v. Desde el Oriente al ocaso,
 y del orbe en todo extremo,
 a Cristo, que de María
 Virgen nació, celebremos.
@@ -309,8 +302,8 @@ con el Padre y almo Espíritu,
 por los siglos sempiternos.
 Amén.
 
-[Hymnus Laudes]
-{:H-Asolisortus:}v. Desde el Oriente al ocaso,
+[HymnusM Laudes]
+v. Desde el Oriente al ocaso,
 y del orbe en todo extremo,
 a Cristo, que de María
 Virgen nació, celebremos.
@@ -357,6 +350,17 @@ R. En su salvación. Aleluya.
 
 [Ant 2]
 Gloria a Dios en el cielo * y en la tierra paz a los hombres que Dios ama. Aleluya, aleluya.
+
+[Octava 2]
+!Conmemoración de la Octava de Navidad
+Ant. Gloria a Dios en el cielo * y en la tierra paz a los hombres que Dios ama. Aleluya, aleluya.
+_
+V. El Señor se ha manifestado. Aleluya.
+R. En su salvación. Aleluya.
+_
+$Oremus
+v. Dios todopoderoso: por este nacer nuevo de tu Hijo en nuestra carne, seamos libertados del yugo en que nos tiene esclavizados el pecado.
+$Per eumdem
 
 [Lectio Prima]
 !Heb 1:11-12
@@ -411,26 +415,12 @@ En las tinieblas * brilla como una luz el Señor justo, clemente y compasivo.;;1
 Del Señor * viene la misericordia, la redención copiosa.;;129
 A uno de tu linaje * pondré sobre tu trono.;;131
 
-[Versum 3]
-@:Versum 2
-
 [Ant 3]
 Hoy * ha nacido Jesucristo. Hoy ha aparecido el Salvador. Hoy cantan los ángeles en la tierra, se alegran los arcángeles. Hoy saltan de gozo los justos diciendo: «Gloria a Dios en el cielo». Aleluya.
 
 [Octava 3]
 !Conmemoración de la Octava de Navidad
 Ant. Hoy ha nacido Jesucristo. Hoy ha aparecido el Salvador. Hoy cantan los ángeles en la tierra, se alegran los arcángeles. Hoy saltan de gozo los justos diciendo: «Gloria a Dios en el cielo». Aleluya.
-_
-V. El Señor se ha manifestado. Aleluya.
-R. En su salvación. Aleluya.
-_
-$Oremus
-v. Dios todopoderoso: por este nacer nuevo de tu Hijo en nuestra carne, seamos libertados del yugo en que nos tiene esclavizados el pecado.
-$Per eumdem
-
-[Octava 2]
-!Conmemoración de la Octava de Navidad
-Ant. Gloria a Dios en el cielo * y en la tierra paz a los hombres que Dios ama. Aleluya, aleluya.
 _
 V. El Señor se ha manifestado. Aleluya.
 R. En su salvación. Aleluya.

@@ -1,19 +1,6 @@
 [Rank]
 In Octava Ss. Innocentium.;;Simplex;;1.1;;vide Sancti/12-28
 
-[Rank] (rubrica 1960)
-Die Quarta Januarii;;Feria;;1.1;;vide Sancti/12-25
-
-[Rank] (rubrica tridentina)
-In Octava Ss. Innocentium.;;Duplex;;3;;ex Sancti/12-28
-
-[Rule]
-vide Sancti/12-28;
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Feria Te Deum
-
 [Lectio1]
 @Sancti/01-04
 
@@ -21,9 +8,6 @@ Feria Te Deum
 @Sancti/01-04
 
 [Lectio3]
-@Sancti/01-04
-
-[Lectio93]
 @Sancti/01-04
 
 [Lectio4]
@@ -44,5 +28,5 @@ Feria Te Deum
 [Lectio9]
 @Sancti/01-04
 
-[Ant Vespera]
-@Sancti/12-28:Ant Laudes:s/$/;;115/
+[Lectio93]
+@Sancti/01-04

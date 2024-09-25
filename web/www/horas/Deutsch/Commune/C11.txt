@@ -1,17 +1,47 @@
 [Name]
 In Festis Beatae Mariae Virginis
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-
-[Ant Vespera]
-Als der König sich aufhielt * in seinem Gemach, ließ meine Nardentaube den lieblichsten Geruch zu ihm aufsteigen.;;109
+[Ant VesperaBMV]
 Seine Linke * legt er unter mein Haupt mir, und seine Recht hält umarmt mich.;;112
-Ich bin gebräunt, * aber schön, Töchter Jerusalems: darum hat mich der König liebgewonnen und mich in sein Gemach hineingeführt.;;121
-Nun ist vorbei die Winterszeit, * vorüber sind die Regengüsse: auf also, meine Geliebte, und komm zu mir.;;126
 Ganz schön * bist du geworden und ganz lieblich in deinen Wonnefreuden, o heilige Gottesmutter.;;147
+
+[Hymnus Vespera]
+/:Die erste Strophe des Hymnus wird kniend gebetet.:/
+v. Gruß dir, Stern im Meere,
+Jungfrau, und doch hehre
+Mutter du dem Worte,
+Sel'ge Himmelspforte!
+_
+Da wir mit dem süßen
+Engelswort dich grüßen,
+Sei stets Frieden spendend,
+Evas Namen wendend.
+_
+Lös das Band der Sünden,
+Bringe Licht den Blinden,
+Fern halt jedes Wehe,
+Alles Gut' erflehe.
+_
+Muttersinn uns zeige,
+Und durch dich stets steige
+Unser Fleh'n zum Kinde,
+Dass es Gnade finde.
+_
+O du auf der Erde
+Reinste Jungfrau, werde
+Allen uns als milde,
+Keusche Maid zum Bilde.
+_
+Mach uns rein das Leben,
+Halt den Weg uns eben,
+Dass in sel'gen Auen,
+Einst wir Jesus schauen.
+_
+Gott und seinem Sohne
+Auf dem höchsten Throne
+Und dem heil'gen, hehren
+Geist bringt ew'ge Ehren.
+Amen.
 
 [Versum 1]
 V. Mach mich würdig, dich zu loben, heil'ge Jungfrau.
@@ -50,22 +80,14 @@ Den Vater und den Heil'gen Geist,
 Die ew'gen Lobes würdig sind.
 Amen.
 
-[Ant Matutinum]
+[Ant MatutinumBMV]
 Du bist die Höchstgepriesene * unter den Frauen, und hochgepriesen ist dein heiliges Kind.;;8
 Wie die kostbarste Myrrhe * strömst du aus den lieblichsten Geruch, o heilige Gottesmutter.;;18
 Vor dem Brautgemach * dieser Jungfrau wiederholt uns immer wieder eure lieblichsten und schönsten Lieder.;;23
-V. Wie herrlich bist du und wie prächtig.
-R. Zieh aus nun, glücklich schreite voran und regiere.
-Wie herrlich bist du * und wie prächtig! Zieh aus nun, glücklich schreite voran und regiere.;;44
-Es schafft ihr Freude * Gott mit seinem liebevollen Antlitz: Gott ist in ihrem Innern, darum hat sie keinen Schaden.;;45
 Vollsten Jubel * zeigen alle wir, die wir bei dir verweilen, o heilige Gottesmutter.;;86
-V. Es schafft ihr Freude Gott mit seinem liebevollen Antlitz.
-R. Gott ist in ihrem Innern, darum hat sie keinen Schaden.
 Freue dich, Jungfrau Maria, * du allein hast alle Irrlehren auf der ganzen Welt überwunden.;;95
 Mach mich würdig, * dich zu loben, heil'ge Jungfrau: verleihe mir Kraft gegen deine Feinde.;;96
 Nach der Geburt * bist du unverletzte Jungfrau geblieben; o Gottesmutter, lege für uns Fürsprache ein.;;97
-V. Es hat sie Gott erwählt und besonders bevorzugt.
-R. Und hat ihr eine Wohnung gewährt in seinem Zelte.
 
 [Lectio1]
 Aus den Sprüchen Salomons.
@@ -181,12 +203,48 @@ R. Denn Großes hat an mir gewirkt der Herr, der so mächtig ist, und dessen Nam
 Quinimmo beati qui audiunt verbum Dei, et custodiunt. Pulchre Salvator attestationi mulieris annuit, non eam tantummodo quae Verbum Dei corporaliter generare meruerat, sed et omnes qui idem Verbum spiritaliter auditu fidei concipere, et boni operis custodia vel in suo, vel in proximorum corde parere, et quasi alere studuerint, asseverans esse beatos: quia et eadem Dei Genitrix, et inde quidem beata, quia Verbi incarnandi ministra facta est temporalis; sed inde multo beatior, quia eiusdem semper amandi custos, manebat aeterna.
 &teDeum
 
-[Versum 2]
-V. Liebliche Anmut umfließt dein Antlitz.
-R. So hat Gott dich gesegnet auf ewig.
+[Capitulum Laudes]
+!Sir 24,14
+v. Von altersher und vor Jahrhunderten gehe ich hervor aus seinem Schoß, und in alle Ewigkeit hör ich nicht auf, dort zu sein; und in seiner heiligen Wohnung erweise ich ihm die gewünschten Dienste.
+$Deo gratias.
+
+[Hymnus Laudes]
+{:Ogloriosavirginum:}v. O allerhehrste Jungfrau du,
+Hoch in der Sternenwelt geehrt,
+Du hast den eig'nen Schöpfer einst
+Mit Milch an keuscher Brust genährt.
+_
+Du stellst es durch dein Kind uns her,
+Was Eva einst so jäh verlor;
+Dass uns nach Tränen winkt das Heil,
+Machst du uns auf das Himmelstor.
+_
+Du bist dem König selbst die Tür,
+Ein Saal voll Licht und ohne Nacht,
+Erlöste Menschen, grüßt erfreut
+Die Jungfrau, die das Heil uns bracht'.
+_
+* Mach', Jesus, dass das All dich preist,
+Dich, einer Jungfrau heil'ges Kind,
+Den Vater und den Heil'gen Geist,
+Die ew'gen Lobes würdig sind.
+Amen.
 
 [Ant 2]
 Selig bist du, * Maria, da du geglaubt hast, es wird sich alles an dir erfüllen, was dir vom Herrn gesagt ist.
+
+[Oratio]
+Verleihe, wir bitten dich, o Herr und Gott, uns, deinen Dienern, die Gnade, dass wir uns eines ungestörten Wohlbefindens an Geist und Körper erfreuen, und mit Rücksicht auf die so ruhmvolle Fürsprache der heiligen, unversehrten Jungfrau Maria aus dem Elend der gegenwärtigen Welt befreit und in der ewigen Freude glücklich werden.
+$Per Dominum
+
+[Lectio Prima]
+!Sir 24,19-20
+v. Weit und breit verbreite ich wie duftiger Zimmet und Balsam Wohlgeruch, wie die feinste Myrrhe ströme ich den lieblichsten Duft aus.
+
+[Capitulum Sexta]
+!Sir 24,15-16
+v. Und so habe ich mich festgesetzt auf Sion und in der heiligen Stadt mich niedergelassen; und nun entfalte ich in Jerusalem meine Macht. Nun bin ich festgewurzelt im auserwählten Volk, damit dieses aus den Gütern meines Gottes seinen ständigen Segen erhält; denn wo Schützlinge Gottes versammelt sind, da lasse ich mich gerne festhalten.
+$Deo gratias.
 
 [Ant 3]
 Selig werden mich nun preisen * sämtliche Geschlechter, weil der Herr sich gnädig erwiesen hat seiner winz'gen Magd.

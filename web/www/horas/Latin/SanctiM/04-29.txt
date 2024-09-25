@@ -1,6 +1,38 @@
 [Rank]
 Ss Odonis, Majoli, Odilonis et Hugonis Abbatis;;Duplex;;3;;vide C1
 
+[Ant Vespera]
+Surréxit Odo * plenus Spíritu Sancto, et montástici Ordínis decus per orbem renovátum est, allelúja.
+Májolus, * caritáte redúndans ac grátia, sanctitátem angélicam æmulétus, virtúte super hómines ferebátur, allelúja.
+Qualem caritátem * corde serváret Odílo mire demonstrávit, qui defunctórum fidélium cruciátibus cóndolens, eos quotánnis dulci refrigério fovéri decrévit, allelúja.
+Cum in die * magni Sábbati beátus Hugo sacris interésset, colúmnam novæ lucis salutábat crebis exórans suspíriis, ut ad terram promissiónis felíciter perveníret, allelúja.
+
+[Hymnus Vespera]
+v. Jucúnda patrum rédiit
+Festívitas illústrium,
+Confessióne córdium
+Qui respuérunt sǽculum.
+_
+Quorum coléntes ánnuam
+Sollemnitátem cándidam,
+Ipsos precámur húmiles,
+Ut nostra mundent máculas.
+_
+Oratióne sédula,
+Votísque nostris súbditis,
+Det nobis indulgéntiam
+Eórum intercéssio.
+_
+Glória tibi Dómine,
+Qui surréxisti a mórtuis,
+Cum Patre et Sancto Spíritu,
+In sempitérna sǽcula.
+Amen.
+
+[Oratio]
+Deus, qui nos Sanctórum tuórum et solemnitáte lætíficas, et imitatióne súscitas ad proféctum: præsta; ut quos venerámur offício, étiam piæ conversatiónis sequámur exémplo.
+$Per Dominum
+
 [Invit]
 @Commune/C2p
 
@@ -26,21 +58,21 @@ Cum Spíritu Paráclito,
 Et nunc, et in perpétuum.
 Amen.
 
-[Lectio4]
-Ex Epístola sancti Petri Damiáni Epíscopi
-!Ad sanctum Hugónem Abbátum
-Quid alíud Cluniacénse monastérium, nisi agrum Dómini plenum díxerim, ubi velut acérvus est cæléstium ségetum, chorus tot in caritáte degéntium monachórum? Ager ille cotidiáno sanctæ prædicatiónis ligóne proscindítur, et in eo cæléstis elóquii sémina conspergúntur. Illic spirituálium frugum provéntus aggéritur, ut hórreis póstmodum cæléstibus inferátur. Cluniácus prætérea ager spirituális quidam campus est, ubi cælum et terra congréditur, ac velut aréna certáminis, ubi spirituális more palǽstræ caro frágilis advérsus potestátes aéreas colluctátur. Non est enim nobis colluctátio advérsus carnem et sánguinem, sed advérsus mundi rectóres tenebrárum harum, contra spirituália nequítiæ, in cæléstibus. Illic Jósue, non ille fílius Nun, sed cæléstis ductor exércitus, et qui spirituálium instrúctor est bellatórum, suos édocet mílites, supérbas quinque regum calcáre cervíces: super quos nimírum triumphálem noscúntur obtinére victóriam, qui tótidem sensus córporum per distríctæ custódiæ cóhibent disciplínam.
-
 [Responsory1]
 R. Sub tantis pátribus Cluniáci laus per omnes diffundebátur ecclésias, † sancta Régula novo decóre refúlsit, monastéria veterascéntia refloruérunt,
 * Et per orbem monachórum exércitus sacro fœdere devínctus militávit, allelúja.
 V. Ædificáta est Cluníaci domus ut cívitas: † illuc ascendérunt tribus Dómini ad confiténdum nómini Dómini.
 R. Et per orbem monachórum exércitus sacro fœdere devínctus militávit, allelúja.
 
+[Lectio4]
+Ex Epístola sancti Petri Damiáni Epíscopi
+!Ad sanctum Hugónem Abbátum
+Quid alíud Cluniacénse monastérium, nisi agrum Dómini plenum díxerim, ubi velut acérvus est cæléstium ségetum, chorus tot in caritáte degéntium monachórum? Ager ille cotidiáno sanctæ prædicatiónis ligóne proscindítur, et in eo cæléstis elóquii sémina conspergúntur. Illic spirituálium frugum provéntus aggéritur, ut hórreis póstmodum cæléstibus inferátur. Cluniácus prætérea ager spirituális quidam campus est, ubi cælum et terra congréditur, ac velut aréna certáminis, ubi spirituális more palǽstræ caro frágilis advérsus potestátes aéreas colluctátur. Non est enim nobis colluctátio advérsus carnem et sánguinem, sed advérsus mundi rectóres tenebrárum harum, contra spirituália nequítiæ, in cæléstibus. Illic Jósue, non ille fílius Nun, sed cæléstis ductor exércitus, et qui spirituálium instrúctor est bellatórum, suos édocet mílites, supérbas quinque regum calcáre cervíces: super quos nimírum triumphálem noscúntur obtinére victóriam, qui tótidem sensus córporum per distríctæ custódiæ cóhibent disciplínam.
+
 [MM Capitulum]
 @:Capitulum Sexta
 _
-@Commune/C1p:Responsory Tertia:s/.*_.//s
+@Commune/C1p:Nocturn 2 Versum
 
 [Ant Laudes]
 Super nivem * dealbabúntur sancti tui, Dómine, allelúja.
@@ -84,10 +116,6 @@ Amen
 [Ant 2]
 Fulgébunt justi, * et tamquam scintíllæ in arundinéto discúrrent, judicábunt natiónes, et regnábunt in ætérnum, allelúja.
 
-[Oratio]
-Deus, qui nos Sanctórum tuórum et solemnitáte lætíficas, et imitatióne súscitas ad proféctum: præsta; ut quos venerámur offício, étiam piæ conversatiónis sequámur exémplo.
-$Per Dominum
-
 [Capitulum Sexta]
 !Eccl 17:7-8
 v. Pósuit óculum suum super corda illórum, osténdere illis magnália óperum suórum, ut nomen sanctificatiónis colláudent.
@@ -97,34 +125,6 @@ $Deo gratias
 !Eccl 17:16
 v. Ómnia ópera illórum velut sol in conspéctu Dei: et óculi ejus sine intermissióne inspiciéntes in viis eórum.
 $Deo gratias
-
-[Ant Vespera]
-Surréxit Odo * plenus Spíritu Sancto, et montástici Ordínis decus per orbem renovátum est, allelúja.
-Májolus, * caritáte redúndans ac grátia, sanctitátem angélicam æmulétus, virtúte super hómines ferebátur, allelúja.
-Qualem caritátem * corde serváret Odílo mire demonstrávit, qui defunctórum fidélium cruciátibus cóndolens, eos quotánnis dulci refrigério fovéri decrévit, allelúja.
-Cum in die * magni Sábbati beátus Hugo sacris interésset, colúmnam novæ lucis salutábat crebis exórans suspíriis, ut ad terram promissiónis felíciter perveníret, allelúja.
-
-[Hymnus Vespera]
-v. Jucúnda patrum rédiit
-Festívitas illústrium,
-Confessióne córdium
-Qui respuérunt sǽculum.
-_
-Quorum coléntes ánnuam
-Sollemnitátem cándidam,
-Ipsos precámur húmiles,
-Ut nostra mundent máculas.
-_
-Oratióne sédula,
-Votísque nostris súbditis,
-Det nobis indulgéntiam
-Eórum intercéssio.
-_
-Glória tibi Dómine,
-Qui surréxisti a mórtuis,
-Cum Patre et Sancto Spíritu,
-In sempitérna sǽcula.
-Amen.
 
 [Versum 3]
 @Commune/C1p:Versum 2

@@ -1,44 +1,37 @@
-@CommuneM/C2
+@CommuneM/C1p
 
 [Name]
-Commune unius Martyris Tempore Paschali
+@Commune/C2p
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
+[Hymnus Vespera]
+@Commune/C2
 
-[Ant Vespera]
-@Commune/C1p
-
-[Versum 1]
-@Commune/C1p
-
-[Ant 1]
-@Commune/C1p
+[HymnusM Vespera]
+@Commune/C2
 
 [Invit]
 @Commune/C2p
 
+[Hymnus Matutinum]
+@Commune/C2:Hymnus Vespera
+
+[HymnusM Matutinum]
+@Commune/C2:HymnusM Vespera
+
 [Ant Matutinum]
-Stabunt justi * in magna constántia advérsus eos qui se angustiavérunt, allelúja.;;1
+@Commune/C1p::1 s/;;18/;;1/
 ;;2
 ;;4
 ;;5
 ;;8
 ;;10
-V. Sancti et justi in Dómino gaudéte, allelúja.
-R. Vos elégit Deus in hereditátem sibi, allelúja.
-Fulgébunt justi * sicut sol in conspéctu Dei, allelúja.;;14
+@Commune/C1p:Ant Vespera:5 s/\d+/74/
 ;;20
 ;;23
 ;;63
 ;;64
 ;;95
-V. Lux perpétua lucébit Sanctis tuis, Dómine, allelúja.
-R. Et ætérnitas témporum, allelúja.
-Lux perpétua * lucébit Sanctis tuis, Dómine, et ætérnitas témporum, allelúja.;;256;257;258
-V. Lætítia sempitérna super cápita eórum, allelúja.
-R. Gáudium et exsultatiónem obtinébunt, allelúja.
+@Commune/C1p::7 s/;;74/;;256;257;258/
 
 [Lectio1]
 De libro Sapiéntiæ
@@ -48,9 +41,6 @@ De libro Sapiéntiæ
 3 dicéntes intra se, pœniténtiam agéntes, et præ angústia spíritus geméntes: Hi sunt quos habúimus aliquándo in derísum, et in similitúdinem impropérii.
 4 Nos insensáti, vitam illórum æstimabámus insániam, et finem illórum sine honóre.
 
-[Responsory1]
-@Commune/C1p:Responsory1
-
 [Lectio2]
 !Sap 5:5-7;14
 5 Ecce quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est.
@@ -58,16 +48,10 @@ De libro Sapiéntiæ
 7 Lassáti sumus in via iniquitátis et perditiónis, et ambulávimus vias diffíciles: viam autem Dómini ignorávimus.
 14 Tália dixérunt in inférno hi qui peccavérunt.
 
-[Responsory2]
-@Commune/C1p:Responsory2
-
 [Lectio3]
 !Sap 5:16-17
 16 Justi autem in perpétuum vivent, et apud Dóminum est merces eórum, et cogitátio illórum apud Altíssimum.
 17 Ideo accípient regnum decóris, et diadéma speciéi de manu Dómini: quóniam déxtera sua teget eos, et bráchio sancto suo deféndet illos.
-
-[Responsory3]
-@Commune/C1p:Responsory3
 
 [Lectio4]
 !Sap 5:18-21
@@ -77,16 +61,10 @@ De libro Sapiéntiæ
 21 Acuet autem duram iram in lánceam, et pugnábit cum illo orbis terrárum contra insensátos.
 
 [Responsory4]
-R. De ore prudéntis procédit mel, allelúja: dulcédo mellis est sub lingua ejus, allelúja:
-* Favus distíllans lábia ejus, allelúja, allelúja.
-V. Sapiéntia requiéscit in corde ejus, et prudéntia in sermóne oris illíus.
-R. Favus distíllans lábia ejus, allelúja, allelúja.
+@Tempora/Pasc0-2:Responsory2:1-4
 
 [Lectio5]
 @Commune/C2p:Lectio4
-
-[Responsory5]
-@CommuneM/C1p
 
 [Lectio6]
 @Commune/C2p:Lectio5:s/Éadem .*//s
@@ -112,14 +90,8 @@ R. Omnes recti corde, allelúja, allelúja.
 [Lectio9]
 @Commune/C2p:Lectio7
 
-[Responsory9]
-@Commune/C1p:Responsory7
-
 [Lectio10]
 @Commune/C2p:Lectio8:s/Sed cum .*//s
-
-[Responsory10]
-@Commune/C1p:Responsory8
 
 [Lectio11]
 @Commune/C2p:Lectio8:s/.* Sed cum /Sed cum /s s/$/~/
@@ -140,78 +112,43 @@ R. Gáudete, justi, in Dómino, allelúja:
 V. Cantáte ei cánticum novum: bene psállite ei in vociferatióne.
 R. Rectos decet collaudátio, allelúja, allelúja.
 
-[Ant Laudes]
-@Commune/C1p
-
-[Capitulum Laudes]
-@Commune/C1p
+[Hymnus Laudes]
+@Commune/C2
 
 [HymnusM Laudes]
-@Commune/C2:HymnusM Laudes
-
-[Versum 2]
-@Commune/C1p
-
-[Ant 2]
-@Commune/C1p
-
-[Lectio Prima]
-@Commune/C1p
-
-[Responsory TertiaM]
-@:Versum 1
-
-[Capitulum Sexta]
-@Commune/C1p
-
-[Responsory SextaM]
-@Commune/C1p:Responsory Tertia:8-9
-
-[Capitulum Nona]
-@Commune/C1p
-
-[Responsory NonaM]
-@Commune/C1p:Responsory Sexta:8-9
-
-[Versum 3]
-@:Versum 2
+@Commune/C2
 
 [Ant Vespera 3]
-@Commune/C1p::s/112/111/ s/115/112/ s/125/115/
+@Commune/C1p:Ant Vespera:1 s/$/;;109/
+@Commune/C1p:Ant Vespera:2 s/$/;;111/
+@Commune/C1p:Ant Vespera:3 s/$/;;112/
+@Commune/C1p:Ant Vespera:5 s/$/;;115/
 
-[Ant 3]
-@Commune/C1p
-
-[Lectio 5 in 2 loco]
+[Lectio5 in 2 loco]
 @Commune/C2p:Lectio4 in 2 loco
 
-[Lectio 6 in 2 loco]
+[Lectio6 in 2 loco]
 @Commune/C2p:Lectio5 in 2 loco:s/Inexpugnábilem .*//s
 
-[Lectio 7 in 2 loco]
+[Lectio7 in 2 loco]
 @Commune/C2p:Lectio5 in 2 loco:s/.* Inexpugnábilem /Inexpugnábilem /s s/$/~/
 @Commune/C2p:Lectio6 in 2 loco:s/Pretiósa est .*//s
 
-[Lectio 8 in 2 loco]
+[Lectio8 in 2 loco]
 @Commune/C2p:Lectio6 in 2 loco:s/.* Pretiósa est /Pretiósa est /s
 
-[Lectio 9 in 2 loco]
+[Lectio9 in 2 loco]
 @Commune/C2p:Lectio7 in 2 loco:s/Quamvis .*//s
 
-[Lectio 10 in 2 loco]
+[Lectio10 in 2 loco]
 @Commune/C2p:Lectio7 in 2 loco:s/.* Quamvis /Quamvis /s s/$/~/
 @Commune/C2p:Lectio8 in 2 loco:s/Ligna .*//s
 
-[Lectio 11 in 2 loco]
+[Lectio11 in 2 loco]
 @Commune/C2p:Lectio8 in 2 loco:s/.* Ligna /Ligna /s
 
-[Lectio 12 in 2 loco]
+[Lectio12 in 2 loco]
 @Commune/C2p:Lectio9 in 2 loco
 
 [LectioE in 2 loco]
 @Commune/C3pp:LectioE
-
-[MM Capitulum]
-@Commune/C1p:Capitulum Sexta
-_
-@Commune/C1p:Responsory Nona:s/.*_.//s

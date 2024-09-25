@@ -1,18 +1,8 @@
 [Rank]
 Obrzezanie Pana Naszego Jezusa Chrystusa;;Duplex II classis;;5.1;;ex Sancti/12-25
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Oktawa Bożego Narodzenia;;Duplex I classis;;6;;ex Sancti/12-25
-
-[RankNewcal]
-Oktawa Bożego Narodzenia;;Duplex I classis;;6;;ex Sancti/12-25
-
-[Rule]
-ex Sancti/12-25;
-Psalmi Dominica
-Antiphonas Horas
-9 lectiones 1960
-no commemoratio
 
 [Ant Vespera]
 O cudowna zamiano: * Stworzyciel rodzaju ludzkiego przyjmując ciało z duszą, raczył się narodzić z Dziewicy: i stając się człowiekiem bez udziału człowieka, udzielił nam swego Bóstwa.;;109
@@ -20,11 +10,6 @@ Kiedyś się narodził * w niewymowny sposób z Dziewicy, wypełniły się Pisma
 W krzaku, który widział Mojżesz, * płonącym, a nie palącym się, widzimy obraz chwalebnego dziewictwa Twego: Boża Rodzicielko, wstawiaj się za nami.;;121
 Zakwitła różdżka Jessego: * wyszła gwiazda z Jakóba: Dziewica porodziła nam Zbawiciela; chwalimy cię, Boże nasz.                                                                       ;;126
 Oto Marja porodziła * nam Zbawiciela, którego Jan zoczywszy, zawołał: Oto Baranek Boży, oto, który gładzi grzechy świata, alleluja.;;147
-
-[Capitulum Laudes]
-!Tyt 2:11-12
-v. Okazała się łaska Boga Zbawiciela naszego wszytkim ludziom: nauczając nas, abyśmy zaprzawszy się niepobożności i świeckich pożądliwości, trzeźwo i sprawiedliwie i pobożnie żyli na tym świecie.
-$Deo gratias
 
 [Ant 1]
 Dla zbytniej * miłości swojej, którą, nas umiłował, posłał Bóg Syna swego w podobieństwie grzesznego ciała, alleluja.
@@ -120,6 +105,11 @@ R. Zbawiciela Wiecznego, Króla Aniołów; sama Dziewica karmiła Go piersią pe
 [Lectio9]
 Albowiem spomiędzy wszystkich narodzonych z niewiasty Pan Jezus sam tylko jest całkowicie święty. Dzięki swemu nowemu nieskalanemu urodzeniu był wolny od wszelkiej skazy ziemskiego zepsucia, owszem, swym niebiańskim majestatem je odrzucił. Jeślibyśmy się ściśle trzymali litery, to jakże jest świętym każdy mężczyzna: przecież wiadomo, iż wielu było jak najwystępniejszych? Czy świętym był Achab? Czy świętymi byli fałszywi prorocy, których na prośbę Eliasza niebieski mściciel wyrządzonej Bogu zniewagi, ogniem spalił? Lecz oto Ten jest święty, którego uświęcone przepisy Boskiego Zakonu wskazywały jako figurę tajemnicy, która w przyszłości dokonać się miała. Dlatego też tylko On otworzył łono nieskalanej płodności świętej Dziewicy Kościoła dla zrodzenia ludów Bożych.
 &teDeum
+
+[Capitulum Laudes]
+!Tyt 2:11-12
+v. Okazała się łaska Boga Zbawiciela naszego wszytkim ludziom: nauczając nas, abyśmy zaprzawszy się niepobożności i świeckich pożądliwości, trzeźwo i sprawiedliwie i pobożnie żyli na tym świecie.
+$Deo gratias
 
 [Ant 2]
 Cudowna tajemnica * objawiła się dzisiaj: odnowiła się natura, Bóg stał się człowiekiem: czym był — pozostał, czym nie był — to przybrał; nie cierpiąc zmieszania, ani podziału.

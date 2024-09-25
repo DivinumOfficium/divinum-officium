@@ -1,17 +1,8 @@
 [Rank]
 In Decollatione S. Joannis Baptistae;;Duplex majus;;4;;ex C2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Decollatione S. Joannis Baptistae;;Duplex;;3;;vide C2
-
-[Rule]
-ex C2;
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-scriptura1960
 
 [Ant Vespera]
 Erode fece arrestare * Giovanni, e lo tenne legato in prigione per amor d'Erodiade.
@@ -105,6 +96,12 @@ R. E gli ha dato una gloria eterna.
 &Gloria
 R. E gli ha dato una gloria eterna.
 
+[Lectio94]
+Dal libro di sant'Ambrogio Vescovo sulle Vergini. 
+_
+Siccome la memoria del beato Giovanni Battista non si deve sfiorare leggermente, perciò dobbiamo considerare chi egli era, e da chi, e per qual ragione, e in qual momento fu ucciso. L'ucciso è un giusto e (viene ucciso) da adulteri, e la pena capitale che meritano essi, la fan subire al loro giudice. E poi la morte d'un Profeta diviene la ricompensa d'una ballerina. Infine (cosa che perfino tutti i barbari hanno comunemente in orrore), a tavola, in mezzo a un banchetto si pronunzia la sentenza crudele da eseguirsi; e si porta l'esecuzione del crudele misfatto dal banchetto alla prigione, dalla prigione al banchetto. Quanti delitti in una sola Azione!
+&teDeum
+
 [Lectio7]
 Lettura del santo Vangelo secondo Marco. 
 !Marc 6:17-29
@@ -135,14 +132,5 @@ Alla fanciulla che ballava * la madre comandò : Non chiedere altro, che la test
 Giovanni * rimproverava Erode per causa d'Erodiade, moglie di Filippo, suo fratello, che s'era presa.
 Dammi in un bacile * la testa di Giovanni Battista. E il re ne fu contristato per il giuramento.
 
-[Ant 2]
-Erode mandò una guardia * con l'ordine di decapitare Giovanni nella prigione. Il che risaputosi, i discepoli di lui andarono a prenderne il corpo, e lo deposero in una tomba.
-
 [Ant 3]
 Un re incredulo * mandò delle guardie detestabili con l'ordine di decapitare Giovanni Battista.
-
-[Lectio94]
-Dal libro di sant'Ambrogio Vescovo sulle Vergini. 
-_
-Siccome la memoria del beato Giovanni Battista non si deve sfiorare leggermente, perciò dobbiamo considerare chi egli era, e da chi, e per qual ragione, e in qual momento fu ucciso. L'ucciso è un giusto e (viene ucciso) da adulteri, e la pena capitale che meritano essi, la fan subire al loro giudice. E poi la morte d'un Profeta diviene la ricompensa d'una ballerina. Infine (cosa che perfino tutti i barbari hanno comunemente in orrore), a tavola, in mezzo a un banchetto si pronunzia la sentenza crudele da eseguirsi; e si porta l'esecuzione del crudele misfatto dal banchetto alla prigione, dalla prigione al banchetto. Quanti delitti in una sola Azione!
-&teDeum

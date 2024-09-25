@@ -1,17 +1,12 @@
 [Name]
 Commune Apostolorum tempore Paschali
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Una Antiphona
-
 [Ant Vespera]
-I tuoi Santi, * o Signore, fioriranno come il giglio, alleluia, e saranno davanti a te come il profumo del balsamo, alleluia.;;109
-Nel regno dei cieli * sta la dimora dei Santi, alleluia, e il loro riposo è eterno, alleluia.;;110
-Al sicuro * i tuoi Santi, o Signore, gridavano, alleluia, alleluia, alleluia.;;111
-Spirito ed anime * dei giusti, sciogliete un inno al nostro Dio, alleluia, alleluia.;;112
-I giusti risplenderanno * come il sole dinanzi a Dio, alleluia.;;116
+I tuoi Santi, * o Signore, fioriranno come il giglio, alleluia, e saranno davanti a te come il profumo del balsamo, alleluia.
+Nel regno dei cieli * sta la dimora dei Santi, alleluia, e il loro riposo è eterno, alleluia.
+Al sicuro * i tuoi Santi, o Signore, gridavano, alleluia, alleluia, alleluia.
+Spirito ed anime * dei giusti, sciogliete un inno al nostro Dio, alleluia, alleluia.
+I giusti risplenderanno * come il sole dinanzi a Dio, alleluia.
 
 [Hymnus Vespera]
 v. Tristi erano gli Apostoli
@@ -64,13 +59,17 @@ R. Iddio vi ha scelti per sua eredità, alleluia.
 Ecco * come essi sono annoverati tra i figli di Dio, e tra i santi è la loro sorte, alleluia.;;46
 ;;60
 ;;63
-V. La luce perpetua risplenderà per i tuoi Santi, o Signore, alleluia. 
-R. E l'eternità dei secoli, alleluia
 La luce perpetua * risplenderà per i tuoi Santi, o Signore, e l'eternità dei secoli, alleluia.;;74
 ;;96
 ;;98
+
+[Nocturn 2 Versum]
+V. La luce perpetua risplenderà per i tuoi Santi, o Signore, alleluia. 
+R. E l'eternità dei secoli, alleluia.
+
+[Nocturn 3 Versum]
 V. Essi saranno incoronati di eterna letizia, alleluia.
-R. Avranno gaudio e consolazione, alleluia.
+R. Avranno gaudio e consolazione alleluia.
 
 [Responsory1]
 R. Beato l'uomo che teme il Signore, alleluia:
@@ -119,19 +118,12 @@ V. Come il Padre ha amato me, così io ho amato voi.
 R. Se uno rimane in me ed io in lui, questi porta molto frutto, alleluia, alleluia.
 
 [Responsory8]
-I suoi nazirei sono divenuti più candidi della neve, alleluia, e a Dio hanno dato splendore. 
+R. I suoi nazirei sono divenuti più candidi della neve, alleluia, e a Dio hanno dato splendore. 
 * E come il latte si sono rassodati, alleluia, alleluia.
 V. Più candidi della neve, più bianchi del latte, più vermigli dell'avorio antico, più belli dello zaffiro.
 R. E come il latte si sono rassodati, alleluia, alleluia.
 &Gloria
 R. E come il latte si sono rassodati, alleluia, alleluia.
-
-[Ant Laudes]
-I tuoi Santi, * o Signore, fioriranno come il giglio, alleluia, e saranno davanti a te come il profumo del balsamo, alleluia.
-Nel regno dei cieli * sta la dimora dei Santi, alleluia, e il loro riposo è eterno, alleluia.
-Al sicuro * i tuoi Santi, o Signore, gridavano, alleluia, alleluia, alleluia.
-Spirito ed anime * dei giusti, sciogliete un inno al nostro Dio, alleluia, alleluia.
-I giusti risplenderanno * come il sole dinanzi a Dio, alleluia.
 
 [Capitulum Laudes]
 !Sap 5:1
@@ -203,55 +195,34 @@ Figlie di Gerusalemme, * venite a vedere i Martiri con le corone di cui li ha in
 !Rom 8:28
 v. Noi sappiamo che tutto torna a bene per quelli che amano Dio, per quelli che, secondo 11 suo proposito, sono stati chiamati Santi.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Santi e giusti, gioite nel Signore, alleluia, alleluia.
 R. Santi e giusti, gioite nel Signore, alleluia, alleluia.
 V. Iddio vi ha scelti per sua eredità.
 R. Alleluia, alleluia.
 &Gloria
 R. Santi e giusti, gioite nel Signore, alleluia, alleluia.
-_
-R. La luce perpetua risplenderà per i tuoi Santi, o Signore, alleluia.
-V. E l'eternità dei secoli, alleluia.
 
 [Capitulum Sexta]
 !Sap. 5:5
 v. Ecco come essi sono annoverati tra i figli di Dio, e tra i santi è la loro sorte.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. La luce perpetua risplenderà per i tuoi Santi, o Signore, * alleluia alleluia.
 R. La luce perpetua risplenderà per i tuoi Santi, o Signore, * alleluia alleluia.
 V. E l'eternità dei secoli.         
 R. Alleluia, alleluia
 &Gloria
 R. La luce perpetua risplenderà per i tuoi Santi, o Signore, * alleluia alleluia.
-_
-V. Essi saranno incoronati di eterna letizia, alleluia.
-R. Avranno gaudio e consolazione alleluia.
 
-[Capitulum Nona]
-!Rom 8:28
-v. Noi sappiamo che tutto torna a bene per quelli che amano Dio, per quelli che, secondo il suo proposito, sono stati chiamati Santi.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Essi saranno incoronati di eterna letizia, alleluia, alleluia.
 R. Essi saranno incoronati di eterna letizia, alleluia, alleluia.
 V. Avranno gaudio e consolazione.
 R. Alleluia, alleluia.
 &Gloria
 R. Essi saranno incoronati di eterna letizia, alleluia, alleluia.
-_
-V. Preziosa è agli occhi del Signore, alleluia,
-R. la morte dei suoi santi, alleluia.
-
-[Ant Vespera 3]
-I tuoi Santi, * o Signore, fioriranno come il giglio, alleluia, e saranno davanti a te come il profumo del balsamo, alleluia.;;109
-Nel regno dei cieli * sta la dimora dei Santi, alleluia, e il loro riposo è eterno, alleluia.;;112
-Al sicuro * i tuoi Santi, o Signore, gridavano, alleluia, alleluia, alleluia.;;115
-Spirito ed anime * dei giusti, sciogliete un inno al nostro Dio, alleluia, alleluia.;;125
-I giusti risplenderanno * come il sole dinanzi a Dio, alleluia.;;138
 
 [Ant 3]
 Santi e giusti, * godete nel Signore, alleluia; Iddio vi ha scelti per sua eredità, alleluia.

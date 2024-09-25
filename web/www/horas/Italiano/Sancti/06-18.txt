@@ -1,15 +1,11 @@
 [Rank]
 S. Ephraem Syri Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C5a
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Ephraem Syri Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C5a
 
 [Name]
 Efrem
-
-[Rule]
-vide C5a;
-9 lectiones
 
 [Oratio]
 O Dio, che hai voluto illustrare la tua Chiesa colla meravigliosa erudizione del tuo beato Confessore e Dottore Efrem e coi meriti insigni della sua santa vita: ti supplichiamo umilmente, che per sua intercessione, tu la difenda sempre colla tua forza dalle insidie dell'errore e della perversità.
@@ -31,6 +27,10 @@ Condotto dallo Spirito Santo, andò a Cesarea di Cappadocia, dove s'incontrò co
 [Lectio6]
 Tutte queste pubblicazioni, piene di dottrina sì luminosa, meritarono a questo gran Santo, che, tuttora vivente, lo si onorasse come un Dottore della Chiesa. Compose altresì cantici poetici in lode della Vergine Maria e dei Santi: onde venne meritamente appellato dai Siri la cetra dello Spirito Santo. Egli risplende soprattutto per la sua straordinaria e tenera devozione alla Vergine Immacolata. Pieno di meriti, morì in Edessa, nella Mesopotamia, il 18 di Giugno, sotto l'imperatore Valente: Papa Benedetto XV, dietro istanza di molti Cardinali di santa Romana Chiesa, Patriarchi, Arcivescovi, Vescovi, Abati e famiglie religiose, con decreto della Sacra Congregazione dei Riti, lo dichiarò Dottore della Chiesa universale.
 
+[Lectio94]
+Sant'Efrem nacque in Siria, da una famiglia di Nísibe, Ancora giovane, si recò dal vescovo san Giacomo per essere battezzato. In breve aumentò tanto la sua scienza e la sua bontà da essere nominato maestro della scuola di Nísibe, in Mesopotamia. Fu ordinato diacono a Edessa, ma, per umiltà, rifiutò il sacerdozio. Era mollo virtuoso e si sforzava di insegnare la vera sapienza con l'amore e con la preghiera. Fu ritenuto dottore della Chiesa mentre era ancora in vita, per i suoi scritti, pieni di profonda dottrina. Fu particolarmente devoto della Madonna.  Morì, colmo di meriti, a Edessa in Mesopotamia, il 18 giugno 379, sotto il regno di Valente. Il papa Benedetto XV, dopo aver consultato la sacra Congregazione dei Riti, lo dichiarò dottore della Chiesa.  
+&teDeum
+
 [Lectio7]
 Lettura del santo Vangelo secondo Matteo
 !Matt 5:13-19
@@ -46,8 +46,4 @@ Ora questa virtù (della carità) è detta la sola virtù, ed è d'una bellezza 
 
 [Lectio93]
 Marco e Marcelliano, fratelli Romani, imprigionati dal prefetto Fabiano a causa della fede cristiana, furono poi legati ad un palo, fissati i piedi con chiodi. Al giudice che diceva loro: Ravvedetevi, miserabili, e liberate voi stessi da questi tormenti, risposero: Non abbiamo gustato mai delizie più gioconde di quelle che proviamo ora nel soffrire volentieri per la causa di Gesù Cristo, nel cui amore abbiamo ora cominciato ad essere fissati. Dio voglia che ci lasci soffrire queste cose, finché saremo rivestiti di questo corruttibile corpo! E in mezzo ai tormenti cantando dì e notte le lodi divine, furono infine trafitti con frecce, giungendo così alla gloria del martirio. I loro corpi vennero sepolti sulla via Ardeatina.
-&teDeum
-
-[Lectio94]
-Sant'Efrem nacque in Siria, da una famiglia di Nísibe, Ancora giovane, si recò dal vescovo san Giacomo per essere battezzato. In breve aumentò tanto la sua scienza e la sua bontà da essere nominato maestro della scuola di Nísibe, in Mesopotamia. Fu ordinato diacono a Edessa, ma, per umiltà, rifiutò il sacerdozio. Era mollo virtuoso e si sforzava di insegnare la vera sapienza con l'amore e con la preghiera. Fu ritenuto dottore della Chiesa mentre era ancora in vita, per i suoi scritti, pieni di profonda dottrina. Fu particolarmente devoto della Madonna.  Morì, colmo di meriti, a Edessa in Mesopotamia, il 18 giugno 379, sotto il regno di Valente. Il papa Benedetto XV, dopo aver consultato la sacra Congregazione dei Riti, lo dichiarò dottore della Chiesa.  
 &teDeum

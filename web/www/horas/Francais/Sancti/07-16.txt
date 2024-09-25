@@ -1,15 +1,11 @@
 [Rank]
 Notre-Dame du Mont-Carmel;;Duplex majus;;4;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Notre-Dame du Mont-Carmel;;Simplex;;1.1;;vide C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Notre-Dame du Mont-Carmel;;Duplex optional;;2;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones;
 
 [Oratio]
 Dieu, Vous avez orné l’Ordre du Carmel du titre particulier de la bienheureuse Marie toujours Vierge et Votre Mère : accordez-nous, dans Votre bonté, que, soutenus de la protection de celle dont nous honorons aujourd’hui solennellement la mémoire, nous méritions de parvenir aux joies éternelles.
@@ -24,12 +20,12 @@ Ils se réunissaient donc plusieurs fois le jour dans le nouvel oratoire, et hon
 [Lectio6]
 Ce n’est pas seulement en ce monde que la sainte Vierge a voulu combler de prérogatives un Ordre qui lui est si cher. Une pieuse croyance admet volontiers que, dans l’autre monde aussi (car sa puissance et sa miséricorde étendent en tous lieux leur influence), elle soulage, par un effet de son amour vraiment maternel, ceux de ses enfants qui subissent l’expiation du purgatoire, et les introduit le plus tôt possible dans la patrie céleste, grâce à son intervention, lorsque, enrôlés dans la confrérie du scapulaire, ils ont pratiqué de légères abstinences, récité les quelques prières prescrites et gardé la chasteté, eu égard à leur état de vie. Ainsi comblé de tant et de si grandes faveurs, cet Ordre institua une solennelle Commémoraison de la bienheureuse Vierge Marie, à célébrer perpétuellement chaque année en l’honneur de cette Vierge glorieuse.
 
+[Lectio94]
+On rapporte qu’au saint jour de la Pentecôte, un groupe nombreux d’hommes, qui avaient marché sur les traces des saints prophètes Élie et Élisée, embrassèrent la foi de l’Évangile. Puis, sur le Mont Carmel, à l’endroit d’où Élie avait jadis vu s’élever une nuée, figure de la Bienheureuse Vierge Marie, ils commencèrent à construire un petit sanctuaire à cette Vierge très pure. Ils l’honoraient comme la Protectrice particulière de leur Ordre, et de ce fait, reçurent le nom de Frères de la Bienheureuse Marie du Mont Carmel. La protection toute spéciale de la Bienheureuse Vierge ne leur fit jamais défaut. Apparaissant en songe au pape Honorius III, elle le détourna du projet de supprimer cet Ordre ; elle accorda à l’Ordre la faveur du saint scapulaire. Ceux qui le portent et qui sont fidèles à de légères abstinences et aux quelques prières prescrites, une fois détenus dans le feu du purgatoire, sont, croit-on, par l’intercession de Marie, transportés bientôt dans la patrie céleste. L’Ordre comblé de bienfaits si grands et si nombreux a institué cette Commémoraison solennelle de la Bienheureuse Vierge, que l'on doit célébrer chaque année.
+&teDeum
+
 [Ant 2]
 Ta tête * est comme le Carmel ; et les cheveux de ta tête comme la pourpre d’un roi, liés et teints dans les canaux des teinturiers, alléluia.
 
 [Ant 3]
 La gloire du Liban * lui a été donnée, la beauté du Carmel et de Saron, alléluia.
-
-[Lectio94]
-On rapporte qu’au saint jour de la Pentecôte, un groupe nombreux d’hommes, qui avaient marché sur les traces des saints prophètes Élie et Élisée, embrassèrent la foi de l’Évangile. Puis, sur le Mont Carmel, à l’endroit d’où Élie avait jadis vu s’élever une nuée, figure de la Bienheureuse Vierge Marie, ils commencèrent à construire un petit sanctuaire à cette Vierge très pure. Ils l’honoraient comme la Protectrice particulière de leur Ordre, et de ce fait, reçurent le nom de Frères de la Bienheureuse Marie du Mont Carmel. La protection toute spéciale de la Bienheureuse Vierge ne leur fit jamais défaut. Apparaissant en songe au pape Honorius III, elle le détourna du projet de supprimer cet Ordre ; elle accorda à l’Ordre la faveur du saint scapulaire. Ceux qui le portent et qui sont fidèles à de légères abstinences et aux quelques prières prescrites, une fois détenus dans le feu du purgatoire, sont, croit-on, par l’intercession de Marie, transportés bientôt dans la patrie céleste. L’Ordre comblé de bienfaits si grands et si nombreux a institué cette Commémoraison solennelle de la Bienheureuse Vierge, que l'on doit célébrer chaque année.
-&teDeum

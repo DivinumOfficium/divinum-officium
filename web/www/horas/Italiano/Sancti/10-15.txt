@@ -1,9 +1,5 @@
 [Rank]
-S. Teresiae Virginis;;Duplex;;3;;vide C6
-
-[Rule]
-vide C6;
-9 lectiones
+S. Teresiae Virginis;;Duplex;;3;;vide C6b
 
 [Hymnus Vespera]
 v. Messaggera del Re del cielo, 
@@ -28,11 +24,7 @@ ora e per tutti i secoli.
 Amen.
 
 [Oratio]
-Esaudiscici, Dio, nostra salvezza: e come godiamo della festa della tua beata Vergine Teresa, così ci nutriamo col cibo della sua celeste dottrina, e ci formiamo al sentimento della sua tenera devozione.
-$Per Dominum
-
-[Hymnus Matutinum]
-@Sancti/10-15:Hymnus Vespera
+@Commune/C6b::s/N\./Teresa/
 
 [Lectio4]
 La Vergine Teresa nacque ad Avila in Spagna da genitori illustri per sangue e pietà. Nutrita da essi col latte nel timor di Dio, fin dalla più tenera età diede meraviglioso presagio della futura santità. Perché, leggendo gli atti dei santi Martiri, fu così accesa, nel meditarli, dal fuoco dello Spirito Santo, che, fuggita di casa, voleva passare in Africa per spendervi la vita a gloria di Gesù Cristo e alla salvezza delle anime. Ricondotta a casa dallo zio, compensò con elemosine e altre opere di pietà l'ardente desiderio del martirio, deplorando con molte lacrime d'essere stata sottratta a sorte tanto felice. Morta la madre, pregò la beatissima Vergine di farle da madre, e il pio voto venne esaudito; perché 1a Madre di Dio la protesse sempre come sua figlia. A venti anni, entrò fra le religiose di santa Maria dei monte Carmelo. Là, afflitta per diciott'anni da gravissime malattie e da varie tentazioni, rimase intrepida sotto le armi della penitenza cristiana, senza neppure una di quelle consolazioni celesti, onde la santità suole abbondare anche sulla terra.
@@ -46,11 +38,6 @@ Ma mentre dava continui esempi di virtù, ardeva di sì vivo desiderio di castig
 [Lectio94]
 Teresa, nacque ad Avila in Spagna da pii ed illustri genitori. Ancor fanciulla fu così accesa dal desiderio del martirio che, fuggita da casa, tentò di passare in Africa. Ricondotta a casa, dopo la morte della madre, si affidò completamente al patrocinio della beata Vergine e a venti anni entrò fra le monache di santa Maria del monte Carmelo, professandone la regola. Preoccupata della salvezza delle anime, dopo aver fondato molti monasteri, propose alle donne e agli uomini l'osservanza dell'antica regola carmelitana. Per gli infedeli e gli eretici offriva continuamente a Dio i tormenti volontari del proprio corpo. Accesa d'amore divino, avendo emesso il voto eroico di fare sempre quello che avesse conosciuto più perfetto, meritò di vedere un angelo trapassarle il cuore con un dardo infuocato. Scrisse parecchi libri pieni di celeste sapienza, e molte cose insegnò con la parola e con l'esempio, avendo spesso in bocca la frase: «Signore, o patire o morire». Nota per virtù, per il dono della profezia e per altri carismi, ad Alba di Tormes, rese a Dio l'anima sua purissima il 15 ottobre 1582, a 67 anni di età.
 &teDeum
-
-[Capitulum Laudes]
-!2 Cor 10:17-18
-v. Fratelli: Chi si gloria, si glorii nel Signore perché non è approvato chi si loda, ma chi merita lode dal Signore.
-$Deo gratias
 
 [Hymnus Laudes]
 v. Questo è il giorno, che, 

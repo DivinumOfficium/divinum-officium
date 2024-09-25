@@ -1,24 +1,12 @@
 [Rank]
 S. Damasi Papæ et Confessoris;;Semiduplex;;2.5;;vide C4
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 S. Damasi Papæ et Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-vide C4;
-9 lectiones;
-OPapaC=Dámaso;
-Doxology=Nat
-Omit Preces
-Commemoratio3
 
 [Oratio]
 Pastor eterno, que cuidas de tu rebaño con amor, guárdalo con tu protección perpetua, por intercesión de San Dámaso, Sumo Pontífice, a quien hiciste Pastor de toda la Iglesia.
 $Per Dominum
-
-[Commemoratio 2]
-!Conmemoración del Día de la Octava de la Inmaculada Concepción de la B.M.V.
-@Sancti/12-08:Oratio
 
 [Lectio4]
 Dámaso, español, ilustre y muy erudito en Sagradas Escrituras, convocó el primer concilio de Constantinopla, y puso fin a la perversa herejía de Eunomio y Macedonio. Condenó de nuevo el conciliábulo de Rimini, antes rechazado por el papa Liberio, en el cual, según San Jerónimo, las intrigas de Ursacio y, principalmente de Valente, habían logrado que se votase la condenación de la fe de Nicea, de manera que el orbe gimió asombrado al verse arriano.
@@ -30,7 +18,7 @@ Edificó dos basílicas: la primera dedicada a San Lorenzo, cerca del teatro de 
 Estableció la pena del talión contra aquel que acusara a otro falsamente. Ordenó lo que ya en muchos lugares estaba en uso, a saber: que los Salmos se cantasen en la iglesia de día y de noche a dos coros, y que al fin de cada Salmo se añadiese: Gloria al padre, y al Hijo, y al Espíritu Santo. Por su mandato, San Jerónimo tradujo el Nuevo Testamento según el texto griego. Gobernó la Iglesia 17 años, 2 meses y 20 días, y celebró ordenaciones cinco veces en el mes de diciembre en las cuales creó 21 presbíteros, 11 diáconos y 72 obispos para diversos lugares. Ilustre por su virtud, doctrina y prudencia, teniendo casi ochenta años, durante el imperio de Teodosio, se durmió Dámaso en el Señor, y fue sepultado en la vía Ardeatina, juntamente con su madre y hermana, en la basílica que él mismo había edificado. Sus reliquias fueron después trasladadas a la iglesia de San Lorenzo, llamado por su nombre in Dámaso.
 
 [Lectio94]
-Dámaso, español eminente, aprendió en las Sagradas Escrituras. Convocó el primer Concilio de Constantinopla, donde abolió la herejía de Eunomio y Macedonio. Repitió la condena de Liberio sobre el Concilio de Rimini. Este concilio, debido a las intrigas de Valente y Ursacio, había condenado la fe de Nicea. Dámaso construyó dos basílicas: una a San Lorenzo, cerca del teatro de Pompeyo, la otra a la Ardeatina en las Catacumbas. Decidió, según costumbre en muchos lugares, que los Salmos deberían ser cantados día y noche en todas las iglesias por coros alternos, y que al final de cada Salmo debería repetirse: "Gloria al Padre, y al Hijo y al Espíritu Santo". Bajo su mando, San Jerónimo revisó la traducción del Nuevo Testamento para hacerlo fiel al texto griego. Descubrió muchos cuerpos de Santos mártires y celebró su memoria en versos. Tenía casi 80 años; famoso por su virtud, sabiduría y prudencia, se durmió en el Señor, durante el reinado de Teodosio el Grande.
+Dámaso, español eminente, aprendió en las Sagradas Escrituras. Convocó el primer Concilio de Constantinopla, donde abolió la herejía de Eunomio y Macedonio. Repitió la condena de Liberio sobre el Concilio de Rimini. Este concilio, debido a las intrigas de Valente y Ursacio, había condenado la fe de Nicea. Dámaso construyó dos basílicas: una a San Lorenzo, cerca del teatro de Pompeyo, la otra a la Ardeatina en las Catacumbas. Decidió, según costumbre en muchos lugares, que los Salmos deberían ser cantados día y noche en todas las iglesias por coros alternos, y que al final de cada Salmo debería repetirse: “Gloria al Padre, y al Hijo y al Espíritu Santo”. Bajo su mando, San Jerónimo revisó la traducción del Nuevo Testamento para hacerlo fiel al texto griego. Descubrió muchos cuerpos de Santos mártires y celebró su memoria en versos. Tenía casi 80 años; famoso por su virtud, sabiduría y prudencia, se durmió en el Señor, durante el reinado de Teodosio el Grande.
 
 [Lectio7]
 @Commune/C4:Lectio7 in 2 loco
@@ -41,6 +29,6 @@ Dámaso, español eminente, aprendió en las Sagradas Escrituras. Convocó el pr
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
-
+[Commemoratio 2]
+!Conmemoración del Día de la Octava de la Inmaculada Concepción de la B.M.V.
+@Sancti/12-08:Oratio

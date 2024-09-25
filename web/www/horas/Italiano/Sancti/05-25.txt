@@ -1,11 +1,6 @@
 [Rank]
 S. Gregorii VII Papae Confessoris;;Duplex;;3;;vide C4
 
-[Rule]
-vide C4;
-9 lectiones
-CPapaM=Urbano;
-
 [Oratio]
 O Dio, fortezza di quelli che sperano in te, il quale al tuo beato Confessore e Pontefice Gregorio desti la virtù del coraggio per difendere la libertà della Chiesa: dacci a suo esempio ed intercessione, di superare fortemente tutte le avversità.
 $Per Dominum
@@ -13,13 +8,6 @@ $Per Dominum
 [Commemoratio]
 !Commemorazione di S. Urbano I, Papa e Martire
 @Commune/C2:Oratio Gregem
-
-[Commemoratio] (rubrica 1960)
-!Commemorazione di S. Urbano I, Papa e Martire
-@Commune/C2:Oratio proper
-$Oremus
-v. O Dio, che liberi dal terrore delle potenze infernali la tua Chiesa, fondata sulla solidissima roccia apostolica: concedi, te ne preghiamo, che per intercessione del beato Urbano martire tuo e sommo Pontefice, perseverando nella tua verità, sia munita di perenne sicurezza.
-$Per Dominum
 
 [Commemoratio] (rubrica 1960)
 !Commemorazione di S. Urbano I, Papa e Martire
@@ -37,11 +25,6 @@ Morto Alessandro II, eletto con unanime consenso sommo Pontefice, nonostante la 
 [Lectio6]
 Mentre celebrava il sacrificio della Messa, pie persone videro una colomba discendere dal cielo, posarsi sulla sua spalla destra e coprire colle sue ali la sua testa; a significare con ciò ch'egli si lasciava guidare nel governo della Chiesa dallo Spirito Santo, non da ragioni umane. Assediato in Roma dall'esercito dell'iniquo Enrico, estinse con un segno di croce un incendio suscitato dai nemici. Liberato finalmente dalle mani di lui da Roberto Guiscardo capo dei Normanni, si portò a Cassino; e poi di là andò a Salerno per consacrarvi la chiesa di san. Matteo Apostolo. Un giorno, mentre parlava al popolo di quella città, sfinito da tante prove cadde malato, predicendo la sua morte. Le ultime parole di Gregorio morente furono: «Ho amato la giustizia e odiato l'iniquità, perciò muoio in esilio» (Ps. 44,9). Non è possibile ridire le sofferenze coraggiosamente sostenute, o i saggi decreti fatti in molti concilii tenuti a Roma: uomo veramente santo, vindice dei delitti, e il più valoroso difensore della Chiesa. Aveva compito dodici anni di pontificato, allorché se ne andò in cielo, nell'anno della salute 1085, illustre per molti miracoli in vita e dopo morte; il suo sacro corpo fu sepolto con onore nella basilica cattedrale di Salerno.
 
-[Lectio93]
-!Per S. Urbano I Papa e Martire
-Urbano, Romano, sotto l'imperatore Alessandro Severo, colla dottrina e santità della vita convertì molti alla fede di Cristo; fra i quali Valeriano, sposo di santa Cecilia, e Tiburzio, fratello di Valeriano, che poi subirono coraggiosamente il martirio. Egli scrisse queste parole sui beni attribuiti alla Chiesa: «Le cose che i fedeli offrono al Signore, non debbono essere impiegate che per i bisogni della Chiesa, dei fratelli cristiani o degli indigenti; essendo esse oblazioni dei fedeli, elemosine fatte per il riscatto dei peccati, e patrimonio dei poveri». Rimase sul trono sei anni, sette mesi e quattro giorni: e ricevuta la corona del martirio, fu sepolto nel cimitero di Pretestato, il 25 Maggio. In cinque ordinazioni tenute nel mese di Dicembre, creò nove preti, cinque diaconi e otto vescovi per luoghi diversi.
-&teDeum
-
 [Lectio94]
 Papa Gregorio VII, di nome Ildebrando, nacque a Soana in Toscana. Grande innanzitutto per dottrina, santità e ogni virtù, diede gloria mirabile a tutta la Chiesa di Dio. Adolescente, rivestì l'abito religioso nel monastero di Cluny e servì Dio con tanto ardore di pietà da essere eletto priore dai padri di quel monastero.  Nominato poi abate del monastero di san Paolo fuori le mura, a Roma, e più tardi ancora cardinale di santa romana Chiesa, portò a compimento importantissimi incarichi e legazioni sotto i sommi pontefici Leone IX, Vittore II, Stefano IX, Nicolò II e Alessandro II. Alla morte di papa Alessandro, fu eletto, con unanime consenso, sommo pontefice. Emerse geme cornbattente e strenuo difensore delle libertà ecclesiastiche. Per questo soffrì molto e fu costretto ad allontanarsi da Roma. Mentre stava per morire, le sue ultime parole furono : « Ho amato la giustizia e odiato l'iniquità perciò muoio in esilio ».  Salì al cielo nel 1085, e il suo corpo fu sepolto con grandi onoranze nella cattedrale di Salerno.  
 &teDeum
@@ -55,6 +38,7 @@ Papa Gregorio VII, di nome Ildebrando, nacque a Soana in Toscana. Grande innanzi
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
-
+[Lectio93]
+!Per S. Urbano I Papa e Martire
+Urbano, Romano, sotto l'imperatore Alessandro Severo, colla dottrina e santità della vita convertì molti alla fede di Cristo; fra i quali Valeriano, sposo di santa Cecilia, e Tiburzio, fratello di Valeriano, che poi subirono coraggiosamente il martirio. Egli scrisse queste parole sui beni attribuiti alla Chiesa: «Le cose che i fedeli offrono al Signore, non debbono essere impiegate che per i bisogni della Chiesa, dei fratelli cristiani o degli indigenti; essendo esse oblazioni dei fedeli, elemosine fatte per il riscatto dei peccati, e patrimonio dei poveri». Rimase sul trono sei anni, sette mesi e quattro giorni: e ricevuta la corona del martirio, fu sepolto nel cimitero di Pretestato, il 25 Maggio. In cinque ordinazioni tenute nel mese di Dicembre, creò nove preti, cinque diaconi e otto vescovi per luoghi diversi.
+&teDeum

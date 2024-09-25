@@ -1,12 +1,15 @@
 [Rank]
 S. Caroli Episcopi et Confessoris;;Duplex;;3;;vide C4
 
-[Rule]
-vide C4;
-9 lectiones
-
 [Oratio]
 Guarda Señor a tu Iglesia con la continua protección de San Carlos, tu Confesor y Pontífice; de suerte que así como a él le hizo glorioso su pastoral solicitud, su intercesión nos obtenga permanecer siempre fervientes en tu amor.
+$Per Dominum
+
+[Commemoratio 1]
+!Conmemoración de los Ss. Vidal y Agrícola
+@Commune/C3:Oratio proper
+$Oremus
+v. Concédenos, Dios todopoderoso, al celebrar la fiesta de tus santos mártires Vidal y Agrícola, la ayuda de su intercesión.
 $Per Dominum
 
 [Lectio4]
@@ -18,13 +21,13 @@ Su caridad sobresalió cuando, después de haber vendido su principado de Oria, 
 [Lectio6]
 Observaba una admirable abstinencia, ayunando con frecuencia a pan y agua y contentándose otras veces con legumbres. Domaba su cuerpo con vigilias, con un áspero cilicio y frecuentes disciplinas. Profesó amor a la humildad y la mansedumbre. Nunca dejó la práctica de la oración ni la predicación de la divina palabra por muchas que fueran sus ocupaciones. Edificó muchas iglesias, monasterios y colegios. Escribió obras muy útiles dirigidas sobre todo a la instrucción de los obispos, y a su celo se debe la publicación del Catecismo de los párrocos. Por fin, se retiró en un lugar solitario del monte Varal, donde se hallan algunos cuadros de la Pasión de Nuestro Señor, y allí, en medio de las duras mortificaciones a las que durante aquellos días se entregaba, endulzadas, empero, por la meditación de los sufrimientos de Jesucristo, le sobrevino la fiebre; y agravándose la enfermedad, regresó a Milán, donde cubierto de ceniza y cilicio y fijos los ojos en el Crucifijo, voló al cielo a la edad, de 47 años, tres días antes de las nonas de octubre del año 1584. Habiendo resplandecido por sus milagros, Paulo V le colocó en el número de los santos.
 
+[Lectio94]
+Carlos nació en la noble familia de Milán Borromeo. Antes de cumplir los veintitrés años, su tío, Pío IV, lo hizo miembro del sagrado colegio de cardenales. Poco después el mismo Papa lo hizo arzobispo de Milán. En el cargo, gobernó según los decretos del santo concilio de Trento. Fue en gran parte a través de su intervención en el Concilio que éste se concluyó. Durante la peste que azotó a Milán, vendió todos los muebles de su casa para ayudar a los necesitados; a menudo visitaba a las víctimas de la peste y, administrando los sacramentos de la Iglesia con sus propias manos, los consolaba de una manera maravillosa. Fue un enérgico defensor de la libertad de la Iglesia y escribió muchas obras, muy útiles especialmente para la instrucción de los obispos, y también por su mérito se publicó el Catecismo de los Párrocos. Murió en Milán a los 47 años, el 3 de noviembre. Glorioso por los milagros, fue inscrito por Pablo V en el catálogo de los santos.
+&teDeum
+
 [Lectio93]
 !Conmemoración de los Ss. Vidal y Agrícola
 Vidal y su dueño Agrícola fueron detenidos en Bolonia durante la persecución de Diocleciano y Maximiano por predicar la fe cristiana; siendo inútiles las súplicas y amenazas a Vidal para que cambiara de resolución, sólo consiguieron aumentar la firmeza con que se declaraba adorador y servidor de Jesucristo. Después de haber sido torturado con diversos suplicios, sufridos con constancia, entregó, orando, su alma a Dios. Su ejemplo sirvió para fortalecer a Agrícola, cuyo suplicio había sido aplazado, para que, por la vista de los tormentos de su esclavo renunciara a Jesucristo. Le crucificaron y de esta manera compartió la suerte de Vidal, siendo su compañero en la gloria del martirio. Sus cuerpos fueron inhumados en el cementerio judío, pero hallados por San Ambrosio, los trasladó a un lugar bendecido y consagrado.
-&teDeum
-
-[Lectio94]
-Carlos nació en la noble familia de Milán Borromeo. Antes de cumplir los veintitrés años, su tío, Pío IV, lo hizo miembro del sagrado colegio de cardenales. Poco después el mismo Papa lo hizo arzobispo de Milán. En el cargo, gobernó según los decretos del santo concilio de Trento. Fue en gran parte a través de su intervención en el Concilio que éste se concluyó. Durante la peste que azotó a Milán, vendió todos los muebles de su casa para ayudar a los necesitados; a menudo visitaba a las víctimas de la peste y, administrando los sacramentos de la Iglesia con sus propias manos, los consolaba de una manera maravillosa. Fue un enérgico defensor de la libertad de la Iglesia y escribió muchas obras, muy útiles especialmente para la instrucción de los obispos, y también por su mérito se publicó el Catecismo de los Párrocos. Murió en Milán a los 47 años, el 3 de noviembre. Glorioso por los milagros, fue inscrito por Pablo V en el catálogo de los santos.
 &teDeum
 
 [Commemoratio 2]
@@ -37,13 +40,6 @@ _
 $Oremus 
 v. Dios todopoderoso y eterno, que nos has concedido celebrar en una misma fiesta los méritos de todos los santos; te pedimos, por medio de esta multitud de intercesores, la tan deseada abundancia de tu perdón.
 _
-!Conmemoración de los Ss. Vidal y Agrícola
-@Commune/C3:Oratio proper
-$Oremus
-v. Concédenos, Dios todopoderoso, al celebrar la fiesta de tus santos mártires Vidal y Agrícola, la ayuda de su intercesión.
-$Per Dominum
-
-[Commemoratio 1]
 !Conmemoración de los Ss. Vidal y Agrícola
 @Commune/C3:Oratio proper
 $Oremus

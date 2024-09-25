@@ -1,16 +1,8 @@
 [Rank]
 In Visitatione B. Mariæ Virginis;;Duplex II classis;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Visitatione B. Mariæ Virginis;;Duplex II classis;;5;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Ipsa Virgo Virginum
-Doxology=Nat
-Antiphonas horas
-Psalmi Dominica
 
 [Ant Vespera]
 María se puso en camino * y fue aprisa a la montaña, a un pueblo de Judá.;;109
@@ -42,7 +34,7 @@ Del Cantar de los cantares
 4 Me ha introducido en la sala del festín, y la bandera que contra mí alzó es (bandera de) amor. 
 5 Confortadme con pasas, reanimadme con manzanas, que desfallezco de amor. 
 6 Está su izquierda bajo mi cabeza y su diestra me abraza.  
-7 Os conjuro, hijas de Jerusalén, por las gacelas y ciervos del campo, que no despertéis ni inquietéis a la amada hasta que ella quiera.	
+7 Os conjuro, hijas de Jerusalén, por las gacelas y ciervos del campo, que no despertéis ni inquietéis a la amada hasta que ella quiera.
 
 [Responsory1]
 R. Levántate, apresúrate, amiga mía, hermosa mía, ven; pues pasó ya el invierno, disipáronse y cesaron las lluvias. 
@@ -57,7 +49,7 @@ R. La voz de la tórtola se ha oído ya en nuestra tierra.
 10 Mi amado ha tomado la palabra y dice: Esposo. “¡Levántate ya, amada mía, hermosa mía, y ven! 
 11 Que ya se ha pasado el invierno y han cesado las lluvias. 
 12 Ya se muestran en la tierra los brotes floridos, ya ha llegado el tiempo de la poda y se deja oír en nuestra tierra el arrullo de la tórtola. 
-13 Ya ha echado la higuera sus brotes, ya las viñas en flor esparcen su aroma.  
+13 Ya ha echado la higuera sus brotes, ya las viñas en flor esparcen su aroma.
 
 [Responsory2]
 R. ¿Quién es esta que se eleva como el sol, y es hermosa como Jerusalén? 
@@ -128,7 +120,7 @@ V. Y su misericordia se extenderá de generación en generación, en favor de lo
 R. Porque me engrandeció el Señor que es poderoso, y cuyo nombre es santo.
 
 [Lectio8]
-"¿De dónde me viene que la madre de mi Señor se digne visitarme?” Lo que significa: ¡Qué gran bien es para mí la visita de la Madre de mi Señor! Yo veo el milagro y me explico el misterio: la que aquí es llamada Madre del Señor ha concebido al Verbo, está llena de la divinidad. “María permaneció tres meses con Isabel, y luego regresó a su casa”. Se nos presenta aquí a la Virgen Santísima cumpliendo un deber de caridad, y fijando su permanencia conforme a un número consagrado.
+“¿De dónde me viene que la madre de mi Señor se digne visitarme?” Lo que significa: ¡Qué gran bien es para mí la visita de la Madre de mi Señor! Yo veo el milagro y me explico el misterio: la que aquí es llamada Madre del Señor ha concebido al Verbo, está llena de la divinidad. “María permaneció tres meses con Isabel, y luego regresó a su casa”. Se nos presenta aquí a la Virgen Santísima cumpliendo un deber de caridad, y fijando su permanencia conforme a un número consagrado.
 
 [Responsory8]
 R. Dichosa eres, sagrada Virgen María, y sumamente digna de todas las alabanzas: 
@@ -142,15 +134,5 @@ R. Porque de ti ha nacido el sol de justicia, Cristo, nuestro Dios.
 Ella no permaneció cerca de Isabel con el único objeto de gozar de su intimidad: hízolo además en provecho de aquel gran Profeta; porque si ya en el primer momento se produjo un efecto de la gracia, saltando Juan de gozo en el seno de su madre y quedar ésta llena del Espíritu Santo, ¡cuántas nuevas gracias les obtendría la presencia de María durante todo el tiempo de su visita! Así recibió el Precursor la unción del Espíritu Santo, y se ejercitó como un atleta esforzado, preparándose su vigor para los más rudos combates.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
-[Versum 2]
-@:Versum 1
-
 [Ant 2]
 Cuando Isabel * oyó el saludo de María, saltó la criatura en su vientre, y se llenó del Espíritu Santo. Aleluya.
-
-[Versum 3]
-@:Versum 1
-

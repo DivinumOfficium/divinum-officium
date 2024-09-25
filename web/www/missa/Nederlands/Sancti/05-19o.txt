@@ -1,18 +1,9 @@
 [Rank]
-S. Pudentianæ Virginis;;Simplex;;1.1;;vide C6
+S. Pudentiana Virgine
 
 [Rule]
 vide C6;
 Gloria
 
 [Oratio]
-!Pro S. Pudentiana Virgine.
-@Commune/C6b:Oratio:s/N\./Pudentiana/
-
-[Secreta]
-!Pro S. Pudentiana Virgine.
-@Commune/C6b
-
-[Postcommunio]
-!Pro S. Pudentiana Virgine.
-@Commune/C6b
+@Commune/C6b::s/N\./Pudentiana/

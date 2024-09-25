@@ -1,25 +1,16 @@
 [Rank]
 Exaltation de la Ste Croix;;Duplex majus;;4;;ex Sancti/05-03
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Exaltation de la Ste Croix;;Duplex II classis;;5.5;;ex Sancti/05-03
-
-[Rule]
-ex Sancti/05-03
-Domini
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Festum Domini
-
-[Oratio]
-O Dieu, qui nous donnez aujourd’hui un sujet de joie dans la fête annuelle de l’Exaltation de la sainte Croix, faites, nous Vous en prions, que nous méritions de recueillir dans le ciel les récompenses acquises au moyen de la rédemption de Celui dont nous avons connu le mystère ici-bas.
-$Per eumdem
 
 [Versum 1]
 V. Ce signe de la Croix sera dans le ciel.
 R. Quand le Seigneur viendra en jugement. 
+
+[Oratio]
+O Dieu, qui nous donnez aujourd’hui un sujet de joie dans la fête annuelle de l’Exaltation de la sainte Croix, faites, nous Vous en prions, que nous méritions de recueillir dans le ciel les récompenses acquises au moyen de la rédemption de Celui dont nous avons connu le mystère ici-bas.
+$Per eumdem
 
 [Invit]
 Au Christ Roi crucifié, * Venez, offrons l’adoration.
@@ -78,6 +69,10 @@ Abattu par ces défaites, Chosroës prit la fuite ; et lorsqu’il se disposait 
 [Lectio6]
 Cette action fut marquée par un éclatant miracle. Héraclius, tout chargé d’or et de pierreries, sentit une force invincible l’arrêter à la porte qui donnait accès au mont Calvaire ; plus il faisait d’efforts pour avancer, plus il semblait être fortement retenu. Comme l’empereur et avec lui tous les témoins de cette scène étaient stupéfaits, Zacharie, Évêque de Jérusalem, lui dit : « Prenez garde, ô empereur, qu’avec ces ornements de triomphe, vous n’imitiez point assez la pauvreté de Jésus-Christ et l’humilité avec laquelle il a porté sa Croix. » Héraclius se dépouillant alors de ses splendides vêtements, et détachant ses chaussures, jeta sur ses épaules un vulgaire manteau et se remit en route. Cela fait, il accomplit facilement le reste du trajet et replaça la Croix sur le mont Calvaire, à l’endroit même d’où les Perses l’avaient enlevée. La solennité de l’exaltation de la sainte Croix, que l’on célébrait chaque année en ce même jour, prit alors une grande importance, en mémoire de ce qu’elle avait été remise, par Héraclius, au lieu même où on l’avait dressée la première fois pour le Sauveur.
 
+[Lectio94]
+La sainte Croix du Seigneur placée par sainte Hélène, sur le mont du Calvaire et enlevée par Chosroès, roi des Perses, fut récupérée par l’empereur Héraclius, après sa triple victoire sur les Perses, et rapportée sur ses épaules, sur cette même montagne où le Sauveur l’avait portée. Ce fait a été marqué d’un célèbre miracle. Héraclius, en effet, paré d’or et de perles, fut obligé de s’arrêter à la porte qui conduisait au Calvaire. Plus il s’efforçait d’avancer, plus il se sentait retenu. Comme il en était stupéfait, ainsi que tous les autres témoins, Zacharie, évêque de Jérusalem lui dit : « Prenez garde, empereur, que cet apparat triomphal dans le port de la Croix n’imite pas assez la pauvreté et l’humilité de Jésus- Christ. » Héraclius alors, ayant dépouillé ses splendides vêtements, enlevé ses chaussures et revêtu un manteau vulgaire, acheva facilement le reste du trajet. De ce jour, la fête de l’Exaltation de la sainte Croix, qui se célébrait chaque année, commença d’être plus populaire, en mémoire de cet événement.
+&teDeum
+
 [Lectio7]
 Lecture du saint Évangile selon saint Jean.
 !Jean 12:31-36
@@ -94,12 +89,6 @@ O vertu admirable de la Croix ! ô gloire ineffable de la passion ! où l’on v
 Vous avez, Seigneur, attiré tout à vous, afin que la piété de toutes les nations qui peuplent la terre célébrât, comme un mystère plein de réalité et dégagé de tout voile, ce que vous teniez caché dans un temple de la Judée, sous l’ombre des figures. Maintenant, en effet, l’ordre des Lévites a plus d’éclat, la dignité des Prêtres plus de grandeur, et l’onction qui sacre les Pontifes plus de sainteté. Et cela, parce que la source de toute bénédiction et le principe de toutes les grâces se trouvent en votre Croix, laquelle fait passer les croyants de la faiblesse à la force, de l’opprobre à la gloire, de la mort à la vie. C’est maintenant aussi que les divers sacrifices d’animaux charnels étant abolis, la seule oblation de votre corps et de votre sang tient lieu de toutes les différentes victimes qui la représentaient. Car vous êtes le véritable « Agneau de Dieu qui effacez les péchés du monde, » et tous les mystères s’accomplissent tellement en vous, que, de même que toutes les hosties qui vous sont offertes ne font qu’un seul sacrifice, ainsi toutes les nations de la terre ne font plus qu’un seul royaume.
 &teDeum
 
-[Ant Laudes]
-@Sancti/05-03:Ant Vespera
-
-[Ant 3]
-O Croix bénie, * qui seule as été digne de porter le Roi des cieux, le Seigneur, alléluia.
-
 [Responsory Tertia]
 @Sancti/05-03::s/, alleluia//g s/(erit in cælo, ? \* ) ?Alleluia/* Erit in cælo/g s/\. \*/./
 
@@ -109,6 +98,5 @@ O Croix bénie, * qui seule as été digne de porter le Roi des cieux, le Seigne
 [Responsory Nona]
 @Sancti/05-03::s/, alleluia//g s/(et psallat tibi, ? \* ) ?Alleluia/* Et psallat tibi/g s/\. \*/./
 
-[Lectio94]
-La sainte Croix du Seigneur placée par sainte Hélène, sur le mont du Calvaire et enlevée par Chosroès, roi des Perses, fut récupérée par l’empereur Héraclius, après sa triple victoire sur les Perses, et rapportée sur ses épaules, sur cette même montagne où le Sauveur l’avait portée. Ce fait a été marqué d’un célèbre miracle. Héraclius, en effet, paré d’or et de perles, fut obligé de s’arrêter à la porte qui conduisait au Calvaire. Plus il s’efforçait d’avancer, plus il se sentait retenu. Comme il en était stupéfait, ainsi que tous les autres témoins, Zacharie, évêque de Jérusalem lui dit : « Prenez garde, empereur, que cet apparat triomphal dans le port de la Croix n’imite pas assez la pauvreté et l’humilité de Jésus- Christ. » Héraclius alors, ayant dépouillé ses splendides vêtements, enlevé ses chaussures et revêtu un manteau vulgaire, acheva facilement le reste du trajet. De ce jour, la fête de l’Exaltation de la sainte Croix, qui se célébrait chaque année, commença d’être plus populaire, en mémoire de cet événement.
-&teDeum
+[Ant 3]
+O Croix bénie, * qui seule as été digne de porter le Roi des cieux, le Seigneur, alléluia.

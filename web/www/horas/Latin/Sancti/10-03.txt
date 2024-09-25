@@ -1,16 +1,13 @@
 [Rank]
-S. Theresiæ a Jesu Infante Virginis;;Duplex;;3;;vide C6
+S. Theresiæ a Jesu Infante Virginis;;Duplex;;3;;vide C6b
 
 [Rule]
-vide C6;
+vide C6b;
 9 lectiones
 
 [Oratio]
 Dómine, qui dixísti: Nisi efficiámini sicut párvuli, non intrábitis in regnum cælórum: da nobis, quǽsumus: ita sanctæ Terésiæ Vírginis in humilitáte et simplicitáte cordis vestígia sectári, ut prǽmia consequámur ætérna.
 $Qui vivis
-
-[Hymnus Matutinum]
-@Commune/C6:Hymnus Matutinum pro Virgo tantum et non Martyr
 
 [Lectio4]
 Terésia a Jesu Infante, Alensonii in Gállia, honestis paréntibus, singulari et assidua erga Deum pietáte conspicuis, orta est. Inde a prima ætate, divino Spíritu prævénta, religiosam vitam ágere cupiebat. Serio autem promisit, se nihil Deo denegatúram, quod ipse ab ea petere viderétur: quam promissiónem fideliter usque ad mortem servare satégit. Quinto ætátis anno, matre amissa, Dei providéntiæ se totam commisit sub vigilanti custódia amantíssimi patris, sororúmque natu majórum: quibus magistris, Teresia ad curréndam perfectiónis viam ut gigas exsultávit. Novennis virgínibus ex Ordine sancti Benedicti Lexoviis excolenda traditur, ibique in rerum divinárum cognitióne excellere visa est. Décimo ætátis anno, arcanus et gravis morbus eam diu cruciávit, a quo prout ipsa enárrat, ope Beatíssimæ Vírginis, quæ eídem subrídens appáruit, et quam, sub titulo Dominæ nostræ a Victoria, per novendialia invocare studuit, divinitus fuit liberata. Tunc, angelico fervore repléta, ad sacrum convivium, in quo Christus sumitur, se diligentíssime præparáre curávit.
@@ -20,6 +17,10 @@ Ut prímitus eucharistico pane fuit refecta, insatiábilem cæléstis hujus cibi
 
 [Lectio6]
 Quo magis Altíssimo placéret, quum in Sacris Scripturis mónitum illud legísset: Si quis est párvulus véniat ad me; párvula in spíritu esse vóluit, et inde filiali fiducia Deo, tamquam Patri amantíssimo, se perpetuo trádidit. Hanc, spiritualis infantiæ viam, secúndum Evangélii doctrinam, alios docuit, speciatim novítias, quas ex obediéntia ad religiosárum virtútum studium informandas suscépit, atque ita apostolico zelo repléta, mundo, supérbia inflato et vanitátes diligenti, evangelicæ simplicitátis iter patefécit. Sponsus autem Jesus eam patiéndi desidério, tam in anima, quam in corpore, pénitus inflammávit. Insuper Dei caritátem undequáque neglectam animadvertens, summo dolóre affecta, duobus ante óbitum annis, Dei miserentis amori se víctimam óbtulit. Tunc, ut ipsa refert, cæléstis ignis flamma vulneráta est: unde caritate consumpta, in écstasim rapta, ferventíssime ingéminans: Deus meus, te diligo; viginti quatuor annos nata, die trigesima Septembris, anno millesimo octingentésimo nonagesimo septimo, ad Sponsum evolávit. Quod autem móriens promiserat, se perennem rosárum plúviam in terram demissuram, hoc in cælum recepta, innumeris miraculis reapse adimplévit et in dies adimplet. Quam Pius undecimus, Pontifex maximus, Beátis Virgínibus adscriptam, et biennio post, jubilæo máximo recurrente, inter Sanctas relatam, peculiarem ómnium Missiónum Patronam constítuit ac declarávit.
+
+[Lectio94]
+Terésia a Jesu Infánte, Alensónii in Gállia, ex honéstis piísque paréntibus orta est. Quinto ætátis anno, matre amíssa, Dei providéntiæ se totam commisit sub vigilántia amantíssimi patris et sorórum natu majórum: quibus magístris, ad curréndam perfectiónis viam ut gigas exsultávit. Novénnis virgínibus ex órdine sancti Benedícti Lexóviis excolénda tráditur. Décimo ætátis anno, arcáno et gravi morbo diu cruciáta, ope Dóminæ nostræ a Victória, divínitus fuit liberáta. Angélico fervóre repléta, ad sacrum convívium prímitus accédens, insatiábilem hujus cibi famem hauríre visa est. Carmelitárum excalciatórum órdinem íngredi cúpiens, ob ætátis deféctum, multas ad religiósam vitam amplecténdam nacta est difficultátes, quibus fórtiter superátis, Lexoviénsem Carmélum, quíndecim annos nata, felíciter ingréssa est. Ibíque erga Deum et próximum exímia caritáte flagrávit. Spirituálem infántiæ viam, secúndum Evangélii doctrínam, secúta, álios, speciátim novítias, eándem edócuit. Patiéndi desidério inflammáta, duóbus ante óbitum annis Dei miseréntis amóri se víctimam óbtulit. Vigínti quátuor annos nata, die trigésima septémbris, anno millésimo octingentésimo nonagésimo séptimo, ad Sponsum evolávit. Quam Pius undécimus, Póntifex máximus, Beátis Virgínibus adscríptam, et biénnio post, jubilǽo máximo recurrénte, solémniter inter Sanctas relátam, peculiárem ómnium Missiónum Patrónam constítuit atque declarávit.
+&teDeum
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Matthǽum
@@ -35,8 +36,4 @@ Ut autem plene valeámus agnóscere quómodo apprehéndi possit tam mira convers
 
 [Lectio9]
 Ad hanc vos, dilectíssimi, similtúdinem parvulórum mystérium hodiérnæ festivitátis invitat; et hanc vobis humilitátis formam adorátus a Magis puer Salvátor insinuat: qui, ut imitatóribus suis quid glóriæ paráret, osténderet, ortus sui témpore éditos martyrio consecrávit; ut in Bethlehem, ubi Christus natus est, geniti, per communiónem ætátis consortes fíerent passiónis. Amétur ígitur humilitas, et omnis a fidelibus vitétur elátio. Alter álterum sibi præferat, et nemo quod suum est quærat, sed quod alterius; ut, cum in ómnibus abundaverit afféctus benevoléntiæ, in nullo virus inveniátur invidiæ: quóniam qui se exáltat humiliábitur, et qui se humíliat exaltábitur, eodem ipso testante Jesu Christo Dómino nostro, qui cum Patre et Spíritu Sancto vivit et regnat Deus in sǽcula sæculórum. Amen.
-&teDeum
-
-[Lectio94]
-Terésia a Jesu Infánte, Alensónii in Gállia, ex honéstis piísque paréntibus orta est. Quinto ætátis anno, matre amíssa, Dei providéntiæ se totam commisit sub vigilántia amantíssimi patris et sorórum natu majórum: quibus magístris, ad curréndam perfectiónis viam ut gigas exsultávit. Novénnis virgínibus ex órdine sancti Benedícti Lexóviis excolénda tráditur. Décimo ætátis anno, arcáno et gravi morbo diu cruciáta, ope Dóminæ nostræ a Victória, divínitus fuit liberáta. Angélico fervóre repléta, ad sacrum convívium prímitus accédens, insatiábilem hujus cibi famem hauríre visa est. Carmelitárum excalciatórum órdinem íngredi cúpiens, ob ætátis deféctum, multas ad religiósam vitam amplecténdam nacta est difficultátes, quibus fórtiter superátis, Lexoviénsem Carmélum, quíndecim annos nata, felíciter ingréssa est. Ibíque erga Deum et próximum exímia caritáte flagrávit. Spirituálem infántiæ viam, secúndum Evangélii doctrínam, secúta, álios, speciátim novítias, eándem edócuit. Patiéndi desidério inflammáta, duóbus ante óbitum annis Dei miseréntis amóri se víctimam óbtulit. Vigínti quátuor annos nata, die trigésima septémbris, anno millésimo octingentésimo nonagésimo séptimo, ad Sponsum evolávit. Quam Pius undécimus, Póntifex máximus, Beátis Virgínibus adscríptam, et biénnio post, jubilǽo máximo recurrénte, solémniter inter Sanctas relátam, peculiárem ómnium Missiónum Patrónam constítuit atque declarávit.
 &teDeum

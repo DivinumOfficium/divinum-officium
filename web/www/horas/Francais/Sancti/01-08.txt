@@ -1,16 +1,8 @@
 [Rank]
 Tertia die infra Octavam Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-06
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Die Octava Januarii;;Feria;;1.2;;vide Sancti/01-06
-
-[Rule]
-ex Sancti/01-06
-Lectio1 tempora
-Doxology=Epi
-9 lectiones
-Feria Te Deum
-Infra octavam Epiphaniæ Domini
 
 [Lectio1]
 De l'Épître aux Romains
@@ -22,12 +14,6 @@ De l'Épître aux Romains
 [Responsory1]
 @Sancti/01-06:Responsory1InfraOctavam
 
-[Responsory2]
-@Sancti/01-06:Responsory2
-
-[Responsory3]
-@Sancti/01-06:Responsory3
-
 [Lectio2]
 !Rom 12:4-8
 4 Car, de même que nous avons plusieurs membres dans un seul corps, et que tous les membres n'ont pas la même fonction,
@@ -35,6 +21,9 @@ De l'Épître aux Romains
 6 et nous avons des dons différents selon la grâce qui nous a été donnée : soit de prophétie, selon la mesure de notre foi,
 7 soit de ministère, pour nous contenir dans le ministère ; celui-ci a reçu le don d'enseigner : qu'il enseigne ;
 8 celui-là, le don d'exhorter : qu'il exhorte ; un autre distribue : qu'il s'en acquitte avec simplicité ; un autre préside : qu'il le fasse avec zèle ; un autre exerce les œuvres de miséricorde : qu'il s'y livre avec joie.
+
+[Responsory2]
+@Sancti/01-06:Responsory2
 
 [Lectio3]
 !Rom 12:9-16
@@ -46,6 +35,9 @@ De l'Épître aux Romains
 14 Bénissez ceux qui vous persécutent : bénissez et ne maudissez pas.
 15 Réjouissez-vous avec ceux qui sont dans la joie ; pleurez avec ceux qui pleurent.
 16 Ayez les mêmes sentiments entre vous ; n'aspirez pas à ce qui est élevé, mais laissez-vous attirer par ce qui est humble.
+
+[Responsory3]
+@Sancti/01-06:Responsory3
 
 [Lectio4]
 Du Sermon de saint Augustin Évêque

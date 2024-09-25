@@ -1,15 +1,8 @@
 [Rank]
 Nativité de Saint Jean Baptiste;;Duplex I classis cum Octava communi;;6.5;;
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Nativité de Saint Jean Baptiste;;Duplex I classis;;6;;
-
-[Rule]
-Proper ;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
 
 [Ant Vespera]
 Il marchera devant * Lui dans l’esprit et la vertu d’Élie, pour préparer au Seigneur un peuple parfait.
@@ -54,6 +47,17 @@ Zacharie étant entré * dans le temple du Seigneur, l’ange Gabriel lui apparu
 
 [Oratio]
 Dieu, vous nous avez rendu ce jour vénérable par la nativité du bienheureux Jean : accordez à votre peuple la grâce des joies spirituelles ; et dirigez les âmes de tous les fidèles dans la voie du salut éternel.
+$Per Dominum
+
+[Octava 1]
+!Commemoratio Octavæ S. Joannis Baptístæ
+Ant. Zacharie * étant entré dans le temple du Seigneur, l'Ange Gabriel lui apparut, debout à droite de l'autel de l'encens.
+_
+V. Il y eut un homme envoyé de Dieu.
+R. Dont le nom était Jean.
+_
+$Oremus
+v. Dieu, Vous nous avez rendu ce jour vénérable par la nativité du bienheureux Jean : accordez à Votre peuple la grâce des joies spirituelles et dirigez les âmes de tous les fidèles dans la voie du salut éternel.
 $Per Dominum
 
 [Invit]
@@ -110,7 +114,7 @@ Commencement du Prophète Jérémie
 Paroles de Jérémie, fils d’Helcias, des prêtres qui demeuraient à Anatoth, dans la terre de Benjamin. Parole du Seigneur qui lui fut adressée dans les jours de Josias, fils d’Amon, roi de Juda, en la treizième année de son règne. Elle (lui) fut aussi adressée dans les jours de Joakim, fils de Josias, roi de Juda, jusqu’à la fin de la onzième année de Sédécias, fils de Josias, roi de Juda, jusqu’à la transmigration de Jérusalem, au cinquième mois. Elle me fut donc adressée la parole du Seigneur, disant : Avant que je t’eusse formé dans le sein (de ta mère) je t’ai connu, et avant que tu fusses sorti de ses entrailles, je t’ai sanctifié, et je t’ai établi Prophète parmi les Nations.
 
 [Responsory1]
-R.  Il y eut un homme envoyé de Dieu, dont le nom était Jean :
+R. Il y eut un homme envoyé de Dieu, dont le nom était Jean :
 * Celui-ci vint comme témoin pour rendre témoignage à la lumière et pour préparer au Seigneur un peuple parfait
 V. Jean était dans le désert, prêchant le baptême de pénitence.
 R. Celui-ci vint comme témoin pour rendre témoignage à la lumière et pour préparer au Seigneur un peuple parfait.
@@ -249,6 +253,17 @@ R. Car sa main est avec lui.
 [Ant 2]
 La bouche de Zacharie s’ouvrit * et il prophétisa, disant : Béni soit le Dieu d’Israël.
 
+[Octava 2]
+!Commemoratio Octavæ S. Joannis Baptístæ
+Ant. La bouche de Zacharie s’ouvrit * et il prophétisa, disant : béni soit le Dieu d’Israël.
+_
+V. Cet enfant sera grand devant le Seigneur.
+R. Car Sa main est avec lui.
+_
+$Oremus
+v. Dieu, Vous nous avez rendu ce jour vénérable par la nativité du bienheureux Jean : accordez à Votre peuple la grâce des joies spirituelles et dirigez les âmes de tous les fidèles dans la voie du salut éternel.
+$Per Dominum
+
 [Lectio Prima]
 !Isa 49:7
 v. Les rois verront et les princes se lèveront, et ils adoreront, à cause du Seigneur qui a été fidèle, et du Saint d'Israël qui t'a choisi.
@@ -295,33 +310,5 @@ _
 V. Cet enfant est grand devant le Seigneur. 
 R.Car la main du Seigneur est avec lui.
 
-[Ant Vespera 3]
-@:Ant Laudes
-
-[Versum 3]
-@:Versum 2
-
 [Ant 3]
 L’enfant * qui nous est né est plus qu’un prophète ; car c’est celui dont le Sauveur dit : entre les fils des femmes, il n’y en a point eu de plus grand que Jean-Baptiste.
-
-[Octava 1]
-!Commemoratio Octavæ S. Joannis Baptístæ
-Ant. Zacharie * étant entré dans le temple du Seigneur, l'Ange Gabriel lui apparut, debout à droite de l'autel de l'encens.
-_
-V. Il y eut un homme envoyé de Dieu.
-R. Dont le nom était Jean.
-_
-$Oremus
-v. Dieu, Vous nous avez rendu ce jour vénérable par la nativité du bienheureux Jean : accordez à Votre peuple la grâce des joies spirituelles et dirigez les âmes de tous les fidèles dans la voie du salut éternel.
-$Per Dominum
-
-[Octava 2]
-!Commemoratio Octavæ S. Joannis Baptístæ
-Ant. La bouche de Zacharie s’ouvrit * et il prophétisa, disant : béni soit le Dieu d’Israël.
-_
-V. Cet enfant sera grand devant le Seigneur.
-R. Car Sa main est avec lui.
-_
-$Oremus
-v. Dieu, Vous nous avez rendu ce jour vénérable par la nativité du bienheureux Jean : accordez à Votre peuple la grâce des joies spirituelles et dirigez les âmes de tous les fidèles dans la voie du salut éternel.
-$Per Dominum

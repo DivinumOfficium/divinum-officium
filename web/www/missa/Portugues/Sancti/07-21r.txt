@@ -1,12 +1,16 @@
 [Rank]
 S. Laurentii a Brundusio Confessoris;;Duplex;;3;;vide C5a
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Laurentii a Brundusio Confessoris;;Duplex optional;;2;;vide C5a
 
 [Rule]
 vide C5a;
 Gloria
+
+[Oratio]
+Ó Deus, que para glória do vosso nome e salvação das almas ornastes o B. Lourenço, vosso Confessor, com o espírito de conselho e de fortaleza nas obras ainda as mais árduas, concedei-nos pela sua intercessão o mesmo espírito, a fim de conhecermos o que devemos praticar e de praticarmos o que houvermos conhecido.
+$Per Dominum
 
 [Comment]
 # 21 VII – S. Lourenço de Brindes, Confessor
@@ -17,45 +21,8 @@ Santa Praxedes, Virgem
 ! Comemoração
 ! Paramentos brancos
 
-[Introitus]
-@Commune/C4a:Introitus
-
-[Oratio]
-Ó Deus, que para glória do vosso nome e salvação das almas ornastes o B. Lourenço, vosso Confessor, com o espírito de conselho e de fortaleza nas obras ainda as mais árduas, concedei-nos pela sua intercessão o mesmo espírito, a fim de conhecermos o que devemos praticar e de praticarmos o que houvermos conhecido.
-$Per Dominum
-
-[Lectio]
-@Commune/C4a:Lectio
-
-[Graduale]
-@Commune/C4a:Graduale
-
-[Evangelium]
-@Commune/C4a:Evangelium
-
-[Offertorium]
-@Commune/C4a:Offertorium
-
 [Secreta]
-@Commune/C4a:Secreta
-
-[Communio]
-@Commune/C4a:Communio
+@Commune/C4a:Secreta1:s/N\./Lourenço/
 
 [Postcommunio]
-@Commune/C4a:Postcommunio
-
-[Commemoratio Oratio]
-! Santa Praxedes
-Ó Deus, que entre outros milagres do vosso poder permitistes que o sexo frágil alcançasse a vitória do martírio, concedei-nos propício que, venerando o nascimento da vossa B. Virgem e Mártir Praxedes, caminhemos para Vós, imitando os seus exemplos.
-$Per Dominum
-
-[Commemoratio Secreta]
-! Santa Praxedes
-Recebei benigno, Senhor, as ofertas que Vos apresentamos nesta solenidade da B. Virgem Praxedes, vossa Mártir, com o patrocínio da qual esperamos ser livres.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! Santa Praxedes
-Que nos auxiliem os sagrados mystérios, que acabámos de receber, Senhor, e que, por intercessão da B. Virgem Praxedes, vossa Mártir, nos façam gozar continuamente a sua protecção.
-$Per Dominum
+@Commune/C4a:Postcommunio1:s/N\./Lourenço/

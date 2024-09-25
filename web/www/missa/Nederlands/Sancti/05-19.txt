@@ -1,56 +1,9 @@
 [Rank]
-S. Petri Celestini Papæ Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-Gloria
-
-[Introitus]
-@Commune/C4b
+S. Petri Celestini Papæ Confessoris;;Duplex;;3;;vide C4b
 
 [Oratio]
 God, Gij hebt de heilige Petrus Celestinus tot de hoge waardigheid van het pausschap verheven, maar hem ook geleerd die geringer te achten dan de nederigheid. Zorg in uw goedheid, dat wij op zijn voorbeeld alles van de wereld geringschatten en het geluk mogen smaken het loon te vinden, dat de nederigen is beloofd.
 $Per Dominum
 
-[Lectio]
-@Commune/C4b
-
-[Graduale]
-@Commune/C4b
-
-[GradualeP]
-@Commune/C4b
-
-[Evangelium]
-@Commune/C4c
-
-[Offertorium]
-@Commune/C4b
-
-[Secreta]
-Sancti tui, quǽsumus, Dómine, nos ubíque lætíficent: ut, dum eórum mérita recólimus, patrocínia sentiámus. 
-$Per Dominum
-
-[Secreta](rubrica 1960)
-@Commune/C4b:Secreta
-
-[Communio]
-@Commune/C4b
-
 [Postcommunio]
-Præsta, quǽsumus, omnípotens Deus: ut, de percéptis munéribus grátias exhibéntes, intercedénte beáto Petro Cœlestíno Confessóre tuo atque Pontífice, benefícia potióra sumámus.
-$Per Dominum
-
-[Postcommunio](rubrica 1960)
-@Commune/C4b:Postcommunio
-
-[Commemoratio Oratio]
-!Pro S. Pudentiana Virgine.
-@Commune/C6b:Oratio:s/N\./Pudentiana/
-
-[Commemoratio Secreta]
-!Pro S. Pudentiana Virgine.
-@Commune/C6b:Secreta
-
-[Commemoratio Postcommunio]
-!Pro S. Pudentiana Virgine.
-@Commune/C6b:Postcommunio
+@Commune/C4::s/N\./Petrus Celestinus/

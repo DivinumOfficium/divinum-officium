@@ -1,12 +1,8 @@
 [Rank]
 S. Augustini Episcopi Confessoris;;Duplex;;3;;vide C4
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Augustini Episcopi Confessoris;;Duplex optional;;2;;vide C4
-
-[Rule]
-vide C4;mtv
-9 lectiones
 
 [Oratio]
 O Dio, che colla predicazione e i miracoli del tuo beato Confessore e Pontefice Agostino ti degnasti d'illuminare colla luce della vera fede la nazione Inglese; concedi, che, per sua intercessione, i cuori degli erranti ritornino alla unità della tua verità, e noi siamo uniti nella tua volontà.
@@ -21,6 +17,10 @@ La predicazione della celeste dottrina confermata con moltissimi miracoli, unita
 [Lectio6]
 Regolate le cose della sua chiesa, Agostino riunì in sinodo i vescovi e i dottori degli antichi Brettoni, da molto tempo discordanti con la Chiesa Romana sulla celebrazione della Pasqua e su altri riti. Ma non avendo potuto indurli a cessare il dissidio né colla autorità della Sede apostolica né coi miracoli, con spirito profetico predisse la loro rovina. Infine, dopo aver sostenute moltissime fatiche per Cristo, celebre per miracoli, dopo aver preposto Mellito alla chiesa di Londra, Giusto a quella di Rochester, Lorenzo alla sua, se n'andò in cielo il 26 Maggio, regnando Etelberto, e fu sepolto nel monastero di san Pietro, che divenne poi la sepoltura degli arcivescovi di Cantorbery e di più re. Gli Inglesi gli resero un culto fervido; e il sommo Pontefice Leone XIII estese a tutta la Chiesa il suo Ufficio e la Messa.
 
+[Lectio94]
+Agostino, monaco del convento lateranense di Roma, fu mandato in Inghilterra con quaranta confratelli da Gregorio Magno nell'anno 597.  Re Etelberto invitò lui e i suoi compagni a Canterbury, capitale del suo regno, e presso quella città Agostino eresse un oratorio. Con la predicazione della divina dottrina, portò alla fede cristiana la maggior parte degli abitanti dell'isola e il re stesso con somma gioia della regina Berta, sua moglie, che era cristiana. Consacrato vescovo per ordine di Gregorio, costituì la diocesi di Canterbury e ottenne dallo stesso pontefice l'uso del pallio con la facoltà di stabilire in Inghilterra la gerarchia ecclesiastica. Sopportò per Cristo grandissime fatiche e salì al cielo il 26 maggio dopo aver preposto Mellito alla chiesa di Londra, Giusto a quella di Rochester e Lorenzo alla sua di Canterbury. Fu sepolto nel monastero di san Pietro che raccolse poi le spoglie mortali dei vescovi di Canterbury e di alcuni re.
+&teDeum
+
 [Lectio7]
 @Commune/C1a:Lectio7
 
@@ -29,8 +29,4 @@ Regolate le cose della sua chiesa, Agostino riunì in sinodo i vescovi e i dotto
 
 [Lectio9]
 @Commune/C1a:Lectio9
-&teDeum
-
-[Lectio94]
-Agostino, monaco del convento lateranense di Roma, fu mandato in Inghilterra con quaranta confratelli da Gregorio Magno nell'anno 597.  Re Etelberto invitò lui e i suoi compagni a Canterbury, capitale del suo regno, e presso quella città Agostino eresse un oratorio. Con la predicazione della divina dottrina, portò alla fede cristiana la maggior parte degli abitanti dell'isola e il re stesso con somma gioia della regina Berta, sua moglie, che era cristiana. Consacrato vescovo per ordine di Gregorio, costituì la diocesi di Canterbury e ottenne dallo stesso pontefice l'uso del pallio con la facoltà di stabilire in Inghilterra la gerarchia ecclesiastica. Sopportò per Cristo grandissime fatiche e salì al cielo il 26 maggio dopo aver preposto Mellito alla chiesa di Londra, Giusto a quella di Rochester e Lorenzo alla sua di Canterbury. Fu sepolto nel monastero di san Pietro che raccolse poi le spoglie mortali dei vescovi di Canterbury e di alcuni re.
 &teDeum

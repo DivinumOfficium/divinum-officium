@@ -7,22 +7,22 @@ ex C2;
 [Lectio1]
 @CommuneM/C2
 
-[Lectio2]
-@CommuneM/C2
-
-[Lectio3]
-@CommuneM/C2
-
-[Lectio4]
-@CommuneM/C2
-
 [Responsory1]
+@CommuneM/C2
+
+[Lectio2]
 @CommuneM/C2
 
 [Responsory2]
 @CommuneM/C2
 
+[Lectio3]
+@CommuneM/C2
+
 [Responsory3]
+@CommuneM/C2
+
+[Lectio4]
 @CommuneM/C2
 
 [Responsory4]
@@ -35,7 +35,7 @@ ex C2;
 @Sancti/12-29:Lectio5: s/Quid dum .*//s
 
 [Lectio7]
-@Sancti/12-29:Lectio5: s/.* Quid dum/Quid dum/s ~
+@Sancti/12-29:Lectio5: s/.* Quid dum/Quid dum/s s/$/~/
 @Sancti/12-29:Lectio6: s/Qui cléricis .*//s
 
 [Lectio8]
@@ -54,7 +54,7 @@ ex C2;
 @Sancti/12-29:Lectio9: s/Nam cum .*//s
 
 [Lectio12]
-@Sancti/12-29:Lectio9: s/.* Nam cum/Nam cum/s 
+@Sancti/12-29:Lectio9: s/.* Nam cum/Nam cum/s
 
 [LectioE]
 @TemporaM/Pasc2-0

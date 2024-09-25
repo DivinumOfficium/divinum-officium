@@ -1,53 +1,8 @@
 [Name]
 Commune Martyrum Tempore Paschali
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-
-[Hymnus Vespera]
-@Commune/C2:Hymnus Vespera
-
 [Invit]
 Örvendjenek a szentek az Úrban. * Alleluja.
-
-[Hymnus Matutinum]
-@Commune/C2:Hymnus Vespera
-
-[Lectio1]
-Olvasmány az Apostolok Cselekedeiből
-!Acts 20:17-24
-17 Milétuszból üzent Efezusba, és magához kérette az egyház presbitereit.
-18 Amikor megérkeztek, így szólt hozzájuk: "Tudjátok, hogy Ázsiába jövetelem első napjától kezdve minden időmet köztetek töltöttem,
-19 és szolgáltam az Úrnak, teljes alázatosságban, mindenfelől szorongattatva, könnyek és megpróbáltatások közepette is, amik a zsidók áskálódásai folytán jutottak osztályrészemül.
-20 Nem tagadtam meg tőletek semmit, ami javatokra szolgálhatott: prédikáltam nektek és tanítottalak benneteket, nyilvánosan és magánházaknál.
-21 Zsidóknak és görögöknek egyaránt hirdettem, hogy térjenek meg az Istenhez, és higgyenek Urunkban, Jézusban.
-22 Most Jeruzsálembe megyek. Nem tudom, mi lesz ott velem,
-23 csak azt adta tudtomra a Szentlélek városról városra, hogy bilincs és megpróbáltatás vár rám.
-24 De szóra sem tartom érdemesnek életemet, csakhogy végigfussam pályámat, és teljesítsem a feladatot, amelyet Urunk Jézus bízott rám, vagyis hogy tanúságot tegyek az Isten kegyelmét hirdető evangéliumról.
-
-[Lectio2]
-Az Apostolok Cselekedeteiből
-!Acts 20:25-31
-25 És tudom azt is, hogy közületek, akik között hirdettem az Isten országát, nem lát többé senki.
-26 Ezért most ünnepélyesen kijelentem: nem szárad rajtam senkinek a vére.
-27 Mert nem riadtam vissza semmitől, hogy az Isten akaratát teljes egészében fel ne tárjam előttetek.
-28 Vigyázzatok magatokra és az egész nyájra. Azért rendelt benneteket a Szentlélek az élére elöljáróul, hogy igazgassátok az Isten egyházát, amelyet a tulajdon vére árán szerzett meg magának.
-29 Tudom, hogy ha eltávozom, ragadozó farkasok törnek rátok, s nem kímélik a nyájat.
-30 Közületek is akadnak majd olyanok, akik rajta lesznek, hogy álnok szóval maguk mellé állítsák a tanítványokat.
-31 Ezért legyetek éberek, és véssétek jól emlékezetetekbe, hogy három éven át éjjel-nappal szünet nélkül, könnyek között figyelmeztettelek benneteket.
-
-[Lectio3]
-!Acts 20:32-38
-32 Most pedig az Istennek és kegyelme szavának ajánllak benneteket. Neki hatalma van rá, hogy fölépítse művét, és megadja nektek az összes szenttel közös örökséget.
-33 Senki ezüstjét, aranyát vagy ruháját nem kívántam.
-34 Jól tudjátok, hogy amire magamnak és társaimnak szükségünk volt, a kezem munkájával szereztem meg.
-35 Minden tekintetben példát adtam nektek, hogyan kell dolgozni, s a gyengéknek támaszukra lenni, Urunk Jézus szavaira emlékezve: Nagyobb boldogság adni, mint kapni."
-36 Szavai befejeztével letérdelt, és imádkozott velük.
-37 Nagy sírásban törtek ki mindnyájan, Pál nyakába borultak és összecsókolták.
-38 Leginkább az a mondása fájt nekik, hogy nem látják többé viszont. Aztán kikísérték a hajóhoz.
 
 [Lectio7]
 Evangélium szent János könyvéből
@@ -56,31 +11,4 @@ Evangélium szent János könyvéből
 _
 Homily by St Austin, Bishop (of Hippo.)
 !Tract 80, on John.
-Dearly beloved brethren, this passage of the Gospel, wherein the Lord saith that~
-He is the vine, and that His disciples are the branches, is to be taken in that~
-sense wherein it is also said, that He is the Head of the Church, (Eph. v. 23,)~
-and that we are the members of Him (30) Who is the Mediator between God and men,~
-the man Christ Jesus (1 Tim. ii. 5.) The vine and his branches are of one and~
-the same nature. Therefore, seeing that He was God, of which nature we are not,~
-He was made man, to the end that He might have in Himself this vine, that is,~
-the manhood, whereof we men can be made branches.
-
-[Capitulum Laudes]
-!Wis 5:1
-v. Akkor az igaz teljes biztonsággal áll szemben azokkal, akik sanyargatták, és lebecsülték a fáradozását.
-$Deo gratias
-
-[Hymnus Laudes]
-@Commune/C2:Hymnus Laudes
-
-[Ant 2]
-Jerusálem leányai * jöjjetek és lássátok a megkoronázott vértanúkat; az Úr koronázta meg őket az öröm ünnepén, alleluja, alleluja
-
-[Lectio Prima]
-!Rom 8:28
-v. Tudjuk azt is, hogy akik Istent szeretik, azoknak minden javukra válik, hiszen ő saját elhatározásából választotta ki őket.
-
-[Capitulum Nona]
-!Rom 8:28
-v. Tudjuk azt is, hogy akik Istent szeretik, azoknak minden javukra válik, hiszen ő saját elhatározásából választotta ki őket.
-$Deo gratias
+Dearly beloved brethren, this passage of the Gospel, wherein the Lord saith that He is the vine, and that His disciples are the branches, is to be taken in that sense wherein it is also said, that He is the Head of the Church, (Eph. v. 23,) and that we are the members of Him (30) Who is the Mediator between God and men, the man Christ Jesus (1 Tim. ii. 5.) The vine and his branches are of one and the same nature. Therefore, seeing that He was God, of which nature we are not, He was made man, to the end that He might have in Himself this vine, that is, the manhood, whereof we men can be made branches.

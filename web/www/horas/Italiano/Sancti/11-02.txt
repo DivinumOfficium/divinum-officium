@@ -1,25 +1,16 @@
 [Rank]
 In Commemoratione Omnium Fidelium Defunctorum;;Duplex;;3;;ex C9
 
-[RankNewcal]
-In Commemoratione Omnium Fidelium Defunctorum;;Duplex Solemnity;;6;;ex C9
-
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
 
-[Rule]
-ex C9
-Psalmi Dominica
-Antiphonas horas
-Special Conclusio
-Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium
-Limit Benedictiones Oratio
-Requiem gloria
-9 lectiones
-Responsory9
-no Te Deum
-(rubrica 1955 aut rubrica 1960) No prima Vespera
+[Rank] (rubrica innovata)
+In Commemoratione Omnium Fidelium Defunctorum;;Duplex Solemnity;;6;;ex C9
+
+[Initial]
+$Pater noster
+$Ave Maria
+(sed rubrica 1960 aut rubrica innovata omittuntur)
 
 [Ant Vespera]
 Piacerò al Signore * nella regione dei vivi.;;114
@@ -31,51 +22,6 @@ Non disprezzare, * o Signore, l'opera delle tue mani.;;137
 [Versum 1]
 V. Udii una voce dal cielo, che mi diceva:
 R. Beati i morti che muoiono nel Signore.
-
-[Versum 2]
-V. Udii una voce dal cielo, che mi diceva:
-R. Beati i morti che muoiono nel Signore.
-
-[Versum 3]
-V. Udii una voce dal cielo, che mi diceva:
-R. Beati i morti che muoiono nel Signore.
-
-[Initial]
-$Pater noster
-$Ave Maria
-(sed rubrica 1960 aut rubrica innovata omittuntur)
-
-[Special Completorium]
-$Confiteor
-$Misereatur
-$Indulgentiam
-
-&psalm(122)
-
-&psalm(141)
-
-&psalm(142)
-
-&psalm(233)
-
-&special('Oratio mortuorum1', 'Italiano')
-
-&special('Conclusio', 'Italiano')
-
-[Oratio mortuorum1]
-&pater_noster
-_ 
-V. Dalla porta dell'inferno.
-R. Libera, o Signore, le loro anime.
-V. Riposino in pace.
-R. Amen.
-V. Signore, ascolta la mia preghiera.
-R. E il mio grido giunga a Te.
-&Dominus_vobiscum2
-_
-$Oremus
-v. Signore, sii propizio alle anime di tutti i tuoi servi e serve per cui supplichiamo umilmente la tua maestà: affinché, per questi suffragi di pie preghiere, meritino di giungere all'eterno riposo. 
-$Per Dominum 
 
 [Oratio mortuorum]
 &pater_noster
@@ -90,9 +36,9 @@ R. E il mio grido giunga a Te.
 _
 $Oremus
  O Dio, Creatore e Redentore di tutti gli uomini fedeli, concedi alle anime dei tuoi servi e delle tue serve la remissione di tutti i peccati, affinché quella misericordia che sempre desiderarono, per le pie suppliche l'ottengano,
-$Qui vivis 
+$Qui vivis
 
-[Oratio mortuorum2]
+[Oratio mortuorum1]
 &pater_noster
 _ 
 V. Dalla porta dell'inferno.
@@ -104,13 +50,8 @@ R. E il mio grido giunga a Te.
 &Dominus_vobiscum2
 _
 $Oremus
-Ti innalziamo, Signore, umili preghiere per le anime di tutti i tuoi servi e serve: affinché perdoni loro, clemente, quanto contrassero nella vita terrena, e ponga fine, benigno, alle loro pene.
+v. Signore, sii propizio alle anime di tutti i tuoi servi e serve per cui supplichiamo umilmente la tua maestà: affinché, per questi suffragi di pie preghiere, meritino di giungere all'eterno riposo. 
 $Per Dominum
-
-[Conclusio]
-&Gloria
-V. Riposino in pace.
-R. Amen.
 
 [Lectio1]
 !Job 7:16-21
@@ -210,6 +151,30 @@ $Requiem
 R. Liberami, o Signore, dalla morte eterna in quel giorno tremendo, 
 * Quando si sconvolgeranno e cieli e terra, * Quando verrai a giudicare il mondo col fuoco.
 
+[Conclusio]
+&Gloria
+V. Riposino in pace.
+R. Amen.
+
+[Versum 2]
+V. Udii una voce dal cielo, che mi diceva:
+R. Beati i morti che muoiono nel Signore.
+
+[Oratio mortuorum2]
+&pater_noster
+_ 
+V. Dalla porta dell'inferno.
+R. Libera, o Signore, le loro anime.
+V. Riposino in pace.
+R. Amen.
+V. Signore, ascolta la mia preghiera.
+R. E il mio grido giunga a Te.
+&Dominus_vobiscum2
+_
+$Oremus
+Ti innalziamo, Signore, umili preghiere per le anime di tutti i tuoi servi e serve: affinché perdoni loro, clemente, quanto contrassero nella vita terrena, e ponga fine, benigno, alle loro pene.
+$Per Dominum
+
 [Special Prima]
 &special('Initial', 'Italiano')
 $Credo
@@ -271,5 +236,26 @@ $Amen
 &psalm(101,24,29)
 
 &special('Oratio mortuorum', 'Italiano')
+
+&special('Conclusio', 'Italiano')
+
+[Versum 3]
+V. Udii una voce dal cielo, che mi diceva:
+R. Beati i morti che muoiono nel Signore.
+
+[Special Completorium]
+$Confiteor
+$Misereatur
+$Indulgentiam
+
+&psalm(122)
+
+&psalm(141)
+
+&psalm(142)
+
+&psalm(233)
+
+&special('Oratio mortuorum1', 'Italiano')
 
 &special('Conclusio', 'Italiano')

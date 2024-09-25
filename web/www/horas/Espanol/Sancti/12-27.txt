@@ -1,18 +1,12 @@
 [Rank]
 S. Joannis Apostoli et Evangelistæ;;Duplex II Class cum octava simplici;;5.3;;ex C1
 
-[Rule]
-ex C1;
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-
-[Ant 1]
-Éste es Juan, * que en la cena se recostó sobre el pecho del Señor. Dichoso el Apóstol, a quien fueron revelados los misterios celestiales.
-
 [Versum 1]
 V. Éste es el discípulo que da testimonio.
 R. Nosotros sabemos que su testimonio es verdadero.
+
+[Ant 1]
+Éste es Juan, * que en la cena se recostó sobre el pecho del Señor. Dichoso el Apóstol, a quien fueron revelados los misterios celestiales.
 
 [Oratio]
 Ilumina benignamente a tu Iglesia, Señor; para que, ilustrada con la doctrina de San Juan, tu apóstol y evangelista, alcance los premios eternos.
@@ -52,8 +46,8 @@ R. Y sabemos que su testimonio es verdadero.
 1 Hijos míos, os escribo esto para que no pequéis. Pero si alguno peca, tenemos un abogado ante el Padre: a Jesucristo, el Justo. 
 2 Él es víctima de propiciación por nuestros pecados, no sólo por los nuestros, sino también por los del mundo entero. 
 3 En esto sabemos que le conocemos: en que guardamos sus mandamientos. 
-4 Quien dice: "Yo le conozco" y no guarda sus mandamientos es un mentiroso y la verdad no está en él. 
-5 Pero quien guarda su palabra, ciertamente en él el amor de Dios ha llegado a su plenitud. En esto conocemos que estamos en Él. 
+4 Quien dice: “Yo le conozco” y no guarda sus mandamientos es un mentiroso y la verdad no está en él. 
+5 Pero quien guarda su palabra, ciertamente en él el amor de Dios ha llegado a su plenitud. En esto conocemos que estamos en Él.
 
 [Responsory3]
 R. Este es el felicísimo Evangelista y Apóstol Juan, 
@@ -142,8 +136,15 @@ $Deo gratias
 V. Éste es el discípulo que da testimonio.
 R. Nosotros sabemos que su testimonio es verdadero.
 
-[Ant 2]
-@:Ant 1
+[Octava 2]
+!Conmemoración de la Octava de S. Juan
+Ant. Éste es Juan, * que en la cena se recostó sobre el pecho del Señor. Dichoso el Apóstol, a quien fueron revelados los misterios celestiales.
+_
+V. Éste es el discípulo * que da testimonio: 
+R. Y nosotros sabemos que su testimonio es verdadero.
+$Oremus
+v. Ilumina benignamente a tu Iglesia, Señor; para que, ilustrada con la doctrina de San Juan, tu apóstol y evangelista, alcance los premios eternos.
+$Per Dominum
 
 [Lectio Prima]
 !Sir 15:5
@@ -158,24 +159,8 @@ $Deo gratias
 @:Lectio Prima
 $Deo gratias
 
-[Ant Vespera 3]
-@Sancti/12-25:Ant Vespera 3
-
-[Versum 3]
-@:Versum 1
-
 [Ant 3]
 Se empezó * a correr entre los hermanos el rumor de que ese discípulo no moriría. Pero no le dijo Jesús que no moriría, sino: «Quiero que se quede hasta que yo venga».
-
-[Octava 2]
-!Conmemoración de la Octava de S. Juan
-Ant. Éste es Juan, * que en la cena se recostó sobre el pecho del Señor. Dichoso el Apóstol, a quien fueron revelados los misterios celestiales.
-_
-V. Éste es el discípulo * que da testimonio: 
-R. Y nosotros sabemos que su testimonio es verdadero.
-$Oremus
-v. Ilumina benignamente a tu Iglesia, Señor; para que, ilustrada con la doctrina de San Juan, tu apóstol y evangelista, alcance los premios eternos.
-$Per Dominum
 
 [Octava 3]
 !Conmemoración de la Octava de S. Juan

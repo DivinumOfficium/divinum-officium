@@ -1,17 +1,14 @@
 [Rank]
 Septima die infra Octavam Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-06
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Die Duodecima Januarii;;Feria;;1.8;;vide Sancti/01-06
 
-[Rule]
-ex Sancti/01-06
-Lectio1 tempora 
-Doxology=Epi
-9 lectiones
-Feria Te Deum
-No secunda vespera (sed non rubrica 1960)
-Infra octavam Epiphaniæ Domini
+[Hymnus Vespera] (rubrica 1960)
+@Sancti/01-06:Hymnus Vespera
+
+[Lectio1] (rubrica 1960)
+@Tempora/Epi1-0a:Lectio1
 
 [Lectio1]
 De la Epístola a los Romanos
@@ -22,20 +19,14 @@ De la Epístola a los Romanos
 4 (y que por salvar mi vida expusieron sus cabezas. Por lo que no sólo yo les estoy agradecido, sino también las iglesias de los Gentiles). 
 5 Y saludad con ellas a la Iglesia que está en su casa.
 
-[Lectio1](rubrica 1960)
-@Tempora/Epi1-0a:Lectio1
-
-[Responsory1](rubrica 1960)
+[Responsory1] (rubrica 1960)
 @Sancti/01-06:Responsory1
 
-[Responsory1](rubrica tridentina aut rubrica divino)
+[Responsory1] (rubrica tridentina aut rubrica divino)
 @Sancti/01-06:Responsory1InfraOctavam
 
-[Responsory2]
-@Sancti/01-06:Responsory2
-
-[Responsory3]
-@Sancti/01-06:Responsory3
+[Lectio2] (rubrica 1960)
+@Tempora/Epi1-0a:Lectio2
 
 [Lectio2]
 !Rom 16:17-19
@@ -43,18 +34,21 @@ De la Epístola a los Romanos
 18 porque ésos no sirven a nuestro Señor Cristo, sino a su vientre, y con discursos suaves y engañosos seducen los corazones de los incautos. 
 19 Vuestra conversión ha llegado a noticia de todos; me alegro, pues, en vosotros, y quiero que seáis prudentes para el bien, sencillos para el mal.
 
-[Lectio2](rubrica 1960)
-@Tempora/Epi1-0a:Lectio2
+[Responsory2]
+@Sancti/01-06:Responsory2
 
-[Lectio3](rubrica 1960)
+[Lectio3] (rubrica 1960)
 @Tempora/Epi1-0a:Lectio3
 
-[Lectio3](rubrica tridentina aut rubrica divino)
+[Lectio3] (rubrica tridentina aut rubrica divino)
 !Rom 16:21-24
 21 Os saluda Timoteo, mi coadjutor, y Lucio y Jasón, y Sosipatro, mis parientes. 
 22 Os saludo en el Señor yo, Tercio, que he sido el amanuense en esta carta. 
 23 Os saluda Cayo, mi huésped, y la Iglesia toda. Os saluda Erasto, el tesorero de la ciudad, y nuestro hermano Quarto. 
 24 La gracia de nuestro Señor Jesucristo sea con todos vosotros. Amén.
+
+[Responsory3]
+@Sancti/01-06:Responsory3
 
 [Lectio4]
 Sermón de San León, Papa. 
@@ -86,12 +80,3 @@ dad casi como fugitivos? Mas ellos nada de esto dijeron ni pensaron. A la verdad
 
 [Ant 2]
 Verdaderamente es grande * este misterio de piedad que, manifestado en la carne y justificado en el espíritu, apareció a los ángeles, fue predicado a las naciones, creído por el mundo y glorificado en el cielo. Aleluya.
-
-[Hymnus Vespera](rubrica 1960)
-@Sancti/01-06:Hymnus Vespera
-
-[Versum 3](rubrica 1960)
-@Sancti/01-06:Versum 1
-
-[Ant 3](rubrica 1960)
-@Sancti/01-06:Ant 3

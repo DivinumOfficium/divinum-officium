@@ -4,10 +4,6 @@ S. Monique Veuve;;Duplex;;3;;vide C6
 [Rank] (rubrica 1570)
 S. Monique Veuve;;Simplex;;1.1;;vide C6
 
-[Rule]
-vide C6;
-9 lectiones
-
 [Oratio]
 O Dieu, consolateur des affligés et salut de ceux qui espèrent en Vous, Vous avez miséricordieusement exaucé les pieuses larmes versées par la bienheureuse Monique pour la conversion de son fils Augustin ; donnez-nous, par l'intercession de tous deux, de pleurer nos péchés et de trouver l'indulgence de Votre grâce.
 $Per Dominum
@@ -45,6 +41,10 @@ R. Elles te sont présentées dans la joie et l’exultation.
 &Gloria
 R. Elles te sont présentées dans la joie et l’exultation.
 
+[Lectio94]
+Monique,la pieuse mère de saint Augustin, et le modèle des épouses et des veuves, avait suivi à Milan son fils encore manichéen. A force de prières, de larmes, de jeûnes, avec P Évêque Ambroise, elle le convertit au Christ. Revenant en Afrique avec lui, elle tomba malade, à Ostie, sur le Tibre, et y mourut le neuvième jour, dans une paix profonde. Affligé, après avoir raconté cette mort, son fils ajoute : « Nous pensions qu’il ne convenait pas de lui rendre les derniers devoirs avec des larmes et des gémissements, car elle n’était morte ni pour son malheur, ni totalement : la pureté de sa vie était là pour l’attester, et nous le croyions d’une foi toute sincère, et pour de sûres raisons... Et puis, peu à peu, je revins à mes premières pensées sur votre servante, à son entretien continuel en vous, à sa tendresse exquise pour nous, dont j’étais brusquement privé, et je goûtai la douceur de [vous] offrir ces larmes sur elle et pour elle... Si quelqu’un juge que j’ai péché en pleurant ma mère, cette mère morte pour un temps à mes yeux, elle qui avait pleuré tant d’années pour me faire vivre à vos yeux, qu’il se garde de railler, mais que, s’il est d’une grande charité, il pleure lui-même pour mes péchés devant vous, qui êtes le Père de tous les frères de votre Christ. » Le corps, d’abord inhumé en l’église Sainte-Aure, fut ensuite, sous le pontificat de Martin V, transféré avec honneur à Rome, dans l’église Saint-Augustin.
+&teDeum
+
 [Lectio7]
 Lecture du saint Évangile selon saint Luc
 !Luc 7:11-16
@@ -73,8 +73,4 @@ R. Que j’ai vu, que j’ai aimé, en qui j’ai cru, à qui je me suis attach�
 
 [Lectio9]
 CELUI qui voit des caractères dans un manuscrit parfaitement écrit, et qui ne sait point lire, loue, il est vrai, l’habileté du copiste, en admirant la beauté des caractères, mais il en ignore la destination et le sens. C’est par les yeux qu’il loue, mais son esprit ne saisit rien. En voici un autre au contraire qui, tout à la fois, loue la forme artistique de l’écriture et en saisit la pensée. C’est celui qui peut, non seulement voir ce qui apparaît à tous, mais encore lire, ce que ne peut pas faire celui qui n’a pas appris à lire. Ainsi en est-il qui ont vu les miracles du Christ, sans comprendre l’intention de ces miracles et ce qu’ils devaient faire entendre aux intelligents, ils n’ont pu qu’admirer les faits. D ’autres au contraire, ayant admiré les faits, en ont encore saisi le sens. Voilà ce que nous devons être à l’école du Christ.
-&teDeum
-
-[Lectio94]
-Monique,la pieuse mère de saint Augustin, et le modèle des épouses et des veuves, avait suivi à Milan son fils encore manichéen. A force de prières, de larmes, de jeûnes, avec P Évêque Ambroise, elle le convertit au Christ. Revenant en Afrique avec lui, elle tomba malade, à Ostie, sur le Tibre, et y mourut le neuvième jour, dans une paix profonde. Affligé, après avoir raconté cette mort, son fils ajoute : « Nous pensions qu’il ne convenait pas de lui rendre les derniers devoirs avec des larmes et des gémissements, car elle n’était morte ni pour son malheur, ni totalement : la pureté de sa vie était là pour l’attester, et nous le croyions d’une foi toute sincère, et pour de sûres raisons... Et puis, peu à peu, je revins à mes premières pensées sur votre servante, à son entretien continuel en vous, à sa tendresse exquise pour nous, dont j’étais brusquement privé, et je goûtai la douceur de [vous] offrir ces larmes sur elle et pour elle... Si quelqu’un juge que j’ai péché en pleurant ma mère, cette mère morte pour un temps à mes yeux, elle qui avait pleuré tant d’années pour me faire vivre à vos yeux, qu’il se garde de railler, mais que, s’il est d’une grande charité, il pleure lui-même pour mes péchés devant vous, qui êtes le Père de tous les frères de votre Christ. » Le corps, d’abord inhumé en l’église Sainte-Aure, fut ensuite, sous le pontificat de Martin V, transféré avec honneur à Rome, dans l’église Saint-Augustin.
 &teDeum

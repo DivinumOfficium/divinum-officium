@@ -1,16 +1,6 @@
 [Rank]
 In Epiphania Domini;;Duplex I classis;;7
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Special Matutinum Incipit
-Doxology=Epi
-9 lectiones
-Psalm5 Vespera=116
-Psalm5 Vespera3=113
-Festum Domini
-
 [Ant Vespera]
 Engendrado antes que la aurora * de los siglos, el Señor, nuestro Salvador, se ha manifestado hoy al mundo.
 Llega tu luz, * Jerusalén, y la gloria del Señor amanece sobre Ti, y caminarán los pueblos a tu luz. Aleluya.
@@ -18,8 +8,8 @@ Abriendo sus cofres * los Magos ofrecieron al Señor oro, incienso y mirra. Alel
 Mares y ríos, * bendecid al Señor. Fuentes, cantad un himno al Señor. Aleluya.
 Esta estrella * resplandece como una hoguera, y anuncia al Rey de reyes. Los Magos la vieron y ofrecieron regalos al gran Rey.
 
-[Hymnus Vespera](rubrica 1570)
-v. De un Rey Dios, cruel Herodes,
+[Hymnus Vespera]
+{:H-CrudelisHerodes:}v. De un Rey Dios, cruel Herodes,
 ¿por qué la venida temes?
 No quita reinos mortales
 quien da los reinos celestes.
@@ -45,8 +35,8 @@ con el Padre y Santo Espíritu,
 por siglos y eternamente.
 Amén.
 
-[Hymnus Vespera]
-{:H-CrudelisHerodes:}v. De un Rey Dios, cruel Herodes,
+[Hymnus Vespera] (rubrica 1570)
+v. De un Rey Dios, cruel Herodes,
 ¿por qué la venida temes?
 No quita reinos mortales
 quien da los reinos celestes.
@@ -83,11 +73,11 @@ Los Magos, al ver * la estrella, se dijeron: Éste es el signo del gran Rey. Vam
 ¡Oh Dios que en este día has revelado tu Hijo a todas las naciones por medio de la estrella!; a quienes ya te conocemos en la fe condúcenos hasta el resplandor de tu luz.
 $Per eumdem
 
-[Hymnus Matutinum]
-@Sancti/01-06:Hymnus Vespera
-
 [Invit]
 Cristo se nos ha aparecido. * Venid a adoradle.
+
+[Hymnus Matutinum]
+@Sancti/01-06:Hymnus Vespera
 
 [Ant Matutinum]
 Hijos de Dios, * aclamad al Señor, postraos ante el Señor en el atrio sagrado.;;28
@@ -114,7 +104,7 @@ Del Profeta Isaías
 1 Sedientos, venid todos a las aguas: y vosotros que no tenéis dinero, apresuraos, comprad y comed. Venid, comprad sin dinero y sin ninguna otra permuta vino y leche. 
 2 ¿Por qué expendéis vuestro dinero en cosas que no son alimento, y empleáis vuestras fatigas en lo que no puede saciaros? Escuchadme con atención, y alimentaos del buen manjar, y vuestra alma se recreará en lo más sustancioso. 
 3 Prestad oídos, y venid a mí. Escuchad, y vuestra alma hallará vida, y asentaré con vosotros alianza sempiterna, en cumplimiento de las misericordias prometidas a David. 
-4 He aquí que Yo voy a presentarle por testigo a los pueblos, y por caudillo y por maestro a las naciones. 
+4 He aquí que Yo voy a presentarle por testigo a los pueblos, y por caudillo y por maestro a las naciones.
 
 [Responsory1]
 R. Hoy en el Jordán bautizado el Señor, se abrieron los cielos, y el Espíritu Santo se puso sobre Él como paloma, y se oyó la voz del Padre: 
@@ -135,7 +125,7 @@ R. En el oro se muestra el poder del Rey; en el incienso nos proponen al gran Sa
 3 Y a tu luz caminarán las gentes, y los reyes al resplandor de tu nacimiento. 
 4 Tiende tu vista a  tu alrededor, y mira: todos esos se han congregado para venir a ti; vendrán de lejos tus hijos, y tus hijas acudirán a ti de todas partes. 
 5 Entonces te verán en abundancia. Se asombrará tu corazón, y se ensanchará cuando vendrá a unirse contigo la muchedumbre de naciones de la otra parte del mar, cuando a ti acudirán poderosos pueblos. 
-6 Te verás inundada de una muchedumbre de camellos, de dromedarios de Madián y de Efa. Todos los Sabeos vendrán a traerte oro e incienso, y publicarán las alabanzas del Señor. 
+6 Te verás inundada de una muchedumbre de camellos, de dromedarios de Madián y de Efa. Todos los Sabeos vendrán a traerte oro e incienso, y publicarán las alabanzas del Señor.
 
 [Responsory2]
 R. En forma de paloma se vio al Espíritu Santo, y se oyó la voz del Padre: 
@@ -226,8 +216,8 @@ Todos los elementos testificaron el advenimiento de su Autor. Los cielos le reco
 v. Levántate, brilla, Jerusalén, que llega tu luz; la gloria del Señor amanece sobre ti.
 $Deo gratias
 
-[Hymnus Laudes](rúbrica 1570)
-v. ¡Oh sola entre las ciudades
+[Hymnus Laudes]
+{:H-Osolamagnarum:}v. ¡Oh sola entre las ciudades
 de Judá, Belen excelsa,
 porque en ti nace el Caudillo
 que de la muerte liberta!
@@ -253,8 +243,8 @@ con el Padre y Santo Espíritu,
 por edades sempiternas.
 Amén.
 
-[Hymnus Laudes]
-{:H-Osolamagnarum:}v. ¡Oh sola entre las ciudades
+[Hymnus Laudes] (rúbrica 1570)
+v. ¡Oh sola entre las ciudades
 de Judá, Belen excelsa,
 porque en ti nace el Caudillo
 que de la muerte liberta!

@@ -1,19 +1,15 @@
 [Rank]
 Impression des Sts Stigmates de St François, Confesseur;;Duplex;;3;;vide C5
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Impression des Sts Stigmates de St François, Confesseur;;Simplex;;1.1;;vide C5
 
-[Rule]
-vide C5 ;
-9 lectiones
+[Hymnus Vespera]
+@Commune/C4:Hymnus Vespera :s/Scandere sedes/Vúlnera Christi/
 
 [Versum 1]
 V. Vous avez marqué, Seigneur, Votre serviteur François.
 R. Des signes de notre Rédemption.
-
-[Hymnus Vespera]
-@Commune/C4:Hymnus Vespera :s/Scandere sedes/Vúlnera Christi/
 
 [Oratio]
 Seigneur Jésus-Christ, qui, lorsque le monde se refroidissait, avez voulu, pour enflammer nos cœurs du feu de Votre amour, renouveler les sacrés stigmates de Votre passion dans la chair du bienheureux François, accordez-nous, s’il Vous plaît, que, par ses mérites et ses prières, nous portions continuellement la croix et que nous fassions de dignes fruits de pénitence.
@@ -63,6 +59,10 @@ François savait bien que l’état d’infirmité et de souffrance est incompat
 [Lectio6]
 Devenu donc un nouvel homme, grâce à la distinction glorieuse de ce prodige nouveau et surprenant (puisque, par un privilège singulier dont personne encore n’avait joui avant ce jour, il se trouva marqué, je dirai mieux, orné des sacrés stigmates). François descendit de la montagne, portant avec lui l’image du Crucifié non point tracée d’une main d’artisan sur des tables de pierre ou de bois, mais gravée sur sa propre chair par le doigt du Dieu vivant. Comme il savait très bien « qu’il est bon de tenir caché le secret d’un roi, » cet homme séraphique, conscient de l’œuvre mystérieuse, opérée en lui par le Roi [divin], s’efforçait de dissimuler ces marques sacrées. Mais parce que c’est à Dieu de révéler pour sa gloire les grandes choses qu’il fait, le Seigneur lui-même qui avait secrètement imprimé ces signes, les fit ouvertement découvrir par des miracles, en sorte que, la vertu cachée et merveilleuse des stigmates, devint manifeste par l’éclat des prodiges. Ce fait digne d’admiration, si bien constaté, et exalté par les bulles pontificales avec de grandes louanges et la publication de faveurs spéciales, le Pape Benoît XI voulut qu’on en célébrât l’anniversaire par une solennité que le souverain Pontife Paul V étendit à l’Église universelle, dans le but d’enflammer les cœurs des fidèles, d’amour pour le Christ crucifié.
 
+[Lectio94]
+François apparut, revêtu d’un privilège singulier, inconnu aux siècles antérieurs, quand il descendit de la montagne, marqué des sacrés Stigmates et portant sur lui l’image du Crucifié, non point tracée sur des tables de pierre ou de bois, par la main d’un artisan, mais gravée sur ses membres de chair, par le doigt du Dieu vivant. Comme cet homme séraphique savait qu’il est très bon de cacher le secret du roi, conscient d’avoir un secret royal, il dissimulait ce signe sacré autant qu’il le pouvait. Mais, parce que c’est le propre de Dieu de révéler, pour sa gloire, les grandes choses qu’il fait, le Seigneur lui- même, qui avait imprimé ces signes secrètement, les découvrit par certains miracles, de sorte que la vertu cachée et merveilleuse de ces Stigmates se manifesta par l’éclat des prodiges. — Ce fait extraordinaire, ayant été dûment constaté et mis en lumière dans les Bulles pontificales, avec de grandes louanges et faveurs, le Pape Benoît XI voulut en faire célébrer solennellement l’anniversaire, et, dans la suite, le Souverain Pontife Paul V étendit cette fête à l’Église universelle, pour que les cœurs des fidèles fussent enflammés de l’amour du Christ Crucifié.
+&teDeum
+
 [Lectio7]
 @Commune/C2:Lectio7 in 4 loco
 
@@ -79,10 +79,6 @@ R. Par qui le monde est crucifié pour moi et moi crucifié pour le monde.
 
 [Lectio9]
 @Commune/C2:Lectio9 in 4 loco
-
-[Lectio94]
-François apparut, revêtu d’un privilège singulier, inconnu aux siècles antérieurs, quand il descendit de la montagne, marqué des sacrés Stigmates et portant sur lui l’image du Crucifié, non point tracée sur des tables de pierre ou de bois, par la main d’un artisan, mais gravée sur ses membres de chair, par le doigt du Dieu vivant. Comme cet homme séraphique savait qu’il est très bon de cacher le secret du roi, conscient d’avoir un secret royal, il dissimulait ce signe sacré autant qu’il le pouvait. Mais, parce que c’est le propre de Dieu de révéler, pour sa gloire, les grandes choses qu’il fait, le Seigneur lui- même, qui avait imprimé ces signes secrètement, les découvrit par certains miracles, de sorte que la vertu cachée et merveilleuse de ces Stigmates se manifesta par l’éclat des prodiges. — Ce fait extraordinaire, ayant été dûment constaté et mis en lumière dans les Bulles pontificales, avec de grandes louanges et faveurs, le Pape Benoît XI voulut en faire célébrer solennellement l’anniversaire, et, dans la suite, le Souverain Pontife Paul V étendit cette fête à l’Église universelle, pour que les cœurs des fidèles fussent enflammés de l’amour du Christ Crucifié.
-&teDeum
 
 [Hymnus Laudes]
 V. Jésus, couronne la plus haute.

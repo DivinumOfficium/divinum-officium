@@ -1,21 +1,9 @@
-[Name]
-Commune Virgine
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
 [Ant Vespera]
 Esta es una virgen sabia * y una de las sensatas.;;109
 Esta es una virgen sabia, * a quien el Señor encontró vigilante.;;112
 Ésta no conoció * el lecho pecaminoso; será recompensada cuando Dios visite las almas santas.;;121
 Ven, elegida mía, * y pondré mi trono en tu corazón.;;126
 Ésta es la más hermosa * de las hijas de Jerusalén.;;147
-
-[Capitulum Laudes]
-!2 Cor 10:17-18
-v. Hermanos: El que se gloría, que se gloríe en el Señor. Porque no está acreditado el que se recomienda a sí mismo, sino aquel a quien el Señor recomienda.
-$Deo gratias
 
 [Hymnus Vespera]
 {:H-Jesucoronavirginum:}v. Jesús, corona de vírgenes,
@@ -45,14 +33,22 @@ por los siglos sempiternos.
 Amén.
 
 [Versum 1]
-V. En tus labios se derrama la gracia.
-R. El Señor te bendice eternamente.
+V. Con tu gala y con tu hermosura. 
+R. Avanza victoriosa y reina. 
 
 [Ant 1]
 Ven Esposa de Cristo, * recibe la corona que el Señor te ha preparado desde la eternidad. 
 
+[Nocturn 1 Versum]
+V. Con esa tu gallardía y hermosura.
+R. Camina, avanza prósperamente y reina.
+
 [Invit]
 Al Señor, Rey de las vírgenes, * Venid, adorémosle.
+
+[Nocturn 2 Versum] (translatio altera)
+V. Dios la protegerá con su faz.
+R. En medio de ella está Dios; no será conmovida.
 
 [Hymnus Matutinum]
 {:H-Virginisproles:}v. Hijo de Vírgen, creador del seno
@@ -81,39 +77,28 @@ Dios uno y trino: honor, imperio y gloria,
 Siglos eternos.
 Amén.
 
-[Hymnus Matutinum pro Virgo tantum et non Martyr]
-{:H-Virginisproles:}v. Oh Hijo de la Virgen y Creador de tu Madre. 
-Tú a quien Élla concibió y dio a luz permaneciendo virgen; 
-nosotros celebramos la fiesta de una Virgen bienaventurada; 
-recibe nuestros votos.
-_
-Dígnate, oh Dios de bondad, perdonarnos, 
-por los méritos de esta Santa, las penas 
-merecidas por nuestros pecados, para que te cantemos 
-santos himnos con corazón puro.
-_
-Alabanza sea dada a ti, oh Padre, 
-y a tu Hijo Unigénito 
-juntamente con el Espíritu Consolador, 
-por los siglos de los siglos. 
-Amén.
-
 [Ant Matutinum]
 ¡Oh cuán bella, * cuán esclarecida es una generación casta!;;8
 Ante el lugar de reposo de esta Virgen, * entonad dulces cánticos de victoria.;;18
 Vuélvete, * vuélvete oh Sulamite; vuélvete para que podamos contemplarte.;;23
-V. Con esa tu gallardía y hermosura.
-R. Camina, avanza prósperamente y reina.
 Con esa tu gallardía * y hermosura, camina, avanza prósperamente, y reina.;;44
 Dios la protegerá * con su faz; en medio de ella está Dios; no será conmovida.;;45
 Las muchas aguas * no podrán apagar el incendio de la caridad.;;47
-V. Dios la protegerá con su faz.
-R. En medio de ella está Dios; no será conmovida.
-Negra soy, * pero soy bella, hijas de Jerusalén; por esto me ha amado el Rey y me ha introducido en su morada.;;95
+Morena soy, * pero hermosa, hijas de Jerusalén. Por esto el rey me ha amado y me ha introducido en su morada.;;95
 Atráeme en pos de ti * y correremos al olor de tus aromas; tu nombre es óleo derramado.;;96
 Ven, Esposa de Cristo, * recibe la corona que te ha preparado el Señor para siempre.;;97
+
+[Nocturn 3 Versum] (translatio altera)
 V. El Señor la eligió sobre todas las demás. 
 R. Y la hizo habitar en su tabernáculo.
+
+[Nocturn 2 Versum]
+V. Dios la socorre con su mirada.	
+R. Teniendo a Dios en medio no vacila.
+
+[Nocturn 3 Versum]
+V. Dios la eligió y la predestinó.	
+R. La hizo morar en su templo santo.	
 
 [Lectio1]
 De la primera Epístola del Apóstol S. Pablo a los Corintios
@@ -126,24 +111,18 @@ De la primera Epístola del Apóstol S. Pablo a los Corintios
 30 Y los que lloran, como si no llorasen, y los que se huelgan, como si no se holgasen, y los que hacen compras, como si nada poseyesen. 
 31 Y los que se gozan del mundo, como si no gozasen de él, porque la escena o apariencia de este mundo pasa en un momento.
 
-[Responsory1 pro Martyre]
+[Responsory1]
 R. Ven, Esposa de Cristo, recibe la corona que el Señor te ha preparado para siempre; ya que por su amor derramaste la sangre, 
 * Y con los Ángeles entraste en el paraíso, 
 V. Ven, escogida mía, y pondré en ti mi trono; porque el Rey ha anhelado tu hermosura. 
 R. Y con los Ángeles entraste en el paraíso.
-
-[Responsory1]
-R. Ven, elegida mía, y pondré en ti mi trono: 
-* Porque el Rey ha anhelado tu hermosura. 
-V. Con esa tu gallardía y hermosura, camina, avanza prósperamente y reina. 
-R. Porque el Rey ha anhelado tu hermosura.
 
 [Lectio2]
 !1 Cor 7:32-35
 32 Ahora bien; yo deseo que viváis sin cuidados ni inquietudes. El que no tiene mujer, anda únicamente solícito de las cosas del Señor, y en lo que ha de hacer para agradar a Dios. 
 33 Al contrario, el que tiene mujer anda afanado en las cosas del mundo, y en cómo ha de agradar a la mujer, y así se halla dividido. 
 34 De la misma manera la mujer no casada, o una virgen, piensa en las cosas de Dios, para ser santa en cuerpo y alma. Mas la casada piensa en las del mundo, y en cómo ha de agradar al marido. 
-35 Por lo demás, yo digo esto para provecho vuestro, no para echaros un lazo, sino solamente para exhortaros a lo más loable, y lo que habilita para servir a Dios sin ningún obstáculo. 
+35 Por lo demás, yo digo esto para provecho vuestro, no para echaros un lazo, sino solamente para exhortaros a lo más loable, y lo que habilita para servir a Dios sin ningún obstáculo.
 
 [Responsory2]
 R. Derramada está la gracia en tus labios, 
@@ -157,7 +136,7 @@ R. Por esto Dios te ha bendecido para siempre.
 37 Pero el que firme en su corazón, no necesitado, sino libre y de voluntad, determina guardar virgen a su hija, hace mejor. 
 38 Quien, pues, casa su hija doncella, hace bien, y quien no la casa hace mejor. 
 39 La mujer está ligada por todo el tiempo de vida de su marido, mas una vez que se muere el marido, queda libre para casarse con quien quiera, pero en el Señor. 
-40 Más feliz será si permanece así, conforme a mi consejo, pues también creo tener yo el espíritu de Dios. 
+40 Más feliz será si permanece así, conforme a mi consejo, pues también creo tener yo el espíritu de Dios.
 
 [Responsory3]
 R. Con esa tu gallardía y hermosura, 
@@ -228,19 +207,17 @@ R. He ahí que viene el esposo; salid a recibirle.
 El alma humana subsiste en un cuerpo dotado de cinco sentidos. El número cinco, multiplicado por dos, da el número diez. Y como la multitud de los fieles comprende los de ambos sexos, la santa Iglesia es comparada a diez vírgenes. Hallándose en ella mezclados los malos con los buenos y los que serán separados con los elegidos, con razón se la compara a unas vírgenes, de las cuales unas son fatuas y otras prudentes. Hay, en efecto, muchas personas castas que ejercen vigilancia sobre sus pasiones en cuanto a las cosas exteriores, y se mueven por la esperanza de bienes interiores; mortifican su carne, y dirigen sus más ardientes aspiraciones hacia la patria de lo alto; buscan las eternas recompensas y no quieren recibir alabanzas humanas por sus trabajos; no cifran su gloria en las palabras de los hombres, sino que la esconden en el fondo de su conciencia. Hay también algunos que mortifican su cuerpo con la abstinencia, pero por esta misma abstinencia esperan aplausos humanos.
 &teDeum
 
-[Ant Laudes]
-Esta es una virgen sabia * y una de las sensatas.;;
-Esta es una virgen sabia, * a quien el Señor encontró vigilante.;;
-Ésta no conoció * el lecho pecaminoso; será recompensada cuando Dios visite las almas santas.;;
-Ven, elegida mía, * y pondré mi trono en tu corazón.;;
-Ésta es la más hermosa * de las hijas de Jerusalén.;;
+[Capitulum Laudes]
+!2 Cor 10:17-18
+v. Hermanos: El que se gloría, que se gloríe en el Señor. Porque no está acreditado el que se recomienda a sí mismo, sino aquel a quien el Señor recomienda.
+$Deo gratias
 
 [Versum 2]
 V. En tus labios se derrama la gracia.
 R. El Señor te bendice eternamente. 
 
 [Ant 2]
-El reino de los cielos * se parece a un comerciante en perlas finas, que, al encontrar una perla de gran valor, se va a vender todo lo que tiene y la compra. 
+Se parece el reino de los cielos * a un comerciante en perlas finas, que, al encontrar una perla de gran valor, se va a vender todo lo que tiene y la compra.
 
 [Oratio]
 Es una maravilla de tu poder, Señor, el triunfo por el martirio de la mujer indefensa; concédenos, a quienes celebramos la victoria de Santa N., virgen y mártir, caminar hacia ti, siguiendo sus ejemplos. 
@@ -251,50 +228,37 @@ Te suplicamos, Señor, que Santa N., virgen y mártir, nos alcance tu perdón: p
 $Per Dominum
 
 [Lectio Prima]
-!Sab 4:1
-v. Mejor es la esterilidad con virtud, pues su memoria es inmortal, porque es conocida de Dios y de los hombres.
-
-[Lectio Prima pro Martyre]
 !Sir 51:13-14
-v. Señor Dios mío: Desde la tierra levanté mi voz, desde el umbral de la muerte te invoqué; supliqué: «Señor, Tú eres mi padre, Tú eres mi fuerte salvador; no me abandones el día del peligro, el día de la desgracia y la calamidad».	
+v. Señor Dios mío: Desde la tierra levanté mi voz, desde el umbral de la muerte te invoqué; supliqué: «Señor, Tú eres mi padre, Tú eres mi fuerte salvador; no me abandones el día del peligro, el día de la desgracia y la calamidad».
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Con tu gala  * Y con tu hermosura. 
 R. Con tu gala  * Y con tu hermosura. 
 V. Avanza victoriosa y reina. 
 R. Y con tu hermosura. 
 &Gloria
 R. Con tu gala  * Y con tu hermosura. 
-_
-V. Dios la socorre con su mirada.	
-R. Teniendo a Dios en medio no vacila.
 
 [Capitulum Sexta]
 !2 Cor 11:2
 v. Tengo celos por vosotros: los celos de Dios; porque os he desposado con un solo marido, Cristo, presentándoos a él como una virgen pura.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Dios la socorre * Con su mirada. 
 R. Dios la socorre * Con su mirada. 
 V. Teniendo a Dios en medio no vacila. 
 R. Con su mirada.
 &Gloria
 R. Dios la socorre * Con su mirada. 
-_
-V. Dios la eligió y la predestinó.	
-R. La hizo morar en su templo santo.	
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Dios la eligió * y la predestinó. 
 R. Dios la eligió * y la predestinó. 
 V. La hizo morar en su templo santo. 
 R. Y la predestinó. 
 &Gloria
 R. Dios la eligió * y la predestinó. 
-_
-V. En tus labios se derrama la gracia. 
-R. El Señor te bendice eternamente.	
 
 [Lectio1 in 2 loco]
 Del Libro del Eclesiástico
@@ -305,7 +269,7 @@ Del Libro del Eclesiástico
 4 Me libraste, por tu misericordia, del rechinamiento de los preparados a devorarme, 
 5 del poder de los que atentaban contra mi vida, de muchas tribulaciones que me acosaban, 
 6 de la asfixia de las llamas que me envolvían, y en medio del fuego no me quemé; y del profundo seno del sepulcro, 
-7 de la lengua malvada, de los discursos embusteros, de las saetas de la lengua mentirosa. 
+7 de la lengua malvada, de los discursos embusteros, de las saetas de la lengua mentirosa.
 
 [Lectio2 in 2 loco]
 !Sir 51:8-12
@@ -313,7 +277,7 @@ Del Libro del Eclesiástico
 9 y mi vida próxima al profundo sepulcro. 
 10 Me volví a todas partes, y no hallaba ayuda; miré buscando socorro humano, mas en vano. 
 11 Pero me acordé, Señor, de tu misericordia, de tu antigua conducta, 
-12 de que salvas a los que en ti esperan y los libras de todo mal. 
+12 de que salvas a los que en ti esperan y los libras de todo mal.
 
 [Lectio3 in 2 loco]
 !Sir 51:13-17
@@ -321,9 +285,9 @@ Del Libro del Eclesiástico
 14 Y clamé al Señor Altísimo: Señor, Tú eres mi padre, el campeón de mi salud; no me abandones en el día de la tribulación, en el día de la ruina y de la devastación. 
 15 Alabaré continuamente tu nombre y en mi acción de gracias te cantaré. 
 16 Escuchó el Señor mi oración, me salvó de la ruina y me sacó de todo mal. 
-17 Por esto te daré gracias y te alabaré, y bendeciré el nombre del Señor: 
+17 Por esto te daré gracias y te alabaré, y bendeciré el nombre del Señor:
 
-[Lectio7 in 2 loco]
+[Lectio7 in 3 loco]
 Lectura del santo Evangelio según San Mateo
 !Mt 19:3-12
 En aquel tiempo: Se llegaron a Jesús los fariseos para tentarle diciendo: ¿Es lícito al hombre repudiar a su mujer por cualquier motivo? Y lo que sigue.
@@ -332,9 +296,9 @@ Homilía de San Juan Crisóstomo.
 !Homilía 63 sobre San Mateo, después del medio.
 No siendo oportuno tratar directamente este tema, nuestro divino Maestro procura atraer a sus discípulos al amor de la virginidad, hablándoles de la indisolubilidad del matrimonio impuesta por la ley. Después, para mostrar que era posible, se expresa de esta suerte: “Hay eunucos que nacieron tales del seno de su madre, los hay que fueron hechos tales por mano de los hombres, y hay otros que se consagraron ellos mismos a la castidad por amor al reino de los cielos”. Con estas palabras, veladamente les induce a elegir la virginidad, demostrándoles que era posible.
 
-[Lectio8 in 2 loco]
+[Lectio8 in 3 loco]
 Pensad, parece decirles, en lo que haríais si hubieseis venido al mundo en condiciones que os hicieran incapaces para el matrimonio, o si, víctima de una injusta violencia, llegaseis al mismo resultado. ¿Qué haríais al veros privados de los placeres de las nupcias sin obtener recompensa alguna por esta privación involuntaria?  Por consiguiente da gracias a Dios, ahora, ya que tu sacrificio obtendrá su recompensa y corona, mientras que los que se encuentran en aquel estado sufren sin recompensa ni corona alguna. Además, tu carga es mucho menor, tanto porque con la esperanza y la conciencia de la buena obra te elevas, porque no eres atormentado con las ingentes olas de la concupiscencia.
 
-[Lectio9 in 2 loco]
+[Lectio9 in 3 loco]
 Después de haber hablado Jesús de las primeras categorías de personas castas, cuya continencia corporal sería vana e inútil si no la acompañase la castidad espiritual, y de las que guardan continencia para ganar el reino de los cielos, añade: Quien es ca paz de comprenderlo, que lo comprenda. Dice esto para estimular aún más a los hombres a la conquista de esta virtud mostrándole cuán elevada sea. En su inefable bondad no quiere hacer de la virginidad una ley; mas al hablarnos en esta forma nos demuestra aún su posibilidad, para aumentar el ardor de nuestros deseos.
 &teDeum

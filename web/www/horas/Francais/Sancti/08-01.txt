@@ -1,31 +1,12 @@
 [Rank]
 St Pierre aux Liens, Apôtre;;Duplex majus;;4;;ex C1
 
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-
 [Ant Vespera]
 Le roi Hérode * fit aussi prendre Pierre. Lorsqu’il l’eut pris, il le mit en prison, voulant, après la Pâque, le produire devant le peuple.
 Pierre * était gardé dans la prison mais l’Église faisait à Dieu, sans interruption, des prières pour lui.
 L’Ange dit à Pierre : * prends ton vêtement au tour de toi, et suis-moi.
 Le Seigneur a envoyé * Son Ange et m’a soustrait à la main d’Hérode, alléluia.
 Tu es Pierre * et sur cette pierre je bâtirai Mon Église.;;116
-
-[HymnusM Vespera]
-v. Pierre, le bienheureux, brisa miraculeusement les chaînes des prisons,
-Par l'ordre de Christ ;
-Gardien du troupeau et Docteur de l'Église,
-Pasteur du troupeau, protecteur des brebis,
-Il repousse la fureur féroce des loups.
-_
-Gloire au Père à travers les siècles infinis,
-Qu'à Vous, Ô Fils, sois l'honneur et le règne,
-La gloire, la puissance et au Saint-Esprit,
-Que le salut soit à la Trinité indivisible,
-À travers les siècles infinis des siècles. Amen.
 
 [Hymnus Vespera]
 v. Soudainement délivré d’une façon admirable,
@@ -41,11 +22,18 @@ Soient honneur et gloire ; et que la sainte Trinité
 Soit louée partout durant toute l’éternité.
 Amen.
 
-[Versum 1]
-@Sancti/02-22
-
-[Ant 1]
-@Sancti/02-22
+[HymnusM Vespera]
+v. Pierre, le bienheureux, brisa miraculeusement les chaînes des prisons,
+Par l'ordre de Christ ;
+Gardien du troupeau et Docteur de l'Église,
+Pasteur du troupeau, protecteur des brebis,
+Il repousse la fureur féroce des loups.
+_
+Gloire au Père à travers les siècles infinis,
+Qu'à Vous, Ô Fils, sois l'honneur et le règne,
+La gloire, la puissance et au Saint-Esprit,
+Que le salut soit à la Trinité indivisible,
+À travers les siècles infinis des siècles. Amen.
 
 [Oratio]
 O Dieu, qui après avoir fait tomber les chaînes du bienheureux Pierre, Apôtre, l’avez fait sortir de prison, sans qu’il eût reçu aucun mal, nous Vous en prions, brisez les liens de nos péchés et, dans Votre bonté, éloignez de nous tous les maux.
@@ -113,6 +101,10 @@ Dès lors, on décerna aux liens de saint Pierre les honneurs qu’on accordait 
 &Gloria
 R. Et c’est pourquoi il vous a confié les clefs du royaume des cieux.
 
+[Lectio94]
+Sous le règne de l'empereur Théodose le Jeune, sa femme Eudocie reçut en cadeau à Jérusalem, entre autres choses, une chaîne de fer qu'ils prétendaient être celle avec laquelle l'apôtre Pierre avait été enchaîné par le roi Hérode. Eudoxie, avec une révérence pieuse, envoya cette chaîne à sa fille Eudoxie à Rome, où elle fut placée par le pape avec une autre chaîne avec laquelle le même bienheureux apôtre avait été enchaîné sous l'empereur Néron. Les deux chaînes s'entremêlèrent si étroitement qu'elles ne semblaient plus être deux, mais une seule chaîne réalisée par un seul ouvrier. Le simple toucher de ces saintes entraves guérissait souvent les malades et chassait les démons, et elles commencèrent à recevoir tant d'honneurs que l'église d'Eudoxie, dédiée à Saint-Pierre-aux-Liens, fut instituée en mémoire de cela, le premier jour d'août, remplaçant la festivité profane des païens célébrée ce jour-là.
+&teDeum
+
 [Lectio7]
 Lecture du saint Évangile selon saint Matthieu.
 !Matt 16:13-19
@@ -146,33 +138,11 @@ Quel était le nom des Machabées? On les désigne, en effet, sous une appellati
 [Ant Laudes]
 @:Ant Vespera:s/;;116//
 
-[Capitulum Laudes]
-@Sancti/06-29
-
 [Hymnus Laudes]
 @Sancti/02-22
-
-[Versum 2]
-@Sancti/02-22:Versum 1
-
-[Ant 2]
-@Sancti/02-22
-
-[Lectio Prima]
-@Sancti/06-29
-
-[Capitulum Sexta]
-@Sancti/06-29
-
-[Capitulum Nona]
-@:Lectio Prima
 
 [Ant Vespera 3]
 @:Ant Vespera:s/\./_;;109/s s/\./_;;112/ s/\./_;;115/ s/\./_;;125/ s/116/138/ s/_/./g
 
 [Ant 3]
 Rompez, * par l’ordre de Dieu, ô Pierre, les chaînes qui nous lient sur la terre, vous qui ouvrez le royaume céleste aux bienheureux.
-
-[Lectio94]
-Sous le règne de l'empereur Théodose le Jeune, sa femme Eudocie reçut en cadeau à Jérusalem, entre autres choses, une chaîne de fer qu'ils prétendaient être celle avec laquelle l'apôtre Pierre avait été enchaîné par le roi Hérode. Eudoxie, avec une révérence pieuse, envoya cette chaîne à sa fille Eudoxie à Rome, où elle fut placée par le pape avec une autre chaîne avec laquelle le même bienheureux apôtre avait été enchaîné sous l'empereur Néron. Les deux chaînes s'entremêlèrent si étroitement qu'elles ne semblaient plus être deux, mais une seule chaîne réalisée par un seul ouvrier. Le simple toucher de ces saintes entraves guérissait souvent les malades et chassait les démons, et elles commencèrent à recevoir tant d'honneurs que l'église d'Eudoxie, dédiée à Saint-Pierre-aux-Liens, fut instituée en mémoire de cela, le premier jour d'août, remplaçant la festivité profane des païens célébrée ce jour-là.
-&teDeum

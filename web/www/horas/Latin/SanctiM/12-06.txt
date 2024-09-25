@@ -1,11 +1,11 @@
 @Sancti/12-06
 
+[Rank] (rubrica divino aut rubrica 1963)
+S. Nicolai Episcopi et Confessoris;;Simplex;;1.1;;vide C4
+
 [Rule] (rubrica tridentina)
 vide C4;
 12 lectiones
-
-[Rank] (rubrica divino aut rubrica 1963)
-S. Nicolai Episcopi et Confessoris;;Simplex;;1.1;;vide C4
 
 [Lectio5]
 @Sancti/12-06:Lectio4
@@ -14,7 +14,7 @@ S. Nicolai Episcopi et Confessoris;;Simplex;;1.1;;vide C4
 @Sancti/12-06:Lectio5: s/In episcopatu.*//s
 
 [Lectio7]
-@Sancti/12-06:Lectio5: s/.* In episcopatu/In episcopatu/s ~
+@Sancti/12-06:Lectio5: s/.* In episcopatu/In episcopatu/s s/$/~/
 @Sancti/12-06:Lectio6: s/Cum vero.*//s
 
 [Lectio8]

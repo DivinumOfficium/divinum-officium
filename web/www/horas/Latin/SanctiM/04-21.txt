@@ -3,15 +3,6 @@
 [Rank]
 S. Anselmi Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4
 
-[Ant 2]
-Beátus Ansélmus * sǽculi príncipes docébat, dicens: Nihil ámplius díligit Deus in hoc mundo, quam Ecclésiæ suæ † libertátem.
-
-[Oratio]
-@Commune/C4:Oratio2:s/N\./Ansélmum/
-
-[Ant 3]
-@Commune/C4a:Ant 1:s/N\./Ansélme/
-
 [Hymnus Vespera]
 Fortis en præsul, monachus fidélis,
 Láurea doctor redimítus astat:
@@ -54,8 +45,17 @@ Cuncta cui dignas résonent per orbem
 Sǽcula laudes.
 Amen.
 
+[Oratio]
+@Commune/C4:Oratio2:s/N\./Ansélmum/
+
 [Hymnus Matutinum]
 @:Hymnus Vespera
 
 [Responsory1]
 @Commune/C4a:Responsory8
+
+[Ant 2]
+Beátus Ansélmus * sǽculi príncipes docébat, dicens: Nihil ámplius díligit Deus in hoc mundo, quam Ecclésiæ suæ † libertátem.
+
+[Ant 3]
+@Commune/C4a:Ant 1:s/N\./Ansélme/

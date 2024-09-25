@@ -4,12 +4,13 @@ S. Eustachii et Sociorum Martyrum;;Duplex;;3;;vide C3
 [Rank] (rubrica 1960)
 S. Eustachii et Sociorum Martyrum;;Simplex;;1.1;;vide C3
 
-[Rule]
-vide C3;
-9 lectiones
-
 [Oratio]
 @Commune/C3::s/N\. y N\./Eustaquio y sus compañeros/
+
+[Oratio Vigilia]
+!Conmemoración de la Vigilia a S. Mateo, Apóstol
+v. Concédenos, Dios todopoderoso, que en la venerable solemnidad de San Mateo, Evangelista y Apóstol tuyo, la devoción nos dé salud.
+$Per Dominum
 
 [Lectio4]
 Eustaquio, llamado también Plácido, ilustre por su linaje, riquezas y gloria militar, mereció, en tiempo del emperador Trajano, ser maestro de la milicia. Un día de caza, en el que corría persiguiendo un ciervo de gran tamaño, vio de repente resplandecer entre las astas del animal una imagen grandiosa de Jesucristo crucificado. Y como la voz del Señor le invitara a correr en pos de la vida eterna, se alistó junto con su esposa y sus dos hijitos Agapito y Teopisto, en la milicia cristiana.
@@ -26,14 +27,9 @@ En la expedición tuvo la alegría de recobrar a su esposa y a sus hijos. Entró
 [Lectio8]
 @Commune/C3:Lectio8 in 2 loco
 
+[Lectio93]
+@Commune/C1v:Lectio1
+
 [Lectio Vigilia]
 !Conmemoración de la Vigilia de S. Mateo, Apóstol
 @Sancti/09-20o:Lectio1
-
-[Oratio Vigilia]
-!Conmemoración de la Vigilia a S. Mateo, Apóstol
-v. Concédenos, Dios todopoderoso, que en la venerable solemnidad de San Mateo, Evangelista y Apóstol tuyo, la devoción nos dé salud.
-$Per Dominum
-
-[Lectio93]
-@Commune/C1v:Lectio1

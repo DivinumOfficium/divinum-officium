@@ -1,62 +1,12 @@
 [Name]
 Officium Dedicationis Ecclesiae
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-Psalm5 Vespera=147
-Festum Domini
-Divinum auxilium
-
 [Ant Vespera]
 Holiness becometh thine house, * O Lord, for ever.;;109
 My house * shall be called the house of prayer.;;110
 This is the Lord's house * stoutly builded, well founded upon a sure rock.;;111
 The Lord's house is well founded * upon a sure rock.;;112
 All thy walls are of stones most precious, * and the towers of Jerusalem shall be built up with jewels.;;147
-
-[Capitulum Laudes]
-!Rev 21:2
-v. I saw the holy city, New Jerusalem, coming down from God out of heaven, prepared as a Bride adorned for her husband.
-$Deo gratias
-
-[Hymnus Vespera]
-v. Thou heavenly, new Jerusalem,
-Vision of peace in prophet's dream!
-With living stones built up on high,
-And rising to yon starry sky;
-In bridal pomp thy form is crowned,
-With thousand thousand angels round!
-_
-O bride, betrothed in happy hour,
-The Father's glory is thy dower;
-The bridegroom's grace is shed on thee
-Thou queen all fair eternally;
-To Christ allied, thy Prince adored,
-Bright shining city of the Lord!
-_
-Behold with pearls they glittering stand
-thy peaceful gates to all expand;
-By grace and strength divinely shed
-Each mortal thither may be led;
-Who, kindled by Christ's love, will dare
-All earthly sufferings now to bear.
-_
-By many a salutary stroke,
-By many a weary blow that broke,
-Or polished with a workman's skill,
-The stones that form that glorious pile,
-They all are fitly framed to lie
-In their appointed place on high.
-_
-Fair and well pleasing in thy sight,
-Parent most high, enthroned in light,
-And for thine only Son most meet,
-And thee, all-glorious Paraclete,
-To whom praise, power, and glory rise
-Forever through the eternal skies.
-Amen.
 
 [HymnusM Vespera]
 v. Blessed city, heavenly Salem,
@@ -95,6 +45,43 @@ consubstantial, coeternal,
 while unending ages run. 
 Amen.
 
+[Hymnus Vespera]
+v. Thou heavenly, new Jerusalem,
+Vision of peace in prophet's dream!
+With living stones built up on high,
+And rising to yon starry sky;
+In bridal pomp thy form is crowned,
+With thousand thousand angels round!
+_
+O bride, betrothed in happy hour,
+The Father's glory is thy dower;
+The bridegroom's grace is shed on thee
+Thou queen all fair eternally;
+To Christ allied, thy Prince adored,
+Bright shining city of the Lord!
+_
+Behold with pearls they glittering stand
+thy peaceful gates to all expand;
+By grace and strength divinely shed
+Each mortal thither may be led;
+Who, kindled by Christ's love, will dare
+All earthly sufferings now to bear.
+_
+By many a salutary stroke,
+By many a weary blow that broke,
+Or polished with a workman's skill,
+The stones that form that glorious pile,
+They all are fitly framed to lie
+In their appointed place on high.
+_
+Fair and well pleasing in thy sight,
+Parent most high, enthroned in light,
+And for thine only Son most meet,
+And thee, all-glorious Paraclete,
+To whom praise, power, and glory rise
+Forever through the eternal skies.
+Amen.
+
 [Versum 1]
 V. This is the house of God, stoutly builded.
 R. Well founded upon a sure rock.
@@ -117,18 +104,16 @@ Holiness becometh the house of God. * In her let us worship her Bridegroom, even
 Lift up your gates, O ye princes, * and be ye lift up, ye everlasting doors.;;23
 The Lord shall be my God, * and this stone shall be called God's house.;;45
 Moses built an altar * to the Lord God.;;47
-V. Holiness becometh thine house, O Lord,
-R. For ever.
 This is none other but the house of God, and this is the gate of heaven.;;83
 Jacob beheld a ladder set up on the earth, and the top of it reached to heaven, and the angels of God descending on it. And he said: Surely this place is holy.;;86
 Jacob set up the stone for a pillar, and poured oil upon the top of it.;;87
-V. My house.
-R. Shall be called the house of prayer.
 He that dwelleth in the help of the Most High * shall abide under the shadow of the God of heaven.;;90
 The Temple of the Lord is holy. * The same is God's workmanship and God's building.;;95
 Blessed be the glory of the Lord * from His holy place. Alleluia.;;98
-V. This is the house of God, stoutly builded.
-R. Well founded upon a sure rock.
+
+[Nocturn 2 Versum]
+V. My house.
+R. Shall be called the house of prayer.
 
 [Lectio1]
 Lesson from the book of Paralipomenon
@@ -236,12 +221,10 @@ R. The towers of Jerusalem shall be built up with jewels.
 But lest we should seem haughtily to pass by the poor blind man, and to hurry on to the rich one, let us stand waiting for him, as the Lord stood and waited; let us ask of him, as Christ asked of him. Let us ask, because we are ignorant; Christ asked, because He knew. Let us ask, that we may know whence he received his cure; Christ asked, that all of us may know from one example where through we are to earn a sight of the Lord. Christ asked, that we might believe that none, save they that confess Him, can be saved.
 &teDeum
 
-[Ant Laudes]
-Holiness becometh thine house, * O Lord, for ever.
-My house * shall be called the house of prayer.
-This is the Lord's house * stoutly builded, well founded upon a sure rock.
-The Lord's house is well founded * upon a sure rock.
-All thy walls are of stones most precious, * and the towers of Jerusalem shall be built up with jewels.
+[Capitulum Laudes]
+!Rev 21:2
+v. I saw the holy city, New Jerusalem, coming down from God out of heaven, prepared as a Bride adorned for her husband.
+$Deo gratias
 
 [Hymnus Laudes]
 v. From highest heaven, the Father's Son,
@@ -324,14 +307,15 @@ Zacchaeus, make haste and come down, for today I must abide at thy house. * And 
 !Rev 21:4-4
 v. And God shall wipe away all tears from their eyes, and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain; for the former things are passed away. And He That sat upon the throne said: Behold, I make all things new.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Holiness becometh thine house, * O Lord.
 R. Holiness becometh thine house, * O Lord.
 V. For ever.
 R. O Lord.
 &Gloria
 R. Holiness becometh thine house, * O Lord.
-_
+
+[Versum Tertia]
 V. This place is holy, wherein the Priest prayeth.
 R. For the pardon of the transgressions and offences of the people.
 
@@ -340,30 +324,23 @@ R. For the pardon of the transgressions and offences of the people.
 v. And I heard a great voice out of the throne, saying Behold, the tabernacle of God is with men, and He will dwell with them. And they shall be His people; and God Himself shall be with them, and be their God.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. This place is holy, * wherein the Priest prayeth.
 R. This place is holy, * wherein the Priest prayeth
 V. For the pardon of the transgressions and offences of the people.
 R. The Priest prayeth.
 &Gloria
 R. This place is holy, * wherein the Priest prayeth.
-_
-V. This is the Lord's house, stoutly builded
-R. Well founded upon a sure rock.
 
-[Capitulum Nona]
-!Rev 21:4-4
-v. And God shall wipe away all tears from their eyes, and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain; for the former things are passed away. And He That sat upon the throne said Behold, I make all things new.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. This is the Lord's house, * stoutly builded.
 R. This is the Lord's house, * stoutly builded.
 V. Well founded upon a sure rock.
 R. Stoutly builded.
 &Gloria
 R. This is the Lord's house, * stoutly builded.
-_
+
+[Versum Nona]
 V. The Lord's house is well founded.
 R. Upon a sure rock.
 

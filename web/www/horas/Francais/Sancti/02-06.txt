@@ -1,22 +1,8 @@
 [Rank]
 S. Titi Episcopi et Confessoris;;Duplex;;3.1;;vide C4
 
-[Rank](rubrica 1960)
-S. Titi Episcopi et Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-vide C4;mtv
-9 lectiones
-
 [Oratio]
 O Dieu qui avez orné le bienheureux Tite votre Confesseur et Pontife, des vertus apostoliques accordez-nous, par ses mérites et son intercession, que, vivant justement et pieusement en ce monde, nous méritions de parvenir à la céleste patrie.
-$Per Dominum
-
-[Commemoratio]
-!Mémoire de Ste. Dorothée, Vierge et Martyre
-@Commune/C6:Oratio proper
-$Oremus
-v. Que la bienheureuse Dorothée, Vierge et Martyre, implore pour nous Votre pardon, Seigneur, s’il Vous plaît, elle qui Vous a toujours été agréable par le mérite de la chasteté et la profession de votre puissance.
 $Per Dominum
 
 [Lectio4]
@@ -30,15 +16,4 @@ C’est donc, comme un flambeau qu’il diffusa la lumière de la religion, parm
 
 [Lectio94]
 Tite, évêque de Crète, mérita d’être associé aux disciples du Docteur des nations. Par son zèle d’évangélisation et sa fidélité, il devint tellement cher à Paul, que celui-ci arrivant à Troade, pour l’Évangile du Christ, son esprit n’eut point de repos, avoue-t-il, parce qu’il n’y avait point trouvé Tite, son frère. Et, peu après, gagnant la Macédoine, il exprime à nouveau son affection pour Tite, en ces termes : Mais celui qui console les humbles, Dieu, nous a consolés par l'arrivée de Tite. Envoyé à Corinthe par l’Apôtre, avec la mission spéciale de recueillir des aumônes pour soulager la détresse de l’Église des Hébreux, il s’acquitta de la charge de cette légation, avec beaucoup de sagesse. Puis, après tant de voyages et de difficultés pour répandre la semence de la divine parole chez des nations différentes de langues et de climats, il aborda avec Paul, son guide, l’île de Crète. Choisi alors par l’Apôtre lui-même, pour évêque de cette Église, il se montra lui aussi un modèle de bonnes œuvres. On rapporte qu’il supporta courageusement de grandes fatigues chez les Dalmates, pour y déployer l’étendard du Christ. Enfin, plein de mérites et âgé de quatre-vingt- quatorze ans, il s’endormit dans le Seigneur.
-&teDeum
-
-[Lectio7]
-@Commune/C1a:Lectio7
-
-[Lectio8]
-@Commune/C1a:Lectio8
-
-[Lectio93]
-!Mémoire de Ste. Dorothée, Vierge et Martyre
-Dorothée, vierge de Césarée, en Cappadoce, arrêtée à cause de sa confession du Christ, par le gouverneur Apricius, fut livrée à Chrysta et Callista, deux sœurs qui avaient abandonné la foi et qui devaient la faire renoncer à sa résolution ; mais le contraire arriva, car Dorothée ramena celles-ci au culte de la religion chrétienne, pour laquelle elles souffrirent même le martyre. C’est pourquoi la Vierge, longtemps torturée sur le chevalet et accablée de soufflets, fut condamnée à avoir la tête tranchée et reçut ainsi la double palme de la virginité et du martyre.
 &teDeum

@@ -6,7 +6,10 @@ Doxology=Nat
 Festum Domini
 
 [Responsory Vespera]
-@CommuneM/C10
+@CommuneM/C11
+
+[Ant Matutinum 3N]
+Adórna * thálamum tuum, Sion, et súspice Regem Christum: † quem Virgo post partum, quem génuit, adorávit.
 
 [Lectio1]
 @Sancti/02-02:Lectio1
@@ -55,9 +58,6 @@ R. Nunc dimíttis servum tuum, Dómine, secúndum verbum tuum in pace:
 V. Lumen ad revelatiónem Géntium, et glóriam plebis tuæ Israël.
 R. Quia vidérunt óculi mei salutáre tuum.
 
-[Ant Matutinum 3N]
-Adórna * thálamum tuum, Sion, et súspice Regem Christum: † quem Virgo post partum, quem génuit, adorávit.
-
 [Lectio9]
 @Sancti/02-02:Lectio7:s/Virgo .*//s
 
@@ -88,14 +88,13 @@ R. Et Anna vídua Christum agnóvit advenísse in terris.
 @Sancti/03-25:Responsory8
 
 [Responsory Laudes]
-@CommuneM/C10:Responsory Vespera
+@:Responsory Vespera
 
 [Responsory TertiaM]
 @Commune/C6:Versum 1
 
 [Responsory SextaM]
-@Commune/C6:Responsory Tertia:8-9
+@Commune/C6:Nocturn 2 Versum
 
 [Responsory NonaM]
-@Commune/C6:Responsory Sexta:8-9
-
+@Commune/C6:Nocturn 3 Versum

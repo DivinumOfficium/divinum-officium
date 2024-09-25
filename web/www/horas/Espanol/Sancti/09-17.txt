@@ -1,19 +1,15 @@
 [Rank]
 Impressionis Stigmatum S. Francisci;;Duplex;;3;;vide C5
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Impressionis Stigmatum S. Francisci;;Simplex;;1.1;;vide C5
 
-[Rule]
-vide C5;
-9 lectiones
+[Hymnus Vespera]
+@Commune/C4:Hymnus Vespera:s/de la suprema alabanza/de las llagas de Cristo/
 
 [Versum 1]
 V. Diste, Señor, a tu siervo Francisco.
 R. Las señales de nuestra redención.
-
-[Hymnus Vespera]
-@Commune/C4:Hymnus Vespera:s/de la suprema alabanza/de las llagas de Cristo/
 
 [Oratio]
 Señor Jesucristo, que para inflamar nuestros corazones con el fuego de tu amor, al enfriarse el mundo, renovaste en el cuerpo del bienaventurado Francisco las sagradas llagas de tu Pasión: concédenos propicio que, por sus méritos y preces, llevemos constantemente la cruz, y hagamos dignos frutos de penitencia.
@@ -32,7 +28,7 @@ De la Epíst. de San Pablo a los Gálatas
 3 Porque si alguno se imagina ser algo, no siendo nada, a sí mismo se engaña. 
 4 Que cada uno examine sus obras, y entonces encontrará en sí solo, y no en los otros, el motivo de gloriarse; 
 5 pues cada uno tiene que llevar su propia carga. 
-6 El catecúmeno comunique todos sus bienes con el que le catequiza. 
+6 El catecúmeno comunique todos sus bienes con el que le catequiza.
 
 [Lectio2]
 !Gal 6:7-13
@@ -42,7 +38,7 @@ De la Epíst. de San Pablo a los Gálatas
 10 Por consiguiente, mientras hay tiempo, hagamos bien a todos, pero especialmente a los hermanos en la fe. 
 11 Ved con qué grandes letras os escribo de mi propia mano. 
 12 Los que quieren gloriarse en la carne, ésos os fuerzan a circuncidaros, sólo para no ser perseguidos por la cruz de Cristo. 
-13 Ni los mismos circuncidados guardan la Ley, pero quieren que vosotros os circuncidéis para gloriarse en vuestra carne. 
+13 Ni los mismos circuncidados guardan la Ley, pero quieren que vosotros os circuncidéis para gloriarse en vuestra carne.
 
 [Lectio3]
 !Gal 6:14-18
@@ -50,7 +46,7 @@ De la Epíst. de San Pablo a los Gálatas
 15 que ni la circuncisión es nada ni el prepucio, sino la nueva criatura. 
 16 La paz y la misericordia serán sobre cuantos se ajusten a esta regla y sobre el Israel de Dios. 
 17 Por lo demás, que nadie me moleste, que llevo en mi cuerpo las señales de Jesús. 
-18 La gracia de nuestro Señor Jesucristo sea, hermanos, con vuestro espíritu. Amén. 
+18 La gracia de nuestro Señor Jesucristo sea, hermanos, con vuestro espíritu. Amén.
 
 [Lectio4]
 De los Comentarios de S. Buenaventura, Obispo.
@@ -62,6 +58,10 @@ Francisco sabía que el sufrimiento es incompatible con la inmortalidad de un es
 
 [Lectio6]
 Transformado en un hombre nuevo por este inaudito y sorprendente prodigio (era, en efecto, el primer caso de un hombre marcado, o mejor aún, adornado con las sagradas llagas), descendió de la montaña llevando en sí la imagen del Crucificado, esculpida, no en piedra ni en madera por un artista, sino en su propia carne por el dedo del Dios vivo. Como sabía que “es bueno mantener oculto el secreto del rey”, esforzábase aquel hombre, conocedor del misterio obrado en él por el Rey divino, en ocultar a los demás los estigmas. Mas a Dios corresponde revelar para gloria suya las grandes cosas por Él realizadas; así, el mismo Señor, que había impreso en secreto aquellas señales, quiso darlas a conocer por medio de milagros, haciendo que por los prodigios resplandeciera su virtud escondida y maravillosa. El aniversario de este hecho, tan digno de admiración, tan claramente comprobado, y enaltecido con grandes alabanzas y la concesión de favores especiales en las bulas pontificias, quiso el papa Benedicto XI que se celebrara una solemnidad, extendida más tarde por el Sumo Pontífice Paulo V a toda Iglesia, y destinada a encender en los corazones de los fieles el amor a Jesucristo crucificado.
+
+[Lectio94]
+Transformado en un hombre nuevo por este inaudito y sorprendente prodigio (era, en efecto, el primer caso de un hombre marcado, o mejor aún, adornado con las sagradas llagas), descendió de la montaña llevando en sí la imagen del Crucificado, esculpida, no en piedra ni en madera por un artista, sino en su propia carne por el dedo del Dios vivo. Como sabía que “es bueno mantener oculto el secreto del rey”, esforzábase aquel hombre, conocedor del misterio obrado en él por el Rey divino, en ocultar a los demás los estigmas. Mas a Dios corresponde revelar para gloria suya las grandes cosas por Él realizadas; así, el mismo Señor, que había impreso en secreto aquellas señales, quiso darlas a conocer por medio de milagros, haciendo que por los prodigios resplandeciera su virtud escondida y maravillosa. El aniversario de este hecho, tan digno de admiración, tan claramente comprobado, y enaltecido con grandes alabanzas y la concesión de favores especiales en las bulas pontificias, quiso el papa Benedicto XI que se celebrara una solemnidad, extendida más tarde por el Sumo Pontífice Paulo V a toda Iglesia, y destinada a encender en los corazones de los fieles el amor a Jesucristo crucificado.
+&teDeum
 
 [Lectio7]
 @Commune/C2:Lectio7 in 4 loco
@@ -79,10 +79,6 @@ R. Por quien el mundo está crucificado para mí, y yo lo estoy al mundo.
 
 [Lectio9]
 @Commune/C2:Lectio9 in 4 loco
-
-[Lectio94]
-Transformado en un hombre nuevo por este inaudito y sorprendente prodigio (era, en efecto, el primer caso de un hombre marcado, o mejor aún, adornado con las sagradas llagas), descendió de la montaña llevando en sí la imagen del Crucificado, esculpida, no en piedra ni en madera por un artista, sino en su propia carne por el dedo del Dios vivo. Como sabía que “es bueno mantener oculto el secreto del rey”, esforzábase aquel hombre, conocedor del misterio obrado en él por el Rey divino, en ocultar a los demás los estigmas. Mas a Dios corresponde revelar para gloria suya las grandes cosas por Él realizadas; así, el mismo Señor, que había impreso en secreto aquellas señales, quiso darlas a conocer por medio de milagros, haciendo que por los prodigios resplandeciera su virtud escondida y maravillosa. El aniversario de este hecho, tan digno de admiración, tan claramente comprobado, y enaltecido con grandes alabanzas y la concesión de favores especiales en las bulas pontificias, quiso el papa Benedicto XI que se celebrara una solemnidad, extendida más tarde por el Sumo Pontífice Paulo V a toda Iglesia, y destinada a encender en los corazones de los fieles el amor a Jesucristo crucificado.
-&teDeum
 
 [Hymnus Laudes]
 @Commune/C5::s/voló\nde la vida terrena al cielo/recibió\rlos estigmas de Cristo/

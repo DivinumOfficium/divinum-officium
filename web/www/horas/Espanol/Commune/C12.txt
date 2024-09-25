@@ -79,9 +79,6 @@ $Ave Maria
 $Credo
 (sed rubrica 1955 aut rubrica 196 omittitur)
 
-[Ant Matutinum]
-@Commune/C11::s/V\. .*/V. Derramada está la gracia en tus labios./g s/R\. .*/R. Por ello el Señor te bendecirá para siempre./g
-
 [Lectio1]
 !Sir 24:11-13
 11 En todo busqué en dónde posar, y en la heredad del Señor fijé mi morada. 
@@ -155,27 +152,13 @@ $Deo gratias
 v. Oh Dios que te dignaste elegir el seno virginal de la bienaventurada María para hacer de él tu morada, concédenos, te pedimos, que, experimentando el socorro de su protección, celebremos con alegría su memoria.
 $Qui vivis
 
-[Capitulum Tertia]
-!Sir 24:15
-v. Y así fijé mí estancia en el monte de Sión, y fue el lugar de mi reposo la ciudad santa, y en Jerusalén está mi trono.
-$Deo gratias
-
 [Oratio Tertia]
 v. ¡Oh Dios, que por la maternidad virginal de Santa María entregaste al género humano los tesoros de la salvación eterna!; te rogamos que sintamos  continuamente el poder de la  intercensión de aquella por la que hemos mericido recibir al Autor de la vida, nuestro Señor Jesucristo, tu Hijo:
 $Qui tecum
 
-[Capitulum Sexta]
-!Sir 24:16
-v. Fijé mi morada en medio del pueblo que Dios ha honrado y que ha escogido por herencia, habitaré para siempre en la morada de la santidad.
-$Deo gratias
-
 [Oratio Sexta]
 v. Concede, Oh Dios misericordioso, el socorro a nuestra fragilidad, a fin de que, honrando la memoria de la Santa Madre de Dios, podamos con el auxilio de su intercesión levantarnos de nuestras iniquidades.
 $Per eumdem
-
-[Capitulum Nona]
-@Commune/C11:Lectio Prima
-$Deo gratias
 
 [Oratio Nona]
 v. Te suplicamos, Señor, que perdones las faltas de tus siervos; a fin de que cuantos no te podemos agradar por nuestras obras, seamos salvados por la intercesión de la Madre de tu Hijo, Señor nuestro.

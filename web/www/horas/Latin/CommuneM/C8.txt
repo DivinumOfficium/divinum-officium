@@ -15,20 +15,17 @@ Adoráte * Dóminum in aula sancta ejus.;;28
 Beáti, * qui hábitant in domo tua, Dómine; † in sǽcula sæculórum laudábunt te.;;83
 
 [Ant Matutinum]
-@:AntMatutinumM:1
-@:AntMatutinumM:2
+@:AntMatutinumM:1-2
 @Commune/C8::1
 @:AntMatutinumM:3
-@Commune/C8::2-5
+@Commune/C8::2-3
 @:AntMatutinumM:4
-@Commune/C8::6 s/83/86/
-@Commune/C8::12 s/95/87/
-@Commune/C8::11
-@Commune/C8::8 s/87/95/
-@Commune/C8::13
-@Commune/C8::9-10
-@Commune/C8::7 s/86/260;261;262/
-@Commune/C8::14-15
+@Commune/C8::4 s/83/86/
+@Commune/C8::8 s/95/87/
+@Commune/C8::7
+@Commune/C8::6 s/87/95/
+@Commune/C8::9
+@Commune/C8::5 s/86/260;261;262/
 
 [Lectio1]
 @Commune/C8::1-5 s/-5/-3/
@@ -110,16 +107,10 @@ R. Et audívi vocem de throno dicéntem: Ecce tabernáculam Dei cum homínibus, 
 [MM Capitulum]
 @Commune/C8:Capitulum Sexta
 _
-@Commune/C8:Responsory Tertia:s/.*_.//s
+@Commune/C8:Responsory Breve Tertia
 
 [Capitulum Laudes]
 @Commune/C8
 
-[Responsory TertiaM]
-@Commune/C8:Versum 3
-
 [Responsory SextaM]
-@Commune/C8:Responsory Tertia:8-9
-
-[Responsory NonaM]
-@Commune/C8:Versum 1
+@Commune/C8:Versum Tertia

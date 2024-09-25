@@ -1,16 +1,8 @@
 [Rank]
 S. Laurentii Martyris;;Duplex II classis cum octava simplici;;5.1;;ex C2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 S. Laurentii Martyris;;Duplex II classis;;5;;ex C2
-
-[Rule]
-ex C2
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
 
 [Ant Vespera]
 Lorenzo * entrò (nel combattimento) come Martire e confessò il nome del Signore Gesù Cristo.
@@ -23,6 +15,17 @@ Il beato Lorenzo * pregava dicendo : Ti rendo grazie, Signore, perché ho merita
 Il Levita Lorenzo * fece un'opera buona, perché col segno della croce diede la vista ai ciechi, e distribuì i tesori della Chiesa ai poveri.
 
 [Oratio]
+Dacci, te ne preghiamo, Dio onnipotente, di estinguere le fiamme dei nostri vizi; tu che desti al beato Lorenzo di superare il fuoco dei suoi tormenti. 
+$Per Dominum
+
+[Octava 1]
+!Commemorazione dell'Ottava di S. Lorenzo.
+Ant. Il beato Lorenzo, * mentre, posto sulla graticola, bruciava, disse al crudelissimo tiranno : È già arrostito, volta e mangia; ché i beni della Chiesa che domandi, le mani dei poveri li han già trasportati nei tesori celesti.
+_
+R. Il Levita Lorenzo fece un'opera buona.
+V. Perché col segno della croce diede la vista ai ciechi.
+_
+v. Preghiamo. 
 Dacci, te ne preghiamo, Dio onnipotente, di estinguere le fiamme dei nostri vizi; tu che desti al beato Lorenzo di superare il fuoco dei suoi tormenti. 
 $Per Dominum
 
@@ -173,70 +176,6 @@ R. La sua giustizia perdura in eterno.
 [Ant 2]
 Sulla graticola * non ho negato che tu sei Iddio, e, messo sul fuoco, ho confessato che sei Cristo: «hai provato il mio cuore e l'hai visitato di notte : mi hai provato col fuoco, e in me non s'è trovata l'iniquità» (Sal 16,3).
 
-[Lectio Prima]
-!2 Cor 9:8-9
-v. E Dio può ben ricolmarvi d'ogni grazia, affinché, avendo sempre in ogni cosa il sufficiente, voi abbiate in abbondanza per ogni opera buona, come sta scritto: «Largheggiò, diede ai poveri: la sua giustizia perdura in eterno» (Sal 111,16).
-
-[Responsory Tertia]
-R.br. Di gloria e di onore, * lo hai incoronato, Signore.
-R. Di gloria e di onore, * lo hai incoronato, Signore.
-V. E lo hai preposto alle opere delle tue mani.
-R. Lo hai incoronato, Signore.
-&Gloria
-R. Di gloria e di onore, * lo hai incoronato, Signore.
-_
-V. Hai posto, o Signore, sul suo capo.
-R. Una corona di pietre preziose.
-
-[Capitulum Sexta]
-!2. Cor. 9:7
-v. Ciascuno dia come ha stabilito in cuor suo, non di mala voglia né per forza; perché Dio ama il donatore cordiale.
-$Deo gratias
-
-[Responsory Sexta]
-R.br. Hai posto, o Signore, * sul suo capo.              
-R. Hai posto, o Signore, * sul suo capo.
-V. Una corona di pietre preziose.
-R. Sul suo capo.             
-&Gloria
-R. Hai posto, o Signore, * sul suo capo.
-_
-V. Grande è la sua gloria per la tua salvezza.
-R. Lo hai ricoperto di grande gloria e di splendore.
-
-[Capitulum Nona]
-!2 Cor 9:8-9
-v. E Dio può ben ricolmarvi d'ogni grazia, affinché, avendo sempre in ogni cosa il sufficiente, voi abbiate in abbondanza per ogni opera buona, come sta scritto: «Largheggiò, diede ai poveri: la sua giustizia perdura in eterno» (Sal 111,16).
-$Deo gratias
-
-[Responsory Nona]
-R.br. Grande è la sua gloria, * per la tua salvezza.
-R. Grande è la sua gloria, * per la tua salvezza.
-V. Lo hai ricoperto di grande gloria e di splendore.
-&Gloria
-R. Grande è la sua gloria, * per la tua salvezza.
-_
-V. Il giusto fiorirà come palma.
-R. Crescerà come il cedro del Libano.
-
-[Versum 3]
-R. Il Levita Lorenzo fece un'opera buona.
-V. Perché col segno della croce diede la vista ai ciechi.
-
-[Ant 3]
-Il beato Lorenzo, * mentre, posto sulla graticola, bruciava, disse al crudelissimo tiranno : È già arrostito, volta e mangia; ché i beni della Chiesa che domandi, le mani dei poveri li han già trasportati nei tesori celesti.
-
-[Octava 1]
-!Commemorazione dell'Ottava di S. Lorenzo.
-Ant. Il beato Lorenzo, * mentre, posto sulla graticola, bruciava, disse al crudelissimo tiranno : È già arrostito, volta e mangia; ché i beni della Chiesa che domandi, le mani dei poveri li han già trasportati nei tesori celesti.
-_
-R. Il Levita Lorenzo fece un'opera buona.
-V. Perché col segno della croce diede la vista ai ciechi.
-_
-v. Preghiamo. 
-Dacci, te ne preghiamo, Dio onnipotente, di estinguere le fiamme dei nostri vizi; tu che desti al beato Lorenzo di superare il fuoco dei suoi tormenti. 
-$Per Dominum
-
 [Octava 2]
 !Commemorazione dell'Ottava di S. Lorenzo.
 Ant. Sulla graticola * non ho negato che tu sei Iddio, e, messo sul fuoco, ho confessato che sei Cristo: «hai provato il mio cuore e l'hai visitato di notte : mi hai provato col fuoco, e in me non s'è trovata l'iniquità» (Sal 16,3).
@@ -247,3 +186,19 @@ _
 v. Preghiamo. 
 Dacci, te ne preghiamo, Dio onnipotente, di estinguere le fiamme dei nostri vizi; tu che desti al beato Lorenzo di superare il fuoco dei suoi tormenti. 
 $Per Dominum
+
+[Lectio Prima]
+!2 Cor 9:8-9
+v. E Dio può ben ricolmarvi d'ogni grazia, affinché, avendo sempre in ogni cosa il sufficiente, voi abbiate in abbondanza per ogni opera buona, come sta scritto: «Largheggiò, diede ai poveri: la sua giustizia perdura in eterno» (Sal 111,16).
+
+[Capitulum Sexta]
+!2. Cor. 9:7
+v. Ciascuno dia come ha stabilito in cuor suo, non di mala voglia né per forza; perché Dio ama il donatore cordiale.
+$Deo gratias
+
+[Versum 3]
+R. Il Levita Lorenzo fece un'opera buona.
+V. Perché col segno della croce diede la vista ai ciechi.
+
+[Ant 3]
+Il beato Lorenzo, * mentre, posto sulla graticola, bruciava, disse al crudelissimo tiranno : È già arrostito, volta e mangia; ché i beni della Chiesa che domandi, le mani dei poveri li han già trasportati nei tesori celesti.

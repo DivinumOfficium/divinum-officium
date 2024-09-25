@@ -1,9 +1,5 @@
 [Rank]
-Ste Thérèse, Vierge;;Duplex;;3;;vide C6
-
-[Rule]
-vide C6 ;
-9 lectiones
+Ste Thérèse, Vierge;;Duplex;;3;;vide C6b
 
 [Hymnus Vespera]
 v. Messagère du Roi suprême,
@@ -28,11 +24,7 @@ Et dans tous les siècles.
 Ainsi soit-il.
 
 [Oratio]
-Exaucez-nous, ô Dieu, qui êtes notre salut, et faites que, célébrant avec joie la fête de la bienheureuse Thérèse, Votre Vierge, nous soyons nourris du pain de sa céleste doctrine et formés aux sentiments d’une piété fervente.
-$Per Dominum
-
-[Hymnus Matutinum]
-@Sancti/10-15:Hymnus Vespera
+@Commune/C6b::s/N\./Thérèse/
 
 [Lectio4]
 La vierge Thérèse naquit à Avila, en Espagne, de parents illustres par leur naissance et leur piété. Nourrie par eux du lait de la crainte de Dieu, elle donna, dans un âge bien tendre, un merveilleux présage de sa sainteté future. Car en lisant les actes des saints Martyrs et en les méditant, elle fut tellement embrasée du feu de l’Esprit-Saint que, s’enfuyant de la maison paternelle, elle voulut passer en Afrique, afin d’y donner sa vie pour la gloire de Jésus-Christ et le salut des âmes. Son oncle paternel l’ayant ramenée, elle compensa par des aumônes et d’autres œuvres de piété le souhait ardent, [mais irréalisé, ] du martyre, se plaignant avec des larmes continuelles d’avoir été privée d’un si heureux sort. Sa mère étant morte, elle pria la très sainte Vierge de lui montrer qu’elle était mère aussi, et son vœu fut exaucé, car la Mère de Dieu la protégea toujours comme sa fille. En sa vingtième année, elle entra chez les religieuses de Notre Dame du Mont-Carmel, où, pendant dix-huit ans, elle fut affligée de très grandes maladies et agitée de diverses tentations ; mais elle demeura ferme sous les armes de la pénitence chrétienne, sans être soutenue par l’aliment de ces consolations célestes dont la sainteté est ordinairement comblée même sur la terre.
@@ -46,9 +38,6 @@ Or, tandis qu’elle donnait de constants exemples de vertus, elle brûlait d’
 [Lectio94]
 Thérèse naquit à Avila, en Espagne, de pieux et nobles parents. Encore fillette, enflammée par le désir du martyre, elle s’échappa de la maison paternelle et tenta de gagner l’Afrique. Ramenée chez elle, elle se mit tout entière sous la protection de la bienheureuse Vierge, après la mort de sa mère et, à vingt ans, embrassa la règle des religieuses de Notre-Dame du Mont-Carmel. Préoccupée du salut des âmes, elle bâtit plusieurs monastères et proposa aux femmes, puis aux hommes, l’observance de 1’andenne règle des Carmes. Pour les infidèles et les hérétiques, elle offrait à Dieu continuellement les tourments volontaires dont elle affligeait son propre corps. Brûlant du feu de l’amour divin, elle émit le vœu héroïque de faire toujours ce qu’elle jugerait être le plus parfait, et mérita qu’un Ange lui transperçât le cœur avec un javelot enflammé. Elle composa un grand nombre d’écrits, d’une sagesse céleste et donna beaucoup d’enseignements, par la parole et l’exemple, ayant souvent à la bouche ces mots : « Seigneur, ou souffrir ou mourir. » Illustre par le don de prophétie et d’autres faveurs, elle rendit son âme très pure à Dieu, à Albe, l’an quinze cent quatre- vingt-deux, le jour des Ides d’Octobre, à l’âge de soixante- sept ans.
 &teDeum
-
-[Capitulum Laudes]
-@Commune/C6
 
 [Hymnus Laudes]
 v. Voici venu le jour,

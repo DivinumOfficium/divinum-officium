@@ -4,13 +4,17 @@ In Octava S. Stephani;;Simplex;;1.3;;vide Sancti/12-26
 [Rank] (rubrica 196 aut rubrica 1955)
 Die Secunda Januarii;;Feria;;1.2;;vide Sancti/01-01
 
-[Rank] (rubrica Trident)
+[Rank] (rubrica tridentina)
 In Octava Sancti Stephani;;Duplex;;3.1;;ex Sancti/12-26
 
 [Rule]
 vide Sancti/12-26
 Feria Te Deum
 Comkey=70
+
+[Oratio] (rubrica divino aut rubrica tridentina aut rubrica monastica)
+Omnípotens sempitérne Deus, qui primítias Mártyrum in beáti Levítæ Stéphani sánguine dedicásti: tríbue quǽsumus; ut pro nobis intercéssor exsístat, qui pro suis étiam persecutóribus exorávit Dóminum nostrum Jesum Christum Fílium tuum: 
+$Qui tecum
 
 [Lectio1]
 De Epístola ad Romános
@@ -21,6 +25,9 @@ De Epístola ad Romános
 4 patiéntia autem probatiónem, probátio vero spem:
 5 spes autem non confúndit: quia cáritas Dei diffúsa est in córdibus nostris per Spíritum Sanctum, qui datus est nobis.
 
+[Responsory1]
+@Sancti/01-01:Responsory1
+
 [Lectio2]
 !Rom 5:6-9
 6 Ut quid enim Christus, cum adhuc infírmi essémus, secúndum tempus, pro ímpiis mórtuus est? 
@@ -28,26 +35,17 @@ De Epístola ad Romános
 8 Comméndat autem caritátem suam Deus in nobis: quóniam cum adhuc peccatóres essémus, secúndum tempus, 
 9 Christus pro nobis mórtuus est: multo ígitur magis nunc justificáti in sánguine ipsíus, salvi érimus ab ira per ipsum.
 
+[Responsory2]
+@Sancti/01-01:Responsory2
+
 [Lectio3]
 !Rom 5:10-12
 10 Si enim cum inimíci essémus, reconciliáti sumus Deo per mortem Fílii ejus: multo magis reconciliáti, salvi érimus in vita ipsíus. 
 11 Non solum autem: sed et gloriámur in Deo per Dóminum nostrum Jesum Christum, per quem nunc reconciliatiónem accépimus. 
 12 Proptérea sicut per unum hóminem peccátum in hunc mundum intrávit, et per peccátum mors, et ita in omnes hómines mors pertránsiit, in quo omnes peccavérunt.
 
-[Responsory1]
-@Sancti/01-01:Responsory1
-
-[Responsory2]
-@Sancti/01-01:Responsory2
-
 [Responsory3]
 @Sancti/01-01:Responsory3
-
-[Lectio93]
-Sermo sancti Augustíni Epíscopi
-!Sermo 2 de S. Stephano
-Christus caput Mártyrum prior passus est pro nobis, relínquens vobis exémplum, ut sequámini vestígia ejus. Cujus passiónis vestígia prosecútus beatíssimus Stéphanus, confiténdo Christum lapidátus a Judǽis, corónam méruit tamquam suo sibi nómine pósitam. Stéphanus enim Græce, Latíne coróna appellátur. Jam coróna nomen habébat, et ídeo palmam martýrii suo nómine præferébat. Qui cum lapidarétur, non solum non exspectábat de persecutóribus reportáre vindíctam, sed eis pótius a Deo véniam postulábat.
-&teDeum
 
 [Lectio4]
 Sermo sancti Augustíni Epíscopi.
@@ -76,9 +74,11 @@ Ecce relinquétur vobis domus vestra desérta. Hoc ipsum ex persóna Jeremíæ j
 Dico enim vobis: Non me vidébitis ámodo, donec dicátis: Benedíctus qui venit in nómine Dómini. Ad Jerúsalem lóquitur, et ad pópulum Judæórum. Versículum autem istum, quo et párvuli atque lacténtes in ingréssu Jerúsalem Dómini Salvatóris usi sunt, quando dixérunt: Benedíctus qui venit in nómine Dómini, hosánna in excélsis, sumpsit de centésimo décimo séptimo Psalmo, qui maniféste de advéntu Dómini scriptus est.
 &teDeum
 
-[Oratio] (rubrica divino aut rubrica tridentina aut rubrica monastica)
-Omnípotens sempitérne Deus, qui primítias Mártyrum in beáti Levítæ Stéphani sánguine dedicásti: tríbue quǽsumus; ut pro nobis intercéssor exsístat, qui pro suis étiam persecutóribus exorávit Dóminum nostrum Jesum Christum Fílium tuum: 
-$Qui tecum
+[Lectio93]
+Sermo sancti Augustíni Epíscopi
+!Sermo 2 de S. Stephano
+Christus caput Mártyrum prior passus est pro nobis, relínquens vobis exémplum, ut sequámini vestígia ejus. Cujus passiónis vestígia prosecútus beatíssimus Stéphanus, confiténdo Christum lapidátus a Judǽis, corónam méruit tamquam suo sibi nómine pósitam. Stéphanus enim Græce, Latíne coróna appellátur. Jam coróna nomen habébat, et ídeo palmam martýrii suo nómine præferébat. Qui cum lapidarétur, non solum non exspectábat de persecutóribus reportáre vindíctam, sed eis pótius a Deo véniam postulábat.
+&teDeum
 
-[Capitulum Laudes](rubrica 196)
+[Capitulum Laudes] (rubrica 196)
 @Sancti/01-01

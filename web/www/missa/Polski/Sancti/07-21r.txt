@@ -1,12 +1,16 @@
 [Rank]
 S. Laurentii a Brundusio Confessoris;;Duplex;;3;;vide C5a
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Laurentii a Brundusio Confessoris;;Duplex optional;;2;;vide C5a
 
 [Rule]
 vide C5a;
 Gloria
+
+[Oratio]
+Boże, który udzieliłeś św. Wawrzyńcowi, Wyznawcy Twemu i Doktorowi, ducha mądrości i męstwa do pokonywania największych trudności dla chwały Twego imienia i zbawienia dusz, daj nam w tymże duchu poznawać, co należy czynić, a gdy poznamy, za jego wstawiennictwem wykonywać.
+$Per Dominum
 
 [Comment]
 # 21 VII – Św. Wawrzyńca z Brindisi, Wyznawcy i Doktora Kościoła
@@ -21,45 +25,8 @@ Msza wspólna nr 20 In medio, z wyjątkiem kolekty
 ! Szaty białe
 Nie znamy szczegółów życia tej świętej. Starożytny kościół w Rzymie świadczy o wielkiej czci, którą cieszyła się wśród tamtejszych chrześcijan.
 
-[Introitus]
-@Commune/C4a:Introitus
-
-[Oratio]
-Boże, który udzieliłeś św. Wawrzyńcowi, Wyznawcy Twemu i Doktorowi, ducha mądrości i męstwa do pokonywania największych trudności dla chwały Twego imienia i zbawienia dusz, daj nam w tymże duchu poznawać, co należy czynić, a gdy poznamy, za jego wstawiennictwem wykonywać.
-$Per Dominum
-
-[Lectio]
-@Commune/C4a:Lectio
-
-[Graduale]
-@Commune/C4a:Graduale
-
-[Evangelium]
-@Commune/C4a:Evangelium
-
-[Offertorium]
-@Commune/C4a:Offertorium
-
 [Secreta]
-@Commune/C4a:Secreta
-
-[Communio]
-@Commune/C4a:Communio
+@Commune/C4a:Secreta1:s/N\./Wawrzyńca/
 
 [Postcommunio]
-@Commune/C4a:Postcommunio
-
-[Commemoratio Oratio]
-! Wspomnienie św. Praksedy
-Wysłuchaj nas, Boże, nasz Zbawicielu i spraw, abyśmy radując się z uroczystości świętej Twojej Dziewicy Praksedy, nabyli uczucia synowskiego oddania.
-$Per Dominum
-
-[Commemoratio Secreta]
-! Wspomnienie św. Praksedy
-Przyjmij, Panie, ofiarę, którą lud Tobie oddany składa ku czci Świętych Twoich, wiedząc, że dzięki ich zasługom doznał pomocy w ucisku.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! Wspomnienie św. Praksedy
-Nasyciłeś, Panie, rodzinę Twoją świętymi darami; wzmacniaj nas za wstawiennictwem tej, której uroczystość obchodzimy.
-$Per Dominum
+@Commune/C4a:Postcommunio1:s/N\./Wawrzyńca/

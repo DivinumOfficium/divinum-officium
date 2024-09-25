@@ -13,6 +13,12 @@ Feria Te Deum
 No secunda vespera
 Infra octavam Epiphaniæ Domini
 
+[Hymnus Vespera] (rubrica 196)
+@Sancti/01-06:Hymnus Vespera
+
+[Ant 1]
+@Sancti/01-11:Ant 3
+
 [Lectio1]
 De Epístola ad Romános
 !Rom 16:1-5
@@ -22,20 +28,14 @@ De Epístola ad Romános
 4 (qui pro ánima mea suas cervíces supposuérunt: quibus non solus ego grátias ago, sed et cunctæ ecclésiæ géntium),
 5 et domésticam ecclésiam eórum. Salutáte Epǽnetum diléctum mihi, qui est primitívus Asiæ in Christo.
 
-[Lectio1](rubrica 196)
+[Lectio1] (rubrica 196)
 @Tempora/Epi1-0a:Lectio1
 
-[Responsory1](rubrica 196)
+[Responsory1] (rubrica 196)
 @Sancti/01-06:Responsory1
 
-[Responsory1](rubrica tridentina aut rubrica divino)
+[Responsory1] (rubrica tridentina aut rubrica divino)
 @Sancti/01-06:Responsory1InfraOctavam
-
-[Responsory2]
-@Sancti/01-06:Responsory2
-
-[Responsory3]
-@Sancti/01-06:Responsory3
 
 [Lectio2]
 !Rom 16:17-19
@@ -43,18 +43,24 @@ De Epístola ad Romános
 18 Hujuscémodi enim Christo Dómino nostro non sérviunt, sed suo ventri: et per dulces sermónes et benedictiónes sedúcunt corda innocéntium.
 19 Vestra enim obediéntia in omnem locum divulgáta est. Gáudeo ígitur in vobis. Sed volo vos sapiéntes esse in bono, et símplices in malo.
 
-[Lectio2](rubrica 196)
+[Lectio2] (rubrica 196)
 @Tempora/Epi1-0a:Lectio2
 
-[Lectio3](rubrica 196)
-@Tempora/Epi1-0a:Lectio3
+[Responsory2]
+@Sancti/01-06:Responsory2
 
-[Lectio3](rubrica tridentina aut rubrica divino)
+[Lectio3] 
 !Rom 16:21-24
 21 Salútat vos Timótheus adjútor meus, et Lúcius, et Jason, et Sosípater cognáti mei.
 22 Salúto vos ego Tértius, qui scripsi epístolam, in Dómino.
 23 Salútat vos Cajus hospes meus, et univérsa ecclésia. Salútat vos Erástus arcárius civitátis, et Quartus, frater.
 24 Grátia Dómini nostri Jesu Christi cum ómnibus vobis. Amen.
+
+[Lectio3] (rubrica 196)
+@Tempora/Epi1-0a:Lectio3
+
+[Responsory3]
+@Sancti/01-06:Responsory3
 
 [Lectio4]
 Sermo sancti Leónis Papæ
@@ -83,21 +89,14 @@ Nisi enim res ita se habéret, cum ómnia quæ istic videbántur, vília essent,
 Et, respónso accépto in somnis, ne redírent ad Heródem, per áliam viam revérsi sunt in regiónem suam. Hic mihi vide fidem ipsórum, quómodo non offendántur, sed sint quiéti et obtemperántes, neque turbéntur, neque tália mútuo loquántur: Sane, si magnus hic puer est, et si quam habet poténtiam, quid opus fuga et occúlto discéssu? cur vero nos, qui palam et cum fidúcia accéssimus ad pópulum tantum, et coram furénte rege stétimus, quasi fugitívos ex civitáte dimíttit Angelus? At nihil tale vel dixérunt vel cogitárunt. Illud enim máxime ad fidem pértinet, ut nulla mandatórum exquirátur rátio, sed jussis tantum obediátur.
 &teDeum
 
+[Capitulum Laudes] (rubrica 196)
+@Sancti/01-06
+
 [Ant 2]
 Maniféste magnum est * pietátis sacraméntum, quod manifestátum est in carne, justificátum est in spíritu, appáruit Angelis, prædicátum est Géntibus, créditum est in mundo, assúmptum est in glória, allelúja.
 
-[Capitulum Laudes](rubrica 196)
-@Sancti/01-06
-
-[Hymnus Vespera](rubrica 196)
-@Sancti/01-06:Hymnus Vespera
-
-[Versum 3](rubrica 196)
+[Versum 3] (rubrica 196)
 @Sancti/01-06:Versum 1
 
-[Ant 3](rubrica 196)
+[Ant 3] (rubrica 196)
 @Sancti/01-06:Ant 3
-
-[Ant 1]
-@Sancti/01-11:Ant 3
-

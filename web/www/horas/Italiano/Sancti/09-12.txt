@@ -1,20 +1,11 @@
 [Rank]
 S. Nominis Beatae Mariae Virginis;;Duplex majus;;4;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 S. Nominis Beatae Mariae Virginis;;Duplex;;3;;vide C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Nominis Beatae Mariae Virginis;;Duplex optional;;2;;vide C11
-
-[Rule]
-vide C11;
-9 lectiones
-Ipsa Virgo Virginum
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-BMV
 
 [Ant 1]
 Santa Maria, * soccorri i miseri, aiuta i pusillanimi, consola gli afflitti, prega per il popolo, intervieni per il clero, intercedi per il ceto femminile religioso: sentano il tuo soccorso tutti quelli che celebrano la memoria del tuo santo nome.
@@ -33,6 +24,10 @@ O chiunque tu sia, che nel mare di questo mondo li  senti piuttosto sballottare 
 
 [Lectio6]
 Nei pericoli, nelle angustie, nelle perplessità, pensa a Maria, invoca Maria. Non si parta dalla tua bocca, non si parta dal tuo cuore; e, per ottenere l'appoggio delle sue preghiere, non perdere mai di vista gli esempi della sua vita. Seguendo lei, non devii; pregandola, non disperi; pensando a lei, non erri; s'ella ti sostiene, non caschi; s'ella ti protegge, non hai a temere; s'ella ti accompagna, non t'affatichi; s'ella ti è propizia, giungerai al termine, e così sperimenterai in te stesso quanto giustamente fu detto: «E la Vergine si chiamava Maria». - Questo venerabile nome, già onorato da molto tempo in certe parti dell'orbe cristiano, con culto speciale, dopo l'insigne vittoria riportata a Vienna in Austria col soccorso della medesima Vergine Maria sul crudelissimo sultano dei Turchi, che minacciava di soggiogare i popoli cristiani, Papa Innocenzo XI ordinò, che, a perenne memoria di tanto beneficio, si celebrasse ogni anno nella Chiesa universale.
+
+[Lectio94]
+Il santo nome della vergine Maria, che significa stella del mare, si adatta perfettamente alla vergine Madre. Essa infatti, molto giustamente, è paragonata ad una stella perché come la stella emette la sua luce senza alterarsi minimamente, così la Vergine ha dato alla luce un figlio senza pregiudizio della sua verginità. E come la luce emessa non toglie nulla allo splendore della stella, così il Figlio non toglie nulla all'integrità della Vergine. Lei è dunque quella nobile stella sorta da Giacobbe, posta necessariamente al di sopra di questo mare, grande e profondo splendente per i suoi meriti, luminosa per i suoi esempi.  O chiunque tu sia, che nel mare di questo mondo ti senti sballottato tra burrasche e tempeste, anziché appoggiato sulla terra, non allontanare lo sguardo dalla luce di questa stella. Pensa a Maria, invoca Maria, in modo da sperimentare in te stesso quanto giustamente fu detto : « E il nome della vergine era Maria ».  Questo dolcissimo nome da molto tempo era onorato con speciale devozione in alcune parti del mondo cristiano. Il sommo pontefice Innocenzo XI, dopo la grande vittoria riportata a Vienna, in Austria, sul crudelissimo sultano dei Turchi, che minacciava di soggiogare i popoli cristiani, a perenne ricordo di un così grande beneficio, stabilì che si celebrasse ogni anno, in tutta la Chiesa, la festa del santissimo nome di Maria.
+&teDeum
 
 [Lectio7]
 Lettura del santo Vangelo secondo Luca
@@ -54,8 +49,4 @@ Infine, affinché in Maria la terra friabile del nostro  corpo non si sprofondas
 
 [Lectio9]
 È beata, ché sola fra tutti meritò di udire: «Hai trovato grazia». Quanta? Quanta aveva detto prima: piena. E veramente piena, essendosi la grazia riversata a flotti abbondanti su questa creatura, così che l'aveva penetrata e riempita: «Perché hai trovato grazia presso Dio» (Ibi). Nel dir ciò, l'Angelo stesso è stupito che, o solo una donna, o tutti gli uomini abbiano meritato la vita per una donna: l'Angelo è sbigottito al vedere scendere nell'angusto seno d'una vergine tutto Dio, che l'universo intero non può contenere. Quindi è che l'Angelo indugia, quindi è che chiama la Vergine con ciò ch'esprime il suo merito, la saluta menzionando la grazia, e a lei che ascolta svela a poco a poco il suo messaggio, senza dubbio affin di farne risaltare il significato, e a poco a poco finisce di calmare la sua lunga trepidazione.
-&teDeum
-
-[Lectio94]
-Il santo nome della vergine Maria, che significa stella del mare, si adatta perfettamente alla vergine Madre. Essa infatti, molto giustamente, è paragonata ad una stella perché come la stella emette la sua luce senza alterarsi minimamente, così la Vergine ha dato alla luce un figlio senza pregiudizio della sua verginità. E come la luce emessa non toglie nulla allo splendore della stella, così il Figlio non toglie nulla all'integrità della Vergine. Lei è dunque quella nobile stella sorta da Giacobbe, posta necessariamente al di sopra di questo mare, grande e profondo splendente per i suoi meriti, luminosa per i suoi esempi.  O chiunque tu sia, che nel mare di questo mondo ti senti sballottato tra burrasche e tempeste, anziché appoggiato sulla terra, non allontanare lo sguardo dalla luce di questa stella. Pensa a Maria, invoca Maria, in modo da sperimentare in te stesso quanto giustamente fu detto : « E il nome della vergine era Maria ».  Questo dolcissimo nome da molto tempo era onorato con speciale devozione in alcune parti del mondo cristiano. Il sommo pontefice Innocenzo XI, dopo la grande vittoria riportata a Vienna, in Austria, sul crudelissimo sultano dei Turchi, che minacciava di soggiogare i popoli cristiani, a perenne ricordo di un così grande beneficio, stabilì che si celebrasse ogni anno, in tutta la Chiesa, la festa del santissimo nome di Maria.
 &teDeum

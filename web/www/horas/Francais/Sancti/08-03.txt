@@ -1,19 +1,6 @@
 [Rank]
 Invention de St Etienne Protomartyr;;Semiduplex;;2;;vide C2
 
-[Rule]
-vide C2;
-9 lectiones
-
-[Ant Vespera]
-@Sancti/12-26:Ant Laudes
-
-[Ant 1]
-@Sancti/12-26
-
-[Versum 1]
-@Commune/C2:Versum 1
-
 [Oratio]
 @Sancti/12-26::s/natalícia/Inventiónem/
 
@@ -22,7 +9,7 @@ Des Actes des Apôtres
 !Acts 7:51-54
 51	(Hommes) au cou raide, incirconcis de coeur et d'oreille, vous résistez toujours à l'Esprit-Saint: tels vos pères, tels vous-mêmes.
 52	Lequel des prophètes vos pères n'ont-ils pas persécuté? Ils ont même tué ceux qui prédisaient la venue du Juste, envers lequel maintenant vous êtes devenus traîtres et meurtriers,
-53	(vous) qui avez reçu la Loi par le ministère des anges, et ne l'avez pas gardée! "
+53	(vous) qui avez reçu la Loi par le ministère des anges, et ne l'avez pas gardée! « 
 54	En entendant ces paroles, ils avaient le coeur exaspéré, et ils grinçaient des dents contre lui.
 
 [Responsory1]
@@ -68,6 +55,10 @@ Lorsque l’Évêque Project apportait à Tibilis des reliques du très glorieux
 [Responsory6]
 @Sancti/12-26
 
+[Lectio94]
+Les corps des saints Étienne, premier Martyr, Gamaliel, Nicodème et Abibon,qui exhalaient une odeur des plus suaves, furent retrouvés près de Jérusalem, par l'évêque Jean. Cet événement y attira une foule immense et un grand nombre de malades et d’infirmes souffrant de maux divers, retournèrent chez eux sains et bien portants. Les restes vénérables de saint Étienne, qui avaient été déposés, au milieu d’un grand concours de peuple, dans la sainte église de Sion, furent transportés à Constantinople, sous Théodose le Jeune. De là ils furent transférés à Rome, sous le pontificat de Pélage I, et placés, au Campo Verano, dans le tombeau de saint Laurent Martyr.
+&teDeum
+
 [Lectio7]
 Lecture du saint Évangile selon saint Matthieu.
 !Matt 23:34-39
@@ -88,36 +79,4 @@ Cherchons quel est ce Zacharie, fils de Barachie, car nous trouvons dans les Liv
 
 [Lectio9]
 D’autres enfin prétendent que ce Zacharie est celui qui fut mis à mort par Joas, roi de Juda, entre le temple et l’autel, comme le racontent les livres des Rois. Mais il faut observer que le Zacharie en question n’est point fils de Barachie, mais du grand prêtre Joïada. Aussi l’Écriture dit-elle : « Joas ne se souvint pas que son père Joäda lui avait fait du bien ». Comme donc d’un côté, nous avons Zacharie, et comme d’autre part, l’endroit où il fut mis à mort est bien celui indiqué plus haut, cherchons pour quelle raison on le dit fils de Barachie et non de Joïada. « Barachie » se traduit, en notre langue, « le béni du Seigneur, » et ce serait donc la justice du grand prêtre Joïada qui indiquerait l’emploi de ce nom hébreu de Barachie, nom attestant les bénédictions divines. Nous trouvons dans l’Évangile dont se servent les Nazaréens : « fils de Joïada », au lieu de « fils de Barachie ».
-&teDeum
-
-[Ant Laudes]
-@Sancti/12-26
-
-[Capitulum Laudes]
-@Sancti/12-26:Capitulum Laudes
-
-[Versum 2]
-@Sancti/12-26
-
-[Ant 2]
-@:Ant 1
-
-[Lectio Prima]
-@Sancti/12-26
-
-[Capitulum Sexta]
-@Sancti/12-26
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Versum 3]
-@Sancti/12-26
-
-[Ant 3]
-@Sancti/12-26
-
-[Lectio94]
-Les corps des saints Étienne, premier Martyr, Gamaliel, Nicodème et Abibon,qui exhalaient une odeur des plus suaves, furent retrouvés près de Jérusalem, par l'évêque Jean. Cet événement y attira une foule immense et un grand nombre de malades et d’infirmes souffrant de maux divers, retournèrent chez eux sains et bien portants. Les restes vénérables de saint Étienne, qui avaient été déposés, au milieu d’un grand concours de peuple, dans la sainte église de Sion, furent transportés à Constantinople, sous Théodose le Jeune. De là ils furent transférés à Rome, sous le pontificat de Pélage I, et placés, au Campo Verano, dans le tombeau de saint Laurent Martyr.
 &teDeum

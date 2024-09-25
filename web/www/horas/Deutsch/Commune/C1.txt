@@ -1,16 +1,12 @@
 [Name]
-Commune Apostolorum
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
+Kommune der Apostel
 
 [Ant Vespera]
-Dies ist mein Gebot, * daß ihr einander liebet, wie ich euch liebe.;;109
-Eine größere Liebe * hat niemand als die, daß man sein Leben für seine Freunde hingibt.;;110
-Ihr seid meine Freunde, * wenn ihr das tut, was ich euch gebiete.;;111
-Selig sind die Segenswirker, * selig, die ein reines Herz haben, denn sie werden sich an Gott laben.;;112
-Wenn ihr geduldig ausharret, * werdet ihr eure Seelen voll und ganz gewinnen.;;116
+Dies ist mein Gebot, * daß ihr einander liebet, wie ich euch liebe.
+Eine größere Liebe * hat niemand als die, daß man sein Leben für seine Freunde hingibt.
+Ihr seid meine Freunde, * wenn ihr das tut, was ich euch gebiete.
+Selig sind die Segenswirker, * selig, die ein reines Herz haben, denn sie werden sich an Gott laben.
+Wenn ihr geduldig ausharret, * werdet ihr eure Seelen voll und ganz gewinnen.
 
 [Hymnus Vespera]
 {:H-Exsultetorbisgaudiis:}v. Von Lob erschalle hocherfreut
@@ -43,9 +39,6 @@ Die Erd und Himmel ewig preist,
 Sei, wie sie war, so allezeit
 Die höchste Ehr und Herrlichkeit.
 Amen.
-
-[HymnusM Vespera]
-@:Hymnus Vespera
 
 [Versum 1]
 V. In alle Lande ist gedrungen ihre Kunde.
@@ -87,19 +80,21 @@ Amen.
 [Ant Matutinum]
 In alle Lande * ist gedrungen ihre Kunde, bis an der Erde Grenzen ihre Meldung.;;18
 Die Gottesdiener riefen, * und es hat sie angehört der Herr.;;33
-Du verteilst sie * als Fürsten in sämtliche Länder, sie werden, o Herr, das Andenken an dich erhalten.;;44
-V. In alle Lande ist gedrungen ihre Kunde.
-R. Bis an der Erde Grenzen ihre Meldung.
+Du verteilst sie * als Fürsten in sämtliche Länder, sie werden, o Herr, das Andenken an dich erhalten.;;44.
 Die Führer der Völker * sind nun versammelt bei Abrahams Gotte.;;46
 Du hast den Landbesitz gegeben * den treuen Verehrern deiner Majestät, o Herr.;;60
 Sie kündeten, * was Gott getan hat und achteten auf seine Werke.;;63
-V. Du verteilst sie, o Herr, als Fürsten in sämtliche Länder.
-R. Sie werden, o Herr, das Andenken an dich erhalten.
 Groß wird werden * die Siegeskraft des treuen Gottesdieners, alleluja.;;74
 Glück leuchtet auf * dem Gottesdiener und Wonne denen, die im Herzen richtig denken, alleluja.;;96
 Sie achteten * auf deine Offenbarung und auf die Gebote, die du ihnen gegeben, alleluja.;;98
+
+[Nocturn 2 Versum]
+V. Du verteilst sie als Fürsten in sämtliche Länder.
+R. Sie werden, o Herr, das Andenken an dich erhalten.
+
+[Nocturn 3 Versum]
 V. Überaus geehrt, o Gott, sind deine Freunde.
-R. Und überaus gewaltig scheint mir ihre Würde.
+R. Und überaus gewaltig erscheint ihre Würde.
 
 [Lectio1]
 Aus dem ersten Briefe des heiligen Apostels Paulus an die Korinther.
@@ -149,7 +144,7 @@ R. Denn es wird euch in jener Stunde eingegeben, was ihr sagen sollt.
 [Lectio4]
 Predigt vom heiligen Papste Gregor.
 !Hom. 30 zu den Evangelien, nach der Mitte.
-Es steht geschrieben: "Der Geist des Herrn hat den Himmelsbau so schön gemacht." Die Schönheiten am Himmelsbau sind doch die Auszeichnungen der Prediger. Diese Schönheiten also zählt Paulus auf, wenn er sagt: "Einem wird durch den Geist besondere Weisheit verliehen, einem anderen besondere Kenntnisse in Anpassung an denselben Geist, einem anderen die Gabe, Heilungen zu bewirken durch einen und denselben Geist, einem anderen die Kraft, große Dinge zu wirken, einem anderen die Gabe, Gottes Wort auszulegen, einem anderen die Gabe zu erkennen, von welchem Geiste sich einer lenken lässt, einem anderen die Gabe, verschiedene Sprachen zu reden, einem anderen die Gabe, das Geredete zu erklären. Aber alles das wirkt ein und derselbe Geist, der den einzelnen zuteilt, wie es ihm beliebt."
+Es steht geschrieben: „Der Geist des Herrn hat den Himmelsbau so schön gemacht.“ Die Schönheiten am Himmelsbau sind doch die Auszeichnungen der Prediger. Diese Schönheiten also zählt Paulus auf, wenn er sagt: „Einem wird durch den Geist besondere Weisheit verliehen, einem anderen besondere Kenntnisse in Anpassung an denselben Geist, einem anderen die Gabe, Heilungen zu bewirken durch einen und denselben Geist, einem anderen die Kraft, große Dinge zu wirken, einem anderen die Gabe, Gottes Wort auszulegen, einem anderen die Gabe zu erkennen, von welchem Geiste sich einer lenken lässt, einem anderen die Gabe, verschiedene Sprachen zu reden, einem anderen die Gabe, das Geredete zu erklären. Aber alles das wirkt ein und derselbe Geist, der den einzelnen zuteilt, wie es ihm beliebt.“
 
 [Responsory4]
 R. Ich sah Männer beisammen mit glänzenden Gewändern, und der Engel des Herrn sprach zu mir also:
@@ -158,7 +153,7 @@ V. Ich sah einen Engel Gottes mit großer Macht, der im Fluge mitten durch den H
 R. Das sind heilige Männer, die Freunde bei Gott geworden sind.
 
 [Lectio5]
-So viele Auszeichnungen es also unter den Predigern gibt, so viele Schönheiten gibt es im Himmelsbau. Daher ist wiederum anderswo geschrieben: "Durch das Wort des Herrn ist der Himmelsbau begründet." Das Wort des Herrn ist nämlich der Sohn des Vaters. Aber um von demselben Himmelsbau, nämlich von den heiligen Aposteln, zu zeigen, daß die ganze Dreifaltigkeit zugleich gearbeitet hat, wird sogleich von der Gottheit des Heiligen Geistes hinzugefügt: "Und durch den Geist aus seinem Innern alles, was darin an Kraft ist." Des Himmelsbaues Kraft ist also vom Heiligen Geiste genommen; weil sie es nicht wagen dürften, gegen die Mächte dieser Welt aufzutreten, wenn nicht die Gewalt des Heiligen Geistes sie gefestigt hätte. Wie nämlich die Lehrer der heiligen Kirche vor der Ankunft dieses Geistes gewesen sind, wissen wir; und wie tapfer sie geworden sind nach seiner Ankunft, sehen wir.
+So viele Auszeichnungen es also unter den Predigern gibt, so viele Schönheiten gibt es im Himmelsbau. Daher ist wiederum anderswo geschrieben: „Durch das Wort des Herrn ist der Himmelsbau begründet.“ Das Wort des Herrn ist nämlich der Sohn des Vaters. Aber um von demselben Himmelsbau, nämlich von den heiligen Aposteln, zu zeigen, daß die ganze Dreifaltigkeit zugleich gearbeitet hat, wird sogleich von der Gottheit des Heiligen Geistes hinzugefügt: „Und durch den Geist aus seinem Innern alles, was darin an Kraft ist.“ Des Himmelsbaues Kraft ist also vom Heiligen Geiste genommen; weil sie es nicht wagen dürften, gegen die Mächte dieser Welt aufzutreten, wenn nicht die Gewalt des Heiligen Geistes sie gefestigt hätte. Wie nämlich die Lehrer der heiligen Kirche vor der Ankunft dieses Geistes gewesen sind, wissen wir; und wie tapfer sie geworden sind nach seiner Ankunft, sehen wir.
 
 [Responsory5]
 R. Selig seid ihr, wenn euch die Menschen schmähen und euch verfolgen, und wenn sie alles Schlechte gegen euch reden, auch in verlogener Weise, um meinetwegen.
@@ -167,7 +162,7 @@ V. Wenn die Menschen euch hassen und euch von sich ausschließen, und euch wie e
 R. Freuet euch und jubelt: denn alsdann ist groß euer Lohn im Himmel.
 
 [Lectio6]
-Gewiss kann sogar von diesem Hirten der Kirche, bei dessen heiligstem Leibe Wir den Thron haben, jene die Tür hütende Magd sagen, mit welcher Schwächlichkeit und mit welcher Angst er behaftet war vor der Ankunft des Heiligen Geistes. Durch ein Wort eines Weibes in Verwirrung gebracht, hat er, weil er Furcht vor dem Sterben hatte, denjenigen verleugnet, der das Leben ist. Und dabei ist noch zu bedenken, daß derjenige, den Petrus als Gefangenen auf ebener Erde stehend verleugnete, derselbe war, den, als er am Galgen hing, der Schächer am Kreuze frei bekannte. Aber wir wollen hören, wie dieser so ängstliche Mann nach der Ankunft des Heiligen Geistes sich benimmt. Es kommen die Behörden und die Ältesten zusammen, die Apostel werden geschlagen und es wird ihnen gesagt, sie dürften nicht von Jesus reden; Petrus entgegnet mit großem Freimut: "Man muss Gott mehr gehorchen als den Menschen."
+Gewiss kann sogar von diesem Hirten der Kirche, bei dessen heiligstem Leibe Wir den Thron haben, jene die Tür hütende Magd sagen, mit welcher Schwächlichkeit und mit welcher Angst er behaftet war vor der Ankunft des Heiligen Geistes. Durch ein Wort eines Weibes in Verwirrung gebracht, hat er, weil er Furcht vor dem Sterben hatte, denjenigen verleugnet, der das Leben ist. Und dabei ist noch zu bedenken, daß derjenige, den Petrus als Gefangenen auf ebener Erde stehend verleugnete, derselbe war, den, als er am Galgen hing, der Schächer am Kreuze frei bekannte. Aber wir wollen hören, wie dieser so ängstliche Mann nach der Ankunft des Heiligen Geistes sich benimmt. Es kommen die Behörden und die Ältesten zusammen, die Apostel werden geschlagen und es wird ihnen gesagt, sie dürften nicht von Jesus reden; Petrus entgegnet mit großem Freimut: „Man muss Gott mehr gehorchen als den Menschen.“
 
 [Responsory6]
 R. Das sind die siegreichen Männer und die Freunde Gottes, die die Weisungen von Königen verachtet und nun ewigen Lohn verdient haben;
@@ -184,7 +179,7 @@ In jener Zeit sagte Simon Petrus zu Jesus: Siehe, wir haben alles verlassen und 
 _
 Predigt des heiligen Priesters Hieronymus.
 !Buch 3 über Matth. Kapitel 19.
-Großes Vertrauen! Petrus war ein Fischer, er war nicht reich, er verdiente sein Brot mit seiner Hand und seinem Geschick, und dennoch ist er so kühn und sagt zuversichtlich: Wir haben alles aufgegeben. Und weil es nicht genügt, nur zu verlassen, fügt er hinzu, was zu tun ist, um vollkommen zu sein, und folgt dir nach. Wir haben getan, was du uns befohlen hast; welchen Lohn wirst du uns geben? Und Jesus sprach zu ihnen: Amen, ich sage euch, dass ihr, die ihr mir nachgefolgt seid, in der Wiedergeburt, wenn der Menschensohn auf dem Thron seiner Herrlichkeit sitzen wird, auch auf zwölf Thronen sitzen werdet und die zwölf Stämme Israels richten. Er sagte nicht: "Ihr, die ihr alles verlassen habt", denn das tat auch der Philosoph Krates, und es sind viele, die nichts auf Reichtum gesetzt haben, sondern: "Ihr, die ihr mir nachgefolgt seid." Dies taten die Apostel, und dies tun die Gläubigen.
+Großes Vertrauen! Petrus war ein Fischer, er war nicht reich, er verdiente sein Brot mit seiner Hand und seinem Geschick, und dennoch ist er so kühn und sagt zuversichtlich: Wir haben alles aufgegeben. Und weil es nicht genügt, nur zu verlassen, fügt er hinzu, was zu tun ist, um vollkommen zu sein, und folgt dir nach. Wir haben getan, was du uns befohlen hast; welchen Lohn wirst du uns geben? Und Jesus sprach zu ihnen: Amen, ich sage euch, dass ihr, die ihr mir nachgefolgt seid, in der Wiedergeburt, wenn der Menschensohn auf dem Thron seiner Herrlichkeit sitzen wird, auch auf zwölf Thronen sitzen werdet und die zwölf Stämme Israels richten. Er sagte nicht: „Ihr, die ihr alles verlassen habt“, denn das tat auch der Philosoph Krates, und es sind viele, die nichts auf Reichtum gesetzt haben, sondern: „Ihr, die ihr mir nachgefolgt seid.“ Dies taten die Apostel, und dies tun die Gläubigen.
 
 [Responsory7]
 R. Das sind diejenigen, die während ihres irdischen Lebens die Kirche gepflanzt haben mit ihrem Blute.
@@ -204,15 +199,8 @@ R. Auf Grund ihrer Lehre glänzt die Kirche wie auf Grund der Sonne der Mond.
 R. Auf Grund ihrer Lehre glänzt die Kirche wie auf Grund der Sonne der Mond.
 
 [Lectio9]
-Durch diese Worte "hundertfach" wollen manche meinen, dass es nach der Auferstehung tausend Jahre geben wird, in denen die, die alles verlassen haben, das Hundertfache von dem erhalten werden, was sie verlassen haben, und das ewige Leben erben werden. Solche Menschen bedenken nicht, dass dies zwar in anderen Dingen würdig wäre, aber in Bezug auf die Frauen unschicklich ist; denn es ziemt sich nicht zu denken, dass derjenige, der in dieser Welt eine Frau verlassen hat, in der kommenden hundert Frauen erhalten wird. Es heißt aber, daß jeder, der um des Heilandes willen das Irdische verlassen hat, das Geistliche empfangen wird, das, wenn es richtig gegen das Irdische abgewogen wird, so ist, als ob hundertfach gegen eines abgewogen würde.
+Durch diese Worte „hundertfach“ wollen manche meinen, dass es nach der Auferstehung tausend Jahre geben wird, in denen die, die alles verlassen haben, das Hundertfache von dem erhalten werden, was sie verlassen haben, und das ewige Leben erben werden. Solche Menschen bedenken nicht, dass dies zwar in anderen Dingen würdig wäre, aber in Bezug auf die Frauen unschicklich ist; denn es ziemt sich nicht zu denken, dass derjenige, der in dieser Welt eine Frau verlassen hat, in der kommenden hundert Frauen erhalten wird. Es heißt aber, daß jeder, der um des Heilandes willen das Irdische verlassen hat, das Geistliche empfangen wird, das, wenn es richtig gegen das Irdische abgewogen wird, so ist, als ob hundertfach gegen eines abgewogen würde.
 &teDeum
-
-[Ant Laudes]
-Dies ist mein Gebot, * daß ihr einander liebet, wie ich euch liebe.
-Eine größere Liebe * hat niemand als die, daß man sein Leben für seine Freunde hingibt.
-Ihr seid meine Freunde, * wenn ihr das tut, was ich euch gebiete.
-Selig sind die Segenswirker, * selig, die ein reines Herz haben, denn sie werden sich an Gott laben.
-Wenn ihr geduldig ausharret, * werdet ihr eure Seelen voll und ganz gewinnen.
 
 [Capitulum Laudes]
 !Eph 2,19-20
@@ -234,48 +222,34 @@ $Per Dominum
 !Apg 5,41
 Es gingen die Apostel freudig hinweg von der Gerichtssitzung, da sie würdig befunden worden waren, für den Namen Jesu Schmach zu erleiden.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. In alle Lande * Ist gedrungen ihre Kunde.
 R. In alle Lande * Ist gedrungen ihre Kunde.
 V. Und bis an der Erde Grenzen ihre Meldung.
 R. Ist gedrungen ihre Kunde.
 &Gloria
 R. In alle Lande * Ist gedrungen ihre Kunde.
-_
-V. Du verteilst sie als Fürsten in sämtliche Länder.
-R. Sie werden, o Herr, das Andenken an dich erhalten.
 
 [Capitulum Sexta]
 !Apg 5,12
 v. Durch die Apostel aber geschahen viele Wunder und erstaunliche Dinge unter dem Volke.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Du verteilst sie als Fürsten * In sämtliche Länder.
 R. Du verteilst sie als Fürsten * In sämtliche Länder.
 V. Sie werden, o Herr, das Andenken an dich erhalten.
 R. In sämtlichen Ländern.
 &Gloria
 R. Du verteilst sie als Fürsten * In sämtliche Länder.
-_
-V. Überaus geehrt, o Gott, sind deine Freunde.
-R. Und überaus gewaltig erscheint ihre Würde.
 
-[Capitulum Nona]
-!Apg 5,41
-v. Es gingen die Apostel freudig hinweg von der Gerichtssitzung, da sie würdig befunden worden waren, für den Namen Jesu Schmach zu erleiden.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Überaus geehrt sind, * o Gott, deine Freunde.
 R. Überaus geehrt sind, * o Gott, deine Freunde.
 V. Und überaus gewaltig erscheint ihre Würde.
 R. O Gott, deine Freunde.
 &Gloria
 R. Überaus geehrt sind, * o Gott, deine Freunde.
-_
-V. Sie kündeten, was Gott getan hat.
-R. Und achteten auf seine Werke.
 
 [Ant Vespera 3]
 Es hat der Herr geschworen * und nie nimmt er zurück den Schwur: Du sollst ein Priester sein auf ewig.;;109
@@ -284,21 +258,16 @@ Du hast, o Herr, gesprengt * meine Ketten; dir bringe ich ein Dankesopfer.;;115
 Sie geh'n umher * und weinen und streuen ihren Samen.;;125
 Groß ist geworden * ihre Würde und hochgeehrt, o Gott, sind deine Freunde.;;138
 
-[Versum 3]
-V. Sie kündeten, was Gott getan hat.
-R. Und achteten auf seine Werke.
-
 [Ant 3]
 Seid tapfer * im Kampfe und streitet mit dem alten Schleicher; und dann werdet ihr ein ewiges Königtum erhalten, alleluja.
 
 [Lectio4 in 2 loco]
 Aus den Erläuterungen des heiligen Bischofs Augustinus zum Psalm 86.
 !Vor der Mitte. 
-"Ihre Fundamente, die sind auf heiligen Bergen; es liebt der Herr die  Pforten Sions." Weshalb sind Fundamente die Apostel und Propheten? Weil deren ~
-amtliche Gewalt unsere Schwachheit trägt. Warum sind sie Pforten? Weil wir durch sie zum Reich Gottes gelangen. Sie verkünden uns nämlich die Wahrheit; und wenn wir durch sie eintreten, treten wir durch Christus ein. Er ist nämlich der Eingang. Und wenn von zwölf Toren Jerusalems die Rede ist, dann ist Christus sowohl eine Pforte, als auch zwölf Pforten, weil in den zwölf Pforten Christus ist, und deshalb haben wir eine Zwölfzahl der Apostel. Etwas sehr Tiefsinniges ist die Bedeutung dieser Zwölfzahl. "Ihr werdet sitzen", so sagt er, "auf zwölf Thronen und Richter sein von den zwölf Stämmen Israels."
+„Ihre Fundamente, die sind auf heiligen Bergen; es liebt der Herr die  Pforten Sions.“ Weshalb sind Fundamente die Apostel und Propheten? Weil deren  amtliche Gewalt unsere Schwachheit trägt. Warum sind sie Pforten? Weil wir durch sie zum Reich Gottes gelangen. Sie verkünden uns nämlich die Wahrheit; und wenn wir durch sie eintreten, treten wir durch Christus ein. Er ist nämlich der Eingang. Und wenn von zwölf Toren Jerusalems die Rede ist, dann ist Christus sowohl eine Pforte, als auch zwölf Pforten, weil in den zwölf Pforten Christus ist, und deshalb haben wir eine Zwölfzahl der Apostel. Etwas sehr Tiefsinniges ist die Bedeutung dieser Zwölfzahl. „Ihr werdet sitzen“, so sagt er, „auf zwölf Thronen und Richter sein von den zwölf Stämmen Israels.“
 
 [Lectio5 in 2 loco]
-Wenn dort zwölf Throne sind, so gibt es keinen, auf dem der dreizehnte Apostel sitzen könnte und er hat keine Möglichkeit, sein Richteramt auszuüben; und er sagt doch selbst, daß er Richter sein wird, nicht nur über die Menschen, sondern auch über die Engel. Über welche Engel anders als über die abgefallenen Engel? "Wißt ihr nicht", sagt er, "daß wir über die Engel Richter sein werden?" Es könnte die Menge sagen: Was prahlst du damit, daß du Richter sein wirst? Wo wirst du denn sitzen? Von zwölf Thronen hat der Herr zu den zwölf Aposteln gesprochen; Judas ist gefallen, an seine Stelle ist der heilige Matthias eingesetzt worden; die Zwölfzahl der Throne ist ausgefüllt. Zunächst mußt du einen Ort finden, wo du sitzen kannst, und dann kannst du drohen, daß du Richter sein wirst. Was also die zwölf Throne sind, wollen wir sehen. Es ist eine tiefsinnige Andeutung einer gewissen Allgemeinheit, weil sich die Kirche über die ganze Erde ausbreiten sollte; deshalb wird diese ein in Christus fest eingefügter Bau genannt.
+Wenn dort zwölf Throne sind, so gibt es keinen, auf dem der dreizehnte Apostel sitzen könnte und er hat keine Möglichkeit, sein Richteramt auszuüben; und er sagt doch selbst, daß er Richter sein wird, nicht nur über die Menschen, sondern auch über die Engel. Über welche Engel anders als über die abgefallenen Engel? „Wißt ihr nicht“, sagt er, „daß wir über die Engel Richter sein werden?“ Es könnte die Menge sagen: Was prahlst du damit, daß du Richter sein wirst? Wo wirst du denn sitzen? Von zwölf Thronen hat der Herr zu den zwölf Aposteln gesprochen; Judas ist gefallen, an seine Stelle ist der heilige Matthias eingesetzt worden; die Zwölfzahl der Throne ist ausgefüllt. Zunächst mußt du einen Ort finden, wo du sitzen kannst, und dann kannst du drohen, daß du Richter sein wirst. Was also die zwölf Throne sind, wollen wir sehen. Es ist eine tiefsinnige Andeutung einer gewissen Allgemeinheit, weil sich die Kirche über die ganze Erde ausbreiten sollte; deshalb wird diese ein in Christus fest eingefügter Bau genannt.
 
 [Lectio6 in 2 loco]
 Und deshalb gibt es, weil man von überall her zum Richteramt kommt, zwölf Throne; so wie es auch, weil man von allen Seiten in jene Stadt kommt, zwölf Pforten gibt. Also gehören nicht bloß jene zwölf und der Apostel Paulus, sondern alle, die Richter sein werden, wegen des Hinweises auf etwas Allgemeines zu den zwölf Thronen; sowie alle, die eintreten werden, durch die zwölf Tore eintreten zu haben. Es gibt nämlich vier Weltteile, Osten, Westen, Süden und Norden. Diese vier Teile werden ständig in der Heiligen Schrift genannt. Von diesen vier Windrichtungen wird, wie der Herr im Evangelium sagt, daß er von den vier Windrichtungen die Auserwählten zusammenholen werde, also von allen diesen Windrichtungen wird die Kirche gerufen. Wie wird sie gerufen? Von überall her wird sie durch die Dreifaltigkeit gerufen. Sie wird anders nicht gerufen, als durch die Taufe im Namen des Vaters und des Sohnes und des Heiligen Geistes. Wenn vier also durch drei vervielfältigt wird, kommt zwölf heraus.

@@ -1,19 +1,11 @@
 [Rank]
 Wigilja Objawienia;;Semiduplex;;5;;ex Sancti/01-01
 
-[Rank] (rubrica 1570)
-Wigilja Objawienia;;Semiduplex;;2;;ex Sancti/01-01
-
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Piąty dzień stycznia;;Feria;;1.2;;vide Sancti/01-01
 
-[Rule]
-ex Sancti/01-01;
-9 lectiones
-Psalmi Dominica
-Omit preces
-Feria Te Deum
-CPapaM=Telesfora;
+[Rank] (rubrica tridentina)
+Wigilja Objawienia;;Semiduplex;;2;;ex Sancti/01-01
 
 [Commemoratio]
 !Wspomnienie Św. Telesfora Papieża i Męczennika

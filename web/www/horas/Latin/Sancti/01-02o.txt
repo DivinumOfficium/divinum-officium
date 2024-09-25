@@ -1,12 +1,11 @@
-[Rank] 
+[Rank]
 In Octava Sancti Stephani;;Duplex;;3.1;;ex Sancti/12-26
 
-[Rule]
-vide Sancti/12-26
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Feria Te Deum
+[Ant Vespera]
+@Sancti/12-26:Ant Laudes:s/$/;;115/
+
+[Oratio]
+@Sancti/01-02
 
 [Lectio1]
 De Actibus Apostolorum
@@ -46,12 +45,6 @@ De Actibus Apostolorum
 
 [Lectio9]
 @Sancti/01-02
-
-[Oratio]
-@Sancti/01-02
-
-[Ant Vespera]
-@Sancti/12-26:Ant Laudes:s/$/;;115/
 
 [Commemoratio 2]
 @Sancti/12-27:Octava

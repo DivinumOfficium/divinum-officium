@@ -1,9 +1,5 @@
 [Rank]
-Św. Teresy Dziewicy;;Duplex;;3;;vide C6
-
-[Rule]
-vide C6;
-9 lectiones
+Św. Teresy Dziewicy;;Duplex;;3;;vide C6b
 
 [Hymnus Vespera]
 v. Króla najwyższego posłanka,
@@ -28,8 +24,7 @@ teraz i po wszystek wiek.
 Amen.
 
 [Oratio]
-Wysłuchaj nas, Boże, zbawienie nasze: abyśmy, radując się z uroczystości błogosławionej Teresy, Dziewicy, jej niebieskiej nauki pokarmem się żywili i uczucia żarliwej pobożności w sercach swych rozwijali.
-$Per Dominum
+@Commune/C6b::s/N\./Teresy/
 
 [Hymnus Laudes]
 v. To jest dzień, którego

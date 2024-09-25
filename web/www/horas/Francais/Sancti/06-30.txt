@@ -1,18 +1,8 @@
 [Rank]
 En la Commération du l'apôtre St. Paul;;Duplex majus;;4;;ex C1
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 En la Commération du l'apôtre St. Paul;;Duplex;;3;;vide C1
-
-[Rule]
-ex C1 ;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
-Sub unica concl
-No prima vespera
 
 [Ant Vespera]
 Moi, j’ai planté, * Apollo a arrosé ; mais c’est Dieu qui a fait croître, alléluia.
@@ -27,6 +17,15 @@ R. Prédicateur de la vérité dans le monde entier.
 
 [Ant 1]
 Saint Apôtre Paul, * prédicateur de la vérité et Docteur des nations, intercédez pour nous auprès de Dieu, qui vous a choisi.
+
+[Oratio]
+O Dieu, vous avez instruit la multitude des nations par la parole de l’Apôtre saint Paul, accordez à notre demande, qu’en fêtant sa naissance céleste, nous sentions l’effet de son patronage auprès de vous.
+$Per Dominum
+_
+@Sancti/01-25:Commemoratio4
+
+[Commemoratio]
+@Sancti/06-24:Octava
 
 [Hymnus Matutinum]
 v. Paul, glorieux Docteur, mettez l’ordre dans nos mœurs,
@@ -87,8 +86,8 @@ R. C’est pourquoi elle est prête pour moi, la couronne de justice.
 [Lectio3]
 !Act 13:9-13
 9 Alors Saul, appelé aussi Paul, rempli du Saint-Esprit, fixant son regard sur le magicien,
-10 lui dit : "Homme plein de toute sorte de ruses et de fourberies, fils du diable, ennemi de toute justice, ne cesseras-tu pas de pervertir les voies droite du Seigneur ?
-11 Maintenant voici que la main de Dieu est sur toi ; tu seras aveugle, privé pour un temps de la vue du soleil." Aussitôt d'épaisses ténèbres tombèrent sur lui, et il cherchait, en se tournant de tous côtés, quelqu'un qui lui donnât la main.
+10 lui dit : « Homme plein de toute sorte de ruses et de fourberies, fils du diable, ennemi de toute justice, ne cesseras-tu pas de pervertir les voies droite du Seigneur ?
+11 Maintenant voici que la main de Dieu est sur toi ; tu seras aveugle, privé pour un temps de la vue du soleil.» Aussitôt d'épaisses ténèbres tombèrent sur lui, et il cherchait, en se tournant de tous côtés, quelqu'un qui lui donnât la main.
 12 A la vue de ce prodige, le proconsul crut, vivement frappé de la doctrine du Seigneur.
 13 Paul et ses compagnons, ayant fait voile de Paphos, se rendirent à Perge en Pamphylie ; mais Jean les quitta et s'en retourna à Jérusalem.
 
@@ -167,9 +166,6 @@ R. C’est ainsi que j’échappai de ses mains, au nom du Seigneur.
 Que si tu désires voir la réalisation de ces paroles, lis les Actes des Apôtres. Assurément, tu verras souvent, comment, alors que le peuple des Juifs se ruait sur les Apôtres, en aiguisant les dents, ceux-ci, en imitant la simplicité de la colombe et en répondant avec une grande modération, calmaient leur colère, apaisaient leur rage et arrêtaient leur élan. Par exemple, lorsque les Juifs leur disaient : Ne vous avions-nous pas défendu expressément d'enseigner en ce nom-là ? les Apôtres pouvaient accomplir une infinité de miracles, et cependant ils ne font ni ne disent rien de dur ; ils répondent seulement avec beaucoup de mansuétude : Jugez vous-mêmes s'il est juste que nous vous obéissions plutôt qu'à Dieu ? Tu reconnais ici la simplicité de la colombe. Voici maintenant la prudence du serpent : Car, ce que nous avons vu et entendu, disent-ils, nous ne pouvons pas le taire.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
 !2. Tim 4:7-8
 v. J'ai combattu le bon combat, achevé ma course, gardé la foi. Au reste, elle est prête pour moi, la couronne de justice que le Seigneur me donnera en ce jour-là, comme juste juge.
@@ -181,20 +177,8 @@ $Deo gratias
 [HymnusM Laudes]
 @Commune/C1:HymnusM Vespera
 
-[Versum 2]
-@:Versum 1
-
 [Ant 2]
 Vous qui m’avez suivi, * vous siégerez sur des trônes, jugeant les douze tribus d’Israël, dit le Seigneur.
-
-[Oratio]
-O Dieu, vous avez instruit la multitude des nations par la parole de l’Apôtre saint Paul, accordez à notre demande, qu’en fêtant sa naissance céleste, nous sentions l’effet de son patronage auprès de vous.
-$Per Dominum
-_
-@Sancti/01-25:Commemoratio4
-
-[Commemoratio]
-@Sancti/06-24:Octava
 
 [Lectio Prima]
 !1 Cor 15:9-10
@@ -203,8 +187,4 @@ v. Je suis en effet le moindre des Apôtres, moi qui ne suis pas digne d’être
 [Capitulum Sexta]
 !2. Cor. 12:7-9
 v. De peur que la grandeur des révélations ne m’enorgueillisse, il m’a été donné un aiguillon dans ma chair, un ange de Satan qui me soufflète. A ce sujet, j’ai prié trois fois le Seigneur de l’éloigner de moi et il m’a dit : Ma grâce te suffit.
-$Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
 $Deo gratias

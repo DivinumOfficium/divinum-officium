@@ -1,12 +1,6 @@
 [Rank]
 S. Leonis Papæ et Confessoris;;Semiduplex;;2.2;;vide C4
 
-[Rule]
-vide C4;
-9 lectiones
-commemoratio3
-OPapaC=León;
-
 [Oratio]
 Oh Dios, que hiciste digno al bienaventurado Pontífice León de los méritos de tus santos: concédenos que, celebrando hoy la fiesta de su conmemoración, podamos imitar los ejemplos de su vida.
 $Per Dominum
@@ -19,9 +13,6 @@ En este concilio fueron condenados Ciro, Sergio y Pirro, por enseñar que en Jes
 
 [Lectio6]
 Fue padre de los pobres; no sólo aliviaba la miseria y el abandono de los necesitados, las viudas y los huérfanos con su dinero, sino con sus cuidados, fatigas y consejos. Sus ejemplos y palabras conducían a todos a una vida de devoción y de santidad. Durmiose en el Señor en el undécimo mes de su pontificado, el día 28 de junio del año 680, y fue sepultado en la basílica de San Pedro. En una ordenación que celebró en junio, ordenó 9 Presbíteros y 3 Diáconos, y consagró 23 Obispos de diversos lugares.
-
-[Commemoratio 2]
-@Sancti/06-29:Octava
 
 [Lectio94]
 El papa León II, siciliano de origen, estaba muy versado en la ciencia de las sagradas Escrituras y en las letras profanas; dominaba las lenguas griega y latina. Era muy conocedor del canto sagrado, y perfeccionó las melodías de los Salmos e Himnos de la Iglesia. Aprobó y tradujo al latín las actas del VIº Concilio de Constantinopla. En este concilio fueron condenados Ciro, Sergio y Pirro, por enseñar que en Jesucristo no hay más que una sola voluntad y una sola operación. Fue padre de los pobres; no sólo aliviaba la miseria y el abandono de los necesitados, las viudas y los huérfanos con su dinero, sino con sus cuidados, fatigas y consejos. Sus ejemplos y palabras conducían a todos a una vida de devoción y de santidad. Durmiose en el Señor en el undécimo mes de su pontificado, el día 28 de junio del año 680, y fue sepultado en la basílica de San Pedro.
@@ -36,6 +27,5 @@ El papa León II, siciliano de origen, estaba muy versado en la ciencia de las s
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
-
+[Commemoratio 2]
+@Sancti/06-29:Octava

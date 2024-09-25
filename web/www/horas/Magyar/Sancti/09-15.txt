@@ -1,17 +1,11 @@
 [Rank]
 Septem Dolorum Beatae Máriae Virginis;;Duplex 2nd class;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Septem Dolorum Beatae Mariae Virginis;;Duplex 2nd class;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Septem Dolorum Beatae Mariae Virginis;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
 
 [Versum 1]
 V. Imádkozzál érettünk mártirok kiráynője
@@ -19,6 +13,10 @@ R. Aki Krisztus keresztjénel álltál
 
 [Ant 1]
 Ne nézzetek le * amiért barna vagyok, hiszen a nap barnított le! Anyámnak fiai nehezteltek rám
+
+[Oratio]
+Isten, akinek szenvedése által Simeon jövendölése beteljesedett, és a fájdalom tőre szúrta át Szűzanya gyengéd lelkét, add meg kérünk hogy akik hódolattal megemlékezünk fájdalmáról, elnyerjük a szenvedéseid árán megvásárolt üdvösséget
+$Qui vivis
 
 [Invit]
 Álljunk a kereszt mellé Szűz Máriával Jézus anyjával * az ő lelkét is a fájdalom tőre járta át
@@ -34,8 +32,8 @@ Olvasmány Jeremiás próféta siralmainak könyvéből
 !Lam 2:13-16
 13 Mihez hasonlítsalak, mivel vesselek össze, Jeruzsálem leánya? Ki tudna megvigasztalni, Sionnak szűz leánya? Mert nagy, mint a tenger, a fájdalmad. Ki gyógyíthatna meg?
 14 Amit prófétáid jövendöltek neked, az csalárdság volt és balgaság. Soha nem tárták fel vétkedet, hogy indítsanak megtérésre, Hamis látomásokkal hitegettek, becsaptak és félrevezettek.
-15 Akiknek erre visz az útjuk, összecsapják a kezüket, amikor meglátnak. Felszisszennek, fejüket csóválják Jeruzsálem leánya miatt: "Ezzé lett a szépek szépe, az egész földnek ékessége?"
-16 Kitárta ellened a száját minden ellenséged. Füttyentenek, fogukat csikorgatják, és ezt mondják: "Felfaltuk! Ez az a nap, amelyre vártunk megértük, megláttuk."
+15 Akiknek erre visz az útjuk, összecsapják a kezüket, amikor meglátnak. Felszisszennek, fejüket csóválják Jeruzsálem leánya miatt: „Ezzé lett a szépek szépe, az egész földnek ékessége?”
+16 Kitárta ellened a száját minden ellenséged. Füttyentenek, fogukat csikorgatják, és ezt mondják: „Felfaltuk! Ez az a nap, amelyre vártunk megértük, megláttuk.”
 
 [Lectio3]
 !Lam 2:17-18
@@ -56,16 +54,12 @@ There stood by the Cross His Mother. Men had forsaken Him, but she stood there f
 v. Mihez hasonlítsalak, mivel vesselek össze, Jeruzsálem leánya? Ki tudna megvigasztalni, Sionnak szűz leánya? Mert nagy, mint a tenger, a fájdalmad. Ki gyógyíthatna meg?
 $Deo gratias
 
-[Oratio]
-Isten, akinek szenvedése által Simeon jövendölése beteljesedett, és a fájdalom tőre szúrta át Szűzanya gyengéd lelkét, add meg kérünk hogy akik hódolattal megemlékezünk fájdalmáról, elnyerjük a szenvedéseid árán megvásárolt üdvösséget
-$Qui vivis
-
-[Versum Prima]
-Ki a mi üdvössegünkért szenvedett
-
 [Lectio Prima]
 !Lam 2:18
 v. Kiálts szívből az Úrhoz, zokogj, Sion leánya! Mint a patak, úgy folyjon a könnyed éjjel és nappal! Ne tarts pihenőt, ne szűnjék meg sírni a szemed!
+
+[Versum Prima]
+Ki a mi üdvössegünkért szenvedett
 
 [Capitulum Sexta]
 !Lam 1:2

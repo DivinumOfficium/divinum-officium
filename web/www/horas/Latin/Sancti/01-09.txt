@@ -12,6 +12,9 @@ Doxology=Epi
 Feria Te Deum
 Infra octavam Epiphaniæ Domini
 
+[Ant 1]
+@Sancti/01-08:Ant 3
+
 [Lectio1]
 De Epístola ad Romános
 !Rom 13:1-4
@@ -23,18 +26,15 @@ De Epístola ad Romános
 [Responsory1]
 @Sancti/01-06:Responsory1InfraOctavam
 
-[Responsory2]
-@Sancti/01-06:Responsory2
-
-[Responsory3]
-@Sancti/01-06:Responsory3
-
 [Lectio2]
 !Rom 13:4-7
 4 Si autem malum féceris, time: non enim sine causa gládium portat. Dei enim miníster est: vindex in iram ei, qui malum agit. 
 5 Ideo necessitáte súbditi estóte non solum propter iram, sed étiam propter consciéntiam.
 6 Ideo enim et tribúta præstátis: minístri enim Dei sunt, in hoc ipsum serviéntes. 
-7 Réddite ómnibus débita: cui tribútum, tribútum: cui vectígal, vectígal: cui timórem, timórem: cui honórem, honórem. 
+7 Réddite ómnibus débita: cui tribútum, tribútum: cui vectígal, vectígal: cui timórem, timórem: cui honórem, honórem.
+
+[Responsory2]
+@Sancti/01-06:Responsory2
 
 [Lectio3]
 !Rom 13:8-10
@@ -42,10 +42,13 @@ De Epístola ad Romános
 9 Nam, Non adulterábis, Non occídes, Non furáberis, Non falsum testimónium dices, Non concupísces: et si quod est áliud mandátum, in hoc verbo instaurátur: Díliges próximum tuum sicut teípsum. 
 10 Diléctio próximi malum non operátur. Plenitúdo ergo legis est diléctio.
 
+[Responsory3]
+@Sancti/01-06:Responsory3
+
 [Lectio4]
 Sermo sancti Leónis Papæ
 !Sermo 1 de Epiphania
-Celebrato próximo die, quo intemeráta virginitas humani generis edidit Salvatórem, Epiphaníæ nobis, dilectíssimi, veneranda festívitas dat perseverantiam gaudiórum: ut inter cognatárum solemnitátum vicina sacramenta, exsultatiónis vigor, et fervor fidei non tepescat. Ad ómnium enim hóminum spectat salútem, quod infántia mediatoris Dei et hóminum, jam universo declarabátur mundo, cum adhuc exíguo detinerétur oppídulo. 
+Celebrato próximo die, quo intemeráta virginitas humani generis edidit Salvatórem, Epiphaníæ nobis, dilectíssimi, veneranda festívitas dat perseverantiam gaudiórum: ut inter cognatárum solemnitátum vicina sacramenta, exsultatiónis vigor, et fervor fidei non tepescat. Ad ómnium enim hóminum spectat salútem, quod infántia mediatoris Dei et hóminum, jam universo declarabátur mundo, cum adhuc exíguo detinerétur oppídulo.
 
 [Lectio5]
 Quamvis enim Israëliticam gentem, et ipsíus gentis unam familiam delegísset, de qua natúram univérsæ humanitátis assumeret: nóluit tamen intra maternæ habitatiónis angustias ortus sui latére primordia: sed mox ab ómnibus vóluit agnosci, qui dignátus est pro ómnibus nasci. Tribus ígitur Magis in regióne Oriéntis stella novæ claritátis appáruit, quæ illustrior ceteris pulchriorque sidéribus, fácile in se intuéntium óculos animosque convérteret: ut conféstim adverterétur, non esse otiosum, quod tam insólitum videbátur.
@@ -74,6 +77,3 @@ Vídimus stellam ejus * in Oriénte, et vénimus cum munéribus adoráre Dóminu
 
 [Ant 3]
 Interrogábat * Magos Heródes: Quod signum vidístis super natum Regem? Stellam vídimus fulgéntem, cujus splendor illúminat mundum.
-
-[Ant 1]
-@Sancti/01-08:Ant 3

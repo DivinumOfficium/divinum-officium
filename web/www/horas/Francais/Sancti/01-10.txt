@@ -1,17 +1,8 @@
 [Rank]
 Quinta die infra Octavam Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-06
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Die Decima Januarii;;Feria;;1.2;;vide Sancti/01-06
-
-[Rule]
-ex Sancti/01-06
-Lectio1 tempora
-Doxology=Epi
-9 lectiones
-Feria Te Deum
-(rubrica divino aut rubrica tridentina aut rubrica monastica) CPapaM=Hygínum ;
-Infra octavam Epiphaniæ Domini
 
 [Lectio1]
 De l'Épître aux Romains
@@ -24,18 +15,15 @@ De l'Épître aux Romains
 [Responsory1]
 @Sancti/01-06:Responsory1InfraOctavam
 
-[Responsory2]
-@Sancti/01-06:Responsory2
-
-[Responsory3]
-@Sancti/01-06:Responsory3
-
 [Lectio2]
 !Rom 14:5-8
 5 Tel met de la différence entre les jours ; tel autre les estime tous pareils : que chacun ait dans son esprit une pleine conviction.
 6 Celui qui observe tel ou tel jour, l'observe en vue du Seigneur ; et celui qui mange, mange en vue du Seigneur, car il rend grâces à Dieu ; et celui qui ne mange pas, c'est en vue du Seigneur qu'il ne mange pas, et il rend aussi grâces à Dieu.
 7 En effet, nul de nous ne vit pour soi-même, et nul ne meurt pour soi-même.
 8 Car, soit que nous vivions, nous vivons pour le Seigneur ; soit que nous mourrions, nous mourons pour le Seigneur. Soit donc que nous vivions, soit que nous mourions, nous appartenons au Seigneur.
+
+[Responsory2]
+@Sancti/01-06:Responsory2
 
 [Lectio3]
 !Rom 14:9-13
@@ -45,6 +33,8 @@ De l'Épître aux Romains
 12 Ainsi chacun de nous rendra compte à Dieu pour soi-même.
 13 Ne nous jugeons donc plus les uns les autres.
 
+[Responsory3]
+@Sancti/01-06:Responsory3
 
 [Lectio4]
 Sermon de saint Maxime Évêque

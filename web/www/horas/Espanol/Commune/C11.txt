@@ -1,17 +1,47 @@
 [Name]
 In Festis Beatae Mariae Virginis
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-
-[Ant Vespera]
-Mientras el rey * reposaba en su lecho, mi nardo exhaló su aroma.;;109
+[Ant VesperaBMV]
 Su izquierda * bajo mi cabeza y su derecha me abraza.;;112
-Morena soy, * pero hermosa, hijas de Jerusalén. Por esto el rey me ha amado y me ha introducido en su morada.;;121
-Ya ha pasado el invierno * y han cesado las lluvias: levántate, amiga mía, y ven.;;126
 Eres hermosa * y buena, y llena de gracia, Santa Madre de Dios.;;147
+
+[Hymnus Vespera]
+/:La primera estrofa de este himno se dice de rodillas.:/
+v. Salve, estrella del mar,
+Santa Madre de Dios, 
+y siempre Virgen, 
+puerta dichosa del cielo.
+_
+Al escuchar el Ave 
+de boca de Gabriel, 
+asegúranos en la paz, 
+cambiando el nombre de Eva.
+_
+Desata las cadenas a los pecadores, 
+procura a los ciegos la luz, 
+ahuyenta nuestros males,
+y alcánzanos todo bien.
+_
+Muestra que eres nuestra Madre, 
+y Aquel que por nosotros 
+quiso ser Hijo tuyo, reciba, 
+por tu mediación, nuestras súplicas.
+_
+¡Oh Virgen sin igual, 
+más pura que todas!, haznos, 
+libres ya de las culpas, 
+mansos y puros.
+_
+Haz que sea casta nuestra vida, 
+prepáranos un camino seguro, 
+para que, viendo a Jesús, 
+gocemos contigo eternamente.
+_
+Alabanza sea dada a Dios Padre, 
+gloria a Cristo Rey, 
+y al Espíritu Santo, 
+honor igual a los tres. 
+Amén.
 
 [Versum 1]
 V. Dígnate aceptar mis alabanzas, ¡oh Virgen santa!
@@ -50,22 +80,14 @@ y el Espíritu Santo,
 por los siglos de los siglos. 
 Amén.
 
-[Ant Matutinum]
+[Ant MatutinumBMV]
 Bendita Tú * entre las mujeres, y bendito el fruto de tu vientre.;;8
 Como mirra * escogida, diste olor de suavidad, santa Madre de Dios.;;18
 Ante el tálamo * de esta Virgen cantadnos repetidamente dulces cánticos que nos recuerden sus santas acciones.;;23
-V. Con esa tu gallardía y hermosura.
-R. Camina, avanza prósperamente y reina.
-Con esa tu gallardía * y hermosura, camina, avanza prósperamente y reina.;;44
-Dios la protegerá * con su faz; en medio de ella está Dios; no será conmovida.;;45
 Tenemos en ti nuestra morada, * en la cual todos residimos gozosos, oh santa Madre de Dios.;;86
-V. Dios la protegerá con su faz.
-R. En medio de Ella está Dios; no será conmovida.
 Alégrate, Virgen María; * Tú sola has destruido todas las herejías en todo el universo.;;95
 Dígnate * recibir mis alabanzas, oh Virgen sagrada; dame fortaleza contra tus enemigos.;;96
 Después del parto, * oh Virgen, permaneciste sin mancha; santa Madre de Dios, intercede por nosotros.;;97
-V. El Señor la eligió sobre todas las demás. 
-R. Y la hizo morar en su tabernáculo.
 
 [Lectio1]
 De las Palabras de Salomón
@@ -180,8 +202,48 @@ R. Porque el Señor que es poderoso, y cuyo nombre es santo, me ha engrandecido.
 Más bien bienaventurados los que escuchan la palabra de Dios, y la ponen en práctica. El Salvador asintió complacido a la afirmación de la mujer, cuando aseguró que serían bienaventurados, no sólo aquella que había merecido engendrar corporalmente al Verbo de Dios, sino también todos aquellos que mediante la audición de las verdades de la fe concibieren espiritualmente al mismo Verbo, y con la guarda de las buenas obras, procuraren engendrarle y alimentarle en su corazón y en el de su prójimo; ya que aun la propia Madre de Dios, que fue bienaventurada por haber servido y contribuido en el tiempo a la Encarnación del Verbo, lo es mucho más por haber merecido, amándole siempre, conservarlo en ella eternamente.
 &teDeum
 
+[Capitulum Laudes]
+!Sir 24:14
+v. Desde el principio fui creada, antes de los siglos, y por los siglos duraré. En la santa morada, en su presencia ofrecí el culto.
+$Deo gratias.
+
+[Hymnus Laudes]
+{:Ogloriosavirginum:}v.	Oh la más gloriosa de las Vírgenes, 
+elevada más allá de las estrellas, 
+que alimentáis con la leche de vuestro seno 
+a vuestro Creador hecho niño.
+_
+Por vuestro augusto Hijo nos devolvéis aquello 
+de lo cual Eva nos había desgraciadamente privado; 
+abrís las puertas del cielo para franquear 
+su entrada a los que lloran.
+_
+Vos sois la puerta del gran Rey 
+y su vestíbulo radiante de claridad. 
+¡Oh pueblos redimidos, celebrad la vida 
+que se nos da por esta Virgen!
+_
+* Gloria a Vos, oh Jesús, nacido 
+de la Virgen, juntamente 
+con el Padre y el Espíritu Santo, 
+por los siglos de los siglos.
+Amén.
+
 [Ant 2]
 Dichosa eres, * Virgen María, porque has creído: se cumplirá en ti lo que te ha dicho el Señor, aleluya.
+
+[Oratio]
+Te pedimos, Señor, que nosotros, tus siervos, gocemos siempre de salud de alma y cuerpo; y, por la intercesión gloriosa de Santa María, la Virgen, líbranos de las tristezas de este mundo, y concédenos las alegrías del cielo.
+$Per Dominum
+
+[Lectio Prima]
+!Sir 24:19-20
+v. Como hermoso olivo en la llanura, como plátano junto a las aguas. Como la canela y el bálsamo aromático exhalé mi aroma, y como la mirra escogida di suave olor.
+
+[Capitulum Sexta]
+!Sir 24:15-16
+v. En Sión me estableció; en la ciudad escogida me hizo descansar, en Jerusalén reside mi poder; eché raíces entre un pueblo glorioso –en la heredad que tomó el Señor— y habité entre todos los santos.
+$Deo gratias.
 
 [Ant 3]
 Desde ahora me felicitarán * todas las generaciones, porque Dios ha mirado la humillación de su esclava. 

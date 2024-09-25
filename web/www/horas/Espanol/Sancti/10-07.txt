@@ -1,19 +1,11 @@
 [Rank]
 Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex 2 classis;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Beatæ Mariæ Virginis a Rosario;;Duplex 2 classis;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Marcos;
 
 [Ant Vespera]
 ¿Quién es ésta, * hermosa como paloma, como rosa plantada junto a manantiales de agua?;;109
@@ -60,19 +52,6 @@ Dichosa eres, * Virgen María, Madre de Dios, porque has creído la palabra del 
 [Oratio]
 ¡Oh Dios, cuyo Hijo nos obtuvo la salvación eterna por medio de su vida, muerte y resurrección!; concédenos, a quienes meditamos estos misterios en el Rosario de la Virgen María, imitar lo que enseñan y alcanzar lo que prometen.
 $Per eumdem
-
-[Commemoratio 2]
-!Conmemoración de S. Marcos, Papa
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Escucha, Señor, nuestros ruegos, y, por intercesión de San Marcos, tu Confesor y Pontífice, otórganos tu indulgencia y tu paz.
-$Per Dominum
-_
-!Conmemoración de los Ss. Sergio, Baco, Marcelo y Apuleyo, Mártires
-@Commune/C3:Oratio proper
-$Oremus
-Los méritos de tus santos mártires Sergio, Baco, Marcelo y Apuleyo nos acompañen, Señor, y nos hagan siempre fervorosos en tu amor.
-$Per Dominum
 
 [Invit]
 Celebremos la solemnidad del Rosario de la Virgen María: * Adoremos a Cristo, su Hijo, nuestro Señor.
@@ -130,7 +109,7 @@ Del Libro del Eclesiástico
 13 y me dijo: Habita en Jacob y establece tu tienda en Israel. 
 14 Desde el principio y antes de los cielos me creó y hasta el fin no dejaré de ser. 
 15 En el tabernáculo santo, delante de él, ministré. Y así tuve en Sión morada fija y estable, reposé en la ciudad de Él amada, y en Jerusalén tuve la sede de mi imperio. 
-16 Eché raíces en el pueblo glorioso, en la porción del Señor, en su heredad. 
+16 Eché raíces en el pueblo glorioso, en la porción del Señor, en su heredad.
 
 [Responsory1]
 R. Pulsad el armonioso salterio en el gran día de vuestra solemnidad, 
@@ -145,7 +124,7 @@ R. Y regocijaos en la Virgen nuestra auxiliadora.
 19 Me alcé como un hermoso olivo en los campos, y como el plátano en las plazas junto al agua. 
 20 Como el cinamomo y el bálsamo aromático despedí fragancia. Como mirra escogida exhalé suave olor; 
 21 y llené mi habitación de odoríferos perfumes, como de estoraque, de gálbano, de onique, y de lágrima de mirra, y de incienso virgen, y mi fragancia es como la del bálsamo sin mezcla. 
-22 Yo extendí mis ramas como el terebinto, y mis ramas llenas están de majestad y hermosura. 
+22 Yo extendí mis ramas como el terebinto, y mis ramas llenas están de majestad y hermosura.
 
 [Responsory2]
 R. Vi a la que es hermosa elevarse de las orillas de las aguas; desprendía un extraordinario perfume de gran valor; 
@@ -162,7 +141,7 @@ R. Y como en los días primaverales, la rodeaban las rosas y los lirios de los v
 28 Se hará memoria de mí en toda la serie de los siglos. 
 29 Los que de mí comen, tienen siempre hambre de mí, y tienen siempre sed los que de mí beben. 
 30 El que me escucha, jamás tendrá de qué avergonzarse; y aquellos que se guian por mí no pecarán. 
-31 Los que me esclarecen, obtendrán la vida eterna.	
+31 Los que me esclarecen, obtendrán la vida eterna.
 
 [Responsory3]
 R. ¿Quién es ésta que se eleva como el sol, y hermosa como Jerusalén? La vieron las hijas de Sion, y la proclamaron bienaventurada, 
@@ -278,6 +257,19 @@ R. La hizo morar en su templo santo.
 [Ant 2]
 Celebramos hoy * devotamente la solemnidad del santo Rosario de María, la Madre de Dios, para que ella interceda por nosotros ante Jesucristo el Señor.
 
+[Commemoratio 2]
+!Conmemoración de S. Marcos, Papa
+@Commune/C4:Oratio proper Gregem
+$Oremus
+Escucha, Señor, nuestros ruegos, y, por intercesión de San Marcos, tu Confesor y Pontífice, otórganos tu indulgencia y tu paz.
+$Per Dominum
+_
+!Conmemoración de los Ss. Sergio, Baco, Marcelo y Apuleyo, Mártires
+@Commune/C3:Oratio proper
+$Oremus
+Los méritos de tus santos mártires Sergio, Baco, Marcelo y Apuleyo nos acompañen, Señor, y nos hagan siempre fervorosos en tu amor.
+$Per Dominum
+
 [Lectio Prima]
 !Sir 24:17-18
 v. He crecido como cedro del Líbano, como ciprés en el monte Sión. Me elevé como la palmera en Cades, y como rosal en Jericó.
@@ -351,9 +343,6 @@ y tejed coronas a la excelsa
 Madre del amor hermoso.
 _
 @Psalterium/Doxologies:Nat
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Madre Santa * y Virgen sin mancha, Reina del mundo, sientan tu protección los que celebran la solemnidad del Santo Rosario.

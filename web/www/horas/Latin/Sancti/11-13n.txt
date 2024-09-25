@@ -1,8 +1,35 @@
 [Rank]
-S. Franciscæ Xaveriæ Cabrini Virginis;;Semiduplex;;2.2;;vide C6
+S. Franciscæ Xaveriæ Cabrini Virginis;;Semiduplex;;2.2;;vide C6b
 
 [Rule]
-vide C6;
+vide C6b;
+
+[Hymnus Vespera]
+v. Beáta cæli régia
+Lætis resúltet cántibus
+Plausúque terra súbdita
+Polis utrísque cónsonet.
+_
+Præcíncta nimbo glóriæ
+Francísca, inhǽrens ímpigra
+Xavérii vestígiis
+Triúmphat inter Cǽlites.
+_
+Ætáte jam tenéllula
+Amóre Jesum déperit
+Ipsúmque volvit péctore
+Inférre cunctis géntibus.
+_
+Vox ecce dia própulit 
+Nido colúmbam pátrio;
+Fines ad orbis últimos
+Frequénter ipso cónvolat.
+_
+Virtus, honor, laus, glória
+Deo Patri cum Fílio
+Sancto simul Paráclito
+In sæculórum sǽcula.
+Amen.
 
 [Oratio]
 Dómine Jesu Christe, qui sanctam Vírginem Francíscam Xavériam, Sacratíssimi Cordis tui igne succénsam, per amplíssimas mundi plagas ad ánimas tibi lucrándas deduxísti, et per eam novam in Ecclésia tua Vírginum famíliam suscitásti; quǽsumus; ut ipsa intercedénte, eiúsdem Cordis tui virtútibus induámur, atque ad ætérnum beatitúdinis portum perveníre mereámur. 
@@ -65,37 +92,3 @@ Deo Patri cum Fílio
 Sancto simul Paráclito
 In sæculórum sǽcula.
 Amen.
-
-[Hymnus Vespera]
-v. Beáta cæli régia
-Lætis resúltet cántibus
-Plausúque terra súbdita
-Polis utrísque cónsonet.
-_
-Præcíncta nimbo glóriæ
-Francísca, inhǽrens ímpigra
-Xavérii vestígiis
-Triúmphat inter Cǽlites.
-_
-Ætáte jam tenéllula
-Amóre Jesum déperit
-Ipsúmque volvit péctore
-Inférre cunctis géntibus.
-_
-Vox ecce dia própulit 
-Nido colúmbam pátrio;
-Fines ad orbis últimos
-Frequénter ipso cónvolat.
-_
-Virtus, honor, laus, glória
-Deo Patri cum Fílio
-Sancto simul Paráclito
-In sæculórum sǽcula.
-Amen.
-
-[Commemoratio]
-!Commemoratio S. Didaci Confessoris
-@Commune/C5:Oratio proper
-$Oremus
-Omnípotens sempitérne Deus, qui dispositióne mirábili infírma mundi éligis, ut fórtia quæque confúndas: concéde propítius humilitáti nostræ; ut, piis beáti Dídaci Confessóris tui précibus, ad perénnem in cælis glóriam sublimári mereámur.
-$Per Dominum

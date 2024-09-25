@@ -1,14 +1,6 @@
 [Name]
 Officium Dedicationis Ecclesiae
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-Psalm5 Vespera=147
-Festum Domini
-Divinum auxilium
-
 [Hymnus Vespera]
 {:H-Coelestisurbs:}v. Ég városa, Jeruzsálem,
 Ó boldog béke-látomás!
@@ -49,15 +41,12 @@ Miképoen volt, mindenkoron.
 [Invit]
 Krisztust, az Egyház Jegyesét * imádjuk szent templomában!
 
-[Hymnus Matutinum]
-@Commune/C8:Hymnus Vespera
-
 [Lectio1]
 Olvasmány a Krónikák második könyvéből
 !2 Chr 7:1-5
 1 Amikor Salamon befejezte az imádságát, tűz szállt le az égből, és megemésztette az égő- és véresáldozatokat. Ekkor az Úr dicsősége betöltötte a templomot.
 2 A papok nem is tudtak bemenni az Úr templomába, mert az Úr dicsősége betöltötte az Úr templomát.
-3 Izrael fiai mindnyájan látták, amint a tűz és az Úr dicsősége leszállt a templomra. Ekkor arccal a földre, a kövezett padozatra borultak, és hódolattal magasztalták az Urat: "Mert jó, mert irgalma örökkévaló!"
+3 Izrael fiai mindnyájan látták, amint a tűz és az Úr dicsősége leszállt a templomra. Ekkor arccal a földre, a kövezett padozatra borultak, és hódolattal magasztalták az Urat: „Mert jó, mert irgalma örökkévaló!”
 4 Azután a király és a nép vágóáldozatot mutatott be az Úrnak.
 5 Salamon király huszonkétezer szarvasmarhát és százhúszezer bárányt mutatott be véresáldozatul. Így szentelte föl a király és az egész nép az Isten templomát.
 
@@ -71,7 +60,7 @@ Olvasmány a Krónikák második könyvéből
 [Lectio3]
 !2 Chr 7:11-16
 11 Salamon tehát szerencsésen befejezte az Úr templomát, a királyi palotát és mindazt, amit az Úr templomában és a maga házában meg akart valósítani.
-12 Ekkor éjjel megjelent Salamonnak az Úr, és azt mondta neki: "Meghallgattam imádságodat, és ezt a helyet választottam magamnak, hogy az áldozat helye legyen.
+12 Ekkor éjjel megjelent Salamonnak az Úr, és azt mondta neki: „Meghallgattam imádságodat, és ezt a helyet választottam magamnak, hogy az áldozat helye legyen.
 13 Ha bezárom az eget, és elmarad az eső; ha megparancsolom a sáskáknak, hogy pusztítsák el az országot, vagy ha pestist küldök népemre,
 14 de ha népem, amely nevemet viseli, megalázkodik, könyörög hozzám, kedvemet keresi és megtér gonosz útjáról, akkor meghallgatom az égből, megbocsátom bűneit, és meggyógyítom országát.
 15 Szemem tehát nyitva lesz, és fülem figyel az imádságra, amelyet ezen a helyen mondanak.
@@ -131,10 +120,5 @@ v. Letöröl szemükről minden könnyet. Nem lesz többé halál, sem gyász, s
 
 [Capitulum Sexta]
 !Rev 21:3
-v. Akkor hallottam, hogy a trón felől megszólal egy hangos szózat, ezt mondva: "Íme, Isten hajléka az emberek között! Velük fog lakni és ők az ő népe lesznek, és maga az Isten lesz velük.
-$Deo gratias
-
-[Capitulum Nona]
-!Rev 21:4-4
-v. Letöröl szemükről minden könnyet. Nem lesz többé halál, sem gyász, sem jajgatás, sem fáradság, mert az elsők elmúltak."
+v. Akkor hallottam, hogy a trón felől megszólal egy hangos szózat, ezt mondva: „Íme, Isten hajléka az emberek között! Velük fog lakni és ők az ő népe lesznek, és maga az Isten lesz velük.
 $Deo gratias

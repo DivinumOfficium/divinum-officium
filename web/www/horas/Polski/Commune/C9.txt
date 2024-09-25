@@ -1,16 +1,6 @@
 [Name]
 Officium Defunctorum
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Capitulum Commemoratio Suffragium
-Special Conclusio
-Limit Benedictiones Oratio
-Requiem gloria
-Votive nocturn
-
 [Ant Vespera]
 Będę się podobał Panu * w krainie żyjących.;;114
 O ja biedny, * że się mieszkanie moje przedłużyło, Panie.;;119
@@ -46,17 +36,6 @@ $Oremus
 Stwórco i Odkupicielu wszystkich wiernych, Boże, racz odpuścić wszystkie grzechy duszom zmarłych sług i służebnic Twoich, aby przez pobożne błagania i modły nasze dostąpiły przebaczenia, którego zawsze pragnęły:
 $Qui vivis
 
-[Versum 3]
-@:Versum 1
-
-[Oratio 1]
-@:Oratio_a_porta
-@:Oratio_Fid
-
-[Oratio 2]
-@:Oratio_a_porta:s/&psalm.*\)//s
-@:Oratio_Fid
-
 [Oratio1]
 Wyzwól, prosimy Cię, Panie, duszę sługi Twego N., aby zmarły dla świata żył dla Ciebie: a co przez przebywanie w ułomnym ludzkim ciele popełnił, racz przebaczyć w niezgłębionej dobroci Twego miłosierdzia.
 $Per Dominum
@@ -78,19 +57,24 @@ Królowi, któremu wszystko żyje, * Pójdźcie, pokłońmy się.
 Prostuj, * Panie, Boże mój, przed obliczem twojem drogę moję.;;5
 Nawróć się, * Panie, a wyrwij duszę moję: albowiem w śmierci niemasz, ktoby na cię pamiętał.;;6
 By kiedy nie porwał * jako lew dusze mojéj, gdy niemasz, ktoby odkupił, ani ktoby wybawił.;;7
-V. Od wrót piekielnych.
-R. Wybaw dusze ich, Panie.
 Na miejscu paszy * tam mię posadził.;;22
 Grzechów * młodości mojéj, i niewiadomości moich nie racz pamiętać.;;24
 Wierzę, * iż oglądam dobra Pańskie w ziemi żywiących.;;26
-V. Posadził go z książęty.
-R. Z książęty ludu swego.
 Niech ci się podoba, * Panie, abyś mię wyrwał: Panie, ku ratunku memu wejrzyj.;;39
 Uzdrów, Panie, * duszę moją, bom grzeszył tobie.;;40
 Pragnęła * dusza moja do Boga żywego: kiedyż przyjdę, a okażę się przed obliczem Bożem?;;41
+
+[Nocturn 1 Versum]
+V. Od wrót piekielnych.
+R. Wybaw dusze ich, Panie.
+
+[Nocturn 2 Versum]
+V. Posadził go z książęty.
+R. Z książęty ludu swego.
+
+[Nocturn 3 Versum]
 V. Nie podawaj bestyom dusz wyznawających tobie.
 R. I dusz ubogich twoich nie zapominaj do końca.
-
 
 [Lectio1]
 !Job 7:16-21
@@ -245,23 +229,12 @@ R. Gdy przyjdziesz sądzić świat przez ogień.
 $Requiem
 R. Wybaw mnie, Panie, od śmierci wiecznej, w dzień ten straszny, * Gdy niebiosa i ziemia poruszone zostaną, * Gdy przyjdziesz sądzić świat przez ogień.
 
-[Ant Laudes]
+[Ant Laudes_]
 Niech się rozradują w Panu * kości poniżone.;;50
 Wysłuchaj, Panie, * modlitwę moją, do ciebie wszelkie ciało przyjdzie.;;64
 Broniła mię * prawica twoja, Panie.;;62
 Od wrót piekielnych * wybaw, Panie, duszę moją.;;222
 Wszelki duch * niechaj Pana chwali.;;150
-
-[Ant Laudes](rubrica tridentina)
-Niech się rozradują w Panu * kości poniżone.;;50
-Wysłuchaj, Panie, * modlitwę moją, do ciebie wszelkie ciało przyjdzie.;;64
-Broniła mię * prawica twoja, Panie.;;62;66
-Od wrót piekielnych * wybaw, Panie, duszę moją.;;222
-Wszelki duch * niechaj Pana chwali.;;148;149;150
-
-[Versum 2]
-V. Usłyszałem głos z nieba mówiący mi.
-R. Błogosławieni umarli, którzy w Panu umierają.
 
 [Ant 2]
 Jam jest * zmartwychwstanie i żywot; kto w mię wierzy, choćby i umarł, żyć będzie: a wszelki który żywie, a wierzy w mię, nie umrze na wieki.

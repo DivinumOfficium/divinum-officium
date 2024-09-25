@@ -1,15 +1,8 @@
 [Rank]
 In apparitione Beatae Mariae Virginis;;Duplex majus;;4;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 In apparitione Beatae Mariae Virginis;;Duplex optional;;2;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat 
 
 [Ant Vespera]
 She is the brightness * of eternal light, and the unspotted mirror.;;109
@@ -17,11 +10,6 @@ A woman * clothed with the sun, and the moon under her feet, and on her head a c
 Thou art the glory of Jerusalem, * thou art the joy of Israel, thou art the honour of our people;;121
 Blessed art thou, * O Virgin Mary, by the Lord, the most high God, above all women upon the earth;;126
 This day the Lord * hath so magnified thy name that thy praise shall not depart out of the mouth of men.;;147
-
-[Capitulum Laudes]
-!Song 2:13-14
-v. Arise, my love, my beautiful one, and come: My dove in the clefts of the rock, in the hollow places of the wall, show me thy face, let thy voice sound in my ears.
-$Deo gratias
 
 [Ant 1]
 She is * my dove, my perfect one, my undefiled.
@@ -184,6 +172,11 @@ A woman * clothed with the sun, and the moon under her feet, and on her head a c
 Thou art the glory of Jerusalem, * thou art the joy of Israel, thou art the honour of our people.
 Blessed art thou, * O Virgin Mary, by the Lord, the most high God, above all women upon the earth.
 This day the Lord * hath so magnified thy name that thy praise shall not depart out of the mouth of men.
+
+[Capitulum Laudes]
+!Song 2:13-14
+v. Arise, my love, my beautiful one, and come: My dove in the clefts of the rock, in the hollow places of the wall, show me thy face, let thy voice sound in my ears.
+$Deo gratias
 
 [Hymnus Laudes]
 v. O rosy dawn! that dost proclaim

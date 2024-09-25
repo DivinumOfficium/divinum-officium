@@ -1,13 +1,16 @@
 [Rank]
 S. Pauli a Cruce Confessoris;;Duplex;;3;;vide C5
 
-[Rule]
-vide C5;mtv
-9 lectiones
-
 [Oratio]
 Seigneur Jésus-Christ qui, pour la prédication du mystère de la Croix, avez gratifié saint Paul d’une charité sans pareille et qui avez voulu, par lui, faire fleurir une nouvelle famille dans l’Eglise, accordez-nous, par son intercession, qu’en nous remémorant continuellement Votre passion sur Terre, nous méritions d’en recueillir les fruits au ciel,
 $Qui vivis
+
+[Commemoratio] (rubrica divino aut rubrica tridentina aut rubrica Reduced)
+!Commemoratio S. Vitalis Mart.
+@Commune/C2:Oratio proper
+$Oremus
+v. Accordez, s’il Vous plaît, ô Dieu tout-puissant, que, célébrant la naissance céleste de Votre bienheureux Martyr Vital, nous soyons, par son intercession, fortifiés dans l’amour de Votre nom.
+$Per Dominum
 
 [Lectio4]
 Paul de la Croix né à Uvada en Ligurie, mais descendant d’une noble famille de Castelazzo, près d’Alexandrie, manifesta dès sa naissance ce que devait être sa sainteté future. Une clarté merveilleuse emplit la chambre de sa mère, la nuit de sa naissance, et par un insigne bienfait, l’auguste Reine du del, le tira sain et sauf d’une noyade inévitable dans un fleuve où il était tombé, encore enfant. Dès le premier usage de sa raison, brûlant d’amour pour Jésus crucifié, il commença de le contempler plus longuement et de soumettre sa chair innocente, par les veilles, les disciplines, les jeûnes, et toutes sortes de dures pénitences. Sa boisson, le vendredi, était un mélange de fiel et de vinaigre. Enflammé du désir du martyre, il se joignit à l’armée qu’on assemblait à Venise, en vue de porter la guerre chez les Turcs ; mais ayant connu la volonté de Dieu dans l’oraison, il rendit aussitôt les armes, pour se dépenser dans une milice supérieure où il s’efforcerait d’employer toutes ses forces à défendre l’Église et à procurer le salut étemel des hommes. Revenu dans sa patrie, il renonça à un honnête mariage et à l’héritage paternel, puis il voulut entrer dans la voie étroite de la Croix et être vêtu par son évêque d’une tunique d’étoffe rude. Alors, sur l’ordre de celui-ci, en considération de l’éminente sainteté de sa vie et de sa science des choses de Dieu, n’étant pas encore clerc, il commença de cultiver le champ du Seigneur, par la prédication de la parole divine, pour le plus grand bien des âmes.
@@ -17,11 +20,6 @@ S'étant rendu à Rome et y ayant fait des études théologiques régulières, i
 
 [Lectio6]
 La flamme de l’amour divin brûlait dans sa poitrine avec une telle ardeur, qu’on vit souvent la partie de son vêtement la plus proche du coeur, comme brûlée par le feu et deux côtes soulevées. Lorsqu’il célébrait le Saint Sacrifice, il était incapable de modérer ses larmes ; il jouit souvent de l’extase accompagnée d’une élévation du corps étonnante. Il apparaissait alors le visage rayonnant d’une lumière surnaturelle. Quelquefois, pendant ses sermons, on entendit une voix céleste qui lui soufflait les mots, ou bien son sermon se faisait entendre à plus de mille pas. Il brilla par les dons de prophétie, de langues, de discernement des esprits et par son pouvoir sur les démons, les maladies et les éléments. Et alors que les Souverains Pontifes Pavaient en affection et en vénération, lui s’estimait comme un serviteur inutile, un pécheur méprisable, digne d’être foulé aux pieds par les démons. Enfin, ayant observé avec ténacité un genre de vie très dur, jusqu’à une vieillesse avancée, en l’an mil sept cent soixante-quinze, il transmit à ses disciples, avec d’admirables avis, l’héritage de son esprit ; puis, réconforté par les sacrements de l’Église, il s’en alla au del, à Rome, le jour qu’il avait prédit. Le Souverain Pontife Pie IX l’a mis au nombre des bienheureux, puis au nombre des Saints, après de nouveaux miracles.
-
-[Lectio93]
-!Commemoration Saint Vital, Martyr
-Vital , soldat, père des saints Gervais et Protais, arrivé à Ravenne en même temps que le juge Paulin, ayant vu le médecin Ursicin conduit au supplice, à cause de sa confession de la foi chrétienne, hésiter un peu sous la torture, lui cria : « Médecin Ursicin, toi qui as l’habitude de guérir les autres, prends garde de te laisser percer du trait de la mort éternelle. » Raffermi par ces paroles, Ursicin subit courageusement le martyre. C’est pourquoi Paulin irrité ordonna de saisir Vital, de le torturer au chevalet, de le jeter ensuite dans une fosse profonde et de l’y écraser de pierres. Cela fait, un certain prêtre d’Apollon qui avait excité Paulin contre Vital, tourmenté par le démon, se mit à crier : « Vital, martyr du Christ, tu me brûles d’un feu insupportable. » et, poussé par l’ardeur de ce feu, il se jeta dans le fleuve.
-&teDeum
 
 [Lectio94]
 Paul de la Croix, né à Uvada en Ligurie, brûla d’amour pour Jésus Crucifié, dès le premier usage de sa raison. Enflammé du désir du martyre, il se joignit à l’armée qu’on assemblait à Venise, en vue de porter la guerre chez les Turcs. Mais ayant connu la volonté de Dieu, il renonça à un mariage honnête et à l’héritage d’un oncle qui lui était offert, reçut de son évêque un rude vêtement et, alors qu’il n’était pas encore clerc, se mit à cultiver le champ du Seigneur, par la prédication de la parole divine. Ordonné prêtre à Rome, des mains du Souverain Pontife Benoît XIII, par obéissance, il se retira dans la solitude du mont Argentaro où la Sainte Vierge l’avait appelé depuis déjà longtemps, lui montrant en même temps un vêtement de couleur noire, orné des insignes de la Passion de son Fils. C’est là qu’il jeta les fondements d’une nouvelle Congrégation dont les membres s’engageraient par voeu à promouvoir le souvenir de la passion du Seigneur. Il fonda également une Congrégation de religieuses qui s’appliqueraient à la méditation de la passion du Seigneur. Célèbre par sa prédication, ses vertus et ses divins charismes, il s’endormit dans le Seigneur, à Rome, en l’année mil sept cent soixantequinze. Le Pape Pie IX le mit au rang des Bienheureux et ensuite des Saints.
@@ -36,9 +34,7 @@ Paul de la Croix, né à Uvada en Ligurie, brûla d’amour pour Jésus Crucifi�
 [Lectio9]
 @Commune/C1a:Lectio9
 
-[Commemoratio] (rubrica divino aut rubrica tridentina aut rubrica Reduced)
-!Commemoratio S. Vitalis Mart.
-@Commune/C2:Oratio proper
-$Oremus
-v. Accordez, s’il Vous plaît, ô Dieu tout-puissant, que, célébrant la naissance céleste de Votre bienheureux Martyr Vital, nous soyons, par son intercession, fortifiés dans l’amour de Votre nom.
-$Per Dominum
+[Lectio93]
+!Commemoration Saint Vital, Martyr
+Vital , soldat, père des saints Gervais et Protais, arrivé à Ravenne en même temps que le juge Paulin, ayant vu le médecin Ursicin conduit au supplice, à cause de sa confession de la foi chrétienne, hésiter un peu sous la torture, lui cria : « Médecin Ursicin, toi qui as l’habitude de guérir les autres, prends garde de te laisser percer du trait de la mort éternelle. » Raffermi par ces paroles, Ursicin subit courageusement le martyre. C’est pourquoi Paulin irrité ordonna de saisir Vital, de le torturer au chevalet, de le jeter ensuite dans une fosse profonde et de l’y écraser de pierres. Cela fait, un certain prêtre d’Apollon qui avait excité Paulin contre Vital, tourmenté par le démon, se mit à crier : « Vital, martyr du Christ, tu me brûles d’un feu insupportable. » et, poussé par l’ardeur de ce feu, il se jeta dans le fleuve.
+&teDeum

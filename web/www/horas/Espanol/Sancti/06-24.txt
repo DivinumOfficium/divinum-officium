@@ -1,15 +1,8 @@
 [Rank]
 In Nativitate S. Joannis Baptistæ;;Duplex I classis cum Octava communi;;6.5;;
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Nativitate S. Joannis Baptistæ;;Duplex I classis;;6;;
-
-[Rule]
-Proper;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
 
 [Ant Vespera]
 Él mismo le precederá * con el espíritu y poder de Elías, preparando al Señor un pueblo bien dispuesto.
@@ -56,10 +49,21 @@ Zacarías entró * en el santuario del Señor, y se le apareció el ángel Gabri
 ¡Oh Dios, que nos has hecho memorable este día con el nacimiento de San Juan Bautista!; concede a tu pueblo el don de la alegría espiritual y dirige las almas de tus fieles por el camino de la eterna salvación. 
 $Per Dominum
 
+[Octava 1]
+!Conmemoración de la Octava de S. Juan Bautista
+Ant. Zacarías entró en el santuario del Señor, y se le apareció el ángel Gabriel, de pie a la derecha del altar del incienso.
+_
+V. Surgió un hombre, enviado por Dios.
+R. Que se llamaba Juan.
+_
+$Oremus
+v. ¡Oh Dios, que nos has hecho memorable este día con el nacimiento de San Juan Bautista!; concede a tu pueblo el don de la alegría espiritual y dirige las almas de tus fieles por el camino de la eterna salvación. 
+$Per Dominum
+
 [Invit]
 Al Señor, Rey del Precursor * Venid, adorémosle.
 
-[HymnusM Matutinum]
+[Hymnus Matutinum]
 v. Huyendo desde tu niñez del gentío de las ciudades, 
 te refugiaste en lo más oculto del desierto, 
 para que ni el más leve pecado de la lengua 
@@ -86,7 +90,7 @@ que formas siempre con ellos un solo Dios
 por toda la eternidad. 
 Amén.
 
-[Hymnus Matutinum]
+[HymnusM Matutinum]
 v. Huyendo desde tu niñez del gentío de las ciudades, 
 te refugiaste en lo más oculto del desierto, 
 para que ni el más leve pecado de la lengua 
@@ -137,7 +141,7 @@ Del Libro del Profeta Jeremías
 2 a quien llegó la palabra de Yahvé en los días de Josías, hijo de Amón, rey de Judá, en el año decimotercero de su reinado, 
 3 y después en tiempo de Joaquim, hijo de Josías, rey de Judá, hasta la deportación de Jerusalén en el mes quinto. 
 4 Llegome la palabra de Yahvé, que decía: 
-5 Antes que te formara en el vientre te conocí, antes de que tú salieses del seno materno te consagré y te designé para profeta de pueblos. 
+5 Antes que te formara en el vientre te conocí, antes de que tú salieses del seno materno te consagré y te designé para profeta de pueblos.
 
 [Responsory1]
 R. Hubo un hombre enviado por Dios, cuyo nombre era Juan: 
@@ -151,7 +155,7 @@ R. Este vino a ser testigo para dar testimonio de la luz, y para preparar al Se�
 7 Y me dijo Yahvé: No digas: Soy un niño, pues irás a donde te envíe Yo y dirás lo que Yo te mande. 
 8 No tengas temor ante ellos, que Yo estaré contigo para salvarte, dice Yahvé. 
 9 Tendió Yahvé su mano, y, tocando mi boca, me dijo: He aquí que pongo en tu boca mis palabras. 
-10 Mira que te constituyo hoy sobre naciones y reinos para arrancar y destruir, para arruinar y asolar, para edificar y plantar. 
+10 Mira que te constituyo hoy sobre naciones y reinos para arrancar y destruir, para arruinar y asolar, para edificar y plantar.
 
 [Responsory2]
 R. Isabel, esposa de Zacarías, dio a luz un gran varón, Juan Bautista, precursor del Señor. 
@@ -163,7 +167,7 @@ R. El cual preparó al Señor un camino en el desierto.
 !Jer 1:17-19
 17 Tú, pues, ciñe tus lomos, yérguete y diles todo cuanto Yo te mandare. No tiembles ante ellos, no sea que Yo te haga temblar ante ellos. 
 18 Y he aquí que te pongo desde hoy como ciudad fortificada, como férrea columna y muro de bronce, frente a la tierra toda, para los reyes de Judá y sus príncipes, los sacerdotes y el pueblo del país. 
-19 Y te combatirán, pero no te podrán, porque Yo estaré contigo para salvarte, dice el Señor. 
+19 Y te combatirán, pero no te podrán, porque Yo estaré contigo para salvarte, dice el Señor.
 
 [Responsory3]
 R. Antes de formarte en el seno, te conocí; y antes de que nacieras, te santifiqué, 
@@ -246,7 +250,7 @@ Y a ti, niño, * te llamarán profeta del Altísimo, porque irás delante del Se
 v. Escuchadme, islas; atended, pueblos lejanos: estaba yo en el vientre y el Señor me llamó en las entrañas maternas, y pronunció mi nombre.
 $Deo gratias
 
-[HymnusM Laudes]
+[Hymnus Laudes]
 v. ¡Oh, tú, inmensamente dichoso, y dotado 
 de extraordinarios méritos, que no conoces mancha alguna 
 que afee tu nívea pureza!; ¡oh Mártir poderosísimo, 
@@ -273,7 +277,7 @@ te pedimos suplicantes el perdón:
 perdona a los redimidos. 
 Amén.
 
-[Hymnus Laudes]
+[HymnusM Laudes]
 v. ¡Oh, tú, inmensamente dichoso, y dotado 
 de extraordinarios méritos, que no conoces mancha alguna 
 que afee tu nívea pureza!; ¡oh Mártir poderosísimo, 
@@ -306,6 +310,17 @@ R. Porque su mano está con él.
 
 [Ant 2]
 A Zacarías * se le soltó la lengua y profetizó: Bendito sea el Señor, Dios de Israel.
+
+[Octava 2]
+!Conmemoración de la Octava de S. Juan Bautista
+Ant. Abriose la boca de Zacarías, y profetizó, diciendo: Bendito el Dios de Israel.
+_
+V. Este niño será grande delante del Señor.
+R. Porque su mano está sobre él.
+_
+$Oremus
+v. ¡Oh Dios, que nos has hecho memorable este día con el nacimiento de San Juan Bautista!; concede a tu pueblo el don de la alegría espiritual y dirige las almas de tus fieles por el camino de la eterna salvación. 
+$Per Dominum
 
 [Lectio Prima]
 !Is 49:7
@@ -353,33 +368,5 @@ _
 V. Este niño será grande a los ojos del Señor.
 R. Porque su mano está con él.
 
-[Ant Vespera 3]
-@:Ant Laudes
-
-[Versum 3]
-@:Versum 2
-
 [Ant 3]
 El niño * que nos ha nacido es más que profeta. De éste dijo el Salvador: Entre los nacidos de mujer, no hay ninguno mayor que Juan el Bautista.
-
-[Octava 1]
-!Conmemoración de la Octava de S. Juan Bautista
-Ant. Zacarías entró en el santuario del Señor, y se le apareció el ángel Gabriel, de pie a la derecha del altar del incienso.
-_
-V. Surgió un hombre, enviado por Dios.
-R. Que se llamaba Juan.
-_
-$Oremus
-v. ¡Oh Dios, que nos has hecho memorable este día con el nacimiento de San Juan Bautista!; concede a tu pueblo el don de la alegría espiritual y dirige las almas de tus fieles por el camino de la eterna salvación. 
-$Per Dominum
-
-[Octava 2]
-!Conmemoración de la Octava de S. Juan Bautista
-Ant. Abriose la boca de Zacarías, y profetizó, diciendo: Bendito el Dios de Israel.
-_
-V. Este niño será grande delante del Señor.
-R. Porque su mano está sobre él.
-_
-$Oremus
-v. ¡Oh Dios, que nos has hecho memorable este día con el nacimiento de San Juan Bautista!; concede a tu pueblo el don de la alegría espiritual y dirige las almas de tus fieles por el camino de la eterna salvación. 
-$Per Dominum

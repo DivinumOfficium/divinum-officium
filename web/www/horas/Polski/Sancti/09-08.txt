@@ -1,15 +1,8 @@
 [Rank]
 Narodzenie Najświętszej Panny Maryji;;Duplex II classis cum Octava simplici;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Narodzenie Najświętszej Panny Maryji;;Duplex II classis cum Octava simplici;;5;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
 
 [Ant Vespera]
 Oto chwalebne Narodziny * Dziewicy Marji z rodu Abrahama, która pochodziła z pokolenia Judy, ze świętego szczepu Dawida.;;109
@@ -26,6 +19,17 @@ R. Której chwalebne życie uświetnia cały Kościół.
 Święćmy tak czcigodne narodzenie * chwalebnej Panny Marji, która i godność Rodzicielki otrzymała i czystości dziewiczej nie utraciła.
 
 [Oratio]
+Udziel, prosimy Cię Panie, sługom Twoim daru łaski niebieskiej, aby uroczystość Narodzenia Najświętszej Marji Panny wyjednywała wzmożenie pokoju tym, którym macierzyństwo Jej stało się źródłem zbawienia.
+$Per Dominum
+
+[Octava]
+!Wspominamy Narodzenie Najświętszej Panny Maryji
+Ant. Narodzenie Twoje, Bogarodzico, Dziewico, zwiastowało wesele całemu światu, z Ciebie bowiem narodziło się słońce sprawiedliwości Chrystus, Bóg nasz, który zmazując przekleństwo, rozdał błogosławieństwo i poniżając śmierć, obdarzył nas żywotem wiecznym.
+_
+V. Oto dziś narodzenie świętej Marji Panny.
+R. Której chwalebne życie uświetnia cały Kościół.
+_
+$Oremus
 Udziel, prosimy Cię Panie, sługom Twoim daru łaski niebieskiej, aby uroczystość Narodzenia Najświętszej Marji Panny wyjednywała wzmożenie pokoju tym, którym macierzyństwo Jej stało się źródłem zbawienia.
 $Per Dominum
 
@@ -103,12 +107,12 @@ Inne zaś postacie pominął i nazwał Go synem właśnie tych dwóch, ponieważ
 @Commune/C12:Responsory3:s/wspomnienie/święte Narodzenie/
 
 [Lectio9]
+Jakub zaś zrodził Józefa. Wypomina nam to miejsce Julian August jako przykład rozbieżności u Ewangelistów. „Dlaczego – pyta on – Ewangelista Mateusz uznał Józefa za syna Jakuba, Łukasz zaś nazwał go synem Helego?” Stawia zarzut, nie rozumiejąc zwyczaju Pism, że jeden mianowicie był mu ojcem naturalnym, drugi zaś według Prawa. Wiemy bowiem, że Mojżesz z polecenia Bożego nakazał, aby jeżeli brat albo krewny umrze bezdzietnie, inny wziął jego żonę i wzbudził potomstwo swemu bratu czy krewnemu. Józefa, męża Maryi. Niech na dźwięk słowa „męża” nie wkrada się do twego serca podejrzenie pożycia małżeńskiego, ale pamiętaj o stylu Pisma, które zwykło narzeczonych nazywać mężami, a narzeczone – żonami.
+
+[Lectio93]
 !Wspominamy Św. Adrjana, Męczennika
 Adrjan z rozkazania Maximiana cesarza w Nikomedjej chrześcijany prześladując, gdy często w wyznaniu Wiary i mąk wytrwaniu stateczności ich wielce się dziwował, bardzo tym wzruszony do Chrystusa się nawrócił. A tak z drugimi dwudziestu trzema chrześcijany do więzienia dany jest gdzie go Natalia żona jego nawiedzając, która też przedtem w Chrystusa uwierzyła była do męczeństwa zapaliła. Z więzienia tedy wyprowadzony tak długo biczmi sieczony był aż wnętrzności wyciekły. Na ostatek połamaniem goleni, obcięciem rąk i nóg wespół z wiela inszych potyczkę męczeńską szczęśliwie skończył.
 &teDeum
-
-[Lectio9](rubrica 1960)
-Jakub zaś zrodził Józefa. Wypomina nam to miejsce Julian August jako przykład rozbieżności u Ewangelistów. „Dlaczego – pyta on – Ewangelista Mateusz uznał Józefa za syna Jakuba, Łukasz zaś nazwał go synem Helego?” Stawia zarzut, nie rozumiejąc zwyczaju Pism, że jeden mianowicie był mu ojcem naturalnym, drugi zaś według Prawa. Wiemy bowiem, że Mojżesz z polecenia Bożego nakazał, aby jeżeli brat albo krewny umrze bezdzietnie, inny wziął jego żonę i wzbudził potomstwo swemu bratu czy krewnemu. Józefa, męża Maryi. Niech na dźwięk słowa „męża” nie wkrada się do twego serca podejrzenie pożycia małżeńskiego, ale pamiętaj o stylu Pisma, które zwykło narzeczonych nazywać mężami, a narzeczone – żonami.
 
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g
@@ -125,14 +129,3 @@ $Per Dominum
 
 [Ant 3]
 Narodzenie Twoje, * Bogarodzico, Dziewico, zwiastowało wesele całemu światu, z Ciebie bowiem narodziło się słońce sprawiedliwości Chrystus, Bóg nasz, który zmazując przekleństwo, rozdał błogosławieństwo i poniżając śmierć, obdarzył nas żywotem wiecznym.
-
-[Octava]
-!Wspominamy Narodzenie Najświętszej Panny Maryji
-Ant. Narodzenie Twoje, Bogarodzico, Dziewico, zwiastowało wesele całemu światu, z Ciebie bowiem narodziło się słońce sprawiedliwości Chrystus, Bóg nasz, który zmazując przekleństwo, rozdał błogosławieństwo i poniżając śmierć, obdarzył nas żywotem wiecznym.
-_
-V. Oto dziś narodzenie świętej Marji Panny.
-R. Której chwalebne życie uświetnia cały Kościół.
-_
-$Oremus
-Udziel, prosimy Cię Panie, sługom Twoim daru łaski niebieskiej, aby uroczystość Narodzenia Najświętszej Marji Panny wyjednywała wzmożenie pokoju tym, którym macierzyństwo Jej stało się źródłem zbawienia.
-$Per Dominum

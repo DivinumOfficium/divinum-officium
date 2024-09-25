@@ -1,16 +1,12 @@
 [Name]
 Commun des Apôtres
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
 [Ant Vespera]
-Voici mon commandement, * c’est que vous vous aimiez les uns les autres comme je vous ai aimés.;;109
-Personne n’a un plus grand amour * que celui qui donne sa vie pour ses amis.;;110
-Vous êtes mes amis, * si vous faites ce que je vous commande.;;111
-Bienheureux les pacifiques, * bienheureux ceux qui ont le cœur pur, parce qu’ils verront Dieu.;;112
-C’est par votre patience * que vous posséderez vos âmes.;;116
+Voici mon commandement, * c’est que vous vous aimiez les uns les autres comme je vous ai aimés.
+Personne n’a un plus grand amour * que celui qui donne sa vie pour ses amis.
+Vous êtes mes amis, * si vous faites ce que je vous commande.
+Bienheureux les pacifiques, * bienheureux ceux qui ont le cœur pur, parce qu’ils verront Dieu.
+C’est par votre patience * que vous posséderez vos âmes.
 
 [Hymnus Vespera]
 {:H-Exsultetorbisgaudiis:}v. Que la terre exulte de joie :
@@ -43,9 +39,6 @@ gloire à vous, Saint-Esprit,
 comme il fut toujours, comme maintenant
 et à jamais dans tous les siècles.
 Amen.
-
-[HymnusM Vespera]
-@:Hymnus Vespera
 
 [Versum 1]
 V. Leur bruit s’est répandu dans toute la terre.
@@ -88,16 +81,18 @@ Amen.
 Dans toute la terre, * leur bruit s’est répandu, et leurs paroles jusqu’aux confins du globe de la terre.;;18
 Les justes ont crié, * et le Seigneur les a exaucés.;;33
 Vous les établirez * princes sur toute la terre ; ils se souviendront de votre nom Seigneur, dans toute la suite des générations.;;44
-V. Leur bruit s’est répandu dans toute la terre.
-R. Et leurs paroles jusqu’aux confins du globe de la terre.
 Les princes du peuple * se sont réunis au Dieu d’Abraham.;;46
 Vous avez donné un héritage * à ceux qui craignent votre nom, Seigneur.;;60
 Ils ont annoncé * les œuvres de Dieu, et ils ont compris les choses qu’il a faites.;;63
-V. Vous les établirez princes sur toute la terre.
-R. Ils se souviendront de votre nom, Seigneur.
 Elle sera élevée * la puissance des justes. Allelúia.;;74
 Une lumière s’est levée * pour le juste, alléluia : une joie pour les hommes droits de cœur. Allelúia.;;96
 Ils gardaient * les témoignages du Seigneur et ses préceptes. Allelúia.;;98
+
+[Nocturn 2 Versum]
+V. Vous les établirez princes sur toute la terre.
+R. Ils se souviendront de votre nom Seigneur, dans toute la suite des générations.
+
+[Nocturn 3 Versum]
 V. Vos amis ont été grandement honorés, ô Dieu.
 R. Leur autorité de princes a été établie avec une grande puissance.
 
@@ -195,20 +190,10 @@ R. L’Église est éclairée par leur doctrine comme la lune est éclairée par
 Certains esprits s’appuient sur cette promesse pour imaginer une période de mille ans après la résurrection, période pendant laquelle nous recevrions le centuple de ce que nous avons quitté et ensuite la vie éternelle ; ils ne réfléchissent pas que si cela paraît convenable pour la plupart des biens, il serait ridicule, sous le rapport des femmes, que celui qui aurait quitté son épouse pour le Seigneur, en reçoive cent dans la vie future. Voici dons le sens de cette promesse : celui qui, pour l’amour du Sauveur aura quitté les biens charnels recevra des biens spirituels, lesquels, par leur valeur propre et comparés aux premiers, leur sont aussi supérieurs que le nombre cent l’est à un petit nombre.
 &teDeum
 
-[Ant Laudes]
-Voici mon commandement, * c’est que vous vous aimiez les uns les autres comme je vous ai aimés.
-Personne n’a un plus grand amour * que celui qui donne sa vie pour ses amis.
-Vous êtes mes amis, * si vous faites ce que je vous commande.
-Bienheureux les pacifiques, * bienheureux ceux qui ont le cœur pur, parce qu’ils verront Dieu.
-C’est par votre patience * que vous posséderez vos âmes.
-
 [Capitulum Laudes]
 !Eph. 2:19-20
 v. Mes frères, vous n’êtes plus des hôtes et des étrangers, mais des concitoyens des saints et de la maison de Dieu ; bâtis sur le fondement des Apôtres et des Prophètes, le Christ Jésus étant lui-même la pierre angulaire.
 $Deo gratias.
-
-[Hymnus Laudes]
-@Commune/C1:Hymnus Vespera
 
 [Versum 2]
 V. Ils ont annoncé les œuvres de Dieu.
@@ -225,47 +210,34 @@ $Per Dominum
 !Act 5:41
 v. Les Apôtres sortirent du sanhédrin, joyeux d'avoir été jugés dignes de souffrir des opprobres pour le nom de Jésus.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Leur bruit s’est répandu * dans toute la terre.
 R. Leur bruit s’est répandu * dans toute la terre.
 V. Et leurs paroles jusqu’aux confins du globe de la terre.
 R. dans toute la terre.
 &Gloria
 R. Leur bruit s’est répandu * dans toute la terre.
-_
-V. Vous les établirez princes sur toute la terre.
-R. Ils se souviendront de votre nom Seigneur, dans toute la suite des générations.
 
 [Capitulum Sexta]
 !Act 5:12
 v. Or les Apôtres faisaient beaucoup de miracles et de prodiges parmi le peuple.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Vous les établirez princes * sur toute la terre.
 R. Vous les établirez princes * sur toute la terre.
 V. Ils se souviendront de votre nom Seigneur, dans toute la suite des générations.
 R. Sur toute la terre.
 &Gloria
 R. Vous les établirez princes * sur toute la terre.
-_
-V. Vos amis ont été grandement honorés, ô Dieu.
-R. Leur autorité de princes a été établie avec une grande puissance.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Vos amis ont été grandement honorés, * ô Dieu.
 R. Vos amis ont été grandement honorés, * ô Dieu.
 V. Leur autorité de princes a été établie avec une grande puissance.
 R. Ô Dieu.
 &Gloria
 R. Vos amis ont été grandement honorés, * ô Dieu.
-_
-V. Ils ont annoncé les œuvres de Dieu.
-R. Et ils ont compris les choses qu’il a faites.
 
 [Ant Vespera 3]
 Le Seigneur a juré * il ne s’en repentira point : vous êtes prêtre pour l’éternité.;;109
@@ -274,22 +246,19 @@ Vous avez rompu, Seigneur, * mes liens : c’est à vous que je sacrifierai une 
 Allant, ils allaient * et pleuraient, jetant leurs semences.;;125
 Elle a été établie avec puissance * leur autorité de prince et vos amis ont été honorés, ô Dieu.;;138
 
-[Versum 3]
-@:Versum 2
-
 [Ant 3]
 Soyez courageux * dans la guerre ; combattez contre l’ancien serpent, et vous recevrez le royaume éternel. Allelúia.
 
 [Lectio4 in 2 loco]
 De l'Exposition du quatre-vingt-sixième psaume par saint Augustin, évêque d'Hippone.
 !Avant le milieu :
-Sa fondation est sur les montagnes saintes; le Seigneur aime les portes de Sion." Pourquoi la ville a-t-elle douze fondations, et en elles les noms des Prophètes et des Apôtres de l'Agneau ? Parce que leur autorité est la fondation sur laquelle notre faiblesse repose. Pourquoi sont-elles les portes ? Parce que par elles nous entrons dans le royaume de Dieu, puisqu'ils nous l'ont prêché, et quand nous entrons par leur prédication, nous entrons par Christ, qui est Lui-même la Porte. (Jean 10:7) Et, alors qu'il est écrit que la ville a douze portes, et, de nouveau, que Christ est la seule Porte, Christ est les douze, car Il est en tous les douze et donc douze Apôtres furent choisis. Il y a un grand mystère dans la signification de ce nombre douze : "Vous, dit le Seigneur, vous siégerez sur douze trônes, jugeant les douze tribus d'Israël.
+Sa fondation est sur les montagnes saintes; le Seigneur aime les portes de Sion.» Pourquoi la ville a-t-elle douze fondations, et en elles les noms des Prophètes et des Apôtres de l'Agneau ? Parce que leur autorité est la fondation sur laquelle notre faiblesse repose. Pourquoi sont-elles les portes ? Parce que par elles nous entrons dans le royaume de Dieu, puisqu'ils nous l'ont prêché, et quand nous entrons par leur prédication, nous entrons par Christ, qui est Lui-même la Porte. (Jean 10:7) Et, alors qu'il est écrit que la ville a douze portes, et, de nouveau, que Christ est la seule Porte, Christ est les douze, car Il est en tous les douze et donc douze Apôtres furent choisis. Il y a un grand mystère dans la signification de ce nombre douze : « Vous, dit le Seigneur, vous siégerez sur douze trônes, jugeant les douze tribus d'Israël.
 
 [Lectio5 in 2 loco]
 Si donc il y a là douze trônes de jugement (Ps. 121:5), Paul, en tant qu'il est le treizième Apôtre, n'a pas où s'asseoir, ni quoi juger. Néanmoins, il a dit de lui-même qu'il jugera non seulement les hommes, mais aussi les anges. Ne savez-vous pas, dit-il, que nous jugerons les anges ? (1 Cor. 6:3), c'est-à-dire les anges déchus. Alors ils auraient pu lui répondre : Pourquoi te vantes-tu d'être un juge ? Car où est ton siège ? Le Seigneur a dit qu'il y aura douze trônes pour les douze Apôtres ; l'un des douze, même Judas, est effectivement tombé, mais le saint Matthias est choisi pour prendre sa place ; car pour les douze trônes, il y en a encore douze pour y siéger. D'abord, trouve où tu t'assoiras, et ensuite prétends être un juge. Voyons donc ce que signifient ces douze trônes. Par eux est signifié en mystère le monde entier, puisque l'Église sera à travers toute la terre, d'où ce bâtiment est appelé à être construit ensemble en Christ.
 
 [Lectio6 in 2 loco]
-C'est pourquoi il est dit qu'il y aura douze trônes, car de tous les coins viendront des hommes à juger ; tout comme il est dit que la ville a douze portes, parce que de tous les coins entreront dans la ville les nations de ceux qui sont sauvés. Ainsi, pas seulement les douze et l'apôtre Paul, mais tous, autant que seront juges, ont part à ces douze trônes, signifiant ainsi qu'ils jugeront tous les hommes ; de même que tous ceux qui entrent dans la ville ont part à ses douze portes. Car il y a quatre coins du monde, l'Est, et l'Ouest, et le Nord, et le Sud, dont ces quatre coins sont souvent mentionnés dans les Écritures. Des quatre vents seront rassemblés les élus, comme le dit le Seigneur dans l'Évangile : "Et il enverra ses anges avec un grand son de trompette ; et ils rassembleront ses élus des quatre vents, depuis une extrémité des cieux jusqu'à l'autre" (Matthieu 24:31). Ainsi, de tous les coins, l'Église est-elle rassemblée ; et comment sont-ils appelés ? Partout ils sont appelés dans la Trinité ; car ils sont appelés d'aucune autre manière que par le baptême en leur Nom du Père, et du Fils, et du Saint-Esprit (Matthieu 28:19). Or, quatre multiplié par trois donne douze.
+C'est pourquoi il est dit qu'il y aura douze trônes, car de tous les coins viendront des hommes à juger ; tout comme il est dit que la ville a douze portes, parce que de tous les coins entreront dans la ville les nations de ceux qui sont sauvés. Ainsi, pas seulement les douze et l'apôtre Paul, mais tous, autant que seront juges, ont part à ces douze trônes, signifiant ainsi qu'ils jugeront tous les hommes ; de même que tous ceux qui entrent dans la ville ont part à ses douze portes. Car il y a quatre coins du monde, l'Est, et l'Ouest, et le Nord, et le Sud, dont ces quatre coins sont souvent mentionnés dans les Écritures. Des quatre vents seront rassemblés les élus, comme le dit le Seigneur dans l'Évangile : « Et il enverra ses anges avec un grand son de trompette ; et ils rassembleront ses élus des quatre vents, depuis une extrémité des cieux jusqu'à l'autre» (Matthieu 24:31). Ainsi, de tous les coins, l'Église est-elle rassemblée ; et comment sont-ils appelés ? Partout ils sont appelés dans la Trinité ; car ils sont appelés d'aucune autre manière que par le baptême en leur Nom du Père, et du Fils, et du Saint-Esprit (Matthieu 28:19). Or, quatre multiplié par trois donne douze.
 
 [Lectio7 in 2 loco]
 Lecture du saint Évangile selon saint Matthieu.

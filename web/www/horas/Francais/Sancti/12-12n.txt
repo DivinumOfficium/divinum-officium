@@ -1,16 +1,6 @@
 [Rank]
 Bienheureuse Vierge Marie de Gauadalupe;;Duplex;;3;;vide C11
 
-[Rank] (rubrica 1960)
-Bienheureuse Vierge MArie de Gauadalupe;;Duplex;;3;;vide C11
-
-[Rule]
-vide C11 ;
-Psalmi Dominica
-9 lectiones ;
-Doxology=Nat
-Ipsa Virgo Virginum
-
 [Ant Vespera]
 Quelle est celle * qui avance comme le soleil, belle comme Jérusalem ?;;109
 Les filles de Sion * l'ont vue florissante avec les fleurs des roses et l'ont proclamée très bienheureuse. ;;112
@@ -25,22 +15,13 @@ R. Et il ne leur a pas fait connaître ses jugements.
 [Ant 1]
 J'ai choisi et sanctifié cet endroit, * Pour que là mon nom soit, et que mes yeux et mon cœur y demeurent tous les jours.
 
-[Ant 3]
-Levez vos yeux alentour, * et regardez : tous ceux-ci se sont rassemblés et viennent vers vous ; vos fils viennent de loin, et vos filles sont portées sur la hanche.
-
 [Oratio]
 Ô Dieu, qui avez voulu nous combler de vos bienfaits grâce à la protection spéciale de la très sainte Vierge Marie, accordez à vos suppliants que nous nous réjouissions aujourd'hui de sa commémoration sur terre, et que nous jouissions de sa présence dans les cieux.
 $Per Dominum
 
-[Hymnus Matutinum]
-@Sancti/12-08
-
 [Lectio94]
 En l'an 1531, à Mexico, sur la colline de Tepeyac, la Vierge Marie se manifesta au néophyte Juan Diego, selon une tradition pieuse. Elle lui donna l'ordre de se rendre auprès de l'évêque Juan de Zumárraga pour lui demander la construction d'une église à l'endroit où elle s'était montrée. L'évêque demanda un signe. Peu de temps après, alors que Juan Diego cherchait des sacrements pour son oncle mourant, la tendre Mère se montra à lui pour la troisième fois. Elle le réconforta au sujet de la santé de son oncle et lui demanda de cueillir des roses qui fleurissaient hors de saison pour les apporter dans son manteau devant l'évêque. Devant l'évêque, lorsqu'il déploya son manteau et que les roses se répandirent à terre, l'image de la Vierge Marie, selon la tradition, apparut de manière miraculeuse sur le tissu. L'image fut d'abord conservée dans la chapelle de l'évêque, puis transférée à l'église construite sur la colline de Tepeyac, et enfin placée dans le magnifique temple où les foules mexicaines se rassemblèrent de plus en plus pour l'honorer et témoigner des miracles. C'est ainsi que les évêques du Mexique, avec l'approbation unanime du peuple, choisirent la Bienheureuse Vierge Marie de Guadalupe comme la première Patronne de la nation mexicaine, une décision confirmée par le Pape Benoît XIV avec l'autorité apostolique. Le 13e jour du mois de décembre 1895, le Pape Léon XIII a décoré l'image sacrée de l'aureole d'or, et le Saint Pape Pie X a déclaré la Bienheureuse Vierge de Guadalupe comme Patronne de toute l'Amérique latine.
 &teDeum
-
-[Ant Laudes]
-@:Ant Vespera :s/109/92/ s/112/99/ s/121/62/ s/126/210/ s/147/148/
 
 [Capitulum Laudes]
 !Prov 8:34-35
@@ -97,5 +78,5 @@ R. Qu'elle chante un psaume à votre nom, Seigneur.
 [Ant 2]
 Vous brillez comme un arc-en-ciel parmi les nuages de gloire, et comme une fleur de rosée aux jours du printemps.
 
-[Versum 3]
-@:Versum 1
+[Ant 3]
+Levez vos yeux alentour, * et regardez : tous ceux-ci se sont rassemblés et viennent vers vous ; vos fils viennent de loin, et vos filles sont portées sur la hanche.

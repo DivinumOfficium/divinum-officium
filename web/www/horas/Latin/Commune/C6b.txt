@@ -1,19 +1,35 @@
 @Commune/C6
 
-[Lectio1]
-@Commune/C6:Lectio1 in 2 loco
+[Name]
+Commune Virginum tantum
+
+[HymnusM Matutinum]
+@Commune/C6::1-4
+@Commune/C6::15-25
+
+[Hymnus Matutinum Virgo tantum]
+{:H-Virginisproles:}v. Vírginis Proles, Opiféxque Matris,
+Virgo quem gessit, peperítque Virgo:
+Vírginis festum cánimus beátæ,
+Accipe votum.
+
+[Hymnus Matutinum]
+@:Hymnus Matutinum Virgo tantum
+_
+@Commune/C6::16-25
 
 [Responsory1]
-@Commune/C6:Responsory1 pro Martyre
+R. Veni, elécta mea, et ponam in te thronum meum
+* Quia concupívit Rex spéciem tuam.
+V. Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna.
+R. Quia concupívit Rex spéciem tuam.
 
-[Lectio2]
-@Commune/C6:Lectio2 in 2 loco
-
-[Lectio3]
-@Commune/C6:Lectio3 in 2 loco
+[Oratio]
+@Commune/C7a:: s/N\./N. Vírginis tuæ/
 
 [Lectio Prima]
-@Commune/C6:Lectio Prima pro Martyre
+!Sap 4:1
+v. O quam pulchra est casta generátio cum claritáte! Immortális est enim memória illíus, quóniam apud Deum nota est, et apud hómines.
 
 [Capitulum Nona]
 @:Lectio Prima

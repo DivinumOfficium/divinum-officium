@@ -1,13 +1,6 @@
 [Rank]
 Ss. Philippi et Jacobi Apostolorum;;Duplex II classis;;5.1;;ex C1
 
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-StJamesRule=Jas
-
 [Ant Vespera]
 Señor, * muéstranos al Padre y nos basta. Aleluya.;;109
 Felipe, * quien me ha visto a mí, ha visto al Padre. Aleluya.;;110
@@ -50,7 +43,7 @@ Homilía de San Agustín, Obispo.
 Hay que elevar, hermanos míos, con más energía nuestro pensamiento a Dios, para que nuestras almas puedan comprender, dentro de lo posible, las palabras del santo Evangelio que acabáis de oír. Nuestro Señor Jesucristo dijo a sus discípulos: “No se turbe vuestro corazón. Creéis en Dios, creed también en mí”. Queriendo prevenir el temor que su muerte podría producir en sus discípulos, y la turbación que debía seguirse de ella, los consuela declarándoles que Él mismo es Dios. “Creéis en Dios -les dice-, creed también en mí”. Como si dijera: Si creéis en Dios, es lógico que creáis en mí. Lo cual no sería lógico si Jesucristo no fuera Dios.
 
 [Lectio8]
-Creéis en Dios; creed, pues, en Aquel que es por naturaleza, no por usurpación, igual a Dios. Anonadose sin perder la naturaleza divina, pero tomando la naturaleza de siervo. ¿Teméis la muerte para esta forma de siervo? “No se turbe vuestro corazón"; la naturaleza divina la resucitará. Mas ¿por qué las palabras siguientes: “En la casa de mi Padre hay muchas moradas”, sino porque los discípulos temían por ellos mismos? Por eso tuvieron necesidad de oír al Salvador decir: “No se turbe vuestro corazón”. En efecto, ¿quién de los apostóles habría podido no sentir temor al oír que Jesús decía a Pedro, el que más confianza y ardor mostraba: “No cantará hoy el gallo sin que tres veces me hayas negado”?
+Creéis en Dios; creed, pues, en Aquel que es por naturaleza, no por usurpación, igual a Dios. Anonadose sin perder la naturaleza divina, pero tomando la naturaleza de siervo. ¿Teméis la muerte para esta forma de siervo? “No se turbe vuestro corazón”; la naturaleza divina la resucitará. Mas ¿por qué las palabras siguientes: “En la casa de mi Padre hay muchas moradas”, sino porque los discípulos temían por ellos mismos? Por eso tuvieron necesidad de oír al Salvador decir: “No se turbe vuestro corazón”. En efecto, ¿quién de los apostóles habría podido no sentir temor al oír que Jesús decía a Pedro, el que más confianza y ardor mostraba: “No cantará hoy el gallo sin que tres veces me hayas negado”?
 
 [Lectio9]
 Temían perecer alejados de Jesús; su turbación era bien legítima; pero estas palabras: “En la casa de mi Padre hay muchas moradas; si así no fuera, yo no os habría dicho: voy a aparejaros el lugar”, calman la inquietud y la agitación de sus almas, infundiéndoles la esperanza cierta de que, tras los peligros y pruebas de esta vida, se verán para siempre unidos a Dios con Jesucristo. Aunque fuese superior a otro en fuerza, sabiduría, justicia, o santidad, “en la casa de mi Padre hay muchas moradas”; nadie se verá excluido de esta casa, en la que cada cual será colocado según su mérito.
@@ -62,8 +55,8 @@ Temían perecer alejados de Jesús; su turbación era bien legítima; pero estas
 [Ant 2]
 Yo soy el camino * y la verdad y la vida. Nadie va al Padre sino por mí. Aleluya.
 
+[Ant Vespera 3]
+@:Ant Vespera:s/116/138/ s/112/125/ s/111/115/ s/110/112/
+
 [Ant 3]
 Si permanecéis en mí * y mis palabras permanecen en vosotros, pediréis lo que deseáis y se realizará. Aleluya, aleluya, aleluya.
-
-[Ant Vespera 3]
-@:Ant Vespera:s/116/138/ s/112/125/ s/111/115/ s/110/112/ 

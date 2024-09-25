@@ -4,11 +4,12 @@ Tag der Einweihung der Erzbasilika des heiligsten Erlösers (Laterankirche in Ro
 [Rank] (rubrica tridentina)
 Tag der Einweihung der Erzbasilika des heiligsten Erlösers (Laterankirche in Rom);;Duplex majus;;4;;ex C8
 
-[Rule]
-ex C8;
-Domini
-9 lectiones
-Festum Domini
+[Commemoratio]
+!Kommemoration vom hl. Martyrer Theodor
+@Commune/C2:Oratio proper
+$Oremus
+O Gott, der du uns mit dem ruhmvollen Glaubensbekenntnis deines heiligen Martyrers Theodor umstellst und in Schutz erhälst, gewähre uns die Gnade, dass wir aus seiner Nachahmung Nutzen ziehen und an seiner Fürbitte eine Stütze haben.
+$Per Dominum
 
 [Commemoratio 5]
 !Kommemoration des Oktavtags von Allerheiligen
@@ -47,8 +48,7 @@ Die Gebräuche, die bei der Weihe von Kirchen und Altären die römische Kirche 
 Als aber Kaiser Konstantin durch das Sakrament der Taufe Genesung und Heil erlangt hatte, da erst wurde durch ein von ihm erlassenes Gesetz auf der ganzen Welt gestattet, dass die Christen Kirchen bauen durften, die er nicht bloß durch den Erlass, sondern auch durch eigenes Beispiel zu der heiligen Bauarbeit ermunterte. Denn in seinem Palast auf dem Lateran weihte er eine Kirche dem Heiland und im Anschluss an diese baute er eine Basilika zu Ehren des heiligen Johannes des Täufers, an der Stelle, wo er selbst vom heiligen Silvester getauft und von dem Aussatz des Heidentums gereinigt wurde, und diese weihte der genannte Papst am 9. November ein; und das Andenken an diese Einweihung wird am heutigen Tage gefeiert, wo zuerst in Rom in öffentlicher Weise eine Kirche eingeweiht und ein an der Wand gemaltes Bild des Heilands dem Volke sichtbar geworden ist.
 
 [Lectio6]
-Wenn nun auch der heilige Silvester später bei der Einweihung des Altars zu Ehren des Apostelfürsten verordnete, dass in Zukunft nur steinerne Altäre errichtet werden sollten, war doch der Altar in der Lateranbasilika aus Holz hergestellt; und das ist nicht zu verwundern. Denn da vom heiligen Petrus an bis auf Silvester die Päpste wegen der Verfolgungen sich an einem bestimmten Orte nicht festsetzen konnten, feierten sie, wohin sie gerade das Bedürfnis hinlenkte, entweder in den Grabkammern oder an den allgemeinen Beerdigungsstätten oder in den Häusern der Gläubigen über jenem hölzernen, nach Art eines Kasten ausgehöhlten Altar das heilige Opfer. Als der heilige Silvester diesen Altar, nachdem der Kirche der Friede wiedergegeben war, zu Ehren des Apostelfürsten, der auf ihm das heilige Opfer dargebracht haben soll und der übrigen Päpste, die bis zur damaligen Zeit ihn bei den heiligen Feiern benutzt hatten, in der ursprünglichen Laterankirche hatte aufstellen lassen, verordnete er, dass auf ihm außer dem römischen Bischof niemand das Messopfer feiern solle.~
-~
+Wenn nun auch der heilige Silvester später bei der Einweihung des Altars zu Ehren des Apostelfürsten verordnete, dass in Zukunft nur steinerne Altäre errichtet werden sollten, war doch der Altar in der Lateranbasilika aus Holz hergestellt; und das ist nicht zu verwundern. Denn da vom heiligen Petrus an bis auf Silvester die Päpste wegen der Verfolgungen sich an einem bestimmten Orte nicht festsetzen konnten, feierten sie, wohin sie gerade das Bedürfnis hinlenkte, entweder in den Grabkammern oder an den allgemeinen Beerdigungsstätten oder in den Häusern der Gläubigen über jenem hölzernen, nach Art eines Kasten ausgehöhlten Altar das heilige Opfer. Als der heilige Silvester diesen Altar, nachdem der Kirche der Friede wiedergegeben war, zu Ehren des Apostelfürsten, der auf ihm das heilige Opfer dargebracht haben soll und der übrigen Päpste, die bis zur damaligen Zeit ihn bei den heiligen Feiern benutzt hatten, in der ursprünglichen Laterankirche hatte aufstellen lassen, verordnete er, dass auf ihm außer dem römischen Bischof niemand das Messopfer feiern solle. s/$/~/
 @:Lectio6a 
 (rubrica 1570 omittitur)
 
@@ -59,10 +59,3 @@ Nachdem diese Kirche durch Brände, Plünderungen und überdies durch Erdbeben a
 !Kommemoration des hl. Martyrers Theodor
 Theodor, ein christlicher Soldat, wurde unter dem Kaiser Maximian, weil er einen Götzentempel in Brand gesteckt hatte, ergriffen, blieb, als ihm von dem Führer der Legion die Strafe nachgelassen werden sollte, wenn er die Tat bereue und dem christlichen Glauben entsage, in dem Bekenntnis des Glaubens standhaft und wurde in den Kerker geworfen; hier wurde er mit Krallen zerfleischt, und als die Rippen bloßgelegt wurden, sang er fröhlich: „Ich preis den Herrn allezeit.“ Daher wurde er auf einen brennenden Scheiterhaufen geworfen und übergab unter Gebet und Gotteslob seine Seele Christo, am 9. November. Seinen Leib ließ die Matrone Eusebia in ein Leichentuch einhüllen und auf ihrem Grundstück bestatten.
 &teDeum
-
-[Commemoratio]
-!Kommemoration vom hl. Martyrer Theodor
-@Commune/C2:Oratio proper
-$Oremus
-O Gott, der du uns mit dem ruhmvollen Glaubensbekenntnis deines heiligen Martyrers Theodor umstellst und in Schutz erhälst, gewähre uns die Gnade, dass wir aus seiner Nachahmung Nutzen ziehen und an seiner Fürbitte eine Stütze haben.
-$Per Dominum

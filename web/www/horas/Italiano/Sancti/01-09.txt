@@ -1,16 +1,8 @@
 [Rank]
 Quarta die infra Octavam Epiphaniae;;Semiduplex;;2;;ex Sancti/01-06
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Die Nona Januarii;;Feria;;1.2;;vide Sancti/01-06
-
-[Rule]
-ex Sancti/01-06
-Lectio1 tempora
-Doxology=Epi
-9 lectiones
-Feria Te Deum
-Infra octavam Epiphaniae Domini
 
 [Lectio1]
 Dalla Lettera ai Romani
@@ -23,12 +15,6 @@ Dalla Lettera ai Romani
 [Responsory1]
 @Sancti/01-06:Responsory1InfraOctavam
 
-[Responsory2]
-@Sancti/01-06:Responsory2
-
-[Responsory3]
-@Sancti/01-06:Responsory3
-
 [Lectio2]
 !Rom 13:4-7
 4 Ma se fai il male, temi: giacché non inutilmente porta la spada. Essa infatti è ministra di Dio: vendicatrice per punire chiunque fa il male. 
@@ -36,11 +22,17 @@ Dalla Lettera ai Romani
 6 Infatti per questo anche voi pagate i tributi: perché ci sono i ministri di Dio, che in questo appunto lo servono. 
 7 Rendete dunque a tutti quel ch'è dovuto: a chi il tributo, il tributo; a chi l'imposta, l'imposta; a chi il timore, il timore; a chi l'onore, l'onore.
 
+[Responsory2]
+@Sancti/01-06:Responsory2
+
 [Lectio3]
 !Rom 13:8-10
 8 Non abbiate debiti con nessuno, se non quello di amarvi l'un l'altro: perché chi ama il prossimo, ha adempiuto la legge. 
 9 Infatti il: Non commettere adulterio; Non ammazzare; Non rubare; Non fare falsa testimonianza; Non desiderare, e qualsiasi altro comandamento, si riassumono in questa formola: Ama il prossimo tuo come te stesso. L'amore non fa alcun male al prossimo. 
 10 L'amore dunque è la piena osservanza della legge.
+
+[Responsory3]
+@Sancti/01-06:Responsory3
 
 [Lectio4]
 Sermone di san Leone Papa

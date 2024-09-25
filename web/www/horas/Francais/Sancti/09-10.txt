@@ -1,10 +1,6 @@
 [Rank]
 St Nicolas de Tolentino Confesseur;;Duplex;;3;;vide C5
 
-[Rule]
-vide C5 ;
-9 lectiones
-
 [Oratio]
 Agréez, Seigneur, nos supplications offertes en la solennité du bienheureux Nicolas, Votre confesseur, en sorte que, n’ayant aucune confiance en notre jutice nous soyons aidés par les prières de celui qui a su Vous plaire.
 $Per Dominum
@@ -18,6 +14,10 @@ N’étant encore qu’adolescent, il s’enrôla dans la milice ecclésiastique
 [Lectio6]
 Bien que Satan le fatiguât de ses ruses jusqu’à le frapper, l’assiduité de son application à la prière ne connut pas de défaillance. Toutes les nuits, durant les six derniers mois de son existence, il entendit des concerts angéliques dont la suavité lui faisait pressentir les joies du paradis et l’amenait à répéter fréquemment ces paroles de l’Apôtre : « Il me tarde de mourir pour être réuni au Christ. » Il prédit à ses frères le jour de sa mort, qui fut le quatre des ides de septembre. Des miracles nombreux, même après sa mort, rendirent son nom illustre. Ces miracles ayant été judiciairement et régulièrement constatés, le Pape Eugène IV le plaça au nombre des Saints.
 
+[Lectio94]
+Nicolas, dit de Tolentino, à cause de son long séjour dans cette cité, naquit à Saint-Ange, ville de la Marche d’Ancône, de pieux parents qui l’obtinrent de Dieu, à la suite d’un vœu, par l’intercession de saint Nicolas. Enfant, il donna l’exemple de nombreuses vertus, de l’abstinence spécialement. Enrôlé plus tard dans la milice ecclésiastique et pourvu d’un canonicat, il entendit un jour un prédicateur de l’Ordre des Ermites de saint Augustin prêcher sur le mépris du monde. Enflammé par ce sermon, il entra de suite dans le même ordre. Il y observa si rigoureusement les règles de la vie religieuse, que, revêtu d’habits grossiers, domptant son corps par le jeûne, les disciplines et les chaînes de fer, il se distingua entre tous les autres par ses vertus. Son assiduité pour la prière, était sans relâche, bien qu’il fût persécuté de diverses manières par le démon et même parfois frappé de verges. Six mois avant de mourir, il entendit, chaque nuit, des concerts angéliques, et, enfin, après avoir annoncé son dernier jour, il s’endormit dans le Seigneur. Devenu célèbre par ses miracles pendant sa vie et après sa mort, il fut mis, par Eugène IV, au nombre des Saints.
+&teDeum
+
 [Lectio7]
 @Commune/C5:Lectio7 in 2 loco
 
@@ -26,7 +26,3 @@ Bien que Satan le fatiguât de ses ruses jusqu’à le frapper, l’assiduité d
 
 [Lectio9]
 @Commune/C5:Lectio9 in 2 loco
-
-[Lectio94]
-Nicolas, dit de Tolentino, à cause de son long séjour dans cette cité, naquit à Saint-Ange, ville de la Marche d’Ancône, de pieux parents qui l’obtinrent de Dieu, à la suite d’un vœu, par l’intercession de saint Nicolas. Enfant, il donna l’exemple de nombreuses vertus, de l’abstinence spécialement. Enrôlé plus tard dans la milice ecclésiastique et pourvu d’un canonicat, il entendit un jour un prédicateur de l’Ordre des Ermites de saint Augustin prêcher sur le mépris du monde. Enflammé par ce sermon, il entra de suite dans le même ordre. Il y observa si rigoureusement les règles de la vie religieuse, que, revêtu d’habits grossiers, domptant son corps par le jeûne, les disciplines et les chaînes de fer, il se distingua entre tous les autres par ses vertus. Son assiduité pour la prière, était sans relâche, bien qu’il fût persécuté de diverses manières par le démon et même parfois frappé de verges. Six mois avant de mourir, il entendit, chaque nuit, des concerts angéliques, et, enfin, après avoir annoncé son dernier jour, il s’endormit dans le Seigneur. Devenu célèbre par ses miracles pendant sa vie et après sa mort, il fut mis, par Eugène IV, au nombre des Saints.
-&teDeum

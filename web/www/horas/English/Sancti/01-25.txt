@@ -1,22 +1,17 @@
 [Rank]
 In Conversione S. Pauli Apostoli;;Duplex majus;;4;;ex Sancti/06-30
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 In Conversione S. Pauli Apostoli;;Duplex Fest;;5;;ex Sancti/06-30
-
-[Rule]
-ex Sancti/06-30;
-9 lectiones
-Sub unica concl
-Psalm5 Vespera=116
-
-[Capitulum Laudes]
-!Acts 9:1-2
-v. And Saul, as yet breathing out threatenings and slaughter against the disciples of the Lord, went to the high priest, and asked of him letters to Damascus, to the synagogues: that if he found any men and women of this way, he might bring them bound to Jerusalem.
-$Deo gratias
 
 [Ant 1]
 Ananias, go thy way * and seek Saul for, behold, he prayeth for he is a chosen vessel unto Me, to bear My name before the Gentiles, and kings, and the children of Israel.
+
+[Oratio]
+O God, Who, through the teaching of the Blessed Apostle Paul, hast caused the light of the Gospel to shine throughout the world, grant, we beseech thee, that we, having his wonderful conversion as on this day in remembrance, may show forth our thankfulness unto thee for the same, by following the holy example which he hath set.
+$Per Dominum
+_
+@Sancti/01-25:Commemoratio4
 
 [Invit]
 For the conversion of the Teacher of the Gentiles, * let us praise our God.
@@ -58,30 +53,13 @@ What then? Is Benjamin a wolf that shall ravin for ever? God forbid. In the morn
 [Lectio6]
 He went breathing out threatenings and slaughter, yea, truly, devouring the prey. When also they stoned Stephen, the first Martyr that laid down his life for Christ's name's sake, Saul was consenting unto his death, and, as though it contented him not to stone him, he kept the clothes of all them that did it, urging them on more than if he had joined them. So in the morning he devoured the prey. How in the evening did he divide the spoil? Struck down by the voice of Christ from heaven, ravining no more, he falleth upon his face, cast down to be raised up, smitten to be healed.
 
-[Oratio]
-O God, Who, through the teaching of the Blessed Apostle Paul, hast caused the light of the Gospel to shine throughout the world, grant, we beseech thee, that we, having his wonderful conversion as on this day in remembrance, may show forth our thankfulness unto thee for the same, by following the holy example which he hath set.
-$Per Dominum
-_
-@Sancti/01-25:Commemoratio4
-
-[Commemoratio4]
-!Commemoration of St. Peter the Apostle
-(deinde dicuntur)
-Ant. Thou art the Shepherd of the sheep, and the Prince of the Apostles,~
-and unto thee hath God given the keys of the kingdom of heaven.
-_
-V. Thou art Peter.
-R. And upon this rock I will build My Church.
-_
-$Oremus
-(sed rubrica 1960 aut rubrica monastica hæc versus omittuntur)
-O God, Who hast given unto thy Blessed Apostle Peter the keys of the kingdom of~
-heaven, and the power to bind and to loose, loose us, we beseech thee, at his~
-mighty intercession, from all the bands of our sins.
-$Qui vivis
-
 [Ant Laudes]
 @:Ant Vespera 3:s/;;.*//g
+
+[Capitulum Laudes]
+!Acts 9:1-2
+v. And Saul, as yet breathing out threatenings and slaughter against the disciples of the Lord, went to the high priest, and asked of him letters to Damascus, to the synagogues: that if he found any men and women of this way, he might bring them bound to Jerusalem.
+$Deo gratias
 
 [Lectio Prima]
 !Acts 9:22
@@ -98,3 +76,16 @@ Most gladly therefore will I rather glory * in my infirmities, that the power of
 The grace of God which was bestowed upon me was not in vain, * but His grace abideth ever in me.;;115
 In Damascus the governor under Aretas the king was desirous to apprehend me; by the brethren in a basket was I let down by the wall, and so escaped I his hands, in the name of the Lord.;;125
 Thrice was I beaten with rods, * once was I stoned, thrice I suffered shipwreck, for Christ's name's sake.;;138
+
+[Commemoratio4]
+!Commemoration of St. Peter the Apostle
+(deinde dicuntur)
+Ant. Thou art the Shepherd of the sheep, and the Prince of the Apostles, and unto thee hath God given the keys of the kingdom of heaven.
+_
+V. Thou art Peter.
+R. And upon this rock I will build My Church.
+_
+$Oremus
+(sed rubrica 1960 aut rubrica monastica hæc versus omittuntur)
+O God, Who hast given unto thy Blessed Apostle Peter the keys of the kingdom of heaven, and the power to bind and to loose, loose us, we beseech thee, at his mighty intercession, from all the bands of our sins.
+$Qui vivis

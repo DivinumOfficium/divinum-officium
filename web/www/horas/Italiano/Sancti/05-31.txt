@@ -1,24 +1,11 @@
 [Rank]
 Beatae Mariae Virginis Reginae;;Duplex II classis;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Beatae Mariae Virginis Reginae;;Duplex II classis;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Beatae Mariae Virginis Reginae;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Ipsa Virgo Virginum
-Doxology=Nat
-Antiphonas horas
-Psalmi Dominica
-
-[Capitulum Laudes]
-!Sir 24:5; 24:7
-v. Io sono uscita dalla bocca dell'Altissimo, primogenita di tutta la creazione. Nel più alto dei cieli ho la mia dimora e il mio trono sulla colonna di nube.
-$Deo gratias
 
 [Versum 1]
 V. Salve, Regina di misericordia.
@@ -187,6 +174,11 @@ R. Sopra i cori degli angeli, ai regni celesti. (Alleluia.)
 [Lectio9]
 Maria è regina e distributrice di grazie: ciò fu. intuito nel libro di Ester, dove è scritto: «La fonte crebbe diventando fiume, e poi si trasformò in luce e in sole». La vergine Maria, raffigurata nella persona di Ester, è paragonata al dilatarsi dell'acqua e della luce, proprio perché diffonde la grazia che aiuta l'azione e la contemplazione. La stessa grazia di Dio che curò l'umanità, fu comunicata a noi attraverso Maria, come attraverso un acquedotto: è un compito della Vergine distribuire la grazia, non perché sia creatrice di grazia, ma perché ce la guadagna con i suoi meriti. Giustamente, quindi, la vergine Maria è regina nobile di fronte al suo popolo, proprio perché ci ottiene il perdono, vince le difficoltà, distribuisce la grazia e finalmente, introduce nella gloria.
 &teDeum
+
+[Capitulum Laudes]
+!Sir 24:5; 24:7
+v. Io sono uscita dalla bocca dell'Altissimo, primogenita di tutta la creazione. Nel più alto dei cieli ho la mia dimora e il mio trono sulla colonna di nube.
+$Deo gratias
 
 [Versum 2]
 V. La Vergine Maria ascese al cielo.

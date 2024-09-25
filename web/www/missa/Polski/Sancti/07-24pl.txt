@@ -1,4 +1,3 @@
-
 [Comment]
 # 24 VII – Św. Kingi, Dziewicy
 ! 3 klasy
@@ -8,33 +7,32 @@
 
 Msza wspólna nr 26 Dilexisti, z wyjątkiem kolekty, sekrety i pokomunii
 
-[Introitus]
-@Commune/C6b:Introitus
-
 [Oratio]
 Boże, który błogosławioną Kingę obdarzyłeś słodyczą Twego błogosławieństwa i zachowałeś dziewicą nawet w małżeństwie, spraw, prosimy Cię, za jej wstawiennictwem, abyśmy dzięki czystości życia zawsze trwali przy Tobie i wstępując w jej ślady, mogli szczęśliwe dojść do Ciebie.
 $Per Dominum
 
-[Lectio]
-@Commune/C6b:Lectio
-
-[Graduale]
-@Commune/C6b:Graduale
+[Introitus]
+@Commune/C6b:Introitus
 
 [Evangelium]
 @Commune/C6b:Evangelium
 
-[Offertorium]
-@Commune/C6b:Offertorium
+[Lectio]
+@Commune/C6b:Lectio
 
 [Secreta]
 Panie, zlej łaskawie błogosławieństwo Twe na dary, które Ci składamy ku czci błogosławionej Kingi, Twojej Dziewicy: niech nas one oczyszczą ze wszystkich wad i napełnią rozkoszą niebieską.
 $Per Dominum
 
-[Communio]
-@Commune/C6b:Communio
+[Graduale]
+@Commune/C6b:Graduale
 
 [Postcommunio]
 Prosimy Cię, Panie, za wstawiennictwem błogosławionej Kingi, Twojej Dziewicy, niech przyjęte przez nas święte tajemnice stale nas pobudzają i oświecają, abyśmy godnie oczekiwali przyjścia Syna Twego i zostali dopuszczeni do niebiańskich Jego godów.
 $Per eundem
 
+[Offertorium]
+@Commune/C6b:Offertorium
+
+[Communio]
+@Commune/C6b:Communio

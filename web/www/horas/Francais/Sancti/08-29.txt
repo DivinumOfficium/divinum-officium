@@ -1,17 +1,8 @@
 [Rank]
 Décollation de St Jean-Baptiste;;Duplex majus;;4;;ex C2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Décollation de St Jean-Baptiste;;Duplex;;3;;vide C2
-
-[Rule]
-ex C2 ;
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-scriptura1960
 
 [Ant Vespera]
 Hérode fit prendre Jean, * le chargea de fers et le mit en prison à cause d'Hérodiade.
@@ -91,6 +82,12 @@ R. Et il lui a donné une gloire éternelle.
 &Gloria
 R. Et il lui a donné une gloire éternelle.
 
+[Lectio94]
+Du livre de saint Ambroise, Évêque : Des Vierges
+Livre 3, après le commencement. 
+Il ne faut pas effleurer légèrement un sujet tel que la mémoire du bienheureux Jean-Baptiste ; aussi devons-nous considérer ce qu’il était, quels furent ses bourreaux, pourquoi, quand et comment il a été martyrisé. C’est un juste qui est mis à mort, par des adultères ; et la peine capitale qu’ils méritent, ils la font subir à celui qui devrait être leur juge. Et puis la mort d’un Prophète devient la récompense et le salaire d’une danseuse. Enfin, ce que tous les barbares eux-mêmes ont communément en horreur, c’est à table, au milieu d’un banquet, qu’on prononce l’arrêt cruel qui devra s’exécuter. Et on apporte de la prison à la salle du festin l’objet de l’exécution impie qui a suivi ce fatal commandement. Que de crimes dans une seule action !
+&teDeum
+
 [Lectio7]
 Lecture du saint Évangile selon saint Marc
 !Marc 6:17-29
@@ -117,14 +114,5 @@ Sabine, dame romaine, épouse de Valentin, homme de qualité, fut initiée par l
 [Ant Laudes]
 @:Ant Vespera
 
-[Ant 2]
-@:Ant 1
-
 [Ant 3]
 Le roi infidèle * envoya d'odieux serviteurs avec l'ordre de décapiter Jean-Baptiste.
-
-[Lectio94]
-Du livre de saint Ambroise, Évêque : Des Vierges
-Livre 3, après le commencement. 
-Il ne faut pas effleurer légèrement un sujet tel que la mémoire du bienheureux Jean-Baptiste ; aussi devons-nous considérer ce qu’il était, quels furent ses bourreaux, pourquoi, quand et comment il a été martyrisé. C’est un juste qui est mis à mort, par des adultères ; et la peine capitale qu’ils méritent, ils la font subir à celui qui devrait être leur juge. Et puis la mort d’un Prophète devient la récompense et le salaire d’une danseuse. Enfin, ce que tous les barbares eux-mêmes ont communément en horreur, c’est à table, au milieu d’un banquet, qu’on prononce l’arrêt cruel qui devra s’exécuter. Et on apporte de la prison à la salle du festin l’objet de l’exécution impie qui a suivi ce fatal commandement. Que de crimes dans une seule action !
-&teDeum

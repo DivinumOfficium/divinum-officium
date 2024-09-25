@@ -1,27 +1,15 @@
 [Rank]
 St Damase Ier, pape et confesseur;;Semiduplex;;2.9;;vide C4
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 St Damase Ier, pape et confesseur;;Duplex;;3;;vide C4
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 St Damase Ier, pape et confesseur;;Semiduplex;;2.5;;vide C4
-
-[Rule]
-vide C4;
-9 lectiones;
-OPapaC=Dámase;
-Doxology=Nat
-Omit Preces
-Commemoratio3
 
 [Oratio]
 Pasteur éternel, veillez avec bonté sur votre troupeau et assurez-lui une protection constante par saint Damase, votre Souverain Pontife à qui vous avez donné d’être pasteur de toute l’Église.
 $Per Dominum
-
-[Commemoratio 2](rubrica divino)
-!Commémoraison dans l'Octave de L’immaculée Conception de la B.V.Marie
-@Sancti/12-08:Oratio
 
 [Lectio4]
 L'Espagnol Damase, homme remarquable et versé dans les Écritures, ayant convoqué le premier concile de Constantinople, y étouffa la criminelle hérésie d’Eunomius et de Macédonius. C’est lui encore qui condamna de nouveau l’assemblée de Rimini, déjà rejetée précédemment par Libère, en laquelle, comme P écrit saint Jérôme, par suite des ruses d’Ursace et surtout de Valens, on avait proclamé la condamnation de la foi de Nicée, en sorte que l'univers en gémissant s’était étonné d’être arien.
@@ -44,6 +32,6 @@ L’Espagnol Damase, homme remarquable et versé dans les Écritures, ayant conv
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
-
+[Commemoratio 2] (rubrica divino)
+!Commémoraison dans l'Octave de L’immaculée Conception de la B.V.Marie
+@Sancti/12-08:Oratio

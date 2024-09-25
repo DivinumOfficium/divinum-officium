@@ -1,18 +1,8 @@
 [Rank]
 In Commemoratione S. Pauli Apostoli;;Duplex majus;;4;;ex C1
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Commemoratione S. Pauli Apostoli;;Duplex;;3;;vide C1
-
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
-Sub unica concl
-No prima vespera
 
 [Ant Vespera]
 Io piantai, * Apollo innaffiò, ma Dio ha fatto crescere, alleluia.;;109
@@ -27,6 +17,15 @@ R. Il predicatore della verità per tutto il mondo.
 
 [Ant 1]
 O san Paolo Apostolo, * predicatore della verità e dottore dei Gentili, intercedi per noi presso Dio, che t'ha eletto.
+
+[Oratio]
+O Dio, che colla predicazione del beato Paolo Apostolo hai istruito una moltitudine di Genti: concedi che, come ne celebriamo il natale, così ne risentiamo il patrocinio presso di te.
+$Per Dominum
+_
+@Sancti/01-25:Commemoratio4
+
+[Commemoratio]
+@Sancti/06-24:Octava
 
 [Hymnus Matutinum]
 v. Egregio Dottore Paolo, ammaestraci, 
@@ -185,65 +184,14 @@ $Deo gratias
 [HymnusM Laudes]
 @Commune/C1:HymnusM Vespera
 
-[Versum 2]
-V. Tu sei uno strumento eletto, o san Paolo Apostolo.
-R. Il predicatore della verità per tutto il mondo.
-
 [Ant 2]
 Voi che mi avete seguito, * sederete sopra troni per giudicare le dodici tribù d'Israele, dice il Signore.
-
-[Oratio]
-O Dio, che colla predicazione del beato Paolo Apostolo hai istruito una moltitudine di Genti: concedi che, come ne celebriamo il natale, così ne risentiamo il patrocinio presso di te.
-$Per Dominum
-_
-@Sancti/01-25:Commemoratio4
-
-[Commemoratio]
-@Sancti/06-24:Octava
 
 [Lectio Prima]
 !1 Cor 15:9-10
 v. Io poi sono l'ultimo degli Apostoli, che non sono degno di esser chiamato Apostolo, poiché perseguitai la Chiesa di Dio. È per la grazia di Dio che sono quello che sono, e la sua grazia in me non è stata vana.
 
-[Responsory Tertia]
-R.br. Per tutta la terra * si è sparsa la loro voce.
-R. Per tutta la terra * si è sparsa la loro voce.
-V. E fino ai confini del mondo sono giunte le loro parole.
-R. Si è sparsa la loro voce.
-&Gloria
-R. Per tutta la terra si è sparsa la loro voce.
-_
-V. Tu li costituirai principi su tutta la terra.
-R. Essi ricorderanno il tuo nome, o Signore.
-
 [Capitulum Sexta]
 !2. Cor. 12:7-9
 v. Affinché la grandezza delle rivelazioni non mi facesse inorgoglire, mi è stato messo uno stimolo nella mia carne, un messo di satana che mi schiaffeggiasse: a riguardo di costui pregai tre volte il Signore perché lo allontanasse da me, ed egli mi disse: Ti basti la mia grazia.
 $Deo gratias
-
-[Responsory Sexta]
-R.br. Tu li costituirai principi * su tutta la terra.
-R. Tu li costituirai principi * su tutta la terra.
-V. Essi ricorderanno il tuo nome, o Signore.
-R. Su tutta la terra.
-&Gloria
-R. Tu li costituirai principi * su tutta la terra.
-_
-V. Molto onorati sono i tuoi amici o Dio.
-R. Molto grande è divenuto il loro potere.
-
-[Capitulum Nona]
-!1 Cor 15:9-10
-v.  Io poi sono l'ultimo degli Apostoli, che non sono degno di esser chiamato Apostolo, poiché perseguitai la Chiesa di Dio. È per la grazia di Dio che sono quello che sono, e la sua grazia in me non è stata vana.
-$Deo gratias
-
-[Responsory Nona]
-R.br. Molto onorati sono * i tuoi amici o Dio.
-R. Molto onorati sono * i tuoi amici o Dio.
-V. Molto grande è divenuto il loro potere.
-R. I tuoi amici o Dio.
-&Gloria
-R. Molto onorati sono i tuoi amici o Dio.
-_
-V. Essi hanno annunziato le opere di Dio.
-R. Ed hanno compreso ciò ch'egli ha fatto.

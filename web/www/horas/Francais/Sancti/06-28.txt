@@ -1,12 +1,13 @@
 [Rank]
 S. Irenaei Episcopi et Martyris;;Duplex;;3;;vide C2
 
-[Rule]
-vide C2 ;
-9 lectiones
-
 [Oratio]
 Dieu, vous avez accordé au bienheureux Irénée, votre Martyr et Pontife, de réprimer les hérésies par la vérité de sa doctrine et d’affermir la paix de l’Église : nous vous en supplions, donnez à votre peuple la constance dans la sainte religion, et à nos temps la paix.
+$Per Dominum
+
+[Oratio Vigilia]
+!Pour la Vigile des saints Pierre et Paul Apôtres.
+Daignez, nous vous en supplions, ô Dieu tout-puissant, ne point permettre qu’aucun trouble nous ébranle, après que vous nous avez établis sur la pierre solide de la foi des Apôtres.
 $Per Dominum
 
 [Lectio4]
@@ -44,16 +45,6 @@ Homélie de saint Augustin, Evêque.
 A son triple reniement, Pierre oppose une triple confession, voulant que sa langue n’obéisse pas moins à l’amour qu’elle n’a obéi à la crainte, et que la mort entrevue de loin ne semble pas lui avoir donné plus de voix que la présence de la Vie. Renier le Pasteur a été l’effet de la crainte : que l’office de l’amour soit de paître le troupeau du Seigneur ! Ceux qui paissent les brebis du Christ avec la disposition de vouloir qu’elles soient à eux et non au Christ, sont convaincus de s’aimer eux-mêmes et de ne point aimer Jésus-Christ, avides qu’ils sont d’honneurs, de domination, de richesses, et vides de cette charité qui fait obéir, soulager, plaire à Dieu.
 &teDeum
 
-[Lectio91]
-!Cap. 25, alias 46, num. 7
-Quant à nous, nous prions afin qu'ils ne demeurent point dans la fosse qu'ils ont eux-mêmes creusée, mais qu'enfantés légitimement à une nouvelle vie, ils se tournent vers l'Eglise de Dieu, et que le Christ soit formé en eux, et qu'ils reconnaissent l'Ordonnateur et le Créateur de cet univers pour seul vrai Dieu ainsi que Maître de tous. Nous demandons ces grâces pour eux, les aimant plus utilement qu'ils ne pensent s'aimer eux-mêmes. L'affection qui leur vient de nous, parce qu'elle est véritable, leur sera salutaire, s'ils veulent bien l'accepter. Comparable à un traitement pénible qui retranche d'une blessure la chair malsaine et superflue, elle combat leur orgueil et leur enflure. A cause de cette dilection sainte, nous ne nous lasserons point de chercher de tout notre pouvoir, à leur tendre la main.
-&teDeum
-
-[Oratio Vigilia]
-!Pour la Vigile des saints Pierre et Paul Apôtres.
-Daignez, nous vous en supplions, ô Dieu tout-puissant, ne point permettre qu’aucun trouble nous ébranle, après que vous nous avez établis sur la pierre solide de la foi des Apôtres.
-$Per Dominum
-
 [Lectio Vigilia]
 !Pour la Vigile des saints Pierre et Paul Apôtres.
 Du Saint Evangile selon Jean.
@@ -63,3 +54,8 @@ _
 Homélie de saint Augustin, Evêque.
 !Tractatus 123 in Joannem. in medio
 A son triple reniement, Pierre oppose une triple confession, voulant que sa langue n’obéisse pas moins à l’amour qu’elle n’a obéi à la crainte, et que la mort entrevue de loin ne semble pas lui avoir donné plus de voix que la présence de la Vie. Renier le Pasteur a été l’effet de la crainte : que l’office de l’amour soit de paître le troupeau du Seigneur ! Ceux qui paissent les brebis du Christ avec la disposition de vouloir qu’elles soient à eux et non au Christ, sont convaincus de s’aimer eux-mêmes et de ne point aimer Jésus-Christ, avides qu’ils sont d’honneurs, de domination, de richesses, et vides de cette charité qui fait obéir, soulager, plaire à Dieu.
+
+[Lectio91]
+!Cap. 25, alias 46, num. 7
+Quant à nous, nous prions afin qu'ils ne demeurent point dans la fosse qu'ils ont eux-mêmes creusée, mais qu'enfantés légitimement à une nouvelle vie, ils se tournent vers l'Eglise de Dieu, et que le Christ soit formé en eux, et qu'ils reconnaissent l'Ordonnateur et le Créateur de cet univers pour seul vrai Dieu ainsi que Maître de tous. Nous demandons ces grâces pour eux, les aimant plus utilement qu'ils ne pensent s'aimer eux-mêmes. L'affection qui leur vient de nous, parce qu'elle est véritable, leur sera salutaire, s'ils veulent bien l'accepter. Comparable à un traitement pénible qui retranche d'une blessure la chair malsaine et superflue, elle combat leur orgueil et leur enflure. A cause de cette dilection sainte, nous ne nous lasserons point de chercher de tout notre pouvoir, à leur tendre la main.
+&teDeum

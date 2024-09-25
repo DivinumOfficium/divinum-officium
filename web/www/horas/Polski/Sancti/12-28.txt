@@ -1,24 +1,18 @@
 [Rank]
 Św. Młodzianków;;Duplex II class cum octava simplici;;5.2;;ex C3
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Św. Młodzianków;;Duplex II class;;5;;ex C3
 
-[Rule]
-ex C3;
-Ant Matutinum 11 special
-Psalmi dominica
-Antiphonas Horas
-9 lectiones
-no Te Deum
-no Psalm5
-
-[Ant 1]
-Ci są * którzy się z niewiastami nie pokalali: bo dziewicami są, ci chodzą za Barankiem, gdziekolwiek idzie.
+[Hymnus Vespera]
+@Sancti/12-28:Hymnus Laudes
 
 [Versum 1]
 V. Herod rozgniewał się i pobił wszystkie dzieci.
 R. W Betlejem Judy, mieście Dawidowem.
+
+[Ant 1]
+Ci są * którzy się z niewiastami nie pokalali: bo dziewicami są, ci chodzą za Barankiem, gdziekolwiek idzie.
 
 [Oratio]
 Boże, którego chwałę umęczone Niewiniątka wyznały dziś nie słowami, lecz śmiercią: racz umorzyć w nas źródło grzechów wszelkich, aby wiarę Twą, którą język nasz opowiada, także i życie czynami wyznawało.
@@ -48,6 +42,9 @@ Amen.
 
 [HymnusM Matutinum]
 @:Hymnus Matutinum:s/Jezu, Tobie niechaj będzie chwała/Chwała niech Ci będzie Panie/
+
+[Ant Matutinum 11]
+Ci są, * którzy przyszli z ucisku wielkiego, i omyli szaty swoje we krwi Barankowéj.
 
 [Lectio1]
 Z Proroka Jeremiasza
@@ -95,9 +92,6 @@ V. Ci są, którzy się z niewiastami nie pokalali: bo dziewicami są.
 R. I chodzić będą zemną w bieli, iż godni są.
 &Gloria
 R. I chodzić będą zemną w bieli, iż godni są.
-
-[Ant Matutinum 11]
-Ci są, * którzy przyszli z ucisku wielkiego, i omyli szaty swoje we krwi Barankowéj.
 
 [Lectio7]
 Czytanie Ewangelii świętej według św. Mateusza
@@ -163,44 +157,6 @@ Wraz z Ojcem, z Duchem, w jednej czci
 Po wszystkie wieki, w każdy czas!
 Amen.
 
-[Versum 2]
-V. Herod rozgniewał się i pobił wszystkie dzieci.
-R. W Betlejem Judy, mieście Dawidowem.
-
-[Ant 2]
-Ci są * którzy się z niewiastami nie pokalali: bo dziewicami są, ci chodzą za Barankiem, gdziekolwiek idzie.
-
-[Lectio Prima]
-!Ap 14:4-5
-v. Ci kupieni są z ludzi pierwiastkami Bogu i Barankowi. a w uściech ich nie nalazło się kłamstwo; albowiem bez zmazy są przed stolicą Bożą.
-
-[Capitulum Sexta]
-!Ap 14:4
-v. Ci są * którzy się z niewiastami nie pokalali: bo dziewicami są, ci chodzą za Barankiem, gdziekolwiek idzie.
-$Deo gratias
-
-[Capitulum Nona]
-!Ap 14:4-5
-v. Ci kupieni są z ludzi pierwiastkami Bogu i Barankowi. a w uściech ich nie nalazło się kłamstwo; albowiem bez zmazy są przed stolicą Bożą.
-$Deo gratias
-
-[Ant Vespera 3]
-Przy tobie przodkowanie * w dzień możności twojej w jasnościach świętości: z żywota przed jutrzenką zrodziłem cię.;;109
-Posłał odkupienie * ludowi swemu i postanowił na wieki testament swój.;;110
-Weszła * w ciemnościach światłość prawym. Miłościwy, miłosierny i sprawiedliwy Pan.;;111
-U Pana * miłosierdzie i obfite u Niego odkupienie.;;129
-Z owocu * żywota Twego posadzę na stolicy Twojej.;;131
-
-[Hymnus Vespera]
-@Sancti/12-28:Hymnus Laudes
-
-[Versum 3]
-V. Pod tronem Boga wszyscy święci wołają.
-R. Pomścij krew naszą, Boże nasz.
-
-[Ant 3]
-Niegodziwy król * zabił niewiniątka za Chrystusa, niemowlęta zamordował, one idą za Barankiem bez skazy i mówią zawsze: Chwała Tobie, Panie.
-
 [Octava 2]
 !Wspominamy oktawę św. Młodzianków
 Ant. Ci są * którzy się z niewiastami nie pokalali: bo dziewicami są, ci chodzą za Barankiem, gdziekolwiek idzie.
@@ -211,6 +167,29 @@ _
 v. Módlmy się
 Boże, którego chwałę umęczone Niewiniątka wyznały dziś nie słowami, lecz śmiercią: racz umorzyć w nas źródło grzechów wszelkich, aby wiarę Twą, którą język nasz opowiada, także i życie czynami wyznawało.
 $Per Dominum
+
+[Lectio Prima]
+!Ap 14:4-5
+v. Ci kupieni są z ludzi pierwiastkami Bogu i Barankowi. a w uściech ich nie nalazło się kłamstwo; albowiem bez zmazy są przed stolicą Bożą.
+
+[Capitulum Sexta]
+!Ap 14:4
+v. Ci są * którzy się z niewiastami nie pokalali: bo dziewicami są, ci chodzą za Barankiem, gdziekolwiek idzie.
+$Deo gratias
+
+[Ant Vespera 3]
+Przy tobie przodkowanie * w dzień możności twojej w jasnościach świętości: z żywota przed jutrzenką zrodziłem cię.;;109
+Posłał odkupienie * ludowi swemu i postanowił na wieki testament swój.;;110
+Weszła * w ciemnościach światłość prawym. Miłościwy, miłosierny i sprawiedliwy Pan.;;111
+U Pana * miłosierdzie i obfite u Niego odkupienie.;;129
+Z owocu * żywota Twego posadzę na stolicy Twojej.;;131
+
+[Versum 3]
+V. Pod tronem Boga wszyscy święci wołają.
+R. Pomścij krew naszą, Boże nasz.
+
+[Ant 3]
+Niegodziwy król * zabił niewiniątka za Chrystusa, niemowlęta zamordował, one idą za Barankiem bez skazy i mówią zawsze: Chwała Tobie, Panie.
 
 [Octava 3]
 !Wspominamy oktawę św. Młodzianków

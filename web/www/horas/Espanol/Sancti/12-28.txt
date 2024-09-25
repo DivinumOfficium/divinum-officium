@@ -1,12 +1,15 @@
 [Rank]
 Ss. Innocentium;;Duplex II class cum octava simplici;;5.2;;ex C3
 
-[Ant 1]
-Éstos son * los que no se mancharon con mujeres, pues son vírgenes. Éstos son el cortejo del Cordero, adondequiera que vaya.
+[Hymnus Vespera]
+@Sancti/12-28:Hymnus Laudes
 
 [Versum 1]
 V. Herodes, enfurecido, mató a muchos niños.
 R. En Belén de Judá, ciudad de David.
+
+[Ant 1]
+Éstos son * los que no se mancharon con mujeres, pues son vírgenes. Éstos son el cortejo del Cordero, adondequiera que vaya.
 
 [Oratio]
 ¡Oh Dios, cuya gloria proclaman en este día los santos mártires inocentes, no con palabras, sino con su propia muerte!; destruye en nosotros toda malicia de pecado, para que nuestra vida testimonie con hechos la fe que confesaron con los labios.
@@ -34,12 +37,15 @@ con el Padre y Santo Espíritu,
 por edades sempiternas.
 Amén.
 
+[Ant Matutinum 11]
+Estos son los que han venido de * la gran tribulación, y lavaron sus vestidos con la sangre del Cordero.
+
 [Lectio1]
 Del Profeta Jeremías
 !Jer 31:15-17
 15 Así dice el señor: Una voz se oye en Ramá, un lamento, amargo llanto. Es Raquel que llora a sus hijos y rehusa consolarse por sus hijos, pues ya no existen. 
 16 Así dice el señor: Cese tu voz de gemir, tus ojos de llorar, porque hay compensación a tus penas. 
-17 Hay aún esperanza para tu porvenir, oráculo del Señor. Volverán tus hijos a su territorio. 
+17 Hay aún esperanza para tu porvenir, oráculo del Señor. Volverán tus hijos a su territorio.
 
 [Responsory1]
 R. Los ciento cuarenta y cuatro mil que fueron rescatados de la tierra, he aquí los que no se mancillaron con mujeres: 
@@ -104,9 +110,6 @@ R. Andarán conmigo vestidos de blanco, pues son dignos de ello.
 &Gloria
 R. Andarán conmigo vestidos de blanco, pues son dignos de ello. 
 
-[Ant Matutinum 11]
-Estos son los que han venido de * la gran tribulación, y lavaron sus vestidos con la sangre del Cordero.
-
 [Lectio7]
 Lección del Santo Evangelio según S. Mateo
 !Mt 2:13-18
@@ -154,23 +157,6 @@ Ante el trono de Dios * todos los santos claman: toma venganza de nuestra sangre
 v. Vi al Cordero de pie sobre el monte Sión, y con él ciento cuarenta y cuatro mil, que llevaban grabado en la frente el nombre del Cordero y el nombre de su Padre.
 $Deo gratias
 
-[HymnusM Laudes]
-v. Salve, flores de los mártires,
-que de la vida en la aurora
-ciego furor arrebata
-como huracán tiernas rosas.
-_
-Vosotros, primeras víctimas
-por amor de Cristo, ahora,
-bajo su altar en el cielo,
-jugáis con palma y coronas.
-_
-A Ti, Jesús, que naciste
-de la Virgen más hermosa,
-con el Padre y Santo Espíritu,
-demos sempiterna gloria.
-Amén.
-
 [Hymnus Laudes]
 v. Salve, flores de los mártires, 
 que en el umbral mismo de la vida 
@@ -188,31 +174,22 @@ con el Padre y el Espíritu Santo,
 por los siglos sempiternos. 
 Amén.
 
-[Lectio Prima]
-!Ap 14:4-5
-Son los rescatados de entre los hombres, primicias para Dios y el Cordero; y en su boca no se encuentra mentira. Son irreprochables ante el trono de Dios.
-
-[Capitulum Sexta]
-!Ap 14:4
-v. Éstos son los que no se mancharon con mujeres, pues son vírgenes. Éstos son el cortejo del Cordero, adondequiera que vaya.
-$Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Ant Vespera 3]
-@Sancti/12-25
-
-[Hymnus Vespera]
-@Sancti/12-28:Hymnus Laudes
-
-[Versum 3]
-V. Ante el trono de Dios todos los santos claman.
-R. Toma venganza de nuestra sangre, Dios nuestro.
-
-[Ant 3]
-Niños inocentes mueren por Cristo. Por orden de un rey cruel son asesinados niños de pecho. Son el cortejo del Cordero sin mancha, y cantan siempre: Gloria a ti, Señor.
+[HymnusM Laudes]
+v. Salve, flores de los mártires,
+que de la vida en la aurora
+ciego furor arrebata
+como huracán tiernas rosas.
+_
+Vosotros, primeras víctimas
+por amor de Cristo, ahora,
+bajo su altar en el cielo,
+jugáis con palma y coronas.
+_
+A Ti, Jesús, que naciste
+de la Virgen más hermosa,
+con el Padre y Santo Espíritu,
+demos sempiterna gloria.
+Amén.
 
 [Octava 2]
 !Conmemoración de la Octava de los Ss. Inocentes
@@ -224,6 +201,22 @@ _
 $Oremus
 v. ¡Oh Dios, cuya gloria proclaman en este día los Santos Mártires Inocentes, no con palabras, sino con su propia muerte!; destruye en nosotros toda malicia de pecado, para que nuestra vida testimonie con hechos la fe que confesamos con los labios.
 $Per Dominum
+
+[Lectio Prima]
+!Ap 14:4-5
+Son los rescatados de entre los hombres, primicias para Dios y el Cordero; y en su boca no se encuentra mentira. Son irreprochables ante el trono de Dios.
+
+[Capitulum Sexta]
+!Ap 14:4
+v. Éstos son los que no se mancharon con mujeres, pues son vírgenes. Éstos son el cortejo del Cordero, adondequiera que vaya.
+$Deo gratias
+
+[Versum 3]
+V. Ante el trono de Dios todos los santos claman.
+R. Toma venganza de nuestra sangre, Dios nuestro.
+
+[Ant 3]
+Niños inocentes mueren por Cristo. Por orden de un rey cruel son asesinados niños de pecho. Son el cortejo del Cordero sin mancha, y cantan siempre: Gloria a ti, Señor.
 
 [Octava 3]
 @:Octava 2

@@ -3,9 +3,6 @@
 [Rank]
 Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex;;3;;ex C11
 
-[Commemoratio 2]
- 
-
 [Responsory Vespera]
 @Sancti/10-07:Responsory Sexta:s/._.*//s
 
@@ -29,6 +26,9 @@ _
 [Hymnus Laudes]
 @Sancti/10-07::s/Nat/NatT/
 
+[Commemoratio 2]
+ 
+
 [Responsory TertiaM]
 V. Sancta Dei Génetrix, semper Virgo Maria.
 R. Intercéde pro nobis ad Dóminum, Deum nostrum.
@@ -38,4 +38,3 @@ R. Intercéde pro nobis ad Dóminum, Deum nostrum.
 
 [Responsory NonaM]
 @Sancti/10-07:Responsory Sexta:s/.*_.//s
-

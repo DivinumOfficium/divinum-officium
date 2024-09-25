@@ -1,16 +1,15 @@
 [Rank]
 Ss. Septem Fundatorum Ordinis Servorum B. M. V.;;Duplex;;3;;vide C5
 
-[Rank](rubrica 1930)
+[Rank] (rubrica innovata)
+Ss. Septem Fundatorum Ordinis Servorum B. M. V.;;Duplex optional;;2;;vide C5
+
+[Rank] (rubrica 1930)
 Ss. Septem Fundatorum Ordinis Servorum B. M. V.;;Simplex;;1.1;;vide C5
 
 [Rule]
 vide C5;;
 9 lectiones
-
-[Oratio]
-Dómine Jesu Christe, qui ad recoléndam memóriam dolórum sanctíssimæ Genetrícis tuæ, per septem beátos Patres nova Servórum ejus família Ecclésiam tuam fecundásti: concéde propítius; ita nos eórum consociári flétibus, ut perfruámur et gáudiis.
-$Qui vivis
 
 [Versum 1]
 V. Hi viri misericórdiæ sunt, quorum pietátes non defuérunt.
@@ -18,6 +17,10 @@ R. Semen eórum et glória eórum non derelinquétur.
 
 [Ant 1]
 Non recédet * laus tua, Virgo María, de ore hóminum, qui mémores fúerint virtútis Dómini in ætérnum, pro quibus non pepercísti ánimæ tuæ.
+
+[Oratio]
+Dómine Jesu Christe, qui ad recoléndam memóriam dolórum sanctíssimæ Genetrícis tuæ, per septem beátos Patres nova Servórum ejus família Ecclésiam tuam fecundásti: concéde propítius; ita nos eórum consociári flétibus, ut perfruámur et gáudiis.
+$Qui vivis
 
 [Hymnus Matutinum]
 v. Bella dum late fúrerent, et urbes
@@ -65,6 +68,10 @@ Hoc vitæ institútum quam sibi foret accéptum Deus miráculo osténdit. Nam cu
 [Lectio6]
 Porro sancti illi viri, cum plures sibi sócios adjunxíssent, Itáliæ civitátes atque óppida, præsértim Etrúriæ excúrrere cœpérunt, prædicántes ubíque Christum crucifíxum, civíles discórdias compescéntes et innúmeros fere dévios ad virtútis sémitam revocántes. Neque Itáliam modo, sed et Gálliam, Germániam ac Polóniam suis evangélicis labóribus excoluérunt. Dénique cum bonum Christi odórem longe latéque diffudíssent, portentórum quoque glória illústres, migrárunt ad Dóminum. Sed quos unus veræ fraternitátis ac religiónis amor in vita sociáverat, unum páriter demórtuos contéxit sepúlcrum, únaque pópuli venerátio prosecúta est. Quaprópter Clemens undécimus et Benedíctus décimus tértius Pontífices máximi delátum iísdem a plúribus sǽculis indivíduum cultum confírmarunt; ac Leo décimus tértius, approbátis ántea miráculis, post indúltam veneratiónem ad collectívam eorúmdem invocatiónem a Deo patrátis, eósdem anno quinquagésimo sacerdótii sui Sanctórum honóribus cumulávit, eorúmque memóriam Offício et Missa in univérsa Ecclésia quotánnis recoléndam instítuit.
 
+[Lectio94]
+Sǽculo tértio décimo, septem e Florentína nobilitáte viri, nimírum Bonfílius Monáldius, Bonajúncta Manéttus, Manéttus Antellénsis, Amidéus de Amidéis, Ugúccio Ugucciónum, Sostenéus de Sostenéis et Aléxius Falconérius, in rurálem quamdam ædículam secessére, Christi passiónem ac mæstíssimæ ejúsdem Matris dolóres assídue recoléntes. Illis beáta Virgo, sacra Parascéves die appárens lúgubrem vestem, quam indúerent, osténdit, sibíque acceptíssimum fore significávit, ut novum regulárem órdinem excitárent, qui jugem recóleret ac promovéret memóriam dolórum, quos ipsa pértulit sub Cruce Dómini. Tunc sancti illi viri, beáto Petro, órdinis Prædicatórum Mártyre, adjutóre, órdinem Servórum beátæ Vírginis instituérunt, et cum sóciis civitátes et óppida excúrrere cœpérunt, ubíque Christum crucifíxum verbo et exémplo prædicántes. Quos vero unus veræ fraternitátis amor in vita sociáverat, unum páriter demórtuos contéxit sepúlcrum, únaque pópuli venerátio prosecúta est. Quare Clemens undécimus et Benedíctus décimus tértius delátum iísdem indivíduum cultum confirmavérunt; Leo autem décimus tértius eos albo Sanctórum accénsuit.
+&teDeum
+
 [Lectio7]
 @Commune/C1:Lectio7
 
@@ -73,10 +80,6 @@ Porro sancti illi viri, cum plures sibi sócios adjunxíssent, Itáliæ civitát
 
 [Lectio9]
 @Commune/C1:Lectio9
-
-[Lectio94]
-Sǽculo tértio décimo, septem e Florentína nobilitáte viri, nimírum Bonfílius Monáldius, Bonajúncta Manéttus, Manéttus Antellénsis, Amidéus de Amidéis, Ugúccio Ugucciónum, Sostenéus de Sostenéis et Aléxius Falconérius, in rurálem quamdam ædículam secessére, Christi passiónem ac mæstíssimæ ejúsdem Matris dolóres assídue recoléntes. Illis beáta Virgo, sacra Parascéves die appárens lúgubrem vestem, quam indúerent, osténdit, sibíque acceptíssimum fore significávit, ut novum regulárem órdinem excitárent, qui jugem recóleret ac promovéret memóriam dolórum, quos ipsa pértulit sub Cruce Dómini. Tunc sancti illi viri, beáto Petro, órdinis Prædicatórum Mártyre, adjutóre, órdinem Servórum beátæ Vírginis instituérunt, et cum sóciis civitátes et óppida excúrrere cœpérunt, ubíque Christum crucifíxum verbo et exémplo prædicántes. Quos vero unus veræ fraternitátis amor in vita sociáverat, unum páriter demórtuos contéxit sepúlcrum, únaque pópuli venerátio prosecúta est. Quare Clemens undécimus et Benedíctus décimus tértius delátum iísdem indivíduum cultum confirmavérunt; Leo autem décimus tértius eos albo Sanctórum accénsuit.
-&teDeum
 
 [Versum 0]
 @Commune/C3

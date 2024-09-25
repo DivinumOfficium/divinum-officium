@@ -1,10 +1,6 @@
 [Rank]
 S. Julianae de Falconeriis Virginis;;Duplex;;3;;vide C6b
 
-[Rule]
-vide C6b;
-Gloria
-
 [Comment]
 # 19 VI – Św. Juliany Falconieri, Dziewicy
 ! 3 klasy
@@ -17,47 +13,8 @@ Msza wspólna nr 26 Dilexisti, z wyjątkiem kolekty.
 Śś. Gerwazego i Protazego, Męczenników
 ! Wspomnienie
 ! Szaty czerwone
-Święci Gerwazy i Protazy ponieśli śmierć męczeńską w Mediolanie. Św. Ambroży odnalazł ich ciała 19 czerwca 386 r. Relikwie spoczywają w katedrze mediolańskiej. 
-
-[Introitus]
-@Commune/C6b:Introitus
+Święci Gerwazy i Protazy ponieśli śmierć męczeńską w Mediolanie. Św. Ambroży odnalazł ich ciała 19 czerwca 386 r. Relikwie spoczywają w katedrze mediolańskiej.
 
 [Oratio]
 Boże który raczyłeś pokrzepić świętą Dziewicę Julianę wśród cierpień ostatniej choroby najdroższym Ciałem Syna Twego, spraw, prosimy Cię, za przyczyną jej zasług, by nakarmiło nas ono i umocniło w przedśmiertnej walce oraz doprowadziło do niebieskiej ojczyzny.
 $Per eundem
-
-[Lectio]
-@Commune/C6b:Lectio
-
-[Graduale]
-@Commune/C6b:Graduale
-
-[Evangelium]
-@Commune/C6b:Evangelium
-
-[Offertorium]
-@Commune/C6b:Offertorium
-
-[Secreta]
-@Commune/C6b:Secreta
-
-[Communio]
-@Commune/C6b:Communio
-
-[Postcommunio]
-@Commune/C6b:Postcommunio
-
-[Commemoratio Oratio]
-! Wspomnienie śś. Gerwazego i Protazego
-Boże, co roku uweselasz nas uroczystością świętych Twoich Męczenników Gerwazego i Protazego, spraw łaskawie, abyśmy zapalali się przykładami tych, których zasługi nas cieszą.
-$Per Dominum
-
-[Commemoratio Secreta]
-! Wspomnienie śś. Gerwazego i Protazego
-Daj się przebłagać, Panie, złożonymi darami, a za wstawiennictwem świętych Twoich Męczenników broń nas od wszelkich niebezpieczeństw.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! Wspomnienie śś. Gerwazego i Protazego
-Panie, niech ta komunia oczyści nas z grzechów i za przyczyną świętych Twoich Gerwazego i Protazego stanie się dla nas niebieskim lekarstwem.
-$Per Dominum

@@ -1,3 +1,6 @@
+[Ant Matutinum 3N]
+Today was born the blessed Virgin Mary from the seed of David: through whom the salvation of the world has appeared to those who believe.
+
 [Responsory4]
 R. Born of royal lineage, Mary shines resplendent:
 * We earnestly entreat her to help our minds and souls by her prayers.
@@ -10,7 +13,6 @@ R. We earnestly entreat her to help our minds and souls by her prayers.
 [Lectio6]
 @Sancti/09-12:Lectio4:s/.*She is/She is/s
 
-
 [Lectio8]
 @Sancti/09-12:Lectio6:s/{Here .*//s
 
@@ -20,23 +22,20 @@ R. With all our heart and with all our soul let us sing praise to Christ on this
 V. Let us keep with rejoicing the Birthday of the Blessed Virgin Mary.
 R. That she may pray for us to the Lord.
 
-[Ant Matutinum 3N]
-Today was born the blessed Virgin Mary from the seed of David: through whom the salvation of the world has appeared to those who believe.
-
 [Lectio9]
-@Sancti/09-08:Lectio7:s/"The .*//s
+@Sancti/09-08:Lectio7:s/“The .*//s
 
 [Responsory9]
 @Sancti/09-08:Responsory7
 
 [Lectio10]
-@Sancti/09-08:Lectio7:s/.* "The /"The /s
+@Sancti/09-08:Lectio7:s/.* “The /“The /s
 
 [Responsory10]
 @Sancti/09-08:Responsory8
 
 [Lectio11]
-@Sancti/09-08:Lectio8:s/"And Judas .*//s
+@Sancti/09-08:Lectio8:s/“And Judas .*//s
 
 [Responsory11]
 R. Let us this day keep solemnly the Birthday of Mary, Mother of God but still Maiden, her Birth,
@@ -45,5 +44,4 @@ V. Born of a kingly lineage, Mary shines resplendent.
 R. A step toward the loftiness of her throne.
 
 [Lectio12]
-@Sancti/09-08:Lectio8:s/.* "And Judas/"And Judas/s
-
+@Sancti/09-08:Lectio8:s/.* “And Judas/“And Judas/s

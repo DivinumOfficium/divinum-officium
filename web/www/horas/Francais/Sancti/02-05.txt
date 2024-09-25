@@ -1,17 +1,11 @@
 [Rank]
-S. Agathæ Virginis et Martyris;;Duplex;;3.1;;vide C6b
+S. Agathæ Virginis et Martyris;;Duplex;;3.1;;vide C6
 
 [Rank] (rubrica 1570)
-S. Agathæ Virginis et Martyris;;Semiduplex;;2;;vide C6b
+S. Agathæ Virginis et Martyris;;Semiduplex;;2;;vide C6
 
-[Rank](rubrica 1960)
-S. Agathæ Virginis et Martyris;;Duplex;;3;;vide C6b
-
-[Rule]
-vide C6b ;
-9 lectiones
-Psalm5 Vespera=116
-Psalm5 Vespera3=147
+[Rank] (rubrica 1960)
+S. Agathæ Virginis et Martyris;;Duplex;;3;;vide C6
 
 [Ant Vespera]
 Qui es-tu, * toi qui es venu vers moi pour guérir mes blessures ? Je suis l’Apôtre du Christ, n’aie aucune inquiétude à cause de moi, ma fille.
@@ -23,22 +17,20 @@ Celui qui a daigné me guérir * de toutes mes plaies, et rétablir mon sein sur
 [Ant 1]
 La bienheureuse Agathe, debout * au milieu de sa prison, les mains étendues, priait ainsi le Seigneur : Seigneur Jésus-Christ, bon Maître, je vous rends grâces de m’avoir fait surmonter les tortures des bourreaux ; ordonnez, Seigneur, que je parvienne heureusement à votre gloire impérissable.
 
+[Oratio]
+O Dieu qui, parmi les autres miracles de Votre puissance, avez donné au sexe faible la victoire du martyre, accordez-nous miséricordieusement que, fêtant la naissance céleste de la bienheureuse Agathe, Votre Vierge et Martyre, nous nous servions de ses exemples, pour monter vers Vous.
+$Per Dominum
+
 [Ant Matutinum]
 Je suis de condition libre, * et de famille honorable, comme toute ma parenté l’atteste.;;1
 La plus haute condition * est celle du vrai service du Christ.;;2
 Je suis la servante du Christ ; * c’est pourquoi je me présente comme une personne de service.;;3
-V. Dans ta beauté et tes charmes.
-R. Va de l’avant, prospère et règne.
 Sainte Agathe * dit : Si tu me promets les bêtes, en entendant le nom du Christ, elles s’adouciront.;;4
 Si tu emploies le feu, * les Anges répandront une rosée venue du ciel qui me sauvera.;;5
 Agathe, * toute joyeuse et avec fierté, se dirigeait vers la prison, comme une invitée à un festin ; et recommandait son combat à Dieu, par ses prières.;;8
-V. Dieu l’aidera par sa contemplation,
-R. Dieu est en son cœur, elle ne sera pas ébranlée.
 Si vous n’achevez pas * avec soin de faire torturer mon corps par les bourreaux, mon âme ne pourra entrer dans le paradis du Seigneur, avec la palme du martyre.;;10
 Vous avez vu, Seigneur, * mon combat, comment j’ai lutté dans la lice ; mais parce que j’ai refusé d’obéir aux ordres des princes, on a ordonné de me tourmenter dans mes seins.;;14
 A cause de ma fidélité à garder la chasteté, * on a ordonné de m’étendre sur le chevalet ; aidez-moi, Seigneur, mon Dieu, pendant qu’on me torture les seins.;;15
-V. Dieu l’a choisie, et il l’a préférée.
-R. Dans son tabernacle, il la fait habiter.
 
 [Responsory1]
 R. Pendant qu’on torturait cruellement les seins de la bienheureuse Agathe, celle-ci dit au juge :
@@ -107,25 +99,5 @@ R. Qui, d’une seule parole, restaure toutes choses.
 &Gloria
 R. Qui, d’une seule parole, restaure toutes choses.
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Ant 2]
 Une multitude de païens * fuyant vers le tombeau de la Vierge, en emportèrent le voile pour l’opposer au feu (du volcan), afin que le Seigneur montrât qu’il les délivrait des dangers de l’incendie, par les mérites de la bienheureuse Agathe, sa Martyre.
-
-[Oratio]
-O Dieu qui, parmi les autres miracles de Votre puissance, avez donné au sexe faible la victoire du martyre, accordez-nous miséricordieusement que, fêtant la naissance céleste de la bienheureuse Agathe, Votre Vierge et Martyre, nous nous servions de ses exemples, pour monter vers Vous.
-$Per Dominum
-
-[Lectio Prima]
-@Commune/C7:Lectio Prima
-
-[Capitulum Sexta]
-@Commune/C7:Capitulum Sexta
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Ant 3]
-@:Ant 1

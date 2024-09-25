@@ -1,17 +1,47 @@
 [Name]
 In Festis Beatae Mariae Virginis
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-
-[Ant Vespera]
-Kiedy Król * był na pokoju swoim, spikanard mój wydał wdzięczną wonność.;;109
+[Ant VesperaBMV]
 Lewa ręka * jego pod głową moją, a prawica jego obejmuje mię.;;112
-Czarnaciem. * ale piękna, córki Jerozolimskie, przeto umiłował mię Król i wprowadził mię do pokoju swego.;;121
-Już minęła zima, * deszcz przeszedł i przestał; wstań przyjaciółko moja, a przyjdź.;;126
 Piękna * jesteś i słodka wśród rozkoszy swoich święta Boża Rodzicielko.;;147
+
+[Hymnus Vespera]
+/:Pierwszą zwrotkę hymnu odmawia się klęcząc.:/
+v. Witaj, Gwiazdo morza,
+Rodzicielko Boża,
+Dziewico nietknięta
+Bramo niebios święta.
+_
+Gabrjel zwiastował
+Tę cudu godzinę,
+Obdarz nas pokojem
+Mażąc Ewy winę
+_
+Zerwij ziemskie pęta
+Rzuć światłości blaski,
+Niech grzeszni i ślepi
+Doznają Twej łaski.
+_
+O, Matko nieś nasze
+Prośby i westchnienia
+Temu, co zrodzony
+Dla świata zbawienia.
+_
+Dziewico przeczysta,
+Prosim Cię w pokorze,
+Niechaj czyste serca
+Mają sługi Boże.
+_
+I bezpieczną drogą
+Prowadź nas do celu,
+Wtedy szczęście nasze
+Znajdziem w Zbawicielu.
+_
+Chwalmy Ojca, Syna
+I Ducha Świętego,
+Chwalmy wiecznie Boga
+W Trójcy Jedynego.
+Amen.
 
 [Versum 1]
 V. Dozwól mi chwalić Cię, Panno święta.
@@ -50,22 +80,14 @@ oraz Ojcu i dobroczynnemu Duchowi,
 po nieskończone wieki.
 Amen.
 
-[Ant Matutinum]
+[Ant MatutinumBMV]
 Błogosławionaś ty * między niewiastami, i błogosławiony owoc żywota twojego.;;8
 Jak mirra wybrana * zapach wydałaś słodki, święta Bogurodzico.;;18
 Przed łożem * tejże Dziewicy, śpiewajmy wciąż pieśni radosne.;;23
-V. Z ślicznością twoją i z pięknością twoją.
-R. Nadciągnij, fortunnie postępuj i króluj.
-Z ślicznością twoją * i z pięknością twoją nadciągnij, fortunnie postępuj i króluj.;;44
-Wspomoże ją * Bóg obliczem swoim: Bóg w pośrodku jej, nie będzie poruszona.;;45
 Jako weselących się * wszystkich, nasze mieszkanie jest w tobie, święta Boża Rodzicielko.;;86
-V. Wspomoże ją Bóg obliczem swoim.
-R. Bóg w pośrodku jej, nie będzie poruszona.
 Raduj się Maryjo Dziewico, * któraś sama zniszczyła wszystkie herezje w całym świecie.;;95
 Dozwól mi * chwalić Cię, Panno święta. daj mi moc przeciw nieprzyjaciołom swoim.;;96
 Porodziwszy Syna, * Dziewicą Niepokalaną pozostałaś: Boga Rodzico przyczyń się za nami.;;97
-V. Wybrał ją Bóg, i przybrał ją.
-R. W namiocie swoim dał jej mieszkanie.
 
 [Lectio1]
 Z Przysłów Salomona
@@ -158,12 +180,43 @@ R. Albowiem uczynił mi wielkie rzeczy, który możny jest, i święte imię jeg
 v. Od początku i przed wieki jestem stworzona i aż do przyszłego wieku nie ustanę, a w mieszkaniu świętym służyłam przed nim.
 $Deo gratias.
 
-[Versum 2]
-V. Rozlała się wdzięczność po wargach twoich.
-R. Dlatego cię błogosławił Bóg na wieki.
+[Hymnus Laudes]
+{:H-Ogloriosavirginum:}v. O najchwalebniejsza z dziewic,
+Najwspanialsza wśród gwiazd,
+Tego, który Cię stworzył,
+Jako dziecię karmisz mlekiem swej piersi.
+_
+Co zatraciła nieszczęsna Ewa,
+Ty zwracasz w błogosławionym potomku:
+By opłakania godni wejść mogli do niebios,
+Otwierasz zawory niebieskie.
+_
+Tyś Króla wysokiego bramą
+I jaśniejącą stolicą światłości;
+Żywot, dany przez Dziewicę,
+Wysławiajcie, ludy odkupione.
+_
+* Jezu, Tobie niechaj będzie chwała,
+który narodziłeś się z Dziewicy,
+oraz Ojcu i dobroczynnemu Duchowi,
+po nieskończone wieki.
+Amen.
 
 [Ant 2]
 Błogosławiona jesteś * Maryjo, któraś uwierzyła: wypełni się w Tobie, co zostało Ci powiedziane od Pana, alleluja.
+
+[Oratio]
+Prosimy Cię, Panie, dozwól nam sługom Twoim, radować się nieustannem zdrowiem duszy i ciała, a za chwalebnem wstawieniem się błogosławionej Marji, zawsze Dziewicy, wyzwól nas od smutków doczesnych, a daj zakosztować wiecznego wesela.
+$Per Dominum
+
+[Lectio Prima]
+!Syr 24:19-20
+v. Na ulicach jako cynamon i balsam woniający wydałam wonność, jako mirra wyborna dałam słodkość wonności.
+
+[Capitulum Sexta]
+!Syr 24:15-16
+v. I takem w Syjonie jest utwierdzona a w Mieście Świętym takżem odpoczywała, a w Jeruzalem władza moja. I rozkorzeniłam się w zacnym narodzie i w dziale Boga mego dziedzictwo jego a w pełności świętych zadzierżenie moje.
+$Deo gratias.
 
 [Ant 3]
 Błogosławioną mię zwać * będą wszystkie narody, albowiem Bóg wejrzał na niskość służebnicy swojej.

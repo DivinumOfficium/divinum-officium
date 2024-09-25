@@ -4,13 +4,14 @@ St Eustache et ses compagnons, Martyrs;;Duplex;;3;;vide C3
 [Rank] (rubrica 1960)
 St Eustache et ses compagnons, Martyrs;;Simplex;;1.1;;vide C3
 
-[Rule]
-vide C3 ;
-9 lectiones
-
 [Oratio]
 O Dieu qui nous faites la grâce de célébrer la naissance au ciel de Vos saints Martyrs, Eustache et ses compagnons, accordez-nous de jouir de leur société, dans l'éternelle béatitude.
 $Per Dominum.
+
+[Oratio Vigilia]
+!Commémoraison de la Vigile de St Matthieu, apôtre et évangéliste
+v. Accordez-nous, nous vous en prions, ô Dieu tout-puissant, que la solennité vénérable du bienheureux Matthieu, votre Apôtre et Evangéliste, que nous anticipons, augmente en nous la dévotion et assure notre salut.
+$Per Dominum
 
 [Lectio4]
 Eustache, qui portait aussi le nom de Placide, et que sa naissance, ses richesses et sa gloire militaire distinguaient parmi les Romains, mérita, sous l’empereur Trajan, le titre de maître de la milice. Un jour que, se livrant à l’exercice de la chasse, il poursuivait un cerf d’une taille prodigieuse qui fuyait devant lui, cet animal s’arrêta tout à coup et Eustache put voir, entre ses bois, une image grandiose et resplendissante de notre Seigneur Jésus-Christ attaché en croix. Sur l’invitation que le Sauveur lui fit entendre de prendre pour but de ses poursuites la vie immortelle, il s’enrôla dans la milice chrétienne avec son épouse Théopista, et leurs deux enfants en bas âge, Agapit et Théopiste.
@@ -27,14 +28,9 @@ Durant l’expédition qu’il dirigea, il eut la joie inespérée de recouvrer 
 [Lectio8]
 @Commune/C3:Lectio8 in 2 loco
 
+[Lectio93]
+@Commune/C1v :Lectio1
+
 [Lectio Vigilia]
 !Commémoraison de la Vigile de St Matthieu, apôtre et évangéliste
 @Sancti/09-20o:Lectio1
-
-[Oratio Vigilia]
-!Commémoraison de la Vigile de St Matthieu, apôtre et évangéliste
-v. Accordez-nous, nous vous en prions, ô Dieu tout-puissant, que la solennité vénérable du bienheureux Matthieu, votre Apôtre et Evangéliste, que nous anticipons, augmente en nous la dévotion et assure notre salut.
-$Per Dominum
-
-[Lectio93]
-@Commune/C1v :Lectio1

@@ -1,27 +1,15 @@
 [Rank]
 S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 S. Damasi Papae et Confessoris;;Duplex;;3;;vide C4
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4
-
-[Rule]
-vide C4;
-9 lectiones;
-OPapaC=Damaso;
-Doxology=Nat
-Omit Preces
-Commemoratio3
 
 [Oratio]
 Esaudisci, Signore, le nostre preghiere: e, per intercessione del tuo beato Confessore e Pontefice Da-maso, accordaci, placato, il perdono e la pace. 
 $Per Dominum
-
-[Commemoratio 2]
-!Commemorazione del giorno entro l'Ottava dell'Immacolata Concezione della B.V.M..
-@Sancti/12-08:Oratio
 
 [Lectio4]
 Damaso, Spagnolo, uomo eccellente e versato nelle Scritture, convocò il primo concilio di Costantinopoli, in cui soffocò la nefasta eresia d'Eunomio e Macedonio. Egli condannò di nuovo il conciliabolo di Rimini, già rigettato da Liberio; nel quale, come scrive san Girolamo, gli artifici di Ursacio e specialmente di Valente avevano fatto condannare la fede Nicena, così che il mondo, gemendo, stupì di essere Ariano.
@@ -44,6 +32,6 @@ Damaso, oriundo dalla Spagna, uomo distinto ed erudito nelle sacre Scritture, in
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
-
+[Commemoratio 2]
+!Commemorazione del giorno entro l'Ottava dell'Immacolata Concezione della B.V.M..
+@Sancti/12-08:Oratio

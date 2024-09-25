@@ -1,16 +1,15 @@
 [Rank]
 In Octava S. Stephani.;;Simplex;;1.1;;vide Sancti/12-26
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1955)
 Die Secunda Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rank] (rubrica tridentina)
 In Octava Sancti Stephani.;;Duplex;;3;;ex Sancti/12-26
 
-[Rule]
-vide Sancti/12-26
-Feria Te Deum
-Comkey=70
+[Oratio] (rubrica divino aut rubrica tridentina aut rubrica monastica)
+Dio onnipotente ed eterno, che inaugurasti le primizie dei Martiri nel sangue del beato Diacono Stefano: concedici, che si faccia nostro intercessore chi perfino per i suoi persecutori supplicò nostro Signore Gesù Cristo tuo Figlio: 
+$Per Dominum
 
 [Lectio1]
 Dalla Lettera ai Romani
@@ -21,6 +20,9 @@ Dalla Lettera ai Romani
 4 la pazienza la prova, la prova la speranza, 
 5 e la speranza non inganna: perché nei nostri cuori è stato sparso l'amore di Dio per mezzo dello Spirito Santo che ci è stato dato.
 
+[Responsory1]
+@Sancti/01-01:Responsory1
+
 [Lectio2]
 !Rom 5:6-9
 6 Infatti perché Cristo, mentre noi eravamo tuttora infermi, morì a suo tempo per gli empi? 
@@ -28,26 +30,17 @@ Dalla Lettera ai Romani
 8 Ora Dio dimostra il suo amore per noi, in questo: che, mentre noi eravamo peccatori, 
 9 Cristo morì per noi nel tempo opportuno: molto più dunque adesso, che siamo giustificati mediante il suo sangue, sarem salvati dall'ira per mezzo di lui.
 
+[Responsory2]
+@Sancti/01-01:Responsory2
+
 [Lectio3]
 !Rom 5:10-12
 10 Che se noi, allorché eravamo nemici, siamo stati riconciliati con Dio per la morte del Figlio suo, molto più, riconciliati, saremo salvati per la vita di lui. 
 11 Né questo solo: ma ci gloriamo altresì in Dio per Gesù Cristo Signor nostro, per mezzo del quale ora abbiamo ottenuto la riconciliazione. 
 12 Perciò come per un solo uomo il peccato entrò in questo mondo, e col peccato la morte, così la morte s'è estesa a tutti gli uomini per mezzo di colui in cui tutti peccarono.
 
-[Responsory1]
-@Sancti/01-01:Responsory1
-
-[Responsory2]
-@Sancti/01-01:Responsory2
-
 [Responsory3]
 @Sancti/01-01:Responsory3
-
-[Lectio93]
-Sermone di sant'Agostino Vescovo
-!Sermone 2 su S. Stefano
-Cristo, capo dei Martiri, primo patì per noi, lasciandovi un modello da seguirne le orme. Il beatissimo Stefano seguì le orme della sua passione, e lapidato dai Giudei mentre confessava Cristo, meritò la corona quasi presagitagli dal suo nome. Stefano infatti, nome Greco, in Latino significa corona. Significando dunque il suo nome corona, portava già in questo nome un presagio della palma del martirio. Ed egli, mentre veniva lapidato, non solo non si riprometteva di vendicarsi de' suoi persecutori, ma piuttosto domandava per loro perdono a Dio.
-&teDeum
 
 [Lectio4]
 Sermone di sant'Agostino Vescovo
@@ -76,6 +69,8 @@ Ecco la vostra casa vi sarà lasciata deserta. Proprio lo stesso aveva già dett
 Vi dico infatti: non mi vedrete più, fino a che diciate: Benedetto colui che viene nel nome del Signore. Parla a Gerusalemme, ed al popolo dei Giudei. Questo versetto, del quale anche i fanciulli ed i lattanti hanno usato all'ingresso a Gerusalemme del Signore e Salvatore, quando dissero: Benedetto colui che viene nel nome del Signore, osanna nell'alto dei cieli, prende dal Salmo 117, che è stato chiaramente scritto riguardo la venuta del Signore.
 &teDeum
 
-[Oratio] (rubrica divino aut rubrica tridentina aut rubrica monastica)
-Dio onnipotente ed eterno, che inaugurasti le primizie dei Martiri nel sangue del beato Diacono Stefano: concedici, che si faccia nostro intercessore chi perfino per i suoi persecutori supplicò nostro Signore Gesù Cristo tuo Figlio: 
-$Per Dominum
+[Lectio93]
+Sermone di sant'Agostino Vescovo
+!Sermone 2 su S. Stefano
+Cristo, capo dei Martiri, primo patì per noi, lasciandovi un modello da seguirne le orme. Il beatissimo Stefano seguì le orme della sua passione, e lapidato dai Giudei mentre confessava Cristo, meritò la corona quasi presagitagli dal suo nome. Stefano infatti, nome Greco, in Latino significa corona. Significando dunque il suo nome corona, portava già in questo nome un presagio della palma del martirio. Ed egli, mentre veniva lapidato, non solo non si riprometteva di vendicarsi de' suoi persecutori, ma piuttosto domandava per loro perdono a Dio.
+&teDeum

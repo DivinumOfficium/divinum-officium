@@ -1,12 +1,16 @@
 [Rank]
 S. Rosae a Sancta Maria Limange Virginis;;Duplex;;3;;vide C6b
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Rosae a Sancta Maria Limange Virginis;;Duplex optional;;2;;vide C6b
 
 [Rule]
 vide C6b;
 Gloria
+
+[Oratio]
+Wszechmogący Boże, Dawco wszelkich dóbr, Tyś sprawił, że święta Róża zroszona łaską niebieską zakwitła wśród Indian wdziękiem dziewictwa i cierpliwości; daj nam, Twoim sługom, abyśmy biegnąc za miłą wonią jej cnót, sami mogli stać się miłą wonią Chrystusa:
+$Qui tecum
 
 [Comment]
 # 30 VIII – Św. Róży z Limy, Dziewicy
@@ -20,49 +24,3 @@ Msza wspólna nr 26 Dilexisti, z wyjątkiem kolekty
 ! Wspomnienie
 ! Szaty czerwone
 Św. Feliks, kapłan rzymski, zginął jako męczennik z początkiem IV wieku. Razem z nim stracono chrześcijanina o nieznanym imieniu. W aktach męczeńskich nazwano go «Dołączony», po łacinie «Adauctus» i pogrzebano razem ze św. Feliksem.
-
-[Introitus]
-@Commune/C6b:Introitus
-
-[Oratio]
-Wszechmogący Boże, Dawco wszelkich dóbr, Tyś sprawił, że święta Róża zroszona łaską niebieską zakwitła wśród Indian wdziękiem dziewictwa i cierpliwości; daj nam, Twoim sługom, abyśmy biegnąc za miłą wonią jej cnót, sami mogli stać się miłą wonią Chrystusa:
-$Qui tecum
-
-[Lectio]
-@Commune/C6b:Lectio
-
-[Graduale]
-@Commune/C6b:Graduale
-
-[Evangelium]
-@Commune/C6b:Evangelium
-
-[Offertorium]
-@Commune/C6b:Offertorium
-
-[Secreta]
-@Commune/C6b:Secreta
-
-[Communio]
-@Commune/C6b:Communio
-
-[Postcommunio]
-@Commune/C6b:Postcommunio
-
-[Commemoratio Oratio]
-! Wspomnienie śś. Feliksa i Adaukta
-Pokornie błagamy Twój majestat, Panie, abyś nas zawsze bronił dzięki modlitwom Twoich Świętych, których wspomnieniem nas uweselasz.
-$Per Dominum
-
-[Commemoratio Secreta]
-! Wspomnienie śś. Feliksa i Adaukta
-Wejrzyj, Panie, na ofiary Twego ludu, a skoro on składa je Tobie z oddaniem ku czci Twoich Świętych, niechaj dozna zbawczego ich działania.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! Wspomnienie śś. Feliksa i Adaukta
-Nasyceni świętymi darami, prosimy Cię, Panie, abyśmy za przyczyną Twych Świętych zawsze trwali w dziękczynieniu.
-$Per Dominum
-
-
-

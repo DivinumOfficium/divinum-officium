@@ -1,6 +1,3 @@
-@Commune/C10
-
-[Responsory Vespera]
 @CommuneM/C10
 
 [Ant 1]
@@ -12,8 +9,8 @@
 [Oratio]
 @Sancti/01-01
 
-[Responsory3]
-@CommuneM/C10
+[Ant Laudes] (rubrica tridentina)
+@Sancti/01-01:Ant Vespera:s/;;.*//g
 
 [Ant Prima]
 @Sancti/01-01:Ant Vespera:1
@@ -26,18 +23,3 @@
 
 [Ant Nona]
 @Sancti/01-01:Ant Vespera:5
-
-[Responsory Laudes]
-@CommuneM/C10
-
-[Responsory TertiaM]
-@CommuneM/C6
-
-[Responsory SextaM]
-@CommuneM/C6
-
-[Responsory NonaM]
-@CommuneM/C6
-
-[MM Capitulum]
-@CommuneM/C10

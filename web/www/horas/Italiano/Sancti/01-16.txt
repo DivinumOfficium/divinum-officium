@@ -1,10 +1,6 @@
 [Rank]
 S. Marcelli Papae et Martyris;;Semiduplex;;2;;vide C2
 
-[Rule]
-vide C2;
-9 lectiones
-
 [Oratio]
 Signore, esaudisci, clemente, le preghiere del tuo popolo: cosicché noi siamo aiutati per i meriti del tuo beato Martire e Pontefice Marcello, della cui passione siamo rallegrati.
 $Per Dominum
@@ -28,9 +24,6 @@ Marcello, di Roma, tenne il pontificato dai tempi di Costanzo e Galeno fino a Ma
 [Lectio8]
 @Commune/C4:Lectio8 in 2 loco
 
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
-
 [Responsory8]
 R. Signore, lo hai prevenuto con le più dolci benedizioni, 
 * hai posto sul suo capo una corona di pietre preziose.
@@ -38,3 +31,6 @@ V. Egli ti chiese la vita, e tu gli hai dato longevità nei secoli.
 R. Hai posto sul suo capo una corona di pietre preziose.
 &Gloria
 R. Hai posto sul suo capo una corona di pietre preziose.
+
+[Lectio9]
+@Commune/C4:Lectio9 in 2 loco

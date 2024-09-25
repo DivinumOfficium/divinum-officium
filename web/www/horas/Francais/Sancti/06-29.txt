@@ -1,17 +1,8 @@
 [Rank]
 SS. Apostolorum Petri et Pauli;;Duplex I classis cum octava communi;;6.5;;ex C1
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 SS. Apostolorum Petri et Pauli;;Duplex I classis;;6;;ex C1
-
-[Rule]
-ex C1 ;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-nor commemoratio
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
 
 [Ant Vespera]
 Pierre et Jean * montaient au temple pour la prière de la neuvième heure.
@@ -42,11 +33,30 @@ Qui, dans son unité, gouverne toutes choses,
 Pendant tous les siècles des siècles.
 Amen.
 
-[Ant 1]
-@Sancti/02-22
-
 [Oratio]
 Dieu, vous avez consacré ce jour par le martyre de vos Apôtres saint Pierre et saint Paul : faites la grâce à votre Église de suivre en tout le précepte de ceux par qui la religion a commencé.
+$Per Dominum
+
+[Octava 11] (rubrica 1570 aut 1910)
+!Commemoratio Octavæ S. Petri
+Ant. Vous êtes pasteur des brebis, * prince des Apôtres, c'est à vous qu'ont été confiées les clefs du royaume des cieux.
+_
+V. Tu es Pierre.
+R. Et sur cette pierre je bâtirai mon Eglise.
+_
+$Oremus
+O Dieu qui avez consacré le jour où nous sommes en le choisissant pour le martyre de vos Apôtres saint Pierre et saint Paul, donnez à votre Eglise de suivre en tout les préceptes de ceux au moyen de qui la religion a commencé à se répandre.
+$Per Dominum
+
+[Octava 1]
+!Commemoratio Octavæ Ss. Apóstoli
+Ant. L'Apôtre saint Pierre, * et saint Paul, le Docteur des Nations, nous ont instruits de votre loi, Seigneur.
+_
+V. Vous les établirez princes sur toute la terre.
+R. Ils se souviendront de votre nom, Seigneur.
+_
+$Oremus
+O Dieu qui avez consacré le jour où nous sommes en le choisissant pour le martyre de vos Apôtres saint Pierre et saint Paul, donnez à votre Eglise de suivre en tout les préceptes de ceux au moyen de qui la religion a commencé à se répandre.
 $Per Dominum
 
 [Lectio1]
@@ -119,7 +129,7 @@ En ce temps-là : Jésus vint aux environs de Césarée de Philippe, et il inter
 _
 Homélie de saint Jérôme, Prêtre.
 !Lib. 3. Comment. in Matth. cap. 16.
-C’est avec justesse que le Sauveur demande : "Quel est celui que les hommes disent être le Fils de l’homme ?" Ceux qui ne voient en lui rien de plus que le Fils de l’homme, sont en effet des hommes ; mais ceux qui reconnaissent sa divinité, sont appelés des dieux et non pas des hommes. "Les disciples répondirent : Les uns (disent que c’est) Jean-Baptiste ; d’autres, Élie". Je m’étonne que certains interprètes se demandent la cause de ces erreurs, et cherchent à établir, par de longues discussions, pourquoi les uns ont pensé que notre Seigneur Jésus-Christ était Jean-Baptiste, les autres Élie, d’autres Jérémie ou quelqu’un des Prophètes, puisqu’ils ont pu se tromper en le prenant pour Élie et Jérémie, tout comme Hérode se trompa en le prenant pour Jean-Baptiste, quand il disait : "Ce Jean, à qui j’ai fait trancher la tête, est ressuscité d’entre les morts, et c’est pour cela que des miracles s’opèrent par lui".
+C’est avec justesse que le Sauveur demande : « Quel est celui que les hommes disent être le Fils de l’homme ?» Ceux qui ne voient en lui rien de plus que le Fils de l’homme, sont en effet des hommes ; mais ceux qui reconnaissent sa divinité, sont appelés des dieux et non pas des hommes. « Les disciples répondirent : Les uns (disent que c’est) Jean-Baptiste ; d’autres, Élie» . Je m’étonne que certains interprètes se demandent la cause de ces erreurs, et cherchent à établir, par de longues discussions, pourquoi les uns ont pensé que notre Seigneur Jésus-Christ était Jean-Baptiste, les autres Élie, d’autres Jérémie ou quelqu’un des Prophètes, puisqu’ils ont pu se tromper en le prenant pour Élie et Jérémie, tout comme Hérode se trompa en le prenant pour Jean-Baptiste, quand il disait : « Ce Jean, à qui j’ai fait trancher la tête, est ressuscité d’entre les morts, et c’est pour cela que des miracles s’opèrent par lui» .
 
 [Responsory7]
 R. J’ai prié pour toi, Pierre, afin que ta foi ne défaille point :
@@ -128,7 +138,7 @@ V. La chair ni le sang ne t’ont révélé ceci, mais mon Père qui est dans le
 R. Et toi, quand tu seras converti, confirme tes frères.
 
 [Lectio8]
-"Et vous, qui dites-vous que je suis ?" Lecteur intelligent, fais attention, d’après la suite et le texte du discours, que les Apôtres ne sont point du tout appelés des hommes, mais des dieux ; car c’est après avoir dit : "Quel est celui que les hommes disent être le Fils de l’homme ?" qu’il ajouta ceci : "Et vous, qui dites-vous que je suis ?" Pendant que les autres, parce qu’ils sont des hommes, pensent de moi des choses tout humaines, vous qui êtes des dieux, qui croyez-vous que je suis ? Pierre, au nom de tous les Apôtres, fait cette profession de foi : "Vous êtes le Christ, Fils du Dieu vivant". Il dit Dieu vivant, à la différence de ces dieux qui passent pour des dieux, mais qui sont morts.
+« Et vous, qui dites-vous que je suis ?» Lecteur intelligent, fais attention, d’après la suite et le texte du discours, que les Apôtres ne sont point du tout appelés des hommes, mais des dieux ; car c’est après avoir dit : « Quel est celui que les hommes disent être le Fils de l’homme ?» qu’il ajouta ceci : « Et vous, qui dites-vous que je suis ?» Pendant que les autres, parce qu’ils sont des hommes, pensent de moi des choses tout humaines, vous qui êtes des dieux, qui croyez-vous que je suis ? Pierre, au nom de tous les Apôtres, fait cette profession de foi : « Vous êtes le Christ, Fils du Dieu vivant» . Il dit Dieu vivant, à la différence de ces dieux qui passent pour des dieux, mais qui sont morts.
 
 [Responsory8]
 @Sancti/02-22:Responsory7
@@ -136,7 +146,7 @@ R. Et toi, quand tu seras converti, confirme tes frères.
 R. Et moi, je te dis que tu es Pierre, et sur cette pierre je bâtirai mon Église.
 
 [Lectio9]
-"Jésus, répondant, lui dit : Tu es heureux, Simon Bar-Jona". Il paie de retour le témoignage que l’Apôtre a rendu de lui. Pierre avait dit : "Vous êtes le Christ, Fils du Dieu vivant". La confession de la vérité fut récompensée. "Tu es heureux, Simon Bar-Jona". Pourquoi ? "Car ce n’est ni la chair ni le sang qui t’ont révélé ceci, mais mon Père". Ce que la chair et le sang n’ont pu révéler, la grâce du Saint-Esprit l’a révélé. C’est donc par suite de sa profession de foi, qu’il reçoit un nom où se trouve exprimée la révélation du Saint-Esprit, et qu’il mérite même d’être appelé fils de cet Esprit ; car Bar-Jona se traduit dans notre langue par fils de la colombe.
+« Jésus, répondant, lui dit : Tu es heureux, Simon Bar-Jona» . Il paie de retour le témoignage que l’Apôtre a rendu de lui. Pierre avait dit : « Vous êtes le Christ, Fils du Dieu vivant» . La confession de la vérité fut récompensée. « Tu es heureux, Simon Bar-Jona» . Pourquoi ? « Car ce n’est ni la chair ni le sang qui t’ont révélé ceci, mais mon Père» . Ce que la chair et le sang n’ont pu révéler, la grâce du Saint-Esprit l’a révélé. C’est donc par suite de sa profession de foi, qu’il reçoit un nom où se trouve exprimée la révélation du Saint-Esprit, et qu’il mérite même d’être appelé fils de cet Esprit ; car Bar-Jona se traduit dans notre langue par fils de la colombe.
 &teDeum
 
 [Ant Laudes]
@@ -164,50 +174,6 @@ Qui, dans son unité, gouverne toutes choses,
 Pendant tous les siècles des siècles.
 Amen.
 
-[Ant 2]
-@Sancti/02-22
-
-[Lectio Prima]
-!Act 12:11
-v. Alors Pierre, étant revenu à lui-même, dit : Maintenant je reconnais d’une manière certaine que le Seigneur a envoyé son ange, et qu’il m’a arraché à la main d’Hérode et à toute l’attente du peuple juif.
-
-[Capitulum Sexta]
-!Act 12:5
-v. Pierre était donc gardé dans la prison ; mais l’église faisait sans interruption des prières à Dieu pour lui.
-$Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Ant Vespera 3]
-@Commune/C1
-
-[Ant 3]
-Aujourd’hui * Simon Pierre est monté sur le gibet de la croix, alléluia : aujourd’hui le porte-clefs du royaume s’en est allé joyeux vers le Christ : aujourd’hui l’Apôtre Paul, lumière de la terre, ayant incliné la tête, a souffert le martyre pour le nom du Christ et a été couronné, alléluia.
-
-[Octava 1]
-!Commemoratio Octavæ Ss. Apóstoli
-Ant. L'Apôtre saint Pierre, * et saint Paul, le Docteur des Nations, nous ont instruits de votre loi, Seigneur.
-_
-V. Vous les établirez princes sur toute la terre.
-R. Ils se souviendront de votre nom, Seigneur.
-_
-$Oremus
-O Dieu qui avez consacré le jour où nous sommes en le choisissant pour le martyre de vos Apôtres saint Pierre et saint Paul, donnez à votre Eglise de suivre en tout les préceptes de ceux au moyen de qui la religion a commencé à se répandre.
-$Per Dominum
-
-[Octava 11](rubrica 1570 aut 1910)
-!Commemoratio Octavæ S. Petri
-Ant. Vous êtes pasteur des brebis, * prince des Apôtres, c'est à vous qu'ont été confiées les clefs du royaume des cieux.
-_
-V. Tu es Pierre.
-R. Et sur cette pierre je bâtirai mon Eglise.
-_
-$Oremus
-O Dieu qui avez consacré le jour où nous sommes en le choisissant pour le martyre de vos Apôtres saint Pierre et saint Paul, donnez à votre Eglise de suivre en tout les préceptes de ceux au moyen de qui la religion a commencé à se répandre.
-$Per Dominum
-
 [Octava 2]
 !Commmemoratio Octavæ Ss. Apóstoli
 Ant. Comme ces glorieux princes de la terre * se sont aimés durant leur vie, de même dans la mort ils n'ont pas été séparés.
@@ -218,3 +184,15 @@ _
 $Oremus
 O Dieu qui avez consacré le jour où nous sommes en le choisissant pour le martyre de vos Apôtres saint Pierre et saint Paul, donnez à votre Eglise de suivre en tout les préceptes de ceux au moyen de qui la religion a commencé à se répandre.
 $Per Dominum
+
+[Lectio Prima]
+!Act 12:11
+v. Alors Pierre, étant revenu à lui-même, dit : Maintenant je reconnais d’une manière certaine que le Seigneur a envoyé son ange, et qu’il m’a arraché à la main d’Hérode et à toute l’attente du peuple juif.
+
+[Capitulum Sexta]
+!Act 12:5
+v. Pierre était donc gardé dans la prison ; mais l’église faisait sans interruption des prières à Dieu pour lui.
+$Deo gratias
+
+[Ant 3]
+Aujourd’hui * Simon Pierre est monté sur le gibet de la croix, alléluia : aujourd’hui le porte-clefs du royaume s’en est allé joyeux vers le Christ : aujourd’hui l’Apôtre Paul, lumière de la terre, ayant incliné la tête, a souffert le martyre pour le nom du Christ et a été couronné, alléluia.

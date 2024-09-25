@@ -1,17 +1,8 @@
 [Rank]
 In Decollatione S. Joannis Baptistæ;;Duplex majus;;4;;ex C2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Decollatione S. Joannis Baptistæ;;Duplex;;3;;vide C2
-
-[Rule]
-ex C2;
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-scriptura1960
 
 [Ant Vespera]
 Herodes mandó prender * a Juan, y lo metió en la cárcel encadenado por causa de Herodías.
@@ -91,6 +82,12 @@ R. Y le dio una gloria eterna.
 &Gloria
 R. Y le dio una gloria eterna. 
 
+[Lectio94]
+Del libro de S. Ambrosio sobre las Vírgenes, lib. 3
+_
+Hay que considerar en la memoria de S. Juan Bautista, quién fue el martirizado, quiénes sus verdugos, cuáles fueron la causa, el modo y el momento de su martirio. Se trata de un justo condenado a muerte por unos adúlteros: la pena capital que ellos merecen recae sobre el que debería ser su juez. La muerte de un Profeta se convierte en recompensa de una bailarina. Llégase a un extremo que repugna aun a los bárbaros: la cruel sentencia que se ejecutará, es dictada en la mesa, en un banquete; y el objeto de la impía ejecución lo llevan de la prisión a la sala del festín. ¡Cuántos crímenes en una sola acción!
+&teDeum
+
 [Lectio7]
 Lectura del Santo Evangelio según San Marcos
 !Mc 6:17-29
@@ -117,14 +114,5 @@ Sabina, dama romana, esposa del distinguido Valentino, fue iniciada por la Virge
 [Ant Laudes]
 @:Ant Vespera
 
-[Ant 2]
-@:Ant 1
-
 [Ant 3]
 El rey incrédulo * envió a los verdugos con la orden de cortar la cabeza a Juan el Bautista.
-
-[Lectio94]
-Del libro de S. Ambrosio sobre las Vírgenes, lib. 3
-_
-Hay que considerar en la memoria de S. Juan Bautista, quién fue el martirizado, quiénes sus verdugos, cuáles fueron la causa, el modo y el momento de su martirio. Se trata de un justo condenado a muerte por unos adúlteros: la pena capital que ellos merecen recae sobre el que debería ser su juez. La muerte de un Profeta se convierte en recompensa de una bailarina. Llégase a un extremo que repugna aun a los bárbaros: la cruel sentencia que se ejecutará, es dictada en la mesa, en un banquete; y el objeto de la impía ejecución lo llevan de la prisión a la sala del festín. ¡Cuántos crímenes en una sola acción!
-&teDeum

@@ -1,16 +1,6 @@
 [Rank]
 S. Stephani Protomartyris;;Duplex II class cum octava simplici;;5.4;;ex C2
 
-[Rule]
-ex C2;
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-no Psalm5
-
-[Versum 1]
-@Commune/C2:Versum 1
-
 [Ant 1]
 Esteban, * lleno de gracia y de poder, hacía grandes prodigios y signos entre la gente.
 
@@ -105,7 +95,7 @@ En aquel tiempo: Decía Jesús a los escribas y fariseos: He ahí que Yo os env�
 _
 Homilía de San Jerónimo, Presbítero.
 !Libro 4, de los coment. sobre el cap. 23 de San Mateo.
-Estas palabras “Llenad la medida de vuestros padres”, que ya dijimos se referían a la persona del Señor, por cuanto había de ser crucificado por ellos, pueden también aplicarse a sus discípulos, de quienes ahora se dice: “He aquí que Yo os envío profetas y sabios y escribas”. Al propio tiempo debemos observar, conforme lo advierte el Apóstol escribiendo a los Corintios, que son diversos los dones de los discípulos de Cristo. Unos son profetas, los cuales anuncian lo venidero; otros tienen el don de la sabiduría por el cual disciernen cuándo es oportuno hablar; otros son doctores muy peritos en la ley. Entre estos últimos, Esteban fue apedreado; Pablo muerto; crucificado Pedro, y azotados los discípulos, según los Hechos de los Apóstoles. 
+Estas palabras “Llenad la medida de vuestros padres”, que ya dijimos se referían a la persona del Señor, por cuanto había de ser crucificado por ellos, pueden también aplicarse a sus discípulos, de quienes ahora se dice: “He aquí que Yo os envío profetas y sabios y escribas”. Al propio tiempo debemos observar, conforme lo advierte el Apóstol escribiendo a los Corintios, que son diversos los dones de los discípulos de Cristo. Unos son profetas, los cuales anuncian lo venidero; otros tienen el don de la sabiduría por el cual disciernen cuándo es oportuno hablar; otros son doctores muy peritos en la ley. Entre estos últimos, Esteban fue apedreado; Pablo muerto; crucificado Pedro, y azotados los discípulos, según los Hechos de los Apóstoles.
 
 [Responsory7]
 R. Esteban, siervo de Dios, a quien los judíos apedrearon, vio los cielos abiertos, los vio y entró en ellos. 
@@ -144,32 +134,6 @@ $Deo gratias
 V. Hombres piadosos sepultaron a Esteban.
 R. E hicieron gran duelo por él.
 
-[Ant 2]
-@:Ant 1
-
-[Lectio Prima]
-!Act 7:59
-v. Luego, cayendo de rodillas, lanzó un clamoroso grito: Señor, no les tengas en cuenta este pecado. Y, dicho esto, se durmió en el Señor.
-
-[Capitulum Sexta]
-!Act. 6, 9-10
-v. Unos cuantos de la Sinagoga, llamada de los libertos, oriundos de Cirene, de Alejandría, de Cilicia y de Asia, se pusieron a discutir con Esteban; pero no lograron hacer frente a la sabiduría y al espíritu con que hablaba.
-$Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Ant Vespera 3]
-@Sancti/12-25:Ant Vespera 3
-
-[Versum 3]
-V. Esteban vio los cielos abiertos.
-R. Vio y entró. Dichoso el hombre a quien se le abren los cielos.
-
-[Ant 3]
-Hombres piadosos * sepultaron a Esteban e hicieron gran duelo por él.
-
 [Octava 2]
 !Conmemoración de la Octava de S. Esteban
 Ant. Esteban, * lleno de gracia y de poder, hacía grandes prodigios y signos entre la gente.
@@ -180,6 +144,22 @@ _
 $Oremus
 v. Te rogamos, Señor, nos concedas el favor de imitar lo que veneramos, para que aprendamos a amar aun a nuestros enemigos, pues celebramos el natalicio de aquel que supo rogar por sus perseguidores a nuestro Señor Jesucristo, tu Hijo:
 $Qui tecum
+
+[Lectio Prima]
+!Act 7:59
+v. Luego, cayendo de rodillas, lanzó un clamoroso grito: Señor, no les tengas en cuenta este pecado. Y, dicho esto, se durmió en el Señor.
+
+[Capitulum Sexta]
+!Act. 6, 9-10
+v. Unos cuantos de la Sinagoga, llamada de los libertos, oriundos de Cirene, de Alejandría, de Cilicia y de Asia, se pusieron a discutir con Esteban; pero no lograron hacer frente a la sabiduría y al espíritu con que hablaba.
+$Deo gratias
+
+[Versum 3]
+V. Esteban vio los cielos abiertos.
+R. Vio y entró. Dichoso el hombre a quien se le abren los cielos.
+
+[Ant 3]
+Hombres piadosos * sepultaron a Esteban e hicieron gran duelo por él.
 
 [Octava 3]
 !Conmemoración de la Octava de S. Esteban

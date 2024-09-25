@@ -1,10 +1,10 @@
 [Rank]
 Fest der Sieben Schmerzen der hl. Jungfrau Maria;;Duplex 2nd class;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Fest der Sieben Schmerzen der hl. Jungfrau Maria;;Duplex 2nd class;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Fest der Sieben Schmerzen der hl. Jungfrau Maria;;Duplex;;3;;ex C11
 
 [Ant Vespera]
@@ -50,11 +50,15 @@ Amen.
 V. Königin der Martyrer, bitte für uns.
 R. Die du neben dem Kreuze Jesu gestanden.
 
+[Doxology]
+@Tempora/Quad5-5
+
 [Ant 1]
 Denkt nicht von mir, * dass ich (von Natur) dunkelfarbig bin, denn nur die Sonne hat mir die Farbe genommen: die Söhne meiner Mutter sind meine Gegner.
 
-[Doxology]
-@Tempora/Quad5-5
+[Oratio]
+O Gott, bei dessen leidensvollem Tode sich gemäß Simeons Voraussagung ein Schmerzensschwert in die liebenswürdigste Seele der glorienreichen Jungfrau und Mutter Maria hineingebohrt hat, gewähre uns huldvollst die Gnade, dass wir, die wir ihr ausgestandenes Leid in Ehrfurcht begehen, deines Leidens beseligende Wirkung erhalten.
+$Qui vivis
 
 [Invit]
 Wir wollen uns neben das Kreuz stellen mit Maria, der Mutter Jesu, * durch deren Seele das Leidensschwert hindurchging.
@@ -243,16 +247,12 @@ R. Lass uns des himmlischen Reiches Freuden genießen.
 [Ant 2]
 Kommt, * wir wollen aufsteigen zum Berg des Herrn, und nun schaut, ob ein Schmerz gleich ist meinem Schmerze.
 
-[Oratio]
-O Gott, bei dessen leidensvollem Tode sich gemäß Simeons Voraussagung ein Schmerzensschwert in die liebenswürdigste Seele der glorienreichen Jungfrau und Mutter Maria hineingebohrt hat, gewähre uns huldvollst die Gnade, dass wir, die wir ihr ausgestandenes Leid in Ehrfurcht begehen, deines Leidens beseligende Wirkung erhalten.
-$Qui vivis
-
-[Versum Prima]
-@Tempora/Quad5-5
-
 [Lectio Prima]
 !Klgl 2,18
 v. Lass gleich einem Sturzbach Tränen fließen Tag und Nacht; gönn dir keine Ruh' und lass die Augenlider auf stets neues Weinen lauern.
+
+[Versum Prima]
+@Tempora/Quad5-5
 
 [Responsory Tertia]
 R.br. O ihr alle, * die ihr vorbeikommt auf dem Wege.
@@ -295,9 +295,6 @@ R. Ein Myrrhensträußlein * ist mir mein Geliebter.
 _
 V. Ganz zerschmolzen ist meine Seele.
 R. Als des Geliebten Laut erscholl.
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Überwältigt hat mich das Leid, * und mein Antlitz ist angeschwollen vom Weinen, und meine Augenlider sind umhüllt vom Dunkel.

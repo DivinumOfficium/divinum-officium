@@ -1,16 +1,6 @@
 [Rank]
 Beatæ Mariæ Virginis de Guadalupe;;Duplex;;3;;vide C11
 
-[Rank] (rubrica 1960)
-Beatæ Mariæ Virginis de Guadalupe;;Duplex;;3;;vide C11
-
-[Rule]
-vide C11;
-Psalmi Dominica
-9 lectiones;
-Doxology=Nat
-Ipsa Virgo Virginum
-
 [Ant Vespera]
 Quæ est ista * quæ procéssit sicut sol, et formósa tamquam Jerúsalem?;;109
 Vidérunt eam * fíliæ Sion vernántem in flóribus rosárum, et beatíssimam prædicavérunt.;;112
@@ -25,22 +15,13 @@ R. Et judícia sua non manifestávit eis.
 [Ant 1]
 Elégi et sanctificávi locum istum; * Ut sit ibi nomen meum, et permáneant óculi mei, et cor meum ibi cunctis diébus.
 
-[Ant 3]
-Leva in circúitu * óculos tuos, et vide: omnes isti congregáti sunt, venérunt tibi: fílii tui de longe vénient, et fíliæ tuæ de látere surgent.
-
 [Oratio]
 Deus, qui sub beatíssimæ Vírginis Maríæ singulári patrocínio constitútos perpétuis benefíciis nos cumulári voluísti: præsta supplícibus tuis; ut, cujus hódie commemoratióne lætámur in terris, ejus conspéctu perfruámur in cælis.
 $Per Dominum
 
-[Hymnus Matutinum]
-@Sancti/12-08
-
 [Lectio94]
 Méxici, in colle Tepeiacénsi, anno millésimo quingentésimo trigésimo primo Deípara Virgo Maria Joánni Dídaco neóphyto, uti pie tráditur, sese vidéndam prǽbuit, eíque ad antístitem Joánnem de Zumárraga mandátum dedit, quod et instánter iterávit, de æde síbimet ínibi construénda. Epíscopus vero signum expétiit. Mox neóphytum pátruo moritúro sacraménta longínquius ab apparitiónis loco quæréntem, tértio visu dignátur alma Mater, de pátrui sanitáte serénat, rosásque extra tempus obórtas, in eius pállio compósitas, ad epíscopum deférri iubet. Cuius in conspéctu rosis effúsis, Maríæ imágo, ipsi pállio impréssa, uti tráditur, mirum in modum præséntibus appáruit. Quæ in sacéllo episcopáli primum asserváta, dein ad exstrúctam ædem in colle Tepeiacénsi transláta, dénique in magnífico templo excépta est, quo turmátim plebes Mexicánæ magis magísque conveníre cœpérunt, veneratiónis grátia et frequéntiæ miraculórum. Ideóque tamquam præsentíssimum præsídium Mexicáni antístites, univérso pópulo plaudénte, beatam Vírginem Maríam de Guadalupe in primáriam Patrónam gentis Mexicánæ elegérunt, quod Benedíctus décimus quártus apostólica auctoritáte rite confirmávit. Leo tértius décimus sacram effígiem áurea coróna, Colúmbi recurrénte die, anno millésimo octingentésimo nonagésimo quinto per Mexicánum archiepíscopum decorávit. Sanctus vero Pius décimus beátam Vírginem Guadalupénsem univérsæ Américæ Latínæ Patrónam declarávit.
 &teDeum
-
-[Ant Laudes]
-@:Ant Vespera:s/109/92/ s/112/99/ s/121/62/ s/126/210/ s/147/148/
 
 [Capitulum Laudes]
 !Prov 8:34-35
@@ -97,5 +78,5 @@ R. Psalmum dicat nómini tuo, Dómine.
 [Ant 2]
 Quasi arcus * refúlgens inter nébulas glóriæ, et quasi flos rosárum in diébus vernis.
 
-[Versum 3]
-@:Versum 1
+[Ant 3]
+Leva in circúitu * óculos tuos, et vide: omnes isti congregáti sunt, venérunt tibi: fílii tui de longe vénient, et fíliæ tuæ de látere surgent.

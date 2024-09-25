@@ -1,57 +1,12 @@
 [Name]
 Officium Dedicationis Ecclesiae
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-Psalm5 Vespera=147
-Festum Domini
-Divinum auxilium
-
 [Ant Vespera]
 Domowi Twemu, Panie, * przystoi świątobliwość na długość dni.;;109
 Dom mój, * dom modlitwy nazwan będzie.;;110
 Ten jest dom Boży, * mocno zbudowany, dobrze ugruntowany na opoce.;;111
 Dobrze ugruntowany jest * dom Pana na opoce.;;112
 Wszystkie mury Twoje, * Jeruzalem, zbudowane będą z drogich kamienie, a wieże z pereł.;;147
-
-[HymnusM Laudes]
-Chrystus z nieba jest posłany
-Jako podwalina
-I węgielny kamień gmachu
-Bożego Kościoła;
-Syjon wierząc weń niezłomnie
-Przyjął Go z weselem.
-_
-Całe miasto miłe Panu,
-Które On uświęca,
-Pełne hymnów uwielbienia
-I pieśni radosnych,
-Boga w Trójcy Jedynego
-Głosi wciąż gorliwie.
-_
-Wejdź do tej świątyni, Boże,
-Gdy wzywamy Ciebie;
-W swej dobroci przyjmij hołdy
-Pokornej modlitwy;
-Nieustannie zlewaj na nas
-Strumień swojej łaski.
-_
-Przychodzimy tu ufając,
-Że wysłuchasz prośby;
-Wszystkim, czego nam udzielisz,
-Będziemy się cieszyć
-Razem z wybranymi w raju,
-Który nam otworzysz.
-_
-Należną chwałę bez przerwy
-Najwyższy Ojciec niech bierze,
-Jedyny także Syn Ojca
-I wzniosły Dawca radości.
-Ich chwała, władza i sława,
-Przez wieki zawsze niech słynie!
-Amen.
 
 [HymnusM Vespera]
 O Jeruzalem szczęśliwe,
@@ -149,18 +104,16 @@ $Per Dominum
 Podnieście książęta bramy wasze, i podnoście się bramy wieczne.;;23
 Będzie mi Pan * za Boga: a kamień ten, będzie zwan Domem Bożym.;;45
 Zbudował * Mojżesz ołtarz Panu Bogu.;;47
-V. Domowi Twemu, Panie, przystoi świątobliwość.
-R. Na długość dni.
 Nie jest czem innem * jak domem Bożym i bramą niebios.;;83
 Ujrzawszy we śnie drabinę, * a wierzch jéj dosięgający nieba: zstępujące Anioły, rzekł: Prawdziwie miejsce to święte jest.;;86
 Ustawił Jakób * kamień, na znak, nalawszy oliwy na wierzch.;;87
-V. Dom mój.
-R. Domem modlitwy nazwany będzie.
 Kto mieszka w spomożeniu Najwyższego, * w obronie Boga niebieskiego będzie przebywał.;;90
 Świątynia Pańska * święta jest, Bożym dziełem jest, przez Boga zbudowana.;;95
 Benedícta * glória Dómini, de loco sáncto suo, allelúja.;;98
-V. Ten jest dom Boży mocno zbudowany.
-R. Dobrze ugruntowany jest na opoce.
+
+[Nocturn 2 Versum]
+V. Dom mój.
+R. Domem modlitwy nazwany będzie.
 
 [Lectio1]
 Z Drugiej Księgi Kronik
@@ -169,7 +122,7 @@ Z Drugiej Księgi Kronik
 2 I nie mogli kapłani wniść do kościoła Pańskiego, przeto iż była chwała Pańska napełniła kościół Pański.
 3 Ale i wszyscy synowie Izraelscy widzieli zstępujący ogień i chwałę Pańską na dom: i upadłszy twarzą swą na ziemię, na tło kamieniem położone, pokłonili się i chwalili Pana, iż dobry, iż na wieki miłosierdzie jego.
 4 A król i wszystek lud ofiarowali ofiary przed Panem.
-5 Król tedy Salomon zabił na ofiarę wołów dwadzieścia i dwa tysiące, baranów sto i dwadzieścia tysięcy, i poświęcił dom Boży król i wszystek lud. 
+5 Król tedy Salomon zabił na ofiarę wołów dwadzieścia i dwa tysiące, baranów sto i dwadzieścia tysięcy, i poświęcił dom Boży król i wszystek lud.
 
 [Responsory1]
 R. Przy poświęcaniu kościoła śpiewał lud chwałę:
@@ -253,9 +206,6 @@ R. A wieże Jeruzalem z klejnotów będą zbudowane.
 Aby się jednak nie zdawało, iż zbyt szybko opuściliśmy owego ślepca, jakbyśmy lekceważyli ubogich i przeszli do bogacza Zacheusza, poczekajmy na niego, jak Pan na niego czekał. Zapytajmy go, bo i Chrystus go zapytał. My zapytajmy, bo nie wiemy, On pytał, bo wiedział. Zapytajmy, aby się dowiedzieć, jak został uleczony. On zaś zapytał, aby w nim jednym wielu z nas się pouczyło, co winniśmy czynić, aby sobie zasłużyć na widzenie Pana. Zapytał bowiem, abyśmy wierzyli, że tylko ten, kto złoży wyznanie wiary, może być zbawiony.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
 [Capitulum Laudes]
 !Ap 21:2
 v. Widziałem święte miasto Jeruzalem nowe, zstępujące z nieba od Boga; zgotowane jako oblubienicę ubraną mężowi swemu.
@@ -298,8 +248,42 @@ I cześć i moc i chwała nieustanna
 Niech trwają wiekuiście, po wsze czasy.
 Amen.
 
-[Versum 2]
-@:Versum 1
+[HymnusM Laudes]
+Chrystus z nieba jest posłany
+Jako podwalina
+I węgielny kamień gmachu
+Bożego Kościoła;
+Syjon wierząc weń niezłomnie
+Przyjął Go z weselem.
+_
+Całe miasto miłe Panu,
+Które On uświęca,
+Pełne hymnów uwielbienia
+I pieśni radosnych,
+Boga w Trójcy Jedynego
+Głosi wciąż gorliwie.
+_
+Wejdź do tej świątyni, Boże,
+Gdy wzywamy Ciebie;
+W swej dobroci przyjmij hołdy
+Pokornej modlitwy;
+Nieustannie zlewaj na nas
+Strumień swojej łaski.
+_
+Przychodzimy tu ufając,
+Że wysłuchasz prośby;
+Wszystkim, czego nam udzielisz,
+Będziemy się cieszyć
+Razem z wybranymi w raju,
+Który nam otworzysz.
+_
+Należną chwałę bez przerwy
+Najwyższy Ojciec niech bierze,
+Jedyny także Syn Ojca
+I wzniosły Dawca radości.
+Ich chwała, władza i sława,
+Przez wieki zawsze niech słynie!
+Amen.
 
 [Ant 2]
 Zacheuszu, * zstąp prędko, albowiem dziś potrzeba mi zostać w domu twoim: i prędko zstąpił, i przyjął go z radością w domu swoim. Dzisiaj zbawienie stało się temu domowi od Boga, alleluja.
@@ -308,14 +292,15 @@ Zacheuszu, * zstąp prędko, albowiem dziś potrzeba mi zostać w domu twoim: i 
 !Ap 21:4-5
 v. I otrze Bóg wszelką łzę z oczu ich: a śmierci daléj nie będzie, ani smętku, ani krzyku, ani boleści więcéj nie będzie, iż pierwsze rzeczy przeminęły. I rzekł który siedział na stolicy: Oto nowe czynię wszystkie rzeczy.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Domowi Twemu, Panie, * Przystoi świątobliwość.
 R. Domowi Twemu, Panie, * Przystoi świątobliwość.
 V. Na długość dni.
 R. Przystoi świątobliwość.
 &Gloria
 R. Domowi Twemu, Panie, * Przystoi świątobliwość.
-_
+
+[Versum Tertia]
 V. Święte jest to miejsce, w którym modli się kapłan.
 R. Za nieprawości i grzechy ludu.
 
@@ -324,30 +309,23 @@ R. Za nieprawości i grzechy ludu.
 v. I słyszałem głos wielki z stolice, mówiący: Oto przybytek Boży z ludźmi, i będzie mieszkał z nimi. A oni będą ludem jego, a sam Bóg z nimi będzie Bogiem ich.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Święte jest to miejsce, * W którym modli się kapłan.
 R. Święte jest to miejsce, * W którym modli się kapłan.
 V. Za nieprawości i grzechy ludu.
 R. W którym modli się kapłan.
 &Gloria
 R. Święte jest to miejsce, * W którym modli się kapłan.
-_
-V. Ten jest dom Boży mocno zbudowany.
-R. Dobrze ugruntowany jest na opoce.
 
-[Capitulum Nona]
-!Ap 21:4-5
-v. I otrze Bóg wszelką łzę z oczu ich: a śmierci daléj nie będzie, ani smętku, ani krzyku, ani boleści więcéj nie będzie, iż pierwsze rzeczy przeminęły. I rzekł który siedział na stolicy: Oto nowe czynię wszystkie rzeczy.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Ten jest dom Boży * Mocno zbudowany.
 R. Ten jest dom Boży * Mocno zbudowany.
 V. Dobrze ugruntowany jest na opoce.
 R. Mocno zbudowany.
 &Gloria
 R. Ten jest dom Boży * Mocno zbudowany.
-_
+
+[Versum Nona]
 V. Dobrze ugruntowany jest dom Pana.
 R. Na opoce.
 

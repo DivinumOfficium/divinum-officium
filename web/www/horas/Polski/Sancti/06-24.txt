@@ -1,15 +1,8 @@
 [Rank]
 Narodzenie Św. Jana Chrzciciela;;Duplex I classis cum Octava communi;;6.5;;
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Narodzenie Św. Jana Chrzciciela;;Duplex I classis;;6;;
-
-[Rule]
-Proper;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
 
 [Ant Vespera]
 A on uprzedzi * przed Nim, w duchu i mocy Eljaszowej, iżby zgotował Panu lud doskonały.
@@ -17,11 +10,6 @@ Jan * jest imię jego; wina i sycery pić nie będzie, i wiele ich będą się r
 Z łona niewiasty podeszłej w leciech * i niepłodnej narodził się Jan, Poprzednik Pański.
 Oto dziecię, * wielkie przed Panem, bowiem ręka Pańska z niem jest.
 Nazarejczykiem * nazwane będzie: wina i sycery nie będzie pić, i nic nieczystego jeść nie będzie z żywota matki swojej.
-
-[Capitulum Laudes]
-!Iz 49:1
-v. Słuchajcie, wyspy, a pilnujcie narodowie zdaleka! Pan z żywota powołał mię, z żywota matki mojej wspomniał na imię moje.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Abyśmy mogli pełnym głosem śpiewać
@@ -58,6 +46,17 @@ R. Któremu imię było Jan.
 A gdy Zacharjasz * wszedł do świątyni Pańskiej ukazał mu się Archanioł Gabrjel, stojąc po prawej stronie ołtarza kadzenia.
 
 [Oratio]
+Boże, który dzień dzisiejszy uczyniłeś chwalebnym przez narodziny błogosławionego Jana, daj ludowi Twemu łaskę radości duchowych, a dusze wszystkich wiernych skieruj na drogę zbawienia.
+$Per Dominum
+
+[Octava 1]
+!Wspominamy Oktawę Św. Jana Chrzciciela
+Ant. A gdy Zacharjasz * wszedł do świątyni Pańskiej ukazał mu się Archanioł Gabrjel, stojąc po prawej stronie ołtarza kadzenia.
+_
+V. Był człowiek posłany od Boga.
+R. Któremu imię było Jan.
+_
+$Oremus
 Boże, który dzień dzisiejszy uczyniłeś chwalebnym przez narodziny błogosławionego Jana, daj ludowi Twemu łaskę radości duchowych, a dusze wszystkich wiernych skieruj na drogę zbawienia.
 $Per Dominum
 
@@ -219,6 +218,11 @@ Jan, nazwano * imię jego i wielu ich będą się radować z narodzenia jego.
 Między narodzonymi z niewiast * nie powstał większy nad Jana Chrzciciela.
 Ty, dzieciątko, * prorokiem Najwyższego będziesz nazwane: bo uprzedzisz przed Panem, prostując drogi Jego.
 
+[Capitulum Laudes]
+!Iz 49:1
+v. Słuchajcie, wyspy, a pilnujcie narodowie zdaleka! Pan z żywota powołał mię, z żywota matki mojej wspomniał na imię moje.
+$Deo gratias
+
 [Hymnus Laudes]
 v. O nader szczęśliwy i szczytnej zasługi,
 Nie znający zmazy w śnieżnej czystości,
@@ -252,6 +256,17 @@ R. Bowiem ręka Pańska z niem jest.
 
 [Ant 2]
 Otworzyły się * usta Zachariasza, i prorokował, mówiąc: Błogosławiony Pan, Bóg Izraelski.
+
+[Octava 2]
+!Wspominamy Oktawę Św. Jana Chrzciciela
+Ant. Otworzyły się * usta Zachariasza, i prorokował, mówiąc: Błogosławiony Pan, Bóg Izraelski.
+_
+V. Oto dziecię, wielkie przed Panem.
+R. Bowiem ręka Pańska z niem jest.
+_
+$Oremus
+Boże, który dzień dzisiejszy uczyniłeś chwalebnym przez narodziny błogosławionego Jana, daj ludowi Twemu łaskę radości duchowych, a dusze wszystkich wiernych skieruj na drogę zbawienia.
+$Per Dominum
 
 [Lectio Prima]
 !Iz 49:7
@@ -297,25 +312,3 @@ R. Bowiem ręka Pańska z niem jest.
 
 [Ant 3]
 Dziecię, * które nam się narodziło, więcej niż prorokiem jest, albowiem ten jest, o którym Zbawiciel mówił: Między narodzonymi z niewiast nie powstał większy nad Jana Chrzciciela.
-
-[Octava 1]
-!Wspominamy Oktawę Św. Jana Chrzciciela
-Ant. A gdy Zacharjasz * wszedł do świątyni Pańskiej ukazał mu się Archanioł Gabrjel, stojąc po prawej stronie ołtarza kadzenia.
-_
-V. Był człowiek posłany od Boga.
-R. Któremu imię było Jan.
-_
-$Oremus
-Boże, który dzień dzisiejszy uczyniłeś chwalebnym przez narodziny błogosławionego Jana, daj ludowi Twemu łaskę radości duchowych, a dusze wszystkich wiernych skieruj na drogę zbawienia.
-$Per Dominum
-
-[Octava 2]
-!Wspominamy Oktawę Św. Jana Chrzciciela
-Ant. Otworzyły się * usta Zachariasza, i prorokował, mówiąc: Błogosławiony Pan, Bóg Izraelski.
-_
-V. Oto dziecię, wielkie przed Panem.
-R. Bowiem ręka Pańska z niem jest.
-_
-$Oremus
-Boże, który dzień dzisiejszy uczyniłeś chwalebnym przez narodziny błogosławionego Jana, daj ludowi Twemu łaskę radości duchowych, a dusze wszystkich wiernych skieruj na drogę zbawienia.
-$Per Dominum

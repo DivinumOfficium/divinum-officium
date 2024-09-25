@@ -1,32 +1,12 @@
 [Rank]
 S. Petri ad Vincula;;Duplex majus;;4;;ex C1
 
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-
 [Ant Vespera]
 El rey Herodes * mandó prender también a Pedro; una vez prendido, lo metió en la cárcel, con la intención de presentarlo al pueblo pasadas las fiestas de Pascua.
 Mientras Pedro * estaba en la cárcel bien custodiado, la Iglesia oraba insistentemente a Dios por él.
 Dijo el Ángel * a Pedro: Envuélvete en el manto y sígueme.
 Envió el Señor * a su Ángel, y me libró de la mano de Herodes, aleluya.
 Tú eres Pedro, * y sobre esta piedra edificaré mi Iglesia.;;116
-
-[HymnusM Vespera]
-v. Desprendiéndose las cadenas del Apóstol milagrosamente
-queda libre por el poder de Cristo,
-este pastor y director de sus ovejas
-que las encamina a los pastos y sagradas fuentes de vida,
-librándolas de los lobos.
-_
-Por toda la eternidad tenga gloria el Padre,
-y cantemos a ti, oh eterno Hijo,
-goza tú también, soberano Espíritu,
-del honor y la acción de gracias,
-sea ensalzada la Santísima Trinidad por los siglos.
-Amén.
 
 [Hymnus Vespera]
 v. Desprendiéndose las cadenas del Apóstol milagrosamente
@@ -42,11 +22,19 @@ del honor y la acción de gracias,
 sea ensalzada la Santísima Trinidad por los siglos.
 Amén.
 
-[Versum 1]
-@Sancti/02-22
-
-[Ant 1]
-@Sancti/02-22
+[HymnusM Vespera]
+v. Desprendiéndose las cadenas del Apóstol milagrosamente
+queda libre por el poder de Cristo,
+este pastor y director de sus ovejas
+que las encamina a los pastos y sagradas fuentes de vida,
+librándolas de los lobos.
+_
+Por toda la eternidad tenga gloria el Padre,
+y cantemos a ti, oh eterno Hijo,
+goza tú también, soberano Espíritu,
+del honor y la acción de gracias,
+sea ensalzada la Santísima Trinidad por los siglos.
+Amén.
 
 [Oratio]
 Oh Dios, que al bienaventurado Pedro Apóstol, libre de las ligaduras, hiciste que saliese ileso; te suplicamos que nos libres de las ataduras de nuestros pecados, y propicio ahuyentes de nosotros todos los males.
@@ -89,7 +77,7 @@ De los Hechos de los Apóstoles
 !Act 12:9-11
 9 Y salió en pos de él. No sabía Pedro si era realidad lo que el ángel hacía; más bien le parecía que fuese una visión. 
 10 Atravesando la primera y la segunda guardia, llegaron a la puerta de hierro que conduce a la ciudad. La puerta se les abrió por sí misma, y salieron y avanzaron por una calle, desapareciendo luego el ángel. 
-11 Entonces Pedro, vuelto en sí, dijo: Ahora me doy cuenta de que realmente el Señor ha enviado su ángel y me ha arrancado de las manos de Herodes y de toda la expectación del pueblo judío. 
+11 Entonces Pedro, vuelto en sí, dijo: Ahora me doy cuenta de que realmente el Señor ha enviado su ángel y me ha arrancado de las manos de Herodes y de toda la expectación del pueblo judío.
 
 [Responsory3]
 @Sancti/02-22
@@ -113,6 +101,10 @@ La fiesta que en este día celebraban los gentiles en honor de sus celebridades 
 @Sancti/02-22:Responsory4
 &Gloria
 R. Por esto te ha confiado las llaves del reino de los cielos.
+
+[Lectio94]
+Bajo el reinado de Teodosio, el Joven, su mujer Eudoxia vino para cumplir un voto a Jerusalén donde recibió muchos presentes, entre ellos, una cadena de hierro ornamentada con oro y pedrerías, la cual, según se decía, era la que sirvió para encadenar a Pedro, por orden de Herodes. La emperatriz, después de venerar piadosamente la reliquia, la mandó a Roma para su hija Eudoxia, que la entregó al Pontífice. Este, a su vez, mostró a Eudoxia otra cadena con la que había sido atado el mismo apóstol en tiempo del emperador Nerón. Al comparar el Pontífice la cadena romana con la que había sido traída de Jerusalén, se juntaron ambas tan perfectamente, que no parecieron sino una sola cadena fabricada por el mismo operario. Y tal veneración granjeó este milagro a aquellos hierros sagrados que, con el nombre de San Pedro en las cadenas, fue dedicada la iglesia que Eudoxia había levantado en el Esquilino. En memoria de esta dedicación, fue instituida una fiesta en las calendas de agosto.
+&teDeum
 
 [Lectio7]
 Lectura del Santo Evangelio según San Mateo
@@ -144,33 +136,11 @@ Sermón de San Gregorio Nacianceno.
 [Ant Laudes]
 @:Ant Vespera:s/;;116//
 
-[Capitulum Laudes]
-@Sancti/06-29
-
 [Hymnus Laudes]
 @Sancti/02-22
-
-[Versum 2]
-@Sancti/02-22:Versum 1
-
-[Ant 2]
-@Sancti/02-22
-
-[Lectio Prima]
-@Sancti/06-29
-
-[Capitulum Sexta]
-@Sancti/06-29
-
-[Capitulum Nona]
-@:Lectio Prima
 
 [Ant Vespera 3]
 @:Ant Vespera:s/\./_;;109/s s/\./_;;112/ s/\./_;;115/ s/\./_;;125/ s/116/138/ s/_/./g
 
 [Ant 3]
 Rompe, * Pedro, las cadenas de tierra, según lo ordena Dios, y se manifestarán los reinos celestiales a sus santos.
-
-[Lectio94]
-Bajo el reinado de Teodosio, el Joven, su mujer Eudoxia vino para cumplir un voto a Jerusalén donde recibió muchos presentes, entre ellos, una cadena de hierro ornamentada con oro y pedrerías, la cual, según se decía, era la que sirvió para encadenar a Pedro, por orden de Herodes. La emperatriz, después de venerar piadosamente la reliquia, la mandó a Roma para su hija Eudoxia, que la entregó al Pontífice. Este, a su vez, mostró a Eudoxia otra cadena con la que había sido atado el mismo apóstol en tiempo del emperador Nerón. Al comparar el Pontífice la cadena romana con la que había sido traída de Jerusalén, se juntaron ambas tan perfectamente, que no parecieron sino una sola cadena fabricada por el mismo operario. Y tal veneración granjeó este milagro a aquellos hierros sagrados que, con el nombre de San Pedro en las cadenas, fue dedicada la iglesia que Eudoxia había levantado en el Esquilino. En memoria de esta dedicación, fue instituida una fiesta en las calendas de agosto.
-&teDeum

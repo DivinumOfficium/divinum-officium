@@ -1,16 +1,8 @@
 [Rank]
 In Conceptione Immaculata Beatæ Mariæ Virginis;;Duplex I classis cum octava communi;;6.5;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Conceptione Immaculata Beatæ Mariæ Virginis;;Duplex I classis;;6.01;;ex C11
-
-[Rule]
-ex C11;
-Psalmi Dominica
-9 lectiones;
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
 
 [Ant Vespera]
 ¡Qué bella eres * María, sin mancha en tu concepción!;;109
@@ -64,16 +56,22 @@ Amén.
 Admirable es * tu nombre, oh Señor, en toda la tierra, porque en la Virgen María te preparaste una digna morada.;;8
 En el sol puso * Dios su tabernáculo.;;18
 En su Concepción * María fue bendecida por el Señor, y recibió la misericordia de Dios su Salvador.;;23
-V. Dios omnipotente me ciñó de fortaleza. 
-R. E hizo que mi conducta fuese sin mancilla.
 La gracia ha sido derramada * en su Concepción, y apareció hermosa entre las hijas de los hombres.;;44
 La ayudó Dios * desde los primeros albores del día; el Altísimo santificó su morada.;;45
 Gloriosas cosas han sido dichas de ti, * ciudad de Dios; el Señor te levantó sobre los montes santos.;;86
-V. En esto he conocido que me has amado.
-R. En que no tendrá mi enemigo que holgarse a costa mía.
 La santidad y la magnificencia * resplandecen en su Concepción; anunciad a todos los pueblos su gloria.;;95
 Alegraos todos * en el Señor: y celebrad la grandeza de su santidad.;;96
 El Señor ha hecho conocer su obra; * en presencia de los pueblos ha revelado la gloria de su Madre.;;97
+
+[Nocturn 1 Versum]
+V. Dios omnipotente me ciñó de fortaleza. 
+R. E hizo que mi conducta fuese sin mancilla.
+
+[Nocturn 2 Versum]
+V. En esto he conocido que me has amado.
+R. En que no tendrá mi enemigo que holgarse a costa mía.
+
+[Nocturn 3 Versum]
 V. Te ensalzaré, Señor, porque me has tomado bajo tu protección.
 R. Y has hecho que no se holgasen mis enemigos a costa mía.
 
@@ -83,8 +81,8 @@ Del Libro del Génesis
 1 Pero la serpiente, la más astuta de cuantas bestias del campo hiciera el Señor Dios, dijo a la mujer: “¿Conque os ha mandado Dios que no comáis de los árboles todos del paraíso?” 
 2 Y respondió la mujer a la serpiente: “Del fruto de los árboles del paraíso comemos, 
 3 pero del fruto del que está en medio del paraíso nos ha dicho Dios: “No comáis de él, ni lo toquéis siquiera, no vayáis a morir.” 
-4 Y dijo la serpiente a la mujer: “No, no moriréis;" 
-5 es que sabe Dios que el día en que de él comáis se os abrirán los ojos y seréis como dioses, conocedores del bien y del mal.” 
+4 Y dijo la serpiente a la mujer: “No, no moriréis;” 
+5 es que sabe Dios que el día en que de él comáis se os abrirán los ojos y seréis como dioses, conocedores del bien y del mal.”
 
 [Responsory1]
 R. El pecado entró en el mundo por un solo hombre, en el cual todos pecaron. 
@@ -185,16 +183,10 @@ R. Porque aquel que es poderoso ha obrado en mí grandes cosas, y su nombre es s
 Reviste espléndidamente a los sacerdotes de justicia y de los sentimientos de una fe probada, pura y sincera. A los príncipes ortodoxos para los cuales eres, con preferencia al esplendor de la púrpura o del oro y de las margaritas y piedras preciosas, la diadema, el manto real y la gloria más sólida, dirígeles en su gobierno tranquila y prósperamente. Abate y sujeta a las naciones infieles que blasfeman contra ti y contra el Dios nacido de ti, y confirma en la fe a sus pueblos, a fin de que perseveren, según el precepto de Dios, en la obediencia y en una suave dependencia. Corona con el honor de la victoria a esta ciudad que te está consagrada, la cual te considera como su torre y fundamento. Guarda rodeándola de fortaleza, la morada de Dios; conserva siempre el decoro del templo; libra a los que te alaban de todo peligro y congoja de espíritu; da la libertad a los esclavos; sé el alivio de los caminantes privados de refugio y de todo auxilio. Alarga tu mano auxiliadora a todo el universo, a fin de que celebremos tus fiestas con gozo y exultación, de que todas terminen, como ésta que estamos celebrando, dejándonos frutos espléndidos, en Jesucristo, Rey del universo y nuestro verdadero Dios, a quien sea la gloria y el poder juntamente con el Padre, el santo principio de la vida, y con el Espíritu, coeterno, consustancial y que reina con Él, ahora y siempre y por los siglos de los siglos. Amén.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
 [Capitulum Laudes]
 !Prov 8:22-24
 v. El Señor me estableció al principio de sus tareas, al comienzo de sus obras antiquísimas; en un tiempo remotísimo fui formada, antes de comenzar la tierra. Antes de los abismos fui engendrada.
 $Deo gratias
-
-[Versum 2]
-@:Versum 1
 
 [Ant 2]
 El Señor dijo * a la serpiente: pondré enemistades entre ti y la mujer, entre tu descendencia y la suya: ella te aplastará la cabeza. Aleluya.
@@ -203,50 +195,38 @@ El Señor dijo * a la serpiente: pondré enemistades entre ti y la mujer, entre 
 !Apo 12:1
 v. Y apareció en el cielo un gran signo: Una mujer revestida de sol, con la luna bajo sus pies, y sobre su cabeza una corona de doce estrellas.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Dios omnipotente * Me ciñe de valor. 
 R. Dios omnipotente * Me ciñe de valor. 
 V. Y me enseña un camino perfecto. 
 R. Me ciñe de valor.
 &Gloria
 R. Dios omnipotente * Me ciñe de valor. 
-_
-V. En esto conozco que me amas.
-R. En que mi enemigo no triunfa de mí.
 
 [Capitulum Sexta]
 !Ezec 44:2-3
 v. Esta puerta estará cerrada y no se abrirá a ningún varón, porque ha entrado el Señor, Dios de Israel. Estará reservada para el Príncipe, y Él mismo dominará en ella.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. En esto conozco * Que me amas. 
 R. En esto conozco * Que me amas. 
 V. En que mi enemigo no  triunfa de mí. 
 R. Que me amas. 
 &Gloria
-R. En esto conozco * Que me amas. 
-_
-V. Te ensalzaré, Señor, porque me has librado.
-R. Y no has dejado que mis enemigos se rían de mí.
+R. En esto conozco * Que me amas.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Te ensalzaré, Señor, * Porque me has librado. 
 R. Te ensalzaré, Señor, * Porque me has librado. 
 V. Y no has dejado que mis enemigos se rían de mí. 
 R. Porque me has librado. 
 &Gloria
 R. Te ensalzaré, Señor, * Porque me has librado. 
-_
+
+[Versum Nona]
 V. Tu Inmaculada Concepción, Virgen Madre de Dios.
 R. Anuncia la alegría del mundo.
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Hoy ha brotado * un renuevo del tronco de Jesé. Hoy María ha sido concebida sin mancha de pecado. Hoy ha sido aplastada por ella la cabeza de la serpiente. Aleluya.

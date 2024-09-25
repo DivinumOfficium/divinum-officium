@@ -1,19 +1,8 @@
 [Rank]
 Ss. Septem Fundatorum Ordinis Servorum B. M. V.;;Duplex;;3.1;;vide C5
 
-[Rank](rubrica 1960)
-Ss. Septem Fundatorum Ordinis Servorum B. M. V.;;Duplex;;3;;vide C5
-
-[RankNewcal]
+[Rank] (rubrica innovata)
 Ss. Septem Fundatorum Ordinis Servorum B. M. V.;;Duplex optional;;2;;vide C5
-
-[Rule]
-vide C5;;
-9 lectiones
-
-[Oratio]
-Señor Jesucristo, que para honrar de nuevo la memoria de los dolores de tu santísima Madre, dotaste a tu Iglesia por medio de siete bienaventurados Padres con la nueva familia de sus Siervos, concédenos propicio que de tal suerte nos asociemos a sus dolores, que igualmente disfrutemos de sus goces.
-$Qui vivis
 
 [Versum 1]
 V. Estos son los hombres de bien, cuyo recuerdo dura por siempre.
@@ -21,6 +10,10 @@ R. Su heredad y su gloria no se olvidarán.
 
 [Ant 1]
 Su nombre * permanece para siempre. La gloria de los santos pasa de generación en generación.
+
+[Oratio]
+Señor Jesucristo, que para honrar de nuevo la memoria de los dolores de tu santísima Madre, dotaste a tu Iglesia por medio de siete bienaventurados Padres con la nueva familia de sus Siervos, concédenos propicio que de tal suerte nos asociemos a sus dolores, que igualmente disfrutemos de sus goces.
+$Qui vivis
 
 [Hymnus Matutinum]
 v. Mientras la guerra extendía sus estragos, 
@@ -68,6 +61,10 @@ Cuán grato fue a Dios este género de vida, lo mostró por medio de milagros. P
 [Lectio6]
 Los santos varones, a los que se juntaron pronto varios compañeros, recorrieron las ciudades y pueblos de Italia, principalmente los de la Toscana, predicando en todas partes a Jesucristo crucificado, componiendo las discordias civiles y conduciendo a la virtud a muchas almas que andaban apartadas. Edificaron con sus predicaciones a Italia, a Francia, Alemania y Polonia. Finalmente, habiendo difundido copiosamente el buen olor de Cristo, ilustres por sus milagros, el Señor los recibió en su gloria. Y así como la religión y la verdadera fraternidad les unió durante la vida en un común amor, también un mismo sepulcro los guardó después de su muerte, a la cual sucedió una inmediata veneración por todas partes. Los Papas Clemente XI y Benito XIII, movidos por esta veneración, confirmaron el culto que se les tributó durante siglos. Por último, León XIII, tras aprobar los milagros que el Señor se había dignado obrar por su intercesión, y haberlos declarado Venerables, permitiendo que fueran invocados en común, en el año 50º de su sacerdocio, los inscribió en el número de los santos y ordenó que cada año se celebrara en toda la Iglesia Oficio y Misa en su honor.
 
+[Lectio94]
+En el siglo XIII, siete nobles florentinos: Bonfilio Monaldio, Bonajunta Maneto, Maneto Antelense, Amideo de Amadeis, Uguccio Uguccioni, Sosteneo de Sosteneis y Alejo Falconiero, se retiraron a una pequeña choza en el campo para meditar sobre la Pasión de Cristo y los dolores de su Madre afligida. La Santísima Virgen se les apareció el Viernes Santo con un hábito oscuro que debían vestir; y les hizo saber que sería muy grato para Ella si fundaran una nueva orden que reverenciara y fomentara el recuerdo de las penas que había sufrido mientras estaba debajo de la Cruz del Señor. Entonces estos hombres santos, con la ayuda de San Pedro Mártir de la Orden de Predicadores, fundaron la Orden de los Siervos de la Santísima Virgen. Con sus compañeros comenzaron a andar por las ciudades y pueblos, por todas partes predicando a Cristo crucificado, de palabra y con el ejemplo. Y, como un amor los había unido en una verdadera hermandad durante la vida, una tumba los recibió cuando murieron, y fueron venerados juntos por la devoción popular. Clemente XI y Benedicto XIII, confirmaron esta veneración común que se les había dado, y León XIII los inscribió entre los santos.
+&teDeum
+
 [Lectio7]
 @Commune/C1:Lectio7
 
@@ -76,10 +73,6 @@ Los santos varones, a los que se juntaron pronto varios compañeros, recorrieron
 
 [Lectio9]
 @Commune/C1:Lectio9
-
-[Lectio94]
-En el siglo XIII, siete nobles florentinos: Bonfilio Monaldio, Bonajunta Maneto, Maneto Antelense, Amideo de Amadeis, Uguccio Uguccioni, Sosteneo de Sosteneis y Alejo Falconiero, se retiraron a una pequeña choza en el campo para meditar sobre la Pasión de Cristo y los dolores de su Madre afligida. La Santísima Virgen se les apareció el Viernes Santo con un hábito oscuro que debían vestir; y les hizo saber que sería muy grato para Ella si fundaran una nueva orden que reverenciara y fomentara el recuerdo de las penas que había sufrido mientras estaba debajo de la Cruz del Señor. Entonces estos hombres santos, con la ayuda de San Pedro Mártir de la Orden de Predicadores, fundaron la Orden de los Siervos de la Santísima Virgen. Con sus compañeros comenzaron a andar por las ciudades y pueblos, por todas partes predicando a Cristo crucificado, de palabra y con el ejemplo. Y, como un amor los había unido en una verdadera hermandad durante la vida, una tumba los recibió cuando murieron, y fueron venerados juntos por la devoción popular. Clemente XI y Benedicto XIII, confirmaron esta veneración común que se les había dado, y León XIII los inscribió entre los santos.
-&teDeum
 
 [Capitulum Laudes]
 !1 Pe 4:13
@@ -156,9 +149,6 @@ comunícanos tu santa fortaleza,
 para que podamos imitar felizmente 
 los ejemplos de estos nuestros Padres.
 Amén.
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Su nombre * permanece para siempre. La gloria de los santos pasa de generación en generación.

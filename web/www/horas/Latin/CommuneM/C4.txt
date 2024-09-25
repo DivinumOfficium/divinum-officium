@@ -13,14 +13,10 @@ Sint lumbi vestri * præcíncti et lucérnæ ardéntes in mánibus vestris;;256;
 
 [Ant Matutinum]
 @Commune/C4::1-2
-@Commune/C4::6-8
+@Commune/C4::4-6
 @:AntMatutinumM:1
-@Commune/C4::4-5
-@Commune/C4::11-13
-@:AntMatutinumM:2-4
-@Commune/C4::9-10
-@:AntMatutinumM:5
-@Commune/C4::14-15
+@Commune/C4::7-9
+@:AntMatutinumM:2-5
 
 [Lectio1]
 @Commune/C4:Lectio1:s/-7/-4/ s/5 .*//s
@@ -100,15 +96,6 @@ R. Elégit te Dóminus sacerdótem sibi
 * Ad sacrificándum ei hóstiam laudis.
 V. Ímmola Deo sacrifícium laudis, et redde Altíssimo vota tua.
 R. Ad sacrificándum ei hóstiam laudis.
-
-[Responsory TertiaM]
-@Commune/C4:Versum 1
-
-[Responsory SextaM]
-@Commune/C4:Responsory Tertia:8-9
-
-[Responsory NonaM]
-@Commune/C4:Responsory Sexta:8-9
 
 [Ant Vespera 3]
 @Commune/C4:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//

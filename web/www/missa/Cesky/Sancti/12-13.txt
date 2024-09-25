@@ -1,10 +1,6 @@
 [Rank]
 S. Luciae Virginis et Martyris;;Duplex;;3;;ex C6b
 
-[Rule]
-vide C6b;
-Gloria
-
 [Comment]
 # Sv. Lucie, panny a mučednice
 ! 3 třídy
@@ -12,7 +8,7 @@ Gloria
 ✝ 304 v Syrakusách
 
 [Introitus]
-@Commune/C6b:Introitus
+@Commune/C6b
 
 [Oratio]
 @Commune/C6b:Oratio:s/N\./Lucie/
@@ -20,9 +16,6 @@ Gloria
 [Commemoratio Oratio]
 !Pro Octava Conceptionis Immaculatæ.
 @Sancti/12-08:Oratio
-
-[Lectio]
-@Commune/C6b:Lectio
 
 [Graduale]
 !Ž 44,8
@@ -33,7 +26,7 @@ Aleluja, aleluja.
 V. Rozlita je milost na rtech tvých, proto požehnal ti Bůh na věky, aleluja.
 
 [Evangelium]
-@Commune/C6a:Evangelium
+@Sancti/12-13::Evangelium
 
 [Offertorium]
 !Ž 44,15-16

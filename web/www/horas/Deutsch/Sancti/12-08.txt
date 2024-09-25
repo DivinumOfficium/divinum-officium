@@ -1,16 +1,8 @@
 [Rank]
 Fest der unbefleckten Empfängnis der heiligen Jungfrau Maria;;Duplex I classis cum octava communi;;6.5;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Fest der unbefleckten Empfängnis der heiligen Jungfrau Maria;;Duplex I classis;;6;;ex C11
-
-[Rule]
-ex C11;
-Psalmi Dominica
-9 lectiones;
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
 
 [Ant Vespera]
 Ganz schön * bist du, Maria, und die vererbte Makel ist nicht in dir.;;109
@@ -64,16 +56,22 @@ Amen.
 Ganz wunderbar ist * deine Majestät im ganzen Weltall, da du in der Jungfrau Maria dir eine würdige Wohnung bereitet hast.;;8
 In einer Sonne hat * Gott seine Wohnung aufgeschlagen.;;18
 Bei ihrer Empfängnis * hat Maria Segen und Erbarmen erhalten von Gott, dem Urquell ihres Heiles.;;23
-V. Gott der Allmächtige hat mich mit Siegeskraft ausgerüstet.
-R. Und hat vor allem Makel meinen Lebensweg behütet.
 In einem Strom ergoss sich * die Gnade in ihrer Empfängnis, und sie trat als eine Schönheit auf unter den Menschentöchtern.;;44
 Es hat sich ihrer angenommen * Gott am frühesten Morgen, es hat der Allerhöchste sich geheiligt seine Wohnung;;45
 Gar Herrliches * ist über dich gesagt, o Stadt Gottes, der Herr hat dich gegründet auf heiligen Bergen.;;86
-V. Daran hab ich erkannt, dass du mich gern hast.
-R. Dass du dem Feinde über mich nicht den Triumph gönnst.
 Heiligung und große Pracht * geht auf in ihrer Empfängnis, verkündet unter allen Völkern ihre Herrlichkeit.;;95
 Freut euch alle * über den Herrn, und preist das Denkmal seiner Heiligkeit.;;96
 Es hat der Herr bekundet, * was er schaffen kann, vor allen Völkern hat er klar gezeigt die Herrlichkeit seiner Mutter.;;97
+
+[Nocturn 1 Versum]
+V. Gott der Allmächtige hat mich mit Siegeskraft ausgerüstet.
+R. Und hat vor allem Makel meinen Lebensweg behütet.
+
+[Nocturn 2 Versum]
+V. Daran hab ich erkannt, daß du mich gern hast.
+R. Daß du dem Feinde über mich nicht den Triumph gönnst.
+
+[Nocturn 3 Versum]
 V. Ich will dich preisen, Herr, da du dich meiner angenommen.
 R. Und da du meinen Feinden nicht gegönnt, sich über mich zu freuen.
 
@@ -125,22 +123,7 @@ R. Honig und Milch ist unter ihrer Zunge.
 [Lectio4]
 Predigt vom heiligen Priester Hieronymus.
 !Predigt über Mariä Aufnahme.
-Wie schön und wie erhaben die heilige und glorienreiche, stets unversehrte Jungfrau Maria ist, wird ~
-vom Engel im Auftrag Gottes erklärt, wenn gesagt wird: Sei gegrüßt, Gnadenvolle, der Herr ist mit ~
-dir, du bist die Preiswürdigste unter den Frauen. Mit solchen Gaben musste nämlich die Jungfrau ~
-wie mit Pfändern ausgestattet werden, auf dass sie voll von Gnaden sei, sie, die dem Himmel ~
-Herrlichkeit verschafft, der Erde Gott und den Frieden gewährt, den Völkern den Glauben, den Lastern ~
-das Ende, dem Leben die rechte Ordnung, dem Verhalten der Menschen die Anleitung verschafft hat. ~
-Und sie wird in richtiger Weise voll genannt, weil bei anderen teilweise Mitteilung geschieht, ~
-in Maria aber die ganze Fülle der Gnade sich eingesenkt hat. Sie ist in wahrer Weise voll; ~
-denn wenn wir auch an das Vorhandensein der Gnade in den alten Vätern und Propheten glauben, ~
-so war es doch nicht in dieser Fülle; in Maria drang aber die Fülle die ganzen Gnade, die in ~
-Christus ist, hinein, wenn auch in anderer Weise. Und deshalb sagt er: Du bist die Preiswürdigste ~
-unter den Frauen, d.h. mehr preiswürdig als alle Frauen. Und dadurch hat alles das, was an Fluch ~
-durch Eva eingedrungen ist, der durch Maria gebrachte Segen weggeräumt. Von ihr sagt Salomon ~
-im Hohenlied, gleichsam um sie zu loben: "Komm, du mein Täubchen, du mein Liebling ohne Makel. ~
-Denn schon ist vorbei die Winterzeit, vorüber ist der Regen und er ist verschwunden." Und dann ~
-sagt er: "Komm vom Libanon, komm, du sollst eine Krone erhalten."
+Wie schön und wie erhaben die heilige und glorienreiche, stets unversehrte Jungfrau Maria ist, wird  vom Engel im Auftrag Gottes erklärt, wenn gesagt wird: Sei gegrüßt, Gnadenvolle, der Herr ist mit  dir, du bist die Preiswürdigste unter den Frauen. Mit solchen Gaben musste nämlich die Jungfrau  wie mit Pfändern ausgestattet werden, auf dass sie voll von Gnaden sei, sie, die dem Himmel  Herrlichkeit verschafft, der Erde Gott und den Frieden gewährt, den Völkern den Glauben, den Lastern  das Ende, dem Leben die rechte Ordnung, dem Verhalten der Menschen die Anleitung verschafft hat.  Und sie wird in richtiger Weise voll genannt, weil bei anderen teilweise Mitteilung geschieht,  in Maria aber die ganze Fülle der Gnade sich eingesenkt hat. Sie ist in wahrer Weise voll;  denn wenn wir auch an das Vorhandensein der Gnade in den alten Vätern und Propheten glauben,  so war es doch nicht in dieser Fülle; in Maria drang aber die Fülle die ganzen Gnade, die in  Christus ist, hinein, wenn auch in anderer Weise. Und deshalb sagt er: Du bist die Preiswürdigste  unter den Frauen, d.h. mehr preiswürdig als alle Frauen. Und dadurch hat alles das, was an Fluch  durch Eva eingedrungen ist, der durch Maria gebrachte Segen weggeräumt. Von ihr sagt Salomon  im Hohenlied, gleichsam um sie zu loben: „Komm, du mein Täubchen, du mein Liebling ohne Makel.  Denn schon ist vorbei die Winterzeit, vorüber ist der Regen und er ist verschwunden.“ Und dann  sagt er: „Komm vom Libanon, komm, du sollst eine Krone erhalten.“
 
 [Responsory4]
 R. Ich bin hervorgegangen aus dem Sinn des Allerhöchsten, als Erstgebildete vor allem, was geschaffen ist; ich habe es bewirkt im Himmel, dass aufgegangen ist die Sonne, die nie untergeht.
@@ -149,7 +132,7 @@ V. Gott hat mich nämlich geschaffen in einem ihm gefallenden Zustand, und er ha
 R. Noch waren nicht die Abgründe, und ich hatte schon Leben.
 
 [Lectio5]
-Nicht mit Unrecht also heißt es von ihr, dass sie vom Libanon kommt, da das Wort "Libanon" übersetzt wird mit Helligkeit. Sie war doch erhellt mit vielen Vorzügen, die Verdienste begründeten, und den weißen Schnee an Glanz übertreffend, stellte sie infolge der ihr vom Heiligen Geiste gewährten Gaben die Einfalt der Taube in jeder Hinsicht dar, da alles, was in ihr geschah, nur Reinheit und Einfalt, alles nur Echtheit und Lieblichkeit war; alles "Erbarmen und Gerechtigkeit, die vom Himmel herabschaute"; und sie war deshalb makellos, weil sie in nichts entstellt war. Sie hat nämlich "ein männliches Wesen in ihrem Schoß umschlossen", wie der heilige Jeremias bezeugt, und dieses nicht anderswoher empfangen. "Es wird", so sagt er, "der Herr etwas Neues schaffen; und eine Frau wird ein männliches Wesen umschließen." Es war wirklich etwas Neues und eine alle Neuigkeiten überragende Neuigkeit an Wunderwerken, als Gott - den die Welt nicht tragen und den niemand sehen kann, sodass er lebend bleiben könnte - in einer Weise in den gastlichen Raum des Schoßes eingetreten ist, ohne den körperlichen Verschluss wahrzunehmen; und als er in der Weise getragen wurde, dass er als ganzer Gott darin gegenwärtig war; und als er so daraus hervortrat, dass - wie Ezechiel bekennt - "die Pforte ganz und gar verschlossen blieb". Darum heißt es in demselben Hohenlied von ihr: "Ein verschlossener Garten, eine versiegelte Quelle bist du; was von dir ausgeht, ist wie ein Lustgarten". Sie ist wirklich ein Lustgarten, in dem alle Arten von Blumen eingesät sind und alle Wohlgerüche von Tugenden; und so verschlossen, dass er unfähig ist, durch irgendwelche trügerischen Überfälle verletzt oder entstellt zu werden. Also eine Quelle, die versiegelt ist mit dem Siegel der ganzen Dreieinigkeit.
+Nicht mit Unrecht also heißt es von ihr, dass sie vom Libanon kommt, da das Wort „Libanon“ übersetzt wird mit Helligkeit. Sie war doch erhellt mit vielen Vorzügen, die Verdienste begründeten, und den weißen Schnee an Glanz übertreffend, stellte sie infolge der ihr vom Heiligen Geiste gewährten Gaben die Einfalt der Taube in jeder Hinsicht dar, da alles, was in ihr geschah, nur Reinheit und Einfalt, alles nur Echtheit und Lieblichkeit war; alles „Erbarmen und Gerechtigkeit, die vom Himmel herabschaute“; und sie war deshalb makellos, weil sie in nichts entstellt war. Sie hat nämlich „ein männliches Wesen in ihrem Schoß umschlossen“, wie der heilige Jeremias bezeugt, und dieses nicht anderswoher empfangen. „Es wird“, so sagt er, „der Herr etwas Neues schaffen; und eine Frau wird ein männliches Wesen umschließen.“ Es war wirklich etwas Neues und eine alle Neuigkeiten überragende Neuigkeit an Wunderwerken, als Gott - den die Welt nicht tragen und den niemand sehen kann, sodass er lebend bleiben könnte - in einer Weise in den gastlichen Raum des Schoßes eingetreten ist, ohne den körperlichen Verschluss wahrzunehmen; und als er in der Weise getragen wurde, dass er als ganzer Gott darin gegenwärtig war; und als er so daraus hervortrat, dass - wie Ezechiel bekennt - „die Pforte ganz und gar verschlossen blieb“. Darum heißt es in demselben Hohenlied von ihr: „Ein verschlossener Garten, eine versiegelte Quelle bist du; was von dir ausgeht, ist wie ein Lustgarten“. Sie ist wirklich ein Lustgarten, in dem alle Arten von Blumen eingesät sind und alle Wohlgerüche von Tugenden; und so verschlossen, dass er unfähig ist, durch irgendwelche trügerischen Überfälle verletzt oder entstellt zu werden. Also eine Quelle, die versiegelt ist mit dem Siegel der ganzen Dreieinigkeit.
 
 [Responsory5]
 R. Nichts Verunreinigtes ist in sie eingedrungen;
@@ -200,21 +183,10 @@ R. Denn Großes hat an mir getan, der mächtig ist und dessen Majestät so heili
 Die Priester statte in glanzvollster Weise mit Rechtschaffenheit aus und mit Freude über einen erprobten und fehlerlosen und echten Glauben. Den rechtgläubigen Fürsten, die statt allen Glanzes von Purpur und Gold und statt aller kostbaren Perlen und Edelsteine dich als Zier und Umkleidung und beständigen Schmuck ihres Reiches gewählt haben, sei für ihr Zepter zum ruhigen und glücklichen Zustand eine Lenkerin. Die ungläubigen Völker, die dich und den von dir geborenen Gott schmähen, bring ihnen zur Unterwerfung; und das ihnen untergebene Volk befestige darin, dass es dem Gebote Gottes gemäß im willigen Gehorsamsdienst aushalte. Diese deine Stadt, die dich gleichsam als Turm und als Fundament hat, kröne mit Siegestriumphen, und gürte mit Kraft und beschirme die Wohnung Gottes; dem Tempel sichere ständig seine Zier; deine dich lobenden Anhänger befreie von allen Gefahren und von aller Seelenangst; den in Gefangenschaft Gehaltenen gewähre Erlösung, den Heimlosen, die ein Dach oder irgendeinen Schutz nicht haben, zeige dich als Trösterin. Der ganzen Welt reiche deine hilfreiche Hand entgegen, damit wir in Freude und Jubel deine Festlichkeiten zugleich mit dieser gegenwärtigen Feier, die wir halten, mit glanzvollen Erfolge begehen, im Hinblick auf Jesus Christus, unseren König und wahren Gott, dem Ehre und Triumph dargebracht werde in Gemeinschaft mit dem heiligen Urgrund alles Lebens, dem Vater, und dem ihm gleich ewigen und wesensgleichen und mitherrschenden Geiste, jetzt und immer und in alle Ewigkeit. Amen.
 &teDeum
 
-[Ant Laudes]
-Ganz schön * bist du, Maria, und die vererbte Makel ist nicht in dir.
-Dein Kleid * ist glänzend wie der Schnee und dein Gesicht ist wie die Sonne.
-O du Ruhm Jerusalems, * du Freude Israels, du Ehres unseres Volkes.
-Gesegnet bist du, * Jungfrau Maria, von Gott dem Herrn, dem Allerhöchsten, mehr als alle Frauen auf der Erde.
-Zieh uns * dir nach, o unbefleckte Jungfrau, dir wollen wir nacheilen, an deiner Salben Duft uns zu erfreuen.
-
 [Capitulum Laudes]
 !Spr 8,22-24
 v. Der Herr hat mich vor sich gehabt als Grundlage seines Schaffens, ehe er etwas hervorbrachte, von jeher. Von Ewigkeit her bin ich im Amte, vor alter Zeit, ehe die Erde entstand. Noch waren nicht die Meerestiefen und ich hatte schon Leben.
 $Deo gratias
-
-[Versum 2]
-V. Die unbefleckte Empfängnis der heiligen Jungfrau Maria ist heute.
-R. Die der Schlange Haupt mit jungfräulichem Fuß zertreten.
 
 [Ant 2]
 Es sagte Gott der Herr * zur Schlange: Eine Feindschaft will ich aufrichten zwischen dir und einer Frau, zwischen deinen Anhängern und den Nachkommen jener, und sie wird dir den Kopf zertreten, alleluja.
@@ -223,52 +195,38 @@ Es sagte Gott der Herr * zur Schlange: Eine Feindschaft will ich aufrichten zwis
 !Offb 12,1
 v. Eine gewaltige Erscheinung wurde am Himmel sichtbar, eine Frau umkleidet mit dem Sonnenlicht, und der Mond zu ihren Füßen, und auf dem Haupte ein Kranz von zwölf Sternen.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Gott der Allmächtige * hat mich mit Siegeskraft ausgerüstet.
 R. Gott der Allmächtige * hat mich mit Siegeskraft ausgerüstet.
 V. Und hat vor allem Makel meinen Lebensweg behütet.
 R. Hat mich mit Siegeskraft ausgerüstet.
 &Gloria
 R. Gott der Allmächtige * hat mich mit Siegeskraft ausgerüstet.
-_
-V. Daran hab ich erkannt, dass du mich gern hast.
-R. Dass du dem Feinde über mich nicht den Triumph gönnst.
 
 [Capitulum Sexta]
 !Ez 44,2-3
 v. Diese Tür soll geschlossen bleiben, sie soll nicht geöffnet werden und kein Mann soll durch sie hindurchgehen; denn der Herr, der Gott Israels, geht durch sie hindurch. Und darum soll sie für den König geschlossen bleiben; der König selbst wird seinen Platz in ihr nehmen.
 $Deo gratias
 
-[Responsory Sexta]
-R.br. Daran hab ich erkannt, * dass du mich gern hast.
-R. Daran hab ich erkannt, * dass du mich gern hast.
-V. Dass du dem Feinde über mich nicht den Triumph gönnst.
-R. Dass du mich gern hast.
+[Responsory Breve Sexta]
+R.br. Daran hab ich erkannt, * daß du mich gern hast.
+R. Daran hab ich erkannt, * daß du mich gern hast.
+V. Daß du dem Feinde über mich nicht den Triumph gönnst.
+R. Daß du mich gern hast.
 &Gloria
-R. Daran hab ich erkannt, * dass du mich gern hast.
-_
-V. Ich will dich preisen, Herr, da du dich meiner angenommen.
-R. Und da du meinen Feinden nicht gegönnt, sich über mich zu freuen.
+R. Daran hab ich erkannt, * daß du mich gern hast.
 
-[Capitulum Nona]
-!Offb 12,1
-v. Eine gewaltige Erscheinung wurde am Himmel sichtbar, eine Frau umkleidet mit dem Sonnenlicht, und der Mond zu ihren Füßen, und auf dem Haupte ein Kranz von zwölf Sternen.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Ich will dich preisen, Herr, * da du dich meiner angenommen.
 R. Ich will dich preisen, Herr, * da du dich meiner angenommen.
 V. Und da du meinen Feinden nicht gegönnt, sich über mich zu freuen.
 R. Da du dich meiner angenommen.
 &Gloria
 R. Ich will dich preisen, Herr, * da du dich meiner angenommen.
-_
+
+[Versum Nona]
 V. Deine unbefleckte Empfängnis, o jungfräuliche Gottesmutter.
 R. Hat Freude verkündet der gesamten Welt.
-
-[Versum 3]
-V. Die unbefleckte Empfängnis der heiligen Jungfrau Maria ist heute.
-R. Die der Schlange Haupt mit jungfräulichem Fuß zertreten.
 
 [Ant 3]
 Heute ist entsprossen * die Staude aus der Wurzel Jesse, heute ist ohne Makel der Schuld Maria empfangen worden, heute ist von ihr zertreten worden das Haupt der von Alters her wirkenden Schlange, alleluja.

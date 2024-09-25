@@ -1,11 +1,6 @@
 [Rank]
 S. Gregorii VII Papæ et Confessoris;;Duplex;;3;;vide C4
 
-[Rule]
-vide C4;
-9 lectiones
-CPapaM=Urbano;
-
 [Oratio]
 Oh Dios, fortaleza de cuantos en ti esperan, que esforzaste con la virtud de la constancia para defender la libertad de la Iglesia al bienaventurado Gregorio, tu Confesor y Pontífice: concédenos que con su ejemplo e intercesión superemos valerosamente todas las contrariedades.
 $Per Dominum
@@ -30,11 +25,8 @@ Muerto Alejandro II, a pesar de su resistencia, fue elegido por unanimidad Papa 
 [Lectio6]
 Cuando celebraba los divinos oficios, algunas personas piadosas vieron cómo una paloma bajaba del cielo, se posaba sobre su hombro derecho, y, extendidas las alas, cubría su cabeza. Así se significó que, por inspiración del Espíritu Santo, y no por sabiduría humana, era guiado en el gobierno de la Iglesia. Estando sitiada Roma por los ejércitos del pérfido Enrique, por medio de la señal de la cruz apagó un incendio provocado por los enemigos. Librado de Enrique por Roberto Giscardo, capitán de los normandos, se dirigió a Montecasino, y de allí a Salerno para dedicar una iglesia en honor de San Mateo, Apóstol. Predicando un día allí, enfermó gravemente y conoció que se acercaba su muerte. Sus últimas palabras fueron: “He amado la justicia y aborrecido la iniquidad, y por esto muero en el destierro”. Muchas fueron las contradicciones que sufrió y los sabios decretos promulgados en los muchos concilios que reunió en Roma este hombre santo, vengador de los crímenes y valerosísimo defensor de la Iglesia. Después de 12 años de pontificado murió en el año 1085, siendo ilustre por sus milagros así en vida como tras su muerte. Su cuerpo está sepultado honoríficamente en la catedral de Salerno.
 
-[Lectio93]
-@Sancti/05-25o
-
 [Lectio94]
-El Papa Gregorio VII, llamado Hildebrando, nació cerca de Savona en Toscana. Se distinguió por su ciencia, santidad y en todo tipo de virtud; fue una luz brillante para toda la Iglesia de Dios. Cuando era joven, vistió el hábito religioso en el monasterio de Cluny y sirvió a Dios con tanto celo y devoción que fue elegido prior por los santos religiosos de ese monasterio. Más tarde, fue nombrado abad del monasterio de San Pablo extramuros, y luego Cardenal de la Iglesia Romana, realizando notables servicios y misiones bajo los papas León IX, Víctor II, Esteban IX, Nicolás II y Alejandro II. A la muerte de Alejandro, fue elegido por unanimidad Papa, y se destacó como el promotor y defensor más celoso de la libertad de la Iglesia, por lo que sufrió mucho; incluso tuvo que abandonar Roma. Sus últimas palabras, mientras yacía moribundo, fueron: "He amado la justicia y aborrecido la iniquidad, y por eso muero en el exilio". Fue al cielo en el año de la salvación 1085, y su cuerpo fue enterrado con honor en la Catedral de Salerno.
+El Papa Gregorio VII, llamado Hildebrando, nació cerca de Savona en Toscana. Se distinguió por su ciencia, santidad y en todo tipo de virtud; fue una luz brillante para toda la Iglesia de Dios. Cuando era joven, vistió el hábito religioso en el monasterio de Cluny y sirvió a Dios con tanto celo y devoción que fue elegido prior por los santos religiosos de ese monasterio. Más tarde, fue nombrado abad del monasterio de San Pablo extramuros, y luego Cardenal de la Iglesia Romana, realizando notables servicios y misiones bajo los papas León IX, Víctor II, Esteban IX, Nicolás II y Alejandro II. A la muerte de Alejandro, fue elegido por unanimidad Papa, y se destacó como el promotor y defensor más celoso de la libertad de la Iglesia, por lo que sufrió mucho; incluso tuvo que abandonar Roma. Sus últimas palabras, mientras yacía moribundo, fueron: “He amado la justicia y aborrecido la iniquidad, y por eso muero en el exilio”. Fue al cielo en el año de la salvación 1085, y su cuerpo fue enterrado con honor en la Catedral de Salerno.
 &teDeum
 
 [Lectio7]
@@ -46,6 +38,5 @@ El Papa Gregorio VII, llamado Hildebrando, nació cerca de Savona en Toscana. Se
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
-
+[Lectio93]
+@Sancti/05-25o

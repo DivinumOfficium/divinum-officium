@@ -1,16 +1,8 @@
 [Rank]
 Conception Immaculée de la Bienheureuse Vierge Marie;;Duplex I classis cum octava communi;;6.5;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Conception Immaculée de la Bienheureuse Vierge Marie;;Duplex I classis;;6;;ex C11
-
-[Rule]
-ex C11 ;
-Psalmi Dominica
-9 lectiones ;
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
 
 [Ant Vespera]
 Vous êtes toute belle, * ô Marie, et la tache originelle n’est pas en vous.;;109
@@ -64,16 +56,22 @@ Ainsi soit-il.
 Admirable est * votre nom, Seigneur, par toute la terre, parce qu’en la Vierge Marie, vous vous êtes préparé une demeure digne de vous.;;8
 C’est dans le soleil, * que Dieu a placé son tabernacle.;;18
 Dans sa Conception, * Marie a reçu la bénédiction du Seigneur, et la miséricorde, de Dieu son sauveur.;;23
-V. Le Dieu tout-puissant m’a ceinte de force.
-R. Et il a fait immaculée, ma voie.
 La grâce s’est répandue * en sa Conception, et elle apparut belle parmi les filles des hommes.;;44
 Dieu l’a fortifiée * le matin, dès la pointe du jour ; le Très-Haut a consacré son habitation.;;45
 De glorieuses choses * sont dites de toi, cité de Dieu : le Seigneur t’a fondée sur les montagnes saintes.;;86
-V. En ceci je reconnaîtrai que vous vous complaisez en moi.
-R. Qu’il ne jubile pas, mon ennemi, à mon sujet !
 Sainteté et magnificence * sont en sa Conception ; racontez chez tous les peuples sa gloire.;;95
 Réjouissez-vous * tous dans le Seigneur ; et chantez son souvenir sanctifiant.;;96
 Il a fait connaître, * le Seigneur, son œuvre ; aux yeux des nations, il a révélé la gloire de sa Mère..;;97
+
+[Nocturn 1 Versum]
+V. Le Dieu tout-puissant m’a ceinte de force.
+R. Et il a fait immaculée, ma voie.
+
+[Nocturn 2 Versum]
+V. En ceci je reconnaîtrai que vous vous complaisez en moi.
+R. Qu’il ne jubile pas, mon ennemi, à mon sujet !
+
+[Nocturn 3 Versum]
 V. Je vous exalterai, Seigneur, car vous m’avez pris en protection
 R. Et vous n’avez pas réjoui mes ennemis à mon sujet.
 
@@ -185,16 +183,10 @@ R. Car il m’a fait de grandes choses, le Puissant, et saint est son nom.
 Revêtez magnifiquement les prêtres de justice et inspirez-leur les transports d’une foi éprouvée, pure et sincère. Aux princes orthodoxes qui, vous préférant à l’éclat de la pourpre ou de l’or, aux perles et aux pierres précieuses, vous regardent comme leur diadème, leur manteau royal et l’honneur le plus assuré de leur royaume, accordez, sous votre direction, la paix et la prospérité ; abattez et jetez à leurs pieds les nations infidèles qui blasphèment contre vous et contre le Dieu né de vous, et affermissez le peuple soumis, en sa volonté de persévérer, selon le précepte de Dieu, dans la douce dépendance de l’obéissance. Cette cité qui est vôtre et vous regarde comme une tour et un fondement, couronnez- la du triomphe de la victoire ; et en l’environnant de force, gardez la demeure de Dieu, maintenez-y toujours la beauté du temple. Délivrez ceux qui vous louent, de tout danger et de toute angoisse d’âme ; accordez la délivrance aux captifs ; montrez-vous la consolation des voyageurs privés de gîte ou de quelqu’autre secours. Tendez au monde entier votre main secourable, afin que nous célébrions dans la joie et l’allégresse vos solennités, et que toutes, comme celle que nous venons de célébrer, se terminent splendidement dans le Christ Jésus, Roi de l’univers et notre vrai Dieu. A lui gloire et puissance en même temps qu’au Père, saint principe de vie, et à l’Esprit coéternel, consubstantiel et régnant avec le Père, maintenant et toujours et dans les siècles des siècles. Ainsi soit-il.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera :s/;;.*//g
-
 [Capitulum Laudes]
 !Prov 8:22-24
 v. Le Seigneur m'a possédée au commencement de Ses voies, avant de faire quoi que ce soit, dès le principe. J'ai été établie dès l'éternité, et dès les temps anciens, avant que la terre fût créée. Les abîmes n'étaient pas encore, et déjà j'étais conçue.
 $Deo gratias
-
-[Versum 2]
-@:Versum 1
 
 [Ant 2]
 Le Seigneur dit * au serpent : Je mettrai une inimitié entre toi et la femme, entre ta race et la sienne : elle te brisera la tête, alléluia.
@@ -203,50 +195,38 @@ Le Seigneur dit * au serpent : Je mettrai une inimitié entre toi et la femme, e
 !Apo 12:1
 v. Un grand prodige parut dans le ciel : une Femme revêtue du soleil, la lune sous ses pieds et, sur sa tête, une couronne de douze étoiles.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Le Dieu tout-puissant * M’a ceinte de force.
 R. Le Dieu tout-puissant * M’a ceinte de force.
 V. Et il m’a donné un chemin sans écart.
 R. M’a ceinte de force.
 &Gloria
 R. Le Dieu tout-puissant * M’a ceinte de force.
-_
-V. En ceci je reconnaîtrai que vous vous complaisez en moi.
-R. Qu’il ne jubile pas, mon ennemi, à mon sujet !
 
 [Capitulum Sexta]
 !Ezec 44:2-3
 v. Cette porte sera fermée ; elle ne sera point ouverte, et personne n'y passera; car le Seigneur, le Dieu d'Israël, est entré par cette porte, et elle sera fermée pour le prince. Le prince s'y assoira pour manger le pain devant le Seigneur.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. En ceci je reconnaîtrai, * Que vous vous complaisez en moi.
 R. En ceci je reconnaîtrai, * Que vous vous complaisez en moi.
 V. Qu’il ne jubile pas, mon ennemi, à mon sujet.
 R. Que vous vous complaisez en moi.
 &Gloria
 R. En ceci je reconnaîtrai, * Que vous vous complaisez en moi.
-_
-V. Je vous exalterai, Seigneur, car vous m’avez pris en protection
-R. Et vous n’avez pas réjoui mes ennemis à mon sujet.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Je vous exalterai, Seigneur, * Car vous m’avez prise sous votre protection.
 R. Je vous exalterai, Seigneur, * Car vous m’avez prise sous votre protection.
 V. Et vous n’avez pas réjoui mes ennemis à mon sujet.
 R. Car vous m’avez prise sous votre protection.
 &Gloria
 R. Je vous exalterai, Seigneur, * Car vous m’avez prise sous votre protection.
-_
+
+[Versum Nona]
 V. Votre Immaculée Conception, ô Vierge Mère de Dieu,
 R. A apporté la joie au monde entier.
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Aujourd’hui est sorti * un rejeton de la tige de Jessé ; aujourd’hui Marie a été conçue sans aucune tache de péché ; aujourd’hui a été écrasée, par elle, la tête de l’antique serpent, alléluia.

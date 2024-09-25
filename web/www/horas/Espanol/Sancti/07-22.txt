@@ -1,11 +1,6 @@
 [Rank]
 S. Mariæ Magdalenæ Pœnitentis;;Duplex;;3;;vide C7a
 
-[Rule]
-vide C7a;
-9 lectiones;
-scriptura1960
-
 [HymnusM Vespera]
 v. ¡Oh Padre de la luz celestial!, 
 cuando miras a Magdalena, 
@@ -60,9 +55,6 @@ y al Hijo, y a Ti,
 como ayer, y por todos los siglos. 
 Amén.
 
-[Versum 1]
-@Commune/C6:Versum 2
-
 [Ant 1]
 Una mujer * de la ciudad, una pecadora, vino con un frasco de perfume, y colocándose detrás junto a los pies del Señor, se puso a regarle los pies con sus lágrimas y se los enjugaba con sus cabellos.
 
@@ -72,18 +64,6 @@ $Qui vivis
 
 [Invit]
 Alabemos a nuestro Dios. * En la conversión de María Magdalena.
-
-[HymnusM Matutinum]
-v. María, con sus castos ósculos besa 
-los pies del Señor; los baña con sus lágrimas, 
-y con sus cabellos los enjuga; 
-con el nardo los perfuma.
-_
-A Dios Padre sea la gloria, y al Hijo 
-su Unigénito, juntamente 
-con el Espíritu Paráclito, 
-ahora y por todos los siglos. 
-Amén.
 
 [Hymnus Matutinum]
 v. María, con sus castos ósculos besa 
@@ -97,13 +77,25 @@ con el Espíritu Paráclito,
 ahora y por todos los siglos. 
 Amén.
 
+[HymnusM Matutinum]
+v. María, con sus castos ósculos besa 
+los pies del Señor; los baña con sus lágrimas, 
+y con sus cabellos los enjuga; 
+con el nardo los perfuma.
+_
+A Dios Padre sea la gloria, y al Hijo 
+su Unigénito, juntamente 
+con el Espíritu Paráclito, 
+ahora y por todos los siglos. 
+Amén.
+
 [Lectio1]
 Del Cantar de los Cantares
 !Cant 3:1-4
 1 En mi lecho, por la noche, busqué al amado de mi alma, busquele, y no lo hallé. 
 2 Me levanté y di vueltas por la ciudad, por las calles y las plazas, buscando al amado de mi alma. Busquele y no le hallé. 
 3 Encontráronme los centinelas que hacen la ronda en la ciudad: ¿Habéis visto al amado de mi alma? En cuanto los había traspasado, hallé al amado de mi alma. 
-4 Le así para no soltarlo hasta introducirlo en la casa de mi madre, en la alcoba de la que me engendró. 
+4 Le así para no soltarlo hasta introducirlo en la casa de mi madre, en la alcoba de la que me engendró.
 
 [Responsory1]
 @Tempora/Pasc0-1::s/[Aa]ll.*//g
@@ -113,7 +105,7 @@ Del Cantar de los Cantares
 1 ¡Quién me diese que fueses hermano mío, amamantado a los pechos de mi madre, para que al encontrarte en la calle pudiera besarte sin que me despreciaran! 
 2 Yo te llevaría y te introduciría en la casa de mi madre, en la alcoba de la que me engendró, y te daría a beber del vino adobado y del mosto de granados.  
 3 Su izquierda descansa bajo mi cabeza y su diestra me abraza. 
-4 Os conjuro, hijas de Jerusalén, que no despertéis ni inquietéis a mi amada hasta que a ella le plazca. 
+4 Os conjuro, hijas de Jerusalén, que no despertéis ni inquietéis a mi amada hasta que a ella le plazca.
 
 [Responsory2]
 R. Congratulaos conmigo todos los que amáis al Señor, porque me ha aparecido el que buscaba: 
@@ -121,14 +113,14 @@ R. Congratulaos conmigo todos los que amáis al Señor, porque me ha aparecido e
 V. Cuando los discípulos se marcharon, yo me quedé, y abrasada en el fuego de su amor, ardía en deseos. 
 R. Y mientras lloraba en el sepulcro, he visto a mi Señor, aleluya.
 
-[Responsory2](rubrica 1960)
+[Responsory2] (rubrica 1960)
 @:Responsory3
 
 [Lectio3]
 !Cant 8:5-7
 5 ¿Quién es esta que sube del desierto apoyada sobre su amado? Esposo. Yo te desperté debajo del manzano, allí donde te concibió tu madre, donde te concibió la que te engendró. 
 6 Ponme como un sello sobre tu corazón, ponme en tu brazo como sello. Que es fuerte el amor como la muerte y son como el “seol” duros los celos. Son sus dardos saetas encendidas, son llamas del Señor. 
-7 No pueden aguas copiosas extinguirlo ni arrastrarlo los ríos. Si uno diera por el amor toda la hacienda de su casa, sería sobremanera despreciado. 
+7 No pueden aguas copiosas extinguirlo ni arrastrarlo los ríos. Si uno diera por el amor toda la hacienda de su casa, sería sobremanera despreciado.
 
 [Responsory3]
 R. Han quitado a mi Señor e ignoro el lugar donde lo han puesto. Le dijeron los ángeles: Mujer, ¿Por qué lloras? Resucitó, como dijo; 
@@ -199,12 +191,5 @@ R. La hizo morar en su templo santo.
 [Ant 2]
 María * ungió los pies de Jesús y se los enjugó con su cabellera, y la casa se llenó con la fragancia del perfume.
 
-[Versum 3](rubrica 1960)
-@Sancti/07-22:Versum 2
-
-[Ant 3](rubrica 1960 aut rubrica Monastica)
+[Ant 3]
 Una mujer * de la ciudad, una pecadora, vino con un frasco de perfume, y colocándose detrás junto a los pies del Señor, se puso a regarle los pies con sus lágrimas y se los enjugaba con sus cabellos.
-
-[Lectio94]
-@:Lectio4
-&teDeum

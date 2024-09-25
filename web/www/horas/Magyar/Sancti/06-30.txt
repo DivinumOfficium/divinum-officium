@@ -1,18 +1,17 @@
 [Rank]
 In Commemoratione S. Pauli Apostoli;;Duplex majus;;4;;ex C1
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Commemoratione S. Pauli Apostoli;;Duplex;;3;;vide C1
 
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
-Sub unica concl
-No prima vespera
+[Oratio]
+O God, Who, through the preaching of the Blessed Apostle Paul, hast caused the light of the Gospel to shine gloriously among the Gentiles, we beseech thee that we who keep the Feast of his birth, may, now that he is with thee, feel to our comfort that his prayer availeth much with thee.
+$Per Dominum
+_
+@Sancti/01-25:Commemoratio4
+
+[Commemoratio]
+@Sancti/06-24:Octava
 
 [Hymnus Matutinum]
 Ó drága doktor, Pál, neveld erkölcseink
@@ -30,7 +29,7 @@ Az öröklétnek minden századain át.
 Olvasmány az Apostolok Cselekedeiből
 !Acts 13:1-4
 1 Az antióchiai egyházban volt több próféta és tanító, mint Barnabás, a Nigernek is nevezett Simon, a cirenei Luciusz, Heródes tejtestvére, Manaén és Saul.
-2 Egy nap, amikor az istentiszteletet tartották és böjtöltek, így szólt hozzájuk a Szentlélek: "Rendeljétek nekem Barnabást és Sault arra a munkára, amelyet szántam nekik!"
+2 Egy nap, amikor az istentiszteletet tartották és böjtöltek, így szólt hozzájuk a Szentlélek: „Rendeljétek nekem Barnabást és Sault arra a munkára, amelyet szántam nekik!”
 3 Erre böjtöt tartottak, majd rájuk tették kezüket, és útnak bocsátották őket.
 4 A Szentlélektől küldetve Szeleukiába mentek, onnét Ciprusba hajóztak.
 
@@ -44,8 +43,8 @@ Olvasmány az Apostolok Cselekedeiből
 [Lectio3]
 !Acts 13:9-13
 9 Erre Saul, vagy másik nevén Pál a Szentlélekkel eltelve rászegezte tekintetét,és
-10 rákiáltott: "Sátán fia, tele minden ravaszsággal és gonoszsággal, és ellensége minden igazságnak, nem hagyod abba, hogy áskálódj az Úr egyenes útja ellen?
-11 Lám, most lesújt rád az Úr keze, megvakulsz és nem látod a napot egy ideig." Azon nyomban vak sötétség szakadt rá, és botorkálva kereste, hogy valaki kezet nyújtson neki.
+10 rákiáltott: „Sátán fia, tele minden ravaszsággal és gonoszsággal, és ellensége minden igazságnak, nem hagyod abba, hogy áskálódj az Úr egyenes útja ellen?
+11 Lám, most lesújt rád az Úr keze, megvakulsz és nem látod a napot egy ideig.” Azon nyomban vak sötétség szakadt rá, és botorkálva kereste, hogy valaki kezet nyújtson neki.
 12 Amikor a helytartó látta az esetet, hívő lett, mert egészen lenyűgözte az Úr tanítása.
 13 Pál és kísérői tengerre szálltak, és Páfuszból a pamfíliai Pergébe hajóztak. János elvált tőlük és visszatért Jeruzsálembe.
 
@@ -56,8 +55,7 @@ Evangélium szent Máté Apostol kőnyvéből
 _
 Homily by St John Chrysostom, Patriarch of Constantinople.
 !34 on Matthew.
-It is as though He said Let not your heart be troubled although when I send you forth as sheep in the midst of wolves, I bid you be harmless as doves for, albeit, if I would, I could now make things otherwise, and suffer not that ye should have to bear anything grievous, neither be at the mercy of the wolves as are other sheep, but on the contrary, could make you more dreadful to the lions than the lions to you nevertheless, thus must it needs be, and yourselves it will make more glorious, and My power it will wholly show forth. For thus was it that afterwards the Same Lord said unto Paul: My grace is sufficient for thee,~
-for My strength is made perfect in weakness. (2 Cor. xii. 9.) It is I that have made you to be what ye are.
+It is as though He said Let not your heart be troubled although when I send you forth as sheep in the midst of wolves, I bid you be harmless as doves for, albeit, if I would, I could now make things otherwise, and suffer not that ye should have to bear anything grievous, neither be at the mercy of the wolves as are other sheep, but on the contrary, could make you more dreadful to the lions than the lions to you nevertheless, thus must it needs be, and yourselves it will make more glorious, and My power it will wholly show forth. For thus was it that afterwards the Same Lord said unto Paul: My grace is sufficient for thee, for My strength is made perfect in weakness. (2 Cor. xii. 9.) It is I that have made you to be what ye are.
 
 [Capitulum Laudes]
 !2 Tim 4:7-8
@@ -67,15 +65,6 @@ $Deo gratias
 [Hymnus Laudes]
 @Commune/C1:Hymnus Vespera
 
-[Oratio]
-O God, Who, through the preaching of the Blessed Apostle Paul, hast caused the light of the Gospel to shine gloriously among the Gentiles, we beseech thee that we who keep the Feast of his birth, may, now that he is with thee, feel to our comfort that his prayer availeth much with thee.
-$Per Dominum
-_
-@Sancti/01-25:Commemoratio4
-
-[Commemoratio]
-@Sancti/06-24:Octava
-
 [Lectio Prima]
 !1 Cor 15:9-10
 v. Én ugyanis az utolsó vagyok az apostolok közt, s arra sem méltó, hogy apostolnak hívjanak, hiszen üldöztem az Isten egyházát. De Isten kegyelméből vagyok az, ami vagyok, s rám árasztott kegyelme nem maradt bennem hatástalan.
@@ -83,9 +72,4 @@ v. Én ugyanis az utolsó vagyok az apostolok közt, s arra sem méltó, hogy ap
 [Capitulum Sexta]
 !2 Cor 12:7-9
 v. De hogy a nagyszerű kinyilatkoztatás elbizakodottá ne tegyen, tövist kaptam testembe, a sátán angyalát, hogy arcul csapkodjon, és el ne bízzam magam. Háromszor kértem ezért az Urat, hogy szabadítson meg tőle, de azt felelte: Elég neked az én kegyelmem.
-$Deo gratias
-
-[Capitulum Nona]
-!1 Cor 15:9-10
-v. Én ugyanis az utolsó vagyok az apostolok közt, s arra sem méltó, hogy apostolnak hívjanak, hiszen üldöztem az Isten egyházát. De Isten kegyelméből vagyok az, ami vagyok, s rám árasztott kegyelme nem maradt bennem hatástalan.
 $Deo gratias

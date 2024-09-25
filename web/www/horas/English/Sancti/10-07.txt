@@ -1,16 +1,8 @@
 [Rank]
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex classis;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex classis;;5;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Mark;
 
 [Ant Vespera]
 Who is this, * fair as a dove, like a rose-tree planted beside the rivers of waters?;;109
@@ -18,11 +10,6 @@ A virgin most mighty, * like the tower of David, whereon there hung a thousand b
 Hail Mary, * full of grace, the Lord is with thee, blessed art thou among women.;;121
 The Lord hath blessed thee * by His power, because through thee He hath brought our enemies to nought.;;126
 The daughters of Sion saw her in her spring time, amidst the flowers of the roses, and called her most blessed.;;147
-
-[Capitulum Laudes]
-!Sir 24:25; 39:17
-v. In me is all grace of the way and of the truth; in me is all hope of life and virtue; I have flowered forth like a rose planted by the brooks of water.
-$Deo gratias
 
 [Hymnus Vespera]
 v. The messenger from God's high throne
@@ -64,24 +51,8 @@ R. That we may be made worthy of the promises of Christ.
 Blessed art thou, * O Virgin Mary, Mother of God, for thou hast believed in the Lord, and because those things are accomplished in thee that were spoken to thee; make intercession for us unto the same Lord our God.
 
 [Oratio]
-O God, Whose only-begotten Son, by His life, death and resurrection, has merited~
-for us the grace of eternal salvation, grant, we beseech You, that, meditating~
-upon those mysteries in the most holy Rosary of the Blessed Virgin Mary, we may~
-imitate what they contain and obtain what they promise.
+O God, Whose only-begotten Son, by His life, death and resurrection, has merited for us the grace of eternal salvation, grant, we beseech You, that, meditating upon those mysteries in the most holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise.
 $Per eumdem
-
-[Commemoratio 2]
-!Commemoration of S. Mark, Pope
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Graciously hear our supplications, O Lord, and for the sake of thy Blessed Confessor and Bishop Mark, grant to us in thy mercy both pardon and peace.
-$Per Dominum
-_
-!Commemoration of the Holy Martyrs Sergius, Bacchus, Marcellus and Apuleius
-@Commune/C3:Oratio proper
-$Oremus
-Pause there to come upon us, O Lord, a grace from the blessed and worthy wrestling of thine holy Martyrs Sergius, Bacchus, Marcellus, and Apuleius, fanning ever in us the fire of the love of thyself.
-$Per Dominum
 
 [Invit]
 Let us keep the Feast of the Rose-garden of the Blessed Virgin Mary; * Let us worship Christ her Son, and her Lord and ours.
@@ -248,6 +219,11 @@ The spirit of the Lord * hath filled the world.
 Mary hath been taken to heaven. * The angels rejoice; they praise and bless the Lord. Alleluia.
 The Virgin Mary * hath been exalted over choirs of angels, and upon her head there is a crown of twelve stars.
 
+[Capitulum Laudes]
+!Sir 24:25; 39:17
+v. In me is all grace of the way and of the truth; in me is all hope of life and virtue; I have flowered forth like a rose planted by the brooks of water.
+$Deo gratias
+
 [Hymnus Laudes]
 v. Now Christ, the conqueror of death,
 Breaks sin's enslaving chain,
@@ -286,6 +262,19 @@ R. And hath made her to dwell in His tabernacle.
 
 [Ant 2]
 Let us this day keep * right heartily the solemn Feast of the Most Holy Rosary of Mary the Mother of God, that she may pray for us to our Lord Jesus Christ.
+
+[Commemoratio 2]
+!Commemoration of S. Mark, Pope
+@Commune/C4:Oratio proper Gregem
+$Oremus
+Graciously hear our supplications, O Lord, and for the sake of thy Blessed Confessor and Bishop Mark, grant to us in thy mercy both pardon and peace.
+$Per Dominum
+_
+!Commemoration of the Holy Martyrs Sergius, Bacchus, Marcellus and Apuleius
+@Commune/C3:Oratio proper
+$Oremus
+Pause there to come upon us, O Lord, a grace from the blessed and worthy wrestling of thine holy Martyrs Sergius, Bacchus, Marcellus, and Apuleius, fanning ever in us the fire of the love of thyself.
+$Per Dominum
 
 [Lectio Prima]
 !Sir 24:17-28

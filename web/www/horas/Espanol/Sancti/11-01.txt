@@ -1,57 +1,12 @@
 [Rank]
 Omnium Sanctorum;;Duplex I classis cum octava communi;;6.4;;
 
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-(rubrica tridentina aut rubrica divino) Vesperae Defunctorum
-
 [Ant Vespera]
 Vi una gran muchedumbre * que nadie podía contar, de todos los pueblos, de pie ante el trono.
 Y todos los ángeles, * de pie ante el trono, cayeron rostro a tierra, y adoraron a Dios.
 Con tu sangre * nos redimiste, Señor Dios, de entre todas las razas, lenguas, pueblos y naciones, y nos hiciste reino de nuestro Dios. 
 Bendecid al Señor * todos sus elegidos. Celebrad días de alegría y dadle gracias.
 Alabanza * de todos sus fieles, de Israel, su pueblo escogido. Es un honor para todos sus fieles.
-
-[HymnusM Vespera]
-{:H-PlacareChriste:}v. Perdona, ¡oh Cristo!, a tus siervos, 
-en cuyo favor implora la clemencia 
-del Padre, ante el tribunal 
-de tu gracia, la Virgen, su abogada.
-_
-Y vosotros, ejércitos celestiales, 
-que estáis agrupados en nueve coros, 
-ahuyentad todos los males, los pasados, 
-los presentes y los venideros.
-_
-¡Oh apóstoles y profetas!, 
-pedid clemencia ante el severo Juez 
-para los pecadores 
-sinceramente arrepentidos.
-_
-Vosotros, los que vais vestidos con la púrpura 
-del martirio, y vosotros, los que lleváis la blanca 
-vestidura de vuestra confesión, llamadnos 
-a la patria a los que estamos desterrados.
-_
-Coros castos de las vírgenes, 
-y vosotros, a quienes transportó 
-al cielo el desierto, aposentadnos 
-en la mansión de los bienaventurados.
-_
-Alejad de los pueblos creyentes 
-a la gente sin fe, para que, 
-formando un solo rebaño, 
-nos apaciente a todos un solo Pastor.
-_
-Gloria sea dada a Dios Padre, 
-y a su Hijo Unigénito, 
-y al Paráclito Santo, 
-por los siglos sempiternos. 
-Amén.
 
 [Hymnus Vespera]
 {:H-PlacareChriste:}v. Perdona, ¡oh Cristo!, a tus siervos, 
@@ -90,9 +45,42 @@ y al Paráclito Santo,
 por los siglos sempiternos. 
 Amén.
 
-[Versum 1]
-V. Alegraos, justos, y gozad con el Señor.
-R. Aclamadlo los de corazón sincero.
+[HymnusM Vespera]
+{:H-PlacareChriste:}v. Perdona, ¡oh Cristo!, a tus siervos, 
+en cuyo favor implora la clemencia 
+del Padre, ante el tribunal 
+de tu gracia, la Virgen, su abogada.
+_
+Y vosotros, ejércitos celestiales, 
+que estáis agrupados en nueve coros, 
+ahuyentad todos los males, los pasados, 
+los presentes y los venideros.
+_
+¡Oh apóstoles y profetas!, 
+pedid clemencia ante el severo Juez 
+para los pecadores 
+sinceramente arrepentidos.
+_
+Vosotros, los que vais vestidos con la púrpura 
+del martirio, y vosotros, los que lleváis la blanca 
+vestidura de vuestra confesión, llamadnos 
+a la patria a los que estamos desterrados.
+_
+Coros castos de las vírgenes, 
+y vosotros, a quienes transportó 
+al cielo el desierto, aposentadnos 
+en la mansión de los bienaventurados.
+_
+Alejad de los pueblos creyentes 
+a la gente sin fe, para que, 
+formando un solo rebaño, 
+nos apaciente a todos un solo Pastor.
+_
+Gloria sea dada a Dios Padre, 
+y a su Hijo Unigénito, 
+y al Paráclito Santo, 
+por los siglos sempiternos. 
+Amén.
 
 [Ant 1]
 Ángeles, * Arcángeles, Tronos y Dominaciones, Principados y Potestades, Virtudes de los cielos, Querubines y Serafines, patriarcas y profetas, santos doctores de la ley, todos los apóstoles, mártires de Cristo, santos confesores, vírgenes del Señor, anacoretas y todos los santos, interceded por nosotros.
@@ -104,28 +92,16 @@ $Per Dominum
 [Invit]
 Venid, adoremos al Señor, Rey de los reyes, * Porque Él es la corona de todos los Santos.
 
-[Hymnus Matutinum]
-@Sancti/11-01:Hymnus Vespera
-
-[HymnusM Matutinum]
-@Sancti/11-01:HymnusM Vespera
-
 [Ant Matutinum]
 Conoce el Señor * el proceder de los justos que están meditando su ley día y noche.;;1
 Ha hecho admirables * el Señor a sus Santos, y les ha escuchado siempre que han clamado a Él.;;4
 Es admirable, * oh Señor, tu nombre; porque has coronado a tus santos de gloria y honor, y los has constituido sobre las obras de tus manos.;;8
-V. Alegraos y regocijaos, justos, en el Señor.
-R. Y gloriaos todos los de corazón recto.
 Señor, * los que obran rectamente morarán en tu tabernáculo y descansarán en tu santo monte.;;14
 Tal es el linaje * de los que buscan al Señor, de los que anhelan ver el rostro del Dios de Jacob.;;23
 Alegraos en el Señor * y regocijaos, oh justos; y gloriaos en Él todos los de recto corazón.;;31
-V. Gócense los justos en la presencia de Dios.
-R. Y llénense de alegría.
 Temed al Señor * todos sus santos, porque nada falta a los que le temen; el Señor tiene fijos sus ojos sobre los justos, y atentos sus oídos a las plegarias que le hacen.;;33
 Oh Señor, * esperanza de los Santos, baluarte fortísimo contra el enemigo, Tú has concedido la herencia a los que temen tu nombre, los cuales habitarán para siempre en tu tabernáculo.;;60
 Oh vosotros, los que amáis al Señor, * aborreced el mal, alegraos, y celebrad con alabanzas su santa memoria.;;96
-V. Los justos vivirán eternamente.
-R. Y su galardón está en el Señor.
 
 [Lectio1]
 Del Libro del Apocalipsis del Apóstol S. Juan
@@ -136,10 +112,7 @@ Del Libro del Apocalipsis del Apóstol S. Juan
 5 Salían del trono relámpagos, y voces, y truenos, y siete lámparas de fuego ardían delante del trono, que eran los siete espíritus de Dios. 
 6 Delante del trono había como un mar de vidrio semejante al cristal, y en medio del trono y en rededor de él, cuatro vivientes, llenos de ojos por delante y por detrás. 
 7 El primer viviente era semejante a un león, el segundo viviente, semejante a un toro, el tercero tenía semblante como de hombre y el cuarto era semejante a un águila voladora. 
-8 Los cuatro vivientes tenían cada uno de ellos seis alas, y todos en torno y dentro estaban llenos de ojos, y no se daban reposo día y noche, diciendo: Santo, Santo, Santo es el Señor Dios todopoderoso, el que era, el que es y el que viene. 
-
-[Responsory1]
-@Tempora/Pent01-0
+8 Los cuatro vivientes tenían cada uno de ellos seis alas, y todos en torno y dentro estaban llenos de ojos, y no se daban reposo día y noche, diciendo: Santo, Santo, Santo es el Señor Dios todopoderoso, el que era, el que es y el que viene.
 
 [Lectio2]
 !Ap 5:1-8
@@ -150,10 +123,7 @@ Del Libro del Apocalipsis del Apóstol S. Juan
 5 Pero uno de los ancianos me dijo: No llores, mira que ha vencido el león de la tribu de Judá, la raíz de David, para abrir el libro y sus siete sellos. 
 6 Vi en medio del trono y de los cuatro vivientes, y en medio de los ancianos, un Cordero, que estaba en pie como degollado, que tenía siete cuernos y siete ojos, que son los siete espíritus de Dios, enviados a toda la tierra. 
 7 Vino y tomó el libro de la diestra del que estaba sentado en el trono. 
-8 Y cuando lo hubo tomado, los cuatro vivientes y los veinticuatro ancianos cayeron delante del Cordero, teniendo cada uno su cítara y copas de oro llenas de perfumes, que son las oraciones de los santos. 
-
-[Responsory2]
-@Sancti/08-15:Responsory8:s/&Gloria.*//s
+8 Y cuando lo hubo tomado, los cuatro vivientes y los veinticuatro ancianos cayeron delante del Cordero, teniendo cada uno su cítara y copas de oro llenas de perfumes, que son las oraciones de los santos.
 
 [Lectio3]
 !Ap 5:9-14
@@ -162,7 +132,7 @@ Del Libro del Apocalipsis del Apóstol S. Juan
 11 Vi y oí la voz de muchos ángeles en rededor del trono, y de los vivientes, y de los ancianos; y era su número de miríadas de miríadas, y de millares de millares, 
 12 que decían a grandes voces: Digno es el Cordero, que ha sido degollado, de recibir el poder, la riqueza, la sabiduría, la fortaleza, el honor, la gloria y la bendición. 
 13 Y todas las criaturas que existen en el cielo, y sobre la tierra, y debajo de la tierra, y en el mar, y en todo cuanto hay en ellos, oí que decían: Al que está sentado en el trono y al Cordero, la bendición, el honor, la gloria y el imperio por los siglos de los siglos. 
-14 Y los cuatro vivientes respondieron: Amén. Y los ancianos cayeron de hinojos y adoraron. 
+14 Y los cuatro vivientes respondieron: Amén. Y los ancianos cayeron de hinojos y adoraron.
 
 [Responsory3]
 R. En presencia de los Ángeles te cantaré himnos, oh Dios mío; 
@@ -177,20 +147,11 @@ Sermón de S. Beda el Venerable, Presbítero,
 !Ser. 18 sobre los Santos.
 Hoy celebramos, amados, dentro del júbilo de una solemnidad, la fiesta de todos los Santos; de aquellos cuya sociedad alegra los cielos, cuyo patrocinio consuela la tierra y con cuyos triunfos se corona la Iglesia. Débeseles un honor tanto mayor cuan grande fue en la prueba su firmeza en la profesión de la fe, porque la gloria de los luchadores crece a proporción de la dureza del combate, y la victoria del martirio resplandece más con la variedad de suplicios, a los que corresponde tanto mayor galardón cuanto mayor fue su acerbidad. Nuestra madre la Iglesia católica, extendida por todo el orbe, que aprendió de su cabeza Jesucristo a no temer los ultrajes, la cruz, ni muerte, y que ha ido afianzándose cada vez más, no con la resistencia sino con la paciencia, al tratar de animar a todas estas legiones de ilustres atletas arrojados a las cárceles como criminales, y de estimularles a sostenerse en la lucha con ardor y denuedo siempre renovados, les ha inspirado la santa ambición de un glorioso triunfo.
 
-[Responsory4]
-@Sancti/06-24:Responsory7
-
 [Lectio5]
 Dichosa nuestra madre la Iglesia, por verse honrada con muestras tan lúcidas de la misericordia divina, adornada con la sangre de los invictos mártires y revestida con la blancura de la inviolable fidelidad de las Vírgenes. No faltan entre sus flores, rosas ni lirios. Esfuércese ahora cada uno de nosotros en adquirirse el mayor número de títulos de estas dos clases de honores: o a la corona blanca de la virginidad o a la purpúrea del martirio. En los cielos no faltan, ni en la paz ni en la lucha, flores para coronar a los soldados de Cristo.
 
-[Responsory5]
-@Commune/C1:Responsory7
-
 [Lectio6]
 La inefable e inmensa bondad divina se ha extendido hasta disponer que el tiempo de los trabajos y las luchas fuera breve, y por decirlo así, momentáneo. Ha querido destinar a los trabajos y las luchas esta vida presente, tan corta y fugaz, y a las coronas y premios una vida eterna; ha querido que los trabajos terminen pronto y que la recompensa de los méritos no tenga fin; que después de las tinieblas de este mundo, los santos puedan contemplar una luz brillantísima y poseer una felicidad mucho mayor que el más cruel de todos los padecimientos, pues dice el Apóstol: Los sufrimientos de la vida presente no son de comparar con la gloria venidera que se ha de manifestar en vosotros.
-
-[Responsory6]
-@Commune/C3:Responsory8
 
 [Lectio7]
 Lectura del Santo Evangelio, según San Mateo
@@ -201,58 +162,17 @@ Homilía de San Agustín, Obispo.
 !Sobre el Sermón de la Montaña.
 Si se nos pregunta qué significa el monte, diremos que puede simbolizar los preceptos más elevados de la justicia, pues eran inferiores los que se habían dado a los judíos. Fue un mismo Dios el que, con admirable acomodo a los tiempos, dio, por sus santos Profetas y otros siervos, unos preceptos menos elevados a un pueblo al que convenía tener sujeto por el temor, y, por medio de su Hijo, otros más elevados al pueblo al que convenía hacer libre por la caridad. Dar preceptos inferiores a las almas menos perfectas y otros superiores a las más perfectas es obra del que es único en saber aplicar al género humano el remedio apropiado a sus múltiples necesidades.
 
-[Responsory7]
-@Commune/C4:Responsory8:s/&Gloria.*//s
-
 [Lectio8]
 No es tampoco de extrañar que el mismo Dios, creador del cielo y de la tierra, dé unos preceptos más elevados en vista del reino de los cielos y otros inferiores en vista del de la tierra. A esta superior justicia se refiere el Profeta cuando dice: Tu justicia es semejante a los montes de Dios. He aquí por qué el único Maestro capaz de enseñar cosas tan sublimes enseña desde una montaña. Enseña sentado, por exigirlo la dignidad del magisterio. Y se le acercaron los discípulos, próximos a Jesús por la voluntad de cumplir sus preceptos, convenía que lo estuvieran también corporalmente para oír sus palabras. Y abriendo su boca, los adoctrinaba, diciendo. Esta paráfrasis: “y abriendo su boca”, indica quizá que el sermón va a ser de alguna extensión; a menos que signifique que el que ahora abre su boca es el mismo que abrió en el Antiguo Testamento la boca de los Profetas.
-
-[Responsory8]
-@Commune/C6
 
 [Lectio9]
 Veamos qué dice: Bienaventurados los pobres de espíritu, porque de ellos es el reino de los cielos. La Escritura, hablando sobre el apetito de los bienes temporales, dice: Todo es vanidad y presunción de espíritu. Presunción de espíritu significa soberbia y arrogancia. Se dice sobre los soberbios que están hinchados de espíritu, y con razón, porque el viento es llamado spiritus, como dice en un Salmo: Fuego, granizo, nieve, hielo, vientos procelosos (spiritus procellarum); nadie ignora que a los soberbios se les llama hinchados, como llenos de viento. Por esto dice el Apóstol: La ciencia hincha, pero la caridad edifica. Esta es la razón de considerarse pobres de espíritu a los humildes y temerosos de Dios, es decir, a los que no tienen este espíritu de hinchazón.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
 !Apo 7:2-3
 v. Yo, Juan, vi a otro ángel que subía del oriente llevando el sello de Dios vivo. Gritó con voz potente a los cuatro ángeles encargados de maltratar a la tierra y al mar, diciéndoles: No maltratéis a la tierra ni al mar ni a los árboles, hasta que sellemos en la frente a los siervos de nuestro Dios.
 $Deo gratias
-
-[HymnusM Laudes]
-v. ¡Oh Jesús, dador de la salvación eterna!, 
-socorre a los redimidos; 
-¡oh Virgen, Madre de la clemencia!, 
-da a tus siervos la salvación.
-_
-Y vosotros, ejército de los ángeles,
-coros de los patriarcas 
-y legión inspirada de los profetas: 
-pedid el perdón para los pecadores.
-_
-Que el Bautista, precursor de Cristo, 
-y el Portero del alto cielo, 
-y los demás apóstoles desaten 
-las cadenas de nuestras culpas.
-_
-Que la legión triunfante 
-de los mártires, el coro sagrado 
-de los sacerdotes y las vírgenes 
-castas laven nuestras manchas.
-_
-Todos los que reináis como príncipes 
-en la augusta corte del cielo, 
-escuchad los votos de los que os suplican, 
-los cuales os piden los dones del cielo.
-_
-Poder, honor, alabanza y gloria 
-sean dadas a Dios Padre, 
-con el Hijo, y el Paráclito Santo, 
-por los siglos de los siglos.
-Amén.
 
 [Hymnus Laudes]
 {:H-Salutisæternæ:}v. ¡Oh Jesús, dador de la salvación eterna!, 
@@ -286,9 +206,37 @@ con el Hijo, y el Paráclito Santo,
 por los siglos de los siglos.
 Amén.
 
-[Versum 2]
-V. Que los fieles festejen su gloria.
-R. Y canten jubilosos en filas.
+[HymnusM Laudes]
+v. ¡Oh Jesús, dador de la salvación eterna!, 
+socorre a los redimidos; 
+¡oh Virgen, Madre de la clemencia!, 
+da a tus siervos la salvación.
+_
+Y vosotros, ejército de los ángeles,
+coros de los patriarcas 
+y legión inspirada de los profetas: 
+pedid el perdón para los pecadores.
+_
+Que el Bautista, precursor de Cristo, 
+y el Portero del alto cielo, 
+y los demás apóstoles desaten 
+las cadenas de nuestras culpas.
+_
+Que la legión triunfante 
+de los mártires, el coro sagrado 
+de los sacerdotes y las vírgenes 
+castas laven nuestras manchas.
+_
+Todos los que reináis como príncipes 
+en la augusta corte del cielo, 
+escuchad los votos de los que os suplican, 
+los cuales os piden los dones del cielo.
+_
+Poder, honor, alabanza y gloria 
+sean dadas a Dios Padre, 
+con el Hijo, y el Paráclito Santo, 
+por los siglos de los siglos.
+Amén.
 
 [Ant 2]
 El glorioso * coro de los apóstoles, el orden noble de los profetas, el resplandeciente ejército de los mártires, todos los santos y elegidos te alaban unánimes, Santa Trinidad, un solo Dios.
@@ -297,26 +245,10 @@ El glorioso * coro de los apóstoles, el orden noble de los profetas, el resplan
 !Ap 7:12
 v. La bendición, y la gloria, y la sabiduría, y la acción de gracias, y el honor, y el poder, y la fuerza, son de nuestro Dios por los siglos de los siglos. Amén.
 
-[Responsory Tertia]
-@Commune/C3
-
 [Capitulum Sexta]
 !Apo 7:9
 v. Después de esto vi una gran muchedumbre que nadie podía contar, de todas las razas, y tribus, y pueblos, y lenguas; de pie ante el trono y ante el Cordero, vestidos de blanco, con palmas en las manos.
 $Deo gratias
-
-[Responsory Sexta]
-@Commune/C3
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
-@Commune/C3
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 ¡Qué glorioso es el reino * donde todos los santos gozan con Cristo, y vestidos de blanco siguen al Cordero adonde va!

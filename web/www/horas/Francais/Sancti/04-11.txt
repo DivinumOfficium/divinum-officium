@@ -1,16 +1,8 @@
 [Rank]
-S. Leonis I Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3.1;;vide C4a
-
-[Rank] (rubrica 1960)
 S. Leonis I Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 
 [Name]
 Leo
-
-[Rule]
-vide C4a ;mtv
-9 lectiones
-OPapaD=Leónem ;
 
 [Oratio] (rubrica tridentina)
 Nous vous supplions, Seigneur, d’exaucer les prières que nous vous adressons en la solennité du bienheureux Léon, votre Confesseur et Pontife, et de nous accorder, grâce aux mérites et à l’intercession de celui qui vous a si dignement servi, le pardon de tous nos péchés.
@@ -18,10 +10,6 @@ $Per Dominum
 
 [Lectio1] (rubrica tridentina)
 @Sancti/02-22:Lectio1
-
-[Lectio2] (rubrica tridentina)
-@Sancti/02-22:Lectio2:s/-9/-12/
-@Sancti/02-22:Lectio3:2-5
 
 [Lectio3] (rubrica tridentina)
 Commencement de la 1re Épitre de l’Apôtre Saint Pierre.
@@ -45,6 +33,10 @@ Léon fut reçu à Rome avec une joie singulière par toute la population. Peu a
 [Lectio6]
 Le saint Pontife s’occupa ensuite de faire réparer et construire des églises ; ce fut par son conseil qu’une pieuse femme, nommée Démétria, bâtit dans sa propriété l’église de Saint-Etienne sur la voie Latine, à trois milles de Rome ; lui-même en éleva une sur la voie Appienne sous le nom de saint Corneille ; de plus il répara beaucoup d’autres édifices religieux et les pourvut de nouveau de vases sacrés. Il fit construire des voûtes dans les trois basiliques de Saint-Pierre, de Saint-Paul et Constantinienne ; il édifia un monastère près de la basilique de Saint-Pierre, et il établit au tombeau des Apôtres des gardiens qu’il appela Cubiculaires. Il statua qu’au Canon de la Messe, on ajouterait ces mots : Sanctum sacrificium, immaculatum hostiam : sacrifice saint, hostie immaculée. Il ordonna que les religieuses ne recevraient le voile bénit qu’après avoir fait preuve jusqu’à quarante ans de virginité. Illustre par ces actions et par d’autres encore, auteur de beaucoup d’écrits pleins de sainteté et d’éloquence, Léon s’endormit dans le Seigneur, le trois des ides d’avril. Il tint le siège pontifical vingt ans, dix mois et vingt-huit jours.
 
+[Lectio94]
+Léon I, d’Étrurie, gouverna l’Église au temps où le roi des Huns, Attila, surnommé le Fléau de Dieu, envahissant l’Italie, se préparait, après le siège et l’incendie d’Aquilée, à conduire ses troupes à Rome. Léon étant allé à sa rencontre réussit, par sa divine éloquence, à le persuader de s’en retourner. Reçu ensuite à Rome avec une joie universelle extraordinaire, il se servit bientôt après de cette même puissance d’éloquence, pour décider Genséric, qui avait envahi la ville, à lui épargner les incendies, les outrages et les massacres. Puis, comme l’Église paraissait alors attaquée par beaucoup d’hérésies et surtout agitée par les Nestoriens et les Eutychéens, il convoqua le concile de Chalcédoine, où six cent trente évêques réunis condamnèrent Eutychès et Dioscore et de nouveau Nestorius. Il confirma, de son autorité, les décrets du concile. Il construisit beaucoup d’édifices sacrés, et édifia un monastère tout près de la basilique de saint Pierre. Après ces actions d’éclat et d’autres encore, après avoir composé beaucoup d’ouvrages saintement et fort bien écrits, il s’endormit dans le Seigneur, le quatre des Ides de Novembre, en la vingt-deuxième année de son pontificat.
+&teDeum
+
 [Lectio7]
 Lecture du saint Évangile selon saint Matthieu.
 !Matt 16:13-19
@@ -59,8 +51,4 @@ Dans l’Église universelle, Pierre répète chaque jour : « Vous êtes le Chr
 
 [Lectio9]
 Quand donc nous faisons entendre nos exhortations à votre sainte assemblée croyez que celui-là même vous parle dont nous tenons la place. C’est, animé de son affection pour vous, que nous vous avertissons, et nous ne vous prêchons rien qu’il n’ait enseigné, vous conjurant de ceindre spirituellement vos reins et de mener une vie chaste et sobre dans la crainte de Dieu. Vous êtes, comme le dit l’Apôtre, « ma couronne et ma joie », si votre foi qui, dès le commencement de l’Évangile, a été célébrée dans le monde entier, persévère en toute sainteté et dilection. Toute l’Église, répandue dans l’univers entier, doit sans doute fleurir en toutes les vertus, mais il convient qu’entre tous les peuples vous vous distinguiez par le mérite d’une piété plus excellente, vous qui, établis au sommet de la religion chrétienne et sur la pierre même de l’apostolat, avez été, avec tous les hommes, rachetés par Jésus-Christ notre Seigneur, et de préférence à tous les hommes, instruits par le bienheureux Apôtre Pierre.
-&teDeum
-
-[Lectio94]
-Léon I, d’Étrurie, gouverna l’Église au temps où le roi des Huns, Attila, surnommé le Fléau de Dieu, envahissant l’Italie, se préparait, après le siège et l’incendie d’Aquilée, à conduire ses troupes à Rome. Léon étant allé à sa rencontre réussit, par sa divine éloquence, à le persuader de s’en retourner. Reçu ensuite à Rome avec une joie universelle extraordinaire, il se servit bientôt après de cette même puissance d’éloquence, pour décider Genséric, qui avait envahi la ville, à lui épargner les incendies, les outrages et les massacres. Puis, comme l’Église paraissait alors attaquée par beaucoup d’hérésies et surtout agitée par les Nestoriens et les Eutychéens, il convoqua le concile de Chalcédoine, où six cent trente évêques réunis condamnèrent Eutychès et Dioscore et de nouveau Nestorius. Il confirma, de son autorité, les décrets du concile. Il construisit beaucoup d’édifices sacrés, et édifia un monastère tout près de la basilique de saint Pierre. Après ces actions d’éclat et d’autres encore, après avoir composé beaucoup d’ouvrages saintement et fort bien écrits, il s’endormit dans le Seigneur, le quatre des Ides de Novembre, en la vingt-deuxième année de son pontificat.
 &teDeum

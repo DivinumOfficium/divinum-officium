@@ -1,16 +1,5 @@
 [Rank]
-S. Luciæ Virginis et Martyris;;Duplex;;3;;vide C6b
-
-[Rule]
-vide C6b;
-9 lectiones;
-Doxology=Nat
-Commemoratio3
-
-[Rule] (rubrica 1570)
-vide C6b;
-9 lectiones;
-Commemoratio3
+S. Luciæ Virginis et Martyris;;Duplex;;3;;vide C6
 
 [Ant Vespera]
 Mientras Santa Lucía oraba, * se le apareció Santa Águeda para consolar a la esclava de Cristo.;;109
@@ -23,11 +12,7 @@ Hermana mía, Lucía, * virgen consagrada a Dios, ¿por qué me pides lo que tú
 Con tu paciencia * te hiciste dueña de tu alma, Lucía, esposa de Cristo: odiaste las cosas del mundo y brillas con los Ángeles, y con tu sangre propia venciste al enemigo.
 
 [Oratio]
-@Commune/C7::s/N\./Lucía, tu Virgen y Mártir/
-
-[Commemoratio 2] (rubrica 1910 aut rubrica divino)
-!Conmemoración del Día de la Octava de la Inmaculada Concepción de la B.M.V.
-@Sancti/12-08:Oratio
+@Commune/C7a::s/N\./Lucía, tu Virgen y Mártir/
 
 [Lectio4]
 Lucía, virgen de Siracusa, ilustre ya desde su infancia no solamente por la nobleza de su linaje sino también por su fe, vino a Catania juntamente con su madre Eutiquia, que estaba enferma de un flujo de sangre, para venerar el cuerpo de la bienaventurada Águeda. Sus oraciones junto al sepulcro de la Santa obtuvieron la salud de su madre. Conseguida esta gracia, rogó a su madre que le permitiera entregar a los pobres de Jesucristo cuanto había de darle como dote. Por esto volvió a Siracusa, vendió sus bienes y distribuyó su producto entre los pobres.
@@ -61,26 +46,12 @@ R. Y el Señor de todas las cosas la amó.
 [Lectio94]
 Lucía, virgen de Siracusa, noble de cuna, y por su fe cristiana, fue a la tumba de Santa Águeda en Catheria y obtuvo la cura de su madre, Eutiquia, que sufría una hemorragia. Después, obtuvo el permiso de ésta para distribuir a los pobres todos los bienes de su dote. Por esta razón, fue acusada de ser cristiana y llevada ante Pascasio el Prefecto. Cuando ni las promesas ni las amenazas pudieron inducirla a sacrificar a los ídolos, Pascasio ordenó que la llevaran donde su virginidad sería violada. Pero el poder de Dios le dio a la virgen la fortaleza para mantenerse firme en su resolución, tal que nadie podía moverla de donde estaba. Entonces el prefecto ordenó que se encendiera un fuego por todos lados, pero salió ilesa. Después de haber sufrido muchos tormentos, su garganta fue atravesada con una espada. Muy herida, predijo que la Iglesia tendría paz después de la muerte de Diocleciano y Maximiliano; el 13 de diciembre ella entregó su espíritu a Dios. Su cuerpo fue enterrado en Siracusa, luego llevado a Constantinopla, y al fin transferido a Venecia.
 
-[Lectio7]
-@Commune/C7:Lectio7
-
-[Responsory7]
-@Commune/C6:Responsory4
-
-[Lectio8]
-@Commune/C7:Lectio8
-
-[Responsory8]
-@Commune/C6:Responsory5
-
-[Lectio9]
-@Commune/C7:Lectio9
-
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
 [Ant 2]
 Eres una columna * inconmovible, Lucía, esposa de Cristo, porque todo el pueblo está esperando que recibas la corona de la vida. Aleluya.
+
+[Commemoratio 2] (rubrica 1888 aut rubrica divino)
+!Conmemoración del Día de la Octava de la Inmaculada Concepción de la B.M.V.
+@Sancti/12-08:Oratio
 
 [Ant 3]
 El Espíritu Santo * comunicó tanta firmeza a la virgen de Cristo, que permaneció inconmovible.

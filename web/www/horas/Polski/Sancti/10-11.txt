@@ -4,24 +4,12 @@ Macierzyństwa Najświętszej Marji Panny;;Duplex 2 classis;;5.1;;ex C11
 [Rank] (rubrica 1960)
 Macierzyństwa Najświętszej Marji Panny;;Duplex 2 classis;;5;;ex C11
 
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-
 [Ant Vespera]
 Błogosławionaś jest * Panno Marjo, która nosiłaś Stworzyciela wszystkich.;;109
 Porodziłaś * tego, który Cię uczynił, i na wieki pozostajesz dziewicą.;;112
 Choć byłam małą * spodobałam się Najwyższemu i z moich wnętrzności porodziłam Boga i człowieka.;;121
 Błogosławionaś córko, * od Pana, gdyż przez ciebie uczestniczymy w owocu życia.;;126
 Widziały ją * córki Syjonu, i błogosławioną nazwały i królowe wychwalały Ją.;;147
-
-[Capitulum Laudes]
-!Syr 24:12-13
-v. Który mię stworzył, odpoczynął w przybytku moim, i rzekł mi: Mieszkaj w Jakubie, a między wybranymi memi rozpuść korzenie.
-$Deo gratias
 
 [Versum 1]
 V. Błogosławionaś ty między niewiastami.
@@ -125,6 +113,11 @@ O jakże szczęśliwa Maryja, której ani pokory nie brakło, ani dziewictwa! I 
 
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//gm
+
+[Capitulum Laudes]
+!Syr 24:12-13
+v. Który mię stworzył, odpoczynął w przybytku moim, i rzekł mi: Mieszkaj w Jakubie, a między wybranymi memi rozpuść korzenie.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Ciebie, błogosławiona Matko Boga,

@@ -4,19 +4,31 @@ S. Leonis I Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 [Rank] (rubrica innovata)
 S. Leonis I Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3.91;;vide C4a
 
-[Name]
-Leo
-
 [Rule]
 vide C4a;mtv
 9 lectiones
 
-[Oratio] (rubrica tridentina aut rubrica innovata)
-Exaudi, quǽsumus, Domine, preces nostras, quas in beati Leonis Confessóris tui atque Pontificis solemnitate deferimus: et qui tibi digne meruit famulari, ejus intercedentibus meritis ab omnibus nos absolve peccatis.
-$Per Dominum
+[Name]
+Leo
+
+[Oratio 1]
+Córdibus nostris, quǽsumus, Dómine, grátiam tuam benígnus infúnde: ut peccáta nostra castigatióne voluntária cohibéntes, temporáliter pótius macerémur, quam supplíciis deputémur ætérnis.
+_
+!Commemoratio Septem Dolorum Beatæ Mariæ Virginis
+Ant. Cum vidísset Jesus * matrem stantem juxta crucem, et discípulum quem diligébat, dicit matri suæ: Múlier, ecce fílius tuus. Deínde dicit discípulo: Ecce mater tua.
+_
+V. Ora pro nobis, Virgo dolorosíssima.
+R. Ut digni efficiámur promissiónibus Christi.
+_
+$Oremus
+v. Deus, in cujus passióne, secúndum Simeónis prophetíam, dulcíssimam ánimam gloriósæ Vírginis et Matris Maríæ dolóris gládius pertransívit: concéde, propítius; ut qui transfixiónem ejus et passiónem venerándo recólimus, gloriósis méritis et précibus ómnium Sanctórum cruci fidéliter astántium intercedéntibus, passiónis tuæ efféctum felícem consequámur:
 
 [Oratio]
 Gregem tuum, Pastor ætérne, placátus inténde: et per beátum Leónem Summum Pontíficem perpétua protectióne custódi; quem totíus Ecclésiæ præstitísti esse pastórem.
+$Per Dominum
+
+[Oratio] (rubrica tridentina aut rubrica innovata)
+Exaudi, quǽsumus, Domine, preces nostras, quas in beati Leonis Confessóris tui atque Pontificis solemnitate deferimus: et qui tibi digne meruit famulari, ejus intercedentibus meritis ab omnibus nos absolve peccatis.
 $Per Dominum
 
 [Lectio1] (rubrica tridentina aut rubrica innovata)
@@ -47,6 +59,10 @@ Leo autem Romæ singulari omnium lætitia exceptus, paulo post invadenti Urbem G
 [Lectio6]
 His actis, sanctus Pontifex se ad reficiendas et ædificandas ecclesias convertit. Cujus suasu Demetria, pia femina, sancti Stephani ecclesiam construxit in suo fundo via Latina, tertio ab Urbe milliario: ipse via Appia sub nomine sancti Cornelii alteram condidit. Multas præterea et sacras ædes, et sacra earum vasa restituit. In tribus basilicis, Petri, Pauli, et Constantiniana, cameras exstruxit: ædificavit monasterium vicinum basilicæ sancti Petri: sepulcris Apostolorum custodes adhibuit, quos cubicularios appellavit. Statuit, ut in actione mysterii diceretur: Sanctum sacrificium, immaculatam hostiam. Sanxit, ne monacha benedictum capitis velamen reciperet, nisi quadraginta annorum virginitatem probasset. His et aliis præclare gestis, cum multa sancte et luculenter scripsisset, quarto Idus Novembris obdormivit in Domino. Sedit in pontificatu annos viginti unum, mensem unum, dies tredecim. 
 
+[Lectio94]
+Leo primus, Etrúscus, eo témpore prǽfuit Ecclésiæ, cum rex Hunnórum Attila, cognoménto Flagéllum Dei, in Itáliam invádens, post captam et incénsam Aquiléjam, Romam petitúrus cópias paráverat. Cui occúrrens Leo, divína persuásit eloquéntia, ut regrederétur. Tum Romæ singulári ómnium lætítia excéptus, paulo post, invadénti Urbem Genseríco eádem eloquéntiæ vi persuásit, ut ab incéndiis, ignomíniis et cǽdibus abstinéret. Cum autem Ecclésiam a multis hærésibus maximéque a Nestoriánis et Eutychiánis exagitári vidéret, Concílium Chalcedonénse indíxit; ubi, sexcéntis trigínta coáctis epíscopis, Eutyches et Dióscorus, et íterum Nestórius condemnáti sunt; cujus Concílii decréta auctoritáte sua firmávit. Multas sacras ædes exstrúxit, ac monastérium vicínum basílicæ sancti Petri ædificávit. His et áliis præcláre gestis, cum multa sancte et luculénter scripsísset, quarto Idus Novémbris obdormívit in Dómino, anno pontificátus sui vigésimo primo.
+&teDeum
+
 [Lectio7]
 @Commune/C4:Lectio7 in 2 loco
 
@@ -55,25 +71,3 @@ His actis, sanctus Pontifex se ad reficiendas et ædificandas ecclesias converti
 
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
-
-[Lectio94]
-Leo primus, Etrúscus, eo témpore prǽfuit Ecclésiæ, cum rex Hunnórum Attila, cognoménto Flagéllum Dei, in Itáliam invádens, post captam et incénsam Aquiléjam, Romam petitúrus cópias paráverat. Cui occúrrens Leo, divína persuásit eloquéntia, ut regrederétur. Tum Romæ singulári ómnium lætítia excéptus, paulo post, invadénti Urbem Genseríco eádem eloquéntiæ vi persuásit, ut ab incéndiis, ignomíniis et cǽdibus abstinéret. Cum autem Ecclésiam a multis hærésibus maximéque a Nestoriánis et Eutychiánis exagitári vidéret, Concílium Chalcedonénse indíxit; ubi, sexcéntis trigínta coáctis epíscopis, Eutyches et Dióscorus, et íterum Nestórius condemnáti sunt; cujus Concílii decréta auctoritáte sua firmávit. Multas sacras ædes exstrúxit, ac monastérium vicínum basílicæ sancti Petri ædificávit. His et áliis præcláre gestis, cum multa sancte et luculénter scripsísset, quarto Idus Novémbris obdormívit in Dómino, anno pontificátus sui vigésimo primo.
-&teDeum
-
-[Oratio 1]
-Córdibus nostris, quǽsumus, Dómine, grátiam tuam benígnus infúnde: ut peccáta nostra castigatióne voluntária cohibéntes, temporáliter pótius macerémur, quam supplíciis deputémur ætérnis.
-_
-!Commemoratio Septem Dolorum Beatæ Mariæ Virginis
-Ant. Cum vidísset Jesus * matrem stantem juxta crucem, et discípulum quem diligébat,~
-dicit matri suæ: Múlier, ecce fílius tuus. Deínde dicit discípulo: Ecce mater~
-tua.
-_
-V. Ora pro nobis, Virgo dolorosíssima.
-R. Ut digni efficiámur promissiónibus Christi.
-_
-$Oremus
-v. Deus, in cujus passióne, secúndum Simeónis prophetíam, dulcíssimam ánimam~
-gloriósæ Vírginis et Matris Maríæ dolóris gládius pertransívit: concéde,~
-propítius; ut qui transfixiónem ejus et passiónem venerándo recólimus, gloriósis~
-méritis et précibus ómnium Sanctórum cruci fidéliter astántium intercedéntibus,~
-passiónis tuæ efféctum felícem consequámur:

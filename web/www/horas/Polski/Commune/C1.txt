@@ -1,16 +1,12 @@
 [Name]
 Commune Apostolorum
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
 [Ant Vespera]
-To jest przykazanie moje, * abyście się społecznie miłowali, jako was umiłowałem.;;109
-Większej nad tę miłości * żaden nie ma: aby kto duszę swą położył za przyjaciół swoich.;;110
-Wy jesteście przyjaciółmi Moimi, * jeśli czynić będziecie, co Ja wam rozkazuję mówi Pan.;;111
-Błogosławieni pokój czyniący, * błogosławieni czystego serca: albowiem oni Boga oglądają.;;112
-W cierpliwości waszej * otrzymacie dusze wasze.;;116
+To jest przykazanie moje, * abyście się społecznie miłowali, jako was umiłowałem.
+Większej nad tę miłości * żaden nie ma: aby kto duszę swą położył za przyjaciół swoich.
+Wy jesteście przyjaciółmi Moimi, * jeśli czynić będziecie, co Ja wam rozkazuję mówi Pan.
+Błogosławieni pokój czyniący, * błogosławieni czystego serca: albowiem oni Boga oglądają.
+W cierpliwości waszej * otrzymacie dusze wasze.
 
 [Hymnus Vespera]
 {:H-Exsultetorbisgaudiis:}v. Niechaj się rozraduje okrąg świata,
@@ -157,6 +153,14 @@ Strzegli * świadectw jego, i przykazań jego, alleluja.;;98
 V. Bardzo zaszczyceni są przyjaciele Twoi Boże.
 R. Bardzo się zmocniło ich panowanie.
 
+[Nocturn 2 Versum]
+V. Postanowisz ich książętami nad wszystką ziemią.
+R. Będą wspominać Imię Twoje, Panie.
+
+[Nocturn 3 Versum]
+V. Bardzo zaszczyceni są przyjaciele Twoi Boże.
+R. Bardzo się zmocniło ich panowanie.
+
 [Lectio1]
 Z Pierwszego Listu Św. Pawła Apostoła do Koryntian
 !1Kor 4:1-5
@@ -257,16 +261,10 @@ R. Ich nauką jaśnieje Kościół, jak księżyc od słońca.
 &Gloria
 R. Ich nauką jaśnieje Kościół, jak księżyc od słońca. 
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//gm
-
 [Capitulum Laudes]
 !Ef 2:19-20
 v. Bracia: a przeto już nie jesteście gośćmi i przychodniami, aleście mieszczanie z  świętymi i domownicy Boży, wybudowani na fundamencie Apostołów i Proroków, gdzie głównym węgielnym kamieniem sam Jezus Chrystus.
 $Deo gratias.
-
-[Hymnus Laudes]
-@Commune/C1:Hymnus Vespera
 
 [Versum 2]
 V. Opowiadali dzieła Boże. 
@@ -279,47 +277,34 @@ Wy, którzyście opuścili * wszystko, poszliście za mną, stokroć weźmiecie 
 !Dz 5:41
 v. A oni szli od obliczności rady, radując się, iż się stali godnymi dla imienia Jezusowego zelżywość cierpieć.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Na wszystką ziemię * Wyszedł głos ich.
 R. Na wszystką ziemię * Wyszedł głos ich.
 V. I na krańce okręgu ziemi słowa ich.
 R. Wyszedł głos ich.
 &Gloria
 R. Na wszystką ziemię * Wyszedł głos ich.
-_
-V. Postanowisz ich książętami nad wszystką ziemią.
-R. Będą wspominać Imię Twoje, Panie.
 
 [Capitulum Sexta]
 !Dz 5:12
 v. A przez ręce Apostolskie działo się wiele znaków i cudów między ludem.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Postanowisz ich książętami * Nad wszystką ziemią.
 R. Postanowisz ich książętami * Nad wszystką ziemią.
 V. Będą wspominać Imię Twoje, Panie.
 R. Nad wszystką ziemią.
 &Gloria
 R. Postanowisz ich książętami * Nad wszystką ziemią.
-_
-V. Bardzo zaszczyceni są przyjaciele Twoi Boże.
-R. Bardzo się zmocniło ich panowanie.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Bardzo zaszczyceni są * Przyjaciele Twoi Boże.
 R. Bardzo zaszczyceni są * Przyjaciele Twoi Boże.
 V. Bardzo się zmocniło ich panowanie.
 R. Przyjaciele Twoi Boże.
 &Gloria
 R. Bardzo zaszczyceni są * Przyjaciele Twoi Boże.
-_
-V. Opowiadali sprawy Boże.
-R. I uczynki Jego rozumieli.
 
 [Ant Vespera 3]
 Przysiągł Pan, * a nie będzie Mu żal; tyś jest kapłanem na wieki.;;109
@@ -327,9 +312,6 @@ Pan posadził go * z książęty ludu Swego.;;112
 Potargałeś Panie * pęta moje, Tobie ofiaruję ofiarę chwały.;;115
 Idąc szli * i płakali, rozsiewając nasienia swoje.;;125
 Wzmocniło się * ich panowanie, w uczciwości są przyjaciele Twoi Boże.;;138
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 Bądźcie mężnymi * w wojnie i walczcie przeciw wężowi staremu, a otrzymacie królestwo wieczne, alleluja.

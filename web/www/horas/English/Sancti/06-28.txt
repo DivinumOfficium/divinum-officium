@@ -1,12 +1,13 @@
 [Rank]
 S. Irenaei Episcopi et Martyris;;Duplex;;3;;vide C2
 
-[Rule]
-vide C2;
-9 lectiones
-
 [Oratio]
 O God, who enabled blessed Irenaeus thy Martyr, and Bishop, to overcome heresy by the truth of his teaching, and happily to establish peace in the Church, give to thy people, we pray, steadfastness in holy religion, and grant us thy peace in our days.
+$Per Dominum
+
+[Oratio Vigilia]
+!For the Vigil of Blessed Peter and Paul, Apostles 
+We pray, Almighty God, that thou suffer no disturbance to shake us, who thou hast firmly established, as on a rock, on the faith of thy Apostles.
 $Per Dominum
 
 [Lectio4]
@@ -44,16 +45,6 @@ A Homily of St. Augustine the Bishop
 The threefold denial of Peter is now paid back by his threefold confession, that his tongue may serve love no less than it had served fear; and that impending death may not appear to have had more power than a present life in drawing forth the word of faith. Let it be the duty of love to feed the Lord's flock, even as it was the sign of fear to deny the Shepherd. They that feed the flock of Christ for the purpose of making the sheep their own rather than Christ's stand convicted of loving themselves, and not Christ. Yea, they stand convicted of the desire for self-glorification, or of wielding power, or of seeking worldly profit, for they shew not forth the love of obeying, serving, and pleasing God.
 &teDeum
 
-[Lectio91]
-!Cap. 25, alias 46, num. 7
-But we pray that they may not remain in the pit which they have themselves dug, but that, by conversion, they may be lawfully begotten to the Church of God, and that Christ may be formed in them, and that they may know the builder and maker of this universe to be the only true God and Lord of all. We ask these blessings for them, for we love them more profitably than they love themselves. For such is our love for them, since it is true and for their salvation, if indeed, they will receive it. For it is like a drastic remedy which consumeth the diseased and useless flesh of a wound; for it freeth them of all their pride and self-exaltation. And so we do not weary of trying, with all our might, to stretch out our hand to them.
-&teDeum
-
-[Oratio Vigilia]
-!For the Vigil of Blessed Peter and Paul, Apostles 
-We pray, Almighty God, that thou suffer no disturbance to shake us, who thou hast firmly established, as on a rock, on the faith of thy Apostles.
-$Per Dominum
-
 [Lectio Vigilia]
 !For the Vigil of Blessed Peter and Paul Apostles 
 From the Holy Gospel according to John
@@ -63,3 +54,8 @@ _
 A Homily by St. Augustine the Bishop
 !Tractatus 123 in Joannem. in medio
 To the threefold denial there is now appended a threefold confession, that his tongue may not yield a feebler service to love than to fear, and imminent death may not appear to have elicited more from his lips than present life. Let it be the office of love to feed the Lord's flock, if it was the signal of fear to deny the Shepherd. Those who have this purpose in feeding the flock of Christ, that they may have them as their own, and not as Christ's, are convicted of loving themselves, and not Christ, from the desire either of boasting, or wielding power, or acquiring gain, and not from the love of obeying, serving and pleasing God.
+
+[Lectio91]
+!Cap. 25, alias 46, num. 7
+But we pray that they may not remain in the pit which they have themselves dug, but that, by conversion, they may be lawfully begotten to the Church of God, and that Christ may be formed in them, and that they may know the builder and maker of this universe to be the only true God and Lord of all. We ask these blessings for them, for we love them more profitably than they love themselves. For such is our love for them, since it is true and for their salvation, if indeed, they will receive it. For it is like a drastic remedy which consumeth the diseased and useless flesh of a wound; for it freeth them of all their pride and self-exaltation. And so we do not weary of trying, with all our might, to stretch out our hand to them.
+&teDeum

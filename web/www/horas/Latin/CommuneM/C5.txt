@@ -5,10 +5,7 @@ Psalmi Dominica
 Antiphonas horas
 
 [Ant Matutinum]
-@CommuneM/C4:Ant Matutinum:1-14
-@Commune/C4:Ant Matutinum:9-10
-@CommuneM/C4:Ant Matutinum:17
-@Commune/C4:Ant Matutinum:14-15
+@CommuneM/C4
 
 [Lectio2]
 @Commune/C5:Lectio2:s/; 33:1-3// s/1 .*//s
@@ -65,7 +62,7 @@ R. Et voluntáte labiórum ejus non fraudásti eum.
 @Commune/C4:Responsory8
 
 [Lectio11]
-@Commune/C5:Lectio10
+@Commune/C5:Lectio8
 
 [Responsory11]
 R. Beátus vir, qui invéntus est sine mácula, et qui post aurum non ábiit, nec sperávit in thesáuris pecúniæ:
@@ -81,15 +78,6 @@ R. O beáti viri N. sancta præcónia! o inæstimábilis diléctio caritátis! q
 * Ætérnæ vitæ conjúnctus est.
 V. Cui vívere Christus fuit, et mori lucrum.
 R. Ætérnæ vitæ conjúnctus est.
-
-[Responsory TertiaM]
-@Commune/C5:Versum 1
-
-[Responsory SextaM]
-@Commune/C5:Responsory Tertia:8-9
-
-[Responsory NonaM]
-@Commune/C5:Responsory Sexta:8-9
 
 [Lectio1 pro plurium]
 @CommuneM/C4:Lectio1 in 2 loco

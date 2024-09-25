@@ -5,6 +5,9 @@
 Psalmi Dominica
 Doxology=Epi
 
+[Hymnus Matutinum]
+@Sancti/01-06:HymnusM Vespera
+
 [AntMatutinumM]
 Suscépimus, * Deus, misericórdiam tuam, † in médio templi tui.;;47
 Homo natus est * in ea, et ipse fundávit eam Altíssimus.;;86
@@ -26,9 +29,6 @@ Vénient * ad te qui detrahébant tibi, † et adorábunt vestígia pedum tuóru
 @Sancti/01-06::9-10
 ;;263;264;265
 @Sancti/01-06::14-15
-
-[Hymnus Matutinum]
-@Sancti/01-06:HymnusM Vespera
 
 [Lectio1]
 @Sancti/01-06:Lectio1
@@ -111,9 +111,8 @@ R. Cujus stellam Magi vidéntes gavísi sunt, et múnera ei obtulérunt.
 [Responsory SextaM]
 @Sancti/01-06:Responsory Tertia:8-9
 
-[Responsory NonaM]
-@Sancti/01-06:Responsory Sexta:8-9
-
 [Capitulum Nona]
 @Sancti/01-06
 
+[Responsory NonaM]
+@Sancti/01-06:Responsory Sexta:8-9

@@ -1,16 +1,8 @@
 [Rank]
 S. Laurentii Martyris;;Duplex II classis cum octava simplici;;5.1;;ex C2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 S. Laurentii Martyris;;Duplex II classis;;5;;ex C2
-
-[Rule]
-ex C2
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
 
 [Ant Vespera]
 Lorenzo * sufrió el martirio y confesó el nombre de nuestro Señor Jesucristo.
@@ -24,6 +16,17 @@ El diácono San Lorenzo * hizo el bien, dando vista a los ciegos con la señal d
 
 [Oratio]
 Te rogamos, omnipotente Dios, la gracia de que logremos apagar las llamas de nuestros vicios, Tú que diste al bienaventurado Lorenzo superar el fuego de sus tormentos.
+$Per Dominum
+
+[Octava 1]
+!Conmemoración de la Octava de S. Lorenzo
+Ant. San Lorenzo, * mientras se abrasaba en la parrilla, dijo al cruel tirano: Ya está asado, da vuelta y come. Porque los tesoros de la Iglesia que buscas, los han llevado al cielo los pobres.
+_
+V. El diácono San Lorenzo hizo el bien.
+R. Dando vista a los ciegos con la señal de la cruz.
+_
+$Oremus
+v. Te rogamos, omnipotente Dios, la gracia de que logremos apagar las llamas de nuestros vicios, Tú que diste al bienaventurado Lorenzo superar el fuego de sus tormentos.
 $Per Dominum
 
 [Invit]
@@ -62,7 +65,7 @@ R. Y al repartir los tesoros de la Iglesia entre los pobres.
 10 Me cercaron por todas partes, y no había quien me prestase socorro; volvía los ojos en busca del amparo de los hombres; pero fue en vano. 
 11 Me acordé, ¡oh Señor!, de tu misericordia desde el principio; 
 12 y de cómo salvas, Señor, a los que en ti esperan, y los libras de las naciones enemigas. 
-13 Tú ensalzaste mi morada sobre la tierra, y yo te supliqué que me librases de la muerte, que todo lo disuelve. 
+13 Tú ensalzaste mi morada sobre la tierra, y yo te supliqué que me librases de la muerte, que todo lo disuelve.
 
 [Responsory2]
 R. No temas, hijo mío, porque Yo estoy contigo, dice el Señor: 
@@ -75,7 +78,7 @@ R. Cuando anduvieres en medio del fuego no te quemarás, ni la llama tendrá ard
 14 Clamé al Señor Altísimo: Señor, Tú eres mi Padre, el campeón de mi salud; no me abandones en el día de la tribulación, en el día de la ruina y de la devastación. 
 15 Alabaré continuamente tu nombre y en mi acción de gracias te cantaré. 
 16 Escuchó el Señor mi oración, me salvó de la ruina y me sacó de todo mal.  
-17 Por esto te daré gracias y te alabaré, y bendeciré el nombre del Señor. 
+17 Por esto te daré gracias y te alabaré, y bendeciré el nombre del Señor.
 
 [Responsory3]
 R. Ataron los miembros de su cuerpo a unas parrillas: mas el Levita de Cristo se burlaba de los que iban atizando el fuego: 
@@ -146,9 +149,6 @@ R. Te mostraré los tesoros y te prometo la vida eterna.
 No pienses en darte la muerte, interpretando mal el deber de odiar tu alma en este mundo; por hacerlo así, ciertos hombres malvados y perversos, crueles e impíos, homicidas de sí mismos, se arrojan a las llamas, se ahogan, se lanzan a los precipicios y perecen. No es esta la enseñanza de Cristo; al contrario, Él mismo respondió al diablo cuando éste le sugería el pensamiento de precipitarse de lo alto del templo: “Retírate, Satanás, porque está escrito: No tentarás al Señor tu Dios”. Y el Señor dijo a Pedro, indicándole la muerte con que debía glorificar a Dios: Cuando eras joven, te ceñías tu mismo, e ibas adonde querías: pero cuando serás viejo, otro te ceñirá y te llevará adonde no quieras. Palabras que nos enseñan que el que va en pos de Jesucristo no debe darse la muerte, sino recibirla de otro.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
 !2 Cor 9:6
 v. Hermanos: El que siembra tacañamente, tacañamente cosechará; y el que siembra generosamente, generosamente cosechará.
@@ -161,37 +161,6 @@ R. Su caridad es constante, sin falta.
 [Ant 2]
 En el tormento * no te negué, ¡oh Dios!, y en medio del fuego te confesé, ¡oh Cristo! Sondeaste mi corazón y me visitaste de noche. Me probaste con el fuego y no encontraste malicia en mí.
 
-[Lectio Prima]
-!2 Cor 9:8-9
-v. Tiene Dios poder para colmaros de toda clase de favores, de modo que, teniendo siempre lo suficiente, os sobre para obras de caridad. Como dice la Escritura: Reparte limosna a los pobres, su caridad es constante, sin falta.
-
-[Capitulum Sexta]
-!2 Cor 9:7
-v. Cada uno dé como haya decidido su conciencia: no a disgusto ni por compromiso; porque al que da de buena gana lo ama Dios.
-$Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Versum 3]
-V. El diácono San Lorenzo hizo el bien.
-R. Dando vista a los ciegos con la señal de la cruz.
-
-[Ant 3]
-San Lorenzo, * mientras se abrasaba en la parrilla, dijo al cruel tirano: Ya está asado, da vuelta y come. Porque los tesoros de la Iglesia que buscas, los han llevado al cielo los pobres.
-
-[Octava 1]
-!Conmemoración de la Octava de S. Lorenzo
-Ant. San Lorenzo, * mientras se abrasaba en la parrilla, dijo al cruel tirano: Ya está asado, da vuelta y come. Porque los tesoros de la Iglesia que buscas, los han llevado al cielo los pobres.
-_
-V. El diácono San Lorenzo hizo el bien.
-R. Dando vista a los ciegos con la señal de la cruz.
-_
-$Oremus
-v. Te rogamos, omnipotente Dios, la gracia de que logremos apagar las llamas de nuestros vicios, Tú que diste al bienaventurado Lorenzo superar el fuego de sus tormentos.
-$Per Dominum
-
 [Octava 2]
 !Conmemoración de la Octava de S. Lorenzo
 Ant. En el tormento * no te negué, ¡oh Dios!, y en medio del fuego te confesé, ¡oh Cristo! Sondeaste mi corazón y me visitaste de noche. Me probaste con el fuego y no encontraste malicia en mí.
@@ -202,6 +171,22 @@ _
 $Oremus
 v. Te rogamos, omnipotente Dios, la gracia de que logremos apagar las llamas de nuestros vicios, Tú que diste al bienaventurado Lorenzo superar el fuego de sus tormentos.
 $Per Dominum
+
+[Lectio Prima]
+!2 Cor 9:8-9
+v. Tiene Dios poder para colmaros de toda clase de favores, de modo que, teniendo siempre lo suficiente, os sobre para obras de caridad. Como dice la Escritura: Reparte limosna a los pobres, su caridad es constante, sin falta.
+
+[Capitulum Sexta]
+!2 Cor 9:7
+v. Cada uno dé como haya decidido su conciencia: no a disgusto ni por compromiso; porque al que da de buena gana lo ama Dios.
+$Deo gratias
+
+[Versum 3]
+V. El diácono San Lorenzo hizo el bien.
+R. Dando vista a los ciegos con la señal de la cruz.
+
+[Ant 3]
+San Lorenzo, * mientras se abrasaba en la parrilla, dijo al cruel tirano: Ya está asado, da vuelta y come. Porque los tesoros de la Iglesia que buscas, los han llevado al cielo los pobres.
 
 [Commemoratio 3] (rubrica 1570 aut rubrica 1910)
 !Conmemoración de los Ss. Tiburcio y Susana, Mártires

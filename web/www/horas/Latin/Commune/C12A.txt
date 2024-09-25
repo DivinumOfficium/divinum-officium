@@ -15,12 +15,8 @@ no Te Deum
 [Ant Vespera]
 @Sancti/03-25
 
-[Capitulum Laudes]
-@Sancti/03-25:Lectio Prima
-$Deo gratias
-
 [Versum 1]
-@Commune/C11:Versum 2
+@Commune/C6:Versum 2
 
 [Ant 1]
 @Tempora/Adv1-0:Ant 2
@@ -99,13 +95,12 @@ _
 $Deo gratias
 
 [Versum 2]
-@Commune/C12
+@Commune/C10
 
 [Ant 2]
 @Tempora/Adv1-0:Ant 2
 
 [Minor final]
-
 @Commune/C12:Pre oratio
 @:Oratio
 @Commune/C12:Minor final

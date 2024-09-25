@@ -1,12 +1,15 @@
 [Rank]
 S. Joannis Leonardi Confessoris;;Duplex;;3;;vide C5
 
-[Rule]
-vide C5;
-9 lectiones
-
 [Oratio]
 Oh Dios, que suscitaste a San Juan Leonardi para propagar la fe entre las naciones paganas; y por medio de él, fundaste en tu Iglesia una nueva congragación para instruir a los fieles: concédenos sacar provecho de sus enseñanzas, para alcanzar la recompensa eterna.
+$Per Dominum
+
+[Commemoratio]
+!Conmemoración de S. Dionisio, Obispo, y Ss. Rústico y Eleuterio, Mártires
+@Commune/C3:Oratio proper
+$Oremus
+v. ¡Oh Dios, que en este día fortaleciste al obispo San Dionisio con la virtud de la constancia en el martirio, y te dignaste asociarle a Rústico y Eleuterio para anunciar tu gloria a los gentiles!; concédenos que, a su ejemplo y por amor a ti, despreciemos el favor del mundo y temamos ninguna de sus adversidades.
 $Per Dominum
 
 [Lectio4]
@@ -18,22 +21,15 @@ Debido a los trabajos tan saludables, Juan soportó feroces persecuciones de hom
 [Lectio6]
 Dolorido porque a muchas partes no había llegado aún la luz de la fe, estaba inflamado de deseos de difundir la verdadedera religión entre los infieles. Pero cuando San Felipe Neri, que llamó a Juan un verdadero reformador, le mostró que él y su Congregación estaban destinados a educar al pueblo italiano, Juan accedió a la voluntad de Dios. Sin embargo, no descuido ayudar a los infieles a conocer la luz verdadera, en caso de que pudiera hacer algo. Por lo que hizo un plan, con el piadoso prelado Vives, de preparar bien y formar un grupo de sacerdotes para enviarlos a regiones remotas a propagar la fe. Por lo tanto, y con justa razón, es considerado como fundador de ese instituto tan ilustre de los soberanos pontífices que sirve para difundir la fe católica en el mundo. Juan escribió muchos trabajos sobre teología y moralidad, bien adaptados a los hombres de su tiempo. Finalmente, revestido de cilicio y cubierto de cenizas, sin fallar nunca a su sagrado ministerio, voló al Señor en Roma el nueve de octubre de mil seinciento nueve, a la edad de sesenta y seis años. Famoso por su santidad y los milagros que realizó, Pío IX lo incluyó entre los bianventurados. En 1938, en la fiesta solemne de Pascua, Pío XI lo inscribió entre los Santos.
 
+[Lectio94]
+Juan Leonardi nació cerca de la ciudad de Lucca; desde niño se mostró grave y meditativo. A los 26 años, Dios lo llamó para ingresar en las filas del clero. Comenzó por estudiar los rudimentos del latín con los niños pequeños, pero hizo tales progresos en las letras y en las disciplinas de la filosofía y la teología, que apenas cuatro años después estaba bajo obediencia, promovido al sacerdocio. Fundó la congregación de los Clérigos Regulares de la Madre de Dios, por cuyo trabajo y celo se realizó un gran cambio de actitud en la República de Lucca. Esto despertó contra Juan las amargas quejas de los hombres malvados, pero lo soportó todo con gran serenidad, obteniendo la confirmación de su congregación por parte de Gregorio XIII. Estaba muy apenado por las multitudes que en lugares distantes carecían de la luz del Evangelio y, habiendo tomado consejo del devoto Vives, fundó un instituto de sacerdotes cuyo fin fue formar jóvenes para ser enviados a propagar la fe en países lejanos. Habiendo llevado a cabo su sagrado ministerio sin defecto, vestido con cilicio y cenizas, fue al Señor en Roma el 9 de octubre del año 1609, y fue contado entre los Santos por el Papa Pío XI.
+&teDeum
+
 [Lectio7]
 @Commune/C1a:Lectio7
 
 [Lectio8]
 @Commune/C1a:Lectio8
 
-[Commemoratio]
-!Conmemoración de S. Dionisio, Obispo, y Ss. Rústico y Eleuterio, Mártires
-@Commune/C3:Oratio proper
-$Oremus
-v. ¡Oh Dios, que en este día fortaleciste al obispo San Dionisio con la virtud de la constancia en el martirio, y te dignaste asociarle a Rústico y Eleuterio para anunciar tu gloria a los gentiles!; concédenos que, a su ejemplo y por amor a ti, despreciemos el favor del mundo y temamos ninguna de sus adversidades.
-$Per Dominum
-
 [Lectio93]
 Dionisio, ateniense y uno de los jueces del Areópago, profesando aún los errores del paganismo, exclamó al ver eclipsarse el sol contra las leyes de la naturaleza en el día en que Nuestro Señor fue clavado en la cruz: O sufre el Dios de la naturaleza, o se destruirá la máquina del universo. Cuando el apóstol Pablo vino al Areópago de Atenas, y predicó a Cristo, Dionisio, con otros muchos, creyó en Cristo; bautizado por el Apóstol, le puso al frente de la Iglesia de Atenas. Estando en Roma el papa Clemente lo envió a las Galias para predicar el Evangelio; con el presbítero Rústico y el diácono Eleuterio se dirigió a París, en donde, después de haber convertido a muchos, el prefecto Fescenio mandó atormentarlos de varias maneras y luego decapitarlos, recibiendo la corona del martirio en el día séptimo de los idus de octubre.
-
-[Lectio94]
-Juan Leonardi nació cerca de la ciudad de Lucca; desde niño se mostró grave y meditativo. A los 26 años, Dios lo llamó para ingresar en las filas del clero. Comenzó por estudiar los rudimentos del latín con los niños pequeños, pero hizo tales progresos en las letras y en las disciplinas de la filosofía y la teología, que apenas cuatro años después estaba bajo obediencia, promovido al sacerdocio. Fundó la congregación de los Clérigos Regulares de la Madre de Dios, por cuyo trabajo y celo se realizó un gran cambio de actitud en la República de Lucca. Esto despertó contra Juan las amargas quejas de los hombres malvados, pero lo soportó todo con gran serenidad, obteniendo la confirmación de su congregación por parte de Gregorio XIII. Estaba muy apenado por las multitudes que en lugares distantes carecían de la luz del Evangelio y, habiendo tomado consejo del devoto Vives, fundó un instituto de sacerdotes cuyo fin fue formar jóvenes para ser enviados a propagar la fe en países lejanos. Habiendo llevado a cabo su sagrado ministerio sin defecto, vestido con cilicio y cenizas, fue al Señor en Roma el 9 de octubre del año 1609, y fue contado entre los Santos por el Papa Pío XI.
-&teDeum

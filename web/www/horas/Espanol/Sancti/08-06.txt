@@ -1,17 +1,8 @@
 [Rank]
 In Transfiguratione Domini Nostri Jesu Christi;;Duplex II classis;;5.1;;
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Transfiguratione Domini Nostri Jesu Christi;;Duplex II classis;;5;;
-
-[Rule]
-proper
-Festum Domini
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Doxology=Epi
 
 [Ant Vespera]
 Jesús tomó consigo * a Pedro, a Santiago y a su hermano Juan, y se los llevó aparte a una montaña alta, y se transfiguró delante de ellos.
@@ -64,13 +55,6 @@ Cristo Jesús, * reflejo de la gloria del Padre e impronta de su ser, sostiene e
 [Oratio]
 Oh Dios, que corroboraste los misterios de la fe en la gloriosa transfiguración de tu Unigénito con el testimonio de los Padres; e hiciste esclarecer maravillosamente la adopción perfecta de tus hijos en la voz que salió de la resplandeciente nube: otórganos propicio que seamos coherederos del mismo Rey de la gloria y sus compañeros en la misma.
 $Per eumdem
-
-[Commemoratio 2]
-!Conmemoración de los Ss. Sixto II, Papa, y Felicísimo y Agapito, Mártires
-@Commune/C3:Oratio proper
-$Oremus
-v. ¡Oh Dios, que nos concedes celebrar la solemnidad de tus santos mártires Sixto, Felicísimo y Agapito!; danos el gozo de su compañía en la eterna bienaventuranza.
-$Per Dominum
 
 [Invit]
 Al sumo Rey de la gloria, * a Cristo, adorémosle.
@@ -127,7 +111,7 @@ R. Este es mi Hijo muy amado, en quien estoy complaciéndome: escuchadle.
 18 Y esta voz bajada del cielo la oímos los que con Él estábamos en el monte santo. 
 19 Y tenemos aún algo más firme, a saber: la palabra profética, a la cual muy bien hacéis en atender, como a lámpara que luce en lugar tenebroso hasta que luzca el día y el lucero se levante en vuestros corazones. 
 20 Pues debéis ante todo saber que ninguna profecía de la Escritura es de privada interpretación, 
-21 porque la profecía no ha sido en los tiempos pasados proferida por humana voluntad, antes bien, movidos del Espíritu Santo, hablaron los hombres de Dios. 
+21 porque la profecía no ha sido en los tiempos pasados proferida por humana voluntad, antes bien, movidos del Espíritu Santo, hablaron los hombres de Dios.
 
 [Responsory3]
 R. Mirad qué amor hacia nosotros ha tenido el Padre: 
@@ -184,7 +168,7 @@ V. El cual ha destruido la muerte e iluminado la vida de suerte que no pueda suf
 R. Por la iluminación de Jesucristo, nuestro Salvador.
 
 [Lectio8]
-Ved cómo habla nuestro Señor del reino y de la gehena: El que hallare su alma la perderá, y el que la perdiere por mi causa la hallará; y: "Dará a cada uno según sus obras", se refiere a ambas cosas. Tras haber hablado de una y otra, permite fijar la mirada en el reino, pero no hace lo mismo con la gehena, porque esto habría sido necesario si se tratara de hombres groseros e ignorantes; pero no lo era tratándose de los Apóstoles, hombres virtuosos y perspicaces a quienes bastaba confirmar con la vista de cosas mejores. Convenía también mucho más al mismo Señor. No prescindió del todo del otro medio, y a veces pone ante los ojos el horrible cuadro de la gehena, como, por ejemplo, al explicar la historia de Lázaro y al hablar del acreedor que reclama cien denarios.
+Ved cómo habla nuestro Señor del reino y de la gehena: El que hallare su alma la perderá, y el que la perdiere por mi causa la hallará; y: “Dará a cada uno según sus obras”, se refiere a ambas cosas. Tras haber hablado de una y otra, permite fijar la mirada en el reino, pero no hace lo mismo con la gehena, porque esto habría sido necesario si se tratara de hombres groseros e ignorantes; pero no lo era tratándose de los Apóstoles, hombres virtuosos y perspicaces a quienes bastaba confirmar con la vista de cosas mejores. Convenía también mucho más al mismo Señor. No prescindió del todo del otro medio, y a veces pone ante los ojos el horrible cuadro de la gehena, como, por ejemplo, al explicar la historia de Lázaro y al hablar del acreedor que reclama cien denarios.
 
 [Responsory8]
 R. Dios, que hizo brotar la luz de las tinieblas, ha brillado en nuestros corazones, 
@@ -194,13 +178,13 @@ R. Para difundir la luz del conocimiento y de la gloria de Dios sobre la faz de 
 &Gloria
 R. Para difundir la luz del conocimiento y de la gloria de Dios sobre la faz de Jesucristo. 
 
+[Lectio9]
+Nosotros, fijémonos en la filosofía de San Mateo, el cual no omitió los nombres de los Apóstoles preferidos a los demás. Lo mismo vemos en San Juan, en el cual tanto abundan, cuidadosamente consignadas con gran fidelidad, las noticias que más pueden contribuir a la gloria de Pedro. Y es que en aquella comunidad de los Apóstoles no cabían los celos, ni la vanagloria. Jesús tomó, pues, aparte a los primeros entre los Apóstoles. ¿Por qué llevó consigo a ellos solamente? Al parecer, por su superioridad sobre los demás. ¿Y por qué lo hizo al cabo de seis días, y no inmediatamente? Para que los demás discípulos no se sintieran movidos de pasiones humanas; por este motivo ni siquiera nombró a los que iba a llevar consigo.
+&teDeum
+
 [Lectio93]
 !De los Ss. Sixto II Papa, y Felicísimo y Agapito Mártires
 Sixto, ateniense, convertido de filósofo en discípulo de Cristo, fue acusado en la persecución de Valeriano de predicar la fe cristiana; arrestado y conducido al templo de Marte, le amenazaron con la pena capital si no sacrificaba a este ídolo. Mas él se negó a tal impiedad. Al dirigirse al suplicio, encontró a San Lorenzo, quien le dijo contristado: “Adónde vais, oh padre, sin vuestro hijo? ¿Adónde vais, oh santo Pontífice, sin vuestro Diácono?” A lo que Sixto respondió: “No te abandono, hijo mío; mayores combates te están reservados por la fe de Jesucristo. En tres días vendrás a reunirte conmigo: al Pontífice le seguirá el Levita; entre tanto, si algo te queda de los tesoros de la Iglesia, dalo a los pobres”. Sixto padeció la muerte ese mismo día, junto con los diáconos Felicísimo y Agapito y los subdiáconos Jenaro, Magno, Vicente y Esteban. Fue sepultado en el cementerio de Calixto, el día 8º de los idus de agosto; los demás en el cementerio de Pretextato. Ocupó la Santa Sede 11 meses y 12 días. En una ordenación de diciembre, ordenó 4 Presbíteros y 7 Diáconos y consagró 2 Obispos.
-&teDeum
-
-[Lectio9]
-Nosotros, fijémonos en la filosofía de San Mateo, el cual no omitió los nombres de los Apóstoles preferidos a los demás. Lo mismo vemos en San Juan, en el cual tanto abundan, cuidadosamente consignadas con gran fidelidad, las noticias que más pueden contribuir a la gloria de Pedro. Y es que en aquella comunidad de los Apóstoles no cabían los celos, ni la vanagloria. Jesús tomó, pues, aparte a los primeros entre los Apóstoles. ¿Por qué llevó consigo a ellos solamente? Al parecer, por su superioridad sobre los demás. ¿Y por qué lo hizo al cabo de seis días, y no inmediatamente? Para que los demás discípulos no se sintieran movidos de pasiones humanas; por este motivo ni siquiera nombró a los que iba a llevar consigo.
 &teDeum
 
 [Ant Laudes]
@@ -211,7 +195,7 @@ Nosotros, fijémonos en la filosofía de San Mateo, el cual no omitió los nombr
 v. Aguardamos a un Salvador: el Señor Jesucristo. Él transformará nuestra condición humilde, según el modelo de su condición gloriosa.
 $Deo gratias
 
-[HymnusM Laudes]
+[Hymnus Laudes]
 v. ¡Oh Jesús, luz bendita de las almas!, 
 cuando iluminas nuestros corazones, 
 ahuyentas las tinieblas del pecado, 
@@ -233,7 +217,7 @@ y el Espíritu Santo,
 por los siglos sempiternos. 
 Amén.
 
-[Hymnus Laudes]
+[HymnusM Laudes]
 v. ¡Oh Jesús, luz bendita de las almas!, 
 cuando iluminas nuestros corazones, 
 ahuyentas las tinieblas del pecado, 
@@ -261,6 +245,13 @@ R. Insignia de santidad, gloria y honor.
 
 [Ant 2]
 Una voz * desde la nube decía: Éste es mi Hijo, el Amado, en Él me he complacido. Escuchadlo. Aleluya.
+
+[Commemoratio 2]
+!Conmemoración de los Ss. Sixto II, Papa, y Felicísimo y Agapito, Mártires
+@Commune/C3:Oratio proper
+$Oremus
+v. ¡Oh Dios, que nos concedes celebrar la solemnidad de tus santos mártires Sixto, Felicísimo y Agapito!; danos el gozo de su compañía en la eterna bienaventuranza.
+$Per Dominum
 
 [Lectio Prima]
 !Ap 21, 10-11; 21, 23.
@@ -292,10 +283,6 @@ R. Lo coronaste, Señor, de gloria y dignidad * Aleluya, aleluya.
 _
 V. Tu victoria ha engrandecido su fama. Aleluya.
 R. Lo has vestido de honor y majestad. Aleluya.
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
 
 [Responsory Nona]
 R.br. Tu victoria ha engrandecido mi fama * Aleluya, aleluya. 

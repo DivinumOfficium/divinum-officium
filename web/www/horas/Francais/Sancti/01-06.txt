@@ -1,16 +1,6 @@
 [Rank]
 In Epiphania Domini;;Duplex I classis;;7
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Special Matutinum Incipit
-Doxology=Epi
-9 lectiones
-Psalm5 Vespera=116
-Psalm5 Vespera3=113
-Festum Domini
-
 [Ant Vespera]
 Engendré avant l’aurore * et avant les siècles, le Seigneur, notre Sauveur, aujourd’hui, au monde est apparu.
 Elle est venue, * ta lumière, Jérusalem, et la gloire du Seigneur s’est levée sur toi et les Nations marcheront à ta lumière, alléluia.
@@ -56,11 +46,11 @@ Les Mages * voyant l’étoile, se dirent l’un à l’autre : Voici le signe d
 O Dieu qui aujourd’hui avez révélé Votre Fils Unique aux Gentils guidés par une étoile ; accordez-nous miséricordieusement que Vous connaissant déjà par la foi, nous soyons conduits jusqu’à la contemplation de Votre splendeur.
 $Per eumdem
 
-[Hymnus Matutinum]
-@Sancti/01-06:Hymnus Vespera
-
 [Invit]
 Le Christ nous est apparu, * Venez, adorons-le.
+
+[Hymnus Matutinum]
+@Sancti/01-06:Hymnus Vespera
 
 [Ant Matutinum]
 Apportez au Seigneur * votre offrande, fils de Dieu, et adorez le Seigneur dans son saint parvis.;;28

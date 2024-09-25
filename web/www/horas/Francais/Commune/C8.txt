@@ -1,14 +1,6 @@
 [Name]
 Officium Dedicationis Ecclesiae
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-Psalm5 Vespera=147
-Festum Domini
-Divinum auxilium
-
 [Ant Vespera]
 A votre maison, * Seigneur, convient la sainteté, tout le long des jours;;109
 Ma maison, * maison de prière on l’appellera.;;110
@@ -71,25 +63,20 @@ $Per Dominum
 [Invit]
 A la maison de Dieu, convient la sainteté ; * Son époux le Christ, en elle adorons-le.
 
-[Hymnus Matutinum]
-@Commune/C8:Hymnus Vespera
-
 [Ant Matutinum]
 Élevez vos portes, * princes, et élevez-vous portes éternelle.;;23
 Le Seigneur * me sera Dieu, et cette pierre s’appellera la maison de Dieu.;;45
 Moïse édifia * un autel au Seigneur Dieu.;;47
-V. A votre maison, Seigneur, convient la sainteté.
-R. Tout le long des jours.
 Ce lieu * n’est rien d’autre que la maison de Dieu et la porte du ciel.;;83
 Jacob vit une échelle * dont le sommet touchait aux deux et les Anges descendant, et il dit : Vraiment, ce lieu est saint.;;86
 Jacob érigea * la pierre en stèle de souvenir, répandant de l’huile par-dessus.;;87
-V. Ma maison.
-R. Maison de prière on l’appellera.
 Çelui qui habite * dans le secours du Très-Haut demeurera sous la protection du Dieu du ciel.;;90
 Le temple de Dieu * est saint, il est construction de Dieu, il est édifié par Dieu.;;95
 Bénie soit * la gloire du Seigneur, du haut de son lieu saint, alléluia.;;98
-V. Voici la maison du Seigneur, solidement édifiée.
-R. Elle a été bien fondée sur le roc ferme.
+
+[Nocturn 2 Versum]
+V. Ma maison.
+R. Maison de prière on l’appellera.
 
 [Lectio1]
 Du second livre des Paralipomènes.
@@ -185,13 +172,6 @@ R. Et les tours de Jérusalem seront construites avec des perles.
 Mais pour n’avoir pas l’air d’être dédaigneux des pauvres, en laissant trop vite cet aveugle, pour passer au riche, arrêtons-nous à le regarder puisque le Seigneur lui aussi l’a fait ; interrogeons-le, puisque le Christ aussi l’a interrogé. Nous l’interrogerons, à cause de notre ignorance ; tandis que le Christ l’a interrogé en raison de sa science. Nous l’interrogerons pour savoir pourquoi il a été guéri ; le Christ l’a interrogé, pour que nous apprenions d’un seul, comment, en grand nombre, nous mériterons de voir le Seigneur. Il l’a interrogé en effet pour que nous croyions que personne ne peut être sauvé si ce n’est celui qui confesse la vérité.
 &teDeum
 
-[Ant Laudes]
-A votre maison, * Seigneur, convient la sainteté, tout le long des jours.
-Ma maison, * maison de prière on l’appellera.
-Voici la maison du Seigneur, * solidement édifiée ; elle est bien fondée sur la pierre ferme.
-Elle est bien fondée, * la maison du Seigneur, sur la pierre ferme.
-Pierres précieuses, * tous tes murs, et les tours de Jérusalem seront construites avec des perles.
-
 [Capitulum Laudes]
 !Apo 21:2
 v. J'ai vu la cité sainte, la Jérusalem nouvelle, descendant du ciel, d’auprès de Dieu, préparée comme une épouse parée pour son mari.
@@ -234,9 +214,6 @@ Auquel louange, puissance et gloire
 Soient dans les siècles éternels.
 Ainsi soit-il.
 
-[Versum 2]
-@:Versum 1
-
 [Ant 2]
 Zachée, * hâte-toi de descendre, car c’est dans ta maison qu’il me faut demeurer aujourd’hui. Et lui, se hâta de descendre et reçut, tout joyeux, Jésus, dans sa maison. En ce jour, à cette maison, Dieu a donné le salut, alléluia.
 
@@ -244,14 +221,15 @@ Zachée, * hâte-toi de descendre, car c’est dans ta maison qu’il me faut de
 !Apo 21:4-5
 v. Et Dieu essuiera toute larme de leurs yeux, et dès lors il n’y aura plus de mort, plus de deuil, plus de cri, et il n’y aura plus de douleur, parce que les premières choses sont passées. Et celui qui siégeait sur le trône dit : Voici que je fais toutes choses nouvelles.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. A votre maison, Seigneur, * Convient la sainteté.
 R. A votre maison, Seigneur, * Convient la sainteté.
 V. Tout le long des jours.
 R. Convient la sainteté.
 &Gloria
 R. A votre maison, Seigneur, * Convient la sainteté.
-_
+
+[Versum Tertia]
 V. Ce lieu est saint, dans lequel prie le prêtre.
 R. Pour les délits et les péchés du peuple.
 
@@ -260,30 +238,23 @@ R. Pour les délits et les péchés du peuple.
 v. Et j’entendis une grande voix qui, du trône, disait : Void le tabernacle de Dieu avec les hommes, et il habitera avec eux, et eux seront son peuple et Dieu lui- même, avec eux sera leur Dieu.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Ce lieu est saint, * Dans lequel prie le prêtre.
 R. Ce lieu est saint, * Dans lequel prie le prêtre.
 V. Pour les délits et les péchés du peuple.
 R. Dans lequel prie le prêtre.
 &Gloria
 R. Ce lieu est saint, * Dans lequel prie le prêtre.
-_
-V. Voici la maison du Seigneur, solidement édifiée.
-R. Elle a été bien fondée sur le roc ferme.
 
-[Capitulum Nona]
-!Apo 21:4-5
-v. Et Dieu essuiera toute larme de leurs yeux, et dès lors il n’y aura plus de mort, plus de deuil, plus de cri, et il n’y aura plus de douleur, parce que les premières choses sont passées. Et celui qui siégeait sur le trône dit : Voici que je fais toutes choses nouvelles.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Voici la maison du Seigneur, * Solidement édifiée.
 R. Voici la maison du Seigneur, * Solidement édifiée.
 V. Elle a été bien fondée sur le roc ferme.
 R. Solidement édifiée.
 &Gloria
 R. Voici la maison du Seigneur, * Solidement édifiée.
-_
+
+[Versum Nona]
 V. Elle est bien fondée, la maison du Seigneur.
 R. Sur la pierre ferme.
 

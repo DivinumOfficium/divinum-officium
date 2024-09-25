@@ -1,74 +1,40 @@
+@Sancti/02-05
+
 [Rank]
-S. Agathæ Virginis et Martyris;;Duplex majus;;4;;ex CommuneM/C6
+S. Agathæ Virginis et Martyris;;Duplex majus;;4;;ex C6
 
 [Rank] (rubrica 196)
-S. Agathae Virginis et Martyris;;Duplex;;3;;ex CommuneM/C6
+S. Agathae Virginis et Martyris;;Duplex;;3;;vide C6
 
 [Rule]
+ex C6
 12 lectiones
+in 1 Nocturno Lectiones ex Commune in 2 loco;
+in 3 Nocturno Lectiones ex Commune in 3 loco;
 
 [Rule] (rubrica 196)
-Lectio1 tempora
-
-[Ant Vespera 3]
-@Sancti/02-05:Ant Vespera:s/\./_/gs s/_/.;;109/ s/_/.;;111/ s/_/.;;112/ s/_/.;;126/ s/_//
-
-[Capitulum Laudes]
-@Commune/C7
+vide C6;
+scriptura1960
 
 [Oratio]
 @Commune/C6::s/N\./Agathæ/
-
-[Ant Matutinum 3N]
-Beata Agatha * ingréssa cárcerem, expándit manus suas ad Deum et dixit: Dómine qui me fecísti víncere torménta carnifícium, jube me ad tuam misericórdiam perveníre.
 
 [AntMatutinumM]
 Et si ingenua es, * cur te ostendis servilem personam? Quia ancilla Christia sum, ideo me ostendo servilem personam;;2
 Agatha ingréssa cárcerem, benedicébat Dóminum Jesum Christum;;86
 Mens mea * solidáta est, et a Christo fundáta;;95
 
+[Ant Matutinum 3N]
+Beata Agatha * ingréssa cárcerem, expándit manus suas ad Deum et dixit: Dómine qui me fecísti víncere torménta carnifícium, jube me ad tuam misericórdiam perveníre.
+
 [Ant Matutinum]
 @Sancti/02-05::1
 @:AntMatutinumM:1
-@Sancti/02-05::2-3 s/2/4/ s/3/5/
-@Sancti/02-05::6-7 s/4/8/ s/5/10/
-@Sancti/02-05::4-5
-@Sancti/02-05::11-13 s/15/44/ s/14/15/ s/10/14/
-@Sancti/02-05::8 s/8/84/
+@Sancti/02-05::2-5 s/4/8/ s/5/10/ s/2/4/ s/3/5/
+@Sancti/02-05::7-9 s/15/44/ s/14/15/ s/10/14/
+@Sancti/02-05::6 s/8/84/
 @:AntMatutinumM:2-3
-@Sancti/02-05::9-10
 ;;249;250;251
-@Sancti/02-05::14-15
-
-[Lectio1]
-@CommuneM/C6:Lectio1 in 2 loco
-
-[Responsory1]
-@Sancti/02-05
-
-[Lectio2]
-@CommuneM/C6:Lectio2 in 2 loco
-
-[Lectio2] (rubrica 196)
-@Commune/C6:Lectio2 in 2 loco
-
-[Responsory2]
-@Sancti/02-05
-
-[Lectio3]
-@CommuneM/C6:Lectio3 in 2 loco
-
-[Lectio3] (rubrica 196)
-@Commune/C6:Lectio3 in 2 loco
-
-[Responsory3]
-@Sancti/02-05
-
-[Lectio4]
-@CommuneM/C6:Lectio4 in 2 loco
-
-[Lectio94]
-@Sancti/02-05:Lectio94
 
 [Responsory4]
 R. Gaudeamus † omnes in Domino, diem festum celebrantes sub honore beatæ Agathæ Virginis;
@@ -103,20 +69,11 @@ R. Qui me dignátus est † ab omni plaga curáre, et mamíllam meam meo péctor
 V. Medicínam carnálem córpori meo numquam exhíbui, sed hábeo Dóminum Jesum Christum, qui solo sermóne restáurat univérsa.
 R. Ipsum ínvoco Deum vivum.
 
-[Lectio9]
-@CommuneM/C6:Lectio9 in 3 loco
-
 [Responsory9]
 @Sancti/02-05:Responsory7
 
-[Lectio10]
-@CommuneM/C6:Lectio10 in 3 loco
-
 [Responsory10]
 @Sancti/02-05:Responsory8
-
-[Lectio11]
-@CommuneM/C6:Lectio11 in 3 loco
 
 [Responsory11]
 R. Benedíctus es, † Dómine, qui liberásti corpus meum a pollutióne, et fecísti me víncere vínculum, gládium et ignem:
@@ -124,35 +81,14 @@ R. Benedíctus es, † Dómine, qui liberásti corpus meum a pollutióne, et fec
 V. Laudem tibi réferens, grátias ago, qui liberásti corpus meum a pollutióne.
 R. Súscipe me, Dómine, in número ancillárum tuárum.
 
-[Lectio12]
-@CommuneM/C6:Lectio12 in 3 loco
-
 [Responsory12]
-R. Veni, † Sponsa Christi, áccipe corónam, quam tibi Dóminus præparávit in ætérnum; pro cujus amóre sánguinem tuum fudísti,
-* Et cum Angelis in paridísum introísti.
-V. Veni, elécta mea, et ponam in te thronum meum; quia concupívit Rex spéciem tuam.
-R. Et cum Angelis in paridísum introísti.
-
-[LectioE]
-@Commune/C6a:Evangelium1
+@Commune/C6:Responsory1
 
 [MM Capitulum]
 @CommuneM/C6b
 
-[Ant Laudes]
-@Sancti/02-05:Ant Vespera
+[LectioE]
+@Commune/C6a:LectioE1
 
-[Ant 2]
-@Sancti/02-05
-
-[Capitulum Laudes]
-@Commune/C7
-
-[Capitulum Sexta]
-@Commune/C7
-
-[Capitulum Nona]
-@Commune/C7
-
-[Ant 3]
-@Sancti/02-05
+[Ant Vespera 3]
+@Sancti/02-05:Ant Vespera:s/\./_/gs s/_/.;;109/ s/_/.;;111/ s/_/.;;112/ s/_/.;;126/ s/_//

@@ -203,7 +203,7 @@ sub psalmi_matutinum {
     setbuild2("Subst Matutitunun Versus $name $dayofweek");
   }
 
-  my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 1);
+  my ($w, $c) = getantmatutinum($lang);
 
   if ($w) {
     @psalmi = split("\n", $w);
@@ -303,7 +303,14 @@ sub psalmi_matutinum {
   if ($dayname[0] =~ /Pasc[1-6]/i && $version !~ /Trident/i) {    #??? ex
     if ($version =~ /196/ && $name eq 'Asc') {
       my %r = %{setupstring($lang, 'Tempora/Pasc5-4.txt')};
-      @spec = split("\n", $r{'Ant Matutinum'});
+
+      #@spec = split("\n", $r{'Ant Matutinum'});
+      @spec = split("\n", $r{'Nocturn 1 Versum'});
+      unshift(@spec, '') for 1 .. 3;
+      push(@spec, '') for 1 .. 3;
+      push(@spec, split("\n", $r{'Nocturn 2 Versum'}));
+      push(@spec, '') for 1 .. 3;
+      push(@spec, split("\n", $r{'Nocturn 3 Versum'}));
     } else {
       @spec = split("\n", $psalmi{"Pasch Ant Dominica"});
     }
@@ -625,8 +632,11 @@ sub lectio : ScriptFunc {
     $w{"Lectio$num"} = $c->{"LectioM$num"} || $c->{"Lectio$num"};
   }
 
-  #Lectio1 tempora: special fule for Octave of Epiphany
-  if ($num <= 3 && $rule =~ /Lectio1 tempora/i && exists($scriptura{"Lectio$num"})) {
+  # Save the Nocturn of the Lectio requested:
+  my $nocturn = int(($num - 1) / ($rule =~ /12 lectiones/i ? 4 : 3)) + 1;
+
+  #Lectio1 tempora: special rule for Octave of Epiphany
+  if ($nocturn == 1 && $rule =~ /Lectio1 tempora/i && exists($scriptura{"Lectio$num"})) {
     my %c = (columnsel($lang)) ? %scriptura : %scriptura2;
     $w{"Lectio$num"} = $c{"Lectio$num"};
 
@@ -635,6 +645,7 @@ sub lectio : ScriptFunc {
     } else {
       $w{"Responsory$num"} = $c{"Responsory$num"};
     }
+    setbuild2("subst: Lectio$num tempora");
   }
 
   # TODO: There seems to be a mismatch between taking care of a conflict of Die VII infra 8vam Immaculata Conceptio. and Q.T. in Adventum
@@ -645,7 +656,7 @@ sub lectio : ScriptFunc {
 
   #scriptura1960
   if ( $num < 3
-    && $version =~ /1960/
+    && $version =~ /196/
     && $rule =~ /scriptura1960/i
     && exists($scriptura{"Lectio$num"}))
   {
@@ -657,10 +668,11 @@ sub lectio : ScriptFunc {
       my $w1 = $c{"Lectio3"};
       $w{Lectio2} .= $w1;
     }
+    setbuild2("subst: Lectio$num de scriptura (rubrics 1960)");
   }
 
   #** handle initia table (Str$ver$year)
-  if ($num < 4 && $version !~ /monastic/i) {
+  if ($nocturn == 1 && $version !~ /monastic/i) {
     my $file = initiarule($month, $day, $year);
     if ($file) { %w = resolveitable(\%w, $file, $lang); }
   }
@@ -679,17 +691,17 @@ sub lectio : ScriptFunc {
   }
   my $w = $w{"Lectio$num"};
 
-  if (($num < 4 || ($num == 4 && $rule =~ /12 lectiones/i)) && $rule =~ /Lectio1 Quad/i && $dayname[0] !~ /Quad/i) {
+  if ($nocturn == 1 && $rule =~ /Lectio1 Quad/i && $dayname[0] !~ /Quad/i) {
     $w = '';
   }    # some saints in April when after easter
 
-  if (($num < 4 || ($num == 4 && $rule =~ /12 lectiones/i)) && $commemoratio{Rank} =~ /Quattuor/i && $month == 9) {
+  if ($nocturn == 1 && $commemoratio{Rank} =~ /Quattuor/i && $month == 9) {
     $w = '';
   }    # Q.T. Septembris...
 
-  if (($num == 4 && $rule =~ /12 lectiones/i) && !exists($w{Lectio1})) {
+  if ($rule =~ /12 lectiones/i && (($num == 4 && !exists($w{Lectio1})) || ($num == 9 && !exists($w{Lectio10})))) {
     $w = '';
-  }    # accidental Lectio4 from Roman version
+  }    # accidental Lectio4 or Lectio9 from Roman version
 
   if ($w && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) {
     my @n = split('/', $winner);
@@ -708,12 +720,14 @@ sub lectio : ScriptFunc {
     !$w    # we don't have a lectio yet
     && (
       (    $communetype =~ /^ex/i
-        && $commune !~ /Sancti/i
+        && $commune =~ /Tempora/i
         && $rank > 3)    # either we have 'ex C.' on Duplex majus or higher
       || (
-        ($num < 4 || ($num == 4 && $rule =~ /12 lectiones/i))    # or we are in the first nocturn
-        && $homilyflag == 1                                      # and there is a homily to be commemorated
-        && exists($commune{"Lectio$num"})                        # which has not been superseded by the sanctoral
+        (
+          $nocturn == 1                        # or we are in the first nocturn
+          && $homilyflag == 1                  # and there is a homily to be commemorated
+          && exists($commune{"Lectio$num"})    # which has not been superseded by the sanctoral
+        )
       )
     )
   ) {
@@ -725,10 +739,25 @@ sub lectio : ScriptFunc {
   #look for commune if sancti and 'ex commune'
   if (!$w && $winner =~ /sancti/i && $rule =~ /ex C/) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
+    my $lecnum = "Lectio$num";
 
-    if (exists($com{"Lectio$num"})) {
-      $w = $com{"Lectio$num"};
+    if ($rule =~ qr/in $nocturn Nocturno Lectiones ex Commune in (\d+) loco/i) {
+      my $loco = $1;
+      $lecnum .= " in $loco loco" if $loco > 1;
+      $w = $com{$lecnum};
+
+      if ($w && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) {
+        setbuild2("Lectio$num in $loco loco ex $commune{Name}");
+      }
+    } elsif (exists($com{$lecnum})) {
+      $w = $com{$lecnum};
       if ($w && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) { setbuild2("Lectio$num ex $commune{Name}"); }
+    }
+
+    if ($w && $num == 2 && $version =~ /1960/) {
+      $lecnum =~ s/Lectio2/Lectio3/;
+      $w .= $com{$lecnum};
+      setbuild2("Contract scripture for Rubrics 1960");
     }
   }
 
@@ -916,10 +945,15 @@ sub lectio : ScriptFunc {
         setbuild2("Last lectio: Commemoratio from Sancti #$ji");
 
         if ($wc !~ /\!/) {    # add Commemoratio comment if not there already
-          my %comm = %{setupstring($lang, 'Psalterium/Comment.txt')};
-          my @comm = split("\n", $comm{'Lectio'});
-          $comment = $comm[2];
-          $w = setfont($redfont, $comment) . "\n$wc";
+          if (exists($w{Rank})) {
+            my @wcr = split(';;', $w{Rank});
+            $w = '!' . translate('Commemoratio', $lang) . ": $wcr[0]\n" . $wc;
+          } else {
+            my %comm = %{setupstring($lang, 'Psalterium/Comment.txt')};
+            my @comm = split("\n", $comm{'Lectio'});
+            $comment = $comm[2];
+            $w = setfont($redfont, $comment) . "\n$wc";
+          }
         } else {
           $w = $wc;
         }

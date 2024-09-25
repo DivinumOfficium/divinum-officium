@@ -1,62 +1,13 @@
-@Commune/C2
-
 [Name]
 Commune unius Martyris Tempore Paschali
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-
-[Ant Vespera]
-@Commune/C1p:Ant Laudes
-
-[Versum 1]
-@Commune/C1p
-
-[Ant 1]
-@Commune/C1p
-
 [Invit]
 Exulten los Santos en el Señor, * Aleluya.
-
-[Hymnus Matutinum]
-@Commune/C2:Hymnus Vespera
-
-[Ant Matutinum]
-Los justos se presentarán * con gran firmeza, ante aquellos que les persiguieron, aleluya.;;1
-;;2
-;;3
-V. Santos y justos, alegraos en el Señor, aleluya.
-R. Dios os ha escogido como su herencia, aleluya.
-He ahí * cómo fueron contados entre los hijos de Dios, y su dicha  es estar con los santos, aleluya.;;4
-;;5
-;;6
-V. Una luz perpetua iluminará, Señor, a vuestros Santos, aleluya.  
-R. Y vivirán por toda la eternidad, aleluya.
-Una luz perpetua * iluminará, Señor, a vuestros santos, y vivirán por toda la eternidad, aleluya.;;10
-;;14
-;;20
-V. Sobre ellos brillará una alegría eterna, aleluya. 
-R. Conseguirán el gozo y la exultación, aleluya.
-
-[Responsory1]
-@Commune/C1p
-
-[Responsory2]
-@Commune/C1p
-
-[Responsory3]
-@Commune/C1p
 
 [Lectio4]
 Sermón de San Ambrosio, Obispo. 
 !Sermón 22.
 Es muy digno y conveniente que después de la alegría de Pascua, que hemos celebrado en la Iglesia, juntemos nuestros goces con los de los santos mártires, y que anunciemos la gloria de la resurrección del Señor a los que fueron partícipes de su pasión. Pues si estuvieron asociados a sus oprobios deben también estarlo a su triunfo. Ya lo dice el bienaventurado Apóstol: Así como sois sus compañeros en los padecimientos, lo seréis en la resurrección. Si sufrimos con Él, dice, también reinaremos con Él. De consiguiente, los que sufrieron males por Cristo, deben también tener gloria con Cristo.
-
-[Responsory4]
-@Commune/C1p
 
 [Lectio5]
 Anunciemos, os digo yo, a los santos mártires la gloriosa Pascua del Señor, para que al anuncio de la apertura de su sepulcro, se abran también sus sepulcros. Cuando reconocemos que el cuerpo del Señor, que realmente murió, sintió de repente circular por sus venas un nuevo vigor, también se reaniman los miembros helados de los mártires, con el calor vivificante de la inmortalidad. La misma virtud que resucitó al Señor, resucita también a los mártires. Pues así como le siguieron en la pasión, así le acompañarán en su vida gloriosa. Por esto dice el Salmo: Me manifestaste los caminos de la vida. Esto se dice de la persona del Salvador resucitado, quien, de los infiernos, a donde descenció tras su muerte, se elevó a los cielos, siendo el primero en conocer el camino de la vida que hasta entonces había sido desconocido.
@@ -87,57 +38,12 @@ Homilía de San Agustín, Obispo.
 !Tratado 80 sobre San Juan.
 En este lugar del Evangelio, en donde el Señor se da el nombre de vid, y a sus discípulos el de sarmiento, habla de esta suerte en cuanto Él es la cabeza de la Iglesia y nosotros sus miembros, y en cuanto es el medianero entre Dios y los hombres. La vid y los sarmientos son de una misma naturaleza. Por lo cual, siendo Dios, de cuya naturaleza no somos nosotros, se hizo hombre, para que en Él estuviese la vid de la humana naturaleza, de la cual nosotros hombres pudiésemos ser sarmientos.
 
-[Responsory7]
-@Commune/C1p
-
-[Responsory7c]
-@Commune/C1p:Responsory2
-
 [Lectio8]
-¿Qué significa “Yo soy la verdadera vid"? ¿Acaso al decir verdadera lo hizo por oposición a la vid que toma aquí como comparación? Porque se le llama vid por analogía, no en sentido propio, del mismo modo que a sí mismo se da el nombre de oveja, cordero, león, piedra, piedra angular, y otros semejantes, los cuales más sirven para expresar las comparaciones, que para dar a conocer propiedades distintas. Cuando dice: Yo soy la verdadera vid, lo dice para distinguirse de aquella a la que se dice: ¿Cómo te has convertido en amarga, oh vida extranjera? Pues ¿cómo puede ser vid verdadera, aquella de la cual se esperaban uvas y produjo espinas? 
-
-[Responsory8]
-@Commune/C1p
+¿Qué significa “Yo soy la verdadera vid”? ¿Acaso al decir verdadera lo hizo por oposición a la vid que toma aquí como comparación? Porque se le llama vid por analogía, no en sentido propio, del mismo modo que a sí mismo se da el nombre de oveja, cordero, león, piedra, piedra angular, y otros semejantes, los cuales más sirven para expresar las comparaciones, que para dar a conocer propiedades distintas. Cuando dice: Yo soy la verdadera vid, lo dice para distinguirse de aquella a la que se dice: ¿Cómo te has convertido en amarga, oh vida extranjera? Pues ¿cómo puede ser vid verdadera, aquella de la cual se esperaban uvas y produjo espinas? 
 
 [Lectio9]
 “Yo soy, dice, la vid verdadera, y mi Padre es el labrador”. ¿Acaso son una misma cosa el labrador y la vid? Según esto, Cristo es la vid, conforme a lo que dice: “Mi Padre es mayor que yo”. Mas según lo que dice: “Yo y el Padre somos una misma cosa”. Él es el labrador. Pero no un labrador como los que ejercen su oficio obrando tan sólo externamente, sino un labrador capaz de comunicar el incremento interno. “Pues ni el que planta es algo, ni el que riega, sino Dios, que da el incremento”. Y a la verdad: “Cristo es Dios, ya que el Verbo era Dios”. Por lo cual Él y su Padre son uno mismo. Y si el “Verbo se hizo carne” no siéndolo ya, lo hizo permaneciendo lo que antes era.
 &teDeum
-
-[Ant Laudes]
-@:Ant Vespera
-
-[Capitulum Laudes]
-@Commune/C1p:Capitulum Laudes
-
-[Versum 2]
-@Commune/C1p
-
-[Ant 2]
-@Commune/C1p
-
-[Lectio Prima]
-@Commune/C1p
-
-[Responsory Tertia]
-@Commune/C1p
-
-[Capitulum Sexta]
-@Commune/C1p
-
-[Responsory Sexta]
-@Commune/C1p
-
-[Capitulum Nona]
-@Commune/C1p
-
-[Responsory Nona]
-@Commune/C1p
-
-[Versum 3]
-@Commune/C1p:Versum 2
-
-[Ant 3]
-@Commune/C1p
 
 [Lectio4 in 2 loco]
 Epístola de San Cipriano, Obispo y Mártir.

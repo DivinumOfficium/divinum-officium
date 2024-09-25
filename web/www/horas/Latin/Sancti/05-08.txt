@@ -18,6 +18,33 @@ Archángele Míchaël, * constítui te príncipem super omnes ánimas suscipién
 Angeli Dómini, * Dóminum benedícite in ætérnum.
 Angeli, Archángeli, * Throni et Dominatiónes, Principátus et Potestátes, Virtútes cælórum, laudáte Dóminum de cælis, allelúja.
 
+[Hymnus Vespera]
+v. Te, splendor et virtus Patris,
+Te vita, Jesu, córdium,
+Ab ore qui pendent tuo, 
+Laudámus inter Angelos.
+_
+Tibi mille densa míllium
+Ducum coróna mílitat;
+Sed éxplicat victor Crucem
+Míchaël salútis sígnifer.
+_
+Dracónis hic dirum caput
+In ima pellit tártara,
+Ducémque cum rebéllibus
+Cælésti ab arce fúlminat.
+_
+Contra ducem supérbiæ
+Sequámur hunc nos príncipem,
+Ut detur ex Agni throno
+Nobis coróna glóriæ.
+_
+Deo Patri sit glória,
+Qui, quos redémit Fílius,
+Et Sanctus unxit Spíritus,
+Per Angelos custódiat.
+Amen.
+
 [HymnusM Vespera]
 v. Tibi Christe splendor Patris,
 Vita, virtus córdium,
@@ -46,33 +73,6 @@ Glóriam Christu canámus,
 Glóriam Paráclito,
 Qui trinus et unus Deus
 Exstat ante sǽcula.
-Amen.
-
-[Hymnus Vespera]
-v. Te, splendor et virtus Patris,
-Te vita, Jesu, córdium,
-Ab ore qui pendent tuo, 
-Laudámus inter Angelos.
-_
-Tibi mille densa míllium
-Ducum coróna mílitat;
-Sed éxplicat victor Crucem
-Míchaël salútis sígnifer.
-_
-Dracónis hic dirum caput
-In ima pellit tártara,
-Ducémque cum rebéllibus
-Cælésti ab arce fúlminat.
-_
-Contra ducem supérbiæ
-Sequámur hunc nos príncipem,
-Ut detur ex Agni throno
-Nobis coróna glóriæ.
-_
-Deo Patri sit glória,
-Qui, quos redémit Fílius,
-Et Sanctus unxit Spíritus,
-Per Angelos custódiat.
 Amen.
 
 [Versum 1]
@@ -165,11 +165,6 @@ R. Hic est Míchaël Archángelus, princeps milítiæ Angelórum,
 V. Archángelus Míchaël præpósitus paradísi, quem honoríficant Angelórum cives.
 R. Cujus honor præstat benefícia populórum, et orátio perdúcit ad regna cælórum. (Allelúja.)
 
-[Lectio94]
-@:Lectio4
-@:Lectio6:s/.*(Nec ita)/$1/s
-&teDeum
-
 [Lectio5]
 Factum est enim, ut ex grégibus armentórum Gargáni cujúsdam taurus longe discéderet; quem diu conquisítum, in áditu spelúncæ hæréntem invenérunt. Cum vero quidam ex illis, ut taurum confígeret, sagíttam emisísset retórta sagítta in ipsum récidit sagittárium. Quæ res cum præséntes ac deínceps céteros tanto timóre affecísset, ut ad eam spelúncam própius accédere nemo audéret, Sipontíni epíscopum cónsulunt; qui, indícto trium diérum jejúnio et oratióne, rem a Deo respóndit quæri oportére.
 
@@ -189,6 +184,11 @@ V. In témpore illo salvábitur pópulus tuus omnis, qui invéntus fúerit scrip
 R. Et véniet tempus, quale non fuit, ex quo gentes esse cœpérunt, usque ad illud. (Allelúja.)
 &Gloria
 R. Et véniet tempus, quale non fuit, ex quo gentes esse cœpérunt, usque ad illud. (Allelúja.)
+
+[Lectio94]
+@:Lectio4
+@:Lectio6:s/.*(Nec ita)/$1/s
+&teDeum
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Matthǽum
@@ -232,37 +232,6 @@ R. Proptérea decórem índuit te Dóminus.
 v. Significávit Deus, quæ opórtet fíeri cito, loquens per Angelum suum servo suo Joánni, qui testimónium perhíbuit verbo Dei, et testimónium Jesu Christi, quæcúmque vidit.
 $Deo gratias
 
-[HymnusM Laudes]
-v. Christe sanctórum decus Angelórum,
-Rector humáni géneris et auctor:
-Nobis ætérnum tríbue benígnus
-Scándere cælum.
-_
-Angelum pacis Míchaël ad istam
-Cǽlitus mitti rogitámus aulam,
-Nobis ut crebro veniénte crescant
-Próspera cuncta.
-_
-Angelus fortis Gábriel, ut hostem
-Pellat antíquum, vólitet ab alto,
-Sǽpius templum véniens ad istud
-Vísere nostrum.
-_
-Angelum nobis médicum salútis
-Mitte de cælis Ráphaël, ut omnes
-Sanet ægrótos, paritérque nostros
-Dírigat actus.
-_
-Hinc Dei nostri Génitrix María,
-Totus et nobis chorus Angelórum
-Semper assístat, simul et beáta
-Cóncio tota.
-_
-Præstet hoc nobis Déitas beáta
-Patris, ac Nati, paritérque Sancti
-Spíritus, cujus réboat in omni
-Glória mundo. Amen.
-
 [Hymnus Laudes]
 v. Christe, sanctórum decus Angelórum,
 Gentis humánæ Sator et Redémptor,
@@ -294,6 +263,37 @@ Patris, ac Nati, paritérque Sancti
 Spíritus, cujus résonat per omnem
 Glória mundum.
 Amen.
+
+[HymnusM Laudes]
+v. Christe sanctórum decus Angelórum,
+Rector humáni géneris et auctor:
+Nobis ætérnum tríbue benígnus
+Scándere cælum.
+_
+Angelum pacis Míchaël ad istam
+Cǽlitus mitti rogitámus aulam,
+Nobis ut crebro veniénte crescant
+Próspera cuncta.
+_
+Angelus fortis Gábriel, ut hostem
+Pellat antíquum, vólitet ab alto,
+Sǽpius templum véniens ad istud
+Vísere nostrum.
+_
+Angelum nobis médicum salútis
+Mitte de cælis Ráphaël, ut omnes
+Sanet ægrótos, paritérque nostros
+Dírigat actus.
+_
+Hinc Dei nostri Génitrix María,
+Totus et nobis chorus Angelórum
+Semper assístat, simul et beáta
+Cóncio tota.
+_
+Præstet hoc nobis Déitas beáta
+Patris, ac Nati, paritérque Sancti
+Spíritus, cujus réboat in omni
+Glória mundo. Amen.
 
 [Versum 2]
 @:Versum 1

@@ -1,25 +1,15 @@
 [Rank]
 In Octava S. Stephani;;Simplex;;1.1;;vide Sancti/12-26
 
-[Rank] (rubrica 1960)
-Die Secunda Januarii;;Feria;;1.1;;vide Sancti/12-25
-
-[Rank] (rubrica tridentina)
-In Octava Sancti Stephani;;Duplex;;3;;ex Sancti/12-26
-
-[Rule]
-vide Sancti/12-26
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Feria Te Deum
+[Oratio]
+@Sancti/01-02
 
 [Lectio1]
 De Actibus Apostolorum
 !Acts 7:51-54
 51	(Hommes) au cou raide, incirconcis de coeur et d'oreille, vous résistez toujours à l'Esprit-Saint: tels vos pères, tels vous-mêmes.
 52	Lequel des prophètes vos pères n'ont-ils pas persécuté? Ils ont même tué ceux qui prédisaient la venue du Juste, envers lequel maintenant vous êtes devenus traîtres et meurtriers,
-53	(vous) qui avez reçu la Loi par le ministère des anges, et ne l'avez pas gardée! "
+53	(vous) qui avez reçu la Loi par le ministère des anges, et ne l'avez pas gardée! « 
 54	En entendant ces paroles, ils avaient le coeur exaspéré, et ils grinçaient des dents contre lui.
 
 [Lectio2]
@@ -31,7 +21,7 @@ De Actibus Apostolorum
 
 [Lectio3]
 !Acts 7:59; 8:1-2
-59	Pendant qu'ils lapidaient Etienne, il priait disant: « Seigneur Jésus, recevez mon esprit ! »  S'étant mis à genoux, il s'écria d'une voix forte: « Seigneur, ne leur imputez pas ce péché ! » Et, cela dit, il mourut.
+59	Pendant qu'ils lapidaient Etienne, il priait disant: « Seigneur Jésus, recevez mon esprit ! » S'étant mis à genoux, il s'écria d'une voix forte: « Seigneur, ne leur imputez pas ce péché ! » Et, cela dit, il mourut.
 1	Or Saul approuvait qu'on le fît mourir. Il y eut ce jour-là une grande persécution contre la communauté de Jérusalem; et tous, sauf les apôtres, furent dispersés dans les campagnes de la Judée et de la Samarie.
 2	Des hommes pieux ensevelirent Etienne et firent sur lui grande lamentation.
 
@@ -52,12 +42,6 @@ De Actibus Apostolorum
 
 [Lectio9]
 @Sancti/01-02
-
-[Oratio]
-@Sancti/01-02
-
-[Ant Vespera]
-@Sancti/12-26:Ant Laudes:s/$/;;115/
 
 [Commemoratio 2]
 @Sancti/12-27:Octava

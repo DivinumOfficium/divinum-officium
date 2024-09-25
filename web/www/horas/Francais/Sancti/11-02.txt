@@ -1,47 +1,16 @@
 [Rank]
 Commémoration de tous les Fidèles Défunts;;Duplex;;3;;ex C9
 
-[RankNewcal]
-Commémoration de tous les Fidèles Défunts;;Duplex Solemnity;;6;;ex C9
-
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Commémoration de tous les Fidèles Défunts;;I. classis;;6;;ex C9
 
-[Rule]
-ex C9
-Psalmi Dominica
-Antiphonas horas
-Special Conclusio
-Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium
-Limit Benedictiones Oratio
-Requiem gloria
-9 lectiones
-Responsory9
-no Te Deum
-(rubrica 1955 aut rubrica 1960) No prima Vespera
+[Rank] (rubrica innovata)
+Commémoration de tous les Fidèles Défunts;;Duplex Solemnity;;6;;ex C9
 
 [Initial]
 $Pater noster
 $Ave Maria
 (sed rubrica 1960 aut rubrica innovata omittuntur)
-
-[Special Completorium]
-$Confiteor
-$Misereatur
-$Indulgentiam
-
-&psalm(122)
-
-&psalm(141)
-
-&psalm(142)
-
-&psalm(233)
-
-&special('Oratio mortuorum1', 'English')
-
-&special('Conclusio', 'Latin')
 
 [Oratio mortuorum1]
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
@@ -49,25 +18,12 @@ $Indulgentiam
 _
 $Oremus
 v.Faites miséricorde, nous vous le demandons, Seigneur, aux âmes de tous vos serviteurs et de toutes vos servantes, pour lesquelles nous prions et supplions votre majesté, afin que par ces offices de pieuse supplication, elles méritent d’arriver au repos éternel. Par Notre-Seigneur.
-$Per Dominum 
-
-[Oratio mortuorum2]
-@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
-&Dominus_vobiscum2
-_
-$Oremus
-v. Nous, suppliants, Seigneur, répandons nos prières pour les âmes de tous vos serviteurs et servantes, afin que vous leur pardonniez miséricordieusement tout ce qu'ils ont commis par leur fragilité humaine, et que vous leur accordiez gracieusement de les délivrer des douleurs du purgatoire. 
 $Per Dominum
-
-[Conclusio]
-&Gloria
-V. Qu'ils reposent en paix.
-R. Amen.
 
 [Lectio4]
 Du livre de saint Augustin, Évêque, sur les devoirs envers les morts.
 !Chap. 2 & 3
-"Les soins apportés à l’ensevelissement, le choix de la sépulture, la pompe des obsèques sont plutôt une consolation pour les vivants, qu’un profit pour les morts. Il ne faut cependant pas, pour autant, mépriser et rejeter les corps des défunts, surtout ceux des justes et des fidèles, dont l’esprit s’est servi saintement, comme d’organes et d’instruments, pour toutes les bonnes oeuvres. Car si l’habit et l’anneau d’un père, et autres objets de ce genre, sont d’autant plus chers aux descendants, que leur amour filial est plus vivant, on ne peut absolument pas dédaigner les corps eux-mêmes, unis à nous plus intimement et plus étroitement que n’importe quels vêtements. Ils ne font pas partie des ornements ou des instruments que nous nous ajoutons du dehors, mais de la nature même de l’homme. Aussi s’occupait-on avec une piété empressée, des funérailles des justes d’autrefois, de la célébration de leurs obsèques, de la préparation de leur tombeau ; et eux-mêmes, durant leur vie, avaient ordonné à leurs enfants d’ensevelir ou même de transférer leurs corps.
+« Les soins apportés à l’ensevelissement, le choix de la sépulture, la pompe des obsèques sont plutôt une consolation pour les vivants, qu’un profit pour les morts. Il ne faut cependant pas, pour autant, mépriser et rejeter les corps des défunts, surtout ceux des justes et des fidèles, dont l’esprit s’est servi saintement, comme d’organes et d’instruments, pour toutes les bonnes oeuvres. Car si l’habit et l’anneau d’un père, et autres objets de ce genre, sont d’autant plus chers aux descendants, que leur amour filial est plus vivant, on ne peut absolument pas dédaigner les corps eux-mêmes, unis à nous plus intimement et plus étroitement que n’importe quels vêtements. Ils ne font pas partie des ornements ou des instruments que nous nous ajoutons du dehors, mais de la nature même de l’homme. Aussi s’occupait-on avec une piété empressée, des funérailles des justes d’autrefois, de la célébration de leurs obsèques, de la préparation de leur tombeau ; et eux-mêmes, durant leur vie, avaient ordonné à leurs enfants d’ensevelir ou même de transférer leurs corps.
 
 [Lectio5]
 !Chap. 4
@@ -132,6 +88,19 @@ R. Alors que vous viendrez juger ce siècle, par le feu.
 $Requiem
 R. Délivrez-moi, Seigneur, de la mort éternelle, en ce jour redoutable * Quand les cieux seront ébranlés ainsi que la terre, Alors que vous viendrez juger ce siècle, par le feu.
 
+[Conclusio]
+&Gloria
+V. Qu'ils reposent en paix.
+R. Amen.
+
+[Oratio mortuorum2]
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+&Dominus_vobiscum2
+_
+$Oremus
+v. Nous, suppliants, Seigneur, répandons nos prières pour les âmes de tous vos serviteurs et servantes, afin que vous leur pardonniez miséricordieusement tout ce qu'ils ont commis par leur fragilité humaine, et que vous leur accordiez gracieusement de les délivrer des douleurs du purgatoire. 
+$Per Dominum
+
 [Special Prima]
 &special('Initial', 'English')
 $Credo
@@ -195,3 +164,20 @@ $Amen
 &special('Oratio mortuorum', 'English')
 
 &special('Conclusio', 'English')
+
+[Special Completorium]
+$Confiteor
+$Misereatur
+$Indulgentiam
+
+&psalm(122)
+
+&psalm(141)
+
+&psalm(142)
+
+&psalm(233)
+
+&special('Oratio mortuorum1', 'English')
+
+&special('Conclusio', 'Latin')
