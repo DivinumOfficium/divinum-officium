@@ -1315,10 +1315,7 @@ sub precedence {
       : ($dayname[0] =~ /Pasc/i) ? 'Pasc'
       : '';
   } else {
-    $C10 .=
-        ($month == 1 || ($month == 2 && $day == 1)) ? 'n'
-      : ($dayname[0] =~ /Pasc/i) ? 'p'
-      : '';
+    $C10 .= ($month == 1 || ($month == 2 && $day == 1)) ? 'n' : '';
   }
 
   ### Get the relevant Office and Commemorations

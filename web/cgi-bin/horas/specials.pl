@@ -249,8 +249,35 @@ sub specials {
 
         if ($w && $w !~ /\_\nR\.br/i) {    # add responsory if missing
           $name = "Responsory $hora";
-          $name .= 'M' if ($version =~ /monastic/i);
-          ($wr, $cr) = getproprium($name, $lang, $seasonalflag, 1);
+          $name .= 'M' if ($version =~ /monastic/i);    # getproprium subsitutes Nocturn 123 Versum only from Commune
+          my ($wr, $cr) = getproprium($name, $lang, $seasonalflag, 1);
+
+          if (!$wr) {
+
+            # The Versicle in Monastic is usually taken from the 3 Nocturns in order
+            my %replace = (
+              Tertia => 'Nocturn 1 Versum',    # getproprium subsitutes Versum 1 only from Commune
+              Sexta => 'Nocturn 2 Versum',
+              Nona => 'Nocturn 3 Versum',
+            );
+            my $vers = '';
+
+            if ($version !~ /monastic/i) {
+
+              # The Short Response in Roman is usually composed of the Versicles of the 3 Nocturns
+              # with the Versicle of the next Nocturn (Laudes being the "4th") attached
+              %replace = (
+                Tertia => 'Versum Tertia',    #	getproprium substitutes Nocturn 2 Versum only from Commune
+                Sexta => 'Versum Sexta',      #	getproprium substitutes Nocturn 3 Versum only from Commune
+                Nona => 'Versum Nona',        #	getproprium substitutes Versum 2 only from Commune
+              );
+              ($wr, $cr) = getproprium("Responsory Breve $hora", $lang, $seasonalflag, 1);
+              $wr =~ s/\s*$/\n\_\n/;
+            }
+
+            ($vers, $cvers) = getproprium($replace{$hora}, $lang, $seasonalflag, 1);
+            $wr .= $vers;
+          }
           $resp = $wr || $resp;
           $w =~ s/\s*$/\n_\n$resp/;
         }
@@ -313,12 +340,21 @@ sub specials {
 
       my ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1);
 
-      if (!$resp) {    # take defaults from Roman minor hours
-        $key =~ s/Vespera/Sexta/;
-        $key =~ s/Laudes/Tertia/;
+      # Monastic Responsories at Major Hours are usually identical to Roman at Tertia and Sexta
+      if (!$resp) {
+        $key =~ s/Vespera/Breve Sexta/;
+        $key =~ s/Laudes/Breve Tertia/;
         ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1);
       }
 
+      # For backwards compatability, look for the legacy "R.br & Versicle" if necessary
+      if (!$resp) {
+        $key =~ s/Breve Sexta/Sexta/;
+        $key =~ s/Breve Tertia/Tertia/;
+        ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1);
+      }
+
+      # For backwards compatibility, remove any attached versicle
       $resp =~ s/\n?_.*//s;
 
       if ($resp) {
@@ -1238,7 +1274,7 @@ sub getproprium {
   my %w = (columnsel($lang)) ? %winner : %winner2;
 
   if (exists($w{$name})) {
-    $w = tryoldhymn(\%w, $name);
+    $w = $name =~ /Hymnus/i ? tryoldhymn(\%w, $name) : $w{$name};
     $c = ($winner =~ /sancti/i) ? 3 : 2;
   }
 
@@ -1249,23 +1285,44 @@ sub getproprium {
 
   if (!$w && $communetype && ($communetype =~ /ex/i || $flag)) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
+    my $cn = $commune;
+    my $substitute =
+        $name eq 'Nocturn 1 Versum' ? 'Versum 1'
+      : $name eq 'Responsory TertiaM' ? 'Nocturn 1 Versum'
+      : ($name eq 'Versum Tertia' || $name eq 'Responsory SextaM') ? 'Nocturn 2 Versum'
+      : ($name eq 'Versum Sexta' || $name eq 'Responsory NonaM') ? 'Nocturn 3 Versum'
+      : $name eq 'Versum Nona' ? 'Versum 2'
+      : '';
+    my $loopcounter = 0;
 
-    if (exists($com{$name})) {
-      $w = tryoldhymn(\%com, $name);
-      $c = 4;
-    }
+    while (!$w && $loopcounter < 5) {
+      $loopcounter++;
 
-    if (
-        !$w
-      && $commune =~ /Sancti/i
-      && ( $commune{Rank} =~ /;;ex\s*(C[0-9a-z]+)/i
-        || $commune{Rank} =~ /;;ex\s*(Sancti\/.*?)\s/i)
-    ) {
-      my $fn = $1;
-      my $cn = ($fn =~ /^Sancti/i) ? $fn : subdirname('Commune', $version) . "$fn";
-      my %c = %{setupstring($lang, "$cn.txt")};
-      $w = tryoldhymn(\%c, $name, $w);
-      $c = 4;
+      if (exists($com{$name})) {
+
+        # if element exists in referenced Commune, go for it
+        $w = $name =~ /Hymnus/i ? tryoldhymn(\%com, $name) : $com{$name};
+        $c = 4;
+        last;
+      } elsif ($cn =~ /^C/i && $substitute && exists($com{$substitute})) {
+
+        # for 1st Nocturn default to [Versum 1] for Commune files
+        # for Versicle ad Nonam default to [Versum 2] for Commune files
+        $w = $com{$substitute};
+        $c = 4;
+        $name .= " ex $substitute";
+        last;
+      } elsif ($cn !~ /^C/i
+        && ($com{Rank} =~ /;;ex\s*(C[0-9a-z]+)/i || $com{Rank} =~ /;;ex\s*(SanctiM?\/.*?)\s/i))
+      {
+        # if Pseudo-Commune ex Sancti, ensure daisy-chained references work (max. 5 nested references)
+        my $fn = $1;
+        $cn = ($fn =~ /^Sancti/i) ? $fn : subdirname('Commune', $version) . "$fn";
+        %com = %{setupstring($lang, "$cn.txt")};
+        next;
+      } else {
+        last;
+      }
     }
 
     if ($w) {
@@ -1276,6 +1333,58 @@ sub getproprium {
     }
   }
   return ($w, $c);
+}
+
+#*** getantmatutinum($lang)
+# Retrieve proper AntMatutinum (also from Commune if day requires so
+# and, if necessary, intersperse the Versicles for Nocturns
+# Backwards compatibility is ensured by checking if [AntMatutinum] already has the target lenght
+# Roman 9 lesson: 3 Nocturns à 3 Antiphones, Versicle and Response for a total of 15 lines
+# Monastic 12 lesson: 2 Nocturns à 6 Ant., V. & R. + 1 Ant. V. & R. for 3rd N. (total of 19 lines)
+# Monastic infra 8vam: 1 Nocturn à 6 Ant., V. & R. + 6 Ant. for 2nd Noct. (total of 14 lines)
+sub getantmatutinum {
+
+  my $lang = shift;
+
+  my @nocturns = (1, 2, 3);    # Versicles from Nocturns
+  my $ppN = 3;                 # Psalms per Nocturn (Roman default)
+  my $target = 15;             # Target lines (Roman default)
+  my $flag = 0;                # If we have to look for Commune even when "vide"
+
+  if ($version =~ /monastic/i && $winner{Rule} !~ /Matutinum Romanum/i) {
+    $flag = $version !~ /1963/;    # for Trid. und Divino also look in Commune
+    $ppN = 6;                      # Psalms per Nocturn (Monastic default)
+    $target = 19;                  # Target lines (Monastic default)
+
+    if ($winner{Rule} =~ /3 lectio/i) {    # in Monastic infra Octavam (with Ferial psalms)
+      my $i = $dayofweek;
+      $i -= 3 if $i > 3;
+      @nocturns = ($i, 0);                 # Versicle for 1st Nocturn dep. on $dayofweek; No V&R for 2nd Noct.
+      $target = 14;
+    }
+  }
+
+  # Look up proper AntMatutinum and return if none
+  my ($wprop, $cprop) = getproprium('Ant Matutinum', $lang, $flag, 1);
+  return unless $wprop;
+
+  my $w = $wprop;    # for Backwards compatibility pass through if target is met
+  my @wprop = split("\n", $wprop);
+  my @w = ();
+
+  if (@wprop < $target) {
+    foreach my $noc (@nocturns) {
+      $ppN = @wprop if @wprop < $ppN;           # limit psalm lines in if exceeded
+      push(@w, shift(@wprop)) for 1 .. $ppN;    # pass-through psalm lines for nocturn if they exist
+      last unless $noc;                         # for 3 lectio, no versicle to be appended;
+
+      my ($vers, $cvers) = getproprium("Nocturn $noc Versum", $lang, 1, 1);
+      my @vers = split("\n", $vers);
+      push(@w, @vers);                          # add "interspersed" Versicle
+    }
+    $w = join("\n", @w);
+  }
+  return ($w, $cprop);
 }
 
 #*** tryoldhymn(\%source, $name)

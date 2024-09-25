@@ -100,13 +100,11 @@ sub psalmi_matutinum_monastic {
       }
     } else {
       my %c = (columnsel($lang)) ? %commune : %commune2;
-      my @v = split("\n", $c{"Ant Matutinum"});
-      my @f = (0, 6, 14, 17);
-      ($psalmi[6], $psalmi[7]) = ($v[$f[$i]], $v[$f[$i] + 1]);
+      ($psalmi[6], $psalmi[7]) = split("\n", $c{"Nocturn $i Versum"});
 
       if ($dayofweek == 0) {
-        ($psalmi[14], $psalmi[15]) = ($v[14], $v[15]);
-        ($psalmi[17], $psalmi[18]) = ($v[17], $v[18]);
+        ($psalmi[14], $psalmi[15]) = split("\n", $c{"Nocturn 2 Versum"});
+        ($psalmi[17], $psalmi[18]) = split("\n", $c{"Nocturn 3 Versum"});
       }
     }
     setbuild2("Subst Matutinum Versus $name $dayofweek");
@@ -142,7 +140,7 @@ sub psalmi_matutinum_monastic {
     && !($dayname[1] =~ /infra.*Nativitatis/i && $dayofweek && $version !~ /196/)
   ) {
     #** get proper Ant Matutinum for II. and I. class feasts unless it's Wednesday thru Saturday of the Easter Octave
-    my ($w, $c) = getproprium('Ant Matutinum', $lang, $version !~ /196/, 1); # for Trid. und Divino also look in Commune
+    my ($w, $c) = getantmatutinum($lang);
 
     if ($w) {
       @psalmi = split("\n", $w);
@@ -170,7 +168,7 @@ sub psalmi_matutinum_monastic {
   ) {
 
     if (exists($winner{'Ant Matutinum'})) {
-      my ($w, $c) = getproprium('Ant Matutinum', $lang, 0, 0);
+      my ($w, $c) = getantmatutinum($lang);
       my @p = split("\n", $w);
 
       for (my $i = 0; $i < 14; $i++) {
