@@ -1,16 +1,15 @@
 [Rank]
 In Octava S. Stephani;;Simplex;;1.1;;vide Sancti/12-26
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1955)
 Die Secunda Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rank] (rubrica tridentina)
 In Octava Sancti Stephani;;Duplex;;3;;ex Sancti/12-26
 
-[Rule]
-vide Sancti/12-26
-Feria Te Deum
-Comkey=70
+[Oratio] (rubrica divino aut rubrica tridentina aut rubrica monastica)
+Dieu tout-puissant et éternel, qui as consacré les prémices de vos martyrs avec le sang du bienheureux Étienne, accordez-nous, nous vous en prions, de prier pour nous aussi, lui qui a prié pour ses meurtriers auprès de notre Seigneur Jésus-Christ, votre Fils :
+$Qui tecum
 
 [Lectio1]
 De l'Epître aux Romains
@@ -21,6 +20,9 @@ De l'Epître aux Romains
 4	la constance une vertu éprouvée, et la vertu éprouvée l'espérance.
 5	Or, l'espérance ne trompe point, parce que l'amour de Dieu est répandu dans nos coeurs par l'Esprit-Saint qui nous a été donné.
 
+[Responsory1]
+@Sancti/01-01:Responsory1
+
 [Lectio2]
 !Rom 5:6-9
 6	Car, lorsque nous étions encore impuissants, le Christ, au temps marqué, est mort pour des impies.
@@ -28,28 +30,17 @@ De l'Epître aux Romains
 8	Mais Dieu montre son amour envers nous en ce que, lorsque nous étions encore des pécheurs, [au temps marqué], Jésus-Christ est mort pour nous.
 9	A plus forte raison donc, maintenant que nous sommes justifiés dans son sang, serons-nous sauvés par lui de la colère.
 
+[Responsory2]
+@Sancti/01-01:Responsory2
+
 [Lectio3]
 !Rom 5:10-12
 10	Car si, lorsque nous étions ennemis, nous avons été réconciliés avec Dieu par la mort de son Fils, à plus forte raison, étant réconciliés, serons-nous sauvés par sa vie.
 11	Bien plus, nous nous glorifions même en Dieu par Notre-Seigneur Jésus-Christ, par qui maintenant nous avons obtenu la réconciliation.
 12	Ainsi donc, comme par un seul homme le péché est entré dans le monde, et par le péché la mort... Et ainsi la mort a passé dans tous les hommes parce que tous ont péché.
 
-[Responsory1]
-@Sancti/01-01:Responsory1
-
-[Responsory2]
-@Sancti/01-01:Responsory2
-
 [Responsory3]
 @Sancti/01-01:Responsory3
-
-[Lectio93]
-Sermon de saint Augustin, Évêque
-!Serm. 2. sur Saint Etienne.
-Le Christ, chef des Martyrs, a souffert le premier pour nous, vous laissant un exemple, afin que vous suiviez ses traces. Le bienheureux Etienne a suivi les traces de la passion du Christ, il a été lapidé par les Juifs en confessant le Christ, et il a mérité la couronne qui semble annoncée par son nom ; car le nom grec Stephanos se traduit en latin par corona (couronne). Son nom signifiait couronne, et ainsi portait-il déjà d’avance, dans ce nom, un présage de la palme du martyre.
-
-Traduit avec www.DeepL.com/Translator (version gratuite)
-&teDeum
 
 [Lectio4]
 Sermon de saint Augustin, Évêque
@@ -72,12 +63,16 @@ Homélie de St Jérome , Prêtre
 Ô Jérusalem, Jérusalem, toi qui as tué les prophètes. La Jérusalem qui a tué les prophètes n'est pas la pierre et les maisons, mais ceux qui l'habitent. Il pleura sur elle avec l'amour d'un père, comme il est aussi écrit dans un autre endroit que, lorsqu'il vit la ville, il pleura sur elle. (Luc 29. 41.) Combien de fois aurais-je voulu rassembler tes enfants. Observez ici que le Christ avoue qu'il avait été l'expéditeur de tous les prophètes précédents. Comme une poule rassemble ses poulets sous ses ailes. Une figure semblable se trouve dans le Cantique de Moïse, dans le Deutéronome, 32. 2, Comme un aigle qui remue son nid, vole sur ses petits, déploie ses ailes, les prend et les porte sur ses ailes.
 
 [Lectio8]
-Voici que ta maison te sera laissée en ruine. Dieu avait déjà dit ces choses une fois auparavant, par la bouche de Jérémie, où Il dit J'ai abandonné Ma maison, J'ai laissé Mon héritage ; Mon héritage m'est devenu comme un repaire d'hyènes. (12. 7.) La maison des Juifs, qui devait être laissée déserte pour eux, est ce Temple dont ils n'avaient que trop aimé la splendeur lorsqu'ils ont tué les Juifs. ) La maison des Juifs, qui devait leur être laissée en désolation, est ce Temple dont ils n'aimaient que trop la splendeur, lorsqu'ils en tuèrent le propriétaire pour l'amour du Temple, et qu'ils dirent du Christ : "Voici l'héritier ; venez, tuons-le, et l'héritage sera à nous. ( Matth. 21. 38.)
+Voici que ta maison te sera laissée en ruine. Dieu avait déjà dit ces choses une fois auparavant, par la bouche de Jérémie, où Il dit J'ai abandonné Ma maison, J'ai laissé Mon héritage ; Mon héritage m'est devenu comme un repaire d'hyènes. (12. 7.) La maison des Juifs, qui devait être laissée déserte pour eux, est ce Temple dont ils n'avaient que trop aimé la splendeur lorsqu'ils ont tué les Juifs. ) La maison des Juifs, qui devait leur être laissée en désolation, est ce Temple dont ils n'aimaient que trop la splendeur, lorsqu'ils en tuèrent le propriétaire pour l'amour du Temple, et qu'ils dirent du Christ : « Voici l'héritier ; venez, tuons-le, et l'héritage sera à nous. ( Matth. 21. 38.)
 
 [Lectio9]
-Je vous le dis, vous ne me verrez plus désormais, jusqu'à ce que vous disiez : Béni soit celui qui vient au nom du Seigneur. Il s'adresse ici à Jérusalem et au peuple juif. Les mots : Béni soit celui qui vient au nom du Seigneur, ont été prononcés par des enfants et des nourrissons lorsque le Sauveur entra en triomphe dans Jérusalem, et que ceux qui le précédaient et ceux qui le suivaient criaient : "Béni soit celui qui vient au nom du Seigneur ; Hosanna au plus haut des cieux" (Marc 11.9), mais ils sont originellement tirés du Psaume 117. 26. -Ce psaume est évidemment écrit en l'honneur de la naissance de notre Seigneur.
+Je vous le dis, vous ne me verrez plus désormais, jusqu'à ce que vous disiez : Béni soit celui qui vient au nom du Seigneur. Il s'adresse ici à Jérusalem et au peuple juif. Les mots : Béni soit celui qui vient au nom du Seigneur, ont été prononcés par des enfants et des nourrissons lorsque le Sauveur entra en triomphe dans Jérusalem, et que ceux qui le précédaient et ceux qui le suivaient criaient : « Béni soit celui qui vient au nom du Seigneur ; Hosanna au plus haut des cieux» (Marc 11.9), mais ils sont originellement tirés du Psaume 117. 26. -Ce psaume est évidemment écrit en l'honneur de la naissance de notre Seigneur.
 &teDeum
 
-[Oratio] (rubrica divino aut rubrica tridentina aut rubrica monastica)
-Dieu tout-puissant et éternel, qui as consacré les prémices de vos martyrs avec le sang du bienheureux Étienne, accordez-nous, nous vous en prions, de prier pour nous aussi, lui qui a prié pour ses meurtriers auprès de notre Seigneur Jésus-Christ, votre Fils :
-$Qui tecum
+[Lectio93]
+Sermon de saint Augustin, Évêque
+!Serm. 2. sur Saint Etienne.
+Le Christ, chef des Martyrs, a souffert le premier pour nous, vous laissant un exemple, afin que vous suiviez ses traces. Le bienheureux Etienne a suivi les traces de la passion du Christ, il a été lapidé par les Juifs en confessant le Christ, et il a mérité la couronne qui semble annoncée par son nom ; car le nom grec Stephanos se traduit en latin par corona (couronne). Son nom signifiait couronne, et ainsi portait-il déjà d’avance, dans ce nom, un présage de la palme du martyre.
+
+Traduit avec www.DeepL.com/Translator (version gratuite)
+&teDeum

@@ -1,12 +1,22 @@
 [Rank]
 S. Apollinaris Episcopi et Martyris;;Duplex;;3;;vide C2
 
+[Rank] (rubrica innovata)
+S. Apollinaris Episcopi et Mart;;Duplex optional;;2;;vide C2
+
 [Rule]
 vide C2;
 9 lectiones;
 
 [Oratio]
 Deus, fidélium remunerátor animárum, qui hunc diem beáti Apollináris Sacerdótis tui martýrio consecrásti: tríbue nobis, quǽsumus, fámulis tuis; ut, cujus venerándam celebrámus festivitátem, précibus ejus indulgéntiam consequámur.
+$Per Dominum
+
+[Commemoratio Sabbat]
+!Commemoratio S. Liborii Episcopi et Confessoris
+@Commune/C4:Oratio proper
+$Oremus
+v. Exáudi, quǽsumus, Dómine, preces nostras, quas in beáti Libórii Confessóris tui atque Pontíficis solemnitáte deférimus: et, qui tibi digne méruit famulári, ejus intercedéntibus méritis, ab ómnibus nos absólve peccátis.
 $Per Dominum
 
 [Commemoratio]
@@ -16,13 +26,6 @@ $Oremus
 v. Da, quǽsumus, omnípotens Deus: ut beáti Libórii Confessóris tui atque Pontíficis veneránda solémnitas, et devotiónem nobis áugeat et salútem.
 $Per Dominum.
 
-[Commemoratio Sabbat]
-!Commemoratio S. Liborii Episcopi et Confessoris
-@Commune/C4:Oratio proper
-$Oremus
-v. Exáudi, quǽsumus, Dómine, preces nostras, quas in beáti Libórii Confessóris tui atque Pontíficis solemnitáte deférimus: et, qui tibi digne méruit famulári, ejus intercedéntibus méritis, ab ómnibus nos absólve peccátis.
-$Per Dominum
-
 [Lectio4]
 Apollináris cum Príncipe Apostolórum Antiochía Romam venit; a quo, ordinátus epíscopus, Ravennam ad Christi Dómini Evangélium prædicándum mittitur; ubi, cum ad Christi fidem plurimos convérteret, captus ab idolórum sacerdótibus gráviter cæsus est. Cumque ipso orante Bonifatius nobilis vir, qui diu mutus fuerat, loquerétur, ejusque fília immundo spíritu liberáta esset; íterum est in illum commóta seditio. Itaque virgis cæsus, ardéntes carbónes nudis pédibus prémere cogitur; quem cum subjéctus ignis nihil læderet, ejícitur extra urbem.
 
@@ -31,6 +34,10 @@ Is vero latens aliquámdiu cum quibusdam Christiánis, inde profectus est in Æm
 
 [Lectio6]
 Cum autem in Serápidis templo dæmon se responsa datúrum negaret, dum ibidem Petri Apóstoli discipulus morarétur; diu conquisítus, invéntus est Apollináris: qui íterum jubétur navigare. Ita reversus Ravennam, ab iisdem illis idolórum sacerdótibus accusatus, centurióni custodiendus tráditur; qui, cum occulte Christum cóleret, noctu Apollinarem dimísit. Re cógnita, satéllites eum persequúntur, et plagis in itinere confectum, quod mortuum crederent, relinquunt. Quem cum inde Christiáni sustulissent, septimo die exhortans illos ad fidei constantiam, martyrii glória clarus migrávit e vita. Cujus corpus prope murum urbis sepúltum est.
+
+[Lectio94]
+Apollináris cum Príncipe Apostolórum Antiochía Romam venit; a quo, ordinátus epíscopus, Ravénnam ad Christi Dómini Evangélium prædicándum míttitur; ubi, cum ad Christi fidem plúrimos convérteret, captus ab idolórum sacerdótibus, gráviter cæsus est. Cumque ipso oránte Bonifátius nóbilis vir, qui diu mutus fúerat, loquerétur, ejúsque fília immúndo spíritu liberáta esset, íterum est in illum commóta sedítio. Quare divérsas et multíplices pœnas perpéssus est. Póstea per Æmíliam Evangélium prǽdicans, plúrimos ab idolórum cultu revocávit. Ravénnam revérsus, exhórtans Christiános ad fídei constántiam, gloriósum martýrium consummávit. Ejus corpus prope murum urbis sepúltum est.
+&teDeum
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Lucam.
@@ -46,10 +53,6 @@ Non enim victus et potus nobis præmii loco spondétur et honoris, sed communic�
 
 [Lectio9]
 Convertámur ígitur, et caveámus, ne in perditiónem aliqua inter nos de prælatióne possit esse contentio. Si enim contendébant Apóstoli, non excusatióni obténditur, sed cautióni propónitur. Si Petrus aliquándo convértitur, qui ad primam Dómini secutus est vocem; quis potest dicere, cito se esse conversum? Cave ergo jactantiam, cave sæculum. Ille enim confírmare jubétur fratres suos, qui dixit: Omnia dimísimus, et secúti sumus te.
-&teDeum
-
-[Lectio94]
-Apollináris cum Príncipe Apostolórum Antiochía Romam venit; a quo, ordinátus epíscopus, Ravénnam ad Christi Dómini Evangélium prædicándum míttitur; ubi, cum ad Christi fidem plúrimos convérteret, captus ab idolórum sacerdótibus, gráviter cæsus est. Cumque ipso oránte Bonifátius nóbilis vir, qui diu mutus fúerat, loquerétur, ejúsque fília immúndo spíritu liberáta esset, íterum est in illum commóta sedítio. Quare divérsas et multíplices pœnas perpéssus est. Póstea per Æmíliam Evangélium prǽdicans, plúrimos ab idolórum cultu revocávit. Ravénnam revérsus, exhórtans Christiános ad fídei constántiam, gloriósum martýrium consummávit. Ejus corpus prope murum urbis sepúltum est.
 &teDeum
 
 [Commemoratio 3] (rubrica divino aut rubrica tridentina)

@@ -1,16 +1,6 @@
 [Name]
 Officium Defunctorum
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Capitulum Commemoratio Suffragium
-Special Conclusio
-Limit Benedictiones Oratio
-Requiem gloria
-Votive nocturn
-
 [Ant Vespera]
 I will walk before the Lord * in the land of the living.;;114
 Woe is me! O Lord, * that my sojourn is long;;119
@@ -46,14 +36,6 @@ $Oremus
 v. O God, who art thyself at once the Maker and the Redeemer of all thy faithful ones, grant unto the souls of thy servants and handmaids remission of all their sins, making of our entreaties unto our great Father a mean whereby they may have that forgiveness which they have ever hoped for.
 $Qui vivis
 
-[Oratio 1]
-@:Oratio_a_porta
-@:Oratio_Fid
-
-[Oratio 2]
-@:Oratio_a_porta:s/&psalm.*\)//s
-@:Oratio_Fid
-
 [Oratio1]
 v. Lord, we pray thee to absolve the soul of thy servant or, thine handmaid N. (here express the name) who hath died unto the world, that he (or, she) may live unto thee. And whereinsoever while he (or, she) walked among men he (or, she) hath transgressed through the weakness of the flesh, do Thou in the exceeding tenderness of thy mercy forgive and put away.
 $Per Dominum
@@ -75,16 +57,22 @@ Unto the Eternal King all live. * O come, let us worship Him.
 Make my way straight before thy face, * O Lord my God.;;5
 Return, O Lord, deliver my soul * O save me for thy mercy's sake.;;6
 Lest he tear my soul like a lion, * while there is none to deliver, or to save.;;7
-V. From the gates of hell.
-R. Deliver their souls, O Lord.
 He maketh me to lie down * in green pastures.;;22
 Lord, remember not the sins of my youth, * nor my transgressions.;;24
 I believe that I shall yet see the goodness of the Lord * in the land of the living.;;26
-V. May the Lord set them with princes;
-R. Even with the princes of his people.
 Be pleased, O Lord, to deliver me * O Lord, look upon me to help me.;;39
 Lord, heal my soul; * for I have sinned against thee.;;40
 My soul thirsteth for the living God; * when shall I come and appear before God?;;41
+
+[Nocturn 1 Versum]
+V. From the gates of hell.
+R. Deliver their souls, O Lord.
+
+[Nocturn 2 Versum]
+V. May the Lord set them with princes;
+R. Even with the princes of his people.
+
+[Nocturn 3 Versum]
 V. O deliver not unto beasts the souls of them that praise thee!
 R. And forget not the souls of thy poor for ever.
 
@@ -241,19 +229,12 @@ R. When Thou shalt come to judge the world by fire.
 $Requiem
 R. Deliver me, O Lord, from eternal death in that awful day, when the heavens and the earth shall be shaken, and Thou shalt come to judge the world by fire.
 
-[Ant Laudes]
+[Ant Laudes_]
 The bones which thou hast broken * may rejoice.;;50
 Lord, hear * my prayer; unto thee shall all flesh come.;;64
 Thy right hand * upholdeth me.;;62
 From the gates of hell * deliver my soul, O Lord.;;222
 Let everything that hath breath * praise the Lord.;;150
-
-[Ant Laudes](rubrica tridentina)
-The bones which thou hast broken * may rejoice.;;50
-Lord, hear * my prayer; unto thee shall all flesh come.;;64
-Thy right hand * upholdeth me.;;62;66
-From the gates of hell * deliver my soul, O Lord.;;222
-Let everything that hath breath * praise the Lord.;;148;149;150
 
 [Ant 2]
 I am the resurrection and the life: * he that believeth in me, though he were dead, yet shall he live; and whosoever liveth and believeth in me shall never die.

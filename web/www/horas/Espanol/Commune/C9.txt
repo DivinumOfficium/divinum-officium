@@ -1,17 +1,6 @@
 [Name]
 Officium Defunctorum
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Capitulum Commemoratio Suffragium
-Special Conclusio
-Limit Benedictiones Oratio
-Requiem gloria
-Votive nocturn
-9 lectiones
-
 [Ant Vespera]
 Agradaré al Señor * en el país de la vida.;;114
 ¡Ay de mí, Señor, * que se ha prolongado mi exilio!;;119
@@ -47,17 +36,6 @@ $Oremus
 v. ¡Oh Dios, creador y redentor de los hombres!, concede a tus siervos el perdón de todos sus pecados; y por estas súplicas fraternas alcancen de ti la misericordia que siempre desearon. 
 $Qui vivis
 
-[Versum 3]
-@:Versum 1
-
-[Oratio 1]
-@:Oratio_a_porta
-@:Oratio_Fid
-
-[Oratio 2]
-@:Oratio_a_porta:s/&psalm.*\)//s
-@:Oratio_Fid
-
 [Oratio1]
 v. Te rogamos, Señor, perdones el alma de tu siervo N. (tu sierva N.), a fin de que viva para ti, habiendo muerto para el siglo; y, por la indulgencia de tu piedad misericordiosísima, límpiala de los pecados que cometió por fragilidad de la carne mientras vivió entre los hombres.
 $Per Dominum
@@ -79,16 +57,22 @@ Al Rey, por quien viven todos los seres, * Venid adorémosle.
 Haz que sea recto. * Señor Dios mío, ante tus ojos, mi camino.;;5
 Vuélvete a mí, * Señor, y libra mi alma, porque en muriendo ya no hay quien se acuerde de ti.;;6
 No sea que alguno * cual león, arrebate tal vez mi alma, sin que haya nadie que me libre y me ponga en salvo.;;7
-V. De las puertas del infierno. 
-R. Libra, Señor, sus almas.
 Él me ha colocado * en lugar de pastos.;;22
 Echa, Señor, * en olvido los delitos de mi juventud y mis necedades.;;24
 Espero que veré * los bienes del Señor en la tierra de los vivientes.;;26
-V. Colóquelos el Señor con los príncipes.  
-R. Con los príncipes de su pueblo.
 ¡Oh! complácete, * Señor, librarme; vuelve a mí tus ojos para socorrerme.;;39
 Sana mi alma, Señor, * porque pequé contra ti.;;40
 Sedienta está * mi alma del Dios vivo. ¡Cuándo será que yo llegue, y me presente ante la faz del Señor!;;41
+
+[Nocturn 1 Versum]
+V. De las puertas del infierno. 
+R. Libra, Señor, sus almas.
+
+[Nocturn 2 Versum]
+V. Colóquelos el Señor con los príncipes.  
+R. Con los príncipes de su pueblo.
+
+[Nocturn 3 Versum]
 V. No entregues a las bestias las almas de los que te alaban.
 R. Y no te olvides para siempre de las almas de tus pobres.
 
@@ -99,7 +83,7 @@ R. Y no te olvides para siempre de las almas de tus pobres.
 18 para que le visites cada mañana y a cada momento le pruebes? 
 19 ¿Hasta cuándo no apartarás de mí tu mirada sin dejarme tragar mi saliva? 
 20 Si pequé, ¿qué daño te inferí, oh protector de los hombres? ¿Por qué me haces blanco tuyo, cuando ni a mí mismo puedo soportarme? 
-21 ¿Por qué no perdonar mi transgresión y pasar por alto mi culpa? Pues pronto descansaré en el polvo, y si me buscas, ya no existiré. 
+21 ¿Por qué no perdonar mi transgresión y pasar por alto mi culpa? Pues pronto descansaré en el polvo, y si me buscas, ya no existiré.
 
 [Responsory1]
 R. Creo que vive mi Redentor, y que yo he de resucitar de la tierra en el último día; 
@@ -115,7 +99,7 @@ R. Y en esta mi carne veré a Dios mi Salvador.
 4 ¿Tienes Tú acaso ojos de carne y miras como mira el hombre? 
 5 ¿Son tus días los de un mortal, son tus años los años del hombre, 
 6 para que tengas que inquirir mi culpa y andar rebuscando mi pecado, 
-7 cuando sabes que no soy culpable y nadie puede librarme de tus manos? 
+7 cuando sabes que no soy culpable y nadie puede librarme de tus manos?
 
 [Responsory2]
 R. Tú que resucitaste del sepulcro a Lázaro ya hediondo, 
@@ -129,7 +113,7 @@ R. Dales, Señor, el descanso y el lugar de indulgencia.
 9 Acuérdate que me modelaste como el barro, ¿y vas a tornarme al polvo? 
 10 ¿No me exprimiste como leche, no me cuajaste como queso? 
 11 Me revestiste de piel y de carne, y con huesos y músculos me consolidaste. 
-12 Me diste vida y me favoreciste y tu solicitud guardó mi espíritu. 
+12 Me diste vida y me favoreciste y tu solicitud guardó mi espíritu.
 
 [Responsory3]
 R. Señor, cuando vengas a juzgar la tierra, ¿dónde me esconderé de la faz de tu ira? 
@@ -147,7 +131,7 @@ R. Porque muchísimo pequé durante mi vida.
 25 ¿A una hoja que arrebata el viento infundes terror y a una paja seca persigues, 
 26 dictando contra mí sentencias de amargura e imputándome las faltas de mi mocedad? 
 27 Pones en el cepo mis pies, acechas todos mis pasos, señalas las huellas de mis pies. 
-28 Me deshago como leño carcomido, como vestido que roe la polilla. 
+28 Me deshago como leño carcomido, como vestido que roe la polilla.
 
 [Responsory4]
 R. Acuérdate de mí, oh Dios mío, que mi vida es un soplo. 
@@ -162,7 +146,7 @@ R. Ni me verá más humana vista.
 3 ¿Y sobre un tal abres tus ojos y le citas a juicio contigo? 
 4 ¿Quién podrá sacar pureza de lo impuro? Nadie. 
 5 Si sus días están determinados, si es conocido de ti el número de sus meses, si fijaste su límite, que no ha de traspasar, 
-6 aparta de él tu mirada y déjale hasta que como mercenario cumpla su jornada. 
+6 aparta de él tu mirada y déjale hasta que como mercenario cumpla su jornada.
 
 [Responsory5]
 R. ¡Ay de mí, Señor! porque muchísimo pequé durante mi vida. ¿Qué haré, miserable? ¿A dónde huiré sino a ti, Dios mío? 
@@ -175,7 +159,7 @@ R. Ten misericordia de mí cuando vinieres en el último día.
 13 ¡Quién me diera que me escondieses en el “seol” y allí me ocultaras hasta que se aplacara tu ira, fijando un término para volver a acordarte de mí! 
 14 Si, muerto, el hombre reviviera, esperaría que pasara el tiempo de mi milicia hasta que llegara la hora del relevo. 
 15 Me llamarías entonces, y yo te respondería, y te mostrarías propicio a la obra de tus manos. 
-16 Y, en vez de contar, como ahora, mis pasos, no espiarías más mis pecados. 
+16 Y, en vez de contar, como ahora, mis pasos, no espiarías más mis pecados.
 
 [Responsory6]
 R. No te acuerdes, Señor, de mis pecados, 
@@ -194,7 +178,7 @@ R. Cuando vinieres a juzgar al siglo con el fuego.
 12 La noche me la convierten en día, y de las tinieblas (prometen) próxima luz. 
 13 ¿Qué puedo yo esperar? El sepulcro será mi morada, en las tinieblas he extendido mi lecho. 
 14 A la fosa grité: “¡Tú eres mi padre!” Y a los gusanos: “¡Mi madre y mis hermanos!” 
-15 ¿Dónde está mi esperanza? Y mi dicha, ¿quién la divisa? 
+15 ¿Dónde está mi esperanza? Y mi dicha, ¿quién la divisa?
 
 [Responsory7]
 R. A mí, que peco cada día y no hago penitencia, el temor de la muerte me conturba. 
@@ -211,7 +195,7 @@ R. Porque en el infierno no hay redención ninguna, apiádate de mí, oh Dios, y
 24 que con punzón de hierro y de plomo se esculpiesen para siempre en la roca! 
 25 Porque yo sé que mi Redentor vive, y al fin se erguirá como fiador sobre el polvo; 
 26 y detrás de mi piel yo me mantendré erguido, y desde mi carne yo veré a Dios. 
-27 ¡Al cual yo le veré, le verán mis ojos, y no otros! ¡Se consumen mis riñones en mi interior! 
+27 ¡Al cual yo le veré, le verán mis ojos, y no otros! ¡Se consumen mis riñones en mi interior!
 
 [Responsory8]
 R. Señor, no me juzgues según merecen mis obras; nada digno he hecho en tu presencia; por esto ruego a tu majestad. 
@@ -225,7 +209,7 @@ R. Que Tú, oh Dios, borres mi pecado.
 19 Fuera como si nunca hubiera existido, llevado del vientre al sepulcro. 
 20 ¿No son pocos los días de mi existencia? Retírate de mí 
 21 para que pueda alegrarme un poco antes de que me vaya, 
-22 para no volver, a la tierra de tinieblas y de sombras, tierra de negrura y desorden, en la que la claridad es como la oscuridad. 
+22 para no volver, a la tierra de tinieblas y de sombras, tierra de negrura y desorden, en la que la claridad es como la oscuridad.
 
 [Responsory91]
 R. Líbrame, Señor, de los caminos del infierno, Tú que rompiste las puertas de acero, y visitaste el infierno, y diste tu luz, para que te vieran, 
@@ -245,22 +229,12 @@ R. Cuando vinieres a juzgar al siglo con el fuego.
 $Requiem
 R. Líbrame, Señor, de la muerte eterna, en aquel tremendo día, * En que serán conmovidos los cielos y la tierra. * Cuando vinieres a juzgar al siglo con el fuego. 
 
-[Ant Laudes]
+[Ant Laudes_]
 Se alegrarán en el Señor * los huesos quebrantados.;;50
 Escucha, Señor, * mi oración. A ti acude todo mortal.;;64
 Tu diestra * me sostiene, Señor.;;62
 De las penas del infierno * libra, Señor, mi alma.;;222
 Todo ser que alienta * alabe al Señor.;;150
-
-[Ant Laudes](rubrica tridentina)
-Se alegrarán en el Señor * los huesos quebrantados.;;50
-Escucha, Señor, * mi oración. A ti acude todo mortal.;;64
-Tu diestra * me sostiene, Señor.;;62;66
-De las penas del infierno * libra, Señor, mi alma.;;222
-Todo ser que alienta * alabe al Señor.;;148;149;150
-
-[Versum 2]
-@:Versum 1
 
 [Ant 2]
 Yo soy * la resurrección y la vida; quien cree en mí, aunque haya muerto, vivirá, y todo el que vive y cree en mí no morirá eternamente.

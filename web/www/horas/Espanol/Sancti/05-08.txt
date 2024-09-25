@@ -1,22 +1,39 @@
 [Rank]
 In Apparitione S. Michaëlis Archangeli;;Duplex majus;;4;;
 
-[Rule]
-proprium
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=137
-Contract8
-Quorum Festum
-
 [Ant Vespera]
 Púsose el Ángel * junto el altar del templo teniendo un incensario de oro en su mano.
 Mientras peleaba * Miguel Arcángel contra el dragón, se oyó una voz que decía: Salud a nuestro Dios, aleluya.
 Arcángel Miguel, * te he nombrado príncipe para reunir a las almas.
 Ángeles del Señor, * bendecid al Señor por siempre.
 Ángeles, Arcángeles, * Tronos y Dominaciones, Principados y Potestades, Virtudes de los cielos, alabad al Señor en los cielos, aleluya.
+
+[Hymnus Vespera]
+v. Oh Jesús, esplendor y poder del Padre, 
+vida de nuestros corazones, 
+te alabamos en unión con los Ángeles, 
+prontos a ejecutar tus órdenes.
+_
+Por ti combate este ejército numeroso 
+formado de mil millares de príncipes; 
+pero Miguel, el vencedor, enarbola 
+la señal salvadora de la cruz.
+_
+Él es quien precipita 
+al profundo del infierno 
+al cruel dragón, y, armado del rayo, 
+echa del cielo a los otros ángeles rebeldes.
+_
+Contra el orgulloso Satán, obedezcamos 
+las órdenes de este príncipe del cielo, 
+para recibir, venida del trono del Cordero, 
+la corona de la gloria.
+_
+Gloria sea dada a Dios Padre, que guarda 
+por sus Ángeles a los que el Hijo 
+ha rescatado y el Espíritu Santo 
+ha señalado con su unción.
+Amén.
 
 [HymnusM Vespera]
 v. Oh Jesús, esplendor 
@@ -51,33 +68,6 @@ Gloria sea dada a Dios Padre,
 que guarda por sus Ángeles 
 a los que el Hijo ha rescatado 
 y el Espíritu Santo 
-ha señalado con su unción.
-Amén.
-
-[Hymnus Vespera]
-v. Oh Jesús, esplendor y poder del Padre, 
-vida de nuestros corazones, 
-te alabamos en unión con los Ángeles, 
-prontos a ejecutar tus órdenes.
-_
-Por ti combate este ejército numeroso 
-formado de mil millares de príncipes; 
-pero Miguel, el vencedor, enarbola 
-la señal salvadora de la cruz.
-_
-Él es quien precipita 
-al profundo del infierno 
-al cruel dragón, y, armado del rayo, 
-echa del cielo a los otros ángeles rebeldes.
-_
-Contra el orgulloso Satán, obedezcamos 
-las órdenes de este príncipe del cielo, 
-para recibir, venida del trono del Cordero, 
-la corona de la gloria.
-_
-Gloria sea dada a Dios Padre, que guarda 
-por sus Ángeles a los que el Hijo 
-ha rescatado y el Espíritu Santo 
 ha señalado con su unción.
 Amén.
 
@@ -120,7 +110,7 @@ Del Profeta Daniel
 !Dan 7:9-11
 9 Estuve mirando hasta que fueron puestos tronos, y se sentó un anciano de muchos días, cuyas vestiduras eran blancas como la nieve, y los cabellos de su cabeza como lana blanca. 
 10 Su trono llameaba como llamas de fuego, y las ruedas eran fuego ardiente. Un río de fuego procedía y salía de delante de él, y le servían millares de millares y le asistían millones de millones; el tribunal tomó asiento, y fueron abiertos los libros. 
-11 Yo seguía mirando a la bestia a causa de las grandes arrogancias que hablaba su cuerno, y la estuve mirando hasta que la mataron, y su cuerpo fue destrozado y arrojado al fuego para que se quemase. 
+11 Yo seguía mirando a la bestia a causa de las grandes arrogancias que hablaba su cuerno, y la estuve mirando hasta que la mataron, y su cuerpo fue destrozado y arrojado al fuego para que se quemase.
 
 [Responsory1]
 R. Prodújose un silencio en el cielo al luchar el dragón con Miguel Arcángel; 
@@ -149,7 +139,7 @@ R. Y subió el humo de los perfumes al acatamiento del Señor por la mano del Á
 11 y me dijo: Daniel, varón predilecto, está atento a las palabras que voy a decirte, y ponte en pie en el lugar en que estás, pues he sido enviado a ti. Una vez que me habló, púseme en pie temblando. 
 12 Díjome: Nada temas, Daniel, pues desde el primer día en que diste tu corazón a entender y a humillarte en presencia de tu Dios, fueron oídas tus palabras, y por ellas he venido yo a ti; 
 13 pero el príncipe del reino de Persia se me opuso veintiún días; mas Miguel, uno de los príncipes supremos, vino en mi ayuda, y yo prevalecí allí sobre los reyes de Persia. 
-14 Vengo ahora para darte a conocer lo que sucederá a tu pueblo en los tiempos venideros, pues a estos tiempos se refiere la visión. 
+14 Vengo ahora para darte a conocer lo que sucederá a tu pueblo en los tiempos venideros, pues a estos tiempos se refiere la visión.
 
 [Responsory3]
 R. Te cantaré himnos en presencia de los Ángeles, te adoraré en tu templo santo:
@@ -167,11 +157,6 @@ R. Este es Miguel Arcángel, príncipe de la milicia angélica,
 * Su culto es una fuente de beneficios para los pueblos, y su oración conduce al reino de los cielos, aleluya. 
 V. El Arcángel Miguel es el príncipe del paraíso, a quien honran los conciudadanos de los Ángeles. 
 R. Su culto es una fuente de beneficios para los pueblos, y su oración conduce al reino de los cielos, aleluya.
-
-[Lectio94]
-@:Lectio4
-@:Lectio6:s/.*(Poco después)/$1/s
-&teDeum
 
 [Lectio5]
 Sucedió que uno de los toros que pacían en el monte Gárgano se alejó del rebaño; y tras haberle buscado le hallaron detenido en la entrada de una gruta. Y uno de los presentes, para herirle, le disparó una saeta, que, de rechazo se clavó en el mismo que la había disparado. Lo cual llenó de temor a todos y a los que lo oyeron referir, por lo que nadie se acercaba a la cueva. Entonces los de Siponto consultaron al obispo, el cual les respondió que pidiesen a Dios el significado de lo acontecido, mediante un triduo de ayunos y oraciones.
@@ -193,6 +178,11 @@ R. Y vendrán tiempos como jamás los ha habido desde que comenzaron a existir l
 &Gloria
 R. Y vendrán tiempos como jamás los ha habido desde que comenzaron a existir las naciones hasta ahora, aleluya. 
 
+[Lectio94]
+@:Lectio4
+@:Lectio6:s/.*(Poco después)/$1/s
+&teDeum
+
 [Lectio7]
 Lectura del Santo Evangelio según San Mateo
 !Mt 18:1-10
@@ -209,7 +199,7 @@ V. Púsose el Ángel junto al altar del templo, teniendo en su mano un incensari
 R. Ya que su Ángel está con vosotros, aleluya.
 
 [Lectio8]
-"Ay del mundo por los escándalos". La humildad de la Pasión es un escándalo para el mundo. La ignorancia humana se manifiesta no queriendo reconocer al Señor de eterna gloria bajo las ignominias de la cruz. ¿Qué hay más peligroso para el mundo que no recibir a Jesucristo? Dice: es necesario que sobrevengan escándalos, porque para la realización del misterio que iba a darnos la vida eterna, la humillación de la Pasión debía completarse en Él. 
+“Ay del mundo por los escándalos”. La humildad de la Pasión es un escándalo para el mundo. La ignorancia humana se manifiesta no queriendo reconocer al Señor de eterna gloria bajo las ignominias de la cruz. ¿Qué hay más peligroso para el mundo que no recibir a Jesucristo? Dice: es necesario que sobrevengan escándalos, porque para la realización del misterio que iba a darnos la vida eterna, la humillación de la Pasión debía completarse en Él. 
 
 [Responsory8]
 R. El Arcángel Miguel vino para auxiliar al pueblo de Dios. 
@@ -220,7 +210,7 @@ R. Tiene la misión de auxiliar a las almas justas, aleluya.
 R. Tiene la misión de auxiliar a las almas justas, aleluya. 
 
 [Lectio9]
-"Mirad que no tengáis en poco a uno de estos pequeñitos que creen en mí”. Jesús impone a los que creen en Él, los lazos del amor mutuo. Los Ángeles de los niños ven cada día a Dios, porque el Hijo del hombre vino a salvar lo que estaba perdido. Así, el Hijo del hombre salva; los Ángeles ven a Dios; los Ángeles de los niños presiden las oraciones de los fieles. Que los Ángeles las presiden, es una doctrina absolutamente cierta. Los Ángeles ofrecen cada día a Dios las oraciones de los que se han de salvar por Cristo; y es peligroso despreciar a aquel cuyos deseos y peticiones son presentadas ante el trono de Dios, eterno e invisible, por el ministerio de los Ángeles que son su corte.
+“Mirad que no tengáis en poco a uno de estos pequeñitos que creen en mí”. Jesús impone a los que creen en Él, los lazos del amor mutuo. Los Ángeles de los niños ven cada día a Dios, porque el Hijo del hombre vino a salvar lo que estaba perdido. Así, el Hijo del hombre salva; los Ángeles ven a Dios; los Ángeles de los niños presiden las oraciones de los fieles. Que los Ángeles las presiden, es una doctrina absolutamente cierta. Los Ángeles ofrecen cada día a Dios las oraciones de los que se han de salvar por Cristo; y es peligroso despreciar a aquel cuyos deseos y peticiones son presentadas ante el trono de Dios, eterno e invisible, por el ministerio de los Ángeles que son su corte.
 &teDeum
 
 [Ant Laudes]
@@ -230,37 +220,6 @@ R. Tiene la misión de auxiliar a las almas justas, aleluya.
 !Ap 1:1-2
 v. Revelación de Jesucristo, que la ha recibido de Dios para descubrir a sus siervos cosas que deben suceder presto; y la ha manifestado por medio de su Ángel, enviado a Juan, su siervo, el cual ha dado testimonio de ser palabra de Dios y testificación de Jesucristo, todo cuanto ha visto.
 $Deo gratias
-
-[HymnusM Laudes]
-v. Cristo, hermosura de los Ángeles santos,
-autor eterno del linaje humano,
-duélante nuestros llantos y haznos
-subir al cielo soberano.
-_
-Envía al Ángel de Paz, Miguel,
-desde el cielo a estos lares,
-y así visitándonos podamos
-en paz medrar y prosperar.
-_
-También, Señor, envía del cielo
-a Gabriel fuerte, porque destierre
-al enemigo antiguo, y que more
-en este templo con frecuencia.
-_
-Haz que nos visite del cielo
-Rafael, y que nos cure, médico grande,
-sane a los enfermos y guíe
-cuanto fuéremos obrando.
-_
-También la Madre de nuestro Dios, 
-María, y los coros de los Ángeles 
-nos asistan, como asisten
-a la toda bienaventurada.
-_
-Esté ante nosotros la Trinidad santa,
-Padre, Hijo y al mismo punto 
-el Espíritu Santo, cuya gloria 
-se entiende al ver el mundo. Amén.
 
 [Hymnus Laudes]
 v. Cristo, hermosura de los Ángeles santos,
@@ -294,8 +253,36 @@ el Espíritu Santo, cuya gloria
 se entiende al ver el mundo. 
 Amén.
 
-[Versum 2]
-@:Versum 1
+[HymnusM Laudes]
+v. Cristo, hermosura de los Ángeles santos,
+autor eterno del linaje humano,
+duélante nuestros llantos y haznos
+subir al cielo soberano.
+_
+Envía al Ángel de Paz, Miguel,
+desde el cielo a estos lares,
+y así visitándonos podamos
+en paz medrar y prosperar.
+_
+También, Señor, envía del cielo
+a Gabriel fuerte, porque destierre
+al enemigo antiguo, y que more
+en este templo con frecuencia.
+_
+Haz que nos visite del cielo
+Rafael, y que nos cure, médico grande,
+sane a los enfermos y guíe
+cuanto fuéremos obrando.
+_
+También la Madre de nuestro Dios, 
+María, y los coros de los Ángeles 
+nos asistan, como asisten
+a la toda bienaventurada.
+_
+Esté ante nosotros la Trinidad santa,
+Padre, Hijo y al mismo punto 
+el Espíritu Santo, cuya gloria 
+se entiende al ver el mundo. Amén.
 
 [Ant 2]
 Se hizo * el silencio en el cielo, mientras luchaba el dragón; Miguel batalló contra él y logró la victoria, aleluya.
@@ -329,10 +316,6 @@ R. Hasta la presencia del Señor.
 R. Subió el humo de los perfumes * Hasta la presencia del Señor. 
 _
 @:Versum 3
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
 
 [Responsory Nona]
 R.br. Delante de los ángeles * Tañeré para ti, Dios mío. 

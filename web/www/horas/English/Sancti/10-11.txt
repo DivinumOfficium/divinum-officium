@@ -4,24 +4,12 @@ Maternitatis Beatae Mariae Virginis;;Duplex 2 classis;;5.1;;ex C11
 [Rank] (rubrica 1960)
 Maternitatis Beatae Mariae Virginis;;Duplex 2 classis;;5;;ex C11
 
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-
 [Ant Vespera]
 Blessed art thou, * O Virgin Mary, who didst bear the Creator of all things.;;109
 Thou didst bring him forth * who made thee, and remainest a Virgin for ever.;;112
 When I was a little one, * I pleased the Most High, and from my womb I have brought forth God and man.;;121
 Daughter, thou art blessed * of the Lord: for by thee we have partaken of the fruit of life.;;126
 The daughters of Sion, * saw her, and called her blessed; and the queens praised her.;;147
-
-[Capitulum Laudes]
-!Sir 24:12-13
-v. He that made me, rested in my tabernacle, and he said to me: Let thy dwelling be in Jacob, and thy inheritance in Israel, and take root in my elect.
-$Deo gratias
 
 [Versum 1]
 V. Blessed art thou among women.
@@ -183,6 +171,11 @@ Thou didst bring him forth * who made thee, and remainest a Virgin for ever.
 When I was a little one, * I pleased the Most High, and from my womb I have brought forth God and man.
 Daughter, thou art blessed * of the Lord: for by thee we have partaken of the fruit of life.
 The daughters of Sion, * saw her, and called her blessed; and the queens praised her.
+
+[Capitulum Laudes]
+!Sir 24:12-13
+v. He that made me, rested in my tabernacle, and he said to me: Let thy dwelling be in Jacob, and thy inheritance in Israel, and take root in my elect.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Mother of Almighty God!

@@ -1,16 +1,8 @@
 [Rank]
 Zwiastowanie Najświętszej Marji Pannie;;Duplex I classis;;6.5;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Zwiastowanie Najświętszej Marji Pannie;;Duplex I classis;;6;;ex C11
-
-[Rule]
-ex C11;
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-9 lectiones;
-Ant Matutinum 12 special
 
 [Ant Vespera]
 Posłan jest * Anioł Gabrjel do Marji Panny, poślubionej Józefowi. (Alleluia.);;109
@@ -18,11 +10,6 @@ Zdrowaś Marjo, * łaski pełna, Pan z Tobą, błogosławionaś Ty między niewi
 Nie bój się, Marjo: * znalazłaś łaskę u Pana, oto poczniesz i porodzisz syna. (Alleluia.);;121
 Da Mu Pan * stolicę Dawida, Ojca Jego, i będzie królował na wieki. (Alleluia.);;126
 Oto ja służebnica Pańska, * niechaj mi się stanie według słowa Twego. (Alleluia.);;147
-
-[Capitulum Laudes]
-!Iz 7:14-15
-v. Oto, panna pocznie i porodzi syna, i nazowią imię jego Emanuel. Masło i miód jeść będzie, aby umiał odrzucać złe i obierać dobre.
-$Deo gratias
 
 [Versum 1]
 V. Zdrowaś Marjo, łaski pełna. (Alleluia.)
@@ -135,9 +122,10 @@ Tajemnica tak doniosłego polecenia miała być wyrażona nie ustami człowieka,
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g
 
-[Versum 2]
-V. Zdrowaś Marjo, łaski pełna. (Alleluia.)
-R. Pan z Tobą. (Alleluia.)
+[Capitulum Laudes]
+!Iz 7:14-15
+v. Oto, panna pocznie i porodzi syna, i nazowią imię jego Emanuel. Masło i miód jeść będzie, aby umiał odrzucać złe i obierać dobre.
+$Deo gratias
 
 [Ant 2]
 Jakóż się to stanie, * Aniele Boży, gdyż męża nie znam? Słuchaj Maryjo Panno: Duch Święty zstąpi na cię, a moc Najwyższego zaćmi tobie. (Alleluia.)

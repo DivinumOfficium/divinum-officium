@@ -1,21 +1,9 @@
-[Name]
-Commune Virgine
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
 [Ant Vespera]
 Ta jest Panna mądra * i jedna z roztropnych.;;109
 Ta jest Panna mądra, * którą Pan czuwającą zastał.;;112
 Ta jest, * która nie uznała łoża grzechu, będzie miała pożytek w nawiedzeniu dusz świętych.;;121
 Przyjdź wybrana moja, * a założę w tobie stolicę moją, alleluja.;;126
 Ta jest * piękna między córkami Jerozolimskiemi.;;147
-
-[Capitulum Laudes]
-!2 Kor 10:17-18
-v. Bracia: Lecz kto się przechwala, niech się w Panu przechwala. Albowiem nie, który sam siebie zaleca, ten jest doświadczony; ale którego Bóg zaleca.
-$Deo gratias
 
 [Hymnus Vespera]
 {:H-Jesucoronavirginum:}v. O Jezu, Ty Dziewic Korono,
@@ -81,37 +69,22 @@ Duchu, Boże jedyny zawsze
 Po wszystek wieczności czas.
 Amen.
 
-[Hymnus Matutinum pro Virgo tantum et non Martyr]
-{:H-Virginisproles:}v. Potomku Dziewicy i Stwórco swej Matki,
-Którego Dziewica nosiła i Dziewica zrodziła;
-Dziewicy błogosławionej opiewamy święto,
-Przyjmij naszą modlitwę.
-_
-Na jej prośbę, Boże dobroczynny,
-Odpuść nam kary zasłużone za grzechy;
-Abyśmy Ci czystą piersią śpiewali
-Miłą pieśń.
-_
-Niechaj będzie chwała Ojcu, i Synowi zrodzonemu,
-I Tobie, równy obu mocy,
-Duchu, Boże jedyny zawsze
-Po wszystek wieczności czas.
-Amen.
-
 [Ant Matutinum]
 O jak piękny * jest czysty rodzaj z jasnością.;;8
 Przed łożem * tejże Dziewicy, śpiewajmy wciąż pieśni radosne.;;18
 Nawróć się, nawróć Sunamitko: nawróć się, nawróć się, abyśmy na cię patrzyli.;;23
-V. Z ślicznością twoją i z pięknością twoją.
-R. Nadciągnij, szczęśliwie postępuj i króluj.
 Z ślicznością twoją * i z pięknością twoją nadciągnij, szczęśliwie postępuj i króluj.;;44
 Wspomoże ją * Bóg obliczem swoim: Bóg w pośrodku jej, nie będzie poruszona.;;45
 Wody mnogie * nie mogły ugasić miłości.;;47
-V. Wspomoże ją Bóg obliczem swoim.
-R. Bóg w pośrodku jej, nie będzie poruszona
 Czarnaciem * ale piękna, córki Jerozolimskie: dlatego król umiłował mnie, i wprowadził mię król do pokojów swoich.;;95
 Pociągnij mię, za tobą * pobieżemy do wonności olejków twoich, olejek wylany imię twoje.;;96
 Przyjdź Oblubienico Chrystusowa, * weź koronę, którą ci Pan przygotował na wieki.;;97
+
+[Nocturn 2 Versum]
+V. Wspomoże ją Bóg obliczem swoim.
+R. Bóg w pośrodku jej, nie będzie poruszona
+
+[Nocturn 3 Versum]
 V. Wybrał ją Bóg, i przybrał ją.
 R. W namiocie swoim dał jej mieszkanie.
 
@@ -126,17 +99,11 @@ Z Pierwszego Listu świętego Pawła Apostoła do Koryntian
 30 A którzy płaczą, jakoby nie płakali: a którzy się weselą, jakoby się nie weselili: a którzy kupują, jakoby nie dzierżeli:
 31 A którzy używają świata tego, jakoby nie używali; bo przemija kształt świata tego.
 
-[Responsory1 pro Martyre]
+[Responsory1]
 R. Pójdź oblubienico Chrystusowa, weźmi koronę, ktorąć Pan zgotował na wieki, dla którego miłości krew twoję wylałaś, 
 * I z Anioły weszłaś do raju.
 V. Pójdź wybrana moja i położę na tobie stolicę moję, bo pożądał król urody twej.
 R. I z Anioły weszłaś do raju.
-
-[Responsory1]
-R. Pójdź wybrana moja i położę na tobie stolicę moję, 
-* Bo pożądał król urody twej.
-V. Z ślicznością twoją i z pięknością twoją nadciągnij, szczęśliwie postępuj i króluj.
-R. Bo pożądał król urody twej.
 
 [Lectio2]
 !1 Kor 7:32-35
@@ -195,19 +162,17 @@ R. Oto Oblubieniec idzie, wynijdźcie przeciwko Niemu.
 &Gloria
 R. Oto Oblubieniec idzie, wynijdźcie przeciwko Niemu.
 
-[Ant Laudes]
-Ta jest Panna mądra * i jedna z roztropnych.;;
-Ta jest Panna mądra, * którą Pan czuwającą zastał.;;
-Ta jest, * która nie uznała łoża grzechu, będzie miała pożytek w nawiedzeniu dusz świętych.;;
-Przyjdź wybrana moja, * a założę w tobie stolicę moją, alleluja.;;
-Ta jest * piękna między córkami Jerozolimskiemi.;;
+[Capitulum Laudes]
+!2 Kor 10:17-18
+v. Bracia: Lecz kto się przechwala, niech się w Panu przechwala. Albowiem nie, który sam siebie zaleca, ten jest doświadczony; ale którego Bóg zaleca.
+$Deo gratias
 
 [Versum 2]
 V. Rozlała się wdzięczność po wargach twoich.
 R. Dlatego cię błogosławił Bóg na wieki.
 
 [Ant 2]
-Podobne jest * królestwo niebieskie człowiekowi kupcowi, szukającemu dobrych pereł. A znalazłszy jednę perłę, sprzedał wszystko swoje i kupił ją.
+Podobne jest królestwo niebieskie * człowiekowi kupcowi szukającemu dobrych pereł: a znalazłszy jedną drogą perłę, odszedł i sprzedał wszystko co miał i kupił ją.
 
 [Oratio]
 Boże, który między innemi potęgi Twojej cudami, słabe niewiasty chwałą męczeństwa ozdobiłeś, dozwól łaskawie, abyśmy, którzy błogosławionej N., Dziewicy i Męczenniczki narodziny wysławiamy, jej przykłady naśladując, do Ciebie się przybliżyli.
@@ -218,50 +183,37 @@ Prosimy Cię, Panie, niechaj błogosławiona N. Dziewica i Męczenniczka, która
 $Per Dominum
 
 [Lectio Prima]
-!Mdr 4:1
-v. O, jako piękny jest czysty rodzaj z jasnością! Nieśmiertelna jest bowiem pamiątka jego: gdyż i u Boga znajoma jest, i u ludzi.
-
-[Lectio Prima pro Martyre]
 !Syr 51:13-14
 v. Panie, Boże mój, wywyższyłeś na ziemi mieszkanie moje i o spłynienie od śmierci prosiłem. Wzywałem Pana, Ojca Pana mego, aby mię nie opuszczał w dzień utrapienia mego i czasu pysznych, bez pomocy.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Z ślicznością twoją * I z pięknością twoją.
 R. Z ślicznością twoją * I z pięknością twoją.
 V. Nadciągnij, szczęśliwie postępuj i króluj.
 R. I z pięknością twoją.
 &Gloria
 R. Z ślicznością twoją * I z pięknością twoją.
-_
-V. Wspomoże ją Bóg obliczem swoim.
-R. Bóg w pośrodku jej, nie będzie poruszona.
 
 [Capitulum Sexta]
 !2 Kor 11:2
 v. Albowiem was gorąco miłuję gorącą miłością Bożą; bom was poślubił czystą panną stawić jednemu mężowi Chrystusowi.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Wspomoże ją * Bóg obliczem swoim.
 R. Wspomoże ją * Bóg obliczem swoim.
 V. Bóg w pośrodku jej, nie będzie poruszona.
 R. Bóg obliczem swoim.
 &Gloria
 R. Wspomoże ją * Bóg obliczem swoim.
-_
-V. Wybrał ją Bóg, i przybrał ją.
-R. W namiocie swoim dał jej mieszkanie.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Wybrał ją Bóg, * I przybrał ją.
 R. Wybrał ją Bóg, * I przybrał ją.
 V. W namiocie swoim dał jej mieszkanie.
 R. I przybrał ją.
 &Gloria
 R. Wybrał ją Bóg, * I przybrał ją.
-_
-V. Rozlała się wdzięczność po wargach twoich.
-R. Dlatego cię błogosławił Bóg na wieki.
 
 [Lectio1 in 2 loco]
 Z Księgi Eklezjastyka
@@ -290,7 +242,7 @@ Z Księgi Eklezjastyka
 16 I zachowałeś mię od zginienia, i z czasu złego wyrwałeś mię.
 17 Przetoż będę wyznawał i będę chwalił, i błogosławił imię Pańskie.
 
-[Lectio7 in 2 loco]
+[Lectio7 in 3 loco]
 Czytanie Ewangelii świętej według Mateusza
 !Mt 19:3-12
 Onego czasu: Przyszli do Jezusa Pharyzeuszowie, kusząc go i mówiąc: Godzili się człowiekowi opuścić żonę swoje dla któréjkolwiek przyczyny? I tak dalej.
@@ -299,9 +251,9 @@ Homilia Świętego Jana Chryzostoma
 !Homilia 63 na Ewangelję Mateusza, w połowie
 Pan nasz, gdy bowiem mowa o panieństwie zdawała się być przykrą, z konieczności prawa tego owe pragnienie w nich obudził. Następnie aby wykazać możliwość tego, mówi: Albowiem są rzezańcy, którzy z żywota matki tak się narodzili: i są rzezańcy którzy od ludzi są uczynieni: i są rzezańcy, którzy się sami otrzebili dla królestwa niebieskiego; temi słowami nieznacznie ich do wyboru tego stanu prowadzi.
 
-[Lectio8 in 2 loco]
+[Lectio8 in 3 loco]
 Możliwość tej cnoty okazuje, jak gdyby mówił: Uważ, co byś czynił, gdybyś z urodzenia był takim, albo gdyby cię to samo od tych, którzy takie haniebne czyny spełniają, spotkało, użycia będąc pozbawiony a zapłaty nie otrzymując? Więc składaj dzięki teraz Bogu, że z zapłatą i wieńcem to znosisz, co tamci bez nagrody znoszą; owszem i to nie jest trudném, ale daleko łatwiejszem, bo i nadzieja i przeświadczenie dobrego czynu cię pokrzepia, i pożądliwość także tak cię nie wzburza.
 
-[Lectio9 in 2 loco]
+[Lectio9 in 3 loco]
 Po mowie więc o rzezańcach, którzy na próżno i nadaremnie są rzezańcami, jeżeli także sami w myśląch swoich nie są powściągliwymi, i o tych, którzy dla królestwa niebieskiego żywot panieński prowadzą, mowę swą zakończa, mówiąc: Kto może pojąć niechaj pojmuje; czyni ich gorliwymi, okazując, że to rzecz wielka, i dla niewysłowionej łaskawości swojej nie dozwala, aby ten czyn w konieczność prawa został ujęty. A powiedział to wtedy, gdy rzecz jako bardzo możliwą okazał, aby popęd woli stał się jeszcze większym.
 &teDeum

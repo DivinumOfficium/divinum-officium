@@ -16,8 +16,7 @@ Sabbato post Ascensionem;;Feria;;1;;vide TemporaM/Pasc5-5
 ;;
 ;;
 ;;
-@Tempora/Pasc5-4::14-15
-@Tempora/Pasc5-4::6 s/;;.*//
+@Tempora/Pasc5-4::4 s/;;.*//
 ;;
 ;;
 ;;
@@ -45,4 +44,4 @@ Sabbato post Ascensionem;;Feria;;1;;vide TemporaM/Pasc5-5
 [MM Capitulum] (rubrica tridentina aut rubrica divino)
 @Tempora/Pasc5-4:Capitulum Sexta
 _
-@Tempora/Pasc5-4:Ant Matutinum:9-10
+@Tempora/Pasc5-4:Nocturn 2 Versum

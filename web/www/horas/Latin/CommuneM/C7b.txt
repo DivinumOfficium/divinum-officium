@@ -1,20 +1,22 @@
 @CommuneM/C7
 
 [Name]
-Commune non Virginum Martyrum plurimorum
+@Commune/C7b
 
 [Versum 1]
-V. Glória et honóre coronásti eas, Dómine.
-R. Et constituísti eas super ópera mánuum tuárum.
+@Commune/C7b
 
 [Ant 1]
-Istárum est enim * regnum cælórum, quæ contempsérunt vitam mundi, et pervenérunt ad prǽmia regni, et lavérunt stolas suas in sánguine Agni.
+@Commune/C7b
 
 [Oratio]
-@Commune/C7:Oratio2
+@Commune/C7b
 
 [Invit]
-Laudémus Deum nostrum * In confessióne beatárum N. et N.
+@Commune/C7b
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 1
 
 [Responsory4]
 @CommuneM/C7:Responsory4:s/, N.,/,/

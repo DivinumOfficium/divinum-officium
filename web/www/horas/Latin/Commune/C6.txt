@@ -1,5 +1,5 @@
 [Name]
-Commune Virginum
+Commune Virginum Martyrum
 
 [Rule]
 Psalmi Dominica
@@ -106,54 +106,22 @@ Spíritus semper, Deus unus, omni
 Témporis ævo.
 Amen.
 
-[HymnusM Matutinum pro Virgo tantum et non Martyr]
-v. Vírginis Proles, Opiféxque Matris,
-Virgo quem gessit, peperítque Virgo:
-Vírginis festum cánimus beátæ,
-Accipe votum.
-_
-Hujus obténtu, Deus alme, nostris
-Parce jam culpis, vítia remíttens,
-Quo tibi puri resonémus almum
-Péctoris hymnum.
-_
-Glória Patri genitǽque Proli,
-Et tibi compar utriúsque semper
-Spíritus alme, Deus unus, omni
-Témpore sæcli.
-Amen.
-
-[Hymnus Matutinum pro Virgo tantum et non Martyr]
-{:H-Virginisproles:}v. Vírginis Proles, Opiféxque Matris,
-Virgo quem gessit, peperítque Virgo:
-Vírginis festum cánimus beátæ,
-Accipe votum.
-_
-Hujus orátu, Deus alme, nobis
-Débitas pœnas scélerum remítte:
-Ut tibi puro resonémus almum
-Péctore carmen.
-_
-Sit decus Patri, genitǽque Proli,
-Et tibi, compar utriúsque virtus,
-Spíritus semper, Deus unus, omni
-Témporis ævo.
-Amen.
-
 [Ant Matutinum]
 O quam pulchra * est casta generátio cum claritáte!;;8
 Ante torum * hujus Vírginis frequentáte nobis dúlcia cántica drámatis.;;18
 Revértere, * revértere, Sunamítis; revértere, ut intueámur te.;;23
-V. Spécie tua et pulchritúdine tua.
-R. Inténde, próspere procéde, et regna.
 Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna.;;44
 Adjuvábit eam * Deus vultu suo: Deus in médio ejus, non commovébitur.;;45
 Aquæ multæ * non potuérunt exstínguere caritátem.;;47
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
 Nigra sum, * sed formósa, fíliæ Jerúsalem; ídeo diléxit me Rex, et introdúxit me in cubículum suum.;;95
 Trahe me post te, * in odórem currémus unguentórum tuórum: óleum effúsum nomen tuum.;;96
 Veni, Sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in ætérnum.;;97
+
+[Nocturn 2 Versum]
+V. Adjuvábit eam Deus vultu suo.
+R. Deus in médio ejus, non commovébitur.
+
+[Nocturn 3 Versum]
 V. Elégit eam Deus, et præelégit eam.
 R. In tabernáculo suo habitáre facit eam.
 
@@ -168,17 +136,11 @@ De Epístola prima beáti Pauli Apóstoli ad Corínthios
 30 et qui flent, tamquam non fléntes; et qui gaudent, tamquam non gaudéntes; et qui emunt, tamquam non possidéntes;
 31 et qui utúntur hoc mundo, tamquam non utántur; prǽterit enim figúra hujus mundi.
 
-[Responsory1 pro Martyre]
+[Responsory1]
 R. Veni Sponsa Christi, áccipe corónam, quam tibi Dóminus præparávit in ætérnum; pro cujus amóre sánguinem tuum fudísti,
 * Et cum Ángelis in paradísum introísti.
 V. Veni, elécta mea, et ponam in te thronum meum;  quia concupívit Rex spéciem tuam.
 R. Et cum Ángelis in paradísum introísti.
-
-[Responsory1]
-R. Veni, elécta mea, et ponam in te thronum meum
-* Quia concupívit Rex spéciem tuam.
-V. Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna.
-R. Quia concupívit Rex spéciem tuam.
 
 [Lectio2]
 !1 Cor 7:32-35
@@ -275,11 +237,7 @@ V. Ora pro nobis, beáta N..
 R. Ut digni efficiámur promissiónibus Christi.
 
 [Ant Laudes]
-Hæc est Virgo sápiens, * et una de número prudéntum.;;
-Hæc est Virgo sápiens, * quam Dóminus vigilántem invénit.;;
-Hæc est quæ nescívit * torum in delícto: habébit fructum in respectióne animárum sanctárum.;;
-Veni, elécta mea, * et ponam in te thronum meum, allelúja.;;
-Ista est speciósa * inter fílias Jerúsalem.;;
+@:Ant Vespera: s/;;.*//g
 
 [Capitulum Laudes]
 !2 Cor 10:17-18
@@ -300,69 +258,49 @@ R. Proptérea benedíxit te Deus in ætérnum.
 Símile est regnum cælórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam.
 
 [Oratio]
-v. Deus, qui inter cétera poténtiæ tuæ mirácula étiam in sexu frágili victóriam martýrii contulísti: concéde propítius; ut, qui beátæ N. Vírginis et Mártyris tuæ natalícia cólimus, per ejus ad te exémpla gradiámur.
+Deus, qui inter cétera poténtiæ tuæ mirácula étiam in sexu frágili victóriam martýrii contulísti: concéde propítius; ut, qui beátæ N. Vírginis et Mártyris tuæ natalícia cólimus, per ejus ad te exémpla gradiámur.
 $Per Dominum
 
 [Oratio1]
 Indulgéntiam nobis, quǽsumus, Dómine, beáta N. Virgo et Martyr implóret: quæ tibi grata semper éxstitit, et mérito castitátis, et tuæ professióne virtútis.
 $Per Dominum
 
-[Oratio pro Virgine non Martyre]
-@Commune/C7:Oratio
-
 [Lectio Prima]
-!Sap 4:1
-v. O quam pulchra est casta generátio cum claritáte! Immortális est enim memória illíus, quóniam apud Deum nota est, et apud hómines.
-
-[Lectio Prima pro Martyre]
 !Sir 51:13-14
 v. Dómine, Deus meus, exaltásti super terram habitatiónem meam, et pro morte defluénte deprecáta sum. Invocávi Dóminum, Patrem Dómini mei, ut non derelínquat me in die tribulatiónis meæ, et in témpore superbórum sine adjutório.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Spécie tua * Et pulchritúdine tua.
 R. Spécie tua * Et pulchritúdine tua.
 V. Inténde, próspere procéde, et regna.
 R. Et pulchritúdine tua.
 &Gloria
 R. Spécie tua * Et pulchritúdine tua.
-_
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
 
 [Capitulum Sexta]
 !2 Cor 11:2
 v. Æmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro vírginem castam exhibére Christo.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Adjuvábit eam * Deus vultu suo.
 R. Adjuvábit eam * Deus vultu suo.
 V. Deus in médio ejus, non commovébitur.
 R. Deus vultu suo.
 &Gloria
 R. Adjuvábit eam * Deus vultu suo.
-_
-V. Elégit eam Deus, et præelégit eam.
-R. In tabernáculo suo habitáre facit eam.
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Capitulum Nona pro Martyre]
-@:Lectio Prima pro Martyre
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Elégit eam Deus, * Et præelégit eam.
 R. Elégit eam Deus, * Et præelégit eam.
 V. In tabernáculo suo habitáre facit eam.
 R. Et præelégit eam.
 &Gloria
 R. Elégit eam Deus, * Et præelégit eam.
-_
-V. Diffúsa est grátia in lábiis tuis.
-R. Proptérea benedíxit te Deus in ætérnum.
 
 [Versum 3]
 @:Versum 2
@@ -400,7 +338,7 @@ De libro Ecclesiástici
 [Lectio4 in 2 loco]
 Ex libro S. Cypriáni, Epíscopi et Mártyris, de disciplína et hábitu Vírginum.
 !Lib. de hab. Virg. n. 3-5
-Nunc nobis ad vírgines sermo est, quarum quo sublímior glória est, major et cura est. Flos est ille ecclesiástici gérminis, decus atque ornaméntum grátiæ spiritális, læta índoles, laudis et honóris opus íntegrum atque incorrúptum, Dei imágo respóndens ad sanctimóniam Dómini, illústrior pórtio gregis Christi. Gaudet per illas atque in illis lárgiter floret Ecclésiæ matris gloriósa fœcúnditas: quantóque plus copiósa virgínitas número suo addit, tanto plus gaúdium matris augéscit. Ad has lóquimur, has adhortámur affectióne pótius quam potestáte: non quod, extrémi et mínimi et humilitátis nostræ ádmodum cónscii, áliquid ad censúram licéntiæ vindicémus; sed quod ad sollicitúdinem magis cauti, plus de diáboli infestatióne timeámus. 
+Nunc nobis ad vírgines sermo est, quarum quo sublímior glória est, major et cura est. Flos est ille ecclesiástici gérminis, decus atque ornaméntum grátiæ spiritális, læta índoles, laudis et honóris opus íntegrum atque incorrúptum, Dei imágo respóndens ad sanctimóniam Dómini, illústrior pórtio gregis Christi. Gaudet per illas atque in illis lárgiter floret Ecclésiæ matris gloriósa fœcúnditas: quantóque plus copiósa virgínitas número suo addit, tanto plus gaúdium matris augéscit. Ad has lóquimur, has adhortámur affectióne pótius quam potestáte: non quod, extrémi et mínimi et humilitátis nostræ ádmodum cónscii, áliquid ad censúram licéntiæ vindicémus; sed quod ad sollicitúdinem magis cauti, plus de diáboli infestatióne timeámus.
 
 [Lectio5 in 2 loco]
 Neque enim inánis hæc caútio est, et vana formído, quæ ad salútis viam cónsulit, quæ domínica et vitália præcépta custódit, ut quæ se Christo dicáverint, et a carnáli concupiscéntia recedéntes tam carne, quam mente se Deo vóverint, consúmment opus suum magno prǽmio destinátum, nec ornári jam, aut placére cuíquam, nisi Dómino suo, stúdeant, a quo et mercédem virginitátis expéctant, dicénte ipso: Non omnes cápiunt verbum, sed illi quibus datum est. Sunt enim spadónes, qui ex útero matris sic nati sunt: et sunt spadónes, qui coácti sunt ab homínibus; et sunt spadónes, qui seípsos castravérunt propter regnum cœlórum. 
@@ -409,6 +347,15 @@ Neque enim inánis hæc caútio est, et vana formído, quæ ad salútis viam có
 Dénuo quoque per hanc Angeli vocem continéntiæ munus osténditur, virgínitas prædicátur. Hi sunt, qui cum muliéribus se non coinquinavérunt: vírgines enim permansérunt: hi sunt qui sequúntur Agnum quocúmque íerit. Neque enim tantum másculis continéntiæ grátiam Dóminus repromíttit, et féminas prǽterit: sed quóniam fémina viri pórtio est, et ex eo sumpta atque formáta est, in Scriptúris fere ómnibus ad protoplástum Deus lóquitur, quia sunt duo in carne una, et in másculo simul significátur et fémina. Quod si Christum continéntia séquitur, et regno Dei virgínitas destinátur: quid est illis cum terréno cultu, et cum ornaméntis, quibus dum hominíbus placére géstiunt, Deum offéndunt?
 
 [Lectio7 in 2 loco]
+@Commune/C7:Lectio7
+
+[Lectio8 in 2 loco]
+@Commune/C7:Lectio8
+
+[Lectio9 in 2 loco]
+@Commune/C7:Lectio9
+
+[Lectio7 in 3 loco]
 Léctio sancti Evangélii secúndum Matthǽum
 !Matt 19:3-12
 In illo témpore: Accessérunt ad Jesum pharisæi, tentántes eum et dicéntes: Si licet hómini dimíttere uxórem suam quacúmque ex causa? Et réliqua.
@@ -417,9 +364,9 @@ Homilía S. Joánnis Chrysostomi
 !Homilia 63 in Matth., sub med.
 Dóminus noster, quia ad virginitátem hortári grave esse videbátur, a necessitáte legis de non solvéndo matrimónio, eos ad cupiditátem illíus tráhere studet. Deínde, ut eam esse possíbilem osténdat, sic inquit: Sunt eunúchi qui ex ventre matris ita nati sunt; et sunt qui ab homínibus eunúchi facti sunt, et sunt qui seípsos castravérunt propter regnum cælórum. Quibus verbis laténter eos ad eligéndam virginitátem indúcit, dum eam virtútem esse possíbilem ástruit.
 
-[Lectio8 in 2 loco]
+[Lectio8 in 3 loco]
 Id autem hoc fere modo confírmat: Cógita tecum, si aut a natúra talis esses, aut ab homínibus eam injúriam passus, quid fáceres, cum et ejúsmodi voluptáte caréres, et nullam, caréndo, mercédem consequeréris? Grátias ígitur nunc Deo agas, quod cum mercéde atque corónis idem sústines, quod illi sine corónis ac præmio tólerant. Immo vero non idem, sed multo lévius; tum quia spe erígeris et consciéntia recte facti, tum quia non ita ingéntibus concupiscéntiæ flúctibus jactáris.
 
-[Lectio9 in 2 loco]
+[Lectio9 in 3 loco]
 Cum ergo de illis eunúchis díxerit, qui, nisi étiam ipsi mente se contíneant, frustra et inutíliter tales sunt, ac de illis, qui, ut regnum cælórum consequántur, se cóntinent; subjúnxit rursus, dicens: Qui potest cápere, capiat; ut alacrióres effíciat eo ipso quod grave esse opus osténdit, et ineffábili benignitáte sua nóluit eam rem intra necessitátem legis conclúdere. Idque dicéndo, adhuc magis possíbilem esse demónstrat, ut voluntátis stúdium plus augeátur.
 &teDeum

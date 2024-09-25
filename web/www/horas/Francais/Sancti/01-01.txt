@@ -1,18 +1,8 @@
 [Rank]
 In Circumcisione Domini;;Duplex II classis;;5.1;;ex Sancti/12-25
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Die Octavae Nativitatis Domini;;Duplex I classis;;6;;ex Sancti/12-25
-
-[RankNewcal]
-Die Octavae Nativitatis Domini;;Duplex I classis;;6;;ex Sancti/12-25
-
-[Rule]
-ex Sancti/12-25 ;
-Psalmi Dominica
-Antiphonas Horas
-9 lectiones 1960
-no commemoratio
 
 [Ant Vespera]
 O commerce admirable : * Le Créateur du genre humain prenant un corps et une âme, a daigné naître de la Vierge, et, devenu homme sans le concours de l’homme, il nous a fait part de sa divinité.;;109
@@ -21,19 +11,11 @@ En ce buisson que vit Moïse * et qui brûlait sans se consumer, nous voyons l�
 La tige de Jessé a fleuri ; * l’étoile est sortie de Jacob ; la Vierge a enfanté le Sauveur. Nous vous louons, ô notre Dieu !;;126
 Voici que Marie nous a enfanté * le Sauveur, à la vue duquel Jean s’est écrié : Voici l’Agneau de Dieu, voici celui qui ôte les péchés du monde, alléluia.;;147
 
-[Capitulum Laudes]
-!Titus 2:11-12
-v. La grâce de Dieu notre Sauveur est apparue à tous les hommes, nous enseignant à renoncer à l’impiété et aux désirs du siècle, et à vivre sobrement, justement et pieusement dans ce monde.
-$Deo gratias
-
 [Ant 1]
 Par le grand * amour dont Dieu nous a aimés, il a envoyé son Fils dans une chair semblable à celle du péché, Alléluia.
 
 [Oratio]
-O Dieu, qui, en rendant féconde la virginité de la bienheureuse Marie, avez procuré~
-à l’humanité le salut éternel, accordez-nous, nous vous en supplions, ~
-de ressentir la puissante intercession de celle par laquelle nous avons reçu l’auteur de la vie~
-Notre-Seigneur Jésus-Christ, votre Fils :
+O Dieu, qui, en rendant féconde la virginité de la bienheureuse Marie, avez procuré à l’humanité le salut éternel, accordez-nous, nous vous en supplions, de ressentir la puissante intercession de celle par laquelle nous avons reçu l’auteur de la vie Notre-Seigneur Jésus-Christ, votre Fils :
 $Qui tecum
 
 [Ant Matutinum]
@@ -59,9 +41,7 @@ Lesson from the letter of St. Paul the Apostle to the Romans
 Quel avantage dirons-nous donc qu’Abraham, notre père, a eu selon la chair ? Car si Abraham a été justifié par les œuvres, il a de quoi se glorifier, mais non devant Dieu. En effet, que dit l’Écriture ? Abraham crut à Dieu, et ce lui fut imputé à justice. Or à celui qui travaille, le salaire n’est point imputé comme une grâce, mais comme une dette. Au fait pas les œuvres, mais qui croit en celui qui justifie l’impie, sa foi est imputée à justice, selon le décret de la grâce de Dieu. C’est ainsi que David appelle heureux l’homme à qui Dieu impute la justice sans les œuvres : Bienheureux ceux dont les iniquités ont été remises, et dont les péchés ont été couverts. Bienheureux l’homme à qui le Seigneur n’a pas imputé de péché.
 
 [Responsory1]
-R. Voici l’Agneau de Dieu, voici celui qui ôte les péchés du monde ;~
-voici celui de qui je disais : Celui qui vient après moi, a été fait avant moi~
- * Je ne suis pas digne de délier la courroie de sa chaussure.
+R. Voici l’Agneau de Dieu, voici celui qui ôte les péchés du monde ; voici celui de qui je disais : Celui qui vient après moi, a été fait avant moi * Je ne suis pas digne de délier la courroie de sa chaussure.
 V. Celui qui est de la terre, parle de la terre ; celui qui vient du Ciel, est au-dessus de tous.
 R. Je ne suis pas digne de délier la courroie de sa chaussure.
 
@@ -141,6 +121,11 @@ R. Le Sauveur des siècles, le Roi des Anges ; et seule la Vierge l’allaitait 
 [Lectio9]
 Car parmi il tous ceux qui sont nés de la femme, seul, le Seigneur Jésus est absolument saint ; lui qui, par la nouveauté d’un enfantement immaculé, n’a pas ressenti la contagion de la corruption terrestre, et l’a éloignée de lui par sa majesté céleste. Si nous nous en tenions à la lettre, comment tout enfant mâle serait-il saint ; puisqu’il est manifeste qu’il y en a eu beaucoup de très criminels ? Achab aurait-il été saint ? Seraient-ils saints ces faux prophètes que le feu, vengeur de l’injure faite au ciel, consuma à la prière d’Élie ? Mais il est saint celui que les pieux préceptes de la loi divine nous représentaient dans les figures du mystère à venir ; et c’est par lui seul que l’Église, qui est sainte et vierge, a le secret d’engendrer, dans son immaculée fécondité, les peuples Je Dieu.
 &teDeum
+
+[Capitulum Laudes]
+!Titus 2:11-12
+v. La grâce de Dieu notre Sauveur est apparue à tous les hommes, nous enseignant à renoncer à l’impiété et aux désirs du siècle, et à vivre sobrement, justement et pieusement dans ce monde.
+$Deo gratias
 
 [Ant 2]
 Un mystère admirable * se manifeste aujourd'hui : les deux natures s'unissent, Dieu se fait homme ; Il reste ce qu'Il était et Il prend ce qu'Il n'était pas, sans souffir ni mélange ni division.

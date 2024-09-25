@@ -1,7 +1,7 @@
 [Rank]
 S. Marthae Virginis;;Semiduplex;;2;;vide C6
 
-[Rank1960]
+[Rank] (rubrica 196)
 S. Marthae Virginis;;Semiduplex;;3;;vide C6
 
 [Rule]
@@ -17,47 +17,11 @@ Santos Mártires Félix, Simplício, Faustino e Beatriz
 ! Comemoração
 ! Paramentos vermelhos
 
-[Introitus]
-@Commune/C6b:Introitus
-
-[Oratio]
-Ouvi-nos, ó Deus, nosso salvador, a fim de que, assim como nos alegramos com a festa da vossa B. Virgem Marta assim também consigamos alcançar piedosos sentimentos de fervorosa devoção.
-$Per Dominum
-
-[Lectio]
-@Commune/C6b:Lectio
-
-[Graduale]
-@Commune/C6b:Graduale
-
 [Evangelium]
 Continuação ++ do santo Evangelho segundo S. Lucas.
 !Lc 10:38-42
 Naquele tempo, entrou Jesus em um castelo, onde uma mulher, chamada Marta, O recebeu em sua casa. Tinha esta uma irmã, de nome Maria, que se assentou aos pés do Senhor, escutando suas palavras. Porém, Marta estava muito atarefada, a preparar quanto era necessário. Então esta veio ter com Jesus, dizendo-Lhe: «Senhor, não reparais que minha irmã me deixa só a servir? Dizei-lhe, pois, que venha ajudar-me». E o Senhor disse: «Marta, Marta, inquietai-vos e embaraçai-vos, cuidando solícitamente de muitas coisas, quando na verdade só uma é necessária. Maria escolheu a melhor parte, a qual lhe não será tirada».
 
-[Offertorium]
-@Commune/C6b:Offertorium
-
-[Secreta]
-@Commune/C6b:Secreta
-
-[Communio]
-@Commune/C6b:Communio
-
-[Postcommunio]
-@Commune/C6b:Postcommunio
-
-[Commemoratio Oratio]
-! Santos Mártires Félix, Simplício, Faustino e Beatriz
-Permiti, Senhor, Vos suplicamos, que, assim como o povo cristão celebra com júbilo durante esta vida a festa dos vossos Santos Mártires Félix, Simplício, Faustino e Beatriz, assim também possa alegrar-se na eternidade, e alcance na realidade mais tarde o que agora honra com seus votos.
-$Per Dominum
-
-[Commemoratio Secreta]
-! Santos Mártires Félix, Simplício, Faustino e Beatriz
-Vos oferecemos, Senhor, estas hóstias em memória dos vossos Santos Mártires Félix. Simplício, Faustino e Beatriz, suplicando-Vos humildemente que por eles nos concedais simultaneamente o perdão e a salvação.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! Santos Mártires Félix, Simplício, Faustino e Beatriz
-Ó Deus omnipotente, Vos suplicamos, fazei que a solenidade dos vossos Santos Mártires Félix, Simplício, Faustino e Beatriz, que celebramos com estes celestiais mystérios, nos obtenha o perdão da vossa misericórdia.
+[Oratio]
+Ouvi-nos, ó Deus, nosso salvador, a fim de que, assim como nos alegramos com a festa da vossa B. Virgem Marta assim também consigamos alcançar piedosos sentimentos de fervorosa devoção.
 $Per Dominum

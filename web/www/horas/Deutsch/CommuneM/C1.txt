@@ -1,25 +1,9 @@
-@Commune/C1
-
-[Ant Matutinum]
-In alle Lande * ist gedrungen ihre Kunde, bis an der Erde Grenzen ihre Meldung.;;18
-Die Gottesdiener riefen, * und es hat sie angehört der Herr.;;33
-Du verteilst sie * als Fürsten in sämtliche Länder, sie werden, o Herr, das Andenken an dich erhalten.;;44
-Die Führer der Völker * sind nun versammelt bei Abrahams Gotte.;;46
-Du hast den Landbesitz gegeben * den treuen Verehrern deiner Majestät, o Herr.;;60
-Sie kündeten, * was Gott getan hat und achteten auf seine Werke.;;63
-V. In alle Lande ist gedrungen ihre Kunde.
-R. Bis an der Erde Grenzen ihre Meldung.
-Groß wird werden * die Siegeskraft des treuen Gottesdieners, alleluja.;;74
+[AntMatutinumM]
 Sie verkünden * unter den Heiden die Herrlichkeit des Herrn, und Seine Wunder allen Völkern.;;95
 Glück leuchtet auf * dem Gottesdiener, alleluja, und Wonne denen, die im Herzen richtig denken, alleluja.;;96
 Es half ihm seine rechte, * und sein heiliger Arm, alleluia;;97
-Sie achteten * auf deine Offenbarung und auf die Gebote, die du ihnen gegeben, alleluja.;;98
 Sie wandelten in der Unschuld ihres Herzens * inmitten Deines Hauses.;;100
-V. Du verteilst sie, o Herr, als Fürsten in sämtliche Länder.
-R. Sie werden, o Herr, das Andenken an dich erhalten.
 Seid fröhlich und frohlockt, daß eure Namen im Himmel geschrieben sind, spricht der Herr.;;253;254;255
-V. Überaus geehrt, o Gott, sind deine Freunde.
-R. Und überaus gewaltig scheint mir ihre Würde.
 
 [Responsory4]
 R. Sie waren ohne Tadel vor dem Herrn; und untereinander waren sie unzertrennlich.
@@ -30,18 +14,18 @@ R. Den Kelch des Herrn tranken sie und so wurden sie Freunde Gottes.
 [Lectio6]
 @Commune/C1:Lectio5:s/Wie nämlich .*//s
 
-[Responsory8]
-R. Du verteilst sie als Fürsten in sämtliche Länder, sie werden, o Herr, das Andenken an dich erhalten.
-* Mit allen ihren Nachkommen und Generationen.
-V. Überaus geehrt, o Gott, sind deine Freunde. Und überaus gewaltig scheint mir ihre Würde.
-R. Mit allen ihren Nachkommen und Generationen.
-
 [Lectio7]
 @Commune/C1:Lectio5:s/.* Wie nämlich /Wie nämlich /s s/$/~/
 @Commune/C1:Lectio6:s/Und .*//s
 
 [Lectio8]
 @Commune/C1:Lectio6:s/.* Und dabei/Und dabei/s
+
+[Responsory8]
+R. Du verteilst sie als Fürsten in sämtliche Länder, sie werden, o Herr, das Andenken an dich erhalten.
+* Mit allen ihren Nachkommen und Generationen.
+V. Überaus geehrt, o Gott, sind deine Freunde. Und überaus gewaltig scheint mir ihre Würde.
+R. Mit allen ihren Nachkommen und Generationen.
 
 [Responsory11]
 R. Wer sind die, welche wie die Wolken daherfliegen,

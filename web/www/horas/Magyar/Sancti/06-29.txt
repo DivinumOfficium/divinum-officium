@@ -1,15 +1,8 @@
 [Rank]
 SS. Apostolorum Petri et Pauli;;Duplex I classis cum octava communi;;6.5;;ex C1
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 SS. Apostolorum Petri et Pauli;;Duplex classis;;6;;ex C1
-
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-nor commemoratio
 
 [Hymnus Vespera]
 {:H-Decoralux:}v. Az öröklétnek fényessége önti el
@@ -33,18 +26,29 @@ Az Egységben, ki mindenen kormánykodik,
 Az öröklétnek minden századain át.
 Ámen.
 
+[Octava 1]
+!Commemoratio Octavae Ss. Apostoli Petri et Pauli
+Ant. Glorious princes of the Earth * as in this life you were honored together, you are not separated by death.
+_
+V. Thou shalt make them princes over all the earth
+R. They shall remember thy name, O Lord
+_
+!Könyörgés
+O God, Who didst hallow this day by the Testifying of thine Holy Apostles Peter and Paul, grant unto thy Church, whose foundations Thou wast pleased to lay by their hands, the grace always in all things to remain faithful to their teaching.
+$Per Dominum
+
 [Lectio1]
 Olvasmány az Apostolok Cselekedeiből
 !Acts 3:1-5
 1 Péter és János a kilencórai imádság idején fölment a templomba.
 2 Éppen akkor vittek oda egy bénán született embert, akit mindennap letettek a templom úgynevezett Ékes-kapujánál, hogy a templomba menőktől alamizsnát kérjen.
 3 Amikor meglátta Pétert és Jánost, amint épp be akartak menni a templomba, alamizsnáért könyörgött.
-4 Péter Jánossal együtt rátekintett, és így szólt hozzá: "Nézz ránk!"
+4 Péter Jánossal együtt rátekintett, és így szólt hozzá: „Nézz ránk!”
 5 Erre rájuk emelte tekintetét, abban a reményben, hogy kap tőlük valamit.
 
 [Lectio2]
 !Acts 3:6-10
-6 Péter azonban ezt mondta neki: "Aranyom, ezüstöm nincs, de amim van, neked adom: A názáreti Jézus Krisztus nevében (állj fel és) járj!"
+6 Péter azonban ezt mondta neki: „Aranyom, ezüstöm nincs, de amim van, neked adom: A názáreti Jézus Krisztus nevében (állj fel és) járj!”
 7 Jobb kezénél fogva fölsegítette, mire annak nyomban erő szállt a lábába és a bokájába.
 8 Egy ugrással talpon volt, és tudott járni. Velük együtt bement a templomba, járkált, ugrándozott és dicsőítette az Istent.
 9 Az egész nép látta, hogy jár és dicsőíti az Istent.
@@ -53,7 +57,7 @@ Olvasmány az Apostolok Cselekedeiből
 [Lectio3]
 !Acts 3:11-16
 11 Mivel nem tágított Péter és János mellől, odagyűlt köréjük csodálkozva az egész nép az úgynevezett Salamon-csarnokba.
-12 Amikor Péter ezt látta, beszédet intézett a néphez: "Izraelita férfiak! Miért csodálkoztok ezen, miért bámultok úgy ránk, mintha a saját erőnkből vagy jámborságunk folytán értük volna el, hogy ez járni tudjon?
+12 Amikor Péter ezt látta, beszédet intézett a néphez: „Izraelita férfiak! Miért csodálkoztok ezen, miért bámultok úgy ránk, mintha a saját erőnkből vagy jámborságunk folytán értük volna el, hogy ez járni tudjon?
 13 Ábrahám, Izsák és Jákob Istene megdicsőítette a Fiát, Jézust, akit ti kiszolgáltattatok és megtagadtatok Pilátus előtt, noha ő úgy határozott, hogy szabadon bocsátja.
 14 Megtagadtátok a szentet és igazat; arra kértétek, hogy a gyilkosnak kegyelmezzen,
 15 az élet szerzőjét pedig megöltétek. Isten azonban feltámasztotta a halálból, ennek mi tanúi vagyunk.
@@ -62,7 +66,7 @@ Olvasmány az Apostolok Cselekedeiből
 [Lectio7]
 Evangélium szent Máté Apostol kőnyvéből
 !Matt 16:13-19
-Amikor Jézus Fülöp Cezáreájának vidékére ért, megkérdezte tanítványaitól: "Kinek tartják az emberek az Emberfiát?" És így tovább
+Amikor Jézus Fülöp Cezáreájának vidékére ért, megkérdezte tanítványaitól: „Kinek tartják az emberek az Emberfiát?” És így tovább
 _
 Homily by St Jerome, Priest at Bethlehem.
 !Bk. iii. Comment, on Matth. xvi.
@@ -90,31 +94,6 @@ Az Egységben, ki mindenen kormánykodik,
 Az öröklétnek minden századain át.
 Ámen.
 
-[Lectio Prima]
-!Acts 12:11
-v. Amikor Péter föleszmélt, megszólalt: - "Most már csakugyan tudom, hogy az Úr elküldte angyalát, és kiszabadított Heródes kezéből, s abból, amire a zsidó nép számított."
-
-[Capitulum Sexta]
-!Acts 12:5
-v. Míg Pétert fogva tartották a börtönben, az egyház állandóan imádkozott érte az Istenhez.
-$Deo gratias
-
-[Capitulum Nona]
-!Acts 12:11
-v. Amikor Péter föleszmélt, megszólalt: - "Most már csakugyan tudom, hogy az Úr elküldte angyalát, és kiszabadított Heródes kezéből, s abból, amire a zsidó nép számított."
-$Deo gratias
-
-[Octava 1]
-!Commemoratio Octavae Ss. Apostoli Petri et Pauli
-Ant. Glorious princes of the Earth * as in this life you were honored together, you are not separated by death.
-_
-V. Thou shalt make them princes over all the earth
-R. They shall remember thy name, O Lord
-_
-!Könyörgés
-O God, Who didst hallow this day by the Testifying of thine Holy Apostles Peter and Paul, grant unto thy Church, whose foundations Thou wast pleased to lay by their hands, the grace always in all things to remain faithful to their teaching.
-$Per Dominum
-
 [Octava 2]
 !Commemoratio Octavae Ss. Petri et Pauli
 Ant. Glorious princes of the Earth, as in this life you were honored together, you are not separated by death
@@ -125,3 +104,12 @@ _
 !Könyörgés.
 O God, Who didst hallow this day by the Testifying of thine Holy Apostles Peter and Paul, grant unto thy Church, whose foundations Thou wast pleased to lay by their hands, the grace always in all things to remain faithful to their teaching.
 $Per Dominum
+
+[Lectio Prima]
+!Acts 12:11
+v. Amikor Péter föleszmélt, megszólalt: - „Most már csakugyan tudom, hogy az Úr elküldte angyalát, és kiszabadított Heródes kezéből, s abból, amire a zsidó nép számított.”
+
+[Capitulum Sexta]
+!Acts 12:5
+v. Míg Pétert fogva tartották a börtönben, az egyház állandóan imádkozott érte az Istenhez.
+$Deo gratias

@@ -1,14 +1,8 @@
 [Rank]
 S. Leonis Papæ et Confessoris;;Semiduplex;;2.2;;vide C4
 
-[Rule]
-vide C4;
-9 lectiones
-commemoratio3
-OPapaC=Leónem;
-
 [Oratio]
-Dieu, Vous avez égalé le bienheureux Pontife Léon en mérites à Vos Saints, accordez-nous, dans Votre bonté  que, comme nous célébrons la mémoire de sa fête, nous imitions aussi les exemples de sa vie.
+Dieu, Vous avez égalé le bienheureux Pontife Léon en mérites à Vos Saints, accordez-nous, dans Votre bonté que, comme nous célébrons la mémoire de sa fête, nous imitions aussi les exemples de sa vie.
 $Per Dominum
 
 [Lectio4]
@@ -19,9 +13,6 @@ Dans ce concile furent condamnés Cyrus, Sergius et Pyrrhus, qui enseignaient qu
 
 [Lectio6]
 Il fut vraiment le père des pauvres, car il ne soulageait pas seulement de son argent, mais de ses soins, de ses fatigues, de ses conseils, la misère et le délaissement des nécessiteux, des veuves et des orphelins. Son exemple et sa parole portaient tout le monde à une pieuse et sainte vie. Il s’endormit dans le Seigneur au onzième mois de son pontificat, le cinq des nones de juillet, l’année seize cent quatre-vingt-trois, et fut enseveli dans la basilique de Saint-Pierre. Dans une ordination au mois de juin, il ordonna neuf Prêtres, trois Diacres et sacra vingt-trois Évêques pour divers lieux.
-
-[Commemoratio 2]
-@Sancti/06-29:Octava
 
 [Lectio94]
 Léon II, Souverain Pontife, originaire de Sicile, était érudit en lettres sacrées et profanes en grec et en latin, et était également un excellent musicien ; car il harmonisa mieux les hymnes sacrés et les psaumes utilisés dans l'Église. Il approuva les actes du sixième concile qui s'est tenu à Constantinople et les traduisit en latin. C'est lors de ce concile que Cyrus, Sergius et Pyrrhus furent condamnés pour avoir enseigné qu'il n'y avait en Christ qu'une seule volonté et une seule opération. Il fut en effet un père pour les pauvres ; car non seulement par l'argent, mais par ses actes, ses travaux et ses conseils, il soulagea la pauvreté et la solitude des veuves et des orphelins nécessiteux. Il s'endormit dans le Seigneur le 3 juillet de l'année 683, au onzième mois de son pontificat, et fut enterré dans la basilique de Saint-Pierre.
@@ -36,6 +27,5 @@ Léon II, Souverain Pontife, originaire de Sicile, était érudit en lettres sac
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
-
+[Commemoratio 2]
+@Sancti/06-29:Octava

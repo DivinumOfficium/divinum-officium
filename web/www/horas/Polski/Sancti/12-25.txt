@@ -4,13 +4,6 @@ Boże Narodzenie;;Duplex I Classis;;6.9
 [Rank] (rubrica 1960)
 Boże Narodzenie;;Duplex I Classis;;7
 
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Doxology=Nat
-Special Evangelii Benedictio
-
 [Ant Vespera]
 Uwielmożony jest * Król pokoju. Wszystka ziemia pragnęła twarzy Jego.;;109
 Uwielmożony jest * Król pokoju nadewszystkie króle ziemskie.;;110
@@ -22,43 +15,6 @@ Podnoście głowy wasze, * boć się przybliża odkupienie wasze.;;116
 !Tyt 3:4-5
 v. Okazała się dobrotliwość i ludzkość Zbawiciela Boga: nie z uczynków sprawiedliwości, któreśmy uczynili, ale podług miłosierdzia swego zbawił nas.
 $Deo gratias
-
-[HymnusM Vespera]
-v. Chryste, zbawienie ludzkości
-I Synu Ojca Jedyny,
-Ciebie On zrodził przedziwnie
-Przed wszelkich bytów początkiem.
-_
-Tyś chwały Jego odblaskiem
-I wieczną świata nadzieją,
-Usłysz więc nasze wołanie
-Ze wszystkich ziemi zakątków!
-_
-Wspomnij, że niegdyś przyjąłeś
-Śmiertelną postać człowieka,
-Rodząc się z łona czystego
-Niepokalanej Dziewicy.
-_
-Dzień, który do nas powraca
-Przez roku stałe nawroty,
-Świadczy, że z Ojca stolicy
-Przyszedłeś, aby nas zbawić.
-_
-Niebo i lądy z morzami,
-I to, co w nich się znajduje,
-Ojca wysławia z radością,
-Gdyż On Cię posłał na ziemię.
-_
-Także i my, których, Panie,
-Swej krwi obmyłeś strumieniem,
-Nowym Cię hymnem wielbimy
-W rocznicę Twoich narodzin.
-_
-Chwała twa Panie niech słynie,
-Z Przeczystej Panny zrodzony:
-Z Ojcem, i Duchem światłości,
-Na nieskończone wieczności.
-Amen.
 
 [Hymnus Vespera]
 {:H-Jesuredemptoromnium:}v. O Jezu, Zbawco wszystkich ziem,
@@ -95,6 +51,43 @@ Niech Tobie, Jezu, chwała brzmi,
 Co z Panny rodzisz się bez skaz,
 Wraz z Ojcem, z Duchem w jednej czci,
 Po wszystkie wieki, w każdy czas.
+Amen.
+
+[HymnusM Vespera]
+v. Chryste, zbawienie ludzkości
+I Synu Ojca Jedyny,
+Ciebie On zrodził przedziwnie
+Przed wszelkich bytów początkiem.
+_
+Tyś chwały Jego odblaskiem
+I wieczną świata nadzieją,
+Usłysz więc nasze wołanie
+Ze wszystkich ziemi zakątków!
+_
+Wspomnij, że niegdyś przyjąłeś
+Śmiertelną postać człowieka,
+Rodząc się z łona czystego
+Niepokalanej Dziewicy.
+_
+Dzień, który do nas powraca
+Przez roku stałe nawroty,
+Świadczy, że z Ojca stolicy
+Przyszedłeś, aby nas zbawić.
+_
+Niebo i lądy z morzami,
+I to, co w nich się znajduje,
+Ojca wysławia z radością,
+Gdyż On Cię posłał na ziemię.
+_
+Także i my, których, Panie,
+Swej krwi obmyłeś strumieniem,
+Nowym Cię hymnem wielbimy
+W rocznicę Twoich narodzin.
+_
+Chwała twa Panie niech słynie,
+Z Przeczystej Panny zrodzony:
+Z Ojcem, i Duchem światłości,
+Na nieskończone wieczności.
 Amen.
 
 [Versum 1]
@@ -264,9 +257,6 @@ Małe Dziecię * dzisiaj nam się narodziło: i nazwane będzie Bogiem Mocnym, a
 v. Rozmaicie i wielą sposobów mówiwszy dawno Bóg ojcom przez Proroki: Na ostatek tych dni mówił do nas przez Syna, którego postanowił dziedzicem wszystkiego, przez którego uczynił i wieki.
 $Deo gratias
 
-[HymnusM Laudes]
-@:Hymnus Laudes:s/Jezu, Tobie niechaj będzie chwała/Chwała twa Panie niech słynie/
-
 [Hymnus Laudes]
 {:H-Asolisortus:}v. Od kresu wschodu słońca
 Aż do krańca ziemi
@@ -309,12 +299,26 @@ Oraz Ojcu i dobroczynnemu Duchowi,
 Po nieskończone wieki.
 Amen.
 
+[HymnusM Laudes]
+@:Hymnus Laudes:s/Jezu, Tobie niechaj będzie chwała/Chwała twa Panie niech słynie/
+
 [Versum 2]
 V. Objawił Pan, alleluja.
 R. Zbawienie swoje, alleluja.
 
 [Ant 2]
 Chwała na wysokości Bogu, * a na ziemi pokój ludziom dobréj woléj, alleluja, alleluja.
+
+[Octava 2]
+!Wspominamy oktawę Bożego Narodzenia
+Ant. Chwała na wysokości Bogu, * a na ziemi pokój ludziom dobréj woléj, alleluja, alleluja.
+_
+V. Objawił Pan, alleluja,
+R. Zbawienie swoje, alleluja.
+_
+v. Módlmy się.
+Daj nam, prosimy Cię Wszechmogący Boże, aby nowe, według ciała, narodzenie Jednorodzonego Syna Twego, wyzwoliło nas z jarzma grzechu, który nas oddawna w niewoli trzyma.
+$Per eumdem
 
 [Lectio Prima]
 !Hbr 1:11-12
@@ -371,17 +375,6 @@ Dziś * narodził się Chrystus: dziś ukazał się Zbawiciel: dziś na ziemi ś
 [Octava 3]
 !Wspominamy oktawę Bożego Narodzenia
 Ant. Dziś narodził się Chrystus: dziś ukazał się Zbawiciel: dziś na ziemi śpiewają Aniołowie, weselą się Archaniołowie: dziś radują się sprawiedliwi mówiąc: chwała na wysokości Bogu, alleluja.
-_
-V. Objawił Pan, alleluja,
-R. Zbawienie swoje, alleluja.
-_
-v. Módlmy się.
-Daj nam, prosimy Cię Wszechmogący Boże, aby nowe, według ciała, narodzenie Jednorodzonego Syna Twego, wyzwoliło nas z jarzma grzechu, który nas oddawna w niewoli trzyma.
-$Per eumdem
-
-[Octava 2]
-!Wspominamy oktawę Bożego Narodzenia
-Ant. Chwała na wysokości Bogu, * a na ziemi pokój ludziom dobréj woléj, alleluja, alleluja.
 _
 V. Objawił Pan, alleluja,
 R. Zbawienie swoje, alleluja.

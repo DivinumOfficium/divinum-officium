@@ -1,14 +1,6 @@
 [Rank]
 Św. Gabryjela Archanioła;;Duplex majus;;4;;ex Sancti/05-08
 
-[Rule]
-ex Sancti/05-08
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=137
-Psalm5 Vespera3=116
-
 [Ant Vespera]
 Wszedł Zachariasz * do kościoła Pańskiego, i ukazał mu się Aniół Pański, stojąc po prawéj stronie ołtarza kadzenia.
 I rzekł do niego Aniół: * Nie bój się, Zacharyaszu, bo jest wysłuchana prośba twoja.
@@ -38,13 +30,12 @@ Którego chwała po całym
 Rozbrzmiewa świecie.
 Amen.
 
-[Capitulum Laudes]
-!Dn 9:21-22
-v. Oto mąż Gabryel, któregom widział w widzeniu z początku, prędko lecący, dotknął się mnie czasu ofiary wieczornéj. I nauczył mię, a mówił zemną i rzekł: Danielu, terazem wyszedł, abych cię nauczył, ażebyś zrozumiał.
-$Deo gratias
-
 [Ant 1]
 Anioł Gabryel * ukazał się Danielowi i rzekł mu: Od początku modlitw twoich wyszła mowa, a jam przyszedł oznajmić tobie; ty tedy obacz mowę, a zrozumiéj widzenie.
+
+[Oratio]
+Boże, któryś z pośród wszystkich aniołów dla oznajmienia tajemnicy wcielenia wybrał archanioła Gabryela: spraw łaskawie, abyśmy święto jego na ziemi obchodząc, jego opieki zaznali w niebiesiech.
+$Qui vivis
 
 [Invit]
 Pana, Króla Archaniołów * Pójdźmy uwielbiać.
@@ -72,7 +63,7 @@ Z Proroka Daniela
 20 A gdym jeszcze mówił i modlił się, a wyznawałem grzechy moje i grzechy ludu mego Izraelskiego i pokładałem prośby moje przed obliczem Boga mego, o górę świętą Boga mego:
 21 Gdym ja jeszcze mówił w modlitwie, oto mąż Gabryel, któregom widział w widzeniu z początku, prędko lecący, dotknął się mnie czasu ofiary wieczornéj.
 22 I nauczył mię, a mówił zemną i rzekł: Danielu, terazem wyszedł, abych cię nauczył, ażebyś zrozumiał.
-23 Od początku modlitw twoich wyszła mowa, a jam przyszedł oznajmić tobie; boś mąż pożądania jest: ty tedy obacz mowę, a zrozumiéj widzenie. 
+23 Od początku modlitw twoich wyszła mowa, a jam przyszedł oznajmić tobie; boś mąż pożądania jest: ty tedy obacz mowę, a zrozumiéj widzenie.
 
 [Responsory1]
 R. Gdy Daniel modlił się, i wyznawał grzechy swoje i grzechy ludu swego.
@@ -94,7 +85,7 @@ R. A jam przyszedł oznajmić tobie; boś mąż pożądania jest.
 [Lectio3]
 !Dn 9:26-27
 26 A po tygodniów sześćdziesiąt i dwu będzie zabit Chrystus, a nie będzie ludem jego, który się go zaprzy: a miasto i świątynią skazi lud z wodzem, który przyjdzie, a koniec jego spustoszenie, a po skończeniu wojny postanowione spustoszenie.
-27 A zmocni przymierze z mnogimi tydzień jeden: a w pół tygodnia ustanie ofiara i ofiarowanie, i będzie w kościele obrzydłość spustoszenia, i aż do skończenia i końca będzie trwać spustoszenie. 
+27 A zmocni przymierze z mnogimi tydzień jeden: a w pół tygodnia ustanie ofiara i ofiarowanie, i będzie w kościele obrzydłość spustoszenia, i aż do skończenia i końca będzie trwać spustoszenie.
 
 [Responsory3]
 R. Oto mąż Gabryel, któregom widział w widzeniu z początku, prędko lecący, dotknął się mnie czasu ofiary wieczornéj i nauczył mię, a mówił zemną i rzekł:
@@ -136,6 +127,11 @@ Chrystus „Mocą Bożą” (1 Kor. 1, 24) i nazywa się i jest, tą mocą, o kt
 [Ant Laudes]
 @:Ant Vespera
 
+[Capitulum Laudes]
+!Dn 9:21-22
+v. Oto mąż Gabryel, któregom widział w widzeniu z początku, prędko lecący, dotknął się mnie czasu ofiary wieczornéj. I nauczył mię, a mówił zemną i rzekł: Danielu, terazem wyszedł, abych cię nauczył, ażebyś zrozumiał.
+$Deo gratias
+
 [Hymnus Laudes]
 {:HPlacarechriste:}v. Okaż się łaskawym, Chryste,
 Sługom, dla których o zmiłowanie Ojca
@@ -170,10 +166,6 @@ R. Mając kadzielnicę złotą w swem ręku.
 [Ant 2]
 Anioł Gabryel * ukazał się Zacharyaszowi, mówiąc: Żona twa Elżbieta urodzi tobie syna, i nazowiesz imię jego Jan, i wiele ich będą się radować z narodzenia jego: on to uprzedzi przed oblicznością Pańską, przygotuje drogi jego.
 
-[Oratio]
-Boże, któryś z pośród wszystkich aniołów dla oznajmienia tajemnicy wcielenia wybrał archanioła Gabryela: spraw łaskawie, abyśmy święto jego na ziemi obchodząc, jego opieki zaznali w niebiesiech.
-$Qui vivis
-
 [Lectio Prima]
 !Dn 9:25
 v. A tak wiedz a obacz, od wyjścia mowy, aby zaś było zbudowane Jeruzalem, aż do Chrystusa wodza tygodniów siedm i tygodniów sześćdziesiąt i dwa będą.
@@ -182,10 +174,6 @@ v. A tak wiedz a obacz, od wyjścia mowy, aby zaś było zbudowane Jeruzalem, a�
 !Dn 9:23-24
 v. A jam przyszedł oznajmić tobie; boś mąż pożądania jest. Siedmdziesiąt tygodni ukrócone są, a grzech aby wziął koniec, aby się spełniło widzenie i proroctwo, a był pomazany Święty świętych.
 $Deo gratias
-
-[Versum 3]
-V. Przed oblicznością Aniołów będęć śpiewał Tobie, Boże mój.
-R. Będę się kłaniał ku kościołowi twemu świętemu, i będę wyznawał imieniowi twojemu.
 
 [Ant 3]
 Archanioł Gabryel * rzekł do Maryji: U Boga nie będzie żadne słowo niepodobne. I rzekła Marya: oto służebnica Pańska, niechaj mi się stanie według słowa twego. I odszedł od niéj Aniół.

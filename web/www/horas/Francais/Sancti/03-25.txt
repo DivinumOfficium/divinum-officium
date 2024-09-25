@@ -1,16 +1,8 @@
 [Rank]
 In Annuntiatione Beatæ Mariæ Virginis;;Duplex I classis;;6.5;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Annuntiatione Beatæ Mariæ Virginis;;Duplex I classis;;6;;ex C11
-
-[Rule]
-ex C11 ;
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-9 lectiones ;
-Ant Matutinum 12 special
 
 [Ant Vespera]
 L'ange Gabriel * fut envoyé à la Vierge Marie, promise en mariage à Joseph. (Alleluia.);;109
@@ -145,10 +137,6 @@ Voici la servante du Seigneur * qu'il me soit fait selon votre parole. (Alleluia
 v. Une vierge concevra, et Elle enfantera un fils, auquel on donnera le nom d'Emmanuel. Il mangera du beurre et du miel, en sorte qu'il sache rejeter le mal et choisir le bien.
 $Deo gratias
 
-[Versum 2]
-V. Je vous salue, Marie, pleine de grâces. (Alleluia.)
-R. Le Seigneur est avec vous. (Alleluia.)
-
 [Ant 2]
 Comment cela se fera-t-il, * Ange de Dieu ? Car je ne connais point d’homme. — Écoutez, Vierge Marie : l’Esprit-Saint surviendra en vous et la vertu du Très-Haut vous couvrira de son ombre. (Alleluia.)
 
@@ -167,6 +155,3 @@ $Deo gratias
 
 [Ant 3]
 L’Ange Gabriel * parla à Marie, disant : Je vous salue, pleine de grâce, le Seigneur est avec vous, vous êtes bénie entre les femmes. (Alleluia.)
-
-[Versum 3]
-@:Versum 1

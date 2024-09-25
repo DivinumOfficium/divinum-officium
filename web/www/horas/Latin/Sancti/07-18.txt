@@ -1,6 +1,9 @@
 [Rank]
 S. Camilli de Lellis Confessoris;;Duplex;;3;;vide C5
 
+[Rank] (rubrica innovata)
+S. Camilli de Lellis Confessoris;;Duplex optional;;2;;vide C5
+
 [Rule]
 vide C5;mtv
 9 lectiones;
@@ -8,6 +11,13 @@ m.t.v.
 
 [Oratio]
 Deus, qui sanctum Camíllum, ad animárum in extrémo agóne luctántium subsídium, singulári caritátis prærogatíva decorásti: ejus, quǽsumus, méritis, spíritum nobis tuæ dilectiónis infúnde; ut in hora éxitus nostri hostem víncere, et ad cæléstem mereámur corónam perveníre.
+$Per Dominum
+
+[Commemoratio]
+!Commemoratio pro Ss. Symphorosa et Septem Filiis Martyribus
+@Commune/C3:Oratio proper
+$Oremus
+v. Deus, qui nos concédis sanctórum Mártyrum tuórum Symphorósæ et filiórum ejus natalícia cólere: da nobis in ætérna beatitúdine de eórum societáte gaudére.
 $Per Dominum
 
 [Lectio4]
@@ -18,6 +28,10 @@ Romam profectus, in nosocomíum, quod Insanabílium dícitur, recéptus est; cuj
 
 [Lectio6]
 Arctióribus hisce vinculis ægrotántium ministerio mancipatus, mirum est qua alacritate, nullis fractus labóribus, nullis deterritus vitæ periculis, diu noctuque ad supremum usque spíritum, eórum cómmodis vigilaverit. Omnibus ómnia factus, vilíssima quæque offícia demissíssimo obsequio flexísque plerumque genibus, véluti Christum ipsum cérneret in infirmis, hílari promptoque animo arripiébat; utque ómnium indigéntiis præsto esset, generalem ordinis præfecturam, cælique delicias quibus in contemplatióne defixus affluebat, sponte dimísit. Paternus vero illíus erga míseros amor tum maxime effulsit, dum et Urbs contagióso morbo primum, deínde extrema annonæ laboráret inópia, et Nolæ in Campánia dira pestis grassarétur. Tanta denique in Deum et próximum caritate exársit, ut angelus nuncupari, et Angelórum opem in vario itinerum discrímine experíri promererétur. Prophetíæ dono et grátia sanitátum præditus, arcana quoque cordium inspéxit; ejusque precibus nunc cibária multiplicáti sunt, nunc aqua in vinum conversa. Tandem vigiliis, jejuniis et assiduis attritus labóribus, cum pelle tantum et óssibus constare viderétur, quinque molestis æque ac diútinis morbis, quos misericórdias Dómini appellabat, fortiter tolerátis, sacramentis munítus, Romæ, inter suavíssima Jesu et Maríæ nómina, ad ea verba: Mitis atque festivus Christi Jesu tibi aspectus appareat; qua prædixerat hora, obdormívit in Dómino, pridie Idus Julii, anno salútis millesimo sexcentésimo décimo quarto, ætátis suæ sexagesimo quinto. Quem, plúribus illustrem miraculis, Benedíctus décimus quartus solemni ritu Sanctórum fastis adscripsit; et Leo décimus tértius, ex Sacrórum cathólici orbis antístitum voto ac Rítuum Congregatiónis consúlto, cæléstem ómnium hospitálium et infirmórum ubíque degéntium patrónum declarávit, ipsiúsque nomen in agonizántium litaníis invocári præcépit. 
+
+[Lectio94]
+Camíllus, Bucclánici in Theatínæ diœcésis óppido, ex nóbili Lelliórum família natus, adoléscens rem militárem secútus, sǽculi vítiis aliquámdiu indúlsit. Divínæ tamen offénsæ dolóre corréptus, ad fratres Minóres, quos Capuccínos vocant, cónvolans, ut eórum número adscriberétur, eníxe postulávit. Voti compos semel atque íterum factus, fœdo úlcere, quo aliquándo laboráverat, in ejus tíbia iteráto recrudescénte, superiórum plácitis humíliter se submíttens, illíus religiónis bis expetítum et suscéptum hábitum bis dimísit. Romam proféctus, et sacerdótio rite initiátus, prima jecit fundaménta congregatiónis Clericórum regulárium infírmis ministrántium, sodálibus quarto obstríctis máxime árduo voto, infírmis, quos étiam pestis infecísset, ministrándi. Iterátis jejúniis et assíduis fractus labóribus, quinque moléstis æque ac diútinis morbis, quos misericórdias Dómini appellábat, fórtiter tolerátis óbiit in Dómino, prídie idus júlii, anno millésimo sexcentésimo décimo quarto, ætátis sexagésimo quinto. Eum Leo décimus tértius cæléstem ómnium hospitálium et infirmórum patrónum renuntiávit, ejúsque nomen in agonizántium litaníis invocári præcépit.
+&teDeum
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Joánnem
@@ -31,22 +45,11 @@ Quid putamus, fratres mei? numquidnam solum ejus de ista dilectióne mandátum e
 [Lectio8]
 Ubi ergo caritas est, quid est quod possit deésse? ubi autem non est, quid est quod possit prodesse? Dæmon credit, nec díligit: nemo díligit, qui non credit. Frustra quidem, sed tamen potest speráre véniam qui non díligit; nemo autem potest desperáre qui díligit. Itaque ubi diléctio est, ibi necessario fides et spes; et, ubi diléctio próximi, ibi necessario étiam diléctio Dei. Qui enim non díligit Deum, quómodo díligit próximum tamquam se ipsum? Quandóquidem non díligit et se ipsum. Est quippe ímpius et iníquus; qui autem díligit iniquitátem, non plane díligit, sed odit ánimam suam.
 
-[Lectio93]
-!Commemoratio pro Ss. Symphorosa et septem filiis Martyribus
-Symphorosa Tiburtina, Getulii Mártyris uxor, ex eo septem fílios péperit, Crescéntium, Julianum, Nemesium, Primitivum, Justinum, Stacteum, et Eugenium; qui omnes propter christianæ fidei professiónem una cum matre, Hadriáno imperatóre, comprehénsi sunt. Quorum pietas, multis variisque tentáta suppliciis, cum stábilis permanéret, mater, quæ fíliis fidei magistra fúerat, dux eisdem ad martyrium éxstitit. Nam, saxo ad collum alligato, in profluentem dejícitur: cujus corpus, conquisítum a fratre ejus Eugenio, sepelítur. Postridie ejus diéi, qui fuit décimo quinto Kalendas Augusti, septem fratres singuli ad palum alligati, varie sunt interfécti: Crescentio guttur ferro transfígitur; Juliáno pectus confóditur; Nemesio cor transverberátur; Primitivo trajícitur umbilicus; Justinus membratim secátur; Stacteus telis confígitur; Eugenius a péctore in duas partes dividitur. Ita octo hostiæ Deo gratíssimæ sunt immolátæ. Corpora in altíssimam fóveam projecta sunt via Tiburtina, nono ab Urbe lápide; quæ, póstea Romam translata, cóndita sunt in ecclésia sancti Angeli in piscina.
-&teDeum
-
 [Lectio9]
 Hoc ergo præcéptum Dómini teneamus, ut nos invicem diligamus, et quidquid aliud præcepit, faciémus; quóniam quidquid est, aliud, hic habemus. Discérnitur quippe ista diléctio ab illa dilectióne, qua se invicem díligunt hómines; nam ut discernerétur, adjunctum est: Sicut diléxi vos. Ut quid enim díligit nos Christus, nisi ut regnare possímus cum Christo? Ad hoc ergo et nos invicem diligamus, ut dilectiónem nostram discernámus a ceteris, qui non ad hoc se invicem díligunt, quia nec díligunt. Qui autem se propter habéndum Deum díligunt, ipsi se díligunt. Ergo, ut se diligant, Deum díligunt. Non est hæc diléctio in ómnibus homínibus: pauci se proptérea díligunt, ut sit Deus ómnia in ómnibus.
 &teDeum
 
-[Commemoratio]
-!Commemoratio pro Ss. Symphorosa et Septem Filiis Martyribus
-@Commune/C3:Oratio proper
-$Oremus
-v. Deus, qui nos concédis sanctórum Mártyrum tuórum Symphorósæ et filiórum ejus natalícia cólere: da nobis in ætérna beatitúdine de eórum societáte gaudére.
-$Per Dominum
-
-[Lectio94]
-Camíllus, Bucclánici in Theatínæ diœcésis óppido, ex nóbili Lelliórum família natus, adoléscens rem militárem secútus, sǽculi vítiis aliquámdiu indúlsit. Divínæ tamen offénsæ dolóre corréptus, ad fratres Minóres, quos Capuccínos vocant, cónvolans, ut eórum número adscriberétur, eníxe postulávit. Voti compos semel atque íterum factus, fœdo úlcere, quo aliquándo laboráverat, in ejus tíbia iteráto recrudescénte, superiórum plácitis humíliter se submíttens, illíus religiónis bis expetítum et suscéptum hábitum bis dimísit. Romam proféctus, et sacerdótio rite initiátus, prima jecit fundaménta congregatiónis Clericórum regulárium infírmis ministrántium, sodálibus quarto obstríctis máxime árduo voto, infírmis, quos étiam pestis infecísset, ministrándi. Iterátis jejúniis et assíduis fractus labóribus, quinque moléstis æque ac diútinis morbis, quos misericórdias Dómini appellábat, fórtiter tolerátis óbiit in Dómino, prídie idus júlii, anno millésimo sexcentésimo décimo quarto, ætátis sexagésimo quinto. Eum Leo décimus tértius cæléstem ómnium hospitálium et infirmórum patrónum renuntiávit, ejúsque nomen in agonizántium litaníis invocári præcépit.
+[Lectio93]
+!Commemoratio pro Ss. Symphorosa et septem filiis Martyribus
+Symphorosa Tiburtina, Getulii Mártyris uxor, ex eo septem fílios péperit, Crescéntium, Julianum, Nemesium, Primitivum, Justinum, Stacteum, et Eugenium; qui omnes propter christianæ fidei professiónem una cum matre, Hadriáno imperatóre, comprehénsi sunt. Quorum pietas, multis variisque tentáta suppliciis, cum stábilis permanéret, mater, quæ fíliis fidei magistra fúerat, dux eisdem ad martyrium éxstitit. Nam, saxo ad collum alligato, in profluentem dejícitur: cujus corpus, conquisítum a fratre ejus Eugenio, sepelítur. Postridie ejus diéi, qui fuit décimo quinto Kalendas Augusti, septem fratres singuli ad palum alligati, varie sunt interfécti: Crescentio guttur ferro transfígitur; Juliáno pectus confóditur; Nemesio cor transverberátur; Primitivo trajícitur umbilicus; Justinus membratim secátur; Stacteus telis confígitur; Eugenius a péctore in duas partes dividitur. Ita octo hostiæ Deo gratíssimæ sunt immolátæ. Corpora in altíssimam fóveam projecta sunt via Tiburtina, nono ab Urbe lápide; quæ, póstea Romam translata, cóndita sunt in ecclésia sancti Angeli in piscina.
 &teDeum

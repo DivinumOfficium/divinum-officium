@@ -12,8 +12,6 @@ In Cathedra S. Petri Apostoli;;Duplex;;3;;ex C4
 [Rule] (rubrica 196)
 
 
-[Lectio3] (rubrica 196)
-
 [Lectio4]
 !1 Pet 1:13-21
 13 Propter quod succíncti lumbos mentis vestræ, sóbrii, perfécte speráte in eam, quæ offértur vobis, grátiam, in revelatiónem Iesu Christi:
@@ -25,11 +23,6 @@ In Cathedra S. Petri Apostoli;;Duplex;;3;;ex C4
 19 sed pretióso sánguine quasi agni immaculáti Christi, et incontamináti:
 20 præcógniti quidem ante mundi constitutiónem, manifestáti autem novíssimis tempóribus propter vos,
 21 qui per ipsum fidéles estis in Deo, qui suscitávit eum a mórtuis, et dedit ei glóriam, ut fides vestra et spes esset in Deo:
-
-[Lectio94]
-@Sancti/01-18:Lectio4:s/Cujus autem.*//s
-@Sancti/01-18:Lectio5:s/.*(Ad hanc.*), et,.*/$1. /s
-@Sancti/01-18:Lectio6
 
 [Responsory4]
 R. Dómine, † si tu es, jube me veníre ad te super aquas. Et exténdens manum apprehéndit eum, 
@@ -49,6 +42,11 @@ R. Et dixit Jesus : Modicæ fidei, quare dubitásti?
 
 [Responsory6]
 @Sancti/02-22:Responsory5
+
+[Lectio94]
+@Sancti/01-18:Lectio4:s/Cujus autem.*//s
+@Sancti/01-18:Lectio5:s/.*(Ad hanc.*), et,.*/$1. /s
+@Sancti/01-18:Lectio6
 
 [Lectio7]
 @Sancti/01-18:Lectio5:s/.*Ad/Ad/

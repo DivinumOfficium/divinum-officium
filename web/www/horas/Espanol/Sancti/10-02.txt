@@ -1,15 +1,6 @@
 [Rank]
 Ss. Angelorum Custodum;;Duplex majus;;4;;vide C4
 
-[Rule]
-vide C4;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=137
-Horas1960 feria
-
 [Ant Vespera]
 Dios ha dado orden * a sus ángeles para que te guarden en tus caminos.
 Alabemos al Señor, * a quien alaban los ángeles y aclaman los querubines y serafines: Santo, Santo, Santo.
@@ -94,7 +85,7 @@ Del Profeta Zacarías
 8 Vi de noche a un varón que cabalgaba en un caballo rojo y estaba entre los montes en el valle; detrás de él había caballos rojos, alazanes y blancos. 
 9 Yo entonces pregunté: ¿Qué son éstos, mi señor? Y el ángel que me hablaba me dijo: Voy a darte a saber quiénes son éstos; 
 10 pero el que estaba entre los montes tomó la palabra y dijo: Estos son los que Yahvé ha mandado a recorrer la tierra. 
-11 Luego hablaron ellos al ángel de Yahvé que estaba entre los montes y le dijeron: Hemos recorrido la tierra, y toda está quieta y tranquila. 
+11 Luego hablaron ellos al ángel de Yahvé que estaba entre los montes y le dijeron: Hemos recorrido la tierra, y toda está quieta y tranquila.
 
 [Responsory2]
 R. Respondió el Ángel del Señor y dijo: Señor de los ejércitos: 
@@ -108,7 +99,7 @@ R. ¿Hasta cuándo no te compadecerás de Jerusalén y de las ciudades de Judá 
 2 y le pregunté: ¿Dónde vas? El me respondió: A medir a Jerusalén para ver cuánta es su anchura y cuánta su longitud.  
 3 Apareció el ángel que hablaba conmigo, y vi que venía a su encuentro otro ángel,  
 4 que le dijo: ¡Corre! Di a ese joven: Sin murallas será habitada Jerusalén; tal será en ella la muchedumbre de hombres. 
-5 Y Yo seré para ella, dice el Señor, muro de fuego en derredor, y seré su gloria en medio de ella. 
+5 Y Yo seré para ella, dice el Señor, muro de fuego en derredor, y seré su gloria en medio de ella.
 
 [Responsory3]
 R. No temáis ante las naciones; adorad en vuestros corazones y temed al Señor; 
@@ -187,38 +178,6 @@ No despreciéis a ninguno de estos pequeños que creen en mí. Esto imponen, a l
 v. Así dice el Señor: Yo envío a mi ángel delante de ti, para que te guarde en el camino y te lleve al lugar que yo he fundado. Respeta su presencia y escucha su voz.
 $Deo gratias
 
-[HymnusM Laudes]
-v. ¡Oh eterno Ordenador de los astros, 
-que creaste todas las cosas 
-con tu poder infinito, y las gobiernas 
-con tu no menor providencia!
-_
-Atiende a estos pecadores, aquí reunidos, 
-que te suplican, y concede 
-una luz nueva a sus almas 
-en este amanecer.
-_
-Que el ángel de nuestra guarda, 
-escogido por ti, 
-nos asista para preservarnos 
-del contagio del mal.
-_
-Que desvirtúe las astucias 
-del dragón envidioso: para que no cautive 
-nuestros corazones incautos 
-con la red del engaño.
-_
-Que aleje de nuestros confines 
-el temor de los enemigos; 
-que fomente la paz entre los ciudadanos, 
-y ahuyente la peste.
-_
-Gloria sea dada a Dios Padre, 
-y que Él guarde por medio de sus ángeles 
-a aquellos a quienes ha redimido el Hijo 
-y ha ungido el Espíritu Santo.
-Amén. 
-
 [Hymnus Laudes]
 v. ¡Oh eterno Ordenador de los astros, 
 que creaste todas las cosas 
@@ -251,8 +210,37 @@ a aquellos a quienes ha redimido el Hijo
 y ha ungido el Espíritu Santo.
 Amén. 
 
-[Versum 2]
-@:Versum 1
+[HymnusM Laudes]
+v. ¡Oh eterno Ordenador de los astros, 
+que creaste todas las cosas 
+con tu poder infinito, y las gobiernas 
+con tu no menor providencia!
+_
+Atiende a estos pecadores, aquí reunidos, 
+que te suplican, y concede 
+una luz nueva a sus almas 
+en este amanecer.
+_
+Que el ángel de nuestra guarda, 
+escogido por ti, 
+nos asista para preservarnos 
+del contagio del mal.
+_
+Que desvirtúe las astucias 
+del dragón envidioso: para que no cautive 
+nuestros corazones incautos 
+con la red del engaño.
+_
+Que aleje de nuestros confines 
+el temor de los enemigos; 
+que fomente la paz entre los ciudadanos, 
+y ahuyente la peste.
+_
+Gloria sea dada a Dios Padre, 
+y que Él guarde por medio de sus ángeles 
+a aquellos a quienes ha redimido el Hijo 
+y ha ungido el Espíritu Santo.
+Amén. 
 
 [Ant 2]
 El ángel * que hablaba conmigo volvió y me despertó, como se despierta a quien duerme.
@@ -261,26 +249,14 @@ El ángel * que hablaba conmigo volvió y me despertó, como se despierta a quie
 !Ex 23:22-23
 v. Pero si escuchas su voz, si haces lo que te mando, Yo seré enemigo de tus enemigos y contrario de tus contrarios. Y mi ángel irá delante de ti.
 
-[Responsory Tertia]
-@Sancti/05-08
-
 [Capitulum Sexta]
 !Ex 23:21
 v. No te rebeles contra él, porque no perdonará tus delitos, ya que lleva mi nombre.	
 $Deo gratias
 
-[Responsory Sexta]
-@Sancti/05-08
-
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
-
-[Responsory Nona]
-@Sancti/05-08
-
-[Versum 3]
-@:Versum 1
 
 [Ant Vespera 3]
 @:Ant Vespera

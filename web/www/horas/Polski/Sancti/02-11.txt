@@ -1,15 +1,8 @@
 [Rank]
 Ukazanie się Najśw. Marji Panny Niepokalanej;;Duplex majus;;4;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Ukazanie się Najśw. Marji Panny Niepokalanej;;Duplex optional;;2;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
 
 [Ant Vespera]
 Jasnością jest * wiecznej światłości i zwierciadłem bez zmazy.;;109
@@ -17,11 +10,6 @@ Niewiasta * odziana słońcem, i miesiąc pod nogami jéj, koronowana dwanaści�
 Tyś sława Jeruzalem, * tyś wesele Izraelskie, tyś cześć ludu naszego.;;121
 Błogosławionaś ty, * Panno Marjo, od Pana Boga wysokiego nade wszytkie niewiasty na ziemi.;;126
 Dziś imię twoje * uwielbił Pan, że nie odejdzie chwała twoja z ust ludzi.;;147
-
-[Capitulum Laudes]
-!Pnp 2:13-14
-v. Wstań, przyjaciółko moja, piękna moja, a przyjdź: gołębico moja, w rozpadlinach skalnych, w maclochu parkanu: ukaż mi oblicze twoje, niechaj głos twój zabrzmi w uszach moich.
-$Deo gratias
 
 [Ant 1]
 Ta jest * gołębica moja, doskonała moja, niepokalana moja.
@@ -171,6 +159,11 @@ Niewiasta * odziana słońcem, i miesiąc pod nogami jéj, koronowana dwanaści�
 Tyś sława Jeruzalem, * tyś wesele Izraelskie, tyś cześć ludu naszego.
 Błogosławionaś ty, * Panno Marjo, od Pana Boga wysokiego nade wszytkie niewiasty na ziemi.
 Dziś imię twoje * uwielbił Pan, że nie odejdzie chwała twoja z ust ludzi.
+
+[Capitulum Laudes]
+!Pnp 2:13-14
+v. Wstań, przyjaciółko moja, piękna moja, a przyjdź: gołębico moja, w rozpadlinach skalnych, w maclochu parkanu: ukaż mi oblicze twoje, niechaj głos twój zabrzmi w uszach moich.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Zorzo, poprzedzająca słońce,

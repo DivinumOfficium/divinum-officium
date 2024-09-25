@@ -4,29 +4,6 @@ Officium parvum Beatae Mariae Virginis
 [Rank]
 Officium parvum Beatae Mariae Virginis tempore Adventi;;Simplex;;1
 
-[Rule]
-Ave only
-Doxology=Nat
-Omit Suffragium
-Special Benedictio
-Votive nocturn
-
-[Ant Vespera]
-@Sancti/03-25
-
-[Capitulum Laudes]
-@Sancti/03-25:Lectio Prima
-$Deo gratias
-
-[Versum 1]
-@Commune/C11:Versum 2
-
-[Ant 1]
-@Tempora/Adv1-0:Ant 2
-
-[Oratio]
-@Commune/C12:Oratio 2
-
 [Commemoratio]
 !Conmemoración de los Santos
 Ant. He aquí que el Señor vendrá y todos sus santos con Él: y habrá en aquel día una gran luz. Aleluya.
@@ -37,9 +14,6 @@ v. Dígnate, Señor, purificar nuestras conciencias con tu visitación, a fin de
 $Qui tecum
 (se omite en las rúbricas de 1955 y 1960)
 
-[Invit]
-@Commune/C12
-
 [Ant Matutinum]
 @Commune/C11::s/V\. .*/V. Derramada está la gracia en tus labios./g s/R\. .*/R. Por ello el Señor te bendecirá para siempre./g s/Después del parto.*\./El Ángel del Señor \* anunció a María, la cual concibió por obra del Espíritu Santo./
 
@@ -47,10 +21,7 @@ $Qui tecum
 !Lc 1:26-28
 26 El Ángel Gabriel fue enviado por Dios a Nazaret, ciudad de Galilea, 
 27 a una Virgen desposada con un varón de la casa de David, llamado José, y el nombre de la Virgen era María. 
-28 Y entrando el Ángel adonde ella estaba, le dijo: Ave, oh llena de gracia; el Señor es contigo; bendita Tú eres entre las mujeres. 
-
-[Responsory1]
-@Sancti/03-25
+28 Y entrando el Ángel adonde ella estaba, le dijo: Ave, oh llena de gracia; el Señor es contigo; bendita Tú eres entre las mujeres.
 
 [Lectio2]
 !Lc 1:29-33
@@ -59,9 +30,6 @@ $Qui tecum
 31 he aquí que has de concebir en tu seno, y darás a luz un hijo, a quien pondrás por nombre Jesús. 
 32 Este será grande, y será llamado Hijo del Altísimo, al cual el Señor Dios dará el trono de su padre David, y reinará en la casa de Jacob eternamente, 
 33 y su reino no tendrá fin.
-
-[Responsory2]
-@Sancti/03-25
 
 [Lectio3]
 !Lc 1:34-38

@@ -1,12 +1,5 @@
 @Sancti/01-04
 
-[Commemoratio 2]
-!Commemoratio S. Titi Episcopi et Confessoris
-@Commune/C4:Oratio proper
-$Oremus
-v. Deus, qui beátum Titum Confessórem tuum atque Pontíficem apostólicis virtútibus decorásti: ejus méritis et intercessióne concéde; ut juste et pie vivéntes in hoc sǽculo, ad cæléstem pátriam perveníre mereámur.
-$Per Dominum
-
 [LectioM3]
 @Sancti/01-04:Lectio3:s/-9// s/8.*//s
 
@@ -15,3 +8,10 @@ $Per Dominum
 
 [Capitulum Laudes]
 @SanctiM/01-01
+
+[Commemoratio 2]
+!Commemoratio S. Titi Episcopi et Confessoris
+@Commune/C4:Oratio proper
+$Oremus
+v. Deus, qui beátum Titum Confessórem tuum atque Pontíficem apostólicis virtútibus decorásti: ejus méritis et intercessióne concéde; ut juste et pie vivéntes in hoc sǽculo, ad cæléstem pátriam perveníre mereámur.
+$Per Dominum

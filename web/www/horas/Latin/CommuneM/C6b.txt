@@ -1,19 +1,16 @@
 @CommuneM/C6
 
-[Lectio1]
-@CommuneM/C6:Lectio1 in 2 loco
+[Name]
+@Commune/C6b
+
+[HymnusM Matutinum]
+@Commune/C6b
 
 [Responsory1]
-@Commune/C6:Responsory1 pro Martyre
+@Commune/C6b
 
-[Lectio2]
-@CommuneM/C6:Lectio2 in 2 loco
-
-[Lectio3]
-@CommuneM/C6:Lectio3 in 2 loco
-
-[Lectio4]
-@CommuneM/C6:Lectio4 in 2 loco
+[Oratio]
+@Commune/C6b
 
 [MM Capitulum]
 @Commune/C7:Capitulum Sexta
@@ -21,7 +18,7 @@ _
 @CommuneM/C6::s/.*_.//s
 
 [Lectio Prima]
-@Commune/C6:Lectio Prima pro Martyre
+@Commune/C6b
 
 [Capitulum Nona]
 @:Lectio Prima

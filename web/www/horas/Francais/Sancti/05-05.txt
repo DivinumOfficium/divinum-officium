@@ -1,10 +1,6 @@
 [Rank]
 S. Pii V Papæ et Confessoris;;Duplex;;3;;vide C4
 
-[Rule]
-vide C4;mtv
-9 lectiones
-
 [Oratio]
 O Dieu qui, pour écraser les ennemis de Votre Eglise et restaurer le culte divin, avez daigné choisir le bienheureux Pie pour Souverain Pontife, faites que, défendus par son secours pour demeurer très attachés à Votre service, nous triomphions des pièges de tous nos ennemis et jouissions de l'éternelle paix.
 $Per Dominum
@@ -18,6 +14,10 @@ Paul IV l’aimait beaucoup à cause de ses éminentes vertus ; il le promut d�
 [Lectio6]
 Selim, sultan des Turcs, enorgueilli de ses victoires, avait rassemblé une flotte formidable, près des îles Échinades ; Pie V le fit battre non pas tant par les armes, que par d’ardentes prières à Dieu. A l’heure même où se remportait cette victoire, il en eut connaissance par une révélation divine et l’annonça à ses familiers. Il préparait une nouvelle expédition contre les Turcs, lorsqu’il tomba gravement malade ; il supporta avec une patience admirable des douleurs atroces ; quand il fut à l’extrémité, il reçut les sacrements, puis rendit son âme à Dieu dans une paix profonde, l’an quinze cent soixantedouze, âgé de soixante-huit ans, après avoir siégé six ans, trois mois et vingt-quatre jours. Son corps, dans la basilique de Sainte-Marie de la Crèche, est entouré de grande vénération par les fidèles, à cause des nombreux miracles obtenus par l’intercession du saint. Après examen canonique de ces miracles, Clément XI l’a inscrit au nombre des Saints.
 
+[Lectio94]
+Pie naquit à Bosco en Piémont. Il entra à quatorze ans dans l’Ordre des Prêcheurs. Élevé au sacerdoce, il prêcha la parole sacrée avec grand fruit pour les âmes ; il remplit longtemps, avec une force d’âme inébranlable les fonctions d’inquisiteur. Paul IV le nomma évêque de Népi et Sutri, puis, deux ans après, le mit au nombre des cardinaux. Transféré par Pie IV au siège de Mondovi dans le Piémont, il constata que beaucoup d’abus s’y étaient introduits et, ayant fait la visite de son diocèse, il les extirpa. Revenu à Rome, il y fut chargé des négociations importantes et, à la mort de Pie IV, il fut élu Pape contre toute attente ; mais, sauf l’habit extérieur, il ne changea rien à sa manière de vivre. Selim, sultan des Turcs, ayant rassemblé une flotte formidable, près des îles Échinades, Pie V le fit battre, moins par les armes que par d’ardentes prières. Pendant qu’il préparait une nouvelle expédition contre les Turcs, il tomba gravement malade et mourut pieusement, l’an mil cinq cent soixante-douze, âgé de soixante-huit ans. Les fidèles ont une grande vénération envers son corps, dans la basilique de Sainte-Marie-Majeure. Il a été inscrit au nombre des Saints, par le pape Clément XI.
+&teDeum
+
 [Lectio7]
 @Sancti/04-11:Lectio7
 
@@ -26,11 +26,3 @@ Selim, sultan des Turcs, enorgueilli de ses victoires, avait rassemblé une flot
 
 [Lectio9]
 @Sancti/04-11:Lectio9
-
-[Lectio94]
-Pie naquit à Bosco en Piémont. Il entra à quatorze ans dans l’Ordre des Prêcheurs. Élevé au sacerdoce, il prêcha la parole sacrée avec grand fruit pour les âmes ; il remplit longtemps, avec une force d’âme inébranlable les fonctions d’inquisiteur. Paul IV le nomma évêque de Népi et Sutri, puis, deux ans après, le mit au nombre des cardinaux. Transféré par Pie IV au siège de Mondovi dans le Piémont, il constata que beaucoup d’abus s’y étaient introduits et, ayant fait la visite de son diocèse, il les extirpa. Revenu à Rome, il y fut chargé des négociations importantes et, à la mort de Pie IV, il fut élu Pape contre toute attente ; mais, sauf l’habit extérieur, il ne changea rien à sa manière de vivre. Selim, sultan des Turcs, ayant rassemblé une flotte formidable, près des îles Échinades, Pie V le fit battre, moins par les armes que par d’ardentes prières. Pendant qu’il préparait une nouvelle expédition contre les Turcs, il tomba gravement malade et mourut pieusement, l’an mil cinq cent soixante-douze, âgé de soixante-huit ans. Les fidèles ont une grande vénération envers son corps, dans la basilique de Sainte-Marie-Majeure. Il a été inscrit au nombre des Saints, par le pape Clément XI.
-&teDeum
-
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
-

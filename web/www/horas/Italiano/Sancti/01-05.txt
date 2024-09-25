@@ -1,19 +1,11 @@
 [Rank]
 In Vigilia Epiphaniae;;Semiduplex;;5;;ex Sancti/01-01
 
-[Rank] (rubrica 1570)
-In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
-
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
 
-[Rule]
-ex Sancti/01-01;
-9 lectiones
-Psalmi Dominica
-Omit preces
-Feria Te Deum
-CPapaM=Telésphorum;
+[Rank] (rubrica tridentina)
+In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
 
 [Hymnus Vespera]
 @Sancti/12-25:Hymnus Vespera
@@ -23,10 +15,6 @@ CPapaM=Telésphorum;
 
 [Ant 1]
 Il fanciullo Gesù * cresceva in età e sapienza dinanzi a Dio e agli uomini.
-
-[Versum 1]
-V. Ha fatto conoscere il Signore, alleluia.
-R. La sua salvezza, alleluia.
 
 [Oratio]
 Dio onnipotente ed eterno, dirigi le nostre azioni secondo il tuo volere: affinché nel nome del diletto tuo Figlio, meritiamo arricchirci di opere buone: 
@@ -53,6 +41,9 @@ Dalla Lettera ai Romani
 8:3 Dacché quello che era impossibile alla legge, perché era inferma per ragione della carne. Dio mandando il suo Figlio in una carne simile a quella del peccato a motivo del peccato, condannò il peccato nella carne, 
 8:4 affinché la giustizia della legge si compisse in noi che non camminiamo secondo la carne, ma secondo lo spirito.
 
+[Responsory1]
+@Sancti/01-01:Responsory1
+
 [Lectio2]
 !Rom 8:5-8
 8:5 Difatti quelli che vivono secondo la carne, gustano le cose della carne. Quelli invece che vivono secondo lo spirito, gustano le cose dello spirito. 
@@ -60,17 +51,14 @@ Dalla Lettera ai Romani
 8:7 Dacché la sapienza della carne è nemica di Dio: perché non sta soggetta alla legge di Dio; né può esserlo. 
 8:8 E quelli che vivono secondo la carne, non possono piacere a Dio. Voi però non vivete secondo la carne, ma secondo lo spirito: se però lo Spirito di Dio abita in voi.
 
+[Responsory2]
+@Sancti/01-01:Responsory2
+
 [Lectio3]
 !Rom 8:9-11
 8:9 Ora se uno non ha lo Spirito di Cristo, questi non è di lui. 
 8:10 Se poi Cristo è in voi, il corpo è sì soggetto alla morte a motivo del peccato, ma lo spirito vive per effetto della giustificazione. 
 8:11 Che se lo Spirito di colui che risuscitò Cristo da morte abita in voi; questo stesso che risuscitò Gesù Cristo da morte, vivificherà anche i vostri corpi mortali per mezzo del suo Spirito che abita in voi.
-
-[Responsory1]
-@Sancti/01-01:Responsory1
-
-[Responsory2]
-@Sancti/01-01:Responsory2
 
 [Responsory3]
 @Sancti/01-01:Responsory3
@@ -117,44 +105,12 @@ Mentre un tranquillo silenzio * avvolgeva ogni cosa, e la notte nel suo corso er
 !Gal 4:7
 v. Dunque non sei più servo, ma figlio: e se figlio, anche erede per grazia di Dio.
 
-[Responsory Tertia]
-R.br. Il Verbo s'è fatto uomo, * Alleluia, alleluia.
-R. Il Verbo s'è fatto uomo, * Alleluia, alleluia.
-V. E abitò tra noi.
-R. Alleluia, alleluia.
-&Gloria
-R. Il Verbo s'è fatto uomo, * Alleluia, alleluia.
-_
-V. Egli m'invocherà, alleluia.
-R. Padre mio tu sei, alleluia.
-
 [Capitulum Sexta]
 !Gal 4:4-5
 v. Ma venuta la pienezza del tempo, Iddio mandò il Figlio suo, fatto di donna, sottomesso alla legge, per redimere quelli ch'erano sotto la legge, per farci figli adottivi.
 $Deo gratias
 
-[Responsory Sexta]
-R.br. Ha fatto conoscere il Signore, * Alleluia, alleluia. 
-R. Ha fatto conoscere il Signore, * Alleluia, alleluia. 
-V. La sua salvezza. 
-R. Alleluia, alleluia.
-&Gloria
-R. Ha fatto conoscere il Signore, * Alleluia, alleluia. 
-_
-V. Han visto tutti i confini della terra, alleluia.
-R. La salvezza del nostro alleluia.
-
 [Capitulum Nona]
 !Gal 4:7
 v. Dunque non sei pia servo, ma figlio: e se figlio, anche erede per grazia di Dio.
 $Deo gratias
-
-[Responsory Nona]
-R.br. Han visto tutti i confini della terra, * Alleluia, alleluia.
-R. Han visto tutti i confini della terra, * Alleluia, alleluia.
-V. La salvezza del nostro Dio.
-R. Alleluia, alleluia.
-&Gloria
-R. Han visto tutti i confini della terra, * Alleluia, alleluia.
-_
-V. Il Verbo s'è fatto uomo, alleluia.

@@ -1,16 +1,8 @@
 [Rank]
 Św. Wawrzyńca Męczennika;;Duplex II classis cum octava simplici;;5.1;;ex C2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Św. Wawrzyńca Męczennika;;Duplex II classis;;5;;ex C2
-
-[Rule]
-ex C2
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
 
 [Ant Vespera]
 Wawrzyniec * wystąpił do walki jak Męczennik i wyznał Imię Pana Jezusa Chrystusa.
@@ -19,15 +11,21 @@ Przylgnęła * dusza moja do ciebie, gdyż ciało moje zgorzało od ognia dla Ci
 Pan wysłał * Anioła i wybawił mię od ucisku płomienia, który mię ogarnął, a w pośród ognia nie upaliłem się.
 Błogosławiony Wawrzyniec * modlił się, mówiąc: dzięki Ci czynię, Panie, iżem bramy Królestwa Twego przekroczyć zasłużył.
 
-[Capitulum Laudes]
-!2 Kor 9:6
-Bracia: Kto skąpo sieje, skąpo też żąć będzie, a kto sieje w błogosławieństwach, z błogosławieństw też żąć będzie.
-$Deo gratias
-
 [Ant 1]
 Lewita Wawrzyniec * dobre dzieło wykonał, przez znak krzyża ślepym światło przywrócił i skarby kościoła biednym rozdał.
 
 [Oratio]
+Daj nam, prosimy Cię, wszechmogący Boże, zgasić w sobie ogień namiętności, jakeś dał błogosławionemu Wawrzyńcowi zapanować nad ogniem, którym go dręczono.
+$Per Dominum
+
+[Octava 1]
+!Wspominamy Oktawę Św. Wawrzyńca
+Ant. Błogosławiony Wawrzyniec na kracie położony gorejąc, rzekł do okrutnego tyrana: Gotowe już jest, obróć i spożywaj, bogactwa bowiem Kościoła, których szukasz, ręce ubogich do skarbca Królestwa niebieskiego zaniosły.
+_
+V. Lewita Wawrzyniec dobre dzieło wykonał.
+R. Przez znak krzyża ślepym światło przywrócił.
+_
+$Oremus
 Daj nam, prosimy Cię, wszechmogący Boże, zgasić w sobie ogień namiętności, jakeś dał błogosławionemu Wawrzyńcowi zapanować nad ogniem, którym go dręczono.
 $Per Dominum
 
@@ -144,12 +142,28 @@ R. Pokażę ci skarby i obiecuję życie wieczne.
 Jednakże uważaj, aby ci nie przyszło na myśl siebie samego zabić, błędnie to rozumiejąc, iż winieneś na tym świecie nienawidzić swoje życie. Tak bowiem niektórzy źli i przewrotni ludzie stają się dla siebie okrutnymi i występnymi zabójcami, rzucając się w płomienie, pogrążając się w wodzie, strącając się w przepaść i giną. Tego Chrystus nie nauczał, a gdy Mu diabeł strącenie się w przepaść podsuwał, tak mu odrzekł: Zejdź mi z oczu, szatanie, napisane jest: Nie będziesz kusił Pana Boga twego. Piotrowi zaś powiedział, zapowiadając, jaką śmiercią miał uwielbić Boga: „Gdy byłeś młodym, przepasywałeś się i chodziłeś, dokąd chciałeś; lecz gdy się zestarzejesz, kto inny cię przepasze i poprowadzi tam, dokąd ty nie chcesz”. Jasno więc stwierdził, iż ten, kto idzie śladami Chrystusa, nie ma siebie zabić, lecz przez innego ma być zabity.
 &teDeum
 
+[Capitulum Laudes]
+!2 Kor 9:6
+Bracia: Kto skąpo sieje, skąpo też żąć będzie, a kto sieje w błogosławieństwach, z błogosławieństw też żąć będzie.
+$Deo gratias
+
 [Versum 2]
 V. Rozproszył, dał ubogim.
 R. Sprawiedliwość jego trwa na wieki wieków.
 
 [Ant 2]
 Na kracie * Ciebie Boga się nie wyparłem, a w ogień włożony Ciebie Chrystusa wyznawałem: zbadałeś serce moje, i nawiedziłeś nocą, ogniem mnie sprawdziłeś, i nie naleziona jest we mnie nieprawość.
+
+[Octava 2]
+!Wspominamy Oktawę Św. Wawrzyńca
+Ant. Na kracie * Ciebie Boga się nie wyparłem, a w ogień włożony Ciebie Chrystusa wyznawałem: zbadałeś serce moje, i nawiedziłeś nocą, ogniem mnie sprawdziłeś, i nie naleziona jest we mnie nieprawość.
+_
+V. Rozproszył, dał ubogim.
+R. Sprawiedliwość jego trwa na wieki wieków.
+_
+$Oremus
+Daj nam, prosimy Cię, wszechmogący Boże, zgasić w sobie ogień namiętności, jakeś dał błogosławionemu Wawrzyńcowi zapanować nad ogniem, którym go dręczono.
+$Per Dominum
 
 [Lectio Prima]
 !2 Kor 9:8-9
@@ -166,28 +180,6 @@ R. Przez znak krzyża ślepym światło przywrócił.
 
 [Ant 3]
 Błogosławiony Wawrzyniec * na kracie położony gorejąc, rzekł do okrutnego tyrana: Gotowe już jest, obróć i spożywaj, bogactwa bowiem Kościoła, których szukasz, ręce ubogich do skarbca Królestwa niebieskiego zaniosły.
-
-[Octava 1]
-!Wspominamy Oktawę Św. Wawrzyńca
-Ant. Błogosławiony Wawrzyniec na kracie położony gorejąc, rzekł do okrutnego tyrana: Gotowe już jest, obróć i spożywaj, bogactwa bowiem Kościoła, których szukasz, ręce ubogich do skarbca Królestwa niebieskiego zaniosły.
-_
-V. Lewita Wawrzyniec dobre dzieło wykonał.
-R. Przez znak krzyża ślepym światło przywrócił.
-_
-$Oremus
-Daj nam, prosimy Cię, wszechmogący Boże, zgasić w sobie ogień namiętności, jakeś dał błogosławionemu Wawrzyńcowi zapanować nad ogniem, którym go dręczono.
-$Per Dominum
-
-[Octava 2]
-!Wspominamy Oktawę Św. Wawrzyńca
-Ant. Na kracie * Ciebie Boga się nie wyparłem, a w ogień włożony Ciebie Chrystusa wyznawałem: zbadałeś serce moje, i nawiedziłeś nocą, ogniem mnie sprawdziłeś, i nie naleziona jest we mnie nieprawość.
-_
-V. Rozproszył, dał ubogim.
-R. Sprawiedliwość jego trwa na wieki wieków.
-_
-$Oremus
-Daj nam, prosimy Cię, wszechmogący Boże, zgasić w sobie ogień namiętności, jakeś dał błogosławionemu Wawrzyńcowi zapanować nad ogniem, którym go dręczono.
-$Per Dominum
 
 [Commemoratio 3] (rubrica 1570 aut rubrica 1910)
 !Wspominamy Śs. Męczenników Tyburcego i Zuzannę

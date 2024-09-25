@@ -1,29 +1,21 @@
 [Rank]
-Ss. Perpetuæ et Felicitatis Martyrum;;Duplex;;3;;vide C7
+Ss. Perpetuæ et Felicitatis Martyrum;;Duplex;;3;;vide C7b
 
 [Rank] (rubrica innovata)
-Ss. Perpetuæ et Felicitatis Martyrum;;Duplex;;3.91;;vide C7
+Ss. Perpetuæ et Felicitatis Martyrum;;Duplex;;3.91;;vide C7b
 
 [Rule]
-vide C7;
+vide C7b;
 9 lectiones
 Quarum festum
 
-[Versum 1]
-V. Glória et honóre coronásti eas, Dómine.
-R. Et constituísti eas super ópera mánuum tuárum.
-
-[Ant 1]
-Istárum est enim * regnum cælórum, qui contempsérunt vitam mundi, et pervenérunt ad prǽmia regni, et lavérunt stolas suas in sánguine Agni.
-
 [Oratio]
-Da nobis, quǽsumus, Dómine, Deus noster, sanctárum Mártyrum tuárum Perpétuæ et Felicitátis palmas incessábili devotióne venerári: ut, quas digna mente non póssumus celebráre, humílibus saltem frequentémus obséquiis.
-$Per Dominum
+@Commune/C7b::s/N\. et N\./Perpétuæ et Felicitátis/
 
 [Invit]
-Laudémus Deum nostrum * In confessióne beatárum Perpétuæ et Felicitátis.
+@Commune/C7b::s/N\. et N\./Perpétuæ et Felicitátis./
 
-[Lectio1](rubrica innovata)
+[Lectio1] (rubrica innovata)
 @Commune/C6:Lectio1 in 2 loco
 
 [Lectio4]
@@ -38,15 +30,3 @@ In amphitheatrum, toto inspectante populo, producuntur tandem generosæ mulieres
 [Lectio94]
 Perpétua et Felícitas, in persecutióne Sevéri imperatóris, in Africa, una cum Revocáto, Saturníno et Secúndolo comprehénsæ sunt et in tenebricósum cárcerem detrúsæ, quibus ultra adjúnctus est Sátyrus. Ibi, cum adhuc catechúmenæ essent, baptizátæ sunt. Tum ad béstias damnántur; cumque a Felicitáte, in partus labóribus dolénti, quǽreret quidam e custódibus, quid in amphitheátro esset factúra, illa respóndit: Modo ego pátior; illic autem álius erit in me, qui patiétur pro me, quia et ego pro illo passúra sum. Itaque in amphitheátrum, toto inspectánte pópulo, prodúctæ, primum flagéllis cædúntur; tum a ferocíssima vacca aliquámdiu jactátæ, plagis concísæ et in terram elísæ sunt; demum cum sóciis, qui a váriis béstiis vexáti fúerant, die séptima Mártii, gladiórum íctibus conficiúntur.
 &teDeum
-
-[Versum 2]
-@:Versum 1
-
-[Ant 2]
-@:Ant 1
-
-[Versum 3]
-@:Versum 1
-
-[Ant 3]
-@:Ant 1

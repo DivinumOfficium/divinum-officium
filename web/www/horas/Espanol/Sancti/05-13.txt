@@ -1,15 +1,11 @@
 [Rank]
 S. Roberti Bellarmino Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S.Roberti Bellarmino Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex optional;;2.1;;vide C4a
 
 [Name]
 Robérte
-
-[Rule]
-vide C4a;mtv
-9 lectiones;
 
 [Oratio]
 Oh Dios, que por rechazar las asechanzas del error y para defender los derechos de la Sede Apostólica, adornaste al bienaventurado Roberto, tu Pontífice y Doctor, con admirable doctrina y virtudes; concédenos por sus méritos e intercesión que crezcamos en amor a la verdad, y que los corazones de los que caminan extraviados vuelvan a la unidad de tu Iglesia.
@@ -23,6 +19,10 @@ Llamado de nuevo a Roma por el papa Gregorio XIII, enseñó en el Colegio Romano
 
 [Lectio6]
 Amante de la vida religiosa, la observó, aun siendo cardenal. No quiso poseer más que lo indispensable; se contentó con un servicio limitado, con modestos honores y con un hábito sencillo. No trabajó para enriquecer a los suyos, y con dificultad se le pudo inducir a que les socorriese en sus necesidades. Profesaba una humildad profunda y era admirable la sencillez de su alma. Amó a la Madre de Dios. Oraba muchas horas al día. Su vida era  frugal, ayunando tres veces cada semana. Siempre austero consigo mismo, ardía en caridad con el prójimo, por lo cual se le llamó el padre de los pobres. Luchó para no manchar ni siquiera con culpas veniales su inocencia bautismal. Casi octogenario, le sobrevino en San Andrés del Quirinal, la última enfermedad, en la cual resplandecieron sus virtudes. Hallándose moribundo, visitáronle Gregorio XV y varios cardenales, doliéndose todos ellos de perder un valioso sostén de la Iglesia. En la fiesta de las llagas de San Francisco, que él había conseguido se celebrase en todo el mundo, se durmió en el Señor, en el año 1721. La ciudad le lloró como a un padre, aclamándole santo. El Sumo Papa Pío XI le declaró Beato y más tarde  Santo. Por decreto de la Sagrada Congregación de Ritos, fue declarado Doctor de la Iglesia universal. Su cuerpo es venerado en el templo de San Ignacio, cerca del sepulcro de San Luis Gonzaga, como él había deseado.
+
+[Lectio94]
+Roberto nació en Montepulciano de la familia patricia de Belarmino, y tenía una madre muy devota, Cynthia Cervini, la hermana del Papa Marcelo II. Destacado por su devoción y castidad, el joven ingresó en la Compañía de Jesús a la edad de 18 años, y hasta su muerte fue un modelo de las virtudes religiosas para sus hermanos. Después de su curso de filosofía, fue enviado a Florencia, luego a Monreale, Padua y Lovaina; y ejerció los oficios de maestro y predicador de una manera admirable, a pesar de que aún no era sacerdote. Fue ordenado sacerdote en Lovaina; y enseñó teología siendo considerado el teólogo más ilustre de Europa. Retirado a Roma, enseñó apologética en el Colegio Romano, del que fue nombrado director espiritual, y dirigió al joven angelical Luis Gonzaga por los senderos de la santidad. Fue nombrado Cardenal por el Papa Clemente VIII, y luego fue consagrado obispo, gobernando la arquidiócesis de Capua durante tres años de la manera más santa. Renunció a este cargo para convertirse en consejero de la más alta integridad y lealtad al Sumo Pontífice en Roma hasta que, cuando tenía casi ochenta años, el 17 de septiembre de 1621, murió de una muerte santa en el Señor. Además de sus trabajos apologéticos, escribió muchos otros libros dignos de mención, entre los cuales su pequeño catecismo aureo sigue siendo famoso. El Papa Pío XI añadió el nombre de este fuerte defensor de la fe católica al número de los Santos y lo declaró Doctor de la Iglesia universal.
+&teDeum
 
 [Lectio7]
 Santo Evangelio según San Mateo
@@ -38,8 +38,4 @@ Todos saben lo que fueron los predicadores de nuestra ley evangélica, lo mismo 
 
 [Lectio9]
 ¡Cuánta humildad brilla en los libros de los santos Padres, unida a una suma erudición! ¡Cuánta sobriedad! No hay en ellos nada obsceno, torpe, falso,  arrogante, vano. ¡De cuántas maneras se manifiesta el Espíritu Santo, que moraba en sus pechos, por medio de sus escritos! ¿Quién podrá leer a San Cipriano que no se inflame en amor al martirio? ¿Quién hay, que versado en el estudio de San Agustín no descubra su humildad profunda? ¿Quién habrá que frecuentando los escritos de San Jerónimo no se aficione a la virginidad y al ayuno? Los escritos de los Santos inspiran religión, castidad, integridad, caridad. Son obispos y pastores (según palabras de San Agustín) doctos, graves, santos, acérrimos defensores de la verdad. Tras mamar con la leche la fe católica, la tomaron como alimento, para distribuirla luego como leche y manjar a todos. Después de los Apóstoles, la Iglesia santa creció gracias a los que así han plantado, regado y edificado; gracias a tales pastores y alimentadores.
-&teDeum
-
-[Lectio94]
-Roberto nació en Montepulciano de la familia patricia de Belarmino, y tenía una madre muy devota, Cynthia Cervini, la hermana del Papa Marcelo II. Destacado por su devoción y castidad, el joven ingresó en la Compañía de Jesús a la edad de 18 años, y hasta su muerte fue un modelo de las virtudes religiosas para sus hermanos. Después de su curso de filosofía, fue enviado a Florencia, luego a Monreale, Padua y Lovaina; y ejerció los oficios de maestro y predicador de una manera admirable, a pesar de que aún no era sacerdote. Fue ordenado sacerdote en Lovaina; y enseñó teología siendo considerado el teólogo más ilustre de Europa. Retirado a Roma, enseñó apologética en el Colegio Romano, del que fue nombrado director espiritual, y dirigió al joven angelical Luis Gonzaga por los senderos de la santidad. Fue nombrado Cardenal por el Papa Clemente VIII, y luego fue consagrado obispo, gobernando la arquidiócesis de Capua durante tres años de la manera más santa. Renunció a este cargo para convertirse en consejero de la más alta integridad y lealtad al Sumo Pontífice en Roma hasta que, cuando tenía casi ochenta años, el 17 de septiembre de 1621, murió de una muerte santa en el Señor. Además de sus trabajos apologéticos, escribió muchos otros libros dignos de mención, entre los cuales su pequeño catecismo aureo sigue siendo famoso. El Papa Pío XI añadió el nombre de este fuerte defensor de la fe católica al número de los Santos y lo declaró Doctor de la Iglesia universal.
 &teDeum

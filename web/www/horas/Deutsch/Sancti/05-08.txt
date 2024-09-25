@@ -122,11 +122,6 @@ R. Hic est Michaël Archangelus, princeps milítiæ Angelórum,
 V. Archangelus Michaël præpositus paradisi, quem honorificant Angelórum cives.
 R. Cujus honor præstat benefícia populórum, et orátio perducit ad regna cælórum. (Allelúja.)
 
-[Lectio94]
-@:Lectio4
-@:Lectio6:s/.*(Nec ita)/$1/s
-&teDeum
-
 [Lectio5]
 Factum est enim, ut ex grégibus armentórum Gargáni cujusdam taurus longe discederet; quem diu conquisítum, in áditu speluncæ hærentem invenérunt. Cum vero quidam ex illis, ut taurum confígeret, sagíttam emisísset retorta sagítta in ipsum récidit sagittárium. Quæ res cum præséntes ac deinceps ceteros tanto timóre affecísset, ut ad eam spelúncam propius accédere nemo audéret, Sipontini episcopum cónsulunt; qui, indicto trium diérum jejúnio et oratióne, rem a Deo respóndit quæri oportére.
 
@@ -137,8 +132,7 @@ V. Emítte, Dómine, Spíritum sanctum tuum de cælis, spíritum sapiéntiæ et 
 R. Ut perducat eas in paradisum exsultatiónis. (Allelúja.)
 
 [Lectio6]
-Post triduum Michaël Archangelus episcopum monet in sua tutéla esse eum locum, eoque indicio demonstrasse, velle ibi cultum Deo in sui et Angelórum memóriam adhiberi. Quare epíscopus una cum civibus ad eam spelúncam ire pergit. Quam cum in templi cujusdam similitúdinem conformatam vidissent, locum illum divinis officiis celebrare cœpérunt:: qui multis póstea miraculis illustrátus est.~
-Nec ita multo post Bonifátius Papa, Romæ in summo circo, sancti Michaélis ecclésiam dedicávit tértio Kaléndas Octóbris; quo die étiam ómnium Angelórum memóriam Ecclésia célebrat. Hodiérnus autem dies Archángeli Michaélis apparitióne consecrátus est.
+Post triduum Michaël Archangelus episcopum monet in sua tutéla esse eum locum, eoque indicio demonstrasse, velle ibi cultum Deo in sui et Angelórum memóriam adhiberi. Quare epíscopus una cum civibus ad eam spelúncam ire pergit. Quam cum in templi cujusdam similitúdinem conformatam vidissent, locum illum divinis officiis celebrare cœpérunt:: qui multis póstea miraculis illustrátus est. Nec ita multo post Bonifátius Papa, Romæ in summo circo, sancti Michaélis ecclésiam dedicávit tértio Kaléndas Octóbris; quo die étiam ómnium Angelórum memóriam Ecclésia célebrat. Hodiérnus autem dies Archángeli Michaélis apparitióne consecrátus est.
 
 [Responsory6]
 R. In témpore illo consúrget Michaël, qui stat pro fíliis vestris: 
@@ -147,6 +141,11 @@ V. In témpore illo salvábitur pópulus tuus omnis, qui invéntus fúerit scrip
 R. Et véniet tempus, quale non fuit, ex quo gentes esse cœpérunt, usque ad illud.(Allelúja.)
 &Gloria
 R. Et véniet tempus, quale non fuit, ex quo gentes esse cœpérunt, usque ad illud. (Allelúja.)
+
+[Lectio94]
+@:Lectio4
+@:Lectio6:s/.*(Nec ita)/$1/s
+&teDeum
 
 [Lectio7]
 Lesung aus dem heiligen Evangelium nach Matthäus.
@@ -218,9 +217,6 @@ Lasst von eurem Preis das gesamte Weltall
 Ewig erschallen.
 Amen.
 
-[Versum 2]
-@:Versum 1
-
 [Ant 2]
 Es entstand * eine große Stille im Himmel, als das Ungetüm einen Kampf begann; und Michael nahm den Kampf mit ihm auf und errang den Sieg, alleluja.
 
@@ -229,15 +225,15 @@ Es entstand * eine große Stille im Himmel, als das Ungetüm einen Kampf begann;
 v. Es kam zu einem heftigen Kampf im Himmel: Michael und seine Engel kämpften mit dem Ungetüm, und das Ungetüm und seine Engel führten den Kampf: aber sie erlagen, und einen Platz gab es für sie im Himmel nicht mehr.
 
 [Responsory Tertia]
-R.br. Stetit Angelus juxta aram templi, * Allelúja, allelúja.
-R. Stetit Angelus juxta aram templi, * Allelúja, allelúja.
-V. Habens thuríbulum aureum in manu sua.
-R. Allelúja, allelúja.
+R.br. Der Engel stand * neben dem Altar des Tempels.
+R. Der Engel stand * neben dem Altar des Tempels.
+V. Mit einem goldenen Weihrauchfass in seinen Händen.
+R. Neben dem Altar des Tempels.
 &Gloria
-R. Stetit Angelus juxta aram templi, * Allelúja, allelúja.
+R. Der Engel stand * neben dem Altar des Tempels.
 _
-V. Ascéndit fumus arómatum in conspéctu Dómini, allelúja.
-R. De manu Angeli, allelúja. 
+V. Wohlgeruch stieg hinauf vor das Angesicht des Herrn.
+R. Aus der Hand des Engels.
 
 [Capitulum Sexta]
 !Offb 5,11-12
@@ -245,30 +241,25 @@ v. Ich hörte ein Rufen vieler Engel um den Thron und der erhabenen Wesen und de
 $Deo gratias
 
 [Responsory Sexta]
-R.br. Ascéndit fumus arómatum in conspéctu Dómini, * Allelúja, allelúja.
-R. Ascéndit fumus arómatum in conspéctu Dómini, * Allelúja, allelúja.
-V. De manu Angeli. 
-R. Allelúja, allelúja.
+R.br. Wohlgeruch stieg hinauf * vor das Angesicht des Herrn.
+R. Wohlgeruch stieg hinauf * vor das Angesicht des Herrn.
+V. Aus der Hand des Engels.
+R. Vor das Angesicht des Herrn.
 &Gloria
-R. Ascéndit fumus arómatum in conspéctu Dómini, * Allelúja, allelúja.
+R. Wohlgeruch stieg hinauf * vor das Angesicht des Herrn.
 _
-V. In conspéctu Angelórum psallam tibi, Deus meus, allelúja.
-R. Adorábo ad templum sanctum tuum, et confitébor nómini tuo, allelúja.
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
+@Sancti/05-08:Versum 3
 
 [Responsory Nona]
-R.br. In conspéctu Angelórum psallam tibi, Deus meus, * Allelúja, allelúja.
-R. In conspéctu Angelórum psallam tibi, Deus meus, * Allelúja, allelúja.
-V. Adorábo ad templum sanctum tuum, et confitébor nómini tuo.
-R. Allelúja, allelúja.
-V. Glória Patri, et Fílio, et Spirítui Sancto.
-R. In conspéctu Angelórum psallam tibi, Deus meus, * Allelúja, allelúja.
+R.br. In Gegenwart der Engel * werd' ich dir singen, mein Gott.
+R. In Gegenwart der Engel * werd' ich dir singen, mein Gott.
+V. Anbetung halten in deinem heiligen Tempel und deinen Namen lobpreisen.
+R. Werd' ich dir singen, mein Gott.
+&Gloria
+R. In Gegenwart der Engel * werd' ich dir singen, mein Gott.
 _
-V. Adoráte Deum, allelúja.
-R. Omnes Angeli ejus, allelúja.
+V. Betet Gott an.
+R. Ihr alle seine Engel.
 
 [Versum 3]
 V. In Gegenwart der Engel werd' ich dir singen, mein Gott.

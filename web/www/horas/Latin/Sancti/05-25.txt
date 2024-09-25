@@ -6,6 +6,9 @@ vide C4;
 9 lectiones
 CPapaM=Urbánum;
 
+[Ant 1]
+@Commune/C4
+
 [Oratio]
 Deus, in te sperántium fortitúdo, qui beátum Gregórium Confessórem tuum atque Pontíficem, pro tuénda Ecclésiæ libertáte, virtúte constántiæ roborásti: da nobis, ejus exémplo et intercessióne, ómnia adversántia fórtiter superáre.
 $Per Dominum
@@ -30,9 +33,6 @@ Mortuo Alexandro secundo, invitus et mærens, unánimi ómnium consénsu, décim
 [Lectio6]
 Dum Missárum solemnia perágeret, visa est viris piis columba e cælo delapsa, humero ejus dextro ínsidens, alis exténsis caput ejus velare quo significátum est, Spíritus Sancti afflatu, non humanæ prudéntiæ ratiónibus ipsum duci in Ecclésiæ regímine. Cum ab iníqui Henrici exercitu Romæ gravi obsidióne premerétur, excitátum ab hostibus incendium signo crucis exstinxit. De ejus manu tandem a Roberto Guiscardo duce Northmanno ereptus, Cassinum se cóntulit ; atque inde Salernum ad dedicandam ecclésiam sancti Matthæi Apóstoli contendit. Cum aliquándo in ea civitáte sermónem habuísset ad pópulum, ærumnis confectus in morbum íncidit, quo se interitúrum præscívit. Postrema moriéntis Gregórii verba fuére: Diléxi justítiam et odívi iniquitátem, proptérea morior in exsílio. Innumerabília sunt, quæ vel fortiter sustinuit, vel multis coactis in Urbe Synodis sapiénter constítuit ; vir vere sanctus, criminum vindex, et acerrimus Ecclésiæ defensor. Exactis ítaque in pontificatu annis duodecim, migrávit in cælum anno salútis millesimo octogesimo quinto, plúribus in vita et post mortem miraculis clarus ; ejusque sacrum corpus in cathedrali basilica Salernitana est honorifice cónditum.
 
-[Lectio93]
-@Sancti/05-25o
-
 [Lectio94]
 Gregórius Papa séptimus, ántea Hildebrándus, Suánæ in Etrúria natus, doctrína, sanctitáte, omníque virtútum génere cum primis nóbilis, mirífice univérsam Dei Ecclésiam illustrávit. Adoléscens religiósi hábitum índuit in Cluniacénsi monastério, tantóque pietátis ardóre Deo desérviit, ut a sanctis ejúsdem cœnóbii pátribus prior fúerit eléctus. Póstea factus abbas monastérii sancti Pauli extra muros Urbis, ac deínde creátus Románæ Ecclésiæ cardinális, sub Summis Pontifícibus Leóne nono, Victóre secúndo, Stéphano nono, Nicoláo secúndo et Alexándro secúndo, præcípuis munéribus et legatiónibus perfúnctus est. Mórtuo Alexándro secúndo, unanímiter Summus Póntifex eléctus, ecclesiásticæ libertátis propugnátor ac defénsor acérrimus éxstitit; quaprópter multa passus, et Roma discédere coáctus est. Postréma ejus moriéntis verba fuére: Diléxi justítiam et odívi iniquitátem, proptérea mórior in exsílio. Migrávit in cælum, anno salútis millésimo octogésimo quinto, ejúsque corpus in cathedráli basílica Salernitána honorífice cónditum est.
 &teDeum
@@ -46,9 +46,8 @@ Gregórius Papa séptimus, ántea Hildebrándus, Suánæ in Etrúria natus, doct
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
-[Ant 1]
-@Commune/C4
+[Lectio93]
+@Sancti/05-25o
 
 [Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
 @Commune/C4:Ant 3 summi Pontificis
-

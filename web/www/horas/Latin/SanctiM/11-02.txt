@@ -10,16 +10,13 @@ Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium
 Limit Benedictiones Oratio
 Requiem gloria
 
-[Special Completorium]
-@Sancti/11-02::s/122/4/ s/141/90/ s/142/133/
-
 [Oratio mortuorum1]
 @Sancti/11-02
 
-[Oratio mortuorum2]
+[Conclusio]
 @Sancti/11-02
 
-[Conclusio]
+[Oratio mortuorum2]
 @Sancti/11-02
 
 [Special Prima]
@@ -40,3 +37,6 @@ Psalmi feriales
 
 [Special Nona]
 @:Special Tertia
+
+[Special Completorium]
+@Sancti/11-02::s/122/4/ s/141/90/ s/142/133/

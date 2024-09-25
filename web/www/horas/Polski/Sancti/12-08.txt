@@ -1,16 +1,8 @@
 [Rank]
 Niepokalane Poczęcie Najświętszej Marji Panny;;Duplex I classis cum octava communi;;6.5;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Niepokalane Poczęcie Najświętszej Marji Panny;;Duplex I classis;;6;;ex C11
-
-[Rule]
-ex C11;
-Psalmi Dominica
-9 lectiones;
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
 
 [Ant Vespera]
 Całaś piękna * jest Marjo, i zmazy pierworodnej niemasz w Tobie.;;109
@@ -18,11 +10,6 @@ Szaty Twoje * białe jako śnieg, oblicze Twoje podobne słońcu.;;112
 Tyś chwałą Jeruzalem, * Tyś weselem Izraela. Tyś chlubą, ludu naszego.;;121
 Błogosławionaś Ty, * Marjo Panno, od Pana Boga Najwyższego nad wszystkie niewiasty ziemi.;;126
 Pociągnij nas, * Dziewico Niepokalana: za Tobą pobieżemy do wonności olejków twoich.;;147
-
-[Capitulum Laudes]
-!Prz 8:22-24
-v. Pan mię posiadł na początku dróg swoich, pierwej niźli co czynił z początku. Od wieku jestem i starodawna, pierwej niźli się ziemia stała. Jeszcze nie było przepaści, a jam już poczęta była.
-$Deo gratias
 
 [Versum 1]
 V. Niepokalane dziś Poczęcie świętej Marji Dziewicy.
@@ -65,16 +52,22 @@ _
 Dziwne jest * imię twoje, Panie, po wszystkiéj ziemi, boś w Marji Pannie godne tobie mieszkanie przygotował.;;8
 W słońcu postawił * Bóg przybytek swój.;;18
 W Poczęciu swoim, * otrzymała Marja błogosławieństwo od Pana: i miłosierdzie od Boga, zbawiciela swego.;;23
-V. Bóg Wszechmogący opasał mię mocą.
-R. I położył niepokalaną drogę moję.
 Rozlała się * wdzięczność w Poczęciu jej, i piękna pojawiła się między córkami ludzkimi.;;44
 Ratuje Bóg * rano na świtaniu: poświęcił przybytek swój Najwyższy.;;45
 Sławne rzeczy * powiedziano o tobie, miasto Boże: założył cię Pan na górach świętych.;;86
-V. W temem poznał iżeś mię chciał.
-R. Że się nie będzie weselił nieprzyjaciel mój nademną.
 Świętość i wielmożność * w Poczęciu jej: opowiadajcie między wszystkimi ludźmi chwałę jej.;;95
 Weselcie się wszyscy * w Panu: a wysławiajcie pamiątkę świętobliwości jego.;;96
 Objawił * Pan dzieła swoje: przed oczyma poganów oznajmił chwałę Rodzicielki swojej.;;97
+
+[Nocturn 1 Versum]
+V. Bóg Wszechmogący opasał mię mocą.
+R. I położył niepokalaną drogę moję.
+
+[Nocturn 2 Versum]
+V. W temem poznał iżeś mię chciał.
+R. Że się nie będzie weselił nieprzyjaciel mój nademną.
+
+[Nocturn 3 Versum]
 V. Wywyższać cię będę Panie, żeś mię przyjął.
 R. Nie dał pociechy nieprzyjaciołom moim nademną.
 
@@ -147,8 +140,10 @@ R. Gdyż wielkie rzeczy uczynił mi Wszechmocny, a Jego imię jest święte.
 Kapłanów odziej jak najokazalej w sprawiedliwość oraz radość płynącą z wypróbowanej, nieskalanej i szczerej wiary. W spokoju i pomyślności kieruj rządami prawowiernych władców, którzy bardziej od wszelkiego przepychu purpury i złota, od pereł i drogocennych kamieni, Ciebie woleli przyjąć za koronę i szaty oraz niezniszczalną chwałę swego państwa. Niewierne narody, bluźniące Tobie i Bogu, któregoś zrodziła, poddaj pod ich stopy. Lud chrześcijański utwierdzaj, aby zgodnie z Bożym nakazem wytrwał w błogim obowiązku posłuszeństwa. Miasto Twoje, którego jesteś twierdzą i podwaliną, uwieńcz chwałą zwycięstwa. Strzeż Bożego przybytku, opasawszy go swoją mocą, zachowaj na zawsze piękno świątyni. Tych, którzy Cię wielbią, uwolnij od wszelkiego zagrożenia i niepokoju ducha. Więźniom daj wybawienie; wędrowcom pozbawionym schronienia i wszelkiej opieki przybądź z pomocą. Do całego świata wyciągnij swą pomocną rękę. Niechaj pośród wesela i radości jak najwspanialej obchodzimy Twoje święta, a wśród nich i tę dzisiejszą uroczystość, w Chrystusie Jezusie, Królu Wszechświata i prawdziwym Bogu naszym. Jemu chwała i moc razem ze świętym i dającym życie Ojcem i ze współwiecznym, współistotnym i współwładającym Duchem; teraz i zawsze, i na wieki wieków. Amen.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
+[Capitulum Laudes]
+!Prz 8:22-24
+v. Pan mię posiadł na początku dróg swoich, pierwej niźli co czynił z początku. Od wieku jestem i starodawna, pierwej niźli się ziemia stała. Jeszcze nie było przepaści, a jam już poczęta była.
+$Deo gratias
 
 [Ant 2]
 I rzekł Pan Bóg * do węża: położę nieprzyjaźń między tobą, a między niewiastą: i między nasieniem twem, a nasieniem jéj: ona zetrze głowę twoję, alleluja.
@@ -157,41 +152,36 @@ I rzekł Pan Bóg * do węża: położę nieprzyjaźń między tobą, a między 
 !Ap 12:1
 v. I ukazał się znak wielki na niebie: Niewiasta obleczona w słońce a księżyc pod jéj nogami, a na głowie jéj korona z gwiazd dwunaści:
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Bóg Wszechmogący * Opasał mię mocą.
 R. Bóg Wszechmogący * Opasał mię mocą.
 V. I położył niepokalaną drogę moję.
 R. Opasał mię mocą.
 &Gloria
 R. Bóg Wszechmogący * Opasał mię mocą.
-_
-V. W temem poznał iżeś mię chciał.
-R. Że się nie będzie weselił nieprzyjaciel mój nademną.
 
 [Capitulum Sexta]
 !Ez 44:2-3
 v. Ta brama zamkniona będzie, nie będzie otworzona, i mąż nie wnidzie przez nię; bo Pan, Bóg Izraelski, wszedł przez nię, i będzie zamkniona Książęciu. Książę samo będzie siedzieć w niéj.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. W temem poznał, * Iżeś mię chciał.
 R. W temem poznał, * Iżeś mię chciał.
 V. Że się nie będzie weselił nieprzyjaciel mój nademną.
 R. Iżeś mię chciał.
 &Gloria
 R. W temem poznał, * Iżeś mię chciał.
-_
-V. Wywyższać cię będę, Panie, żeś mię przyjął.
-R. Nie dał pociechy nieprzyjaciołom moim nademną.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Wywyższać cię będę, Panie, * Żeś mię przyjął.
 R. Wywyższać cię będę, Panie, * Żeś mię przyjął.
 V. Nie dał pociechy nieprzyjaciołom moim nademną.
 R. Żeś mię przyjął.
 &Gloria
 R. Wywyższać cię będę, Panie, * Żeś mię przyjął.
-_
+
+[Versum Nona]
 V. Niepokalane Poczęcie twoje Boża Rodzicielko.
 R. Ogłasza radość całemu światu.
 

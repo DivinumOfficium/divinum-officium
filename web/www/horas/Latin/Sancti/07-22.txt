@@ -83,18 +83,6 @@ $Qui vivis
 [Invit]
 Laudémus Deum nostrum * In conversióne Maríæ Magdalénæ.
 
-[HymnusM Matutinum]
-v. Nardo María pístico,
-Unxit beátos Dómini
-Pedes, rigándo lácrimis,
-Et detergéndo crínibus.
-_
-Honor, decus, impérium,
-Sit Trinitáti únicæ
-Patri, Nato, Paráclito,
-Per infiníta sǽcula.
-Amen.
-
 [Hymnus Matutinum]
 v. María castis ósculis
 Lambit Dei vestígia,
@@ -105,6 +93,18 @@ _
 Ejúsque soli Fílio,
 Cum Spíritu Paráclito,
 Nunc, et per omne sǽculum.
+Amen.
+
+[HymnusM Matutinum]
+v. Nardo María pístico,
+Unxit beátos Dómini
+Pedes, rigándo lácrimis,
+Et detergéndo crínibus.
+_
+Honor, decus, impérium,
+Sit Trinitáti únicæ
+Patri, Nato, Paráclito,
+Per infiníta sǽcula.
 Amen.
 
 [Lectio1]
@@ -134,7 +134,7 @@ R. Congratulámini mihi, omnes qui dilígitis Dóminum, quia quem quærébam, ap
 V. Recedéntibus discípulis, non recedébam, et amóris ejus igne succénsa, ardébam desidério.
 R. Et dum flérem ad monuméntum, vidi Dóminum meum, allelúja.
 
-[Responsory2](rubrica 1960)
+[Responsory2] (rubrica 1960)
 @:Responsory3
 
 [Lectio3]
@@ -161,6 +161,10 @@ Quæsívit ergo prius, et mínime invénit: perseverávit ut quæreret, unde et 
 
 [Lectio6]
 Sed, qui diléctum suum non invénit, restat ut surgat, civitátem circúmeat, id est, sanctam electórum Ecclésiam mente et inquisitióne percúrrat; per vicos eum et platéas quærat, id est, per angústa et lata gradiéntes aspíciat, ut, si qua inveníre in eis váleat, ejus vestígia exquírat: quia sunt nonnúlli étiam vitæ sæculáris, qui imitándum áliquid hábeant de actióne virtútis. Quæréntes autem nos vígiles invéniunt, qui custódiunt civitátem: quia sancti Patres, qui Ecclésiæ statum custódiunt, bonis nostris stúdiis occúrrunt, ut suo vel verbo vel scripto nos dóceant. Quos cum páululum pertransímus, invenímus quem dilígimus: quia Redémptor noster, etsi humilitáte homo inter hómines, divinitáte tamen super hómines fuit.
+
+[Lectio94]
+@:Lectio4
+&teDeum
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Lucam
@@ -243,12 +247,8 @@ R. In tabernáculo suo habitáre facit eam.
 [Ant 2]
 María * unxit pedes Jesu, et extérsit capíllis suis, et domus impléta est ex odóre unguénti.
 
-[Versum 3](rubrica 1960)
-@Sancti/07-22:Versum 2
+[Versum 3]
+@:Versum 2
 
-[Ant 3](rubrica 1960 aut rubrica Monastica)
+[Ant 3]
 Múlier * quæ erat in civitáte peccátrix, áttulit alabástrum unguénti, et stans retro secus pedes Dómini, lácrimis cœpit rigáre pedes ejus, et capíllis cápitis sui tergébat.
-
-[Lectio94]
-@:Lectio4
-&teDeum

@@ -1,17 +1,11 @@
 [Rank]
-S. Agathæ Virginis et Martyris;;Duplex;;3.1;;vide C6b
+S. Agathæ Virginis et Martyris;;Duplex;;3.1;;vide C6
 
 [Rank] (rubrica 1570)
-S. Agathæ Virginis et Martyris;;Semiduplex;;2;;vide C6b
+S. Agathæ Virginis et Martyris;;Semiduplex;;2;;vide C6
 
-[Rank](rubrica 1960)
-S. Agathæ Virginis et Martyris;;Duplex;;3;;vide C6b
-
-[Rule]
-vide C6b;
-9 lectiones
-Psalm5 Vespera=116
-Psalm5 Vespera3=147
+[Rank] (rubrica 1960)
+S. Agathæ Virginis et Martyris;;Duplex;;3;;vide C6
 
 [Ant Vespera]
 ¿Quién eres tú, * que vienes a curarme las heridas? Soy el apóstol de Cristo. Hija, ten confianza.
@@ -23,22 +17,19 @@ Invoco al Dios vivo, * que se dignó curar las heridas de mi pecho.
 [Ant 1]
 Santa Águeda, * de pie en la prisión, oraba al Señor con las manos extendidas: Señor Jesucristo, maestro bueno, te doy gracias porque me ayudaste a vencer los tormentos de los verdugos; haz que yo llegue felizmente a la gloria imperecedera.
 
+[Oratio]
+@Commune/C6::s/N\./Águeda/
+
 [Ant Matutinum]
 Yo soy de condición libre * y de ilustre linaje, como lo prueba toda mi parentela.;;1
 La más noble libertad * consiste en servir a Cristo.;;2
 Soy sierva de Cristo , * por esto quiero mostrarme de servil condición.;;3
-V. Con esta tu gallardía y hermosura.
-R. Camina, avanza prósperamente y reina.
 Santa Águeda * dijo: Si me expones a las fieras, se amansarán al oír el nombre de Cristo.;;4
 Si intentas atormentarme con el fuego, * los Ángeles me enviarán desde el cielo un rocío saludable.;;5
 Águeda * iba a la cárcel llena de gozo y gloriándose por ello, como si fuese invitada a un convite, y recomendaba a Dios con preces su combate.;;8
-V. Dios la protegerá con su faz.
-R. En medio de ella está Dios; no será confundida.
 Si Tú no dispones * que sea atormentado mi cuerpo por los verdugos, mi alma no podrá entrar en el paraíso del Señor con la palma del martirio.;;10
 Viste, oh Señor, mi combate, * y contemplaste de qué modo peleé en el estadio; mas porque no quise obedecer los mandatos de los príncipes, me he visto atormentada en mis pechos.;;14
 Por mi fidelidad a la castidad * he sido extendida en el caballete; ayudadme, Señor, Dios mío, en el tormento de mis pechos.;;15
-V. El Señor la eligió sobre todas las demás.
-R. La hizo habitar en su tabernáculo.
 
 [Responsory1]
 R. Mientras la bienaventurada Águeda era cruelmente atormentada en uno de sus pechos, dijo al juez: 
@@ -107,25 +98,5 @@ R. Que con su palabra lo renueva todo.
 &Gloria
 R. Que con su palabra lo renueva todo.
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Ant 2]
 Una multitud de paganos * acudió al sepulcro de la virgen, y puso su velo contra el fuego. Así demostró el Señor que los libraría de los incendios por los méritos de la mártir Santa Águeda.
-
-[Oratio]
-Es una maravilla de tu poder, Señor, el triunfo por el martirio de la mujer indefensa; concédenos, a quienes celebramos la victoria de Santa Águeda, virgen y mártir, caminar hacia ti siguiendo sus ejemplos.
-$Per Dominum
-
-[Lectio Prima]
-@Commune/C7:Lectio Prima
-
-[Capitulum Sexta]
-@Commune/C7:Capitulum Sexta
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Ant 3]
-@:Ant 1

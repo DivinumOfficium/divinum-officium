@@ -1,19 +1,8 @@
 [Rank]
 Ss. Septem Fundatorum Ordinis Servorum B. M. V.;;Duplex;;3.1;;vide C5
 
-[Rank](rubrica 1960)
-Ss. Septem Fundatorum Ordinis Servorum B. M. V.;;Duplex;;3;;vide C5
-
-[RankNewcal]
+[Rank] (rubrica innovata)
 Ss. Septem Fundatorum Ordinis Servorum B. M. V.;;Duplex optional;;2;;vide C5
-
-[Rule]
-vide C5;;
-9 lectiones
-
-[Oratio]
-Seigneur Jésus-Christ qui, pour honorer le souvenir des souffrances de votre très sainte Mère, avez, par sept bienheureux Pères, enrichi votre Église, de la nouvelle famille de ses Serviteurs, accordez-nous la faveur de nous associer à leurs larmes, pour que nous jouissions de leurs joies.
-$Qui vivis
 
 [Versum 1]
 V. Ceux-ci sont des hommes de miséricorde dont les œuvres de piété n’ont pas fait défaut.
@@ -21,6 +10,10 @@ R. Ni leur race, ni leur gloire ne seront abandonnées.
 
 [Ant 1]
 Votre louange, * Vierge Marie, ne cessera de sortir de la bouche des hommes qui se seront souvenus de la puissance éternelle de Dieu et pour lesquels vous n’avez point épargné votre âme.
+
+[Oratio]
+Seigneur Jésus-Christ qui, pour honorer le souvenir des souffrances de votre très sainte Mère, avez, par sept bienheureux Pères, enrichi votre Église, de la nouvelle famille de ses Serviteurs, accordez-nous la faveur de nous associer à leurs larmes, pour que nous jouissions de leurs joies.
+$Qui vivis
 
 [Hymnus Matutinum]
 v. Tandis que s’étendaient les fureurs de la guerre et que les villes
@@ -68,6 +61,10 @@ Dieu montra par un miracle combien ce plan de vie lui était agréable. En effet
 [Lectio6]
 Dans la suite, ces saints hommes, après s’être adjoint de nombreux compagnons, commencèrent à parcourir les cités et les bourgs de l’Italie, notamment de l’Étrurie, prêchant partout le Christ crucifié, apaisant les discordes civiles et rappelant une foule presque innombrable au sentier de la vertu. C’est non seulement en Italie* mais aussi en France* en Allemagne et en Pologne* qu’ils s’appliquèrent à leurs travaux évangéliques. Enfin, après avoir répandu au loin et abondamment la bonne odeur du Christ, devenus célèbres par de glorieux prodiges, ils quittèrent cette terre pour aller au Seigneur. Mais ceux qu’un même amour avait associés pendant la vie, par les liens de la religion et d’une vraie fraternité n’eurent* après leur mort, qu’un seul et même tombeau et devinrent ensemble, pour le peuple, l’objet d’une seule et même vénération. C’est pourquoi les Papes Clément XI et Benoît XIII confirmèrent le culte qui, depuis plusieurs siècles, les honorait d’une seule et même invocation, et Léon XIII, après avoir approuvé les miracles obtenus par cette invocation collective, au titre de Vénérables, leur décerna les honneurs des Saints, en la cinquantième année de son sacerdoce, et régla, qu’en leur mémoire* un Office et une Messe seraient célébrés chaque année dans toute l’Église.
 
+[Lectio94]
+Au XIIIe siècle, sept nobles Florentins : Bonfili Monaldi, Bonajuncta Manetto, Manetto d’Antellos, Amédée de Amidéis, Uguccio Uguccioni, Sostène de Sosteneis et Alexis Falconiéri se retirèrent à la campagne, dans une humble demeure* pour honorer continuellement la passion du Christ et les souffrances de sa Mère si affligée. La bienheureuse Vierge, en leur apparaissant le our du Vendredi-Saint, leur montra l’habit sombre qu’ils devraient revêtir et leur déclara sa très grande satisfaction de les voir établir dans l’Église un nouvel Ordre régulier* pour honorer et propager le souvenir perpétuel des souffrances qu’elle-même endura au pied de la Croix du Seigneur. Alors, ces saints hommes, aidés du bienheureux Pierre Martyr, de l’Ordre des Frères Prêcheurs, instituèrent l’Ordre des Servites de la bienheureuse Vierge et, avec leurs compagnons, commencèrent à parcourir les cités et les bourgs, prêchant partout, par la parole et par l’exemple, le Christ crucifié. Mais ceux qu’un même amour avait associés pendant la vie, par les liens de la religion et d’une vraie fraternité, n’eurent après leur mort qu’un seul et même tombeau et devinrent, pour le peuple, l’objet d’une seule et même vénération. C’est pourquoi Clément XI et Benoît XIII confirmèrent le culte commun qui leur était rendu ; et Léon XIII les ajouta à la liste des Saints.
+&teDeum
+
 [Lectio7]
 @Commune/C1:Lectio7
 
@@ -76,10 +73,6 @@ Dans la suite, ces saints hommes, après s’être adjoint de nombreux compagnon
 
 [Lectio9]
 @Commune/C1:Lectio9
-
-[Lectio94]
-Au XIIIe siècle, sept nobles Florentins : Bonfili Monaldi, Bonajuncta Manetto, Manetto d’Antellos, Amédée de Amidéis, Uguccio Uguccioni, Sostène de Sosteneis et Alexis Falconiéri se retirèrent à la campagne, dans une humble demeure* pour honorer continuellement la passion du Christ et les souffrances de sa Mère si affligée. La bienheureuse Vierge, en leur apparaissant le our du Vendredi-Saint, leur montra l’habit sombre qu’ils devraient revêtir et leur déclara sa très grande satisfaction de les voir établir dans l’Église un nouvel Ordre régulier* pour honorer et propager le souvenir perpétuel des souffrances qu’elle-même endura au pied de la Croix du Seigneur. Alors, ces saints hommes, aidés du bienheureux Pierre Martyr, de l’Ordre des Frères Prêcheurs, instituèrent l’Ordre des Servites de la bienheureuse Vierge et, avec leurs compagnons, commencèrent à parcourir les cités et les bourgs, prêchant partout, par la parole et par l’exemple, le Christ crucifié. Mais ceux qu’un même amour avait associés pendant la vie, par les liens de la religion et d’une vraie fraternité, n’eurent après leur mort qu’un seul et même tombeau et devinrent, pour le peuple, l’objet d’une seule et même vénération. C’est pourquoi Clément XI et Benoît XIII confirmèrent le culte commun qui leur était rendu ; et Léon XIII les ajouta à la liste des Saints.
-&teDeum
 
 [Capitulum Laudes]
 !1 Pet 4:13
@@ -156,9 +149,6 @@ Inondez-nous d’une sainte ardeur ;
 Pour que nous puissions, heureusement,
 Suivre l’exemple de nos pères.
 Ainsi soit-il.
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Leur nom * demeure éternellement, se perpétuant dans leurs fils qui sont la gloire de ces hommes saints.

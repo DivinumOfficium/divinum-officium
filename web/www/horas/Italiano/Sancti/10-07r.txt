@@ -1,12 +1,6 @@
 [Rank]
 Festum Beatae Mariae Virginis a Rosario;;Duplex 2 classis;;5;;ex C11
 
-[Rank] (rubrica 1960)
-Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex 2 classis;;5;;ex C11
-
-[RankNewcal]
-Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex;;3;;ex C11
-
 [Rule]
 ex C11;
 9 lectiones
@@ -14,13 +8,6 @@ Psalmi Dominica
 Antiphonas horas
 Doxology=Nat
 CPapaC=Marco;
-
-[Ant Vespera]
-Chi è costei * bella come una colomba, come una rosa piantata in riva alle acque?;;109
-Vergine potente, * è come la torre di David; mille scudi pendono da essa, tutta l'armatura dei forti.;;112
-Salve, o Maria, * piena grazia; il Signore è con te: la benedetta tu (sei) fra le donne.;;121
-Ti ha benedetta il Signore * colla sua potenza, perché per te ha annientato i nostri nemici.;;126
-La videro * le figlie di Sion germogliare tra i fiori di rose, e l'acclamarono beatissima.;;147
 
 [Hymnus Vespera]
 v. Un Messaggero della corte celeste, 
@@ -54,23 +41,9 @@ insieme col Padre e collo Spirito Santo,
 per i secoli eterni. 
 Amen.
 
-[Versum 1]
-V. Regina del sacratissimo Rosario, prega per noi.
-R. Affinché siam fatti degni delle promesse di Cristo.
-
-[Ant 1]
-Beata sei tu, * o Vergine Maria, Madre di Dio, che hai creduto al Signore; si sono adempiute in te le cose che ti furono predette, intercedi per noi presso il Signore Dio nostro. Dio nostro.
-
 [Oratio]
 O Dio, il cui Unigenito colla sua vita, morte e risurrezione ci ha meritato il premio dell'eterna salvezza: concedi, che. meditando questi misteri col sacratissimo Rosario della beata Vergine Maria, e imitiamo ciò che contengono, e conseguiamo ciò che promettono.
 $Per eumdem
-
-[Commemoratio]
-!Commemorazione di S. Marco Papa
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Esaudisci, o Signore, le nostre preghiere: e, per intercessione del tuo beato Confessore e Papa Marco, accordaci benigno il perdono e la pace,
-$Per Dominum
 
 [Invit]
 Celebriamo la solennità del Rosario della Vergine Maria: * Adoriamo Cristo Signore suo Figlio.
@@ -303,59 +276,19 @@ insieme col Padre e collo Spirito Santo,
 per i secoli eterni. 
 Amen.
 
-[Versum 2]
-V. L'ha scelta Iddio e l'ha prescelta.
-R. E l'ha fatta abitare nella sua dimora.
-
-[Ant 2]
-Celebriamo quest'oggi * con devozione la solennità dei sacratissimo Rosario della Madre di Dio Maria, affinch'ella interceda per noi presso il Signore Gesù Cristo.
-
 [Lectio Prima]
 !Sir 24:17-18
 v. Mi elevai come il cedro in sul Libano, e come il cipresso sul monte di Sion: mi elevai come la palma in Cades, e come la pianta di rosa in Gerico.
-
-[Responsory Tertia]
-R.br. Santa Madre di Dio, * Sempre Vergine Maria. 
-R. Santa Madre di Dio, * Sempre Vergine Maria. 
-V. Intercedi per noi presso il Signore Dio nostro
-R. Sempre Vergine Maria.
-&Gloria
-R. Santa Madre di Dio, * Sempre Vergine Maria. 
-_
-V. Dopo il parto, o Vergine, sei rimasta intatta.
-R. Madre di Dio, intercedi per noi.
 
 [Capitulum Sexta]
 !Sir 39:19
 v. Fate fiori come giglio e spandete odore e frondeggiate per attirarvi grazia; intonate un cantico e benedite il Signore per le opere sue.
 $Deo gratias
 
-[Responsory Sexta]
-R.br. Dopo il parto, o Vergine, * Sei rimasta intatta.
-R. Dopo il parto, o Vergine, * Sei rimasta intatta.
-V. Madre di Dio, intercedi per noi. 
-R. Sei rimasta intatta.
-&Gloria
-R. Dopo il parto, o Vergine, * Sei rimasta intatta.
-_
-V. Bella sei tu e soave.
-R. Nelle tue delizie, o santa Madre di Dio.
-
 [Capitulum Nona]
 !Sir 24:17-18
 v. Mi elevai come il cedro in sul Libano, e come il cipresso sul monte di Sion: mi elevai come la palma in Cades, e come la pianta di rosa in Gerico.
 $Deo gratias
-
-[Responsory Nona]
-R.br. Bella sei tu * E soave.
-R. Bella sei tu * E soave.
-V. Nelle tue delizie, o santa Madre di Dio.
-R. E soave.
-&Gloria
-R. Bella sei tu * E soave.
-_
-V. L'ha scelta Iddio e l'ha prescelta.
-R. E l'ha fatta abitare nella sua dimora.
 
 [Hymnus Vespera 3]
 v. Te esultante d gioia, 
@@ -388,10 +321,3 @@ che sei nato dalla Vergine,
 insieme col Padre, e collo Spirito Santo, 
 per i secoli eterni.
 Amen.
-
-[Versum 3]
-V. Regina del sacratissimo Rosario, prega per noi.
-R. Affinché siam fatti degni delle promesse di Cristo.
-
-[Ant 3]
-Beata Madre * e Vergine intatta, gloriosa Regina del mondo, sentano la tua protezione tutti quelli che celebrano la solennità del tuo sacratissimo Rosario.

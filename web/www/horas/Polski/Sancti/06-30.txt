@@ -1,18 +1,8 @@
 [Rank]
 Komemoracja Św. Pawła Apostoła;;Duplex majus;;4;;ex C1
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Komemoracja Św. Pawła Apostoła;;Duplex;;3;;vide C1
-
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
-Sub unica concl
-No prima vespera
 
 [Ant Vespera]
 Jam szczepił, * Apollo polewał, ale Bóg dał pomnożenie, alleluja.
@@ -21,17 +11,18 @@ Rad się przechwalać * będę w krewkościach moich, aby we mnie mieszkała moc
 W Damaszku, * narodu starosta króla Arety chciał, aby mię poimał: ale przez braci w koszu z muru spuszczon, i takem uszedł rąk jego, w imię Pana.
 Trzykroć byłem bit rózgami, * razem był ukamionowan, trzykrociem się z okrętem rozbił, dla imienia Chrystusa.
 
-[Capitulum Laudes]
-!2 Tm 4:7-8
-v. Potykaniem dobrem potykałem się, zawodum dokonał, wiaręm zachował. Na ostatek, odłożon mi jest wieniec sprawiedliwości, który mi odda Pan, sędzia sprawiedliwy w on dzień.
-$Deo gratias
-
 [Versum 1]
 V. Tyś jest naczyniem wybranem, święty Pawle Apostole.
 R. Głosicielem prawdy po całym świecie.
 
 [Ant 1]
 Święty Pawle Apostole, * głosicielu prawdy i nauczycielu Narodów, wstawiaj się za nami u Boga któregoś wybrał.
+
+[Oratio]
+Boże, któryś wielką ilość narodów przez nauczanie błogosławionego Pawła Apostoła oświecił, daj nam, prosimy, doznać orędownictwa tego, którego narodziny dziś obchodzimy.
+$Per Dominum
+_
+@Sancti/01-25:Commemoratio4
 
 [Hymnus Matutinum]
 @Sancti/06-29:Hymnus Laudes:s/.*Wybrany/Wybrany/s
@@ -122,11 +113,10 @@ R. Ale przez braci w koszu z muru spuszczon:
 &Gloria
 R. I takem uszedł rąk jego, w imię Pana.
 
-[Oratio]
-Boże, któryś wielką ilość narodów przez nauczanie błogosławionego Pawła Apostoła oświecił, daj nam, prosimy, doznać orędownictwa tego, którego narodziny dziś obchodzimy.
-$Per Dominum
-_
-@Sancti/01-25:Commemoratio4
+[Capitulum Laudes]
+!2 Tm 4:7-8
+v. Potykaniem dobrem potykałem się, zawodum dokonał, wiaręm zachował. Na ostatek, odłożon mi jest wieniec sprawiedliwości, który mi odda Pan, sędzia sprawiedliwy w on dzień.
+$Deo gratias
 
 [Lectio Prima]
 !1 Kor 15:9-10

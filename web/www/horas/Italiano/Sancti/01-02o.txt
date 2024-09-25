@@ -1,18 +1,9 @@
 [Rank]
 In Octava S. Stephani.;;Simplex;;1.1;;vide Sancti/12-26
 
-[Rank] (rubrica 1960)
-Die Secunda Januarii;;Feria;;1.1;;vide Sancti/12-25
-
-[Rank] (rubrica tridentina)
-In Octava Sancti Stephani.;;Duplex;;3;;ex Sancti/12-26
-
-[Rule]
-vide Sancti/12-26
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Feria Te Deum
+[Oratio]
+Dio onnipotente ed eterno, che inaugurasti le primizie dei Martiri nel sangue del beato Diacono Stefano: concedici, che si faccia nostro intercessore chi perfino per i suoi persecutori supplicò nostro Signore Gesù Cristo tuo Figlio: 
+$Per Dominum
 
 [Lectio1]
 Dagli Atti degli Apostoli
@@ -22,6 +13,9 @@ Dagli Atti degli Apostoli
 53 voi che avete ricevuto la legge per ministero d'Angeli, e non l'avete osservata. 
 54 All'udire tali cose, si rodevano nei loro cuori, e digrignavano i denti contro di lui.
 
+[Responsory1]
+@Sancti/01-01:Responsory1
+
 [Lectio2]
 !Atti 7:55-58
 55 Ma egli, ch'era pieno dello Spirito Santo, mirando fisso in cielo, vide la gloria di Dio, e Gesù che stava ritto alla destra di Dio. E disse: Ecco, io vedo i cieli aperti, e il Figlio dell'uomo ritto alla destra di Dio. 
@@ -29,27 +23,17 @@ Dagli Atti degli Apostoli
 57 E trascinatolo fuori della città, si diedero a lapidarlo: e i testimoni deposero i loro mantelli ai piedi d'un giovane, chiamato Saulo. 
 58 Mentre lo lapidavano, Stefano pregava dicendo: Signore Gesù, ricevi il mio spirito.
 
-[Lectio3]
+[Responsory2]
+@Sancti/01-01:Responsory2
+
 [Lectio3]
 !Atti 7:59; 8:1-2
 59 Poi, caduto ginocchioni, gridò a gran voce, dicendo: Signore, non imputar loro questo a peccato. E detto ciò, s'addormentò nel Signore. E Saulo approvava l'assassinio di lui. 
 1 Si scatenò allora una gran persecuzione contro la Chiesa che era in Gerusalemme; e tutti, fuorché gli Apostoli, si dispersero per le contrade della Giudea e della Samaria. 
 2 Ma degli uomini timorati seppellirono Stefano, e fecero gran pianto su di lui.
 
-[Responsory1]
-@Sancti/01-01:Responsory1
-
-[Responsory2]
-@Sancti/01-01:Responsory2
-
 [Responsory3]
 @Sancti/01-01:Responsory3
-
-[Lectio93]
-Sermone di sant'Agostino Vescovo
-!Sermone 2 su S. Stefano
-Cristo, capo dei Martiri, primo patì per noi, lasciandovi un modello da seguirne le orme. Il beatissimo Stefano seguì le orme della sua passione, e lapidato dai Giudei mentre confessava Cristo, meritò la corona quasi presagitagli dal suo nome. Stefano infatti, nome Greco, in Latino significa corona. Significando dunque il suo nome corona, portava già in questo nome un presagio della palma del martirio. Ed egli, mentre veniva lapidato, non solo non si riprometteva di vendicarsi de' suoi persecutori, ma piuttosto domandava per loro perdono a Dio.
-&teDeum
 
 [Lectio4]
 Sermone di sant'Agostino Vescovo
@@ -78,10 +62,8 @@ Ecco la vostra casa vi sarà lasciata deserta. Proprio lo stesso aveva già dett
 Vi dico infatti: non mi vedrete più, fino a che diciate: Benedetto colui che viene nel nome del Signore. Parla a Gerusalemme, ed al popolo dei Giudei. Questo versetto, del quale anche i fanciulli ed i lattanti hanno usato all'ingresso a Gerusalemme del Signore e Salvatore, quando dissero: Benedetto colui che viene nel nome del Signore, osanna nell'alto dei cieli, prende dal Salmo 117, che è stato chiaramente scritto riguardo la venuta del Signore.
 &teDeum
 
-[Oratio]
-Dio onnipotente ed eterno, che inaugurasti le primizie dei Martiri nel sangue del beato Diacono Stefano: concedici, che si faccia nostro intercessore chi perfino per i suoi persecutori supplicò nostro Signore Gesù Cristo tuo Figlio: 
-$Per Dominum
-
-[Commemoratio]
-@Sancti/12-27:Octava
-@Sancti/12-28:Octava
+[Lectio93]
+Sermone di sant'Agostino Vescovo
+!Sermone 2 su S. Stefano
+Cristo, capo dei Martiri, primo patì per noi, lasciandovi un modello da seguirne le orme. Il beatissimo Stefano seguì le orme della sua passione, e lapidato dai Giudei mentre confessava Cristo, meritò la corona quasi presagitagli dal suo nome. Stefano infatti, nome Greco, in Latino significa corona. Significando dunque il suo nome corona, portava già in questo nome un presagio della palma del martirio. Ed egli, mentre veniva lapidato, non solo non si riprometteva di vendicarsi de' suoi persecutori, ma piuttosto domandava per loro perdono a Dio.
+&teDeum

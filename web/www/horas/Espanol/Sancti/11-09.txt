@@ -4,11 +4,12 @@ In Dedicatione Basilicæ Ss. Salvatoris;;Duplex 2nd class;;5.5;;ex C8
 [Rank] (rubrica tridentina)
 In Dedicatione Basilicæ Ss. Salvatoris;;Duplex majus;;4;;ex C8
 
-[Rule]
-ex C8;
-Domini
-9 lectiones
-Festum Domini
+[Commemoratio]
+!Conmemoración de S. Teodoro, Mártir
+@Commune/C2:Oratio proper
+$Oremus
+v. ¡Oh Dios, que nos guardas y nos proteges con el glorioso testimonio de San Teodoro, tu mártir!; concédenos que su ejemplo nos aproveche y que su oración nos reconforte.
+$Per Dominum
 
 [Commemoratio 5]
 !Conmemoración de la Octava de Todos los Santos
@@ -25,20 +26,20 @@ Del Libro del Apocalipsis del Apóstol S. Juan
 !Ap 21:9-11
 9 Vino uno de los siete ángeles que tenían las siete copas, llenas de las siete últimas plagas, y habló conmigo y me dijo: Ven y te mostraré la novia, la esposa del Cordero. 
 10 Me llevó en espíritu a un monte grande y alto, y me mostró la ciudad santa, Jerusalén, que descendía del cielo, de parte de Dios, 
-11 que tenía la gloria de Dios. Su brillo era semejante a la piedra más preciosa, como la piedra de jaspe pulimentada. 
+11 que tenía la gloria de Dios. Su brillo era semejante a la piedra más preciosa, como la piedra de jaspe pulimentada.
 
 [Lectio2]
 !Ap 21:12-15
 12 Tenía un muro grande y alto y doce puertas, y sobre las doce puertas doce ángeles y nombres escritos, que son los nombres de las doce tribus de los hijos de Israel: 
 13 de la parte de oriente, tres puertas; de la parte del norte, tres puertas; de la parte del mediodía, tres puertas, y de la parte del poniente, tres puertas. 
 14 El muro de la ciudad tenía doce hiladas, y sobre ellas los nombres de los doce apóstoles del Cordero. 
-15 El que hablaba conmigo tenía una medida, una caña de oro, para medir la ciudad, sus puertas y su muro. 
+15 El que hablaba conmigo tenía una medida, una caña de oro, para medir la ciudad, sus puertas y su muro.
 
 [Lectio3]
 !Ap 21:16-18
 16 La ciudad estaba asentada sobre una base cuadrangular, y su longitud era tanta como su anchura. Midió con la caña la ciudad, y tenía doce mil estadios, siendo iguales su longitud, su latitud y su altura. 
 17 Midió su muro, que tenía ciento cuarenta y cuatro codos, medida humana, que era la del ángel. 
-18 Su muro era de jaspe, y la ciudad de oro puro, semejante al vidrio puro. 
+18 Su muro era de jaspe, y la ciudad de oro puro, semejante al vidrio puro.
 
 [Lectio4]
 Los ritos de la Iglesia en la consagración de los templos y de los altares, fueron instituidos por el Papa S. Silvestre I. Aunque desde el tiempo de los Apóstoles existían lugares consagrados a Dios, llamados ora oratorios, ora iglesias, en donde el pueblo cristiano se reunía los domingos, para orar, escuchar la palabra divina y recibir la Eucaristía, aquellos lugares no eran consagrados con tanta solemnidad, ni aun había en ellos altar erigido en título y ungido con el santo crisma para representar a Jesucristo, el cual es nuestro verdadero altar, nuestra verdadera hostia y nuestro verdadero sacerdote.
@@ -47,8 +48,7 @@ Los ritos de la Iglesia en la consagración de los templos y de los altares, fue
 Cuando el emperador Constantino consiguió por el bautismo la salud de alma y cuerpo, muy pronto promulgó una ley que facultaba por primera vez a los cristianos para edificar iglesias en cualquier parte. Y les estimuló a la edificación de estos lugares sagrados no sólo con su edicto sino con su ejemplo. Pues dedicó una iglesia al Salvador en su palacio de Letrán, y edificó junto a ella una basílica dedicada a San Juan Bautista en el mismo lugar en que, con el bautismo, que le administró San Silvestre, fue curado de la lepra de la infidelidad. El mismo Papa consagró aquella basílica, el día quinto anterior a los idus de noviembre. De esta consagración se celebra hoy memoria, por ser éste el día en que por vez primera se consagró en Roma públicamente una iglesia y apareció ante el pueblo romano la imagen del Salvador pintada en el muro.
 
 [Lectio6]
-San Silvestre decretó más tarde, al consagrar el altar de San Pedro, que todos los altares que en lo sucesivo se consagraran habían de ser de piedra, a pesar de lo cual el de la basílica de Letrán es de madera. Pero no debe extrañarnos; porque, no pudiendo los Papas, desde San Pedro hasta San Silvestre, a causa de las persecuciones, residir en un lugar fijo, en dondequiera la necesidad les llevara, ya en las criptas, ya en los cementerios, ya en las casas de los fieles devotos, ofrecían el sacrificio sobre este altar de madera, que era hueco, en forma de arca. Pero una vez devuelta la paz a la Iglesia, San Silvestre lo colocó en el primer templo, que fue el de Letrán, y, en honor de S. Pedro, del cual se dice que celebró el Santo Sacrificio en este altar, como también de los demás papas que hasta entonces lo usaron para la celebración de los Misterios, dispuso que nadie más que el Papa celebrara en él la Misa.~
-~
+San Silvestre decretó más tarde, al consagrar el altar de San Pedro, que todos los altares que en lo sucesivo se consagraran habían de ser de piedra, a pesar de lo cual el de la basílica de Letrán es de madera. Pero no debe extrañarnos; porque, no pudiendo los Papas, desde San Pedro hasta San Silvestre, a causa de las persecuciones, residir en un lugar fijo, en dondequiera la necesidad les llevara, ya en las criptas, ya en los cementerios, ya en las casas de los fieles devotos, ofrecían el sacrificio sobre este altar de madera, que era hueco, en forma de arca. Pero una vez devuelta la paz a la Iglesia, San Silvestre lo colocó en el primer templo, que fue el de Letrán, y, en honor de S. Pedro, del cual se dice que celebró el Santo Sacrificio en este altar, como también de los demás papas que hasta entonces lo usaron para la celebración de los Misterios, dispuso que nadie más que el Papa celebrara en él la Misa. s/$/~/
 @:Lectio6a 
 (rubrica 1570 omittitur)
 
@@ -59,10 +59,3 @@ La basílica del Salvador, perjudicada por los incendios, saqueos y terremotos, 
 !Conmemoración de S. Teodoro
 Teodoro fue soldado cristiano en el reinado de Maximiano; fue detenido por haber incendiado un templo de los ídolos. El prefecto de la legión prometió que no le castigaría si apostataba de la fe cristiana; pero Teodoro fue inquebrantable en la confesión de su fe. Encerrado en la prisión, donde el verdugo le desgarró las carnes con uñas de hierro hasta verse las costillas, el Mártir cantaba alegre: Bendeciré al Señor en todo tiempo. Por esto fue arrojado en una hoguera, y allí, rogando y alabando a Dios, entregó su alma a Cristo el quinto día antes de los idus de noviembre. Eusebia envolvió el cuerpo del mártir con una sábana y lo sepultó en sus dominios.
 &teDeum
-
-[Commemoratio]
-!Conmemoración de S. Teodoro, Mártir
-@Commune/C2:Oratio proper
-$Oremus
-v. ¡Oh Dios, que nos guardas y nos proteges con el glorioso testimonio de San Teodoro, tu mártir!; concédenos que su ejemplo nos aproveche y que su oración nos reconforte.
-$Per Dominum

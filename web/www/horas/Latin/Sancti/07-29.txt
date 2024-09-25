@@ -1,26 +1,15 @@
 [Rank]
-S. Marthæ Virginis;;Semiduplex;;2.2;;vide C6
+S. Marthæ Virginis;;Semiduplex;;2.2;;vide C6b
 
-[Rank] (rubrica 196)
-S. Marthæ Virginis;;Semiduplex;;3;;vide C6
+[Rank] (rubrica 1960)
+S. Marthæ Virginis;;Semiduplex;;3;;vide C6b
 
 [Rule]
-vide C6;
+vide C6b;
 9 lectiones;
 
 [Oratio]
-Exáudi nos, Deus, salutáris noster: ut, sicut de beátæ Marthæ Vírginis tuæ festivitáte gaudémus; ita piæ devotiónis erudiámur afféctu.
-$Per Dominum
-
-[Commemoratio]
-!Commemoratio Ss. Felicis, Simplicii, Faustini et Beatricis Martyrum
-@Commune/C3:Oratio proper
-$Oremus
-v. Præsta, quǽsumus, Dómine: ut, sicut pópulus christiánus Mártyrum tuórum Felícis, Simplícii, Faustíni et Beatrícis temporáli solemnitáte congáudet, ita perfruátur ætérna; et, quod votis celébrat, comprehéndat efféctu.
-$Per Dominum
-
-[Hymnus Matutinum]
-@Commune/C6:Hymnus Matutinum pro Virgo tantum et non Martyr
+@Commune/C6b::s/N\./Marthæ/
 
 [Lectio4]
 Martha, nobílibus et copiosis paréntibus nata, sed Christi Dómini hospítio clarior, post ejus ascénsum in cælum, cum fratre, sorore, et Marcella pedíssequa, ac Maximino, uno ex septuagínta duobus discípulis Christi Dómini, qui totam illam domum baptizaverat, multisque aliis Christiánis, comprehensa a Judæis, in navem sine velo ac remigio impónitur, vastissimóque mari ad certum naufragium committitur. Sed navis, Deo gubernante, salvis ómnibus, Massiliam appulsa est.
@@ -30,6 +19,10 @@ Eo miraculo et horum prædicatióne, primum Massilienses, mox Aquenses ac finít
 
 [Lectio6]
 Martha autem, mirábili vitæ sanctitáte et caritate, ómnium Massiliensium ánimis in sui amórem et admiratiónem adductis, in locum a viris remotum cum aliquot honestíssimis féminis se recepit; ubi summa cum laude pietátis et prudéntiæ diu vixit, ac demum, morte sua multo ante prædicta, miraculis clara migrávit ad Dóminum, quarto Kalendas Augusti. Cujus corpus apud Tarascum magnam habet veneratiónem.
+
+[Lectio94]
+Martha, nobílibus et copiósis paréntibus nata, sed Christi Dómini hospítio clárior, post ejus ascénsum in cælum, cum fratre, soróre multísque áliis Christiánis comprehénsa a Judǽis et in navem sine velo ac remígio impósita, Massíliam appulísse tráditur. Eo miráculo et horum prædicatióne Massiliénses et finítimæ gentes in Christum credidérunt. Martha autem, mirábili vitæ sanctitáte et caritáte ómnium Massiliénsium ánimis in sui amórem et admiratiónem addúctis, in locum a viris remótum cum áliquot honestíssimis féminis se recépit; ubi summa cum laude pietátis et prudéntiæ diu vixit, ac demum, morte sua multo ante prædícta, miráculis clara migrávit ad Dóminum.
+&teDeum
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Lucam
@@ -45,8 +38,4 @@ Suscépit eum Martha, sicut solent súscipi peregrini; sed tamen suscépit famul
 
 [Lectio9]
 Sic ergo susceptus est Dóminus, tamquam hospes, qui in sua propria venit, et sui eum non recepérunt; sed quotquot recepérunt eum, dedit eis potestátem fílios Dei fíeri, adoptans servos et liberos fáciens, rédimens captivos et fáciens coheredes. Ne quis tamen vestrum fórsitan dicat: O beáti, qui Christum suscipere in domum propriam meruérunt! Noli dolére, noli murmurare quia tempóribus natus es, quando jam Dóminus non vides in carne. Non tibi ábstulit istam dignatiónem. Cum uni, inquit, ex minimis meis fecistis, mihi fecistis. Hæc de Dómino pascéndo in carne, sed pascénte in spiritu, pauca pro témpore dixérimus.
-&teDeum
-
-[Lectio94]
-Martha, nobílibus et copiósis paréntibus nata, sed Christi Dómini hospítio clárior, post ejus ascénsum in cælum, cum fratre, soróre multísque áliis Christiánis comprehénsa a Judǽis et in navem sine velo ac remígio impósita, Massíliam appulísse tráditur. Eo miráculo et horum prædicatióne Massiliénses et finítimæ gentes in Christum credidérunt. Martha autem, mirábili vitæ sanctitáte et caritáte ómnium Massiliénsium ánimis in sui amórem et admiratiónem addúctis, in locum a viris remótum cum áliquot honestíssimis féminis se recépit; ubi summa cum laude pietátis et prudéntiæ diu vixit, ac demum, morte sua multo ante prædícta, miráculis clara migrávit ad Dóminum.
 &teDeum

@@ -3,6 +3,9 @@
 [Rule]
 12 lectiones
 
+[Ant Matutinum 3N]
+Dedit * illi Dóminus claritátem ætérnam, † et nómine ætérno hæreditábit illum.
+
 [Lectio1]
 @Sancti/12-27:Lectio1:s/-5/-3/ s/4 .*//s
 
@@ -49,9 +52,6 @@ R. Cibávit illum pane vitæ et intelléctus † et aqua sapiéntiæ salutáris 
 V. In médio Ecclésiæ apéruit os ejus, † et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
 R. Et exaltávit eum apud próximos suos.
 
-[Ant Matutinum 3N]
-Dedit * illi Dóminus claritátem ætérnam, † et nómine ætérno hæreditábit illum.
-
 [Lectio9]
 @Sancti/12-27:Lectio7:s/Una declínat .*//s
 
@@ -86,4 +86,3 @@ R. Quid ad te, tu me séquere.
 
 [Ant Vespera 3]
 @Sancti/12-25::s/129.*/129/s
-

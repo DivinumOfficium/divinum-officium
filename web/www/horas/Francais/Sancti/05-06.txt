@@ -1,16 +1,11 @@
 [Rank]
 S. Joannis Apostoli ante Portam Latinam;;Duplex majus;;4;;ex C1
 
-[Rule]
-ex C1;
-9 lectiones
-StJamesRule=John,Rev
-
 [Ant 1]
 Jeté dans une chaudière d’huile bouillante, le bienheureux Apôtre Jean, protégé par la grâce divine, sortit sain et sauf, alléluia.
 
 [Oratio]
-O Dieu qui voyez comment nous sommes troublés  par les maux qui nous arrivent de partout, faites,  nous vous le demandons, que nous soyons protégés par la glorieuse intercession du bienheureux Jean, votre  Apôtre et Évangéliste. 
+O Dieu qui voyez comment nous sommes troublés par les maux qui nous arrivent de partout, faites, nous vous le demandons, que nous soyons protégés par la glorieuse intercession du bienheureux Jean, votre Apôtre et Évangéliste. 
 $Per Dominum
 
 [Lectio1]
@@ -33,6 +28,12 @@ Jean est Apôtre, Évangéliste et Prophète : Apôtre, parce qu’il écrivit a
 [Lectio6]
 Son Évangile lui-même s’élève de beaucoup au-dessus des autres. Matthieu commence ainsi, comme parlant d’un homme : « Livre de la généalogie de Jésus-Christ, fils de David, fils d’Abraham ». Luc commence par le sacerdoce de Zacharie ; Marc par la prophétie, de Malachie et d’Isaïe. Le premier des trois a pour attribut la figure d’un homme, à cause de cette même généalogie ; le deuxième, celle d’un taureau, à cause du sacerdoce ; le troisième, celle d’un lion, à cause de la voix qui crie dans le désert : « Préparez les voies du Seigneur, rendez droits ses sentiers » ; notre Jean, lui, vole dans les hauteurs comme un aigle, et parvient au Père lui-même, quand il dit : « Au commencement était le Verbe, et le Verbe était en Dieu, et le Verbe était Dieu. »
 
+[Lectio94]
+Du livre de saint Jérôme, Prêtre, contre Jovinien.
+!iLvre 1, n. 26
+L'Apôtre Jean, l’un des disciples du Seigneur et, selon la tradition, le plus jeune des Apôtres, était vierge, quand il s’attacha au Christ, et il demeura vierge : c’est pourquoi il fut plus aimé du Seigneur et reposa sur la poitrine de Jésus ; et lorsque Pierre qui, lui, avait été marié, n’ose poser une question, c’est à Jean qu’il demande de la poser à sa place. Après la Résurrection, quand Madeleine vint annoncer que le Christ était ressuscité, tous deux coururent vers le sépulcre, mais Jean y arriva le premier. Comme ils étaient dans une barque et péchaient dans le lac de Génésareth, Jésus apparut debout sur le rivage, et les Apôtres ne savaient pas qui ils voyaient ; seul, le disciple vierge reconnut le Maître vierge et dit à Pierre : « C ’est le Seigneur... » Jean fut Apôtre, Évangéliste et Prophète. Tertullien rapporte qu’à Rome Jean fut plongé dans une chaudière d’huile bouillante et en sortit plus sain et plus vigoureux qu’il n’y était entré.
+&teDeum
+
 [Lectio7]
 Lecture du saint Évangile selon saint Matthieu..
 !Matt 20:20-23
@@ -47,13 +48,4 @@ C’est la mère qui fait la demande, c’est aux enfants que le Seigneur répon
 
 [Lectio9]
 On se demande comment les deux fils de Zébédée, Jacques et Jean, ont bu le calice du martyre. L’Apôtre saint Jacques seul ayant eu, au rapport de l’Écriture, la tête tranchée par Hérode, et saint Jean ayant quitté cette vie par une mort naturelle. Mais si nous lisons l’histoire ecclésiastique, nous trouverons que saint Jean lui aussi a rendu témoignage au Christ, qu’il a été pour cela plongé dans une chaudière d’huile bouillante, que ce vaillant athlète du Christ en sortit pour recevoir la couronne, et fut aussitôt après relégué dans l’île de Pathmos ; et nous en conclurons que ni le courage ni la volonté ne lui manquèrent pour le martyre, et qu’il a bu lui aussi le calice de la souffrance que les trois enfants ont bu dans la fournaise ardente, bien que le persécuteur n’ait point répandu leur sang.
-&teDeum
-
-[Ant 3]
-@:Ant 1
-
-[Lectio94]
-Du livre de saint Jérôme, Prêtre, contre Jovinien.
-!iLvre 1, n. 26
-L'Apôtre Jean, l’un des disciples du Seigneur et, selon la tradition, le plus jeune des Apôtres, était  vierge, quand il s’attacha au Christ, et il demeura vierge :  c’est pourquoi il fut plus aimé du Seigneur et reposa  sur la poitrine de Jésus ; et lorsque Pierre qui, lui, avait  été marié, n’ose poser une question, c’est à Jean qu’il  demande de la poser à sa place. Après la Résurrection,  quand Madeleine vint annoncer que le Christ était  ressuscité, tous deux coururent vers le sépulcre, mais Jean  y arriva le premier. Comme ils étaient dans une barque  et péchaient dans le lac de Génésareth, Jésus apparut  debout sur le rivage, et les Apôtres ne savaient pas qui  ils voyaient ; seul, le disciple vierge reconnut le Maître vierge et dit à Pierre : « C ’est le Seigneur... » Jean fut  Apôtre, Évangéliste et Prophète. Tertullien rapporte qu’à Rome Jean fut plongé dans une chaudière d’huile bouillante et en sortit plus sain et plus vigoureux qu’il n’y était entré.
 &teDeum

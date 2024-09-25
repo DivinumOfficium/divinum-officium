@@ -3,32 +3,23 @@
 [Rule]
 12 lectiones
 
-[Responsory Vespera]
-@Sancti/12-08:Responsory Sexta:s/._.*//s
-
 [Hymnus Matutinum]
 @Sancti/12-08::s/Jesu, tibi sit glória/Glória tibi Dómine/
-
-[Ant Matutinum 3N]
-Benedícite * Dómino in ópere suo; † quia índuit Maríam vestiméntis salútis: et induménto justítiæ circúmdedit eam.
 
 [AntMatutinumM]
 Fundátur * exsultatióne univérsæ terræ mons Sion, cívitas regis magni.;;47
 Misericórdia * et véritas obviavérunt sibi in Conceptióne Maríæ: † justítia et pax osculátæ sunt.;;84
 Exaltáte * Dóminum Deum nostrum, et adoráte tabernáculum ejus, † quóniam sanctus est.;;98
 
+[Ant Matutinum 3N]
+Benedícite * Dómino in ópere suo; † quia índuit Maríam vestiméntis salútis: et induménto justítiæ circúmdedit eam.
+
 [Ant Matutinum]
-@Sancti/12-08::1-3
-@Sancti/12-08::6-7
-@:AntMatutinumM:1
-@Sancti/12-08::4-5
-@:AntMatutinumM:2
-@Sancti/12-08::8
-@Sancti/12-08::11-13
+@Sancti/12-08::1-5
+@:AntMatutinumM:1-2
+@Sancti/12-08::6-9
 @:AntMatutinumM:3
-@Sancti/12-08::9-10
 ;;249;250;251
-@Sancti/12-08::14-15
 
 [Lectio1]
 @Sancti/12-08
@@ -106,16 +97,11 @@ R. Osténdit nobis Dóminus civitátem sanctam Jerúsalem, habéntem claritátem
 V. Ornátam monílibus, fíliam Jerúsalem Dóminus concupívit.
 R. Et lumen ejus símile lápide pretióso, sicut crystállum.
 
-[Responsory Laudes]
-@Sancti/12-08:Responsory Tertia:s/._.*//s
-
 [Responsory TertiaM]
-V. Deus omnípotens præcínxit me virtúte.
-R. Et pósuit immaculátam viam meam.
+@Sancti/12-08:Nocturn 1 Versum
 
 [Responsory SextaM]
-@Sancti/12-08:Responsory Tertia:s/.*_.//s
+@Sancti/12-08:Nocturn 2 Versum
 
 [Responsory NonaM]
-@Sancti/12-08:Responsory Sexta:s/.*_.//s
-
+@Sancti/12-08:Nocturn 3 Versum

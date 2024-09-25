@@ -1,10 +1,6 @@
 [Rank]
 SS. Gervasii et Protasii Martyrum;;Simplex;;1.1;;vide C3
 
-[Rule]
-vide C3;
-Gloria
-
 [Introitus]
 !Ps 84:9
 v. De Heer kondigt vrede aan voor zijn volk en zijn heiligen en voor hen, die zich tot Hem keren.
@@ -14,7 +10,7 @@ Gij hebt uw land gezegend, o Heer, Gij hebt Jacob uit de ballingschap bevrijd.
 v. De Heer kondigt vrede aan voor zijn volk en zijn heiligen en voor hen, die zich tot Hem keren.
 
 [Oratio]
-@Commune/C3b:Oratio:s/N\. en N\./Gervatius en Protasius/
+@Commune/C3b::s/N\. en N\./Gervatius en Protasius/
 
 [Lectio]
 Lezing uit de eerste Brief van de heilige Apostel Petrus
@@ -29,17 +25,14 @@ V. Uw rechterhand, o Heer, is heerlijk in haar kracht. Uw rechterhand velde de v
 Alleluia, alleluia.
 V. Dit is ware broederlijkheid, die de misdaden van de wereld overwint, die Christus gevolgd is en het heerlijke hemelrijk bezit. Alleluia.
 
-[Evangelium]
-@Commune/C3a
-
 [Offertorium]
 @Sancti/01-20
 
 [Secreta]
-@Commune/C3b:Secreta:s/N\. en N\.//
+@Commune/C3b::s/N\. en N\./Gervatius en Protasius/
 
 [Communio]
 @Sancti/06-12o
 
 [Postcommunio]
-@Commune/C3b:Postcommunio:s/N\. en N\./Gervatius en Protasius/
+@Commune/C3b::s/N\. en N\./Gervatius en Protasius/

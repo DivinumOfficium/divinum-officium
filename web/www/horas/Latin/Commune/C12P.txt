@@ -16,14 +16,5 @@ Psalmi Dominica
 Antiphonas horas
 Feria Te Deum
 
-[Ant 1]
-@Commune/C10p:Ant 1
-
 [Special Completorium]
 @Commune/C12::s/Ant. .*/Ant. ~\n\@:Ant 1/gm
-
-[Ant 2]
-@:Ant 1
-
-[Ant 3]
-@:Ant 1

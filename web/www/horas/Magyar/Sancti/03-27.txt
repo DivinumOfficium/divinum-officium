@@ -1,15 +1,11 @@
 [Rank]
 S. John Damascene Confessor;;Duplex;;3;;vide C5
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. John Damascene Confessor;;Duplex optional;;2;;vide C5
 
 [Name]
 John
-
-[Rule]
-vide C5;mtv
-9 lectiones
 
 [Lectio1]
 @Commune/C4a:Lectio1

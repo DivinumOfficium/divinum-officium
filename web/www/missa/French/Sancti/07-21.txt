@@ -1,16 +1,8 @@
 [Rank]
 S. Praxedis Virginis;;Simplex;;1.1;;vide C7a
 
-[Rule]
-vide C6;
-Gloria
-
-[Introitus]
-@Commune/C6:Introitus
-
 [Oratio]
-Exaucez-nous, ô Dieu notre Sauveur, afin que, comme la fête de la Bienheureuse Praxède, votre Vierge, nous donne la joie, elle nous enseigne aussi la ferveur d’une sainte dévotion.
-$Per Dominum
+@Commune/C6b::s/N\./Praxedis/
 
 [Lectio]
 Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios.

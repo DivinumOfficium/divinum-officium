@@ -1,26 +1,11 @@
 [Rank]
-S. Marthæ Virginis;;Semiduplex;;2;;vide C6
+S. Marthæ Virginis;;Semiduplex;;2;;vide C6b
 
 [Rank] (rubrica 1960)
-S. Marthæ Virginis;;Semiduplex;;3;;vide C6
-
-[Rule]
-vide C6;
-9 lectiones;
+S. Marthæ Virginis;;Semiduplex;;3;;vide C6b
 
 [Oratio]
-Escúchanos, oh Dios, Salvador nuestro, para que, así como nos alegramos en la festividad de tu bienaventurada Virgen Marta, seamos también instruidos con el afecto de su piadosa devoción.
-$Per Dominum
-
-[Commemoratio]
-!Conmemoración de los Ss. Félix, Simplicio, Faustino y Beatriz, Mártires
-@Commune/C3:Oratio proper
-$Oremus
-v. Te pedimos, Señor, que del mismo modo que tu pueblo se alegra ahora en la fiesta de tus santos mártires Félix, Simplicio, Faustino y Beatriz, así pueda gozar con ellos de la alegría eterna; y que posea en realidad lo que pide en esta celebración.
-$Per Dominum
-
-[Hymnus Matutinum]
-@Commune/C6:Hymnus Matutinum pro Virgo tantum et non Martyr
+@Commune/C6b::s/N\./Marta/
 
 [Lectio4]
 Marta, de ricos y nobles padres, pero más ilustre aún por la hospitalidad que dio al Señor, tras su ascensión a los cielos, fue detenida por los judíos junto con su hermano, su hermana, Marcela, su sirvienta, y muchos cristianos, entre los que estaba Maximino, uno de los 72 discípulos del Señor, que había bautizado toda la familia. Juntos fueron embarcados en una nave sin velas ni remos, naufragando en alta mar. Pero Dios hizo que la nave arribase a Marsella, llegando todos salvos.
@@ -30,6 +15,10 @@ Por este milagro y por la predicación, los habitantes de Marsella y los de Aix,
 
 [Lectio6]
 Marta, después de haberse atraído el amor y la admiración de los marselleses por la santidad de su vida y su caridad, se retiró a un lugar solitario en compañía de algunas mujeres muy edificantes. Allí vivió mucho tiempo con gran reputación de piedad; después de haber anunciado su muerte con mucha anticipación, y de haberse hecho famosa por sus milagros, voló al Señor en el cuarto día de las calendas de agosto. Su cuerpo es muy venerado en Tarascón.
+
+[Lectio94]
+Marta nació de padres nobles y adinerados, pero es más conocida por su hospitalidad con Cristo el Señor. La tradición dice que después de su Ascensión fue arrestada por los judíos, junto con su hermano y hermana, y muchos otros cristianos, y metida en un bote sin velas ni remos, que llegó a Marsella. Debido a este milagro y su predicación, la gente de Marsella y las tribus vecinas creyeron en Cristo. Marta se ganó el amor de la gente de Marsella por su santidad de vida y su caridad. Se retiró con otras mujeres buenas a un lugar alejado de los hombres, donde vivió mucho tiempo, siendo conocida por su piedad y su prudencia. Conocida por los milagros, al fin fue al Señor, en la fecha que predijo.
+&teDeum
 
 [Lectio7]
 Lectura del Santo Evangelio según San Lucas
@@ -44,9 +33,5 @@ Las palabras de nuestro Señor Jesucristo que se acaban de leer en el Evangelio 
 Marta le recibió como se recibe a un forastero: era la sirvienta que recibía a su Señor, la enferma a su Salvador, la criatura a su Criador. Alimentó su cuerpo para recibir de Él el alimento del alma. Porque el Señor quiso tomar la forma de esclavo, y ser alimentado por sus servidores, no por necesidad sino por bondad. Nos dio una muestra de bondad el dejarse nutrir por nosotros. Su carne estaba, sin duda, sujeta al hambre y a la sed; ¿pero, cuando tuvo hambre en el desierto no le sirvieron los Ángeles? Si quiso ser alimentado, lo hizo  en interés del que le alimentaba. No nos debe asombrar, porque favoreció así a una viuda, al servirse de ella para sustentar al santo Elías, habiéndole antes, el Señor, alimentado por un cuervo. ¿No podía ya socorrer al Profeta, cuando le enviaba aquella viuda? De ninguna manera, porque se proponía bendecir a la piadosa mujer con ocasión de los servicios que prestaría a su servidor.
 
 [Lectio9]
-Así fue recibido como huésped aquel Señor que "vino a su propia casa, y los suyos no le recibieron, pero a todos los que le recibieron les dio poder de llegar a ser hijos de Dios”, adoptando esclavos y tomándoles como hijos, rescatando cautivos y haciéndoles coherederos suyos. Que a nadie se le ocurra, decir: ¡Dichosos los que tuvieron el honor de recibir a Cristo en su casa! No te quejes ni por haber nacido en una época en que no ves al Señor en su carne mortal. No te ha privado de este favor: “Siempre que hicisteis algo por uno de estos pequeños hermanos, conmigo lo hicisteis”.  Y basta ya de lo referente a alimentar corporalmente al Salvador. En cuanto al alimento espiritual que Él nos proporciona, hablaremos oportunamente.
-&teDeum
-
-[Lectio94]
-Marta nació de padres nobles y adinerados, pero es más conocida por su hospitalidad con Cristo el Señor. La tradición dice que después de su Ascensión fue arrestada por los judíos, junto con su hermano y hermana, y muchos otros cristianos, y metida en un bote sin velas ni remos, que llegó a Marsella. Debido a este milagro y su predicación, la gente de Marsella y las tribus vecinas creyeron en Cristo. Marta se ganó el amor de la gente de Marsella por su santidad de vida y su caridad. Se retiró con otras mujeres buenas a un lugar alejado de los hombres, donde vivió mucho tiempo, siendo conocida por su piedad y su prudencia. Conocida por los milagros, al fin fue al Señor, en la fecha que predijo.
+Así fue recibido como huésped aquel Señor que “vino a su propia casa, y los suyos no le recibieron, pero a todos los que le recibieron les dio poder de llegar a ser hijos de Dios”, adoptando esclavos y tomándoles como hijos, rescatando cautivos y haciéndoles coherederos suyos. Que a nadie se le ocurra, decir: ¡Dichosos los que tuvieron el honor de recibir a Cristo en su casa! No te quejes ni por haber nacido en una época en que no ves al Señor en su carne mortal. No te ha privado de este favor: “Siempre que hicisteis algo por uno de estos pequeños hermanos, conmigo lo hicisteis”.  Y basta ya de lo referente a alimentar corporalmente al Salvador. En cuanto al alimento espiritual que Él nos proporciona, hablaremos oportunamente.
 &teDeum

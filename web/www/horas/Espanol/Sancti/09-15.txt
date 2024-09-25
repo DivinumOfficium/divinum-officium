@@ -1,14 +1,8 @@
 [Rank]
 Septem Dolorum Beatæ Mariæ Virginis;;Duplex 2nd class;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Septem Dolorum Beatæ Mariæ Virginis;;Duplex 2nd class;;5;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
 
 [Ant Vespera]
 ¿A dónde * se ha ido tu amado, oh la más hermosa de las mujeres? ¿A dónde se ha ido, y lo buscaremos contigo?;;109
@@ -54,11 +48,15 @@ Amén.
 V. Reina de los mártires, ruega por nosotros.
 R. Que estuviste junto a la Cruz de Jesús.
 
+[Doxology]
+@Tempora/Quad5-5
+
 [Ant 1]
 No os fijéis * en el color de mi piel bronceada por el sol: los hijos de mi madre se han levantado contra mí.
 
-[Doxology]
-@Tempora/Quad5-5
+[Oratio]
+En tu pasión, Señor, la espada de dolor profetizada por Simeón, traspasó el alma de tu Madre María, la Virgen; al recordar y venerar sus dolores, concédenos alcanzar los gozosos frutos de tu pasión.
+$Qui vivis
 
 [Invit]
 Estemos firmes junto a la Cruz, con la Madre de Jesús, María, * Cuya alma fue traspasada por una espada de dolor.
@@ -248,16 +246,12 @@ R. Haz que nos alegremos en el reino de los cielos.
 [Ant 2]
 Venid, * subamos al monte del Señor, y ved si hay dolor como el mío.
 
-[Oratio]
-En tu pasión, Señor, la espada de dolor profetizada por Simeón, traspasó el alma de tu Madre María, la Virgen; al recordar y venerar sus dolores, concédenos alcanzar los gozosos frutos de tu pasión.
-$Qui vivis
-
-[Versum Prima]
-@Tempora/Quad5-5
-
 [Lectio Prima]
 !Lam 2:18
 v. Derrama lágrimas a torrentes día y noche, no te des reposo, no descansen tus ojos.
+
+[Versum Prima]
+@Tempora/Quad5-5
 
 [Responsory Tertia]
 R.br. Vosotros, * Los que pasáis por el camino. 
@@ -300,9 +294,6 @@ R. Mi amado * Es para mí un manojo de mirra.
 _
 V. Mi alma se conmueve.
 R. Cuando habla mi amado.
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 El dolor me ha oprimido, * está mi rostro hinchado por el llanto y sobre mis párpados hay un velo sombrío.

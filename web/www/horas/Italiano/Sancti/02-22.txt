@@ -1,28 +1,8 @@
 [Rank]
 In Cathedra S. Petri Apostoli Antiochiae;;Duplex majus;;4;;ex C4
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Cathedra S. Petri Apostoli;;Duplex II classis;;5;;ex C4
-
-[RankNewcal]
-In Cathedra S. Petri Apostoli;;Duplex II classis;;5;;ex C4
-
-[Rule]
-ex C4;
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-Commemoratio3
-Sub unica concl
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
-
-[Ant Vespera]
-Ecco il gran sacerdote, * che nei suoi giorni piacque a Dio e fu trovato giusto.;;109
-Non si è trovato uno * simile a lui nell'osservare la legge dell'Altissimo.;;110
-Per questo il Signore giurò * di elevarlo sopra il suo popolo.;;111
-Sacerdoti di Dio, * benedite il Signore; servi del Signore sciogliete un inno a Dio, alleluia.;;112
-Servo buono * e fedele, entra nel gaudio del tuo Signore.
 
 [Hymnus Vespera]
 v. Tutto ciò che legherai sulla terra 
@@ -49,19 +29,6 @@ v. O Dio, che consegnando al  tuo beato Apostolo Pietro le chiavi del regno cele
 $Qui vivis
 _
 @Sancti/02-22:Commemoratio4
-
-[Commemoratio4]
-!Commemorazione di S. Paolo
-(deinde dicuntur)
-Ant. San Paolo Apostolo, banditore della verità e dottore delle Genti, intercedi per noi presso Dio, che ti elesse.
-_
-V. Tu sei uno strumento eletto, o san Paolo Apostolo.
-R. Il predicatore della verità per tutto il mondo.
-_
-$Oremus
-(sed rubrica 1960 aut rubrica monastica hæc versus omittuntur)
-v. O Dio, che istruisti una moltitudine di Gentili colla predicazione del beato Paolo Apostolo: concedici, che come ne veneriamo la memoria, ne sperimentiamo il patrocinio presso di te. 
-$Per Dominum
 
 [Invit]
 Tu sei il pastore delle pecore, il Principe degli Apostoli: * A te Dio ha dato le chiavi del regno celeste.
@@ -197,3 +164,16 @@ R. Affinché gli offrissi l'ostia di lode.
 
 [Ant 3]
 Mentre era * Sommo Pontefice, non temette le potenze terrene, ma salì gloriosamente al regno dei cieli.
+
+[Commemoratio4]
+!Commemorazione di S. Paolo
+(deinde dicuntur)
+Ant. San Paolo Apostolo, banditore della verità e dottore delle Genti, intercedi per noi presso Dio, che ti elesse.
+_
+V. Tu sei uno strumento eletto, o san Paolo Apostolo.
+R. Il predicatore della verità per tutto il mondo.
+_
+$Oremus
+(sed rubrica 1960 aut rubrica monastica hæc versus omittuntur)
+v. O Dio, che istruisti una moltitudine di Gentili colla predicazione del beato Paolo Apostolo: concedici, che come ne veneriamo la memoria, ne sperimentiamo il patrocinio presso di te. 
+$Per Dominum

@@ -1,10 +1,7 @@
 [Rank]
 S. Alexii Confessoris;;Semiduplex;;2.2;;vide C5
 
-[Rank] (rubrica 1960)
-S. Alexii Confessoris;;Simplex;;1.1;;vide C5
-
-[Rank] (rubrica 1570)
+[Rank] (rubrica 1570 aut rubrica 1960)
 S. Alexii Confessoris;;Simplex;;1.1;;vide C5
 
 [Rule]
@@ -23,6 +20,10 @@ Aléxius, Romanórum nobilíssimus, propter exímium Jesu Christi amórem prima 
 [Lectio6]
 @Commune/C5:Lectio5 in 2 loco
 
+[Lectio94]
+Aléxius, Romanórum nobilíssimus, propter exímium Jesu Christi amórem prima nocte nuptiárum peculiári Dei mónitu relínquens intáctam sponsam, illústrium orbis terræ ecclesiárum peregrinatiónem suscépit. Quibus in itinéribus cum ignótus septémdecim annos fuísset, aliquándo apud Edéssam, Syriæ urbem, per imáginem sanctíssimæ Maríæ Vírginis, ejus nómine divulgáto, inde navi discéssit. Ad portum Románum appúlsus, a patre suo tamquam aliénus pauper hospítio accípitur; apud quem, ómnibus incógnitus, cum decem et septem annos vixísset, relícto scripto sui nóminis, sánguinis, ac totíus vitæ cursus, migrávit in cælum, Innocéntio primo summo Pontífice.
+&teDeum
+
 [Lectio7]
 @Commune/C1:Lectio7
 
@@ -31,7 +32,3 @@ Aléxius, Romanórum nobilíssimus, propter exímium Jesu Christi amórem prima 
 
 [Lectio9]
 @Commune/C1:Lectio9
-
-[Lectio94]
-Aléxius, Romanórum nobilíssimus, propter exímium Jesu Christi amórem prima nocte nuptiárum peculiári Dei mónitu relínquens intáctam sponsam, illústrium orbis terræ ecclesiárum peregrinatiónem suscépit. Quibus in itinéribus cum ignótus septémdecim annos fuísset, aliquándo apud Edéssam, Syriæ urbem, per imáginem sanctíssimæ Maríæ Vírginis, ejus nómine divulgáto, inde navi discéssit. Ad portum Románum appúlsus, a patre suo tamquam aliénus pauper hospítio accípitur; apud quem, ómnibus incógnitus, cum decem et septem annos vixísset, relícto scripto sui nóminis, sánguinis, ac totíus vitæ cursus, migrávit in cælum, Innocéntio primo summo Pontífice.
-&teDeum

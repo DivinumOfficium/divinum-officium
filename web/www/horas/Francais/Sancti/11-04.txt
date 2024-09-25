@@ -1,12 +1,15 @@
 [Rank]
 St Charles Evêque et Confesseur;;Duplex;;3;;vide C4
 
-[Rule]
-vide C4 ;
-9 lectiones
-
 [Oratio]
 Daignez, Seigneur, garder continuellement votre Église sous la protection de saint Charles, votre Pontife et Confesseur ; et comme sa sollicitude pastorale l’a rendu glorieux, que son intercession nous obtienne d’être toujours fervents dans votre amour.
+$Per Dominum
+
+[Commemoratio 1]
+!Commémoraison des Sts Vital et Agricola, Martyrs
+@Commune/C3:Oratio proper
+$Oremus
+v. Faites, s’il vous plaît, ô Dieu tout-puissant, que vos saints Martyrs Vital et Agricola, dont nous célébrons, la fête, nous assistent par leur intercession auprès de vous.
 $Per Dominum
 
 [Lectio4]
@@ -18,13 +21,13 @@ La charité de cet homme de Dieu brilla tout particulièrement lorsqu’ayant ve
 [Lectio6]
 Il était d’une abstinence étonnante ; jeûnait très souvent au pain et à l’eau, et, d’autres fois, se contentait de légumes. Il domptait son corps par les veilles, un cilice très dur, de fréquentes disciplines. L’humilité et la douceur lui étaient on ne peut plus chères. Il ne manqua jamais de se livrer à la prière et à la prédication de la parole de Dieu, quelque grandes occupations qu’il eût. Il bâtit beaucoup d’églises, des monastères et des collèges. Il a écrit plusieurs ouvrages très utiles, surtout pour l’instruction des Évêques, et c’est par ses soins que le catéchisme des curés a paru. Enfin, il se retira dans une solitude du mont Varale, où se trouvent des tableaux représentant au vif la passion de notre Seigneur. C’est là que, menant pendant quelques jours une vie rude par la mortification volontaire, mais douce par la méditation des souffrances de Jésus-Christ, il fut pris de la fièvre, et comme la maladie s’aggravait, il revint à Milan, où, sous la cendre et le cilice, les yeux attachés sur un crucifix, il partit pour le ciel, âgé de quarante-sept ans, le troisième jour des nones de novembre de l’année mil cinq cent quatre-vingt-quatre. Des miracles l’ayant illustré, le Souverain Pontife Paul V le mit au nombre des Saints.
 
+[Lectio94]
+Charles, né à Milan, de la noble famille des Borromée, fut admis, à l’âge de vingt-trois ans, par Pie IV, son oncle, au Sacré Collège des Cardinaux, et, par lui aussi, créé peu après archevêque de Milan, il mit toute son activité à organiser l’Église à lui confiée, d’après les prescriptions du saint concile de Trente, à l’achèvement duquel sa sollicitude avait grandement contribué. Durant la peste de Milan, il donna, pour nourrir les pauvres, tout son mobilier ; et visitant avec soin les pestiférés, il les consolait admirablement, leur administrant de ses propres mains les sacrements de l’Église. Il fut un ardent défenseur de la liberté de l’Église ; écrivit de nombreux ouvrages très utiles, surtout pour l’instruction des Évêques ; et fit même paraître un catéchisme pour les prêtres. Il mourut à Milan, à quarante-sept ans, le trois des Nones de Novembre. Devenu célèbre par ses miracles, il fut mis au nombre des Saints par Paul V.
+&teDeum
+
 [Lectio93]
 !Commémoraison des Sts Vital et Agricola, Martyrs
 Vital et son maître Agricola, furent arrêtés à Bologne, pendant la persécution de Dioclétien et de Maximien pour avoir prêché Jésus-Christ. Plus on s’efforçait par des prières et des menaces, d’amener Vital à changer de résolution, plus il se déclarait adorateur et serviteur de Jésus-Christ. Torturé par divers genres de supplices, et les endurant tous avec constance, il rendit, en priant, son esprit à Dieu : son exemple eut pour effet d’affermir Agricola, dont le supplice avait été différé pour voir si les tourments de son esclave ne l’amèneraient pas à renoncer au Christ. On l’attacha donc à une croix, et, admis à partager le sort de Vital, son esclave, il devint son compagnon dans un glorieux martyre. Leurs corps qui avaient été inhumés dans le cimetière des Juifs, furent retrouvés par saint Ambroise et transférés dans un lieu bénit et consacré.
-&teDeum
-
-[Lectio94]
-Charles, né à Milan, de la noble famille des Borromée, fut admis, à l’âge de vingt-trois ans, par Pie IV, son oncle, au Sacré Collège des Cardinaux, et, par lui aussi, créé peu après archevêque de Milan, il mit toute son activité à organiser l’Église à lui confiée, d’après les prescriptions du saint concile de Trente, à l’achèvement duquel sa sollicitude avait grandement contribué. Durant la peste de Milan, il donna, pour nourrir les pauvres, tout son mobilier ; et visitant avec soin les pestiférés, il les consolait admirablement, leur administrant de ses propres mains les sacrements de l’Église. Il fut un ardent défenseur de la liberté de l’Église ; écrivit de nombreux ouvrages très utiles, surtout pour l’instruction des Évêques ; et fit même paraître un catéchisme pour les prêtres. Il mourut à Milan, à quarante-sept ans, le trois des Nones de Novembre. Devenu célèbre par ses miracles, il fut mis au nombre des Saints par Paul V.
 &teDeum
 
 [Commemoratio 2]
@@ -41,11 +44,4 @@ _
 @Commune/C3:Oratio proper
 $Oremus
 v. Faites, s’il vous plaît, ô Dieu tout-puissant, que vos sainte Martyrs Vital et Agricola, dont nous célébrons, la fête, nous assistent par leur intercession auprès de vous.
-$Per Dominum
-
-[Commemoratio 1]
-!Commémoraison des Sts Vital et Agricola, Martyrs
-@Commune/C3:Oratio proper
-$Oremus
-v. Faites, s’il vous plaît, ô Dieu tout-puissant, que vos saints Martyrs Vital et Agricola, dont nous célébrons, la fête, nous assistent par leur intercession auprès de vous.
 $Per Dominum

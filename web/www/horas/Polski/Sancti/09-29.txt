@@ -1,19 +1,8 @@
 [Rank]
 Dedykacja Św. Michała Archanioła;;Duplex 1. classis;;6;;ex Sancti/05-08
 
-[Rank] (rubrica 1960)
-Dedykacja Św. Michała Archanioła;;Duplex 1. classis;;6;;ex Sancti/05-08
-
-[RankNewcal]
+[Rank] (rubrica innovata)
 Śś. Michała, Gabriela i Rafała Archaniołów;;Duplex 1. classis;;6;;ex Sancti/05-08
-
-[Rule]
-ex Sancti/05-08
-9 lectiones
-Psalm5 Vespera=116
-Psalm5 Vespera3=137
-Quorum Festum
-Contract8
 
 [Ant Matutinum]
 Morze się wzburzyło, * i zadrżała ziemia, gdzie Archanioł Michał zstąpił z nieba.;;8
@@ -58,15 +47,6 @@ A jeśli cię ręka twoja albo noga twoja gorszy, odetnij ją i odrzuć precz od
 [Lectio9]
 Powiadam wam bowiem, że Aniołowie ich w niebiesiech zawsze widzą oblicze Ojca mego. Wyżej powiedział, posługując się przykładem ręki, nogi i oka, że należy odciąć wszelkie pokrewieństwa i zażyłości, które mogłyby wywołać upadek. Teraz więc surowość tej wypowiedzi powściąga, dodając zalecenie w słowach: Baczcie, abyście nie wzgardzili którymś z tych maluczkich. W taki sposób – powiada – polecam surowość, że zarazem uczę łagodności, bowiem Aniołowie ich w niebiesiech zawsze widzą oblicze Ojca. Wielka godność dusz, że każda ma od urodzenia postawionego na swej straży Anioła. Stąd czytamy w Apokalipsie Janowej: Aniołowi Kościoła efeskiego i pozostałych Kościołów napisz tak. Apostoł polecił także, aby niewiasty zakrywały głowy w kościołach ze względu na Aniołów.
 &teDeum
-
-[Responsory Tertia]
-@Sancti/05-08::s/(przed ołtarzem kościoła, \* )?Alleluja, alleluja/* przed ołtarzem kościoła/g s/\. \* p/. P/
-
-[Responsory Sexta]
-@Sancti/05-08::s/(przed oblicze Boga \* )?Alleluja, alleluja/* przed oblicze Boga/g s/\. \* p/. P/
-
-[Responsory Nona]
-@Sancti/05-08::s/(będęć śpiewał Boże mój \* )?Alleluja, alleluja/* będęć śpiewał Boże mój/g s/\. \* b/. B/
 
 [Ant 2]
 Nastała cisza * w niebie, gdy smok wytoczył wojnę: a Michał walczył z nim, i odniosł zwycięstwo, alleluja.

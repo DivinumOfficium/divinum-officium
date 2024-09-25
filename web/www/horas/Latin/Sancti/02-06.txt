@@ -1,22 +1,12 @@
 [Rank]
 S. Titi Episcopi et Confessoris;;Duplex;;3;;vide C4
 
-[Rank](rubrica 1960)
-S. Titi Episcopi et Confessoris;;Duplex;;3;;vide C4
-
 [Rule]
 vide C4;mtv
 9 lectiones
 
 [Oratio]
 Deus, qui beátum Titum Confessórem tuum atque Pontíficem apostólicis virtútibus decorásti: ejus méritis et intercessióne concéde; ut juste et pie vivéntes in hoc sǽculo, ad cæléstem pátriam perveníre mereámur.
-$Per Dominum
-
-[Commemoratio]
-!Commemoratio S. Dorotheæ, Virginis et Martyris
-@Commune/C6:Oratio proper
-$Oremus
-v. Indulgéntiam nobis, quǽsumus, Dómine, beáta Doróthea Virgo et Martyr implóret: quæ tibi gráta semper éxstitit, et mérito castitátis, et tuæ professióne virtútis.
 $Per Dominum
 
 [Lectio4]
@@ -33,12 +23,7 @@ Titus, Creténsium epíscopus, qui inter discípulos Doctóris géntium merúeri
 &teDeum
 
 [Lectio7]
-@Commune/C1a:Lectio7
+@Commune/C1a
 
 [Lectio8]
-@Commune/C1a:Lectio8
-
-[Lectio93]
-!Commemoratio S. Dorotheæ Virginis et Martyris
-Doróthea virgo, ex Cæsaréa Cappadociæ, propter Christi confessiónem ab Apricio præside comprehensa, Chrystæ et Callistæ soróribus, quæ a fide defécerant, tradita est, ut eam a propósito removérent. Sed contra factum est; nam eas Doróthea ad cultum christianæ religiónis redúxit, propter quam étiam martyrium suscepérunt. Quare Virgo equuleo diu torta et palmis cæsa, ad extremum cápitis damnata, duplicatam virginitátis et martyrii palmam accepit.
-&teDeum
+@Commune/C1a

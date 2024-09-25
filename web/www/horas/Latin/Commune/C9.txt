@@ -79,16 +79,22 @@ Regem, cui ómnia vivunt, * Veníte adorémus.
 Dírige, * Dómine, Deus meus, in conspéctu tuo viam meam.;;5
 Convértere, * Dómine, et éripe ánimam meam: quóniam non est in morte, qui memor sit tui.;;6
 Nequándo rápiat * ut leo ánimam meam, dum non est qui rédimat, neque qui salvum fáciat.;;7
-V. A porta ínferi.
-R. Erue, Dómine, ánimas eórum.
 In loco páscuæ * ibi me collocávit.;;22
 Delícta * juventútis meæ, et ignorántias meas ne memíneris, Dómine.;;24
 Credo vidére * bona Dómini in terra vivéntium.;;26
-V. Cóllocet eos Dóminus cum princípibus.
-R. Cum princípibus pópuli sui.
 Compláceat * tibi, Dómine, ut erípias me: Dómine, ad adjuvándum me réspice.;;39
 Sana, Dómine, * ánimam meam, quia peccávi tibi.;;40
 Sitívit * ánima mea ad Deum vivum: quando véniam, et apparébo ante fáciem Dómini?;;41
+
+[Nocturn 1 Versum]
+V. A porta ínferi.
+R. Erue, Dómine, ánimas eórum.
+
+[Nocturn 2 Versum]
+V. Cóllocet eos Dóminus cum princípibus.
+R. Cum princípibus pópuli sui.
+
+[Nocturn 3 Versum]
 V. Ne tradas béstiis ánimas confiténtes tibi.
 R. Et ánimas páuperum tuórum ne obliviscáris in finem.
 
@@ -245,19 +251,17 @@ R. Dum véneris judicáre sǽculum per ignem.
 $Requiem
 R. Líbera me, Dómine, de morte ætérna in die illa treménda, * Quando cæli movéndi sunt et terra, * Dum véneris judicáre sǽculum per ignem.
 
-[Ant Laudes]
+[Ant Laudes_]
 Exsultábunt Dómino * ossa humiliáta.;;50
 Exáudi, Dómine, * oratiónem meam: ad te omnis caro véniet.;;64
 Me suscépit * déxtera tua, Dómine.;;62
 A porta ínferi * érue, Dómine, ánimam meam.;;222
 Omnis spíritus * laudet Dóminum.;;150
 
-[Ant Laudes](rubrica tridentina)
-Exsultábunt Dómino * ossa humiliáta.;;50
-Exáudi, Dómine, * oratiónem meam: ad te omnis caro véniet.;;64
-Me suscépit * déxtera tua, Dómine.;;62;66
-A porta ínferi * érue, Dómine, ánimam meam.;;222
-Omnis spíritus * laudet Dóminum.;;148;149;150
+[Ant Laudes]
+@:Ant Laudes_
+(sed rubrica tridentina)
+@:Ant Laudes_:s/62/62;66/ s/150/148;149;150/
 
 [Versum 2]
 @:Versum 1

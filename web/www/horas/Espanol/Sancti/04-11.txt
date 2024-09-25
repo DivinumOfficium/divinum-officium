@@ -1,30 +1,19 @@
 [Rank]
-S. Leonis I Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3.1;;vide C4a
-
-[Rank] (rubrica 1960)
 S. Leonis I Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 
 [Name]
 Leo
 
-[Rule]
-vide C4a;mtv
-9 lectiones
+[Oratio]
+Pastor eterno, que cuidas de tu rebaño con amor: guárdalo con tu protección perpetua, por intercesión de San León, sumo Pontífice, a quien hiciste pastor de toda la Iglesia.
+$Per Dominum
 
 [Oratio] (rubrica tridentina)
 Escucha, Señor, nuestras súplicas, así te pedimos los que celebramos la solemnidad de tu santo, León Confesor, y que por la intercesión de sus méritos nos absuelva de nuestros pecados.
 $Per Dominum
 
-[Oratio]
-Pastor eterno, que cuidas de tu rebaño con amor: guárdalo con tu protección perpetua, por intercesión de San León, sumo Pontífice, a quien hiciste pastor de toda la Iglesia.
-$Per Dominum
-
 [Lectio1] (rubrica tridentina)
 @Sancti/02-22:Lectio1
-
-[Lectio2] (rubrica tridentina)
-@Sancti/02-22:Lectio2:s/-9/-12/
-@Sancti/02-22:Lectio3:2-5
 
 [Lectio3] (rubrica tridentina)
 !1 Pe 1:13-21
@@ -47,6 +36,10 @@ León fue recibido por todo el pueblo con alegría. Poco después logró, gracia
 [Lectio6]
 El santo Pontífice se dedicó después a reparar y edificar diferentes iglesias. Por su consejo, Demetria, mujer piadosa, construyó la iglesia de San Esteban en una propiedad suya de la vía Latina, a tres millas de Roma. Él mismo edificó en la vía Apia una iglesia bajo la denominación de San Cornelio; restauró otras muchas y las proveyó de vasos sagrados; construyó bóvedas en las tres basílicas de San Pedro, San Pablo y Constantiniana; junto a la de San Pedro edificó un monasterio; puso guardianes en los sepulcros de los Apóstoles, con el nombre de cubicularios. Ordenó que en el canon de la Misa se dijera: “Santo sacrificio, inmaculada Hostia”. Dispuso que las religiosas no recibiesen el velo bendecido, bien probada su virginidad hasta la edad de 40 años. Realizadas otras cosas ilustres, habiendo escrito mucho, santa y elocuentemente, el 11 de abril se durmió en el Señor. Su pontificado duró 21 años, 1 mes y 13 días.
 
+[Lectio94]
+Leo I, etrusco, Papa de la Iglesia cuando Atila, rey de los hunos, llamado el Azote de Dios, estaba invadiendo Italia; había tomado y quemado Aquileya y estaba preparandose para atacar Roma, cuando salió a su encuentro y, por elocuencia dada por Dios, lo persuadió a retirarse; entonces León fue recibido de regreso a Roma con gran regocijo. Más tarde, cuando Genserico estaba invadiendo la ciudad, León lo persuadió, con la misma elocuencia, de abstenerse de quemarla y ultrajarla. Cuando León vio a la Iglesia hostigada por muchas herejías, especialmente por los nestorianos y los eutiquianos, convocó al Concilio de Calcedonia 630 obispos que condenaron a Eutiques y Dióscoro, y repitieron la condena de Nestorio. Los decretos de este Concilio fueron confirmados por la autoridad de León. Construyó muchas iglesias y un monasterio cerca de la Basílica de San Pedro. Después de una vida llena de estas y otras obras admirables, incluyendo muchas escrituras santas y elocuentes, se durmió en el Señor el 10 de noviembre, en el 21º año de su pontificado.
+&teDeum
+
 [Lectio7]
 Lectura del santo Evangelio según San Mateo
 !Mt 16:13-19
@@ -61,8 +54,4 @@ En la Iglesia universal, repite Pedro cada día: “Tú eres el Cristo, el Hijo 
 
 [Lectio9]
 Cuando dirigimos nuestras exhortaciones a vuestra santa asamblea, creed que os habla aquel cuyo puesto ocupamos. Animados del afecto que os profesa, os dirigimos nuestras advertencias, y nada os predicamos que no haya enseñado él, conjurándoos a que ciñáis espiritualmente vuestras cinturas y a que llevéis una vida casta y sobria en el temor de Dios. Vosotros sois, como decía el Apóstol, “mi gozo y mi corona”, si vuestra fe que, desde el origen del Evangelio, ha sido celebrada en todo el mundo, persevera en toda santidad y dilección. Toda la Iglesia, difundida por el orbe, debe florecer en todas las virtudes, pero conviene que entre todos los pueblos, os distingáis por el mérito de una piedad más excelente, ya que, colocados en la cumbre de la religión cristiana y sobre la piedra misma del apostolado, habéis sido, como todos, rescatados por Jesucristo nuestro Señor, y, con preferencia a todos, instruidos por el bienaventurado apóstol Pedro.
-&teDeum
-
-[Lectio94]
-Leo I, etrusco, Papa de la Iglesia cuando Atila, rey de los hunos, llamado el Azote de Dios, estaba invadiendo Italia; había tomado y quemado Aquileya y estaba preparandose para atacar Roma, cuando salió a su encuentro y, por elocuencia dada por Dios, lo persuadió a retirarse; entonces León fue recibido de regreso a Roma con gran regocijo. Más tarde, cuando Genserico estaba invadiendo la ciudad, León lo persuadió, con la misma elocuencia, de abstenerse de quemarla y ultrajarla. Cuando León vio a la Iglesia hostigada por muchas herejías, especialmente por los nestorianos y los eutiquianos, convocó al Concilio de Calcedonia 630 obispos que condenaron a Eutiques y Dióscoro, y repitieron la condena de Nestorio. Los decretos de este Concilio fueron confirmados por la autoridad de León. Construyó muchas iglesias y un monasterio cerca de la Basílica de San Pedro. Después de una vida llena de estas y otras obras admirables, incluyendo muchas escrituras santas y elocuentes, se durmió en el Señor el 10 de noviembre, en el 21º año de su pontificado.
 &teDeum

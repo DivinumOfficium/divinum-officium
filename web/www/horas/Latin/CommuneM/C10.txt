@@ -1,12 +1,7 @@
 @Commune/C10
 
 [Responsory Vespera]
-R.br. Ave María, grátia plena, * Dóminus tecum.
-R. Ave María, grátia plena, * Dóminus tecum.
-V. Benedícta tu in muliéribus, et benedíctus fructus ventris tui
-R. Dóminus tecum.
-&Gloria
-R. Ave María, grátia plena, * Dóminus tecum.
+@CommuneM/C11
 
 [Lectio11]
 !from tempora
@@ -18,28 +13,28 @@ R. Ave María, grátia plena, * Dóminus tecum.
 @Commune/C12
 
 [Ant Prima]
-@Commune/C11:Ant Vespera:1
+@Commune/C7:Ant Vespera:1
 
 [Ant Tertia]
-@Commune/C11:Ant Vespera:2
+@Commune/C11:Ant VesperaBMV:1
 
 [Ant Sexta]
-@Commune/C11:Ant Vespera:3
+@Commune/C6:Ant Matutinum:7
 
 [Ant Nona]
-@Commune/C11:Ant Vespera:5
+@Commune/C11:Ant VesperaBMV:2
 
 [Responsory Laudes]
 @:Responsory Vespera
 
 [Responsory TertiaM]
-@CommuneM/C6
+@Commune/C6:Versum 1
 
 [Responsory SextaM]
-@CommuneM/C6
+@Commune/C6:Nocturn 2 Versum
 
 [Responsory NonaM]
-@CommuneM/C6
+@Commune/C6:Nocturn 3 Versum
 
 [Lectio M011]
 Ex Epístola sancti Ambrósii Epíscopi ad Sirícium Papam
@@ -53,7 +48,7 @@ Ingréditur hæc mundi ínfima Jesus Christus Fílius Dei, de cælésti sede des
 
 [Lectio M013]
 Sermo sancti Leónis, Papæ
-! 
+!.
 Salvatóris orígo dissímilis, sed natúra consímilis est: humáno usu et consuetúdine caret; sed divína potestáte subníxum est, quod Virgo concéperit, quod Virgo pepérerit, quod Virgo permánserit. Opórtuit enim ut primam Genetrícis virginitátem nascéntis incorrúptio custodíret, et complácitum sibi claustrum pudóris, et sanctátis hospítium divíni Spíritus virtus infúsa serváret, qui statúerat deiécta erígere, confrácta solidáre, et superándis carnis illécebris multiplicátam pudicítiæ donáre virtútem; ut virgínitas, quæ in áliis non póterat salva esse generándo, fíeret et in ália imitábilis renascéndo.
 
 [Lectio M014]
@@ -68,7 +63,7 @@ Exsúltat María, et matrem se læta mirátur, et de Spíritu Sancto se peperís
 
 [Lectio M022]
 Sermo sancti Bedæ Venerábilis Presbýteri
-! 
+!.
 Mater Jesu, inquit Evangelísta, conservábat ómnia verba hæc in corde suo. Imitémur et nos, fratres mei, piam Dómini Matrem, ipsi quoque ómnia verba et facta Dómini ac Salvatóris nostri fixo in corde conservándo. Horum Dómini verbórum et actórum meditatióne diúrna et noctúrna importúnos inánium nocentiúmque cogitatiónum repellámus incúrsus: horum crebra collatióne et nos et próximos nostros a fábulis supervácuis et male dulcorátis detractiónum collóquiis castigáre, atque ad divínæ frequéntiam laudis accédere curémus. Discámus ergo sanctæ Vírginis in ómnibus castitátem, quæ non minus ore pudíca, quam córpore, arguménta fidei conservábat in corde.
 
 [Lectio M023]
@@ -78,7 +73,7 @@ Heva mortis causa facta est homínibus: per ipsam enim mors ingréssa est in mun
 
 [Lectio M024]
 Sermo sancti Bernárdi Abbátis
-! 
+!.
 Lætáre pater Adam, sed magis tu, o Heva, mater, exsúlta; ambo, inquam consolámini super fília, et tali fília. Instat namque tempus, quam jam tollátur oppróbrium, nec hábeat vir qui causétur advérsus féminam: qui útique, dum se imprudénter exsuráre conarétur, crudéliter illam accusáre non cunctátus est, dicens: Múlier quam dedísti mihi, dedit mihi de ligno, et comédi. Proptérea curre, Heva, ad Maríam; curre, mater, ad fíliam; fília pro matre respóndeat; ipsa pro matre satisfáciat: quia ecce si vir cécedit per féminam, jam non erígitur nisi per féminam.
 
 [Lectio M031]
@@ -88,7 +83,7 @@ In sua própria veniénte Dómino, et sua própria eum bajulánte condicióne, q
 
 [Lectio M042]
 Sermo sancti Germáni Epíscopi
-! 
+!.
 Tutéla tua immortális est, María; et intercéssio, vita; et protéctio perpétua. Nisi enim, tu præíres, nemo spiritális eváderet; nemo in Spíritu Deum adoráret. Tunc enim spiritális factus est homo, cum tu, Deípara Spíritus Sancti habitáculum effécta es: nemo Dei cognitióne replétus est nisi per te, o sanctíssima. Nemo salvus nisi per te, o Deípara; nemo periculórum expers nisi per te, Virgo parens; nemo redémptus nisi per te Dei Mater; nemo domum per misericórdiam consecútus, nisi per te, o digna, quæ Deum cáperes. Quis enim tantópere peccatóres deféndit? Tu autem, quæ matérna auctoritáte in Deum pólleas, étiam iis qui enórmiter peccant, exímian remissiónis gratiam concílias. Non enim potes non exaudíri, cum Deus, ut veræ ac intemerátæ Matri suæ, quoad ómnia, et per ómnia, et in ómnibus, morem gerat. Hinc mérito, afflíctus quisque ad te cónfugit; infírmus tibi adhaéret; bello petítus te hóstibus oppónit.
 
 [Lectio M043]
@@ -98,7 +93,7 @@ Porta hæc clausa erit, et non aperiétur. Pulchre quidam portam clausam, per qu
 
 [Lectio M044]
 Sermo sancti Bernárdi Abbátis
-! 
+!.
 Quid ad Maríam accédere trépidet humána fragílitas? Nihil austérum in ea, nihil terríbile; tota suávis est. Revólve diligéntius evangélicæ históriæ sériem univérsam: et si quid forte increpatórium, si quid durum, si quod dénique signum vel ténuis indignatiónis occúrrerit in María, de cétero suspéctam hábeas, et accédere vereáris. Quod si, ut vere sunt, plena magis ómnia pietátis et grátiæ, plena mansuetúdinis et misericórdiæ, quæ ad eam pértinent, invéneris, age grátias ei, qui talem tibi mediatrícem benigníssima miseratione provídit, in qua nihil possit esse suspéctum. Dénique ómnibus ómnia facta est, sapiéntibus et insipiéntibus copiosíssima caritáte debitrícem se fecit. Omnibus misericórdiæ sinum ejus áperit, ut de plenitúdine ejus accípiant univérsi, captívus redemptiónem, æger curatiónem, tristis consolatiónem, peccátor véniam, justus grátiam, Angelus lætítiam. Ipsa prætérita non díscutit mérita, sed ómnibus sese exorábilem, ómnibus clementíssimam præbet, ómnium dénique necessitátes amplíssimo quodam miserátur afféctu.
 
 [Lectio M051]
@@ -106,37 +101,37 @@ Quid ad Maríam accédere trépidet humána fragílitas? Nihil austérum in ea, 
 
 [Lectio M052]
 Ex Tractátu S. Augustini Epíscopi de Sýmbolo ad Catechúmenos
-! 
+!.
 Per féminam mors, per féminam vita: per Hevam intéritus, per Mariam salus. Illa, corrúpta, secúta est seductórem: hæc, íntegra, péperit Salvatórem. Illa póculum a serpénte propinátum libénter accépit et viro trádidit, ex quo simul mereréntur occídi: hæc, grátia cælésti désuper infúsa, vitam prótulit, per quam caro mortua possit resuscitári. Quis est qui hæc operátus est, nisi Vírginis Fílius et vírginum Sponsus, qui áttulit Matri fecunditátem, sed non ábstulit integritátem?
 
 [Lectio M053]
 Sermo sancti Cyrílli Epíscopi Alexandríni
-! 
+!.
 Sit tibi, sancta Dei Mater, laus. Mater et Virgo, inter mulíeres; ejus parens, qui benedíctus venit in nómine Dómini. Per te Trínitas sanctificátur: per te Crux pretiósa celebrátur et adorátur in toto orbe terrárum. Per te exsúltat cælum, lætántur Angeli et Archángeli, fugántur dǽmones, et homo ipse ad cælum revocátur. Per te omnis creatúra idolórum erróre deténta, convérsa est ad agnitiónem veritátis, et fidéles hómines ad sanctum Baptísma pervenérunt, atque in toto orbe terrárum constrúctæ sunt ecclésiæ. Te adiutríce, gentes véniunt ad pæniténtiam. Per te unigénitus Dei Fílius, vera illa lux, effúlsit sedéntibus in ténebris et umbra mortis.
 
 [Lectio M054]
 Sermo sancti Bernárdi Abbátis
-! 
+!.
 Miráre ergo utrúmlibet, et élige quid ámplius miréris, sive Fílii benigníssimam dignatiónem, sive Matris excellentíssimam dignitátem. Utrínque stupor, utrínque miráculum. Et quod Deus féminæ obtémperet, humílitas absque exémplo; et quod Deo fémina principétur, sublímitas sine sócio. In láudibus vírginum singuláriter cánitur quod sequúntur Agnum quocúmque íerit. Quibus ergo láudibus júdicas dignam, quæ étiam præit? Disce, homo, obedíre; disce, terra, subdi; disce, pulvis, obtemperáre. De auctóre tuo loquens Evangelísta. Et erat, inquit, súbditus illis; haud dubium quin Maríæ et Joseph. Erubésce, supérbe cinis! Deus se humíliat, et tu te exáltas? Deus se homínibus subdit, et tu, dominári géstiens homínibus, tuo te præpónis auctóri?
 
 [Lectio M061]
 Sermo sancti Bernárdi Abbáti
-! 
+!.
 Veheménter quidem nobis, dilectíssimi, vir unus et múlier una nocuére; sed, grátias Deo, per unum nihilóminus virum et mulíerum unam ómnia restaurántur, nec sine magno fǽnore gratiárum. Neque enim sicut delíctum, ita et donum; sed excédit damni æstimatiónem benefícii magnitúdo. Sic nimírum prudentíssimus et clementíssimus ártifex, quod quassátum fúerat, non confrégit, sed utílius omníno refécit, ut vidélicet nobis novum formáret Adam ex véteri, Hevam transfúnderet in Maríam.
 
 [Lectio M062]
 Sermo sancti Bernárdi Abbátis
-! 
+!.
 Felix María, cui nec humílitas défuit, nec virgínitas! Et quidem singuláris virgínitas, quam non temerávit, sed honorávit fecúnditas. Et nihilóminus speciális humílitas, quam non ábstulit, sed éxtulit fecúnda virgínitas: et incomparábilis prorsus fecúnditas, quam virgínitas simul comitátur et humílitas. Quid horum non mirábile? quid non incomparábile? quid non singuláre? Mirum vero, si non hǽsitas, in horum ponderatióne, quid tua júdices dignius admiratióne, utrum vidélicet pótius stupénda sit fecúnditas in Vírgine, an in Matre intégritas: sublímitas in prole, an cum tanta sublimitáte humílitas: nisi quod indubitánter horum síngulis præferénda sunt simul cuncta, et incomparabíliter excelléntius est atque felícius ómnia percepísse, quam áliqua. Et quid mirum, si Deus, qui mirábilis cérnitur, et légitur in Sanctis suis, mirabiliórem se exhíbuit in Matre sua? Venerámini ergo, cónjuges, in carne corruptíbili carnis integritátem: vos sacræ vírgines in Vírgine fecunditátem. Imitámini, omnes hómines, Dei Matris humilitátem.
 
 [Lectio M063]
 Sermo sancti Augustíni Epíscopi
-! 
+!.
 O beáta María, quis tibi digne váleat jura gratiárum ac laudum præcónia repéndere, quæ singulári tuo assénsu mundo succurrísti pérdito? Quas tibi laudes fragílitas humáni géneris persólvat, quæ solo tuo commércio recuperándi áditum invénit? Accipe ítaque quascúmque exíles, quascúmque méritis tuis ímpares gratiárum actiónes: et cum suscéperis vota, culpas nostras orándo excúsa. Admítte nostras preces intra sacrárium exauditiónis et repórta nobis antídotum reconciliatiónis.
 
 [Lectio M064]
 Sermo sancti Augustíni Epíscopi
-! 
+!.
 Sit per te excusábile quod per te ingérimus; fiat impetrábile quod fida mente póscimus. Accípe quod offérimus, redóna quod rogámus, excúsa quod timémus, quia tu es spes única peccatórum. Per te sperámus véniam delictórum et in te, beatíssima, nostrórum est expectátio præmiórum. Sancta María, succúrre míseris; juva pusillánimes; réfove flébiles; ora pro pópulo; intérveni pro clero; intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam commemoratiónem.
 
 [Lectio M071]
@@ -149,12 +144,12 @@ Sit vobis tamquam in imágine descrípta virgínitas vitáque beátæ: Maríæ, 
 
 [Lectio M073]
 Sermo sancti Bedæ Venerábilis Presbýteri
-! 
+!.
 Magníficat ánima mea Dóminum; et exultávit spíritus meus in Deo salutári meo. Quæ cum ómnibus perféctis verba recte convéniant, máxime tamen ea beátam Dei Genitrícem proférre decébat, quæ mériti privilégio singuláris spirituáli ipsíus dilectióne flagrábat, cujus corporáli conceptióne gaudébat. Quæ jure in Jesu, id est, in salutári suo speciáli præ céteris sanctis gáudio pótuit exultáre, quia quem perpétuum salútis auctórem nóverat, hunc ipsum temporáli ortu de carne sua nascitúrum esse sciébat quátenus in una eadémque persóna veráciter suus et filius esset et Dóminus.
 
 [Lectio M074]
 Sermo sancti Bedæ Venerábilis Presbýteri
-! 
+!.
 Quam vília de seípsa sénserit édocet, et quod omne quidquid boni mériti hábuit, hoc supérna grátia largiénte percéperit, dicens: Quia respéxit humilitátem ancíllæ suæ: ecce enim ex hoc beátam me dicent omnes generatiónes. Húmilem quippe Christi ancíllam suo judício se fuisse demónstrat, sed respéctu se grátiæ celéstis repénte sublimátam pronúntiat, atque in tantum glorificátam, ut sua beatitúdo præcípua mérito cunctárum géntium voce mirétur. Addidit étiam adhuc divínæ pietátis múnera, quæ mirabíliter accépit, digna gratiárum actióne colláudans. Quia fecit mihi magna qui potens est, et sanctum nomen ejus. Nihil ergo suis méritis tríbuit, quæ totam magnitúdinem ad illíus donum refert, qui essentiáliter potens et magnus exístens, fidéles suos de parvis atque infírmis fortes fácere consuévit, et magnos.
 
 [Lectio M081]
@@ -165,12 +160,12 @@ Quam vília de seípsa sénserit édocet, et quod omne quidquid boni mériti há
 
 [Lectio M083]
 Sermo sancti Bernárdi Abbátis
-! 
+!.
 Tempus loquéndi est omni carni, cum assúmitur incarnáti Verbi Mater in cælum, nec cessáre debet a láudibus humána mortálitas, cum hóminis sola natúra supra immortáles spíritus exaltátur in Vírgine. Sed de ejus glória nec silére devótio pátitur, nec dignum áliquid stérilis concípere cogitátio, aut inerrudíta potest locútio parturíre. Hinc est, quod et ipsi cæléstis cúriæ príncipes in consideratióne tantæ novitátis clamant non sine admiratióne: Quæ est ista, quæ ascéndit de desérto delíciis áffluens? Quidni delícias díxerim, virginitátis decus cum múnere fecunditátis, humilitátis insígne distillántem caritátis favum, misericórdiæ víscera, plentitúdinem grátiæ, prærogatívam glóriæ singuláris?
 
 [Lectio M084]
 Sermo sancti Bernárdi Abbátis
-! 
+!.
 Ascéndens de desérto Regína mundi, étiam Angelis sanctis, ut canit Ecclésia, speciósa facta est, et suávis in delíciis suis. Désinant tamen desérti hujus mirári delícias, quia Dóminus dedit benignitátem, et terra nostra dedit fructum suum. Quid mirántur, de terra desérta Maríam ascéndere delíciis affluéntem? Miréntur pótius páuperem Christum de cæléstis regni plenditúdine descendéntem; longe enim amplióri miráculo dignum vidétur, Dei Fílium paulo minus ab Angelis minorári, quam Dei Matrem super Angelos exaltári. Illíus síquidem exinanítio, facta est replétio nostra: illíus misériæ, mundi delíciæ sunt. Dénique, cum dives esset, propter nos pauper factus est, ut nos ejus inópia ditarémur.
 
 [Lectio M091]
@@ -178,17 +173,17 @@ Ascéndens de desérto Regína mundi, étiam Angelis sanctis, ut canit Ecclésia
 
 [Lectio M092]
 Sermo sancti Petri Chrysólogi
-! 
+!.
 Beáta María Virgo, inter hómines audíre sola méruit præ ómnibus: invenísti grátiam. Quantam? Quantam díxerat: plenam. Et vere plenam, quæ largo imbre totam fúnderet et infúnderet creatúram: invenísti enim grátiam apud Deum. Hæc cum dicit, et ipse Angelus mirátur, aut féminam tantum, aut omnes hómines vitam meruísse per féminam: stupet Angelus, totum Deum veníre intra virginális úteri angústias, cui tota simul angústa est creatúra. Hinc est, quod remorátur Angelus, hinc est, quod vírginem vocat de mérito, de grátia compéllat, vix causam prodit audiénti, sane ut sensum promóveat, vix longa trepidatióne compónit.
 
 [Lectio M093]
 Sermo sancti Bernárdi Abbátis
-! 
+!.
 Cum in sua æstimatióne tam húmilis esset María, nihilóminus et in promissiónis credulitáte magnánimis, ut quæ nihil áliud quam exíguam sese reputábat ancíllam, ad incomprehensíbile hoc mystérium nullátenus se dubitáret eléctam, et veram Dei et hóminis Genetrícem créderet mox futúram. Agit hoc nimírum in córdibus electórum grátiæ prærogatíva divínæ, ut eos nec humílitas pusillánimes fáciat, nec magnanímitas arrogántes: magis autem cooperéntur sibi, ut non solum nulla ex magnanimitáte subíntret elátio, sed hinc máxime provehátur humílitas: ut inveniántur eo ámplius timoráti, et largitóri múnerum non ingráte, ac vicíssim ex occasióne humilitátis pusillanímitas nulla subrépat; sed quo minus de sua quisque vel in mínimis præsúmere consuévit, eo ámplius étiam in magnis quibúsque de divína virtúte confídant.
 
 [Lectio M094]
 Sermo sancti Bernárdi Abbátis
-! 
+!.
 Obsecro vos, filíoli, æmulámini mansuetúdinem, si Maríam dilígitis; si conténditis ei placére, æmulámini modéstiam ejus. Nihil enim tam idóneum hómini, nihil tam cóngruum christiáno, maximésque mónachum nihil adeo decet. Et quidem manifésta satis in Vírgine ex hac ipsa manuetúdine virtus humilitátis elúcet. Nimírum collactáneæ sunt humílitas et manuetúdo. Sicut enim mater præsumptiónis elátio, sic manuetúdo vera nonnísi ex vera humilitáte procédit.
 
 [Lectio M101]
@@ -196,17 +191,17 @@ Obsecro vos, filíoli, æmulámini mansuetúdinem, si Maríam dilígitis; si con
 
 [Lectio M102]
 Sermo sancti Bernárdi Abbátis
-! 
+!.
 Cui serváta est victória, nisi Maríæ? Ipsa procul dúbio caput contrívit venenátum, quæ omnímodam malígni suggestiónem tam de carnis illécebra, quam de mentis supérbia dedúxit ad níhilum. Quam vero áliam Sálomon requirébat, cum dicébat: Mulíerem fortem quis invéniet? Nóverat quippe vir sápiens hujus sexus infirmitátem, frágile corpus, lúbricam mentem. Quia tamen et Deum légerat promisísse, et ita vidébat congrúere, ut qui vícerat per féminam, vincerétur per ipsam, veheménter admírans aiébat: Mulíerem fortem quis invéniet? Quod est dícere: Si ita de manu féminæ pendet et nostra ómnium salus, et innocéntiæ restitútio, et de hoste victória; fortis omníno necésse est ut provideátur, quæ ad tantum opus possit esse idónea.
 
 [Lectio M103]
 Sermo sancti Bernárdi Abbátis
-! 
+!.
 Totis ergo medúllis córdium, totis præcordiórum afféctibus, et votis ómnibus Maríam hanc venerémur; quia sic est volúntas ejus, qui totum nos habére vóluit per Maríam. Hæc, inquam, volúntas ejus est, sed pro nobis. Filíoli, hæc peccatórum scala, hæc mea máxima fidúcia est, hæc tota rátio spei meæ. Quid enim? Potéstne Fílius aut repéllere, aut sustinére repúlsam? Non audíre, aut non audíri Fílius potest? Neutrum plane. Invenísti, ait Angelus, grátiam apud Deum. Felíciter. Semper hæc invéniet grátiam, et sola est grátia qua egémus; nimírum sola est grátia, qua salvámur. Quid nos ália concupíscimus, fratres? Quærámus grátiam, et per Maríam quærámus, quia quod quærit, ínvenit, et frustrári non potest. Quærámus grátiam, sed grátiam apud Deum: nam apud hómines grátia fallax. Quærant álii méritum, nos inveníre grátiam studeámus. Quid enim? Num grátiæ est quod hic sumus? Profécto misericórdiæ Dómini est, quod non sumus consúmpti nos.
 
 [Lectio M104]
 Sermo sancti Bernárdi Abbátis
-! 
+!.
 Quid dicébas, o Adam? Múlier quam dedísti mihi, dedit mihi de ligno, et comédi. Verba malítiæ sunt hæc, quibus magis áugeas quam déleas culpam. Verúmtamen Sapiéntia vicit malítiam. Rédditur nempe fémina pro fémina, prudens pro fátua, húmilis pro supérba; quæ pro lingo mortis gustum tibi pórrigat vitæ, et pro venenóso cibo illo amaritúdinis, dulcédinem páriat fructus ætérni. Muta ergo iníque excusatiónis verbum in vocem gratiárum actiónis, et dic: Dómine, múlier quam dedísti mihi, dedit me de ligno vitæ, et comédi; et dulce factum est super mel ori meo, quia in ipso vivificásti me. Ecce enim ad hoc missus est Angelus ad Vírginem. O admirándam et omni honóre digníssimam Vírginem! O féminam venerándam, super omnes féminas admirábilem, paréntum reparatrícem, posterórum vivificatrícem!
 
 [Lectio M111]
@@ -227,7 +222,7 @@ Sermo sancti Sophrónii Epíscopi
 
 [Lectio M121]
 Sermo sancti Bernárdi Abbátis
-! 
+!.
 Missus est Angelus ad Vírginem; vírginem carne, vírginem mente, vírginem professióne, vírginem dénique, qualem descríbit Apóstolus, mente et córpore sanctam; nec nóviter, nec fortuíto invéntam, sed a sǽculo eléctam, ab Altíssimo præcógnitam, et sibi præparátam, ab Angelis servátam, a Pátribus præsignátam, a Prophétis promíssam. Ut pauca loquar de plúribus, quam tibi áliam prædixísse Deus vidétur, quando ad serpéntem ait: Inimicítias ponam inter te et mulíerem? Et si adhuc dúbitas an de María díxerit, audi quod séquitur: Ipsa cónteret caput tuum. Cui hæc serváta victória est, nisi Maríæ?
 
 [MM Capitulum]

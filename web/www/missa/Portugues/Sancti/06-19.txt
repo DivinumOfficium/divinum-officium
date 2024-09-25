@@ -1,10 +1,6 @@
 [Rank]
 S. Julianae de Falconeriis Virginis;;Duplex;;3;;vide C6b
 
-[Rule]
-vide C6b;
-Gloria
-
 [Comment]
 # 19 VI – S. Juliana de Falconéri, Virgem
 ! 3 classe
@@ -14,45 +10,6 @@ S.S. Gervásio e Protásio, Mártires
 ! Comemoração
 ! Paramentos vermelhos
 
-[Introitus]
-@Commune/C6b:Introitus
-
 [Oratio]
 Ó Deus, que com o preciosíssimo Corpo de vosso Filho Vos dignastes sustentar miraculosamente a B. Juliana, vossa Virgem, quando ela sofreu a última doença, concedei-nos, pelos seus méritos e intercessão, Vos suplicamos, que também na nossa agonia mortal sejamos alimentados e fortificados com este mesmo Corpo e conduzidos à pátria celestial.
 $Per eundem
-
-[Lectio]
-@Commune/C6b:Lectio
-
-[Graduale]
-@Commune/C6b:Graduale
-
-[Evangelium]
-@Commune/C6b:Evangelium
-
-[Offertorium]
-@Commune/C6b:Offertorium
-
-[Secreta]
-@Commune/C6b:Secreta
-
-[Communio]
-@Commune/C6b:Communio
-
-[Postcommunio]
-@Commune/C6b:Postcommunio
-
-[Commemoratio Oratio]
-! S.S. Gervásio e Protásio, Mártires
-Ó Deus, que nos alegrais com a solenidade anual dos vossos Santos Mártires Gervásio e Protásio, concedei-nos propício que sejamos inflamados pelos exemplos daqueles cujos méritos nos enchem de alegria celestial.
-$Per Dominum
-
-[Commemoratio Secreta]
-! S.S. Gervásio e Protásio, Mártires
-Deixai-Vos aplacar com os dons que Vos oferecemos, Senhor, e por intercessão dos vossos Santos Mártires defendei-nos de todos os perigos.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! S.S. Gervásio e Protásio, Mártires
-Que esta comunhão nos purifique dos nossos crimes, Senhor, e que por intercessão dos vossos Santos Mártires Gervásio e Protásio nos faça participantes do remédio celestial.
-$Per Dominum

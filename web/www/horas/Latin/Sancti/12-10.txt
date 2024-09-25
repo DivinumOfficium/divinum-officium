@@ -1,8 +1,8 @@
-[Rank](rubrica tridentina aut rubrica divino)
-De III die infra Octavam Conceptionis Immaculatæ Beatæ Mariæ Virginis;;Semiduplex;;2.19;;vide Sancti/12-08
-
-[Rank](rubrica 1955)
+[Rank] (rubrica 1955)
 S. Melchiadis Papæ et Martyris;;Simplex;;1.1;;vide C2
+
+[Rank] (rubrica tridentina aut rubrica divino)
+De III die infra Octavam Conceptionis Immaculatæ Beatæ Mariæ Virginis;;Semiduplex;;2.19;;vide Sancti/12-08
 
 [Rule]
 vide Sancti/12-08;
@@ -10,9 +10,13 @@ vide Sancti/12-08;
 CPapaM=Melchíadem;
 Doxology=Nat
 
-[Rule](rubrica 1955)
+[Rule] (rubrica 1955)
 vide C2;
 OPapaM=Melchíadem;
+
+[Commemoratio]
+!Commemoratio S. Melchiadis Papæ et Martyris
+@Commune/C2:Oratio Gregem
 
 [Lectio4]
 Ex Bulla dogmatica Pii Papæ IX
@@ -40,7 +44,3 @@ Quid dicébas, o Adam? Múlier quam dedísti mihi, dedit mihi de ligno, et comé
 [Lectio9]
 Quam tibi áliam prædixísse Deus vidétur, quando ad serpéntem ait: Inimicítias ponam inter te et mulíerem? Et si adhuc dúbitas, quod de María díxerit, audi quod séquitur: Ipsa cónteret caput tuum. Cui hæc serváta victória est, nisi Maríæ? Ipsa procul dúbio caput contrívit venenátum, quæ omnimódam malígni suggestiónem tam de carnis illécebra, quam de mentis supérbia dedúxit ad níhilum. Quam vero áliam Sálomon requirébat, cum dicébat: Mulíerem fortem quis invéniet? Nóverat quippe vir sápiens hujus sexus infirmitátem, frágile corpus, lúbricam mentem. Quia tamen et Deum légerat promisísse, et ita vidébat congrúere, ut qui vícerat per féminam, vincerétur per ipsam, veheménter admírans ajébat: Mulíerem fortem quis invéniet? Quod est dícere: si ita de manu féminæ pendet et nostra ómnium salus, et innocéntiæ restitútio, et de hoste victória: fortis omníno necésse est ut provideátur, quæ ad tantum opus possit esse idónea.
 &teDeum
-
-[Commemoratio]
-!Commemoratio S. Melchiadis Papæ et Martyris
-@Commune/C2:Oratio Gregem

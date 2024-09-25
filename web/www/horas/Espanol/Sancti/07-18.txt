@@ -1,13 +1,15 @@
 [Rank]
 S. Camilli de Lellis Confessoris;;Duplex;;3;;vide C5
 
-[Rule]
-vide C5;mtv
-9 lectiones;
-m.t.v.
-
 [Oratio]
 Oh Dios, que adornaste a San Camilo con la singular prerrogativa de la caridad para socorrer a las almas que luchan en el último combate: te suplicamos que, por sus méritos, nos infundas el espíritu de tu amor, para vencer en la hora de nuestra muerte al enemigo, a fin de llegar a la consecución de la celestial corona.
+$Per Dominum
+
+[Commemoratio]
+!Conmemoración de Sta. Sinforosa y sus siete hijos, Mártires
+@Commune/C3:Oratio proper
+$Oremus
+v. ¡Oh Dios, que nos concedes celebrar la solemnidad de tus santos mártires Sinforosa y sus siete hijos!; danos el gozo de su compañía en la eterna bienaventuranza.
 $Per Dominum
 
 [Lectio4]
@@ -18,6 +20,10 @@ Fue a Roma, siendo admitido en el hospital de incurables, cuya administración s
 
 [Lectio6]
 Ligado con lazos tan estrechos al servicio de los enfermos, al cual se consagró noche y día hasta su postrer suspiro, Camilo desplegó un celo admirable para atender a todas sus necesidades, sin retroceder ante la fatiga, ni ante el peligro de la vida. Consagrábase por entero a todos, y se ocupaba en los más bajos empleos con ánimo alegre y resuelto, con la más humilde condescendencia; las más de las veces los desempeñaba de rodillas, viendo al mismo Jesucristo en la persona de los enfermos. Para estar siempre en disposición de socorrer las miserias, abandonó el gobierno supremo de su Orden, y renunció a las delicias celestiales que inundaban su espíritu durante la contemplación. Su amor paternal hacia los pobres se puso de manifiesto durante una epidemia que afligió a Roma tras un período de hambruna, y también cuando una terrible peste asoló a Nola, en Campania. Era tanta la caridad en que ardía para con Dios y para con el prójimo, que mereció le dieran el nombre de ángel y que los mismos Ángeles le socorrieran en medio de diversos peligros que le amenazaron durante sus viajes. Dotado del don de profecía y de la gracia de curaciones, penetraba en el arcano de los corazones; con sus plegarias obtuvo la multiplicación de los víveres y la conversión del agua en vino. Agotado por las vigilias, ayunos y continuas fatigas, hasta el punto de no tener al parecer más que la piel y los huesos, sufrió cinco graves enfermedades, a las que llamaba las misericordias del Señor. A la edad de 65 años, mientras pronunciaba estas palabras: “Que la faz de Jesucristo se muestre a ti dulce y gozosa”, se durmió en el Señor, confortado por los Sacramentos de la Iglesia, en Roma, en la hora que él había anunciado, el día anterior a los idus de julio del año 1614. Esclarecido con muchos milagros, Benedicto XIV le inscribió entre los Santos. León XIII, a petición de los Obispos, por decreto de la Congregación de Ritos, lo declaró celestial Patrón de todos los hospitales y enfermos del mundo, y mandó se le invocara en las Letanías de los agonizantes.
+
+[Lectio94]
+Camilo, de la familia noble de los Lelli, nació en Bucchianico, Chieti. De joven ingresó al ejército y se entregó por un tiempo a los vicios. Pero se llenó de tristeza por haber ofendido a Dios, y solicitó a los frailes capuchinos que lo admitieran. Su deseo fue otorgado esta vez, y nuevamente más tarde, cuando habiendo salido de la Orden, buscó la readmisión. Pero en ambas ocasiones una úlcera infectada en su pierna, que lo había afligido por un tiempo, estalló, y se sometió humildemente a sus superiores, deshaciéndose dos veces del hábito de la Orden que había pedido y recibido. Fue a Roma y allí fue ordenado sacerdote. Luego puso los primeros cimientos de la Congregación de Clérigos Regulares al servicio de los enfermos, cuyos miembros se unen mediante un cuarto y difícil voto de servir a los enfermos incluso cuando están infectados por la peste. Desgastado por ayunos y trabajos constantes, y por cinco largas enfermedades a las que llamó las misericordias del Señor y que soportó con gran fortaleza, murió en el Señor el 14 de julio de 1614, a la edad de 65 años. León XIII lo proclamó el patrón celestial de todos los hospitales y de los enfermos, y ordenó que su nombre fuera invocado en la letanía de los moribundos.
+&teDeum
 
 [Lectio7]
 Lectura del Santo Evangelio según San Juan
@@ -31,22 +37,11 @@ Homilía de San Agustín, Obispo.
 [Lectio8]
 ¿ Qué puede faltar allí donde existe la caridad? ¿Pero qué puede haber de aprovechable allí donde no existe? El demonio cree, pero no ama; mas el hombre que no cree, tampoco ama. El hombre que no ama, en vano esperaría, por más que no se le haya negado toda esperanza de perdón; mas el que ama, no puede desesperar. Así, donde se halla la caridad se hallan también la fe y la esperanza; y donde se halle el amor al prójimo se halla también el amor de Dios. Y en efecto; ¿cómo amaría al prójimo como a sí mismo aquel que no ama a Dios? No puede decirse que se ame a sí mismo, puesto que siendo impío es amigo de la iniquidad. Ahora bien: el que ama la iniquidad, no ama a su alma, sino que, por el contrario, la odia.
 
-[Lectio93]
-!Conmemoración de Sta. Sinforosa y sus siete hijos, Mártires
-Sinforosa, natural de Tívoli, esposa del mártir Getulio, tuvo de él siete hijos: Crescendo, Julián, Nemesio, Primitivo, Justino, Ertacteo y Eugenio, todos los cuales fueron reducidos a prisión, junto con su madre, bajo el emperador Adriano, por haber confesado la fe cristiana. Sometida su piedad a la prueba de múltiples y variados suplicios, se mantuvo invencible. Aquella madre que había sido para sus hijos maestra en la fe, fue también para ellos a manera de guía que les precedió en el martirio. La arrojaron al río con una piedra atada al cuello; su hermano Eugenio encontró su cuerpo y le dio sepultura. Al día siguiente, día 18 de julio, los siete hermanos fueron atados a sendos palos, y martirizados de diversas maneras; a Crescendo le atravesaron la garganta con un hierro; a Julián, el pecho; a Nemesio, el corazón con una lanza; a Primitivo, el vientre; a Justino le cortaron miembro tras miembro; Estacteo fue azotado, y a Eugenio le seccionaron el cuerpo en dos pedazos. Así fueron inmoladas estas ocho víctimas, sumamente gratas a Dios. Arrojados sus cuerpos en una hoya de la vía Tiburtina, a 9 millas de la ciudad, fueron poco después trasladados a Roma, y depositados en la Iglesia del Santo Ángel en la Piscina.
-&teDeum
-
 [Lectio9]
 Pongamos en práctica el precepto de amar al Señor, para que nos amemos también los unos a los otros y así cumpliremos todo lo demás porque todo se contiene en estos dos preceptos. Porque el amor de Dios se distingue del amor al prójimo, y el Salvador señaló esta distinción añadiendo: “Como Yo os he amado”; ahora bien: ¿por qué nos ama Cristo sino para que podamos reinar con Él? Amémonos los unos a los otros de manera que nos distingamos de los demás hombres, los cuales no pueden amar a los otros porque no se aman a sí mismos. Mas los que se aman a sí mismos con el fin de poseer a Dios, éstos se aman de verdad. Así, para amarse a sí mismo, hay que, ante todo amar a Dios. Este amor no se da en todos los hombres; pocos son los que se aman para que Dios lo sea todo para todos.
 &teDeum
 
-[Commemoratio]
+[Lectio93]
 !Conmemoración de Sta. Sinforosa y sus siete hijos, Mártires
-@Commune/C3:Oratio proper
-$Oremus
-v. ¡Oh Dios, que nos concedes celebrar la solemnidad de tus santos mártires Sinforosa y sus siete hijos!; danos el gozo de su compañía en la eterna bienaventuranza.
-$Per Dominum
-
-[Lectio94]
-Camilo, de la familia noble de los Lelli, nació en Bucchianico, Chieti. De joven ingresó al ejército y se entregó por un tiempo a los vicios. Pero se llenó de tristeza por haber ofendido a Dios, y solicitó a los frailes capuchinos que lo admitieran. Su deseo fue otorgado esta vez, y nuevamente más tarde, cuando habiendo salido de la Orden, buscó la readmisión. Pero en ambas ocasiones una úlcera infectada en su pierna, que lo había afligido por un tiempo, estalló, y se sometió humildemente a sus superiores, deshaciéndose dos veces del hábito de la Orden que había pedido y recibido. Fue a Roma y allí fue ordenado sacerdote. Luego puso los primeros cimientos de la Congregación de Clérigos Regulares al servicio de los enfermos, cuyos miembros se unen mediante un cuarto y difícil voto de servir a los enfermos incluso cuando están infectados por la peste. Desgastado por ayunos y trabajos constantes, y por cinco largas enfermedades a las que llamó las misericordias del Señor y que soportó con gran fortaleza, murió en el Señor el 14 de julio de 1614, a la edad de 65 años. León XIII lo proclamó el patrón celestial de todos los hospitales y de los enfermos, y ordenó que su nombre fuera invocado en la letanía de los moribundos.
+Sinforosa, natural de Tívoli, esposa del mártir Getulio, tuvo de él siete hijos: Crescendo, Julián, Nemesio, Primitivo, Justino, Ertacteo y Eugenio, todos los cuales fueron reducidos a prisión, junto con su madre, bajo el emperador Adriano, por haber confesado la fe cristiana. Sometida su piedad a la prueba de múltiples y variados suplicios, se mantuvo invencible. Aquella madre que había sido para sus hijos maestra en la fe, fue también para ellos a manera de guía que les precedió en el martirio. La arrojaron al río con una piedra atada al cuello; su hermano Eugenio encontró su cuerpo y le dio sepultura. Al día siguiente, día 18 de julio, los siete hermanos fueron atados a sendos palos, y martirizados de diversas maneras; a Crescendo le atravesaron la garganta con un hierro; a Julián, el pecho; a Nemesio, el corazón con una lanza; a Primitivo, el vientre; a Justino le cortaron miembro tras miembro; Estacteo fue azotado, y a Eugenio le seccionaron el cuerpo en dos pedazos. Así fueron inmoladas estas ocho víctimas, sumamente gratas a Dios. Arrojados sus cuerpos en una hoya de la vía Tiburtina, a 9 millas de la ciudad, fueron poco después trasladados a Roma, y depositados en la Iglesia del Santo Ángel en la Piscina.
 &teDeum

@@ -1,16 +1,8 @@
 [Rank]
 Ss. Septem Fundatorum Ordinis Servorum B. M. V.;;Duplex;;3;;vide C5
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Ss. Septem Fundatorum Ordinis Servorum B. M. V.;;Duplex optional;;2;;vide C5
-
-[Rule]
-vide C5;;
-9 lectiones
-
-[Oratio]
-Signor Gesù Cristo, che per onorare la memoria dei dolori della tua Madre santissima hai arricchito la tua Chiesa, per mezzo dei sette beati Padri, della nuova famiglia dei Serviti: concedi benigno, che noi ci uniamo così al loro pianto, da goderne anche le gioie: 
-$Qui vivis
 
 [Versum 1]
 V. Questi erano uomini di cuore, e le loro opere di pietà non son venute meno.
@@ -18,6 +10,10 @@ R. La loro stirpe come la loro gloria non perirà.
 
 [Ant 1]
 Non scomparirà mai la tua lode, o Vergine Maria, dalla bocca degli uomini, i quali si ricorderanno eternamente della potenza del Signore, perché per loro tu non hai risparmiato la tua vita.
+
+[Oratio]
+Signor Gesù Cristo, che per onorare la memoria dei dolori della tua Madre santissima hai arricchito la tua Chiesa, per mezzo dei sette beati Padri, della nuova famiglia dei Serviti: concedi benigno, che noi ci uniamo così al loro pianto, da goderne anche le gioie: 
+$Qui vivis
 
 [Hymnus Matutinum]
 v. Mentre largamente infuriavan le guerre, e le città 
@@ -65,6 +61,10 @@ Dio mostrò con un miracolo quanto gli fosse accetto questo tenore di vita. Poic
 [Lectio6]
 Pertanto quei santi uomini, cui s'erano uniti numerosi compagni, cominciarono a percorrere le città e borgate d'Italia, principalmente della Toscana, ovunque predicando Cristo crocifisso, calmando le civili discordie e richiamando sul sentiero della virtù presso che innumerevoli traviati. Né solo l'Italia, ma la Francia altresì, la Germania e la Polonia furono oggetto delle loro fatiche evangeliche. In fine dopo aver sparso in lungo e in largo il buon odore di Cristo, e di essersi resi ancora illustri in portenti, se ne volarono al Signore. Ma come la vera fratellanza e la religione li aveva riuniti in vita in un solo e medesimo amore, così dopo morte li racchiuse una stessa tomba, ed ebbero una stessa venerazione nel popolo. Quindi Clemente XI e Benedetto XIII, sommi Pontefici, confermarono il culto reso loro costantemente da più secoli; e Leone XIII, dopo averne approvati i miracoli operati da Dio per loro intercessione e, dopo averli dichiarati venerabili, ebbe permesso di invocarli in comune, nel cinquantesimo anno del suo sacerdozio li arricchì degli onori dei Santi, e stabilì che ogni anno se ne celebrasse la memoria in tutta la Chiesa con Ufficio e Messa.
 
+[Lectio94]
+Nel secolo XIII sette nobili di Firenze si ritirarono in un rustico, per meditare incessantemente sulla passione di Gesù e sui dolori di Maria. I loro nomi sono: Bonfiglio dei Monaldi, Bonagiunta dei Manetti, Manetto Antellese, Amedeo degli Amedei, Uguccione degli Uguccioni, Sostegno dei Sostegni e Alessio Falconieri. Un venerdì santo apparve loro la vergine Maria e mostrò loro il modello di un vestito a lutto, affinché essi lo adottassero; inoltre fece loro comprendere che desiderava la fondazione di un ordine che si dedicasse a ricordare continuamente le sofferenze da lei patite sotto la croce del Signore. Allora essi fondarono l'ordine dei Servi di Maria, aiutati in ciò da san Pietro martire, frate domenicano. Presero poi a percorrere, assieme con altri compagni, città e paesi, per annunciare, con la parola e con l'esempio, Gesù crocifisso. Come in vita li aveva stretti tra loro uno stesso amore, così alla morte li ricongiunse uno stesso sepolcro, e anche il popolo li venerò tutti uniti. Perciò Clemente XI e Benedetto XIII riconobbero quest'unica venerazione; Leone XIII li inserì nel catalogo dei santi.
+&teDeum
+
 [Lectio7]
 @Commune/C1:Lectio7
 
@@ -73,10 +73,6 @@ Pertanto quei santi uomini, cui s'erano uniti numerosi compagni, cominciarono a 
 
 [Lectio9]
 @Commune/C1:Lectio9
-
-[Lectio94]
-Nel secolo XIII sette nobili di Firenze si ritirarono in un rustico, per meditare incessantemente sulla passione di Gesù e sui dolori di Maria. I loro nomi sono: Bonfiglio dei Monaldi, Bonagiunta dei Manetti, Manetto Antellese, Amedeo degli Amedei, Uguccione degli Uguccioni, Sostegno dei Sostegni e Alessio Falconieri. Un venerdì santo apparve loro la vergine Maria e mostrò loro il modello di un vestito a lutto, affinché essi lo adottassero; inoltre fece loro comprendere che desiderava la fondazione di un ordine che si dedicasse a ricordare continuamente le sofferenze da lei patite sotto la croce del Signore. Allora essi fondarono l'ordine dei Servi di Maria, aiutati in ciò da san Pietro martire, frate domenicano. Presero poi a percorrere, assieme con altri compagni, città e paesi, per annunciare, con la parola e con l'esempio, Gesù crocifisso. Come in vita li aveva stretti tra loro uno stesso amore, così alla morte li ricongiunse uno stesso sepolcro, e anche il popolo li venerò tutti uniti. Perciò Clemente XI e Benedetto XIII riconobbero quest'unica venerazione; Leone XIII li inserì nel catalogo dei santi.
-&teDeum
 
 [Capitulum Laudes]
 !1 Pet 4:13
@@ -153,10 +149,6 @@ ci riempi di santo coraggio,
 affinché possiam felicemente 
 seguir gli esempi dei padri.
 Amen.
-
-[Versum 3]
-V. Questi erano uomini di cuore, e le loro opere di pietà non son venute meno.
-R. La loro stirpe come la loro gloria non perirà.
 
 [Ant 3]
 Il loro nome * dura in eterno, e passa ai loro figli insieme colla gloria di essi santi uomini.

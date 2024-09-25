@@ -1,10 +1,6 @@
 [Rank]
 S. Nicolai de Tolentino Confessoris;;Duplex;;3;;vide C5
 
-[Rule]
-vide C5;
-9 lectiones
-
 [Oratio]
 Atiende, Señor, a las súplicas que te presentamos en la solemnidad del bienaventurado confesor Nicolás, para que los que desconfiamos de nuestra propia justicia, seamos auxiliados por las preces de aquel que consiguió agradarte.
 $Per Dominum
@@ -18,6 +14,10 @@ De adulto, inscrito ya en la milicia clerical, y siendo canónigo, habiendo oíd
 [Lectio6]
 Las asechanzas de Satanás, que no cesaba de atormentarle por distintos medios, hasta llegar a maltratarle a golpes, en nada disminuían su constancia en la oración. Durante los seis meses anteriores a su muerte, oyó todas las noches los conciertos angélicos, pregustando las delicias del Paraíso; penetrado de su dulzura, repetía las palabras del Apóstol: “Deseo morir, para vivir en Jesucristo”. Sus deseos se cumplieron el día cuatro de los idus de septiembre, como predijo a sus hermanos. Brilló con muchos milagros, aun tras su muerte, por los que, una vez comprobados, el Papa Eugenio IV le puso en el número de los Santos.
 
+[Lectio94]
+Nicolás, llamado Tolentino por vivir mucho tiempo en la ciudad del mismo nombre, nació en la aldea de Santo Ángel, Ancona, de padres devotos que lo obtuvieron por la oración e intercesión de San Nicolás. De niño mostró muchas virtudes, especialmente de abstinencia. Militó entre el clero y fue canónigo. Escuchó un sermón de un predicador de los Ermitaños de San Agustín sobre el desprecio del mundo e ingresó de inmediato en los agustinos. Aquí cumplió la regla religiosa estrictamente; ayunando, vistiendo ropa áspera, mortificando su cuerpo con disciplinas y cadenas, y sobresalió en todas las demás virtudes. Nunca aflojó en su celo por la oración, a pesar de que fue atormentado de varias maneras por el diablo que, incluso, le golpeaba. Cada noche durante seis meses antes de su muerte, escuchaba melodías angelicales; y al fin, habiendo predicho el día de su muerte, se durmió en el Señor. Famoso por sus milagros antes y después de su muerte, fue inscrito entre los Santos por Eugenio IV.
+&teDeum
+
 [Lectio7]
 @Commune/C5:Lectio7 in 2 loco
 
@@ -26,10 +26,6 @@ Las asechanzas de Satanás, que no cesaba de atormentarle por distintos medios, 
 
 [Lectio9]
 @Commune/C5:Lectio9 in 2 loco
-
-[Lectio94]
-Nicolás, llamado Tolentino por vivir mucho tiempo en la ciudad del mismo nombre, nació en la aldea de Santo Ángel, Ancona, de padres devotos que lo obtuvieron por la oración e intercesión de San Nicolás. De niño mostró muchas virtudes, especialmente de abstinencia. Militó entre el clero y fue canónigo. Escuchó un sermón de un predicador de los Ermitaños de San Agustín sobre el desprecio del mundo e ingresó de inmediato en los agustinos. Aquí cumplió la regla religiosa estrictamente; ayunando, vistiendo ropa áspera, mortificando su cuerpo con disciplinas y cadenas, y sobresalió en todas las demás virtudes. Nunca aflojó en su celo por la oración, a pesar de que fue atormentado de varias maneras por el diablo que, incluso, le golpeaba. Cada noche durante seis meses antes de su muerte, escuchaba melodías angelicales; y al fin, habiendo predicho el día de su muerte, se durmió en el Señor. Famoso por sus milagros antes y después de su muerte, fue inscrito entre los Santos por Eugenio IV.
-&teDeum
 
 [Commemoratio] (rubrica 1910)
 @Sancti/09-08:Octava

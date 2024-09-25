@@ -1,18 +1,8 @@
 [Rank]
 In Commemoratione S. Pauli Apostoli;;Duplex majus;;4;;ex C1
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Commemoratione S. Pauli Apostoli;;Duplex;;3;;vide C1
-
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
-Sub unica concl
-No prima vespera
 
 [Ant Vespera]
 I have planted, * Apollos watered, but God gave the increase, alleluia.
@@ -21,17 +11,18 @@ The grace of God which was bestowed upon me was not in vain, * but His grace abi
 In Damascus the governor * under Aretas the king was desirous to apprehend me; by the brethren in a basket was I let down by the wall, and so escaped I his hands, in the name of the Lord.
 Thrice was I beaten with rods, * once was I stoned, thrice I suffered shipwreck, for Christ's name's sake.
 
-[Capitulum Laudes]
-!2 Tim 4:7-8
-v. I have fought a good fight, I have finished my course, I have kept the faith. Henceforth there is laid up for me a crown of righteousness, which the Lord, the righteous Judge, shall give me at that day.
-$Deo gratias
-
 [Versum 1]
 V. O Holy Apostle Paul, thou art a chosen vessel unto God.
 R. To preach the Gospel throughout the whole world.
 
 [Ant 1]
 O Holy Apostle Paul, * Preacher of the truth, and Teacher of the Gentiles, pray for us to God Who hath chosen thee.
+
+[Oratio]
+O God, Who, through the preaching of the Blessed Apostle Paul, hast caused the light of the Gospel to shine gloriously among the Gentiles, we beseech thee that we who keep the Feast of his birth, may, now that he is with thee, feel to our comfort that his prayer availeth much with thee.
+$Per Dominum
+_
+@Sancti/01-25:Commemoratio4
 
 [Hymnus Matutinum]
 v. Our souls' great teacher, Paul, our guide in wisdom's ways,
@@ -173,14 +164,13 @@ R. And by the brethren in a basket was I let down by the wall.
 If thou wilt see how these words were brought to the proof in very deed, read the Book of the Acts of the Apostles. There thou wilt see how that oftentimes the Jewish people rose against the Apostles and gnashed on them with their teeth, but they, with dove-like guilelessness, gave them smooth answers, and turned away their wrath, and quenched their fury, and stopped their onset. When the Jews said Did not we straitly command you, that ye should not teach in this Name? although the Apostles could have worked any miracles they chose, yet they neither said nor did anything sharp, but answered them with all meekness Whether it be right in the sight of God to hearken unto you more than unto God, judge ye. (Acts v. 28 iv. 19.) Here thou hast the harmlessness of doves listen now to the wisdom of serpents We cannot but speak the things which we have seen and heard. (20.)
 &teDeum
 
+[Capitulum Laudes]
+!2 Tim 4:7-8
+v. I have fought a good fight, I have finished my course, I have kept the faith. Henceforth there is laid up for me a crown of righteousness, which the Lord, the righteous Judge, shall give me at that day.
+$Deo gratias
+
 [Ant 2]
 Thus saith the Lord: * Ye, which have followed Me, shall sit upon twelve thrones, judging the twelve tribes of Israel.
-
-[Oratio]
-O God, Who, through the preaching of the Blessed Apostle Paul, hast caused the light of the Gospel to shine gloriously among the Gentiles, we beseech thee that we who keep the Feast of his birth, may, now that he is with thee, feel to our comfort that his prayer availeth much with thee.
-$Per Dominum
-_
-@Sancti/01-25:Commemoratio4
 
 [Lectio Prima]
 !1 Cor 15:9-10

@@ -1,13 +1,8 @@
 [Rank]
-S. Martinæ Virginis et Martyris;;Semiduplex;;2;;vide C6b
-
-[Rule]
-vide C6b ;
-9 lectiones
+S. Martinæ Virginis et Martyris;;Semiduplex;;2;;vide C6
 
 [Oratio]
-O Dieu qui, parmi les autres miracles de votre puissance, avez donné au sexe faible la victoire du martyre, accordez-nous miséricordieusement, que fêtant la naissance céleste de la bienheureuse Martine, votre Vierge et Martyre, nous nous servions de ses exemples pour monter vers vous.
-$Per Dominum
+@Commune/C6::s/N\./Martine/
 
 [Hymnus Matutinum]
 v. Peuple de Rome, chantez le nom glorieux
@@ -55,6 +50,10 @@ Parmi ses bourreaux, quelques-uns, frappés par la nouveauté du miracle et sous
 [Lectio6]
 Exaspéré par ces prodiges et surtout par la constance de la Vierge, le juge ordonna de lui trancher la tête. Dès que la tête fut tombée, on entendit une voix du ciel qui appelait la Martyre au séjour des bienheureux. Alors la ville tout entière trembla, et de nombreux adorateurs des idoles se convertirent à la foi du Christ. Le corps sacré de Martine martyrisé sous le pontificat de saint Urbain I, et retrouvé sous celui d’Urbain VIII, dans une antique église dédiée à la sainte, près de la prison Mamertine, sur le versant du mont Capitolin, avec les corps des saints Martyrs Concorde, Épiphane et de leurs compagnons, fut replacé dans la même église reconstruite sur un meilleur plan et mieux décorée, en présence d’un grand concours de peuple, à la joie de la ville tout entière, avec la pompe des solennités religieuses.
 
+[Lectio94]
+Martine, vierge Romaine, née de race illustre et privée de ses parents dans un âge encore tendre, distribua ses grandes richesses aux pauvres, avec générosité. Sollicitée, sous l’empereur Alexandre, d’immoler aux faux dieux, elle dit toute son horreur pour ce crime infâme. C’est pourquoi elle fut torturée par divers genres de supplices et enfin condamnée aux bêtes, dans l’amphithéâtre. Elle en sortit divinement préservée de toute blessure et fut alors jetée dans un bûcher ardent qui ne lui fit pareillement aucun mal. Quelques-uns de ses bourreaux, frappés par la nouveauté du miracle, embrassant la foi du Christ, obtinrent la palme du martyre. Aux prières de Martine, Dieu accomplit un grand nombre de prodiges ; le juge exaspéré par ces prodiges et déconcerté par la constance de la vierge, ordonna de lui trancher la tête. C’était sous le règne du pape saint Urbain I. Le corps de Martine retrouvé sous le Pontificat d’Urbain VIII, dans une antique église dédiée à la sainte, près de la prison Mamertine, avec les corps des saints Martyrs Concorde, Épiphane et de leurs compagnons, fut replacé solennellement dans la même église mieux décorée, au milieu de la joie de la Ville tout entière.
+&teDeum
+
 [Hymnus Laudes]
 v. Protège le sol qui t'a vu naître ;
 Acccorde un repos paisible à la terre des Chrétiens ;
@@ -76,10 +75,3 @@ O Dieu, dont le bras soutient les Martyrs ;
 Unité, Trinité, donnez à vos serviteurs cette lumière
 Par laquelle vous daignez faire le bonheur des âmes.
 Ainsi soit-il.
-
-[Hymnus Vespera 3]
-@:Hymnus Laudes
-
-[Lectio94]
-Martine, vierge Romaine, née de race illustre et privée de ses parents dans un âge encore tendre, distribua ses grandes richesses aux pauvres, avec générosité. Sollicitée, sous l’empereur Alexandre, d’immoler aux faux dieux, elle dit toute son horreur pour ce crime infâme. C’est pourquoi elle fut torturée par divers genres de supplices et enfin condamnée aux bêtes, dans l’amphithéâtre. Elle en sortit divinement préservée de toute blessure et fut alors jetée dans un bûcher ardent qui ne lui fit pareillement aucun mal. Quelques-uns de ses bourreaux, frappés par la nouveauté du miracle, embrassant la foi du Christ, obtinrent la palme du martyre. Aux prières de Martine, Dieu accomplit un grand nombre de prodiges ; le juge exaspéré par ces prodiges et déconcerté par la constance de la vierge, ordonna de lui trancher la tête. C’était sous le règne du pape saint Urbain I. Le corps de Martine retrouvé sous le Pontificat d’Urbain VIII, dans une antique église dédiée à la sainte, près de la prison Mamertine, avec les corps des saints Martyrs Concorde, Épiphane et de leurs compagnons, fut replacé solennellement dans la même église mieux décorée, au milieu de la joie de la Ville tout entière.
-&teDeum

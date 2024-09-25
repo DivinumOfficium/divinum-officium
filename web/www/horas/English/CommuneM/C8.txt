@@ -32,14 +32,14 @@ R. Blessed art thou in the holy temple of thy glory that has been built
 V. Bless this house that I have built.
 R. To the praise and glory of your name O Lord.
 
-[Lectio10]
-@Commune/C8:Lectio8:s/Zacchaeus, .*//s
-
-[Lectio11]
-@Commune/C8:Lectio8:s/.* Zacchaeus, /Zacchaeus, /s
-
 [Responsory12]
 R. I saw the holy city, the new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband.
 *And I heard a great voice from the throne, saying: Behold the tabernacle of God with men, and he will dwell with them.
 V. And they shall be his people; and God himself with them shall be their God.
 R. And I heard a great voice from the throne, saying: Behold the tabernacle of God with men, and he will dwell with them.
+
+[Lectio10]
+@Commune/C8:Lectio8:s/Zacchaeus, .*//s
+
+[Lectio11]
+@Commune/C8:Lectio8:s/.* Zacchaeus, /Zacchaeus, /s

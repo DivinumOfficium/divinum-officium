@@ -1,10 +1,6 @@
 [Rank]
 S. Stephani Hungariae Regis Confessoris;;Semiduplex;;2;;vide C5
 
-[Rule]
-vide C5;mtv
-9 lectiones
-
 [Oratio]
 Concedi alla tua Chiesa, Dio onnipotente, che com'ella ebbe il tuo beato Confessore Stefano per suo propagatore mentre regnava in terra, così meriti d'averlo difensore ora ch'è nella gloria del cielo. 
 $Per Dominum
@@ -18,6 +14,10 @@ L'amore della preghiera lo portava a vegliare la più gran parte delle notti; e,
 [Lectio6]
 Animato da ardentissima devozione verso la Madre di Dio, costruì una vastissima chiesa in suo onore, e la dichiarò patrona dell'Ungheria; e la Vergine l'introdusse a sua volta in cielo il giorno medesimo della sua Assunzione, giorno che gli Ungheresi chiamano il giorno della Gran Signora, come aveva stabilito il santo re. Il suo corpo, che mandò un soavissimo odore e diede un liquore celeste, per ordine del Romano Pontefice fu poi trasferito in luogo più conveniente e riposto con maggior onore in mezzo a numerosi miracoli d'ogni genere. Il sommo Pontefice Innocenzo XI ne fissò la festa al 2 Settembre per l'insigne vittoria riportata, col soccorso di Dio, lo stesso giorno sui Turchi nell'assedio di Budapest dall'esercito di Leopolo Ieletto imperatore dei Romani e re d'Ungheria.
 
+[Lectio94]
+Stefano, re d'Ungheria, introdusse in Ungheria la fede di Cristo e il titolo di re. Ottenuta dal romano pontefice la corona reale, e consacrato re per ordine di lui, fece omaggio del suo regno alla sede apostolica. Con pietà e munificenza ammirabile fondò ospedali a Roma, a Gerusalemme e Costantinopoli. Eresse in Ungheria l'arcivescovado di Strigonia e dieci vescovadi. Grande fu la sua carità verso i poveri e l'assiduo amore per la preghiera. Animato da ardentissima devozione verso la Madre di Dio, costruì una vastissima chiesa in suo onore e la dichiarò patrona dell'Ungheria. La Vergine, a sua volta, l'introdusse in cielo il giorno medesimo della sua assunzione, giorno che gli Ungheresi chiamano della Gran Signora, come aveva stabilito il santo re. Il sommo pontefice Innocenzo XI ne fissò la festa al 2 settembre, giorno in cui l'esercito cristiano, col soccorso del santo re, ricuperò la città di Budapest che era stata assediata.
+&teDeum
+
 [Lectio7]
 @Commune/C5:Lectio7 in 3 loco
 
@@ -26,7 +26,3 @@ Animato da ardentissima devozione verso la Madre di Dio, costruì una vastissima
 
 [Lectio9]
 @Commune/C5:Lectio9 in 3 loco
-
-[Lectio94]
-Stefano, re d'Ungheria, introdusse in Ungheria la fede di Cristo e il titolo di re. Ottenuta dal romano pontefice la corona reale, e consacrato re per ordine di lui, fece omaggio del suo regno alla sede apostolica. Con pietà e munificenza ammirabile fondò ospedali a Roma, a Gerusalemme e Costantinopoli. Eresse in Ungheria l'arcivescovado di Strigonia e dieci vescovadi. Grande fu la sua carità verso i poveri e l'assiduo amore per la preghiera. Animato da ardentissima devozione verso la Madre di Dio, costruì una vastissima chiesa in suo onore e la dichiarò patrona dell'Ungheria. La Vergine, a sua volta, l'introdusse in cielo il giorno medesimo della sua assunzione, giorno che gli Ungheresi chiamano della Gran Signora, come aveva stabilito il santo re. Il sommo pontefice Innocenzo XI ne fissò la festa al 2 settembre, giorno in cui l'esercito cristiano, col soccorso del santo re, ricuperò la città di Budapest che era stata assediata.
-&teDeum

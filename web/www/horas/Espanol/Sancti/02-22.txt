@@ -4,40 +4,7 @@ In Cathedra S. Petri Apostoli Antiochiæ;;Duplex majus;;4;;ex C4
 [Rank] (rubrica 196)
 In Cathedra S. Petri Apostoli;;Duplex II classis;;5;;ex C4
 
-[Rule]
-ex C4;
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-Commemoratio3
-Sub unica concl
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
-
-[Ant Vespera]
-Este es el gran sacerdote * que agradó a Dios en su vida y fue hallado intachable.;;109
-Nadie lo iguala * en la gloria de observar la ley del Altísimo.;;110
-Por esto, Dios le juró * que su pueblo crecería.;;111
-Sacerdotes de Dios, * bendecid al Señor; siervos del Señor, cantad un himno a Dios.;;112
-Siervo bueno * y fiel, pasa al banquete de tu Señor.;;131
-
-[HymnusM Laudes]
-v. Pedro, Pastor feliz, oye propicio
-De voz humilde suplicante ruego:
-El vínculo fatal que labró el vicio,
-Diciendo una palabra, suelta luego:
-Tú que en la tierra las celestes puertas
-Abrir pudistes y cerrar abiertas.
-_
-Loor perpetuo, honra sublimada,
-Júbilo santo, gloria sempiterna,
-A la suprema Trinidad sagrada,
-Que en divina unidad rige y gobierna
-La tierra, el cielo y cuanto el orbe alcanza:
-Perpetua por los siglos su alabanza.
-Amén.
-
-[HymnusM Vespera]
+[Hymnus Vespera]
 v. Poder sublime, cargos eminentes,
 Pedro glorioso, ejerces en el suelo:
 Atas, desatas lazos diferentes;
@@ -51,7 +18,7 @@ Al Espíritu Santo loor tierno:
 Al uno y trino Dios, honor eterno.
 Amén.
 
-[Hymnus Vespera]
+[HymnusM Vespera]
 v. Poder sublime, cargos eminentes,
 Pedro glorioso, ejerces en el suelo:
 Atas, desatas lazos diferentes;
@@ -77,19 +44,6 @@ Tú eres el Pastor de las ovejas, * Príncipe de los Apóstoles, a ti se te han 
 $Qui vivis
 _
 @Sancti/02-22:Commemoratio4
-
-[Commemoratio4]
-!Conmemoración de S. Pablo Apóstol
-(más abajo se dice)
-Ant. ¡Oh Dios, que instruiste al mundo entero con la predicación del apóstol San Pablo!; concédenos, a cuantos celebramos hoy su recuerdo, caminar hacia ti, siguiendo sus ejemplos.
-_
-V. Tú eres el vaso de mi elección, San Pablo Apóstol.
-R. Predicador de la verdad por todo el mundo.
-_
-$Oremus
-(sed rubrica 1960 aut rubrica monastica hæc versus omittuntur)
-v. ¡Oh Dios, que instruiste al mundo entero con la predicación del apóstol San Pablo!; concédenos, a cuantos celebramos hoy su recuerdo, caminar hacia ti siguiendo sus ejemplos.
-$Per Dominum
 
 [Invit]
 Tú eres el Pastor de las ovejas, el Príncipe de los apóstoles: * A ti entregó Dios las llaves del reino de los cielos.
@@ -117,7 +71,7 @@ R. Y te entregué las llaves del reino de los cielos.
 6 Por lo cual exultáis, aunque ahora tengáis que entristeceros un poco en las diversas tentaciones, 
 7 para que vuestra fe probada, más preciosa que el oro, acrisolado por el fuego, aparezca digna de alabanza, gloria y honor en la revelación de Jesucristo, 
 8 a quien amáis sin haberlo visto, en quien ahora creéis sin verle, y os regocijáis con un gozo inefable y glorioso, 
-9 recibiendo el fruto de vuestra fe, la salud de las almas. 
+9 recibiendo el fruto de vuestra fe, la salud de las almas.
 
 [Responsory2]
 R. Simón Pedro, si me amas, apacienta mis ovejas. Señor, Tú sabes que te amo, 
@@ -129,7 +83,7 @@ R. Y doy mi alma por ti.
 !1 Pe 1:10-12
 10 Acerca de la cual inquirieron e investigaron los profetas que vaticinaron la gracia a vosotros destinada, 
 11 escudriñando qué y cuál tiempo indicaba el Espíritu de Cristo, que en ellos moraba y de antemano testificaba los padecimientos de Cristo y las glorias que habían de seguirlos. 
-12 A ellos fue revelado que no a sí mismos, sino a vosotros, servían con esto, que os ha sido anunciado ahora por los que os evangelizaron, movidos del Espíritu Santo, enviado del cielo, y que los mismos ángeles desean contemplar. 
+12 A ellos fue revelado que no a sí mismos, sino a vosotros, servían con esto, que os ha sido anunciado ahora por los que os evangelizaron, movidos del Espíritu Santo, enviado del cielo, y que los mismos ángeles desean contemplar.
 
 [Responsory3]
 R. Tú eres Pedro, y sobre esta piedra edificaré mi Iglesia, y las puertas del infierno no prevalecerán contra ella: 
@@ -177,7 +131,7 @@ En aquel tiempo: Viniendo Jesús al territorio de Cesarea de Filipo, preguntó a
 _
 Homilía de San León, Papa.
 !Sermón 3, en el aniversario de su elevación, después del principio.
-El Señor pregunta a los apóstoles lo que los hombres piensan de Él, y su respuesta es común en cuanto expresan la incertidumbre de los hombres. Pero tan pronto como interroga a sus discípulos sobre su propia convicción, el primero en dignidad, es el primero en confesar al Señor. Cuando le dijo: “Tú eres el Cristo, el Hijo de Dios vivo’’, Jesús le dijo: “Bienaventurado eres, Simón, hijo de Juan, porque no te lo reveló la carne ni la sangre". Es decir: Bienaventurado  porque mi Padre te ha instruido; no has sido engañado por las opiniones terrenales, sino que te ha iluminado la inspiración celestial; ni la carne ni la sangre te han dado mi conocimiento, sino Aquel cuyo único Hijo soy.
+El Señor pregunta a los apóstoles lo que los hombres piensan de Él, y su respuesta es común en cuanto expresan la incertidumbre de los hombres. Pero tan pronto como interroga a sus discípulos sobre su propia convicción, el primero en dignidad, es el primero en confesar al Señor. Cuando le dijo: “Tú eres el Cristo, el Hijo de Dios vivo’’, Jesús le dijo: “Bienaventurado eres, Simón, hijo de Juan, porque no te lo reveló la carne ni la sangre”. Es decir: Bienaventurado  porque mi Padre te ha instruido; no has sido engañado por las opiniones terrenales, sino que te ha iluminado la inspiración celestial; ni la carne ni la sangre te han dado mi conocimiento, sino Aquel cuyo único Hijo soy.
 
 [Responsory7]
 R. ¿Quién dicen los hombres que es el Hijo del hombre?, preguntó a sus discípulos. Y Pedro respondió, diciendo: Tú eres Cristo, el Hijo de Dios vivo. 
@@ -212,6 +166,22 @@ que gobierna el universo
 por los siglos eternos. 
 Amén.
 
+[HymnusM Laudes]
+v. Pedro, Pastor feliz, oye propicio
+De voz humilde suplicante ruego:
+El vínculo fatal que labró el vicio,
+Diciendo una palabra, suelta luego:
+Tú que en la tierra las celestes puertas
+Abrir pudistes y cerrar abiertas.
+_
+Loor perpetuo, honra sublimada,
+Júbilo santo, gloria sempiterna,
+A la suprema Trinidad sagrada,
+Que en divina unidad rige y gobierna
+La tierra, el cielo y cuanto el orbe alcanza:
+Perpetua por los siglos su alabanza.
+Amén.
+
 [Versum 2]
 V. Aclámenlo en la asamblea del pueblo.
 R. Alábenlo en el consejo de los ancianos.
@@ -225,3 +195,16 @@ R. Para que le ofrezcas un sacrificio de alabanza.
 
 [Ant 3]
 @Commune/C4:Ant 3 summi Pontificis
+
+[Commemoratio4]
+!Conmemoración de S. Pablo Apóstol
+(más abajo se dice)
+Ant. ¡Oh Dios, que instruiste al mundo entero con la predicación del apóstol San Pablo!; concédenos, a cuantos celebramos hoy su recuerdo, caminar hacia ti, siguiendo sus ejemplos.
+_
+V. Tú eres el vaso de mi elección, San Pablo Apóstol.
+R. Predicador de la verdad por todo el mundo.
+_
+$Oremus
+(sed rubrica 1960 aut rubrica monastica hæc versus omittuntur)
+v. ¡Oh Dios, que instruiste al mundo entero con la predicación del apóstol San Pablo!; concédenos, a cuantos celebramos hoy su recuerdo, caminar hacia ti siguiendo sus ejemplos.
+$Per Dominum

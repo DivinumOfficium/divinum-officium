@@ -4,13 +4,6 @@ Maternitatis Beatæ Mariæ Virginis;;Duplex 2 classis;;5.1;;ex C11
 [Rank] (rubrica 1960)
 Maternitatis Beatæ Mariæ Virginis;;Duplex 2 classis;;5;;ex C11
 
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-
 [Ant Vespera]
 Dichosa eres, * Virgen María, que has llevado al Creador de todas las cosas.;;109
 Has dado a luz * al que te creó y permaneces Virgen eternamente.;;112
@@ -68,7 +61,7 @@ Del libro del Eclesiástico
 8 Sola recorrí el círculo de los cielos y me paseé por las profundidades del abismo, 
 9 por las ondas del mar y por toda la tierra. 
 10 En todo pueblo y nación imperé; 
-11 en todos busqué descansar para establecer en ellos mi morada. 
+11 en todos busqué descansar para establecer en ellos mi morada.
 
 [Responsory1]
 R. Dichosa eres, sagrada Virgen María, y sumamente digna de todas las alabanzas: 
@@ -82,7 +75,7 @@ R. Porque de ti ha nacido el sol de justicia, Cristo, nuestro Dios, por quien he
 13 y me dijo: Habita en Jacob y establece tu tienda en Israel. 
 14 Desde el principio y antes de los cielos me creó y hasta el fin no dejaré de ser. 
 15 En el tabernáculo santo, delante de él, ministré. Y así tuve en Sión morada fija y estable, reposé en la ciudad de El amada, y en Jerusalén tuve la sede de mi imperio. 
-16 Eché raíces en el pueblo glorioso, en la porción del Señor, en su heredad. 
+16 Eché raíces en el pueblo glorioso, en la porción del Señor, en su heredad.
 
 [Responsory2]
 R. Sin detrimento de tu virginidad fuiste Madre del Salvador: 
@@ -98,7 +91,7 @@ R. El que gobierna el cielo y la tierra se encerró en tu seno y se hizo hombre.
 20 como la canela y el bálsamo aromático exhalé mi aroma, y como mirra escogida di suave olor; 
 21 y llené mi habitación de oloríficos perfumes como de estoraque de gálbano, y de ónice, y de lágrima y como nube de incienso en el tabernáculo. 
 22 Como el terebinto extendí mis ramas, ramas magníficas y graciosas. 
-23 Como vid eché hermosos sarmientos, y mis flores dieron sabrosos y ricos frutos. 
+23 Como vid eché hermosos sarmientos, y mis flores dieron sabrosos y ricos frutos.
 
 [Responsory3]
 R. Muchas son las hijas que han allegado riquezas; mas a todas has tú aventajado; 
@@ -204,9 +197,6 @@ R. Una Virgen ha dado a luz al Salvador. Te alabamos, Dios nuestro.
 
 [Ant 2]
 @Commune/C11:Ant 1:s/fiesta/admirable Maternidad/
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Tu Maternidad, * Virgen Madre de Dios, anunció la alegría a todo el mundo, porque de ti nació el Sol de justicia, Cristo nuestro Señor.

@@ -1,11 +1,6 @@
 [Rank]
 St Vincent de Paul Confesseur;;Duplex;;3;;vide C5
 
-[Rule]
-vide C5;mtv
-9 lectiones;
-m.t.v.
-
 [Oratio]
 Dieu, Vous avez fortifié le bienheureux Vincent par un courage apostolique pour évangéliser les pauvres et augmenter la gloire de l’ordre ecclésiastique ; faites, s’il Vous plaît, qu’en honorant sa piété et ses mérites, l’exemple de ses vertus nous instruise.
 $Per Dominum
@@ -19,6 +14,10 @@ Il s’appliqua avec une ardeur infatigable jusqu’à un âge très avancé à 
 [Lectio6]
 Il n’y avait aucun genre d’infortune qu’il ne secourût paternellement. Les Chrétiens gémissant sous le joug des Turcs, les enfants abandonnés, les jeunes gens indisciplinés, les jeunes filles dont la vertu était exposée, les religieuses dispersées, les femmes tombées, les hommes condamnés aux galères, les étrangers malades, les artisans invalides, les fous même et d’innombrables mendiants, furent secourus par lui, reçus et charitablement soignés dans des établissements hospitaliers qui subsistent encore. Il vint largement en aide à la Lorraine et à la Champagne, à la Picardie et à d’autres régions ravagées par la peste, la famine et la guerre. Pour rechercher et soulager les malheureux, il fonda plusieurs congrégations, entre autres celles des Dames et des Filles de la Charité, que l’on connaît et qui sont répandues partout ; il institua aussi les Filles de la Croix, de la Providence, de sainte Geneviève, pour l’éducation des jeunes filles. Au milieu de ces importantes affaires et d’autres encore il était continuellement occupé de Dieu, affable envers tous, toujours semblable à lui-même, simple, droit et humble : son éloignement pour les honneurs, les richesses, les plaisirs, ne se démentit jamais, et on l’a entendu dire que rien ne lui plaisait, si ce n’est dans le Christ Jésus, qu’il s’étudiait à imiter en toutes choses. Enfin, âgé de quatre vingt-cinq ans et usé par les mortifications, les fatigues et la vieillesse, il s’endormit paisiblement, le vingt-septième jour de septembre, l’an du salut mil six cent soixante. C’est à Paris qu’il mourut, dans la maison de Saint-Lazare, qui est la maison-mère de la congrégation de la Mission. L’éclat de ses vertus, de ses mérites et de ses miracles ont porté Clément XII à le mettre au nombre des Saints, en fixant sa Fête annuelle au dix-neuvième jour du mois de juillet. Sur les instances de plusieurs Évêques, Léon XIII a déclaré et constitué cet illustre héros de la divine charité, qui a si bien mérité de tout le genre humain, le patron spécial auprès de Dieu de toutes les associations de charité existant dans l’univers catholique et lui devant en quelque manière leur origine.
 
+[Lectio94]
+Vincent de Paul naquit à Pouy en Aquitaine. Dès l’enfance, il manifesta pour les pauvres une exceptionnelle charité. Après avoir gardé le troupeau paternel, il s’initia aux lettres, puis devint prêtre. Il tomba aux mains des Turcs qui l’emmenèrent captif en Afrique, d’où il s’échappa avec son maître qu’il avait converti à la foi du Christ, et revint en France. Dans les paroisses qui lui furent confiées et ensuite aux galères, il travailla avec zèle au salut des âmes. Supérieur des religieuses de la Visitation pendant près de quarante ans, il s’acquitta de cette charge avec la plus grande prudence. Jusque dans un âge fort avancé, Vincent se dépensa inlassablement à évangéliser les pauvres, les paysans surtout. Il s’astreignit à cette œuvre apostolique, lui-même et les membres de la Congrégation qu’il avait instituée, sous le titre de Prêtres séculiers de la Mission, par un vœu perpétuel que confirma le Saint-Siège, Un grand nombre d’associations furent fondées par lui, pour la recherche et le soulagement des malheureux, ainsi que pour l’éducation des jeunes filles. Usé par les souffrances corporelles, les travaux et la vieillesse, il s’endormit paisiblement dans le Seigneur, l’an du salut seize cent soixante. Glorifié par des miracles, il fut mis par Clément XII au nombre des saints, et Léon XIII l’a déclaré et constitué le patron auprès de Dieu de toutes les associations de charité existant dans l’univers catholique, et lui devant en quelque manière leur origine.
+&teDeum
+
 [Lectio7]
 @Commune/C1a:Lectio7
 
@@ -27,7 +26,3 @@ Il n’y avait aucun genre d’infortune qu’il ne secourût paternellement. Le
 
 [Lectio9]
 @Commune/C1a:Lectio9
-
-[Lectio94]
-Vincent de Paul naquit à Pouy en Aquitaine. Dès l’enfance, il manifesta pour les pauvres une exceptionnelle charité. Après avoir gardé le troupeau paternel, il s’initia aux lettres, puis devint prêtre. Il tomba aux mains des Turcs qui l’emmenèrent captif en Afrique, d’où il s’échappa avec son maître qu’il avait converti à la foi du Christ, et revint en France. Dans les paroisses qui lui furent confiées et ensuite aux galères, il travailla avec zèle au salut des âmes. Supérieur des religieuses de la Visitation pendant près de quarante ans, il s’acquitta de cette charge avec la plus grande prudence. Jusque dans un âge fort avancé, Vincent se dépensa inlassablement à évangéliser les pauvres, les paysans surtout. Il s’astreignit à cette œuvre apostolique, lui-même et les membres de la Congrégation qu’il avait instituée, sous le titre de Prêtres séculiers de la Mission, par un vœu perpétuel que confirma le Saint-Siège, Un grand nombre d’associations furent fondées par lui, pour la recherche et le soulagement des malheureux, ainsi que pour l’éducation des jeunes filles. Usé par les souffrances corporelles, les travaux et la vieillesse, il s’endormit paisiblement dans le Seigneur, l’an du salut seize cent soixante. Glorifié par des miracles, il fut mis par Clément XII au nombre des saints, et Léon XIII l’a déclaré et constitué le patron auprès de Dieu de toutes les associations de charité existant dans l’univers catholique, et lui devant en quelque manière leur origine.
-&teDeum

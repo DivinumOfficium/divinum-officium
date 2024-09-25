@@ -1,16 +1,8 @@
 [Rank]
 Impressionis Stigmatum S. Francisci;;Duplex;;3;;vide C5
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Impressionis Stigmatum S. Francisci;;Simplex;;1.1;;vide C5
-
-[Rule]
-vide C5;
-9 lectiones
-
-[Versum 1]
-V. Hai impresso, o Signore, nel tuo servo Francesco.
-R. Dei segni della nostra redenzione.
 
 [Hymnus Vespera]
 v. Questo Confessore del Signore, che i popoli
@@ -38,6 +30,10 @@ sia a colui che, fulgente di gloria,
 assiso sul trono del cielo, governa Uno e Trino
 la macchina del mondo intero. 
 Amen.
+
+[Versum 1]
+V. Hai impresso, o Signore, nel tuo servo Francesco.
+R. Dei segni della nostra redenzione.
 
 [Oratio]
 Signore Gesù Cristo, che, raffreddandosi la carità nel mondo, per infiammare i nostri cuori col fuoco del tuo amore, rinnovasti le sacre Stimmate della tua passione nel corpo del beatissimo Francesco: concedi benigno, che, per i meriti e preghiere di lui, portiamo continuamente la croce, e facciamo degni frutti di penitenza:
@@ -87,6 +83,10 @@ Egli sapeva bene, che la debolezza e la sofferenza sono incompatibili coll'immor
 [Lectio6]
 Divenuto dunque Francesco un uomo nuovo, grazie a un nuovo e stupendo miracolo — dacché per un singolare privilegio, di cui nessuno per l'addietro era stato favorito, egli si trovò contrassegnato, o per dir meglio, ornato delle sacre Stimmate — discese dal monte portando con sé l'immagine del Crocifisso, non tracciata già da mano d'artefice su tavole di pietra o di legno, ma stampata sulla propria carne dal dito di Dio vivente. E siccome sapeva benissimo «che è bene tener celati i secreti d'un re» (Tob. 12,7), perciò l'uomo serafico, cosciente del segreto del gran re, nascondeva più ch'era possibile quei sacri segni. Ma perché è proprio di Dio il rivelare per sua gloria le grandi cose che fa, il Signore stesso, che aveva impresso segretamente quelle stimmate, le mostrò apertamente con alcuni miracoli; affinché con questi strepitosi prodigi apparisse manifesta la virtù meravigliosa nascosta nelle Stimmate. - Ora questo miracoloso avvenimento sì ben constatato ed esaltato con lodi e favori speciali nelle bolle pontificie, il Papa Benedetto XI volle che si celebrasse ogni anno con una festa; che poi il Pontefice Paolo V, ad accendere i cuori dei fedeli all'amore di Cristo crocifisso, estese a tutta la Chiesa.
 
+[Lectio94]
+Francesco apparve decorato con un singolare privilegio non concesso nei secoli precedenti, quando decorato con le sacre Stimmate discese dal monte, portando con se l'effigie del Crocifisso, non raffigurata su tavole di pietra o manufatti lignei, ma disegnata sulle membra di carne dal dito del Dio vivente. Siccome l'uomo serafico sapeva ottimamente che era buona cosa nascondere il sacramento del re, conscio del segreto regale, occultava davanti agli uomini quei sacri segni. In verità, poiché è tipico di Dio rivelare le grandi cose che fa per la sua gloria, il Signore stesso, che aveva impresso segretamente quei segni, mostrò apertamente certi miracoli tramite esse; affinché l'occulta e meravigliosa forza di quelle Stimmate apparisse manifesta per l'evidenza dei segni. Più avanti Papa Benedetto XI volle che la cosa meravigliosa e tanto attestata nei diplomi pontifici ed esaltata con importanti lodi e favori fosse celebrata con annua solennità; che poi il Pontefice massimo Paolo V propagò a tutta la Chiesa affinché i cuori dei fedeli fossero accesi nell'amore di Cristo crocifisso.
+&teDeum
+
 [Lectio7]
 @Commune/C2:Lectio7 in 4 loco
 
@@ -103,10 +103,6 @@ R. In grazia del quale il mondo è crocifisso per me, e io per il mondo.
 
 [Lectio9]
 @Commune/C2:Lectio9 in 4 loco
-
-[Lectio94]
-Francesco apparve decorato con un singolare privilegio non concesso nei secoli precedenti, quando decorato con le sacre Stimmate discese dal monte, portando con se l'effigie del Crocifisso, non raffigurata su tavole di pietra o manufatti lignei, ma disegnata sulle membra di carne dal dito del Dio vivente. Siccome l'uomo serafico sapeva ottimamente che era buona cosa nascondere il sacramento del re, conscio del segreto regale, occultava davanti agli uomini quei sacri segni. In verità, poiché è tipico di Dio rivelare le grandi cose che fa per la sua gloria, il Signore stesso, che aveva impresso segretamente quei segni, mostrò apertamente certi miracoli tramite esse; affinché l'occulta e meravigliosa forza di quelle Stimmate apparisse manifesta per l'evidenza dei segni. Più avanti Papa Benedetto XI volle che la cosa meravigliosa e tanto attestata nei diplomi pontifici ed esaltata con importanti lodi e favori fosse celebrata con annua solennità; che poi il Pontefice massimo Paolo V propagò a tutta la Chiesa affinché i cuori dei fedeli fossero accesi nell'amore di Cristo crocifisso.
-&teDeum
 
 [Hymnus Laudes]
 v. O Gesù, Redentore di tutti,

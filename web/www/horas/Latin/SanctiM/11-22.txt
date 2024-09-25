@@ -1,4 +1,84 @@
 @Sancti/11-22
 
-[Rank]
-S. Cæciliæ Virginis et Martyris;;Duplex;;3;;vide C6
+[Rank] (rubrica divino)
+S. Cæciliæ Virginis et Martyris;;Duplex majus;;4;;vide C6
+
+[Rule]
+vide C6;
+
+[Rule] (rubrica tridentina aut rubrica divino)
+vide C6;
+12 lectiones;
+lectiones in 1 nocturno ex Commune in 1 loco
+
+[AntMatutinumM]
+Cæcília * me misit ad vos, ut ostendátis mihi sanctum Urbánum; quia ad ipsum hábeo secréta, quæ pérferam;;84
+Triduánas * a Dómino popósci indúcias, ut domum meam ecclésiam consecrárem.;;86
+Accínxit * fortitúdine lumbos suos, et roborávit bráchium suum; ideóque lucérna ejus non exstinguétur in sempitérnum.;;98
+
+[Ant Matutinum 3N]
+Virgo gloriósa * semper Evangélium Christi gerébat in péctore suo, et non diébus neque nóctibus, a collóquiis divínis et oratióne cessábat.
+
+[Ant Matutinum]
+@Sancti/11-22::1-6
+@:AntMatutinumM:1-2
+@Sancti/11-22::7-9
+@:AntMatutinumM:3
+;;249;250;251
+
+[Responsory4]
+R. Dum auróra finem daret, Cæcília dixit:
+* Eja, mílites Christi, abjícite ópera tenebrárum, et induímini arma lucis.
+V. Cæcília valedícens frátribus, et exhórtans eos, dixit.
+R. Eja, mílites Christi, abjícite ópera tenebrárum, et induímini arma lucis.
+
+[Lectio5]
+@Sancti/11-22:Lectio4:s/ Cui.*//
+
+[Responsory5]
+@Sancti/11-22:Responsory4
+
+[Lectio6]
+@Sancti/11-22:Lectio4:s/.* Cui/Cui/
+@Sancti/11-22:Lectio5:s/ Quo.*//
+
+[Responsory6]
+@Sancti/11-22:Responsory5
+
+[Lectio7]
+@Sancti/11-22:Lectio5:s/.* Quo/Quo/
+@Sancti/11-22:Lectio6:s/ Quo.*//
+
+[Responsory7]
+@Sancti/11-22:Responsory6
+
+[Lectio8]
+@Sancti/11-22:Lectio6:s/.* Quo/Quo/
+
+[Responsory8]
+@Commune/C6:Responsory1
+
+[Lectio9]
+@Sancti/11-22:Lectio7
+
+[Responsory9]
+@Sancti/11-22:Responsory7
+
+[Lectio10]
+@Sancti/11-22:Lectio8:s/ Non est.*//
+
+[Responsory10]
+@Sancti/11-22:Responsory8
+
+[Lectio11]
+@Sancti/11-22:Lectio8:s/.* Non est/Non est/
+@Sancti/11-22:Lectio9:s/ Tardante.*//
+
+[Responsory11]
+@Commune/C6:Responsory2
+
+[Lectio12]
+@Sancti/11-22:Lectio9:s/.* Tardante/Tardante/
+
+[Responsory12]
+@Commune/C6:Responsory3

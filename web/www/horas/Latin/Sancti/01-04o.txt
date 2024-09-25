@@ -1,12 +1,8 @@
-[Rank] 
+[Rank]
 In Octava Ss. Innocentium.;;Duplex;;3.1;;ex Sancti/12-28
 
-[Rule]
-vide Sancti/12-28;
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Feria Te Deum
+[Ant Vespera]
+@Sancti/12-28:Ant Laudes:s/$/;;115/
 
 [Lectio1]
 @Sancti/01-02
@@ -16,9 +12,6 @@ Feria Te Deum
 
 [Lectio3]
 @Sancti/01-02
-
-[Lectio93]
-@Sancti/01-04
 
 [Lectio4]
 @Sancti/01-04
@@ -38,5 +31,5 @@ Feria Te Deum
 [Lectio9]
 @Sancti/01-04
 
-[Ant Vespera]
-@Sancti/12-28:Ant Laudes:s/$/;;115/
+[Lectio93]
+@Sancti/01-04

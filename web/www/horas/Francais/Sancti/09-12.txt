@@ -1,20 +1,11 @@
 [Rank]
 Le Très Saint Nom de la Bienheureuse Vierge Marie;;Duplex majus;;4;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Le Très Saint Nom de la Bienheureuse Vierge Marie;;Duplex;;3;;vide C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Le Très Saint Nom de la Bienheureuse Vierge Marie;;Duplex optional;;2;;vide C11
-
-[Rule]
-vide C11 ;
-9 lectiones
-Ipsa Virgo Virginum
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-BMV
 
 [Ant 1]
 Sainte Marie, * secourez les malheureux, aidez les faibles, consolez les affligés, priez pour le peuple, intervenez en faveur du clergé, intercédez pour les religieuses ; que tous ceux-là sentent votre assistance qui célèbrent la Mémoire de votre Saint Nom.
@@ -33,6 +24,10 @@ Sermon de saint Bernard, Abbé.
 
 [Lectio6]
 Dans les périls, dans les angoisses, dans les perplexités, songez à Marie, invoquez Marie. Qu’elle soit constamment sur vos lèvres, qu’elle soit constamment dans votre cœur, et pour obtenir l’appui de ses prières, ne perdez jamais de vue les exemples de sa vie. En suivant Marie, on ne s’égare point ; en la priant, on ne tombe pas dans le désespoir ; en pensant à elle, on n’erre point. Si elle vous soutient, vous ne tomberez pas ; si elle vous protège, vous n’aurez rien à craindre ; si elle vous accompagne, vous ne connaîtrez pas la fatigue ; sa protection vous conduira au terme et vous expérimenterez ainsi en vous-même avec quelle vérité il a été dit : « Et le nom de la Vierge était Marie ». Ce nom vénérable était déjà honoré depuis longtemps par un culte spécial dans quelques parties du monde chrétien ; lorsqu’une insigne victoire fut remportée à Vienne en Autriche, par le secours de la sainte Vierge Marie, sur le cruel sultan des Turcs, qui menaçait avec insulte de soumettre les peuples chrétiens à sa tyrannie. Le Pape Innocent XI, voulant donc perpétuer la mémoire d’un tel bienfait, ordonna que cette Fête serait célébrée chaque année dans l’Église universelle.
+
+[Lectio94]
+Le vénérable nom de la Vierge Marie, qui signifie, dit-on, étoile de la mer, convient parfaitement à la Vierge-Mère. Elle est, en effet, comparée très justement à une étoile ; car, de même que sans aucune altération, l’astre émet son rayon, ainsi sans aucun dommage pour sa virginité, la Vierge a enfanté un Fils. Le rayon n’amoindrit pas l’éclat de l’astre, ni le Fils l’intégrité de la Vierge. Elle est donc cette noble étoile venue de Juda, qui s’est élevée nécessairement au-dessus de cette mer vaste et profonde, étincelante de mérites et aux exemples éclatants. O vous, qui que vous soyez, qui comprenez que, dans la mer de ce monde, vous êtes plus ballotté par les orages et les tempêtes que marchant sur une terre ferme, ne détournez point les yeux de cet astre éclatant. Pensez à Marie, invoquez Marie, afin qu’ainsi en vous- même vous expérimentiez avec combien de raison il est dit : Et le nom de la Vierge était Marie. — Or ce très doux nom depuis longtemps honoré d’un culte spécial, dans certaines contrées du monde chrétien, le Pontife Romain, Innocent XI a ordonné de le célébrer chaque année dans l’Église universelle, à cause de l’insigne victoire remportée à Vienne, en Autriche, sur le très cruel tyran des Turcs qui menaçait avec arrogance de réduire sous sa domination les peuples chrétiens ; et cela, pour perpétuelle mémoire d’un si grand bienfait.
+&teDeum
 
 [Lectio7]
 Lecture du saint Évangile selon saint Luc.
@@ -54,8 +49,4 @@ Enfin, de peur qu’en Marie le limon friable de notre corps ne s’affaissât s
 
 [Lectio9]
 Bienheureuse celle qui, seule parmi les êtres humains et de préférence à tous, mérita d’entendre ces paroles : « Vous avez trouvé grâce. » Quel degré de grâce ? Une grâce aussi entière que le donne à entendre ce terme employé auparavant par l’Ange : « pleine. » Et vraiment elle était en sa plénitude, la grâce dont les flots abondants s’étaient versés sur cette créature, l’avaient pénétrée et remplie. « Vous avez trouvé grâce devant Dieu. » Disant ces choses, l’Ange lui-même s’étonne, ou de ce qu’une femme l’ait méritée seule, ou de ce que tous les hommes aient mérité la vie par une femme ; oui, l’Ange est comme frappé de stupeur, en voyant venir se renfermer tout entier dans les étroites bornes d’un sein virginal, le Dieu pour qui toutes les choses créées réunies ne sont que petitesse. C’est pourquoi l’Ange tarde à préciser le but de sa mission ; de là vient qu’il nomme la Vierge par ce qui exprime son mérite, et la salue en mentionnant la grâce. A celle qui l’écoute, il ne livre que peu à peu son message, sans doute afin d’en faire ressortir la signification ; c’est aussi peu à peu qu’il achève de calmer sa crainte prolongée.
-&teDeum
-
-[Lectio94]
-Le vénérable nom de la Vierge Marie, qui signifie, dit-on, étoile de la mer, convient parfaitement à la Vierge-Mère. Elle est, en effet, comparée très justement à une étoile ; car, de même que sans aucune altération, l’astre émet son rayon, ainsi sans aucun dommage pour sa virginité, la Vierge a enfanté un Fils. Le rayon n’amoindrit pas l’éclat de l’astre, ni le Fils l’intégrité de la Vierge. Elle est donc cette noble étoile venue de Juda, qui s’est élevée nécessairement au-dessus de cette mer vaste et profonde, étincelante de mérites et aux exemples éclatants. O vous, qui que vous soyez, qui comprenez que, dans la mer de ce monde, vous êtes plus ballotté par les orages et les tempêtes que marchant sur une terre ferme, ne détournez point les yeux de cet astre éclatant. Pensez à Marie, invoquez Marie, afin qu’ainsi en vous- même vous expérimentiez avec combien de raison il est dit : Et le nom de la Vierge était Marie. — Or ce très doux nom depuis longtemps honoré d’un culte spécial, dans certaines contrées du monde chrétien, le Pontife Romain, Innocent XI a ordonné de le célébrer chaque année dans l’Église universelle, à cause de l’insigne victoire remportée à Vienne, en Autriche, sur le très cruel tyran des Turcs qui menaçait avec arrogance de réduire sous sa domination les peuples chrétiens ; et cela, pour perpétuelle mémoire d’un si grand bienfait.
 &teDeum

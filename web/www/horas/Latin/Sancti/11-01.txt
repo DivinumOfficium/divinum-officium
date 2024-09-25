@@ -1,7 +1,8 @@
 [Rank]
-Omnium Sanctorum;;Duplex I classis cum octava communi;;6.4;;
+Omnium Sanctorum;;Duplex I classis cum octava communi;;6.4;;vide C3
 
 [Rule]
+vide C3;
 9 lectiones
 Psalmi Dominica
 Antiphonas horas
@@ -15,43 +16,6 @@ Et omnes Ángeli * stabant in circúitu throni, et cecidérunt in conspéctu thr
 Redemísti nos, * Dómine Deus, in sánguine tuo ex omni tribu, et lingua, et pópulo, et natióne, et fecísti nos Deo nostro regnum.
 Benedícite Dóminum * omnes elécti ejus: ágite dies lætítiæ, et confitémini illi.
 Hymnus * ómnibus Sanctis ejus: fíliis Israël, pópulo appropinquánti sibi: glória hæc est ómnibus sanctis ejus.
-
-[HymnusM Vespera]
-v. Christe Redémptor ómnium,
-Consérva tuos fámulos,
-Beátæ semper Vírginis
-Placátus sanctis précibus.
-_
-Beáta quoque ágmina
-Cæléstium Spirítuum,
-Prætérita, præséntia,
-Futúra mala péllite.
-_
-Vates ætérni Júdicis,
-Apostolíque Dómini,
-Supplíciter expóscimus
-Salvári vestris précibus.
-_
-Mártyres Dei ínclyti,
-Confessorésque lúcidi,
-Vestris oratiónibus
-Nos ferte in cæléstibus.
-_
-Chorus sanctárum Vírginum,
-Monachorúmque ómnium,
-Simul cum Sanctis ómnibus,
-Consórtes Christi fácite.
-_
-Gentem auférte pérfidam
-Credéntium de fínibus,
-Ut Christo laudes débitas
-Persolvámus alácriter.
-_
-Glória Patr[i] ingénito,
-Ejúsque Unigénito,
-Una cum Sancto Spíritu,
-In sempitérna sǽcula.
-Amen.
 
 [Hymnus Vespera]
 {:H-PlacareChriste:}v. Placáre, Christe, sérvulis,
@@ -90,9 +54,42 @@ Sancto simul Paráclito,
 In sempitérna sǽcula.
 Amen.
 
-[Versum 1]
-V. Lætámini in Dómino, et exsultáte justi.
-R. Et gloriámini omnes recti corde.
+[HymnusM Vespera]
+v. Christe Redémptor ómnium,
+Consérva tuos fámulos,
+Beátæ semper Vírginis
+Placátus sanctis précibus.
+_
+Beáta quoque ágmina
+Cæléstium Spirítuum,
+Prætérita, præséntia,
+Futúra mala péllite.
+_
+Vates ætérni Júdicis,
+Apostolíque Dómini,
+Supplíciter expóscimus
+Salvári vestris précibus.
+_
+Mártyres Dei ínclyti,
+Confessorésque lúcidi,
+Vestris oratiónibus
+Nos ferte in cæléstibus.
+_
+Chorus sanctárum Vírginum,
+Monachorúmque ómnium,
+Simul cum Sanctis ómnibus,
+Consórtes Christi fácite.
+_
+Gentem auférte pérfidam
+Credéntium de fínibus,
+Ut Christo laudes débitas
+Persolvámus alácriter.
+_
+Glória Patr[i] ingénito,
+Ejúsque Unigénito,
+Una cum Sancto Spíritu,
+In sempitérna sǽcula.
+Amen.
 
 [Ant 1]
 Ángeli, * Archángeli, Throni et Dominatiónes, Principátus et Potestátes, Virtútes cælórum, Chérubim atque Séraphim, Patriárchæ et Prophétæ, sancti legis Doctóres, Apóstoli, omnes Christi Mártyres, sancti Confessóres, Vírgines Dómini, Anachorítæ, Sanctíque omnes, intercédite pro nobis.
@@ -114,18 +111,12 @@ Regem regum Dóminum veníte adorémus: * Quia ipse est coróna Sanctórum ómni
 Novit Dóminus * viam justórum, qui in lege ejus meditántur die ac nocte.;;1
 Mirificávit * Dóminus Sanctos suos, et exaudívit eos clamántes ad se.;;4
 Admirábile est * nomen tuum, Dómine: quia glória et honóre coronásti Sanctos tuos, et constituísti eos super ópera mánuum tuárum.;;8
-V. Lætámini in Dómino, et exsultáte justi.
-R. Et gloriámini omnes recti corde.
 Dómine, * qui operáti sunt justítiam, habitábunt in tabernáculo tuo, et requiéscent in monte sancto tuo.;;14
 Hæc est generátio * quæréntium Dóminum, quæréntium fáciem Dei Jacob.;;23
 Lætámini in Dómino, * et exsultáte justi, et gloriámini omnes recti corde.;;31
-V. Exsúltent justi in conspéctu Dei.
-R. Et delecténtur in lætítia.
 Timéte Dóminum * omnes Sancti ejus, quóniam nihil deest timéntibus eum: ecce óculi Dómini super justos, et aures ejus ad preces eórum.;;33
 Dómine, spes Sanctórum * et turris fortitúdinis eórum, dedísti hereditátem timéntibus nomen tuum, et habitábunt in tabernáculo tuo in sǽcula.;;60
 Qui dilígitis Dóminum, * lætámini in Dómino, et confitémini memóriæ sanctitátis ejus.;;96
-V. Justi autem in perpétuum vivent.
-R. Et apud Dóminum est merces eórum.
 
 [Lectio1]
 De libro Apocalýpsis beáti Joánnis Apóstoli
@@ -226,37 +217,6 @@ R. Ut digni eficiámur promissiónibus Christi.
 v. Ecce ego Joánnes vidi álterum Angelum ascendéntem ab ortu solis, habéntem signum Dei vivi: et clamávit voce magna quátuor Ángelis, quibus datum est nocére terræ et mari, dicens: Nolíte nocére terræ et mari, neque arbóribus, quoadúsque signémus servos Dei nostri in fróntibus eórum.
 $Deo gratias
 
-[HymnusM Laudes]
-v. Jesu Salvátor sǽculi,
-Redémptis ope súbveni:
-Et pia Dei Génitrix,
-Salútem posce míseris.
-_
-Cœtus omnes angélici,
-Patriarchárum cúnei,
-Et Prophetárum mérita
-Nobis precéntur véniam.
-_
-Baptísta Christi prǽvius,
-Et Cláviger æthéreus,
-Cum céteris Apóstolis,
-Nos solvant nexu críminis.
-_
-Chorus sacrátus Mártyrum,
-Conféssio Sacerdótum,
-Et virginális cástitas
-Nos a peccátis ábluant.
-_
-Monachórum suffrágia,
-Omnésque cives cǽlici
-Annuant votis súpplicum,
-Et vitæ poscant prǽmium.
-_
-Laus, honor, virtus, glória
-Deo Patri, et Fílio,
-Sancto simul Paráclito,
-In sæculórum sǽcula. Amen.
-
 [Hymnus Laudes]
 {:H-Salutisæternæ:}v. Salútis ætérnæ dator,
 Jesu, redémptis súbveni:
@@ -289,9 +249,36 @@ Sancto simul Paráclito,
 In sæculórum sǽcula.
 Amen.
 
-[Versum 2]
-V. Exsultábunt sancti in glória.
-R. Lætabúntur in cubílibus suis.
+[HymnusM Laudes]
+v. Jesu Salvátor sǽculi,
+Redémptis ope súbveni:
+Et pia Dei Génitrix,
+Salútem posce míseris.
+_
+Cœtus omnes angélici,
+Patriarchárum cúnei,
+Et Prophetárum mérita
+Nobis precéntur véniam.
+_
+Baptísta Christi prǽvius,
+Et Cláviger æthéreus,
+Cum céteris Apóstolis,
+Nos solvant nexu críminis.
+_
+Chorus sacrátus Mártyrum,
+Conféssio Sacerdótum,
+Et virginális cástitas
+Nos a peccátis ábluant.
+_
+Monachórum suffrágia,
+Omnésque cives cǽlici
+Annuant votis súpplicum,
+Et vitæ poscant prǽmium.
+_
+Laus, honor, virtus, glória
+Deo Patri, et Fílio,
+Sancto simul Paráclito,
+In sæculórum sǽcula. Amen.
 
 [Ant 2]
 Te gloriósus * Apostolórum chorus, te Prophetárum laudábilis númerus, te Mártyrum candidátus laudat exércitus, te omnes Sancti et elécti voce confiténtur unánimes, beáta Trínitas, unus Deus.
@@ -300,26 +287,14 @@ Te gloriósus * Apostolórum chorus, te Prophetárum laudábilis númerus, te M�
 !Apo 7:12
 v. Benedíctio, et cláritas, et sapiéntia, et gratiárum áctio, honor, virtus, et fortitúdo Deo nostro, in sǽcula sæculórum. Amen.
 
-[Responsory Tertia]
-@Commune/C3
-
 [Capitulum Sexta]
 !Apo 7:9
 v. Post hæc vidi turbam magnam, quam dinumeráre nemo póterat ex ómnibus géntibus, et tríbubus, et pópulis, et linguis, stantes ante thronum Dei, in conspéctu Agni, amícti stolis albis, et palmæ in mánibus eórum.
 $Deo gratias
 
-[Responsory Sexta]
-@Commune/C3
-
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
-
-[Responsory Nona]
-@Commune/C3
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 O quam gloriósum est regnum * in quo cum Christo gaudent omnes Sancti, amícti stolis albis sequúntur Agnum quocúmque íerit!

@@ -1,11 +1,6 @@
 [Rank]
 St Lin, Pape et Martyr;;Semiduplex;;2.1;;vide C2
 
-[Rule]
-vide C2 ;
-9 lectiones
-OPapaM=Lin ;
-
 [Oratio]
 Pasteur éternel de l’Eglise, regardez avec bienveillance Votre troupeau, protégez-le et gardez-le toujours. Nous Vous le demandons par le bienheureux pape Lin, Votre Martyr, que Vous avez placé comme berger à la tête de l’Eglise.
 $Per Dominum
@@ -28,10 +23,6 @@ Les princes m'ont persécuté sans motif et vos paroles ont fait trembler mon c�
 [Lectio6]
 C'est bien sans raison qu’il est persécuté celui qui est accusé d’impiété auprès des impies et des infidèles, alors qu’il donne une leçon de foi. Mais celui qui est persécuté sans raison doit être vaillant et résolu. Comment donc le Psalmiste continue-t-il : Et mon cœur a tremblé à vos paroles. Trembler, c’est le fait de la faiblesse, de la crainte, et de la frayeur. Mais il y a une faiblesse qui sauve, une crainte qui sanctifie : Craignez le Seigneur, vous tous, ses saints 1. Et : Bienheureux Vhomme qui craint le Seigneur. Pourquoi bienheureux ? Parce qu'il fait ses délices des commandements de Dieu.
 
-[Lectio93]
-La vierge Thècle, née à Icône de parents illustres, et initiée par l’Apôtre Paul aux préceptes de la foi, a reçu des saints Pères les louanges les plus magnifiques. A l’âge de dix-huit ans, elle quitta son époux Thamiris. Ses parents l’ayant accusée de professer la foi chrétienne, on la menaça de la jeter dans un brasier ardent déjà préparé, si elle ne renonçait au Christ. S’armant du signe de la croix, elle s’y précipita d’elle-même, mais une pluie survenue tout à coup éteignit le feu. Thècle s’en étant allée à Antioche, fut exposée aux bêtes et attachée à des taureaux que l’on excitait à courir en sens opposé, et jetée enfin dans une fosse remplie de serpents. La grâce de Jésus-Christ la délivra de tous ces tourments. L’ardeur de sa foi et la sainteté de sa vie convertirent au Christ un grand nombre de païens. Revenue dans sa patrie, elle se retira solitaire sur une montagne ; enfin, après s’être illustrée par beaucoup de vertus et de miracles, elle s’en alla au Seigneur, âgée de quatre-vingt-dix ans, et fut ensevelie à Séleucie.
-&teDeum
-
 [Lectio94]
 Le Pape saint Lin, né à Volterra en Toscane, gouverna l’Église immédiatement après saint Pierre. Telles étaient sa foi et sa sainteté, qu’il chassait les démons, et que même il ressuscitait les morts. Il a relaté par écrit les actions de saint Pierre, et principalement sa conduite à l’égard de Simon le magicien. II décréta qu’aucune femme n’entrerait dans une église sans avoir la tête couverte d’un voile. A cause de sa constance dans la foi chrétienne, ce Pontife eut la tête tranchée, sur l’ordre du consulaire Saturnin, monstre d’impiété et d’ingratitude, dont il avait délivré la fille des démons qui l’obsédaient. Lin fut enseveli au Vatican, près du tombeau du prince des Apôtres, le neuf des calendes d’octobre. Il avait occupé le Siège pontifical onze ans, deux mois et vingt-trois jours, et, en deux fois, au mois de décembre, consacré quinze Évêques et ordonné dix-huit Prêtres.
 &teDeum
@@ -44,3 +35,7 @@ Le Pape saint Lin, né à Volterra en Toscane, gouverna l’Église immédiateme
 
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
+
+[Lectio93]
+La vierge Thècle, née à Icône de parents illustres, et initiée par l’Apôtre Paul aux préceptes de la foi, a reçu des saints Pères les louanges les plus magnifiques. A l’âge de dix-huit ans, elle quitta son époux Thamiris. Ses parents l’ayant accusée de professer la foi chrétienne, on la menaça de la jeter dans un brasier ardent déjà préparé, si elle ne renonçait au Christ. S’armant du signe de la croix, elle s’y précipita d’elle-même, mais une pluie survenue tout à coup éteignit le feu. Thècle s’en étant allée à Antioche, fut exposée aux bêtes et attachée à des taureaux que l’on excitait à courir en sens opposé, et jetée enfin dans une fosse remplie de serpents. La grâce de Jésus-Christ la délivra de tous ces tourments. L’ardeur de sa foi et la sainteté de sa vie convertirent au Christ un grand nombre de païens. Revenue dans sa patrie, elle se retira solitaire sur une montagne ; enfin, après s’être illustrée par beaucoup de vertus et de miracles, elle s’en alla au Seigneur, âgée de quatre-vingt-dix ans, et fut ensevelie à Séleucie.
+&teDeum

@@ -1,23 +1,11 @@
 [Rank]
 St Jérôme Emilien confesseur;;Duplex;;3;;vide C5
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 St Jérôme Emilien confesseur;;Duplex optional;;2;;vide C5
-
-[Rule]
-vide C5;mtv
-9 lectiones;
-m.t.v.
 
 [Oratio]
 Dieu, Père des miséricordes, par les mérites et l’intercession du bienheureux Jérôme, que Vous avez donné pour soutien et pour père aux orphelins, faites-nous la grâce de conserver fidèlement cet esprit d’adoption en vertu duquel nous sommes appelés Vos fils et le devenons réellement.
-$Per Dominum
-
-[Commemoratio]
-!Commemoration Ste Margarite, Vierge et Martyre
-@Commune/C6:Oratio proper
-$Oremus
-v. Que la bienheureuse Marguerite, Vierge et Martyre, implore en notre faveur, s'il Vous plaît, Seigneur, Votre indulgence, elle qui Vous a toujours été agréable par le mérite de la chasteté et la proclamation de Votre puissance.
 $Per Dominum
 
 [Lectio4]
@@ -28,6 +16,10 @@ A cette époque abordèrent à Venise le bienheureux Gaétan et Pierre Caraffa, 
 
 [Lectio6]
 Ne pensant qu’aux orphelins à recueillir, Jérôme se dirige sur Milan et Pavie ; dans ces villes, grâce à la faveur de nobles personnages, il procure providentiellement à une multitude d’enfants, un gîte, des provisions, des vêtements et des maîtres. Revenu à Somasque, il se fait tout à tous ; aucun labeur ne le rebutait quand il prévoyait que sa peine profiterait au prochain. Il abordait les cultivateurs dispersés dans les champs, leur venait en aide au temps de la moisson, et leur expliquait les mystères de la foi. Il nettoyait les enfants atteints de maladies à la tête, les soignait patiemment, et pansait si bien les pauvres gens qui avaient des plaies dégoûtantes, qu’on l’eût dit doué de la grâce des guérisons. Ayant découvert une caverne sur la montagne dominant Somasque, il s’y retira, et là, se frappant à coups de fouet, restant à jeun des jours entiers, faisant oraison la plus grande partie de la nuit, ne prenant qu’un peu de sommeil sur la pierre nue, il pleurait ses péchés et ceux des autres. Au fond de cette grotte, une source d’eau jaillit du roc même. Une constante tradition l’attribue aux prières du Saint ; elle n’a point cessé de couler jusqu’à ce jour, et cette eau, portée en divers pays, rend la santé à beaucoup de malades. Enfin, une peste étant venue à sévir dans la vallée, Jérôme en fut atteint pendant qu’il se dévouait auprès des pestiférés et qu’il portait les cadavres sur ses épaules au lieu de la sépulture. Sa mort précieuse, qu’il avait prédite quelque temps auparavant, arriva l’an mil cinq cent trente-sept : les nombreux miracles qu’il opéra pendant sa vie et après sa mort le rendirent illustre ; Benoît XIV le béatifia et Clément XIII l’inscrivit solennellement aux fastes des Saints.
+
+[Lectio94]
+Jérôme, né à Venise, de la famille patricienne des Emiliani, fut initié au métier des armes dès sa première adolescence, et préposé, en des temps très difficiles pour la république, à la défense de Castelnovo, près de Quero, dans les monts de Trévise. La citadelle ayant été prise par les ennemis, il fut jeté dans une horrible prison d’où il fut délivré par le secours de la bienheureuse Vierge. A Venise, il commença à s’occuper d’œuvres de miséricorde et à se dépenser tout entier, prenant surtout en pitié les enfants privés de leurs parents, qui erraient dans la ville. Il les nourrissait à ses frais et les formait aux mœurs chrétiennes, dans des asiles loués pour les recueillir. A cette époque, abordèrent à Venise, le bienheureux Gaétan et Pierre Carafa qui devint plus tard Paul IV. Ayant éprouvé l’esprit de Jérôme, ils l’attirèrent à l’hôpital des Incurables où il devait servir les malades, tout en élevant les orphelins. Bientôt, sur leur conseil, il partit pour le continent voisin et érigea d’abord à Brescia, ensuite à Bergame et à Corne, des orphelinats et d’autres Instituts pieux. S’arrêtant enfin à Somasque, humble village du territoire de Bergame, il établit le siège d’une nouvelle Congrégation qui prit, de ce lieu, le nom de Somasque et que saint Pie V approuva. Enfin, ayant contracté une maladie contagieuse au service des malades, il donna sa vie pour ses frères, l’an quinze cent trente-sept, à l’âge de cinquante-six ans
+&teDeum
 
 [Lectio7]
 Lecture du saint Évangile selon saint Matthieu.
@@ -43,8 +35,4 @@ Montrez-lui une reine parée du diadème : il ne la préfère point à sa mère 
 
 [Lectio9]
  Comme les Pharisiens n’avaient d’autres mobiles de leurs actes que la malice et l’arrogance, notre Seigneur ne cesse d’exhorter ses disciples à être simples ; et il le leur recommande au moment même où il les institue. Car rien n’engendre l’orgueil, comme l’exercice du pouvoir et le privilège d’occuper les premières places. Sachant donc qu’ils obtiendraient de par le monde beaucoup d’honneur, il prémunit leurs esprits, il ne veut pas qu’ils souffrent en eux rien d’humain, ni la recherche de la popularité, ni l’envie de s’élever au-dessus des autres. Ces choses qui paraissent petites, occasionnent pourtant de grands maux. C’est en effet pour avoir eu ces convoitises que les Pharisiens arrivèrent au dernier degré du mal. En recherchant les salutations, les premiers rangs et les places d’honneur, ils tombèrent dans un amour effréné de la gloire, et de là dans un abîme d’impiété.
-&teDeum
-
-[Lectio94]
-Jérôme, né à Venise, de la famille patricienne des Emiliani, fut initié au métier des armes dès sa première adolescence, et préposé, en des temps très difficiles pour la république, à la défense de Castelnovo, près de Quero, dans les monts de Trévise. La citadelle ayant été prise par les ennemis, il fut jeté dans une horrible prison d’où il fut délivré par le secours de la bienheureuse Vierge. A Venise, il commença à s’occuper d’œuvres de miséricorde et à se dépenser tout entier, prenant surtout en pitié les enfants privés de leurs parents, qui erraient dans la ville. Il les nourrissait à ses frais et les formait aux mœurs chrétiennes, dans des asiles loués pour les recueillir. A cette époque, abordèrent à Venise, le bienheureux Gaétan et Pierre Carafa qui devint plus tard Paul IV. Ayant éprouvé l’esprit de Jérôme, ils l’attirèrent à l’hôpital des Incurables où il devait servir les malades, tout en élevant les orphelins. Bientôt, sur leur conseil, il partit pour le continent voisin et érigea d’abord à Brescia, ensuite à Bergame et à Corne, des orphelinats et d’autres Instituts pieux. S’arrêtant enfin à Somasque, humble village du territoire de Bergame, il établit le siège d’une nouvelle Congrégation qui prit, de ce lieu, le nom de Somasque et que saint Pie V approuva. Enfin, ayant contracté une maladie contagieuse au service des malades, il donna sa vie pour ses frères, l’an quinze cent trente-sept, à l’âge de cinquante-six ans
 &teDeum

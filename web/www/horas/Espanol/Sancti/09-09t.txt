@@ -1,11 +1,12 @@
 [Rank]
 Secunda die infra Octavam S. Nativitatis Beatæ Mariæ Virginis;;Semiduplex;;2;;ex Sancti/09-08
 
-[Rule]
-ex Sancti/09-08;
-9 lectiones
-Doxology=Nat
-No prima Vespera
+[Commemoratio]
+!Conmemoración de S. Gorgonio, Mártir
+@Commune/C2:Oratio proper
+$Oremus
+Haz, Señor, que San Gorgonio, tu mártir, nos alegre con su intercesión, y nos conceda el gozar devotamente de esta solemnidad.
+$Per Dominum
 
 [Lectio4]
 Sermón de San Agustín, Obispo.
@@ -47,10 +48,3 @@ Y del exilio de Babilonia hasta Cristo hay catorce generaciones. Cuenta de Jecon
 
 [Lectio93]
 @Sancti/09-09:Lectio93
-
-[Commemoratio]
-!Conmemoración de S. Gorgonio, Mártir
-@Commune/C2:Oratio proper
-$Oremus
-Haz, Señor, que San Gorgonio, tu mártir, nos alegre con su intercesión, y nos conceda el gozar devotamente de esta solemnidad.
-$Per Dominum

@@ -1,18 +1,12 @@
 [Name]
 Commune Plurimorum Martyrum
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-
 [Ant Vespera]
-¡Cuántos tormentos * han sufrido todos los santos para llegar seguros a la palma del martirio!;;109
-Con la palma * del martirio han llegado los santos al reino; han merecido recibir de la mano de Dios la corona de gloria.;;110
-Los cuerpos de los santos * fueron sepultados en paz y su nombre vivirá eternamente.;;111
-Mártires del Señor, * bendecid al Señor eternamente.;;112
-Coro de los mártires, * alabad al Señor en el cielo, aleluya.;;116
+¡Cuántos tormentos * han sufrido todos los santos para llegar seguros a la palma del martirio!
+Con la palma * del martirio han llegado los santos al reino; han merecido recibir de la mano de Dios la corona de gloria.
+Los cuerpos de los santos * fueron sepultados en paz y su nombre vivirá eternamente.
+Mártires del Señor, * bendecid al Señor eternamente.
+Coro de los mártires, * alabad al Señor en el cielo, aleluya.
 
 [Hymnus Vespera]
 {:H-Sanctorummeritis:}v. Loemos de los Mártires
@@ -71,9 +65,6 @@ R. Aclamadlo los de corazón sincero.
 [Ant 1]
 El reino de los cielos * pertenece a aquellos que, venciendo al mundo, lavaron sus vestidos en la sangre del Cordero y alcanzaron los premios eternos.
 
-[Invit]
-Al Señor, Rey de los mártires, * Venid, adorémosle.
-
 [Hymnus Matutinum]
 {:H-Christoprofusum:}v.	Sangre vertida por Cristo,
 triunfos y glorias de mártires,
@@ -105,18 +96,20 @@ Amén.
 Cabe la corriente de las aguas * plantó la viña de los justos, y la voluntad de éstos se conformó con la ley del Señor.;;1
 El Señor probó a sus elegidos * como el oro en el crisol; y los recibió como holocaustos eternos.;;2
 Si sufrieron tormentos delante de los hombres, * la esperanza de los elegidos es inmortal para siempre.;;3
-V. Alegraos y regocijaos los justos en el Señor, 
-R. Y gloriaos todos los de corazón recto.
 Daré a mis santos * un lugar excelente en el reino de mi Padre, dice el Señor.;;14
 A los santos que moran en la tierra, * he manifestado de una manera admirable mi voluntad para con ellos.;;15
 Los santos que esperan en el Señor, * poseerán la fortaleza, estarán dotados de alas como las águilas, volarán y no se cansarán.;;23
-V. Gócense los justos en la presencia de Dios.  
-R. Y llénense de alegría.
 Los justos * vivirán eternamente, y su recompensa está en Dios.;;32
 Entregaron * sus cuerpos a la muerte, antes que servir a los ídolos; por esto, coronados, poseen la palma.;;33
 He aquí que la recompensa * de los Santos es grande delante de Dios; ellos murieron por Cristo y vivirán eternamente.;;45
-V. Los justos vivirán eternamente.
-R. Y su galardón está en el Señor.
+
+[Nocturn 2 Versum]
+V. Que los justos se alegren en la presencia de Dios.
+R. Rebosando de alegría.
+
+[Nocturn 3 Versum]
+V. Los justos viven eterna mente.
+R. Reciben de Dios su recompensa.
 
 [Lectio1]
 De la Epístola del Apóstol San Pablo a los Romanos
@@ -128,7 +121,7 @@ De la Epístola del Apóstol San Pablo a los Romanos
 16 El Espíritu mismo da testimonio a una con nuestro espíritu de que somos hijos de Dios, 
 17 y si hijos, también herederos de Dios, coherederos de Cristo, supuesto que padezcamos con El, para ser con El glorificados. 
 18 Tengo por cierto que los padecimientos del tiempo presente no son nada en comparación con la gloria que ha de manifestarse en nosotros; 
-19 porque la expectación anhelante de lo creado ansía la manifestación de los hijos de Dios,	
+19 porque la expectación anhelante de lo creado ansía la manifestación de los hijos de Dios,
 
 [Responsory1]
 R. Enjugará Dios de sus ojos todas las lágrimas; y ya no habrá más llanto, ni clamor, ni dolor alguno: 
@@ -144,7 +137,7 @@ R. Porque las cosas de antes han pasado.
 31 ¿Qué diremos, pues, a esto? Si Dios está por nosotros, ¿quién contra nosotros? 
 32 El que no perdonó a su propio Hijo, antes le entregó para todos nosotros, ¿cómo no nos ha de dar con Él todas las cosas? 
 33 ¿Quién acusará a los elegidos de Dios? Siendo Dios quien justifica, 
-34 ¿quién condenará? Cristo  Jesús, el que murió, aún más, el que resucitó, el que está a la diestra de Dios, es quien intercede por nosotros. 
+34 ¿quién condenará? Cristo  Jesús, el que murió, aún más, el que resucitó, el que está a la diestra de Dios, es quien intercede por nosotros.
 
 [Responsory2]
 R. Los varones santos derramaron su gloriosa sangre por el Señor, amaron a Cristo en su vida, y con su muerte le imitaron: 
@@ -158,7 +151,7 @@ R. Por esto merecieron coronas de vencedores.
 36 Según está escrito: Por tu causa somos entregados a la muerte todo el día, somos mirados como ovejas destinadas al matadero. 
 37 Mas en todas estas cosas vencemos por aquel que nos amó. 
 38 Porque persuadido estoy que ni la muerte, ni la vida, ni los ángeles, ni los principados, ni lo presente, ni lo venidero, ni las potestades, 
-39 ni la altura, ni la profundidad, ni ninguna otra criatura podrá arrancarnos el amor de Dios en Cristo Jesús, nuestro Señor. 
+39 ni la altura, ni la profundidad, ni ninguna otra criatura podrá arrancarnos el amor de Dios en Cristo Jesús, nuestro Señor.
 
 [Responsory3]
 R. Entregaron sus cuerpos a los suplicios por contentar a Dios: 
@@ -229,13 +222,6 @@ R. Recibiréis la recompensa que yo os daré por vuestro trabajo.
 Tras anunciar tantas señales de la perturbación final, conviene que  consideremos a cada una de ellas, ya que es necesario que padezcamos unas cosas del cielo, otras de la tierra, de los elementos y de los hombres. Dice nuestro Señor: Se levantará un pueblo contra otro; el trastorno proveniente de los hombres. “Habrá grandes terremotos en diferentes lugares”, la señal de la cólera divina que se manifestará en el cielo. “Vendrán pestes”: la desorganización en los cuerpos. “Vendrán hambres”: la esterilidad de la tierra. “Aparecerán señales espantosas y tempestades  en el cielo”: la conmoción del aire. Como todas las cosas se han de acabar, todas sufren trastornos antes de su fin. Y porque en todas las cosas hemos faltado, por todas somos atormentados, a fin de cumplir lo escrito: Y pelearán por él todos los elementos contra los insensatos.
 &teDeum
 
-[Ant Laudes]
-¡Cuántos tormentos * han sufrido todos los santos para llegar seguros a la palma del martirio!
-Con la palma * del martirio han llegado los santos al reino; han merecido recibir de la mano de Dios la corona de gloria.
-Los cuerpos de los santos * fueron sepultados en paz y su nombre vivirá eternamente.
-Mártires del Señor, * bendecid al Señor eternamente.
-Coro de los mártires, * alabad al Señor en el cielo, aleluya.
-
 [Capitulum Laudes]
 !Sab 3:1-3
 v. La vida de los justos está en manos de Dios y no los tocará el tormento. La gente insensata pensaba que morían; pero ellos están en paz.
@@ -286,7 +272,7 @@ $Per Dominum
 !Sab 3:7-8
 v. El día de la cuenta resplandecerán ellos como chispas que prenden por un cañaveral. Gobernarán naciones, someterán pueblos, y su Señor reinará eternamente.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Alegraos, justos, * Y gozad con el Señor. 
 R. Alegraos, justos, * Y gozad con el Señor. 
 V. Aclamadlo los de corazón sincero. 
@@ -302,32 +288,26 @@ R. Rebosando de alegría.
 v. Dios ha dado a los santos la recompensa de sus trabajos y les ha conducido por un camino maravilloso. Fue para ellos sombra durante el día, y luz de astros durante la noche.
 $Deo gratias.
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Que los justos se alegren * En la presencia de Dios. 
 R. Que los justos se alegren * En la presencia de Dios. 
 V. Rebosando de alegría. 
 R. En la presencia de Dios. 
 &Gloria
 R. Que los justos se alegren * En la presencia de Dios. 
-_
-V. Los justos viven eterna mente.
-R. Reciben de Dios su recompensa.
 
 [Capitulum Nona]
 !Sab 3:7-8
 v. El día de la cuenta resplandecerán ellos como chispas que prenden por un cañaveral. Gobernarán naciones, someterán pueblos, y su Señor reinará eternamente.
 $Deo gratias.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Los justos * Viven eternamente. 
 R. Los justos * Viven eternamente. 
 V. Reciben de Dios su recompensa. 
 R. Viven eternamente. 
 &Gloria
-R. Los justos * Viven eternamente. 
-_
-V. Que los fieles festejen su gloria. 
-R. Y canten jubilosos en filas.
+R. Los justos * Viven eternamente.
 
 [Ant Vespera 3]
 Estos son los santos * que entregaron sus cuerpos para dar testimonio de Dios, y lavaron sus vestidos en la sangre del Cordero.;;109
@@ -335,9 +315,6 @@ Los santos sometieron * reinos por la fe, ejercieron la justicia y se cumplieron
 La juventud de los santos * se renueva como el águila; florecerán como el lirio en la ciudad del Señor.;;111
 Dios enjugará * las lágrimas de los ojos de los santos, y ya no habrá muerte, ni llanto, ni pena, porque todo esto desapareció.;;112
 La habitación * de los santos es el reino celestial, y su descanso será eterno.;;115
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 Los santos se alegran * en el cielo: siguieron las huellas de Cristo, y porque le amaron hasta derramar su sangre, gozan con Él eternamente.	

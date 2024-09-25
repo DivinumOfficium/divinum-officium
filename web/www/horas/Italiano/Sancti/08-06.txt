@@ -1,17 +1,8 @@
 [Rank]
 In Transfiguratione Domini Nostri Jesu Christi;;Duplex II classis;;5.1;;
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Transfiguratione Domini Nostri Jesu Christi;;Duplex II classis;;5;;
-
-[Rule]
-proper
-Festum Domini
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Doxology=Epi
 
 [Ant Vespera]
 Prese Gesù * Pietro, Giacomo e Giovanni, suo fratello, e li condusse in disparte su d'un
@@ -65,13 +56,6 @@ Cristo Gesù, * splendore del Padre, e figura della sua sostanza, che tutto sost
 O Dio, che nella gloriosa Trasfigurazione del tuo Unigenito hai confermato i misteri della fede colla testimonianza dei padri, e, colla voce partita dalla nube luminosa, hai mirabilmente proclamato compiuta l'adozione dei figli: concedici benigno di poter diventare coeredi di lui Re della gloria, e compagni della medesima gloria.
 $Per eumdem
 
-[Commemoratio 2]
-!Commemorazione dei Ss. Sisto, Felicissimo ed Agapito Martiri.
-@Commune/C3:Oratio proper
-$Oremus
-Dio, che ci concedi di celebrare la festività dei tuoi santi Martiri Sisto, Felicissimo ed Agapito: donaci di godere della loro compagnia nella beatitudine eterna.
-$Per Dominum
-
 [Invit]
 Il sommo Re della gloria * Cristo, adoriamolo.
 
@@ -114,7 +98,7 @@ R. E la gloria del Signore è spuntata su di te.
 !2 Pet 1:15-17
 15 Ma farò in modo che, anche dopo la mia morte, abbiate a ricordarvi spesso di queste cose. 
 16 Difatti non è sulla fede di favole ingegnose che vi abbiamo fatto conoscere la potenza e la venuta di nostro Signore Gesù Cristo, ma come testimoni oculari della sua grandezza. 
-17 Egli infatti ricevé da Dio Padre onore e gloria quando, dalla maestà gloriosa discese a lui quella voce: «Questo è il mio Figlio diletto nel quale mi sono compiaciuto; ascoltatelo» (Matth. 17,5). 
+17 Egli infatti ricevé da Dio Padre onore e gloria quando, dalla maestà gloriosa discese a lui quella voce: «Questo è il mio Figlio diletto nel quale mi sono compiaciuto; ascoltatelo» (Matth. 17,5).
 
 [Responsory2]
 R. Lo Spirito Santo fu visto in una nube risplendente, e si udì la voce del Padre; 
@@ -194,13 +178,13 @@ R. Per far risplendere la conoscenza della gloria di Dio sul volto di Gesù Cris
 &Gloria
 R. Per far risplendere la conoscenza della gloria di Dio sul volto di Gesù Cristo.
 
+[Lectio9]
+E tu osserva la filosofia di Matteo, che non omise i nomi di quelli che gli furono preferiti. Il che fa pure spesso Giovanni, riferendo con molta fedeltà e diligenza ciò che ridonda specialmente a gloria di Pietro. Giacché nel collegio degli Apostoli non aveva luogo la gelosia o la vanagloria. Prese quindi con sé in disparte i primi fra gli Apostoli. Perché prese soltanto quelli? Evidentemente perché essi si distinguevano fra tutti gli altri. E perché non lo fece subito, ma solo dopo sei giorni? Per timore che gli altri discepoli non fossero agitati da sentimenti umani; motivo per cui neppure nominò quelli che avrebbe preso con sé.
+&teDeum
+
 [Lectio93]
 !Per i Ss. Sisto II Papa, Felicissimo ed Agapito Martiri
 Sisto II, Ateniese, da filosofo fattosi discepolo di Cristo, accusato nella persecuzione di Valeriano di predicare pubblicamente Cristo, è arrestato e trascinato nel tempio di Marte, dove lo si minaccia della pena del capo se non sacrifica a quest'idolo. Ma ricusatosi con somma costanza a questa empietà, mentre è condotto al martirio fattoglisi incontro san Lorenzo e dicendogli con dolore: Padre, dove vai senza il tuo figlio? santo Pontefice, dove t'affretti senza il tuo ministro? risponde: Io non ti abbandono, o figlio, ti sono riserbati maggiori cimenti per la fede di Cristo: fra tre giorni mi seguirai, il levita seguirà il sacerdote: frattanto, se hai qualche cosa nei tesori, dallo ai poveri. Egli dunque fu ucciso lo stesso giorno insieme coi diaconi Felicissimo e Agapito, e coi suddiaconi Gennaro, Magno, Vincenzo e Stefano; e fu sepolto nel cimitero di Callisto il 6 di Agosto, gli altri invece nel cimitero di Pretestato. Regnò undici mesi e dodici giorni. Nel qual tempo tenne un'ordinazione nel mese di Dicembre, e creò quattro preti, sette diaconi e due vescovi.
-&teDeum
-
-[Lectio9]
-E tu osserva la filosofia di Matteo, che non omise i nomi di quelli che gli furono preferiti. Il che fa pure spesso Giovanni, riferendo con molta fedeltà e diligenza ciò che ridonda specialmente a gloria di Pietro. Giacché nel collegio degli Apostoli non aveva luogo la gelosia o la vanagloria. Prese quindi con sé in disparte i primi fra gli Apostoli. Perché prese soltanto quelli? Evidentemente perché essi si distinguevano fra tutti gli altri. E perché non lo fece subito, ma solo dopo sei giorni? Per timore che gli altri discepoli non fossero agitati da sentimenti umani; motivo per cui neppure nominò quelli che avrebbe preso con sé.
 &teDeum
 
 [Ant Laudes]
@@ -244,6 +228,13 @@ R. Con impresso il nome di santità, di gloria e di onore.
 [Ant 2]
 Ed ecco * dalla nube una voce che disse: Questo è il mio Figlio diletto, nel quale mi sono compiaciuto; ascoltatelo, alleluia.
 
+[Commemoratio 2]
+!Commemorazione dei Ss. Sisto, Felicissimo ed Agapito Martiri.
+@Commune/C3:Oratio proper
+$Oremus
+Dio, che ci concedi di celebrare la festività dei tuoi santi Martiri Sisto, Felicissimo ed Agapito: donaci di godere della loro compagnia nella beatitudine eterna.
+$Per Dominum
+
 [Lectio Prima]
 !Apo 21:10-11; 21:23.
 v. Mi portò in ispirito sopra un monte grande e sublime, e mi fece vedere la città santa, Gerusalemme, che scendeva dal cielo da Dio, la quale aveva la chiarezza di Dio; e la sua lampada è l'Agnello.
@@ -274,11 +265,6 @@ R. Di gloria e di onore l'hai incoronato, Signore, * Alleluia, alleluia.
 _
 V. Grande è la sua gloria per il tuo soccorso salutare, alleluia.
 R. Dì gloria e splendore grande l'hai ricoperto, alleluia.
-
-[Capitulum Nona]
-!Apo 21:10-11; 21:23.
-v. Mi portò in ispirito sopra un monte grande e sublime, e mi fece vedere la città santa, Gerusalemme, che scendeva dal cielo da Dio, la quale aveva la chiarezza di Dio; e la sua lampada è l'Agnello.
-$Deo gratias
 
 [Responsory Nona]
 R.br. Grande è la sua gloria per il tuo soccorso salutare, * Alleluia, alleluia.

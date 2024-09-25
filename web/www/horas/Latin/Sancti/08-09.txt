@@ -8,16 +8,17 @@ vide C5;mtv
 [Oratio]
 @Sancti/08-08r:Oratio
 
+[Oratio Vigilia]
+!Commemoratio Vigiliæ S. Laurentii Martyris
+v. Adésto, Dómine, supplicatiónibus nostris: et intercessióne beáti Lauréntii Mártyris tui, cujus prævenímus festivitátem; perpétuam nobis misericórdiam benígnus impénde.
+$Per Dominum
+
 [Commemoratio 1]
 !Commemoratio S. Romani Martyris
 @Commune/C2:Oratio proper
 $Oremus
 v. Præsta, quǽsumus, omnípotens Deus: ut, intercedénte beáto Románo Mártyre tuo, et a cunctis adversitátibus, liberémur in córpore, et a pravis cogitatiónibus mundémur in mente. 
 $Per Dominum
-
-[Lectio Vigilia]
-!Commemoratio Vigiliæ S. Laurentii
-@Sancti/08-09t:Lectio1
 
 [Lectio4]
 Joánnes Maria Vianney, in pago Dardilly, Diœcesis Lugdunénsis piis ruriculis ortus, ab infántia plura dedit sanctitátis indicia. Cum octennis oves custodiret, modo puerulos, ad imáginem Deíparæ genuflexos, Rosárium verbo et exemplo edocére, modo sorori vel alteri commisso grege, secretiórem locum pétere solebat, quo expeditior ante simulacrum Vírginis, oratióni vacaret. Páuperum amantíssimus, eos turmatim in patris domum dedúcere et omnímodo adjuvare in deliciis habebat. Litteris imbuendus, párocho Vici Ecully tráditus est; sed ut erat tardioris ingenii, in stúdiis fere insuperábiles expertus est difficultates. Jejunio et oratióne divinam opem implorávit, et facilitátem discéndi rogatúrus, tumulum sancti Francisci Regis, stipem quæritans, adívit, Theologíæ curriculo operose confecto, satis idoneus invéntus est, qui sacris initiarétur.
@@ -28,8 +29,15 @@ In pago Ecully, præeunte párocho, cujus vicarius renunciátus fuerat, potiores
 [Lectio6]
 Invitabátur sæpius a curiónibus vicínis ut, Missionariórum more, animárum saluti, qua concionando, qua confessiónes excipiéndo consúleret et singulis præsto semper erat. Studio glóriæ Dei incénsus, effécit, ut pia Missiónum exercítia in ámplius centum parœciis, constituto perpetuo censu, institueréntur. Inter hæc, Deo servum suum miraculis et charismátibus illustrante, orta est celebris illa peregrinátio, qua, per vicennium centum fere míllia hóminum cujusque ordinis et ætátis, quotannis Ars conflúxerint non solum e Galliæ et Europæ, sed étiam Amerícæ díssitis provinciis. Labóribus potius quam senio consumptus, prænuntiáto suæ mortis die, in osculo Dómini quiévit, die quarta Augusti, anno millesimo octingentésimo quinquagesimo nono, annos natus tres ac septuagínta. Quem multis clarum miraculis, Pius décimus inter Beatos, Pius vero undecimus inter Sanctos Cælites anno sacro adscripsit, ejusque festum ad universam Ecclésiam extendit, anno vero quinquagesimo sacerdotii sui ómnium parochórum cælestem patronum constítuit.
 
+[Lectio94]
+@Sancti/08-08r:Lectio94
+
 [Lectio93]
 !Pro Vigilia S. Laurentii Martyris
+@Sancti/08-09t:Lectio1
+
+[Lectio Vigilia]
+!Commemoratio Vigiliæ S. Laurentii
 @Sancti/08-09t:Lectio1
 
 [Commemoratio 2]
@@ -38,11 +46,3 @@ Invitabátur sæpius a curiónibus vicínis ut, Missionariórum more, animárum 
 $Oremus
 v. Præsta, quǽsumus, omnípotens Deus: ut, intercedénte beáto Románo Mártyre tuo, et a cunctis adversitátibus, liberémur in córpore, et a pravis cogitatiónibus mundémur in mente. 
 $Per Dominum
-
-[Oratio Vigilia]
-!Commemoratio Vigiliæ S. Laurentii Martyris
-v. Adésto, Dómine, supplicatiónibus nostris: et intercessióne beáti Lauréntii Mártyris tui, cujus prævenímus festivitátem; perpétuam nobis misericórdiam benígnus impénde.
-$Per Dominum
-
-[Lectio94]
-@Sancti/08-08r:Lectio94

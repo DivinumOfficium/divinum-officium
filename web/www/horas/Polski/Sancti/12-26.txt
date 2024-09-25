@@ -1,15 +1,8 @@
 [Rank]
 Św. Szczepana Pierwszego Męczennika;;Duplex II class cum octava simplici;;5.4;;ex C2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Św. Szczepana Pierwszego Męczennika;;Duplex II class;;5;;ex C2
-
-[Rule]
-ex C2;
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-no Psalm5
 
 [Ant 1]
 A Szczepan * pełen łaski i mocy czynił cuda i znaki wielkie między ludem.
@@ -119,6 +112,17 @@ $Deo gratias
 V. I pogrzebli Szczepana ludzie bogobojni.
 R. I uczynili nad nim wielkie płakanie.
 
+[Octava 2]
+!Wspominamy oktawę św. Szczepana.
+Ant. A Szczepan * pełen łaski i mocy czynił cuda i znaki wielkie między ludem.
+_
+V. I pogrzebli Szczepana ludzie bogobojni.
+R. I uczynili nad nim wielkie płakanie.
+_
+$Oremus
+Daj nam, prosimy Cię, Panie, naśladować to, co czcimy: abyśmy się nauczyli i nieprzyjaciół miłować: gdyż obchodzimy narodziny dla nieba tego; który nawet za prześladowców umiał się modlić do Pana naszego Jezusa Chrystusa Syna Twojego.
+$Qui tecum
+
 [Lectio Prima]
 !Dz 7:59
 v. A klęknąwszy na kolana, zawołał głosem wielkim, mówiąc: Panie, nie przyczytaj im tego grzechu. A to rzekłszy, zasnął w Panu.
@@ -134,17 +138,6 @@ R. Widział i wszedł: błogosławiony mąż, któremu się niebiosa otworzyły.
 
 [Ant 3]
 I pogrzebli Szczepana * ludzie bogobojni, i uczynili nad nim wielkie płakanie.
-
-[Octava 2]
-!Wspominamy oktawę św. Szczepana.
-Ant. A Szczepan * pełen łaski i mocy czynił cuda i znaki wielkie między ludem.
-_
-V. I pogrzebli Szczepana ludzie bogobojni.
-R. I uczynili nad nim wielkie płakanie.
-_
-$Oremus
-Daj nam, prosimy Cię, Panie, naśladować to, co czcimy: abyśmy się nauczyli i nieprzyjaciół miłować: gdyż obchodzimy narodziny dla nieba tego; który nawet za prześladowców umiał się modlić do Pana naszego Jezusa Chrystusa Syna Twojego.
-$Qui tecum
 
 [Octava 3]
 !Wspominamy oktawę św. Szczepana.

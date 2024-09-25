@@ -1,24 +1,8 @@
 [Rank]
 Stolicy Św. Piotra w Antiochji;;Duplex majus;;4;;ex C4
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Stolicy Św. Piotra w Apostoła;;Duplex II classis;;5;;ex C4
-
-[RankNewcal]
-Stolicy Św. Piotra w Apostoła;;Duplex II classis;;5;;ex C4
-
-[Rule]
-ex C4;
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-Commemoratio3
-Sub unica concl
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
-
-[Ant Vespera]
-@Commune/C4
 
 [Hymnus Vespera]
 v. Cokolwiek na ziemi zwiążesz pętami, 
@@ -46,19 +30,6 @@ v. Boże, który św. Piotrowi, Apostołowi swemu, powierzyłeś klucze Królest
 $Qui vivis
 _
 @Sancti/02-22:Commemoratio4
-
-[Commemoratio4]
-!Wspominamy Św. Pawła
-(deinde dicuntur)
-Ant. Święty Pawle, Apostole, głosicielu prawdy, Doktorze narodów, wstawiaj się za nami do Boga, który cię wybrał.
-_
-V. Tyś jest naczyniem wybranem, św. Pawle Apostole. 
-R. Głosicielem prawdy po całym świecie.
-_
-$Oremus
-(sed rubrica 1960 aut rubrica monastica hæc versus omittuntur)
-v. Boże, któryś liczne narody wymową św. Pawła Apostoła oświecił, daj nam, prosimy Cię, abyśmy doznali u Ciebie wstawiennictwa tego, którego dziś pamiątkę obchodzimy.
-$Per Dominum
 
 [Invit]
 Tyś jest pasterzem owiec, Książęciem Apostołów, * Tobie powierzył Bóg klucze Królestwa Niebieskiego.
@@ -183,3 +154,16 @@ R. Aby Mu złożył ofiarę chwały.
 
 [Ant 3]
 Gdy był najwyższym kapłanem, * nie obawiał się niczego na ziemi, ale chwalebnie przeszedł do królestwa niebieskiego.
+
+[Commemoratio4]
+!Wspominamy Św. Pawła
+(deinde dicuntur)
+Ant. Święty Pawle, Apostole, głosicielu prawdy, Doktorze narodów, wstawiaj się za nami do Boga, który cię wybrał.
+_
+V. Tyś jest naczyniem wybranem, św. Pawle Apostole. 
+R. Głosicielem prawdy po całym świecie.
+_
+$Oremus
+(sed rubrica 1960 aut rubrica monastica hæc versus omittuntur)
+v. Boże, któryś liczne narody wymową św. Pawła Apostoła oświecił, daj nam, prosimy Cię, abyśmy doznali u Ciebie wstawiennictwa tego, którego dziś pamiątkę obchodzimy.
+$Per Dominum

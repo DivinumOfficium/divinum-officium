@@ -4,6 +4,9 @@ S. Damasi Papæ et Confessoris;;Semiduplex;;2.2;;vide C4
 [Rank] (rubrica 196)
 S. Damasi Papæ et Confessoris;;Duplex;;3;;vide C4
 
+[Rank] (rubrica innovata)
+S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4
+
 [Rule]
 vide C4;
 9 lectiones;
@@ -12,16 +15,12 @@ Doxology=Nat
 Omit Preces
 Commemoratio3
 
-[Ant Vespera](rubrica divino)
+[Ant Vespera] (rubrica divino)
 @Commune/C4:Ant Vespera
 
 [Oratio]
 Exáudi, Dómine, preces nostras: et interveniénte beáto Dámaso Confessóre tuo atque Pontífice, indulgéntiam nobis tríbue placátus et pacem.
 $Per Dominum
-
-[Commemoratio 2](rubrica divino)
-!Commemoratio Diei infra Octavam Immaculatæ Conceptionis B.M.V.
-@Sancti/12-08:Oratio
 
 [Lectio4]
 Dámasus Hispánus, vir egrégius et erudítus in Scriptúris, indícto primo Constantinopolitáno concílio nefáriam Eunómii et Macedónii hæresim exstínxit. Idem Ariminénsem convéntum a Libério jam ante rejéctum, íterum condemnávit: in quo, ut scribit sanctus Hierónymus, Valéntis potíssimum et Ursácii fráudibus damnátio Nicænæ fídei conclamáta fuit: et ingemíscens orbis terrárum, se Ariánum esse mirátus est.
@@ -44,3 +43,6 @@ Dámasus Hispánus, vir egrégius et erudítus in Scriptúris sacris, indícto p
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
+[Commemoratio 2] (rubrica divino)
+!Commemoratio Diei infra Octavam Immaculatæ Conceptionis B.M.V.
+@Sancti/12-08:Oratio

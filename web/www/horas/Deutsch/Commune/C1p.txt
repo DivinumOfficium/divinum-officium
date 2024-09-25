@@ -1,17 +1,12 @@
 [Name]
 Commune apostolorum tempore Paschali
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Una Antiphona
-
 [Ant Vespera]
-Deine treuen Diener, * o Herr, sind wie blühende Lilien, alleluja, und wie Balsamduft sind sie vor dir, alleluja.;;109
-Im himmlischen Reiche * ist der Heiligen Aufenthalt, alleluja, alleluja, und auf ewig dauert ihre Ruhe, alleluja.;;110
-Bedeckt von den Fittichen * riefen die dir Geweihten: O Herr, alleluja, alleluja, alleluja.;;111
-Ihr Geister und ihr Seelen * der Rechtschaffenen, stimmt an einen Lobgesang unserm Gott, alleluja.;;112
-Es leuchten die Rechtschaffenen * wie die Sonne vor den Augen Gottes, alleluja.;;116
+Deine treuen Diener, * o Herr, sind wie blühende Lilien, alleluja, und wie Balsamduft sind sie vor dir, alleluja.
+Im himmlischen Reiche * ist der Heiligen Aufenthalt, alleluja, alleluja, und auf ewig dauert ihre Ruhe, alleluja.
+Bedeckt von den Fittichen * riefen die dir Geweihten: O Herr, alleluja, alleluja, alleluja.
+Ihr Geister und ihr Seelen * der Rechtschaffenen, stimmt an einen Lobgesang unserm Gott, alleluja.
+Es leuchten die Rechtschaffenen * wie die Sonne vor den Augen Gottes, alleluja.
 
 [Hymnus Vespera]
 {:H-Tristeserantapostoli:}v. Gar traurig war die Jüngerschar,
@@ -55,23 +50,22 @@ Ununterbrochnes Licht * scheint deinen Schützlingen, o Herr, auf ewige Zeiten, 
 [Invit]
 Den Herrn, den König der Apostel, * Kommt, wir wollen ihn anbeten, alleluja.
 
-[Hymnus Matutinum]
-@Commune/C1p:Hymnus Vespera
-
 [Ant Matutinum]
 Es werden stehen die Gottesdiener * in großer Zuversicht gegenüber denen, die ihnen Bedrängnis gemacht haben, alleluja.;;18
 ;;33
 ;;44
-V. Ihr Heiligen und Rechtschaffenen, genießt im Herrn die Freude, alleluja.
-R. Euch hat ja Gott sich als Besitz erkoren, alleluja.
 Seht doch, * wie sie aufgenommen sind unter die Gotteskinder, und mitten unter den Heiligen ist der ihnen angewiesene Aufenthalt, alleluja.;;46
 ;;60
 ;;63
-V. Ununterbrochnes Licht scheint deinen Schützlingen, o Herr, alleluja.
-R. Auf ewige Zeiten, alleluja.
 Ununterbrochnes Licht * scheint deinen Schützlingen, o Herr, auf ewige Zeiten, alleluja.;;74
 ;;96
 ;;98
+
+[Nocturn 2 Versum]
+V. Ununterbroch'nes Licht scheint deinen Schützlingen, o Herr, alleluja.
+R. Auf ewige Zeiten, alleluja.
+
+[Nocturn 3 Versum]
 V. Ewige Freude strömt auf sie herunter, alleluja.
 R. Jubel und Frohlocken erhalten sie als Besitz, alleluja.
 
@@ -128,13 +122,6 @@ V. Schimmernder sind sie als der Schnee, weißer als Milch, greller leuchtend al
 R. Und wie Milch sind sie geronnen, alleluja, alleluja.
 &Gloria
 R. Und wie Milch sind sie geronnen, alleluja, alleluja.
-
-[Ant Laudes]
-Deine treuen Diener, * o Herr, sind wie blühende Lilien, alleluja, und wie Balsamduft sind sie vor dir, alleluja.
-Im himmlischen Reiche * ist der Heiligen Aufenthalt, alleluja, alleluja, und auf ewig dauert ihre Ruhe, alleluja.
-Bedeckt von den Fittichen * riefen die dir Geweihten: O Herr, alleluja, alleluja, alleluja.
-Ihr Geister und ihr Seelen * der Rechtschaffenen, stimmt an einen Lobgesang unserm Gott, alleluja.
-Es leuchten die Rechtschaffenen * wie die Sonne vor den Augen Gottes, alleluja.
 
 [Capitulum Laudes]
 !Weish 5,1
@@ -206,55 +193,10 @@ O ihr Töchter Jerusalems, * kommt und seht die Zeugen für Gott mit ihren Krän
 !Röm 8,28
 v. Wir wissen, dass denen, die Gott lieben, alles zum Guten wirkt; denen nämlich, die gemäß seinem Ratschluss berufen sind zur Heiligkeit.
 
-[Responsory Tertia]
-R.br. Ihr Heiligen und Rechtschaffenen, genießt im Herrn die Freude, * Alleluja, alleluja.
-R. Ihr Heiligen und Rechtschaffenen, genießt im Herrn die Freude, * Alleluja, alleluja.
-V. Euch hat ja Gott sich als Besitz erkoren.
-R. Alleluja, alleluja.
-&Gloria
-R. Ihr Heiligen und Rechtschaffenen, genießt im Herrn die Freude, * Alleluja, alleluja.
-_
-V. Ununterbroch'nes Licht scheint deinen Schützlingen, o Herr, alleluja.
-R. Auf ewige Zeiten, alleluja.
-
 [Capitulum Sexta]
 !Weish 5,5
 v. Seht doch, wie sie aufgenommen sind unter die Gottesdiener, und mitten unter den Heiligen ist der ihnen angewiesene Aufenthalt.
 $Deo gratias
-
-[Responsory Sexta]
-R.br. Ununterbroch'nes Licht scheint deinen Schützlingen, o Herr, * Alleluja, alleluja.
-R. Ununterbroch'nes Licht scheint deinen Schützlingen, o Herr, * Alleluja, alleluja.
-V. Auf ewige Zeiten.
-R. Alleluja, alleluja.
-&Gloria
-R. Ununterbroch'nes Licht scheint deinen Schützlingen, o Herr, * Alleluja, alleluja.
-_
-V. Ewige Freude strömt auf sie herunter, alleluja.
-R. Jubel und Frohlocken erhalten sie als Besitz, alleluja.
-
-[Capitulum Nona]
-!Röm 8,28
-v. Wir wissen, dass denen, die Gott lieben, alles zum Guten wirkt; denen nämlich, die gemäß seinem Ratschluss berufen sind zur Heiligkeit.
-$Deo gratias
-
-[Responsory Nona]
-R.br. V. Ewige Freude strömt auf sie herunter, * Alleluja, alleluja.
-R. Ewige Freude strömt auf sie herunter, * Alleluja, alleluja.
-V. Jubel und Frohlocken erhalten sie als Besitz.
-R. Alleluja, alleluja.
-&Gloria
-R. Ewige Freude strömt auf sie herunter, * Alleluja, alleluja.
-_
-V. Gar teuer wird's bei dir, Herr, eingeschätzt, alleluja.
-R. Wenn deine Diener sterben, alleluja.
-
-[Ant Vespera 3]
-Deine treuen Diener, * o Herr, sind wie blühende Lilien, alleluja, und wie Balsamduft sind sie vor dir, alleluja.;;109
-Im himmlischen Reiche * ist der Heiligen Aufenthalt, alleluja, alleluja, und auf ewig dauert ihre Ruhe, alleluja.;;112
-Bedeckt von den Fittichen * riefen die dir Geweihten: O Herr, alleluja, alleluja, alleluja.;;115
-Ihr Geister und ihr Seelen * der Rechtschaffenen, stimmt an einen Lobgesang unserm Gott, alleluja.;;125
-Es leuchten die Rechtschaffenen * wie die Sonne vor den Augen Gottes, alleluja.;;138
 
 [Ant 3]
 Ihr Heiligen und Rechtschaffenen, * genießt im Herrn die Freude, alleluja, euch hat ja Gott sich als Besitz erkoren, alleluja.

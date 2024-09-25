@@ -1,24 +1,12 @@
 [Rank]
 Wniebowzięcie Najświętszej Marji Panny;;Duplex I classis cum Octava Communi;;7;;ex C11
 
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Doxology=Nat
-
 [Ant Vespera]
 Marja wzięta jest * do Nieba, radują się Aniołowie; wychwalając błogosławią Pana.;;109
 Marja Dziewica * wzięta jest do niebieskiego mieszkania, w którem Król królów na gwiaździstym zasiada tronie.;;112
 Za tobą pobieżemy * do wonności olejków twoich; Panienki umiłowały cię bardzo.;;121
 Błogosławionaś jest córko, * przez Boga, przez Ciebie bowiem dan nam jest owoc życia.;;126
 Pięknaś jest * i ozdobna, córko Jeruzalem: ogromna, jako wojska uszykowane porządnie.;;147
-
-[Capitulum Laudes]
-!Syr 24:11-12
-v. A w tym wszytkim szukałam odpoczynku i w dziedzictwie Pańskim mieszkać będę. Tedy przykazał i rzekł mi, Stworzyciel wszech rzeczy, a który mię stworzył, odpoczynął w przybytku moim.
-$Deo gratias
 
 [Versum 1]
 V. Podniesiona jest święta Boża Rodzicielka.
@@ -28,6 +16,17 @@ R. Ponad chóry Anielskie do Królestwa Niebieskiego.
 Dziewico najroztropniejsza, * gdzie idziesz jako zorza powstająca?  Córko Siońska, całaś piękna i słodka jest: piękna jako księżyc, wybrana jako słońce.
 
 [Oratio]
+Przebacz, prosimy Cię, Panie, grzechy sług Twoich i daj, abyśmy, którzy sami z siebie w czynach swych podobać się Tobie nie potrafimy, uzyskali zbawienie za pośrednictwem Rodzicielki Syna Twojego:
+$Qui tecum
+
+[Octava 1]
+!Wspominamy Oktawę Wniebowzięcia N.M.P.
+Ant. Dzisiaj Marja Dziewica * do nieba wstąpiła: radujcie się, bo z Chrystusem na wieki króluje.
+_
+V. Podniesiona jest święta Boża Rodzicielka.
+R. Ponad chóry Anielskie do Królestwa Niebieskiego.
+_
+$Oremus
 Przebacz, prosimy Cię, Panie, grzechy sług Twoich i daj, abyśmy, którzy sami z siebie w czynach swych podobać się Tobie nie potrafimy, uzyskali zbawienie za pośrednictwem Rodzicielki Syna Twojego:
 $Qui tecum
 
@@ -116,8 +115,24 @@ R. Wstawiaj się za nami u Pana Boga naszego.
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g
 
+[Capitulum Laudes]
+!Syr 24:11-12
+v. A w tym wszytkim szukałam odpoczynku i w dziedzictwie Pańskim mieszkać będę. Tedy przykazał i rzekł mi, Stworzyciel wszech rzeczy, a który mię stworzył, odpoczynął w przybytku moim.
+$Deo gratias
+
 [Ant 2]
 Któraż to jest, * która idzie jako zorza powstająca, piękna jako księżyc, wybrana jako słonce, ogromna jako wojska uszykowane porządnie?
+
+[Octava 2]
+!Wspominamy Oktawę Wniebowzięcia N.M.P.
+Ant. Któraż to jest, * która idzie jako zorza powstająca, piękna jako księżyc, wybrana jako słonce, ogromna jako wojska uszykowane porządnie?
+_
+V. Podniesiona jest święta Boża Rodzicielka.
+R. Ponad chóry Anielskie do Królestwa Niebieskiego.
+_
+$Oremus
+Przebacz, prosimy Cię, Panie, grzechy sług Twoich i daj, abyśmy, którzy sami z siebie w czynach swych podobać się Tobie nie potrafimy, uzyskali zbawienie za pośrednictwem Rodzicielki Syna Twojego:
+$Qui tecum
 
 [Responsory Tertia]
 R.br. Podniesiona jest * Święta Boża Rodzicielka.
@@ -154,25 +169,3 @@ R. Daj mi moc przeciw nieprzyjaciołom swoim.
 
 [Ant 3]
 Dzisiaj Marja Dziewica * do nieba wstąpiła: radujcie się, bo z Chrystusem na wieki króluje.
-
-[Octava 1]
-!Wspominamy Oktawę Wniebowzięcia N.M.P.
-Ant. Dzisiaj Marja Dziewica * do nieba wstąpiła: radujcie się, bo z Chrystusem na wieki króluje.
-_
-V. Podniesiona jest święta Boża Rodzicielka.
-R. Ponad chóry Anielskie do Królestwa Niebieskiego.
-_
-$Oremus
-Przebacz, prosimy Cię, Panie, grzechy sług Twoich i daj, abyśmy, którzy sami z siebie w czynach swych podobać się Tobie nie potrafimy, uzyskali zbawienie za pośrednictwem Rodzicielki Syna Twojego:
-$Qui tecum
-
-[Octava 2]
-!Wspominamy Oktawę Wniebowzięcia N.M.P.
-Ant. Któraż to jest, * która idzie jako zorza powstająca, piękna jako księżyc, wybrana jako słonce, ogromna jako wojska uszykowane porządnie?
-_
-V. Podniesiona jest święta Boża Rodzicielka.
-R. Ponad chóry Anielskie do Królestwa Niebieskiego.
-_
-$Oremus
-Przebacz, prosimy Cię, Panie, grzechy sług Twoich i daj, abyśmy, którzy sami z siebie w czynach swych podobać się Tobie nie potrafimy, uzyskali zbawienie za pośrednictwem Rodzicielki Syna Twojego:
-$Qui tecum

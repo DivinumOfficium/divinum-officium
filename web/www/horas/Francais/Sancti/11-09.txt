@@ -4,11 +4,12 @@ Dédicace de la Basilique du Saint Sauveur;;Duplex 2nd class;;5.5;;ex C8
 [Rank] (rubrica tridentina)
 Dédicace de la Basilique du Saint Sauveur;;Duplex majus;;4;;ex C8
 
-[Rule]
-ex C8 ;
-Domini
-9 lectiones
-Festum Domini
+[Commemoratio]
+!Commémoraison de St Théodore, Martyr
+@Commune/C2:Oratio proper
+$Oremus
+v. O Dieu, qui nous donnez la glorieuse profession de foi de votre bienheureux Martyr Théodore, comme appui et protection, accordez-nous la grâce de profiter de ses exemples, et d’être soutenus de ses prières.
+$Per Dominum
 
 [Commemoratio 5]
 !Commémoraison de l'Octave de la Toussaint
@@ -20,6 +21,7 @@ _
 $Oremus
 v. Dieu tout-puissant et éternel, qui nous avez accordé de célébrer dans une même solennité les mérites de tous vos Saints ; faites, nous vous en prions, que nos intercesseurs étant multipliés, une abondante effusion de vos miséricordes, objet de nos désirs, nous vienne de votre munificence.
 _
+
 [Lectio1]
 Du livre de l’Apocalypse de saint Jean, Apôtre.
 !Apo 21:9-11
@@ -40,8 +42,7 @@ Les rites que l’Église observe dans la consécration des temples et des autel
 Ce fut quand l’empereur Constantin eut obtenu la santé et le salut par le sacrement du baptême, qu’il fut permis pour la première fois aux Chrétiens, par une loi de ce prince, de bâtir partout des églises ; et il les excita à la construction de ces édifices sacrés, non seulement par son édit, mais encore par son exemple. Il dédia, en effet, dans son palais de Latran, une église au Sauveur, tout près de laquelle il édifia aussi une basilique sous le nom de saint Jean-Baptiste, au lieu même où, baptisé par saint Sylvestre, il avait été guéri de la lèpre de l’infidélité. Ce Pape consacra l’église du Sauveur le cinquième jour des ides de novembre ; et c’est de cette consécration qu’on célèbre aujourd’hui la mémoire, parce que c’est en ce jour que la première dédicace publique d’une église a été faite à Rome et que l’image du Sauveur apparut au peuple romain, peinte sur la muraille.
 
 [Lectio6]
-Si le bienheureux Sylvestre décréta dans la suite, en consacrant l’autel du prince des Apôtres, que l’on n’édifierait plus désormais d’autels qu’en pierre, et si cependant, celui de la basilique de Latran est en bois, il n’y a pas lieu de s’en étonner ; depuis saint Pierre jusqu’à Sylvestre, les Papes ne pouvaient, à cause des persécutions, résider en un lieu fixe : partout où la nécessité les poussait, soit dans les cryptes, soit dans les cimetières, soit dans les maisons de pieux fidèles, ils offraient le sacrifice sur cet autel de bois, qui était creux et en forme de coffre. Or, la paix ayant été rendue à l’Église, saint Sylvestre le plaça dans la première église, qui fut celle de Latran, et, en l’honneur du prince des Apôtres, que l’on dit avoir offert le Saint Sacrifice sur cet autel, ainsi que des autres Pontifes qui, jusque-là, s’en étaient servis pour la célébration des Mystères, il ordonna qu’aucun autre que le Pape n’y célébrerait jamais la messe.~
-~
+Si le bienheureux Sylvestre décréta dans la suite, en consacrant l’autel du prince des Apôtres, que l’on n’édifierait plus désormais d’autels qu’en pierre, et si cependant, celui de la basilique de Latran est en bois, il n’y a pas lieu de s’en étonner ; depuis saint Pierre jusqu’à Sylvestre, les Papes ne pouvaient, à cause des persécutions, résider en un lieu fixe : partout où la nécessité les poussait, soit dans les cryptes, soit dans les cimetières, soit dans les maisons de pieux fidèles, ils offraient le sacrifice sur cet autel de bois, qui était creux et en forme de coffre. Or, la paix ayant été rendue à l’Église, saint Sylvestre le plaça dans la première église, qui fut celle de Latran, et, en l’honneur du prince des Apôtres, que l’on dit avoir offert le Saint Sacrifice sur cet autel, ainsi que des autres Pontifes qui, jusque-là, s’en étaient servis pour la célébration des Mystères, il ordonna qu’aucun autre que le Pape n’y célébrerait jamais la messe. s/$/~/
 @:Lectio6a 
 (rubrica 1570 omittitur)
 
@@ -52,10 +53,3 @@ La basilique du Saint-Sauveur, successivement endommagée par des incendies, dé
 !Commémoraison de St Théodore, Martyr
 Théodore, soldat chrétien, sous le règne de l’empereur Maximien, fut arrêté pour avoir incendié un temple d’idoles. Le préfet de la légion promit de lui faire grâce, si, repentant de son action, il voulait maudire la foi chrétienne ; mais Théodore demeura inébranlable dans la confession de sa foi. Conduit en prison, où le bourreau le déchira avec des ongles de fer et lui mit les côtes à nu, le Martyr, plein d’allégresse, chantait ce verset : « Je bénirai le Seigneur en tout temps. » C’est pourquoi on le jeta dans un bûcher ardent, où, priant et louant Dieu, il rendit son âme au Christ, le cinquième jour des ides de novembre. La matrone Eusébie enveloppa le corps du martyr d’un linceul et l’ensevelit dans son domaine.
 &teDeum
-
-[Commemoratio]
-!Commémoraison de St Théodore, Martyr
-@Commune/C2:Oratio proper
-$Oremus
-v. O Dieu, qui nous donnez la glorieuse profession de foi de votre bienheureux Martyr Théodore, comme appui et protection, accordez-nous la grâce de profiter de ses exemples, et d’être soutenus de ses prières.
-$Per Dominum

@@ -1,15 +1,18 @@
 [Rank]
 S. Apollinaris Episcopi et Martyris;;Duplex;;3;;vide C2
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Apollinaris Episcopi et Martyris;;Duplex optional;;2;;vide C2
-
-[Rule]
-vide C2;
-9 lectiones;
 
 [Oratio]
 O Dio, rimuneratore delle anime fedeli, che hai consacrato questo giorno col martirio del tuo beato Vescovo Apollinare: concedi a noi tuoi servi, che, come ne celebriamo la augusta festività, così, per le sue preghiere, otteniamo il perdono. 
+$Per Dominum
+
+[Commemoratio Sabbat]
+!Commemorazione di S. Liborio Ep. Conf.
+@Commune/C4:Oratio proper
+v. Preghiamo.
+Esaudisci, o Signore, le preghiere che ti innalziamo nella solennità di San Liberio, tuo Confessore e Pontefice, che meritò di servirti degnamente e, per sua intercessione, perdona tutti i nostri peccati. 
 $Per Dominum
 
 [Commemoratio]
@@ -19,13 +22,6 @@ v. Preghiamo.
 Concedi, Dio onnipotente, che la solennità veneranda del tuo beato Vescovo e Confessore Liborio, accresca in noi la devozione, e l'aiuto per la salvezza.
 $Per Dominum.
 
-[Commemoratio Sabbat]
-!Commemorazione di S. Liborio Ep. Conf.
-@Commune/C4:Oratio proper
-v. Preghiamo.
-Esaudisci, o Signore, le preghiere che ti innalziamo nella solennità di San Liberio, tuo Confessore e Pontefice, che meritò di servirti degnamente e, per sua intercessione, perdona tutti i nostri peccati. 
-$Per Dominum
-
 [Lectio4]
 Apollinare venne da Antiochia a Roma col Principe degli Apostoli; il quale l'ordinò vescovo e l'inviò a Ravenna a predicare il Vangelo di Cristo Signore; e dove, siccome convertiva moltissimi alla fede di Cristo, fu preso dai sacerdoti degli idoli, e crudelmente battuto. Alle sue preghiere avendo il nobil uomo Bonifacio, ch'era rimasto muto da lungo tempo, ricuperata la favella, ed una sua figlia essendo stata liberata dallo spirito immondo, si suscitò una nuova sedizione contro di lui. Quindi battutolo con verghe, lo fecero camminare a piedi nudi su carboni ardenti; ma questo fuoco non avendolo leso affatto, venne cacciato dalla città.
 
@@ -34,6 +30,10 @@ Egli allora si nascose qualche tempo con alcuni Cristiani, poi partì per la Emi
 
 [Lectio6]
 Rifiutandosi il demonio di dare responsi nel tempio di Serapide finché vi dimorasse un discepolo dell'Apostolo Pietro, Apollinare dopo lunghe ricerche fu ritrovato  e gli si ordinò di riprendere il mare. Così tornato a Ravenna, e di nuovo accusato dagli stessi sacerdoti degli idoli, è dato a custodire a un centurione; il quale siccome onorava secretamente Cristo, di notte fece fuggire Apollinare. Risaputasi la cosa, i satelliti lo inseguono, lo coprono di ferite e, credendolo morto, lo abbandonano sulla strada. Donde raccolto dai Cristiani, dopo averli esortati a rimaner costanti nella fede, dopo sette giorni abbandonò questa vita coronato della gloria del martirio. Il suo corpo venne sepolto presso le mura della città.
+
+[Lectio94]
+Apollinare venne da Antiochia a Roma col Principe degli apostoli, il quale lo ordinò vescovo e lo inviò a Ravenna a predicare il Vangelo di Cristo. Ivi, avendo convertito moltissime persone alla fede di Cristo, fu preso dai sacerdoti pagani e crudelmente battuto. Per le sue preghiere il nobile Bonifacio, muto da molto tempo, ricuperò la parola ed una sua figlia fu liberata dallo spirito maligno. In seguito a ciò, fu suscitata una nuova sedizione contro di lui, per cui dovette soffrire molte e varie pene. Dopo questi avvenimenti, si recò a predicare il Vangelo nell'Emilia e convertì molti. Tornato a Ravenna, esortando i cristiani alla costanza nella fede, coronò la vita con il martirio. Il suo corpo venne sepolto presso le mura della città.
+&teDeum
 
 [Lectio7]
 Lettura del santo Vangelo secondo Luca
@@ -49,10 +49,6 @@ Poiché la ricompensa, l'onore che ci si promette, non è già di mangiare e di 
 
 [Lectio9]
 Convertiamoci dunque, e badiamo che non sorga fra noi, per nostra rovina, contesa alcuna di primeggiare. Che sia sorta contesa fra gli Apostoli, ciò non è ricordato per fornirci una scusa, ma per metterci in guardia. Se Pietro non si è convertito interamente che alla fine, lui che aveva seguito il Signore alla prima chiamata; chi può dire di essersi davvero convertito subito? Guardati dunque dalla iattanza, fuggi il mondo. L'ordine di confermare i suoi fratelli lo riceve colui che ha detto: «Noi abbiamo abbandonato tutto, e ti abbiamo seguito».
-&teDeum
-
-[Lectio94]
-Apollinare venne da Antiochia a Roma col Principe degli apostoli, il quale lo ordinò vescovo e lo inviò a Ravenna a predicare il Vangelo di Cristo. Ivi, avendo convertito moltissime persone alla fede di Cristo, fu preso dai sacerdoti pagani e crudelmente battuto. Per le sue preghiere il nobile Bonifacio, muto da molto tempo, ricuperò la parola ed una sua figlia fu liberata dallo spirito maligno. In seguito a ciò, fu suscitata una nuova sedizione contro di lui, per cui dovette soffrire molte e varie pene. Dopo questi avvenimenti, si recò a predicare il Vangelo nell'Emilia e convertì molti. Tornato a Ravenna, esortando i cristiani alla costanza nella fede, coronò la vita con il martirio. Il suo corpo venne sepolto presso le mura della città.
 &teDeum
 
 [Commemoratio 3] (rubrica divino aut rubrica tridentina)

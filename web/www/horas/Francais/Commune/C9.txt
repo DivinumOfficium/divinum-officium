@@ -1,16 +1,6 @@
 [Name]
 Officium Defunctorum
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Capitulum Commemoratio Suffragium
-Special Conclusio
-Limit Benedictiones Oratio
-Requiem gloria
-Votive nocturn
-
 [Ant Vespera]
 Je plairai au Seigneur * dans la terre des vivants.;;114
 Malheur à moi, Seigneur * car mon exil s'est prolongé.;;119
@@ -46,14 +36,6 @@ $Oremus
 v. O Dieu, Créateur et Rédempteur de tous les fidèles, accordez aux âmes de vos serviteurs et de vos servantes, la rémission de tous leurs péchés afin que l'indulgence qu'ils ont toujours désirée leur soit obtenue par ces pieuses supplications.
 $Qui vivis
 
-[Oratio 1]
-@:Oratio_a_porta
-@:Oratio_Fid
-
-[Oratio 2]
-@:Oratio_a_porta:s/&psalm.*\)//s
-@:Oratio_Fid
-
 [Oratio1]
 v.Délivrez, nous Vous le demandons, Seigneur, l'âme de votre serviteur N. (ou de votre servante N.), afin que mort (ou morte) à ce monde, il (elle) vive pour Vous ; et par le pardon de Votre très miséricordieuse, compassion, pardonnez les fautes commises par fragilité de la chair au cours d'une vie d'homme. 
 $Per Dominum
@@ -75,16 +57,22 @@ Le Roi pour Qui toutes les créatures sont vivantes, * venez, adorons-Le.
 Redressez, * Seigneur mon Dieu, devant moi votre chemin.;;5
 Revenez, Seigneur, * délivrez mon âme : car, dans la mort, nul souvenir de Vous .;;6
 Qu'il n'emporte, * comme un lion, mon âme, lui qui arrache, et personne qui délivre .;;7
-V. De la puissance de l'enfer.
-R. Délivrez, Seigneur, leurs âmes.
 Sur des prés d'herbe fraîche, * il me fait reposer.;;22
 Des fautes * et des égarements de ma jeunesse, ne vous souvenez pas, Seigneur.;;24
 Je le crois, * je verrai la bonté du Seigneur sur la terre des vivants.;;26
-V. Le Seigneur les établira avec les princes;
-R. Avec les princes de son peuple.
 Daignez, Seigneur, * me secourir ; vite, à mon aide .;;39
 Guérissez mon âme, * Seigneur, car j'ai péché contre Vous.;;40
 Mon âme a soif * du Dieu de vie : quand pourrai-je aller voir la face de Dieu ?;;41
+
+[Nocturn 1 Versum]
+V. De la puissance de l'enfer.
+R. Délivrez, Seigneur, leurs âmes.
+
+[Nocturn 2 Versum]
+V. Le Seigneur les établira avec les princes;
+R. Avec les princes de son peuple.
+
+[Nocturn 3 Versum]
 V. Ne livrez pas aux bêtes les âmes qui vous louent!
 R. Et les âmes de vos pauvres, ne les oubliez pas à jamais.
 
@@ -100,7 +88,7 @@ R. Et les âmes de vos pauvres, ne les oubliez pas à jamais.
 [Responsory1]
 R.Je crois que mon Rédempteur est vivant, et qu'au dernier jour je ressusciterai de la terre, 
 * Et que, dans ma chair, je verrai Dieu, mon Sauveur.
-V. Que je verrai moi-même, et non pas un autre, et que mes yeux doivent contempler.  
+V. Que je verrai moi-même, et non pas un autre, et que mes yeux doivent contempler. 
 R. Et que, dans ma chair, je verrai Dieu, mon Sauveur.
 
 [Lectio2]
@@ -175,11 +163,11 @@ R. Ayez pitié de moi, quand Vous viendrez au dernier jour.
 
 [Responsory6]
 R. Ne Vous souvenez pas, Seigneur, de mes péchés, 
-* Quand Vous viendrez juger  ce  siècle  par le feu.
-V. Seigneur, mon  Dieu, dirigez   ma  voie  en votre présence. 
-R. Quand Vous viendrez juger  ce  siècle  par le feu.
+* Quand Vous viendrez juger ce siècle par le feu.
+V. Seigneur, mon Dieu, dirigez  ma voie en votre présence. 
+R. Quand Vous viendrez juger ce siècle par le feu.
 $Requiem
-R. Quand Vous viendrez juger  ce  siècle  par le feu.
+R. Quand Vous viendrez juger ce siècle par le feu.
 
 [Lectio7]
 !Job 17:1-3; 17:11-15
@@ -226,7 +214,7 @@ R. Pour que vous effaciez, ô Dieu, mon iniquité.
 [Responsory91]
 R. Délivrez-moi, Seigneur, des chemins de l'enfer, vous qui avez brisé les portes d'airain et visité l'enfer, et donné, pour vous voir, la lumière à 
 * Ceux qui étaient dans les peines des ténèbres.
-V. Criant et disant : Vous êtes enfin venu,  ô notre Rédempteur.
+V. Criant et disant : Vous êtes enfin venu, ô notre Rédempteur.
 R. Ceux qui étaient dans les peines des ténèbres.
 $Requiem
 R. Ceux qui étaient dans les peines des ténèbres.
@@ -241,19 +229,12 @@ R. Alors que Vous viendrez juger ce monde par le feu.
 $Requiem
 R. Délivrez-moi, Seigneur, de la mort éternelle, en ce jour redoutable, Quand les cieux seront ébranlés, ainsi que la terre ; * Alors que Vous viendrez juger ce monde par le feu.
 
-[Ant Laudes]
+[Ant Laudes_]
 Les os humiliés * exulteront dans le Seigneur.;;50
 Exaucez, Seigneur * ma prière ; toute chair viendra à Vous.;;64
 Votre droite * m'a recueilli, Seigneur.;;62
 De la puissance de l'enfer * délivrez mon âme, Seigneur.;;222
 Que tout ce qui respire * loue le Seigneur.;;150
-
-[Ant Laudes](rubrica tridentina)
-Les os humiliés * exulteront dans le Seigneur.;;50
-Exaucez, Seigneur * ma prière ; toute chair viendra à Vous.;;64
-Votre droite * m'a recueilli, Seigneur.;;62;66
-De la puissance de l'enfer * délivrez mon âme, Seigneur.;;222
-Que tout ce qui respire * loue le Seigneur.;;148;149;150
 
 [Ant 2]
 Je suis la Résurrection et la Vie ; * celui qui croit en Moi, même s'il vient à mourir, vivra ; et quiconque vit et croit en Moi, ne mourra pas pour toujours.

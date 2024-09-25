@@ -1,14 +1,14 @@
-[Lectio94]
-@Sancti/01-18:Lectio4:s/At that.*//s
-@Sancti/01-18:Lectio5:s/.*(O most.*). The.*/$1. /s
-@Sancti/01-18:Lectio6
-
 [Lectio5]
 @Sancti/01-18:Lectio4:s/At that.*//s
 
 [Lectio6]
 @Sancti/01-18:Lectio4:s/.*At that/At that/s s/$/~/
 @Sancti/01-18:Lectio5:s/O most.*//s
+
+[Lectio94]
+@Sancti/01-18:Lectio4:s/At that.*//s
+@Sancti/01-18:Lectio5:s/.*(O most.*). The.*/$1. /s
+@Sancti/01-18:Lectio6
 
 [Lectio7]
 @Sancti/01-18:Lectio5:s/.*O most/O most/s

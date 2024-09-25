@@ -1,17 +1,8 @@
 [Rank]
 Śś. Apostołów Piotra i Pawła;;Duplex I classis cum octava communi;;6.5;;ex C1
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Śś. Apostołów Piotra i Pawła;;Duplex 1 classis;;6;;ex C1
-
-[Rule]
-vide C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-nor commemoratio
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
 
 [Ant Vespera]
 Piotr i Jan * wstępowali do kościoła na godzinę modlitwy dziewiątą.
@@ -19,11 +10,6 @@ Srebra i złota * nie mam, lecz co mam, to tobie dawam.
 Rzekł Anioł do Piotra: * Weźmij na się odzienie twoje, a idź za mną.
 Posłał Pan * Anioła swego i wyrwał mię z ręki Heroda, alleluja.
 Tyś jest opoka, * a na tej opoce zbuduje Kościół mój.
-
-[Capitulum Laudes]
-!Dz 12:1-3
-v. A onegóż czasu oburzył się mocą król Herod, aby utrapił niektóre z kościoła. I zabił Jakóba, brata Janowego, mieczem. A widząc, że się podobało Żydom, przydał, że poimał i Piotra.
-$Deo gratias
 
 [Hymnus Vespera]
 {:H-Decoralux:}v. Jaśniejące światło wieczności
@@ -48,6 +34,28 @@ Przez nieskończoność wieków.
 Amen.
 
 [Oratio]
+Boże, któryś dzień dzisiejszy uświetnił męczeństwem błogosławionych Apostołów Twoich, Piotra i Pawła: daj, aby Kościół Twój szedł we wszystkiem za wskazówkami tych, przez których wiara zaczęła się rozszerzać.
+$Per Dominum
+
+[Octava 11]
+!Wspominamy Oktawę Śś. Piotra
+Ant. Tyś jest pasterzem owiec, * Książęciem Apostołów, tobie powierzone są klucze Królestwa Niebieskiego.
+_
+V. Tyś jest opoka.
+R. A na tej opoce zbuduje Kościół mój.
+_
+$Oremus
+Boże, któryś dzień dzisiejszy uświetnił męczeństwem błogosławionych Apostołów Twoich, Piotra i Pawła: daj, aby Kościół Twój szedł we wszystkiem za wskazówkami tych, przez których wiara zaczęła się rozszerzać.
+$Per Dominum
+
+[Octava 1]
+!Wspominamy Oktawę Śś. Apostołów Piotra i Pawła
+Ant. Piotr Apostoł * i Paweł, doktór narodów, oto Ci, którzy nas uczyli prawa Twego, Panie.
+_
+V. Postanowisz ich książętami nad wszystką ziemią.
+R. Będą wspominać Imię Twoje, Panie.
+_
+$Oremus
 Boże, któryś dzień dzisiejszy uświetnił męczeństwem błogosławionych Apostołów Twoich, Piotra i Pawła: daj, aby Kościół Twój szedł we wszystkiem za wskazówkami tych, przez których wiara zaczęła się rozszerzać.
 $Per Dominum
 
@@ -130,6 +138,11 @@ R. A Ja ci powiadam, że ty jesteś Opoką, a na tej Opoce zbuduję Kościół m
 A odpowiadając, Jezus rzekł mu: „Błogosławionyś, Szymonie Bar Jona, Świadectwo to jest odwzajemnieniem na wypowiedź Apostoła. Piotr powiedział: Tyś jest Chrystus, Syn Boga żywego; szczere wyznanie otrzymało nagrodę: Błogosławionyś, Szymonie Bar Jona A dlaczego błogosławiony? Bo ciało i krew nie objawiły tobie, jeno Ojciec”. To, czego ciało i krew nie mogły objawić, łaską Ducha Świętego zostało objawione. Więc z tego wyznania otrzymuje w udziale imię, ponieważ ma objawienie z Ducha Świętego, którego i synem ma zostać nazwany, jako że w naszym języku tłumaczenie „Bar Jona” brzmi ‘syn gołębicy’.
 &teDeum
 
+[Capitulum Laudes]
+!Dz 12:1-3
+v. A onegóż czasu oburzył się mocą król Herod, aby utrapił niektóre z kościoła. I zabił Jakóba, brata Janowego, mieczem. A widząc, że się podobało Żydom, przydał, że poimał i Piotra.
+$Deo gratias
+
 [Hymnus Laudes]
 {:H-BeatepastorPetre:}v. Błogosławiony Pasterzu, Piotrze,
 Przyjmij miłościwie głosy błagających,
@@ -147,6 +160,17 @@ Która rządzi wszystkiem
 Po wszystkie wieczności wieki.
 Amen.
 
+[Octava 2]
+!Wspominamy Oktawę Śś. Apostołów Piotra i Pawła
+Ant. Chwalebni książęta ziemi, * jak miłowali się w życiu swoim, tak i w śmierci nie są rozdzieleni.
+_
+V. Na wszystką ziemię wyszedł głos ich.
+R. I na krańce okręgu ziemi słowa ich.
+_
+$Oremus
+Boże, któryś dzień dzisiejszy uświetnił męczeństwem błogosławionych Apostołów Twoich, Piotra i Pawła: daj, aby Kościół Twój szedł we wszystkiem za wskazówkami tych, przez których wiara zaczęła się rozszerzać.
+$Per Dominum
+
 [Lectio Prima]
 !Dz 12:11
 v. A Piotr przyszedłszy k sobie, rzekł: Teraz wiem prawdziwie, iż Pan posłał Anioła swego i wyrwał mię z ręki Herodowéj i ze wszystkiego oczekiwania ludu Żydowskiego.
@@ -158,36 +182,3 @@ $Deo gratias
 
 [Ant 3]
 Dzisiaj * Szymon Piotr wstąpił na szubienicę krzyża, alleluja: dzisiaj klucznik królestwa radując się, poszedł do Chrystusa: dzisiaj Paweł Apostoł, światło kuli ziemskiej, pochyliwszy głowę, dla imienia Chrystusa, koronę męczeńską otrzymał, alleluja.
-
-[Octava 1]
-!Wspominamy Oktawę Śś. Apostołów Piotra i Pawła
-Ant. Piotr Apostoł * i Paweł, doktór narodów, oto Ci, którzy nas uczyli prawa Twego, Panie.
-_
-V. Postanowisz ich książętami nad wszystką ziemią.
-R. Będą wspominać Imię Twoje, Panie.
-_
-$Oremus
-Boże, któryś dzień dzisiejszy uświetnił męczeństwem błogosławionych Apostołów Twoich, Piotra i Pawła: daj, aby Kościół Twój szedł we wszystkiem za wskazówkami tych, przez których wiara zaczęła się rozszerzać.
-$Per Dominum
-
-[Octava 11]
-!Wspominamy Oktawę Śś. Piotra
-Ant. Tyś jest pasterzem owiec, * Książęciem Apostołów, tobie powierzone są klucze Królestwa Niebieskiego.
-_
-V. Tyś jest opoka.
-R. A na tej opoce zbuduje Kościół mój.
-_
-$Oremus
-Boże, któryś dzień dzisiejszy uświetnił męczeństwem błogosławionych Apostołów Twoich, Piotra i Pawła: daj, aby Kościół Twój szedł we wszystkiem za wskazówkami tych, przez których wiara zaczęła się rozszerzać.
-$Per Dominum
-
-[Octava 2]
-!Wspominamy Oktawę Śś. Apostołów Piotra i Pawła
-Ant. Chwalebni książęta ziemi, * jak miłowali się w życiu swoim, tak i w śmierci nie są rozdzieleni.
-_
-V. Na wszystką ziemię wyszedł głos ich.
-R. I na krańce okręgu ziemi słowa ich.
-_
-$Oremus
-Boże, któryś dzień dzisiejszy uświetnił męczeństwem błogosławionych Apostołów Twoich, Piotra i Pawła: daj, aby Kościół Twój szedł we wszystkiem za wskazówkami tych, przez których wiara zaczęła się rozszerzać.
-$Per Dominum

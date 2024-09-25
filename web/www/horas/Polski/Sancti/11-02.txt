@@ -1,61 +1,16 @@
 [Rank]
 Wspomnienie Wszystkich Wiernych Zmarłych;;Duplex;;3;;ex C9
 
-[RankNewcal]
-Wspomnienie Wszystkich Wiernych Zmarłych;;Duplex Solemnity;;6;;ex C9
-
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Wspomnienie Wszystkich Wiernych Zmarłych;;I. classis;;6;;ex C9
 
-[Rule]
-ex C9
-Psalmi Dominica
-Antiphonas horas
-Special Conclusio
-Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium
-Limit Benedictiones Oratio
-Requiem gloria
-9 lectiones
-Responsory9
-no Te Deum
-(rubrica 1955 aut rubrica 1960) No prima Vespera
+[Rank] (rubrica innovata)
+Wspomnienie Wszystkich Wiernych Zmarłych;;Duplex Solemnity;;6;;ex C9
 
 [Initial]
 $Pater noster
 $Ave Maria
 (sed rubrica 1960 aut rubrica innovata omittuntur)
-
-[Special Completorium]
-$Confiteor
-$Misereatur
-$Indulgentiam
-
-&psalm(122)
-
-&psalm(141)
-
-&psalm(142)
-
-&psalm(233)
-
-&special('Oratio mortuorum1', 'Latin')
-
-&special('Conclusio', 'Latin')
-
-
-[Oratio mortuorum2]
-@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
-&Dominus_vobiscum2
-_
-$Oremus
-v. Wylewamy, Panie, pokorne prośby za dusze wszystkich Twoich sług i służebnic; abyś łaskawie odpuścił, cokolwiek zawinili w ludzkim postępowaniu, i dobrotliwie uczynił kres ich karom.
-$Per Dominum
-
-[Conclusio]
-&Gloria
-V. Niech odpoczywają w pokoju.
-R. Amen.
 
 [Lectio1]
 @Commune/C9
@@ -117,6 +72,19 @@ Z Pierwszego Listu Świętego Pawła Apostoła do Koryntian
 56 A oścień śmierci jest grzech, a moc grzechu zakon.
 57 Lecz dzięka Bogu, który nam dał zwycięstwo przez Pana naszego Jezusa Chrystusa.
 58 A tak, bracia moi mili, bądźcie stateczni a nieporuszeni, obfitując w robocie Pańskiéj zawsze, wiedząc, iż praca wasza nie jest próżna w Panu.
+
+[Conclusio]
+&Gloria
+V. Niech odpoczywają w pokoju.
+R. Amen.
+
+[Oratio mortuorum2]
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+&Dominus_vobiscum2
+_
+$Oremus
+v. Wylewamy, Panie, pokorne prośby za dusze wszystkich Twoich sług i służebnic; abyś łaskawie odpuścił, cokolwiek zawinili w ludzkim postępowaniu, i dobrotliwie uczynił kres ich karom.
+$Per Dominum
 
 [Special Prima]
 &special('Initial', 'Polski')
@@ -181,3 +149,20 @@ $Amen
 &special('Oratio mortuorum', 'Polski')
 
 &special('Conclusio', 'Polski')
+
+[Special Completorium]
+$Confiteor
+$Misereatur
+$Indulgentiam
+
+&psalm(122)
+
+&psalm(141)
+
+&psalm(142)
+
+&psalm(233)
+
+&special('Oratio mortuorum1', 'Latin')
+
+&special('Conclusio', 'Latin')

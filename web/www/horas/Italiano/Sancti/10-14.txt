@@ -4,10 +4,6 @@ S. Callisti Papae et Martyris;;Duplex;;3;;vide C2
 [Rank] (rubrica 1570)
 S. Callisti Papae et Martyris;;Semiduplex;;2;;vide C2
 
-[Rule]
-vide C2;
-9 lectiones
-
 [Oratio]
 O Dio, il quale vedi che per la nostra debolezza veniamo meno: richiamaci misericordiosamente al tuo amore mediante gli esempi dei tuoi Santi. 
 $Per Dominum
@@ -28,17 +24,17 @@ Callisto, di Roma, governò la Chiesa sotto l'imperatore Antonino Eliogabalo. Eg
 [Lectio7]
 @Commune/C4:Lectio7 in 2 loco
 
+[Lectio7] (rubrica tridentina)
+@Sancti/02-22:Lectio7
+
 [Lectio8]
 @Commune/C4:Lectio8 in 2 loco
+
+[Lectio8] (rubrica tridentina)
+@Sancti/02-22:Lectio8
 
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
-[Lectio7](rubrica tridentina)
-@Sancti/02-22:Lectio7
-
-[Lectio8](rubrica tridentina)
-@Sancti/02-22:Lectio8
-
-[Lectio9](rubrica tridentina)
+[Lectio9] (rubrica tridentina)
 @Sancti/02-22:Lectio9

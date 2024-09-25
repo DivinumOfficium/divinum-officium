@@ -1,12 +1,13 @@
 [Rank]
-S. Cæciliæ Virginis et Martyris;;Duplex;;3;;vide C6b
+S. Cæciliæ Virginis et Martyris;;Duplex;;3;;vide C6
 
-[Rank] (rubrica 1570)
-S. Cæciliæ Virginis et Martyris;;Semiduplex;;2.2;;vide C6b
+[Rank] (rubrica 1570 aut rubrica 1617)
+S. Cæciliæ Virginis et Martyris;;Semiduplex;;2.2;;vide C6
 
 [Rule]
-vide C6b;
+vide C6;
 9 lectiones
+lectiones in 1 nocturno ex Commune 1 loco
 
 [Ant Vespera]
 Cantántibus orgánis, * Cæcília Dómino decantábat, dicens: Fiat cor meum immaculátum, ut non confúndar.;;109
@@ -26,21 +27,12 @@ $Per Dominum
 Cæcília virgo * Almáchium superábat: Tibúrtium et Valeriánum ad corónas vocábat.;;8
 Expánsis mánibus * orábat ad Dóminum, ut eam eríperet de inimícis.;;18
 Cilício * Cæcília membra domábat, Deum gemítibus exorábat.;;23
-V. Spécie tua et pulchritúdine tua.
-R. Inténde, próspere procéde, et regna.
 Dómine Jesu Christe, * seminátor casti consílii, súscipe séminum fructus, quos in Cæcília seminásti.;;44
 Beáta Cæcília * dixit ad Tibúrtium: Hódie te fáteor meum cognátum, quia amor Dei te fecit esse contemptórem idolórum.;;45
 Fiat, Dómine, * cor meum et corpus meum immaculátum, ut non confúndar.;;47
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
 Crédimus Christum * Fílium Dei verum Deum esse, qui sibi talem elégit fámulam.;;95
 Nos sciéntes * sanctum nomen ejus, omníno negáre non póssumus.;;96
 Tunc Valeriánus * perréxit, et signo quod accéperat, invénit sanctum Urbánum.;;97
-V. Elégit eam Deus, et præelégit eam.
-R. In tabernáculo suo habitáre facit eam.
-
-[Lectio1]
-@Commune/C6:Lectio1
 
 [Responsory1]
 R. Cantántibus órganis, Cæcília virgo in corde suo soli Dómino decantábat, dicens: 
@@ -48,17 +40,11 @@ R. Cantántibus órganis, Cæcília virgo in corde suo soli Dómino decantábat,
 V. Biduánis et triduánis jejúniis orans, commendábat Dómino quod timébat.
 R. Fiat, Dómine, cor meum et corpus meum immaculátum, ut non confúndar.
 
-[Lectio2]
-@Commune/C6:Lectio2
-
 [Responsory2]
 R. O beáta Cæcília, quæ duos fratres convertísti, Almáchium judicem superásti, 
 * Urbanum episcopum in vultu angelico demonstrásti.
 V. Quasi apis argumentosa Dómino deservísti.
 R. Urbanum episcopum in vultu angelico demonstrásti.
-
-[Lectio3]
-@Commune/C6:Lectio3
 
 [Responsory3]
 R. Virgo gloriósa semper Evangélium Christi gerébat in péctore, et non diébus neque nóctibus vacábat 
@@ -81,7 +67,7 @@ R. Tiburtium et Valerianum ad corónas vocabat.
 Inde ad Cæciliam reversus, orántem et cum ea Angelum divino splendore fulgentem invénit. Quo aspectu obstupefactus, ut primum ex timóre confirmátus est, Tiburtium fratrem suum accersit; qui, a Cæcília Christi fide imbutus et ab eodem Urbano baptizatus, ipse étiam ejusdem Angeli, quem frater ejus viderat, aspectu dignátus est. Uterque autem paulo post, Almachio præfecto, constanter martyrium subiit. Qui mox Cæciliam comprehéndi imperat, ab éaque primum, ubi Tiburtii et Valeriáni facultates sint, exquirit.
 
 [Responsory5]
-R. Cæcília intra cubiculum orántem invénit, et juxta eam stántem Angelum Dómini: 
+R. Cæcíliam intra cubiculum orántem invénit, et juxta eam stántem Angelum Dómini: 
 * Quem videns Valerianus, nimio terróre correptus est.
 V. Angelus Dómini descéndit de cælo, et lumen refulsit in habitáculo.
 R. Quem videns Valerianus, nimio terróre correptus est.
@@ -135,16 +121,12 @@ Lámpades autem hoc loco illud ipsum virginitátis domum appellat et sanctimoni�
 @Commune/C6::s/N\./Cæcília/
 
 [Ant Laudes]
-Cantántibus órganis, * Cæcília Dómino decantábat, dicens: Fiat cor meum immaculátum, ut non confúndar.
-Valeriánus * in cubículo Cæcíliam cum Angelo orántem invénit.
-Cæcília * fámula tua, Dómine, quasi apis tibi argumentósa desérvit.
-Benedíco te, * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo.
-Triduánas * a Dómino popósci indúcias, ut domum meam ecclésiam consecrárem.
+@:Ant Vespera:s/;;.*//g
 
 [Ant 2]
 Dum auróra * finem daret, Cæcília exclamávit dicens: Eia, mílites Christi, abjícite ópera tenebrárum et induímini arma lucis.
 
-[Ant 2](rubrica 1960)
+[Ant 2] (rubrica 1960)
 Dum auróra * finem daret, Cæcília exclamávit dicens: Eia, mílites Christi, abícite ópera tenebrárum et induímini arma lucis.
 
 [Ant Vespera 3]

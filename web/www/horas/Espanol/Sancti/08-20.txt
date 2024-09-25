@@ -4,14 +4,10 @@ S. Bernardi Abbatis et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
 [Name]
 Bernardo
 
-[Rule]
-vide C5a;
-9 lectiones
-
 [Oratio]
 @Commune/C4:Oratio2:s/N\./Bernardo/
 
-[Commemoratio](rubrica 1570 aut rubrica 1910 aut rubrica divino)
+[Commemoratio] (rubrica 1570 aut rubrica 1910 aut rubrica divino)
 @Sancti/08-15:Octava
 
 [Lectio4]
@@ -23,6 +19,10 @@ Brilló por su humildad, misericordia y su dulzura; la contemplación le era tan
 [Lectio6]
 Escribió muchos libros, en los cuales parece más instruido por inspiración divina que por el estudio personal. La fama de su virtud hizo que muchas veces fuese llamado a Italia para resolver los litigios entre los príncipes más poderosos y para intervenir en asuntos eclesiásticos. El papa Inocencio II encontró en él un valioso auxiliar al tratar de poner término al cisma de Pedro León y al enviarle como legado al emperador de Alemania, al rey Enrique de Inglaterra y al concilio de Pisa. Por último, a la edad de 73 años, se durmió en el Señor. Por la fama de sus milagros, fue inscrito por el papa Alejandro III en el número de los santos. Después el Sumo Pontífice Pío VIII, por decreto de la Sagrada Congregación de Ritos, declaró a San Bernardo Doctor de toda Iglesia, disponiendo que en todo el orbe cristiano se rezara su Misa y Oficio de Doctores, y concedió a perpetuidad indulgencias plenarias anuales a los que visitaran en este día las iglesias de la Orden cisterciense.
 
+[Lectio94]
+Bernardo nació en Borgoña en el seno de una buena familia, teniendo como un tesoro su castidad desde la niñez. A la edad de 22 años ingresó en el monasterio de Citeaux, que da nombre la Orden del Cister, llevando a la vida religiosa a sus hermanos y muchos otros. Se aplicó a vigilias y oración de una manera maravillosa. La humildad, misericordia, bondad, y la prudencia brillaban en él, junto al celo por meditar en las cosas divinas. Nombrado abad de Clairvaux, construyó monasterios en muchos lugares donde sus principios y disciplina florecieron mucho tiempo. Escribió muchas obras en las que está claro que había sido instruido por las enseñanzas que recibió del cielo, más que por sí mismo. Como los príncipes le imploraron que arreglara sus disputas y organizara los asuntos de la Iglesia, fue con frecuencia a Italia, siéndole de gran ayuda al Papa Inocencio II para terminar el cisma de Pedro de Leona. A la edad de 73 años, se durmió en el Señor, ganando un gran lugar de honor en la Iglesia.
+&teDeum
+
 [Lectio7]
 @Commune/C1a:Lectio7
 
@@ -31,8 +31,3 @@ Escribió muchos libros, en los cuales parece más instruido por inspiración di
 
 [Lectio9]
 @Commune/C1a:Lectio9
-
-[Lectio94]
-Bernardo nació en Borgoña en el seno de una buena familia, teniendo como un tesoro su castidad desde la niñez. A la edad de 22 años ingresó en el monasterio de Citeaux, que da nombre la Orden del Cister, llevando a la vida religiosa a sus hermanos y muchos otros. Se aplicó a vigilias y oración de una manera maravillosa. La humildad, misericordia, bondad, y la prudencia brillaban en él, junto al celo por meditar en las cosas divinas. Nombrado abad de Clairvaux, construyó monasterios en muchos lugares donde sus principios y disciplina florecieron mucho tiempo. Escribió muchas obras en las que está claro que había sido instruido por las enseñanzas que recibió del cielo, más que por sí mismo. Como los príncipes le imploraron que arreglara sus disputas y organizara los asuntos de la Iglesia, fue con frecuencia a Italia, siéndole de gran ayuda al Papa Inocencio II para terminar el cisma de Pedro de Leona. A la edad de 73 años, se durmió en el Señor, ganando un gran lugar de honor en la Iglesia.
-&teDeum
-

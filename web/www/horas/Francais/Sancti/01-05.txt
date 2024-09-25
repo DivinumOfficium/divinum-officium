@@ -1,34 +1,17 @@
 [Rank]
 In Vigilia Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-01
 
-[Rank] (rubrica 1570)
-In Vigilia Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-01
-
-[Rankreduced1955]
-In Vigilia Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-01
-
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
 
-[Rule]
-ex Sancti/01-01;
-9 lectiones
-Psalmi Dominica
-Omit preces
-Feria Te Deum
-CPapaM=Telésphore;
+[Rank] (rubrica tridentina)
+In Vigilia Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-01
 
 [Hymnus Vespera]
 @Sancti/12-25:Hymnus Vespera
 
 [HymnusM Vespera]
 @Sancti/12-25:HymnusM Vespera
-
-[Ant 1]
-@Tempora/Nat1-0:Ant 3
-
-[Versum 1]
-@Sancti/12-25:Versum 2
 
 [Oratio]
 @Tempora/Nat1-0:Oratio
@@ -54,25 +37,25 @@ De l'Epître aux Romains
 3 Car, ce qui était impossible à la Loi parce qu'elle était sans force à cause de la chair, Dieu l'a fait: en envoyant, pour le péché, son propre Fils dans une chair semblable à celle du péché, et il a condamné le péché dans la chair,
 4 afin que la justice de la loi fût accomplie en nous, qui marchons, non selon la chair, mais selon l'Esprit.
 
+[Responsory1]
+@Sancti/01-01:Responsory1
+
 [Lectio2]
 !Rom 8:5-9
 5 Ceux, en effet, qui vivent selon la chair, s'affectionnent aux choses de la chair; mais ceux qui vivent selon l'Esprit s'affectionnent aux choses de l'Esprit.
 6 Et les affections de la chair, c'est la mort, tandis que les affections de l'Esprit, c'est la vie et la paix:
 7 parce que les affections de la chair sont inimitié contre Dieu, car elles ne se soumettent pas à la loi divine, et elles ne le peuvent même pas.
 8 Or ceux qui vivent dans la chair ne sauraient plaire à Dieu.
-9 Pour vous, vous ne vivez point dans la chair, mais dans l'Esprit, si du moins l'Esprit de Dieu habite en vous. 
+9 Pour vous, vous ne vivez point dans la chair, mais dans l'Esprit, si du moins l'Esprit de Dieu habite en vous.
+
+[Responsory2]
+@Sancti/01-01:Responsory2
 
 [Lectio3]
 !Rom 8:9-11
 9 Si quelqu'un n'a pas l'Esprit du Christ, il ne lui appartient pas.
 10 Mais si le Christ est en vous, le corps, il est vrai, est mort à cause du péché, mais l'esprit est vie à cause de la justice.
 11 Et si l'Esprit de celui qui a ressuscité Jésus d'entre les morts habite en vous, celui qui a ressuscité le Christ d'entre les morts rendra aussi la vie à vos corps mortels, à cause de son Esprit qui habite en vous.
-
-[Responsory1]
-@Sancti/01-01:Responsory1
-
-[Responsory2]
-@Sancti/01-01:Responsory2
 
 [Responsory3]
 @Sancti/01-01:Responsory3
@@ -109,9 +92,6 @@ Ce passage nous fait entendre que non seulement Hérode, mais aussi les prêtres
 
 [Hymnus Laudes]
 @Sancti/12-25:Hymnus Laudes
-
-[Ant 2]
-@Tempora/Nat1-0:Ant 1
 
 [Lectio Prima]
 @Tempora/Nat1-0:Lectio Prima

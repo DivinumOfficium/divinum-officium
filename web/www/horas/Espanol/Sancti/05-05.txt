@@ -1,10 +1,6 @@
 [Rank]
 S. Pii V Papæ et Confessoris;;Duplex;;3;;vide C4
 
-[Rule]
-vide C4;mtv
-9 lectiones
-
 [Oratio]
 Oh Dios, que te dignaste elegir por Pontífice máximo al bienaventurado Pío para quebrantar a los enemigos de tu Iglesia y reformar el culto divino; haz que su protección nos defienda, y que de tal manera nos consagremos a tu servicio, que después de triunfar de las asechanzas de todos nuestros enemigos, gocemos de una paz perpetua.
 $Per Dominum
@@ -18,6 +14,10 @@ El Papa Paulo IV, del cual era muy amado por sus virtudes, le promovió al obisp
 [Lectio6]
 El sultán de los turcos Selim, cuya audacia creció con sus victorias, reunió una numerosa flota cerca de las islas Equínades, mas fue vencido gracias a Pío V, no tanto con las armas como con las plegarias a Dios. Esta victoria Pío V la conoció por revelación divina, y la notificó a sus familiares en la misma hora en que ocurrió. Preparando una nueva expedición contra los turcos, enfermó de gravedad, y tras haber sufrido con gran paciencia los más acerbos dolores y recibido los sacramentos, entregó plácidamente su alma a Dios, en el año 1572 a los 68 años. Gobernó la Santa Iglesia 6 años, 3 meses y 24 días. Su cuerpo es objeto de mucha veneración por parte de los fieles en la Basílica de Santa María la Mayor. Dios realizó por su intercesión muchos milagros; y habiendo sido éstos probados en forma jurídica, el papa Clemente XI le inscribió en el número de los Santos.
 
+[Lectio94]
+Pío nació en Bosco, Lombardía, e ingresó a la Orden de Predicadores a la edad de 14 años. Ordenado al sacerdocio, predicó en muchas iglesias con mucho fruto espiritual. Durante mucho tiempo ejerció el cargo de Inquisidor de una manera vigorosa y digna de elogio. Fue promovido por Pablo IV al obispado de Nepi y Sutri, y dos años más tarde le elevó a la dignidad de Cardenal de la Iglesia. Pío IV lo trasladó a la sede de Mondóvi en Piamonte, donde visitó toda su diócesis y remedió muchos abusos. A partir de entonces, regresó a Roma, donde estuvo involucrado en muchos asuntos importantes. Cuando Pío IV murió, fue elegido Papa, contra todas las expectativas, no cambiando nada en su vida, excepto sus vestiduras. No tanto por las armas como por las oraciones, venció a Selim, sultán de los turcos, que había reunido una gran flota en Lepanto. En el año 1572, mientras preparaba una nueva expedición contra los turcos, murió pacíficamente en el Señor, a la edad de sesenta y ocho años. Su cuerpo es venerado por los fieles en la basílica de Santa María la Mayor. Clemente XI lo inscribió entre los Santos.
+&teDeum
+
 [Lectio7]
 @Sancti/04-11:Lectio7
 
@@ -26,11 +26,3 @@ El sultán de los turcos Selim, cuya audacia creció con sus victorias, reunió 
 
 [Lectio9]
 @Sancti/04-11:Lectio9
-
-[Lectio94]
-Pío nació en Bosco, Lombardía, e ingresó a la Orden de Predicadores a la edad de 14 años. Ordenado al sacerdocio, predicó en muchas iglesias con mucho fruto espiritual. Durante mucho tiempo ejerció el cargo de Inquisidor de una manera vigorosa y digna de elogio. Fue promovido por Pablo IV al obispado de Nepi y Sutri, y dos años más tarde le elevó a la dignidad de Cardenal de la Iglesia. Pío IV lo trasladó a la sede de Mondóvi en Piamonte, donde visitó toda su diócesis y remedió muchos abusos. A partir de entonces, regresó a Roma, donde estuvo involucrado en muchos asuntos importantes. Cuando Pío IV murió, fue elegido Papa, contra todas las expectativas, no cambiando nada en su vida, excepto sus vestiduras. No tanto por las armas como por las oraciones, venció a Selim, sultán de los turcos, que había reunido una gran flota en Lepanto. En el año 1572, mientras preparaba una nueva expedición contra los turcos, murió pacíficamente en el Señor, a la edad de sesenta y ocho años. Su cuerpo es venerado por los fieles en la basílica de Santa María la Mayor. Clemente XI lo inscribió entre los Santos.
-&teDeum
-
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
-

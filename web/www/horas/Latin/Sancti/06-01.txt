@@ -1,17 +1,17 @@
 [Rank]
-S. Angelæ Mericiæ Virginis;;Duplex;;3;;vide C6
+S. Angelæ Mericiæ Virginis;;Duplex;;3;;vide C6b
+
+[Rank] (rubrica innovata)
+S. Angelae Mericiae Virginis;;Duplex optional;;2;;vide C6b
 
 [Rule]
-vide C6;
+vide C6b;
 9 lectiones
 nocomm1960
 
 [Oratio]
 Deus, qui novum per beátam Angelam sacrárum Vírginum collégium in Ecclésia tua floréscere voluísti: da nobis, ejus intercessióne, angélicis móribus vívere; ut, terrénis ómnibus abdicátis, gáudiis pérfrui mereámur ætérnis.
 $Per Dominum
-
-[Hymnus Matutinum]
-@Commune/C6:Hymnus Matutinum pro Virgo tantum et non Martyr
 
 [Lectio4]
 Angela Merícia, Decentiáni, Veronénsis diœcésis óppido ad lacum Benácum in dicióne Venéta, piis orta paréntibus, a prima ætáte virginitátis lílium, quod perpétuo serváre statúerat, sédula sepsit. Ab omni mulíebri ornátu abhórrens, egrégiam vultus formam pulchrámque cæsáriem studióse fœdávit, ut cælésti dumtáxat animárum Sponso placéret. In ipso autem adolescéntiæ flore paréntibus orbáta, austerióris vitæ desidério in desértum locum aufúgere tentávit; sed, ab avúnculo prohíbita, novit præstáre domi, quod in solitúdine non lícuit. Cilício ac flagéllis frequénter usa, carnem nónnisi infírma valetúdine, vinum in Nativitátis et Resurrectiónis Domínicæ tantum celebritáte; complúres vero dies, nihil omníno degustávit. Oratióni dédita, brevíssimum humi carpébat somnum. Dæmónem vero sub lucéntis ángeli forma sibi illúdere conántem agnóvit prótinus, et conjécit in fugam. Tandem patérnis bonis abdicátis, et hábitum ac régulam tértii órdinis sancti Francísci ampléxa, evangélicam paupertátem virginitátis laudi conjúnxit.

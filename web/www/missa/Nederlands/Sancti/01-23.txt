@@ -1,27 +1,6 @@
 [Rank]
 S. Raymundi de Penafort Confessoris;;Semiduplex;;2.2;;vide C5
 
-[Rule]
-vide C5
-Gloria
-!Suffragium=Maria2;;
-
 [Oratio]
 God, Gij hebt de heilige Raymundus uitgekozen tot een buitengewone bedienaar van het Sacrament van boetvaardigheid en hem wonderbaar over de golven van de zee geleid. Doe ons door zijn voorspraak ware vruchten van boetvaardigheid voortbrengen en de haven van de eeuwige zaligheid bereiken.
 $Per Dominum
-
-[Commemoratio Oratio]
-@Commune/C6a:Oratio1:s/N\./Emerentiana/
-
-[Secreta]
-@Commune/C5
-
-[Commemoratio Secreta]
-!Pro S. Emerentianæ Virg. et Mart.
-@Commune/C6a:Secreta1:s/N\./Emerentiana/
-
-[Postcommunio]
-@Commune/C5
-
-[Commemoratio Postcommunio]
-@Commune/C6a:Postcommunio1:s/N\./Emerentiana/

@@ -1,15 +1,6 @@
 [Rank]
 S. Raphaëlis Archangeli;;Duplex majus;;4;;ex Sancti/05-08
 
-[Rule]
-ex Sancti/05-08
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=137
-Horas1960 Feria
-
 [Ant Vespera]
 El ángel San Rafael * fue enviado a Tobías y a Sara para curarlos.
 El ángel entró * y saludó a Tobías: La alegría sea siempre contigo.
@@ -56,7 +47,7 @@ Del Libro de Tobías
 1 Acabados los días de la boda, llamó Tobit a su hijo Tobías y le dijo: «Hijo, ya es tiempo de pagar el salario al hombre que te acompañó. Y le añadirás un sobresueldo.» 
 2 Respondió Tobías: «Padre, ¿qué salario puedo darle? 
 3 Aun entregándole la mitad de la hacienda que traje conmigo, no salgo perdiendo. Me ha guiado incólume, ha cuidado de mi mujer, me ha traído el dinero y te ha curado a ti. 
-4 ¿Qué salario voy a darle?» Díjole Tobit: «Hijo, bien merece que tome la mitad de cuanto trajo.» 
+4 ¿Qué salario voy a darle?» Díjole Tobit: «Hijo, bien merece que tome la mitad de cuanto trajo.»
 
 [Responsory1]
 R. A un mismo tiempo fueron oídas las plegarias de ambos en la presencia de la Majestad del Soberano Dios; 
@@ -74,13 +65,17 @@ R. Y así fue despachado por el Señor el santo Ángel Rafael, para que lo liber
 10 Mas los que cometen el pecado y la iniquidad, son enemigos de su propia alma. 
 11 Por tanto voy a manifestaros la verdad, y no quiero encubriros más lo que ha estado oculto. 
 12 Cuando tú orabas con lágrimas, y enterrabas los muertos, y te levantabas de la mesa a medio comer, y escondías de día los cadáveres en tu casa, y los enterrabas de noche, yo presentaba al Señor tus oraciones. 
-13 Y por lo mismo que eras grato a Dios, fue necesario que la tentación o aflicción te probase. 
+13 Y por lo mismo que eras grato a Dios, fue necesario que la tentación o aflicción te probase.
 
 [Responsory2]
 R. Saliendo Tobías, encontró un gallardo joven, que estaba en pie, con el vestido ceñido, y como a punto de viajar; y le saludó diciéndole: 
 * ¿De dónde eres, buen mancebo? 
 V. Y sin saber que era un Ángel del Señor, le saludó, diciéndole: 
 R. ¿De dónde eres, buen mancebo? 
+
+[Lectio3]
+@:Lectio3DA
+(rubrica 1960 omittitur)
 
 [Lectio3DA]
 !Tob 12:14-22
@@ -92,11 +87,7 @@ R. ¿De dónde eres, buen mancebo?
 19 Todos los días me hacía ver de vosotros; no comía ni bebía; lo que vosotros veíais era una apariencia. 
 20 Ahora alabad a Dios, que yo me subo al que me envió, y poned por escrito todo lo sucedido. 
 21 Se levantaron, pero no le volvieron a ver. Y confesaron las grandezas y maravillas de Dios y cómo el ángel del Señor se les había aparecido. 
-22 Y postrados en tierra durante tres horas, estuvieron bendiciendo a Dios; y publicaron todas sus maravillas. 
-
-[Lectio3]
-@:Lectio3DA
-(rubrica 1960 omittitur)
+22 Y postrados en tierra durante tres horas, estuvieron bendiciendo a Dios; y publicaron todas sus maravillas.
 
 [Responsory3]
 R. Entrado que hubo el Ángel, saludó a Tobías, diciendo: Sea siempre contigo la alegría. 
@@ -176,41 +167,29 @@ Alrededor de aquella piscina yacían muchos enfermos, ciegos, cojos, paralítico
 [Ant Laudes]
 @:Ant Vespera
 
+[Capitulum Laudes]
+!Tob 12:12
+v. Cuando tú orabas con lágrimas y dabas sepultura a los muertos; cuando dejabas la comida, para esconder de día los muertos en tu casa y sepultarlos de noche, yo presentaba tu oración al Señor.
+$Deo gratias
+
 [Hymnus Laudes]
 @Sancti/03-24
 
 [Versum 2]
 @Sancti/05-08:Versum 3
 
-[Ant 2]
-@:Ant 1
-
-[Capitulum Laudes]
-!Tob 12:12
-v. Cuando tú orabas con lágrimas y dabas sepultura a los muertos; cuando dejabas la comida, para esconder de día los muertos en tu casa y sepultarlos de noche, yo presentaba tu oración al Señor.
-$Deo gratias
-
 [Lectio Prima]
 !Tob 12:20
 v. Ya es hora de que vuelva al que me envió. Vosotros, bendecid a Dios y anunciad sus maravillas.
-
-[Responsory Tertia]
-@Sancti/05-08
 
 [Capitulum Sexta]
 !Tob 12:14-15
 v. Pero ahora el Señor me ha enviado a curarte y a librar del demonio a Sara, la mujer de tu hijo. Yo soy el ángel San Rafael, uno de los siete de la corte del Señor.
 $Deo gratias
 
-[Responsory Sexta]
-@Sancti/05-08
-
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
-
-[Responsory Nona]
-@Sancti/05-08
 
 [Versum 3]
 @Sancti/05-08:Versum 2

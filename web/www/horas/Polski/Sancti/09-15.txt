@@ -1,17 +1,11 @@
 [Rank]
 Siedmiu Boleści Najświętszej Marji Panny;;Duplex 2nd class;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Siedmiu Boleści Najświętszej Marji Panny;;Duplex 2nd class;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Siedmiu Boleści Najświętszej Marji Panny;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
 
 [Ant Vespera]
 Gdzież poszedł miły twój, * o najpiękniejsza między niewiastami? gdzie się obrócił miły twój? a będziem go z tobą szukać.;;109
@@ -20,10 +14,51 @@ Nie ma krasy * ani piękności i widzieliśmy go, a nie było nacz pojrzeć.;;12
 Od stopy nogi * aż do wierzchu głowy nie masz w nim zdrowia.;;126
 Obłóżcie mię kwieciem, * osypcie mię jabłki; boć mdleję od miłości.;;147
 
-[Capitulum Laudes]
-!Lm 2:13
-v. Komu cię porównam? abo komu cię przypodobam, córko Jerozolimska? z kim cię porównam, i pocieszę cię, panno, córko Sion? bo wielkie jest, jako morze, skruszenie twoje.
-$Deo gratias
+[Hymnus Vespera]
+v. Niechaj całe niebiosa okryją się mrokiem,
+Zgrozą przejęte słońce nie skon dnia przyspieszy,
+W chwili, gdy tę okrutną śmierć wspominać będę,
+Zapadanie się w otchłań Bożego Jestestwa.
+_
+Matko, Tyś była świadkiem przebolesnej męki,
+A chociaż przytłoczona niewymownym bólem,
+Znosiłaś twe cierpienia sercem nieugiętym,
+Słysząc jęki na Krzyżu wiszącego Syna.
+_
+Syn Twój wisiał przed oczyma Twemi,
+Ubiczowany, cały ranami okryty,
+A razy, które Ciało Jego poorały,
+Jakże bolesny oddźwięk miały w sercu Twojem.
+_
+Oplwania i policzki, uderzenia, rany,
+Gwoździe ostre i ocet, żółć, gąbka i włócznia,
+Upał pragnienia, ciernie i krew spływająca,
+Na miłujące serce jak rozliczne męki.
+_
+Nad wszystkich męczenników wytrwalsza Dziewica,
+Mocą Bożą objęta stoi u stóp Krzyża,
+Choć tyle przyczyn śmierci godzi w Ciebie, Matko.
+Ukrzyżowanaś bólem, jednak nie umierasz.
+_
+Najwyższej, świętej Trójcy chwał, cześć i sława,
+Błagam Ją w ufnej, kornej wytrwałej modlitwie,
+Aby mi w trudach walki udzieliła mocy,
+Takiej, jaka pod Krzyżem była w duszy Marji.
+Amen.
+
+[Versum 1]
+V. Królowo Męczenników, módl się za nami.
+R. Któraś po Krzyżem Jezusa stała.
+
+[Ant 1]
+Nie patrzajcie na mię, * żem jest śniada; bo mię opaliło słońce: synowie matki mojéj walczyli przeciwko mnie.
+
+[Oratio]
+Boże, podczas którego męki, według przepowiedni Symeona, przesłodką duszę chwalebnej Panny i Matki Marji miecz boleści przeszył: racz sprawić łaskawie, abyśmy, Jej boleści ze czcią rozpamiętywając, męki Twojej błogosławionych skutków doznali:
+$Qui vivis
+
+[Invit]
+Stańmy przy krzyżu z Maryją Matką Jezusa, * Której duszę miecz boleści przeniknął.
 
 [Hymnus Matutinum]
 v. Ach, w iluż łez strumieniach,
@@ -61,48 +96,6 @@ Będzie ustawiczna chwała,
 Oraz ciągła sława i cześć
 W tym i w każdym wieku.
 Amen.
-
-[Versum 1]
-V. Królowo Męczenników, módl się za nami.
-R. Któraś po Krzyżem Jezusa stała.
-
-[Ant 1]
-Nie patrzajcie na mię, * żem jest śniada; bo mię opaliło słońce: synowie matki mojéj walczyli przeciwko mnie.
-
-[Hymnus Vespera]
-v. Niechaj całe niebiosa okryją się mrokiem,
-Zgrozą przejęte słońce nie skon dnia przyspieszy,
-W chwili, gdy tę okrutną śmierć wspominać będę,
-Zapadanie się w otchłań Bożego Jestestwa.
-_
-Matko, Tyś była świadkiem przebolesnej męki,
-A chociaż przytłoczona niewymownym bólem,
-Znosiłaś twe cierpienia sercem nieugiętym,
-Słysząc jęki na Krzyżu wiszącego Syna.
-_
-Syn Twój wisiał przed oczyma Twemi,
-Ubiczowany, cały ranami okryty,
-A razy, które Ciało Jego poorały,
-Jakże bolesny oddźwięk miały w sercu Twojem.
-_
-Oplwania i policzki, uderzenia, rany,
-Gwoździe ostre i ocet, żółć, gąbka i włócznia,
-Upał pragnienia, ciernie i krew spływająca,
-Na miłujące serce jak rozliczne męki.
-_
-Nad wszystkich męczenników wytrwalsza Dziewica,
-Mocą Bożą objęta stoi u stóp Krzyża,
-Choć tyle przyczyn śmierci godzi w Ciebie, Matko.
-Ukrzyżowanaś bólem, jednak nie umierasz.
-_
-Najwyższej, świętej Trójcy chwał, cześć i sława,
-Błagam Ją w ufnej, kornej wytrwałej modlitwie,
-Aby mi w trudach walki udzieliła mocy,
-Takiej, jaka pod Krzyżem była w duszy Marji.
-Amen.
-
-[Invit]
-Stańmy przy krzyżu z Maryją Matką Jezusa, * Której duszę miecz boleści przeniknął.
 
 [Ant Matutinum]
 Rozmnożyli się, * co mię trapią, wiele ich powstają przeciwko mnie.;;3
@@ -181,6 +174,11 @@ Oto – powiada – Syn Twój! Oto Matka twoja! Na Krzyżu Chrystus sporządził
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g
 
+[Capitulum Laudes]
+!Lm 2:13
+v. Komu cię porównam? abo komu cię przypodobam, córko Jerozolimska? z kim cię porównam, i pocieszę cię, panno, córko Sion? bo wielkie jest, jako morze, skruszenie twoje.
+$Deo gratias
+
 [Hymnus Laudes]
 v. Boże najwyższego miłosierdzia,
 Daj nam według zwyczaju
@@ -205,10 +203,6 @@ R. Uczyń nas radującymi się w królestwie niebieskim.
 
 [Ant 2]
 Chodźcie, * a wstąpmy na górę Pańską, i zbaczcie, jeśli jest boleść, jako boleść moja.
-
-[Oratio]
-Boże, podczas którego męki, według przepowiedni Symeona, przesłodką duszę chwalebnej Panny i Matki Marji miecz boleści przeszył: racz sprawić łaskawie, abyśmy, Jej boleści ze czcią rozpamiętywając, męki Twojej błogosławionych skutków doznali:
-$Qui vivis
 
 [Lectio Prima]
 !Lm 2:18

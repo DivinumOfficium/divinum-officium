@@ -1,26 +1,12 @@
 [Rank]
 Św. Rafała Archanioła;;Duplex majus;;4;;ex Sancti/05-08
 
-[Rule]
-ex Sancti/05-08
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=137
-Horas1960 Feria
-
 [Ant Vespera]
 Posłan został * Aniół Rafał do Tobiasza i Sary, aby ich uleczyć.
 Wszedł Aniół * do Tobiasza by go zbawić, i rzekł: Niech ci zawżdy będzie wesele.
 Silny duchem * bądź, Tobiaszu: blisko bowiem jest czas, gdy Bóg cię uleczy.
 Błogosławcie Pana nieba, * i wobec wszystkiego, co żyje, wychwalajcie go, bo uczynił wam według miłosierdzia swego.
 Pokój wam, * nie lękajcie się: Boga błogosławcie, a śpiewajcie mu.
-
-[Capitulum Laudes]
-!Tb 12:12
-v. Gdyś się modliwał z płaczem i pogrzebałeś umarłe, i zostawiałeś obiad twój a kryłeś umarłe przez dzień w domu twoim, a w nocyś je pogrzebał: jam ofiarował twoję modlitwę Panu.
-$Deo gratias
 
 [Hymnus Vespera]
 @Sancti/05-08:Hymnus Laudes:s/Anioł pokoju.*?_//s s/Anioł mężny.*?_//s
@@ -80,6 +66,11 @@ V. I odpowiedział Tobiasz: Co za wesele mi będzie, który w ciemności siedzę
 R. Bądź serca mężnego, blisko tego, że od Boga uzdrowion będziesz.
 &Gloria
 R. Bądź serca mężnego, blisko tego, że od Boga uzdrowion będziesz.
+
+[Capitulum Laudes]
+!Tb 12:12
+v. Gdyś się modliwał z płaczem i pogrzebałeś umarłe, i zostawiałeś obiad twój a kryłeś umarłe przez dzień w domu twoim, a w nocyś je pogrzebał: jam ofiarował twoję modlitwę Panu.
+$Deo gratias
 
 [Hymnus Laudes]
 @Sancti/03-24::s/Który oznaczasz moc Bożą;/Oznaczający uzdrowienie Boże:/ s/Przymnóż sił słabym,/Oddalaj choroby cielesne,/ s/Przynieś ulgę smutnym./Przynoś zdrowie duszom./

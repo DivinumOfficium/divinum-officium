@@ -10,64 +10,30 @@ Special Benedictio
 Special Lectio 3
 Doxology=Nat
 Antiphonas horas
-(rubrica tridentina) Psalmi Dominica 
+(rubrica tridentina) Psalmi Dominica
 
 [Hymnus Vespera]
-/:Prima stropha sequentis hymni dicitur flexis genibus.:/
-v. Ave maris stella,
-Dei Mater alma,
-Atque semper Virgo,
-Felix cæli porta.
-_
-Sumens illud Ave
-Gabriélis ore,
-Funda nos in pace,
-Mutans Hevæ nomen.
-_
-Solve vincla reis,
-Profer lumen cæcis,
-Mala nostra pelle,
-Bona cuncta posce.
-_
-Monstra te esse matrem,
-Sumat per te preces,
-Qui pro nobis natus,
-Tulit esse tuus.
-_
-Virgo singuláris,
-Inter omnes mitis,
-Nos culpis solútos
-Mites fac et castos.
-_
-Vitam præsta puram,
-Iter para tutum,
-Ut vidéntes Jesum,
-Semper collætémur.
-_
-Sit laus Deo Patri,
-Summo Christo decus,
-Spirítui Sancto,
-Tribus honor unus.
-Amen.
+@Commune/C11
 
 [Versum 1]
 @Commune/C6:Versum 2
 
 [Ant 1]
 Beáta Mater * et intácta Virgo, gloriósa Regína mundi, intercéde pro nobis ad Dóminum.
+(sed tempore paschali)
+Regína cæli, * lætáre, allelúja; quia quem meruísti portáre, allelúja; resurréxit, sicut dixit, allelúja: ora pro nobis Deum, allelúja.
 
 [Oratio]
-Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
-$Per Dominum
+@Commune/C11
 
 [Invit]
 Ave María, grátia plena, * Dóminus tecum.
 
 [Hymnus Matutinum]
-@Commune/C11:Hymnus Matutinum
+@Commune/C11
 
 [HymnusM Matutinum]
-@Commune/C11:HymnusM Matutinum
+@Commune/C11
 
 [Benedictio]
 Précibus et méritis beátæ Maríæ semper Vírginis et ómnium Sanctórum, perdúcat nos Dóminus ad regna cælórum.
@@ -75,10 +41,10 @@ Nos cum prole pia benedícat Virgo María.
 Ipsa Virgo Vírginum intercédat pro nobis ad Dóminum.
 Per Vírginem matrem concédat nobis Dóminus salútem et pacem.
 
-[Responsory1](rubrica tridentina)
+[Responsory1] (rubrica tridentina)
 @Commune/C11
 
-[Responsory2](rubrica tridentina)
+[Responsory2] (rubrica tridentina)
 @Commune/C11:Responsory7:1-3
 R. Quia ex te ortus est sol justítiæ
 &Gloria
@@ -87,56 +53,17 @@ R. Christus, Deus noster.
 [Versum 0]
 @Commune/C11
 
-[Ant Laudes](rubrica tridentina aut rubrica monastica)
-@Commune/C11:Ant Vespera:s/;;.*//g
+[Ant Laudes] (rubrica tridentina aut rubrica monastica)
+@Commune/C11
 
 [Capitulum Laudes]
-!Sir 24:14
-v. Ab inítio et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi.
-$Deo gratias.
+@Commune/C11
 
 [HymnusM Laudes]
-v. O gloriósa Dómina,
-Excélsa super sídera:
-Qui te creávit, próvide
-Lactásti sacro úbere.
-_
-Quod Heva tristis ábstulit,
-Tu reddis almo gérmine:
-Intrent ut astra flébiles,
-Cæli fenéstra facta es.
-_
-Tu Regis alti jánua,
-Et porta lucis fúlgida:
-Vitam datam per Vírginem,
-Gentes redémptæ, pláudite.
-_
-Glória tibi Dómine,
-Qui natus es de Vírgine,
-Cum Patr[e] et Sancto Spíritu,
-In sempitérna sǽcula. Amen.
+@Commune/C11
 
 [Hymnus Laudes]
-{:Ogloriosavirginum:}v. O gloriósa vírginum,
-Sublímis inter sídera,
-Qui te creávit, párvulum
-Lacténte nutris úbere.
-_
-Quod Heva tristis ábstulit,
-Tu reddis almo gérmine:
-Intrent ut astra flébiles,
-Cæli reclúdis cárdines.
-_
-Tu Regis alti jánua
-Et aula lucis fúlgida:
-Vitam datam per Vírginem,
-Gentes redémptæ, pláudite.
-_
-* Jesu tibi sit glória,
-Qui natus es de Vírgine,
-Cum Patre, et almo Spíritu,
-In sempitérna sǽcula.
-Amen.
+@Commune/C11
 
 [Versum 2]
 V. Benedícta tu in muliéribus.
@@ -144,63 +71,36 @@ R. Et benedíctus fructus ventris tui.
 
 [Ant 2]
 Beáta Dei Génetrix, María, * Virgo perpétua, templum Dómini, sacrárium Spíritus Sancti, sola sine exémplo placuísti Dómino nostro Jesu Christo: ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu.
+(sed tempore paschali)
+@:Ant 1
 
 [Lectio Prima]
-!Sir 24:19-20
-v. In platéis sicut cinnamómum et bálsamum aromatízans odórem dedi: quasi myrrha elécta, dedi suavitátem odóris.
+@Commune/C11
 
-[Responsory Tertia]
-R.br. Spécie tua * Et pulchritúdine tua.
-R. Spécie tua * Et pulchritúdine tua.
-V. Inténde, próspere procéde, et regna.
-R. Et pulchritúdine tua.
-&Gloria
-R. Spécie tua * Et pulchritúdine tua.
-_
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
+[Responsory Breve Tertia]
+@Commune/C6
+
+[Versum Tertia]
+@Commune/C6:Nocturn 2 Versum
 
 [Capitulum Sexta]
-!Sir 24:15-16
-v. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.
-$Deo gratias.
+@Commune/C11
 
-[Responsory Sexta]
-R.br. Adjuvábit eam * Deus vultu suo.
-R. Adjuvábit eam * Deus vultu suo.
-V. Deus in médio ejus, non commovébitur.
-R. Deus vultu suo.
-&Gloria
-R. Adjuvábit eam * Deus vultu suo.
-_
-V. Elégit eam Deus, et præelégit eam.
-R. In tabernáculo suo habitáre facit eam.
+[Responsory Breve Sexta]
+@Commune/C6
 
-[Responsory Sexta](tempore paschali)
-R.br. Adjuvábit eam Deus vultu suo, * Allelúja, allelúja.
-R. Adjuvábit eam Deus vultu suo, * Allelúja, allelúja.
-V. Deus in médio ejus, non commovébitur.
-R. Allelúja, allelúja.
-&Gloria
-R. Adjuvábit eam Deus vultu suo, * Allelúja, allelúja.
-_
-V. Elégit eam Deus, et præelégit eam, allelúja.
-R. In tabernáculo suo habitáre facit eam, allelúja.
+[Versum Sexta]
+@Commune/C6:Nocturn 3 Versum
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias.
 
-[Responsory Nona]
-R.br. Elégit eam Deus, * Et præelégit eam.
-R. Elégit eam Deus, * Et præelégit eam.
-V. In tabernáculo suo habitáre facit eam.
-R. Et præelégit eam.
-&Gloria
-R. Elégit eam Deus, * Et præelégit eam.
-_
-V. Diffúsa est grátia in lábiis tuis.
-R. Proptérea benedíxit te Deus in ætérnum.
+[Responsory Breve Nona]
+@Commune/C6
+
+[Versum Nona]
+@Commune/C6:Versum 2
 
 [Lectio M01]
 Ex Epístola sancti Ambrósii Epíscopi ad Sirícium Papam

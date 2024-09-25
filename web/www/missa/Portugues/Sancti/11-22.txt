@@ -1,7 +1,7 @@
 [Rank]
 S. Caeciliae Virginis et Martyris;;Duplex;;3;;vide C6
 
-[Rank1570]
+[Rank] (rubrica 1570)
 S. Caeciliae Virginis et Martyris;;Semiduplex;;2;;vide C6
 
 [Rule]
@@ -14,14 +14,14 @@ Gloria
 ! Paramentos vermelhos
 
 [Introitus]
-@Commune/C6:Introitus
+@Commune/C6
 
 [Oratio]
 Ó Deus, que nos alegrais com a solenidade anual da B. Cecília, vossa Virgem e Mártir, dignai-Vos permitir que, honrando-a com estes cultos, imitemos também os exemplos da sua piedosa vida.
 $Per Dominum
 
 [Lectio]
-@Commune/C6a:Lectio
+@Commune/C6a
 
 [Graduale]
 ! Ps 44:11; 44:12
@@ -32,10 +32,10 @@ V. Com a vossa glória e com vossa formosura caminhai, triunfai e reinai. Alelui
 As cinco virgens prudentes tomaram óleo em seus vasos para suas lâmpadas. No meio da noite uma voz soou: eis que chega o esposo: ide ao encontro de Cristo, Senhor. Aleluia.
 
 [Evangelium]
-@Commune/C6b:Evangelium
+@Commune/C6
 
 [Offertorium]
-@Commune/C6b:Offertorium
+@Commune/C6
 
 [Secreta]
 Que esta hóstia de propiciação e de louvor, Senhor, Vos rogamos, nos torne sempre dignos da vossa misericórdia, pela intercessão da B. Cecília, vossa Virgem e Mártir.

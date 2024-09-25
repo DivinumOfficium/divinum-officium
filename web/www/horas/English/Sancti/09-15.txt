@@ -1,17 +1,11 @@
 [Rank]
 Septem Dolorum Beatae Mariae Virginis;;Duplex 2nd class;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Septem Dolorum Beatae Mariae Virginis;;Duplex 2nd class;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Septem Dolorum Beatae Mariae Virginis;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
 
 [Ant Vespera]
 Whither is thy beloved gone, * O thou fairest among women? Whither is thy beloved turned aside? that we may seek him with thee.;;109
@@ -20,10 +14,51 @@ He hath no form nor comeliness, * and when we shall see him there is no beauty t
 From the sole of the foot * even unto the head, there is no soundness in it.;;126
 Revive me with flowers, * stay me up with apples for I am swooning with love.;;147
 
-[Capitulum Laudes]
-!Lam 2:13
-v. To what shall I compare thee? or to what shall I liken thee, O daughter of Jerusalem? to what shall I equal thee, that I may comfort thee, O virgin daughter of Sion? for great as the sea is thy destruction: who shall heal thee? 
-$Deo gratias
+[Hymnus Vespera]
+v. Now let the darkling eve mount suddenly on high,
+The sun affrighted reave his splendours from the sky,
+While I in silence grieve o'er the mocked agony
+And the divine catastrophe.
+_
+Grief-drenched, thou dost appear with heart of adamant,
+O Mother; and dost hear the great hierophant,
+Upon his wooden bier locked in the arms of death,
+Utter in groans his parting breath.
+_
+What lookest thou upon, mangled and bruised and torn?
+Ah, 'tis the very Son thy yearning breast hath borne!
+Surely, each breaking moan and each deep-mouthèd wound
+Its fellow in thy heart hath found!
+_
+Surely, the taunts and woes, the scourge, the dripping thorn,
+The spitting and the blows, the gall, the lance, the scorn—
+Surely, each torment throws a poison-dart at thee,
+Crushed by their manifold tyranny.
+_
+Yet thou with patient mien beneath his cross dost stand,
+Nobler in this, I ween, than all the martyr-band:
+A thousand deaths, O Queen, upon thy spirit lie,
+Yet thou, O marvel! dost not die.
+_
+O Holy Trinity, let earth and heaven raise
+Their song of laud to thee the while my spirit prays:—
+When evil comes to me, the strength do thou impart
+That erst upheld thy Mother's heart!
+Amen.
+
+[Versum 1]
+V. Pray for us, O Queen of Martyrs.
+R. Who didst stand by the Cross of Jesus.
+
+[Ant 1]
+Look not upon me * because I am black, because the sun hath tanned me. My mother's children were angry with me.
+
+[Oratio]
+O God, at Whose suffering the prophecy of Simeon was fulfilled, and a sword of sorrow pierced through the gentle soul of the glorious Virgin and Mother Mary, mercifully grant that we who speak worshipfully of her woes, may obtain the saving purchase of thy suffering.
+$Qui vivis
+
+[Invit]
+Let us take our stand by the Cross, in company with Mary, the Mother of Jesus. * A sword of sorrow hath pierced through her own soul also.
 
 [Hymnus Matutinum]
 v. What a sea of tears and sorrow
@@ -60,48 +95,6 @@ With the co-eternal Spirit,
 Trinity in Unity,
 Be salvation, honour, blessing
 Now and through eternity.
-Amen.
-
-[Versum 1]
-V. Pray for us, O Queen of Martyrs.
-R. Who didst stand by the Cross of Jesus.
-
-[Ant 1]
-Look not upon me * because I am black, because the sun hath tanned me. My mother's children were angry with me.
-
-[Invit]
-Let us take our stand by the Cross, in company with Mary, the Mother of Jesus. * A sword of sorrow hath pierced through her own soul also.
-
-[Hymnus Vespera]
-v. Now let the darkling eve mount suddenly on high,
-The sun affrighted reave his splendours from the sky,
-While I in silence grieve o'er the mocked agony
-And the divine catastrophe.
-_
-Grief-drenched, thou dost appear with heart of adamant,
-O Mother; and dost hear the great hierophant,
-Upon his wooden bier locked in the arms of death,
-Utter in groans his parting breath.
-_
-What lookest thou upon, mangled and bruised and torn?
-Ah, 'tis the very Son thy yearning breast hath borne!
-Surely, each breaking moan and each deep-mouthèd wound
-Its fellow in thy heart hath found!
-_
-Surely, the taunts and woes, the scourge, the dripping thorn,
-The spitting and the blows, the gall, the lance, the scorn—
-Surely, each torment throws a poison-dart at thee,
-Crushed by their manifold tyranny.
-_
-Yet thou with patient mien beneath his cross dost stand,
-Nobler in this, I ween, than all the martyr-band:
-A thousand deaths, O Queen, upon thy spirit lie,
-Yet thou, O marvel! dost not die.
-_
-O Holy Trinity, let earth and heaven raise
-Their song of laud to thee the while my spirit prays:—
-When evil comes to me, the strength do thou impart
-That erst upheld thy Mother's heart!
 Amen.
 
 [Ant Matutinum]
@@ -217,6 +210,11 @@ He hath no form nor comeliness, * and when we shall see him, there is no beauty 
 From the sole of the foot * even unto the head, there is no soundness in it.
 Revive me with flowers, * stay me up with apples, for I am swooning with love.
 
+[Capitulum Laudes]
+!Lam 2:13
+v. To what shall I compare thee? or to what shall I liken thee, O daughter of Jerusalem? to what shall I equal thee, that I may comfort thee, O virgin daughter of Sion? for great as the sea is thy destruction: who shall heal thee? 
+$Deo gratias
+
 [Hymnus Laudes]
 v. God of mercy, let us run
 Where yon fount of sorrows flows;
@@ -245,10 +243,6 @@ R. Mary, ask for joy for me.
 
 [Ant 2]
 Come ye, and let us go * up to the mountain of the Lord, and see if there be any sorrow like unto my sorrow.
-
-[Oratio]
-O God, at Whose suffering the prophecy of Simeon was fulfilled, and a sword of sorrow pierced through the gentle soul of the glorious Virgin and Mother Mary, mercifully grant that we who speak worshipfully of her woes, may obtain the saving purchase of thy suffering.
-$Qui vivis
 
 [Lectio Prima]
 !Lam 2:18

@@ -1,15 +1,8 @@
 [Rank]
 St Alexis, confesseur;;Semiduplex;;2;;vide C5
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 1570 aut rubrica 1960)
 St Alexis, confesseur;;Simplex;;1.1;;vide C5
-
-[Rank] (rubrica 1570)
-St Alexis, confesseur;;Simplex;;1.1;;vide C5
-
-[Rule]
-vide C5;
-9 lectiones;
 
 [Oratio]
 @Commune/C5::s/N\./Alexis/
@@ -25,6 +18,10 @@ Du livre des Morales de saint Grégoire, Pape.
 [Lectio6]
 La sagesse des justes consiste, au contraire, à ne jamais agir par ostentation, à dire ce que l’on pense, à aimer le vrai tel qu’il est, à éviter le faux, à faire le bien gratuitement, à souffrir très volontiers des peines plutôt que d’en causer aux autres, à ne pas tirer vengeance des injures reçues, à estimer comme un gain l’outrage qu’on endure pour J’amour de la vérité. « Mais cette simplicité des justes est tournée en dérision ». Car les sages de ce monde regardent la pureté de la vertu comme une sottise. Tout ce qu’on fait innocemment, ils le taxent de folie, tout ce que la vérité approuve dans nos œuvres paraît insensé à cette sagesse charnelle. Rien semble-t-il, en effet, plus stupide aux yeux du monde, que de montrer sa pensée .quand on parle, de ne rien feindre par d’habiles expédients, de ne pas rendre des affronts pour des injures, de prier pour ceux qui nous maudissent, de rechercher la pauvreté, d’abandonner ses biens, de ne pas résister à ceux qui nous pillent, de présenter l’autre joue à ceux qui nous frappent.
 
+[Lectio94]
+Alexis était un Romain de très noble origine. Poussépar un vif amour de Jésus-Christ et sur un avertissement divin tout particulier, il partit le premier soir de ses noces, laissant son épouse vierge, et entreprit à travers le monde le pèlerinage des plus célèbres sanctuaires. Pendant ces voyages, il resta dix-sept ans inconnu, jusqu’au jour où son nom ayant été divulgué par une image de la Sainte Vierge Marie, à Edesse, en Syrie, il s’embarqua pour s’éloigner. Ayant abordé au port de Rome, il fut reçu chez son père, comme un pauvre étranger. Il y vécut dix-sept ans, sans être connu de personne. Mais en mourant, il laissa par écrit l’indication de son nom et de sa naissance, et le récit abrégé de toute sa vie. Il passa de la terre au ciel sous le Pontificat d’innocent Ier.
+&teDeum
+
 [Lectio7]
 @Commune/C1:Lectio7
 
@@ -33,7 +30,3 @@ La sagesse des justes consiste, au contraire, à ne jamais agir par ostentation,
 
 [Lectio9]
 @Commune/C1:Lectio9
-
-[Lectio94]
-Alexis était un Romain de très noble origine. Poussépar un vif amour de Jésus-Christ et sur un avertissement divin tout particulier, il partit le premier soir de ses noces, laissant son épouse vierge, et entreprit à travers le monde le pèlerinage des plus célèbres sanctuaires. Pendant ces voyages, il resta dix-sept ans inconnu, jusqu’au jour où son nom ayant été divulgué par une image de la Sainte Vierge Marie, à Edesse, en Syrie, il s’embarqua pour s’éloigner. Ayant abordé au port de Rome, il fut reçu chez son père, comme un pauvre étranger. Il y vécut dix-sept ans, sans être connu de personne. Mais en mourant, il laissa par écrit l’indication de son nom et de sa naissance, et le récit abrégé de toute sa vie. Il passa de la terre au ciel sous le Pontificat d’innocent Ier.
-&teDeum

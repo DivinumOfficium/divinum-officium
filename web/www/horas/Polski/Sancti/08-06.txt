@@ -1,7 +1,7 @@
 [Rank]
 Przemienienie Pańskie;;Duplex II classis;;5.1;;
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Przemienienie Pańskie;;Duplex II classis;;5;;
 
 [Ant Vespera]
@@ -10,11 +10,6 @@ A oblicze Jego * rozjaśniało jako słońce: a szaty Jego stały się białe ja
 A oto * się im ukazali Mojżesz i Eljasz z nim rozmawiający.
 A odpowiadając Piotr, * rzekł do Jezusa: Panie dobrze nam jest tu być.
 Gdy on jeszcze mówił, * oto obłok jasny okrył ich.
-
-[Capitulum Laudes]
-!Flp 3:20-21
-v. Zbawiciela oczekiwamy, Pana naszego Jezusa Chrystusa, który przemieni ciało podłości naszéj przypodobane ciału jasności swojéj.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Wy, co Chrystusa szukacie,
@@ -46,12 +41,12 @@ Z Ożywicielem i Ojcem
 W nieskończone wieki.
 Amen.
 
-[Doxology](rubrica monastica aut rubrica 1570)
-@Psalterium/Doxologies:EpiT
-
 [Versum 1]
 V. Chwalebnym się okazałeś w obliczu Boga.
 R. Przeto przyoblókł Cię ozdobą.
+
+[Doxology] (rubrica monastica aut rubrica 1570)
+@Psalterium/Doxologies:EpiT
 
 [Ant 1]
 Jezus Chrystus * jest jasnością chwały i wyrażeniem istności jego, a nosząc wszystko słowem mocy swej, sprawiwszy oczyszczenie grzechów na górze wysokiej raczył się dziś okazać.
@@ -59,13 +54,6 @@ Jezus Chrystus * jest jasnością chwały i wyrażeniem istności jego, a noszą
 [Oratio]
 Boże, któryś w chwalebnem Przemienieniu Syna Twego Jednorodzonego potwierdził tajemnice wiary świadectwem ojców, a głosem wychodzącym z jasnego obłoku w przedziwny sposób dałeś zapowiedź doskonałego przybrania za synów, uczyń nas miłościwie Jego królestwa spadkobiercami i chwały uczestnikami.
 $Per eumdem
-
-[Commemoratio 2]
-!Wspominamy Śś. Sykstusa, Felicissimusa i Agapita Męczenników
-@Commune/C3:Oratio proper
-$Oremus
-Boże, który dozwalasz nam obchodzić narodziny Świętych Męczenników Twoich Sykstusa, Felicissimusa i Agapita, daj nam w ich gronie wieczną szczęśliwością się radować.
-$Per Dominum
 
 [Invit]
 Najwyższego Króla chwały: * Chrystusa pokłonem uczcijmy.
@@ -94,7 +82,7 @@ Z Drugiego Listu św. Piotra Apostoła
 11 Bo tak hojnie wam sprawione będzie wejście do wiecznego królestwa Pana naszego i Zbawiciela Jezusa Chrystusa.
 12 Przetóż pocznę was zawsze upominać około tego, chociaż wiedzących i utwierdzonych was w teraźniejszéj prawdzie.
 13 I zda mi się słuszna, abym was, pókim jest w tym przybytku, pobudzał przez napominanie,
-14 pewnym będąc, iż prędkie jest złożenie przybytku mojego, jako i Pan nasz Jezus Chrystus oznajmił mi. 
+14 pewnym będąc, iż prędkie jest złożenie przybytku mojego, jako i Pan nasz Jezus Chrystus oznajmił mi.
 
 [Responsory1]
 R. Wstań, oświeć się, Jeruzalem, bo przyszła światłość twoja:
@@ -106,7 +94,7 @@ R. A sława Pańska weszła nad tobą.
 !2 P 1:15-17
 15 A starać się będę i często, mieć was po zejściu mojem, abyście na te rzeczy pamiętali.
 16 Albowiem oznajmiliśmy wam moc i obecność Pana naszego, nie uwiedzieni baśniami misternemi, ale przypatrzywszy się sami wielmożności jego. 
-17 Bo wziął od Boga Ojca cześć i chwałę, gdy do niego szedł głos takowy od wielmożnéj chwały: Ten jest Syn mój, w którymem sobie ulubił, jego słuchajcie. 
+17 Bo wziął od Boga Ojca cześć i chwałę, gdy do niego szedł głos takowy od wielmożnéj chwały: Ten jest Syn mój, w którymem sobie ulubił, jego słuchajcie.
 
 [Responsory2]
 R. W jaśniejącym obłoku Duch Święty ukazał się, i głos Ojca słyszany był:
@@ -190,6 +178,11 @@ R. Abyśmy zajaśnieli blaskiem poznania jasności Bożej w obliczu Jezusa Chrys
 Zwróć uwagę na sposób myślenia Mateusza: nie pomija milczeniem tych, którzy zostali wyróżnieni bardziej niż on. To samo czyni często również Jan, bardzo wiernie i dokładnie opisując wspaniałe pochwały Piotra. Albowiem grono tych świętych ludzi zawsze było wolne od zazdrości i próżnej sławy. Jezus wziął pierwszych spośród Apostołów. Dlaczego wziął tylko ich? Bo byli znakomitsi od innych. Dlaczego nie prowadzi ich od razu, ale dopiero po sześciu dniach? Aby u innych uczniów i ludzi nie wzbudzać zazdrości, dlatego nie wymienia nawet imion tych, którzy mieli iść na górę.
 &teDeum
 
+[Capitulum Laudes]
+!Flp 3:20-21
+v. Zbawiciela oczekiwamy, Pana naszego Jezusa Chrystusa, który przemieni ciało podłości naszéj przypodobane ciału jasności swojéj.
+$Deo gratias
+
 [Hymnus Laudes]
 v. Jezu, błogosławiona światłości dusz,
 Gdy orzeźwiasz serca nasze,
@@ -214,6 +207,13 @@ R. Wyryta znamieniem świątości i chwałą poczciwości.
 
 [Ant 2]
 Oto głos * z obłoku mówiący: Ten jest Syn Mój miły, w którymem sobie dobrze upodobał: jego słuchajcie, alleluja.
+
+[Commemoratio 2]
+!Wspominamy Śś. Sykstusa, Felicissimusa i Agapita Męczenników
+@Commune/C3:Oratio proper
+$Oremus
+Boże, który dozwalasz nam obchodzić narodziny Świętych Męczenników Twoich Sykstusa, Felicissimusa i Agapita, daj nam w ich gronie wieczną szczęśliwością się radować.
+$Per Dominum
 
 [Lectio Prima]
 !Ap 21:10-11; 21:23.

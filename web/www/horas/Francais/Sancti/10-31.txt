@@ -1,13 +1,9 @@
 [Rank]
 Vigile de la fête de tous les Saints;;Vigilia;;1.5
 
-[Rule]
-Responsory Feria
-Preces feriales
-Versum Feria
-no Te Deum
-Laudes 2
-No Suffragium
+[Oratio]
+Seigneur notre Dieu, multipliez envers nous l’effusion de votre grâce, et faites que, par une vie sainte, nous méritions de suivre dans la félicité éternelle ceux dont nous anticipons la fête solennelle.
+$Per Dominum
 
 [Lectio1]
 @Commune/C3:Lectio7 in 2 loco
@@ -17,7 +13,3 @@ No Suffragium
 
 [Lectio3]
 @Commune/C3:Lectio9 in 2 loco
-
-[Oratio]
-Seigneur notre Dieu, multipliez envers nous l’effusion de votre grâce, et faites que, par une vie sainte, nous méritions de suivre dans la félicité éternelle ceux dont nous anticipons la fête solennelle.
-$Per Dominum

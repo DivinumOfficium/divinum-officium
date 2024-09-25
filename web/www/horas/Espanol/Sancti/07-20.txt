@@ -1,23 +1,11 @@
 [Rank]
 S. Hieronymi Æmiliani Confessoris;;Duplex;;3;;vide C5
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Hieronymi Æmiliani Confessoris;;Duplex optional;;2;;vide C5
-
-[Rule]
-vide C5;mtv
-9 lectiones;
-m.t.v.
 
 [Oratio]
 Oh Dios, Padre de las misericordias, concédenos por los méritos e intercesión del bienaventurado Jerónimo, que quisiste fuera el protector y padre de los huérfanos, que guardemos con toda fidelidad el espíritu de adopción por el cual nos llamamos y somos hijos tuyos.
-$Per Dominum
-
-[Commemoratio]
-!Conmemoración de Sta. Margarita, Virgen y Mártir
-@Commune/C6:Oratio proper
-$Oremus
-v. Te suplicamos, Señor, que Santa Margarita, virgen y mártir, nos alcance tu perdón: pues siempre te agradó por su castidad y dio testimonio de tu poder.
 $Per Dominum
 
 [Lectio4]
@@ -28,6 +16,10 @@ Desembarcaron a la sazón en Venecia el bienaventurado Cayetano y Pedro Carafa, 
 
 [Lectio6]
 Sólo pensando en los huérfanos que se proponía recoger, se dirigió a Milán y a Pavía; en estas ciudades, merced a favores, procuró a una multitud de niños, albergue, provisiones, vestidos y maestros. De vuelta a Somasca, consagrándose a todos, no retrocedía ante trabajos que pudieran ser de provecho para el prójimo. Se mezclaba con los campesinos durante la cosecha, y mientras les ayudaba en sus trabajos, les explicaba los misterios de la fe. Cuidaba a los niños con una paciencia que llegaba hasta limpiarles la cabeza cubierta de tiña; curaba las más repugnantes llagas de los campesinos, y parecía estar dotado de la gracia de curaciones. Se retiró a una cueva del monte Somasca, y castigando su cuerpo con disciplinas, permaneciendo en ayunas durante días enteros, pasando en oración la mayor parte de la noche y permitiéndose sólo un breve sueño sobre la dura piedra, lloraba sus pecados y los ajenos. Al fondo de aquella cueva, brotó una fuente de la peña viva. Una constante tradición atribuye su aparición a las oraciones del Santo; hasta nuestros días ha manado sin interrupción, y el agua que allí nace, llevada a diversos países, cura a muchos enfermos. Habiéndose, por último, propagado una epidemia en aquel valle, Jerónimo la contrajo mientras se entregaba al cuidado de los apestados y cargaba los cadáveres sobre sus espaldas para conducirlos al lugar de la sepultura. Su preciosa muerte, que él había anunciado con alguna anticipación, ocurrió en el año 1537; así en la vida como en la muerte, fue célebre por sus muchos milagros. Benito XIV le beatificó, y Clemente XIII le inscribió entre los Santos.
+
+[Lectio94]
+Jerónimo, nacido en Venecia de la familia patricia de los Emiliano, comenzó la carrera militar de joven. Cuando la república estaba en grandes dificultades, fue nombrado comandante de Castelnuovo, cerca de Quero, en los montes de Treviso. La ciudadela fue tomada por el enemigo y él mismo fue arrojado a una mazmorra horrible, de la cual fue liberado con la ayuda de la Santísima Virgen. En Venecia, comenzó a dedicarse con gran celo a las obras de caridad, especialmente con los huérfanos vagabundos de la ciudad, a los que llevaba a las casas que contrataba, donde los alimentaba a su costa y los educaba. Por entonces, el bendito Cayetano y Pedro Carafa, más tarde Paulo IV, llegaron a Venecia. Aprobando el espíritu de Jerónimo, lo llevaron al hospital para incurables, donde podía educar a huérfanos y servir a los enfermos. Pronto, a instancias de ellos, fue al continente; primero en Brescia, luego en Bérgamo y Como, fundó orfelinatos y otras instituciones de caridad. Finalmente, se instaló en Somasca, una aldea en Bérgamo, y la convirtió en la sede de una nueva congregación, que llamó Somasca, y que fue aprobada por San Pío V. Finalmente contrajo una enfermedad contagiosa mientras servía a los apestados y entregó su vida a la edad de 57 años, en el año 1537.
+&teDeum
 
 [Lectio7]
 Lectura del Santo Evangelio según San Mateo
@@ -43,8 +35,4 @@ Mostradles una reina con su diadema; no la preferirá a una madre andrajosa; y l
 
 [Lectio9]
 Como los fariseos sólo obraban movidos por la malicia y la arrogancia, nuestro Señor no se cansa de recomendar a sus discípulos la sencillez; y les inculca esta virtud desde su elección. Porque nada contribuye tanto al orgullo como el ejercicio del poder y el privilegio de ocupar los primeros lugares. Ahora bien: sabiendo Jesús los muchos honores que ellos alcanzarían en el mundo, previene sus espíritus; no quiere que les mueva ningún impulso humano, ni el afán de popularidad, ni la ambición de llegar a ser más que los demás. Estas cosas son, con todo, causantes de grandes males. Por no haberse sobrepuesto a ellas, llegaron los fariseos al último grado de la maldad. Yendo en pos de los saludos, de los primeros sitios y de los cargos más honoríficos, cayeron en un amor desenfrenado de la gloria, y desde allí en un abismo de impiedad.
-&teDeum
-
-[Lectio94]
-Jerónimo, nacido en Venecia de la familia patricia de los Emiliano, comenzó la carrera militar de joven. Cuando la república estaba en grandes dificultades, fue nombrado comandante de Castelnuovo, cerca de Quero, en los montes de Treviso. La ciudadela fue tomada por el enemigo y él mismo fue arrojado a una mazmorra horrible, de la cual fue liberado con la ayuda de la Santísima Virgen. En Venecia, comenzó a dedicarse con gran celo a las obras de caridad, especialmente con los huérfanos vagabundos de la ciudad, a los que llevaba a las casas que contrataba, donde los alimentaba a su costa y los educaba. Por entonces, el bendito Cayetano y Pedro Carafa, más tarde Paulo IV, llegaron a Venecia. Aprobando el espíritu de Jerónimo, lo llevaron al hospital para incurables, donde podía educar a huérfanos y servir a los enfermos. Pronto, a instancias de ellos, fue al continente; primero en Brescia, luego en Bérgamo y Como, fundó orfelinatos y otras instituciones de caridad. Finalmente, se instaló en Somasca, una aldea en Bérgamo, y la convirtió en la sede de una nueva congregación, que llamó Somasca, y que fue aprobada por San Pío V. Finalmente contrajo una enfermedad contagiosa mientras servía a los apestados y entregó su vida a la edad de 57 años, en el año 1537.
 &teDeum

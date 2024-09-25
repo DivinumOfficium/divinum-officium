@@ -4,6 +4,9 @@ In Commemoratione Omnium Fidelium Defunctorum;;Duplex;;3;;ex C9
 [Rank] (rubrica 196)
 In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
 
+[Rank] (rubrica innovata)
+In Commemoratione Omnium Fidelium Defunctorum;;Duplex Solemnity;;6;;ex C9
+
 [Rule]
 ex C9
 Psalmi Dominica
@@ -23,25 +26,8 @@ $Pater noster
 $Ave Maria
 (sed rubrica 1960 aut rubrica innovata omittuntur)
 
-[Special Completorium]
-$Confiteor
-$Misereatur
-$Indulgentiam
-
-&psalm(122)
-
-&psalm(141)
-
-&psalm(142)
-
-&psalm(233)
-
-&special('Oratio mortuorum1', 'Latin')
-
-&special('Conclusio', 'Latin')
-
-[Oratio Matutinum]
-@Commune/C9:Oratio_Fid:s/&Dominus_vobiscum2/_\n&Dominus_vobiscum/
+[Oratio mortuorum]
+@Commune/C9:Oratio 2
 
 [Oratio mortuorum1]
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
@@ -49,23 +35,10 @@ $Indulgentiam
 _
 $Oremus
 v. Propitiáre, quǽsumus, Dómine, animábus ómnium famulórum famularúmque tuárum, pro quibus majestátem tuam supplíciter exorámus: ut, per hæc piæ deprecatiónis offícia, perveníre mereántur ad réquiem sempitérnam.
-$Per Dominum 
-
-[Oratio mortuorum]
-@Commune/C9:Oratio 2
-
-[Oratio mortuorum2]
-@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
-&Dominus_vobiscum2
-_
-$Oremus
-v. Súpplices, Dómine, pro animábus ómnium famulórum famularúmque tuárum preces effúndimus: ut, quidquid conversatióne contraxérunt humána, clemens indúlgeas, et pœnis eórum finem benígnus impónas.
 $Per Dominum
 
-[Conclusio]
-&Gloria
-V. Requiéscant in pace.
-R. Amen.
+[Oratio Matutinum]
+@Commune/C9:Oratio_Fid:s/&Dominus_vobiscum2/_\n&Dominus_vobiscum/
 
 [Lectio1]
 @Commune/C9
@@ -115,7 +88,7 @@ De Epístola prima beáti Pauli Apóstoli ad Corínthios
 41 Alia cláritas solis, ália cláritas lunæ, et ália cláritas stellárum; stella enim a stella differt in claritáte:
 42 sic et resurréctio mortuórum. Seminátur in corruptióne, surget in incorruptióne.
 43 Seminátur in ignobilitáte, surget in glória: seminátur in infirmitáte, surget in virtúte:
-44 seminátur corpus animále, surget corpus spiritále. 
+44 seminátur corpus animále, surget corpus spiritále.
 
 [Lectio9]
 !1 Cor 15:51-58
@@ -127,6 +100,19 @@ De Epístola prima beáti Pauli Apóstoli ad Corínthios
 56 Stímulus autem mortis peccátum est: virtus vero peccáti lex.
 57 Deo autem grátias, qui dedit nobis victóriam per Dóminum nostrum Jesum Christum.
 58 Itaque fratres mei dilécti, stábiles estóte, et immóbiles: abundántes in ópere Dómini semper, sciéntes quod labor vester non est inánis in Dómino.
+
+[Conclusio]
+&Gloria
+V. Requiéscant in pace.
+R. Amen.
+
+[Oratio mortuorum2]
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+&Dominus_vobiscum2
+_
+$Oremus
+v. Súpplices, Dómine, pro animábus ómnium famulórum famularúmque tuárum preces effúndimus: ut, quidquid conversatióne contraxérunt humána, clemens indúlgeas, et pœnis eórum finem benígnus impónas.
+$Per Dominum
 
 [Special Prima]
 &special('Initial', 'Latin')
@@ -189,5 +175,22 @@ $Amen
 &psalm(101,24,29)
 
 &special('Oratio mortuorum', 'Latin')
+
+&special('Conclusio', 'Latin')
+
+[Special Completorium]
+$Confiteor
+$Misereatur
+$Indulgentiam
+
+&psalm(122)
+
+&psalm(141)
+
+&psalm(142)
+
+&psalm(233)
+
+&special('Oratio mortuorum1', 'Latin')
 
 &special('Conclusio', 'Latin')

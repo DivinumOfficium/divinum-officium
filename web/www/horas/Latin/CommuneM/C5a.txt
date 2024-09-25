@@ -1,20 +1,22 @@
 @CommuneM/C5
 
+[Name]
+@Commune/C5a
+
 [Ant 1]
 @Commune/C4a
 
 [Lectio1]
-@Commune/C4a:Lectio1:s/-5/-4/ s/5 .*//s
+@CommuneM/C4a
 
 [Lectio2]
-@Commune/C4a:Lectio1:s/.*5 /!Sir 39:5-7\n5 /s
-@Commune/C4a:Lectio2:s/.*6 /6 /s s/8 .*//s
+@CommuneM/C4a
 
 [Lectio3]
-@Commune/C4a:Lectio2:s/.*8 /!Sir 39:8-10\n8 /s
+@CommuneM/C4a
 
 [Lectio4]
-@Commune/C4a:Lectio3
+@CommuneM/C4a
 
 [Lectio5]
 @CommuneM/C4a
@@ -29,45 +31,49 @@
 @CommuneM/C4a
 
 [Lectio9]
-@Sancti/12-07:Lectio7
+@CommuneM/C4a
 
 [Lectio10]
-@Sancti/12-07:Lectio8
+@CommuneM/C4a
 
 [Responsory10]
-@Commune/C4a:Responsory8
+@CommuneM/C4a
 
 [Lectio11]
-@Sancti/12-07:Lectio9:s/Et hic mundum .*//s
+@CommuneM/C4a
 
 [Lectio12]
-@Sancti/12-07:Lectio9:s/.* Et hic mundum /Et hic mundum /s
+@CommuneM/C4a
+
+[Oratio]
+@Commune/C4:Oratio2
+
+[Oratio3]
+@Commune/C5:Oratio
 
 [Ant 3]
 @Commune/C4a
 
 [Lectio9 in 2 loco]
-@Commune/C4a:Lectio7 in 2 loco:s/ Sal est .*//s
+@CommuneM/C4a
 
 [Lectio10 in 2 loco]
-@Commune/C4a:Lectio7 in 2 loco:s/.* Sal est /Sal est /s s/$/~/s
-@Commune/C4a:Lectio8 in 2 loco:s/ Apóstoli .*//s
+@CommuneM/C4a
 
 [Lectio11 in 2 loco]
-@Commune/C4a:Lectio8 in 2 loco:s/.* Apóstoli /Apóstoli /s
+@CommuneM/C4a
 
 [Lectio12 in 2 loco]
-@Commune/C4a:Lectio9 in 2 loco
+@CommuneM/C4a
 
 [Lectio9 in 3 loco]
-@Commune/C4a:Lectio7 in 3 loco
+@CommuneM/C4a
 
 [Lectio10 in 3 loco]
-@Commune/C4a:Lectio8 in 3 loco:s/ Igitur .*//s
+@CommuneM/C4a
 
 [Lectio11 in 3 loco]
-@Commune/C4a:Lectio8 in 3 loco:s/.* Igitur /Igitur /s s/$/~/s
-@Commune/C4a:Lectio9 in 3 loco:s/ Non ergo .*//s
+@CommuneM/C4a
 
 [Lectio12 in 3 loco]
-@Commune/C4a:Lectio9 in 3 loco:s/.* Non ergo /Non ergo /s
+@CommuneM/C4a

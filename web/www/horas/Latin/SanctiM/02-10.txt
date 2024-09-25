@@ -1,13 +1,73 @@
 @Sancti/02-10
 
 [Rank]
-S. Scholasticæ Virginis;;II Class;;5;;vide C6
+S. Scholasticæ Virginis;;II Class;;5;;vide C6b
 
 [Rule]
+vide C6b;
 12 lectiones
 
 [Ant Vespera]
 @:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;121/ s/_/;;126/ s/_//
+
+[Responsory Vespera]
+R.br. In colúmbæ spécie * Scholásticæ ánima visa est.
+R. In colúmbæ spécie * Scholásticæ ánima visa est.
+V. Fratérna mens lætáta est.
+R. Scholásticæ ánima visa est.
+&Gloria
+R. In colúmbæ spécie * Scholásticæ ánima visa est.
+
+[Hymnus Vespera]
+v. Te beáta sponsa Christi,
+Te, colúmba vírginum,
+Síderum tollunt colóni
+Láudibus, Scholástica:
+Nostra te lætis salútant
+Vócibus præcórdia.
+_
+Sceptra mundi cum corónis
+Docta quondam spérnere,
+Dogma fratris insecúta
+Atque sanctæ Régulæ,
+Ex odóre gratiárum,
+Astra nosti quǽrere.
+_
+O potens virtus amóris!
+O decus vitóriæ!
+Dum fluéntis lacrymárum
+Cogis imbres cúrrere,
+Ore Nursíni paréntis
+Verba cœli súscipis.
+_
+Luce fulges expetíta
+In polórum vértice,
+Clara flammis caritátis
+Cum nitóre grátiæ:
+Juncta Sponso conquiéscis
+In decóre glóriæ.
+_
+Nunc benígna pelle nubes
+Córdibus fidélium,
+Ut seréna fronte splendens
+Sol perénnis lúminis,
+Sempitérne claritátis
+Ímpleat nos gáudiis.
+_
+Glóriam Patri canámus
+Unícoque Fílio;
+Par tribútum proferámus
+Inclyto Paráclito,
+Nútibus cujus creántur,
+Et regúntur sǽcula.
+Amen.
+
+[Versum 1]
+V. Qua est ista, quæ ut nubes volat?
+R. Et quasi colúmba ad fenéstras suas?
+
+[Ant 1]
+Exsúltet ómnium * turba fidélium pro glória vírginis almæ Scholásticæ; læténtur præcípue catérvæ vírginum, celebrántes ejus solemnitátem, quæ fundens lácrymas, Dóminum rogávit, et ab eo plus pótuit, quia plus amávit.
 
 [Ant Matutinum]
 Q quam admirábile * nomen Dómini! † In cujus virtúte beáta Virgo Scholástica tam ingéntem plúviam obtinére méruit.;;8
@@ -16,19 +76,13 @@ Hæc accépit * benedictiónem a Dómino, † et misericórdiam a Deo salutári 
 Dilexísti * justítiam, et odísti iniquitátem; † proptérea unxit te Deus, Deus tuus, óleo lætítiæ.;;44
 Flúminis ímpetus * lætíficat Scholásticam, Sponsam Dei.;;45
 Circúmdate * Scholásticam, et narráte virtútes ejus.;;47
-V. Spécie tua et pulchritúdine tua.
-R. Inténde, próspere procéde, et regna.
 Dóminus * Scholásticæ dedit benignitátem † et terra dedit fructum.;;84
 Sicut lætántium ómnium * habitátio est in te, o beáta mater Scholástica.;;86
 Conféssio * et pulchritúdo in conspéctu Dómini; † sanctimónia et magnificéntia in sanctificatióne Scholásticæ sponsæ suæ.;;95
 Illuxérunt * fúlgura Dei, dum oráret ad eum sancta Virgo Scholástica.;;96
 Cantáte * Dómino cánticum novum, † quia mirabília fecit in dilécta fília Scholástica.;;97
 Invocábat * Scholástica Dóminum; † et exaudiébat eam.;;98
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
 Dóminus * Scholásticam quasi sponsum decorávit coróna, et ornávit monílibus suis.;;249;250;251
-V. Elégit eam Deus, et præelégit eam.
-R. In tabernáculo suo habitáre facit eam.
 
 [Lectio1]
 @Sancti/07-02:Lectio1:s/-7/-5/ s/.6.*//s
@@ -149,76 +203,17 @@ R. Fac nos ita innocénter vívere, † ut valeámus tecum amáre quod amásti.
 [LectioE]
 @Commune/C6
 
-[Capitulum Laudes]
-!Cant 2:13-14
-v. Surge, amíca mea, speciósa mea, et veni, colúmba mea, in foramínibus petræ, in cavérna macériæ, osténde mihi fáciem tuam, sonet vox tua in áuribus meis: vox enim tua dulcis, et fácies tua decóra.
-$Deo gratias
-
-[Responsory Vespera]
-R.br. In colúmbæ spécie * Scholásticæ ánima visa est.
-R. In colúmbæ spécie * Scholásticæ ánima visa est.
-V. Fratérna mens lætáta est.
-R. Scholásticæ ánima visa est.
-&Gloria
-R. In colúmbæ spécie * Scholásticæ ánima visa est.
-
-[Hymnus Vespera]
-v. Te beáta sponsa Christi,
-Te, colúmba vírginum,
-Síderum tollunt colóni
-Láudibus, Scholástica:
-Nostra te lætis salútant
-Vócibus præcórdia.
-_
-Sceptra mundi cum corónis
-Docta quondam spérnere,
-Dogma fratris insecúta
-Atque sanctæ Régulæ,
-Ex odóre gratiárum,
-Astra nosti quǽrere.
-_
-O potens virtus amóris!
-O decus vitóriæ!
-Dum fluéntis lacrymárum
-Cogis imbres cúrrere,
-Ore Nursíni paréntis
-Verba cœli súscipis.
-_
-Luce fulges expetíta
-In polórum vértice,
-Clara flammis caritátis
-Cum nitóre grátiæ:
-Juncta Sponso conquiéscis
-In decóre glóriæ.
-_
-Nunc benígna pelle nubes
-Córdibus fidélium,
-Ut seréna fronte splendens
-Sol perénnis lúminis,
-Sempitérne claritátis
-Ímpleat nos gáudiis.
-_
-Glóriam Patri canámus
-Unícoque Fílio;
-Par tribútum proferámus
-Inclyto Paráclito,
-Nútibus cujus creántur,
-Et regúntur sǽcula.
-Amen.
-
-[Versum 1]
-V. Qua est ista, quæ ut nubes volat?
-R. Et quasi colúmba ad fenéstras suas?
-
-[Ant 1]
-Exsúltet ómnium * turba fidélium pro glória vírginis almæ Scholásticæ; læténtur præcípue catérvæ vírginum, celebrántes ejus solemnitátem, quæ fundens lácrymas, Dóminum rogávit, et ab eo plus pótuit, quia plus amávit.
-
 [Ant Laudes]
 Egrédere modo, frater: * egrédere, si potes: et dímissa, ad monastérium recéde.
 Parcat tibi, soror, * omnípotens Deus: quid est quod fecísti?
 Ecce te rogávi, * et audíre me noluísti; rogávi Dóminum meum, et audívit me.
 Loquámur nunc * usque mane de cælestibus per sacra spritualis vitæ colloquia.
 Cum sanctus Benedíctus * post tríduum in cella consísteret, elevátis óculis, vidit soróris ánimam, de córpore egréssam, in colúmbæ spécie cæli secréta penetráre.
+
+[Capitulum Laudes]
+!Cant 2:13-14
+v. Surge, amíca mea, speciósa mea, et veni, colúmba mea, in foramínibus petræ, in cavérna macériæ, osténde mihi fáciem tuam, sonet vox tua in áuribus meis: vox enim tua dulcis, et fácies tua decóra.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Jam noctis umbræ cóncidunt,

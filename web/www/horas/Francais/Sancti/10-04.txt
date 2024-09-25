@@ -1,10 +1,6 @@
 [Rank]
 St François d’Assise, Confesseur;;Duplex majus;;4;;vide C5
 
-[Rule]
-vide C5 ;
-9 lectiones
-
 [Oratio]
 O Dieu, qui, par les mérites du bienheureux François, avez enrichi votre Église, en lui donnant une nouvelle famille, faites-nous la grâce de l’imiter en méprisant les biens de la terre, et d’avoir la joie de participer toujours aux dons célestes.
 $Per Dominum
@@ -18,6 +14,10 @@ Ayant entendu lire cette parole de l’Évangile : « Ne possédez ni or, ni arg
 [Lectio6]
 Après avoir construit quantité de maisons de son institut, François se retira dans la solitude, sur le mont Alverne. Ayant commencé là un jeûne de quarante jours, en l’honneur de l’Archange saint Michel, il advint qu’en la fête de l’Exaltation de la sainte Croix, un Séraphin lui apparut, portant entre ses ailes l’image du Crucifié. Ce Séraphin imprima sur les mains, les pieds et le côté de François, les stigmates des clous. Saint Bonaventure affirme dans ses lettres avoir entendu le Pape Alexandre IV déclarer, dans un sermon, qu’il avait vu les stigmates. Ces témoignages de l’amour de Jésus-Christ excitèrent l’admiration de tous. Enfin, deux ans après, se sentant gravement malade, François voulut qu’on le transportât dans l’église de Sainte-Marie-des-Anges, afin de rendre, son dernier souffle là même où Dieu lui avait accordé la vie de la grâce. En ce lieu, il exhorta ses frères à conserver très fidèlement la pauvreté, la patience et la foi de la sainte Église romaine. Pendant qu’il récitait le Psaume : « De ma voix, j’ai crié vers le Seigneur, » étant arrivé à ce verset : « Des justes m’attendent jusqu’à ce que vous m’exauciez, » il rendit son âme à Dieu. C’était le quatrième jour des nones d’octobre. De nombreux miracles l’ayant illustré, Grégoire IX l’inscrivit au catalogue des Saints.
 
+[Lectio94]
+François, né à Assise en Ombrie, s’adonna dès sa jeunesse au commerce, à l’exemple de son père. Atteint, puis guéri d’une grave maladie, il commença aussitôt à se livrer très ardemment aux œuvres de charité, et comme son père ne le supportait qu’avec indignation, il lui fit une cession de tous ses biens, ajoutant qu’à l’avenir il aurait ainsi un droit de plus à dire : Notre Père qui êtes aux cieux. Ayant entendu la lecture du conseil évangélique au sujet de la pauvreté apostolique, il enleva ses chaussures, se contenta d’une seule tunique et institua, lorsqu’il se fut adjoint douze compagnons, l’Ordre des Frères Mineurs que le Souverain Pontife Innocent III confirma, sur avertissement du ciel, et qui se propagea merveilleusement. Ensuite, François se retira dans la solitude du Mont Alverne où, le jour de l’Exaltation de la sainte Croix, tandis que lui apparaissait un séraphin portant entre ses ailes l’image du Crucifié, il reçut les sacrés Stigmates rendant visibles sur ses mains, ses pieds et son côté, les marques des clous et de la lance. Deux ansaprès, étant tombé gravement malade, transporté dans l’église de Sainte-Marie-des-Anges, il exhorta ses frères à conserver la pauvreté, la patience et la foi de la sainte Église Romaine et expira très pieusement, le quatre des Nones d’Octobre.
+&teDeum
+
 [Lectio7]
 @Sancti/02-24:Lectio7
 
@@ -26,7 +26,3 @@ Après avoir construit quantité de maisons de son institut, François se retira
 
 [Lectio9]
 @Sancti/02-24:Lectio9
-
-[Lectio94]
-François, né à Assise en Ombrie, s’adonna dès sa jeunesse au commerce, à l’exemple de son père. Atteint, puis guéri d’une grave maladie, il commença aussitôt à se livrer très ardemment aux œuvres de charité, et comme son père ne le supportait qu’avec indignation, il lui fit une cession de tous ses biens, ajoutant qu’à l’avenir il aurait ainsi un droit de plus à dire : Notre Père qui êtes aux cieux. Ayant entendu la lecture du conseil évangélique au sujet de la pauvreté apostolique, il enleva ses chaussures, se contenta d’une seule tunique et institua, lorsqu’il se fut adjoint douze compagnons, l’Ordre des Frères Mineurs que le Souverain Pontife Innocent III confirma, sur avertissement du ciel, et qui se propagea merveilleusement. Ensuite, François se retira dans la solitude du Mont Alverne où, le jour de l’Exaltation de la sainte Croix, tandis que lui apparaissait un séraphin portant entre ses ailes l’image du Crucifié, il reçut les sacrés Stigmates rendant visibles sur ses mains, ses pieds et son côté, les marques des clous et de la lance. Deux ansaprès, étant tombé gravement malade, transporté dans l’église de Sainte-Marie-des-Anges, il exhorta ses frères à conserver la pauvreté, la patience et la foi de la sainte Église Romaine et expira très pieusement, le quatre des Nones d’Octobre.
-&teDeum

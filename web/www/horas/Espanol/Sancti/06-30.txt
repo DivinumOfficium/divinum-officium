@@ -1,18 +1,8 @@
 [Rank]
 In Commemoratione S. Pauli Apostoli;;Duplex majus;;4;;ex C1
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Commemoratione S. Pauli Apostoli;;Duplex;;3;;vide C1
-
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
-Sub unica concl
-No prima vespera
 
 [Ant Vespera]
 Yo planté, * Apolo regó, pero Dios hizo crecer. Aleluya.
@@ -28,7 +18,16 @@ R. Predicador de la verdad en todo el mundo.
 [Ant 1]
 Oh Apóstol San Pablo, * predicador de la verdad y doctor de las Naciones, intercede por nosotros ante el Señor que te escogió.
 
-[HymnusM Matutinum]
+[Oratio]
+Oh Dios, que enseñaste a todo el mundo con la predicación del bienaventurado apóstol Pablo, concédenos, te rogamos, que cuantos celebramos hoy su natalicio, lleguemos a ti imitando sus ejemplos.
+$Per Dominum
+_
+@Sancti/01-25:Commemoratio4
+
+[Commemoratio]
+@Sancti/06-24:Octava
+
+[Hymnus Matutinum]
 v. Doctor egregio, Apóstol de las gentes,
 Costumbres santas forme tu doctrina:
 Inflama el pecho, alumbra nuestras mentes,
@@ -44,7 +43,7 @@ La tierra, el cielo y cuanto el orbe alcanza:
 Perpetua por los siglos su alabanza.
 Amén.
 
-[Hymnus Matutinum]
+[HymnusM Matutinum]
 v. Doctor egregio, Apóstol de las gentes,
 Costumbres santas forme tu doctrina:
 Inflama el pecho, alumbra nuestras mentes,
@@ -110,7 +109,7 @@ R. Por esto me está reservada la corona de justicia.
 10 le dijo: ¡Oh, lleno de todo engaño y de toda maldad, hijo del diablo, enemigo de toda justicia! ¿No cesarás de torcer los rectos caminos del Señor? Ahora mismo la mano del Señor caerá sobre ti y quedarás ciego, sin ver la luz del sol por cierto tiempo. 
 11 Al punto se apoderó de él la tiniebla y la oscuridad, y daba vueltas buscando quien le diera la mano. 
 12 Al verlo, creyó el procónsul, maravillado de la doctrina del Señor. 
-13 De Pafos navegaron Pablo y los suyos, llegando a Perge de Panfilia, pero Juan se apartó de ellos y se volvió a Jerusalén. 
+13 De Pafos navegaron Pablo y los suyos, llegando a Perge de Panfilia, pero Juan se apartó de ellos y se volvió a Jerusalén.
 
 [Responsory3]
 R. Me está reservada una corona de justicia, 
@@ -141,7 +140,7 @@ V. Quien dio eficacia a Pedro en el apostolado entre los circuncisos, me la dio 
 R. Y su gracia en mí no ha sido estéril, sino que permanece siempre en mí.
 
 [Lectio6]
-"He tenido el buen combate". Y yo pregunto en virtud de qué fuerza combatió. ¿Fue una fuerza propia de él, o fue recibida de lo alto? Lejos de nosotros pensar que tal doctor ignorase la ley de Dios, que habla así en el Deuteronomio: No digas en tu corazón: Mi fuerza y la robustez de mi brazo me granjearon todas estas cosas, sino para que te acuerdes del Señor Dios tuyo, por haberte él mismo dado fuerzas para obrar bien. Mas ¿de qué sirve combatir bien, si no le sigue la victoria? ¿Y quién hace victorioso sino Aquel del cual dijo el mismo Apóstol: Gracias a Dios que nos da la victoria por Nuestro Señor Jesucristo?
+“He tenido el buen combate”. Y yo pregunto en virtud de qué fuerza combatió. ¿Fue una fuerza propia de él, o fue recibida de lo alto? Lejos de nosotros pensar que tal doctor ignorase la ley de Dios, que habla así en el Deuteronomio: No digas en tu corazón: Mi fuerza y la robustez de mi brazo me granjearon todas estas cosas, sino para que te acuerdes del Señor Dios tuyo, por haberte él mismo dado fuerzas para obrar bien. Mas ¿de qué sirve combatir bien, si no le sigue la victoria? ¿Y quién hace victorioso sino Aquel del cual dijo el mismo Apóstol: Gracias a Dios que nos da la victoria por Nuestro Señor Jesucristo?
 
 [Responsory6]
 R. Saulo, que es el mismo Pablo, el gran predicador, 
@@ -187,9 +186,6 @@ R. Y así escapé de sus manos en nombre del Señor.
 Si quieres saber cómo se verificó esto, abre el libro de los Hechos de los Apóstoles, y verás que con frecuencia los judíos se lanzaban como bestias hambrientas contra los Apóstoles; y que éstos, imitando la sencillez de la paloma, y respondiendo con la humildad, apaciguaron la cólera y el furor y contuvieron el arrebato de aquel pueblo. Decíanles los judíos: ¿No os teníamos prohibido que enseñaseis en ese Nombre? Y aunque podían obrar una infinidad de milagros, nada dijeron, ni hicieron que manifestase acritud. Al contrario, respondieron con suavidad: Es necesario obedecer a Dios antes que a los hombres. En estas palabras has visto la sencillez de la paloma; en las que siguen verás la prudencia de la serpiente: No podemos callar las cosas que hemos visto y oído.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
 !2 Tim 4:7-8
 v. He combatido con valor, he guardado la fe. Por esto me está reservada una corona de justicia que me dará en aquel día el Señor, justo Juez.
@@ -201,20 +197,8 @@ $Deo gratias
 [HymnusM Laudes]
 @Commune/C1:HymnusM Vespera
 
-[Versum 2]
-@:Versum 1
-
 [Ant 2]
 Los que me habéis seguido, * os sentaréis sobre tronos para juzgar a las doce tribus de Israel, dice el Señor.
-
-[Oratio]
-Oh Dios, que enseñaste a todo el mundo con la predicación del bienaventurado apóstol Pablo, concédenos, te rogamos, que cuantos celebramos hoy su natalicio, lleguemos a ti imitando sus ejemplos.
-$Per Dominum
-_
-@Sancti/01-25:Commemoratio4
-
-[Commemoratio]
-@Sancti/06-24:Octava
 
 [Lectio Prima]
 !1 Cor 15:9-10
@@ -223,8 +207,4 @@ v. Yo soy el menor de los apóstoles, que no soy digno de ser llamado Apóstol, 
 [Capitulum Sexta]
 !2 Cor 12:7-9
 v. Para que la grandeza de las revelaciones no me ensoberbezca, se me ha dado el estímulo de la carne, que es como un ángel de Satanás, para que me abofetee. Por lo cual, por tres veces pedí al Señor que lo apartase de mí, y respondióme el Señor: Bástate mi gracia.
-$Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
 $Deo gratias

@@ -1,16 +1,8 @@
 [Rank]
 In Visitatione B. Mariæ Virginis;;Duplex II classis;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Visitatione B. Mariæ Virginis;;Duplex II classis;;5;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Ipsa Virgo Virginum
-Doxology=Nat
-Antiphonas horas
-Psalmi Dominica
 
 [Ant Vespera]
 Marie, se levant, * s’en alla en grande hâte en une ville de Juda.;;109
@@ -61,7 +53,7 @@ R. La voix de la tourterelle a été entendue dans notre terre.
 
 [Responsory2]
 R. Quelle est celle-ci qui s’avance comme le soleil, et belle comme Jérusalem ?
-*  Les filles de Sion l’ont vue et l’ont dite bienheureuse, et les reines l’ont louée.
+* Les filles de Sion l’ont vue et l’ont dite bienheureuse, et les reines l’ont louée.
 V. Et comme un jour de printemps, les rosés l’entouraient, ainsi que les lys des vallées.
 R. Les filles de Sion l’ont vue et l’ont dite bienheureuse, et les reines l’ont louée.
 
@@ -88,7 +80,7 @@ Lorsque le Rédempteur de notre race fut venu, il alla aussitôt près de Jean, 
 
 [Responsory4]
 R. Le voici qui vient, sautant sur les montagnes, franchissant les collines :
-*  Mon bien-aimé est semblable au chevreuil et au faon des biches.
+* Mon bien-aimé est semblable au chevreuil et au faon des biches.
 V. Il s’est élancé comme un géant pour parcourir sa carrière ; à l’extrémité du ciel est sa sortie.
 R. Mon bien-aimé est semblable au chevreuil et au faon des biches.
 
@@ -142,15 +134,5 @@ R. le Christ notre Dieu.
 En effet, elle ne resta pas tout ce temps auprès d’Élisabeth uniquement pour jouir de son intimité : ce fut encore au profit d’un si grand Prophète. Car s’il y eut de prime abord un effet de grâce si prodigieux, qu’à la salutation de Marie, Jean tressaillit dans le sein de sa mère, et que celle-ci fut remplie de l’Esprit-Saint, combien, pensons-nous, que dans toute la durée de la visite, la présence de Marie y ait surajouté ? C’est ainsi que le Précurseur reçut l’onction du Saint-Esprit et fut exercé dans le sein de sa mère, comme un athlète vaillant. C’est ainsi que sa vigueur était préparée en vue des plus rudes combats.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
-[Versum 2]
-@:Versum 1
-
 [Ant 2]
 Lorsqu’elle eut entendu * la salutation de Marie, Élisabeth s’écria d’une voix forte : d’où m’arrive-t-il que la Mère de mon Seigneur vienne vers moi ? Alléluia.
-
-[Versum 3]
-@:Versum 1
-

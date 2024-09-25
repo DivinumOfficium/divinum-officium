@@ -1,18 +1,9 @@
-[Name]
-Commune Unius Martyris
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-
 [Ant Vespera]
-Akik megvallanak engem * az emberek előtt, én is megvallom majd mennyei Atyám előtt.;;109
-Aki követ engem, * nem jár többé sötétségben, hanem övé lesz az élet világossága, mondja az Úr.;;110
-Aki nekem szolgál, * az engem kövessen, s ahol én vagyok, ott lesz a szolgám is.;;111
-Aki nekem szolgál, * azt megtiszteli az Atya, ki a mennyben van, mondja az Úr.;;112
-Úgy akarom Atyám, * hogy ahol én vagyok, ott legyen a szolgám is.;;116
+Akik megvallanak engem * az emberek előtt, én is megvallom majd mennyei Atyám előtt.
+Aki követ engem, * nem jár többé sötétségben, hanem övé lesz az élet világossága, mondja az Úr.
+Aki nekem szolgál, * az engem kövessen, s ahol én vagyok, ott lesz a szolgám is.
+Aki nekem szolgál, * azt megtiszteli az Atya, ki a mennyben van, mondja az Úr.
+Úgy akarom Atyám, * hogy ahol én vagyok, ott legyen a szolgám is.
 
 [Hymnus Vespera]
 {:H-Deustuorummilitum:}v. Isten, jutalma, otthona`
@@ -51,14 +42,30 @@ Ez a szent * Isten törvényét kővette egészen a halálig, nem félt az isten
 [Invit]
 Az Úr a vértanúk királya, * jöjjetek imádjuk.
 
-[Hymnus Matutinum]
-@Commune/C2:Hymnus Vespera
+[Ant Matutinum]
+His delight * was in the law of the Lord day and night.;;1
+The Lord hath set him * upon His holy hill, to declare His decree.;;2
+I cried unto the Lord * with my voice, and He heard me out of His holy hill.;;3
+O ye sons of men, * know that the Lord hath set apart him that is holy for Himself.;;4
+O Lord, Thou hast compassed him * with thy favour as with a shield.;;5
+Thou hast crowned him * with glory and honour in all the earth.;;8
+The righteous Lord * loveth righteousness; His countenance doth behold uprightness.;;10
+He shall dwell * in thy tabernacle, He shall rest upon thy holy hill.;;14
+O Lord, Thou hast set a crown * of precious stones upon his head.;;20
+
+[Nocturn 2 Versum]
+V. Uram, fejére tetted.
+R. A színarany koronát.
+
+[Nocturn 3 Versum]
+V. Segítségeddel nagy lett a hírneve.
+R. Fönséggel és dicsőséggel övezted.
 
 [Lectio1]
 Olvasmány az Apostolok Cselekedeiből
 !Acts 20:17-24
 17 Milétuszból üzent Efezusba, és magához kérette az egyház presbitereit.
-18 Amikor megérkeztek, így szólt hozzájuk: "Tudjátok, hogy Ázsiába jövetelem első napjától kezdve minden időmet köztetek töltöttem,
+18 Amikor megérkeztek, így szólt hozzájuk: „Tudjátok, hogy Ázsiába jövetelem első napjától kezdve minden időmet köztetek töltöttem,
 19 és szolgáltam az Úrnak, teljes alázatosságban, mindenfelől szorongattatva, könnyek és megpróbáltatások közepette is, amik a zsidók áskálódásai folytán jutottak osztályrészemül.
 20 Nem tagadtam meg tőletek semmit, ami javatokra szolgálhatott: prédikáltam nektek és tanítottalak benneteket, nyilvánosan és magánházaknál.
 21 Zsidóknak és görögöknek egyaránt hirdettem, hogy térjenek meg az Istenhez, és higgyenek Urunkban, Jézusban.
@@ -82,7 +89,7 @@ Az Apostolok Cselekedeteiből
 32 Most pedig az Istennek és kegyelme szavának ajánllak benneteket. Neki hatalma van rá, hogy fölépítse művét, és megadja nektek az összes szenttel közös örökséget.
 33 Senki ezüstjét, aranyát vagy ruháját nem kívántam.
 34 Jól tudjátok, hogy amire magamnak és társaimnak szükségünk volt, a kezem munkájával szereztem meg.
-35 Minden tekintetben példát adtam nektek, hogyan kell dolgozni, s a gyengéknek támaszukra lenni, Urunk Jézus szavaira emlékezve: Nagyobb boldogság adni, mint kapni."
+35 Minden tekintetben példát adtam nektek, hogyan kell dolgozni, s a gyengéknek támaszukra lenni, Urunk Jézus szavaira emlékezve: Nagyobb boldogság adni, mint kapni.”
 36 Szavai befejeztével letérdelt, és imádkozott velük.
 37 Nagy sírásban törtek ki mindnyájan, Pál nyakába borultak és összecsókolták.
 38 Leginkább az a mondása fájt nekik, hogy nem látják többé viszont. Aztán kikísérték a hajóhoz.
@@ -91,13 +98,6 @@ Az Apostolok Cselekedeteiből
 Evangélium szent Lukács Evangélista kőnyvéből
 !Luke 14:26-33
 Azon időben így szólt Jézus a sokasághoz: Ha valaki követni akar, de nem gyűlöli apját, anyját, feleségét, gyermekeit, fivéreit és nővéreit, sőt még saját magát is, nem lehet a tanítványom. És így tovább.
-
-[Ant Laudes]
-Akik megvallanak engem * az emberek előtt, én is megvallom majd mennyei Atyám előtt.
-Aki követ engem * nem jár többé sötétségben, hanem övé lesz az élet világossága, mondja az Úr
-Aki nekem szolgál * az engem kövessen, s ahol én vagyok, ott lesz a szolgám is
-Aki nekem szolgál * azt megtiszteli az Atya, ki a mennyben van, mondja az Úr.
-Úgy akarom Atyám * hogy ahol én vagyok, ott legyen a szolgám is.
 
 [Capitulum Laudes]
 !Jas 1:12
@@ -153,52 +153,26 @@ $Per Dominum
 !Sir 39:6
 v. Szivét arra adja, hogy korán ébredjen az Úrhoz, ki őt teremtette, és a Fölségesnek színe előtt könyörög.
 
-[Responsory Tertia]
-R.br. Dicsőséggel, tisztességgel * koszorúztad, Urunk.
-R. Dicsőséggel, tisztességgel * koszorúztad, Urunk.
-V. Hatalmat adtál neki kezed műve fölött.
-R. Koszorúztad, Urunk.
-&Gloria
-R. Dicsőséggel, tisztességgel * koszorúztad, Urunk.
-_
-V. Uram, fejére tetted.
-R. A színarany koronát.
-
-[Capitulum Sexta]
-!Sir 15:3
-v. Élteti őt az élet és értelem kenyerével, és az üdvös bölcseség vizével itatja őt, és megerősödik benne, és el nem hajol.
-$Deo gratias
-
-[Responsory Sexta]
-R.br. Uram, * fejére tetted.
-R. Uram, * fejére tetted.
-V. A színarany koronát.
-R. Fejére tetted.
-&Gloria
-R. Uram, * fejére tetted.
-_
-V. Segítségeddel nagy lett a hírneve.
-R. Fönséggel és dicsőséggel övezted.
-
-[Capitulum Nona]
-!Sir 39:6
-v. Szívét arra adja, hogy korán ébredjen az Úrhoz, ki őt teremtette, és a Fölségesnek színe előtt könyörög.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Tertia]
 R.br. Segítségeddel nagy lett a hírneve.
 R. Segítségeddel nagy lett a hírneve.
 V. Fönséggel és dicsőséggel övezted.
 R. Segítségeddel nagy lett a hírneve.
 &Gloria
 R. Segítségeddel nagy lett a hírneve.
-_
-V. Az igaz virul, mint a pálma.
-R. Fölfelé nő, mint a Libanon cédrusa.
 
-[Versum 3]
-V. Az igaz virul, mint a pálma.
-R. Fölfelé nő, mint a Libanon cédrusa.
+[Capitulum Sexta]
+!Sir 15:3
+v. Élteti őt az élet és értelem kenyerével, és az üdvös bölcseség vizével itatja őt, és megerősödik benne, és el nem hajol.
+$Deo gratias
+
+[Responsory Breve Sexta]
+R.br. Uram, * fejére tetted.
+R. Uram, * fejére tetted.
+V. A színarany koronát.
+R. Fejére tetted.
+&Gloria
+R. Uram, * fejére tetted.
 
 [Ant 3]
 Aki követni akar, * tagadja meg magát, vegye fel keresztjét minden nap és úgy kövessen.

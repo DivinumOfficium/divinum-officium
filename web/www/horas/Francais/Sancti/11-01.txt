@@ -1,14 +1,6 @@
 [Rank]
 Tous les Saints;;Duplex I classis cum octava communi;;6.4;;
 
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-(rubrica tridentina aut rubrica divino) Vesperae Defunctorum
-
 [Ant Vespera]
 Je vis une grande troupe * que personne ne pouvait compter, de toutes les nations, qui était debout devant le trône.
 Et tous les Anges * se tenaient debout autour du trône, et ils tombèrent sur leurs faces devant le trône, et ils adorèrent Dieu.
@@ -85,10 +77,6 @@ pour que nous lui rendions avec allégresse
 le juste tribut de nos louanges.
 Ainsi-soit-il.
 
-[Versum 1]
-V. Justes, réjouissez-vous dans le Seigneur et exultez.
-R. Glorifiez-vous, vous tous, droits de cœur.
-
 [Ant 1]
 Anges, * Archanges, Trônes et Dominations, Principautés et Puissances, Vertus des cieux, Chérubins et Séraphins, Patriarches et Prophètes, saints Docteurs de Sa loi, Apôtres, tous les Martyrs du Christ, saints Confesseurs, Vierges du Seigneur, Anachorètes, et tous les Saints, intercédez pour nous.
 
@@ -99,28 +87,16 @@ $Per Dominum
 [Invit]
 Venez, adorons le Seigneur, Roi des rois, * Qui est lui-même la couronne de tous les Saints.
 
-[Hymnus Matutinum]
-@Sancti/11-01:Hymnus Vespera
-
-[HymnusM Matutinum]
-@Sancti/11-01:HymnusM Vespera
-
 [Ant Matutinum]
 Le Seigneur connaît * la voie des justes, qui méditent sa loi le jour et la nuit.;;1
 Il a glorifié * ses Saints, le Seigneur, et il les a exaucés lorsqu’ils ont crié vers lui.;;4
 Il est admirable, * votre nom, Seigneur, car vous avez couronné vos Saints de gloire et d’honneur, et vous les avez établis sur les œuvres de vos mains.;;8
-V. Justes, réjouissez-vous dans le Seigneur et exultez.
-R. Glorifiez-vous, vous tous, droits de cœur.
 Seigneur, * ceux qui pratiquent la justice habiteront dans votre tabernacle, et se reposeront sur votre montagne sainte.;;14
 Telle est la génération * de ceux qui cherchent le Seigneur, de ceux qui cherchent la face du Dieu de Jacob.;;23
 Réjouissez-vous dans le Seigneur * et exultez, justes, glorifiez-vous, vous tous, droits de cœur.;;31
-V. Que les justes exultent en la présence de Dieu.
-R. Et qu’ils se délectent dans la joie.
 Craignez le Seigneur, * vous tous ses Saints, car rien ne manque à ceux qui le craignent ; les yeux du Seigneur sont sur ses justes, et ses oreilles sont ouvertes à leurs prières.;;33
 Seigneur, l’espérance des Saints * et leur tour forte ; vous avez donné un héritage à ceux qui craignent votre nom ; ils habiteront dans votre tabernacle pendant les siècles.;;60
 Vous qui aimez le Seigneur, * réjouissez-vous dans le Seigneur et célébrez la mémoire de sa sanctification.;;96
-V. Les justes vivront éternellement.
-R. Et leur récompense est auprès du Seigneur.
 
 [Lectio1]
 Du livre de l’Apocalypse de l’Apôtre saint Jean.
@@ -133,9 +109,6 @@ Du livre de l’Apocalypse de l’Apôtre saint Jean.
 7 Le premier animal ressemble à un lion, le second à un jeune taureau, le troisième a comme la face d’un homme, et le quatrième ressemble à un aigle qui vole.
 8 Ces quatre animaux ont chacun six ailes ; ils sont couverts d’yeux tout à l’entour et au dedans, et ils ne cessent jour et nuit de dire : « Saint, saint, saint est le Seigneur, le Dieu Tout-Puissant, qui était, qui est et qui vient ! »
 
-[Responsory1]
-@Tempora/Pent01-0
-
 [Lectio2]
 !Apo 5:1-8
 1 Puis je vis dans la main droite de Celui qui était assis sur le trône un livre écrit en dedans et en dehors, et scellé de sept sceaux.
@@ -146,9 +119,6 @@ Du livre de l’Apocalypse de l’Apôtre saint Jean.
 6 Et je vis, et voici qu’au milieu du trône et des quatre animaux, et au milieu des vieillards, un Agneau était debout : il semblait avoir été immolé ; il avait sept cornes et sept yeux, qui sont les sept Esprits de Dieu envoyés par toute la terre.
 7 Il vint, et reçut le livre de la main droite de Celui qui était assis sur le trône.
 8 Quand il eut reçu le livre, les quatre animaux et les vingt-quatre vieillards se prosternèrent devant l’Agneau, tenant chacun une harpe et des coupes d’or pleines de parfums, qui sont les prières des saints.
-
-[Responsory2]
-@Sancti/08-15:Responsory8:s/&Gloria.*//s
 
 [Lectio3]
 !Apo 5:9-14
@@ -172,28 +142,11 @@ Sermon de saint Béde le Vénérable, Prêtre.
 !Sermo 18 de Sanctis
 Aujourd’hui, bien-aimés frères, nous célébrons, dans l’allégresse d’une solennité commune, la fête de tous les Saints. Leur société réjouit les cieux, leur protection console la terre, leur triomphe couronne la sainte Église. Plus 1a profession de leur foi a été ferme dans les tourments, plus ils ont d’éclat dans la gloire. Car la violence du combat s’augmentant, l’honneur des combattants s’est aussi accru. Les diverses tortures du martyre rehaussent le triomphe, et des souffrances plus affreuses ont procuré de plus délicieuses récompenses. Notre mère l’Église catholique, répandue au loin dans tout l’univers, à qui Jésus-Christ, son chef, apprit par son exemple à ne craindre ni les outrages, ni les croix, ni la mort, s’est de plus en plus fortifiée, non par la résistance, mais par la patience. Pour encourager toutes ces légions d’illustres athlètes, jetés en prison comme des criminels, et pour les animer tous à soutenir le combat avec la même ardeur et un courage égal, elle leur a inspiré la sainte ambition d’un glorieux triomphe.
 
-[Responsory4]
-R. Il est venu, le Précurseur du Seigneur, auquel Jésus lui-même a rendu ce témoignage :
-* Il ne s’est pas élevé entre les enfants des femmes, de plus grand que Jean-Baptiste.
-V. Celui-ci est un Prophète, et plus qu’un Prophète, lui de qui le Seigneur a dit.
-R. Il ne s’est pas élevé entre les enfants des femmes, de plus grand que Jean-Baptiste.
-
 [Lectio5]
 Heureuse en vérité, l’Église notre mère, d’être ainsi honorée des marques éclatantes de la miséricorde divine, empourprée du noble sang des Martyrs victorieux, parée du vêtement blanc de l’inviolable fidélité des Vierges ! Ni les roses, ni les lis ne manquent parmi ses fleurs. Et maintenant, très chers frères, que chacun de nous s’efforce d’acquérir la plus ample provision de titres à ces deux sortes d’honneurs, et de mériter, ou la couronne blanche de la virginité ou la couronne pourpre du martyre. Car, dans la milice des cieux, le repos et la lutte ont leurs fleurs pour couronner les soldats du Christ.
 
-[Responsory5]
-@Commune/C1:Responsory7
-
 [Lectio6]
 L’immense et ineffable bonté de Dieu a même eu soin de ne pas prolonger le temps des travaux et du combat, et de ne le faire ni long, ni éternel, mais court, et pour ainsi dire, d’un moment. Elle a voulu que les combats et les travaux fussent pour cette vie passagère et vite écoulée ; les couronnes et les récompenses du mérite, pour la vie éternelle ; que les travaux finissent promptement, que la récompense des mérites durât toujours ; qu’après les ténèbres de ce monde, il fût donné aux Saints de jouir de la plus resplendissante lumière, et de posséder une béatitude plus grande que le cruel excès de toutes les souffrances. Et voilà ce qu’attesté l’Apôtre quand il dit : « Les souffrances du temps n’ont aucune proportion avec la gloire qui doit un jour éclater en nous. »
-
-[Responsory6]
-R. Mes Saints, vivant dans la chair, vous avez soutenu le combat.
-* Moi, je vous rendrai la récompense de votre labeur.
-V. Venez, les bénis de mon Père, recevez le royaume.
-R. Moi, je vous rendrai la récompense de votre labeur.
-&Gloria
-R. Moi, je vous rendrai la récompense de votre labeur.
 
 [Lectio7]
 Lecture du saint Évangile selon saint Matthieu.
@@ -204,21 +157,12 @@ Homélie de saint Augustin, Évêque.
 !Lib. 1 de Sermone Domini in monte, sub initium
 Si l’on demande ce que signifie la montagne, on peut bien dire qu’elle signifie des préceptes de justice plus élevés, parce que ceux qui avaient été donnés aux Juifs étaient inférieurs. C’est toutefois le même Dieu qui, réglant avec un ordre admirable l’économie des temps, a donné, par ses saints Prophètes et par ses autres serviteurs, des préceptes moins parfaits à un peuple qu’il fallait encore contenir au moyen de la crainte, et, par son Fils, des préceptes plus parfaits, à un peuple qu’il convenait d’affranchir au moyen de la charité. Si de moindres commandements sont donnés à des âmes moins parfaites, et de plus grands à de plus parfaites ils sont toujours donnés par Celui qui est le seul à bien savoir fournir au genre humain le remède approprié à la diversité de ses besoins.
 
-[Responsory7]
-@Commune/C4:Responsory8:s/&Gloria.*//s
-
 [Lectio8]
 Et il ne faut pas s’étonner que le même Dieu, créateur du ciel et de la terre, donne, en vue du royaume des cieux, de plus grands préceptes, après en avoir donné de moindres pour celui de la terre. C’est de cette justice plus grande, que le Prophète a dit : « Votre justice est comme les montagnes de Dieu. » Et c’est ce que figure très bien la montagne où cette justice est enseignée par l’unique et seul Maître capable d’enseigner des choses si sublimes. Or il enseigne étant assis, ce qui appartient à la dignité du magistère. Et ses disciples s’approchent de lui : rapprochés de Jésus par la volonté d’accomplir ses préceptes, il fallait bien qu’ils fussent aussi plus près pour entendre ses paroles. « Et ouvrant sa bouche, il les instruisait, disant. » Cette périphrase de l’écrivain sacré : « Et ouvrant sa bouche, » semble avertir, en retardant son début, que le discours doit avoir une certaine étendue. A moins encore que ce ne soit pour rappeler que celui qui ouvre en ce moment la bouche, a lui-même ouvert, dans l’ancien Testament, .la bouche des Prophètes.
-
-[Responsory8]
-@Commune/C6
 
 [Lectio9]
 Or, que dit-il ? « Bienheureux les pauvres d’esprit, parce qu’à eux appartient le royaume des cieux. » Nous lisons dans l’Écriture, au sujet de la convoitise des biens temporels : « Tout est vanité et présomption d’esprit. » Présomption d’esprit veut dire orgueil et arrogance. On dit même vulgairement des superbes qu’ils ont de l’enflure d’esprit, et avec raison, puisque le vent est aussi appelé esprit ou souffle, comme nous le voyons dans ce verset d’un Psaume : « Feu, grêle, neige, glace, souffles des tempêtes. » Qui ne sait qu’on appelle les orgueilleux des gens bouffis, comme qui dirait gonflés de vent ? De là encore ce mot de l’Apôtre : « La science enfle, mais la charité édifie. » C’est pourquoi par ces pauvres en esprit, sont justement désignés ceux qui sont humbles et qui craignent Dieu, c’est-à-dire qui n’ont point en eux cet esprit d’enflure.
 &teDeum
-
-[Ant Laudes]
-@:Ant Vespera
 
 [Capitulum Laudes]
 !Apo 7:2-3
@@ -257,10 +201,6 @@ avec le Fils et l’Esprit-Saint,
 dans les siècles des siècles.
 Ainsi soit-il.
 
-[Versum 2]
-V. Les Saints tressailliront d’allégresse dans la gloire.
-R. Ils se réjouiront dans le lieu de leur repos.
-
 [Ant 2]
 Le chœur glorieux * des Apôtres, la phalange vénérable des Prophètes, l’armée des Martyrs, éclatante de blancheur, célèbrent vos louanges ; tous les Saints, tous les élus vous proclament d’une voix unanime, ô bienheureuse Trinité, un seul Dieu.
 
@@ -268,26 +208,10 @@ Le chœur glorieux * des Apôtres, la phalange vénérable des Prophètes, l’a
 !Apo 7:12
 v. La bénédiction, la gloire, la sagesse, l'action de grâce, l'honneur, la puissance et la force à notre Dieu pour les siècles des siècles ! Ainsi soit-il.
 
-[Responsory Tertia]
-@Commune/C3
-
 [Capitulum Sexta]
 !Apo 7:9
 v. Après cela, je vis une foule immense, que personne ne pouvait dénombrer, de toutes nations, races, peuples et langues, debout devant le Trône et devant l'Agneau, vêtus de robes blanches, des palmes en main.
 $Deo gratias
-
-[Responsory Sexta]
-@Commune/C3
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
-@Commune/C3
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 Oh ! Qu’il est glorieux le royaume * dans lequel tous les Saints se réjouissent avec le Christ ; vêtus de robes blanches, ils suivent l’Agneau partout où il va.

@@ -1,17 +1,6 @@
 [Rank]
 In Apparitione S. Michaelis Archangeli;;Duplex majus;;4;;
 
-[Rule]
-proprium
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Una Antiphona
-Psalm5 Vespera=116
-Psalm5 Vespera3=137
-Contract8
-Quorum Festum
-
 [Ant Vespera]
 L'Ange se tint debout près de l'autel * du temple, ayant un encensoir d'or à la main. (Alléluia.)
 Tandis que l'Archange Michel bataillait contre le dragon, * on entendit des voix qui disaient salut à notre Dieu, alléluia.
@@ -19,10 +8,32 @@ Archange Michel, * Je t'ai établi prince de toutes les âmes qui doivent être 
 Anges du Seigneur, * bénissez le Seigneur à jamais. (Alléluia.)
 Anges, Archanges, * Trônes et Dominations, Principautés et Puissances, Vertus des cieux, louez le Seigneur du haut des cieux, alléluia.
 
-[Capitulum Laudes]
-!Rev 1:1-2
-v. Dieu a manifesté ce qui doit arriver bientôt, parlant par son Ange à son serviteur Jean, lequel témoigne de la parole de Dieu et du témoignage de Jésus-Christ, pour tout ce qu'il a vu.
-$Deo gratias
+[Hymnus Vespera]
+O Vous, splendeur et force du Père, 
+Jésus, vie de nos cœurs, 
+Nous Vous louons parmi les Anges
+Soumis à vos ordres. 
+_
+C'est pour Vous qu'elle milite, 
+Cette couronne nombreuse de mille et mille chefs ; 
+Victorieux, Michel, le porte-étendard du salut,
+Déploie le drapeau de la Croix.
+_
+C'est lui qui précipite au fond des enfers 
+La tête cruelle du dragon ; 
+Le chef avec ses rebelles, 
+Il les foudroie du haut de la citadelle céleste.
+_
+Contre le prince de l'orgueil, 
+Suivons notre chef, 
+Pour obtenir, du trône de l'Agneau, 
+La couronne de gloire.
+_
+A Dieu le Père soit la gloire ; 
+Qu’Il garde par ses Anges 
+Ceux que le Fils a rachetés 
+Et qu'a oints le Saint-Esprit.
+Ainsi soit-il.
 
 [HymnusM Vespera]
 v. Vous, ô Christ, la splendeur du Père,
@@ -54,39 +65,12 @@ Consubstantiel, coéternel,
 Dans les siècles des siècles.
 Ainsi soit-il.
 
-[Hymnus Vespera]
-O Vous, splendeur et force du Père, 
-Jésus, vie de nos cœurs, 
-Nous Vous louons parmi les Anges
-Soumis à vos ordres. 
-_
-C'est pour Vous qu'elle milite, 
-Cette couronne nombreuse de mille et mille chefs ; 
-Victorieux, Michel, le porte-étendard du salut,
-Déploie le drapeau de la Croix.
-_
-C'est lui qui précipite au fond des enfers 
-La tête cruelle du dragon ; 
-Le chef avec ses rebelles, 
-Il les foudroie du haut de la citadelle céleste.
-_
-Contre le prince de l'orgueil, 
-Suivons notre chef, 
-Pour obtenir, du trône de l'Agneau, 
-La couronne de gloire.
-_
-A Dieu le Père soit la gloire ; 
-Qu’Il garde par ses Anges 
-Ceux que le Fils a rachetés 
-Et qu'a oints le Saint-Esprit.
-Ainsi soit-il.
-
 [Versum 1]
 V. L'Ange s'est tenu près de l'autel du temple. (Alléluia.)
 R. Ayant un encensoir d'or à la main. (Alléluia.)
 
 [Ant 1]
-Tandis que le mystère sacré se dévoilait aux yeux de Jean,  * l'Archange saint Michel sonna de la trompette. Pardonnez, Seigneur notre Dieu, qui ouvrez le livre et brisez ses sceaux, alléluia.
+Tandis que le mystère sacré se dévoilait aux yeux de Jean, * l'Archange saint Michel sonna de la trompette. Pardonnez, Seigneur notre Dieu, qui ouvrez le livre et brisez ses sceaux, alléluia.
 
 [Oratio]
 O Dieu, qui distribuez selon un ordre admirable les ministères des Anges et des hommes, accordez-nous miséricordieusement que ceux qui, dans le ciel, Vous entourent d'un continuel service, soient la protection de notre vie sur terre.
@@ -162,7 +146,7 @@ L’autorité des livres sacrés et ’ancienne tradition des saints prouvent qu
 [Responsory4]
 R. Celui-ci est l’Archange Michel, le prince de la milice des Anges 
 * Le culte qu’on lui rend est une source de bienfaits pour les peuples, et sa prière conduit au royaume des cieux. (Alleluia.)
-V.  C’est l’Archange Michel, préposé au paradis, celui à qui rendent honneur les concitoyens des Anges.
+V. C’est l’Archange Michel, préposé au paradis, celui à qui rendent honneur les concitoyens des Anges.
 R. Le culte qu’on lui rend est une source de bienfaits pour les peuples, et sa prière conduit au royaume des cieux. (Alleluia.)
 
 [Lectio5]
@@ -219,13 +203,18 @@ R. Il a couvert de sa protection les âmes justes. (Alleluia.)
 « Gardez-vous de mépriser aucun de ces petits qui croient en moi » Il impose, à ceux-là surtout qui vraiment ont cru au Seigneur, les liens très étroits de l’amour mutuel. Les Anges des petits enfants voient Dieu tous les jours ; car le Fils de l’homme est venu sauver ce qui était perdu. Ainsi le Fils de l’homme sauve ; les Anges voient Dieu ; les Anges des petits président aux prières des fidèles. Que les Anges président ainsi, c’est une doctrine absolument certaine. Les Anges offrent donc tous les jours à Dieu les prières des enfants que le Christ a sauvés et il y a grand péril à mépriser celui dont les désirs et les demandes sont portés avec tant d’honneur jusqu’au trône du Dieu éternel et invisible, par le ministère des Anges qui forment sa cour.
 &teDeum
 
+[Capitulum Laudes]
+!Rev 1:1-2
+v. Dieu a manifesté ce qui doit arriver bientôt, parlant par son Ange à son serviteur Jean, lequel témoigne de la parole de Dieu et du témoignage de Jésus-Christ, pour tout ce qu'il a vu.
+$Deo gratias
+
 [Hymnus Laudes]
 v. O Christ, gloire des saints Anges,
 Auteur et Rédempteur du genre humain, 
 Daignez nous faire monter vers les Trônes bienheureux
 Des habitants du ciel.
 _
-Que l'Ange de la paix, Michel,   
+Que l'Ange de la paix, Michel, 
 Dans nos demeures, nous arrive du ciel,
 Avec la paix sereine qu'il apporte,
 Reléguant aux enfers les guerres et leurs larmes.
@@ -256,18 +245,18 @@ II se fit un grand silence * dans le ciel, tandis que le dragon engageait le com
 
 [Lectio Prima]
 !Rev 12:7-8
-IL se fit un grand combat dans le ciel : Michel et ses Anges combattaient contre le dragon, et le dragon  luttait, et ses Anges aussi : mais il ne fut pas le plus fort  et plus une place ne se trouva pour eux dans le ciel.
+IL se fit un grand combat dans le ciel : Michel et ses Anges combattaient contre le dragon, et le dragon luttait, et ses Anges aussi : mais il ne fut pas le plus fort et plus une place ne se trouva pour eux dans le ciel.
 
 [Responsory Tertia]
-R.br. L’Ange se tint debout près de l’autel du temple. * (Alléluia, alléluia). 
-R. L’Ange se tint debout près de l’autel du temple. * (Alléluia, alléluia). 
-V. Ayant un encensoir d’or à la main. 
-R. Alléluia, alléluia. 
+R.br. L’Ange se tint debout * Près de l’autel du temple.
+R. L’Ange se tint debout * Près de l’autel du temple.
+V. Ayant un encensoir d’or en sa main.
+R. Près de l’autel du temple.
 &Gloria
-R. L’Ange se tint debout près de l’autel du temple. (Alléluia, alléluia). 
+R. L’Ange se tint debout * Près de l’autel du temple.
 _
-V. La fumée des parfums monte devant le Seigneur, (alléluia.)
-R. De la main de l’Ange, alléluia.
+V. La fumée des parfums monta en présence du Seigneur.
+R. De la main de l’Ange.
 
 [Capitulum Sexta]
 !Rev 5:11-12
@@ -275,26 +264,26 @@ v. J'entendis la voix de beaucoup d’Anges autour du trône, et des animaux et 
 $Deo gratias
 
 [Responsory Sexta]
-R.br. La fumée des parfums monte devant le Seigneur *. (Alléluia, alléluia)
-R. La fumée des parfums monte devant le Seigneur *. (Alléluia, alléluia)
+R.br. La fumée des parfums monte * devant le Seigneur.
+R. La fumée des parfums monte * devant le Seigneur.
 V. De la main de l’Ange
-R. Alléluia, alléluia
+R. Devant le Seigneur.
 &Gloria
-R. La fumée des parfums monte devant le Seigneur *. (Alléluia, alléluia)
+R. La fumée des parfums monte * devant le Seigneur.
 _
-V. En présence des Anges, je vous chanterai, mon Dieu, (alléluia)
-R. Je me prosternerai en votre temple et je  louerai votre nom, (alléluia)
+V. En présence des Anges, je vous chanterai, mon Dieu.
+R. Je me prosternerai en votre temple et je louerai votre nom.
 
 [Responsory Nona]
-R.br. En présence des Anges, je vous chanterai, mon Dieu. * (Alléluia, alléluia.) 
-R. En présence des Anges, je vous chanterai, mon Dieu. * (Alléluia, alléluia.) 
-V. Je me prosternerai en votre saint temple et je louerai votre nom
-R. Alléluia, alléluia
+R.br. En présence des Anges * Je chanterai vos louanges, ô mon Dieu
+R. En présence des Anges * Je chanterai vos louanges, ô mon Dieu
+V. Je vous adorerai dans votre saint temple et je glorifierai votre nom.
+R. Je chanterai vos louanges, ô mon Dieu
 &Gloria
-R. En présence des Anges, je vous chanterai, mon Dieu. * (Alléluia, alléluia.) 
+R. En présence des Anges * Je chanterai vos louanges, ô mon Dieu
 _
-V. Adorez Dieu, (alléluia).
-R. Vous tous ses Anges, (alléluia).
+V. Adorez Dieu.
+R. Vous tous, ses Anges.
 
 [Versum 3]
 V. En présence des anges, je Vous chanterai mon Dieu.

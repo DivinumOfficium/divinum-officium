@@ -1,26 +1,17 @@
 [Rank]
 S. Gabrielis a Virgine Perdolente Confessoris;;Duplex;;3;;vide C5
 
-[Rank](rubrica 1960)
-S. Gabrielis a Virgine Perdolente Confessoris;;Duplex;;3;;vide C5
-
 [Rule]
 vide C5;;
 9 lectiones
 Lectio1 Quad
+in 1 Nocturno Lectiones ex Commune in 2 loco
+(sed rubrica 1960)
+scriptura1960
 
 [Oratio]
 Deus, qui beátum Gabriélem dulcíssimæ Matris tuæ dolóres assídue recólere docuísti, ac per illam sanctitátis et miraculórum glória sublimásti: da nobis, ejus intercessióne et exémplo; ita Genetrícis tuæ consociári flétibus, ut matérna eiúsdem protectióne salvémur:
 $Qui vivis
-
-[Lectio1]
-@Commune/C5:Lectio1 in 2 loco
-
-[Lectio2]
-@Commune/C5:Lectio2 in 2 loco
-
-[Lectio3]
-@Commune/C5:Lectio3 in 2 loco
 
 [Lectio4]
 Gabriel, Assisii in Umbria, honesto genere natus, et Franciscus ob seráphici civis memóriam vocatus, egregiam animi índolem a púero osténdit. Adoléscens, cum Spoleti litteris operam daret, inani sæculi spécie et pompa aliquantulum állici visus est. Sed miserentis Dei munere, qui eum ad perfectiónem christianæ vitæ jamdúdum invitabat, cum in morbum incidísset, sæculi vanitátem fastidire cœpit, atque immortalia dumtáxat bona appétere. Quo autem citius Deo vocanti obtemperaret, factum est, ut insignem illam beatíssimæ Vírginis Icónem, solemni pompa extra Spoletinæ ecclésiæ septa delatam intúitus, divini amoris flammam conciperet, simulque Institutum Clericórum a Passióne Jesu amplecti statúeret. Itaque non exíguas difficultates eluctatus, in recessu Morrovallénsi, lúgubrem vestem lætus induit, et Gabriel a Vírgine perdolénte maluit appellari; ad ejusdem gaudiórum et dolórum memóriam perpetuo recoléndam.
@@ -30,6 +21,10 @@ In tirocinio, cum regulari observántia et ómnium exercitatióne virtútum coti
 
 [Lectio6]
 Inter ceteras virtútes christianam humilitátem et obœdiéntiam maxime diléxit: nam inter omnes se minimum exístimans, abjectíssima quæque ministeria domus cupide affectabat, et antistitum suórum non modo jussa, sed et optáta diligentíssime perficiebat. Idem, refrenátis sensibus et vitæ asperitáte usus, illibátum retinuit flórem virginitátis ac plane mundo crucifixus unice Deo vixit, intima Dómini sui fruítus consuetúdine. Ita brevem vitæ cursum tot virtútibus nobilitátum conficiens, Insulæ in Aprutio, caritátis incendio verius quam vi morbi consumptus, divinæque Matris ope recreatus, placidíssimo éxitu ad Superos evolávit, anno millesimo octingentésimo sexagesimo secundo, ætátis suæ vigesimo quarto. Eum deinceps, a Deo miraculis illustrátum, Pius Papa décimus Cælitum beatórum número accensuit. Benedíctus vero décimus quintus, Pontifex maximus, anno millesimo nongentésimo vigesimo, post cónditum Institutum a Passióne ducentésimo, in solemnitate Ascensiónis Dómini, beato júveni Sanctórum honores decrevit; et Pius undecimus ejus Offícium et Missam ad universam Ecclésiam extendit.
+
+[Lectio94]
+Gábriel, Assísii in Umbria natus, et Francíscus ob seráphici civis memóriam vocátus, egrégiam ánimi índolem osténdit. Adoléscens cum miseréntis Dei múnere, eum ad perfectiórem vitam jamdúdum invitántis, in morbum incidísset, sǽculi vanitátem fastidíre cepit. Institútum Clericórum a Passióne ampléctens, Gábriel a Vírgine Perdolénte máluit appellári ad ejúsdem gaudiórum et dolórum memóriam perpétuo recoléndam. Ipsam omni obséquii génere percólere, præsértim conféctam afflictámque Jesu cruciátibus tam dolénter contemplári solébat, ut vim lacrimárum profúnderet. Illibátum virginitátis florem retínuit, et suæ sodalitátis asperitáte usus, plane mundo crucifíxus, únice Deo vixit. Ita brevem vitæ cursum ómnium virtútum exercitatióne confíciens, caritátis incéndio vérius quam vi morbi consúmptus, divinǽque matris ope recreátus, ad Súperos evolávit anno millésimo octingentésimo sexagésimo secúndo. Eum deínceps Pius Papa décimus beatórum, Benedíctus vero décimus quintus Sanctórum número accénsuit, et Pius undécimus ejus Offícium et Missam ad univérsam Ecclésiam exténdere dignátus est.
+&teDeum
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Marcum
@@ -45,8 +40,4 @@ Et, cum egréssus esset in viam, procurrens quidam, genu flexo ante eum, rogába
 
 [Lectio9]
 Díligit enim Dóminus eos, qui mandáta legis, quamvis minora, custódiunt: sed nihilóminus, quod in lege minus fuerat, iis qui perfecti esse desiderant, osténdit, quia non venit solvere legem aut Prophétas, sed adimplere. Ad quam profecto adimpletiónem pertinet, quod hic consequenter adjungitur: Vade, quæcúmque habes vende et da paupéribus, et habebis thesáurum in cælo, et veni, séquere me. Quicúmque perfectus esse volúerit, debet vendere quæ habet; et non ex parte véndere, sicut Ananías et Saphira, sed totum véndere: et cum vendiderit, dare omne paupéribus, et sic sibi præparáre thesáurum in regno cælórum. Nec hoc ad perfectiónem sufficit, nisi, post contemptas divítias, Salvatórem sequátur; id est relictis malis, fáciat bona. Facílius enim sæculum contemnitur quam volúntas. Multi divítias relinquéntes, Dóminum non sequúntur. Sequitur autem Dóminum, qui imitator ejus est et per vestígia illíus graditur. Qui enim dicit se in Christo credere, debet, quómodo ille ambulávit, et ipse ambuláre.
-&teDeum
-
-[Lectio94]
-Gábriel, Assísii in Umbria natus, et Francíscus ob seráphici civis memóriam vocátus, egrégiam ánimi índolem osténdit. Adoléscens cum miseréntis Dei múnere, eum ad perfectiórem vitam jamdúdum invitántis, in morbum incidísset, sǽculi vanitátem fastidíre cepit. Institútum Clericórum a Passióne ampléctens, Gábriel a Vírgine Perdolénte máluit appellári ad ejúsdem gaudiórum et dolórum memóriam perpétuo recoléndam. Ipsam omni obséquii génere percólere, præsértim conféctam afflictámque Jesu cruciátibus tam dolénter contemplári solébat, ut vim lacrimárum profúnderet. Illibátum virginitátis florem retínuit, et suæ sodalitátis asperitáte usus, plane mundo crucifíxus, únice Deo vixit. Ita brevem vitæ cursum ómnium virtútum exercitatióne confíciens, caritátis incéndio vérius quam vi morbi consúmptus, divinǽque matris ope recreátus, ad Súperos evolávit anno millésimo octingentésimo sexagésimo secúndo. Eum deínceps Pius Papa décimus beatórum, Benedíctus vero décimus quintus Sanctórum número accénsuit, et Pius undécimus ejus Offícium et Missam ad univérsam Ecclésiam exténdere dignátus est.
 &teDeum

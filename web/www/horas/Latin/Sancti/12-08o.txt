@@ -7,6 +7,7 @@ ex C11;
 Psalmi Dominica
 Antiphonas horas
 Doxology=Nat
+Ant Matutinum 12 special
 
 [Ant Vespera]
 Conceptio gloriosæ Virginis Mariæ * ex semine Abrahæ, ortæ de tribu Juda, clara ex stirpe David.;;109
@@ -20,7 +21,7 @@ V. Conceptio est hodie sanctæ Mariæ Virginis.
 R. Cujus vita inclyta cunctas illustrat ecclesias.
 
 [Ant 1]
-Gloriosæ Virginis Mariæ ortum * dignissimum recolamus, quæ et Genitricis dignitatem obtinuit, et virginalem pudicitiam non amisit.
+@Sancti/09-08
 
 [Oratio]
 Famulis tuis, quǽsumus Domine, cælestis gratiæ munus impertire: ut quibus beatæ Virginis partus exstitit salutis exordium, Conceptionis ejus votiva solemnitas pacis tribuat incrementum.
@@ -28,6 +29,9 @@ $Per Dominum
 
 [Invit]
 Conceptionem Virginis Mariæ celebremus: * Christum ejus Filium adoremus Dominum.
+
+[Ant Matutinum 12]
+@Sancti/03-25
 
 [Lectio1]
 !Sir 24:5-13
@@ -42,7 +46,7 @@ Conceptionem Virginis Mariæ celebremus: * Christum ejus Filium adoremus Dominum
 13 Et dixit mihi: In Jacob inhabita, et in Israël hereditare, et in electis meis mitte radices.
 
 [Responsory1]
-@Sancti/12-25:Responsory1
+@Sancti/12-25
 
 [Lectio2]
 !Sir 24:14-21
@@ -56,7 +60,7 @@ Conceptionem Virginis Mariæ celebremus: * Christum ejus Filium adoremus Dominum
 21 et quasi storax, et galbanus, et ungula, et gutta, et quasi Libanus non incisus vaporavi habitationem meam, et quasi balsamum non mistum odor meus.
 
 [Responsory2]
-@Sancti/12-25:Responsory2
+@Sancti/12-25
 
 [Lectio3]
 !Sir 24:22-31
@@ -72,7 +76,7 @@ Conceptionem Virginis Mariæ celebremus: * Christum ejus Filium adoremus Dominum
 31 qui elucidant me, vitam ætérnam habebunt.
 
 [Responsory3]
-@Sancti/12-25:Responsory3
+@Sancti/12-25
 
 [Lectio4]
 Sermo sancti Ambrósii episcopi
@@ -80,49 +84,43 @@ Sermo sancti Ambrósii episcopi
 Sit vobis tamquam in imagine descripta virginitas vítaque beatæ Mariæ, de qua velut speculo refulget species castitatis, et forma virtutis. Hinc sumatis licet exempla vivendi, ubi tamquam in exemplari magisteria expressa probitatis, quid corrigere, quid effugere, quid tenere debeatis, ostendunt. Primus discendi ardor nobilitas est magistri. Quid nobilius Dei Matre? Quid splendidius ea, quam splendor elegit? Quid castius ea, quæ corpus sine corporis contagione generavit? 
 
 [Responsory4]
-@Sancti/12-25:Responsory4
+@Sancti/12-25
 
 [Lectio5]
 Nam de ceteris ejus virtutibus quid loquar? Virgo erat non solum corpore sed étiam mente, quæ nullo doli ambitu sincerum adulteraret affectum. Corde humilis, verbis gravis, animi prudens, loquendi parcior, legendi studiosior; non in incerto divitiarum, sed in prece pauperis spem reponens. Intenta operi, verecunda sermone, arbitrum mentis solita non hominem, sed Deum quærere. Non lædere reos, bene velle omnibus, assurgere majoribus natu, æqualibus non invidere, fugere jactantiam, rationem sequi, amare virtutem.
 
 [Responsory5]
-@Sancti/12-25:Responsory5
+@Sancti/12-25
 
 [Lectio6]
 Quando ista vel vultu læsit parentes? Quando dissensit a propinquis? Quando fastidivit humilem? Quando derisit debilem? Quando vitavit inopem? Eos solos solita cœtus virorum invisere, quos misericordia non erubesceret, neque præteriret verecundia: nihil torvum in oculis, nihil in verbis procax, nihil in actu inverecundum. Non gestus fractior, non incessus solutior, non vox petulantior: ut ipsa corporis species simulacrum fuerit mentis, figura probitatis. 
 
 [Responsory6]
-@Sancti/12-25:Responsory6
+@Sancti/12-25
 
 [Lectio7]
-@Sancti/09-08:Lectio7
+@Sancti/09-08
 
 [Responsory7]
-@Sancti/07-02:Responsory7
+@Sancti/07-02
 
 [Lectio8]
-@Sancti/09-08:Lectio8
+@Sancti/09-08
 
 [Responsory8]
-@Sancti/07-02:Responsory8
+@Sancti/07-02
 
 [Lectio9]
-@Sancti/09-08:Lectio9
-&teDeum
-
-[Capitulum Laudes]
-!Prov 8:22-24
-v. Dóminus possedit me in inítio viárum suárum, antequam quidquam fáceret a principio. Ab ætérno ordináta sum, et ex antíquis antequam terra fieret. Nondum erant abyssi, et ego jam concepta eram.
-$Deo gratias
+@Sancti/09-08
 
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g
 
-[Ant 2]
-Conceptionem hodiernam * perpetuæ Virginis Genitricis Dei Mariæ solemniter celebremus, qua celsitudo throni processit, allelúja.
-
 [Versum 2]
 @:Versum 1
+
+[Ant 2]
+Conceptionem hodiernam * perpetuæ Virginis Genitricis Dei Mariæ solemniter celebremus, qua celsitudo throni processit, allelúja.
 
 [Versum 3]
 @:Versum 1

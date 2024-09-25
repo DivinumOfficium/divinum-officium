@@ -1,16 +1,8 @@
 [Rank]
 S. Laurentii Martyris;;Duplex II classis cum octava simplici;;5.1;;ex C2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 S. Laurentii Martyris;;Duplex II classis;;5;;ex C2
-
-[Rule]
-ex C2
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
 
 [Ant Vespera]
 Lawrence * went in to be a martyr, and acknowledged the name of our Lord Jesus Christ.
@@ -19,19 +11,22 @@ O my God, my soul cleaveth * fast after thee, for my flesh hath been burnt with 
 The Lord hath sent His Angel, * and hath delivered me out of the midst of the fire, so that I am not scorched.
 The blessed Lawrence prayed * and said: I give thee thanks, O Lord, that Thou hast made me worthy to enter within thy gates.
 
-[Capitulum Laudes]
-!2 Cor 9:6
-v. Brethren: He which soweth sparingly shall reap also sparingly, and he which~
-soweth bountifully shall reap also bountifully.
-$Deo gratias
-
 [Ant 1]
 Lawrence the Deacon * performed a pious act by giving sight to the blind through the Sign of the Cross, and by bestowing on the poor the riches of the Church.
 
 [Oratio]
-O Almighty God, Who didst give unto Blessed Lawrence power to be more than~
-conqueror in his fiery torment, grant unto us, we beseech thee, the power to~
-quench the flames of our sinful lusts.
+O Almighty God, Who didst give unto Blessed Lawrence power to be more than conqueror in his fiery torment, grant unto us, we beseech thee, the power to quench the flames of our sinful lusts.
+$Per Dominum
+
+[Octava 1]
+!Commemoration of the Octave of St. Lawrence
+Ant. When the blessed Lawrence was lying, stretched upon the bars, and burning, he said * to the iniquitous magistrate The cooking is done enough now, turn the meat and eat; for the property of the Church, which thou seekest, hath been garnered up in heaven by the hands of the poor.
+_
+V. The Levite Lawrence wrought a good work.
+R. In that with the sign of the Cross he gave sight to the blind.
+_
+$Oremus
+O Almighty God, Who didst give unto Blessed Lawrence power to be more than conqueror in his fiery torment, grant unto us, we beseech thee, the power to quench the flames of our sinful lusts. 
 $Per Dominum
 
 [Invit]
@@ -151,40 +146,17 @@ R. I lay before thee treasure an hundred-fold, and promise thee life everlasting
 Beware, lest thou take these words: He that hateth his life in this world shall keep it unto life eternal as some do, for an approval of suicide. Some evil and perverse men, bloody and guilty murderers of themselves, do indeed throw themselves into the fire, drown themselves in water, and cast themselves down precipices, and so perish. This is not the teaching of Christ, Who, when the devil would have Him cast Himself down from an high place, answered: Get thee behind Me, Satan. It is written, Thou shalt not tempt the Lord thy God. (Matth. iv. 5-7.) Who also said to Peter, signifying by what death he should glorify God: When thou wast young thou girdedst thyself and walkedst whither thou wouldest; but when thou shalt be old, another shall gird thee, and carry thee whither thou wouldest not. (John xxi. 18.) From which it is evident that he that would follow Christ's footsteps, must be slain, not by himself, but by another.
 &teDeum
 
+[Capitulum Laudes]
+!2 Cor 9:6
+v. Brethren: He which soweth sparingly shall reap also sparingly, and he which soweth bountifully shall reap also bountifully.
+$Deo gratias
+
 [Versum 2]
 V. He hath dispersed, he hath given to the poor.
 R. His righteousness endureth for ever.
 
 [Ant 2]
 Upon the bars I denied thee not, O God. * And when they put me to the fire, I acknowledged thee to be the Lord, O Christ. Thou has proved mine heart, and visited it by night; Thou hast tried me with fire, and found no wickedness in me.
-
-[Lectio Prima]
-!2 Cor 9:8-9
-v. And God is able to make all grace abound in you; that ye always, having all sufficiency in all things, may abound to every good work, As it is written: He hath dispersed abroad, he hath given to the poor: his justice remaineth for ever.
-
-[Capitulum Sexta]
-!2 Cor 9:7
-v. Every one as he hath determined in his heart, not with sadness, or of~
-necessity: for God loveth a cheerful giver.
-$Deo gratias
-
-[Versum 3]
-V. The Levite Lawrence wrought a good work.
-R. In that with the sign of the Cross he gave sight to the blind.
-
-[Ant 3]
-When the blessed Lawrence was lying, stretched upon the bars, and burning, he said * to the iniquitous magistrate: The cooking is done enough now, turn the meat and eat; for the property of the Church, which thou seekest, hath been garnered up in heaven by the hands of the poor.
-
-[Octava 1]
-!Commemoration of the Octave of St. Lawrence
-Ant. When the blessed Lawrence was lying, stretched upon the bars, and burning, he said * to the iniquitous magistrate The cooking is done enough now, turn the meat and eat; for the property of the Church, which thou seekest, hath been garnered up in heaven by the hands of the poor.
-_
-V. The Levite Lawrence wrought a good work.
-R. In that with the sign of the Cross he gave sight to the blind.
-_
-$Oremus
-O Almighty God, Who didst give unto Blessed Lawrence power to be more than conqueror in his fiery torment, grant unto us, we beseech thee, the power to quench the flames of our sinful lusts. 
-$Per Dominum
 
 [Octava 2]
 !Commemoration of the Octave of St. Lawrence
@@ -196,6 +168,22 @@ _
 $Oremus
 O Almighty God, Who didst give unto Blessed Lawrence power to be more than conqueror in his fiery torment, grant unto us, we beseech thee, the power to quench the flames of our sinful lusts. 
 $Per Dominum
+
+[Lectio Prima]
+!2 Cor 9:8-9
+v. And God is able to make all grace abound in you; that ye always, having all sufficiency in all things, may abound to every good work, As it is written: He hath dispersed abroad, he hath given to the poor: his justice remaineth for ever.
+
+[Capitulum Sexta]
+!2 Cor 9:7
+v. Every one as he hath determined in his heart, not with sadness, or of necessity: for God loveth a cheerful giver.
+$Deo gratias
+
+[Versum 3]
+V. The Levite Lawrence wrought a good work.
+R. In that with the sign of the Cross he gave sight to the blind.
+
+[Ant 3]
+When the blessed Lawrence was lying, stretched upon the bars, and burning, he said * to the iniquitous magistrate: The cooking is done enough now, turn the meat and eat; for the property of the Church, which thou seekest, hath been garnered up in heaven by the hands of the poor.
 
 [Commemoratio 3] (rubrica 1570 aut rubrica 1910)
 !Commemoratio for the Holy Martyrs Tiburtius and Susanna

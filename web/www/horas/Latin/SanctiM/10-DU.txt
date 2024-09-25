@@ -5,12 +5,12 @@ Festum Domini
 Psalmi Dominica
 12 lectiones
 
-[Doxology]
-@Sancti/10-DU::s/Jesu, tibi sit glória/Glória tibi, Dómine/ s/almo/Sancto/
-
 [Hymnus Vespera]
 @Sancti/10-DU::1-35
 @Sancti/10-DU:Doxology:s/Jesu, tibi sit glória/Glória tibi, Dómine/ s/almo/Sancto/
+
+[Doxology]
+@Sancti/10-DU::s/Jesu, tibi sit glória/Glória tibi, Dómine/ s/almo/Sancto/
 
 [Hymnus Matutinum]
 @Sancti/10-DU::1-30
@@ -24,6 +24,9 @@ Dóminus * regnávit, exsúltet terra: læténtur ínsulæ multæ.;;96
 Jubiláte * in conspéctu regis Dómini, † quóniam venit judicáre terram.;;97
 Exaltáte * Dóminum Deum nostrum, † et adoráte in monte sancto ejus.;;98
 
+[Ant Matutinum 3N]
+Christo * datus est principátus et honor regni: omnis pópulus et tribus et linguæ sérvient ei in ætérnum.
+
 [Ant Matutinum]
 @Sancti/10-DU::1-3
 @Sancti/10-DU::6-8
@@ -32,9 +35,6 @@ Exaltáte * Dóminum Deum nostrum, † et adoráte in monte sancto ejus.;;98
 @Sancti/10-DU::9-10
 ;;221;223(1-8);223(9-16)
 @Sancti/10-DU::14-15
-
-[Ant Matutinum 3N]
-Christo * datus est principátus et honor regni: omnis pópulus et tribus et linguæ sérvient ei in ætérnum.
 
 [Lectio1]
 @Sancti/10-DU:Lectio1:

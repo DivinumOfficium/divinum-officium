@@ -1,11 +1,6 @@
 [Rank]
 Ste Marie-Madeleine pénitente;;Duplex;;3;;vide C7a
 
-[Rule]
-vide C7a;
-9 lectiones;
-scriptura1960
-
 [Hymnus Vespera]
 v. Père de la céleste lumière,
 En arrêtant vos yeux sur Madeleine,
@@ -33,9 +28,6 @@ Comme autrefois, ainsi toujours
 Dans tous les siècles soit la gloire.
 Ainsi soit-il.
 
-[Versum 1]
-@Commune/C6:Versum 2
-
 [Ant 1]
 Une femme * connue dans la ville pour une pécheresse, ayant su que Jésus était à table dans la maison de Simon le lépreux, apporta un vase d’albâtre plein de parfums ; et se tenant par derrière, aux pieds de Jésus, elle commença à les arroser de ses larmes ; et les essuyant avec ses cheveux, elle les baisait et les oignait de parfums.
 
@@ -45,18 +37,6 @@ $Qui vivis
 
 [Invit]
 Louons notre Dieu, * En la conversion de Marie-Madeleine.
-
-[HymnusM Matutinum]
-v. Salut, pieuse Marie,
-Qui prites un flacon, puis le meilleur,
-Qui oignites les pieds bienheureux du Seigneur,
-Les arrosant de ses larmes.
-_
-Honneur, gloire, empire,
-Soient à la Trinité unique,
-Au Père, au Fils, au Paraclet,
-Pour les siècles infinis.
-Ainsi soit-il.
 
 [Hymnus Matutinum]
 v. Marie, de chastes baisers
@@ -68,6 +48,18 @@ _
 et à son Fils unique,
 ainsi qu’à l’Esprit Paraclet,
 maintenant et dans tous les siècles.
+Ainsi soit-il.
+
+[HymnusM Matutinum]
+v. Salut, pieuse Marie,
+Qui prites un flacon, puis le meilleur,
+Qui oignites les pieds bienheureux du Seigneur,
+Les arrosant de ses larmes.
+_
+Honneur, gloire, empire,
+Soient à la Trinité unique,
+Au Père, au Fils, au Paraclet,
+Pour les siècles infinis.
 Ainsi soit-il.
 
 [Lectio1]
@@ -94,14 +86,14 @@ R. Prenez part à ma joie vous tous qui aimez le Seigneur, car celui que je cher
 V. Tandis que les disciples se retiraient, je ne me retirais point, et, embrasée du feu de son amour, je brûlais de désir.
 R. Et tandis que je pleurais auprès du sépulcre, j’ai vu le Seigneur, alléluia.
 
-[Responsory2](rubrica 1960)
+[Responsory2] (rubrica 1960)
 @:Responsory3
 
 [Lectio3]
 !Cant 8:5-7
 5	Quelle est celle-ci qui monte du désert, appuyée sur son bien-aimé? L'ÉPOUX. Je t'ai réveillée sous le pommier; là, ta mère t'a conçue; là, elle t'a conçue, là, elle t'a donné le jour.
 6	Mets-moi comme un sceau sur ton coeur, comme un sceau sur ton bras; car l'amour est fort comme la mort, la jalousie est inflexible comme le schéol. Ses ardeurs sont des ardeurs de feu, une flamme de Yahweh.
-7	Les grandes eaux ne sauraient éteindre l'amour, et les fleuves ne le submergeraient pas. Un homme donnerait-il pour l'amour toutes les richesses de sa maison, on ne ferait que le mépriser. 
+7	Les grandes eaux ne sauraient éteindre l'amour, et les fleuves ne le submergeraient pas. Un homme donnerait-il pour l'amour toutes les richesses de sa maison, on ne ferait que le mépriser.
 
 [Responsory3]
 R. Ils ont enlevé mon Seigneur, et je ne sais où ils l’ont mis. Les Anges lui dirent : Femme, pourquoi pleurez-vous ? Il est ressuscité, comme il l’a dit : 
@@ -199,12 +191,5 @@ R. Il l’a fait habiter dans son tabernacle.
 [Ant 2]
 Marie * oignit les pieds de Jésus et les essuya avec ses cheveux et la maison fut remplie de l’odeur du parfum.
 
-[Versum 3](rubrica 1960)
-@Sancti/07-22:Versum 2
-
-[Ant 3](rubrica 1960 aut rubrica Monastica)
+[Ant 3]
 Une femme * connue dans la ville pour une pécheresse, apporta un vase d’albâtre plein de parfums et, se tenant par derrière, aux pieds du Seigneur, elle commença à les arroser de ses larmes et les essuyait avec ses cheveux.
-
-[Lectio94]
-@:Lectio4
-&teDeum

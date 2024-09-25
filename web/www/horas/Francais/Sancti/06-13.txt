@@ -1,15 +1,14 @@
 [Rank]
 St Antoine de Padoue Confesseur;;Duplex;;3;;vide C5a
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica divino aut rubrica 196)
 St Antoine de Padoue Confesseur et Docteur de l'Eglise;;Duplex;;3;;vide C5a
-
-[Rule]
-vide C5a;
-9 lectiones 
 
 [Name]
 Antoine
+
+[Oratio] (rubrica divino aut rubrica tridentina)
+@:OratioText:s/ atque Doctóris//
 
 [OratioText]
 Que la solennité annuelle de Votre Confesseur et Docteur, le bienheureux Antoine, réjouisse Votre Église, ô Dieu, afin qu’elle soit toujours munie des secours spirituels et qu’elle mérite de goûter les joies éternelles.
@@ -17,9 +16,6 @@ $Per Dominum
 
 [Oratio]
 @:OratioText
-
-[Oratio] (rubrica divino aut rubrica tridentina)
-@:OratioText:s/ atque Doctóris//
 
 [Lectio1] (rubrica tridentina)
 @Commune/C5:Lectio1 in 2 loco

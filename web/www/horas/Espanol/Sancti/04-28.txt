@@ -1,13 +1,16 @@
 [Rank]
 S. Pauli a Cruce Confessoris;;Duplex;;3;;vide C5
 
-[Rule]
-vide C5;mtv
-9 lectiones
-
 [Oratio]
 Oh Señor Jesucristo, que comunicaste una singular caridad a San Pablo para predicar el misterio de la Cruz, y por él quisisite que floreciese en la Iglesia una nueva familia: concédenos por su intercesión, que recordando constantemente tu pasión en la tierra, merezcamos conseguir el fruto de la misma en el cielo.
 $Qui vivis
+
+[Commemoratio] (rubrica divino aut rubrica tridentina aut rubrica Reduced)
+!Conmemoración de S. Vidal, Märtir
+@Commune/C2:Oratio proper
+$Oremus
+v. Concédenos, Dios todopoderoso, que por la intercesión de San Vital, Märtir, cuyo natalicio conmemoramos, ardamos en el amor de tu nombre.
+$Per Dominum
 
 [Lectio4]
 A qué grado de santidad habría de llegar Pablo de la Cruz, nacido en Uvada, Liguria, de una familia de Castellario, cerca de Alejandría, lo mostró un resplandor que en la noche de su nacimiento llenó la estancia de su madre, así como el beneficio recibido de la Reina del cielo, que le salvó de la muerte en su niñez, al caer en un río. Ardiendo en amor a Jesucristo crucificado, desde el uso de razón, dedicaba mucho tiempo a la contemplación de la pasión del Salvador, castigaba su carne con vigilias, azotes, ayunos y mortificaciones; los viernes bebía vinagre mezclado con hiel. Deseando dar la sangre por Jesucristo, se alistó al ejército que en Venecia se preparaba para la guerra contra los turcos. Pero conocida la voluntad de Dios en la oración, dejó las armas para consagrarse a una milicia mejor en la que debía ocupar todas sus fuerzas en servir a la Iglesia y velar por la salvación eterna de los hombres. Vuelto a su patria, rehusó un enlace honroso y una herencia de su tío, y comenzó el camino estrecho de la cruz; quiso que su obispo le revistiese con una áspera túnica. Mas, por orden del prelado, impresionado por su santidad y ciencia de las cosas divinas, se dedicó, aún antes de ser clérigo, a la predicación de la palabra divina, con gran provecho de las almas.
@@ -17,11 +20,6 @@ Pablo fue a Roma, donde, tras estudiar la teología, fue ordenado sacerdote por 
 
 [Lectio6]
 Ardía en su corazón tal caridad, que la parte contigua de su hábito apareció muchas veces chamuscada por el fuego; este mismo ardor levantó dos de sus costillas. Cuando celebraba el santo sacrificio de la Misa, no podía contener sus lágrimas. A veces se le veía arrobado y elevado sobre el suelo con el rostro iluminado sobrenaturalmente. Alguna vez, mientras predicaba, se oyó una voz del cielo que le sugería lo que había de decir, siendo oído a muchos miles de pasos. Resplandeció por el don de profecía y lenguas, leyendo los secretos de los corazones, y distinguiose por su poder contra los demonios, las enfermedades y los elementos. Siendo muy apreciado y venerado de los mismos papas, se juzgaba servidor inútil y un gran pecador digno de ser pisado por los demonios. Finalmente, perseverando en la  vida austerísima, habiendo dado excelentes avisos a sus discípulos, herederos de su espíritu, y confortado con los sacramentos de la Iglesia y con una celestial visión, murió en Roma en 1775, el día que había predicho. El Papa Pío IX le inscribió en el número de los Beatos, y después en el de los Santos a causa de los nuevos y resplandecientes milagros debidos a su intercesión.
-
-[Lectio93]
-!Conmemoración de S. Vidal, Mártir
-Vidal, padre de los santos Gervasio y Protasio, era soldado cuando entró en Rávena con el juez Paulino, vio al médico Ursicino llevado al suplicio a causa de su fe cristiana, y al observar su actitud indecisa le dijo: “Ursicino, tú que estás acostumbrado a curar a los demás, guárdate para que no te condenes a la muerte eterna”. Animado Ursicino con estas palabras, sufrió valerosamente el martirio. Paulino, enfurecido, hizo prender a Vidal y tras atormentarle en el caballete y arrojarle en una hoya, le hizo apedrear. Cumplida la orden, un sacerdote de Apolo que había incitado a Paulino contra Vidal, atormentado por el demonio, empezó a clamar: “Me quemas demasiado, Vidal, Mártir de Cristo”; y no pudiendo sufrir aquel fuego, se arrojó al río.
-&teDeum
 
 [Lectio94]
 Pablo de la Cruz nació en Uvada, Liguria; llegado al uso de la razón, se quemó con amor por Jesucristo crucificado. Por el deseo de martirio, se unió al ejército que se estaba reuniendo en Venecia para luchar contra los turcos. Pero cuando se le dio a conocer la voluntad de Dios, -ya había rechazado un matrimonio honorable y una herencia dejada por su tío-, pidió a su obispo una túnica áspera como hábito y, antes de ser clérigo, cultivó el campo del Señor predicando la Palabra de Dios. En Roma, por mandato del Papa Benedicto XIII, fue ordenado sacerdote. Luego se retiró al Monte Argentario, que la Santísima Virgen le había mostrado, junto con un hábito negro con las insignias de la Pasión de su Hijo. Allí fundó una nueva congregación, cuyos miembros se unen por voto para promover el recuerdo de la Pasión del Señor; también fundó otra para que las monjas mediten continuamente sobre este misterio. Reconocido por su predicación, virtudes y carismas divinos, se durmió en el Señor en Roma, en el año 1775. El Papa Pío IX lo inscribió entre los Bienaventurados y luego entre los Santos.
@@ -36,9 +34,7 @@ Pablo de la Cruz nació en Uvada, Liguria; llegado al uso de la razón, se quem�
 [Lectio9]
 @Commune/C1a:Lectio9
 
-[Commemoratio] (rubrica divino aut rubrica tridentina aut rubrica Reduced)
-!Conmemoración de S. Vidal, Märtir
-@Commune/C2:Oratio proper
-$Oremus
-v. Concédenos, Dios todopoderoso, que por la intercesión de San Vital, Märtir, cuyo natalicio conmemoramos, ardamos en el amor de tu nombre.
-$Per Dominum
+[Lectio93]
+!Conmemoración de S. Vidal, Mártir
+Vidal, padre de los santos Gervasio y Protasio, era soldado cuando entró en Rávena con el juez Paulino, vio al médico Ursicino llevado al suplicio a causa de su fe cristiana, y al observar su actitud indecisa le dijo: “Ursicino, tú que estás acostumbrado a curar a los demás, guárdate para que no te condenes a la muerte eterna”. Animado Ursicino con estas palabras, sufrió valerosamente el martirio. Paulino, enfurecido, hizo prender a Vidal y tras atormentarle en el caballete y arrojarle en una hoya, le hizo apedrear. Cumplida la orden, un sacerdote de Apolo que había incitado a Paulino contra Vidal, atormentado por el demonio, empezó a clamar: “Me quemas demasiado, Vidal, Mártir de Cristo”; y no pudiendo sufrir aquel fuego, se arrojó al río.
+&teDeum

@@ -4,17 +4,6 @@ Officium parvum Beatae Mariae Virginis
 [Rank]
 Officium parvum Beatae Mariae Virginis;;Simplex;;1;;ex C11
 
-[Rule]
-ex C11;
-Ave only
-Doxology=Nat
-Omit Suffragium
-Special Benedictio
-Votive nocturn
-Psalmi Dominica
-Antiphonas Horas
-Feria Te Deum
-
 [Oratio 2]
 v. O God, who didst will that, at the announcement of an Angel, thy Word should take flesh in the womb of the Blessed Virgin Mary, grant to us thy suppliants, that we who believe her to be truly the Mother of God may be helped by her intercession with thee.
 $Per eumdem
@@ -90,9 +79,6 @@ $Ave Maria
 $Credo
 (sed rubrica 1955 aut rubrica 196 omittitur)
 
-[Ant Matutinum]
-@Commune/C11::s/V\. .*/V. Grace is poured into thy lips./g s/R\. .*/R. Therefore God hath blessed thee for ever./g
-
 [Lectio1]
 !Sir 24:11-13
 11 And by my power I have trodden under my feet the hearts of all the high and low: and in all these I sought rest, and I shall abide in the inheritance of the Lord.
@@ -133,10 +119,6 @@ Fair and comely art thou, O daughter of Jerusalem, * terrible as a fenced camp s
 v. The daughters of Zion saw her, and called her blessed; the queens also, and they praised her.
 $Deo gratias
 
-[HymnusM minor]
-@:Hymnus minor:1-12
-@Psalterium/Doxologies:NatT
-
 [Hymnus minor]
 
 #Hymnus
@@ -165,19 +147,9 @@ $Deo gratias
 v. O God, Who wast pleased to choose for thy dwelling-place the maiden palace of Blessed Mary, grant, we beseech thee, that her protection may shield us, and make us glad in her commemoration.
 $Qui vivis
 
-[Capitulum Tertia]
-!Sir 24:15
-v. And so I was established in Zion, and likewise in the holy city was I given to rest, and in Jerusalem was my power.
-$Deo gratias
-
 [Oratio Tertia]
 v. O God, Who, by the fruitful virginity of the Blessed Mary, hast given unto mankind the rewards of everlasting life; grant, we beseech thee, that we may continually feel the might of her intercession through whom we have worthily received the Author of our life, our Lord Jesus Christ, thy Son:
 $Qui tecum
-
-[Capitulum Sexta]
-!Sir 24:16
-v. And I took root among the honourable people, even in the portion of my God, as His own inheritance, and mine abiding was in the full assembly of the Saints.
-$Deo gratias
 
 [Oratio Sexta]
 v. Most merciful God, grant, we beseech thee, a succour unto the frailty of our nature, that as we keep ever alive the memory of the holy Mother of God, so by the help of her intercession we may be raised up from the bondage of our sins.

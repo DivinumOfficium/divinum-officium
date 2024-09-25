@@ -1,12 +1,3 @@
-[Name]
-Commune Unius Martyris
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-
 [Ant Vespera]
 Al que me reconozca * delante de los hombres, yo también lo reconoceré delante de mi Padre, que está en los cielos.
 El que me sigue * no anda en la oscuridad, sino que tendrá la luz de la vida.
@@ -42,8 +33,8 @@ por eternidad dichosa.
 Amén.
 
 [Versum 1]
-V. Lo coronaste de gloria y dignidad.
-R. Le diste el mando sobre las obras de tus manos.
+V. Lo coronaste, Señor, de gloria y dignidad.
+R. Y le constituiste sobre las obras de tus manos.
 
 [Ant 1]
 Este santo * ha combatido por la ley de Dios hasta la muerte, y no ha temido las amenazas de los enemigos, porque se apoyaba sobre roca firme.
@@ -51,25 +42,24 @@ Este santo * ha combatido por la ley de Dios hasta la muerte, y no ha temido las
 [Invit]
 Al Señor, Rey de los mártires, * Venid, adorémosle.
 
-[Hymnus Matutinum]
-@Commune/C2:Hymnus Vespera
-
 [Ant Matutinum]
 En la ley del Señor * tuvo puesta su voluntad día y noche.;;1
 Anunciando * los preceptos del Señor, fue admitido en su monte santo.;;2
 Con mi voz * clamé al Señor; y me atendió desde su monte santo.;;3
-V. Le coronaste, Señor, de gloria y honor.
-R. Y le constituiste sobre las obras de tus manos.
 Hijos de los hombres, * sabed que el Señor ha hecho admirable a su santo.;;4
 Señor, como un escudo * le rodeaste con tu amor.;;5
 En toda la tierra * le coronaste de gloria y honor.;;8
-V. Pusiste, Señor, sobre su frente. 
-R. Una corona de piedras preciosas.
 El Señor es justo, * y ama la justicia; tiene ante sus ojos la equidad.;;10
 Morará * en vuestro celestial tabernáculo; descansará en vuestro monte santo.;;14
 Pusiste, Señor, * sobre su frente una corona de piedras preciosas.;;20
-V. Grande es su gloria por la salvación que le has dado. 
-R. Le revestiste de esplendor y de hermosura soberana.
+
+[Nocturn 2 Versum]
+V. Has puesto, Señor, en su cabeza.
+R. Una corona de oro fino.
+
+[Nocturn 3 Versum]
+V. Tu victoria ha engrandecido su fama.
+R. Lo has vestido de honor y majestad.
 
 [Lectio1]
 De los Hechos de los Apóstoles
@@ -81,7 +71,7 @@ De los Hechos de los Apóstoles
 21 dando testimonio a judíos y a griegos sobre la conversión a Dios y la fe en nuestro Señor Jesús. 
 22 Ahora, encadenado por el Espíritu, voy hacia Jerusalén, sin saber lo que allí me sucederá, 
 23 sino que en todas las ciudades el Espíritu Santo me advierte, diciendo que me esperan cadenas y tribulaciones. 
-24 Pero yo no hago ninguna estima de mi vida, con tal de acabar mi carrera y el ministerio que recibí del Señor Jesús, de anunciar el evangelio de la gracia de Dios. 
+24 Pero yo no hago ninguna estima de mi vida, con tal de acabar mi carrera y el ministerio que recibí del Señor Jesús, de anunciar el evangelio de la gracia de Dios.
 
 [Responsory1]
 R. Este Santo combatió hasta la muerte en favor de la ley de su Dios, y no tuvo miedo a las palabras de los impíos; 
@@ -97,7 +87,7 @@ R. Ya que estaba fundado sobre la piedra firme.
 28 Mirad por vosotros y por todo el rebaño, sobre el cual el Espíritu Santo os ha constituido obispos, para apacentar la Iglesia de Dios, que Él adquirió con su sangre. 
 29 Yo sé que después de mi partida vendrán a vosotros lobos rapaces, que no perdonarán al rebaño, 
 30 y que de entre vosotros mismos se levantarán hombres que enseñen doctrinas perversas para arrastrar a los discípulos en su seguimiento. 
-31 Velad, pues, acordándoos de que por tres años, noche y día, no cesé de exhortaros a cada uno con lágrimas. 
+31 Velad, pues, acordándoos de que por tres años, noche y día, no cesé de exhortaros a cada uno con lágrimas.
 
 [Responsory2]
 R. El justo crecerá como el lirio; 
@@ -113,7 +103,7 @@ R. Y florecerá ante el Señor.
 35 En todo os he dado ejemplo, mostrándoos cómo, trabajando así, socorráis a los necesitados, recordando las palabras del Señor Jesús, que Él mismo dijo: Mejor es dar que recibir. 
 36 En diciendo esto, se puso de rodillas con todos y oró; 
 37 y se levantó un gran llanto de todos, que, echándose al cuello de Pablo, le besaban, 
-38 afligidos sobre todo por lo que les había dicho de que no volverían a ver su rostro. Y le acompañaron hasta la nave. 
+38 afligidos sobre todo por lo que les había dicho de que no volverían a ver su rostro. Y le acompañaron hasta la nave.
 
 [Responsory3]
 R. Éste conoció la justicia, y vio grandes maravillas, y rogó al Altísimo; 
@@ -126,7 +116,7 @@ R. Y fue contado en el número de los Santos.
 [Lectio4]
 Sermón de San Agustín, Obispo.
 !Sermón 44 de Santos.
-Celebrando hoy el aniversario del triunfo del bienaventurado Mártir N., la Iglesia se llena de alegría por su glorificación, y nos propone, al mismo tiempo, que sigamos sus huellas. Porque “si con él padecemos, también con él seremos glorificados". En el glorioso combate que sostuvo por la fe, debemos considerar principalmente dos cosas, a saber: la pérfida crueldad de los verdugos, y la invencible paciencia del Mártir. La crueldad de los verdugos para detestarla; la paciencia del Mártir para imitarla. Escuchad al Salmista reprendiendo la malicia de los perseguidores: No envidies a los malvados, porque como el heno así presto desaparecerán. Para convencernos de la necesidad de la paciencia para sufrir a los malvados, oigamos el consejo del Apóstol: Os es necesaria la paciencia, a fin de que consigáis las promesas.
+Celebrando hoy el aniversario del triunfo del bienaventurado Mártir N., la Iglesia se llena de alegría por su glorificación, y nos propone, al mismo tiempo, que sigamos sus huellas. Porque “si con él padecemos, también con él seremos glorificados”. En el glorioso combate que sostuvo por la fe, debemos considerar principalmente dos cosas, a saber: la pérfida crueldad de los verdugos, y la invencible paciencia del Mártir. La crueldad de los verdugos para detestarla; la paciencia del Mártir para imitarla. Escuchad al Salmista reprendiendo la malicia de los perseguidores: No envidies a los malvados, porque como el heno así presto desaparecerán. Para convencernos de la necesidad de la paciencia para sufrir a los malvados, oigamos el consejo del Apóstol: Os es necesaria la paciencia, a fin de que consigáis las promesas.
 
 [Responsory4]
 R. El Señor le honró y le guardó de sus enemigos, y le defendió de los que pretendían seducirle: 
@@ -144,7 +134,7 @@ V. Porque le preveniste con amorosas bendiciones; pusiste en su cabeza una coron
 R. Y no defraudaste sus esperanzas.
 
 [Lectio6]
-Contemplaba “en enigmas", en la medida en que la flaqueza humana puede contemplar lo eterno, cuán grandes sean los goces de la patria bienaventurada, y no pudiendo expresarlo clamaba admirado: “¿Qué tengo para mí en el cielo?” Como si dijera: Es superior a mis fuerzas, excede al poder de mi elocuencia y a la capacidad de mi inteligencia el expresar o comprender aquella belleza, aquella gloria, aquella excelsitud de que gozaremos, cuando lejos del mundanal ruido, nuestro Señor Jesucristo, en lo más íntimo de su compañía, “reformará nuestro humilde cuerpo y le hará conforme a su cuerpo glorioso”. Al contemplar esta perfecta libertad, el santo Mártir no huía de peligro alguno, no le amedrentaba suplicio alguno; y si mil veces hubiera podido morir, no se habría tenido aún por merecedor de bienes semejantes.
+Contemplaba “en enigmas”, en la medida en que la flaqueza humana puede contemplar lo eterno, cuán grandes sean los goces de la patria bienaventurada, y no pudiendo expresarlo clamaba admirado: “¿Qué tengo para mí en el cielo?” Como si dijera: Es superior a mis fuerzas, excede al poder de mi elocuencia y a la capacidad de mi inteligencia el expresar o comprender aquella belleza, aquella gloria, aquella excelsitud de que gozaremos, cuando lejos del mundanal ruido, nuestro Señor Jesucristo, en lo más íntimo de su compañía, “reformará nuestro humilde cuerpo y le hará conforme a su cuerpo glorioso”. Al contemplar esta perfecta libertad, el santo Mártir no huía de peligro alguno, no le amedrentaba suplicio alguno; y si mil veces hubiera podido morir, no se habría tenido aún por merecedor de bienes semejantes.
 
 [Responsory6]
 R. El Señor le revistió con un ropaje de alegría; 
@@ -191,9 +181,6 @@ R. Pusiste sobre su frente una corona de piedras preciosas.
 [Lectio9]
 Pregunto: ¿cómo es que se nos ordena aborrecer a los padres y parientes, y se nos manda amar a los enemigos? Y si, la Verdad dice con relación a la esposa: Lo que Dios unió, el hombre no lo separe. Y Pablo dice: Varones, amad a vuestras esposas como Cristo a la Iglesia. He aquí que el discípulo enseña la obligación de amar a la esposa, siendo así que dice el Maestro: Quien no aborrece a la esposa, no puede ser mi discípulo. ¿Acaso el juez anuncia una cosa, y el pregonero publica otra diferente? ¿Acaso podemos a un mismo tiempo amar y aborrecer? Pero, si pesamos bien el precepto, mediante la discreción podemos practicar ambas cosas, de suerte que amemos a la esposa y a cuantos están unidos con nosotros mediante el parentesco y a nuestros prójimos; y a los que nos impidan amar a Dios, los aborrezcamos y huyamos de ellos.
 &teDeum
-
-[Ant Laudes]
-@:Ant Vespera
 
 [Capitulum Laudes]
 !St 1:12
@@ -249,51 +236,34 @@ $Per Dominum
 !Sir 39:6
 v. El justo hace propósito de madrugar, para buscar al Señor que lo creó, y reza en presencia del Altísimo.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. De gloria y dignidad * Lo coronaste, Señor. 
 R. De gloria y dignidad * Lo coronaste, Señor. 
-V. Le diste el mando sobre las obras de tus manos. 
+V. Y le constituiste sobre las obras de tus manos. 
 R. Lo coronaste, Señor.
 &Gloria
 R. De gloria y dignidad * Lo coronaste, Señor. 
-_
-V. Has puesto, Señor, en su cabeza.
-R. Una corona de oro fino.
 
 [Capitulum Sexta]
 !Sir 15:3
 v. El Señor, nuestro Dios, le alimenta con el pan de la prudencia, le da a beber el agua de la inteligencia.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Has puesto, Señor, * En su cabeza. 
 R. Has puesto, Señor, * En su cabeza. 
 V. Una corona de oro fino. 
 R. En su cabeza. 
 &Gloria
 R. Has puesto, Señor, * En su cabeza. 
-_
-V. Tu victoria ha engrandecido su fama.
-R. Lo has vestido de honor y majestad.
 
-[Capitulum Nona]
-!Sir 39:6
-V. El justo hace propósito de madrugar, para buscar al Señor que lo creó, y reza en presencia del Altísimo.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Ha engrandecido su fama * Tu victoria. 
 R. Ha engrandecido su fama * Tu victoria. 
 V. Lo has vestido de honor y majestad. 
 R. Tu victoria. 
 &Gloria
 R. Ha engrandecido su fama * Tu victoria. 
-_
-V. El justo crecerá como una palmera.
-R. Y se alzará como un cedro del Líbano.
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 El que quiera seguirme, * que se niegue a sí mismo, cargue con su cruz y se venga conmigo.
@@ -307,17 +277,8 @@ Homilía de San Hilario, Obispo.
 !Comentario sobre San Mateo, can. 10
 El Señor nos propone el día del juicio, en el cual manifestará los secretos de nuestra conciencia, y hará patentes aquellas cosas  desconocidas. Y por esto enseña que no deben ser temidas las amenazas, ni los designios, ni la potestad de los perseguidores, porque en el día del juicio nos revelará que todas estas cosas serán de ningún valor y precio. “Y lo que os digo de noche, decidlo a la luz del día; y lo que os digo al oído, predicadlo desde los tejados”. No leemos que el Señor acostumbrara predicar durante las noches, ni que enseñara su doctrina en la oscuridad. Pero esto se entiende, en cuanto todas sus palabras son tinieblas para las personas carnales, y como  noche para los infieles.
 
-[Responsory7 in 3 loco]
-R. Una corona de oro puesta sobre su frente, 
-* Es la expresión de su santidad, gloria, honor y fortaleza, 
-V. Porque le preveniste con amorosas bendiciones, pusiste sobre su frente una corona de piedras preciosas. 
-R. Es la expresión de su santidad, gloria, honor y fortaleza.
-
 [Lectio8 in 3 loco]
 Quiere que lo dicho por Él se publique con la libertad que reclaman nuestras creencias y nuestra profesión de fe. Por lo mismo, lo que ha predicado en la oscuridad, manda que sea enseñado a la luz del día, a fin de que lo dicho en secreto, sea oído sobre los tejados, es decir, publicado en voz alta por los predicadores. El conocimiento de Dios ha de ser inculcado, y el profundo secreto de la doctrina evangélica ha de ser manifestado por la luz de la predicación apostólica, sin temor a aquellos que,  teniendo poder para atormentar los cuerpos, no tienen ninguno sobre las almas, sino temiendo más bien a Dios, el cual tiene potestad para arrojar al infierno el cuerpo y el alma.
-
-[Responsory8 in 3 loco]
-@Commune/C2:Responsory8
 
 [Lectio9 in 3 loco]
 “No temáis a los que matan el cuerpo”. No hay que temer ningún peligro para nuestro cuerpo, y no debemos dar importancia al dolor de una carne destinada a perecer, ya que el hombre, una vez libre de la condición de su naturaleza y de su origen, debe resucitar conforme la sustancia de su alma espiritual. Y porque los confirmados en esta fe es necesario que tengan el valor de confesar a Dios, añadió Jesucristo que seríamos negados por Él en el cielo delante del Padre, si le negásemos delante de los hombres; pero que al que le reconociere delante de los hombres, Él le reconocería en el cielo. Según el testimonio que hayamos dado de Él delante de los hombres, Él lo dará de nosotros delante de Dios Padre.

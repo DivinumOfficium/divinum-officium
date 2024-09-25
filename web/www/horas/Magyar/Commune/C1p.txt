@@ -1,16 +1,6 @@
 [Name]
 Commune apostolorum tempore Paschali
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Una Antiphona
-
-[Capitulum Laudes]
-!Wis 5:1
-v. Akkor az igaz teljes biztonsággal áll szemben azokkal, akik sanyargatták, és lebecsülték a fáradozását.
-$Deo gratias
-
 [Hymnus Vespera]
 {:H-Tristeserantapostoli:}v. Búsultak az apostolok,
 Mert Krisztus meghalt keserűn,
@@ -50,9 +40,6 @@ R. Isten a ti örörészetek, alleluja.
 [Ant 1]
 Örök világosság * világosítsa meg szentjeidet Uram, az örökkévalósag világossaga
 
-[Invit]
-Az Urat, az Apostolok királyát * Jöjjetek áldjuk. Alleluja.
-
 [Lectio1]
 Olvasmány szent Pál apostol Korintusiakhoz írott első leveléből
 !1 Cor 4:1-5
@@ -61,6 +48,9 @@ Olvasmány szent Pál apostol Korintusiakhoz írott első leveléből
 3 A magam részéről nem törődöm azzal, hogy ti vagy más emberi bíróság mint ítéltek felőlem, hiszen önmagam fölött sem ítélkezem.
 4 Nem érzem ugyan magam semmiben sem bűnösnek, de ez még nem jelent megigazulást. Az Úr mond fölöttem ítéletet.
 5 Ne ítélkezzetek hát időnap előtt, míg el nem jön az Úr. Ő majd megvilágítja a sötétség titkait, és földeríti a szívek szándékait. Akkor majd mindenki megkapja az elismerést az Istentől.
+
+[Invit]
+Az Urat, az Apostolok királyát * Jöjjetek áldjuk. Alleluja.
 
 [Lectio2]
 !1 Cor 4:6-9
@@ -81,8 +71,17 @@ Olvasmány szent Pál apostol Korintusiakhoz írott első leveléből
 [Lectio7]
 Evangélium szent Máté Apostol kőnyvéből
 !Matt 19:27-29
-27 Akkor Péter vette át a szót: "Nézd, mi mindenünket elhagytuk, és követtünk téged. Mi lesz hát a jutalmunk?" És így tovább.
+27 Akkor Péter vette át a szót: „Nézd, mi mindenünket elhagytuk, és követtünk téged. Mi lesz hát a jutalmunk?” És így tovább.
 _
+
+[Nocturn 2 Versum]
+V. Örök világosság világositsa meg szentjeidet Uram. Alleluja
+R. Az örökkévalósag világossága. Alleluja
+
+[Nocturn 3 Versum]
+V. Örök boldogság a koszorújuk, alleluja
+R. Öröm és boldogság a részük, alleluja
+
 [Capitulum Laudes]
 !Wis 5:1
 v. Akkor az igaz teljes biztonsággal áll szemben azokkal, akik sanyargatták, és lebecsülték a fáradozását.
@@ -126,43 +125,29 @@ Jeruzsálem leányai * jöjjetek és nézzétek a vértanúk koronáját, amelly
 !Rom 8:28
 v. Tudjuk azt is, hogy akik Istent szeretik, azoknak minden javukra válik, hiszen ő saját elhatározásából választotta ki őket.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Szentek és igazak, örvendezzetek az Úrban, Alleluja, alleluja
 R. Szentek és igazak, örvendezzetek az Úrban, Alleluja, alleluja.
 V. Isten az örökrészetek
 R. Alleluja, alleluja
 &Gloria
 R. Szentek és igazak, örvendezzetek az Úrban, Alleluja, alleluja.
-_
-V. Örök világosság világositsa meg szentjeidet Uram. Alleluja
-R. Az örökkévalósag világossága. Alleluja
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Örök világosság világositsa meg szentjeidet Uram alleluja, alleluja
 R. Örök világosság világositsa meg szentjeidet Uram alleluja, alleluja
 V. Az örökkévalósag világossága
 R. Alleluja, alleluja
 &Gloria
 R. Örök világosság világositsa meg szentjeidet Uram * Alleluja, alleluja.
-_
-V. Örök boldogság a koszorújuk, alleluja
-R. Öröm és boldogság a részük, alleluja
 
-[Capitulum Nona]
-!Rom 8:28
-v. Tudjuk azt is, hogy akik Istent szeretik, azoknak minden javukra válik, hiszen ő saját elhatározásából választotta ki őket.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Örök boldogság a koszorújuk, alleluja, alleluja
 R. Örök boldogság a koszorújuk, alleluja, alleluja
 V. Öröm és boldogság a részük
 R. Alleluja, alleluja
 &Gloria
 R. Örök boldogság a koszorújuk, alleluja, alleluja
-_
-V. Értékes az Úr szemében, alleluja
-R. Szentjei halála, alleluja
 
 [Ant 3]
 Szentek és igazak * örvendezzetek az Úrban, alleluja, Isten a ti örörészetek, alleluja.

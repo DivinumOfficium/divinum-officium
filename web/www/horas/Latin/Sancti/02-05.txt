@@ -1,17 +1,19 @@
 [Rank]
-S. Agathæ Virginis et Martyris;;Duplex;;3.01;;vide C6b
+S. Agathæ Virginis et Martyris;;Duplex;;3.01;;vide C6
 
 [Rank] (rubrica 1570)
-S. Agathæ Virginis et Martyris;;Semiduplex;;2.2;;vide C6b
+S. Agathæ Virginis et Martyris;;Semiduplex;;2.2;;vide C6
 
-[Rank](rubrica 1960)
-S. Agathæ Virginis et Martyris;;Duplex;;3;;vide C6b
+[Rank] (rubrica 1960)
+S. Agathæ Virginis et Martyris;;Duplex;;3;;vide C6
 
 [Rule]
-vide C6b;
+vide C6;
 9 lectiones
 Psalm5 Vespera=116
 Psalm5 Vespera3=147
+in 1 Nocturno Lectiones ex Commune in 2 loco;
+in 3 Nocturno Lectiones ex Commune in 3 loco;
 
 [Ant Vespera]
 Quis es tu, * qui venísti ad me curáre vúlnera mea? Ego sum Apóstolus Christi: nihil in me dúbites, fília.
@@ -23,25 +25,19 @@ Qui me dignátus est * ab omni plaga curáre, et mamíllam meam meo péctori res
 [Ant 1]
 Stans beáta Agatha * in médio cárceris, expánsis mánibus orábat ad Dóminum: Dómine Jesu Christe, magíster bone, grátias tibi ago, qui me fecísti víncere torménta carníficum: jube me, Dómine, ad tuam immarcescíbilem glóriam felíciter perveníre.
 
+[Oratio]
+@Commune/C6::s/N\./Agathæ/
+
 [Ant Matutinum]
 Ingénua sum, * et ex spectábili génere, ut omnis parentéla mea testátur.;;1
 Summa ingenúitas * ista est, in qua sérvitus Christi comprobátur.;;2
 Ancílla Christi sum, * ídeo me osténdo servílem habére persónam.;;3
-V. Spécie tua et pulchritúdine tua.
-R. Inténde, próspere procéde, et regna.
 Agatha sancta * dixit: Si feras mihi promíttis, audíto Christi nómine mansuéscunt.;;4
 Si ignem adhíbeas, * rórem mihi salvíficum de cælo Angeli ministrábunt.;;5
 Agatha * lætíssime et gloriánter ibat ad cárcerem, quasi ad épulas invitáta; et agónem suum Dómino précibus commendábat.;;8
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
 Nisi diligénter * perféceris corpus meum a carnifícibus attrectári, non potest ánima mea in paradísum Dómini cum palma intráre martýrii.;;10
 Vidísti, Dómine, * agónem meum, quómodo pugnávi in stádio; sed, quia nólui obedíre mandátis príncipum, jussa sum in mamílla torquéri.;;14
 Propter fidem castitátis * jussa sum suspéndi in equúleo: ádjuva me, Dómine, Deus meus, in tortúra mamillárum meárum.;;15
-V. Elégit eam Deus, et præelégit eam.
-R. In tabernáculo suo habitáre facit eam.
-
-[Lectio1]
-@Commune/C6:Lectio1 in 2 loco
 
 [Responsory1]
 R. Dum torquerétur beáta Agatha in mamílla gráviter, dixit ad júdicem: 
@@ -49,17 +45,11 @@ R. Dum torquerétur beáta Agatha in mamílla gráviter, dixit ad júdicem:
 V. Ego enim hábeo mamíllas íntegras intus in ánima mea, quas ab infántia Dómino consecrávi.
 R. Impie, crudélis et dire tyránne, non es confúsus amputáre in fémina, quod ipse in matre suxísti?
 
-[Lectio2]
-@Commune/C6:Lectio2 in 2 loco
-
 [Responsory2]
 R. Agatha lætíssime et gloriánter ibat ad cárcerem, 
 * Quasi ad épulas invitáta; et agónem suum Dómino précibus commendábat.
 V. Nobilíssimis orta natálibus, ab ignóbili gaudens trahebátur ad cárcerem.
 R. Quasi ad épulas invitáta; et agónem suum Dómino précibus commendábat.
-
-[Lectio3]
-@Commune/C6:Lectio3 in 2 loco
 
 [Responsory3]
 R. Quis es tu, qui venísti ad me curáre vúlnera mea? Ego sum Apóstolus Christi: nihil in me dúbites, fília: ipse me misit ad te, 
@@ -102,17 +92,11 @@ R. Jussa sum in mamílla torquéri.
 Agatha, in Sicília nobílibus paréntibus nata, in persecutióne Décii imperatóris, Cátanæ gloriósum martýrium fecit. Nam cum Quintiánus, Sicíliæ prætor, ómnibus modis ejus pudicítiam frustra tentásset, Agatha, superstitiónis christiánæ nómine comprehénsa, primum cólaphis cǽditur, dein admótis candéntibus láminis in equúleo torquétur, tum ei mamílla abscínditur. Mox conjécta in víncula, a beáto Petro Apóstolo, noctu ei apparénte, sanátur. Rursum evocáta a prætóre et in Christi confessióne persevérans, in acútis téstulis et candéntibus carbónibus ei subjéctis volutátur. Sed, ob ingéntem terræmótum veheménter commóta civitáte, Quintiánus, véritus pópuli tumúltum, eam semimórtuam clam redúci ímperat in cárcerem; ubi paulo post migrávit in cælum, nonis februárii.
 &teDeum
 
-[Lectio7]
-@Commune/C6:Lectio7 in 2 loco
-
 [Responsory7]
 R. Beáta Agatha, ingréssa cárcerem, expándit manus suas ad Deum, et dixit: Dómine, qui me fecísti víncere torménta carníficum,
 * Jube me ad tuam misericórdiam perveníre.
 V. Dómine, qui me creásti, et tulísti a me amórem sæculi, qui corpus meum a pollutióne separásti.
 R. Jube me ad tuam misericórdiam perveníre.
-
-[Lectio8]
-@Commune/C6:Lectio8 in 2 loco
 
 [Responsory8]
 R. Medicínam carnálem córpori meo numquam exhíbui, sed hábeo Dóminum Jesum Christum, 
@@ -121,9 +105,6 @@ V. Qui me dignátus est ab omni plaga curáre, et mamíllam meam meo péctori re
 R. Qui solo sermóne restáurat univérsa.
 &Gloria
 R. Qui solo sermóne restáurat univérsa.
-
-[Lectio9]
-@Commune/C6:Lectio9 in 2 loco
 
 [Versum 0]
 @Commune/C6::s/N\./Agatha/
@@ -137,15 +118,11 @@ R. Qui solo sermóne restáurat univérsa.
 [Ant 2]
 Paganórum * multitúdo fúgiens ad sepúlcrum Vírginis, tulérunt velum ejus contra ignem: ut comprobáret Dóminus, quod a perículis incéndii méritis beátæ Agathæ Mártyris suæ eos liberáret.
 
-[Oratio]
-Deus, qui inter cétera poténtiæ tuæ mirácula étiam in sexu frágili victóriam martýrii contulísti: concéde propítius; ut, qui beátæ Agathæ Vírginis et Mártyris tuæ natalícia cólimus, per ejus ad te exémpla gradiámur.
-$Per Dominum
-
 [Lectio Prima]
-@Commune/C7:Lectio Prima
+@Commune/C7
 
 [Capitulum Sexta]
-@Commune/C7:Capitulum Sexta
+@Commune/C7
 
 [Capitulum Nona]
 @:Lectio Prima

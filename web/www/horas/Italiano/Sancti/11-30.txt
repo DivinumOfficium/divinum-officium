@@ -1,16 +1,8 @@
 [Rank]
 S. Andreae Apostoli;;Duplex 2 classis;;5.1;;ex C1
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 S. Andreae Apostoli;;Duplex 2 classis;;5;;ex C1
-
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
 
 [Ant Vespera]
 Salve, croce preziosa, * ricevi il discepolo di colui che fu appeso su di te, Cristo, il mio maestro.
@@ -124,8 +116,7 @@ R. Essi camminano per vie non buone, ma vanno dietro ai loro peccati.
 Lettura del santo Vangelo secondo Matteo. 
 !Matt 4:18-22
 In quell'occasione: Gesù camminando lungo il mare di Galilea, vide due fratelli, Simone, chiamato Pietro, e Andrea, suo fratello, mentre gettavano la rete in mare. Eccetera.
-Simonem, qui vocatur Petrus, et Andream fratrem ejus, mittentes rete in mare. Et~
-reliqua.
+Simonem, qui vocatur Petrus, et Andream fratrem ejus, mittentes rete in mare. Et reliqua.
 _
 Omelia di san Gregorio Papa.
 !Omelia 5 sul Vangelo.
@@ -171,24 +162,15 @@ Concedici quest'uomo giusto, * rendici quest'uomo santo: non uccidere un uomo ca
 !Rom 10:16-18
 v. Onde Isaia dice: Signore chi ha creduto alla nostra predicazione? La fede dunque viene dalla predicazione udita, e la predicazione si fa colla parola di Cristo. Ma, dico io: Non hanno essi udito predicare? Ma sì, per tutta la terra s'è sparsa la loro voce, e sino ai confini dell'orbe terrestre sono giunte le loro parole.
 
-[Responsory Tertia]
-@Commune/C1:Responsory Tertia
-
 [Capitulum Sexta]
 !Rom 10:12-13
 v. Perché non c'è distinzione tra Giudeo e Greco: perché per tutti c'è il medesimo Signore, munifico verso tutti quelli che lo invocano. Infatti chiunque invocherà il nome del Signore, sarà salvo.
 $Deo gratias
 
-[Responsory Sexta]
-@Commune/C1:Responsory Sexta
-
 [Capitulum Nona]
 !Rom 10:16-18
 v. Onde Isaia dice: Signore chi ha creduto alla nostra predicazione? La fede dunque viene dalla predicazione udita, e la predicazione si fa colla parola di Cristo. Ma, dico io: Non hanno essi udito predicare? Ma sì, per tutta la terra s'è sparsa la loro voce, e sino ai confini dell'orbe terrestre sono giunte le loro parole.
 $Deo gratias
-
-[Responsory Nona]
-@Commune/C1:Responsory Nona
 
 [Ant Vespera 3]
 Salve, croce preziosa, * ricevi il discepolo di colui che fu appeso su di te, Cristo, il mio maestro.;;109

@@ -1,15 +1,8 @@
 [Rank]
 Fest der Geburt des heiligen Johannes des Täufers;;Duplex I. Klasse mit gewöhnlicher Oktav;;6.5;;
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Fest der Geburt des heiligen Johannes des Täufers;;Duplex I classis;;6;;
-
-[Rule]
-Proper;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
 
 [Ant Vespera]
 Er wird vor ihm kommen * im Geist und in der Kraft des Elias, um dem Herrn ein Volk zu schaffen, das wohl vorbereitet ist.
@@ -53,6 +46,17 @@ R. Der hatte den Namen Johannes.
 Beim Eintritt * des Zacharias in den Tempel des Herrn erschien im der Engel Gabriel, der zur Rechten des Brandopferaltares stand.
 
 [Oratio]
+O Gott, der du uns diesen Tag durch die Geburt des heiligen Johannes ehrwürdig gemacht hast, schenke deinen Volksscharen die Gnade geistiger Freuden, und lenke die Seelen der Gläubigen auf den Weg, der zum ewigen Heile führt.
+$Per Dominum
+
+[Octava 1]
+!Kommemoration der Oktav von Johannes dem Täufer
+Ant. Beim Eintritt * des Zacharias in den Tempel des Herrn erschien im der Engel Gabriel, der zur Rechten des Brandopferaltares stand.
+_
+V. Es war ein Mann von Gott gesandt.
+R. Der hatte den Namen Johannes.
+_
+$Oremus
 O Gott, der du uns diesen Tag durch die Geburt des heiligen Johannes ehrwürdig gemacht hast, schenke deinen Volksscharen die Gnade geistiger Freuden, und lenke die Seelen der Gläubigen auf den Weg, der zum ewigen Heile führt.
 $Per Dominum
 
@@ -253,20 +257,20 @@ R. Denn auch seine Hand ist mit ihm.
 [Ant 2]
 Es öffnete sich * der Mund des Zacharias und er redete unter dem Einfluss Gottes und sagte: Gepriesen sei der Gott Israels.
 
+[Octava 2]
+!Kommemoration der Oktav von Johannes dem Täufer
+Ant. Es öffnete sich * der Mund des Zacharias und er redete unter dem Einfluss Gottes und sagte: Gepriesen sei der Gott Israels.
+_
+V. Dieser Knabe wird groß sein vor dem Herrn.
+R. Denn auch seine Hand ist mit ihm.
+_
+$Oremus
+O Gott, der du uns diesen Tag durch die Geburt des heiligen Johannes ehrwürdig gemacht hast, schenke deinen Volksscharen die Gnade geistiger Freuden, und lenke die Seelen der Gläubigen auf den Weg, der zum ewigen Heile führt.
+$Per Dominum
+
 [Lectio Prima]
 !Isa 49:7
 Reges videbunt, et consurgent principes, et adorabunt Dominum Deum tuum, et Sanctum Israël, qui elegit te.
-
-[Responsory Tertia]
-R.br. Fuit homo * Missus a Deo.
-R. Fuit homo * Missus a Deo.
-V. Cui nomen erat Joannes.
-R. Missus a Deo.
-&Gloria
-R. Fuit homo * Missus a Deo.
-_
-V. Inter natos mulierum non surrexit major.
-R. Joanne Baptista.
 
 [Capitulum Sexta]
 !Isa 49:5-6
@@ -299,33 +303,5 @@ _
 V. Dieser Knabe wird groß sein vor dem Herrn.
 R. Denn auch seine Hand ist mit ihm.
 
-[Ant Vespera 3]
-@:Ant Laudes
-
-[Versum 3]
-@:Versum 2
-
 [Ant 3]
 Puer * qui natus est nobis, plus quam, propheta est: hic est enim, de quo Salvator ait: Inter natos mulierum non surrexit major Joanne Baptista.
-
-[Octava 1]
-!Kommemoration der Oktav von Johannes dem Täufer
-Ant. Beim Eintritt * des Zacharias in den Tempel des Herrn erschien im der Engel Gabriel, der zur Rechten des Brandopferaltares stand.
-_
-V. Es war ein Mann von Gott gesandt.
-R. Der hatte den Namen Johannes.
-_
-$Oremus
-O Gott, der du uns diesen Tag durch die Geburt des heiligen Johannes ehrwürdig gemacht hast, schenke deinen Volksscharen die Gnade geistiger Freuden, und lenke die Seelen der Gläubigen auf den Weg, der zum ewigen Heile führt.
-$Per Dominum
-
-[Octava 2]
-!Kommemoration der Oktav von Johannes dem Täufer
-Ant. Es öffnete sich * der Mund des Zacharias und er redete unter dem Einfluss Gottes und sagte: Gepriesen sei der Gott Israels.
-_
-V. Dieser Knabe wird groß sein vor dem Herrn.
-R. Denn auch seine Hand ist mit ihm.
-_
-$Oremus
-O Gott, der du uns diesen Tag durch die Geburt des heiligen Johannes ehrwürdig gemacht hast, schenke deinen Volksscharen die Gnade geistiger Freuden, und lenke die Seelen der Gläubigen auf den Weg, der zum ewigen Heile führt.
-$Per Dominum

@@ -1,17 +1,47 @@
 [Name]
 In Festis Beatć Marić Virginis
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-
-[Ant Vespera]
-Amíg asztalánál mulat a király * nárduszom jó illatot áraszt magából;;109
+[Ant VesperaBMV]
 A balját a fejem alá teszi * a jobbjával meg átkarol;;112
-Barna a bőröm, * de azért szép vagyok Jeruzsálem lányai, ezért szeret a király, és vezet be lakosztályába;;121
-Nézd, elmúlt a tél, * elállt az eső, elvonult, kelj föl, kedvesem, gyere!;;126
 Ékes lettél * és édes örömödben, Isten szent szülője;;147
+
+[Hymnus Vespera]
+/:The first verse of the following hymn is said genuflecting.:/
+v. Tengernek Csillaga,
+Isten édes Anyja,
+Áve makulátlan
+Mennyei szép Porta!
+_
+Gábriel arkangyal
+Ávéval köszöntött:
+Légy Te nekünk béke,
+Éva helyett áve.
+_
+Oldd a bűnös láncát,
+Gyújts a vaknak fáklyát.
+Űzd rólunk a rosszat,
+Esdj le minden jókat.
+_
+Mutasd meg: Anyánk vagy,
+Hallgasson meg érted,
+Aki értünk ember
+Jó szívvel lőn benned.
+_
+Szűzek legszebb Szűze,
+Szelídségnek tükre,
+Bűntől szabadokká
+Tégy szelíddé, jókká.
+_
+Tisztaságban éljünk,
+Biztos úton járjunk,
+Hogy Jézussal egykor
+Együtt vígadozzunk.
+_
+Atyának dicsőség,
+Krisztusnak tisztesség,
+Szentlélek Istennek
+Egy áldás adassék.
+Ámen.
 
 [Versum 1]
 V. Szent Szűz fogadd kegyesen dícséretünket
@@ -50,22 +80,14 @@ Atya, s kegyes Lélek, neked,
 Most és örök időkön át.
 Ámen.
 
-[Ant Matutinum]
+[Ant MatutinumBMV]
 Áldott vagy te az asszonyok között * és áldott a te méhednek gyümölcse Jézus;;8
 Istennek szent anyja * illatosabb vagy mint a legjobb mirha;;18
 E szent Szűz előtt * énekeljétek ujra a hála dalát ;;23
-V. A te ékességeddel és * szépségeddel
-R. Indúlj meg, járj szerencsésen és országolj
-A te ékességeddel és * szépségeddel, indúlj meg, járj szerencsésen és országolj;;44
-Nem inog meg, Isten lakik benne, Isten már hajnalban is védelmezi;;45
 Istennek szent Anyja * boldogok vagyunk ha te melletünk vagy;;86
-V. Nem inog meg, Isten lakik benne,
-R. Isten már hajnalban is védelmezi
 Boldog vagy te * O szűz Mária * legyözted a világ tévelygéseit;;95
 Szent Szűz, hallgasd meg könyörgéseinket * adj erőt ellenségeink ellen;;96
 Szűz maradtál miutan megszülted szent Fiad * Istennek szeplőtelen anyja, könyörögj érettünk;;97
-V. Isten választotta őt születése előtt
-R. Hogy sátraban lakjék színe előtt
 
 [Lectio1]
 Olvasmány a Példabeszédek könyvéből
@@ -110,12 +132,43 @@ _
 v. Kezdettöl és az idök elött teremtettem, és mind az örökkévalóságig meg nem szünök; és a szent lakhelyen szolgáltam elötte.
 $Deo gratias.
 
-[Versum 2]
-V. Kegyelem van az ajkaidon
-R. Isten ezért megáldott mindörökre
+[Hymnus Laudes]
+{:Ogloriosavirginum;}v. Ó szűzek legdicsőbbike,
+Szép csillagok legszebbike,
+Ki alkotód, a Kisdedet,
+Kebled tejével éteted.
+_
+Mit a bús Éva elragadt,
+Megadja mind kegyes Fiad,
+Hogy leljünk, árvák, új utat,
+Kezed az égbe fölmutat.
+_
+Ó nagy király nyílt ajtaja!
+Fénynek tündöklő udvara!
+E Szűz ad nektek életet:
+Ujjongjatok ti nemzetek!
+_
+Dicsőség teneked Urunk,
+Kinek a Szűz szülőanyád,
+Atya s kegyes Lélek, neked,
+Most és örök időkön át.
+Ámen.
 
 [Ant 2]
 O Mária boldog vagy * mert hittél annak a beteljesedésében, amit az Úr mondott neked. Alleluja.
+
+[Oratio]
+Kérünk téged ÚrIsten, add meg nekünk szolgáidnak testünk és lelkünk egészségét és örömeit, hogy akik a Boldogságos mindig szűz Mária közbenjárását el'vezzük, szabaduljunk meg szomorúságainktől és lépjünk be örok örömödbe.
+$Per Dominum
+
+[Lectio Prima]
+!Sir 24:19-20
+v. Mint a platanus viz mellett az utcákon, mint a fahéj és illatozó balzsam illatoztam, s mint a válogatott mirrha adtam a jóillat gyönyöröségét;
+
+[Capitulum Sexta]
+!Sir 24:15-16
+v. És így Sionban megerösíttettem, és a megszentelt városban hasonlóképen megnyugodtam, és Jerusalemben az én hatalmam. És meggyökereztem a tiszteletre méltó nép között, és az én Istenem részében, mely az ö öröksége; és a szentek teljes gyülekezetében az én tartózkodásom.
+$Deo gratias.
 
 [Ant 3]
 Boldognak hirdet minden nemzedék * mert rátekintett szolgálója alázatosságára

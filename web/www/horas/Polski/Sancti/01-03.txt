@@ -1,22 +1,11 @@
 [Rank]
 Oktawa Św. Jana;;Simplex;;1.1;;vide Sancti/12-27
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1955)
 Trzeci dzień stycznia;;Feria;;1.2;;vide Sancti/01-01
 
 [Rank] (rubrica tridentina)
 Oktawa Św. Jana;;Duplex;;3;;ex Sancti/12-27
-
-[Rule]
-vide Sancti/12-27;
-Feria Te Deum
-Comkey=70
-9 lectiones
-
-[Capitulum Laudes] (rubrica divino aut rubrica tridentina aut rubrica monastica)
-!Syr 15:1-2
-v. Kto się Boga boi, będzie czynił dobrze, a kto się trzyma sprawiedliwości, dostanie jej; i zabieży mu jako uczciwa matka.
-$Deo gratias
 
 [Lectio1]
 Z Listu św. Pawła Apostoła do Rzymian
@@ -25,7 +14,7 @@ Z Listu św. Pawła Apostoła do Rzymian
 2 Nie daj tego, Boże! Albowiem którzyśmy umarli grzechowi, jakóż więcéj w nim żyć będziemy?
 3 Azaż nie wiecie, iż którzykolwiek w Chrystusie Jezusie jesteśmy ochrzczeni, w śmierci jego ochrzczeni jesteśmy? 
 4 Albowiem jesteśmy z nim pospołu pogrzebieni w śmierć przez chrzest, aby, jako Chrystus wstał z martwych przez chwałę Ojcowską, tak i my żebyśmy w nowości żywota chodzili. 
-5 Bo jeźliśmy się wszczepionymi stali w podobieństwo śmierci jego, społem i w zmartwychwstaniu będziemy. 
+5 Bo jeźliśmy się wszczepionymi stali w podobieństwo śmierci jego, społem i w zmartwychwstaniu będziemy.
 
 [Lectio2]
 !Rz 6:6-11
@@ -45,3 +34,8 @@ Z Listu św. Pawła Apostoła do Rzymian
 16 Nie wiecie, że, komu się stawicie sługami ku posłuszeństwu, sługami jesteście tego, komu posłuszni jesteście: albo grzechowi na śmierć, albo posłuszeństwu ku sprawiedliwości? 
 17 A chwała Bogu, żeście byli niewolnikami grzechu, aleście posłuszni byli z serca tego sposobu nauki, do którego podani jesteście.
 18 A będąc wyzwoleni od grzechu, niewolnikami staliście się sprawiedliwości.
+
+[Capitulum Laudes] (rubrica divino aut rubrica tridentina aut rubrica monastica)
+!Syr 15:1-2
+v. Kto się Boga boi, będzie czynił dobrze, a kto się trzyma sprawiedliwości, dostanie jej; i zabieży mu jako uczciwa matka.
+$Deo gratias

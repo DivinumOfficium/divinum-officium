@@ -1,22 +1,12 @@
 [Name]
 Commune apostolorum tempore Paschali
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Una Antiphona
-
 [Ant Vespera]
-Your saints, O Lord, * flourish like lilies, alleluia: and like the smell of balsam are before you, alleluia.;;109
-In the heavenly kingdom is the habitation of the saints, alleluia: and they rest in the eternity, alleluia.;;110
-Protected by a veil * your saints turn to you, O Lord, alleluia, alleluia.;;111
-Spirits and souls * of the just, sing hymns to our Lord, alleluia, alleluia.;;112
-The just shine * like the sun at the face of God, alleluia.;;116
-
-[Capitulum Laudes]
-!Wis 5:1
-v. Then shall the just stand with great constancy against those that have afflicted them, and taken away their labours.
-$Deo gratias
+Your saints, O Lord, * flourish like lilies, alleluia: and like the smell of balsam are before you, alleluia.
+In the heavenly kingdom is the habitation of the saints, alleluia: and they rest in the eternity, alleluia.
+Protected by a veil * your saints turn to you, O Lord, alleluia, alleluia.
+Spirits and souls * of the just, sing hymns to our Lord, alleluia, alleluia.
+The just shine * like the sun at the face of God, alleluia.
 
 [Hymnus Vespera]
 v. While Christ's disciples, grieving, sad,
@@ -64,16 +54,18 @@ The Lord, the King of Apostles, * O come, let us adore, Alleluia.
 Then shall the just stand * with great constancy against those that have afflicted them, alleluia.;;18
 ;;33
 ;;44
-V. Saints and just, rejoice in the Lord, alleluia.
-R. The Lord has chosen you for his inheritance, alleluia.
 Behold * how they are numbered among the children of God, and their lot is among the Saints, alleluia.;;46
 ;;60
 ;;63
-V. Eternal light will shine over your saints, O Lord, alleluia.
-R. And the eternity of times, alleluia.
 Eternal light * will shine over your saints, O Lord, and the eternity of times, alleluia.;;74
 ;;96
 ;;98
+
+[Nocturn 2 Versum]
+V. Eternal light will shine over your saints, O Lord, alleluia.
+R. And the eternity of times, alleluia.
+
+[Nocturn 3 Versum]
 V. Everlasting joy shall be upon their heads, alleluia.
 R. They shall obtain joy and gladness, alleluia.
 
@@ -133,12 +125,10 @@ R. They are whiter than milk. Alleluia, Alleluia.
 &Gloria
 R. They are whiter than milk. Alleluia, Alleluia.
 
-[Ant Laudes]
-Your saints O Lord * flourish like lilies, alleluia: and like the smell of balsam are before you, alleluia.
-In the heavenly kingdom * is the habitation of the saints, alleluia: and they rest in the eternity, alleluia.
-Protected by veil * your saints turn to you O Lord, alleluia, alleluia, alleluia.
-Spirits and souls * of the just, sing hymns to our Lord, alleluia, alleluia.
-The just shine * like the sun at the face of God, alleluia.
+[Capitulum Laudes]
+!Wis 5:1
+v. Then shall the just stand with great constancy against those that have afflicted them, and taken away their labours.
+$Deo gratias
 
 [Hymnus Laudes]
 v. With the fair sun of Easter morn
@@ -205,50 +195,10 @@ Daughters of Jerusalem, * come and see the crowned martyrs, the Lord crowned the
 !Rom 8:28
 v. And we know that to them that love God, all things work together unto good, to such as, according to his purpose, are called to be saints.
 
-[Responsory Tertia]
-R.br. Saints and just, rejoice in the Lord. * Alleluia, alleluia.
-R. Saints and just, rejoice in the Lord. * Alleluia, alleluia.
-V. The Lord has chosen you for his inheritance.
-R. Alleluia, alleluia.
-&Gloria
-R. Saints and just, rejoice in the Lord. * Alleluia, alleluia.
-_
-V. Eternal light will shine over your saints O Lord, alleluia.
-R. And the eternity of the times, alleluia.
-
 [Capitulum Sexta]
 !Sap. 5.5
 v. Behold how they are numbered among the children of God, and their lot is among the saints.
 $Deo gratias
-
-[Responsory Sexta]
-R.br. Eternal light will shine over your saints, O Lord. * Alleluia, alleluia.
-R. Eternal light will shine over your saints, O Lord. * Alleluia, alleluia.
-V. And the eternity of times.
-R. Alleluia, alleluia.
-&Gloria
-R. Eternal light will shine over your saints, O Lord. * Alleluia, alleluia.
-_
-V. Everlasting joy shall be upon their heads, alleluia.
-R. They shall obtain joy and gladness, alleluia.
-
-[Responsory Nona]
-R.br. Everlasting joy shall be upon their heads. * Alleluia, alleluia.
-R. Everlasting joy shall be upon their heads. * Alleluia, alleluia.
-V. They shall obtain joy and gladness.
-R. Alleluia, alleluia.
-&Gloria
-R. Everlasting joy shall be upon their heads. * Alleluia, alleluia.
-_
-V. Precious in the sight of the Lord, alleluia.
-R. Is the death of his saints, alleluia.
-
-[Ant Vespera 3]
-Your saints, O Lord, * flourish like lilies, alleluia: and like the smell of balsam are before you, alleluia.;;109
-In the heavenly kingdom * is the habitation of the saints, alleluia: and they rest in the eternity, alleluia.;;112
-Protected by veil * your saints turn to you, O Lord, alleluia, alleluia.;;115
-Spirits and souls * of the just, sing hymns to our Lord, alleluia, alleluia.;;125
-The just shine * like the sun at the face of God, alleluia.;;138 
 
 [Ant 3]
 Saints and just * rejoice in the Lord, alleluia, the Lord has chosen you for his inheritance, alleluia.

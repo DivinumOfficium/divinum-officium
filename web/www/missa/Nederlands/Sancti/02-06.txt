@@ -5,22 +5,9 @@ S. Titi Episc. et Confessoris;;Duplex;;3;;vide C4
 vide C4;
 Gloria
 
-[Introitus]
-@Commune/C2c
-
 [Oratio]
 God, Gij hebt uw heilige belijder en bisschop Titus met apostolische deugden gesierd. Doe ons door zijn verdiensten en voorspraak door een rechtvaardig en vroom leven in de wereld het hemelse vaderland bereiken.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Pro S. Dorotheæ Virg. et Mart.
-@Commune/C6a:Oratio1:s/N\./Dorothea/
-
-[Lectio]
-@Commune/C4
-
-[Graduale]
-@Commune/C4
 
 [Tractus]
 @Commune/C4
@@ -36,16 +23,5 @@ In die tijd stelde de Heer nog twee en zeventig anderen aan, en Hij zond hen twe
 [Secreta]
 @Commune/C4
 
-[Commemoratio Secreta]
-!Pro S. Dorotheæ Virg. et Mart.
-@Commune/C6a:Secreta1:s/N\./Dorothea/
-
-[Communio]
-@Commune/C4
-
 [Postcommunio]
 @Commune/C4:Postcommunio:s/N\./Titus/
-
-[Commemoratio Postcommunio]
-!Pro S. Dorotheæ Virg. et Mart.
-@Commune/C6a:Postcommunio1:s/N\./Dorothea/

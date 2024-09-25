@@ -1,9 +1,11 @@
 [Rank]
-S. Agnetis Virginis et Martyris;;Duplex;;3;;vide C6b
+S. Agnetis Virginis et Martyris;;Duplex;;3;;vide C6
 
 [Rule]
-vide C6b;
+vide C6;
 9 lectiones
+Ant Vespera3=147
+in 1 Nocturno Lectiones ex Commune in 2 loco
 
 [Ant 1]
 Beáta Agnes * in médio flammárum expansis mánibus orábat: Te déprecor, omnípotens, adorande, colende, Pater metuende, quia per sanctum Fílium tuum evasi minas sacrilegi tyranni, et carnis spurcítias immaculáto calle transívi: et ecce vénio ad te, quem amávi, quem quæsívi, quem semper optavi.
@@ -16,21 +18,12 @@ $Per Dominum
 Discéde a me, * pábulum mortis, quia jam ab álio amatóre prævénta sum.;;1
 Déxteram meam * et collum meum cinxit lapídibus pretiósis, trádidit áuribus meis inæstimábiles margarítas.;;2
 Pósuit signum * in fáciem meam, ut nullum præter eum amatórem admíttam.;;3
-V. Spécie tua et pulchritúdine tua.
-R. Inténde, próspere procéde, et regna.
 Induit me Dóminus, * cýclade auro texta, et imménsis monílibus ornávit me.;;4
 Mel et lac * ex ejus ore suscépi, et sanguis ejus ornávit genas meas.;;5
 Ipsi soli servo fidem, * ipsi me tota devotióne commítto.;;8
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
 Cujus pulchritúdinem * sol et luna mirántur, ipsi soli servo fidem.;;14
 Christus circúmdedit me * vernántibus atque coruscántibus gemmis pretiósis.;;44
 Ipsi sum desponsáta, * cui Angeli sérviunt, cujus pulchritúdinem sol et luna mirántur.;;45
-V. Elégit eam Deus, et præelégit eam.
-R. In tabernáculo suo habitáre facit eam.
-
-[Lectio1]
-@Commune/C6:Lectio1 in 2 loco
 
 [Responsory1]
 R. Diem festum sacratíssimæ Vírginis celebrémus, quáliter passa sit beáta Agnes ad memóriam revocémus: tertiodécimo ætátis suæ anno mortem pérdidit, et vitam invénit: 
@@ -38,17 +31,11 @@ R. Diem festum sacratíssimæ Vírginis celebrémus, quáliter passa sit beáta 
 V. Infántia quidem computabátur in annis, sed erat senéctus mentis imménsa.
 R. Quia solum vitæ diléxit auctórem.
 
-[Lectio2]
-@Commune/C6:Lectio2 in 2 loco
-
 [Responsory2]
 R. Déxteram meam et collum meum cinxit lapidibus pretiósis, trádidit áuribus meis inæstimábiles margarítas, 
 * Et circúmdedit me vernántibus atque coruscántibus gemmis.
 V. Pósuit signum in fáciem meam, ut nullum præter eum amatórem admíttam.
 R. Et circúmdedit me vernántibus atque coruscántibus gemmis.
-
-[Lectio3]
-@Commune/C6:Lectio3 in 2 loco
 
 [Responsory3]
 R. Amo Christum, in cujus thálamum introíbo, cujus mater virgo est, cujus pater féminam nescit, cujus mihi órgana modulátis vócibus cantant: 

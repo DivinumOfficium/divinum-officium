@@ -1,13 +1,8 @@
 [Rank]
-S. Martinae Virginis et Martyris;;Semiduplex;;2;;vide C6b
-
-[Rule]
-vide C6b;
-9 lectiones
+S. Martinae Virginis et Martyris;;Semiduplex;;2;;vide C6
 
 [Oratio]
-O Dio, che fra gli altri miracoli della tua potenza anche nel sesso debole hai riportato la vittoria del martirio: concedi benigno che, come celebriamo il natale della tua beata Vergine e Martire Martina, così dietro i suoi esempi facciamo grandi passi verso di te.
-$Per Dominum
+@Commune/C6::s/N\./Martina/
 
 [Hymnus Matutinum]
 v. Al nome celebre di Martina, applaudite
@@ -55,6 +50,10 @@ Alcuni dei suoi carnefici, colpiti dalla novità del miracolo, e tocchi dalla gr
 [Lectio6]
 Esasperato il giudice per questi prodigi, e principalmente per la costanza della Vergine, ordinò che le si amputasse la testa: la quale tagliata, si udì una voce dal cielo che la chiamava fra i Beati, tremò tutta la città, e molti adoratori degli idoli si convertirono alla fede di Cristo. Il sacro corpo di Martina, martirizzato sotto il pontificato di Urbano I, fu ritrovato sotto Urbano VIII, sommo Pontefice, nell'antichissima chiesa di lei, al carcere Mamertino, ai piedi del colle Capitolino, insieme coi corpi dei santi Martiri Concordio, Epifanio e Compagni, e riposto nello stesso luogo ricostruito in migliore forma e ornato più decentemente con gran concorso di popolo, con letizia di tutta Roma e solenne rito e pompa.
 
+[Lectio94]
+Martina, vergine romana, nacque da illustre famiglia. Privata ancora in tenera età dei genitori, distribuì generosamente ai poveri le sue ingenti ricchezze. Sotto l'imperatore Alessandro, condannata a sacrificare alle false divinità, detestò questa nefanda empietà. Per questo, dopo essere stata straziata da diversi generi di tormenti, venne condannata alle fiere nell'anfiteatro. Uscì illesa per virtù divina, e, gettata in un rogo ardente, rimase ugualmente incolume. Alcuni dei suoi carnefici, conquistati dalla novità del miracolo, abbracciata la fede di Cristo, conseguirono la palma del martirio. Per le preghiere di Martina Dio operò molti prodigi. Il giudice, fortemente turbato e vivamente ammirato per la costanza della vergine, comandò che le fosse troncato il capo. Ciò avvenne mentre era papa Urbano I. Il corpo di santa Martina fu ritrovato sotto il sommo pontefice Urbano VIII insieme con i corpi dei santi martiri Concordio, Epifanio e compagni, nell'antica chiesa di lei, presso il carcere Mamertino, e fu solennemente deposto nel medesimo luogo, ornato più elegantemente, tra l'esultanza di tutta Roma.
+&teDeum
+
 [Hymnus Laudes]
 v. Tu proteggi il suolo natio,
 tu dà ai paesi dei Cristiani il riposo d'una buona pace;
@@ -76,29 +75,3 @@ tu, Dio Uno e Trino, che colla destra sostieni i Martiri:
 dà, clemente, ai tuoi servi la luce,
 onde fai beate le anime.
 Amen.
-
-[Hymnus Vespera 3]
-v. Tu proteggi il suolo natio,
-tu dà ai paesi dei Cristiani il riposo d'una buona pace;
-lo strepito delle armi e le crudeli guerre
-relega nei confini della Tracia.
-_
-E radunati tutti i re con loro eserciti sotto il vessillo della croce,
-libera Gerusalemme dalla schiavitù, e,
-vindice del sangue innocente,
-distruggi completamente le forze nemiche.
-_
-Tu, nostra forza, tu splendido decoro,
-riguarda all'ossequio delle nostre menti;
-di buon grado accogli i voti di Roma,
-che ti canta e ti onora con pio rito.
-_
-Allontana da noi le lubriche gioie,
-tu, Dio Uno e Trino, che colla destra sostieni i Martiri:
-dà, clemente, ai tuoi servi la luce,
-onde fai beate le anime.
-Amen.
-
-[Lectio94]
-Martina, vergine romana, nacque da illustre famiglia. Privata ancora in tenera età dei genitori, distribuì generosamente ai poveri le sue ingenti ricchezze. Sotto l'imperatore Alessandro, condannata a sacrificare alle false divinità, detestò questa nefanda empietà. Per questo, dopo essere stata straziata da diversi generi di tormenti, venne condannata alle fiere nell'anfiteatro. Uscì illesa per virtù divina, e, gettata in un rogo ardente, rimase ugualmente incolume. Alcuni dei suoi carnefici, conquistati dalla novità del miracolo, abbracciata la fede di Cristo, conseguirono la palma del martirio. Per le preghiere di Martina Dio operò molti prodigi. Il giudice, fortemente turbato e vivamente ammirato per la costanza della vergine, comandò che le fosse troncato il capo. Ciò avvenne mentre era papa Urbano I. Il corpo di santa Martina fu ritrovato sotto il sommo pontefice Urbano VIII insieme con i corpi dei santi martiri Concordio, Epifanio e compagni, nell'antica chiesa di lei, presso il carcere Mamertino, e fu solennemente deposto nel medesimo luogo, ornato più elegantemente, tra l'esultanza di tutta Roma.
-&teDeum

@@ -1,44 +1,18 @@
 [Rank]
-S. Petri Celestini Papæ Confessoris;;Duplex;;3;;vide C4
+S. Petri Celestini Papæ Confessoris;;Duplex;;3;;vide C4b
 
 [Rule]
+vide C4b;
 Gloria
-
-[Introitus]
-@Commune/C4b
 
 [Oratio]
 Deus, qui beátum Petrum Cœlestínum ad summi pontificátus ápicem sublimásti, quique illum humilitáti postpónere docuísti: concéde propítius; ut ejus exémplo cuncta mundi despícere, et ad promíssa humílibus præmia perveníre felíciter mereámur.
 $Per Dominum
 
-[Lectio]
-@Commune/C4b
-
-[Graduale]
-@Commune/C4b
-
-[GradualeP]
-Allelúja, allelúja.
-!Matt 16:18
-V. Tu es Petrus, et super hanc petram ædificábo Ecclésiam meam.
-!Ps 44:17; 44:18
-Constítues eos príncipes super omnem terram: mémores erunt nóminis tui, Dómine. Allelúja.
-
-[Evangelium]
-@Commune/C4b
-
-[Offertorium]
-@Commune/C4b
-
 [Secreta]
-Sancti tui, quǽsumus, Dómine, nos ubíque lætíficent: ut, dum eórum mérita recólimus, patrocínia sentiámus. 
-$Per Dominum
+@Commune/C4
 
 [Secreta](rubrica 1960)
-Oblátis munéribus, quǽsumus, Dómine, Ecclésiam tuam benígnus illúmina: ut et gregis tui profíciat úbique succéssus, et grati fiant nómini tuo.
-$Per Dominum
-
-[Communio]
 @Commune/C4b
 
 [Postcommunio]
@@ -46,15 +20,3 @@ $Per Dominum
 
 [Postcommunio](rubrica 1960)
 @Commune/C4b
-
-[Commemoratio Oratio]
-!Pro S. Pudentiana Virgine.
-@Commune/C6b:Oratio:s/N\./Pudentiánæ/
-
-[Commemoratio Secreta]
-!Pro S. Pudentiana Virgine.
-@Commune/C6b:Secreta:s/N\./Pudentiánæ/
-
-[Commemoratio Postcommunio]
-!Pro S. Pudentiana Virgine.
-@Commune/C6b:Postcommunio:s/N\./Pudentiánæ/

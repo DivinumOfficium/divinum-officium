@@ -4,12 +4,16 @@ S. Cyrilli Episc. Alexandrini Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4
 [Name]
 Cyrille
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Cyrilli Episc. Alexandrini Confessoris Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
 
 [Rule]
 vide C4a;
 Gloria
+
+[Oratio]
+Boże, który uczyniłeś św. Cyryla, Twego Wyznawcę i Biskupa, niezłomnym bojownikiem prawdy o Boskim Macierzyństwie Najświętszej Maryi Panny: spraw za jego wstawiennictwem, abyśmy dostąpili zbawienia pod macierzyńską opieką Tej, którą wyznajemy jako Bożą Rodzicielkę.
+$Per eumdem
 
 [Comment]
 # 09 II – Św. Cyryla Aleksandryjskiego, Biskupa, Wyznawcy i Doktora Kościoła
@@ -19,47 +23,13 @@ Gloria
 
 Wspomnienie świętej Apolonii, Dziewicy i Męczennicy. Chrześcijance z Aleksandrii św. Apolonii wybito w czasie tortur wszystkie zęby, a następnie spalono ją w 250 roku. Wierni wzywają jej pomocy w chorobach zębów.
 
-[Introitus]
-@Commune/C4a:Introitus
-
-[Oratio]
-Boże, który uczyniłeś św. Cyryla, Twego Wyznawcę i Biskupa, niezłomnym bojownikiem prawdy o Boskim Macierzyństwie Najświętszej Maryi Panny: spraw za jego wstawiennictwem, abyśmy dostąpili zbawienia pod macierzyńską opieką Tej, którą wyznajemy jako Bożą Rodzicielkę.
-$Per eumdem
-
-[Commemoratio Oratio]
-! Wspomnienie świętej Apolonii
-Boże, który między innymi cudami Twej potęgi, obdarzyłeś zwycięstwem w męczeństwie także płeć słabszą, spraw łaskawie, abyśmy obchodząc narodziny dla nieba świętej Apolonii, Twojej Męczennicy, za jej przykładem zdążali do Ciebie.
-$Per Dominum
-
-[Lectio]
-@Commune/C4a:Lectio
-
-[Graduale]
-@Commune/C4a:Graduale
-
-[Evangelium]
-@Commune/C4a:Evangelium
-
-[Offertorium]
-@Commune/C4a:Offertorium
-
 [Secreta]
 Wszechmogący Boże, wejrzyj miłościwie na nasze dary i spraw za przyczyną św. Cyryla, abyśmy do serc naszych godnie mogli przyjąć Jednorodzonego Syna Twego Jezusa Chrystusa, Pana naszego, współwiekuistego w Twej chwale:
 $Qui tecum
 
-[Commemoratio Secreta]
-! Wspomnienie świętej Apolonii
-Przyjmij, Panie, dary, które Ci składamy w uroczystość świętej Apolonii, Dziewicy i Męczennicy Twojej: ufamy, że jej wstawiennictwo przyczyni się do naszego wyzwolenia.
-$Per Dominum
-
-[Communio]
-@Commune/C4a:Communio
+[Introitus]
+@Commune/C4a:Introitus
 
 [Postcommunio]
 Pokrzepieni Boskim Sakramentem pokornie błagamy Cię, Panie, abyśmy wsparci przykładem i zasługami św. Biskupa Cyryla, mogli wiernie służyć Najświętszej Rodzicielce Twojego Jednorodzonego Syna:
 $Qui tecum
-
-[Commemoratio Postcommunio]
-! Wspomnienie świętej Apolonii
-Panie, niech nas wspomaga przyjęty Sakrament, i za wstawiennictwem świętej Apolonii, Twojej Dziewicy i Męczennicy, niech sprawi, byśmy się radowali nieustanną opieką.
-$Per Dominum

@@ -1,16 +1,6 @@
 [Name]
 Officium Defunctorum
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Capitulum Commemoratio Suffragium
-Special Conclusio
-Limit Benedictiones Oratio
-Requiem gloria
-Votive nocturn
-
 [Ant Vespera]
 Piacerò al Signore * nella regione dei vivi.;;114
 Ohimè, o Signore, * troppo si protrae la mia vita.;;119
@@ -46,17 +36,6 @@ $Oremus
 O Dio, Creatore e Redentore di tutti gli uomini fedeli, concedi alle anime dei tuoi servi e delle tue serve la remissione di tutti i peccati, affinché quella misericordia che sempre desiderarono, per le pie suppliche l'ottengano,
 $Qui vivis
 
-[Versum 3]
-@:Versum 1
-
-[Oratio 1]
-@:Oratio_a_porta
-@:Oratio_Fid
-
-[Oratio 2]
-@:Oratio_a_porta:s/&psalm.*\)//s
-@:Oratio_Fid
-
 [Oratio1]
 Assolvi, ti preghiamo o Signore, l'anima del tuo servo (della tua serva) N., perché morto (morta) al mondo viva per te: e ciò che commise per fragilità della carne nella frequentazione degli uomini, Tu detergi con il perdono della tua misericordiosissima pietà.
 $Per Dominum
@@ -78,16 +57,22 @@ Il Re, per il quale vivono tutte le cose, * venite adoriamo.
 Indirizza, * o Signore mio Dio, la mia via al tuo cospetto.;;5
 Volgiti, * o Signore, e libera l'anima  mia: poiché tra i morti non c'è chi si ricordi di te.;;6
 Il mio avversario non rapisca, come leone, l'anima mia, senza che vi sia chi mi redima e mi salvi.;;7
-V. Dalla porta dell'inferno.
-R. Libera, o Signore, le loro anime.
 In un luogo * di pascolo mi collocò.;;22
 Dimentica, o Signore, * i peccati della mia gioventù e quelli commessi per ignoranza.;;24
 Ho fiducia di vedere * i beni del Signore sulla terra dei viventi.;;26
-V. Il Signore li collochi con i principi.
-R. Con i principi del suo popolo.
 Ti piaccia, * o Signore, di liberarmi; o Signore volgiti a darmi aiuto.;;39
 Risana, o Signore, * l'anima mia, perché ho peccato contro di te.;;40
 L'anima mia ha sete * del Dio vivente: quando potrò venire e comparire alla presenza del Signore?;;41
+
+[Nocturn 1 Versum]
+V. Dalla porta dell'inferno.
+R. Libera, o Signore, le loro anime.
+
+[Nocturn 2 Versum]
+V. Il Signore li collochi con i principi.
+R. Con i principi del suo popolo.
+
+[Nocturn 3 Versum]
 V. Non abbandonare, o Signore, alle barbare genti le anime tue fedeli.
 R. Non dimenticarti per sempre delle anime dei poveri servi tuoi.
 
@@ -192,7 +177,7 @@ R. Quando verrai a giudicare il mondo con il fuoco.
 11 I miei giorni son passati, i miei disegni, affanno del mio cuore, sono svaniti. 
 12 Han cambiata la notte in giorno. Spero che dopo le tenebre venga di nuovo la luce. 
 13 Ma quando avrò aspettato, il soggiorno dei morti sarà la mia casa: nelle tenebre ho già disteso il mio letto. 
-14 Ho detto alla putredine: "Tu sei mio padre", e ai vermi: "Voi siete mia madre e mie sorelle". 
+14 Ho detto alla putredine: «Tu sei mio padre», e ai vermi: «Voi siete mia madre e mie sorelle». 
 15 Dov'è dunque ciò che aspetto? E la mia pazienza chi la considera?
 
 [Responsory7]
@@ -244,22 +229,12 @@ R. Quando verrai a giudicare il mondo, col fuoco.
 $Requiem
 R. Liberami, Signore, dalla morte eterna, in quel giorno tremendo, * quando cielo e terra saranno sconvolti: * quando verrai a giudicare il mondo, col fuoco.
 
-[Ant Laudes]
+[Ant Laudes_]
 Esulteranno al Signore * le ossa umiliate.;;50
 Esaudisci, o Signore, * la mia preghiera: a te viene ogni mortale.;;64
 Mi ha sostenuto * la tua destra, o Signore.;;62
 Dalla porta dell'inferno * libera, o Signore, l'anima mia.;;222
 Ogni spirito * lodi il Signore.;;150
-
-[Ant Laudes](rubrica tridentina)
-Esulteranno al Signore * le ossa umiliate.;;50
-Esaudisci, o Signore, * la mia preghiera: a te viene ogni mortale.;;64
-Mi ha sostenuto * la tua destra, o Signore.;;62;66
-Dalla porta dell'inferno * libera, o Signore, l'anima mia.;;222
-Ogni spirito * lodi il Signore.;;148;149;150
-
-[Versum 2]
-@:Versum 1
 
 [Ant 2]
 Io sono la resurrezione e la vita: * chi crede in me, benché morto, vivrà, e chi vive e crede in me, non morrà in eterno.

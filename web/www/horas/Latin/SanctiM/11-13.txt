@@ -1,38 +1,35 @@
 [Rank]
-Omnium Sanctorum Ordinis Nostri;;Duplex;;5;;
+Omnium Sanctorum Ordinis Nostri;;Duplex;;5;;vide C3
 
 [Rule]
+vide C3;
 12 lectiones
 Psalmi Dominica
 
 [Ant Vespera]
 @:Ant Laudes
 
-[Capitulum Laudes]
-!Isa 8:18
-v. Ecce ego et púeri mei quos dedit mihi Dóminus in signum, et in porténtum Israël a Dómino exercítuum, qui hábitat in monte Sion.
-$Deo gratias
-
-[Responsory Vespera]
-@Commune/C3:Responsory Sexta:s/._.*//s
+[Hymnus Vespera]
+@:Hymnus Laudes
 
 [Ant 1]
 @Commune/C1
 
-[Hymnus Vespera]
-@:Hymnus Laudes
+[Oratio]
+Concéde, quǽsumus omnípotens Deus, ut ad meliórem vitam sanctórum Monachórum exémplua non próvocent: † quátenus, quorum solémnia ágimus, * étiam actus imitémur.
+$Per Dominum
 
 [Invit]
 @Sancti/11-01
 
-[Ant Matutinum]
-@SanctiM/11-01
+[Hymnus Matutinum]
+@SanctiM/11-01:HymnusM Laudes:s/Cœtus.*Monachórum/Monachórum/s
 
 [Ant Matutinum 3N]
 @SanctiM/11-01
 
-[Hymnus Matutinum]
-@SanctiM/11-01:HymnusM Laudes:s/Cœtus.*Monachórum/Monachórum/s
+[Ant Matutinum]
+@SanctiM/11-01
 
 [Lectio1]
 @Commune/C4:Lectio1 in 2 loco:s/-5/-4/ s/5 .*//s
@@ -135,11 +132,10 @@ Gaudent in cælis * ánimæ Sanctórum, qui Christi vestígia sunt secúti: et q
 Sancti Dómini * Dóminum benedcite in ætérnum.
 O quam gloriósum est regnum * in quo cum Christo gaudent omnes Sancti, amícti stolis albis sequúntur Agnum quocúmque íerit!
 
-[Ant 3]
-In regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos, super sedes duódecim, judicántes duódecim tribus Israël.
-
-[Responsory Laudes]
-@Commune/C3:Responsory Tertia:s/._.*//s
+[Capitulum Laudes]
+!Isa 8:18
+v. Ecce ego et púeri mei quos dedit mihi Dóminus in signum, et in porténtum Israël a Dómino exercítuum, qui hábitat in monte Sion.
+$Deo gratias
 
 [Hymnus Laudes]
 Salvéte, cedri Líbani,
@@ -168,34 +164,21 @@ Læti quibúscum vívitis
 In sempitérno lúmine.
 Amen.
 
-[Versum 2]
-@Commune/C3
-
 [Ant 2]
 @Commune/C1
-
-[Oratio]
-Concéde, quǽsumus omnípotens Deus, ut ad meliórem vitam sanctórum Monachórum exémplua non próvocent: † quátenus, quorum solémnia ágimus, * étiam actus imitémur.
-$Per Dominum
-
-[Responsory TertiaM]
-@Commune/C3:Versum 1
 
 [Capitulum Sexta]
 !Sir 44:7
 v. Omnes isti in generatiónibus gentis suæ glóriam adépti sunt, et in diébus suis habéntur in láudibus.
 $Deo gratias
 
-[Responsory SextaM]
-@Commune/C3:Responsory Tertia:8-9
-
 [Capitulum Nona]
 !Sir 44:13
 v. Fílii eórum propter illos usque in ætérnum manent: semen eórum et glória eórum non derelinquétur.
 $Deo gratias
 
-[Responsory NonaM]
-@Commune/C3:Responsory Sexta:8-9
-
 [Ant Vespera 3]
 @:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;115/ s/_//
+
+[Ant 3]
+In regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos, super sedes duódecim, judicántes duódecim tribus Israël.

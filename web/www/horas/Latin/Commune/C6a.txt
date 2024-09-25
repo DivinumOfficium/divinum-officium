@@ -1,21 +1,17 @@
 @Commune/C6
 
 [Name]
-Commune Virginum plurimorum
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
+Commune Plurimorum Virginum Martyrum
 
 [Versum 1]
-V. Adducéntur Regi Vírgines post eam:
+V. Adducéntur Regi Vírgines post eam.
 R. Próximæ ejus afferéntur tibi.
 
 [Ant 1]
 Prudéntes vírgines, * aptáte vestras lámpades: ecce sponsus venit, exíte óbviam ei.
 
-[Responsory1]
-@Commune/C6:Responsory1 pro Martyre
+[Nocturn 1 Versum]
+@Commune/C6:Versum 1
 
 [Ant 2]
 @:Ant 1
@@ -27,12 +23,8 @@ Prudéntes vírgines, * aptáte vestras lámpades: ecce sponsus venit, exíte ó
 Da nobis, quǽsumus, Dómine Deus noster, sanctárum Vírginum et Mártyrum tuárum N. et N. palmas incessábili devotióne venerári: ut quas digna mente non póssumus celebráre, humílibus saltem frequentémus obséquiis.
 $Per Dominum
 
-[Lectio Prima]
-@Commune/C6:Lectio Prima pro Martyre
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
+[Versum Nona]
+@Commune/C6:Versum 2
 
 [Ant 3]
 @:Ant 1

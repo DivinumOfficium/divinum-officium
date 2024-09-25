@@ -1,23 +1,11 @@
 [Rank]
 S. Hieronymi Aemiliani Confessoris;;Duplex;;3;;vide C5
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Hieronymi Aemiliani Confessoris;;Duplex optional;;2;;vide C5
-
-[Rule]
-vide C5;mtv
-9 lectiones;
-m.t.v.
 
 [Oratio]
 O Dio, padre delle misericordie , per i meriti e l'intercessione del beato Girolamo, che volesti fosse un sostegno e un padre per gli orfani: concedi, che noi custodiamo fedelmente lo spirito di adozione, onde ci nominiamo e siamo tuoi figli.
-$Per Dominum
-
-[Commemoratio]
-!Per S. Margherita, Virg. e Mart.
-@Commune/C6:Oratio proper
-v. Preghiamo.
-Signore, c'implori il perdono la beata Margherita Vergine e Martire: la quale ti fu sempre accetta e per il merito della castità, e per il coraggio onde ti ha confessato.
 $Per Dominum
 
 [Lectio4]
@@ -28,6 +16,10 @@ In quei giorni avevano approdato a Venezia il beato Gaetano e Pietro Caraffa, ch
 
 [Lectio6]
 Non pensando che a raccogliere orfani, egli partì per Milano e Pavia; e coll'aiuto di nobili personaggi, provvide di abitazione, vitto, vestito e maestri moltitudini di fanciulli radunati in ambedue questi luoghi. Ritornato a Somasca, fattosi tutto a tutti, non rifuggiva da nessuna fatica che prevedesse tornare a bene del prossimo. Mescolandosi cogli agricoltori nella campagna, li aiutava a raccogliere le biade, e spiegava loro i misteri della fede, puliva la testa dei fanciulli affetti da tigna ributtante, e li curava con pazienza; medicava le putride piaghe dei contadini così bene, che parve avesse ricevuto la grazia delle guarigioni. Scoperta sulla montagna che domina Somasca una grotta, vi si ritirò; e là flagellandosi, restando digiuno giorni interi, passando in orazione la maggior parte della notte, e non prendendo un po' di sonno che sulla nuda roccia , espiava i suoi falli e quelli degli altri. Nel fondo di questa grotta goccia dalla nuda roccia un'acqua ottenuta, secondo una costante tradizione, per le preghiere del servo di Dio; la quale scaturisce anche ai nostri giorni, e, portata in diversi paesi, ridona spesso la salute ai malati. In fine, in una peste che infieriva per tutta la vallata, mentre serviva i malati e portava i morti sulle proprie spalle alla sepoltura, attaccatoglisi il male, fece una preziosa morte, che egli aveva predetta poco prima, in età d'anni cinquantasei, nel 1537. Illustrato da numerosi miracoli in vita e dopo morte, Benedetto XIV l'iscrisse solennemente nell'albo dei Beati, e Clemente XIII in quello dei Santi.
+
+[Lectio94]
+Girolamo nacque a Venezia dalla nobile famiglia Emiliani. Intraprese la carriera militare fin dall'adolescenza, e, in seguito fu preposto, in tempi difficilissimi per la repubblica, alla difesa di Castelnuovo, presso Quero, sui monti di Treviso. I nemici, impadronitisi della fortezza, lo rinchiusero in una orribile prigione, dalla quale fu liberato per intervento della beatissima Vergine. A Venezia si dedicò interamente alle opere di pietà. Aveva particolare compassione degli orfani abbandonati della città e li accolse in una casa da lui affittata, nutrendoli a sue spese e dando loro un'educazione cristiana. In quel tempo erano approdati a Venezia il beato Gaetano e Pietro Carafa, che divenne poi Paolo IV, i quali approvarono l'iniziativa di Girolamo e lo condussero all'ospedale degli incurabili perché educasse gli orfani e insieme assistesse i malati. In seguito, su loro consiglio, egli partì per il vicino continente ed eresse orfanotrofi ed altri pii istituti prima a Brescia, poi a Bergamo e a Como. Fermatosi finalmente a Somasca, umile villaggio nel territorio di Bergamo, fondò la residenza di una nuova congregazione che prese il nome da questo luogo e fu poi approvata da Pio V. Colpito dal contagio, diede la sua vita per i fratelli a cinquantasei anni, nel 1537.
+&teDeum
 
 [Lectio7]
 Lettura del santo Vangelo secondo Matteo
@@ -43,8 +35,4 @@ Mostragli una regina adorna di diadema, egli non la preferisce alla mamma sua, s
 
 [Lectio9]
 Siccome poi i farisei non da altro erano mossi ad operare che da malvagità e da arroganza, perciò egli non cessa di esortare i suoi discepoli ad esser semplici, e lo raccomanda loro nello stesso tempo che li, costituisce. Poiché niente inorgoglisce tanto, quanto l'aver supremazia di autorità e di luogo. Ora, siccome i discepoli avrebbero riscosso molti onori in tutto il mondo, perciò premunisce il loro animo, né vuole ch'essi soffrano niente di umano, né vadano in cerca della popolarità, né s'innalzino sugli altri. Dacché queste cose, che sembrano piccole, dànno occasione a mali grandissimi. Difatti, per aver avuto queste convinzioni, i farisei giunsero al colmo del male, pretendendo il saluto, i primi seggi e i posti d'onore; di qui quell'amore sfrenato di gloria che li fece cadere nell'abisso dell'empietà.
-&teDeum
-
-[Lectio94]
-Girolamo nacque a Venezia dalla nobile famiglia Emiliani. Intraprese la carriera militare fin dall'adolescenza, e, in seguito fu preposto, in tempi difficilissimi per la repubblica, alla difesa di Castelnuovo, presso Quero, sui monti di Treviso. I nemici, impadronitisi della fortezza, lo rinchiusero in una orribile prigione, dalla quale fu liberato per intervento della beatissima Vergine. A Venezia si dedicò interamente alle opere di pietà. Aveva particolare compassione degli orfani abbandonati della città e li accolse in una casa da lui affittata, nutrendoli a sue spese e dando loro un'educazione cristiana. In quel tempo erano approdati a Venezia il beato Gaetano e Pietro Carafa, che divenne poi Paolo IV, i quali approvarono l'iniziativa di Girolamo e lo condussero all'ospedale degli incurabili perché educasse gli orfani e insieme assistesse i malati. In seguito, su loro consiglio, egli partì per il vicino continente ed eresse orfanotrofi ed altri pii istituti prima a Brescia, poi a Bergamo e a Como. Fermatosi finalmente a Somasca, umile villaggio nel territorio di Bergamo, fondò la residenza di una nuova congregazione che prese il nome da questo luogo e fu poi approvata da Pio V. Colpito dal contagio, diede la sua vita per i fratelli a cinquantasei anni, nel 1537.
 &teDeum

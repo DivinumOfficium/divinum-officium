@@ -1,12 +1,15 @@
 [Rank]
 St Apollinaire Evêque et martyr;;Duplex;;3;;vide C2
 
-[Rule]
-vide C2;
-9 lectiones;
-
 [Oratio]
 Dieu, qui récompensez les âmes fidèles, Vous avez consacré ce jour par le martyre du bienheureux Apollinaire, Votre Prêtre : faites, s’il Vous plaît, que nous, qui sommes Vos serviteurs, nous obtenions Votre pardon au moyen des prières de celui dont nous célébrons la fête vénérable.
+$Per Dominum
+
+[Commemoratio Sabbat]
+!Commemoratio S. Liborii Episcopi et Confessoris
+@Commune/C4:Oratio proper
+$Oremus
+v. Exaucez, Seigneur, s'il Vous plaît, les prières qu'en la solennité du bienheureux Liboire, Votre Confesseur et Pontife, nous Vous présentons. Et, par l'intercession des mérites de celui qui a mérité de Vous servir dignement, absolvez-nous de tous nos péchés.
 $Per Dominum
 
 [Commemoratio]
@@ -16,13 +19,6 @@ $Oremus
 v. Faites, nous Vous en prions, Dieu tout-puissant, que la solennité vénérable du bienheureux Liboire, Votre Confesseur et Pontife, augmente en nous la dévotion et nous aide pour notre salut.
 $Per Dominum.
 
-[Commemoratio Sabbat]
-!Commemoratio S. Liborii Episcopi et Confessoris
-@Commune/C4:Oratio proper
-$Oremus
-v. Exaucez, Seigneur, s'il Vous plaît, les prières qu'en la solennité du bienheureux Liboire, Votre Confesseur et Pontife, nous Vous présentons. Et, par l'intercession des mérites de celui qui a mérité de Vous servir dignement, absolvez-nous de tous nos péchés.
-$Per Dominum
-
 [Lectio4]
 Apollinaire vint d’Antioche à Rome avec le prince des Apôtres, qui l’ordonna Évêque et l’envoya à Ravenne pour prêcher l’Évangile de notre Seigneur Jésus-Christ. Comme il convertissait dans cette ville beaucoup d’âmes à la foi chrétienne, il fut arrêté par les prêtres des idoles et cruellement frappé. Par ses prières, un noble personnage nommé Boniface, muet depuis longtemps, recouvra la parole, et sa fille fut délivrée d’un esprit immonde : ces miracles soulevèrent une nouvelle sédition contre le Saint. On le battit de verges, et on le contraignit à marcher pieds nus sur des charbons ardents ; comme le feu de ces charbons ne le brûlait point, on le chassa de la ville.
 
@@ -31,6 +27,11 @@ Il se cacha un certain temps avec quelques Chrétiens, puis partit pour l’Émi
 
 [Lectio6]
 Pendant que le disciple de l’Apôtre Pierre y séjournait, le démon refusa de donner des réponses dans le temple de Sérapis. Après qu’on l’eut cherché longtemps, Apollinaire fut enfin trouvé et de nouveau contraint de prendre la mer. Étant donc revenu à Ravenne, et les mêmes prêtres des idoles recommençant à l’accuser, il fut confié à la garde d’un centurion. Celui-ci, qui honorait secrètement le Christ, favorisa son évasion pendant la nuit. La chose connue, les satellites se mirent à le poursuivre, le couvrirent de blessures et le laissèrent pour mort sur le chemin. Recueilli par des Chrétiens, il les exhorta à rester fermes dans la foi et quitta cette vie sept jours après, couronné de la gloire du martyre. Son corps fut enseveli non loin des murailles de la ville.
+
+[Lectio94]
+Apollinaire vint d’Antioche à Rome avec le Prince des Apôtres. Celui-ci le sacra évêque et l’envoya prêcher l’Évangile du Seigneur à Ravenne. Là, ayant opéré de nombreuses conversions à la foi du Christ, il fut saisi par les prêtres des idoles et grièvement blessé. Puis ayant obtenu par ses prières qu’un homme noble, Boniface, depuis longtemps muet, recouvrât l’usage de la parole et que sa fille fût délivrée d’un esprit immonde, ce fut le motif d’un nouveau soulèvement contre lui. Il souffrit nombre de supplices divers. Ensuite il prêcha l’Évangile en Émilie et détourna une foule de païens du culte des idoles. Revenu à Ravenne, il subit un glorieux martyre, en exhortant les chrétiens à demeurer constants dans la foi. Son corps fut inhumé près des murs de la ville.
+
+&teDeum
 
 [Lectio7]
 Lecture du saint Évangile selon saint Luc.
@@ -46,11 +47,6 @@ Car ce qui nous est promis en fait de récompense et d’honneur ce n’est pas 
 
 [Lectio9]
 Convertissons-nous et prenons garde qu’il ne s’élève entre nous, pour notre perte, quelque contestation au sujet du premier rang. Que les Apôtres même eurent à ce sujet un débat, cela n’est point rappelé pour nous fournir une excuse mais pour nous mettre sur nos gardes. Si Pierre ne fut qu’à la fin tout à fait converti, lui qui avait suivi le Seigneur dès son premier appel, qui donc pourra se vanter d’une conversion tôt et vite accomplie ? Évitez donc la jactance ; évitez le monde. Il reçut l’ordre de quitter ses frères, l’Apôtre qui a dit : « Nous avons tout quitté et nous vous avons suivi ».
-&teDeum
-
-[Lectio94]
-Apollinaire vint d’Antioche à Rome avec le Prince des Apôtres. Celui-ci le sacra évêque et l’envoya prêcher l’Évangile du Seigneur à Ravenne. Là, ayant opéré de nombreuses conversions à la foi du Christ, il fut saisi par les prêtres des idoles et grièvement blessé. Puis ayant obtenu par ses prières qu’un homme noble, Boniface, depuis longtemps muet, recouvrât l’usage de la parole et que sa fille fût délivrée d’un esprit immonde, ce fut le motif d’un nouveau soulèvement contre lui. Il souffrit nombre de supplices divers. Ensuite il prêcha l’Évangile en Émilie et détourna une foule de païens du culte des idoles. Revenu à Ravenne, il subit un glorieux martyre, en exhortant les chrétiens à demeurer constants dans la foi. Son corps fut inhumé près des murs de la ville.
-
 &teDeum
 
 [Commemoratio 3] (rubrica divino aut rubrica tridentina)

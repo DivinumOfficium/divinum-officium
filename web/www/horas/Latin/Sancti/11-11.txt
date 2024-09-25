@@ -5,16 +5,6 @@ S. Martini Episcopi et Confessoris;;Duplex;;3;;vide C4
 vide C4;
 9 lectiones
 
-[Versum 0]
-@Commune/C2::s/N\./Martíne/
-
-[Ant Laudes]
-Dixérunt discípuli * ad beátum Martínum: Cur nos, pater, déseris, aut cui nos desolátos relínquis? Invádent enim gregem tuum lupi rapáces.
-Dómine, * si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua.
-O virum ineffábilem, * nec labóre victum, nec morte vincéndum, qui nec mori tímuit, nec vívere recusávit!
-Oculis ac mánibus * in cælum semper inténtus, invíctum ab oratióne spíritum non relaxábat, allelúja.
-Martínus * Ábrahæ sinu lætus excípitur: Martínus, hic pauper et módicus, cælum dives ingréditur, hymnis cæléstibus honorátur.
-
 [Ant 1]
 O beátum virum, * cujus ánima paradísum póssidet! Unde exsúltant Ángeli, lætántur Archángeli, chorus Sanctórum proclámat, turba Vírginum invítat: Mane nobíscum in ætérnum.
 
@@ -36,18 +26,12 @@ Laudémus Deum nostrum * In confessióne beáti Martíni.
 Martínus, * adhuc catechúmenus, hac me veste contéxit.;;1
 Sanctæ Trinitátis * fidem Martínus conféssus est, et baptísmi grátiam percépit.;;2
 Ego signo crucis, * non clípeo protéctus, aut gálea, hóstium cúneos penetrábo secúrus.;;3
-V. Amávit eum Dóminus, et ornávit eum.
-R. Stolam glóriæ índuit eum.
 Confído in Dómino * quod fília mea, précibus tuis, reddénda sit sanitáti.;;4
 Tetrádius, * cógnita Dei virtúte, ad baptísmi grátiam pervénit.;;5
 O ineffábilem virum, * per quem nobis tanta mirácula corúscant!;;8
-V. Elégit eum Dóminus sacerdótem sibi.
-R. Ad sacrificándum ei hóstiam laudis.
 Dóminus Jesus Christus, * non purpurátum aut diadémate reniténtem, se ventúrum esse prædíxit.;;10
 Sacérdos Dei, Martíne, * apérti sunt tibi cæli et regnum Patris mei.;;14
 Sacérdos Dei, Martíne, * pastor egrégie, ora pro nobis Deum.;;20
-V. Tu es sacérdos in ætérnum.
-R. Secúndum órdinem Melchísedech.
 
 [Lectio1]
 @Commune/C4:Lectio1
@@ -142,11 +126,21 @@ R. Cælum dives ingréditur, hymnis cæléstibus honorátur.
 Mennas Ægýptius, christiánus miles, in persecutióne Diocletiáni et Maximiáni imperatórum, cum pœniténtiæ causa in solitúdinem secessísset, natáli die imperatórum, quo pópulus célebri spectáculo tenebátur, in theátrum prosíliens, líbera voce Gentílium superstitiónem insectabátur. Quam ob rem comprehénsus, et, Pyrrho prǽside, in metrópoli Cottiénsium Phrýgiæ vinctus, loris crudéliter cœditur. Deínde, equúleo tortus, lampádibus ardéntibus ad corpus admótis plagísque cilício confricátis, tum per tríbulos et virgas férreas mánibus ac pédibus colligátis tractus, plumbátis étiam contúsus, demum gládio interfícitur in ignémque conjícitur. Corpus, inde a Christiánis eréptum, sepúltum est ac póstea Constantinópolim translátum.
 &teDeum
 
-[Ant Vespera 3]
-@:Ant Laudes
+[Versum 0]
+@Commune/C2::s/N\./Martíne/
+
+[Ant Laudes]
+Dixérunt discípuli * ad beátum Martínum: Cur nos, pater, déseris, aut cui nos desolátos relínquis? Invádent enim gregem tuum lupi rapáces.
+Dómine, * si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua.
+O virum ineffábilem, * nec labóre victum, nec morte vincéndum, qui nec mori tímuit, nec vívere recusávit!
+Oculis ac mánibus * in cælum semper inténtus, invíctum ab oratióne spíritum non relaxábat, allelúja.
+Martínus * Ábrahæ sinu lætus excípitur: Martínus, hic pauper et módicus, cælum dives ingréditur, hymnis cæléstibus honorátur.
 
 [Ant 2]
 @:Ant 1
+
+[Ant Vespera 3]
+@:Ant Laudes
 
 [Ant 3]
 O beátum Pontíficem, * qui totis viscéribus diligébat Christum Regem, et non formidábat impérii principátum! o sanctíssima ánima, quam etsi gládius persecutóris non ábstulit, palmam tamen martýrii non amísit!

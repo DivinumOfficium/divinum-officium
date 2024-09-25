@@ -1,17 +1,47 @@
 [Name]
 Aux fêtes de la Bienheureuse Vierge Marie
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-
-[Ant Vespera]
-Pendant que le Roi * se reposait, mon nard a exhalé une suave odeur.;;109
+[Ant VesperaBMV]
 Sa main gauche * est sous ma tête ; et sa droite m’embrassera.;;112
-Je suis noire * mais je suis belle, filles de Jérusalem : c’est pourquoi le Roi m’a aimée et m’a introduite dans le lieu de son repos.;;121
-Déjà l’hiver est passé, * la pluie a cessé, elle s’est retirée, levez-vous, mon amie, et venez.;;126
 Toute belle * vous avez été faite, Sainte Mère de Dieu, et vous êtes pleine de douceur au milieu de vos délices.;;147
+
+[Hymnus Vespera]
+/:La première strophe de l’Hymne suivante est dite à genoux.:/
+v. Salut, étoile de la mer,
+Mère de Dieu féconde,
+Salut, ô toujours Vierge,
+Porte heureuse du ciel !
+_
+Vous qui de Gabriel
+Avez reçu l’Ave,
+Fondez-nous dans la paix,
+Changeant le nom d’Ève.
+_
+Délivrez les captifs,
+Éclairez les aveugles,
+Chassez loin tous nos maux,
+Demandez tous les biens.
+_
+Montrez en vous la Mère,
+Vous-même offrez nos vœux
+Au Dieu qui, né pour nous,
+Voulut naître de vous.
+_
+O Vierge incomparable,
+Vierge douce entre toutes,
+Affranchis du péché,
+Rendez-nous doux et chastes.
+_
+Donnez une vie pure,
+Préparez un chemin sûr,
+Pour que voyant Jésus
+Notre liesse soit éternelle.
+_
+Louange à Dieu le Père,
+Gloire au Christ souverain,
+Louange au Saint-Esprit,
+Aux trois un seul hommage.
+Ainsi soit-il.
 
 [Versum 1]
 V. Rendez-moi digne de vous louer, Vierge sainte.
@@ -50,22 +80,14 @@ ainsi qu’au Père et à l’Esprit nourricier,
 dans les siècles éternels.
 Ainsi soit-il.
 
-[Ant Matutinum]
+[Ant MatutinumBMV]
 Vous êtes bénie * entre les femmes et le fruit de votre sein est béni.;;8
 Comme une myrrhe * de choix vous avez exhalé un parfum suave, ô sainte Mère de Dieu.;;18
 Devant le trône * de cette Vierge, chantez-nous souvent de doux cantiques qui nous rappellent ses saintes actions.;;23
-V. Dans votre gloire et votre beauté.
-R. Avancez heureusement, avancez et régnez.
-Dans votre dignité * et votre beauté, avancez, avancez avec succès et régnez.;;44
-Dieu la protège * de son regard : Dieu est au milieu d’elle, elle ne sera pas ébranlée.;;45
 Comme celui de tous ceux qui possèdent la vraie joie, * notre refuge est en vous, sainte Mère de Dieu.;;86
-V. Dieu la protège de son regard.
-R. Dieu est au milieu d’elle, elle ne sera pas ébranlée.
 Réjouissez-vous, Vierge Marie : * vous seule avez détruit toutes les hérésies dans le monde entier.;;95
 Rendez-moi digne * de vous louer, ô Vierge sainte ; donnez-moi de la force contre vos ennemis.;;96
 Après l’enfantement, * ô Vierge vous êtes demeurée dans votre intégrité première ; Mère de Dieu, intercédez pour nous.;;97
-V. Dieu l’a élue et choisie avec prédilection.
-R. Il l’a fait habiter dans son tabernacle.
 
 [Lectio1]
 Des Proverbes de Salomon.
@@ -161,8 +183,48 @@ R. Car le Seigneur, lui qui est puissant, m’a fait de grandes choses, et son n
 « Heureux plutôt ceux qui écoutent la parole de Dieu et qui la gardent ! » Le Sauveur approuve éminemment ce qu’avait dit cette femme, quand il affirme que non seulement celle qui a mérité d’engendrer corporellement le Verbe de Dieu, mais aussi tous ceux qui s’efforcent de concevoir spirituellement le même Verbe par l’audition de la foi, de l’enfanter et de le nourrir par la pratique des bonnes œuvres, soit dans leur cœur, soit en celui de leur prochain, sont véritablement heureux. Certes, la Mère de Dieu est bienheureuse d’avoir servi dans le temps, et contribué à l’incarnation du Verbe ; mais elle est encore plus heureuse d’avoir mérité, en l’aimant toujours, de le garder en elle éternellement.
 &teDeum
 
+[Capitulum Laudes]
+!Sir 24:14
+v. Dès le commencement et avant tous les siècles, j’ai été créée, et dans la suite des âges je ne cesserai point d’être ; et, dans la demeure sainte, j’ai exercé devant lui mon ministère.
+$Deo gratias.
+
+[Hymnus Laudes]
+{:Ogloriosavirginum:}v. O la plus glorieuse des vierges,
+élevée au-dessus des astres,
+vous nourrissez du lait de votre sein
+Celui qui vous a créée, devenu petit enfant.
+_
+Vous nous rendez par votre auguste Fils,
+ce dont Ève nous avait malheureusement privés :
+vous ouvrez les portes du ciel
+pour y faire entrer ceux qui pleurent.
+_
+Vous êtes la porte du grand Roi,
+et son palais, éclatant de lumière :
+Nations rachetées, célébrez toutes la vie
+qui nous est donnée par cette Vierge.
+_
+* O Jésus, gloire à vous
+qui êtes né de la Vierge,
+ainsi qu’au Père et à l’Esprit nourricier,
+dans les siècles éternels.
+Ainsi soit-il.
+
 [Ant 2]
 Vous êtes bienheureuse, * Marie, vous qui avez cru : car ce qui vous a été dit par le Seigneur s’accomplira en vous, alléluia.
+
+[Oratio]
+Seigneur notre Dieu, accordez, s’il vous plaît, à nous vos serviteurs, de jouir d’une perpétuelle santé de l’âme et du corps : et grâce à la glorieuse intercession de la bienheureuse Marie toujours Vierge, d’être délivrés des tristesses du temps présent, puis de goûter les joies éternelles.
+$Per Dominum
+
+[Lectio Prima]
+!Sir 24:19-20
+v. Comme la canelle et le baume odorant, dans les places publiques j'ai exhalé mon parfum ; comme la myrrhe choisie j'ai répandu une odeur suave.
+
+[Capitulum Sexta]
+!Sir 24:15-16
+v. Et ainsi j'ai eu une demeure fixe dans Sion, et j'ai trouvé le repos dans la cité sainte ; et Jérusalem est le siège de mon empire. Et j'ai poussé mes racines dans le peuple glorifié, dans la portion de mon Dieu, dans son héritage, et dans l'assemblée entière des Saints est ma demeure.
+$Deo gratias.
 
 [Ant 3]
 Elles me diront bienheureuse, * toutes les générations, parce que Dieu a regardé son humble servante.

@@ -1,12 +1,6 @@
 [Name]
 Commun d'un Martyr
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-
 [Ant Vespera]
 Quiconque m'aura confessé * devant les hommes, je le confesserai Moi aussi devant Mon Père.
 Celui qui me suit, * ne marche point dans les ténèbres ; mais il aura la lumière de la vie, dit le Seigneur.
@@ -42,7 +36,7 @@ Dans les siècles des siècles.
 Ainsi soit-il.
 
 [Versum 1]
-V. Vous l'avez couronné de gloire et d'honneur, Seigneur.
+V. Vous l'avez couronné de gloire et d'honneur Seigneur.
 R. Et Vous lui avez donné l'empire sur les œuvres de Vos mains.
 
 [Ant 1]
@@ -51,23 +45,22 @@ Ce Saint * a combattu jusqu'à la mort pour la loi de son Dieu et n'a pas craint
 [Invit]
 Le Seigneur est le Roi des Martyrs, * Venez , adorons-le.
 
-[Hymnus Matutinum]
-@Commune/C2:Hymnus Vespera
-
 [Ant Matutinum]
 Il a mis * toute son affection jour et nuit dans la loi du Seigneur.;;1
 Publiant * les préceptes du Seigneur, il a été établie sur la montagne sainte.;;2
 J'ai haussé * ma voix et j'ai crié vers le Seigneur : et Il m'a exaucé sur Sa montagne sainte.;;3
-V. Vous l'avez couronné de gloire et d'honneur Seigneur.
-R. Et Vous lui avez donné l'empire sur les œuvres de Vos mains.
 Enfants des hommes * sachez que Dieu a glorifié son saint.;;4
 Vous l'avez couvert, * Seigneur, de l'amour que vous aviez pour lui comme d'un bouclier.;;5
 Vous l'avez couronné * d'honneur et de gloire dans toute la terre.;;8
-V. Seigneur, Vous avez mis sur sa tête.
-R. Une couronne de pierres précieuses.
 Le Seigneur est juste, * et Il aime la justice : Il regarde l'équité d'un œil favorable.;;10
 Il habitera * dans Votre tabernacle : il reposera sur Votre montagne Sainte.;;14
 Seigneur, Vous avez mis * sur sa tête une couronne de pierres précieuses.;;20
+
+[Nocturn 2 Versum]
+V. Vous avez mis, Seigneur, sur sa tête.
+R. Une couronne de pierres précieuses.
+
+[Nocturn 3 Versum]
 V. Sa gloire est grande, grâce à Votre secours.
 R. Vous l'avez revêtu de splendeur et de magnificence.
 
@@ -170,7 +163,7 @@ V. Car Vous lui avez donné les bénédictions de Votre douceur : Vous avez mis 
 R. Marquée du sceau de la sainteté toute éclatante de gloire et qui est le plus glorieux prix de son courage invincible.
 
 [Lectio8]
-Quand on entend parler de ces biens sublimes, l'esprit s'émeut et il souhaiterait habiter déjà en cette demeure où il espère d'être heureux éternellement. Mais on ne parvient point à de grades récompenses sans de grands travaux : ce qui fait dire à Saint Paul, cet admirable prédicatuer, que celui qui combat n'est point couronné qu'après avoir bien combattu. Que l'esprit donc considère avec tant de joie la grandeur de le récompense qui lui est proposée, mais qu'il ne se décourage pas dand la vue de la peine et de la fatigue du combat. C'est pourquoi la Vérité dit elle-même dans cet Evangile à ceux qui vont à elle : "Si quelqu'un vient à moi et ne hait pas son père et sa mère, sa femme et ses enfants, ses frères et ses sœurs et plus encore sa propre vie, il ne peut être mon disciple. "
+Quand on entend parler de ces biens sublimes, l'esprit s'émeut et il souhaiterait habiter déjà en cette demeure où il espère d'être heureux éternellement. Mais on ne parvient point à de grades récompenses sans de grands travaux : ce qui fait dire à Saint Paul, cet admirable prédicatuer, que celui qui combat n'est point couronné qu'après avoir bien combattu. Que l'esprit donc considère avec tant de joie la grandeur de le récompense qui lui est proposée, mais qu'il ne se décourage pas dand la vue de la peine et de la fatigue du combat. C'est pourquoi la Vérité dit elle-même dans cet Evangile à ceux qui vont à elle : « Si quelqu'un vient à moi et ne hait pas son père et sa mère, sa femme et ses enfants, ses frères et ses sœurs et plus encore sa propre vie, il ne peut être mon disciple. « 
 
 [Responsory8]
 R. Voici un véritable Martyr. qui a répandu son sang pour le nom de Jésus-Christ :
@@ -189,11 +182,8 @@ R. Il a mis sur sa tête une couronne de pierres précieuses.
 R. Il a mis sur sa tête une couronne de pierres précieuses.
 
 [Lectio9]
-Mais il est bon d'examiner en ce lieu comment il nous est commandé d'avoir de la haine pour nos parents, puisqu'il nous est ordonné d'aimer nos ennemis mêmes. D'ailleurs Jésus Christ qui est la Vérité même dit en parlant de la femme : "Que l'homme ne sépare point ce que Dieu a joint ensemble." Et Saint Paul recommande aux hommes d'aimer leurs femmes, comme Jésus Christ aime Son Eglise. Comment donc le disciple recommande-t-il d'aimer sa femme après que son maître a déclaré que si l'on ne hait sa femme, l'on ne peut être son disciple ? Comment celui qui lit la sentence du Juge, la lit-ul autrement que le Juge ne l'a prononcé ? Et pouvons-nous en même temps aimer et haïr les mêmes personnes ? Oui certes, nous pouvons le faire, si nous avons soin de bien distinguer les choses et si nous concevons comme il le faut la vertu et l'esprit du commandement. Car de cette force nous aimerons simplement nos parents et notre prochain mais en même temps nous méconnaitrons tous ceux qui s'opposent à notre course dans la voie de Dieu, jusqu'à les haïr et à nous en éloigner.
+Mais il est bon d'examiner en ce lieu comment il nous est commandé d'avoir de la haine pour nos parents, puisqu'il nous est ordonné d'aimer nos ennemis mêmes. D'ailleurs Jésus Christ qui est la Vérité même dit en parlant de la femme : « Que l'homme ne sépare point ce que Dieu a joint ensemble.» Et Saint Paul recommande aux hommes d'aimer leurs femmes, comme Jésus Christ aime Son Eglise. Comment donc le disciple recommande-t-il d'aimer sa femme après que son maître a déclaré que si l'on ne hait sa femme, l'on ne peut être son disciple ? Comment celui qui lit la sentence du Juge, la lit-ul autrement que le Juge ne l'a prononcé ? Et pouvons-nous en même temps aimer et haïr les mêmes personnes ? Oui certes, nous pouvons le faire, si nous avons soin de bien distinguer les choses et si nous concevons comme il le faut la vertu et l'esprit du commandement. Car de cette force nous aimerons simplement nos parents et notre prochain mais en même temps nous méconnaitrons tous ceux qui s'opposent à notre course dans la voie de Dieu, jusqu'à les haïr et à nous en éloigner.
 &teDeum
-
-[Ant Laudes]
-@:Ant Vespera
 
 [Capitulum Laudes]
 !Jac 1:12
@@ -250,51 +240,34 @@ $Per Dominum
 !Sir 39:6
 v. Le juste met son cœur à aller dès le matin auprès du Seigneur qui l'a fait et il prie en présence du Très-Haut.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. De gloire et d'honneur * Seigneur, Vous l'avez couronné.
 R. De gloire et d'honneur * Seigneur, Vous l'avez couronné.
 V. Et Vous lui avez donné l'empire sur les œuvres de Vos mains.
 R. Seigneur, Vous l'avez couronné.
 &Gloria
 R. De gloire et d'honneur * Seigneur, Vous l'avez couronné.
-_
-V. Vous avez mis sur sa tête, Seigneur.
-R. Une couronne de pierres précieuses.
 
 [Capitulum Sexta]
 !Sir 15:3
 v. Le Seigneur notre Dieu l'a nourri d'un pain de vie et d'intelligence et Il lui a donné à boire de l'eau d'une sagesse salutaire.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Vous avez mis Seigneur * Sur sa tête.
 R. Vous avez mis Seigneur * Sur sa tête.
 V. Une couronne de pierres précieuses.
 R. Sur sa tête.
 &Gloria
 R. Vous avez mis Seigneur * Sur sa tête.
-_
-V. Sa gloire est grande, grâce à Votre secours.
-R. Vous l'avez revêtu de splendeur et de magnificence.
 
-[Capitulum Nona]
-!Sir 39:6
-v. Le juste met son cœur à aller dès le matin auprès du Seigneur qui l'a fait, et il prie en présence du Très-Haut.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Sa gloire est grande, * Grâce à Votre secours.
 R. Sa gloire est grande, * Grâce à Votre secours.
 V. Vous l'avez revêtu de splendeur et de magnificence.
 R. Grâce à Votre secours.
 &Gloria
 R. Sa gloire est grande, * Grâce à Votre secours.
-_
-V. Le juste fleurira comme le palmier.
-R. Il croîtra comme le cèdre du Liban.
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 Si quelqu'un veut venir après Moi, * qu'il se renonce lui-même, qu'il porte sa croix et Me suive !

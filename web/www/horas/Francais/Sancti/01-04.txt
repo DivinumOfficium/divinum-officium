@@ -1,17 +1,11 @@
 [Rank]
 In Octava Ss. Innocentium.;;Simplex;;1.1;;vide Sancti/12-28
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1955)
 Die Quarta Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rank] (rubrica tridentina)
 In Octava Ss. Innocentium.;;Duplex;;3;;ex Sancti/12-28
-
-[Rule]
-vide Sancti/12-28;
-Feria Te Deum
-Comkey=70
-9 lectiones
 
 [Lectio1]
 De l'Epître aux Roamains
@@ -20,11 +14,17 @@ De l'Epître aux Roamains
 2	Ainsi une femme mariée est liée par la loi à son mari tant qu'il est vivant; mais si le mari meurt, elle est dégagée de la loi qui la liait à son mari.
 3	Si donc, du vivant de son mari, elle épouse un autre homme, elle sera appelée adultère; mais si son mari meurt, elle est affranchie de la loi, en sorte qu'elle n'est plus adultère en devenant la femme d'un autre mari.
 
+[Responsory1]
+@Sancti/12-25:Responsory6
+
 [Lectio2]
 !Rom 7:4-6
 4	Ainsi, mes frères, vous aussi vous êtes morts à la Loi, par le corps de Jésus-Christ, pour que vous soyez à un autre, à celui qui est ressuscité des morts, afin que nous portions des fruits pour Dieu.
 5	Car, lorsque nous étions dans la chair, les passions qui engendrent les péchés, excitées par la Loi, agissaient dans nos membres, de manière à produire des fruits pour la mort.
 6	Mais maintenant nous avons été dégagés de la Loi, étant morts à la Loi, sous l'autorité de laquelle nous étions tenus, de sorte que nous servons Dieu dans un esprit nouveau, et non selon une lettre surannée.
+
+[Responsory2]
+@Sancti/01-01:Responsory8
 
 [Lectio3]
 !Rom 7:7-9
@@ -32,18 +32,8 @@ De l'Epître aux Roamains
 8	Puis le péché, saisissant l'occasion, a fait naître en moi, par le commandement, toutes sortes de convoitises; car, sans la Loi, le péché est mort.
 9	Pour moi, je vivais autrefois sans la Loi; mais le commandement étant venu, le péché a pris vie,
 
-[Responsory1]
-@Sancti/12-25:Responsory6
-
-[Responsory2]
-@Sancti/01-01:Responsory8
-
 [Responsory3]
 @Sancti/01-01:Responsory3
-
-[Lectio93]
-@:Lectio4
-&teDeum
 
 [Lectio4]
 Sermon de Saint Augustin Evêque
@@ -59,15 +49,19 @@ Parfois, une femme au cœur brisé criait au voyou de la tuer elle aussi ; pourq
 [Lectio7]
 Lécture du Saint Evangile selon St Mathieu
 !Matt 2:13-18
-En ce temps là : voici qu’un ange du Seigneur apparut en songe à Joseph et lui dit : "Lève toi, prends l’enfant et sa mère, fuis en Egypte et restes-y jusqu’à ce que je t’avertisse  Et le reste.
+En ce temps là : voici qu’un ange du Seigneur apparut en songe à Joseph et lui dit : « Lève toi, prends l’enfant et sa mère, fuis en Egypte et restes-y jusqu’à ce que je t’avertisse Et le reste.
 _
 Homélie de Saint Jean Chrysostome
 !de l'homélie 8 sur Matthieu., avant le milieu.
-Après avoir entendu cela, Joseph ne fut pas troublé et ne dit pas : "C'est douteux, ou du moins obscur. Il n'y a pas longtemps, tu disais qu'il sauverait son peuple, et maintenant, il semble qu'il ne puisse pas le sauver ; nous devons fuir, partir loin et habiter dans une terre étrangère. Mais Joseph ne dit rien de tout cela, car il était fidèle ; il ne demanda pas non plus curieusement à l'ange le temps de son retour, que Dieu ne voulut pas lui montrer, mais seulement lui envoyer cette parole : "Reste là jusqu'à ce que je t'apporte une nouvelle."
+Après avoir entendu cela, Joseph ne fut pas troublé et ne dit pas : « C'est douteux, ou du moins obscur. Il n'y a pas longtemps, tu disais qu'il sauverait son peuple, et maintenant, il semble qu'il ne puisse pas le sauver ; nous devons fuir, partir loin et habiter dans une terre étrangère. Mais Joseph ne dit rien de tout cela, car il était fidèle ; il ne demanda pas non plus curieusement à l'ange le temps de son retour, que Dieu ne voulut pas lui montrer, mais seulement lui envoyer cette parole : « Reste là jusqu'à ce que je t'apporte une nouvelle.»
 
 [Lectio8]
 Il n'était pas paresseux, mais il obéissait joyeusement, et par la foi il supportait avec joie toutes les tribulations. Dieu, dans sa miséricorde, a mêlé un peu de joie à sa peine, comme il le fait dans tous les saints, qu'il fera demeurer continuellement ni dans la tristesse, ni dans la joie, mais qui tissent leur vie toujours avec une étrange diversité. Et considérons comment il l'a fait ici.
 
 [Lectio9]
 Lorsque saint Joseph apprit que la Vierge était enceinte, il fut très troublé ; mais aussitôt un Ange vint dissiper ses craintes. Le Seigneur était né et il se réjouit d'une joie extrême ; mais aussitôt vint le grand danger, quand tout Jérusalem fut troublé, le roi en grande colère, et des meurtriers cherchant la vie du jeune Enfant. L'étoile brilla sur Bethléem, et les sages vinrent se prosterner ; mais Hérode cherchait à faire mourir le Sauveur ; ils se levèrent et s'enfuirent dans un pays lointain.
+&teDeum
+
+[Lectio93]
+@:Lectio4
 &teDeum

@@ -1,33 +1,6 @@
 [Name]
 Commune Evangelistarum
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
-[Ant Vespera]
-Az az én parancsom * hogy szeressétek egymást, amint én szerettelek benneteket;;109
-Senki sem szeret jobban * mint az, aki életét adja barátaiért;;110
-Ha megteszitek amit parancsolok nektek * a barátaim vagytok, mondja az Úr;;111
-Boldogok a békességben élők * boldogok a tiszta szívűek, mert meglátják az Istent;;112
-Kitartástokkal * megmentitek lelketeket;;116
-
-[Hymnus Vespera]
-@Commune/C1:Hymnus Vespera
-
-[Versum 1]
-V. A hír terjed, szerte a világon,
-R. A szózat elhangzik a föld határáig
-
-[Ant 1]
-Bíróság elé állítanak * és a zsinagógákban megostoroznak benneteket. Aztán miattam helytartók és királyok elé hurcolnak, hogy tanúságot tegyetek előttük rólam.
-
-[Invit]
-Áldjuk * az Apostolok királyát
-
-[Hymnus Matutinum]
-@Commune/C1:Hymnus Matutinum
-
 [Lectio1]
 Olvasmány Ezekiel próféta könyvéből
 !Ezek 1:1-4
@@ -54,72 +27,3 @@ Olvasmány Ezekiel próféta könyvéből
 Evangélium szent Lukács Evangélista kőnyvéből
 !Luke 10:1-9
 Abban az időben az Úr kiválasztott más hetvenkettőt, és elküldte őket kettesével maga előtt minden városba és helységbe, ahová menni készült. És így tovább.
-
-[Capitulum Laudes]
-!Eph. 2:19-20
-v. Ezért már nem vagytok idegenek és jövevények, hanem a szentek polgártársai és Isten családjának tagjai. Apostolokra és prófétákra alapozott épület vagytok, s a szegletkő maga Krisztus Jézus.
-$Deo gratias.
-
-[Hymnus Laudes]
-@Commune/C1:Hymnus Vespera
-
-[Versum 2]
-V. Hirdették az Úr művét
-R. És megértették cselekedeteit
-
-[Ant 2]
-Ti akik mindent elhagytatok * és követtetek engem, százszoros jutalmat kaptok és az örök életet
-
-[Lectio Prima]
-!Acts 5:41
-v. Boldogan távoztak a főtanácsból, mert méltók lettek rá, hogy Jézus nevéért gyalázatot szenvedjenek.
-
-[Responsory Tertia]
-R.br. A hír terjed, szerte a világon
-R. A hír terjed, szerte a világon
-V. A szózat elhangzik a föld határáig
-R. szerte a világon
-&Gloria
-R. A hír terjed, szerte a világon
-_
-V. Fejedelmekké teszed őket országok felett.
-R. Megemlékeznek nevedről, Urunk
-
-[Capitulum Sexta]
-!Acts 5:12
-v. Az apostolok keze sok jelet és csodát művelt a nép között.
-$Deo gratias
-
-[Responsory Sexta]
-R.br. Fejedelmekké teszed őket országok felett.
-R. Fejedelmekké teszed őket országok felett.
-V. Megemlékeznek nevedről, Urunk
-R. Országok felett
-&Gloria
-R. Fejedelmekké teszed őket országok felett.
-_
-V. Barátaid Uram tiszteletre méltóak
-R. És országuk erős
-
-[Capitulum Nona]
-!Acts 5:41
-v. Boldogan távoztak a főtanácsból, mert méltók lettek rá, hogy Jézus nevéért gyalázatot szenvedjenek.
-$Deo gratias
-
-[Responsory Nona]
-R.br. Barátaid Uram tiszteletre méltóak
-R. Barátaid Uram tiszteletre méltóak
-V. És országuk erős
-R. Barátaid Uram
-&Gloria
-R. Barátaid Uram tiszteletre méltóak
-_
-V. Hirdették az Úr művét
-R. És megértették cselekedeteit
-
-[Versum 3]
-V. Hirdették az Úr művét
-R. És megértették cselekedeteit
-
-[Ant 3]
-Tartsatok ki a csatában * amit az ősi kigyóval vivtok, és elnyeritek az örökkévaló királyságot, alleluja

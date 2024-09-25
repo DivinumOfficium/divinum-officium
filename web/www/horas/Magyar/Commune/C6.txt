@@ -1,15 +1,3 @@
-[Name]
-Commune Virgine
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
-[Capitulum Laudes]
-!2 Cor 10:17-18
-v. Testvérek: aki dicsekszik, az Úrban dicsekedjék. Nem az a megbízható, aki magát ajánlja, hanem akit az Úr ajánl.
-$Deo gratias
-
 [Hymnus Vespera]
 {:H-Jesucoronavirginum:}v. Jézus, szűzek koszoruja,
 Kit amaz édes Anya szűl,
@@ -74,22 +62,24 @@ Háromságban- egy örök Istenünknek,
 Minden időben.
 Ámen.
 
-[Hymnus Matutinum pro Virgo tantum et non Martyr]
-v. Jézus, a Szűznek fia s alkotója,
-Szűz hordott méhén, a világra ő szült:
-Szűznek zengjük most a nehéz halálon
-Nyert diadalmát.
-_
-Ő imájáért, kegyes Isten, engedd
-El bűnünk zsoldját, amit érdemeltünk,
-Hogy visszhangozzék a kitisztult szívből
-Ájtatos ének.
-_
-Áldás, dícséret legyen az Atyának,
-Egyszülöttének s vele Szentléleknek,
-Háromságban- egy örök Istenünknek,
-Minden időben.
-Ámen.
+[Ant Matutinum]
+O how lovely and glorious * is the generation of the chaste.;;8
+Sing for us again and again before this maiden's bed * the tender idylls of the play.;;18
+Return, return, O Shulammith * Return, return, that we may look upon thee.;;23
+A te ékességeddel és * szépségeddel, indúlj meg, járj szerencsésen és országolj;;44
+Nem inog meg, Isten lakik benne, Isten már hajnalban is védelmezi;;45
+Many waters cannot * quench love.;;47
+Barna a bőröm, * de azért szép vagyok Jeruzsálem lányai, ezért szeret a király, és vezet be lakosztályába;;95
+Draw me after thee * we will run after the savour of thy good ointments; thy name is as oil poured forth.;;96
+Come, Bride of Christ, * and take the everlasting crown which the Lord hath prepared for thee.;;97
+
+[Nocturn 2 Versum]
+V. Isten jelenlétével védelmezi.
+R. Nem inog meg, Isten lakik benne`,
+
+[Nocturn 3 Versum]
+V. Isten kiválasztotta őt születése előtt
+R. Hogy sátrában lakjék szine előtt
 
 [Lectio1]
 Olvasmány szent Pál apostol Korintusiakhoz írott első leveléből
@@ -111,18 +101,22 @@ Olvasmány szent Pál apostol Korintusiakhoz írott első leveléből
 
 [Lectio3]
 !1 Cor 7:36-40
-36 Ha valaki mégis úgy véli, hogy igazságtalanul bánna hajadon lányával, mert~
-eljárt fölötte az idő, ha úgy van rendjén, tegye, amit akar. Nem vétkezik, kössenek csak házasságot.
+36 Ha valaki mégis úgy véli, hogy igazságtalanul bánna hajadon lányával, mert eljárt fölötte az idő, ha úgy van rendjén, tegye, amit akar. Nem vétkezik, kössenek csak házasságot.
 37 Akinek azonban szilárd a meggyőződése, s minden kényszerítő ok nélkül, teljesen szabadon úgy döntött, hogy megőrzi hajadon lányát, jól teszi.
 38 Tehát aki férjhez adja hajadon lányát, jól teszi, aki pedig nem adja férjhez, még jobban teszi.
 39 Az asszony le van kötve, amíg férje él, de ha férje meghal, felszabadul. Férjhez mehet, akihez akar, de csak az Úrban.
 40 Boldogabb azonban, ha úgy marad, ahogy van. Ez a tanácsom, és hiszem, hogy Isten Lelke szerint beszélek.
+
+[Versum Nona]
+V. Kegyelem van az ajkaidon
+R. Isten ezért megáldott mindörökre
 
 [Lectio7]
 Evangélium szent Máté Apostol kőnyvéből
 !Matt 25:1
 Azon időben így szólt Jézus tanítványaihoz A mennyek országa hasonlít a tíz szűzhöz, akik fogták lámpásukat, és a vőlegény elé mentek. És így tovább
 _
+
 [Capitulum Laudes]
 !2 Cor 10:17-18
 v. Testvérek: aki dicsekszik, az Úrban dicsekedjék. Nem az a megbízható, aki magát ajánlja, hanem akit az Úr ajánl.
@@ -140,57 +134,37 @@ Isten, aki hatalmad csodálatos erejével gyenge asszonyokat is győztessé tett
 $Per Dominum
 
 [Lectio Prima]
-!Wis 4:1
-v. Jobb az erénnyel párosult gyermektelenség, mert halhatatlan az emlékezete, mivelhogy Isten is, ember is elismeri.
-
-[Lectio Prima pro Martyre]
 !Sir 51:13-14
 v. Uram, Istenem,felmagasztaltad a földön lakhelyemet és az elmúló halálért könyörögtem. 14 Segítségöl hittam az Urat, az én Uram Atyját, hogy ne hagyjon engem háborúságom napján és a kevélyek idejében segítség nélkül.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. A te ékességeddel és szépségeddel
 R. A te ékességeddel és szépségeddel
 V. Indúlj meg, járj szerencsésen és országolj
 R. Szépségeddel
 &Gloria
 R. A te ékességeddel és szépségeddel
-_
-V. Isten jelenlétével védelmezi.
-R. Nem inog meg, Isten lakik benne`,
 
 [Capitulum Sexta]
 !2 Cor 11:2
 v. Én Isten féltékenységével féltelek titeket. Mert eljegyeztelek benneteket egy férfival, hogy tiszta szűzként vezesselek el Krisztushoz.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Isten jelenlétével védelmezi
 R. Isten jelenlétével védelmezi
 V. Nem inog meg, Isten lakik benne`,
 R. Jelenlétével
 &Gloria
 R. Isten jelenlétével védelmezi.
-_
-V. Isten kiválasztotta őt születése előtt
-R. Hogy sátrában lakjék szine előtt
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Isten választotta őt születése előtt
 R. Isten választotta őt születése előtt
 V. Hogy sátraban lakjék színe előtt
 R. Születése előtt
 &Gloria
 R. Isten választotta őt születése előtt
-_
-V. Kegyelem van az ajkaidon
-R. Isten ezért megáldott mindörökre
-
-[Versum 3]
-V. Kegyelem van az ajkaidon
-R. Isten ezért megáldott mindörökre
-
-[Ant 3]
-Jőjj Krisztus jegyese * fogadd el koronádat melyet az Úr készített neked öröktől fogva
 
 [Lectio1 in 2 loco]
 Olvasmány Jézus Sírák fia könyvéből
@@ -218,3 +192,12 @@ Olvasmány Jézus Sírák fia könyvéből
 15 Dicsérni fogom a te nevedet szüntelen, és dicsérem azt hálaadással, mert meghallgattatott az én imádságom.
 16 És kiszabadítottál engem a veszedelemböl, és megmentettél a gonosz idöben.
 17 Azért hálát adok és dicséretet mondok neked, és áldom az Úr nevét.
+
+[Lectio7 in 3 loco]
+Evangélium szent Máté Apostol kőnyvéből
+!Matt 19:3-12
+Azon időben odamentek Jézushoz a farizeusok, hogy próbára tegyék. Ezt kérdezték: „El szabad a férfinek bármilyen okból bocsátania a feleségét?” És így tovább.
+_
+Homily by St John Chrysostom, Patriarch of (Constantinople.)
+!63th on Matthew.
+Seeing that directly to exhort them unto virginity was well-nigh more than they could bear, our Lord seeketh to draw them to the desire thereof, taking occasion by the needfulness of a law against divorce. Then He showeth that virginity is possible, saying There are some eunuchs which were so born from their mother's womb; and there are some eunuchs which were made eunuchs of men; and there be eunuchs which have made themselves eunuchs for the kingdom of heaven's sake. In these words He persuadeth them indirectly to choose virginity, while He teacheth them that such a gift is not so good as to be impossible.

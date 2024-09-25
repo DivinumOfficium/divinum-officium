@@ -1,12 +1,8 @@
 [Rank]
 S. Januarii Episcopi et Sociorum Martyrum;;Duplex;;3;;vide C3
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Januarii Episcopi et Sociorum Martyrum;;Duplex optional;;2;;vide C3
-
-[Rule]
-vide C3;
-9 lectiones
 
 [Oratio]
 @Commune/C3:Oratio2:s/N\. y N\./Jenaro y sus compañeros/
@@ -19,6 +15,10 @@ Al siguiente día los echaron a todos a las fieras en el anfiteatro; mas éstas 
 
 [Lectio6]
 Las ciudades vecinas, según su preferencia en la adopción de alguno de aquellos Mártires como patrono ante Dios, sepultaron los cuerpos. Los Napolitanos, por indicación divina, lleváronse el de Jenaro, que fue primero a Benevento, después al monasterio de Monte Vergine, y por último a Nápoles, en donde fue colocado en la iglesia mayor resplandeciendo con numerosos milagros. Es digno de mención el que hizo apagando los globos de fuego del Vesubio, que sembraban el terror y la devastación a la regiones vecinas y remotas. Muy famoso es lo que ocurre con su sangre, la cual, coagulada y conservada en un frasco de cristal, se licua y bulle, como si acabase de derramarse, al ponerla en presencia de la cabeza del Mártir. Este milagro puede presenciarse aún en nuestros días.
+
+[Lectio94]
+Jenaro fue obispo de Benevento cuando Diocleciano y Maximiano perseguían ferozmente a los cristianos. Por su fe cristiana, Timoteo, Gobernador de Campania, le sometió en vano a las torturas del fuego y del potro. Poco después, con Festo su diácono y Desiderio, un lector, fue arrastrado encadenado delante del carro del gobernador a Pozzuoli. Al día siguiente, él y sus compañeros fueron arrojados a las bestias, junto con los diáconos Sosio de Misenum y Proculus de Pozzuoli y los laicos Eutiques y Acutius. Pero como las bestias los dejaron ilesos y casi 5000 personas creyeron en Cristo, el gobernador se enfureció y ordenó que el santo obispo y sus compañeros fueran decapitados. Los cristianos asistieron a su entierro. El cuerpo de Jenaro se colocó primero en Benevento, luego en el monasterio de Monte Vergine, y finalmente en la iglesia principal de Nápoles, y es famoso por muchos milagros. Su sangre se guarda en un frasco de vidrio y, aún hoy, cuando se coloca a la vista de la cabeza del santo mártir, se licua.
+&teDeum
 
 [Lectio7]
 Lectura del Santo Evangelio según San Mateo
@@ -34,8 +34,4 @@ Les anima a sobrellevar en su Nombre los sufrimientos, huidas, golpes, la muerte
 
 [Lectio9]
 La salvación está reservada a los que perseverarán hasta el fin. Entonces, dispersados los varones apostólicos, el Evangelio será predicado por toda la tierra. Y una vez llegado a todos los lugares el conocimiento de los misterios celestiales, entonces vendrá la caída y el fin de Jerusalén; para que el castigo sufrido por el pueblo infiel y el temor por destruccción confirmen la fe que habrá sido predicada. Estas cosas ocurrieron allí, conforme estaba dicho; y después de haber sido los Apóstoles apedreados, expulsados y martirizados, Jerusalén fue destruida por el hambre, la guerra y la cautividad. No mereció existir por haberse hecho indigna de la predicación al rechazar a los predicadores de Cristo.
-&teDeum
-
-[Lectio94]
-Jenaro fue obispo de Benevento cuando Diocleciano y Maximiano perseguían ferozmente a los cristianos. Por su fe cristiana, Timoteo, Gobernador de Campania, le sometió en vano a las torturas del fuego y del potro. Poco después, con Festo su diácono y Desiderio, un lector, fue arrastrado encadenado delante del carro del gobernador a Pozzuoli. Al día siguiente, él y sus compañeros fueron arrojados a las bestias, junto con los diáconos Sosio de Misenum y Proculus de Pozzuoli y los laicos Eutiques y Acutius. Pero como las bestias los dejaron ilesos y casi 5000 personas creyeron en Cristo, el gobernador se enfureció y ordenó que el santo obispo y sus compañeros fueran decapitados. Los cristianos asistieron a su entierro. El cuerpo de Jenaro se colocó primero en Benevento, luego en el monasterio de Monte Vergine, y finalmente en la iglesia principal de Nápoles, y es famoso por muchos milagros. Su sangre se guarda en un frasco de vidrio y, aún hoy, cuando se coloca a la vista de la cabeza del santo mártir, se licua.
 &teDeum

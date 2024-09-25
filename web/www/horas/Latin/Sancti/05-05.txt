@@ -1,9 +1,15 @@
 [Rank]
 S. Pii V Papæ et Confessoris;;Duplex;;3;;vide C4
 
+[Rank] (rubrica innovata)
+S. Pii V Papae et Confessoris;;Duplex optional;;2;;vide C4
+
 [Rule]
 vide C4;mtv
 9 lectiones
+
+[Ant 1]
+@Commune/C4
 
 [Oratio]
 Deus, qui, ad conteréndos Ecclésiæ tuæ hostes et ad divínum cultum reparándum, beátum Pium Pontíficem Máximum elígere dignátus es: fac nos ipsíus deféndi præsídiis et ita tuis inhærére obséquiis; ut, ómnium hóstium superátis insídiis, perpétua pace lætémur.
@@ -18,6 +24,10 @@ A Paulo quarto, cui ob exímias virtútes caríssimus erat, ad Nepesínum et Sut
 [Lectio6]
 Selímum Turcárum tyrannum multis elátum victoriis, ingénti comparáta classe, ad Echínadas ínsulas non tam armis quam fusis ad Deum precibus devicit. Quam victoriam ea ipsa hora, qua obténta fuit, Deo revelante, cognóvit suisque familiaribus indicávit. Dum vero novam in ipsos Turcas expeditiónem molirétur, in gravem morbum incidit; et, acerbíssimis dolóribus patientíssime tolerátis, ad extrema deveniens, cum sacraménta de more suscepísset, ánimam Deo placidíssime réddidit, anno millesimo quingentésimo septuagesimo secundo, ætátis suæ sexagesimo octavo, cum sedísset annos sex, menses tres, dies viginti quatuor. Corpus ejus in basilica sanctæ Maríæ ad Præsépe summa fidelium veneratióne colitur, multis a Deo ejus intercessióne patrátis miraculis. Quibus rite probátis, a Cleménte undecimo, Pontifice máximo, Sanctórum número adscriptus est.
 
+[Lectio94]
+Pius, Boschi in Insúbria natus, cum quatuórdecim esset annórum, órdinem Prædicatórum ingréssus est. Sacerdótio auctus, sacras conciónes plúribus in locis cum ingénti animárum fructu hábuit. Inquisitóris offícium diu fórtiter ac laudabíliter sustínuit, et a Paulo quarto ad Nepesínum et Sutrínum episcopátum promótus, post biénnium inter patres cardináles adscríptus est. A Pio quarto translátus ad ecclésiam Montis Regális in Subalpínis, diœcésim vísitans, abúsus représsit; et Romam revérsus, in gravíssimis negótiis expediéndis fuit occupátus. Mórtuo autem Pio, præter ómnium exspectatiónem eléctus Póntifex, nihil in vitæ ratióne, excépto exterióri hábitu, immutávit. Selímum Turcárum tyránnum, ingénti comparáta classe, ad Echínadas ínsulas non tam armis quam fusis précibus devícit. Dum vero novam in ipsos Turcas expeditiónem paráret, piíssime óbiit in Dómino, anno millésimo quingentésimo septuagésimo secúndo, ætátis suæ sexagésimo octávo. Corpus ejus in basílica sanctæ Maríæ majóris summa fidélium veneratióne cólitur. Eum Clemens Papa undécimus catálogo Sanctórum adscrípsit.
+&teDeum
+
 [Lectio7]
 @Commune/C4:Lectio7 in 2 loco
 
@@ -27,17 +37,8 @@ Selímum Turcárum tyrannum multis elátum victoriis, ingénti comparáta classe
 [Lectio9]
 @Commune/C4:Lectio9 in 2 loco
 
-[Lectio94]
-Pius, Boschi in Insúbria natus, cum quatuórdecim esset annórum, órdinem Prædicatórum ingréssus est. Sacerdótio auctus, sacras conciónes plúribus in locis cum ingénti animárum fructu hábuit. Inquisitóris offícium diu fórtiter ac laudabíliter sustínuit, et a Paulo quarto ad Nepesínum et Sutrínum episcopátum promótus, post biénnium inter patres cardináles adscríptus est. A Pio quarto translátus ad ecclésiam Montis Regális in Subalpínis, diœcésim vísitans, abúsus représsit; et Romam revérsus, in gravíssimis negótiis expediéndis fuit occupátus. Mórtuo autem Pio, præter ómnium exspectatiónem eléctus Póntifex, nihil in vitæ ratióne, excépto exterióri hábitu, immutávit. Selímum Turcárum tyránnum, ingénti comparáta classe, ad Echínadas ínsulas non tam armis quam fusis précibus devícit. Dum vero novam in ipsos Turcas expeditiónem paráret, piíssime óbiit in Dómino, anno millésimo quingentésimo septuagésimo secúndo, ætátis suæ sexagésimo octávo. Corpus ejus in basílica sanctæ Maríæ majóris summa fidélium veneratióne cólitur. Eum Clemens Papa undécimus catálogo Sanctórum adscrípsit.
-&teDeum
-
-[Ant 1]
-@Commune/C4
-
 [Versum 0]
 @Commune/C2::s/N\./Pie/
 
-
 [Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
 @Commune/C4:Ant 3 summi Pontificis
-

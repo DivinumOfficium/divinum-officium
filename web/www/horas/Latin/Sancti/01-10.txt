@@ -13,6 +13,9 @@ Feria Te Deum
 (rubrica divino aut rubrica tridentina aut rubrica monastica) CPapaM=Hygínum;
 Infra octavam Epiphaniæ Domini
 
+[Ant 1]
+@Sancti/01-09:Ant 3
+
 [Lectio1]
 De Epístola ad Romános
 !Rom 14:1-4
@@ -24,18 +27,15 @@ De Epístola ad Romános
 [Responsory1]
 @Sancti/01-06:Responsory1InfraOctavam
 
-[Responsory2]
-@Sancti/01-06:Responsory2
-
-[Responsory3]
-@Sancti/01-06:Responsory3
-
 [Lectio2]
 !Rom 14:5-8
 5 Nam álius júdicat diem inter diem, álius autem júdicat omnem diem: unusquísque in suo sensu abúndet. 
 6 Qui sapit diem, Dómino sapit. Et qui mandúcat, Dómino mandúcat: grátias enim agit Deo. Et qui non mandúcat, Dómino non mandúcat, et grátias agit Deo. 
 7 Nemo enim nostrum sibi vivit, et nemo sibi móritur. 
 8 Sive enim vívimus, Dómino vívimus: sive mórimur, Dómino mórimur. Sive ergo vívimus, sive mórimur, Dómini sumus.
+
+[Responsory2]
+@Sancti/01-06:Responsory2
 
 [Lectio3]
 !Rom 14:9-13
@@ -44,6 +44,9 @@ De Epístola ad Romános
 11 Scriptum est enim: Vivo ego, dicit Dóminus, quóniam mihi flectétur omne genu: et omnis lingua confitébitur Deo. 
 12 Itaque unusquísque nostrum pro se ratiónem reddet Deo. 
 13 Non ergo ámplius ínvicem judicémus.
+
+[Responsory3]
+@Sancti/01-06:Responsory3
 
 [Lectio4]
 Sermo sancti Máximi Epíscopi
@@ -77,6 +80,3 @@ Omnes natiónes * vénient a longe, portántes múnera sua, allelúja.
 
 [Ant 3]
 Omnes de Saba * vénient, aurum et thus deferéntes, allelúja, allelúja.
-
-[Ant 1]
-@Sancti/01-09:Ant 3

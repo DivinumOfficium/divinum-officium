@@ -1,10 +1,6 @@
 [Rank]
 S. Gregorii VII Papæ et Confessoris;;Duplex;;3;;vide C4
 
-[Rule]
-vide C4;
-9 lectiones
-
 [Oratio]
 @Sancti/05-25
 
@@ -28,6 +24,9 @@ $Per Dominum.
 [Lectio6]
 @Sancti/05-25
 
+[Lectio94]
+@Sancti/05-25
+
 [Lectio93]
 @Sancti/05-25o
 
@@ -41,6 +40,3 @@ _
 $Oremus.
 Faites, nous Vous en prions, Dieu tout-puissant, que, nou qui célébrons la fête de Votre bienheureux Martyr et Pontife Urbain, nous recevions l’assistance de son intercession.
 $Per Dominum.
-
-[Lectio94]
-@Sancti/05-25

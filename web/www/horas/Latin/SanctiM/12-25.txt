@@ -14,16 +14,13 @@ R. Hódie sciétis * Quia véniet Dóminus.
 [Responsory Vespera]
 @:Responsory Tertia:s/._.*//s
 
-[Responsory Laudes]
-@:Responsory Tertia:s/._.*//s
-
-[Ant Matutinum 3N]
-Párvulus * fílius hódie natus est nobis: † et vocábitur Deus, Fortis, allelúja, allelúja.
-
 [AntMatutinumM]
 Elevámini, * portæ æternáles, † et introíbit Rex glóriæ.;;23
 In princípio * et ante sǽcula Deus erat Verbum: † ipse natus est nobis Salvátor mundi.;;96
 Nato * Dómino Angelórum chorus canébat, dicens: Salus Deo nostro, allelúja.;;98
+
+[Ant Matutinum 3N]
+Párvulus * fílius hódie natus est nobis: † et vocábitur Deus, Fortis, allelúja, allelúja.
 
 [Ant Matutinum]
 @Sancti/12-25::1-2
@@ -118,6 +115,12 @@ R. Hoc erat in princípio apud Deum.
 [Responsory12]
 @Sancti/12-25:Responsory8
 
+[LectioE]
+@Sancti/09-08
+
+[Responsory Laudes]
+@:Responsory Tertia:s/._.*//s
+
 [Responsory TertiaM]
 @Sancti/12-25:Responsory Nona:s/.*_.//s
 
@@ -129,6 +132,3 @@ R. Hoc erat in princípio apud Deum.
 
 [Ant Vespera 3]
 @Sancti/12-25::s/.*;;131//
-
-[LectioE]
-@Sancti/09-08

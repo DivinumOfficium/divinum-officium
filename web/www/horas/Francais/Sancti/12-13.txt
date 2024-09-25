@@ -1,16 +1,5 @@
 [Rank]
-Ste Lucie Vierge et Martyre;;Duplex;;3;;vide C6b
-
-[Rule]
-vide C6b ;
-9 lectiones ;
-Doxology=Nat
-Commemoratio3
-
-[Rule] (rubrica 1570)
-vide C6b ;
-9 lectiones ;
-Commemoratio3
+Ste Lucie Vierge et Martyre;;Duplex;;3;;vide C6
 
 [Ant Vespera]
 Sainte Lucie étant en prière, * la bienheureuse Agathe lui apparut, pour consoler la servante du Christ.;;109
@@ -23,12 +12,7 @@ Ma sœur Lucie, * vierge consacrée à Dieu, pourquoi me demandez-vous ce que vo
 Dans votre patience * vous avez possédé votre âme, Lucie, épouse du Christ : vous avez haï ce qui est dans le monde, et vous brillez avec les Anges ; par votre propre sang, vous avez vaincu l’ennemi.
 
 [Oratio]
-v. Exaucez-nous, ô Dieu, notre Sauveur : en sorte que, tout en nous donnant la joie, la fête de la bienheureuse Lucie, votre Vierge et Martyre, nous instruise par le sentiment d’une pieuse dévotion.
-$Per Dominum
-
-[Commemoratio 2] (rubrica 1910 aut rubrica divino)
-!Commémoraison dans l'Octave de L’immaculée Conception de la B.V.Marie
-@Sancti/12-08:Oratio
+@Commune/C7a::s/N\./Lucie, votre Vierge et Martyre/
 
 [Lectio4]
 Lucie, vierge de Syracuse, noble dès son enfance, par sa famille et sa foi chrétienne, vint à Catane, avec sa mère Eutychia qui souffrait d’iin flux de sang., pour vénérer le corps de la bienheureuse Agathe. Après avoir prié avec ferveur près de son tombeau, elle obtint, par l’intercession d’Agathe, la santé de sa mère. Aussitôt elle supplia celle-ci de souffrir qu’elle distribuât aux pauvres du Christ la dot qu’elle devait lui donner. C’est pourquoi, dès son retour à Syracuse, elle distribua aux pauvres tout l’argent qu’elle avait recueilli de la vente de ses biens.
@@ -62,26 +46,12 @@ R. Et le Seigneur de toutes choses l’a aimée.
 [Lectio94]
 Lucie, vierge de Syracuse, noble par sa famille et sa foi chrétienne, obtint, à Catane, près du tombeau de la bienheureuse Agathe, la guérison d’Eutychia sa mère, qui souffrait d’un flux de sang. Bientôt elle distribua aux pauvres tous les biens qu’elle devait recevoir en dot et qu’elle avait obtenus de sa mère. C’est pourquoi, elle fut accusée d’être chrétienne, près du préfet Paschasius. On ne put l’amener ni par des flatteries ni par des menaces, à sacrifier aux idoles. Alors Paschasius, enflammé de colère, ordonna d’entraîner Lucie là où sa virginité serait violée ; mais, par la puissance divine, il arriva que la vierge demeura tellement fixée où elle était, qu’aucune force ne put l’en déplacer. Le préfet alors commanda qu’on allumât du feu tout autour d’elle ; mais comme la flamme elle-même ne lui faisait pas de mal, après de nombreux tourments, on lui transperça la gorge, avec un glaive. Cette blessure reçue, Lucie prédit la tranquillité de l’Église, qui arriverait à la mort de Dioclétien et de Maximien, et rendit son âme à Dieu, au jour des Ides de Décembre. Son corps, enseveli à Syracuse, fut ensuite transporté à Constantinople et enfin à Venise.
 
-[Lectio7]
-@Commune/C7:Lectio7
-
-[Responsory7]
-@Commune/C6:Responsory4
-
-[Lectio8]
-@Commune/C7:Lectio8
-
-[Responsory8]
-@Commune/C6:Responsory5
-
-[Lectio9]
-@Commune/C7:Lectio9
-
-[Ant Laudes]
-@:Ant Vespera :s/;;.*//g
-
 [Ant 2]
 Vous êtes une colonne * immobile, Lucie, épouse du Christ, et tout le peuple attend que vous receviez la couronne de vie, aîléluia.
+
+[Commemoratio 2] (rubrica 1888 aut rubrica divino)
+!Commémoraison dans l'Octave de L’immaculée Conception de la B.V.Marie
+@Sancti/12-08:Oratio
 
 [Ant 3]
 L’Esprit-Saint la fixa * sur place, avec un tel poids, que la Vierge du Christ demeura immobile.

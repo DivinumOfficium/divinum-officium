@@ -1,17 +1,47 @@
 [Name]
 In Festis Beatae Mariae Virginis
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-
-[Ant Vespera]
-While the King sitteth at his table, * my spikenard sendeth forth the smell thereof.;;109
+[Ant VesperaBMV]
 His left hand is under my head, * and his right hand doth embrace me.;;112
-I am black but comely, * O ye daughters of Jerusalem. Therefore the King hath loved me, and brought me into his chamber.;;121
-Lo the winter is past, * the rain is over and gone. Rise up, my love, and come away.;;126
 O Holy Mother of God, thou art become beautiful * and gentle in thy gladness.;;147
+
+[Hymnus Vespera]
+/:The first verse of the following hymn is said genuflecting.:/
+v. Ave, star of ocean,
+Child divine who barest,
+Mother, ever-Virgin,
+Heaven's portal fairest.
+_
+Taking that sweet Ave
+Erst by Gabriel spoken,
+Eva's name reversing,
+Be of peace the token.
+_
+Break the sinners' fetters,
+Light to blind restoring,
+All our ills dispelling,
+Every boon imploring.
+_
+Show thyself a mother
+In thy supplication;
+He will hear who chose thee
+At his incarnation.
+_
+Maid all maids excelling,
+Passing meek and lowly,
+Win for sinners pardon,
+Make us chaste and holy.
+_
+As we onward journey
+Aid our weak endeavour,
+Till we gaze on Jesus
+And rejoice forever.
+_
+Father, Son, and Spirit,
+Three in One confessing,
+Give we equal glory
+Equal praise and blessing.
+Amen.
 
 [Versum 1]
 V. Holy Virgin, my praise by thee accepted be.
@@ -50,22 +80,14 @@ All glory, as is ever meet,
 To Father and to Paraclete.
 Amen.
 
-[Ant Matutinum]
+[Ant MatutinumBMV]
 Blessed art thou among women, * and blessed is the fruit of thy womb.;;8
 O Holy Mother of God * thou hast yielded a pleasant odor like the best myrrh.;;18
 Sing for us again and again before this maiden's bed * the tender idylls of the play.;;23
-V. In thy comeliness and thy beauty.
-R. Go forward, fare prosperously, and reign.
-In thy comeliness and thy beauty, * go forward, fare prosperously, and reign.;;44
-God shall give her the help of His countenance; * God is in the midst of her, she shall not be moved.;;45
 O Holy Mother of God * all we who dwell in thee are in gladness.;;86
-V. God shall help her with his strength.
-R. God is in the midst of her, she shall not be moved.
 Joy to thee, * O Virgin Mary, thou hast trampled down all the heresies in the whole world.;;95
 Holy Virgin, my praise by thee accepted be; * give me strength against thine enemies.;;96
 After thy delivery thou still remainest a virgin; * undefiled Mother of God, pray for us.;;97
-V. God hath chosen her and fore-chosen her.
-R. He hath made her to dwell in His tabernacle.
 
 [Lectio1]
 Lesson from the book of Proverbs
@@ -180,8 +202,48 @@ R. He that is mighty, even the Lord, hath done to me great things; and Holy is H
 Yea, rather, blessed are they that hear the Word of God and keep it. How nobly doth the Saviour say “Yea” to the woman's blessing, declaring also that not only is she blessed who was meet to give bodily birth to the Word of God, but that all they who spiritually conceive the same Word by the hearing of faith, and, by keeping it through good works, bring it forth and, as it were, carefully nurse it, in their own hearts, and in the hearts of their neighbours, are also blessed. Yea, and that the very Mother of God herself was blessed in being for a while the handmaid of the Word of God made Flesh, but that she was much more blessed in this, that through her love she keepeth Him for ever.
 &teDeum
 
+[Capitulum Laudes]
+!Sir 24:14
+v. From the beginning, and before the world, was I created, and unto the world to come I shall not cease to be, and in the holy dwelling place I have ministered before him.
+$Deo gratias.
+
+[Hymnus Laudes]
+v. O glorious lady! throned on high
+Above the star-illumined sky;
+Thereto ordained, thy bosom lent
+To thy Creator nourishment.
+_
+Through thy sweet offspring we receive
+The bliss once lost through hapless Eve;
+And heaven to mortals open lies
+Now thou art portal of the skies.
+_
+Thou art the door of heaven's high King,
+Light's gateway fair and glistering;
+Life through a Virgin is restored;
+Ye ransomed nations, praise the Lord!
+_
+All honour, laud, and glory be,
+O Jesu, Virgin-born, to thee;
+All glory, as is ever meet,
+To Father and to Paraclete.
+Amen.
+
 [Ant 2]
 O Mary * blessed art thou that didst believe! for there shall be a performance of those things which were told thee from the Lord. Alleluia.
+
+[Oratio]
+Grant, we beseech thee, O Lord God, unto all thy servants, that they may remain continually in the enjoyment of soundness both of mind and body, and by the glorious intercession of the Blessed Mary, always a Virgin, may be delivered from present sadness, and enter into the joy of thine eternal gladness.
+$Per Dominum
+
+[Lectio Prima]
+!Sir 24:19-20
+v. As a plane tree by the water in the streets, I gave a sweet smell like cinnamon. and aromatical balm: I yielded a sweet odour like the best myrrh.
+
+[Capitulum Sexta]
+!Sir 24:15-16
+v. And so was I established in Sion, and in the holy city likewise I rested, and my power was in Jerusalem. And I took root in an honourable people, and in the portion of my God his inheritance, and my abode is in the full assembly of saints.
+$Deo gratias.
 
 [Ant 3]
 All generations shall call me blessed, * for God hath regarded the lowliness of His hand-maiden.

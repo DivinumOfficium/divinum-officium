@@ -1,7 +1,7 @@
 [Rank]
 S. Marthae Virginis;;Semiduplex;;2;;vide C6
 
-[Rank1960]
+[Rank] (rubrica 196)
 S. Marthae Virginis;;Semiduplex;;3;;vide C6
 
 [Rule]
@@ -22,48 +22,10 @@ Wspomnienie śś. Feliksa, Symplicjusza, Faustyna i Beatryczy, Męczenników
 
 Msza wspólna nr 14 Sapientiam, z wyjątkiem kolekty, sekrety i pokomunii
 
-
-[Introitus]
-@Commune/C6b:Introitus
-
-[Oratio]
-Wysłuchaj nas, Boże, nasz Zbawicielu, i spraw, abyśmy radując się z uroczystości świętej Twojej Dziewicy Marty, nabyli uczucia synowskiego oddania.
-$Per Dominum
-
-[Lectio]
-@Commune/C6b:Lectio
-
-[Graduale]
-@Commune/C6b:Graduale
-
 [Evangelium]
 Ciąg dalszy ++ Ewangelii świętej według Łukasza.
 !Łk 10:38-42
 Onego czasu: Jezus wszedł do jednej osady, a niewiasta pewna imieniem Marta przyjęła Go w domu swoim. A ta miała siostrę imieniem Maria, która też siedząc u stóp Pana, słuchała słowa Jego. Marta zaś krzątała się koło różnych posług, a zatrzymując się rzekła: «Panie, czyż nie ma to dla Ciebie znaczenia, że siostra moja zostawiła mię, abym sama posługiwała? Powiedz jej przeto, aby mi pomogła». A odpowiadając rzekł jej Pan: «Marto, Marto, o bardzo wiele rzeczy troszczysz się i kłopoczesz, a przecież jednej tylko potrzeba. Maria najlepszą cząstkę obrała, która jej nie będzie odjęta».
 
-[Offertorium]
-@Commune/C6b:Offertorium
-
-[Secreta]
-@Commune/C6b:Secreta
-
-[Communio]
-@Commune/C6b:Communio
-
-[Postcommunio]
-@Commune/C6b:Postcommunio
-
-[Commemoratio Oratio]
-! Wspomnienie śś. Feliksa, Symplicjusza, Faustyna i Beatryczy
-Prosimy Cię, Panie, aby lud chrześcijański, radując się z doczesnej uroczystości Męczenników Twoich Feliksa, Symplicjusza, Faustyna i Beatryczy, uczestniczył w ich radości wiecznej, a co teraz sławi modlitwą, niech otrzyma w rzeczywistości.
-$Per Dominum
-
-[Commemoratio Secreta]
-! Wspomnienie śś. Feliksa, Symplicjusza, Faustyna i Beatryczy
-Składamy Tobie, Panie, ofiary ku uczczeniu pamięci świętych Męczenników Twoich Feliksa, Symplicjusza, Faustyna i Beatryczy, kornie błagając, aby one wyjednały nam przebaczenie i zbawienie.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! Wspomnienie śś. Feliksa, Symplicjusza, Faustyna i Beatryczy
-Prosimy Cię, wszechmogący Boże, aby uroczystość świętych Męczenników Twoich Feliksa, Symplicjusza, Faustyna i Beatryczy, obchodzona przez sprawowanie niebieskich misteriów, wyjednała nam Twe łaskawe przebaczenie.
-$Per Dominum
+[Oratio]
+@Commune/C6b::s/N\./Marty/

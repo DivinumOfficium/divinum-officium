@@ -6,33 +6,36 @@ Septem Dolorum Beatæ Mariæ Virginis;;Duplex;;3
 [Rule]
 Psalmi Dominica
 
+[Responsory Vespera]
+@Sancti/09-15:Responsory Nona:s/._.*//s
+
+[Hymnus Vespera]
+@:Hymnus Laudes
+
 [Doxology]
 @Tempora/Quad5-5::s/Jesu, tibi sit glória/Glória tibi, Dómine/
 
-[Responsory Vespera]
-@Sancti/09-15:Responsory Nona:s/._.*//s
+[Commemoratio]
+
+
+[Responsory1]
+@Sancti/09-15:Responsory8
 
 [Lectio94]
 @Tempora/Quad5-5:Lectio4:s/$/~/
 @Tempora/Quad5-5:Lectio6:s/Sed .*//s
-
-[Responsory1]
-@Sancti/09-15:Responsory8
 
 [MM Capitulum]
 @Sancti/09-15:Capitulum Sexta
 _
 @Sancti/09-15:Responsory Sexta:s/.*_//s
 
-[Hymnus Laudes]
-@Sancti/09-15::1-15
-@:Doxology
-
 [Responsory Laudes]
 @Sancti/09-15:Responsory Sexta:s/._.*//s
 
-[Commemoratio]
-
+[Hymnus Laudes]
+@Sancti/09-15::1-15
+@:Doxology
 
 [Responsory TertiaM]
 @Sancti/09-15:Responsory Tertia:s/.*_.//s
@@ -42,6 +45,3 @@ _
 
 [Responsory NonaM]
 @Sancti/09-15:Responsory Nona:s/.*_.//s
-
-[Hymnus Vespera]
-@:Hymnus Laudes

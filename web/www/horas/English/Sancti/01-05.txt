@@ -1,23 +1,18 @@
 [Rank]
 In Vigilia Epiphaniae;;Semiduplex;;5;;ex Sancti/01-01
 
-[Rank] (rubrica 1570)
-In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
-
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
 
-[Rule]
-ex Sancti/01-01;
-9 lectiones
-Psalmi Dominica
-Omit preces
-Feria Te Deum
-CPapaM=Telesphorus;
+[Rank] (rubrica tridentina)
+In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
 
 [Commemoratio]
 !Commemoration of St. Telesphorus Pope and Martyr
 @Commune/C2:Oratio1 Gregem
+
+[Lectio1] (rubrica tridentina)
+@Sancti/01-04
 
 [Lectio1]
 Lesson from the letter of St. Paul the Apostle to the Romans
@@ -27,7 +22,7 @@ Lesson from the letter of St. Paul the Apostle to the Romans
 3 For what the law could not do, in that it was weak through the flesh; God sending his own Son, in the likeness of sinful flesh and of sin, hath condemned sin in the flesh;
 4 That the justification of the law might be fulfilled in us, who walk not according to the flesh, but according to the spirit.
 
-[Lectio1] (rubrica tridentina)
+[Lectio2] (rubrica tridentina)
 @Sancti/01-04
 
 [Lectio2]
@@ -38,7 +33,7 @@ Lesson from the letter of St. Paul the Apostle to the Romans
 8 And they who are in the flesh, cannot please God.
 9 But you are not in the flesh, but in the spirit, if so be that the Spirit of God dwell in you.
 
-[Lectio2] (rubrica tridentina)
+[Lectio3] (rubrica tridentina)
 @Sancti/01-04
 
 [Lectio3]
@@ -46,9 +41,6 @@ Lesson from the letter of St. Paul the Apostle to the Romans
 9 Now if any man have not the Spirit of Christ, he is none of his.
 10 And if Christ be in you, the body indeed is dead, because of sin; but the spirit liveth, because of justification.
 11 And if the Spirit of him that raised up Jesus from the dead, dwell in you; he that raised up Jesus Christ from the dead, shall quicken also your mortal bodies, because of his Spirit that dwelleth in you.
-
-[Lectio3] (rubrica tridentina)
-@Sancti/01-04
 
 [Lectio4]
 A sermon of St. Augustine, Bishop.
@@ -64,35 +56,15 @@ O my brethren, what a miracle! what a wonder! The laws of nature are changed con
 [Lectio7]
 From the Holy Gospel according to Matthew
 !Matt 2:19-23
-In that time: When Herod was dead, behold an angel of the Lord appeared in sleep~
-to Joseph in Egypt, Saying: Arise, and take the child and his mother, and go~
-into the land of Israel. And so on.
+In that time: When Herod was dead, behold an angel of the Lord appeared in sleep to Joseph in Egypt, Saying: Arise, and take the child and his mother, and go into the land of Israel. And so on.
 _
 Homily by St. Jerome, Priest (at Bethlehem.)
 !Bk. i., Comm. on Matth. ii.
-From the words, they are dead, (in the Plural), which are used in this passage~
-of the Gospel, we may understand that there were others beside Herod which~
-sought the young Child's life probably the Priests and Scribes. And he Joseph~
-arose, and took the young Child and His Mother. It is not written, He took his~
-wife and child, but he took the young Child and His Mother; whence it is clear~
-that the holy Evangelist willeth to imply that Joseph was not the father, but~
-the Guardian of Jesus, not the husband, but the Betrothed of Mary.
+From the words, they are dead, (in the Plural), which are used in this passage of the Gospel, we may understand that there were others beside Herod which sought the young Child's life probably the Priests and Scribes. And he Joseph arose, and took the young Child and His Mother. It is not written, He took his wife and child, but he took the young Child and His Mother; whence it is clear that the holy Evangelist willeth to imply that Joseph was not the father, but the Guardian of Jesus, not the husband, but the Betrothed of Mary.
 
 [Lectio8]
- But when he heard that Archelaus did reign in Judea, in the room of his father~
-Herod, he was afraid to go thither. There are some persons so grossly ignorant~
-of history that they confuse themselves over the two Herods, as if the one~
-mentioned here were the same who afterwards set our Lord at nought during His~
-Passion, and they cannot understand how he should now be said to be dead. The~
-Herod who was made friends with Pilate over Christ's death, was the son of the~
-Herod who massacred the infants of Bethlehem, and the brother of Archelaus.
+ But when he heard that Archelaus did reign in Judea, in the room of his father Herod, he was afraid to go thither. There are some persons so grossly ignorant of history that they confuse themselves over the two Herods, as if the one mentioned here were the same who afterwards set our Lord at nought during His Passion, and they cannot understand how he should now be said to be dead. The Herod who was made friends with Pilate over Christ's death, was the son of the Herod who massacred the infants of Bethlehem, and the brother of Archelaus.
 
 [Lectio9]
-He shall be called a Nazarene. The Evangelist, in quoting these words, saith~
-that they were spoken by the Prophets, (Plural). If he had been citing any one~
-precise passage he would have said by the Prophet, in the Singular. But he is~
-citing the sense of the Prophets, and not any individual passage in any of their~
-writings. He seemeth to refer to the fact that in Hebrew the word Nazarene~
-signifieth holy, and that Christ is the Holy One of God is the common~
-declaration of all the Scriptures.
+He shall be called a Nazarene. The Evangelist, in quoting these words, saith that they were spoken by the Prophets, (Plural). If he had been citing any one precise passage he would have said by the Prophet, in the Singular. But he is citing the sense of the Prophets, and not any individual passage in any of their writings. He seemeth to refer to the fact that in Hebrew the word Nazarene signifieth holy, and that Christ is the Holy One of God is the common declaration of all the Scriptures.
 &teDeum

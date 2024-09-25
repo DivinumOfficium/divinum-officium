@@ -1,12 +1,15 @@
 [Rank]
 S. Apollinaris Episcopi et Martyris;;Duplex;;3;;vide C2
 
-[Rule]
-vide C2;
-9 lectiones;
-
 [Oratio]
 Oh Dios, remunerador de las almas fieles, que consagraste este día con el martirio del bienaventurado Apolinar, sacerdote tuyo, te rogamos nos concedas a nosotros, siervos tuyos, que consigamos el perdón por las preces de aquel cuya veneranda festividad celebramos.
+$Per Dominum
+
+[Commemoratio Sabbat]
+!Conmemoración de S. Liborio, Obispo y Confesor
+@Commune/C4:Oratio proper
+$Oremus
+v. Te pedimos, Dios todopoderoso, que al celebrar la fiesta de San Liborio, obispo, aumente nuestro celo por servirte, y crezca en nosotros tu obra de salvación.
 $Per Dominum
 
 [Commemoratio]
@@ -16,13 +19,6 @@ $Oremus
 v. Te pedimos, Dios todopoderoso, que al celebrar la fiesta de San Liborio, obispo, aumente nuestro celo por servirte, y crezca en nosotros tu obra de salvación.
 $Per Dominum.
 
-[Commemoratio Sabbat]
-!Conmemoración de S. Liborio, Obispo y Confesor
-@Commune/C4:Oratio proper
-$Oremus
-v. Te pedimos, Dios todopoderoso, que al celebrar la fiesta de San Liborio, obispo, aumente nuestro celo por servirte, y crezca en nosotros tu obra de salvación.
-$Per Dominum
-
 [Lectio4]
 Apolinar se trasladó a Roma desde Antioquía, junto con San Pedro, el cual le ordenó Obispo y le envió a Ravena para predicar el Evangelio de nuestro Señor Jesucristo. Como convirtiera en esta ciudad a muchas almas a la fe cristiana, fue detenido por los sacerdotes de los ídolos y golpeado cruelmente. Merced a sus oraciones, un noble personaje, Bonifacio, mudo desde largo tiempo, recobró el habla, y una hija suya fue librada de un espíritu inmundo: estos milagros promovieron una nueva sedición contra el Santo. Le azotaron con varas y le obligaron a andar descalzo sobre carbones encendidos; mas viendo que el fuego de estos carbones no le quemaba, le expulsaron de la ciudad.
 
@@ -31,6 +27,10 @@ Permanació oculto algún tiempo entre algunos cristianos, y luego se marchó a 
 
 [Lectio6]
 Durante la permanencia en aquel país, el demonio se negó a dar respuestas en el templo de Serapis. Buscaron entonces a Apolinar, y habiéndolo encontrado, obligáronle de nuevo a embarcarse. Regresó a Ravena, en donde los mismos sacerdotes de los ídolos le volvieron a acusar, y le pusieron bajo la custodia de un centurión. Mas éste, que adoraba en secreto a Jesucristo, facilitó de noche su evasión. Al enterarse los satélites, salieron en busca suya, le hirieron y lo dejaron por muerto en el camino. Recogido por los cristianos, les exhortó a perseverar en la fe, muriendo siete días después, coronado con la gloria del martirio. Su cuerpo fue sepultado cerca de las murallas de la ciudad.
+
+[Lectio94]
+Apolinar vino de Antioquía a Roma con San Pedro, quien lo ordenó como obispo y lo envió a Rávena a predicar el Evangelio de Jesucristo. Cuando Apolinar había convertido a muchos paganos a la fe en Cristo, fue capturado por los sacerdotes de los ídolos y golpeado severamente. Cuando sus oraciones devolvieron la palabra a un noble llamado Bonifacio que había estado mudo durante mucho tiempo, y liberó a su hija de un espíritu inmundo, se volvió a levantar una conmoción contra Apolinar, y sufrió muchos tipos de tormentos. Luego, predicando el Evangelio por toda Emilia, alejó a muchas personas de la idolatría. Volvió a Ravena, exhortó a los cristianos a la constancia en la fe y murió la gloriosa muerte de un mártir. Su cuerpo fue enterrado cerca de la muralla de la ciudad.
+&teDeum
 
 [Lectio7]
 Lectura del Santo Evangelio según San Lucas
@@ -46,10 +46,6 @@ Porque no se nos ha prometido como recompensa comer y beber, sino la comunicaci�
 
 [Lectio9]
 Convirtámonos, y procuremos que no haya entre nosotros, para perdición, disputas sobre los primeros lugares. La que sostuvieron los Apóstoles sobre esto, no se narra para que nos sirva de excusa sino para que estemos sobre aviso. Si Pedro no se convirtió del todo hasta el fin, a pesar de haber seguido al Señor ya desde el principio, ¿quién podrá jactarse de una conversión total realizada rápidamente? Huyamos, pues, de la jactancia, y del mundo. El Apóstol que dijo: “He aquí que lo hemos dejado todo y os hemos seguido”, recibió la orden de dejar a sus hermanos.
-&teDeum
-
-[Lectio94]
-Apolinar vino de Antioquía a Roma con San Pedro, quien lo ordenó como obispo y lo envió a Rávena a predicar el Evangelio de Jesucristo. Cuando Apolinar había convertido a muchos paganos a la fe en Cristo, fue capturado por los sacerdotes de los ídolos y golpeado severamente. Cuando sus oraciones devolvieron la palabra a un noble llamado Bonifacio que había estado mudo durante mucho tiempo, y liberó a su hija de un espíritu inmundo, se volvió a levantar una conmoción contra Apolinar, y sufrió muchos tipos de tormentos. Luego, predicando el Evangelio por toda Emilia, alejó a muchas personas de la idolatría. Volvió a Ravena, exhortó a los cristianos a la constancia en la fe y murió la gloriosa muerte de un mártir. Su cuerpo fue enterrado cerca de la muralla de la ciudad.
 &teDeum
 
 [Commemoratio 3] (rubrica divino aut rubrica tridentina)

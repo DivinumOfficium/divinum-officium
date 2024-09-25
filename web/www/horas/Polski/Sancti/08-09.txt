@@ -1,9 +1,10 @@
 [Rank]
 Św. Jana Marji Vianney Wyznawcy;;Duplex;;3;;vide C5
 
-[Rule]
-vide C5;mtv
-9 lectiones
+[Oratio Vigilia]
+!Wspominamy Wigilję Św. Wawrzyńca Męczennika
+Usłysz, Panie, wołania nasze i za wstawiennictwem błogosławionego Męczennika Twego Wawrzyńca, którego uroczystość uprzedzamy, okaż nam w swej dobroci miłosierdzie na wieki.
+$Per Dominum
 
 [Commemoratio 1]
 !Wspominamy Św. Romana Męczennika
@@ -12,11 +13,11 @@ $Oremus
 Spraw, prosimy, wszechmogący Boże, niech przyczyna błogosławionego Romana, Męczennika Twego, wyzwoli ciało nasze od wszelkich przeciwności, a duszę od złych myśli oczyści.
 $Per Dominum.
 
-[Lectio Vigilia]
+[Lectio93]
 !Wspominamy Wigilję Św. Wawrzyńca Męczennika
 @Sancti/08-09t:Lectio1
 
-[Lectio93]
+[Lectio Vigilia]
 !Wspominamy Wigilję Św. Wawrzyńca Męczennika
 @Sancti/08-09t:Lectio1
 
@@ -26,8 +27,3 @@ $Per Dominum.
 $Oremus
 Spraw, prosimy, wszechmogący Boże, niech przyczyna błogosławionego Romana, Męczennika Twego, wyzwoli ciało nasze od wszelkich przeciwności, a duszę od złych myśli oczyści.
 $Per Dominum.
-
-[Oratio Vigilia]
-!Wspominamy Wigilję Św. Wawrzyńca Męczennika
-Usłysz, Panie, wołania nasze i za wstawiennictwem błogosławionego Męczennika Twego Wawrzyńca, którego uroczystość uprzedzamy, okaż nam w swej dobroci miłosierdzie na wieki.
-$Per Dominum

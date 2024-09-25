@@ -18,9 +18,6 @@ Apértis thesáuris suis * obtulérunt Magi Dómino aurum, thus, et myrrham, all
 Mária et flúmina * benedícite Dómino: hymnum dícite fontes Dómino, allelúja.
 Stella ista * sicut flamma corúscat, et Regem regum Deum demónstrat: Magi eam vidérunt, et magno Regi múnera obtulérunt.
 
-[HymnusM Vespera]
-@:Hymnus Vespera:s/Crudélis Heródes, Deum.Regem/Hostis Heródes ímpie,\nChristum/s
-
 [Hymnus Vespera]
 {:H-CrudelisHerodes:}v. Crudélis Heródes, Deum
 Regem veníre quid times?
@@ -48,6 +45,9 @@ Cum Patre, et almo Spíritu,
 In sempitérna sǽcula.
 Amen.
 
+[HymnusM Vespera]
+@:Hymnus Vespera:s/Crudélis Heródes, Deum.Regem/Hostis Heródes ímpie,\nChristum/s
+
 [Versum 1]
 V. Reges Tharsis et ínsulæ múnera ófferent.
 R. Reges Arabum et Saba dona addúcent.
@@ -59,11 +59,11 @@ Magi vidéntes * stellam, dixérunt ad ínvicem: Hoc signum magni Regis est: eá
 Deus, qui hodiérna die Unigénitum tuum géntibus stella duce revelásti: concéde propítius; ut qui jam te ex fide cognóvimus, usque ad contemplándam spéciem tuæ celsitúdinis perducámur.
 $Per eumdem
 
-[Hymnus Matutinum]
-@Sancti/01-06:Hymnus Vespera
-
 [Invit]
 Christus appáruit nobis, * Veníte adorémus.
+
+[Hymnus Matutinum]
+@Sancti/01-06:Hymnus Vespera
 
 [Ant Matutinum]
 Afférte Dómino * fílii Dei, adoráte Dóminum in aula sancta ejus.;;28

@@ -1,13 +1,15 @@
 [Rank]
 St Camille de Lellis confesseur;;Duplex;;3;;vide C5
 
-[Rule]
-vide C5;mtv
-9 lectiones;
-m.t.v.
-
 [Oratio]
 Dieu, Vous avez fait don à saint Camille d’une charité extraordinaire pour aider les âmes dans la lutte suprême de l’agonie : nous Vous supplions, par ses mérites, de répandre en nous l’esprit de Votre charité afin que nous puissions, à l’heure du trépas, vaincre l’ennemi et parvenir à la céleste couronne.
+$Per Dominum
+
+[Commemoratio]
+!Commemoration de Ste Symphorose et ses sept Fils, Martyrs
+@Commune/C3:Oratio proper
+$Oremus
+v. Dieu, Vous nous accordez de célébrer le jour de la naissance au ciel de Vos saints Martyrs Symphorose et ses fils ; donnez-nous de jouir de leur compagnie dans la béatitude éternelle.
 $Per Dominum
 
 [Lectio4]
@@ -18,6 +20,10 @@ Il partit pour Rome et fut admis dans l’hôpital dit des incurables, dont on l
 
 [Lectio6]
 Attaché par des liens si étroits au service des malades, et s’y dévouant jour et nuit jusqu’à son dernier soupir, Camille déploya un zèle admirable à veiller à tous leurs besoins, sans se laisser rebuter par aucune fatigue, sans s’alarmer du péril que courait sa vie. Il se faisait tout à tous et embrassait les fonctions les plus basses d’un cœur joyeux et résolu, avec la plus humble condescendance ; le plus souvent il les remplissait à genoux, considérant Jésus-Christ lui-même dans la personne des infirmes. Afin de se trouver prêt à secourir toutes les misères, il abandonna de lui-même le gouvernement général de son Ordre et renonça aux délices célestes dont il était inondé dans la contemplation. Son amour paternel à l’égard des pauvres éclata surtout pendant que les habitants de Rome eurent à souffrir d’une maladie contagieuse, puis d’une extrême famine, et aussi lorsqu’une peste affreuse ravagea Nole en Campanie. Enfin il brûlait d’une si grande charité pour Dieu et pour le prochain, qu’il mérita d’être appelé un ange et d’être secouru par des Anges au milieu des dangers divers courus dans ses voyages. Il était doué du don de prophétie et de guérison, et découvrait les secrets des cœurs grâce à ses prières, tantôt les vivres se multipliaient, tantôt l’eau se changeait en vin. Épuisé par les veilles, les jeûnes, les fatigues continuelles, et semblant ne plus avoir que la peau et les os, il supporta courageusement cinq maladies longues et fâcheuses, qu’il appelait des miséricordes du Seigneur. A l’âge de soixante cinq ans, au moment où il prononçait les noms si suaves de Jésus et de Marie, et ces paroles : « Que le visage du Christ Jésus t’apparaisse doux et joyeux » il s’endormit dans le Seigneur, muni des sacrements de l’Église, à Rome, à l’heure qu’il avait prédite, la veille des ides de juillet, l’an du salut mil six cent quatorze. De nombreux miracles l’ont rendu illustre, et Benoît XIV l’a inscrit solennellement dans les fastes des Saints. Léon XIII, se rendant au vœu des saints Évêques de l’Univers catholique, après avoir consulté la Congrégation des rites, l’a déclaré le céleste Patron de tous les hospitaliers et des malades du monde entier, et il a ordonné que l’on invoquât son nom dans les Litanies des agonisants.
+
+[Lectio94]
+Camille, né à Bucchianico au diocèse de Chieti, de la noble famille des Lellis, embrassa, dans sa jeunesse la carrière militaire et se laissa pendant quelque temps gagner par les vices du siècle. Saisi cependant de la douleur d’avoir offensé Dieu, il s’empressa d’aller trouver les Frères Mineurs, appelés Capucins et demanda avec instance d’être admis parmi eux. On lui accorda ce qu’il désirait, une première, puis une deuxième fois, mais un horrible ulcère, dont il avait autrefois souffert à la jambe, s’étant ouvert de nouveau, il se soumit humblement aux volontés de ses supérieurs et quitta deux fois l’habit de cet Ordre, qu’il avait deux fois demandé et reçu. Parti pour Rome et régulièrement élevé au sacerdoce, Camille jeta les premiers fondements de la Congrégation des Clercs réguliers, consacrés au service des malades ; par un quatrième vœu de pratique très ardue, les religieux s’y engagent à assister les malades, même les pestiférés. Épuisé par les jeûnes répétés et les travaux continuels, il supporta courageusement cinq maladies aussi longues que pénibles, qu’il appelait des miséricordes du Seigneur. Agé de soixante-cinq ans, il s’endormit dans le Seigneur, la veille des Ides de Juillet, seize cent quatorze. Léon XIII le proclama le céleste patron de tous les hôpitaux et de tous les malades, et ordonna d’invoquer son nom dans les litanies des agonisants.
+&teDeum
 
 [Lectio7]
 Lecture du saint Évangile selon saint Jean. 
@@ -31,22 +37,11 @@ Que pensons-nous, mes frères ? Est-ce que le précepte qui veut qu’on s’ent
 [Lectio8]
 Là où se trouve la charité, que peut-il donc manquer ? et où elle n’existe pas, que peut-il y avoir de profitable ? Le démon croit, mais il n’aime pas, l’homme qui ne croit pas, n’aime pas non plus. De même l’homme qui n’aime pas, quoique l’espérance du pardon ne lui soit pas enlevée, l’espère en vain ; mais celui qui aime, ne peut désespérer. Ainsi où est la dilection, se trouvent la foi et l’espérance ; et là où est l’amour du prochain se trouve nécessairement aussi l’amour de Dieu. En effet, comment celui qui n’aime pas Dieu aimerait-il le prochain comme lui-même ; puisqu’il ne s’aime pas soi-même, impie qu’il est et ami de l’iniquité ? Or celui qui aime l’iniquité, celui-là, à coup sûr, n’aime pas son âme, il la hait au contraire.
 
-[Lectio93]
-!Commemoration de Ste Symphorose et ses sept Fils, Martyrs
-Symphorose, de Tivoli, épouse du Martyr Gétule, eut sept fils : Crescent, Julien, Némésius, Primitif, Justin, Stractée et Eugène, qui tous se virent arrêtés avec leur mère sous l’empereur Adrien, pour avoir confessé la foi chrétienne. Leur piété demeurant invincible au milieu de tourments nombreux et divers, la mère, qui avait instruit ses enfants dans la foi, devint aussi leur guide au martyre. On lui attacha une pierre au cou et on la précipita dans le fleuve ; son corps fut retrouvé par son frère Eugène, qui l’ensevelit. Le jour suivant, quinzième des calendes d’août, les sept frères furent attachés à des pieux, et mis à mort de diverses manières : on égorgea Crescent ; Julien eut la poitrine transpercée ; une lance traversa le cœur de Némésius ; Primitif fut éventré ; on coupa Justin membre par membre ; Stractée tomba sous les flèches ; Eugène eut le corps coupé en deux. Ainsi furent immolées ces huit victimes très agréables à Dieu. Leurs corps, jetés dans une fosse profonde, sur la voie Tiburtine, à neuf milles de la Ville, furent ensuite transportés à Rome et déposés dans l’église de Saint-Ange in Piscina.
-&teDeum
-
 [Lectio9]
 Observons donc le précepte d’aimer le Seigneur afin de nous entr’aimer, et par là nous accomplirons tout le reste, puisque tout le reste y est compris. Car l’amour de Dieu se distingue de l’amour du prochain, et le Sauveur a marqué cette distinction en ajoutant : « Comme je vous ai aimés » [4] ; or à quelle fin le Christ nous aime-t-il, si ce n’est pour que nous puissions régner avec lui ? Aimons-nous donc les uns les autres de manière à nous distinguer du reste des hommes, qui ne peuvent aimer les autres, par la raison qu’ils ne s’aiment pas eux-mêmes. Quant à ceux qui s’aiment en vue de posséder Dieu, ils s’aiment véritablement. Ainsi donc, qu’ils aiment Dieu pour s’aimer. Un tel amour n’existe pas chez tous les hommes ; il en est peu qui s’aiment afin que Dieu soit tout en tous.
 &teDeum
 
-[Commemoratio]
+[Lectio93]
 !Commemoration de Ste Symphorose et ses sept Fils, Martyrs
-@Commune/C3:Oratio proper
-$Oremus
-v. Dieu, Vous nous accordez de célébrer le jour de la naissance au ciel de Vos saints Martyrs Symphorose et ses fils ; donnez-nous de jouir de leur compagnie dans la béatitude éternelle.
-$Per Dominum
-
-[Lectio94]
-Camille, né à Bucchianico au diocèse de Chieti, de la noble famille des Lellis, embrassa, dans sa jeunesse la carrière militaire et se laissa pendant quelque temps gagner par les vices du siècle. Saisi cependant de la douleur d’avoir offensé Dieu, il s’empressa d’aller trouver les Frères Mineurs, appelés Capucins et demanda avec instance d’être admis parmi eux. On lui accorda ce qu’il désirait, une première, puis une deuxième fois, mais un horrible ulcère, dont il avait autrefois souffert à la jambe, s’étant ouvert de nouveau, il se soumit humblement aux volontés de ses supérieurs et quitta deux fois l’habit de cet Ordre, qu’il avait deux fois demandé et reçu. Parti pour Rome et régulièrement élevé au sacerdoce, Camille jeta les premiers fondements de la Congrégation des Clercs réguliers, consacrés au service des malades ; par un quatrième vœu de pratique très ardue, les religieux s’y engagent à assister les malades, même les pestiférés. Épuisé par les jeûnes répétés et les travaux continuels, il supporta courageusement cinq maladies aussi longues que pénibles, qu’il appelait des miséricordes du Seigneur. Agé de soixante-cinq ans, il s’endormit dans le Seigneur, la veille des Ides de Juillet, seize cent quatorze. Léon XIII le proclama le céleste patron de tous les hôpitaux et de tous les malades, et ordonna d’invoquer son nom dans les litanies des agonisants.
+Symphorose, de Tivoli, épouse du Martyr Gétule, eut sept fils : Crescent, Julien, Némésius, Primitif, Justin, Stractée et Eugène, qui tous se virent arrêtés avec leur mère sous l’empereur Adrien, pour avoir confessé la foi chrétienne. Leur piété demeurant invincible au milieu de tourments nombreux et divers, la mère, qui avait instruit ses enfants dans la foi, devint aussi leur guide au martyre. On lui attacha une pierre au cou et on la précipita dans le fleuve ; son corps fut retrouvé par son frère Eugène, qui l’ensevelit. Le jour suivant, quinzième des calendes d’août, les sept frères furent attachés à des pieux, et mis à mort de diverses manières : on égorgea Crescent ; Julien eut la poitrine transpercée ; une lance traversa le cœur de Némésius ; Primitif fut éventré ; on coupa Justin membre par membre ; Stractée tomba sous les flèches ; Eugène eut le corps coupé en deux. Ainsi furent immolées ces huit victimes très agréables à Dieu. Leurs corps, jetés dans une fosse profonde, sur la voie Tiburtine, à neuf milles de la Ville, furent ensuite transportés à Rome et déposés dans l’église de Saint-Ange in Piscina.
 &teDeum

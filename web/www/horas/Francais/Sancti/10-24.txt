@@ -1,15 +1,6 @@
 [Rank]
 St Raphaël, Archange;;Duplex majus;;4;;ex Sancti/05-08
 
-[Rule]
-ex Sancti/05-08
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=137
-Horas1960 Feria
-
 [Ant Vespera]
 Il a été envoyé, * l’Ange Raphaël, à Tobie et à Sara pour les guérir.
 L’Ange étant entré * près de Tobie le salua en disant : Joie soit à toi, toujours.
@@ -105,6 +96,10 @@ R. Tobie, étant sorti, trouva un jeune homme magnifique, debout, ceint, et comm
 V. Et, ignorant que ce fût un Ange du Seigneur, il le salua et dit.
 R. D’où es-tu, bon jeune homme ?
 
+[Lectio3]
+@:Lectio3DA
+(rubrica 1960 omittitur)
+
 [Lectio3DA]
 !Tob 12:14-22
 14 Et maintenant le Seigneur m'a envoyé pour vous guérir, et pour délivrer du démon Sara, la femme de votre fils.
@@ -116,10 +111,6 @@ R. D’où es-tu, bon jeune homme ?
 20 Il est donc temps que je retourne vers Celui qui m'a envoyé ; pour vous, bénissez Dieu et publiez toutes Ses merveilles.
 21 Et lorsqu'il eut ainsi parlé, il disparut de devant eux, et ils ne purent plus le voir.
 22 Alors, s'étant prosternés le visage contre terre pendant trois heures, ils bénirent Dieu, et s'étant levés, ils racontèrent toutes Ses merveilles.
-
-[Lectio3]
-@:Lectio3DA
-(rubrica 1960 omittitur)
 
 [Responsory3]
 R. L’Ange étant entré auprès de Tobie, le salua et dit : Que la joie soit avec vous toujours ;
@@ -199,6 +190,11 @@ Autour de cette piscine « gisait une grande multitude de malades, d’aveugles,
 [Ant Laudes]
 @:Ant Vespera
 
+[Capitulum Laudes]
+!Tob 12:12
+v. Lorsque tu priais avec larmes, que tu ensevelissais les morts, que tu quittais ton repas et que tu cachais les morts dans ta maison, durant le jour, pour les ensevelir pendant la nuit, j’ai présenté ta prière au Seigneur.
+$Deo gratias
+
 [Hymnus Laudes]
 v. Pardonnez, ô Christ, à vos petits serviteurs,
 Pour lesquels la clémence du Père,
@@ -230,59 +226,18 @@ Ainsi soit-il.
 V. En présence des Anges, je vous chanterai, ô mon Dieu.
 R. Je me prosternerai en votre saint temple et je louerai votre nom.
 
-[Ant 2]
-@:Ant 1
-
-[Capitulum Laudes]
-!Tob 12:12
-v. Lorsque tu priais avec larmes, que tu ensevelissais les morts, que tu quittais ton repas et que tu cachais les morts dans ta maison, durant le jour, pour les ensevelir pendant la nuit, j’ai présenté ta prière au Seigneur.
-$Deo gratias
-
 [Lectio Prima]
 !Tob 12:20
 v. Il est temps que je retourne à celui qui m’a envoyé ; quant à vous, bénissez Dieu et racontez toutes ses merveilles.
-
-[Responsory Tertia]
-R.br. L’Ange se tint debout * Près de l’autel du temple.
-R. L’Ange se tint debout * Près de l’autel du temple.
-V. Ayant un encensoir d’or en sa main.
-R. Près de l’autel du temple.
-&Gloria
-R. L’Ange se tint debout * Près de l’autel du temple.
-_
-V. La fumée des parfums monta en présence du Seigneur.
-R. De la main de l’Ange.
 
 [Capitulum Sexta]
 !Tob 12:14-15
 v. Et maintenant Dieu m’a envoyé pour te guérir et pour délivrer du démon, Sara, l’épouse de ton fils. Car je suis l’Ange Raphaël, un des sept qui se tiennent devant le Seigneur.
 $Deo gratias
 
-[Responsory Sexta]
-R.br. Elle monta, la fumée des parfums * En présence du Seigneur
-R. Elle monta, la fumée des parfums * En présence du Seigneur
-V. De la main de l’Ange.
-R. En présence du Seigneur
-&Gloria
-R. Elle monta, la fumée des parfums * En présence du Seigneur
-_
-V. En présence des Anges, je chanterai vos louanges, ô mon Dieu.
-R. Je vous adorerai dans votre saint temple et je glorifierai votre nom.
-
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
-
-[Responsory Nona]
-R.br. En présence des Anges * Je chanterai vos louanges, ô mon Dieu
-R. En présence des Anges * Je chanterai vos louanges, ô mon Dieu
-V. Je vous adorerai dans votre saint temple et je glorifierai votre nom.
-R. Je chanterai vos louanges, ô mon Dieu
-&Gloria
-R. En présence des Anges * Je chanterai vos louanges, ô mon Dieu
-_
-V. Adorez Dieu.
-R. Vous tous, ses Anges.
 
 [Versum 3]
 V. L’Ange se tint debout près de l’autel du temple.

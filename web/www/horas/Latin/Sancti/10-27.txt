@@ -7,7 +7,11 @@ Responsory Feria
 Preces feriales
 Versum Feria
 no Te Deum
-Laudes 2 
+Laudes 2
+
+[Oratio]
+Concede, quǽsumus, omnípotens Deus: ut, sicut Apostolórum tuórum Simónis et Judæ gloriósa natalícia prævenimus; sic ad tua benefícia promerenda, majestátem tuam pro nobis ipsi præveniant.
+$Per Dominum
 
 [Lectio1]
 @Commune/C2p:Lectio7
@@ -17,7 +21,3 @@ Laudes 2
 
 [Lectio3]
 @Commune/C2p:Lectio9:s/\&teDeum//s
-
-[Oratio]
-Concede, quǽsumus, omnípotens Deus: ut, sicut Apostolórum tuórum Simónis et Judæ gloriósa natalícia prævenimus; sic ad tua benefícia promerenda, majestátem tuam pro nobis ipsi præveniant.
-$Per Dominum

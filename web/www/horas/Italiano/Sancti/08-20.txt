@@ -4,10 +4,6 @@ S. Bernardi Abbatis et Ecclesiae Doctoris;;Duplex;;3;;vide C5a
 [Name]
 Bernardo
 
-[Rule]
-vide C5a;
-9 lectiones
-
 [Oratio]
 O Dio, che al tuo popolo hai dato come ministro dell'eterna salvezza il beato Bernardo: concedi, che, come l'abbiamo avuto Dottore di vita in terra, così meritiamo di averlo intercessore nel cielo. 
 $Per Dominum
@@ -21,6 +17,10 @@ Risplendeva in lui l'umiltà, la misericordia, la dolcezza. Era così assorto ne
 [Lectio6]
 Egli scrisse inoltre molte altre opere, in cui apparisce come la sua dottrina fu piuttosto un dono di Dio che frutto di studio. L'altissima riputazione della sua virtù lo fece ricercare dai più grandi prìncipi per comporre le loro controversie e venne più volte in Italia per regolare gli affari della Chiesa. Così il sommo Pontefice Innocenzo II ebbe in lui un aiuto prezioso tanto per metter fine allo scisma di Pier Leone, quanto nelle legazioni presso l'imperatore di Germania, Enrico re d'Inghilterra, e il Concilio di Pisa. Infine, a sessantatré anni d'età s'addormentò nel Signore, e, illustrato da miracoli, Papa Alessandro III l'annoverò fra i Santi. Il sommo Pontefice Pio VIII poi, con decreto della sacra Congregazione dei Riti, dichiarò e confermò san Bernardo Dottore della Chiesa universale, ordinandone a tutti la recita della Messa e l'Ufficio dei Dottori, e concesse indulgenze plenarie annuali in perpetuo a tutti quelli che nel giorno della festa del Santo avessero visitato le chiese dell'ordine Cisterciense.
 
+[Lectio94]
+Bernardo nacque a Fontaine, nella Borgogna, da nobile famiglia. Fin dalla fanciullezza ebbe una grande predilezione per la castità. A ventidue anni entrò nel monastero di Citeaux, culla dell'ordine di questo nome e convinse i suoi fratelli e molti altri ad abbracciare la medesima religione. Si dedicava con grande fervore alla penitenza e alla preghiera. Risplendeva in lui l'umiltà, la misericordia, la dolcezza, la prudenza e lo studio assiduo delle cose celesti. Eletto abate di Chiaravalle, edificò in molti luoghi dei monasteri, nei quali si mantenne per lungo tempo la regola e la disciplina di Bernardo. Scrisse molte opere, in cui appare come la sua dottrina fu piuttosto dono di Dio che frutto di studio. Venne più volte in Italia, ricercato dai più grandi prìncipi per comporre le loro controversie e regolare gli affari ecclesiastici. Aiutò il sommo pontefice Innocenzo II a mettere fine allo scisma di Pier Leone. Grandemente benemerito della Chiesa, morì serenamente all'età di sessantatré anni.
+&teDeum
+
 [Lectio7]
 @Commune/C1a:Lectio7
 
@@ -29,8 +29,3 @@ Egli scrisse inoltre molte altre opere, in cui apparisce come la sua dottrina fu
 
 [Lectio9]
 @Commune/C1a:Lectio9
-
-[Lectio94]
-Bernardo nacque a Fontaine, nella Borgogna, da nobile famiglia. Fin dalla fanciullezza ebbe una grande predilezione per la castità. A ventidue anni entrò nel monastero di Citeaux, culla dell'ordine di questo nome e convinse i suoi fratelli e molti altri ad abbracciare la medesima religione. Si dedicava con grande fervore alla penitenza e alla preghiera. Risplendeva in lui l'umiltà, la misericordia, la dolcezza, la prudenza e lo studio assiduo delle cose celesti. Eletto abate di Chiaravalle, edificò in molti luoghi dei monasteri, nei quali si mantenne per lungo tempo la regola e la disciplina di Bernardo. Scrisse molte opere, in cui appare come la sua dottrina fu piuttosto dono di Dio che frutto di studio. Venne più volte in Italia, ricercato dai più grandi prìncipi per comporre le loro controversie e regolare gli affari ecclesiastici. Aiutò il sommo pontefice Innocenzo II a mettere fine allo scisma di Pier Leone. Grandemente benemerito della Chiesa, morì serenamente all'età di sessantatré anni.
-&teDeum
-

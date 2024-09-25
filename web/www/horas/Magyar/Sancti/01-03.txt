@@ -1,24 +1,11 @@
 [Rank]
 In Octava S. Joannis;;Simplex;;1.1;;vide Sancti/12-27
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1955)
 Die Tertia Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rank] (rubrica tridentina)
 In Octava S. Joannis;;Duplex;;3;;ex Sancti/12-27
-
-[Rule]
-vide Sancti/12-27;
-Feria Te Deum
-Comkey=70
-9 lectiones
-
-[Capitulum Laudes] (rubrica divino aut rubrica monastica)
-!Sir 15:1-2
-v. A ki Istent féli, jót cselekszik; és ki az igazságnak megtartója, eljut~
-hozzá. És eléje megyen, mint egy tisztes anya, és mint szöz menyasszony fogadja~
-öt.
-$Deo gratias
 
 [Lectio1]
 Olvasmány szent Pál apostol Rómaiakhoz írott leveléből
@@ -30,6 +17,9 @@ Olvasmány szent Pál apostol Rómaiakhoz írott leveléből
 5 Mert ha halálának hasonlóságában egybenőttünk vele, úgy leszünk feltámadásában is.
 6 Hiszen tudjuk, hogy a régi embert bennünk azért feszítették vele együtt keresztre, hogy a bűn teste elpusztuljon, és ne szolgáljunk többé a bűnnek.
 
+[Responsory1]
+@Sancti/01-01:Responsory4
+
 [Lectio2]
 !Rom 6:6-11
 7 Aki így meghalt, megszabadult a bűntől.
@@ -37,6 +27,9 @@ Olvasmány szent Pál apostol Rómaiakhoz írott leveléből
 9 Tudjuk, hogy Krisztus feltámadt a halálból, többé nem hal meg, a halál nem lesz többé úrrá rajta.
 10 Aki meghalt, az egyszer s mindenkorra meghalt a bűnnek, aki azonban él, az Istennek él.
 11 Ezért tekintsétek magatokat is úgy, hogy meghaltatok a bűnnek, de éltek az Istennek Jézus Krisztusban.
+
+[Responsory2]
+@Sancti/01-01:Responsory5
 
 [Lectio3]
 !Rom 6:12-18
@@ -46,13 +39,7 @@ Olvasmány szent Pál apostol Rómaiakhoz írott leveléből
 15 Mi következik ebből? Az, hogy vétkezzünk, mert nem a törvény uralma alatt, hanem a kegyelemben élünk? Semmi esetre sem.
 16 Vagy nem tudjátok, hogy annak szolgái vagytok és annak kell engedelmeskednetek, akinek mint szolgák alárendelitek magatokat? Vagy a bűnnek, ami a halálba vezet, vagy az engedelmességnek, ami megigazulást eredményez?
 17 De hála Istennek, hogy bár a bűnnek szolgáltatok, most már szívből engedelmeskedtek annak a tanításnak, amelyet kaptatok.
-18 A bűntől megszabadulva az igazság szolgái lettetek. 
-
-[Responsory1]
-@Sancti/01-01:Responsory4
-
-[Responsory2]
-@Sancti/01-01:Responsory5
+18 A bűntől megszabadulva az igazság szolgái lettetek.
 
 [Responsory3]
 @Sancti/01-01:Responsory6
@@ -60,18 +47,13 @@ Olvasmány szent Pál apostol Rómaiakhoz írott leveléből
 [Lectio7]
 Evangélium szent János Apostol kőnyvéből
 !John 21:20-24
-Azon időben mondá Jézus Péternek: kövess engem. Péter hátrafordult, s látta,~
-hogy az a tanítvány, akit Jézus kedvelt, s aki a vacsorán a keblére hajolt és~
-megkérdezte tőle: "Uram, ki árul el?" - az követi. Amikor meglátta, Péter~
-Jézushoz fordult: "Hát vele mi lesz, Uram?" És így tovább.
+Azon időben mondá Jézus Péternek: kövess engem. Péter hátrafordult, s látta, hogy az a tanítvány, akit Jézus kedvelt, s aki a vacsorán a keblére hajolt és megkérdezte tőle: „Uram, ki árul el?” - az követi. Amikor meglátta, Péter Jézushoz fordult: „Hát vele mi lesz, Uram?” És így tovább.
 _
 Homily by St John Chrysostom, Patriarch (of Constantinople.)
 !87th Homily. on John.
-Christ had made known great things to Peter, charged him with the care of the~
-whole world, announced to him his future martyrdom, and given him testimony of~
-His especial love. Peter then would have John for a fellow and helper, and he~
-said, What shall this man do? as it were, Shall not he also follow the same path~
-with me? At the supper, when Peter would ask a question of the Lord, he dared~
-not, but got John for his spokesman; and now Peter asketh that which he thought~
-John fain would know, but dared not ask for himself. Christ saith unto him If I~
-will that he tarry till I come, what is that to thee?
+Christ had made known great things to Peter, charged him with the care of the whole world, announced to him his future martyrdom, and given him testimony of His especial love. Peter then would have John for a fellow and helper, and he said, What shall this man do? as it were, Shall not he also follow the same path with me? At the supper, when Peter would ask a question of the Lord, he dared not, but got John for his spokesman; and now Peter asketh that which he thought John fain would know, but dared not ask for himself. Christ saith unto him If I will that he tarry till I come, what is that to thee?
+
+[Capitulum Laudes] (rubrica divino aut rubrica monastica)
+!Sir 15:1-2
+v. A ki Istent féli, jót cselekszik; és ki az igazságnak megtartója, eljut hozzá. És eléje megyen, mint egy tisztes anya, és mint szöz menyasszony fogadja öt.
+$Deo gratias

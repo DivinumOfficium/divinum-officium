@@ -1,55 +1,14 @@
 [Rank]
-S. Petri Celestini Papae Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-Gloria
-Prefatio=Apostolis
+S. Petri Celestini Papae Confessoris;;Duplex;;3;;vide C4b
 
 [Comment]
 # 19 V – S. Pedro Celestino, Papa e Confessor
 ! 3 classe
 ! Paramentos brancos
 
-[Introitus]
-@Commune/C4b:Introitus
-
 [Oratio]
 Ó Deus, que elevastes o B. Pedro Celestino à eminente dignidade de sumo pontífice, ensinando-o ao mesmo tempo a preferir a humildade, concedei-nos propício que, imitando o seu exemplo, aprendamos a desprezar todos os bens deste mundo, para que com felicidade mereçamos alcançar os prémios que prometestes aos humildes.
 $Per Dominum
 
-[Lectio]
-@Commune/C4b:Lectio
-
-[Graduale]
-@Commune/C4b:Graduale
-
-[GradualeP]
-@Commune/C4b:GradualeP
-
-[Evangelium]
-@Commune/C4b:Evangelium
-
-[Offertorium]
-@Commune/C4b:Offertorium
-
-[Secreta]
-@Commune/C4b:Secreta
-
-[Communio]
-@Commune/C4b:Communio
-
 [Postcommunio]
-@Commune/C4b:Postcommunio
-
-[Commemoratio Oratio]
-! de Santa Pudenciana
-@Commune/C6b:Oratio
-$Per Dominum
-
-[Commemoratio Secreta]
-! de Santa Pudenciana
-@Commune/C6b:Secreta
-
-[Commemoratio Postcommunio]
-! de Santa Pudenciana
-@Commune/C6b:Postcommunio
+@Commune/C4::s/N\./Pedro Celestino/

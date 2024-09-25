@@ -1,12 +1,8 @@
 [Rank]
 Cœur Immaculé de la Bienheureuse Vierge Marie;;Duplex II classis;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Cœur Immaculé de la Bienheureuse Vierge Marie;;Duplex II classis;;5;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
 
 [Ant 1]
 Mon cœur tressaille de joie * dans le Seigneur et ma puissance a été élevée par mon Dieu car je me suis réjouie en Votre salut.
@@ -14,9 +10,6 @@ Mon cœur tressaille de joie * dans le Seigneur et ma puissance a été élevée
 [Oratio]
 Dieu éternel et tout puissant, qui avez préparé dans le Cœur de la bienheureuse Vierge Marie une demeure digne du Saint-Esprit, faites, dans Votre bonté, qu’en célébrant de toute notre âme cette fête en l’honneur de son cœur immaculé, nous arrivions à vivre selon Votre cœur.
 $Per Dominum eiusdem
-
-[Commemoratio 2]
-@Sancti/08-22t:Commemoratio
 
 [Lectio4]
 Sermon de saint Bernardin de Sienne
@@ -60,5 +53,5 @@ Timothée, d’Antioche, vint à Rome sous le pontificat de Melchiade. Il y prê
 [Ant 2]
 Ô bienheureuse Vierge Marie, * vous, Mère de la grâce, vous, l'espérance du monde, exaucez-nous vos fils qui recourons à vous.
 
-[Ant 3]
-@Sancti/08-22:Ant 1
+[Commemoratio 2]
+@Sancti/08-22t:Commemoratio

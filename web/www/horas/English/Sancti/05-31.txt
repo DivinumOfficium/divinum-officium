@@ -1,24 +1,11 @@
 [Rank]
 Beatae Mariae Virginis Reginae;;Duplex II classis;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Beatae Mariae Virginis Reginae;;Duplex II classis;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Beatae Mariae Virginis Reginae;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Ipsa Virgo Virginum
-Doxology=Nat
-Antiphonas horas
-Psalmi Dominica
-
-[Capitulum Laudes]
-!Sir 24:5; 24:7
-v. I came out of the mouth of the most High, the firstborn before all creatures: I dwelt in the highest places, and my throne is in a pillar of a cloud.
-$Deo gratias
 
 [Versum 1]
 V. Hail, Queen of mercy. (Alleluia.)
@@ -187,6 +174,11 @@ R. Over the choirs of Angels, to reign in heaven. (Alleluia.)
 [Lectio9]
 Mary the Queen is also the distributrix of grace. This is indicated in the book of Esther, where it is said: The little spring which grew into a river and was turned into a light and into the sun. The Virgin Mary, under the type of Esther, is compared to the outpouring of a spring and of light, because of the diffusion of grace for two uses, that is, for action and for contemplation. For the grace of God, which is a healing for the human race, descendeth to us through her as if through an aqueduct, since the dispensing of grace is attributed to the Virgin not as to its beginning, but because of her position through merit. By position the Virgin Mary is a most excellent Queen towards her people: she obtaineth forgiveness, overcometh strife, distributeth grace, and thereby she leadeth them to glory.
 &teDeum
+
+[Capitulum Laudes]
+!Sir 24:5; 24:7
+v. I came out of the mouth of the most High, the firstborn before all creatures: I dwelt in the highest places, and my throne is in a pillar of a cloud.
+$Deo gratias
 
 [Versum 2]
 V. The Virgin Mary ascended to heaven. (Alleluia.)

@@ -1,12 +1,8 @@
 [Rank]
-S. Cæciliæ Virginis et Martyris;;Duplex;;3;;vide C6b
+S. Cæciliæ Virginis et Martyris;;Duplex;;3;;vide C6
 
-[Rank] (rubrica 1570)
-S. Cæciliæ Virginis et Martyris;;Semiduplex;;2;;vide C6b
-
-[Rule]
-vide C6b;
-9 lectiones
+[Rank] (rubrica 1570 aut rubrica 1617)
+S. Cæciliæ Virginis et Martyris;;Semiduplex;;2;;vide C6
 
 [Ant Vespera]
 Acompañada de instrumentos * musicales, Cecilia cantaba al Señor: Permanezca mi corazón puro, así no quedaré avergonzada.;;109
@@ -26,21 +22,12 @@ $Per Dominum
 La Virgen Cecilia * triunfaba de Almaquio, e invitaba a Tiburcio y Valeriano a conquistar coronas.;;8
 Con las manos extendidas, * rogaba al Señor para que la librara de sus enemigos.;;18
 Mediante el cilicio, * Cecilia domaba su carne, y rogaba a Dios con gemidos.;;23
-V. Con esa tu gallardía y hermosura.
-R. Camina, avanza prósperamente y reina.
 Oh Señor Jesucristo, * sembrador de castos designios, recibid los frutos de las simientes que sembrasteis en el corazón de Cecilia.;;44
 La bienaventurada Cecilia * dijo a Tiburcio: Hoy te considero como mi familiar, puesto que por amor de Dios has llegado a ser menospreciador de los ídolos.;;45
 Sean puros, Señor, * mi corazón y mi cuerpo, para que no me vea confundida.;;47
-V. Dios la protegerá con su faz.
-R. En medio de ella está Dios; no será conmovida.
 Creemos que Cristo, * Hijo de Dios, que se escogió una sierva semejante, es el verdadero Dios.;;95
 Conociendo nosotros * su verdadero nombre, no podemos renegar de él.;;96
 Partió Valeriano, * y reconoció a San Urbano en la señal que se le había dado.;;97
-V. Dios la eligió y la predestinó.
-R. La hizo vivir en su morada.
-
-[Lectio1]
-@Commune/C6:Lectio1
 
 [Responsory1]
 R. Al son de instrumentos músicos, la virgen Cecilia cantaba en su corazón, sólo en honor del Señor, diciendo: 
@@ -48,17 +35,11 @@ R. Al son de instrumentos músicos, la virgen Cecilia cantaba en su corazón, s�
 V. Con ayunos de dos y tres días y con oraciones, recomendaba al Señor el tesoro cuya pérdida más temía. 
 R. Sean puros, Señor, mi corazón y mi cuerpo, para que no me vea confundida.
 
-[Lectio2]
-@Commune/C6:Lectio2
-
 [Responsory2]
 R. Oh bienaventurada Cecilia que convertiste a dos hermanos, triunfaste del juez Almaquio, 
 * E hiciste ver al obispo Urbano en figura de un Ángel. 
 V. Cual abeja laboriosa, serviste al Señor. 
 R. E hiciste ver al obispo Urbano en figura de un Ángel.
-
-[Lectio3]
-@Commune/C6:Lectio3
 
 [Responsory3]
 R. Esta Virgen gloriosa llevaba siempre en su corazón el Evangelio de Cristo, y no cesaba, de día ni de noche, 
@@ -108,7 +89,7 @@ En aquel tiempo: Dijo Jesús a sus discípulos esta parábola: El reino de los c
 _
 Homilía de San Juan Crisóstomo.
 !Homilía 79 sobre San Mateo.
-¿Por qué en esta parábola habla el Señor de diez vírgenes y no de otras personas? Había predicado grandes cosas acerca de la virginidad, diciendo que hay personas que se mantienen siempre castas en vista del reino de los cielos, y añadió: El que se sienta capaz de esta resolución, tómela. No ignoraba la estima que a la virginidad se profesa en todas partes. Esta virtud es sublime por naturaleza, como lo prueba el hecho de que en el Antiguo Testamento no la observaran ni los más santos personajes, y de que no sea objeto de una ley en el Nuevo; Jesucristo no la prescribió, dejando libertad acerca de este punto. Vemos que San Pablo decía: En orden a las vírgenes, precepto del Señor no lo tengo. Alabo al que abraza tal estado; pero no fuerzo en nada al que no lo haga ni lo hago materia de precepto. 
+¿Por qué en esta parábola habla el Señor de diez vírgenes y no de otras personas? Había predicado grandes cosas acerca de la virginidad, diciendo que hay personas que se mantienen siempre castas en vista del reino de los cielos, y añadió: El que se sienta capaz de esta resolución, tómela. No ignoraba la estima que a la virginidad se profesa en todas partes. Esta virtud es sublime por naturaleza, como lo prueba el hecho de que en el Antiguo Testamento no la observaran ni los más santos personajes, y de que no sea objeto de una ley en el Nuevo; Jesucristo no la prescribió, dejando libertad acerca de este punto. Vemos que San Pablo decía: En orden a las vírgenes, precepto del Señor no lo tengo. Alabo al que abraza tal estado; pero no fuerzo en nada al que no lo haga ni lo hago materia de precepto.
 
 [Responsory7]
 R. La bienaventurada Cecilia dijo a Tiburcio: Hoy te considero como mi familiar, puesto que por amor de Dios has llegado a ser 
@@ -131,18 +112,8 @@ R. Porque tengo secretos que comunicarle.
 La lámpara significa aquí el don de la virginidad, la pureza de vida; el aceite, la beneficencia, la limosna a los indigentes. Como el esposo tardaba en venir se adormecieron todas y se durmieron. Habla el Señor de la tardanza del Esposo contra la creencia de los discípulos en la pronta venida de su reino. Ellos alimentaban esa esperanza, por lo cual Jesucristo insiste para desvanecer semejante ilusión. Quedaron dormidas, dice, pero llegando la noche se oyó una voz que gritaba. Estas palabras, o son añadidas a la parábola o significan que la resurrección universal tendrá lugar en la noche. San Pablo menciona el grito, cuando dice: A la intimidación y a la voz del Arcángel y al sonido de la trompeta, el Señor descenderá del cielo.
 &teDeum
 
-[Ant Laudes]
-Acompañada de instrumentos * musicales, Cecilia cantaba al Señor: Permanezca mi corazón puro, así no quedaré avergonzada.
-Valeriano * encontró a Cecilia orando en su habitación con un ángel.
-Tu sierva * Cecilia, Señor, te sirvió como abeja laboriosa.
-Te bendigo * Padre de mi Señor Jesucristo: por tu Hijo se ha apagado el fuego de mi costado.
-Pedí al Señor * que en tres días mi casa fuese consagrada iglesia.
-
 [Ant 2]
 Al caer la aurora, * Cecilia exclamó: Ánimo, soldados de Cristo, rechazad las obras de las tinieblas y revestíos de las armas de la luz.
-
-[Ant Vespera 3]
-@:Ant Vespera
 
 [Ant 3]
 La virgen gloriosa * llevaba siempre en su pecho el Evangelio de Cristo y no cesaba ni de día ni de noche de orar y hablar con Dios.

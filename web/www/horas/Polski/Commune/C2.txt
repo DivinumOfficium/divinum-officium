@@ -1,12 +1,3 @@
-[Name]
-Commune Unius Martyris
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-
 [Ant Vespera]
 Wszelki, który Mię wyzna * przed ludźmi, wyznam go Ja też przed Ojcem.
 Kto za Mną idzie, * nie chodzi w ciemnościach, ale będzie miał światłość żywota, mówi Pan.
@@ -55,17 +46,19 @@ Pana, Króla Męczenników, * Pójdźmy uwielbiać.
 W zakonie Pańskim * wola jego będzie, we dnie i w nocy.;;1
 Opowiadając * przykazanie Pańskie, postanowion jest nad górą świętą jego.;;2
 Głosem moim * wołałem do Pana: i wysłuchał mię z góry świętéj swojéj.;;3
-V. Chwałą i czcią ukoronowałeś go, Panie.
-R. I postanowiłeś go nad dziełami rąk Twoich.
 Synowie człowieczy, * wiedzcież, iż dziwnym uczynił Pan świętego swego.;;4
 Jako tarczą dobréj woli * twéj obtoczyłeś go Panie.;;5.
 Po wszystkiej ziemi * chwałą i czcią ukoronowałeś go.;;8
-V. Włożyłeś, Panie, na głowę jego.
-R. Koronę z kamienia drogiego.
 Sprawiedliwy Pan, * i sprawiedliwość miłuje: prawość widziało oblicze jego.;;10
 Mieszka * w przybytku twoim: odpocznie na górze twojéj świętéj.;;14
 Włożyłeś, Panie, * na głowę jego, koronę z kamienia drogiego.;;20
-V. Wielka jest chwała jego w zbawieniu twojem.
+
+[Nocturn 2 Versum]
+V. Włożyłeś, Panie, na głowę jego.
+R. Koronę z kamienia drogiego.
+
+[Nocturn 3 Versum]
+V. Wielka jest chwała jego w zbawieniu twojem. 
 R. Sławę i wielką ozdobę nań włożysz.
 
 [Lectio1]
@@ -132,9 +125,6 @@ R. I włożył mu na głowę wspaniałą koronę.
 &Gloria
 R. I włożył mu na głowę wspaniałą koronę.
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
 !Jk 1:12
 v. Błogosławiony mąż, który zdzierża pokusę; bo gdy będzie doświadczony, weźmie koronę żywota, którą obiecał Bóg tym, którzy go miłują.
@@ -189,51 +179,34 @@ $Per Dominum
 !Syr 39:6
 v. Obróci serce swe, aby wstawał rano do Pana, który go stworzył, a przed oczyma Nawyższego modlić się będzie.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Chwałą i czcią * Ukoronowałeś go, Panie, 
 R. Chwałą i czcią * Ukoronowałeś go, Panie, 
 V. I postanowiłeś go nad dziełami rąk Twoich.
 R. Ukoronowałeś go, Panie.
 &Gloria
 R. Chwałą i czcią * Ukoronowałeś go, Panie, 
-_
-V. Włożyłeś, Panie, na głowę jego.
-R. Koronę z kamienia drogiego.
 
 [Capitulum Sexta]
 !Syr 15:3
 v. Nakarmi go chlebem żywota i rozumienia, a wodą mądrości zbawiennej napoi go Pan, Bóg nasz.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Włożyłeś Panie, * Na głowę jego.
 R. Włożyłeś Panie, * Na głowę jego.
 V. Koronę z kamienia drogiego.
 R. Na głowę jego.
 &Gloria
 R. Włożyłeś Panie, * Na głowę jego.
-_
-V. Wielka jest chwała jego w zbawieniu twojem. 
-R. Sławę i wielką ozdobę nań włożysz.
 
-[Capitulum Nona]
-!Syr 39:6
-v. Obróci serce swe, aby wstawał rano do Pana, który go stworzył, a przed oczyma Nawyższego modlić się będzie.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Wielka jest chwała jego * W zbawieniu twojem.
 R. Wielka jest chwała jego * W zbawieniu twojem.
 V. Sławę i wielką ozdobę nań włożysz.
 R. W zbawieniu twojem.
 &Gloria
 R. Wielka jest chwała jego * W zbawieniu twojem.
-_
-V. Sprawiedliwy zakwitnie jako palma.
-R. Rozkrzewi się jako cedr na Libanie.
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 Kto chce za mną iść, * niech sam siebie zaprze, i weźmie krzyż swój i pójdzie za Mną.

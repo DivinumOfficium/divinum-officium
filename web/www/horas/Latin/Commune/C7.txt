@@ -1,9 +1,7 @@
+@Commune/C6
+
 [Name]
 Commune non Virginum Martyrum
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
 
 [Ant Vespera]
 Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suavitátis.;;109
@@ -42,9 +40,6 @@ Amen.
 [HymnusM Vespera]
 @:Hymnus Vespera:s/sancto/Christi/
 
-[Versum 1]
-@Commune/C6
-
 [Ant 1]
 @Commune/C6:Ant 2
 
@@ -52,65 +47,35 @@ Amen.
 Laudémus Deum nostrum * In confessióne beátæ N.
 
 [Hymnus Matutinum]
-{:H-Virginisproles:}v. Hujus orátu, Deus alme, nobis
-Débitas pœnas scélerum remítte;
-Ut tibi puro resonémus almum
-Péctore carmen.
-_
-Sit decus Patri, genitǽque Proli,
-Et tibi, compar utriúsque virtus,
-Spíritus semper, Deus unus, omni
-Témporis ævo.
-Amen.
+@Commune/C6::16-25
+
+[HymnusM Matutinum]
+@Commune/C6::16-25
+
+[Ant Matutinum2]
+Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me.;;18
 
 [Ant Matutinum]
-O quam pulchra * est casta generátio cum claritáte!;;8
-Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me.;;18
-Revértere, * revértere, Sunamítis; revértere, ut intueámur te.;;23
-V. Spécie tua et pulchritúdine tua.
-R. Inténde, próspere procéde, et regna.
-Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna.;;44
-Adjuvábit eam * Deus vultu suo: Deus in médio ejus, non commovébitur.;;45
-Aquæ multæ * non potuérunt exstínguere caritátem.;;47
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
-Nigra sum, * sed formósa, fíliæ Jerúsalem; ídeo diléxit me Rex, et introdúxit me in cubículum suum.;;95
-Trahe me post te, * in odórem currémus unguentórum tuórum: óleum effúsum nomen tuum.;;96
-Veni, Sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in ætérnum.;;97
-V. Elégit eam Deus, et præelégit eam.
-R. In tabernáculo suo habitáre facit eam.
+@Commune/C6::1
+@:Ant Matutinum2
+@Commune/C6::3-9
 
 [Lectio1]
 @Commune/C6:Lectio1 in 2 loco
 
-[Responsory1]
-@Commune/C6:Responsory1 pro Martyre
-
 [Lectio2]
 @Commune/C6:Lectio2 in 2 loco
 
-[Responsory2]
-@Commune/C6
-
 [Lectio3]
 @Commune/C6:Lectio3 in 2 loco
-
-[Responsory3]
-@Commune/C6
 
 [Lectio4]
 Ex Libro Sancti Ambrósii Epíscopi de Víduis
 !Prope finem
 Agrum hunc Ecclésiæ fértilem cerno, nunc integritátis flore vernántem, nunc viduitátis gravitáte polléntem, nunc étiam conjugii fructibus redundántem. Nam, etsi diversi, uníus tamen agri fructus sunt; nec tanta hortórum lília, quantæ aristæ ségetum, messium spicæ; compluriumque spatia campórum recipiéndis aptántur semínibus, quam redditis novales fructibus feriántur. Bona ergo viduitas, quæ tóties apostolico judício prædicátur. Hæc enim magistra fidei, magistra est castitátis.
 
-[Responsory4]
-@Commune/C6
-
 [Lectio5]
 Unde et illi qui deórum suórum adultéria et probra venerántur, cælibátus et viduitátis statuére pœnas; ut, æmuli criminum, mulctarent stúdia virtútum, spécie quidem qua fœcunditátem quærerent, sed studio quo propositum castitátis abolérent. Nam confectis et miles stipendiis arma deponit, et relícto officio quod gerebat, ad propria veteranus rura dimittitur; ut et ipse exercitæ labóribus vitæ requiem consequátur et alios spes futuræ quietis subeundis fáciat opéribus promptiores. Agrícola quoque maturior torquéndam aliis stivam committit, et juvenili gravátus opere, providéntiam curæ senilis explorat: vitem facílius tondére quam prémere, ut juvenescéntem luxuriam réprimat, et adolescéntem lasciviam falce succidat; parcórum quamdam partuum castitátem docens étiam in vítibus expeténdam.
-
-[Responsory5]
-@Commune/C6
 
 [Lectio6]
 Símilis huic vidua, velut emeritis veterana stipendiis castitátis, et si conjugii arma deponat, domus tamen totius pacem gubernat; et si vehéndis onéribus otiosa, maritandis tamen junióribus próvida, ubi cultus utílior, ubi fructus uberior sit, quarum copulam aptiórem senili gravitáte disponit. Itaque, si maturióribus quam junióribus commititur ager, cur putes utiliórem nuptam esse quam víduam? Quod, si persecutores fidei persecutores fuérunt étiam viduitátis; útique fidem sequéntibus viduitas non pro supplicio fugiénda est, sed tenenda pro præmio.
@@ -162,53 +127,29 @@ v. Confitébor tibi, Dómine, Rex, et collaudábo te Deum Salvatórem meum. Conf
 $Deo gratias
 
 [Hymnus Laudes]
-@Commune/C7:Hymnus Vespera
+@:Hymnus Vespera
 
 [HymnusM Laudes]
-@Commune/C7:HymnusM Vespera
-
-[Versum 2]
-@Commune/C6
+@:HymnusM Vespera
 
 [Ant 2]
 Date ei * de fructu mánuum suárum, et laudent eam in portis ópera ejus.
 
 [Oratio]
-Exáudi nos, Deus, salutáris noster: ut sicut de beátæ N. festivitáte gaudémus; ita piæ devotiónis erudiámur afféctu.
-$Per Dominum
-
-[Oratio1]
-Deus, qui inter cetera potentiae tuae miracula, étiam in sexu fragili victoriam martyrii contulisti: concede propitius; ut qui beatae N. Martyris tuae natalitia colimus, per ejus ad te exempla gradiamur.
-$Per Dominum.
-
-[Oratio2]
-Da nobis, quaesumus, Domine Deus noster, sanctarum Martyrum tuarum N. et N. palmas incessabili devotione venerari: ut quas digna mente non possumus celebrare, humilibus saltem frequentemus obsequiis.
-$Per Dominum
+@Commune/C6::s/Vírginis et //
 
 [Lectio Prima]
 !Sir 51:8; 51:12
 v. Laudábit usque ad mortem ánima mea Dóminum, quóniam éruis sustinéntes te, et líberas eos de manu angústiæ, Dómine, Deus noster.
-
-[Responsory Tertia]
-@Commune/C6
 
 [Capitulum Sexta]
 !Sir 51:4-5
 v. Liberásti me secúndum multitúdinem misericórdiæ nóminis tui a rugiéntibus, præparátis ad escam, de mánibus quæréntium ánimam meam, et de multis tribulatiónibus quæ circumdedérunt me.
 $Deo gratias.
 
-[Responsory Sexta]
-@Commune/C6
-
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias.
-
-[Responsory Nona]
-@Commune/C6
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 Manum suam * apéruit ínopi, et palmas suas exténdit ad páuperem, et panem otiósa non comédit.

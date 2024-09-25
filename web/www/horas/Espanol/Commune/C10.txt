@@ -4,65 +4,13 @@ Officium Beatæ Mariæ Virginis in Sabbato
 [Rank]
 Sanctæ Mariæ Sabbato;;Feria;;2;;vide C10
 
-[Rule]
-vide C10
-Special Benedictio
-Special Lectio 3
-Doxology=Nat
-
-[Hymnus Vespera]
-/:La primera estrofa de este himno se dice de rodillas.:/
-v. Salve, estrella del mar,
-Santa Madre de Dios, 
-y siempre Virgen, 
-puerta dichosa del cielo.
-_
-Al escuchar el Ave 
-de boca de Gabriel, 
-asegúranos en la paz, 
-cambiando el nombre de Eva.
-_
-Desata las cadenas a los pecadores, 
-procura a los ciegos la luz, 
-ahuyenta nuestros males,
-y alcánzanos todo bien.
-_
-Muestra que eres nuestra Madre, 
-y Aquel que por nosotros 
-quiso ser Hijo tuyo, reciba, 
-por tu mediación, nuestras súplicas.
-_
-¡Oh Virgen sin igual, 
-más pura que todas!, haznos, 
-libres ya de las culpas, 
-mansos y puros.
-_
-Haz que sea casta nuestra vida, 
-prepáranos un camino seguro, 
-para que, viendo a Jesús, 
-gocemos contigo eternamente.
-_
-Alabanza sea dada a Dios Padre, 
-gloria a Cristo Rey, 
-y al Espíritu Santo, 
-honor igual a los tres. 
-Amén.
-
-[Versum 1]
-@Commune/C6:Versum 2
-
 [Ant 1]
 Bienaventurada Madre * y Virgen intacta, gloriosa reina del mundo, intercede al Señor por nosotros.
-
-[Oratio]
-Te pedimos, Señor, que nosotros, tus siervos, gocemos siempre de salud de alma y cuerpo; y, por la intercesión gloriosa de Santa María, la Virgen, líbranos de las tristezas de este mundo, y concédenos las alegrías del cielo.
-$Per Dominum
+(sed tempore paschali)
+Reina del cielo, * alégrate, aleluya, porque el Señor, a quien has merecido llevar, aleluya, ha resucitado, según su palabra, aleluya. Ruega al Señor por nosotros, aleluya.
 
 [Invit]
 Alégrate, María, llena de gracia; * El Señor es contigo.
-
-[Hymnus Matutinum]
-@Commune/C11:Hymnus Matutinum
 
 [Benedictio]
 Por las preces y los méritos de la Bienaventurada siempre Virgen María y de todos los Santos, el Señor nos conduzca a la unión de su divino Hijo.
@@ -70,85 +18,12 @@ La bienaventurada Virgen María nos bendiga en unión de su divino Hijo.
 La Virgen de las vírgenes interceda por nosotros delante del Señor.
 Por la Virgen Madre nos conceda el Señor la salud y la paz.
 
-[Capitulum Laudes]
-!Sir 24:14
-v. Desde el principio fui creada, antes de los siglos, y por los siglos duraré. En la santa morada, en su presencia ofrecí el culto.
-$Deo gratias.
-
-[Hymnus Laudes]
-{:Ogloriosavirginum:}v.	Oh la más gloriosa de las Vírgenes, 
-elevada más allá de las estrellas, 
-que alimentáis con la leche de vuestro seno 
-a vuestro Creador hecho niño.
-_
-Por vuestro augusto Hijo nos devolvéis aquello 
-de lo cual Eva nos había desgraciadamente privado; 
-abrís las puertas del cielo para franquear 
-su entrada a los que lloran.
-_
-Vos sois la puerta del gran Rey 
-y su vestíbulo radiante de claridad. 
-¡Oh pueblos redimidos, celebrad la vida 
-que se nos da por esta Virgen!
-_
-* Gloria a Vos, oh Jesús, nacido 
-de la Virgen, juntamente 
-con el Padre y el Espíritu Santo, 
-por los siglos de los siglos.
-Amén.
-
 [Versum 2]
 V. Bendita Tú eres entre las mujeres. 
 R. Y bendito el fruto de tu vientre.
 
 [Ant 2]
 Bienaventurada Madre de Dios, María, * Virgen perpetua, templo del Señor, sagrario del Espíritu Santo; Tú sola fuiste acepta al Señor por especial manera. Ruega por el pueblo, interviene en favor del clero, intercede por el devoto sexo femenino.
-
-[Lectio Prima]
-!Sir 24:19-20
-v. Como hermoso olivo en la llanura, como plátano junto a las aguas. Como la canela y el bálsamo aromático exhalé mi aroma, y como la mirra escogida di suave olor.
-
-[Responsory Tertia]
-R.br. Con tu gala * Y con tu hermosura. 
-R. Con tu gala * Y con tu hermosura. 
-V. Avanza victoriosa y reina. 
-R. Y con tu hermosura. 
-&Gloria
-R. Con tu gala * Y con tu hermosura. 
-_
-V. Dios la socorre con su mirada. 
-R. Teniendo a Dios en medio no vacila.
-
-[Capitulum Sexta]
-!Sir 24:15-16
-v. En Sión me estableció; en la ciudad escogida me hizo descansar, en Jerusalén reside mi poder; eché raíces entre un pueblo glorioso –en la heredad que tomó el Señor— y habité entre todos los santos.
-$Deo gratias.
-
-[Responsory Sexta]
-R.br. Dios la socorre * Con su mirada. 
-R. Dios la socorre * Con su mirada. 
-V. Teniendo a Dios en medio no vacila. 
-R. Con su mirada. 
-&Gloria
-R. Dios la socorre * Con su mirada. 
-_
-V. Dios la eligió y la predestinó.
-R. La hizo morar en su templo santo.
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias.
-
-[Responsory Nona]
-R.br. Dios la eligió * Y la predestinó. 
-R. Dios la eligió * Y la predestinó. 
-V. La hizo morar en su templo santo. 
-R. Y la predestinó. 
-&Gloria
-R. Dios la eligió * Y la predestinó. 
-_
-V. En tus labios se derrama la gracia.
-R. El Señor te bendice eternamente.
 
 [Lectio M01]
 De la carta de S. Ambrosio, Obispo, al Papa Siricio. 

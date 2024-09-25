@@ -4,13 +4,14 @@ Commune Apostolorum
 [Rule]
 Psalmi Dominica
 Antiphonas horas
+Psalm5 Vespera=116
 
 [Ant Vespera]
-Hoc est præcéptum meum, * ut diligátis ínvicem, sicut diléxi vos.;;109
-Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis.;;110
-Vos amíci mei estis, * si fecéritis quæ præcípio vobis, dicit Dóminus.;;111
-Beáti pacífici, * beáti mundo corde: quóniam ipsi Deum vidébunt.;;112
-In patiéntia vestra * possidébitis ánimas vestras.;;116
+Hoc est præcéptum meum, * ut diligátis ínvicem, sicut diléxi vos.
+Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis.
+Vos amíci mei estis, * si fecéritis quæ præcípio vobis, dicit Dóminus.
+Beáti pacífici, * beáti mundo corde: quóniam ipsi Deum vidébunt.
+In patiéntia vestra * possidébitis ánimas vestras.
 
 [Hymnus Vespera]
 {:H-Exsultetorbisgaudiis:}v. Exsúltet orbis gáudiis:
@@ -128,16 +129,18 @@ Amen.
 In omnem terram * exívit sonus eórum, et in fines orbis terræ verba eórum.;;18
 Clamavérunt justi, * et Dóminus exaudívit eos.;;33
 Constítues eos * príncipes super omnem terram: mémores erunt nóminis tui, Dómine.;;44
-V. In omnem terram exívit sonus eórum.
-R. Et in fines orbis terræ verba eórum.
 Príncipes populórum * congregáti sunt cum Deo Ábraham.;;46
 Dedísti hereditátem * timéntibus nomen tuum, Dómine.;;60
 Annuntiavérunt * ópera Dei, et facta ejus intellexérunt.;;63
-V. Constítues eos príncipes super omnem terram.
-R. Mémores erunt nóminis tui, Dómine.
 Exaltabúntur * córnua justi, allelúja.;;74
 Lux orta est * justo, allelúja, rectis corde lætítia, allelúja.;;96
 Custodiébant * testimónia ejus, et præcépta ejus, allelúja.;;98
+
+[Nocturn 2 Versum]
+V. Constítues eos príncipes super omnem terram.
+R. Mémores erunt nóminis tui, Dómine.
+
+[Nocturn 3 Versum]
 V. Nimis honoráti sunt amíci tui Deus.
 R. Nimis confortátus est principátus eórum.
 
@@ -252,22 +255,18 @@ V. Dedísti hereditátem.
 R. Timéntibus nomen tuum, Dómine.
 
 [Ant Laudes]
-Hoc est præcéptum meum, * ut diligátis ínvicem, sicut diléxi vos.
-Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis.
-Vos amíci mei estis, * si fecéritis quæ præcípio vobis, dicit Dóminus.
-Beáti pacífici, * beáti mundo corde: quóniam ipsi Deum vidébunt.
-In patiéntia vestra * possidébitis ánimas vestras.
+@:Ant Vespera
 
 [Capitulum Laudes]
-!Eph. 2:19-20
-v. Fratres: Jam non estis hóspites, et ádvenæ: sed estis cives Sanctórum, et doméstici Dei: superædificáti super fundaméntum Apostolórum et Prophetárum, ipso summo angulári lápide Christo Jesu.
-$Deo gratias.
+!Eph 2:19-20
+v. Fratres: Jam non estis hóspites et ádvenæ: sed estis cives Sanctórum et doméstici Dei: superædificáti super fundaméntum Apostolórum, et Prophetárum, ipso summo angulári lápide Christo Jesu.
+$Deo gratias
 
 [Hymnus Laudes]
-@Commune/C1:Hymnus Vespera
+@:Hymnus Vespera
 
 [HymnusM Laudes]
-@Commune/C1:HymnusM Vespera
+@:HymnusM Vespera
 
 [Versum 2]
 V. Annuntiavérunt ópera Dei.
@@ -284,47 +283,38 @@ $Per Dominum
 !Act 5:41
 v. Ibant Apóstoli gaudéntes a conspéctu concílii, quóniam digni hábiti sunt pro nómine Jesu contuméliam pati.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. In omnem terram * Exívit sonus eórum.
 R. In omnem terram * Exívit sonus eórum.
 V. Et in fines orbis terræ verba eórum.
 R. Exívit sonus eórum.
 &Gloria
 R. In omnem terram * Exívit sonus eórum.
-_
-V. Constítues eos príncipes super omnem terram.
-R. Mémores erunt nóminis tui, Dómine.
 
 [Capitulum Sexta]
 !Act 5:12
 v. Per manus autem Apostolórum fiébant signa et prodígia multa in plebe.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Constítues eos príncipes * Super omnem terram.
 R. Constítues eos príncipes * Super omnem terram.
 V. Mémores erunt nóminis tui, Dómine.
 R. Super omnem terram.
 &Gloria
 R. Constítues eos príncipes * Super omnem terram.
-_
-V. Nimis honoráti sunt amíci tui, Deus.
-R. Nimis confortátus est principátus eórum.
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Nimis honoráti sunt * Amíci tui, Deus.
 R. Nimis honoráti sunt * Amíci tui, Deus.
 V. Nimis confortátus est principátus eórum.
 R. Amíci tui, Deus.
 &Gloria
 R. Nimis honoráti sunt * Amíci tui, Deus.
-_
-V. Annuntiavérunt ópera Dei.
-R. Et facta ejus intellexérunt.
 
 [Ant Vespera 3]
 Jurávit Dóminus, * et non pœnitébit eum: Tu es sacérdos in ætérnum.;;109

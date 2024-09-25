@@ -1,17 +1,6 @@
 [Name]
 Commune Plurimorum Martyrum
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-
-[Capitulum Laudes]
-!Wis 3:1-3
-v. Az igazak lelke azonban Isten kezében van, és gyötrelem nem érheti őket. Az esztelenek szemében úgy látszott, hogy meghaltak; a világból való távozásukat balsorsnak vélték, elmenetelüket megsemmisülésnek. De békességben vannak.
-$Deo gratias.
-
 [Hymnus Vespera]
 {:H-Sanctorummeritis:}v. Társak, zengje szavunk szentek erényeit,
 Ő nagy tetteiken hangos öröm dalát.
@@ -51,9 +40,6 @@ R. Magasztaljátok Őt tisztaszivűek
 [Ant 1]
 Azoké a mennyek országa * akik megvetik a földi életet, kitartanak a mennyei jutalom reményeben és ruhájukat a Bárány vérében mossák meg
 
-[Invit]
-Az Úr a vértanúk királya * jöjjetek imádjuk
-
 [Hymnus Matutinum]
 {:H-Christoprofusum:}v. Krisztus kiontott vére
 A mártirok győzedelme
@@ -80,6 +66,14 @@ Emeld a vértanúk közé
 Könyörgő kis szolgáidat
 Mind az örök időkön át.
 Ámen.
+
+[Nocturn 2 Versum]
+V. Az igazak örüljenek Isten színe előtt
+R. Ujjongjanak örömükben.
+
+[Nocturn 3 Versum]
+V. Az igazaké az örök élet
+R. Az Úrnál van a jutalmuk
 
 [Lectio1]
 Olvasmány szent Pál apostol Rómaiakhoz írott leveléből
@@ -116,6 +110,7 @@ Evangélium szent Lukács Evangélista kőnyvéből
 !Luke 21:9-19
 Azon időben így szólt Jézus tanitványaihoz: Amikor háborúkról és lázadásokról hallotok, ne rémüldözzetek. Ilyeneknek kell előbb történniük, de ezzel még nincs itt a vég! És így tovább.
 _
+
 [Capitulum Laudes]
 !Wis 3:1-3
 v. Az igazak lelke azonban Isten kezében van, és gyötrelem nem érheti őket. Az esztelenek szemében úgy látszott, hogy meghaltak; a világból való távozásukat balsorsnak vélték, elmenetelüket megsemmisülésnek. De békességben vannak.
@@ -166,52 +161,39 @@ $Per Dominum
 !Wis 3:7-8
 v. Látogatásuk idején majd felragyognak, és olyanok lesznek, mint a szikra, amely a tarlón tovaharapódzik. Nemzetek fölött ítélkeznek majd és népeken uralkodnak; s az Úr lesz a királyuk mindörökre.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Vigadjatok az Úrban igazak, örüljetek
 R. Vigadjatok az Úrban igazak, örüljetek
 V. Ujjongjatok mindnyájan, tiszta szívűek!
 R. Igazak örüljetek,
 &Gloria
 R. Vigadjatok az Úrban igazak, örüljetek,
-_
-V. Az igazak örüljenek Isten színe előtt
-R. Ujjongjanak örömükben.
 
 [Capitulum Sexta]
 !Wis 10:17
 v. Az igazaknak megadta a jutalmat fáradozásaikért, vezette őket csodás utakon, és nappal hajlékul szolgált nekik, éjjel meg csillagfényül.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Az igazak örüljenek Isten színe előtt
 R. Az igazak örüljenek Isten színe előtt
 V. Ujjongjanak örömükben.
 R. Isten színe előtt
 &Gloria
 R. Az igazak örüljenek Isten színe előtt
-_
-V. Az igazaké az örök élet
-R. Az Úrnál van a jutalmuk
 
 [Capitulum Nona]
 !Wis 3:7-8
 v. Látogatásuk idején majd felragyognak, és olyanok lesznek, mint a szikra, amely a tarlón tovaharapódzik. Nemzetek fölött ítélkeznek majd és népeken uralkodnak; s az Úr lesz a királyuk mindörökre.
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Az igazaké az örök élet
 R. Az igazaké az örök élet
 V. Az Úrnál van a jutalmuk
 R. Az örök élet
 &Gloria
 R. Az igazaké az örök élet
-_
-V. Akik hűek, vigadjanak dicsőségükben
-R. Ujjongjanak nyugvóhelyükön!
-
-[Versum 3]
-V. Akik hűek, vigadjanak dicsőségükben
-R. Ujjongjanak nyugvóhelyükön!
 
 [Ant 3]
 A mennyben örvendeznek * a szentek lelkei akik követték Krisztus útját; vérük Krisztus szeretetéért omlott, ezért boldogok Krisztusban mindörökké

@@ -1,27 +1,12 @@
 [Rank]
 Objawienie Pańskie;;Duplex I classis;;7
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Special Matutinum Incipit
-Doxology=Epi
-9 lectiones
-Psalm5 Vespera=116
-Psalm5 Vespera3=113
-Festum Domini
-
 [Ant Vespera]
 Przed jutrzenką * i przed wiekami zrodzony Pan, Zbawiciel nasz, dziś światu się ukazał.
 Przyszła światłość twoja, * Jeruzalem, a sława Pańska weszła nad tobą i będą chodzić narodowie w światłości Twojej, alleluja.
 Otworzywszy skarby swe * ofiarowali Mu Mędrcy dary, złoto, kadzidło i mirrę, alleluja.
 Morza i rzeki * błogosławcie Pana. źródła śpiewajcie hymn Panu, alleluja.
 Gwiazda ta, * jak płomień jaśnieje, wskazując Króla Królów; trzej Królowie ujrzeli ją i złożyli dary wielkiemu Królowi.
-
-[Capitulum Laudes]
-!Iz 60:1
-v. Wstań, oświeć się Jeruzalem, bo przyszła światłość twoja, a sława Pańska weszła nad tobą.
-$Deo gratias
 
 [Hymnus Vespera]
 {:H-CrudelisHerodes:}v. Dlaczego lękasz się przyjścia Boga
@@ -169,6 +154,11 @@ R. A otworzywszy skarby swe, ofiarowali Mu dary: złoto, kadzidło i mirrę.
 [Lectio9]
 Wszystkie bowiem żywioły świadczyły, iż przybył ich Twórca. Jeśli o nich powiem według ludzkiego sposobu mówienia, to: niebiosa poznały Go jako Boga i zaraz gwiazdę wysłały. Morze Go poznało, gdyż pod Jego stopami stało się zdatne, by po nim można było chodzić. Ziemia go poznała, drżąc przy Jego śmierci. Słońce poznało, ukryło bowiem tedy promienie swego światła. Skały i mury poznały, ponieważ pokruszyły się przy Jego zgonie. Poznał Go świat podziemny, gdyż oddał tych, których trzymał jako umarłych. A jednak tego Pana, którego, jak powiedzieliśmy, wszystkie żywioły odczuwały, niewierne serca Żydów jako Boga wcale nie uznają i twardsze od skał nie chcą się skruszyć do pokuty.
 &teDeum
+
+[Capitulum Laudes]
+!Iz 60:1
+v. Wstań, oświeć się Jeruzalem, bo przyszła światłość twoja, a sława Pańska weszła nad tobą.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Osolamagnarum:}v. O jedyne ponad wielkie miasta

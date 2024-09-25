@@ -2,17 +2,13 @@
 S. Dominici Confessoris Patris Nostri;;;;6;;vide C4
 
 [Rule]
+vide C4;
 9 lectiones
 Psalmi Dominica
 Antiphonas horas
 
 [Ant Vespera]
 Gaude felix parens Hispánia, novæ prolis dans mundo gáudia: sed tu magis plaude Bonónia, tanti Patris dotáta glória: lauda tota Mater Ecclésia, novæ laudis agens solémnia.;;112;116;145;146;147
-
-[Capitulum Laudes]
-!Eccli. 50:6-7
-v. Quasi stella matutína in médio nébulæ, et quasi luna plena in diébus suis lucet: et quasi sol refúlgens, sic ille effúlsit in templo Dei.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Gaude Mater Ecclésia,
@@ -166,7 +162,7 @@ V. Flos in florum virens aréola, bina gaudet sortis auréola.
 R. Cum mercéde virgínea Doctórum fulgens cúneo.
 
 [Lectio7]
-@Sancti/12-07
+@Commune/C4a
 
 [Responsory7]
 R. Felix vitis, de cujus súrculo tantum germen redúndat século,
@@ -175,7 +171,7 @@ V. Ex ubertáte pálmitum mundi jam cinxit ámbitum.
 R. Cæli vinum propinans pópulo vitáli póculo.
 
 [Lectio8]
-@Sancti/12-07
+@Commune/C4a
 
 [Responsory8]
 R. Ascendénti de valle lúbrici mundi, chori plaudunt angélici:
@@ -184,7 +180,7 @@ V. Per quem multos a morte súscitas, pœnas nobis reláxa débitas.
 R. Jesu bone, prece Domínici, tibi præsta nos gratos éffici.
 
 [Lectio9]
-@Sancti/12-07
+@Commune/C4a
 
 [Responsory9]
 R. O spem miram, quam dedísti mortis hora te fléntibus, dum post mortem promisísti te profutúrum frátribus!
@@ -201,6 +197,11 @@ Pauper in pecúlio, dives vita pura, paupertátis prétio cæli tenet jura.
 Scala cælo próminens fratri revelátur, per quam Pater tránsiens sursum ferebátur.
 Linguæ, manus stúdio scalam hanc eréxit, uam Virgo cum Filio Mater sursum vexit.
 Fulget in choro vírginum doctor veritátis, sertum honóris géminum gerens cum beátis,
+
+[Capitulum Laudes]
+!Eccli. 50:6-7
+v. Quasi stella matutína in médio nébulæ, et quasi luna plena in diébus suis lucet: et quasi sol refúlgens, sic ille effúlsit in templo Dei.
+$Deo gratias
 
 [Hymnus Laudes]
 Hymnum novæ lætítiæ
@@ -232,9 +233,15 @@ Amen.
 [Ant 2]
 Carnis viror, mentis martýrium, mundum replens linguæ præcónium, pauper Christi, post cursus státium, vitæ tibi mercántur pr<sp>'ae</sp>mium.
 
-[Responsory Tertia]
-@Commune/C4ap::s/_.*//s
-_
+[Responsory Breve Tertia]
+R.br. Amávit eum Dóminus et ornávit eum, * Allelúja, allelúja.
+R. Amávit eum Dóminus et ornávit eum, * Allelúja, allelúja.
+V. Stolam glóriæ índuit eum.
+R. Allelúja, allelúja.
+&Gloria
+R. Amávit eum Dóminus et ornávit eum, * Allelúja, allelúja.
+
+[Versum Tertia]
 @Commune/C4:Versum 2
 
 [Capitulum Sexta]

@@ -1,16 +1,5 @@
 [Rank]
 Vigile de St Jacques Apôtre.;;Simplex;;1.5;;ex C1v
 
-[Rule]
-ex C1v;
-Responsory Feria
-Preces feriales
-Versum Feria
-no Te Deum
-Laudes 2
-
 [Oratio]
-Accordez-nous, s'il Vous plaît, Dieu tout-puissant, que la vénérable solennité anticipée du bienheureux Jacques, Votre Apôtre, augmente en nous dévotion et salut.  
-$Per Dominum
-
-[
+@Commune/C1v:Oratio1:s/N\./Jacques/

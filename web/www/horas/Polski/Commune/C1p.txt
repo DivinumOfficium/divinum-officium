@@ -1,22 +1,12 @@
-﻿[Name]
+[Name]
 Commune apostolorum tempore Paschali
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Una Antiphona
-
 [Ant Vespera]
-Święci Twoi, * Panie, kwitnąć będą jako lilje, alleluja: i jako wonność balsamu będą przed Tobą, alleluja.;;109
-W Królestwie niebieskiem * jest mieszkanie Świętych, alleluja: i odpoczynek ich na wieki, alleluja.;;110
-W cieniu * będą Ci śpiewać Święci Twoi, Panie, alleluja, alleluja, alleluja.;;111
-Duchowie i dusze * sprawiedliwych, śpiewajcie hymn Bogu naszemu, alleluja, alleluja.;;112
-Sprawiedliwi świecić będą * jako słońce przed obliczem Boga, alleluja.;;116
-
-[Capitulum Laudes]
-!Mdr 5:1
-v. Tedy staną sprawiedliwi z wielką stałością przeciwko tym, którzy je cisnęli i którzy prace ich objęli.
-$Deo gratias
+Święci Twoi, * Panie, kwitnąć będą jako lilje, alleluja: i jako wonność balsamu będą przed Tobą, alleluja.
+W Królestwie niebieskiem * jest mieszkanie Świętych, alleluja: i odpoczynek ich na wieki, alleluja.
+W cieniu * będą Ci śpiewać Święci Twoi, Panie, alleluja, alleluja, alleluja.
+Duchowie i dusze * sprawiedliwych, śpiewajcie hymn Bogu naszemu, alleluja, alleluja.
+Sprawiedliwi świecić będą * jako słońce przed obliczem Boga, alleluja.
 
 [HymnusM Vespera]
 v. Żal Apostołów ogarnął,
@@ -92,16 +82,20 @@ Pana, Króla Apostołów * Pójdźmy uwielbiać, alleluja.
 Tedy staną sprawiedliwi * z wielką stałością przeciwko tym, którzy je cisnęli, alleluja.;;18
 ;;33
 ;;44
-V. Święci i sprawiedliwi, weselcie się w Panu, alleluja.
-R. Obrał was Bóg na dziedzictwo sobie, alleluja.
 Oto * jako policzeni są między syny Boże i między świętymi dział ich jest, alleluja.;;46
 ;;60
 ;;63
-V. Światłość wiekuista świecić będzie Świętym Twoim, Panie, alleluja.
-R. Po wieczne czasy, alleluja.
 Światłość wiekuista * świecić będzie Świętym Twoim, Panie, i będą mieli życie wieczne, alleluja.;;74
 ;;96
 ;;98
+V. Radość wieczysta nad ich głowami, alleluja.
+R. Posiądą radość i wesele, alleluja.
+
+[Nocturn 2 Versum]
+V. Światłość wiekuista świecić będzie Świętym Twoim, Panie, alleluja.
+R. Po wieczne czasy, alleluja.
+
+[Nocturn 3 Versum]
 V. Radość wieczysta nad ich głowami, alleluja.
 R. Posiądą radość i wesele, alleluja.
 
@@ -157,8 +151,10 @@ R. I jak mleko stężeli, alleluja, alleluja.
 &Gloria
 R. I jak mleko stężeli, alleluja, alleluja.
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
+[Capitulum Laudes]
+!Mdr 5:1
+v. Tedy staną sprawiedliwi z wielką stałością przeciwko tym, którzy je cisnęli i którzy prace ich objęli.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Paschalemundogaudium:}v. Radość wielkanocną zwiastuje
@@ -221,50 +217,34 @@ Córki Jerozolimskie, * przyjdźcie, a obaczcie męczenników z wieńcami, któr
 !Rz 8:28
 v. A wiemy, że tym, którzy miłują Boga, wszystko dopomaga ku dobremu, tym, którzy są wezwani podług postanowienia święci.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Święci i sprawiedliwi, weselcie się w Panu, * Alleluja, alleluja.
 R. Święci i sprawiedliwi, weselcie się w Panu, * Alleluja, alleluja.
 V. Obrał was Bóg na dziedzictwo sobie.
 R. Alleluja, alleluja.
 &Gloria
 R. Święci i sprawiedliwi, weselcie się w Panu, * Alleluja, alleluja.
-_
-V. Światłość wiekuista * świecić będzie Świętym Twoim, Panie, alleluja.
-R. I będą mieli życie wieczne, alleluja.
 
 [Capitulum Sexta]
 !Mdr. 5:5
 v. Oto jako policzeni są między syny Boże i między świętymi dział ich jest.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Światłość wiekuista świecić będzie Świętym Twoim, Panie, * Alleluja, alleluja.
 R. Światłość wiekuista świecić będzie Świętym Twoim, Panie, * Alleluja, alleluja.
 V. I będą mieli życie wieczne.
 R. Alleluja, alleluja.
 &Gloria
 R. Światłość wiekuista świecić będzie Świętym Twoim, Panie, * Alleluja, alleluja.
-_
-V. Radość wieczysta nad ich głowami, alleluja.
-R. Posiądą radość i wesele, alleluja.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Radość wieczysta nad ich głowami, * Alleluja, alleluja.
 R. Radość wieczysta nad ich głowami, * Alleluja, alleluja.
 V. Posiądą radość i wesele, alleluja.
 R. Alleluja, alleluja.
 &Gloria
 R. Radość wieczysta nad ich głowami, * Alleluja, alleluja.
-_
-V. Cenna jest w oczach Pana, alleluja.
-R. Śmierć świętych Jego, alleluja.
-
-[Ant Vespera 3]
-Święci Twoi, * Panie, kwitnąć będą jako lilje, alleluja: i jako wonność balsamu będą przed Tobą, alleluja.;;109
-W Królestwie niebieskiem * jest mieszkanie Świętych, alleluja: i odpoczynek ich na wieki, alleluja.;;112
-W cieniu * będą Ci śpiewać Święci Twoi, Panie, alleluja, alleluja, alleluja.;;115
-Duchowie i dusze * sprawiedliwych, śpiewajcie hymn Bogu naszemu, alleluja, alleluja.;;125
-Sprawiedliwi świecić będą * jako słońce przed obliczem Boga, alleluja.;;138
 
 [Ant 3]
 Święci i sprawiedliwi, * weselcie się w Panu, alleluja: obrał was Bóg na dziedzictwo sobie, alleluja.

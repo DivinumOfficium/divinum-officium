@@ -1,19 +1,11 @@
 [Rank]
 Sanctissimi Rosarii Beatae Máriae Virginis;;Duplex classis;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Sanctissimi Rosarii Beatae Máriae Virginis;;Duplex classis;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Mark;
 
 [Commemoratio]
 !S. Marci Papae

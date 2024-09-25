@@ -1,12 +1,20 @@
 [Rank]
 S. Hieronymi Emiliani Conf;;Duplex;;3;;vide C5
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Hieronymi Emiliani Conf;;Duplex optional;;2;;vide C5
 
 [Rule]
 vide C5
 Gloria
+
+[Introitus]
+!Lam 2:11
+v. Wypłynęła na ziemię wątroba moja z powodu zagłady córki ludu mego, gdy ustawało dziecię i niemowlę na ulicach miasta.
+!Ps 112:1
+Chwalcie, o dzieci, Pana, chwalcie imię Pańskie.
+&Gloria
+v. Wypłynęła na ziemię wątroba moja z powodu zagłady córki ludu mego, gdy ustawało dziecię i niemowlę na ulicach miasta.
 
 [Comment]
 # 20 VII – Św. Hieronima Emiliani, Wyznawcy
@@ -20,14 +28,6 @@ Gloria
 Św. Małgorzata poniosła męczeństwo w Antiochii Pizydyjskiej z końcem III wieku. Jej kult przeszczepili na Zachód krzyżowcy.
 
 Msza wspólna nr 25 Me exspectaverunt
-
-[Introitus]
-!Lam 2:11
-v. Wypłynęła na ziemię wątroba moja z powodu zagłady córki ludu mego, gdy ustawało dziecię i niemowlę na ulicach miasta.
-!Ps 112:1
-Chwalcie, o dzieci, Pana, chwalcie imię Pańskie.
-&Gloria
-v. Wypłynęła na ziemię wątroba moja z powodu zagłady córki ludu mego, gdy ustawało dziecię i niemowlę na ulicach miasta.
 
 [Oratio]
 Boże, Ojcze miłosierdzia, przez zasługi i przyczynę św. Hieronima, któregoś raczył dać sierotom za opiekuna i ojca, dozwól nam wiernie strzec ducha synostwa, mocą którego nazywamy się i jesteśmy Twoimi dziećmi.
@@ -44,7 +44,7 @@ Niech ściekają źródła twoje z domu, a na ulicach wody twe rozdzielaj.
 !Ps 11:5-6
 Szczęści się mężowi, który z litości pożycza, a sprawy swoje prowadzi uczciwie. Nigdy się on nie zachwieje. Alleluja, alleluja.
 !Ps 111:9
-Rozdziela, daje ubogim: hojność jego będzie trwała zawsze. Alleluja. 
+Rozdziela, daje ubogim: hojność jego będzie trwała zawsze. Alleluja.
 
 [Evangelium]
 @Sancti/11-13pl:Evangelium
@@ -64,19 +64,3 @@ Czystą i nieskalaną pobożnością wobec Boga Ojca jest nawiedzanie sierot i w
 [Postcommunio]
 Pokrzepieni Chlebem Aniołów kornie błagamy Cię, Panie, abyśmy obchodząc z radością doroczną pamiątkę św. Hieronima, Twojego Wyznawcy, naśladowali również jego przykład i zdołali otrzymać jak najpełniejszą nagrodę w Twoim Królestwie.
 $Per Dominum
-
-[Commemoratio Oratio]
-! Wspomnienie św. Małgorzaty
-Prosimy Cię, Panie, aby święta Małgorzata, Dziewica i Męczennica Twoja, wybłagała nam przebaczenie; ona bowiem zawsze podobała się Tobie dzięki zasłudze czystości i wyznaniu Twojej mocy.
-$Per Dominum
-
-[Commemoratio Secreta]
-! Wspomnienie św. Małgorzaty
-Prosimy Cię, Panie, przyjmij łaskawie ofiarę, którą Ci składamy przez zasługi świętej Małgorzaty, Twojej Dziewicy i Męczennicy, i spraw, by nam nieustanną była pomocą. 
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! Wspomnienie św. Małgorzaty
-Darem Bożym szczodrze nasyceni, prosimy Cię, Panie Boże nasz, abyśmy za wstawiennictwem świętej Małgorzaty, Twojej Dziewicy i Męczennicy, zawsze czerpali zeń życie.
-$Per Dominum
-

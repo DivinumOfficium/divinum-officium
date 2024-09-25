@@ -1,12 +1,8 @@
 [Rank]
-Ste Cécile Vierge et Martyre;;Duplex;;3;;vide C6b
+Ste Cécile Vierge et Martyre;;Duplex;;3;;vide C6
 
-[Rank] (rubrica 1570)
-Ste Cécile Vierge et Martyre;;Semiduplex;;2;;vide C6b
-
-[Rule]
-vide C6b ;
-9 lectiones
+[Rank] (rubrica 1570 aut rubrica 1617)
+Ste Cécile Vierge et Martyre;;Semiduplex;;2;;vide C6
 
 [Ant Vespera]
 Accompagnée d’instruments de musique, * Cécile chantait au Seigneur, en disant : Gardez mon cœur sans tache, afin que je ne sois pas confondue.;;109
@@ -26,21 +22,12 @@ $Per Dominum
 La vierge Cécile * triomphait d’Almachius : elle appelait aux couronnes Tiburce et Valérien.;;8
 Les bras étendus, * elle priait le Seigneur de l’arracher à ses ennemis.;;18
 Par le cilice, * Cécile domptait ses membres, elle implorait Dieu avec gémissements.;;23
-V. Dans ta beauté et tes charmes
-R. Va de l'avant, prospère et règne.
 Seigneur Jésus-Christ, * semeur des chastes vouloirs, recevez les fruits des semences que vous avez répandues dans le cœur de Cécile. ;;44
 La bienheureuse Cécile * dit à Tiburce : Aujourd’hui je vous reconnais pour mon parent, parce que l’amour de Dieu vous a rendu contempteur des idoles.;;45
 Gardez, Seigneur, * mon cœur et mon corps immaculés, afin que je ne sois pas confondue.;;47
-V. Dieu l’aidera par sa contemplation.
-R. Dieu est en son cœur, elle ne sera pas ébranlée.
 Nous croyons que le Christ, * Fils de Dieu, est vraiment Dieu, lui qui s’est choisi une telle servante.;;95
 Nous qui connaissons * son saint nom, nous ne pouvons absolument pas le renier.;;96
 Alors Valérien * s’en alla et, grâce au signe qu’il avait reçu, trouva saint Urbain.;;97
-V. Dieu l’a choisie et l’a préférée.
-R. Dans son tabernacle, il la fait habiter.
-
-[Lectio1]
-@Commune/C6:Lectio1
 
 [Responsory1]
 R. Accompagnée d’instruments de musique, la vierge Cécile chantait en son cœur au seul Seigneur, en disant :
@@ -48,17 +35,11 @@ R. Accompagnée d’instruments de musique, la vierge Cécile chantait en son c�
 V. Avec des jeûnes prolongés deux et trois jours, elle priait, recommandant au Seigneur ce qu’elle craignait de perdre.
 R. Gardez, Seigneur, mon cœur et mon corps immaculés, afin que je ne sois pas confondue.
 
-[Lectio2]
-@Commune/C6:Lectio2
-
 [Responsory2]
 R. O bienheureuse Cécile, qui avez converti deux frères, triomphé du juge Almachius et par qui,
 * Urbain l’évêque a été montré sous la figure d’un ange.
 V. Comme une abeille diligente, vous avez servi le Seigneur.
 R. Urbain l’évêque a été montré sous la figure d’un ange.
-
-[Lectio3]
-@Commune/C6:Lectio3
 
 [Responsory3]
 R. La vierge glorieuse conservait toujours l’évangile du Christ en son cœur, et ne cessait ni jour, ni nuit,
@@ -131,18 +112,8 @@ R. Car j’ai des secrets que je viens lui rapporter.
 Mais le Christ désigne ici sous le nom de lampes ce même don de la virginité, avec la sainteté de vie ; et il appelle huile la bienveillance, l’aumône et le secours porté aux indigents. Or Vépoux tardant à venir, elles s'assoupirent toutes et s'endormirent. Il montre encore que beaucoup de temps s’écoula de nouveau, pour dissuader ses disciples de Pavènement prochain de son règne qu’ils attendaient; ceux-ci, en effet, l’espéraient, c’est pourquoi il les détourne souvent d’un tel espoir. En outre, il indique encore ceci, que le sommeil est une sorte de mort. Elles s'endormirent, dit-il ; et voici qu'au milieu de la nuit une clameur s'éleva : ou il veut par là insister sur la même parabole, ou il indique de nouveau que la résurrection aura lieu pendant la nuit. Saint Paul fait même mention de cette clameur, quand il dit : Sur l'ordre donné, à la voix de l'Archange et au son suprême de la trompette, le Christ descendra du ciel.
 &teDeum
 
-[Ant Laudes]
-Accompagnée d’instruments de musique, * Cécile chantait au Seigneur, en disant : Gardez mon cœur sans tache, afin que je ne sois pas confondue.
-Valérien * trouva Cécile en prière dans sa chambre, en compagnie d’un Ange.
-Votre servante, Cécile, * ô Seigneur, vous a servi comme une abeille diligente.
-Je vous bénis, * Père de mon Seigneur Jésus-Christ, car, par votre Fils, le feu s’est éteint à mes côtés.
-J’ai demandé * au Seigneur un délai de trois jours, afin de consacrer ma demeure comme église.
-
 [Ant 2]
 Tandis que l’aurore * finissait, Cécile s’écria : Courage, soldats du Christ, rejetez les œuvres des ténèbres et revêtez-vous des armes de la lumière.
-
-[Ant Vespera 3]
-@:Ant Vespera
 
 [Ant 3]
 La Vierge glorieuse * conservait toujours l’Évangile du Christ en son cœur et ne cessait ni jour, ni nuit, sa prière et ses colloques divins.

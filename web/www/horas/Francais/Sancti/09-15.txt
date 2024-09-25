@@ -1,17 +1,11 @@
 [Rank]
 Les sept douleurs de la Bienheureuse Vierge Marie;;Duplex 2nd class;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Les sept douleurs de la Bienheureuse Vierge Marie;;Duplex 2nd class;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Les sept douleurs de la Bienheureuse Vierge Marie;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11 ;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
 
 [Ant Vespera]
 Où s’en est-il allé, * votre bien-aimé, ô la plus belle des femmes ! De quel côté est-il parti, votre bien-aimé et nous le chercherons avec vous.;;109
@@ -56,11 +50,15 @@ Ainsi soit-il.
 V. Reine des Martyrs, priez pour nous.
 R. Vous qui êtes restée debout près de la Croix de Jésus.
 
+[Doxology]
+@Tempora/Quad5-5
+
 [Ant 1]
 Ne prenez pas garde * à mon teint basané ; c’est le soleil qui m’a brûlée ; les fils de ma mère m’ont persécutée.
 
-[Doxology]
-@Tempora/Quad5-5
+[Oratio]
+O Dieu, dans la passion Duquel, suivant la prophétie de Siméon, un glaive de douleur a percé le cœur très doux de la glorieuse Vierge Marie, Votre Mère, faites, dans Votre miséricorde, que célébrant avec respect le souvenir de ses douleurs, nous recueillions les heureux fruits de Votre passion.
+$Qui vivis
 
 [Invit]
 Tenons-nous près de la croix, avec la Mère de Jésus, Marie * Dont un glaive de douleur a transpercé l’âme.
@@ -248,16 +246,12 @@ R. Faites-nous nous réjouir dans le royaume des cieux.
 [Ant 2]
 Venez, * montons à la montagne du Seigneur et voyez s’il est douleur comparable à ma douleur.
 
-[Oratio]
-O Dieu, dans la passion Duquel, suivant la prophétie de Siméon, un glaive de douleur a percé le cœur très doux de la glorieuse Vierge Marie, Votre Mère, faites, dans Votre miséricorde, que célébrant avec respect le souvenir de ses douleurs, nous recueillions les heureux fruits de Votre passion.
-$Qui vivis
-
-[Versum Prima]
-@Tempora/Quad5-5
-
 [Lectio Prima]
 !Lam. 2:18
 v. Verse, comme un torrent, des larmes, jour et nuit ; ne te donne pas de repos et qu’elle ne se taise pas, la pupille de ton œil.
+
+[Versum Prima]
+@Tempora/Quad5-5
 
 [Responsory Tertia]
 R.br. O vous tous * Qui passez par le chemin.
@@ -300,9 +294,6 @@ R. Il est bouquet de myrrhe. * Mon bien-aimé, pour moi.
 _
 V. Mon âme s’est liquéfiée.
 R. Quand le bien-aimé a parlé.
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Je suis oppressée de douleur, * mon visage est gonflé de larmes et mes paupières se sont obscurcies.

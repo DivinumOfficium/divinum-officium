@@ -1,17 +1,8 @@
 [Rank]
 Podwyższenie Krzyża Świętego;;Duplex majus;;4;;ex Sancti/05-03
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Podwyższenie Krzyża Świętego;;Duplex II classis;;5.5;;ex Sancti/05-03
-
-[Rule]
-ex Sancti/05-03
-Domini
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Festum Domini
 
 [Oratio]
 Boże, który nas w dniu dzisiejszym doroczną uroczystością Podwyższenia Krzyża świętego uweselasz, spraw, prosimy Cię, abyśmy otrzymali w niebie owoce odkupienia, którego tajemnicę poznaliśmy na ziemi.
@@ -88,9 +79,6 @@ O przedziwna potęgo Krzyża! O niewysłowiona chwało Męki! W tobie Trybunał 
 Wszystko przyciągnąłeś do siebie, Panie: Aby na całej ziemi wszystkie narody czciły teraz spełnioną i ujawnioną tajemnicę, co przedtem tylko w jednej świątyni Judei skrywała się pod cieniem znaków. Teraz i zastęp lewitów jest znakomitszy, i godność kapłanów większa, i biskupów namaszczenie jest świętsze. Twój Krzyż bowiem jest źródłem wszystkich błogosławieństw i przyczyną łask wszelakich. Dzięki niemu wierzący czerpią moc ze słabości, chwałę ze wzgardy i życie ze śmierci. Teraz też, gdy ustały wielorakie ofiary z przeróżnych zwierząt, zastępuje je w pełni jedna ofiara: Ciała i Krwi Twojej. Tyś bowiem jest prawdziwym Barankiem Bożym, który gładzi grzechy świata. W ten sposób urzeczywistniasz w sobie wszystkie zapowiedziane tajemnice, aby jak jedna ofiara zastąpiła wszystkie inne, tak ze wszystkich narodów powstało jedno Królestwo.
 &teDeum
 
-[Ant 3]
-O Krzyżu błogosławiony, * który sam jeden byłeś godny dźwigać Króla niebios i Pana, alleluja.
-
 [Responsory Tertia]
 @Sancti/05-03::s/, allelu.a//g s/(ukaże się na niebie,? \* )?Allelu.a/* ukaże się na niebie/g s/\. \* u/. U/
 
@@ -99,3 +87,6 @@ O Krzyżu błogosławiony, * który sam jeden byłeś godny dźwigać Króla nie
 
 [Responsory Nona]
 @Sancti/05-03::s/, allelu.a//g s/(i niechaj ci śpiewa,? \* )?Allelu.a/* i niechaj ci śpiewa/g s/\. \* i/. I/
+
+[Ant 3]
+O Krzyżu błogosławiony, * który sam jeden byłeś godny dźwigać Króla niebios i Pana, alleluja.

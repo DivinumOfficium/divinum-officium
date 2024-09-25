@@ -6,12 +6,6 @@
 [Hymnus Matutinum]
 @Commune/C1:HymnusM Matutinum
 
-[Capitulum Laudes]
-@Commune/C1
-
-[Responsory Vespera]
-@Commune/C1:Responsory Sexta
-
 [Lectio1]
 @Commune/C1a:Lectio1:s/-4/-3/ s/4 .*//s
 
@@ -69,11 +63,5 @@
 [LectioE]
 @Sancti/10-18
 
-[Ant Laudes]
-@Commune/C1
-
 [Capitulum Laudes]
 @Commune/C1
-
-[Responsory Laudes]
-@Commune/C1:Responsory Tertia

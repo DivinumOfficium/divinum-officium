@@ -1,17 +1,17 @@
 [Rank]
 In Conversione S. Pauli Apostoli;;Duplex majus;;4;;ex Sancti/06-30
 
-[Rule]
-ex Sancti/06-30;
-9 lectiones
-Sub unica concl
-Psalm5Vespera=116
-
 [Hymnus Vespera]
 @Sancti/06-30:Hymnus Matutinum
 
 [Ant 1]
 Levántate, Ananías, * y busca a Saulo, que está orando; porque es éste para mí vaso de elección, para que lleve mi nombre ante las naciones y los reyes y los hijos de Israel. 
+
+[Oratio]
+Oh Dios, que enseñaste a todo el mundo con la predicación del bienaventurado apóstol Pablo, te rogamos que nos concedas que cuantos celebramos hoy su Conversión, imitando sus ejemplos, lleguemos a ti.
+$Per Dominum
+_
+@Sancti/01-25:Commemoratio4
 
 [Invit]
 Alabemos a nuestro Dios, * En la conversión del Doctor de los gentiles.
@@ -33,7 +33,7 @@ De los Hechos de los Apóstoles
 6 Él entonces, temblando y despavorido, dijo: Señor, ¿qué quieres que haga? 
 7 Y el Señor le respondió: Levántate y entra en la ciudad, donde se te dirá lo que debes hacer. Los que venían acompañándole estaban asombrados, oyendo sonidos de voz, pero sin ver a nadie. 
 8 Se levantó Saulo de la tierra, y aunque tenía abiertos los ojos, nada veía. Por lo cual llevándole de la mano le metieron en Damasco. 
-9 Aquí se mantuvo tres días privado de la vista, y sin comer ni beber. 
+9 Aquí se mantuvo tres días privado de la vista, y sin comer ni beber.
 
 [Responsory2]
 @Sancti/06-30:Responsory2
@@ -46,7 +46,7 @@ De los Hechos de los Apóstoles
 13 Y contestó Ananías: Señor, he oído a muchos de este hombre cuántos males ha hecho a tus santos en Jerusalén, 
 14 y que viene aquí con poder de los príncipes de los sacerdotes para prender a cuantos invocan tu nombre. 
 15 Pero el Señor le dijo: Ve, porque es éste para mí vaso de elección, para que lleve mi nombre ante las naciones y los reyes y los hijos de Israel. 
-16 Yo le mostraré cuánto habrá de padecer por mi nombre. 
+16 Yo le mostraré cuánto habrá de padecer por mi nombre.
 
 [Responsory3]
 @Sancti/06-30:Responsory3
@@ -70,11 +70,21 @@ Iba deseando y anhelando matanzas, es decir, devorando por la mañana. Así, cua
 v. Saulo seguía respirando amenazas de muerte contra los discípulos del Señor; fue a ver al sumo sacerdote, y le pidió cartas para la sinagoga de Damasco, autorizándolo para traer presos a Jerusalén a cuantos hombres y mujeres descubriera que seguían este camino.
 $Deo gratias
 
-[Oratio]
-Oh Dios, que enseñaste a todo el mundo con la predicación del bienaventurado apóstol Pablo, te rogamos que nos concedas que cuantos celebramos hoy su Conversión, imitando sus ejemplos, lleguemos a ti.
-$Per Dominum
-_
-@Sancti/01-25:Commemoratio4
+[Lectio Prima]
+!Act 9:22
+v. Pablo se crecía y dejaba confusos a los judíos de Damasco, demostrando que Jesús es el Mesías.
+
+[Capitulum Sexta]
+!Act 9:8-9
+v. Se levantó Saulo del suelo, y con los ojos abiertos no veía nada. Y guiándolo de la mano, lo hicieron entrar en Damasco. Durante tres días estuvo allí ciego, sin comer ni beber.
+$Deo gratias
+
+[Ant Vespera 3]
+Yo planté, * Apolo regó, pero Dios hizo crecer. Aleluya. ;;109
+Muy a gusto presumo * de mis debilidades, porque así residirá en mí la fuerza de Cristo.;;112
+La gracia de Dios * en mí no ha sido estéril, sino que su gracia permanece siempre en mí.;;115
+En Damasco, el gobernador * del rey Aretas quiso prenderme; algunos hermanos me descolgaron por la muralla, metido en un costal, y así escapé de sus manos, con la ayuda del Señor.;;125
+Tres veces me han azotado * con varas, una vez me han apedreado. He padecido tres naufragios por el nombre de Cristo.;;138
 
 [Commemoratio4]
 !Conmemoración de S. Pedro Apóstol
@@ -88,35 +98,3 @@ $Oremus
 (sed rubrica 1960 hæc versus omittuntur)
 v. ¡Oh Dios, que, al entregar al apóstol San Pedro las llaves del reino de los cielos, le concediste la potestad de atar y desatar!; concédenos por su intercesión, ser liberados de las ataduras del pecado.
 $Qui vivis
-
-[Lectio Prima]
-!Act 9:22
-v. Pablo se crecía y dejaba confusos a los judíos de Damasco, demostrando que Jesús es el Mesías.
-
-[Responsory Tertia]
-@Commune/C1:Responsory Tertia
-
-[Capitulum Sexta]
-!Act 9:8-9
-v. Se levantó Saulo del suelo, y con los ojos abiertos no veía nada. Y guiándolo de la mano, lo hicieron entrar en Damasco. Durante tres días estuvo allí ciego, sin comer ni beber.
-$Deo gratias
-
-[Responsory Sexta]
-@Commune/C1:Responsory Sexta
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
-@Commune/C1:Responsory Nona
-
-[Ant Vespera 3]
-Yo planté, * Apolo regó, pero Dios hizo crecer. Aleluya. ;;109
-Muy a gusto presumo * de mis debilidades, porque así residirá en mí la fuerza de Cristo.;;112
-La gracia de Dios * en mí no ha sido estéril, sino que su gracia permanece siempre en mí.;;115
-En Damasco, el gobernador * del rey Aretas quiso prenderme; algunos hermanos me descolgaron por la muralla, metido en un costal, y así escapé de sus manos, con la ayuda del Señor.;;125
-Tres veces me han azotado * con varas, una vez me han apedreado. He padecido tres naufragios por el nombre de Cristo.;;138
-
-[Ant 3]
-@Sancti/06-30:Ant 1

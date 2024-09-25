@@ -1,19 +1,11 @@
 [Rank]
 Fest des hochheiligen Rosenkranzes der heiligen Jungfrau Maria;;Duplex 2 classis;;5.1;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Fest des hochheiligen Rosenkranzes der heiligen Jungfrau Maria;;Duplex 2 classis;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Fest des hochheiligen Rosenkranzes der heiligen Jungfrau Maria;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Marcum;
 
 [Ant Vespera]
 Wer ist denn diese, * so lieblich wie eine Taube, wie eine Rose, die eingepflanzt ist am Wasserbache?;;109
@@ -60,19 +52,6 @@ Selig bist du, * Jungfrau Maria, Mutter Gottes, die du dem Herrn geglaubt hast; 
 [Oratio]
 O Gott, dessen eingeborener Sohn durch sein Leben, seinen Tod und seine Auferstehung uns das Glück der ewigen Seligkeit verschafft hat, gewähre uns, wir bitten dich, die Gnade, dass wir, die wir diese geheimnisvollen Tatsachen beim hochheiligen Rosenkranz zu Ehren der heiligen Jungfrau Maria betrachten, das nachahmen, was sie in sich enthalten, und das erreichen, was sie verbergen.
 $Per eumdem
-
-[Commemoratio 2]
-!Kommemoration des hl. Papstes Markus
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Erhöre, o Herr, unsere Bitten: und auf die Fürsprache deines heiligen Bekenners und Bischofs Markus gewähre uns gnädig Verzeihung und Freundschaft mit dir.
-$Per Dominum
-_
-!Kommemoration der hl. Martyrer Sergius, Bacchus, Marzellus und Apulejus
-@Commune/C3:Oratio proper
-$Oremus
-Deiner heiligen Martyrer, o Herr, Sergius, Bacchus, Marzellus und Apelejus selige Verdienste lass uns förderlich sein: und sie mögen uns in der Liebe zu dir zum Glühen bringen.
-$Per Dominum
 
 [Invit]
 Die Festlichkeit des Rosenkranzes der Jungfrau Maria lasst uns feiern: * Christus, ihren Sohn, lasst uns als Herrn anbeten.
@@ -278,6 +257,19 @@ R. Und hat sie wohnen lassen in seinem Zelt.
 [Ant 2]
 Das heutige Hochfest * des hochheiligen Rosenkranzes der Gottesmutter Maria wollen wir in Andacht feiern, damit diese für uns Fürsprache halte beim Herrn Jesus Christus.
 
+[Commemoratio 2]
+!Kommemoration des hl. Papstes Markus
+@Commune/C4:Oratio proper Gregem
+$Oremus
+Erhöre, o Herr, unsere Bitten: und auf die Fürsprache deines heiligen Bekenners und Bischofs Markus gewähre uns gnädig Verzeihung und Freundschaft mit dir.
+$Per Dominum
+_
+!Kommemoration der hl. Martyrer Sergius, Bacchus, Marzellus und Apulejus
+@Commune/C3:Oratio proper
+$Oremus
+Deiner heiligen Martyrer, o Herr, Sergius, Bacchus, Marzellus und Apelejus selige Verdienste lass uns förderlich sein: und sie mögen uns in der Liebe zu dir zum Glühen bringen.
+$Per Dominum
+
 [Lectio Prima]
 !Sir 24,17-18
 v. Ich bin wie eine auf dem Libanon hochwachsende Zeder und wie eine Zypresse auf dem Berg Sion: wie eine in die Höhe ragende Palme in Kadesch, und wie ein blühender Rosenstrauch in Jericho.
@@ -350,9 +342,6 @@ Und windet Kränze ihr zum Preis,
 Die euch als Mutter liebt so zart.
 _
 @Psalterium/Doxologies:Nat
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 O selige Mutter * und unversehrte Jungfrau, glorienreiche Königin der Welt, mögen doch alle deinen Beistand fühlen, die dein Hochfest des hochheiligen Rosenkranzes feiern.

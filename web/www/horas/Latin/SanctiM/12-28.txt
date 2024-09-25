@@ -11,13 +11,14 @@ Si coram * homínibus torménta passi sunt, † spes electórum est immortális 
 Innocéntium * pássio, Christi exsultátio: † Heródes confúsus est qui eos persecútus est.
 
 [Ant Matutinum]
-@CommuneM/C3:Ant Matutinum:1-9
+@Commune/C3::1-2
+@CommuneM/C3:AntMatutinumM:1
+@Commune/C3::4-7
 @:AntMatutinumM:1
-@CommuneM/C3:Ant Matutinum:11
+@Commune/C3::9
 @:AntMatutinumM:2
-@CommuneM/C3:Ant Matutinum:13-16
+@CommuneM/C3:AntMatutinumM:3-4
 ;;259;254;255
-@CommuneM/C3:Ant Matutinum:18-19
 
 [Lectio1]
 @Sancti/12-28:Lectio1
@@ -98,4 +99,3 @@ R. Deus noster.
 
 [Ant Vespera 3]
 @Sancti/12-25::s/129/131/
-

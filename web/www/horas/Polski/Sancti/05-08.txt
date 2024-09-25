@@ -1,16 +1,6 @@
 [Rank]
 Ukazanie się Św. Michała Archanioła;;Duplex majus;;4;;
 
-[Rule]
-proprium
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=137
-Contract8
-Quorum Festum
-
 [Ant Vespera]
 Anioł stanął * przed ołtarzem kościoła, mając kadzielnicę złotą w ręku swojem.
 Gdy walczył * Michał Archanioł ze smokiem, dał się głos słyszeć: Chwała Bogu naszemu, alleluja.
@@ -18,10 +8,32 @@ Michale Archaniele, * postanowiłem cię książeciem nad wszystkimi duszami, kt
 Aniołowie Pańscy, * błogosławcie Pana na wieki.
 Aniołowie, Archaniołowie, * Trony, Panowania, Księstwa, Władze i Moce niebieskie, chwalcie Pana Zastępów, alleluja.
 
-[Capitulum Laudes]
-!Rev 1:1-2
-v. Objawił Bóg, co się ma dziać wkrótce i oznajmił przez Anioła swego słudze swemu Janowi, który świadectwo wydał słowu Bożemu i świadectwo Jezusa Chrystusa, cokolwiek widział.
-$Deo gratias
+[Hymnus Vespera]
+v. Ciebie, światłość i Bożą,
+Jezu, życie dusz, 
+Z tymi, co Twój orszak tworzą,
+Z Aniołami chwalim w niebie.
+_
+W koło Ciebie sług miljony,
+Tłum anielskich wodzów krąży,
+Lecz znak Krzyża wywieszony,
+Dzierży Michał, ich chorąży.
+_
+Przezeń srogi smok strącony,
+Na piekielnej dno otchłani,
+I wraz tracą niebios trony,
+Aniołowie zbuntowani.
+_
+Za tym wodzem idźmy śmiało
+W bój szatanów pysznych głową,
+Byśmy się okryli chwałą
+Przed stolicą Barankową.
+_
+Ojcze, Ciebie chwalim szczerze;
+Krwią kupionych Syna Twego,
+Mocą Ducha silnych w wierze
+Spraw niech nas Anieli strzegą.
+Amen.
 
 [HymnusM Vespera]
 v. Ciebie Chryste nasz żywocie
@@ -51,33 +63,6 @@ I Synowi z Duchem Świętym
 Pieśń nabożną śpiewajmy
 Który w personach troisty
 Jeden Bóg przedwieczny.
-Amen.
-
-[Hymnus Vespera]
-v. Ciebie, światłość i Bożą,
-Jezu, życie dusz, 
-Z tymi, co Twój orszak tworzą,
-Z Aniołami chwalim w niebie.
-_
-W koło Ciebie sług miljony,
-Tłum anielskich wodzów krąży,
-Lecz znak Krzyża wywieszony,
-Dzierży Michał, ich chorąży.
-_
-Przezeń srogi smok strącony,
-Na piekielnej dno otchłani,
-I wraz tracą niebios trony,
-Aniołowie zbuntowani.
-_
-Za tym wodzem idźmy śmiało
-W bój szatanów pysznych głową,
-Byśmy się okryli chwałą
-Przed stolicą Barankową.
-_
-Ojcze, Ciebie chwalim szczerze;
-Krwią kupionych Syna Twego,
-Mocą Ducha silnych w wierze
-Spraw niech nas Anieli strzegą.
 Amen.
 
 [Versum 1]
@@ -186,6 +171,11 @@ V. Anioł stanął przed ołtarzem kościoła, mając kadzielnicę złotą w rę
 R. Wystąpił w obronie dusz sprawiedliwych. (Alleluja.)
 &Gloria
 R. Wystąpił w obronie dusz sprawiedliwych. (Alleluja.)
+
+[Capitulum Laudes]
+!Rev 1:1-2
+v. Objawił Bóg, co się ma dziać wkrótce i oznajmił przez Anioła swego słudze swemu Janowi, który świadectwo wydał słowu Bożemu i świadectwo Jezusa Chrystusa, cokolwiek widział.
+$Deo gratias
 
 [Hymnus Laudes]
 Chryste, Aniołów świętych chlubo,

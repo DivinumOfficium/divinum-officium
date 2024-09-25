@@ -1,9 +1,5 @@
 [Rank]
-S. Petri Celestini Papae Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-Gloria
-Prefatio=Apostolis
+S. Petri Celestini Papae Confessoris;;Duplex;;3;;vide C4b
 
 [Comment]
 # 19 V – Św. Piotra Celestyna, Papieża i Wyznawcy
@@ -15,47 +11,9 @@ Msza wspólna nr 8 Si diligis, z wyjątkiem Kolekty.
 
 Wspomnienie św. Pudencjany, Dziewicy. Kult św. Pudencjany wiąże się z założeniem kościoła w domu senatora Pudensa. Według tradycji dom ten gościł św. Piotra.
 
-[Introitus]
-@Commune/C4b:Introitus
-
 [Oratio]
 Boże, Tyś wyniósł św. Piotra Celestyna na szczyty papiestwa i nauczyłeś go mniej je cenić niż pokorę, spraw łaskawie, abyśmy za jego przykładem gardząc wszystkim, co ziemskie, zdołali szczęśliwie osiągnąć nagrodę obiecaną pokornym.
 $Per Dominum
 
-[Lectio]
-@Commune/C4b:Lectio
-
-[Graduale]
-@Commune/C4b:Graduale
-
-[GradualeP]
-@Commune/C4b:GradualeP
-
-[Evangelium]
-@Commune/C4b:Evangelium
-
-[Offertorium]
-@Commune/C4b:Offertorium
-
-[Secreta]
-@Commune/C4b:Secreta
-
-[Communio]
-@Commune/C4b:Communio
-
 [Postcommunio]
-@Commune/C4b:Postcommunio
-
-
-[Commemoratio Oratio]
-!Wspomnienie św. Pudencjany
-Wysłuchaj nas, Boże, nasz Zbawicielu, i spraw, abyśmy radując się z uroczystości świętej Twojej Dziewicy Pudencjany, nabyli uczucia synowskiego oddania.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Wspomnienie św. Pudencjany
-@Commune/C6b:Secreta
-
-[Commemoratio Postcommunio]
-!Wspomnienie św. Pudencjany
-@Commune/C6b:Postcommunio
+@Commune/C4::s/N\./Piotra Celestyna/

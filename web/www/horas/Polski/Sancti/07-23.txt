@@ -1,12 +1,8 @@
 [Rank]
 Św. Apolinarego Biskupa i Męczennika;;Duplex;;3;;vide C2
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Św. Apolinarego Biskupa i Męczennika;;Duplex optional;;2;;vide C2
-
-[Rule]
-vide C2;
-9 lectiones;
 
 [Oratio]
 Boże, nagrodo dusz wiernych, któryś dzień ten uświęcił męczeństwem świętego Apolinarego, racz sprawić, byśmy słudzy Twoi, obchodząc jego pamiątkę, za modlitwami jego przebaczenie otrzymali.
@@ -19,7 +15,7 @@ $Oremus
 Daj, prosimy Cię, wszechmogący Boże, aby chwalebna uroczystość błogosławionego Liberjusza, Wyznawcy Twego i Biskupa, pomnożyła w nas pobożność i do zbawienia dopomogła.
 $Per Dominum.
 
-[Commemoratio Sabbat](rubrica 1570 vel rubrica 1910 vel rubrica divino)
+[Commemoratio Sabbat] (rubrica 1570 vel rubrica 1910 vel rubrica divino)
 !Wspominamy Św. Liberjusza Biskupa i Wyznawcy
 @Commune/C4:Oratio proper
 $Oremus

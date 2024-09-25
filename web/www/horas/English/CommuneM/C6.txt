@@ -1,52 +1,18 @@
-@Commune/C6
-
 [AntMatutinumM]
 Thy name is as oil poured out: * therefore young maidens have loved thee.;;96
 O my love, * sweet and comely as Jerusalem: terrible as an army set in array.;;97
 She hath girded * her loins with strength, and hath strengthened her arm.;;98
 And at midnight * there was a cry made: Behold the bridegroom cometh, go ye forth to meet him.;;249;250;251
 
-[MM Capitulum]
-!2 Cor 11:2
-For I am jealous of you with the jealousy of God. For I have espoused you to one husband that I may present you as a chaste virgin to Christ.
-$Deo gratias
-_
-V. Thou hast loved righteousness, and hated iniquity
-R. Therefore God, thy God, hath anointed thee with the oil of justice.
-
-[MM Capitulum mart]
-!Eccli 51:4-5
-And thou hast delivered me, according to the multitude of the mercy of thy name, from them that did roar, prepared to devour. Out of the hands of them that sought my life, and from the gates of afflictions, which compassed me about
-$Deo gratias
-_
-R. Thou hast loved righteousness, and hated iniquity
-* Therefore God, thy God, hath anointed thee with the oil of justice.
-
-[Capitulum Nona1]
-!Sir 51:13-14
-v. O Lord, my God, thou hast exalted my dwelling place upon the earth and I have~
-prayed for death to pass away. I called upon the Lord, the father of my Lord,~
-that he would not leave me in the day of my trouble, and in the time of the~
-proud without help.
-$Deo gratias
-
-[Lectio3 in 2 loco]
-!Sir 51:13-17
-13 Thou hast exalted my dwelling place upon the earth and I have prayed for death to pass away. 
-14 I called upon the Lord, the father of my Lord, that he would not leave me in the day of my trouble, and in the time of the proud without help. 
-15 I will praise thy name continually, and will praise it with thanksgiving, and my prayer was heard.
-16 And thou hast saved me from destruction, and hast delivered me from the evil time. 
-17 Therefore I will give thanks, and praise thee, and bless the name of the Lord.
-
 [Lectio9 in 3 loco]
-@Commune/C6:Lectio7 in 2 loco:s/ In.*//s
+@Commune/C6:Lectio7 in 3 loco:s/ In.*//s
 
 [Lectio10 in 3 loco]
-@Commune/C6:Lectio7 in 2 loco:s/.*In/In/s s/$/~/
-@Commune/C6:Lectio8 in 2 loco:s/ Give.*//s
+@Commune/C6:Lectio7 in 3 loco:s/.*In/In/s s/$/~/
+@Commune/C6:Lectio8 in 3 loco:s/ Give.*//s
 
 [Lectio11 in 3 loco]
-@Commune/C6:Lectio8 in 2 loco:s/.*Give/Give/s
+@Commune/C6:Lectio8 in 3 loco:s/.*Give/Give/s
 
 [MM Capitulum]
 @Commune/C6:Capitulum Sexta
