@@ -435,9 +435,10 @@ sub get_loadtime_inclusion($$$$$$$) {
   my $text;
   our ($version, $missa, @dayname);
 
-  # Adjust offices of martyrs in Paschaltide to use the special common.
-  if ($dayname[0] =~ /Pasc/i && !$missa && $callerfname !~ /C[23]/) {
-    $ftitle =~ s/(C[23])(?!p)/$1p/g;
+  # Adjust offices of apostles & martyrs in Paschaltide to use the special common.
+  # Github #525: Safeguard against infinite loops: exclude Hymnus, Oratio, and Lectio which are partially copied from "extra Tempus Paschalis"
+  if ($dayname[0] =~ /Pasc/i && !$missa && $callerfname !~ /C[123]/ && $section !~ /Hymnus|Oratio|Lectio/i) {
+    $ftitle =~ s/(C[123])(?![p\d])/$1p/g;
   }
 
   # Load the file to resolve the reference; if none specified, it's a

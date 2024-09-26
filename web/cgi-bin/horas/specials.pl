@@ -272,7 +272,7 @@ sub specials {
                 Nona => 'Versum Nona',        #	getproprium substitutes Versum 2 only from Commune
               );
               ($wr, $cr) = getproprium("Responsory Breve $hora", $lang, $seasonalflag, 1);
-              $wr =~ s/\s*$/\n\_\n/;
+              $wr =~ s/\s*$/\n\_\n/ if $wr;
             }
 
             ($vers, $cvers) = getproprium($replace{$hora}, $lang, $seasonalflag, 1);
@@ -1139,10 +1139,25 @@ sub getcommemoratio {
   if ($rank[3] =~ /(ex|vide)\s+(.*)\s*$/i) {
     my $file = $2;
     if ($w{Rule} =~ /Comex=(.*?);/i && $rank < 5) { $file = $1; }
-    if ($file =~ /^C[0-7]+$/ && $dayname[0] =~ /Pasc/i) { $file .= 'p'; }
+    if ($file =~ /^C[1-3]a?$/ && $dayname[0] =~ /Pasc/i) { $file .= 'p'; }
     $file = "$file.txt";
-    if ($file =~ /^C/) { $file = "Commune/$file"; }
+    if ($file =~ /^C/) { $file = subdirname('Commune', $version) . "$file"; }
     %c = %{setupstring($lang, $file)};
+
+    if ($c{Rank} =~ /;;(ex|vide)\s+(.*)\s*$/i) {
+
+      # allow daisy-chained Commune references to the second-level
+      $file = $2;
+      if ($file =~ /^C[1-3]a?$/ && $dayname[0] =~ /Pasc/i) { $file .= 'p'; }
+      $file = "$file.txt";
+      if ($file =~ /^C/) { $file = subdirname('Commune', $version) . "$file"; }
+      my %c2 = %{setupstring($lang, $file)};
+
+      foreach my $i (1, 2, 3) {
+        $c{"Ant $i"} ||= $c2{"Ant $i"};
+        $c{"Versum $i"} ||= $c2{"Versum $i"};
+      }
+    }
   } else {
     %$c = {};
   }
@@ -1283,7 +1298,7 @@ sub getproprium {
     return ($w, $c);
   }
 
-  if (!$w && $communetype && ($communetype =~ /ex/i || $flag)) {
+  if (!$w && $communetype && ($communetype =~ /^ex/i || $flag)) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
     my $cn = $commune;
     my $substitute =
@@ -1313,10 +1328,13 @@ sub getproprium {
         $name .= " ex $substitute";
         last;
       } elsif ($cn !~ /^C/i
-        && ($com{Rank} =~ /;;ex\s*(C[0-9a-z]+)/i || $com{Rank} =~ /;;ex\s*(SanctiM?\/.*?)\s/i))
+        && ($com{Rank} =~ /;;(ex|vide)\s*(C[0-9a-z]+)/i || $com{Rank} =~ /;;(ex|vide)\s*(SanctiM?\/.*?)\s/i))
       {
         # if Pseudo-Commune ex Sancti, ensure daisy-chained references work (max. 5 nested references)
-        my $fn = $1;
+        # vide only followed if $flag is set
+        my $ctype = $1;
+        last if $ctype eq 'vide' && !$flag;
+        my $fn = $2;
         $cn = ($fn =~ /^Sancti/i) ? $fn : subdirname('Commune', $version) . "$fn";
         %com = %{setupstring($lang, "$cn.txt")};
         next;
