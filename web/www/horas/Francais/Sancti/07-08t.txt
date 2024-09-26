@@ -2,26 +2,32 @@
 Ste. Elisabeth Reine du Portugal veuve;;Semiduplex;;2;;vide C7
 
 [Ant Vespera]
-Tandis que le Roi * était à son repos, mon nard a donné son parfum de suavité.
-Et le roi * porte ses désirs sur ta beauté puisqu'il est ton seigneur.
-Puissant en œuvres * et en paroles, il adoucit la colère du Seigneur et rapprocha le cœur du père vers le fils.
-Il était comme l'arc-en-ciel qui brille * dans les nuées lumineuses et comme la fleur des rosiers aux jours du printemps.
-Il a brillé durant sa vie comme l'étoile du matin * au milieu des nuages et comme la lune dans son plein.
+@Commune/C7::1 
+Et le roi * porte ses désirs sur ta beauté puisqu'il est ton seigneur.;;112
+Puissant en œuvres * et en paroles, il adoucit la colère du Seigneur et rapprocha le cœur du père vers le fils.;;121
+Il était comme l'arc-en-ciel qui brille * dans les nuées lumineuses et comme la fleur des rosiers aux jours du printemps.;;126
+Il a brillé durant sa vie comme l'étoile du matin * au milieu des nuages et comme la lune dans son plein.;;147
 
 [Ant Matutinum]
 Élevée est la magnificence d'Élisabeth au-dessus des cieux.
 Viens, mon élue, et je placerai mon trône en toi, car le Roi désire ta beauté.
 Elle a reçu la bénédiction du Seigneur et la miséricorde de son Dieu sauveur.
-V. De nombreuses filles ont amassé des richesses.
-R. Mais vous, vous les avez toutes surpassées.
 À cause de votre vérité, de votre douceur et de votre justice, votre droite vous conduira de manière merveilleuse.
 Elle brisera l'arc, brisera les armes et brûlera les boucliers par le feu.
 Votre droite est pleine de justice et de miséricorde.
-V. Votre verge et votre bâton.
-R. Me consolent.
 La louange et la beauté sont devant lui, la sainteté et la magnificence dans sa sanctification.
 Les cieux annoncent sa justice et tous les peuples voient sa gloire.
 Il jugera avec justice et les peuples avec équité.
+
+[Nocturn 1 Versum]
+V. De nombreuses filles ont amassé des richesses.
+R. Mais vous, vous les avez toutes surpassées.
+
+[Nocturn 2 Versum]
+V. Votre verge et votre bâton.
+R. Me consolent.
+
+[Nocturn 3 Versum]
 V. Le feu le précède.
 R. Et il embrasera ses ennemis tout autour.
 
@@ -44,6 +50,3 @@ V. Vous l'avez couronnée, Seigneur, de votre bon vouloir.
 R. Et vous ne l'avez pas trompée dans le souhait de ses lèvres.
 &Gloire
 R. Et vous ne l'avez pas trompée dans le souhait de ses lèvres.
-
-[Ant Laudes]
-@:Ant Vespera

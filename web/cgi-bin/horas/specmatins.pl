@@ -721,7 +721,7 @@ sub lectio : ScriptFunc {
     && (
       (    $communetype =~ /^ex/i
         && $commune =~ /Tempora/i
-        && $rank > 3)    # either we have 'ex C.' on Duplex majus or higher
+        && $rank > 3)    # either we have 'ex Tempora' on Duplex majus or higher
       || (
         (
           $nocturn == 1                        # or we are in the first nocturn
@@ -736,8 +736,13 @@ sub lectio : ScriptFunc {
     if ($w && $num == 1) { setbuild2("Lectio1-3 from Tempora/$file replacing homily"); }
   }
 
-  #look for commune if sancti and 'ex commune'
-  if (!$w && $winner =~ /sancti/i && $rule =~ /ex C/) {
+  #look for commune if sancti and 'ex commune' (for Trident also "vide")
+  if (!$w
+    && $winner =~ /sancti/i
+    && $commune =~ /^C/
+    && $communetype =~ /^ex/i
+    && ($rank > 3 || ($rule =~ /in (\d) Nocturno/i && $1 eq $nocturn)))
+  {
     my %com = (columnsel($lang)) ? %commune : %commune2;
     my $lecnum = "Lectio$num";
 
@@ -754,10 +759,10 @@ sub lectio : ScriptFunc {
       if ($w && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) { setbuild2("Lectio$num ex $commune{Name}"); }
     }
 
-    if ($w && $num == 2 && $version =~ /1960/) {
+    if ($w && contract_scripture($num)) {
       $lecnum =~ s/Lectio2/Lectio3/;
       $w .= $com{$lecnum};
-      setbuild2("Contract scripture for Rubrics 1960");
+      setbuild2("Contract scripture from Commune for Rubrics 1960");
     }
   }
 
@@ -817,7 +822,7 @@ sub lectio : ScriptFunc {
     my %c = (columnsel($lang)) ? %commune : %commune2;
     $w = $c{"Lectio$num"};
 
-    if ($num == 2 && $version =~ /1960/) {
+    if (contract_scripture($num)) {
       my $w1 = $c{'Lectio3'};
       $w .= $w1;
     }

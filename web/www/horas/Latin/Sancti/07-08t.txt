@@ -9,7 +9,7 @@ vide C7a;
 in 1 Nocturno Lectiones ex Commune in 1 loco
 
 [Ant Vespera]
-@Commune/C7::1 
+@Commune/C7::1
 Et concupiscet Rex * decorem tuum, quia ipse est Dominus Deus tuus.;;112
 Potens in opere * et sermone, lenivit iracundiam Domini, et conciliavit cor patris ad filium.;;121
 Quasi arcus refulgens * inter nebulas gloriæ, et quasi flos rosarum in diebus vernis.;;126
@@ -82,4 +82,5 @@ R. Et divitias nihil esse duxi in comparatióne illíus.
 R. Et divitias nihil esse duxi in comparatióne illíus.
 
 [Ant Laudes]
-@:Ant Vespera: s/;;.*//gs
+@Commune/C7:Ant Vespera:1 s/;;109//
+@:Ant Vespera:2-5 s/;;.*//g
