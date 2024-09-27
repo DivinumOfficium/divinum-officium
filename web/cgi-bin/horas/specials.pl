@@ -1153,6 +1153,8 @@ sub getcommemoratio {
       if ($file =~ /^C/) { $file = subdirname('Commune', $version) . "$file"; }
       my %c2 = %{setupstring($lang, $file)};
 
+      $c{"Oratio"} ||= $c2{"Oratio"};
+
       foreach my $i (1, 2, 3) {
         $c{"Ant $i"} ||= $c2{"Ant $i"};
         $c{"Versum $i"} ||= $c2{"Versum $i"};
@@ -1249,7 +1251,10 @@ sub vigilia_commemoratio {
   if ($version =~ /1955|1960/) {
     my $dt = sprintf("%02i-%02i", $month, $day);
     if ($dt !~ /(08\-14|06\-23|06\-28|08\-09)/) { return ''; }
-  } elsif ($dayname[0] =~ /Adv|Quad[0-6]/i || ($dayname[0] =~ /Quadp3/i && $dayofweek >= 4)) {
+  } elsif ($dayname[0] =~ /Adv|Quad[0-6]/i
+    || ($dayname[0] =~ /Quadp3/i && $dayofweek >= 4)
+    || ($dayname[0] =~ /Quadp/i && $version =~ /Monastic.*Divino/i))
+  {
     return '';
   }
 
