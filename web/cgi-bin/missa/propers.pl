@@ -246,7 +246,12 @@ sub oratio {
     $c = replaceNpb($c, $pope, $lang, 'p', 'um') if $coron =~ /Coronatio/i;
     $retvalue .= "_\n\$Papa\n$c";
   }
-  return resolve_refs($retvalue, $lang) if $rule =~ /omit .*? commemoratio/i || ($version =~ /196/ && $solemn);
+
+  if ($rule =~ /omit .*? commemoratio/i
+    || ($version =~ /196/ && $solemn && !($winner =~ /Sancti/ && $tempora{Rank} =~ /Dominica/i)))
+  {
+    return resolve_refs($retvalue, $lang);
+  }
   $w = '';
   our $oremusflag = "_\n" . prayer('Oremus', $lang);
   $oremusflag = '' if $type =~ /Secreta/i || $sub_unica_conc;
