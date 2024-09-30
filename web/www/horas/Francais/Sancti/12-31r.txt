@@ -1,6 +1,6 @@
 [Rank]
 St Sylvestre Pape et Confesseur;;Duplex;;1.1;;vide C4
 
-[Oratio]
-O Pasteur éternel, veillez avec bonté sur Votre troupeau : assurez-lui une protection constante par saint Sylvestre, Souverain Pontife, à qui Vous avez donné d’être pasteur de toute l’Église.
-$Per Dominum.
+[Rule]
+vide C4;
+CPapaC=Sylvestre;

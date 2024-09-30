@@ -1,12 +1,18 @@
 @Tempora/Nat1-0
 
 [Rank]
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5.9;;ex SanctiM/12-25
+De Dominica Infra Octavam Nativitatis;;Semiduplex;;5.9;;ex SanctiM/12-25
 
 [Rule]
 3 lectiones
 Psalmi Dominica
 Antiphonas horas
+
+[Comment]
+This file to be used when Dominica transferred to Dec30 (M1617) or 29 (M1930)
+
+[Versum 1]
+@TemporaM/Nat1-0
 
 [Ant Matutinum]
 @Sancti/01-01::11 s/;;.*//
@@ -16,7 +22,7 @@ Antiphonas horas
 ;;
 ;;
 @Sancti/01-01::4-5
-Natus est nobis * hódie Savátor, qui est Christus Dóminus, in civitáte David.
+Natus est nobis * hódie Salvátor, qui est Christus Dóminus, in civitáte David.
 ;;
 ;;
 ;;
@@ -47,9 +53,6 @@ Natus est nobis * hódie Savátor, qui est Christus Dóminus, in civitáte David
 
 [Versum 2]
 @Sancti/12-25:Responsory Sexta:s/.*_.//s
-
-[Versum 1]
-@TemporaM/Nat1-0
 
 [Versum 3]
 @:Versum 1

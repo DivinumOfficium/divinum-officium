@@ -1,18 +1,8 @@
 [Rank]
 Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Dominica Infra Octavam Nativitatis;;Semiduplex;;6;;ex Sancti/12-25
-
-[Rule]
-9 lectiones
-ex Sancti/12-25
-Lectio1 Sancti
-Psalmi Dominica
-no commemoratio (rubrica 1960)
-
-[Ant Vespera]
-@Sancti/12-25:Ant Vespera 3
 
 [Versum 1]
 V. Le Verbe s’est fait chair, alléluia.
@@ -25,12 +15,6 @@ Tandis qu’un paisible silence * enveloppait toutes choses et que la nuit étai
 Dieu tout-puissant et éternel, dirigez nos actions selon votre bon plaisir pour que nous méritions d’abonder en bonnes œuvres au nom de votre Fils bien-aimé ;
 $Qui tecum
 
-[Commemoratio 2] (rubrica divino aut rubrica tridentina aut rubrica monastica)
-@Sancti/12-25:Octava
-
-[Commemoratio 3] (rubrica divino aut rubrica tridentina aut rubrica monastica)
-@Sancti/12-25:Octava
-
 [Responsory3](rubrica 1960)
 @Sancti/12-25:Responsory4
 &Gloria
@@ -41,20 +25,11 @@ Sermon de saint Léon Pape
 !Sermo 9 de Nativ. Dom.
 Mes bien-aimés, la grandeur de l’œuvre divine excède et surpasse de beaucoup le pouvoir du langage humain ; et de là vient la difficulté de parler, comme le motif de ne pas se taire. Car, dans le Christ Jésus Fils de Dieu, ce n’est pas seulement à son essence divine, mais aussi à sa nature humaine, que s’applique la parole du prophète : Qui racontera sa génération ? Comment en effet l’une et l’autre substances s’unissent dans une seule personne, voilà ce que la parole ne peut pas exposer, à moins que la foi ne le croie. Et c’est pourquoi le sujet de louanges est intarissable, puisque la richesse des paroles de celui qui loue n’est jamais suffisante
 
-[Responsory4]
-@Sancti/12-25:Responsory5
-
 [Lectio5]
 Réjouissons-nous donc de notre insuffisance à parler d’une si grande miséricorde ; et puisque nous ne pouvons pas exprimer la sublimité du mystère de notre salut, sentons combien il nous est bon d’être ainsi vaincus. Car personne n’approche davantage de la connaissance de la vérité que celui qui comprend qu’en matière de divins mystères, il lui reste toujours beaucoup à chercher, même s’il a déjà beaucoup progressé. Celui en effet qui présume avoir atteint ce qu’il poursuit, ne trouve pas ce qu’il cherche, mais défaille en sa recherche.
 
-[Responsory5]
-@Sancti/12-25:Responsory6
-
 [Lectio6]
 Mais, de peur que nous soyons troublés par les limites de notre infirmité, les voix de l’Évangile et des prophètes nous aident. Elles nous donnent tant de ferveur et de lumière, que la nativité du Seigneur, par laquelle le Verbe s’est fait chair, il nous semble moins la commémorer comme passée, que la contempler comme présente. Ce que l’Ange a annoncé aux bergers veillant à la garde de leurs troupeaux, remplit encore nos oreilles ; et si nous sommes à la tête des brebis du Seigneur, c’est que les paroles divinement murmurées à l’oreille de notre cœur y sont conservées. C’est comme si l’on nous disait encore dans la solennité d’aujourd’hui : Je vous apporte la bonne nouvelle d’une grande joie pour tout le peuple, car il vous est né aujourd’hui un Sauveur, qui est le Christ Seigneur, dans la cité de David.
-
-[Responsory6]
-@Sancti/12-25:Responsory7
 
 [Lectio7]
 Lecture du saint Évangile selon saint Luc
@@ -64,9 +39,6 @@ _
 Homélie de saint Ambroise Évêque
 !Lib. 2 in cap. 2 Lucæ, prope finem
 Vous voyez la grâce abondamment répandue sur tous, par la génération du Seigneur, et le don de prophétie refusé seulement aux incrédules mais non aux justes. Voici que Siméon aussi prophétise que le Seigneur Jésus-Christ est venu pour la chute et le relèvement d’un grand nombre, pour discerner les mérites des justes et des méchants, et décerner, en juge véridique et juste, selon la qualité de nos actes, des supplices ou des récompenses.
-
-[Responsory7]
-@Sancti/12-25:Responsory8
 
 [Lectio8]
 Et ton âme, un glaive la transpercera. Ni l’Ëcriture, ni l’histoire ne nous enseignent que Marie s’en soit allée de cette vie par le martyre d’une mort corporelle. Car ce n’est pas l’âme, mais le corps qui est transpercé par le glaive matériel. Cela nous montre que la prudence de Marie n’ignorait pas le céleste mystère. En effet le verbe de Dieu est vivant, efficace et plus acéré que le glaive le plus aiguisé, pénétrant jusqu'à la division de l'âme et de l'esprit, des articulations et des moelles, il scrute les pensées des cœurs et les secrets des esprits, car tout est à nu et à découvert pour le Fils de Dieu, auquel n'échappent pas les secrets de la conscience.
@@ -88,12 +60,6 @@ Siméon a donc prophétisé ; la Vierge avait prophétisé ; une femme mariée (
 v. Frères, tant que l’héritier est enfant, il ne diffère point du serviteur, bien qu’il soit maître de tous les biens ; mais il est soumis aux tuteurs et curateurs, jusqu’au temps fixé par son père.
 $Deo gratias
 
-[Versum 2]
-@:Versum 1
-
-[Ant 2]
-@:Ant 1
-
 [Lectio Prima] (rubrica divino aut rubrica tridentina aut rubrica monastica)
 !Gal 4:7
 v. C'est pourquoi nul n’est plus serviteur, mais fils ; mais s’il est fils, il est, grâce à Dieu, héritier.
@@ -102,14 +68,6 @@ v. C'est pourquoi nul n’est plus serviteur, mais fils ; mais s’il est fils, 
 !Gal 4:4-5
 v. Mais, dès qu’est arrivée la plénitude du temps, Dieu a envoyé son Fils, fait chair d’une femme, fait chair sous la loi, pour racheter ceux qui étaient sous la loi et nous faire recevoir l’adoption des fils.
 $Deo gratias
-
-[Capitulum Nona]
-!Gal 4:7
-v. C'est pourquoi nul n’est plus serviteur, mais fils ; mais s’il est fils, il est, grâce à Dieu, héritier.
-$Deo gratias
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 L’enfant Jésus grandissait en * âge et en sagesse, devant Dieu et devant les hommes.

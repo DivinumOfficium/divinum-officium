@@ -1,14 +1,8 @@
 [Rank]
 Septima die infra Octavam Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-06
 
-[Rank] (rubrica 196)
+[Rank] (rubrica 196 aut rubrica 1955)
 Die Duodecima Januarii;;Feria;;1.8;;vide Sancti/01-06
-
-[Hymnus Vespera] (rubrica 1960)
-@Sancti/01-06:Hymnus Vespera
-
-[Lectio1] (rubrica 1960)
-@Tempora/Epi1-0a:Lectio1
 
 [Lectio1]
 De l'Epitre aux Romains
@@ -19,36 +13,18 @@ De l'Epitre aux Romains
 4 eux qui, pour sauver ma vie, ont exposé leur tête ; ce n'est pas moi seul qui leur rend grâces, ce sont encore toutes les Eglises des Gentils.
 5 Saluez aussi l'Eglise qui est dans leur maison. Saluez Epénète, mon bien-aimé, qui a été pour le Christ les prémices de l'Asie
 
-[Responsory1] (rubrica 1960)
-@Sancti/01-06:Responsory1
-
-[Responsory1] (rubrica tridentina aut divino)
-@Sancti/01-06:Responsory1InfraOctavam
-
-[Lectio2] (rubrica 1960)
-@Tempora/Epi1-0a:Lectio2
-
 [Lectio2]
 !Rom 16:17-19
 17 Je vous exhorte, mes frères, à prendre garde à ceux qui causent les divisions et les scandales, en s'écartant de l'enseignement que vous avez reçu ; éloignez-vous d'eux.
 18 Car de tels hommes ne servent point le Christ Notre-Seigneur, mais leur propre ventre, et avec leurs paroles douces et leur langage flatteur, ils séduisent les cœurs des simples.
 19 Car votre obéissance est arrivée aux oreilles de tous ; je me réjouis donc à votre sujet ; mais je désire que vous soyez prudents pour le bien et simple pour le mal.
 
-[Responsory2]
-@Sancti/01-06:Responsory2
-
-[Lectio3] (rubrica 1960)
-@Tempora/Epi1-0a:Lectio3
-
-[Lectio3] (rubrica tridentina aut divino)
+[Lectio3]
 !Rom 16:21-24
 21 Timothée, le compagnon de mes travaux, vous salue, ainsi que Lucius, Jason et Sosipater, mes parents.
 22 Je vous salue dans le Seigneur, moi Tertius, qui ai écrit cette lettre.
 23 Caïus, mon hôte et celui de l'Eglise, vous salue. Eraste, le trésorier de la ville, vous salue, ainsi que Quartus, notre frère.
 24 Que la grâce de Notre-Seigneur Jésus-Christ soit avec vous tous ! Amen !
-
-[Responsory3]
-@Sancti/01-06:Responsory3
 
 [Lectio4]
 Sermon de saint Léon Pape

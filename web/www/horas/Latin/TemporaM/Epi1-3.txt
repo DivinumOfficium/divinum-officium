@@ -1,7 +1,5 @@
 @Tempora/Epi1-3
 
-[LectioM3]
-@Tempora/Epi1-3:Lectio3:s/18/14/ s/15.*//s
+[Lectio3]
+@Tempora/Epi1-3::s/\n15 / ¶\n15 /
 
-[LectioM4]
-@Tempora/Epi1-3:Lectio3:s/12/15/ s/12.*15/15/s

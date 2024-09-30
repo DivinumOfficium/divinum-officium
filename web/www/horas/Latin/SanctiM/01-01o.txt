@@ -1,7 +1,21 @@
-@Sancti/01-01o
+@SanctiM/01-01
 
 [Rule]
 ex Sancti/12-25;
 Psalmi Dominica
 Antiphonas Horas
 12 lectiones
+
+[Lectio1]
+@Sancti/01-01o::1-6 s/\-6/-4/
+
+[Lectio2]
+@Sancti/01-01o::2 s/1/5/ s/6/6,29-31/
+@Sancti/01-01o::7-8
+@Tempora/Nat31:Lectio3:4-6
+
+[Lectio3]
+@Sancti/01-01:Lectio1:2-9 s/8/7/
+
+[Lectio4]
+@Sancti/01-01:Lectio2

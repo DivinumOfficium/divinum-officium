@@ -69,18 +69,23 @@ Christus appáruit nobis, * Veníte adorémus.
 Afférte Dómino * fílii Dei, adoráte Dóminum in aula sancta ejus.;;28
 Flúminis ímpetus * lætíficat, allelúja, civitátem Dei, allelúja.;;45
 Psállite Deo nostro, * psállite: psállite Regi nostro, psállite sapiénter.;;46
-V. Omnis terra adóret te, et psallat tibi.
-R. Psalmum dicat nómini tuo, Dómine.
 Omnis terra adóret te, * et psallat tibi: psalmum dicat nómini tuo, Dómine.;;65
 Reges Tharsis * et ínsulæ múnera ófferent Regi Dómino.;;71
 Omnes gentes * quascúmque fecísti, vénient, et adorábunt coram te, Dómine.;;85
-V. Reges Tharsis et ínsulæ múnera ófferent.
-R. Reges Arabum et Saba dona addúcent.
-Homo natus est * in ea, et ipse fundávit eam Altíssimus.;;86
-(Sed die Epiphaniæ dicitur)
+@SanctiM/01-06:AntMatutinumM:2
+(sed die Epiphaniæ dicitur)
 Veníte adorémus eum: quia ipse est Dóminus Deus noster.;;94
 Adoráte Dóminum, * allelúja: in aula sancta ejus, allelúja.;;95
 Adoráte Deum, * allelúja: omnes Angeli ejus, allelúja.;;96
+
+[Nocturn 1 Versum]
+V. Omnis terra adóret te, et psallat tibi.
+R. Psalmum dicat nómini tuo, Dómine.
+
+[Nocturn 2 Versum]
+@:Versum 1
+
+[Nocturn 3 Versum]
 V. Adoráte Dóminum, allelúja.
 R. In aula sancta ejus, allelúja.
 
@@ -243,14 +248,15 @@ Hódie * cælésti Sponso juncta est Ecclésia, quóniam in Jordáne lavit Chris
 !Isa 60:6
 v. Omnes de Saba vénient, aurum et thus deferéntes, et laudem Dómino annuntiántes.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Reges Tharsis et ínsulæ múnera ófferent, * Allelúja, allelúja.
 R. Reges Tharsis et ínsulæ múnera ófferent, * Allelúja, allelúja.
 V. Reges Arabum et Saba dona addúcent.
 R. Allelúja, allelúja.
 &Gloria
 R. Reges Tharsis et ínsulæ múnera ófferent, * Allelúja, allelúja.
-_
+
+[Versum Tertia]
 V. Omnes de Saba vénient, allelúja.
 R. Aurum et thus deferéntes, allelúja.
 
@@ -259,31 +265,31 @@ R. Aurum et thus deferéntes, allelúja.
 v. Leva in circúitu óculos tuos, et vide: omnes isti congregáti sunt, venérunt tibi: fílii tui de longe vénient, et fíliæ tuæ de látere surgent.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Omnes de Saba vénient, * Allelúja, allelúja.
 R. Omnes de Saba vénient, * Allelúja, allelúja.
 V. Aurum et thus deferéntes.
 R. Allelúja, allelúja.
 &Gloria
 R. Omnes de Saba vénient, * Allelúja, allelúja.
-_
-V. Adoráte Dóminum, allelúja.
-R. In aula sancta ejus, allelúja.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Adoráte Dóminum, * Allelúja, allelúja.
 R. Adoráte Dóminum, * Allelúja, allelúja.
 V. In aula sancta ejus.
 R. Allelúja, allelúja.
 &Gloria
 R. Adoráte Dóminum, * Allelúja, allelúja.
-_
-V. Adoráte Deum, allelúja.
-R. Omnes Angeli ejus, allelúja.
+
+[Versum Nona]
+@:Versum 2
 
 [Ant 3]
 Tribus miráculis * ornátum diem sanctum cólimus: hódie stella Magos duxit ad præsépium: hódie vinum ex aqua factum est ad núptias: hódie in Jordáne a Joánne Christus baptizári vóluit, ut salváret nos, allelúja.

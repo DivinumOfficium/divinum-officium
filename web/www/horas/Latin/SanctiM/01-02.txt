@@ -3,11 +3,8 @@
 [Oratio]
 @Sancti/01-01
 
-[LectioM3]
-@Sancti/01-02:Lectio3:s/12/11/ s/12.*//s
-
-[LectioM4]
-@Sancti/01-02:Lectio3:s/10-// s/10.*12/12/s
+[Lectio3]
+@Sancti/01-02::s/\n12 / ¶\n12 /
 
 [Capitulum Laudes]
 @SanctiM/01-01

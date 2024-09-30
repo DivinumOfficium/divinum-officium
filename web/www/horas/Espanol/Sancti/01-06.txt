@@ -35,7 +35,7 @@ con el Padre y Santo Espíritu,
 por siglos y eternamente.
 Amén.
 
-[Hymnus Vespera] (rubrica 1570)
+[HymnusM Vespera]
 v. De un Rey Dios, cruel Herodes,
 ¿por qué la venida temes?
 No quita reinos mortales
@@ -76,25 +76,25 @@ $Per eumdem
 [Invit]
 Cristo se nos ha aparecido. * Venid a adoradle.
 
-[Hymnus Matutinum]
-@Sancti/01-06:Hymnus Vespera
-
 [Ant Matutinum]
 Hijos de Dios, * aclamad al Señor, postraos ante el Señor en el atrio sagrado.;;28
 Un río de aguas abundantes * regocija, aleluya, la ciudad de Dios, aleluya.;;45
 Cantad a nuestro Dios, cantad; cantad a nuestro Rey, cantadle sabiamente.;;46
-V. Toda la tierra te adore y te cante.
-R. Cante salmos a tu nombre, Señor.
+
 Toda la tierra te adore * y te cante; cante salmos a tu nombre, Señor.;;65
 Los Reyes de Tarsis * y de las islas presentarán ofrendas al Rey, su Señor.;;71
 Todas las naciones * que has creado vendrán y se postrarán ante ti, Señor.;;85
-V. Los reyes de Tarsis y de las islas ofrecerán presentes.
-R. Los reyes de Arabia y de Sabá presentarán ofrendas.
-Un Hombre ha nacido * en ella, y el mismo Altísimo la hizo inconmovible.;;86
-(Sed die Epiphaniæ dicitur)
+@SanctiM/01-06:AntMatutinumM:2
+(sed die Epiphaniæ dicitur)
 Venid, adorémosle: porque Él es el Señor, Dios nuestro.;;94
 Adorad al Señor, * aleluya; en su santa morada, aleluya.;;95
 Adorad a Dios, * aleluya: todos sus Ángeles, aleluya.;;96
+
+[Nocturn 1 Versum]
+V. Toda la tierra te adore y te cante.
+R. Cante salmos a tu nombre, Señor.
+
+[Nocturn 3 Versum]
 V. Adorad al Señor, aleluya.
 R. En su santa morada, aleluya.
 
@@ -208,9 +208,6 @@ R. Y descubiertos sus tesoros, le ofrecieron como presentes, oro, incienso y mir
 Todos los elementos testificaron el advenimiento de su Autor. Los cielos le reconocieron por Dios, ya que al instante enviaron la estrella. El mar le reconoció, porque se dejó hollar por sus pies. La tierra le reconoció, porque al tiempo de su muerte se estremeció. Reconociole el sol, porque en aquel momento escondió los rayos de su luz. Reconociéronle las peñas y los muros, pues muriendo Él, se hendieron. Le reconoció el infierno, restituyendo los muertos que albergaba. Y con todo, los corazones de los infieles judíos no le reconocen en manera alguna por Dios, y más duros que las peñas, no quieren abrirse a la penitencia.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
 !Is 60:1
 v. Levántate, brilla, Jerusalén, que llega tu luz; la gloria del Señor amanece sobre ti.
@@ -218,33 +215,6 @@ $Deo gratias
 
 [Hymnus Laudes]
 {:H-Osolamagnarum:}v. ¡Oh sola entre las ciudades
-de Judá, Belen excelsa,
-porque en ti nace el Caudillo
-que de la muerte liberta!
-_
-Un astro, que al solar disco
-en luz y esplendor supera,
-anuncia que en carne humana
-Dios aparece en la tierra.
-_
-De Oriente vienen los Magos;
-postrándose le veneran;
-de incienso, de mirra y oro,
-le hacen místicas ofrendas.
-_
-Al Dios el incienso anuncia,
-al Rey el oro demuestra,
-y el aroma de la mirra
-al hombre mortal revela.
-_
-A Ti, Jesus, demos gloria,
-que a las naciones te muestras,
-con el Padre y Santo Espíritu,
-por edades sempiternas.
-Amén.
-
-[Hymnus Laudes] (rúbrica 1570)
-v. ¡Oh sola entre las ciudades
 de Judá, Belen excelsa,
 porque en ti nace el Caudillo
 que de la muerte liberta!
@@ -281,14 +251,15 @@ Hoy * la Iglesia se ha unido con su celestial Esposo. Cristo en el Jordán la ha
 !Is 60:6
 v. Vienen todos de Saba trayendo incienso y oro, y proclamando las alabanzas del Señor.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Que los reyes de Tarsis y de las islas le paguen tributo. * Aleluya, aleluya. 
 R. Que los reyes de Tarsis y de las islas le paguen tributo. * Aleluya, aleluya. 
 V. Que los reyes de Saba y de Arabia le ofrezcan sus dones. 
 R. Aleluya, aleluya. 
 &Gloria
 R. Que los reyes de Tarsis y de las islas le paguen tributo. * Aleluya, aleluya.
-_
+
+[Versum Tertia]
 V. Vienen todos de Saba. Aleluya.
 R. Trayendo incienso y oro. Aleluya.
 
@@ -297,31 +268,21 @@ R. Trayendo incienso y oro. Aleluya.
 v. Levanta la vista en torno, mira: todos esos se han reunido, vienen a ti, tus hijos llegan de lejos, a tus hijas las traen en brazos.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Vienen todos de Saba. * Aleluya, aleluya. 
 R. Vienen todos de Saba. * Aleluya, aleluya. 
 V. Trayendo incienso y oro. 
 R. Aleluya. Aleluya. 
 &Gloria
-R. Vienen todos de Saba. * Aleluya, aleluya. 
-_
-V. Adorad al Señor. Aleluya.
-R. En su santuario. Aleluya.
+R. Vienen todos de Saba. * Aleluya, aleluya.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Adorad al Señor. * Aleluya, aleluya. 
 R. Adorad al Señor. * Aleluya, aleluya. 
 V. En su santuario. 
 R. Aleluya, aleluya. 
 &Gloria
 R. Adorad al Señor. * Aleluya, aleluya. 
-_
-V. Adorad a Dios. Aleluya.
-R. Todos sus ángeles. Aleluya.
 
 [Ant 3]
 Celebramos una fiesta * adornada con tres signos: hoy la estrella conduce a los Magos al pesebre; hoy el agua se convierte en vino en las bodas; hoy Cristo quiso ser bautizado por Juan en el Jordán para salvarnos. Aleluya.

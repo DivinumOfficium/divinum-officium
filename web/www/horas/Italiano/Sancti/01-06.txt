@@ -48,25 +48,24 @@ $Per eumdem
 [Invit]
 Cristo è apparso per noi, * Venite, adoriamolo.
 
-[Hymnus Matutinum]
-@Sancti/01-06:Hymnus Vespera
-
 [Ant Matutinum]
 Offritevi al Signore, * o figli di Dio, adorate il Signore nel suo santo tempio.;;28
 La corrente d'un fiume * rallegra, alleluia, la città di Dio, alleluia.;;45
 Salmeggiate al Dio nostro, * salmeggiate: salmeggiate al Re nostro, salmeggiate sapientemente.;;46
-V. La terra tutta ti adori, e inneggi a te, 
-R. Sciolga un inno al tuo nome, o Signore.
 La terra tutta ti adori, * e inneggi a te: sciolga un inno al tuo nome, o Signore.;;65
 I re di Tarsi * e le isole offriranno dei presenti al Re Signore.;;71
 Tutte le genti * che hai create, verranno, e si prostreranno davanti a te, o Signore.;;85
-V. I re di Tarsi e le isole offriranno dei presenti.
-R. I re degli Arabi e di Saba porteranno dei doni.
-Un uomo è nato * in essa, ed egli stesso l'ha fondata, l'Altissimo.;;86
-(Sed die Epiphaniæ dicitur)
+@SanctiM/01-06:AntMatutinumM:2
+(sed die Epiphaniæ dicitur)
 Venite, adoriamolo: poiché egli è il Signore Dio nostro.;;94
 Adorate il Signore, * alleluia: nel suo santo tempio, alleluia.;;95
 Adorate Dio, * alleluia, Angeli suoi tutti, alleluia.;;96
+
+[Nocturn 1 Versum]
+V. La terra tutta ti adori, e inneggi a te, 
+R. Sciolga un inno al tuo nome, o Signore.
+
+[Nocturn 3 Versum]
 V. Adorate il Signore, alleluia.
 R. Nel suo santo tempio, alleluia.
 
@@ -180,13 +179,6 @@ R. E aperti i loro tesori, gli offrirono in dono oro, incenso e mirra.
 Tutti infatti gli elementi resero testimonianza alla venuta del loro autore. E per parlare di essi secondo il linguaggio umano: i cieli lo riconobbero Dio, perché inviarono subito la stella. Lo riconobbe il mare, perché sotto i suoi piedi si addimostrò traversabile. Lo riconobbe la terra, perché tremò alla morte di lui. Lo riconobbe il sole, perché nascose la luce dei suoi raggi. Lo riconobbero i sassi e le pareti, perché al momento della sua morte si spezzarono. Lo riconobbe l'inferno, perché restituì i morti che teneva. E tuttavia, colui che tutti gli insensibili elementi riconobbero per Signore, i cuori degli infedeli Giudei ancora non lo riconoscono per Dio, e, più duri dei sassi, non si vogliono aprire al pentimento.
 &teDeum
 
-[Ant Laudes]
-Generato prima della stella del mattino, * e prima dei secoli, il Signore nostro Salvatore quest'oggi apparve al mondo.
-È venuta la tua luce, * o Gerusalemme, e la gloria del Signore è spuntata su di te, e le Genti cammineranno alla tua luce, alleluia.
-Aperti i loro tesori, * i Magi offrirono al Signore oro, incenso e mirra, alleluia.
-Mari e fiumi, * benedite il Signore: fonti, inneggiate al Signore, alleluia.
-Questa stella * risplende come fiamma, e mostra Dio, il Re dei re: i Magi la videro, e offrirono dei presenti al gran Re.
-
 [Capitulum Laudes]
 !Isa 60:1
 v. Sorgi, ricevi la luce, Gerusalemme, perché la tua luce è venuta, e la gloria del Signore è spuntata su di te.
@@ -230,14 +222,15 @@ Quest'oggi * la Chiesa s'unì allo sposo celeste, poiché Cristo lavò nel Giord
 !Isa 60:6
 v. Verran tutti quelli di Saba portando oro ed incenso, e proclamando la gloria del Signore.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. I re di Tarsi e le isole offriranno dei presenti, * Alleluia, alleluia. 
 R. I re di Tarsi e le isole offriranno dei presenti, * Alleluia, alleluia. 
 V. I re degli Arabi e di Saba porteranno dei doni.
 R. Alleluia, alleluia.
 &Gloria
 R. I re di Tarsi e le isole offriranno dei presenti, * Alleluia, alleluia. 
-_
+
+[Versum Tertia]
 V.  Verranno tutti quelli di Saba, alleluia.
 R. Portando oro ed incenso, alleluia.
 
@@ -246,32 +239,21 @@ R. Portando oro ed incenso, alleluia.
 v. Alza all'intorno i tuoi sguardi e mira: tutti costoro si sono radunati per venire a te: i tuoi figli verranno da lungi e da ogni lato ti nasceranno delle figlie.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Verranno tutti quelli di Saba, * Alleluia, alleluia.
 R. Verranno tutti quelli di Saba, * Alleluia, alleluia.
 V. Portando oro ed incenso. 
 R. Alleluia, alleluia.
 &Gloria
 R. Verranno tutti quelli di Saba, * Alleluia, alleluia.
-_
-V. Adorate il Signore, alleluia.
-R. Nel suo santo tempio, alleluia.
 
-[Capitulum Nona]
-!Isa 60:6
-v. Verran tutti quelli di Saba portando oro ed incenso, e proclamando la gloria del Signore.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Adorate il Signore, * Alleluia, alleluia. 
 R. Adorate il Signore, * Alleluia, alleluia. 
 V. Nel suo santo tempio. 
 R. Alleluia, alleluia.
 &Gloria
 R. Adorate il Signore, * Alleluia, alleluia. 
-_
-V. Adorate Dio, alleluia.
-R. Angeli suoi tutti, alleluia.
 
 [Ant 3]
 Tre miracoli * hanno illustrato il santo giorno che celebriamo: oggi la stella condusse i Magi al presepio: oggi fu cambiata l'acqua in vino alle nozze: oggi Cristo volle essere battezzato nel Giordano da Giovanni per salvar noi. alleluia.

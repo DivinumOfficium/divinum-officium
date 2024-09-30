@@ -1,0 +1,56 @@
+@Sancti/01-07
+
+[Rule]
+Feria Te Deum
+No prima Vespera
+Infra octavam Epiphaniæ Domini
+(sed rubrica 1963 omittitur)
+ex Sancti/01-06
+3 Lectiones
+Doxology=Epi
+(rubrica 1963 dicitur)
+Lectio1 tempora
+
+[Ant Matutinum]
+@Sancti/01-06::1 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+@Sancti/01-06::2 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+
+[Lectio1] (rubrica tridentina aut rubrica divino)
+@:Lectio7
+
+[Responsory1]
+@Sancti/01-06:Responsory1InfraOctavam
+(sed feria 3 aut feria 6)
+@Sancti/01-06:Responsory4
+(sed feria 4 aut feria 7)
+@Sancti/01-06:Responsory7
+
+[Lectio2] (rubrica tridentina aut rubrica divino)
+@:Lectio8
+
+[Responsory2]
+@Sancti/01-06:Responsory2
+(sed feria 3 aut feria 6)
+@Sancti/01-06:Responsory5
+(sed feria 4 aut feria 7)
+@Sancti/01-06:Responsory8
+
+[Lectio3] (rubrica tridentina aut rubrica divino)
+@:Lectio9
+
+[Responsory3]
+@Sancti/01-06:Responsory3
+(sed feria 3 aut feria 6)
+@Sancti/01-06:Responsory6
+(sed feria 4 aut feria 7)
+@SanctiM/01-06:Responsory11

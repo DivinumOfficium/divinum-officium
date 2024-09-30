@@ -12,9 +12,6 @@
 [Lectio8]
 @Tempora/Nat1-0:Lectio6:s/.* The proclamation /The proclamation /s
 
-[Lectio9]
-@Tempora/Nat1-0:Lectio7
-
 [Lectio10]
 @Tempora/Nat1-0:Lectio8:s/For, .*//s
 
@@ -23,4 +20,3 @@
 
 [Lectio12]
 @Tempora/Nat1-0:Lectio9
-

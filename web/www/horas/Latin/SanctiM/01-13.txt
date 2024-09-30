@@ -2,6 +2,7 @@
 
 [Rule]
 12 lectiones
+Lectio1 tempora
 Doxology=Epi
 
 [Ant Matutinum 3N]
@@ -15,6 +16,9 @@ Doxology=Epi
 
 [Responsory3]
 @Sancti/01-06
+
+[Responsory4]
+@SanctiM/01-06
 
 [Lectio5]
 @Sancti/01-13:Lectio4

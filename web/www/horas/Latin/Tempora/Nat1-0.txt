@@ -1,11 +1,11 @@
 [Rank]
 Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
 
-[Rank] (rubrica tridentina)
-Dominica Infra Octavam Nativitatis;;Semiduplex;;2.93;;ex Sancti/12-25
-
 [Rank] (rubrica 196)
 Dominica Infra Octavam Nativitatis;;Semiduplex;;5.5;;ex Sancti/12-25
+
+[Rank] (rubrica tridentina)
+Dominica Infra Octavam Nativitatis;;Semiduplex;;2.93;;ex Sancti/12-25
 
 [Rule]
 9 lectiones
@@ -30,16 +30,7 @@ $Qui tecum
 [Commemoratio] (rubrica divino)
 @Sancti/12-25:Octava
 
-[Commemoratio 3] (rubrica divino)
-@Sancti/12-25:Octava
-
 [Commemoratio] (rubrica tridentina)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-@Sancti/12-28:Octava
-
-[Commemoratio 3] (rubrica tridentina)
 @Sancti/12-25:Octava
 @Sancti/12-26:Octava
 @Sancti/12-27:Octava
@@ -118,8 +109,7 @@ v. At ubi venit plenitúdo témporis, misit Deus Fílium suum factum ex mulíere
 $Deo gratias
 
 [Capitulum Nona]
-!Gal 4:7
-v. Itaque jam non est servus, sed fílius: quod si fílius, et hæres per Deum.
+@:Lectio Prima
 $Deo gratias
 
 [Versum 3]
@@ -127,3 +117,12 @@ $Deo gratias
 
 [Ant 3]
 Puer Jesus * proficiébat ætáte et sapiéntia coram Deo et homínibus.
+
+[Commemoratio 3] (rubrica divino)
+@Sancti/12-25:Octava
+
+[Commemoratio 3] (rubrica tridentina)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava
