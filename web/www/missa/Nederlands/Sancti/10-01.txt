@@ -6,6 +6,7 @@ vide C4;
 Suffragium=Maria3;Papa;Ecclesia;;
 
 [Oratio]
-Wij vragen U, almachtige God, dat het roemrijk feest van uw heilige belijder en bisschop Remigius onze godsvrucht mag bevorderen en onze zaligheid.
-$Per Dominum
+@Commune/C4:Oratio:s/N\./Remigius/
 
+[Postcommunio]
+@Commune/C4:Postcommunio:s/N\./Remigius/
