@@ -7,6 +7,11 @@ S. Clementis Papae et Martyris;;Semiduplex;;2;;vide C2
 [Rank] (rubrica innovata)
 S. Clementis Papae et Martyris;;Duplex optional;;2;;vide C2
 
+[Rule]
+vide C2;
+9 lectiones
+OPapaM=Clement;
+
 [Commemoratio]
 !Commemoratio S. Felicitatis Mart.
 @Commune/C7:Oratio proper

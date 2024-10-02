@@ -7,6 +7,11 @@ S. Clementis Papæ et Martyris;;Semiduplex;;2;;vide C2
 [Rank] (rubrica innovata)
 S. Clementis Papæ et Martyris;;Duplex optional;;2;;vide C2
 
+[Rule]
+vide C2;
+9 lectiones
+OPapaM=Clemente;
+
 [Ant Vespera]
 Mientras oraba * san Clemente se le apareció el Cordero de Dios.;;109
 El Señor me ha enviado * a vosotros sin mérito mío, para hacerme partícipe de vuestras coronas.;;110

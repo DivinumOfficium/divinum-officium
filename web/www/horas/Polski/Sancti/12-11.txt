@@ -7,6 +7,14 @@
 [Rank] (rubrica innovata)
 Św. Damazego Papieża i Wyznawcy;;Semiduplex;;2.5;;vide C4
 
+[Rule]
+vide C4;
+9 lectiones;
+OPapaC=Damazego;
+Doxology=Nat
+Omit Preces
+Commemoratio3
+
 [Oratio]
 Wysłuchaj, Panie, próśb naszych a wstawiennictwem błogosławionego Damazego Wyznawcy Twego i Biskupa przebłagany, odpuść nam grzechy nasze i obdarz pokojem.
 $Per Dominum

@@ -15,15 +15,15 @@ vide C5a;
 [Name]
 Antóni
 
-[OratioText]
-Ecclésiam tuam, Deus, beáti Antónii Confessóris tui atque Doctóris solémnitas votíva lætíficet: ut spirituálibus semper muniátur auxíliis et gáudiis pérfrui mereátur ætérnis.
-$Per Dominum
-
 [Oratio]
 @:OratioText
 
 [Oratio] (rubrica tridentina)
 @:OratioText:s/ atque Doctóris//
+
+[OratioText]
+Ecclésiam tuam, Deus, beáti Antónii Confessóris tui atque Doctóris solémnitas votíva lætíficet: ut spirituálibus semper muniátur auxíliis et gáudiis pérfrui mereátur ætérnis.
+$Per Dominum
 
 [Lectio1] (rubrica tridentina)
 @Commune/C5:Lectio1 in 2 loco
