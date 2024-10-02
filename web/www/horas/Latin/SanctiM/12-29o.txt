@@ -39,7 +39,7 @@ ex C2;
 @Sancti/12-29:Lectio6: s/Qui cléricis .*//s
 
 [Lectio8]
-@Sancti/12-29:Lectio6: s/.* Qui cléricis/Qui cléricis/s ~
+@Sancti/12-29:Lectio6: s/.* Qui cléricis/Qui cléricis/s
 
 [Lectio9]
 @Sancti/12-29:Lectio7: s/Pastóris .*//s
@@ -50,7 +50,6 @@ ex C2;
 
 [Lectio11]
 @Sancti/12-29:Lectio8: s/.* Idcírco/Idcírco/s s/$/~/
-
 @Sancti/12-29:Lectio9: s/Nam cum .*//s
 
 [Lectio12]

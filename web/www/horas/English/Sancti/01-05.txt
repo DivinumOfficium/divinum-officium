@@ -1,18 +1,23 @@
 [Rank]
-In Vigilia Epiphaniae;;Semiduplex;;5;;ex Sancti/01-01
+In Vigilia Epiphaniæ;;Semiduplex;;4.9;;ex Sancti/01-01
 
 [Rank] (rubrica 196)
 Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rank] (rubrica tridentina)
-In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
+In Vigilia Epiphaniæ;;Semiduplex;;2.9;;ex Sancti/01-01
+
+[Rule]
+ex Sancti/01-01;
+9 lectiones
+Psalmi Dominica
+Omit preces
+Feria Te Deum
+CPapaM=Telesphorus;
 
 [Commemoratio]
 !Commemoration of St. Telesphorus Pope and Martyr
 @Commune/C2:Oratio1 Gregem
-
-[Lectio1] (rubrica tridentina)
-@Sancti/01-04
 
 [Lectio1]
 Lesson from the letter of St. Paul the Apostle to the Romans
@@ -22,9 +27,6 @@ Lesson from the letter of St. Paul the Apostle to the Romans
 3 For what the law could not do, in that it was weak through the flesh; God sending his own Son, in the likeness of sinful flesh and of sin, hath condemned sin in the flesh;
 4 That the justification of the law might be fulfilled in us, who walk not according to the flesh, but according to the spirit.
 
-[Lectio2] (rubrica tridentina)
-@Sancti/01-04
-
 [Lectio2]
 !Rom 8:5-9
 5 For they that are according to the flesh, mind the things that are of the flesh; but they that are according to the spirit, mind the things that are of the spirit.
@@ -32,9 +34,6 @@ Lesson from the letter of St. Paul the Apostle to the Romans
 7 Because the wisdom of the flesh is an enemy to God; for it is not subject to the law of God, neither can it be.
 8 And they who are in the flesh, cannot please God.
 9 But you are not in the flesh, but in the spirit, if so be that the Spirit of God dwell in you.
-
-[Lectio3] (rubrica tridentina)
-@Sancti/01-04
 
 [Lectio3]
 !Rom 8:9-11

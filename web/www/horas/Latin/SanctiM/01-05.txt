@@ -1,7 +1,4 @@
 @Sancti/01-05
 
-[LectioM3]
-@Sancti/01-05:Lectio3:s/-11/-10/ s/11.*//
-
-[LectioM4]
-@Sancti/01-05:Lectio3:s/9-// s/9 .*11/11/s
+[Lectio3]
+@Sancti/01-04::s/\n11 / ¶\n11 /

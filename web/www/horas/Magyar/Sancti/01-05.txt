@@ -1,21 +1,23 @@
 [Rank]
-In Vigilia Epiphaniae;;Semiduplex;;5;;ex Sancti/01-01
+In Vigilia Epiphaniæ;;Semiduplex;;4.9;;ex Sancti/01-01
 
 [Rank] (rubrica 196)
 Die Quinta Januarii;;Feria;;1.2;;vide Sancti/12-25
 
 [Rank] (rubrica tridentina)
-In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
+In Vigilia Epiphaniæ;;Semiduplex;;2.9;;ex Sancti/01-01
 
-[Hymnus Vespera]
-@Sancti/12-25:Hymnus Vespera
+[Rule]
+ex Sancti/01-01;
+9 lectiones
+Psalmi Dominica
+Omit preces
+Feria Te Deum
+CPapaM=Telesphorus;
 
 [Commemoratio]
 !Commemoratio S. Telesphori Papae et Martyris.
 @Commune/C2:Oratio1 Gregem
-
-[Hymnus Matutinum]
-@Sancti/12-25:Hymnus Vespera
 
 [Lectio1]
 Olvasmány szent Pál apostol Rómaiakhoz írott leveléből
@@ -25,9 +27,6 @@ Olvasmány szent Pál apostol Rómaiakhoz írott leveléből
 3 Amire ugyanis a törvény nem volt képes, mert a test miatt erőtlenné vált, azt Isten véghezvitte: elküldte tulajdon fiát a bűn miatt a bűn testének hasonlóságában, hogy elítélje a testben levő bűnt,
 4 és hogy a törvény beteljesedjék rajtunk, akik már nem a test, hanem a lélek szerint élünk.
 
-[Responsory1]
-@Sancti/01-01:Responsory1
-
 [Lectio2]
 !Rom 8:5-8
 5 A testi ember bizony testiekre vágyik, a lelki ember ellenben lelkiekre törekszik.
@@ -35,17 +34,11 @@ Olvasmány szent Pál apostol Rómaiakhoz írott leveléből
 7 A test vágya ellene mond Istennek, nem veti alá magát Isten törvényének, sőt nem is képes rá.
 8 Ezért aki test szerint él, nem nyerheti el Isten tetszését.
 
-[Responsory2]
-@Sancti/01-01:Responsory2
-
 [Lectio3]
 !Rom 8:9-11
 9 De ti nem test, hanem lélek szerint éltek, ha valóban Isten Lelke lakik bennetek. Akikben nem lakik Krisztus Lelke, azok nem az övéi.
 10 Ha Krisztus bennetek van, jóllehet a test a bűn miatt halott, a lélek a megigazulás következtében él.
 11 Ha pedig bennetek lakik annak Lelke, aki feltámasztotta Jézust a halálból, ő, aki Krisztus (Jézust) feltámasztotta a halottak közül, halandó testeteket is életre kelti bennetek lakó Lelke által.
-
-[Responsory3]
-@Sancti/01-01:Responsory3
 
 [Lectio7]
 Evangélium szent Máté Apostol kőnyvéből
@@ -55,25 +48,3 @@ _
 Homily by St Jerome, Priest (at Bethlehem.)
 !Bk. i. Comm. on Matth. ii.
 From the words, they are dead, (in the Plural), which are used in this passage of the Gospel, we may understand that there were others beside Herod which sought the young Child's life probably the Priests and Scribes. And he (Joseph) arose, and took the young Child and His Mother. It is not written, He took his wife and child, but he took the young Child and His Mother; whence it is clear that the holy Evangelist willeth to imply that Joseph was not the father, but the Guardian of Jesus, not the husband, but the Betrothed of Mary.
-
-[Capitulum Laudes]
-!Gal 4:1-2
-v. Azzal folytatom, hogy amíg az örökös kiskorú, semmiben sem különbözik a szolgától, jóllehet mindennek ura.  Gyámok és gondviselők felügyelete alatt áll, apjától meghatározott ideig. 
-$Deo gratias
-
-[Hymnus Laudes]
-@Sancti/12-25:Hymnus Laudes
-
-[Lectio Prima]
-!Gal 4:7
-v. Tehát nem vagy többé szolga, hanem fiú, s ha fiú, akkor Isten kegyelméből örökös is.
-
-[Capitulum Sexta]
-!Gal 4:4-5
-v. De amikor elérkezett az idők teljessége, az Isten elküldte Fiát, aki asszonytól született, és ő alávetette magát a törvénynek,  hogy kiváltson minket a törvény szolgaságából, hogy a fogadott fiúságot elnyerjük. 
-$Deo gratias
-
-[Capitulum Nona]
-!Gal 4:7
-v. Tehát nem vagy többé szolga, hanem fiú, s ha fiú, akkor Isten kegyelméből örökös is. 
-$Deo gratias

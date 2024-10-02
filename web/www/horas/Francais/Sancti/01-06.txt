@@ -49,25 +49,24 @@ $Per eumdem
 [Invit]
 Le Christ nous est apparu, * Venez, adorons-le.
 
-[Hymnus Matutinum]
-@Sancti/01-06:Hymnus Vespera
-
 [Ant Matutinum]
 Apportez au Seigneur * votre offrande, fils de Dieu, et adorez le Seigneur dans son saint parvis.;;28
 Le courant d’un fleuve * réjouit, alléluia, la cité de Dieu, alléluia.;;45
 Chantez des psaumes à notre Dieu, * chantez ; chantez des psaumes à notre Roi, chantez-les dans la sagesse.;;46
-V. Que toute la terre vous adore et vous chante des psaumes.
-R. Qu’elle dise un psaume à votre nom, Seigneur.
 Que toute la terre vous adore * et vous chante des psaumes ; qu’elle dise un psaume à votre nom, Seigneur.;;65
 Les rois de Tharsis * et les îles offriront des présents au Roi Seigneur.;;71
 Toutes les Nations, * que vous avez faites, viendront et se prosterneront devant vous, Seigneur, ;;85
-V. Les rois de Tharsis et les îles offriront des présents.
-R. Les rois d’Arabie et de Saba apporteront des dons.
-L’Homme est né * en elle; et c’est le Très Haut lui-même qui l’a fondée.;;86
-(Sed die Epiphaniæ dicitur)
+@SanctiM/01-06:AntMatutinumM:2
+(sed die Epiphaniæ dicitur)
 Venez, adorons-le ; * car c’est lui, le Seigneur, notre Dieu.;;94
 Adorez le Seigneur, * alléluia, dans son saint parvis, alléluia..;;95
 Adorez Dieu, * alléluia, vous tous, ses Anges, alléluia.;;96
+
+[Nocturn 1 Versum]
+V. Que toute la terre vous adore et vous chante des psaumes.
+R. Qu’elle dise un psaume à votre nom, Seigneur.
+
+[Nocturn 3 Versum]
 V. Adorez le Seigneur, alléluia,
 R. Dans son saint parvis, alléluia.
 
@@ -181,9 +180,6 @@ R. Et ayant ouvert leurs trésors, ils lui offrirent des présents, l’or, l’
 Tous les éléments, vraiment, ont rendu témoignage à la venue de leur Auteur. Car voici ce que nous pouvons en dire en langage anthropomorphique. Les cieux ont reconnu que Jésus était Dieu, puisqu’aussitôt ils ont envoyé l’étoile. La mer l’a reconnu, puisqu’elle s’est offerte à ses pieds comme un chemin solide. La terre l’a reconnu, puisqu’elle a tremblé lorsqu’il expirait. Le soleil l’a reconnu, puis- qu’alors il a caché les rayons de sa lumière. Les rochers et les murailles l’ont reconnu, puisqu’au moment de sa mort ils se sont fendus. L’enfer (des Limbes) l’a reconnu, puisqu’il a cédé les morts qu’il détenait. Et cependant, celui que tous les éléments insensibles ont reconnu pour leur Seigneur, les cœurs des Juifs infidèles ne l’ont pas reconnu comme Dieu, et, plus durs que les rochers, ils n’ont pas voulu s’ouvrir à la pénitence.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
 !Isa 60:1
 v. Lève-toi, sois éclairée, Jérusalem, car ta lumière est venue, et la gloire du Seigneur s'est levée sur toi.
@@ -227,14 +223,15 @@ Aujourd’hui, * au céleste Époux s’est unie l’Église, car dans le Jourda
 !Isa 60:6
 v. Tous viendront de Saba, apportant l’or, de l’encens et publiant les louanges du Seigneur.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Les rois de Tharsis et les îles offriront des présents. * Alléluia, alléluia.
 R. Les rois de Tharsis et les îles offriront des présents. * Alléluia, alléluia.
 V. Les rois d’Arabie et de Saba apporteront des présents.
 R. Alléluia, alléluia.
 &Gloria
 R. Les rois de Tharsis et les îles offriront des présents. * Alléluia, alléluia.
-_
+
+[Versum Tertia]
 V. Tous viendront de Saba, alléluia.
 R. Apportant l’or et l’encens, alléluia.
 
@@ -243,31 +240,21 @@ R. Apportant l’or et l’encens, alléluia.
 v. Lève les yeux autour de toi, et vois ; tous ceux-ci se sont réunis et sont venus à toi ; tes fils, de loin, viendront, et tes filles à leur côté apparaîtront.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Tous viendront de Saba, * Alléluia, alléluia.
 R. Tous viendront de Saba, * Alléluia, alléluia.
 V. Apportant l’or et l’encens.
 R. Alléluia, alléluia.
 &Gloria
 R. Tous viendront de Saba, * Alléluia, alléluia.
-_
-V. Adorez le Seigneur, alléluia.
-R. Dans son saint parvis, alléluia.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Adorez le Seigneur, * Alléluia, alléluia.
 R. Adorez le Seigneur, * Alléluia, alléluia.
 V. Dans son saint parvis.
 R. Alléluia, alléluia.
 &Gloria
 R. Adorez le Seigneur, * Alléluia, alléluia.
-_
-V. Adorez Dieu, alléluia.
-R. Vous tous, ses Anges, alléluia.
 
 [Ant 3]
 Trois miracles * ont embelli ce saint jour que nous célébrons. Aujourd’hui l’étoile a conduit les Mages à la crèche ; aujourd’hui l’eau est devenue vin pour les noces ; aujourd’hui le Christ a voulu être baptisé par Jean dans le Jourdain, pour nous sauver, alléluia.

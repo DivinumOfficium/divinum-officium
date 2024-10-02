@@ -1,6 +1,11 @@
 [Rank]
 S. Martini Papae et Martyris;;Semiduplex;;2;;vide C2
 
+[Rule]
+vide C2;
+9 lectiones
+OPapaM=Martin;
+
 [Oratio]
 @Commune/C2:Oratio1:s/N\./Martin/
 

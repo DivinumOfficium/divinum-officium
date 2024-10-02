@@ -1,0 +1,35 @@
+@Sancti/12-31
+
+[Rank]
+S. Silvestri Papæ et Confessoris;;Duplex;;3;;vide C4
+
+[Rule]
+vide C4;
+12 lectiones 
+OPapaC=Silvéstrum;
+Lectio1 OctNat
+
+[Lectio5]
+@Sancti/12-31o:Lectio4
+
+[Lectio6]
+@Sancti/12-31:Lectio5: s/Multa item.*//
+
+[Lectio7]
+@Sancti/12-31:Lectio5: s/.* Multa item/Multa item/
+@Sancti/12-31:Lectio6: s/Huic.*//
+
+[Lectio8]
+@Sancti/12-31:Lectio6: s/.* Huic/Huic/
+
+[Lectio9]
+@CommuneM/C5
+
+[Lectio10]
+@CommuneM/C5
+
+[Lectio11]
+@CommuneM/C5
+
+[Lectio12]
+@CommuneM/C5

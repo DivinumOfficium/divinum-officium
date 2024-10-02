@@ -9,6 +9,9 @@ $Pater noster
 $Ave Maria
 (sed rubrica 1960 aut rubrica innovata omittuntur)
 
+[Oratio Matutinum]
+@Commune/C9:Oratio_Fid:s/&Dominus_vobiscum2/_\n&Dominus_vobiscum/
+
 [Oratio mortuorum]
 @Commune/C9:Oratio 2
 
@@ -19,9 +22,6 @@ _
 $Oremus
 v. Ten misericordia, Señor, de tus siervos, por cuya salvación te ofrecemos con humildad este sacrificio de alabanza; y por este misterio de reconciliación merezcan llegar al descanso eterno.
 $Per Dominum
-
-[Oratio Matutinum]
-@Commune/C9:Oratio_Fid:s/&Dominus_vobiscum2/_\n&Dominus_vobiscum/
 
 [Lectio1]
 @Commune/C9

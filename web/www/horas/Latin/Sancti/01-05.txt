@@ -28,7 +28,7 @@ CPapaM=Telésphorum;
 @Tempora/Nat1-0:Ant 3
 
 [Oratio]
-@Tempora/Nat1-0:Oratio
+@Tempora/Nat1-0
 
 [Commemoratio]
 !Commemoratio S. Telesphori Papæ et Martyris
@@ -51,8 +51,11 @@ De Epístola ad Romános
 3 Nam quod impossíbile erat legi, in quo infirmabátur per carnem: Deus Fílium suum mittens in similitúdinem carnis peccáti, et de peccáto damnávit peccátum in carne,
 4 ut justificátio legis implerétur in nobis, qui non secúndum carnem ambulámus, sed secúndum spíritum.
 
+[Lectio1] (rubrica tridentina)
+@Sancti/01-04
+
 [Responsory1]
-@Sancti/01-01:Responsory1
+@Sancti/01-01
 
 [Lectio2]
 !Rom 8:5-9
@@ -62,14 +65,20 @@ De Epístola ad Romános
 8 Qui autem in carne sunt, Deo placére non possunt. 
 9 Vos autem in carne non estis, sed in spíritu: si tamen Spíritus Dei hábitat in vobis.
 
+[Lectio2] (rubrica tridentina)
+@Sancti/01-04
+
 [Responsory2]
-@Sancti/01-01:Responsory2
+@Sancti/01-01
 
 [Lectio3]
 !Rom 8:9-11
 9 Si quis autem Spíritum Christi non habet: hic non est ejus. 
 10 Si autem Christus in vobis est: corpus quidem mórtuum est propter peccátum, spíritus vero vivit propter justificatiónem. 
 11 Quod si Spíritus ejus, qui suscitávit Jesum a mórtuis, hábitat in vobis: qui suscitávit Jesum Christum a mórtuis, vivificábit, et mortália córpora vestra, propter inhabitántem Spíritum ejus in vobis.
+
+[Lectio3] (rubrica tridentina)
+@Sancti/01-04
 
 [Responsory3]
 @Sancti/01-01:Responsory3
@@ -102,7 +111,7 @@ Quóniam Nazarǽus vocábitur. Si fixum de Scriptúris posuísset exémplum, num
 &teDeum
 
 [Capitulum Laudes]
-@Tempora/Nat1-0:Capitulum Laudes
+@Tempora/Nat1-0
 
 [Hymnus Laudes]
 @Sancti/12-25:Hymnus Laudes
@@ -111,10 +120,10 @@ Quóniam Nazarǽus vocábitur. Si fixum de Scriptúris posuísset exémplum, num
 @Tempora/Nat1-0:Ant 1
 
 [Lectio Prima]
-@Tempora/Nat1-0:Lectio Prima
+@Tempora/Nat1-0
 
 [Capitulum Sexta]
-@Tempora/Nat1-0:Capitulum Sexta
+@Tempora/Nat1-0
 
 [Capitulum Nona]
-@Tempora/Nat1-0:Capitulum Nona
+@Tempora/Nat1-0

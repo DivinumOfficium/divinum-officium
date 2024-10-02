@@ -26,6 +26,9 @@ $Pater noster
 $Ave Maria
 (sed rubrica 1960 aut rubrica innovata omittuntur)
 
+[Oratio Matutinum]
+@Commune/C9:Oratio_Fid:s/&Dominus_vobiscum2/_\n&Dominus_vobiscum/
+
 [Oratio mortuorum]
 @Commune/C9:Oratio 2
 
@@ -36,9 +39,6 @@ _
 $Oremus
 v. Propitiáre, quǽsumus, Dómine, animábus ómnium famulórum famularúmque tuárum, pro quibus majestátem tuam supplíciter exorámus: ut, per hæc piæ deprecatiónis offícia, perveníre mereántur ad réquiem sempitérnam.
 $Per Dominum
-
-[Oratio Matutinum]
-@Commune/C9:Oratio_Fid:s/&Dominus_vobiscum2/_\n&Dominus_vobiscum/
 
 [Lectio1]
 @Commune/C9

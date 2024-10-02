@@ -1,5 +1,8 @@
 @Tempora/Nat30
 
+[Comment]
+Dec 30, if it happens on a Saturday or – after 1900 – also on a Monday, it's of the Octave with Romans 1. Before 1900, if it is a Monday, S. Thomas is transferred here, and Romans 1 is read on Sunday Dec 29. 
+
 [Lectio1] (rubrica tridentina)
 @Tempora/Nat29
 
@@ -8,6 +11,15 @@
 
 [Lectio3] (rubrica tridentina)
 @Tempora/Nat29
+
+[Lectio4] (rubrica tridentina)
+@Tempora/Nat1-0
+
+[Lectio5] (rubrica tridentina)
+@Tempora/Nat1-0
+
+[Lectio6] (rubrica tridentina)
+@Tempora/Nat1-0
 
 [Commemoratio 2] (rubrica tridentina)
 @Sancti/12-26:Octava

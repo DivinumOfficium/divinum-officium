@@ -411,7 +411,7 @@ sub occurrence {
       $officename[1] .= " $communetype $communesname{$commune} [$commune]";
     }
 
-    if ($winner =~ /01-12t/ && ($hora =~ /laudes/i || $vespera == 3)) {
+    if ($winner =~ /01-12t/ && $hora =~ /laudes/i) {
       unshift(@commemoentries, 'Sancti/01-06.txt');
       $commemoratio = 'Sancti/01-06.txt';
       $comrank = 5.6;
@@ -1949,7 +1949,7 @@ sub gettempora {
 
   if ( $caller eq 'Doxology'
     || $caller eq 'Prima responsory'
-    || ($version =~ /196/ && $caller ne 'Psalmi minor' && $caller ne 'Nunc dimittis'))
+    || ($version =~ /monastic|196/i && $caller ne 'Psalmi minor' && $caller ne 'Nunc dimittis'))
   {
     if ($dayname[0] =~ /^Nat/) {
       $tname = ($day >= 6 && $day < 13) ? 'Epi' : 'Nat';

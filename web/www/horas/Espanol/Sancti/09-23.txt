@@ -1,6 +1,11 @@
 [Rank]
 S. Lini Papæ et Martyris;;Semiduplex;;2.1;;vide C2
 
+[Rule]
+vide C2;
+9 lectiones
+OPapaM=Lino;
+
 [Oratio]
 @Commune/C2:Oratio1:s/N\./Lino/
 

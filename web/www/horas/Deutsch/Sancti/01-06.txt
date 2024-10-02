@@ -49,25 +49,24 @@ $Per eumdem
 [Invit]
 Christus ist uns erschienen, * Kommt, wir wollen ihn anbeten.
 
-[Hymnus Matutinum]
-@Sancti/01-06:Hymnus Vespera
-
 [Ant Matutinum]
 Bringt herbei für den Herrn * nun Ehre, ihr Edlen des Volkes, betet den Herrn an in seiner heiligen Halle.;;28
 Des Wassers Andrang * erfüllt mit Freude, alleluja, die Gottesstadt, alleluja.;;45
 Lasst Lieder erschallen für unseren Gott, * o lasst sie erschallen, lasst Lieder erschallen für unseren König, lasst sie erschallen recht kunstvoll.;;46
-V. Die ganze Welt mag dich anbeten und dir Lieder singen.
-R. Sie mag deiner Majestät, o Herr, Lieder singen.
 Die ganze Welt mag dich anbeten * und dir Lieder singen: Sie mag deinem Namen, o Herr, Lieder singen.;;65
 Die Könige bis von Tharsis * und die fernsten Länder mögen Weihegeschenke überreichen dem Herrn und König.;;71
 Alle Völker, * die du geschaffen hast, kommen und wollen vor dir, o Herr, Anbetung halten.;;85
-V. Die Könige bis von Tharsis und den fernsten Ländern sollen Gaben bringen.
-R. Die Könige bis von Arabien und Saba ihm Geschenke weihen.
-Viele Menschen sind Kinder geworden * in ihr, und der Allerhöchste selbst hat sie begründet.;;86
-(Sed die Epiphaniæ dicitur)
+@SanctiM/01-06:AntMatutinumM:2
+(sed die Epiphaniæ dicitur)
 Kommt, wir wollen ihn anbeten, denn er ist der Herr, unser Gott.;;94
 Betet an den Herrn, * alleluja: in seiner heil'gen Halle, alleluja.;;95
 Betet Gott an, * alleluja: ihr alle seine Engel, alleluja.;;96
+
+[Nocturn 1 Versum]
+V. Die ganze Welt mag dich anbeten und dir Lieder singen.
+R. Sie mag deiner Majestät, o Herr, Lieder singen.
+
+[Nocturn 3 Versum]
 V. Betet an den Herrn, alleluja.
 R. In seiner heiligen Halle, alleluja.
 
@@ -131,9 +130,6 @@ R. Illumináre, illumináre Jerúsalem, quia venit lux tua:
 V. Et ambulábunt Gentes in lúmine tuo, et reges in splendóre ortus tui.
 R. Et glória Dómini super te orta est.
 
-[Lectio5]
-Nam et sævítia Heródis volens primórdia suspécti sibi Regis exstínguere, huic dispensatíoni nésciens serviébat: ut dum atróci inténtus facínori, ignótum sibi púerum indiscréta infántium cæde perséquitur, annuntiátum cǽlitus dominatóris ortum insígnior ubíque fama loquerétur: quam promptiórem ad narrándum, diligentiorémque faciébat et supérnæ significatiónis nóvitas, et cruentíssimi persecutóris impíetas. Tunc autem étiam Ægýpto Salvátor illátus est, ut gens antíquis erróribus dédita, jam ad vicínam salútem per occúltam grátiam signarétur: et quæ nondum ejécerat ab ánimo superstitiónem, jam hospítio recíperet veritátem.
-
 [Responsory5]
 R. Omnes de Saba vénient, aurum et thus deferéntes, et laudem Dómino annuntiántes,
 * Allelúja, allelúja, allelúja.
@@ -181,9 +177,6 @@ R. Et apértis thesáuris suis obtulérunt ei múnera, aurum, thus, et mýrrham.
 Omnia quippe eleménta auctórem suum venísse testáta sunt. Ut enim de eis quiddam usu humáno loquar: Deum hunc cæli esse cognovérunt, quia prótinus stellam misérunt. Mare cognóvit, quia sub plantis ejus se calcábile prǽbuit. Terra cognóvit, quia eo moriénte contrémuit. Sol cognóvit, quia lucis suæ rádios abscóndit. Saxa et paríetes cognovérunt, quia témpore mortis ejus scissa sunt. Inférnus agnóvit, quia hos, quos tenébat mórtuos, réddidit. Et tamen hunc, quem Dóminum ómnia insensibília eleménta sensérunt, adhuc infidélium Judæórum corda Deum esse mínime cognóscunt, et durióra saxis, scindi ad pœniténdum nolunt.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
 !Jes 60,1
 v. Auf, erstrahle in Freude, o Jerusalem. Denn es kommt dein Licht, und die Herrlichkeit des Herrn geht auf über dir.
@@ -227,14 +220,15 @@ Heute * ist dem himmlischen Bräutigam die Kirche angetraut worden, weil im Jord
 !Jes 60,6
 v. Alle bis von Saba sollen sie kommen, Gold und Weihrauch bringen, und die Ruhmeswerke des Herrn verkünden.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Die Könige bis von Tharsis und den fernsten Ländern sollen Gaben bringen, * Alleluja, alleluja.
 R. Die Könige bis von Tharsis und den fernsten Ländern sollen Gaben bringen, * Alleluja, alleluja.
 V. Die Könige bis von Arabien und Saba ihm Geschenke weihen.
 R. Alleluja, alleluja.
 &Gloria
 R. Die Könige bis von Tharsis und den fernsten Ländern sollen Gaben bringen, * Alleluja, alleluja.
-_
+
+[Versum Tertia]
 V. Alle bis von Saba sollen sie kommen, alleluja.
 R. Gold und Weihrauch bringen, alleluja.
 
@@ -243,31 +237,21 @@ R. Gold und Weihrauch bringen, alleluja.
 v. Erhebe deine Augen, schau dich um und sieh: alle diese, die zusammenstehen, sind zu dir gekommen, als deine Söhne kommen sie von ferne und als deine Töchter treten sie auf zu allen Seiten.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Alle bis von Saba sollen sie kommen, * Alleluja, alleluja.
 R. Alle bis von Saba sollen sie kommen, * Alleluja, alleluja.
 V. Gold und Weihrauch bringen.
 R. Alleluja, alleluja.
 &Gloria
 R. Alle bis von Saba sollen sie kommen, * Alleluja, alleluja.
-_
-V. Betet den Herrn an, alleluja.
-R. In seiner heiligen Halle, alleluja.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Betet den Herrn an, * Alleluja, alleluja.
 R. Betet den Herrn an, * Alleluja, alleluja.
 V. In seiner heiligen Halle.
 R. Alleluja, alleluja.
 &Gloria
 R. Betet den Herrn an, * Alleluja, alleluja.
-_
-V. Betet Gott an, alleluja.
-R. Ihr alle seine Engel, alleluja.
 
 [Ant 3]
 Einen durch drei staunenswerte Tatsachen * ausgestatteten heiligen Tag begehen wir: heute hat der Stern die Weisen zur Krippe geführt; heute ist Wein aus Wasser entstanden bei einer Hochzeit; heute wollte Christus im Jordan von Johannes getauft werden, um uns zu heilen, alleluja.

@@ -1,20 +1,19 @@
 [Rank]
-In Vigilia Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-01
+In Vigilia Epiphaniæ;;Semiduplex;;4.9;;ex Sancti/01-01
 
 [Rank] (rubrica 196)
 Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rank] (rubrica tridentina)
-In Vigilia Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-01
+In Vigilia Epiphaniæ;;Semiduplex;;2.9;;ex Sancti/01-01
 
-[Hymnus Vespera]
-@Sancti/12-25:Hymnus Vespera
-
-[HymnusM Vespera]
-@Sancti/12-25:HymnusM Vespera
-
-[Oratio]
-@Tempora/Nat1-0:Oratio
+[Rule]
+ex Sancti/01-01;
+9 lectiones
+Psalmi Dominica
+Omit preces
+Feria Te Deum
+CPapaM=Telésphorum;
 
 [Commemoratio]
 !Commemoratio S. Telesphori Papæ et Martyris
@@ -23,21 +22,12 @@ In Vigilia Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-01
 [Invit]
 @Sancti/12-25:Invit
 
-[Hymnus Matutinum]
-@Sancti/12-25:Hymnus Vespera
-
-[HymnusM Matutinum]
-@Sancti/12-25:HymnusM Vespera
-
 [Lectio1]
 De la Epístola a los Romanos
 !Rom 8:1-4
 1 Nada hay de consiguiente ahora digno de condenación en aquellos que están en Cristo Jesús, y que no siguen la carne. 
 3 Porque lo que era imposible que la ley hiciese, estando como estaba debilitado por la carne, hízolo Dios cuando, habiendo enviado a su Hijo revestido de una carne semejante a la del pecado, y le echó víctima por el pecado, mató así al pecado en la carne, 
 4 a fin de que la justificación de la ley tuviese su cumplimiento en nosotros, que no vivimos conforme a la carne, sino conforme al espíritu.
-
-[Responsory1]
-@Sancti/01-01:Responsory1
 
 [Lectio2]
 !Rom 8:5-9
@@ -47,17 +37,11 @@ De la Epístola a los Romanos
 8 Los que están en la carne no pueden agradar a Dios.  
 9 Pero vosotros no estáis en la carne, sino en el espíritu, si es que de verdad el Espíritu de Dios habita en vosotros. Pero si alguno no tiene el Espíritu de Cristo, ése no es de Cristo.
 
-[Responsory2]
-@Sancti/01-01:Responsory2
-
 [Lectio3]
 !Rom 8:9-11
 9 Si alguno no tiene el Espíritu de Cristo, este tal no es de Jesucristo. 
 10 Mas si Cristo está en vosotros, aunque el cuerpo esté muerto por razón del pecado de Adán, el espíritu vive en virtud de su justificación. 
 11 Y si el Espíritu de aquel Dios, que resucitó a Jesús de la muerte, habita en vosotros, el mismo que ha resucitado a Jesucristo de la muerte dará vida también a vuestros cuerpos mortales, en virtud de su Espíritu que habita en vosotros.
-
-[Responsory3]
-@Sancti/01-01:Responsory3
 
 [Lectio4]
 Sermón de San Agustín, Obispo.
@@ -85,18 +69,3 @@ Mas oyendo que Arquelao reinaba en Judea en lugar de su padre Herodes, temió ir
 [Lectio9]
 Porque será llamado Nazareno. Si hubiera puesto un ejemplo de las Escrituras, no diría el Evangelista: Fue dicho por los profetas, sino: “Según fue dicho por el Profeta”. Mas diciendo ahora profetas en plural, manifiesta que no tomó las palabras de la Escritura, sino el sentido. Nazareno significa santo; ahora bien, toda la Escritura manifiesta que el Señor había de ser santo.
 &teDeum
-
-[Capitulum Laudes]
-@Tempora/Nat1-0:Capitulum Laudes
-
-[Hymnus Laudes]
-@Sancti/12-25:Hymnus Laudes
-
-[Lectio Prima]
-@Tempora/Nat1-0:Lectio Prima
-
-[Capitulum Sexta]
-@Tempora/Nat1-0:Capitulum Sexta
-
-[Capitulum Nona]
-@Tempora/Nat1-0:Capitulum Nona

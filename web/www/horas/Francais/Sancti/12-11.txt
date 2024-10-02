@@ -7,6 +7,14 @@ St Damase Ier, pape et confesseur;;Duplex;;3;;vide C4
 [Rank] (rubrica innovata)
 St Damase Ier, pape et confesseur;;Semiduplex;;2.5;;vide C4
 
+[Rule]
+vide C4;
+9 lectiones;
+OPapaC=Dámase;
+Doxology=Nat
+Omit Preces
+Commemoratio3
+
 [Oratio]
 Pasteur éternel, veillez avec bonté sur votre troupeau et assurez-lui une protection constante par saint Damase, votre Souverain Pontife à qui vous avez donné d’être pasteur de toute l’Église.
 $Per Dominum

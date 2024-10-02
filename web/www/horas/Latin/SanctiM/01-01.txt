@@ -40,7 +40,7 @@ Beátus * venter qui te portávit, et beata úbera, † quæ te lactavérunt Dó
 @Sancti/01-01:Lectio1:2-10 s/1-/6-/ s/1 .*6 /6 /s
 
 [Lectio3]
-@Sancti/01-01:Lectio2:
+@Sancti/01-01:Lectio2
 
 [Lectio4]
 @Sancti/01-01:Lectio3
@@ -109,7 +109,7 @@ R. Et vocábitur Admirábilis, Deus Fortis.
 @Tempora/Nat1-0:Responsory8
 
 [Responsory Laudes]
-@Sancti/12-25:Responsory Sexta
+@Sancti/12-25:Responsory Sexta:s/._.*//s
 
 [Responsory TertiaM]
 @Sancti/12-25:Responsory Nona:8-9

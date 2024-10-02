@@ -1,24 +1,19 @@
 [Rank]
-In Vigilia Epiphaniae;;Semiduplex;;5;;ex Sancti/01-01
+In Vigilia Epiphaniæ;;Semiduplex;;4.9;;ex Sancti/01-01
 
 [Rank] (rubrica 196)
 Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
 
 [Rank] (rubrica tridentina)
-In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
+In Vigilia Epiphaniæ;;Semiduplex;;2.9;;ex Sancti/01-01
 
-[Hymnus Vespera]
-@Sancti/12-25:Hymnus Vespera
-
-[HymnusM Vespera]
-@Sancti/12-25:HymnusM Vespera
-
-[Ant 1]
-Il fanciullo Gesù * cresceva in età e sapienza dinanzi a Dio e agli uomini.
-
-[Oratio]
-Dio onnipotente ed eterno, dirigi le nostre azioni secondo il tuo volere: affinché nel nome del diletto tuo Figlio, meritiamo arricchirci di opere buone: 
-$Qui tecum
+[Rule]
+ex Sancti/01-01;
+9 lectiones
+Psalmi Dominica
+Omit preces
+Feria Te Deum
+CPapaM=Telésphorum;
 
 [Commemoratio]
 !Commemorazione di S. Telesforo Papa e Martire.
@@ -26,12 +21,6 @@ $Qui tecum
 
 [Invit]
 Cristo è nato per noi: * Venite adoriamolo.
-
-[Hymnus Matutinum]
-@Sancti/12-25:Hymnus Vespera
-
-[HymnusM Matutinum]
-@Sancti/12-25:HymnusM Vespera
 
 [Lectio1]
 Dalla Lettera ai Romani
@@ -41,9 +30,6 @@ Dalla Lettera ai Romani
 8:3 Dacché quello che era impossibile alla legge, perché era inferma per ragione della carne. Dio mandando il suo Figlio in una carne simile a quella del peccato a motivo del peccato, condannò il peccato nella carne, 
 8:4 affinché la giustizia della legge si compisse in noi che non camminiamo secondo la carne, ma secondo lo spirito.
 
-[Responsory1]
-@Sancti/01-01:Responsory1
-
 [Lectio2]
 !Rom 8:5-8
 8:5 Difatti quelli che vivono secondo la carne, gustano le cose della carne. Quelli invece che vivono secondo lo spirito, gustano le cose dello spirito. 
@@ -51,17 +37,11 @@ Dalla Lettera ai Romani
 8:7 Dacché la sapienza della carne è nemica di Dio: perché non sta soggetta alla legge di Dio; né può esserlo. 
 8:8 E quelli che vivono secondo la carne, non possono piacere a Dio. Voi però non vivete secondo la carne, ma secondo lo spirito: se però lo Spirito di Dio abita in voi.
 
-[Responsory2]
-@Sancti/01-01:Responsory2
-
 [Lectio3]
 !Rom 8:9-11
 8:9 Ora se uno non ha lo Spirito di Cristo, questi non è di lui. 
 8:10 Se poi Cristo è in voi, il corpo è sì soggetto alla morte a motivo del peccato, ma lo spirito vive per effetto della giustificazione. 
 8:11 Che se lo Spirito di colui che risuscitò Cristo da morte abita in voi; questo stesso che risuscitò Gesù Cristo da morte, vivificherà anche i vostri corpi mortali per mezzo del suo Spirito che abita in voi.
-
-[Responsory3]
-@Sancti/01-01:Responsory3
 
 [Lectio4]
 Sermone di sant'Agostino Vescovo
@@ -89,28 +69,3 @@ Ma udito che Archelao regnava in Giudea invece di Erode suo padre, temette di an
 [Lectio9]
 Poiché sarà chiamato Nazzareno» (Mt 2,23). Se (l'Evangelista) avesse avuto in vista un passo preciso della Scrittura, non avrebbe mai detto: «Secondo che era stato detto dai profeti»; ma semplicemente «Secondo che era stato detto dal profeta». Ora parlando in plurale «i profeti» mostra non aver egli preso dalla Scrittura le parole, ma il senso. Nazzareno significa santo; e che il Signore doveva essere santo, tutta la Scrittura lo ricorda.
 &teDeum
-
-[Capitulum Laudes]
-!Gal 4:1-2
-v. Fratelli: Per tutto il tempo che l'erede è fanciullo, non differisce in nulla da un servo, pur essendo padrone di tutto: ma è sotto tutori e curatori fino al tempo stabilito dal padre.
-$Deo gratias
-
-[Hymnus Laudes]
-@Sancti/12-25:Hymnus Laudes
-
-[Ant 2]
-Mentre un tranquillo silenzio * avvolgeva ogni cosa, e la notte nel suo corso era a metà del cammino, il tuo Verbo onnipotente, o Signore, discese dal cielo, dal trono reale, alleluia.
-
-[Lectio Prima]
-!Gal 4:7
-v. Dunque non sei più servo, ma figlio: e se figlio, anche erede per grazia di Dio.
-
-[Capitulum Sexta]
-!Gal 4:4-5
-v. Ma venuta la pienezza del tempo, Iddio mandò il Figlio suo, fatto di donna, sottomesso alla legge, per redimere quelli ch'erano sotto la legge, per farci figli adottivi.
-$Deo gratias
-
-[Capitulum Nona]
-!Gal 4:7
-v. Dunque non sei pia servo, ma figlio: e se figlio, anche erede per grazia di Dio.
-$Deo gratias

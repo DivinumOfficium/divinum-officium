@@ -1,70 +1,48 @@
 @Sancti/01-12t
 
 [Rank]
-Dominica I post Epiphaniam;;Semiduplex;;5;;vide SanctiM/01-06
+De Dominica infra Octavam Epiphaniæ;;Semiduplex;;5.61;;vide SanctiM/01-06
 
 [Rule]
-12 lectiones
+3 lectiones
 Doxology=Epi
 
-[Responsory Vespera]
-@Sancti/01-06:Responsory Sexta:s/._.*//s
-
-[Ant Matutinum 3N]
-Allelúja, * allelúja, allelúja.;;263;264;265
+[Ant Matutinum]
+@SanctiM/01-06:AntMatutinumM:3: s/;;.*/;;101/
+;;102
+;;103(1-24)
+;;103(25-35)
+;;104(1-22)
+;;104(23-45)
+@SanctiM/01-06:AntMatutinumM:4: s/;;.*/105(1-31)/
+;;105(32-48)
+;;106(1-24)
+;;106(25-43)
+;;107
+;;108
 
 [Lectio1]
-@Tempora/Epi1-0a:Lectio1:
-@Tempora/Epi1-0a:Lectio2:s/!.*// s/4 .*//s
-
-[Lectio2]
-@Tempora/Epi1-0a:Lectio2:
-@Tempora/Epi1-0a:Lectio3:s/!.*// s/10 .*//s
-
-[Lectio3]
-@Tempora/Epi1-0a:Lectio3:s/-13/-11/ s/12 .*//s
-
-[Lectio4]
-@Tempora/Epi1-0a:Lectio3:s/10-/12-/ s/10.*12/12/s
-
-[Responsory4]
-@SanctiM/01-06
-
-[Lectio5]
-@Tempora/Epi1-0a:Lectio4
-
-[Lectio6]
-@Tempora/Epi1-0a:Lectio5:s/Hoc enim .*//s
-
-[Lectio7]
-@Tempora/Epi1-0a:Lectio5:s/.* Hoc enim /Hoc enim /s
-
-[Lectio8]
-@Tempora/Epi1-0a:Lectio6
-
-[Responsory8]
-@SanctiM/01-06
-
-[Lectio9]
 @Tempora/Epi1-0a:Lectio7
 
-[Lectio10]
-@Tempora/Epi1-0a:Lectio8:s/Alibi .*//s
+[Responsory1]
+@Sancti/01-06:Responsory7
 
-[Lectio11]
-@Tempora/Epi1-0a:Lectio8:s/.* Alibi /Alibi /s
+[Lectio2]
+@Tempora/Epi1-0a:Lectio7
 
-[Responsory11]
-@SanctiM/01-06
+[Responsory2]
+@Sancti/01-06:Responsory8
 
-[Lectio12]
-@Tempora/Epi1-0a:Lectio9
+[Lectio3]
+@Tempora/Epi1-0a:Lectio7
 
-[Responsory12]
-@SanctiM/01-06
+[Responsory3]
+@SanctiM/01-06:Responsory11
+
+[MM Capitulum]
+@Tempora/Epi1-0a:Capitulum Sexta
+_
+@Sancti/01-06:Versum Tertia
 
 [Capitulum Laudes]
 @Tempora/Epi1-0a
-
-[Responsory Laudes]
-@Sancti/01-06:Responsory Tertia:s/._.*//s

@@ -1,10 +1,9 @@
 [Rank]
 S. Igino Papa e Martire;;Simplex;;1.5;;vide C2
 
-[Oratio]
-O Signore, Pastore eterno, mostrati misericordioso verso di noi che siamo il tuo gregge e per intercessione del Beato Igino Martire e Sommo Pontefice, che hai voluto porre a capo di tutta la Chiesa, aiutaci sempre con la tua protezione. 
-$Per Dominum
+[Rule]
+vide C2;
+OPapaM=Igino;
 
 [Oratio] (rubrica tridentina)
-Riguarda, Dio onnipotente, alla nostra debolezza: e poiché il peso del nostro mal operato è grave, ci protegga la gloriosa intercessione del tuo beato Martire e Vescovo Igino.
-$Per Dominum
+@Commune/C2::s/N\./Igino/

@@ -4,11 +4,21 @@ S. Melchiadis Papæ et Martyris;;Simplex;;1.1;;vide C2
 [Rank] (rubrica tridentina aut rubrica divino)
 De III die Infra Octavam Conceptionis Immaculatæ Beatæ Mariæ Virginis;;Semiduplex;;2.5;;vide Sancti/12-08
 
+[Rule]
+vide Sancti/12-08;
+9 lectiones;
+CPapaM=Melquíades;
+Doxology=Nat
+
 [Rule] (rubrica 1570 aut rubrica 1910 aut rubrica divino)
 vide Sancti/12-08;
 9 lectiones;
 CPapaM=Melquíades;
 Doxology=Nat
+
+[Rule] (rubrica 1955)
+vide C2;
+OPapaM=Melquíades;
 
 [Commemoratio] (rubrica divino)
 !Conmemoración de S. Melquíades, Papa y Mártir

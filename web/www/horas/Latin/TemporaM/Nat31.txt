@@ -7,28 +7,85 @@ Die VII infra Octavam Nativitatis;;II classis;;5;;ex Sancti/12-25
 Psalmi Dominica
 Antiphonas horas
 
-[Ant Matutinum]
+[Rule] (rubrica tridentina)
+ex SanctiM/12-25
+no secunda versperas
+
+[Ant Matutinum] (rubrica 1963)
 @TemporaM/Nat1-0tt
 
-[Lectio1]
+[Lectio1] (rubrica 1963)
 @Tempora/Nat30:Lectio7:s/_.*/_\n/s
 @Tempora/Nat30:Lectio4
 
-[Responsory1]
+[Lectio1] (rubrica divino)
+@Tempora/Nat29::s/\-7/-10/
+@Tempora/Nat29:Lectio2:2-4 
+(sed feria 2 aut feria 3 omittitur)
+(feria 2 aut feria 3 dicitur)
+@Tempora/Nat30
+
+[Lectio1] (rubrica tridentina)
+@TemporaM/Nat1-0
+(sed feria 2 aut feria 3)
+@Tempora/Nat30::1-4 s/\-4/-2/
+
+[Responsory1] (rubrica 1963)
 @SanctiM/12-25:Responsory11
 
-[Lectio2]
+[Responsory1] (rubrica tridentina)
+@Commune/C4
+
+[Lectio2] (rubrica 1963)
 @Tempora/Nat30:Lectio5
 
-[Responsory2]
+[Lectio2] (rubrica divino)
+@Tempora/Nat29:Lectio2:s/8-12/11-19/ s/8 .*11 /11 /s
+@Tempora/Nat29:Lectio3:2-8
+(sed feria 2 aut feria 3 omittitur)
+(feria 2 aut feria 3 dicuntur)
+@Tempora/Nat30::s/\-8/-13/
+@Tempora/Nat30:Lectio3:2-6
+
+[Lectio2] (rubrica tridentina)
+@TemporaM/Nat1-0
+(sed feria 2 aut feria 3 dicuntur)
+@Tempora/Nat30:Lectio1:2 s/1/3/
+@Tempora/Nat30:Lectio1:5-6
+
+[Responsory2] (rubrica 1963)
 @Sancti/12-25:Responsory8
 
-[Lectio3]
+[Responsory2] (rubrica tridentina)
+@Commune/C4
+
+[Lectio3] (rubrica 1963)
 @Tempora/Nat30:Lectio6
 
-[Responsory3]
+[Lectio3] (rubrica tridentina)
+@TemporaM/Nat1-0
+(sed feria 2 aut feria 3)
+@Tempora/Nat30:Lectio2
+
+[Responsory3] (rubrica 1963)
 @Tempora/Nat1-0:Responsory8
 
-[MM Capitulum]
+[Responsory3] (rubrica tridentina)
+@Commune/C4
+
+[Lectio4] (rubrica tridentina)
+@TemporaM/Nat1-0
+(sed feria 2 aut feria 3)
+@Tempora/Nat30:Lectio3
+
+[Responsory4] (rubrica tridentina)
+@CommuneM/C4
+
+[MM Capitulum] (rubrica 1963)
 @Psalterium/Matutinum Special:MM Capitulum Nat:1-4
 @Sancti/12-25:Versum 2
+
+[Commemoratio 2] (rubrica tridentina)
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava

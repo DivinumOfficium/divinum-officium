@@ -1,6 +1,11 @@
 [Rank]
 St. Anaclet Pape et Martyr;;Semiduplex;;2;;vide C2
 
+[Rule]
+vide C2;
+9 lectiones
+OPapaM=Anaclétum;
+
 [Oratio]
 @Commune/C2:Oratio1:s/N\./Anacléti/
 

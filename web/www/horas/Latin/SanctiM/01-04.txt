@@ -1,10 +1,7 @@
 @Sancti/01-04
 
-[LectioM3]
-@Sancti/01-04:Lectio3:s/-9// s/8.*//s
-
-[LectioM4]
-@Sancti/01-04:Lectio3:s/7/8/ s/7 .*8/8/s
+[Lectio3]
+@Sancti/01-04::s/\n8 / ¶\n8 /
 
 [Capitulum Laudes]
 @SanctiM/01-01

@@ -7,6 +7,14 @@ Piąty dzień stycznia;;Feria;;1.2;;vide Sancti/01-01
 [Rank] (rubrica tridentina)
 Wigilja Objawienia;;Semiduplex;;2;;ex Sancti/01-01
 
+[Rule]
+ex Sancti/01-01;
+9 lectiones
+Psalmi Dominica
+Omit preces
+Feria Te Deum
+CPapaM=Telesfora;
+
 [Commemoratio]
 !Wspomnienie Św. Telesfora Papieża i Męczennika
 @Commune/C2:Oratio1 Gregem

@@ -605,45 +605,61 @@ sub lectio : ScriptFunc {
     }
   }
 
+  # Save the Nocturn of the Lectio requested:
+  my $nocturn = int(($num - 1) / ($rule =~ /12 lectiones/i ? 4 : 3)) + 1;
+
   #Nat1-0 special rule
   # TODO: Get rid of this special case by separating the temporal and sanctoral parts of Christmas, thus allowing occurring Scripture to be defined.
-  if ($num <= 3 && $rule =~ /Lectio1 OctNat/i) {
-    my $c;
+  if ($nocturn == 1 && $rule =~ /Lectio1 (Oct|Temp)Nat/i) {
+    my %c;
 
-    if ($day < 29) {
-      $c = officestring($lang, "Sancti/12-25.txt")
-        ;    # GitHub3539: in 1960 rubrics, Scripture on Sunday (26-28) comes from Nativity
+    if ($1 =~ /Temp/i) {
+
+      # Monastic: Dominica Secunda Nativitatis
+      my %scrip = %{setupstring($lang, subdirname('Sancti', $version) . "$month-$day.txt")};
+
+      $c{"Lectio$_"} = lectiones_ex3_fiunt4(\%scrip, $_) foreach (1 .. 4);
+      $c{"Responsory$num"} = $w{"Responsory$num"};
+    } elsif ($day < 29) {
+
+      # GitHub3539: in 1960 rubrics, Scripture on Sunday (26-28) comes from Nativity
+      %c = %{officestring($lang, subdirname('Sancti', $version) . "12-25.txt")};
     } else {
-      my $tfile = subdirname('Tempora', $version) . "Nat$day" . ($version =~ /trident/i ? "o.txt" : ".txt");
-      $c = officestring($lang, $tfile);
-    }
-    $c->{'Lectio2'} .= $c->{'Lectio3'} if (contract_scripture(2));
 
-    $w{"Lectio$num"} = $c->{"Lectio$num"};
-    $w{"Responsory$num"} = $c->{"Responsory$num"};
+      # the Nat..o.txt files do not exist for Monastic
+      my $tfile = subdirname('Tempora', $version) . "Nat$day" . ($version =~ /^Trident/i ? "o.txt" : ".txt");
+      %c = %{officestring($lang, $tfile)};
+    }
+    $c{'Lectio2'} .= $c{'Lectio3'} if (contract_scripture(2));
+
+    $w{"Lectio$num"} = $c{"Lectio$num"};
+    $w{"Responsory$num"} = $c{"Responsory$num"};
+    setbuild2("Lectiones I Nocturno ex Tempora Nativitatis") if $num == 1;
   }
 
   # special rule for not having "Ss. Nominis" and missing readings on 01-13 for Monastic
   # add first nocturn lessons from the actual tempora // as TempraM/Epi1-….txt is still incomplete it leads to issues on 01-13
   # TODO: get TemporaM folder updated and completed
-  if ((($winner eq 'TemporaM/Nat2-0.txt') || ($winner eq 'SanctiM/01-13.txt')) && $num <= 4) {
-    $c =
-      officestring($lang, $winner =~ /Tempora/ ? sprintf("SanctiM/01-%02d.txt", $day) : "TemporaM/Epi1-$dayofweek.txt");
-    $w{"Lectio$num"} = $c->{"LectioM$num"} || $c->{"Lectio$num"};
-  }
-
-  # Save the Nocturn of the Lectio requested:
-  my $nocturn = int(($num - 1) / ($rule =~ /12 lectiones/i ? 4 : 3)) + 1;
+  #  if ($nocturn == 1 && (($winner eq 'TemporaM/Nat2-0.txt') || ($winner eq 'SanctiM/01-13.txt'))) {
+  #    $c =
+  #      officestring($lang, $winner =~ /Tempora/ ? sprintf("SanctiM/01-%02d.txt", $day) : "TemporaM/Epi1-$dayofweek.txt");
+  #    $w{"Lectio$num"} = $c->{"LectioM$num"} || $c->{"Lectio$num"};
+  #  }
 
   #Lectio1 tempora: special rule for Octave of Epiphany
-  if ($nocturn == 1 && $rule =~ /Lectio1 tempora/i && exists($scriptura{"Lectio$num"})) {
-    my %c = (columnsel($lang)) ? %scriptura : %scriptura2;
-    $w{"Lectio$num"} = $c{"Lectio$num"};
+  if ($nocturn == 1 && $rule =~ /Lectio1 tempora/i && exists($scriptura{"Lectio1"})) {
+    my %scrip = (columnsel($lang)) ? %scriptura : %scriptura2;
 
-    if ($version =~ /Trident/i && exists($w{"ResponsoryT$num"})) {
-      $w{"Responsory$num"} = $c{"Responsory$num"};
+    if ($version =~ /monastic/i && $rule =~ /12 lectiones/i) {
+      $w{"Lectio$num"} = lectiones_ex3_fiunt4(\%scrip, $num);
     } else {
-      $w{"Responsory$num"} = $c{"Responsory$num"};
+      $w{"Lectio$num"} = $scrip{"Lectio$num"};
+
+      if ($version =~ /Trident/i && exists($w{"ResponsoryT$num"})) {
+        $w{"Responsory$num"} = $scrip{"Responsory$num"};
+      } else {
+        $w{"Responsory$num"} = $scrip{"Responsory$num"};
+      }
     }
     setbuild2("subst: Lectio$num tempora");
   }
@@ -699,7 +715,10 @@ sub lectio : ScriptFunc {
     $w = '';
   }    # Q.T. Septembris...
 
-  if ($rule =~ /12 lectiones/i && (($num == 4 && !exists($w{Lectio1})) || ($num == 9 && !exists($w{Lectio10})))) {
+  if ( $rule =~ /12 lectiones/i
+    && $rule !~ /Lectio1 (Oct|Temp)(Nat|ora)/i
+    && (($num == 4 && !exists($w{Lectio1})) || ($num == 9 && !exists($w{Lectio10}))))
+  {
     $w = '';
   }    # accidental Lectio4 or Lectio9 from Roman version
 
@@ -779,21 +798,8 @@ sub lectio : ScriptFunc {
     %w = (columnsel($lang)) ? %scriptura : %scriptura2;
     $w = $w{"Lectio$num"};
 
-    unless ($version !~ /monastic/i || $version =~ /1963/ || $rule !~ /12 lect/i) {
-
-      # split 3 lessons into 4
-      my @scrips = ();
-
-      for my $l0 (1 .. 3) {
-        if ($w{"Lectio$l0"} !~ /¶/) {
-          my $cc = $w{"Lectio$l0"};
-          push(@scrips, $cc);
-        } else {
-          my @splits = split("¶\n", $w{"Lectio$l0"});
-          push(@scrips, @splits);
-        }
-      }
-      $w = $scrips[$num - 1];
+    if ($version =~ /monastic/i && $rule =~ /12 lectiones/i && ($version !~ /1963/ || $rule =~ /Lectio1 tempora/i)) {
+      $w = lectiones_ex3_fiunt4(\%w, $num);
     }
 
     if ($version =~ /Trident/ && $winner =~ /Sancti/ && $rank < 2) {
@@ -1115,6 +1121,27 @@ sub lectio : ScriptFunc {
   $w .= "\n_\n\&teDeum\n" if tedeum_required($num);
 
   $w;
+}
+
+sub lectiones_ex3_fiunt4 {
+  my $scrip = shift;
+  my %scrip = %$scrip;
+  my $num = shift;
+
+  # split 3 lessons into 4
+  my @scrips = ();
+
+  for my $l0 (1 .. 3) {
+    if ($scrip{"Lectio$l0"} !~ /¶/) {
+      my $cc = $scrip{"Lectio$l0"};
+      push(@scrips, $cc);
+    } else {
+      my @splits = split("¶\n", $scrip{"Lectio$l0"});
+      push(@scrips, @splits);
+    }
+  }
+  setbuild2("Lectiones ex 3 fiunt 4") if $num == 1;
+  return $scrips[$num - 1];
 }
 
 sub parenthesised_text {

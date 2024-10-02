@@ -7,6 +7,14 @@ Hl. Damasus, Papst und Bekenner;;Duplex;;3;;vide C4
 [Rank] (rubrica innovata)
 Hl. Damasus, Papst und Bekenner;;Semiduplex;;2.5;;vide C4
 
+[Rule]
+vide C4;
+9 lectiones;
+OPapaC=Damasus;
+Doxology=Nat
+Omit Preces
+Commemoratio3
+
 [Oratio]
 Erhöre, o Herr, unser Flehen, und auf die Fürsprache deines heiligen Bekenners und Bischofs Damasus gewähre und gnädigst Nachsicht und Segen.
 $Per Dominum

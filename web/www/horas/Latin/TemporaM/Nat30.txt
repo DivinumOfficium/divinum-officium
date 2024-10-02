@@ -7,6 +7,9 @@ Die VI infra Octavam Nativitatis;;II classis;;5;;ex Sancti/12-25
 Psalmi Dominica
 Antiphonas horas
 
+[Ant Vespera]
+@Sancti/12-25:Ant Vespera 3:s/.*;;129/;;131/
+
 [Ant Matutinum]
 @TemporaM/Nat1-0tt
 
@@ -29,9 +32,6 @@ Antiphonas horas
 
 [Responsory3]
 @Tempora/Nat1-0:Responsory8
-
-[Ant Vespera]
-@Sancti/12-25:Ant Vespera 3:s/.*;;129/;;131/
 
 [MM Capitulum]
 @Psalterium/Matutinum Special:MM Capitulum Nat:1-4

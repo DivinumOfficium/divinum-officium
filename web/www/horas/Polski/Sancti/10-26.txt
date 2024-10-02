@@ -4,5 +4,9 @@
 [Rank] (rubrica 1960)
 Św. Ewarysta Papieża i Męczennika;;Simplex;;1.1;;vide C2
 
+[Rule]
+vide C2;
+OPapaM=Ewarysta;
+
 [Oratio]
 @Commune/C2::s/N\./Ewarysta/
