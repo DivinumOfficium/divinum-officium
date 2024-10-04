@@ -416,7 +416,7 @@ sub occurrence {
       $commemoratio = 'Sancti/01-06.txt';
       $comrank = 5.6;
     } elsif (($srank[2] < 7 && $sname !~ /01-01/)
-      && $trank[2] >= ($srank[2] >= 5 ? 2.1 : 2)
+      && $trank[2] >= ($srank[2] >= 5 ? 2.1 : 1.5)
       && !($srank[0] =~ /Sangu/i && $trank[0] =~ /Cord/i))
     {    # incl. github #2950
       unshift(@commemoentries, $tname);
@@ -424,7 +424,8 @@ sub occurrence {
       $comrank = $trank[2];
       $cvespera = $tvesp;
       $officename[2] = "Commemoratio: $trank[0]";
-      $officename[2] =~ s/:/ ad Laudes tantum:/ if $tfile =~ /Pasc5\-[123]/i;    # on Rogations and QT in Sep
+      $officename[2] =~ s/:/ ad Laudes \& Matutinum:/ if $tfile =~ /Pasc5\-[13]/i;    # Rogation Monday and Vigilia Acs
+      $officename[2] =~ s/:/ ad Laudes tantum:/ if $trank[0] =~ /Quattuor.*Sept/;     # QT in Sep
     } elsif (my $transferedC = $commemoentries[0]) {
       $commemoratio = "$transferedC.txt";
       my %tc = %{setupstring('Latin', "$transferedC.txt")};

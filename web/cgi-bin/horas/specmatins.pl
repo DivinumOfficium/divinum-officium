@@ -637,15 +637,6 @@ sub lectio : ScriptFunc {
     setbuild2("Lectiones I Nocturno ex Tempora Nativitatis") if $num == 1;
   }
 
-  # special rule for not having "Ss. Nominis" and missing readings on 01-13 for Monastic
-  # add first nocturn lessons from the actual tempora // as TempraM/Epi1-….txt is still incomplete it leads to issues on 01-13
-  # TODO: get TemporaM folder updated and completed
-  #  if ($nocturn == 1 && (($winner eq 'TemporaM/Nat2-0.txt') || ($winner eq 'SanctiM/01-13.txt'))) {
-  #    $c =
-  #      officestring($lang, $winner =~ /Tempora/ ? sprintf("SanctiM/01-%02d.txt", $day) : "TemporaM/Epi1-$dayofweek.txt");
-  #    $w{"Lectio$num"} = $c->{"LectioM$num"} || $c->{"Lectio$num"};
-  #  }
-
   #Lectio1 tempora: special rule for Octave of Epiphany
   if ($nocturn == 1 && $rule =~ /Lectio1 tempora/i && exists($scriptura{"Lectio1"})) {
     my %scrip = (columnsel($lang)) ? %scriptura : %scriptura2;
@@ -890,11 +881,26 @@ sub lectio : ScriptFunc {
     if ( ($commemoratio =~ /tempora/i && $commemoratio !~ /Nat(29|30|31)/i || $commemoratio =~ /01\-05/)
       && ($homilyflag == 1 || exists($commemoratio{"Lectio$j0"}))
       && $comrank > 1
-      && ($rank > 4 || ($rank >= 3 && $version =~ /Trident/i) || $homilyflag == 1 || exists($winner{Lectio1})))
+      && ($rank > 4 || ($rank >= 3 && $version =~ /Trident/i) || $homilyflag == 1 || exists($commemoratio{Lectio1})))
     {
       %w = (columnsel($lang)) ? %commemoratio : %commemoratio2;
       $wc = $w{"Lectio$j0"};
-      $wc ||= $w{"Lectio1"};
+
+      if ($wc && $version =~ /monastic/i && exists($w{"Responsory$j0"}) || exists($w{"Responsory12C"})) {
+
+        # In M1930, the assigned responsory when a Homily is commemorated only is sometimes different
+        $winner{"Responsory$num"} = $w{"Responsory12C"} || $w{"Responsory$j0"};
+        $winner2{"Responsory$num"} = $w{"Responsory12C"} || $w{"Responsory$j0"};
+      } elsif (!$wc) {
+        $wc = $w{"Lectio1"};
+
+        if ($wc && $version =~ /monastic/i && exists($w{"Responsory1"}) || exists($w{"Responsory12C"})) {
+
+          # In M1930, the assigned responsory when a Homily is commemorated only is sometimes different
+          $winner{"Responsory$num"} = $w{"Responsory12C"} || $w{"Responsory1"};
+          $winner2{"Responsory$num"} = $w{"Responsory12C"} || $w{"Responsory1"};
+        }
+      }
 
       if ($wc) {
         setbuild2("Last lectio Commemoratio ex Tempore #1");
