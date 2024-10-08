@@ -8,7 +8,7 @@ Officium Parvum Beatæ Maríæ Virginis;;Simplex;;1;;ex C11
 ex C11;
 Ave only
 Doxology=Nat
-Omit Suffragium
+no Suffragium
 Special Benedictio
 Votive nocturn
 Psalmi Dominica
@@ -37,14 +37,14 @@ $Oremus
 v. Prótege, Dómine, pópulum tuum, et, Apostolórum tuórum Petri et Pauli et aliórum Apostolórum patrocínio confidéntem, perpétua defensióne consérva.
 v. Omnes Sancti tui, quǽsumus, Dómine, nos ubíque ádjuvent: ut, dum eórum mérita recólimus, patrocínia sentiámus: et pacem tuam nostris concéde tempóribus, et ab Ecclésia tua cunctam repélle nequítiam; iter, actus et voluntátes nostras et ómnium famulórum tuórum, in salútis tuæ prosperitáte dispóne, benefactóribus nostris sempitérna bona retríbue, et ómnibus fidélibus defúnctis réquiem ætérnam concéde.
 $Per Dominum
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 196 omittitur)
 
 [Pre oratio]
 
 #Oratio
 _
 v. Kýrie, eléison. Christe, eléison. Kýrie, eléison.
-(sed rubrica 1955 aut rubrica 1960 omittitur)
+(sed rubrica 1955 aut rubrica 196 omittitur)
 &Dominus_vobiscum
 $Oremus
 
@@ -198,7 +198,7 @@ _
 #Incipit
 _
 $Ave Maria
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 196 omittitur)
 $Deus in adjutorium
 &Alleluia
 
@@ -210,7 +210,7 @@ $Deus in adjutorium
 $Fidelium animae
 _
 $Pater noster
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 196 omittitur)
 
 [Capitulum Prima]
 !Cant 6:9
@@ -339,6 +339,9 @@ _
 @:Pre oratio
 @:Oratio Nona
 @:Minor final
+
+[Capitulum Vespera]
+@Commune/C10:Capitulum Laudes
 
 [Versum 3]
 @:Versum 1

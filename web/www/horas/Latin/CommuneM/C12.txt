@@ -5,17 +5,24 @@ Omit Incipit mute
 Matutinum Romanum
 Votive nocturn
 Special Benedictio
+no suffragium
 
 [Prelude Vespera]
 #Incipit
+
+$Ave Maria
+(sed rubrica 1963 omittitur)
 $Deus in adjutorium
 &Alleluia
 
 [Prelude Matutinum]
-#Incipit
+# Incipit
+
+$Ave Maria
+(sed rubrica 1963 omittitur)
 $Domine labia
-$Domine labia
-$Domine labia
+$Deus in adjutorium
+&Alleluia
 
 [Prelude Laudes]
 @:Prelude Vespera
