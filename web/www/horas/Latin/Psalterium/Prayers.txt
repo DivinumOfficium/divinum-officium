@@ -340,23 +340,11 @@ Per Christum Dominum nostrum.
 [Oratio Visita_]
 v. Vísita, quǽsumus, Dómine, habitatiónem istam, et omnes insídias inimíci ab ea lónge repélle: Ángeli tui sancti hábitent in ea, qui nos in pace custódiant; et benedíctio tua sit super nos semper.
 
-[Oratio_Visita]
+[oratio_Visita]
 @:Oratio Visita_
 
-[Oratio_Visita] (rubrica Ordo Praedicatorum)
+[oratio_Visita] (rubrica Ordo Praedicatorum)
 @:Oratio Visita_:s/Ángeli tui sancti hábitent/et Ángeli tui sancti habitántes/ s/qui //
-
-[oratio Visita]
-(rubrica 1963 dicitur)
-$MLitany2
-(sed rubrica 1617 aut rubrica 1930 dicitur)
-&MLitany2
-&Dominus_vobiscum1
-(sed rubrica 196 aut rubrica 1955 dicitur)
-&Dominus_vobiscum
-$Oremus
-@:Oratio_Visita
-$Per Dominum
 
 [rubrica Martyrologium] (rubrica monastica)
 /:Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum.:/
