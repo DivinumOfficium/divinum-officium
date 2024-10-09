@@ -5,14 +5,13 @@ $Amen
 #Lectio brevis
 
 $Adjutorium nostrum
-(rubrica 196 dicitur)
-$examen
+(rubrica 196) $examen
 $Pater noster
 $Confiteor
 $Misereatur
+(deinde dicitur)
 $Indulgentiam
-(sed rubrica Ordo Praedicatorum dicitur)
- ~
+(sed rubrica Ordo Praedicatorum omittitur)
 $Converte nos
 
 $Deus in adjutorium
@@ -24,6 +23,8 @@ $Deus in adjutorium
 (rubrica Ordo Praedicatorum omittitur)
 
 #Capitulum Responsorium Versus
+(sed rubrica monastica)
+#Capitulum Versus
 
 (rubrica Ordo Praedicatorum dicitur)
 #Hymnus
@@ -35,7 +36,16 @@ $Deus in adjutorium
 (sed rubrica 196 aut rubrica 1955 omittitur)
 
 #Oratio
-$oratio Visita
+(rubrica ^Monastic dicitur)
+$MLitany2
+(sed rubrica 1617 aut rubrica 1930 dicitur)
+&MLitany2
+&Dominus_vobiscum1
+(sed rubrica 196 aut rubrica 1955 dicitur)
+&Dominus_vobiscum
+$Oremus
+$oratio_Visita
+$Per Dominum
 
 #Conclusio
 &Dominus_vobiscum
