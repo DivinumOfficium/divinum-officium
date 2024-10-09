@@ -31,6 +31,7 @@
 					<A HREF=#programs>[Programs]</A>&ensp;
 					<A HREF=#specialchars>[Special characters]</A>&ensp;
 					<A HREF=#exceptions>[Exceptions]</A>
+					<A HREF=#conditionals>[Conditionals]</A>
 				</CENTER>
 				
 				<P>This part of the help manual is written explicitly for encouraging anyone interested in the topic to write his/her own system, using whatever he/she wants from these ideas. It is also meant to provide a general overview of how Divinum Officium and Sancta Missa are internally structured.<br />
@@ -250,65 +251,125 @@
 				<P ALIGN=CENTER><A Href=#Top>Top</A></FONT></P>
 				<span class=prmm>Exceptions</span><BR /><BR />
 				
-				Many of the files in Tempora or Sancti folders have an entry: <B>Rule</B>.
+				<P>Many of the files in Tempora or Sancti folders have an entry: <B>Rule</B>.
 				There are the exceptions from those rules built into the <B>Ordinarium</B>
 				and the <B>Psalterium</B> and represented by the files in those folders.
 				
 				A usual [Rule] item looks like:
 				<PRE>
-					[Rule]
-					ex C4;
-					Psalmi Dominica
-					Antiphones horas
-					9 lectiones
-				</PRE>
+[Rule]
+ex C4;
+Psalmi Dominica
+Antiphones horas
+9 lectiones
+				</PRE></P>
 				
-				Each rule is a separate line and exact spelling is required, except for capitalization.<BR /><BR />
+				<P>Each rule is a separate line and exact spelling is required, except for capitalization.
 				
-				<UL>
-					<LI><span class=prma>ex filename</span> : everything that is not in the Proprium
-						is taken from the named file from the Commune (<I>Cn</I>) or from the file in the Tempora
-						folder (e.g. Pasc0-0 for the Easter octave)</LI>
-					
-					<LI><span class=prma>vide filename</span> : like above, but only the <I>Matins lections</I> and
-						the <I>Lauds & Vespers antiphons, versum, & oratio</I> are taken from the named file.</LI>
-					
-					<LI><span class=prma>Psalmi Dominica</span> : The Sunday psalm set is used, except if the psalm
-						is explicitly indicated as being proper in the Proprium file.</LI>
-					
-					<LI><span class=prma>Antiphonas horas</span> : <I>Laudes</I> antiphons are used for the minor
-						hours: <BR /><BR />
+				<TABLE ALIGN=CENTER WIDTH=90% CELLPADDING=12  style="border-collapse: collapse;">
+					<TR><TH>Rule item</TH><TH>Description</TH><TH>Example</TH><TH>Use case</TH></TR>
+					<TR><TD><span class=prma>ex&nbsp;<I>file</I></span></TD><TD>everything that is not in the Proprium
+						is taken from the named file from the Commune or from the file in the Tempora or Sancti
+						folder</TD><TD WIdTH=20%>ex&nbsp;C2;<br/>ex&nbsp;Pasc0-0;<br />ex&nbsp;Sancti/05-08</TD><TD></TD></TR>
+					<TR><TD><span class=prma>vide&nbsp;<I>file</I></span></TD><TD COLSPAN=3>like above, but only the <I>Matins lections</I> and
+						the <I>Lauds & Vespers antiphons, versum, & oratio</I> are taken from the named file.</TD></TR>
+					<TR><TD><span class=prma>mtv</span></TD><TD>Changing the third verse in Iste confessor hymn</TD><TD>vide C4a;mtv</TD><TD>Sancti/01-14</TD></TR>
+					<TR><TD><span class=prma>Psalmi&nbsp;Dominica</span></TD><TD COLSPAN=2>The Sunday psalm set is used, except if the psalm is explicitly indicated as being proper in the Proprium file.</TD><TD>Sancti/01-01</TD></TR>
+					<TR><TD><span class=prma>Feria&nbsp;Te&nbsp;Deum</span></TD><TD COLSPAN=2>Te Deum is sung at the end of Matins even on a Feria.</TD><TD>Sancti/01-02</TD></TR>
+					<TR><TD><span class=prma>Festum&nbsp;Domini</span></TD><TD COLSPAN=2>Under Rubrics 1960, such a feast still trumps any minor Sunday.</TD><TD>Sancti/01-06</TD></TR>
+					<TR><TD><span class=prma>Antiphonas&nbsp;horas</span></TD><TD COLSPAN=2><I>Laudes</I> antiphons are used for the minor
+						hours:
 						<UL>
-							<LI>1 = Prima</LI>
-							<LI>2 = Tertia</LI>
-							<LI>3 = Sexta</LI>
-							<LI>5 = Nona</LI>
-						</UL>
-					</LI>
-					
-					<LI><span class=prma>9 lectiones</span> : Matins with 9 lections.</LI>
-					
-					<LI><span class=prma>omit <I>group list</I></span> : Skip the named item.</LI>
-					
-					<LI><span class=prma>limit <I>group list</I></span> : Special (hard coded) rules for the named items.</LI>
-					
-					<LI><span class=prma>Psalm5 Vespera=nn</span> : The last psalm in Vespers is the named one.</LI>
-					
-					<LI><span class=prma>Capitulum Versum 2 [<I>hour spec</I>]</span> : Capitulum
+							<LI>Ant 1 => Prima</LI>
+							<LI>Ant 2 => Tertia</LI>
+							<LI>Ant 3 => Sexta</LI>
+							<LI>Ant 5 => Nona</LI>
+						</UL></TD><TD>Sancti/01-06</TD></TR>
+					<TR><TD><span class=prma>9 lectiones<BR />12 lectiones</span></TD><TD COLSPAN=2>Matins with 9 (or 12) lessons, i.e., 3 nocturns.</TD><TD>Sancti/01-06<BR />SanctiM/01-06</TD></TR>
+					<TR><TD><span class=prma>Doxology=<I>season</I></span></TD><TD>Doxology of Hymns changes according to the season.</TD><TD>Doxology=Epi</TD><TD>Sancti/01-06</TD></TR>
+					<TR><TD><span class=prma>Psalm5&nbsp;Vespera=<I>ddd</I></span></TD><TD>The last psalm in (2nd) Vespers is the named one.</TD><TD>Psalm5 Vespera=116<BR />Psalm5 Vespera3=113</TD><TD>Sancti/01-06</TD></TR>
+					<TR><TD><span class=prma>omit&nbsp;<I>group list</I></span></TD><TD>Skip the named item.</TD><TD>Omit ad Matutinum Incipit Invitatorium Hymnus</TD><TD>Sancti/01-06</TD></TR>
+					<TR><TD><span class=prma>limit&nbsp;<I>group list</I></span></TD><TD COLSPAN=3>Special (hard coded) rules for the named items (on all Souls and Triduum Sacrum).</TD></TR>
+					<TR><TD><span class=prma>Minores sine antiphona</span></TD><TD COLSPAN=3>Minor hours are prayed without an antiphon (e.g., Triduum).</TD></TR>
+					<TR><TD><span class=prma>Lectio1 tempora<br />Lectio1 OctNat</span></TD><TD COLSPAN=2>Replacing 1st Nocturn readings according to the rules in the Octaves of Epiphany and Nativity.</TD><TD>Sancti/01-07<BR/>Sancti/12-31</TD></TR>
+					<TR><TD><span class=prma>scriptura1960</span></TD><TD COLSPAN=2>Under Rubrics 1960, 1st Nocturn lessons are taken from occuring scripture.</TD><TD>Sancti/08-29</TD></TR>
+					<TR><TD><span class=prma>No <I>ordinal</I> vespera</span></TD><TD>Prevents a feast to win or be commemorated at second/first vespers</TD><TD>no secunda vespera</TD><TD>Sancti/01-12</TD></TR>
+					<TR><TD><span class=prma>(OC)Papa(e))(CMD)=<I>name</I></span></TD><TD>Provides the name for a C(onfessor), M(artyr), or D(octor) Pope(s) in the O(ffice) or C(ommemorated)</TD><TD>OPapaM=Hyg&iacute;num;<BR>CPapaC=Marcum;</TD><TD>Sancti/01-11cc<BR />Sancti/10-07</TD></TR>
+					<TR><TD><span class=prma>Sub unica concl</span></TD><TD COLSPAN=2>Joining Prayers under one conclusio (esp. Peter + Paul)</TD><TD>Sancti/01-18</TD></TR>
+					<TR><TD><span class=prma>in <I>d</I> Nocturno Lectiones ex Commune in <I>dd</I> loco</span></TD><TD>Taking lessons from the respective place in the Commons.</TD><TD>in 3 Nocturno Lectiones ex Commune in 3 loco;</TD><TD>Sancti/02-05</TD></TR>
+					<TR><TD><span class=prma>Una antiphona</span></TD><TD COLSPAN=3>Major hours are prayed under one antiphon (e.g., Paschal tide).</TD></TR>
+					<TR><TD><span class=prma>1  nocturn</span></TD><TD COLSPAN=3>Matins of one nocturn only (e.g., Paschal octave).</TD></TR>
+					<TR><TD><span class=prma>3 lectiones</span></TD><TD COLSPAN=3>Ferial style Matins under Monastic rules (e.g., dies infra Octavam).</TD></TR>
+					<TR><TD><span class=prma>Capitulum Versum 2 [<I>hour spec</I>]</span></TD><TD COLSPAN=2>Capitulum
 						is substituted with the [Versum 2] item from the Propria. This occurs at all hours
 						other than Compline if <I>hour spec</I> is omitted, at Lauds and Vespers if
 						<I>hour spec</I> is <strong>ad Laudes et Vesperas</strong>, and at Lauds only
-						if <I>hour spec</I> is <strong>ad Laudes tantum.</strong></LI>
+						if <I>hour spec</I> is <strong>ad Laudes tantum.</strong></LI></TD><TD>Tempora/Pasc0-0</TD></TR>
 					
-					<LI><span class=prma>Una antiphona</span> : Major hours are prayed under one antiphon.</LI>
-					
-					<LI><span class=prma>Minores sine antiphona</span> : Minor hours are prayed without an antiphon.</LI>
-					
-					<LI><span class=prma>1 nocturn</span> : Matins of one nocturn only.</LI>
-					
-					<LI><span class=prma>Rubrica 1570 aut Rubrica 1888 aut Rubrica Tridentina aut Rubrica Divino aut Rubrica 1960 (etc.)</span> : Specifies usage of an element solely in one or more of these rubrical usages. The syntax used by the code is to place these conditionals in parentheses (e.g. [Lectio1](rubrica 1960), etc.)</LI>
-					
-				</UL>
+				</TABLE></P>
+				
+				<A NAME='conditionals'></A>
+				<P ALIGN=CENTER><A HREF=#Top>Top</A></FONT></P>
+				<span class=prmm>Conditionals</span>
+				
+				<P>The database files contain various types of conditional statements in parentheses which enables the scripts to access the hash elements for various rubrical structures and for various dynamic cases such as what Feria a day occurs on. The general format for such conditionals is as follows:
+				
+				<TABLE ALIGN=CENTER WIDTH=90% CELLPADDING=12  style="border-collapse: collapse;">
+					<TR><TH>stopword</TH><TH>condition</TH><TH>scope descriptor</TH><TH>instruction</TH></TR>
+					<TR>
+						<TD><I>(optional)</I><BR />si<BR />deinde<BR />vero<BR />sed<BR />atque<BR />attamen</TD>
+						<TD><I>(optional subject) predicate [&amp; et/aut...]</I><BR />(tempore) nativitias<BR />rubrica tridentina<BR />feria 3 aut feria 6<BR />commune C11<BR />missa tertia<BR />die Sabbato Sancto<BR /><I>(etc.)</I></TD>
+						<TD><I>(optional)</I><BR />loco hujus versus<BR />loco horum versuum<BR />hic versus<BR />hi versus</TD>
+						<TD><I>(optional)</I><BR />dicitur <I>(semper)</I><BR />dicuntur <I>(semper)</I><BR />omittitur<BR />omittuntur</TD>
+					</TR>
+				</TABLE>
+				</P>
+				
+				<P>Each conditional can have forward and backward scope. The stopwords <code>si</code> and <code>deinde</code> have forward scope. The other stopwords have implicit backward scope unless combined with <code>dicitur semper</code> or <code>dicuntur semper</code>. For nesting purposes, the stopwords have increasing "weight" in the given order.</P>
+				<P>The instructions <code>omittitur</code> and <code>omittuntur</code> force backwards scope and prevent any forward scope. The singular goes back until the last line break, which in the DO database can also be given by a "joiner line", i.e., a single underscore <code>_</code>. The plural goes back as far as possible unless stopped explictly by a forward scoped statement.</P>
+				<P>The instructions <code>dicitur</code> and <code>dicuntur</code> force forward scope but do allow backward scope unless followed by <code>semper</code>. The extent of the scope depends on the scope descriptor:
+					<UL>
+						<LI>without scope descriptor: single line backscope depending on stopword (see above); single line forward scope for singular and multi paragraph for plural</LI>
+						<LI><code>loco hujus versus dicitur/dicuntur</code>: single paragraph backscope with single paragraph forward scope</LI>
+						<LI><code>loco horum versuum dicitur</code>: multi paragraph backscope with single paragraph forwards scope</LI>
+						<LI><code>loco horum versuum dicuntur</code>: multi paragraph backscope with multi paragraph forwards scope</LI>
+					</UL>
+				</P>
+				
+				<P>To fully embrace the power of conditionals, please have a look at this (indented) example from the beginning of <code>Ordinarium/Completorium.txt</code>
+				<PRE>
+#Incipit
+$benedictio Completorium
+$Amen
+
+#Lectio brevis
+
+$Adjutorium nostrum
+(rubrica 196) $examen
+(atque dicuntur semper)
+	$Pater noster
+	(rubrica cisterciensis) $Ave Maria
+		(deinde dicitur)
+			$Confiteor
+			$Misereatur
+		(sed rubrica cisterciensis omittitur)
+		(deinde dicitur)
+			$Indulgentiam
+		(sed rubrica Ordo Praedicatorum aut rubrica cisterciensis omittitur)
+	$Converte nos
+(atque rubrica altovadensis omittuntur)
+
+(rubrica cisterciensis) $clara voce
+$Deus in adjutorium
+(deinde dicitur)
+	&Alleluia
+(sed rubrica cisterciensis omittitur)
+				</PRE>
+				
+				The <B>Incipit</B> and <B>Lectio brevis</B> are part of all versions. So is the versicle <B>Adjutorium nostrum</B>. The rubric about <I>Examination of Conscience</I> has been introduced by <I>Rubricarum Instructum</I> only. The <B>Ave Maria</B> is prayed only in the <I>Cistercian rite</I>. The <B>Confiteor</B> and <B>Misereatur</B> are omitted in the <I>Cistercian rite</I> with the <code>deinde dicitur</code> separating this part from the <B>Pater noster</B> which is still prayed in the <I>Cistercian</I> version. Similarly, the <B>Idulgentiam</B> is not said in the <I>Dominican and Cistercian rites</I> whereas the <B>Converte nos</B> is. In the <I>Reduced version of the Cistercian rite</I> used in the <I>Abbatia B.M.V. de Altovado</I>, however, everything from the <B>Pater noster</B> to the <B>Converte nos</B> has to be omitted but not the <B>Adjutorium nostrum</B>. Therefore, the "stronger" stopword <code>atque</code> is used for nesting purposes.
+				</P>
+				
+				
 				
 				
 				<CENTER>
@@ -316,6 +377,7 @@
 					<A HREF=#databases>[Databases]</A>&ensp;
 					<A HREF=#specialchars>[Special characters]</A>&ensp;
 					<A HREF=#exceptions>[Exceptions]</A>
+					<A HREF=#conditionals>[Conditionals]</A>
 					</FONT></CENTER>
 				
 				<BR />
