@@ -13,17 +13,32 @@
 [#Psalmi cum lectionibus]
 #Salmos con lecturas
 
+[#Capitulum Responsorium Versus]
+#Capítulo Responsorio Verso
+
 [#Capitulum Responsory Versus]
 #Capítulo Responsorio Verso
 
 [#Capitulum Hymnus Versus]
 #Capítulo Himno Verso
 
+[#Capitulum Versus]
+#Capítulo Verso
+
+[#Capitulum Responsorium Hymnus Versus]
+#Capítulo Responsorio Himno Verso
+
 [#Canticum]
 #Cántico
 
 [#Canticum: Nunc dimittis]
 #Cántico Nunc dimittis
+
+[#Canticum: Benedictus]
+#Cántico Benedictus
+
+[#Canticum: Magnificat]
+#Cántico Magnificat
 
 [#Preces Dominicales]
 #Preces dominicales
@@ -103,38 +118,29 @@ Señor, abre Tú mis labios
 [Deus in adjutorium]
 Dios mío, ven en mi auxilio
 
-[Deusinadjutorium]
-Dios mío, ven en mi auxilio
-
 [Tu autem]
 Tú, Señor, ten piedad
 
 [Aperi]
 Abre mi boca
 
-[Benedicamus Domino]
+[Benedicamus_Domino]
 Bendigamos al Señor
 
-[Benedicamus Domino alleluja]
+[Benedicamus Domino1]
 Bendigamos al Señor, aleleya, aleluya
 
 [Fidelium animae]
 Las almas de los fieles
+
+[Oremus]
+Oremos.
 
 [Hymnus]
 Himno
 
 [Psalmus]
 Salmo
-
-[Oremus]
-Oremos.
-
-[Benedictio]
-Bendición
-
-[Absolutio]
-Absolución
 
 [Per Dominum]
 Por Nuestro Señor Jesucristo
@@ -157,6 +163,12 @@ Que vive y reina
 [Sacrosancta]
 A la Sacrosanta
 
+[Benedictio]
+Bendición
+
+[Absolutio]
+Absolución
+
 [Te Deum]
 Te Deum
 
@@ -178,14 +190,8 @@ Después
 [Commemoratio]
 Conmemoración
 
-[Antiphona]
-Antífona
-
 [Antiphonae]
 Antífonas
-
-[et Psalmi]
-y salmos
 
 [Psalmi, antiphonae]
 Salmos, antífonas
@@ -210,6 +216,12 @@ Nuestro auxilio
 
 [Pater secreto_]
 Y no nos 
+
+[Antiphona]
+Antífona
+
+[et Psalmi]
+y salmos
 
 [Requiescant]
 Descansed

@@ -13,20 +13,32 @@
 [#Psalmi cum lectionibus]
 #Psalmen und Lesungen
 
-[#Capitulum Responsory Versus]
+[#Capitulum Responsorium Versus]
 #Kapitel Responsorium Versikel
 
-[#Capitulum Responsorium Versus]
+[#Capitulum Responsory Versus]
 #Kapitel Responsorium Versikel
 
 [#Capitulum Hymnus Versus]
 #Kapitel Hymnus Versikel
+
+[#Capitulum Versus]
+#Kapitel Versikel
 
 [#Capitulum Responsorium Hymnus Versus]
 #Kapitel Responsorium Hymnus Versikel
 
 [#Canticum]
 #Canticum
+
+[#Canticum: Nunc dimittis]
+#Canticum: Nunc dimittis
+
+[#Canticum: Benedictus]
+#Canticum: Benedictus
+
+[#Canticum: Magnificat]
+#Canticum: Magnificat
 
 [#Preces Dominicales]
 #Preces Dominicales
@@ -46,14 +58,35 @@
 [#Orationes]
 #Oration
 
-[#De Officio Capituli]
-#Kapitular-Offizium
-
 [#Lectio brevis]
 #Kurzlesung
 
 [#Conclusio]
 #Abschluß
+
+[#De Officio Capituli]
+#Kapitular-Offizium
+
+[#Martyrologium]
+#Martyrologium
+
+[#Regula vel Lectio brevis]
+#Regel (oder Kurzlesung)
+
+[#Commemoratio defunctorum]
+#Gedenken der Armen Seelen
+
+[#ANTE PRANDIUM]
+#Vor dem Mittagessen
+
+[#POST PRANDIUM]
+#Nach dem Mittagessen
+
+[#ANTE COENAM]
+#Vor dem Abendessen
+
+[#IN FINE COENAE]
+#Nach dem Abendessen
 
 [Pater noster]
 Vater unser
@@ -62,7 +95,7 @@ Vater unser
 Vater unser
 
 [Ave Maria]
-Gegrüßet seist du Maria
+Ave Maria
 
 [Credo]
 Ich glaube an Gott
@@ -77,7 +110,7 @@ Kein Die Ehre sei dem Vater
 Die Ehre sei dem Vater
 
 [Requiem]
-Réquiem
+Herr, schenke ihnen
 
 [Alleluia]
 Alleluja.
@@ -92,10 +125,10 @@ Der Herr sei mit euch
 O Herr, erhöre
 
 [secunda Domine exaudi omittitur]
-das zweite "O Herr, erhöre meine Bitten" wird ausgelassen
+das zweite „O Herr, erhöre meine Bitten“ wird ausgelassen
 
 [Confiteor]
-I gestehe es Gott
+Ich bekenne
 
 [Misereatur]
 Der allmächtige Gott erbarme sich
@@ -109,11 +142,8 @@ O Herr, du wollest meine Lippen auftun
 [Deus in adjutorium]
 O Gott, sei nun bedacht drauf, mir zu helfen
 
-[Deusinadjutorium]
-O Gott, sei nun bedacht drauf, mir zu helfen
-
 [Tu autem]
-Du aber
+Du aber, Herr
 
 [Aperi]
 Öffne doch
@@ -121,26 +151,20 @@ Du aber
 [Benedicamus_Domino]
 Wir wollen den Herrn preisen
 
-[Benedicamus Domino alleluja]
+[Benedicamus Domino1]
 Wir wollen den Herrn preisen, alleluja, alleluja
 
 [Fidelium animae]
 Die Seelen der Verstorbenen
+
+[Oremus]
+Lasset uns beten.
 
 [Hymnus]
 Hymnus
 
 [Psalmus]
 Psalm
-
-[Oremus]
-Lasset uns beten.
-
-[Benedictio]
-Benediktion
-
-[Absolutio]
-Absolution
 
 [Per Dominum]
 Im Hinblick auf unsern Herrn Jesus Christus
@@ -163,8 +187,17 @@ Der mit Dir
 [Sacrosancta]
 To the most holy
 
+[Benedictio]
+Benediktion
+
+[Absolutio]
+Absolution
+
 [Te Deum]
 Großer Gott
+
+[Te decet]
+Dir gebührt Lob
 
 [Deo gratias]
 R. Dank sei Gott!
@@ -184,14 +217,8 @@ Nach dem
 [Commemoratio]
 Kommemoration
 
-[Antiphona]
-Antiphon
-
 [Antiphonae]
 Antiphonen
-
-[et Psalmi]
-und Psalmen
 
 [Psalmi, antiphonae]
 Psalmen, Antiphonen
@@ -217,6 +244,18 @@ Sonntag
 [Octava]
 Oktav
 
+[Litaniae]
+Allerheiligenlitanei
+
+[Benedictio mensae]
+Tischgebete
+
+[Itinerarium]
+Reisesegen
+
+[Nocturn]
+Nokturn
+
 [Adjutorium nostrum]
 Unsere Hilfe ist
 
@@ -232,11 +271,17 @@ Würdige
 [Pater secreto_]
 Und führe uns nicht
 
+[Antiphona]
+Antiphon
+
 [Pater totum secreto_]
 /:still:/
 
 [Credo secreto_]
 Auferstehung
+
+[et Psalmi]
+und Psalmen
 
 [Pater Ave L_]
 /:Rubrik für die Laudes:/
@@ -253,11 +298,8 @@ Der Herr möge uns segnen
 [Benedicite]
 Gebt den Segen
 
-[#Commemoratio defunctorum]
-#Gedenken der Verstorbenen
+[Requiescant]
+Laß sie ruhen
 
 [A_porta_inferi]
 Von den Pforten
-
-[Requiescant]
-Laß sie ruhen

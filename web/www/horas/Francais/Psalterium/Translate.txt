@@ -13,23 +13,23 @@
 [#Psalmi cum lectionibus]
 #Psaumes avec lectures
 
-[#Capitulum Responsorium Versus]
-#Capitule et versets
-
 [#Capitulum Hymnus Versus]
 #Capitule Hymne Versets
 
+[#Capitulum Versus]
+#Capitule Versets
+
 [#Canticum]
 #Cantique
+
+[#Canticum: Nunc dimittis]
+#Cantique : Nunc dimittis
 
 [#Canticum: Benedictus]
 #Cantique : Benedictus
 
 [#Canticum: Magnificat]
 #Cantique : Magnificat
-
-[#Canticum: Nunc dimittis]
-#Cantique : Nunc dimittis
 
 [#Preces Dominicales]
 #Prières dominicales
@@ -49,14 +49,14 @@
 [#Orationes]
 #Oraisons
 
-[#De Officio Capituli]
-#L'Office du Chapitre
-
 [#Lectio brevis]
 #Leçon brève
 
 [#Conclusio]
 #Conclusion
+
+[#De Officio Capituli]
+#L'Office du Chapitre
 
 [Pater noster]
 Notre Père
@@ -112,38 +112,29 @@ Seigneur Vous ouvrirez mes lèvres
 [Deus in adjutorium]
 Dieu venez à mon aide
 
-[Deusinadjutorium]
-Dieu venez à mon aide
-
 [Tu autem]
 Et Vous, Seigneur
 
 [Aperi]
 Seigneur Vous ouvrirez
 
-[Benedicamus Domino]
+[Benedicamus_Domino]
 Bénissons le Seigneur
 
-[Benedicamus Domino alleluja]
+[Benedicamus Domino1]
 Bénissons le Seigneur, alleluia, alleluia
 
 [Fidelium animae]
 Que par la miséricorde de Dieu
+
+[Oremus]
+Prions.
 
 [Hymnus]
 Hymne
 
 [Psalmus]
 Psaume
-
-[Oremus]
-Prions.
-
-[Benedictio]
-Bénédiction
-
-[Absolutio]
-Absolution
 
 [Per Dominum]
 Par notre Seigneur Jésus-Christ
@@ -166,6 +157,12 @@ Qui avec Vous
 [Sacrosancta]
 A la Très Sainte
 
+[Benedictio]
+Bénédiction
+
+[Absolutio]
+Absolution
+
 [Te Deum]
 Nous Vous louons ô Dieu
 
@@ -187,14 +184,8 @@ Après
 [Commemoratio]
 Commémoraison
 
-[Antiphona]
-Antienne
-
 [Antiphonae]
 Antiennes
-
-[et Psalmi]
-et psaumes
 
 [Psalmi, antiphonae]
 Psaumes, antiennes
@@ -225,6 +216,12 @@ Notre secours est
 
 [Pater secreto_]
 Et ne nous
+
+[Antiphona]
+Antienne
+
+[et Psalmi]
+et psaumes
 
 [Requiescant]
 Qu'ils reposent

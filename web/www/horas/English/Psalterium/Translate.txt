@@ -13,14 +13,17 @@
 [#Psalmi cum lectionibus]
 #Psalms with lections
 
-[#Capitulum Responsory Versus]
+[#Capitulum Responsorium Versus]
 #Chapter Responsory Verse
 
-[#Capitulum Responsorium Versus]
+[#Capitulum Responsory Versus]
 #Chapter Responsory Verse
 
 [#Capitulum Hymnus Versus]
 #Chapter Hymn Verse
+
+[#Capitulum Versus]
+#Chapter Verse
 
 [#Capitulum Responsorium Hymnus Versus]
 #Chapter Responsory Hymn Verse
@@ -28,14 +31,14 @@
 [#Canticum]
 #Canticle
 
+[#Canticum: Nunc dimittis]
+#Canticle: Nunc dimittis
+
 [#Canticum: Benedictus]
 #Canticle: Benedictus
 
 [#Canticum: Magnificat]
 #Canticle: Magnificat
-
-[#Canticum: Nunc dimittis]
-#Canticle: Nunc dimittis
 
 [#Preces Dominicales]
 #Sunday Intercessions
@@ -55,17 +58,35 @@
 [#Orationes]
 #Prayers
 
-[#De Officio Capituli]
-#The Capitular Office
-
-[#Commemoratio defunctorum]
-#Commemoration of departed
-
 [#Lectio brevis]
 #Short reading
 
 [#Conclusio]
 #Conclusion
+
+[#De Officio Capituli]
+#The Capitular Office
+
+[#Martyrologium]
+#Martyrology
+
+[#Regula vel Lectio brevis]
+#Rule (or Short reading)
+
+[#Commemoratio defunctorum]
+#Commemoration of departed
+
+[#ANTE PRANDIUM]
+#Before dinner.
+
+[#POST PRANDIUM]
+#After dinner.
+
+[#ANTE COENAM]
+#Before supper.
+
+[#IN FINE COENAE]
+#After supper.
 
 [Pater noster]
 Our Father
@@ -104,7 +125,7 @@ The Lord be with you
 O Lord hear my prayer
 
 [secunda Domine exaudi omittitur]
-omit second "O Lord hear my prayer"
+omit second “O Lord hear my prayer”
 
 [Confiteor]
 I confess
@@ -121,9 +142,6 @@ O Lord, open Thou my lips
 [Deus in adjutorium]
 O God, come to my assistance
 
-[Deusinadjutorium]
-O God, come to my assistance
-
 [Tu autem]
 But Thou Lord
 
@@ -133,26 +151,20 @@ Open my mouth
 [Benedicamus_Domino]
 Let us bless the Lord
 
-[Benedicamus Domino alleluja]
+[Benedicamus Domino1]
 Let us bless the Lord, alleluia, alleluia
 
 [Fidelium animae]
 May the souls of the faithful
+
+[Oremus]
+Let us pray.
 
 [Hymnus]
 Hymn
 
 [Psalmus]
 Psalm
-
-[Oremus]
-Let us pray.
-
-[Benedictio]
-Benediction
-
-[Absolutio]
-Absolution
 
 [Per Dominum]
 Through our Lord Jesus Christ
@@ -175,8 +187,17 @@ Who with thee
 [Sacrosancta]
 To the most holy
 
+[Benedictio]
+Benediction
+
+[Absolutio]
+Absolution
+
 [Te Deum]
 We praise thee
+
+[Te decet]
+You deserve praise
 
 [Deo gratias]
 R. Thanks be to God.
@@ -196,14 +217,8 @@ After
 [Commemoratio]
 Commemoration
 
-[Antiphona]
-Antiphon
-
 [Antiphonae]
 Antiphons
-
-[et Psalmi]
-and psalms
 
 [Psalmi, antiphonae]
 Psalms & antiphons
@@ -247,18 +262,6 @@ Recommendation of soul departing
 [Benedictio mensae]
 Grace before and after Meal
 
-[#ANTE PRANDIUM]
-#Before dinner.
-
-[#POST PRANDIUM]
-#After dinner.
-
-[#ANTE COENAM]
-#Before supper.
-
-[#IN FINE COENAE]
-#After supper.
-
 [Itinerarium]
 Prayers for a Journey
 
@@ -280,11 +283,17 @@ O Lord, Almighty
 [Pater secreto_]
 And lead us not
 
+[Antiphona]
+Antiphon
+
 [Pater totum secreto_]
 /:in silence:/
 
 [Credo secreto_]
 The resurrection
+
+[et Psalmi]
+and psalms
 
 [Pater Ave L_]
 /:rubrics for Lauds:/

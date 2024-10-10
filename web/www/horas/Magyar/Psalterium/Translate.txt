@@ -19,17 +19,20 @@
 [#Capitulum Hymnus Versus]
 #Olvasmány, himnusz, vers
 
+[#Capitulum Versus]
+#Olvasmány, vers
+
 [#Canticum]
 #Kantikum
+
+[#Canticum: Nunc dimittis]
+#Nunc dimittis kantikum
 
 [#Canticum: Benedictus]
 #Benedictus kantikum
 
 [#Canticum: Magnificat]
 #Magnificat kantikum
-
-[#Canticum: Nunc dimittis]
-#Nunc dimittis kantikum
 
 [#Preces Dominicales]
 #Vasárnapi könyörgések
@@ -109,26 +112,17 @@ Nyisd meg, Uram
 [Deus in adjutorium]
 Istenem, jöjj segítségemre
 
-[Deusinadjutorium]
-Istenem, jöjj segítségemre
-
 [Tu autem]
 Te pedig, Urunk
 
 [Aperi]
 Nyisd meg, Uram, számat
 
-[Benedicamus Domino]
+[Benedicamus_Domino]
 Áldjuk az Urat
 
-[Benedicamus Domino alleluia]
+[Benedicamus Domino1]
 Áldjuk az Urat, alleluja, alleluja
-
-[Benedictio]
-Áldás
-
-[Absolutio]
-Feloldozás
 
 [Fidelium animae]
 A megholt hívek lelkei
@@ -163,6 +157,12 @@ Aki veled
 [Sacrosanctaea]
 A legszentebb
 
+[Benedictio]
+Áldás
+
+[Absolutio]
+Feloldozás
+
 [Te Deum]
 Téged, Isten, dicsérünk
 
@@ -181,14 +181,8 @@ zsolozsmához
 [Post]
 Befejező ima
 
-[Antiphona]
-Antifóna
-
 [Antiphonae]
 Antifónák
-
-[et Psalmi]
-és zsoltárok
 
 [Divinum_auxilium]
 Az Isten áldása
@@ -201,6 +195,12 @@ Segítségünk
 
 [Pater secreto_]
 És ne vígy
+
+[Antiphona]
+Antifóna
+
+[et Psalmi]
+és zsoltárok
 
 [Requiescant]
 Nyugodjanak

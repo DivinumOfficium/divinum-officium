@@ -438,7 +438,7 @@ sub lectioE_required {
 
 #*** sub regula_vel_lectio_evangeli
 # for Ordo Praedicatorum
-sub regula_vel_evangelium : ScriptFunc {
+sub regula_vel_evangelium {
 
   my $lang = shift;
 
@@ -465,12 +465,12 @@ sub regula_vel_evangelium : ScriptFunc {
 
 #*** regula($lang)
 #returns the text of the Regula for the day
-sub regula : ScriptFunc {
+sub regula {
   my $lang = shift;
+  return regula_vel_evangelium($lang) if $version =~ /Ordo Praedicatorum/i;
 
   my @a;
   my $t = prayer('benedictio Prima', $lang) . "\n";
-  $t .= setfont($largefont, translate("Regula", $lang)) . "\n";
   my $d = $day;
   my $l = leapyear($year);
 
@@ -489,7 +489,7 @@ sub regula : ScriptFunc {
   @a = do_read($fname);
   my $title = shift(@a);
   for (@a) { s/^$/_/; }
-  $title =~ s/.*#//;
+  $title =~ s/.*#/v. /;
   unshift(@a, $title);
   $t .= join("\n", @a);
 
@@ -502,6 +502,6 @@ sub regula : ScriptFunc {
   }
 
   $t .= "\n\$Tu autem";
-  $t .= "\n_\n" . prayer("rubrica Regula", $lang) . "\n_";
+  $t .= "\n_\n" . prayer("rubrica Regula", $lang) . "\n";
   return $t;
 }

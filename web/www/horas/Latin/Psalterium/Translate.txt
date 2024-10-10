@@ -1,3 +1,6 @@
+[#Regula vel Lectio brevis]
+#Regula (vel Lectio brevis)
+
 [Pater noster]
 Pater noster
 
@@ -37,6 +40,9 @@ Dóminus vobíscum
 [Domine exaudi]
 Dómine, exáudi
 
+[secunda Domine exaudi omittitur]
+secunda Dómine exáudi omittitur
+
 [Confiteor]
 Confíteor
 
@@ -52,6 +58,9 @@ Dómine, lábia
 [Deus in adjutorium]
 Deus in adjutórium
 
+[Deusinadjutorium]
+@:Deus in adjutorium
+
 [Tu autem]
 Tu autem
 
@@ -61,8 +70,17 @@ Tu autem
 [Benedicamus_Domino]
 Benedicámus Dómino
 
+[Benedicamus Domino]
+@:Benedicamus_Domino
+
 [Benedicamus Domino1]
 Benedicámus Dómino, allelúja, allelúja
+
+[Benedicamus Domino alleluia]
+@:Benedicamus Domino1
+
+[Benedicamus Domino alleluja]
+@:Benedicamus Domino1
 
 [Fidelium animae]
 Fidélium ánimæ
@@ -95,10 +113,22 @@ Qui vivis
 Qui tecum
 
 [Sacrosanctaea]
-Sacrosanctća
+Sacrosanctæa
+
+[Sacrosancta]
+Sacrosancta
+
+[Benedictio]
+Benedictio
+
+[Absolutio]
+Absolutio
 
 [Te Deum]
 Te Deum
+
+[Te decet]
+Te decet
 
 [Deo gratias]
 R. Deo grátias.
@@ -129,9 +159,6 @@ Psalmi & antiphonæ
 
 [Psalmi Dominica, antiphonae]
 Psalmi Dominica & antiphonæ
-
-[#Canticum Nunc dimittis]
-#Canticum: Nunc dimittis
 
 [Antiphona finalis BMV]
 Antiphona finalis B.M.V.
