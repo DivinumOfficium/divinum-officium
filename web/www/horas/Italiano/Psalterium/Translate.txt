@@ -13,14 +13,17 @@
 [#Psalmi cum lectionibus]
 #Salmi con letture
 
-[#Capitulum Responsory Versus]
+[#Capitulum Responsorium Versus]
 #Capitolo Responsorio Verso
 
-[#Capitulum Responsorium Versus]
+[#Capitulum Responsory Versus]
 #Capitolo Responsorio Verso
 
 [#Capitulum Hymnus Versus]
 #Capitolo Inno Verso
+
+[#Capitulum Versus]
+#Capitolo Verso
 
 [#Capitulum Responsorium Hymnus Versus]
 #Capitolo Responsorio Inno Verso
@@ -28,14 +31,14 @@
 [#Canticum]
 #Cantico
 
+[#Canticum: Nunc dimittis]
+#Cantico Nunc dimittis
+
 [#Canticum: Benedictus]
 #Cantico Benedictus
 
 [#Canticum: Magnificat]
 #Cantico Magnificat
-
-[#Canticum: Nunc dimittis]
-#Cantico Nunc dimittis
 
 [#Preces Dominicales]
 #Preci della Domenica
@@ -55,17 +58,35 @@
 [#Orationes]
 #Orazioni
 
-[#De Officio Capituli]
-#Ufficio del capitolo
-
-[#Commemoratio defunctorum]
-#Commemorazione dei defunti
-
 [#Lectio brevis]
 #Lettura breve
 
 [#Conclusio]
 #Conclusione
+
+[#De Officio Capituli]
+#Ufficio del capitolo
+
+[#Martyrologium]
+#Martirologio
+
+[#Commemoratio defunctorum]
+#Commemorazione dei defunti
+
+[#ANTE PRANDIUM]
+#Prima di pranzo.
+
+[#POST PRANDIUM]
+#Dopo pranzo
+
+[#ANTE COENAM]
+#Prima di cena.
+
+[#IN FINE COENAE]
+#Dopo cena.
+
+[#IN FINE COENE]
+#Dopo cena.
 
 [Pater noster]
 Padre nostro
@@ -121,38 +142,29 @@ Signore, tu aprirai le mie labbra
 [Deus in adjutorium]
 Provvedi, o Dio, al mio soccorso
 
-[Deusinadjutorium]
-Provvedi, o Dio, al mio soccorso
-
 [Tu autem]
 E tu, o Signore
 
 [Aperi]
 [Apri, o Signore
 
-[Benedicamus Domino]
+[Benedicamus_Domino]
 Benediciamo il Signore
 
-[Benedicamus Domino alleluja]
+[Benedicamus Domino1]
 Benediciamo il Signore, alleluia, alleluia
 
 [Fidelium animae]
 Le anime dei Fedeli
+
+[Oremus]
+Preghiamo.
 
 [Hymnus]
 Inno
 
 [Psalmus]
 Salmo
-
-[Oremus]
-Preghiamo.
-
-[Benedictio]
-Benedizione
-
-[Absolutio]
-Assoluzione
 
 [Per Dominum]
 Per il nostro Signore Gesù
@@ -175,6 +187,12 @@ Lui che è Dio
 [Sacrosanctaea]
 Alla Sacrosanta
 
+[Benedictio]
+Benedizione
+
+[Absolutio]
+Assoluzione
+
 [Te Deum]
 Ti lodiamo
 
@@ -196,14 +214,8 @@ Dopo
 [Commemoratio]
 Commemorazione
 
-[Antiphona]
-Antifona
-
 [Antiphonae]
 Antifone
-
-[et Psalmi]
-e salmi
 
 [Psalmi, antiphonae]
 Salmi, antifone
@@ -247,18 +259,6 @@ Racommandazione di un'anima
 [Benedictio mensae]
 Benedizione prima e dopo i pasti
 
-[#ANTE PRANDIUM]
-#Prima di pranzo.
-
-[#POST PRANDIUM]
-#Dopo pranzo
-
-[#ANTE COENAM]
-#Prima di cena.
-
-[#IN FINE COENE]
-#Dopo cena.
-
 [Itinerarium]
 Preghiera per il viaggio
 
@@ -280,11 +280,17 @@ O Signore, onnipotente
 [Pater secreto_]
 E non ci
 
+[Antiphona]
+Antifona
+
 [Pater totum secreto_]
 /:in silenzio:/
 
 [Credo secreto_]
 La resurrezione
+
+[et Psalmi]
+e salmi
 
 [Pater Ave L_]
 /:rubriche per le Lodi:/

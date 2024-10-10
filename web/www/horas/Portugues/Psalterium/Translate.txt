@@ -13,14 +13,17 @@
 [#Psalmi cum lectionibus]
 #Salmos com leituras
 
-[#Capitulum Responsory Versus]
+[#Capitulum Responsorium Versus]
 #Capítulo Responsório Verso
 
-[#Capitulum Responsorium Versus]
+[#Capitulum Responsory Versus]
 #Capítulo Responsório Verso
 
 [#Capitulum Hymnus Versus]
 #Capítulo Hino Verso
+
+[#Capitulum Versus]
+#Capítulo Verso
 
 [#Capitulum Responsorium Hymnus Versus]
 #Capítulo Responsório Hino Verso
@@ -121,38 +124,29 @@ Abri, Senhor, os meus lábios
 [Deus in adjutorium]
 Deus, vinde em meu auxílio
 
-[Deusinadjutorium]
-Deus, vinde em meu auxílio
-
 [Tu autem]
 E Vós, Senhor
 
 [Aperi]
 Abri, Senhor, os meus lábios
 
-[Benedicamus Domino]
+[Benedicamus_Domino]
 Bendigamos o Senhor
 
-[Benedicamus Domino alleluja]
+[Benedicamus Domino1]
 Bendigamos o Senhor, aleluia
 
 [Fidelium animae]
 E que as almas dos fiéis
+
+[Oremus]
+Oremos
 
 [Hymnus]
 Hino
 
 [Psalmus]
 Salmo
-
-[Oremus]
-Oremos
-
-[Benedictio]
-Benção
-
-[Absolutio]
-Absolvição
 
 [Per Dominum]
 Por nosso Senhor Jesus
@@ -175,6 +169,12 @@ Que convosco vive e reina
 [Sacrosancta]
 Sacrossanta
 
+[Benedictio]
+Benção
+
+[Absolutio]
+Absolvição
+
 [Te Deum]
 Vos louvamos
 
@@ -196,14 +196,8 @@ Depois
 [Commemoratio]
 Comemoração:
 
-[Antiphona]
-Antífona
-
 [Antiphonae]
 Antífonas
-
-[et Psalmi]
-e Salmos
 
 [Psalmi, antiphonae]
 Salmos, antífonas
@@ -213,9 +207,6 @@ Salmos e antífonas
 
 [Psalmi Dominica, antiphonae]
 Salmos Dominicais, antífonas
-
-[Evangelist]
-Mt|Mc|Lc|Jo
 
 [Antiphona finalis BMV]
 Antífona final da Bem-Aventurada Virgem Maria
@@ -232,5 +223,11 @@ Senhor tende piedade
 [Adjutorium nostrum]
 O nosso auxílio está
 
-[#Capitulum Versus]
-#Capítulo Verso
+[Antiphona]
+Antífona
+
+[et Psalmi]
+e Salmos
+
+[Evangelist]
+Mt|Mc|Lc|Jo

@@ -365,9 +365,16 @@ sub specials {
       }
     }
 
+    if ($item =~ /Regula/i) {
+      my $regula = regula($lang);
+      push(@s, translate($label, $lang));
+      push(@s, $regula);
+      next unless $item =~ /Lectio brevis/i;
+    }
+
     if ($item =~ /Lectio brevis/i && $hora =~ /prima/i) {
       my ($b, $c) = lectio_brevis_prima($lang);
-      setcomment($label, 'Source', $c, $lang);
+      setcomment($label, 'Source', $c, $lang) unless $label =~ /regula/i;
       push(@s, $b);
       next;
     }
