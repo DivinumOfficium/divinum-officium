@@ -471,7 +471,6 @@ sub regula {
 
   my @a;
   my $t = prayer('benedictio Prima', $lang) . "\n";
-  #$t .= setfont($largefont, translate("Regula", $lang)) . "\n";
   my $d = $day;
   my $l = leapyear($year);
 

@@ -374,7 +374,17 @@ sub specials {
 
     if ($item =~ /Lectio brevis/i && $hora =~ /prima/i) {
       my ($b, $c) = lectio_brevis_prima($lang);
-      setcomment($label, 'Source', $c, $lang) unless $label =~ /regula/i;
+      $label = '' if $label =~ /regula/i;
+      setcomment($label, 'Source', $c, $lang);
+
+      if (!$label) {
+
+        # Join the source of the Lectio brevis to the rubric describing its use outside of choir.
+        my $comment = pop(@s);
+        my $regula = pop(@s);
+        $regula =~ s/\.?\:\/\s*$/ $comment:\//;
+        push(@s, $regula);
+      }
       push(@s, $b);
       next;
     }
