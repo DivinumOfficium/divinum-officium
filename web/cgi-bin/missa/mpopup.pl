@@ -33,14 +33,14 @@ use DivinumOfficium::LanguageTextTools qw(prayer translate load_languages_data);
 #*** collect standard items
 require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/../horas/horascommon.pl";
-require "$Bin/../horas/dialogcommon.pl";
+require "$Bin/../DivinumOfficium/dialogcommon.pl";
 require "$Bin/../horas/webdia.pl";
-require "$Bin/../horas/setup.pl";
+require "$Bin/../DivinumOfficium/setup.pl";
 require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
 
 #require "$Bin/ordocommon.pl";
-require "$Bin/../horas/do_io.pl";
+require "$Bin/../DivinumOfficium/do_io.pl";
 binmode(STDOUT, ':encoding(utf-8)');
 
 #*** get parameters

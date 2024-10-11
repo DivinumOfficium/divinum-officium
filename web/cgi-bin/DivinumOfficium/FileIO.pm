@@ -7,7 +7,7 @@ use warnings;
 BEGIN {
 
   package DivinumOfficium::FileIO;
-  require "horas/do_io.pl";
+  require "DivinumOfficium/do_io.pl";
 }
 
 BEGIN {

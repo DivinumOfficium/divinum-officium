@@ -73,13 +73,14 @@ if (!-e "$Bin/do_io.pl") {
   $Bin = "$Bin/../../../web/cgi-bin/horas";
 }
 
-require "$Bin/do_io.pl";
+require "$Bin/../DivinumOfficium/do_io.pl";
 require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/horascommon.pl";
-require "$Bin/dialogcommon.pl";
+require "$Bin/../DivinumOfficium/dialogcommon.pl";
 
-require "$Bin/setup.pl";
+require "$Bin/../DivinumOfficium/setup.pl";
 require "$Bin/horas.pl";
+require "$Bin/horasscripts.pl";
 require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
 

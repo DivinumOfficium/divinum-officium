@@ -54,12 +54,12 @@ our $border;
 our $smallblack;
 our $smallfont;
 
-require "$Bin/do_io.pl";
+require "$Bin/../DivinumOfficium/do_io.pl";
 require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/horascommon.pl";
-require "$Bin/dialogcommon.pl";
+require "$Bin/../DivinumOfficium/dialogcommon.pl";
 require "$Bin/webdia.pl";
-require "$Bin/setup.pl";
+require "$Bin/../DivinumOfficium/setup.pl";
 require "$Bin/monastic.pl";
 
 binmode(STDOUT, ':encoding(utf-8)');
