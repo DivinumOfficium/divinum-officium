@@ -1487,3 +1487,55 @@ sub contract_scripture {
   }
   return 0;
 }
+
+#*** getantmatutinum($lang)
+# Retrieve proper AntMatutinum (also from Commune if day requires so
+# and, if necessary, intersperse the Versicles for Nocturns
+# Backwards compatibility is ensured by checking if [AntMatutinum] already has the target lenght
+# Roman 9 lesson: 3 Nocturns à 3 Antiphones, Versicle and Response for a total of 15 lines
+# Monastic 12 lesson: 2 Nocturns à 6 Ant., V. & R. + 1 Ant. V. & R. for 3rd N. (total of 19 lines)
+# Monastic infra 8vam: 1 Nocturn à 6 Ant., V. & R. + 6 Ant. for 2nd Noct. (total of 14 lines)
+sub getantmatutinum {
+
+  my $lang = shift;
+
+  my @nocturns = (1, 2, 3);    # Versicles from Nocturns
+  my $ppN = 3;                 # Psalms per Nocturn (Roman default)
+  my $target = 15;             # Target lines (Roman default)
+  my $flag = 0;                # If we have to look for Commune even when "vide"
+
+  if ($version =~ /monastic/i && $winner{Rule} !~ /Matutinum Romanum/i) {
+    $flag = $version !~ /1963/;    # for Trid. und Divino also look in Commune
+    $ppN = 6;                      # Psalms per Nocturn (Monastic default)
+    $target = 19;                  # Target lines (Monastic default)
+
+    if ($winner{Rule} =~ /3 lectio/i) {    # in Monastic infra Octavam (with Ferial psalms)
+      my $i = $dayofweek;
+      $i -= 3 if $i > 3;
+      @nocturns = ($i, 0);                 # Versicle for 1st Nocturn dep. on $dayofweek; No V&R for 2nd Noct.
+      $target = 14;
+    }
+  }
+
+  # Look up proper AntMatutinum and return if none
+  my ($wprop, $cprop) = getproprium('Ant Matutinum', $lang, $flag, 1);
+  return unless $wprop;
+
+  my $w = $wprop;    # for Backwards compatibility pass through if target is met
+  my @wprop = split("\n", $wprop);
+  my @w = ();
+
+  if (@wprop < $target) {
+    foreach my $noc (@nocturns) {
+      $ppN = @wprop if @wprop < $ppN;           # limit psalm lines in if exceeded
+      push(@w, shift(@wprop)) for 1 .. $ppN;    # pass-through psalm lines for nocturn if they exist
+      last unless $noc;                         # for 3 lectio, no versicle to be appended;
+
+      my ($vers, $cvers) = getproprium("Nocturn $noc Versum", $lang, 1, 1);
+      my @vers = split("\n", $vers);
+      push(@w, @vers);                          # add "interspersed" Versicle
+    }
+    $w = join("\n", @w);
+  }
+  return ($w, $cprop);
+}
