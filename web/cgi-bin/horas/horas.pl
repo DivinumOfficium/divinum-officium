@@ -431,7 +431,7 @@ sub psalm : ScriptFunc {
   my $c1 = $cc = '';
   my $c2 = '';
 
-  if ($num =~ /\((?<v1>\d+)(?<c1>[abc]?)-(?<v2>\d+)(?<c2>[abc]?)\)/) {
+  if ($num =~ /\((?<v1>\d+)(?<c1>[a-z]?)-(?<v2>\d+)(?<c2>[a-z]?)\)/) {
     ($v1, $v2, $c1, $c2) = ($+{v1}, $+{v2}, $+{c1}, $+{c2});
   }
 
@@ -443,6 +443,21 @@ sub psalm : ScriptFunc {
     shift(@lines) =~ /\(?(?<title>.*?) \* (?<source>.*?)\)?\s*$/;
     ($title, $source) = ($+{title}, $+{source});
     if ($v1) { $source =~ s/:\K.*/"$v1-$v2"/e; }
+  } elsif ($lang =~ /bea/i || $psalmfolder =~ /PiusXII/) {
+
+    # remove Title if Psalm section does not start in the beginning
+    shift(@lines) if $lines[0] =~ /^\(.*\)\s*$/ && $lines[1] =~ /^\d+\:(\d+)[a-z]?\s/ && $v1 > $1;
+
+    if ($psnum eq 9) {
+      splice(@lines, 20, 20) if $v2 < 22;    # remove Hebr. Ps 10
+      splice(@lines, 0, 20) if $v1 > 21;     # remove Hebr. Ps 9
+      shift(@lines) if $v1 > 22;             # remove Title B
+    }
+
+    if ($lines[0] =~ /^\(.*\)$/) {
+      shift(@lines) =~ /\((?<title>.*?)\)\s*$/;
+      $title .= " — $1";
+    }
   }
 
   my $t = setfont($redfont, $title) . settone(1);
@@ -464,10 +479,10 @@ sub psalm : ScriptFunc {
       next;
     }
 
-    if ($line =~ /^\s*([0-9]+)\:([0-9]+)([abc]?)/) {
+    if ($line =~ /^\s*([0-9]+)\:([0-9]+)([a-z]?)/) {
       $v = $2;
       $cc = $3;
-    } elsif ($line =~ /^\s*([0-9]+)([abc]?)/) {
+    } elsif ($line =~ /^\s*([0-9]+)([a-z]?)/) {
       $v = $1;
       $cc = $2;
     }
@@ -477,14 +492,14 @@ sub psalm : ScriptFunc {
     if ($cc && $v == $v2 && $cc gt $c2) { last; }    # breaking within a Psalm Verse
     my $lnum = '';
 
-    if ($line =~ /^([0-9]*[\:]*[0-9]+[abc]?)(.*)/) {
+    if ($line =~ /^([0-9]*[\:]*[0-9]+[a-z]?)(.*)/) {
       $lnum = setfont($smallfont, $1) unless ($nonumbers);
       $line = $2;
     }
 
     if ($noinnumbers) {
-      $lnum =~ s/[abc]//;            # Remove sub-verse letter if inline numbers hidden
-      $line =~ s/\(\d+[abc]?\)//;    # Remove inline verse numbers
+      $lnum =~ s/(\d)[a-z]/$1/;      # Remove sub-verse letter if inline numbers hidden
+      $line =~ s/\(\d+[a-z]?\)//;    # Remove inline verse numbers
     }
     $line =~ s/†// if ($noflexa);
     my $rest;
