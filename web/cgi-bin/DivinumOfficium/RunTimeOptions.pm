@@ -39,6 +39,7 @@ use constant LEGACY_VERSION_NAMES => {
   'Monastic' => 'Monastic - 1963',
   '1960 Newcalendar' => 'Rubrics 1960 - 2020 USA',
   'Dominican' => 'Ordo Praedicatorum - 1962',
+
   # safeguard switch from missa to horas
   'Tridentine - 1910' => 'Tridentine - 1906',
   'Ordo Praedicatorum Dominican 1962' => 'Ordo Praedicatorum - 1962',
@@ -52,6 +53,7 @@ use constant LEGACY_MISSA_VERSION_NAMES => {
   'Reduced 1955' => 'Reduced - 1955',
   '1960 Newcalendar' => 'Rubrics 1960 - 2020 USA',
   'Dominican' => 'Ordo Praedicatorum Dominican 1962',
+
   # safeguard switch from horas to missa
   'Monastic Tridentinum 1617' => 'Tridentine - 1570',
   'Monastic Divino 1930' => 'Divino Afflatu - 1954',
@@ -60,16 +62,16 @@ use constant LEGACY_MISSA_VERSION_NAMES => {
   'Tridentine - 1906' => 'Tridentine - 1910',
   'Ordo Praedicatorum - 1962' => 'Ordo Praedicatorum Dominican 1962',
 };
+
 # exported
 
 sub check_version {
   my $v = shift;
   my $missa = shift;
-  
+
   if (!$missa) {
     return LEGACY_VERSION_NAMES->{$v} || unequivocal($v, 'versions');
-  }
-  else {
+  } else {
     return LEGACY_MISSA_VERSION_NAMES->{$v} || unequivocal($v, 'versions');
   }
 }

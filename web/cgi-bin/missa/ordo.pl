@@ -83,16 +83,18 @@ sub resolve_refs {
     $t[0] =~ s/^\s*\#/\!\!/;
   }
 
-  #cycle by lines
-  my $it;
-  my $line_prefix;
+  my @resolved_lines;    # Array of blocks expanded from lines.
+  my $merged_lines;      # Preceding continued lines.
 
-  for ($it = 0; $it < @t; $it++) {
+  #cycle by lines
+  for (my $it = 0; $it < @t; $it++) {
     $line = $t[$it];
+    $line =~ s/\s+$//;
+    $line =~ s/^\s+//;
 
     # Should this line be joined to the next? Strip off the continuation
     # character as we check.
-    my $line_continues = ($line =~ s/\s*~\s*$//);
+    my $merge_with_next = ($line =~ s/~$//);
 
     # The first batch of transformations are performed on the current
     # input line only.
@@ -100,8 +102,6 @@ sub resolve_refs {
     if ($line !~ /(callpopup|rubrics)/i && $line =~ /^\s*[\$\&]/)    #??? was " /[\#\$\&]/)
     {
       $line =~ s/\.//g;
-      $line =~ s/\s+$//;
-      $line =~ s/^\s+//;
 
       #prepares reading the part of common w/ antiphona
       if ($line =~ /psalm/ && $t[$it - 1] =~ /^\s*Ant\. /i) {
@@ -194,18 +194,22 @@ sub resolve_refs {
       /emx;
 
     # Connect lines marked by tilde.
-    if ($line_continues && $it < $#t) {
-      $line_prefix = $line;
+    if ($merge_with_next && $it < $#t) {
+      $merged_lines = $line . ' ';
     } else {
-      $line_prefix = '';
-      $t .= "$line<BR>\n";
+      push @resolved_lines, $merged_lines . $line;
+      $merged_lines = '';
     }
   }    #line by line cycle ends
 
+  # Concatenate the expansions of the lines with a line break between each.
+  push @resolved_lines, '';
+  my $resolved_block = join "<br/>\n", @resolved_lines;
+
   #removes occasional double linebreaks
-  $t =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
-  $t =~ s/<\/P>\s*<BR>/<\/P>/g;
-  return $t;
+  $resolved_block =~ s/\<BR\/\>\s*\<BR\/\>/\<BR\/\>/g;
+  $resolved_block =~ s/<\/P>\s*<BR\/>/<\/P>/g;
+  return $resolved_block;
 }
 
 #*** Alleluia($lang)
@@ -253,6 +257,8 @@ sub getordinarium {
   }
   my $fname = 'Ordo';
   if ($version =~ /1967/i) { $fname = 'Ordo67'; }
+
+  #elsif ($version =~ /Praedicatorum/i) { $fname = 'OrdoOP'; }
   if ($NewMass) { $fname = ($column == 1) ? $ordos{$version1} : $ordos{$version2}; }
   $fname = checkfile($lang, "Ordo/$fname.txt");
 

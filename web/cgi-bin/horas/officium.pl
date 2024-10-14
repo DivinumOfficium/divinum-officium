@@ -118,6 +118,7 @@ set_runtime_options('general' . ($Ck ? 'c' : ''));    #$expand, $version, $lang2
 set_runtime_options('parameters');                    # priest, lang1 ... etc
 
 if ($command =~ s/changeparameters//) { getsetupvalue($command); }
+
 #print "Content-type: text/html; charset=utf-8\n\n"; #<= uncomment for debuggin "Internal Server Errors"
 $version = check_version($version) || (error("Unknown version: $version") && 'Rubrics 1960 - 1960');
 $lang1 = check_language($lang1) || (error("Unknown language: $lang1") && 'Latin');

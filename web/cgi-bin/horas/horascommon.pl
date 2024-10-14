@@ -14,7 +14,7 @@ use DivinumOfficium::Directorium qw(get_kalendar get_transfer get_tempora transf
 
 sub error {
   my $t = shift;
-  our $error .= "= $t =<br />";
+  our $error .= "= $t =<br/>";
 }
 
 sub occurrence {
@@ -777,7 +777,7 @@ sub concurrence {
       && $version !~ /1955|196/)
     {
       $vespera = 3;
-      $dayname[2] = $tomorrowname[2] . "<br />Vespera de Officium occurente, Commemoratio Sanctorum tantum";
+      $dayname[2] = $tomorrowname[2] . "<br/>Vespera de Officium occurente, Commemoratio Sanctorum tantum";
       $cwrank = '';
       $ctname = '';
       %cwinner = undef;
@@ -789,7 +789,7 @@ sub concurrence {
       && $version !~ /1955|196/)
     {
       $vespera = 3;
-      $dayname[2] .= "<br />Vespera de Officium occurente; nihil de sequenti";
+      $dayname[2] .= "<br/>Vespera de Officium occurente; nihil de sequenti";
       $cwrank = '';
       $csname = '';
       %cwinner = undef;
@@ -801,7 +801,7 @@ sub concurrence {
     } else {
       $vespera = 3;
       $dayname[2] = '' unless $dayname[2] =~ /Dominica|Advent|Quadr|Pass/i;
-      $dayname[2] .= "<br />Vespera de Officium occurente " unless $version =~ /1955|196/;
+      $dayname[2] .= "<br/>Vespera de Officium occurente " unless $version =~ /1955|196/;
       $cwrank = '';
       $ctname = '';
       %cwinner = undef;
@@ -821,9 +821,9 @@ sub concurrence {
       $winner = $cwinner;
 
       if ($crank < 7 && $comrank >= $ccomrank && $comrank > 2) {
-        $tomorrowname[2] = $dayname[2] .= "<br />Vespera de sequenti; nihil de præcedenti (tempora)";
+        $tomorrowname[2] = $dayname[2] .= "<br/>Vespera de sequenti; nihil de præcedenti (tempora)";
       } else {
-        $tomorrowname[2] .= "<br />Vespera de sequenti; nihil de præcedenti";
+        $tomorrowname[2] .= "<br/>Vespera de sequenti; nihil de præcedenti";
         @commemoentries = ();
         $commemoratio = '';
       }
@@ -837,7 +837,7 @@ sub concurrence {
     } else {
       $vespera = 3;
       $tvesp = 3;
-      $dayname[2] .= "<br />Vespera de præcedenti; nihil de sequenti (tempora)";
+      $dayname[2] .= "<br/>Vespera de præcedenti; nihil de sequenti (tempora)";
       $ctrank = '';
       $ctname = '';
       %cwinner = undef;
@@ -880,7 +880,7 @@ sub concurrence {
       || ($rank >= ($version =~ /trident/i ? 6 : 5) && $winner !~ /feria|in.*octava/i && $crank < 2.1)
       )
     {                     # on Duplex I. cl / II. cl no commemoration of following Simplex and Common Octaves
-      $dayname[2] .= "<br />Vespera de præcedenti; nihil de sequenti";
+      $dayname[2] .= "<br/>Vespera de præcedenti; nihil de sequenti";
       $cwinner = '';
       %cwinner = ();
       $vespera = 3;
@@ -906,9 +906,9 @@ sub concurrence {
       $cvespera = 3;
 
       if ($comrank == 2.1 || $comrank == 2.99 || $comrank == 3.9) {    # privilidged Feria, Dominica, or infra 8vam
-        $dayname[2] .= "<br />Vespera de sequenti; commemoratio de off. priv. tantum";
+        $dayname[2] .= "<br/>Vespera de sequenti; commemoratio de off. priv. tantum";
       } else {
-        $dayname[2] .= "<br />Vespera de sequenti; nihil de præcedenti";
+        $dayname[2] .= "<br/>Vespera de sequenti; nihil de præcedenti";
       }
       $rank = $crank;
       $commune = $ccommune;
@@ -931,7 +931,7 @@ sub concurrence {
       $winner = $cwinner;
       $cwinner = $commemoratio;
       @dayname = @tomorrowname;
-      $dayname[2] .= "<br />Vespera de sequenti; commemoratio de præcedenti Dominica";
+      $dayname[2] .= "<br/>Vespera de sequenti; commemoratio de præcedenti Dominica";
       $rank = $crank;
       $commune = $ccommune;
       $communetype = $ccommunetype;
@@ -948,7 +948,7 @@ sub concurrence {
       $cvespera = 1;
       $commemoratio = $cwinner;
       $dayname[2] = "Commemoratio: $cwrank[0]";
-      $dayname[2] .= "<br />Vespera de præcedenti; commemoratio de sequenti";
+      $dayname[2] .= "<br/>Vespera de præcedenti; commemoratio de sequenti";
       $dayname[2] .= " Dominica" if $cwinner{Rank} =~ /Dominica/i;
     } elsif ($flcrank == $flrank) {    # "flattend ranks" are equal => a capitulo
       $commemoratio = $winner;
@@ -995,7 +995,7 @@ sub concurrence {
       $rank = $crank;
       $commune = $ccommune;
       $communetype = $ccommunetype;
-      $dayname[2] .= "<br />A capitulo de sequenti; commemoratio de præcedenti";
+      $dayname[2] .= "<br/>A capitulo de sequenti; commemoratio de præcedenti";
     } elsif ($crank > $rank) {    # tommorow is outranking today
       $vespera = 1;
       $commemoratio = $winner;
@@ -1007,13 +1007,13 @@ sub concurrence {
       $rank = $crank;
       $commune = $ccommune;
       $communetype = $ccommunetype;
-      $dayname[2] .= "<br />Vespera de sequenti; commemoratio de præcedenti";
+      $dayname[2] .= "<br/>Vespera de sequenti; commemoratio de præcedenti";
     } else {                      # today is outranking tomorrow
       $commemoratio = $cwinner;
       $dayname[2] = "Commemoratio: $cwrank[0]";
       $vespera = 3;
       $cvespera = 1;
-      $dayname[2] .= "<br />Vespera de præcedenti; commemoratio de sequenti";
+      $dayname[2] .= "<br/>Vespera de præcedenti; commemoratio de sequenti";
 
       if ($cwinner{Rank} =~ /infra octavam/i || $ccommemoentries[0] =~ /infra octavam/i) {
         my @comentries = ();

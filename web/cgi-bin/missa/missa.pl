@@ -28,6 +28,7 @@ use DivinumOfficium::Main qw(vernaculars liturgical_color);
 use DivinumOfficium::LanguageTextTools
   qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 use DivinumOfficium::RunTimeOptions qw(check_version check_language);
+
 $error = '';
 $debug = '';
 
@@ -62,6 +63,7 @@ our $rule;                                   # $winner{Rank}
 our $communerule;                            # $commune{Rank}
 our $duplex;                                 #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
                                              # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
+
 binmode(STDOUT, ':encoding(utf-8)');
 
 #*** collect standard items
@@ -89,6 +91,7 @@ our $Propers = strictparam('Propers');
 our $command = strictparam('command');
 our $browsertime = strictparam('browsertime');
 our $searchvalue = strictparam('searchvalue');
+
 if (!$searchvalue) { $searchvalue = '0'; }
 our $missanumber = strictparam('missanumber');
 if (!$missanumber) { $missanumber = 1; }
@@ -106,6 +109,7 @@ set_runtime_options('general');       #$expand, $version, $lang2
 set_runtime_options('parameters');    # priest, lang1 ... etc
 
 if ($command eq 'changeparameters') { getsetupvalue($command); }
+
 #print "Content-type: text/html; charset=utf-8\n\n"; <= uncomment for debuggin "Internal Server Errors"
 $version = check_version($version, $missa) || (error("Unknown version: $version") && 'Rubrics 1960 - 1960');
 $lang1 = check_language($lang1) || (error("Unknown language: $lang1") && 'Latin');

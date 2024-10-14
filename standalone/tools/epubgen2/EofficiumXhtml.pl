@@ -21,7 +21,6 @@ use CGI;
 #use CGI::Cookie;;
 use CGI::Carp qw(fatalsToBrowser);
 use File::Basename;
-use LWP::Simple;
 use Time::Local;
 
 #use DateTime;
@@ -34,9 +33,16 @@ our $Tk = 0;
 our $Hk = 0;
 our $Ck = 0;
 our $officium = 'Eofficium.pl';
-our $version = 'Rubrics 1960';
+our $version = 'Rubrics 1960 - 1960';
 
-@versions = ('Trident 1570', 'Trident 1910', 'Divino Afflatu', 'Reduced 1955', 'Rubrics 1960', '1960 Newcalendar');
+@versions = (
+  'Trident - 1570',
+  'Trident - 1910',
+  'Divino Afflatu - 1954',
+  'Reduced - 1955',
+  'Rubrics 1960 - 1960',
+  'Rubrica 1960 - 2020 USA/Rubrics 1960 Newcalendar',
+);
 
 #***common variables arrays and hashes
 #filled  getweek()
@@ -215,7 +221,7 @@ if ($flag) {
 
   #setcookies('horasgp', 'general');
 }
-if (!$version) { $version = 'Rubrics 1960'; }
+if (!$version) { $version = 'Rubrics 1960 - 1960'; }
 if (!$lang2) { $lang2 = 'English'; }
 $only = ($lang1 =~ $lang2) ? 1 : 0;
 
@@ -311,7 +317,7 @@ if ($pmode =~ /(main|hora)/i) {
 <a href="$date1-3-Prima.html">Prima</a>
 &nbsp;&nbsp;
 <a href="$date1-4-Tertia.html">Tertia</a>
-<br />
+<br/>
 <a href="$date1-5-Sexta.html">Sexta</a>
 &nbsp;&nbsp;
 <a href="$date1-6-Nona.html">Nona</a>
@@ -335,7 +341,7 @@ PrintTag
 
   if ($linkmissa) {
     print << "PrintTag";
-<br />
+<br/>
 <a href="$date1-9-Missa.html">Missa</a>
 PrintTag
   }
@@ -374,9 +380,9 @@ sub headline {
   }
 
   print << "PrintTag";
-<p class="cen"><span class="$daycolorclass">$headline<br /></span>
-$comment<br /><br />
-<span class="c">$h</span>&nbsp;&nbsp;&nbsp;
+<p class="cen"><span class="$daycolorclass">$headline<br/></span>
+$comment<br/><br/>
+<span class="c">$h</span>&ensp;
 <a href="$datep-1-Matutinum.html">&darr;</a>
 $date1
 <a href="$daten-1-Matutinum.html">&uarr;</a>
@@ -389,7 +395,7 @@ $date1
 <a href="$date1-3-Prima.html">Prima</a>
 &nbsp;&nbsp;
 <a href="$date1-4-Tertia.html">Tertia</a>
-<br />
+<br/>
 <a href="$date1-5-Sexta.html">Sexta</a>
 &nbsp;&nbsp;
 <a href="$date1-6-Nona.html">Nona</a>
@@ -401,7 +407,7 @@ PrintTag
 
   if ($linkmissa) {
     print << "PrintTag";
-<br />
+<br/>
 <a href="$date1-9-Missa.html">Missa</a>
 PrintTag
   }

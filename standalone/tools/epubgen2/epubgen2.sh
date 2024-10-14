@@ -40,7 +40,7 @@ OPTIONS:
    -m          Generate Mass propers in addition to office texts.
 
    -r RUBRICS  The rubrics to use. Defaults to 1960.
-               Supported values are: 1570, 1910, DA, 1955, 1960, Newcal, Dominican, Monastic
+               Supported values are: 1570, 1910, DA, 1955, 1960, Newcal, Dominican
 
    -c FILENAME The cover image to use without path. It must be a file in the data
                directory. Defaults to "cover.jpg".
@@ -66,16 +66,16 @@ CDUR=$(pwd)
 EPUBDIR=$CDUR/output #output directory, defaults to "output" subdirectory in the folder this script is in.
 COVER_FILENAME=cover.jpg #a jpg file name to serve as cover (it has to exist in SOURCEDATADIR) #ascensio.jpg
 RUBRICS_CODE=1960
-RUBRICS=Rubrics%201960
+RUBRICS=Rubrics%201960%20%2D%201960
 RUBRICS_NAME=
 NOFANCYCHARS=1 #0 or 1; when 1, "fancy" characters such as  ℟ ℣ +︎ ✠ ✙︎ are replaced with R. V. + + +
 OPTIONAL_KINDLEGEN_PATH=/usr/local/bin/kindlegen #full path to kindlegen executable, if exists, used to convert the resulting EPUB files to MOBI format as well
 
 #constants
 #supported rubrics as in Eofficium.pl
-ALL_RUBRICS_CODES=(Monastic 1570 1910 DA 1955 1960 Newcal Dominican)
-ALL_RUBRICS=("Monastic" "Tridentine 1570" "Tridentine 1910" "Divino Afflatu" "Reduced 1955" "Rubrics 1960" "1960 Newcalendar" "Ordo Praedicatorum")
-ALL_RUBRICS_NAME=("_Monastic" "_1570" "_1910" "_DA" "_1955" "" "NC")
+ALL_RUBRICS_CODES=(1570 1910 DA 1955 1960 Newcal Dominican)
+ALL_RUBRICS=("Tridentine - 1570" "Tridentine - 1910" "Divino Afflatu - 1954" "Reduced - 1955" "Rubrics 1960 - 1960" "Rubrics 1960 - 2020 USA" "Ordo Praedicatorum - 1962")
+ALL_RUBRICS_NAME=("_1570" "_1910" "_DA" "_1955" "" "NC" "OP")
 
 YEAR_RE='^[0-9]+$'
 
@@ -317,10 +317,10 @@ generateHour() {
 }
 
 generateHours() {
-	echo -e "\e[1m:: Starting to generate hours\e[0m"
+	echo -e "\033[1m:: Starting to generate hours\033[0m"
 	foreachHourInRange generateHour
 	echo ""
-	echo -e "\e[1m:: Finished the generation of hours\e[0m"
+	echo -e "\033[1m:: Finished the generation of hours\033[0m"
 }
 
 
@@ -385,7 +385,7 @@ outputYearToFile() {
 
 
 generateTOCs() {
-	echo -e "\e[1m:: Starting to create TOCs\e[0m"
+	echo -e "\033[1m:: Starting to create TOCs\033[0m"
 
 	#generate OPF per month
 	foreachMonthInRange outputMonthToFile
@@ -393,7 +393,7 @@ generateTOCs() {
 	#generate OPF per year
 	foreachYear outputYearToFile
 
-	echo -e "\e[1m:: Finished the creating of TOCs\e[0m"
+	echo -e "\033[1m:: Finished the creating of TOCs\033[0m"
 }
 
 #################################################################################################################
@@ -423,7 +423,7 @@ printf '<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
   <metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <meta name="cover" content="cover"/><dc:date>'
-date --iso-8601
+date +"%Y-%m-%dT%H:%M:%S:%z"
 printf "</dc:date><dc:title>Breviarium $1</dc:title>
 <dc:creator>Divinum Officium</dc:creator>
 <dc:publisher></dc:publisher>
@@ -491,7 +491,7 @@ outputYearToFileOPF() {
 }
 
 generateOPF() {
-	echo -e "\e[1m:: Starting to create OPFs\e[0m"
+	echo -e "\033[1m:: Starting to create OPFs\033[0m"
 
 	#generate OPF per month
 	foreachMonthInRange outputMonthToFileOPF
@@ -499,7 +499,7 @@ generateOPF() {
 	#generate OPF per year
 	foreachYear outputYearToFileOPF
 
-	echo -e "\e[1m:: Finished the creating of OPFs\e[0m"
+	echo -e "\033[1m:: Finished the creating of OPFs\033[0m"
 }
 
 #Expects OPF_FILENAME to be set.
@@ -679,11 +679,11 @@ createEPUBYear() {
 }
 
 createEPUBs() {
-	echo -e "\e[1m:: Starting to create EPUBs for each month\e[0m"
+	echo -e "\033[1m:: Starting to create EPUBs for each month\033[0m"
 	foreachMonthInRange createEPUBMonth
-	echo -e "\e[1m:: Starting to create EPUBs for each year\e[0m"
+	echo -e "\033[1m:: Starting to create EPUBs for each year\033[0m"
 	foreachYear createEPUBYear
-	echo -e "\e[1m:: Finished the creation of EPUBs\e[0m"
+	echo -e "\033[1m:: Finished the creation of EPUBs\033[0m"
 }
 
 
@@ -704,13 +704,13 @@ convertMOBIYear() {
 createMOBIs() {
 	if [[ ! -e "$OPTIONAL_KINDLEGEN_PATH" ]]
 	then
-		echo "\e[1m:: KindleGen not found in $OPTIONAL_KINDLEGEN_PATH, skipping the conversion to of MOBI format. \e[0m"
+		echo "\033[1m:: KindleGen not found in $OPTIONAL_KINDLEGEN_PATH, skipping the conversion to of MOBI format. \033[0m"
 	else
-		echo -e "\e[1m:: Starting the conversion to MOBI format for each month\e[0m"
+		echo -e "\033[1m:: Starting the conversion to MOBI format for each month\033[0m"
 		foreachMonthInRange convertMOBIMonth
-		echo -e "\e[1m:: Starting the conversion to MOBI format for each year\e[0m"
+		echo -e "\033[1m:: Starting the conversion to MOBI format for each year\033[0m"
 		foreachYear convertMOBIYear
-		echo -e "\e[1m:: Finished the conversion to MOBI format\e[0m"
+		echo -e "\033[1m:: Finished the conversion to MOBI format\033[0m"
 	fi	
 }
 

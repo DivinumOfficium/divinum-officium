@@ -263,8 +263,8 @@ PrintTag
       push(@c1, $c1);
       push(@c2, $c2);
     }
-    my $c1 = join('<BR />', @c1);
-    my $c2 = join('<BR />', @c2);
+    my $c1 = join('<br/>', @c1);
+    my $c2 = join('<br/>', @c2);
     $output .= << "PrintTag";
 <TR><TD ALIGN="CENTER"><A HREF=# onclick="callbrevi('$date1');">$d1</A></TD>
 <TD>$c1</TD>

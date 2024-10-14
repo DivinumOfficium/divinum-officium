@@ -112,6 +112,7 @@ set_runtime_options('generalc');      #$expand, $version, $lang2
 set_runtime_options('parameters');    # priest, lang1 ... etc
 
 if ($command eq 'changeparameters') { getsetupvalue($command); }
+
 #print "Content-type: text/html; charset=utf-8\n\n"; #<= uncomment for debuggin "Internal Server Errors"
 setcookies('missap', 'parameters');
 setcookies('missagc', 'generalc');
@@ -121,7 +122,7 @@ $setupsave = savesetup(1);
 $setupsave =~ s/\r*\n*//g;
 
 our $command = strictparam('command');
-our $hora = $command;                 #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
+our $hora = $command;    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
 our $browsertime = strictparam('browsertime');
 our $searchvalue = strictparam('searchvalue');
 if (!$searchvalue) { $searchvalue = '0'; }
