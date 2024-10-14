@@ -123,7 +123,7 @@ sub setup {
 
     if ($parmode[$i] =~ /^label/i) {
       my $ilabel = $parvalue[$i];
-      if ($parpar[$i]) { $ilabel = wrap($ilabel, $parpar[$i], "<BR>\n"); }
+      if ($parpar[$i]) { $ilabel = wrap($ilabel, $parpar[$i], "<BR />\n"); }
       $input .= "$ilabel";
       $input .= "<INPUT TYPE=HIDDEN NAME=\'I$k\' VALUE=\'$parvalue[$i]\'>\n";
 
@@ -157,7 +157,7 @@ sub setup {
         do_write("$datafolder/gen/$savefile.gen", $pv);
       }
 
-      $input .= "<TEXTAREA NAME=\'I$k\' ID=\'I$k\' COLS=$size[1] ROWS=$size[0]>$pv</TEXTAREA><BR>\n";
+      $input .= "<TEXTAREA NAME=\'I$k\' ID=\'I$k\' COLS=$size[1] ROWS=$size[0]>$pv</TEXTAREA><BR />\n";
       $input .= "<A HREF='#' onclick='loadrut();'>";
       $input .= setfont($dialogfont) . "Load</FONT></A>";
 
@@ -444,7 +444,7 @@ sub setvrbar {
 #   #remove auxiliary characters
 #   $text =~ s/wait[0-9]+//ig;
 #   $text =~ s/\_/ /g;
-#   $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
+#   $text =~ s/\{\:.*?\:\}(<BR />)*\s*//g;
 #   $text =~ s/\{\:.*?\:\}//sg;
 #   $text =~ s/\`//g;
 #
@@ -542,8 +542,8 @@ sub longtd {
   my $a1 = shift;
   my $a2 = shift;
 
-  my @a1 = split('<BR>', $a1);
-  my @a2 = split('<BR>', $a2);
+  my @a1 = split('<BR />', $a1);
+  my @a2 = split('<BR />', $a2);
   my @b1 = splice(@b1, @b1);
   my @b2 = splice(@b2, @b2);
   my $i;
