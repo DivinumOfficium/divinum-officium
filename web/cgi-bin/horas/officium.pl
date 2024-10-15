@@ -233,14 +233,14 @@ if ($command =~ /setup(.*)/i) {
           my $vesperahead = setheadline();
 
           if ($dayhead ne $vesperahead) {
-            print par_c("<BR><BR>" . html_dayhead($vesperahead));
+            print par_c("<BR/><BR/>" . html_dayhead($vesperahead));
           }
         }
         horas($hora);
       }
 
       if ($officium ne 'Pofficium.pl' && @horas == 1) {
-        print par_c("<INPUT TYPE=SUBMIT VALUE='$hora persolut.' onclick='okbutton();'>");
+        print par_c("<INPUT TYPE='SUBMIT' VALUE='$hora persolut.' onclick='okbutton();'>");
       }
     } elsif ($officium ne 'Pofficium.pl') {
       print par_c(mainpage());
@@ -256,7 +256,7 @@ if ($command =~ /setup(.*)/i) {
   } else {
     print par_c(pmenu());
 
-    print '<TABLE ALIGN=CENTER BORDER=1 STYLE="color: black">';
+    print "<TABLE ALIGN='CENTER' BORDER='1' $background>";
     print selectable_p('versions', $version, $date1, $version, $lang2, $votive, $testmode);
     print selectable_p('languages', $lang2, $date1, $version, $lang2, $votive, $testmode, 'Language 2');
     print selectable_p('votives', $votive, $date1, $version, $lang2, $votive, $testmode);
