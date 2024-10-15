@@ -27,6 +27,7 @@ use lib "$Bin/..";
 use DivinumOfficium::Main qw(vernaculars liturgical_color);
 use DivinumOfficium::LanguageTextTools
   qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
+use DivinumOfficium::RunTimeOptions qw(check_version check_language);
 $error = '';
 $debug = '';
 
@@ -61,6 +62,7 @@ our $rule;                                   # $winner{Rank}
 our $communerule;                            # $commune{Rank}
 our $duplex;                                 #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
                                              # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
+binmode(STDOUT, ':encoding(utf-8)');
 
 #*** collect standard items
 #require "$Bin/ordocommon.pl";
@@ -73,16 +75,16 @@ require "$Bin/../DivinumOfficium/setup.pl";
 require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
 
-binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
 #get parameters
 getini('missa');    #files, colors
+
 our ($version, $lang1, $lang2, $column);
 our %translate;     #translation of the skeleton label for 2nd language
 our $testmode;
 our $votive;
-$first = strictparam('first');
+our $first = strictparam('first');
 our $Propers = strictparam('Propers');
 our $command = strictparam('command');
 our $browsertime = strictparam('browsertime');
@@ -104,6 +106,10 @@ set_runtime_options('general');       #$expand, $version, $lang2
 set_runtime_options('parameters');    # priest, lang1 ... etc
 
 if ($command eq 'changeparameters') { getsetupvalue($command); }
+#print "Content-type: text/html; charset=utf-8\n\n"; <= uncomment for debuggin "Internal Server Errors"
+$version = check_version($version, $missa) || (error("Unknown version: $version") && 'Rubrics 1960 - 1960');
+$lang1 = check_language($lang1) || (error("Unknown language: $lang1") && 'Latin');
+$lang2 = check_language($lang2) || 'English';
 
 setcookies('missap', 'parameters');
 setcookies('missag', 'general');
@@ -130,6 +136,7 @@ $title = "Sancta Missa";
 
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
+$background = ($whitebground) ? ' class="contrastbg"' : '';
 htmlHead($title, 'startup()');
 
 if ($command =~ /setup(.*)/is) {
@@ -164,15 +171,6 @@ PrintTag
 </P>
 PrintTag
 }
-
-# translate from new breviary version names
-$version =~ s/Monastic(.*)/Monastic/;
-$version =~ s/ - 196.$//;
-$version =~ s/ -//;
-$version =~ s/1888|1906/1910/;
-$version =~ s/ 1954//;
-$version =~ s/Rubrics 1960 2020 USA/1960 Newcalendar/;
-$version =~ s/Ordo Praedicatorum/Dominican/;
 
 if ($pmode =~ /(main|missa)/i) {
 
@@ -228,23 +226,23 @@ PrintTag
 sub headline {
   my $head = shift;
   my $numsel = setmissanumber();
-  $numsel = "<BR><BR>$numsel<BR>" if $numsel;
+  $numsel = "<BR/><BR/>$numsel<BR/>" if $numsel;
   my $headline = html_dayhead(setheadline(), $dayname[2]);
   print << "PrintTag";
-<P ALIGN=CENTER>$headline</P>
-<P ALIGN=CENTER><FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B>&nbsp;<FONT COLOR=RED SIZE=+1>$version</FONT></FONT></P>
-<P ALIGN=CENTER><A HREF=# onclick="callcompare()">Compare</A>
-&nbsp;&nbsp;&nbsp;<A HREF=# onclick="callofficium();">Divinum Officium</A>
-&nbsp;&nbsp;&nbsp;
-<LABEL FOR=date CLASS=offscreen>Date</LABEL>
-<INPUT ID=date TYPE=TEXT NAME=date VALUE="$date1" SIZE=10>
-<A HREF=# onclick="prevnext(-1)">&darr;</A>
-<INPUT TYPE=submit NAME=SUBMIT VALUE=" " onclick="parchange();">
-<A HREF=# onclick="prevnext(1)">&uarr;</A>
-&nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callkalendar();">Ordo</A>
-&nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="pset('parameters')">Options</A>
+<P ALIGN="CENTER">$headline</P>
+<P ALIGN="CENTER"><FONT COLOR="MAROON" SIZE="+1"><B><I>$head</I></B>&nbsp;<FONT COLOR="RED" SIZE="+1">$version</FONT></FONT></P>
+<P ALIGN="CENTER"><A HREF="#" onclick="callcompare()">Compare</A>
+&ensp;<A HREF="#" onclick="callofficium();">Divinum Officium</A>
+&ensp;
+<LABEL FOR="date" CLASS="offscreen">Date</LABEL>
+<INPUT ID="date" TYPE="TEXT" NAME="date" VALUE="$date1" SIZE="10">
+<A HREF="#" onclick="prevnext(-1)">&darr;</A>
+<INPUT TYPE="submit" NAME="SUBMIT" VALUE=" " onclick="parchange();">
+<A HREF="#" onclick="prevnext(1)">&uarr;</A>
+&ensp;
+<A HREF="#" onclick="callkalendar();">Ordo</A>
+&ensp;
+<A HREF="#" onclick="pset('parameters')">Options</A>
 $numsel
 </P>
 PrintTag
