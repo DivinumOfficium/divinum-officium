@@ -1153,7 +1153,9 @@ sub placeattibi {
 
 sub Communio_Populi : ScriptFunc {
   my $lang = shift;
-  return "<A HREF=\"mpopup.pl?popup=Communio&rubrics=$rubrics&lang1=$lang1&lang2=$lang2\" TARGET=_NEW>Communio</A>\n";
+  return $officium =~ /Emissa/i
+    ? ""
+    : "<A HREF=\"mpopup.pl?popup=Communio&rubrics=$rubrics&lang1=$lang1&lang2=$lang2\" TARGET=\"_NEW\">Communio</A>\n";
 }
 
 sub Ultimaev : ScriptFunc {

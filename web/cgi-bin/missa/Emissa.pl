@@ -20,7 +20,7 @@ use Time::Local;
 
 #use DateTime;
 use locale;
-use lib "$Bin/..";
+use lib "$Bin/../../../web/cgi-bin";
 use DivinumOfficium::Main qw(vernaculars liturgical_color);
 use DivinumOfficium::Date qw(prevnext);
 use DivinumOfficium::LanguageTextTools
@@ -32,8 +32,8 @@ $debug = '';
 our $Ck = 0;
 our $missa = 1;
 our $NewMass = 0;
-our $officium = 'missa.pl';
-our $version = 'Rubrics 1960';
+our $officium = 'Emissa.pl';
+our $version = 'Rubrics 1960 - 1960';
 
 #***common variables arrays and hashes
 #filled  getweek()
@@ -64,18 +64,38 @@ our $duplex;                                  #1=simplex-feria, 2=semiduplex-fer
 # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
 
 #*** collect standard items
-#require "$Bin/ordocommon.pl";
-require "$Bin/../horas/do_io.pl";
+#allow the script to be started directly from the "standalone/tools/epubgen2" subdirectory
+if (!-e "$Bin/../DivinumOfficium/do_io.pl") {
+  $Bin = "$Bin/../../../web/cgi-bin/missa";
+}
+
+require "$Bin/../DivinumOfficium/do_io.pl";
 require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/../horas/horascommon.pl";
-require "$Bin/../horas/dialogcommon.pl";
-require "$Bin/../horas/webdia.pl";
-require "$Bin/../../../standalone/tools/epubgen2/Ewebdia.pl";
+require "$Bin/../DivinumOfficium/dialogcommon.pl";
+
+require "$Bin/../DivinumOfficium/setup.pl";
 require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
 
+require "$Bin/../horas/webdia.pl";
+require "$Bin/../../../standalone/tools/epubgen2/Ewebdia.pl";
+
 binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
+
+#replaced methods
+#*** build_comment_line_xhtml()
+#  Replacement for build_comment_line() from horascommon.pl
+#
+#  Sets $comment to the HTML for the comment line.
+sub build_comment_line_xhtml() {
+  our @dayname;
+  our ($comment, $marian_commem);
+
+  my $commentcolor = ($dayname[2] =~ /(Feria)/i) ? '' : ($marian_commem && $dayname[2] =~ /^Commem/) ? ' rb' : ' m';
+  $comment = ($dayname[2]) ? "<span class=\"s$commentcolor\">$dayname[2]</span>" : "";
+}
 
 #get parameters
 getini('missa');    #files, colors
@@ -85,7 +105,7 @@ our ($lang1, $lang2, $column);
 our %translate;     #translation of the skeleton label for 2nd language
 
 if (!$setupsave) {
-  %setup = %{setupstring('', 'missa.setup')};
+  %setup = %{setupstring('', '../../../standalone/tools/epubgen2/Emissa.setup')};
 } else {
   %setup = split(';;;', $setupsave);
 }
@@ -145,45 +165,84 @@ if (!$first) {
   $solemn = strictparam('solemn');
 }
 
-if (!$version) { $version = 'Rubrics 1960'; }
+if (!$version) { $version = 'Rubrics 1960 - 1960'; }
 if (!$lang2) { $lang2 = 'Latin'; }
 
 # save parameters
 $setupsave =~ s/\r*\n*//g;
 $setupsave =~ s/\"/\~24/g;
 precedence();    #fills our hashes et variables
-setsecondcol();
+
+# prepare title
+$daycolor =
+    ($commune =~ /(C1[0-9])/) ? "blue"
+  : ($dayname[1] =~ /(Quattuor|Feria|Vigilia)/i) ? "black"
+  : ($dayname[1] =~ /duplex/i) ? "red"
+  : "grey";
+
+build_comment_line_xhtml();
 
 #prepare main pages
 $title = "Sancta Missa";
 
 $command =~ s/(pray|change|setup)//ig;
 $title = "Sancta Missa";
+
+#*** print pages (setup, hora=pray, mainpage)
+#generate HTML
+htmlHead($title, 2);
+
+#note the whole content is wrapped in a <div> for XHTML standard compatibilty
+print << "PrintTag";
+<body><div>
+PrintTag
+
+load_languages_data($lang1, $lang2, $version, $missa);
 $head = $title;
 $headline = setheadline();
 headline($head);
 
-load_languages_data($lang1, $lang2, $version, $missa);
 $only = 1;    # single-column
 ordo();
 
+print << "PrintTag";
+PrintTag
+
 #common end for programs
-if ($error) { print "<p align=center><font color=red>$error</font></p>\n"; }
-if ($debug) { print "<p align=center><font color=blue>$debug</font></p>\n"; }
-print "</body></html>";
+if ($error) { print "<p class=\"cen rd\">$error</p>\n"; }
+if ($debug) { print "<P class=\"cen rd\">$debug</p>\n"; }
+
+print << "PrintTag";
+</div></body></html>
+PrintTag
 
 #*** hedline($head) prints headlibe for main and pray
 sub headline {
   my $head = shift;
-  my $headline = html_dayhead($headline, $dayname[2]);
+  if ($headline =~ /\!/) { $headline = $` . "<FONT SIZE=\"1\">" . $' . "</FONT>"; }
   my $daten = prevnext($date1, 1);
   my $datep = prevnext($date1, -1);
+
+  #convert $daycolor to $daycolorclass
+  my $daycolorclass = "";    #rely on default being black font color
+
+  if ($daycolor eq "blue") {
+    $daycolorclass = "rb";
+  } elsif ($daycolor eq "gray") {
+    $daycolorclass = "rb";
+  } elsif ($daycolor eq "red") {
+    $daycolorclass = "rd";
+  }
+
   print << "PrintTag";
-<?xml version='1.0' encoding='utf-8'?><html xmlns="http://www.w3.org/1999/xhtml"><head/><body>
-<p align="center"><a href="$datep-9-Missa.html">&darr;</a>
+<p class="cen"><span class="$daycolorclass">$headline<br/></span>
+$comment<br/><br/>
+<span class="c">Missa</span>&ensp;
+<a href="$datep-9-Missa.html">&darr;</a>
 $date1
 <a href="$daten-9-Missa.html">&uarr;</a>
-<br />
+</p>
+<p class="cen">
 <a href="$date1-1-Matutinum.html">Matutinum</a>
 &nbsp;&nbsp;
 <a href="$date1-2-Laudes.html">Laudes</a>
@@ -191,7 +250,7 @@ $date1
 <a href="$date1-3-Prima.html">Prima</a>
 &nbsp;&nbsp;
 <a href="$date1-4-Tertia.html">Tertia</a>
-<br />
+<br/>
 <a href="$date1-5-Sexta.html">Sexta</a>
 &nbsp;&nbsp;
 <a href="$date1-6-Nona.html">Nona</a>
@@ -199,9 +258,6 @@ $date1
 <a href="$date1-7-Vespera.html">Vespera</a>
 &nbsp;&nbsp;
 <a href="$date1-8-Completorium.html">Completorium</a>
-<br />
-$headline<br>
-<a href="$date1-9-Missa.html"><font color="maroon" size="+1"><b><i>$head</i></b></font></a>
 </p>
 PrintTag
 }

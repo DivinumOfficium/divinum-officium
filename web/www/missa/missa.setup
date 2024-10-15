@@ -13,12 +13,13 @@ $titlefont='+1 red';;
 $screenheight='1024';;
 $textwidth='100';;
 $nofancychars='0';;
+$building='0';;
 
 [parameterscheck]
-ttobcccccccnnb
+ttobcccccccnnbb
 
 [general]
-$version='Rubrics 1960';;
+$version='Rubrics 1960 - 1960';;
 $lang2='English';;
 $votive='Hodie';;
 $rubrics='1';;
@@ -28,7 +29,7 @@ $solemn='0';;
 ooobb
 
 [generalc]
-$version1='Rubrics 1960';;
+$version1='Rubrics 1960 - 1960';;
 $version2='New Mass';;
 $lang1='Latin';;
 $lang2='Latin';;

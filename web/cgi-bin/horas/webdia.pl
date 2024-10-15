@@ -56,7 +56,7 @@ Content-type: text/html; charset=utf-8
     a:link { color: $link; }
     a:visited { color: $visitedlink; }
     body {
-      background: #eeeeee;
+      background: $dialogbackground;
     }
     .contrastbg { background: white; }
     \@media (prefers-color-scheme: dark) {
@@ -108,7 +108,7 @@ sub htmlInput {
 
   if ($parmode =~ /^label/i) {
     my $ilabel = $parvalue;
-    if ($parpar) { $ilabel = wrap($ilabel, $parpar, "<BR />\n"); }
+    if ($parpar) { $ilabel = wrap($ilabel, $parpar, "<br/>\n"); }
     $output .= "$ilabel";
     $output .= "<INPUT TYPE='HIDDEN' NAME=\'$parname\' VALUE=\'$parvalue\'>\n";
   } elsif ($parmode =~ /entry/i) {
@@ -137,7 +137,7 @@ sub htmlInput {
       $savefile =~ s/\.gen//;
       do_write("$datafolder/gen/$savefile.gen", $pv);
     }
-    $output .= "<TEXTAREA NAME=\'$parname\' ID=\'$parname\' COLS='$size[1]' ROWS='$size[0]'>$pv</TEXTAREA><BR />\n";
+    $output .= "<TEXTAREA NAME=\'$parname\' ID=\'$parname\' COLS='$size[1]' ROWS='$size[0]'>$pv</TEXTAREA><br/>\n";
     $output .= "<A HREF='#' onclick='loadrut();'>";
     $output .= setfont($dialogfont) . "Load</FONT></A>";
   } elsif ($parmode =~ /checkbutton/i) {
@@ -327,7 +327,7 @@ sub getcookies {
 
     #check if the structure of the parameters is the same
     if (@sti > @param + 1 || ($check !~ /^$sti[-1]/)) {
-      $error = "Cookie $cname mismatch $name need $check has $param<br />== $sti[-1]";
+      $error = "Cookie $cname mismatch $name need $check has $param<br/>== $sti[-1]";
       return 0;
     }
     setsetup($name, @sti);
@@ -478,9 +478,9 @@ sub setcell {
       }
     }
     print "<TD VALIGN='TOP' WIDTH='$width%'"
-      . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID='$hora$searchind'") . ">"
-      unless $officium =~ /Eofficium/;
-    topnext_cell(\$text, $lang) unless $popup;    # || $officium =~ /Eofficium/;
+      . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID='$hora$searchind'") . ">";
+    print "<p>" if $officium =~ /Eofficium|Emissa/;
+    topnext_cell(\$text, $lang) unless $popup || $officium =~ /Eofficium|Emissa/;
   }
 
   process_inline_alleluias(\$text, $dayname[0] =~ /Pasc/) unless $missa;    # missa use own solution
@@ -488,7 +488,7 @@ sub setcell {
 
   suppress_alleluia(\$text) if ($dayname[0] =~ /Quadp|Quad[1-5]|Quad6-[0-5]/i && ($missa || !Septuagesima_vesp()));
 
-  $text =~ s/\<BR \/\>\s*\<BR \/\>/\<BR \/\>/g;
+  $text =~ s/\<br\/\>\s*\<br\/\>/\<br\/\>/ig;
   if ($lang =~ /Latin/i) { $text = spell_var($text); }
 
   if ($text =~ /%(.*?)%/) {
@@ -497,7 +497,7 @@ sub setcell {
   $text =~ s/wait[0-9]+//ig;
   $text =~ s/\_/ /g;
 
-  # $text =~ s/\{\:.*?\:\}(<BR />)*\s*//g;
+  # $text =~ s/\{\:.*?\:\}(<br/>)*\s*//g;
   $text =~ s/\{\:.*?\:\}//sg;
   $text =~ s/\`//g;                                      #`
   $text =~ s/\s([»!?;:])/&nbsp;$1/g;                     # no-break space before punctutation (mostly French)
@@ -514,6 +514,7 @@ sub setcell {
     #  } elsif ($officium =~ /Eofficium/) {
     #    print $text;
   } else {
+    $text .= '</p>' if $officium =~ /Eofficium|Emissa/;
     print setfont($blackfont, $text) . "</TD>\n";
     if (!columnsel($lang) || $only) { print "</TR>\n"; }
   }
@@ -524,7 +525,7 @@ sub setcell {
 sub topnext_cell {
   if ($officium =~ /Pofficium/i) { return; }
   my ($text, $lang) = @_;
-  my @a = split('<BR />', $$text);
+  my @a = split('<br/>', $$text);
 
   if (@a > 2 && $expand !~ /skeleton/i) {
     my $str = "<DIV ALIGN='right'><FONT SIZE='1' COLOR='green'>";
@@ -579,13 +580,13 @@ sub table_end {
     print "<TR><TD VALIGN='TOP' WIDTH='$width%'>\n";
     my $item;
     my $len1 = 0;
-    foreach $item (@ctext1) { print "$item<BR />\n"; $len1 += wnum($item); }
+    foreach $item (@ctext1) { print "$item<br/>\n"; $len1 += wnum($item); }
     print "</TD>\n";
 
     if (!$only) {
       $len2 = 0;
       print "<TD VALIGN='TOP' WIDTH='$width%'>\n";
-      foreach $item (@ctext2) { print "$item<BR />\n"; $len2 += wnum($item); }
+      foreach $item (@ctext2) { print "$item<br/>\n"; $len2 += wnum($item); }
       print "</TD></TR>\n";
     }
     print "<TR><TD VALIGN='TOP' WIDTH='$width%'><FONT SIZE='1'>$len1 words</FONT></TD>";
@@ -678,7 +679,7 @@ sub selectable_p {
     my $colour = $curvalue eq $name ? 'red' : '';
     push(@output, qq(\n<A HREF="$href"><FONT COLOR=$colour>$text</FONT></A>));
   }
-  join('<BR />', @output) . "</TD></TR>\n";
+  join('<br/>', @output) . "</TD></TR>\n";
 }
 
 sub horas_menu {
@@ -704,7 +705,7 @@ sub horas_menu {
 
     if (($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 2 || $i == 6)) || (($i == (@horas - 2)) && ($0 !~ /Cofficium/)))
     {
-      $output .= '<BR />';
+      $output .= '<br/>';
     } else {
       $output .= '&nbsp;&nbsp;';
     }
@@ -735,7 +736,7 @@ sub html_dayhead {
 
   if ($subhead) {
     ($pre, $main) = split(/: /, $subhead, 2);
-    $output .= "<BR />\n<SPAN STYLE=\"font-size:82%; color:maroon;\"><I>$pre";
+    $output .= "<br/>\n<SPAN STYLE=\"font-size:82%; color:maroon;\"><I>$pre";
     $output .= ": " . setfont(liturgical_color($main, ''), $main) if $main;
     $output .= "</I></SPAN>\n";
   }

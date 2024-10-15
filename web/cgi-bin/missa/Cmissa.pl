@@ -40,16 +40,16 @@ our $officium = 'Cmissa.pl';
   'Mozarabic',
   'Sarum',
   'Dominican',
-  'Trident 1570',
-  'Divino Afflatu',
-  'Rubrics 1960',
+  'Tridentine - 1570',
+  'Divino Afflatu - 1954',
+  'Rubrics 1960 - 1960',
   'Rubrics 1967',
   'New Mass',
 );
 %ordos = split(
   ',',
-  "Mozarabic,OrdoM,Sarum,OrdoS,Ambrosian,OrdoA,Dominican,OrdoOP,Trident 1570,Ordo,"
-    . "Divino Afflatu,Ordo,Rubrics 1960,Ordo,Rubrics 1967,Ordo67,New Mass,OrdoN",
+  "Mozarabic,OrdoM,Sarum,OrdoS,Ambrosian,OrdoA,Dominican,OrdoOP,Tridentine - 1570,Ordo,"
+    . "Divino Afflatu - 1954,Ordo,Rubrics 1960 - 1960,Ordo,Rubrics 1967,Ordo67,New Mass,OrdoN",
 );
 
 #***common variables arrays and hashes
@@ -82,12 +82,12 @@ our $duplex;                                 #1=simplex-feria, 2=semiduplex-feri
 
 #*** collect standard items
 #require "ordocommon.pl";
-require "$Bin/../horas/do_io.pl";
+require "$Bin/../DivinumOfficium/do_io.pl";
 require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/../horas/horascommon.pl";
-require "$Bin/../horas/dialogcommon.pl";
+require "$Bin/../DivinumOfficium/dialogcommon.pl";
 require "$Bin/../horas/webdia.pl";
-require "$Bin/../horas/setup.pl";
+require "$Bin/../DivinumOfficium/setup.pl";
 require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
 
@@ -113,6 +113,7 @@ set_runtime_options('parameters');    # priest, lang1 ... etc
 
 if ($command eq 'changeparameters') { getsetupvalue($command); }
 
+#print "Content-type: text/html; charset=utf-8\n\n"; #<= uncomment for debuggin "Internal Server Errors"
 setcookies('missap', 'parameters');
 setcookies('missagc', 'generalc');
 
@@ -121,7 +122,7 @@ $setupsave = savesetup(1);
 $setupsave =~ s/\r*\n*//g;
 
 our $command = strictparam('command');
-our $hora = $command;                 #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
+our $hora = $command;    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
 our $browsertime = strictparam('browsertime');
 our $searchvalue = strictparam('searchvalue');
 if (!$searchvalue) { $searchvalue = '0'; }
@@ -151,7 +152,7 @@ $title = "Sancta Missa Comparison";
 #generate HTML
 htmlHead($title, 'startup()');
 print << "PrintTag";
-<P ALIGN=CENTER>
+<P ALIGN="CENTER">
 <A HREF="Cmissa.pl?searchvalue=2&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Incipit]</A>&nbsp;&nbsp;
 <A HREF="Cmissa.pl?searchvalue=11&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Missa Catechumenorum]</A>&nbsp;&nbsp;
 <A HREF="Cmissa.pl?searchvalue=16&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Offertorium]</A>&nbsp;&nbsp;
@@ -161,7 +162,7 @@ print << "PrintTag";
 PrintTag
 
 if ($command !~ /setup/i) {
-  print "<P ALIGN=CENTER>";
+  print "<P ALIGN='CENTER'>";
   print option_selector("Version 1", "parchange();", $version1, @versions);
   print option_selector("lang1", "parchange();", $lang1, qw(Latin English));
   print option_selector("lang2", "parchange();", $lang2, qw(Latin English));
