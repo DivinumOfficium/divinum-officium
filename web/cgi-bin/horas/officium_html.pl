@@ -123,9 +123,9 @@ SubmitTag
 sub pmenu {
   return << "PrintTag";
 <A HREF="Pofficium.pl?date1=$date1&command=setupparameters&pcommand=$command&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
-Options</A>&nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callmissa();">Sancta Missa</A>&nbsp;&nbsp;&nbsp;
-<A HREF=# onclick="callkalendar();">Ordo</A>
+Options</A>&ensp;
+<A HREF="#" onclick="callmissa();">Sancta Missa</A>&ensp;
+<A HREF="#" onclick="callkalendar();">Ordo</A>
 PrintTag
 }
 

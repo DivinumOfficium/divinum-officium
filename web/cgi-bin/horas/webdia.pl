@@ -53,6 +53,8 @@ Content-type: text/html; charset=utf-8
     p {
       color: black;
     }
+    a:link { color: $link; }
+    a:visited { color: $visitedlink; }
     body {
       background: #eeeeee;
     }
@@ -63,7 +65,8 @@ Content-type: text/html; charset=utf-8
         color: white;
       }
       table { color: white; }
-      a { color: #AFAFFF; }
+      a:link { color: #AFAFFF; }
+      a:visited { color: #AFAFFF; }
       p { color: white; }
       .contrastbg {
         background: #3F3F3F;
@@ -74,7 +77,7 @@ Content-type: text/html; charset=utf-8
   <TITLE>$title</TITLE>
 $horasjs
 </HEAD>
-<BODY VLINK="$visitedlink" LINK="$link" $onload>
+<BODY $onload>
 <FORM ACTION="$officium" METHOD="post" TARGET="_self">
 PrintTag
 }
@@ -107,13 +110,13 @@ sub htmlInput {
     my $ilabel = $parvalue;
     if ($parpar) { $ilabel = wrap($ilabel, $parpar, "<BR />\n"); }
     $output .= "$ilabel";
-    $output .= "<INPUT TYPE=HIDDEN NAME=\'$parname\' VALUE=\'$parvalue\'>\n";
+    $output .= "<INPUT TYPE='HIDDEN' NAME=\'$parname\' VALUE=\'$parvalue\'>\n";
   } elsif ($parmode =~ /entry/i) {
     $width = $parpar;
     if (!$width || $width == 0) { $width = 3; }
     my $jsfunc = '';
     if ($parfunc) { $jsfunc = "onchange=\"$parfunc;\""; }
-    $output .= "<INPUT TYPE=TEXT NAME=\'$parname\' ID=\'$parname\' $jsfunc SIZE=$width VALUE=\'$parvalue\'>\n";
+    $output .= "<INPUT TYPE='TEXT' NAME=\'$parname\' ID=\'$parname\' $jsfunc SIZE=$width VALUE=\'$parvalue\'>\n";
   } elsif ($parmode =~ /^text/i) {
     my @size = split('x', $parpar);
     if (@size < 2) { @size = (3, 12); }
@@ -134,14 +137,14 @@ sub htmlInput {
       $savefile =~ s/\.gen//;
       do_write("$datafolder/gen/$savefile.gen", $pv);
     }
-    $output .= "<TEXTAREA NAME=\'$parname\' ID=\'$parname\' COLS=$size[1] ROWS=$size[0]>$pv</TEXTAREA><BR />\n";
+    $output .= "<TEXTAREA NAME=\'$parname\' ID=\'$parname\' COLS='$size[1]' ROWS='$size[0]'>$pv</TEXTAREA><BR />\n";
     $output .= "<A HREF='#' onclick='loadrut();'>";
     $output .= setfont($dialogfont) . "Load</FONT></A>";
   } elsif ($parmode =~ /checkbutton/i) {
     my $checked = ($parvalue) ? 'CHECKED' : '';
     my $jsfunc = '';
     if ($parfunc) { $jsfunc = "onclick=\"$parfunc;\""; }
-    $output .= "<INPUT TYPE=CHECKBOX NAME=\'$parname\' ID=\'$parname\' $checked $jsfunc>\n";
+    $output .= "<INPUT TYPE='CHECKBOX' NAME=\'$parname\' ID=\'$parname\' $checked $jsfunc>\n";
   } elsif ($parmode =~ /^radio/i) {
     if ($parmode =~ /vert/i) { $output .= "<TABLE>"; }
     $rpar = $parpar;
@@ -672,7 +675,7 @@ sub selectable_p {
       . ($dialog eq 'languages' ? $name : $lang2)
       . "&votive="
       . ($dialog eq 'votives' ? $name : $votive);
-    my $colour = $curvalue eq $name ? 'red' : 'blue';
+    my $colour = $curvalue eq $name ? 'red' : '';
     push(@output, qq(\n<A HREF="$href"><FONT COLOR=$colour>$text</FONT></A>));
   }
   join('<BR />', @output) . "</TD></TR>\n";
@@ -697,8 +700,7 @@ sub horas_menu {
     } else {
       $onclick = qq(onclick="hset('$_');");
     }
-    my $colour = $i <= $completed ? $visitedlink : $link;
-    $output .= qq(\n<A HREF=$href $onclick><FONT COLOR=$colour>$_</FONT></A>\n);
+    $output .= qq(\n<A HREF=$href $onclick>$_</A>\n);
 
     if (($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 2 || $i == 6)) || (($i == (@horas - 2)) && ($0 !~ /Cofficium/)))
     {
