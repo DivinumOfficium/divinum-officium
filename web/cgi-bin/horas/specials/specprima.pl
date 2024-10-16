@@ -5,7 +5,7 @@ sub lectio_brevis_prima {
 
   my $lang = shift;
 
-  our ($version, %winner, %winner2, $communetype, %commune, %commune2, $winner, $commune);
+  our ($version, %winner, %winner2, %commune, %commune2, $winner, $commune);
 
   my %brevis = %{setupstring($lang, 'Psalterium/Prima Special.txt')};
   my $name = gettempora("Lectio brevis Prima");
@@ -16,28 +16,24 @@ sub lectio_brevis_prima {
 
   #look for [Lectio Prima]
   if ($version !~ /1955|196/) {
-    my %w = columnsel($lang) ? %winner : %winner2;
     my $b;
 
-    if (exists($w{'Lectio Prima'})) {
-      $b = $w{'Lectio Prima'};
-      if ($b) { setbuild2("Subst Lectio Prima $winner"); $comment = 3; }
-    }
-
-    if (!$b && $communetype && $communetype eq 'ex' && exists($commune{'Lectio Prima'})) {
+    if (exists($winner{'Lectio Prima'})) {
+      $b = columnsel($lang) ? $winner{'Lectio Prima'} : $winner2{'Lectio Prima'};
+      setbuild2("Subst Lectio Prima $winner");
+      $comment = 3;
+    } elsif (exists($commune{'Lectio Prima'})) {
       $b = columnsel($lang) ? $commune{'Lectio Prima'} : $commune2{'Lectio Prima'};
-      if ($b) { setbuild2("Subst Lectio Prima $commune"); $comment = 3; }
-    }
-
-    if (!$b && ($winner =~ /Sancti/ || ($commune && $commune =~ /C10/))) {
-      $b = getfromcommune("Lectio", "Prima", $lang, 1, 1);
-      if ($b) { $comment = 4; }
+      setbuild2("Subst Lectio Prima $commune");
+      $comment = 4;
     }
 
     $brevis = $b || $brevis;
   }
+
   $brevis = prayer('benedictio Prima', $lang) . "\n$brevis" unless $version =~ /^Monastic/;
   $brevis .= "\n\$Tu autem";
+
   ($brevis, $comment);
 }
 
