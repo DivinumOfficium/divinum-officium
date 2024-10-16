@@ -369,7 +369,8 @@ sub getproprium {
   my %w = columnsel($lang) ? %winner : %winner2;
 
   if (exists($w{$name})) {
-    $w = $name =~ /Hymnus/i ? tryoldhymn(\%w, $name) : $w{$name};
+    $name = tryoldhymn(\%w, $name) if $name =~ /^Hymnus/;
+    $w = $w{$name};
     $c = $winner =~ /Sancti/ ? 3 : 2;
   }
 
@@ -396,7 +397,8 @@ sub getproprium {
       if (exists($com{$name})) {
 
         # if element exists in referenced Commune, go for it
-        $w = $name =~ /Hymnus/i ? tryoldhymn(\%com, $name) : $com{$name};
+        $name = tryoldhymn(\%com, $name) if $name =~ /^Hymnus/;
+        $w = $com{$name};
         $c = 4;
         last;
       } elsif ($cn =~ /^C/i && $substitute && exists($com{$substitute})) {
@@ -434,19 +436,16 @@ sub getproprium {
 }
 
 #*** tryoldhymn(\%source, $name)
-# search for HymnusM $name in the source
+# return if possible for oldversion, name of Hymnus section in source
 sub tryoldhymn {
   my $source = shift;
-  my %source = %$source;
   my $name = shift;
-  $name1 = $name;
+  my $name1 = $name;
+
+  our ($version, $oldhymns);
   $name1 =~ s/Hymnus\S*/$&M/;
 
-  if (($oldhymns || ($version =~ /(Monastic|1570|Praedicatorum)/i)) && $name =~ /Hymnus/i && exists($source{$name1})) {
-    return $source{$name1};
-  } else {
-    return $source{$name};
-  }
+  ($oldhymns || ($version =~ /(Monastic|1570|Praedicatorum)/i)) && exists(${$source}{$name1}) ? $name1 : $name;
 }
 
 #*** checkmtv(version, winner)
