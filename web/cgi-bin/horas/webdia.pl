@@ -614,6 +614,10 @@ sub wnum {
 # set a link line
 sub linkcode {
   my ($name, $ind, $lang, $disabled) = @_;
+
+  # We need to mask paranthesis to be passed via JavaScript to popup.pl
+  $name =~ s/\(/\&lpar/;
+  $name =~ s/\)/\&rpar/;
   return "<INPUT TYPE='RADIO' NAME='link' $disabled onclick='linkit(\"$name\", $ind, \"$lang\");'>";
 }
 
