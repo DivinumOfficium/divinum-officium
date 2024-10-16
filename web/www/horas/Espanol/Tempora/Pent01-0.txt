@@ -19,10 +19,10 @@ Alabanza a Dios Padre, * y al Hijo, y que nuestros labios te canten, Espíritu S
 Gloria por siempre * a aquel de quien todo procede, por quien todo existe, y en quien todo subsiste.;;116
 
 [Hymnus Vespera]
-@Psalterium/Major Special:Hymnus Day6 Vespera
+@Psalterium/Special/Major Special:Hymnus Day6 Vespera
 
 [HymnusM Vespera]
-@Psalterium/Major Special:HymnusM Day6 Vespera
+@Psalterium/Special/Major Special:HymnusM Day6 Vespera
 
 [Versum 1]
 V. Bendigamos al Padre y al Hijo con el Espíritu Santo.
@@ -208,7 +208,7 @@ Nombramos distintamente al Padre y al Hijo, pero no podemos ni debemos decir dos
 @:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@Psalterium/Major Special:Day6 Vespera
+@Psalterium/Special/Major Special:Day6 Vespera
 
 [Hymnus Laudes]
 v. Tú, Unidad de la Trinidad, 

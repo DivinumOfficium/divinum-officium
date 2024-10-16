@@ -2,10 +2,10 @@
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::1 s/47/101/
-@Psalterium/Psalmi matutinum:Daym6:2-6 s/.*;;/;;/g
+@Psalterium/Psalmi/Psalmi matutinum:Daym6:2-6 s/.*;;/;;/g
 @Tempora/Pasc7-0:Versum 1
 @TemporaM/Pasc7-3:AntMatutinumM: s/;;.*/;;105(1-31)/
-@Psalterium/Psalmi matutinum:Daym6:10-14 s/.*;;/;;/g
+@Psalterium/Psalmi/Psalmi matutinum:Daym6:10-14 s/.*;;/;;/g
 
 [Responsory3]
 @Tempora/Pasc7-3:Responsory2

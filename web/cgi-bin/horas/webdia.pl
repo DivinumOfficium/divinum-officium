@@ -559,7 +559,7 @@ sub topnext_cell {
   my ($text, $lang) = @_;
   my @a = split('<br/>', $$text);
 
-  if (@a > 2 && $expand !~ /skeleton/i) {
+  if (@a > 2 && $expand ne 'lineamenta') {
     my $str = "<DIV ALIGN='right'><FONT SIZE='1' COLOR='green'>";
 
     if (columnsel($lang)) {
@@ -827,4 +827,51 @@ sub getunit {
   }
 
   return ($t, $ind);
+}
+
+#*** sub expand($line, $lang, $antline)
+# for & references calls the sub
+# $ references are filled from Psalterium/Prayers file
+# antline to handle redding the beginning of psalm is same as antiphona
+# returns the expanded text or the link
+sub expand {
+  use strict;
+  my ($line, $lang, $antline) = @_;
+  $line =~ s/^\s+//;
+  $line =~ s/\s+$//;
+
+  # Extract and remove the sigil indicating the required expansion type.
+  # TODO: Fail more drastically when the sigil is invalid.
+  $line =~ s/^([&\$](?:rubrica |Preces )?)// or return $line;
+  my $sigil = $1;
+  our ($expand, $missa);
+  local $expand = $missa ? 'all' : $expand;
+
+  # Make popup link if we shouldn't expand.
+  if (
+    $sigil ne '$rubrica '
+    && ($expand eq 'propria'
+      || ($expand eq 'psalteria' && ($line =~ /^(?:[A-Z](?!men)|pater_noster)/)))
+  ) {
+    setlink($sigil . $line, 0, $lang);
+  } elsif ($sigil eq '&') {
+
+    # Actual expansion for & references.
+    # Get function name and any parameters.
+    my ($function_name, $arg_string) = ($line =~ /(.*?)(?:[(](.*)[)])?$/);
+    my @args = (parse_script_arguments($arg_string), $lang);
+
+    # If we have an antiphon, pass it on to the script function.
+    if ($antline) {
+      $antline =~ s/^\s*Ant\. //i;
+      push @args, $antline;
+    }
+    dispatch_script_function($function_name, @args);
+  } elsif ($sigil eq '$rubrica ') {
+    rubric($line, $lang);
+  } elsif ($sigil eq '$Preces ') {
+    prex("Preces $line", $lang);
+  } else {    # Sigil is $, so simply look up the prayer.
+    prayer($line, $lang);
+  }
 }

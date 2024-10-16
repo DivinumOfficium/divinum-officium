@@ -1,0 +1,64 @@
+[Pater secreto]
+/:El «Padre Nuestro» en silencio hasta «Y no nos dejes caer en la tentación».:/
+
+
+[Pater totum secreto]
+/:El «Padre Nuestro» en silencio.:/
+
+[Credo secreto]
+/:El «Creo» en silencio hasta «La resurrección de la carne».:/
+
+[Pater post]
+/:A partir de entonces sólo se dice «Padre nuestro» en silencio, a menos que siga inmediatamente otra Hora.:/
+
+[Pater post V]
+/:Y si así termina el Oficio, sólo se dice en silencio «Padre nuestro».:/
+
+[Secreto]
+/:silenciosamente:/
+
+[Secreto a Laudibus]
+/:Si se separan maitines y laudes, entonces se dice en silencio::/
+(sed rubrica monastica)
+/:En las fiestas Simplex y en los días feriales, y si los maitines están separados de las Laudes, se comienza en silencio::/
+
+[Clara voce]
+/:Después, con voz audible, se dice el Versículo::/
+
+[Secus absolute]
+/:En caso contrario, la hora se inicia directamente de la siguiente manera::/
+(sed rubrica ^Trident)
+/:Después del himno:/ Te Deum laudamus /:o recitado el último responsorio, la hora comienza directamente de la siguiente manera::/
+
+[Matutinum]
+!El resto se omite, salvo que %Laúdes% se haga aparte.
+(sed rúbrica tridentina)
+!Después de recitado el himno Te Deum laudamus o el noveno o tercer responsorio, se comienza directamente con las %Laudes%, a excepción de la Noche de Navidad: en ésta se reza la Oratio y luego la misa de Navidad. se celebra como se indica en el lugar correspondiente.
+
+[Matutinum] (rubrica monastica)
+!El resto se omite, salvo que %Laúdes% se haga aparte.
+(sed rubrica tridentina aut rubrica divino)
+!El resto se omite en Oficios de 12 lecciones, salvo que %Laúdes% se haga aparte. En las fiestas Simplex y en los días feriales (ya sea con tres o una lectura) siempre se reza lo siguiente.
+
+[Deinde secreto]
+/:Después se dice en silencio:/
+
+
+[PAC ad Completorium]
+/:Si justo después de Completas se rezan maitines, entonces:/ Padre Nuestro, Ave María /:y:/ Credo, /:se dicen dos veces, una vez cada una para el final del Oficio del día anterior y para el comienzo del Oficio de el siguiente.:/
+
+[DefunctV]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Tras las Vísperas del día se dicen las %Vísperas de Difuntos%.
+
+[DefunctM]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Tras los Laúdes del día se dicen los %Maitines y Laúdes de Difuntos%.
+
+[examen]
+/:Examen de conciencia o Padre nuestro en silencio.:/
+
+[Preces flexis genibus]
+/:de rodillas:/

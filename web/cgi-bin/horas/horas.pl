@@ -8,7 +8,7 @@ use FindBin qw($Bin);
 use lib "$Bin/..";
 
 use DivinumOfficium::LanguageTextTools
-  qw(prayer translate omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
+  qw(prayer rubric prex translate omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 use DivinumOfficium::Date qw(date_to_days days_to_date);
 
 my $precesferiales;
@@ -66,7 +66,7 @@ sub resolve_refs {
   my @t = split("\n", $t);
 
   #handles expanding for skeleton
-  if ($expand =~ /skeleton/ && $expandind != $expandnum) {
+  if ($expand eq 'lineamenta' && $expandind != $expandnum) {
     if ($t[0] =~ /\#/) {
       return setlink($t[0], $expandind, $lang);
     } else {
@@ -136,7 +136,7 @@ sub resolve_refs {
       my $suffix = '';
       if ($l =~ s/(\{[^:].*?\})//) { $suffix = setfont($smallblack, $1); }
       $line = setfont($largefont, $l) . " $suffix\n";
-      if ($expand =~ /skeleton/i) { $line .= linkcode1(); }
+      if ($expand eq 'lineamenta') { $line .= linkcode1(); }
     }
 
     #red line
@@ -434,7 +434,7 @@ sub setlink {
     return $name;
   } elsif ($disabled || $smallflag) {
     $name = setfont($smallblack, $name);
-  } elsif ($expand =~ /skeleton/i) {
+  } elsif ($expand eq 'lineamenta') {
     $name = setfont($largefont, substr($name, 0, 1)) . setfont($redfont, substr($name, 1));
   } else {
     $name = setfont($largefont, uc(substr($name, 0, 1))) . substr($name, 1);
@@ -479,7 +479,7 @@ sub ant123_special {
   my $ant, $duplexf;
 
   if ($month == 12 && ($day > 16 && $day < 24) && $winner =~ /tempora/i) {
-    my %specials = %{setupstring($lang, 'Psalterium/Major Special.txt')};
+    my %specials = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
 
     if ($hora eq 'Laudes' && ($day == 21 || $day == 23)) {
       $ant = $specials{"Adv Ant $day" . 'L'};
@@ -528,7 +528,7 @@ sub canticum {
       setbuild1($ite, 'special');
       ($ant, $ant2) = split("\n", $w);
     } else {
-      my %a = %{setupstring($lang, 'Psalterium/Minor Special.txt')};
+      my %a = %{setupstring($lang, 'Psalterium/Special/Minor Special.txt')};
       my $name;
       $name = gettempora('Nunc dimittis') if $version =~ /^Ordo Praedicatorum/;
       $ant = $a{"Ant 4$name"};

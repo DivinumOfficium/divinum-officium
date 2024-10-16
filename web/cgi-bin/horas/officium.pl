@@ -27,7 +27,7 @@ use DivinumOfficium::Main qw(liturgical_color);
 use DivinumOfficium::Date qw(prevnext);
 use DivinumOfficium::RunTimeOptions qw(check_version check_horas check_language);
 use DivinumOfficium::LanguageTextTools
-  qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
+  qw(prayer rubric translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 
 $error = '';
 $debug = '';

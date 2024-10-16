@@ -1,0 +1,50 @@
+[Pater secreto]
+/:”Pai Nosso” é dito silenciosamente até “E não nos deixeis cair em tentação:”.:/
+
+
+[Pater post]
+/:Depois disso, apenas «Pai Nosso» é dito silenciosamente, a menos que outra Hora se siga imediatamente.:/
+
+[Pater post V]
+/:E se assim o Ofício termina, apenas «Pai Nosso» é dito silenciosamente.:/
+
+[Secreto]
+/:silenciosamente:/
+
+[Secreto a Laudibus]
+/:Se Matinas e Laudes são separadas, então é dito silenciosamente::/
+(sed rubrica monástica)
+/:Nas festas Simplex e nos dias feriais, e se as Matinas forem separadas das Laudes, começa-se em silêncio::/
+
+[Clara voce]
+/:Depois disso, com voz audível, o Versículo é dito::/
+
+[Secus absolute]
+/:Caso contrário, a hora é iniciada diretamente da seguinte forma::/
+(sed rubrica ^Trident)
+/:Depois do hino:/ Te Deum laudamus /:ou recitado o último responsório, a hora começa diretamente da seguinte forma::/
+
+[Matutinum]
+!Pule o resto, a menos que ore %Laudes% separadamente.
+(sed rubrica tridentina)
+!Depois do hino Te Deum laudamus ou recitado o nono ou terceiro responsório, inicia-se diretamente com as %Laudes%, com exceção da Noite de Natal: nesta se reza o Oratio e depois a missa de Natal é comemorado conforme declarado no local apropriado.
+
+[Matutinum] (rubrica monastica)
+!Pule o resto, a menos que ore %Laudes% separadamente.
+(sed rubrica tridentina aut rubrica divino)
+!Pule o resto dos Ofícios de 12 lições, a menos que reze %Laudes% separadamente. Nas festas Simplex e nos dias feriais (seja com três ou uma leitura) sempre se rezou o seguinte.
+
+[Deinde secreto]
+/:Depois disso é dito silenciosamente:/
+
+[PAC ad Completorium]
+/:Se logo após as Completas são rezadas as Matinas, então:/ Pai Nosso, Ave Maria /:e:/ Credo, /:são rezadas duas vezes, uma vez para o final do Ofício do dia anterior, e para o início do Ofício de nas próximas.:/
+
+[Martyrologium] (rubrica monastica)
+/:Então o Martirológio é lido em côro.:/
+
+[Regula] (rubrica monastica)
+/:Mesmo fora do Côro, é louvável ler a Regra Santa; de outro modo, uma Leitura Breve é rezada:/
+
+[examen]
+/:Segue-se um exame de consciência, ou um Pai Nosso em silêncio.:/

@@ -156,7 +156,7 @@ sub specials {
     }
 
     if ($item =~ /Lectio brevis/i && $hora eq 'Completorium') {
-      my %lectio = %{setupstring($lang, 'Psalterium/Minor Special.txt')};
+      my %lectio = %{setupstring($lang, 'Psalterium/Special/Minor Special.txt')};
       push(@s, $item, $lectio{'Lectio Completorium'});
       next;
     }
@@ -251,14 +251,40 @@ sub specials {
 
     if ($item =~ /Martyrologium/) {
       setcomment($label, 'Martyrologium', 0, $lang);
+      push(@s, martyrologium($lang));
+      push(@s, '', '$Pretiosa') unless $rule =~ /ex C9/;
       next;
     }
 
     if ($item eq '#Commemoratio defunctorum') {
       $item =~ s/.//;
       push @s, translate($label, $lang);
-      my %ps = %{setupstring($lang, 'Psalterium/Prima Special.txt')};
+      my %ps = %{setupstring($lang, 'Psalterium/Special/Prima Special.txt')};
       push @s, $ps{$item};
+      next;
+    }
+
+    if ($item =~ /Antiphona finalis/) {
+      
+      if ($version =~ /^Ordo Praedicatorum/) {
+        push(@s, '#' . translate('Antiphonae finalis', $lang));
+        push(@s, '$ant Salve Regina');
+      } else {
+        push(@s, '#' . translate('Antiphona finalis BMV', $lang));
+        if ($dayname[0] =~ /Adv|Nat/i
+          || $month == 1
+          || ($month == 2 && $day < 2)
+          || ($month == 2 && $day == 2 && $hora !~ /Completorium/i)) {
+            push(@s, '$ant Alma Redemptoris Mater');
+          } elsif (($month == 2 || $month == 3 || $dayname[0] =~ /Quad/i) && $dayname[0] !~ /Pasc/i) {
+            push(@s, '$ant Ave Regina caelorum');
+          } elsif ($dayname[0] =~ /Pasc/) {
+            push(@s, '$ant Regina caeli');
+          } else {
+            push(@s, '$ant Salve Regina');
+          }
+      }
+      push(@s, '&Divinum_auxilium');
       next;
     }
 
@@ -286,7 +312,7 @@ sub specials {
         || $scriptura{Rule} =~ /Laudes Litania/i
         || $flag)
     ) {
-      my %w = %{setupstring($lang, 'Psalterium/Major Special.txt')};
+      my %w = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
       my $lname = $version =~ /Monastic/ ? 'LitaniaM' : 'Litania';
       if ($version =~ /1570/ && exists($w{LitaniaT})) { $lname = 'LitaniaT'; }
       push(@s, $w{$lname});
@@ -561,7 +587,7 @@ sub getfrompsalterium {
   my $lang = shift;
 
   #get from psalterium
-  my %c = %{setupstring($lang, 'Psalterium/Major Special.txt')};
+  my %c = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
   my $name = gettempora('getfrompsalterium major') . " $item";
 
   my $w = $c{"$name $ind"};
@@ -644,29 +670,6 @@ sub checksuffragium {
   if ($winner =~ /C12/) { return 1; }
   if ($duplex > 2 && $seasonalflag) { return 0; }    # && $version !~ /trident/i ??? #all Duplex in the Tempora folders
   return 1;
-}
-
-sub get_prima_responsory {
-  my $lang = shift;
-  my $key = gettempora('Prima responsory');
-
-  if ( $rule =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i
-    || $commemoratio{Rule} =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i)
-  {
-    $key = $1;
-  } elsif ($version !~ /196/ && $month == 8 && $day > 15 && $day < 23) {
-    $key = 'Nat';
-  }
-
-  if ($version =~ /196/ && $month == 12 && $day > 8 && $day < 16 && $version !~ /Newcal/ && $day !~ 12) {
-    $key = 'Adv';
-  }
-
-  if ($version =~ /196/ && $key =~ /Corp|Heart/) { $key = ''; }
-  return '' unless $key;
-
-  my %t = %{setupstring($lang, 'Psalterium/Prima Special.txt')};
-  return $t{"Responsory $key"};
 }
 
 #*** loadspecial($str)

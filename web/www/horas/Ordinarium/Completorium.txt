@@ -5,7 +5,7 @@ $Amen
 #Lectio brevis
 
 $Adjutorium nostrum
-(rubrica 196) $examen
+(rubrica 196) $rubrica examen
 $Pater noster
 $Confiteor
 $Misereatur
@@ -36,10 +36,13 @@ $Deus in adjutorium
 (sed rubrica 196 aut rubrica 1955 omittitur)
 
 #Oratio
-(rubrica ^Monastic dicitur)
-$MLitany2
-(sed rubrica 1617 aut rubrica 1930 dicitur)
-&MLitany2
+(deinde rubrica ^Monastic dicuntur)
+$Kyrie
+$rubrica Pater secreto
+$Pater noster Et
+(sed rubrica 1617 aut rubrica 1930 loco hujus versus dicitur)
+&mLitany
+(deinde dicitur semper)
 &Dominus_vobiscum1
 (sed rubrica 196 aut rubrica 1955 dicitur)
 &Dominus_vobiscum
@@ -53,9 +56,12 @@ $Per Dominum
 $benedictio Completorium Final
 $Amen
 
-&antiphona_finalis
-&Divinum_auxilium
+#Antiphona finalis
 (rubrica Ordo Praedicatorum omittitur)
 
-$Pater Ave Credo C
+$rubrica Deinde secreto
+$Pater noster
+$Ave Maria
+$Credo
+$rubrica PAC ad Completorium
 (sed rubrica 196 aut rubrica 1955 omittitur)

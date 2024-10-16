@@ -20,17 +20,20 @@ Screen height~>$screenheight~>Entry~>12~>13;;
 Text width percent~>$textwidth~>Entry~>12~>14
 
 [general]
-Expand~>$expand~>Optionmenu~>{all,psalms,none,skeleton};;
+Expand~>$expand~>Optionmenu~>expansions;;
 Version~>$version~>Optionmenu~>versions;;
 Language 2~>$lang2~>Optionmenu~>languages;;
 Votive~>$votive~>Optionmenu~>votives;;
 
 [generalc]
-Expand~>$expand~>Optionmenu~>{all,psalms,none,skeleton};;
+Expand~>$expand~>Optionmenu~>expansions;;
 Version 1~>$version~>Optionmenu~>versions;;
 Version 2~>$version2~>Optionmenu~>versions;;
 Language~>$langc~>Optionmenu~>languages;;
 Votive~>$votive~>Optionmenu~>votives;;
+
+[expansions]
+tota,psalteria,propria,lineamenta
 
 [languages]
 Latin,Dansk,Deutsch,English,Español/Espanol,Français/Francais,Italiano,Magyar,Polski,Português/Portugues,Latin-Bea,Polski-Newer

@@ -1,0 +1,63 @@
+[Pater secreto]
+/:« Notre Père » en silence jusqu'à « Et ne nous laissez pas succomber à la tentation : »:/
+
+
+[Pater totum secreto]
+/:« Notre Père » en silence.:/
+
+[Pater post]
+/:Par la suite, seul « Notre Père » est prononcé silencieusement, à moins qu'une autre Heure ne suive immédiatement.:/
+
+[Pater post V]
+/:Et si ainsi l'Office est terminé, seul « Notre Père » est dit en silence.:/
+
+[Secreto]
+/:silencieusement:/
+
+[Secreto a Laudibus]
+/:Si Matines et Laudes sont séparées, alors on dit silencieusement ::/
+(sed rubrica monastica)
+/: Aux fêtes du Simplex et aux jours de feria, et si les Matines sont séparées des Laudes, on commence en silence ::/
+
+[Clara voce]
+/: Ensuite, d'une voix audible, le verset est dit ::/
+
+[Secus absolute]
+/:Sinon, l'heure démarre directement comme suit ::/
+(sed rubrica ^Trident)
+/:Après l'hymne :/ Te Deum laudamus /:ou le dernier répons a été récité, l'heure commence directement comme suit ::/
+
+[Matutinum]
+!Sauter le reste, à moins de prier %Lauds% séparément.
+(sed rubrica tridentina)
+!Après avoir récité l'hymne Te Deum laudamus ou le neuvième ou le troisième répons, on commence directement par les %Laudes%, à l'exception de la Nuit de Noël : dans celle-ci on récite l'Oratio puis la messe de Noël est célébré comme il est indiqué à l'endroit approprié.
+
+[Matutinum] (rubrica monastica)
+!Sauter le reste, à moins de prier %Lauds% séparément.
+(sed rubrica tridentina aut rubrica divino)
+!Sauter le reste dans les offices de 12 leçons, à moins de prier %Lauds% séparément. Lors des fêtes Simplex et des jours fériés (que ce soit avec trois ou une lecture), ce qui suit est toujours prié.
+
+[Deinde secreto]
+/: Ensuite, il est dit silencieusement :/
+
+[PAC ad Completorium]
+/:Si juste après les Complies on dit Matines, alors:/ Notre Père, Je vous salue Marie /:et:/ Credo, /:sont dits deux fois, une fois pour la fin de l'Office de la veille et pour le début de l'Office de le suivant.:/
+
+[DefunctV]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Après les Vèpres du jour on dit les %Vèpres des défunts.
+
+[DefunctM]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Après les laudes du jour on dit %Matines et Laudes des défunts%.
+
+[Martyrologium] (rubrica monastica)
+/:Puis le Martyrologe est lu en chœur.:/
+
+[examen]
+/:Examen de conscience ou Notre Père en silence.:/
+
+[Preces flexis genibus]
+/:Se dit à genoux :/

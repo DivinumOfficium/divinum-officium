@@ -19,10 +19,10 @@ Louange à Dieu le Père * et au Fils qui Lui est égal et que notre bouche fass
 Tout est de Lui, * tout est par Lui, tout est en Lui : à Lui la gloire dans tous les siècles.;;116
 
 [Hymnus Vespera]
-@Psalterium/Major Special:Hymnus Day6 Vespera
+@Psalterium/Special/Major Special:Hymnus Day6 Vespera
 
 [HymnusM Vespera]
-@Psalterium/Major Special:HymnusM Day6 Vespera
+@Psalterium/Special/Major Special:HymnusM Day6 Vespera
 
 [Versum 1]
 V. Bénissons le Père et le Fils ainsi que l’Esprit-Saint.
@@ -208,7 +208,7 @@ Enfin nous nommons distinctement, conformément aux règles catholiques du langa
 @:Ant Vespera :s/;;.*//g
 
 [Capitulum Laudes]
-@Psalterium/Major Special:Day6 Vespera
+@Psalterium/Special/Major Special:Day6 Vespera
 
 [Hymnus Laudes]
 v. O Vous, Unité de la Trinité,

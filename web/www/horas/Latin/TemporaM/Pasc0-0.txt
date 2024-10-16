@@ -16,16 +16,16 @@ Nolíte expavéscere: * Jesum quǽritis Nazarénum, crucifíxum: surréxit, non 
 ;;15
 ;;23
 ;;27
-@Psalterium/Psalmi matutinum:Paschm0:7-8
+@Psalterium/Psalmi/Psalmi matutinum:Paschm0:7-8
 @:AntM Matutinum:1
 ;;63
 ;;65
 ;;75
 ;;87
 ;;107
-@Psalterium/Psalmi matutinum:Paschm0:15-16
+@Psalterium/Psalmi/Psalmi matutinum:Paschm0:15-16
 @:AntM Matutinum:2
-@Psalterium/Psalmi matutinum:Paschm0:18-19
+@Psalterium/Psalmi/Psalmi matutinum:Paschm0:18-19
 
 [Lectio1]
 @Sancti/01-03::1-6 s/1-5/2-4/ s/1.*Absit. /2 /s
@@ -105,7 +105,7 @@ v. Fratres: Expurgáte vetus ferméntum, ut sitis nova conspérsio, sicut estis 
 $Deo gratias
 
 [Responsory Laudes]
-@Psalterium/Major Special:PaschM Laudes:3-8
+@Psalterium/Special/Major Special:PaschM Laudes:3-8
 
 [Versum 2]
 V. Hæc dies, quam fécit Dominus.
@@ -123,14 +123,14 @@ $Deo gratias
 @:Versum 2
 
 [Capitulum Nona]
-@Psalterium/Prima Special:Pasch
+@Psalterium/Special/Prima Special:Pasch
 $Deo gratias
 
 [Responsory NonaM]
 @:Versum 2
 
 [Responsory Vespera]
-@Psalterium/Major Special:PaschM Laudes:3-8
+@Psalterium/Special/Major Special:PaschM Laudes:3-8
 
 [Versum 3]
 @:Versum 2

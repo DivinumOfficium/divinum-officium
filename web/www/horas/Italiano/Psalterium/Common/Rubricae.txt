@@ -1,0 +1,63 @@
+[Pater secreto]
+/:Si dice il «Padre nostro» sottovoce fino a «E non ci indurre in tentazione».:/
+
+
+[Pater totum secreto]
+/:Si dice il «Padre nostro» sottovoce.:/
+
+[Credo secreto]
+/:Si dice il «Credo» sottovoce fino a «La risurrezione della carne».:/
+
+[Pater post]
+/:Dopodiché si dice silenziosamente solo «Padre nostro», a meno che non segua immediatamente un'altra Ora.:/
+
+[Pater post V]
+/:E se così l'Ufficio è finito, si dice sottovoce solo «Padre nostro».:/
+
+[Secreto]
+/:in silenzio:/
+
+[Secreto a Laudibus]
+/:Se Mattutino e Lodi sono separati, allora si dice in silenzio::/
+(sed rubrica monastica)
+/:Nelle feste del Simplesso e nei giorni feriali, e se il Mattutino è separato dalle Lodi, si comincia in silenzio::/
+
+[Clara voce]
+/:Poi, con voce udibile, si dice il Versetto::/
+
+[Secus absolute]
+/:Altrimenti l'ora viene avviata direttamente come segue::/
+(sed rubrica ^Trident)
+/:Dopo l'inno:/ Te Deum laudamus /:oppure recitato l'ultimo responsorio, l'ora inizia direttamente così::/
+
+[Matutinum]
+!Si salta il resto, a meno che si preghino le %Lodi% separatamente.
+(sed rubrica tridentina)
+!Dopo aver recitato l'inno Te Deum laudamus o il nono o il terzo responsorio, si comincia direttamente con le %Lodi%, ad eccezione della notte di Natale: in questa si prega l'Oratio e poi si celebra la messa di Natale celebrato come indicato nel luogo opportuno.
+
+[Matutinum] (rubrica monastica)
+!Si salta il resto, a meno che si preghino le %Lodi% separatamente.
+(sed rubrica tridentina aut rubrica divino)
+!Si salta il resto negli Uffici di 12 lezioni, a meno che si preghino le %Lodi% separatamente. Nelle feste del Simplesso e nei giorni feriali (sia con tre che con una lettura) si prega sempre quanto segue.
+
+[Deinde secreto]
+/: Successivamente si dice in silenzio:/
+
+[PAC ad Completorium]
+/:Se subito dopo Compieta si dice il Mattutino, allora:/ Padre Nostro, Ave Maria /:e:/ Credo, /:si dicono due volte, una volta ciascuno per la fine dell'Ufficio del giorno precedente e per l'inizio dell'Ufficio di il prossimo.:/
+
+[DefunctV]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Dopo i Vespri del giorno, si dicono %Vespri dei Defunti%.
+
+[DefunctM]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Dopo le Lodi del giorno, si dicono %Mattutino e Lodi dei Defunti%.
+
+[examen]
+/:Esame di coscienza o Padre nostro sotto voce.:/
+
+[Preces flexis genibus]
+/:ci inginocchiamo:/

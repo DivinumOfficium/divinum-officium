@@ -21,7 +21,7 @@ use File::Basename;
 use Time::Local;
 
 use lib "$Bin/..";
-use DivinumOfficium::LanguageTextTools qw(prayer translate load_languages_data);
+use DivinumOfficium::LanguageTextTools qw(prayer rubric prex translate load_languages_data);
 
 #use DateTime;
 use locale;
@@ -104,7 +104,7 @@ $title =~ s/,/ /;
 $title =~ s/,/-/;
 $title = translate(get_link_name($title), $lang1);
 $title =~ s/[\$\&]//;
-$expand = 'all';
+$expand = 'tota';
 if ($popup =~ /\&/) { $popup =~ s/\s/\_/g; }
 $text = resolve_refs($popup, $lang1);
 $t = length($text);

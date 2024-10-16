@@ -25,7 +25,7 @@ use constant {
 # collects and returns psalm 94 with the antipones
 sub invitatorium {
   my $lang = shift;
-  my %invit = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
+  my %invit = %{setupstring($lang, 'Psalterium/Special/Matutinum Special.txt')};
   my $name = gettempora('Invitatorium');
 
   if ($version =~ /Trid|Monastic/i && (!$name || ($name eq 'Quad' && $dayofweek != 0))) {
@@ -42,7 +42,7 @@ sub invitatorium {
   my $i = ($name =~ /^Invit$/i || $name =~ /Invit Trid/i) ? $dayofweek : 0;
   if ($i == 0 && $name =~ /^Invit$/i && ($month < 4 || ($monthday && $monthday =~ /^1[0-9][0-9]\-/))) { $i = 7; }
   my @invit = split("\n", $invit{$name});
-  setbuild('Psalterium/Matutinum Special', $name, 'Invitatorium ord');
+  setbuild('Psalterium/Special/Matutinum Special', $name, 'Invitatorium ord');
   my $ant = chompd($invit[$i]);
   my ($w, $c);
 
@@ -130,12 +130,12 @@ sub hymnusmatutinum {
     $hymn = $h;
     $comment = $c;
   } else {
-    my %hymn = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
+    my %hymn = %{setupstring($lang, 'Psalterium/Special/Matutinum Special.txt')};
     $name = gettempora('Hymnus matutinum');
     $name = ($name) ? "Hymnus $name" : "Day$dayofweek Hymnus";
     $comment = ($name) ? 1 : 5;
     if ($name =~ /^Day0 Hymnus$/i && ($month < 4 || ($monthday && $monthday =~ /^1[0-9][0-9]\-/))) { $name .= '1'; }
-    setbuild("Psalterium/Matutinum Special", $name, 'Hymnus ord');
+    setbuild("Psalterium/Special/Matutinum Special", $name, 'Hymnus ord');
 
   }
   setcomment($label, 'Source', $comment, $lang);
@@ -162,13 +162,13 @@ sub nocturn {
 sub psalmi_matutinum {
   $lang = shift;
   if ($version =~ /monastic/i && $winner{Rule} !~ /Matutinum Romanum/i) { return psalmi_matutinum_monastic($lang); }
-  my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
+  my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi/Psalmi matutinum.txt')};
   my $d = ($version =~ /trident/i) ? 'Daya' : 'Day';
   my $dw = $dayofweek;
 
   #if ($winner{Rank} =~ /Dominica/i) {$dw = 0;}
   my @psalmi = split("\n", $psalmi{"$d$dw"});
-  setbuild("Psalterium/Psalmi matutinum", "$d$dw", 'Psalmi ord');
+  setbuild("Psalterium/Psalmi/Psalmi matutinum", "$d$dw", 'Psalmi ord');
   $comment = 1;
   my $prefix = translate('Antiphonae', $lang);
 
@@ -276,7 +276,7 @@ sub psalmi_matutinum {
     #   && $rank < 5
     #   && !exists($winner{'Ant Matutinum'}))
     # {
-    #   my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
+    #   my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi/Psalmi matutinum.txt')};
     #   @psalmi = split("\n", $psalmi{"Daya$dayofweek"});
     #   nocturn(1, $lang, \@psalmi, (0, 1, 6, 7));
     #   lectiones(1, $lang);
@@ -523,7 +523,7 @@ sub lectiones {
   my @a = get_absolutio_et_benedictiones($num, $lang);
 
   if ($rule !~ /Limit.*?Benedictio/i) {
-    push(@s, "\&pater_noster");
+    push(@s, "\$Pater noster_");
     push(@s, "Absolutio. $a[0]", '$Amen') unless $version =~ /^Ordo Praedicatorum/;
   } else {
     push(@s, "\$Pater totum secreto");
@@ -1292,7 +1292,7 @@ sub ant_matutinum_paschal {
     }
   } else {
     if ($dayname[0] =~ /Pasc[1-5]/i && $dayname[1] =~ /Dominica/) {
-      my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
+      my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi/Psalmi matutinum.txt')};
       my @a = split("\n", $psalmi{Pasch0});
 
       for (my $i = 0; $i < @psalmi; $i++) {

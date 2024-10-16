@@ -24,7 +24,7 @@ sub gethymn {
     $name =~ s/ / Pasc7 / if ($hora eq 'Tertia' && $dayname[0] =~ /Pasc7/);
 
     if ($hora eq 'Completorium' && $version =~ /^Ordo Praedicatorum/) {
-      my %ant = %{setupstring($lang, 'Psalterium/Minor Special.txt')};
+      my %ant = %{setupstring($lang, 'Psalterium/Special/Minor Special.txt')};
       $versum = $ant{'Versum 4'};
       postprocess_vr($versum, $lang);
       my $tempname = gettempora('*');
@@ -38,7 +38,7 @@ sub gethymn {
   }
 
   if ($hymnsource) {
-    my %h = %{setupstring($lang, "Psalterium/$hymnsource Special.txt")};
+    my %h = %{setupstring($lang, "Psalterium/Special/$hymnsource Special.txt")};
     $name = tryoldhymn(\%h, $name);
     $hymn = $h{$name};
   }
