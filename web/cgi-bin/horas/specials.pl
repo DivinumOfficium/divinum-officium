@@ -68,7 +68,7 @@ sub specials {
         # nothing to do here.
         unless ($hora eq 'Completorium') {
           my %c = columnsel($lang) ? %commune : %commune2;
-          push(@s, '#Versus (In loco Capituli)', $w{"Versum 2"} // $c{"Versum 2"}, '');
+          push(@s, '#' . translate('Versus in loco', $lang), $w{"Versum 2"} // $c{"Versum 2"}, '');
           setbuild1("Versus speciale in loco calpituli");
         }
         $skipflag = 1;
@@ -101,9 +101,9 @@ sub specials {
 
       if ($item =~ /incipit/i && $version !~ /1955|196/ && $winner !~ /C12/) {
         if ($hora eq 'Laudes') {
-          push(@s, setfont($smallfont, 'Si Laudes extra Chorum separentur a Matutino, ante eas dicitur secreto'));
+          push(@s, '/:' . translate('Si Laudes', $lang) . ':/');
         } else {
-          push(@s, setfont($smallfont, 'secreto'));
+          push(@s, '/:' . translate('secreto', $lang) . ':/');
         }
         push(@s, '$Pater noster', '$Ave Maria');
         if ($hora =~ /^(?:Matutinum|Prima)$/) { push(@s, '$Credo'); }
