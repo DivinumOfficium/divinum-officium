@@ -571,42 +571,6 @@ sub getfrompsalterium {
   return $w;
 }
 
-#*** getfromcommune($name, $ind, $lang, $flag, $buildflag)
-# collects and returns [$name $ind] item for the commemorated office from the commune
-# if $flag ir collects for vide reference too
-# if buildflag sets the building script item
-sub getfromcommune {
-
-  my $name = shift;
-  my $ind = shift;
-  my $lang = shift;
-  my $flag = shift;
-  my $buildflag = shift;
-  my $c = '';
-
-  if ($commemoratio{Rule} =~ /ex\s*(C[0-9]+[a-z]*)/) { $c = $1; }
-  if ($commemoratio{Rule} =~ /vide\s*(C[0-9]+[a-z]*|Sancti\/.*?|Tempora\/.*?)(\s|\;)/ && $flag) { $c = $1; }
-  if ($hora eq 'Prima' && $rule =~ /(ex|vide)\s*(C[0-9]+[a-z]*|Sancti\/.*?|Tempora\/.*?)(\s|\;)/) { $c = $2; }
-  if (!$c) { return; }
-
-  if ($c =~ /^C/) {
-    $c = subdirname('Commune', $version) . "$c";
-    my $fname = "$datafolder/$lang1/$c" . "p.txt";
-    if ($dayname[0] =~ /Pasc/i && (-e $fname)) { $c .= 'p'; }
-  }
-  my %w = %{setupstring($lang, "$c.txt")};
-  my $v = $w{$name};
-  if (!$v) { $v = $w{"$name $ind"}; }
-  if (!$v) { $ind = 4 - $ind; $v = $w{"$name $ind"}; }
-
-  if ($v && $name =~ /Ant/i) {
-    my $source = $w{Name};
-    $source =~ s/\n//g;
-    setbuild($source, "$name $ind", 'try');
-  }
-  return $v;
-}
-
 #*** setbuild1($label, $coment)
 # set a red black line into building script
 sub setbuild1 {
