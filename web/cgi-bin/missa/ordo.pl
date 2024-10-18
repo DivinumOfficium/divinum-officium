@@ -195,7 +195,7 @@ sub resolve_refs {
 
     # Connect lines marked by tilde.
     if ($merge_with_next && $it < $#t) {
-      $merged_lines = $line . ' ';
+      $merged_lines .= $line . ' ';
     } else {
       push @resolved_lines, $merged_lines . $line;
       $merged_lines = '';
@@ -204,11 +204,11 @@ sub resolve_refs {
 
   # Concatenate the expansions of the lines with a line break between each.
   push @resolved_lines, '';
-  my $resolved_block = join "<br/>\n", @resolved_lines;
+  my $resolved_block = join "<br\/>\n", @resolved_lines;
 
   #removes occasional double linebreaks
-  $resolved_block =~ s/\<BR\/\>\s*\<BR\/\>/\<BR\/\>/g;
-  $resolved_block =~ s/<\/P>\s*<BR\/>/<\/P>/g;
+  $resolved_block =~ s/\<br\/\>\s*\<br\/\>/\<br\/\>/ig;
+  $resolved_block =~ s/<\/P>\s*<br\/>/<\/P>/gi;
   return $resolved_block;
 }
 
