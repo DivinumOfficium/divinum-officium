@@ -31,18 +31,11 @@ _
 &pater_noster
 _
 &psalm(145)
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica aut die Omnium Defunctorum omittitur)
 _
-V. A porta ínferi.
-R. Erue, Dómine, ánimas eórum.
-V. Requiéscant in pace.
-R. Amen.
-V. Dómine, exáudi oratiónem meam.
-R. Et clamor meus ad te véniat.
+$A porta inferi
 
 [Oratio_Fid]
-&Dominus_vobiscum2
-_
 $Oremus
 v. Fidélium, Deus, ómnium Cónditor et Redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optavérunt, piis supplicatiónibus consequántur:
 $Qui vivis
@@ -55,7 +48,7 @@ $Qui vivis
 @:Oratio_Fid
 
 [Oratio 2]
-@:Oratio_a_porta:s/&psalm.*\)//s
+@:Oratio_a_porta:s/145/129/s
 @:Oratio_Fid
 
 [Oratio1]
@@ -273,14 +266,7 @@ Ego sum * resurréctio et vita: qui credit in me, étiam si mórtuus fúerit, vi
 &pater_noster
 &psalm(129)
 _
-V. A porta ínferi.
-R. Erue, Dómine, ánimas eórum.
-V. Requiéscant in pace.
-R. Amen.
-V. Dómine, exáudi oratiónem meam.
-R. Et clamor meus ad te véniat.
-&Dominus_vobiscum2
+$A porta inferi
 _
 $Oremus
-v. Fidélium, Deus, ómnium Cónditor et Redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optavérunt, piis supplicatiónibus consequántur:
-$Qui vivis
+@:Oratio Fid
