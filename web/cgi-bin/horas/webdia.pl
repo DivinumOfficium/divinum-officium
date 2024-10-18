@@ -59,6 +59,10 @@ Content-type: text/html; charset=utf-8
       background: $dialogbackground;
     }
     .contrastbg { background: white; }
+PrintTag
+
+  if (our $whitebground) {
+    print << "PrintTag";
     \@media (prefers-color-scheme: dark) {
       body {
         background: black;
@@ -72,7 +76,35 @@ Content-type: text/html; charset=utf-8
         background: #3F3F3F;
         color: white;
       }
-    }
+      }
+PrintTag
+  } else {
+    print << "PrintTag";
+    \@media (prefers-color-scheme: dark) {
+      body {
+        background: $dialogbackground;
+        color: black;
+      }
+      select {
+        background: lightgrey;
+        color: black;
+      }
+      input[type="select"] {
+        background: lightgrey;
+        color: black;
+      }
+      input[type="submit"] {
+        background: grey;
+        color: black;
+      }
+      input[type="text"] {
+        background: white;
+        color: black;
+      }
+PrintTag
+  }
+
+  print << "PrintTag";
   </STYLE>
   <TITLE>$title</TITLE>
 $horasjs
