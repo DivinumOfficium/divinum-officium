@@ -9,12 +9,12 @@ Gloria
 ! 3 classe
 ! Paramentos brancos
 
-[Introitus]
-@Commune/C5:Introitus
-
 [Oratio]
 Ó Deus, que nos alegrais com a solenidade anual do B. Jacinto, vosso Confessor, visto que celebramos o seu nascimento, concedei-nos propício que imitemos também as suas acções.
 $Per Dominum
+
+[Introitus]
+@Commune/C5:Introitus
 
 [Lectio]
 @Commune/C5:Lectio
@@ -36,4 +36,3 @@ $Per Dominum
 
 [Postcommunio]
 @Commune/C5:Postcommunio
-

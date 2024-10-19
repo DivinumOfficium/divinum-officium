@@ -1,23 +1,31 @@
 [Rank]
 S. Joannae Franciscae Frémiot de Chantal Viduae;;Duplex;;3;;vide C7a
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Joannae Franciscae Frémiot de Chantal Viduae;;Duplex optional;;2;;vide C7a
 
 [Rule]
 vide C7a;
 Gloria
 
+[Oratio]
+Deus omnipotente e eterno, que, havendo abrasado no vosso amor a B. Joana Francisca, lhe destes um admirável espírito de fortaleza para seguir em todos os caminhos da vida «a via da perfeição» , e que por ela quisestes ornar a vossa Igreja com uma nova família, permiti, pelos seus méritos e preces, que, tendo nós consciência da nossa fraqueza e pondo a nossa confiança no vosso poder, triunfemos com o auxílio da graça celestial de tudo o que nos é contrário.
+$Per Dominum
+
 [Comment]
 # 21 VIII – Santa Joana de Chantal, Viúva
 ! 3 classe
 ! Paramentos brancos
 
+[Secreta]
+Senhor, Vos suplicamos, permiti que esta hóstia salutar nos inflame no fogo daquele amor que abrasou com tanto ardor o coração da B. Joana Francisca e o consumiu nas chamas da eterna caridade.
+$Per Dominum
+
 [Introitus]
 @Commune/C7a:Introitus
 
-[Oratio]
-Deus omnipotente e eterno, que, havendo abrasado no vosso amor a B. Joana Francisca, lhe destes um admirável espírito de fortaleza para seguir em todos os caminhos da vida «a via da perfeição» , e que por ela quisestes ornar a vossa Igreja com uma nova família, permiti, pelos seus méritos e preces, que, tendo nós consciência da nossa fraqueza e pondo a nossa confiança no vosso poder, triunfemos com o auxílio da graça celestial de tudo o que nos é contrário.
+[Postcommunio]
+Infundi em nós, Senhor, o espírito da vossa caridade, a fim de que pela intercessão da B. Joana Francisca aqueles que saciastes com o celestial Pão dos fortes desprezem os bens da terra e com o coração puro se unam somente a Vós, ó Deus.
 $Per Dominum
 
 [Lectio]
@@ -32,13 +40,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C7a:Offertorium
 
-[Secreta]
-Senhor, Vos suplicamos, permiti que esta hóstia salutar nos inflame no fogo daquele amor que abrasou com tanto ardor o coração da B. Joana Francisca e o consumiu nas chamas da eterna caridade.
-$Per Dominum
-
 [Communio]
 @Commune/C7a:Communio
-
-[Postcommunio]
-Infundi em nós, Senhor, o espírito da vossa caridade, a fim de que pela intercessão da B. Joana Francisca aqueles que saciastes com o celestial Pão dos fortes desprezem os bens da terra e com o coração puro se unam somente a Vós, ó Deus.
-$Per Dominum

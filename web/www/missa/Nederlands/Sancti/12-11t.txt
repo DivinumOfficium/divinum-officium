@@ -11,9 +11,6 @@ OPapaC=Damasus;
 vide C4;
 Gloria
 
-[Oratio]
-@Commune/C4b:Oratio:s/N\./Damasus/
-
 [Commemoratio Oratio]
 !Pro Octava Conceptionis Immaculatæ.
 @Sancti/12-08:Oratio
@@ -21,6 +18,9 @@ Gloria
 [Commemoratio Secreta]
 !Pro Octava Conceptionis Immaculatæ.
 @Sancti/12-08:Secreta
+
+[Oratio]
+@Commune/C4b:Oratio:s/N\./Damasus/
 
 [Commemoratio Postcommunio]
 !Pro Octava Conceptionis Immaculatæ.

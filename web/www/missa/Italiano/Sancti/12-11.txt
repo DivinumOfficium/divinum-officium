@@ -1,16 +1,24 @@
 [Rank]
 S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4b
 
-[Rank1960]
+[Rank] (rubrica 196)
 S. Damasi Papae et Confessoris;;Duplex;;3;;vide C4b
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4b
 
 [Rule]
 OPapaC=Dámaso;
 vide C4;
 Gloria
+
+[Commemoratio Oratio]
+!Pro Octava Conceptionis Immaculatæ.
+@Sancti/12-08:Oratio
+
+[Commemoratio Secreta]
+!Pro Octava
+@Sancti/12-08:Secreta
 
 [Introitus]
 !Joann 21:15; 21:16; 21:17
@@ -20,13 +28,13 @@ Io ti glorificherò, o Signore, perché mi hai soccorso e non hai permesso ai mi
 &Gloria
 v. Simon Pietro, se Mi ami, pasci i miei agnelli: pasci le mie pecorelle.
 
+[Commemoratio Postcommunio]
+!Pro Octava
+@Sancti/12-08:Postcommunio
+
 [Oratio]
 O eterno Pastore, volgi lo sguardo benigno sul tuo gregge e custodiscilo con una continua protezione, per intercessione del sommo Pontefice san Dàmaso, che hai costituito pastore di tutta la Chiesa.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Pro Octava Conceptionis Immaculatæ.
-@Sancti/12-08:Oratio
 
 [Lectio]
 Dalla prima lettera di san Pietro apostolo.
@@ -36,8 +44,7 @@ Carissimi: Sacerdote anch'io e teste della Passione di Cristo e chiamato ad aver
 [Graduale]
 !Ps 106:32; 106:31
 Lo esaltino nell'assemblea del popolo e lo lodino nel consesso degli anziani.
-V. Ringrazino il Signore per la sua bontà e per i suoi prodigi a favore degli uomini.~
-Allelúia, allelúia
+V. Ringrazino il Signore per la sua bontà e per i suoi prodigi a favore degli uomini. Allelúia, allelúia
 !Mat 16:18
 Tu sei Pietro, e su questa pietra edificherò la mia Chiesa! Allelúia.
 
@@ -54,10 +61,6 @@ Ecco che le mie parole pongo sulla tua bocca: ecco che io ti prepongo a nazioni 
 Per i doni che ti offriamo, o Signore, illumina benigno la tua Chiesa, affinché ovunque il tuo gregge progredisca e, docili alla tua guida, i pastori siano graditi al tuo nome.
 $Per Dominum
 
-[Commemoratio Secreta]
-!Pro Octava
-@Sancti/12-08:Secreta
-
 [Communio]
 !Matt 16:18
 Tu sei Pietro, e su questa pietra edificherò la mia Chiesa!
@@ -65,8 +68,3 @@ Tu sei Pietro, e su questa pietra edificherò la mia Chiesa!
 [Postcommunio]
 Guida benevolmente, o Signore, la tua Chiesa, nutrita con questo santo ristoro: diretta dal tuo potente governo, essa goda di una crescente libertà e mantenga integra la sua fede.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro Octava
-@Sancti/12-08:Postcommunio
-

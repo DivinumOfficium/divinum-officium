@@ -1,6 +1,3 @@
-[Rank]
-S. Caroli Episcopi et Confessoris;;Duplex;;3;;vide C4
-
 [Rule]
 vide C4;
 9 lectiones
@@ -16,15 +13,6 @@ Również wspomnienie św. Witalisa i Agrykoli, męczenników. Niewolnik Witalis
 [Introitus]
 @Commune/C4:Introitus
 
-[Oratio]
-Osłaniaj, Panie, swój Kościół nieustanną opieką świętego Karola, Twojego Wyznawcy i Biskupa, a jak jemu gorliwość pasterska przyniosła chwałę, tak niech jego wstawiennictwo zawsze rozpala w nas miłość ku Tobie.
-$Per Dominum
-
-[Commemoratio Oratio]
-! Wspomnienie śś. Witalisa i Agrykoli
-Spraw, prosimy Cię, wszechmogący Boże, abyśmy obchodząc uroczystość świętych Twoich Męczenników Witalisa i Agrykoli, doznali pomocy dzięki ich wstawiennictwu.
-$Per Dominum
-
 [Lectio]
 @Commune/C4:Lectio
 
@@ -37,21 +25,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C4:Offertorium
 
-[Secreta]
-@Commune/C4:Secreta
-
-[Commemoratio Secreta]
-! Wspomnienie śś. Witalisa i Agrykoli
-Daj się przebłagać, Panie, złożonymi darami, a za wstawiennictwem świętych Twoich Męczenników Witalisa i Agrykoli broń nas od wszystkich niebezpieczeństw. 
-$Per Dominum
-
 [Communio]
 @Commune/C4:Communio
-
-[Postcommunio]
-@Commune/C4:Postcommunio
-
-[Commemoratio Postcommunio]
-! Wspomnienie śś. Witalisa i Agrykoli
-Panie, niech ta Komunia oczyści nas z grzechów i za przyczyną świętych Męczenników Twoich Witalisa i Agrykoli stanie się dla nas niebieskim lekarstwem.
-$Per Dominum

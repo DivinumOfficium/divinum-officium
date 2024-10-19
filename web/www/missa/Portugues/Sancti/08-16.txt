@@ -1,7 +1,7 @@
 [Rank]
 S. Joachim Confessoris, Patris B. Mariae Virginis;;Duplex II class;;5.1;;ex C5
 
-[Rank1960]
+[Rank] (rubrica 196)
 S. Joachim Confessoris, Patris B. Mariae Virginis;;Duplex II class;;5;;ex C5
 
 [Rule]
@@ -25,14 +25,14 @@ v. Distribuiu liberalmente os seus bens pelos pobres: a sua justiça subsistirá
 Ó Deus, que, de preferência a todos vossos Santos, quisestes que o B. Joaquim fosse o Pai da Mãe de vosso Filho, concedei-nos, Vos suplicamos, que experimentemos o perpétuo patrocínio daquele cuja festa celebramos.
 $Per eundem
 
-[Lectio]
-@Commune/C5:Lectio
-
 [Graduale]
 !Sl 111:9; 111:2
 Distribuiu liberalmente os seus bens pelos pobres: a sua justiça permanecerá em todos os séculos dos séculos.
 V. Sua descendência será poderosa na terra, pois a geração dos justos será abençoada. Aleluia, aleluia.
 Ó S. Joaquim, Esposo de Santa Ana, Pai da Virgem-Mãe, concedei na terra aos vossos os socorros necessários para a salvação. Aleluia.
+
+[Lectio]
+@Commune/C5:Lectio
 
 [Evangelium]
 Início do santo Evangelho segundo S. Mateus.
@@ -50,6 +50,7 @@ $Per Dominum
 [Communio]
 Eis o servo fiel e prudente que o Senhor estabeleceu acima da sua família para distribuir oportunamente a cada um a sua medida de trigo.
 !Lc 12:42
+
 [Postcommunio]
 Fazei, ó Deus omnipotente, Vos suplicamos, que pelas preces e méritos do B. Joaquim, Pai da Mãe do vosso amado Filho, nosso Senhor Jesus Cristo, estes sacramentos, que recebemos, nos tornem comparticipantes da vossa graça na vida presente e da vossa eterna glória na vida futura.
 $Per eundem

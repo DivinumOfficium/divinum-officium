@@ -1,12 +1,16 @@
 [Rank]
 S. Joannae Franciscae Frémiot de Chantal Viduae;;Duplex;;3;;vide C7a
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Joannae Franciscae Frémiot de Chantal Viduae;;Duplex optional;;2;;vide C7a
 
 [Rule]
 vide C7a;
 Gloria
+
+[Oratio]
+Wszechmogący i miłosierny Boże, Ty rozpaliwszy świętą Joannę Franciszkę ogniem Swojej miłości, obdarzyłeś ją przedziwną mocą ducha w kroczeniu drogą doskonałości we wszystkich okolicznościach życia, i dzięki niej chciałeś uświetnić Twój Kościół nowym potomstwem duchowym; daj dla jej zasług i próśb, abyśmy świadomi własnej słabości, a ufni w moc Twoją, pokonali wszystkie przeciwności.
+$Per Dominum
 
 [Comment]
 # 21 VIII – Św. Joanny Franciszki Frémiot de Chantal, Wdowy
@@ -16,11 +20,15 @@ Gloria
 
 Mszą wspólna nr 29 Cognovi, z wyjątkiem kolekty, sekrety i pokomunii
 
+[Secreta]
+Prosimy Cię, Panie, niech ta zbawcza ofiara zapali nas takim ogniem miłości, jaki zapłonął w sercu świętej Joanny Franciszki i strawił ją płomieniem wiecznej miłości.
+$Per Dominum
+
 [Introitus]
 @Commune/C7a:Introitus
 
-[Oratio]
-Wszechmogący i miłosierny Boże, Ty rozpaliwszy świętą Joannę Franciszkę ogniem Swojej miłości, obdarzyłeś ją przedziwną mocą ducha w kroczeniu drogą doskonałości we wszystkich okolicznościach życia, i dzięki niej chciałeś uświetnić Twój Kościół nowym potomstwem duchowym; daj dla jej zasług i próśb, abyśmy świadomi własnej słabości, a ufni w moc Twoją, pokonali wszystkie przeciwności.
+[Postcommunio]
+Tchnij w nas, o Panie, Ducha Twojej miłości, i spraw, abyśmy nasyceni mocą niebiańskiego chleba wzgardzili tym, co ziemskie, i lgnęli czystym sercem do Ciebie, jedynego Boga.
 $Per Dominum
 
 [Lectio]
@@ -35,13 +43,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C7a:Offertorium
 
-[Secreta]
-Prosimy Cię, Panie, niech ta zbawcza ofiara zapali nas takim ogniem miłości, jaki zapłonął w sercu świętej Joanny Franciszki i strawił ją płomieniem wiecznej miłości.
-$Per Dominum
-
 [Communio]
 @Commune/C7a:Communio
-
-[Postcommunio]
-Tchnij w nas, o Panie, Ducha Twojej miłości, i spraw, abyśmy nasyceni mocą niebiańskiego chleba wzgardzili tym, co ziemskie, i lgnęli czystym sercem do Ciebie, jedynego Boga.
-$Per Dominum

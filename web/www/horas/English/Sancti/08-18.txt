@@ -1,23 +1,5 @@
 [Rank]
-Quarta die infra Octavam S. Assumptionis;;Semiduplex;;2.5;;vide Sancti/08-15
-
-[Rank] (rubrica 1960)
-S. Agapiti Martyris;;Simplex;;1.1;;vide C2
-
-[Rule] (rubrica 1570 aut rubrica 1910 aut rubrica divino)
-vide Sancti/08-15;
-9 lectiones;
-Doxology=Nat
-
-[Rule] (rubrica 1955)
-vide C2
-
-[Commemoratio] (sed rubrica 1955 omittitur)
-!Commemoratio S. Agapiti Martyris
-@Commune/C2:Oratio proper
-$Oremus
-May Thy Church, O God, rejoice with confidence in the pleadings of Thine Holy Martyr Agapitus, and with the help of his glorious prayers remain ever godly and stand ever secure.
-$Per Dominum
+Fourth day of the octave of the Assumption of Blessed Mary;;Semiduplex;;2;;ex Sancti/08-15
 
 [Lectio1]
 From the Song of Songs
@@ -45,17 +27,22 @@ From the Song of Songs
 15 The fountain of gardens: the well of living waters, which run with a strong stream from Libanus.
 (sed rubrica 1955 omittitur)
 
-[Lectio4]
+[Lectio4] (rubrica divino)
 The Lesson is taken from the Apostolic Constitution of Pope Pius XII
 _
 All these proofs and considerations of the holy Fathers and Theologians are based upon the Sacred Scriptures as the final foundation; they establish the blessed Mother of God before our eyes, as it were, as most closely united to her divine Son and always sharing his lot.  Therefore, it seemeth impossible to think of her who conceived Christ, gave birth to him, gave him milk, held him in her arms, and clasped him to her heart, as being, after her earthly life, separated from him in body if not in soul. Since our Redeemer is the Son of Mary, he could surely not do otherwise, as the most perfect observer of the divine law, than to honour his most beloved Mother in addition to honouring his eternal Father.  And, since it was possible for him to give her this great honour, that she might be preserved from the corruption of the grave, we must believe that he really did so.
 (sed rubrica 1955 omittitur)
 
-[Lectio5]
+[Lectio5] (rubrica divino)
 And this indeed should be borne in mind, that as far back as the second century the holy Fathers represented Mary as the new Eve of a new Adam, and closely joined to him (although dependently upon him) in the fight against the hellish enemy which, as already foretold in the protogospel, would end in complete victory over sin and death, which two phases are always joined in the writings of the Apostle of the Gentiles.  Wherefore, just as the essential glory of Christ's resurrection was a part and final trophy of this victory, so also the association of Mary with her Son in this common struggle was to end with the glorification of her virginal body; for as the same Apostle saith : When this mortal shall have put on immortality, then shall be brought to pass the saying that is written, Death is swallowed up in victory.
 (sed rubrica 1955 omittitur)
 
-[Lectio6]
+[Lectio9] (rubrica divino)
+!Commemoratio S. Agapito Mart.
+Agapitus was a young man of Palestrina, who eagerly accepted martyrdom at the age of fifteen years, under the Emperor Aurelian. On account of his firmness in his religion, the Emperor ordered him first to receive an exceedingly long hiding with cat-gut, and then to be thrown into a foul dungeon, where he remained for four days without food. Being brought out of prison, live embers were put upon his head, but, whereas he still gave God thanks, he was whipped again, and hung up naked by the feet, in such wise that a thick smoke from a fire kindled under his face might pour into his mouth. Afterwards, boiling water was poured upon his belly, and his jaws were broken. Then presently the judge fell from his judgement seat, and shortly after died. Whereupon the Emperor was enraged, and commanded the holy youth to be thrown to wild beasts, but these dared not to touch him, and he was stricken by the sword at Palestrina.
+&teDeum
+
+[Lectio6] (rubrica divino)
 Therefore the august Mother of God, from all eternity united in a hidden way with Jesus Christ by one and the same decree of predestination, immaculate in her conception, an inviolate virgin in her divine motherhood, the gracious cooperator of the Divine Redeemer who triumphed completely over sin and its consequences, was finally granted as the supreme crown of her privileges that she should be preserved free from the corruption of the grave, and that, like her own Son, having conquered death, she might be taken up, body and soul, to the exalted glory of heaven, where she sitteth in splendour at the right hand of her very Son, the immortal King of ages.
 (sed rubrica 1955 omittitur)
 
@@ -79,13 +66,3 @@ Bene Martha circa corporalem Domini, quid dicam, necessitatem, an voluntatem? mi
 
 [Lectio8] (rubrica divino)
 Turn thou unto us through thy very uniqueness. In thy hands are the treasures of the Lord's mercy, and thou alone art the chosen one to whom such great grace is given.  Heaven forbid thy hand should ever weaken, for thou wilt never have to seek any occasion of saving the unfortunate or of pouring you thy mercy.  Nor doth thy glory ever grow less, but it ever increaseth, for penitents are taken back into favour, and just souls are raised into glory. Turn thou unto us, O Sulamitess, that is, one who was despised, whose soul the sword did pierce and who hath been called the spouse of a carpenter.  And why do we ask thee to turn unto us?  So that we may behold thee.  The greatest glory after seeing God is to see thee, to cling to thee, and to dwell in the fastness of thy protection.  Hear thou us, for thy Son doth honour thee and denieth thee nothing, and he is God who is blessed forever and ever. Amen.
-
-[Lectio9] (rubrica divino)
-!Commemoratio S. Agapito Mart.
-Agapitus was a young man of Palestrina, who eagerly accepted martyrdom at the age of fifteen years, under the Emperor Aurelian. On account of his firmness in his religion, the Emperor ordered him first to receive an exceedingly long hiding with cat-gut, and then to be thrown into a foul dungeon, where he remained for four days without food. Being brought out of prison, live embers were put upon his head, but, whereas he still gave God thanks, he was whipped again, and hung up naked by the feet, in such wise that a thick smoke from a fire kindled under his face might pour into his mouth. Afterwards, boiling water was poured upon his belly, and his jaws were broken. Then presently the judge fell from his judgement seat, and shortly after died. Whereupon the Emperor was enraged, and commanded the holy youth to be thrown to wild beasts, but these dared not to touch him, and he was stricken by the sword at Palestrina.
-&teDeum
-
-[Lectio93]
-!Commemoratio S. Agapito Mart.
-Agapitus was a young man of Palestrina, who eagerly accepted martyrdom at the age of fifteen years, under the Emperor Aurelian. On account of his firmness in his religion, the Emperor ordered him first to receive an exceedingly long hiding with cat-gut, and then to be thrown into a foul dungeon, where he remained for four days without food. Being brought out of prison, live embers were put upon his head, but, whereas he still gave God thanks, he was whipped again, and hung up naked by the feet, in such wise that a thick smoke from a fire kindled under his face might pour into his mouth. Afterwards, boiling water was poured upon his belly, and his jaws were broken. Then presently the judge fell from his judgement seat, and shortly after died. Whereupon the Emperor was enraged, and commanded the holy youth to be thrown to wild beasts, but these dared not to touch him, and he was stricken by the sword at Palestrina.
-&teDeum

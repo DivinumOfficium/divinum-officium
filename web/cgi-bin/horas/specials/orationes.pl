@@ -265,10 +265,10 @@ sub oratio {
           }
           if ($ic !~ /^!/) { $ic = "!$ic"; }
           $ccind++;
-          my $key =
-              ($ic =~ /$sundaystring/i)
-            ? ($version !~ /trident/i ? 3000 : 7100)
-            : $ccind + 9900;    # Sundays are all privilegde commemorations under DA
+          my $key = ($ic =~ /$sundaystring/i)
+            ? ($version !~ /trident/i ? 3000 : 7100)    # Sundays are all privilegde commemorations under DA
+            : ($ic =~ /$octavestring/i) ? $ccind + 7900
+            : $ccind + 9900;
           $cc{$key} = $ic;
           setbuild2("Commemorated: $key");
         }
@@ -381,10 +381,17 @@ sub oratio {
 
         my $key = 0;    # let's start with lowest rank
         if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
-        $c = getcommemoratio($commemo, $cv, $lang);
+        %c = %{officestring('Latin', $commemo, 0)};
+
+        if ($c{Rank} =~ /in.*octavam/i && $octvespera) {
+          $c = getcommemoratio($commemo, $octvespera, $lang);
+          setbuild2("Substitute Commemoratio of Octave to $octvespera");
+        } else {
+          $c = getcommemoratio($commemo, $cv, $lang);
+        }
         my $c2 = $cv == 2 ? vigilia_commemoratio($commemo, $lang) : '';
         $c ||= $c2;
-        %c = %{officestring($lang, $commemo, 0)};
+        %c = %{officestring($lang, $commemo, 0)} unless $lang eq 'Latin';
 
         if ($c) {
           my @cr = split(";;", $c{Rank});
@@ -397,7 +404,7 @@ sub oratio {
           } else {
             $key = $cr[2] * 1000;    # rank depending on the type of commemoration to be made
           }
-          $key = 10000 - $key + $cv;    # reverse order
+          $key = 10000 - $key + $ccind;    # reverse order
           $ccind++;
           $cc{$key} = $c;
           setbuild2("Commemoratio: $key");
@@ -733,6 +740,175 @@ sub getsuffragium {
   }
   if ($churchpatron) { $suffr =~ s/r\. N\./$churchpatron/; }
   ($suffr, $comment);
+}
+
+#*** getrefs($w, $lang, $ind)
+# $w may contain line starting with @ reference
+# @Feria: reference from Psalterium/Major Special: Day$dayofweek Ant|Versum 2|3
+# filename:commemoratio reference from file/Commemoratio [1|2]
+# filename:oratio proper Ant|Versum $ind from file
+# filename:item collects item from file
+# return the expanded string
+# useable for lectio, responsory, commemoratio
+sub getrefs {
+
+  my $w = shift;
+  my $lang = shift;
+  my $ind = shift;
+  my $rule = shift;
+  my $file = '';
+  my $item = '';
+  my $flag = 0;
+  my %s = {};
+  my %c = {};
+
+  while (
+    $w =~ /
+    (.*?)               # Prelude
+    \@([a-z0-9\/\-]+?)  # Filename
+    \:([a-z0-9 ]*)      # Item
+    (?::(.*))?          # Substitutions
+    (.*)                # Sequel
+    /isx
+  ) {
+    $before = $1;
+    $file = $2;
+    $item = $3;
+    $after = $5;
+    my $substitutions = $4;
+    $item =~ s/\s*$//;
+
+    if ($file =~ /^feria$/i) {
+      %s = %{setupstring($lang, 'Psalterium/Major Special.txt')};
+      my $a = chompd($s{"Day$dayofweek Ant $ind"});
+      if (!$a) { $a = "Day$dayofweek Ant $ind missing"; }
+      my $v = chompd($s{"Day$dayofweek Versum $ind"});
+      if (!$v) { $a = "Day$dayofweek Versus $ind missing"; }
+      $a =~ s/\s*\*\s*/ /;
+      $w = $before . "_\nAnt. $a" . "_\n$v" . "_\n$after";
+      do_inclusion_substitutions($a, $substitutions);
+      do_inclusion_substitutions($v, $substitutions);
+      next;
+    }
+    if ($dayname[0] =~ /Pasc/i) { $file =~ s/(C[23])/$1p/g; }
+    %s = %{setupstring($lang, "$file.txt")};
+
+    if ($item =~ /(commemoratio|Octava)/i) {
+      my $ita = $1;
+      my $a = $s{"$ita"};
+      if (!$a) { $a = $s{"$ita $ind"}; }
+      if (!$a) { my $i = ($ind == 2) ? 1 : 2; $a = $s{"$ita $i"}; }
+      if (!$a) { $a = "$file $item $ind missing\n"; }
+      $flag = 1;
+
+      if ($a =~ /\!.*?(octava|commemoratio)(.*?)\n/i) {
+        my $oct = $2;
+
+        if ($octavam =~ /$oct/) {
+          $flag = 0;
+        } else {
+          $octavam .= $oct;
+        }
+      }
+
+      if ($flag) {
+        do_inclusion_substitutions($a, $substitutions);
+        $a = "$a" . "_\n";
+      } else {
+        $a = '';
+      }
+      $w = "$before$a$after";
+      next;
+    }
+
+    if ($item =~ /oratio/i) {
+
+      if ($s{Rank} =~ /;;(ex|vide)\s+(.*)\s*$/i) {
+        my $file = $2;
+        if ($file =~ /^C[1-3]a?$/ && $dayname[0] =~ /Pasc/i) { $file .= 'p'; }
+        $file = "$file.txt";
+        if ($file =~ /^C/) { $file = subdirname('Commune', $version) . "$file"; }
+        %c = %{setupstring($lang, $file)};
+
+        if ($c{Rank} =~ /;;(ex|vide)\s+(.*)\s*$/i) {
+
+          # allow daisy-chained Commune references to the second-level
+          $file = $2;
+          if ($file =~ /^C[1-3]a?$/ && $dayname[0] =~ /Pasc/i) { $file .= 'p'; }
+          $file = "$file.txt";
+          if ($file =~ /^C/) { $file = subdirname('Commune', $version) . "$file"; }
+          my %c2 = %{setupstring($lang, $file)};
+
+          $c{Oratio} ||= $c2{Oratio};
+
+          foreach my $i (1, 2, 3) {
+            $c{"Ant $i"} ||= $c2{"Ant $i"};
+            $c{"Versum $i"} ||= $c2{"Versum $i"};
+          }
+        }
+      } else {
+        %c = {};
+      }
+
+      my $a = chompd($s{"Ant $ind"}) || chompd($c{"Ant $ind"});
+      if (!$a) { $a = "$file Ant $ind missing\n"; }
+      postprocess_ant($a, $lang);
+      my $v = chompd($s{"Versum $ind"}) || chompd($c{"Versum $ind"});
+      if (!$v) { $a = "$file Versus $ind missing\n"; }
+      postprocess_vr($v, $lang);
+      my $o = '';
+
+      if ($item !~ /proper/) {
+        my $i = $item;
+        $i =~ s/\sgregem.*//i;
+        $o = $s{$i} || $c{$i};
+
+        if (!$o) {
+          $o = "$file:$item missing\n";
+        } elsif ($o !~ /\$Oremus/i) {
+          $o = "\$Oremus\n$o";
+        }
+      }
+
+      # Special processing for Common of Supreme Pontiffs.
+      my ($plural, $class, $name) = papal_commem_rule($rule);
+
+      if ($name) {
+        if ($version !~ /Trident/i) {
+          if ($item =~ /Gregem/i) {
+            $o = papal_prayer($lang, $plural, $class, $name);
+
+            if ($after =~ /(!Commem.*)/is) {
+              $after = $1;
+            } else {
+              $after = '';
+            }
+            $o = "\$Oremus\n" . $o;
+          }
+
+          # Confessor-Popes have a common Magnificat antiphon at second Vespers.
+          if ($popeclass && $popeclass =~ /C/ && $ind == 3) { $a = papal_antiphon_dum_esset($lang); }
+        } else {
+          if ($o =~ /N\./) { $o = replaceNdot($o, $lang, $name); }
+        }
+      }
+      do_inclusion_substitutions($a, $substitutions);
+      do_inclusion_substitutions($v, $substitutions);
+      do_inclusion_substitutions($o, $substitutions);
+      $a =~ s/\s*\*\s*/ /;
+      $w = $before . "\nAnt. $a\n" . "_\n$v" . "_\n$o" . "_\n$after";
+      next;
+    }
+    my $a = $s{$item};
+    if ($after && $after !~ /^\s*$/) { $after = "_\n$after"; }
+    if ($before && $before !~ /^\s*$/) { $before .= "_\n"; }
+    if (!$a) { $a = "$file $item missing\n"; }
+    do_inclusion_substitutions($a, $substitutions);
+    $w = $before . $a . $after;
+    next;
+  }
+  $w =~ s/\_\n\_/\_/g;
+  return $w;
 }
 
 1;

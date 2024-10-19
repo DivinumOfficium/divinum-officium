@@ -726,7 +726,10 @@ sub concurrence {
     $cwrank[2] = $crank = $version =~ /trident/i ? 2.9 : 4.9;
   }
 
-  if ($cwrank[0] =~ /in.*octava/i && $wrank[0] =~ /Dominica/i && $version =~ /divino/i) {
+  if ( $cwrank[0] =~ /in.*octava/i
+    && ($wrank[0] =~ /Dominica/i || ($winner =~ /Sancti/ && $wrank !~ /in.*octava/i))
+    && $version =~ /divino/i)
+  {
     $octvespera = 1;    # Commemoration of resumed Octave on Sunday from 1st Vespers (Divino only)
   } elsif ($cwrank[0] =~ /Dominica/i && $trank[0] =~ /in.*octava/i) {
     $octvespera = 3;    # Commemoration of Octave on Saturday from 2nd Vespers
@@ -1287,7 +1290,7 @@ sub precedence {
   $date1 =~ s/\//\-/g;
   ($month, $day, $year) = split('-', $date1);
 
-  my $dayofweek = day_of_week($day, $month, $year);
+  our $dayofweek = day_of_week($day, $month, $year);
 
   if ($month < 1 || $month > 12 || $day < 1 || $day > 31) {
     error("Wrong date $date1 using today");

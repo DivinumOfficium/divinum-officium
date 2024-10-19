@@ -14,32 +14,32 @@ S. Roque, Confessor
 ! 3 classe
 ! Paramentos brancos
 
-[Introitus]
-@Commune/C2a:Introitus
-
 [Oratio]
 Que a vossa Igreja, ó Deus, rejubile com a confiança que lhe dão os sufrágios do B. Agapito, vosso Mártir, e que pelas suas gloriosas preces persevere na piedade e se conserve na paz.
 $Per Dominum
 
-[Lectio]
-@Commune/C2a:Lectio
-
-[Graduale]
-@Commune/C2a:Graduale
+[Introitus]
+@Commune/C2a:Introitus
 
 [Evangelium]
 @Sancti/08-10:Evangelium
-
-[Offertorium]
-@Commune/C2a:Offertorium
 
 [Secreta]
 Recebei, Senhor, as ofertas que Vos apresentamos na festa daquele por cuja protecção esperamos ser livres.
 $Per Dominum
 
-[Communio]
-@Commune/C2a:Communio
+[Lectio]
+@Commune/C2a:Lectio
 
 [Postcommunio]
 Saciastes, Senhor, a vossa família com os sacrossantos dons; e, Vos suplicamos, fortalecei-a sempre pela intercessão daquele cuja festa celebramos.
 $Per Dominum
+
+[Graduale]
+@Commune/C2a:Graduale
+
+[Offertorium]
+@Commune/C2a:Offertorium
+
+[Communio]
+@Commune/C2a:Communio
