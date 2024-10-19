@@ -1,16 +1,24 @@
 [Rank]
 S. Damasi Papæ et Confessoris;;Semiduplex;;2.5;;vide C4b
 
-[Rank1960]
+[Rank] (rubrica 196)
 S. Damasi Papæ et Confessoris;;Duplex;;3;;vide C4b
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 S. Damasi Papæ et Confessoris;;Semiduplex;;2.5;;vide C4b
 
 [Rule]
 OPapaC=Dámasum;
 vide C4;
 Gloria
+
+[Commemoratio Oratio]
+!Pro Octava Conceptionis Immaculatæ.
+@Sancti/12-08:Oratio
+
+[Commemoratio Secreta]
+!Pro Octava
+@Sancti/12-08:Secreta
 
 [Introitus]
 !Joann 21:15; 21:16; 21:17
@@ -20,13 +28,13 @@ Je vous exalterai, Seigneur, parce que vous m’avez relevé, et que vous n’av
 &Gloria
 v. Si tu m’aimes, Simon Pierre, conduis mes agneaux, conduis mes brebis.
 
+[Commemoratio Postcommunio]
+!Pro Octava
+@Sancti/12-08:Postcommunio
+
 [Oratio]
 Pasteur éternel de l’Église, regardez avec bienveillance votre troupeau, protégez-le et gardez-le toujours. Nous vous le demandons par le bienheureux Pape Damase que vous avez placé comme berger à la tête de l’Église.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Pro Octava Conceptionis Immaculatæ.
-@Sancti/12-08:Oratio
 
 [Lectio]
 Léctio Epístolæ beáti Petri Apóstoli.
@@ -43,7 +51,7 @@ Tu es Pierre, et sur cette pierre je bâtirai mon Église. Alléluia.
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Matthǽum.
 !Matt 16:13-19
-En ce temps-là : Jésus, étant venu dans la région de Césarée de Philippe, interrogeait ainsi ses disciples : "Qui dit-on qu’est le Fils de l’homme ?" Ils dirent : "Les uns Jean le Baptiste, d’autres Elie, d’autres Jérémie ou l’un des prophètes." Il leur dit : "Et vous, qui dites-vous que je suis ?" Simon Pierre, prenant la parole, dit : "Vous êtes le Christ, le Fils du Dieu vivant." Jésus lui répondit : "Tu es heureux, Simon Fils de Jona, car ce n’est pas la chair et le sang qui te l’ont révélé, mais mon Père qui est dans les cieux. Et moi, je te dis que tu es Pierre, et sur cette pierre je bâtirai mon Eglise, et les portes de l’enfer ne prévaudront point contre elle. Et je te donnerai les clefs du royaume des cieux : tout ce que tu lieras sur la terre sera lié dans les cieux, et tout ce que tu délieras sur la terre sera délié dans les cieux."
+En ce temps-là : Jésus, étant venu dans la région de Césarée de Philippe, interrogeait ainsi ses disciples : « Qui dit-on qu’est le Fils de l’homme ?» Ils dirent : « Les uns Jean le Baptiste, d’autres Elie, d’autres Jérémie ou l’un des prophètes.» Il leur dit : « Et vous, qui dites-vous que je suis ?» Simon Pierre, prenant la parole, dit : « Vous êtes le Christ, le Fils du Dieu vivant.» Jésus lui répondit : « Tu es heureux, Simon Fils de Jona, car ce n’est pas la chair et le sang qui te l’ont révélé, mais mon Père qui est dans les cieux. Et moi, je te dis que tu es Pierre, et sur cette pierre je bâtirai mon Eglise, et les portes de l’enfer ne prévaudront point contre elle. Et je te donnerai les clefs du royaume des cieux : tout ce que tu lieras sur la terre sera lié dans les cieux, et tout ce que tu délieras sur la terre sera délié dans les cieux.»
 
 [Offertorium]
 !Jerem 1:9-10
@@ -53,10 +61,6 @@ C’est moi qui parle par ta bouche : je t’ai établi au dessus des peuples et
 Grâce à l’offrande de ces presents, accordez Seigneur, la lumière à votre Eglise ; faites prospérer partout votre troupeau, et daignez diriger ses pasteurs pour qu’ils vous soient agréables.
 $Per Dominum
 
-[Commemoratio Secreta]
-!Pro Octava
-@Sancti/12-08:Secreta
-
 [Communio]
 !Matt 16:18
 Tu es Pierre, et sur cette pierre je bâtirai mon Église.
@@ -64,7 +68,3 @@ Tu es Pierre, et sur cette pierre je bâtirai mon Église.
 [Postcommunio]
 Seigneur, dirigez avec amour votre Église qui vient de se nourrir à cette table sainte, pour que, sous votre conduite toute-puissante, elle voie grandir sa liberté, et garde la religion dans toute sa pureté.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro Octava
-@Sancti/12-08:Postcommunio

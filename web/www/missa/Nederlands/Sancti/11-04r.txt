@@ -1,20 +1,9 @@
-[Rank]
-S. Caroli Episcopi et Confessoris;;Duplex;;3;;vide C4
-
 [Rule]
 vide C4;
 9 lectiones
 
 [Introitus]
 @Commune/C2c
-
-[Oratio]
-@Sancti/11-04
-
-[Commemoratio Oratio]
-!Pro Ss. Vitale et Agrícola Martyribus
-Wij vragen U, almachtige God, laat ons, die het feest vieren van uw heilige martelaren Vitalis en Agricola, de hulp van hun voorspraak bij U mogen ondervinden.
-$Per Dominum
 
 [Lectio]
 @Commune/C4
@@ -28,19 +17,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C2b
 
-[Secreta]
-@Commune/C4
-
-[Commemoratio Secreta]
-!Pro Ss. Vitale et Agrícola Martyribus
-@Commune/C3b:Secreta:s/N\. en N\./Vitalis en Agricola/
-
 [Communio]
 @Commune/C4
-
-[Postcommunio]
-@Commune/C4:Postcommunio:s/N\./Carolus/
-
-[Commemoratio Postcommunio]
-!Pro Ss. Vitale et Agrícola Martyribus
-@Commune/C3b:Postcommunio:s/N\. en N\./Vitalis en Agricola/
