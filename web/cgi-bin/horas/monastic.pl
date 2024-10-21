@@ -502,6 +502,6 @@ sub regula {
   }
 
   $t .= "\n\$Tu autem";
-  $t .= "\n_\n" . prayer("rubrica Regula", $lang) . "\n";
+  $t .= "\n_\n\$rubrica Regula\n";
   return $t;
 }
