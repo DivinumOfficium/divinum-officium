@@ -265,24 +265,26 @@ sub specials {
     }
 
     if ($item =~ /Antiphona finalis/) {
-      
+
       if ($version =~ /^Ordo Praedicatorum/) {
         push(@s, '#' . translate('Antiphonae finalis', $lang));
         push(@s, '$ant Salve Regina');
       } else {
         push(@s, '#' . translate('Antiphona finalis BMV', $lang));
-        if ($dayname[0] =~ /Adv|Nat/i
+
+        if ( $dayname[0] =~ /Adv|Nat/i
           || $month == 1
           || ($month == 2 && $day < 2)
-          || ($month == 2 && $day == 2 && $hora !~ /Completorium/i)) {
-            push(@s, '$ant Alma Redemptoris Mater');
-          } elsif (($month == 2 || $month == 3 || $dayname[0] =~ /Quad/i) && $dayname[0] !~ /Pasc/i) {
-            push(@s, '$ant Ave Regina caelorum');
-          } elsif ($dayname[0] =~ /Pasc/) {
-            push(@s, '$ant Regina caeli');
-          } else {
-            push(@s, '$ant Salve Regina');
-          }
+          || ($month == 2 && $day == 2 && $hora !~ /Completorium/i))
+        {
+          push(@s, '$ant Alma Redemptoris Mater');
+        } elsif (($month == 2 || $month == 3 || $dayname[0] =~ /Quad/i) && $dayname[0] !~ /Pasc/i) {
+          push(@s, '$ant Ave Regina caelorum');
+        } elsif ($dayname[0] =~ /Pasc/) {
+          push(@s, '$ant Regina caeli');
+        } else {
+          push(@s, '$ant Salve Regina');
+        }
       }
       push(@s, '&Divinum_auxilium');
       next;

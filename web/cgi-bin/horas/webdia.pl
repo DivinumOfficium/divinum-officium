@@ -495,6 +495,7 @@ sub setcell {
 
   return unless ($text && $text !~ /^[_\s]+$/);
   $text = resolve_refs($text, $lang);
+  return unless $text;    # No empty cells in 'Lineamenta'
 
   if (!$Ck) {
     if (columnsel($lang)) {
@@ -650,6 +651,7 @@ sub linkcode {
   # We need to mask paranthesis to be passed via JavaScript to popup.pl
   $name =~ s/\(/\&lpar/;
   $name =~ s/\)/\&rpar/;
+  $name =~ s/\'/\&apos/g;
   return "<INPUT TYPE='RADIO' NAME='link' $disabled onclick='linkit(\"$name\", $ind, \"$lang\");'>";
 }
 

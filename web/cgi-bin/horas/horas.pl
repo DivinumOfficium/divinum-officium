@@ -420,9 +420,63 @@ sub setlink {
 
   # Get index into translation table for the short text.
   $name = get_link_name($name);
-  $name = translate($name, $lang) unless ($name =~ /^\#/);
-  $name .= $suffix;
-  $name =~ s/[\#\$\&]//g;
+
+  if ($name =~ /^\&(psalm|lectio)(?:[(](.*)[)])?$/) {
+    my ($function_name, $arg_string) = ($1, $2);
+    $arg_string =~ /\-?(\d+)/;
+    my $num = $1;
+
+    if ($function_name eq 'psalm' && $num <= 150) {
+      $arg_string =~ /\,\'?([0-9a-z]+)\'?\,?\'?([0-9a-z]+)\'?/;
+      $name = translate('Psalmus', $lang) . " $num";
+      $name .= $2 ? ":$1\&thinsp;\&ndash;\&thinsp;$2\&thinsp;" : '';
+    } else {
+      my @args = (parse_script_arguments($arg_string), $lang);
+      my @fulltext = split("\n", dispatch_script_function($function_name, @args));
+
+      if ($function_name eq 'psalm') {
+
+        # Canticles
+        $fulltext[0] =~ s/.*?I\>([\w\s]+?)\<.*/$1/u;    # remove formatting
+        $fulltext[1] =~ s/\!(.*)$/ \($1\)/;             # reformat Biblica source
+        $name = $fulltext[0] . $fulltext[1];
+      } else {
+
+        # Lectios
+        my ($incipit, $source, $verbum);
+
+        if ($fulltext[3] =~ /\<I\>([\w\s]+?)\<\/I\>/) {
+
+          # Commemoratio
+          $source = $1;
+        } elsif ($fulltext[3] =~ /^\!(.*)/) {
+
+          # No Lesson title but Source
+          $source = $1;
+        } elsif ($fulltext[4] =~ /^\!(.*)/ || $fulltext[4] =~ /(\_)/) {
+
+          # Lesson title and potentially Source
+          $source = $1;
+          $incipit = $fulltext[3];
+          $incipit =~ s/^v\. //i;
+        } else {
+
+          # Pure reading
+          $verbum = $fulltext[3];
+          $verbum =~ s/^v\. (\w+).*/$1 …/i;
+        }
+        $source =~ s/\!(.*)$/ \($1\)/;    # reformat source
+        $name = $incipit ? $source ne '_' ? "$incipit ($source)" : $incipit : $source;
+        $name ||= $verbum;
+      }
+
+      #$error .= dispatch_script_function($function_name, @args);
+    }
+  } else {
+    $name = translate($name, $lang) unless ($name =~ /^\#/);
+    $name .= $suffix;
+    $name =~ s/[\#\$\&]//g;
+  }
   my $after = '';
 
   if ($name =~ /(.*?)(<input.*)/i) {

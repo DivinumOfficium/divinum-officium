@@ -79,11 +79,11 @@ sub capitulum_prima {
 
 sub get_prima_responsory {
   my $lang = shift;
-  
+
   our ($version, $month, $day, %commemoratio, $rule);
-  
+
   my $key = gettempora('Prima responsory');
-  
+
   if ( $rule =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i
     || $commemoratio{Rule} =~ /Doxology=(Nat|Epi|Pasch|Asc|Corp|Heart)/i)
   {
@@ -91,38 +91,39 @@ sub get_prima_responsory {
   } elsif ($version !~ /196/ && $month == 8 && $day > 15 && $day < 23) {
     $key = 'Nat';
   }
-  
+
   if ($version =~ /196/ && $month == 12 && $day > 8 && $day < 16 && $version !~ /Newcal/ && $day !~ 12) {
     $key = 'Adv';
   }
-  
+
   if ($version =~ /196/ && $key =~ /Corp|Heart/) { $key = ''; }
   return '' unless $key;
-  
+
   my %t = %{setupstring($lang, 'Psalterium/Special/Prima Special.txt')};
   return $t{"Responsory $key"};
 }
 
 #*** martyrologium($lang)
 #returns the text of the martyrologium for the day
-sub martyrologium  {
+sub martyrologium {
+
   my $lang = shift;
-  
-  our($version, $year, $month, $day, $dayofweek);
-  
+
+  our ($version, $year, $month, $day, $dayofweek);
+
   my $t = '';    # Title and Comment is now set in specials.pl for #Martyrolgium
-  
+
   my $a = getweek($day, $month, $year, 1) . "-" . (($dayofweek + 1) % 7);
   my %a = %{setupstring($lang, "Martyrologium/Mobile.txt")};
-  
+
   if ($version =~ /1570/ && $lang =~ /Latin/i) {
     %a = %{setupstring($lang, "Martyrologium1570/Mobile.txt")};
   }
-  
+
   if ($version =~ /1960|Newcal/ && $lang =~ /Latin/i) {
     %a = %{setupstring($lang, "Martyrologium1960/Mobile.txt")};
   }
-  
+
   if ($version =~ /1955/ && $lang =~ /Latin/i) {
     %a = %{setupstring($lang, "Martyrologium1955R/Mobile.txt")};
   }
@@ -133,13 +134,13 @@ sub martyrologium  {
   if ($a =~ /Pasc0\-1/i) { $hd = 1; }
   if ($winner{Rank} =~ /ex C9/i && exists($a{'Defuncti'})) { $mobile = $a{'Defuncti'}; $hd = 1; }
   if ($month == 11 && $day == 14 && $version =~ /Monastic/i) { $mobile = $a{'DefunctiM'}; $hd = 1; }
-  
+
   #if ($month == 12 && $day == 25 && exists($a{'Nativity'})) {$mobile = $a{'Nativity'}; $hd = 1;}
   if ($hd == 1) { $t = "v. $mobile" . "_\n$t"; $mobile = ''; }
   my $fname = nextday($month, $day, $year);
   my ($m, $d) = split('-', $fname);
   my $y = ($m == 1 && $d == 1) ? $year + 1 : $year;
-  
+
   if ($version =~ /1570/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1570/$fname.txt")) {
     $fname = "$datafolder/Latin/Martyrologium1570/$fname.txt";
   } elsif ($version =~ /1960|Newcal/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1960/$fname.txt")) {
@@ -149,13 +150,13 @@ sub martyrologium  {
   } else {
     $fname = checkfile($lang, "Martyrologium/$fname.txt");
   }
-  
+
   if (my @a = do_read($fname)) {
     my ($luna, $mo) =
-    ($year >= 1900 && $year < 2200)
-    ? gregor($m, $d, $y, $lang)
-    : luna($m, $d, $y, $lang);
-    
+      ($year >= 1900 && $year < 2200)
+      ? gregor($m, $d, $y, $lang)
+      : luna($m, $d, $y, $lang);
+
     if ($lang =~ /Latin/i) {
       $a[0] .= " $luna";
     } else {
@@ -164,14 +165,14 @@ sub martyrologium  {
         foreach (@a) {
           last FINDDATE if s/^U[p]+on.*?$mo[, ]*/$luna /i;
         }
-        
+
         # Put $luna at the start if and only if we didn't find a
         # suitable substitution in the loop above.
         unshift(@a, $luna, "_\n");
       }
     }
     my $prefix = "v. ";
-    
+
     foreach my $line (@a) {
       if (length($line) > 3 && $line !~ /^\/\:/) {    # allowing /:rubrics:/ in Martyrology
         $t .= "$prefix$line\n";
@@ -179,7 +180,7 @@ sub martyrologium  {
         $t .= "$line\n";
       }
       $prefix = "r. ";
-      
+
       if ($mobile && $line =~ /\_/) {
         $t .= "$prefix$mobile";
         $mobile = '';
@@ -189,6 +190,5 @@ sub martyrologium  {
   $t .= prayer('Conclmart', $lang);
   return $t;
 }
-
 
 1;

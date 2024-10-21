@@ -98,10 +98,14 @@ load_languages_data($lang1, $lang2, $version, $missa);
 # We need to revert the masked parantheses at this point
 $popup =~ s/\&lpar/\(/;
 $popup =~ s/\&rpar/\)/;
+$popup =~ s/\&apos/\'/g;
 my $title = $popup;
 $title =~ s/^[\$\&]?([a-z])/\u$1/;
-$title =~ s/,/ /;
-$title =~ s/,/-/;
+$title =~ s/\-//;
+$title =~ s/,/:/;
+$title =~ s/,/–/;
+$title =~ s/\'//g;
+$title =~ s/\(/ \(/;
 $title = translate(get_link_name($title), $lang1);
 $title =~ s/[\$\&]//;
 $expand = 'tota';
