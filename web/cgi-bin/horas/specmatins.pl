@@ -523,7 +523,8 @@ sub lectiones {
   my @a = get_absolutio_et_benedictiones($num, $lang);
 
   if ($rule !~ /Limit.*?Benedictio/i) {
-    push(@s, "\$Pater noster_");
+    push(@s, "\$rubrica Pater secreto");
+    push(@s, "\$Pater noster Et");
     push(@s, "Absolutio. $a[0]", '$Amen') unless $version =~ /^Ordo Praedicatorum/;
   } else {
     push(@s, "\$Pater totum secreto");
