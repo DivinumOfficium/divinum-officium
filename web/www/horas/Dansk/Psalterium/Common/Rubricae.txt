@@ -1,0 +1,57 @@
+[Pater secreto]
+/:«Fadervor« bedes stille indtil »Og led os ikke i fristelse:«.:/
+
+
+[Pater totum secreto]
+/:«Fadervor« bedes stille.:/
+
+[Pater post]
+/:Derefter siges kun «Fadervor» lydløst, medmindre der straks følger en anden Time.:/
+
+[Pater post V]
+/:Og er Embedet således afsluttet, siges kun «Fadervor» tavst.:/
+
+[Secreto]
+/:stille:/
+
+[Secreto a Laudibus]
+/:Hvis Matins og Lauds er adskilt, så siges der stille::/
+(sed rubrica monastica)
+/:På simple fester og på ferialistiske dage, og hvis Matins er adskilt fra Lauds, begynder man i stilhed::/
+
+[Clara voce]
+/:Derefter siges Versiklen med hørelig stemme::/
+
+[Secus absolute]
+/:Ellers startes timen direkte på følgende måde::/
+(sed rubrica ^Trident)
+/:Efter salmen:/ Te Deum laudamus /:eller sidste svarskrift er blevet reciteret, begynder timen direkte således::/
+
+[Matutinum]
+!Spring resten over, medmindre du beder %Lauds% separat.
+(sed rubrica tridentina)
+!Efter at salmen Te Deum laudamus eller den niende eller tredje responsorium er blevet reciteret, begynder man direkte med %Laudes%, med undtagelse af Julenat: i denne beder man Oratio og så fejres julemessen som det hedder. på det rette sted.
+
+[Matutinum] (rubrica monastica)
+!Spring resten over, medmindre du beder %Lauds% separat.
+(sed rubrica tridentina aut rubrica divino)
+!Spring resten over i kontorer med 12 lektioner, medmindre du beder %Lauds% separat. På simple højtider og på ferialistiske dage (det være sig med tre eller én læsning) bedes altid følgende.
+
+[Deinde secreto]
+/:Derefter siges stille:/
+
+[PAC ad Completorium]
+/:Hvis der lige efter Compline siges Matins, så:/ Fadervor, hilst Maria /:og:/ Credo, /:siges to gange, en gang hver for afslutningen af ​​kontoret den foregående dags embede og for begyndelsen af ​​embedet i den næste.:/
+
+[DefunctV]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! %Vesper for de Afdøde% bedes efter dagens Vesper.
+
+[DefunctM]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! %Matutin og Laudes for de Afdøde% bedes efter dagens Laudes.
+
+[examen]
+/:Nu følger en privat samvittighedsransagelse, eller et stille Fadervor.:/

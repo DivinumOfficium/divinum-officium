@@ -11,13 +11,13 @@ sub capitulum_major {
   $name = 'Capitulum Vespera 1' if $winner =~ /12-25/ && $vespera == 1;
   $name = 'Capitulum Vespera' if $winner =~ /C12/;
 
-  setbuild('Psalterium/Major Special', $name, 'Capitulum ord');
+  setbuild('Psalterium/Special/Major Special', $name, 'Capitulum ord');
 
   my ($capit, $c) = getproprium($name, $lang, $seasonalflag, 1);
   if (!$capit && !$seasonalflag) { ($capit, $c) = getproprium($name, $lang, 1, 1); }
 
   if (!$capit) {
-    my %capit = %{setupstring($lang, 'Psalterium/Major Special.txt')};
+    my %capit = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
     $name = gettempora('Capitulum major');
 
     if ($version =~ /Monastic/) {
@@ -80,7 +80,7 @@ sub capitulum_minor {
 
   our ($hora, $version, $votive, $seasonalflag, $label, $item);
 
-  my %capit = %{setupstring($lang, 'Psalterium/Minor Special.txt')};
+  my %capit = %{setupstring($lang, 'Psalterium/Special/Minor Special.txt')};
   my $name = gettempora('Capitulum minor') . " $hora";
   $name = 'Completorium' if $hora eq 'Completorium';
   $name .= 'M' if ($version =~ /Monastic/);
@@ -96,7 +96,7 @@ sub capitulum_minor {
     $capit .= "\n_\n$capit{'Versum 4'}";
   } else {
     $comment = $name =~ /Dominica|Feria/ ? 5 : 1;
-    setbuild('Psalterium/Minor Special', $name, 'Capitulum ord');
+    setbuild('Psalterium/Special/Minor Special', $name, 'Capitulum ord');
 
     #look for special from prorium the tempore or sancti
     # use Laudes for Tertia apart C12

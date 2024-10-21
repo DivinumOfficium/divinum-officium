@@ -1,7 +1,14 @@
 #Incipit
+(deinde dicuntur)
+$rubrica Secreto
+$Pater noster
+$Ave Maria
+$Credo
+_
+(sed rubrica 196 aut rubrica 1955 omittuntur)
 (deinde dicitur)
-$Pater Ave Credo
-(sed rubrica 196 aut rubrica 1955 omittitur)
+$rubrica Clara voce
+(sed die Epiphaniæ aut rubrica 196 aut rubrica 1955 omittitur)
 (deinde dicitur)
 $Domine labia 
 (sed rubrica monastica omittitur)
@@ -37,5 +44,5 @@ $rubrica Matutinum
 $Fidelium animae
 (sed rubrica ^Trident omittitur)
 
-$Pater noster
+$Pater totum secreto
 (sed rubrica 196 aut rubrica 1955 aut rubrica ^Trident omittitur)

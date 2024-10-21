@@ -1,0 +1,69 @@
+[Pater secreto]
+/:„Ojcze nasz” cicho do „I nie wódź nas”.:/
+
+
+[Pater totum secreto]
+/:„Ojcze nasz” cicho.:/
+
+[Credo secreto]
+/: „Wierzę” cicho do „Ciała zmartwychwstanie”. :/
+
+[Pater post]
+/:Odtąd po cichu odmawia się tylko „Ojcze nasz”, chyba że natychmiast nastąpi następna Godzina.:/
+
+[Pater post V]
+/:A jeśli w ten sposób zakończy się Oficjum, odmawia się po cichu tylko „Ojcze nasz”.:/
+
+[Secreto]
+/:bezgłośnie:/
+
+[Secreto a Laudibus]
+/:Jeśli Laudesy po za chórem są oddzielone od Jutrzni, mówi się w ciszy::/
+(sed rubrica monastica)
+/:W święta Simplex i dni powszednie oraz jeśli Jutrznia jest oddzielona od Laudesów, rozpoczyna się w ciszy::/
+
+[Clara voce]
+/:Następnie słyszalnym głosem odmawia się werset::/
+
+[Secus absolute]
+/:W przeciwnym razie godzina rozpoczyna się bezpośrednio w następujący sposób::/
+(sed rubrica ^Trident)
+/:Po hymnie:/ Te Deum laudamus /:lub odmówieniu ostatniego responsorium, godzina rozpoczyna się bezpośrednio w następujący sposób::/
+
+[Matutinum]
+!Opuścić resztę, jeśli %Laudesy% nie są odmawiane osobno.
+(sed rubrica tridentina)
+!Po odmówieniu hymnu Te Deum laudamus lub dziewiątego lub trzeciego responsorium rozpoczyna się bezpośrednio od %Laudesy%, z wyjątkiem Nocy Bożego Narodzenia: w tym czasie odmawia się Oratio, a następnie odprawia się Mszę Bożonarodzeniową obchodzony tak, jak podano w odpowiednim miejscu.
+
+[Matutinum] (rubrica monastica)
+!Opuścić resztę, jeśli %Laudesy% nie są odmawiane osobno.
+(sed rubrica tridentina aut rubrica divino)
+!Opuścić resztę w Oficjach 12 lekcji, jeśli %Laudesy% nie są odmawiane osobno. W święta Simplex i dni świąteczne (z trzema lub jednym czytaniem) zawsze odmawia się następującą modlitwę.
+
+[Deinde secreto]
+/:Następnie mówi się cicho:/
+
+[PAC ad Completorium]
+/:Jeśli zaraz po kompletie odmawia się Jutrznię, wówczas dwa razy odmawia się:/ Ojcze nasz, Zdrowaś Maryjo /:i:/ Credo, /:odmawia się dwukrotnie, raz na zakończenie Oficjum dnia poprzedniego i na początek Oficjum Następny.:/
+
+[DefunctV]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Po nieszporach dnia odmówić %Vesperae Defunctorum%.
+
+[DefunctM]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Po laudesach dnia odmówić %Matutinum et Laudes Defunctorum%.
+
+[Martyrologium] (rubrica monastica)
+/:Następnie w chórze czyta się Martyrologium, co jest chwalebne także poza chórem.:/
+
+[Regula] (rubrica monastica)
+/:Poza chórem chwalebne jest czytanie z Reguły; inaczej czyta się Czytanie krótkie.:/
+
+[examen]
+/:Rachunek sumienia lub Ojcze nasz całe po cichu:/
+
+[Preces flexis genibus]
+/:klęcząc:/

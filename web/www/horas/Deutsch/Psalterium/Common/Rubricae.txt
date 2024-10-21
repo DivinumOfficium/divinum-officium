@@ -1,0 +1,69 @@
+[Pater secreto]
+/:Das « Vater unser » wird still gebetet bis « Und führe uns nicht in Versuchung: »:/
+
+
+[Pater totum secreto]
+/:Das « Vater unser » wird gänzlich still gebetet.:/
+
+[Credo secreto]
+/:Das « Credo » wird still gebetet bis « Auferstehung des Fleisches. »:/
+
+[Pater post]
+/:Falls sich keine weitere Hore anschließt, ganz im Stillen::/
+
+[Pater post V]
+/:Falls hiermit das Officium endet, ganz im Stillen::/
+
+[Secreto]
+/:still:/
+
+[Secreto a Laudibus]
+/:Falls die Matutin von den Laudes getrennt sind, beginnt man im Stillen::/
+(sed rubrica monastica)
+/:An Simplex-Festen sowie an Ferialtagen, und falls die Matutin von den Laudes getrennt sind, beginnt man im Stillen::/
+
+[Clara voce]
+/:Im Anschluß mit hörbarer Stimme::/
+
+[Secus absolute]
+/:Andernfalls beginnt man die Hore direkt wie folgt:/
+(sed rubrica ^Trident)
+/:Nachdem der Hymnus:/ Te Deum laudamus /:oder das letzte Responsorium vorgetragen wurde, beginnt man die Hore direkt wie folgt::/
+
+[Matutinum]
+!Das Folgende betet man nur, wenn sich die %Laudes% nicht unmittelbar anschließen.
+(sed rubrica tridentina)
+!Nachdem der Hymnus Te Deum laudamus oder das neunte oder dritte Responsorium vorgetragen wurde, beginnt man direkt mit den %Laudes%, mit Ausnahme der Heiligen Nacht: in dieser betet man die Oratio und im Anschluß wird die Christmette zelebriert wie es an entsprechender Stelle angegeben ist.
+
+[Matutinum] (rubrica monastica)
+!Das Folgende betet man nur, wenn sich die %Laudes% nicht unmittelbar anschließen.
+(sed rubrica tridentina aut rubrica divino)
+!Das Folgende betet man in Offizien mit 12 Lesungen nur, wenn sich die %Laudes% nicht unmittelbar anschließen. An Simplexfesten und im Ferialoffizium (sei es mit drei oder einer Lesung) betet man das folgende stets.
+
+[Deinde secreto]
+/:Im Anschluß ganz im Stillen:/
+
+[PAC ad Completorium]
+/:Falls auf die Komplet direkt die Matutin folgen sollte, betet man das:/ Vater unser, Ave Maria, /:und:/ Credo /:zweimal: je einmal für das Ende des Offiziums des vergangenen Tages sowie für den Anfang des Offiziums des folgenden.:/
+
+[DefunctV]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Nach der Vesper des Tages wird die %Vesper für die Verstorbenen% gebetet.
+
+[DefunctM]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Nach den Laudes des Tages werden die %Matutinum und Laudes für die Verstorbenen% gebetet.
+
+[Martyrologium] (rubrica monastica)
+/:Danach wird in Choro das Martyrologium gelesen, wo es sich ziemt auch extra Chorum.:/
+
+[Regula] (rubrica monastica)
+/:Extra Chorum ziemt es sich ebenso aus der Hl. Regula zu lesen; andernfalls betet man die folgende Kurzlesung.:/
+
+[examen]
+/:Gewißenserforschung oder Vater unser (ganz im Stillen):/
+
+[Preces flexis genibus]
+/:kniend:/

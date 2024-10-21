@@ -247,7 +247,7 @@ v. Scimus quóniam diligéntibus Deum ómnia cooperántur in bonum, iis qui sec�
 @:Versum 1:1 s/V./R.br./ s/\, al.*/./
 @:Versum 1:1 s/V./R./ s/\, al.*/./
 @:Versum 1:2 s/R./V./ s/\, al.*/./
-@Psalterium/Prayers:Alleluia Duplex: s/^/R. /
+@Psalterium/Common/Prayers:Alleluia Duplex: s/^/R. /
 &Gloria
 @:Versum 1:1 s/V./R./ s/\, al.*/./
 
@@ -260,7 +260,7 @@ $Deo gratias
 @:Nocturn 2 Versum:1 s/V./R.br./ s/\, al.*/./
 @:Nocturn 2 Versum:1 s/V./R./ s/\, al.*/./
 @:Nocturn 2 Versum:2 s/R./V./ s/\, al.*/./
-@Psalterium/Prayers:Alleluia Duplex: s/^/R. /
+@Psalterium/Common/Prayers:Alleluia Duplex: s/^/R. /
 &Gloria
 @:Nocturn 2 Versum:1 s/V./R./ s/\, al.*/./
 
@@ -272,7 +272,7 @@ $Deo gratias
 @:Nocturn 3 Versum:1 s/V./R.br./ s/\, al.*/./
 @:Nocturn 3 Versum:1 s/V./R./ s/\, al.*/./
 @:Nocturn 3 Versum:2 s/R./V./ s/\, al.*/./
-@Psalterium/Prayers:Alleluia Duplex: s/^/R. /
+@Psalterium/Common/Prayers:Alleluia Duplex: s/^/R. /
 &Gloria
 @:Nocturn 3 Versum:1 s/V./R./ s/\, al.*/./
 

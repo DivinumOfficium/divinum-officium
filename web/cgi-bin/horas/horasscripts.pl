@@ -16,12 +16,6 @@ use DivinumOfficium::Scripting;
 my $precesferiales;
 $a = 1;
 
-#*** Pater noster($lang)
-# returns the text of the prayer without Amen, setting V. and R. to the last 2 lines
-sub pater_noster : ScriptFunc {
-  return prayer('Pater_noster1', shift());
-}
-
 #*** teDeum($lang)
 # returns the text of the hymn
 sub teDeum : ScriptFunc {
@@ -100,10 +94,10 @@ sub Dominus_vobiscum2 : ScriptFunc {    #* officium defunctorum
   return Dominus_vobiscum($lang);
 }
 
-sub MLitany2 : ScriptFunc {
+sub mLitany : ScriptFunc {
   my $lang = shift;
-  if (preces('Dominicales')) { return; }
-  return prayer('MLitany2', $lang);
+  if (preces('Dominicales')) { return ''; }
+  return "\$Kyrie\n\$Pater secreto";
 }
 
 #*** versiculum_ante_laudes($lang)
@@ -129,36 +123,6 @@ sub Benedicamus_Domino : ScriptFunc {
   } else {
     $text;
   }
-}
-
-#*** antiphona_finalis
-#return the text for the appropriate time
-sub antiphona_finalis : ScriptFunc {
-  my $lang = shift;
-  my $name;
-
-  if ($version =~ /^Ordo Praedicatorum/) {
-    $name = 'Ant Finalis OP';
-  } elsif ($dayname[0] =~ /adv/i && $winner{Rank} !~ /In Nativitate Domini/i) {
-    $name = 'Advent';
-  } elsif ($dayname[0] =~ /Nat/i
-    || ($month == 12 && $day > 23)
-    || $month == 1
-    || ($month == 2 && $day < 2)
-    || ($month == 2 && $day == 2 && $hora !~ /Completorium/i))
-  {
-    $name = 'Nativiti';
-  } elsif (($month == 2 || $month == 3 || $dayname[0] =~ /Quad/i) && $dayname[0] !~ /Pasc/i) {
-    $name = 'Quadragesimae';
-  } elsif ($dayname[0] =~ /Pasc/) {
-    $name = 'Paschalis';
-  } else {
-    $name = 'Postpentecost';
-  }
-  my %ant = %{setupstring($lang, "Psalterium/Mariaant.txt")};
-  my $t = $ant{$name};
-  $t = '#' . translate($name eq 'Ant Finalis OP' ? 'Antiphonae finalis' : 'Antiphona finalis BMV', $lang) . "\n$t";
-  return ($t);
 }
 
 #*** psalm($chapter, $lang, $antline)  or
@@ -379,92 +343,6 @@ sub Domine_labia : ScriptFunc {
     $text =~ s/\+\+ / /g;
   }
   $text;
-}
-
-#*** martyrologium($lang)
-#returns the text of the martyrologium for the day
-sub martyrologium : ScriptFunc {
-  my $lang = shift;
-  my $t = '';    # Title and Comment is now set in specials.pl for #Martyrolgium
-
-  my $a = getweek($day, $month, $year, 1) . "-" . (($dayofweek + 1) % 7);
-  my %a = %{setupstring($lang, "Martyrologium/Mobile.txt")};
-
-  if ($version =~ /1570/ && $lang =~ /Latin/i) {
-    %a = %{setupstring($lang, "Martyrologium1570/Mobile.txt")};
-  }
-
-  if ($version =~ /1960|Newcal/ && $lang =~ /Latin/i) {
-    %a = %{setupstring($lang, "Martyrologium1960/Mobile.txt")};
-  }
-
-  if ($version =~ /1955/ && $lang =~ /Latin/i) {
-    %a = %{setupstring($lang, "Martyrologium1955R/Mobile.txt")};
-  }
-  my $mobile = '';
-  my $hd = 0;
-  if (exists($a{$a})) { $mobile = "$a{$a}\n"; }
-  if ($month == 10 && $dayofweek == 6 && $day > 23 && $day < 31 && exists($a{'10-DU'})) { $mobile = $m{'10-DU'}; }
-  if ($a =~ /Pasc0\-1/i) { $hd = 1; }
-  if ($winner{Rank} =~ /ex C9/i && exists($a{'Defuncti'})) { $mobile = $a{'Defuncti'}; $hd = 1; }
-  if ($month == 11 && $day == 14 && $version =~ /Monastic/i) { $mobile = $a{'DefunctiM'}; $hd = 1; }
-
-  #if ($month == 12 && $day == 25 && exists($a{'Nativity'})) {$mobile = $a{'Nativity'}; $hd = 1;}
-  if ($hd == 1) { $t = "v. $mobile" . "_\n$t"; $mobile = ''; }
-  $fname = nextday($month, $day, $year);
-  my ($m, $d) = split('-', $fname);
-  my $y = ($m == 1 && $d == 1) ? $year + 1 : $year;
-
-  if ($version =~ /1570/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1570/$fname.txt")) {
-    $fname = "$datafolder/Latin/Martyrologium1570/$fname.txt";
-  } elsif ($version =~ /1960|Newcal/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1960/$fname.txt")) {
-    $fname = "$datafolder/Latin/Martyrologium1960/$fname.txt";
-  } elsif ($version =~ /1955/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1955R/$fname.txt")) {
-    $fname = "$datafolder/Latin/Martyrologium1955R/$fname.txt";
-  } else {
-    $fname = checkfile($lang, "Martyrologium/$fname.txt");
-  }
-
-  if (my @a = do_read($fname)) {
-    my ($luna, $mo) =
-      ($year >= 1900 && $year < 2200)
-      ? gregor($m, $d, $y, $lang)
-      : luna($m, $d, $y, $lang);
-
-    if ($lang =~ /Latin/i) {
-      $a[0] .= " $luna";
-    } else {
-    FINDDATE:
-      {
-        foreach (@a) {
-          last FINDDATE if s/^U[p]+on.*?$mo[, ]*/$luna /i;
-        }
-
-        # Put $luna at the start if and only if we didn't find a
-        # suitable substitution in the loop above.
-        unshift(@a, $luna, "_\n");
-      }
-    }
-    my $prefix = "v. ";
-
-    foreach $line (@a) {
-      if (length($line) > 3 && $line !~ /^\/\:/) {    # allowing /:rubrics:/ in Martyrology
-        $t .= "$prefix$line\n";
-      } else {
-        $t .= "$line\n";
-      }
-      $prefix = "r. ";
-
-      if ($mobile && $line =~ /\_/) {
-        $t .= "$prefix$mobile";
-        $mobile = '';
-      }
-    }
-  }
-  my $conclmart = prayer('Conclmart', $lang);
-  $conclmart =~ s/\_.*/ /si if $rule =~ /ex C9/;
-  $t .= $conclmart;
-  return $t;
 }
 
 #*** special($name, $lang)

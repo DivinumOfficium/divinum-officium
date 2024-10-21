@@ -32,7 +32,7 @@ sub psalmi_matutinum_monastic {
   our $psalmnum1 = our $psalmnum2 = -1;    # Psalm 3 as 0
 
   #** reads the set of antiphons-psalms from the psalterium
-  my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi matutinum.txt')};
+  my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi/Psalmi matutinum.txt')};
   my @psalmi = split("\n", $psalmi{"Daym$dayofweek"});
 
   if ($dayofweek == 5) {
@@ -46,7 +46,7 @@ sub psalmi_matutinum_monastic {
       $psalmi[12] =~ s/99!.*/99/;
     }
   }
-  setbuild("Psalterium/Psalmi matutinum monastic", "dayM$dayofweek", 'Psalmi ord');
+  setbuild("Psalterium/Psalmi/Psalmi matutinum monastic", "dayM$dayofweek", 'Psalmi ord');
   $comment = 1;
   my $prefix = translate('Antiphonae', $lang);
   my $name = gettempora('Psalmi Matutinum Monastic');
@@ -275,7 +275,7 @@ sub psalmi_matutinum_monastic {
 
   if (!$w) {
     my $name = gettempora('MM Capitulum');
-    my %s = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
+    my %s = %{setupstring($lang, 'Psalterium/Special/Matutinum Special.txt')};
     $w = $s{"MM Capitulum$name"};
   }
   postprocess_vr($w, $lang) if ($dayname[0] =~ /Pasc/);
@@ -316,7 +316,7 @@ sub absolutio_benedictio {
     $ben = $a[3 - ($i == 3)];
   }
 
-  push(@s, "\n", '&pater_noster', '_');
+  push(@s, "\n", '$Pater noster_', '_');
   push(@s, "Absolutio. $abs", '$Amen', "\n");
   push(@s, prayer('Jube domne', $lang));
   push(@s, "Benedictio. $ben", '$Amen', '_');
@@ -381,7 +381,7 @@ sub brevis_monastic {
     my %c = (columnsel($lang)) ? %commune : %commune2;
     $lectio = $c{"MM LB"};
   } else {
-    my %b = %{setupstring($lang, 'Psalterium/Matutinum Special.txt')};
+    my %b = %{setupstring($lang, 'Psalterium/Special/Matutinum Special.txt')};
     $lectio = $b{"MM LB" . (($dayname[0] =~ /Pasc/) ? " Pasch" : $dayofweek)};
   }
   $lectio =~ s/&Gloria1?/&Gloria1/;
@@ -502,6 +502,6 @@ sub regula {
   }
 
   $t .= "\n\$Tu autem";
-  $t .= "\n_\n" . prayer("rubrica Regula", $lang) . "\n";
+  $t .= "\n_\n\$rubrica Regula\n";
   return $t;
 }

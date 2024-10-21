@@ -159,9 +159,9 @@ sub oratio {
         )
       {    # OP ferial office
         if ($horamajor && $version !~ /Ordo Praedicatorum/) {
-          push(@s, prayer('MLitany', $lang), "_");
+          push(@s, '$Kyrie', '$Pater noster_', "_");
         } else {
-          push(@s, prayer('MLitany2', $lang), "_");
+          push(@s, '$Kyrie', '$pater secreto', "_");
         }
       }
 
@@ -632,7 +632,7 @@ sub getcommemoratio {
       && ( ($hora eq 'Vespera' && $day >= 17 && $day <= 23)
         || ($hora eq 'Laudes' && ($day == 21 || $day == 23)))
     ) {
-      my %v = %{setupstring($lang, 'Psalterium/Major Special.txt')};
+      my %v = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
 
       if ($hora eq 'Vespera') {
         $a = $v{"Adv Ant $day"};
@@ -696,7 +696,7 @@ sub vigilia_commemoratio {
   if (!$w) { return ''; }
   my $c = "!" . &translate('Commemoratio', $lang) . ": " . &translate("Vigilia", $lang) . "\n";
   if ($w =~ /(\!.*?\n)(.*)/s) { $c = $1; $w = $2; }
-  my %p = %{setupstring($lang, 'Psalterium/Major Special.txt')};
+  my %p = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
   my $a = $p{"Day$dayofweek Ant 2"};
   my $v = $p{"Day$dayofweek Versum 2"};
   $a =~ s/\s*\*\s*/ /;
@@ -708,7 +708,7 @@ sub getsuffragium {
   my $lang = shift;
 
   our ($version, @dayname, $hora, $commune, $month, $day, $churchpatron);
-  my %suffr = %{setupstring($lang, 'Psalterium/Major Special.txt')};
+  my %suffr = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
   my ($suffr, $comment);
 
   if ($version =~ /trident/i) {

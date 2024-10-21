@@ -1,7 +1,14 @@
 #Incipit
+(atque dicuntur semper)
+(deinde dicuntur)
+$rubrica Secreto a Laudibus
+$Pater noster
+$Ave Maria
+_
+(sed rubrica ^Trident omittuntur)
 (deinde dicitur)
-$Pater Ave L
-(sed rubrica 196 aut rubrica 1955 omittitur)
+$rubrica Secus absolute
+(atque rubrica 196 aut rubrica 1955 omittuntur)
 (rubrica Ordo Praedicatorum) &versiculum_ante_laudes
 $Deus in adjutorium
 &Alleluia
@@ -35,6 +42,5 @@ $Fidelium animae
 $Pater totum secreto
 $Dominus det
 
-&antiphona_finalis
-&Divinum_auxilium
+#Antiphona finalis
 (sed rubrica 196 aut rubrica 1955 omittuntur)

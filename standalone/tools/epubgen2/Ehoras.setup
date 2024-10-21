@@ -23,7 +23,7 @@ $noflexa='0';;
 bbtbbtcccccccnnbbbbb
 
 [general]
-$expand='psalms';;
+$expand='psalteria';;
 $version='Rubrics 1960 - 1960';;
 $lang2='English';;
 $accented='plain';;
@@ -32,7 +32,7 @@ $accented='plain';;
 oooo
 
 [generalc]
-$expand='psalms';;
+$expand='psalteria';;
 $version1='Divino Afflatu';;
 $version2='Rubrics 1960';;
 $lang2='English';;

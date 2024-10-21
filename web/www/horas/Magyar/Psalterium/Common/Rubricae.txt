@@ -1,0 +1,53 @@
+[Pater post]
+/:Ezután csak a «Pater Noster» szólal meg némán, hacsak nem következik azonnal újabb óra.:/
+
+[Pater post V]
+/:És ha így véget ér a Hivatal, csak a «Pater Noster» hangzik el némán.:/
+
+[Secreto]
+/:csendben:/
+
+[Secreto a Laudibus]
+/:Ha Matins és Lauds elválik, akkor némán kimondják::/
+(sed rubrica monastica)
+/:Simplex lakomákon és fergeteges napokon, és ha a Matins elkülönül a Lauds-tól, az ember csendben kezdődik::/
+
+[Clara voce]
+/:Ezután hallható hangon elhangzik a vers::/
+
+[Secus absolute]
+/:Egyébként az óra közvetlenül a következőképpen kezdődik::/
+(sed rubrica ^Trident)
+/:A himnusz után:/ Te Deum laudamus /:vagy az utolsó reszponzórium elhangzott, az óra közvetlenül a következőképpen kezdődik::/
+
+[Matutinum]
+!Hagyd ki a többit, kivéve ha a %Laudest% külön imádkozod.
+(sed rubrica tridentina)
+!A himnusz után Te Deum laudamus vagy a kilencedik vagy a harmadik reszponzórium elmondása után az ember közvetlenül a %Laudest%-szal kezdődik, a karácsony éjszakája kivételével: ebben az oratio imádkozik, majd a karácsonyi mise. a megfelelő helyen megünnepeljük.
+
+[Matutinum] (rubrica monastica)
+!Hagyd ki a többit, kivéve ha a %Laudest% külön imádkozod.
+(sed rubrica tridentina aut rubrica divino)
+!Hagyd ki a többit az Offices of 12 lessons-ban, kivéve ha a %Laudest% külön imádkozod. Simplex ünnepeken és lázas napokon (legyen az három vagy egy felolvasás) mindig a következőket imádkozzák.
+
+[Deinde secreto]
+/:Ezután némán kimondják:/
+
+[PAC ad Completorium]
+/:Ha közvetlenül a Compline után elhangzik a Matins, akkor:/ Miatyánk, Üdvözlégy Mária /:és:/ Credo, /:kétszer mondják el, egyszer az előző nap végére hivatalra és a hivatal kezdetére a következő.:/
+
+[DefunctV]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Mondd el a %halottak vesperáját%.
+
+[DefunctM]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Mondd el a %halottak officiumát%.
+
+[examen]
+/:Lelkiismeret-vizsgálatot tartunk vagy csendesen elimádkozzuk a Miatyánkot.:/
+
+[Preces flexis genibus]
+/:térdelve:/

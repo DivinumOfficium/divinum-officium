@@ -89,14 +89,14 @@ sub getpreces {
     $key = 'Dominicales';
   } elsif ($flag) {    # $hora eq Prima
     $src = 'Prima';
-    $key = 'Dominicales Prima ' . (($precdomfer + 1) % 2 + 1);
+    $key = 'Dominicales Prima ' . (($precdomfer + 1) % ($version =~ /^Monastic/ ? 1 : 2) + 1);
     $precdomfer++;
   } else {             # $hora eq Prima
     $src = 'Prima';
     $key = 'feriales Prima';
   }
 
-  my %brevis = %{setupstring($lang, "Psalterium/$src Special.txt")};
+  my %brevis = %{setupstring($lang, "Psalterium/Special/$src Special.txt")};
   $brevis{"Preces $key"};
 }
 

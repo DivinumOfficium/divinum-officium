@@ -21,7 +21,7 @@ use File::Basename;
 use Time::Local;
 
 use lib "$Bin/..";
-use DivinumOfficium::LanguageTextTools qw(prayer translate load_languages_data);
+use DivinumOfficium::LanguageTextTools qw(prayer rubric prex translate load_languages_data);
 
 #use DateTime;
 use locale;
@@ -98,13 +98,17 @@ load_languages_data($lang1, $lang2, $version, $missa);
 # We need to revert the masked parantheses at this point
 $popup =~ s/\&lpar/\(/;
 $popup =~ s/\&rpar/\)/;
+$popup =~ s/\&apos/\'/g;
 my $title = $popup;
 $title =~ s/^[\$\&]?([a-z])/\u$1/;
-$title =~ s/,/ /;
-$title =~ s/,/-/;
+$title =~ s/\-//;
+$title =~ s/,/:/;
+$title =~ s/,/–/;
+$title =~ s/\'//g;
+$title =~ s/\(/ \(/;
 $title = translate(get_link_name($title), $lang1);
 $title =~ s/[\$\&]//;
-$expand = 'all';
+$expand = 'tota';
 if ($popup =~ /\&/) { $popup =~ s/\s/\_/g; }
 $text = resolve_refs($popup, $lang1);
 $t = length($text);
