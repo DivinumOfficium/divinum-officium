@@ -80,7 +80,6 @@ R. Amen.
 
 [Oratio mortuorum2]
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
-&Dominus_vobiscum2
 _
 $Oremus
 v. Wylewamy, Panie, pokorne prośby za dusze wszystkich Twoich sług i służebnic; abyś łaskawie odpuścił, cokolwiek zawinili w ludzkim postępowaniu, i dobrotliwie uczynił kres ich karom.
@@ -99,8 +98,7 @@ $Credo
 
 &special('Oratio mortuorum2', 'Polski')
 
-#Martyrologium
-&martyrologium
+&special('#Martyrologium', 'Polski')
 _
 V. W wiecznéj pamiątce będzie sprawiedliwy.
 R. Nie będzie się bał posłuchu złego.
@@ -163,6 +161,6 @@ $Indulgentiam
 
 &psalm(233)
 
-&special('Oratio mortuorum1', 'Latin')
+&special('Oratio mortuorum1', 'English')
 
-&special('Conclusio', 'Latin')
+&special('Conclusio', 'Polski')

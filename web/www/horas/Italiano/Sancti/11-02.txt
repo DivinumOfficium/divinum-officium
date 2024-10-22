@@ -188,8 +188,7 @@ $Credo
 
 &special('Oratio mortuorum2', 'Italiano')
 
-#Martyrologium
-&martyrologium
+&special('#Martyrologium', 'Italiano')
 _
 V. I giusti saranno ricordati eternamente.
 R. Non temeranno di udire sinistre parole.

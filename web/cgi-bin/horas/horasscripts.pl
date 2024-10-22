@@ -355,6 +355,12 @@ sub special : ScriptFunc {
 
   if (exists($w{$name})) {
     $r = "!Special $name\n_\n" . chompd($w{$name}) . "\n";
+  } elsif ($name =~ /^\#/) {
+    my @scriptum = ();
+    push(@scriptum, $name);
+
+    @scriptum = specials(\@scriptum, $lang, 1);
+    $r = join("\n", @scriptum);
   } else {
     $r = "$name is missing";
   }

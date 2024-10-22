@@ -1,7 +1,5 @@
 [Litania]
-&Dominus_vobiscum
-&Benedicamus_Domino 
-!Litania dei Santi
+#Litania dei Santi
 v. Signore, pietà. Signore, pietà.                             
 Cristo, pietà. Cristo, pietà.
 v. Signore, pietà. Signore, pietà.
@@ -130,20 +128,11 @@ Cristo esaudiscici.
 Signore, pietà. Signore, pietà.
 Cristo, pietà. Cristo, pietà.
 Signore, pietà. Signore, pietà.
-_
+
 $Pater noster Et
 _
-!Salmo 69
-!(Salmo di David in memoria della liberazione ottenuta dal Signore.)
-Vieni, o Dio, in mio soccorso: Signore, affrettati ad aiutarmi.
-Siano confusi e svergognati, quei che cercano l'anima mia.
-Siano volti in fuga ed arrossiscano, quei che mi vogliono male.
-Siano volti in fuga subito e svergognati, quei che mi dicono: Bene, bene.
-Esultino e si rallegrino in te tutti quei che ti cercano: e quanti bramano da te la salute dicano sempre: Il Signore sia glorificato.
-Io per me son povero e bisognoso: o Dio, aiutami.
-Tu sei il mio aiuto e il mio liberatore: Signore, non tardare.
-&Gloria
-__
+&psalm(69)
+_
 V. Salva i tuoi servi.
 R. Che sperano in te, Dio mio.
 V. Sii per noi, o Signore, una torre inespugnabile. 
@@ -168,7 +157,7 @@ R. Da Sion manda la tua difesa.
 V. Signore, esaudisci la mia preghiera.
 R. E il mio grido giunga, a te.
 &Dominus_vobiscum1
-_
+
 !Preghiera
 $Oremus.
 v. Signore, di cui è proprio l'usar misericordia e perdonare, accetta la nostra preghiera; affinché noi e tutti i tuoi servi detenuti dai lacci del peccato siano pietosamente assolti dalla tua benigna bontà.

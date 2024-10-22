@@ -148,8 +148,7 @@ $Credo
 
 &special('Oratio mortuorum2', 'Magyar')
 
-#Martyrologium
-&martyrologium
+&special('#Martyrologium', 'Magyar')
 _
 V. Az igazak emleke örökké el
 R. Ab auditione mala non timebunt

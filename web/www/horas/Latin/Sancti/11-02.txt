@@ -34,7 +34,6 @@ $Ave Maria
 
 [Oratio mortuorum1]
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
-&Dominus_vobiscum2
 _
 $Oremus
 v. Propitiáre, quǽsumus, Dómine, animábus ómnium famulórum famularúmque tuárum, pro quibus majestátem tuam supplíciter exorámus: ut, per hæc piæ deprecatiónis offícia, perveníre mereántur ad réquiem sempitérnam.
@@ -108,7 +107,6 @@ R. Amen.
 
 [Oratio mortuorum2]
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
-&Dominus_vobiscum2
 _
 $Oremus
 v. Súpplices, Dómine, pro animábus ómnium famulórum famularúmque tuárum preces effúndimus: ut, quidquid conversatióne contraxérunt humána, clemens indúlgeas, et pœnis eórum finem benígnus impónas.
@@ -127,8 +125,7 @@ $Credo
 
 &special('Oratio mortuorum2', 'Latin')
 
-#Martyrologium
-&martyrologium
+&special('#Martyrologium', 'Latin')
 _
 V. In memória ætérna erunt justi.
 R. Ab auditióne mala non timébunt.

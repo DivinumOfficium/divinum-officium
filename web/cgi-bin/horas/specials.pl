@@ -21,6 +21,7 @@ require "$Bin/specials/specprima.pl";
 sub specials {
   my $s = shift;
   my $lang = shift;
+  my $special = shift;
   $octavam = '';    #check duplicate commemorations
   my %w = columnsel($lang) ? %winner : %winner2;
 
@@ -33,12 +34,13 @@ sub specials {
   }
 
   my $i = $hora eq 'Laudes' ? ' 2' : $hora eq 'Vespera' ? " $vespera" : '';
-  if (exists($w{"Special $hora$i"})) { return loadspecial($w{"Special $hora$i"}); }
+  if (!$special && exists($w{"Special $hora$i"})) { return loadspecial($w{"Special $hora$i"}); }
 
   our @s = ();
   my @t = @$s;
 
-  my ($skipflag, $tind);
+  our $litaniaflag;
+  my ($specialflag, $skipflag, $tind);
 
   while ($tind < @t) {
     $item = $t[$tind++];
@@ -265,6 +267,7 @@ sub specials {
     }
 
     if ($item =~ /Antiphona finalis/) {
+      next if $litaniaflag || $specialflag;
 
       if ($version =~ /^Ordo Praedicatorum/) {
         push(@s, '#' . translate('Antiphonae finalis', $lang));
@@ -314,10 +317,13 @@ sub specials {
         || $scriptura{Rule} =~ /Laudes Litania/i
         || $flag)
     ) {
-      my %w = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
+      my %w = %{setupstring($lang, 'Psalterium/Special/Preces.txt')};
       my $lname = $version =~ /Monastic/ ? 'LitaniaM' : 'Litania';
       if ($version =~ /1570/ && exists($w{LitaniaT})) { $lname = 'LitaniaT'; }
-      push(@s, $w{$lname});
+      push(@s, '$Domine exaudi', '&Benedicamus_Domino', '');
+      my @lit = split("\n\n", $w{$lname});
+      push(@lit, '', '');
+      push(@s, @lit[0, -1, 1, -2, 2]);
       setbuild1($item, 'Litania omnium sanctorum');
       $skipflag = 1;
       $litaniaflag = 1;
@@ -328,6 +334,7 @@ sub specials {
       my %w = columnsel($lang) ? %winner : %winner2;
       push(@s, $w{Conclusio});
       $skipflag = 1;
+      $specialflag = 1;
     }
 
     # Set special conclusion when Office of the Dead follows.
@@ -340,12 +347,14 @@ sub specials {
         push(@s, prayer('DefunctV', $lang));
         setbuild1($item, 'Recite Vespera defunctorum');
         $skipflag = 1;
+        $specialflag = 1;
       } elsif (($dirge || $winner{Rule} =~ /Matutinum et Laudes Defunctorum/)
         && $hora eq 'Laudes')
       {
         push(@s, prayer('DefunctM', $lang));
         setbuild1($item, 'Recite Officium defunctorum');
         $skipflag = 1;
+        $specialflag = 1;
       }
     }
   }
