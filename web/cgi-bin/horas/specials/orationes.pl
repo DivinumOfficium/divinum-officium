@@ -712,7 +712,7 @@ sub getsuffragium {
   my ($suffr, $comment);
 
   if ($version =~ /trident/i) {
-    if ($dayname[0] =~ /pasc/i && $dayname[1] =~ /(?:feria|vigilia)/i) {
+    if ($dayname[0] =~ /pasc/i) {
       $suffr = $hora eq 'Laudes' ? $suffr{"Suffragium2"} : $suffr{"Suffragium2v"};
     } else {
       if ($dayname[1] =~ /(?:feria|vigilia)/i && $commune !~ /C10/) {
