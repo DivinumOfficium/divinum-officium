@@ -14,7 +14,6 @@ $Ave Maria
 
 [Oratio mortuorum1]
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
-&Dominus_vobiscum2
 _
 $Oremus
 v. We beseech you, O Lord, to be merciful to the souls of all your servants and handmaids for whom we humbly entreat your majesty, that by these offices of pious supplication they may be found worthy to enter into everlasting rest.
@@ -95,7 +94,6 @@ R. Amen.
 
 [Oratio mortuorum2]
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
-&Dominus_vobiscum2
 _
 $Oremus
 v. We suppliants, O Lord, pour forth our prayers for the souls of all thy servants and handmaids, that thou wouldst mercifully pardon whatsoever they have committed through human frailty, and graciously vouchsafe to deliver them from the pains of purgatory. 
@@ -114,8 +112,7 @@ $Credo
 
 &special('Oratio mortuorum2', 'English')
 
-#Martyrologium
-&martyrologium
+&special('#Martyrologium', 'English')
 _
 V. The just shall be in everlasting remembrance.
 R. They will not fear from hearing evil.

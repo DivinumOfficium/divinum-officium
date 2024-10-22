@@ -1,7 +1,5 @@
 [Litania]
-&Dominus_vobiscum
-&Benedicamus_Domino 
-!Litania omnium Sanctorum
+#Litania omnium Sanctorum
 v. Kyrie, eléison. Kyrie, eléison.
 Christe, eléison. Christe, eléison.
 v. Kyrie, eléison. Kyrie, eléison.
@@ -132,19 +130,10 @@ Christe, exáudi nos.
 v. Kyrie, eléison. Kyrie, eléison.
 Christe, eléison. Christe, eléison.
 v. Kyrie, eléison. Kyrie, eléison.
-_
+
 $Pater noster Et
 _
-!Psalm 69
-!(in finem David in rememoratione eo quod salvum me fecit Dominus)
-Deus, in adjutórium meum inténde: * Dómine, ad adjuvándum me festína.
-Confundántur et revereántur, * qui quærunt ánimam meam.
-Avertántur retrórsum, et erubéscant, * qui volunt mihi mala.
-Avertántur statim erubescéntes, * qui dicunt mihi: Euge, euge.
-Exsúltent et læténtur in te omnes qui quærunt te, * et dicant semper: Magnificétur Dóminus: qui díligunt salutáre tuum.
-Ego vero egénus, et pauper sum: * Deus, ádjuva me.
-Adjútor meus, et liberátor meus es tu: * Dómine, ne moréris.
-&Gloria
+&psalm(69)
 _
 V. Salvos fac servos tuos.
 R. Deus meus, sperántes in te.
@@ -170,7 +159,7 @@ R. Et de Sion tuére eos.
 V. Dómine, exáudi oratiónem meam.
 R. Et clamor meus ad te véniat.
 &Dominus_vobiscum1
-_
+
 !Oratio
 v. Orémus
 v.Deus, cui próprium est miseréri semper et parcere: súscipe deprecatiónem nostram, ut nos, et omnes fámulos tuos, quos delictórum caténa constringit, miserátio tuæ pietátis cleménter absolvat.

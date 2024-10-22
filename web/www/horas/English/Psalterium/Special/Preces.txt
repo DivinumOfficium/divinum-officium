@@ -1,8 +1,5 @@
 [Litania]
-&Dominus_vobiscum
-&Benedicamus_Domino 
-_
-!Litany of the Saints
+#Litany of the Saints
 Lord, have mercy on us.
 Christ, have mercy on us.
 Lord, have mercy on us.
@@ -133,18 +130,10 @@ Christ, graciously hear us.
 Lord, have mercy on us.
 Christ, have mercy on us.
 Lord, have mercy on us.
-_
+
 $Pater noster Et
 _
-!Psalm 69
-v. O God, come to my assistance; O Lord, make haste to help me. 
-Let them be confounded and ashamed that seek my soul: 
-Let them be turned backward, and blush for shame that desire evils to me: 
-Let them be presently turned away blushing for shame that say to me: Tis well, tis well. 
-Let all that seek thee rejoice and be glad in thee; and let such as love thy salvation say always: The Lord be magnified.
-But I am needy and poor; O God, help me. 
-Thou art my helper and my deliverer: O Lord, make no delay. 
-&Gloria
+&psalm(69)
 _
 V. Save thy servants.
 R. Who hope in thee, O God.
@@ -170,7 +159,7 @@ R. And from Sion protect them.
 V. O Lord, hear my prayer.
 R. And let my cry come unto you.
 &Dominus_vobiscum1
-_
+
 !Prayer
 $Oremus.
 v. O God, it is according to thy nature always to show mercy and forgiveness. Receive our petition that we and all thy servants, bound by the chains of sin, may, by thy tender mercy, be pardoned.

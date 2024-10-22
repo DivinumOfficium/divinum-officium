@@ -17,7 +17,6 @@ $Ave Maria
 
 [Oratio mortuorum1]
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
-&Dominus_vobiscum2
 _
 $Oremus
 v. Ten misericordia, Señor, de tus siervos, por cuya salvación te ofrecemos con humildad este sacrificio de alabanza; y por este misterio de reconciliación merezcan llegar al descanso eterno.
@@ -107,7 +106,6 @@ R. Amén.
 
 [Oratio mortuorum2]
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
-&Dominus_vobiscum2
 _
 $Oremus
 v. Humildemente te pedimos, Señor, por las almas de todos tus siervos y siervas, perdónales las faltas cometidas a lo largo de su vida, y por tu bondad da término a sus penas.
@@ -126,8 +124,7 @@ $Credo
 
 &special('Oratio mortuorum2', 'Espanol')
 
-#Martyrologium
-&martyrologium
+&special('#Martyrologium', 'Espanol')
 _
 V. Los justos dejan una memoria eterna.
 R. No temerán el anuncio funesto. 
