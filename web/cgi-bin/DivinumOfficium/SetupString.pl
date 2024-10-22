@@ -160,8 +160,11 @@ sub get_tempus_id {
       : 'Nativitatis'
     : /^Epi/ ? ($month == 1 && $day <= 13)
       ? 'Epiphaniæ'
+      : ($month == 1 || $day == 1 || ($day == 2 && !$vesp_or_comp)) ? 'post Epiphaniam post partum'
       : 'post Epiphaniam'
-    : /^Quadp(\d)/ && ($1 < 3 || $dayofweek < 3) ? 'Septuagesimæ'
+    : /^Quadp(\d)/ && ($1 < 3 || $dayofweek < 3) ? ($month == 1 || $day == 1 || ($day == 2 && !$vesp_or_comp))
+      ? 'Septuagesimæ post partum'
+      : 'Septuagesimæ'
     : /^Quad(\d)/ && $1 < 5 ? 'Quadragesimæ'
     : /^Quad/ ? 'Passionis'
     : /^Pasc0/ ? 'Octava Paschæ'
