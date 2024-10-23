@@ -1,5 +1,6 @@
 # use strict;
 # use warnings;
+use utf8;
 
 #*** preces($item)
 # returns 1 = yes or 0 = omit after deciding about the preces
