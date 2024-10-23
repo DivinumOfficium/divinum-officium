@@ -1,5 +1,6 @@
 # use warnings;
 # use strict;
+use utf8;
 
 sub lectio_brevis_prima {
 

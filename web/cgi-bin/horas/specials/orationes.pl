@@ -1,5 +1,6 @@
 # use strict;
 # use warnings;
+use utf8;
 
 # *** checkcommemoratio \%office
 # return the text of [Commemoratio] [Commemoratio n] or an empty string

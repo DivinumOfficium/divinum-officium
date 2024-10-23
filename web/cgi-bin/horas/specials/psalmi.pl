@@ -1,5 +1,6 @@
 # use strict;
 # use warnings;
+use utf8;
 
 sub psalmi {
   my $lang = shift;

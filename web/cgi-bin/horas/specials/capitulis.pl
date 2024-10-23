@@ -1,5 +1,6 @@
 # use warnings;
 # use strict;
+use utf8;
 
 sub capitulum_major {
   my $lang = shift;
