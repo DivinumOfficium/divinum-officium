@@ -97,7 +97,7 @@ sub Dominus_vobiscum2 : ScriptFunc {    #* officium defunctorum
 sub mLitany : ScriptFunc {
   my $lang = shift;
   if (preces('Dominicales')) { return ''; }
-  return "\$Kyrie\n\$Pater secreto";
+  return "\$Kyrie\n\$pater secreto";
 }
 
 #*** versiculum_ante_laudes($lang)
