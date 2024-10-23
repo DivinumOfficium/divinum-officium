@@ -4,16 +4,12 @@ S. Cyrilli Episc. Alexandrini Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4
 [Name]
 Cyrille
 
-[Rank] (rubrica innovata)
+[RankNewcal]
 S. Cyrilli Episc. Alexandrini Confessoris Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
 
 [Rule]
 vide C4a;
 Gloria
-
-[Oratio]
-Boże, który uczyniłeś św. Cyryla, Twego Wyznawcę i Biskupa, niezłomnym bojownikiem prawdy o Boskim Macierzyństwie Najświętszej Maryi Panny: spraw za jego wstawiennictwem, abyśmy dostąpili zbawienia pod macierzyńską opieką Tej, którą wyznajemy jako Bożą Rodzicielkę.
-$Per eumdem
 
 [Comment]
 # 09 II – Św. Cyryla Aleksandryjskiego, Biskupa, Wyznawcy i Doktora Kościoła
@@ -21,14 +17,31 @@ $Per eumdem
 ! Szaty białe
 Święty wysunął się na czoło obrońców wiary przeciw błędom nestoriańskim. Jako patriarcha aleksandryjski przewodniczył w imieniu papieża Soborowi w Efezie w 431 r., na którym orzeczono, że Maryja jest prawdziwie Matką Boga. Ponadto pozostawił Kościołowi wspaniały komentarz do Ewangelii św. Jana. Umarł w 444 r.
 
-Wspomnienie świętej Apolonii, Dziewicy i Męczennicy. Chrześcijance z Aleksandrii św. Apolonii wybito w czasie tortur wszystkie zęby, a następnie spalono ją w 250 roku. Wierni wzywają jej pomocy w chorobach zębów.
+[Introitus]
+@Commune/C4a:Introitus
+
+[Oratio]
+Boże, który uczyniłeś św. Cyryla, Twego Wyznawcę i Biskupa, niezłomnym bojownikiem prawdy o Boskim Macierzyństwie Najświętszej Maryi Panny: spraw za jego wstawiennictwem, abyśmy dostąpili zbawienia pod macierzyńską opieką Tej, którą wyznajemy jako Bożą Rodzicielkę.
+$Per eumdem
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+@Commune/C4a:Graduale
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
 
 [Secreta]
 Wszechmogący Boże, wejrzyj miłościwie na nasze dary i spraw za przyczyną św. Cyryla, abyśmy do serc naszych godnie mogli przyjąć Jednorodzonego Syna Twego Jezusa Chrystusa, Pana naszego, współwiekuistego w Twej chwale:
 $Qui tecum
 
-[Introitus]
-@Commune/C4a:Introitus
+[Communio]
+@Commune/C4a:Communio
 
 [Postcommunio]
 Pokrzepieni Boskim Sakramentem pokornie błagamy Cię, Panie, abyśmy wsparci przykładem i zasługami św. Biskupa Cyryla, mogli wiernie służyć Najświętszej Rodzicielce Twojego Jednorodzonego Syna:
