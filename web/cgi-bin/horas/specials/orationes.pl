@@ -160,7 +160,7 @@ sub oratio {
         )
       {    # OP ferial office
         if ($horamajor && $version !~ /Ordo Praedicatorum/) {
-          push(@s, '$Kyrie', '$Pater noster_', "_");
+          push(@s, '$Kyrie', '$Pater noster Et', "_");
         } else {
           push(@s, '$Kyrie', '$pater secreto', "_");
         }

@@ -232,6 +232,9 @@ R. Mors Sanctórum ejus.
 v. Sancta María et omnes Sancti intercédant pro nobis ad Dóminum, ut nos mereámur ab eo adjuvári et salvári, qui vivit et regnat in sǽcula sæculórum.
 $Amen
 
+[pretiosa]
+@:Pretiosa
+
 [DefunctV]
 &Dominus_vobiscum
 &Benedicamus_Domino
@@ -251,13 +254,21 @@ v. Te decet laus, + te decet hymnus: tibi glória Deo Patri, et Fílio, cum Spí
 [Kyrie]
 v. Kýrie, eléison. Christe, eléison. Kýrie, eléison.
 
-[MLitany]
+[mLitany]
 $Kyrie
 $Pater noster Et
 
 [mLitany2]
 $Kyrie
-$Pater secreto
+$rubrica Pater secreto
+$Pater noster Et
+
+[mLitany simplex]
+$Kyrie
+$rubrica Pater secreto
+$Pater noster Et
+$rubrica Credo secreto
+$Credo Carnis
 
 [Divinum auxilium]
 (rubrica Monastica)
