@@ -68,7 +68,6 @@ binmode(STDOUT, ':encoding(utf-8)');
 
 #*** collect standard items
 #require "$Bin/ordocommon.pl";
-require "$Bin/../DivinumOfficium/do_io.pl";
 require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/../DivinumOfficium/dialogcommon.pl";

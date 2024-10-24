@@ -82,7 +82,6 @@ our $duplex;                                 #1=simplex-feria, 2=semiduplex-feri
 
 #*** collect standard items
 #require "ordocommon.pl";
-require "$Bin/../DivinumOfficium/do_io.pl";
 require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/../DivinumOfficium/dialogcommon.pl";

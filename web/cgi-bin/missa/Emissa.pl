@@ -65,11 +65,10 @@ our $duplex;                                  #1=simplex-feria, 2=semiduplex-fer
 
 #*** collect standard items
 #allow the script to be started directly from the "standalone/tools/epubgen2" subdirectory
-if (!-e "$Bin/../DivinumOfficium/do_io.pl") {
+if (!-e "$Bin/../DivinumOfficium/SetupString.pl") {
   $Bin = "$Bin/../../../web/cgi-bin/missa";
 }
 
-require "$Bin/../DivinumOfficium/do_io.pl";
 require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/../horas/horascommon.pl";
 require "$Bin/../DivinumOfficium/dialogcommon.pl";

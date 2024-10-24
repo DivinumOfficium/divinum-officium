@@ -54,7 +54,6 @@ our $border;
 our $smallblack;
 our $smallfont;
 
-require "$Bin/../DivinumOfficium/do_io.pl";
 require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/../DivinumOfficium/dialogcommon.pl";
