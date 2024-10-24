@@ -99,7 +99,7 @@ sub resolve_refs {
         $line = expand($line, $lang, $t[$it - 1]);
 
         # If the psalm has a cross, then so should the antiphon.
-        @resolved_lines[-1] .= setfont($smallfont, " \x{2021}") if $line =~ /\x{2021}/;
+        @resolved_lines[-1] .= ' ' . setfont($smallfont, "\x{2021}") if $line =~ /\x{2021}/;
       } else {
         $line = expand($line, $lang);
       }
@@ -143,8 +143,9 @@ sub resolve_refs {
     elsif ($line =~ /^\!(.*)/) {
       $l = $1;
       my $suffix = '';
-      if ($l =~ s/(\{[^:].*?\})//) { $suffix = setfont($smallblack, $1); }
-      $line = setfont($redfont, $l) . " $suffix\n";
+      if ($l =~ s/(\s*\{[^:].*?\})//) { $suffix = setfont($smallblack, $1); }
+      if ($l =~ s/(\s*\[[^:].*?\])//) { $suffix = setfont($smallblack, $1); }
+      $line = setfont($redfont, $l) . "$suffix";
     }
 
     #first letter red
@@ -242,7 +243,7 @@ sub getantcross {
   $psalmline .= ' ' . $psalmline[$pind++] while ($pind < @psalmline && !depunct($psalmline[$pind]));
 
   # Output dagger.
-  $psalmline .= " \x{2021}";
+  $psalmline .= " /:\x{2021}:/";
 
   # Append rest of the verse.
   $psalmline .= ' ' . $psalmline[$pind++] while ($pind < @psalmline);
