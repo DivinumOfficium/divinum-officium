@@ -40,7 +40,6 @@ require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
 
 #require "$Bin/ordocommon.pl";
-require "$Bin/../DivinumOfficium/do_io.pl";
 binmode(STDOUT, ':encoding(utf-8)');
 
 #*** get parameters

@@ -67,7 +67,6 @@ our $duplex;                                 #1=simplex-feria, 2=semiduplex-feri
                                              # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
 
 #*** collect standard items
-require "$Bin/do_io.pl";
 require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/dialogcommon.pl";
