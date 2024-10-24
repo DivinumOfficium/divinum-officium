@@ -212,7 +212,7 @@ sub oratio {
   my $sub_unica_conc =
        $commemoratio{Rule} =~ /Sub unica conclusione in commemoratione/i
     || $winner{Rule} =~ /Sub unica concl(usione)?\s*$/mi
-    || world_mission_sunday();
+    || (world_mission_sunday() && $version !~ /1954/);
 
   if ($sub_unica_conc) {
     if ($version !~ /196/) {
@@ -390,6 +390,7 @@ sub setcc {
     $key = 30 + (8 - $1);
   } elsif ($s{Rank} =~ /;;1/ || $code >= 10) {
     $key = 80;
+    $key = 99 if world_mission_sunday();
   }    #Simplex=80;
   if ($s{Rule} =~ /Comkey=([0-9]+)/i) { $key = $1; }    #oct day Epi Cor = 20, simpl=70
 
