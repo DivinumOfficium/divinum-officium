@@ -460,9 +460,9 @@ sub psalmi_major {
             !$antecapitulum
             && (
               $vespera == 3 && ($rule =~ /Psalm5 (Vespera3)=([0-9]+)/i
-                || ($commune{Rule} =~ /Psalm5 (Vespera3)=([0-9]+)/i) && $c eq 4)
-              || ($rule =~ /Psalm5 (Vespera)=([0-9]+)/i || ($commune{Rule} =~ /Psalm5 (Vespera)=([0-9]+)/i))
-              && $c eq 4
+                || ($commune{Rule} =~ /Psalm5 (Vespera3)=([0-9]+)/i && $c eq 4))
+              || ($rule =~ /Psalm5 (Vespera)=([0-9]+)/i
+                || ($commune{Rule} =~ /Psalm5 (Vespera)=([0-9]+)/i && $c eq 4))
             )
           )
           || $antecapitulum =~ /Psalm5 (VesperaAnte)=([0-9]+)/i
