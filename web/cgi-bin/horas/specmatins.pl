@@ -1093,7 +1093,7 @@ sub lectio : ScriptFunc {
   my $item = translate('Lectio', $lang);
   $item .= " %s" unless ($item =~ /%s/);
   $w = "_\n" . setfont($largefont, sprintf($item, $num)) . "\n$w";
-  my @w = split("\n", $w);
+  my @w = split("\n+", $w);
   $w = "";
 
   my $initial = $nonumbers;

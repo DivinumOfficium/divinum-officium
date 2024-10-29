@@ -1285,7 +1285,7 @@ sub precedence {
   our $datafolder;
 
   # set global date
-  our ($date1) = shift || strictparam('date');
+  our ($date1) = shift || strictparam('date') || strictparam('date1');
   if (!$date1 || $votive =~ /hodie/) { $date1 = gettoday(); }
   $date1 =~ s/\//\-/g;
   ($month, $day, $year) = split('-', $date1);
