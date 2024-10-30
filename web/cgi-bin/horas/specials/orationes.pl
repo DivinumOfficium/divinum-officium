@@ -378,6 +378,7 @@ sub oratio {
       my @centries = $cv == 1 ? @ccommemoentries : @commemoentries;
 
       foreach my $commemo (@centries) {
+        next unless $commemo;
         setbuild2("Comm-$cv: $commemo");
 
         my $key = 0;    # let's start with lowest rank
