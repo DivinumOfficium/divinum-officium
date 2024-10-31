@@ -1076,6 +1076,7 @@ sub concurrence {
 
     foreach $commemo (@commemoentries) {
       next unless $commemo;
+
       if ($commemo =~ /tempora/i && ($trank[2] < 2 || $trank[0] =~ /Rogatio|Quattuor.*Sept/i)) {
         next;
       }    # Feria minor and Vigils have no Vespers if superseded
