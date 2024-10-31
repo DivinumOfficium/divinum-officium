@@ -279,11 +279,7 @@ sub occurrence {
         || (
           $version =~ /19(?:55|6)/i
           && (
-            (
-              $srank =~ /vigil/i
-              && ($sday !~ /(06\-23|06\-28|08\-09|08\-14|12\-24)/
-                || ($dayofweek == 0 && $month < 12))    # #3873: ensure no Vigil on Sunday except Nativity
-            )
+            ($srank =~ /vigil/i && $dayofweek == 0 && $month < 12)    # #3873: ensure no Vigil on Sunday except Nativity
             || ($srank =~ /(infra octavam|in octava)/i && nooctnat())
           )
         )
