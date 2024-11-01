@@ -354,7 +354,9 @@ sub special : ScriptFunc {
   %w = (columnsel($lang)) ? %winner : %winner2;
 
   if (exists($w{$name})) {
-    $r = "!Special $name\n_\n" . chompd($w{$name}) . "\n";
+
+    #$r = "#$name specialis\n" . chompd($w{$name}) . "\n";
+    $r = chompd($w{$name}) . "\n";
   } elsif ($name =~ /^\#/) {
     my @scriptum = ();
     push(@scriptum, $name);

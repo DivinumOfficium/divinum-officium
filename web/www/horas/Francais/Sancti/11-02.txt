@@ -7,12 +7,8 @@ Commémoration de tous les Fidèles Défunts;;I. classis;;6;;ex C9
 [Rank] (rubrica innovata)
 Commémoration de tous les Fidèles Défunts;;Duplex Solemnity;;6;;ex C9
 
-[Initial]
-$Pater noster
-$Ave Maria
-(sed rubrica 1960 aut rubrica innovata omittuntur)
-
 [Oratio mortuorum1]
+#Oratio
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
 _
 $Oremus
@@ -88,11 +84,13 @@ $Requiem
 R. Délivrez-moi, Seigneur, de la mort éternelle, en ce jour redoutable * Quand les cieux seront ébranlés ainsi que la terre, Alors que vous viendrez juger ce siècle, par le feu.
 
 [Conclusio]
+!Conclusio specialis
 &Gloria
 V. Qu'ils reposent en paix.
 R. Amen.
 
 [Oratio mortuorum2]
+#Oratio
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
 _
 $Oremus
@@ -102,7 +100,7 @@ $Per Dominum
 [Special Prima]
 &special('Initial', 'Francais')
 $Credo
-(sed rubrica 1960 aut rubrica innovata omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(87)
 
@@ -125,6 +123,7 @@ $Amen
 
 [Special Tertia]
 &special('Initial', 'Francais')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(37,1,11)
 
@@ -138,6 +137,7 @@ $Amen
 
 [Special Sexta]
 &special('Initial', 'Francais')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(69)
 
@@ -151,6 +151,7 @@ $Amen
 
 [Special Nona]
 &special('Initial', 'Francais')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(101,1,13)
 

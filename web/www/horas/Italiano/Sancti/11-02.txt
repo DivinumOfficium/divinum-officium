@@ -7,11 +7,6 @@ In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
 [Rank] (rubrica innovata)
 In Commemoratione Omnium Fidelium Defunctorum;;Duplex Solemnity;;6;;ex C9
 
-[Initial]
-$Pater noster
-$Ave Maria
-(sed rubrica 1960 aut rubrica innovata omittuntur)
-
 [Ant Vespera]
 Piacerò al Signore * nella regione dei vivi.;;114
 Ohimè, o Signore, * troppo si protrae la mia vita.;;119
@@ -19,11 +14,8 @@ Il Signore ti protegge * da ogni male: protegga il Signore l'anima tua.;;120
 Se tu, o Signore, baderai alle iniquità: * chi, o Signore, potrà sostenerti?;;129
 Non disprezzare, * o Signore, l'opera delle tue mani.;;137
 
-[Versum 1]
-V. Udii una voce dal cielo, che mi diceva:
-R. Beati i morti che muoiono nel Signore.
-
 [Oratio mortuorum]
+#Oratio
 $Pater noster Et
 _ 
 V. Dalla porta dell'inferno.
@@ -39,6 +31,7 @@ $Oremus
 $Qui vivis
 
 [Oratio mortuorum1]
+#Oratio
 $Pater noster Et
 _ 
 V. Dalla porta dell'inferno.
@@ -152,15 +145,13 @@ R. Liberami, o Signore, dalla morte eterna in quel giorno tremendo,
 * Quando si sconvolgeranno e cieli e terra, * Quando verrai a giudicare il mondo col fuoco.
 
 [Conclusio]
+!Conclusio specialis
 &Gloria
 V. Riposino in pace.
 R. Amen.
 
-[Versum 2]
-V. Udii una voce dal cielo, che mi diceva:
-R. Beati i morti che muoiono nel Signore.
-
 [Oratio mortuorum2]
+#Oratio
 $Pater noster Et
 _ 
 V. Dalla porta dell'inferno.
@@ -178,7 +169,7 @@ $Per Dominum
 [Special Prima]
 &special('Initial', 'Italiano')
 $Credo
-(sed rubrica 1960 aut rubrica innovata omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(87)
 
@@ -199,8 +190,13 @@ $Amen
 
 &special('Conclusio', 'Italiano')
 
+[Versum 2]
+V. Udii una voce dal cielo, che mi diceva:
+R. Beati i morti che muoiono nel Signore.
+
 [Special Tertia]
 &special('Initial', 'Italiano')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(37,1,11)
 
@@ -214,6 +210,7 @@ $Amen
 
 [Special Sexta]
 &special('Initial', 'Italiano')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(69)
 
@@ -227,6 +224,7 @@ $Amen
 
 [Special Nona]
 &special('Initial', 'Italiano')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(101,1,13)
 
@@ -237,10 +235,6 @@ $Amen
 &special('Oratio mortuorum', 'Italiano')
 
 &special('Conclusio', 'Italiano')
-
-[Versum 3]
-V. Udii una voce dal cielo, che mi diceva:
-R. Beati i morti che muoiono nel Signore.
 
 [Special Completorium]
 $Confiteor

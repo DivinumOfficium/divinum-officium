@@ -445,24 +445,24 @@ sub setlink {
         # Lectios
         my ($incipit, $source, $verbum);
 
-        if ($fulltext[3] =~ /\<I\>([\w\s]+?)\<\/I\>/) {
+        if ($fulltext[2] =~ /\<I\>([\w\s]+?)\<\/I\>/) {
 
           # Commemoratio
           $source = $1;
-        } elsif ($fulltext[3] =~ /^\!(.*)/) {
+        } elsif ($fulltext[2] =~ /^\!(.*)/) {
 
           # No Lesson title but Source
           $source = $1;
-        } elsif ($fulltext[4] =~ /^\!(.*)/ || $fulltext[4] =~ /(\_)/) {
+        } elsif ($fulltext[3] =~ /^\!(.*)/ || $fulltext[4] =~ /(\_)/) {
 
           # Lesson title and potentially Source
           $source = $1;
-          $incipit = $fulltext[3];
+          $incipit = $fulltext[2];
           $incipit =~ s/^v\. //i;
         } else {
 
           # Pure reading
-          $verbum = $fulltext[3];
+          $verbum = $fulltext[2];
           $verbum =~ s/^v\. (\w+).*/$1 …/i;
         }
         $source =~ s/\!(.*)$/ \($1\)/;    # reformat source

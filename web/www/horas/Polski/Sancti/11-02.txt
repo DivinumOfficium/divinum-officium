@@ -7,11 +7,6 @@ Wspomnienie Wszystkich Wiernych Zmarłych;;I. classis;;6;;ex C9
 [Rank] (rubrica innovata)
 Wspomnienie Wszystkich Wiernych Zmarłych;;Duplex Solemnity;;6;;ex C9
 
-[Initial]
-$Pater noster
-$Ave Maria
-(sed rubrica 1960 aut rubrica innovata omittuntur)
-
 [Lectio1]
 @Commune/C9
 
@@ -74,11 +69,13 @@ Z Pierwszego Listu Świętego Pawła Apostoła do Koryntian
 58 A tak, bracia moi mili, bądźcie stateczni a nieporuszeni, obfitując w robocie Pańskiéj zawsze, wiedząc, iż praca wasza nie jest próżna w Panu.
 
 [Conclusio]
+!Conclusio specialis
 &Gloria
 V. Niech odpoczywają w pokoju.
 R. Amen.
 
 [Oratio mortuorum2]
+#Oratio
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
 _
 $Oremus
@@ -88,7 +85,7 @@ $Per Dominum
 [Special Prima]
 &special('Initial', 'Polski')
 $Credo
-(sed rubrica 1960 aut rubrica innovata omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(87)
 
@@ -111,6 +108,7 @@ $Amen
 
 [Special Tertia]
 &special('Initial', 'Polski')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(37,1,11)
 
@@ -124,6 +122,7 @@ $Amen
 
 [Special Sexta]
 &special('Initial', 'Polski')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(69)
 
@@ -137,6 +136,7 @@ $Amen
 
 [Special Nona]
 &special('Initial', 'Polski')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(101,1,13)
 
