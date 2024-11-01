@@ -22,17 +22,21 @@ no Te Deum
 (rubrica 1955 aut rubrica 1960) No prima Vespera
 
 [Initial]
+#Incipit specialis
 $Pater noster
 $Ave Maria
 (sed rubrica 1960 aut rubrica innovata omittuntur)
 
 [Oratio Matutinum]
-@Commune/C9:Oratio_Fid:s/&Dominus_vobiscum2/_\n&Dominus_vobiscum/
+&Dominus_vobiscum
+@Commune/C9:Oratio_Fid
 
 [Oratio mortuorum]
+#Oratio
 @Commune/C9:Oratio 2
 
 [Oratio mortuorum1]
+#Oratio
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
 _
 $Oremus
@@ -101,11 +105,13 @@ De Epístola prima beáti Pauli Apóstoli ad Corínthios
 58 Itaque fratres mei dilécti, stábiles estóte, et immóbiles: abundántes in ópere Dómini semper, sciéntes quod labor vester non est inánis in Dómino.
 
 [Conclusio]
+!Conclusio specialis
 &Gloria
 V. Requiéscant in pace.
 R. Amen.
 
 [Oratio mortuorum2]
+#Oratio
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
 _
 $Oremus
@@ -115,7 +121,7 @@ $Per Dominum
 [Special Prima]
 &special('Initial', 'Latin')
 $Credo
-(sed rubrica 1960 aut rubrica innovata omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(87)
 
@@ -138,6 +144,7 @@ $Amen
 
 [Special Tertia]
 &special('Initial', 'Latin')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(37,1,11)
 
@@ -151,6 +158,7 @@ $Amen
 
 [Special Sexta]
 &special('Initial', 'Latin')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(69)
 
@@ -164,6 +172,7 @@ $Amen
 
 [Special Nona]
 &special('Initial', 'Latin')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(101,1,13)
 

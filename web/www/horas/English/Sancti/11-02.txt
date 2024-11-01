@@ -7,12 +7,8 @@ In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
 [Rank] (rubrica innovata)
 In Commemoratione Omnium Fidelium Defunctorum;;Duplex Solemnity;;6;;ex C9
 
-[Initial]
-$Pater noster
-$Ave Maria
-(sed rubrica 1960 aut rubrica innovata omittuntur)
-
 [Oratio mortuorum1]
+#Oratio
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
 _
 $Oremus
@@ -88,11 +84,13 @@ $Requiem
 R. Deliver me, O Lord, from eternal death in that awful day * when the heavens and the earth shall be shaken, and Thou shalt come to judge the world by fire.
 
 [Conclusio]
+!Conclusio specialis
 &Gloria
 V. May they rest in peace.
 R. Amen.
 
 [Oratio mortuorum2]
+#Oratio
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
 _
 $Oremus
@@ -102,7 +100,7 @@ $Per Dominum
 [Special Prima]
 &special('Initial', 'English')
 $Credo
-(sed rubrica 1960 aut rubrica innovata omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(87)
 
@@ -125,6 +123,7 @@ $Amen
 
 [Special Tertia]
 &special('Initial', 'English')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(37,1,11)
 
@@ -138,6 +137,7 @@ $Amen
 
 [Special Sexta]
 &special('Initial', 'English')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(69)
 
@@ -151,6 +151,7 @@ $Amen
 
 [Special Nona]
 &special('Initial', 'English')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(101,1,13)
 

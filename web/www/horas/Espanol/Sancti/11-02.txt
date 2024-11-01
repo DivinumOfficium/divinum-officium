@@ -4,18 +4,8 @@ In Commemoratione Omnium Fidelium Defunctorum;;Duplex;;3;;ex C9
 [Rank] (rubrica 196)
 In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
 
-[Initial]
-$Pater noster
-$Ave Maria
-(sed rubrica 1960 aut rubrica innovata omittuntur)
-
-[Oratio Matutinum]
-@Commune/C9:Oratio_Fid:s/&Dominus_vobiscum2/_\n&Dominus_vobiscum/
-
-[Oratio mortuorum]
-@Commune/C9:Oratio 2
-
 [Oratio mortuorum1]
+#Oratio
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
 _
 $Oremus
@@ -100,11 +90,13 @@ $Requiem
 R. Líbrame, Señor, de la muerte eterna, en aquel tremendo día, * En que serán conmovidos los cielos y la tierra. * Cuando vinieres a juzgar al siglo con el fuego. 
 
 [Conclusio]
+!Conclusio specialis
 &Gloria
 V. Descansen en paz.
 R. Amén.
 
 [Oratio mortuorum2]
+#Oratio
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
 _
 $Oremus
@@ -114,7 +106,7 @@ $Per Dominum
 [Special Prima]
 &special('Initial', 'Espanol')
 $Credo
-(sed rubrica 1960 aut rubrica innovata omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(87)
 
@@ -137,6 +129,7 @@ $Amen
 
 [Special Tertia]
 &special('Initial', 'Espanol')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(37,1,11)
 
@@ -150,6 +143,7 @@ $Amen
 
 [Special Sexta]
 &special('Initial', 'Espanol')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(69)
 
@@ -163,6 +157,7 @@ $Amen
 
 [Special Nona]
 &special('Initial', 'Espanol')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(101,1,13)
 

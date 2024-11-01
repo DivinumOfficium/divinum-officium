@@ -189,7 +189,7 @@ sub oratio {
       $w =~ s/\$(Per|Qui) .*?\n//;
     }
   }
-  $w =~ s/^(?:v. )?/v. /;
+  $w =~ s/^(?:v. )?/v. / unless $w =~ /^[\$\&\#]/;
   push(@s, $w);
   if ($rule =~ /omit .*? commemoratio/i) { return; }
 
