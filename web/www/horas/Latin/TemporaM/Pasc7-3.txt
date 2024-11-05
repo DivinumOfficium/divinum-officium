@@ -1,10 +1,10 @@
 @Tempora/Pasc7-3
 
 [AntMatutinumM]
-Apparuérunt * Apóstolis dispertítæ linguæ tamquam ignis, † Sedítque supra síngulos eórum Spíritus Sanctus, † allelúja.;;68(2-16)
+Apparuérunt * Apóstolis dispertítæ linguæ tamquam ignis, † Sedítque supra síngulos eórum Spíritus Sanctus, † allelúja.
 
 [Ant Matutinum]
-@Tempora/Pasc7-0::1 s/47/59/
+@Tempora/Pasc7-0::1 s/;;47//
 @Psalterium/Psalmi/Psalmi matutinum:Daym3:2-6 s/.*;;/;;/g
 @Tempora/Pasc7-0:Versum 1
 @:AntMatutinumM
