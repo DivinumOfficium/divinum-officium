@@ -5,9 +5,6 @@
 Psalmi Dominica
 Antiphonas horas
 
-[Ant Vespera]
-@Tempora/Pasc7-0::s/\n/;;109_/ s/\n/;;110_/ s/\n/;;111_/ s/\n/;;112_/ s/_/\n/g
-
 [Ant Matutinum]
 @Tempora/Pasc7-0::1 s/47/1/
 ;;8
