@@ -1,7 +1,7 @@
 @Sancti/06-30
 
 [Ant Vespera]
-@Sancti/06-30::s/\./_/g s/_/.;;109/ s/_/.;;112/ s/_/.;;115/ s/_/.;;138/ s/_//
+@Sancti/06-30::s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;115/ s/_/;;138/ s/_//
 
 [Hymnus Vespera]
 @:HymnusM Matutinum

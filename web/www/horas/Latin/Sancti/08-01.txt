@@ -170,7 +170,7 @@ Quidnam Machabǽi? Horum enim nómine dies festus præsénti frequéntia celebr�
 $Deo gratias
 
 [Ant Vespera 3]
-@:Ant Vespera:s/\./_;;109/s s/\./_;;112/ s/\./_;;115/ s/\./_;;125/ s/116/138/ s/_/./g
+@:Ant Vespera:s/$/_/gm s/_/;;109/s s/_/;;112/ s/_/;;115/ s/_/;;125/ s/116/138/
 
 [Ant 3]
 Solve, * jubénte Deo, terrárum, Petre, caténas, qui facis ut páteant cæléstia regna beátis.
