@@ -225,7 +225,7 @@ sub oratio {
       {
         $c = getrefs($w{Commemoratio}, $lang, $vespera, $w{Rule});
       } else {
-        $c = undef;
+        $c = '';
       }
 
       if ($c && $octvespera && $c =~ /$octavestring/i) {
@@ -325,7 +325,7 @@ sub oratio {
           {
             $c = getrefs($c{Commemoratio}, $lang, $cvespera, $c{Rule});
           } else {
-            $c = undef;
+            $c = '';
           }
 
           if ($c && $octvespera && $c =~ /$octavestring/i) {
@@ -378,7 +378,6 @@ sub oratio {
       my @centries = $cv == 1 ? @ccommemoentries : @commemoentries;
 
       foreach my $commemo (@centries) {
-        next unless $commemo;
         setbuild2("Comm-$cv: $commemo");
 
         my $key = 0;    # let's start with lowest rank
@@ -424,7 +423,7 @@ sub oratio {
           {
             $c = getrefs($c{Commemoratio}, $lang, $cv, $c{Rule});
           } else {
-            $c = undef;
+            $c = '';
           }
 
           if ($c && $octvespera && $c =~ /$octavestring/) {

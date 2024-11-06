@@ -67,7 +67,7 @@ sub set_runtime_options {
   my @setupt = split(/;;/, getsetup($name));
 
   # pop(@setupt);
-  my $p = undef;
+  my $p;
   my $i = 1;
 
   foreach (@parameters) {
