@@ -136,9 +136,9 @@ sub occurrence {
     } else
     { #if there is no Temporal file and we're not in Epiphany tide and there is no transfered temporal for the following day by day of Easter
       $trank = '';
-      %tempora = undef;
+      %tempora = {};
       $tname = '';
-      @trank = undef;
+      @trank = ();
     }
   }
 
@@ -207,9 +207,9 @@ sub occurrence {
         } elsif ($month == 12 && $day == 23)
         {                   # ensure the Dominica IV adventus win in case it has a "1st Vespers" on Dec 23
           $srank = '';
-          %saint = undef;
+          %saint = {};
           $sname = '';
-          @srank = undef;
+          @srank = ();
         }
       } elsif ($hora =~ /(Vespera|Completorium)/i) {
         $svesp = 3;
@@ -232,9 +232,9 @@ sub occurrence {
             && $srank[1] =~ /Semiduplex/i)    # Reduced to Simplex/Comm ad Laudes tantum ends after None.
         ) {
           $srank = '';
-          %saint = undef;
+          %saint = {};
           $sname = '';
-          @srank = undef;
+          @srank = ();
         } elsif (($version !~ /196/ || $dayofweek == 6)
           && $month == 11
           && $srank =~ /Omnium Fidelium defunctorum/i
@@ -274,9 +274,9 @@ sub occurrence {
           && (($trank[2] >= 6 && $srank[2] < 6) || ($trank[2] >= 5 && $srank[2] < 5)))
       ) {
         $srank = '';
-        %saint = undef;
+        %saint = {};
         $sname = '';
-        @srank = undef;
+        @srank = ();
         @commemoentries = ();
       } elsif (
         $version =~ /196/
@@ -294,8 +294,8 @@ sub occurrence {
         )
       ) {
         $tname = $trank = '';
-        @trank = undef;
-        %tempora = undef;
+        @trank = ();
+        %tempora = {};
       } elsif ($version =~ /1955|Monastic.*Divino|1963/
         && $srank[2] >= 2.2
         && $srank[2] < 2.9
@@ -315,10 +315,10 @@ sub occurrence {
       }
     } else {
       $srank = '';
-      %saint = undef;
+      %saint = {};
       $sname = '';
-      @srank = undef;
-      @commemoentries = undef;
+      @srank = ();
+      @commemoentries = ();
     }
 
     # In Festo Sanctae Mariae Sabbato according to the rubrics.
@@ -436,7 +436,7 @@ sub occurrence {
         # for Tridentine:  either Transfer or no Commemoration in Duplex I. cl. (of Sanctoral) unless dies 8va
         $commemoratio = '';
         $comrank = 0;
-        @commemoentries = undef;
+        @commemoentries = ();
       } else {
         $officename[2] =~ s/:/ ad Laudes \& Matutinum:/
           if $srank[2] >= 5 && $cr[2] < 2 && $srank[0] !~ /infra octavam/i;
@@ -525,7 +525,7 @@ sub occurrence {
     if ($version =~ /1960/ && $vespera == 1 && $rank >= 6 && $comrank < 5) {
       $commemoratio = '';
       $srank[2] = 0;
-      @commemoentries = undef;
+      @commemoentries = ();
     }
 
     my $climit1960 = climit1960($sname);
@@ -612,7 +612,7 @@ sub occurrence {
         }
       } else {
         $commemoratio = '';
-        @commemoentries = undef;
+        @commemoentries = ();
       }
     } elsif (transfered($sday, $year, $version)) {
       if ($hora !~ /Vespera|Completorium/i) {
@@ -699,8 +699,8 @@ sub concurrence {
   my @wrank = $sanctoraloffice ? @srank : @trank;
 
   if ($winner{Rule} =~ /No secunda Vespera/i && $version !~ /196[03]/i) {
-    @wrank = undef;
-    %winner = undef;
+    @wrank = ();
+    %winner = {};
     $winner = '';
   } elsif ($dayname[0] =~ /Quadp3/ && $dayofweek == 3 && $version !~ /1960|1955/) {
 
@@ -743,11 +743,11 @@ sub concurrence {
         shift @commemoentries;
       }
     } else {
-      %winner = undef;
+      %winner = {};
       $winner = '';
       $rank = 0;
     }
-    %tempora = undef;
+    %tempora = {};
     @trank = '';
     $tname = '';
   }
@@ -783,8 +783,8 @@ sub concurrence {
       $dayname[2] = $tomorrowname[2] . "<br/>Vespera de Officium occurente, Commemoratio Sanctorum tantum";
       $cwrank = '';
       $ctname = '';
-      %cwinner = undef;
-      @cwrank = undef;
+      %cwinner = {};
+      @cwrank = ();
       $cwinner = '';
       $crank = 0;
       $cvespera = 0;
@@ -795,8 +795,8 @@ sub concurrence {
       $dayname[2] .= "<br/>Vespera de Officium occurente; nihil de sequenti";
       $cwrank = '';
       $csname = '';
-      %cwinner = undef;
-      @cwrank = undef;
+      %cwinner = {};
+      @cwrank = ();
       $cwinner = '';
       $crank = 0;
       $cvespera = 0;
@@ -807,8 +807,8 @@ sub concurrence {
       $dayname[2] .= "<br/>Vespera de Officium occurente " unless $version =~ /1955|196/;
       $cwrank = '';
       $ctname = '';
-      %cwinner = undef;
-      @cwrank = undef;
+      %cwinner = {};
+      @cwrank = ();
       $cwinner = '';
       $crank = 0;
       $cvespera = 0;
@@ -835,16 +835,16 @@ sub concurrence {
       $commune = $ccommune;
       $communetype = $ccommunetype;
       $cwinner = '';
-      %cwinner = undef;
-      @cwrank = undef;
+      %cwinner = {};
+      @cwrank = ();
     } else {
       $vespera = 3;
       $tvesp = 3;
       $dayname[2] .= "<br/>Vespera de præcedenti; nihil de sequenti (tempora)";
       $ctrank = '';
       $ctname = '';
-      %cwinner = undef;
-      @cwrank = undef;
+      %cwinner = {};
+      @cwrank = ();
       $cwinner = '';
       $crank = 0;
       $cvespera = 0;
@@ -1075,7 +1075,6 @@ sub concurrence {
     @comentries = ();
 
     foreach $commemo (@commemoentries) {
-      next unless $commemo;
 
       if ($commemo =~ /tempora/i && ($trank[2] < 2 || $trank[0] =~ /Rogatio|Quattuor.*Sept/i)) {
         next;
@@ -1391,14 +1390,14 @@ sub precedence {
 
     if ($version =~ /1960/ && $winner{Rule} =~ /Festum Domini/ && $commemoratio{Rule} =~ /Festum Domini/i) {
       $commemoratio = '';
-      %commemoratio = undef;
+      %commemoratio = {};
       $dayname[2] = '';
       @commemoentries = ();
     }
 
     if ($version =~ /196/ && $commemoratio =~ /06-28r?/i && $dayofweek == 0) {
       $commemoratio = '';
-      %commemoratio = undef;
+      %commemoratio = {};
       $dayname[2] = '';
       @commemoentries = ();
     }
@@ -1406,7 +1405,7 @@ sub precedence {
     if ($vespera == $svesp && $vespera == 1 && $cvespera == 3 && $commemoratio{Rule} =~ /No second Vespera/i)
     {    # should be obsolte already
       $commemoratio = '';
-      %commemoratio = undef;
+      %commemoratio = {};
       $dayname[2] = '';
       @commemoentries = ();
     }
@@ -1418,7 +1417,7 @@ sub precedence {
   #
   #		if ($version =~ /196/ && $winner{Rule} =~ /Festum Domini/ && $commemoratio1{Rule} =~ /Festum Domini/) {
   #			$commemoratio1 = '';
-  #			%commemoratio1 = undef;
+  #			%commemoratio1 = {};
   #			$dayname[2] = '';
   #		}
   #	}
