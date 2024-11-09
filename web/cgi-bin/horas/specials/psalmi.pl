@@ -290,9 +290,12 @@ sub psalmi_major {
         || ($dayname[1] =~ /Quattuor Temporum Septembris/)
         || (($dayname[0] =~ /Pent/) && ($dayname[1] =~ /Vigil/)))
       {
-        my @canticles = split("\n", $psalmi{'DaymF Canticles'});
-        if ($dayofweek == 6) { $psalmi[1] .= '(1-7)'; $psalmi[2] = ';;142(8-12)'; }
-        $psalmi[-2] = $canticles[$dayofweek];
+        if ($dayofweek == 6) {
+          @psalmi = split("\n", $psalmi{'Daym6F Laudes'});
+        } else {
+          my @canticles = split("\n", $psalmi{'DaymF Canticles'});
+          $psalmi[-2] = $canticles[$dayofweek];
+        }
       }
     }
   } elsif ($version =~ /Trident/
