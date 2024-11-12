@@ -593,7 +593,7 @@ sub lectio : ScriptFunc {
     )
   { # sanctoral simplex feast (unless monastic in Nativitytide and Epiphany => prevent the former Octave days of Stephanus, Joannes, Innocents)
     $num = 4;    # diverge to legend
-    setbuild("L3: Diverged to Legend");
+    setbuild2("L3: Diverged to Legend");
   }
   my %w = (columnsel($lang)) ? %winner : %winner2;
 
@@ -864,7 +864,7 @@ sub lectio : ScriptFunc {
         && $num == 12
         && !(($rank > 5.5 && $dayofweek && !homilyflag) || ($winner{Rank} =~ /Dominica/i && $rank > 3)))
     )
-    || ($rank < 2 && $winner =~ /Sancti/i && $num == 4)
+    || (($ltype1960 == LT1960_SANCTORAL || $rank < 2) && $winner =~ /Sancti/i && $num == 4)
     )
   {    # 9th lesson diverged to Legend of Commemorated Saint
     %w = (columnsel($lang)) ? %winner : %winner2;
@@ -985,8 +985,10 @@ sub lectio : ScriptFunc {
   }
 
   if ($ltype1960 == LT1960_SANCTORAL && $num == 4) {
-    if (exists($w{'Lectio94'})) {
+    if (exists($winner{'Lectio94'})) {
+      %w = (columnsel($lang)) ? %winner : %winner2;
       $w = $w{'Lectio94'};
+      setbuild2('Last lectio Commemoratio ex Legenda historica (#94/1960)');
     }    #contracted legend for commemoratio
     else {
       my $w1 = %w;
