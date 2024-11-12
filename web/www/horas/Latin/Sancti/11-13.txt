@@ -1,6 +1,9 @@
 [Rank]
 S. Didaci Confessoris;;Semiduplex;;2.2;;vide C5
 
+[Rank] (rubrica innovata)
+S. Didaci Confessoris;;Simplex;;1.1;;vide C5
+
 [Rule]
 vide C5;mtv
 9 lectiones
@@ -30,3 +33,6 @@ Dídacus, Hispánus, ex óppido sancti Nicolái de Portu diœcésis Hispalénsis
 
 [Lectio9]
 @Commune/C5:Lectio9 in 2 loco
+
+[Lectio94](rubrica innovata)
+@Sancti/11-13n:Lectio94
