@@ -192,4 +192,130 @@ sub martyrologium {
   return $t;
 }
 
+sub luna {
+
+  my ($month, $day, $year, $lang) = @_;
+  my $epact2008 = 23;
+  my $edays = date_to_days(1, 0, 2008);
+  my $lunarmonth = 29.53059;
+  my @months = (
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December',
+  );
+  my @months_it = (
+    'Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno',
+    'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre',
+  );
+  my @ordinals = (
+    'prima', 'secúnda', 'tértia', 'quarta',
+    'quinta', 'sexta', 'séptima', 'octáva',
+    'nona', 'décima', 'undécima', 'duodécima',
+    'tértia décima', 'quarta décima', 'quinta décima', 'sexta décima',
+    'décima séptima', 'duodevicésima', 'undevicésima', 'vicésima',
+    'vicésima prima', 'vicésima secúnda', 'vicésima tértia', 'vicésima quarta',
+    'vicésima quinta', 'vicésima sexta', 'vicésima séptima', 'vicésima octáva',
+    'vicésima nona', 'tricésima',
+  );
+  my $sfx1 = (($day % 10) == 1) ? 'st' : (($day % 10) == 2) ? 'nd' : (($day % 10) == 3) ? 'rd' : 'th';
+  my $t = (date_to_days($day, $month - 1, $year) - $edays + $epact2008);
+
+  $mult = floor($t / $lunarmonth);
+  $dist = floor($t - $mult * $lunarmonth - .25);
+  if ($dist <= 0) { $dist = 30 + $dist; }
+  my $sfx2 = (($dist % 10) == 1) ? 'st' : (($dist % 10) == 2) ? 'nd' : (($dist % 10) == 3) ? 'rd' : 'th';
+  $day = $day + 0;
+
+  if ($lang =~ /Latin/i) {
+    return ("Luna $ordinals[$dist-1]. Anno $year\n", ' ');
+  } elsif ($lang =~ /Italiano/i) {
+    return ("$day $months_it[$month - 1] $year, Luna $gday");
+  } else {
+    return ("$months[$month - 1] $day$sfx1 $year. The $dist$sfx2 day of the Moon.", $months[$month - 1]);
+  }
+}
+
+sub gregor {
+
+  my ($month, $day, $year, $lang) = @_;
+  my $golden = $year % 19;
+  my @epact = (29, 10, 21, 2, 13, 24, 5, 16, 27, 8, 19, 30, 11, 22, 3, 14, 25, 6, 17);
+  my @om = (30, 29, 30, 29, 30, 29, 30, 29, 30, 29, 30, 29, 30, 100);
+  my @firstmonth = (2, 21, 10, 29, 18, 7, 26, 15, 4, 23, 12, 1, 20, 9, 28, 17, 6, 25, 14);
+  my $leapday;    # only set in the last days of February in a leap year
+
+  if ($golden == 18) {
+    $om[12] = 29;
+  } else {
+    $om[12] = 30;
+  }
+  if (leapyear($year) && ($month > 2)) { $om[1] = 30; }    # || ($month == 2 && $day > 24)
+  if ($golden == 0) { unshift(@om, 30); }
+  if ($golden == 8 || $golden == 11) { unshift(@om, 30); }
+
+  if (leapyear($year) && $month == 2 && $day >= 24) {
+    $leapday = ($day + 1) % 30;                            #  24->25, 25->26, "29"->0
+    if ($day == 29) { $day = 24; }
+  }
+
+  my $t = date_to_days($day, $month - 1, $year);
+  my @d = days_to_date($t);
+  my $yday = $d[7];
+  my $num = -$epact[$golden] - 1;
+  my $i = 0;
+
+  while ($num < $yday) {
+    $num += $om[$i];
+    $i++;
+  }
+  my $gday;
+  $num -= $om[$i - 1];
+  $gday = $yday - $num;
+  my @ordinals = (
+    'prima', 'secúnda', 'tértia', 'quarta',
+    'quinta', 'sexta', 'séptima', 'octáva',
+    'nona', 'décima', 'undécima', 'duodécima',
+    'tértia décima', 'quarta décima', 'quinta décima', 'sexta décima',
+    'décima séptima', 'duodevicésima', 'undevicésima', 'vicésima',
+    'vicésima prima', 'vicésima secúnda', 'vicésima tértia', 'vicésima quarta',
+    'vicésima quinta', 'vicésima sexta', 'vicésima séptima', 'vicésima octáva',
+    'vicésima nona', 'tricésima',
+  );
+  my @months = (
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December',
+  );
+  my @months_it = (
+    'Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno',
+    'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre',
+  );
+  $day = $leapday || $day;    # recover English date in Leap Years
+  my $sfx1 =
+      ($day > 3 && $day < 21) ? 'th'
+    : (($day % 10) == 1) ? 'st'
+    : (($day % 10) == 2) ? 'nd'
+    : (($day % 10) == 3) ? 'rd'
+    : 'th';
+  my $sfx2 =
+      ($gday > 3 && $gday < 21) ? 'th'
+    : (($gday % 10) == 1) ? 'st'
+    : (($gday % 10) == 2) ? 'nd'
+    : (($gday % 10) == 3) ? 'rd'
+    : 'th';
+  $day = $day + 0;
+
+  if ($lang =~ /Latin/i) {
+    return ("Luna $ordinals[$gday-1] Anno Dómini $year\n", ' ');
+  } elsif ($lang =~ /Polski/i) {
+    return ("Roku Pańskiego $year");
+  } elsif ($lang =~ /Francais/i) {
+    return ("L'année du Seigneur $year, le $gday$sfx2 jour de la Lune");
+  } elsif ($lang =~ /Italiano/i) {
+    return ("Anno del Signore $year, $day $months_it[$month - 1], Luna $gday");
+  } else {
+    return ("$months[$month - 1] $day$sfx1 $year, the $gday$sfx2 day of the Moon,", $months[$month - 1]);
+  }
+
+  #return sprintf("%02i", $gday);
+}
+
 1;
