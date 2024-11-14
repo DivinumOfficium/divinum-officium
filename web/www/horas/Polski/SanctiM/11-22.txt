@@ -1,0 +1,27 @@
+[Ant Matutinum 3N]
+Panna chwalebna * zawżdy Ewangelję Chrystusowe nosiła na piersiach i we dnie i w nocy nieustawała od rozmów Boskich i modlitwy.
+
+[Lectio5]
+@Sancti/11-22:Lectio4:s/ Któremu.*//
+
+[Lectio6]
+@Sancti/11-22:Lectio4:s/.* Któremu/Któremu/ s/$/~/
+@Sancti/11-22:Lectio5:s/ Którym.*//
+
+[Lectio7]
+@Sancti/11-22:Lectio5:s/.* Którym/Którym/ s/$/~/
+@Sancti/11-22:Lectio6:s/ Gdzie.*//
+
+[Lectio8]
+@Sancti/11-22:Lectio6:s/.* Gdzie/Gdzie/
+
+[Lectio10]
+@Sancti/11-22:Lectio8:s/ Ale.*//
+
+[Lectio11]
+@Sancti/11-22:Lectio8:s/.* Ale/Ale/ s/$/~/
+@Sancti/11-22:Lectio9:s/potrzebnych.*/potrzebnych./
+
+[Lectio12]
+@Sancti/11-22:Lectio9:s/.* potrzebnych\. //
+
