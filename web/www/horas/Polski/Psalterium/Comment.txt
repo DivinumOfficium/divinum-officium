@@ -28,3 +28,69 @@ Komemoracja ferii
 Komemoracja niedzieli
 Komemoracja świętego lub świętej
 Komemoracja Wigilii Epifanii
+
+[Menses]
+sierpnia
+września
+października
+listopada
+grudnia
+
+[Festa]
+none
+ryt prosty
+ryt półzdwojony
+(sed rubrica 1955)
+ryt prosty
+ryt zdwojony
+ryt zdwojony większy
+ryt zdwojony II. klasy
+ryt zdwojony I. klasy
+ryt zdwojony I. klasy
+
+[Festa] (rubrica 196)
+Ferja
+IV. klasy
+III. klasy
+III. klasy
+III. klasy
+II. klasy
+I. klasy
+I. klasy
+
+[Dominicae]
+ryt zdwojony I. klasy
+niedziela ryt półzdwojony I klasy
+niedziela ryt półzdwojony II klasy
+niedziela antycypowana ryt półzdwojony
+(sed rubrica Tridentina)
+niedziela antycypowana ryt prosty
+niedziela mniejsza ryt półzdwojony
+
+[Feriae]
+Ferja
+Ferja
+Ferja większa
+(sed rubrica Monastic.*Divino)
+Ferja uprzywilejowana III. ordynku
+Ferja większa
+(sed rubrica Monastic.*Divino)
+Ferja uprzywilejowana II. ordynku
+Ferja większa
+(sed rubrica Monastic.*Divino)
+Ferja uprzywilejowana II. ordynku
+Ferja uprzywilejowana
+Ferja uprzywilejowana
+Ferja uprzywilejowana
+
+[Vigilia]
+Wigilja
+
+[Dies Octavæ]
+Dzień Oktawy
+
+[ordinis]
+ordynku
+
+[classis]
+klasy
