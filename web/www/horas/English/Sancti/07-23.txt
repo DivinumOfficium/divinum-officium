@@ -1,15 +1,12 @@
 [Rank]
-S. Apollinaris Episcopi Mart;;Duplex;;3;;vide C2
-
-[Rank] (rubrica innovata)
-S. Apollinaris Episcopi et Mart;;Duplex optional;;2;;vide C2
+St. Apollinaris, Bishop and Martyr;;Duplex;;3;;vide C2
 
 [Oratio]
 O God, Who art thyself the exceeding great Reward of all faithful souls, and in Whose sight this day is holy because thy blessed Priest Apollinaris did hereon lift up his last earthly testimony, we beseech thee to grant unto us thy servants, who do keep his worshipful Feast-day, to obtain by his prayers thy gracious remission for our offences.
 $Per Dominum
 
 [Commemoratio Sabbat]
-!Commemoratio S. Liborii Ep. Conf.
+!Commemoration of St. Liborius, Bishop and Confessor
 @Commune/C4:Oratio proper
 $Oremus
 v. Hear, O Lord, we beseech thee, the prayers which we offer thee on this the solemn feast-day of thy blessed Confessor and bishop Liborius, and, for the sake of him who so nobly served thee, forgive us our trespasses.
@@ -18,7 +15,7 @@ $Per Dominum
 [Commemoratio]
 !Commemoration of St. Liborius, Bishop and Confessor
 @Commune/C4:Oratio proper
-$Oremus.
+$Oremus
 v. Grant, we beseech thee, almighty God, that the venerable solemnity of blessed Liborius, thy confessor and bishop, may increase our devotion and promote our salvation.
 $Per Dominum.
 
@@ -52,7 +49,7 @@ Let us, then, turn about, and look well to it that there be no strife among us, 
 &teDeum
 
 [Commemoratio 3] (rubrica divino aut rubrica tridentina)
-!Commemoratio S. Christinae.
+!Commemoration of St. Christina
 @Commune/C6:Oratio proper
 $Oremus
 O Lord, we pray thee that thy blessed handmaiden and witness Christina in whom Thou hast ever been well pleased, because of her worthy maidenhood and her mighty showing-forth of thy power, may entreat thy pardon on our behalf.
