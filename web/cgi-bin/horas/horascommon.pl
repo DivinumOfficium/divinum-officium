@@ -1628,28 +1628,28 @@ sub rankname {
     my $i = $rank;
 
     if ($version =~ /19(?:55|6)/ && $winner !~ /Pasc5-3/ && $latname =~ /feria/i) { $i = 0 }    # 'Feria';
-    if ($latname =~ /Sanctæ Fami/i && $version !~ /196/) { $i = 4; }                             # Duplex majus
+    if ($latname =~ /Sanctæ Fami/i && $version !~ /196/) { $i = 4; }                            # Duplex majus
     if ($version =~ /1570|1617/ && $rank =~ /^4/) { $i = 3; }    # Duplex as no Duplex majus yet in 1570/1617
 
     $rankname = $ranktable[$i];
 
     if ($latname =~ /Vigilia Epi/i) {
-      $rankname = $ranktable[2];                                  # Semiduplex
+      $rankname = $ranktable[2];                                 # Semiduplex
       $rankname .= " $t{Vigilia} II. $t{classis}" unless $version =~ /Trident/;
     } elsif ($latname =~ /^In Vigilia/i && $rank <= 2.5) {
-      $rankname = $ranktable[1];                                  # Simplex
+      $rankname = $ranktable[1];                                 # Simplex
     }
 
     if ($latname =~ /Dominica/i && $version !~ /196/) {
       my @sundaytable = split("\n", $t{Dominicae});
       local $_ = getweek($day, $month, $year, $dayofweek == 6 && $hora =~ /(?:Vespera|Completorium)/);
       my $i = (/Pasc[017]/ || /Pent01/)
-        ? 0                                                       # 'Duplex I. classis'
-        : (/Adv1|Quad[1-6]/) ? 1                                  # 'Semiduplex Dominica I. classis'
-        : (/Adv[2-4]|Quadp/) ? 2                                  # 'Semiduplex Dominica II. classis'
+        ? 0                                                      # 'Duplex I. classis'
+        : (/Adv1|Quad[1-6]/) ? 1                                 # 'Semiduplex Dominica I. classis'
+        : (/Adv[2-4]|Quadp/) ? 2                                 # 'Semiduplex Dominica II. classis'
         : (/Epi[1-6]|Pent[22-23]/ && $dayofweek && !($dayofweek == 6 && $hora =~ /(?:Vespera|Completorium)/))
-        ? 3                                                       # 'Semiduplex Dominica anticipata'
-        : 4;                                                      # 'Semiduplex Dominica minor';
+        ? 3                                                      # 'Semiduplex Dominica anticipata'
+        : 4;                                                     # 'Semiduplex Dominica minor';
       $i = 2 if $version =~ /Trident/ && /Quad[2-4]/;
       $rankname = $sundaytable[$i];
     }
