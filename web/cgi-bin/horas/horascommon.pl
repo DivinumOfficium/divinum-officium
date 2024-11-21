@@ -1605,7 +1605,7 @@ sub climit1960 {
 # returns the winner name and rank, in $lang1
 sub setheadline {
   our (%winner, $lang1);
-  $winner{Rank} =~ s/\;\;.*//r . " ~ " . rankname($lang1);    # $rank[0] ~ $rankname
+  substr($winner{Rank}, 0, index($winner{Rank}, ';')) . " ~ " . rankname($lang1);    # $rank[0] ~ $rankname
 }
 
 #*** rankname($lang);
