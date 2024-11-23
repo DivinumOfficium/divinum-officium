@@ -746,12 +746,13 @@ sub lectio : ScriptFunc {
   }
 
   #look for commune if sancti and 'ex commune' (for Trident also "vide")
-  if (!$w
+  if (
+      !$w
     && $winner =~ /sancti/i
     && $commune =~ /^C/
-    && $communetype =~ /^ex/i
-    && ($rank > 3 || ($rule =~ /in (\d) Nocturno/i && $1 eq $nocturn)))
-  {
+    && ( ($communetype =~ /^ex/i && $rank > 3)
+      || ($rule =~ /in (\d) Nocturno Lectiones ex/i && $1 eq $nocturn))
+  ) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
     my $lecnum = "Lectio$num";
 
