@@ -169,7 +169,8 @@ $only = !$Ck && ($lang1 eq $lang2);
 
 if ($officium eq 'Pofficium.pl') {
   our $date1 = strictparam('date1');
-  if (!$date1) { $date1 = gettoday(); }
+  if (!$date1 || $date1 eq 'hodie') { $date1 = gettoday(); }
+  if ($date1 eq 'crastina') { $date1 = prevnext(gettoday(), 1); }
   if ($command =~ /next/i) { $date1 = prevnext($date1, 1); $command = ''; }
   if ($command =~ /prev/i) { $date1 = prevnext($date1, -1); $command = ''; }
 }

@@ -240,8 +240,8 @@ sub psalm : ScriptFunc {
 
   my $output = "!$title";
   $output .= " [" . ($column == 1 ? ++$psalmnum1 : ++$psalmnum2) . "]"
-    unless 230 < $psnum && $psnum < 234;                          # add psalm counter
-  $output .= "\n!$source" if $source;                             # add source
+    unless 230 < $psnum && $psnum < 234;                                   # add psalm counter
+  $output .= "\n!$source" if $source;                                      # add source
   $output .= "\n" . join("\n", @lines) . "\n";
   $output .= "\&Gloria\n" unless $psnum == 210 || $nogloria;
   $output =~ s/\$ant/Ant. $antline/g if $psnum == 94;
