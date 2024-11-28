@@ -311,7 +311,7 @@ sub setfont {
   $color = '' if $color eq 'italic';                          # italic is not a color
   my $font = "<FONT ";
   if ($size) { $font .= "SIZE='$size' "; }
-  if ($color !~ /black/i) { $font .= "COLOR=\"$color\""; }    # black not explictly for dark mode
+  if ($color && $color !~ /black/i) { $font .= "COLOR=\"$color\""; }    # black not explictly for dark mode
   $font .= ">";
   if (!$text) { return $font; }
   my $bold = '';
