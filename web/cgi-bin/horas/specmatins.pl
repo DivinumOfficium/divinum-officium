@@ -585,6 +585,7 @@ sub lectio : ScriptFunc {
       && $rule !~ /1 et 2 lectiones/i
       && $num == 3
       && $winner =~ /Sancti/i
+      && $winner !~ /09-sab-oct/
       && $rank < 2
       && $winner{Rank} !~ /vigil/i
       && !($version =~ /1963/i && $dayname[0] != /Nat|Epi1/i))
@@ -1102,11 +1103,11 @@ sub lectio : ScriptFunc {
   foreach (@w) {
     if (/^([0-9]+)\s+(.*)/s) {
       my $rest = $2;
-      my $num = setfont($smallfont, $1);
+      my $num = "\n" . setfont($smallfont, $1);
       $rest =~ s/^./\u$&/ unless ($nonumbers);
 
       if ($initial) {
-        $num = "v. ";
+        $num = "\nv. ";
         $initial = 0;
       } elsif ($nonumbers) {
         $num = '';
@@ -1114,9 +1115,9 @@ sub lectio : ScriptFunc {
       $_ = "$num $rest";
     } else {
       $initial = 1 if (/^!/ && $nonumbers);
-      $_ = "$_";
+      $_ = "\n$_";
     }
-    $w .= "$_\n";
+    $w .= "$_";
   }
 
   #handle parentheses in non Latin

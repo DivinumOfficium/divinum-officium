@@ -58,7 +58,12 @@ sub capitulum_prima {
 
   my $capit = $brevis{$key} . "\n\$Deo gratias\n_\n";
   setbuild1('Capitulum', "Psalterium $key");
-  setcomment($label, 'Source', $key eq 'Feria', $lang);
+
+  if ($version =~ /1963/) {
+    $capit = "$label\n" . $capit;
+  } else {
+    setcomment($label, 'Source', $key eq 'Feria', $lang);
+  }
 
   my @resp;
 
