@@ -1,16 +1,19 @@
+[Ant Matutinum 3N]
+Jednym z dwu, * którzy szli byli za Panem, był Andrzéj, brat Szymona Piotra, alleluja.
+
 [Lectio5]
-@Sancti/11-30:Lectio4:s/Po tym.*//s
+@Sancti/11-30:Lectio4:s/Przybywszy.*//s
 
 [Lectio6]
-@Sancti/11-30:Lectio4:s/.* Po tym/Po tym/s s/$/~/
-@Sancti/11-30:Lectio5:s/Tedy .*//s
+@Sancti/11-30:Lectio4:s/.* Przybywszy/Przybywszy/s s/$/~/
+@Sancti/11-30:Lectio5:s/Przeto .*//s
 
 [Lectio7]
-@Sancti/11-30:Lectio5:s/.* Tedy/Tedy/s s/$/~/
-@Sancti/11-30:Lectio6:s/Przywiedziony .*//s
+@Sancti/11-30:Lectio5:s/.* Przeto/Przeto/s s/$/~/
+@Sancti/11-30:Lectio6:s/Przyszedłszy .*//s
 
 [Lectio8]
-@Sancti/11-30:Lectio6:s/.* Przywiedziony/Przywiedziony/s
+@Sancti/11-30:Lectio6:s/.* Przyszedłszy/Przyszedłszy/s
 
 [Lectio10]
 @Sancti/11-30:Lectio8:s/Co więc, naj.*//s
