@@ -1,5 +1,5 @@
 [Oratio mortuorum1]
-@Sancti/11-02::s/Twoich/Twoich Zakonu naszego/
+@Sancti/11-02::s/twoich/twoich Zakonu naszego/
 
 [Oratio 2]
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
@@ -8,7 +8,7 @@
 [Special Prima]
 Psalmi feriales
 
-@Sancti/11-02:Oratio mortuorum2:s/t.woich/twoich Zakonu naszego/
+@Sancti/11-02:Oratio mortuorum2:s/twoich/twoich Zakonu naszego/
 
 &special('#Martyrologium', 'Polski')
 _
