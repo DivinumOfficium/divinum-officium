@@ -93,11 +93,5 @@ R. Et rosa fulget in Gállia.
 [Lectio12]
 @Sancti/11-11:Lectio8:s/.* Illa /Illa /s
 
-[Responsory12]
-R. Elégit te Dóminus sacerdótem sibi
-* Ad sacrificándum ei hóstiam laudis.
-V. Immola Deo sacrificium laudis, et redde Altissimo vota tua.
-R. Ad sacrificándum ei hóstiam laudis.
-
 [Ant Vespera 3]
 @Sancti/11-11:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//

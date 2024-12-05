@@ -9,8 +9,9 @@ In Commemoratione Omnium Defunctorum Ordinis nostri;;Duplex;;5;;ex C9
 [Oratio mortuorum1]
 @Sancti/11-02::s/tuárum/tuárum Ordinis nostri/
 
-[Oratio_Fid]
-@Commune/C9
+[Oratio Matutinum]
+&Dominus_vobiscum
+@Commune/C9:Oratio_Fid:s/tuárum/tuárum Ordinis nostri/
 
 [Oratio 2]
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s

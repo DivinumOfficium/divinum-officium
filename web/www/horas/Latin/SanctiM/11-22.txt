@@ -39,14 +39,14 @@ R. Eja, mílites Christi, abjícite ópera tenebrárum, et induímini arma lucis
 @Sancti/11-22:Responsory4
 
 [Lectio6]
-@Sancti/11-22:Lectio4:s/.* Cui/Cui/
+@Sancti/11-22:Lectio4:s/.* Cui/Cui/ s/$/~/
 @Sancti/11-22:Lectio5:s/ Quo.*//
 
 [Responsory6]
 @Sancti/11-22:Responsory5
 
 [Lectio7]
-@Sancti/11-22:Lectio5:s/.* Quo/Quo/
+@Sancti/11-22:Lectio5:s/.* Quo/Quo/ s/$/~/
 @Sancti/11-22:Lectio6:s/ Quo.*//
 
 [Responsory7]
@@ -71,7 +71,7 @@ R. Eja, mílites Christi, abjícite ópera tenebrárum, et induímini arma lucis
 @Sancti/11-22:Responsory8
 
 [Lectio11]
-@Sancti/11-22:Lectio8:s/.* Non est/Non est/
+@Sancti/11-22:Lectio8:s/.* Non est/Non est/ s/$/~/
 @Sancti/11-22:Lectio9:s/ Tardante.*//
 
 [Responsory11]

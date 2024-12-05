@@ -16,14 +16,15 @@ Psalmi Dominica
 @Commune/C1
 
 [Oratio]
-Concéde, quǽsumus omnípotens Deus, ut ad meliórem vitam sanctórum Monachórum exémplua non próvocent: † quátenus, quorum solémnia ágimus, * étiam actus imitémur.
+Concéde, quǽsumus omnípotens Deus, ut ad meliórem vitam sanctórum Monachórum exémpla nos próvocent: † quátenus, quorum solémnia ágimus, * étiam actus imitémur.
 $Per Dominum
 
 [Invit]
 @Sancti/11-01
 
 [Hymnus Matutinum]
-@SanctiM/11-01:HymnusM Laudes:s/Cœtus.*Monachórum/Monachórum/s
+@Sancti/11-01:HymnusM Laudes:1-5
+@Sancti/11-01:HymnusM Laudes:21-30
 
 [Ant Matutinum 3N]
 @SanctiM/11-01
@@ -55,7 +56,8 @@ V. Ecce quam bonum et quam jucúndum habitáre fratres in unum!
 R. Contemnéntes aulam régiam, pervenérunt ad regna cæléstia.
 
 [Lectio4]
-@Commune/C4:Lectio3 in 2 loco:s/10-/12-/ s/10 .*12/12/s
+@Commune/C4:Lectio3 in 2 loco:1 s/10-/12-/
+@Commune/C4:Lectio3 in 2 loco:4-7 s/\p{L}/\u$&/
 
 [Responsory4]
 @Commune/C3
