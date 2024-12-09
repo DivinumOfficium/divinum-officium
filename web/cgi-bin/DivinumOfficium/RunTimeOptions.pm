@@ -69,6 +69,8 @@ sub check_version {
   my $v = shift;
   my $missa = shift;
 
+  return undef unless $v;
+
   if (!$missa) {
     return LEGACY_VERSION_NAMES->{$v} || unequivocal($v, 'versions');
   } else {
