@@ -657,9 +657,9 @@ sub lectio : ScriptFunc {
 
   # TODO: There seems to be a mismatch between taking care of a conflict of Die VII infra 8vam Immaculata Conceptio. and Q.T. in Adventum
   # The lessons are repeated from the feast day 12-08 unless it is Feria IV Q.T.?
-  if ($version =~ /(?:1888|1906|Divino)/i && $month == 12 && $day == 14 && $dayofweek !~ 3 && $dayofweek) {
-    $w{"Lectio$num"} = $c{"Lectio$num"};
-  }
+  #if ($version =~ /(?:1888|1906|Divino)/i && $month == 12 && $day == 14 && $dayofweek !~ 3 && $dayofweek) {
+  #  $w{"Lectio$num"} = $c{"Lectio$num"};
+  #}
 
   #scriptura1960
   if ( $num < 3
