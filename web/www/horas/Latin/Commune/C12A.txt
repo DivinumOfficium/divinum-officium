@@ -38,7 +38,7 @@ $Qui tecum
 @Commune/C12::s/(#Capitulum.).*/$1/s
 @Sancti/03-25:Capitulum Laudes
 _
-@Psalterium/Mariaant:Advent:s/.*V./V./s s/v. .*//s
+@Psalterium/Mariaant:Advent:8-9
 
 #Canticum: Nunc dimittis
 @Tempora/Adv1-0:Ant 2:s/^/Ant. /
@@ -107,6 +107,9 @@ $Deo gratias
 
 [Special Prima]
 @Commune/C12:Minor intro
+@Commune/C12:Hymnus minor
+
+#Psalmi
 @Sancti/03-25:Ant Vespera:1 s/^/Ant. / s/;;.*//
 &psalm(53)
 
@@ -124,6 +127,9 @@ _
 
 [Special Tertia]
 @Commune/C12:Minor intro
+@Commune/C12:Hymnus minor
+
+#Psalmi
 @Sancti/03-25:Ant Vespera:2 s/^/Ant. / s/;;.*//
 &psalm(119)
 
@@ -142,6 +148,9 @@ _
 
 [Special Sexta]
 @Commune/C12:Minor intro
+@Commune/C12:Hymnus minor
+
+#Psalmi
 @Sancti/03-25:Ant Vespera:3 s/^/Ant. / s/;;.*//
 &psalm(122)
 
@@ -159,6 +168,9 @@ _
 
 [Special Nona]
 @Commune/C12:Minor intro
+@Commune/C12:Hymnus minor
+
+#Psalmi
 @Sancti/03-25:Ant Vespera:5 s/^/Ant. / s/;;.*//
 &psalm(125)
 
@@ -171,7 +183,7 @@ _
 #Capitulum
 @Sancti/03-25:Capitulum Laudes
 _
-@Psalterium/Mariaant:Advent:s/.*V./V./s s/v. .*//s
+@Psalterium/Mariaant:Advent:8-9
 @:Minor final
 
 [Versum 3]

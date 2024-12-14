@@ -132,10 +132,6 @@ $Credo
 12 Tunc præcépit, et dixit mihi Creátor ómnium: et qui creávit me, requiévit in tabernáculo meo.
 13 Et dixit mihi: In Jacob inhábita, et in Israël hereditáre, et in eléctis meis mitte radíces.
 
-[HymnusM minor]
-@:Hymnus minor:1-12
-@Psalterium/Doxologies:NatT
-
 [Lectio2]
 !Sir 24:15-16
 15 Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea.
@@ -194,7 +190,7 @@ Et mortis hora súscipe.
 _
 @Psalterium/Doxologies:Nat
 
-[Hymnus minor] (rubrica 1570 aut rubrica monastica dicitur)
+[HymnusM minor]
 
 #Hymnus
 v. Meménto salútis auctor,
@@ -208,6 +204,9 @@ Tu nos ab hoste prótege,
 Et hora mortis súscipe.
 _
 @Psalterium/Doxologies:NatT
+
+[Hymnus minor] (rubrica 1570 aut rubrica monastica)
+@:HymnusM minor
 
 [Minor intro]
 #Incipit
