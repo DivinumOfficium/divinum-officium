@@ -54,7 +54,16 @@ _
 @Commune/C12
 
 [Ant Matutinum]
-@Commune/C11::s/V\. .*/V. Diffúsa est grátia in lábiis tuis./g s/R\. .*/R. Proptérea benedíxit te Deus in ætérnum./g s/Post partum.*\./Ángelus Dómini \* nuntiávit Maríæ, et concépit de Spíritu Sancto./
+@Commune/C11::s/Post partum.*\./Ángelus Dómini \* nuntiávit Maríæ, et concépit de Spíritu Sancto./
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 2
+
+[Nocturn 2 Versum]
+@Commune/C6:Versum 2
+
+[Nocturn 3 Versum]
+@Commune/C6:Versum 2
 
 [Lectio1]
 !Luc 1:26-28
