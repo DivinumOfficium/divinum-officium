@@ -1,13 +1,9 @@
 [Rank]
 Die IV infra octavam Paschae;;Semiduplex I classis;;6;;ex Pasc0-0
 
-[Rule]
-ex Pasc0-0;
-1 nocturn;
-Omit Hymnus Preces Suffragium;
-Minores sine Antiphona;
-Capitulum Versum 2;
-Psalmi Dominica;
+[Oratio]
+O God, Who dost every year fill us with holy gladness for the rising-again of the Lord, mercifully grant that these Feast-days which we are now keeping here in time, may be to us a mean whereby in the end we may worthily attain unto those pleasures which are at thy right hand for evermore.
+$Per eumdem
 
 [Ant Matutinum]
 @Tempora/Pasc0-0::s/^V\..*//sm
@@ -17,8 +13,7 @@ R. When they saw the Lord, alleluia.
 [Lectio1]
 Continuation of the Holy Gospel according to John
 !John 21:1-14
-At that time: After this, Jesus showed himself again to the disciples at the sea~
-of Tiberias. And he showed himself after this manner. There were together Simon Peter, and Thomas, who is called Didymus, And so forth.
+At that time: After this, Jesus showed himself again to the disciples at the sea of Tiberias. And he showed himself after this manner. There were together Simon Peter, and Thomas, who is called Didymus, And so forth.
 _
 Homily by Pope St. Gregory (the Great.)
 !24th on the Gospels
@@ -47,10 +42,6 @@ It may likewise be asked why, when the disciples were toiling in the sea, the Lo
 
 [Ant 2]
 Cast the net on the right side of the ship, * and ye shall find, alleluia.
-
-[Oratio]
-O God, Who dost every year fill us with holy gladness for the rising-again of the Lord, mercifully grant that these Feast-days which we are now keeping here in time, may be to us a mean whereby in the end we may worthily attain unto those pleasures which are at thy right hand for evermore.
-$Per eumdem
 
 [Ant 3]
 Jesus saith * unto His disciples: Bring of the fish which ye have now caught. Simon Peter went up, and drew the net to land, full of great fishes, alleluia.

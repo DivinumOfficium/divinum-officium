@@ -12,16 +12,37 @@ Prima=53
 [Ant 1]
 La notte del sabato, * all'alba del primo giorno della settimana, andò Maria Maddalena e l'altra Maria a visitare il sepolcro, alleluia.
 
-[Ant 41]
-La notte del sabato, * all'alba del primo giorno della settimana, andò Maria Maddalena e l'altra Maria a visitare il sepolcro, alleluia.
+[Oratio]
+O Dio, che in questo giorno, debellata la morte per mezzo del tuo Unigenito, ci hai riaperto l'ingresso dell'eternità: i nostri voti, che precedi coll'ispirarli, seguili anche coll'assecondarli. Per lo stesso Signore.
+$Per eumdem
+
+[Special Vespera 1]
+#Sabato Santo Vesperi pasquali speciali
+_
+$Pater noster
+$Ave Maria
+_
+Ant. Allelúja, Allelúja, Allelúja.
+&psalm(116)
+Ant. Allelúja, Allelúja, Allelúja.
+_
+Ant. La notte del sabato, * all'alba del primo giorno della settimana, andò Maria Maddalena e l'altra Maria a visitare il sepolcro, alleluia.
+&psalm(232)
+Ant. La notte del sabato, * all'alba del primo giorno della settimana, andò Maria Maddalena e l'altra Maria a visitare il sepolcro, alleluia.
+
+&Dominus_vobiscum
+v. Preghiamo.
+v. Infondi in noi, o Signore, lo spirito della tua carità: e come ci hai nutriti coi sacramenti pasquali, così rendici colla tua bontà concordi.
+$Per Dominum eiusdem
+&Dominus_vobiscum
+
+V. Benediciamo il Signore, alleluia, alleluia.
+R. Grazie a Dio, alleluia, alleluia.
+$Fidelium animae
+$Pater noster
 
 [Invit]
 Il Signore è veramente risuscitato, * Alleluia.
-
-[Prelude Matutinum] (rubrica 1955 aut rubrica 1960)
-!Siccome la solenne celebrazione della vigilia pasquale tiene il posto dell'ufficio notturno della domenica di Resurrezione, omesso il Mattutino della medesima domenica di Resurrezione, immediatamente entro la celebrazione della Messa, dopo la comunione, si cantano le Lodi. L'Ufficio della domenica di Resurrezione prosegue quindi con la Prima. 
-_
-!Quelli invece che non furono presenti alla solenne vigilia pasquale, sono tenuti a dire il Mattutino e le Lodi della domenica di Resurrezione.
 
 [Ant Matutinum]
 Io sono colui che sono, * e il mio consiglio non è con gli empi, ma il mio diletto è nella legge del Signore, alleluia.;;1
@@ -63,8 +84,10 @@ R. Per andare ad imbalsamare Gesù, alleluia, alleluia.
 In questa festa dunque, sua e nostra, l'Angelo apparve in vesti bianche:  perché la risurrezione del Signore riaprendoci le porte del cielo, riparava le perdite sofferte dalla patria celeste. Ma ascoltiamo ciò che egli dice alle donne che giungono: «Non temete». Come se dicesse apertamente: Temano quelli che non amano la venuta dei cittadini del cielo; tremino quelli che, oppressi dai desideri carnali, disperano di poter giungere a godere della loro compagnia. Ma  perché temete voi che (negli Angeli) già riconoscete i vostri concittadini? Onde anche Matteo descrivendo l'apparizione dell'Angelo dice: «Il suo aspetto era come il lampo, e le sue vesti come neve».  perché il lampo, è vero, ispira terrore, ma il biancore della neve suggerisce dolci pensieri.
 &teDeum
 
-[Prelude Laudes] (rubrica 1955 aut rubrica 1960)
-@:Prelude Matutinum
+[Prelude Matutinum] (rubrica 1955 aut rubrica 1960)
+!Siccome la solenne celebrazione della vigilia pasquale tiene il posto dell'ufficio notturno della domenica di Resurrezione, omesso il Mattutino della medesima domenica di Resurrezione, immediatamente entro la celebrazione della Messa, dopo la comunione, si cantano le Lodi. L'Ufficio della domenica di Resurrezione prosegue quindi con la Prima. 
+_
+!Quelli invece che non furono presenti alla solenne vigilia pasquale, sono tenuti a dire il Mattutino e le Lodi della domenica di Resurrezione.
 
 [Ant Laudes]
 Un Angelo del Signore * discese dal cielo e, appressatosi, rovesciò la pietra e vi si pose a sedere sopra, alleluia, alleluia.
@@ -79,40 +102,11 @@ Ant. Questo è il giorno * che ha fatto il Signore : esultiamo e rallegriamoci i
 [Ant 2]
 E di buon mattino * il primo giorno della settimana arrivano al sepolcro sul levar del sole, alleluia.
 
-[Oratio]
-O Dio, che in questo giorno, debellata la morte per mezzo del tuo Unigenito, ci hai riaperto l'ingresso dell'eternità: i nostri voti, che precedi coll'ispirarli, seguili anche coll'assecondarli. Per lo stesso Signore.
-$Per eumdem
-
-[Special Vespera 1]
-#Sabato Santo Vesperi pasquali speciali
-_
-$Pater noster
-$Ave Maria
-_
-Ant. Allelúja, Allelúja, Allelúja.
-&psalm(116)
-Ant. Allelúja, Allelúja, Allelúja.
-_
-Ant. La notte del sabato, * all'alba del primo giorno della settimana, andò Maria Maddalena e l'altra Maria a visitare il sepolcro, alleluia.
-&psalm(232)
-Ant. La notte del sabato, * all'alba del primo giorno della settimana, andò Maria Maddalena e l'altra Maria a visitare il sepolcro, alleluia.
-
-&Dominus_vobiscum
-v. Preghiamo.
-v. Infondi in noi, o Signore, lo spirito della tua carità: e come ci hai nutriti coi sacramenti pasquali, così rendici colla tua bontà concordi.
-$Per Dominum eiusdem
-&Dominus_vobiscum
-
-V. Benediciamo il Signore, alleluia, alleluia.
-R. Grazie a Dio, alleluia, alleluia.
-$Fidelium animae
-$Pater noster
-
-[Ant Vespera]
-@:Ant Laudes
-
 [Ant 3]
 Ma osservando * videro rivoltata la pietra : la quale era molto grande, alleluia.
+
+[Ant 41]
+La notte del sabato, * all'alba del primo giorno della settimana, andò Maria Maddalena e l'altra Maria a visitare il sepolcro, alleluia.
 
 [Ant 43]
 Allelúja, alleluia, alleluia, alleluia.

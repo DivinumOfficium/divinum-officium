@@ -1,12 +1,6 @@
 [Rank]
 S. Petri Damiani;;Duplex;;3;;vide C4a
 
-[RankNewcal]
-S. Petri Damiani;;Duplex optional;;2;;vide C4a
-
-[Name]
-Petre
-
 [Rule]
 vide C4;
 Gloria
@@ -16,6 +10,9 @@ Gloria
 ! 3 klasy
 ! Szaty białe
 Św. Piotr urodził się w Rawennie w r. 1007. Z wdzięczności do brata, który ułatwił mu studia przybrał także jego imię Damian. Wstąpił do klasztoru Kamedułów w Fonte Avellana. Wybrany przeorem, z wielką gorliwością reformował życie zakonne. W r. 1057 został mianowany kardynałem-biskupem Ostii i odtąd współpracuje z papieżami w dziele reformy Kościoła. Zmarł w podróży 22 lutego 1072 r. Zostawił wiele listów, mów oraz innych pism.
+
+[Name]
+Petre
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -49,4 +46,3 @@ $Per Dominum.
 [Postcommunio]
 Prosimy Cię, Panie, niech święty Piotr, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
 $Per Dominum
-

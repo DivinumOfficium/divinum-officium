@@ -3,12 +3,6 @@ Sanctæ Familiæ Jesu Mariæ Joseph;;Duplex majus;;4
 (sed rubrica 1960)
 Sanctæ Familiæ Jesu Mariæ Joseph;;Duplex II classis;;5
 
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-No Sunday Commemoratio
-
 [Ant Vespera]
 Or Jacob * engendra Joseph l’époux de Marie, de laquelle est né Jésus qui est appelé Christ;;109
 L’Ange du Seigneur apparut en songe à Joseph, disant : Joseph, fils de David, ne crains pas d’accepter Marie pour ton épouse, car ce qui est né en elle, est du Saint-Esprit.;;112
@@ -60,9 +54,6 @@ Ainsi qu’au Père suprême et à l’Esprit,
 Gloire soit éternellement
 Ainsi soit-il.
 
-[Versum Prima]
-Qui avez été soumis à Marie et à Joseph.
-
 [Versum 1]
 V. Bienheureux ceux qui habitent en Votre maison, Seigneur.
 R. Dans les siècles des siècles, ils Vous loueront.
@@ -73,6 +64,10 @@ Le Verbe S’est fait chair * et il a habité parmi nous, plein de grâce et de 
 [Oratio]
 Seigneur Jésus-Christ qui, soumis à Marie et à Joseph, avez consacré la vie de famille par d’ineffables vertus, faites que, grâce au secours de tous deux, nous soyons formés par les exemples de votre sainte Famille et obtenions de jouir de son éternelle compagnie.
 $Qui vivis
+
+[Commemoratio]
+!Commemoratio Dominicæ in Octava Epiphaniæ
+@Tempora/Epi1-0a:Oratio :s/V\. .*/V. Tous viendront de Saba, alléluia. ./ s/R\. .*/R. Apportant l’or et l’encens, alléluia./
 
 [Invit]
 Le Christ, Fils de Dieu, soumis à Marie et à Joseph, * Venez, adorons-le.
@@ -194,7 +189,7 @@ R. Afin de devenir miséricordieux.
 
 [Lectio4]
 Des Lettres Apostoliques du Pape Léon XIII
-!Bref "Néminem fugit" 14 juin 1892
+!Bref « Néminem fugit» 14 juin 1892
 Quand le Dieu de miséricorde eut décidé de réaliser la grande œuvre du relèvement de l’humanité, que les siècles depuis longtemps attendaient, il en disposa l’ordre et l’économie de telle sorte que les débuts de cette œuvre offrissent au monde l’auguste spectacle d’une famille divinement constituée, en laquelle tous les hommes pussent contempler l’exemplaire le plus parfait de la société domestique, ainsi que de toute vertu et sainteté. Telle fut en effet cette famille de Nazareth, où, avant de répandre sur toutes les nations la splendeur de sa pleine lumière, le Soleil de justice, c’est-à-dire le Christ, Dieu, notre Sauveur, demeura caché avec la Vierge sa Mère et Joseph, l’homme très saint qui remplissait à l’égard de Jésus la charge paternelle. Il n’y a pas le moindre doute qu’à raison des louanges méritées dans la société habituelle de la vie domestique, par les mutuels services de charité, la sainteté des mœurs, et l'exercice de la piété familiale, cette sainte Famille ait brillé d’une souveraine supériorité, qui devait être pour les autres, un modèle de toutes ces vertus. Et la Providence l’a ainsi établie, selon son dessein plein de bonté, pour que tous les chrétiens, quelle que soit leur condition ou leur patrie, puissent facilement, s’ils tournent vers elle leur attention, avoir une cause et une invitation, pour la pratique de toute vertu.
 
 [Responsory4]
@@ -318,6 +313,9 @@ Illuminez-nous, Seigneur, * par les exemples de votre famille et dirigez nos pas
 !Phil 2:7
 v. Il s’est lui-même réduit à rien, prenant la forme d’esclave, devenu semblable aux hommes, apparaissant extérieurement comme un homme.
 
+[Versum Prima]
+Qui avez été soumis à Marie et à Joseph.
+
 [Responsory Tertia]
 R.br. A cause de nous, il s’est fait pauvre. * Bien qu’il fut riche.
 R. A cause de nous, il s’est fait pauvre. * Bien qu’il fut riche.
@@ -345,10 +343,6 @@ _
 V. Je suis pauvre et dans les peines, dès ma jeunesse.
 R. Mais exalté, j’ai été humilié et troublé.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
 [Responsory Nona]
 R.br. Je suis pauvre et dans les peines, * Dès ma jeunesse.
 R. Je suis pauvre et dans les peines, * Dès ma jeunesse.
@@ -372,7 +366,3 @@ Et ils disaient : * D’où lui viennent cette sagesse et ces vertus ? N’est-i
 
 [Ant 3]
 Or Marie * conservait toutes ces paroles, les méditant dans son cœur.
-
-[Commemoratio]
-!Commemoratio Dominicæ in Octava Epiphaniæ
-@Tempora/Epi1-0a:Oratio :s/V\. .*/V. Tous viendront de Saba, alléluia. ./ s/R\. .*/R. Apportant l’or et l’encens, alléluia./

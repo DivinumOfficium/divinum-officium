@@ -1,17 +1,6 @@
 [Rank]
 S. Casimiri Confessoris;;Semiduplex;;2.1;;vide C5
 
-[Rank1960]
-S. Casimiri Confessoris;;Duplex;;3;;vide C5
-
-[RankNewcal]
-S. Casimiri;;Semiduplex;;2.1;;vide C5
-
-[Rule]
-CPapaM=Lúcium;
-vide C5;
-Gloria
-
 [Comment]
 # 04 III – Św. Kazimierza, Wyznawcy
 ! 3 klasy
@@ -23,21 +12,3 @@ Wspomnienie św. Lucjusza I, Papieża i Męczennika. Św. Lucjusz rządził Koś
 [Oratio]
 Boże, który umocniłeś świętego Kazimierza cnotą stałości wśród rozkoszy dworu królewskiego i powabów świata: prosimy Cię, aby za jego wstawiennictwem wierni Twoi pogardzali ziemskimi dobrami, a zawsze zdążali do niebieskich.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Wspomnienie św. Lucjusza I
-@Commune/C2b:Oratio:s/N\./Lucjusza/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio Gregem
-
-[Commemoratio Secreta]
-!Wspomnienie św. Lucjusza I
-@Commune/C2b:Secreta
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
-
-[Commemoratio Postcommunio]
-!Wspomnienie św. Lucjusza I
-@Commune/C2b:Postcommunio:s/N\./Lucjusza/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio Gregem

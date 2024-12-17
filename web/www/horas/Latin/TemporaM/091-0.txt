@@ -18,29 +18,29 @@
 [Responsory4]
 @Tempora/091-1:Responsory1
 
-[Responsory5]
-@Tempora/091-0:Responsory4
-
 [Lectio5]
 @Tempora/091-0:Lectio4
 
-[Responsory6]
-@Tempora/091-0:Responsory5
+[Responsory5]
+@Tempora/091-0:Responsory4
 
 [Lectio6]
 @Tempora/091-0:Lectio5
 
-[Responsory7]
-@Tempora/091-0:Responsory6
+[Responsory6]
+@Tempora/091-0:Responsory5
 
 [Lectio7]
 @Tempora/091-0:Lectio6:s/Dicátur .*//s
 
-[Responsory8]
-@Tempora/091-1:Responsory2
+[Responsory7]
+@Tempora/091-0:Responsory6
 
 [Lectio8]
 @Tempora/091-0:Lectio6:s/.* Dicátur /Dicátur /s
+
+[Responsory8]
+@Tempora/091-1:Responsory2
 
 [Responsory9]
 @Tempora/091-0:Responsory7

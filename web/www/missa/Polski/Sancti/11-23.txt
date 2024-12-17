@@ -1,12 +1,6 @@
 [Rank]
 S. Clementis Papae et Martyris;;Duplex;;3;;vide C4b
 
-[Rank1570]
-S. Clementis Papae et Martyris;;Semiduplex;;2;;vide C2
-
-[RankNewcal]
-S. Clementis Papae et Martyris;;Duplex optional;;2;;vide C4b
-
 [Rule]
 OPapaM=Cleméntem;
 vide C4b;
@@ -31,11 +25,6 @@ v. Mówi Pan: Mowy moje, które włożyłem w twoje usta, nie odstąpią od ust 
 [Oratio]
 @Commune/C4b:Oratio
 
-[Commemoratio Oratio]
-!Wspomnienie św. Felicyty
-Wszechmogący Boże, prosimy Cię, aby nas ochraniały modlitwy i zasługi św. Felicyty, Twojej Męczennicy, której uroczystość obchodzimy.
-$Per Dominum
-
 [Lectio]
 @Tempora/Pent23-0:Lectio
 
@@ -51,18 +40,8 @@ $Per Dominum
 [Secreta]
 @Commune/C4b:Secreta
 
-[Commemoratio Secreta]
-!Wspomnienie św. Felicyty
-Panie, wejrzyj łaskawie na ofiary Twego ludu i napełnij go radością za wstawiennictwem tej, której uroczystość pozwalasz mu obchodzić.
-$Per Dominum
-
 [Communio]
 @Commune/C4b:Communio
 
 [Postcommunio]
 @Commune/C4b:Postcommunio
-
-[Commemoratio Postcommunio]
-!Wspomnienie św. Felicyty
-Wszechmogący Boże, pokornie prosimy Cię, abyś za wstawiennictwem Twoich Świętych pomnażał w nas swoje dary i kierował naszym życiem.
-$Per Dominum

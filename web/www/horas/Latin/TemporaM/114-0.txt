@@ -6,48 +6,48 @@
 [Lectio1]
 @Tempora/114-0:Lectio1:
 
+[Responsory1]
+@Tempora/111-0:Responsory1
+
 [Lectio2]
 @Tempora/114-0:Lectio2:s/-7/-6/ s/7 .*//s
+
+[Responsory2]
+@Tempora/111-0:Responsory2
 
 [Lectio3]
 @Tempora/114-0:Lectio2:s/4-7/7-9/ s/4 .*7 /7 /s
 @Tempora/114-0:Lectio3:s/!.*// s/10 .*//s
 
-[Lectio4]
-@Tempora/114-0:Lectio3:s/8-/10-/ s/8 .*10 /10 /s
-
-[Lectio5]
-@Tempora/114-0:Lectio4
-
-[Lectio6]
-@Tempora/114-0:Lectio5:s/Hoc si .*//s
-
-[Lectio7]
-@Tempora/114-0:Lectio5:s/.* Hoc si /Hoc si /s
-
-[Lectio8]
-@Tempora/114-0:Lectio6
-
-[Responsory1]
-@Tempora/111-0:Responsory1
-
-[Responsory2]
-@Tempora/111-0:Responsory2
-
 [Responsory3]
 @Tempora/111-0:Responsory3
+
+[Lectio4]
+@Tempora/114-0:Lectio3:s/8-/10-/ s/8 .*10 /10 /s
 
 [Responsory4]
 @Tempora/111-1:Responsory1
 
+[Lectio5]
+@Tempora/114-0:Lectio4
+
 [Responsory5]
 @Tempora/111-0:Responsory4
+
+[Lectio6]
+@Tempora/114-0:Lectio5:s/Hoc si .*//s
 
 [Responsory6]
 @Tempora/111-0:Responsory5
 
+[Lectio7]
+@Tempora/114-0:Lectio5:s/.* Hoc si /Hoc si /s
+
 [Responsory7]
 @Tempora/111-0:Responsory6
+
+[Lectio8]
+@Tempora/114-0:Lectio6
 
 [Responsory8]
 @Tempora/111-1:Responsory2

@@ -3,6 +3,12 @@
 [Rule]
 12 lectiones
 
+[Responsory Vespera]
+@Psalterium/Special/Major Special:QuadM Vespera:3-8
+
+[Ant Matutinum 3N]
+Si in dígito Dei * ejício dæmónia, profécto pervénit in vos regnum Dei.;;269;270;271
+
 [Lectio1]
 @Tempora/Quad3-0:Lectio1:s/-10/-4/ s/5.*//s
 
@@ -45,9 +51,6 @@
 [Responsory8]
 @Tempora/Quad3-1:Responsory2
 
-[Ant Matutinum 3N]
-Si in dígito Dei * ejício dæmónia, profécto pervénit in vos regnum Dei.;;269;270;271
-
 [Lectio9]
 @Tempora/Quad3-0:Lectio7:s/Quidam .*//s
 
@@ -73,9 +76,6 @@ Si in dígito Dei * ejício dæmónia, profécto pervénit in vos regnum Dei.;;2
 
 [Responsory12]
 @Tempora/Quad3-1:Responsory3
-
-[Responsory Vespera]
-@Psalterium/Special/Major Special:QuadM Vespera:3-8
 
 [Responsory Laudes]
 @Psalterium/Special/Major Special:QuadM Laudes:3-8

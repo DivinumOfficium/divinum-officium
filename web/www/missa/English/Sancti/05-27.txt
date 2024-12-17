@@ -1,45 +1,19 @@
 [Rank]
 S. Bedae Venerabilis Confessoris et Ecclesiae Doctoris;;Duplex majus;;4;;vide C5a
 
-[RankNewcal]
-S. Bedae Venerabilis Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C5a
-
 [Rule]
 vide C5a;
 CPapaM=John;
 Gloria
 
 [Oratio]
-O God, Who enlightened Your Church with the learning of blessed Bede, Your~
-Confessor and Doctor, graciously grant that Your servants may ever be~
-enlightened by his wisdom and helped by his merits.
+O God, Who enlightened Your Church with the learning of blessed Bede, Your Confessor and Doctor, graciously grant that Your servants may ever be enlightened by his wisdom and helped by his merits.
 $Per Dominum
 
 [Secreta]
-May the loving prayer of blessed Bede, Your Bishop and Doctor, fail us never, O~
-Lord; may it commend our offerings and ever secure for us Your forgiveness.
+May the loving prayer of blessed Bede, Your Bishop and Doctor, fail us never, O Lord; may it commend our offerings and ever secure for us Your forgiveness.
 $Per Dominum
 
 [Postcommunio]
-So that your sacrificial rites may grant us salvation, we pray you, O Lord, that~
-blessed Bede, Your Bishop and illustrious Doctor, may draw nigh as our~
-intercessor.
+So that your sacrificial rites may grant us salvation, we pray you, O Lord, that blessed Bede, Your Bishop and illustrious Doctor, may draw nigh as our intercessor.
 $Per Dominum
-
-[Commemoratio Oratio]
-!For St. John I.
-@Commune/C2b:Oratio:s/N\./John/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio Gregem
-
-[Commemoratio Secreta]
-!For St. John I.
-@Commune/C2b:Secreta:s/N\./John/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
-
-[Commemoratio Postcommunio]
-!For St. John I.
-@Commune/C2b:Postcommunio:s/N\./John/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio Gregem

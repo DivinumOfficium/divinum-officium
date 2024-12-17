@@ -1,13 +1,7 @@
 [Rank]
-S. Bernardi Abbatis et Ecclesiae Doctoris;;Duplex;;3;;vide C5
-
-[Name]
-Bernarde
-
-[Rule]
-vide C5;
-Gloria
-CredoDA
+Św. Bernarda Opata i Doktora Kościoła
+(sed rubrica 1570 aut rubrica 1617)
+Św. Bernarda Opata
 
 [Comment]
 # 20 VIII – Św. Bernarda, Opata i Doktora Kościoła
@@ -17,6 +11,9 @@ CredoDA
 Św. Bernard był nie tylko gorliwym opatem swojej rodziny zakonnej, lecz wywarł wpływ na życie Kościoła w swojej epoce. Położył kres schizmie Anakleta w Rzymie, obalił herezję Abelarda i zdemaskował błędy Arnolda z Brescii. Z polecenia papieża głosił drugą krucjatę. Nadzwyczajny dar wymowy zjednał mu tytuł Doktora Miodopłynnego. Był jednym z największych piewców Matki Bożej. Zostawił wiele homilii i modlitw ku Jej czci, które aż do dzisiaj karmią naszą pobożność. Zmarł w Clairvaux 20 sierpnia 1153 roku.
 
 Msza wspólna nr 20 In medio
+
+[Name]
+Bernarde
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -47,4 +44,3 @@ $Per Dominum
 [Postcommunio]
 Prosimy Cię, Panie, niech święty Bernard, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
 $Per Dominum
-

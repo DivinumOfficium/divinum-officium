@@ -12,33 +12,17 @@ Gloria
  
 Msza wspólna nr 15 Salus autem, z wyjątkiem kolekty, sekrety i pokomunii
 
-[Introitus]
-@Commune/C3b:Introitus
-
 [Oratio]
 Panie, niech nas otacza ciągła opieka świętych Twoich Męczenników Tyburcjusza i Zuzanny, bo nie przestajesz łaskawie spoglądać na tych, których raczysz wspierać taką pomocą.
 $Per Dominum
 
 [Lectio]
-@Sancti/01-20:Lectio 
-
-[Graduale]
-@Commune/C3b:Graduale
-
-[Evangelium]
-@Commune/C3b:Evangelium
-
-[Offertorium]
-@Commune/C3b:Offertorium
+@Sancti/01-20:Lectio
 
 [Secreta]
 Panie, wejrzyj łaskawie na prośby Twego ludu, wejrzyj na dary: niech to, co złożono w świętym misterium, spodoba się Tobie dzięki wstawiennictwu Świętych.
 $Per Dominum
 
-[Communio]
-@Commune/C3b:Communio
-
 [Postcommunio]
 Przyjęliśmy, Panie, zadatek zbawienia wiecznego: prosimy Cię, niech za wstawiennictwem świętych Twoich Męczenników udzieli nam on pomocy na życie doczesne i wieczne.
 $Per Dominum
-

@@ -1,12 +1,6 @@
 [Rank]
 Sabbato Quattuor Temporum Quadrigeismæ;;Feria major;;2
 
-[Rank] (si rubrica 1960)
-Sabbato Quattuor Temporum Quadrigesimæ;;Feria major;;3
-
-[Rank] (si rubrica innovata)
-Sabbato infra Hebdomadam I in Quadragesima;;Feria major;;2
-
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
@@ -22,10 +16,6 @@ v. Que ma prière pénètre jusqu’à vous, Seigneur, prêtez l’oreille à ma
 Seigneur, Dieu de mon salut, devant vous j’ai crié le jour et la nuit.
 &Gloria
 v. Que ma prière pénètre jusqu’à vous, Seigneur, prêtez l’oreille à ma supplication.
-
-[Oratio]
-Regardez, Seigneur, votre peuple d’un œil favorable, et, dans votre clémence, détournez de lui les fléaux de votre colère.
-$Per Dominum
 
 [LectioL1]
 Léctio libri Deuteronómii.
@@ -98,6 +88,10 @@ Vous êtes béni, Seigneur, Dieu de nos pères. Et digne de louange et de gloire
 
 [OratioL5]
 Ô Dieu, qui avez enlevé leur ardeur aux flammes de la fournaise pour les trois jeunes gens, accordez-nous dans votre miséricorde que nous, vos serviteurs, nous ne soyons pas brûlés par le feu des passions.
+$Per Dominum
+
+[Oratio]
+Regardez, Seigneur, votre peuple d’un œil favorable, et, dans votre clémence, détournez de lui les fléaux de votre colère.
 $Per Dominum
 
 [Lectio]

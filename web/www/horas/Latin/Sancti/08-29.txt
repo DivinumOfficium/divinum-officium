@@ -1,7 +1,7 @@
 [Rank]
 In Decollatione S. Joannis Baptistæ;;Duplex majus;;4;;ex C2
 
-[Rank] (rubrica 196)
+[Rank] (rubrica 196 aut rubrica 1617)
 In Decollatione S. Joannis Baptistæ;;Duplex;;3;;vide C2
 
 [Rule]
@@ -27,13 +27,6 @@ Misso Heródes * spiculatóre, præcépit amputári caput Joánnis in cárcere. 
 Sancti Joánnis Baptístæ Præcursóris et Martýris tui, quǽsumus, Dómine, veneránda festívitas: salutáris auxílii nobis præstet efféctum:
 $Qui vivis
 
-[Commemoratio]
-!Commemoratio S. Sabinæ Martyris
-@Commune/C7:Oratio proper
-$Oremus
-v. Deus, qui inter cétera poténtiæ tuæ mirácula étiam in sexu frágili victóriam martýrii contulísti: concéde propítius; ut, qui beátæ Sabínæ Mártyris tuæ natalícia cólimus, per ejus ad te exémpla gradiámur.
-$Per Dominum.
-
 [Lectio1]
 @Sancti/06-24
 
@@ -55,13 +48,18 @@ R. Propter Herodíadem, quam tulerat fratri suo vivénti uxórem.
 [Lectio3]
 @Sancti/06-24
 
-[Responsory3]
+[Responsory3_]
 R. Puéllæ saltánti imperávit mater: 
 * Nihil áliud petas, nisi caput Joánnis. * Et contristátus est rex propter jusjurándum et propter simul discumbéntes.
 V. Ait puélla matri suæ: Quid petam? At illa ait.
 R. Nihil áliud petas, nisi caput Joánnis.
 &Gloria
 R. Et contristátus est rex propter jusjurándum et propter simul discumbéntes.
+
+[Responsory3]
+@:Responsory3_
+(sed rubrica 1960)
+@:Responsory2
 
 [Lectio4]
 Ex libro sancti Ambrósii Epíscopi de Virgínibus
@@ -114,11 +112,6 @@ Quid enim ille diceret, nisi quo plenus erat? et quid illi respondérent, nisi q
 
 [Responsory8]
 @Commune/C2:Responsory6
-
-[Lectio93]
-!Commemoratio S. Sabinæ Martyris
-Sabina, mulier Romana, Valentini viri claríssimi uxor, a Seráphia vírgine christianæ fidei præceptis instituta, post sanctæ Vírginis martyrium, collectas ejus relíquias piis exsequiis sepelívit. Quæ propter eam causam paulo post, Hadriáno imperatóre, comprehensa, Elpidio júdici sistitur. Cui is: Tu ne illa Sabina et génere et matrimonio nobilíssima? At illa, Sum, inquit: sed Dómino meo Jesu Christo grátias ago, qui me, intercessióne Seráphiæ famulæ suæ, e dæmonum potestate liberávit. Quam varie tentatam ut propositum mutaret, cum a fidei constántia movére non posset, præfectus, pronuntiáta senténtia quod deos contemneret, cápitis damnávit. Ejus corpus a Christiánis in eodem sepúlcro cónditum est, in quo ipsa magistram fidei suæ Seráphiam posúerat.
-&teDeum
 
 [Versum 0]
 @Commune/C2::s/N\./Joánnes Baptísta/

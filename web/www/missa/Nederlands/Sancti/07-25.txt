@@ -1,9 +1,6 @@
 [Rank]
 S. Jacobi Apostoli;;Duplex II classis;;5.1;;ex C1
 
-[Rank] (rubrica 196)
-S. Jacobi Apostoli;;Duplex II classis;;5;;ex C1
-
 [Rule]
 ex C1;
 Gloria
@@ -16,10 +13,6 @@ Prefatio=Apostolis
 [Oratio]
 Wees, o Heer, voor uw volk een Heiligmaker en Beschermer, opdat onder de beschermende bijstand van uw apostel Jacobus ons leven naar uw wil mag zijn, en wij U onbekommerd mogen dienen.
 $Per Dominum
-
-[Commemoratio Oratio]
-!S. Christophori Martyris
-@Commune/C2:Oratio:s/N\./Christoforus/
 
 [Lectio]
 Lezing uit de eerste Brief van de heilige Apostel Paulus aan de Corinthiërs
@@ -44,18 +37,9 @@ Ik heb u uit de wereld gekozen, opdat gij zoudt gaan en vruchten dragen, en wel 
 Wij vragen U, Heer, moge het heilig lijden van uw apostel Jacobus de offergaven van uw volk voor U aanvaardbaar maken, en moge door zijn gebed in uw ogen genade vinden, wat aan onze verdiensten geen waarde kan ontlenen.
 $Per Dominum
 
-[Commemoratio Secreta]
-!Pro S. Christophoro
-@Commune/C2:Secreta
-
 [Communio]
 @Sancti/02-24
 
 [Postcommunio]
 Wij vragen U, Heer, help ons door de voorspraak van uw heilige apostel Jacobus, nu wij op zijn feest vol vreugde de heilige gaven hebben ontvangen.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Christophoro
-@Commune/C2:Postcommunio
-

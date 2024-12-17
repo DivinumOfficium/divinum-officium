@@ -1,12 +1,6 @@
 [Rank]
 Sabbato Quattuor Temporum in Adventu;;Feria major;;2
 
-[Rank] (rubrica 1960)
-Sabbato Quattuor Temporum Adventus;;Feria major;;3
-
-[Rank] (rubrica innovata)
-Sabbato infra Hebdomadam III Adventus;;Feria major;;2
-
 [Rule]
 Oratio Dominica
 no Gloria
@@ -30,10 +24,6 @@ v. Przyjdź i okaż nam Twe oblicze, Panie, który siedzisz na Cherubach, abyśm
 Pasterzu Izraela, posłuchaj: Ty, co jak trzodę wiedziesz ród Józefa.
 &Gloria
 v. Przyjdź i okaż nam Twe oblicze, Panie, który siedzisz na Cherubach, abyśmy byli zbawieni.
-
-[Oratio]
-Boże, Ty widzisz, że cierpimy wskutek naszych nieprawości, racz nas pocieszyć łaską Twego nawiedzenia:
-$Qui vivis
 
 [LectioL1]
 Czytanie z Księgi Proroka Izajasza.
@@ -123,6 +113,10 @@ Błogosławiony jesteś, Panie, Boże ojców naszych: i chwalebny, i sławny na 
 [OratioL5]
 Boże, któryś złagodził płomień ognia dla trzech młodzieńców, spraw łaskawie, aby nas, sług Twoich, nie pożarł płomień namiętności.
 $Per Dominum
+
+[Oratio]
+Boże, Ty widzisz, że cierpimy wskutek naszych nieprawości, racz nas pocieszyć łaską Twego nawiedzenia:
+$Qui vivis
 
 [Lectio]
 Czytanie z Listu świętego Pawła Apostoła do Tesaloniczan.

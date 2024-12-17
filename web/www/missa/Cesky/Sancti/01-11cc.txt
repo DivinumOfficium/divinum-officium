@@ -2,20 +2,19 @@
 Sv. Hygina, papeže a mučedníka;;Simplex;;1.1;;vide C4b
 
 [Rule]
+vide C2c;
+(sed communi Summorum Pontificum)
 vide C4b;
-CPapaM=Hygina;
+Prefatio=Epi 
+OPapaM=Hygina;
 
 [Oratio]
 @Commune/C2c:Oratio:s/N\./Hygina/
 (sed communi Summorum Pontificum)
 @Commune/C4b:Oratio Gregem
 
-[Secreta]
+[Secreta] (rubrica tridentina)
 @Commune/C2c:Secreta:s/N\./Hygina/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Secreta
 
-[Postcommunio]
+[Postcommunio] (rubrica tridentina)
 @Commune/C2c:Postcommunio:s/N\./Hygina/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Postcommunio

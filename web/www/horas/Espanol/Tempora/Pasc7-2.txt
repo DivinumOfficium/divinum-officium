@@ -1,7 +1,7 @@
 [Rank]
 Die III infra octavam Pentecostes;;Duplex I classis;;7;;ex Pasc7-0
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria III post Pentecostes;;Feria;;1;;
 
 [Rule]
@@ -11,6 +11,10 @@ Psalmi Dominica;
 Antiphonas horas
 Hymnus Tertia
 No commemoration
+
+[Oratio]
+Ayúdanos, Señor, con la virtud del Espíritu Santo; que ella limpie nuestros corazones y nos defienda de todo peligro.
+$Per Dominum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. El Espíritu Consolador, aleluya.\nR. Os enseñará todas las verdades, aleluya./s
@@ -47,10 +51,6 @@ R. Según las palabras que el Espíritu Santo ponía en su boca, aleluya.
 
 [Ant 2]
 Yo soy la puerta: * quien entre por mí, se salvará y encontrará pastos. Aleluya.
-
-[Oratio]
-Ayúdanos, Señor, con la virtud del Espíritu Santo; que ella limpie nuestros corazones y nos defienda de todo peligro.
-$Per Dominum eiusdem
 
 [Ant 3]
 Mi paz * os dejo, mi paz os doy: no os la doy como la da el mundo. Aleluya.

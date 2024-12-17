@@ -1,9 +1,6 @@
 [Rank]
 Feria Quarta infra Hebdomadam IV in Quadragesima;;Feria major;;2.1
 
-[Rank](rubrica 1960)
-Feria Quarta infra Hebdomadam IV in Quadragesima;;Feria major;;4.9
-
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
@@ -13,9 +10,6 @@ LectioL1
 [Introitus]
 @Tempora/Pasc6-6
 
-[Oratio]
-@Tempora/Quad4-3
-
 [LectioL1]
 @Tempora/Quad4-3
 
@@ -23,6 +17,9 @@ LectioL1
 @Tempora/Quad4-3
 
 [OratioL1]
+@Tempora/Quad4-3
+
+[Oratio]
 @Tempora/Quad4-3
 
 [Lectio]

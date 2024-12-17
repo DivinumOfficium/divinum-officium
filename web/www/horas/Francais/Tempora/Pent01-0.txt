@@ -1,16 +1,6 @@
 [Rank]
 Dominica Sanctissimæ Trinitatis;;Duplex I classis;;6.5
 
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Symbolum Athanasium
-No Commemoration
-Psalm5 Vespera=116
-Psalm5 Vespera3=113
-Prima=53
-
 [Ant Vespera]
 Gloire à vous, Trinité * égale, Divinité une qui êtes avant tous les siècles et maintenant et toujours.;;109
 Louange et gloire éternelle * soient à Dieu le Père, et au Fils, et en même temps au saint Paraclet, dans les siècles des siècles.;;110
@@ -175,11 +165,11 @@ R. Bénissons le Père et le Fils avec le Saint-Esprit :
 V. Vous êtes béni, Seigneur, dans le firmament du ciel, et louable, et glorieux dans les siècles.
 R. Louons-le et exaltons-le souverainement dans les siècles.
 
-[Lectio8a]
-Nous ne disons point, comme quelques-uns l’ont imaginé, que le Fils de Dieu est une extension de quelque partie de Dieu ; nous n’admettons pas non plus un Verbe sans réalité, tel qu’est le simple son de la voix ; mais nous croyons que les trois appellations et les trois personnes ont une même essence, une même majesté, une même puissance. Nous confessons donc un seul Dieu, parce que l’unité de la majesté nous défend de nommer plusieurs Dieux. Enfin nous nommons distinctement, conformément aux règles catholiques du langage, le Père et le Fils, mais nous ne pouvons ni ne devons dire deux Dieux. Ce n’est pas que le Fils de Dieu ne soit Dieu, étant vrai Dieu de Dieu, mais parce que nous savons qu’il n’a point d’autre principe que son Père, nous disons qu’il n’y a qu’un Dieu. C’est là ce que nous ont transmis les Prophètes et les Apôtres ; c’est là ce que le Seigneur lui-même nous a enseigné, quand il a dit : « Moi et mon Père, nous sommes une seule chose ». Par ces mots « une seule chose, » il exprime, comme je l’ai dit, l’unité de la divinité ; et par ceux-ci : « nous sommes, » il marque la pluralité des personnes.
-
 [Lectio8](rubrica 1960)
 Nous ne disons point, comme quelques-uns l’ont imaginé, que le Fils de Dieu est une extension de quelque partie de Dieu ; nous n’admettons pas non plus un Verbe sans réalité, tel qu’est le simple son de la voix ; mais nous croyons que les trois appellations et les trois personnes ont une même essence, une même majesté, une même puissance. Nous confessons donc un seul Dieu, parce que l’unité de la majesté nous défend de nommer plusieurs Dieux.
+
+[Lectio8a]
+Nous ne disons point, comme quelques-uns l’ont imaginé, que le Fils de Dieu est une extension de quelque partie de Dieu ; nous n’admettons pas non plus un Verbe sans réalité, tel qu’est le simple son de la voix ; mais nous croyons que les trois appellations et les trois personnes ont une même essence, une même majesté, une même puissance. Nous confessons donc un seul Dieu, parce que l’unité de la majesté nous défend de nommer plusieurs Dieux. Enfin nous nommons distinctement, conformément aux règles catholiques du langage, le Père et le Fils, mais nous ne pouvons ni ne devons dire deux Dieux. Ce n’est pas que le Fils de Dieu ne soit Dieu, étant vrai Dieu de Dieu, mais parce que nous savons qu’il n’a point d’autre principe que son Père, nous disons qu’il n’y a qu’un Dieu. C’est là ce que nous ont transmis les Prophètes et les Apôtres ; c’est là ce que le Seigneur lui-même nous a enseigné, quand il a dit : « Moi et mon Père, nous sommes une seule chose ». Par ces mots « une seule chose, » il exprime, comme je l’ai dit, l’unité de la divinité ; et par ceux-ci : « nous sommes, » il marque la pluralité des personnes.
 
 [Responsory8]
 R. Deux Séraphins se criaient l’un à l’autre :
@@ -203,9 +193,6 @@ Il y a deux œuvres de miséricorde qui délivrent les âmes et que le Seigneur 
 [Lectio9](rubrica 1960)
 Enfin nous nommons distinctement, conformément aux règles catholiques du langage, le Père et le Fils, mais nous ne pouvons ni ne devons dire deux Dieux. Ce n’est pas que le Fils de Dieu ne soit Dieu, étant vrai Dieu de Dieu, mais parce que nous savons qu’il n’a point d’autre principe que son Père, nous disons qu’il n’y a qu’un Dieu. C’est là ce que nous ont transmis les Prophètes et les Apôtres ; c’est là ce que le Seigneur lui-même nous a enseigné, quand il a dit : « Moi et mon Père, nous sommes une seule chose. » Par ces mots « une seule chose, » il exprime, comme je l’ai dit, l’unité de la divinité ; et par ceux-ci : « nous sommes, » il marque la pluralité des personnes.
 &teDeum
-
-[Ant Laudes]
-@:Ant Vespera :s/;;.*//g
 
 [Capitulum Laudes]
 @Psalterium/Special/Major Special:Day6 Vespera

@@ -1,20 +1,12 @@
 [Rank]
 Feria Sexta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[Rank]
-Feria Sexta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria VI post Pentecostes;;Feria;;1;;
 
-[Rule]
-ex Pasc7-0;
-1 nocturn;
-Psalmi Dominica;
-Antiphonas horas
-Hymnus Tertia
-Feria Te Deum
-no93
+[Oratio]
+Concedi alla tua Chiesa, o Dio misericordioso, che riunita com'è dallo Spirito Santo, non sia mai turbata da verun assalto ostile. 
+$Per Dominum eiusdem
 
 [Ant Matutinum]
 All'improvviso * venne dal cielo un rumore di vento che si avanza impetuoso, alleluia, alleluia.;;47
@@ -54,11 +46,7 @@ Tu che giudichi impara a perdonare; tu che sei infermo, impara ad impetrare. Se 
 &teDeum
 
 [Ant 2]
- Disse Gesù: * Affinché sappiate che il Figlio dell'uomo ha sulla terra il potere di rimettere i peccati, disse al paralitico: Te lo dico io: alzati, piglia la tua barella e vattene a casa tua, alleluia.
-
-[Oratio]
-Concedi alla tua Chiesa, o Dio misericordioso, che riunita com'è dallo Spirito Santo, non sia mai turbata da verun assalto ostile. 
-$Per Dominum eiusdem
+Disse Gesù: * Affinché sappiate che il Figlio dell'uomo ha sulla terra il potere di rimettere i peccati, disse al paralitico: Te lo dico io: alzati, piglia la tua barella e vattene a casa tua, alleluia.
 
 [Ant 3]
 E il Consolatore, * lo Spirito Santo, che il Padre manderà nel nome mio, egli v'insegnerà ogni cosa, e vi farà ricordare di tutto ciò che vi ho detto, alleluia.

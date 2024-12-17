@@ -1,9 +1,6 @@
 [Rank]
 Ss. Innocentium;;Duplex II class cum octava;;5.2;;ex C3
 
-[Rank] (rubrica 196)
-Ss. Innocentium;;Duplex II class;;5;;ex C2
-
 [Rule]
 no Gloria
 Credo
@@ -24,12 +21,12 @@ Prefatio=Nat
 [Graduale]
 @Sancti/12-28
 
-[Tractus]
-@Sancti/12-28
-
 [GradualeP]
 Allelúja, allelúja
 !Ps 112:1
+@Sancti/12-28
+
+[Tractus]
 @Sancti/12-28
 
 [Evangelium]

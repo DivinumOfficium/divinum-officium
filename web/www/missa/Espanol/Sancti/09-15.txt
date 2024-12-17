@@ -1,12 +1,6 @@
 [Rank]
 Septem Dolorum Beatae Mariae Virginis;;Duplex 2nd class;;5.1;;ex C11
 
-[Rank1960]
-Septem Dolorum Beatae Mariae Virginis;;Duplex 2nd class;;5;;ex C11
-
-[RankNewcal]
-Septem Dolorum Beatae Mariae Virginis;;Duplex;;3;;ex C11
-
 [Rule]
 ex C11;
 Gloria
@@ -36,17 +30,17 @@ Lectura del libro de Judit
 Dolorosa y llorosa, oh Virgen María, estás al pie de la cruz del Señor Jesús tu Hijo, el Redentor.
 V. ¡Oh Virgen Madre de Dios! Aquel a quien el mundo entero no puede contener, el Autor de la vida hecho hombre, sufre este suplicio de la cruz.
 
-[Tractus]
-!  
-Estaba Santa María, Reina del cielo y Señora del mundo, dolorosa junto a la cruz de nuestro Señor Jesucristo.
-!Lam 1:12
-V. Oh todos vosotros que pasáis por el camino, mirar y ved, si hay dolor como mi dolor.
-
 [GradualeP]
 Aleluiya, aleluya. Aleluya, aleluya.
 V. Estaba Santa María, Reina del cielo y Señora del mundo, dolorosa junto a la cruz de nuestro Señor Jesucristo. Aleluya.
 !Lam 1:12
 V. Oh todos vosotros que pasáis por el camino, mirar y ved, si hay dolor como mi dolor. Aleluya.
+
+[Tractus]
+!  
+Estaba Santa María, Reina del cielo y Señora del mundo, dolorosa junto a la cruz de nuestro Señor Jesucristo.
+!Lam 1:12
+V. Oh todos vosotros que pasáis por el camino, mirar y ved, si hay dolor como mi dolor.
 
 [Sequentia]
 Estaba la Madre dolorosa
@@ -146,4 +140,3 @@ Felices los sentidos de la Santísima Virgen María que sin morir merecieron la 
 [Postcommunio]
 Haz, Señor, que los sacramentos que acabamos de recibir celebrando devotamente la transfixión de tu Madre la Virgen María, nos alcancen de tu bondad todo linaje de saludable efectos.
 $Qui vivis
-

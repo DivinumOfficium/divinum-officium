@@ -369,7 +369,7 @@ sub setcc {
   # calculating precedence.
   return
     if ( $version =~ /196/
-      && ($rank[2] >= 5 || ($dayname[1] =~ /Feria/i && $rank[2] >= 3))
+      && ($rank[2] >= 5 || ($dayname[1] =~ /Feria/i && $rank[2] >= 4))
       && $ccind > 0
       && nooctnat());
   if ($version =~ /1955|196/ && $ccind >= 3) { return; }

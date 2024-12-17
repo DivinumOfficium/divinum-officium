@@ -1,12 +1,6 @@
 [Rank]
 S. Hilarii Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
 
-[RankNewcal]
-S. Hilarii Episcopi Confessoris Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
-
-[Name]
-Hilari
-
 [Rule]
 vide C4a;
 Gloria
@@ -19,6 +13,9 @@ CredoDa
 ✝ 367 v Poitiers
 
 Připomínka sv. Kněze a Mučedníka Felixe
+
+[Name]
+Hilari
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -47,18 +44,3 @@ $Per Dominum.
 
 [Postcommunio]
 @Commune/C4a:Postcommunio:s/N\./Hilarius/
-
-[Commemoratio Oratio]
-!Připomínka sv. Kněze a Mučedníka Felixe
-Uděl, prosíme, všemohoucí Bože, aby příklady tvých Svatých nás k lepšímu životu pobídly, abychom také napodobovali skutky těch, jejichž slavnost konáme.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Připomínka sv. Kněze a Mučedníka Felixe
-Obětní dary, Pane, obětované tobě skrze zásluhy svatého Felixe, mučedníka tvého, dobrotivě přijmi a uděl,aby se nám staly ustavičnou pomocí.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Připomínka sv. Kněze a Mučedníka Felixe
-Naplnění jsouce svatými tajemstvími prosíme, Pane, aby nám přímluvami svatého Felixe, mučedníka tvého, jehož slavnost konáme, pomaháno bylo.
-$Per Dominum

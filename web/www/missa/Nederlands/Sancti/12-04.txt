@@ -1,13 +1,13 @@
 [Rank]
 S. Petri Chrysologi Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 
-[Name]
-Petre Chrysologe
-
 [Rule]
 vide C4a;
 Gloria
 CredoDA
+
+[Name]
+Petre Chrysologe
 
 [Introitus]
 @Commune/C4a
@@ -42,4 +42,3 @@ Gij zijt priester voor eeuwig, naar de wijze van Melchisedech. Alleluia.
 
 [Postcommunio]
 @Commune/C4a:Postcommunio:s/N\./Petrus Chrysologus/
-

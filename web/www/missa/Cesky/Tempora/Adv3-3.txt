@@ -1,12 +1,6 @@
 [Rank]
 Feria IV Quattuor Temporum in Adventu;;Feria major;;2
 
-[Rank1960]
-Feria IV Quattuor Temporum Adventus;;Feria major;;3
-
-[RankNewcal]
-Feria IV infra Hebdomadam III Adventus;;Feria major;;2
-
 [Rule]
 Oratio Dominica
 no Gloria
@@ -29,10 +23,6 @@ Nebesa vypravují slávu Boží a obloha zvěstuje díla rukou jeho.
 &Gloria
 v. Rosu dejte nebesa shůry a oblakové dštěte Spravedlivého. Otevři se země a vypuč Spasitele.
 
-[Oratio]
-Uděl, prosíme, všemohoucí Bože, aby nastávající slavnost spásy naší přinesla nám pomoc pro nynější život a uštědřila dary blaženosti věčné.
-$Per Dominum
-
 [LectioL1]
 Čtení z proroka Isaiáše
 !Iz 2,2-5
@@ -47,6 +37,10 @@ V.  Kdo smí vstoupiti na horu Páně a kdo postaviti se na místě jemu svatém
 [OratioL1]
 Pospěš, prosíme, Pane, neotálej, a uděl nám pomoc nebeské síly, aby pookřáli útěchou tvého příchodu, kteří doufají v dobrotivost tvoji.
 $Qui vivis
+
+[Oratio]
+Uděl, prosíme, všemohoucí Bože, aby nastávající slavnost spásy naší přinesla nám pomoc pro nynější život a uštědřila dary blaženosti věčné.
+$Per Dominum
 
 [Lectio]
 @Tempora/C10a:Lectio

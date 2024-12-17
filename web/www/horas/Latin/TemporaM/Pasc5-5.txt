@@ -3,19 +3,17 @@
 [Rank]
 Feria VI infra Octavam Ascensionis;;Semiduplex;;2.1;;ex TemporaM/Pasc5-4
 
-[Rank] (rubrica tridentina)
-Feria VI infra Octavam Ascensionis;;Semiduplex;;2;;ex TemporaM/Pasc5-4
-
 [Rank] (rubrica 196)
 Feria VI post Ascensionem;;Feria;;1;;vide TemporaM/Pasc5-4
+
+[Rank] (rubrica tridentina)
+Feria VI infra Octavam Ascensionis;;Semiduplex;;2;;ex TemporaM/Pasc5-4
 
 [Rule]
 ex TemporaM/Pasc5-4;
 3 Lectiones
 Doxology=Asc
 Feria Te Deum
-
-[Rule] (rubrica 196)
 
 [Ant Matutinum]
 @Tempora/Pasc5-4::1 s/;;.*//
@@ -34,17 +32,17 @@ Feria Te Deum
 [Lectio1]
 @Tempora/Pasc5-5:Lectio7
 
-[Lectio2]
-@Tempora/Pasc5-5:Lectio8
-
-[Lectio3]
-@Tempora/Pasc5-5:Lectio9
-
 [Responsory1]
 @Tempora/Pasc5-4:Responsory4
 
+[Lectio2]
+@Tempora/Pasc5-5:Lectio8
+
 [Responsory2]
 @Tempora/Pasc5-4:Responsory5
+
+[Lectio3]
+@Tempora/Pasc5-5:Lectio9
 
 [Responsory3]
 @Tempora/Pasc5-4:Responsory6

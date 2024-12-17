@@ -1,13 +1,15 @@
 [Rank]
 S. Joannis a Cruce Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
 
-[Rule]
-vide C5a;
-Gloria
-
-[Oratio]
+[Oratio_]
 Dieu, vous avez inspiré à saint Jean, votre Confesseur et Docteur, un amour sublime de la parfaite abnégation de soi et de la Croix : faites que, nous attachant toujours à l’imiter, nous obtenions la gloire éternelle.
 $Per Dominum
+
+[Oratio]
+@:Oratio_
+(sed rubrica tridentina)
+@:Oratio_:s/ et Docteur//
+
 
 [Secreta]
 Que la pieuse intercession de saint Jean, votre Confesseur et Docteur, ne nous fasse point défaut, Seigneur : qu’elle vous rende nos dons agréables et nous obtienne toujours votre indulgence.
@@ -16,19 +18,3 @@ $Per Dominum
 [Postcommunio]
 Afin, Seigneur, que votre saint sacrifice nous procure le salut, que le bienheureux Jean, votre Confesseur et votre admirable Docteur intercède pour nous.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Commemoratio S. Chrysogoni Martyris
-Seigneur, exaucez nos supplications, afin que, nous reconnaissant coupables, nous soyons délivrés de nos iniquités, grâce à l’intercession de votre bienheureux Martyr Chrysogone.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Commemoratio S. Chrysogoni Martyris
-Laissez-vous fléchir, Seigneur, par l’offrande de ces dons ; et préservez-nous de tous les périls grâce à l’intercession de votre saint martyr Chrysogone.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Commemoratio S. Chrysogoni Martyris
-Que par la participation à votre sacrement, Seigneur, nous soyons purifiés de nos fautes cachées et délivrés des pièges de nos ennemis.
-$Per Dominum
-

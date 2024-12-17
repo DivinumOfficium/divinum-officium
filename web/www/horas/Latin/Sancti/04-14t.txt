@@ -4,9 +4,29 @@ Ss. Tiburtii, Valeriani, et Maximi Martyrum;;Simplex;;1.1;;vide C3
 [Rule]
 vide C3;
 
+[Versum 1] (tempore paschali)
+@Commune/C3:Versum 2
+(sed rubrica 1570 aut rubrica 1617)
+@Commune/C3
+
+[Ant 1] (tempore paschali)
+@Commune/C3:Ant 2
+(sed rubrica 1570 aut rubrica 1617)
+@Commune/C3
+
 [Oratio]
 Præsta, quǽsumus, omnípotens Deus: ut, qui sanctórum Mártyrum tuórum Tiburtii, Valeriáni et Maximi solemnia colimus; eórum étiam virtútes imitemur.
 $Per Dominum
 
 [Lectio93]
-@Sancti/04-14:Lectio93
+Valerianus Romanus nobili genere ortus, Alexandro Sevéro imperatóre, hortatu beátæ Cæcíliæ Vírginis, quam sibi pári nobilitate uxórem desponderat, una cum Tiburtio fratre a sancto Urbano Papa baptizátur. Quos ubi præfectus Urbis Almachius Christiános esse cognóvit, et patrimonio paupéribus distributo, Christianórum córpora sepelire; accersítos gráviter reprehéndit: atque ubi Christum Deum constanter confiténtes, deos autem dæmoniórum inánia simulácra prædicántes videt, virgis cædi jubet. Sed cum verbéribus cogi non possent, ut Jovis simulacrum veneraréntur, immo fortes in fídei veritáte permanérent, ad quartum ab Urbe lápidem secúri feriúntur. Quorum virtútem admirátus Maximus præfecti cubicularius, qui eos ad supplícium perduxerat, Christiánum se esse proféssus est, cum multis præterea præfecti minístris: qui paulo post plumbátis contusi, omnes ex diaboli minístris, Christi Dómini Mártyres evasérunt.
+
+[Versum 2] (tempore paschali)
+@Commune/C3:Versum 1
+(sed rubrica 1570 aut rubrica 1617)
+@Commune/C3
+
+[Ant 2] (tempore paschali)
+@Commune/C3:Ant 1
+(sed rubrica 1570 aut rubrica 1617)
+@Commune/C3

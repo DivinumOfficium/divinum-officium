@@ -1,12 +1,6 @@
 [Rank]
 Sabbato Quattuor Temporum in Adventu;;Feria major;;2.1
 
-[Rank] (rubrica 1960)
-Sabbato Quattuor Temporum Adventus;;Feria major;;4.9
-
-[Rank] (rubrica innovata)
-Sabbato infra Hebdomadam III Adventus;;Feria major;;2.1
-
 [Rule]
 Oratio Dominica
 no Gloria
@@ -18,18 +12,11 @@ Suffr=Maria1;Ecclesiæ,Papa;;
 
 [Introitus]
 !Ps 79:4; 79:2
-v. Veni, et osténde nobis fáciem tuam, Dómine, qui sedes super Chérubim: et~
-salvi érimus.
+v. Veni, et osténde nobis fáciem tuam, Dómine, qui sedes super Chérubim: et salvi érimus.
 !Ps 79:2
 Qui regis Israël, inténde: qui dedúcis, velut ovem, Joseph.
 &Gloria
-v. Veni, et osténde nobis fáciem tuam, Dómine, qui sedes super Chérubim: et~
-salvi érimus.
-
-[Oratio]
-Deus, qui cónspicis, quia ex nostra pravitáte~
-afflígimur: concéde propítius; ut ex tua visitatióne consolémur:
-$Qui vivis
+v. Veni, et osténde nobis fáciem tuam, Dómine, qui sedes super Chérubim: et salvi érimus.
 
 [LectioL1]
 Léctio Isaíæ Prophétæ
@@ -43,9 +30,7 @@ A summo cœlo egréssio ejus: et occúrsus ejus usque ad summum ejus.
 V. Cœli enárrant glóriam Dei: et opera mánuum ejus annúntiat firmaméntum.
 
 [OratioL1]
-Concéde, quǽsumus, omnípotens Deus: ut, qui sub~
-peccáti jugo et vetústa servitúte deprímimur; exspectáta unigéniti Fílii tui~
-nova nativitáte liberémur:
+Concéde, quǽsumus, omnípotens Deus: ut, qui sub peccáti jugo et vetústa servitúte deprímimur; exspectáta unigéniti Fílii tui nova nativitáte liberémur:
 $Qui tecum
 
 [LectioL2]
@@ -56,13 +41,11 @@ $Deo gratias
 
 [GradualeL2]
 !Ps 18:6; 18:7
-In sole pósuit tabernáculum suum: et ipse tamquam sponsus procédens de thálamo~
-suo.
+In sole pósuit tabernáculum suum: et ipse tamquam sponsus procédens de thálamo suo.
 V. A summo cœlo egréssio ejus: et occúrsus ejus usque ad summum ejus.
 
 [OratioL2]
-Indígnos nos, quǽsumus, Dómine, fámulos tuos,~
-quos actiónis própriæ culpa contrístat, unigéniti Fílii tui advéntu lætífica:
+Indígnos nos, quǽsumus, Dómine, fámulos tuos, quos actiónis própriæ culpa contrístat, unigéniti Fílii tui advéntu lætífica:
 $Qui tecum
 
 [LectioL3]
@@ -77,9 +60,7 @@ Dómine, Deus virtútum, convérte nos: et osténde fáciem tuam, et salvi érim
 V. Excita, Dómine, poténtiam tuam, et veni, ut salvos fácias nos.
 
 [OratioL3]
-Prǽsta, quǽsumus, omnípotens Deus: ut Fílii tui~
-ventúra sollémnitas et præséntis nobis vitæ remédia cónferat, et prǽmia ætérna~
-concédat.
+Prǽsta, quǽsumus, omnípotens Deus: ut Fílii tui ventúra sollémnitas et præséntis nobis vitæ remédia cónferat, et prǽmia ætérna concédat.
 $Per eundem
 
 [LectioL4]
@@ -91,13 +72,10 @@ $Deo gratias
 [GradualeL4]
 !Ps 79:3,; 79:2; 79:3
 Excita, Dómine, poténtiam tuam, et veni, ut salvos fácias nos.
-V. Qui regis Israël, inténde: qui dedúcis, velut ovem, Joseph: qui sedes super~
-Chérubim, appáre coram Ephraim, Bénjamin, et Manásse.
+V. Qui regis Israël, inténde: qui dedúcis, velut ovem, Joseph: qui sedes super Chérubim, appáre coram Ephraim, Bénjamin, et Manásse.
 
 [OratioL4]
-Preces pópuli tui, quǽsumus, Dómine, cleménter~
-exáudi: ut, qui juste pro peccátis nostris afflígimur, pietátis tuæ visitatióne~
-consolémur:
+Preces pópuli tui, quǽsumus, Dómine, cleménter exáudi: ut, qui juste pro peccátis nostris afflígimur, pietátis tuæ visitatióne consolémur:
 $Qui vivis
 
 [LectioL5]
@@ -105,6 +83,10 @@ $Qui vivis
 
 [OratioL5]
 @Tempora/093-6
+
+[Oratio]
+Deus, qui cónspicis, quia ex nostra pravitáte afflígimur: concéde propítius; ut ex tua visitatióne consolémur:
+$Qui vivis
 
 [Lectio]
 Léctio Epístolæ beáti Pauli Apóstoli ad Thessalonicénses
@@ -120,32 +102,20 @@ V. Excita, Dómine, poténtiam tuam, et veni: ut salvos fácias nos.
 [Evangelium]
 Sequéntia ++ sancti Evangélii secundum Lucam
 !Luc 3:1-6
-Anno quintodécimo impérii Tibérii Cǽsaris, procuránte Póntio Piláto Judǽam,~
-tetrárcha autem Galilǽæ Heróde, Philíppo autem fratre ejus tetrárcha Iturǽæ et~
-Trachonítidis regionis, et Lysánia Abilínæ tetrárcha, sub princípibus sacerdotum~
-Anna et Cáipha: factum est verbum Domini super Joannem, Zacharíæ filium, in~
-deserto. Et venit in omnem regiónem Jordánis, prǽdicans baptísmum pæniténtiæ in~
-remissiónem peccatórum, sicut scriptum est in libro sermónum Isaíæ Prophétæ: Vox~
-clamántis in desérto: Paráte viam Dómini: rectas fácite sémitas ejus: omnis~
-vallis implébitur: et omnis mons et collis humiliábitur: et erunt prava in~
-dirécta, et áspera in vias planas: et vidébit omnis caro salutáre Dei.
+Anno quintodécimo impérii Tibérii Cǽsaris, procuránte Póntio Piláto Judǽam, tetrárcha autem Galilǽæ Heróde, Philíppo autem fratre ejus tetrárcha Iturǽæ et Trachonítidis regionis, et Lysánia Abilínæ tetrárcha, sub princípibus sacerdotum Anna et Cáipha: factum est verbum Domini super Joannem, Zacharíæ filium, in deserto. Et venit in omnem regiónem Jordánis, prǽdicans baptísmum pæniténtiæ in remissiónem peccatórum, sicut scriptum est in libro sermónum Isaíæ Prophétæ: Vox clamántis in desérto: Paráte viam Dómini: rectas fácite sémitas ejus: omnis vallis implébitur: et omnis mons et collis humiliábitur: et erunt prava in dirécta, et áspera in vias planas: et vidébit omnis caro salutáre Dei.
 
 [Offertorium]
 !Zach 9:9
-Exsúlta satis, fília Sion, prǽdica, fília Jerúsalem: ecce, Rex tuus venit tibi~
-sanctus et Salvátor.
+Exsúlta satis, fília Sion, prǽdica, fília Jerúsalem: ecce, Rex tuus venit tibi sanctus et Salvátor.
 
 [Secreta]
-Sacrifíciis præséntibus, quǽsumus, Dómine, placátus inténde: ut et devotióni~
-nostræ profíciant et salúti.
+Sacrifíciis præséntibus, quǽsumus, Dómine, placátus inténde: ut et devotióni nostræ profíciant et salúti.
 $Per Dominum
 
 [Communio]
 !Ps 18:6-7
-Exsultávit ut gigas ad curréndam viam: a summo cœlo egréssio ejus,~
-et occúrsus ejus usque ad summum ejus.
+Exsultávit ut gigas ad curréndam viam: a summo cœlo egréssio ejus, et occúrsus ejus usque ad summum ejus.
 
 [Postcommunio]
-Quǽsumus, Dómine, Deus noster: ut sacrosáncta mystéria, quæ pro reparatiónis~
-nostræ munímine contulísti; et præsens nobis remédium esse fácias et futúrum.
+Quǽsumus, Dómine, Deus noster: ut sacrosáncta mystéria, quæ pro reparatiónis nostræ munímine contulísti; et præsens nobis remédium esse fácias et futúrum.
 $Per Dominum

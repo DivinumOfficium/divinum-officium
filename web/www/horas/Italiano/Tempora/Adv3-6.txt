@@ -1,13 +1,15 @@
 [Rank]
 Sabbato Quattuor Temporum in Adventu;;Feria major;;2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1930)
 Sabbato Quattuor Temporum Adventus;;Feria major;;3
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Sabbato infra Hebdomadam III Adventus;;Feria major;;2
 
-[Rule]
+[Oratio]
+O Dio, che ci vedi afflitti per la nostra malizia: concedici benigno, d'essere consolati dalla tua venuta:
+$Qui vivis
 
 [Lectio1]
 Lettura del santo Vangelo secondo Luca
@@ -46,7 +48,3 @@ R. E richiama i dispersi nella loro terra.
 
 [Ant 2]
 Come avverrà questo, * Angelo di Dio, se io non conosco uomo? Ascolta, Maria Vergine: Lo Spirito Santo scenderà in te, e la potenza dell'Altissimo ti farà madre.
-
-[Oratio]
-O Dio, che ci vedi afflitti per la nostra malizia: concedici benigno, d'essere consolati dalla tua venuta:
-$Qui vivis

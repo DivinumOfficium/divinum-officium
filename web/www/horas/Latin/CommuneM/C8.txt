@@ -74,11 +74,20 @@ R. Quam dilécta tabernácula tua, Dómine, virtútum! † concupíscit et défi
 V. Qui hábitant in domo tua, Dómine; in sǽculum sǽculi laudábunt te.
 R. In átria Dómini.
 
+[Lectio9]
+@Commune/C8:Lectio7
+
 [Responsory9]
 @Commune/C8:Responsory7
 
+[Lectio10]
+@Commune/C8:Lectio8:s/Zachǽus .*//s
+
 [Responsory10]
 @Commune/C8:Responsory8
+
+[Lectio11]
+@Commune/C8:Lectio8:s/.* Zachǽus /Zachǽus /s
 
 [Responsory11]
 R. Benedíctus es in templo sancto glóriæ tuæ quod ædificátum est
@@ -86,23 +95,14 @@ R. Benedíctus es in templo sancto glóriæ tuæ quod ædificátum est
 V. Bénedic domum istam quam ædificávi.
 R. Ad laudem et glóriam nóminis tui Dómine.
 
+[Lectio12]
+@Commune/C8:Lectio9
+
 [Responsory12]
 R. Vidi civitátem sanctam Jerúsalem novam, † descendéntem de cælo a Deo parátam:
 * Et audívi vocem de throno dicéntem: * Ecce tabernáculam Dei cum homínibus, et habitábit cum eis.
 V. Et ipsi pópulus ejus erunt, † et ipse Deus cum eis erit eórum Deus.
 R. Et audívi vocem de throno dicéntem: Ecce tabernáculam Dei cum homínibus, et habitábit cum eis.
-
-[Lectio9]
-@Commune/C8:Lectio7
-
-[Lectio10]
-@Commune/C8:Lectio8:s/Zachǽus .*//s
-
-[Lectio11]
-@Commune/C8:Lectio8:s/.* Zachǽus /Zachǽus /s
-
-[Lectio12]
-@Commune/C8:Lectio9
 
 [MM Capitulum]
 @Commune/C8:Capitulum Sexta

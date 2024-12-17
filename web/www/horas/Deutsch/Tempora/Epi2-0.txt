@@ -1,9 +1,6 @@
 [Rank]
 Zweiter Sonntag nach Epiphanie;;Semiduplex;;5
 
-[Rule]
-9 lectiones
-
 [Oratio]
 Allmächtiger, ewiger Gott, der du alles im Himmel und auf Erden lenkst, erhöre gnädig das flehentliche Bitten deines Volkes und gewähre unsern Zeiten Freundschaft mit dir.
 $Per Dominum.
@@ -98,15 +95,15 @@ R. Deus meus, in te confído, non erubéscam.
 [Lectio8]
 Et qui bene erudíti sunt in fide catholica novérunt, quod Deus fécerit nuptias: et sicut conjúnctio a Deo, ita divortium a diabolo sit. Sed proptérea in causa fornicatiónis licet uxórem dimíttere: quia ipsa esse uxor prior nóluit, quæ fidem conjugalem maríto non servávit. Nec illæ, quæ virginitátem Deo vovent, quamquam ampliórem gradum honoris et sanctitátis in Ecclésia teneant, sine nuptiis sunt: nam et ipsæ pertinent ad nuptias cum tota Ecclésia, in quibus nuptiis sponsus est Christus.
 
-[Responsory8]
-@Tempora/Pent01-0:Responsory8
-
 [Lectio9]
 Ac per hoc ergo Dóminus invitátus venit ad nuptias, ut conjugális cástitas firmarétur, et ostenderétur sacraméntum nuptiárum: quia et illárum nuptiárum sponsus personam Dómini figurábat cui dictum est: Servásti vinum bonum usque adhuc. Bonum enim vinum Christus servávit usque adhuc, id est, Evangélium suum.
 &teDeum
 
 [Ant 2]
 Eine Hochzeit wurde gehalten * zu Kana in Galiläa, und es war Jesus dort anwesend mit Maria, seiner Mutter.
+
+[Versum 3]
+@Psalterium/Special/Major Special:Day0 Versum 3
 
 [Ant 3]
 Da es an Wein fehlte, * ließ Jesus die Kannen mit Wasser füllen, und dies wurde in Wein verwandelt, alleluja.

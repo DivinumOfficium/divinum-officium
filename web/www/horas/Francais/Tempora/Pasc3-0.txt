@@ -1,20 +1,16 @@
 [Rank]
 Dominica III Post Pascha;;Semiduplex;;5;;
 
-[Rule]
-9 Lectiones
-Duplex
-Una Antiphona
-
-[Versum 1]
-@Psalterium/Special/Major Special:Pasch Versum 3
-
 [Ant 1]
 Un peu de temps * et vous ne Me verrez plus, dit le Seigneur : encore un peu de temps et vous Me reverrez, parce que Je vais au Père, alléluia, alléluia.
 
 [Oratio]
 O Dieu, qui montrez aux égarés, pour qu'ils puissent revenir au chemin de la justice, la lumière de la vérité, donnez à tous ceux qui font profession d'être chrétiens, de rejeter ce qui est contraire à ce nom et de s'attacher à ce qui lui est conforme.
 $Per Dominum
+
+[Commemoratio]
+!Commemoratio pro Octava S. Joseph
+@Tempora/Pasc2-3:Oratio
 
 [Lectio1]
 Commencement du livre de l'Apocalypse du bienheureux Jean Apôtre
@@ -132,9 +128,6 @@ Ce peu de emps paraît long, parce qu’il dure encore ; quand il sera fini, alo
 v. Mes bien-aimés, je vous exhorte, comme des étrangers et des voyageurs, à vous abstenir des convoitises de la chair, qui font la guerre à l'âme.
 $Nous rendons grâce à Dieu
 
-[Versum 2]
-@Psalterium/Special/Major Special:Pasch Versum 2
-
 [Ant 2]
 @:Ant 1
 
@@ -148,12 +141,5 @@ $Deo gratias
 v. Serviteurs, soyez soumis en toute révérence à vos maîtres, non seulement à ceux qui sont bons et faciles, mais même à ceux qui sont difficiles. Car cette obéissance est une grâce, en Jésus-Christ notre Seigneur.
 $Deo gratias
 
-[Versum 3]
-@Psalterium/Special/Major Special:Pasch Versum 3
-
 [Ant 3]
 En vérité, Je vous le dis, * vous gémirez et vous pleurerez ; le monde, lui, se réjouira et vous, vous serez attristés mais votre tristesse se changera en joie, alléluia.
-
-[Commemoratio]
-!Commemoratio pro Octava S. Joseph
-@Tempora/Pasc2-3:Oratio

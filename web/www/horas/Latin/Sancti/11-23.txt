@@ -1,11 +1,8 @@
 [Rank]
 S. Clementis I Papæ et Martyris;;Duplex;;3;;vide C2
 
-[Rank] (rubrica 1570)
+[Rank] (rubrica 1570 aut rubrica 1617)
 S. Clementis Papæ et Martyris;;Semiduplex;;2.2;;vide C2
-
-[Rank] (rubrica innovata)
-S. Clementis Papæ et Martyris;;Duplex optional;;2;;vide C2
 
 [Rule]
 vide C2;
@@ -24,13 +21,6 @@ Orémus omnes * ad Dóminum Jesum Christum, ut Confessóribus suis fontis venam 
 
 [Oratio]
 Deus, qui nos ánnua beáti Cleméntis Mártyris tui atque Pontíficis solemnitáte lætíficas: concéde propítius; ut cujus natalítia cólimus, virtútem quoque passiónis imitémur.
-$Per Dominum
-
-[Commemoratio]
-!Commemoratio S. Felicitatis Martyris
-@Commune/C7:Oratio proper
-$Oremus
-v. Præsta, quǽsumus, omnípotens Deus: ut, beátæ Felicitátis Mártyris tuæ solémnia recenséntes, méritis ipsíus protegámur et précibus. 
 $Per Dominum
 
 [Lectio1] (rubrica tridentina)
@@ -120,13 +110,6 @@ Ut ignorántiam illam diéi ómnibus táciti, non sine útilis siléntii ratión
 [Lectio8] (rubrica tridentina)
 !Can 27
 Quisnam est fidélis servus et prudens, quem constítuit Dóminus super famíliam suam? Quamquam in commúne nos ad indeféssam vigilántiæ curam adhortétur: speciálem tamen pópuli princípibus, id est, epíscopis, in exspectatióne adventúque suo sollicitúdinem mandat. Hunc enim servum fidélem atque prudéntem, præpósitum famíliæ signíficat, cómmoda atque utilitátes commíssi sibi pópuli curántem. Qui si dicto áudiens, et præcéptis obédiens erit, id est, si doctrínæ opportunitáte et veritáte infírma confírmet, disrúpta consólidet, depraváta convértat, et verbum vitæ in æternitátis cibum aléndæ famíliæ dispéndat, atque hæc agens, hisque ímmorans deprehendátur: glóriam a Dómino tamquam dispensátor fidélis et víllicus útilis consequétur, et super ómnia bona constituétur; id est, in Dei glória collocábitur, quia nihil sit ultra, quod mélius sit.
-
-[Lectio93]
-!Commemoratio pro S. Felicitate Martyris
-Sermo sancti Gregórii Papæ
-!Ex Homilía 3 in Evangelica
-Beáta Felícitas, cujus hódie natalícia celebrámus, septem fílios sic post se tímuit vivos in carne relínquere, sicut carnáles paréntes solent metúere ne mórtuos præmíttant. In persecutiónis enim labóre deprehénsa, filiórum corda in amóre supérnæ pátriæ prædicándo roborávit; et parturívit spíritu quos carne pepérerat, ut prædicatióne páreret Deo quos carne pepérerat mundo. Numquid ergo hanc féminam Mártyrem díxerim? Sed plus quam Mártyrem; quæ, septem pignóribus ad regnum præmíssis, tot ante se mórtuos transmísit. Ad pœnam prima venit, sed pervénit octáva.
-&teDeum
 
 [Versum 0]
 @Commune/C2::s/N\./Clemens/

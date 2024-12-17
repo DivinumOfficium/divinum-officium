@@ -3,19 +3,12 @@ S. Marci Papæ Confessoris;;Simplex;;1.1;;vide C4
 
 [Rule]
 vide C4;
+OPapaC=Marcum;
 
 [Oratio]
 Exaudi, Domine, preces nostras: et, interveniente beato Marco, Confessore tuo atque Pontifice, indulgentiam nobis tribue placatus et pacem.
 $Per Dominum
 
-[Commemoratio]
-!Commemoratio Ss. Martyrum Sergii, Bacchi, Marcelli et Apuleji
-@Commune/C3:Oratio proper
-$Oremus
-v. Sanctórum Mártyrum tuórum nos, Dómine, Sérgii, Bacchi, Marcélli et Apuléji beáta mérita prosequántur: et tuo semper fáciant amóre fervéntes. 
-$Per Dominum
-
 [Lectio93]
-!Commemoratio S. Marci Papæ
 Marcus, Romanus, Constantino Magno imperatóre Pontifex, instituit ut epíscopus Ostiénsis, a quo Romanus Pontifex consecrátur, pallio uterétur. Duas Romæ basilicas ædificávit, álteram in Urbe, álteram via Ardeatina; quas Constantinus, auctas, magnis munéribus exornávit. Vixit in pontificatu menses octo, sepultúsque est in cœmeterio Balbinæ.
 &teDeum

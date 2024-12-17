@@ -1,15 +1,6 @@
 [Rank]
 Sabbato infra Octavam Ascensionis;;Semiduplex;;2;;ex Tempora/Pasc5-4
 
-[Rank] (rubrica 1960)
-Sabbato post Ascensionem;;Feria;;1;;vide Tempora/Pasc5-4
-
-[Rule]
-ex Tempora/Pasc5-4;
-9 Lectiones
-Doxology=Asc
-Feria Te Deum
-
 [Lectio1]
 Dalla seconda Lettera dell'Apostolo san Pietro
 !2 Pet 3:1-7
@@ -21,9 +12,6 @@ Dalla seconda Lettera dell'Apostolo san Pietro
 6 e che per queste stesse cose il mondo d'allora perì inondato dall'acqua. 
 7 Ma i cieli e la terra che esistono adesso, sono conservati dalla stesa parola e riserbati al fuoco per il giorno del giudizio e della perdizione degli uomini empi.
 
-[Responsory1]
-@Tempora/Pasc5-4:Responsory1
-
 [Lectio2]
 !2 Pet 3:8-13
 8 Ma c'è una cosa che non dovete ignorare, o carissimi, che dinanzi a Dio un giorno è come mille anni, e mille anni come un giorno. 
@@ -33,9 +21,6 @@ Dalla seconda Lettera dell'Apostolo san Pietro
 12 attendendo e correndo incontro alla venuta del giorno del Signore, in cui i cieli incendiati si scioglieranno, e gli elementi si liqueferanno per l'ardore del fuoco? 
 13 Ma noi aspettiamo, secondo la sua promessa, nuovi cieli e nuova terra, in cui abiterà la giustizia.
 
-[Responsory2]
-@Tempora/Pasc5-4:Responsory2
-
 [Lectio3]
 !2 Pet 3:14-18
 14 Perciò, o carissimi, attendendo queste cose, fate di tutto per essere trovati da lui immacolati, puri e in pace. 
@@ -43,9 +28,6 @@ Dalla seconda Lettera dell'Apostolo san Pietro
 16 e come fa pure in tutte le sue lettere dove parla di ciò, nelle quali vi sono alcune cose difficili a capirsi, e che gli ignoranti e leggeri stravolgono, come anche tutte le altre Scritture, per loro perdizione. 
 17 Voi dunque, o fratelli, essendo prevenuti, state in guardia, affinché trascinati dall'errore degli empi, non cadiate dalla vostra fermezza. 
 18 Crescete invece nella grazia e nella conoscenza del nostro Signore e Salvatore Gesù Cristo. A Lui gloria adesso, e fino al dì dell'eternità. Così sia.
-
-[Responsory3]
-@Tempora/Pasc5-4:Responsory3
 
 [Lectio4]
 Dal Sermone di san Leone Papa

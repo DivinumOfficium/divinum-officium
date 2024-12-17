@@ -1,22 +1,16 @@
 [Rank]
 III Niedziela po Wielkiejnocy;;Semiduplex;;5;;
 
-[Rule]
-9 Lectiones
-Duplex
-Una Antiphona
-
-[Capitulum Laudes]
-!1 P 2:11
-v. Najmilsi: Proszę was, jako przychodniów i gościów, abyście się wstrzymawali od pożądliwości cielesnych, które walczą przeciwko duszy,
-$Deo gratias
-
 [Ant 1]
 Maluczko, * a już mię nie ujrzycie, mówi Pan, i zasię maluczko, a ujrzycie mię, gdyż idę do Ojca, alleluja, alleluja.
 
 [Oratio]
 Boże, który błądzącym światłę Twej prawdy ukazujesz, aby na drogę sprawiedliwości powrócić mogli, daj wszystkim, którzy się mianem chrześcijan szczycą, by się brzydzili tem, co mianu temu się sprzeciwia, a spełniali to, co z Jego świętością jest zgodne.
 $Per Dominum
+
+[Commemoratio]
+!Wspominamy Oktawę Św. Józefa
+@Tempora/Pasc2-3:Oratio
 
 [Lectio1]
 Początek Księgi Apokalipsy św. Jana Apostoła
@@ -102,6 +96,11 @@ R. W radość się obróci, alleluja, alleluja.
 &Gloria
 R. W radość się obróci, alleluja, alleluja.
 
+[Capitulum Laudes]
+!1 P 2:11
+v. Najmilsi: Proszę was, jako przychodniów i gościów, abyście się wstrzymawali od pożądliwości cielesnych, które walczą przeciwko duszy,
+$Deo gratias
+
 [Capitulum Sexta]
 !1 P 2:13-14
 v. Bądźcież tedy poddani wszelkiemu ludzkiemu stworzeniu dla Boga, chociaż królowi, jako przewyższającemu, chociaż książętom, jako od niego posłanym ku pomście złoczyńców, a ku chwale dobrych.
@@ -114,7 +113,3 @@ $Deo gratias
 
 [Ant 3]
 Zaprawdę, zaprawdę powiadam wam, * iż będziecie płakać i lamentować, a świat się będzie weselił, a wy się smucić będziecie, ale smutek wasz w radość się obróci, alleluja.
-
-[Commemoratio]
-!Wspominamy Oktawę Św. Józefa
-@Tempora/Pasc2-3:Oratio

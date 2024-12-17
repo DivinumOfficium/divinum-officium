@@ -1,10 +1,6 @@
 [Rank]
 S. Joannis a Cruce Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C5a
 
-[Rule]
-vide C5a;
-Gloria
-
 [Comment]
 # 24 XI – S. João Crisóstomo, Bispo Confessor e Doutor
 ! Wspomnienie
@@ -13,45 +9,16 @@ Gloria
 [Introitus]
 @Commune/C4a:Introitus
 
+[Oratio_]
+Vos suplicamos, Senhor, que a graça celestial aumente a vossa Igreja, a qual quisestes ilustrar com os gloriosos méritos e ensinos do B. João Crisóstomo, vosso Confessor e Pontífice.
+$Per Dominum
+
 [Oratio]
 Vos suplicamos, Senhor, que a graça celestial aumente a vossa Igreja, a qual quisestes ilustrar com os gloriosos méritos e ensinos do B. João Crisóstomo, vosso Confessor e Pontífice.
 $Per Dominum
 
-[Lectio]
-@Commune/C4a:Lectio
-
-[Graduale]
-@Commune/C4a:Graduale
-
-[Tractus]
-@Commune/C4a:Tractus
-
-[Evangelium]
-@Commune/C4a:Evangelium
-
-[Offertorium]
-@Commune/C4a:Offertorium
-
 [Secreta]
 @Commune/C4a:Secreta
 
-[Communio]
-@Commune/C4a:Communio
-
 [Postcommunio]
 @Commune/C4a:Postcommunio
-
-[Commemoratio Oratio]
-! de S. Crisógono
-Ouvi as nossas súplicas, Senhor, a fim de que, reconhecendo-nos réus pelas nossas iniquidades, sejamos absolvidos pela intercessão do vosso B. Mártir Crisógono.
-$Per Dominum
-
-[Commemoratio Secreta]
-! de S. Crisógono
-Deixai-Vos aplacar, Senhor, com a oferta destes dons, Vos suplicamos; e, pela intercessão do B. Crisógono, vosso Mártir, preservai-nos de todos os perigos.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! de S. Crisógono
-Que a recepção do vosso sacramento, Senhor, nos purifique das nossas faltas ocultas e nos livre das insídias dos nossos inimigos.
-$Per Dominum

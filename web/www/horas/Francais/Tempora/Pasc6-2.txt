@@ -1,15 +1,6 @@
 [Rank]
 Feria III infra Octavam Ascensionis;;Semiduplex;;2;;ex Tempora/Pasc5-4
 
-[Rank] (rubrica 1960)
-Feria III post Ascensionem;;Feria;;1;;vide Tempora/Pasc5-4
-
-[Rule]
-ex Tempora/Pasc5-4;
-9 Lectiones
-Doxology=Asc
-Feria Te Deum
-
 [Lectio1]
 Du premier Epître du Bienheureux Jean Apôtre.
 !1 Jean 4:1-6
@@ -19,9 +10,6 @@ Du premier Epître du Bienheureux Jean Apôtre.
 04 Vous, petits enfants, vous êtes de Dieu, et vous avez vaincu ces gens-là ; car Celui qui est en vous est plus grand que celui qui est dans le monde.
 05 Eux, ils sont du monde ; voilà pourquoi ils parlent le langage du monde, et le monde les écoute.
 06 Nous, nous sommes de Dieu ; celui qui connaît Dieu nous écoute ; celui qui n’est pas de Dieu ne nous écoute pas. C’est ainsi que nous reconnaissons l’esprit de la vérité et l’esprit de l’erreur.
-
-[Responsory1]
-@Tempora/Pasc5-4:Responsory1
 
 [Lectio2]
 !1 Jean 4:7-14
@@ -34,9 +22,6 @@ Du premier Epître du Bienheureux Jean Apôtre.
 13 Voici comment nous reconnaissons que nous demeurons en lui et lui en nous : il nous a donné part à son Esprit.
 14 Quant à nous, nous avons vu et nous attestons que le Père a envoyé son Fils comme Sauveur du monde.
 
-[Responsory2]
-@Tempora/Pasc5-4:Responsory2
-
 [Lectio3]
 !1 Jean 4:15-21
 15 Celui qui proclame que Jésus est le Fils de Dieu, Dieu demeure en lui, et lui en Dieu.
@@ -46,8 +31,6 @@ Du premier Epître du Bienheureux Jean Apôtre.
 19 Quant à nous, nous aimons parce que Dieu lui-même nous a aimés le premier.
 20 Si quelqu’un dit : « J’aime Dieu », alors qu’il a de la haine contre son frère, c’est un menteur. En effet, celui qui n’aime pas son frère, qu’il voit, est incapable d’aimer Dieu, qu’il ne voit pas.
 21 Et voici le commandement que nous tenons de lui : celui qui aime Dieu, qu’il aime aussi son frère.
-[Responsory3]
-@Tempora/Pasc5-4:Responsory3
 
 [Lectio4]
 Sermon de saint Maxime, Évêque

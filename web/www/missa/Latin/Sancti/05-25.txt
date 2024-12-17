@@ -4,7 +4,6 @@ S. Gregorii VII Papæ Confessoris;;Duplex;;3;;vide C4b
 [Rule]
 vide C4b;
 9 lectiones
-CPapaM=Urbánum;
 Gloria
 
 [Introitus]
@@ -14,29 +13,8 @@ Gloria
 Deus, in te sperántium fortitúdo, qui beátum Gregórium Confessórem tuum atque Pontíficem, pro tuénda Ecclésiæ libertáte, virtúte constántiæ roborásti: da nobis, ejus exémplo et intercessióne, ómnia adversántia fórtiter superáre.
 $Per Dominum
 
-[Lectio]
-@Commune/C4b
-
-[Evangelium]
-@Commune/C4b
-
 [Secreta]
 @Commune/C4
 
-[Communio]
-@Commune/C4b
-
 [Postcommunio]
 @Commune/C4::s/N\./Gregório/
-
-[Commemoratio Oratio]
-!Pro S. Urbano
-@Commune/C4b:Oratio1:s/N\./Urbáno/
-
-[Commemoratio Secreta]
-!Pro S. Urbano
-@Commune/C4b:Secreta1:s/N\./Urbáno/
-
-[Commemoratio Postcommunio]
-!Pro S. Urbano
-@Commune/C4b:Postcommunio1:s/N\./Urbáni/

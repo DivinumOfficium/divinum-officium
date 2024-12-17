@@ -1,9 +1,6 @@
 [Rank]
 In Commemoratione Sancti Pauli Apostoli;;Duplex majus;;4;;ex C1
 
-[Rank] (rubrica 196)
-In Commemoratione Sancti Pauli Apostoli;;Duplex;;3;;vide C1
-
 [Rule]
 ex C1;
 Gloria
@@ -36,17 +33,17 @@ De genade van God was in mij niet ijdel, maar zijn genade blijft altijd in mij.
 Alleluia, alleluia.
 V. Heilige apostel Paulus, prediker van de waarheid, leraar van de heidenen, wees onze voorspreker. Alleluia.
 
-[Tractus]
-Tu es vas electiónis, sancte Paule Apóstole: vere digne es glorificándus.
-V. Prædicátor veritátis et doctor géntium in fide et veritáte.
-V. Per te omnes gentes cognovérunt grátiam Dei.
-V. Intercéde pro nobis ad Deum, qui te elégit.
-
 [GradualeP]
 Allelúja, allelúja.
 !Ps 106:8
 Confiteántur Dómino misericórdiæ ejus. et mirabília ejus fíliis hóminum. Allelúja.
 V. Heilige apostel Paulus, prediker van de waarheid, leraar van de heidenen, wees onze voorspreker. Alleluia.
+
+[Tractus]
+Tu es vas electiónis, sancte Paule Apóstole: vere digne es glorificándus.
+V. Prædicátor veritátis et doctor géntium in fide et veritáte.
+V. Per te omnes gentes cognovérunt grátiam Dei.
+V. Intercéde pro nobis ad Deum, qui te elégit.
 
 [Evangelium]
 @Sancti/06-11
@@ -74,15 +71,3 @@ $Oremus
 !Pro S. Petro
 Moge, Heer, het offer, dat wij opdroegen, ons tot vreugde strekken, opdat wij door uw apostel Petrus uw overvloedige barmhartigheid mogen verwerven, zoals wij uw wondermacht in hem belijden.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Pro Octava S. Joannis Baptistæ
-@Sancti/06-24:Oratio
-
-[Commemoratio Secreta]
-!Pro Octava S. Joannis Baptistæ
-@Sancti/06-24:Secreta
-
-[Commemoratio Postcommunio]
-!Pro Octava S. Joannis Baptistæ
-@Sancti/06-24:Postcommunio

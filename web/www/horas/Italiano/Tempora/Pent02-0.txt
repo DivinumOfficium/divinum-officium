@@ -1,18 +1,6 @@
 [Rank]
 Dominica II. Post Pentecosten infra Octavam Corporis Christi;;Semiduplex I classis;;5.9;;ex Tempora/Pent01-4
 
-[Rank] (rubrica 1960)
-Dominica II. Post Pentecosten;;Semiduplex I classis;;5.9
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Corp
-
-[Hymnus Vespera]
-@Tempora/Pent01-4:Hymnus Vespera
-
 [Versum 1]
 V. Li cibò di fior di frumento, alleluia.
 R. E li saziò del miele stillante dalla roccia, alleluia.
@@ -23,6 +11,10 @@ Il giovinetto Samuele * serviva il Signore sotto gli occhi di Eli, e raro era in
 [Oratio]
 Signore, facci avere continuamente il timore insieme e l'amore del tuo santo nome: perché non privi mai della tua assistenza quelli che tu confermi nella saldezza del tuo amore. 
 $Per Dominum.
+
+[Commemoratio]
+!Commemorazione dell'Ottava del Corpus Domini
+@Tempora/Pent01-4:Oratio
 
 [Lectio1]
 Dal primo libro dei Re
@@ -85,9 +77,6 @@ Onde anche noi, nati nelle pene di questo esilio, siamo già giunti quaggiù a t
 v. Carissimi: Non vi stupite se il mondo vi odia. Noi sappiamo che siamo passati dalla morte alla vita, perché amiamo i fratelli.
 $Deo gratias
 
-[Hymnus Laudes]
-@Tempora/Pent01-4:Hymnus Laudes
-
 [Versum 2]
 V. Il pane del cielo ha dato loro, alleluia.
 R. L'uomo ha mangiato il pane degli Angeli, alleluia.
@@ -99,48 +88,15 @@ Un uomo * fece una gran cena e invitò molti: e all'ora della cena mandò un suo
 !1 Joann. 3:18
 v. Figlioli miei, non amiamo a parole né colla lingua, ma coi fatti e per davvero.
 
-[Responsory Tertia]
-R.br. Il pane del cielo ha dato loro, * Alleluia, alleluia.
-R. Il pane del cielo ha dato loro, * Alleluia, alleluia.
-V. L'uomo ha mangiato il pane degli Angeli.
-R. Alleluia, alleluia.
-&Gloria
-R. Il pane del cielo ha dato loro, * Alleluia, alleluia.
-_
-V. Li cibò di fior di frumento, alleluia.
-R. E li saziò del miele stillante dalla roccia, alleluia.
-
 [Capitulum Sexta]
 !1 Joann. 3:16
 v. Da questo noi abbiamo constatato l'amore di Dio: che egli ha dato la sua vita per noi, così anche noi dobbiamo dare la vita per i fratelli.
 $Deo gratias
 
-[Responsory Sexta]
-R.br. Li cibò di fior di frumento, * Alleluia, alleluia.
-R. Li cibò di fior di frumento, * Alleluia, alleluia.
-V. E li saziò del miele stillante dalla roccia.
-R. Alleluia, alleluia.
-&Gloria
-R. Li cibò di fior di frumento, * Alleluia, alleluia.
-_
-V. Tu trai il pane dalla terra, alleluia.
-R. E il vino che rallegra il cuore dell'uomo, alleluia.
-
 [Capitulum Nona]
 !1 Joann. 3:18
 v. Figlioli miei, non amiamo a parole né colla lingua, ma coi fatti e per davvero.
 $Deo gratias
-
-[Responsory Nona]
-R.br. Tu trai il pane dalla terra, * Alleluia, alleluia.
-R. Tu trai il pane dalla terra, * Alleluia, alleluia.
-V. E il vino che rallegra il cuore dell'uomo.
-R. Alleluia, alleluia.
-&Gloria
-R. Tu trai il pane dalla terra, * Alleluia, alleluia.
-_
-V. Egli ha messo nei tuoi confini la pace, alleluia.
-R. E col fior di frumento ti sazia, alleluia.
 
 [Versum 3]
 V. Li cibò di fior di frumento, alleluia.
@@ -148,7 +104,3 @@ R. E li saziò del miele stillante dalla roccia, alleluia.
 
 [Ant 3]
 Va presto * per le piazze e per le vie della città: e i poveri, gli storpi, i ciechi, e gli zoppi costringili ad entrare, finché la mia casa sia piena, alleluia.
-
-[Commemoratio]
-!Commemorazione dell'Ottava del Corpus Domini
-@Tempora/Pent01-4:Oratio

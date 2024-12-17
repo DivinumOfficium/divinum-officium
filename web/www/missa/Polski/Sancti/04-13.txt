@@ -10,27 +10,15 @@ vide C2;
 ! Szaty czerwone
 Hermenegild, Syn króla Wizygotów w Hiszpanii, został wychowany w arianizmie. Poślubił księżniczkę katolicką i pod jej wpływem przyjął prawdziwą wiarę. Rozgniewany ojciec kazał go uwięzić, a potem ściąć 13 kwietnia 586 roku.
 
-[Introitus]
-@Commune/C2p:Introitus
-
 [Oratio]
 Boże, Ty nauczyłeś świętego Hermenegilda niżej cenić ziemskie królestwo od niebieskiego: daj nam, abyśmy za jego przykładem pogardzali dobrami znikomymi, a dążyli do niebieskich.
 $Per Dominum
 
-[Lectio]
-@Commune/C2p:Lectio
-
 [Evangelium]
-@Commune/C2c:Evangelium
-
-[Offertorium]
-@Commune/C2p:Offertorium
+@Commune/C2c
 
 [Secreta]
 @Commune/C2p:Secreta2
-
-[Communio]
-@Commune/C2p:Communio
 
 [Postcommunio]
 @Commune/C2p:Postcommunio2

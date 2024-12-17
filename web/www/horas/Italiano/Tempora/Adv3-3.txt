@@ -1,14 +1,15 @@
 [Rank]
 Feria IV Quattuor Temporum in Adventu;;Feria major;;2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1930)
 Feria IV Quattuor Temporum Adventus;;Feria major;;3
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria IV infra Hebdomadam III Adventus;;Feria major;;2
 
-[Rule]
-Preces Feriales
+[Oratio]
+Fa, Dio onnipotente, che la prossima solennità della nostra redenzione, ci porti gli aiuti per la vita presente, e ci largisca il premio della beatitudine eterna.
+$Per Dominum.
 
 [Lectio1]
 Lettura del santo Vangelo secondo Luca
@@ -47,10 +48,6 @@ R. E sarà chiamato col nome di Emanuele.
 
 [Ant 2]
 Fu mandato * l'Angelo Gabriele a Maria Vergine sposata a Giuseppe.
-
-[Oratio]
-Fa, Dio onnipotente, che la prossima solennità della nostra redenzione, ci porti gli aiuti per la vita presente, e ci largisca il premio della beatitudine eterna.
-$Per Dominum.
 
 [Ant 3]
 Ecco l'ancella del Signore: * mi avvenga secondo quello che hai detto.

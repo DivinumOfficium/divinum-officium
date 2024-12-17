@@ -1,15 +1,5 @@
-@Tempora/Pasc6-0
-(sed rubrica 1960 omittitur)
-
 [Rank]
 Piątek po Oktawie Wniebowstąpienia;;Semiduplex;;2;;ex Tempora/Pasc5-4
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1955)
 Piątek w tygodniu po Wniebowstąpieniu;;Feria;;1;;vide Tempora/Pasc5-4
-
-[Rule]
-ex Tempora/Pasc5-4;
-9 Lectiones
-Doxology=Asc
-Feria Te Deum
-No suffragium

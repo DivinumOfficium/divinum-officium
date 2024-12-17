@@ -31,11 +31,12 @@ sub load_data_data {
   shift @lines;
 
   foreach (@lines) {
-    my ($ver, $kal, $tra, $str, $base) = split(/,/);
+    my ($ver, $kal, $tra, $str, $base, $tbase) = split(/,/);
     $_data{$ver}{kalendar} = $kal;
     $_data{$ver}{transfer} = $tra;
     $_data{$ver}{stransfer} = $str;
     $_data{$ver}{base} = $base;
+    $_data{$ver}{tbase} = $tbase;
   }
   $_dCACHE{loaded} = 1;
 }
@@ -173,7 +174,7 @@ sub get_transfer {
 
   my $rv = $_dCACHE{$cache_key}{$key};
   return $rv if $rv;
-  my $ver = $_data{$version}{base};
+  my $ver = $_data{$version}{tbase};
   return '' unless $ver;
   return get_transfer($year, $ver, $key);
 }
@@ -189,7 +190,7 @@ sub get_stransfer {
 
   my $rv = $_dCACHE{$cache_key}{$key};
   return $rv if $rv;
-  my $ver = $_data{$version}{base};
+  my $ver = $_data{$version}{tbase};
   return '' unless $ver;
   return get_stransfer($year, $ver, $key);
 }
@@ -205,7 +206,7 @@ sub get_tempora {
 
   my $rv = $_dCACHE{$cache_key}{$key};
   return $rv if $rv;
-  my $ver = $_data{$version}{base};
+  my $ver = $_data{$version}{tbase};
   return '' unless $ver;
   return get_tempora($ver, $key);
 }
@@ -218,7 +219,7 @@ sub transfered {
   my $year = shift;
   my $version = shift;
 
-  $str =~ s+Sancti/++;
+  $str =~ s+SanctiM?/++;
   return '' unless $str;
 
   my %transfer = %{$_dCACHE{"Transfer:$version:$year"}};

@@ -5,9 +5,14 @@ S. Antonii de Padua Confessoris;;Duplex;;3;;vide C5a
 vide C5a;
 Gloria
 
-[Oratio]
+[Oratio_]
 Moge, o God, de godvruchtige viering van het feest van uw heilige belijder en kerkleraar Antonius uw Kerk verblijden, opdat zij altijd door geestelijke hulp gesteund mag worden en de eeuwige vreugde genieten.
 $Per Dominum
+
+[Oratio]
+@:Oratio_:s/en\ kerkleraar//
+(sed rubrica 195 aut rubrica 196)
+@:Oratio_
 
 [Lectio]
 @Commune/C4a
@@ -16,6 +21,11 @@ $Per Dominum
 Moge, o Heer, dit offer uw volk ten heil zijn, waarvoor Gij U aan uw Vader als een levend slachtoffer hebt willen opdragen.
 v. Die met dezelfde God de Vader en de Heilige Geest leeft en heerst, God: in alle eeuwen der eeuwen. Amen.
 
-[Postcommunio]
+[Postcommunio_]
 Verzadigd aan uw goddelijke gaven, o Heer, vragen wij U, dat wij door de verdiensten en de voorspraak van uw heilige belijder en kerkleraar Antonius de uitwerking mogen ondervinden van dit heilzame offer.
 $Per Dominum
+
+[Postcommunio]
+@:Postcommunio_:s/en\ kerkleraar//
+(sed rubrica 195 aut rubrica 196)
+@:Postcommunio_

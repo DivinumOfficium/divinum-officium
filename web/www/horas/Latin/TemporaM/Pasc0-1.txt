@@ -21,6 +21,12 @@ De Epístola prima beáti Pauli Apóstoli ad Corínthios
 5 et quia visus est Cephæ, et post hoc úndecim:
 6 deínde visus est plus quam quingéntis frátribus simul: ex quibus multi manent usque adhuc, quidam autem dormiérunt:
 
+[Lectio1] (rubrica 196)
+@:Lectio9
+
+[Responsory1]
+@Tempora/Pasc1-0:Responsory2
+
 [Lectio2]
 !1Cor 15:7-11
 7 Deínde visus est Iacóbo, deínde Apóstolis ómnibus:
@@ -29,6 +35,12 @@ De Epístola prima beáti Pauli Apóstoli ad Corínthios
 10 Grátia autem Dei sum id quod sum, et grátia eius in me vácua non fuit, sed abundántius illis ómnibus laborávi: non ego autem, sed grátia Dei mecum:
 11 sive enim ego, sive illi: sic prædicámus, et sic credidístis.
 
+[Lectio2] (rubrica 196)
+@:Lectio10
+
+[Responsory2]
+@Tempora/Pasc0-0
+
 [Lectio3]
 !1Cor 15:12-16
 12 Si autem Christus prædicátur quod resurréxit a mórtuis, quómodo quidam dicunt in vobis, quóniam resurréctio mortuórum non est?
@@ -36,6 +48,10 @@ De Epístola prima beáti Pauli Apóstoli ad Corínthios
 14 Si autem Christus non resurréxit, inánis est ergo prædicátio nostra, inánis est et fides vestra:
 15 invenímur autem et falsi testes Dei: quóniam testimónium díximus advérsus Deum quod suscitáverit Christum, quem non suscitávit, si mórtui non resúrgunt.
 16 Nam si mórtui non resúrgunt, neque Christus resurréxit.
+
+[Lectio3] (rubrica 196)
+@:Lectio11: s/$/~/
+@:Lectio12
 
 [Lectio4]
 !1Cor 15:17-22
@@ -73,20 +89,3 @@ Igitur, fratres, omnes in hac die sancta exsultáre debémus; nullus se a commú
 
 [Lectio12]
 @Tempora/Pasc0-1:Lectio3: s/.* Mensam/Mensam/s
-
-[Lectio1] (rubrica 196)
-@:Lectio9
-
-[Responsory1]
-@Tempora/Pasc1-0:Responsory2
-
-[Lectio2] (rubrica 196)
-@:Lectio10
-
-[Responsory2]
-@Tempora/Pasc0-0
-
-[Lectio3] (rubrica 196)
-@:Lectio11: s/$/~/
-@:Lectio12
-

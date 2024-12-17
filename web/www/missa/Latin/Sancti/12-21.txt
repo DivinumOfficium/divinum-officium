@@ -1,9 +1,6 @@
 [Rank]
 S. Thomæ Apostoli;;Duplex II classis;;5.1
 
-[Rank] (rubrica 196)
-S. Thomæ Apostoli;;Duplex II classis;;5
-
 [Rule]
 Gloria
 Credo
@@ -28,13 +25,26 @@ V. Dinumerábo eos, et super arénam multiplicabúntur. Allelúja, allelúja.
 !Ps 32:1
 Gaudéte, justi, in Dómino: rectos decet collaudátio. Allelúja.
 
+[GradualeP]
+V. Allelúja, allelúja
+!Ps 32:1.
+Gaudéte, justi, in Dómino: rectos decet collaudátio. Allelúja.
+!Ps 88:6.
+V. Confitebúntur cœli mirabília tua, Dómine: étenim veritátem tuam in ecclésia sanctórum. Allelúja.
+
+[Tractus]
+!Ps 20:3-4
+Desidérium ánimæ ejus tribuísti ei: et voluntáte labiórum ejus non fraudásti eum.
+V. Quóniam prævenísti eum in benedictiónibus dulcédinis.
+V. Posuísti in cápite ejus corónam de lápide pretióso.
+
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Joánnem.
 !Joann 20:24-29
 In illo témpore: Thomas, unus ex duódecim, qui dícitur Dídymus, non erat cum eis, quando venit Jesus. Dixérunt ergo ei alii discípuli: Vídimus Dóminum. Ille autem dixit eis: Nisi videro in mánibus ejus fixúram clavórum, et mittam dígitum meum in locum clavórum, et mittam manum meam in latus ejus, non credam. Et post dies octo, íterum erant discípuli ejus intus, et Thomas cum eis. Venit Jesus jánuis clausis, et stetit in médio, et dixit: Pax vobis. Deinde dicit Thomæ: Inter dígitum tuum huc, et vide manus meas, et affer manum tuam, et mitte in latus meum: et noli esse incrédulus, sed fidélis. Respóndit Thomas et dixit ei: Dóminus meus et Deus meus. Dixit ei Jesus: Quia vidisti me, Thoma, credidísti: beáti, qui non vidérunt, et credidérunt.
 
 [Offertorium]
-@Sancti/07-04
+@Sancti/07-04oct
 
 [Secreta]
 Débitum tibi, Dómine, nostræ réddimus servitútis, supplíciter exorántes: ut, suffrágiis beáti Thomæ Apóstoli, in nobis tua múnera tueáris, cujus honoránda confessióne laudis tibi hóstias immolámus.
@@ -46,16 +56,3 @@ $Per Dominum
 [Postcommunio]
 Adésto nobis, miséricors Deus: et, intercedénte pro nobis beáto Thoma Apóstolo, tua circa nos propitiátus dona custódi.
 $Per Dominum
-
-[Tractus]
-!Ps 20:3-4
-Desidérium ánimæ ejus tribuísti ei: et voluntáte labiórum ejus non fraudásti eum.
-V. Quóniam prævenísti eum in benedictiónibus dulcédinis.
-V. Posuísti in cápite ejus corónam de lápide pretióso.
-
-[GradualeP]
-V. Allelúja, allelúja
-!Ps 32:1.
-Gaudéte, justi, in Dómino: rectos decet collaudátio. Allelúja.
-!Ps 88:6.
-V. Confitebúntur cœli mirabília tua, Dómine: étenim veritátem tuam in ecclésia sanctórum. Allelúja.

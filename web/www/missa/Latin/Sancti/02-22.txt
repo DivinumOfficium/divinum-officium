@@ -1,9 +1,6 @@
 [Rank]
 In Cathedra S. Petri Ap. Antiochiæ;;Duplex majus;;4;;ex C4
 
-[Rank] (rubrica 196)
-In Cathedra S. Petri Ap.;;Duplex II classis;;5;;ex C4
-
 [Rule]
 ex C4;
 Gloria
@@ -27,15 +24,15 @@ $Per Dominum
 [Graduale]
 @Commune/C4b
 
+[GradualeP]
+@Commune/Coronatio
+
 [Tractus]
 !Ps 106:32; 106:31
 Exáltent eum in Ecclésia plebis: et in cáthedra seniórum laudent eum.
 V. Confiteántur Dómino misericórdiæ ejus; et mirabília ejus fíliis hóminum.
 _
 !Tractus
-@Commune/Coronatio
-
-[GradualeP]
 @Commune/Coronatio
 
 [Evangelium]
@@ -60,4 +57,3 @@ _
 !Pro S. Paulo
 Sanctificáti, Dómine, salutári mystério: quǽsumus; ut nobis ejus non desit orátio, cujus nos donásti patrocínio gubernari.
 $Per Dominum
-

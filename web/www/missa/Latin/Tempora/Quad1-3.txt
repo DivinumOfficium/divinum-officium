@@ -1,9 +1,6 @@
 [Rank]
 Feria Quarta Quatuor Temporum Quadragesimæ;;Feria major;;2.1
 
-[Rank] (rubrica 196)
-Feria Quarta Quatuor Temporum Quadragesimæ;;Feria major;;3.9
-
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
@@ -18,10 +15,6 @@ Ad te, Dómine, levávi ánimam meam: Deus meus, in te confído, non erubéscam.
 &Gloria
 v. Reminíscere miseratiónum tuárum, Dómine, et misericórdiæ tuæ, quæ a sǽculo sunt: ne umquam dominéntur nobis inimíci nostri: líbera nos, Deus Israël, ex ómnibus angústiis nostris.
 
-[Oratio]
-Preces nostras, quǽsumus, Dómine, cleménter exáudi: et contra cuncta nobis adversántia, déxteram tuæ majestátis exténde.
-$Per Dominum
-
 [LectioL1]
 Léctio libri Exodi
 !Exod 24:12-18
@@ -35,6 +28,10 @@ V. Vide humilitátem meam, et labórem meum: et dimítte ómnia peccáta mea.
 
 [OratioL1]
 Devotiónem pópuli tui, quǽsumus, Dómine, benígnus inténde: ut, qui per abstinéntiam macerántur in córpore, per fructum boni óperis reficiántur in mente.
+$Per Dominum
+
+[Oratio]
+Preces nostras, quǽsumus, Dómine, cleménter exáudi: et contra cuncta nobis adversántia, déxteram tuæ majestátis exténde.
 $Per Dominum
 
 [Lectio]

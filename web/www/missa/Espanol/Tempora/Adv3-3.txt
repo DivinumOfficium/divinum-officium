@@ -1,12 +1,6 @@
 [Rank]
 Feria IV Quattuor Temporum in Adventu;;Feria major;;2
 
-[Rank1960]
-Feria IV Quattuor Temporum Adventus;;Feria major;;3
-
-[RankNewcal]
-Feria IV infra Hebdomadam III Adventus;;Feria major;;2
-
 [Rule]
 Oratio Dominica
 no Gloria
@@ -22,10 +16,6 @@ Los cielos publican la gloria de Dios y el firmamento anuncia la grandeza de las
 &Gloria
 v. Oh cielos, derramad desde arriba vuestro rocio, y lluevan las nubes al Justo: ábrase la tierra y brote al Salvador.
 
-[Oratio]
-Te suplicamos, Dios todopoderoso, nos concedas que la solemnidad venidera de nuestra redención, nos confiera los consuelos de la vida presente y nos conceda el premio de la eterna bienaventuranza.
-$Per Dominum
-
 [LectioL1]
 Lección del profeta Isaías
 !Isa 2:2-5
@@ -40,6 +30,10 @@ V. ¿Quién podrá subir al monte del Señor, y permanecer en su lugar santo?. E
 [OratioL1]
 Apresúrate a venir, oh Señor, te rogamos, y no tardes; y concédenos el auxilio de la virtud celestial; a fin de que rebosen con los consuelos de tu venida quienes confían en tu clemencia.
 $Qui vivis
+
+[Oratio]
+Te suplicamos, Dios todopoderoso, nos concedas que la solemnidad venidera de nuestra redención, nos confiera los consuelos de la vida presente y nos conceda el premio de la eterna bienaventuranza.
+$Per Dominum
 
 [Lectio]
 Lección del profeta Isaías

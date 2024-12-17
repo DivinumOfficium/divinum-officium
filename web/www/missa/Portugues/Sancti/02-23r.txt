@@ -1,12 +1,6 @@
 [Rank]
 S. Petri Damiani;;Duplex;;3;;vide C4a
 
-[RankNewcal]
-S. Petri Damiani;;Duplex optional;;2;;vide C4a
-
-[Name]
-Petre
-
 [Rule]
 vide C4;
 Gloria
@@ -15,6 +9,9 @@ Gloria
 # 23 II – S. Pedro Damião, Bispo, Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
+
+[Name]
+Petre
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -46,4 +43,3 @@ $Per Dominum
 
 [Postcommunio]
 @Commune/C4a:Postcommunio
-

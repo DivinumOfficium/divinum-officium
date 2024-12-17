@@ -1,0 +1,21 @@
+[Rank]
+S. Lucien I Pape et Martyr 
+
+[Rule]
+vide C2b;
+OPapaM=Lucien;
+
+[Oratio]
+@Commune/C2b:Oratio:s/N\./Lucien/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
+
+[Secreta]
+@Commune/C2b::s/N\./Lucien/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b
+
+[Postcommunio]
+@Commune/C2b::s/N\./Lucien/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b

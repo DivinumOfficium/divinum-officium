@@ -1,12 +1,6 @@
 [Rank]
 Dominica VI Post Pentecosten;;Semiduplex;;5
 
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Symbolum Athanasium
-
 [Ant 1]
 Je vous en prie, Seigneur, * enlevez l'iniquité de votre serviteur car j'ai agi follement.
 
@@ -22,9 +16,6 @@ Du second livre de Samuel
 03 Le pauvre n’avait rien qu’une brebis, une toute petite, qu’il avait achetée. Il la nourrissait, et elle grandissait chez lui au milieu de ses fils ; elle mangeait de son pain, buvait de sa coupe, elle dormait dans ses bras : elle était comme sa fille.
 04 Un voyageur arriva chez l’homme riche. Pour préparer le repas de son hôte, celui-ci épargna ses moutons et ses bœufs. Il alla prendre la brebis du pauvre, et la prépara pour l’homme qui était arrivé chez lui. »
 
-[Responsory1]
-@Tempora/Pent01-1
-
 [Lectio2]
 !2 Sam 12:5-9
 05 Alors, David s’enflamma d’une grande colère contre cet homme, et dit à Nathan : « Par le Seigneur vivant, l’homme qui a fait cela mérite la mort !
@@ -32,9 +23,6 @@ Du second livre de Samuel
 07 Alors Nathan dit à David : « Cet homme, c’est toi ! Ainsi parle le Seigneur Dieu d’Israël : Je t’ai consacré comme roi d’Israël, je t’ai délivré de la main de Saül,
 08 puis je t’ai donné la maison de ton maître, j’ai mis dans tes bras les femmes de ton maître ; je t’ai donné la maison d’Israël et de Juda et, si ce n’est pas assez, j’ajouterai encore autant.
 09 Pourquoi donc as-tu méprisé le Seigneur en faisant ce qui est mal à ses yeux ? Tu as frappé par l’épée Ourias le Hittite ; sa femme, tu l’as prise pour femme ; lui, tu l’as fait périr par l’épée des fils d’Ammone.
-
-[Responsory2]
-@Tempora/Pent01-1
 
 [Lectio3]
 !2 Sam 12:10-16
@@ -46,28 +34,16 @@ Du second livre de Samuel
 15 Et Nathan retourna chez lui. Le Seigneur frappa l’enfant que la femme d’Ourias avait donné à David, et il tomba gravement malade.
 16 David implora Dieu pour le petit enfant : il jeûna strictement, et, quand il rentrait chez lui, il passait la nuit couché par terre.
 
-[Responsory3]
-@Tempora/Pent01-1
-
 [Lectio4]
 Du livre de saint Ambroise, Évêque, sur l’Apologie de David.
 !Apolog. 1, c. 2
 Que de fautes chacun de nous ne commet-il pas à toute heure ! Et cependant aucun de nous, qui formons le peuple, ne pense à l’obligation de les confesser. David, ce roi si glorieux et si puissant, ne peut garder en lui, même un temps assez court, le péché qui pèse sur sa conscience : mais, par une prompte confession, accompagnée d’un regret sans mesure, il s’en décharge aux pieds du Seigneur. Me trouveriez-vous facilement aujourd’hui quelqu’un de riche et d’honoré, qui souffre sans peine d’être repris pour une faute qu’il aurait commise ? Et David, dans l’éclat de la puissance royale, David, loué si souvent par les saintes Écritures, lorsqu’un particulier lui reproche un grand crime, ne frémit point d’indignation, mais au contraire avoue sa faute et en gémit avec douleur.
 
-[Responsory4]
-@Tempora/Pent01-2:Responsory1
-
 [Lectio5]
 Aussi le Seigneur fut-il touché de cette immense douleur, si bien que Nathan dit à David : Parce que tu t’es repenti, le Seigneur a mis à l’écart ton péché. La promptitude du pardon fait voir que le repentir du prince était bien profond, pour écarter ainsi l’offense d’un tel égarement. Le reste des hommes, lorsque les Prêtres ont lieu de les reprendre, aggravent leur péché, en cherchant soit à le nier, soit à l’excuser ; et il y a pour eux chute plus grande, là même où l’on espérait les voir se relever. Mais les saints du Seigneur, qui brûlent de continuer le pieux combat et de fournir en entier la carrière du salut, si parfois, hommes qu’ils sont, ils viennent à faillir, moins par détermination de pécher que par fragilité naturelle, ils se relèvent plus ardents à la course, et, stimulés par la honte de la chute, ils la compensent par de plus rudes combats. De sorte que leur chute, au lieu de leur avoir causé quelque retard, n’a servi qu’à les aiguillonner et à les faire avancer plus vite.
 
-[Responsory5]
-@Tempora/Pent01-2:Responsory2
-
 [Lectio6]
 David pèche, ce qui arrive aux rois trop souvent ; mais il fait pénitence, il pleure, il gémit : ce qui est assez rare chez les rois. Il reconnaît sa faute, il en demande pardon, le front dans la poussière ; il déplore sa misérable fragilité ; il jeûne, il prie, et, manifestant ainsi sa douleur, fait parvenir aux siècles futurs le témoignage de sa confession. L’aveu qui fait rougir de honte les particuliers, ce prince n’en rougit pas. Ceux que les lois atteignent osent nier leur péché, ou ne veulent pas demander ce pardon que sollicite un souverain, qui n’est soumis aux lois d’aucun homme. En péchant, il a donné un signe de sa fragile condition ; en suppliant, il donne une marque d’amendement.
-
-[Responsory6]
-@Tempora/Pent01-2:Responsory3
 
 [Lectio7]
 Lecture du saint Évangile selon saint Marc
@@ -78,14 +54,8 @@ Homélie de saint Ambroise, Évêque.
 !Livre 6 de Luc 9, après le début
 C’est après que cette femme qui figurait l’Église, eut été guérie d’un flux de sang ; c’est après que les Apôtres eurent été choisis pour prêcher l’Évangile du royaume de Dieu, que Jésus-Christ distribua l’aliment de la grâce céleste. Et remarquez à qui il le dispense : ce n’est point à ceux qui demeurent oisifs, à ceux qui restent dans la ville, c’est-à-dire à ceux qui s’attardent dans la synagogue ou se complaisent dans les honneurs du siècle ; mais c’est à ceux qui, pour chercher le Christ, pénètrent jusqu’au désert. Ceux qui surmontent toute répugnance, ceux-là sont accueillis par le Christ, c’est avec eux que le Verbe de Dieu s’entretient, non des affaires de ce monde, mais du royaume de Dieu. Et si parmi eux il en est qui soient affligés de quelque infirmité corporelle, il leur accorde d’abord le bienfait de la guérison.
 
-[Responsory7]
-@Tempora/Pent01-3:Responsory1
-
 [Lectio8]
 Il était naturel qu’il tint en réserve un aliment spirituel, pour faire cesser le jeûne de ceux dont il venait de guérir les blessures. Personne donc ne reçoit la nourriture du Christ, s’il n’a d’abord été guéri, et tous ceux qui sont appelés au banquet, sont auparavant guéris par l’appel divin. Celui qui était boiteux a reçu, pour venir, la faculté de marcher ; celui qui était privé de la vue n’a pu entrer dans la maison du Seigneur, qu’après que la lumière lui a été rendue.
-
-[Responsory8]
-@Tempora/Pent01-0:Responsory8
 
 [Lectio9]
 C’est donc un ordre mystérieux toujours observé : d’abord la rémission des péchés guérit les blessures spirituelles, ensuite la céleste nourriture est accordée avec largesse. Et cependant, cette foule n’est pas encore appelée à se nourrir des aliments les plus substantiels : ces cœurs, vides d’une foi solide, ne sont pas restaurés par le corps et le sang du Christ. « Je ne vous ai donné que du lait, dit l’Apôtre, vous ne pouviez encore supporter autre chose, et d’ailleurs vous en êtes encore incapables ». Ici, les cinq pains rappellent le lait : la nourriture plus substantielle, c’est le corps du Christ ; le breuvage plus fortifiant, c’est le sang du Seigneur.

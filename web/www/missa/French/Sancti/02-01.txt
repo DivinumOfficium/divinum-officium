@@ -1,7 +1,7 @@
 [Rank]
 S. Ignatii Episcopi et Martyris;;Duplex;;3;;vide C2
 
-[Rank1570]
+[Rank] (rubrica 1570)
 S. Ignatii Episcopi et Martyris;;Semiduplex;;2;;vide C2
 
 [Rule]
@@ -32,6 +32,13 @@ V. Nul ne lui a été trouvé semblable, lui qui a conservé la loi du Très-Hau
 !Gal 2:19-20.
 V. Avec le Christ j’ai été cloué à la croix. Et je vis, non ce n’est plus moi, mais c’est le Christ qui vit en moi. Allelúja.
 
+[GradualeP]
+Allelúja, allelúja
+!Gal 2:19-20.
+Avec le Christ j’ai été cloué à la croix. Et je vis, non ce n’est plus moi, mais c’est le Christ qui vit en moi. Allelúja,
+!Ps 20:4.
+Vous avez mis, Seigneur, sur sa tête une couronne de pierres précieuses. Allelúja.
+
 [Tractus]
 !Eccli 44:16.
 Voici le grand Pontife qui dans les jours de sa vie a plu à Dieu.
@@ -41,13 +48,6 @@ Nul ne lui a été trouvé semblable, lui qui a conservé la loi du Très-Haut.
 Vous lui avez accordé le désir de son cœur, et vous ne l’avez point frustré de la demande de ses lèvres.
 V. Car vous l’avez prévenu des plus douces bénédictions.
 V. Vous avez mis sur sa tête une couronne de pierres précieuses.
-
-[GradualeP]
-Allelúja, allelúja
-!Gal 2:19-20.
-Avec le Christ j’ai été cloué à la croix. Et je vis, non ce n’est plus moi, mais c’est le Christ qui vit en moi. Allelúja,
-!Ps 20:4.
-Vous avez mis, Seigneur, sur sa tête une couronne de pierres précieuses. Allelúja.
 
 [Evangelium]
 Sequentia sancti Evangelii secundum Joánnem
@@ -63,10 +63,9 @@ Seigneur, acceptez dans votre bonté ces hosties qui vous sont offertes en mémo
 $Per Dominum
 
 [Communio]
-!  
+! 
 Je suis le froment du Christ : Puisse-je être broyé sous les dents des bêtes féroces pour devenir un pain blanc.
 
 [Postcommunio]
 Rassasiés par la participation à ce don sacré, nous vous supplions, Seigneur notre Dieu, par l’intercession du bienheureux Ignace, votre Martyr et Pontife, de nous faire ressentir l’effet du sacrifice que nous célébrons.
 $Per Dominum
-

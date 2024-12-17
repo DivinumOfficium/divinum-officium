@@ -1,13 +1,8 @@
 [Rank]
 Feria Tertia infra Octavam Corporis Christi;;Semiduplex II class;;5;;ex Tempora/Pent01-4
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1955)
 Feria III infra Hebdomadam II post Octavam Pentecostes;;Feria;;1
-
-[Rule]
-ex Tempora/Pent01-4;
-9 lectiones
-Doxology=Corp
 
 [Lectio1]
 Du premier live de Samuel
@@ -15,9 +10,6 @@ Du premier live de Samuel
 01 L’arche du Seigneur demeura en territoire philistin pendant sept mois.
 02 Puis les Philistins convoquèrent prêtres et devins, en disant : « Qu’allons-nous faire de l’arche du Seigneur ? Indiquez-nous comment la renvoyer à l’endroit où elle était. »
 03 Ils répondirent : « Si vous renvoyez l’arche du Dieu d’Israël, ne la renvoyez pas sans rien, mais ne manquez pas d’y joindre une offrande de réparation. Alors, vous serez guéris et vous saurez pourquoi sa main ne s’écartait pas de vous. »
-
-[Responsory1 1960]
-@Tempora/Pent03-2Feria:Responsory1
 
 [Lectio2]
 !1 Sam 6:6-10
@@ -27,18 +19,12 @@ Du premier live de Samuel
 09 Vous verrez alors : si elle prend la route de son territoire en montant vers Beth-Shèmesh, c’est bien Dieu qui nous a fait ce grand mal. Sinon, nous saurons que ce n’est pas sa main qui nous a touchés : c’est par accident que cela nous est arrivé. »
 10 Ainsi firent les gens. Ils prirent deux vaches qui allaitaient, ils les attelèrent au chariot et retinrent leurs petits à l’étable.
 
-[Responsory2 1960]
-@Tempora/Pent03-2Feria:Responsory2
-
 [Lectio3]
 !1 Sam 6:12-15
 12 Les vaches allèrent droit leur chemin sur la route de Beth-Shèmesh. Elles avançaient en meuglant, mais gardèrent le même chemin sans se détourner ni à droite ni à gauche, les princes des Philistins marchant derrière elles jusqu’à la limite de Beth-Shèmesh.
 13 Les gens de Beth-Shèmesh faisaient la moisson des blés dans la vallée. Levant les yeux, ils aperçurent l’Arche et se réjouirent de la voir.
 14 Le chariot arriva dans le champ de Josué de Beth-Shèmesh et il s’y arrêta. Il y avait là une grande pierre. On fendit le bois du chariot et on offrit les vaches en holocauste au Seigneur.
 15 Les lévites avaient descendu l’arche du Seigneur avec le coffre contenant les objets en or et placé à côté d’elle ; ils déposèrent le tout sur la grande pierre. Ce jour-là, les gens de Beth-Shèmesh offrirent des holocaustes et firent des sacrifices pour le Seigneur.
-
-[Responsory3 1960]
-@Tempora/Pent03-2Feria:Responsory3
 
 [Lectio4]
 De l’Épître de saint Cyprien Évêque et Martyr à Caecilius

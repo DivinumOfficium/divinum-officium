@@ -1,6 +1,31 @@
 [Rank]
 Gründonnerstag;;Feria privilegiata Duplex I classis;;7
 
+[Ant Vespera]
+Den heil'gen Kelch ergreife ich, * Herr, deiner Majestät zu Ehren.;;115
+Mit denen, * die den Frieden hassen, bleibe ich in Frieden: doch wenn ich nur ein Wort zu ihnen rede, feinden sie mich an ganz grundlos.;;119
+Vor den bösen Mannen * schaff', o Herr, mir Rettung.;;139
+Schütz' mich * vor der Falle, die sie mir gelegt, vor dem Hinterhalt, den jene Bösewichte mir bereiten.;;140
+Schau' ich mich * zur Rechten um und späh', ich habe keinen, der mir wohl will.;;141
+
+[Oratio Matutinum]
+v. Sieh gnädig herab, o Herr, auf diese deine Dienerschar, für die unser Herr Jesus Christus sich ohne Bedenken den Händen der Henker übergeben und die furchtbaren Qualen des Todes am Kreuze auf sich genommen hat.
+!Und im Stillen wird geschlossen:
+$Qui tecum
+
+[Oratio]
+v. Christus war für uns gehorsam bis zum Tod.
+!ganz im Stillen
+$Pater noster
+!etwas höher
+_
+&psalm(50)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+@:Oratio Matutinum
+
+[Prelude Vespera] (rubrica 1955 aut rubrica 1960)
+!Die Vesper wird von denen, die an der Abendmahlsmesse teilnehmen, heute nicht gebetet.
+
 [Ant Matutinum]
 Der Eifer für dein Haus * verzehrt mich, drum fällt der Schimpf der Schar, die dich beschimpft, auf mich herunter.;;68
 Die Flucht ergreifen * sollen sie in Schande, die mir Böses wünschen.;;69
@@ -157,31 +182,6 @@ R. Mein Tischgenosse, hat die gegen mich geplante List verschlimmert.
 
 [Ant 2]
 Der Verräter aber * hat ein Zeichen ihnen angegeben mit den Worten: Den ich küssen werde, der ist der Gesuchte, den ergreifet.
-
-[Oratio]
-v. Christus war für uns gehorsam bis zum Tod.
-!ganz im Stillen
-$Pater noster
-!etwas höher
-_
-&psalm(50)
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
-@:Oratio Matutinum
-
-[Oratio Matutinum]
-v. Sieh gnädig herab, o Herr, auf diese deine Dienerschar, für die unser Herr Jesus Christus sich ohne Bedenken den Händen der Henker übergeben und die furchtbaren Qualen des Todes am Kreuze auf sich genommen hat.
-!Und im Stillen wird geschlossen:
-$Qui tecum
-
-[Prelude Vespera] (rubrica 1955 aut rubrica 1960)
-!Die Vesper wird von denen, die an der Abendmahlsmesse teilnehmen, heute nicht gebetet.
-
-[Ant Vespera]
-Den heil'gen Kelch ergreife ich, * Herr, deiner Majestät zu Ehren.;;115
-Mit denen, * die den Frieden hassen, bleibe ich in Frieden: doch wenn ich nur ein Wort zu ihnen rede, feinden sie mich an ganz grundlos.;;119
-Vor den bösen Mannen * schaff', o Herr, mir Rettung.;;139
-Schütz' mich * vor der Falle, die sie mir gelegt, vor dem Hinterhalt, den jene Bösewichte mir bereiten.;;140
-Schau' ich mich * zur Rechten um und späh', ich habe keinen, der mir wohl will.;;141
 
 [Ant 3]
 Bei dem Abendmahle aber * nahm Jesus das Brot, segnete und brach es und gab es seinen Jüngern.

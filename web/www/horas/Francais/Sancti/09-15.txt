@@ -4,9 +4,6 @@ Les sept douleurs de la Bienheureuse Vierge Marie;;Duplex 2nd class;;5.1;;ex C11
 [Rank] (rubrica 196)
 Les sept douleurs de la Bienheureuse Vierge Marie;;Duplex 2nd class;;5;;ex C11
 
-[Rank] (rubrica innovata)
-Les sept douleurs de la Bienheureuse Vierge Marie;;Duplex;;3;;ex C11
-
 [Ant Vespera]
 Où s’en est-il allé, * votre bien-aimé, ô la plus belle des femmes ! De quel côté est-il parti, votre bien-aimé et nous le chercherons avec vous.;;109
 Retirez-vous de moi, * je pleurerai amèrement, ne cherchez pas à me consoler.;;112
@@ -45,9 +42,6 @@ Daignez, ô Dieu, nous vous prions avec instance,
 Daigner donner à tous une force pareille à la force
 De Marie, au milieu des épreuves !
 Ainsi soit-il.
-
-[Doxology]
-@Tempora/Quad5-5
 
 [Versum 1]
 V. Reine des Martyrs, priez pour nous.
@@ -149,26 +143,17 @@ R. Voilà que votre père et moi,
 &Gloria
 R. Fort affligés, nous vous cherchions.
 
-[Lectio4]
-@Tempora/Quad5-5
-
 [Responsory4]
 R. Jésus portant sa croix,
 * Une troupe de femmes le suivaient, pleurant et se la mentant sur lui.
 V. Filles de Jérusalem, pleurez sur vous-mêmes et sur vos enfants.
 R. Une troupe de femmes le suivaient, pleurant et se la mentant sur lui.
 
-[Lectio5]
-@Tempora/Quad5-5
-
 [Responsory5]
 R. Lorsqu’ils furent arrivés au lieu qui est appelé Calvaire, ils le crucifièrent ;
 * Près de la croix de Jésus, sa Mère se tenait debout.
 V. Alors un glaive de douleur transperça son âme bienheureuse.
 R. Près de la croix de Jésus, sa Mère se tenait debout.
-
-[Lectio6]
-@Tempora/Quad5-5
 
 [Responsory6]
 R. Joseph d’Arimathie
@@ -209,9 +194,6 @@ R. Afin que, dans leur plénitude, vous receviez miséricorde et bénédiction.
 « Voici, dit-il, ton fils ; voici ta mère. » Le Christ, du haut de la croix, faisait son testament ; il partageait entre sa mère et son disciple les devoirs de la piété. Le Seigneur établissait non seulement un testament général1, mais encore un testament dans sa propre famille et, ce testament, Jean le signait en digne témoin d’un tel testateur. Testament excellent, où il s’agit non d’argent, mais de vie éternelle ; testament écrit non avec de l’encre, mais par l’Esprit du Dieu vivant, qui dit : « Ma langue est celle d’un écrivain qui écrit avec rapidité. »
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera :s/;;.*//g
-
 [Capitulum Laudes]
 !Lam 2:13
 v. A qui te comparer ? Ou bien à qui t’assimiler, fille de Jérusalem ? A qui t’égaler pour te consoler, vierge fille de Sion ? Grande est comme la mer, la douleur qui te broie.
@@ -250,9 +232,6 @@ Venez, * montons à la montagne du Seigneur et voyez s’il est douleur comparab
 !Lam. 2:18
 v. Verse, comme un torrent, des larmes, jour et nuit ; ne te donne pas de repos et qu’elle ne se taise pas, la pupille de ton œil.
 
-[Versum Prima]
-@Tempora/Quad5-5
-
 [Responsory Tertia]
 R.br. O vous tous * Qui passez par le chemin.
 R. O vous tous * Qui passez par le chemin.
@@ -279,10 +258,6 @@ R. Ils se sont consumés * Dans les larmes, mes yeux.
 _
 V. Bouquet de myrrhe est mon bien-aimé.
 R. Entre mes seins, il demeurera.
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
 
 [Responsory Nona]
 R.br. Il est bouquet de myrrhe. * Mon bien-aimé, pour moi.

@@ -1,10 +1,54 @@
 @Sancti/01-02
 
-[Oratio]
-@Sancti/01-01
+[Rule] (rubrica tridentina)
+ex SanctiM/12-26;
+12 lectiones
+Antiphonas horas
+Psalmi dominica
 
-[Lectio3]
-@Sancti/01-02::s/\n12 / ¶\n12 /
+[Lectio2] (rubrica tridentina)
+@Sancti/01-02::1-3 s/\-58/-56/
 
-[Capitulum Laudes]
-@SanctiM/01-01
+[Lectio3] (rubrica tridentina)
+@Sancti/01-02:Lectio2:1 s/55\-58/57-59/
+@Sancti/01-02:Lectio2:4-5
+@Sancti/01-02::2
+
+[Responsory3] (rubrica divino)
+@Sancti/12-26:Responsory1
+
+[Lectio4] (rubrica tridentina)
+@Sancti/01-02:Lectio3:1 s/7.*;//
+@Sancti/01-02:Lectio3:3-4
+
+[Lectio5]
+@Sancti/01-02:Lectio4: s/Pássio.*//
+
+[Lectio6]
+@Sancti/01-02:Lectio4: s/.*(Pássio)/$1/s s/$/~/s
+@Sancti/01-02:Lectio5: s/Cujus.*//
+
+[Lectio7]
+@Sancti/01-02:Lectio5: s/.*(Cujus)/$1/s
+
+[Lectio8]
+@Sancti/01-02:Lectio6
+
+[Lectio9]
+@Sancti/01-02:Lectio7: s/Gallínæ.*//
+
+[Lectio10]
+@Sancti/01-02:Lectio7: s/.*(Gallínæ)/$1/s
+
+[Lectio11]
+@Sancti/01-02:Lectio8
+
+[Lectio12]
+@Sancti/01-02:Lectio9
+
+[MM Capitulum] (rubrica divino)
+@Sancti/12-26:Capitulum Sexta
+@CommuneM/C2::2-4
+
+[LectioE]
+@SanctiM/12-26

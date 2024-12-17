@@ -14,38 +14,6 @@ Córpora Sanctórum * in pace sepúlta sunt: et vivent nómina eórum in ætérn
 Mártyres Dómini * Dóminum benedícite in ætérnum.
 Mártyrum chorus * laudáte Dóminum de cælis, allelúja.
 
-[HymnusM Vespera]
-v. Sanctórum méritis ínclyta gáudia
-Pangámus, sócii, géstaque fórtia:
-Nam gliscit ánimus prómere cántibus
-Victórum genus óptimum.
-_
-Hi sunt quos rétinens mundus inhórruit:
-Ipsum nam stérili flore peráridum
-Sprevére pénitus, teque secúti sunt,
-Rex Christe bone cǽlitus.
-_
-Hi pro te fúrias atque ferócia
-Calcárunt hóminum, sǽvaque vérbera:
-Cessit his lácerans fórtiter úngula,
-Nec carpsit penetrália.
-_
-Cædúntur gládiis more bidéntium:
-Non murmur résonat, non querimónia:
-Sed corde tácito mens bene cónscia
-Consérvat patiéntiam.
-_
-Quæ vox, quæ póterit lingua retéxere,
-Quæ tu Martyribus múnera prǽparas?
-Rubri nam flúido sánguine láureis
-Ditántur bene fúlgidis.
-_
-Te summa Déitas únaque póscimus,
-Ut culpas ábluas, nóxia súbtrahas,
-Des pacem fámulis, nos quoque glóriam
-Per cuncta tibi sǽcula.
-Amen.
-
 [Hymnus Vespera]
 {:H-Sanctorummeritis:}v. Sanctórum méritis ínclita gáudia
 Pangámus, sócii, géstaque fórtia:
@@ -78,6 +46,38 @@ Des pacem fámulis; ut tibi glóriam,
 Annórum in sériem, canant.
 Amen.
 
+[HymnusM Vespera]
+v. Sanctórum méritis ínclyta gáudia
+Pangámus, sócii, géstaque fórtia:
+Nam gliscit ánimus prómere cántibus
+Victórum genus óptimum.
+_
+Hi sunt quos rétinens mundus inhórruit:
+Ipsum nam stérili flore peráridum
+Sprevére pénitus, teque secúti sunt,
+Rex Christe bone cǽlitus.
+_
+Hi pro te fúrias atque ferócia
+Calcárunt hóminum, sǽvaque vérbera:
+Cessit his lácerans fórtiter úngula,
+Nec carpsit penetrália.
+_
+Cædúntur gládiis more bidéntium:
+Non murmur résonat, non querimónia:
+Sed corde tácito mens bene cónscia
+Consérvat patiéntiam.
+_
+Quæ vox, quæ póterit lingua retéxere,
+Quæ tu Martyribus múnera prǽparas?
+Rubri nam flúido sánguine láureis
+Ditántur bene fúlgidis.
+_
+Te summa Déitas únaque póscimus,
+Ut culpas ábluas, nóxia súbtrahas,
+Des pacem fámulis, nos quoque glóriam
+Per cuncta tibi sǽcula.
+Amen.
+
 [Versum 1]
 V. Lætámini in Dómino, et exsultáte justi.
 R. Et gloriámini omnes recti corde.
@@ -85,11 +85,20 @@ R. Et gloriámini omnes recti corde.
 [Ant 1]
 Istórum est enim * regnum cælórum qui contempsérunt vitam mundi, et pervenérunt ad prǽmia regni, et lavérunt stolas suas in sánguine Agni.
 
+[Oratio]
+Deus, qui nos concédis sanctórum Mártyrum tuórum N. et N. natalícia cólere, da nobis in ætérna beatitúdine de eórum societáte gaudére.
+$Per Dominum
+
+[Oratio1]
+Beatórum Mártyrum paritérque Pontíficum N. et N. nos, quǽsumus, Dómine, festa tueántur: et eórum comméndet orátio veneránda.
+$Per Dominum
+
+[Oratio2]
+Deus, qui nos ánnua sanctórum Mártyrum tuórum N. et N. solemnitáte lætíficas: concéde propítius; ut quorum gaudémus méritis, accendámur exémplis.
+$Per Dominum
+
 [Invit]
 @Commune/C2
-
-[HymnusM Matutinum]
-@:Hymnus Matutinum:s/Christo profúsum sánguinem/Ætérna Christi múnera/ s/Dignámque cælo láuream/Laudes canéntes débitas/ s/sequámur vócibus/canámus méntibus/
 
 [Hymnus Matutinum]
 {:H-Christoprofusum:}v. Christo profúsum sánguinem,
@@ -117,6 +126,9 @@ Ut mártyrum consórtio
 Jungas precántes sérvulos
 In sempitérna sǽcula.
 Amen.
+
+[HymnusM Matutinum]
+@:Hymnus Matutinum:s/Christo profúsum sánguinem/Ætérna Christi múnera/ s/Dignámque cælo láuream/Laudes canéntes débitas/ s/sequámur vócibus/canámus méntibus/
 
 [Ant Matutinum]
 Secus decúrsus aquárum * plantávit víneam justórum, et in lege Dómini fuit volúntas eórum.;;1
@@ -290,18 +302,6 @@ R. Lætabúntur in cubílibus suis.
 
 [Ant 2]
 Vestri capílli cápitis * omnes numeráti sunt: nolíte timére: multis passéribus melióres estis vos.
-
-[Oratio]
-Deus, qui nos concédis sanctórum Mártyrum tuórum N. et N. natalícia cólere, da nobis in ætérna beatitúdine de eórum societáte gaudére.
-$Per Dominum
-
-[Oratio1]
-Beatórum Mártyrum paritérque Pontíficum N. et N. nos, quǽsumus, Dómine, festa tueántur: et eórum comméndet orátio veneránda.
-$Per Dominum
-
-[Oratio2]
-Deus, qui nos ánnua sanctórum Mártyrum tuórum N. et N. solemnitáte lætíficas: concéde propítius; ut quorum gaudémus méritis, accendámur exémplis.
-$Per Dominum
 
 [Lectio Prima]
 !Sap 3:7-8

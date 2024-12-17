@@ -1,12 +1,6 @@
 [Rank]
 S. Petri Chrysologi Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
 
-[RankNewcal]
-S. Petri Chrysologi Episcopi Confessoris Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
-
-[Name]
-Petre Chrysologe
-
 [Rule]
 vide C4a;
 Gloria
@@ -17,6 +11,9 @@ CredoDA
 ! 3 klasy
 ! Szaty białe
 Niepospolity dar wymowy zjednał św. Piotrowi przydomek «Chryzologa», czyli «Złotoustego». Widzenie papieża Sykstusa III przyczyniło się do wyniesienia św. Piotra na stolicę biskupią w Rawennie w r. 433. Wspólnie z papieżem Leonem I bronił dogmatu o dwu naturach w Chrystusie przeciw monofizytom. Umarł w roku 450.
+
+[Name]
+Petre Chrysologe
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -52,19 +49,4 @@ Panie, dałeś mi pięć talentów, otom drugie pięć zyskał. Dobrze, sługo p
 
 [Postcommunio]
 Prosimy Cię, Panie, niech święty Piotr Chryzolog, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
-$Per Dominum
-
-[Commemoratio Oratio]
-!Wspomnienie św. Barbary
-Panie, niech nas broni od wszelkich przeciwności wstawiennictwo św. Barbary, Dziewicy i Męczennicy Twojej. Obyśmy za jej chwalebnym orędownictwem zasłużyli sobie przez prawdziwą pokutę i szczerą spowiedź na przyjęcie w godzinę śmierci Najświętszego Sakramentu Ciała i Krwi Pana naszego Jezusa Chrystusa:
-$Per Dominum
-
-[Commemoratio Secreta]
-!Wspomnienie św. Barbary
-Przyjmij, Panie, dary, które Ci składamy w uroczystość świętej Barbary, Dziewicy i Męczennicy Twojej: ufamy, że jej wstawiennictwo przyczyni się do naszego wyzwolenia.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Wspomnienie św. Barbary
-Panie, niech nas wspomaga przyjęty Sakrament, i za wstawiennictwem świętej Barbary, Twojej Dziewicy i Męczennicy, niech sprawi, byśmy się radowali nieustanną opieką. 
 $Per Dominum

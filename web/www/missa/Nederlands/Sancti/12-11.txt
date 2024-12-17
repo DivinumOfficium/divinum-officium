@@ -3,25 +3,10 @@
 [Rank]
 S. Damasi Papæ et Confessoris;;Semiduplex;;2.5;;vide C4b
 
-[Rank] (rubrica 196)
-S. Damasi Papæ et Confessoris;;Duplex;;3;;vide C4b
-
 [Rule]
 OPapaC=Damasus;
 vide C4;
 Gloria
-
-[Commemoratio Oratio]
-!Pro Octava Conceptionis Immaculatæ.
-@Sancti/12-08:Oratio
-
-[Commemoratio Secreta]
-!Pro Octava
-@Sancti/12-08:Secreta
-
-[Commemoratio Postcommunio]
-!Pro Octava
-@Sancti/12-08:Postcommunio
 
 [Oratio]
 @Commune/C4b:Oratio:s/N\./Damasus/

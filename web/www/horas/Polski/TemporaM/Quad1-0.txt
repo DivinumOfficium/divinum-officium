@@ -1,15 +1,14 @@
+[Ant Matutinum 3N]
+Nie samym chlebem żyje człowiek, ale wszelkim słowem, które pochodzi z ust Bożych.;;269;270;271
+
 [Lectio7]
 @Tempora/Quad1-0:Lectio6:s/Słusznie .*//s
 
 [Lectio8]
 @Tempora/Quad1-0:Lectio6:s/.* Słusznie /Słusznie /s
 
-[Ant Matutinum 3N]
-Nie samym chlebem żyje człowiek, ale wszelkim słowem, które pochodzi z ust Bożych.;;269;270;271
-
 [Lectio9]
 @Tempora/Quad1-0:Lectio7:s/Lecz oto,.*//s
 
 [Lectio10]
 @Tempora/Quad1-0:Lectio7:s/.* Lecz oto,/Lecz oto,/s
-

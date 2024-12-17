@@ -4,14 +4,8 @@ Feria Quinta infra octavam Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 [Rank] (rubrica 1960)
 Die Quinta infra octavam Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[Rule]
-ex Pasc7-0;
-1 nocturn;
-Psalmi Dominica;
-Antiphonas horas
-Hymnus Tertia
-Feria Te Deum
-no93
+[Oratio]
+@Tempora/Pasc7-0:Oratio
 
 [Lectio1]
 Lecture du saint Évangile selon saint Luc.
@@ -24,7 +18,7 @@ Les préceptes évangéliques nous enseignent comment doit être celui qui annon
 
 [Responsory1]
 R. Il descendit un feu divin, ne brûlant pas, mais illuminant, ne consumant pas, mais éclairant : et il trouva dans les cœurs des disciples de purs réceptacles :
-*  Et il leur accorda ses dons et ses grâces, alléluia, alléluia.
+* Et il leur accorda ses dons et ses grâces, alléluia, alléluia.
 V. Il les a trouvés unis par la charité, et il les a tous éclairés par l’effusion de la grâce divine.
 R. Et il leur accorda ses dons et ses grâces, alléluia, alléluia.
 
@@ -45,9 +39,6 @@ Mais si ce précepte sur les devoirs de l’hospitalité, dans son sens littéra
 
 [Ant 2]
 Jésus, ayant appelé * ses douze disciples, leur donna la force et la puissance de chasser tous les démons et de guérir les maladies et Il les envoya prêcher le royaume de Dieu et guérir les infirmes, alléluia.
-
-[Oratio]
-@Tempora/Pasc7-0:Oratio
 
 [Ant 3]
 L’Esprit, * qui procède du Père, alléluia, c’est Lui qui Me glorifiera, alléluia, alléluia.

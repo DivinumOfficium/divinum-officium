@@ -1,9 +1,6 @@
 [Rank]
 In Vigilia S. Laurentii Mart.;;Simplex;;1.5;;vide C2
 
-[Rank] (rubrica 196)
-In Vigilia S. Laurentii Mart.;;Simplex;;3;;vide C2
-
 [Rule]
 vide C2;
 no Gloria
@@ -15,7 +12,7 @@ v. Mild deelt hij uit, geeft aan de armen. Zijn gerechtigheid duurt eeuwig voort
 !Ps 111:1
 Gelukkig de man, die de Heer vreest en zich in zijn geboden ten zeerste verheugt.
 &Gloria
-v. Mild deelt hij uit, geeft aan de armen. Zijn gerechtigheid duurt eeuwig voort. In luister verheft zich zijn hoorn. 
+v. Mild deelt hij uit, geeft aan de armen. Zijn gerechtigheid duurt eeuwig voort. In luister verheft zich zijn hoorn.
 
 [Oratio]
 Neig uw oor naar ons smeken, o Heer, en bewijs ons genadig, op voorspraak van uw heilige martelaar Laurentius, van wiens feest wij de vigilie vieren, uw eeuwige barmhartigheid.
@@ -36,25 +33,9 @@ V. Zijn nakomelingschap zal machtig zijn op aarde. Het geslacht der rechtvaardig
 !Job 16:20
 Mijn gebed is rein en daarom vraag ik, dat mijn stem binnen mag dringen in de hemel. Want daar is mijn Rechter, die alles van mij weet in de hemel. Moge mijn smeken opstijgen tot de Heer.
 
-[Secreta]
-Aanvaard genadig, Heer, de offers, die wij U opdragen en bevrijd ons op voorspraak van uw heilige martelaar Laurentius van de boeien van onze zonden.
-$Per Dominum
-
 [Communio]
 @Commune/C2
 
 [Postcommunio]
 Wij vragen U, Heer, onze God, doe ons, die nu in de tijd dankbaar de gedachtenis vieren van uw heilige martelaar Laurentius, in de eeuwigheid blij zijn aanblik genieten.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Pro S. Romano Martyre
-@Commune/C2a:Oratio:s/N\./Romanus/
-
-[Commemoratio Secreta]
-!Pro S. Romano Martyre
-@Commune/C2:Secreta
-
-[Commemoratio Postcommunio]
-!Pro S. Romano Martyre
-@Commune/C5b:Postcommunio:s/N\./Romanus/

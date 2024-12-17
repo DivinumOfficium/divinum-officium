@@ -1,9 +1,6 @@
 [Rank]
 Decollatione S. Joannis Baptistæ;;Duplex majus;;4;;ex C2
 
-[Rank] (rubrica 196)
-Decollatione S. Joannis Baptistæ;;Duplex;;3;;vide C2
-
 [Rule]
 ex C2;
 Gloria
@@ -52,18 +49,4 @@ Posuísti, Dómine, in cápite ejus corónam de lápide pretióso.
 
 [Postcommunio]
 Cónferat nobis, Dómine, sancti Joánnis Baptístæ sollémnitas: ut et magnífica sacraménta, quæ súmpsimus, significáta venerémur, et in nobis pótius édita gaudeámus.
-$Per Dominum
-
-[Commemoratio Oratio]
-!Pro S. Sabina Virg. et Mart
-@Commune/C6:Oratio:s/N\./Sabinæ/
-
-[Commemoratio Secreta]
-!Pro S. Sabina Martyre
-Hóstias tibi, Dómine, beátæ Sabínæ Mártyris tuæ dicátas méritis, benígnus assúme: et ad perpétuum nobis tríbue proveníre subsídium.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Sabina Martyre
-Divíni muneris largitáte satiáti, quǽsumus, Dómine, Deus noster: ut, intercedénte beáta Sabína Mártyre tua, in ejus semper participatióne vivámus.
 $Per Dominum

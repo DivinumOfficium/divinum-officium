@@ -1,9 +1,6 @@
 [Rank]
 S. Pauli Primi Eremitae et Confessoris;;Duplex;;3;;vide C5
 
-[Rank1570]
-S. Pauli Primi Eremitae et Confessoris;;Semiduplex;;2;;vide C5
-
 [Rule]
 vide C5;
 Gloria
@@ -27,10 +24,6 @@ v. Spravedlivý jako palma pokvete, jako cedr na Libanu poroste; vštípen v dom
 [Oratio]
 Bože, jenž nás svatého Pavla, vyznavače svého, výroční slavností oblažuješ, popřej milostivě, abychom, jehož narozeniny slavíme,napodobovali také skutky.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Připomínka sv. Maura
-@Commune/C4c:Oratio:s/N\./Maura/
 
 [Lectio]
 Čtení z listu sv. Apoštola Pavla k Filippenským
@@ -57,10 +50,6 @@ Z moci tvé, Pane, radovati se bude spravedlivý a nad spásou tvou jásati bude
 [Secreta]
 @Commune/C5:Secreta
 
-[Commemoratio Secreta]
-!Připomínka sv. Maura
-@Commune/C4c:Secreta:s/N\./Maur/
-
 [Communio]
 !Ž 63,11
 Radovati se bude spravedlivý v Pánu a doufati bude v něho; i budou chváleni všichni, kdož jsou přímého srdce.
@@ -68,7 +57,3 @@ Radovati se bude spravedlivý v Pánu a doufati bude v něho; i budou chváleni 
 [Postcommunio]
 Občerstvení jsouce pokrmem a nápojem nebeským, Bože náš, snažně tebe prosíme, abychom, na jehož památku jsme toto přijali, toho i prosbami byli chráněni.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!Připomínka sv. Maura
-@Commune/C4c:Postcommunio:s/N\./Maur/

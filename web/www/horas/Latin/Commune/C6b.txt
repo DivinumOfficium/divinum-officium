@@ -3,9 +3,8 @@
 [Name]
 Commune Virginum tantum
 
-[HymnusM Matutinum]
-@Commune/C6::1-4
-@Commune/C6::15-25
+[Oratio]
+@Commune/C7a:: s/N\./N. Vírginis tuæ/
 
 [Hymnus Matutinum Virgo tantum]
 {:H-Virginisproles:}v. Vírginis Proles, Opiféxque Matris,
@@ -18,14 +17,15 @@ Accipe votum.
 _
 @Commune/C6::16-25
 
+[HymnusM Matutinum]
+@Commune/C6::1-4
+@Commune/C6::15-25
+
 [Responsory1]
 R. Veni, elécta mea, et ponam in te thronum meum
 * Quia concupívit Rex spéciem tuam.
 V. Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna.
 R. Quia concupívit Rex spéciem tuam.
-
-[Oratio]
-@Commune/C7a:: s/N\./N. Vírginis tuæ/
 
 [Lectio Prima]
 !Sap 4:1

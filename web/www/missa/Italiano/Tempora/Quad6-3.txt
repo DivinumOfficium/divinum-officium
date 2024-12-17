@@ -1,9 +1,6 @@
 [Rank]
 Feria Quarta Majoris Hebdomadæ;;Feria privilegiata;;6
 
-[Rank] (rubrica 1955 aut rubrica 1960)
-Feria Quarta Hebdomadæ Sanctæ;;Feria privilegiata;;6
-
 [Rule]
 no Gloria
 Suffragium=Ecclesiae,Papa;;
@@ -19,10 +16,6 @@ v. Al nome di Gesù ogni ginocchio si pieghi in cielo, in terra e nell'inferno; 
 Signore esaudisci la mia preghiera : e il mio grido giunga a Te.
 v. Al nome di Gesù ogni ginocchio si pieghi in cielo, in terra e nell'inferno; che il Signore si è fatto ubbidiente fino alla morte e alla morte di croce; perciò il Signore Gesù Cristo è nella gloria del Padre.
 
-[Oratio]
-Fa, te ne preghiamo o Signore onnipotente, che noi che siamo continuamente afflitti dai nostri peccati, ne siamo liberati per la Passione del tuo Figlio Unigenito. 
-$Qui tecum
-
 [LectioL1]
 Lettura del Profeta Isaia.
 !Isa 63:1-7
@@ -37,6 +30,10 @@ V. Salvami, Dio mio, perché le acque mi arrivano alla gola, sono immerso in un 
 [OratioL1]
 O Dio, che volesti che tuo Figlioi soffrisse il supplizio della croce, onde liberarci dalla potenza del nemico; concedi a noi tuoi servi di pervenire alla grazia della resurrezione.
 $Per eundem
+
+[Oratio]
+Fa, te ne preghiamo o Signore onnipotente, che noi che siamo continuamente afflitti dai nostri peccati, ne siamo liberati per la Passione del tuo Figlio Unigenito. 
+$Qui tecum
 
 [Lectio]
 Lettura del Profeta Isaia.
@@ -56,8 +53,7 @@ V. Tu, o Signore, svegliandoti, avrai pietà di Sion, perché è giunto il tempo
 (rubrica 1955 aut rubrica 1960 dicitur)
 @Tempora/Quad6-0r:Munda Cor Passionis
 _
-v.~
-(deinde dicuntur semper)
+v. (deinde dicuntur semper)
 La Passione di Nostro Signore Gesù Cristo secondo san Luca.
 (rubrica 1955 aut rubrica 1960 dicitur)
 !Luc 22:39-71; 23:1-53
@@ -77,8 +73,7 @@ v. Mondami il cuore e le labbra, o Dio onnipotente, che mondasti con acceso carb
 D. Degnati, signore, di benedirmi.
 S. Il Signore ti sia nel cuore e sulle labbra, affinché in modo degno e conveniente tu annunzi il suo Vangelo. Nel nome del Padre e del Figlio  + e dello Spirito Santo. Amen.
 _
-v. ~
-(sed rubrica 1955 aut rubrica 1960 haec versus omittuntur)
+v.  (sed rubrica 1955 aut rubrica 1960 haec versus omittuntur)
 Ma ecco arrivare un tale, chiamato Giuseppe, che era decurione, uomo buono e giusto. Egli non aveva preso mai parte alle decisioni, né all'operato degli altri; cittadino d'Arimatea, città della Giudea, egli pure aspettava il Regno di Dio. Si presentò perciò a Pilato e gli domandò il corpo di Gesù. Dopo averlo deposto, Io avvolse in un lenzuolo e lo compose in un sepolcro scavato nel sasso, dove fino allora non era stato mai sepolto nessuno.
 
 [Offertorium]

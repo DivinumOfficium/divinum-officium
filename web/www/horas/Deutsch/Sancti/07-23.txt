@@ -1,14 +1,11 @@
 [Rank]
 Fest des heiligen Bischofs und Martyrers Apollinaris;;Duplex;;3;;vide C2
 
-[Rank] (rubrica innovata)
-Fest des heiligen Bischofs und Martyrers Apollinaris;;Duplex optional;;2;;vide C2
-
 [Oratio]
-O Gott, du Vergelter der dir treuen Seelen, der du diesen Tag durch den blutigen Tod des heiligen Priesters Apollinaris geweiht hast, verleihe, wir bitten dich, uns, deinen Dienern, die Gnade, dass wir, wo wir sein ehrenvolles Fest feiern, auf Grund seiner Fürsprache bei dir Nachsicht erlangen.
+O Gott, du Vergelter der dir treuen Seelen, der du diesen Tag durch den blutigen Tod des heiligen Priesters Apollinaris geweiht hast, verleihe, wir bitten dich, uns, deinen Dienern, die Gnade, daß wir, wo wir sein ehrenvolles Fest feiern, auf Grund seiner Fürsprache bei dir Nachsicht erlangen.
 $Per Dominum
 
-[Commemoratio Sabbat] (rubrica 1570 vel rubrica 1910 vel rubrica divino)
+[Commemoratio Sabbat]
 !Kommemoration vom hl. Bischof und Bekenner Liborius.
 @Commune/C4:Oratio proper
 $Oremus
@@ -19,7 +16,7 @@ $Per Dominum.
 !Kommemoration vom hl. Bischof und Bekenner Liborius.
 @Commune/C4:Oratio proper
 $Oremus
-Verleihe uns, wir bitten dich, o allmächtiger Gott, die Gnade, dass deines heiligen Bekenners und Bischofs Liborius ehrwürdige Festlichkeit uns einen Zuwachs gewähre an Unterwürfigkeit gegen dich und auch an Segen.
+Verleihe uns, wir bitten dich, o allmächtiger Gott, die Gnade, daß deines heiligen Bekenners und Bischofs Liborius ehrwürdige Festlichkeit uns einen Zuwachs gewähre an Unterwürfigkeit gegen dich und auch an Segen.
 $Per Dominum.
 
 [Lectio4]
@@ -32,8 +29,6 @@ Er blieb also eine Zeitlang mit einigen Christen verborgen und begab sich von do
 Als aber der Teufel im Serapistempel sich weigerte, Orakel zu verkünden, so lange dort der Jünger des Apostels Petrus weile, wurde nach langem Suchen Apollinaris aufgefunden; und er bekam wiederum den Befehl, ein Schiff zu besteigen. So kehrte er nach Ravenna zurück, wurde von denselben Götzenpriestern daselbst angeklagt und einem Hauptmann zur Bewachung übergeben; da dieser aber im Geheimen Christus verehrte, ließ er in der Nacht den Apollinaris frei. Als die Sache bekannt wurde, setzten ihm die Henker nach, bedeckten ihn unterwegs mit Wunden und ließen ihn, weil sie ihn tot glaubten, liegen. Als ihn die Christen von dort fortschafften, schied er am siebenten Tage, indem er sie zur Standhaftigkeit im Glauben ermahnte, mit dem Ruhm des Martyriums ausgezeichnet, aus dem Leben. Sein Leib wurde in der Nähe der Stadtmauer beigesetzt.
 
 [Lectio94]
-Apollináris cum Príncipe Apostolórum Antiochía Romam venit; a quo, ordinátus epíscopus, Ravénnam ad Christi Dómini Evangélium prædicándum míttitur; ubi, cum ad Christi fidem plúrimos convérteret, captus ab idolórum sacerdótibus, gráviter cæsus est. Cumque ipso oránte Bonifátius nóbilis vir, qui diu mutus fúerat, loquerétur, ejúsque fília immúndo spíritu liberáta esset, íterum est in illum commóta sedítio. Quare divérsas et multíplices pœnas perpéssus est. Póstea per Æmíliam Evangélium prædicans, plúrimos ab idolórum cultu revocávit. Ravénnam revérsus, exhórtans Christiános ad fídei constántiam, gloriósum martyrium consummávit. Ejus corpus prope murum urbis sepúltum est.
-
 Apollinaris kam mit dem Apostelfürsten von Antiochien nach Rom; von ihm zum Bischof geweiht, wurde er nach Ravenna zur Verkündigung des Evangeliums Christi, des Herrn, gesandt; als er dort viele zum Glauben an Christus bekehrte, wurde er von den Götzenpriestern ergriffen und grausam geschlagen. Als nun auf sein Gebet hin Bonifatius, ein vornehmer Mann, der lange Zeit stumm gewesen war, die Sprache erhielt, und seine Tochter vom unreinen Geist frei geworden war, erhob sich von neuem ein Aufstand gegen ihn. Daher ertrug er viele verschiedene Strafen. Als er später in Ämilia das Evangelium predigte, bekehrte er mehrere vom Götzendienst. Nach Ravenna zurückgekehrt, ermahnte er die Christen zur Standhaftigkeit im Glauben ermahnte, und schied mit dem Ruhm des Martyriums ausgezeichnet, aus dem Leben. Sein Leib wurde in der Nähe der Stadtmauer beigesetzt.
 &teDeum
 
@@ -52,10 +47,3 @@ Denn nicht Essen und Trinken wir uns als Lohn und als Ehrung verbürgt, sondern 
 [Lectio9]
 Wir müssen uns also umwandeln und uns davor hüten, dass zu unserem Verderben irgend ein Streit um den Vorrang unter uns entsteht. Wenn nämlich die Apostel einen Streit hatten, so wird dieser nicht vorgehalten, dass wir eine Entschuldigung haben, sondern berichtet, damit wir vorsichtig sind. Wenn von Petrus gesagt wird, dass er sich einst bekehren werde, der doch auf den ersten Ruf des Herrn ihm nachgefolgt ist, wer kann sagen, dass er ein Bekehrter ist? Hüte dich also vor der Prahlerei, hüte dich vor der Welt. Jener nämlich bekommt den Auftrag seine Brüder zu stärken, der gesagt hat: „Wir haben alles verlassen und sind dir nachgefolgt“.
 &teDeum
-
-[Commemoratio 3] (rubrica divino aut rubrica tridentina)
-!Kommemoration der hl. Christina.
-@Commune/C6:Oratio proper
-$Oremus
-Lass, wir bitten dich, o Herr, die heilige Jungfrau und Martyrin Christina uns von dir Nachsicht erbitten, da sie dir stets lieb geworden ist auf Grund der durch jungfräulichen Sinn erworbenen Verdienste und auf Grund des Zeugnisses, das sie von deiner Kraft abgelegt hat.
-$Per Dominum

@@ -1,24 +1,10 @@
 [Rank]
 S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4b
 
-[Rank] (rubrica 196)
-S. Damasi Papae et Confessoris;;Duplex;;3;;vide C4b
-
-[Rank] (rubrica innovata)
-S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4b
-
 [Rule]
 OPapaC=Dámaso;
 vide C4;
 Gloria
-
-[Commemoratio Oratio]
-!Pro Octava Conceptionis Immaculatæ.
-@Sancti/12-08:Oratio
-
-[Commemoratio Secreta]
-!Pro Octava
-@Sancti/12-08:Secreta
 
 [Introitus]
 !Joann 21:15; 21:16; 21:17
@@ -27,10 +13,6 @@ v. Simon Pietro, se Mi ami, pasci i miei agnelli: pasci le mie pecorelle.
 Io ti glorificherò, o Signore, perché mi hai soccorso e non hai permesso ai miei nemici di ridersi di me.
 &Gloria
 v. Simon Pietro, se Mi ami, pasci i miei agnelli: pasci le mie pecorelle.
-
-[Commemoratio Postcommunio]
-!Pro Octava
-@Sancti/12-08:Postcommunio
 
 [Oratio]
 O eterno Pastore, volgi lo sguardo benigno sul tuo gregge e custodiscilo con una continua protezione, per intercessione del sommo Pontefice san Dàmaso, che hai costituito pastore di tutta la Chiesa.

@@ -1,13 +1,8 @@
 [Rank]
 Feria Secunda infra Octavam Corporis Christi;;Semiduplex II class;;5;;ex Tempora/Pent01-4
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1955)
 Feria II infra Hebdomadam II post Octavam Pentecostes;;Feria;;1
-
-[Rule]
-ex Tempora/Pent01-4;
-9 lectiones
-Doxology=Corp
 
 [Lectio1]
 Dal primo libro dei Re
@@ -18,17 +13,11 @@ Dal primo libro dei Re
 4 Ma di nuovo alzatisi, la mattina seguente, trovarono Dagon che giaceva boccone per terra davanti all'arca del Signore; e la testa di Dagon e ambedue le palme delle sue mani giacevano troncate sulla soglia (del tempio): 
 5 e solo il torso di Dagon era rimasto al suo posto.
 
-[Responsory1 1960]
-@Tempora/Pent03-1Feria:Responsory1
-
 [Lectio2]
 !1 Sam 5:6-8
 6 Quindi la mano del Signore si fece sentire fieramente su quelli di Azoto, e li desolò. E i villaggi e i campi di quella regione ribollirono, e nacquero dei topi, e la città fu tutta sossopra per la grande mortalità. 
 7 Ora quelli di Azoto vedendo questo flagello, dissero: Non resti più presso di noi l'arca del Dio d'Israele, perché pesante è la sua mano su di noi e sul nostro dio Dagon. 
 8 Onde fecero radunare presso di loro tutti i satrapi dei Filistei e dissero: Che faremo dell'arca del Dio d'Israele? E quei di Get risposero: Si porti attorno l'arca del Dio di Israele.
-
-[Responsory2 1960]
-@Tempora/Pent03-1Feria:Responsory2
 
 [Lectio3]
 !1 Sam 5:8-12
@@ -37,9 +26,6 @@ Dal primo libro dei Re
 10 Perciò mandarono l'arca di Dio in Accaron. E l'arca di Dio arrivata in Accaron, gli Accaroniti cominciarono a gridare dicendo: Ci hanno condotta l'arca del Dio d'Israele, per far morire noi e il nostro popolo. 
 11 Quindi fecero radunare tutti i satrapi dei Filistei, i quali dissero: Rimandate l'arca del Dio di Israele, ritorni essa al suo posto e non distrugga noi e il nostro popolo. 
 12 Poiché in ogni città si diffondeva un terrore di morte, e la mano di Dio si faceva estremamente pesante.
- 
-[Responsory3 1960]
-@Tempora/Pent03-1Feria:Responsory3
 
 [Lectio4]
 Dal Sermone di san Giovanni Crisostomo

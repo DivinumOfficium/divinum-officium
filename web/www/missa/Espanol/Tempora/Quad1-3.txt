@@ -1,12 +1,6 @@
 [Rank]
 Feria Quarta Quatuor Temporum Quadrigeismæ;;Feria major;;2
 
-[Rank1960]
-Feria Quarta Quatuor Temporum Quadrigesimæ;;Feria major;;3
-
-[RankNewcal]
-Feria IV. infra Hebdomadam I in Quadragesima;;Feria major;;2
-
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
@@ -21,10 +15,6 @@ A ti, oh Señor, he levantado mi espíritu; en ti, oh Dios mío, tengo puesta mi
 &Gloria
 v. Acuérdate, Señor, de tus piedades y de tus misericordias usadas en los siglos pasado; para que jamás nos dominen nuestros enemigos; líbranos, Dios de Israel, de todas nuestras angustias.
 
-[Oratio]
-Te suplicamos, Señor, que oigas benignamente nuestras oraciones y que extiendas la diestra de tu majestad para protegernos contra toda adversidad.
-$Per Dominum
-
 [LectioL1]
 Lección del libro del Éxodo
 !Ex 24:12-18
@@ -38,6 +28,10 @@ V. Mira mi humillación y mi trabajo, y perdona todos mis pecados.
 
 [OratioL1]
 Te suplicamos, oh Señor, que mires benigno la devoción de tu pueblo; a fin de que, los que e mortifican en su cuerpo por medio de la abstinencia. Se fortifiquen en el espíritu con el fruto de las buenas acciones.
+$Per Dominum
+
+[Oratio]
+Te suplicamos, Señor, que oigas benignamente nuestras oraciones y que extiendas la diestra de tu majestad para protegernos contra toda adversidad.
 $Per Dominum
 
 [Lectio]

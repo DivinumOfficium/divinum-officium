@@ -4,10 +4,9 @@ Feria Sexta infra octavam Corporis Christi;;Semiduplex II class;;5;;ex Tempora/P
 [Rank] (rubrica 1960)
 Feria VI infra Hebdomadam I post Octavam Pentecostes;;Feria;;1
 
-[Rule]
-ex Tempora/Pent01-4;
-9 lectiones
-Doxology=Corp
+[Oratio](rubrica 1960)
+O Dio, fortezza di quelli che sperano in te, ascolta propizio le nostre preghiere: e siccome senza di te nulla può l'umana debolezza, concedici l'aiuto della tua grazia; affinché nell'eseguire i tuoi comandamenti, ti piacciamo e colla volontà e coll'opera.
+$Per Dominum
 
 [Lectio1]
 Dal primo libro dei Re
@@ -16,9 +15,6 @@ Dal primo libro dei Re
 28 E io lo scelsi fra tutte le tribù d'Israele per mio sacerdote, perché salisse al mio altare e mi bruciasse l'incenso e portasse l'efod dinanzi a me; e diedi alla casa di tuo padre porzione di tutto quello che sacrificassero i figli d'Israele. 
 29 Perché voi avete calpestato le mie vittime e i miei doni che io ordinai mi fossero offerti nel tempio, e tu hai onorato i tuoi figli più di me fino a mangiarvi le primizie di ogni sacrificio d'Israele, mio popolo?
 
-[Responsory1 1960]
-@Tempora/Pent01-2:Responsory1
-
 [Lectio2]
 !1 Sam 2:30-33
 30 Perciò dice il Signore Dio d'Israele: Io avevo detto e ridetto che la tua casa e la casa del padre tuo avrebbe esercitato il ministero dinanzi a me in eterno; adesso invece dice il Signore: Lungi questo da me; ma glorificherò chiunque mi glorificherà; e saranno avviliti quelli che disprezzerò. 
@@ -26,17 +22,11 @@ Dal primo libro dei Re
 32 E vedrai il tuo emulo nel tempio in mezzo a tutte le prosperità d'Israele; e non ci sarà mai più nessun vecchio in casa tua. 
 33 Tuttavia non leverò interamente dal mio altare i tuoi discendenti; ma farò che si ottenebrino i tuoi occhi, e languiscano le tue forze, e gran parte della tua casa morrà appena giunta all'età virile.
 
-[Responsory2 1960]
-@Tempora/Pent01-2:Responsory2
-
 [Lectio3]
 !1 Sam 2:34-36
 34 E segno di ciò ti sarà quello che accadrà ai tuoi due figli Ofni e Finees; in un sol giorno morranno ambedue. 
 35 Io poi mi susciterò un sacerdote fedele, che agirà secondo il mio cuore e l'anima mia; e gli edificherò una casa durevole, ed egli camminerà tutti i giorni dinanzi al mio Cristo. 
 36 E avverrà, che chiunque rimarrà della tua casa, verrà affinché si preghi per lui, e offrirà una moneta d'argento e una focaccia di pane, e dirà: Ammettimi, ti prego, a qualche ufficio sacerdotale, perché io abbia a mangiare un boccon di pane.
-
-[Responsory3 1960]
-@Tempora/Pent01-2:Responsory3
 
 [Lectio4]
 Dal Sermone di san Tommaso d'Aquino
@@ -64,7 +54,3 @@ Ecco dunque l'insegnamento e la lezione che egli ci dà con queste misteriose pa
 [Lectio9]
 Se i discepoli trovarono duro questo linguaggio, che dire dei suoi nemici? Eppure bisognava esprimersi qui in modo da non esser compreso da tutti. Il segreto di Dio deve farci attenti, non ostili: ma la fede di quei discepoli venne subito meno al sentire tali cose dal Signore Gesù Cristo. Non credettero che annunziasse qualche cosa di grande, e che quelle parole coprissero una grazia novella: ma le intesero come vollero e affatto umanamente, (pensarono cioè) che Gesù era capace o che Gesù disegnava di distribuire, come in pezzi, a coloro che credevano in lui, la carne onde il Verbo era rivestito. «E duro, dicono, questo linguaggio: e chi lo può intendere?».
 &teDeum
-
-[Oratio](rubrica 1960)
-O Dio, fortezza di quelli che sperano in te, ascolta propizio le nostre preghiere: e siccome senza di te nulla può l'umana debolezza, concedici l'aiuto della tua grazia; affinché nell'eseguire i tuoi comandamenti, ti piacciamo e colla volontà e coll'opera.
-$Per Dominum

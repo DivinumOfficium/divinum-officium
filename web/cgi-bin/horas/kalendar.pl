@@ -184,11 +184,21 @@ sub kalendar_entry {
   $c2 = $dayname[2];
 
   ($h1, $h2) = split(/: /, $c2, 2);
+  ($c2, $h1, $h2) = ('', '', $h1) unless $h2;
   $c2 = setfont($smallblack, "$h1:") if $h1;
   $c2 .= "<I>" . setfont(liturgical_color($h2), " $h2") . "</I>" if $h2;
 
   $c2 =~ s/Hebdomadam/Hebd/i;
   $c2 =~ s/Quadragesima/Quadr/i;
+
+  if ( $version !~ /196/
+    && $winner =~ /Sancti/
+    && exists($winner{Lectio1})
+    && $winner{Lectio1} !~ /\@Commune/i
+    && $winner{Lectio1} !~ /\!(Matt|Marc|Luc|Joannes)\s+[0-9]+\:[0-9]+\-[0-9]+/i)
+  {
+    $c1 .= setfont($smallfont, " *L1*");
+  }
 
   if (substr($date, 0, 5) lt '12-24' && substr($date, 0, 5) gt '01-13') {
 
@@ -205,15 +215,6 @@ sub kalendar_entry {
 
   if ($version !~ /1955|196/ && $winner{Rule} =~ /\;mtv/i) {
     $c2 .= setfont($smallblack, ' m.t.v.');
-  }
-
-  if ( $version !~ /196/
-    && $winner =~ /Sancti/
-    && exists($winner{Lectio1})
-    && $winner{Lectio1} !~ /\@Commune/i
-    && $winner{Lectio1} !~ /\!(Matt|Marc|Luc|Joannes)\s+[0-9]+\:[0-9]+\-[0-9]+/i)
-  {
-    $c2 .= setfont($smallfont, " *L1*");
   }
 
   if ($compare) {

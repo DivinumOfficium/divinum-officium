@@ -34,6 +34,17 @@ $Per Dominum
 
 [Hymnus Matutinum]
 @Sancti/04-13:Hymnus Vespera
+(sed rubrica tridentina)
+@:Hymnus Laudes_
+
+[Lectio1]
+@Commune/C3
+
+[Lectio2]
+@Commune/C3
+
+[Lectio3]
+@Commune/C3
 
 [Lectio4]
 Ex libro Dialogorum sancti Gregorii Papæ
@@ -61,7 +72,7 @@ Hermenegíldus rex, Leovigíldi regis Visigothórum fílius, ab Ariána hǽresi 
 [Lectio9]
 @Commune/C2:Lectio9
 
-[Hymnus Laudes]
+[Hymnus Laudes_]
 v. Nullis te génitor blandítiis trahit,
 Non vitæ cáperis dívitis ótio,
 Gemmarúmve nitóre,
@@ -82,3 +93,8 @@ Et Natum célebrent ora precántium,
 Divinúmque suprémis
 Flamen láudibus éfferant.
 Amen.
+
+[Hymnus Laudes]
+@:Hymnus Laudes_
+(sed rubrica tridentina)
+@:Hymnus Vespera

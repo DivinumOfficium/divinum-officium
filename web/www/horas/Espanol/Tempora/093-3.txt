@@ -1,11 +1,12 @@
 [Rank]
 Feria Quarta Quattuor Temporum Septembris;;Feria major;;2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1930)
 Feria Quarta Quattuor Temporum Septembris;;Feria major;;4
 
-[Rule]
-Preces Feriales
+[Oratio]
+Te suplicamos, Señor, que mediante los auxilios de tu misericordia, sostengas nuestra fragilidad; a fin de que se repare con tu clemencia, lo que por su misma condición se deteriora.
+$Per Dominum
 
 [Lectio1]
 Lección del santo Evangelio según San Marcos. 
@@ -16,28 +17,15 @@ Homilía de San Beda el Venerable, Presbítero.
 !Lib.3, cap. 38 sobre S. Marcos, 9.
 San Marcos dice que aquel demoníaco que el Señor curó al descender de la montaña, era sordomudo, y San Mateo, que era lunático. Es la imagen de esos hombres de los cuales se ha escrito: “El necio se muda como la luna”; como no permanecen en el mismo estado, sino que unas veces se entregan a unos vicios, y otras a otros, parece que ora crecen, ora decrecen. Son mudos, porque no confiesan la fe, sordos, porque no oyen la verdad; se convierten en espuma cuando por su necedad se disuelve su vigor espiritual. Es propio de locos dejar escapar de su boca la espuma salival; rechinan los dientes, inflamados por el furor de la cólera; se desecan cuando languidecen en el amodorramiento de la ociosidad, y viven sin energía porque no están sostenidos por ninguna de las fuerzas de la virtud.
 
-[Responsory1]
-@Tempora/093-0:Responsory7
-
 [Lectio2]
 “Pedí a tus discípulos que lanzasen al demonio, y no han podido”, acusa a los Apóstoles, si bien la imposibilidad de curar depende a veces del estado de la fe en los que piden ser curados: “Según vuestra fe, así os sea hecho”. Jesús exclamó: “¡Oh gente incrédula, hasta cuándo habré de estar entre vosotros? ¿hasta cuándo habré yo de sufriros?” La paciencia del divino Maestro ni quedó agotada ni vencida, porque estaba tan lleno de bondad y de dulzura, que como “el corderito que está mudo delante del que le esquila, no abrió la boca”, ni estalló en palabras coléricas, sino como un médico que ve que su enfermo no sigue sus prescripciones: ¿Hasta cuándo tendré que venir a tu casa? ¿hasta qué punto serán inútiles los cuidados de mi ciencia, ya que cuando yo ordeno una cosa tú haces otra?
-
-[Responsory2]
-@Tempora/093-0:Responsory2
 
 [Lectio3]
 “Esta raza de demonios por ningún medio puede salir sino a fuerza de oración y de ayuno”. Instruyendo a los Apóstoles, nos da Jesucristo una regla de vida: las más fuertes tentaciones, ora provengan de los espíritus inmundos, ora de los hombres, deben ser vencidas mediante ayunos y oraciones; la cólera del Señor, cuando se enciende para vengar nuestros crímenes, puede ser apaciguada por este remedio especial. El ayuno, en sentido general, consiste en abstenerse, no sólo de alimentos, sino de todos los placeres carnales, y en defenderse de toda inclinación al mal. La oración no consiste únicamente en las palabras por las que invocamos la clemencia divina, sino también en los actos que ejecutamos con fe y devoción para servir a nuestro Creador.
 
-[Responsory3]
-@Tempora/093-0:Responsory3
-
 [Ant 2]
 Esta raza de demonios * no se puede expulsar más que con oración y ayuno.
 
-
-[Oratio]
-Te suplicamos, Señor, que mediante los auxilios de tu misericordia, sostengas nuestra fragilidad; a fin de que se repare con tu clemencia, lo que por su misma condición se deteriora.
-$Per Dominum
 
 [Ant 3]
 @:Ant 2

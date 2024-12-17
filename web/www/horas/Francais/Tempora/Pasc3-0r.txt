@@ -1,14 +1,6 @@
 [Rank]
 Dominica III Post Pascha;;Semiduplex;;5;;
 
-[Rule]
-9 Lectiones
-Duplex
-Una Antiphona
-
-[Versum 1]
-@Psalterium/Special/Major Special:Pasch Versum 3
-
 [Ant 1]
 @Tempora/Pasc3-0:Ant 1
 
@@ -21,14 +13,8 @@ Una Antiphona
 [Responsory1]
 @Tempora/Pasc3-0:Responsory1
 
-[Lectio2]
-@Tempora/Pasc3-0:Lectio2
-
 [Responsory2]
 @Tempora/Pasc3-0:Responsory2
-
-[Lectio3]
-@Tempora/Pasc3-0:Lectio3
 
 [Responsory3]
 @Tempora/Pasc3-0:Responsory3
@@ -57,29 +43,14 @@ Una Antiphona
 [Responsory7]
 @Tempora/Pasc3-0:Responsory7
 
-[Lectio8]
-@Tempora/Pasc3-0:Lectio8
-
 [Responsory8]
 @Tempora/Pasc3-0:Responsory8
 
 [Lectio9]
 @Tempora/Pasc3-0:Lectio9
 
-[Versum 2]
-@Psalterium/Special/Major Special:Pasch Versum 2
-
 [Ant 2]
 @:Ant 1
-
-[Capitulum Sexta]
-@Tempora/Pasc3-0:Capitulum Sexta
-
-[Capitulum Nona]
-@Tempora/Pasc3-0:Capitulum Nona
-
-[Versum 3]
-@Psalterium/Special/Major Special:Pasch Versum 3
 
 [Ant 3]
 @Tempora/Pasc3-0:Ant 3

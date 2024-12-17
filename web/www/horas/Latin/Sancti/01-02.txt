@@ -1,48 +1,46 @@
 [Rank]
-In Octava S. Stephani;;Simplex;;1.4;;vide Sancti/12-26
-
-[Rank] (rubrica 196 aut rubrica 1955)
-Die Secunda Januarii;;Feria;;1.2;;vide Sancti/01-01
+In Octava S. Stephani Protomartyris;;Simplex;;1.4;;vide Sancti/12-26
+(sed rubrica tridentina)
+In Octava Sancti Stephani Protomartyris;;Duplex;;3.1;;ex Sancti/12-26
 
 [Rule]
 vide Sancti/12-26
 Feria Te Deum
 Comkey=70
+Lectio1 TempNat
 
-[Oratio] (rubrica divino aut rubrica tridentina aut rubrica monastica)
+[Rule] (rubrica tridentina)
+ex Sancti/12-26;
+9 lectiones
+Psalmi Dominica
+Antiphonas Horas
+Feria Te Deum
+Psalm5 Vespera3=115
+
+[Oratio]
 Omnípotens sempitérne Deus, qui primítias Mártyrum in beáti Levítæ Stéphani sánguine dedicásti: tríbue quǽsumus; ut pro nobis intercéssor exsístat, qui pro suis étiam persecutóribus exorávit Dóminum nostrum Jesum Christum Fílium tuum: 
 $Qui tecum
 
-[Lectio1]
-De Epístola ad Romános
-!Rom 5:1-5
-1 Justificáti ergo ex fide, pacem habeámus ad Deum per Dóminum nostrum Jesum Christum: 
-2 per quem et habémus accéssum per fidem in grátiam istam, in qua stamus, et gloriámur in spe glóriæ filiórum Dei. 
-3 Non solum autem, sed et gloriámur in tribulatiónibus: sciéntes quod tribulátio patiéntiam operátur:
-4 patiéntia autem probatiónem, probátio vero spem:
-5 spes autem non confúndit: quia cáritas Dei diffúsa est in córdibus nostris per Spíritum Sanctum, qui datus est nobis.
+[Lectio1] (rubrica tridentina)
+De Actibus Apostolorum
+!Acts 7:51-54
+51 Dura cervíce, et incircumcísis córdibus et áuribus, vos semper Spirítui Sancto resístitis: sicut patres vestri, ita et vos.
+52 Quem prophetárum non sunt persecúti patres vestri? et occidérunt eos qui prænuntiábant de advéntu Justi, cujus vos nunc proditóres et homicídæ fuístis:
+53 qui accepístis legem in dispositióne angelórum, et non custodístis.
+54 Audiéntes autem hæc, dissecabántur córdibus suis, et stridébant déntibus in eum.
 
-[Responsory1]
-@Sancti/01-01
+[Lectio2] (rubrica tridentina)
+!Acts 7:55-58
+55 Cum autem esset plenus Spíritu Sancto, inténdens in cælum, vidit glóriam Dei, et Jesum stantem a dextris Dei. Et ait: Ecce vídeo cælos apértos, et Fílium hóminis stantem a dextris Dei.
+56 Exclamántes autem voce magna continuérunt aures suas, et ímpetum fecérunt unanímiter in eum.
+57 Et ejiciéntes eum extra civitátem, lapidábant: et testes deposuérunt vestiménta sua secus pedes adolescéntis qui vocabátur Saulus.
+58 Et lapidábant Stéphanum invocántem, et dicéntem: Dómine Jesu, súscipe spíritum meum.
 
-[Lectio2]
-!Rom 5:6-9
-6 Ut quid enim Christus, cum adhuc infírmi essémus, secúndum tempus, pro ímpiis mórtuus est? 
-7 Vix enim pro justo quis móritur: nam pro bono fórsitan quis áudeat mori. 
-8 Comméndat autem caritátem suam Deus in nobis: quóniam cum adhuc peccatóres essémus, secúndum tempus, 
-9 Christus pro nobis mórtuus est: multo ígitur magis nunc justificáti in sánguine ipsíus, salvi érimus ab ira per ipsum.
-
-[Responsory2]
-@Sancti/01-01
-
-[Lectio3]
-!Rom 5:10-12
-10 Si enim cum inimíci essémus, reconciliáti sumus Deo per mortem Fílii ejus: multo magis reconciliáti, salvi érimus in vita ipsíus. 
-11 Non solum autem: sed et gloriámur in Deo per Dóminum nostrum Jesum Christum, per quem nunc reconciliatiónem accépimus. 
-12 Proptérea sicut per unum hóminem peccátum in hunc mundum intrávit, et per peccátum mors, et ita in omnes hómines mors pertránsiit, in quo omnes peccavérunt.
-
-[Responsory3]
-@Sancti/01-01
+[Lectio3] (rubrica tridentina)
+!Acts 7:59; 8:1-2
+59 Pósitis autem génibus, clamávit voce magna, dicens: Dómine, ne státuas illis hoc peccátum. Et cum hoc dixísset, obdormívit in Dómino. Saulus autem erat conséntiens neci ejus.
+1 Facta est autem in illa die persecútio magna in ecclésia quæ erat Jerosólymis, et omnes dispérsi sunt per regiónes Judǽæ et Samaríæ præter Apóstolos.
+2 Curavérunt autem Stéphanum viri timoráti, et fecérunt planctum magnum super eum.
 
 [Lectio4]
 Sermo sancti Augustíni Epíscopi.
@@ -71,11 +69,15 @@ Ecce relinquétur vobis domus vestra desérta. Hoc ipsum ex persóna Jeremíæ j
 Dico enim vobis: Non me vidébitis ámodo, donec dicátis: Benedíctus qui venit in nómine Dómini. Ad Jerúsalem lóquitur, et ad pópulum Judæórum. Versículum autem istum, quo et párvuli atque lacténtes in ingréssu Jerúsalem Dómini Salvatóris usi sunt, quando dixérunt: Benedíctus qui venit in nómine Dómini, hosánna in excélsis, sumpsit de centésimo décimo séptimo Psalmo, qui maniféste de advéntu Dómini scriptus est.
 &teDeum
 
-[Lectio93]
+[Lectio93] (rubrica divino)
 Sermo sancti Augustíni Epíscopi
 !Sermo 2 de S. Stephano
 Christus caput Mártyrum prior passus est pro nobis, relínquens vobis exémplum, ut sequámini vestígia ejus. Cujus passiónis vestígia prosecútus beatíssimus Stéphanus, confiténdo Christum lapidátus a Judǽis, corónam méruit tamquam suo sibi nómine pósitam. Stéphanus enim Græce, Latíne coróna appellátur. Jam coróna nomen habébat, et ídeo palmam martýrii suo nómine præferébat. Qui cum lapidarétur, non solum non exspectábat de persecutóribus reportáre vindíctam, sed eis pótius a Deo véniam postulábat.
 &teDeum
 
-[Capitulum Laudes] (rubrica 196)
-@Sancti/01-01
+[Commemoratio 2] (rubrica tridentina)
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava
+
+[Ant Vespera 3] (rubrica tridentina)
+@Sancti/12-26:Ant Laudes

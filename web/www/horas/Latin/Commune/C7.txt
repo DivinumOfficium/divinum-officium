@@ -43,6 +43,9 @@ Amen.
 [Ant 1]
 @Commune/C6:Ant 2
 
+[Oratio]
+@Commune/C6::s/Vírginis et // s/N\./N./
+
 [Invit]
 Laudémus Deum nostrum * In confessióne beátæ N.
 
@@ -52,13 +55,13 @@ Laudémus Deum nostrum * In confessióne beátæ N.
 [HymnusM Matutinum]
 @Commune/C6::16-25
 
-[Ant Matutinum2]
-Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me.;;18
-
 [Ant Matutinum]
 @Commune/C6::1
 @:Ant Matutinum2
 @Commune/C6::3-9
+
+[Ant Matutinum2]
+Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me.;;18
 
 [Lectio1]
 @Commune/C6:Lectio1 in 2 loco
@@ -134,9 +137,6 @@ $Deo gratias
 
 [Ant 2]
 Date ei * de fructu mánuum suárum, et laudent eam in portis ópera ejus.
-
-[Oratio]
-@Commune/C6::s/Vírginis et // s/N\./N./
 
 [Lectio Prima]
 !Sir 51:8; 51:12

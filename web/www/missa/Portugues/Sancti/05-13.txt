@@ -1,12 +1,6 @@
 [Rank]
 S.Roberti Ballarmino Episcopi Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
 
-[RankNewcal]
-S.Roberti Ballarmino Episcopi Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
-
-[Name]
-Roberte
-
 [Rule]
 Gloria
 CredoDA
@@ -15,6 +9,9 @@ CredoDA
 # 13 V – São Roberto Belarmino, Bispo, Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
+
+[Name]
+Roberte
 
 [Introitus]
 @Commune/C4a:Introitus

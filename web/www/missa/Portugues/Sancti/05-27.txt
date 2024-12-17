@@ -1,9 +1,6 @@
 [Rank]
 S. Bedae Venerabilis Confessoris et Ecclesiae Doctoris;;Duplex majus;;4;;vide C4a
 
-[RankNewcal]
-S. Bedae Venerabilis Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
-
 [Rule]
 vide C4a;
 CPapaM=Joánnem;
@@ -44,21 +41,3 @@ $Per Dominum
 
 [Postcommunio]
 @Commune/C4a:Postcommunio
-
-[Commemoratio Oratio]
-! de S. João, Papa e Mártir
-@Commune/C2b:Oratio:s/N\./João/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio
-
-[Commemoratio Secreta]
-! de S. João, Papa e Mártir
-@Commune/C2b:Secreta:s/N\./João/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta
-
-[Commemoratio Postcommunio]
-! de S. João, Papa e Mártir
-@Commune/C2b:Postcommunio:s/N\./João/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio

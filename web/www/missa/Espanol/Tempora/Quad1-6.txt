@@ -1,12 +1,6 @@
 [Rank]
 Sabbato Quattuor Temporum Quadrigesimæ;;Feria major;;2
 
-[Rank1960]
-Sabbato Quattuor Temporum Quadrigesimæ;;Feria major;;3
-
-[RankNewcal]
-Sabbato infra Hebdomadam I in Quadragesima;;Feria major;;2
-
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
@@ -22,10 +16,6 @@ v. En tu presencia sea recibida mi oración: da oídos a mí suplica, oh Señor.
 Señor Dios de mi salud, día y noche estoy clamando en tu presencia. 
 &Gloria
 v. En tu presencia sea recibida mi oración: da oídos a mí suplica, oh Señor.
-
-[Oratio]
-Te suplicamos, Señor, que mires propicio a tu pueblo, y que apartes de él con tu clemencia el azote de tu indignación.
-$Per Dominum
 
 [LectioL1]
 Lección del libro del Deuteronomio
@@ -98,6 +88,10 @@ Bendito seas tú, oh Señor Dios de nuestros padres, digno eres de loor, y de gl
 
 [OratioL5]
 Oh Dios, que mitigaste las llamas del fuego a los tres jóvenes, concede propicio que la llama de los vicios no abrase a tus siervos.
+$Per Dominum
+
+[Oratio]
+Te suplicamos, Señor, que mires propicio a tu pueblo, y que apartes de él con tu clemencia el azote de tu indignación.
 $Per Dominum
 
 [Lectio]

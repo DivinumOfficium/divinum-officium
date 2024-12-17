@@ -1,13 +1,13 @@
 [Rank]
 S. Augustini Episcopi et Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 
-[Name]
-Augustinus
-
 [Rule]
 vide C4a;
 Gloria
 CredoDA
+
+[Name]
+Augustinus
 
 [Introitus]
 @Commune/C4a
@@ -41,18 +41,3 @@ Ik heb David gevonden, mijn dienstknecht, met heilige olie hem gezalfd. Alleluia
 
 [Postcommunio]
 @Commune/C4a:Postcommunio:s/N\./Augustinus/
-
-[Commemoratio Oratio]
-!Pro S. Hermete Martyre
-God, Gij hebt uw heilige martelaar Hermes in zijn lijden gesterkt door de deugd van standvastigheid. Doe ons in navolging van hem en uit liefde tot U alle goederen van de wereld versmaden, en geen tegenwerking van haar vrezen.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Pro S. Hermete Martyre
-Wij dragen U, Heer, een offer van lof op bij de gedachtenis van uw heiligen en vragen U, doe ons tot heil strekken wat hun tot glorie strekte.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Hermete Martyre
-Vol van hemelse zegening vragen wij U, Heer, uw barmhartigheid, dat wij door de voorspraak van uw heilige martelaar Hermes de heilzame werking mogen ondervinden van wat wij in nederigheid voltrekken.
-$Per Dominum

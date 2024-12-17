@@ -2,18 +2,10 @@
 Notre-Dame du Rosaire;;Duplex 2 classis;;5.1;;ex C11
 
 [Rank] (rubrica 196)
-Notre-Dame du Rosaire;;Duplex 2 classis;;5;;ex C11
+La fête de la Bienheureuse Vierge Marie du Rosaire;;Duplex 2 classis;;5;;ex C11
 
 [Rank] (rubrica innovata)
 Notre-Dame du Rosaire;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat;
-CPapaC=Marcum;
 
 [Ant Vespera]
 Quelle est celle-ci, * belle comme la colombe et comme la rose plantée aux bords des eaux ?;;109
@@ -68,7 +60,7 @@ $Per eumdem
 [Invit]
 Célébrons la solennité du Rosaire de la Vierge Marie : * Adorons le Christ, son Fils, notre Seigneur.
 
-[Hymnus Matutinum]
+[Hymnus Matutinum_]
 v. Sur la montagne couverte d'oliviers,
 Le Rédempteur prie, prosterné ;
 Il est triste, il tremble, il défaille
@@ -211,7 +203,7 @@ R. Moi, comme-une vigne, j’ai produit des fruits d’une odeur suave,
 V. Moi, je suis la mère du pur amour, et de la crainte, et de la science, et de la sainte espérance.
 R. Et mes fleurs sont des fruits d’honneur et de richesse
 
-[Lectio8]
+[Lectio8_1]
 !Sermon sur l'Aqueduc.
 « Le Verbe s’est fait chair » et déjà il habite en nous. Il habite dans notre mémoire, il habite dans notre pensée car il descend jusque dans notre imagination elle-même. Comment cela, dites-vous ? En gisant sur la paille de la crèche, en reposant sur un sein virginal, en prêchant sur la montagne, en passant la nuit en prières, en se laissant suspendre à la croix et défigurer par le trépas, en se montrant « libre entre les morts » et en commandant à l’enfer ; en ressuscitant le troisième jour, en montrant à ses Apôtres, dans les traces des clous, les signes de sa victoire, enfin en s’élevant devant eux au plus haut du ciel.
 
@@ -270,19 +262,6 @@ R. Il l’a fait habiter dans son tabernacle.
 [Ant 2]
 La solennité d’aujourd’hui, * du Très Saint Rosaire de Marie, Mère de Dieu, célébrons la dévotement, afin que la Vierge intercède pour nous auprès de Notre-Seigneur Jésus-Christ.
 
-[Commemoratio 2]
-!Commémoraison de S. Marc, Pape et Confesseur
-@Commune/C4:Oratio proper
-$Oremus
-Pasteur éternel de l’Eglise, regardez avec bienveillance votre troupeau, protégez-le et gardez-le toujours. Nous vous le demandons par le bienheureux Pape Marc que vous avez placé comme berger à la tête de l’Eglise.
-$Per Dominum
-_
-!Commémoraison des Sts Serge, Bacchus, Marcel et Apulée, martyrs
-@Commune/C3:Oratio proper
-$Oremus
-Faites, Seigneur, que les mérites de vos saints Martyrs Serge, Bacchus, Marcel et Apulée, nous soient acquis et nous rendent toujours fervents dans votre amour.
-$Per Dominum
-
 [Lectio Prima]
 !Sir 24:17-18
 v. Comme le cèdre au Liban, j’ai été élevée et comme le cyprès sur le mont Sion ; comme le palmier à Cadès, j’ai été élevée et comme la plantation de roses, à Jéricho.
@@ -313,10 +292,6 @@ R. Après l’enfantement, ô Vierge, * Inviolée vous êtes demeurée.
 _
 V. Belle vous avez été faite et suave.
 R. En vos délices, sainte Mère de Dieu.
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
 
 [Responsory Nona]
 R.br. Belle vous avez été faite * Et suave.

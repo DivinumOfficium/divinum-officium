@@ -1,0 +1,11 @@
+[Lectio5] (rubrica tridentina)
+@Sancti/01-04:Lectio4: s/ And here .*//s
+
+[Lectio6] (rubrica tridentina)
+@Sancti/01-04:Lectio4: s/.*?(And here )/$1/s
+
+[Lectio11] (rubrica tridentina)
+@Sancti/01-04:Lectio9: s/ The star.*//s
+
+[Lectio12] (rubrica tridentina)
+@Sancti/01-04:Lectio9: s/.* (The star)/$1/s

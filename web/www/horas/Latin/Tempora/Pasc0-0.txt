@@ -9,19 +9,43 @@ Capitulum Versum 2;
 Psalmi Dominica
 Prima=53
 
+[Ant Vespera]
+@:Ant Laudes
+
 [Ant 1]
 Véspere autem sábbati * quæ lucéscit in prima sábbati, venit María Magdaléne, et áltera María, vidére sepúlcrum, allelúja.
 
-[Ant 41]
-Véspere autem sábbati * quæ lucéscit in prima sábbati, venit María Magdaléne, et áltera María, vidére sepúlcrum, allelúja.
+[Oratio]
+Deus, qui hodiérna die per Unigénitum tuum æternitátis nobis áditum devícta morte reserásti: vota nostra, quæ præveniéndo aspíras, étiam adjuvándo proséquere.
+$Per eumdem
+
+[Special Vespera 1]
+#Sabbato Sancto special Paschal Vespera
+_
+$Pater noster
+$Ave Maria
+_
+Ant. Allelúja, Allelúja, Allelúja.
+&psalm(116)
+Ant. Allelúja, Allelúja, Allelúja.
+_
+Ant. Véspere autem sábbati quæ lucéscit in prima sábbati, venit María Magdaléne et áltera María vidére sepúlcrum, allelúja.
+&psalm(232)
+Ant. Véspere autem sábbati quæ lucéscit in prima sábbati, venit María Magdaléne et áltera María vidére sepúlcrum, allelúja.
+
+&Dominus_vobiscum
+v. Orémus.
+v. Spíritum nobis, Dómine, tuæ caritátis infúnde: ut, quos sacraméntis paschálibus satiásti, tua fácias pietáte concórdes.
+$Per Dominum eiusdem
+&Dominus_vobiscum
+
+V. Benedicámus Dómino, allelúja, allelúja.
+R. Deo grátias, allelúja, allelúja.
+$Fidelium animae
+$Pater noster
 
 [Invit]
 Surréxit Dóminus vere, * Allelúja.
-
-[Prelude Matutinum] (rubrica 1955 aut rubrica 1960)
-!Cum solemnis vigiliæ paschalis celebratio locum obtineat officii nocturni dominicæ Resurrectionis, Matutino ejusdem dominicæ Resurrectionis omisso, statim inter Missarum vigiliæ solemnia, post communionem, cantatur Laudes. Officium dominicæ Resurrectionis prosequitur deínde cum Prima.
-_
-!Qui vero solemni vigiliæ paschali non interfuerunt, tenentur dicere Matutinum et Laudes dominicæ Resurrectionis.
 
 [Ant Matutinum]
 Ego sum qui sum, * et consílium meum non est cum ímpiis, sed in lege Dómini volúntas mea est, allelúja.;;1
@@ -62,8 +86,10 @@ R. Ut veniéntes úngerent Jesum, allelúja, allelúja.
 In sua ergo ac nostra festivitáte Angelus in albis véstibus appáruit: quia dum nos per resurrectiónem Domínicam ad supérna redúcimur, cæléstis pátriæ damna reparántur. Sed quid adveniéntes féminas affátur, audiámus: Nolíte expavéscere. Ac si apérte dicat, Páveant illi, qui non amant advéntum supernórum cívium: pertiméscant, qui carnálibus desidériis pressi, ad eórum se societátem pertíngere posse despérant. Vos autem, cur pertiméscitis, quæ vestros concíves vidétis? Unde et Matthǽus Angelum apparuísse descríbens, ait: Erat aspéctus ejus sicut fulgur, et vestiménta ejus sicut nix. In fúlgure étenim terror timóris est, in nive autem blandiméntum candóris.
 &teDeum
 
-[Prelude Laudes] (rubrica 1955 aut rubrica 1960)
-@:Prelude Matutinum
+[Prelude Matutinum] (rubrica 1955 aut rubrica 1960)
+!Cum solemnis vigiliæ paschalis celebratio locum obtineat officii nocturni dominicæ Resurrectionis, Matutino ejusdem dominicæ Resurrectionis omisso, statim inter Missarum vigiliæ solemnia, post communionem, cantatur Laudes. Officium dominicæ Resurrectionis prosequitur deínde cum Prima.
+_
+!Qui vero solemni vigiliæ paschali non interfuerunt, tenentur dicere Matutinum et Laudes dominicæ Resurrectionis.
 
 [Ant Laudes]
 Angelus autem Dómini * descéndit de cælo, et accédens revólvit lápidem, et sedébat super eum, allelúja, allelúja.
@@ -78,40 +104,14 @@ Ant. Hæc dies * quam fecit Dóminus: exsultémus et lætémur in ea.
 [Ant 2]
 Et valde mane * una sabbatórum véniunt ad monuméntum, orto jam sole, allelúja.
 
-[Oratio]
-Deus, qui hodiérna die per Unigénitum tuum æternitátis nobis áditum devícta morte reserásti: vota nostra, quæ præveniéndo aspíras, étiam adjuvándo proséquere.
-$Per eumdem
-
-[Special Vespera 1]
-#Sabbato Sancto special Paschal Vespera
-_
-$Pater noster
-$Ave Maria
-_
-Ant. Allelúja, Allelúja, Allelúja.
-&psalm(116)
-Ant. Allelúja, Allelúja, Allelúja.
-_
-Ant. Véspere autem sábbati quæ lucéscit in prima sábbati, venit María Magdaléne et áltera María vidére sepúlcrum, allelúja.
-&psalm(232)
-Ant. Véspere autem sábbati quæ lucéscit in prima sábbati, venit María Magdaléne et áltera María vidére sepúlcrum, allelúja.
-
-&Dominus_vobiscum
-v. Orémus.
-v. Spíritum nobis, Dómine, tuæ caritátis infúnde: ut, quos sacraméntis paschálibus satiásti, tua fácias pietáte concórdes.
-$Per Dominum eiusdem
-&Dominus_vobiscum
-
-V. Benedicámus Dómino, allelúja, allelúja.
-R. Deo grátias, allelúja, allelúja.
-$Fidelium animae
-$Pater noster
-
-[Ant Vespera]
-@:Ant Laudes
+[Prelude Laudes] (rubrica 1955 aut rubrica 1960)
+@:Prelude Matutinum
 
 [Ant 3]
 Et respiciéntes * vidérunt revolútum lápidem: erat quippe magnus valde, allelúja.
+
+[Ant 41]
+Véspere autem sábbati * quæ lucéscit in prima sábbati, venit María Magdaléne, et áltera María, vidére sepúlcrum, allelúja.
 
 [Ant 43]
 Allelúja, allelúja, allelúja, allelúja.

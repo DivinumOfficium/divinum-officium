@@ -1,17 +1,6 @@
 [Rank]
 Dominica I Adventus;;Semiduplex;;6
 
-[Rule]
-9 lectiones
-Antiphonas horas
-
-[Ant Laudes]
-Aquel día * los montes destilarán dulzura, y las colinas manarán leche y miel. Aleluya.
-Alégrate, * hija de Sión, canta, hija de Jerusalén. Aleluya.
-Mirad: vendrá el Señor, * y todos sus ángeles con Él. Aquel día habrá una gran luz. Aleluya.
-Los que tenéis sed, * venid por agua. Buscad al Señor mientras se le encuentra. Aleluya.
-Vendrá * el gran Profeta, y renovará a Jerusalén. Aleluya.
-
 [Ant 1]
 He aquí que el nombre del Señor * viene de lejos, y su resplandor iluminará toda la tierra.
 
@@ -126,6 +115,13 @@ R. Y este es el nombre con que le llamarán.
 &Gloria
 R. Nuestro Señor justo.
 
+[Ant Laudes]
+Aquel día * los montes destilarán dulzura, y las colinas manarán leche y miel. Aleluya.
+Alégrate, * hija de Sión, canta, hija de Jerusalén. Aleluya.
+Mirad: vendrá el Señor, * y todos sus ángeles con Él. Aquel día habrá una gran luz. Aleluya.
+Los que tenéis sed, * venid por agua. Buscad al Señor mientras se le encuentra. Aleluya.
+Vendrá * el gran Profeta, y renovará a Jerusalén. Aleluya.
+
 [Capitulum Laudes]
 !Rom 13:11
 v. Hermanos: Daos cuenta del momento: ya es hora de que despertéis del sueño, porque ahora nuestra salvación está más cerca que cuando vinimos a la fe.
@@ -133,9 +129,6 @@ $Deo gratias.
 
 [Ant 2]
 El Espíritu Santo * vendrá sobre ti, María. No temas, concebirás en tu vientre al Hijo de Dios. Aleluya.
-
-[Capitulum Sexta]
-@Psalterium/Special/Major Special:Day1 Laudes
 
 [Capitulum Nona]
 !Rom 13:13-14

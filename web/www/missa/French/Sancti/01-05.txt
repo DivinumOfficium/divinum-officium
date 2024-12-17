@@ -1,12 +1,6 @@
 [Rank]
 In Vigilia Epiphaniæ;;Semiduplex;;5;;ex Sancti/01-01
 
-[Rank1570]
-In Vigilia Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-01
-
-[Rank1960]
-Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
-
 [Rule]
 CPapaM=Telésphorum;
 ex Sancti/101-01;
@@ -27,12 +21,6 @@ v. Tandis qu'un profond silence enveloppait toutes choses, et que la nuit atteig
 Dieu éternel et tout-puissant, dirigez nos actes selon votre bon plaisir, afin qu'au nom de votre Fils bient-aimé, notre vie soit féconde en bonnes œuvres.
 $Qui tecum
 
-[Commemoratio Oratio]
-!Pro S. Telesphori Papæ et Mart.
-@Commune/C2b:Oratio:s/N\./Telésphori/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Oratio Gregem
-
 [Lectio]
 Léctio Epístolæ beáti Pauli Apóstoli ad Gálatas.
 !Gal 4:1-7
@@ -48,7 +36,7 @@ Le Seigneur règne, vêtu de majesté ; le Seigneur s'est revêtu de puissance, 
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Matthǽum.
 !Matt 2:19-23.
-En ce temps-là, Hérode étant mort, voici qu'un ange du Seigneur apparut en songe à Joseph en Égypte, et lui dit : « Lève-toi, prends l'enfant et sa mère, et va dans la terre d'Israël, car ceux qui en voulaient à la vie de l'enfant sont morts. » Et lui, s'étant levé, prit l'enfant et sa mère, et il vint dans la terre d'Israël. Mais, apprenant qu'Archélaüs régnait en Judée à la place d'Hérode, son père, il eut peur d'y aller, et, ayant été averti en songe, il gagna la région de la Galilée et vint habiter dans une ville nommée Nazareth, afin que s'accomplît ce qu'avaient dit les prophètes : Il sera appelé Nazaréen. 
+En ce temps-là, Hérode étant mort, voici qu'un ange du Seigneur apparut en songe à Joseph en Égypte, et lui dit : « Lève-toi, prends l'enfant et sa mère, et va dans la terre d'Israël, car ceux qui en voulaient à la vie de l'enfant sont morts. » Et lui, s'étant levé, prit l'enfant et sa mère, et il vint dans la terre d'Israël. Mais, apprenant qu'Archélaüs régnait en Judée à la place d'Hérode, son père, il eut peur d'y aller, et, ayant été averti en songe, il gagna la région de la Galilée et vint habiter dans une ville nommée Nazareth, afin que s'accomplît ce qu'avaient dit les prophètes : Il sera appelé Nazaréen.
 
 [Offertorium]
 !Ps 92:1-2
@@ -58,13 +46,6 @@ Dieu a fondé le monde, il ne sera pas ébranlé. Dès lors, ô Dieu, votre trô
 Faites, Dieu tout-puissant, que cette offrande présentée aux regards de votre majesté nous obtienne la grâce d'un vrai don de nous-mêmes, et nous acquière la bienheureuse éternité.
 $Per Dominum
 
-[Commemoratio Secreta]
-!Pro S. Telesphori Papæ et Mart.
-@Commune/C2b:Secreta:s/N\./Telésphoro/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Secreta Gregem
-
-
 [Communio]
 !Matt 2:20
 Prends avec toi l'Enfant et sa Mère, et pars pour le pays d'Israël ; car ils sont morts, ceux qui en voulaient à la vie de l'Enfant.
@@ -72,9 +53,3 @@ Prends avec toi l'Enfant et sa Mère, et pars pour le pays d'Israël ; car ils s
 [Postcommunio]
 Par l'action de ce sacrement, Seigneur, que nos mauvais penchants soient extirpés, nos bons désirs comblés.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Telesphori Papæ et Mart.
-@Commune/C2c:Postcommunio:s/N\./Telésphoro/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Postcommunio Gregem

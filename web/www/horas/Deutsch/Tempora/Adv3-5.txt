@@ -1,14 +1,15 @@
 [Rank]
 Quatemberfreitag im Advent;;Feria major;;2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1930)
 Quatemberfreitag im Advent;;Feria major;;3
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Freitag nach dem dritten Sonntag im Advent;;Feria major;;2
 
-[Rule]
-Preces Feriales
+[Oratio]
+Laß wirksam werden, wir bitten dich, o Herr, deine Macht und komme: damit diejenigen, die auf deine Milde vertrauen, eiligst aus aller Gefahr befreit werden.
+$Qui vivis
 
 [Lectio1]
 Lesung aus dem heiligen Evangelium nach Lukas.
@@ -47,10 +48,6 @@ R. Und seine Schönheit mit ihm.
 
 [Ant 2]
 Als hörbar wurde * der Klang deines Grußes in meine Ohren, hüpfte vor Freuden auf das Kind in meinem Schoß, alleluja.
-
-[Oratio]
-Lass wirksam werden, wir bitten dich, o Herr, deine Macht und komme: damit diejenigen, die auf deine Milde vertrauen, eiligst aus aller Gefahr befreit werden.
-$Qui vivis
 
 [Ant 3]
 Das ist das Zeugnis, * das Johannes abgegeben hat: Der nach mir kommt, ist vor mir dagewesen.

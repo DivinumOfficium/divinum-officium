@@ -12,16 +12,37 @@ Prima=53
 [Ant 1]
 Pasado el sábado, * al alborear el primer día de la semana, fueron María la Magdalena y la otra María a ver el sepulcro, aleluya.
 
-[Ant 41]
-Pasado el sábado, * al alborear el primer día de la semana, fueron María la Magdalena y la otra María a ver el sepulcro, aleluya.
+[Oratio]
+¡Oh Dios, que en este día nos abriste las puertas del cielo por medio de tu Hijo, vencedor de la muerte!; concédenos que tu gracia nos ayude a realizar los buenos propósitos que Tú nos inspiras.
+$Per eumdem
+
+[Special Vespera 1]
+#Sabbato Sancto special Paschal Vespera
+_
+$Pater noster
+$Ave Maria
+_
+Ant. Aleluya, aleluya, aleluya.
+&psalm(116)
+Ant. Aleluya, aleluya, aleluya.
+_
+Ant. Pasado el sábado, al alborear el primer día de la semana, fueron María la Magdalena y la otra María a ver el sepulcro, aleluya.
+&psalm(232)
+Ant. Pasado el sábado, al alborear el primer día de la semana, fueron María la Magdalena y la otra María a ver el sepulcro, aleluya.
+
+&Dominus_vobiscum
+v. Oremos.
+v. Derrama, Señor, sobre nosotros tu espíritu de caridad; para que, alimentados en los sacramentos pascuales, permanezcamos unidos en tu amor.
+$Per Dominum eiusdem
+&Dominus_vobiscum
+
+V. Bendigamos al Señor, aleluya, aleluya.
+R. Demos gracias a Dios, aleluya, aleluya.
+$Fidelium animae
+$Pater noster
 
 [Invit]
 El Señor resucitó verdaderamente, * Aleluya.
-
-[Prelude Matutinum] (rubrica 1955 aut rubrica 1960)
-!Las ceremonias de la Vigilia Pascual sustituyen al oficio nocturno. Durante la Misa, después de la comunión, se canta lo que sigue a modo de Laudes. El oficio del domingo de Resurrección sigue después en Prima.
-_
-!Los que no asisten a la Vigilia Pascual dicen Laudes como sigue:
 
 [Ant Matutinum]
 Yo soy el que soy, * y mis acuerdos no se avienen con los impíos, sino que en la ley del Señor está puesta mi voluntad, aleluya.;;1
@@ -62,8 +83,10 @@ R. Transcurrido el sábado, María Magdalena, y María madre de Santiago, y Salo
 En su festividad y nuestra apareciose, pues, el Ángel con blancas vestiduras, porque la resurrección del Señor, al paso que nos abre de nuevo el camino a las alturas, repara las pérdidas de la patria celestial. Oigamos lo que dice a las mujeres que llegan: No temáis; como si les dijera: Teman los que no se complacen en la visita de los ciudadanos del cielo; espántense los que oprimidos de deseos carnales desesperan de poder llegar a hacerles compañía; pero ¿por qué teméis vosotras que veis a vuestros conciudadanos? Por lo cual San Mateo al describir la aparición del Ángel, dice: Era su semblante como el relámpago y sus vestiduras como la nieve; ahora bien, en el relámpago se representa el terror, y en la nieve la suavidad de la blancura.
 &teDeum
 
-[Prelude Laudes] (rubrica 1955 aut rubrica 1960)
-@:Prelude Matutinum
+[Prelude Matutinum] (rubrica 1955 aut rubrica 1960)
+!Las ceremonias de la Vigilia Pascual sustituyen al oficio nocturno. Durante la Misa, después de la comunión, se canta lo que sigue a modo de Laudes. El oficio del domingo de Resurrección sigue después en Prima.
+_
+!Los que no asisten a la Vigilia Pascual dicen Laudes como sigue:
 
 [Ant Laudes]
 Un ángel del Señor, * bajando del cielo y acercándose, corrió la piedra y se sentó encima. Aleluya, aleluya.
@@ -78,40 +101,11 @@ Ant. Este es el día * en que actuó el Señor, sea nuestra alegría y nuestro g
 [Ant 2]
 El primer día * de la semana, al salir el sol, iban al sepulcro. Aleluya.
 
-[Oratio]
-¡Oh Dios, que en este día nos abriste las puertas del cielo por medio de tu Hijo, vencedor de la muerte!; concédenos que tu gracia nos ayude a realizar los buenos propósitos que Tú nos inspiras.
-$Per eumdem
-
-[Special Vespera 1]
-#Sabbato Sancto special Paschal Vespera
-_
-$Pater noster
-$Ave Maria
-_
-Ant. Aleluya, aleluya, aleluya.
-&psalm(116)
-Ant. Aleluya, aleluya, aleluya.
-_
-Ant. Pasado el sábado, al alborear el primer día de la semana, fueron María la Magdalena y la otra María a ver el sepulcro, aleluya.
-&psalm(232)
-Ant. Pasado el sábado, al alborear el primer día de la semana, fueron María la Magdalena y la otra María a ver el sepulcro, aleluya.
-
-&Dominus_vobiscum
-v. Oremos.
-v. Derrama, Señor, sobre nosotros tu espíritu de caridad; para que, alimentados en los sacramentos pascuales, permanezcamos unidos en tu amor.
-$Per Dominum eiusdem
-&Dominus_vobiscum
-
-V. Bendigamos al Señor, aleluya, aleluya.
-R. Demos gracias a Dios, aleluya, aleluya.
-$Fidelium animae
-$Pater noster
-
-[Ant Vespera]
-@:Ant Laudes
-
 [Ant 3]
 Miraron * y vieron que la piedra estaba corrida, y esto que era muy grande. Aleluya.
+
+[Ant 41]
+Pasado el sábado, * al alborear el primer día de la semana, fueron María la Magdalena y la otra María a ver el sepulcro, aleluya.
 
 [Ant 43]
 Aleluya, aleluya, aleluya, aleluya.

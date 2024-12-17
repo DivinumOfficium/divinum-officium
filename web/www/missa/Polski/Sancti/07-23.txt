@@ -1,9 +1,6 @@
 [Rank]
 S. Apollinaris Episcopi et Mart;;Duplex;;3;;vide C2
 
-[RankNewcal]
-S. Apollinaris Episcopi et Mart;;Duplex optional;;2;;vide C2
-
 [Rule]
 vide C2;
 Gloria
@@ -33,6 +30,11 @@ v. Kapłani Boży, błogosławcie Panu, święci i pokornego serca chwalcie Boga
 Boże, który nagradzasz dusze wierne, a dzień dzisiejszy uświęciłeś męczeństwem świętego Kapłana Twego Apolinarego; spraw, abyśmy dostąpili przebaczenia przez prośby tego, którego chwalebną uroczystość obchodzimy.
 $Per Dominum
 
+[Commemoratio Oratio]
+! Wspomnienie św. Liboriusza
+Spraw, prosimy Cię, wszechmogący Boże, aby chwalebna uroczystość świętego Liboriusza, Twego Wyznawcy i Biskupa, przysporzyła nam gorliwości i łaski do zbawienia.
+$Per Dominum
+
 [Lectio]
 Czytanie z Listu świętego Piotra Apostoła.
 !1 P 5:1-11
@@ -45,7 +47,6 @@ Znalazłem Dawida, mojego sługę, namaściłem go świętym olejem moim, by rę
 V. Nic nie zyska w nim nieprzyjaciel, duch nieprawości mu nie zaszkodzi. Alleluja, alleluja.
 !Ps 109:4
 V. Pan przysiągł i nie pożałuje: Tyś kapłanem na wieki na wzór Melchizedeka. Alleluja.
-
 
 [Evangelium]
 Ciąg dalszy ++ Ewangelii świętej według Łukasza.
@@ -60,6 +61,11 @@ Z nim moja wierność i moja łaska; w moim imieniu moc jego wzrośnie.
 Panie, wejrzyj łaskawie na te dary, które składamy dla uczczenia pamięci świętego Kapłana i Męczennika Twego Apolinarego i ofiarujemy Ci za nasze uchybienia.
 $Per Dominum
 
+[Commemoratio Secreta]
+! Wspomnienie św. Liboriusza
+Panie, niech nam wszędzie sprawiają radość Twoi Święci, abyśmy wspominając ich zasługi doznali również ich opieki.
+$Per Dominum
+
 [Communio]
 !Mt 25:20-21
 Panie, dałeś mi pięć talentów, otom drugie pięć zyskał. Dobrze, sługo prawy i wierny, żeś w małym był wierny, dam ci władzę nad wieloma: wnijdź do wesela Pana twego.
@@ -68,18 +74,7 @@ Panie, dałeś mi pięć talentów, otom drugie pięć zyskał. Dobrze, sługo p
 Przyjmując Najświętszy Sakrament, prosimy Cię, Panie, by nas otaczała ciągła opieka św. Apolinarego, bo nie przestajesz łaskawie spoglądać na tych, których raczysz wspierać taką pomocą.
 $Per Dominum
 
-[Commemoratio Oratio]
-! Wspomnienie św. Liboriusza
-Spraw, prosimy Cię, wszechmogący Boże, aby chwalebna uroczystość świętego Liboriusza, Twego Wyznawcy i Biskupa, przysporzyła nam gorliwości i łaski do zbawienia.
-$Per Dominum
-
-[Commemoratio Secreta]
-! Wspomnienie św. Liboriusza
-Panie, niech nam wszędzie sprawiają radość Twoi Święci, abyśmy wspominając ich zasługi doznali również ich opieki.
-$Per Dominum
-
 [Commemoratio Postcommunio]
 ! Wspomnienie św. Liboriusza
 Wszechmogący Boże, spraw, prosimy, abyśmy składając dzięki za przyjęte dary, za przyczyną świętego Liboriusza, Wyznawcy Twego i Biskupa, otrzymywali coraz większe dobrodziejstwa.
 $Per Dominum
-

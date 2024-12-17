@@ -6,6 +6,7 @@ proprium
 9 lectiones
 Psalmi Dominica
 Antiphonas horas
+(rubrica 1570) Una Antiphona
 Psalm5 Vespera=116
 Psalm5 Vespera3=137
 Contract8
@@ -87,13 +88,13 @@ Deus, qui, miro órdine, Angelórum ministéria hominúmque dispénsas: concéde
 $Per Dominum
 
 [Invit]
-Regem Archangelórum Dóminum, * Veníte, adorémus.
+Regem Archangelórum Dóminum, * Veníte, adorémus. (Allelúja.)
 
 [Hymnus Matutinum]
-@Sancti/05-08:Hymnus Vespera
+@:Hymnus Vespera
 
 [HymnusM Matutinum]
-@Sancti/05-08:HymnusM Vespera
+@:HymnusM Vespera
 
 [Ant Matutinum]
 Concússum est mare, * et contrémuit terra, ubi Archángelus Míchaël descendébat de cælo, allelúja.;;8

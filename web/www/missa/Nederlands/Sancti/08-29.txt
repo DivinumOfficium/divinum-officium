@@ -1,9 +1,6 @@
 [Rank]
 Decollatione S. Joannis Baptistæ;;Duplex majus;;4;;ex C2
 
-[Rank] (rubrica 196)
-Decollatione S. Joannis Baptistæ;;Duplex;;3;;vide C2
-
 [Rule]
 ex C2;
 Gloria
@@ -52,15 +49,3 @@ $Per Dominum
 [Postcommunio]
 Moge, o Heer, het feest van de heilige Johannes de Doper voor ons betekenen, dat wij in de grootse geheimen, die wij genuttigd hebben, eren wat zij beduiden, en vooral ons mogen verheugen om wat zij in ons bewerken.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Pro S. Sabina Martyre
-@Commune/C6:Oratio:s/N\./Sabina/
-
-[Commemoratio Secreta]
-!Pro S. Sabina Martyre
-@Commune/C6a:Secreta1:s/N\./Sabina/
-
-[Commemoratio Postcommunio]
-!Pro S. Sabina Martyre
-@Commune/C6a:Postcommunio1:s/N\./Sabina/

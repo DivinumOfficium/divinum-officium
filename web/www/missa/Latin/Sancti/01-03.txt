@@ -1,13 +1,22 @@
 [Rank]
-In Octava S. Joannis;;Simplex;;1.3;;vide Sancti/12-27
-
-[Rank] (rubrica 196 aut rubrica 1955)
-Die Tertia Januarii;;Feria;;1.2;;vide Sancti/01-01
-
-[Rank] (rubrica tridentina)
-In Octava S. Joannis;;Duplex;;3.1;;ex Sancti/12-27
+In Octava S. Joannis Apostoli et Evangelistæ;;Simplex;;1.4;;vide Sancti/12-27
+(sed rubrica tridentina)
+In Octava S. Joannis Apostoli et Evangelistæ;;Duplex;;3.2;;ex Sancti/12-27
 
 [Rule]
 ex Sancti/12-27;
 Gloria
-Prefatio=Nat
+Prefatio=Apostolis
+(rubrica tridentina) Credo
+
+[Commemoratio Oratio] (rubrica tridentina)
+!Pro Ss. Innocentibus
+@Sancti/12-28:Oratio
+
+[Commemoratio Secreta] (rubrica tridentina)
+!Pro Ss. Innocentibus
+@Sancti/12-28:Secreta
+
+[Commemoratio Postcommunio] (rubrica tridentina)
+!Pro Ss. Innocentibus
+@Sancti/12-28:Postcommunio

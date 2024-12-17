@@ -4,7 +4,7 @@ Feria Quarta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 [Rank] (rubrica 1960)
 Feria Quarta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria IV post Pentecostes;;Feria;;1;;
 
 [Rule]
@@ -15,6 +15,10 @@ Antiphonas horas
 Hymnus Tertia
 Feria Te Deum
 no93
+
+[Oratio]
+El Espíritu Santo que viene de ti, Señor, ilumine nuestras almas y, según la promesa de tu Hijo, nos dé a conocer toda la verdad. 
+$Qui tecum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. Todos quedaron llenos del Espíritu Santo, aleluya.\nR. Y empezaron a hablar, aleluya./s
@@ -35,7 +39,7 @@ V. Con un repentino rumor el Espíritu Santo vino sobre ellos.
 R. Y llenó sus corazones de inteligencia, aleluya.
 
 [Lectio2]
-Si tratamos estas cosas con el que ama, con el que desea, con el que anhela, con el que anda peregrinando en esta soledad, con el que está sediento y aspira por la fuente de la vida eterna, estos tales a la verdad saben muy bien lo que digo. Mas si hablo con un corazón frío no sabe de qué hablo. Tales eran los judíos que murmuraban entre sí. El Salvador añade: “Aquel a quien mi Padre atrae, viene a mí”. Mas ¿qué significan estas palabras: “Aquel a quien mi Padre atrae", si es el mismo Cristo quien atrae? Si hemos de ser atraídos, seámoslo por aquel a quien un alma amante decía: “Corremos tras el olor de tus perfumes”. Consideremos atentamente, amados hermanos, lo que el Salvador quiere que entendamos y comprendamos en la medida de nuestras fuerzas. El Padre atrae hacia el Hijo a los que creen en el Hijo, en cuanto están persuadidos de que tiene a Dios por Padre. Dios Padre, efectivamente, ha engendrado un Hijo igual a sí; y al hombre que reconoce en su mente que aquel en quien cree es igual al Padre, que posee en su fe el sentimiento de esta verdad y la medita, el Padre le atrae hacia su Hijo.
+Si tratamos estas cosas con el que ama, con el que desea, con el que anhela, con el que anda peregrinando en esta soledad, con el que está sediento y aspira por la fuente de la vida eterna, estos tales a la verdad saben muy bien lo que digo. Mas si hablo con un corazón frío no sabe de qué hablo. Tales eran los judíos que murmuraban entre sí. El Salvador añade: “Aquel a quien mi Padre atrae, viene a mí”. Mas ¿qué significan estas palabras: “Aquel a quien mi Padre atrae”, si es el mismo Cristo quien atrae? Si hemos de ser atraídos, seámoslo por aquel a quien un alma amante decía: “Corremos tras el olor de tus perfumes”. Consideremos atentamente, amados hermanos, lo que el Salvador quiere que entendamos y comprendamos en la medida de nuestras fuerzas. El Padre atrae hacia el Hijo a los que creen en el Hijo, en cuanto están persuadidos de que tiene a Dios por Padre. Dios Padre, efectivamente, ha engendrado un Hijo igual a sí; y al hombre que reconoce en su mente que aquel en quien cree es igual al Padre, que posee en su fe el sentimiento de esta verdad y la medita, el Padre le atrae hacia su Hijo.
 
 [Responsory2]
 R. Id a todo el mundo, y predicad el Evangelio, aleluya. 
@@ -51,10 +55,6 @@ Arrio ha creído que Cristo es una criatura; no le atrae el Padre, porque no con
 
 [Ant 2]
 Yo soy el pan vivo * que ha bajado del cielo, dice el Señor. Aleluya, aleluya.
-
-[Oratio]
-El Espíritu Santo que viene de ti, Señor, ilumine nuestras almas y, según la promesa de tu Hijo, nos dé a conocer toda la verdad. 
-$Qui tecum eiusdem
 
 [Ant 3]
 Yo soy el pan vivo * que ha bajado del cielo: El que coma de este pan vivirá para siempre. Y el pan que yo daré es mi carne para la vida del mundo. Aleluya.

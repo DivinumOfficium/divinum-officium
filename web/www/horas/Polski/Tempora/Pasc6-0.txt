@@ -10,17 +10,16 @@ ex Tempora/Pasc5-4;
 Doxology=Asc
 StJamesRule=John,Rev
 
-[Capitulum Laudes]
-!1 P 4:7-8
-v. Najmilsi: Przetóż roztropni bądźcie i czujcie w modlitwach. A nade wszystko miejcie ustawiczną miłość jedni ku drugim; bo miłość zakrywa wielkość grzechów.
-$Deo gratias
-
 [Ant 1]
 Gdy przyjdzie Pocieszyciel, * którego ja wam poślę Ducha Prawdy, który od Ojca pochodzi, on o mnie świadectwo dawać będzie, alleluja. 
 
 [Oratio]
 Wszechmogący wieczny Boże, spraw, aby wola nasza zawsze była Ci poddaną, a serca nasze szczerze Ci służyły.
 $Per Dominum
+
+[Commemoratio]
+!Wspominamy Oktawę Wniebowstąpienie
+@Tempora/Pasc5-4:Oratio
 
 [Lectio1]
 Początek Pierwszego Listu Świętego Jana Apostoła
@@ -65,6 +64,11 @@ R. Lecz gdy przyjdzie, nauczy was wszelkiéj prawdy, alleluja.
 &Gloria
 R. Lecz gdy przyjdzie, nauczy was wszelkiéj prawdy, alleluja.
 
+[Capitulum Laudes]
+!1 P 4:7-8
+v. Najmilsi: Przetóż roztropni bądźcie i czujcie w modlitwach. A nade wszystko miejcie ustawiczną miłość jedni ku drugim; bo miłość zakrywa wielkość grzechów.
+$Deo gratias
+
 [Capitulum Sexta]
 !1P 4:7-8
 v. Goście radzi przyjmujcie, jedni drugie bez szemrania. Każdy jako wziął łaskę, usługując nią jeden drugiemu, jako dobrzy szafarze rozlicznéj łaski Bożéj.
@@ -75,14 +79,5 @@ $Deo gratias
 v. Jeźli który mówi, jako mowy Boże, jeźli który posługuje, jako z siły, której Bóg dodawa, aby we wszem był Bóg pochwalon przez Jezusa Chrystusa, Pana naszego.
 $Deo gratias
 
-[Versum 2]
-@Tempora/Pasc5-4:Versum 1
-(sed rubrica tridentina)
-@:Versum 1
-
 [Ant 3]
 Tom wam powiedział, * abyście, gdy przyjdzie godzina, wspomnieli na to, żem ja wam powiedział, alleluja.
-
-[Commemoratio]
-!Wspominamy Oktawę Wniebowstąpienie
-@Tempora/Pasc5-4:Oratio

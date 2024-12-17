@@ -5,9 +5,8 @@ Psalmi Dominica
 Antiphonas horas
 12 lectiones
 
-[AntM Matutinum]
-Terra * trémuit et quiévit, † dum exsúrgeret in judício Deus, allelúja.;;29
-Nolíte expavéscere: * Jesum quǽritis Nazarénum, crucifíxum: surréxit, non est hic, allelúja.;;243;244;245
+[Responsory Vespera]
+@Psalterium/Special/Major Special:PaschM Laudes:3-8
 
 [Ant Matutinum]
 @Tempora/Pasc0-0::1
@@ -27,23 +26,27 @@ Nolíte expavéscere: * Jesum quǽritis Nazarénum, crucifíxum: surréxit, non 
 @:AntM Matutinum:2
 @Psalterium/Psalmi/Psalmi matutinum:Paschm0:18-19
 
+[AntM Matutinum]
+Terra * trémuit et quiévit, † dum exsúrgeret in judício Deus, allelúja.;;29
+Nolíte expavéscere: * Jesum quǽritis Nazarénum, crucifíxum: surréxit, non est hic, allelúja.;;243;244;245
+
 [Lectio1]
-@Sancti/01-03::1-6 s/1-5/2-4/ s/1.*Absit. /2 /s
+@Tempora/Nat03::1-6 s/1-5/2-4/ s/1.*Absit. /2 /s
 
 [Lectio2]
-@Sancti/01-03::1 s/6-11/5-7/
-@Sancti/01-03:Lectio1:7
-@Sancti/01-03::2-3
+@Tempora/Nat03::1 s/6-11/5-7/
+@Tempora/Nat03:Lectio1:7
+@Tempora/Nat03::2-3
 
 [Lectio3]
-@Sancti/01-03:Lectio2:s/6-11/8-10/ s/6 .*8/8/s s/.11 .*//s
+@Tempora/Nat03:Lectio2:s/6-11/8-10/ s/6 .*8/8/s s/.11 .*//s
 
 [Responsory3]
 @Tempora/Pasc0-1:Responsory1
 
 [Lectio4]
-@Sancti/01-03:Lectio2:s/6-11/11-13/ s/6 .*11/11/s
-@Sancti/01-03:Lectio3:2-3
+@Tempora/Nat03:Lectio2:s/6-11/11-13/ s/6 .*11/11/s
+@Tempora/Nat03:Lectio3:2-3
 
 [Responsory4]
 @Tempora/Pasc0-1:Responsory2
@@ -128,9 +131,6 @@ $Deo gratias
 
 [Responsory NonaM]
 @:Versum 2
-
-[Responsory Vespera]
-@Psalterium/Special/Major Special:PaschM Laudes:3-8
 
 [Versum 3]
 @:Versum 2

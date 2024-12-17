@@ -3,6 +3,7 @@ S. Urbanis Papæ et Martyris;;Simplex;;1.1;;vide C2
 
 [Rule]
 vide C2;
+OPapaM=Urbánum;
 
 [Oratio]
 Da, quǽsumus, omnipotens Deus: ut qui beati Urbani Martyris tui atque Pontificis solemnia colimus, ejus apud te intercessionibus adjuvemur.
@@ -12,7 +13,9 @@ $Per Dominum.
 Deus, qui Ecclésiam tuam, in apostólicæ petræ soliditáte fundátam, ab infernárum éruis terróre portárum: præsta, quǽsumus; ut, intercedénte beáto Urbáno Mártyre tuo atque Summo Pontífice, in tua veritáte persístens, contínua securitáte muniátur.
 $Per Dominum.
 
+[Oratio] (rubrica divino)
+@Commune/C2:Oratio Gregem
+
 [Lectio93]
-!Pro Urbano I Martyre
 Urbanus Romanus, Alexandro Sevéro imperatóre, doctrina et vitæ sanctitáte multos ad Christi fidem convértit; in illis Valerianum, beátæ Cæcíliæ sponsum, et Tiburtium, Valeriáni fratrem, qui póstea martyrium forti animo subiérunt. Hic de bonis Ecclésiæ attributis scripsit his verbis: Ipsæ res fidelium, quæ Dómino offerúntur, non debent in alios usus quam ecclesiásticos et christianórum fratrum, vel indigéntium, converti; quia vota sunt fidelium, et pretia peccatórum, ac patrimónia páuperum. Sedit annos sex, menses septem, dies quatuor: ac martyrio coronátus, sepúltus est in cœmeterio Prætextati, octavo Kalendas Junii. Ordinatiónibus quinque habitis mense Decembri, creávit presbyteros novem, diaconos quinque, episcopos per diversa loca octo.
 &teDeum

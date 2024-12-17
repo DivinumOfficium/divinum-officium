@@ -1,3 +1,8 @@
+[Lectio1]
+@Tempora/105-1:Lectio1Tridentina
+(sed rubrica tridentina)
+@Tempora/105-2:Lectio1Tridentina
+
 [Lectio1Tridentina]
 De libro secúndo Machabæórum
 !2 Mac 7:24-27
@@ -6,13 +11,13 @@ De libro secúndo Machabæórum
 26 Cum autem multis eam verbis esset hortátus, prómisit suasúram se fílio suo;
 27 ítaque inclináta ad illum, irrídens crudélem tyránnum, ait pátria voce: Fili mi, miserére mei, quæ te in útero novem ménsibus portávi, et lac triénnio dedi et álui, et in ætátem istam perdúxi.
 
-[Lectio1]
-@Tempora/105-1:Lectio1Tridentina
-(sed rubrica tridentina)
-@Tempora/105-2:Lectio1Tridentina
-
 [Responsory1]
 @Tempora/101-2:Responsory1
+
+[Lectio2]
+@Tempora/105-1:Lectio2Tridentina
+(sed rubrica tridentina)
+@Tempora/105-2:Lectio2Tridentina
 
 [Lectio2Tridentina]
 !2 Mac 7:28-33
@@ -23,13 +28,13 @@ De libro secúndo Machabæórum
 32 Nos enim pro peccátis nostris hæc pátimur;
 33 et, si nobis propter increpatiónem et correptiónem Dóminus Deus noster módicum irátus est: sed íterum reconciliábitur servis suis.
 
-[Lectio2]
-@Tempora/105-1:Lectio2Tridentina
-(sed rubrica tridentina)
-@Tempora/105-2:Lectio2Tridentina
-
 [Responsory2]
 @Tempora/101-2:Responsory2
+
+[Lectio3]
+@Tempora/105-1:Lectio3Tridentina
+(sed rubrica tridentina)
+@Tempora/105-2:Lectio3Tridentina
 
 [Lectio3Tridentina]
 !2 Mac 7:34-41
@@ -41,11 +46,6 @@ De libro secúndo Machabæórum
 39 Tunc rex accénsus ira in hunc, super omnes crudélius desǽvit, indígne ferens se derísum.
 40 Et hic ítaque mundus óbiit, per ómnia in Dómino confídens.
 41 Novíssime autem post fílios, et mater consúmpta est.
-
-[Lectio3]
-@Tempora/105-1:Lectio3Tridentina
-(sed rubrica tridentina)
-@Tempora/105-2:Lectio3Tridentina
 
 [Responsory3]
 @Tempora/101-2:Responsory3

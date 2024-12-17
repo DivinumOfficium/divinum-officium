@@ -1,9 +1,6 @@
 [Rank]
 Immaculati Cordis Beatæ Mariæ Virginis;;Duplex II classis;;5.1;;ex C11
 
-[Rank] (rubrica 196)
-Immaculati Cordis Beatæ Mariæ Virginis;;Duplex II classis;;5;;ex C11
-
 [Rule]
 ex C11;
 Gloria
@@ -22,9 +19,6 @@ v. Adeámus cum fidúcia ad thronum grátiæ, ut misericórdiam consequámur, et
 Omnípotens sempitérne Deus, qui in Corde beátæ Maríæ Vírginis dignum Spíritus Sancti habitáculum præparásti: concéde propítius; ut ejúsdem immaculáti Cordis festivitátem devóta mente recoléntes, secúndum cor tuum vívere valeámus.
 $Per Dominum
 
-[Commemoratio Oratio]
-@Sancti/08-22t:Commemoratio Oratio
-
 [Lectio]
 @Sancti/07-16
 
@@ -36,18 +30,18 @@ Mémores erunt nóminis tui in omni generatióne et generatiónem: proptérea p�
 ! Luc 1:46; 1:47
 Magníficat ánima mea Dóminum: et exsultávit spíritus meus in Deo salutári meo. Allelúja.
 
+[GradualeP]
+Allelúja, allelúja.
+!Luc 1:46-47
+Magníficat ánima mea Dóminum: et exsultávit spíritus meus in Deo salutári meo. Allelúja.
+V. Beátam me dicent omnes generatiónes, quia ancíllam húmilem respéxit Deus. Allelúja.
+
 [Tractus]
 !Prov 8:32; 8:35
 Nunc ergo, fílii, audíte me: Beáti qui custódiunt vias meas.
 V. Audíte disciplínam et estóte sapiéntes, et nolíte abjícere eam.
 V. Beátus homo qui audit me, et qui vígilat ad fores meas quotídie, et obsérvat ad postes óstii mei.
 V. Qui me invénerit, invéniet vitam, et háuriet salútem a Dómino.
-
-[GradualeP]
-Allelúja, allelúja.
-!Luc 1:46-47
-Magníficat ánima mea Dóminum: et exsultávit spíritus meus in Deo salutári meo. Allelúja.
-V. Beátam me dicent omnes generatiónes, quia ancíllam húmilem respéxit Deus. Allelúja.
 
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Joánnem
@@ -62,10 +56,6 @@ Exsultávit spíritus meus in Deo salutári meo; quia fecit mihi magna qui poten
 Majestáti tuæ, Dómine, Agnum immaculátum offeréntes, quǽsumus: ut corda nostra ignis ille divínus accéndat, cui Cor beátæ Maríæ Vírginis ineffabíliter inflammávit.
 $Per eundem
 
-[Commemoratio Secreta]
-!Pro Ss. Timotheo, Hippolyto et Symphoriano, Martyribus
-@Commune/C6b:Secreta
-
 [Communio]
 !Joann 19:27
 Dixit Jesus matri suæ: Múlier, ecce fílius tuus: deinde dixit discípulo: Ecce mater tua. Et ex illa hora accépit eam discípulus in sua.
@@ -73,6 +63,3 @@ Dixit Jesus matri suæ: Múlier, ecce fílius tuus: deinde dixit discípulo: Ecc
 [Postcommunio]
 Divínis refécti munéribus te, Dómine, supplíciter exorámus: ut beátæ Maríæ Vírginis intercessióne, cujus immaculáti Cordis solémnia venerándo égimus, a præséntibus perículis liberáti, ætérnæ vitæ gáudia consequámur.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-@Sancti/08-22t:Commemoratio Postcommunio

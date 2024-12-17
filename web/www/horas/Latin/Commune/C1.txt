@@ -85,19 +85,12 @@ R. Et in fines orbis terræ verba eórum.
 [Ant 1]
 Tradent enim vos * in concíliis, et in synagógis suis flagellábunt vos, et ante reges et prǽsides ducémini propter me in testimónium illis, et Géntibus.
 
+[Oratio]
+Quǽsumus, omnípotens Deus, ut beátus N. Apóstolus, cujus prævenímus festivitátem, tuum pro nobis implóret auxílium: ut a nostris reátibus absolúti a cunctis étiam perículis eruámur.
+$Per Dominum
+
 [Invit]
 Regem Apostolórum Dóminum, * Veníte, adorémus.
-
-[HymnusMMatutinumUS]
-Te nunc, Redémptor, quǽsumus,
-Ut ipsórum consórtio
-Jungas precántes sérvulos
-In sempitérna sǽcula.
-
-[HymnusM Matutinum]
-@:Hymnus Matutinum:s/Palmas et hymnos débitos/Laudes canéntes débitas/ s/tyránnum cónterit/triúmphat príncipem/ s/In his triúmphat Fílius,.(.*?Spíritus,)/$1\nExsúltat in his Fílius,/s s/\*.*//s
-@:HymnusMMatutinumUS
-Amen.
 
 [Hymnus Matutinum]
 {:H-AeternaChristi:}v. Ætérna Christi múnera,
@@ -125,6 +118,17 @@ Tibíque Sancte Spíritus,
 Sicut fuit, sit júgiter
 Sæclum per omne glória.
 Amen.
+
+[HymnusM Matutinum]
+@:Hymnus Matutinum:s/Palmas et hymnos débitos/Laudes canéntes débitas/ s/tyránnum cónterit/triúmphat príncipem/ s/In his triúmphat Fílius,.(.*?Spíritus,)/$1\nExsúltat in his Fílius,/s s/\*.*//s
+@:HymnusMMatutinumUS
+Amen.
+
+[HymnusMMatutinumUS]
+Te nunc, Redémptor, quǽsumus,
+Ut ipsórum consórtio
+Jungas precántes sérvulos
+In sempitérna sǽcula.
 
 [Ant Matutinum]
 In omnem terram * exívit sonus eórum, et in fines orbis terræ verba eórum.;;18
@@ -275,10 +279,6 @@ R. Et facta ejus intellexérunt.
 
 [Ant 2]
 Vos qui reliquístis * ómnia, et secúti estis me, céntuplum accipiétis, et vitam ætérnam possidébitis.
-
-[Oratio]
-Quǽsumus, omnípotens Deus, ut beátus N. Apóstolus, cujus prævenímus festivitátem, tuum pro nobis implóret auxílium: ut a nostris reátibus absolúti a cunctis étiam perículis eruámur.
-$Per Dominum
 
 [Lectio Prima]
 !Act 5:41

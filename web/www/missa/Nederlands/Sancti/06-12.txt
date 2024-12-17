@@ -8,6 +8,10 @@ Gloria
 [Introitus]
 @Commune/C4c
 
+[Oratio]
+God, die vrede geeft en liefde bemint, Gij hebt uw heilige belijder Johannes gesierd met een wonderbare gave om twistenden te verzoenen. Wil ons om zijn verdiensten en op zijn voorspraak in uw liefde bevestigen en laat geen bekoring ons van U scheiden.
+$Per Dominum
+
 [Lectio]
 @Commune/C5
 
@@ -20,27 +24,11 @@ Gloria
 [Offertorium]
 @Commune/C2c
 
-[Communio]
-@Commune/C4d
-
-[Oratio]
-God, die vrede geeft en liefde bemint, Gij hebt uw heilige belijder Johannes gesierd met een wonderbare gave om twistenden te verzoenen. Wil ons om zijn verdiensten en op zijn voorspraak in uw liefde bevestigen en laat geen bekoring ons van U scheiden.
-$Per Dominum
-
 [Secreta]
 @Commune/C5
 
+[Communio]
+@Commune/C4d
+
 [Postcommunio]
 @Commune/C5
-
-[Commemoratio Oratio]
-!Pro SS. Martyribus
-@Sancti/06-12o:Oratio
-
-[Commemoratio Secreta]
-!Pro SS. Martyribus
-@Sancti/06-12o:Secreta
-
-[Commemoratio Postcommunio]
-!Pro SS. Martyribus
-@Sancti/06-12o:Postcommunio

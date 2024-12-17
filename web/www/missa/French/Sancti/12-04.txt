@@ -1,16 +1,13 @@
 [Rank]
 S. Petri Chrysologi Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 
-[RankNewcal]
-S. Petri Chrysologi Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex optional;;2;;vide C4a
-
-[Name]
-Petre Chrysologe
-
 [Rule]
 vide C4a;
 Gloria
 CredoDA
+
+[Name]
+Petre Chrysologe
 
 [Introitus]
 !Eccli 15:5
@@ -56,19 +53,4 @@ Seigneur, vous m’avez remis cinq talents ; voici que j’en ai gagné cinq aut
 
 [Postcommunio]
 Afin, Seigneur, que votre saint sacrifice nous procure le salut, que le bienheureux Pierre, votre Pontife et votre admirable Docteur intercède pour nous.
-$Per Dominum
-
-[Commemoratio Oratio]
-!Commemoratio S. Barbaræ Virginis et Martyris
-Ô Dieu, qui, entre autres merveilles de votre puissance, avez fait remporter la victoire du martyre même par le sexe le plus faible ; faites, dans votre bonté, qu’honorant la naissance au ciel de la Bienheureuse Barbe, votre Vierge et Martyre, nous tendions vers vous par l’imitation de ses exemples.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Commemoratio S. Barbaræ Virginis et Martyris
-Recevez, Seigneur, les dons que nous vous présentons en la fête de la Bienheureuse Barbe, votre Vierge et Martyre ; en la protection de qui nous avons confiance pour être délivrés.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Commemoratio S. Barbaræ Virginis et Martyris
-Qu’ils nous soient un secours efficace, ô Seigneur, les mystères auxquels nous avons participé et que la bienheureuse Barbe, votre Vierge et Martyre, intercédant pour nous, ils nous fassent jouir d’une protection constante.
 $Per Dominum

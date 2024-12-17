@@ -1,16 +1,9 @@
 [Rank]
 Die VI infra octavam Paschæ;;Semiduplex I class;;6;;ex Pasc0-0
 
-[Rule]
-ex Pasc0-0;
-1 nocturn;
-Omit Hymnus Preces Suffragium;
-Minores sine Antiphona;
-Capitulum Versum 2;
-Psalmi Dominica;
-
-[Ant Matutinum]
-@Tempora/Pasc0-2
+[Oratio]
+Dieu tout-puissant et éternel, qui avez fait du mystère pascal le pacte de la réconciliation de l’humanité, accordez à nos âmes la grâce d’imiter ce que nous célébrons par notre profession de foi.
+$Per Dominum
 
 [Lectio1]
 Lecture du saint Évangile selon Saint Matthieu
@@ -44,10 +37,6 @@ Leur enseignant à observer tout ce que je vous ai commandé. L’ordre prescrit
 
 [Ant 2]
 Les onze disciples, voyant le Seigneur en Galilée, L’adorèrent, alléluia.
-
-[Oratio]
-Dieu tout-puissant et éternel, qui avez fait du mystère pascal le pacte de la réconciliation de l’humanité, accordez à nos âmes la grâce d’imiter ce que nous célébrons par notre profession de foi.
-$Per Dominum
 
 [Ant 3]
 Toute puissance m’a été donnée dans le ciel et sur la terre, alléluia.

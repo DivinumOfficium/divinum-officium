@@ -1,11 +1,8 @@
 [Rank]
-In Commemoratione Beatae Mariae Virgine de Monte Carmelo.;;Duplex majus;;4;;ex C11
+Beatae Mariae Virgine de Monte Carmelo.;;Duplex majus;;4;;ex C11
 
 [Rank] (rubrica 196)
 In Commemoratione Beatae Mariae Virgine de Monte Carmelo.;;Simplex;;1.1;;vide C11
-
-[Rank] (rubrica innovata)
-In Commemoratione Beatae Mariae Virgine de Monte Carmelo.;;Duplex optional;;2;;ex C11
 
 [Oratio]
 O Dio, che hai dato all'ordine del Carmelo l'onore insigne di fregiarsi del nome della tua beatissima sempre Vergine e Madre Maria: concedi benigno, che, come oggi ne celebriamo la Commemorazione con solenne ufficio, così muniti della sua protezione, meritiamo di giungere ai gaudi eterni:
@@ -25,10 +22,7 @@ Il santo giorno di Pentecoste  numerosi uomini (a quanto si racconta), che si er
 &teDeum
 
 [Responsory7]
-R. Sei invero felice, o santa Vergine Maria, e degnissima d,ogni lode, 
-* Poiché da te è sorto il sole di giustizia, Cristo l'Iddio nostro.
-V. Prega per il popolo, intervieni per il clero, intercedi per il ceto femminile religioso : sentano il tuo soccorso tutti quelli che celebrano la tua solenne Commemorazione. 
-R. Poiché da te è sorto il sole di giustizia, Cristo l'Iddio nostro.
+@Commune/C11::s/festa/commemorazione/
 
 [Ant 2]
 Il tuo capo * è come il Carmelo, e le chiome del tuo capo come la porpora di Re legata in trecce, alleluia.

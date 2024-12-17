@@ -1,21 +1,16 @@
 [Rank]
-In Dedicatione Basilicæ Ss. Salvatoris;;Duplex II. classis;;5;;ex C8
+In Dedicatione Archibasilicæ Ss. Salvatoris;;Duplex II. classis;;5;;ex C8
 
 [Rank] (rubrica tridentina)
 In Dedicatione Basilicæ Ss. Salvatoris;;Duplex;;3;;ex C8
+(sed rubrica 1906)
+In Dedicatione Archibasilicæ Ss. Salvatoris;;Duplex majus;;4;;ex C8
 
 [Rule]
 ex C8;
 Domini
 9 lectiones
 Festum Domini
-
-[Commemoratio]
-!Commemoratio S. Theodori Martyris
-@Commune/C2:Oratio proper
-$Oremus
-v. Deus, qui nos beáti Theodóri Mártyris tui confessióne gloriósa circúmdas et prótegis: præsta nobis ex ejus imitatióne profícere, et oratióne fulcíri.
-$Per Dominum
 
 [Lectio1]
 De libro Apocalýpsis beáti Joánnis Apóstoli
@@ -50,11 +45,6 @@ Quod, si beátus Silvéster póstea in consecratióne altáris Príncipis Aposto
 
 [Lectio6a]
 Eándem ecclésiam incéndiis, vastatiónibus, terræ ínsuper mótibus disjéctam eversámque, ac sédula summórum Pontíficum cura reparátam, nova póstmodum molitióne restitútam, Benedíctus décimus tértius, Póntifex máximus, órdinis Prædicatórum, die vigésima octáva aprílis anni millésimi septingentésimi vigésimi sexti, ritu solémni consecrávit, ejúsque celebritátis memóriam hac die recoléndam státuit. Quod autem Pius nonus perficiéndum censúerat, Leo décimus tértius cellam máximam, vetustáte fatiscéntem, ingénti molitióne producéndam laxandámque curávit; vetus musívum, multis jam ántea pártibus instaurátum, ad antíquum exémplar restítui et in novam ábsidem, ópere cultúque magnífico exornátam, transférri; aulam transvérsam, laqueári et contignatióne reféctis, expolíri jussit, anno millésimo octingentésimo octuagésimo quarto; sacrário, æde canonicórum, perpetuáque ad baptistérium Constantiniánum pórticu adjéctis.
-
-[Lectio93]
-!Commemoratio S. Theodori
-Theodórus, miles christiánus, Maximiáno imperatóre, quod idolórum fanum incendísset, comprehénsus, cum a præfécto legiónis pœna ei remitterétur, si pœ́nitens facti christiánam fidem exsecrarétur, constánter in fídei confessióne persevérans, missus est in cárcerem. Ubi, úngulis excarnificátus, dum costæ nudaréntur, lætus canébat: Benedícam Dóminum in omni témpore. Quare, in ardéntem rogum injéctus, in oratióne et divínis láudibus ánimam Christo réddidit, quinto Idus Novémbris. Cujus corpus Eusébia matróna, síndone involútum, sepelívit in suo prǽdio.
-&teDeum
 
 [Commemoratio 5]
 !Commemoratio Octavæ Omnium Sanctorum

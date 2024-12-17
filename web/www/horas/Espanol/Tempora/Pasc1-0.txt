@@ -4,21 +4,12 @@ Dominica in Albis in Octava Paschæ;;Duplex majus I. classis;;7;;
 [Rank] (rubrica 1960)
 Dominica in Albis in Octava Paschæ;;Duplex I classis;;6;;
 
-[Rule]
-9 Lectiones
-Duplex
-Una Antiphona
-Omit Commemoratio
-
 [Ant 1]
 Al anochecer * de aquel día, el primero de la semana, estaban los discípulos en una casa con las puertas cerradas; y entró Jesús, se puso en medio y les dijo: Paz a vosotros. Aleluya.
 
 [Oratio]
 Dios todopoderoso, concédenos, con tu gracia, conservar en nuestras vidas el espíritu de estas fiestas pascuales que hemos celebrado.
 $Per Dominum
-
-[Invit]
-@Tempora/Pasc0-0
 
 [Lectio1]
 De la Epístola de San Pablo a los Colosenses
@@ -29,10 +20,7 @@ De la Epístola de San Pablo a los Colosenses
 4 Cuando se manifieste Cristo, vuestra vida, entonces también os manifestaréis gloriosos con Él. 
 5 Mortificad, pues, vuestros miembros terrenos, la fornicación, la impureza, la liviandad, la concupiscencia y la avaricia, que es una especie de idolatría, 
 6 por las cuales viene la cólera de Dios, 
-7 y en las que también vosotros anduvisteis un tiempo, cuando vivíais en ellos. 
-
-[Responsory1]
-@Tempora/Pasc0-0::s/&Gloria.*//s
+7 y en las que también vosotros anduvisteis un tiempo, cuando vivíais en ellos.
 
 [Lectio2]
 !Col 3:8-13
@@ -54,48 +42,30 @@ R. Venid, y ved, aleluya, aleluya.
 14 Pero por encima de todo esto, vestíos de la caridad, que es vínculo de la perfección. 
 15 Y la paz de Cristo reine en vuestros corazones, pues a ella habéis sido llamados en un solo cuerpo. Sed agradecidos. 
 16 La palabra de Cristo habite en vosotros abundantemente, enseñándoos y exhortándoos unos a otros con toda sabiduría, con salmos, himnos y cánticos espirituales, cantando y dando gracias a Dios en vuestros corazones. 
-17 Y todo cuanto hacéis de palabra o de obra, hacedlo todo en el nombre del Señor Jesús, dando gracias a Dios Padre por Él. 
-
-[Responsory3]
-@Tempora/Pasc0-0:Responsory2
+17 Y todo cuanto hacéis de palabra o de obra, hacedlo todo en el nombre del Señor Jesús, dando gracias a Dios Padre por Él.
 
 [Lectio4]
 Sermón de San Agustín, Obispo.
 !Sermón 1 en la Octava de Pascua, o sea, el 157 de Tiempo.
 La solemnidad de la Pascua termina con la fiesta de hoy y los neófitos mudan sus vestidos, pero de forma que la blancura del hábito que deponen, la conserven en el corazón. En estas fiestas pascuales, tiempo de indulgencia y perdón, nuestro primer deber consiste en celebrarlas tan santamente, que la mayor libertad concedida al cuerpo no sea un obstáculo a la pureza del alma, sino que absteniéndonos de toda intemperancia y lascivia, procuremos una sobria templanza y una santa pureza, para que obtengamos con la pureza del alma lo que no adquirimos durante estos días con la abstinencia corporal.
 
-[Responsory4]
-@Tempora/Pasc0-1:Responsory1
-
 [Lectio5]
 A todos mis encomendados me dirijo. Terminando hoy la solemnidad de Pascua, me dirijo sobre todo a vosotros, noveles retoños de santidad, regenerados con el agua y el Espírítu Santo. Renuevos piadosos, ejército novel, flores de nuestro honor y frutos de nuestra labor, gozo y corona mía, cuantos permanecéis en el Señor. Os hablo con las palabras del Apóstol: “He aquí que ha pasado ya la noche, y que se acerca el día; dejad, por lo mismo, las obras de las tinieblas, y revestíos con las armas de la luz. Andad honestamente, como se hace durante el día, no en comilonas y borracheras, no en deshonestidades y disoluciones, ni tampoco en contiendas y envidias; mas revestíos de nuestro Señor Jesucristo”.
 
-[Responsory5]
-@Tempora/Pasc0-1:Responsory2
-
 [Lectio6]
-"Pero tenemos todavía, dice San Pedro, un testimonio firme, el de los Profetas, al cual hacéis bien en mirar atentamente, como a una antorcha que luce en un lugar oscuro, hasta tanto que amanezca el día, y la estrella de la mañana nazca en vuestros corazones”. “Ceñid, por consiguiente, vuestras cinturas y tened en vuestras manos las luces ya encendidas. Sed semejantes a los criados que aguardan a su amo cuando vuelve de las bodas”. Llegan esos días que dice el Señor: “Dentro de un poco ya no me veréis, y de ahí a otro poco me veréis”. Esta es la hora, de la que dijo: “Vosotros estaréis tristes, y los del siglo se alegrarán”. La presente vida está llena de tentaciones: “Mas de nuevo, dice, os veré, y se alegrará vuestro corazón, y nadie os quitará este gozo".
-
-[Responsory6]
-@Tempora/Pasc0-2:Responsory1
+“Pero tenemos todavía, dice San Pedro, un testimonio firme, el de los Profetas, al cual hacéis bien en mirar atentamente, como a una antorcha que luce en un lugar oscuro, hasta tanto que amanezca el día, y la estrella de la mañana nazca en vuestros corazones”. “Ceñid, por consiguiente, vuestras cinturas y tened en vuestras manos las luces ya encendidas. Sed semejantes a los criados que aguardan a su amo cuando vuelve de las bodas”. Llegan esos días que dice el Señor: “Dentro de un poco ya no me veréis, y de ahí a otro poco me veréis”. Esta es la hora, de la que dijo: “Vosotros estaréis tristes, y los del siglo se alegrarán”. La presente vida está llena de tentaciones: “Mas de nuevo, dice, os veré, y se alegrará vuestro corazón, y nadie os quitará este gozo”.
 
 [Lectio7]
 Lección del Santo Evangelio según San Juan.
 !Jn 20:19-31
-En aquel tiempo: En aquel día, primero de la semana, siendo ya tarde, y estando cerradas las puertas de la casa donde se hallaban reunidos los discípulos por miedo a lo judíos, vino Jesús, y apareciéndose en medio de ellos, les dirigió estas palabras: "La paz sea con vosotros". Y lo que sigue.
+En aquel tiempo: En aquel día, primero de la semana, siendo ya tarde, y estando cerradas las puertas de la casa donde se hallaban reunidos los discípulos por miedo a lo judíos, vino Jesús, y apareciéndose en medio de ellos, les dirigió estas palabras: “La paz sea con vosotros”. Y lo que sigue.
 _
 Homilía de San Gregorio, Papa.
 !Homilía 26 sobre los Evangelios.
 Primera cuestión en este Evangelio: ¿de qué modo fue un verdadero cuerpo del Señor después de la resurrección, y cómo pudo presentarse a los discípulos estando las puertas cerradas? Si las obras divinas se comprendieran con la razón, no serían admirables, ni la fe tendría mérito si la razón explicase el misterio. Estas obras de nuestro Redentor, completamente incomprensibles, las hemos de comparar con otras que realizó, para aumentar nuestra fe en estas cosas admirables, al considerar otras mucho más maravillosas. Aquel cuerpo del Señor que se presentó a sus discípulos con las puertas cerradas, es el mismo que en su natividad vino al mundo sin abrir el seno de la Virgen. ¿Qué tiene de admirable que entrase estando las puertas cerradas, el que después de su resurrección había de reinar eternamente, si viniendo para morir salió del seno cerrado de la Virgen?
 
-[Responsory7]
-@Tempora/Pasc0-2:Responsory2
-
 [Lectio8]
 Mas porque la fe de los que le miraban dudaba de aquel cuerpo que contemplaban, les mostró al instante las manos y el costado, les ofreció, para que la tocaran, aquella carne que entró con las puertas cerradas. Les dio prueba de dos cosas admirables, y que parecen contrarias: que siendo su cuerpo después de la resurrección incorruptible, con todo se podía palpar, siendo así que todo lo palpable está sujeto a corrupción, y no es palpable lo que no se corrompe. Y no obstante, de una manera admirable e inestimable, nuestro Redentor después de su resurrección mostró su cuerpo incorruptible y palpable. Lo cual realizó, a fin de que mostrándolo incorruptible nos invitara al premio, y ofreciéndolo palpable nos confirmase en la fe. Lo mostró incorruptible y palpable, para enseñarnos que su cuerpo después de la resurrección era de la misma naturaleza que antes, pero con una gloria mucho mayor.
-
-[Responsory8]
-@Tempora/Pasc0-5:Responsory1
 
 [Lectio9]
 Les dijo: La paz con vosotros. Como me envió mi Padre,  Yo os envío a vosotros. Esto es, así como mi Padre, Dios, me envió a mí que soy Dios; así Yo Hombre, os envío a vosotros hombres. El Padre envió al Hijo, aquel mismo que quiso se encarnase para la redención del linaje humano. Quiso que se encarnase para padecer, y con todo amaba a aquel Hijo que quiso sufriese la pasión. Así también el Señor envió a los Apóstoles, no a los goces del mundo, sino a lo mismo que Él fue enviado: A la pasión y a los sufrimientos. Así como el Hijo, amado por el Padre es enviado a los sufrimientos, también los discípulos son amados por el Señor, y son enviados al mundo para padecer. Así como me envió el Padre, así Yo os envío. Es decir, que al enviaros en medio de los escándalos de los perseguidores, os amo con la caridad con la cual me ama el Padre, quien me envió para los sufrimientos de la pasión.
@@ -105,9 +75,6 @@ Les dijo: La paz con vosotros. Como me envió mi Padre,  Yo os envío a vosotros
 !1 Jn 5:4
 v. Hermanos: Todo el que ha nacido de Dios vence al mundo. Y ésta es la victoria que vence al mundo: nuestra fe.
 $Deo gratias
-
-[Ant 2]
-@:Ant 1
 
 [Capitulum Sexta]
 !1 Jn 5:5-6

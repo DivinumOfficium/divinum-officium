@@ -4,35 +4,13 @@ Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;5;;ex Tempora/Pasc5-4
 [Rank] (rubrica 1960)
 Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;6;;vide Tempora/Pasc5-4
 
-[Rule]
-ex Tempora/Pasc5-4;
-Psalmi Dominica
-Antiphonas Horas
-9 Lectiones
-Doxology=Asc
-Feria Te Deum
-No suffragium
-No93
-
-[Rule] (rubrica 1960)
-Feria Te Deum
-Doxology=Asc
-
-[Oratio]
-@Tempora/Pasc6-0
-
 [LectioJudae1]
 Inicio de la Epístola Católica de S. Judas Tadeo, Apóstol
 !Judas 1:1-4
 1 Judas, siervo de Jesucristo y hermano de Santiago, a los amados en Dios Padre, llamados y conservados en Jesucristo; 
 2 la misericordia, la paz y la caridad abunden más y más en vosotros. 
 3 Carísimos, deseando vivamente escribiros acerca de nuestra común salud, he sentido la necesidad de hacerlo, exhortándoos a combatir por la fe, que, una vez para siempre, ha sido dada a los santos. 
-4 Porque disimuladamente se han introducido algunos impíos, ya desde antiguo señalados para esta condenación, que convierten en lascivia la gracia de nuestro Dios y niegan al único Dueño y Señor nuestro, Jesucristo. 
-
-[Lectio1]
-@:LectioJudae1
-(sed rubrica 1960)
-@:Lectio7
+4 Porque disimuladamente se han introducido algunos impíos, ya desde antiguo señalados para esta condenación, que convierten en lascivia la gracia de nuestro Dios y niegan al único Dueño y Señor nuestro, Jesucristo.
 
 [Responsory1] (rubrica 1960)
 R. Yo rogaré al Padre, y os enviará otro Consolador, 
@@ -45,12 +23,7 @@ R. Para que permanezca para siempre con vosotros el Espíritu de verdad, aleluya
 5 Quiero recordaros a vosotros que ya habéis conocido todas las cosas, cómo el Señor, después de salvar de Egipto a su pueblo, hizo luego perecer a los incrédulos; 
 6 y cómo a los ángeles que no guardaron su dignidad y abandonaron su propio domicilio, los tiene reservados en perpetua prisión, en el orco, para el juicio del gran día. 
 7 Cómo Sodoma y Gomorra y las ciudades vecinas, que, de igual modo que ellas, habían fornicado, yéndose tras los vicios contra naturaleza, fueron puestas para escarmiento, sufriendo la pena del fuego perdurable. 
-8 También éstos, dejándose llevar de sus delirios, manchan su carne, menosprecian la autoridad y blasfeman de las dignidades. 
-
-[Lectio2]
-@:LectioJudae2
-(sed rubrica 1960)
-@:Lectio8
+8 También éstos, dejándose llevar de sus delirios, manchan su carne, menosprecian la autoridad y blasfeman de las dignidades.
 
 [Responsory2] (rubrica 1960)
 R. Si Yo no me fuere, el Consolador no vendrá a vosotros; mas si me fuere, os le enviaré. 
@@ -66,25 +39,17 @@ R. Y cuando Él viniere, os enseñará toda verdad, aleluya.
 10 Pero éstos blasfeman de cuanto ignoran; y aun en lo que naturalmente, como brutos irracionales, conocen, en eso mismo se corrompen. 
 11 ¡Ay de ellos, que han seguido la senda de Caín y se dejaron seducir del error de Balam por la recompensa y perecieron en la rebelión de Coré! 
 12 Estos son deshonra de vuestros ágapes; banquetean con vosotros sin vergüenza, apacentándose a sí mismos; son nubes sin agua, arrastradas por los vientos; árboles tardíos sin fruto, dos veces muertos, desarraigados; 
-13 olas bravas del mar, que arrojan la espuma de sus impurezas; astros errantes, a los cuales está reservado el orco tenebroso para siempre. 
-
-[Lectio3]
-@:LectioJudae3
-(sed rubrica 1960)
-@:Lectio9
-
-[Responsory3]
-@Tempora/Pasc5-4:Responsory3
+13 olas bravas del mar, que arrojan la espuma de sus impurezas; astros errantes, a los cuales está reservado el orco tenebroso para siempre.
 
 [Lectio4]
 Del Tratado de San Agustín, Obispo, sobre el Símbolo, dirigido a los catecúmenos. 
 !Libro 4, cap. 1, tom. 9.
 Habiéndoos la Santa Madre Iglesia recibido en su seno por medio de la señal sacratísima de la cruz, para daros a luz con suma alegría, junto con vuestros hermanos, como futura prole de tan grande madre; mientras espera el momento de haceros partícipes de esta luz verdadera mediante el baño saludable del bautismo, os nutre gozosa en su seno con alimentos adecuados, para conduciros, llenos de santa alegría, hasta el día en que os dará espiritualmente a luz; ya que no reza para ella la sentencia en virtud de la cual Eva daría a luz con tristeza y dolor a sus hijos, los cuales, por su parte, estarían también destinados a llorar antes que a gozar. Ella, en efecto, desató lo que Eva había atado; mediante la obediencia, restituyó la vida a los que Eva, por su desobediencia, había conducido a la muerte. Todas las ceremonias misteriosas, que han sido practicadas y se practican aún sobre vosotros mediante el ministerio de los siervos de Dios— exorcismos, plegarias, cánticos espirituales, insuflaciones, el cilicio, las inclinaciones de cabeza, las postraciones, y el mismo temor que es necesario desear para asegurar la salvación,— son como los alimentos que usa esta madre para nutrirnos en su seno, a fin de que regenerados en el bautismo, os ofrezca gozosos a Cristo.
 
-[Lectio5]
+[Lectio5_]
 Habéis recibido también el símbolo, como protección de la que os ha de dar a luz contra el veneno de la serpiente. En el Apocalipsis del Apóstol San Juan leemos que el dragón estaba ante una mujer que había de ser madre, a fin de devorar la prole apenas hubiese sido dada a luz. Ninguno de nosotros ignora que este dragón era el diablo, y que la mujer representaba la Virgen María, la cual, siendo virgen, dio a luz a nuestro Redentor virgen, y que además en su persona representaba la Iglesia. Pues así como engendrando a su hijo quedó virgen, así la Iglesia engendra en todos tiempos a sus miembros sin perder su virginidad. Con el auxilio del Señor hemos procurado exponer los artículos del augustísimo símbolo, para grabar en vuestros corazones el contenido de cada uno de ellos. Vuestros corazones están ya preparados, porque el enemigo ha sido arrojado de ellos.
 
-[Lectio6]
+[Lectio6_]
 Vosotros habéis profesado la renuncia de vuestros enemigos; y en esta renuncia habéis dicho, no a los hombres sino a Dios y a los Ángeles que la han registrado: “Renuncio”. Renunciad, por lo mismo, no sólo con las palabras, sino también con las costumbres; no sólo con la lengua, sino con la conducta; no sólo con el movimiento de los labios, sino más bien con el testimonio de las obras. Sabed que habéis emprendido una lucha con un enemigo astuto, viejo, y que parece a primera vista como dormido. Que él, después de vuestra renuncia, no halle ya sus obras en vosotros, y que no tenga ya otra vez el derecho de reduciros a su esclavitud. Tú, oh cristiano, te delatas y te condenas, cuando haces una cosa y profesas lo contrario. Teniendo el nombre de fiel, demuestras otra cosa en tus obras, no guardando la fe a tu promesa, como tiene lugar cuando después de haber entrado en la iglesia para orar, al cabo de un momento te mezclas atrevidamente y clamas con los histriones en los espectáculos. ¿Qué hay en ti de común con las pompas del diablo, a las que has ya renunciado?
 
 [Lectio7]
@@ -94,29 +59,13 @@ En aquel tiempo: Dijo Jesús a sus discípulos: Si me amáis, guardad mis precep
 _
 Homilía de San Agustín, Obispo.
 !Tratado 74 acerca de San Juan, hacia el fin.
-Por medio de las palabras: “Rogaré al Padre”, y os dará otro Paráclito”, muestra que Él es también Paráclito. Paráclito en latín significa abogado. De Cristo está escrito: Tenemos por abogado delante del Padre a Jesucristo justo. Al decir que el mundo no puede recibir al Espíritu Santo, lo dijo en el mismo sentido en que está escrito: "La prudencia de la carne es enemiga de Dios", ya que no está conforme a la ley de Dios, ni puede estarlo; como si dijésemos: la injusticia no puede ser la justicia. Con la palabra “mundo” Él designa aquellos que aman el mundo, amor que no procede  del Padre. Por lo mismo, el amor de este mundo, que deseamos disminuya y desaparezca de entre nosotros, es contrario al amor de Dios, el cual ha sido comunicado a nuestros corazones por el Espíritu Santo que nos ha sido dado.
+Por medio de las palabras: “Rogaré al Padre”, y os dará otro Paráclito”, muestra que Él es también Paráclito. Paráclito en latín significa abogado. De Cristo está escrito: Tenemos por abogado delante del Padre a Jesucristo justo. Al decir que el mundo no puede recibir al Espíritu Santo, lo dijo en el mismo sentido en que está escrito: “La prudencia de la carne es enemiga de Dios”, ya que no está conforme a la ley de Dios, ni puede estarlo; como si dijésemos: la injusticia no puede ser la justicia. Con la palabra “mundo” Él designa aquellos que aman el mundo, amor que no procede  del Padre. Por lo mismo, el amor de este mundo, que deseamos disminuya y desaparezca de entre nosotros, es contrario al amor de Dios, el cual ha sido comunicado a nuestros corazones por el Espíritu Santo que nos ha sido dado.
 
 [Lectio8]
 De consiguiente, “el mundo no le puede recibir, porque no le ve ni le conoce”; ya que el mundo no tiene ojos espirituales, los únicos con que puede ser visto el Espíritu Santo. El Espíritu Santo no puede ser visto sino de un modo invisible. “Mas vosotros, dice, le conoceréis, porque permanecerá en vosotros y estará en vosotros”. Estará en ellos para morar, no morará en ellos para estar allí, supuesto que primero es estar en algún lugar que morar en él. Pero a fin de que no pensaran que las palabras: “Permanecerá en vosotros”, significan una permanencia visible, como la de un huésped entre los hombres, explicó el sentido de esta expresión “Permanecerá en vosotros” al decir: “Estará en vosotros”.
 
-[Responsory8]
-@Tempora/Pasc6-0
+[Lectio9_1]
+Se ve, por lo mismo, el Espíritu Santo, de una manera invisible. Ni podemos conocerle si no está en nosotros; de un modo parecido conocemos en nosotros nuestra conciencia. Nosotros vemos el rostro de otra persona, pero el nuestro no podemos verlo. Por el contrario vemos nuestra conciencia, y no vemos la de otro. Pero la conciencia nuestra no puede existir sino en nosotros; mas el Espíritu Santo puede existir sin nosotros. Se nos da, para que esté también en nosotros. Pero si Él no está en nosotros es imposible que lo veamos y conozcamos, tal como debe ser visto y conocido. 
 
-[Lectio9]
-Se ve, por lo mismo, el Espíritu Santo, de una manera invisible. Ni podemos conocerle si no está en nosotros; de un modo parecido conocemos en nosotros nuestra conciencia. Nosotros vemos el rostro de otra persona, pero el nuestro no podemos verlo. Por el contrario vemos nuestra conciencia, y no vemos la de otro. Pero la conciencia nuestra no puede existir sino en nosotros; mas el Espíritu Santo puede existir sin nosotros. Se nos da, para que esté también en nosotros. Pero si Él no está en nosotros es imposible que lo veamos y conozcamos, tal como debe ser visto y conocido.~
-(deinde dicitur)
+[Lectio9_2]
 Después de haber prometido el Espíritu Santo, el Señor no queriendo que pudiésemos creer que lo enviaba para que le sustituyese, y que Él así cesaría de estar con sus discípulos, añade: No os dejaré huérfanos, volveré a vosotros. Aunque el Hijo de Dios nos hizo hijos adoptivos de su Padre, y quiso que tuviésemos como Padre por la gracia al que es su Padre por naturaleza, con todo, Él mismo nos muestra en cierto modo un afecto paternal, cuando dice: No os dejaré huérfanos.
-(sed rubrica 1570 omittitur)
-&teDeum
-
-[Versum 2]
-@Tempora/Pasc6-0
-
-[Versum 2](rubrica 1960)
-@Tempora/Pasc5-4:Versum 2
-
-[Ant 2]
-@Tempora/Pasc6-0
-
-[Ant 2](rubrica 1960)
-@Tempora/Pasc5-4:Ant 2

@@ -1,25 +1,7 @@
 [Rank]
 S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4b
 
-[Rank] (rubrica 196)
-S. Damasi Papae et Confessoris;;Duplex;;3;;vide C4b
-
-[Rank] (rubrica innovata)
-S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4b
-
 [Rule]
 OPapaC=Damasus;
 vide C4;
 Gloria
-
-[Commemoratio Oratio]
-!Para la Octava de la Inmaculada Concepción.
-@Sancti/12-08:Oratio
-
-[Commemoratio Secreta]
-!Para la Octava de la Inmaculada Concepción
-@Sancti/12-08:Secreta
-
-[Commemoratio Postcommunio]
-!Para la Octava de la Inmaculada Concepción
-@Sancti/12-08:Postcommunio

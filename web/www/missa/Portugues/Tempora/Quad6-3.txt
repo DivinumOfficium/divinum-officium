@@ -1,9 +1,6 @@
 [Rank]
 Feria Quarta Majoris Hebdomadæ;;Feria privilegiata;;6.9
 
-[Rank] (rubrica 1955 aut rubrica 1960)
-Feria Quarta Hebdomadæ Sanctæ;;Feria privilegiata;;6
-
 [Rule]
 no Gloria
 Suffragium=Ecclesiæ,Papa;;
@@ -19,10 +16,6 @@ v. Que ao ser pronunciado o nome de Jesus se dobrem todos os joelhos dos que est
 v. Ouvi, Senhor, a minha oração; e chegue até Vós o meu clamor.
 v. Que ao ser pronunciado o nome de Jesus se dobrem todos os joelhos dos que estão no céu, na terra e nos infernos; pois o Senhor fez-se obediente até à morte, e morte na cruz. Eis porque o Senhor Jesus está na glória de Deus, seu Pai.
 
-[Oratio]
-Concedei-nos, ó Deus omnipotente, Vos suplicamos, que, estando nós incessantemente aflitos por causa dos males que produzem os nossos pecados, deles sejamos livres pela paixão do vosso Filho Unigénito.
-$Qui tecum
-
 [LectioL1]
 Lição Lição do Profeta Isaías.
 !Is 63:1-7
@@ -37,6 +30,10 @@ V. Salvai-me, Senhor, porquanto as águas da desgraça inundaram a minha alma. C
 [OratioL1]
 Ó Deus, que quisestes que o vosso Filho sofresse o suplício da Cruz por nós, a fim de nos livrar do jugo inimigo, dignai-Vos conceder-nos a nós, que vossos servos, a graça de tomarmos parte na ressurreição.
 $Per eundem
+
+[Oratio]
+Concedei-nos, ó Deus omnipotente, Vos suplicamos, que, estando nós incessantemente aflitos por causa dos males que produzem os nossos pecados, deles sejamos livres pela paixão do vosso Filho Unigénito.
+$Qui tecum
 
 [Lectio]
 Lição do Profeta Isaías.
@@ -56,8 +53,7 @@ V. Erguei-Vos, Senhor, e compadecei-Vos de Sião, pois é chegado o tempo de ter
 (rubrica 1955 aut rubrica 1960 dicitur)
 @Tempora/Quad6-0r:Munda Cor Passionis
 _
-v.~
-(deinde dicuntur semper)
+v. (deinde dicuntur semper)
 Paixão de N. S. Jesus Cristo, segundo S. Lucas.
 (rubrica 1955 aut rubrica 1960 dicitur)
 !Luc 22:39-71; 23:1-53
@@ -76,8 +72,7 @@ v. Ó omnipotente Deus, assim como purificastes os lábios do Profeta Isaías co
 D. Dignai-Vos, Senhor, abençoar-me.
 S. Que o Senhor esteja no vosso coração e nos vossos lábios, para que possa digna e devidamente anunciar seu Evangelho. Amen. Em nome do Pai, e do Filho e do ++ Espírito Santo. Amen.
 _
-v. ~
-(sed rubrica 1955 aut rubrica 1960 haec versus omittuntur)
+v.  (sed rubrica 1955 aut rubrica 1960 haec versus omittuntur)
 Havia um homem chamado José, membro do conselho, homem bom e justo, que não concordara nem com o conselho dos outros, nem com suas obras. Era de Arimateia, cidade da Judeia, e esperava o reino de Deus. Então, foi encontrar Pilatos, pediu-lhe o corpo de Jesus, desceu-O da cruz, amortalhou-O em um lençol e depositou-O em um sepulcro aberto na rocha, que ainda não servira para ninguém.
 
 [Offertorium]

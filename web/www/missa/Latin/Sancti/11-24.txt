@@ -1,30 +1,30 @@
 [Rank]
 S. Joannis a Cruce Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
+(sed rubrica tridentina)
+S. Joannis a Cruce Confessoris;;Duplex;;3;;vide C5
 
 [Rule]
 vide C5a;
+(sed rubrica tridentina)
+vide C5;
 Gloria
 CredoDA
 
-[Oratio]
+[Oratio_]
 Deus, qui sanctum Joánnem Confessórem tuum atque Doctorem perféctæ sui abnegatiónis et Crucis amatórem exímium effecísti: concéde; ut, ejus imitatióni júgiter inhæréntes, glóriam assequámur ætérnam.
 $Per Dominum
 
+[Oratio]
+@:Oratio_
+(sed rubrica tridentina)
+@:Oratio_:s/ atque Doctorem//
+
 [Secreta]
 @Commune/C4a:Secreta1:s/N\./Joánnis/
+(sed rubrica tridentina)
+@Commune/C5
 
 [Postcommunio]
 @Commune/C4a:Postcommunio1:s/N\./Joánnes/
-
-[Commemoratio Oratio]
-!Commemoratio S. Chrysogoni Martyris
-@Sancti/11-24o:Oratio
-
-[Commemoratio Secreta]
-!Commemoratio S. Chrysogoni Martyris
-@Sancti/11-24o:Secreta
-
-[Commemoratio Postcommunio]
-!Commemoratio S. Chrysogoni Martyris
-@Sancti/11-24o:Postcommunio
-
+(sed rubrica tridentina)
+@Commune/C5

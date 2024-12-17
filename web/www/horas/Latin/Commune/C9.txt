@@ -26,6 +26,10 @@ R. Beáti mórtui qui in Dómino moriúntur.
 [Ant 1]
 Omne * quod dat mihi Pater, ad me véniet; et eum qui venit ad me, non eíciam foras.
 
+[Oratio 1]
+@:Oratio_a_porta
+@:Oratio_Fid
+
 [Oratio_a_porta]
 $Pater noster Et
 _
@@ -38,17 +42,6 @@ $Oremus
 v. Fidélium, Deus, ómnium Cónditor et Redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam, quam semper optavérunt, piis supplicatiónibus consequántur:
 $Qui vivis
 
-[Versum 3]
-@:Versum 1
-
-[Oratio 1]
-@:Oratio_a_porta
-@:Oratio_Fid
-
-[Oratio 2]
-@:Oratio_a_porta:s/145/129/s
-@:Oratio_Fid
-
 [Oratio1]
 v. Absólve, quǽsumus Dómine, ánimam fámuli tui N., ut defúnctus sǽculo tibi vivat: et quæ per fragilitátem carnis humána conversatióne commísit, tu vénia misericordíssimæ pietátis abstérge.
 $Per Dominum
@@ -56,12 +49,6 @@ $Per Dominum
 [Oratio2]
 v. Deus indulgentiárum Dómine: da animábus famulórum famularúmque tuárum, quorum anniversárium depositiónis diem commemorámus, refrigérii sedem, quiétis beatitúdinem, et lúminis claritátem.
 $Per Dominum
-
-[Conclusio]
-V. Réquiem ætérnam dona eis, Dómine.
-R. Et lux perpétua lúceat eis.
-V. Requiéscant in pace.
-R. Amen.
 
 [Invit]
 Regem, cui ómnia vivunt, * Veníte adorémus.
@@ -224,14 +211,6 @@ R. Ut tu, Deus, déleas iniquitátem meam.
 21 ántequam vadam, et non revértar, ad terram tenebrósam, et opértam mortis calígine:
 22 terram misériæ et tenebrárum, ubi umbra mortis et nullus ordo, sed sempitérnus horror inhábitat.
 
-[Responsory91]
-R. Líbera me, Dómine, de viis inférni, qui portas ǽreas confregísti: et visitásti inférnum, et dedísti eis lumen, ut vidérent te:
-* Qui erant in pœnis tenebrárum.
-V. Clamántes et dicéntes: Advenísti, Redémptor noster.
-R. Qui erant in pœnis tenebrárum.
-$Requiem
-R. Qui erant in pœnis tenebrárum.
-
 [Responsory9]
 R. Líbera me, Dómine, de morte ætérna in die illa treménda,
 * Quando cæli movéndi sunt et terra, * Dum véneris judicáre sǽculum per ignem.
@@ -241,6 +220,12 @@ V. Dies illa, dies iræ, calamitátis et misériæ, dies magna et amára valde.
 R. Dum véneris judicáre sǽculum per ignem.
 $Requiem
 R. Líbera me, Dómine, de morte ætérna in die illa treménda, * Quando cæli movéndi sunt et terra, * Dum véneris judicáre sǽculum per ignem.
+
+[Conclusio]
+V. Réquiem ætérnam dona eis, Dómine.
+R. Et lux perpétua lúceat eis.
+V. Requiéscant in pace.
+R. Amen.
 
 [Ant Laudes_]
 Exsultábunt Dómino * ossa humiliáta.;;50
@@ -260,11 +245,25 @@ Omnis spíritus * laudet Dóminum.;;150
 [Ant 2]
 Ego sum * resurréctio et vita: qui credit in me, étiam si mórtuus fúerit, vivet; et omnis qui vivit et credit in me, non moriétur in ætérnum.
 
+[Oratio 2]
+@:Oratio_a_porta:s/145/129/s
+@:Oratio_Fid
+
 [Oratio 21]
 $Pater noster Et
 &psalm(129)
 _
 $A porta inferi
 _
-$Oremus
-@:Oratio Fid
+@:Oratio_Fid
+
+[Versum 3]
+@:Versum 1
+
+[Responsory91]
+R. Líbera me, Dómine, de viis inférni, qui portas ǽreas confregísti: et visitásti inférnum, et dedísti eis lumen, ut vidérent te:
+* Qui erant in pœnis tenebrárum.
+V. Clamántes et dicéntes: Advenísti, Redémptor noster.
+R. Qui erant in pœnis tenebrárum.
+$Requiem
+R. Qui erant in pœnis tenebrárum.

@@ -1,48 +1,18 @@
 [Rank]
-Ss. Marii, Marthæ, Audifacis et Abachum Martyrum;;Simplex;;1.1;;vide C3
+S. Canuti Regis et Martyris;;Simplex;;1.1;;vide C2
+(sed rubrica tridentina)
+S. Canuti Regis et Martyris;;Semiduplex;;2.2;;vide C2
 
 [Rule]
-vide C3;
+vide C2;
 Gloria
 
-[Introitus]
-@Sancti/01-19
-
 [Oratio]
-@Sancti/01-19
-
-[Lectio]
-@Commune/C3b
-
-[Graduale]
-@Sancti/01-19
-
-[Tractus]
-@Sancti/01-19
-
-[Evangelium]
-@Sancti/01-19
-
-[Offertorium]
-@Sancti/01-19
+Deus, qui ad illustrándam Ecclésiam tuam beátum Canútum regem martýrii palma et gloriósis miráculis decoráre dignátus es: concéde propítius; ut, sicut ipse Domínicæ passiónis imitátor fuit, ita nos, per ejus vestígia gradiéntes, ad gáudia sempitérna perveníre mereámur.
+$Per eumdem
 
 [Secreta]
-@Sancti/01-19
-
-[Communio]
-@Commune/C3a
+@Commune/C2a
 
 [Postcommunio]
-@Sancti/01-19
-
-[Commemoratio Oratio]
-!Pro S. Canuto Rege Mart.
-@Sancti/01-19t:Oratio
-
-[Commemoratio Secreta]
-!Pro S. Canuto Rege Mart.
-@Commune/C2a:Secreta
-
-[Commemoratio Postcommunio]
-!Pro S. Canuto Rege Mart.
-@Commune/C2a:Postcommunio
+@Commune/C2a

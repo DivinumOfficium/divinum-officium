@@ -1,20 +1,6 @@
 [Rank]
 In Vigilia Epiphaniae;;Semiduplex;;5;;ex Sancti/01-01
 
-[Rank1570]
-In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
-
-[Rank1960]
-Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
-
-[Rule]
-CPapaM=Telesforo;
-ex Sancti/101-01;
-Gloria
-CredoDA
-Prefatio=Nat
-Suffragium=Maria2;;
-
 [Introitus]
 !Sap 18:14-15.
 v. Mentre tutto era immerso in profondo silenzio, e la notte era a metà del suo corso, l’onnipotente tuo Verbo, o Signore, discese dal celeste trono regale.
@@ -26,12 +12,6 @@ v. Mentre tutto era immerso in profondo silenzio, e la notte era a metà del suo
 [Oratio]
 Onnipotente e sempiterno Iddio, indirizza i nostri atti secondo il tuo beneplacito, affinché possiamo abbondare in opere buone, in nome del tuo diletto Figlio:
 $Qui tecum
-
-[Commemoratio Oratio]
-!Per S. Telesforo Papa e Mart.
-@Commune/C2b:Oratio:s/N\./Telésphori/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Oratio Gregem
 
 [Lectio]
 Lettura della Lettera del B. Paolo Ap. ai Gàlati.
@@ -48,7 +28,7 @@ Il Signore regna, si ammanta di maestà: il Signore si ammanta di fortezza e di 
 [Evangelium]
 Séguito ++ del S. Vangelo secondo Matteo
 !Matt 2:19-23.
-In quel tempo, morto Erode, un angelo del Signore apparve in sogno a Giuseppe in Egitto e gli disse: "Alzati, prendi con te il bambino e sua madre e va' nel paese d'Israele; perché sono morti coloro che insidiavano la vita del bambino". Egli, alzatosi, prese con sé il bambino e sua madre, ed entrò nel paese d'Israele. Avendo però saputo che era re della Giudea Archelào al posto di suo padre Erode, ebbe paura di andarvi. Avvertito poi in sogno, si ritirò nelle regioni della Galilea e, appena giunto, andò ad abitare in una città chiamata Nàzaret, perché si adempisse ciò che era stato detto dai profeti: "Sarà chiamato Nazareno".
+In quel tempo, morto Erode, un angelo del Signore apparve in sogno a Giuseppe in Egitto e gli disse: «Alzati, prendi con te il bambino e sua madre e va' nel paese d'Israele; perché sono morti coloro che insidiavano la vita del bambino». Egli, alzatosi, prese con sé il bambino e sua madre, ed entrò nel paese d'Israele. Avendo però saputo che era re della Giudea Archelào al posto di suo padre Erode, ebbe paura di andarvi. Avvertito poi in sogno, si ritirò nelle regioni della Galilea e, appena giunto, andò ad abitare in una città chiamata Nàzaret, perché si adempisse ciò che era stato detto dai profeti: «Sarà chiamato Nazareno».
 
 [Offertorium]
 !Ps 92:1-2
@@ -58,13 +38,6 @@ Iddio ha consolidato la terra, che non vacillerà: il tuo trono, o Dio, è stabi
 Concedi, Te ne preghiamo, o Dio onnipotente, che questa offerta, presentata alla tua maestà, ci ottenga la grazia di una fervida pietà e ci assicuri il possesso della eternità beata.
 $Per Dominum
 
-[Commemoratio Secreta]
-!Per S. Telesforo Papa e Mart.
-@Commune/C2b:Secreta:s/N\./Telesforo/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Secreta Gregem
-
-
 [Communio]
 !Matt 2:20
 Prendi il bambino e sua madre, e va nella terra di Israele: quelli che volevano farlo morire sono morti.
@@ -72,9 +45,3 @@ Prendi il bambino e sua madre, e va nella terra di Israele: quelli che volevano 
 [Postcommunio]
 Per l’efficacia di questo mistero, o Signore, siano distrutti i nostri vizii e compiuti i nostri giusti desiderii.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!Per S. Telesforo Papa e Mart.
-@Commune/C2c:Postcommunio:s/N\./Telesforo/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Postcommunio Gregem

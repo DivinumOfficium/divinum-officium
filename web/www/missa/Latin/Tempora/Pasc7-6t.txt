@@ -1,11 +1,5 @@
 [Rank]
-Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;5;;ex Pasc7-0
-
-[Rank]
 Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[RankNewcal]
-Sabbato post Pentecostes;;Feria;;1;;
 
 [Rule]
 no Gloria
@@ -18,18 +12,11 @@ Prefatio=Spiritu=hodierna die;
 
 [Introitus]
 !Rom 5:5.
-v. Cáritas Dei diffúsa est in córdibus nostris, allelúja: per inhabitántem~
-Spíritum ejus in nobis, allelúja, allelúja.
+v. Cáritas Dei diffúsa est in córdibus nostris, allelúja: per inhabitántem Spíritum ejus in nobis, allelúja, allelúja.
 !Ps 102:1
 Benedic, anima mea, Dómino: et ómnia, quæ intra me sunt, nómini sancto ejus.
 &Gloria
-v. Cáritas Dei diffúsa est in córdibus nostris, allelúja: per inhabitántem~
-Spíritum ejus in nobis, allelúja, allelúja.
-
-[Oratio]
-Méntibus nostris, quǽsumus, Dómine, Spíritum Sanctum benígnus infúnde: cujus et~
-sapiéntia cónditi sumus, et providéntia gubernámur.
-$Per Dominum eiusdem
+v. Cáritas Dei diffúsa est in córdibus nostris, allelúja: per inhabitántem Spíritum ejus in nobis, allelúja, allelúja.
 
 [LectioL1]
 Léctio Joélis Prophétæ
@@ -43,8 +30,7 @@ Allelúja.
 Spíritus est, qui vivíficat: caro autem non prodest quidquam.
 
 [OratioL1]
-Illo nos igne, quǽsumus, Dómine, Spíritus Sanctus inflámmet: quem Dóminus~
-noster Jesus Christus misit in terram, et vóluit veheménter accéndi:
+Illo nos igne, quǽsumus, Dómine, Spíritus Sanctus inflámmet: quem Dóminus noster Jesus Christus misit in terram, et vóluit veheménter accéndi:
 $Qui tecum eiusdem
 
 [LectioL2]
@@ -59,8 +45,7 @@ Allelúja.
 Spíritus ejus ornávit cœlos.
 
 [OratioL2]
-Deus, qui, ad animárum medélam, jejúnii devotióne castigári córpora præcepísti:~
-concéde nobis propítius; et mente et córpore tibi semper esse devótos.
+Deus, qui, ad animárum medélam, jejúnii devotióne castigári córpora præcepísti: concéde nobis propítius; et mente et córpore tibi semper esse devótos.
 $Per Dominum
 
 [LectioL3]
@@ -75,8 +60,7 @@ Allelúja.
 Cum compleréntur dies Pentecóstes, erant omnes páriter sedéntes.
 
 [OratioL3]
-Præsta, quǽsumus, omnípotens Deus: ut, salutáribus jejúniis erudíti, ab ómnibus~
-étiam vítiis abstinéntes, propitiatiónem tuam facílius impetrémus.
+Præsta, quǽsumus, omnípotens Deus: ut, salutáribus jejúniis erudíti, ab ómnibus étiam vítiis abstinéntes, propitiatiónem tuam facílius impetrémus.
 $Per Dominum
 
 [LectioL4]
@@ -87,12 +71,10 @@ $Deo gratias
 
 [GradualeL4]
 Allelúja.
-V. (Hic genuflectitur) Veni, Sancte Spíritus, reple tuórum corda fidélium: et tui amóris in eis~
-ignem accénde.
+V. (Hic genuflectitur) Veni, Sancte Spíritus, reple tuórum corda fidélium: et tui amóris in eis ignem accénde.
 
 [OratioL4]
-Præsta, quǽsumus, omnípotens Deus: sic nos ab épulis carnálibus abstinére; ut a~
-vítiis irruéntibus páriter jejunémus.
+Præsta, quǽsumus, omnípotens Deus: sic nos ab épulis carnálibus abstinére; ut a vítiis irruéntibus páriter jejunémus.
 $Per Dominum.
 
 [LectioL5]
@@ -110,25 +92,22 @@ _
 v. Glória in excélsis Deo. Et in terra pax homínibus bonæ voluntátis. Laudámus te. Benedícimus te. Adorámus te. Glorificámus te. Grátias ágimus tibi propter magnam glóriam tuam. Dómine Deus, Rex cæléstis, Deus Pater omnípotens. Dómine Fili unigénite, Jesu Christe. Dómine Deus, Agnus Dei, Fílius Patris. Qui tollis peccáta mundi, miserére nobis. Qui tollis peccáta mundi, súscipe deprecatiónem nostram. Qui sedes ad déxteram Patris, miserére nobis. Quóniam tu solus Sanctus. Tu solus Dóminus. Tu solus Altíssimus, Jesu Christe. Cum Sancto Spíritu + in glória Dei Patris. Amen.
 
 [OratioL5]
-Deus, qui tribus púeris mitigásti flammas ígnium: concéde propítius; ut nos~
-fámulos tuos non exúrat flamma vitiórum.
+Deus, qui tribus púeris mitigásti flammas ígnium: concéde propítius; ut nos fámulos tuos non exúrat flamma vitiórum.
 $Per Dominum.
+
+[Oratio]
+Méntibus nostris, quǽsumus, Dómine, Spíritum Sanctum benígnus infúnde: cujus et sapiéntia cónditi sumus, et providéntia gubernámur.
+$Per Dominum eiusdem
 
 [Lectio]
 Léctio Epístolæ beáti Pauli Apóstoli ad Romános
 !Rom 5:1-5.
-Fratres: Justificáti ex fide, pacem habeámus ad Deum per Dóminum nostrum Jesum Christum:~
-per quem et habémus accéssum per fidem in grátiam istam, in qua stamus, et gloriámur in~
-spe glóriæ filiórum Dei. Non solum autem, sed et gloriámur in tribulatiónibus:~
-scientes, quod tribulátio patiéntiam operátur, patiéntia autem probatiónem,~
-probátio vero spem, spes autem non confúndit: quia cáritas Dei diffúsa est in~
-córdibus nostris per Spíritum Sanctum, qui datus est nobis.
+Fratres: Justificáti ex fide, pacem habeámus ad Deum per Dóminum nostrum Jesum Christum: per quem et habémus accéssum per fidem in grátiam istam, in qua stamus, et gloriámur in spe glóriæ filiórum Dei. Non solum autem, sed et gloriámur in tribulatiónibus: scientes, quod tribulátio patiéntiam operátur, patiéntia autem probatiónem, probátio vero spem, spes autem non confúndit: quia cáritas Dei diffúsa est in córdibus nostris per Spíritum Sanctum, qui datus est nobis.
 
 [Graduale]
 !Ps 116:1-2
  Laudáte Dóminum, omnes gentes: et collaudáte eum, omnes pópuli.
-V. Quóniam confirmáta est super nos misericórdia ejus: et véritas Dómini manet~
-in ætérnum.
+V. Quóniam confirmáta est super nos misericórdia ejus: et véritas Dómini manet in ætérnum.
 
 [Sequentia]
 @Tempora/Pasc7-0:Sequentia
@@ -136,34 +115,20 @@ in ætérnum.
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Lucam
 !Luc 4:38-44
-In illo témpore: Surgens Jesus de synagóga, introívit in domum Simónis. Socrus~
-autem Simónis tenebátur magnis fébribus: et rogavérunt illum pro ea. Et stans~
-super illam, imperávit febri: et dimísit illam. Et contínuo surgens, ministrábat~
-illis. Cum autem sol occidísset, omnes qui habébant infírmos váriis languóribus,~
-ducébant illos ad eum. At ille síngulis manus impónens, curábat eos. Exíbant~
-autem dæmónia a multis clamántia et dicéntia: Quia tu es Fílius Dei: et~
-íncrepans non sinébat ea loqui, quia sciébant ipsum esse Christum. Facta autem~
-die egréssus ibat in desértum locum, et turbæ requirébant eum, et venérunt usque~
-ad ipsum: et detinébant illum, ne discéderet ab eis. Quibus ille ait: Quia et~
-áliis civitátibus opórtet me evangelizáre regnum Dei: quia ídeo missus sum. Et~
-erat prǽdicans in synagógis Galilǽæ.
+In illo témpore: Surgens Jesus de synagóga, introívit in domum Simónis. Socrus autem Simónis tenebátur magnis fébribus: et rogavérunt illum pro ea. Et stans super illam, imperávit febri: et dimísit illam. Et contínuo surgens, ministrábat illis. Cum autem sol occidísset, omnes qui habébant infírmos váriis languóribus, ducébant illos ad eum. At ille síngulis manus impónens, curábat eos. Exíbant autem dæmónia a multis clamántia et dicéntia: Quia tu es Fílius Dei: et íncrepans non sinébat ea loqui, quia sciébant ipsum esse Christum. Facta autem die egréssus ibat in desértum locum, et turbæ requirébant eum, et venérunt usque ad ipsum: et detinébant illum, ne discéderet ab eis. Quibus ille ait: Quia et áliis civitátibus opórtet me evangelizáre regnum Dei: quia ídeo missus sum. Et erat prǽdicans in synagógis Galilǽæ.
 
 [Offertorium]
 !Ps 87:2-3.
-Dómine, Deus salútis meæ, in die clamávi et nocte coram te: intret orátio mea in~
-conspéctu tuo, Dómine, allelúja.
+Dómine, Deus salútis meæ, in die clamávi et nocte coram te: intret orátio mea in conspéctu tuo, Dómine, allelúja.
 
 [Secreta]
-Ut accépta tibi sint, Dómine, nostra jejúnia: præsta nobis, quǽsumus; hujus~
-múnere sacraménti purificátum tibi pectus offérre.
+Ut accépta tibi sint, Dómine, nostra jejúnia: præsta nobis, quǽsumus; hujus múnere sacraménti purificátum tibi pectus offérre.
 $Per Dominum.
 
 [Communio]
 !Joannes 3:8
-Spíritus, ubi vult, spirat: et vocem ejus audis, allelúja, allelúja: sed nescis,~
-unde véniat aut quo vadat, allelúja, allelúja, allelúja.
+Spíritus, ubi vult, spirat: et vocem ejus audis, allelúja, allelúja: sed nescis, unde véniat aut quo vadat, allelúja, allelúja, allelúja.
 
 [Postcommunio]
-Prǽbeant nobis, Dómine, divínum tua sancta fervórem: quo eórum páriter et actu~
-delectémur et fructu.
+Prǽbeant nobis, Dómine, divínum tua sancta fervórem: quo eórum páriter et actu delectémur et fructu.
 $Per Dominum.

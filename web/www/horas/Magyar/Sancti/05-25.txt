@@ -1,27 +1,2 @@
 [Rank]
 S. Gregorii VII Papae Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-vide C4;
-9 lectiones
-CPapaM=Urban;
-
-[Commemoratio]
-!Commemoratio S. Urbani I. Pp. et Martyris
-@Commune/C2:Oratio Gregem
-
-[Commemoratio] (rubrica 1960)
-!Commemoratio S. Urbani I. Pp. et Martyris
-@Commune/C2:Oratio proper
-$Oremus
-v. Istenünk, aki szilárdan megalapítottad Egyházadat az apostol szikláján, és megszabadítottad a pokol rettenetes hatalmaitól, kérünk, add meg, hogy áldott Urbánus, a te mártírod és főpápád közbenjárására hűséges maradjon az igazságot, hogy mindig biztonságban legyél a Te védelmed alatt.
-$Per Dominum
-
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco

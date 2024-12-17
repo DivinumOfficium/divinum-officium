@@ -7,6 +7,10 @@ Doxology=Corp
 Feria Te Deum
 
 [Rule] (rubrica 196)
+ 
+
+[Ant Vespera] (rubrica tridentina aut rubrica divino)
+@TemporaM/Pent01-4
 
 [Ant Matutinum]
 @TemporaM/Pent01-4::11 s/;;.*//
@@ -26,23 +30,20 @@ Feria Te Deum
 [Lectio1]
 @Tempora/Pent02-2:Lectio7
 
-[Lectio2]
-@Tempora/Pent02-2:Lectio8
-
-[Lectio3]
-@Tempora/Pent02-2:Lectio9
-
 [Responsory1]
 @Tempora/Pent01-4:Responsory4
 
+[Lectio2]
+@Tempora/Pent02-2:Lectio8
+
 [Responsory2]
 @Tempora/Pent01-4:Responsory5
+
+[Lectio3]
+@Tempora/Pent02-2:Lectio9
 
 [Responsory3]
 @Tempora/Pent01-4:Responsory6
 
 [MM Capitulum] (rubrica tridentina aut rubrica divino)
 @TemporaM/Pent01-5
-
-[Ant Vespera] (rubrica tridentina aut rubrica divino)
-@TemporaM/Pent01-4

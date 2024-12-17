@@ -1,9 +1,6 @@
 [Rank]
 In Cathedra S. Petri Ap. Antiochiæ;;Duplex majus;;4;;ex C4
 
-[Rank] (rubrica 196)
-In Cathedra S. Petri Ap.;;Duplex II classis;;5;;ex C4
-
 [Rule]
 ex C4;
 Gloria
@@ -27,10 +24,10 @@ $Per Dominum
 [Graduale]
 @Commune/C4b
 
-[Tractus]
+[GradualeP]
 @Commune/Coronatio
 
-[GradualeP]
+[Tractus]
 @Commune/Coronatio
 
 [Evangelium]

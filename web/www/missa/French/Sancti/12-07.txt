@@ -1,14 +1,14 @@
 [Rank]
 S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 
-[Name]
-Ambrose
-
 [Rule]
 vide C4a;
 Gloria
 CredoDa
 no Vigil1960
+
+[Name]
+Ambrose
 
 [Introitus]
 !Eccli 15:5
@@ -21,6 +21,11 @@ v. Au milieu de l’Église, il a ouvert la bouche, et le Seigneur l’a rempli 
 [Oratio]
 Dieu, vous avez accordé à votre peuple le bienheureux Ambroise pour ministre du salut éternel : faites, nous vous en prions, que nous méritions d’avoir pour intercesseur dans les cieux, celui qui fut sur cette terre Docteur de la vie.
 $Per Dominum
+
+[Commemoratio Oratio]
+!Commemoratio Vigiliæ Immaculatæ Conceptionis
+Dieu, d’une manière admirable, en la Conception de la Mère de votre Fils unique, vous l’avez préservée de la faute originelle, faites que, protégés par son intercession, nous puissions arriver à célébrer sa fête avec un cœur pur.
+$Per eundem
 
 [Lectio]
 @Commune/C4a:Lectio
@@ -44,6 +49,11 @@ Ma vérité et ma miséricorde seront avec lui et par mon nom s’élèvera sa p
 Dieu tout-puissant et éternel, par l’intercession du bienheureux Ambroise votre confesseur et Pontife, faites que l’oblation offerte à votre majesté nous fasse parvenir au salut éternel.
 $Per Dominum
 
+[Commemoratio Secreta]
+!Commemoratio Vigiliæ Immaculatæ Conceptionis
+Seigneur, que notre offrande soit rendue acceptable à votre clémence par la prière de l’Immaculée Mère de Dieu que vous avez préservée de toute tache originelle pour qu’elle méritât de devenir la digne demeure de votre Fils.
+$Qui tecum
+
 [Communio]
 !Ps 88:36-38
 Je l’ai juré une fois par ma sainteté, sa race demeurera éternellement et son trône sera comme le soleil en ma présence ; et comme la lune qui subsistera à jamais, et le témoin qui est au ciel est fidèle.
@@ -52,18 +62,7 @@ Je l’ai juré une fois par ma sainteté, sa race demeurera éternellement et s
 Accordez-nous, Dieu tout-puissant, qu’ayant reçu les sacrements de notre salut, nous soyons assistés partout par l’intercession de votre bienheureux confesseur et pontife Ambroise, en l’honneur de qui nous avons offert ce sacrifice à votre majesté.
 $Per Dominum
 
-[Commemoratio Oratio]
-!Commemoratio Vigiliæ Immaculatæ Conceptionis
-Dieu, d’une manière admirable, en la Conception de la Mère de votre Fils unique, vous l’avez préservée de la faute originelle, faites que, protégés par son intercession, nous puissions arriver à célébrer sa fête avec un cœur pur.
-$Per eundem
-
-[Commemoratio Secreta]
-!Commemoratio Vigiliæ Immaculatæ Conceptionis
-Seigneur, que notre offrande soit rendue acceptable à votre clémence par la prière de l’Immaculée Mère de Dieu que vous avez préservée de toute tache originelle pour qu’elle méritât de devenir la digne demeure de votre Fils.
-$Qui tecum
-
 [Commemoratio Postcommunio]
 !Commemoratio Vigiliæ Immaculatæ Conceptionis
 Prêtez secours, Dieu miséricordieux à notre faiblesse : et comme nous prévenons aujourd’hui la fête de l’Immaculée Conception de la Mère de votre Fils unique, faites que, par les mérites de son intercession, nous puissions nous relever de nos fautes.
 $Per eúndem
-

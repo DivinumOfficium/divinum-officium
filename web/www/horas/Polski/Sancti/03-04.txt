@@ -1,28 +1,6 @@
 [Rank]
 Św. Kazimierza Wyznawcy;;Semiduplex;;2.1;;vide C5
 
-[Rank] (rubrica 196)
-Św. Kazimierza Wyznawcy;;Duplex;;3;;vide C5
-
-[Rank] (rubrica innovata)
-Św. Kazimierza Wyznawcy;;Semiduplex;;2.1;;vide C5
-
-[Rule]
-vide C5;
-9 lectiones;
-CPapaM=Lucjusza;
-Lectio1 Quad
-in 1 Nocturno Lectiones ex Commune in 2 loco
-(sed rubrica 1960)
-scriptura1960
-
 [Oratio]
 Boże, któryś wśród królewskich rozkoszy i ułud światowych umocnił świętego Kazimierza cnotą wytrwałości, spraw, prosimy Cię, aby wierni Twoi za Jego przyczyną gardząc tem, ziemskie, niebieskich rzęczy pożądali.
 $Per Dominum
-
-[Commemoratio]
-!Wspominamy Św. Lucjusza I Papieża i Męczennika
-@Commune/C2:Oratio proper Gregem
-$Oremus
-Boże, który uroczystością błogosławionego Lucjusza, Męczennika Twego i Papieża, corocznie nas uweselasz, dozwól łaskawie, abyśmy cieszyli się opieką tego, którego narodziny obchodzimy.
-$Per Dominum.

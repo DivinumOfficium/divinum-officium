@@ -1,0 +1,21 @@
+[Rank]
+S. Lucii I Papæ et Martyris;;Simplex;;1.1;;vide C2b
+
+[Rule]
+vide C2b;
+OPapaM=Lúcium;
+
+[Oratio]
+@Commune/C2b::s/N\./Lúcii/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b
+
+[Secreta]
+@Commune/C2b::s/N\./Lúcio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b
+
+[Postcommunio]
+@Commune/C2b::s/N\./Lúcio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b

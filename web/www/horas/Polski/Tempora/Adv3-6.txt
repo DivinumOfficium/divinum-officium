@@ -1,13 +1,15 @@
 [Rank]
 Sobota Suchych Dni Adwentu;;Feria major;;2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1930)
 Sobota Suchych Dni Adwentu;;Feria major;;3
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Sobota III tygodnia Adwentu;;Feria major;;2
 
-[Rule]
+[Oratio]
+Boże, który widzisz zasmucenie nasze, powodu złości naszych, spraw w miłosierdziu swojem, abyśmy łaską nawiedzenia Twojego byli pocieszeni.
+$Qui vivis
 
 [Lectio1]
 Czytanie Ewangelii świętej według Łukasza
@@ -46,7 +48,3 @@ R. A rozproszonych zgromadź w ziemi Twojej.
 
 [Ant 2]
 Jakóż się to stanie, * Aniele Boży, gdyż męża nie znam? Słuchaj Marjo Panno: Duch Święty zstąpi na cię, a moc Najwyższego zaćmi tobie.
-
-[Oratio]
-Boże, który widzisz zasmucenie nasze, powodu złości naszych, spraw w miłosierdziu swojem, abyśmy łaską nawiedzenia Twojego byli pocieszeni.
-$Qui vivis

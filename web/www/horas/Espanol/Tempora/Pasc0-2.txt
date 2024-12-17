@@ -10,6 +10,10 @@ Minores sine Antiphona;
 Capitulum Versum 2;
 Psalmi Dominica;
 
+[Oratio]
+Oh Dios, que multiplicas siempre a tu Iglesia con nueva prole, concede a tus siervos que mantengan mientras vivan los efectos del sacramento que recibieron por la fe.
+$Per Dominum
+
 [Ant Matutinum]
 @Tempora/Pasc0-0::s/^V\..*//sm
 V. El Señor resucitó verdaderamente, aleluya.
@@ -47,10 +51,6 @@ Dice San Juan que los Apóstoles creyeron y se alegraron; y San Lucas, que fuero
 
 [Ant 2]
 Se presentó Jesús * en medio de sus discípulos y les dijo: Paz a vosotros. Aleluya, aleluya.
-
-[Oratio]
-Oh Dios, que multiplicas siempre a tu Iglesia con nueva prole, concede a tus siervos que mantengan mientras vivan los efectos del sacramento que recibieron por la fe.
-$Per Dominum
 
 [Ant 3]
 Mirad mis manos * y mis pies: soy Yo en persona. Aleluya, aleluya.

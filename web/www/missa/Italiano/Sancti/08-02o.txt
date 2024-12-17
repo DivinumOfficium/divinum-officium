@@ -6,12 +6,19 @@ vide C2;
 Gloria
 
 [Oratio]
-@Commune/C4b:Oratio1
+!Pro S. Stephano pope, martyr
+@Commune/C2b:Oratio:s/N\./Stefano/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
 
-[Commemoratio Secreta]
-!Pro S. Stephano Papa, Martyre
-@Commune/C4b:Secreta1
+[Secreta]
+!Pro S. Stephano pope, martyr
+@Commune/C2b:Secreta:s/N\./Stefano/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
 
-[Commemoratio Postcommunio]
-!Pro S. Stephano Papa, Martyre
-@Commune/C4b:Postcommunio1
+[Postcommunio]
+!Pro S. Stephano pope, martyr
+@Commune/C2b:Postcommunio:s/N\./Stefano/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem

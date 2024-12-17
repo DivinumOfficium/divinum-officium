@@ -1,17 +1,15 @@
 [Rank]
 Ss. Eustachii et Sociorum Martyrum;;Duplex;;3;;vide C3
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 1960 aut rubrica 1570 aut rubrica 1617)
 Ss. Eustachii et Sociorum Martyrum;;Simplex;;1.1;;vide C3
 
 [Rule]
 vide C3;
+(diede dicitur)
 9 lectiones
+(sed rubrica 1960 aut rubrica 1570 omittitur)
 Quorum Festum
-
-[Oratio Vigilia]
-!Commemoratio Vigiliæ S. Matthæi Apostoli
-@Commune/C1v:Oratio1:s/N\. Apóstoli tui/Matthǽi Apóstoli tui et Evangelístæ/
 
 [Oratio]
 @Commune/C3::s/N\. et N\./Eustáchii et Sociórum ejus/
@@ -30,7 +28,3 @@ Illa in expeditióne, liberis simul cum uxore insperato receptis, victor Urbem i
 
 [Lectio8]
 @Commune/C3:Lectio8 in 2 loco
-
-[Lectio Vigilia]
-!Commemoratio Pro Vigilia S. Matthæi.
-@Sancti/09-20o:Lectio1:s/Sequitur m/M/

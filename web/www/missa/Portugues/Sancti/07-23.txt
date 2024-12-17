@@ -1,9 +1,6 @@
 [Rank]
 S. Apollinaris Episcopi et Mart;;Duplex;;3;;vide C2
 
-[RankNewcal]
-S. Apollinaris Episcopi et Mart;;Duplex optional;;2;;vide C2
-
 [Rule]
 vide C2;
 Gloria
@@ -24,6 +21,11 @@ S. Libório, Bispo e Confessor
 Ó Deus, remunerador das almas fiéis, que consagrastes este dia com o martírio do B. Apolinário, vosso Sacerdote, fazei que estes vossos servos alcancem a indulgência das suas faltas, pelas preces daquele cuja venerável festa celebramos.
 $Per Dominum
 
+[Commemoratio Oratio]
+! S. Libório
+Dignai-Vos permitir, ó Deus omnipotente, que a veneranda solenidade do vosso Confessor e Pontífice Libório aumente a nossa piedade e nos assegure a salvação.
+$Per Dominum
+
 [Lectio]
 Lição da Ep.ª do B. Ap.º Pedro.
 !1 Pe 5:1-11
@@ -35,7 +37,6 @@ Encontrei o meu servo David e ungi-o com meu óleo sagrado: a minha mão o auxil
 V. O inimigo não terá nele domínio algum; o filho da iniquidade não poderá prejudicá-lo. Aleluia, aleluia.
 !Sl 109:4
 V. Jurou o Senhor e não se arrependerá: tu és sacerdote para sempre segundo a ordem de Melquisedeque. Aleluia.
-
 
 [Evangelium]
 Continuação ++ do santo Evangelho segundo S. Lucas.
@@ -50,6 +51,11 @@ A minha fidelidade e a minha misericórdia estarão com ele: e por virtude de me
 Olhai propício, Senhor, para os dons que vos apresentamos em memória do vosso B. Sacerdote e Mártir Apolinário, os quais Vos oferecemos em sacrifício de expiação pelas nossas ofensas.
 $Per Dominum
 
+[Commemoratio Secreta]
+! S. Libório
+Que os vossos santos, Senhor, Vos suplicamos, nos alegrem em toda a parte, a fim de que, honrando os seus méritos, sintamos o efeito do seu patrocínio.
+$Per Dominum
+
 [Communio]
 !Mt 25:20-21
 Entregastes-me, Senhor, cinco talentos; eis outros cinco que lucrei. Muito bem, servo fiel e bom. Porque foste fiel em bens de pouca importância, eu te estabelecerei sobre bens mais importantes. Entra no gozo do teu senhor.
@@ -58,18 +64,7 @@ Entregastes-me, Senhor, cinco talentos; eis outros cinco que lucrei. Muito bem, 
 Tendo participado dos vossos sacrossantos mystérios, Vos suplicamos, Senhor, queirais defender-nos sempre com a protecção do B. Apolinário, pois não cessais de olhar propício para aqueles a quem concedeis tal socorro.
 $Per Dominum
 
-[Commemoratio Oratio]
-! S. Libório
-Dignai-Vos permitir, ó Deus omnipotente, que a veneranda solenidade do vosso Confessor e Pontífice Libório aumente a nossa piedade e nos assegure a salvação.
-$Per Dominum
-
-[Commemoratio Secreta]
-! S. Libório
-Que os vossos santos, Senhor, Vos suplicamos, nos alegrem em toda a parte, a fim de que, honrando os seus méritos, sintamos o efeito do seu patrocínio.
-$Per Dominum
-
 [Commemoratio Postcommunio]
 ! S. Libório
 Dignai-Vos permitir, ó Deus omnipotente, que, dando-Vos nós graças pelos benefícios recebidos, alcancemos por intercessão do B. Libório, vosso Confessor e Pontífice, ainda outros maiores.
 $Per Dominum
-

@@ -1,9 +1,6 @@
 [Rank]
 S. Joannis Damasceni Confessoris;;Duplex;;3;;vide C5
 
-[RankNewcal]
-S. Joannis Damasceni Confessoris;;Duplex optional;;2;;vide C5
-
 [Rule]
 vide C5;
 Gloria
@@ -24,15 +21,6 @@ $Per Dominum
 [Lectio]
 @Commune/C2:Lectio
 
-[Tractus]
-!Ps 17:33 et 35
-Le Dieu qui m’a ceint de force, et qui a rendu ma voie immaculée.
-V. Lui qui enseigne à mes mains le combat : c’est vous qui avez fait de mes bras comme un arc d’airain.
-!Ps 38:39 et 50
-Je poursuivrai mes ennemis, et je les atteindrai.
-V. Je les briserai, et ils ne pourront se tenir debout ; ils tomberont sous mes pieds.
-V. C’est pourquoi je vous louerai, Seigneur, parmi les nations, et je chanterai un cantique à la gloire de votre nom.
-
 [Graduale]
 Le Dieu qui m’a ceint de force, et qui a rendu ma voie immaculée.
 V. Lui qui enseigne à mes mains le combat : c’est vous qui avez fait de mes bras comme un arc d’airain.
@@ -45,6 +33,15 @@ Alléluia, alléluia
 Le Seigneur a sauvé ta main : parce que tu as combattu le combat du Seigneur. Alléluia.
 !Ps 143:1
 Béni soit le Seigneur mon Dieu, qui enseigne à mes mains le combat, et à mes doigts la guerre. Alléluia.
+
+[Tractus]
+!Ps 17:33 et 35
+Le Dieu qui m’a ceint de force, et qui a rendu ma voie immaculée.
+V. Lui qui enseigne à mes mains le combat : c’est vous qui avez fait de mes bras comme un arc d’airain.
+!Ps 38:39 et 50
+Je poursuivrai mes ennemis, et je les atteindrai.
+V. Je les briserai, et ils ne pourront se tenir debout ; ils tomberont sous mes pieds.
+V. C’est pourquoi je vous louerai, Seigneur, parmi les nations, et je chanterai un cantique à la gloire de votre nom.
 
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Lucam
@@ -66,4 +63,3 @@ Les bras des pécheurs seront brisés, mais le Seigneur affermit les justes.
 [Postcommunio]
 Que les dons que nous avons reçus, Seigneur, nous protègent d’une armure céleste : et que nous soit un rempart le patronage du bienheureux Jean, renforcé par l’appui unanime des Saints ; dont il fit triompher dans l’Église le culte des images.
 $Per Dominum
-

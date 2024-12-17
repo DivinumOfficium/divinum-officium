@@ -1,19 +1,24 @@
 [Rank]
-S. Eleutherii Papae et Martyris;;Simplex;;1.1;;vide C2
+S. Eleuterio
 
 [Rule]
 vide C2;
 Gloria
 
 [Oratio]
-O eterno Pastore, volgi lo sguardo benigno sul tuo gregge e custodiscilo con una continua protezione, per intercessione del tuo martire e sommo Pontefice san Eleuterio, che hai costituito pastore di tutta la Chiesa.
-$Per Dominum
+!Per S. Eleuterio
+@Commune/C2c:Oratio:s/N\./Eleuterio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
 
 [Secreta]
-Per i doni che ti offriamo, o Signore, illumina benigno la tua Chiesa, affinché ovunque il tuo gregge progredisca e, docili alla tua guida, i pastori siano graditi al tuo nome.
-$Per Dominum
+!Per S. Eleuterio
+@Commune/C2c:Secreta:s/N\./Eleuterio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
 
 [Postcommunio]
-Guida benevolmente, o Signore, la tua Chiesa nutrita con questo santo ristoro: diretta dal tuo potente governo, essa goda di una crescente libertà e mantenga integra la sua fede.
-$Per Dominum
-
+!Per S. Eleuterio
+@Commune/C2c:Postcommunio:s/N\./Eleuterio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem

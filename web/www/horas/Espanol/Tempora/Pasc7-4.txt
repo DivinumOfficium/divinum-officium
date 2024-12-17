@@ -4,17 +4,11 @@ Feria Quinta infra octavam Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 [Rank] (rubrica 1960)
 Die Quinta infra octavam Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria V post Pentecostes;;Feria;;1;;
 
-[Rule]
-ex Pasc7-0;
-1 nocturn;
-Psalmi Dominica;
-Antiphonas horas
-Hymnus Tertia
-Feria Te Deum
-no93
+[Oratio]
+@Tempora/Pasc7-0:Oratio
 
 [Lectio1]
 Lección del Santo Evangelio según San Lucas
@@ -43,14 +37,11 @@ R. Y todos quedaron llenos del Espíritu Santo, y comenzaron a hablar en diversa
 R. Y todos quedaron llenos del Espíritu Santo, y comenzaron a hablar en diversas lenguas las palabras que el Espíritu Santo ponía en su boca, aleluya, aleluya, aleluya. 
 
 [Lectio3]
-Mas este precepto relativo a la sagrada obligación de la hospitalidad, puede también aplicarse en sentido espiritual. Pues cuando se elige una casa, se busca un huésped digno. Veamos, por lo mismo, si con ello se nos manifiesta la preferencia que debemos dar a la Iglesia y a Cristo. Y a la verdad, ¿qué casa más digna de recibir la predicación apostólica que la Iglesia? Y ¿quién debe ser más preferido que Cristo, el cual acostumbra lavar los pies a sus huéspedes, y lo que es más, no permite que los que ha recibido en su casa permanezcan en un camino inmundo, sino que al hallarlos cubiertos de manchas de la vida pasada, se digna purificarlos para el porvenir? Por lo tanto, Cristo es Él solo huésped a quien nadie debe dejar, ni cambiar por otro. Con razón se le dirigen estas palabras: "Señor ¿a quién iremos? Tú eres el que tienes palabras de vida eterna, y nosotros creemos”.
+Mas este precepto relativo a la sagrada obligación de la hospitalidad, puede también aplicarse en sentido espiritual. Pues cuando se elige una casa, se busca un huésped digno. Veamos, por lo mismo, si con ello se nos manifiesta la preferencia que debemos dar a la Iglesia y a Cristo. Y a la verdad, ¿qué casa más digna de recibir la predicación apostólica que la Iglesia? Y ¿quién debe ser más preferido que Cristo, el cual acostumbra lavar los pies a sus huéspedes, y lo que es más, no permite que los que ha recibido en su casa permanezcan en un camino inmundo, sino que al hallarlos cubiertos de manchas de la vida pasada, se digna purificarlos para el porvenir? Por lo tanto, Cristo es Él solo huésped a quien nadie debe dejar, ni cambiar por otro. Con razón se le dirigen estas palabras: “Señor ¿a quién iremos? Tú eres el que tienes palabras de vida eterna, y nosotros creemos”.
 &teDeum
 
 [Ant 2]
 Reunió Jesús a los doce, * y les dio poder y autoridad sobre los demonios y para curar enfermedades. Los envió a proclamar el reino de Dios y a curar a los enfermos. Aleluya.
-
-[Oratio]
-@Tempora/Pasc7-0:Oratio
 
 [Ant 3]
 El Espíritu * que procede del Padre, aleluya, Él me glorificará. Aleluya, aleluya.

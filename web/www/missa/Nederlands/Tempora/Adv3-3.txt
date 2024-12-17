@@ -1,12 +1,6 @@
 [Rank]
 Feria IV Quattuor Temporum in Adventu;;Feria major;;2.1
 
-[Rank] (rubrica 196)
-Feria IV Quattuor Temporum Adventus;;Feria major;;4.9
-
-[RankNewcal]
-Feria IV infra Hebdomadam III Adventus;;Feria major;;2.1
-
 [Rule]
 Oratio Dominica
 no Gloria
@@ -22,10 +16,6 @@ De hemelen verhalen de glorie van God en het uitspansel roemt het werk van zijn 
 &Gloria
 v. Dauwt, hemelen, van boven en gij, wolken, regent de Gerechte: dat de aarde zich opene en de Verlosser voortbrenge.
 
-[Oratio]
-Wij vragen U, almachtige God, dat de aanstaande plechtige viering van onze verlossing ons steun geve in dit leven en de beloning van de eeuwige zaligheid schenke.
-$Per Dominum
-
 [LectioL1]
 Lezing uit de Profeet Isaias
 !Is 2:2-5
@@ -40,6 +30,10 @@ V. Wie mag de berg des Heren bestijgen of wie mag verwijlen in zijn heiligdom? D
 [OratioL1]
 Haast U, Heer, zo vragen wij U, draal niet langer en stuur ons hulp van uw hemelse kracht, opdat zij, die op uw liefde vertrouwen, door de troost van uw komst opgebeurd worden.
 $Qui vivis
+
+[Oratio]
+Wij vragen U, almachtige God, dat de aanstaande plechtige viering van onze verlossing ons steun geve in dit leven en de beloning van de eeuwige zaligheid schenke.
+$Per Dominum
 
 [Lectio]
 @Commune/C10a

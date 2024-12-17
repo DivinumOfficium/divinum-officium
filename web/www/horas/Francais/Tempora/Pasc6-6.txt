@@ -1,28 +1,8 @@
 [Rank]
 Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;5;;ex Tempora/Pasc5-4
 
-[Rank](rubrica 1955)
-In Vigilia Pentecostes;;Duplex;;3;;vide Tempora/Pasc5-4
-
-[Rank](rubrica 1960)
+[Rank] (rubrica 1960)
 Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;6;;vide Tempora/Pasc5-4
-
-[Rule]
-ex Tempora/Pasc5-4;
-Psalmi Dominica
-Antiphonas Horas
-9 Lectiones
-Doxology=Asc
-Feria Te Deum
-No suffragium
-No93
-
-[Rule] (rubrica 1960)
-Feria Te Deum
-Doxology=Asc
-
-[Oratio]
-@Tempora/Pasc6-0
 
 [LectioJudae1]
 Commencement de l'Epître du Bienheureux Jude Apôtre
@@ -31,11 +11,6 @@ Commencement de l'Epître du Bienheureux Jude Apôtre
 02 que la miséricorde, la paix et l’amour vous soient accordés en abondance.
 03 Bien-aimés, j’avais la ferme intention de vous écrire au sujet du salut qui nous est commun ; or me voici dans l’obligation de le faire pour vous exhorter à combattre pour la foi qui a été transmise aux fidèles une fois pour toutes.
 04 Car il s’est infiltré parmi vous des individus, qui sont marqués depuis longtemps en vue de ce jugement, des impies qui tournent la grâce de notre Dieu en prétexte à la débauche, et qui renient notre seul maître et Seigneur, Jésus Christ.
-
-[Lectio1]
-@:LectioJudae1
-(sed rubrica 1960)
-@:Lectio7
 
 [Responsory1] (rubrica 1960)
 R. Je prierai mon Père, et il vous donnera un autre Paraclet,
@@ -49,11 +24,6 @@ R. L’Esprit de vérité, pour qu’il demeure éternellement avec vous, allél
 06 quant aux anges qui n’ont pas gardé la dignité de leur rang, mais ont quitté la demeure qui était la leur, le Seigneur les maintient enchaînés à perpétuité dans les ténèbres en vue du jugement du grand jour ;
 07 il en va de même pour Sodome et Gomorrhe et les villes d’alentour : elles s’étaient livrées à la prostitution d’une manière semblable à ces anges-là et elles étaient allées avec des êtres d’une autre nature ; elles sont soumises pour l’exemple au châtiment du feu éternel.
 08 Et pourtant, ces coureurs de songes font la même chose : ils souillent la chair, ils méprisent la seigneurie de Dieu, ils outragent les anges appelés « Gloires ».
-
-[Lectio2]
-@:LectioJudae2
-(sed rubrica 1960)
-@:Lectio8
 
 [Responsory2] (rubrica 1960)
 R. Si je ne m’en vais point, le Paraclet ne viendra pas à vous : mais si je m’en vais, je vous l’enverrai.
@@ -71,28 +41,19 @@ R. Quand il sera venu, il vous enseignera toute vérité, alléluia.
 12 Ces individus sont une souillure pour vos repas fraternels, ils font bombance sans pudeur, ils ne se préoccupent que d’eux-mêmes : nuages sans eau emportés par le vent ; arbres de fin d’automne sans fruits, deux fois morts, déracinés ;
 13 flots sauvages de la mer, crachant l’écume de leur propre honte ; astres errants, pour lesquels est réservée à jamais l’obscurité des ténèbres.
 
-[Lectio3]
-@:LectioJudae3
-(sed rubrica 1960)
-@:Lectio9
-
-[Responsory3]
-@Tempora/Pasc5-4:Responsory3
-
 [Lectio4]
 Du Traité de saint Augustin, Évêque, du symbole aux Catéchumènes.
 !Livre 4 chapitre 1 sect. 9
 Alors que par le signe sacré de la croix, notre mère la sainte Église vous a reçus dans son sein, elle qui va vous donner spirituellement naissance comme à vos frères, avec la joie la plus grande, vous êtes devenus la future génération d’une mère glorieuse, en attendant qu’elle vous régénère dans le bain sacré du baptême et vous rende à la lumière véritable. Jusqu’à ce jour, qu’elle nourrisse avec des aliments convenables ceux qu’elle porte dans son sein, et qu’elle les conduise joyeux au jour de sa délivrance, joyeuse elle aussi. Car l’Église n’est pas sous le coup de la sentence dont a été frappée Ève, qui enfante, dans la tristesse et les gémissements, des enfants qui ne sont eux-mêmes pas dans la joie, mais pleurent plutôt. L’Église délie au contraire ce que la première femme avait lié, afin que, par son obéissance, elle rende à la vie ceux que la désobéissance d’Ève a donnés à la mort. Toutes les cérémonies mystérieuses qui ont été faites et qui se font encore sur vous par le ministère des serviteurs de Dieu : les exorcismes, les prières, les cantiques spirituels, les insufflations, le cilice, l’inclination de tête, les prosternements, cette crainte même qu’il faut désirer avec une assurance entière ; toutes ces choses sont, comme je l’ai dit, les aliments dont cette mère vous nourrit dans son sein, afin que, régénérés par le baptême, elle vous présente tout joyeux au Christ.
 
-[Lectio5]
-Vous avez aussi reçu le symbole comme protection de celle qui va vous enfanter, contre le venin du serpent. Il est écrit dans l’Apocalypse de l’Apôtre saint Jean que le dragon se tint devant la femme qui allait enfanter, afin de dévorer son enfant dès qu’il serait né. Aucun de vous n’ignore que ce dragon est le diable. Cette femme représentait la Vierge Marie, qui, demeurant vierge, a enfanté notre chef vierge, et qui, de plus, était dans sa personne la figure de la sainte Église ; car de même qu’en enfantant son Fils elle resta vierge, ainsi l’Église enfante en tout temps les membres de Jésus-Christ, sans perdre sa virginité. Nous avons entrepris de vous exposer, avec le secours du Seigneur, les articles du très auguste symbole, afin de graver dans vos cœurs les vérités contenues dans chaque article. Vos cœurs sont préparés, car l’ennemi en a été chassé.~
-(rubrica 1570)
-La maison a été nettoyée, qu'elle ne reste pas vide, de peur qu'un déserteur ne la trouve vide, qu'il n'entraîne avec lui sept autres plus méchants que lui, et que la situation de cet homme ne devienne, comme le dit l'Evangile, pire que le première.
+[Lectio5_]
+Vous avez aussi reçu le symbole comme protection de celle qui va vous enfanter, contre le venin du serpent. Il est écrit dans l’Apocalypse de l’Apôtre saint Jean que le dragon se tint devant la femme qui allait enfanter, afin de dévorer son enfant dès qu’il serait né. Aucun de vous n’ignore que ce dragon est le diable. Cette femme représentait la Vierge Marie, qui, demeurant vierge, a enfanté notre chef vierge, et qui, de plus, était dans sa personne la figure de la sainte Église ; car de même qu’en enfantant son Fils elle resta vierge, ainsi l’Église enfante en tout temps les membres de Jésus-Christ, sans perdre sa virginité. Nous avons entrepris de vous exposer, avec le secours du Seigneur, les articles du très auguste symbole, afin de graver dans vos cœurs les vérités contenues dans chaque article. Vos cœurs sont préparés, car l’ennemi en a été chassé.
 
-[Lectio6]
-(rubrica 1570)
-Dès que le pire envahisseur est exclu, le meilleur détenteur est introduit. Qui est l'envahisseur ? Le diable Qu'a-t-il envahi ? Il a aussi trompé l'homme qu'il n'a pas trompé. Il lui a promis l'immortalité et s'est emparé de l'iniquité.~
-(deinde dicitur)
+[Lectio5et6]
+La maison a été nettoyée, qu'elle ne reste pas vide, de peur qu'un déserteur ne la trouve vide, qu'il n'entraîne avec lui sept autres plus méchants que lui, et que la situation de cet homme ne devienne, comme le dit l'Evangile, pire que le première.
+Dès que le pire envahisseur est exclu, le meilleur détenteur est introduit. Qui est l'envahisseur ? Le diable Qu'a-t-il envahi ? Il a aussi trompé l'homme qu'il n'a pas trompé. Il lui a promis l'immortalité et s'est emparé de l'iniquité. 
+
+[Lectio6_]
 C’est à cet ennemi que vous avez fait profession de renoncer, et dans cette profession, ce n’est pas aux hommes, mais à Dieu et à ses Anges qui l’inscrivaient, que vous avez dit : Je renonce. N’y renoncez pas seulement en paroles, mais encore dans votre conduite ; non seulement par le son de votre langue, mais encore par la direction de votre vie ; non seulement par le bruit des lèvres, mais encore par le témoignage des œuvres. Sachez que vous avez entrepris de combattre un ennemi rusé, ancien, et qui semble parfois assoupi ; qu’après votre renoncement il ne trouve plus en vous de ses œuvres, qu’il n’ait pas le droit de vous entraîner dans son esclavage. Tu es en effet pris sur le fait, tu es démasqué, ô chrétien, quand tu fais une chose et que tu en professes une autre, fidèle de nom, te démentant dans tes œuvres, ne gardant pas la foi de ta promesse ; tantôt entrant à l’église pour y répandre des prières, et un moment après dans les spectacles pour mêler impudemment ta voix à celle des histrions. Qu’as-tu de commun avec les pompes du diable, auxquelles tu as renoncé ?
 
 [Lectio7]
@@ -107,25 +68,8 @@ Notre Seigneur, en disant : « Je prierai mon Père et il vous donnera un autre 
 [Lectio8]
 « Le monde ne peut donc recevoir cet Esprit, parce qu’il ne le voit pas et ne le connaît point ». L’amour mondain est dépourvu de ces yeux invisibles au moyen desquels on peut voir l’Esprit-Saint, qui ne peut être vu que d’une manière invisible. « Mais vous, dit notre Seigneur, vous le connaîtrez, parce qu’il demeurera au milieu de vous et qu’il sera en vous ». Il sera en eux pour y demeurer ; il ne demeurera pas au milieu d’eux pour y être ; car le fait d’être en un lieu est antérieur à celui d’y demeurer. Mais afin que les disciples n’entendissent pas ces paroles : « Il demeurera au milieu de vous », d’un séjour visible, comme celui que fait d’ordinaire un hôte chez celui qui lui donne l’hospitalité, il a expliqué ces paroles : « Il demeurera au milieu de vous », en ajoutant : « Il sera en vous ».
 
-[Responsory8]
-@Tempora/Pasc6-0
+[Lectio9_1]
+L’Esprit-Saint se voit donc d’une manière invisible ; et s’il n’est pas en nous, nous ne pouvons en avoir la connaissance. C’est ainsi que nous voyons aussi en nous-mêmes notre propre conscience. Nous voyons bien le visage d’un autre, et nous ne pouvons voir le nôtre ; au contraire, nous voyons notre propre conscience, et nous ne voyons pas celle d’autrui. Mais notre conscience ne peut jamais exister qu’en nous-mêmes, 
 
-[Lectio9]
-L’Esprit-Saint se voit donc d’une manière invisible ; et s’il n’est pas en nous, nous ne pouvons en avoir la connaissance. C’est ainsi que nous voyons aussi en nous-mêmes notre propre conscience. Nous voyons bien le visage d’un autre, et nous ne pouvons voir le nôtre ; au contraire, nous voyons notre propre conscience, et nous ne voyons pas celle d’autrui. Mais notre conscience ne peut jamais exister qu’en nous-mêmes,~
-(deinde dicitur)
+[Lectio9_2]
 tandis que l’Esprit-Saint peut être sans nous. Il nous est donné afin qu’il soit aussi en nous ; et, s’il n’est point en nous, il nous est impossible de le voir, de le connaître, comme il doit être vu et connu. Après avoir promis le Saint-Esprit, notre Seigneur ne voulant pas qu’on pût croire qu’il donnerait ce divin Paraclet pour le remplacer lui-même et qu’il cesserait ainsi d’être avec ses disciples, ajouta : « Je ne vous laisserai point orphelins ; je viendrai à vous » [44]. Non content donc de nous avoir rendus les fils adoptifs de son Père, et d’avoir voulu que nous ayons pour Père, par un effet de la grâce, celui qui est son Père par nature, le Fils de Dieu fait preuve encore lui-même à notre égard d’une tendresse en quelque sorte paternelle, lorsqu’il dit : « Je ne vous laisserai point orphelins » 
-(sed rubrica 1570 omittitur)
-&teDeum
-
-[Versum 2]
-@Tempora/Pasc6-0
-
-[Versum 2](rubrica 1960)
-@Tempora/Pasc5-4:Versum 2
-
-[Ant 2]
-@Tempora/Pasc6-0
-
-[Ant 2](rubrica 1960)
-@Tempora/Pasc5-4:Ant 2
-

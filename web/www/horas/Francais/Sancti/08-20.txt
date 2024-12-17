@@ -1,14 +1,13 @@
 [Rank]
-St Bernard, abbé et docteur de l’Eglise;;Duplex;;3;;vide C5a
+St Bernard, abbé et docteur de l’Eglise
+(sed rubrica 1570 aut rubrica 1617)
+St Bernard, abbé
 
 [Name]
 Bernard
 
 [Oratio]
 @Commune/C4:Oratio2:s/N\./Bernard/
-
-[Commemoratio] (rubrica 1570 aut rubrica 1910 aut rubrica divino)
-@Sancti/08-15:Octava
 
 [Lectio4]
 Bernard naquit à Fontaine, en Bourgogne, d’une noble famille. Dans sa jeunesse, il fut, à cause de sa grande beauté, vivement sollicité par des femmes, mais aucune ne réussit à ébranler sa résolution de garder la chasteté. Pour fuir ces tentations du diable, il prit, à l’âge de vingt-deux ans, le parti d’entrer à Cîteaux, berceau de l’Ordre de ce nom, qui florissait alors par une grande sainteté. Ayant ou connaissance du projet de Bernard, ses frères mirent tous leurs efforts à l’en détourner ; mais, dans cette lutte, il fut le plus éloquent et le plus heureux ; car il les amena si bien, eux et d’autres, à sa manière de voir, que trente jeunes gens reçurent avec lui l’habit religieux. Devenu moine, il s’adonna tellement au jeûne, que chaque fois qu’il prenait son repas, il semblait endurer un supplice. Merveilleusement appliqué aux veilles et aux oraisons prolongées, voué à la pratique de la pauvreté chrétienne, il menait sur terre une vie presque céleste, étrangère aux sollicitudes et aux désirs des choses périssables.
@@ -22,12 +21,3 @@ Bernard a écrit beaucoup d’autres ouvrages, dans lesquels se montre une doctr
 [Lectio94]
 Bernard, né à Fontaine, en Bourgogne, conserva, depuis son enfance, la plus admirable chasteté. A l’âge de vingt-deux ans, il entra au monastère de Cîteaux qui donna son nom à l’Ordre tout entier. Il y amena avec lui ses frères et plusieurs autres jeunes gens qui embrassèrent en même temps que lui la vie monastique. Il s’adonnait avec une ardeur admirable à la pratique des veilles et de l’oraison. L ’humilité, la miséricorde, la bonté, la sagesse émanaient de toute sa personne ; il ne cessait de faire des choses du ciel, l’objet de sa méditation. Nommé Abbé de Clairvaux, il construisit en beaucoup d’endroits des monastères qui restèrent longtemps soumis à son admirable règle et aux usages qu’il avait établis. Il écrivit un grand nombre d’ouvrages d’une doctrine si élevée, qu’elle semble inspirée de Dieu et n’être pas uniquement le fruit de son travail personnel. Sollicité par les plus grands princes, d’arbitrer leurs différends et de régler les affaires ecclésiastiques, il vint souvent en Italie. Il rendit de grands services au Souverain Pontife Innocent II, dans sa lutte contre le schisme de Pierre de Léon. Après avoir bien mérité de l’Église, il s’endormit dans le Seigneur à l’âge de soixante-trois ans.
 &teDeum
-
-[Lectio7]
-@Commune/C1a:Lectio7
-
-[Lectio8]
-@Commune/C1a:Lectio8
-
-[Lectio9]
-@Commune/C1a:Lectio9

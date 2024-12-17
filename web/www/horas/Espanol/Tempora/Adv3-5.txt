@@ -1,14 +1,15 @@
 [Rank]
 Feria VI Quattuor Temporum in Adventu;;Feria major;;2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1930)
 Feria VI Quattuor Temporum Adventus;;Feria major;;4
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria VI infra Hebdomadam III Adventus;;Feria major;;2
 
-[Rule]
-Preces Feriales
+[Oratio]
+Despierta tu poder, Señor, y ven a salvarnos; para que cuantos confían en tu amor pronto sean liberados de todo mal.
+$Qui vivis
 
 [Lectio1]
 Lectura del santo Evangelio según San Lucas
@@ -47,10 +48,6 @@ R. Y su resplandor con Él.
 
 [Ant 2]
 En cuanto tu saludo * llegó a mis oídos, la criatura saltó de alegría en mi vientre. Aleluya.
-
-[Oratio]
-Despierta tu poder, Señor, y ven a salvarnos; para que cuantos confían en tu amor pronto sean liberados de todo mal.
-$Qui vivis
 
 [Ant 3]
 Éste es el testimonio * que dio Juan: El que viene detrás de mí existía antes que yo.

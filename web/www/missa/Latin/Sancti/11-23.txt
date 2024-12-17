@@ -1,11 +1,12 @@
 [Rank]
+S. Clementis Papæ et Martyris;;Duplex;;3;;vide C2
+(sed communi Summorum Pontificum)
 S. Clementis Papæ et Martyris;;Duplex;;3;;vide C4b
-
-[Rank] (rubrica 1570)
-S. Clementis Papæ et Martyris;;Semiduplex;;2.2;;vide C2
 
 [Rule]
 OPapaM=Cleméntem;
+vide C2;
+(sed communi Summorum Pontificum)
 vide C4b;
 Gloria
 
@@ -17,20 +18,17 @@ Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis.
 &Gloria
 v. Dicit Dóminus: Sermónes mei, quos dedi in os tuum, non defícient de ore tuo: et múnera tua accépta erunt super altáre meum.
 
-[Commemoratio Oratio]
-!Pro S. Felicitate
-Præsta, quǽsumus, omnípotens Deus: ut, beátæ Felicitátis Martyris tuæ sollémnia recenséntes, méritis ipsíus protegámur et précibus.
+[Oratio]
+Deus, qui nos ánnua beáti Cleméntis Mártyris tui atque Pontíficis sollemnitáte lætíficas: concéde propítius; ut, cujus natalítia cólimus, virtútem quoque passiónis imitémur.
 $Per Dominum
 
 [Lectio]
 @Tempora/Pent23-0
 
-[Commemoratio Secreta]
-!Pro S. Felicitate
-Vota pópuli tui, Dómine, propitiátus inténde: et, cujus nos tríbuis sollémnia celebráre, fac gaudére suffrágiis.
+[Secreta]
+Múnera tibi, Dómine, obláta sanctífica: et, intercedénte beáto Cleménte Mártyre tuo atque Pontífice, per hæc nos a peccatórum nostrórum máculis emúnda.
 $Per Dominum
 
-[Commemoratio Postcommunio]
-!Pro S. Felicitate
-Súpplices te rogámus, omnípotens Deus: ut, intercedéntibus Sanctis tuis, et tua in nobis dona multíplices, et témpora nostra dispónas.
+[Postcommunio]
+Córporis sacri et pretiósi Sánguinis repléti libámine, quǽsumus, Dómine, Deus noster: ut, quod pia devotióne gérimus; intercedénte beáto Cleménte Mártyre tuo atque Pontífice, certa redemptióne capiámus.
 $Per Dominum

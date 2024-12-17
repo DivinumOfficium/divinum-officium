@@ -1,20 +1,25 @@
 [Rank]
 S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 
-[Name]
-Ambrose
-
 [Rule]
 vide C4a;
 Gloria
 CredoDa
 no Vigil1960
 
+[Name]
+Ambrose
+
 [Introitus]
 @Commune/C4a
 
 [Oratio]
 @Commune/C4a:Oratio:s/N\./Ambrosius/
+
+[Commemoratio Oratio]
+!Commemoratio Vigiliæ Immaculatæ Conceptionis
+God, Gij hebt de Moeder van uw enige Zoon bij haar Ontvangenis wondervol voor de erfschuld behoed. Wij vragen U, laat ons, beschermd door haar voorspraak, rein van hart haar feest meevieren.
+$Per eundem
 
 [Lectio]
 @Commune/C4a
@@ -38,6 +43,11 @@ De Heer heeft gezworen en het zal Hem niet berouwen: Gij zijt priester voor eeuw
 Almachtige, eeuwige God, mogen de gaven, die wij uw majesteit hebben opgedragen, door de voorspraak van uw heilige belijder en bisschop Ambrosius onze eeuwige zaligheid ten goede komen.
 $Per Dominum
 
+[Commemoratio Secreta]
+!Commemoratio Vigiliæ Immaculatæ Conceptionis
+Moge, Heer, het gebed van de onbevlekte Moeder van God onze offergaven in uw goedheid aanbevelen. Haar immers hebt Gij voor alle erfschuld behoed, opdat Zij een waardige woonplaats zou worden voor uw Zoon.
+$Qui tecum
+
 [Communio]
 @Commune/C2c
 
@@ -45,18 +55,7 @@ $Per Dominum
 Bij het ontvangen van de geheimen van onze zaligheid vragen wij U, almachtige God, laat het gebed van uw heilige belijder en bisschop Ambrosius, op wiens feest wij dit offer uw Majesteit brengen, ons overal tot steun zijn.
 $Per Dominum
 
-[Commemoratio Oratio]
-!Commemoratio Vigiliæ Immaculatæ Conceptionis
-God, Gij hebt de Moeder van uw enige Zoon bij haar Ontvangenis wondervol voor de erfschuld behoed. Wij vragen U, laat ons, beschermd door haar voorspraak, rein van hart haar feest meevieren.
-$Per eundem
-
-[Commemoratio Secreta]
-!Commemoratio Vigiliæ Immaculatæ Conceptionis
-Moge, Heer, het gebed van de onbevlekte Moeder van God onze offergaven in uw goedheid aanbevelen. Haar immers hebt Gij voor alle erfschuld behoed, opdat Zij een waardige woonplaats zou worden voor uw Zoon.
-$Qui tecum
-
 [Commemoratio Postcommunio]
 !Commemoratio Vigiliæ Immaculatæ Conceptionis
 Genadige God, schenk onze zwakheid uw hulp, opdat wij, die de vigilie vieren van het feest van de onbevlekte Ontvangenis van de Moeder van uw enige Zoon, ons met de hulp van haar voorspraak uit onze zonden kunnen opheffen.
 $Per eúndem
-

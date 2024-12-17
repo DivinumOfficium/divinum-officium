@@ -16,6 +16,18 @@ Capitulum Versum 2 ad Laudes tantum
 Minores sine Antiphona
 Feria
 
+[Ant Vespera]
+@Tempora/Quad6-4
+
+[Oratio Matutinum]
+@Tempora/Quad6-4
+
+[Oratio]
+@Tempora/Quad6-4::s/usque ad mortem/usque ad mortem, mortem autem crucis/
+
+[Prelude Vespera] (rubrica 1955 aut rubrica 1960)
+!Vesperæ ab iis qui solemni Actioni liturgicæ postmeridianæ intersunt, hodie non dicuntur.
+
 [Ant Matutinum]
 Astitérunt reges terræ, * et príncipes convenérunt in unum, advérsus Dóminum, et advérsus Christum ejus.;;2
 Divisérunt sibi * vestiménta mea, et super vestem meam misérunt sortem.;;21
@@ -134,7 +146,7 @@ R. Et sicut gigántes stetérunt contra me.
 16 Adeámus ergo cum fidúcia ad thronum grátiæ: ut misericórdiam consequámur, et grátiam inveniámus in auxílio opportúno. 
 1 Omnis namque Póntifex ex homínibus assúmptus, pro homínibus constitúitur in iis, quæ sunt ad Deum, ut ófferat dona, et sacrifícia pro peccátis:
 2 qui condolére possit iis, qui ignórant et errant: quóniam et ipse circúmdatus est infirmitáte:
-3 et proptérea debet quemádmodum pro pópulo, ita étiam pro semetípso offérre pro peccátis. 
+3 et proptérea debet quemádmodum pro pópulo, ita étiam pro semetípso offérre pro peccátis.
 
 [Responsory8]
 R. Jesum trádidit ímpius summis princípibus sacerdótum, et senióribus pópuli: 
@@ -173,18 +185,6 @@ R. Sicut mórtuos sǽculi.
 
 [Ant 2]
 Posuérunt * super caput ejus causam ipsíus scriptam: Jesus Nazarénus, Rex Judæórum.
-
-[Oratio]
-@Tempora/Quad6-4::s/usque ad mortem/usque ad mortem, mortem autem crucis/
-
-[Oratio Matutinum]
-@Tempora/Quad6-4
-
-[Prelude Vespera] (rubrica 1955 aut rubrica 1960)
-!Vesperæ ab iis qui solemni Actioni liturgicæ postmeridianæ intersunt, hodie non dicuntur.
-
-[Ant Vespera]
-@Tempora/Quad6-4
 
 [Versum 3]
 @:Versum 2

@@ -1,9 +1,6 @@
 [Rank]
 S. Augustini Episcopi et Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
 
-[Name]
-Augustine
-
 [Rule]
 vide C4a;
 Gloria
@@ -17,6 +14,9 @@ CredoDA
 S. Hermes, Mártir
 ! Comemoração
 ! Paramentos vermelhos
+
+[Name]
+Augustine
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -49,20 +49,3 @@ Encontrei o meu servo David e ungi-o com meu óleo sagrado. Aleluia.
 
 [Postcommunio]
 @Commune/C4a:Postcommunio
-
-[Commemoratio Oratio]
-! S. Hermes, Mártir
-Ó Deus, que fortalecestes o B. Hermes, vosso Mártir, com a virtude da constância no seu suplício, concedei-nos, pelo vosso amor, que, seguindo seu exemplo, desprezemos as prosperidades deste mundo e nunca temamos as adversidades.
-$Per Dominum
-
-[Commemoratio Secreta]
-! S. Hermes, Mártir
-Vos oferecemos, Senhor, em memória dos vossos Santos, este sacrifício de louvor; e, Vos imploramos, fazei que aquilo que lhe alcançou a glória sirva de proveito à nossa salvação.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! S. Hermes, Mártir
-Saciados, Senhor, com a celestial bênção, invocamos a vossa clemência, a fim de que pela intercessão do B. Hermes, vosso Mártir, alcancemos os salutares efeitos do sacrifício, que humildemente celebramos.
-$Per Dominum
-
-

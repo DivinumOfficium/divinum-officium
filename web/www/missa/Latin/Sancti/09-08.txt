@@ -1,9 +1,6 @@
 [Rank]
 Nativitate Beatæ Mariæ Virginis;;Duplex II classis cum Octava simplici;;5.1;;ex C11
 
-[Rank] (rubrica 196)
-Nativitate Beatæ Mariæ Virginis;;Duplex II classis cum Octava simplici;;5;;ex C11
-
 [Rule]
 ex C11;
 Gloria
@@ -40,15 +37,3 @@ $Qui tecum.
 
 [Postcommunio]
 @Sancti/07-02
-
-[Commemoratio Oratio]
-!Pro S. Adriani, Mart
-@Commune/C2:Oratio:s/N\./Adriani/
-
-[Commemoratio Secreta]
-!Pro S. Hadriano
-@Commune/C2:Secreta
-
-[Commemoratio Postcommunio]
-!Pro S. Hadriano
-@Commune/C2:Postcommunio

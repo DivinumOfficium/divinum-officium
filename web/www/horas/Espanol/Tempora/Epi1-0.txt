@@ -3,12 +3,6 @@ Sanctæ Familiæ Jesu Mariæ Joseph;;Duplex majus;;4
 (sed rubrica 1960)
 Sanctæ Familiæ Jesu Mariæ Joseph;;Duplex II classis;;5
 
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-No Sunday Commemoratio
-
 [Ant Vespera]
 Jacob * engendró a José, el esposo de María, de la cual nació Jesús, llamado Cristo.;;109
 Un ángel del Señor * se le apareció en sueños a José y le dijo: No tengas reparo en llevarte a María tu mujer, porque la criatura que hay en ella viene del Espíritu Santo.;;112
@@ -60,9 +54,6 @@ en unión con el Padre excelso
 y el Espíritu Santo. 
 Amén.
 
-[Versum Prima]
-Tú que fuiste obediente a María y a José.
-
 [Versum 1]
 V. Dichosos los que viven en tu casa.
 R. Alabándote siempre.   
@@ -73,6 +64,10 @@ La Palabra se hizo carne * y acampó entre nosotros, llena de gracia y de verdad
 [Oratio]
 Señor Jesucristo, obedeciendo a María y a José, santificaste la vida de familia con admirables virtudes; concédenos por la intercesión de ambos aprender los ejemplos de tu Sagrada Familia para ser dignos de su compañía en el cielo. 
 $Qui vivis
+
+[Commemoratio]
+!Conmemoración del Domingo en la Octava de Epifanía
+@Tempora/Epi1-0a:Oratio:s/V\. .*/V. Vienen todos de Saba. Aleluya./ s/R\. .*/R.  Trayendo incienso y oro. Aleluya. /
 
 [Invit]
 A Cristo, Hijo de Dios, sujeto a María y a José, * Venid, adorémosle.
@@ -182,7 +177,7 @@ R. Los que habitan en tu casa.
 24 y no a hombre, sabiendo que recibiréis del Señor la herencia por galardón, pues a Cristo es a quien servís. 
 25 Mas el que obra mal, llevará el pago de su injusticia, porque en Dios no hay acepción de personas. 
 1 Amos, tratad a los siervos según lo que dictan la justicia y la equidad, sabiendo que también vosotros tenéis un Amo en el cielo. 
-2 Perseverad en la oración velando en ella, y acompañándola con acciones de gracias. 
+2 Perseverad en la oración velando en ella, y acompañándola con acciones de gracias.
 
 [Responsory3]
 R. Debió en todo asemejarse a sus hermanos, 
@@ -230,7 +225,7 @@ Cuando Jesús hubo cumplido los doce años, subieron sus padres a Jerusalén com
 _
 Homilía de San Bernardo, Abad.
 !Homilia 1 sobre Missus est, n. 7-8
-Y les estaba sujeto. ¿Quién y a quiénes obedecía? Dios a los hombres; Dios, a quien están sujetos los Ángeles, a quien los Principados y Potestades obedecen, estaba sujeto a María, y a José por respeto a María. Qué es más admirable: la benignísima dignación del Hijo, o la excelentísima dignidad de la Madre. Ambas causan estupor, ambas constituyen un milagro. Que Dios se someta a una mujer constituye un acto de humildad sin semejante; y que una mujer mande a un Dios, puedes ver en ello una sublimidad sin par. En alabanza de las vírgenes se canta que siguen al Cordero dondequiera que vaya. ¿De qué alabanzas juzgas digna a la que le precede? 
+Y les estaba sujeto. ¿Quién y a quiénes obedecía? Dios a los hombres; Dios, a quien están sujetos los Ángeles, a quien los Principados y Potestades obedecen, estaba sujeto a María, y a José por respeto a María. Qué es más admirable: la benignísima dignación del Hijo, o la excelentísima dignidad de la Madre. Ambas causan estupor, ambas constituyen un milagro. Que Dios se someta a una mujer constituye un acto de humildad sin semejante; y que una mujer mande a un Dios, puedes ver en ello una sublimidad sin par. En alabanza de las vírgenes se canta que siguen al Cordero dondequiera que vaya. ¿De qué alabanzas juzgas digna a la que le precede?
 
 [Responsory7]
 R. Verdaderamente Tú eres el Rey desconocido, 
@@ -318,6 +313,9 @@ Ilumínanos, Señor, * con los ejemplos de tu familia, y dirige nuestros pasos p
 !Flp 2:7
 v. Se despojó de su rango y tomó la condición de esclavo, pasando por uno de tantos y actuando como un hombre cualquiera.
 
+[Versum Prima]
+Tú que fuiste obediente a María y a José.
+
 [Responsory Tertia]
 R.br. Por nosotros se hizo pobre. * Él, que era rico. 
 R. Por nosotros se hizo pobre. * Él, que era rico. 
@@ -345,10 +343,6 @@ _
 V. He vivido pobre y en trabajos desde mi juventud.
 R. Cuando fui exaltado, me vi humillado y abatido.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
 [Responsory Nona]
 R.br. He vivido pobre y en trabajos. * Desde mi juventud. 
 R. He vivido pobre y en trabajos. * Desde mi juventud. 
@@ -372,7 +366,3 @@ Y decían: * ¿De dónde le viene a éste esa sabiduría y esos milagros? ¿No e
 
 [Ant 3]
 María * conservaba todo esto en su corazón.
-
-[Commemoratio]
-!Conmemoración del Domingo en la Octava de Epifanía
-@Tempora/Epi1-0a:Oratio:s/V\. .*/V. Vienen todos de Saba. Aleluya./ s/R\. .*/R.  Trayendo incienso y oro. Aleluya. / 

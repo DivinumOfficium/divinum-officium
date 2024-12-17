@@ -1,12 +1,6 @@
 [Rank]
 S. Ephraem Syri Confessoris et Ecclesiae Doctorem;;Duplex;;3;;vide C5a
 
-[RankNewcal]
-S. Ephraem Syri Confessoris et Ecclesiae Doctorem;;Duplex optional;;2;;vide C5a
-
-[Name]
-Ephraem
-
 [Rule]
 vide C5a;
 Gloria
@@ -19,6 +13,9 @@ Gloria
 S.S. Marcos e Marceliano, Mártires
 ! Comemoração
 ! Paramentos vermelhos
+
+[Name]
+Ephraem
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -47,19 +44,3 @@ $Per Dominum
 
 [Postcommunio]
 @Commune/C4a:Postcommunio
-
-[Commemoratio Oratio]
-! S.S. Marcos e Marceliano
-Ó Deus Omnipotente, celebrando nós o nascimento dos vossos Santos Mártires Marcos e Marceliano, permiti, Vos suplicamos, que por sua intercessão sejamos livres de todos os males que nos ameaçam.
-$Per Dominum
-
-[Commemoratio Secreta]
-! S.S. Marcos e Marceliano
-Santificai, Senhor, estes dons que Vos são oferecidos, a fim de que pela intercessão dos vossos Santos Mártires Marcos e Marceliano Vos digneis aplacar-Vos e olhardes aplacado para nós.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! S.S. Marcos e Marceliano
-Saciados com este dom salutar, humildemente Vos suplicamos que, havendo recebido com alegria este sacramento, sejamos, por intercessão dos vossos Santos Mártires Marcos e Marceliano, restaurados pelo seu eficaz efeito.
-$Per Dominum
-

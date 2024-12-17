@@ -1,13 +1,13 @@
 [Rank]
 S. Ephræm Syri Confessoris et Ecclesiæ Doctorem;;Duplex;;3;;vide C5a
 
-[Name]
-Ephræm
-
 [Rule]
 vide C5a;
 Gloria
 CredoDA
+
+[Name]
+Ephræm
 
 [Oratio]
 Deus, qui Ecclésiam tuam beáti Ephræm Confessóris tui et Doctoris mira eruditióne et præcláris vitæ méritis illustráre voluísti: te súpplices exorámus; ut, ipso intercedénte, eam advérsus erróris et pravitátis insídias perénni tua virtúte deféndas.
@@ -16,18 +16,6 @@ $Per Dominum
 [Secreta]
 Sancti Ephræm Confessóris tui atque Doctóris nobis, Dómine, pia non desit orátio: quæ et múnera nostra concíliet; et tuam nobis indulgéntiam semper obtíneat.
 $Per Dominum
-
-[Commemoratio Oratio]
-!SS. Marci et Marcelliani Martyrum
-@Sancti/06-18t:Oratio
-
-[Commemoratio Secreta]
-!SS. Marci et Marcelliani Martyrum
-@Sancti/06-18t:Secreta
-
-[Commemoratio Postcommunio]
-!SS. Marci et Marcelliani Martyrum
-@Sancti/06-18t:Postcommunio
 
 [Postcommunio]
 @Commune/C4a:Postcommunio1:s/N\./Ephræm/

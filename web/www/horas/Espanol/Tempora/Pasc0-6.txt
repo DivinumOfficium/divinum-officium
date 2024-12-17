@@ -1,16 +1,9 @@
 [Rank]
 Sabbato in Albis;;Semiduplex I class;;6;;ex Pasc0-0
 
-[Rule]
-ex Pasc0-0;
-1 nocturn;
-Omit Hymnus Preces Suffragium;
-Minores sine Antiphona;
-Capitulum Versum 2;
-Psalmi Dominica;
-
-[Ant Matutinum]
-@Tempora/Pasc0-3
+[Oratio]
+Dios todopoderoso, concede a quienes hemos celebrado con amor estas fiestas pascuales, llegar a las alegrías eternas.
+$Per Dominum
 
 [Lectio1]
 Lección del Santo Evangelio según San Juan.
@@ -44,8 +37,3 @@ No debe causar admiración que por el más joven se represente a la Sinagoga y p
 
 [Ant 2]
 Los dos corrían juntos; * pero el otro discípulo corría más que Pedro: se adelantó y llegó primero al sepulcro. Aleluya. 
-
-[Oratio]
-Dios todopoderoso, concede a quienes hemos celebrado con amor estas fiestas pascuales, llegar a las alegrías eternas.
-$Per Dominum
-

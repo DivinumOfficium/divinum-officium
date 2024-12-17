@@ -1,21 +1,18 @@
 [Rank]
 S. Petri Canisii Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C5a
 
-[RankNewcal]
-S. Petri Canisii Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C5a
-
 [Rule]
 vide C5a;
 Gloria
 CredoDA
 
-[Name]
-Petre
-
 [Comment]
 # 27 IV – S. Pedro Canísio, Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
+
+[Name]
+Petre
 
 [Introitus]
 @Commune/C4a:Introitus

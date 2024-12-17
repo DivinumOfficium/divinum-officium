@@ -1,16 +1,16 @@
 [Rank]
 S. Hilarii Episcopi Confessoris Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 
-[Rank](rubrica 1570)
+[Rank] (rubrica 1570)
 S. Hilarii Episcopi Confessoris;;Semiduplex;;2.2;;vide C4a
-
-[Name]
-Hilarius
 
 [Rule]
 vide C4a;
 Gloria
 CredoDa
+
+[Name]
+Hilarius
 
 [Oratio]
 @Commune/C4a:Oratio:s/N\./Hilarius/
@@ -20,18 +20,3 @@ CredoDa
 
 [Postcommunio]
 @Commune/C4a:Postcommunio:s/N\./Hilarius/
-
-[Commemoratio Oratio]
-!Pro S. Felicis Mart.
-Wij vragen U, almachtige God, laat de voorbeelden van uw heiligen ons tot een beter leven opwekken, opdat wij, die hun feest vieren, ook hun daden navolgen.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Pro S. Felicis Mart.
-Aanvaard goedgunstig, o Heer, de offers, die wij U wijden met de verdiensten van uw heilige martelaar Felix, en laat ze ons blijvend hulp bieden.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Felicis Mart.
-Wij vragen U, Heer, nu wij ons aan deze heilsgeheimen verzadigd hebben, dat wij de steun mogen ondervinden van het gebed van uw heilige martelaar Felix, wiens feest wij vieren.
-$Per Dominum

@@ -1,15 +1,6 @@
 [Rank]
 In Circumcisione Domini;;Duplex II classis;;5.09;;ex Sancti/12-25m3
 
-[Rank] (rubrica 196)
-Octava Nativitatis Domini;;Duplex I classis;;6;;ex Sancti/12-25m3
-
-[Rule]
-ex Sancti/12-25m3;
-Gloria
-Credo
-Prefatio=Nat
-
 [Introitus]
 @Tempora/Nat30
 
@@ -34,9 +25,6 @@ Nadat God vroeger vele malen tot de vaderen gesproken heeft door de profeten, he
 
 [Offertorium]
 @Tempora/Nat30
-
-[Secreta]
-@Commune/C2
 
 [Communio]
 @Tempora/Nat30

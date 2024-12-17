@@ -7,20 +7,13 @@ Invit2
 [Responsory Vespera 1]
 @Psalterium/Special/Major Special:Day6M Vespera:3-8
 
-[Responsory Laudes]
-@Psalterium/Special/Major Special:Day0M Laudes:3-8
-
-[Responsory TertiaM]
-@Psalterium/Special/Minor Special:Dominica Tertia:s/.*_.//s
-
-[Responsory SextaM]
-@Psalterium/Special/Minor Special:Dominica Sexta:s/.*_.//s
-
-[Responsory NonaM]
-@Psalterium/Special/Minor Special:Dominica Nona:s/.*_.//s
-
 [Responsory Vespera]
 @Psalterium/Special/Major Special:Day0M Vespera:3-8
+
+[Ant Matutinum 3N]
+Semen cécidit in terram bonam, † et ortem fecit fructum céntuplum.
+V. Exaltáre Dómine in virtúte tua.
+R. Cantábimus et psallémus virtútes tuas.
 
 [Lectio1]
 @Tempora/Quadp2-0:Lectio1:1-6 s/-4/-3/
@@ -64,11 +57,6 @@ Invit2
 [Responsory8]
 @Tempora/Quadp2-1:Responsory2
 
-[Ant Matutinum 3N]
-Semen cécidit in terram bonam, † et ortem fecit fructum céntuplum.
-V. Exaltáre Dómine in virtúte tua.
-R. Cantábimus et psallémus virtútes tuas.
-
 [Lectio9]
 @Tempora/Quadp2-0:Lectio7:s/Unde .*//s
 
@@ -97,3 +85,14 @@ R. Et aquæ ibant et decrescébant usque ad décimum mensem.
 [Responsory12]
 @Tempora/Quadp2-0:Responsory9
 
+[Responsory Laudes]
+@Psalterium/Special/Major Special:Day0M Laudes:3-8
+
+[Responsory TertiaM]
+@Psalterium/Special/Minor Special:Dominica Tertia:s/.*_.//s
+
+[Responsory SextaM]
+@Psalterium/Special/Minor Special:Dominica Sexta:s/.*_.//s
+
+[Responsory NonaM]
+@Psalterium/Special/Minor Special:Dominica Nona:s/.*_.//s

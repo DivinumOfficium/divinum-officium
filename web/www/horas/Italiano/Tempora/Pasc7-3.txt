@@ -4,7 +4,7 @@ Feria Quarta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 [Rank] (rubrica 1960)
 Feria Quarta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria IV post Pentecostes;;Feria;;1;;
 
 [Rule]
@@ -15,6 +15,10 @@ Antiphonas horas
 Hymnus Tertia
 Feria Te Deum
 no93
+
+[Oratio]
+Signore, il Paraclito che procede da te illumini le anime nostre: e come lo promise il Figlio tuo, le introduca in ogni verità: 
+$Qui tecum eiusdem
 
 [Ant Matutinum]
 All'improvviso * venne dal cielo un rumore di vento che si avanza impetuoso, alleluia, alleluia.;;47
@@ -55,10 +59,6 @@ Ario lo credé creatura, non lo attirò già il Padre; perché non considera il 
 
 [Ant 2]
 Io sono il pane vivo, * dice il Signore, disceso dal Cielo, alleluia,, alleluia.
-
-[Oratio]
-Signore, il Paraclito che procede da te illumini le anime nostre: e come lo promise il Figlio tuo, le introduca in ogni verità: 
-$Qui tecum eiusdem
 
 [Ant 3]
 Io sono il pane vivo * disceso dal cielo: se uno mangia di questo pane, vivrà in eterno: e il pane ch'io darò, è la mia carne che io dò per la vita del mondo, alleluia.

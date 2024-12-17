@@ -1,12 +1,15 @@
 @Tempora/Epi1-0a
 
-[Rank]
+[Rank] (rubrica 1963)
 Dominica I post Epiphaniam;;Semiduplex;;5;;vide SanctiM/01-06
 
 [Rule]
 12 lectiones
 Doxology=Epi
 Initia cum responsory
+
+[Ant Matutinum 3N]
+Allelúja, * allelúja, allelúja.;;263;264;265
 
 [Lectio1]
 @Tempora/Epi1-0a:Lectio1:
@@ -17,7 +20,7 @@ Initia cum responsory
 @Tempora/Epi1-0a:Lectio3:s/!.*// s/10 .*//s
 
 [Lectio3]
-@Tempora/Epi1-0a:Lectio3:s/-13/-11/ s/12 .*//s 
+@Tempora/Epi1-0a:Lectio3:s/-13/-11/ s/12 .*//s
 
 [Lectio4]
 @Tempora/Epi1-0a:Lectio3:s/10-/12-/ s/10.*12/12/s
@@ -39,9 +42,6 @@ Initia cum responsory
 
 [Responsory8]
 @SanctiM/01-06
-
-[Ant Matutinum 3N]
-Allelúja, * allelúja, allelúja.;;263;264;265
 
 [Lectio9]
 @Tempora/Epi1-0a:Lectio7

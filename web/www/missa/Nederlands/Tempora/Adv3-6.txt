@@ -1,12 +1,6 @@
 [Rank]
 Sabbato Quattuor Temporum in Adventu;;Feria major;;2.1
 
-[Rank] (rubrica 1960)
-Sabbato Quattuor Temporum Adventus;;Feria major;;4.9
-
-[Rank] (rubrica innovata)
-Sabbato infra Hebdomadam III Adventus;;Feria major;;2.1
-
 [Rule]
 Oratio Dominica
 no Gloria
@@ -23,10 +17,6 @@ v. Kom en toon ons uw aanschijn, Heer, Gij die troont op de Cherubs, en wij zijn
 Herder van Israël, luister aandachtig, Gij, die Jozef weidt als een schaap.
 &Gloria
 v. Kom en toon ons uw aanschijn, Heer, Gij die troont op de Cherubs, en wij zijn gered.
-
-[Oratio]
-God, Gij ziet hoe wij gebukt gaan onder onze boosheid. Doe ons door uw goedgunstigheid uit uw bezoek troost putten.
-$Qui vivis
 
 [LectioL1]
 Lezing uit de Profeet Isaias
@@ -94,10 +84,14 @@ $Qui vivis
 [OratioL5]
 @Tempora/093-6
 
+[Oratio]
+God, Gij ziet hoe wij gebukt gaan onder onze boosheid. Doe ons door uw goedgunstigheid uit uw bezoek troost putten.
+$Qui vivis
+
 [Lectio]
 Lezing uit de tweede Brief van de heilige Apostel Paulus aan de Thessalonicenzen
 !2 Thess 2:1-8
-Broeders, bij de komst van onze Heer Jezus Christus en van onze vereniging met Hem, smeken wij u, dat gij u toch niet zo snel van uw inzicht laat afbrengen en u niet ongerust laat maken, noch door een geestesuitspraak, noch door een woord of een brief, die zogenaamd van ons afkomstig is, als zou de dag des Heren dichtbij zijn. Laat toch niemand u misleiden, hoe dan ook. Want eerst moet de afval plaatshebben en de zoon der zonde optreden, de zoon des verderfs, die in opstand komt en zich verheft boven al wat God heet of vereerd wordt, zo zelfs, dat hij in de tempel van God gaat zetelen en zich aanstelt als ware hij God. Weet gij niet meer, dat ik u over dit alles gesproken heb, toen ik nog bij u was? En gij weet, wat hem op het ogenblik nog tegenhoudt, opdat zijn optreden plaats hebbe op de tijd, die hem is vastgesteld. Want de boosheid is in het geheim reeds aan het werk, - alléén, dat hij, die haar op het ogenblik nog tegenhoudt, haar blijve tegenhouden, totdat hij tenslotte uit de weg gaat. En dan zal die booswicht optreden; doch de Heer Jezus zal hem doden met de adem van zijn mond en hem vernietigen door de luister van zijn komst. 
+Broeders, bij de komst van onze Heer Jezus Christus en van onze vereniging met Hem, smeken wij u, dat gij u toch niet zo snel van uw inzicht laat afbrengen en u niet ongerust laat maken, noch door een geestesuitspraak, noch door een woord of een brief, die zogenaamd van ons afkomstig is, als zou de dag des Heren dichtbij zijn. Laat toch niemand u misleiden, hoe dan ook. Want eerst moet de afval plaatshebben en de zoon der zonde optreden, de zoon des verderfs, die in opstand komt en zich verheft boven al wat God heet of vereerd wordt, zo zelfs, dat hij in de tempel van God gaat zetelen en zich aanstelt als ware hij God. Weet gij niet meer, dat ik u over dit alles gesproken heb, toen ik nog bij u was? En gij weet, wat hem op het ogenblik nog tegenhoudt, opdat zijn optreden plaats hebbe op de tijd, die hem is vastgesteld. Want de boosheid is in het geheim reeds aan het werk, - alléén, dat hij, die haar op het ogenblik nog tegenhoudt, haar blijve tegenhouden, totdat hij tenslotte uit de weg gaat. En dan zal die booswicht optreden; doch de Heer Jezus zal hem doden met de adem van zijn mond en hem vernietigen door de luister van zijn komst.
 
 [Graduale]
 !Ps:79:2-3
@@ -108,7 +102,7 @@ V. Heer, wek op uw macht en kom om ons te redden.
 [Evangelium]
 Vervolg ++ van het heilig Evangelie volgens Lucas
 !Luc 3:1-6
-In het vijftiende regeringsjaar van Keizer Tiberius, toen Pontius Pilatus landvoogd was van Judea, Herodes viervorst van Galilea, zijn broeder Filippus viervorst van Iturea en het gewest Trachonitis, en Lisanias viervorst van Abilene, onder de hogepriesters Annas en Caiphas, kwam het woord des Heren tot Johannes, de zoon van Zacharias, in de woestijn. En hij trad op in geheel de Jordaanstreek, en preekte een doopsel van boetvaardigheid tot vergiffenis van zonden: zoals er geschreven staat in het boek der voorspellingen van de profeet Isaias: "De stem van een roepende in de woestijn: Bereidt de weg des Heren, maakt zijn paden recht. Elke kloof moet worden gedempt, iedere berg en heuvel worden geslecht. De kronkelpaden moeten recht, de oneffen wegen effen worden. En alle vlees zal het heil van God aanschouwen."
+In het vijftiende regeringsjaar van Keizer Tiberius, toen Pontius Pilatus landvoogd was van Judea, Herodes viervorst van Galilea, zijn broeder Filippus viervorst van Iturea en het gewest Trachonitis, en Lisanias viervorst van Abilene, onder de hogepriesters Annas en Caiphas, kwam het woord des Heren tot Johannes, de zoon van Zacharias, in de woestijn. En hij trad op in geheel de Jordaanstreek, en preekte een doopsel van boetvaardigheid tot vergiffenis van zonden: zoals er geschreven staat in het boek der voorspellingen van de profeet Isaias: “De stem van een roepende in de woestijn: Bereidt de weg des Heren, maakt zijn paden recht. Elke kloof moet worden gedempt, iedere berg en heuvel worden geslecht. De kronkelpaden moeten recht, de oneffen wegen effen worden. En alle vlees zal het heil van God aanschouwen.”
 
 [Offertorium]
 !Zach 9:9

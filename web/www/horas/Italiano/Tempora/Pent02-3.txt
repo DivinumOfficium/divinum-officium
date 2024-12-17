@@ -1,13 +1,8 @@
 [Rank]
 Feria Quarta infra Octavam Corporis Christi;;Semiduplex II class;;5;;ex Tempora/Pent01-4
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1955)
 Feria IV infra Hebdomadam II post Octavam Pentecostes;;Feria;;1
-
-[Rule]
-ex Tempora/Pent01-4;
-9 lectiones
-Doxology=Corp
 
 [Lectio1]
 Dal primo libro dei Re
@@ -17,17 +12,11 @@ Dal primo libro dei Re
 21 Allora spedirono dei messi agli abitanti di Cariatiarim perché dicessero: I Filistei han ricondotta l'arca del Signore: scendete, e riportatela tra voi. 
 1 Andaron dunque gli uomini di Cariatiarim, e ricondussero l'arca del Signore, e la portaron nella casa di Abinadab in Gabaa; e consacrarono Eleazaro, suo figlio, perché custodisse l'arca del Signore.
 
-[Responsory1 1960]
-@Tempora/Pent01-3:Responsory1
-
 [Lectio2]
 !1 Sam 7:2-4
 2 E dal dì in cui l'arca del Signore fu posta in Cariatiarim era passato molto tempo (cioè venti anni), e tutta la casa d'Israele ebbe pace, seguendo il Signore. 
 3 Allora Samuele disse a tutta la casa d'Israele: Se con tutto il vostro cuore vi convertite al Signore, togliete di mezzo a voi gli dèi stranieri, Baalim e Astarot, e preparate i vostri cuori al Signore e servite a lui solo, egli vi libererà dalle mani dei Filistei. 
 4 Allora i figli d'Israele tolsero via Baalim e Astarot, e servirono soltanto al Signore.
-
-[Responsory2 1960]
-@Tempora/Pent01-3:Responsory2
 
 [Lectio3]
 !1 Sam 7:5-8
@@ -35,9 +24,6 @@ Dal primo libro dei Re
 6 E convennero in Masfat, e, attinta dell'acqua, la sparsero dinanzi al Signore, e digiunarono quel giorno, dicendo: Abbiamo peccato contro il Signore. Samuele dunque giudicò Israele in Masfat. 
 7 Ora i Filistei come seppero che i figli d'Israele s'erano radunati a Masfat, i satrapi dei Filistei si mossero contro Israele. A questa notizia i figli d'Israele ebbero paura dei Filistei, 
 8 e dissero a Samuele: Non cessar d'innalzare la tua voce al Signore Dio nostro per noi, affinché ci salvi dalle mani dei Filistei.
-
-[Responsory3 1960]
-@Tempora/Pent01-3:Responsory3
 
 [Lectio4]
 Dal libro di sant'Ambrogio Vescovo sui Sacramenti

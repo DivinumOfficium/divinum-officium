@@ -11,6 +11,9 @@ Psalmi Dominica;
 Antiphonas horas
 No commemoration
 
+[Ant Matutinum]
+@TemporaM/Pasc0-0
+
 [Lectio1] (rubrica tridentina aut rubrica divino)
 @Tempora/Pasc2-0::1
 @Tempora/Pasc2-0:Lectio2:1 s/21\-25/25-28/
@@ -24,6 +27,9 @@ No commemoration
 [Lectio3] (rubrica tridentina aut rubrica divino)
 @Tempora/Pasc2-0:Lectio3:1 s/26/32/
 @Tempora/Pasc2-0:Lectio3:8-9
+
+[Responsory3]
+@Tempora/Pasc0-3:Responsory1
 
 [Lectio4]
 !Act. 13:34-37
@@ -57,9 +63,3 @@ Ténuit in illo noctis horróre inviolábilem majestátis suæ splendórem: luxi
 
 [Lectio12]
 @Tempora/Pasc0-2:Lectio3: s/.* Et vidétur/Et vidétur/s
-
-[Ant Matutinum]
-@TemporaM/Pasc0-0
-
-[Responsory3]
-@Tempora/Pasc0-3:Responsory1

@@ -1,12 +1,6 @@
 [Rank]
 S. Petri Chrysologi Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
 
-[RankNewcal]
-S. Petri Chrysologi Episcopi Confessoris Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
-
-[Name]
-Petre Chrysologe
-
 [Rule]
 vide C4a;
 Gloria
@@ -17,6 +11,9 @@ CredoDA
 !3. třídy
 !Barva bílá
 ✝ kolem 450 v Ravenně
+
+[Name]
+Petre Chrysologe
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -53,15 +50,3 @@ Ty jsi kněz na věky podle řádu Melchisedechova. Aleluja.
 [Postcommunio]
 Aby nám, Pane, tvé oběti přinesly spásu, prosíme, nechť svatý Petr Chrysologus, biskup tvůj a výborný Učitel, jest přímluvcem.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Sv. Barbory, panny a mučednice
-@Commune/C6:Oratio:s/N\./Barbory/
-
-[Commemoratio Secreta]
-!Sv. Barbory, panny a mučednice
-@Commune/C6:Secreta:s/N\./Barbory/
-
-[Commemoratio Postcommunio]
-!Sv. Barbory, panny a mučednice
-@Commune/C6:Postcommunio:s/N\./Barbory/

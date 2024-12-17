@@ -1,20 +1,25 @@
 [Rank]
 S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 
-[Name]
-Ambrose
-
 [Rule]
 vide C4a;
 Gloria
 CredoDa
 no Vigil1960
 
+[Name]
+Ambrose
+
 [Introitus]
 @Commune/C4a
 
 [Oratio]
 @Commune/C4a:Oratio:s/N\./Ambrósii/
+
+[Commemoratio Oratio]
+!Commemoratio Vigiliæ Immaculatæ Conceptionis
+Deus, qui Unigéniti tui Matrem ab origináli culpa in sua Conceptióne mirabíliter præservásti: da, quǽsumus; ut sua nos intercessióne munítos, corde mundos fácias suæ interésse festivitáti:
+$Per eundem
 
 [Lectio]
 @Commune/C4a:Lectio
@@ -37,6 +42,11 @@ Jurávit Dóminus, et non pænitébit eum: Tu es sacérdos in ætérnum, secúnd
 Omnípotens sempitérne Deus, múnera tuæ majestáti obláta, per intercessiónem beáti Ambrósii Confessóris tui atque Pontíficis, ad perpétuam nobis fac proveníre salútem.
 $Per Dominum
 
+[Commemoratio Secreta]
+!Commemoratio Vigiliæ Immaculatæ Conceptionis
+Múnera nostra, Dómine, apud tuam cleméntiam immaculátæ Dei Genetrícis commendet orátio: quam ab omni origináli labe præservásti; ut dignum Fílii tui habitáculum effici mererétur:
+$Qui tecum
+
 [Communio]
 @Commune/C2c
 
@@ -44,18 +54,7 @@ $Per Dominum
 Sacraménta salútis nostræ suscipiéntes, concéde, quǽsumus, omnípotens Deus: ut beáti Ambrósii Confessóris tui atque Pontíficis nos ubíque orátio ádjuvet; in cujus veneratióne hæc tuæ obtúlimus majestáti.
 $Per Dominum
 
-[Commemoratio Oratio]
-!Commemoratio Vigiliæ Immaculatæ Conceptionis
-Deus, qui Unigéniti tui Matrem ab origináli culpa in sua Conceptióne mirabíliter præservásti: da, quǽsumus; ut sua nos intercessióne munítos, corde mundos fácias suæ interésse festivitáti:
-$Per eundem
-
-[Commemoratio Secreta]
-!Commemoratio Vigiliæ Immaculatæ Conceptionis
-Múnera nostra, Dómine, apud tuam cleméntiam immaculátæ Dei Genetrícis commendet orátio: quam ab omni origináli labe præservásti; ut dignum Fílii tui habitáculum effici mererétur:
-$Qui tecum
-
 [Commemoratio Postcommunio]
 !Commemoratio Vigiliæ Immaculatæ Conceptionis
 Concéde, miséricors Deus, fragilitáti nostræ præsídium: ut, qui immaculátæ Conceptiónis Genetrícis unigéniti Fílii tui festivitátem prævenímus; intercessiónis ejus auxílio a nostris iniquitátibus resurgámus.
 $Per eúndem
-

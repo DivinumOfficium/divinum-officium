@@ -1,13 +1,11 @@
 [Rank]
 Feria Quarta Quattuor Temporum Quadragesimæ;;Feria major;;2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1930)
 Feria Quarta Quattuor Temporum Quadragesimæ;;Feria major;;4
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria IV. infra Hebdomadam I in Quadragesima;;Feria major;;2
-
-[Rule]
 
 [Lectio1]
 Lecture du saint Évangile selon saint Matthieu
@@ -18,14 +16,8 @@ Homélie de saint Ambroise Évêque
 !Lib. 7 in Lucæ cap. 11
 Le peuple juif ayant été condamné, voici que le mystère de l’Église est mis en évidence, qui rassemble ses enfants des extrémités de tout l’univers, soit par la pénitence, comme pour les Ninivites, soit par le désir d’apprendre la sagesse, ainsi que la reine du Midi pour entendre les paroles du pacifique Salomon. Reine vraiment, dont le royaume est indivisé, se levant en un seul corps à partir de peuples divers et très distants les uns des autres.
 
-[Responsory1]
-@Tempora/Quad1-0:Responsory7
-
 [Lectio2]
 C'est pourquoi ce mystère est grand, à l'égard du Christ et de l'Église ; cependant plus grande encore est Factuelle réalité, car ce qui a précédé n’était que la figure du mystère qui est maintenant en vérité pleinement réalisé. Alors, en effet, Salomon était la figure, aujourd’hui le Christ est là dans son corps. L’Église est donc composée de deux éléments, l’un qui doit ignorer le péché et l’autre qui doit cesser de pécher ; car la pénitence abolit le péché, la sagesse en préserve.
-
-[Responsory2]
-@Tempora/Quad1-0:Responsory8
 
 [Lectio3]
 De plus, le signe de Jonas ; en même temps qu’une figure de la passion du Seigneur, est aussi l’attestatior des graves péchés commis par les Juifs. On peut y remarquer à la fois, et l’oracle prophétique de la maiesté et la note de miséricorde. Car l’exemple des Ninivites dénonce le châtiment et manifeste le remède. D’où, même pour les Juifs, le devoir de ne pas désespérer du pardon, s’ils veulent faire pénitence.

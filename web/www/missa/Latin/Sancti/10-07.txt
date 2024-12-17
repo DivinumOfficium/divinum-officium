@@ -1,11 +1,10 @@
 [Rank]
 Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex 2 classis;;5.1;;ex C11
 
-[Rank] (rubrica 196)
-Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex 2 classis;;5;;ex C11
+[Rank1960]
+Festum Beatae Mariae Virginis a Rosario;;Duplex 2 classis;;5;;ex C11
 
 [Rule]
-CPapaC=Marcum;
 ex C11;
 Gloria
 Credo
@@ -55,37 +54,3 @@ Floréte, flores, quasi lílium, et date odórem, et frondéte in grátiam, coll
 [Postcommunio]
 Sacratíssimæ Genetrícis tuæ, cujus Rosárium celebrámus, quǽsumus, Dómine, précibus adjuvémur: ut et mysteriórum, quæ cólimus, virtus percipiátur; et sacramentórum, quæ súmpsimus, obtineátur efféctus:
 $Qui vivis
-
-[Commemoratio Oratio]
-!Pro S. Marco Papa et Conf.
-(dicitur)
-Exáudi, Dómine, preces nostras: et, interveniénte beáto Marco Confessóre tuo atque Pontífice, indulgéntiam nobis tríbue placátus et pacem.
-$Per Dominum
-(communi Summorum Pontificum loco huius versus dicitur)
-@Commune/C4b:Oratio
-_
-!Pro Ss. Sergio, Baccho, Marcello et Apulejo Martyribus
-Sanctórum Martyrum tuórum nos, Dómine, Sérgii, Bacchi, Marcélli et Apuléji beáta mérita prosequántur: et tuo semper fáciant amóre fervéntes.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Pro S. Marco Papa et Conf.
-@Commune/C6b:Secreta
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta
-_
-!Pro Ss. Sergio, Baccho, Marcello et Apulejo Martyribus
-Majestátem tuam nobis, Dómine, quǽsumus, hæc hóstia reddat immolánda placátam, tuórum digna postulatióne Sanctórum.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Marco Papa et Conf.
-(dicitur)
-Da, quǽsumus, Dómine, fidélibus pópulis Sanctórum tuórum semper veneratióne lætari: et eórum perpétua supplicatióne muníri.
-$Per Dominum
-(communi Summorum Pontificum loco huius versus dicitur)
-@Commune/C4b:Postcommunio
-_
-!Pro Ss. Sergio, Baccho, Marcello et Apulejo Martyribus
-Sacraméntis, Dómine, muniámur accéptis: et sanctórum Mártyrum tuórum Sérgii, Bacchi, Marcélli et Apuléji intercessióne, contra omnes nequítias irruéntes, annis cœléstibus protegámur.
-$Per Dominum

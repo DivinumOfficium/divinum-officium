@@ -1,20 +1,12 @@
 [Rank]
 Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[Rank]
-Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[RankNewcal]
+[Rank] (rubrica innovata)
 Sabbato post Pentecostes;;Feria;;1;;
 
-[Rule]
-ex Pasc7-0;
-1 nocturn;
-Antiphonas horas
-Psalmi Dominica;
-Hymnus Tertia
-Feria Te Deum
-no93
+[Oratio]
+Dios de bondad, infunde en nuestras almas el Espíritu Santo que nos creó con su sabiduría y nos gobierna con su providencia.
+$Per Dominum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. Todos quedaron llenos del Espíritu Santo, aleluya.\nR. Y empezaron a hablar, aleluya./s
@@ -35,7 +27,7 @@ V. Los apóstoles hablaban en diversas lenguas de las maravillas divinas.
 R. Y se juntó la multitud de los que decían aleluya.
 
 [Lectio2]
-Al realizar el Señor esta curación en sábado, nos recuerda el principio de sus obras; comienza su nueva creación por el día en que dejó la primera. Esto nos demuestra que el Hijo de Dios no está obligado a la observancia de la Ley, sino elevado sobre ella, y que no vino a derogarla, sino a cumplirla. El mundo no se hizo por medio de la ley sino por el Verbo: “Por el Verbo de Dios fueron hechos los cielos”. La ley no se viola, se cumple al regenerar el Hijo de Dios, al hombre caído. Dice el Apóstol: “Despojándoos del hombre viejo, revestíos del nuevo que fue creado según Dios".
+Al realizar el Señor esta curación en sábado, nos recuerda el principio de sus obras; comienza su nueva creación por el día en que dejó la primera. Esto nos demuestra que el Hijo de Dios no está obligado a la observancia de la Ley, sino elevado sobre ella, y que no vino a derogarla, sino a cumplirla. El mundo no se hizo por medio de la ley sino por el Verbo: “Por el Verbo de Dios fueron hechos los cielos”. La ley no se viola, se cumple al regenerar el Hijo de Dios, al hombre caído. Dice el Apóstol: “Despojándoos del hombre viejo, revestíos del nuevo que fue creado según Dios”.
 
 [Responsory2]
 R. Ya no os llamaré siervos, sino amigos míos; porque habéis conocido todo cuanto he hecho en medio de vosotros, aleluya: 
@@ -45,13 +37,5 @@ R. Recibid el Espíritu Santo que es vuestro Consolador; Él es el que enviará 
 &Gloria
 R. Recibid el Espíritu Santo que es vuestro Consolador; Él es el que enviará a vosotros el Padre, aleluya.
 
-[Lectio3]
-@Tempora/Quad3-4:Lectio3
-&teDeum
-
 [Ant 2]
 El amor de Dios * ha sido derramado en nuestros corazones con el Espíritu Santo que se nos ha dado. Aleluya.
-
-[Oratio]
-Dios de bondad, infunde en nuestras almas el Espíritu Santo que nos creó con su sabiduría y nos gobierna con su providencia.
-$Per Dominum eiusdem

@@ -1,16 +1,19 @@
 [Rank]
 Feria Sexta infra octavam Corporis Christi;;Semiduplex II class;;5.6;;ex Tempora/Pent01-4
 
-[Rank] (rubrica tridentina)
-Feria Sexta infra Octavam Corporis Christi;;Semiduplex IIS class;;2.9;;ex Tempora/Pent01-4
-
 [Rank] (rubrica 196 aut rubrica 1955)
 Feria VI infra Hebdomadam I post Octavam Pentecostes;;Feria;;1
+
+[Rank] (rubrica tridentina)
+Feria Sexta infra Octavam Corporis Christi;;Semiduplex IIS class;;2.9;;ex Tempora/Pent01-4
 
 [Rule]
 ex Tempora/Pent01-4;
 9 lectiones
 Doxology=Corp
+
+[Oratio] (rubrica 196)
+@Tempora/Pent01-0:OratioW
 
 [Lectio1]
 De libro primo Regum
@@ -79,6 +82,3 @@ Hoc ergo nos dócuit et admónuit mýsticis verbis, ut simus in ejus córpore su
 [Lectio9]
 Si discípuli durum habuérunt istum sermónem, quid inimíci? Et tamen sic oportébat ut dicerétur, quod non ab ómnibus intelligerétur. Secrétum Dei inténtos debet fácere, non advérsos: isti autem cito defecérunt, tália loquénte Dómino Jesu Christo. Non credidérunt áliquid magnum dicéntem, et verbis illis áliquam grátiam cooperiéntem: sed prout voluérunt, ita intellexérunt, et more hóminum: quia póterat Jesus, aut hoc disponébat Jesus, carnem, qua indútum erat Verbum, véluti concísam, distribúere credéntibus in se. Durus est, ínquiunt, hic sermo: quis potest eum audíre?
 &teDeum
-
-[Oratio] (rubrica 196)
-@Tempora/Pent01-0:OratioW
