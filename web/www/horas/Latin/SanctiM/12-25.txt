@@ -12,7 +12,7 @@ R. Hódie sciétis * Quia véniet Dóminus.
 R. Hódie sciétis * Quia véniet Dóminus.
 
 [Responsory Vespera]
-@:Responsory Tertia:s/._.*//s
+@:Responsory Breve Tertia
 
 [AntMatutinumM]
 Elevámini, * portæ æternáles, † et introíbit Rex glóriæ.;;23
@@ -25,17 +25,11 @@ Párvulus * fílius hódie natus est nobis: † et vocábitur Deus, Fortis, alle
 [Ant Matutinum]
 @Sancti/12-25::1-2
 @:AntMatutinumM:1
-@Sancti/12-25::3
-@Sancti/12-25::6-7
-@Sancti/12-25::4-5
-@Sancti/12-25::8
-@Sancti/12-25::11-12
+@Sancti/12-25::3-8
 @:AntMatutinumM:2
-@Sancti/12-25::13
+@Sancti/12-25::9
 @:AntMatutinumM:3
-@Sancti/12-25::9-10
 ;;263;264;265
-@Sancti/12-25::14-15
 
 [Lectio1]
 @Sancti/12-25:Lectio1
@@ -118,17 +112,14 @@ R. Hoc erat in princípio apud Deum.
 [LectioE]
 @Sancti/09-08
 
-[Responsory Laudes]
-@:Responsory Tertia:s/._.*//s
-
 [Responsory TertiaM]
-@Sancti/12-25:Responsory Nona:s/.*_.//s
+@Sancti/12-25:Versum Nona
 
 [Responsory SextaM]
 @Sancti/12-25:Versum 2
 
 [Responsory NonaM]
-@Sancti/12-25:Responsory Sexta:s/.*_.//s
+@Sancti/12-25:Versum Sexta
 
 [Ant Vespera 3]
 @Sancti/12-25::s/.*;;131//

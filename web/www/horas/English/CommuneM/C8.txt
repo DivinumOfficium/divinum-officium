@@ -26,6 +26,12 @@ R. How lovely are thy tabernacles, O Lord of hosts! My soul longeth and fainteth
 V. They that dwell in thy house, O Lord they shall praise thee for ever and ever.
 R. For the courts of the Lord.
 
+[Lectio10]
+@Commune/C8:Lectio8:s/Zacchaeus, .*//s
+
+[Lectio11]
+@Commune/C8:Lectio8:s/.* Zacchaeus, /Zacchaeus, /s
+
 [Responsory11]
 R. Blessed art thou in the holy temple of thy glory that has been built
 * To the praise and glory of your name O Lord.
@@ -37,9 +43,3 @@ R. I saw the holy city, the new Jerusalem, coming down out of heaven from God, p
 *And I heard a great voice from the throne, saying: Behold the tabernacle of God with men, and he will dwell with them.
 V. And they shall be his people; and God himself with them shall be their God.
 R. And I heard a great voice from the throne, saying: Behold the tabernacle of God with men, and he will dwell with them.
-
-[Lectio10]
-@Commune/C8:Lectio8:s/Zacchaeus, .*//s
-
-[Lectio11]
-@Commune/C8:Lectio8:s/.* Zacchaeus, /Zacchaeus, /s

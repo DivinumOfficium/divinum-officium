@@ -10,6 +10,10 @@ Minores sine Antiphona;
 Capitulum Versum 2;
 Psalmi Dominica;
 
+[Oratio]
+Deus, qui Ecclésiam tuam novo semper fœtu multíplicas: concéde fámulis tuis; ut sacraméntum vivéndo téneant, quod fide percepérunt.
+$Per Dominum
+
 [Ant Matutinum]
 @Tempora/Pasc0-0::s/^V\..*//sm
 V. Surréxit Dóminus vere, allelúja.
@@ -47,10 +51,6 @@ Et quóniam sermo huc noster evásit, considerémus qua grátia secúndum Joánn
 
 [Ant 2]
 Stetit Jesus * in médio discipulórum suórum, et dixit eis: Pax vobis, allelúja, allelúja.
-
-[Oratio]
-Deus, qui Ecclésiam tuam novo semper fœtu multíplicas: concéde fámulis tuis; ut sacraméntum vivéndo téneant, quod fide percepérunt.
-$Per Dominum
 
 [Ant 3]
 Vidéte manus meas * et pedes meos, quia ego ipse sum, allelúja, allelúja.

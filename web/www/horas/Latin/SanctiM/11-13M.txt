@@ -1,0 +1,188 @@
+[Rank]
+Omnium Sanctorum Ordinis Nostri;;Duplex;;5;;vide C3
+(sed rubrica 1617)
+Omnium Sanctorum Monachorum Ordinis S.P. Benedicti;;Duplex II. classis;;5;;vide C3
+
+[Rule]
+vide C3;
+12 lectiones
+Psalmi Dominica
+
+[Ant Vespera]
+@:Ant Laudes
+
+[Hymnus Vespera]
+@:Hymnus Laudes
+
+[Ant 1]
+@Commune/C1
+
+[Oratio]
+Concéde, quǽsumus omnípotens Deus, ut ad meliórem vitam sanctórum Monachórum exémpla nos próvocent: † quátenus, quorum solémnia ágimus, * étiam actus imitémur.
+$Per Dominum
+
+[Invit]
+@Sancti/11-01
+
+[Hymnus Matutinum]
+@Sancti/11-01:HymnusM Laudes:1-5
+@Sancti/11-01:HymnusM Laudes:21-30
+
+[Ant Matutinum 3N]
+@SanctiM/11-01
+
+[Ant Matutinum]
+@SanctiM/11-01
+
+[Lectio1]
+@Commune/C4:Lectio1 in 2 loco:s/-5/-4/ s/5 .*//s
+
+[Responsory1]
+@SanctiM/11-01:Responsory8
+
+[Lectio2]
+@Commune/C4:Lectio1 in 2 loco:2-7 s/1-5/5-7/ s/1 .*5/5/s
+@Commune/C4:Lectio2 in 2 loco:s/!.*// s/8 .*//s
+
+[Responsory2]
+@Commune/C1
+
+[Lectio3]
+@Commune/C4:Lectio2 in 2 loco:s/6-9/8-11/ s/6 .*8/8/s
+@Commune/C4:Lectio3 in 2 loco:s/!.*// s/12 .*//s
+
+[Responsory3]
+R. Hæc est vera fratérnitas, quæ numquam pótuit violári certámine: † qui, effúso sánguine secúti sunt Dóminum:
+* Contemnéntes aulam régiam, pervenérunt ad regna cæléstia.
+V. Ecce quam bonum et quam jucúndum habitáre fratres in unum!
+R. Contemnéntes aulam régiam, pervenérunt ad regna cæléstia.
+
+[Lectio4]
+@Commune/C4:Lectio3 in 2 loco:1 s/10-/12-/
+@Commune/C4:Lectio3 in 2 loco:4-7 s/\p{L}/\u$&/
+
+[Responsory4]
+@Commune/C3
+
+[Lectio5]
+Ex sancto Joánne Damascéno
+!In historia beati Josaphat, cap. 2. circa finem
+Beáti isti ac ter beáti, ut qui Dei amóre flagrárunt, atque ob ipsíus caritátem ómnia pro níhilo duxérunt. Síquidem lácrimas profudérunt, diéque ac nocte in luctu versáti sunt, ut perpétuam consolatiónem adisceréntur: seípsos ultro depressérunt, ut illic in altum attolleréntur. Carnes suas fame ac siti et vigíllis confecérunt, ut illic paradísis delíciæ et exsultࢱtio Ipsos excíperent.
+
+[Responsory5]
+R. Sacerdótes Dei, benedícite Deum
+* Sancti et húmiles corde laudáte Deum.
+V. Spíritus et ánimæ justárum, hymnum dícite Deo nostro.
+R. Sancti et húmiles corde laudáte Deum.
+
+[Lectio6]
+Spíritus Sancti tabernáculum per cordis puritátem exstitérunt, quemádmodum scriptum est: Inhabitábo in ipsis et inambulábo. Seípsis mundo crucifixérunt, ut ad Christi déxteram starent: lumbos suos in veritáte succinxérunt, atque in promptu semper lámpades habuérunt, immortális Sponsi advéntum expectántes. Nam, cum mentis óculis prǽditi essent, hórrendum illum diem semper prospiciébant, atque tum futurórum bonórum, tum futurórum bonórum, tum futúri supplícii contemplatiónem ita in corde defíxam gerébant, ut ab ipsa nunquam divelleréntur. Atque hic laboráre studuérunt, ut sempitérnæ glóriæ cómpotes essent: perturbatiónum expértes, non secus atque Angeli fuérunt, ac nunc cum illis, quorum vitam imitáti sunt, choréas agunt.
+
+[Responsory6]
+@Commune/C1:Responsory8
+
+[Lectio7]
+Beáti illi ac ter beáti, quóniam firmis mentis óculis præséntium rerum vanitátem, atque humánæ prosperitátis incertitúdinem et inconstántiam perspexérunt, eáque reíecta, sempitérna bona sibi ipsis condidérunt, ac vitam eam, quæ nunquam occídit, nec morte interrúmpitur, arripuérunt.
+
+[Responsory7]
+@Commune/C3:Responsory6
+
+[Lectio8]
+Hos ígitur admirándos et sanctos viros nos quoque indígni ac despicábiles imitári studémus. Verum eórum vitæ cæléstis fastígium mínime asséqimur, sed pro infirmitátis nostræ ac míseræ facultátis módulo eórum vitam exprímus; atque ipsórum hábitum gérimus, étiam sui ópera non assequámur. Etenim, divínam hanc professiónem, peccátum propulsáre, atque incorruptiónis per divínum baptísma nobis concéssæ sóciam et opitulatrícem esse, perspéctum habémus.
+
+[Responsory8]
+@Commune/C3:Responsory7
+
+[Lectio9]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 19:27-29
+In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Et réliqua.
+_
+Homilía sancti Bernárdi Abbátis
+!De Sermone sancti Bernardi Abbatis
+Modo útique, fratres, audístis in Evangélio promitténtem Dóminum et dic éntem discípulis: Sedébitis super sedes, judicántes duódecim tribus Israël. Ecce quies sessiónis et honor judícii. Nam et ipse Dóminus ad hæc nóluit perveníre, nisi per humilitátem et labórem. Unde et morte turpíssima condemnátus est, interrogátus torméntis, et oppróbriis saturátus: útique ut inimícus induátur confusióne, ipse páriter et omnes, qui imitántur eum, et prætergrediúntur viam. Ipse est, o iníque, ipse est, qui sessúrus est in sede majestátis suæ símilis Altíssimo, et coaltíssimus ei. Hoc útique cogitavérunt Angeli sancti, qui, cadénte malígno, apostasíæ illíus non consensérunt, nobis relinquéntes exémplum, ut, quemádmodum ipsi elegérunt ministráre, sic et nos faciámus.
+
+[Responsory9]
+@Commune/C3:Responsory1
+
+[Lectio10]
+Qui enim labórem fúgiunt et honórem captant, illum se nóverint imitári, qui sessiónem altitudinémque quæsívit: et si non satis terret eos illíus culpa, térreat vel vindícta. Ad hæc vitánda prudéntiam nobis reliquérunt Sancti Dei, qui profécto sedébunt; ipsi, inquam, vermículi terræ judicántes sedébunt. Nescítis, ait Apóstolus, quia et Angelos judicábimus? Ipsi útique, qui ibant et flebant, mitténtes sémina sua, veniéntes autem vénient cum exsultatióne, portántes manípulos suos. Qui seminavérunt labórem et vilitátem, metent honórem páriter et quiétem. Pro confusiónem enim sua dúplici et labóre, in terra sua duplícia possidébunt. Unde et dicébat quidam: Vide humilitátem meam et labórem meum.
+
+[Responsory10]
+@Commune/C3:Responsory8
+
+[Lectio11]
+Non solum autem ipsa vita, sed et promíssio vitæ ætérnæ et expectátio justórum, lætítia est, et tanta lætítia, ut omne, quod concupíscitur, ei non váleat comparári. Hanc quoque prudéntiam nobis Apóstoli sancti seminavérunt, quando, recedéntibus his, qui sapiéntiam hujus mundi sequebántur, quæ stultítia est apud Deum, et prudéntiam carnis, quæ mortem operátur et inimíca est Deo; ipsi Dómino adhæsérunt. Mártyres vero maniféstum est fortitúdinem seminásse. Porro Confessóres sectáti sunt justítiam in omni vita sua. Hoc enim ínterest inter Mártyres et Confessóres, quod inter Petrum simul ómnia relinquéntem, et Abraham substántiam mundi in bonos usus expendéntem: sic enim illi consummáti in brevi explevérunt témpora multa; isti vero longa et multímoda traxére martýria. Vírgines sanctæ planum est, quia temperántiam seminavérunt, quæ sic libídinem calcavérunt.
+
+[Responsory11]
+@Commune/C4:Responsory8
+
+[Lectio12]
+Hac doctrína nos étiam ínstruit noster cæléstis pater, dux, magíster et légifer Benedíctus, et dírigit gressus nostros in viam pacis. Porro vitæ justítia omníno róborat et ánimat nos, ut tanto magis accendámur ad agénda quæ dócuit, quanto certi sumus eum non ália docuísse quam fécerit. Sermo quidem vivus et éfficax, exemplum óperis est, plúrimum fáciens suadíbile quod dícitur, dum monstrat factíbile quod suadétur. In hunc ergo modum sánctitas confórtat, pietátis infórmat, justítia confírmat. Quantæ enim pietátis fuit, quod non solum præséntibus prófuit, sed et pro futúris sollícitus fuit? Pascit vita, pascit doctrína, pascit intercessióne. Per quam incessánter adiúti, fructificáte et vos, caríssimi, quóniam in hoc pósiti estis, ut eátis et fructum afferátis. Imitémur et hunc; quóniam ad hoc venit, ut formam nbis tráderet, et viam demonstráret.
+
+[Responsory12]
+R. Córpora Sanctórum in pace sepúlta sunt,
+* Et nómina eórum vivent in generatiónem et generatiónem.
+V. Sapiéntiam Sanctórum narrent pópuli, † et laudem eórum pronúntiet Ecclésia.
+R. Et nómina eórum vivent in generatiónem et generatiónem.
+
+[LectioE]
+@Commune/C4c
+
+[Ant Laudes]
+Fulgébunt justi * sicut sol in regno Patris eórum, dicit Dóminus.
+Beáti éritis, * cum vos óderint hómines, et cum separáverint vos, et exprobráverint, et ejécerint nomen vestrum tamquam malum propter Fílium hóminis: gaudéte et exsultáte; ecce enim merces vestra multa est in cælis.
+Gaudent in cælis * ánimæ Sanctórum, qui Christi vestígia sunt secúti: et quia pro ejus amóre sánguinem suum fudérunt, ídeo cum Christo exsúltant sine fine.
+Sancti Dómini * Dóminum benedcite in ætérnum.
+O quam gloriósum est regnum * in quo cum Christo gaudent omnes Sancti, amícti stolis albis sequúntur Agnum quocúmque íerit!
+
+[Capitulum Laudes]
+!Isa 8:18
+v. Ecce ego et púeri mei quos dedit mihi Dóminus in signum, et in porténtum Israël a Dómino exercítuum, qui hábitat in monte Sion.
+$Deo gratias
+
+[Hymnus Laudes]
+Salvéte, cedri Líbani,
+Plantæ viréntes Ordinis,
+Quæ prata nunc cæléstia
+Implétis almo gérmine.
+_
+Vos Trinitátis glória
+Ætérna circumpléctitur:
+Vos aura Matris Vírginis
+Mulcet piis favóniis.
+_
+Vos Angelórum cúriæ
+Cingunt choréa pérpetim,
+Et írrigant puríssimi
+Æternitátis rívuli.
+_
+O ínclytæ propágines,
+Vestros juváte fílios:
+In valle mæsta débiles
+Nos roboráte súrculos.
+_
+Sit laus Patri, cum Fílio,
+Simúlque dulci Flámini,
+Læti quibúscum vívitis
+In sempitérno lúmine.
+Amen.
+
+[Ant 2]
+@Commune/C1
+
+[Capitulum Sexta]
+!Sir 44:7
+v. Omnes isti in generatiónibus gentis suæ glóriam adépti sunt, et in diébus suis habéntur in láudibus.
+$Deo gratias
+
+[Capitulum Nona]
+!Sir 44:13
+v. Fílii eórum propter illos usque in ætérnum manent: semen eórum et glória eórum non derelinquétur.
+$Deo gratias
+
+[Ant Vespera 3]
+@:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;115/ s/_//
+
+[Ant 3]
+In regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos, super sedes duódecim, judicántes duódecim tribus Israël.

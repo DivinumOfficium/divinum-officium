@@ -1,14 +1,15 @@
 [Rank]
 Feria IV Quattuor temporum in Adventu;;Feria major;;2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1930)
 Feria IV Quattuor temporum Adventu;;Feria major;;3
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria IV infra Hebdomadam III Adventus;;Feria major;;2
 
-[Rule]
-Preces Feriales
+[Oratio]
+Grant, we beseech thee, Almighty God, that the solemn Feast of our redemption, which is now at hand, may both help us in the life which now is, and further us toward the attaining of thine eternal joy in that which is to come. 
+$Per Dominum.
 
 [Lectio1]
 @Sancti/03-25:Lectio7
@@ -41,10 +42,6 @@ R. And His name shall be called Emmanuel.
 
 [Ant 2]
 The angel Gabriel * was sent to Mary, a virgin espoused to Joseph.
-
-[Oratio]
-Grant, we beseech thee, Almighty God, that the solemn Feast of our redemption, which is now at hand, may both help us in the life which now is, and further us toward the attaining of thine eternal joy in that which is to come. 
-$Per Dominum.
 
 [Ant 3]
 Behold the handmaid * of the Lord; be it unto me according to thy word.

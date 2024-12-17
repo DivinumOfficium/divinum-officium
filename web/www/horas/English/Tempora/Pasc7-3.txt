@@ -4,7 +4,7 @@ Feria Quarta Quattuor Temporum;;Semiduplex I classis;;6;;ex Pasc7-0
 [Rank] (rubrica 1960)
 Feria Quarta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria IV post Pentecostes;;Feria;;1;;
 
 [Rule]
@@ -15,6 +15,10 @@ Antiphonas horas
 Hymnus Tertia
 Feria Te Deum 
 no93
+
+[Oratio]
+O Lord, we beseech thee, that the Comforter, Which proceeded from thee, may enlighten our minds, and lead us into all truth, even as thy Son hath promised unto us.
+$Qui tecum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. They were all filled with the Holy Ghost. Alleluia.\nR. And began to speak. Alleluia./s
@@ -51,10 +55,6 @@ Arius, who believed that the Son was made, was not one of them whom the Father d
 
 [Ant 2]
 I am the Living Bread * Which came down from heaven, saith the Lord. Alleluia, Alleluia.
-
-[Oratio]
-O Lord, we beseech thee, that the Comforter, Which proceeded from thee, may enlighten our minds, and lead us into all truth, even as thy Son hath promised unto us.
-$Qui tecum eiusdem
 
 [Ant 3]
 I am the Living Bread Which came down from heaven; * if any man eat of this Bread, he shall live for ever, and the Bread that I will give is My Flesh, Which I will give for the life of the world. Alleluia.

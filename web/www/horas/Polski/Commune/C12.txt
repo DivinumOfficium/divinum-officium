@@ -4,10 +4,6 @@ Małe oficjum ku czci Najświętszej Marji Panny
 [Rank]
 Małe oficjum ku czci Najświętszej Marji Panny;;Simplex;;1;;ex C11
 
-[Oratio 2]
-v. Boże, który chciałeś, ażeby Słowo Twoje za zwiastowaniem Anielskiem z żywota błogosławionej Marji Panny, ciało przyjęło: daj, pokornie Cię proszącym; abyśmy, którzy prawdziwie Bożą Rodzicielkę wyznajemy, za Jej wstawiennictwem u Ciebie zostali wspomożeni.
-$Per eumdem
-
 [Commemoratio]
 !Wspomnienie Wszystkich Świętych
 Ant. Wszyscy Święci Pańscy, raczcie się wstawiać za zbawieniem nas wszystkich.
@@ -20,7 +16,6 @@ $Per Dominum
 (sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 
 [Pre oratio]
-
 #Oratio
 _
 v. Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
@@ -28,20 +23,24 @@ v. Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
 &Dominus_vobiscum
 $Oremus
 
-[Capitulum Completorium]
-!Syr 24:24
-v. Jam matka pięknej miłości i bogobojności, i uznania, i nadzieje świętej.
-$Deo gratias
+[Hymnus minor]
+
+#Hymnus
+v. Pomnij, Stwórco wszechrzeczy,
+Żeś ongiś, rodząc się
+Z świętego Dziewicy żywota,
+Przyjął postać ciała naszego
 _
-V. Módl się za nami święta Boża Rodzicielko.
-R. Abyśmy się stali godnymi obietnic Chrystusowych
-
-[Ant Completorium]
-Ant. Pod Twoją obronę * uciekamy się, święta Boża Rodzicielko: naszymi prośbami racz nie gardzić w potrzebach naszych, ale od wszelakich złych przygód racz nas zawsze wybawiać, Panno chwalebna i błogosławiona.
-
-[Oratio Completorium]
-v. Niech błogosławionej i chwalebnej zawsze Dziewicy Maryi, prosimy Panie, chwalebne wstawiennictwo nas strzeże, i do życia prowadzi wiecznego.
-$Per Dominum
+Marjo, Matko łaski,
+Słodka Matko miłosierdzia,
+Ty chroń nas od wroga,
+I przyjmij w godzinę śmierci.
+_
+Jezu, Tobie niechaj będzie chwała,
+który narodziłeś się z Dziewicy,
+oraz Ojcu i dobroczynnemu Duchowi,
+po nieskończone wieki.
+Amen.
 
 [Lectio1]
 !Syr 24:11-13
@@ -83,24 +82,9 @@ Pięknaś jest * i ozdobna, córko Jeruzalem: ogromna, jako wojska uszykowane po
 v. Widziały ją córki syjońskie, i błogosławioną zwały, i królowe ją chwaliły.
 $Deo gratias
 
-[Hymnus minor]
-
-#Hymnus
-v. Pomnij, Stwórco wszechrzeczy,
-Żeś ongiś, rodząc się
-Z świętego Dziewicy żywota,
-Przyjął postać ciała naszego
-_
-Marjo, Matko łaski,
-Słodka Matko miłosierdzia,
-Ty chroń nas od wroga,
-I przyjmij w godzinę śmierci.
-_
-Jezu, Tobie niechaj będzie chwała,
-który narodziłeś się z Dziewicy,
-oraz Ojcu i dobroczynnemu Duchowi,
-po nieskończone wieki.
-Amen.
+[Oratio 2]
+v. Boże, który chciałeś, ażeby Słowo Twoje za zwiastowaniem Anielskiem z żywota błogosławionej Marji Panny, ciało przyjęło: daj, pokornie Cię proszącym; abyśmy, którzy prawdziwie Bożą Rodzicielkę wyznajemy, za Jej wstawiennictwem u Ciebie zostali wspomożeni.
+$Per eumdem
 
 [Capitulum Prima]
 !Pnp 6:9
@@ -126,3 +110,18 @@ $Qui tecum
 [Verse Nona]
 V. Po porodzeniu Panno niepokalaną pozostałaś.
 R. Boża Rodzicielko, wstaw się za nami.
+
+[Ant Completorium]
+Ant. Pod Twoją obronę * uciekamy się, święta Boża Rodzicielko: naszymi prośbami racz nie gardzić w potrzebach naszych, ale od wszelakich złych przygód racz nas zawsze wybawiać, Panno chwalebna i błogosławiona.
+
+[Capitulum Completorium]
+!Syr 24:24
+v. Jam matka pięknej miłości i bogobojności, i uznania, i nadzieje świętej.
+$Deo gratias
+_
+V. Módl się za nami święta Boża Rodzicielko.
+R. Abyśmy się stali godnymi obietnic Chrystusowych
+
+[Oratio Completorium]
+v. Niech błogosławionej i chwalebnej zawsze Dziewicy Maryi, prosimy Panie, chwalebne wstawiennictwo nas strzeże, i do życia prowadzi wiecznego.
+$Per Dominum

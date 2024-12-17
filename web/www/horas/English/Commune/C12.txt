@@ -4,10 +4,6 @@ Officium parvum Beatae Mariae Virginis
 [Rank]
 Officium parvum Beatae Mariae Virginis;;Simplex;;1;;ex C11
 
-[Oratio 2]
-v. O God, who didst will that, at the announcement of an Angel, thy Word should take flesh in the womb of the Blessed Virgin Mary, grant to us thy suppliants, that we who believe her to be truly the Mother of God may be helped by her intercession with thee.
-$Per eumdem
-
 [Commemoratio]
 !Commemoration of the Saints
 Ant. All ye saints of God, vouchsafe to plead for our salvation and for that of all mankind.
@@ -20,7 +16,6 @@ $Per Dominum
 (sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 
 [Pre oratio]
-
 #Oratio
 _
 v. Lord have mercy on us, Christ have mercy on us, Lord have mercy on us
@@ -28,20 +23,24 @@ v. Lord have mercy on us, Christ have mercy on us, Lord have mercy on us
 &Dominus_vobiscum
 $Oremus
 
-[Capitulum Completorium]
-!Sir 24:24
-v. I am mother of fair love, and fear, and knowledge, and holy hope.
-$Deo gratias
+[Hymnus minor]
+
+#Hymnus
+v. Remember, O creator Lord,
+That in the Virgin's sacred womb
+Thou wast conceived, and of her flesh
+Didst our mortality assume.
 _
-V. Pray for us, O holy Mother of God.
-R. That we may be made worthy of the promises of Christ.
-
-[Ant Completorium]
-Ant. We take refuge * under thy protection, O holy Mother of God! Despise not our supplications in our need, but deliver us always from all dangers, O Virgin, glorious and blessed!
-
-[Oratio Completorium]
-v. O Lord, we pray thee, that the glorious intercession of Mary, blessed, and glorious, and everlastingly Virgin, may shield us and bring us on toward eternal life.
-$Per Dominum
+Mother of grace, O Mary blest,
+To thee, sweet fount of love, we fly;
+Shield us through life, and take us hence
+To thy dear bosom when we die.
+_
+O Jesu, born of Virgin bright,
+Immortal glory be to thee;
+Praise to the Father infinite,
+And Holy Ghost eternally.
+Amen.
 
 [Lectio1]
 !Sir 24:11-13
@@ -83,24 +82,9 @@ Fair and comely art thou, O daughter of Jerusalem, * terrible as a fenced camp s
 v. The daughters of Zion saw her, and called her blessed; the queens also, and they praised her.
 $Deo gratias
 
-[Hymnus minor]
-
-#Hymnus
-v. Remember, O creator Lord,
-That in the Virgin's sacred womb
-Thou wast conceived, and of her flesh
-Didst our mortality assume.
-_
-Mother of grace, O Mary blest,
-To thee, sweet fount of love, we fly;
-Shield us through life, and take us hence
-To thy dear bosom when we die.
-_
-O Jesu, born of Virgin bright,
-Immortal glory be to thee;
-Praise to the Father infinite,
-And Holy Ghost eternally.
-Amen.
+[Oratio 2]
+v. O God, who didst will that, at the announcement of an Angel, thy Word should take flesh in the womb of the Blessed Virgin Mary, grant to us thy suppliants, that we who believe her to be truly the Mother of God may be helped by her intercession with thee.
+$Per eumdem
 
 [Capitulum Prima]
 !Song 6:9
@@ -126,3 +110,18 @@ $Qui tecum
 [Verse Nona]
 V. After thy delivery, thou still remainest a Virgin undefiled.
 R. Mother of God, pray for us.
+
+[Ant Completorium]
+Ant. We take refuge * under thy protection, O holy Mother of God! Despise not our supplications in our need, but deliver us always from all dangers, O Virgin, glorious and blessed!
+
+[Capitulum Completorium]
+!Sir 24:24
+v. I am mother of fair love, and fear, and knowledge, and holy hope.
+$Deo gratias
+_
+V. Pray for us, O holy Mother of God.
+R. That we may be made worthy of the promises of Christ.
+
+[Oratio Completorium]
+v. O Lord, we pray thee, that the glorious intercession of Mary, blessed, and glorious, and everlastingly Virgin, may shield us and bring us on toward eternal life.
+$Per Dominum

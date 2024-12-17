@@ -1,21 +1,26 @@
 [Rank]
-S. Antonii de Padua Confessoris;;Duplex;;3;;vide C5a
-
-[Rank] (rubrica divino aut rubrica 196)
+S. Antonii de Padua Confessoris;;Duplex;;3;;vide C5
+(sed rubrica 1617)
+S. Antonii de Padua Confessoris;;Semiduplex;;2.2;;vide C5
+(sed rubrica 195 aut rubrica 196)
 S. Antonii de Padua Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
 
 [Rule]
+vide C5;
+(sed rubrica 195 aut rubrica 196)
 vide C5a;
 9 lectiones
+
+[Comment]
+Pio PP. XII, anno 1946, Doctor Ecclesiæ declaratus est
 
 [Name]
 Antóni
 
 [Oratio]
-@:OratioText
-
-[Oratio] (rubrica tridentina)
 @:OratioText:s/ atque Doctóris//
+(sed rubrica 195 aut rubrica 196)
+@:OratioText
 
 [OratioText]
 Ecclésiam tuam, Deus, beáti Antónii Confessóris tui atque Doctóris solémnitas votíva lætíficet: ut spirituálibus semper muniátur auxíliis et gáudiis pérfrui mereátur ætérnis.

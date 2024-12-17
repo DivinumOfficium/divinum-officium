@@ -1,14 +1,15 @@
 [Rank]
 Feria IV Quattuor Temporum in Adventu;;Feria major;;2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1930)
 Feria IV Quattuor Temporum Adventus;;Feria major;;4
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria IV infra Hebdomadam III Adventus;;Feria major;;2
 
-[Rule]
-Preces Feriales
+[Oratio]
+Concédenos, ¡Oh Dios todopoderoso! Que la próxima fiesta de nuestra redención, nos traiga los auxilios que necesitamos en esta vida, y el premio de la bienaventuranza eterna. 
+$Per Dominum.
 
 [Lectio1]
 @Sancti/03-25:Lectio7
@@ -41,10 +42,6 @@ R. Y su nombre será Emmanuel.
 
 [Ant 2]
 El Ángel Gabriel * fue enviado a la Virgen María desposada con José. 
-
-[Oratio]
-Concédenos, ¡Oh Dios todopoderoso! Que la próxima fiesta de nuestra redención, nos traiga los auxilios que necesitamos en esta vida, y el premio de la bienaventuranza eterna. 
-$Per Dominum.
 
 [Ant 3]
 Aquí está la esclava del Señor, * hágase en mí según tu palabra.

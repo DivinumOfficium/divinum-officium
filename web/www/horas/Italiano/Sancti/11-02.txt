@@ -4,9 +4,6 @@ In Commemoratione Omnium Fidelium Defunctorum;;Duplex;;3;;ex C9
 [Rank] (rubrica 196)
 In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
 
-[Rank] (rubrica innovata)
-In Commemoratione Omnium Fidelium Defunctorum;;Duplex Solemnity;;6;;ex C9
-
 [Ant Vespera]
 Piacerò al Signore * nella regione dei vivi.;;114
 Ohimè, o Signore, * troppo si protrae la mia vita.;;119
@@ -114,12 +111,6 @@ Dalla prima Lettera dell'Apostolo san Paolo ai Corinti.
 43 se si semina ignobile, risorgerà glorioso; si semina inerte, risorgerà robusto; 
 44 si semina un corpo animale, risorgerà un corpo spirituale.
 
-[Responsory8]
-R. Signore, non volermi giudicare secondo le mie azioni: nessuna cosa degna ho io fatta dinanzi a te; onde supplico la tua maestà. 
-* Che tu, o Dio, cancelli la mia iniquità.
-V. Lavami ancor più, o Signore, dalla mia ingiustizia, e mondami dal mio peccato. 
-R. Che tu, o Dio, cancelli la mia iniquità.
-
 [Lectio9]
 !1 Cor 15:51-58
 51 Ecco, io vi dico un mistero: Risorgeremo, si, tutti, ma non tutti saremo cangiati. 
@@ -147,6 +138,10 @@ R. Liberami, o Signore, dalla morte eterna in quel giorno tremendo,
 &Gloria
 V. Riposino in pace.
 R. Amen.
+
+[Versum 2]
+V. Udii una voce dal cielo, che mi diceva:
+R. Beati i morti che muoiono nel Signore.
 
 [Oratio mortuorum2]
 #Oratio
@@ -187,10 +182,6 @@ O Dio, largitore di perdono e amatore della salvezza degli uomini: preghiamo la 
 $Amen
 
 &special('Conclusio', 'Italiano')
-
-[Versum 2]
-V. Udii una voce dal cielo, che mi diceva:
-R. Beati i morti che muoiono nel Signore.
 
 [Special Tertia]
 &special('Initial', 'Italiano')

@@ -1,9 +1,12 @@
 [Rank]
 S. Hieronymi Presbyteris Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
+(sed rubrica 1930)
+S. Hieronymi Presbyteris Confessoris et Ecclesiæ Doctoris;;Duplex majus;;4;;vide C5a
 
 [Rule]
 vide C5a;
 9 lectiones
+scriptura1960
 
 [Name]
 Hierónyme
@@ -13,13 +16,13 @@ Deus, qui Ecclésiæ tuæ in exponéndis sacris Scriptúris beátum Hierónymum,
 $Per Dominum
 
 [Lectio1]
-@Commune/C4a:Lectio1
+@Commune/C4a
 
 [Lectio2]
-@Commune/C4a:Lectio2
+@Commune/C4a
 
 [Lectio3]
-@Commune/C4a:Lectio3
+@Commune/C4a
 
 [Lectio4]
 Hieronymus, Eusebii fílius, Stridone in Dalmatia, Constantio imperatóre, natus, Romæ adoléscens est baptizatus, et in liberálibus disciplinis a Donato et aliis viris doctíssimis eruditus. Tum discéndi studio Gálliam peragrávit; ubi pios aliquot et in divinis litteris eruditos viros coluit, multosque sacros libros sua manu descripsit. Mox se in Græciam cónferens. philosophía et eloquéntia instructus, summórum theologórum consuetúdine flóruit. In primis vero Gregório Nazianzeno Constantinopoli operam dedit; quo doctore se sacras litteras didicisse profitétur. Tum religiónis causa visit Christi Dómini incunábula, totamque lustrávit Palæstinam; quam peregrinatiónem, adhíbitis Hebræórum eruditíssimis, ad sacræ Scripturæ intelligéntiam sibi multum profuísse testátur.

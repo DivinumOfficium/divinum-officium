@@ -4,9 +4,6 @@ Fest der Sieben Schmerzen der hl. Jungfrau Maria;;Duplex 2nd class;;5.1;;ex C11
 [Rank] (rubrica 196)
 Fest der Sieben Schmerzen der hl. Jungfrau Maria;;Duplex 2nd class;;5;;ex C11
 
-[Rank] (rubrica innovata)
-Fest der Sieben Schmerzen der hl. Jungfrau Maria;;Duplex;;3;;ex C11
-
 [Ant Vespera]
 Wo ist er denn hin, * dein Geliebter, o du schönste unter den Frauen? Wohin hat sich dein Liebling entfernt, dass wir mit dir ihn suchen können?;;109
 Geht weg von mir, * ich muss bitter weinen, gebt euch keine Mühe, mich zu trösten.;;112
@@ -46,9 +43,6 @@ Lass der Jungfrau an Kraft ähnlich uns alle sein,
 Standhaft bleiben in unserm Leid.
 Amen.
 
-[Doxology]
-@Tempora/Quad5-5
-
 [Versum 1]
 V. Königin der Martyrer, bitte für uns.
 R. Die du neben dem Kreuze Jesu gestanden.
@@ -57,7 +51,7 @@ R. Die du neben dem Kreuze Jesu gestanden.
 Denkt nicht von mir, * dass ich (von Natur) dunkelfarbig bin, denn nur die Sonne hat mir die Farbe genommen: die Söhne meiner Mutter sind meine Gegner.
 
 [Oratio]
-O Gott, bei dessen leidensvollem Tode sich gemäß Simeons Voraussagung ein Schmerzensschwert in die liebenswürdigste Seele der glorienreichen Jungfrau und Mutter Maria hineingebohrt hat, gewähre uns huldvollst die Gnade, dass wir, die wir ihr ausgestandenes Leid in Ehrfurcht begehen, deines Leidens beseligende Wirkung erhalten.
+O Gott, bei dessen leidensvollem Tode sich gemäß Simeons Voraussagung ein Schmerzensschwert in die liebenswürdigste Seele der glorienreichen Jungfrau und Mutter Maria hineingebohrt hat, gewähre uns huldvollst die Gnade, daß wir, die wir ihr ausgestandenes Leid in Ehrfurcht begehen, deines Leidens beseligende Wirkung erhalten.
 $Qui vivis
 
 [Invit]
@@ -154,26 +148,17 @@ R. Ich und dein Vater.
 &Gloria
 R. Wir haben dich mit Schmerzen gesucht.
 
-[Lectio4]
-@Tempora/Quad5-5
-
 [Responsory4]
 R. Als Jesus sein Kreuz dahinschleppte,
 * Da folgte ihm eine Schar von Frauen, die ihn beklagten und beweinten.
 V. Töchter Jerusalems, weinet über euch selbst und eure Kinder.
 R. Da folgte ihm eine Schar von Frauen, die ihn beklagten und beweinten.
 
-[Lectio5]
-@Tempora/Quad5-5
-
 [Responsory5]
 R. Als man an den Ort gekommen war, der Kalvaria hieß, schlug man ihn dort ans Kreuz:
 * Es stand aber neben dem Kreuze Jesu seine Mutter.
 V. Da drang durch ihre heilige Seele das Schwert des Leidens.
 R. Es stand aber neben dem Kreuze Jesu seine Mutter.
-
-[Lectio6]
-@Tempora/Quad5-5
 
 [Responsory6]
 R. Joseph von Arimathäa 
@@ -214,9 +199,6 @@ R. Auf dass Sühne gewirkt werde und Segen.
 „Dort ist, sagt er, dein Sohn, dort ist deine Mutter.“ Es machte Christus vom Kreuze das Testament und verteilte zwischen Mutter und Jünger die Liebespflichten. Der Herr begründete ein Testament nicht bloß für die Allgemeinheit, sondern auch für die Seinigen; und diesem seinem Testament fügte Johannes das Siegel bei, als eines solchen Nachlasses würdiger Zeuge. Das Testamentsgut besteht nicht aus Geld, sondern aus dem ewigen Leben; und es ist nicht mit Tinte geschrieben, sondern mit der Kraft des lebendigen Gottes, der da sagt: „Meine Zunge ist wie der Griffel des Schreibers, der eilig im Schreiben vorankommt.“
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
 [Capitulum Laudes]
 !Klgl 2,13
 v. Wem soll ich dich ähnlich nennen und mit wem dich, Tochter Jerusalem, vergleichen? Wem dich, Jungfrau, Tochter Sion, an die Seite stellen, um dir einen Trost zu reichen? Groß wie das Meer ist dein Leid.
@@ -251,9 +233,6 @@ Kommt, * wir wollen aufsteigen zum Berg des Herrn, und nun schaut, ob ein Schmer
 !Klgl 2,18
 v. Lass gleich einem Sturzbach Tränen fließen Tag und Nacht; gönn dir keine Ruh' und lass die Augenlider auf stets neues Weinen lauern.
 
-[Versum Prima]
-@Tempora/Quad5-5
-
 [Responsory Tertia]
 R.br. O ihr alle, * die ihr vorbeikommt auf dem Wege.
 R. O ihr alle, * die ihr vorbeikommt auf dem Wege.
@@ -280,10 +259,6 @@ R. Krank sind * vor Weinen meine Augen.
 _
 V. Ein Myrrhensträußlein ist mir mein Geliebter.
 R. Das nun an meiner Brust mir anliegt.
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
 
 [Responsory Nona]
 R.br. Ein Myrrhensträußlein * ist mir mein Geliebter.

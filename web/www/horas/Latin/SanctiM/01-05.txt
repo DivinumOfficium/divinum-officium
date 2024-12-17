@@ -1,4 +1,125 @@
 @Sancti/01-05
 
+[Rule]
+ex SanctiM/01-01
+Doxology=Nat
+3 lectiones
+Psalmi Dominica
+Antiphonas horas
+Omit preces
+
+[Rule] (feria 1)
+ex SanctiM/01-01
+Doxology=Nat
+12 lectiones
+Psalmi Dominica
+Antiphonas horas
+Omit preces
+Lectio1 TempNat
+
+[Ant Matutinum 3N] (feria 1)
+@SanctiM/01-01
+
+[Ant Matutinum]
+@Sancti/01-01::7 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+@Sancti/01-01::9 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+(feria 1) ;;263;264;265
+
+[Nocturn 2 Versum] (rubrica divino)
+@Sancti/12-25:Nocturn 1 Versum
+(sed feria 1)
+@Sancti/12-25
+
+[Nocturn 3 Versum]
+@Sancti/12-25:Nocturn 1 Versum
+(sed feria 1)
+@Sancti/12-25
+
+[Lectio1] (rubrica tridentina aut rubrica divino)
+@Sancti/01-05:Lectio7
+
+[Responsory1]
+@Sancti/01-01:Responsory1
+(sed feria 3 aut feria 6)
+@Sancti/01-01:Responsory4
+(sed feria 4 aut feria 7)
+@Sancti/12-25:Responsory6
+
+[Lectio2]
+@Sancti/01-05:Lectio8
+
+[Responsory2]
+@Sancti/01-01:Responsory2
+(sed feria 3 aut feria 6)
+@Sancti/01-01:Responsory5
+(sed feria 4 aut feria 7)
+@Sancti/01-01:Responsory8
+
 [Lectio3]
-@Sancti/01-04::s/\n11 / ¶\n11 /
+@Sancti/01-05:Lectio9
+
+[Responsory3]
+@Sancti/01-01:Responsory3
+(sed feria 3 aut feria 6)
+@Sancti/01-01:Responsory6
+(sed feria 4 aut feria 7)
+@SanctiM/01-01:Responsory11
+
+[Lectio5]
+@Sancti/01-05:Lectio4: s/Factus.*//s
+
+[Lectio6]
+@Sancti/01-05:Lectio4: s/.*(Factus)/$1/s s/$/~/s
+@Sancti/01-05:Lectio5: s/Factus.*//s
+
+[Lectio7]
+@Sancti/01-05:Lectio5: s/.*(Factus)/$1/s
+
+[Lectio8]
+@Sancti/01-05:Lectio6
+
+[Lectio9]
+@Sancti/01-05:Lectio7
+
+[Lectio10]
+@Sancti/01-05:Lectio8
+
+[Lectio11]
+@Sancti/01-05:Lectio9: s/Nazarǽus sanctus//s
+
+[Lectio12_]
+Possumus et aliter dicere: quod etiam eisdem verbis, juxta Hebraicam veritatem, in Isaia scriptum sit: Exiet virga de radice Jesse, et Nazaræus de radice ejus conscendet.
+
+[Lectio12]
+@Sancti/01-05:Lectio9: s/.*(Nazarǽus sanctus)/$1/s s/$/~/
+@:Lectio12_
+
+[Responsory12]
+@SanctiM/01-01
+
+[Responsory12C]
+@:Responsory12
+
+[MM Capitulum]
+@Tempora/Nat1-0:Capitulum Sexta
+_
+@Sancti/12-25:Versum 2
+
+[Responsory TertiaM]
+@SanctiM/12-25
+
+[Responsory SextaM]
+@SanctiM/12-25
+
+[Responsory NonaM]
+@SanctiM/12-25

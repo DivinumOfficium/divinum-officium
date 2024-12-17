@@ -1,12 +1,6 @@
 [Rank]
 Sabbato Quattuor Temporum Quadrigeismæ;;Feria major;;2
 
-[Rank] (si rubrica 1960)
-Sabbato Quattuor Temporum Quadrigesimæ;;Feria major;;3
-
-[Rank] (si rubrica innovata)
-Sabbato infra Hebdomadam I in Quadragesima;;Feria major;;2
-
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
@@ -23,15 +17,11 @@ Signore, Dio di salvezza, a te io levo la mia voce giorno e notte.
 &Gloria
 v. Giunga fino a te la mia preghiera: china il tuo orecchio alla mia prece, o Signore.
 
-[Oratio]
-Signore, te ne preghiamo, guarda benevolo il tuo popolo; e pietoso da esso allontana i flagelli della tua giustizia.
-$Per Dominum
-
 [LectioL1]
 Dal libro del Deuteronòmi.
 !Deut 26:12-19
 Mosè parlò al popolo e disse:
-« Quando avrai finito di levare tutte le decime del tuo provento, dirai nel cospetto del Signore Dio tuo: "Ho tolto di casa mia la roba sacra, e l'ho data al levita e al forestiero, all'orfano e alla vedova, come tu mi hai ordinato, non ho trascurato i tuoi comandamenti, né ho dimenticati i tuoi precetti. Ho obbedito alla voce del Signore Dio mio ed ho fatto ogni cosa secondo i tuoi ordini. Volgi il tuo sguardo dalla tua santa dimora, dal cielo, e benedici il tuo popolo d'Israele e la terra che tu ci hai data, come giurasti ai padri nostri, terra che stilla latte e miele". Oggi il Signore Dio tuo ti comanda di eseguire questi statuti e decreti, e tu sarai attento a osservarli con tutto il tuo cuore e con tutta la tua anima. Oggi tu hai eletto il Signore, perché egli sia il tuo Dio, hai eletto di camminare nelle sue vie, di osservare ogni suo precetto: ed Egli ti faccia elevato sopra tutte le genti che ha creato, a sua lode, rinomanza e onore: affinché tu sia il popolo santo del Signore Dio tuo, com'egli ha detto».
+« Quando avrai finito di levare tutte le decime del tuo provento, dirai nel cospetto del Signore Dio tuo: «Ho tolto di casa mia la roba sacra, e l'ho data al levita e al forestiero, all'orfano e alla vedova, come tu mi hai ordinato, non ho trascurato i tuoi comandamenti, né ho dimenticati i tuoi precetti. Ho obbedito alla voce del Signore Dio mio ed ho fatto ogni cosa secondo i tuoi ordini. Volgi il tuo sguardo dalla tua santa dimora, dal cielo, e benedici il tuo popolo d'Israele e la terra che tu ci hai data, come giurasti ai padri nostri, terra che stilla latte e miele». Oggi il Signore Dio tuo ti comanda di eseguire questi statuti e decreti, e tu sarai attento a osservarli con tutto il tuo cuore e con tutta la tua anima. Oggi tu hai eletto il Signore, perché egli sia il tuo Dio, hai eletto di camminare nelle sue vie, di osservare ogni suo precetto: ed Egli ti faccia elevato sopra tutte le genti che ha creato, a sua lode, rinomanza e onore: affinché tu sia il popolo santo del Signore Dio tuo, com'egli ha detto».
 $Deo Gratias
 
 [GradualeL1]
@@ -111,6 +101,10 @@ Benedetto sei tu, o Signore, Dio dei padri nostri. E degno di essere lodato e gl
 O Dio, che hai rese innocue per i tre giovani le fiamme ardenti, benigno concedi che non veniam bruciati dal fuoco delle nostre passioni.
 $Per Dominum
 
+[Oratio]
+Signore, te ne preghiamo, guarda benevolo il tuo popolo; e pietoso da esso allontana i flagelli della tua giustizia.
+$Per Dominum
+
 [Lectio]
 Dalla prima lettera di san Paolo apostolo ai Tessalonicesi
 !1 Thess 5:14-23
@@ -147,4 +141,3 @@ v. Preghiamo.
 v. Inchinatevi davanti a Dio.
 v. O Signore, confermi nel bene i tuoi fedeli la tua invocata benedizione; affinché non li lasci mai allontanare dalla tua volontà, e a loro conceda di rallegrarsi ognora dei tuoi benefici.
 $Per Dominum
-

@@ -1,15 +1,6 @@
 [Rank]
 Feria III infra Octavam Ascensionis;;Semiduplex;;2;;ex Tempora/Pasc5-4
 
-[Rank] (rubrica 1960)
-Feria III post Ascensionem;;Feria;;1;;vide Tempora/Pasc5-4
-
-[Rule]
-ex Tempora/Pasc5-4;
-9 Lectiones
-Doxology=Asc
-Feria Te Deum
-
 [Lectio1]
 Dalla prima lettera dell'Apostolo san Giovanni
 !1 Giov 4:1-6
@@ -19,9 +10,6 @@ Dalla prima lettera dell'Apostolo san Giovanni
 4 Voi, figlietti, siete da Dio e avete vinto colui, perché chi è in voi, è più potente di chi sta nel mondo. 
 5 Essi sono del mondo: perciò parlano di mondo, e il mondo li ascolta: 
 6 noi siamo da Dio. Chi conosce Dio, ci ascolta; chi non è da Dio, non ci ascolta: da ciò distinguiamo lo spirito di verità dallo spirito di errore.
-
-[Responsory1]
-@Tempora/Pasc5-4:Responsory1
 
 [Lectio2]
 !1 Giov 4:7-14
@@ -34,9 +22,6 @@ Dalla prima lettera dell'Apostolo san Giovanni
 13 Noi conosciamo che dimoriamo in lui e che egli dimora in noi, da questo che egli ci ha fatto parte del suo Spirito. 
 14 Per conto nostro abbiam visto e attestiamo che il Padre ha mandato il suo Figlio qual Salvatore del mondo.
 
-[Responsory2]
-@Tempora/Pasc5-4:Responsory2
-
 [Lectio3]
 !1 Giov 4:15-21
 15 Chiunque confesserà che Gesù è il Figlio di Dio, Dio dimora in lui, ed egli in Dio. 
@@ -46,9 +31,6 @@ Dalla prima lettera dell'Apostolo san Giovanni
 19 Noi dunque amiamo Dio, poiché Dio ci ha amati per il primo. 
 20 Se uno dirà: Io amo Dio, e odia il suo fratello, è un bugiardo. Perché chi non ama il suo fratello, che vede, come può amare Dio che non vede? 
 21 E poi il comandamento che abbiamo ricevuto da Dio è questo: «Che chi ama Dio, deve amare anche il proprio fratello» (Joann. 13,34).
-
-[Responsory3]
-@Tempora/Pasc5-4:Responsory3
 
 [Lectio4]
 Sermone di san Marco Vescovo

@@ -1,20 +1,6 @@
 [Rank]
 II Niedziela po Pięćdziesiątnicy w Oktawie Bożego Ciała;;Semiduplex I classis;;5.9;;ex Tempora/Pent01-4
 
-[Rank] (rubrica 1960)
-II Niedziela po Pięćdziesiątnicy;;Semiduplex I classis;;5.9
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Corp
-
-[Capitulum Laudes]
-!1 J 3:13-14
-v. Najmilsi: Nie dziwujcie się, bracia, jeźli was świat nienawidzi. My wiemy, iżeśmy przeniesieni z śmierci do żywota, iż miłujemy bracią.
-$Deo gratias
-
 [Versum 1]
 V. Nakarmił je tłustością pszenicy, alleluja.
 R. I nasycił je miodem z opoki, alleluja.
@@ -25,6 +11,10 @@ Młodzieniaszek Samuel * służył Panu przed Heli, a słowo Pańskie było drog
 [Oratio]
 Spraw, prosimy Cię, Panie, abyśmy bojaźń i miłość świętego Imienia Twego zawsze w sercu zachowywali, albowiem nigdy nie przestajesz kierować tymi, których w miłości Twojej utwierdzasz.
 $Per Dominum.
+
+[Commemoratio]
+!Wspominamy Oktawę Bożego Ciała
+@Tempora/Pent01-4:Oratio
 
 [Lectio1]
 Z Pierwszej Księgi Królewskiej
@@ -57,7 +47,7 @@ Homilia świętego Grzegorza, Papieża
 Przysmaki ciała zwykło różnić od przysmaków serca to, że te cielesne, gdy się ich nie ma, silnie rozbudzają pragnienie siebie, natomiast kiedy posiadłszy zajada się je — prędko, przez nasycenie, doprowadzają spożywającego do uczucia przesytu. I przeciwnie przysmaki duchowe — kiedy się ich nie ma, sprawiają uczucie przesytu, gdy zaś się je posiądzie — budzą pragnienie; i o tyle bardziej czynią spożywającego złaknionym, o ile bardziej są przez łaknącego spożywane. W tamtych upodobanie daje pociąg — zaś doświadczenie przynosi zniechęcenie; w tych pociąg jest marny, więcej upodobania daje doświadczenie. W tamtych pociąg rodzi sytość, sytość zaś uczucie przesytu — w tych pociąg wydaje z siebie sytość, sytość zaś pociąg.
 
 [Lectio8]
-Duchowe bowiem przysmaki, kiedy sycą, zwiększają w umyśle pragnienie — bo im bardziej przyswaja się ich smak, tym bardziej poznaje się to, co coraz chciwiej będzie się kochać. I dlatego nie posiadane, nie mogą być kochane - bo nie ma się pojęcia o ich smaku. Któż bowiem byłby w stanie kochać to, o czym nie ma pojęcia? I dlatego napomina nas Psalmista, mówiąc: Skosztujcie a obaczcie, iż słodki jest Pan (Ps 33, 9). Jakby otwarcie mówił: Nie poznajecie Jego słodkości, jeśli Go wcale nie kosztujecie. Posmakujcie jednak na podniebieniu serca pokarmu życia, byście próbując byli w stanie pokochać jego słodycz. Przysmaki zaś te zagubił człowiek wówczas, kiedy zgrzeszył w raju — wyszedł na zewnątrz, kiedy zamknął usta na pokarm słodyczy wiecznej. 
+Duchowe bowiem przysmaki, kiedy sycą, zwiększają w umyśle pragnienie — bo im bardziej przyswaja się ich smak, tym bardziej poznaje się to, co coraz chciwiej będzie się kochać. I dlatego nie posiadane, nie mogą być kochane - bo nie ma się pojęcia o ich smaku. Któż bowiem byłby w stanie kochać to, o czym nie ma pojęcia? I dlatego napomina nas Psalmista, mówiąc: Skosztujcie a obaczcie, iż słodki jest Pan (Ps 33, 9). Jakby otwarcie mówił: Nie poznajecie Jego słodkości, jeśli Go wcale nie kosztujecie. Posmakujcie jednak na podniebieniu serca pokarmu życia, byście próbując byli w stanie pokochać jego słodycz. Przysmaki zaś te zagubił człowiek wówczas, kiedy zgrzeszył w raju — wyszedł na zewnątrz, kiedy zamknął usta na pokarm słodyczy wiecznej.
 
 [Responsory8]
 R. Człowiek niektóry sprawił wieczerzę wielką i posłał sługę swego w godzinę wieczerzy, aby powiedział zaproszonym żeby przyszli:
@@ -70,6 +60,11 @@ R. Boć już wszystko gotowe.
 [Lectio9]
 Dlatego także my, urodzeni pośród mozołów tej tułaczki, przychodzimy tu już z uczuciem przesytu, nie wiemy też, czego powinniśmy pragnąć — i choroba naszego uczucia przesytu o tyle bardziej się wzmagać, o ile bardziej duch nasz oddala się od spożywania owej słodyczy; i na tyle nie ma on już pociągu do wewnętrznych słodyczy, na ile długo i w oddaleniu się od nich odzwyczajał. Czeźniemy zatem z powodu naszego uczucia przesytu i doznajemy wycieńczenia wskutek długotrwałej choroby niejedzenia. A ponieważ nie chcemy wewnętrznie kosztować przygotowanej słodyczy, kochamy, nędzni, zewnętrznie nasz głód.
 &teDeum
+
+[Capitulum Laudes]
+!1 J 3:13-14
+v. Najmilsi: Nie dziwujcie się, bracia, jeźli was świat nienawidzi. My wiemy, iżeśmy przeniesieni z śmierci do żywota, iż miłujemy bracią.
+$Deo gratias
 
 [Versum 2]
 V. Dał im chleb niebieski, alleluja.
@@ -89,7 +84,3 @@ $Deo gratias
 
 [Ant 3]
 Wynijdź rychło * na ulice i uliczki miasta: a ubogich i ułomnych i ślepych i chromych przymuś wnijść, aby był dom mój napełniony, alleluja.
-
-[Commemoratio]
-!Wspominamy Oktawę Bożego Ciała
-@Tempora/Pent01-4:Oratio

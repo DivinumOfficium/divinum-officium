@@ -1,12 +1,6 @@
 [Rank]
 In Vigilia Epiphaniæ;;Semiduplex;;4.9;;ex Sancti/01-01
 
-[Rank] (rubrica tridentina)
-In Vigilia Epiphaniæ;;Semiduplex;;2.9;;ex Sancti/01-01
-
-[Rank] (rubrica 196 aut rubrica 1955)
-Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
-
 [Rule]
 CPapaM=Telesforus;
 ex Sancti/01-01;
@@ -22,10 +16,6 @@ Suffragium=Maria2;;
 [Oratio]
 Almachtige, eeuwige God, richt onze daden naar uw welbehagen, opdat wij in de naam van uw welbeminde Zoon meer goede daden mogen stellen.
 $Qui tecum
-
-[Commemoratio Oratio]
-!Pro S. Telesphori Papæ et Mart.
-@Commune/C2b:Oratio:s/N\./Telesforus/
 
 [Lectio]
 @Tempora/Nat1-0
@@ -45,17 +35,9 @@ In die tijd, toen Herodes gestorven was, verscheen er in de slaap aan Jozef in E
 Wij vragen U, almachtige God, laat de gave, die wij onder het oog van uw Majesteit hebben opgedragen, ons de genade verwerven van een liefdevolle toewijding en de verwezenlijking van een gelukkige eeuwigheid.
 $Per Dominum
 
-[Commemoratio Secreta]
-!Pro S. Telesphori Papæ et Mart.
-@Commune/C2b:Secreta:s/N\./Telesforus/
-
 [Communio]
 @Tempora/Nat1-0
 
 [Postcommunio]
 Mogen onze zonden, o Heer, door de werking van dit geheim worden uitgewist en onze rechtmatige verlangens in vervulling gaan.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Telesphori Papæ et Mart.
-@Commune/C2c:Postcommunio:s/N\./Telesforus/

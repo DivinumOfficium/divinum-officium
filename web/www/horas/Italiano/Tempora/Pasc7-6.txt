@@ -1,20 +1,12 @@
 [Rank]
 Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[Rank]
-Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[RankNewcal]
+[Rank] (rubrica innovata)
 Sabbato post Pentecostes;;Feria;;1;;
 
-[Rule]
-ex Pasc7-0;
-1 nocturn;
-Antiphonas horas
-Psalmi Dominica;
-Hymnus Tertia
-Feria Te Deum
-no93
+[Oratio]
+Signore, infondi benigno nelle anime nostre lo Spirito Santo: dalla cui sapienza siamo stati creati, e dalla cui provvidenza siamo governati.
+$Per Dominum eiusdem
 
 [Ant Matutinum]
 All'improvviso * venne dal cielo un rumore di vento che si avanza impetuoso, alleluia, alleluia.;;47
@@ -49,13 +41,5 @@ R. Ricevete in voi lo Spirito Santo Consolatore: egli è colui che il Padre vi m
 &Gloria
 R. Ricevete in voi lo Spirito Santo Consolatore: egli è colui che il Padre vi manderà, alleluia.
 
-[Lectio3]
-E bene a proposito cominciò (le sue guarigioni) di sabato, per mostrare ch'egli è il Creatore che ordina e concatena le opere sue, e continua qui l'opera ch'egli stesso aveva già incominciata: come un architetto, che, disponendosi a rinnovare una casa, comincia a demolire il vecchio non dalle fondamenta, ma dall'alto. Così egli mette mano prima là (cioè il giorno) dove aveva lasciato: quindi comincia dalle cose minori per giungere alle maggiori. Liberare dal demonio lo possono anche gli uomini, ma in nome di Dio: comandare ai morti di risorgere appartiene solo alla potenza divina. Forse anche questa donna, suocera di Simone e di Andrea, era la figura della nostra carne, che languisce per le varie febbri delle sue colpe, consumata dai desideri smodati delle sue diverse passioni. Direi anzi che un affetto (disordinato) non è minore febbre di quella che fa sentire il calore (nel corpo). L'una brucia l'anima, l'altra il corpo. Infatti nostra febbre è l'avarizia: nostra febbre è la cupidigia: nostra febbre è la lussuria: nostra febbre è l'ambizione: nostra febbre è l'iracondia.
-&teDeum
-
 [Ant 2]
 L'amore di Dio * è stato diffuso nei nostri cuori per mezzo del suo Spirito che abita in noi, alleluia.
-
-[Oratio]
-Signore, infondi benigno nelle anime nostre lo Spirito Santo: dalla cui sapienza siamo stati creati, e dalla cui provvidenza siamo governati.
-$Per Dominum eiusdem

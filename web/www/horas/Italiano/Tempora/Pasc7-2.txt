@@ -1,7 +1,7 @@
 [Rank]
 Die III infra octavam Pentecostes;;Duplex I classis;;6;;ex Pasc7-0
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria III post Pentecostes;;Feria;;1;;
 
 [Rule]
@@ -11,6 +11,10 @@ Psalmi Dominica;
 Antiphonas horas
 Hymnus Tertia
 No commemoration
+
+[Oratio]
+Signore, ci assista la virtù dello Spirito Santo: la quale e purifichi, nella tua clemenza, i nostri cuori, e li difenda da ogni avversità.
+$Per Dominum eiusdem
 
 [Ant Matutinum]
 All'improvviso * venne dal cielo un rumore di vento che si avanza impetuoso, alleluia, alleluia.;;47
@@ -51,10 +55,6 @@ Che dirò dei Giudei? Ecco gli stessi farisei leggevano, e in ciò che leggevano
 
 [Ant 2]
 Io sono la porta, * dice il Signore; se uno entra per me, sarà salvo, e troverà pastura, alleluia.
-
-[Oratio]
-Signore, ci assista la virtù dello Spirito Santo: la quale e purifichi, nella tua clemenza, i nostri cuori, e li difenda da ogni avversità.
-$Per Dominum eiusdem
 
 [Ant 3]
 Vi lascio * la pace, vi dò la mia pace: ma non come la dà il mondo io la dò a voi, alleluia.

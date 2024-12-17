@@ -1,17 +1,9 @@
 [Rank]
 Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[Rank]
-Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[Rule]
-ex Pasc7-0;
-1 nocturn;
-Antiphonas horas
-Psalmi Dominica;
-Hymnus Tertia
-Feria Te Deum
-no93
+[Oratio]
+En nos âmes, Seigneur, répandez avec bienveillance l’Esprit-Saint. C’est par Sa sagesse que nous avons été créés et par Sa providence que nous sommes gouvernés.
+$Per Dominum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. Ils furent tous remplis de l’Esprit-Saint, alléluia.\nR. Et ils commencèrent à parler, alléluia./s
@@ -42,13 +34,5 @@ R. Recevez en vous l’Esprit-Saint le Paraclet : c’est lui que mon Père vous
 &Gloria
 R. Recevez en vous l’Esprit-Saint le Paraclet : c’est lui que mon Père vous enverra, alléluia.
 
-[Lectio3]
-@Tempora/Quad3-4:Lectio3
-&teDeum
-
 [Ant 2]
 La charité de Dieu * a été répandue dans nos cœurs par Son Esprit qui habite en nous, alléluia.
-
-[Oratio]
-En nos âmes, Seigneur, répandez avec bienveillance l’Esprit-Saint. C’est par Sa sagesse que nous avons été créés et par Sa providence que nous sommes gouvernés.
-$Per Dominum eiusdem

@@ -1,24 +1,8 @@
 [Rank]
 S. Gregoire VII Pape et Confesseur;;Duplex;;3;;vide C4
 
-[Rule]
-vide C4;
-9 lectiones
-CPapaM=Urbain;
-
 [Oratio]
 O Dieu, force de ceux qui espèrent en Vous, Vous qui avez fortifié le bienheureux Grégoire, Votre Confesseur et Pontife par la vertu de constance dans la défense de la liberté de l'Eglise, accordez-nous, par son exemple et son intercession, de triompher courageusement de toute adversité.
-$Per Dominum
-
-[Commemoratio]
-!Commemoratio S. Urbani I, Papæ et Martyris
-@Commune/C2:Oratio Gregem
-
-[Commemoratio] (rubrica 1960)
-!Commemoratio S. Urbani I, Papæ et Martyris
-@Commune/C2:Oratio proper
-$Oremus
-v. Ô Dieu, sur le roc inébranlable des apôtres, vous avez fondé votre Eglise qui n’a plus a redouter la puissance des enfers ; faites qu’à la prière du bienheureux Urbain, votre Martyr et Souverain Pontife, elle reste ferme dans votre vérité et sous votre garde, elle soit en sûreté pour toujours.
 $Per Dominum
 
 [Lectio4]
@@ -33,15 +17,3 @@ Pendant qu’il célébrait le saint Sacrifice, de pieux personnages virent une 
 [Lectio94]
 Grégoire VII, de son premier nom, Hildebrand, naquit à Sovana en Toscane. Remarquable entre les plus remarquables, par la science, la sainteté, comme par toute espèce de vertus, il en répandit le merveilleux éclat à travers toute l’Église de Dieu. Jeune encore il prit l’habit religieux au monastère de Cluny et se consacra au service de Dieu avec une piété si ardente que, bientôt, les saints religieux de ce même monastère le choisirent comme prieur. Élu ensuite abbé du monastère de Saint-Paul-hors-les-murs, puis créé Cardinal de PÉglise Romaine, il fut chargé de fonctions et de missions des plus importantes, sous les pontifes Léon IX, Victor II, Étienne IX, Nicolas II et Alexandre II. Élu Pape à l’unanimité à la mort d’Alexandre II, il fut le champion et le défenseur très ardent de la liberté ecclésiastique. Il souffrit beaucoup pour ce motif et fut obligé de s’éloigner de Rome. Ses dernières paroles en mourant, furent : « J’ai aimé la justice et haï l’iniquité ; voilà pourquoi je meurs en exil. » Il partit pour le ciel, l’an du salut mil quatre-vingt-cinq, et sa précieuse dépouille fut ensevelie avec honneur dans la basilique cathédrale de Salerne
 &teDeum
-
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
-
-[Lectio93]
-@Sancti/05-25o

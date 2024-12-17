@@ -1,14 +1,15 @@
 [Rank]
 Feria VI Quattuor Temporum in Adventu;;Feria major;;2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1930)
 Feria VI Quattuor Temporum Adventus;;Feria major;;4
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria VI infra Hebdomadam III Adventus;;Feria major;;2
 
-[Rule]
-Preces Feriales
+[Oratio]
+Excitez votre puissance, Seigneur, et venez, pour que vos fidèles confiants en votre bonté, soient très vite délivrés de tout ce qui leur fait obstacle.
+$Qui vivis
 
 [Lectio1]
 Lecture du saint Évangile selon saint Luc.
@@ -47,10 +48,6 @@ R. Et sa splendeur avec lui.
 
 [Ant 2]
 Dès que la voix * de votre salutation est venue à mes oreilles, l’enfant a tressailli de joie dans mon sein, alléluia.
-
-[Oratio]
-Excitez votre puissance, Seigneur, et venez, pour que vos fidèles confiants en votre bonté, soient très vite délivrés de tout ce qui leur fait obstacle.
-$Qui vivis
 
 [Ant 3]
 Ceci est le témoignage * que Jean a rendu : Celui qui vient après moi a été fait avant moi.

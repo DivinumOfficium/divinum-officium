@@ -1,16 +1,9 @@
 [Rank]
 Die VI infra octavam Paschæ;;Semiduplex I class;;6;;ex Pasc0-0
 
-[Rule]
-ex Pasc0-0;
-1 nocturn;
-Omit Hymnus Preces Suffragium;
-Minores sine Antiphona;
-Capitulum Versum 2;
-Psalmi Dominica;
-
-[Ant Matutinum]
-@Tempora/Pasc0-2
+[Oratio]
+Dio onnipotente ed eterno, che col mistero pasquale hai suggellato il patto di riconciliazione coll'umanità; dà alle anime nostre, che quanto celebriamo colla festa presente, l'imitiamo di fatto. 
+$Per Dominum
 
 [Lectio1]
 Lettura del santo Vangelo secondo Matteo
@@ -44,10 +37,6 @@ R. Perciò facciam festa nel Signore, alleluia.
 
 [Ant 2]
 Gli undici discepoli * al vedere il Signore nella Galilea, lo adorarono, alleluia.
-
-[Oratio]
-Dio onnipotente ed eterno, che col mistero pasquale hai suggellato il patto di riconciliazione coll'umanità; dà alle anime nostre, che quanto celebriamo colla festa presente, l'imitiamo di fatto. 
-$Per Dominum
 
 [Ant 3]
 Mi è stato dato * ogni potere in cielo e in terra, alleluia.

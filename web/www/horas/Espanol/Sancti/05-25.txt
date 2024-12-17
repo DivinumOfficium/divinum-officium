@@ -1,24 +1,8 @@
 [Rank]
 S. Gregorii VII Papæ et Confessoris;;Duplex;;3;;vide C4
 
-[Rule]
-vide C4;
-9 lectiones
-CPapaM=Urbano;
-
 [Oratio]
 Oh Dios, fortaleza de cuantos en ti esperan, que esforzaste con la virtud de la constancia para defender la libertad de la Iglesia al bienaventurado Gregorio, tu Confesor y Pontífice: concédenos que con su ejemplo e intercesión superemos valerosamente todas las contrariedades.
-$Per Dominum
-
-[Commemoratio]
-!Conmemoración de S. Urbano I, Papa y Mártir
-@Commune/C2:Oratio Gregem
-
-[Commemoratio] (rubrica 1960)
-!Conmemoración de S. Urbano I, Papa y Mártir
-@Commune/C2:Oratio proper
-$Oremus
-v. Oh Dios, que estableciste firmemente tu Iglesia sobre la roca del apóstol y la libraste de los terribles poderes del infierno, concédenos, te suplicamos, que por la intercesión del bienaventurado Urbano, tu mártir y sumo pontífice, ella permanezca fiel a tu verdad para estar siempre seguros bajo Tu protección.
 $Per Dominum
 
 [Lectio4]
@@ -33,15 +17,3 @@ Cuando celebraba los divinos oficios, algunas personas piadosas vieron cómo una
 [Lectio94]
 El Papa Gregorio VII, llamado Hildebrando, nació cerca de Savona en Toscana. Se distinguió por su ciencia, santidad y en todo tipo de virtud; fue una luz brillante para toda la Iglesia de Dios. Cuando era joven, vistió el hábito religioso en el monasterio de Cluny y sirvió a Dios con tanto celo y devoción que fue elegido prior por los santos religiosos de ese monasterio. Más tarde, fue nombrado abad del monasterio de San Pablo extramuros, y luego Cardenal de la Iglesia Romana, realizando notables servicios y misiones bajo los papas León IX, Víctor II, Esteban IX, Nicolás II y Alejandro II. A la muerte de Alejandro, fue elegido por unanimidad Papa, y se destacó como el promotor y defensor más celoso de la libertad de la Iglesia, por lo que sufrió mucho; incluso tuvo que abandonar Roma. Sus últimas palabras, mientras yacía moribundo, fueron: “He amado la justicia y aborrecido la iniquidad, y por eso muero en el exilio”. Fue al cielo en el año de la salvación 1085, y su cuerpo fue enterrado con honor en la Catedral de Salerno.
 &teDeum
-
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
-
-[Lectio93]
-@Sancti/05-25o

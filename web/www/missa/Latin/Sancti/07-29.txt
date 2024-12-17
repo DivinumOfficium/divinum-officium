@@ -3,17 +3,14 @@
 [Rank]
 S. Marthæ Virginis;;Semiduplex;;2.2;;vide C6
 
-[Rank] (rubrica 196)
-S. Marthæ Virginis;;Semiduplex;;3;;vide C6
-
 [Rule]
 vide C6;
 Gloria
+
+[Oratio]
+@Commune/C6b::s/N\./Marthæ/
 
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Lucam
 !Luc 10:38-42
 In illo témpore: Intravit Jesus in quoddam castellum: et mulier quaedam, Martha nomine, excepit illum in domum suam et huic erat soror nomine Maria quae etiam sedens secus pedes Domini audiebat verbum illius. Martha autem satagebat circa frequens ministerium quae stetit, et ait: Domine non est tibi curae quod soror mea reliquit me solam ministrare dic ergo illi ut me adiuvet et respondens dixit illi Dominus: “Martha, Martha, sollicita es, et turbaris erga plurima: porro unum est necessarium. Maria optimam partem elegit, quae non auferetur ab ea.”
-
-[Oratio]
-@Commune/C6b::s/N\./Marthæ/

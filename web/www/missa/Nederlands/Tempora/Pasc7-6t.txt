@@ -1,11 +1,5 @@
 [Rank]
-Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;5;;ex Pasc7-0
-
-[Rank]
 Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[RankNewcal]
-Sabbato post Pentecostes;;Feria;;1;;
 
 [Rule]
 no Gloria
@@ -17,9 +11,6 @@ Credo
 Prefatio=Spiritu=hodierna die;
 
 [Introitus]
-@Tempora/Pasc7-6
-
-[Oratio]
 @Tempora/Pasc7-6
 
 [LectioL1]
@@ -66,6 +57,9 @@ Prefatio=Spiritu=hodierna die;
 
 [OratioL5]
 @Tempora/093-6
+
+[Oratio]
+@Tempora/Pasc7-6
 
 [Lectio]
 @Tempora/Pasc7-6

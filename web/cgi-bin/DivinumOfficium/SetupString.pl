@@ -14,12 +14,13 @@ our $version, $datafolder;
 our %setupstring_caches_by_version;
 
 # Pseudo constants to be used in vero() sub
+# Commone Summorum Pont. introduced in 1942 only (=> not for Monastic 1930)
 my %subjects = (
   rubricis => sub {$version},
   rubrica => sub {$version},
   tempore => \&get_tempus_id,
   missa => sub { our $missanumber },
-  communi => sub { {summpont => ($version =~ /1960/ || $version =~ /1955/ || $version =~ /Divino/)} },
+  communi => sub { {summpont => ($version =~ /1960/ || $version =~ /1955/ || $version =~ /^Divino/)} },
   'die' => \&get_dayname_for_condition,
   feria => sub { our $dayofweek + 1 },
 );

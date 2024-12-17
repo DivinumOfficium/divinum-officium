@@ -1,9 +1,6 @@
 [Rank]
 Ss. Innocentium;;Duplex II class;;5;;ex C3
 
-[Rank] (rubrica 196)
-Ss. Innocentium;;Duplex II class;;5;;ex C2
-
 [Rule]
 Gloria
 Credo
@@ -24,10 +21,10 @@ Prefatio=Nat
 [Graduale]
 @Sancti/12-28
 
-[Tractus]
+[GradualeP]
 @Sancti/12-28
 
-[GradualeP]
+[Tractus]
 @Sancti/12-28
 
 [Evangelium]

@@ -3,23 +3,12 @@ Sanctae Familiae Jesu Mariae Joseph;;Duplex majus;;3.9
 (sed rubrica 1960)
 Sanctae Familiae Jesu Mariae Joseph;;Duplex II classis;;5
 
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-No Sunday Commemoratio
-
 [Ant Vespera]
 And Jacob * begot Joseph the husband of Mary, of whom was born Jesus, who is called Christ.;;109
 The angel of the Lord * appeared to Joseph in his sleep, saying: Joseph, son of David, fear not to take unto thee Mary thy wife, for that which is conceived in her, is of the Holy Ghost.;;112
 The shepherds came * with haste; and they found Mary and Joseph, and the infant lying in the manger.;;121
 The Magi, entering into the house, * found the child with Mary his mother.;;126
 His father * and mother were wondering at those things which were spoken concerning him.;;147
-
-[Capitulum Laudes]
-!Luke 2:51
-v. Jesus went down with Mary and Joseph, and came to Nazareth, and was subject to them.
-$Deo gratias
 
 [Hymnus Vespera]
 v. O highest hope of mortals,
@@ -64,9 +53,6 @@ who parents dost obey;
 Praise to the sovereign Father
 and Paraclete for aye. 
 
-[Versum Prima]
-Who subdued yourself to Mary and Joseph.
-
 [Versum 1]
 V. Blessed are they that dwell in thy house, O Lord.
 R. They shall praise thee for ever and ever.
@@ -77,6 +63,10 @@ The Word was made flesh, * and dwelt among us, full of grace and truth; and of h
 [Oratio]
 Lord Jesus Christ, who subject to Mary and Joseph, didst consecrate family life by thy unspeakable virtues, aid us by their united intercession to profit by the examples of thy Holy Family, and attain to their everlasting companionship:
 $Qui vivis
+
+[Commemoratio]
+!Commemoratio Sunday in Octava Epiphaniae
+@Tempora/Epi1-0a:Oratio:s/V\. .*/V. All they from Saba shall come. Alleluia./ s/R\. .*/R. They shall bring gold and incense. Alleluia./
 
 [Invit]
 Christ, Son of God, subject to Mary and Joseph, * O come, let us worship Him.
@@ -107,7 +97,7 @@ And years and grace with God and men;”
 And in His father’s humble art 
 Took share and part.
 _
-"With toil", saith He, “my limbs are wet,
+“With toil”, saith He, “my limbs are wet,
 Prefiguring the Bloody Sweat:” 
 Ah! how He bears our chastisement
 With sweet content!
@@ -264,6 +254,11 @@ Jesus went down * with them, and came to Nazareth, and was subject to them.
 And Jesus advanced * in wisdom, and age, and grace with God and men.
 And they said: * How came this man by this wisdom and miracles? Is not this the carpenter's son?
 
+[Capitulum Laudes]
+!Luke 2:51
+v. Jesus went down with Mary and Joseph, and came to Nazareth, and was subject to them.
+$Deo gratias
+
 [Hymnus Laudes]
 O house of Nazareth the blest, 
 Fair hostess of the Lord,
@@ -317,6 +312,9 @@ Enlighten us, O Lord, * by the example of thy family, and direct our feet into t
 !Phil 2:7
 v. But emptied himself, taking the form of a servant, being made in the likeness of men, and in habit found as a man.
 
+[Versum Prima]
+Who subdued yourself to Mary and Joseph.
+
 [Responsory Tertia]
 R.br. For our sake he became poor, * Being rich.
 R. For our sake he became poor, * Being rich.
@@ -364,7 +362,3 @@ And they said: * How came this man by this wisdom and miracles? Is not this the 
 
 [Ant 3]
 But Mary * kept all these words, pondering them in her heart.
-
-[Commemoratio]
-!Commemoratio Sunday in Octava Epiphaniae
-@Tempora/Epi1-0a:Oratio:s/V\. .*/V. All they from Saba shall come. Alleluia./ s/R\. .*/R. They shall bring gold and incense. Alleluia./

@@ -89,6 +89,11 @@ R. Proptérea datum est tibi regnum cælórum.
 &Gloria
 R. Proptérea datum est tibi regnum cælórum.
 
+[MM Capitulum]
+@Commune/C7:Capitulum Sexta
+_
+@CommuneM/C6::s/.*_.//s
+
 [Lectio5 in 2 loco]
 @Commune/C7:Lectio4 in 2 loco
 
@@ -101,8 +106,3 @@ R. Proptérea datum est tibi regnum cælórum.
 
 [Lectio8 in 2 loco]
 @Commune/C7:Lectio6 in 2 loco:s/.* Nihil enim/Nihil enim/
-
-[MM Capitulum]
-@Commune/C7:Capitulum Sexta
-_
-@CommuneM/C6::s/.*_.//s

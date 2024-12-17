@@ -1,9 +1,6 @@
 [Rank]
 S. Ignatii Episcopi et Martyris;;Duplex;;3;;vide C2
 
-[Rank] (rubrica 1570)
-S. Ignatii Episcopi et Martyris;;Semiduplex;;2.2;;vide C2
-
 [Rule]
 Gloria
 
@@ -21,7 +18,7 @@ v. Het zij verre van mij op iets anders te roemen dan op het Kruis van onze Heer
 [Lectio]
 Lezing uit de Brief van de heilige Apostel Paulus aan de Romeinen
 !Rom 8:35-39
-Broeders, wie kan ons scheiden van de liefde van Christus: wederwaardigheid of nood, of honger of naaktheid, of gevaar of vervolging of zwaard? - zoals er geschreven staat: "Om Uwentwil ondergaan wij iedere dag de dood; wij worden beschouwd als schapen, voor de slachting bestemd." - Integendeel, in dit alles behalen wij de overwinning door Hem, die ons zijn liefde heeft bewezen. Want ik ben er zeker van, dat geen dood of geen leven, geen engelen, heerschappijen of machten, geen heden en geen toekomst, geen kracht, geen hoogte of diepte, of welk ander schepsel ook, ons zal kunnen scheiden van de liefde Gods, die is in Christus Jezus, onze Heer.
+Broeders, wie kan ons scheiden van de liefde van Christus: wederwaardigheid of nood, of honger of naaktheid, of gevaar of vervolging of zwaard? - zoals er geschreven staat: “Om Uwentwil ondergaan wij iedere dag de dood; wij worden beschouwd als schapen, voor de slachting bestemd.” - Integendeel, in dit alles behalen wij de overwinning door Hem, die ons zijn liefde heeft bewezen. Want ik ben er zeker van, dat geen dood of geen leven, geen engelen, heerschappijen of machten, geen heden en geen toekomst, geen kracht, geen hoogte of diepte, of welk ander schepsel ook, ons zal kunnen scheiden van de liefde Gods, die is in Christus Jezus, onze Heer.
 
 [Graduale]
 !Eccli 44:16
@@ -32,6 +29,13 @@ Alleluia, alleluia
 !Gal 2:19-20
 V. Met Christus ben ik aan het Kruis gehecht. Ik leef, neen, niet ik, maar in mij leeft Christus. Alleluia.
 
+[GradualeP]
+Alleluia, alleluia.
+!Gal 2:19-20
+Met Christus ben ik aan het Kruis gehecht. Ik leef, neen, niet ik, maar in mij leeft Christus. Alleluia,
+!Ps 20:4
+Een kroon van edelgesteente hebt Gij hem op het hoofd gedrukt. Alleluia.
+
 [Tractus]
 !Eccli 44:16
 Zie de hogepriester, die in zijn dagen aan God heeft behaagd.
@@ -41,13 +45,6 @@ V. Niemand werd er gevonden, die als hij aan de wet van de Allerhoogste getrouw 
 Zijn hartewens hebt Gij verhoord en de bede van zijn lippen niet afgewezen.
 V. Ja, met milde zegen hebt Gij hem voorkomen.
 V. Een kroon van edelgesteente hebt Gij hem op het hoofd gedrukt.
-
-[GradualeP]
-Alleluia, alleluia.
-!Gal 2:19-20
-Met Christus ben ik aan het Kruis gehecht. Ik leef, neen, niet ik, maar in mij leeft Christus. Alleluia,
-!Ps 20:4
-Een kroon van edelgesteente hebt Gij hem op het hoofd gedrukt. Alleluia.
 
 [Evangelium]
 Vervolg ++ van het heilig Evangelie volgens Johannes
@@ -66,4 +63,3 @@ Ik ben een graankorrel voor Christus. Door de tanden van beesten worde ik gemale
 
 [Postcommunio]
 @Commune/C2c:Postcommunio:s/N\./Ignatius/
-

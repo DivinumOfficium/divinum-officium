@@ -1,14 +1,15 @@
 [Rank]
 Środa Suchych Dni Adwentu;;Feria major;;2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1930)
 Środa Suchych Dni Adwentu;;Feria major;;3
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Środa III tygodnia Adwentu;;Feria major;;2
 
-[Rule]
-Preces Feriales
+[Oratio]
+Spraw, prosimy Cię wszechmogący Boże aby zbliżające się uroczystości naszego odkupienia były nam pomocą w życiu doczesnem i abyśmy przez nie dostąpili nagrody wiecznej szczęśliwości.
+$Per Dominum.
 
 [Responsory1]
 R. Wołaj z mocą, ty, który ogłaszasz pokój w Jeruzalem:
@@ -32,10 +33,6 @@ R. I nazwą imię Jego Emmanuel.
 
 [Ant 2]
 Posłan jest * Anioł Gabrjel do Marji Panny, poślubionej Józefowi.
-
-[Oratio]
-Spraw, prosimy Cię wszechmogący Boże aby zbliżające się uroczystości naszego odkupienia były nam pomocą w życiu doczesnem i abyśmy przez nie dostąpili nagrody wiecznej szczęśliwości.
-$Per Dominum.
 
 [Ant 3]
 Oto ja służebnica Pańska: * niechaj mi się stanie według słowa twego.

@@ -4,7 +4,20 @@ S. Pontianus Papae et Martyris;;Simplex;;1.1;;vide C4b
 [Rule]
 vide C4b;
 
-
 [Oratio]
-Eternal Shepherd, look with favor upon Your flock.  Safeguard and shelter it forevermore through blessed Pontianus Your Martyr and Supreme Pontiff, whom You constituted shepherd of the whole Church. 
-$Per Dominum
+!For St. Pontianus
+@Commune/C2c:Oratio:s/N\./Pontianus/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
+
+[Secreta]
+!For St. Pontianus
+@Commune/C2c:Secreta:s/N\./Pontianus/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
+
+[Postcommunio]
+!For St. Pontianus
+@Commune/C2c:Postcommunio:s/N\./Pontianus/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem

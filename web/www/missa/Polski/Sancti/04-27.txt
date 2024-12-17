@@ -1,16 +1,10 @@
 [Rank]
 S. Petri Canisii Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C5a
 
-[RankNewcal]
-S. Petri Canisii Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C5a
-
 [Rule]
 vide C5a;
 Gloria
 CredoDA
-
-[Name]
-Petre
 
 [Comment]
 # 27 IV – Św. Piotra Kanizjusza, Wyznawcy i Doktora Kościoła
@@ -19,6 +13,9 @@ Petre
 Św. Piotr urodził się w Nijmegen w Holandii w 1521 roku. W roku 1543 wstąpił do Towarzystwa Jezusowego. Skierowano go do krajów germańskich dla obrony Kościoła przed protestantyzmem. Niestrudzenie głosił słowo Boże i organizował życie katolickie. Założył i zreformował liczne kolegia i uniwersytety w Niemczech, Austrii i Szwajcarii. Dwukrotnie występował na Soborze Trydenckim jako teolog papieski. Napisał dzieła dla obrony wiary. Jego zasługą jest, że protestantyzm nie ogarnął Bawarii i Austrii. Nazywa się go drugim apostołem Niemiec. Umarł we Fryburgu szwajcarskim 21 grudnia 1597 roku.
 
 Msza wspólna nr 20 In medio, z wyjątkiem kolekty.
+
+[Name]
+Petre
 
 [Introitus]
 @Commune/C4a:Introitus

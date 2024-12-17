@@ -38,10 +38,12 @@ sub getweek {
     return "Nat$tDay";
   }
 
-  if ($month == 1 && $day < (7 - $tomorrow)) {
-    return '';
-  }
   my $ordtime = 6 + 7 - day_of_week(6, 1, $year);
+
+  if ($month == 1 && $day < ($ordtime - $tomorrow)) {
+    return sprintf("Nat%02i", $tDay);
+  }
+
   my $easter = date_to_ydays(geteaster($year));
 
   if ($t < $easter - 63) {

@@ -1,14 +1,6 @@
 [Rank]
 Sobota w oktawie Bożego Ciała;;Semiduplex II class;;5;;ex Tempora/Pent01-4
 
-[Rank] (rubrica 1960)
-Sobota I tygodnia po Oktawie Pięćdziesiątnicy;;Feria;;1
-
-[Rule]
-ex Tempora/Pent01-4;
-9 lectiones
-Doxology=Corp
-
 [Lectio1]
 Z Pierwszej Księgi Królewskiej
 !1 Sm 3:1-7
@@ -20,9 +12,6 @@ Z Pierwszej Księgi Królewskiej
 6 I przydał Pan znowu zawołać Samuela: a Samuel wstawszy szedł do Heli, i rzekł: Owom ja; boś mię wołał. Który odpowiedział: Nie wołałem cię, synu mój, wróć się, a śpij.
 7 A Samuel jeszcze nie znał Pana, ani mu była objawiona mowa Pańska.
 
-[Responsory1 1960]
-@Tempora/Pent01-3:Responsory1
-
 [Lectio2]
 !1 Sm 3:8-12
 8 I przydał Pan i zawołał jeszcze Samuela trzecikroć: który wstawszy szedł do Heli,
@@ -30,9 +19,6 @@ Z Pierwszej Księgi Królewskiej
 10 I przyszedł Pan i stanął i zawołał, jako był zawołał powtóre: Samuel, Samuel! I rzekł Samuel: Mów Panie; bo słucha sługa twój.
 11 I rzekł Pan do Samuela: Oto ja czynię słowo w Izraelu, które ktokolwiek usłyszy, zabrzmią obie uszy jego.
 12 Dnia onego wzbudzę przeciw Heli wszystko, com mówił na dom jego: pocznę i wykonam.
-
-[Responsory2 1960]
-@Tempora/Pent01-3:Responsory2
 
 [Lectio3]
 !1 Sm 3:15-20
@@ -42,6 +28,3 @@ Z Pierwszej Księgi Królewskiej
 18 Oznajmił mu tedy Samuel wszystkie mowy, i nie zataił przed nim. A on odpowiedział: Pan ci jest: co dobre jest w oczach jego, niechaj czyni.
 19 Ale Samuel rósł: a Pan był z nim, i nie upadło ze wszystkich słów jego na ziemię.
 20 I poznał wszystek Izrael od Dan aż do Bersabee, że Samuel był wierny prorok Pański.
-
-[Responsory3 1960]
-@Tempora/Pent01-3:Responsory3

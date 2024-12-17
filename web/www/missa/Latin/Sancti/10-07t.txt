@@ -1,39 +1,28 @@
 [Rank]
+S. Marci Papæ Confessoris;;Simplex;;1.1;;vide C4
+(sed communi Summorum Pontificum)
 S. Marci Papæ Confessoris;;Simplex;;1.1;;vide C4b
 
 [Rule]
+vide C4;
+(sed communi Summorum Pontificum)
 vide C4b;
 Suffragium=Maria3;
+OPapaC=Marcum;
 
 [Oratio]
-Exáudi, Dómine, preces nostras: et, interveniénte beáto Marco Confessóre tuo~
-atque Pontífice, indulgéntiam nobis tríbue placátus et pacem.
+Exáudi, Dómine, preces nostras: et, interveniénte beáto Marco Confessóre tuo atque Pontífice, indulgéntiam nobis tríbue placátus et pacem.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Pro Ss. Sergio, Baccho, Marcello et Apulejo Martyribus
-Sanctórum Martyrum tuórum nos, Dómine, Sérgii, Bacchi, Marcélli et Apuléji beáta~
-mérita prosequántur: et tuo semper fáciant amóre fervéntes.
-$Per Dominum
+(communi Summorum Pontificum loco huius versus dicitur)
+@Commune/C4b::s/N\./Marcum/
 
 [Secreta]
 @Commune/C6b
-
-[Commemoratio Secreta]
-!Pro Ss. Sergio, Baccho, Marcello et Apulejo Martyribus
-Majestátem tuam nobis, Dómine, quǽsumus, hæc hóstia reddat immolánda placátam,~
-tuórum digna postulatióne Sanctórum.
-$Per Dominum
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b
 
 [Postcommunio]
-Da, quǽsumus, Dómine, fidélibus pópulis Sanctórum tuórum semper veneratióne~
-lætari: et eórum perpétua supplicatióne muníri.
+Da, quǽsumus, Dómine, fidélibus pópulis Sanctórum tuórum semper veneratióne lætari: et eórum perpétua supplicatióne muníri.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro Ss. Sergio, Baccho, Marcello et Apulejo Martyribus
-Sacraméntis, Dómine, muniámur accéptis: et sanctórum Mártyrum tuórum Sérgii,~
-Bacchi, Marcélli et Apuléji intercessióne, contra omnes nequítias irruéntes,~
-annis cœléstibus protegámur.
-$Per Dominum
-
+(communi Summorum Pontificum loco huius versus dicitur)
+@Commune/C4b

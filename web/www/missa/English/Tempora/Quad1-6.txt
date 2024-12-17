@@ -1,12 +1,6 @@
 [Rank]
 Sabbato Quattuor Temporum Quadrigesimæ;;Feria major;;2
 
-[Rank1960]
-Sabbato Quattuor Temporum Quadrigesimæ;;Feria major;;3
-
-[RankNewcal]
-Sabbato infra Hebdomadam I in Quadragesima;;Feria major;;2
-
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
@@ -22,10 +16,6 @@ v. Let my prayer come before You; incline Your ear to my call for help, O Lord.
 O Lord, the God of my salvation, by day I cry out, at night I clamor in Your presence. 
 &Gloria
 v. Let my prayer come before You; incline Your ear to my call for help, O Lord.
-
-[Oratio]
-Look graciously upon Your people, we beseech You, O Lord, and in Your mercy turn away from them the scourges of Your wrath.
-$Per Dominum
 
 [LectioL1]
 Lesson from the book of Deuteronomy
@@ -98,6 +88,10 @@ Blessed are You, O Lord, the God of our father, praiseworthy and exalted above a
 
 [OratioL5]
 O God, Who tempered the flames of fire for the three young men, mercifully grant that the flames of sin may not burn us, Your servants.
+$Per Dominum
+
+[Oratio]
+Look graciously upon Your people, we beseech You, O Lord, and in Your mercy turn away from them the scourges of Your wrath.
 $Per Dominum
 
 [Lectio]

@@ -1,14 +1,15 @@
 [Rank]
 Feria VI Quattuor Temporum in Adventu;;Feria major;;2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1930)
 Feria VI Quattuor Temporum Adventus;;Feria major;;3
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria VI infra Hebdomadam III Adventus;;Feria major;;2
 
-[Rule]
-Preces Feriales
+[Oratio]
+Signore, risveglia la tua potenza e vieni: affinché quelli che confidano nella tua bontà, siano presto liberati da ogni avversità: 
+$Qui vivis
 
 [Lectio1]
 Lettura del santo Vangelo secondo Luca. 
@@ -47,10 +48,6 @@ R. E il suo splendore con lui.
 
 [Ant 2]
 Appena la voce * del tuo saluto è giunta alle mie orecchie, è balzato per giubilo il bambino nel mio seno, alleluia.
-
-[Oratio]
-Signore, risveglia la tua potenza e vieni: affinché quelli che confidano nella tua bontà, siano presto liberati da ogni avversità: 
-$Qui vivis
 
 [Ant 3]
 Questa è la testimonianza * che rese Giovanni: Colui che viene dopo di me, è prima di me.

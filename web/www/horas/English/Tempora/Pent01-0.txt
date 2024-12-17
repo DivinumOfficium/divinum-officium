@@ -1,16 +1,6 @@
 [Rank]
 Dominica Sanctissimae Trinitatis;;Duplex I classis;;6.5
 
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Symbolum Athanasium
-No Commemoration
-Psalm5 Vespera=116
-Psalm5 Vespera3=113
-Prima=53
-
 [Ant Vespera]
 Glory be to thee, O equal Trinity * one Deity, from before all ages, so now and for evermore.
 Praise and endless glory be * to God the Father, the Son, and the Holy Paraclete, for ever and ever.
@@ -46,9 +36,6 @@ $Per Dominum
 
 [Invit]
 The True God is Unity in Trinity, and Trinity in Unity. * O come, let us worship.
-
-[HymnusM Matutinum]
-@:Hymnus Matutinum
 
 [Hymnus Matutinum]
 v. O God, by whose command is swayed
@@ -164,7 +151,7 @@ At that time, Jesus said unto His disciples: All power is given unto Me in heave
 _
 Homily by St. Gregory of Nazianzus, Patriarch of Constantinople
 !Treatise on the Faith
-There is no Catholic but knoweth that the Father is a Very Father, the Son a Very Son, and the Holy Ghost a Very Holy Ghost, even as the Lord Himself saith unto His Apostles: "Go ye and baptize all nations in the Name of the Father, and of the Son, and of the Holy Ghost." This is that Perfect Trinity Who is but One being, and of Whom therefore we testify that His Substance is one. For we make no division in God, as divisions are made in bodies, but we testify, that, according to the power of the Divine Nature, Which standeth not in matter, the Persons named have a real existence, and that God is One.
+There is no Catholic but knoweth that the Father is a Very Father, the Son a Very Son, and the Holy Ghost a Very Holy Ghost, even as the Lord Himself saith unto His Apostles: “Go ye and baptize all nations in the Name of the Father, and of the Son, and of the Holy Ghost.” This is that Perfect Trinity Who is but One being, and of Whom therefore we testify that His Substance is one. For we make no division in God, as divisions are made in bodies, but we testify, that, according to the power of the Divine Nature, Which standeth not in matter, the Persons named have a real existence, and that God is One.
 
 [Responsory7]
 R. Bless we the Father, and the Son, and the Holy Ghost.
@@ -172,11 +159,11 @@ R. Bless we the Father, and the Son, and the Holy Ghost.
 V. Blessed art Thou, O Lord, in the firmament of heaven, and above all to be praised and glorified for ever.
 R. Let us praise and exalt Him above all for ever.
 
-[Lectio8a]
-We do not say, as some have dreamt, that the Begetting of the Son of God is an outgrowing from one part to another part neither do we say that He is the Word in the sense of a mere sound uttered by a voice, but we do believe that these three Names and the Persons meant by them are all of only One Being, One Majesty, and One Power. And therefore we testify that God is one, because this One-ness of His Majesty forbiddeth that we should use the Plural form of speech and say, "Gods." It is Catholic language to say, "Father and Son," but we cannot and must not say that the Father and the Son are two gods. And that, not because the Son of God is not by Himself God; yea, He is Very God of Very God but because we know that the Son of God is not from elsewhere, but from the One Father Himself, and therefore we say that God is One. This is the doctrine which Prophets and Apostles have delivered; this is the doctrine which the Lord Himself taught when He said: "I and the Father are One,” (John x. 30,) that is, He meant, as touching the one Divine Being, but as touching Persons, We are distinct.
-
 [Lectio8](rubrica 1960)
 @:Lectio8a:s/It is.*//s
+
+[Lectio8a]
+We do not say, as some have dreamt, that the Begetting of the Son of God is an outgrowing from one part to another part neither do we say that He is the Word in the sense of a mere sound uttered by a voice, but we do believe that these three Names and the Persons meant by them are all of only One Being, One Majesty, and One Power. And therefore we testify that God is one, because this One-ness of His Majesty forbiddeth that we should use the Plural form of speech and say, “Gods.” It is Catholic language to say, “Father and Son,” but we cannot and must not say that the Father and the Son are two gods. And that, not because the Son of God is not by Himself God; yea, He is Very God of Very God but because we know that the Son of God is not from elsewhere, but from the One Father Himself, and therefore we say that God is One. This is the doctrine which Prophets and Apostles have delivered; this is the doctrine which the Lord Himself taught when He said: “I and the Father are One,” (John x. 30,) that is, He meant, as touching the one Divine Being, but as touching Persons, We are distinct.
 
 [Responsory8]
 R. One Seraph cried unto another:
@@ -194,15 +181,12 @@ At that time: Jesus said unto His disciples Be ye merciful, as your Father also 
 _
 Homily by St. Augustine, Bishop of Hippo
 !15th Sermon on Matthew, Words of the Lord
-There are two works of mercy which free us, and which the Lord Himself hath briefly named in the Gospel "Forgive, and ye shall be forgiven give, and it shall be given unto you." "Forgive, and ye shall be forgiven”, such is the promise of pardon. "Give, and it shall be given unto you”, such is the promise of favour. As touching forgiveness thou hast trespasses which thou wouldest fain have forgiven, and them which have trespassed against thee, whom thou canst forgive. As touching favour, there are beggars that beg from thee, and thou art a beggar to God. When we pray, we are all beggars to God, standing at the door of the Great Householder, yea, falling down on our knees, and beseeching Him to give us somewhat and that somewhat is God Himself. What doth a beggar ask of thee Bread. And what dost thou ask of God but that Christ Who saith: "I am the Living Bread Which came down from heaven?" If ye will be forgiven, forgive ye. If ye will be pardoned, pardon ye. If ye will receive, "give, and it shall be given unto you."
+There are two works of mercy which free us, and which the Lord Himself hath briefly named in the Gospel “Forgive, and ye shall be forgiven give, and it shall be given unto you.” “Forgive, and ye shall be forgiven”, such is the promise of pardon. “Give, and it shall be given unto you”, such is the promise of favour. As touching forgiveness thou hast trespasses which thou wouldest fain have forgiven, and them which have trespassed against thee, whom thou canst forgive. As touching favour, there are beggars that beg from thee, and thou art a beggar to God. When we pray, we are all beggars to God, standing at the door of the Great Householder, yea, falling down on our knees, and beseeching Him to give us somewhat and that somewhat is God Himself. What doth a beggar ask of thee Bread. And what dost thou ask of God but that Christ Who saith: “I am the Living Bread Which came down from heaven?” If ye will be forgiven, forgive ye. If ye will be pardoned, pardon ye. If ye will receive, “give, and it shall be given unto you.”
 &teDeum
 
 [Lectio9](rubrica 1960)
 @:Lectio8a:s/.*(It is)/$1/
 &teDeum
-
-[Ant Laudes]
-@:Ant Vespera
 
 [Hymnus Laudes]
 v. O thou, who dost all nature sway,

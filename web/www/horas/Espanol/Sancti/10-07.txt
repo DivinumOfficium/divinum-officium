@@ -7,14 +7,6 @@ Beatæ Mariæ Virginis a Rosario;;Duplex 2 classis;;5;;ex C11
 [Rank] (rubrica innovata)
 Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex;;3;;ex C11
 
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Marcos;
-
 [Ant Vespera]
 ¿Quién es ésta, * hermosa como paloma, como rosa plantada junto a manantiales de agua?;;109
 Virgen poderosa, * como torre de David: de ella cuelgan mil escudos, armaduras de valientes.;;112
@@ -64,7 +56,7 @@ $Per eumdem
 [Invit]
 Celebremos la solemnidad del Rosario de la Virgen María: * Adoremos a Cristo, su Hijo, nuestro Señor.
 
-[Hymnus Matutinum]
+[Hymnus Matutinum_]
 v. En el monte de los Olivos, ora 
 postrado el Redentor; está triste, 
 angustiado, desfallece 
@@ -203,9 +195,12 @@ R. Yo como la vid broté pimpollos de suave olor,
 V. Yo soy la madre del amor hermoso, y del temor, y de la ciencia, y de la santa esperanza. 
 R. Y mis flores dan frutos de gloria y de riqueza.
 
-[Lectio8]
+[Lectio8_1]
 !Del Sermón del Acueducto
-El Verbo se ha hecho carne, y habita ya entre nosotros. Habita en nuestra memoria y pensamiento, y desciende hasta nuestra imaginación. ¿De qué modo? Yaciendo en el pesebre, reposando sobre un regazo virginal, predicando en la montaña, pasando las noches en oración, y dejándose colgar de la cruz y desfigurar por la muerte; libre entre los muertos, reinando en el limbo; resucitando al tercer día, mostrando a los Apóstoles las hendiduras de los clavos, señales de su victoria y subiendo en su presencia a lo más alto de los cielos. Al pensar en cualquier misterio, pienso en Dios, al cual, por todos ellos, puedo llamar mi Dios. Tengo por sabiduría el meditarlos y por prudencia su dulce recuerdo; son como la almendra del fruto producido con abundancia por la vara de Aarón; la vara que María recibió de los cielos para enriquecernos a nosotros con su fruto. Porque fue en lo más elevado, más arriba de las regiones angélicas, donde María recibió el Verbo, del mismo seno del Padre.
+El Verbo se ha hecho carne, y habita ya entre nosotros. Habita en nuestra memoria y pensamiento, y desciende hasta nuestra imaginación. ¿De qué modo? Yaciendo en el pesebre, reposando sobre un regazo virginal, predicando en la montaña, pasando las noches en oración, y dejándose colgar de la cruz y desfigurar por la muerte; libre entre los muertos, reinando en el limbo; resucitando al tercer día, mostrando a los Apóstoles las hendiduras de los clavos, señales de su victoria y subiendo en su presencia a lo más alto de los cielos.
+
+[Lectio8_2]
+Al pensar en cualquier misterio, pienso en Dios, al cual, por todos ellos, puedo llamar mi Dios. Tengo por sabiduría el meditarlos y por prudencia su dulce recuerdo; son como la almendra del fruto producido con abundancia por la vara de Aarón; la vara que María recibió de los cielos para enriquecernos a nosotros con su fruto. Porque fue en lo más elevado, más arriba de las regiones angélicas, donde María recibió el Verbo, del mismo seno del Padre.
 
 [Responsory8]
 R. Levántate, amiga mía, porque el invierno ya pasó, la lluvia cesó y desapareció. 
@@ -214,9 +209,6 @@ V. El Señor dará su gracia, y nuestra tierra dará fruto.
 R. Las flores han aparecido en nuestra tierra. 
 &Gloria
 R. Las flores han aparecido en nuestra tierra. 
-
-[Lectio9]
-@Sancti/10-07t:Lectio93
 
 [Ant Laudes]
 Alégrate, * Virgen Madre: Cristo ha resucitado del sepulcro.
@@ -265,19 +257,6 @@ R. La hizo morar en su templo santo.
 [Ant 2]
 Celebramos hoy * devotamente la solemnidad del santo Rosario de María, la Madre de Dios, para que ella interceda por nosotros ante Jesucristo el Señor.
 
-[Commemoratio 2]
-!Conmemoración de S. Marcos, Papa
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Escucha, Señor, nuestros ruegos, y, por intercesión de San Marcos, tu Confesor y Pontífice, otórganos tu indulgencia y tu paz.
-$Per Dominum
-_
-!Conmemoración de los Ss. Sergio, Baco, Marcelo y Apuleyo, Mártires
-@Commune/C3:Oratio proper
-$Oremus
-Los méritos de tus santos mártires Sergio, Baco, Marcelo y Apuleyo nos acompañen, Señor, y nos hagan siempre fervorosos en tu amor.
-$Per Dominum
-
 [Lectio Prima]
 !Sir 24:17-18
 v. He crecido como cedro del Líbano, como ciprés en el monte Sión. Me elevé como la palmera en Cades, y como rosal en Jericó.
@@ -308,10 +287,6 @@ R. Después del parto, ¡oh Virgen!, * Has permanecido inviolada.
 _
 V. Eres hermosa y buena.
 R. Y llena de gracia, Santa Madre de Dios. 
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
 
 [Responsory Nona]
 R.br. Eres hermosa * Y buena.

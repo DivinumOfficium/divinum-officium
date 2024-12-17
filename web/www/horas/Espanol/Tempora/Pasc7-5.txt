@@ -1,20 +1,12 @@
 [Rank]
 Feria Sexta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[Rank]
-Feria Sexta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria VI post Pentecostes;;Feria;;1;;
 
-[Rule]
-ex Pasc7-0;
-1 nocturn;
-Psalmi Dominica;
-Antiphonas horas
-Hymnus Tertia
-Feria Te Deum
-no93
+[Oratio]
+Dios de misericordia, te pedimos que tu Iglesia, reunida por el Espíritu Santo, resista siempre los asaltos del mal. 
+$Per Dominum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. El Espíritu Consolador, aleluya.\nR. Os enseñará todas las verdades, aleluya./s
@@ -44,16 +36,13 @@ V. Él es el autor de todo; tiene toda virtud, y todo lo ve.
 R. Y como comprende todas las cosas, conoce todas las lenguas, aleluya, aleluya. 
 &Gloria
 R. Y como comprende todas las cosas, conoce todas las lenguas, aleluya, aleluya. 
+
 [Lectio3]
 Aprende, tú que juzgas, a perdonar; aprende, tú que estás enfermo, a impetrar. Si desconfías de conseguir el perdón de los pecados graves, acude a quienes rueguen por ti, pide a la Iglesia, para que ruegue por ti para que, por consideración a ella, lo que a ti podía negar el Señor, te sea perdonado. Y aunque no debamos dejar de creer lo que nos enseña la historia, —creemos, en efecto, que el cuerpo de este paralítico fue verdaderamente curado— reconozcamos, con todo, en él la curación del hombre interior, al cual se han perdonado los pecados. Cuando los judíos afirman que los pecados solamente pueden ser perdonados por Dios, confiesan ya a Jesús por Dios, y muestran su mala fe, reconociendo la obra divina, pero negando la divinidad de la persona.
 &teDeum
 
 [Ant 2]
 Dijo Jesús: * Para que creáis que el Hijo del hombre tiene poder en la tierra para perdonar los pecados, dijo al paralítico: A ti te lo digo, ponte en pie, toma tu camilla y vete a tu casa. Aleluya.
-
-[Oratio]
-Dios de misericordia, te pedimos que tu Iglesia, reunida por el Espíritu Santo, resista siempre los asaltos del mal. 
-$Per Dominum eiusdem
 
 [Ant 3]
 El Paráclito, * el Espíritu Santo, que enviará el Padre en mi nombre, será quien os lo enseñe todo y os vaya recordando todo lo que os he dicho. Aleluya.

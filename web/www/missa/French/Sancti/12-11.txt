@@ -1,24 +1,10 @@
 [Rank]
 S. Damasi Papæ et Confessoris;;Semiduplex;;2.5;;vide C4b
 
-[Rank] (rubrica 196)
-S. Damasi Papæ et Confessoris;;Duplex;;3;;vide C4b
-
-[Rank] (rubrica innovata)
-S. Damasi Papæ et Confessoris;;Semiduplex;;2.5;;vide C4b
-
 [Rule]
 OPapaC=Dámasum;
 vide C4;
 Gloria
-
-[Commemoratio Oratio]
-!Pro Octava Conceptionis Immaculatæ.
-@Sancti/12-08:Oratio
-
-[Commemoratio Secreta]
-!Pro Octava
-@Sancti/12-08:Secreta
 
 [Introitus]
 !Joann 21:15; 21:16; 21:17
@@ -27,10 +13,6 @@ v. Si tu m’aimes, Simon Pierre, conduis mes agneaux, conduis mes brebis.
 Je vous exalterai, Seigneur, parce que vous m’avez relevé, et que vous n’avez pas réjoui mes ennemis à mes dépens.
 &Gloria
 v. Si tu m’aimes, Simon Pierre, conduis mes agneaux, conduis mes brebis.
-
-[Commemoratio Postcommunio]
-!Pro Octava
-@Sancti/12-08:Postcommunio
 
 [Oratio]
 Pasteur éternel de l’Église, regardez avec bienveillance votre troupeau, protégez-le et gardez-le toujours. Nous vous le demandons par le bienheureux Pape Damase que vous avez placé comme berger à la tête de l’Église.

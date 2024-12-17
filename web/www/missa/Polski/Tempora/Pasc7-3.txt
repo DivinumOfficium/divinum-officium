@@ -1,12 +1,6 @@
 [Rank]
 Feria Quarta Quattuor Temporum Pentecostes;;Semiduplex I classis;;5;;ex Pasc7-0
 
-[Rank1960]
-Feria Quarta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[RankNewcal]
-Feria IV post Pentecostes;;Feria;;1;;
-
 [Rule]
 LectioL1
 Gloria
@@ -30,10 +24,6 @@ Bóg wstaje, a rozpraszają się Jego wrogowie i pierzchają przed Jego obliczem
 &Gloria
 v. O Boże, gdyś wyruszał wobec ludu swego, wskazując im drogę i wśród nich mieszkając, alleluja, ziemia zadrżała, niebo deszcz zesłało, alleluja, alleluja.
 
-[Oratio]
-Panie, niech Pocieszyciel, który od Ciebie pochodzi, oświeci nasze umysły i doprowadzi je do wszelkiej prawdy, jak to obiecał Twój Syn:
-$Qui tecum eiusdem
-
 [LectioL1]
 Czytanie z Dziejów Apostolskich.
 !Dz 2:14-21
@@ -48,6 +38,10 @@ Przez słowo Pana powstały niebiosa i wszystkie ich zastępy przez tchnienie us
 [OratioL1]
 Wszechmogący i miłosierny Boże, spraw, prosimy, aby Duch Święty przez swe zamieszkanie raczył uczynić z nas świątynię swojej chwały.
 $Per Dominum eiusdem
+
+[Oratio]
+Panie, niech Pocieszyciel, który od Ciebie pochodzi, oświeci nasze umysły i doprowadzi je do wszelkiej prawdy, jak to obiecał Twój Syn:
+$Qui tecum eiusdem
 
 [Lectio]
 Czytanie z Dziejów Apostolskich.

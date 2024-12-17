@@ -14,33 +14,6 @@ Ideo jurejurándo * fecit illum Dóminus créscere in plebem suam.
 Sacerdótes Dei, * benedícite Dóminum: servi Dómini, hymnum dícite Deo. Allelúja.
 Serve bone * et fidélis, intra in gáudium Dómini tui.
 
-[HymnusM Vespera]
-v. Iste Conféssor Dómini sacrátus,
-Festa plebs cujus celébrat per orbem,
-Hódie lætus méruit secréta
-Scándere cæli.
-_
-Qui pius, prudens, húmilis, pudícus,
-Sóbrius, castus fuit et quiétus,
-Vita dum præsens vegetávit ejus
-Córporis artus.
-_
-Ob sacrum cujus túmulum frequénter
-Membra languéntem modo sanitáti,
-Quólibet morbo fúerint graváta,
-Restituúntur.
-_
-Unde nunc noster chorus in honórem
-Ipsius, hymnum canit hunc libénter:
-Ut piis ejus méritis juvémur
-Omne per ævum.
-_
-Sit salus illi, decus atque virtus,
-Qui supra cæli résidens cacúmen,
-Tótius mundi máchinam gubérnat
-Trinus et unus.
-Amen.
-
 [Hymnus Vespera]
 {:H-Isteconfessor:}v. Iste Conféssor Dómini, coléntes
 Quem pie laudant pópuli per orbem,
@@ -68,11 +41,38 @@ Tótius mundi sériem gubérnat,
 Trinus et unus.  
 Amen.
 
+[Hymnus1 Vespera]
+@:Hymnus Vespera:s/beátas/suprémos/ s/Scándere sedes/Laudis honóres/ 
+
 [Hymnus1M Vespera]
 @:HymnusM Vespera:s/Hódie/Hac die/ s/secréta/suprémos/ s/Scándere cæli/Laudis honóres/
 
-[Hymnus1 Vespera]
-@:Hymnus Vespera:s/beátas/suprémos/ s/Scándere sedes/Laudis honóres/ 
+[HymnusM Vespera]
+v. Iste Conféssor Dómini sacrátus,
+Festa plebs cujus celébrat per orbem,
+Hódie lætus méruit secréta
+Scándere cæli.
+_
+Qui pius, prudens, húmilis, pudícus,
+Sóbrius, castus fuit et quiétus,
+Vita dum præsens vegetávit ejus
+Córporis artus.
+_
+Ob sacrum cujus túmulum frequénter
+Membra languéntem modo sanitáti,
+Quólibet morbo fúerint graváta,
+Restituúntur.
+_
+Unde nunc noster chorus in honórem
+Ipsius, hymnum canit hunc libénter:
+Ut piis ejus méritis juvémur
+Omne per ævum.
+_
+Sit salus illi, decus atque virtus,
+Qui supra cæli résidens cacúmen,
+Tótius mundi máchinam gubérnat
+Trinus et unus.
+Amen.
 
 [Versum 1]
 V. Amávit eum Dóminus, et ornávit eum.
@@ -81,20 +81,32 @@ R. Stolam glóriæ índuit eum.
 [Ant 1]
 Sacérdos et Póntifex, * et virtútum ópifex, pastor bone in pópulo, ora pro nobis Dóminum.
 
+[Oratio]
+v. Da, quǽsumus, omnípotens Deus: ut beáti N. Confessóris tui atque Pontíficis veneránda solémnitas, et devotiónem nobis áugeat et salútem.
+$Per Dominum.
+
+[Oratio1]
+v. Exáudi, quǽsumus, Dómine, preces nostras, quas in beáti N. Confessóris tui atque Pontíficis solemnitáte deférimus: et, qui tibi digne méruit famulári, ejus intercedéntibus méritis, ab ómnibus nos absólve peccátis.
+$Per Dominum.
+
+[Oratio2]
+v. Deus, qui pópulo tuo ætérnæ salútis beátum N. minístrum tribuísti: præsta, quǽsumus; ut quem Doctórem vitæ habúimus in terris, intercessórem habére mereámur in cælis.
+$Per Dominum
+
 [Invit]
 Regem Confessórum Dóminum, * Veníte, adorémus.
 
 [Hymnus Matutinum]
 @:Hymnus Vespera
 
-[HymnusM Matutinum]
-@:HymnusM Vespera
-
 [Hymnus1 Matutinum]
 @:Hymnus1 Vespera
 
 [Hymnus1M Matutinum]
 @:Hymnus1M Vespera
+
+[HymnusM Matutinum]
+@:HymnusM Vespera
 
 [Ant Matutinum]
 Beátus vir, * qui in lege Dómini meditátur: volúntas ejus pérmanet die ac nocte, et ómnia quæcúmque fáciet, semper prosperabúntur.;;1
@@ -272,26 +284,6 @@ R. Et osténdit illi regnum Dei.
 [Ant 2]
 Euge, serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, dicit Dóminus.
 
-[Oratio]
-v. Da, quǽsumus, omnípotens Deus: ut beáti N. Confessóris tui atque Pontíficis veneránda solémnitas, et devotiónem nobis áugeat et salútem.
-$Per Dominum.
-
-[Oratio1]
-v. Exáudi, quǽsumus, Dómine, preces nostras, quas in beáti N. Confessóris tui atque Pontíficis solemnitáte deférimus: et, qui tibi digne méruit famulári, ejus intercedéntibus méritis, ab ómnibus nos absólve peccátis.
-$Per Dominum.
-
-[Oratio2]
-v. Deus, qui pópulo tuo ætérnæ salútis beátum N. minístrum tribuísti: præsta, quǽsumus; ut quem Doctórem vitæ habúimus in terris, intercessórem habére mereámur in cælis.
-$Per Dominum
-
-[Oratio9]
-v. Gregem tuum, Pastor ætérne, placátus inténde: et per beátum N. (Mártyrem tuum atque) Summum Pontíficem perpétua protectióne custódi; quem totíus Ecclésiæ præstitísti esse pastórem.
-$Per Dominum
-
-[Oratio91]
-v. Gregem tuum, Pastor ætérne, placátus inténde: et per beátos N. et N. (Mártyres tuos atque) Summos Pontífices perpétua protectióne custódi; quos totíus Ecclésiæ præstitísti esse pastóres.
-$Per Dominum
-
 [Lectio Prima]
 !Sir 45:19-20
 v. Fungi sacerdótio, et habére laudem in nómine ipsíus, et offérre illi incénsum dignum in odórem suavitátis.
@@ -332,11 +324,19 @@ R. Tu es sacérdos * In ætérnum.
 [Versum 3]
 @:Versum 2
 
+[Ant 3 summi Pontificis]
+Dum esset Summus Póntifex, * terréna non métuit, sed ad cæléstia regna gloriósus migrávit.
+
 [Ant 3]
 Amávit eum Dóminus, * et ornávit eum: stolam glóriæ índuit eum, et ad portas paradísi coronávit eum.
 
-[Ant 3 summi Pontificis]
-Dum esset Summus Póntifex, * terréna non métuit, sed ad cæléstia regna gloriósus migrávit.
+[Oratio9]
+v. Gregem tuum, Pastor ætérne, placátus inténde: et per beátum N. (Mártyrem tuum atque) Summum Pontíficem perpétua protectióne custódi; quem totíus Ecclésiæ præstitísti esse pastórem.
+$Per Dominum
+
+[Oratio91]
+v. Gregem tuum, Pastor ætérne, placátus inténde: et per beátos N. et N. (Mártyres tuos atque) Summos Pontífices perpétua protectióne custódi; quos totíus Ecclésiæ præstitísti esse pastóres.
+$Per Dominum
 
 [Lectio1 in 2 loco]
 De libro Ecclesiastici

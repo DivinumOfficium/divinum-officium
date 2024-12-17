@@ -1,13 +1,10 @@
 [Rank]
 S. Leonis I Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4b
 
-[Rank] (rubrica innovata)
-S. Leonis I Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3.91;;vide C4b
-
-[Name]
-Leo
-
 [Rule]
 vide C4b;
 Gloria
 OPapaC=Leo;
+
+[Name]
+Leo

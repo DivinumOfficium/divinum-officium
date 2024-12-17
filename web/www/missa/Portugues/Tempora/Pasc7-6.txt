@@ -1,11 +1,5 @@
 [Rank]
-Sabbato Quattuor temporum Pentecostes;;Semiduplex I classis;;5;;ex Pasc7-0
-
-[Rank]
 Sabbato Quattuor temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[RankNewcal]
-Sabbato post Pentecostes;;Feria;;1;;
 
 [Rule]
 no Gloria
@@ -30,10 +24,6 @@ Bendize o Senhor, ó minha alma: e que tudo o que existe em mim bendiga o seu sa
 &Gloria
 v. O amor de Deus espalhou-se nos nossos corações, aleluia: pelo seu Espírito que habita em nós, aleluia, aleluia.
 
-[Oratio]
-Senhor, Vos rogamos, dignai-Vos infundir em nossas almas o Espírito Santo, cuja sabedoria nos criou e cuja providência nos governa.
-$Per Dominum eiusdem
-
 [LectioL1]
 Lição do Profeta Joel.
 !Jl 2:28-32.
@@ -52,7 +42,6 @@ O Espírito é que dá a vida; pois a carne não dá nenhum proveito.
 _
 #Gloria
 v. Glória a Deus nas alturas e paz na terra aos homens de boa vontade. Nós Vos louvamos. Nós Vos bendizemos. Nós Vos adoramos. Nós Vos glorificamos. Nós Vos damos graças pela vossa imensa glória. Ó Senhor Deus, Rei dos céus, Deus Pai todo-o-poderoso. Senhor Jesus Cristo, Filho Unigénito, Senhor Deus, Cordeiro de Deus, Filho de Deus Pai. Vós que tirais os pecados do mundo, tende misericórdia de nós. Vós, que tirais os pecados do mundo, atendei à nossa súplica. Vós, que estais sentado à direita do Pai, tende misericórdia de nós. Só Vós sois o Santo; só Vós, o Senhor; só Vós, o Altíssimo, Jesus Cristo: com o Espírito Santo ++ na glória de Deus Pai. Amen.
-
 
 [OratioL1]
 Senhor, Vos suplicamos, fazei que o Espírito Santo nos abrase com aquele fogo que Cristo enviou à terra e quer ardentemente que permaneça aceso.
@@ -119,6 +108,10 @@ v. Glória a Deus nas alturas e paz na terra aos homens de boa vontade. Nós Vos
 [OratioL5]
 Ó Deus, que mitigastes as chamas do fogo aos três jovens, concedei-nos misericordiosamente que nós, vosso servos, não sejamos queimados pelas chamas dos vícios.
 $Per Dominum
+
+[Oratio]
+Senhor, Vos rogamos, dignai-Vos infundir em nossas almas o Espírito Santo, cuja sabedoria nos criou e cuja providência nos governa.
+$Per Dominum eiusdem
 
 [Lectio]
 Lição da Ep.ª do B. Ap.º Paulo aos Romanos.

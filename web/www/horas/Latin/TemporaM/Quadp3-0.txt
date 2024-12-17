@@ -7,30 +7,23 @@ Invit2
 [Responsory Vespera 1]
 @Psalterium/Special/Major Special:Day6M Vespera:3-8
 
-[Responsory Laudes]
-@Psalterium/Special/Major Special:Day0M Laudes:3-8
-
-[Responsory TertiaM]
-@Psalterium/Special/Minor Special:Dominica Tertia:s/.*_.//s
-
-[Responsory SextaM]
-@Psalterium/Special/Minor Special:Dominica Sexta:s/.*_.//s
-
-[Responsory NonaM]
-@Psalterium/Special/Minor Special:Dominica Nona:s/.*_.//s
-
 [Responsory Vespera]
 @Psalterium/Special/Major Special:Day0M Vespera:3-8
 
+[Ant Matutinum 3N]
+Miserére mei, Fili David! † Quid vis ut fáciam tibi? Dómine, ut vídeam.
+V. Exaltáre Dómine in virtúte tua.
+R. Cantábimus et psallémus virtútes tuas.
+
 [Lectio1]
-@Tempora/Quadp3-0:Lectio1:s/-6/-5/ s/ Cumque.*//s 
+@Tempora/Quadp3-0:Lectio1:s/-6/-5/ s/ Cumque.*//s
 
 [Lectio2]
 @Tempora/Quadp3-0:Lectio1:s/-6/-8/ s/1-/5-/ s/1 .*(Cumque) /5 $1/s 
 @Tempora/Quadp3-0:Lectio2:s/!.*// s/9 .*//s
 
 [Lectio3]
-@Tempora/Quadp3-0:Lectio2:s/7-/9-/ s/7.*9/9/s 
+@Tempora/Quadp3-0:Lectio2:s/7-/9-/ s/7.*9/9/s
 
 [Lectio4]
 @Tempora/Quadp3-0:Lectio3
@@ -69,11 +62,6 @@ R. Visitávit Dóminus Saram, sicut promíserat et implévit quæ locútus est: 
 V. Vocavítque Abraham nomen fílii sui quem génuit ei Sara, Isaac.
 R. Témpore quo prædíxerat ei Deus.
 
-[Ant Matutinum 3N]
-Miserére mei, Fili David! † Quid vis ut fáciam tibi? Dómine, ut vídeam.
-V. Exaltáre Dómine in virtúte tua.
-R. Cantábimus et psallémus virtútes tuas.
-
 [Lectio9]
 @Tempora/Quadp3-0:Lectio7
 
@@ -99,3 +87,14 @@ R. Cantábimus et psallémus virtútes tuas.
 [Responsory12]
 @Tempora/Quadp3-0:Responsory9
 
+[Responsory Laudes]
+@Psalterium/Special/Major Special:Day0M Laudes:3-8
+
+[Responsory TertiaM]
+@Psalterium/Special/Minor Special:Dominica Tertia:s/.*_.//s
+
+[Responsory SextaM]
+@Psalterium/Special/Minor Special:Dominica Sexta:s/.*_.//s
+
+[Responsory NonaM]
+@Psalterium/Special/Minor Special:Dominica Nona:s/.*_.//s

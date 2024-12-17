@@ -1,43 +1,20 @@
 [Rank]
 St. John of the Cross, Confessor and Doctor of the Church;;Duplex;;3;;vide C5a
 
-[Rule]
-vide C5a;
-Gloria
-
-[Oratio]
-O God, Who made blessed John, Your Confessor and Teacher, an extraordinary lover~
-of perfect self-denial and the Cross, grant that, by continually striving to~
-imitate him, we may reach everlasting glory.
+[Oratio_]
+O God, Who made blessed John, Your Confessor and Teacher, an extraordinary lover of perfect self-denial and the Cross, grant that, by continually striving to imitate him, we may reach everlasting glory.
 $Per Dominum
 
+[Oratio]
+@:Oratio_
+(sed rubrica tridentina)
+@:Oratio_:s/ and Doctor//
+
+
 [Secreta]
-May the loving prayer of blessed John, Your Confessor and Doctor, fail us never, O~
-Lord; may it commend our offerings and ever secure for us Your forgiveness.
+May the loving prayer of blessed John, Your Confessor and Doctor, fail us never, O Lord; may it commend our offerings and ever secure for us Your forgiveness.
 $Per eumdem
 
 [Postcommunio]
-So that your sacrificial rites may grant us salvation, we pray You, O Lord, that~
-blessed John, Your Confessor and illustrious Doctor, may draw nigh as our~
-intercessor.
+So that your sacrificial rites may grant us salvation, we pray You, O Lord, that blessed John, Your Confessor and illustrious Doctor, may draw nigh as our intercessor.
 $Per Dominum
-
-[Commemoratio Oratio]
-!For St. Chrysogonus
-Harken, O Lord, to our humble prayers, so that we who realize our guilt because~
-of the evil we have committed, may be spared through the intercession of blessed~
-Chrysogonus.
-$Per Dominum
-
-[Commemoratio Secreta]
-!For St. Chrysogonus
-Be appeased by the gifts we offer You, O Lord, and through the intercession of~
-blessed Chrysogonus, Your Martyr, safeguard us from all dangers.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!For St. Chrysogonus
-Through the reception of Your sacrament, O Lord, may we be cleansed from our~
-hidden sins and delivered from the snares of our enemies.
-$Per Dominum
-

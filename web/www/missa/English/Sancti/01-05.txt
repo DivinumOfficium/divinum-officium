@@ -1,28 +1,12 @@
 [Rank]
 In Vigilia Epiphaniae;;Semiduplex;;5;;ex Sancti/01-01
 
-[Rank1570]
-In Vigilia Epiphaniae;;Semiduplex;;2;;ex Sancti/01-01
-
-[Rank1960]
-Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
-
-[Rule]
-CPapaM=Telesphorus;
-ex Sancti/01-01;
-Gloria
-CredoDA
-Prefatio=Nat
-Suffragium=Maria2;;
-
 [Introitus]
 !Wis 18:14-15.
 @Tempora/Nat1-0
 
 [Oratio]
-O Almighty and everlasting God, do Thou order all our actions in conformity with~
-thy good pleasure, that through the name of thy well-beloved Son, we may~
-worthily abound in all good works.
+O Almighty and everlasting God, do Thou order all our actions in conformity with thy good pleasure, that through the name of thy well-beloved Son, we may worthily abound in all good works.
 $Qui tecum
 
 [Lectio]

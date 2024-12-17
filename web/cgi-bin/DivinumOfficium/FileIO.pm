@@ -23,6 +23,7 @@ sub do_read($) {
     local $/;    # Slurp
     local ($_) = <INP>;
     close INP;
+    return () unless $_;
     s/^\x{FEFF}//;
     split(/\r?\n/);
   } else {

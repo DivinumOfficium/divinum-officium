@@ -1,7 +1,7 @@
 [Rank]
 Dzień III w oktawie Pięćdziesiątnicy;;Duplex I classis;;6;;ex Pasc7-0
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Wtorek po Pięćdziesiątnicy;;Feria;;1;;
 
 [Rule]
@@ -11,6 +11,10 @@ Psalmi Dominica;
 Antiphonas horas
 Hymnus Tertia
 No commemoration
+
+[Oratio]
+Błagamy Cię, Panie, niech moc Ducha Świętego nas wspomaga, serca nasze oczyści i od wszelkich przeciwności nas broni.
+$Per Dominum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. Duch Pocieszyciel, alleluja.\nR. Wszystkiego was nauczy, alleluja./s
@@ -47,10 +51,6 @@ Co o takich powiem? Oto sami faryzeusze czytali o Chrystusie i przez to, co czyt
 
 [Ant 2]
 Jam jest drzwiami * rzekł Pan: przezemnie jeśli kto wnijdzie, zbawion będzie i pastwiska znajdzie, alleluja.
-
-[Oratio]
-Błagamy Cię, Panie, niech moc Ducha Świętego nas wspomaga, serca nasze oczyści i od wszelkich przeciwności nas broni.
-$Per Dominum eiusdem
 
 [Ant 3]
 Pokój * zostawuję wam: pokój mój daję wam: nie jako daje świat, ja wam daję, alleluja.

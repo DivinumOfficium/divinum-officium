@@ -4,39 +4,28 @@ Feria Sexta infra octavam Corporis Christi;;Semiduplex II class;;5;;ex Tempora/P
 [Rank] (rubrica 1960)
 Feria VI infra Hebdomadam I post Octavam Pentecostes;;Feria;;1
 
-[Rule]
-ex Tempora/Pent01-4;
-9 lectiones
-Doxology=Corp
+[Oratio](rúbrica 1960)
+@Tempora/Pent01-0:OratioW
 
 [Lectio1]
 Del Libro Primero de los Reyes. 
 !1 Sam 2:27-29
 27 Vino a Helí un hombre de Dios y le dijo: “Así habla Yahvé. Yo me revelé claramente a la casa de tu padre cuando eran esclavos en Egipto, en la casa del Faraón. 
 28 Yo me le elegí de entre todas las tribus de Israel para sacerdote, para que subiese al altar a quemar el incienso y para que llevase ante mí el efod. Yo di a la casa de tu padre todas las combustiones de los hijos de Israel. 
-29 ¿Por qué, pues, envidias mis víctimas y mis ofrendas, las que yo mandé se ofreciesen en mi casa, y tienes en más a tus hijos que a mí, engordándoos de lo mejor de todas las oblaciones de Israel, mi pueblo? 
-
-[Responsory1 1960]
-@Tempora/Pent01-2:Responsory1
+29 ¿Por qué, pues, envidias mis víctimas y mis ofrendas, las que yo mandé se ofreciesen en mi casa, y tienes en más a tus hijos que a mí, engordándoos de lo mejor de todas las oblaciones de Israel, mi pueblo?
 
 [Lectio2]
 !1 Sam 2:30-33
 30 Por eso he aquí lo que dice Yahvé, Dios de Israel: Yo había dicho y repetido a tu casa y a la casa de tu padre que ministraríais ante mí por siempre; pero ahora dice Yahvé: Lejos de mí eso, porque yo honro a los que me honran y desprecio a los que me desprecian. 
 31 Tiempo vendrá en que yo amputaré tu brazo y el brazo de la casa de tu padre, de modo que ya no haya nunca ancianos en tu casa y siempre veas ante ti un rival. 
 32 Aun en las prosperidades de Israel, no habrá nunca ancianos en tu casa. No haré desaparecer de mi altar a todos tus descendientes, 
-33 de modo que se consuman sus ojos y desfallezca su alma; pero todos los de tu casa morirán por la espada. 
-
-[Responsory2 1960]
-@Tempora/Pent01-2:Responsory2
+33 de modo que se consuman sus ojos y desfallezca su alma; pero todos los de tu casa morirán por la espada.
 
 [Lectio3]
 !1 Sam 2:34-36
 34 Y te servirá de señal lo que sucederá a tus hijos Ofni y Finés; ambos morirán en el mismo día. 
 35 Yo me suscitaré un sacerdote fiel, que obrará según mi corazón y según mi alma; le edificaré una casa estable, y él andará siempre en presencia de mi ungido; 
-36 y cuantos de tu casa queden, vendrán a prosternarse ante él, pidiéndole una moneda de plata y un pedazo de pan; y le dirán: Haz el favor de colocarme en alguna de tus funciones sacerdotales, para que tenga un pedazo de pan que comer. 
-
-[Responsory3 1960]
-@Tempora/Pent01-2:Responsory3
+36 y cuantos de tu casa queden, vendrán a prosternarse ante él, pidiéndole una moneda de plata y un pedazo de pan; y le dirán: Haz el favor de colocarme en alguna de tus funciones sacerdotales, para que tenga un pedazo de pan que comer.
 
 [Lectio4]
 Del Sermón de Santo Tomás de Aquino
@@ -64,6 +53,3 @@ He aquí, pues, la enseñanza y la lección que nos da con estas palabras llenas
 [Lectio9]
 Si estas palabras parecieron duras a sus discípulos, ¿qué impresión debieron producir a sus enemigos? Ello no obstante, el Salvador debía expresarse aquí de modo tal que no le comprendieran todos. El secreto de Dios debe hacernos atentos, no hostiles. Pero la fe de aquellos discípulos flaqueó al oír que nuestro Señor Jesucristo empleaba tal lenguaje. No creyeron que anunciaba algo grande, y que sus palabras velaban una nueva gracia, sino que lo entendieron a su manera y en sentido enteramente humano, pensando que Jesús era capaz, o que Jesús tenía el propósito de distribuir a trozos, entre los que en Él creerían, la carne de que se había revestido el Verbo: “Dura es esta doctrina, dijeron, ¿y quién es el que puede escucharla?”
 &teDeum
-
-[Oratio](rúbrica 1960)
-@Tempora/Pent01-0:OratioW

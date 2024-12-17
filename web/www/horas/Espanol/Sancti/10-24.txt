@@ -21,9 +21,6 @@ $Per Dominum
 [Invit]
 Al Señor, Rey de los Arcángeles, * Venid a adorarlo.
 
-[Hymnus Matutinum]
-@Sancti/10-24:Hymnus Vespera
-
 [Ant Matutinum]
 Saliendo Tobías, * encontró un gallardo joven con el vestido ceñido, y como a punto de viajar; y sin saber que era un Ángel, le saludó.;;8
 El Ángel Rafael, * ocultando su condición, dijo: Yo soy Azarías, hijo del gran Ananías.;;10
@@ -73,10 +70,6 @@ R. Saliendo Tobías, encontró un gallardo joven, que estaba en pie, con el vest
 V. Y sin saber que era un Ángel del Señor, le saludó, diciéndole: 
 R. ¿De dónde eres, buen mancebo? 
 
-[Lectio3]
-@:Lectio3DA
-(rubrica 1960 omittitur)
-
 [Lectio3DA]
 !Tob 12:14-22
 14 Por eso me envió Dios a curarte a ti y a Sara, tu nuera. 
@@ -89,7 +82,7 @@ R. ¿De dónde eres, buen mancebo?
 21 Se levantaron, pero no le volvieron a ver. Y confesaron las grandezas y maravillas de Dios y cómo el ángel del Señor se les había aparecido. 
 22 Y postrados en tierra durante tres horas, estuvieron bendiciendo a Dios; y publicaron todas sus maravillas.
 
-[Responsory3]
+[Responsory3DA]
 R. Entrado que hubo el Ángel, saludó a Tobías, diciendo: Sea siempre contigo la alegría. 
 * Buen ánimo, que no tardará Dios en curarte. 
 V. Y respondiendo Tobías, dijo: ¿Qué alegría puedo yo tener viviendo en tinieblas y sin ver la luz del cielo? 
@@ -97,16 +90,10 @@ R. Buen ánimo, que no tardará Dios en curarte.
 &Gloria
 R. Buen ánimo, que no tardará Dios en curarte. 
 
-[Responsory3] (rubrica 1960)
-@:Responsory2
-
-[Lectio4]
+[Lectio4DA]
 Sermón de S. Buenaventura, Obispo. 
 !Sermón 5, santos Ángeles.
 Rafael significa medicina de Dios. La liberación del mal se obtiene por los tres beneficios que Rafael nos hace al curarnos. Médico celestial, nos sana de las enfermedades del alma, conduciéndonos a la amarga contrición. Dice Tobías: Luego que entrares en la casa, unge sus ojos con la hiel. Lo hizo así, y su padre recobró la vista. ¿Por qué no lo hizo el mismo Rafael? Porque no corresponde al Ángel comunicar la compunción sino señalar su camino. Por la hiel entendemos la amargura de la contrición, que cura los ojos interiores del alma, según el Salmo: Él es quien sana a los de corazón contrito. Esta contrición es un excelente colirio. En el libro II de los Jueces se lee que el Ángel subió al lugar de las lágrimas, y dijo al pueblo: Yo soy el que os saqué de la tierra de Egipto, y os hice tantos y tantos beneficios; y todo el pueblo se puso a llorar; y aquel lugar se llamó el de los lloradores o de las lágrimas. También a nosotros, los Ángeles nos están hablando de continuo de los beneficios de Dios y recordándonoslos: ¿Quién te ha creado? ¿Quién te redimió? ¿Cómo te has portado con Él? ¿Por qué le ofendiste? Si consideramos estas cosas como es debido, no podremos menos que llorar.
-
-[Lectio4] (rubrica 1960)
-@:Lectio3DA
 
 [Responsory4]
 R. Preguntó Tobías al Ángel: Dime, te ruego, ¿de qué familia y tribu eres tú? Y díjole el Ángel: 
@@ -164,9 +151,6 @@ R. Vosotros, empero, bendecid al Señor y anunciad todas sus maravillas.
 Alrededor de aquella piscina yacían muchos enfermos, ciegos, cojos, paralíticos, aguardando el movimiento de las aguas. Pero entonces la enfermedad era a veces un impedimento para el que deseaba curar; pero ahora depende de cada cual el acercarse a la piscina. Y no es un Ángel quien mueve las aguas sino el mismo Señor de los Ángeles quien lo hace todo. No cabe decir: Mientras yo voy, otro ha bajado antes; porque aunque acudieran todos, no se agotaría la gracia ni disminuiría la eficacia de la acción divina, la cual permanecería inalterable. Así como de los rayos del sol, que nunca palidecen a pesar de brillar todos los días, y no pierden su resplandor aunque alumbren a muchos, puede decirse, aún con más razón, de la acción del Espíritu Santo, que no puede sufrir mengua alguna por muchos que sean los que de ella participen. Lo que ocurría en Betsaida fue para disponer a los que conocerían esta virtud del agua, que curaba las enfermedades corporales -familiarizados con este espectáculo- a creer que también los males del alma son susceptibles de curación.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
 !Tob 12:12
 v. Cuando tú orabas con lágrimas y dabas sepultura a los muertos; cuando dejabas la comida, para esconder de día los muertos en tu casa y sepultarlos de noche, yo presentaba tu oración al Señor.
@@ -174,9 +158,6 @@ $Deo gratias
 
 [Hymnus Laudes]
 @Sancti/03-24
-
-[Versum 2]
-@Sancti/05-08:Versum 3
 
 [Lectio Prima]
 !Tob 12:20
@@ -186,13 +167,6 @@ v. Ya es hora de que vuelva al que me envió. Vosotros, bendecid a Dios y anunci
 !Tob 12:14-15
 v. Pero ahora el Señor me ha enviado a curarte y a librar del demonio a Sara, la mujer de tu hijo. Yo soy el ángel San Rafael, uno de los siete de la corte del Señor.
 $Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Versum 3]
-@Sancti/05-08:Versum 2
 
 [Ant 3]
 Príncipe glorioso, * arcángel San Rafael, acuérdate de nosotros; aquí y en todo lugar, ruega por nosotros al Hijo de Dios.

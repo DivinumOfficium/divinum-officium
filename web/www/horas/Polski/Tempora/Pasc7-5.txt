@@ -1,20 +1,12 @@
 [Rank]
 Piątek Suchych Dni Pięćdziesiątnicy;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[Rank]
-Piątek Suchych Dni Pięćdziesiątnicy;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[RankNewcal]
+[Rank] (rubrica innovata)
 Piątek po Pięćdziesiątnicy;;Feria;;1;;
 
-[Rule]
-ex Pasc7-0;
-1 nocturn;
-Psalmi Dominica;
-Antiphonas horas
-Hymnus Tertia
-Feria Te Deum
-no93
+[Oratio]
+Daj, prosimy Cię, miłosierny Boże, Kościołowi Twemu, aby zgromadzony przez Ducha Świętego żadną miarą nie był zamącony napaściami nieprzyjaciół swoich.
+$Per Dominum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. Duch Pocieszyciel, alleluja.\nR. Wszystkiego was nauczy, alleluja./s
@@ -51,10 +43,6 @@ Ucz się, jeśli osądzasz, przebaczać; ucz się, będąc chorym, prosić. Jeś
 
 [Ant 2]
 Rzekł Jezus: * Lecz abyście wiedzieli, że Syn Człowieczy ma władzę odpuszczać grzechy rzekł powietrzem ruszonemu: Tobie mówię, wstań a weź łóżko twoje i idź do domu twego, alleluja.
-
-[Oratio]
-Daj, prosimy Cię, miłosierny Boże, Kościołowi Twemu, aby zgromadzony przez Ducha Świętego żadną miarą nie był zamącony napaściami nieprzyjaciół swoich.
-$Per Dominum eiusdem
 
 [Ant 3]
 Lecz Pocieszyciel, * Duch Święty, którego Ojciec pośle w imię moje, on was wszystkiego nauczy i przypomni wam wszystko, comkolwiek wam powiedział, alleluja.

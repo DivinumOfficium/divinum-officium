@@ -1,9 +1,6 @@
 [Rank]
 S. Marthae Virginis;;Semiduplex;;2;;vide C6
 
-[Rank] (rubrica 196)
-S. Marthae Virginis;;Semiduplex;;3;;vide C6
-
 [Rule]
 vide C6;
 Gloria
@@ -22,10 +19,10 @@ Wspomnienie śś. Feliksa, Symplicjusza, Faustyna i Beatryczy, Męczenników
 
 Msza wspólna nr 14 Sapientiam, z wyjątkiem kolekty, sekrety i pokomunii
 
+[Oratio]
+@Commune/C6b::s/N\./Marty/
+
 [Evangelium]
 Ciąg dalszy ++ Ewangelii świętej według Łukasza.
 !Łk 10:38-42
 Onego czasu: Jezus wszedł do jednej osady, a niewiasta pewna imieniem Marta przyjęła Go w domu swoim. A ta miała siostrę imieniem Maria, która też siedząc u stóp Pana, słuchała słowa Jego. Marta zaś krzątała się koło różnych posług, a zatrzymując się rzekła: «Panie, czyż nie ma to dla Ciebie znaczenia, że siostra moja zostawiła mię, abym sama posługiwała? Powiedz jej przeto, aby mi pomogła». A odpowiadając rzekł jej Pan: «Marto, Marto, o bardzo wiele rzeczy troszczysz się i kłopoczesz, a przecież jednej tylko potrzeba. Maria najlepszą cząstkę obrała, która jej nie będzie odjęta».
-
-[Oratio]
-@Commune/C6b::s/N\./Marty/

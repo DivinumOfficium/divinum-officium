@@ -1,16 +1,9 @@
 [Rank]
 Sabbato in Albis;;Semiduplex I class;;6;;ex Pasc0-0
 
-[Rule]
-ex Pasc0-0;
-1 nocturn;
-Omit Hymnus Preces Suffragium;
-Minores sine Antiphona;
-Capitulum Versum 2;
-Psalmi Dominica;
-
-[Ant Matutinum]
-@Tempora/Pasc0-3
+[Oratio]
+Concedi, Dio onnipotente, che avendo celebrato con venerazione le feste pasquali, per loro mezzo meritiamo di giungere ai gaudi eterni.
+$Per Dominum
 
 [Lectio1]
 Lettura del santo Vangelo secondo Giovanni
@@ -44,8 +37,3 @@ Né ci sembri strano sentir dire che la sinagoga è figurata nel più giovane e 
 
 [Ant 2]
 Correvano tutti due insieme, * ma quell'altro discepolo corse più lesto di Pietro, e arrivò primo al sepolcro, alleluia
-
-[Oratio]
-Concedi, Dio onnipotente, che avendo celebrato con venerazione le feste pasquali, per loro mezzo meritiamo di giungere ai gaudi eterni.
-$Per Dominum
-

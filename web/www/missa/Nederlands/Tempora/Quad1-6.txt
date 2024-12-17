@@ -1,9 +1,6 @@
 [Rank]
 Sabbato Quattuor Temporum Quadrageismæ;;Feria major;;2.1
 
-[Rank] (rubrica 196)
-Sabbato Quattuor Temporum Quadragesimæ;;Feria major;;3.9
-
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
@@ -19,10 +16,6 @@ v. Moge mijn gebed voor uw aanschijn treden. Neig uw oor naar mijn smeken, Heer.
 Heer, mijn God en mijn heil, dag en nacht roep ik tot U.
 &Gloria
 v. Moge mijn gebed voor uw aanschijn treden. Neig uw oor naar mijn smeken, Heer.
-
-[Oratio]
-Wij vragen U, Heer, sla genadig acht op uw volk en weer goedgunstig van ons af de slagen van uw toorn.
-$Per Dominum
 
 [LectioL1]
 Lezing uit het Boek Deuteronomium
@@ -63,7 +56,7 @@ $Deo gratias
 [GradualeL3]
 !Ps 89:13; 89:1
 Heer, wend U een weinig tot ons, en wees uw dienaren genadig.
-V. Heer, Gij zijt onze toevlucht geworden van geslacht tot geslacht. 
+V. Heer, Gij zijt onze toevlucht geworden van geslacht tot geslacht.
 
 [OratioL3]
 Wij vragen U, Heer, verhoor goedgunstig de gebeden van uw volk, opdat wij, die terecht om onze zonden getroffen worden, tot verheerlijking van uw Naam, genadig daarvan bevrijd mogen worden.
@@ -89,6 +82,10 @@ $Per Dominum
 
 [OratioL5]
 @Tempora/093-6
+
+[Oratio]
+Wij vragen U, Heer, sla genadig acht op uw volk en weer goedgunstig van ons af de slagen van uw toorn.
+$Per Dominum
 
 [Lectio]
 Lezing uit de eerste Brief van de heilige Apostel Paulus aan de Thessalonicenzen

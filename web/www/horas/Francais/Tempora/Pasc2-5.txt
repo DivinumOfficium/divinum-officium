@@ -1,10 +1,6 @@
 [Rank]
 Die III Infra Octavam S. Joseph;;Semiduplex;;2;;vide Tempora/Pasc2-3
 
-[Rule]
-vide Tempora/Pasc2-3;
-9 lectiones
-
 [Lectio1]
 Des Actes des Apôtres
 !Act. 25:1-5
@@ -14,17 +10,11 @@ Des Actes des Apôtres
 04 Festus répondit que Paul était détenu à Césarée, et que lui-même allait repartir incessamment.
 05 Il déclara : « Que ceux d’entre vous qui sont experts en la matière descendent avec moi, et présentent leur accusation s’il y a quelque chose à reprocher à cet homme. »
 
-[Responsory1]
-@Tempora/Pasc0-3:Responsory2
-
 [Lectio2]
 !Act. 25:6-8
 06 Ayant passé chez eux huit à dix jours au plus, il redescendit à Césarée. Le lendemain, il siégea au tribunal, et ordonna d’amener Paul.
 07 Quand celui-ci fut arrivé, les Juifs descendus de Jérusalem l’entourèrent et multiplièrent contre lui de graves motifs d’accusation qu’ils ne pouvaient pas démontrer,
 08 tandis que Paul se défendait : « Je n’ai commis de faute ni contre la loi des Juifs, ni contre le Temple, ni contre l’empereur. »
-
-[Responsory2]
-@Tempora/Pasc0-5:Responsory1
 
 [Lectio3]
 !Act. 25:9-12
@@ -32,9 +22,6 @@ Des Actes des Apôtres
 10 Paul répondit : « Je suis ici devant le tribunal impérial : c’est là qu’il me faut être jugé. Je ne suis coupable de rien contre les Juifs, comme toi-même tu t’en rends fort bien compte.
 11 Si donc je suis coupable et si j’ai fait quelque chose qui mérite la mort, je ne refuse pas de mourir. Mais s’il ne reste rien des accusations que ces gens-là portent contre moi, personne ne peut leur faire la faveur de me livrer à eux. J’en appelle à l’empereur. »
 12 Alors, après avoir conféré avec son conseil, Festus déclara : « Tu en as appelé à l’empereur, tu iras devant l’empereur. »
-
-[Responsory3]
-@Tempora/Pasc0-5:Responsory2
 
 [Lectio4]
 Sermo sancti Joánnis Chrysóstomi

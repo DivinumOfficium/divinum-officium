@@ -1,12 +1,6 @@
 [Rank]
 Sabbato Quattuor Temporum Quadrigeismæ;;Feria major;;2
 
-[Rank] (si rubrica 1960)
-Sabbato Quattuor Temporum Quadrigesimæ;;Feria major;;3
-
-[Rank] (si rubrica innovata)
-Sabbato infra Hebdomadam I in Quadragesima;;Feria major;;2
-
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
@@ -31,10 +25,6 @@ v. Niech dojdzie do Ciebie moja modlitwa, nakłoń ucha Swego na prośbę moją,
 Panie Boże, Zbawicielu mój, podczas dnia wołam i w nocy żalę się przed Tobą.
 &Gloria
 v. Niech dojdzie do Ciebie moja modlitwa, nakłoń ucha Swego na prośbę moją, Panie.
-
-[Oratio]
-Prosimy Cię, Panie, wejrzyj miłościwie na Twój lud i odwróć odeń chłostę Twego zagniewania.
-$Per Dominum
 
 [LectioL1]
 Czytanie z Księgi Powtórzonego Prawa.
@@ -124,6 +114,10 @@ Błogosławiony jesteś, Panie, Boże ojców naszych: i chwalebny, i sławny na 
 
 [OratioL5]
 Boże, któryś złagodził płomień ognia dla trzech młodzieńców, spraw łaskawie, aby nas, sług Twoich, nie pożarł płomień namiętności.
+$Per Dominum
+
+[Oratio]
+Prosimy Cię, Panie, wejrzyj miłościwie na Twój lud i odwróć odeń chłostę Twego zagniewania.
 $Per Dominum
 
 [Lectio]

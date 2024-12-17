@@ -13,9 +13,8 @@
 @Tempora/Pent15-0:Lectio8:s/.* Dóminus/Dóminus/s s/$/~/
 @Tempora/Pent15-0:Lectio9:s/Alius .*//s
 
-[Responsory12]
-@Tempora/Pent01-0:Responsory8
-
 [Lectio12]
 @Tempora/Pent15-0:Lectio9:s/.* Alius /Alius /s
 
+[Responsory12]
+@Tempora/Pent01-0:Responsory8

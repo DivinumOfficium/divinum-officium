@@ -3,12 +3,6 @@ Sanctae Familiae Jesu Mariae Joseph;;Duplex majus;;3.9
 (sed rubrica 1960)
 Sanctae Familiae Jesu Mariae Joseph;;Duplex II classis;;5
 
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-No Sunday Commemoratio
-
 [Ant Vespera]
 Giacobbe poi * generò Giuseppe, sposo di Maria, dalla quale nacque Gesù, che si chiama Cristo.;;109
 Un Angelo del Signore * apparve in sogno a Giuseppe, e gli disse: Giuseppe, figlio di David, non esitare a prendere Maria in tua consorte; perché quel ch'è nato in lei, è per opera dello Spirito Santo.;;112
@@ -60,9 +54,6 @@ insieme col sommo Padre e collo Spirito S.
 ti sia sempre gloria.
 Amen.
 
-[Versum Prima]
-Che fosti sottomesso a Maria e Giuseppe.
-
 [Versum 1]
 V. Beati quelli che abitano nella tua casa, o Signore.
 R. Ti loderanno per i secoli dei secoli.
@@ -73,6 +64,10 @@ Il Verbo s'è fatto uomo, * e abitò tra noi, pieno di grazia e di verità; e da
 [Oratio]
 Signore, accogli con celeste bontà i voti del popolo supplicante; affinché esso e conosca ciò che si deve fare, e, conosciutolo, divenga più forte per compierlo.
 $Qui vivis
+
+[Commemoratio]
+!Commemorazione della Dominica nell'Ottava dell'Epifania
+@Tempora/Epi1-0a:Oratio:s/V\. .*/V. Verranno tutti quelli di Saba, alleluia./ s/R\. .*/R. Portando oro ed incenso, alleluia./
 
 [Invit]
 Dio, sottomesso a Maria e a Giuseppe, * Venite, adoriamolo.
@@ -318,6 +313,9 @@ Illuminaci, Signore, * cogli esempi della tua famiglia, e guida i nostri piedi n
 !Phil 2:7
 v. Egli annientò se stesso, fino a mettersi nella condizione di servo, mettendosi alla pari cogli uomini e facendosi esteriormente riconoscere per uomo.
 
+[Versum Prima]
+Che fosti sottomesso a Maria e Giuseppe.
+
 [Responsory Tertia]
 R.br. Per noi egli si fece povero * Benché fosse ricco. 
 R. Per noi egli si fece povero * Benché fosse ricco. 
@@ -345,11 +343,6 @@ _
 V. Povero son io, e nei travagli fin dalla mia giovinezza.
 R. Ma esaltato, fui umiliato e conturbato.
 
-[Capitulum Nona]
-!Phil 2:7
-v. Egli annientò se stesso, fino a mettersi nella condizione di servo, mettendosi alla pari cogli uomini e facendosi esteriormente riconoscere per uomo.
-$Deo gratias
-
 [Responsory Nona]
 R.br. Povero son io, e nei travagli * Fin dalla mia giovinezza. 
 R. Povero son io, e nei travagli * Fin dalla mia giovinezza. 
@@ -374,7 +367,3 @@ R. E che i tuoi figli abbiano abbondanza di pace.
 
 [Ant 3]
 Maria poi * conservava con cura tutte queste cose, meditandole in cuor suo.
-
-[Commemoratio]
-!Commemorazione della Dominica nell'Ottava dell'Epifania
-@Tempora/Epi1-0a:Oratio:s/V\. .*/V. Verranno tutti quelli di Saba, alleluia./ s/R\. .*/R. Portando oro ed incenso, alleluia./

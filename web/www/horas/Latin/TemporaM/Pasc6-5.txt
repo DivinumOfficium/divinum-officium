@@ -3,11 +3,11 @@
 [Rank]
 Feria VI post Octavam Ascensionis;;Semiduplex;;2.1;;ex TemporaM/Pasc5-4
 
-[Rank] (rubrica tridentina)
-Feria VI post Octavam Ascensionis;;Semiduplex;;2;;ex TemporaM/Pasc5-4
-
 [Rank] (rubrica 1963)
 Feria VI post Ascensionem;;Feria;;1;;vide TemporaM/Pasc5-4
+
+[Rank] (rubrica tridentina)
+Feria VI post Octavam Ascensionis;;Semiduplex;;2;;ex TemporaM/Pasc5-4
 
 [Rule]
 ex TemporaM/Pasc5-4;
@@ -16,7 +16,8 @@ Doxology=Asc
 Feria Te Deum
 No suffragium
 
-[Rule] (rubrica 1963)
+[Rule] (rubrica 196)
+ 
 
 [Oratio]
 @Tempora/Pasc6-0
@@ -43,20 +44,20 @@ No suffragium
 [Lectio1] (rubrica tridentina)
 @Tempora/Pasc6-4r
 
+[Responsory1]
+@Tempora/Pasc5-4:Responsory4
+
 [Lectio2]
 @Tempora/Pasc6-4r:Lectio1
 
 [Lectio2] (rubrica tridentina)
 @Tempora/Pasc6-4r
 
-[Lectio3]
-@Tempora/Pasc6-6:LectioJudae1
-
-[Responsory1]
-@Tempora/Pasc5-4:Responsory4
-
 [Responsory2]
 @Tempora/Pasc5-4:Responsory5
+
+[Lectio3]
+@Tempora/Pasc6-6:LectioJudae1
 
 [Responsory3]
 @TemporaM/Pasc5-4:Responsory12
@@ -76,7 +77,7 @@ _
 (sed rubrica 1963)
 @TemporaM/Pasc5-5
 
-[Capitulum Nona] 
+[Capitulum Nona]
 @TemporaM/Pasc6-0
 (sed rubrica 1963)
 @TemporaM/Pasc5-5

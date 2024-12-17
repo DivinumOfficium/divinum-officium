@@ -1,13 +1,9 @@
 [Rank]
 Środa w Oktawie Wielkanocy;;Semiduplex I classis;;6;;ex Pasc0-0
 
-[Rule]
-ex Pasc0-0;
-1 nocturn;
-Omit Hymnus Preces Suffragium;
-Minores sine Antiphona;
-Capitulum Versum 2;
-Psalmi Dominica;
+[Oratio]
+Boże, który nas coroczną uroczystością Zmartwychwstania Pańskiego uweselasz, spraw miłościwie, abyśmy święcąc te uroczystości w Czasie, stali się godnymi dostąpienia radości wiekuistych.
+$Per eumdem
 
 [Ant Matutinum]
 @Tempora/Pasc0-0::s/^V\..*//sm
@@ -46,10 +42,6 @@ Można też zapytać, dlaczego Pan, gdy Jego uczniowie trudzili się na morzu, s
 
 [Ant 2]
 Zapuśćcie sieć * po prawej stronie łodzi, a znajdziecie, alleluja.
-
-[Oratio]
-Boże, który nas coroczną uroczystością Zmartwychwstania Pańskiego uweselasz, spraw miłościwie, abyśmy święcąc te uroczystości w Czasie, stali się godnymi dostąpienia radości wiekuistych.
-$Per eumdem
 
 [Ant 3]
 Rzekł im Jezus * uczniom swoim: Przynieście z ryb, któreście teraz pojmali. Wstąpił Symon Piotr i wyciągnął sieć na ziemię, pełną wielkich ryb, alleluja.

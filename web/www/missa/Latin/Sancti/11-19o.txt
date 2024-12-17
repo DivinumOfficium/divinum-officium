@@ -1,11 +1,24 @@
 [Rank]
+S. Pontiani Papæ et Martyris;;Simplex;;1.1;;vide C2c
+(sed communi Summorum Pontificum)
 S. Pontiani Papæ et Martyris;;Simplex;;1.1;;vide C4b
 
 [Rule]
+vide C2c
+(sed communi Summorum Pontificum)
 vide C4b;
 
 [Oratio]
-Infirmitátem nostram réspice omnípotens Deus: et quia pondus própriæ actiónis~
-gravat, beáti Pontiáni Mártyris tui atque Pontíficis intercéssio gloriósa nos~
-prótegat.
-$Per Dominum
+@Commune/C2c:Oratio:s/N\./Pontiáni/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio
+
+[Secreta]
+@Commune/C2c:Secreta:s/N\./Pontiáni/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta
+
+[Postcommunio]
+@Commune/C2a:Postcommunio:s/N\./Pontiáno/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio

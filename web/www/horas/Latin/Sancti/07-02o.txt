@@ -1,5 +1,8 @@
 @Sancti/07-02
 
+[Rank]
+In Visitatione Beatæ Mariæ Virginis;;Duplex majus;;4;;ex C11
+
 [Ant Vespera]
 @Sancti/09-08::s/Natívitas/Visitatio/g s/Nativitátem/visitatiónem/
 
@@ -46,7 +49,7 @@ Vocem prior Elisabeth audivit, sed Joannes prior gratiam sensit. Illa naturæ or
 @Commune/C12:Responsory3:s/commemoratiónem/visitatiónem/
 
 [Lectio9]
-@Sancti/07-02:Lectio93
+@Sancti/07-02:Lectio6
 
 [Ant Laudes]
 @Sancti/09-08:Ant Vespera:s/Natívitas/Visitatio/g s/Nativitátem/visitatiónem/ s/;;.*//g

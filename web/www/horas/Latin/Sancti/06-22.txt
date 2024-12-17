@@ -1,9 +1,6 @@
 [Rank]
 S. Paulini Episcopi et Confessoris;;Duplex;;3;;vide C4
 
-[Rank] (rubrica innovata)
-S. Paulini Episcopi et Confessoris;;Duplex optional;;2;;vide C4
-
 [Rule]
 vide C4;
 9 lectiones
@@ -43,8 +40,7 @@ Verum, dilectíssimi, non solum ut bona ætérna quærátis, sed ut mala innúme
 &teDeum
 
 [Versum 2]
-V. Justum dedúxit Dóminus per vias rectas.
-R. Et osténdit illi regnum Dei.
+@Commune/C4
 
 [Ant 2]
 Euge, serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constituam, dicit Dóminus.

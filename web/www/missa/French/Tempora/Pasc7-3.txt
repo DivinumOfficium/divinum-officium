@@ -1,12 +1,6 @@
 [Rank]
 Feria Quarta Quattuor Temporum Pentecostes;;Semiduplex I classis;;5;;ex Pasc7-0
 
-[Rank1960]
-Feria Quarta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[RankNewcal]
-Feria IV post Pentecostes;;Feria;;1;;
-
 [Rule]
 LectioL1
 Gloria
@@ -23,10 +17,6 @@ Que Dieu se lève, et que ses ennemis soient dispersés ; qu'ils fuient devant s
 &Gloria
 v. Ô Dieu, quand vous marchiez à la tête de votre peuple, leur montrant le chemin et habitant parmi eux, alléluia, la terre a tremblé et l'eau a coulé du ciel, alléluia, alléluia.
 
-[Oratio]
-Puisse le Paraclet qui procède de vous, Seigneur, illuminer nos âmes, et les amener, selon la promesse de votre Fils, à la pleine vérité.
-$Qui tecum eiusdem
-
 [LectioL1]
 Léctio Actuum Apostolórum
 !Act 2:14-21.
@@ -41,6 +31,10 @@ Par la Parole du Seigneur les cieux ont été affermis, et toute leur force leur
 [OratioL1]
 Faites, Dieu tout-puissant et bon, que, par sa venue, l'Esprit Saint daigne établir en nous sa demeure et faire de nous le temple de sa gloire.
 $Per Dominum eiusdem
+
+[Oratio]
+Puisse le Paraclet qui procède de vous, Seigneur, illuminer nos âmes, et les amener, selon la promesse de votre Fils, à la pleine vérité.
+$Qui tecum eiusdem
 
 [Lectio]
 Léctio Actuum Apostolórum
@@ -57,7 +51,7 @@ V. (Hic genuflectitur) Venez, Esprit Saint, remplissez les cœurs de vos fidèle
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Joánnem.
 !Joannes 6:44-52
-En ce temps-là, Jésus dit aux foules des Juifs : « Nul ne peut venir à moi si le Père qui m'a envoyé ne l'attire ; et moi je le ressusciterai au dernier jour. Il est écrit dans les Prophètes : Ils seront tous enseignés par Dieu. Quiconque a entendu le Père et a reçu son enseignement, vient à moi. Ce n'est pas que personne ait vu le Père, sinon celui qui est de Dieu ; celui-là a vu le Père. En vérité, en vérité, je vous le dis, celui qui croit en moi a la vie éternelle. Je suis le pain de vie. Vos pères ont mangé la manne dans le désert, et ils sont morts. Voici le pain descendu du ciel, afin qu'on en mange et qu'on ne meure point. Je suis le pain vivant qui est descendu du ciel. Si quelqu'un mange de ce pain, il vivra éternellement ; et le pain que je donnerai, c'est ma chair, pour le salut du monde. » 
+En ce temps-là, Jésus dit aux foules des Juifs : « Nul ne peut venir à moi si le Père qui m'a envoyé ne l'attire ; et moi je le ressusciterai au dernier jour. Il est écrit dans les Prophètes : Ils seront tous enseignés par Dieu. Quiconque a entendu le Père et a reçu son enseignement, vient à moi. Ce n'est pas que personne ait vu le Père, sinon celui qui est de Dieu ; celui-là a vu le Père. En vérité, en vérité, je vous le dis, celui qui croit en moi a la vie éternelle. Je suis le pain de vie. Vos pères ont mangé la manne dans le désert, et ils sont morts. Voici le pain descendu du ciel, afin qu'on en mange et qu'on ne meure point. Je suis le pain vivant qui est descendu du ciel. Si quelqu'un mange de ce pain, il vivra éternellement ; et le pain que je donnerai, c'est ma chair, pour le salut du monde. »
 
 [Offertorium]
 !Ps 118:47-48

@@ -1,16 +1,9 @@
 [Rank]
 Sabbato in Albis;;Semiduplex I class;;6;;ex Pasc0-0
 
-[Rule]
-ex Pasc0-0;
-1 nocturn;
-Omit Hymnus Preces Suffragium;
-Minores sine Antiphona;
-Capitulum Versum 2;
-Psalmi Dominica;
-
-[Ant Matutinum]
-@Tempora/Pasc0-3
+[Oratio]
+Faites, nous vous le demandons, Dieu tout-puissant, qu’ayant célébré avec piété les fêtes pascales, nous méritions d’arriver par elles aux joies éternelles.
+$Per Dominum
 
 [Lectio1]
 Lecture du saint Évangile selon Saint Jean
@@ -44,8 +37,3 @@ Ne trouvons pas étrange que le plus jeune nous soit donné comme figurant la sy
 
 [Ant 2]
 Ils couraient tous deux ensemble mais le second disciple courut plus vite que Pierre et arriva le premier au tombeau, alléluia.
-
-[Oratio]
-Faites, nous vous le demandons, Dieu tout-puissant, qu’ayant célébré avec piété les fêtes pascales, nous méritions d’arriver par elles aux joies éternelles.
-$Per Dominum
-

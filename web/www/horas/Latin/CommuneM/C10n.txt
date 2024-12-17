@@ -3,14 +3,14 @@
 [Ant 1]
 @Sancti/01-01:Ant 3
 
-[Ant 2]
-@Sancti/01-01:Ant 2
-
 [Oratio]
 @Sancti/01-01
 
 [Ant Laudes] (rubrica tridentina)
 @Sancti/01-01:Ant Vespera:s/;;.*//g
+
+[Ant 2]
+@Sancti/01-01:Ant 2
 
 [Ant Prima]
 @Sancti/01-01:Ant Vespera:1

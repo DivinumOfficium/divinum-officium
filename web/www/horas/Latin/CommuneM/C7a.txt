@@ -3,6 +3,9 @@
 [Name]
 @Commune/C7a
 
+[Oratio]
+@Commune/C7a
+
 [Lectio1]
 @Commune/C7a:Lectio1:s/-17/-15/ :s/16 .*//s
 
@@ -20,8 +23,10 @@
 [Lectio4]
 @Commune/C7a:Lectio3:s/25-/27-/ s/25 .*27 /27 /s
 
-[Oratio]
-@Commune/C7a
+[MM Capitulum]
+@Commune/C7a:Capitulum Sexta
+_
+@CommuneM/C6::s/.*_.//s
 
 [Capitulum Laudes]
 @Commune/C7a
@@ -35,8 +40,3 @@
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
-
-[MM Capitulum]
-@Commune/C7a:Capitulum Sexta
-_
-@CommuneM/C6::s/.*_.//s

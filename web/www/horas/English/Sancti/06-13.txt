@@ -1,14 +1,15 @@
 [Rank]
-St. Anthony of Padua, Confessor;;Duplex;;3;;vide C5a
-
-[Rank] (rubrica divino aut rubrica 196)
+St. Anthony of Padua, Confessor;;Duplex;;3;;vide C5
+(sed rubrica 195 aut rubrica 196)
 St. Anthony of Padua, Confessor and Doctor of the Church;;Duplex;;3;;vide C5a
 
 [Name]
 Anthony
 
-[Oratio] (rubrica divino aut rubrica tridentina)
+[Oratio]
 @:OratioText:s/ and Doctor//
+(sed rubrica 195 aut rubrica 196)
+@:OratioText
 
 [OratioText]
 O God, make thy Church to be glad at the solemn memorial of thy blessed Confessor and Doctor Anthony, causing her ever to be strong through thy ghostly succour, and fitting her to relish blessedness at thy right hand for evermore.

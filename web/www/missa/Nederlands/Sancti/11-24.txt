@@ -1,9 +1,9 @@
 [Rank]
 S. Joannis a Cruce Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
 
-[Rule]
-vide C5a;
-Gloria
+[Oratio_]
+God, Gij hebt uw heilige belijder en leraar Johannes een buitengewone liefde voor de volmaakte zelfverloochening en het Kruis gegeven. Doe ons trouw zijn voorbeeld volgen en daardoor de eeuwige glorie verwerven.
+$Per Dominum
 
 [Oratio]
 God, Gij hebt uw heilige belijder en leraar Johannes een buitengewone liefde voor de volmaakte zelfverloochening en het Kruis gegeven. Doe ons trouw zijn voorbeeld volgen en daardoor de eeuwige glorie verwerven.
@@ -14,16 +14,3 @@ $Per Dominum
 
 [Postcommunio]
 @Commune/C4a:Postcommunio1:s/N\./Johannes/
-
-[Commemoratio Oratio]
-!Commemoratio S. Chrysogoni Martyris
-@Sancti/11-24o:Oratio
-
-[Commemoratio Secreta]
-!Commemoratio S. Chrysogoni Martyris
-@Sancti/11-24o:Secreta
-
-[Commemoratio Postcommunio]
-!Commemoratio S. Chrysogoni Martyris
-@Sancti/11-24o:Postcommunio
-

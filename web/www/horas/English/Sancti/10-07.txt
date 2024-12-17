@@ -4,14 +4,6 @@ Our Lady of the Rosary;;Duplex classis;;5.1;;ex C11
 [Rank] (rubrica 196)
 Our Lady of the Rosary;;Duplex classis;;5;;ex C11
 
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Mark;
-
 [Ant Vespera]
 Who is this, * fair as a dove, like a rose-tree planted beside the rivers of waters?;;109
 A virgin most mighty, * like the tower of David, whereon there hung a thousand bucklers, all the shields of valiant men.;;112
@@ -45,11 +37,7 @@ The Son she mourned as lost before;
 While doctors by his speech were shown
 The mysteries they had never known.
 _
-To God the Three in One be praise,
-Who through these holy mysteries
-Grants grace to those who seek in prayer
-The glory of his bliss to share.
-Amen.
+@Psalterium/Doxologies:Nat
 
 [Versum 1]
 V. Queen of the most holy Rosary, pray for us.
@@ -65,7 +53,7 @@ $Per eumdem
 [Invit]
 Let us keep the Feast of the Rose-garden of the Blessed Virgin Mary; * Let us worship Christ her Son, and her Lord and ours.
 
-[Hymnus Matutinum]
+[Hymnus Matutinum_]
 v. The Mount of Olives witnesseth
 The awful agony of God:
 His soul is sorrowful to death,
@@ -91,11 +79,7 @@ Between two thieves the sinless one
 Still praying for his murderers,
 Breathes forth his soul, and all is done!
 _
-Glory to thee, and honour meet,
-Jesu, of Maiden-Mother born,
-And Father and the Paraclete,
-Through endless ages of the morn!
-Amen.
+@Psalterium/Doxologies:Nat
 
 [Ant Matutinum]
 The Angel Gabriel * announced unto Mary, and she conceived by the Holy Ghost.;;8
@@ -208,9 +192,12 @@ R. As the vine brought I forth pleasant savour;
 V. I am the mother of fair love, and fear, and knowledge, and holy hope.
 R. And my flowers are the fruit of honour and seemliness.
 
-[Lectio8]
+[Lectio8_1]
 !Homily on the water course
-The Word was made flesh, and dwelleth even now among us. He dwelleth in our memory. He dwelleth in our thought. He hath come down even unto our imagination; and how sayest thou doth he so? By lying in the manger, by nestling in His mother's breast, by preaching upon the mountain, by remaining all night in prayer to God, by hanging upon the Cross, by turning pale in death, by going down free among the dead and triumphing in hell, by rising again the third day, by showing to the Apostles the places of the nails the marks of his victory, by ascending up into heaven while they all beheld Him, of which of these things think we not with truth, with godliness, with holiness? If I think of any of these, I think of God, and He is my God through them all. To think of these things I have decreed to be wisdom, and to set forth the memory of their sweetness I have judged to be prudence. The rod of Aaron the Priest brought forth buds, and bloomed blossoms, and yielded almonds; but these things are the almonds of that Rod which came forth out of the stem of Jesse, the Rod whereof sprang the flower, a Rod which was raised in Mary into places higher than the earthly tabernacle, higher indeed, even into places higher than angels, since she received the Word into herself out of the very heart of the Eternal Father.
+The Word was made flesh, and dwelleth even now among us. He dwelleth in our memory. He dwelleth in our thought. He hath come down even unto our imagination; and how sayest thou doth he so? By lying in the manger, by nestling in His mother's breast, by preaching upon the mountain, by remaining all night in prayer to God, by hanging upon the Cross, by turning pale in death, by going down free among the dead and triumphing in hell, by rising again the third day, by showing to the Apostles the places of the nails the marks of his victory, by ascending up into heaven while they all beheld Him, of which of these things think we not with truth, with godliness, with holiness?
+
+[Lectio8_2]
+If I think of any of these, I think of God, and He is my God through them all. To think of these things I have decreed to be wisdom, and to set forth the memory of their sweetness I have judged to be prudence. The rod of Aaron the Priest brought forth buds, and bloomed blossoms, and yielded almonds; but these things are the almonds of that Rod which came forth out of the stem of Jesse, the Rod whereof sprang the flower, a Rod which was raised in Mary into places higher than the earthly tabernacle, higher indeed, even into places higher than angels, since she received the Word into herself out of the very heart of the Eternal Father.
 
 [Responsory8]
 R. Rise up, my love, and make haste. For the winter is past; the rain is over and gone
@@ -270,19 +257,6 @@ R. And hath made her to dwell in His tabernacle.
 
 [Ant 2]
 Let us this day keep * right heartily the solemn Feast of the Most Holy Rosary of Mary the Mother of God, that she may pray for us to our Lord Jesus Christ.
-
-[Commemoratio 2]
-!Commemoration of S. Mark, Pope
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Graciously hear our supplications, O Lord, and for the sake of thy Blessed Confessor and Bishop Mark, grant to us in thy mercy both pardon and peace.
-$Per Dominum
-_
-!Commemoration of the Holy Martyrs Sergius, Bacchus, Marcellus and Apuleius
-@Commune/C3:Oratio proper
-$Oremus
-Cause there to come upon us, O Lord, a grace from the blessed and worthy wrestling of thine holy Martyrs Sergius, Bacchus, Marcellus, and Apuleius, fanning ever in us the fire of the love of thyself.
-$Per Dominum
 
 [Lectio Prima]
 !Sir 24:17-28

@@ -1,12 +1,6 @@
 [Rank]
 Sabbato Quattuor temporum in Adventu;;Feria major;;2
 
-[Rank] (si rubrica 1960)
-Sabbato Quattuor Temporum Adventus;;Feria major;;3
-
-[Rank] (si rubrica innovata)
-Sabbato infra Hebdomadam III Adventus;;Feria major;;2
-
 [Rule]
 Oratio Dominica
 no Gloria
@@ -23,10 +17,6 @@ v. Come, O Lord, from Your throne upon the Cherubim; if Your face shine upon us,
 O Shepherd of Israel, hearken, O Guide of the flock of Joseph!
 &Gloria
 v. Come, O Lord, from Your throne upon the Cherubim; if Your face shine upon us, then we shall be safe.
-
-[Oratio]
-O God, You Who see how we are troubled by our evil tendencies, mercifully grant that we may find consolation in Your coming.
-$Qui vivis
 
 [LectioL1]
 Lesson from the book of Isaias
@@ -100,6 +90,10 @@ Blessed are You, O Lord, the God of our fathers, praiseworthy  and exalted above
 [OratioL5]
 O God, You Who tempered the flames of fire for the three young men, mercifully grant that the flames of sin may not burn us, Your servants.
 $Per Dominum
+
+[Oratio]
+O God, You Who see how we are troubled by our evil tendencies, mercifully grant that we may find consolation in Your coming.
+$Qui vivis
 
 [Lectio]
 Lesson from the second letter of St. Paul the Apostle to the Thessalonians

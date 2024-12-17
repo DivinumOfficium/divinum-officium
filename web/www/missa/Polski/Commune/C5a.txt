@@ -1,8 +1,6 @@
 [Name]
 Commune Confessoris non pontificis; In medio
 
-[Rule]
-
 [Introitus]
 @Commune/C4a
 
@@ -12,10 +10,10 @@ Commune Confessoris non pontificis; In medio
 [Graduale]
 @Commune/C4a
 
-[Tractus]
+[GradualeP]
 @Commune/C4a
 
-[GradualeP]
+[Tractus]
 @Commune/C4a
 
 [Offertorium]

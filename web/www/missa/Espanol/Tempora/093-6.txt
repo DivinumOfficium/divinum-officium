@@ -1,9 +1,6 @@
 [Rank]
 Sabbato Quattuor Temporum Septembris;;Feria major;;2
 
-[Rank] (si rubrica 1960)
-Sabbato Quattuor Temporum Septembris;;Feria major;;4
-
 [Rule]
 (rubrica 1960) celebranda aut forma longior aut forma brevior
 (rubrica 1960 et missa brevior) LectioL1
@@ -16,10 +13,6 @@ v. Venid, adoremos a Dios y prosternémonos ante el Señor; lloremos delante de 
 Venid, regocijémonos ante el Señor, aclamemos alegres a Dios, Salvador nuestro.
 &Gloria
 v. Venid, adoremos a Dios y prosternémonos ante el Señor; lloremos delante de él, nuestro Creados, porque él es el Señor Dios nuestro.
-
-[Oratio]
-Omnipotente y sempiterno Dios, que por medio de una abstinencia saludable curas las dolencias del cuerpo y del alma: rogamos humildemente a tu majestad que, aplacado con la piadosa suplica de los que ayunamos, nos concedas los auxilios presentes y venideros.
-$Per Dominum
 
 [LectioL1]
 Lectura del libro del Levítico
@@ -91,6 +84,10 @@ Bendito seas tú, oh Señor Dios de nuestros padres, digno eres de loor, y de gl
 Oh Dios, que mitigaste las llamas del fuego a los tres jóvenes, concede propicio que la llama de los vicios no abrase a tus siervos.
 $Per Dominum
 
+[Oratio]
+Omnipotente y sempiterno Dios, que por medio de una abstinencia saludable curas las dolencias del cuerpo y del alma: rogamos humildemente a tu majestad que, aplacado con la piadosa suplica de los que ayunamos, nos concedas los auxilios presentes y venideros.
+$Per Dominum
+
 [Lectio]
 Lectura de la carta del Apóstol San Pablo a los Hebreos
 !Heb 9:2-12
@@ -121,5 +118,3 @@ Celebrareis esta fiesta en el séptimo mes, para que aprendan vuestros descendie
 [Postcommunio]
 Te suplicamos, oh Señor, estos sacramentos obren en nosotros lo que representan: para que en realidad poseamos lo que ahora simbólicamente celebramos.
 $Per Dominum
-
-

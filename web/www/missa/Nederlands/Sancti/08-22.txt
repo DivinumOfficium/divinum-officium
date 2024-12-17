@@ -1,9 +1,6 @@
 [Rank]
 Immaculati Cordis Beatæ Mariæ Virginis;;Duplex II classis;;5.1;;ex C11
 
-[Rank] (rubrica 196)
-Immaculati Cordis Beatæ Mariæ Virginis;;Duplex II classis;;5;;ex C11
-
 [Rule]
 ex C11;
 Gloria
@@ -22,9 +19,6 @@ v. Laat ons met vertrouwen voor de troon der genade treden om barmhartigheid te 
 Almachtige, eeuwige God, Gij hebt in het hart van de heilige Maagd Maria een waardig verblijf bereid voor de Heilige Geest. Bewerk in uw goedheid, dat wij, die godvruchtig het feest vieren van dat Onbevlekt Hart, naar uw Hart mogen leven.
 $Per Dominum
 
-[Commemoratio Oratio]
-@Sancti/08-22t:Commemoratio Oratio
-
 [Lectio]
 @Sancti/07-16
 
@@ -37,18 +31,18 @@ Alleluia, alleluia.
 ! Luc 1:46; 1:47
 Hoog prijst mijn ziel de Heer, en mijn geest jubelde in God, mijn Verlosser. Alleluia.
 
+[GradualeP]
+Allelúja, allelúja.
+!Luc 1:46-47
+Magníficat ánima mea Dóminum: et exsultávit spíritus meus in Deo salutári meo. Allelúja.
+V. Beátam me dicent omnes generatiónes, quia ancíllam húmilem respéxit Deus. Allelúja.
+
 [Tractus]
 !Prov 8:32; 8:35
 Nunc ergo, fílii, audíte me: Beáti qui custódiunt vias meas.
 V. Audíte disciplínam et estóte sapiéntes, et nolíte abjícere eam.
 V. Beátus homo qui audit me, et qui vígilat ad fores meas quotídie, et obsérvat ad postes óstii mei.
 V. Qui me invénerit, invéniet vitam, et háuriet salútem a Dómino.
-
-[GradualeP]
-Allelúja, allelúja.
-!Luc 1:46-47
-Magníficat ánima mea Dóminum: et exsultávit spíritus meus in Deo salutári meo. Allelúja.
-V. Beátam me dicent omnes generatiónes, quia ancíllam húmilem respéxit Deus. Allelúja.
 
 [Evangelium]
 @Commune/C10Pasc
@@ -61,9 +55,6 @@ Mijn geest jubelde in God, mijn Verlosser, want Hij, de Machtige, heeft grote di
 Bij de opdracht van het onbevlekte Lam aan uw Majesteit vragen wij U, o Heer, dat in ons hart eenzelfde goddelijk vuur mag branden, dat het Hart van de heilige Maagd Maria zo onuitsprekelijk heeft ontvlamd.
 $Per eundem
 
-[Commemoratio Secreta]
-@Sancti/08-22t:Commemoratio Secreta
-
 [Communio]
 !Joann 19:27
 Jezus zei tot zijn Moeder: Vrouw, ziedaar uw zoon. Dan zei Hij tot de leerling: Ziedaar uw Moeder. Vanaf dat uur nam de leerling haar bij zich in huis.
@@ -71,6 +62,3 @@ Jezus zei tot zijn Moeder: Vrouw, ziedaar uw zoon. Dan zei Hij tot de leerling: 
 [Postcommunio]
 Nu wij verkwikt zijn door de goddelijke gaven bidden wij U nederig, o Heer, dat wij door de voorspraak van de heilige Maagd Maria, wier onbevlekt Hart wij nu met een feest eren, aan alle gevaren van de tijd ontrukt mogen worden, en de vreugde van het eeuwig leven verwerven.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-@Sancti/08-22t:Commemoratio Postcommunio

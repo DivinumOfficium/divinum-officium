@@ -1,13 +1,9 @@
 [Rank]
 Die IV infra octavam Paschæ;;Semiduplex I classis;;6;;ex Pasc0-0
 
-[Rule]
-ex Pasc0-0;
-1 nocturn;
-Omit Hymnus Preces Suffragium;
-Minores sine Antiphona;
-Capitulum Versum 2;
-Psalmi Dominica;
+[Oratio]
+¡Oh Dios, que todos los años nos alegras con la Resurrección del Señor!; concédenos que, al celebrar en la tierra estas fiestas, merezcamos llegar a las alegrías de la eternidad. 
+$Per eumdem
 
 [Ant Matutinum]
 @Tempora/Pasc0-0::s/^V\..*//sm
@@ -46,10 +42,6 @@ Trabajando los discípulos en el mar, se quedó el Señor en la orilla tras su r
 
 [Ant 2]
 Echad la red a la derecha * de la barca y encontraréis. Aleluya.
-
-[Oratio]
-¡Oh Dios, que todos los años nos alegras con la Resurrección del Señor!; concédenos que, al celebrar en la tierra estas fiestas, merezcamos llegar a las alegrías de la eternidad. 
-$Per eumdem
 
 [Ant 3]
 Dijo Jesús * a sus discípulos: Traed de los peces que acabáis de coger. Simón Pedro subió a la barca y arrastró hasta la orilla la red repleta de peces grandes. Aleluya.

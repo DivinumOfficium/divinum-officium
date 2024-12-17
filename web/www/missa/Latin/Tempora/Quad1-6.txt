@@ -1,9 +1,6 @@
 [Rank]
 Sabbato Quattuor Temporum Quadrageismæ;;Feria major;;2.1
 
-[Rank] (rubrica 196)
-Sabbato Quattuor Temporum Quadragesimæ;;Feria major;;3.9
-
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
@@ -19,10 +16,6 @@ v. Intret orátio mea in conspéctu tuo: inclína aurem tuam ad precem meam, Dó
 Dómine, Deus salútis meæ: in die clamávi, et nocte coram te.
 &Gloria
 v. Intret orátio mea in conspéctu tuo: inclína aurem tuam ad precem meam, Dómine.
-
-[Oratio]
-Pópulum tuum, quǽsumus, Dómine, propítius réspice: atque ab eo flagélla tuæ iracúndiæ cleménter avérte.
-$Per Dominum
 
 [LectioL1]
 Léctio libri Deuteronómii
@@ -89,6 +82,10 @@ $Per Dominum
 
 [OratioL5]
 @Tempora/093-6
+
+[Oratio]
+Pópulum tuum, quǽsumus, Dómine, propítius réspice: atque ab eo flagélla tuæ iracúndiæ cleménter avérte.
+$Per Dominum
 
 [Lectio]
 Léctio Epístolæ beáti Pauli Apóstoli ad Thessalonicénses

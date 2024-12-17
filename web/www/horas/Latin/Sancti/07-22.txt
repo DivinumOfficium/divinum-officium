@@ -33,7 +33,7 @@ Sicut fuit, sit júgiter
 Sǽclum per omne glória.
 Amen.
 
-[HymnusM Vespera] (rubrica 1570)
+[HymnusM Vespera]
 v. Lauda Mater Ecclesia,
 Lauda Christi clementiam,
 Qui septem purgat vitia
@@ -69,6 +69,10 @@ Pro multiformi Gratia
 Qui culpas et supplicia
 Remittit et dat præmia.
 Amen.
+
+[HymnusM Vespera] (rubrica monastica)
+@:Hymnus Vespera:s/\*.*//s
+@:Hymnus Matutinum:s/.*\*/*/s
 
 [Versum 1]
 @Commune/C6:Versum 2

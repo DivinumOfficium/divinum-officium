@@ -10,15 +10,16 @@ ex Tempora/Pasc5-4;
 Doxology=Asc
 StJamesRule=John,Rev
 
-[Versum 1]
-@Tempora/Pasc5-4:Versum 2
-
 [Ant 1]
 Cuando venga el Paráclito, * que os enviaré desde el Padre, el Espíritu de Verdad que procede del Padre, Él dará testimonio de mí. Aleluya.
 
 [Oratio]
 Dios todopoderoso y eterno, te pedimos entregarnos a ti con fidelidad y servirte con sincero corazón.
 $Per Dominum
+
+[Commemoratio]
+!Conmemoración de la Octava de la Ascensión.
+@Tempora/Pasc5-4:Oratio
 
 [Lectio1]
 Empieza la Epístola 1ª del Apóstol San Juan.
@@ -27,7 +28,7 @@ Empieza la Epístola 1ª del Apóstol San Juan.
 2 -porque la vida se ha manifestado y nosotros hemos visto y testificamos y os anunciamos la vida eterna, que estaba en el Padre y se nos manifestó- 
 3 lo que hemos visto y oído os lo anunciamos a vosotros, a fin de que viváis también en comunión con nosotros. Y esta comunión nuestra es con el Padre y con su Hijo Jesucristo. 
 4 Os escribimos esto para que sea completo vuestro gozo. 
-5 Este es el mensaje que de Él hemos oído y os anunciamos, que Dios es luz y que en Él no hay tiniebla alguna. 
+5 Este es el mensaje que de Él hemos oído y os anunciamos, que Dios es luz y que en Él no hay tiniebla alguna.
 
 [Lectio2]
 !1 Jn 1:6-10
@@ -35,16 +36,16 @@ Empieza la Epístola 1ª del Apóstol San Juan.
 7 Pero si andamos en la luz, como Él está en la luz, entonces estamos en comunión unos con otros y la sangre de Jesús, su Hijo, nos purifica de todo pecado. 
 8 Si dijéramos que no tenemos pecado, nos engañaríamos a nosotros mismos y la verdad no estaría en nosotros. 
 9 Si confesamos nuestros pecados, fiel y justo es Él para perdonarnos y limpiarnos de toda iniquidad. 
-10 Si decimos que no hemos pecado, le desmentimos y su palabra no está en nosotros. 
+10 Si decimos que no hemos pecado, le desmentimos y su palabra no está en nosotros.
 
 [Lectio3]
 !1 Jn 2:1-6
 1 Hijitos míos, esto os escribo para que no pequéis: si todavía alguno pecare, abogado tenemos ante el Padre a Jesucristo, justo.  
 2 Y Él es propiciación por nuestros pecados, y no por nuestros pecados solamente, sino también por los de todo el mundo. 
 3 Y en esto sabemos que le hemos conocido: si guardáremos sus mandamientos. 
-4 Quien dice: "Le he conocido", y no guarda sus mandamientos, mentiroso es, y en él no está la verdad; 
+4 Quien dice: “Le he conocido”, y no guarda sus mandamientos, mentiroso es, y en él no está la verdad; 
 5 mas quien guardare su palabra, de verdad en éste la caridad de Dios está consumada: en esto conocemos que estamos en Él. 
-6 Quien dice que permanece en Él, debe, como Él caminó, también él caminar así. 
+6 Quien dice que permanece en Él, debe, como Él caminó, también él caminar así.
 
 [Lectio4]
 Sermón de San Agustín, Obispo.
@@ -54,9 +55,10 @@ Nuestro Salvador, carísimos hermanos, ha subido a los cielos; no nos conturbemo
 [Lectio5]
 La resurrección del Señor constituye nuestra esperanza; su ascensión, nuestra glorificación. Hoy celebramos la solemnidad de la Ascensión. De consiguiente, si celebramos la Ascensión del Señor recta, fiel, devota, santa y piadosamente, subamos con Él y elevemos también nuestros corazones. No obstante, con esta ascensión no nos envanezcamos, ni presumamos de nuestros méritos como si fuesen propios. Debemos tener levantados nuestros corazones al Señor. Tener el corazón levantado, pero no hacia el Señor, es soberbia; tener el corazón elevado al Señor es tenerlo en un refugio seguro. Atended, hermanos, a un gran milagro. Alto es Dios; si te exaltas, huye de ti; si te humillas, desciende a ti. ¿Por qué esto? Porque siendo el Señor, como es, altísimo, pone los ojos en las criaturas humildes y mira como lejos de sí a los altivos. Lo humilde, lo contempla de cerca, para elevarlo: lo alto, la soberbia, lo conoce desde lejos para abatirlo.
 
-[Lectio6]
-Cristo resucitó para darnos esperanza al mostrarnos cómo resucita un hombre que había muerto. Nos comunicó esta firme convicción, a fin de que al morir no desesperásemos, pensando que con la muerte termina nuestra vida. Estábamos ansiosos acerca de nuestra alma, y Él, resucitando, nos dio confianza de que resucitaría aun la carne. Cree, de consiguiente, para que seas purificado. Ante todo es necesario que creas, a fin de que después por la fe merezcas ver a Dios. ¿Deseas ver a Dios? Oye lo que Jesús dice: Bienaventurados los limpios de corazón, porque ellos verán a Dios. Ante todo, trata de purificar tu corazón. Quita de él cuanto pueda ser desagradable a Dios.~
-(rubrica 1570)
+[Lectio6_]
+Cristo resucitó para darnos esperanza al mostrarnos cómo resucita un hombre que había muerto. Nos comunicó esta firme convicción, a fin de que al morir no desesperásemos, pensando que con la muerte termina nuestra vida. Estábamos ansiosos acerca de nuestra alma, y Él, resucitando, nos dio confianza de que resucitaría aun la carne. Cree, de consiguiente, para que seas purificado. Ante todo es necesario que creas, a fin de que después por la fe merezcas ver a Dios. ¿Deseas ver a Dios? Oye lo que Jesús dice: Bienaventurados los limpios de corazón, porque ellos verán a Dios. Ante todo, trata de purificar tu corazón. Quita de él cuanto pueda ser desagradable a Dios. 
+
+[Lectio6_2]
 Mi Padre le amará, y vendremos a él y en él haremos morada.
 
 [Lectio7]
@@ -80,7 +82,7 @@ R. Y cuando Él viniere, os enseñará toda verdad, aleluya.
 R. Y cuando Él viniere, os enseñará toda verdad, aleluya. 
 
 [Lectio9]
-Después, como consecuencia, añadió aquello que hace poco empezamos a tratar: “Cuando viniere el Consolador, que Yo os enviaré del Padre, Espíritu de verdad, que procede del Padre, Él dará testimonio de mí, y vosotros también daréis testimonio, puesto que desde el principio estáis en mi compañía”. Ahora bien, ¿cómo puede entenderse esto con relación a lo que antes había dicho: “Mas ahora me han visto y me han aborrecido a mí y a mi Padre; por donde se viene a cumplir la sentencia escrita en su Ley: "Me han aborrecido sin causa alguna”? ¿Acaso porque cuando vino el Paráclito, este Espíritu de verdad, convenció con testimonios más evidentes a los que, habiendo visto sus obras, le aborrecieron? Hizo más aún: ya que manifestándose a aquéllos, convirtió a la fe, que obra mediante la caridad, a algunos de aquellos que habían visto, cuyo odio perduraba.
+Después, como consecuencia, añadió aquello que hace poco empezamos a tratar: “Cuando viniere el Consolador, que Yo os enviaré del Padre, Espíritu de verdad, que procede del Padre, Él dará testimonio de mí, y vosotros también daréis testimonio, puesto que desde el principio estáis en mi compañía”. Ahora bien, ¿cómo puede entenderse esto con relación a lo que antes había dicho: “Mas ahora me han visto y me han aborrecido a mí y a mi Padre; por donde se viene a cumplir la sentencia escrita en su Ley: “Me han aborrecido sin causa alguna”? ¿Acaso porque cuando vino el Paráclito, este Espíritu de verdad, convenció con testimonios más evidentes a los que, habiendo visto sus obras, le aborrecieron? Hizo más aún: ya que manifestándose a aquéllos, convirtió a la fe, que obra mediante la caridad, a algunos de aquellos que habían visto, cuyo odio perduraba.
 &teDeum
 
 [Capitulum Laudes]
@@ -88,20 +90,5 @@ Después, como consecuencia, añadió aquello que hace poco empezamos a tratar: 
 v. Queridos hermanos: Sed moderados y sobrios, para poder orar. Ante todo, mantened en tensión el amor mutuo, porque el amor cubre la multitud de los pecados.
 $Deo gratias
 
-[Ant 2]
-@:Ant 1
-
-[Versum 2]
-@Tempora/Pasc5-4:Versum 1
-(pero la rúbrica Tridentina)
-@:Versum 1
-
-[Versum 3]
-@:Versum 1
-
 [Ant 3]
 Os he hablado de esto * para que, cuando llegue la hora, os acordéis de que Yo os lo había dicho. Aleluya.
-
-[Commemoratio]
-!Conmemoración de la Octava de la Ascensión.
-@Tempora/Pasc5-4:Oratio

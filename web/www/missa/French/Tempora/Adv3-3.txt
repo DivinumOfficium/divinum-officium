@@ -1,12 +1,6 @@
 [Rank]
 Feria IV Quattuor Temporum in Adventu;;Feria major;;2
 
-[Rank1960]
-Feria IV Quattuor Temporum Adventus;;Feria major;;3
-
-[RankNewcal]
-Feria IV infra Hebdomadam III Adventus;;Feria major;;2
-
 [Rule]
 Oratio Dominica
 no Gloria
@@ -22,14 +16,10 @@ Les cieux racontent la gloire de Dieu, et le firmament annonce les œuvres de se
 &Gloria
 v. Cieux, répandez d'en-haut votre rosée, et que les nuées fassent pleuvoir le Juste ; que la terre s'ouvre, et qu'ele fasse germer le Sauveur.
 
-[Oratio]
-Faites, Dieu tout-puissant, que les proches solennités de notre rédemption nous procurent un soutien dans la vie présente, et nous octroient la récompense de l'éternelle béatitude.
-$Per Dominum
-
 [LectioL1]
 Léctio Isaíæ Prophétæ
 !Is 2:2-5.
-En ces jours-là, le prophète Isaïe déclara : « Il arrivera, à la fin des jours, que la Montagne de la maison du Seigneur sera établie au sommet des montagnes et élevée au-dessus des collines. Et vers elle toutes les nations afflueront, et des nations nombreuses viendront et diront: "Venez et montons à la montagne du Seigneur, à la maison du Dieu de Jacob ; il nous instruira de ses voies, et nous marcherons dans ses sentiers." Car de Sion sortira la loi, et de Jérusalem la parole du Seigneur. Il sera l'arbitre des peuples et le juge de nations nombreuses. Ils forgeront leurs épées en socs de charrue ; et leurs lances en faucilles. Une nation ne lèvera plus l'épée contre l'autre, et l'on n'apprendra plus la guerre. Maison de Jacob, venez, et marchons à la lumière du Seigneur notre Dieu. »
+En ces jours-là, le prophète Isaïe déclara : « Il arrivera, à la fin des jours, que la Montagne de la maison du Seigneur sera établie au sommet des montagnes et élevée au-dessus des collines. Et vers elle toutes les nations afflueront, et des nations nombreuses viendront et diront: « Venez et montons à la montagne du Seigneur, à la maison du Dieu de Jacob ; il nous instruira de ses voies, et nous marcherons dans ses sentiers.» Car de Sion sortira la loi, et de Jérusalem la parole du Seigneur. Il sera l'arbitre des peuples et le juge de nations nombreuses. Ils forgeront leurs épées en socs de charrue ; et leurs lances en faucilles. Une nation ne lèvera plus l'épée contre l'autre, et l'on n'apprendra plus la guerre. Maison de Jacob, venez, et marchons à la lumière du Seigneur notre Dieu. »
 $Deo Gratias
 
 [GradualeL1]
@@ -40,6 +30,10 @@ V. Qui montera à la montagne du Seigneur ? Qui se tiendra dans son saint lieu ?
 [OratioL1]
 Hâtez-vous, Seigneur, ne tardez pas ; apportez d'en-haut le secours de votre force, afin que les joies de votre venue nous soulagent, confiants que nous sommes dans votre bonté.
 $Qui vivis
+
+[Oratio]
+Faites, Dieu tout-puissant, que les proches solennités de notre rédemption nous procurent un soutien dans la vie présente, et nous octroient la récompense de l'éternelle béatitude.
+$Per Dominum
 
 [Lectio]
 Lectio Isaíæ Prophétæ.

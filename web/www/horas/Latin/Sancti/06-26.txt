@@ -1,12 +1,13 @@
 [Rank]
 Ss. Joannis et Pauli Martyrum;;Duplex;;3;;vide C3
 
-[Rank] (rubrica 1570)
+[Rank] (rubrica 1570 aut rubrica 1617)
 Ss. Joannis et Pauli Martyrum;;Semiduplex;;2.2;;vide C3
 
 [Rule]
 vide C3;
 9 lectiones
+scriptura1960
 
 [Ant 1]
 Astitérunt * justi ante Dóminum, et ab invicem non sunt separáti: cálicem Dómini biberunt, et amici Dei appelláti sunt.
@@ -15,26 +16,42 @@ Astitérunt * justi ante Dóminum, et ab invicem non sunt separáti: cálicem D�
 Quǽsumus, omnípotens Deus: ut nos gemináta lætítia hodiérnæ festivitátis excípiat, quæ de beatórum Joánnis et Pauli glorificatióne procédit; quos éadem fides et pássio vere fecit esse germános.
 $Per Dominum
 
-[Commemoratio] (rubrica 1888 aut rubrica divino)
-@Sancti/06-24:Octava
+[Responsory1] (rubrica tridentina aut rubrica 196)
+@:Responsory4_
+
+[Responsory2] (rubrica tridentina)
+@:Responsory5_
+
+[Responsory3] (rubrica 196)
+@:Responsory5_
 
 [Lectio4]
 Joánnes et Paulus fratres Romani, cum facultátibus a Constántia Constantini fília, cui pie fideliterque servíerant, sibi relictis, Christi páuperes álerent; a Juliáno Apóstata in númerum familiárium suórum invitati, líbere negavérunt se apud eum esse velle, qui a Jesu Christo defecísset. Quibus ille ad deliberándum decem dies præfínit ut nisi ad eam diem ei adhærére et Jóvi sacrificáre constitúerint, sibi moriéndum esse certo sciant.
 
-[Responsory4]
+[Responsory4_]
 R. Isti sunt duo viri misericórdiæ, qui assístunt ante Dóminum, 
 * Dominatórem univérsæ terræ.
 V. Isti sunt duæ olívæ, et duo candelábra lucéntia ante Dóminum.
 R. Dominatórem univérsæ terræ.
 
+[Responsory4]
+@:Responsory4_
+(sed rubrica tridentina)
+@Commune/C3
+
 [Lectio5]
 Illi intra id tempus réliqua sua bona distribuérunt paupéribus, quo expeditiores ad Dóminum migrare possent, et plures juvarent, a quibus in æterna tabernácula reciperéntur. Die décima Terentiánus prætóriæ cohortis præfectus, ad eos missus cum alláta Jovis effigie ut eam veneraréntur, imperatóris mandátum eis exponit, ut nisi Jóvi cultum adhibeant, moriántur. Qui, ut erant orántes respondérunt, se pro Christi fide, quem Deum mente et ore venerabántur, non dubitanter mortem subituros.
 
-[Responsory5]
+[Responsory5_]
 R. Vidi conjúnctos viros, habéntes spléndidas vestes, et Angelus Dómini locútus est ad me, dicens: 
 * Isti sunt viri sancti facti amíci Dei.
 V. Vidi Angelum Dei fortem, volántem per médium cælum, voce magna clamántem et dicéntem.
 R. Isti sunt viri sancti facti amíci Dei.
+
+[Responsory5]
+@:Responsory5_
+(sed rubrica tridentina)
+@Commune/C3
 
 [Lectio6]
 At Terentiánus veritus, ne, si publice interficeréntur, pópulus commoverétur; domi, ubi tunc erant, abscissis eórum capítibus, sexto Kalendas Julii secréto eos sepeliendos curávit; rumorémque sparsit, Joánnem et Paulum in exsílium ejectos esse. Verum eórum mors a spirítibus immundis, qui multórum córpora vexábant, pervulgáta est; in quibus Terentiáni fílius, et ipse oppréssus a dæmone, ad sepúlcrum Mártyrum perductus liberátus est. Quo miraculo et is in Christum credidit, et ejus pater Terentiánus; a quo étiam horum beatórum Mártyrum vita scripta esse dícitur.
@@ -71,9 +88,6 @@ Joánnes et Paulus * dixérunt ad Gallicánum: Fac votum Deo cæli, et eris vict
 
 [Ant 2]
 Isti sunt Sancti, * qui pro Christi amóre minas hóminum contempsérunt: sancti Mártyres in regno cælórum exsúltant cum Angelis. O quam pretiósa est mors Sanctórum, qui assídue assístunt ante Dóminum, et ab ínvicem non sunt separáti!
-
-[Commemoratio 2] (rubrica 1570)
-@Sancti/06-24:Octava
 
 [Ant Vespera 3]
 Paulus et Joánnes * dixérunt Juliáno: Nos unum Deum cólimus, qui fecit cælum et terram.;;109

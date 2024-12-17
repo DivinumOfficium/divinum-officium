@@ -1,0 +1,21 @@
+[Rank]
+S. Lúcio I, Papa e Mártir 
+
+[Rule]
+vide C2b;
+OPapaM=Lúcium;
+
+[Oratio]
+@Commune/C2b:Oratio:s/N\./Lúcio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio
+
+[Secreta]
+@Commune/C2b:Secreta:s/N\./Lúcio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta
+
+[Postcommunio]
+@Commune/C2b:Postcommunio:s/N\./Lúcio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio

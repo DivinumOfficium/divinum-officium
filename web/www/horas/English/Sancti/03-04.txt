@@ -1,27 +1,8 @@
 [Rank]
 St. Casimir, Confessor;;Semiduplex;;2.1;;vide C5
 
-[Rank] (rubrica 196)
-St. Casimir, Confessor;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;;
-9 lectiones
-CPapaM=Lucius;
-Lectio1 Quad
-in 1 Nocturno Lectiones ex Commune in 2 loco
-(sed rubrica 1960)
-scriptura1960
-
 [Oratio]
 O God, Who strengthened St. Casimir with the virtue of steadfastness amid the luxuries of a royal court and the allurements of the world, we beseech thee that, through his intercession, thy faithful may treat earthly things as naught and ever aspire to those of heaven.
-$Per Dominum
-
-[Commemoratio]
-!Commemoration of S. Lucius I, Pope and Martyr
-@Commune/C2:Oratio proper Gregem
-$Oremus
-O God, Who gladden us with the yearly festival of blessed Lucius, thy Martyr and Bishop, mercifully grant that, as we venerate the anniversary of his martyrdom, we may also rejoice in his protection.
 $Per Dominum
 
 [Lectio4]

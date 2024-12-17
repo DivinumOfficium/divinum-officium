@@ -1,13 +1,13 @@
 [Rank]
 S. Augustini Episcopi et Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 
-[Name]
-Augustine
-
 [Rule]
 vide C4a;
 Gloria
 CredoDA
+
+[Name]
+Augustine
 
 [Introitus]
 @Commune/C4a
@@ -36,18 +36,3 @@ $Per Dominum
 
 [Postcommunio]
 @Commune/C4a:Postcommunio:s/N\./Augustínus/
-
-[Commemoratio Oratio]
-!Pro S. Hermete Martyre
-Deus, qui beátum Hermétem Mártyrem tuum virtúte constántiæ in passióne roborásti: ex ejus nobis imitatióne tríbue; pro amóre tuo próspera mundi despícere, et nulla ejus advérsa formidáre.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Pro S. Hermete Martyre
-Sacrifícium tibi, Dómine, laudis offérimus in tuórum commemoratióne Sanctórum: da, quǽsumus; ut, quod illis cóntulit glóriam, nobis prosit ad salútem.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Hermete Martyre
-Repleti, Dómine, benedictióne cœlésti, quǽsumus cleméntiam tuam: ut, intercedénte beáto Herméte Mártyre tuo, quæ humíliter gérimus, salúbriter sentiámus.
-$Per Dominum

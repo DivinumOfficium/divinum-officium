@@ -1,9 +1,6 @@
 [Rank]
 Feria Quarta in Rogationibus, In Vigilia Ascensionis;;Feria;;1
 
-[Rank] (rubrica 196)
-In Vigilia Ascensionis;;Duplex II classis;;5
-
 [Rule]
 Oratio Dominica
 Gloria
@@ -17,14 +14,14 @@ Suffr=Maria3
 God, van U gaat alle goed uit. Laat ons, die tot U smeken, op uw ingeving onze geest gericht houden op wat juist is, en onder uw leiding dat ook volbrengen.
 $Per Dominum
 
-[Commemoratio Oratio](sed non rubrica 1960)
+[Commemoratio Oratio] (sed non rubrica 1960)
 !de Rogationibus
 @Tempora/Pasc5-1t:Oratio
 
 [Lectio]
 Lezing uit de Brief van de heilige Apostel Paulus aan de Ephesiërs
 !Eph 4:7-13
-Broeders, aan ieder van ons is de genade geschonken naar de maat, die Christus heeft toebedeeld. Daarom staat er: "Toen Hij opsteeg naar omhoog, voerde Hij zijn gevangenen mede; aan de mensen deelde Hij zijn gaven uit." Dat Hij echter is opgestegen, wat betekent het anders dan dat Hij eerst is afgedaald beneden naar de aarde? Hij, die is neergedaald, Hij is het ook, die is opgestegen boven alle hemelen, om alles te vervullen. Hij ook heeft sommigen aangesteld als apostelen, sommigen echter als profeten, anderen weer als evangelisten en nog weer anderen als herders en leraren, om daardoor de heiligen tot de volmaaktheid te brengen - dus ten behoeve van het dienstwerk, tot opbouw van het lichaam van Christus; tot dat wij allen komen tot de eenheid des geloofs en der kennis van de Zoon van God, tot de volwassen mannelijke staat, tot de volle lengtemaat van Christus.
+Broeders, aan ieder van ons is de genade geschonken naar de maat, die Christus heeft toebedeeld. Daarom staat er: “Toen Hij opsteeg naar omhoog, voerde Hij zijn gevangenen mede; aan de mensen deelde Hij zijn gaven uit.” Dat Hij echter is opgestegen, wat betekent het anders dan dat Hij eerst is afgedaald beneden naar de aarde? Hij, die is neergedaald, Hij is het ook, die is opgestegen boven alle hemelen, om alles te vervullen. Hij ook heeft sommigen aangesteld als apostelen, sommigen echter als profeten, anderen weer als evangelisten en nog weer anderen als herders en leraren, om daardoor de heiligen tot de volmaaktheid te brengen - dus ten behoeve van het dienstwerk, tot opbouw van het lichaam van Christus; tot dat wij allen komen tot de eenheid des geloofs en der kennis van de Zoon van God, tot de volwassen mannelijke staat, tot de volle lengtemaat van Christus.
 
 [Graduale]
 @Tempora/Pasc5-0
@@ -37,29 +34,28 @@ In die tijd hief Jezus zijn ogen ten hemel en sprak: Vader, het uur is gekomen; 
 [Offertorium]
 @Tempora/Pasc5-0
 
-[Secreta]
-Aanvaard, Heer, met de offergaven de gebeden van uw gelovigen, opdat wij door deze dienst vol trouwe toewijding, mogen binnengaan in de heerlijkheid van de hemel.
-$Per Dominum
-
-[Commemoratio Secreta](sed non rubrica 1960)
-!de Rogationibus
-@Tempora/Pasc5-1t:Secreta
-
 [Secreta Mariæ](sed non rubrica 1960)
 !de S. Maria
 @Commune/C10:Secreta
 
+[Secreta]
+Aanvaard, Heer, met de offergaven de gebeden van uw gelovigen, opdat wij door deze dienst vol trouwe toewijding, mogen binnengaan in de heerlijkheid van de hemel.
+$Per Dominum
+
+[Commemoratio Secreta] (sed non rubrica 1960)
+!de Rogationibus
+@Tempora/Pasc5-1t:Secreta
+
 [Communio]
 @Tempora/Pasc5-0
+
+[Postcommunio Mariæ] (sed non rubrica 1960)
+@Commune/C10:Postcommunio
 
 [Postcommunio]
 Doe ons, Heer, nu wij verzadigd zijn met de kracht van uw hemels gastmaal, verlangen wat goed is, en ook verkrijgen wat we verlangen.
 $Per Dominum
 
-[Commemoratio Postcommunio](sed non rubrica 1960)
+[Commemoratio Postcommunio] (sed non rubrica 1960)
 !de Rogationibus
 @Tempora/Pasc5-1t:Postcommunio
-
-[Postcommunio Mariæ](sed non rubrica 1960)
-@Commune/C10:Postcommunio
-

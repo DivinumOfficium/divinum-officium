@@ -1,55 +1,45 @@
 [Rank]
-In Octava S. Joannis;;Simplex;;1.4;;vide Sancti/12-27
-
-[Rank] (rubrica 196 aut rubrica 1955)
-Die Tertia Januarii;;Feria;;1.2;;vide Sancti/01-01
+In Octava S. Joannis Apostoli et Evangelistæ;;Simplex;;1.4;;vide Sancti/12-27
+(sed rubrica tridentina)
+In Octava S. Joannis Apostoli et Evangelistæ;;Duplex;;3.2;;ex Sancti/12-27
 
 [Rule]
 vide Sancti/12-27;
 Feria Te Deum
 Comkey=70
 9 lectiones
-no secunda Vespera(rubrica divino)
+no secunda Vespera
+Lectio1 TempNat
 
-[Lectio1]
-De Epístola ad Romános
-!Rom 6:1-5
-1 Quid ergo dicémus? permanébimus in peccáto ut grátia abúndet?
-2 Absit. Qui enim mórtui sumus peccáto, quómodo adhuc vivémus in illo?
-3 an ignorátis quia quicúmque baptizáti sumus in Christo Jesu, in morte ipsíus baptizáti sumus?
-4 Consepúlti enim sumus cum illo per baptísmum in mortem: ut quómodo Christus surréxit a mórtuis per glóriam Patris, ita et nos in novitáte vitæ ambulémus.
-5 Si enim complantáti facti sumus similitúdini mortis ejus: simul et resurrectiónis érimus.
+[Rule] (rubrica tridentina)
+ex Sancti/12-27;
+9 lectiones
+Psalmi Dominica
+Antiphonas Horas
+Feria Te Deum
 
-[Responsory1]
-@Sancti/01-01:Responsory4
+[Commemoratio] (rubrica tridentina)
+@Sancti/12-28:Octava
 
-[Lectio2]
-!Rom 6:6-11
-6 Hoc sciéntes, quia vetus homo noster simul crucifíxus est, ut destruátur corpus peccáti, et ultra non serviámus peccáto.
-7 Qui enim mórtuus est, justificátus est a peccáto.
-8 Si autem mórtui sumus cum Christo, crédimus quia simul étiam vivémus cum Christo,
-9 sciéntes quod Christus resúrgens ex mórtuis jam non móritur: mors illi ultra non dominábitur.
-10 Quod enim mórtuus est peccáto, mórtuus est semel: quod autem vivit, vivit Deo.
-11 Ita et vos existimáte vos mórtuos quidem esse peccáto, vivéntes autem Deo, in Christo Jesu Dómino nostro.
+[Lectio1] (rubrica tridentina)
+@Tempora/Pasc3-2::1-6 s/5/4/
 
-[Responsory2]
-@Sancti/01-01:Responsory5
+[Lectio2] (rubrica tridentina)
+!Apo 4:5-8
+5 Et de throno procedébant fúlgura, et voces, et tonítrua: et septem lámpades ardéntes ante thronum, qui sunt septem spíritus Dei.
+6 Et in conspéctu sedis tamquam mare vítreum símile crystállo: et in médio sedis, et in circúitu sedis quátuor animália plena óculis ante et retro.
+7 Et ánimal primum símile leóni, et secúndum ánimal símile vítulo, et tértium ánimal habens fáciem quasi hóminis, et quartum ánimal símile áquilæ volánti.
+8 Et quátuor animália, síngula eórum habébant alas senas: et in circúitu, et intus plena sunt óculis.
 
-[Lectio3]
-!Rom 6:12-18
-12 Non ergo regnet peccátum in vestro mortáli córpore ut obediátis concupiscéntiis ejus.
-13 Sed neque exhibeátis membra vestra arma iniquitátis peccáto: sed exhibéte vos Deo, tamquam ex mórtuis vivéntes: et membra vestra arma justítiæ Deo.
-14 Peccátum enim vobis non dominábitur: non enim sub lege estis, sed sub grátia.
-15 Quid ergo? peccábimus, quóniam non sumus sub lege, sed sub grátia? Absit.
-16 Nescítis quóniam cui exhibétis vos servos ad obediéndum, servi estis ejus, cui obedítis, sive peccáti ad mortem, sive obeditiónis ad justítiam?
-17 Grátias autem Deo quod fuístis servi peccáti, obedístis autem ex corde in eam formam doctrínæ, in quam tráditi estis.
-18 Liberáti autem a peccáto, servi facti estis justítiæ.
-
-[Responsory3]
-@Sancti/01-01:Responsory6
+[Lectio3] (rubrica tridentina)
+!Apo 4:8-11
+8 Et réquiem non habébant die ac nocte, dicéntia: Sanctus, Sanctus, Sanctus Dóminus Deus omnípotens, qui erat, et qui est, et qui ventúrus est.
+@Tempora/Pasc3-2:Lectio3:2-4
 
 [Lectio4]
-@:Lectio93
+Ex Tractatu sancti Augustíni Epíscopi in Joánnem
+!Tractatus 36
+In quátuor Evangéliis, vel pótius quátuor libris uníus Evangélii, sanctus Joánnes Apóstolus non immérito secúndum intelligéntiam spiritálem áquilæ comparátus, áltius multóque sublímius áliis tribus eréxit prædicatiónem suam: et in ejus erectióne étiam corda nostra érigi vóluit. Nam céteri tres Evangelístæ tamquam cum hómine Dómino in terra ámbulant, et de divinitáte ejus pauca dixérunt: istum autem quasi pigúerit in terra ambuláre, sicut ipso exórdio sui sermónis intónuit, eréxit se non solum super terram, et super omnem ámbitum áëris et cæli, sed super omnem étiam exércitum Angelórum, omnémque constitutiónem invisibílium Potestátum: et pervénit ad eum, per quem facta sunt ómnia, dicéndo: In princípio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum.
 
 [Lectio5]
 Huic tantæ sublimitáti princípii étiam cétera cóngrua prædicávit, et de Dómini divinitáte, quómodo nullus álius, est locútus: hoc ructábat, quod bíberat. Non enim sine causa de illo in isto ipso Evangélio narrátur, quia et in convívio super pectus Dómini discumbébat. De illo ergo péctore in secréto bibébat, sed quod in secréto bibit, in manifésto eructávit: ut pervéniat ad omnes gentes non solum incarnátio Fílii Dei, pássio, et resurréctio, sed étiam quod erat ante incarnatiónem únicus Patri, Verbum Patris, coætérnus generánti, æquális ei a quo missus est.
@@ -73,12 +63,8 @@ Nam cum nímia id caritáte díceret Petrus, nec ab eo dívidi vellet, osténden
 Exiit ergo sermo iste inter fratres, quod discípulus ille non móritur: et non dixit ei Jesus, quia non móritur; sed, Si eum volo manére donec véniam quid ad te? Noli arbitrári, inquit, eódem modo me de vobis disposuísse. Hoc autem dixit, ut intempestívum afféctum, et consuetúdinis desidérium tólleret. Cum enim essent orbis terrárum curam susceptúri, simul ámplius esse non oportébat: magnum enim fuísset mundo detriméntum. Idcírco inquit: Opus suscepísti, id consídera: pérfice, labóra, et te certamínibus expóne. Quid ad te, si volo eum manére hic? tu offícium tuum cura, et exséquere.
 &teDeum
 
-[Lectio93]
-Ex Tractatu sancti Augustíni Epíscopi in Joánnem
-!Tractatus 36
-In quátuor Evangéliis, vel pótius quátuor libris uníus Evangélii, sanctus Joánnes Apóstolus non immérito secúndum intelligéntiam spiritálem áquilæ comparátus, áltius multóque sublímius áliis tribus eréxit prædicatiónem suam: et in ejus erectióne étiam corda nostra érigi vóluit. Nam céteri tres Evangelístæ tamquam cum hómine Dómino in terra ámbulant, et de divinitáte ejus pauca dixérunt: istum autem quasi pigúerit in terra ambuláre, sicut ipso exórdio sui sermónis intónuit, eréxit se non solum super terram, et super omnem ámbitum áëris et cæli, sed super omnem étiam exércitum Angelórum, omnémque constitutiónem invisibílium Potestátum: et pervénit ad eum, per quem facta sunt ómnia, dicéndo: In princípio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum.
+[Lectio93] (rubrica divino)
+@:Lectio4
 
-[Capitulum Laudes] (rubrica divino aut rubrica monastica)
-!Sir 15:1-2
-v. Qui timet Deum, fáciet bona: et qui cóntinens est justítiæ, apprehéndet illam, et obviábit illi quasi mater honorificáta.
-$Deo gratias
+[Ant Vespera 3] (rubrica tridentina)
+@Sancti/12-27:Ant Laudes: s/$/_/gm s/\_/;;109/s s/\_/;;112/ s/\_/;;115/ s/\_/;;125/ s/\_/;;138/

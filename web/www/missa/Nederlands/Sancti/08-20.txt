@@ -4,20 +4,11 @@ S. Bernardi Abbatis et Ecclesiæ Doctoris;;Duplex;;3;;vide C5
 [Name]
 Bernarde
 
-[Rule]
-vide C5;
-Gloria
-CredoDA
-
 [Introitus]
 @Commune/C4a
 
 [Oratio]
 @Commune/C4a:Oratio:s/N\./Bernardus/
-
-[Commemoratio Oratio]
-!Infra Octavam Assumptionis
-@Sancti/08-15t:Oratio
 
 [Lectio]
 @Commune/C4a:Lectio1
@@ -39,16 +30,8 @@ De Heer had hem lief en tooide hem. Met een eregewaad heeft Hij hem bekleed. All
 [Secreta]
 @Commune/C4a:Secreta1:s/N\./Bernardus/
 
-[Commemoratio Secreta]
-!Infra Octavam Assumptionis
-@Sancti/08-15t:Secreta
-
 [Communio]
 @Commune/C4
 
 [Postcommunio]
 @Commune/C4a:Postcommunio1:s/N\./Bernardus/
-
-[Commemoratio Postcommunio]
-!Infra Octavam Assumptionis
-@Sancti/08-15t:Postcommunio

@@ -4,7 +4,7 @@
 [Rank] (rubrica 1960)
 Środa Suchych Dni Pięćdziesiątnicy;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Środa po Pięćdziesiątnicy;;Feria;;1;;
 
 [Rule]
@@ -15,6 +15,10 @@ Antiphonas horas
 Hymnus Tertia
 Feria Te Deum
 no93
+
+[Oratio]
+Niechaj oświeci umysły nasze, prosimy Cię, Panie, Pocieszyciel, który od Ciebie pochodzi i niech doprowadzi nas do poznania wszelkiej prawdy, wedle obietnic Syna Twego.
+$Qui tecum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. Napełnieni byli wszyscy Duchem Świętym, alleluja.\nR. I poczęli mówić, alleluja./s
@@ -51,10 +55,6 @@ Ariusz uważał Syna Bożego za stworzenie; Ojciec go nie pociągnął, bo nie p
 
 [Ant 2]
 Jam jest chleb żywy, * rzekł Pan, który z nieba zstąpił, alleluja, alleluja.
-
-[Oratio]
-Niechaj oświeci umysły nasze, prosimy Cię, Panie, Pocieszyciel, który od Ciebie pochodzi i niech doprowadzi nas do poznania wszelkiej prawdy, wedle obietnic Syna Twego.
-$Qui tecum eiusdem
 
 [Ant 3]
 Jam jest chleb żywy, * który z nieba zstąpił: jeśliby kto pożywał tego chleba, żyć będzie na wieki: a chleb, który ja dam, jest ciało moje za żywot świata, alleluja.

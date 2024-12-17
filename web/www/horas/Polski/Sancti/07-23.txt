@@ -1,14 +1,11 @@
 [Rank]
 Św. Apolinarego Biskupa i Męczennika;;Duplex;;3;;vide C2
 
-[Rank] (rubrica innovata)
-Św. Apolinarego Biskupa i Męczennika;;Duplex optional;;2;;vide C2
-
 [Oratio]
 Boże, nagrodo dusz wiernych, któryś dzień ten uświęcił męczeństwem świętego Apolinarego, racz sprawić, byśmy słudzy Twoi, obchodząc jego pamiątkę, za modlitwami jego przebaczenie otrzymali.
 $Per Dominum
 
-[Commemoratio Sabbat] (rubrica 1570 vel rubrica 1910 vel rubrica divino)
+[Commemoratio Sabbat]
 !Wspominamy Św. Liberjusza Biskupa i Wyznawcy
 @Commune/C4:Oratio proper
 $Oremus
@@ -36,10 +33,3 @@ Bo nie pokarm i napój daje się nam w nagrodę i jako wyraz uznania, lecz łąc
 
 [Lectio9]
 Nawracajmy się zatem i strzeżmy, by dla kogoś z nas wywyższenie nie stało się zgubne. Jeśli bowiem Apostołowie rywalizują, to nie zasługują na usprawiedliwienie, ale na ostrzeżenie. Jeśli i Piotr musiał się nawracać, choć pierwszy za Panem podążył, to kto może powiedzieć, że nie potrzebuje nawrócenia? Strzeż się zatem zaszczytów, strzeż się świata. Temu bowiem nakazano umacniać swych braci, który rzekł: wszystko pozostawiliśmy i poszliśmy za Tobą.
-
-[Commemoratio 3] (rubrica divino aut rubrica tridentina)
-!Wspominamy Św. Krystynę
-@Commune/C6:Oratio proper
-$Oremus
-Prosimy Cię, Panie, niechaj błogosławiona Krystyna Dziewica i Męczenniczka, która dzięki zasłudze czystości i wyznawaniu Twej potęgi była Ci zawsze miła, wybłaga nam przebaczenie.
-$Per Dominum

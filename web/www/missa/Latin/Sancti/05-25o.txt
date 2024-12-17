@@ -4,19 +4,15 @@ S. Urbani Papæ et Martyris;;Simplex;;1.1;;vide C2
 [Rule]
 vide C2;
 Gloria
+OPapaM=Urbánum;
 
 [Oratio]
-Deus, qui Ecclésiam tuam, in apostólicæ petræ soliditáte fundátam, ab infernárum éruis terróre portárum: præsta, quǽsumus; ut, intercedénte beáto Urbáno Mártyre tuo atque Summo Pontífice, in tua veritáte persístens, contínua securitáte muniátur.
-$Per Dominum
+@Commune/C4b:Oratio1:s/N\./Urbáno/
+(sed rubrica divino aut rubrica 1955 aut rubrica 1960)
+@Commune/C4b:Oratio Gregem
 
 [Secreta]
-Múnera, quæ tibi, Dómine, lætántes offérimus, súscipe benígnus, et præsta: ut,~
-intercedénte beáto Urbáno, Ecclésia tua et fídei integritáte lætétur, et~
-témporum tranquillitáte semper exsúltet.
-$Per Dominum
+@Commune/C4b:Secreta1:s/N\./Urbáno/
 
 [Postcommunio]
-Multíplica, quǽsumus, Dómine, in Ecclesia tua spíritum grátiæ, quem dedísti: ut~
-beáti Urbáni Martyris tui atque Summi Pontíficis deprecatióne nec pastóri~
-obœdiéntia gregis nec gregi desit cura pastóris.
-$Per Dominum
+@Commune/C4b:Postcommunio1:s/N\./Urbáni/

@@ -1,18 +1,15 @@
 [Rank]
 Feria Quarta in Rogationibus in Vigilia ascensionis;;Feria;;1
 
-[Rank1960]
-In Vigilia ascensionis;;Feria;;5
+[Rule]
+Gloria
+no Credo
+Suffr=Maria3
 
 [Comment]
 # Vigília da Festa da Ascensão de N. S. J. C.
 ! 1 classe
 ! Paramentos branco
-
-[Rule]
-Gloria
-no Credo
-Suffr=Maria3
 
 [Introitus]
 @Tempora/Pasc5-0:Introitus

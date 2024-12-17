@@ -6,6 +6,12 @@
 [Ant 1]
 @Commune/C4a
 
+[Oratio]
+@Commune/C4:Oratio2
+
+[Oratio3]
+@Commune/C5:Oratio
+
 [Lectio1]
 @CommuneM/C4a
 
@@ -44,12 +50,6 @@
 
 [Lectio12]
 @CommuneM/C4a
-
-[Oratio]
-@Commune/C4:Oratio2
-
-[Oratio3]
-@Commune/C5:Oratio
 
 [Ant 3]
 @Commune/C4a

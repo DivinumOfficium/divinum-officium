@@ -1,28 +1,17 @@
 [Rank]
 S. Bonaventurae Episcopi Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
 
-[Rank1570]
+[Rank] (rubrica 1570)
 S. Bonaventurae Episcopi Confessoris;;Semiduplex;;2;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDA
 
 [Comment]
 # 14 VII – São Boaventura, Bispo, Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
 
-[Introitus]
-@Commune/C4a:Introitus
-
 [Oratio]
 Ó Deus, que ao vosso povo destinastes o B. Boaventura para ministro da eterna salvação, concedei-nos, Vos suplicamos, que, assim como o tivemos como Doutor durante a nossa vida na terra, assim gozemos a sua intercessão no céu.
 $Per Dominum
-
-[Lectio]
-@Commune/C4a:Lectio
 
 [Graduale]
 !Sl 36:30-31
@@ -30,9 +19,6 @@ A boca do justo falará com sabedoria e a sua língua proclamará a justiça.
 V. A lei do seu Deus está no seu coração e os seus pés não tropeçarão. Aleluia, aleluia.
 !Sl 109:4
 O Senhor jurou, e não se arrependerá: tu és sacerdote para sempre segundo a ordem de Melquisedeque. Aleluia.
-
-[Evangelium]
-@Commune/C4a:Evangelium
 
 [Offertorium]
 A minha fidelidade e a minha misericórdia estarão com ele: e o seu poder exaltar-se-á pelo meu nome.

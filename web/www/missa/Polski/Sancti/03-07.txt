@@ -1,9 +1,6 @@
 [Rank]
 S. Thomae de Aquino Confessoris Ecclesiae Doctoris.;;Duplex;;3;;vide C5a
 
-[Name]
-Thoma
-
 [Rule]
 vide C5a;
 Gloria
@@ -15,11 +12,11 @@ CredoDa
 ! Szaty białe
 Św. Tomasz w młodzieńczym wieku wstąpił do zakonu Dominikanów. Po ukończeniu studiów wykładał teologię na Uniwersytecie Paryskim. Nauczał także w Rzymie i w Neapolu. Napisał komentarze do Ksiąg Pisma św. oraz liczne dzieła teologiczne i filozoficzne. Główne z nich – Summa teologiczna stanowi do dzisiaj podstawę podręczników teologii. Liturgia zwraca uwagę na źródło tej głębokiej wiedzy «Doktora Anielskiego»: Płynęła ona z oświecenia Bożego (lekcja). Św. Tomasz zakończył życie w drodze na Sobór Lyoński 7 marca 1274 roku. Papież Leon XIII ogłosił go patronem szkół katolickich.
 
-[Introitus]
-@Commune/C4a:Introitus
+[Name]
+Thoma
 
 [Oratio]
-Boże, Ty oświecasz Swój Kościół przedziwną nauką św. Tomasza, Twojego Wyznawcy, i użyźniasz świętą jego działalnością; daj nam, prosimy, poznać umysłem to, czego nauczał, a to, co zdziałał, naśladować czynem.
+Boże, który Kościół swój przedziwną nauką błogosławionego Tomasza, wyznawcy Twego oświecasz i świętemi czynami ubogacasz, daj nam, prosimy, abyśmy mieli zrozumienie tego, czego uczył i abyśmy naśladując go, pełnili to, co on czynił.
 $Per Dominum
 
 [Lectio]
@@ -28,24 +25,9 @@ Czytanie z Księgi Mądrości.
 Pragnąłem, a dano mi zrozumienie; i błagałem, a spłynął na mnie duch mądrości. I wyżej ją stawiłem nad królestwa i stolicę, i bogactwo sobie za nic poczytałem w porównaniu z nią. Ani nie przyrównałem jej do drogocennego kamienia: bo wszelkie złoto w porównaniu z nią jest lichym piaskiem, a srebro wobec niej poczytane będzie za błoto.
 Ponad zdrowie i piękno umiłowałem ją i postanowiłem mieć ją za światło: bo blask jej jest nie do ugaszenia. A wraz z nią wszelkie dobra na mnie spłynęły, i nieoceniona cześć przez jej ręce, i uradowałem się tym wszystkim: bo szła przede mną owa mądrość, a nie wiedziałem, że to ona jest matką tych wszystkich rzeczy. Nauczyłem się jej bez obłudy i bez zazdrości jej udzielam, a piękna jej nie ukrywam. Bo nieskończonym jest skarbem dla ludzi; a którzy nim się posłużyli, stali się uczestnikami Bożej przyjaźni, zaleceni darami nauki.
 
-[Graduale]
-@Commune/C4a:Graduale
-
-[Tractus]
-@Commune/C4a:Tractus
-
-[Evangelium]
-@Commune/C4a:Evangelium
-
-[Offertorium]
-@Commune/C4a:Offertorium
-
 [Secreta]
 Panie, niech nam nie zabraknie serdecznej modlitwy świętego Tomasza, Twego Biskupa i Doktora, która zaleci Tobie naszą ofiarę i wyjedna nam Twoje przebaczenie.
 $Per Dominum
-
-[Communio]
-@Commune/C4a:Communio
 
 [Postcommunio]
 Prosimy Cię, Panie, niech święty Tomasz, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.

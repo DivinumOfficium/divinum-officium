@@ -11,6 +11,9 @@ Limit Benedictiones, Oratio
 Capitulum Versum 2 ad Laudes tantum
 Feria
 
+[Ant Vespera]
+@Tempora/Quad6-6r
+
 [Oratio 2]
 @Tempora/Quad6-6r:Oratio 2
 
@@ -25,9 +28,6 @@ Feria
 
 [Special Nona]
 @TemporaM/Quad6-4::s/6-4/6-6r/ s/Oratio/Oratio 2/
-
-[Ant Vespera]
-@Tempora/Quad6-6r
 
 [Ant 3]
 @Tempora/Quad6-6r

@@ -1,17 +1,15 @@
 [Rank]
-St Antoine de Padoue Confesseur;;Duplex;;3;;vide C5a
-
-[Rank] (rubrica divino aut rubrica 196)
+St Antoine de Padoue Confesseur;;Duplex;;3;;vide C5
+(sed rubrica 195 aut rubrica 196)
 St Antoine de Padoue Confesseur et Docteur de l'Eglise;;Duplex;;3;;vide C5a
 
 [Name]
 Antoine
 
 [Oratio]
-@:OratioText
-
-[Oratio] (rubrica divino aut rubrica tridentina)
 @:OratioText:s/ atque Doctóris//
+(sed rubrica 195 aut rubrica 196)
+@:OratioText
 
 [OratioText]
 Que la solennité annuelle de Votre Confesseur et Docteur, le bienheureux Antoine, réjouisse Votre Église, ô Dieu, afin qu’elle soit toujours munie des secours spirituels et qu’elle mérite de goûter les joies éternelles.

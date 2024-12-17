@@ -1,9 +1,6 @@
 [Rank]
 Dominica II. Post Pentecosten;;Semiduplex I classis;;5.9;;ex Tempora/Pent01-4
 
-[Rank1960]
-Dominica II post Octavam Pentecostes;;Duplex II classis;;5
-
 [Rule]
 ex Tempora/Pent01-4
 Gloria
@@ -27,6 +24,10 @@ v. O Senhor fez-se o meu protector e conduziu-me para o largo: E, porque me amav
 [Oratio]
 Fazei, Senhor, que possuamos perpetuamente o temor e o amor do vosso santo nome, porquanto nunca cessais de inspirar e dirigir aqueles em quem infundistes solidamente o vosso amor.
 $Per Dominum
+
+[Commemoratio Oratio]
+! Oitava do Corpo de Cristo
+@Tempora/Pent01-4:Oratio
 
 [Lectio]
 Lição da Ep.ª do B. Ap.º João.
@@ -53,6 +54,10 @@ Senhor, volvei para mim a vossa face: e livrai a minha alma: salvai-me pela voss
 Senhor, que a oblação que vai ser consagrada ao vosso nome nos purifique; e que dia a dia nos aperfeiçoe na prática de uma vida toda celestial.
 $Per Dominum
 
+[Commemoratio Secreta]
+! Oitava do Corpo de Cristo
+@Tempora/Pent01-4:Secreta
+
 [Communio]
 !Sl. 12:6.
 Cantarei hinos ao Senhor, porque me cumulou de benefícios. Cantarei salmos ao nome do altíssimo Senhor.
@@ -60,14 +65,6 @@ Cantarei hinos ao Senhor, porque me cumulou de benefícios. Cantarei salmos ao n
 [Postcommunio]
 Havendo recebido estes dons sacratíssimos. Vos imploramos, Senhor, fazei que pela recepção frequente deste mystério nos sejam aumentados os frutos da salvação.
 $Per Dominum
-
-[Commemoratio Oratio]
-! Oitava do Corpo de Cristo
-@Tempora/Pent01-4:Oratio
-
-[Commemoratio Secreta]
-! Oitava do Corpo de Cristo
-@Tempora/Pent01-4:Secreta
 
 [Commemoratio Postcommunio]
 ! Oitava do Corpo de Cristo

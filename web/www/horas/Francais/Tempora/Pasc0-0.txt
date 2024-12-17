@@ -12,16 +12,37 @@ Prima=53
 [Ant 1]
 Après le sabbat, * à l'aube du premier jour de la semaine, Marie Madeleine et l'autre Marie allèrent voir le sépulcre, allelúia.
 
-[Ant 41]
-Après le sabbat, * à l'aube du premier jour de la semaine, Marie Madeleine et l'autre Marie allèrent voir le sépulcre, allelúia.
+[Oratio]
+O Dieu qui, aujourd'hui, nous avez ouvert l'accès de l'éternité par le triomphe sur la mort de Votre Fils unique, aidez de Votre secours les vœux que Votre inspiration a devancés.
+$Per eumdem
+
+[Special Vespera 1]
+#Sabbato Sancto special Paschal Vespera
+_
+$Pater noster
+$Ave Maria
+_
+Ant. alléluia, alléluia, alléluia.
+&psalm(116)
+Ant. alléluia, alléluia, alléluia.
+_
+Ant. Après le sabbat, * à l'aube du premier jour de la semaine, Marie Madeleine et l'autre Marie allèrent voir le sépulcre, allelúia.
+&psalm(232)
+Ant. Après le sabbat, * à l'aube du premier jour de la semaine, Marie Madeleine et l'autre Marie allèrent voir le sépulcre, allelúia.
+
+&Dominus_vobiscum
+v. Orémus.
+v. Répandez sur nous, Seigneur, l’Esprit de votre charité : et par votre bonté, unissez dans la concorde ceux que vous avez rassasiés de ces mystères de Pâques.
+$Per Dominum eiusdem
+&Dominus_vobiscum
+
+V. Bénissons le Seigneur, alléluia, alléluia.
+R. Rendons grâce à Dieu, alléluia, alléluia.
+$Fidelium animae
+$Pater noster
 
 [Invit]
 Le Seigneur est vraiement ressuscité, * Allelúia.
-
-[Prelude Matutinum] (rubrica 1955 aut rubrica 1960)
-!Lorsque la célébration solennelle de la Veillée pascale a lieu, le devoir de la nuit de la Résurrection est omis, avec le matin de la même Résurrection omis, immédiatement après la Communion. Il continue avec le premier dimanche de Pâques.
-_
-!Mais ceux qui n'ont pas assisté à la solennelle veillée pascale sont tenus de réciter les matines et les laudes de la résurrection du Seigneur.
 
 [Ant Matutinum]
 Je suis celui qui suis, et mon dessein n’est pas avec les impies ; mais c’est dans la loi du Seigneur qu’est ma volonté, alléluia.;;1
@@ -62,8 +83,10 @@ R. Pour aller embaumer Jésus, alléluia, alléluia.
 Donc, en cette fête qui est sienne et nôtre, l’Ange est apparu en vêtements blancs, parce que tandis que nous sommes ramenés au monde d’en haut par la résurrection du Seigneur, les dommages faits à la patrie céleste sont réparés, Mais écoutons comment il parle aux femmes venues au tombeau : Ne vous effrayez pas, comme s’il disait ouvertement : « Qu’ils s’effraient, ceux qui n’aiment pas la visite des citoyens d’en haut ; qu’ils craignent, ceux qui, oppressés par leurs désirs charnels, désespèrent de pouvoir arriver à la société de ces esprits célestes. Mais vous, pourquoi craindriez-vous, vous qui voyez vos concitoyens ? C’est pourquoi saint Matthieu, décrivant lui aussi l’apparition de l’Ange, dit : Son aspect était comme celui de Véclair et ses vêtements comme la neige. Dans l’éclair en effet, il y a l’éclat terrifiant qui fait craindre, mais dans la neige, la caresse de la blancheur.
 &teDeum
 
-[Prelude Laudes] (rubrica 1955 aut rubrica 1960)
-@:Prelude Matutinum
+[Prelude Matutinum] (rubrica 1955 aut rubrica 1960)
+!Lorsque la célébration solennelle de la Veillée pascale a lieu, le devoir de la nuit de la Résurrection est omis, avec le matin de la même Résurrection omis, immédiatement après la Communion. Il continue avec le premier dimanche de Pâques.
+_
+!Mais ceux qui n'ont pas assisté à la solennelle veillée pascale sont tenus de réciter les matines et les laudes de la résurrection du Seigneur.
 
 [Ant Laudes]
 Un Ange du Seigneur * descendit du ciel et, s'approchant, roula la pierre et s'assit sur elle, alléluia, alléluia.
@@ -78,40 +101,11 @@ Ant. Voici le jour * que le Seigneur a fait : exultons et réjouissons-nous en L
 [Ant 2]
 Et de grand matin * le premier jour de la semaine, elles viennent au sépulcre, le soleil étant déjà levé, alléluia.
 
-[Oratio]
-O Dieu qui, aujourd'hui, nous avez ouvert l'accès de l'éternité par le triomphe sur la mort de Votre Fils unique, aidez de Votre secours les vœux que Votre inspiration a devancés.
-$Per eumdem
-
-[Special Vespera 1]
-#Sabbato Sancto special Paschal Vespera
-_
-$Pater noster
-$Ave Maria
-_
-Ant. alléluia, alléluia, alléluia.
-&psalm(116)
-Ant. alléluia, alléluia, alléluia.
-_
-Ant. Après le sabbat, * à l'aube du premier jour de la semaine, Marie Madeleine et l'autre Marie allèrent voir le sépulcre, allelúia.
-&psalm(232)
-Ant. Après le sabbat, * à l'aube du premier jour de la semaine, Marie Madeleine et l'autre Marie allèrent voir le sépulcre, allelúia.
-
-&Dominus_vobiscum
-v. Orémus.
-v. Répandez sur nous, Seigneur, l’Esprit de votre charité : et par votre bonté, unissez dans la concorde ceux que vous avez rassasiés de ces mystères de Pâques.
-$Per Dominum eiusdem
-&Dominus_vobiscum
-
-V. Bénissons le Seigneur, alléluia, alléluia.
-R. Rendons grâce à Dieu, alléluia, alléluia.
-$Fidelium animae
-$Pater noster
-
-[Ant Vespera]
-@:Ant Laudes
-
 [Ant 3]
 Elles regardèrent * et virent qu'on avait roulé la pierre ; celle-ci était cependant fort grande, alléluia.
+
+[Ant 41]
+Après le sabbat, * à l'aube du premier jour de la semaine, Marie Madeleine et l'autre Marie allèrent voir le sépulcre, allelúia.
 
 [Ant 43]
 Alléluia, alléluia, alléluia, alléluia.

@@ -1,13 +1,8 @@
 [Rank]
 Feria Secunda infra Octavam Corporis Christi;;Semiduplex II class;;5;;ex Tempora/Pent01-4
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1955)
 Feria II infra Hebdomadam II post Octavam Pentecostes;;Feria;;1
-
-[Rule]
-ex Tempora/Pent01-4;
-9 lectiones
-Doxology=Corp
 
 [Lectio1]
 De premier livre de Samuel
@@ -18,17 +13,11 @@ De premier livre de Samuel
 04 Ils se levèrent tôt le lendemain matin, et voici que Dagone était tombé face contre terre devant l’arche du Seigneur ; la tête de Dagone et les deux paumes de ses mains, coupées, se trouvaient sur le seuil. De Dagone, seul le corps était resté à sa place.
 05 Voilà pourquoi, aujourd’hui encore, à Ashdod, les prêtres de Dagone et tous ceux qui entrent dans la maison de Dagone évitent de fouler le seuil.
 
-[Responsory1 1960]
-@Tempora/Pent03-1Feria:Responsory1
-
 [Lectio2]
 !1 Sam 5:6-8
 06 La main du Seigneur pesa lourdement sur les gens d’Ashdod. Il fit chez eux des ravages, il frappa de tumeurs Ashdod et son territoire.
 07 Lorsque les gens d’Ashdod virent ce qu’il en était, ils dirent : « Que l’arche du Dieu d’Israël ne reste pas chez nous, car sa main s’est faite dure contre nous et contre Dagone notre dieu ! »
-08 Ils invitèrent donc tous les princes des Philistins à se réunir chez eux et ils dirent : « Qu’allons-nous faire de l’arche du Dieu d’Israël ? » Les princes répondirent : « C’est dans la ville de Gath que doit être transférée l’Arche ! » 
-
-[Responsory2 1960]
-@Tempora/Pent03-1Feria:Responsory2
+08 Ils invitèrent donc tous les princes des Philistins à se réunir chez eux et ils dirent : « Qu’allons-nous faire de l’arche du Dieu d’Israël ? » Les princes répondirent : « C’est dans la ville de Gath que doit être transférée l’Arche ! »
 
 [Lectio3]
 !1 Sam 5:8-12
@@ -37,9 +26,6 @@ De premier livre de Samuel
 10 Ils envoyèrent l’arche de Dieu à Éqrone. Mais, dès que l’arche de Dieu y arriva, tous les gens d’Éqrone s’écrièrent : « Ils ont transféré chez moi l’arche du Dieu d’Israël pour me faire mourir, moi et mon peuple ! »
 11 Ils invitèrent tous les princes des Philistins à se réunir et ils dirent : « Renvoyez l’arche du Dieu d’Israël, qu’elle retourne à l’endroit où elle était et qu’elle ne me fasse pas mourir, moi et mon peuple ! » En effet, il y avait dans toute la ville une panique de mort : la main de Dieu pesait très lourdement sur elle.
 12 Les gens qui ne mouraient pas étaient affligés de tumeurs, et le cri de détresse de la ville monta vers le ciel.
-
-[Responsory3 1960]
-@Tempora/Pent03-1Feria:Responsory3
 
 [Lectio4]
 Du Sermon de saint Jean Chrysostome.

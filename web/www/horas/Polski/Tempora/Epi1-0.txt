@@ -3,23 +3,12 @@
 (sed rubrica 1960)
 Świętej Rodziny, Jezusa, Marji, Józefa;;Duplex II classis;;5
 
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-No Sunday Commemoratio
-
 [Ant Vespera]
 A Jakób * zrodził Józepha, męża Maryi, z któréj się narodził Jezus, którego zowią Chrystusem.;;109
 Aniół Pański * ukazał mu się we śnie, mówiąc: Józephie, synu Dawidów, nie bój się przyjąć Maryi, małżonki twéj; albowiem co się w niéj urodziło, jest z Ducha Świętego.;;112
 Pasterze przyszli, * kwapiąc się i naleźli Maryą i Józepha i niemowlątko położone we żłobie.;;121
 Królowie wszedłszy w dom, * naleźli dziecię z Maryą, matką jego.;;126
 Ojciec jego * i matka dziwowali się temu, co o nim mówiono.;;147
-
-[Capitulum Laudes]
-!Łk 2:51
-v. I zstąpił Jezus z Marją i Józefem i przyszedł do Nazaret: a był im poddany.
-$Deo gratias
 
 [Hymnus Vespera]
 v. O, błogosławiona światłości niebian, 
@@ -65,9 +54,6 @@ Niech będzie wieczna chwała,
 Wraz z Ojcem i Najświętszym Duchem. 
 Amen.
 
-[Versum Prima]
-Któryś Maryi i Józefowi stał się posłuszny.
-
 [Versum 1]
 V. Błogosławieni, którzy mieszkają w domu Twoim, Panie.
 R. Na wieki wieków chwalić Cię będą.
@@ -78,6 +64,10 @@ A Słowo * ciałem się stało, i mieszkało między nami, pełne łaski i prawd
 [Oratio]
 Panie Jezu Chryste, który będąc poddanym Marji i Józefowi, uświęciłeś życie rodzinne niewymownemi cnotami: daj abyśmy, naśladując wzór św. Rodziny Twojej, przez nią wspomagani, doszli do uczestnictwa w jej szczęściu wiekuistem.
 $Qui vivis
+
+[Commemoratio]
+!Wspominamy Niedzielę w Oktawie Objawienia
+@Tempora/Epi1-0a:Oratio:s/V\. .*/V. Wszyscy z Saby przyjdą, alleluja./ s/R\. .*/R. Złoto i kadzidło przynosząc, alleluja./
 
 [Invit]
 Chrystusowi Synowi Bożemu, posłusznemu Marji i Józephowi, * pójdźmy z pokłonem.
@@ -254,6 +244,11 @@ I zstąpił Jezus * z nimi i przyszedł do Nazaret: a był im poddany.
 A Jezus się pomnażał * w mądrości i w leciech i w łasce u Boga i u ludzi.
 I mówili: * skądże temu ta mądrość i cuda, czyż ten nie jest syn rzemieślniczy?
 
+[Capitulum Laudes]
+!Łk 2:51
+v. I zstąpił Jezus z Marją i Józefem i przyszedł do Nazaret: a był im poddany.
+$Deo gratias
+
 [Hymnus Laudes]
 v. O szczęśliwa z narodu gościnego, 
 czcigodna siedzibo Nazaretu
@@ -307,6 +302,9 @@ Oświeć nas, Panie, * przez przykład świętej Rodziny Twojej, i prowadź nogi
 !Flp 2:7
 v. Ale wyniszczył samego siebie, przyjąwszy postać sługi, stawszy się na podobieństwo ludzi, i postawą naleziony jako człowiek.
 
+[Versum Prima]
+Któryś Maryi i Józefowi stał się posłuszny.
+
 [Responsory Tertia]
 R.br. Dla nas stał się ubogim, * Będąc bogatym. 
 R. Dla nas stał się ubogim, * Będąc bogatym. 
@@ -354,7 +352,3 @@ I mówili: * skądże temu ta mądrość i cuda, czyż ten nie jest syn rzemieś
 
 [Ant 3]
 A Matka Jego * wszystkie te słowa chowała, stosując w sercu swojem.
-
-[Commemoratio]
-!Wspominamy Niedzielę w Oktawie Objawienia
-@Tempora/Epi1-0a:Oratio:s/V\. .*/V. Wszyscy z Saby przyjdą, alleluja./ s/R\. .*/R. Złoto i kadzidło przynosząc, alleluja./

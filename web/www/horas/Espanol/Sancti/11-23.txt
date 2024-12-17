@@ -4,9 +4,6 @@ S. Clementis I Papæ et Martyris;;Duplex;;3;;vide C2
 [Rank] (rubrica 1570)
 S. Clementis Papæ et Martyris;;Semiduplex;;2;;vide C2
 
-[Rank] (rubrica innovata)
-S. Clementis Papæ et Martyris;;Duplex optional;;2;;vide C2
-
 [Rule]
 vide C2;
 9 lectiones
@@ -24,13 +21,6 @@ Oremos todos * a Jesucristo nuestro Señor, que abrió a sus Confesores el manan
 
 [Oratio]
 !Oh Dios, que todos los años nos alegras con la fiesta de San Clemente, Pontífice y Mártir!; concédenos, al venerarla con nuestro culto, seguir su ejemplo, por la santidad de nuestra vida.
-$Per Dominum
-
-[Commemoratio]
-!Conmemoración de Sta. Felicidad, Mártir
-@Commune/C7:Oratio proper
-$Oremus
-v. Concédenos, Dios todopoderoso, al celebrar la fiesta de Santa Felicidad, mártir, la ayuda de sus méritos y oraciones.
 $Per Dominum
 
 [Responsory1o]
@@ -78,13 +68,6 @@ Para entender que, si el último día permanece desconocido de todos, esta ignor
 [Lectio8] (rubrica tridentina)
 !Can 27
 ¿Quién es el siervo fiel y prudente a quien el Señor constituyó sobre su familia? Aunque exhorte en general a una constante vigilancia, con todo, ordena especialmente que estén en vela los príncipes del pueblo, es decir, los obispos. Pues da a entender que este siervo fiel y prudente es el prelado de su familia, que procura el bienestar y el provecho del pueblo que le ha sido confiado. Si atendiere y ejecutare los mandatos de su señor, es decir, si con la oportunidad y verdad de sus enseñanzas esfuerza al dé- bil, sostiene al vacilante y convierte al extraviado, dando a la familia que le ha sido confiada la palabra de vida como alimento para la eternidad, y la muerte le hallare realizando estas cosas, conseguirá del Señor la gloria como dispensador fiel y mayordomo útil, y será puesto sobre todos sus bienes; será colocado en la gloria divina, más allá de la cual ya no hay nada mejor.
-
-[Lectio93]
-!Conmemoración de Sta. Felicidad, Mártir
-Sermón de S. Gregorio, Papa. 
-!Homilía 3 sobre el Evangelio.
-La bienaventurada Felicidad, cuyo nacimiento a la vida eterna celebramos hoy, temió dejar tras de sí en este mundo a siete hijos, al revés de lo que suele ocurrir con los demás padres, que temen sobrevivir a los suyos. Detenida cuando más arreciaba la persecución, sostuvo con sus exhortaciones en el corazón de sus hijos el amor a la patria celestial, engendrando así espiritualmente a los que había engendrado corporalmente y dando a Dios con sus palabras a los que había dado a luz para el mundo. ¿Llamaremos mártir a esta mujer? La llamaré más que mártir, por cuanto, enviando prematuramente al reino de los cielos a siete seres amados, murió en cierta manera tantas veces como hijos vio morir antes que ella. Habiendo sido la primera en acudir al martirio, fue la última en llegar.
-&teDeum
 
 [Ant 2]
 Mientras lo conducían al mar, * el pueblo exclamaba: Señor Jesucristo, sálvale; y San Clemente, con lágrimas decía: Padre, recibe mi espíritu.

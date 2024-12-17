@@ -4,14 +4,19 @@ S. Stephani, Papæ et Martyris;;Simplex;;1.1;;vide C2
 [Rule]
 vide C2;
 Gloria
+OPapaM=Stéphanum;
 
 [Oratio]
+@Commune/C2b:Oratio:s/N\./Stéphani/
+(sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Oratio1
 
-[Commemoratio Secreta]
-!Pro S. Stephano Papa, Martyre
+[Secreta]
+@Commune/C2b:Secreta:s/N\./Stéphano/
+(sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Secreta1
 
-[Commemoratio Postcommunio]
-!Pro S. Stephano Papa, Martyre
+[Postcommunio]
+@Commune/C2b:Postcommunio:s/N\./Stéphano/
+(sed communi Summorum Pontificum dicitur)
 @Commune/C4b:Postcommunio1

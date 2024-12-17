@@ -6,15 +6,15 @@ vide C4a;
 Gloria
 CredoDA
 
-[Name]
-Gregori
-
 [Comment]
 # 09 V – Św. Grzegorza z Nazjanzu, Biskupa, Wyznawcy i Doktora Kościoła
 ! 3 klasy
 ! Szaty białe
 Św. Grzegorz urodził się w Arianz w Kapadocji. Gorliwie studiował
 w Cezarei, w Aleksandrii i w Atenach. W Atenach związał się przyjaźnią ze św. Bazylim. Obydwaj zostali później mnichami i biskupami. Św. Grzegorz został biskupem Nazjanzu, a później patriarchą w Konstantynopolu. Obronił swoje owieczki przed herezją ariańską, ale znużony ciągłymi sporami zrezygnował z urzędu patriarchy i usunął się do Nazjanzu, gdzie poświęcił się wyłącznie modlitwie i studiom teologii. Dzieła jego odznaczają się taką głębią, że nadano mu przydomek «Teologa» i zaliczono w poczet czterech wielkich Doktorów Kościoła Wschodniego. Św. Grzegorz zmarł około roku 390.
+
+[Name]
+Gregori
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -46,4 +46,3 @@ $Per Dominum.
 
 [Postcommunio]
 @Commune/C4a:Postcommunio
-

@@ -1,17 +1,9 @@
 [Rank]
 Feria Sexta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
 
-[Rank]
-Feria Sexta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[Rule]
-ex Pasc7-0;
-1 nocturn;
-Psalmi Dominica;
-Antiphonas horas
-Hymnus Tertia
-Feria Te Deum
-no93
+[Oratio]
+Accordez à Votre Eglise, nous Vous en prions, ô Dieu de miséricorde, que rassemblée par le Saint-Esprit, elle ne soit troublée par aucune invasion ennemie.
+$Per Dominum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. L’Esprit Paraclet, alléluia.\nR. Vous enseignera toutes choses, alléluia./s
@@ -48,10 +40,6 @@ Toi qui juges, apprends à pardonner ; toi qui es malade, apprends à obtenir. S
 
 [Ant 2]
 Jésus dit : * pour que vous sachiez que le Fils de l’homme a, sur la terre, le pouvoir de remettre les péchés, s’adressant au paralytique : Je te le commande, lève-toi, prends ton lit et va dans ta maison, alléluia.
-
-[Oratio]
-Accordez à Votre Eglise, nous Vous en prions, ô Dieu de miséricorde, que rassemblée par le Saint-Esprit, elle ne soit troublée par aucune invasion ennemie.
-$Per Dominum eiusdem
 
 [Ant 3]
 Mais le Paraclet, * l’Esprit-Saint, que le Père enverra en Mon nom, Vous enseignera toutes choses et Vous suggérera tout ce que Je vous aurai dit, alléluia.

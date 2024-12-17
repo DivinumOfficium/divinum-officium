@@ -1,9 +1,6 @@
 [Rank]
 In Commemoratione Sancti Pauli Apostoli;;Duplex majus;;4;;ex C1
 
-[Rank1960]
-In Commemoratione Sancti Pauli Apostoli;;Duplex;;3;;vide C1
-
 [Rule]
 ex C1;
 Gloria
@@ -40,17 +37,17 @@ Celui qui a agi efficacement dans Pierre pour le rendre Apôtre, a aussi agi eff
 La grâce de Dieu n’a pas été stérile en moi ; mais elle demeure toujours en moi. Alléluia, alléluia.
 V. Saint Paul, Apôtre, prédicateur de la vérité et docteur des nations, intercédez pour nous. Alléluia.
 
-[Tractus]
-Tu as été l’objet du choix de Dieu, Apôtre saint Paul, tu mérites bien d’être glorifié.
-V. Tu as prêché la vérité, tu as enseigné aux païens la vraie foi.
-V. Grâce à toi tous les peuples ont appris à connaître le don de Dieu.
-V. Intercède pour nous auprès de Dieu qui t’as choisi.
-
 [GradualeP]
 Alléluia, alléluia.
 !Ps 106:8
 Qu’elles louent le Seigneur ses miséricordes, et ses merveilles en faveur des fils des hommes. Alléluia.
 V. Saint Paul Apôtre, prédicateur de la vérité et docteur des païens, intercède pour nous. Alléluia.
+
+[Tractus]
+Tu as été l’objet du choix de Dieu, Apôtre saint Paul, tu mérites bien d’être glorifié.
+V. Tu as prêché la vérité, tu as enseigné aux païens la vraie foi.
+V. Grâce à toi tous les peuples ont appris à connaître le don de Dieu.
+V. Intercède pour nous auprès de Dieu qui t’as choisi.
 
 [Evangelium]
 @Sancti/06-11:Evangelium
@@ -80,18 +77,3 @@ $Oremus
 !Pro S. Petro
 Que le don offert nous réjouisse, Seigneur : afin que comme nous vous reconnaissons admirable en votre Apôtre Pierre, de même nous obtenions, grâce à lui, de votre libéralité, des faveurs et le pardon.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Pro Octava S. Johannis Baptistæ
-Ô Dieu, qui nous avez rendu ce jour vénérable par la nativité du bienheureux Jean : accordez à votre peuple la grâce des joies spirituelles ; et dirigez les âmes de tous les fidèles dans la voie du salut éternel.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Pro Octava S. Johannis Baptistæ
-Seigneur, nous accumulons les dons sur vos autels : célébrant avec l’honneur qui lui est dû, la nativité de celui qui a rendu hommage au Sauveur du monde, avant sa venue, et qui l’a désigné ensuite comme présent, en la personne de notre Seigneur Jésus-Christ, votre Fils.
-$Qui tecum
-
-[Commemoratio Postcommunio]
-!Pro Octava S. Johannis Baptistæ
-Que votre Église, Seigneur, trouve un sujet de joie en la naissance du bienheureux Jean-Baptiste, par qui elle a reconnu l’auteur de sa régénération, Notre-Seigneur Jésus-Christ, votre Fils.
-$Qui tecum

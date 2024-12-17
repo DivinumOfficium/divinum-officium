@@ -1,9 +1,6 @@
 [Rank]
 Feria Quarta Quatuor Temporum Quadragesimæ;;Feria major;;2.1
 
-[Rank] (rubrica 196)
-Feria Quarta Quatuor Temporum Quadragesimæ;;Feria major;;3.9
-
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
@@ -18,10 +15,6 @@ Tot U, Heer, verhef ik mijn ziel. Mijn God, op U vertrouw ik.
 &Gloria
 v. Gedenk uw goedertierenheid, o Heer, en uw barmhartigheid, die van eeuwigheid zijn. Laat onze vijanden ons nooit overheersen. God van Israël, verlos ons uit al onze kwellingen.
 
-[Oratio]
-Wij vragen U, Heer, verhoor goedgunstig onze gebeden en strek uw hand vol majesteit uit tegen alles, wat ons tegenstreeft.
-$Per Dominum
-
 [LectioL1]
 Lezing uit het Boek van de Uittocht
 !Exod 24:12-18
@@ -35,6 +28,10 @@ V. Zie mijn ellende en mijn kwelling en vergeef al mijn zonden.
 
 [OratioL1]
 Wij vragen U, Heer, sla genadig acht op de godsvrucht van uw volk, opdat zij, die hun lichaam door onthouding kastijden, door de vrucht der goede werken naar de geest verkwikt mogen worden.
+$Per Dominum
+
+[Oratio]
+Wij vragen U, Heer, verhoor goedgunstig onze gebeden en strek uw hand vol majesteit uit tegen alles, wat ons tegenstreeft.
 $Per Dominum
 
 [Lectio]

@@ -5,6 +5,19 @@ S. Pontiani Papae et Martyris;;Simplex;;1.1;;vide C4b
 vide C4b;
 
 [Oratio]
-Riguarda, Dio onnipotente, la nostra debolezza e perché il peso del nostro mal operato è grave, ci protegga la gloriosa intercessione del tuo beato Martire e Pontefice Ponziano.
-$Per Dominum
+!Per San Pontiano Papa e Martire
+@Commune/C2c:Oratio:s/N\./Pontiano/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
 
+[Secreta]
+!Per San Pontiano Papa e Martire
+@Commune/C2c:Secreta:s/N\./Pontiano/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
+
+[Postcommunio]
+!Per San Pontiano Papa e Martire
+@Commune/C2c:Postcommunio:s/N\./Pontiáno/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem

@@ -1,16 +1,9 @@
 [Rank]
 S. Ephraem Syri Confessoris et Ecclesiae Doctorem;;Duplex;;3;;vide C5a
 
-[RankNewcal]
-S. Ephraem Syri Confessoris et Ecclesiae Doctorem;;Duplex optional;;2;;vide C5a
-
-[Name]
-Ephraem
-
 [Rule]
 vide C5a;
 Gloria
-
 
 [Comment]
 # 18 VI – Św. Efrema, Diakona, Wyznawcy i Doktora Kościoła
@@ -24,6 +17,9 @@ Msza wspólna nr 20 In medio, z wyjątkiem kolekty.
 ! Wspomnienie
 ! Szaty czerwone
 Święci Marek i Marcelin ponieśli śmierć męczeńską w Rzymie w III wieku.
+
+[Name]
+Ephraem
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -52,20 +48,3 @@ $Per Dominum
 
 [Postcommunio]
 @Commune/C4a:Postcommunio
-
-[Commemoratio Oratio]
-! Wspomnienie śś. Marka i Marcelina
-Spraw, prosimy Cię, wszechmogący Boże, aby od wszelkich niebezpieczeństw uwolniło nas wstawiennictwo świętych Marka i Marcelina, Twoich Męczenników, których narodziny dla nieba obchodzimy.
-$Per Dominum
-
-[Commemoratio Secreta]
-! Wspomnienie śś. Marka i Marcelina
-Poświęć, Panie, złożone Ci dary i za przyczyną świętych Twoich Męczenników Marka i Marcelina daj się nimi przebłagać i bądź nam przychylny.
-$Per Dominum
-
-
-[Commemoratio Postcommunio]
-! Wspomnienie śś. Marka i Marcelina
-Posileni darem zbawiennym, pokornie błagamy Cię, Panie, aby Sakrament, który z radością przyjmujemy, za wstawiennictwem świętych Męczenników Twoich Marka i Marcelina, przyniósł nam odnowienie.
-$Per Dominum
-

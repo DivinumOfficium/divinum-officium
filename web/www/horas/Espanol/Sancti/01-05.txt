@@ -1,47 +1,7 @@
 [Rank]
 In Vigilia Epiphaniæ;;Semiduplex;;4.9;;ex Sancti/01-01
-
-[Rank] (rubrica 196)
-Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
-
-[Rank] (rubrica tridentina)
+(sed rubrica tridentina)
 In Vigilia Epiphaniæ;;Semiduplex;;2.9;;ex Sancti/01-01
-
-[Rule]
-ex Sancti/01-01;
-9 lectiones
-Psalmi Dominica
-Omit preces
-Feria Te Deum
-CPapaM=Telésphorum;
-
-[Commemoratio]
-!Commemoratio S. Telesphori Papæ et Martyris
-@Commune/C2:Oratio1 Gregem
-
-[Invit]
-@Sancti/12-25:Invit
-
-[Lectio1]
-De la Epístola a los Romanos
-!Rom 8:1-4
-1 Nada hay de consiguiente ahora digno de condenación en aquellos que están en Cristo Jesús, y que no siguen la carne. 
-3 Porque lo que era imposible que la ley hiciese, estando como estaba debilitado por la carne, hízolo Dios cuando, habiendo enviado a su Hijo revestido de una carne semejante a la del pecado, y le echó víctima por el pecado, mató así al pecado en la carne, 
-4 a fin de que la justificación de la ley tuviese su cumplimiento en nosotros, que no vivimos conforme a la carne, sino conforme al espíritu.
-
-[Lectio2]
-!Rom 8:5-9
-5 Los que son según la carne, tienden a las cosas carnales; los que son según el espíritu, a las cosas espirituales. 
-6 Porque las tendencias de la carne son muerte, pero las tendencias del espíritu son vida y paz. 
-7 Por lo cual las tendencias de la carne son enemistad con Dios, que no sujetan ni pueden sujetarse a la ley de Dios. 
-8 Los que están en la carne no pueden agradar a Dios.  
-9 Pero vosotros no estáis en la carne, sino en el espíritu, si es que de verdad el Espíritu de Dios habita en vosotros. Pero si alguno no tiene el Espíritu de Cristo, ése no es de Cristo.
-
-[Lectio3]
-!Rom 8:9-11
-9 Si alguno no tiene el Espíritu de Cristo, este tal no es de Jesucristo. 
-10 Mas si Cristo está en vosotros, aunque el cuerpo esté muerto por razón del pecado de Adán, el espíritu vive en virtud de su justificación. 
-11 Y si el Espíritu de aquel Dios, que resucitó a Jesús de la muerte, habita en vosotros, el mismo que ha resucitado a Jesucristo de la muerte dará vida también a vuestros cuerpos mortales, en virtud de su Espíritu que habita en vosotros.
 
 [Lectio4]
 Sermón de San Agustín, Obispo.

@@ -1,9 +1,6 @@
 [Rank]
 S. Clementis Papæ et Martyris;;Duplex;;3;;vide C4b
 
-[Rank] (rubrica 1570)
-S. Clementis Papæ et Martyris;;Semiduplex;;2.2;;vide C2
-
 [Rule]
 OPapaM=Clemens;
 vide C4b;
@@ -17,20 +14,5 @@ Gelukkig de man, die de Heer vreest, en zich in zijn geboden ten zeerste verheug
 &Gloria
 v. De Heer zegt: Mijn woorden, die Ik u in de mond heb gelegd, zullen niet wijken van uw mond, en uw gaven zal Ik aanvaarden op mijn altaar.
 
-[Commemoratio Oratio]
-!Pro S. Felicitate
-Wij vragen U, almachtige God, bewerk, dat wij, die het feest van uw heilige martelares Felicitas vieren, door haar verdiensten en gebeden beschermd mogen worden.
-$Per Dominum
-
 [Lectio]
 @Tempora/Pent23-0
-
-[Commemoratio Secreta]
-!Pro S. Felicitate
-Geef genadig acht, o Heer, op de wensen van uw volk en laat ons gelukkig zijn door de hulp van haar, wier feest Gij ons laat vieren.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Felicitate
-Wij vragen U nederig, almachtige God, dat Gij op voorspraak van uw heiligen uw gaven in ons nog wilt vermeerderen en ons leven richten.
-$Per Dominum

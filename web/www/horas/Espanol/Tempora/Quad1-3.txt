@@ -1,13 +1,11 @@
 [Rank]
 Feria Quarta Quattuor Temporum Quadragesimæ;;Feria major;;2
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196 aut rubrica 1930)
 Feria Quarta Quattuor Temporum Quadragesimæ;;Feria major;;4
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Feria IV. infra Hebdomadam I in Quadragesima;;Feria major;;2
-
-[Rule]
 
 [Lectio1]
 Lectura del santo Evangelio según San Mateo
@@ -18,14 +16,8 @@ Homilía de San Ambrosio, Obispo.
 !Libro 7 sobre San Lucas, cap. 11.
 En la condenación del pueblo judío vemos figurado, lo que sucede en la Iglesia. Los hijos de la Iglesia vienen de todo el universo a reunirse para escuchar las palabras del pacífico Salomón; como los Ninivitas, por la penitencia, o como la reina de Sabá, por el deseo de aprender la sabiduría. Reina es esta Iglesia cuyo reino es indiviso, constituido por diversos pueblos.
 
-[Responsory1]
-@Tempora/Quad1-0:Responsory7
-
 [Lectio2]
 He aquí un gran símbolo de Cristo y de la Iglesia, pero con una gran diferencia. Antes existía sólo la figura; actualmente el misterio se cumple en plena realidad. Allí vemos a Salomón, figura de Jesucristo; aquí, a Jesucristo. Hay dos elementos en la Iglesia: los que no cometen pecados y los que dejan de pecar. Corresponde a la penitencia, destruir el pecado, y a la sabiduría, no cometerlo.
-
-[Responsory2]
-@Tempora/Quad1-0:Responsory8
 
 [Lectio3]
 El milagro de Jonás es figura de la pasión del Señor, y testimonio de la gravedad de los pecados  de los Judíos. Consideremos en las palabras de Jesús la majestad del oráculo y la prueba de su piedad. Al citar el ejemplo de los Ninivitas, les anuncia el castigo y les propone el remedio. Por lo cual los Judíos no deben desesperar del perdón, con tal que quieran hacer penitencia.

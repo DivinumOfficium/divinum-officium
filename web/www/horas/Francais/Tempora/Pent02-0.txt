@@ -1,18 +1,6 @@
 [Rank]
 Dominica II Post Pentecosten infra Octavam Corporis Christi;;Semiduplex I classis;;5.9;;ex Tempora/Pent01-4
 
-[Rank] (rubrica 1960)
-Dominica II Post Pentecosten;;Semiduplex I classis;;5.9
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Corp
-
-[Hymnus Vespera]
-@Tempora/Pent01-4:Hymnus Vespera
-
 [Versum 1]
 V. Il les a nourris de la fleur du froment, alléluia.
 R. Et les a rassasiés de miel pris au rocher, alléluia.
@@ -23,6 +11,10 @@ Le jeune Samuel * servait le Seigneur en présence d'Heli et la parole du Seigne
 [Oratio]
 Faites, Seigneur, que nous ayons toujours la crainte et en même temps l'amour de Votre saint Nom parce que jamais Vous ne cessez de diriger ceux que Vous établissez dans la solidité de Votre amour.
 $Per Dominum.
+
+[Commemoratio]
+!Commemoration de l'Octave du Corps du Christ
+@Tempora/Pent01-4:Oratio
 
 [Lectio1]
 Du premier livre de Samuel
@@ -109,7 +101,3 @@ $Deo gratias
 
 [Ant 3]
 Va vite * sur les places et dans les rues de la ville et constrains d'entrer les pauvres et les débiles, les aveugles et les boiteux, afin que Ma maison soit remplie, alléluia.
-
-[Commemoratio]
-!Commemoration de l'Octave du Corps du Christ
-@Tempora/Pent01-4:Oratio

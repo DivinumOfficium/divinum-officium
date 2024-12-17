@@ -1,14 +1,42 @@
 @Sancti/01-04
 
-[Lectio3]
-@Sancti/01-04::s/\n8 / ¶\n8 /
+[Rule] (rubrica tridentina)
+ex SanctiM/12-28;
+12 lectiones
+Antiphonas horas
+Psalmi dominica
+Lectio1 TempNat
 
-[Capitulum Laudes]
-@SanctiM/01-01
+[Responsory3] (rubrica divino)
+@Sancti/12-28:Responsory1
 
-[Commemoratio 2]
-!Commemoratio S. Titi Episcopi et Confessoris
-@Commune/C4:Oratio proper
-$Oremus
-v. Deus, qui beátum Titum Confessórem tuum atque Pontíficem apostólicis virtútibus decorásti: ejus méritis et intercessióne concéde; ut juste et pie vivéntes in hoc sǽculo, ad cæléstem pátriam perveníre mereámur.
-$Per Dominum
+[Lectio5] (rubrica tridentina)
+@Sancti/01-04:Lectio4: s/Sed .*//s
+
+[Lectio6] (rubrica tridentina)
+@Sancti/01-04:Lectio4: s/.*?(Sed )/$1/s
+
+[Lectio7] (rubrica tridentina)
+@Sancti/01-04:Lectio5
+
+[Lectio8] (rubrica tridentina)
+@Sancti/01-04:Lectio6
+
+[Lectio9] (rubrica tridentina)
+@Sancti/01-04:Lectio7
+
+[Lectio10] (rubrica tridentina)
+@Sancti/01-04:Lectio8
+
+[Lectio11] (rubrica tridentina)
+@Sancti/01-04:Lectio9: s/ Sed.*//s
+
+[Lectio12] (rubrica tridentina)
+@Sancti/01-04:Lectio9: s/.* (Sed)/$1/s
+
+[MM Capitulum] (rubrica divino)
+@Sancti/12-28:Capitulum Sexta
+@CommuneM/C3::2-4
+
+[LectioE]
+@SanctiM/12-28

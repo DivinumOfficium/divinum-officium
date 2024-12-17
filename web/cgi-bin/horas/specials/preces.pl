@@ -28,16 +28,16 @@ sub preces {
 
       if ($r[2] >= 3 || $commemoratio{Rank} =~ /Octav/i || checkcommemoratio(\%commemoratio) =~ /octav/i) {
         $dominicales = 0;
-      }
-    } elsif (@commemoentries) {
-      foreach my $commemo (@commemoentries) {
+      } elsif (@commemoentries) {
+        foreach my $commemo (@commemoentries) {
 
-        # if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
-        my %c = %{officestring('Latin', $commemo, 0)};
-        my @cr = split(";;", $c{Rank});
+          if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
+          my %c = %{officestring('Latin', $commemo, 0)};
+          my @cr = split(";;", $c{Rank});
 
-        if ($cr[2] >= 3 || $c{Rank} =~ /Octav/i || checkcommemoratio(\%c) =~ /octav/i) {
-          $dominicales = 0;
+          if ($cr[2] >= 3 || $c{Rank} =~ /Octav/i || checkcommemoratio(\%c) =~ /octav/i) {
+            $dominicales = 0;
+          }
         }
       }
     }

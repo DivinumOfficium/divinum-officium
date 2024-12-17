@@ -7,30 +7,6 @@ Sanctissimi Rosarii Beatae Máriae Virginis;;Duplex classis;;5;;ex C11
 [Rank] (rubrica innovata)
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex;;3;;ex C11
 
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Mark;
-
-[Commemoratio]
-!S. Marci Papae
-@Commune/C4:Oratio proper Gregem
-!Könyörgés
-Gratiously hear our supplications, O Lord, and for the sake of thy Blessed
-Confessor and Bishop Mark, grant to us in thy mercy both pardon and peace.
-$Per Dominum
-_
-!Commemoratio Ss. Martyrum Sergii, Bacchi, Marcelli et Apuleji
-@Commune/C3:Oratio proper
-$Oremus
-Pause there to come upon us, O Lord, a grace from the blessed and worthy wrestling
-of thine holy Martyrs Sergius, Bacchus, Marcellus, and Apuleius, fanning ever in us
-the fire of the love of thyself.
-$Per Dominum
-
 [Lectio1]
 Olvasmány Jézus Sírák fia könyvéből
 !Sir 24:11-16
@@ -70,9 +46,6 @@ Homily by St Bernard, Abbat (of Clairvaux)
 !Homily on Holy Mary
 To commend His Own love towards us, and to bring to nought the wisdom of men, God was pleased to take flesh of a woman, albeit a virgin, that He might bring like against like, heal by opposites, pluck out the poisonous thorn, and blot out mightily the handwriting of our sin that was against us. Eve was a thorn, Mary is a rose. Eve is a thorn that pierceth, Mary is a rose that charmeth all the senses. Eve was a thorn that fixed death into all, Mary is a rose that bringeth health to all. Mary was a white rose through her virginity, and a red rose through her love. She was white in her flesh, red in her mind; white in that she followed the path of grace, red in that she trod down sin; white by the purity of her affections, red by the mortification of her body; white by her love for God, red by her compassion for her neighbour.
 
-[Lectio9]
-@Sancti/10-07t:Lectio93
-
 [Capitulum Laudes]
 !Sir 24:25; 39:17
 v. Nálam az út és igazság minden kegyelme, nálam az élet és erény minden reménysége: mint a vizfolyások mellé ültetett rózsa, nyiljatok.
@@ -85,9 +58,4 @@ v. Magasra nöttem, mint Libanon hegyén a cedrus, és mint a ciprusfa Sion hegy
 [Capitulum Sexta]
 !Sir 39:19
 v. Virágozzatok, mint a liliom, és illatozzatok kedvesen, és dicsérjétek énekkel, és áldjátok az Urat müveiben.
-$Deo gratias
-
-[Capitulum Nona]
-!Sir 24:17-18
-v. Magasra nöttem, mint Libanon hegyén a czedrus, és mint a cziprusfa Sion hegyén; növekedtem mint a pálma Kádeszben, és mint a rózsaültetvény Jerikóban
 $Deo gratias

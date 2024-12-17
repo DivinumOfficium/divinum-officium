@@ -1,19 +1,15 @@
 @Sancti/10-07
 
-[Rank]
-Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex;;3;;ex C11
+[Rank] (rubrica 1963)
+Beatæ Mariæ Virginis a Rosario;;Duplex;;3;;ex C11
 
 [Responsory Vespera]
 @Sancti/10-07:Responsory Sexta:s/._.*//s
 
-[Hymnus Matutinum]
-@Sancti/10-07:Hymnus Vespera:s/.@.*//s
-_
-@Sancti/10-07:Hymnus Matutinum:s/v. // s/Nat/NatT/
-
 [Lectio94]
 @Sancti/10-07:Lectio7:s/.*_//s s/!.*//s
-@Sancti/10-07:Lectio8
+@Sancti/10-07:Lectio8_1: s/$/~/
+@Sancti/10-07:Lectio8_2
 
 [MM Capitulum]
 @Sancti/10-07:Capitulum Sexta
@@ -25,9 +21,6 @@ _
 
 [Hymnus Laudes]
 @Sancti/10-07::s/Nat/NatT/
-
-[Commemoratio 2]
- 
 
 [Responsory TertiaM]
 V. Sancta Dei Génetrix, semper Virgo Maria.

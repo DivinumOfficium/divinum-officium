@@ -1,9 +1,6 @@
 [Rank]
 In Vigilia S. Laurentii Mart.;;Simplex;;1.5;;vide C2
 
-[Rank] (rubrica 196)
-In Vigilia S. Laurentii Mart.;;Simplex;;3;;vide C2
-
 [Rule]
 vide C2;
 no Gloria
@@ -11,18 +8,14 @@ Suffragium=Maria3;Papa;Ecclesia;;
 
 [Introitus]
 !Ps 111:9
-v. Dispérsit, dedit paupéribus: justítia ejus manet in sǽculum sǽculi: cornu~
-ejus exaltábitur in glória.
+v. Dispérsit, dedit paupéribus: justítia ejus manet in sǽculum sǽculi: cornu ejus exaltábitur in glória.
 !Ps 111:1.
 Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis.
 &Gloria
-v. Dispérsit, dedit paupéribus: justítia ejus manet in sǽculum sǽculi: cornu~
-ejus exaltábitur in glória. Non dicitur Glória in excélsis.
+v. Dispérsit, dedit paupéribus: justítia ejus manet in sǽculum sǽculi: cornu ejus exaltábitur in glória. Non dicitur Glória in excélsis.
 
 [Oratio]
-Adésto, Dómine, supplicatiónibus nostris: et intercessióne beáti Lauréntii~
-Mártyris tui, cujus prævénimus festivitátem; perpétuam nobis misericórdiam~
-benígnus impénde.
+Adésto, Dómine, supplicatiónibus nostris: et intercessióne beáti Lauréntii Mártyris tui, cujus prævénimus festivitátem; perpétuam nobis misericórdiam benígnus impénde.
 $Per Dominum
 
 [Lectio]
@@ -38,47 +31,16 @@ V. Potens in terra erit semen ejus: generátio rectórum benedicétur.
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Matthǽum
 !Matt 16:24-27
-In illo témpore: Dixit Jesus discípulis suis: Si quis vult post me veníre,~
-ábneget semetípsum, et tollat crucem suam, et sequátur me. Qui enim volúerit~
-ánimam suam salvam fácere, perdet eam: qui autem perdíderit ánimam suam propter~
-me, invéniet eam. Quid enim prodest hómini, si mundum univérsum lucrétur, ánimæ~
-vero suæ detriméntum patiátur? Aut quam dabit homo commutatiónem pro ánima sua?~
-Fílius enim hóminis ventúrus est in glória Patris sui cum Angelis suis: et tunc~
-reddet unicuíque secúndum ópera ejus.
+In illo témpore: Dixit Jesus discípulis suis: Si quis vult post me veníre, ábneget semetípsum, et tollat crucem suam, et sequátur me. Qui enim volúerit ánimam suam salvam fácere, perdet eam: qui autem perdíderit ánimam suam propter me, invéniet eam. Quid enim prodest hómini, si mundum univérsum lucrétur, ánimæ vero suæ detriméntum patiátur? Aut quam dabit homo commutatiónem pro ánima sua? Fílius enim hóminis ventúrus est in glória Patris sui cum Angelis suis: et tunc reddet unicuíque secúndum ópera ejus.
 
 [Offertorium]
 !Job 16:20
-Orátio mea munda est: et ídeo peto, ut detur locus voci meæ in cœlo: quia ibi~
-est judex meus, et cónscius meus in excélsis: ascéndat ad Dóminum deprecátio~
-mea.
-
-[Secreta]
-Hóstias, Dómine, quas tibi offérimus, propítius súscipe: et, intercedénte beáto~
-Lauréntio Mártyre tuo, víncula peccatórum nostrorum absólve.
-$Per Dominum
+Orátio mea munda est: et ídeo peto, ut detur locus voci meæ in cœlo: quia ibi est judex meus, et cónscius meus in excélsis: ascéndat ad Dóminum deprecátio mea.
 
 [Communio]
 !Matt 16:24
-Qui vult veníre post me, ábneget semetípsum, et tollat crucem suam, et sequátur~
-me.
+Qui vult veníre post me, ábneget semetípsum, et tollat crucem suam, et sequátur me.
 
 [Postcommunio]
-Da, quǽsumus, Dómine, Deus noster: ut, sicut beáti Lauréntii Mártyris tui~
-commemoratióne, temporáli gratulámur offício; ita perpétuo lætémur aspéctu.
-$Per Dominum
-
-[Commemoratio Oratio]
-!Pro S. Romano Martyre
-@Commune/C2a:Oratio:s/N\./Romano/
-
-[Commemoratio Secreta]
-!Pro S. Romano Martyre
-Munéribus nostris, quǽsumus, Dómine, precibúsque suscéptis: et cœléstibus nos~
-munda mysteriis, et cleménter exáudi.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Romano Martyre
-Quǽsumus, omnípotens Deus: ut, qui cœlestia aliménta percépimus, intercedénte~
-beáto Románo Mártyre tuo, per hæc contra ómnia advérsa muniámur.
+Da, quǽsumus, Dómine, Deus noster: ut, sicut beáti Lauréntii Mártyris tui commemoratióne, temporáli gratulámur offício; ita perpétuo lætémur aspéctu.
 $Per Dominum

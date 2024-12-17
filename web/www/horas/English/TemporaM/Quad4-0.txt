@@ -1,3 +1,5 @@
+[Ant Matutinum 3N]
+The Lord filled up five thousand men with five loaves of bread and two fish.;;269;270;271
 
 [Lectio5]
 @Tempora/Quad4-0:Lectio4:s/To the .*//s
@@ -9,12 +11,8 @@
 [Lectio7]
 @Tempora/Quad4-0:Lectio5:s/.* What was /What was /s
 
-[Ant Matutinum 3N]
-The Lord filled up five thousand men with five loaves of bread and two fish.;;269;270;271
-
 [Lectio10]
 @Tempora/Quad4-0:Lectio8:s/God worketh .*//s
 
 [Lectio11]
 @Tempora/Quad4-0:Lectio8:s/.* God worketh /God worketh /s
-

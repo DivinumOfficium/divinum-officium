@@ -1,12 +1,6 @@
 [Rank]
 Feria Quarta Quatuor Temporum Quadrigesimæ;;Feria major;;2
 
-[Rank1960]
-Feria Quarta Quatuor Temporum Quadrigesimæ;;Feria major;;3
-
-[RankNewcal]
-Feria IV. infra Hebdomadam I in Quadragesima;;Feria major;;2
-
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
@@ -28,10 +22,6 @@ Ku Tobie wznoszę duszę moją, Panie, Boże mój, Tobie ufam: niech nie doznam 
 &Gloria
 v. Wspomnij na zmiłowania Twe, Panie, na miłosierdzie, które trwa od wieków, niech nie panują nad nami nasi wrogowie. Wybaw nas, Boże Izraela, ze wszystkich ucisków naszych.
 
-[Oratio]
-Wysłuchaj łaskawie, prosimy Cię, Panie, nasze modlitwy i przeciw wszystkiemu, co jest nam wrogie, wyciągnij prawicę Twego majestatu.
-$Per Dominum
-
 [LectioL1]
 Czytanie z Księgi Wyjścia.
 !Wj 24:12-18
@@ -46,6 +36,10 @@ V. Wejrzyj na nędzę moją i na mój trud i odpuść wszystkie me występki.
 
 [OratioL1]
 Wejrzyj łaskawie, prosimy, Panie, na oddanie Twojego ludu, aby umartwiając ciało postem, wzmocnił ducha owocem dobrych uczynków.
+$Per Dominum
+
+[Oratio]
+Wysłuchaj łaskawie, prosimy Cię, Panie, nasze modlitwy i przeciw wszystkiemu, co jest nam wrogie, wyciągnij prawicę Twego majestatu.
 $Per Dominum
 
 [Lectio]
@@ -88,6 +82,3 @@ v. Módlmy się.
 v. Pochylcie głowy wasze przed Bogiem.
 V. Oświeć, Panie, umysły nasze blaskiem Twej światłości, abyśmy mogli wiedzieć, co należy czynić, i zdołali wykonać to, co prawe.
 $Per Dominum
-
-
-

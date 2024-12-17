@@ -1,9 +1,6 @@
 [Rank]
 Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;5;;ex Pasc7-0
 
-[Rank] (rubrica 196)
-Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
 [Rule]
 no Gloria
 (rubrica 1960 et missa brevior) LectioL1
@@ -20,10 +17,6 @@ v. De liefde van God is in onze harten uitgestort, alleluia, door zijn Geest, di
 Loof, mijn ziel, de Heer, en al wat in mij is, zijn heilige Naam.
 &Gloria
 v. De liefde van God is in onze harten uitgestort, alleluia, door zijn Geest, die in ons woont, alleluia, alleluia.
-
-[Oratio]
-Wij vragen U, Heer, stort genadig de Heilige Geest in onze harten, die ons door zijn wijsheid heeft geschapen en door zijn voorzienigheid bestuurt.
-$Per Dominum eiusdem
 
 [LectioL1]
 Lezing uit de Profeet Joël
@@ -108,6 +101,10 @@ v. Eer aan God in den hoge, en op aarde vrede aan de mensen van goede wil. Wij l
 
 [OratioL5]
 @Tempora/093-6
+
+[Oratio]
+Wij vragen U, Heer, stort genadig de Heilige Geest in onze harten, die ons door zijn wijsheid heeft geschapen en door zijn voorzienigheid bestuurt.
+$Per Dominum eiusdem
 
 [Lectio]
 Lezing uit de Brief van de heilige Apostel Paulus aan de Romeinen

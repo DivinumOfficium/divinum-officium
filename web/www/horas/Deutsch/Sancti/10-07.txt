@@ -7,14 +7,6 @@ Fest des hochheiligen Rosenkranzes der heiligen Jungfrau Maria;;Duplex 2 classis
 [Rank] (rubrica innovata)
 Fest des hochheiligen Rosenkranzes der heiligen Jungfrau Maria;;Duplex;;3;;ex C11
 
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Marcus;
-
 [Ant Vespera]
 Wer ist denn diese, * so lieblich wie eine Taube, wie eine Rose, die eingepflanzt ist am Wasserbache?;;109
 O Jungfrau voll von Macht * wie Davids Waffenlager, an dem tausend Schilde hängen, alles als Bewaffnung der Soldaten.;;112
@@ -58,13 +50,13 @@ R. Auf dass wir würdig werden der Verheißungen Christi.
 Selig bist du, * Jungfrau Maria, Mutter Gottes, die du dem Herrn geglaubt hast; an dir ist alles in Erfüllung gegangen, was dir gesagt worden; lege doch Fürsprache für uns ein beim Herrn, unserm Gott.
 
 [Oratio]
-O Gott, dessen eingeborener Sohn durch sein Leben, seinen Tod und seine Auferstehung uns das Glück der ewigen Seligkeit verschafft hat, gewähre uns, wir bitten dich, die Gnade, dass wir, die wir diese geheimnisvollen Tatsachen beim hochheiligen Rosenkranz zu Ehren der heiligen Jungfrau Maria betrachten, das nachahmen, was sie in sich enthalten, und das erreichen, was sie verbergen.
+O Gott, dessen eingeborener Sohn durch sein Leben, seinen Tod und seine Auferstehung uns das Glück der ewigen Seligkeit verschafft hat, gewähre uns, wir bitten dich, die Gnade, daß wir, die wir diese geheimnisvollen Tatsachen beim hochheiligen Rosenkranz zu Ehren der heiligen Jungfrau Maria betrachten, das nachahmen, was sie in sich enthalten, und das erreichen, was sie verbergen.
 $Per eumdem
 
 [Invit]
 Die Festlichkeit des Rosenkranzes der Jungfrau Maria lasst uns feiern: * Christus, ihren Sohn, lasst uns als Herrn anbeten.
 
-[Hymnus Matutinum]
+[Hymnus Matutinum_]
 v. Dort auf dem ölbaumreichen Berg
 Sinkt betend unser Heiland hin,
 Bleich, zitternd, ringend mit dem Tod;
@@ -203,10 +195,6 @@ R. Ego quasi vitis fructificávi suavitátem odoris,
 V. Ego mater pulchræ dilectiónis, et timoris, et agnitiónis, et sanctæ spei.
 R. Et flores mei fructus honoris et honestátis.
 
-[Lectio8]
-!Aus der Predigt über den Aquädukt.
-Verbum caro factum est, et hábitat jam in nobis. Habitat in memória nostra, hábitat in cogitatióne, quia usque ad ipsam descéndit imaginatiónem. Quonam modo, inquis? Nimirum jacens in præsepio, in virginali gremio cubans, in monte prædicans, in oratióne pernoctans, in cruce pendens, in morte pallens, liber inter mórtuos et in inférno ímperans, seu etiam tertia die resurgens, et Apóstolis loca clavórum, victóriæ signa, demonstrans, novíssime coram eis cæli secreta conscendens. Quid horum non vere, non pie, non sancte cogitátur? Quidquid horum cogito, Deum cogito; et per ómnia est Deus meus. Hæc ego meditari dixi sapiéntiam, et prudéntiam judicávi erúctare memóriam suavitátis; quóniam in hujuscémodi nucleis virga sacerdotalis copiosa produxit, quam, in supernis hauriens, ubérius nobis Maria refudit. In supernis plane et ultra Angelos, quæ Verbum ex ipso Patris corde suscépit.
-
 [Responsory8]
 R. Surge, propera, amica mea; jam enim hiems tránsiit, imber ábiit et recéssit, 
 * Flores apparuérunt in terra nostra.
@@ -214,9 +202,6 @@ V. Dóminus dabit benignitátem, et terra nostra dabit fructum suum.
 R. Flores apparuérunt in terra nostra.
 &Gloria
 R. Flores apparuérunt in terra nostra.
-
-[Lectio9]
-@Sancti/10-07t:Lectio93
 
 [Ant Laudes]
 Freu dich, * Jungfrau Mutter; auferstanden ist Christus aus dem Grabe.
@@ -265,19 +250,6 @@ R. Und hat sie wohnen lassen in seinem Zelt.
 [Ant 2]
 Das heutige Hochfest * des hochheiligen Rosenkranzes der Gottesmutter Maria wollen wir in Andacht feiern, damit diese für uns Fürsprache halte beim Herrn Jesus Christus.
 
-[Commemoratio 2]
-!Kommemoration des hl. Papstes Markus
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Erhöre, o Herr, unsere Bitten: und auf die Fürsprache deines heiligen Bekenners und Bischofs Markus gewähre uns gnädig Verzeihung und Freundschaft mit dir.
-$Per Dominum
-_
-!Kommemoration der hl. Martyrer Sergius, Bacchus, Marzellus und Apulejus
-@Commune/C3:Oratio proper
-$Oremus
-Deiner heiligen Martyrer, o Herr, Sergius, Bacchus, Marzellus und Apelejus selige Verdienste lass uns förderlich sein: und sie mögen uns in der Liebe zu dir zum Glühen bringen.
-$Per Dominum
-
 [Lectio Prima]
 !Sir 24,17-18
 v. Ich bin wie eine auf dem Libanon hochwachsende Zeder und wie eine Zypresse auf dem Berg Sion: wie eine in die Höhe ragende Palme in Kadesch, und wie ein blühender Rosenstrauch in Jericho.
@@ -308,10 +280,6 @@ R. Nach der Geburt bist du, o Jungfrau, * unversehrt geblieben.
 _
 V. Gar schön bist du geworden und lieblich.
 R. Durch das, was dein liebstes Tun ist, o heilige Gottesmutter.
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
 
 [Responsory Nona]
 R.br. Gar schön bist du geworden * und lieblich.

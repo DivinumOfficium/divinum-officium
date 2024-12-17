@@ -7,14 +7,6 @@ Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex 2 classis;;5;;ex C11
 [Rank] (rubrica innovata)
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex;;3;;ex C11
 
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Marco;
-
 [Ant Vespera]
 Chi è costei * bella come una colomba, come una rosa piantata in riva alle acque?;;109
 Vergine potente, * è come la torre di David; mille scudi pendono da essa, tutta l'armatura dei forti.;;112
@@ -48,11 +40,7 @@ la Madre lieta ritrova d'un tratto,
 mentre spiega ai dottori 
 cose loro ignote.
 _
-O Gesù, sia gloria a te, 
-che sei nato dalla Vergine, 
-insieme col Padre e collo Spirito Santo, 
-per i secoli eterni. 
-Amen.
+@Psalterium/Doxologies:Nat
 
 [Versum 1]
 V. Regina del sacratissimo Rosario, prega per noi.
@@ -68,7 +56,7 @@ $Per eumdem
 [Invit]
 Celebriamo la solennità del Rosario della Vergine Maria: * Adoriamo Cristo Signore suo Figlio.
 
-[Hymnus Matutinum]
+[Hymnus Matutinum_]
 v. Sul monte degli olivi 
 il Redentore prega prosteso, 
 è triste, trema, vien meno, 
@@ -94,11 +82,7 @@ innocente, fra due scellerati,
 pregando pei suoi carnefici, 
 spira dopo versata l'ultima goccia di sangue.
 _
-O Gesù, sia gloria a te, 
-che sei nato dalla Vergine, 
-insieme col Padre, e collo Spirito Santo, 
-per i secoli eterni. 
-Amen.
+@Psalterium/Doxologies:Nat
 
 [Ant Matutinum]
 L'Angelo Gabriele * recò l'annunzio a Maria: ed ella divenne madre per opera dello Spirito Santo.;;8
@@ -211,9 +195,12 @@ R. lo come la vite ho dato fioti di soave odore,
 V. Io sono la madre del bell'amore, del timore, della scienza, e della santa speranza. 
 R. E i miei fiori han dato frutti di onore e di ricchezza.
 
-[Lectio8]
+[Lectio8_1]
 !Sermone sull'Acquedotto
-Il Verbo s'è fatto uomo ed  abita in mezzo a noi Abita nella nostra memoria, abita nel pensiero, perché egli discende fino alla stesa immaginazione. In che modo, dici? Cioè giacendo nella mangiatoia, riposando in un seno verginale, predicando sulla montagna, passando la notte nella preghiera, pendendo dalla croce, sfigurato nella morte, mostrandosi «libero fra i morti» (Ps. 87,6) e imperando sull'inferno, ed anche risuscitando il terzo giorno, mostrando agli Apostoli nelle tracce dei chiodi i segni della vittoria, infine salendo a vista di essi nell'alto dei cieli. Che cosa di tutto ciò non ispira pensieri veri, pii e santi? Qualunque cosa ripensi di ciò, io penso a Dio; e in tutto egli è il mio Dio. Meditare ciò, secondo me, è sapienza, e, a mio giudizio, è prudenza rievocarne il ricordo; la cui dolcezza è come il frutto di mandarlo prodotto in abbondanza dalla verga d'Aronne, e che Maria è andata a cogliere in cielo per riversarlo a profusione su di noi. Nelle altezze infatti e al disopra degli Angeli, Maria ha ricevuto il Verbo dal seno del Padre medesimo.
+Il Verbo s'è fatto uomo ed  abita in mezzo a noi Abita nella nostra memoria, abita nel pensiero, perché egli discende fino alla stesa immaginazione. In che modo, dici? Cioè giacendo nella mangiatoia, riposando in un seno verginale, predicando sulla montagna, passando la notte nella preghiera, pendendo dalla croce, sfigurato nella morte, mostrandosi «libero fra i morti» (Ps. 87,6) e imperando sull'inferno, ed anche risuscitando il terzo giorno, mostrando agli Apostoli nelle tracce dei chiodi i segni della vittoria, infine salendo a vista di essi nell'alto dei cieli. Che cosa di tutto ciò non ispira pensieri veri, pii e santi?
+
+[Lectio8_2]
+Qualunque cosa ripensi di ciò, io penso a Dio; e in tutto egli è il mio Dio. Meditare ciò, secondo me, è sapienza, e, a mio giudizio, è prudenza rievocarne il ricordo; la cui dolcezza è come il frutto di mandarlo prodotto in abbondanza dalla verga d'Aronne, e che Maria è andata a cogliere in cielo per riversarlo a profusione su di noi. Nelle altezze infatti e al disopra degli Angeli, Maria ha ricevuto il Verbo dal seno del Padre medesimo.
 
 [Responsory8]
 R. Sorgi, affrettati, diletta mia, perché l'inverno è già passato, la pioggia è cessata e sparita, 
@@ -222,9 +209,6 @@ V. Il Signore darà la sua grazia, e la nostra terra darà il suo frutto.
 R. I fiori sono apparsi sulla nostra terra.
 &Gloria
 R. I fiori sono apparsi sulla nostra terra.
-
-[Lectio9]
-@Sancti/10-07t:Lectio93
 
 [Ant Laudes]
 Rallegrati, * Vergine Maria; Cristo è risuscitato dal sepolcro.
@@ -277,19 +261,6 @@ R. E l'ha fatta abitare nella sua dimora.
 [Ant 2]
 Celebriamo quest'oggi * con devozione la solennità dei sacratissimo Rosario della Madre di Dio Maria, affinch'ella interceda per noi presso il Signore Gesù Cristo.
 
-[Commemoratio 2]
-!Commemorazione di S. Marco Papa
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Esaudisci, o Signore, le nostre preghiere: e, per intercessione del tuo beato Confessore e Papa Marco, accordaci benigno il perdono e la pace,
-$Per Dominum
-_
-!Commemorazione dei Ss. Martiri Sergio, Bacco, Marcello ed Apuleio
-@Commune/C3:Oratio proper
-$Oremus
-Ci accompagnino, o Signore, i ricchi meriti dei tuoi santi Martiri Sergio, Bacco, Marcello ed Apuleio: e ci rendano sempre ferventi nel tuo amore.
-$Per Dominum
-
 [Lectio Prima]
 !Sir 24:17-18
 v. Mi elevai come il cedro in sul Libano, e come il cipresso sul monte di Sion: mi elevai come la palma in Cades, e come la pianta di rosa in Gerico.
@@ -320,11 +291,6 @@ R. Dopo il parto, o Vergine, * Sei rimasta intatta.
 _
 V. Bella sei tu e soave.
 R. Nelle tue delizie, o santa Madre di Dio.
-
-[Capitulum Nona]
-!Sir 24:17-18
-v. Mi elevai come il cedro in sul Libano, e come il cipresso sul monte di Sion: mi elevai come la palma in Cades, e come la pianta di rosa in Gerico.
-$Deo gratias
 
 [Responsory Nona]
 R.br. Bella sei tu * E soave.

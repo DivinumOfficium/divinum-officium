@@ -1,5 +1,8 @@
 @Sancti/12-08o
 
+[Rank]
+Conceptione Beatæ Mariæ Virginis;;Duplex majus;;4;;vide C11
+
 [Rule]
 ex C11;
 12 lectiones
@@ -84,20 +87,20 @@ V. Cum jucunditate, Conceptionem sanctæ Mariæ solembiter celebremus.
 R. Ut ipsa intercedat pro nobis ad Dominum.
 
 [Lectio9]
-@Sancti/09-13:Lectio7:s/Nam illa .*//s
+@Sancti/09-13bmv:Lectio7:s/Nam illa .*//s
 
 [Responsory9]
 @Sancti/07-02:Responsory7
 
 [Lectio10]
-@Sancti/09-13:Lectio7:s/.* Nam illa/Nam illa/s s/$/~/
-@Sancti/09-13:Lectio8:s/Neque .*//s
+@Sancti/09-13bmv:Lectio7:s/.* Nam illa/Nam illa/s s/$/~/
+@Sancti/09-13bmv:Lectio8:s/Neque .*//s
 
 [Responsory10]
 @Sancti/12-08:Responsory8
 
 [Lectio11]
-@Sancti/09-13:Lectio8:s/.* Neque/Neque/s
+@Sancti/09-13bmv:Lectio8:s/.* Neque/Neque/s
 
 [Responsory11]
 R. Conceptionem hodiernam perpetuæ virginis Dei genitricis Mariæ solemniter celebremus:
@@ -106,7 +109,7 @@ V. Regali ex progenie Maria exorta refulget.
 R. Qua celsitudo throni processit. 
 
 [Lectio12]
-@Sancti/09-13:Lectio9
+@Sancti/09-13bmv:Lectio9
 
 [Responsory12]
 R. Sancta et immaculata virginitas, quibus te laudibus efferam nescio:

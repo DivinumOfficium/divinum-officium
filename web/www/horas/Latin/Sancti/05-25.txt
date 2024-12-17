@@ -1,27 +1,18 @@
 [Rank]
 S. Gregorii VII Papæ et Confessoris;;Duplex;;3;;vide C4
+(sed rubrica 1930 aut rubrica 1963)
+S. Gregorii VII Papæ et Confessoris O. N.;;Duplex;;3;;vide C4
 
 [Rule]
 vide C4;
 9 lectiones
-CPapaM=Urbánum;
+(commune Summorum Pontificum) In 3 Nocturno lectiones ex commune 2 loco
 
 [Ant 1]
 @Commune/C4
 
 [Oratio]
 Deus, in te sperántium fortitúdo, qui beátum Gregórium Confessórem tuum atque Pontíficem, pro tuénda Ecclésiæ libertáte, virtúte constántiæ roborásti: da nobis, ejus exémplo et intercessióne, ómnia adversántia fórtiter superáre.
-$Per Dominum
-
-[Commemoratio]
-!Commemoratio S. Urbani I, Papæ et Martyris
-@Commune/C2:Oratio Gregem
-
-[Commemoratio] (rubrica 1960)
-!Commemoratio S. Urbani I, Papæ et Martyris
-@Commune/C2:Oratio proper
-$Oremus
-v. Deus, qui Ecclésiam tuam, in apostólicæ petræ soliditáte fundátam, ab infernárum éruis terróre portárum: præsta, quǽsumus; ut, intercedénte beáto Urbáno Mártyre tuo atque Summo Pontífice, in tua veritáte persístens, contínua securitáte muniátur.
 $Per Dominum
 
 [Lectio4]
@@ -36,18 +27,6 @@ Dum Missárum solemnia perágeret, visa est viris piis columba e cælo delapsa, 
 [Lectio94]
 Gregórius Papa séptimus, ántea Hildebrándus, Suánæ in Etrúria natus, doctrína, sanctitáte, omníque virtútum génere cum primis nóbilis, mirífice univérsam Dei Ecclésiam illustrávit. Adoléscens religiósi hábitum índuit in Cluniacénsi monastério, tantóque pietátis ardóre Deo desérviit, ut a sanctis ejúsdem cœnóbii pátribus prior fúerit eléctus. Póstea factus abbas monastérii sancti Pauli extra muros Urbis, ac deínde creátus Románæ Ecclésiæ cardinális, sub Summis Pontifícibus Leóne nono, Victóre secúndo, Stéphano nono, Nicoláo secúndo et Alexándro secúndo, præcípuis munéribus et legatiónibus perfúnctus est. Mórtuo Alexándro secúndo, unanímiter Summus Póntifex eléctus, ecclesiásticæ libertátis propugnátor ac defénsor acérrimus éxstitit; quaprópter multa passus, et Roma discédere coáctus est. Postréma ejus moriéntis verba fuére: Diléxi justítiam et odívi iniquitátem, proptérea mórior in exsílio. Migrávit in cælum, anno salútis millésimo octogésimo quinto, ejúsque corpus in cathedráli basílica Salernitána honorífice cónditum est.
 &teDeum
-
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
-
-[Lectio93]
-@Sancti/05-25o
 
 [Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
 @Commune/C4:Ant 3 summi Pontificis

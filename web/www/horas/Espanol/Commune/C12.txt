@@ -4,10 +4,6 @@ Officium parvum Beatae Mariae Virginis
 [Rank]
 Officium parvum Beatae Mariae Virginis;;Simplex;;1;;ex C11
 
-[Oratio 2]
-v. Dios, que quisiste que a la palabra del Ángel se encarnase tu Verbo en el seno de la bienaventurada Virgen María: haz, te suplicamos, que cuantos creemos que es verdaderamente Madre de Dios, seamos ayudados delante de ti con su intercesión.
-$Per eumdem
-
 [Commemoratio]
 !Conmemoración de los Santos
 Ant. Santos todos del Señor, dignaos interceder por nuestra salvación y por la de todos los hombres.
@@ -20,7 +16,6 @@ $Per Dominum
 (sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 
 [Pre oratio]
-
 #Oratio
 _
 v. Señor, ten piedad. Cristo, ten piedad. Señor, ten piedad.
@@ -28,20 +23,24 @@ v. Señor, ten piedad. Cristo, ten piedad. Señor, ten piedad.
 &Dominus_vobiscum
 $Oremus
 
-[Capitulum Completorium]
-!Sir 24:24
-v. Yo soy la Madre del amor hermoso, y del temor, y del conocimiento y de la santa esperanza.
-$Deo gratias
+[Hymnus minor]
+
+#Hymnus
+v. Acuérdate, oh Creador de todas las cosas, 
+que un día tomaste, al nacer 
+del seno de una Virgen sagrada, 
+la forma de nuestro cuerpo.
 _
-V. Ruega por nosotros, santa Madre de Dios.
-R. Para que seamos dignos de las promesas de Cristo.
-
-[Ant Completorium]
-Ant. Bajo tu amparo * nos ponemos, santa Madre de Dios: no desprecies las súplicas que te dirigimos en nuestras necesidades; más líbranos siempre de todo peligro, Virgen gloriosa y bendita.
-
-[Oratio Completorium]
-v. Te suplicamos, Señor, que nos proteja la gloriosa intercesión de la bienaventurada, y gloriosa siempre Virgen María, y que nos lleve a la vida eterna.
-$Per Dominum
+Oh María, Madre de la gracia, 
+dulce Madre de misericordia, 
+protégenos del enemigo maligno, 
+y recíbenos en la hora de la muerte.
+_
+Gloria a ti, oh Jesús, nacido de la Virgen, 
+juntamente con el Padre 
+y el Espíritu Santo, 
+por los siglos de los siglos.
+Amén.
 
 [Lectio1]
 !Sir 24:11-13
@@ -88,24 +87,9 @@ Hermosa eres * y graciosa hija de Jerusalén, terrible como un ejército formado
 v. Al verla las hijas de Sión, la proclamaron bienaventurada; y reinas cantaron sus alabanzas.	
 $Deo gratias
 
-[Hymnus minor]
-
-#Hymnus
-v. Acuérdate, oh Creador de todas las cosas, 
-que un día tomaste, al nacer 
-del seno de una Virgen sagrada, 
-la forma de nuestro cuerpo.
-_
-Oh María, Madre de la gracia, 
-dulce Madre de misericordia, 
-protégenos del enemigo maligno, 
-y recíbenos en la hora de la muerte.
-_
-Gloria a ti, oh Jesús, nacido de la Virgen, 
-juntamente con el Padre 
-y el Espíritu Santo, 
-por los siglos de los siglos.
-Amén.
+[Oratio 2]
+v. Dios, que quisiste que a la palabra del Ángel se encarnase tu Verbo en el seno de la bienaventurada Virgen María: haz, te suplicamos, que cuantos creemos que es verdaderamente Madre de Dios, seamos ayudados delante de ti con su intercesión.
+$Per eumdem
 
 [Capitulum Prima]
 !Cant 6:9
@@ -131,3 +115,18 @@ $Qui tecum
 [Verse Nona]
 V. Después del parto, oh Virgen, sin mancha permaneciste. 
 R. Madre de Dios, intercede por nosotros.
+
+[Ant Completorium]
+Ant. Bajo tu amparo * nos ponemos, santa Madre de Dios: no desprecies las súplicas que te dirigimos en nuestras necesidades; más líbranos siempre de todo peligro, Virgen gloriosa y bendita.
+
+[Capitulum Completorium]
+!Sir 24:24
+v. Yo soy la Madre del amor hermoso, y del temor, y del conocimiento y de la santa esperanza.
+$Deo gratias
+_
+V. Ruega por nosotros, santa Madre de Dios.
+R. Para que seamos dignos de las promesas de Cristo.
+
+[Oratio Completorium]
+v. Te suplicamos, Señor, que nos proteja la gloriosa intercesión de la bienaventurada, y gloriosa siempre Virgen María, y que nos lleve a la vida eterna.
+$Per Dominum

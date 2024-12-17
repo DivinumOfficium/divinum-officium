@@ -1,42 +1,32 @@
 [Rank]
-In Octava Ss. Innocentium.;;Simplex;;1.4;;vide Sancti/12-28
-
-[Rank] (rubrica 196 aut rubrica 1955)
-Die Quarta Januarii;;Feria;;1.2;;vide Sancti/01-01
+In Octava Ss. Innocentium;;Simplex;;1.4;;vide Sancti/12-28
+(sed rubrica tridentina)
+In Octava Ss. Innocentium;;Duplex;;3.1;;ex Sancti/12-28
 
 [Rule]
 vide Sancti/12-28;
 Feria Te Deum
 Comkey=70
 9 lectiones
+Lectio1 TempNat
 
-[Lectio1]
-De Epístola ad Romános
-!Rom 7:1-3
-1 An ignorátis, fratres, (sciéntibus enim legem loquor) quia lex in hómine dominátur, quanto témpore vivit? 
-2 Nam quæ sub viro est múlier, vivénte viro, alligáta est legi: si autem mórtuus fúerit vir ejus, solúta est a lege viri. 
-3 Igitur, vivénte viro, vocábitur adúltera si fúerit cum álio viro: si autem mórtuus fúerit vir ejus, liberáta est a lege viri, ut non sit adúltera si fúerit cum álio viro.
+[Rule] (rubrica tridentina)
+ex Sancti/12-28;
+9 lectiones
+Psalmi Dominica
+Antiphonas Horas
+Feria Te Deum
+Psalm5 Vespera3=115
+Lectio1 TempNat
 
-[Responsory1]
-@Sancti/12-25:Responsory6
+[Responsory1] (rubrica tridentina)
+@Sancti/12-28
 
-[Lectio2]
-!Rom 7:4-6
-4 Itaque, fratres mei, et vos mortificáti estis legi per corpus Christi: ut sitis altérius, qui ex mórtuis resurréxit, ut fructificémus Deo. 
-5 Cum enim essémus in carne, passiónes peccatórum, quæ per legem erant, operabántur in membris nostris, ut fructificárent morti. 
-6 Nunc autem solúti sumus a lege mórtis, in qua detinebámur, ita ut serviámus in novitáte spíritus, et non in vetustáte lítteræ.
+[Responsory2] (rubrica tridentina)
+@Sancti/12-28
 
-[Responsory2]
-@Sancti/01-01:Responsory8
-
-[Lectio3]
-!Rom 7:7-9
-7 Quid ergo dicémus? lex peccátum est? Absit. Sed peccátum non cognóvi, nisi per legem: nam concupiscéntiam nesciébam, nisi lex díceret: Non concupísces. 
-8 Occasióne autem accépta, peccátum per mandátum operátum est in me omnem concupiscéntiam. Sine lege enim peccátum mórtuum erat. 
-9 Ego autem vivébam sine lege aliquándo. Sed cum venísset mandátum, peccátum revíxit.
-
-[Responsory3]
-@Sancti/01-01:Responsory3
+[Responsory3] (rubrica tridentina)
+@Sancti/12-28
 
 [Lectio4]
 Sermo sancti Augustíni Epíscopi
@@ -65,9 +55,9 @@ Verum ille nec per ista quidem factus est ségnior, sed obedívit libénter, et 
 Vidéndo quippe sanctus Joseph grávidam Vírginem, in conturbatiónem íncidit máximam: sed ádfuit repénte Angelus, timórem prorsus exstínguens. Deínde videns púerum natum, máxima exsultatióne replétus est: sed rursus huic étiam gáudio perículum grande succéssit, cum tota útique cívitas turbarétur, ipse rex fúreret, et ad necem púerum quǽreret. Sed et hunc mœrórem alia rursus lætítia subsecúta est, apparítio vidélicet stellæ, et adorátio Magórum. Post hanc quoque jucunditátem íterum perículum, iterúmque formído. Quærit, inquit, Heródes ánimam púeri, et fúgere necésse est, et in longínqua transíre.
 &teDeum
 
-[Lectio93]
+[Lectio93] (rubrica divino)
 @:Lectio4
 &teDeum
 
-[Capitulum Laudes] (rubrica 196)
-@Sancti/01-01
+[Ant Vespera 3] (rubrica tridentina)
+@Sancti/12-28:Ant Laudes

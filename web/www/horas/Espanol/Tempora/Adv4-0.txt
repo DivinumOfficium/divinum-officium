@@ -1,19 +1,8 @@
 [Rank]
 Dominica IV Adventus;;Semiduplex;;5.6
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 Dominica IV Adventus;;Semiduplex;;6
-
-[Rule]
-9 lectiones
-Antiphonas horas
-
-[Ant Laudes]
-Tocad la trompeta * en Sión, porque está cerca el día del Señor. Vendrá a salvarnos. Aleluya, aleluya.
-Vendrá * el deseado de todos los pueblos y se llenará de gloria la casa del Señor. Aleluya.
-Lo torcido * se enderece, lo escabroso se iguale. Ven, Señor, no tardes. Aleluya.
-El Señor viene; * salid a su encuentro aclamando; grande es su imperio, su reino no tendrá fin. Dios fuerte, Dominador, Príncipe de la paz. Aleluya, aleluya.
-Señor, tu palabra omnipotente * vendrá del trono real. Aleluya.
 
 [Oratio]
 Despierta tu poder, Señor; ven a salvarnos y a ayudarnos; que la acción de tu gracia adelante la salvación que retardan nuestros pecados.
@@ -28,7 +17,8 @@ Del Profeta Isaías
 4 Decid a los apocados de corazón: ¡Valor! No temáis, he ahí nuestro Dios. Viene la venganza, viene la retribución de Dios, viene El mismo, y os salvará, 
 5 Entonces se abrirán los ojos de los ciegos, se abrirán los oídos de los sordos. 
 6 Entonces saltará el rengo como un ciervo, y la lengua de los mudos cantará gozosa. Porque brotarán aguas en el desierto, y torrentes en la estepa. 
-7 Y la tierra abrasada se convertirá en estanque, y el suelo árido en fuentes.  	
+7 Y la tierra abrasada se convertirá en estanque, y el suelo árido en fuentes.
+
 [Responsory1]
 R. Tocad en Sion la trompeta, llamad a las naciones, anunciad a los pueblos, y decidles: 
 * He aquí que el Dios Salvador nuestro llegará. 
@@ -53,7 +43,7 @@ R. Y éste será la esperanza de las naciones.
 1 Enmudeced, islas, ante mí, y renueven los pueblos su fuerza, acérquense y hablen, entremos en juicio. 
 2 ¿Quién ha suscitado desde el levante a aquel a quien la justicia le sale al encuentro a su paso? ¿Quién entrega ante él las naciones y abate los reyes? Su espada los reduce a polvo, y sus arcos los dispersa como brizna de paja. 
 3 Los persigue, pasa en paz por senda en que sus pies no habían entrado. 
-4 ¿Quién lo ha hecho y realizado? El que desde el principio llamó a las generaciones. Yo, Yahvé, soy el primero y seré en los últimos tiempos. 
+4 ¿Quién lo ha hecho y realizado? El que desde el principio llamó a las generaciones. Yo, Yahvé, soy el primero y seré en los últimos tiempos.
 
 [Responsory3]
 R. Es necesario que Él crezca, y yo mengüe: el que viene después de mí, ha sido hecho antes que yo existiera: 
@@ -66,7 +56,7 @@ R. De quien no soy digno de desatar la correa de su calzado.
 [Lectio4]
 Sermón de San León, papa.
 !Sermón 1 del ayuno del décimo mes y de las colectas.
-Si fiel y sabiamente consideramos el principio de nuestra creación, hallaremos que por esto fue formado el hombre a imagen de Dios, a fin de que imitara a su autor. Y en esto,consiste la natural dignidad de nuestro linaje, si en nosotros, como en un espejo, resplandece la hermosura de la benignidad divina. Para conseguirlo, cada día nos auxilia la gracia del Salvador, haciendo que lo perdido por el primer Adán sea reparado por el segundo. 
+Si fiel y sabiamente consideramos el principio de nuestra creación, hallaremos que por esto fue formado el hombre a imagen de Dios, a fin de que imitara a su autor. Y en esto,consiste la natural dignidad de nuestro linaje, si en nosotros, como en un espejo, resplandece la hermosura de la benignidad divina. Para conseguirlo, cada día nos auxilia la gracia del Salvador, haciendo que lo perdido por el primer Adán sea reparado por el segundo.
 
 [Responsory4]
 R. Nacerá para nosotros un Infante, y será llamado Dios, Fuerte 
@@ -110,7 +100,7 @@ V. Muy próxima está mi salud, para que venga: y mi justicia para que se manifi
 R. Y el testamento de la paz estará en Jerusalén.
 
 [Lectio8]
-Mas ya que hemos pecado. ya que nos sentimos esclavos de malos hábitos inveterados, que nos diga qué debemos hacer para vernos libres de la ira venidera. Helo aquí: “Haced, pues, frutos dignos de penitencia". En cuyas palabras se debe advertir que el amigo del Esposo, no sólo nos advierte que hagamos frutos de penitencia, sino dignos frutos de penitencia. Y a la verdad, una cosa es hacer frutos de penitencia, otra es hacer frutos dignos de penitencia. Y para que esto mejor se entienda, se debe observar que quien no ha hecho nada ilícito, tiene derecho a usar de las cosas lícitas y a dedicarse de tal manera a las obras de piedad que no esté obligado a renunciar a las cosas del mundo.
+Mas ya que hemos pecado. ya que nos sentimos esclavos de malos hábitos inveterados, que nos diga qué debemos hacer para vernos libres de la ira venidera. Helo aquí: “Haced, pues, frutos dignos de penitencia”. En cuyas palabras se debe advertir que el amigo del Esposo, no sólo nos advierte que hagamos frutos de penitencia, sino dignos frutos de penitencia. Y a la verdad, una cosa es hacer frutos de penitencia, otra es hacer frutos dignos de penitencia. Y para que esto mejor se entienda, se debe observar que quien no ha hecho nada ilícito, tiene derecho a usar de las cosas lícitas y a dedicarse de tal manera a las obras de piedad que no esté obligado a renunciar a las cosas del mundo.
 
 [Responsory8]
 R. No nos apartaremos de ti, y nos darás vida, Señor, e invocaremos tu nombre: 
@@ -129,10 +119,20 @@ R. Cuya generación no reconoce fin.
 &Gloria
 R. Cuya generación no reconoce fin. 
 
+[Ant Laudes]
+Tocad la trompeta * en Sión, porque está cerca el día del Señor. Vendrá a salvarnos. Aleluya, aleluya.
+Vendrá * el deseado de todos los pueblos y se llenará de gloria la casa del Señor. Aleluya.
+Lo torcido * se enderece, lo escabroso se iguale. Ven, Señor, no tardes. Aleluya.
+El Señor viene; * salid a su encuentro aclamando; grande es su imperio, su reino no tendrá fin. Dios fuerte, Dominador, Príncipe de la paz. Aleluya, aleluya.
+Señor, tu palabra omnipotente * vendrá del trono real. Aleluya.
+
 [Capitulum Laudes]
 !1 Cor 4:1-2
 v. Hermanos: Que la gente sólo vea en vosotros servidores de Cristo y administradores de los misterios de Dios. Ahora, en un administrador lo que se busca es que sea fiel.
 $Deo gratias
+
+[Ant 2]
+Ave, María, * llena eres de gracia, el Señor es contigo. Bendita tú eres entre todas las mujeres, aleluya.
 
 [Capitulum Sexta]
 !1 Cor 4:3
@@ -143,6 +143,3 @@ $Deo gratias
 !1 Cor 4:5
 v. Así, pues, no juzguéis antes de tiempo: dejad que venga el Señor. Él iluminará lo que esconden las tinieblas y pondrá al descubierto los designios del corazón; entonces cada uno recibirá de Dios lo que merece.
 $Deo gratias
-
-[Ant 2]
-Ave, María, * llena eres de gracia, el Señor es contigo. Bendita tú eres entre todas las mujeres, aleluya.

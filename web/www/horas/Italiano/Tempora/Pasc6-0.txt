@@ -10,15 +10,16 @@ ex Tempora/Pasc5-4;
 Doxology=Asc
 StJamesRule=John,Rev
 
-[Versum 1]
-@Tempora/Pasc5-4:Versum 2
-
 [Ant 1]
 Quando verrà il Consolatore, * che io vi manderò, lo Spirito di verità, che procede dal Padre, egli renderà testimonianza di me, alleluia.
 
 [Oratio]
 Dio onnipotente ed eterno, fa che la nostra volontà ti sia sempre devota, e che serviamo alla tua maestà con cuore sincero. 
 $Per Dominum
+
+[Commemoratio]
+!Commemorazione dell'Ottava dell'Ascensione.
+@Tempora/Pasc5-4:Oratio
 
 [Lectio1]
 Incomincia la prima Lettera dell'Apostolo san Giovanni
@@ -54,7 +55,7 @@ Il nostro Salvatore, fratelli dilettissimi, è asceso al cielo: non turbiamoci d
 [Lectio5]
 La risurrezione del Signore è la nostra speranza:  l'ascensione del Signore la nostra glorificazione. Quest'oggi celebriamo la solennità dell'ascensione. Se dunque noi celebriamo l'ascensione del Signore rettamente, fedelmente, divotamente, santamente e piamente, ascendiamo con lui, e teniamo in alto i cuori. Ma salendo, non insuperbiamo, né presumiamo dei nostri meriti, quasi ci fossero propri. Noi dobbiamo avere i cuori in alto uniti al Signore. Perché, avere il cuore in alto, ma non al Signore, è orgoglio: invece il cuore in alto al Signore, è rifugio. Osservate, fratelli, un fatto sorprendente. Dio è alto: tu t'innalzi, ed egli fugge da te; ti umili, e discende a te. Perché questo? Perché «egli è eccelso, eppure riguarda le umili cose, e le altiere mira da lungi» (Ps. 137,6). Egli riguarda le cose umili dà vicino per innalzarle: e le cose altiere, cioè superbe, le mira da lungi per abbassarle.
 
-[Lectio6]
+[Lectio6_]
 Cristo è risorto per darci la speranza, perché tutto l'uomo che muore, risuscita; e ci ha data quest'assicurazione, affinché noi morendo, non disperassimo e non pensassimo che la nostra vita finisce colla morte. Noi eravamo nell'ansietà riguardo alla nostr'anima stessa: ed egli risorgendo ci ha dato la fede nella risurrezione della carne. Credi dunque affin d'essere purificato. Ti è necessario prima credere, per meritare colla fede di veder Dio un giorno. Vuoi vedere Dio? Ascolta lui stesso: «Beati i puri di cuore: perché essi vedranno Dio» (Matth. 5,8). Pensa dunque innanzi tutto a purificare il cuore: e togli quanto vi vedi che dispiace a Dio.
 
 [Lectio7]
@@ -86,20 +87,5 @@ Quindi aggiunse, come conseguenza, queste parole che abbiamo cominciato a spiega
 v. Carissimi: Siate prudenti, e vegliate nella preghiera. Ma sopra tutto abbiate l'un per l'altro una carità perseverante: perché la carità copre una moltitudine di peccati.
 $Deo gratias
 
-[Ant 2]
-@:Ant 1
-
-[Versum 2]
-@Tempora/Pasc5-4:Versum 1
-(sed rubrica tridentina)
-@:Versum 1
-
-[Versum 3]
-@:Versum 1
-
 [Ant 3]
 Vi ho detto questo, * affinché, giunta quell'ora, vi ricordiate ch'io ve l'ho detto, alleluia.
-
-[Commemoratio]
-!Commemorazione dell'Ottava dell'Ascensione.
-@Tempora/Pasc5-4:Oratio

@@ -1,7 +1,7 @@
 [Rank]
 Dominica Sanctissimæ Trinitatis;;Duplex I classis;;6.5
 
-[Rank](rubrica tridentina)
+[Rank] (rubrica tridentina)
 Festum Sanctissimæ Trinitatis;;Duplex II classis;;5.9
 
 [Rule]
@@ -57,23 +57,6 @@ $Per Dominum
 [Invit]
 Deum verum, unum in Trinitáte, et Trinitátem in Unitáte, * Veníte, adorémus.
 
-[HymnusM Matutinum]
-v. Summæ Deus cleméntiæ,
-Mundíque Factor máchinæ,
-Unus potentiáliter,
-Trinúsque personáliter.
-_
-Da déxteram sugéntibus,
-Exsúrgat ut mens sóbria,
-Flagrans et in laudem Dei,
-Grates repéndet débitas.
-_
-Glória Patri Dómino,
-Glória Unigénito,
-Una cum Sancto Spíritu,
-In sempitérna sǽcula.
-Amen.
-
 [Hymnus Matutinum]
 v. Summæ Parens cleméntiæ,
 Mundi regis qui máchinam,
@@ -88,6 +71,23 @@ _
 Deo Patri sit glória,
 Natóque Patris único,
 Cum Spíritu Paráclito,
+In sempitérna sǽcula.
+Amen.
+
+[HymnusM Matutinum]
+v. Summæ Deus cleméntiæ,
+Mundíque Factor máchinæ,
+Unus potentiáliter,
+Trinúsque personáliter.
+_
+Da déxteram sugéntibus,
+Exsúrgat ut mens sóbria,
+Flagrans et in laudem Dei,
+Grates repéndet débitas.
+_
+Glória Patri Dómino,
+Glória Unigénito,
+Una cum Sancto Spíritu,
 In sempitérna sǽcula.
 Amen.
 
@@ -198,14 +198,14 @@ R. Benedicámus Patrem et Fílium cum Sancto Spíritu:
 V. Benedíctus es, Dómine, in firmaménto cæli: et laudábilis et gloriósus in sǽcula.
 R. Laudémus et superexaltémus eum in sǽcula.
 
-[Lectio8a]
-Nec extensiónem partis alicúius ex parte, ut quidam putavérunt, Dei Fílium dícimus: nec verbum sine re, velut sonum vocis, accípimus: sed tria nómina et tres persónas uníus esse esséntiæ, uníus majestátis atque poténtiæ crédimus. Et ídeo unum Deum confitémur: quia únitas majestátis, plúrium vocábulo deos próhibet appellári. Dénique Patrem et Fílium cathólice nominámus; duos autem Deos dícere, nec póssumus, nec debémus. Non quod Fílius Dei Deus non sit, immo verus Deus de Deo vero; sed quia non aliúnde, quam de ipso uno Patre, Dei Fílium nóvimus, perínde unum Deum dícimus. Hoc enim Prophétæ, hoc Apóstoli tradidérunt: hoc ipse Dóminus dócuit, cum dicit: Ego et Pater unum sumus. Unum ad unitátem divinitátis, ut dixi, refert; Sumus autem, persónis assígnat.
-
 [Lectio8]
 @:Lectio8a
 
 [Lectio8](rubrica 1960)
 @:Lectio8a:s/ Dénique.*//s
+
+[Lectio8a]
+Nec extensiónem partis alicúius ex parte, ut quidam putavérunt, Dei Fílium dícimus: nec verbum sine re, velut sonum vocis, accípimus: sed tria nómina et tres persónas uníus esse esséntiæ, uníus majestátis atque poténtiæ crédimus. Et ídeo unum Deum confitémur: quia únitas majestátis, plúrium vocábulo deos próhibet appellári. Dénique Patrem et Fílium cathólice nominámus; duos autem Deos dícere, nec póssumus, nec debémus. Non quod Fílius Dei Deus non sit, immo verus Deus de Deo vero; sed quia non aliúnde, quam de ipso uno Patre, Dei Fílium nóvimus, perínde unum Deum dícimus. Hoc enim Prophétæ, hoc Apóstoli tradidérunt: hoc ipse Dóminus dócuit, cum dicit: Ego et Pater unum sumus. Unum ad unitátem divinitátis, ut dixi, refert; Sumus autem, persónis assígnat.
 
 [Responsory8]
 R. Duo Séraphim clamábant alter ad álterum: 
@@ -240,9 +240,6 @@ R. Et magnitúdinis ejus non est finis.
 [Capitulum Laudes]
 @Psalterium/Special/Major Special:Day6 Vespera
 
-[HymnusM Laudes]
-@:Hymnus Laudes:s/laudis cánticum/laudum cántica/ s/Quod/Quæ/ s/Præítque solem núntius/Sparsámque lucem núntiat/ s/Cadunt ténebræ/Cadit calígo/ s/Nunc, et per omne sǽculum/Et nunc et in perpétuum/
-
 [Hymnus Laudes]
 v. Tu, Trinitátis Unitas,
 Orbem poténter quæ regis,
@@ -259,6 +256,9 @@ Ejúsque soli Fílio,
 Cum Spíritu Paráclito,
 Nunc, et per omne sǽculum. 
 Amen.
+
+[HymnusM Laudes]
+@:Hymnus Laudes:s/laudis cánticum/laudum cántica/ s/Quod/Quæ/ s/Præítque solem núntius/Sparsámque lucem núntiat/ s/Cadunt ténebræ/Cadit calígo/ s/Nunc, et per omne sǽculum/Et nunc et in perpétuum/
 
 [Versum 2]
 @:Versum 1

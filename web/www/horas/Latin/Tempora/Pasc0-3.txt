@@ -9,6 +9,10 @@ Minores sine Antiphona;
 Capitulum Versum 2;
 Psalmi Dominica;
 
+[Oratio]
+Deus, qui nos resurrectiónis Domínicæ ánnua solemnitáte lætíficas: concéde propítius; ut per temporália festa quæ ágimus, perveníre ad gáudia ætérna mereámur.
+$Per eumdem
+
 [Ant Matutinum]
 @Tempora/Pasc0-0::s/^V\..*//sm
 V. Gavísi sunt discípuli, allelúja.
@@ -46,10 +50,6 @@ Quæri étiam potest, cur discípulis in mari laborántibus, post resurrectióne
 
 [Ant 2]
 Míttite in déxteram * navígii rete, et inveniétis, allelúja.
-
-[Oratio]
-Deus, qui nos resurrectiónis Domínicæ ánnua solemnitáte lætíficas: concéde propítius; ut per temporália festa quæ ágimus, perveníre ad gáudia ætérna mereámur.
-$Per eumdem
 
 [Ant 3]
 Dixit Jesus * discípulis suis: Afférte de píscibus, quos prendidístis nunc. Ascéndit autem Simon Petrus, et traxit rete in terram plenum magnis píscibus, allelúja.

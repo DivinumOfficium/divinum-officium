@@ -1,9 +1,6 @@
 [Rank]
 S. Ambrosii Episcopi Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
 
-[Name]
-Ambrose
-
 [Rule]
 vide C4a;
 Gloria
@@ -16,11 +13,19 @@ no Vigil1960
 !Bílá barva
 ✝ 397 v Miláně
 
+[Name]
+Ambrose
+
 [Introitus]
 @Commune/C4a:Introitus
 
 [Oratio]
 @Commune/C4a:Oratio:s/N\./Ambrože/
+
+[Commemoratio Oratio]
+!Svatvečer Neposkvrněného Početí Panny Marie
+Bože, jenž jsi Matku jednorozeného svého v jejím Početí zázračně uchoval dědičné viny, dej, prosíme, abychom, chráněni jsouce její přímluvou, s čistým srdcem na její slavnosti mohli bráti účast.
+$Per eundem
 
 [Lectio]
 @Commune/C4a:Lectio
@@ -45,6 +50,11 @@ Věrnost má a milosrdenství moje bude s ním a ve jménu mém zvelebí se ,moc
 Všemohoucí věčný Bože, učiň, ať dary přinesené Velebnosti tvé pro zásluhy svatého Ambrože, vyznavače tvého a biskupa, k věčné nám prospějí spáse..
 $Per Dominum
 
+[Commemoratio Secreta]
+!Svatvečer Neposkvrněného Početí Panny Marie
+Dary naše, Pane, nechť milostivosti tvé odporučí přímluva neposkvrněné Boží Rodičky, kterou jsi uchránil veškeré dědičné skvrny, aby byla hodna se státi vhodným příbytkem Syna tvého.
+$Qui tecum
+
 [Communio]
 !Ž 88,36-38
 Jednou přisáhl jsem ve svatyni své: símě jeho zůstane na vždy a trůn jeho jako slunce před tváří mou a jako úplněk na věky. A svědek toho na nebi je věrný.
@@ -52,16 +62,6 @@ Jednou přisáhl jsem ve svatyni své: símě jeho zůstane na vždy a trůn jeh
 [Postcommunio]
 Přijavše svátosti své spásy, prosíme, všemohoucí Bože, uděl, aby nám všude pomáhala přímluva svatého Ambrože, vyznavače tvého a biskupa, k jehož cti jsme toto tvé Velebnosti přinesli v oběť.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Svatvečer Neposkvrněného Početí Panny Marie
-Bože, jenž jsi Matku jednorozeného svého v jejím Početí zázračně uchoval dědičné viny, dej, prosíme, abychom, chráněni jsouce její přímluvou, s čistým srdcem na její slavnosti mohli bráti účast.
-$Per eundem
-
-[Commemoratio Secreta]
-!Svatvečer Neposkvrněného Početí Panny Marie
-Dary naše, Pane, nechť milostivosti tvé odporučí přímluva neposkvrněné Boží Rodičky, kterou jsi uchránil veškeré dědičné skvrny, aby byla hodna se státi vhodným příbytkem Syna tvého.
-$Qui tecum
 
 [Commemoratio Postcommunio]
 !Svatvečer Neposkvrněného Početí Panny Marie

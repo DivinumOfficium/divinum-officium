@@ -3,6 +3,12 @@
 [Rule]
 12 lectiones
 
+[Responsory Vespera]
+@Psalterium/Special/Major Special:QuadM Vespera:3-8
+
+[Ant Matutinum 3N]
+Non in solo pane vivit homo, † sed in omni verbo quod procédit de ore Dei.;;269;270;271
+
 [Lectio3]
 @Tempora/Quad1-0:Lectio3:s/-9/-6/ s/7 .*//s
 
@@ -39,9 +45,6 @@ R. Qui cognóscis ómnium occúlta, a delícto meo munda me;
 V. Avérte, Dómine, fáciem tuam a peccátis meis, et omnes iniquitátes meas dele.
 R. Tempus mihi concéde, ut repǽnitens clamem: Peccávi, miserére mei, Deus.
 
-[Ant Matutinum 3N]
-Non in solo pane vivit homo, † sed in omni verbo quod procédit de ore Dei.;;269;270;271
-
 [Lectio9]
 @Tempora/Quad1-0:Lectio7:s/Sed ecce .*//s
 
@@ -65,9 +68,6 @@ Non in solo pane vivit homo, † sed in omni verbo quod procédit de ore Dei.;;2
 
 [Responsory12]
 @Tempora/Quad1-0:Responsory9
-
-[Responsory Vespera]
-@Psalterium/Special/Major Special:QuadM Vespera:3-8
 
 [Responsory Laudes]
 @Psalterium/Special/Major Special:QuadM Laudes:3-8

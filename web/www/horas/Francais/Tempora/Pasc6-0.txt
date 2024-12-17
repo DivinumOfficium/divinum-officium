@@ -10,15 +10,16 @@ ex Tempora/Pasc5-4;
 Doxology=Asc
 StJamesRule=John,Rev
 
-[Versum 1]
-@Tempora/Pasc5-4:Versum 2
-
 [Ant 1]
 Quand sera venu le Paraclet * que Je vous enverrai, l'Esprit de vérité qui procède du Père, Il rendra témoignage de Moi, alléluia.
 
 [Oratio]
 Dieu tout-puissant et éternel, faites que, toujours, nous Vous apportions une volonté dévouée et que nous servions Votre majesté avec un cœur sincère.
 $Per Dominum
+
+[Commemoratio]
+!Commemoration de l'octave de l'Ascension
+@Tempora/Pasc5-4:Oratio
 
 [Ant Matutinum]
 @Tempora/Pasc5-4:Ant Matutinum
@@ -57,7 +58,7 @@ Notre Sauveur, mes très chers frères, est monté au ciel, ne nous troublons do
 [Lectio5]
 La résurrection du Seigneur est notre espérance ; l’ascension du Seigneur, notre glorification. Nous célébrons aujourd’hui la solennité de l’Ascension. Si donc nous célébrons l’ascension du Seigneur avec droiture, avec fidélité, avec dévotion, avec sainteté et avec piété, montons avec lui et tenons en haut nos cœurs. Mais, en montant, gardons-nous de nous enorgueillir et de présumer de nos mérites, comme s’ils nous étaient propres. Nous devons tenir nos cœurs en haut attachés au Seigneur ; car le cœur en haut, mais non auprès du Seigneur, c’est l’orgueil ; le cœur en haut près du Seigneur, c’est le refuge. Voici, mes frères, un fait surprenant : Dieu est élevé, tu t’élèves et il fuit loin de toi ; tu t’humilies et il descend vers toi. Pourquoi cela ? C’est que « le Seigneur est élevé, et il regarde ce qui est bas, et ce qui est haut, c’est de loin qu’il le connaît ». Il regarde de près ce qui est humble, pour l’attirer à lui, et il regarde de loin ce qui s’élève, c’est-à-dire les superbes, pour les abaisser.
 
-[Lectio6]
+[Lectio6_]
 Le Christ est ressuscité pour nous donner l’espérance, car tout homme qui meurt ressuscite ; et il nous a donné cette assurance, afin qu’en mourant nous ne désespérions pas et que nous ne pensions pas que notre vie finit dans la mort. Nous étions dans l’anxiété au sujet de notre âme elle-même, et le Sauveur, en ressuscitant, nous a donné la foi en la résurrection de la chair. Crois donc, afin d’être purifié. Il te faut d’abord croire, afin de mériter par ta foi de voir Dieu un jour. Veux-tu voir Dieu ? Écoute-le lui-même : « Bienheureux ceux qui ont le cœur pur, parce qu’ils verront Dieu » [40]. Pense donc avant tout à purifier ton cœur ; enlève tout ce que tu y vois qui puisse déplaire à Dieu.
 
 [Lectio7]
@@ -99,20 +100,5 @@ $Deo gratias
 v. Ci quelqu’un parle, que ce soit comme des paroles de Dieu ; si quelqu’un exerce un ministère, qu’il le fasse comme par la vertu que Dieu donne ; afin qu’en toutes choses Dieu soit glorifié par Jésus-Christ notre Seigneur.
 $Deo gratias
 
-[Ant 2]
-@:Ant 1
-
-[Versum 2]
-@Tempora/Pasc5-4:Versum 1
-(sed rubrica tridentina)
-@:Versum 1
-
-[Versum 3]
-@:Versum 1
-
 [Ant 3]
 Je vous ai dit ces choses * pour que, leur heure étant venue, vous vous souveniez que Je vous les ai annoncées, alléluia.
-
-[Commemoratio]
-!Commemoration de l'octave de l'Ascension
-@Tempora/Pasc5-4:Oratio

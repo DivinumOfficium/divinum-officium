@@ -4,10 +4,8 @@ Feria Sexta infra octavam Corporis Christi;;Semiduplex II class;;5;;ex Tempora/P
 [Rank] (rubrica 1960)
 Feria VI infra Hebdomadam I post Octavam Pentecostes;;Feria;;1
 
-[Rule]
-ex Tempora/Pent01-4 ;
-9 lectiones
-Doxology=Corp
+[Oratio](rubrica 1960)
+@Tempora/Pent01-0:OratioW
 
 [Lectio1]
 Du Premier livre de Samuel
@@ -16,9 +14,6 @@ Du Premier livre de Samuel
 28 Je l'ai choisi de toutes les tribus d'Israël pour être Mon prêtre, pour monter à Mon autel, pour M'offrir des parfums et porter l'éphod en Ma présence ; et J'ai fait participer la maison de votre père à tous les sacrifices des enfants d'Israël.
 29 Pourquoi avez-vous foulé aux pieds Mes victimes et les dons que J'ai ordonné qu'on M'offrit dans le temple ? et pourquoi avez-vous plus honoré vos enfants que Moi, pour manger avec eux les prémices de tous les sacrifices de Mon peuple Israël ?
 
-[Responsory1 1960]
-@Tempora/Pent01-2:Responsory1
-
 [Lectio2]
 !1 Reg 2:30-33
 30 C'est pourquoi voici ce que dit le Seigneur, le Dieu d'Israël : J'ai dit et j'ai certifié autrefois que votre maison et la maison de votre père servirait à jamais devant Ma face. Mais maintenant Je suis bien éloigné de cette pensée, dit le Seigneur ; car Je glorifierai quiconque M'aura rendu gloire, et ceux qui Me méprisent tomberont dans le mépris.
@@ -26,17 +21,11 @@ Du Premier livre de Samuel
 32 Et lorsque tout Israël sera dans la prospérité, vous verrez dans le temple un homme qui sera l'objet de votre envie : et il n'y aura jamais de vieillard dans votre maison.
 33 Néanmoins Je n'éloignerai pas entièrement de Mon autel ceux de votre race ; mais Je ferai que vos yeux soient obscurcis, et que votre âme sèche de langueur ; et une grande partie de ceux de votre maison mourront lorsqu'ils seront venus en âge d'homme.
 
-[Responsory2 1960]
-@Tempora/Pent01-2:Responsory2
-
 [Lectio3]
 !1 Reg 2:34-36
 34 Le signe que vous en aurez, est ce qui arrivera à vos deux fils Ophni et Phinées, qui mourront tous deux en un même jour.
 35 Et Je Me susciterai un prêtre fidèle, qui agira selon Mon cœur et selon Mon âme. Je lui établirai une maison stable, et il marchera toujours devant Mon christ.
 36 Alors quiconque restera de votre maison viendra, afin que l'on prie pour lui et il offrira une pièce d'argent et un morceau de pain, en disant : Donnez-moi, je vous prie, une portion sacerdotale, afin que j'aie une bouchée de pain à manger.
-
-[Responsory3 1960]
-@Tempora/Pent01-2:Responsory3
 
 [Lectio4]
 Du sermon de saint Thomas d’Aquin.
@@ -64,6 +53,3 @@ Voilà donc l’enseignement et la leçon qu’il nous donne par ces paroles ple
 [Lectio9]
 Si cette parole parut dure à ses disciples, quelle impression dut-elle faire sur ses ennemis ? Et cependant le Sauveur devait s’exprimer ici de manière à n’être point compris de tous. Le secret de Dieu doit nous faire attentifs, non pas hostiles. Mais la foi de ces disciples défaillit en entendant le Seigneur Jésus-Christ tenir un tel langage. Ils ne crurent pas qu’il énonçait quelque chose de grand, et que ses paroles voilaient une grâce nouvelle ; mais ils les entendirent à leur gré et d’une façon tout humaine, pensant que Jésus était capable, ou que Jésus avait dessein de distribuer, comme par morceaux, à ceux qui croiraient en lui, la chair dont le Verbe s’était revêtu. « Cette parole est dure, dirent-ils, et qui peut l’écouter ? »
 &teDeum
-
-[Oratio](rubrica 1960)
-@Tempora/Pent01-0:OratioW

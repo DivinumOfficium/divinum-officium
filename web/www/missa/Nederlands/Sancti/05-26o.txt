@@ -6,11 +6,19 @@ vide C2;
 Gloria
 
 [Oratio]
-@Commune/C4b:Oratio:s/N\./Eleutherius/
+!Pro S. Eleutherio
+@Commune/C2c:Oratio:s/N\./Eleutherius/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio
 
 [Secreta]
-@Commune/C4b
+!Pro S. Eleutherio
+@Commune/C2c:Secreta:s/N\./Eleutherius/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta
 
 [Postcommunio]
-@Commune/C4b
-
+!Pro S. Eleutherio
+@Commune/C2c:Postcommunio:s/N\./Eleutherius/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio

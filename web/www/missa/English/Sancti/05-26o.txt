@@ -6,5 +6,19 @@ vide C2;
 Gloria
 
 [Oratio]
-Eternal Shepherd, look with favor upon Your flock. Safeguard and shelter it forevermore through blessed Eleutherius, Your Martyr and Supreme Pontiff, whom You constituted shepherd of the whole Church. 
-$Per Dominum
+!Pro S. Eleutherio
+@Commune/C2c:Oratio:s/N\./Eleutherius/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
+
+[Secreta]
+!Pro S. Eleutherio
+@Commune/C2c:Secreta:s/N\./Eleutherius/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Secreta Gregem
+
+[Postcommunio]
+!Pro S. Eleutherio
+@Commune/C2c:Postcommunio:s/N\./Eleutherius/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Postcommunio Gregem

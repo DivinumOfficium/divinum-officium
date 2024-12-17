@@ -1,0 +1,21 @@
+[Rank]
+S. Lucio I, Papa y Mártir
+
+[Rule]
+vide C2b;
+OPapaM=Lucio;
+
+[Oratio]
+@Commune/C2b:Oratio:s/N\./Lucio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b:Oratio Gregem
+
+[Secreta]
+@Commune/C2b::s/N\./Lucio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b
+
+[Postcommunio]
+@Commune/C2b::s/N\./Lucio/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C4b

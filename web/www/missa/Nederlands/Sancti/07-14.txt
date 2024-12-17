@@ -4,19 +4,8 @@ S. Bonaventuræ Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
 [Rank] (rubrica 1570)
 S. Bonaventuræ Episcopi Confessoris;;Semiduplex;;2.2;;vide C4a
 
-[Rule]
-vide C4a;
-Gloria
-CredoDA
-
-[Introitus]
-@Commune/C4a
-
 [Oratio]
 @Commune/C4a:Oratio:s/N\./Bonaventura/
-
-[Lectio]
-@Commune/C4a
 
 [Graduale]
 !Ps 36:30-31
@@ -25,9 +14,6 @@ V. De wet van zijn God blijft in zijn hart en zijn schreden wankelen niet.
 Alleluia, alleluia.
 !Ps 109:4
 De Heer heeft gezworen, en het zal Hem niet berouwen: Gij zijt priester voor eeuwig naar de wijze van Melchisech. Alleluia.
-
-[Evangelium]
-@Commune/C4a
 
 [Offertorium]
 @Commune/C2c
@@ -40,4 +26,3 @@ De Heer heeft gezworen, en het zal Hem niet berouwen: Gij zijt priester voor eeu
 
 [Postcommunio]
 @Commune/C4d:Postcommunio:s/N\./Bonaventura/
-

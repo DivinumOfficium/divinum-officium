@@ -1,5 +1,5 @@
 [Rank]
-Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex 2 classis;;5.1;;ex C11
+Sacratissimi Rosarii Beatæ Mariæ Virginis;;Duplex 2 classis;;5.1;;ex C11
 
 [Rank] (rubrica 196)
 Beatæ Mariæ Virginis a Rosario;;Duplex 2 classis;;5;;ex C11
@@ -13,7 +13,6 @@ ex C11;
 Psalmi Dominica
 Antiphonas horas
 Doxology=Nat
-CPapaC=Marcum;
 
 [Ant Vespera]
 Quæ est ista, * speciósa sicut colúmba, quasi rosa plantáta super rivos aquárum?;;109
@@ -50,6 +49,9 @@ Edisseréntem Fílium.
 _
 @Psalterium/Doxologies:Nat
 
+[HymnusM Vespera]
+@Sancti/10-07:Hymnus Vespera:s/Nat/NatT/s
+
 [Versum 1]
 V. Regína sacratíssimi Rosárii, ora pro nobis.
 R. Ut digni efficiámur promissiónibus Christi.
@@ -64,7 +66,7 @@ $Per eumdem
 [Invit]
 Solemnitátem Rosárii Vírginis Maríæ celebrémus: * Christum ejus Fílium adorémus Dóminum.
 
-[Hymnus Matutinum]
+[Hymnus Matutinum_]
 v. In monte olívis cónsito
 Redémptor orans prócidit,
 Mæret, pavéscit, déficit,
@@ -91,6 +93,20 @@ Orándo pro tortóribus,
 Exsánguis efflat spíritum.
 _
 @Psalterium/Doxologies:Nat
+
+[Hymnus Matutinum]
+@:Hymnus Matutinum_
+
+[Hymnus Matutinum] (rubrica 196)
+@Sancti/10-07:Hymnus Vespera:s/\@Psalterium.*//s
+@Sancti/10-07:Hymnus Matutinum_:s/^v. //
+
+[HymnusM Matutinum]
+@Sancti/10-07:Hymnus Matutinum_:s/v. // s/Nat/NatT/
+
+[HymnusM Matutinum] (rubrica 196)
+@Sancti/10-07:Hymnus Vespera: s/\@Psalterium.*//s
+@Sancti/10-07:Hymnus Matutinum_:s/v. // s/Nat/NatT/
 
 [Ant Matutinum]
 Angelus Gábriel * nuntiávit Maríæ: et concépit de Spíritu Sancto.;;8
@@ -203,9 +219,19 @@ R. Ego quasi vitis fructificávi suavitátem odóris,
 V. Ego mater pulchræ dilectiónis, et timóris, et agnitiónis, et sanctæ spei.
 R. Et flores mei fructus honóris et honestátis.
 
-[Lectio8]
+[Lectio8_1]
 !Sermo de Aquæductu
-Verbum caro factum est, et hábitat jam in nobis. Hábitat in memória nostra, hábitat in cogitatióne, quia usque ad ipsam descéndit imaginatiónem. Quonam modo, inquis? Nimírum jacens in præsépio, in virgináli grémio cubans, in monte prǽdicans, in oratióne pernóctans, in cruce pendens, in morte pallens, liber inter mórtuos et in inférno ímperans, seu étiam tértia die resúrgens, et Apóstolis loca clavórum, victóriæ signa, demónstrans, novíssime coram eis cæli secréta conscéndens. Quid horum non vere, non pie, non sancte cogitátur? Quidquid horum cógito, Deum cógito; et per ómnia est Deus meus. Hæc ego meditári dixi sapiéntiam, et prudéntiam judicávi eructáre memóriam suavitátis; quóniam in hujuscémodi núcleis virga sacerdotális copiósa prodúxit, quam, in supérnis háuriens, ubérius nobis María refúdit. In supérnis plane et ultra Angelos, quæ Verbum ex ipso Patris corde suscépit.
+Verbum caro factum est, et hábitat jam in nobis. Hábitat in memória nostra, hábitat in cogitatióne, quia usque ad ipsam descéndit imaginatiónem. Quonam modo, inquis? Nimírum jacens in præsépio, in virgináli grémio cubans, in monte prǽdicans, in oratióne pernóctans, in cruce pendens, in morte pallens, liber inter mórtuos et in inférno ímperans, seu étiam tértia die resúrgens, et Apóstolis loca clavórum, victóriæ signa, demónstrans, novíssime coram eis cæli secréta conscéndens. Quid horum non vere, non pie, non sancte cogitátur? 
+
+[Lectio8_2]
+Quidquid horum cógito, Deum cógito; et per ómnia est Deus meus. Hæc ego meditári dixi sapiéntiam, et prudéntiam judicávi eructáre memóriam suavitátis; quóniam in hujuscémodi núcleis virga sacerdotális copiósa prodúxit, quam, in supérnis háuriens, ubérius nobis María refúdit. In supérnis plane et ultra Angelos, quæ Verbum ex ipso Patris corde suscépit.
+
+[Lectio8]
+@:Lectio8_1: s/$/~/
+@:Lectio8_2
+
+[Lectio8] (rubrica 196)
+@:Lectio8_1
 
 [Responsory8]
 R. Surge, própera, amíca mea; jam enim hiems tránsiit, imber ábiit et recéssit, 
@@ -215,8 +241,8 @@ R. Flores apparuérunt in terra nostra.
 &Gloria
 R. Flores apparuérunt in terra nostra.
 
-[Lectio9]
-@Sancti/10-07t:Lectio93
+[Lectio9] (rubrica 196)
+@:Lectio8_2
 
 [Versum 0]
 @:Versum 1
@@ -267,19 +293,6 @@ R. Et habitáre eam fecit in tabernáculo suo.
 
 [Ant 2]
 Solemnitátem hodiérnam * sacratíssimi Rosárii Genetrícis Dei Maríæ devóte celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum.
-
-[Commemoratio 2]
-!Commemoratio S. Marci Papæ
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Exaudi, Domine, preces nostras: et, interveniente beato Marco, Confessore tuo atque Pontifice, indulgentiam nobis tribue placatus et pacem.
-$Per Dominum
-_
-!Commemoratio Ss. Mártyrum Sergii, Bacchi, Marcelli et Apuleji
-@Commune/C3:Oratio proper
-$Oremus
-Sanctórum Mártyrum tuórum nos, Dómine, Sergii, Bacchi, Marcelli et Apuleji beáta merita prosequántur: et tuo semper fáciant amóre fervéntes. 
-$Per Dominum
 
 [Lectio Prima]
 !Sir 24:17-18
@@ -354,6 +367,9 @@ Et pulchri amóris ínclitæ
 Matri corónas néctite.
 _
 @Psalterium/Doxologies:Nat
+
+[HymnusM Vespera 3]
+@Sancti/10-07:Hymnus Vespera 3:s/Nat/NatT/s
 
 [Versum 3]
 @:Versum 1

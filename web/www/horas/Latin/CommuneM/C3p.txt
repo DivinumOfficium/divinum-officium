@@ -6,6 +6,15 @@
 [HymnusM Vespera]
 @Commune/C3:HymnusM Laudes
 
+[Oratio]
+@Commune/C3
+
+[Oratio1]
+@Commune/C3
+
+[Oratio2]
+@Commune/C3
+
 [HymnusM Matutinum]
 @Commune/C3
 
@@ -36,17 +45,8 @@
 [Lectio12]
 @CommuneM/C2p:Lectio12 in 2 loco
 
-[HymnusM Laudes]
-@Commune/C3
-
-[Oratio]
-@Commune/C3
-
-[Oratio1]
-@Commune/C3
-
-[Oratio2]
-@Commune/C3
-
 [LectioE]
 @Commune/C3pp
+
+[HymnusM Laudes]
+@Commune/C3

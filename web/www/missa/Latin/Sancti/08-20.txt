@@ -1,13 +1,15 @@
 [Rank]
-S. Bernardi Abbatis et Ecclesiæ Doctoris;;Duplex;;3;;vide C5
-
-[Name]
-Bernarde
+S. Bernardi Abbatis et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
+(sed rubrica 1570 aut rubrica 1617)
+S. Bernardi Abbatis;;Duplex;;3;;vide C5
 
 [Rule]
 vide C5;
 Gloria
 CredoDA
+
+[Name]
+Bernarde
 
 [Introitus]
 !Eccli 15:5
@@ -19,11 +21,6 @@ v. In médio Ecclésiæ apéruit os ejus: et implévit eum Dóminus spíritu sap
 
 [Oratio]
 @Commune/C4a:Oratio:s/N\./Bernárdi/
-
-[Commemoratio Oratio]
-!Infra Octavam Assumptionis
-Famulorum tuórum, quǽsumus, Dómine, delíctis ignósce: ut, qui tibi placére de áctibus nostris non valémus; Genetrícis Fílii tui, Dómini nostri, intercessióne salvémur:
-$Qui tecum
 
 [Lectio]
 Léctio libri Sapiéntiæ
@@ -51,19 +48,9 @@ Justus ut palma florébit: sicut cedrus, quæ in Líbano est, multiplicábitur.
 Sancti Bernárdi Confessóris tui atque Doctoris nobis, Dómine, pia non desit orátio: quæ et múnera nostra concíliet; et tuam nobis indulgéntiam semper obtíneat.
 $Per Dominum
 
-[Commemoratio Secreta]
-!Infra Octavam Assumptionis
-Subvéniat, Dómine, plebi tuæ Dei Genetrícis orátio: quam etsi pro conditióne carnis migrásse cognóscimus, in cœlésti glória apud te pro nobis intercédere sentiámus. Per eúndem Dóminum nostrum. Præfatio de Octava.
-$Per eundem
-
 [Communio]
 @Commune/C4
 
 [Postcommunio]
 Ut nobis, Dómine, tua sacrifícia dent salútem: beátus Bernárdus Conféssor tuus et Doctor egrégius, quǽsumus, precátor accédat.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!Infra Octavam Assumptionis
-Mensæ cœlestis partícipes effécti, implorámus cleméntiam tuam, Dómine, Deus noster: ut, qui Assumptiónem Dei Genetrícis cólimus, a cunctis malis imminéntibus, ejus intercessióne, liberémur.
-$Per eundem

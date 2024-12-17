@@ -16,31 +16,31 @@ Qui vult veníre post me, * ábnegat semetípsum, et tollet crucem suam, et sequ
 @Commune/C2::4-9
 @:AntMatutinumM
 
+[Lectio1 non Pontificis]
+@Commune/C3:Lectio1
+
 [Lectio1]
 @Commune/C2:Lectio1:s/-24/-23/ :s/24 .*//s
+
+[Lectio2 non Pontificis]
+@Commune/C3:Lectio2
 
 [Lectio2]
 @Commune/C2:Lectio1:s/.*!/!/s s/17-24/24-27/ s/^17 .*24 /24 /sm s/$/~/
 @Commune/C2:Lectio2:s/!.*// s/28 .*//s
 
+[Lectio3 non Pontificis]
+@Commune/C3:Lectio3
+
 [Lectio3]
 @Commune/C2:Lectio2:s/25-31/28-32/ s/^25 .*28 /28 /sm s/$/~/
 @Commune/C2:Lectio3:s/!.*// s/33 .*//s
 
-[Lectio4]
-@Commune/C2:Lectio3:s/32-/33-/ s/32 .*33 /33 /s
-
-[Lectio1 non Pontificis]
-@Commune/C3:Lectio1
-
-[Lectio2 non Pontificis]
-@Commune/C3:Lectio2
-
-[Lectio3 non Pontificis]
-@Commune/C3:Lectio3
-
 [Lectio4 non Pontificis]
 @Commune/C3:Lectio4
+
+[Lectio4]
+@Commune/C2:Lectio3:s/32-/33-/ s/32 .*33 /33 /s
 
 [Responsory4]
 R. Pósuit corónam cápiti meo, et circúmdedit me vestiménto salútis,
@@ -85,11 +85,11 @@ R. Vitam pétiit a te, et tribuísti ei in sǽculum sǽculi.
 [Lectio10]
 @Commune/C2:Lectio7:s/.* Quæ autem /Quæ autem /s
 
-[Responsory10]
-@Commune/C2:Responsory8
-
 [Responsory10 non Effusorum]
 @Commune/C2:Responsory8 non Effusorum
+
+[Responsory10]
+@Commune/C2:Responsory8
 
 [Lectio11]
 @Commune/C3:Lectio8
@@ -111,12 +111,6 @@ R. Quam repromísit Deus diligéntibus se.
 &Gloria
 R. Quam repromísit Deus diligéntibus se.
 
-[Ant Vespera 3]
-@Commune/C2:Ant Vespera:1 s/$/;;109/
-@Commune/C2:Ant Vespera:2 s/$/;;111/
-@Commune/C2:Ant Vespera:3 s/$/;;112/
-@Commune/C2:Ant Vespera:5 s/$/;;115/
-
 [MM Capitulum]
 @Commune/C2:Capitulum Sexta
 _
@@ -125,6 +119,12 @@ R. Et laudabúntur omnes recti corde.
 
 [LectioE]
 @Commune/C2c
+
+[Ant Vespera 3]
+@Commune/C2:Ant Vespera:1 s/$/;;109/
+@Commune/C2:Ant Vespera:2 s/$/;;111/
+@Commune/C2:Ant Vespera:3 s/$/;;112/
+@Commune/C2:Ant Vespera:5 s/$/;;115/
 
 [Lectio5 in 2 loco]
 De Expositióne sancti Ambrósii Epíscopi in Psalmum centésimum décimum octávum

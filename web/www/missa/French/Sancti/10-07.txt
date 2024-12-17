@@ -4,18 +4,8 @@ Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex 2 classis;;5.1;;ex C11
 [Rank1960]
 Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex 2 classis;;5;;ex C11
 
-[RankNewcal]
-Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex;;3;;ex C11
-
-[Rule]
-CPapaC=Marcum;
-ex C11;
-Gloria
-Credo
-Prefatio=Maria=Festivitate;
-
 [Introitus]
-!   
+! 
 v. Réjouissons-nous ensemble dans le Seigneur, car la fête que nous célébrons aujourd’hui est celle de la bienheureuse Vierge Marie. Cette solennité réjouit les Anges et tous en chœur louent le Fils de Dieu.
 !Ps 44:2
 De mon cœur a jailli une parole excellente, c’est que je consacre mes œuvres à mon Roi.
@@ -57,38 +47,3 @@ Fleurissez des fleurs comme le lis ; exhalez votre parfum, émettez de gracieux 
 [Postcommunio]
 Nous vous en prions, Seigneur: que nous soyons aidés par les prières de votre très sainte Mère dont nous célébrons le Rosaire afin de recevoir la force des mystères que nous honorons et d’obtenir l’effet des sacrements que nous recevons.
 $Qui vivis
-
-[Commemoratio Oratio]
-!Pro S. Marco Papa et Conf.
-(dicitur)
-Exaucez, Seigneur, nos prières, et par l'intercession du bienheureux Marc, votre Confesseur et Pontife, daignez nous accorder l'indulgence et la paix.
-$Per Dominum
-(communi Summorum Pontificum loco huius versus dicitur)
-@Commune/C4b:Oratio Gregem
-_
-!Pro Ss. Sergio, Baccho, Marcello et Apulejo Martyribus
-Faites, Seigneur, que les mérites de vos saints Martyrs Serge, Bacchus, Marcel et Apulée, nous soient acquis et nous rendent toujours fervents dans votre amour.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Pro S. Marco Papa et Conf.
-@Commune/C6b:Secreta
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
-_
-!Pro Ss. Sergio, Baccho, Marcello et Apulejo Martyribus
-Majestátem tuam nobis, Dómine, quǽsumus, hæc hóstia reddat immolánda placátam,~
-tuórum digna postulatióne Sanctórum.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Marco Papa et Conf.
-(dicitur)
-Accordez au peuple fidèle, Seigneur, de toujours se réjouir de la vénération de vos saints, et d'être munis de leur perpétuelle intercession.
-$Per Dominum
-(communi Summorum Pontificum loco huius versus dicitur)
-@Commune/C4b:Postcommunio Gregem
-_
-!Pro Ss. Sergio, Baccho, Marcello et Apulejo Martyribus
-Que les sacrements que nous avons reçus, Seigneur, nous fortifient : et par l’intercession de vos saint Martyrs Serge, Bacchus, Marcel et Apulée, nous soyons protégés par les armées célestes de toute les attaques mauvaises.
-$Per Dominum

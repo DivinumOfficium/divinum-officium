@@ -1,9 +1,6 @@
 [Rank]
 S. Jacobi Apostoli;;Duplex II classis;;5.1;;ex C1
 
-[Rank] (rubrica 196)
-S. Jacobi Apostoli;;Duplex II classis;;5;;ex C1
-
 [Rule]
 ex C1;
 Gloria
@@ -16,10 +13,6 @@ Prefatio=Apostolis
 [Oratio]
 Esto, Dómine, plebi tuæ sanctificátor et custos: ut, Apóstoli tui Jacóbi muníta præsídiis, et conversatióne tibi pláceat, et secúra mente desérviat.
 $Per Dominum
-
-[Commemoratio Oratio]
-!S. Christophori Martyris
-@Commune/C2:Oratio:s/N\./Christóphori/
 
 [Lectio]
 Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios
@@ -38,15 +31,11 @@ Ego vos elegi de mundo, ut eátis, et fructum afferátis, et fructus vester mán
 @Sancti/05-06
 
 [Offertorium]
-@Sancti/07-04
+@Sancti/07-04oct
 
 [Secreta]
 Oblatiónes pópuli tui, quǽsumus, Dómine, beáti Jacóbi Apóstoli pássio beáta concíliet: et, quæ nostris non aptæ sunt méritis, fiant tibi plácitæ ejus deprecatióne.
 $Per Dominum
-
-[Commemoratio Secreta]
-!Pro S. Christophoro
-@Commune/C2:Secreta
 
 [Communio]
 @Sancti/02-24
@@ -54,7 +43,3 @@ $Per Dominum
 [Postcommunio]
 Beáti Apóstoli tui Jacóbi, quǽsumus, Dómine, intercessióne nos ádjuva: pro cujus festivitáte percépimus tua sancta lætántes.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Christophoro
-@Commune/C2:Postcommunio

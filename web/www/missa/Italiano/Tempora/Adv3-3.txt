@@ -1,12 +1,6 @@
 [Rank]
 Feria IV Quattuor Temporum in Adventu;;Feria major;;2
 
-[Rank1960]
-Feria IV Quattuor Temporum Adventus;;Feria major;;3
-
-[RankNewcal]
-Feria IV infra Hebdomadam III Adventus;;Feria major;;2
-
 [Rule]
 Oratio Dominica
 no Gloria
@@ -22,10 +16,6 @@ I cieli narrano la gloria di Dio, e il firmamento narra l'opera delle sue mani.
 &Gloria
 v. Piovete dall'alto, o cieli, e mandateci il giusto, o nubi: si apra la terra e dia frutti di salvezza.
 
-[Oratio]
-Fa', o Signore, te ne preghiamo, che la vicina solennità della nostra redenzione, ci porti aiuto per la vita presente e ci dia il premio della beatitudine eterna.
-$Per Dominum
-
 [LectioL1]
 Dal libro del profeta Isaia.
 !Is 2:2-5.
@@ -40,6 +30,10 @@ V. Chi salirà il monte del Signore? o chi starà nel suo luogo santo? Colui che
 [OratioL1]
 Signore, affréttati, te ne preghiamo: non tardare oltre e concedici l'aiuto della tua onnipotenza, affinché dalla gioia della tua venuta,  siano consolati quanti confidano in te:
 $Qui vivis
+
+[Oratio]
+Fa', o Signore, te ne preghiamo, che la vicina solennità della nostra redenzione, ci porti aiuto per la vita presente e ci dia il premio della beatitudine eterna.
+$Per Dominum
 
 [Lectio]
 Dal libro del profeta Isaia.
@@ -71,4 +65,3 @@ Ecco, una Vergine concepirà e darà alla luce un Figlio: che sarà chiamato Ema
 [Postcommunio]
 O Signore, saziati del tuo salutare dono, ti supplichiamo che il mistero, della cui soavità ci siamo rallegrati, ci rinnovi.
 $Per Dominum
-

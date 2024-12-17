@@ -1,12 +1,6 @@
 [Rank]
 Sabbato Quattuor Temporum Quadrigesimæ;;Feria major;;2
 
-[Rank1960]
-Sabbato Quattuor Temporum Quadrigesimæ;;Feria major;;3
-
-[RankNewcal]
-Sabbato infra Hebdomadam I in Quadragesima;;Feria major;;2
-
 [Rule]
 no Gloria
 Suffragium=Sanctorum;Vivis;;
@@ -22,10 +16,6 @@ v. Que a minha oração chegue à vossa presença! Senhor, ouvi benigno a minha 
 Senhor, meu Deus e meu Salvador, de dia e de noite clamo diante de Vós.
 &Gloria
 v. Que a minha oração chegue à vossa presença! Senhor, ouvi benigno a minha súplica.
-
-[Oratio]
-Senhor, Vos suplicamos, olhai propício para o vosso povo e afastai piedosamente dele os flagelos da vossa ira.
-$Per Dominum
 
 [LectioL1]
 Lição do Livro do Deuteronómio.
@@ -109,6 +99,10 @@ Bendito sois, Senhor, Deus de nossos pais: e digno de louvor e de glória em tod
 
 [OratioL5]
 Ó Deus, que mitigastes as chamas do fogo aos três jovens, concedei, misericordiosamente, a nós, que somos vossos servos, que não sejamos queimados pelas chamas dos vícios.
+$Per Dominum
+
+[Oratio]
+Senhor, Vos suplicamos, olhai propício para o vosso povo e afastai piedosamente dele os flagelos da vossa ira.
 $Per Dominum
 
 [Lectio]

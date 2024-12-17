@@ -4,11 +4,12 @@ S. Vitalis Martyris;;Simplex;;1.1;;vide C2
 [Rule]
 vide C2;
 
+[Name]
+Vitalis
+
 [Oratio]
-Præsta, quǽsumus omnipotens Deus: ut qui beati Vitalis Martyris tui natalitia colimus, intercessione ejus in tui nominis amóre roboremur.
-$Per Dominum
+@Commune/C2:Oratio2
 
 [Lectio93]
-!Commemoratio S. Vitalis Martyris.
 Vitalis miles, sanctorum Gervasii et Protasii pater, una cum Paulino judice Ravennam ingressus, cum vidisset Ursicinum medicum ob christianæ fidei confessionem ductum ad supplicium, paululum in tormentis titubare, exclamavit: Ursicine medice, qui alios curare solitus es, cave ne te mortis æternæ jaculo conficias. Qua voce confirmatus Ursicinus, martyrium fortiter subivit. Quare Paulinus incensus Vitalem comprehendi jubet, et equuleo tortum, atque in profundam foveam demersum, lapidibus obrui. Quo facto quidam Apollinis sacerdos, qui Paulinum in Vitalem incitarat, oppressus a dæmone, clamare cœpit: Tu me nimium Vitalis Christi Martyr incendis: et illo æstu jactatus, se præcipitavit in flumen.
 &teDeum

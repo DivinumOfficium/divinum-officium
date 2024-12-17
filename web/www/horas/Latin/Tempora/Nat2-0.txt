@@ -88,18 +88,23 @@ Amen.
 Dómine, Dóminus noster, * quam admirábile est nomen tuum in univérsa terra!;;8
 In nómine Jesu * omne genu flectátur cæléstium, terréstrium, et infernórum.;;18
 Confitémini * Dómino, et invocáte nomen ejus: mementóte, quóniam excélsum est nomen ejus.;;23
-V. Propter nomen tuum, Dómine, propitiáberis peccáto meo.
-R. Multum est enim.
 Mémores erunt * nóminis tui, Dómine, in omni generatióne et generatiónem.;;44
 Magnificáte * Dóminum mecum, et exaltémus nomen ejus in idípsum.;;45
 Omnes gentes, * quascúmque fecísti, vénient, et adorábunt coram te, Dómine, et glorificábunt nomen tuum.;;86
-V. Propter glóriam nóminis tui, Dómine, líbera nos.
-R. Et propítius esto peccátis nostris propter nomen tuum.
 Cantáte Dómino * et benedícite nómini ejus: annuntiáte de die in diem salutáre ejus.;;95
 Secúndum nomen tuum, * Deus, sic et laus tua in fines terræ: justítia plena est déxtera tua.;;96
 Cantáte Deo, * psalmum dícite nómini ejus: iter fácite ei, qui ascéndit super occásum, Dóminus nomen illi.;;97
-V. Afférte Dómino glóriam et honórem.
-R. Afférte Dómino glóriam nómini ejus.
+
+[Nocturn 1 Versum]
+V. Propter nomen tuum, Dómine, propitiáberis peccáto meo.
+R. Multum est enim.
+
+[Nocturn 2 Versum]
+V. Propter glóriam nóminis tui, Dómine, líbera nos.
+R. Et propítius esto peccátis nostris propter nomen tuum.
+
+[Nocturn 3 Versum]
+@:Versum Tertia: s/[\,\.] al.*/./ig
 
 [Lectio1]
 De Actibus Apostolórum
@@ -261,8 +266,7 @@ Regnum beatitúdinis.
 Amen.
 
 [Versum 2]
-V. Adjutórium nostrum in nomine Dómini.
-R. Qui fecit cælum et terram.
+@:Versum Nona: s/[\,\.] al.*/./ig
 
 [Ant 2]
 Dedit se, * ut liberáret pópulum, et acquíreret sibi nomen ætérnum, allelúja.
@@ -271,14 +275,15 @@ Dedit se, * ut liberáret pópulum, et acquíreret sibi nomen ætérnum, allelú
 !Col 3:17
 v. Omne quodcúmque fácitis in verbo, aut in ópere: ómnia in nómine Dómini Jesu Christi fácite, grátias agéntes Deo et Patri per ipsum.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Sit nomen Dómini benedíctum, * Allelúja, allelúja.
 R. Sit nomen Domini benedíctum, * Allelúja, allelúja.
 V. Ex hoc nunc et usque in sǽculum.
 R. Allelúja, allelúja.
 &Gloria
 R. Sit nomen Dómini benedíctum, * Allelúja, allelúja.
-_
+
+[Versum Tertia]
 V. Afférte Dómino glóriam et honórem, allelúja.
 R. Afférte Dómino glóriam nómini ejus, allelúja.
 
@@ -287,14 +292,15 @@ R. Afférte Dómino glóriam nómini ejus, allelúja.
 v. In nómine Jesu omne genu flectátur cæléstium, terréstrium, et infernórum: et omnis lingua confiteátur, quia Dóminus Jesus Christus in glória est Dei Patris.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Afférte Dómino glóriam et honórem, * Allelúja, allelúja.
 R. Afférte Dómino glóriam et honórem, * Allelúja, allelúja.
 V. Afférte Dómino glóriam nómini ejus.
 R. Allelúja, allelúja.
 &Gloria
 R. Afférte Dómino glóriam et honórem, * Allelúja, allelúja.
-_
+
+[Versum Sexta]
 V. Magnificáte Dóminum mecum, allelúja.
 R. Et exaltémus nomen ejus in idípsum, allelúja.
 
@@ -302,14 +308,15 @@ R. Et exaltémus nomen ejus in idípsum, allelúja.
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Magnificáte Dóminum mecum, * Allelúja, allelúja.
 R. Magnificáte Dóminum mecum, * Allelúja, allelúja.
 V. Et exaltémus nomen ejus in idípsum.
 R. Allelúja, allelúja.
 &Gloria
 R. Magnificáte Dóminum mecum, * Allelúja, allelúja.
-_
+
+[Versum Nona]
 V. Adjutórium nostrum in nomine Dómini, allelúja.
 R. Qui fecit cælum et terram, allelúja.
 

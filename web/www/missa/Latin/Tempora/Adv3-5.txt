@@ -1,12 +1,6 @@
 [Rank]
 Feria VI Quattuor Temporum in Adventu;;Feria major;;2.1
 
-[Rank] (rubrica 196)
-Feria VI Quattuor Temporum Adventus;;Feria major;;4.9
-
-[RankNewcal]
-Feria VI infra Hebdomadam III Adventus;;Feria major;;2.1
-
 [Rule]
 Oratio Dominica
 no Gloria
@@ -15,17 +9,14 @@ Suffr=Maria1;Ecclesiæ,Papa;;
 
 [Introitus]
 !Ps 118:151-152
-v. Prope es tu, Dómine, et omnes viæ tuæ véritas: inítio cognóvi de testimóniis~
-tuis, quia in ætérnum tu es.
+v. Prope es tu, Dómine, et omnes viæ tuæ véritas: inítio cognóvi de testimóniis tuis, quia in ætérnum tu es.
 !Ps 118:1
 Beati immaculáti in via: qui ámbulant in lege Dómini.
 &Gloria
-v. Prope es tu, Dómine, et omnes viæ tuæ véritas: inítio cognóvi de testimóniis~
-tuis, quia in ætérnum tu es.
+v. Prope es tu, Dómine, et omnes viæ tuæ véritas: inítio cognóvi de testimóniis tuis, quia in ætérnum tu es.
 
 [Oratio]
-Excita, quǽsumus, Dómine, poténtiam tuam, et veni: ut hi, qui in tua pietáte~
-confídunt, ab omni cítius adversitáte liberéntur:
+Excita, quǽsumus, Dómine, poténtiam tuam, et veni: ut hi, qui in tua pietáte confídunt, ab omni cítius adversitáte liberéntur:
 $Qui vivis
 
 [Lectio]
@@ -45,8 +36,7 @@ In illo témpore: Exsúrgens María ábiit in montána cum festinatióne in civi
 
 [Offertorium]
 !Ps 84:7-8
-Deus, tu convérsus vivificábis nos, et plebs tua lætábitur in te: osténde nobis,~
-Dómine, misericórdiam tuam, et salutáre tuum da nobis.
+Deus, tu convérsus vivificábis nos, et plebs tua lætábitur in te: osténde nobis, Dómine, misericórdiam tuam, et salutáre tuum da nobis.
 
 [Secreta]
 @Commune/C2
@@ -56,7 +46,5 @@ Dómine, misericórdiam tuam, et salutáre tuum da nobis.
 Ecce, Dóminus véniet et omnes Sancti ejus cum eo: et erit in die illa lux magna.
 
 [Postcommunio]
-Tui nos, Dómine, sacraménti libátio sancta restáuret: et a vetustáte purgátos,~
-in mystérii salutáris fáciat transíre consórtium.
+Tui nos, Dómine, sacraménti libátio sancta restáuret: et a vetustáte purgátos, in mystérii salutáris fáciat transíre consórtium.
 $Per Dominum
-

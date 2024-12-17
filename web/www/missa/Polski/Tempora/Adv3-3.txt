@@ -1,12 +1,6 @@
 [Rank]
 Feria IV Quattuor Temporum in Adventu;;Feria major;;2
 
-[Rank1960]
-Feria IV Quattuor Temporum Adventus;;Feria major;;3
-
-[RankNewcal]
-Feria IV infra Hebdomadam III Adventus;;Feria major;;2
-
 [Rule]
 Oratio Dominica
 no Gloria
@@ -30,10 +24,6 @@ Niebiosa głoszą chwałę Boga, dzieło rąk Jego obwieszcza nieboskłon.
 &Gloria
 v. Niebiosa, spuśćcie rosę z góry, a obłoki niech zleją z deszczem Sprawiedliwego. Niech się otworzy ziemia i zrodzi Zbawiciela.
 
-[Oratio]
-Spraw, prosimy Cię, wszechmogący Boże, aby nadchodząca uroczystość naszego odkupienia przyniosła nam pomoc w życiu doczesnym i obdarzyła nas nagrodą życia wiecznego.
-$Per Dominum
-
 [LectioL1]
 Czytanie z Księgi Proroka Izajasza.
 !Iz 2:2-5
@@ -48,6 +38,10 @@ V. Kto wstąpi na górę Pana lub stanie na świętym Jego miejscu? Człowiek r�
 [OratioL1]
 Pośpiesz, prosimy Cie, Panie, i nie zwlekaj, lecz ześlij nam potężną pomoc z nieba, aby radość z Twego przyjścia podniosła tych, co ufają Twej dobroci:
 $Qui vivis
+
+[Oratio]
+Spraw, prosimy Cię, wszechmogący Boże, aby nadchodząca uroczystość naszego odkupienia przyniosła nam pomoc w życiu doczesnym i obdarzyła nas nagrodą życia wiecznego.
+$Per Dominum
 
 [Lectio]
 @Commune/C10a:Lectio

@@ -1,15 +1,10 @@
 [Rank]
 In Vigilia Epiphaniæ;;Semiduplex;;4.9;;ex Sancti/01-01
-
-[Rank] (rubrica tridentina)
+(sed rubrica tridentina)
 In Vigilia Epiphaniæ;;Semiduplex;;2.9;;ex Sancti/01-01
 
-[Rank] (rubrica 196 aut rubrica 1955)
-Die Quinta Januarii;;Feria;;1.2;;vide Sancti/01-01
-
 [Rule]
-CPapaM=Telésphorum;
-ex Sancti/101-01;
+ex Sancti/01-01;
 Gloria
 CredoDA
 Prefatio=Nat
@@ -22,10 +17,6 @@ Suffragium=Maria2;;
 [Oratio]
 Omnípotens sempitérne Deus, dírige actus nostros in beneplácito tuo: ut in nómine dilécti Fílii tui mereámur bonis opéribus abundáre:
 $Qui tecum
-
-[Commemoratio Oratio]
-!Pro S. Telesphori Papæ et Mart.
-@Commune/C2b:Oratio:s/N\./Telésphori/
 
 [Lectio]
 @Tempora/Nat1-0
@@ -45,17 +36,9 @@ In illo témpore: Defúncto Heróde, ecce, Angelus Dómini appáruit in somnis J
 Concéde, quǽsumus, omnípotens Deus: ut óculis tuæ majestátis munus oblátum, et grátiam nobis piæ devotiónis obtíneat, et efféctum beátæ perennitátis acquírat.
 $Per Dominum
 
-[Commemoratio Secreta]
-!Pro S. Telesphori Papæ et Mart.
-@Commune/C2b:Secreta:s/N\./Telésphoro/
-
 [Communio]
 @Tempora/Nat1-0
 
 [Postcommunio]
 Per hujus, Dómine, operatiónem mystérii, et vítia nostra purgéntur, et justa desidéria compleántur.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Telesphori Papæ et Mart.
-@Commune/C2a:Postcommunio:s/N\./Telésphoro/

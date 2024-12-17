@@ -2,19 +2,15 @@
 
 [Rule]
 12 lectiones
+ex SanctiM/12-25
 Psalmi Dominica
 Antiphonas horas
-
-[Versum 1]
-V. Vidérunt omnes fines terræ, allelúja.
-R. Salutáre Dei nostri, allelúja.
 
 [Ant Matutinum 3N]
 @SanctiM/12-25
 
-[Ant Matutinum]
-@SanctiM/12-25::1-12
-@Sancti/01-01::14-15
+[Versum 1]
+@Sancti/12-25:Versum Sexta
 
 [Lectio1]
 @Tempora/Nat29
@@ -92,7 +88,7 @@ R. Salutáre Dei nostri, allelúja.
 @Tempora/Nat1-0:Responsory8
 
 [Versum 2]
-@Sancti/12-25:Responsory Sexta:s/.*_.//s
+@:Versum 1
 
 [Versum 3]
 @:Versum 1

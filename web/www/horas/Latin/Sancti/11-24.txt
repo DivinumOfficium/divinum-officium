@@ -1,23 +1,29 @@
 [Rank]
 S. Joannis a Cruce Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
+(sed rubrica tridentina)
+S. Joannis a Cruce Confessoris;;Duplex;;3;;vide C5
 
 [Rule]
 vide C5a;mtv
+(sed rubrica tridentina)
+vide C5;mtv
 9 lectiones
+
+[Comment]
+Pio PP. XI, anno 1926, Doctor Ecclesiæ declaratus est
 
 [Name]
 Joánnes
 
-[Oratio]
+[Oratio_]
 Deus, qui sanctum Joánnem Confessórem tuum atque Doctórem perféctæ sui abnegatiónis et Crucis amatórem exímium effecísti: concéde; ut, ejus imitatióni júgiter inhæréntes, glóriam assequámur ætérnam.
 $Per Dominum
 
-[Commemoratio]
-!Commemoratio S. Chrysogoni Martyris
-@Commune/C2:Oratio proper
-$Oremus
-v. Adésto, Dómine, supplicatiónibus nostris: ut, qui ex iniquitáte nostra reos nos esse cognóscimus, beáti Chrysógoni Mártyris tui intercessióne liberémur.
-$Per Dominum
+[Oratio]
+@:Oratio_
+(sed rubrica tridentina)
+@:Oratio_:s/ atque Doctorem//
+
 
 [Lectio4]
 Joánnes a Cruce, Fontíberi in Hispánia piis paréntibus natus, a primis annis certo innotuit quam Deiparæ Virgini futurus esset acceptus; nam quinquennis, in púteum lapsus, ejusdem Deiparæ manu sublatus, incolumis evasit. Tanto autem patiéndi desidério flagrávit, ut novennis, spreto molliori lecto, super sarmentis cubare consueverit. Adoléscens hospítio páuperum ægrotántium Metymnæ Campi famulum sese addixit, quibus magno caritátis ardore, vilíssima quæque complectens officia, præsto aderat. Cujus exemplo excitáti ceteri, éadem caritátis múnera ardentius obibant. Verum, ad altióra vocatus, beátæ Maríæ Vírginis de Monte Carmelo institutum amplexus est; ubi, sacerdos ex obediéntia factus, severioris disciplinæ et arctioris vitæ cupidíssimus, primitivam ordinis regulam ex superioris licéntia ita proféssus est, ut, ob jugem Dominicæ passiónis memóriam, bello in se, tamquam in infensíssimum hostem indicto, vigiliis, jejuniis, férreis flagellis omnique pœnárum genere, brevi carnem cum vitiis et concupiscéntiis suis crucifixerit; dignus plane, qui a sancta Teresia inter puriores sanctioresque ánimas, Ecclésiam Dei id témporis illustrántes, recenserétur.
@@ -25,14 +31,14 @@ Joánnes a Cruce, Fontíberi in Hispánia piis paréntibus natus, a primis annis
 [Lectio5]
 Singulari vitæ austeritáte et ómnium virtútum præsidio munítus, præ assidua rerum divinárum contemplatióne, diuturnas et mirábiles éxtases frequenter patiebátur; tantoque in Deum æstuábat amóre, ut, cum divinus ignis sese intro diutius continere non posset, foras erumpere ejusque vultum irradiare visus sit. Proximórum salúti summopere intentus, tum in verbi Dei prædicatióne, tum in sacramentórum administratióne fuit assiduus. Hinc tot meritis auctus, strictiorisque disciplinæ promovendæ ardore veheménter accénsus, sanctæ Teresiæ comes divinitus datus est, ut, quam ipsa inter sorores primævam Carmeli ordinis observantiam instauráverat, eamdem et inter fratres, Joánne adjutore, restitúeret. Innumeros ítaque una cum Dei famula in divino opere promovéndo perpéssus labóres, cœnobia, quæ ejusdem sanctæ Vírginis cura per totam Hispániam erecta fuerant, nullis vitæ incommodis et periculis térritus, singula perlustrávit. In quibus aliisque quam plurimis, ejus ópera eréctis, restauratam observantiam propagando, verbo et exemplo firmávit; ut mérito primus, post sanctam Teresiam, Carmelitárum excalceatórum ordinis professor et parens habeátur.
 
-[Lectio6]
+[Lectio6_]
 Virginitátem perpetuo coluit, impudentésque mulieres ejus pudicítiæ insidiari conántes, non modo répulit, sed étiam Christo lucrifecit. In divinis explicandis arcanis æque ac sancta Teresia, apostolicæ Sedis judício, divínitus instructus, libros de mystica theología, cælésti sapiéntia refertos, conscripsit. Semel interrogátus a Christo quid præmii pro tot labóribus pósceret, respóndit: Dómine, pati et contemni pro te. Imperio in dæmones, quos e corpóribus sæpe fugabat, discretióne spirituum, prophetíæ dono, miraculórum glória celebratíssimus, ea semper fuit humilitate, ut sæpius a Dómino flagitaverit eo loco mori, ubi ómnibus esset ignotus. Voti compos factus. Ubedæ, diro morbo et in crure quinque plagis sanie manántibus, ad impléndum patiéndi desidérium constantíssime tolerátis, Ecclésiæ sacramentis pie sancteque susceptis, in Christi crucifixi amplexu, quem semper in corde atque ore habuerat, post illa verba: In manus tuas comméndo spíritum meum, obdormívit in Dómino, die et hora a se prædictis, anno salútis millesimo quingentésimo nonagesimo primo, ætátis quadragesimo nono. Migrántem ejus ánimam splendidíssimus ignis globus excepit; corpus vero suavíssimum odórem spirávit, quod, etiamnum incorruptum, Segoviæ honorifice cólitur. Eum, plurimis ante et post óbitum fulgentem signis, Benedíctus décimus tertius Pontifex maximus in Sanctórum númerum retulit, et Pius undecimus ex Sacrórum Rituum Congregatiónis consulto, universalis Ecclésiæ Doctórem declarávit.
+
+[Lectio6]
+@:Lectio6_
+(sed rubrica tridentina)
+@:Lectio6_: s/\, et P.*/./
 
 [Lectio94]
 Joánnes a Cruce, Fontíberi in Hispánia piis paréntibus natus, a primis annis certo innótuit quam Deíparæ Vírgini futúrus esset accéptus; nam quinquénnis in púteum lapsus, ejúsdem manu sublátus, incólumis evásit. Adoléscens hospítio páuperum ægrotántium Metýmnæ Campi fámulum amantíssime se addíxit; tum beátæ Maríæ Vírginis de Monte Carmélo institútum ampléxus et sacérdos ex obediéntia factus, primitívam régulam proféssus est. Strictióris disciplínæ promovéndæ ardóre succénsus, sanctæ Terésiæ, a qua inter purióres et excellentióres ánimas Ecclésiam Dei tunc témporis illustrántes habebátur, comes divínitus datus est ad primǽvam Carméli órdinis observántiam inter fratres instaurándam. Quo in ópere eníxe cum laborásset et multa esset passus, interrogátus a Christo, quid prǽmii pro tot labóribus pósceret, respóndit: Dómine, pati et contémni pro te. Libros de mýstica theología, cælésti sapiéntia refértos, conscrípsit. Tandem Ubédæ, diro morbo patientíssime toleráto, obdormívit in Dómino, anno millésimo quingentésimo nonagésimo primo, ætátis quadragésimo nono. Eum Pius undécimus, ex sacrórum Rítuum Congregatiónis consúlto, universális Ecclésiæ Doctórem declarávit.
-&teDeum
-
-[Lectio93]
-!Commemoratio S. Chrysogoni Martyris
-Chrysógonus, Diocletiáno imperatóre, Romæ inclusus in carcere, ibi biennium sanctæ Anastasiæ facultátibus vixit; quam etiam, afflictam propter Christum a viro suo Publio, proptereáque a suis oratiónibus per litteras auxílium postulántem, mútuis epistolis est consolatus. Sed, cum imperátor Romam scripsísset ut, reliquis Christiánis qui in vinculis essent interfectis, Chrysógonus Aquilejam ad se mitterétur, eo perductus est. Cui imperátor: Accersívi, inquit, te, Chrysógone, ut honóribus augeam, si modo induxeris ánimum deos cólere. At ille: Ego eum, qui vere est Deus, mente et oratióne véneror; deos autem, qui nihil sunt nisi dæmonum simulacra, odi et éxsecror. Quo responso excandéscens imperátor, ad Aquas Gradatas eum secúri pércuti jubet octavo Kalendas Decembris. Cujus corpus, projectum in mare, paulo post in littore invéntum, Zóilus presbyter in suis ædibus sepelívit.
 &teDeum

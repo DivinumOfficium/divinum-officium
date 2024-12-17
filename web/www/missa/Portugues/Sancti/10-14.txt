@@ -1,12 +1,6 @@
 [Rank]
 S. Callisti Papae et Martyris;;Duplex;;3;;vide C4b
 
-[Rank1570]
-S. Callisti Papae et Martyris;;Semiduplex;;2;;vide C3
-
-[RankNewcal]
-S. Callisti Papae et Martyris;;Duplex optional;;2;;vide C4b
-
 [Rule]
 vide C4b;
 Gloria
@@ -14,7 +8,7 @@ Gloria
 [Comment]
 # 14 X – S. Calisto I, Papa e Mártir
 ! 3 classe
-! Paramentos vermelhos 
+! Paramentos vermelhos
 
 [Introitus]
 @Commune/C4b:Introitus

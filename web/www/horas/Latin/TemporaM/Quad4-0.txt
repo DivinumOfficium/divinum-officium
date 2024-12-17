@@ -3,6 +3,12 @@
 [Rule]
 12 lectiones
 
+[Responsory Vespera]
+@Psalterium/Special/Major Special:QuadM Vespera:3-8
+
+[Ant Matutinum 3N]
+Satiávit Dóminus quinque míllia hóminum de quinque pánibus et duóbus píscibus.;;269;270;271
+
 [Lectio1]
 @Tempora/Quad4-0:Lectio1:
 @Tempora/Quad4-0:Lectio2:s/!.*// s/7.*//s
@@ -45,9 +51,6 @@
 [Responsory8]
 @Tempora/Quad4-1:Responsory1
 
-[Ant Matutinum 3N]
-Satiávit Dóminus quinque míllia hóminum de quinque pánibus et duóbus píscibus.;;269;270;271
-
 [Lectio9]
 @Tempora/Quad4-0:Lectio7
 
@@ -71,9 +74,6 @@ Satiávit Dóminus quinque míllia hóminum de quinque pánibus et duóbus písc
 
 [Responsory12]
 @Tempora/Quad4-2:Responsory2
-
-[Responsory Vespera]
-@Psalterium/Special/Major Special:QuadM Vespera:3-8
 
 [Responsory Laudes]
 @Psalterium/Special/Major Special:QuadM Laudes:3-8

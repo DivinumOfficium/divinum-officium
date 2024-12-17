@@ -7,14 +7,6 @@ Najświętszej Panny Marji Różańcowej;;Duplex 2 classis;;5;;ex C11
 [Rank] (rubrica innovata)
 Najświętszej Panny Marji Różańcowej;;Duplex;;3;;ex C11
 
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Marka;
-
 [Ant Vespera]
 Któraż to jest, * piękna jako gołębica, jako róża wsadzona nad strumieniem wód?;;109
 Panna można * jako wieża Dawidowa: tysiąc tarcz wisi na niej, wszystka broń mocarzów.;;112
@@ -64,7 +56,7 @@ $Per eumdem
 [Invit]
 Obchodząc święto Różańca Panny Marji: * jej Synowi Chrystusowi, Panu się kłaniajmy.
 
-[Hymnus Matutinum]
+[Hymnus Matutinum_]
 v. Na górze oliwami wysadzonej
 Odkupiciel upada, modląc się,
 smuci, lęka się, mdleje,
@@ -154,9 +146,12 @@ R. Jako krzew winny wydałam wdzięczną woń,
 V. Jam matką pięknej miłości i bojaźni, i rozeznania, i świętej nadziei.
 R. A kwiaty moje owocem czci i godności.
 
-[Lectio8]
+[Lectio8_1]
 !Kazanie o wodociągu
-Słowo stało się Ciałem i odtąd mieszka między nami. Mieszka w naszej pamięci, mieszka w naszych myślach, ponieważ do samej zstępuje wyobraźni. Zapytasz: „Gdzie? Kiedy?” Otóż, gdy leży w żłobie, kiedy spoczywa na dziewiczym łonie Matki, kiedy głosi kazanie na górze, kiedy spędza noc na modlitwie albo gdy wisi na krzyżu, kiedy Jego oblicze pokrywa bladość śmierci, kiedy staje jako wolny wśród umarłych, kiedy panuje nad mocami piekła, a wreszcie gdy trzeciego dnia zmartwychwstaje, gdy ukazuje Apostołom ślady gwoździ, oznaki zwycięstwa, i na koniec, gdy wobec nich wstępuje do tajemnych nieba przybytków. Czyż nie jest słuszną, pobożną i świętą rzeczą rozmyślać nad tymi tajemnicami? Gdy myślę o tych wydarzeniach, myślę o Bogu; w tym wszystkim jest On sam, mój Bóg. Rozmyślać o tych sprawach nazwałem mądrością, a za roztropność uznałem przekazywać pamięć o słodyczy stąd płynącej, słodyczy podobnej do owocu migdałowego, który zrodziła różdżka kapłańska Aarona; tej słodyczy, którą Maryja czerpała na wysokościach, aby nam jej obficie udzielać. Zaprawdę na wysokościach i ponad Aniołami, skoro Ona przyjęła Słowo bezpośrednio z serca Ojcowskiego.
+Słowo stało się Ciałem i odtąd mieszka między nami. Mieszka w naszej pamięci, mieszka w naszych myślach, ponieważ do samej zstępuje wyobraźni. Zapytasz: „Gdzie? Kiedy?” Otóż, gdy leży w żłobie, kiedy spoczywa na dziewiczym łonie Matki, kiedy głosi kazanie na górze, kiedy spędza noc na modlitwie albo gdy wisi na krzyżu, kiedy Jego oblicze pokrywa bladość śmierci, kiedy staje jako wolny wśród umarłych, kiedy panuje nad mocami piekła, a wreszcie gdy trzeciego dnia zmartwychwstaje, gdy ukazuje Apostołom ślady gwoździ, oznaki zwycięstwa, i na koniec, gdy wobec nich wstępuje do tajemnych nieba przybytków. Czyż nie jest słuszną, pobożną i świętą rzeczą rozmyślać nad tymi tajemnicami?
+
+[Lectio8_2]
+Gdy myślę o tych wydarzeniach, myślę o Bogu; w tym wszystkim jest On sam, mój Bóg. Rozmyślać o tych sprawach nazwałem mądrością, a za roztropność uznałem przekazywać pamięć o słodyczy stąd płynącej, słodyczy podobnej do owocu migdałowego, który zrodziła różdżka kapłańska Aarona; tej słodyczy, którą Maryja czerpała na wysokościach, aby nam jej obficie udzielać. Zaprawdę na wysokościach i ponad Aniołami, skoro Ona przyjęła Słowo bezpośrednio z serca Ojcowskiego.
 
 [Responsory8]
 R. Powstań i pójdź, przyjaciółko moja. Bo oto minęła już zima, deszcz ustał i przeszedł.
@@ -212,19 +207,6 @@ R. W namiocie swoim dał jej mieszkanie.
 
 [Ant 2]
 Uroczystość dzisiejszą * najświęszego Różańca Rodzicielki Bożej Marji pobożnie obchodźmy, aby ta wstawiała się za nami u Pana Jezusa Chrystusa.
-
-[Commemoratio 2]
-!Wspominamy Św. Marka Papieża
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Wysłuchaj, Panie, próśb naszych i za przyczyną błogosławionego Marka, Wyznawcy Twego i Biskupa, udziel nam miłościwie przebaczenia i pokoju.
-$Per Dominum
-_
-!Wspominamy Śś. Sergjusza, Bachusa, Marcelego i Apuleusza Męczenników
-@Commune/C3:Oratio proper
-$Oremus
-Niech błogosławione zasługi świętych Męczenników Twoich, Panie, Sergjusza, Bachusa, Marcelego i Apuleusza, nieustannie nam towarzyszą i uczynią nas zawsze gorliwymi w miłości Twojej.
-$Per Dominum
 
 [Lectio Prima]
 !Syr 24:17-18

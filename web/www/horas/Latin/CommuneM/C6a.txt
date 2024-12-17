@@ -9,24 +9,24 @@
 [Ant 1]
 @Commune/C6a
 
+[Oratio]
+@Commune/C6a
+
 [Nocturn 1 Versum]
 @Commune/C6:Versum 1
-
-[Ant 2]
-@:Ant 1
 
 [Versum 2]
 @:Versum 1
 
-[Oratio]
-@Commune/C6a
+[Ant 2]
+@:Ant 1
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Ant 3]
-@:Ant 1
-
 [Versum 3]
 @:Versum 1
+
+[Ant 3]
+@:Ant 1

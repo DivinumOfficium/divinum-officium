@@ -3,14 +3,25 @@
 [Responsory Vespera]
 @CommuneM/C11
 
+[Responsory3]
+@Commune/C12
+
 [Lectio11]
 !from tempora
 
+[MM Capitulum]
+!Eccli 24:26-28
+v. Transíte ad me, omnes qui concupíscitis me, et a generatiónibus meis implémini: spíritus enim meus super mel dulcis, et heréditas mea super mel et favum: memória mea in generatióne sæculórum.
+$Deo gratias
+_
+V. Speciósa facta es et suávis.
+R. In delíciis tuis, sancta Dei Génetrix.
+
+[Responsory Laudes]
+@:Responsory Vespera
+
 [Lectio21]
 !from tempora
-
-[Responsory3]
-@Commune/C12
 
 [Ant Prima]
 @Commune/C7:Ant Vespera:1
@@ -18,20 +29,17 @@
 [Ant Tertia]
 @Commune/C11:Ant VesperaBMV:1
 
-[Ant Sexta]
-@Commune/C6:Ant Matutinum:7
-
-[Ant Nona]
-@Commune/C11:Ant VesperaBMV:2
-
-[Responsory Laudes]
-@:Responsory Vespera
-
 [Responsory TertiaM]
 @Commune/C6:Versum 1
 
+[Ant Sexta]
+@Commune/C6:Ant Matutinum:7
+
 [Responsory SextaM]
 @Commune/C6:Nocturn 2 Versum
+
+[Ant Nona]
+@Commune/C11:Ant VesperaBMV:2
 
 [Responsory NonaM]
 @Commune/C6:Nocturn 3 Versum
@@ -215,7 +223,7 @@ Quisnam tuum éloqui splendórem póterit? Quisnam porténtum, quod ipsa es, ena
 [Lectio M113]
 Sermo sancti Sophrónii Epíscopi
 !Homilia in Deiparæ Annunt.
-@Sancti/12-14:Lectio9:s/Et mérito quidem; nemo enim sicut tu,/v. Nemo enim sicut tu, María,/ s/Et proptérea .*//s
+@Sancti/12-14bmv:Lectio9:s/Et mérito quidem; nemo enim sicut tu,/v. Nemo enim sicut tu, María,/ s/Et proptérea .*//s
 
 [Lectio M114]
 @Commune/C10:Lectio M12:s/.&teDeum//s
@@ -224,11 +232,3 @@ Sermo sancti Sophrónii Epíscopi
 Sermo sancti Bernárdi Abbátis
 !.
 Missus est Angelus ad Vírginem; vírginem carne, vírginem mente, vírginem professióne, vírginem dénique, qualem descríbit Apóstolus, mente et córpore sanctam; nec nóviter, nec fortuíto invéntam, sed a sǽculo eléctam, ab Altíssimo præcógnitam, et sibi præparátam, ab Angelis servátam, a Pátribus præsignátam, a Prophétis promíssam. Ut pauca loquar de plúribus, quam tibi áliam prædixísse Deus vidétur, quando ad serpéntem ait: Inimicítias ponam inter te et mulíerem? Et si adhuc dúbitas an de María díxerit, audi quod séquitur: Ipsa cónteret caput tuum. Cui hæc serváta victória est, nisi Maríæ?
-
-[MM Capitulum]
-!Eccli 24:26-28
-v. Transíte ad me, omnes qui concupíscitis me, et a generatiónibus meis implémini: spíritus enim meus super mel dulcis, et heréditas mea super mel et favum: memória mea in generatióne sæculórum.
-$Deo gratias
-_
-V. Speciósa facta es et suávis.
-R. In delíciis tuis, sancta Dei Génetrix.

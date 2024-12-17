@@ -1,5 +1,5 @@
 [Rank]
-Ss. Marii, Marthæ, Audifacis et Abachum martyrum;;Simplex;;1.1;;vide C3
+S. Canuti Regis et Martyrum;;Semiduplex;;2.2;;vide C2
 
 [Rule]
 vide C3;
@@ -9,7 +9,8 @@ Gloria
 @Sancti/01-19
 
 [Oratio]
-@Sancti/01-19
+God, Gij hebt ter verheerlijking van uw Kerk de heilige koning Canutus met de palm van het martelaarschap en heerlijke wonderen willen eren. Doe ons in uw goedheid in het voetspoor treden van hem, die een navolger was van zijn lijdende Meester, en laat ons daardoor tot het eeuwig geluk komen
+$Per eundem
 
 [Lectio]
 @Commune/C3b
@@ -27,22 +28,12 @@ Gloria
 @Sancti/01-19
 
 [Secreta]
-@Sancti/01-19
+!Pro S. Canuto Regi Mart.
+@Commune/C2a:Secreta
 
 [Communio]
 @Commune/C3a
 
 [Postcommunio]
-@Sancti/01-19
-
-[Commemoratio Oratio]
-!Pro S. Canuto Regi Mart.
-@Sancti/01-19t:Oratio
-
-[Commemoratio Secreta]
-!Pro S. Canuto Regi Mart.
-@Commune/C2a:Secreta
-
-[Commemoratio Postcommunio]
 !Pro S. Canuto Regi Mart.
 @Commune/C2a:Postcommunio:s/N\./Canutus/

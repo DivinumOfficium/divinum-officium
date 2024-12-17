@@ -7,26 +7,19 @@ Invit2
 [Responsory Vespera 1]
 @Psalterium/Special/Major Special:Day6M Vespera:3-8
 
-[Responsory Laudes]
-@Psalterium/Special/Major Special:Day0M Laudes:3-8
-
-[Responsory TertiaM]
-@Psalterium/Special/Minor Special:Dominica Tertia:s/.*_.//s
-
-[Responsory SextaM]
-@Psalterium/Special/Minor Special:Dominica Sexta:s/.*_.//s
-
-[Responsory NonaM]
-@Psalterium/Special/Minor Special:Dominica Nona:s/.*_.//s
-
 [Responsory Vespera]
 @Psalterium/Special/Major Special:Day0M Vespera:3-8
+
+[Ant Matutinum 3N]
+Ite et vos in víneam meam, † et quod justum fúerit, dabo vobis.
+V. Exaltáre Dómine in virtúte tua.
+R. Cantábimus et psallémus virtútes tuas.
 
 [Lectio1]
 @Tempora/Quadp1-0:Lectio1
 
 [Lectio2]
-@Tempora/Quadp1-0:Lectio2:s/-19/-13/ s/14.*//s 
+@Tempora/Quadp1-0:Lectio2:s/-19/-13/ s/14.*//s
 
 [Lectio3]
 @Tempora/Quadp1-0:Lectio2:s/9-/14-/ s/\n9.*14/\n14/s
@@ -68,11 +61,6 @@ R. Dixit Dóminus ad Adam: † de ligno quod est in medio paradísi ne cómedas:
 V. Præcépit ei Dóminus dicens: † Ex omni ligno paradísi cómede; de ligno autem sciéntiæ boni et mali ne cómedas.
 R. In quacúmque die coméderis, morte moreiéris.
 
-[Ant Matutinum 3N]
-Ite et vos in víneam meam, † et quod justum fúerit, dabo vobis.
-V. Exaltáre Dómine in virtúte tua.
-R. Cantábimus et psallémus virtútes tuas.
-
 [Lectio9]
 @Tempora/Quadp1-0:Lectio7
 
@@ -97,3 +85,14 @@ R. Cantábimus et psallémus virtútes tuas.
 [Responsory12]
 @Tempora/Quadp1-1:Responsory2
 
+[Responsory Laudes]
+@Psalterium/Special/Major Special:Day0M Laudes:3-8
+
+[Responsory TertiaM]
+@Psalterium/Special/Minor Special:Dominica Tertia:s/.*_.//s
+
+[Responsory SextaM]
+@Psalterium/Special/Minor Special:Dominica Sexta:s/.*_.//s
+
+[Responsory NonaM]
+@Psalterium/Special/Minor Special:Dominica Nona:s/.*_.//s
