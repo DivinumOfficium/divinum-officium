@@ -892,18 +892,27 @@ sub concurrence {
       @ccommemoentries = ();
       $ccomrank = 0;
     } elsif (
-      $rank < 2    # no 2nd Vespers of a Simplex
+
+      # no 2nd Vespers of a Simplex
+      $rank < 2
+
+      # on any Sunday or 1st Vespers of a Feast of the Lord: nothing of a preceding III. cl feast
+      # on I. cl Sundays also nothing of a preceding II. cl feast
       || ( $version =~ /196/
         && ($cwrank[0] =~ /Dominica/i || ($cwinner{Rule} =~ /Festum Domini/i && $dayofweek == 6))
-        && $rank < 5)    # on any Sunday or 1st Vespers of a Feast of the Lord , nothing of a preceding III. cl feast
+        && $rank < ($crank >= 6 ? 6 : 5))
+
+      # in 1st Vespers of Duplex I. cl. only commemoration of Feria major, Dominica (major), 8va privilegiata and Duplex II./I. cl
       || ( $crank >= 6
         && !($rank == 2.1 || $rank == 2.99 || $rank == 3.9 || $rank >= 4.2)
-        && $cwrank[0] !~ /Dominica|feria|in.*octava/i
-      ) # in 1st Vespers of Duplex I. cl. only commemoration of Feria major, Dominica (major), 8va privilegiata and Duplex II./I. cl
-      || ($cwinner =~ /12-25|01-01/)    # on Christmas Eve and New Year's Eve, nothing of a preceding Sunday
+        && $cwrank[0] !~ /Dominica|feria|in.*octava/i)
+
+      # on Christmas Eve and New Year's Eve, nothing of a preceding Sunday
+      || ($cwinner =~ /12-25|01-01/)
+
+      # in 1st Vespers of Duplex II. cl. also commemoration of any Duplex
       || ($crank >= 5 && !($rank == 2.1 || $rank >= 2.99) && $cwrank[0] !~ /Dominica|feria|in.*octava/i)
-      )
-    {                                   # in 1st Vespers of Duplex II. cl. also commemoration of any Duplex
+    ) {
       @dayname = @tomorrowname;
       $vespera = 1;
       $cvespera = 3;
