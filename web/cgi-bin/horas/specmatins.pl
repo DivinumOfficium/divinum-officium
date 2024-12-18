@@ -940,7 +940,7 @@ sub lectio : ScriptFunc {
       my %tro = %{setupstring($lang, $transfervigil)};
       if (exists($tro{'Lectio Vigilia'})) { $w = $tro{'Lectio Vigilia'}; }
       setbuild2("Lectio ultimo: Commemoratio pro Vigilia transferenda");
-    } elsif ($homilyflag == 9) {
+    } elsif ($homilyflag == 9 && !($version =~ /2020/ && $commemoratio =~ /08-09t/)) {
       my %tro = (columnsel($lang)) ? %commemoratio : %commemoratio2;
 
       if (exists($tro{'Lectio1'})) {    # should be always true if $homilyflag
