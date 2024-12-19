@@ -451,10 +451,6 @@ sub oratio {
             }
           }
 
-          if ($dayofweek == 6 && $cv == 2 && exists($c{'Commemoratio Sabbat'}) && $version !~ /1960/) { # only at Laudes
-            $c = getrefs($c{'Commemoratio Sabbat'}, $lang, 2, $c{Rule});
-          }
-
           if ($c) {
             my $redn = setfont($largefont, 'N.');
             $c =~ s/ N\. / $redn /g;
