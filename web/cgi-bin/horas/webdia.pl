@@ -754,6 +754,8 @@ sub horas_menu {
     . qq(&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive")
     : qq(HREF="#" onclick="appendix('Index')");
   $output .= qq(\n<A $a><FONT COLOR=$colour>Appendix</FONT></A>\n) if ($0 !~ /Cofficium/);
+  $a = qq(HREF="#" onclick="callkalendar('kalendar')");
+  $output .= qq(&nbsp;&nbsp;\n<A $a><FONT COLOR=$colour>Kalendarium</FONT></A>\n) if ($0 !~ /Pofficium/);
   $output;
 }
 

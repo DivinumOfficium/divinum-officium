@@ -1,0 +1,110 @@
+# required by kalendar.pl when display Ordinarium
+use utf8;
+
+# prepare one day entry in ordo
+sub ordo_entry {
+  my ($date, $ver, $compare, $winneronly) = @_;
+
+  our $version = $ver;
+  our ($day, $month, $year, $dayname, %scriptura, %commemoratio);
+
+  precedence($date);
+
+  my ($h1, $h2) = split(/\s*~\s*/, setheadline());
+  return "$h1, $h2" if $winneronly;    # finish here for ical
+
+  my ($c1, $c2);
+  $c1 = "<B>" . setfont(liturgical_color($h1), $h1) . "</B>" . setfont('1 maroon', "&ensp;$h2");
+  $c1 =~ s/Hebdomadam/Hebd/i;
+  $c1 =~ s/Quadragesima/Quadr/i;
+
+  $c2 = $dayname[2];
+
+  ($h1, $h2) = split(/: /, $c2, 2);
+  ($c2, $h1, $h2) = ('', '', $h1) unless $h2;
+  $c2 = setfont($smallblack, "$h1:") if $h1;
+  $c2 .= "<I>" . setfont(liturgical_color($h2), " $h2") . "</I>" if $h2;
+
+  $c2 =~ s/Hebdomadam/Hebd/i;
+  $c2 =~ s/Quadragesima/Quadr/i;
+
+  if ( $version !~ /196/
+    && $winner =~ /Sancti/
+    && exists($winner{Lectio1})
+    && $winner{Lectio1} !~ /\@Commune/i
+    && $winner{Lectio1} !~ /\!(Matt|Marc|Luc|Joannes)\s+[0-9]+\:[0-9]+\-[0-9]+/i)
+  {
+    $c1 .= setfont($smallfont, " *L1*");
+  }
+
+  if (substr($date, 0, 5) lt '12-24' && substr($date, 0, 5) gt '01-13') {
+
+    # outside Nat put Sancti winner in right column
+    ($c2, $c1) = ($c1, $c2) if $winner =~ /sancti/i;
+  } else {
+
+    # inside Nat clear right column unless it is commemoratio of saint or scriptura
+    $c2 = '' unless $c2 =~ /Commemoratio|Scriptura/;
+  }
+
+  if (dirge($version, 'Laudes', $day, $month, $year)) { $c1 .= setfont($smallblack, ' dirge'); }
+  if ($version !~ /1960/ && $initia) { $c1 .= setfont($smallfont, ' *I*'); }
+
+  if ($version !~ /1955|196/ && $winner{Rule} =~ /\;mtv/i) {
+    $c2 .= setfont($smallblack, ' m.t.v.');
+  }
+
+  if ( $version !~ /196/
+    && $winner =~ /Sancti/
+    && exists($winner{Lectio1})
+    && $winner{Lectio1} !~ /\@Commune/i
+    && $winner{Lectio1} !~ /\!(Matt|Marc|Luc|Joannes)\s+[0-9]+\:[0-9]+\-[0-9]+/i)
+  {
+    $c2 .= setfont($smallfont, " *L1*");
+  }
+
+  $c2 ||= '_' if $compare;
+  ($c1, $c2);
+}
+
+# html_header_ordo
+sub html_header {
+  htmlHead("Ordo: @{[(MONTHNAMES)[$kmonth]]} $kyear");
+
+  print do {    # print headline
+    my $vers = $version1;
+    $vers .= ' / ' . $version2 if $compare;
+
+    my $output = << "PrintTag";
+<H1>
+<FONT COLOR="MAROON" SIZE="+1"><B><I>Divinum Officium</I></B></FONT>&nbsp;
+<FONT COLOR="RED" SIZE="+1">$vers</FONT>
+</H1>
+<P ALIGN="CENTER">
+<A HREF=# onclick="setkm(15)">Kalendarium</A>&ensp;
+<FONT COLOR="MAROON" SIZE="+1"><B><I>Ordo @{[(MONTHNAMES)[$kmonth]]} A. D.</I></B></FONT>&nbsp;
+<LABEL FOR="kyear" CLASS="offscreen">Year</LABEL>
+<INPUT TYPE="TEXT" ID="kyear" NAME="kyear" VALUE="$kyear" SIZE=4>
+<A HREF=# onclick="prevnext(-1)">&darr;</A>
+<INPUT TYPE="submit" NAME="SUBMIT" VALUE=" " onclick="document.forms[0].submit();">
+<A HREF=# onclick="prevnext(1)">&uarr;</A>
+&ensp;<A HREF=# onclick="setkm(14)">Totus</A>
+</P><P ALIGN="CENTER">
+PrintTag
+
+    my @mmenu;
+    push(@mmenu, "<A HREF=# onclick=\"setkm(-1)\">«</A>\n") if $kmonth == 1;
+
+    foreach my $i (1 .. 12) {
+      my $mn = substr((MONTHNAMES)[$i], 0, 3);
+      $mn = "<A HREF=# onclick=\"setkm($i)\">$mn</A>\n" unless $i == $kmonth;
+      push(@mmenu, $mn);
+    }
+    push(@mmenu, "<A HREF=# onclick=\"setkm(13)\">»</A>\n") if $kmonth == 12;
+
+    $output . join('&nbsp;' x 3, @mmenu) . '</P>';
+  }
+}
+
+1;
+

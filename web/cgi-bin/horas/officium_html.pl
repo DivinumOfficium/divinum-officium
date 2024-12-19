@@ -145,8 +145,8 @@ sub hiddenfields {
 <INPUT TYPE="HIDDEN" NAME="version2" VALUE="$version2">
 <INPUT TYPE="HIDDEN" NAME="caller" VALUE='0'>
 <INPUT TYPE="HIDDEN" NAME="compare" VALUE=$Ck>
-<INPUT TYPE="HIDDEN" NAME="'notes'" VALUE="$notes">
-<INPUT TYPE="HIDDEN" NAME="'plures'" VALUE='$plures'>
+<INPUT TYPE="HIDDEN" NAME="plures" VALUE="$plures">
+<INPUT TYPE="HIDDEN" NAME="kmonth" VALUE="">
 </FORM>
 </BODY></HTML>
 PrintTag
