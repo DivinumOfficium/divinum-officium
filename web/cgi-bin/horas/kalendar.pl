@@ -65,7 +65,7 @@ binmode(STDOUT, ':encoding(utf-8)');
 our $q = new CGI;
 
 #*** get parameters
-my $compare = strictparam('compare') || 0;
+our $compare = strictparam('compare') || 0;
 my $officium = strictparam('officium') || 'officium.pl';
 
 if ($compare) {
@@ -133,15 +133,12 @@ sub kalendar_table {
   my ($kyear, $kmonth, $mode) = @_;
   my $background = (our $whitebground) ? ' class="contrastbg"' : '';
   my $cols;
-  my $output = << "PrintTag";
-<P ALIGN="CENTER">
-<TABLE BORDER="$border" WIDTH="90%" CELLPADDING="3" $background>
-PrintTag
+  my $output = qq(<P ALIGN="CENTER">\n<TABLE BORDER="$border" WIDTH="90%" CELLPADDING="3" $background>\n);
 
   if ($mode eq 'kal') {
     $kmonth = 14;
     $kyear = 1977;
-    $output .= "<TR><TH>C.E.</TH><TH>D.L.</TH><TH></TH><TH>Dies</TH><TH COLSPAN='" . (1 + $compare) . "'></TH></TR>\n";
+    $output .= "<TR><TH>C.E.</TH><TH>D.L.</TH><TH></TH><TH>Dies</TH><TH></TH></TR>\n";
     $cols = 5 + $compare;
   } else {
     $output .= "<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH></TR>\n";
@@ -164,7 +161,7 @@ PrintTag
       $d1 = sprintf("%02i", $yday);
 
       if ($yday == 1) {    # add extra headline at the start of a new month
-        $output .= bissextal() if $ymonth == 3 && $mode eq 'kal';
+        $output .= note('bissextal') if $ymonth == 3 && $mode eq 'kal';
         my $ms =
             $mode eq 'kal'
           ? $ymonth == 1
@@ -175,27 +172,13 @@ PrintTag
       }
     }
 
-    my @output;
-
-    if ($mode eq 'kal') {
-      my ($c1) = kalendar_entry($date1, $version1);
-      $c1 .= '<br/>' . kalendar_entry($date1, $version2) if $compare;
-      push @output, epactcycle($cday, substr($date1, 0, 2)), domlet(), romanday($date1), $d1 + 0, $c1;
-    } else {
-      my ($c1, $c2) = ordo_entry($date1, $version1, $compare);
-
-      if ($compare) {
-        my ($c21, $c22) = ordo_entry($date1, $version2, $compare);
-        $c1 .= "<br/>$c21";
-        $c2 .= "<br/>$c22";
-      }
-      push @output, qq(<A HREF=# onclick="callbrevi('$date1');">$d1</A>), $c1, $c2, @{[(DAYNAMES)[$dayofweek]]};
-    }
-
     $output .=
-      '<TR>' . join('', map { '<TD' . (length($_) < 52 ? ' ALIGN="CENTER"' : '') . ">$_</TD>" } @output) . "</TR>\n";
+        '<TR>'
+      . join('', map { '<TD' . (length($_) < 52 ? ' ALIGN="CENTER"' : '') . ">$_</TD>" } table_row($date1, $cday))
+      . "</TR>\n";
   }
-  $output =~ s/{(.*?)}/ setfont('maroon', $1) /ge;
+  $output .= note('nigra19') if $mode eq 'kal';
+  $output =~ s/{(.+?)}/ setfont('maroon', $1) /ge;
   $output . "</TABLE></P>\n";
 }
 
@@ -203,16 +186,12 @@ PrintTag
 sub html_output {
   my ($mode) = @_;
 
-  html_header();
-
+  print html_header();
   print kalendar_table($kyear, $kmonth, $mode);
 
   print "<P ALIGN='CENTER'>\n";
   print htmlInput('version', $version1, 'options', 'versions', "document.forms[0].submit()");
-
-  if ($compare) {
-    print htmlInput('version2', $version2, 'options', 'versions', "document.forms[0].submit()");
-  }
+  print htmlInput('version2', $version2, 'options', 'versions', "document.forms[0].submit()") if $compare;
   print "</P><P ALIGN='CENTER'>\n" . bottom_links_menu() . "</P>\n";
 
   # if ($Readings) { Readings(); } # not reachable
