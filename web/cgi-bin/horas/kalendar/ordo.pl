@@ -67,15 +67,30 @@ sub ordo_entry {
   ($c1, $c2);
 }
 
+# prepare row
+sub table_row {
+  my ($date) = shift;
+  our ($version1, $compare, $version2, $dayofweek);
+
+  my $d = substr($date, 3, 2) + 0;
+  my ($c1, $c2) = ordo_entry($date, $version1, $compare);
+
+  if ($compare) {
+    my ($c21, $c22) = ordo_entry($date, $version2, $compare);
+    $c1 .= "<br/>$c21";
+    $c2 .= "<br/>$c22";
+  }
+  (qq(<A HREF=# onclick="callbrevi('$date');">$d</A>), $c1, $c2, @{[(DAYNAMES)[$dayofweek]]});
+}
+
 # html_header_ordo
 sub html_header {
   htmlHead("Ordo: @{[(MONTHNAMES)[$kmonth]]} $kyear");
 
-  print do {    # print headline
-    my $vers = $version1;
-    $vers .= ' / ' . $version2 if $compare;
+  my $vers = $version1;
+  $vers .= ' / ' . $version2 if $compare;
 
-    my $output = << "PrintTag";
+  my $output = << "PrintTag";
 <H1>
 <FONT COLOR="MAROON" SIZE="+1"><B><I>Divinum Officium</I></B></FONT>&nbsp;
 <FONT COLOR="RED" SIZE="+1">$vers</FONT>
@@ -92,18 +107,17 @@ sub html_header {
 </P><P ALIGN="CENTER">
 PrintTag
 
-    my @mmenu;
-    push(@mmenu, "<A HREF=# onclick=\"setkm(-1)\">«</A>\n") if $kmonth == 1;
+  my @mmenu;
+  push(@mmenu, "<A HREF=# onclick=\"setkm(-1)\">«</A>\n") if $kmonth == 1;
 
-    foreach my $i (1 .. 12) {
-      my $mn = substr((MONTHNAMES)[$i], 0, 3);
-      $mn = "<A HREF=# onclick=\"setkm($i)\">$mn</A>\n" unless $i == $kmonth;
-      push(@mmenu, $mn);
-    }
-    push(@mmenu, "<A HREF=# onclick=\"setkm(13)\">»</A>\n") if $kmonth == 12;
-
-    $output . join('&nbsp;' x 3, @mmenu) . '</P>';
+  foreach my $i (1 .. 12) {
+    my $mn = substr((MONTHNAMES)[$i], 0, 3);
+    $mn = "<A HREF=# onclick=\"setkm($i)\">$mn</A>\n" unless $i == $kmonth;
+    push(@mmenu, $mn);
   }
+  push(@mmenu, "<A HREF=# onclick=\"setkm(13)\">»</A>\n") if $kmonth == 12;
+
+  $output . join('&nbsp;' x 3, @mmenu) . '</P>';
 }
 
 1;

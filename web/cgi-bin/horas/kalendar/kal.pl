@@ -2,7 +2,7 @@ use utf8;
 
 # required by kalendar.pl when dispaly Kalendarium
 
-# roman numbers only to 1-29 used by romanday
+# roman numbers only to 1-29 used by romanday & epactcycle
 sub romannumber {
   my $d = $_[0];
   my $o;
@@ -18,7 +18,8 @@ sub romannumber {
     if ($d > 4) { $o .= 'v'; $d -= 5 }
     $o .= 'i' x $d;
   }
-  $o =~ s/i$/j/r;
+  $o =~ s/i$/j/ unless $version =~ /196/;
+  $o;
 }
 
 # romanday for mm-dd
@@ -52,22 +53,26 @@ sub epactcycle {
   use integer;
   use constant STARDAYS => (1, 31, 60, 90, 119, 149, 178, 208, 237, 267, 296, 326, 355, 385);
 
+  return '19 {xx}' if $d == 365;
+
   my $i = 0;
   while ($d > (STARDAYS)[$i++]) { }
 
   my $r = (STARDAYS)[$i - 1] - $d;
   return '{*}' unless $r;
 
+  my $o = '';
+
   if ($i % 2) {
     $r++;
-    return '25 {xxvj}' if $r == 26;
-    return '{xxv} {xxiv}' if $r == 25;
-    $r-- if $r < 25;
+    $o = '25. ' if $r == 26;
+    $o = '{xxv.} ' if $r == 25;
+    $r-- if $r < 26;
   } else {
-    return '25 {xxv}' if $r == 25;
+    $o = '25. ' if $r == 25;
   }
 
-  '{' . romannumber($r) . '}';
+  "$o\{" . romannumber($r) . '}';
 }
 
 # latin uppercase
@@ -79,31 +84,24 @@ sub latin_uppercase {
 
 # findkalentry - read rank from sancti file
 sub findkalentry {
-  my ($entry, $ver, $comm) = @_;
+  my ($entry, $ver) = @_;
   our $winner = subdirname('Sancti', $ver) . $entry;
   my %saint = %{setupstring('Latin', "$winner.txt")};
 
-  unless ($comm) {
-    my @srank = split(";;", $saint{Rank});
+  my @srank = split(";;", $saint{Rank});
 
-    return '' unless $srank[0];
+  return '' unless $srank[0];
 
-    our $rank = @srank[2];
-    my $rankname = rankname('Latin');
+  our $rank = @srank[2];
+  my $rankname = rankname('Latin');
 
-    # TODO: get rid of below line when setupstrin respects version conditionals
-    $rankname =~ s/IV. classis/Memoria/ if $ver =~ /Monastic|Ordo Preadicatorum/;
+  # TODO: get rid of below line when setupstrin respects version conditionals
+  $rankname =~ s/IV. classis/Memoria/ if $ver =~ /Monastic|Ordo Preadicatorum/;
 
-    (
-      setfont(liturgical_color($srank[0]), $rank > 4 ? latin_uppercase($srank[0]) : $srank[0]),
-      setfont('1 maroon', ' ' . $rankname),
-    );
-  } else {
-    my $c = $saint{Commemoratio} || $saint{'Commemoratio 2'} || '';
-    $c =~ s/\n.*//s;
-    $c =~ s/^!//;
-    ' ' . setfont(liturgical_color($c), $c);
-  }
+  (
+    setfont(liturgical_color($srank[0]), $rank > 4 ? latin_uppercase($srank[0]) : $srank[0]),
+    setfont('1 maroon', ' ' . $rankname),
+  );
 }
 
 # prepare one day entry in kalendar
@@ -118,35 +116,41 @@ sub kalendar_entry {
 
   my $output = join(' ', findkalentry($s, $ver));
 
-  if ($ver =~ /196/ && $date =~ /01-(?:0[2-57-9]|1[012])/) {
-    $output = '';
-  }
-
   while (my $ke = shift @kalentries) {
     my ($d1, $d2) = findkalentry($ke, $ver);
     $output .= ' Com. ' . $d1;
   }
 
-  # TODO: it will be obsolete when all Commemorations will be in separated files
-  $output .= findkalentry($s, $ver, 'commemoratio');
+  $output;
 }
 
-# bissectal note for kalendar
-sub bissextal {
-  my $output = '<TR><TD COLSPAN="' . (5 + $compare) . '" ALIGN="LEFT">';
+# prepare row
+sub table_row {
+  my ($date, $cday) = @_;
+  my ($d) = substr($date, 3, 2) + 0;
+  our ($version1, $compare, $version2);
+
+  my ($c) = kalendar_entry($date, $version1);
+  $c .= '&nbsp;<br/>' . (kalendar_entry($date, $version2) || '&nbsp;') if $compare;
+  (epactcycle($cday, substr($date, 0, 2)), domlet(), romanday($date), $d, $c);
+}
+
+# notes for kalendar: bissectal, nigra19
+sub note {
+  my ($note) = shift;
   my %comm = %{setupstring($lang1, 'Psalterium/Comment.txt')};
-  $output .= $comm{'bissextal note'} . '</TD></TR>';
+  my $output = '<TR><TD COLSPAN="5" ALIGN="LEFT">';
+  $output .= setfont('1', $comm{"$note note"}) . '</TD></TR>';
 }
 
 # html_header
 sub html_header {
   htmlHead('Kalendarium');
 
-  print do {    # print headline
-    my $vers = $version1;
-    $vers .= ' / ' . $version2 if $compare;
+  my $vers = $version1;
+  $vers .= ' / ' . $version2 if $compare;
 
-    my $output = << "PrintTag";
+  my $output = << "PrintTag";
 <A ID="top"></A>
 <H1>
 <FONT COLOR="MAROON" SIZE="+1"><B><I>Kalendarium</I></B></FONT>&ensp;
@@ -159,14 +163,13 @@ sub html_header {
 </P><P ALIGN="CENTER">
 PrintTag
 
-    foreach my $i (1 .. 12) {
-      my $mn = substr((MONTHNAMES)[$i], 0, 3);
-      $mn = qq(<A HREF="#$mn">$mn</A>) unless $i == 1;
-      $output .= "$mn&nbsp;&ensp;";
-    }
-
-    $output .= '</P>';
+  foreach my $i (1 .. 12) {
+    my $mn = substr((MONTHNAMES)[$i], 0, 3);
+    $mn = qq(<A HREF="#$mn">$mn</A>) unless $i == 1;
+    $output .= "$mn&nbsp;&ensp;";
   }
+
+  $output .= '</P>';
 
 }
 
