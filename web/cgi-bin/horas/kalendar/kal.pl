@@ -96,7 +96,7 @@ sub findkalentry {
   my $rankname = rankname('Latin');
 
   # TODO: get rid of below line when setupstrin respects version conditionals
-  $rankname =~ s/IV. classis/Memoria/ if $ver =~ /Monastic|Ordo Preadicatorum/;
+  $rankname =~ s/IV. classis/Memoria/ if $ver =~ /Monastic|Ordo Praedicatorum/;
 
   (
     setfont(liturgical_color($srank[0]), $rank > 4 ? latin_uppercase($srank[0]) : $srank[0]),
@@ -115,6 +115,8 @@ sub kalendar_entry {
   my $s = shift @kalentries;
 
   my $output = join(' ', findkalentry($s, $ver));
+
+  $output = '' if $ver =~ /196/ && $date =~ /01-(?:0[7-9]|1[012])/;
 
   while (my $ke = shift @kalentries) {
     my ($d1, $d2) = findkalentry($ke, $ver);
