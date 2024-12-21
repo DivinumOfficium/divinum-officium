@@ -85,6 +85,15 @@ set_runtime_options('general');       #$expand, $version, $lang2
 set_runtime_options('parameters');    # priest, lang1 ... etc
 
 $popup = strictparam('popup');
+
+if ($popup !~ /^[\$\&][\w ]+$/) {
+  print $q->header(
+    -type => 'text/plain',
+    -status => '400 Bad request',
+  );
+  exit;
+}
+
 $background = ($whitebground) ? ' class="contrastbg"' : '';
 $border = 0;
 $textwidth = 90;
