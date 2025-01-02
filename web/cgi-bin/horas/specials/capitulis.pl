@@ -10,7 +10,7 @@ sub capitulum_major {
   my $name = 'Capitulum Laudes';    # same for Vespera
                                     # special cases
   $name = 'Capitulum Vespera 1' if $winner =~ /12-25/ && $vespera == 1;
-  $name = 'Capitulum Vespera' if $winner =~ /C12/;
+  $name = 'Capitulum Vespera' if $winner =~ /C12/ && $hora eq 'Vespera';
 
   setbuild('Psalterium/Special/Major Special', $name, 'Capitulum ord');
 
