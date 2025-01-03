@@ -1,0 +1,121 @@
+[Pater secreto]
+/:«Pater Noster» se říká potichu až do «Et ne nos indúcas in tentatiónem:»:/
+
+
+[Pater totum secreto]
+/:«Pater Noster» se říká celé potichu.:/
+
+[Credo secreto]
+/:«Credo» se říká potichu až do «Carnis resurrectiónem.»:/
+
+[Pater post]
+/:Poté se říká pouze «Pater Noster» potichu, nenásleduje-li jiná Hodinka.:/
+
+[Pater post V]
+/:A pokud se takto zakončí Officium, řekne se pouze «Pater Noster» potichu.:/
+
+[Secreto_]
+/:potichu:/
+
+[Secreto_C]
+/:Ve Chóru, když se zakončí Malé Mariánské Hodinky, řekne se potichu::/
+
+[Secreto a Laudibus]
+/:Pokud se Matutinum a Laudy říkají odděleně, tehdy se řekne potichu::/
+(sed rubrica monastica)
+/:In Festi Simplicis, et in Officio Ferialis, et si Matutinum a Laudibus separatur, tunc dicitur secreto::/
+(sed rubrica cisterciensis)
+/:Mimo Officium dvanáctilekcového svátku se říká potichu::/
+
+[Clara voce_]
+/:Poté se nahlas řekne Verš::/
+
+[Clara voce_C]
+/:V Chóru se udělá velký Kříž + a na pokyn představeného se ukloníme Oltáři. Poté se nahlas a důstojně řekne Verš::/
+
+[Secus absolute]
+/:Secus absolute incipiuntur, ut sequitur::/
+(sed rubrica ^Trident)
+/:Dicto Hymno:/ Te Deum laudamus /:vel ultimo Responsorio, absolute dicitur Versus::/
+
+[Matutinum]
+!Zbytek se vynechává, pokud se %Laudy% neříkají oddělení.
+(sed rubrica tridentina)
+!Dicto Hymno « Te Deum » aut nono vel tertio Responsorio ejus loco ponitur, statim inchoantur %Laudes%, præterquam in Nocte Nativitatis Domini; quia tunc dicitur Oratio, postea celebratur Missa, ut suo loco notatur.
+
+[Matutinum] (rubrica monastica)
+!Reliqua omittuntur, nisi %Laudes% separandæ sint.
+(sed rubrica tridentina aut rubrica divino)
+!Reliqua omittuntur in Officium duodecim Lectionum, quando immediatæ subsequuntur %Laudes%. Sed in Festi Simplicis, et in Officio Ferialis tam trium, quam unius Lectionis semper dicuntur ut sequitur.
+(sed rubrica cisterciensis)
+!Zbytek se ve dvanáctilekcovém Officiu vynechává, a hned navazují %Laudy%. Avšak jak ve Fériích, tak ve třílekcových Svátcích, v zimě i na jaře se vždy říká následující.
+
+[Deinde secreto]
+/:Pak se říká potichu:/
+
+[PAC ad Completorium]
+/:Pokud po Kompletáři navazuje Matutinum, tehdy se dvakrát řekne:/ Pater noster, Ave Maria /:a:/ Credo, /:a sice jako konec předchozího Officia, a jako začátek Officia následujícího dne.:/
+
+[DefunctV]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Po Nešporách ze dne se říkají %Nešpory za zemřelé%.
+
+[DefunctVC]
+&Dominus_vobiscum
+&Benedicamus_Domino
+&Divinum_auxilium
+! Po Nešporách ze dne se říkají %Nešpory za zemřelé%.
+
+[DefunctLC]
+&Dominus_vobiscum
+&Benedicamus_Domino
+&Divinum_auxilium
+! Po Laudách ze dne se říkají %Laudy za zemřelé%.
+
+[DefunctM]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Po Laudách ze dne se říkají %Matutinum a Laudy za zemřelé%.
+
+[Martyrologium] (rubrica monastica)
+/:Poté se v Chóru čte Martyrologium, což je chvályhodné činit i mimo Chór.:/
+(sed rubrica cisterciensis)
+/:Takto končí Prima. Poté se v Kapitulní síni čte Martyrologium rovnou, bez požehnání. Mimo Klášter se Martyrologium nečte, ale rovnou se začne «Pretiósa.» o něco níže.:/
+
+[Regula] (rubrica monastica)
+/:Mimo Chór je též chvályhodné čísti ze Svaté Řehole; a spolu s ním se říká Krátké čtení.:/
+(sed rubrica cisterciensis)
+/:Když se však recituje soukromě, toto Krátké čtení se používá po celý rok.:/
+
+[Regula ante] (rubrica cisterciensis)
+/:In Capitulo legitur unum caput, vel pars capitis ex Regula S. Benedicti.:/
+
+[examen]
+/:Zpytování svědomí nebo Pater Noster celé potichu.:/
+
+[Preces flexis genibus]
+/:vkleče:/
+
+[Superior] (rubrica cisterciensis)
+/:Představený::/
+
+[Incipit] (rubrica altovadensis)
+/:Po skončení připomínky malých Hodinek Panny Marie se udělá velký Kříž + a na pokyn představeného se ukloníme Oltáři.:/
+
+[IncipitL] (rubrica altovadensis)
+/:Po skončení Matutina či po Připomínce Malého Mariánského Officia před Officiem feriálním či třílekcovým, uděláme velký Kříž + a na pokyn představeného se ukloníme Oltáři.:/
+
+[Antiphona]
+/:začíná se pouze pokud se Officium slaví zpěvem:/
+
+[CompletBMV]
+/:Poté se říká mariánský Kompletář. Po jeho skončení se po celý rok, s výjimkou Čtvrtku a Pátku Svatého týdne, slavně zazpívá:/
+
+[sine Oremus]
+/:a bez:/ Orémus /:::/
+(sed rubrica altovadensis)
+/:a bez:/ Orémus /:pokračuje Hebdomadář.:/
+
+[Conclusio cisterciensis]
+/:A kdykoliv se po skončení Hodinky odchází z Chóru (pokud tedy nenavazuje Mše svatá, nebo po denním Officiu pak Officium Defunctorum, nebo Pohřební obřady, nebo Procesí, nebo Litaniæ, nebo Prosebné dny, atd.) říká se::/

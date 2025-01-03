@@ -34,7 +34,7 @@ sub gethymn {
         $name .= " $tempname";
       }
     }
-    $hymnsource = 'Minor';
+    $hymnsource = $hora eq 'Prima' ? 'Prima' : 'Minor';
     $section = '#' . $section;
   }
 
@@ -85,17 +85,24 @@ sub hymnusmajor {
   if ($hora eq 'Vespera' && $vespera == 3) {
     ($hymn, $cr) = getproprium("$name 3", $lang, $seasonalflag, 1);
   }
+
+  if ($version =~ /cist/i && $hora =~ /Vespera/i && $winner{Rule} =~ /C[45]/ && $winner{Rule} =~ /Hac die/i) {
+    $name = "Hymnus Vespera Hac die";
+  }
   if (!$hymn) { ($hymn, $cr) = getproprium("$name", $lang, $seasonalflag, 1); }
 
   if (!$hymn) {
     $name = gettempora('Hymnus major') . " $hora";
-    $name = 'Day0 Laudes2'
+    $name .= ' hiemalis'
       if (
-        $name =~ /Day0 Laudes/i
+           $name =~ /Day0/i
+        && ($name =~ /Laudes/i || $version =~ /cist/i)
         && ( $dayname[0] =~ /Epi[2-6]/
           || $dayname[0] =~ /Quadp/i
-          || $winner{Rank} =~ /(Octobris|Novembris)/i)
+          || $winner{Rank} =~ /Novembris/i
+          || ($winner{Rank} =~ /Octobris/i && $version !~ /cist/i))
       );
+    setbuild1('Hymnus', $name);
   }
   ($hymn, $name);
 }
@@ -120,7 +127,7 @@ sub doxology {
     {
       $dname = $1;
     } elsif (($month == 8 && $day > 15 && $day < 23 && $version !~ /1955|1963/i)
-      || ($version !~ /1570|1617/ && $month == 12 && $day > 8 && $day < 16 && $dayofweek > 0))
+      || ($version !~ /1570|1617|altovadensis/i && $month == 12 && $day > 8 && $day < 16 && $dayofweek > 0))
     {
       $dname = 'Nat';
     } else {

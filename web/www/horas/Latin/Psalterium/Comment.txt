@@ -22,6 +22,8 @@ omittitur
 per annum
 paschale
 Tridentinum
+cisterciense
+altovadense
 
 [Lectio]
 Commemoratio Feriae
@@ -63,6 +65,16 @@ II. classis
 I. classis
 I. classis
 
+[Festa] (rubrica cisterciensis)
+none
+iij. Lect. et M.
+xij. Lect. et M.
+MM. min.
+MM. maj.
+Serm. min.
+Serm. maj.
+Serm. maj.
+
 [Dominicae]
 Duplex I. classis
 Semiduplex Dominica I. classis
@@ -99,6 +111,9 @@ ordinis
 
 [classis]
 classis
+
+[privilegiata]
+privilegiata
 
 [bissextal note]
 {In anno bissextili Februarius est dierum} 29, {et Festum S. Matthiæ celebratur die} 25,

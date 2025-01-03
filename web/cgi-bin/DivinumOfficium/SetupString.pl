@@ -14,15 +14,17 @@ our $version, $datafolder;
 our %setupstring_caches_by_version;
 
 # Pseudo constants to be used in vero() sub
-# Commone Summorum Pont. introduced in 1942 only (=> not for Monastic 1930)
+# Commune Summorum Pont. introduced in 1942 only (=> not for Monastic 1930)
 my %subjects = (
   rubricis => sub {$version},
   rubrica => sub {$version},
   tempore => \&get_tempus_id,
   missa => sub { our $missanumber },
-  communi => sub { {summpont => ($version =~ /1960/ || $version =~ /1955/ || $version =~ /^Divino/)} },
+  communi => sub { our $version },
   'die' => \&get_dayname_for_condition,
   feria => sub { our $dayofweek + 1 },
+  commune => sub {$commune},
+  officio => sub { $dayname[1]; },
 );
 my %predicates = (
   tridentina => sub { shift =~ /Trident/ },
@@ -36,7 +38,8 @@ my %predicates = (
   tertia => sub { shift == 3 },
   longior => sub { shift == 1 },
   brevior => sub { shift == 2 },
-  'summorum pontificum' => sub { ${shift()}{summpont} },
+  'summorum pontificum' => sub { shift =~ /^Divino|1955|1960/ },
+  feriali => sub { shift =~ /feria|vigilia/i; },
 );
 
 # Constants specifying which @-directives to resolve when calling &setupstring.
@@ -203,6 +206,7 @@ sub get_dayname_for_condition {
       $month == 11
       && ($day == 2 || ($day == 3 && $dayofweek == 1) || ($day == 1 && day_of_week(11, 1, $year) != 6 && $vesp_or_comp))
     );
+  return 'Nicolai' if $month == 12 && $day == 6;
   return '';
 }
 
@@ -662,7 +666,12 @@ sub officestring($$;$) {
     || $fname =~ m{^Tempora[^/]*/Pent0[1-5]})
   {
     %s = %{setupstring($lang, $fname)};
-    if ($version =~ /196/ && $s{Rank} =~ /Feria.*?(III|IV) Adv/i && $day > 16) { $s{Rank} =~ s/;;2.1/;;4.9/; }
+
+    if ($version =~ /196/ && $s{Rank} =~ /Feria.*?(III|IV) Adv/i && $day > 16) {
+      $s{Rank} =~ s/;;2\.1/;;4.9/;
+    } elsif ($version =~ /cist/i && $s{Rank} =~ /Feria.*?(III|IV) Adv/i && $day > 16) {
+      $s{Rank} =~ s/;;1\.15/;;2.1/;
+    }
     return \%s;
   }
 

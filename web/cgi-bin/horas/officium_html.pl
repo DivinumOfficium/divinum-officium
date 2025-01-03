@@ -33,7 +33,7 @@ sub headline {
   # add warning for uncompleted versions
   $output .=
     "<H2><FONT COLOR='RED' SIZE='+1'>Please note that the database for this version ($vers) is still incomplete and under construction.</FONT></H2>\n"
-    if $vers =~ /1617|1930|1962/;
+    if $vers =~ /1617|1930|1962|Cist/;
 
   if ($variant eq 'P') {
     $output .= par_c(<< "PrintTag");

@@ -4,12 +4,6 @@
 12 lectiones
 Invit2
 
-[Responsory Vespera 1]
-@Psalterium/Special/Major Special:Day6M Vespera:3-8
-
-[Responsory Vespera]
-@Psalterium/Special/Major Special:Day0M Vespera:3-8
-
 [Ant Matutinum 3N]
 Miserére mei, Fili David! † Quid vis ut fáciam tibi? Dómine, ut vídeam.
 V. Exaltáre Dómine in virtúte tua.
@@ -86,15 +80,3 @@ R. Témpore quo prædíxerat ei Deus.
 
 [Responsory12]
 @Tempora/Quadp3-0:Responsory9
-
-[Responsory Laudes]
-@Psalterium/Special/Major Special:Day0M Laudes:3-8
-
-[Responsory TertiaM]
-@Psalterium/Special/Minor Special:Dominica Tertia:s/.*_.//s
-
-[Responsory SextaM]
-@Psalterium/Special/Minor Special:Dominica Sexta:s/.*_.//s
-
-[Responsory NonaM]
-@Psalterium/Special/Minor Special:Dominica Nona:s/.*_.//s

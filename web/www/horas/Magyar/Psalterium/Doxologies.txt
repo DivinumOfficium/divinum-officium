@@ -5,6 +5,9 @@ Atya, s kegyes Lélek, neked,
 Most és örök időkön át.
 Ámen.
 
+[NatT]
+@:Nat
+
 [Epi]
 Dicsőség teneked Urunk,
 Ki megjelentél Nemzeteknek,
@@ -12,12 +15,18 @@ Atya, s kegyes Lélek, neked,
 Most és örök időkön át.
 Ámen.
 
+[EpiT]
+@:Epi
+
 [Pasch]
 Atyaistennek tisztelet
 S Fiának, ki feltámadott
 S a Vigasztalónak velük
 Most és örök időkön át.
 Ámen.
+
+[PaschT]
+@:Pasch
 
 [Asc]
 Dicsőség neked Jézusunk,
@@ -36,12 +45,8 @@ S a Vigasztalónak velük,
 Most és örök időkön át.
 Ámen.
 
-[Corp]
-Dicsőség teneked Urunk,
-Kinek a Szűz szülőanyád,
-Atya, s kegyes Lélek, neked,
-Most és örök időkön át.
-Ámen.
+[PentT]
+@:Pent
 
 [Heart]
 Dicsőség teneked Urunk,
@@ -49,3 +54,6 @@ Kinek szíve kegyelmet ont,
 Atya, s kegyes Lélek, neked,
 Most és örök időkön át.
 Ámen.
+
+[HeartT]
+@:Heart

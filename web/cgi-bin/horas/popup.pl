@@ -64,6 +64,7 @@ require "$Bin/horas.pl";
 require "$Bin/horasscripts.pl";
 require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
+require "$Bin/altovadum.pl";
 
 binmode(STDOUT, ':encoding(utf-8)');
 

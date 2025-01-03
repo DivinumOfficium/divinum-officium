@@ -36,13 +36,13 @@ Votive~>$votive~>Optionmenu~>votives;;
 tota,psalteria,propria,lineamenta
 
 [languages]
-Latin,Dansk,Deutsch,English,Español/Espanol,Français/Francais,Italiano,Magyar,Polski,Português/Portugues,Latin-Bea,Polski-Newer
+Latin,English,Čeština/Bohemice,Dansk,Deutsch,Español/Espanol,Français/Francais,Italiano,Magyar,Polski,Português/Portugues,Latin-Bea,Polski-Newer
 
 [versions]
-Tridentine - 1570,Tridentine - 1888,Tridentine - 1906,Divino Afflatu - 1954,Reduced - 1955,Rubrics 1960 - 1960,Rubrics 1960 - 2020 USA,Monastic - 1617/Monastic Tridentinum 1617,Monastic - 1930/Monastic Divino 1930,Monastic - 1963,Ordo Praedicatorum - 1962
+Tridentine - 1570,Tridentine - 1888,Tridentine - 1906,Divino Afflatu - 1954,Reduced - 1955,Rubrics 1960 - 1960,Rubrics 1960 - 2020 USA,Monastic - 1617/Monastic Tridentinum 1617,Monastic - 1930/Monastic Divino 1930,Monastic - 1963,Ordo Cisterciensis - 1951/Monastic Tridentinum Cisterciensis 1951,Ordo Cisterciensis - Abbatia B.M.V. de Altovado/Monastic Tridentinum Cisterciensis Altovadensis,Ordo Praedicatorum - 1962
 
 [votives]
-Hodie,Apostolorum/C1,Evangelistarum/C1a,Unius Martyris/C2,Plurimorum Martyrum/C3,Confessoris Pontificis/C4,Doctorum Pontificium/C4a,Confessoris non Pontificis/C5,Doctoris non Pontificis/C5a,Unam Virginum/C6,Plures Virgines/C6a,Non Virginum Martyrum/C7,Non Virginum non Martyrum/C7a,Dedicationis Ecclesiae/C8,Officium defunctorum/C9,Beata Maria in Sabbato/C10,Beatae Mariae Virginis/C11,Officium parvum Beatae Mariae Virginis/C12
+Hodie,Apostolorum/C1,Evangelistarum/C1a,Unius Martyris/C2,Plurimorum Martyrum/C3,Confessoris Pontificis/C4,Doctorum Pontificium/C4a,Confessoris non Pontificis/C5,Doctoris non Pontificis/C5a,Unam Virginum Martyrum/C6,Plures Virgines Martyres/C6a,Unam Virginum tantum/C6b,Unam non Virginum Martyrum/C7,Unam non Virginum nec Martyrum/C7a,Plures non Virgines Martyres/C7b,Dedicationis Ecclesiae/C8,Officium defunctorum/C9,Beata Maria in Sabbato/C10,Beatae Mariae Virginis/C11,Officium parvum Beatae Mariae Virginis/C12
 
 [psalmversion]
 accented,plain
@@ -62,10 +62,12 @@ C4,Commune Confessoris Pontificis,
 C4a,Commune Doctorum Pontificium,
 C5,Commune Confessoris non Pontificis,
 C5a,Commune Doctoris non Pontificis,
-C6,Commune unam Virginum,
-C6a,Commune plures Virgines
-C7,Commune non Virginum, Martyrum
-C7a,Commune non Virginum, non Martyrum
+C6,Commune unam Virginum, Martyrum,
+C6a,Commune plures Virgines,
+C6b,Commune unam Virginum tantum,
+C7,Commune non Virginum, Martyrum,
+C7a,Commune non Virginum, non Martyrum,
+C7b,Commune plures non Virgines, Martyres,
 C8,Commune Dedicationis Ecclesiae
 C9,Officium defunctorum
 C10,Beata Maria in Sabbato

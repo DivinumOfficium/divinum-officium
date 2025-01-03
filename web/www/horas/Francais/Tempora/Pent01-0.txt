@@ -9,10 +9,38 @@ Louange à Dieu le Père * et au Fils qui Lui est égal et que notre bouche fass
 Tout est de Lui, * tout est par Lui, tout est en Lui : à Lui la gloire dans tous les siècles.;;116
 
 [Hymnus Vespera]
-@Psalterium/Special/Major Special:Hymnus Day6 Vespera
+{:H-VespFeria:}v. Déjà le soleil de feu s’en va :
+ô vous, lumière éternelle, Unité,
+Trinité bienheureuse, versez
+votre amour dans nos cœurs.
+_
+Le matin, nous chantons vos louanges,
+le soir, nous vous prions encore ;
+daignez, nous vous en supplions,
+que nous vous louions parmi les habitants des cieux.
+_
+Au Père, en même temps au Fils,
+et à vous, Esprit-Saint,
+comme autrefois, ainsi toujours
+gloire dans tous les siècles.
+Ainsi soit-il.
 
 [HymnusM Vespera]
-@Psalterium/Special/Major Special:HymnusM Day6 Vespera
+{:H-VespFeria:}v. O Lumière, bienheureuse Trinité,
+Qui êtes souveraine Unité,
+Le soleil flamboyant se retire,
+Mettez la lumière en nos cœurs.
+_
+C’est vous que le matin nous chantons,
+C’est vous que nous prions le soir :
+C’est vous que, pour tous les siècles
+Notre prière de gloire veut louer.
+_
+Gloire à Dieu le Père,
+Gloire à son Fils unique,
+Avec l’Esprit consolateur,
+Maintenant et pour l’éternité.
+Ainsi soit-il.
 
 [Versum 1]
 V. Bénissons le Père et le Fils ainsi que l’Esprit-Saint.
@@ -165,7 +193,7 @@ R. Bénissons le Père et le Fils avec le Saint-Esprit :
 V. Vous êtes béni, Seigneur, dans le firmament du ciel, et louable, et glorieux dans les siècles.
 R. Louons-le et exaltons-le souverainement dans les siècles.
 
-[Lectio8](rubrica 1960)
+[Lectio8] (rubrica 1960)
 Nous ne disons point, comme quelques-uns l’ont imaginé, que le Fils de Dieu est une extension de quelque partie de Dieu ; nous n’admettons pas non plus un Verbe sans réalité, tel qu’est le simple son de la voix ; mais nous croyons que les trois appellations et les trois personnes ont une même essence, une même majesté, une même puissance. Nous confessons donc un seul Dieu, parce que l’unité de la majesté nous défend de nommer plusieurs Dieux.
 
 [Lectio8a]
@@ -190,12 +218,14 @@ Homélie de saint Augustin, Évêque.
 Il y a deux œuvres de miséricorde qui délivrent les âmes et que le Seigneur nous propose brièvement dans l’Évangile : « Remettez et il vous sera remis, donnez et il vous sera donné. » Cette parole, « remettez et il vous sera remis » regarde le pardon des offenses ; cette autre, « donnez et il vous sera donné » regarde l’obligation de faire du bien au prochain. Pour ce qui concerne le pardon, d’une part, tu désires que ton péché te soit pardonné, et d’une autre part, tu as à pardonner à ton prochain. Et pour ce qui regarde le devoir de la bienfaisance, un mendiant te demande l’aumône, et tu es toi-même le mendiant de Dieu. Tous en effet, nous sommes, lorsque nous prions, les mendiants de Dieu ; nous nous tenons à la porte de ce père de famille grand et puissant, nous nous y prosternons, nous gémissons dans nos supplications, nous voulons recevoir un don : et ce don, c’est Dieu lui-même. Que te demande le mendiant ? Du pain. Et toi, que demandes-tu à Dieu, sinon le Christ qui a dit : « Je suis le pain vivant, qui suis descendu du ciel ». Voulez-vous qu’il vous soit pardonné ? Remettez et il vous sera remis. Voulez-vous recevoir ? Donnez et l’on vous donnera.
 &teDeum
 
-[Lectio9](rubrica 1960)
+[Lectio9] (rubrica 1960)
 Enfin nous nommons distinctement, conformément aux règles catholiques du langage, le Père et le Fils, mais nous ne pouvons ni ne devons dire deux Dieux. Ce n’est pas que le Fils de Dieu ne soit Dieu, étant vrai Dieu de Dieu, mais parce que nous savons qu’il n’a point d’autre principe que son Père, nous disons qu’il n’y a qu’un Dieu. C’est là ce que nous ont transmis les Prophètes et les Apôtres ; c’est là ce que le Seigneur lui-même nous a enseigné, quand il a dit : « Moi et mon Père, nous sommes une seule chose. » Par ces mots « une seule chose, » il exprime, comme je l’ai dit, l’unité de la divinité ; et par ceux-ci : « nous sommes, » il marque la pluralité des personnes.
 &teDeum
 
 [Capitulum Laudes]
-@Psalterium/Special/Major Special:Day6 Vespera
+!Rom 11:33
+v. Ô profondeur des richesses de la sagesse et de la science de Dieu : Que ses jugements sont incompréhensibles, et ses voies impénétrables.
+$Deo gratias
 
 [Hymnus Laudes]
 v. O Vous, Unité de la Trinité,
@@ -213,9 +243,6 @@ et à son Fils unique,
 ainsi qu’à l’Esprit Paraclet,
 maintenant et dans tous les siècles.
 Ainsi soit-il.
-
-[Versum 2]
-@:Versum 1
 
 [Ant 2]
 Qu’elle soit bénie * maintenant et toujours et dans les siècles infinis, la sainte et indivisible Trinité, qui a créé et qui gouverne toutes choses.
@@ -261,10 +288,6 @@ R. Vous êtes béni, Seigneur, * Au plus haut des cieux.
 _
 V. Par le Verbe du Seigneur les cieux ont été faits.
 R. Et l'armée des cieux par le Souffle de sa bouche.
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
 
 [Responsory Nona]
 R.br. Par le Verbe du Seigneur * Les cieux ont été faits.

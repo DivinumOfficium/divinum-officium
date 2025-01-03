@@ -120,10 +120,16 @@ sub prayer {
   my $lang = shift;
   my $version = $main::version;
 
+  my $prayer =
        $_prayers{"$lang$version"}{$name}
     || $_prayers{"English$version"}{$name}
     || $_prayers{"Latin$version"}{$name}
     || $name;
+
+  if ($version =~ /cist/i && $name !~ /Pater Ave|Incipit|clara|bene.*Final/i) {
+    $prayer =~ s/\++ //g;
+  }
+  return $prayer;
 }
 
 #*** rubric($name)

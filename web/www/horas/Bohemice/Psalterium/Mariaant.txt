@@ -1,0 +1,107 @@
+[Advent]
+v. Matko Páně, nebes bráno, hvězdo mořská, vzácná schráno,
+přispěj lidu ku pomoci, aby povstal z hříchů noci.
+Příroda to zřela v žasu, že se zrodil z tebe v času,
+jenž ti život ráčil dáti, panenství ti věčně přáti.
+Pozdravením Gabriele pozdravujem tebe vřele,
+ty pak, Panno věčně čistá, za nás hříšné vzývej Krista.
+_
+V. Anděl Páně zvěstoval Panně Marii.
+R. A ona počala z Ducha Svatého.
+_
+$Oremus
+v. Pane, poznali jsme andělské poselství o vtělení Krista, tvého syna; Vlej nám, prosíme, do duše svou milost, ať nás jeho umučení a kříž přivede ke slávě vzkříšení. Skrze Krista, našeho Pána. Amen.
+
+[Nativiti]
+v. Matko Páně, nebes bráno, hvězdo mořská, vzácná schráno,
+přispěj lidu ku pomoci, aby povstal z hříchů noci.
+Příroda to zřela v žasu, že se zrodil z tebe v času,
+jenž ti život ráčil dáti, panenství ti věčně přáti.
+Pozdravením Gabriele pozdravujem tebe vřele,
+ty pak, Panno věčně čistá, za nás hříšné vzývej Krista.
+_
+V. Po porodu, Panno, jsi zůstala neporušená.
+R. Svatá Boží Rodičko, přimlouvej se za nás.
+_
+$Oremus
+v. Bože, jenž jsi panenství blahoslavené Panny Marie požehnal a tak
+lidstvu udělil milost věčně spásy, dej, prosíme, abychom se přesvědčovali, že se za nás přimlouvá ta, jejímž prostřednictvím jsme obdrželi původce života, našeho Pána, Ježíše Krista, tvého Syna. Amen.
+
+[Quadragesimae]
+v. Zdráva buď, Královno nebe
+andělů sbory ctí tebe.
+Zdráva buď, nebeská bráno,
+z níž světu Světlo je dáno.
+_
+Plesej Panno vyvolená,
+nade všechny oslavená,
+zdráva buď, Panno přečistá,
+přimluv se za nás u Krista. 
+_
+V. Učiň, Panno svatá, abych Tě důstojně chválil.
+R. Uděl mi sílu proti tvým nepřátelům.
+$Oremus
+v. Uděl nám, svým služebníkům, prosíme, Pane Bože, stálé zdraví duše i těla, a na slavnou přímluvu blahoslavené a neporušené Panny Marie vysvoboď nás z nynější strasti a dej nám dojíti věčně blaženosti. Skrze Krista, našeho Pána. Amen.
+
+[Paschalis]
+v. Raduj se, Královno nebeská, aleluja,
+protože splnil Pán slova svá, aleluja:
+z mrtvých vstal, Matko, Ježíš tvůj, aleluja:
+u něho za nás oroduj, aleluja.
+_
+V. Raduj se a vesel, Panno Maria, aleluja,
+R. neboť Pán vpravdě z mrtvých vstal, aleluja.
+$Oremus
+v. Bože, vzkříšením svého Syna, našeho Pána Ježíše Krista, jsi naplnil svět radostí; na přímluvu jeho Rodičky, Panny Marie, dej, ať dosáhneme radostí života věčného. Skrze Krista, našeho Pána.
+R. Amen
+
+[Postpentecost]
+v. Zdrávas, Královno, matko milosrdenství; 
+živote, sladkosti a naděje naše, buď zdráva. 
+K tobě voláme, vyhnaní synové Evy. 
+K tobě vzdycháme, lkajíce a plačíce 
+v tomto slzavém údolí.
+_ 
+A proto, orodovnice naše, 
+obrať k nám své milosrdné oči. 
+A Ježíše, požehnaní plod života svého, 
+nám po tomto putování ukaž. 
+Ó milostivá, ó přívětivá, ó přesladká Panno Maria.
+_
+V. Zdrávas, Maria, milosti plná.
+R. Pán s tebou.
+$Oremus
+v. Všemohoucí, věčný Bože, jenž jsi působením Svatého Ducha připravil tělo i duši slavné Marie Panny za důstojný příbytek svého Syna † dej nám, kdo se těšíme vzpomínkou na ni * abychom její přímluvou unikli neustálým zlým událostem i věčné smrti. Skrze téhož Krista, našeho Pána. R. Amen.
+
+[Ant ad S_Dominicum]
+Ant. Ó, Světlo Církve, učiteli pravdy, růže moudrosti, slonová kosti čistoty; vodu moudrosti jsi vyléval zdarma, kazateli milosti, připoj nás k blaženým. (Alleluja.)
+_
+V. Oroduj za nás, svatý Otče Dominiku. (Alleluja.)
+R. Abychom hodni byli učiněni zaslíbení Kristových. (Alleluja.)
+_
+$Oremus
+v. Uděl, prosíme, všemohoucí Bože, abychom, když nás utiskuje tíha našich hříchů, přímluvou svatého Dominika, tvého Vyznavače a našeho Otce, se nám dostalo úlevy. $Per Christum
+_
+$Fidelium animae
+
+[Ant Finalis OP]
+@:Postpentecost:s/.*v\./ Ant. / s/.V\..*//s s/$/~ /gm s/~ $/ \(Allelúja.\)\n/s
+_
+@:Quadragesimae:s/.*_.V\./V./s 1-2 s/\.$/. (Allelúja.)/gm
+_
+$Oremus
+@Commune/C10:Oratio:1 s/$/~/ s/^(?:v\.)?/v. /
+$Per Christum
+_
+@:Ant ad S_Dominicum
+
+[Ant Finalis Cist]
+@:Postpentecost:s/V\..*//s s/$/ (Allelúja.)/s
+_
+@Commune/C10:Invit:s/(.*)\, \*.*/V. $1. (Allelúja.)/
+@Commune/C10:Invit:s/.*\* (.*)\./R. $1. (Allelúja.)/
+_
+$Oremus
+v. Všemohoucí, věčný Bože, jenž jsi působením Svatého Ducha připravil tělo i duši slavné Marie Panny za důstojný příbytek svého Syna, § dej nám, kdo se těšíme vzpomínkou na ni * abychom její přímluvou unikli neustálým zlým událostem i věčné smrti. Skrze téhož Krista, našeho Pána.
+R. Amen.
+&Dominus_vobiscum

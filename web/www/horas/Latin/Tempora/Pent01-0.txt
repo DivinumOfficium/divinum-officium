@@ -23,10 +23,38 @@ Laus Deo Patri, * parilíque Proli, et tibi, Sancte, stúdio perénni, Spíritus
 Ex quo ómnia, * per quem ómnia, in quo ómnia: ipsi glória in sǽcula.;;116
 
 [Hymnus Vespera]
-@Psalterium/Special/Major Special:Hymnus Day6 Vespera
+{:H-VespFeria:}v. Jam sol recédit ígneus:
+Tu, lux perénnis, Únitas,
+Nostris, beáta Trínitas,
+Infúnde lumen córdibus.
+_
+Te mane laudum cármine,
+Te deprecámur véspere;
+Dignéris ut te súpplices
+Laudémus inter cǽlites.
+_
+Patri, simúlque Fílio,
+Tibíque, Sancte Spíritus,
+Sicut fuit, sit júgiter
+Sæclum per omne glória.
+Amen.
 
 [HymnusM Vespera]
-@Psalterium/Special/Major Special:HymnusM Day6 Vespera
+{:H-VespFeria:}v. O lux beáta Trínitas,
+Et principális Únitas,
+Jam sol recédit ígneus,
+Infúnde lumen córdibus.
+_
+Te mane laudum cármine,
+Te deprecémur véspere:
+Te nostra supplex glória
+Per cuncta laudet sǽcula.
+_
+Deo Patri sit glória,
+Ejúsque soli Fílio,
+Cum Spíritu Paráclito,
+Et nunc, et in perpétuum.
+Amen.
 
 [Versum 1]
 V. Benedicámus Patrem et Fílium cum Sancto Spíritu.
@@ -201,7 +229,7 @@ R. Laudémus et superexaltémus eum in sǽcula.
 [Lectio8]
 @:Lectio8a
 
-[Lectio8](rubrica 1960)
+[Lectio8] (rubrica 1960)
 @:Lectio8a:s/ Dénique.*//s
 
 [Lectio8a]
@@ -226,7 +254,7 @@ Homilía sancti Augustíni Epíscopi
 Duo sunt ópera misericórdiæ, quæ nos líberant, quæ bréviter ipse Dóminus pósuit in Evangélio: Dimíttite, et dimittétur vobis: date, et dábitur vobis. Dimíttite, et dimittétur vobis, ad ignoscéndum pértinet: Date, et dábitur vobis, ad præstándum benefícium pértinet. Quod ait de ignoscéndo, et tu vis tibi ignósci quod peccas, et habes álium, cui tu possis ignóscere. Rursus, quod pértinet ad tribuéndum benefícium, petit te mendícus, et tu es Dei mendícus. Omnes enim quando orámus, mendíci Dei sumus: ante jánuam magni Patrisfamílias stamus, immo et prostérnimur, súpplices ingemíscimus, áliquid voléntes accípere; et ipsum áliquid ipse Deus est. Quid a te petit mendícus? Panem. Et tu quid petis a Deo, nisi Christum, qui dicit: Ego sum panis vivus, qui de cælo descéndi? Ignósci vobis vultis? ignóscite: Remíttite, et remittétur vobis. Accípere vultis? date, et dábitur vobis.
 &teDeum
 
-[Lectio9](rubrica 1960)
+[Lectio9] (rubrica 1960)
 @:Lectio8a:s/.*(Dénique)/$1/s
 &teDeum
 
@@ -238,7 +266,9 @@ R. Et magnitúdinis ejus non est finis.
 @:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@Psalterium/Special/Major Special:Day6 Vespera
+!Rom 11:33
+v. O Altitúdo divitiárum sapiéntiæ, et sciéntiæ Dei, quam incomprehensibília sunt judícia ejus, et investigábiles viæ ejus!
+$Deo gratias
 
 [Hymnus Laudes]
 v. Tu, Trinitátis Unitas,
