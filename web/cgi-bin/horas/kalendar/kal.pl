@@ -99,7 +99,10 @@ sub findkalentry {
   $rankname =~ s/IV. classis/Memoria/ if $ver =~ /Monastic|Ordo Praedicatorum/;
 
   (
-    setfont(liturgical_color($srank[0]), $rank > 4 ? latin_uppercase($srank[0]) : $srank[0]),
+    setfont(
+      liturgical_color($srank[0]),
+      $rank > 4 && $srank[0] !~ /octava|vigilia/i ? latin_uppercase($srank[0]) : $srank[0],
+    ),
     setfont('1 maroon', ' ' . $rankname),
   );
 }

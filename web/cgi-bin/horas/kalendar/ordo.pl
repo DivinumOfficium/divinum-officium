@@ -6,7 +6,7 @@ sub ordo_entry {
   my ($date, $ver, $compare, $winneronly) = @_;
 
   our $version = $ver;
-  our ($day, $month, $year, $dayname, %scriptura, %commemoratio);
+  our ($day, $month, $year, $dayname, %scriptura, @commemoentries);
 
   precedence($date);
 
@@ -24,6 +24,15 @@ sub ordo_entry {
   ($c2, $h1, $h2) = ('', '', $h1) unless $h2;
   $c2 = setfont($smallblack, "$h1:") if $h1;
   $c2 .= "<I>" . setfont(liturgical_color($h2), " $h2") . "</I>" if $h2;
+
+  if ($c2 && @commemoentries > 1) {
+    for my $ind (1 .. @commemoentries - 1) {
+      my %com = %{setupstring('Latin', "$commemoentries[$ind].txt")};
+      my $comname = $com{Rank};
+      $comname =~ s/\;\;.*//;
+      $c2 .= " <I>&amp; " . setfont(liturgical_color($comname), " $comname") . "</I>" if $comname;
+    }
+  }
 
   $c2 =~ s/Hebdomadam/Hebd/i;
   $c2 =~ s/Quadragesima/Quadr/i;
@@ -54,17 +63,19 @@ sub ordo_entry {
     $c2 .= setfont($smallblack, ' m.t.v.');
   }
 
-  if ( $version !~ /196/
-    && $winner =~ /Sancti/
-    && exists($winner{Lectio1})
-    && $winner{Lectio1} !~ /\@Commune/i
-    && $winner{Lectio1} !~ /\!(Matt|Marc|Luc|Joannes)\s+[0-9]+\:[0-9]+\-[0-9]+/i)
-  {
-    $c2 .= setfont($smallfont, " *L1*");
-  }
+  our $hora;
+  my $temphora = $hora;
+  $hora = 'Vespera';
+  precedence($date);
+  $hora = $temphora;
+  my $cv = $dayname[2];
+  $cv =~ s/.*?(Vespera|A capitulo|$)/$1/;
 
-  $c2 ||= '_' if $compare;
-  ($c1, $c2);
+  if ($compare) {
+    $c2 ||= '_';
+    $cv ||= '_';
+  }
+  return ($c1, $c2, $cv);
 }
 
 # prepare row
@@ -73,14 +84,20 @@ sub table_row {
   our ($version1, $compare, $version2, $dayofweek);
 
   my $d = substr($date, 3, 2) + 0;
-  my ($c1, $c2) = ordo_entry($date, $version1, $compare);
+  my ($c1, $c2, $cv) = ordo_entry($date, $version1, $compare);
 
   if ($compare) {
-    my ($c21, $c22) = ordo_entry($date, $version2, $compare);
+    my ($c21, $c22, $cv2) = ordo_entry($date, $version2, $compare);
     $c1 .= "<br/>$c21";
     $c2 .= "<br/>$c22";
+    $cv .= "<br/>$cv2";
   }
-  (qq(<A HREF=# onclick="callbrevi('$date');">$d</A>), $c1, $c2, @{[(DAYNAMES)[$dayofweek]]});
+  (
+    qq(<A HREF=# onclick="callbrevi('$date');">$d</A>),
+    $c1, $c2,
+    qq(<FONT SIZE="-2">$cv</FONT>),
+    @{[(DAYNAMES)[$dayofweek]]},
+  );
 }
 
 # html_header_ordo
