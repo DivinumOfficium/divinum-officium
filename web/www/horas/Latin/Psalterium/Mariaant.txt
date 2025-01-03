@@ -9,7 +9,7 @@ _
 V. {::}Ángelus Dómini nuntiávit Maríæ.
 R. Et concépit de Spíritu Sancto.
 _
-v. Orémus. 	
+$Oremus 	
 v. Grátiam tuam, quǽsumus, Dómine, méntibus nostris infúnde: ut, qui, Ángelo nuntiánte, Christi Fílii tui incarnatiónem cognóvimus; per passiónem ejus et crucem, ad resurrectiónis glóriam perducámur. Per eúmdem Christum Dóminum nóstrum. Amen.
 
 [Nativiti]
@@ -23,7 +23,7 @@ _
 V. {::}Post partum, Virgo, invioláta permansísti.
 R. Dei Génetrix, intercéde pro nobis.
 _
-v. Orémus. 	
+$Oremus 	
 v. Deus, qui salútis ætérnæ, beátæ Maríæ virginitáte fecúnda, humáno géneri prǽmia præstitísti: tríbue, quǽsumus; ut ipsam pro nobis intercédere sentiámus, per quam merúimus auctórem vitæ suscípere, Dóminum nóstrum Jesum Christum Fílium tuum. Amen.
 
 [Quadragesimae]
@@ -40,7 +40,7 @@ _
 V. {::}Dignáre me laudáre te, Virgo sacráta.
 R. Da mihi virtútem contra hostes tuos.
 _
-v. Orémus. 	
+$Oremus 	
 v. Concéde, miséricors Deus, fragilitáti nostræ præsídium; ut, qui sanctæ Dei Genetrícis memóriam ágimus; intercessiónis ejus auxílio, a nostris iniquitátibus resurgámus. Per eúmdem Christum Dóminum nóstrum. Amen.
 
 [Paschalis]
@@ -52,7 +52,7 @@ _
 V. {::}Gaude et lætáre, Virgo María, allelúja.
 R. Quia surréxit Dóminus vere, allelúja.
 _
-v. Orémus. 	
+$Oremus 	
 v. Deus, qui per resurrectiónem Fílii tui, Dómini nostri Jesu Christi, mundum lætificáre dignátus es: præsta, quǽsumus; ut, per ejus Genetrícem Vírginem Maríam, perpétuæ capiámus gáudia vitæ. Per eúmdem Christum Dóminum nóstrum. Amen.
 
 [Postpentecost]
@@ -70,7 +70,7 @@ _
 V. {::}Ora pro nobis, sancta Dei Génetrix.
 R. Ut digni efficiámur promissiónibus Christi.
 _
-v. Orémus. 	
+$Oremus 	
 v. Omnípotens sempitérne Deus, qui gloriósæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum éffici mererétur, Spíritu Sancto cooperánte, præparásti: da, ut, cujus commemoratióne lætámur, ejus pia intercessióne, ab instántibus malis et a morte perpétua liberémur. Per eúmdem Christum Dóminum nóstrum. Amen.
 
 [Ant ad S_Dominicum]
@@ -94,3 +94,11 @@ $Oremus
 $Per Christum
 _
 @:Ant ad S_Dominicum
+
+[Ant Finalis Cist]
+@:Postpentecost:s/V\..*//s s/$/ (Allelúja.)/s
+_
+@Commune/C10:Invit:s/(.*)\, \*.*/V. $1. (Allelúja.)/
+@Commune/C10:Invit:s/.*\* (.*)\./R. $1. (Allelúja.)/
+_
+@:Postpentecost::s/.*V\. //s 3-4

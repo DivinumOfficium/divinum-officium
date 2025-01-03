@@ -536,6 +536,8 @@ sub setcell {
   $text =~ s/\s([»!?;:])/&nbsp;$1/g;                     # no-break space before punctutation (mostly French)
   $text =~ s/«\s/«&nbsp;/g unless $lang eq 'Deutsch';    # no-break space after begin quote
   $text =~ s/\s\&\s/ &amp; /;                            # HTML - Ampersand;
+  $text =~
+    s/↊|\&\#x218a\;/<span style='color:grey; display:inline-block; transform: rotate(180deg) translate(-40%, 15%);'>2<\/span><span style='color:grey; display:inline-block; transform: translate(-100%, 16%);'>.<\/span>/gu;
 
   if ($Ck) {
     if ($column == 1) {

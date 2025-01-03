@@ -1,10 +1,28 @@
-[Day0 Laudes]
+[Dominica Laudes]
 !Apo 7:12
 v. Benedíctio, et cláritas, et sapiéntia, et gratiárum áctio, honor, virtus, et fortitúdo Deo nostro in sǽcula sæculórum. Amen.
 $Deo gratias
 
-[HymnusM Day0 Laudes]
-@:Hymnus Day0 Laudes:s/Ecce,/Ecce/ s/Lux et auróræ/Lucis auróra/ s/Súpplices.*?:/Nísibus totis rogitémus omnes\nCunctipoténtem:/s s/reos culpæ miserátus/Deus nostri miserátus, / s/angórem/languórem/ s/bona.*?\./pietáte Patris\nRegna polorum./s s/résonat.*/réboat in omni\nGlória mundo.\nAmen./s
+[Responsory Dominica Laudes_]
+R.br. Inclína cor meum, Deus, * In testimónia tua.
+R. Inclína cor meum, Deus, * In testimónia tua.
+V. Avérte óculos meos, ne vídeant vanitátem: in via tua vivífica me.
+R. In testimónia tua.
+&Gloria
+R. Inclína cor meum, Deus, * in testimónia tua.
+
+[Responsory Dominica Laudes_C]
+R.br. Hæc est dies * Quam fecit Dóminus.  
+R. Hæc est dies * Quam fecit Dóminus.  
+V. Exultémus et lætemur in ea.  
+R. Quam fecit Dóminus. 
+&Gloria 
+R. Hæc est dies * Quam fecit Dóminus.  
+
+[Responsory Dominica Laudes]
+@:Responsory Dominica Laudes_
+(sed rubrica cisterciensis)
+@:Responsory Dominica Laudes_C
 
 [Hymnus Day0 Laudes]
 {:H-Ecceiamnoctis:}v. Ecce, jam noctis tenuátur umbra,
@@ -23,63 +41,13 @@ Spíritus, cujus résonat per omnem
 Glória mundum.
 Amen.
 
-[Day0 Versum 2]
-V. Dóminus regnávit, decórem índuit.
-R. Índuit Dóminus fortitúdinem, et præcínxit se virtúte.
+[HymnusM Day0 Laudes]
+@:Hymnus Day0 Laudes:s/Ecce,/Ecce/ s/Lux et auróræ/Lucis auróra/ s/Súpplices.*?:/Nísibus totis rogitémus omnes\nCunctipoténtem:/s s/reos culpæ miserátus/Deus nostri miserátus, / s/angórem/languórem/ s/bona.*?\./pietáte Patris\nRegna polorum./s s/résonat.*/réboat in omni\nGlória mundo.\nAmen./s
 
-[Day0 Laudes2]
-!1 Cor 9:24
-v. Fratres: Nescítis, quod ii, qui in stádio currunt, omnes quidem currunt, sed unus áccipit bravíum? Sic cúrrite, ut comprehendátis.
-$Deo gratias
+[HymnusM Day0 Laudes] (rubrica cisterciensis)
+@:Hymnus Day0 Laudes:s/Ecce,/Ecce/ s/Lux et auróræ/Lucis auróra/ s/Súpplices.*?:/Nísibus totis rogitémus omnes\nCunctipoténtem:/s s/reos culpæ miserátus/Deus nostri miserátus, / s/angórem/languórem/ s/bona.*?\./pietáte Patris\nRegna polórum./s
 
-[HymnusM Day0 Laudes2]
-v. Ætérne rerum Cónditor,
-Noctem diémque qui regis,
-Et témporum das témpora,
-Ut álleves fastídium.
-_
-Præco diéi jam sonat,
-Noctis profúndæ pérvigil,
-Noctúrna lux viántibus,
-A nocte noctem ségregans.
-_
-Hoc excitátus Lúcifer
-Solvit polum calígine,
-Hoc omnis errónum cohors
-Viam nocéndi déserit.
-_
-Hoc nauta vires cólligit,
-Pontíque mitéscunt freta:
-Hoc, ipsa Petr[a] Ecclésiæ,
-Canénte, culpam díluit.
-_
-Surgámus ergo strénue,
-Gallus jacéntes éxcitat,
-Et somnoléntos íncrepat,
-Gallus negántes árguit.
-_
-Gallo canénte spes redit,
-Ægris salus refúnditur,
-Mucro latrónis cónditur,
-Lapsis fides revértitur.
-_
-Jesu labéntes réspice,
-Et nos vidéndo córrige:
-Si réspicis, lapsus cadunt,
-Fletúque culpa sólvitur.
-_
-Tu lux refúlge sénsibus,
-Mentísque somnum díscute:
-Te nostra vox primum sonet,
-Et vota solvámus tibi.
-_
-Deo Patri sit glória,
-Ejúsque soli Fílio,
-Cum Spíritu Paráclito,
-Et nunc et in perpétuum.
-Amen.
-
-[Hymnus Day0 Laudes2]
+[Hymnus Day0 Laudes hiemalis]
 {:H-Aeternererum:}v. Ætérne rerum Cónditor,
 Noctem diémque qui regis,
 Et témporum das témpora,
@@ -126,14 +94,75 @@ Cum Spíritu Paráclito,
 Nunc et per omne sǽculum.
 Amen.
 
-[Day02 Versum 2]
-V. Dómine, refúgium factus es nobis.
-R. A generatióne et progénie.
+[HymnusM Day0 Laudes hiemalis]
+v. Ætérne rerum Cónditor,
+Noctem diémque qui regis,
+Et témporum das témpora,
+Ut álleves fastídium.
+_
+Præco diéi jam sonat,
+Noctis profúndæ pérvigil,
+Noctúrna lux viántibus,
+A nocte noctem ségregans.
+_
+Hoc excitátus Lúcifer
+Solvit polum calígine,
+Hoc omnis errónum cohors
+Viam nocéndi déserit.
+_
+Hoc nauta vires cólligit,
+Pontíque mitéscunt freta:
+Hoc, ipsa Petr[a] Ecclésiæ,
+Canénte, culpam díluit.
+_
+Surgámus ergo strénue,
+Gallus jacéntes éxcitat,
+Et somnoléntos íncrepat,
+Gallus negántes árguit.
+_
+Gallo canénte spes redit,
+Ægris salus refúnditur,
+Mucro latrónis cónditur,
+Lapsis fides revértitur.
+_
+Jesu labéntes réspice,
+Et nos vidéndo córrige:
+Si réspicis, lapsus cadunt,
+Fletúque culpa sólvitur.
+_
+Tu lux refúlge sénsibus,
+Mentísque somnum díscute:
+Te nostra vox primum sonet,
+Et vota solvámus tibi.
+_
+Deo Patri sit glória,
+Ejúsque soli Fílio,
+Cum Spíritu Paráclito,
+Et nunc et in perpétuum.
+Amen.
 
-[Day0 Vespera]
+[HymnusM Day0 Laudes hiemalis] (rubrica cisterciensis)
+@:HymnusM Day1 Laudes
+
+[Dominica Versum 2]
+V. Dóminus regnávit, decórem índuit.
+R. Índuit Dóminus fortitúdinem, et præcínxit se virtúte.
+
+[Dominica Ant 2]
+/:ut in Proprio de Tempore:/
+
+[Dominica Vespera]
 !2 Cor 1:3-4
 v. Benedíctus Deus, et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolatiónis, qui consolátur nos in omni tribulatióne nostra.
 $Deo gratias
+
+[Responsory Dominica Vespera]
+R.br. Quam magnificáta sunt * ópera tua, Dómine.
+R. Quam magnificáta sunt * ópera tua, Dómine.
+V. Ómnia in sapiéntia fecísti.
+R. Ópera tua Dómine.
+&Gloria
+R. Quam magnificáta sunt * ópera tua, Dómine.
 
 [Hymnus Day0 Vespera]
 {:H-Luciscreator:}v. Lucis Creátor óptime,
@@ -162,64 +191,70 @@ Cum Spíritu Paráclito
 Regnans per omne sǽculum.
 Amen.
 
+[HymnusM Day0 Vespera hiemalis] (rubrica cisterciensis)
+v. Deus, creátor ómnium
+políque rector, véstiens
+diem decóro lúmine,
+noctem sopóris grátia,
+_
+Artus solútos ut quies
+reddat labóris úsui
+mentésque fessas állevet
+luctúsque solvat ánxios,
+_
+Grates perácto jam die
+et noctis exórtu preces,
+voti reos ut ádiuves,
+hymnum canéntes sólvimus.
+_
+Te cordis ima cóncinant,
+te vox canóra cóncrepet,
+te díligat castus amor,
+te mens adóret sóbria,
+__
+Ut cum profúnda cláuserit
+diem calígo nóctium,
+fides ténebras nésciat
+et nox fide relúceat.
+_
+Dormíre mentem ne sinas, 
+dormíre culpa nóverit, 
+castis fides refrígerans,
+somni vapórem témperet.
+_
+Exúta sensu lúbrico,
+te cordis alta sómnient;
+nec hostis ínvidi dolo,
+pavor quiétos súscitet.
+_
+Christum rogámus, et Patrem,
+Christi Patrísque Spíritum;
+Unum potens per ómnia,
+Fove precántes Trínitas. 
+Amen.
+
 [HymnusM Day0 Vespera]
 @:Hymnus Day0 Vespera:s/Illábitur tetrum chaos/Tetrum chaos illábitur/ s/Cæléste pulset óstium:/Cælórum pulset íntimum,/
 
-[Day0 Versum 3]
+[Dominica Versum 3]
 V. Dirigátur, Dómine, orátio mea.
 R. Sicut incénsum in conspéctu tuo.
 
-[Day1 Laudes]
+[Dominica Ant 3]
+@:Dominica Ant 2
+
+[Feria Laudes]
 !Rom 13:12-13
 v. Nox præcéssit, dies autem appropinquávit. Abiciámus ergo ópera tenebrárum, et induámur arma lucis. Sicut in die honéste ambulémus.
 $Deo gratias
 
-[HymnusM Day1 Laudes]
-v. Splendor patérnæ glóriæ,
-De luce lucem próferens,
-Lux lucis, et fons lúminis,
-Diem dies illúminans:
-_
-Verúsque sol illábere,
-Micans nitóre pérpeti:
-Jubárque Sancti Spíritus
-Infúnde nostris sénsibus.
-_
-Votis vocémus et Patrem,
-Patrem perénnis glóriæ,
-Patrem poténtis grátiæ,
-Culpam reléget lúbricam.
-_
-Confírmet actus strénuos:
-Dentes retúndat ínvidi:
-Casus secúndet ásperos,
-Donet geréndi grátiam.
-_
-Mentem gubérnet et regat,
-Casto, fidéli córpore:
-Fides calóre férveat,
-Fraudis venéna nésciat.
-_
-Christúsque nobis sit cibus,
-Potúsque noster sit fides:
-Læti bibámus sóbriam
-Ebrietátem spíritus.
-_
-Lætus dies hic tránseat,
-Pudor sit ut dilúculum,
-Fides velut merídies,
-Crepúsculum mens nésciat.
-_
-Auróra cursus próvehit,
-Auróra totus pródeat,
-In Patre totus Fílius,
-Et totus in Verbo Pater.
-_
-Deo Patri sit glória,
-Ejúsque soli Fílio,
-Cum Spíritu Paráclito,
-Et nunc et in perpétuum.
-Amen.
+[Responsory Feria Laudes]
+R.br. Sana ánimam meam, * quia peccávi tibi.
+R. Sana ánimam meam, * quia peccávi tibi.
+V. Ego dixi: Dómine, miserére mei
+R. Quia peccávi tibi.
+&Gloria
+R. Sana ánimam meam, * quia peccávi tibi.
 
 [Hymnus Day1 Laudes]
 {:H-LaudsFeria:}v. Splendor Patérnæ glóriæ,
@@ -268,51 +303,52 @@ Cum Spíritu Paráclito,
 Nunc et per omne sǽculum.
 Amen.
 
-[Day1 Versum 2]
-V. Repléti sumus mane misericórdia tua.
-R. Exsultávimus, et delectáti sumus.
-
-[Day1 Vespera]
-@:Day0 Vespera
-
-[Hymnus Day1 Vespera]
-{:H-VespFeria:}v. Imménse cæli Cónditor,
-Qui mixta ne confúnderent,
-Aquæ fluénta dívidens,
-Cælum dedísti límitem.
+[HymnusM Day1 Laudes]
+v. Splendor patérnæ glóriæ,
+De luce lucem próferens,
+Lux lucis, et fons lúminis,
+Diem dies illúminans:
 _
-Firmans locum cæléstibus,
-Simúlque terræ rívulis;
-Ut unda flammas témperet,
-Terræ solum ne díssipent.
+Verúsque sol illábere,
+Micans nitóre pérpeti:
+Jubárque Sancti Spíritus
+Infúnde nostris sénsibus.
 _
-Infúnde nunc, piíssime,
-Donum perénnis grátiæ:
-Fraudis novæ ne cásibus
-Nos error átterat vetus.
+Votis vocémus et Patrem,
+Patrem perénnis glóriæ,
+Patrem poténtis grátiæ,
+Culpam reléget lúbricam.
 _
-Lucem fides adáugeat:
-Sic lúminis jubar ferat:
-Hæc vana cuncta próterat:
-Hanc falsa nulla cómprimant.
+Confírmet actus strénuos:
+Dentes retúndat ínvidi:
+Casus secúndet ásperos,
+Donet geréndi grátiam.
 _
-Præsta, Pater piíssime,
-Patríque compar Únice,
-Cum Spíritu Paráclito
-Regnans per omne sǽculum.
+Mentem gubérnet et regat,
+Casto, fidéli córpore:
+Fides calóre férveat,
+Fraudis venéna nésciat.
+_
+Christúsque nobis sit cibus,
+Potúsque noster sit fides:
+Læti bibámus sóbriam
+Ebrietátem spíritus.
+_
+Lætus dies hic tránseat,
+Pudor sit ut dilúculum,
+Fides velut merídies,
+Crepúsculum mens nésciat.
+_
+Auróra cursus próvehit,
+Auróra totus pródeat,
+In Patre totus Fílius,
+Et totus in Verbo Pater.
+_
+Deo Patri sit glória,
+Ejúsque soli Fílio,
+Cum Spíritu Paráclito,
+Et nunc et in perpétuum.
 Amen.
-
-[HymnusM Day1 Vespera]
-@:Hymnus Day1 Vespera:s/adáugeat/invéniat/ s/Hæc/Ut/
-
-[Day1 Versum 3]
-@:Day0 Versum 3
-
-[Day2 Laudes]
-@:Day1 Laudes
-
-[HymnusM Day2 Laudes]
-@:Hymnus Day2 Laudes:s/Nunc et per omne sǽculum/Et nunc, et in perpétuum/ s/recti/rect[i]/ s/Vigiláte/Vig[i]láte/
 
 [Hymnus Day2 Laudes]
 {:H-LaudsFeria:}v. Ales diéi núntius
@@ -341,47 +377,8 @@ Cum Spíritu Paráclito,
 Nunc et per omne sǽculum.
 Amen.
 
-[Day2 Versum 2]
-@:Day1 Versum 2
-
-[Day2 Vespera]
-@:Day0 Vespera
-
-[Hymnus Day2 Vespera]
-{:H-VespFeria:}v. Tellúris alme Cónditor,
-Mundi solum qui séparans,
-Pulsis aquæ moléstiis,
-Terram dedísti immóbilem:
-_
-Ut germen aptum próferens,
-Fulvis decóra flóribus,
-Fecúnda fructu sísteret,
-Pastúmque gratum rédderet.
-_
-Mentis perústæ vúlnera
-Munda viróre grátiæ:
-Ut facta fletu díluat,
-Motúsque pravos átterat.
-_
-Jussis tuis obtémperet:
-Nullis malis appróximet:
-Bonis repléri gáudeat,
-Et mortis ictum nésciat.
-_
-Præsta, Pater piíssime,
-Patríque compar Únice,
-Cum Spíritu Paráclito
-Regnans per omne sǽculum.
-Amen.
-
-[HymnusM Day2 Vespera]
-@:Hymnus Day2 Vespera:s/dedísti/dedíst[i]/ s/alme/ingens/ s/séparans/éruens/ s/ictum/actum/
-
-[Day2 Versum 3]
-@:Day0 Versum 3
-
-[Day3 Laudes]
-@:Day1 Laudes
+[HymnusM Day2 Laudes]
+@:Hymnus Day2 Laudes:s/Nunc et per omne sǽculum/Et nunc, et in perpétuum/ s/recti/rect[i]/ s/Vigiláte/Vig[i]láte/
 
 [Hymnus Day3 Laudes]
 {:H-LaudsFeria:}v. Nox, et tenébræ, et núbila,
@@ -413,51 +410,6 @@ Amen.
 [HymnusM Day3 Laudes]
 @:Hymnus Day3 Laudes:s/vera lux cæléstium/lux Eói síderis/ s/Nunc et per omne sǽculum/Et nunc, et in perpétuum/ s/tenébræ/tenébr[æ]/ s/mundi/mund[i]/ s/pura/pur[a]/ s/Flendo/Flend[o]/ s/seréno/serén[o]/
 
-[Day3 Versum 2]
-@:Day1 Versum 2
-
-[Day3 Vespera]
-@:Day0 Vespera
-
-[Hymnus Day3 Vespera]
-{:H-VespFeria:}v. Cæli Deus sanctíssime,
-Qui lúcidas mundi plagas
-Candóre pingis ígneo,
-Augens decóro lúmine:
-_
-Quarto die qui flámmeam
-Dum solis accéndis rotam,
-Lunæ minístras órdinem,
-Vagósque cursus síderum:
-_
-Ut nóctibus, vel lúmini
-Diremptiónis términum,
-Primórdiis et ménsium
-Signum dares notíssimum;
-_
-Expélle noctem córdium:
-Abstérge sordes méntium:
-Resólve culpæ vínculum:
-Evérte moles críminum.
-_
-Præsta, Pater piíssime,
-Patríque compar Únice,
-Cum Spíritu Paráclito
-Regnans per omne sǽculum.
-Amen.
-
-[HymnusM Day3 Vespera]
-@:Hymnus Day3 Vespera:s/mundi plagas/centrum poli/ s/Dum solis accéndis rotam/Solis rotam constítuens/ s/Expélle noctem córdium:/Illúmina cor hóminum,/
-
-[Day3 Versum 3]
-@:Day0 Versum 3
-
-[Day4 Laudes]
-@:Day1 Laudes
-
-[HymnusM Day4 Laudes]
-@:Hymnus Day4 Laudes:s/Nunc et per omne sǽculum/Et nunc, et in perpétuum/ s/Oculíve/Oculív[e]/ s/Speculátor/Spec[u]látor/ s/prima/prim[a]/
-
 [Hymnus Day4 Laudes]
 {:H-LaudsFeria:}v. Lux ecce surgit áurea,
 Pallens facéssat cǽcitas,
@@ -485,47 +437,8 @@ Cum Spíritu Paráclito,
 Nunc et per omne sǽculum.
 Amen.
 
-[Day4 Versum 2]
-@:Day1 Versum 2
-
-[Day4 Vespera]
-@:Day0 Vespera
-
-[Hymnus Day4 Vespera]
-{:H-VespFeria:}v. Magnæ Deus poténtiæ,
-Qui fértili natos aqua
-Partim relínquis gúrgiti,
-Partim levas in áëra.
-_
-Demérsa lymphis ímprimens,
-Subvécta cælis érigens:
-Ut stirpe ab una pródita,
-Divérsa répleant loca:
-_
-Largíre cunctis sérvulis,
-Quos mundat unda Sánguinis,
-Nescíre lapsus críminum,
-Nec ferre mortis tǽdium.
-_
-Ut culpa nullum déprimat:
-Nullum éfferat jactántia:
-Elísa mens ne cóncidat:
-Eláta mens ne córruat.
-_
-Præsta, Pater piíssime,
-Patríque compar Únice,
-Cum Spíritu Paráclito
-Regnans per omne sǽculum.
-Amen.
-
-[HymnusM Day4 Vespera]
-@:Hymnus Day4 Vespera:s/fértili natos aqua/ex aquis ortum genus/ s/relínquis/remíttis/ s/érigens/írrigans/ s/répleant/rápiant/ s/éfferat/levet/
-
-[Day4 Versum 3]
-@:Day0 Versum 3
-
-[Day5 Laudes]
-@:Day1 Laudes
+[HymnusM Day4 Laudes]
+@:Hymnus Day4 Laudes:s/Nunc et per omne sǽculum/Et nunc, et in perpétuum/ s/Oculíve/Oculív[e]/ s/Speculátor/Spec[u]látor/ s/prima/prim[a]/
 
 [Hymnus Day5 Laudes]
 {:H-LaudsFeria:}v. Ætérna cæli glória,
@@ -562,11 +475,238 @@ Amen.
 [HymnusM Day5 Laudes]
 @:Hymnus Day5 Laudes:s/Summi/Celsi/ s/Præítque solem núntius/Sparsámque lucem núntiat/ s/Cadunt tenébræ/Cadit calígo/ s/témporis/diéi/ s/In corde radíces agat/Radícet altis sénsibus/ s/Nunc et per omne sǽculum/Et nunc, et in perpétuum/
 
-[Day5 Versum 2]
-@:Day1 Versum 2
+[Hymnus Day6 Laudes]
+{:H-LaudsFeria:}v. Auróra jam spargit polum:
+Terris dies illábitur:
+Lucis resúltat spículum:
+Discédat omne lúbricum.
+_
+Phantásma noctis éxsulet:
+Mentis reátus córruat:
+Quidquid ténebris hórridum
+Nox áttulit culpæ, cadat.
+_
+Ut mane, quod nos últimum
+Hic deprecámur cérnui,
+Cum luce nobis éffluat,
+Hoc dum canóre cóncrepat.
+_
+Deo Patri sit glória,
+Ejúsque soli Fílio,
+Cum Spíritu Paráclito,
+Nunc et per omne sǽculum.
+Amen.
 
-[Day5 Vespera]
-@:Day0 Vespera
+[HymnusM Day6 Laudes]
+@:Hymnus Day6 Laudes:s/éxsulet/décidat/ s/córruat/súbruat/ s/Ut .* cóncrepat./Et mane illud últimum,\nQuod præstolámur cérnui,\nIn lucem nobis éffluat,\nDum hoc canóre cóncrepat./s s/Nunc et per omne sǽculum/Et nunc, et in perpétuum/
+
+[Feria Versum 2]
+V. Repléti sumus mane misericórdia tua.
+R. Exsultávimus, et delectáti sumus.
+
+[Feria2 Ant 2]
+Benedíctus * Dóminus Deus Israël, quia visitávit et liberávit nos.
+(sed rubrica tridentina aut rubrica monastica)
+Benedíctus * Dóminus Deus Israël.
+
+[Feria3 Ant 2]
+Eréxit nobis * Dóminus cornu salútis in domo David púeri sui.
+
+[Feria3C Ant 2]
+Salútem * ex inimícis nostris, et de manu ómnium, qui nos odérunt, líbera nos, Dómine.
+
+[Feria4 Ant 2]
+De manu ómnium * qui odérunt nos, liberávit nos Dóminus.
+(sed rubrica tridentina aut rubrica monastica)
+De manu ómnium * qui odérunt nos, líbera nos Dómine.
+
+[Feria5 Ant 2]
+In sanctitáte * serviámus Dómino, et liberábit nos ab inimícis nostris.
+
+[Feria5C Ant 2]
+Ad dandam sciéntiam * plebi tuæ, Dómine, in remissiónem peccatórum eórum.
+
+[Feria6 Ant 2]
+Per víscera misericórdiæ * Dei nostri visitávit nos Óriens ex alto.
+
+[Feria7 Ant 2]
+Illúmina, Dómine, * sedéntes in ténebris et umbra mortis, et dírige pedes nostros in viam pacis.
+(sed rubrica tridentina aut rubrica monastica)
+Illumináre, Dómine, * his qui in ténebris sedent: et dírige pedes nostros in viam pacis, Deus Israël.
+
+[Feria7C Ant 2]
+In viam pacis * dírige nos Dómine.
+
+[Feria Ant 2]
+(feria 2) @:Feria2 Ant 2
+(feria 3) @:Feria3 Ant 2
+(feria 4) @:Feria4 Ant 2
+(feria 5) @:Feria5 Ant 2
+(feria 6) @:Feria6 Ant 2
+(feria 7) @:Feria7 Ant 2
+
+[Feria Ant 2] (rubrica cisterciensis)
+(feria 2) @:Feria3 Ant 2
+(feria 3) @:Feria3C Ant 2
+(feria 4) @:Feria5 Ant 2
+(feria 5) @:Feria5C Ant 2
+(feria 6) @:Feria6 Ant 2
+(feria 7) @:Feria7C Ant 2
+
+[Feria Vespera]
+@:Dominica Vespera
+
+[Feria Vespera] (feria 7)
+@Tempora/Pent01-0:Capitulum Laudes
+
+[Responsory Feria Vespera_]
+R.br. Benedícam Dóminum * In omni témpore.
+R. Benedícam Dóminum * In omni témpore.
+V. Semper laus ejus in ore meo.
+R. In omni témpore.
+&Gloria
+R. Benedícam Dóminum * In omni témpore.
+
+[Responsory Feria Vespera_C]
+R.br. Adjutórium nostrum * In nómine Dómini. 
+R. Adjutórium nostrum * In nómine Dómini. 
+V. Qui fecit cœlum et terram. 
+R. In nómine Dómini. 
+&Gloria 
+R. Adjutórium nostrum * In nómine Dómini. 
+
+[Responsory Feria Vespera]
+@:Responsory Feria Vespera_
+(sed rubrica cisterciensis)
+@:Responsory Feria Vespera_C
+
+[Responsory Feria Vespera] (feria 7)
+R.br. Magnus Dóminus noster, * et magna virtus ejus.
+R. Magnus Dóminus noster, * et magna virtus ejus.
+V. Et sapiéntiæ ejus non est númerus.
+R. Et magna virtus ejus.
+&Gloria
+R. Magnus Dóminus noster, * et magna virtus ejus.
+
+[Hymnus Day1 Vespera]
+{:H-VespFeria:}v. Imménse cæli Cónditor,
+Qui mixta ne confúnderent,
+Aquæ fluénta dívidens,
+Cælum dedísti límitem.
+_
+Firmans locum cæléstibus,
+Simúlque terræ rívulis;
+Ut unda flammas témperet,
+Terræ solum ne díssipent.
+_
+Infúnde nunc, piíssime,
+Donum perénnis grátiæ:
+Fraudis novæ ne cásibus
+Nos error átterat vetus.
+_
+Lucem fides adáugeat:
+Sic lúminis jubar ferat:
+Hæc vana cuncta próterat:
+Hanc falsa nulla cómprimant.
+_
+Præsta, Pater piíssime,
+Patríque compar Únice,
+Cum Spíritu Paráclito
+Regnans per omne sǽculum.
+Amen.
+
+[HymnusM Day1 Vespera]
+@:Hymnus Day1 Vespera:s/adáugeat/invéniat/ s/Hæc/Ut/
+
+[Hymnus Day2 Vespera]
+{:H-VespFeria:}v. Tellúris alme Cónditor,
+Mundi solum qui séparans,
+Pulsis aquæ moléstiis,
+Terram dedísti immóbilem:
+_
+Ut germen aptum próferens,
+Fulvis decóra flóribus,
+Fecúnda fructu sísteret,
+Pastúmque gratum rédderet.
+_
+Mentis perústæ vúlnera
+Munda viróre grátiæ:
+Ut facta fletu díluat,
+Motúsque pravos átterat.
+_
+Jussis tuis obtémperet:
+Nullis malis appróximet:
+Bonis repléri gáudeat,
+Et mortis ictum nésciat.
+_
+Præsta, Pater piíssime,
+Patríque compar Únice,
+Cum Spíritu Paráclito
+Regnans per omne sǽculum.
+Amen.
+
+[HymnusM Day2 Vespera]
+@:Hymnus Day2 Vespera:s/dedísti/dedíst[i]/ s/alme/ingens/ s/séparans/éruens/ s/ictum/actum/
+
+[Hymnus Day3 Vespera]
+{:H-VespFeria:}v. Cæli Deus sanctíssime,
+Qui lúcidas mundi plagas
+Candóre pingis ígneo,
+Augens decóro lúmine:
+_
+Quarto die qui flámmeam
+Dum solis accéndis rotam,
+Lunæ minístras órdinem,
+Vagósque cursus síderum:
+_
+Ut nóctibus, vel lúmini
+Diremptiónis términum,
+Primórdiis et ménsium
+Signum dares notíssimum;
+_
+Expélle noctem córdium:
+Abstérge sordes méntium:
+Resólve culpæ vínculum:
+Evérte moles críminum.
+_
+Præsta, Pater piíssime,
+Patríque compar Únice,
+Cum Spíritu Paráclito
+Regnans per omne sǽculum.
+Amen.
+
+[HymnusM Day3 Vespera]
+@:Hymnus Day3 Vespera:s/mundi plagas/centrum poli/ s/Dum solis accéndis rotam/Solis rotam constítuens/ s/Expélle noctem córdium:/Illúmina cor hóminum,/
+
+[Hymnus Day4 Vespera]
+{:H-VespFeria:}v. Magnæ Deus poténtiæ,
+Qui fértili natos aqua
+Partim relínquis gúrgiti,
+Partim levas in áëra.
+_
+Demérsa lymphis ímprimens,
+Subvécta cælis érigens:
+Ut stirpe ab una pródita,
+Divérsa répleant loca:
+_
+Largíre cunctis sérvulis,
+Quos mundat unda Sánguinis,
+Nescíre lapsus críminum,
+Nec ferre mortis tǽdium.
+_
+Ut culpa nullum déprimat:
+Nullum éfferat jactántia:
+Elísa mens ne cóncidat:
+Eláta mens ne córruat.
+_
+Præsta, Pater piíssime,
+Patríque compar Únice,
+Cum Spíritu Paráclito
+Regnans per omne sǽculum.
+Amen.
+
+[HymnusM Day4 Vespera]
+@:Hymnus Day4 Vespera:s/fértili natos aqua/ex aquis ortum genus/ s/relínquis/remíttis/ s/érigens/írrigans/ s/répleant/rápiant/ s/éfferat/levet/
 
 [Hymnus Day5 Vespera]
 {:H-VespFeria:}v. Hóminis superne Cónditor,
@@ -598,153 +738,76 @@ Amen.
 [HymnusM Day5 Vespera]
 @:Hymnus Day5 Vespera:s/Hóminis superne Cónditor/Plasmátor hóminis Deus/ s/Et magna/Qui magna/ s/Per témporum certas vices/Ut sérviant per órdinem,/ s/Obtemperáre sérvulis/Subdens dedísti hómini/ s/quod cupídinis/a servis tuis,/ s/Ciénte vi nos ímpetit/Quidquid per immundítiam/
 
-[Day5 Versum 3]
-@:Day0 Versum 3
-
-[Day6 Laudes]
-@:Day1 Laudes
-
-[Hymnus Day6 Laudes]
-{:H-LaudsFeria:}v. Auróra jam spargit polum:
-Terris dies illábitur:
-Lucis resúltat spículum:
-Discédat omne lúbricum.
-_
-Phantásma noctis éxsulet:
-Mentis reátus córruat:
-Quidquid ténebris hórridum
-Nox áttulit culpæ, cadat.
-_
-Ut mane, quod nos últimum
-Hic deprecámur cérnui,
-Cum luce nobis éffluat,
-Hoc dum canóre cóncrepat.
-_
-Deo Patri sit glória,
-Ejúsque soli Fílio,
-Cum Spíritu Paráclito,
-Nunc et per omne sǽculum.
-Amen.
-
-[HymnusM Day6 Laudes]
-@:Hymnus Day6 Laudes:s/éxsulet/décidat/ s/córruat/súbruat/ s/Ut .* cóncrepat./Et mane illud últimum,\nQuod præstolámur cérnui,\nIn lucem nobis éffluat,\nDum hoc canóre cóncrepat./s s/Nunc et per omne sǽculum/Et nunc, et in perpétuum/
-
-[Day6 Versum 2]
-@:Day1 Versum 2
-
-[Day6 Vespera]
-!Rom 11:33
-v. O Altitúdo divitiárum sapiéntiæ, et sciéntiæ Dei, quam incomprehensibília sunt judícia ejus, et investigábiles viæ ejus!
-$Deo gratias
-
 [Hymnus Day6 Vespera]
-{:H-VespFeria:}v. Jam sol recédit ígneus:
-Tu, lux perénnis, Únitas,
-Nostris, beáta Trínitas,
-Infúnde lumen córdibus.
-_
-Te mane laudum cármine,
-Te deprecámur véspere;
-Dignéris ut te súpplices
-Laudémus inter cǽlites.
-_
-Patri, simúlque Fílio,
-Tibíque, Sancte Spíritus,
-Sicut fuit, sit júgiter
-Sæclum per omne glória.
-Amen.
+@Tempora/Pent01-0:Hymnus Vespera
 
 [HymnusM Day6 Vespera]
-{:H-VespFeria:}v. O lux beáta Trínitas,
-Et principális Únitas,
-Jam sol recédit ígneus,
-Infúnde lumen córdibus.
-_
-Te mane laudum cármine,
-Te deprecémur véspere:
-Te nostra supplex glória
-Per cuncta laudet sǽcula.
-_
-Deo Patri sit glória,
-Ejúsque soli Fílio,
-Cum Spíritu Paráclito,
-Et nunc, et in perpétuum.
-Amen.
+@Tempora/Pent01-0:HymnusM Vespera
 
-[Day6 Versum 3]
+[Feria Versum 3]
+@:Dominica Versum 3
+
+[Feria Versum 3] (feria 7)
 V. Vespertína orátio ascéndat ad te, Dómine.
 R. Et descéndat super nos misericórdia tua.
 
-[Day0 Ant 2]
-missing from próprium
-
-[Day02 Ant 2]
-missing from próprium
-
-[Day0 Ant 3]
-missing from próprium
-
-[Day1 Ant 2]
-Benedíctus * Dóminus Deus Israël, quia visitávit et liberávit nos.
-
-[Day1 Ant 2] (rubrica tridentina aut rubrica monastica)
-Benedíctus * Dóminus Deus Israël.
-
-[Day1 Ant 3]
+[Feria2 Ant 3]
 Magníficat * ánima mea Dóminum, quia respéxit Deus humilitátem meam.
 
-[Day2 Ant 2]
-Eréxit nobis * Dóminus cornu salútis in domo David púeri sui.
+[Feria2C Ant 3]
+@:Feria3 Ant 3:s/(Deo)/Dómino $1/
 
-[Day2 Ant 3]
+[Feria3 Ant 3]
 Exsultávit * spíritus meus in Deo salutári meo.
-
-[Day2 Ant 3] (rubrica tridentina aut rubrica monastica)
+(sed rubrica tridentina aut rubrica monastica)
 Exsúltet * spíritus meus in Deo salutári meo.
 
-[Day3 Ant 2]
-De manu ómnium * qui odérunt nos, liberávit nos Dóminus.
+[Feria3C Ant 3]
+Respexísti * humilitátem meam Dómine Deus meus.
 
-[Day3 Ant 2] (rubrica tridentina aut rubrica monastica)
-De manu ómnium * qui odérunt nos, líbera nos Dómine.
-
-[Day3 Ant 3]
+[Feria4 Ant 3]
 Respéxit Dóminus * humilitátem meam, et fecit in me magna, qui potens est.
 
-[Day4 Ant 2]
-In sanctitáte * serviámus Dómino, et liberábit nos ab inimícis nostris.
-
-[Day4 Ant 3]
+[Feria5 Ant 3]
 Fecit Deus * poténtiam in brácchio suo: dispérsit supérbos mente cordis sui.
-
-[Day4 Ant 3] (rubrica tridentina aut rubrica monastica)
+(sed rubrica tridentina aut rubrica monastica)
 Fac Deus, * poténtiam in brácchio tuo: dispérde supérbos, et exálta húmiles.
 
-[Day5 Ant 2]
-Per víscera misericórdiæ * Dei nostri visitávit nos Óriens ex alto.
-
-[Day5 Ant 3]
+[Feria6 Ant 3]
 Depósuit Dóminus * poténtes de sede, et exaltávit húmiles.
-
-[Day5 Ant 3] (rubrica tridentina aut rubrica monastica)
+(sed rubrica tridentina aut rubrica monastica)
 Depósuit poténtes, * Sanctos persequéntes: et exaltávit húmiles, Christum confiténtes.
 
-[Day6 Ant 2]
-Illúmina, Dómine, * sedéntes in ténebris et umbra mortis, et dírige pedes nostros in viam pacis.
+[Feria6C Ant 3]
+@:Feria7 Ant 3:s/semen/sémini/ s/exaltáre/exaltávit/
 
-[Day6 Ant 2] (rubrica tridentina aut rubrica monastica)
-Illumináre, Dómine, * his qui in ténebris sedent: et dírige pedes nostros in viam pacis, Deus Israël.
-
-[Day6 Ant 3]
+[Feria7 Ant 3]
 Suscépit Deus * Israël, púerum suum: sicut locútus est ad Ábraham, et semen ejus usque in sǽculum.
-
-[Day6 Ant 3] (rubrica tridentina aut rubrica monastica)
+(sed rubrica tridentina aut rubrica monastica)
 Suscépit Deus * Israël, púerum suum: sicut locútus est ad Ábraham, et semen ejus: exaltáre húmiles usque in sǽculum.
 
-[Adv Laudes]
+[Adv Laudes_]
 !Isa 2:3
 v. Veníte, et ascendámus ad montem Dómini, et ad domum Dei Jacob, et docébit nos vias suas, et ambulábimus in sémitis ejus: quia de Sion exíbit lex, et verbum Dómini de Jerúsalem.
 $Deo gratias
+
+[Adv Laudes_C]
+!Phil 3:20-21 
+v. Salvatórem expectámus Dóminum nostrum Jesum Christum, qui reformávit corpus humilitátis nostrae, configurátum córpori claritátis suae. 
+$Deo gratias.
+
+[Adv Laudes]
+@:Adv Laudes_
+(sed rubrica cisterciensis)
+@:Adv Laudes_C
+
+[Responsory Adv Laudes]
+R.br. Veni ad liberándum nos * Dómine Deus virtútum.
+R. Veni ad liberándum nos * Dómine Deus virtútum.
+V. Osténde fáciem tuam et salvi érimus.
+R. Dómine Deus virtútum.
+&Gloria
+R. Veni ad liberándum nos * Dómine Deus virtútum.
 
 [Hymnus Adv Laudes]
 {:H-LaudsAdv:}v. En clara vox redárguit
@@ -773,7 +836,7 @@ Sancto simul Paráclito,
 In sæculórum sǽcula.
 Amen.
 
-[HymnusM Adv Laudes]
+[HymnusM Adv Laudes_]
 {:H-LaudsAdv:}v. Vox clara ecce íntonat,
 Obscúra quæque íncrepat:
 Pellántur éminus sómnia;
@@ -800,14 +863,47 @@ Sancto simul Paráclito,
 In sæculórum sǽcula.
 Amen.
 
-[Adv Versum 2]
+[HymnusM Adv Laudes]
+@:HymnusM Adv Laudes_
+(sed rubrica cisterciensis)
+@:HymnusM Adv Laudes_:s/Pellántur éminus/Procul fugéntur/ s/Secúndo ut cum/Ut cum secúndo/
+
+[Adv Versum 2_]
 V. Vox clamántis in desérto: Paráte viam Dómini.
 R. Rectas fácite sémitas ejus.
+
+[Adv Versum 2_C]
+V. Emítte Agnum, Dómine, dominatórem terræ.
+R. De Petra desérti ad montem fíliæ Sion.
+
+[Adv Versum 2]
+@:Adv Versum 2_
+(sed rubrica cisterciensis)
+@:Adv Versum 2_C
 
 [Adv Vespera]
 !Gen 49:10
 v. Non auferétur sceptrum de Juda, et dux de fémore ejus, donec véniat qui mitténdus est; et ipse erit exspectátio géntium.
 $Deo gratias
+
+[Responsory Adv Vespera_]
+R.br. Osténde nobis Dómine * Misericórdiam tuam.
+R. Osténde nobis Dómine * Misericórdiam tuam.
+V. Et salutáre tuum da nobis.
+R. Misericórdiam tuam.
+&Gloria
+R. Osténde nobis Dómine * Misericórdiam tuam.
+
+[Responsory Adv Vespera_C]
+R.br. Tu exúrgens, Dómine, * Miseréberis Sion. 
+R. Tu exúrgens, Dómine, * Miseréberis Sion. 
+V. Quia tempus miseréndi ejus, quia venit tempus. 
+R. Miseréberis Sion. 
+
+[Responsory Adv Vespera]
+@:Responsory Adv Vespera_
+(sed rubrica cisterciensis)
+@:Responsory Adv Vespera_C
 
 [Hymnus Adv Vespera]
 {:H-VespAdv:}v. Creátor alme síderum,
@@ -873,12 +969,9 @@ Sancto simul Paráclito,
 In sæculórum sǽcula.
 Amen.
 
-[Adv Versum 1]
+[Adv Versum 3]
 V. Roráte, cæli, désuper, et nubes pluant justum.
 R. Aperiátur terra, et gérminet Salvatórem.
-
-[Adv Versum 3]
-@:Adv Versum 1
 
 [Adv Ant 17]
 O Sapiéntia, * quæ ex ore Altíssimi prodiísti, attíngens a fine usque ad finem, fórtiter suavitérque dispónens ómnia: veni ad docéndum nos viam prudéntiæ.
@@ -907,37 +1000,28 @@ Nolíte timére; * quinta enim die véniet ad vos Dóminus noster.
 [Adv Ant 23L]
 Ecce compléta sunt * ómnia, quæ dicta sunt per Ángelum de Vírgine María.
 
-[Quad Laudes]
+[Quad Laudes_]
 !Isa 58:1
 v. Clama, ne cesses, quasi tuba exálta vocem tuam, et annúntia pópulo meo scélera eórum, et dómui Jacob peccáta eórum.
 $Deo gratias
 
-[HymnusM Quad Laudes]
-v. Jam Christe sol justítiæ,
-Mentis diéscant ténebræ:
-Virtútum ut lux rédeat,
-Terris diem cum réparas.
-_
-Dans tempus acceptábile,
-Et pǽnitens cor tríbue,
-Convértat ut benígnitas
-Quos longa suffert píetas.
-_
-Quiddámque pæniténtiæ
-Da ferre, quamvis grávium,
-Majóre tuo múnere,
-Quo démptio fit críminum.
-_
-Dies venit, dies tua,
-In qua reflórent ómnia:
-Lætémur in hac ad tuam
-Per hanc redúcti grátiam.
-_
-Te rerum univérsitas,
-Clemens, adóret, Trínitas,
-Et nos novi per véniam,
-Novum canámus cánticum.
-Amen.
+[Quad Laudes_C]
+!2. Cor. 6 
+v. Ecce nunc tempus acceptábile, ecce nunc dies salútis. Némini dantes ullam offensiónem, ut non vituperétur ministérium nostrum.  
+$Deo gratias
+
+[Quad Laudes]
+@:Quad Laudes_
+(sed rubrica cisterciensis)
+@:Quad Laudes_C
+
+[Responsory Quad Laudes]
+R.br. Ipse liberávit me * de láqueo venántium.
+R. Ipse liberávit me * de láqueo venántium.
+V. Et a verbo áspero.
+R. De láqueo venántium.
+&Gloria
+R. Ipse liberávit me * de láqueo venántium
 
 [Hymnus Quad Laudes]
 {:H-Osolsalutis:}v. O sol salútis, íntimis,
@@ -966,14 +1050,50 @@ Et nos novi per grátiam
 Novum canámus cánticum.
 Amen.
 
+[HymnusM Quad Laudes]
+v. Jam Christe sol justítiæ,
+Mentis diéscant ténebræ:
+Virtútum ut lux rédeat,
+Terris diem cum réparas.
+_
+Dans tempus acceptábile,
+Et pǽnitens cor tríbue,
+Convértat ut benígnitas
+Quos longa suffert píetas.
+_
+Quiddámque pæniténtiæ
+Da ferre, quamvis grávium,
+Majóre tuo múnere,
+Quo démptio fit críminum.
+_
+Dies venit, dies tua,
+In qua reflórent ómnia:
+Lætémur in hac ad tuam
+Per hanc redúcti grátiam.
+_
+Te rerum univérsitas,
+Clemens, adóret, Trínitas,
+Et nos novi per véniam,
+Novum canámus cánticum.
+Amen.
+
 [Quad Versum 2]
-V. Ángelis suis Deus mandávit de te.
-R. Ut custódiant te in ómnibus viis tuis.
+@:Quad Versum 3
+(sed rubrica cisterciensis)
+@:Quad Versum 2_C
 
 [Quad Vespera]
 !Joël 2:17
 v. Inter vestíbulum et altáre plorábunt sacerdótes, minístri Dómini, et dicent: Parce, Dómine, parce pópulo tuo: et ne des hereditátem tuam in oppróbrium, ut dominéntur eis natiónes.
 $Deo gratias
+
+[Responsory Quad Vespera]
+R.br. Scápulis suis * obumbrábit tibi.
+R. Scápulis suis * obumbrábit tibi.
+V. Et sub pennis ejus sperábis.
+R. Obumbrábit tibi.
+&Gloria
+R. Scápulis suis * obumbrábit tibi.
 
 [HymnusM Quad Vespera]
 @:Hymnus Quad Vespera:s/nóminis laudem tui/laudem tui nóminis/ s/Concéde.*_/Sic corpus extra cónteri\nDona per abstinéntiam,\nJejúnet ut mens sóbria\nA labe prorsus críminum.\n_/s
@@ -1006,56 +1126,30 @@ Jejuniórum múnera.
 Amen.
 
 [Quad Versum 3]
-@:Quad Versum 2
+V. Ángelis suis Deus mandávit de te.
+R. Ut custódiant te in ómnibus viis tuis.
 
-[Quad5 Laudes]
+[Quad5 Laudes_]
 !Jer 11:19
 v. Veníte, mittámus lignum in panem ejus, et eradámus eum de terra vivéntium, et nomen ejus non memorétur ámplius.
 $Deo gratias
 
-[HymnusM Quad5 Laudes]
-v. Lustris sex qui jam peráctis,
-Tempus implens córporis,
-Se volénte natus ad hoc,
-Passióni déditus,
-Agnus in Crucis levátur
-Immolándus stípite.
-_
-Hic acétum, fel, arúndo,
-Sputa, clavi, láncea:
-Mite corpus perforátur,
-Sanguis, unda prófluit:
-Terra, pontus, astra, mundus,
-Quo lavántur flúmine!
-_
-Crux fidélis, inter omnes
-Arbor una nóbilis:
-Nulla silva talem profert
-Fronde, flore, gérmine:
-Dulce lignum, dulces clavos,
-Dulce pondus sústinet.
-_
-Flecte ramos, arbor alta,
-Tensa laxa víscera,
-Et rigor lentéscat ille,
-Quem dedit natívitas:
-Ut supérni membra Regis
-Miti tendas stípite.
-_
-Sola digna tu fuísti
-Ferre sæcli prétium,
-Atque portum præparáre
-Nauta mundo náufrago,
-Quem sacer cruor perúnxit,
-Fusus Agni córpore.
-_
-Glória et honor Deo
-Usquequáqu[e] altíssimo:
-Una Patri, Filióque,
-Inclyto Paráclito:
-Cui laus est et potéstas
-Per ætérna sǽcula.
-Amen.
+[Quad5 Laudes_C]
+!Heb 9:28 
+v. Christus semel oblátus est ad multórum exhauriénda peccáta: * secúndo sine peccáto apparébit expectántibus se, in salútem. 
+$Deo gratias
+
+[Quad5 Laudes]
+@:Quad5 Laudes_
+(sed rubrica cisterciensis)
+@:Quad5 Laudes_C
+
+[Responsory Quad5 Laudes]
+R.br. Érue a frámea * Deus ánimam meam.
+R. Érue a frámea * Deus ánimam meam
+V. Et de manu canis únicam meam.
+R. Deus ánimam meam.
+R. Érue a frámea * Deus ánimam meam.
 
 [Hymnus Quad5 Laudes]
 {:H-Lustrasex:}v. Lustra sex qui jam perégit,
@@ -1101,57 +1195,74 @@ Uníus, Triníque nomen
 Laudet univérsitas.
 Amen.
 
-[Quad5 Versum 2]
+[HymnusM Quad5 Laudes]
+v. Lustris sex qui jam peráctis,
+Tempus implens córporis,
+Se volénte natus ad hoc,
+Passióni déditus,
+Agnus in Crucis levátur
+Immolándus stípite.
+_
+Hic acétum, fel, arúndo,
+Sputa, clavi, láncea:
+Mite corpus perforátur,
+Sanguis, unda prófluit:
+Terra, pontus, astra, mundus,
+Quo lavántur flúmine!
+_
+Crux fidélis, inter omnes
+Arbor una nóbilis:
+Nulla silva talem profert
+Fronde, flore, gérmine:
+Dulce lignum, dulces clavos,
+Dulce pondus sústinet.
+_
+Flecte ramos, arbor alta,
+Tensa laxa víscera,
+Et rigor lentéscat ille,
+Quem dedit natívitas:
+Ut supérni membra Regis
+Miti tendas stípite.
+_
+Sola digna tu fuísti
+Ferre sæcli prétium,
+Atque portum præparáre
+Nauta mundo náufrago,
+Quem sacer cruor perúnxit,
+Fusus Agni córpore.
+_
+Glória et honor Deo
+Usquequáqu[e] altíssimo:
+Una Patri, Filióque,
+Inclyto Paráclito:
+Cui laus est et potéstas
+Per ætérna sǽcula.
+Amen.
+
+[Quad5 Versum 2_]
 V. Éripe me de inimícis meis, Deus meus.
 R. Et ab insurgéntibus in me líbera me.
+
+[Quad5 Versum 2_C]
+V. Homo pacis meæ in quo sperábam.
+R. Ampliávit advérsum me supplantatiónem.
+
+[Quad5 Versum 2]
+@:Quad5 Versum 2_
+(sed rubrica cisterciensis)
+@:Quad5 Versum 2_C
 
 [Quad5 Vespera]
 !Jer 11:20
 v. Tu autem, Dómine Sábaoth, qui júdicas juste, et probas renes et corda, vídeam ultiónem tuam ex eis: tibi enim revelávi causam meam, Dómine, Deus meus.
 $Deo gratias
 
-[HymnusM Quad5 Vespera]
-v. Vexílla Regis pródeunt:
-Fulget Crucis mystérium,
-Quo carne carnis Cónditor
-Suspénsus est patíbulo.
-_
-Quo vulnerátus ínsuper
-Mucróne diro lánceæ,
-Ut nos laváret crímine,
-Manávit und[a] et sánguine.
-_
-Impléta sunt quæ cóncinit
-David fidéli cármine,
-Dicens: In natiónibus
-Regnávit a ligno Deus.
-_
-Arbor decór[a] et fúlgida,
-Ornáta Regis púrpura,
-Elécta digno stípite
-Tam sancta membra tángere.
-_
-Beáta, cujus bráchiis
-Sæcli pepéndit prétium,
-Statéra facta córporis,
-Prædámque tulit tártari.
-_
-!Sequens stropha dicitur flexis genibus.
-_
-O Crux, ave, spes única,
-In hac triúmphi glória
-(sed tempore Passionis)
-Hoc Passiónis témpore
-(sed tempore Paschali)
-In hoc Pascháli gáudio
-Auge piis justítiam,
-Reísque dona véniam.
-_
-Te summa, Deus, Trínitas,
-Colláudet omnis spíritus:
-Quos per Crucis mystérium
-Salvas, rege per sǽcula.
-Amen.
+[Responsory Quad5 Vespera]
+R.br. De ore leónis * líbera me, Dómine.
+R. De ore leónis * líbera me, Dómine.
+V. Et a córnibus unicórnium humilitátem meam.
+R. Líbera me, Dómine.
+R. De ore leónis * líbera me, Dómine.
 
 [Hymnus Quad5 Vespera]
 {:H-Vexillaregis:}v. Vexílla Regis pródeunt;
@@ -1196,46 +1307,69 @@ Quibus Crucis victóriam
 Largíris, adde prǽmium.
 Amen.
 
-[Quad5 Versum 3]
+[HymnusM Quad5 Vespera]
+v. Vexílla Regis pródeunt:
+Fulget Crucis mystérium,
+Quo carne carnis Cónditor
+Suspénsus est patíbulo.
+_
+Quo vulnerátus ínsuper
+Mucróne diro lánceæ,
+Ut nos laváret crímine,
+Manávit und[a] et sánguine.
+_
+Impléta sunt quæ cóncinit
+David fidéli cármine,
+Dicens: In natiónibus
+Regnávit a ligno Deus.
+_
+Arbor decór[a] et fúlgida,
+Ornáta Regis púrpura,
+Elécta digno stípite
+Tam sancta membra tángere.
+_
+Beáta, cujus bráchiis
+Sæcli pepéndit prétium,
+Statéra facta córporis,
+Prædámque tulit tártari.
+_
+!Sequens stropha dicitur flexis genibus.
+_
+O Crux, ave, spes única,
+In hac triúmphi glória
+(sed tempore Passionis)
+Hoc Passiónis témpore
+(sed tempore Paschali)
+In hoc Pascháli gáudio
+Auge piis justítiam,
+Reísque dona véniam.
+_
+Te summa, Deus, Trínitas,
+Colláudet omnis spíritus:
+Quos per Crucis mystérium
+Salvas, rege per sǽcula.
+Amen.
+
+[Quad5 Versum 3_]
 V. Éripe me, Dómine, ab hómine malo.
 R. A viro iníquo éripe me.
+
+[Quad5 Versum 3_C]
+V. Dedérunt in escam meam fel.
+R. Et in siti mea potavérunt me acéto.
+
+[Quad5 Versum 3]
+@:Quad5 Versum 3_
+(sed rubrica cisterciensis)
+@:Quad5 Versum 3_C
 
 [Pasch Laudes]
 !Rom 6:9-10
 v. Christus resúrgens ex mórtuis jam non móritur, mors illi ultra non dominábitur. Quod enim mórtuus est peccáto, mórtuus est semel: quod autem vivit, vivit Deo.
 $Deo gratias
 
-[HymnusM Pasch Laudes]
-v. Auróra lucis rútilat,
-Cælum láudibus íntonat,
-Mundus exsúltans júbilat,
-Gemens inférnus úlulat:
-_
-Cum Rex ille fortíssimus,
-Mortis confráctis víribus,
-Pede concúlcans tártara,
-Solvit a pœna míseros.
-_
-Ille qui clausus lápide
-Custodítur sub mílite,
-Triúmphans pompa nóbili,
-Victor surgit de fúnere.
-_
-Solútis jam gemítibus,
-Et inférni dolóribus,
-Quia surréxit Dóminus,
-Respléndens clamat Ángelus.
-_
-Quǽsumus, Auctor ómnium,
-In hoc pascháli gáudio,
-Ab omni mortis ímpetu
-Tuum defénde pópulum.
-_
-Glória tibi Dómine,
-Qui surrexíst[i] a mórtuis,
-Cum Patr[e] et Sancto Spíritu,
-In sempitérna sǽcula.
-Amen.
+[Responsory Pasch Laudes]
+@Psalterium/Special/Minor Special:Responsory breve Pasch Tertia
 
 [Hymnus Pasch Laudes]
 {:H-Auroracoelum:}v. Auróra cælum púrpurat,
@@ -1269,43 +1403,26 @@ Surréxit, ac Paráclito,
 In sempitérna sǽcula.
 Amen.
 
-[Pasch Versum 2]
-V. In resurrectióne tua, Christe, allelúja.
-R. Cæli et terra læténtur, allelúja.
-
-[Pasch Vespera]
-@:Pasch Laudes
-
-[HymnusM Pasch Vespera]
-v. Ad cenam Agni próvidi,
-Et stolis albis cándidi,
-Post tránsitum maris Rubri,
-Christo canámus Príncipi.
+[HymnusM Pasch Laudes]
+v. Auróra lucis rútilat,
+Cælum láudibus íntonat,
+Mundus exsúltans júbilat,
+Gemens inférnus úlulat:
 _
-Cujus corpus sanctíssimum,
-In ara crucis tórridum,
-Cruóre ejus róseo
-Gustándo vívimus Deo.
+Cum Rex ille fortíssimus,
+Mortis confráctis víribus,
+Pede concúlcans tártara,
+Solvit a pœna míseros.
 _
-Protécti Paschæ véspere
-A devastánte Angelo,
-Erépti de duríssimo
-Pharaónis império.
+Ille qui clausus lápide
+Custodítur sub mílite,
+Triúmphans pompa nóbili,
+Victor surgit de fúnere.
 _
-Jam Pascha nostrum Christus est,
-Qui immolátus agnus est:
-Sinceritátis ázyma,
-Caro ejus obláta est.
-_
-O vere digna hóstia,
-Per quam fracta sunt tártara,
-Redémpta plebs captiváta,
-Réddita vitæ prǽmia.
-_
-Consúrgit Christus túmulo,
-Victor redit de bárathro,
-Tyránnum trudens vínculo,
-Et Paradísum réserans.
+Solútis jam gemítibus,
+Et inférni dolóribus,
+Quia surréxit Dóminus,
+Respléndens clamat Ángelus.
 _
 Quǽsumus, Auctor ómnium,
 In hoc pascháli gáudio,
@@ -1317,6 +1434,25 @@ Qui surrexíst[i] a mórtuis,
 Cum Patr[e] et Sancto Spíritu,
 In sempitérna sǽcula.
 Amen.
+
+[Pasch Versum 2_]
+V. In resurrectióne tua, Christe, allelúja.
+R. Cæli et terra læténtur, allelúja.
+
+[Pasch Versum 2_C]
+V. Dícite in natiónibus, allelúia.
+R. Quia Dóminus regnávit a ligno, allelúia.
+
+[Pasch Versum 2]
+@:Pasch Versum 2_
+(sed rubrica cisterciensis)
+@:Pasch Versum 2_C
+
+[Pasch Vespera]
+@:Pasch Laudes
+
+[Responsory Pasch Vespera]
+@Psalterium/Special/Minor Special:Responsory breve Pasch Sexta
 
 [Hymnus Pasch Vespera]
 {:H-Adregias:}v. Ad régias Agni dapes,
@@ -1360,260 +1496,294 @@ Surréxit, ac Paráclito,
 In sempitérna sǽcula.
 Amen.
 
+[HymnusM Pasch Vespera]
+v. Ad cenam Agni próvidi,
+Et stolis albis cándidi,
+Post tránsitum maris Rubri,
+Christo canámus Príncipi.
+_
+Cujus corpus sanctíssimum,
+In ara crucis tórridum,
+Cruóre ejus róseo
+Gustándo vívimus Deo.
+_
+Protécti Paschæ véspere
+A devastánte Angelo,
+Erépti de duríssimo
+Pharaónis império.
+_
+Jam Pascha nostrum Christus est,
+Qui immolátus agnus est:
+Sinceritátis ázyma,
+Caro ejus obláta est.
+_
+O vere digna hóstia,
+Per quam fracta sunt tártara,
+Redémpta plebs captiváta,
+Réddita vitæ prǽmia.
+_
+Consúrgit Christus túmulo,
+Victor redit de bárathro,
+Tyránnum trudens vínculo,
+Et Paradísum réserans.
+_
+Quǽsumus, Auctor ómnium,
+In hoc pascháli gáudio,
+Ab omni mortis ímpetu
+Tuum defénde pópulum.
+_
+Glória tibi Dómine,
+Qui surrexíst[i] a mórtuis,
+Cum Patr[e] et Sancto Spíritu,
+In sempitérna sǽcula.
+Amen.
+
 [Pasch Versum 3]
 V. Mane nobíscum, Dómine, allelúja.
 R. Quóniam advesperáscit, allelúja.
 
-[Suffragium1]
+[Suffragium Divino]
 Ant. Beáta Dei Génitrix Virgo María, Sanctíque omnes intercédant pro nobis ad Dóminum.
 _
 V. Mirificávit Dóminus Sanctos suos.
 R. Et exaudívit eos clamántes ad se.
 _
 !Oratio
-!In hac oratione, ad litteram N. exprimitur nomen Titularis propriæ ecclesiæ, dummodo Titulus non sit Persona divina vel Mysterium Domini, aut de ipso ratione Festi factum non fuerit Officium vel Commemoratio, aut illius nomen non sit in eadem Suffragii Oratione expressum; ac nomina sanctorum Angelorum et sancti Joannis Baptistæ, si Titulares fuerint, præponuntur nomini sancti Joseph. In hisce autem omnibus casibus omittuntur verba “atque beáto N.”.
-v. Orémus.
+/:In hac oratione, ad litteram N. exprimitur nomen Titularis propriæ ecclesiæ, dummodo Titulus non sit Persona divina vel Mysterium Domini, aut de ipso ratione Festi factum non fuerit Officium vel Commemoratio, aut illius nomen non sit in eadem Suffragii Oratione expressum; ac nomina sanctorum Angelorum et sancti Joannis Baptistæ, si Titulares fuerint, præponuntur nomini sancti Joseph. In hisce autem omnibus casibus omittuntur verba «atque beáto N.».:/
+$Oremus  
 v. A cunctis nos, quǽsumus, Dómine, mentis et córporis defénde perículis: et, intercedénte beáta et gloriósa semper Vírgine Dei Genitríce María, cum beáto Joseph, beátis Apóstolis tuis Petro et Paulo, atque beáto~
 r. N. et ómnibus Sanctis, salútem nobis tríbue benígnus et pacem; ut, destrúctis adversitátibus et erróribus univérsis, Ecclésia tua secúra tibi sérviat libertáte.
 $Per eumdem
 
-[Suffragium11]
+[Suffragium Divino1]
 Ant. Sancti omnes intercédant pro nobis ad Dóminum.
 _
 V. Mirificávit Dóminus Sanctos suos.
 R. Et exaudívit eos clamántes ad se.
 _
 !Oratio
-!In hac oratione, ad litteram N. exprimitur nomen Titularis propriæ ecclesiæ, dummodo Titulus non sit Persona divina vel Mysterium Domini, aut de ipso ratione Festi factum non fuerit Officium vel Commemoratio, aut illius nomen non sit in eadem Suffragii Oratione expressum; ac nomina sanctorum Angelorum et sancti Joannis Baptistæ, si Titulares fuerint, præponuntur nomini sancti Joseph. In hisce autem omnibus casibus et omittuntur verba “atque beáto N.”. Si Titularis ante omnes fuerit nominandus, particula “cum” omittitur ante nomen sanctorum Petri et Pauli ac præponitur nomini Sancti Joseph.
-v. Orémus.
+/:In hac oratione, ad litteram N. exprimitur nomen Titularis propriæ ecclesiæ, dummodo Titulus non sit Persona divina vel Mysterium Domini, aut de ipso ratione Festi factum non fuerit Officium vel Commemoratio, aut illius nomen non sit in eadem Suffragii Oratione expressum; ac nomina sanctorum Angelorum et sancti Joannis Baptistæ, si Titulares fuerint, præponuntur nomini sancti Joseph. In hisce autem omnibus casibus et omittuntur verba «atque beáto N.». Si Titularis ante omnes fuerit nominandus, particula «cum» omittitur ante nomen sanctorum Petri et Pauli ac præponitur nomini Sancti Joseph.:/
+$Oremus  
 v. A cunctis nos, quǽsumus, Dómine, mentis et córporis defénde perículis: et, intercedénte beáto Joseph, cum beátis Apóstolis tuis Petro et Paulo, atque beáto~
 r. N. et ómnibus Sanctis, salútem nobis tríbue benígnus et pacem; ut, destrúctis adversitátibus et erróribus univérsis, Ecclésia tua secúra tibi sérviat libertáte.
 $Per eumdem
 
-[SuffragiumTridentinumFeriale]
+[Suffragium Feriale]
 !De cruce
 Ant. Per signum Crucis de inimícis nostris líbera nos, Deus noster.
 _
 V. Omnis terra adóret te, et psallat tibi.
 R. Psalmum dicat nómini tuo, Dómine.
 _
-!Oratio
-v. Orémus.
+$Oremus
 v. Perpétua nos, quǽsumus, Dómine, pace custódi, quos per lignum sanctæ Crucis redímere dignátus es.
 
-[Suffragium2]
+[Suffragium Paschale]
 Ant. Crucifíxus surréxit a mórtuis, et redémit nos, allelúja, allelúja.
 _
 V. Dícite in natiónibus, allelúja.
 R. Quia Dóminus regnávit a ligno, allelúja.
 _
-!Oratio
-v. Orémus.
+$Oremus
 v. Deus qui pro nobis Fílium tuum Crucis patíbulum subíre voluísti, ut inimíci a nobis expélleres potestátem: concéde nobis fámulis tuis; ut resurrectiónis grátiam consequámur.
 $Per eumdem
 
-[Suffragium2v]
+[Suffragium PaschaleV]
 Ant. Crucem sanctam súbiit, qui inférnum confrégit; accínctus est poténtia, surréxit die tértia, allelúja.
-@:Suffragium2:2-9
+@:Suffragium Paschale:2-9
 
-[Suffragium3]
+[Suffragium BMV]
 !De Beata Maria
 Ant. Sancta María succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam commemoratiónem.
 _
+(deinde dicuntur semper)
 V. Ora pro nobis sancta Dei Génitrix.
 R. Ut digni efficiámur promissiónibus Christi.
 _
-!Oratio
-v. Orémus.
+$Oremus
 v. Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére, et gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
+(sed tempore post partum loco horum versuum dicuntur)
+@Psalterium/Mariaant:Nativiti:s/.*V\./V\./s
 
-[Suffragium3Epi]
+[Suffragium BMV] (rubrica cisterciensis)
 !De Beata Maria
-Ant. Sancta María succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam commemoratiónem.
+Ant. Sancta Dei Génitrix, Virgo semper María, intercéde pro nobis ad Dóminum Deum nostrum. (Allelúja, allelúja.)
 _
-V. Post partum Virgo invioláta permansísti.
-R. Dei Génitrix intercéde pro nobis.
-_
-!Oratio
-v. Orémus.
-v. Deus, qui salútis ætérnæ, beátæ Maríæ virginitáte fecúnda, humáno géneri prǽmia præstitísti: tríbue, quǽsumus; ut ipsam pro nobis intercédere sentiámus, per quam merúimus auctórem vitæ suscípere, Dóminum nostrum Jesum Christum Fílium tuum:
+@Psalterium/Mariaant:Postpentecost: s/.*V\./V./s s/(Per|Through).*$/\n/
+(sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis dicitur)
+@Psalterium/Mariaant:Quadragesimae: s/.*V\./V./s  s/(Per|Through).*$//
+(sed Adventus dicitur) 
+@Psalterium/Mariaant:Advent: s/.*V\./V./s s/(Per|Through).*$//
+(sed Nativitatis aut Epiphaniæ aut post partum dicitur)
+@Psalterium/Mariaant:Nativiti: s/.*V\./V./s s/Amen.*$//si
+(sed Paschali dicitur)
+@Psalterium/Mariaant:Paschalis: s/.*V\./V./s s/(Per|Through).*$//
 
-[Suffragium41]
+[Suffragium DeJosephV]
 !De sancto Joseph
-Ant. Ecce fidélis servus et prudens, quem constítuit Dóminus super famíliam suam.
+Ant. Ecce fidélis servus et prudens, quem constítuit Dóminus super famíliam suam. (Allelúja.)
 _
-V. Glória et divítiæ in domo ejus.
-R. Et justítia ejus manet in sǽculum sǽculi.
+V. Glória et divítiæ in domo ejus. (Allelúja.)
+R. Et justítia ejus manet in sǽculum sǽculi. (Allelúja.)
 _
-!Oratio
-v. Orémus.
+$Oremus  
 v. Deus, qui ineffábili providéntia beátum Joseph sanctíssimæ Genitrícis tuæ sponsum elígere dignátus es: præsta quǽsumus; ut quem protectórem venerámur in terris, intercessórem habére mereámur in cælis.
 
-[Suffragium42]
+[Suffragium DeJoseph]
 !De sancto Joseph
-Ant. Ipse Jesus erat incípiens quasi annórum trigínta ut putabátur fílius Joseph.
+Ant. Ipse Jesus erat incípiens quasi annórum trigínta ut putabátur fílius Joseph. (Allelúja.)
 _
-V. Os justi meditábitur sapiéntiam.
-R. Et lingua ejus loquétur judícium.
+V. Os justi meditábitur sapiéntiam. (Allelúja.)
+R. Et lingua ejus loquétur judícium. (Allelúja.)
+(sed commune C4 aut commune C5 loco hujus versus dicitur)
+@:Suffragium DeJosephV:4-5
 _
-!Oratio
-v. Orémus
-v. Deus, qui ineffábili providéntia beátum Joseph sanctíssimæ Genitrícis tuæ sponsum elígere dignátus es: præsta quǽsumus; ut quem protectórem venerámur in terris, intercessórem habére mereámur in cælis.
+@:Suffragium DeJosephV:7-8
 
-[Suffragium51]
+[Suffragium DeApostolisV]
 !De Apostolis
 Ant. Petrus Apóstolus, et Paulus Doctor Géntium, ipsi nos docuérunt legem tuam Dómine.
 _
 V. Constítues eos príncipes super omnem terram.
 R. Mémores erunt nóminis tui Dómine.
 _
-!Oratio
-v. Orémus.
+$Oremus  
 v. Deus, cujus déxtera beátum Petrum ambulántem in flúctibus, ne mergerétur, eréxit, et coapóstolum ejus Paulum tértio naufragántem de profúndo pélagi liberávit: exáudi nos propítius, et concéde; ut ambórum méritis, æternitátis glóriam consequámur.
 
-[Suffragium52]
+[Suffragium DeApostolis]
 !De Apostolis
 Ant. Gloriósi príncipes terræ, quómodo in vita sua dilexérunt se, ita et in morte non sunt separáti.
 _
 V. In omnem terram exívit sonus eórum.
 R. Et in fines orbis terræ verba eórum.
 _
-!Oratio
-v. Orémus.
-v. Deus, cujus déxtera beátum Petrum ambulántem in flúctibus, ne mergerétur, eréxit, et coapóstolum ejus Paulum tértio naufragántem de profúndo pélagi liberávit: exáudi nos propítius, et concéde; ut ambórum méritis, æternitátis glóriam consequámur.
+@:Suffragium DeApostolisV:7-8
 
-[Suffragium6]
+[Suffragium DeSSPNV]
+!De SS. Benedicto, Bernardo et Roberto
+Ant. Sancti per fidem vicérunt regna, operáti sunt justítiam, adépti sunt, repromissiónes. (Allelúja, allelúja.)
+_
+V. Beáti quos elegísti, Dómine. (Allelúja.)
+R. Habitábunt inátriis tuis. (Allelúja.)
+_
+$Oremus  
+v. Præsta, quǽsumus, omnípotens Deus: * ut qui sanctórum tuórum Benedícti, Bernárdi et Robérti commemoratiónem cólimus, ↊ eórum étiam virtútes imitémur.
+
+[Suffragium DeSSPN]
+!De SS. Benedicto, Bernardo et Roberto
+Ant. Córpora Sanctórum in pace spúlta sunt, et vivent nómina eórum in ætérnum. (Allelúja, allelúja.)
+@:Suffragium DeSSPNV:3-8
+
+[Suffragium DePace]
 !De Pace
-Ant. Da pacem Dómine in diébus nostris, quia non est álius, qui pugnet pro nobis, nisi tu Deus noster.
+Ant. Da pacem Dómine in diébus nostris, quia non est álius, qui pugnet pro nobis, nisi tu Deus noster. (Allelúja.)
 _
-V. Fiat pax in virtúte tua.
-R. Et abundántia in túrribus tuis.
+V. Fiat pax in virtúte tua. (Allelúja.)
+R. Et abundántia in túrribus tuis. (Allelúja.)
 _
-!Oratio
-v. Orémus
+$Oremus
 v. Deus, a quo sancta desidéria, recta consília, et justa sunt ópera: da servis tuis illam, quam mundus dare non potest, pacem; ut et corda nostra mandátis tuis dédita, et hóstium subláta formídine, témpora sint tua protectióne tranquílla.
 $Per Dominum
 
-[Day0M Laudes]
-@:Day0 Laudes
-_
-R.br. Inclína cor meum, Deus, * In testimónia tua.
-R. Inclína cor meum, Deus, * In testimónia tua.
-V. Avérte óculos meos, ne vídeant vanitátem: in via tua vivífica me.
-R. In testimónia tua.
-&Gloria
-R. Inclína cor meum, Deus, * in testimónia tua.
+[Suffragium] (rubrica divino)
+@:Suffragium Divino
+(sed commune C1[012] dicitur)
+@:Suffragium Divino1
+(sed tempore paschali)
+@:Suffragium Paschale
 
-[DayFM Laudes]
-@:Day1 Laudes
+[Suffragium Laudes] (rubrica tridentina)
+(si officio feriali dicuntur)
+@:Suffragium Feriale
 _
-R.br. Sana ánimam meam, * quia peccávi tibi.
-R. Sana ánimam meam, * quia peccávi tibi.
-V. Ego dixi: Dómine, miserére mei
-R. Quia peccávi tibi.
-&Gloria
-R. Sana ánimam meam, * quia peccávi tibi.
-
-[Day6M Laudes]
-@:DayFM Laudes
-
-[Day0M Vespera]
-@:Day0 Vespera
+(numquam omittitur)
+(atque dicuntur semper)
+@:Suffragium BMV
 _
-R.br. Quam magnificáta sunt * ópera tua, Dómine.
-R. Quam magnificáta sunt * ópera tua, Dómine.
-V. Ómnia in sapiéntia fecísti.
-R. Ópera tua Dómine.
-&Gloria
-R. Quam magnificáta sunt * ópera tua, Dómine.
-
-[DayFM Vespera]
-@:Day0 Vespera
+(attamen commune C10 aut tempore paschali omittuntur)
+(atque dicuntur semper)
+@:Suffragium DeJoseph
 _
-R.br. Benedícam Dóminum * In omni témpore.
-R. Benedícam Dóminum * In omni témpore.
-V. Semper laus ejus in ore meo.
-R. In omni témpore.
-&Gloria
-R. Benedícam Dóminum * In omni témpore.
-
-[Day6M Vespera]
-@:Day6 Vespera
+(sed rubrica 1570 aut rubrica 1617 omittuntur)
+@:Suffragium DeApostolis
 _
-R.br. Magnus Dóminus noster, * et magna virtus ejus.
-R. Magnus Dóminus noster, * et magna virtus ejus.
-V. Et sapiéntiæ ejus non est númerus.
-R. Et magna virtus ejus.
-&Gloria
-R. Magnus Dóminus noster, * et magna virtus ejus.
-
-[AdvM Laudes]
-@:Adv Laudes
+@:Suffragium DePatrono
 _
-R.br. Veni ad liberándum nos * Dómine Deus virtútum.
-R. Veni ad liberándum nos * Dómine Deus virtútum.
-V. Osténde fáciem tuam et salvi érimus.
-R. Dómine Deus virtútum.
-&Gloria
-R. Veni ad liberándum nos * Dómine Deus virtútum.
+@:Suffragium DePace
+(atque tempore paschali loco horum versuum dicitur)
+@:Suffragium Paschale
 
-[AdvM Vespera]
-@:Adv Vespera
+[Suffragium Laudes] (rubrica cisterciensis)
+@:Suffragium BMV
+$Per eundem
+(sed post partum)
+$Amen
+(sed rubrica 1951 aut feria 4 aut feria 3 aut feria 7)
 _
-R.br. Osténde nobis Dómine * Misericórdiam tuam.
-R. Osténde nobis Dómine * Misericórdiam tuam.
-V. Et salutáre tuum da nobis.
-R. Misericórdiam tuam.
-&Gloria
-R. Osténde nobis Dómine * Misericórdiam tuam.
+(sed commune C1[01] omittuntur)
+(deinde rubrica 1951 aut feria 4 dicuntur)
+@:Suffragium DeJoseph
+$Per Dominum
+(sed rubrica 1951)
+_
+(deinde rubrica 1951 aut feria 3 dicuntur)
+@:Suffragium DeSSPN
+$Per Dominum
+(sed rubrica 1951)
+_
+(deinde rubrica 1951 aut feria 7 dicuntur)
+@:Suffragium DePace
 
-[QuadM Laudes]
-@:Quad Laudes
+[Suffragium Vespera] (rubrica tridentina)
+(si officio feriali dicuntur)
+@:Suffragium Feriale
 _
-R.br. Ipse liberávit me * de láqueo venántium.
-R. Ipse liberávit me * de láqueo venántium.
-V. Et a verbo áspero.
-R. De láqueo venántium.
-&Gloria
-R. Ipse liberávit me * de láqueo venántium
+(numquam omittitur)
+(atque dicuntur semper)
+@:Suffragium BMV
+_
+(attamen commune C10 aut tempore paschali omittuntur)
+(atque dicuntur semper)
+@:Suffragium DeJosephV
+_
+(sed rubrica 1570 aut rubrica 1617 omittuntur)
+@:Suffragium DeApostolisV
+_
+@:Suffragium DePatrono
+_
+@:Suffragium DePace
+(atque tempore paschali loco horum versuum dicitur)
+@:Suffragium PaschaleV
 
-[QuadM Vespera]
-@:Quad Vespera
+[Suffragium Vespera] (rubrica cisterciensis)
+!De Beata Maria
+@Psalterium/Mariaant:Postpentecost: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(Per|Through).*$/\n/s
+(sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis dicitur)
+@Psalterium/Mariaant:Quadragesimae: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(Per|Through).*$/\n/s
+(sed Adventus dicitur) 
+@Psalterium/Mariaant:Advent: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(Per|Through).*$/\n/s
+(sed Nativitatis aut Epiphaniæ aut post partum dicitur)
+@Psalterium/Mariaant:Nativiti: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/Amen.*$/\n/s
+(sed Paschali dicitur)
+@Psalterium/Mariaant:Paschalis: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(Per|Through).*$/\n/s
+$Per eundem
+(sed post partum)
+$Amen
+(sed rubrica 1951 aut feria 3 aut feria 2 aut feria 6)
 _
-R.br. Scápulis suis * obumbrábit tibi.
-R. Scápulis suis * obumbrábit tibi.
-V. Et sub pennis ejus sperábis.
-R. Obumbrábit tibi.
-&Gloria
-R. Scápulis suis * obumbrábit tibi.
-
-[Quad5M Laudes]
-@:Quad5 Laudes
+(sed commune C1[01] omittuntur)
+(deinde rubrica 1951 aut feria 3 dicuntur)
+@:Suffragium DeJoseph
+$Per Dominum
+(sed rubrica 1951)
 _
-R.br. Érue a frámea * Deus ánimam meam.
-R. Érue a frámea * Deus ánimam meam
-V. Et de manu canis únicam meam.
-R. Deus ánimam meam.
-R. Érue a frámea * Deus ánimam meam.
-
-[Quad5M Vespera]
-@:Quad5 Vespera
+(deinde rubrica 1951 aut feria 2 dicuntur)
+@:Suffragium DeSSPN
+$Per Dominum
+(sed rubrica 1951)
 _
-R.br. De ore leónis * líbera me, Dómine.
-R. De ore leónis * líbera me, Dómine.
-V. Et a córnibus unicórnium humilitátem meam.
-R. Líbera me, Dómine.
-R. De ore leónis * líbera me, Dómine.
-
-[PaschM Laudes]
-@:Pasch Laudes
-_
-@Psalterium/Special/Minor Special:Responsory Pasch Tertia:s/._.*//s
-
-[PaschM Vespera]
-@:Pasch Laudes
-_
-@Psalterium/Special/Minor Special:Responsory Pasch Sexta:s/._.*//s
+(deinde rubrica 1951 aut feria 6 dicuntur)
+@:Suffragium DePace
 
 [Preces feriales Laudes]
 $Kyrie
@@ -1629,28 +1799,13 @@ $Pater noster Et
 $Preces feriales Vespera
 $Domine exaudi
 
-[Day0 Versum 0]
+[Dominica Versum 0]
 V. Excélsus super omnes gentes Dóminus.
 R. Et super calos glória ejus.
 
-[Day1 Versum 0]
+[Feria Versum 0]
 V. Fiat misericórdia tua, Dómine, super nos.
 R. Quemádmodum sperávimus in te.
-
-[Day2 Versum 0]
-@:Day1 Versum 0
-
-[Day3 Versum 0]
-@:Day1 Versum 0
-
-[Day4 Versum 0]
-@:Day1 Versum 0
-
-[Day5 Versum 0]
-@:Day1 Versum 0
-
-[Day6 Versum 0]
-@:Day1 Versum 0
 
 [Adv Versum 0]
 V. Emítte Agnum, Dómine, dominatórem terræ.
@@ -1682,3 +1837,26 @@ R. Deum meum et Deum vestrum, allelúja.
 [Pent Versum 0]
 V. Emítte Spíritum tuum, et creabúntur, allelúja.
 R. Et renovábis fáciem terræ, allelúja.
+
+[Suffragium DePatrono]
+!De Patrono vel Titulo Ecclesiæ
+/:fiat com. consueata ante vel post Commemorationes prædictas, pro dignitate illius, et ultimo loco::/
+
+[Feria Ant 3]
+(feria 2) @:Feria2 Ant 3
+(feria 3) @:Feria3 Ant 3
+(feria 4) @:Feria4 Ant 3
+(feria 5) @:Feria5 Ant 3
+(feria 6) @:Feria6 Ant 3
+(feria 7) @:Feria7 Ant 3
+
+[Feria Ant 3] (rubrica cisterciensis)
+(feria 2) @:Feria2C Ant 3
+(feria 3) @:Feria3C Ant 3
+(feria 4) @:Feria4C Ant 3
+(feria 5) @:Feria6 Ant 3
+(feria 6) @:Feria6C Ant 3
+(feria 7) @:Dominica Ant 3
+
+[Feria4C Ant 3]
+Quia fecit * mihi Dóminus magna qui potens est, et sanctum nomen ejus.

@@ -13,16 +13,36 @@
 [Pater post V]
 /:Et si tunc terminetur Officium, dicitur tantum « Pater Noster » secreto.:/
 
-[Secreto]
+[Secreto_]
 /:secreto:/
+
+[Secreto_C]
+/:In Choro, finita Officio parvo B.M.V., dicitur secreto::/
+
+[Secreto]
+@:Secreto_
+(sed rubrica cisterciensis)
+@:Secreto_C
+(sed die in Cœna Domini aut die in Parasceve aut die Sabbato Sancto)
+@:Secreto_
 
 [Secreto a Laudibus]
 /:Si Matutinum a Laudibus separatur, tunc dicitur secreto::/
 (sed rubrica monastica)
 /:In Festi Simplicis, et in Officio Ferialis, et si Matutinum a Laudibus separatur, tunc dicitur secreto::/
+(sed rubrica cisterciensis)
+/:Præterquam Officio duodecim Lectionum dicitur secreto::/
+
+[Clara voce_]
+/:Deinde, clara voce, dicitur Versus::/
+
+[Clara voce_C]
+/:In Choro, facimus signum Crucis + atque ad signum Superioris inclinamus Altari. Deinde alta voce et graviter dicitur Versus::/
 
 [Clara voce]
-/:Deinde, clara voce, dicitur Versus::/
+@:Clara voce_
+(sed rubrica cisterciensis)
+@:Clara voce_C
 
 [Secus absolute]
 /:Secus absolute incipiuntur, ut sequitur::/
@@ -38,6 +58,8 @@
 !Reliqua omittuntur, nisi %Laudes% separandæ sint.
 (sed rubrica tridentina aut rubrica divino)
 !Reliqua omittuntur in Officium duodecim Lectionum, quando immediatæ subsequuntur %Laudes%. Sed in Festi Simplicis, et in Officio Ferialis tam trium, quam unius Lectionis semper dicuntur ut sequitur.
+(sed rubrica cisterciensis)
+!Reliqua omittuntur in Officium xij. Lectionum, quas immediatæ subsequuntur %Laudes%. Sed tam in Feriis, quam in Festis iij. Lectionum, in Hieme et in Æstate semper dicuntur ut sequitur.
 
 [Deinde secreto]
 /:Deinde dicitur secreto:/
@@ -50,6 +72,17 @@
 &Benedicamus_Domino
 ! Post Vesperas diei dicuntur %Vesperae Defunctorum%.
 
+[DefunctVC]
+&Dominus_vobiscum
+&Benedicamus_Domino
+&Divinum_auxilium
+! Post Vesperas diei dicuntur %Vesperae Defunctorum%.
+
+[DefunctLC]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Post Laudes diei dicuntur %Laudes Defunctorum%.
+
 [DefunctM]
 &Dominus_vobiscum
 &Benedicamus_Domino
@@ -57,9 +90,16 @@
 
 [Martyrologium] (rubrica monastica)
 /:Deinde in Choro legitur Martyrologium, quod laudabiliter fit etiam extra Chorum.:/
+(sed rubrica cisterciensis)
+/:Hic expletur Prima. Deinde legitur Martyrologium in Capitulo sine benedictione. Extra Conventum non legitur Martyrologium, sed immediate incipitur « Pretiósa. » ut infra.:/
 
 [Regula] (rubrica monastica)
 /:Extra Chorum etiam laudabiliter dicitur lectio ex S. Regulæ; secus dicitur Lectio brevis.:/
+(sed rubrica cisterciensis)
+/:Cum vero recitatur privatim, hæc erit brevis Lectio per totum annum.:/
+
+[Regula ante] (rubrica cisterciensis)
+/:In Capitulo legitur unum caput, vel pars capitis ex Regula S. Benedicti.:/
 
 [examen]
 /:Examen conscientiæ vel Pater Noster totum secreto.:/
@@ -72,3 +112,26 @@
 
 [Post]
 /:Cum expletum fuerit Officium, laudabiliter dicitur sequens Oratio; pro qua Summus Pontifex Pius Papa XI sub die 1 Decembris 1933 indulgentiam trium annorum concessit. Prreterea Clericis in sacris constitutis et Sacerdotibus eam devote post Officium recitantibus Summus Pontifex Leo X defectus et culpas in eo persolvendo ex humana fragilitate contractas, indulsit. Dicitur autem  flexis semper genibus in privata etiam recitatione, præter quam ab iis, qui ob certam infirmitatem vel gravioris impedimenti causam nequeant genuflectere.:/
+
+[Superior] (rubrica cisterciensis)
+/:Superior::/
+
+[Incipit] (rubrica altovadensis)
+/:Finita Commemoratione officii parvi B.M.V., facimus signum Crucis + atque ad signum Superioris inclinamus Altari.:/
+
+[IncipitL] (rubrica altovadensis)
+/:Dicta Oratione Matutina aut finita Commemoratione officii parvi B.M.V. in Officio feriali vel  iij. Lectionum, facimus signum Crucis + atque ad signum Superioris inclinamus Altari.:/
+
+[Antiphona]
+/:inchoatur in officio quod cum cantu celebratur tantum:/
+
+[CompletBMV]
+/:Postea dicitur Completorium B. Mariæ. Quo finito per totum annum, excepta Feria v. et vj. majoris hebdomadæ, cantatur solemniter:/
+
+[sine Oremus]
+/:Et sine:/ Orémus /:::/
+(sed rubrica altovadensis)
+/:Et sine:/ Orémus /:prosequitur Hebdomadarius.:/
+
+[Conclusio cisterciensis]
+/:Et quandocumque terminata Hora discendum est a Choro (nisi quando immediate subsequitur Missa aut cum Officio diei Officium Defunctorum, vel Sepultura, vel Processio, aut Litaniæ, ut in Rogationibus, etc.) dicitur::/

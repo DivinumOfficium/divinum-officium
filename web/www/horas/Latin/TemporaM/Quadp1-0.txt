@@ -4,12 +4,6 @@
 12 lectiones
 Invit2
 
-[Responsory Vespera 1]
-@Psalterium/Special/Major Special:Day6M Vespera:3-8
-
-[Responsory Vespera]
-@Psalterium/Special/Major Special:Day0M Vespera:3-8
-
 [Ant Matutinum 3N]
 Ite et vos in víneam meam, † et quod justum fúerit, dabo vobis.
 V. Exaltáre Dómine in virtúte tua.
@@ -84,15 +78,3 @@ R. In quacúmque die coméderis, morte moreiéris.
 
 [Responsory12]
 @Tempora/Quadp1-1:Responsory2
-
-[Responsory Laudes]
-@Psalterium/Special/Major Special:Day0M Laudes:3-8
-
-[Responsory TertiaM]
-@Psalterium/Special/Minor Special:Dominica Tertia:s/.*_.//s
-
-[Responsory SextaM]
-@Psalterium/Special/Minor Special:Dominica Sexta:s/.*_.//s
-
-[Responsory NonaM]
-@Psalterium/Special/Minor Special:Dominica Nona:s/.*_.//s

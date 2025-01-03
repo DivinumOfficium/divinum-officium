@@ -308,15 +308,16 @@ Ego Dóminus * prope feci justítiam meam, non elongábitur, et salus mea non mo
 Exspectétur, * sicut plúvia, elóquium Dómini: et descéndat, sicut ros, super nos Dóminus Deus noster.
 Parátus esto * Israël, in occúrsum Dómini, quóniam venit.
 
-[Daym0 Laudes]
-Allelúja, * allelúja;;50
-;;117
+[DaymF Laudes]
+Allelúja, * allelúja;;92
+;;99
 ;;62
 Tres púeri * jussu régis in fornácem missi sunt, non timéntes flammam ignis dicéntes: Benedíctus Deus;;210
 Allelúja, * allelúja, allelúja;;148;149;150
 
-[DaymF Laudes]
-@:Daym0 Laudes:s/50/92/ s/117/99/
+[DaycF Laudes]
+@:DaymF Laudes:5 s/;;.*/;;92/
+@:DaymF Laudes:2-5 s/.*;;/;;/gm
 
 [DaymF Canticles]
 ;;
@@ -327,98 +328,137 @@ Pópulus meus, * ait Dóminus, bonis meis adimplébitur.;;214
 In Dómino justificábitur * et laudábitur omne semen Israël.;;215
 Osténde nobis, Dómine, * lucem miseratiónum tuárum.;;216(1-13)
 
-[Daym1 Laudes]
+[DaymP Laudes]
+Allelúja, * allelúja, allelúja, allelúja, allelúja, allelúja, allelúja, allelúja, allelúja.;;92;99;62
+Surréxit Christus * de sepúlcro, qui liberávit tres púeros de camino ignis ardéntis, allelúja.;;210
+Allelúja, * allelúja, allelúja.;;148;149;150
+
+[Monastic Laudes]
+@:DaymF Laudes:s/92/50/ s/99/117/
+
+[Monastic Laudes] (feria 2)
 Miserére * mei, Deus;;50
 Intéllege * clamórem meum, Dómine;;5
 Dómine, * in cælo misericórdia tua;;35
 Convérsus est * furor tuus, Dómine, et consolátus es me;;221
 Laudáte * Dóminum de cælis;;148;149;150
 
-[Daym2 Laudes]
+[Monastic Laudes] (feria 3)
 Dele, Dómine, * iniquitátem meam;;50
 Salutáre * vultus mei, et Deus meus;;42
 Quóniam * in te confídit ánima mea;;56
 Cunctis diébus * vitæ nostræ salvos nos fac, Dómine;;222
 Omnes Ángeli ejus, * laudáte Dóminum de cælis;;148;149;150
 
-[Daym3 Laudes]
+[Monastic Laudes] (feria 4)
 Ámplius lava me, * Dómine ab injustítia mea;;50
 A timóre * inimíci éripe, Dómine ánimam meam;;63
 Te décet hymnus, * Deus in Sion;;64
 Dóminus * judicábit fines terræ;;223
 Cæli cælórum, * laudáte Deum;;148;149;150
 
-[Daym4 Laudes]
+[Monastic Laudes] (feria 5)
 Tibi soli * peccávi, Dómine, miserére mei;;50
 Intret * orátio mea, in conspéctu tuo, Dómine;;87
 Dómine, * refúgium factus es nobis;;89
 Cantémus Dómino * glorióse;;224
 In sanctis ejus * laudáte Deum;;148;149;150
 
-[Daym5 Laudes]
+[Monastic Laudes] (feria 6)
 Spíritu principáli * confírma cor meum, Deus;;50
 In Israël * magnum nomen ejus;;75
 Bonum est * confitéri Dómino;;91
 Dómine, * audívi audítum tuam, et tímui;;225
 In týmpano et choro, * in chordis et órgano laudáte Deum;;148;149;150
 
-[Daym6 Laudes]
+[Monastic Laudes] (feria 7)
 Benígne fac * in bona voluntáte tua, Dómine;;50
 In veritáte tua * exáudi me, Dómine;;142
 Date magnitúdinem * Deo nostro;;226(1-32)
 ;;226(33-65)
 In cýmbalis * benesonántibus laudáte Deum;;148;149;150
 
+[Cistercian Laudes]
+@:Monastic Laudes:1
+@:Monastic Laudes:2-5 s/.*;;/;;/gm
+
+[Cistercian Laudes] (feria 1)
+@:DaymF Laudes:5 s/;;.*/;;50/ s/(.*)(\,.*);;/$1$2$2$2$2$2;;/m
+(sed tempore paschali)
+@:DaymF Laudes:5 s/;;.*/;;50/ s/(.*)(\,.*);;/$1$2$2$2$2$2$2;;/m
+@:DaymF Laudes:2-5 s/.*;;/;;/gm s/99/117/
+
 [Daym6F Laudes]
-@:Daym6 Laudes:1
-@:Daym6 Laudes:2 s/$/(1-'7b')/
+@:Monastic Laudes:1
+@:Monastic Laudes:2 s/$/(1-'7b')/
 ;;142('8a'-'12b')
 @:DaymF Canticles:7
-@:Daym6 Laudes:5
+@:Monastic Laudes:5
 
-[Daym0 Vespera]
+[Monastic Vespera]
 Dixit Dóminus * Dómino meo: Sede a dextris meis;;109
 Fidélia * ómnia mandáta ejus: confirmáta in sæculum sæculi;;110
 In mandátis * ejus cupit nimis;;111
 Sit nomen Dómini * benedíctum in sæcula;;112
 
-[Daym1 Vespera]
+[Monastic Vespera] (feria 2)
 Nos qui vívimus, * benedícimus Dómino;;113
 Inclinávit * Dóminus aurem suam mihi;;114
 Crédidi, * propter quod locútus sum;;115;116
 Sæpe * expugnavérunt me a juventúte mea;;128
 
-[Daym2 Vespera]
+[Monastic Vespera] (feria 3)
 De profúndis * clamávi ad te, Dómine;;129
 Speret * Israël in Dómino;;130
 Et omnis * mansuetúdinis ejus;;131
 Ecce quam bonum, * et quam jucúndum, habitáre fratres in unum!;;132
 
-[Daym3 Vespera]
+[Monastic Vespera] (feria 4)
 Ómnia * quæcúmque vóluit, Dóminus fecit;;134
 Quóniam * in ætérnum misericórdia ejus;;135
 Hymnum cantáte nobis * de cánticis Sion;;136
 In conspéctu * Angelórum psallam tibi, Deus meus;;137
 
-[Daym4 Vespera]
+[Monastic Vespera] (feria 5)
 Dómine, * probásti me, et cognovísti me;;138(1-10)
 ;;138(11-24)
 A viro iníquo * líbera me, Dómine;;139
 Dómine, * clamávi ad te, exáudi me;;140
 
-[Daym5 Vespera]
+[Monastic Vespera] (feria 6)
 Pórtio mea, * Dómine, sit in terra vivéntium;;141
 Benedíctus * Dóminus, Deus meus;;143(1-8)
 ;;143(9-15)
 Per síngulos dies * benedícam te, Dómine;;144(1-9)
 
-[Daym6 Vespera]
+[Monastic Vespera] (feria 7)
 Regnum tuum, * Dómine, regnum ómnium sæculórum;;144(10-21)
 Laudábo * Deum meum in vita mea;;145
 Deo nostro * jucúnda sit laudátio;;146
 Lauda, * Jerúsalem Dóminum;;147
 
-[DaymP Laudes]
-Allelúja, * allelúja, allelúja, allelúja, allelúja, allelúja, allelúja, allelúja, allelúja.;;92;99;62
-Surréxit Christus * de sepúlcro, qui liberávit tres púeros de camino ignis ardéntis, allelúja.;;210
-Allelúja, * allelúja, allelúja.;;148;149;150
+[Cistercian Ant Vespera]
+Laudáte * Dóminum omnes Gentes.;;115;116
+Benedíximus * vobis in nómine Dómini.;;128
+Habitáre * fratres in unum.;;132
+In ætérnum * et in sæculum sæculi.;;144(1-9)
+Custódit * Dóminus omnes diligéntes se.;;144(10-21)
+
+[Cistercian Vespera]
+@:Monastic Vespera
+
+[Cistercian Vespera] (feria 2)
+@:Monastic Vespera:1-2
+@:Cistercian Ant Vespera:1-2
+
+[Cistercian Vespera] (feria 3)
+@:Monastic Vespera:1-3
+@:Cistercian Ant Vespera:3
+
+[Cistercian Vespera] (feria 6)
+@:Monastic Vespera:1-3
+@:Cistercian Ant Vespera:4
+
+[Cistercian Vespera] (feria 7)
+@:Cistercian Ant Vespera:5
+@:Monastic Vespera:2-4

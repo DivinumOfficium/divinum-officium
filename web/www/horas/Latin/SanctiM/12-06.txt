@@ -3,9 +3,16 @@
 [Rank] (rubrica divino aut rubrica 1963)
 S. Nicolai Episcopi et Confessoris;;Simplex;;1.1;;vide C4
 
+[Rank] (rubrica cisterciensis)
+S. Nicolai Episcopi et Confessoris;;Simplex;;1.2;;vide C4
+(sed rubrica altovadensis)
+S. Nicolai Episcopi et Confessoris;;Duplex I. classis;;6;;ex C4
+
 [Rule] (rubrica tridentina)
 vide C4;
 12 lectiones
+(sed rubrica 1951)
+
 
 [Lectio5]
 @Sancti/12-06:Lectio4

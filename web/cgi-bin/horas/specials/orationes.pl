@@ -212,9 +212,8 @@ sub oratio {
 
     # add commemorated from winner
     unless (
-      ($rank >= 6 && $dayname[0] !~ /Pasc[07]|Pent01/)
-
-      #				|| $rule =~ /no commemoratio/i
+      # Duplex I. classis: excludes Commemoratio reduced to Simplex
+      ($rank >= ($version !~ /cist/i ? 6 : 7) && $dayname[0] !~ /Pasc[07]|Pent01/)
       || ($version =~ /196/ && $winner{Rule} =~ /nocomm1960/i)
     ) {
 
@@ -319,7 +318,7 @@ sub oratio {
         }
 
         # add commemorated from cwinner
-        unless (($rank >= 6 && $dayname[0] !~ /Pasc[07]|Nat0?6/)
+        unless (($rank >= ($version !~ /cist/i ? 6 : 7) && $dayname[0] !~ /Pasc[07]|Nat0?6/)
           || $rule =~ /no commemoratio/i
           || ($version =~ /196/ && $c{Rule} =~ /nocomm1960/i))
         {
@@ -423,7 +422,7 @@ sub oratio {
         }
 
         # add commemorated from commemo
-        unless (($rank >= 6 && $dayname[0] !~ /Pasc[07]/)
+        unless (($rank >= ($version !~ /cist/i ? 6 : 7) && $dayname[0] !~ /Pasc[07]/)
           || $rule =~ /no commemoratio/i
           || ($version =~ /196/ && $c{Rule} =~ /nocomm1960/i))
         {
@@ -487,7 +486,7 @@ sub oratio {
 
           if ($c) {
             $ccind++;
-            $key = $ccind + 8500;    # 10000 - 1.5 * 1000
+            $key = $ccind + ($version !~ /cist/i ? 8500 : 8750);    # 10000 - 1.5 * 1000
             $cc{$key} = $c;
           }
         }
@@ -551,7 +550,12 @@ sub getcommemoratio {
 
   our ($rule, $hora, $vespera, $version, $rank, $winner, @dayname, $month, $day, %winner, %winner2);
 
-  if ($rule =~ /no commemoratio/i && !($hora eq 'Vespera' && $vespera == 3 && $ind == 1)) { return ''; }
+  if ( $rule =~ /no\s+(\w+)?\s*commemoratio/i
+    && (!$1 || $wday =~ /$1/i)
+    && !($hora eq 'Vespera' && $vespera == 3 && $ind == 1))
+  {
+    return '';
+  }
 
   if ( $version =~ /1960/
     && $hora eq 'Vespera'
@@ -562,16 +566,23 @@ sub getcommemoratio {
     return '';
   }
   my @rank = split(";;", $w{Rank});
-  if ($rank[1] =~ /Feria/ && $rank[2] < 2.1) { return; }    #no commemoration of no privileged feria
 
-  if ( $rank[0] =~ /Infra Octav/i
-    && $rank[2] < 2.1
-    && $rank >= 5
-    && $winner =~ /Sancti/i
-    && ($wday ne $cwinner || $version !~ /Trident/))
-  {
+  if (
+       $rank[2] < 2.1
+    && $rank[2] != 1.15
+    && (
+      # no commemoration of no privileged feria
+      $rank[1] =~ /Feria/
+
+      #no commemoration of octava common in 2nd class unless in concurrence => to be checked
+      || ( $rank[0] =~ /Infra Octav/i
+        && $rank >= 5
+        && $winner =~ /Sancti/i
+        && ($wday ne $cwinner || $version !~ /Trident/))
+    )
+  ) {
     return;
-  }    #no commemoration of octava common in 2nd class unless in concurrence => to be checked
+  }
 
   if ($rank[3] =~ /(ex|vide)\s+(.*)\s*$/i) {
     my $file = $2;
@@ -708,8 +719,8 @@ sub vigilia_commemoratio {
   if ($w{Rank} =~ /Vigilia/i) { $c =~ s/\:.*/: $wrank[0]/; }
   if ($w =~ /(\!.*?\n)(.*)/s) { $c = $1; $w = $2; }
   my %p = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
-  my $a = $p{"Day$dayofweek Ant 2"};
-  my $v = $p{"Day$dayofweek Versum 2"};
+  my $a = $p{"Feria Ant 2"};       #$p{"Day$dayofweek Ant 2"};
+  my $v = $p{"Feria Versum 2"};    #$p{"Day$dayofweek Versum 2"};
   $a =~ s/\s*\*\s*/ /;
   $w = $c . "Ant. $a" . "_\n$v" . "_\n\$Oremus\n$w";
   return $w;
@@ -718,37 +729,19 @@ sub vigilia_commemoratio {
 sub getsuffragium {
   my $lang = shift;
 
-  our ($version, @dayname, $hora, $commune, $month, $day, $churchpatron);
+  our ($version, @dayname, $hora, $commune, $month, $day, $churchpatron, %cwinner);
+  $commune = "C10"
+    if $cwinner{Rank} =~ /C1[012]/ && $hora eq 'Vespera'; # if Sancta Maria in Sabbato is commemorated on Friday Vespers
   my %suffr = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
   my ($suffr, $comment);
 
-  if ($version =~ /trident/i) {
-    if ($dayname[0] =~ /pasc/i) {
-      $suffr = $hora eq 'Laudes' ? $suffr{"Suffragium2"} : $suffr{"Suffragium2v"};
-    } else {
-      if ($dayname[1] =~ /(?:feria|vigilia)/i && $commune !~ /C10/) {
-        $suffr = $suffr{"SuffragiumTridentinumFeriale"};
-      }
-
-      if ($commune !~ /(C1[0-9])/i) {
-        if (($month == 1 && $day > 13) || $month == 2 && $day == 1) {
-          $suffr .= "_\n" . $suffr{Suffragium3Epi};
-        } else {
-          $suffr .= "_\n" . $suffr{Suffragium3};
-        }
-      }
-      my ($v) = ($hora ne 'Vespera') + 1;
-      $suffr .= "_\n" . $suffr{"Suffragium4$v"} if ($version !~ /1570/);
-      $suffr .= "_\n" . $suffr{"Suffragium5$v"};
-      $suffr .= "_\n" . $suffr{Suffragium6};
-    }
-    $comment = 3;
-  } else {
-    $comment = ($dayname[0] =~ /pasc/i) + 1;
-    my $c = $comment;
-    if ($c == 1 && $commune =~ /(C1[0-9])/) { $c = 11; }
-    $suffr = $suffr{"Suffragium$c"};
-  }
+  $comment =
+      $version =~ /altovadensis/i ? 5
+    : $version =~ /cisterciensis/i ? 4
+    : $version =~ /trident/i ? 3
+    : $dayname[0] =~ /pasc/i ? 2
+    : 1;
+  $suffr = $comment > 2 ? $suffr{"Suffragium $hora"} : $suffr{'Suffragium'};
   if ($churchpatron) { $suffr =~ s/r\. N\./$churchpatron/; }
   ($suffr, $comment);
 }

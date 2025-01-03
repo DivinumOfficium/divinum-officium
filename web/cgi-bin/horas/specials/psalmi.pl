@@ -242,7 +242,8 @@ sub psalmi_minor {
     && $hora eq 'Prima'
     && ($dayname[0] =~ /(Epi|Pent)/i || $version !~ /Divino/i)
     && $dayofweek == 0
-    && ($dayname[0] =~ /(Adv|Pent01)/i || checksuffragium()))
+    && ($dayname[0] =~ /(Adv|Pent01)/i || checksuffragium() || ($dayname[0] =~ /Pasc1/i && $version =~ /cist/i))
+    && ($winner =~ /Tempora/i || $version !~ /cist/i))
   {
     push(@psalm, 234);
     setbuild2('Quicumque');
@@ -272,19 +273,25 @@ sub psalmi_major {
   my (@psalmi, $prefix, $comment);
 
   if ($version =~ /Monastic/ && !($hora eq 'Laudes' && $rule =~ /Matutinum romanum/i)) {    # Triduum like Roman
-    my $head = "Daym$dayofweek";
+    my $head = $version =~ /cist/i ? 'Cistercian' : 'Monastic';
 
     if ($hora eq 'Laudes') {
-      if ($rule =~ /Psalmi Dominica/ || ($winner =~ /Sancti/i && $rank >= 4 && $dayname[1] !~ /vigil/i)) {
-        $head = 'DaymF';
+      if (
+        $rule =~ /Psalmi Dominica/
+        || ($rule !~ /Psalmi Feria/i
+          && ($winner =~ /Sancti/i && $rank >= ($version =~ /cist/i ? 3 : 4) && $dayname[1] !~ /vigil/i))
+      ) {
+        $head = $version =~ /cist/i ? 'DaycF' : 'DaymF';
+      } elsif ($dayofweek == 0 && $dayname[0] =~ /Pasc/i && $version !~ /cisterciensis/i) {
+        $head = 'DaymP';
       }
-      if ($dayname[0] =~ /Pasc/i && $head =~ /Daym0/i) { $head = 'DaymP'; }
     }
     @psalmi = split("\n", $psalmi{"$head $hora"});
     setbuild("Psalterium/Psalmi/Psalmi major", "$head $hora", 'Psalmi ord');
 
-    if ($hora eq 'Laudes' && $head =~ /Daym[1-6]/) {
-      unless ($version =~ /Trident/
+    if ($hora eq 'Laudes' && $head =~ /Monastic/) {
+      unless ($dayofweek == 0
+        || $version =~ /Trident/
         || (($dayname[0] =~ /Adv|Quadp/) && ($duplex < 3) && ($commune !~ /C10/))
         || (($dayname[0] =~ /Quad\d/) && ($dayname[1] =~ /Feria/))
         || ($dayname[1] =~ /Quattuor Temporum Septembris/)
@@ -377,7 +384,7 @@ sub psalmi_major {
     }
   }
 
-  if (!$w && exists($w{"Ant $hora"}) && $winner !~ /M\/C10/) {
+  if (!$w && exists($w{"Ant $hora"})) {
     $w = $w{"Ant $hora"};
     $c = $winner =~ /Tempora/ ? 2 : 3;
   }
@@ -493,11 +500,15 @@ sub psalmi_major {
     $psalmi[2] =~ s/.*(?=;;)//;
     $psalmi[-1] =~ s/.*(?=;;)//;
 
-    if ($version =~ /Monastic/ && $hora eq 'Laudes') {
+    if ($version =~ /Monastic(?! Cist)/ && $hora eq 'Laudes') {
       $psalmi[-1] =~ s/.*(?=;;)/ alleluia_ant($lang) /e;
     } else {
       $psalmi[3] =~ s/.*(?=;;)//;
     }
+  } elsif ($version =~ /cist/i && $hora =~ /laudes/i && $rule !~ /matutinum romanum/i) {
+
+    # Cistercien Lauds under single Antiphone except for Triduum and Officium Defunctorum
+    $psalmi[$_] =~ s/.*(?=;;)// foreach (1 .. 4);
   }
 
   if (($dayname[0] =~ /Adv|Quad/ || emberday()) && $hora eq 'Laudes' && $version !~ /Trident/) {
@@ -525,9 +536,10 @@ sub antetpsalm {
       postprocess_ant($ant, $lang);
       my $antp = $ant;
 
-      unless ($duplexf) {
+      unless ($duplexf && $version !~ /cist/i) {
         $antp =~ s/\s*\*.*//;
         $antp =~ s/\,$/./;
+        if ($version =~ /cist/i) { $antp .= ' ' . rubric('Antiphona', $lang); }
       }
       push(@s, "Ant. $antp");
       $lastant = ($ant =~ s/\* //r);

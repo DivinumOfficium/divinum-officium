@@ -134,10 +134,16 @@ sub specials {
       next;
     }
 
+    # Preces:
     if ($item =~ /preces/i) {
-      $skipflag = !preces($item);
+      $skipflag = !preces($item);    # check if Preces Feriales or Dominicales are to be said
       setcomment($label, 'Preces', $skipflag, $lang);
       setbuild1($item, $skipflag ? 'omit' : 'include');
+
+      if ($precesferiales && $item =~ /Dominicales/i) {
+        push(@s, '$rubrica Preces flexis genibus') unless $skipflag;
+      }
+
       push(@s, getpreces($hora, $lang, $item =~ /Dominicales/)) unless $skipflag;
       next;
     }
@@ -164,9 +170,7 @@ sub specials {
     }
 
     if ($item =~ /Capitulum/i && $hora =~ /^(?:Tertia|Sexta|Nona|Completorium)$/i) {
-      if ($hora eq 'Completorium') {
-        push(@s, translate($item, $lang));
-      }
+      push(@s, translate($item, $lang)) if ($hora eq 'Completorium');
       push(@s, capitulum_minor($lang));
       next;
     }
@@ -206,6 +210,8 @@ sub specials {
     }
 
     if ($item =~ /Hymnus/) {
+
+      # Fills in Hymnus (and Versus if necessary)
       push(@s, gethymn($lang));
       next;
     }
@@ -275,7 +281,9 @@ sub specials {
       } else {
         push(@s, '#' . translate('Antiphona finalis BMV', $lang));
 
-        if ( $dayname[0] =~ /Adv|Nat/i
+        if ($version =~ /cist/i) {
+          push(@s, '$ant Salve Regina');
+        } elsif ($dayname[0] =~ /Adv|Nat/i
           || $month == 1
           || ($month == 2 && $day < 2)
           || ($month == 2 && $day == 2 && $hora !~ /Completorium/i))
@@ -519,6 +527,7 @@ sub getanthoras {
     : $hora eq 'Tertia' ? 1
     : $hora eq 'Sexta' ? 2
     : 4;
+  $ind++ if $ind < 3 && $version =~ /cist/i;    # Cistercian: shift by 1 except ad Nonam
   if (@ant > 3) { $ant = $ant[$ind]; }
   return ($ant, $c);
 }
@@ -591,7 +600,7 @@ sub getseant {
 }
 
 #*** geffrompsalterium($item, $ind, $lang)
-# returns $item (antiphona/versum) $ind(1-3) from $lang/Psalterium/Major Special.txt
+# returns $item (antiphona/versum) $ind(1-3/0) from $lang/Psalterium/Major Special.txt
 sub getfrompsalterium {
   my $item = shift;
   my $ind = shift;
@@ -653,18 +662,38 @@ sub setbuild {
 #*** checksuffragium
 # versions 1956 and 1960 exclude from Ordinarium
 sub checksuffragium {
-  if ($rule =~ /no suffragium/i) { return 0; }
-  if (!$dayname[0] || $dayname[0] =~ /Adv|Nat|Quad5|Quad6/i) { return 0; }  #christmas, adv, passiontime omit
-  if ($dayname[0] =~ /Pasc[07]/i) { return 0; }                             # Octaves of Pascha and Pentecost
-  if ($winner =~ /sancti/i && $rank >= 3 && $seasonalflag) { return 0; }    # All Duplex Saints (except Patr. S. Joseph)
-  if ($winner{Rank} =~ /octav/i && $winner{Rank} !~ /post Octavam/i) { return 0; }
+
+  my $ranklimit = ($version =~ /cist/i ? 4 : 3);    # Roman: Duplex; Cist: MM. maj.
+  return 0
+    if $rule =~ /no suffragium/i
+
+    # early January
+    || !$dayname[0]
+
+    # Nativity, Hebd. maj., Octaves of Pasch and Pente, and Ascensiontide
+    || $dayname[0] =~ /Nat|Quad6|Pasc[067]/i
+
+    # Passiontide and Advent for non-Cistercian
+    || $version !~ /cist/i && $dayname[0] =~ /Adv|Quad5/i
+
+    # All Duplex (MM. maj.) Saints (except Patr. S. Joseph)
+    || ($winner =~ /sancti/i && $rank >= $ranklimit && $seasonalflag)
+    || ($winner =~ /tempora/i && $duplex > 2 && $seasonalflag)
+
+    # Octaves
+    || ($winner{Rank} =~ /octav/i && $winner{Rank} !~ /post Octavam/i)
+    || ($octavcount || $commemoratio{Rank} =~ /octav/i)
+
+    # Cistercian: minor Feasts of Apostles
+    || $version =~ /cist/i && $commune =~ /C1a?$/i;
 
   if ($commemoratio && $seasonalflag) {
     my @r = split(';;', $commemoratio{Rank});
 
-    if ($r[2] >= 3 || $commemoratio{Rank} =~ /in.*Octav/i || checkcommemoratio(\%commemoratio) =~ /octav/i) {
-      return 0;
-    }
+    return 0
+      if $r[2] >= $ranklimit
+      || $commemoratio{Rank} =~ /in.*Octav/i
+      || checkcommemoratio(\%commemoratio) =~ /octav/i;
 
     if (@commemoentries || @ccommemoentries) {
       my @cccentries = (@commemoentries, @ccommemoentries);
@@ -674,17 +703,12 @@ sub checksuffragium {
         my %c = %{officestring('Latin', $commemo, 0)};
         my @cr = split(";;", $c{Rank});
 
-        if ($cr[2] >= 3 || $c{Rank} =~ /in.*Octav/i || checkcommemoratio(\%c) =~ /octav/i) {
-          return 0;
-        }
+        return 0 if $cr[2] >= $ranklimit || $c{Rank} =~ /in.*Octav/i || checkcommemoratio(\%c) =~ /octav/i;
+
       }
     }
   }
-  if ($commemoratio{Rank} =~ /octav/i) { return 0; }
-  if ($octavcount) { return 0; }
 
-  if ($winner =~ /C12/) { return 1; }
-  if ($duplex > 2 && $seasonalflag) { return 0; }    # && $version !~ /trident/i ??? #all Duplex in the Tempora folders
   return 1;
 }
 

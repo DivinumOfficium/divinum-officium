@@ -5,7 +5,7 @@ $Pater noster
 $Ave Maria
 $Credo
 _
-(sed rubrica 196 aut rubrica 1955 omittuntur)
+(sed rubrica 196 aut rubrica 1955 aut rubrica altovadensis omittuntur)
 (deinde dicitur)
 $rubrica Clara voce
 (sed die Epiphaniæ aut rubrica 196 aut rubrica 1955 omittitur)
@@ -13,13 +13,19 @@ $rubrica Clara voce
 $Domine labia 
 (sed rubrica monastica omittitur)
 (deinde dicitur)
+(rubrica altovadensis) $rubrica Incipit
 $Deus in adjutorium
+(sed rubrica cisterciensis)
+$Deus in adjutorium tantum
 (sed rubrica 1963 omittitur)
 (deinde dicitur)
 &Alleluia
 (sed rubrica 1963 aut rubrica cisterciensis omittitur)
-(rubrica monastica dicuntur)
+(deinde rubrica monastica dicitur)
 &Domine_labia
+(sed rubrica cisterciensis dicitur)
+$Domine labia iij
+(deinde rubrica monastica dicuntur)
 _
 &psalm(3)
 (deinde dicitur)
@@ -41,8 +47,9 @@ $rubrica Matutinum
 #Conclusio
 &Dominus_vobiscum
 &Benedicamus_Domino
+(rubrica cisterciensis) &Divinum_auxilium
 $Fidelium animae
 (sed rubrica ^Trident omittitur)
 
 $Pater totum secreto
-(sed rubrica 196 aut rubrica 1955 aut rubrica ^Trident omittitur)
+(sed rubrica 196 aut rubrica 1955 aut rubrica ^Trident aut rubrica cisterciensis omittitur)

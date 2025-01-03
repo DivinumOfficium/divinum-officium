@@ -83,6 +83,36 @@ Qui natus est de María Vírgine.
 Qui corde fundis grátiam.
  
 
+[Hymnus Prima]
+v. Jam lucis orto sídere,
+Deum precémur súpplices,
+Ut in diúrnis áctibus
+Nos servet a nocéntibus.
+_
+Linguam refrénans témperet,
+Ne litis horror ínsonet:
+Visum fovéndo cóntegat,
+Ne vanitátes háuriat.
+_
+Sint pura cordis íntima,
+Absístat et vecórdia;
+Carnis terat supérbiam
+Potus cibíque párcitas.
+_
+Ut, cum dies abscésserit,
+Noctémque sors redúxerit,
+Mundi per abstinéntiam
+Ipsi canámus glóriam.
+_
+* Deo Patri sit glória,
+Ejúsque soli Fílio,
+Cum Spíritu Paráclito,
+Nunc et per omne sǽculum.
+Amen.
+
+[HymnusM Prima]
+@:Hymnus Prima:s/Nunc et per omne sǽculum/Et nunc et in perpétuum/
+
 [Preces Dominicales Prima 1]
 $Kyrie
 $rubrica Pater secreto
@@ -106,19 +136,30 @@ $Domine exaudi
 $Preces feriales Prima
 
 [Commemoratio defunctorum]
-$commemoratio omnium
+$commemoratio omnium 
+(rubrica altovadensis dicitur)
+&necrologium
+(rubrica cisterciensis) $rubrica Superior
 $Requiescant
 _
 &psalm(129,1)
 $Requiem
 _
-$Aportainferi
+$Aportainferi  
+(deinde dicuntur)
 $Requiescant
 $Domine exaudi
+(sed rubrica cisterciensis omittitur)
+
 &Dominus_vobiscum2
+(sed rubrica cisterciensis dicitur)
+&Dominus_vobiscum
 $Oremus
 $deus veniae
 $Per Dominum
+(sed rubrica cisterciensis dicitur)
+$Amen
 _
 $Requiem2
+(sed rubrica cisterciensis omittitur)
 $Requiescant

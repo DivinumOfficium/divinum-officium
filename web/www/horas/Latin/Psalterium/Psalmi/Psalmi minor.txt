@@ -155,11 +155,25 @@ Sabbato = Intret orátio mea * in conspéctu tuo, Dómine.
 4 = 
 5 = Per arma justítiæ * virtútis Dei commendémus nosmetípsos in multa patiéntia.
 
+[Quad] (rubrica cisterciensis)
+1 = Thesaurizáte * vobis thesáuros in cœlo, ubi nec ærúgo, nec tínea demolítur.
+2 = Non in solo pane * vivit homo, sed in omni verbo, quod procédit de ore Dei.
+3 = Commendémus nosmetípsos * in multa patiéntia, in jejúniis multis, per arma justítiæ.
+4 =
+5 = Per arma justítiæ * virtútis Dei commendémus nosmetípsos in multa patiéntia.
+
 [Quad5]
 1 = Líbera me, Dómine, * et pone me juxta te: et cujúsvis manus pugnet contra me.
 2 = Judicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine, Deus meus.
 3 = Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi.
 4 =
+5 = Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ.
+
+[Quad5] (rubrica cisterciensis)
+1 = Vide, Dómine, * afflictiónem meam, quóniam eréctus est inimícus meus.
+2 = Judicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine, Deus meus.
+3 = Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi.
+4 = 
 5 = Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ.
 
 [Pasch]
@@ -168,6 +182,13 @@ Allelúja, * allelúja, allelúja.
 Allelúja, * allelúja, allelúja.
 Allelúja, * allelúja, allelúja.
 Allelúja, * allelúja, allelúja.
+
+[Pasch] (rubrica cisterciensis)
+Allelúja, * allelúja, allelúja, allelúja, allelúja, allelúja.
+Allelúja, * allelúja, allelúja, allelúja, allelúja, allelúja.
+Allelúja, * allelúja, allelúja, allelúja.
+Allelúja, * allelúja, allelúja.
+Allelúja, * allelúja, allelúja, allelúja, allelúja, allelúja, allelúja.
 
 [Tridentinum]
 Prima Dominica=Allelúja, * allelúja, allelúja;;53,117,118(1-16),118(17-32)
@@ -187,7 +208,7 @@ Nona Dominica=Allelúja, * allelúja, allelúja;;118(129-144), 118(145-160), 118
 Nona Feria=Áspice * in me, et miserére mei Dómine;;118(129-144), 118(145-160), 118(161-176)
 Completorium=Miserére * mihi, Dómine, et exáudi oratiónem meam;;4,30(2-6),90,133
 
-[Monastic]
+[Monastic_]
 Prima Dominica=Allelúja, * allelúja, allelúja (allelúja);;118(1-8),118(9-16),118(17-24),118(25-32)
 Prima Feria II=Servíte Dómino * in timóre: et exsultáte ei cum tremóre.;;1,2,6
 Prima Feria III=Deus judex justus, * fortis et longánimis: numquid irascétur per síngulos dies?;;7,8,9(2-19)
@@ -205,4 +226,21 @@ Sexta Feria=Qui hábitas * in cælis, miserére nobis.;;122,123,124
 Nona Dominica=Allelúja, * allelúja, allelúja (allelúja);;118(81-88),118(89-96),118(97-104)
 Nona Feria II=Fiat manus tua, * Dómine, ut salvet me: quóniam mandáta tua elégi.;;118(153-160),118(161-168),118(169-176)
 Nona Feria=Beáti omnes, * qui timent Dóminum.;;125,126,127
+
+[Cistercian_]
+Prima Feria II=Servíte * Dómino in timóre.;;1,2,6
+Prima Feria III=Dómine * Deus meus in te sperávi.;;7,8,9(2-19)
+Prima Feria V=Illúmina * óculos meos Dómine.;;12,13,14
+Prima Feria VI=Consérva me * Dómine, quóniam in te sperávi.;;15,16,17(2-25)
+
+[Monastic]
+@:Monastic_
+Completorium=;;4,90,133
+
+[Monastic] (rubrica cisterciensis)
+@:Monastic_:1
+@:Cistercian_:1-2
+@:Monastic_:4
+@:Cistercian_:3-4
+@:Monastic_:7-18
 Completorium=;;4,90,133

@@ -16,7 +16,7 @@ sub lectio_brevis_prima {
   setbuild('Psalterium/Special/Prima Special', $name, 'Lectio brevis ord');
 
   #look for [Lectio Prima]
-  if ($version !~ /1955|196/) {
+  if ($version !~ /1955|196|cist/i) {
     my $b;
 
     if (exists($winner{'Lectio Prima'})) {
