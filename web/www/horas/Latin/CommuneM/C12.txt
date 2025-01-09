@@ -2,33 +2,205 @@
 
 [Rule]
 Omit Incipit mute
+Omit Suffragium mute
+(rubrica altovadensis) Omit Commemoratio mute
+(rubrica cisterciensis) Special Conclusio
+Doxology=Nat
 Matutinum Romanum
 Votive nocturn
 Special Benedictio
-no suffragium
+(rubrica cisterciensis) Lectio brevis sine absolutio
 
 [Prelude Vespera]
 #Incipit
 
 $Ave Maria
+(sed rubrica cisterciensis)
+$Ave Maria Parvum
 (sed rubrica 1963 omittitur)
 $Deus in adjutorium
+(deinde dicitur)
 &Alleluia
+(sed rubrica cisterciensis omittitur)
 
 [Prelude Matutinum]
 # Incipit
 
 $Ave Maria
+(sed rubrica cisterciensis)
+$Ave Maria Parvum
 (sed rubrica 1963 omittitur)
 $Domine labia
 $Deus in adjutorium
+(deinde dicitur)
 &Alleluia
+(sed rubrica cisterciensis omittitur)
+
+[Conclusio] (rubrica cisterciensis)
+$Dulce nomen
+
+[Ant Matutinum]
+@Commune/C11
+
+[Ant Matutinum] (rubrica cisterciensis)
+@Commune/C11:Ant MatutinumBMV:1
+@Commune/C11:Ant MatutinumBMV:2-3 s/.*;;/;;/gm
+@Commune/C11:Ant MatutinumBMV:1
+@Commune/C11:Ant MatutinumBMV:2-3 s/.*;;/;;/gm
+@Commune/C11:Ant MatutinumBMV:1
+@Commune/C11:Ant MatutinumBMV:2-3 s/.*;;/;;/gm
+
+[Lectio1] (rubrica cisterciensis)
+!Lectio brevis
+!S. Aug. Serm. 18. de Sanctis
+Admítte piíssima Dei Génitrix preces nostras intra sacrárium exauditiónis, et repórta nobis antídotum reconciliatiónis. Sit per te excussábile quod per te ingérimus: fiat impetrábile quod fida mente póscimus. Accipe quod offérimus, redóna quod rogámus, excúsa quod timémus.
+
+[Responsory1] (rubrica cisterciensis)
+@Psalterium/Mariaant:Quadragesimae: s/.*\_(.*)R.*/$1/s s/V/R.br/ s/\,/ */
+@Psalterium/Mariaant:Quadragesimae: s/.*\_(.*)R.*/$1/s s/V/R/ s/\,/ */
+@Psalterium/Mariaant:Quadragesimae: s/^.*(R\..*)\_.*/$1/s s/R/V/
+@Psalterium/Mariaant:Quadragesimae: s/.*\_(.*)R.*/$1/s s/V.*?\,/R. /
+_
+$rubrica Matutinum parvum
 
 [Ant Laudes]
 @Commune/C12::s/$/;;148/s
+(sed rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:1 s/;;.*//
 
 [Capitulum Laudes]
 @Commune/C12
+(sed rubrica cisterciensis)
+@Sancti/08-15t
+
+[Oratio 2] (rubrica cisterciensis)
+@:Oratio 1
+
+[Oratio 3] (rubrica cisterciensis)
+@:Oratio 1
 
 [Prelude Laudes]
 @:Prelude Vespera
+
+[Prelude Laudes] (rubrica cisterciensis)
+#Incipit
+$rubrica Secus absolute Parvum
+$Deus in adjutorium
+
+[Commemoratio] (rubrica cisterciensis)
+!Immediate fit Comm. sequens, quæ omittitur tantum in die et per Oct. omnium Sanctorum.
+Ant. Sancti Dei omnes, intercédere dignémini pro nostra omniúmque salúte.
+V. Lætámini in Dómino et exsultáte justi.
+R. Et gloriámini, omnes recti corde.
+$Oremus
+v. Infirmitátem nostram, quæsumus, Dómine, propítius réspice: et mala ómnia quæ juste merémur, ómnium Sanctórum tuórum intercessióne avérte. Per Christum Dóminum nostrum.
+R. Amen
+
+[Ant Vespera] (rubrica cisterciensis)
+@Commune/C10:Ant 1_:s/$/;;109\n;;112\n;;121\n;;126/
+
+[Capitulum Vespera] (rubrica cisterciensis)
+@:Capitulum Laudes
+
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/10-07:Responsory Sexta
+
+[COP Matutinum] (rubrica numquam)
+$Ave Maria Parvum
+_
+@Commune/C11:Ant MatutinumBMV:1 s/^/Ant. / s/;;.*// 
+@:Nocturn 1 Versum
+$Oremus
+@:Oratio 1
+_
+$Dulce nomen
+
+[COP Matutinum] (rubrica altovadensis)
+$Ave Maria Parvum
+_
+@Sancti/01-01:Ant Vespera:1 s/^/Ant. / s/;;.*// 
+@:Versum 2
+$Oremus
+@:Oratio 1
+_
+$Dulce nomen
+
+[COP Laudes] (rubrica numquam)
+$Ave Maria Parvum
+_
+@Sancti/01-01:Ant Vespera:1 s/^/Ant. / s/;;.*// 
+@:Versum 2
+$Oremus
+@:Oratio 1
+_
+$Dulce nomen
+
+[COP Laudes] (rubrica altovadensis)
+$Ave Maria Parvum
+_
+@Commune/C10:Ant 2_: s/^/Ant. /
+@:Versum 2
+$Oremus
+@:Oratio 1
+_
+$Dulce nomen
+
+[COP Prima] (rubrica altovadensis)
+$Ave Maria Parvum
+_
+@Sancti/01-01:Ant Vespera:2 s/^/Ant. / s/;;.*// 
+@Commune/C11:Versum 0
+$Oremus
+@Commune/C12:Oratio 2: s/$/~/m s/Per eumdem/Per eumdem Christum\n\$Amen/
+_
+$Dulce nomen
+
+[COP Tertia] (rubrica altovadensis)
+$Ave Maria Parvum
+_
+@Sancti/01-01:Ant Vespera:3 s/^/Ant. / s/;;.*//
+@:Nocturn 1 Versum
+$Oremus
+@:Oratio 1
+_
+$Dulce nomen
+
+[COP Sexta] (rubrica altovadensis)
+$Ave Maria Parvum
+_
+@Sancti/01-01:Ant Vespera:4 s/^/Ant. / s/;;.*//
+@Commune/C10:Versum 2
+$Oremus
+@Sancti/01-01:Oratio: s/^/v. / s/Qui tecum/Amen/
+_
+$Dulce nomen
+
+[COP Nona] (rubrica altovadensis)
+$Ave Maria Parvum
+_
+@Sancti/01-01:Ant Vespera:5 s/^/Ant. / s/;;.*//
+@:Verse Nona
+$Oremus
+@:Oratio Nona: s/$/~/m s/Qui tecum/Qui tecum in\n\$Amen/
+_
+$Dulce nomen
+
+[COP Vespera] (rubrica altovadensis)
+$Ave Maria Parvum
+_
+@Commune/C10:Ant 1_: s/^/Ant. / 
+@:Versum 2
+$Oremus
+@:Oratio 1
+_
+$Dulce nomen
+
+[COP Completorium] (rubrica altovadensis)
+$Ave Maria Parvum
+_
+@Sancti/12-25:Ant Vespera:3 s/^/Ant. / s/;;.*//
+@Psalterium/Common/Prayers:Conclusio cisterciensis:3-4
+$Oremus
+@:Oratio Sexta: s/$/~/m s/Per eumdem/Per eumdem Christum\n\$Amen/
+_
+$Dulce nomen

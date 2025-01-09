@@ -147,7 +147,7 @@ sub nocturn {
   push(@s, '!' . translate('Nocturn', $lang) . ' ' . ('I' x $num) . '.');
 
   my @psalmi_n = map { $psalmi->[$select[$_]] } 0 .. @select - 3;
-  my $duplexf = $version =~ /196/ || ($duplex > 2 && $rule !~ /Matins simplex/);
+  my $duplexf = $version =~ /196/ || ($duplex > 2 && $rule !~ /Matins simplex/ && $winner !~ /C12/);
   antetpsalm(\@psalmi_n, $duplexf, $lang);
 
   # versus can be text or reference (number)
@@ -209,7 +209,7 @@ sub psalmi_matutinum {
     $prefix .= ' ' . translate('et Psalmi', $lang);
   }
 
-  if ($dayname[0] =~ /Pasc[1-6]/i && $votive !~ /C9/) {
+  if ($dayname[0] =~ /Pasc[1-6]/i && $votive !~ /C9|C12/) {
     @psalmi = ant_matutinum_paschal(\@psalmi, $lang, length($w));
   }
 
@@ -298,7 +298,7 @@ sub psalmi_matutinum {
   # we've already returned.
   my @spec;
 
-  if ($dayname[0] =~ /Pasc[1-6]/i && $version !~ /Trident/i) {    #??? ex
+  if ($dayname[0] =~ /Pasc[1-6]/i && $version !~ /Trident/i && $votive !~ /C9|C12/) {    #??? ex
     if ($version =~ /196/ && $name eq 'Asc') {
       my %r = %{setupstring($lang, 'Tempora/Pasc5-4.txt')};
 
@@ -309,8 +309,10 @@ sub psalmi_matutinum {
       push(@spec, split("\n", $r{'Nocturn 2 Versum'}));
       push(@spec, '') for 1 .. 3;
       push(@spec, split("\n", $r{'Nocturn 3 Versum'}));
+      setbuild("Pasc5-4", 'Versus ex Festo', 'subst');
     } else {
       @spec = split("\n", $psalmi{"Pasch Ant Dominica"});
+      setbuild("Psalmi matutinum", 'Versus ex Pasch Ant Dominica', 'subst');
     }
     foreach my $i (3, 4, 8, 9, 13, 14) { $psalmi[$i] = $spec[$i]; }
 
@@ -470,8 +472,8 @@ sub get_absolutio_et_benedictiones {
     unshift @ben, $abs[$num - 1];
 
     ## BMV special cases
-  } elsif ($winner =~ /C1[02]/) {
-    my %mariae = %{setupstring($lang, subdirname('Commune', $version) . "C10.txt")};
+  } elsif ($winner =~ /(C1[02])/) {
+    my %mariae = %{setupstring($lang, subdirname('Commune', $version) . "$1.txt")};
     @ben = split("\n", $mariae{Benedictio});
     setbuild2('Special benedictio');
 
@@ -521,19 +523,20 @@ sub lectiones {
   my @a = get_absolutio_et_benedictiones($num, $lang);
 
   if ($rule !~ /Limit.*?Benedictio/i) {
-    push(@s, "\$rubrica Pater secreto");
-    push(@s, "\$Pater noster Et");
-    push(@s, "Absolutio. $a[0]", '$Amen') unless $version =~ /^Ordo Praedicatorum/;
+    push(@s, "\$rubrica Pater secreto") unless $rule =~ /sine absolutio/i;
+    push(@s, "\$Pater noster Et") unless $rule =~ /sine absolutio/i;
+    push(@s, "Absolutio. $a[0]", '$Amen') unless $version =~ /^Ordo Praedicatorum/ || $rule =~ /sine absolutio/i;
   } else {
     push(@s, "\$Pater totum secreto");
   }
   push(@s, "\n");
 
-  my $rpn = ($rule =~ /12 lectio/) ? 4 : 3;    # readings per nocturn
+  my $rpn = ($rule =~ /12 lectio/) ? 4 : ($rule !~ /Lectio brevis/) ? 3 : 1;    # readings per nocturn
   $num ||= 1;
 
-  for my $i (1 .. $rpn) {                      # push all the lectios
+  for my $i (1 .. $rpn) {                                                       # push all the lectios
     my $l = ($num - 1) * $rpn + $i;
+    $i = 0 if $rule =~ /Lectio brevis sine absolutio/;
 
     if ($rule !~ /Limit.*?Benedictio/i) {
       push(@s, prayer('Jube domne', $lang));
@@ -678,7 +681,7 @@ sub lectio : ScriptFunc {
   }
 
   #** handle initia table (Str$ver$year)
-  if ($nocturn == 1 && $version !~ /monastic/i) {
+  if ($nocturn == 1 && $version !~ /monastic/i && $winner !~ /C12/) {
     my $file = initiarule($month, $day, $year);
     if ($file) { %w = resolveitable(\%w, $file, $lang); }
   }
@@ -1132,7 +1135,8 @@ sub lectio : ScriptFunc {
   #handle verse numbers for passages
   my $item = translate('Lectio', $lang);
   $item .= " %s" unless ($item =~ /%s/);
-  $w = ($rule !~ /Limit.*?Benedictio/i ? "_\n" : '') . setfont($largefont, sprintf($item, $num)) . "\n$w";
+  $w = ($rule !~ /Limit.*?Benedictio/i ? "_\n" : '') . setfont($largefont, sprintf($item, $num)) . "\n$w"
+    unless $rule =~ /Lectio brevis sine absolutio/;
   my @w = split("\n+", $w);
   $w = "";
 

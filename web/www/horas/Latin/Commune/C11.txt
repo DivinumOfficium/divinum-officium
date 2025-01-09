@@ -64,8 +64,13 @@ Amen.
 V. Dignáre me laudáre te, Virgo sacráta.
 R. Da mihi virtútem contra hostes tuos.
 
-[Ant 1]
+[Ant 1_]
 Sancta María, * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem.
+
+[Ant 1]
+@:Ant 1_
+(sed rubrica cisterciensis)
+@:Ant 1_: s/\s*\:.*$/./ s/femíneo/fœmíneo/
 
 [Oratio]
 Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.

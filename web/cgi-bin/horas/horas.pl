@@ -725,9 +725,11 @@ sub postprocess_vr(\$$) {
 # Performs necessary adjustments to a short responsory.
 sub postprocess_short_resp(\@$) {
   my ($capit, $lang) = @_;
+  our (@dayname, $votive);
+
   s/&Gloria1?/&Gloria1/ for (@$capit);
 
-  if ($dayname[0] =~ /Pasc/i) {
+  if (alleluia_required($dayname[0], $votive)) {
     my $rlines = 0;
 
     for (@$capit) {

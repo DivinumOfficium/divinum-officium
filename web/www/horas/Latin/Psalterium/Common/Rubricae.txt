@@ -33,11 +33,15 @@
 (sed rubrica cisterciensis)
 /:Præterquam Officio duodecim Lectionum dicitur secreto::/
 
+[Secus absolute Parvum]
+/:Dicto Responsorio breve « Dignáre me », absolute incipiuntur, ut sequitur::/
+
 [Clara voce_]
 /:Deinde, clara voce, dicitur Versus::/
 
 [Clara voce_C]
-/:In Choro, facimus signum Crucis + atque ad signum Superioris inclinamus Altari. Deinde alta voce et graviter dicitur Versus::/
+/:In Choro, facimus signum Crucis + atque ad signum Superioris inclinamus Altari.:/
+/:Deinde alta voce et graviter dicitur Versus::/
 
 [Clara voce]
 @:Clara voce_
@@ -60,6 +64,9 @@
 !Reliqua omittuntur in Officium duodecim Lectionum, quando immediatæ subsequuntur %Laudes%. Sed in Festi Simplicis, et in Officio Ferialis tam trium, quam unius Lectionis semper dicuntur ut sequitur.
 (sed rubrica cisterciensis)
 !Reliqua omittuntur in Officium xij. Lectionum, quas immediatæ subsequuntur %Laudes%. Sed tam in Feriis, quam in Festis iij. Lectionum, in Hieme et in Æstate semper dicuntur ut sequitur.
+
+[Matutinum parvum]
+!Reliqua omittuntur, et statim inchoatur %Laudes%.
 
 [Deinde secreto]
 /:Deinde dicitur secreto:/
@@ -118,6 +125,7 @@
 
 [Incipit] (rubrica altovadensis)
 /:Finita Commemoratione officii parvi B.M.V., facimus signum Crucis + atque ad signum Superioris inclinamus Altari.:/
+@:Clara voce_C:2
 
 [IncipitL] (rubrica altovadensis)
 /:Dicta Oratione Matutina aut finita Commemoratione officii parvi B.M.V. in Officio feriali vel  iij. Lectionum, facimus signum Crucis + atque ad signum Superioris inclinamus Altari.:/
@@ -126,7 +134,10 @@
 /:inchoatur in officio quod cum cantu celebratur tantum:/
 
 [CompletBMV]
-/:Postea dicitur Completorium B. Mariæ. Quo finito per totum annum, excepta Feria v. et vj. majoris hebdomadæ, cantatur solemniter:/
+/:Postea dicitur Completorium B. Mariæ.:/
+
+[CompletBMV2]
+/:Quo finito per totum annum, excepta Feria v. et vj. majoris hebdomadæ, cantatur solemniter:/
 
 [sine Oremus]
 /:Et sine:/ Orémus /:::/

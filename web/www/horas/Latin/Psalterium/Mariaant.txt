@@ -96,9 +96,10 @@ _
 @:Ant ad S_Dominicum
 
 [Ant Finalis Cist]
+$rubrica CompletBMV2
 @:Postpentecost:s/V\..*//s s/$/ (Allelúja.)/s
 _
-@Commune/C10:Invit:s/(.*)\, \*.*/V. $1. (Allelúja.)/
+@Commune/C10:Invit:s/(.*)[\.\,\:] \*.*/V. $1. (Allelúja.)/
 @Commune/C10:Invit:s/.*\* (.*)\./R. $1. (Allelúja.)/
 _
-@:Postpentecost::s/.*V\. //s 3-4
+@:Postpentecost::s/.*\_.//s

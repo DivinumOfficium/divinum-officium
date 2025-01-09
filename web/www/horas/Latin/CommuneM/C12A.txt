@@ -1,1 +1,14 @@
 @Commune/C12A
+
+[Rule]
+@CommuneM/C12
+
+[Prelude Vespera]
+@CommuneM/C12
+
+[Prelude Matutinum]
+@CommuneM/C12
+
+[Prelude Laudes]
+@:Prelude Vespera
+

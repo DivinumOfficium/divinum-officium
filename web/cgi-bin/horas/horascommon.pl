@@ -355,15 +355,21 @@ sub occurrence {
     }
   }
 
-  if ($version =~ /Trid/i
-    && (($trank[2] < 5.1 && $trank[2] > 4.2 && $trank[0] =~ /Dominica/i) || $trank[0] =~ /infra octavam Corp/i))
-  {
+  if (
+    $version =~ /Trid/i
+    && (($trank[2] < 5.1 && $trank[2] > 4.2 && $trank[0] =~ /Dominica/i && $version !~ /altovadensis/i)
+      || $trank[0] =~ /infra octavam Corp/i)
+  ) {
+
+    # before Divino: Dominica minor and infra 8vam CC is outranked by any Duplex
     $trank[2] = 2.9;
-  }    # before Divino: Dominica minor and infra 8vam CC is outranked by any Duplex
-  elsif ($version =~ /divino/i && ($trank[2] < 5.1 && $trank[0] =~ /Dominica/i)) {
-    $trank[2] = 4.9;
-  } elsif ($version =~ /196/ && $tname =~ /Nat1/i && $day > 28)
-  {    # commemoration of the Christmas Octave according to the rubrics
+  } elsif ($version =~ /divino|altovadensis/i && ($trank[2] < 5.1 && $trank[0] =~ /Dominica/i)) {
+
+    # Divino: Dominica minor raised to beat Duplex majus / Cistercian 1957: to beat MM. min
+    $trank[2] = $version =~ /divino/i ? 4.9 : 3.9;
+  } elsif ($version =~ /196/ && $tname =~ /Nat1/i && $day > 28) {
+
+    # commemoration of the Christmas Octave according to the rubrics
     $sname = subdirname('Tempora', $version) . "Nat$day";
     %saint = %{setupstring('Latin', $sname)};
     $srank = $saint{Rank};
@@ -734,14 +740,14 @@ sub concurrence {
 
     # before 1955, Ash Wednesday gave way at 2nd Vespers in concurrence to a Duplex
     $rank = $wrank[2] = 2.99;
-  } elsif ($dayname[0] =~ /Quad[0-5]|Quadp|Adv/ && $dayofweek == 0 && $version =~ /trident/i) {
+  } elsif ($dayname[0] =~ /Quad[0-5]|Quadp|Adv/ && $dayofweek == 0 && $version =~ /trident(?!.*altovadensis)/i) {
 
     # before Divino Afflatu, the Sundays from Septuag to Judica gave way at 2nd Vespers in concurrence to a Duplex
     $rank = $wrank[2] = 2.99;
-  } elsif ($dayname[0] =~ /Quad[0-5]|Quadp|Adv/ && $dayofweek == 0 && $version =~ /divino/i) {
+  } elsif ($dayname[0] =~ /Quad[0-5]|Quadp|Adv/ && $dayofweek == 0 && $version =~ /divino|altovadensis/i) {
 
-    # after Divino Afflatu, the Sundays from Septuag to Judica gave way at 2nd Vespers in concurrence to a Duplex II. cl.
-    $rank = $wrank[2] = 4.9;
+    # after Divino Afflatu, the Sundays from Septuag to Judica gave way at 2nd Vespers in concurrence to a Duplex II. cl. (Cist: MM. maj.)
+    $rank = $wrank[2] = $version =~ /divino/i ? 4.9 : 3.9;
   }
 
   if ( $cwrank[0] =~ /Dominica/i
@@ -751,21 +757,27 @@ sub concurrence {
   {
 
     # before 1955, even Major Sundays gave way at I Vespers to a Duplex (or Duplex II. cl.)
-    $cwrank[2] = $crank = $version =~ /trident/i ? 2.9 : 4.9;
+    $cwrank[2] = $crank = $version =~ /altovadensis/i ? 3.9 : $version =~ /trident/i ? 2.9 : 4.9;
   }
 
   if ( $cwrank[0] =~ /in.*octava/i
     && ($wrank[0] =~ /Dominica/i || ($winner =~ /Sancti/ && $wrank !~ /in.*octava/i))
     && $version =~ /divino/i)
   {
-    $octvespera = 1;    # Commemoration of resumed Octave on Sunday from 1st Vespers (Divino only)
+
+    # Commemoration of resumed Octave on Sunday from 1st Vespers (Divino only)
+    $octvespera = 1;
   } elsif ($cwrank[0] =~ /Dominica/i && $trank[0] =~ /in.*octava/i
     || ($cwrank[0] =~ /infra.*octav/i && $version =~ /Trident/))
   {
-    $octvespera = 3;    # Commemoration of Octave on Saturday from 2nd Vespers
+
+    # Commemoration of Octave on Saturday from 2nd Vespers
+    $octvespera = 3;
   }
 
-  if ($ctrank[0] =~ /Dominica/i && !($version =~ /19(?:55|6)/ && $ctrank[0] =~ /Dominica Resurrectionis/i)) {
+  if ($ctrank[0] =~ /Dominica/i
+    && !($version =~ /19(?:55|6)|altovadensis/i && $ctrank[0] =~ /Dominica Resurrectionis/i))
+  {
 
     # if tomorrow is a Sunday, get rid of today's tempora completely; necessary Commemorations are handled in the Sunday database file
     if ($sanctoraloffice && $srank[0] !~ /infra octavam Nat/i) {
@@ -813,7 +825,7 @@ sub concurrence {
     || ($cwinner{Rank} =~ /C10/i && $winner{Rank} =~ /C1[01]/i)
 
     # no 1st Vespers of Easter after 1955
-    || ($version =~ /19(?:55|6)/ && $cwinner{Rank} =~ /Dominica Resurrectionis|Patrocinii S. Joseph/i)
+    || ($version =~ /19(?:55|6)|altovadensis/i && $cwinner{Rank} =~ /Dominica Resurrectionis|Patrocinii S. Joseph/i)
 
     # TODO: last condition should be made obsolete and handled via database
     || ($version =~ /19(?:55|6)/
@@ -912,17 +924,20 @@ sub concurrence {
 
     #  before DA, more Semiduplex and Duplex where treated as "A capitulo"
     # In Cisterciense, even MM. maj is A capitulo in concurrence with Dom. I. classis
+    # In Altovadensis, even MM. min is A capitulo in concurrence with any Sunday
     my $flrank =
-        ($version =~ /cist/i && $cwinner{Rank} =~ /Dominica/i && $tomorrowname[0] =~ /Adv1|Quad[156]/)
-      ? ($rank < 4.9 ? 2 : $rank)
+        ($version =~ /cist/i && $cwinner{Rank} =~ /Dominica/i)
+      ? ($rank < ($tomorrowname[0] =~ /Adv1|Quad[156]/ ? 4.9 : $version =~ /altovadensis/i ? 3.9 : 2.9) ? 2 : $rank)
       : $version =~ /trident/i ? (
           ($rank < 2.9 && !($rank == 2.1 && $winner{Rank} !~ /infra Octavam/i)) ? 2
-        : ($rank >= 3 && $rank < 4.9 && $rank != 4 && $rank != 3.2) ? 3
+        : ($rank >= 3 && $rank < 4.9 && $rank != 4 && $rank != 3.9 && $rank != 3.2) ? 3
         : $rank
       )
       : $rank;
     my $flcrank =
-      $version =~ /trident/i
+      $version =~ /cist/i && $cwinner{Rank} =~ /Dominica/i
+      ? 2
+      : $version =~ /trident/i
       ? ($crank < 2.91 ? 2 : ($cwinner{Rank} =~ /Dominica/i ? 2.99 : ($crank < 4.9 && $crank != 4) ? 3 : $crank))
       : ($version =~ /divino/i && $cwinner{Rank} =~ /Dominica/i) ? 4.9
       : $crank;
@@ -1579,22 +1594,14 @@ sub precedence {
   }
 
   if (my $vtv = $votive ne 'Hodie' ? $votive : '') {
-    if ($vtv =~ /C12/i) {
+    if ($vtv =~ /C12/i && $version !~ /cist/i) {
       if ( ($month == 12 && ($day == 24 && $hora =~ /Vespera|Completorium/ || ($day > 24)))
         || $month == 1
         || ($month == 2 && $day < 3))
       {
         $vtv = 'C12N';
-      } elsif ($dayname[0] =~ /adv/i) {
+      } elsif ($dayname[0] =~ /adv/i || $winner =~ /03-25/) {
         $vtv = 'C12A';
-      } elsif ($dayname[0] =~ /Pasc/i) {
-        $vtv = 'C12P';
-      } elsif (
-        $month == 3
-        && (($day == 24 && $hora =~ /(Vespera|Completorium)/i)
-          || $day == 25)
-      ) {
-        $vtv = 'C12';
       } elsif ($dayname[0] =~ /(Quadp|Quad)/i) {
         $vtv = 'C12Q';
       }
@@ -1824,8 +1831,9 @@ sub nooctnat {
 # Latin spelling variety in versions
 sub spell_var {
   my $t = shift;
+  our $version;
 
-  if (our $version =~ /196/) {
+  if ($version =~ /196/) {
 
     # substitute i for j
     # but not in html tags!
@@ -1841,6 +1849,7 @@ sub spell_var {
   } else {
     $t =~ s/Génetrix/Génitrix/g;
     $t =~ s/\bco(t[ií]d[ií])/quo$1/g;
+    $t =~ s/(allelú)ja/$1ia/gi if $version =~ /cist/i;
   }
   return $t;
 }

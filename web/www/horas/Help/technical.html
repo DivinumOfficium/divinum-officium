@@ -30,7 +30,7 @@
 					<A HREF=#databases>[Databases]</A>&ensp;
 					<A HREF=#programs>[Programs]</A>&ensp;
 					<A HREF=#specialchars>[Special characters]</A>&ensp;
-					<A HREF=#exceptions>[Exceptions]</A>
+					<A HREF=#exceptions>[Exceptions]</A>&ensp;
 					<A HREF=#conditionals>[Conditionals]</A>
 				</CENTER>
 				
@@ -318,13 +318,14 @@ Antiphones horas
 					<TR><TH>stopword</TH><TH>condition</TH><TH>scope descriptor</TH><TH>instruction</TH></TR>
 					<TR>
 						<TD><I>(optional)</I><BR />si<BR />deinde<BR />vero<BR />sed<BR />atque<BR />attamen</TD>
-						<TD><I>(optional subject) predicate [&amp; et/aut...]</I><BR />(tempore) nativitias<BR />rubrica tridentina<BR />feria 3 aut feria 6<BR />commune C11<BR />missa tertia<BR />die Sabbato Sancto<BR /><I>(etc.)</I></TD>
+						<TD><I>(optional subject) predicate [&amp; aut(et/nisi)...]</I><BR />(tempore) nativitias<BR />rubrica tridentina<BR />feria 3 aut feria 6<BR />commune C11 et commune C10 nisi rubrica monastica<BR />missa tertia<BR />die Sabbato Sancto<BR /><I>(etc.)</I></TD>
 						<TD><I>(optional)</I><BR />loco hujus versus<BR />loco horum versuum<BR />hic versus<BR />hi versus</TD>
 						<TD><I>(optional)</I><BR />dicitur <I>(semper)</I><BR />dicuntur <I>(semper)</I><BR />omittitur<BR />omittuntur</TD>
 					</TR>
 				</TABLE>
 				</P>
 				
+				<P>Conditions can be broken into various sub-conditions. <code>et</code> and <code>nisi</code> bind stronger than <code>aut</code>. Note that <code>nisi</code> is essentially identical to <code>et</code> except everthing that follows until the next <code>aut</code> must not be true. </P>
 				<P>Each conditional can have forward and backward scope. The stopwords <code>si</code> and <code>deinde</code> have forward scope. The other stopwords have implicit backward scope unless combined with <code>dicitur semper</code> or <code>dicuntur semper</code>. For nesting purposes, the stopwords have increasing "weight" in the given order.</P>
 				<P>The instructions <code>omittitur</code> and <code>omittuntur</code> force backwards scope and prevent any forward scope. The singular goes back until the last line break, which in the DO database can also be given by a "joiner line", i.e., a single underscore <code>_</code>. The plural goes back as far as possible unless stopped explictly by a forward scoped statement.</P>
 				<P>The instructions <code>dicitur</code> and <code>dicuntur</code> force forward scope but do allow backward scope unless followed by <code>semper</code>. The extent of the scope depends on the scope descriptor:

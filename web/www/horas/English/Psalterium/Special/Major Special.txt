@@ -732,7 +732,7 @@ R. To keep thee in all thy ways.
 v. Come, let us put wood on his bread, and cut him off from the land of the living, and let his name be remembered no more.
 $Deo gratias
 
-[Responsory Quad5 Laudes]
+[Responsory Quad5 Laudes_]
 R.br. Deliver, * O God, my soul from the sword.
 R. Deliver, * O God, my soul from the sword.
 V. My only one from the hand of the dog.
@@ -792,7 +792,7 @@ R. And defend me from them that rise up against me.
 v. But thou, O Lord of Sabaoth, who judgest justly, and triest the reins and hearts, let me see thy revenge on them: for to thee I have revealed my cause, O Lord my God.
 $Deo gratias
 
-[Responsory Quad5 Vespera]
+[Responsory Quad5 Vespera_]
 R.br. From the lion's mouth, * O Lord, Save me.
 R. From the lion's mouth, * O Lord, Save me.
 V. And my lowness from the horns of the unicorns. 
@@ -991,20 +991,6 @@ $Oremus
 Grant, we beseech thee, O  Lord God, unto all thy servants, that they may continually enjoy soundness both of mind and of body, and by the glorious intercession of the Blessed Mary, always a Virgin, may be delivered from present sadness, and enter into the joy of thine eternal gladness. 
 (sed tempore post partum loco horum versuum dicuntur)
 @Psalterium/Mariaant:Nativiti:s/.*V\./V\./s
-
-[Suffragium BMV] (rubrica cisterciensis)
-!De Beata Maria
-Ant. Sancta Dei Génitrix, Virgo semper María, intercéde pro nobis ad Dóminum Deum nostrum. (Alleluia, alleluja.)
-_
-@Psalterium/Mariaant:Postpentecost: s/.*V\./V./s s/(Per|Through).*$/\n/
-(sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis dicitur)
-@Psalterium/Mariaant:Quadragesimae: s/.*V\./V./s  s/(Per|Through).*$//
-(sed Adventus dicitur) 
-@Psalterium/Mariaant:Advent: s/.*V\./V./s s/(Per|Through).*$//
-(sed Nativitatis aut Epiphaniæ aut post partum dicitur)
-@Psalterium/Mariaant:Nativiti: s/.*V\./V./s s/Amen.*$//
-(sed Paschali dicitur)
-@Psalterium/Mariaant:Paschalis: s/.*V\./V./s s/(Per|Through).*$//
 
 [Suffragium DeJosephV]
 !Commemoration of St. Joseph 
