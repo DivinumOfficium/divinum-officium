@@ -79,7 +79,8 @@ sub specials {
     }
 
     # Omit this section if the rule says so.
-    my $ite = substr($item, 1, index($item, ' '));
+    $item =~ /\#(.+?)(\s|$)/;
+    my $ite = $1;
 
     if (
       $rule =~ /Omit.*? $ite/i
@@ -131,6 +132,12 @@ sub specials {
         }
         $tind++;
       }
+      next;
+    }
+
+    if ($item =~ /Commemoratio officii parvi/) {
+      my %mariae = %{setupstring($lang, 'CommuneM/C12.txt')};
+      push(@s, $item, $mariae{"COP $hora"});
       next;
     }
 
@@ -663,6 +670,7 @@ sub setbuild {
 # versions 1956 and 1960 exclude from Ordinarium
 sub checksuffragium {
 
+  our $collectcount;
   my $ranklimit = ($version =~ /cist/i ? 4 : 3);    # Roman: Duplex; Cist: MM. maj.
   return 0
     if $rule =~ /no suffragium/i
@@ -685,7 +693,10 @@ sub checksuffragium {
     || ($octavcount || $commemoratio{Rank} =~ /octav/i)
 
     # Cistercian: minor Feasts of Apostles
-    || $version =~ /cist/i && $commune =~ /C1a?$/i;
+    || $version =~ /cist/i && $commune =~ /C1a?$/i
+
+    # Altovadensis: max 3. collects
+    || $version =~ /altovadensis/i && $collectcount > 2;
 
   if ($commemoratio && $seasonalflag) {
     my @r = split(';;', $commemoratio{Rank});

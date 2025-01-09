@@ -23,7 +23,8 @@ my %subjects = (
   communi => sub { our $version },
   'die' => \&get_dayname_for_condition,
   feria => sub { our $dayofweek + 1 },
-  commune => sub {$commune},
+  commune => sub { our $commune },
+  votiva => sub { our $votive },
   officio => sub { $dayname[1]; },
 );
 my %predicates = (
@@ -222,7 +223,12 @@ sub vero($) {
 
   # aut binds tighter than et
 AUTEM: for (split /\baut\b/, $condition) {
-    for (split /\bet\b/) {
+    my $negation = 0;    # the first condition always has to be true
+
+    for (split /\b(et|nisi)\b/) {
+      $negation = 1 if /nisi/;    # everthing after 'nisi' has to be false until the next 'aut'
+      next if /et|nisi/;          # don't evaluate the captured seperator
+
       s/^\s*(.*?)\s*$/$1/;
 
       # Normalise whitespace.
@@ -247,8 +253,10 @@ AUTEM: for (split /\baut\b/, $condition) {
       my $predicate_text = $predicate;
       $predicate = $predicates{lc($predicate)} || sub { shift =~ /$predicate_text/i };
       $subject = $subjects{lc($subject)};
-      next AUTEM unless $subject && &$predicate(&$subject());
+
+      next AUTEM unless $subject && (&$predicate(&$subject()) xor $negation);
     }
+
     return ($vero = 1);
   }
   return ($vero = 0);

@@ -38,8 +38,9 @@ nade všechny oslavená,
 zdráva buď, Panno přečistá,
 přimluv se za nás u Krista. 
 _
-V. Učiň, Panno svatá, abych Tě důstojně chválil.
-R. Uděl mi sílu proti tvým nepřátelům.
+V. Učiň mě hodným tě chválit, Panno přesvatá.
+R. Dej mi sílu proti tvým nepřátelům.
+_
 $Oremus
 v. Uděl nám, svým služebníkům, prosíme, Pane Bože, stálé zdraví duše i těla, a na slavnou přímluvu blahoslavené a neporušené Panny Marie vysvoboď nás z nynější strasti a dej nám dojíti věčně blaženosti. Skrze Krista, našeho Pána. Amen.
 
@@ -61,7 +62,6 @@ v. Zdrávas, Královno, matko milosrdenství;
 K tobě voláme, vyhnaní synové Evy. 
 K tobě vzdycháme, lkajíce a plačíce 
 v tomto slzavém údolí.
-_ 
 A proto, orodovnice naše, 
 obrať k nám své milosrdné oči. 
 A Ježíše, požehnaní plod života svého, 
@@ -70,6 +70,7 @@ nám po tomto putování ukaž.
 _
 V. Zdrávas, Maria, milosti plná.
 R. Pán s tebou.
+_
 $Oremus
 v. Všemohoucí, věčný Bože, jenž jsi působením Svatého Ducha připravil tělo i duši slavné Marie Panny za důstojný příbytek svého Syna † dej nám, kdo se těšíme vzpomínkou na ni * abychom její přímluvou unikli neustálým zlým událostem i věčné smrti. Skrze téhož Krista, našeho Pána. R. Amen.
 
@@ -83,25 +84,3 @@ $Oremus
 v. Uděl, prosíme, všemohoucí Bože, abychom, když nás utiskuje tíha našich hříchů, přímluvou svatého Dominika, tvého Vyznavače a našeho Otce, se nám dostalo úlevy. $Per Christum
 _
 $Fidelium animae
-
-[Ant Finalis OP]
-@:Postpentecost:s/.*v\./ Ant. / s/.V\..*//s s/$/~ /gm s/~ $/ \(Allelúja.\)\n/s
-_
-@:Quadragesimae:s/.*_.V\./V./s 1-2 s/\.$/. (Allelúja.)/gm
-_
-$Oremus
-@Commune/C10:Oratio:1 s/$/~/ s/^(?:v\.)?/v. /
-$Per Christum
-_
-@:Ant ad S_Dominicum
-
-[Ant Finalis Cist]
-@:Postpentecost:s/V\..*//s s/$/ (Allelúja.)/s
-_
-@Commune/C10:Invit:s/(.*)\, \*.*/V. $1. (Allelúja.)/
-@Commune/C10:Invit:s/.*\* (.*)\./R. $1. (Allelúja.)/
-_
-$Oremus
-v. Všemohoucí, věčný Bože, jenž jsi působením Svatého Ducha připravil tělo i duši slavné Marie Panny za důstojný příbytek svého Syna, § dej nám, kdo se těšíme vzpomínkou na ni * abychom její přímluvou unikli neustálým zlým událostem i věčné smrti. Skrze téhož Krista, našeho Pána.
-R. Amen.
-&Dominus_vobiscum

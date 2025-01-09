@@ -16,7 +16,7 @@ sub psalmi {
 
     if ($hora =~ /^(?:Laudes|Vespera)$/i) {
       $psalmi = psalmi_major($lang);
-      $duplexf ||= $duplex > 2;
+      $duplexf ||= $duplex > 2 && $winner !~ /C12/;
     } else {
       $psalmi = psalmi_minor($lang);
     }
@@ -133,9 +133,9 @@ sub psalmi_minor {
   if ($winner =~ /tempora/i || $testmode =~ /seasonal/i || $dayname[0] =~ /pasc/i) {
 
     my $ind =
-        $hora eq 'Prima' ? 0
-      : $hora eq 'Tertia' ? 1
-      : $hora eq 'Sexta' ? 2
+        $hora eq 'Prima' ? ($version =~ /cist/i ? 1 : 0)
+      : $hora eq 'Tertia' ? ($version =~ /cist/i ? 2 : 1)
+      : $hora eq 'Sexta' ? ($version =~ /cist/i ? 3 : 2)
       : $hora eq 'Nona' ? 4
       : -1;
     my $name = gettempora('Psalmi minor');
@@ -143,7 +143,7 @@ sub psalmi_minor {
     if ($name eq 'Adv') {
       $name = $dayname[0];
 
-      if ($day > 16 && $day < 24 && $dayofweek) {
+      if ($day > 16 && $day < 24 && $dayofweek && $version !~ /cist/i) {
         my $i = $dayofweek + 1;
 
         if ($dayofweek == 6 && $version =~ /trident|monastic.*divino/i) {    # take ants from feria occuring Dec 21st
@@ -434,7 +434,8 @@ sub psalmi_major {
 
   if ( $version =~ /Monastic/
     && $hora eq 'Vespera'
-    && ($winner !~ /C(?:9|12)/)
+    && ($winner !~ /C9/)
+    && ($winner !~ /C12/ || $version =~ /cist/i)
     && ($commune !~ /C9/)
     && ($dayname[0] !~ /Quad6/ || $dayofweek < 4))
   {

@@ -28,6 +28,7 @@ sub oratio {
     $datafolder, $cvespera, $precesferiales, $largefont, $redfont, $label,
   );
 
+  our $collectcount = 1;
   my $addconclusio;
   my %w = columnsel($lang) ? %winner : %winner2;
   my $ind = $hora eq 'Vespera' ? $vespera : 2;
@@ -153,14 +154,15 @@ sub oratio {
     # no dominus vobiscum after Te decet
     if ($version !~ /Monastic/ || $hora ne 'Matutinum' || $rule !~ /12 lectiones/) {
       if (
-        $version =~ /Monastic/
+        $version =~ /Monastic/ && ($winner !~ /C12/ || $version !~ /cist/i)
         || ( $version =~ /Ordo Praedicatorum/
           && ($rank < 3 || $dayname[1] =~ /Vigil/)
           && $winner !~ /12-24|Pasc|01-0[2-5]/)
         )
       {    # OP ferial office
         if ($horamajor && $version !~ /Ordo Praedicatorum/) {
-          push(@s, '$Kyrie', '$Pater noster Et', "_");
+          push(@s, '$Kyrie');
+          push(@s, '$Pater noster Et', "_") unless $winner =~ /C12/;
         } else {
           push(@s, '$Kyrie', '$pater secreto', "_");
         }
@@ -199,6 +201,8 @@ sub oratio {
   our $octavcount = 0;
   my $octavestring = '!.*?(O[ckt]ta|' . &translate("Octava", $lang) . ')';
   my $sundaystring = 'Dominic[aæ]|' . &translate("Dominica", $lang);
+
+  %w = columnsel($lang) ? %winner : %winner2;    # prevent "contamination" from Oratio Dominica
 
   if ($horamajor && $rank < 7) {
 
@@ -516,6 +520,7 @@ sub oratio {
       my $ostr;
       ($ostr, $addconclusio) = delconclusio($cc{$key}, $addconclusio);
       push(@s, $ostr);
+      $collectcount++;
     }
   }
 
@@ -742,6 +747,14 @@ sub getsuffragium {
     : $dayname[0] =~ /pasc/i ? 2
     : 1;
   $suffr = $comment > 2 ? $suffr{"Suffragium $hora"} : $suffr{'Suffragium'};
+
+  if ($version =~ /altovadensis/i && $collectcount == 2 && $commune !~ /C1[012]/) {
+    $suffr =~ s/\n\!.*//s;
+    my $conclBMV = $suffr{'Suffragium ConclusioBMV'};
+    $suffr =~ s/$/~\n$conclBMV/s;
+    setbuild1('Suffragium altovadense:', "limited to three collects total");
+  }
+
   if ($churchpatron) { $suffr =~ s/r\. N\./$churchpatron/; }
   ($suffr, $comment);
 }

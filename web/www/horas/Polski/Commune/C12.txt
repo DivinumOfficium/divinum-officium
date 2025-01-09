@@ -15,15 +15,7 @@ v. Wszyscy Święci prosimy, Panie niech nas wspomagają, iżbyśmy rozpamiętyw
 $Per Dominum
 (sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 
-[Pre oratio]
-#Oratio
-_
-v. Kyrie, elejson. Chryste, elejson. Kyrie, elejson.
-(sed rubrica 1955 aut rubrica 1960 omittitur)
-&Dominus_vobiscum
-$Oremus
-
-[Hymnus minor]
+[Hymnus minor_]
 
 #Hymnus
 v. Pomnij, Stwórco wszechrzeczy,
@@ -31,12 +23,12 @@ v. Pomnij, Stwórco wszechrzeczy,
 Z świętego Dziewicy żywota,
 Przyjął postać ciała naszego
 _
-Marjo, Matko łaski,
+r. Marjo, Matko łaski,
 Słodka Matko miłosierdzia,
 Ty chroń nas od wroga,
 I przyjmij w godzinę śmierci.
 _
-Jezu, Tobie niechaj będzie chwała,
+r. Jezu, Tobie niechaj będzie chwała,
 który narodziłeś się z Dziewicy,
 oraz Ojcu i dobroczynnemu Duchowi,
 po nieskończone wieki.
@@ -114,7 +106,7 @@ R. Boża Rodzicielko, wstaw się za nami.
 [Ant Completorium]
 Ant. Pod Twoją obronę * uciekamy się, święta Boża Rodzicielko: naszymi prośbami racz nie gardzić w potrzebach naszych, ale od wszelakich złych przygód racz nas zawsze wybawiać, Panno chwalebna i błogosławiona.
 
-[Capitulum Completorium]
+[Capitulum Completorium_]
 !Syr 24:24
 v. Jam matka pięknej miłości i bogobojności, i uznania, i nadzieje świętej.
 $Deo gratias

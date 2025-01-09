@@ -31,7 +31,8 @@
 /:Poté se nahlas řekne Verš::/
 
 [Clara voce_C]
-/:V Chóru se udělá velký Kříž + a na pokyn představeného se ukloníme Oltáři. Poté se nahlas a důstojně řekne Verš::/
+/:V Chóru se udělá velký Kříž + a na pokyn představeného se ukloníme Oltáři.:/
+/:Poté se nahlas a důstojně řekne Verš::/
 
 [Secus absolute]
 /:Secus absolute incipiuntur, ut sequitur::/
@@ -49,6 +50,9 @@
 !Reliqua omittuntur in Officium duodecim Lectionum, quando immediatæ subsequuntur %Laudes%. Sed in Festi Simplicis, et in Officio Ferialis tam trium, quam unius Lectionis semper dicuntur ut sequitur.
 (sed rubrica cisterciensis)
 !Zbytek se ve dvanáctilekcovém Officiu vynechává, a hned navazují %Laudy%. Avšak jak ve Fériích, tak ve třílekcových Svátcích, v zimě i na jaře se vždy říká následující.
+
+[Matutinum parvum]
+!Následují hned %Laudy%.
 
 [Deinde secreto]
 /:Pak se říká potichu:/
@@ -102,6 +106,7 @@
 
 [Incipit] (rubrica altovadensis)
 /:Po skončení připomínky malých Hodinek Panny Marie se udělá velký Kříž + a na pokyn představeného se ukloníme Oltáři.:/
+@:Clara voce_C:2
 
 [IncipitL] (rubrica altovadensis)
 /:Po skončení Matutina či po Připomínce Malého Mariánského Officia před Officiem feriálním či třílekcovým, uděláme velký Kříž + a na pokyn představeného se ukloníme Oltáři.:/
@@ -110,7 +115,10 @@
 /:začíná se pouze pokud se Officium slaví zpěvem:/
 
 [CompletBMV]
-/:Poté se říká mariánský Kompletář. Po jeho skončení se po celý rok, s výjimkou Čtvrtku a Pátku Svatého týdne, slavně zazpívá:/
+/:Poté se říká mariánský Kompletář.:/
+
+[CompletBMV2]
+/:Po jeho skončení se po celý rok, s výjimkou Čtvrtku a Pátku Svatého týdne, slavně zazpívá:/
 
 [sine Oremus]
 /:a bez:/ Orémus /:::/

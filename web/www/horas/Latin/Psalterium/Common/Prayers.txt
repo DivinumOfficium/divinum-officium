@@ -165,6 +165,18 @@ R. Deo grátias.
 V. Fidélium ánimæ per misericórdiam Dei requiéscant in pace.
 R. Amen.
 
+[Amen]
+R. Amen.
+
+[Per Christum]
+Per Christum Dominum nostrum.
+
+[Per eumdem Christum]
+Per eúmdem Christum Dominum nostrum.
+
+[Qui tecum in]
+Qui tecum vivit et regnat in sǽcula sæculórum.
+
 [Per eundem]
 @:Per eumdem:s/eúmdem/eúndem/
 
@@ -342,12 +354,6 @@ R. Erue, Dómine, ánimas eórum.
 @:Dominus:3-4
 &Dominus_vobiscum2
 
-[Amen]
-R. Amen.
-
-[Per Christum]
-Per Christum Dominum nostrum.
-
 [Oratio Visita_]
 v. Vísita, quǽsumus, Dómine, habitatiónem istam, et omnes insídias inimíci ab ea lónge repélle: Ángeli tui sancti hábitent in ea, qui nos in pace custódiant; et benedíctio tua sit super nos semper.
 
@@ -381,10 +387,16 @@ Benedictio. Dóminus nos benedícat, + et ab omni malo deféndat, et ad vitam pe
 V. Benedícite.
 R. Deus.
 
-[commemoratio omnium]
+[commemoratio omnium_]
 R.br. Commemorátio ómnium fratrum, familiárum Órdinis nostri, atque benefactórum nostrórum.
-(sed rubrica cisterciensis)
+
+[commemoratio omnium_C]
 /:Deinde dicit Lector::/ Commemorátio ómnium fratrum, familiárium et benefactórum defunctórum Ordinis nostri.
+
+[commemoratio omnium]
+$commemoratio omnium_
+(sed rubrica cisterciensis)
+$commemoratio omnium_C
 
 [Requiescant]
 V. Requiéscant in pace.
@@ -432,7 +444,7 @@ V. Jube, Dómine, benedícere.
 Ant. Spíritus sanctus in te descéndet, María, ne tímeas, habébis in útero Fílium Dei.
 _
 V. Ecce ancílla Dómini.
-R. fiat mihi secúndum verbum tuum.
+R. Fiat mihi secúndum verbum tuum.
 _
 $Oremus
 v. Lætífica, et ádjuva nos, omnípotens et miséricors Deus, Domínicæ Conceptiónis gáudia recoléntes, et pia Dei Génitrix Virgo semper María (in cujus veneratióne hæc commemorámus) in cunctis necessitátibus nostris grátiam sancti Spíritus nobis ímpetret, et levámen. Per eúmdem Christum Dóminum nostrum.
@@ -461,6 +473,3 @@ Lectio ex Regula S.P.N.Benedicti, Caput №
 @Psalterium/Mariaant:Ant Finalis OP
 (sed rubrica cisterciensis)
 @Psalterium/Mariaant:Ant Finalis Cist
-
-[Confiteor] (rubrica cisterciensis)
-@:Confiteor_:s/Paulo/Paulo, beáto Patri nostro Bernárdo/ s/Paulum/Paulum, beátum Patrem nostrum Bernárdum/

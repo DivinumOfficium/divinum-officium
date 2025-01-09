@@ -4,15 +4,7 @@ Officium parvum Beatae Máriae Virginis
 [Rank]
 Officium parvum Beatae Máriae Virginis;;Simplex;;1;;ex C11
 
-[Pre oratio]
-#Oratio
-_
-v. Uram irgalmazz nekünk. Krisztus kegyelmezz nekünk. Uram irgalmazz nekünk.
-(sed rubrica 1955 aut rubrica 1960 omittitur)
-&Dominus_vobiscum
-$Oremus
-
-[Hymnus minor]
+[Hymnus minor_]
 
 #Hymnus
 v. Emlékezzél meg, Alkotó,
@@ -20,12 +12,12 @@ Hogy hozzánk jöttél egykoron,
 A Szűz méhének szenthelyén
 Testünk formáját fölvevén.
 _
-Kegyelmek Anyja, Mária,
+r. Kegyelmek Anyja, Mária,
 Irgalom édes Asszonya,
 Légy ellenségtől gyámolunk.
 S állj mellettünk, ha meghalunk.
 _
-Glória neked Jézusunk,
+r. Glória neked Jézusunk,
 Kinek a Szűz szülőanyád,
 Atya, s kegyes Lélek, neked,
 Most és örök időkön át.
@@ -70,7 +62,7 @@ $Deo gratias
 [Ant Completorium]
 Ant. Oltalmad alá futunk * Istennek szent Szülője, könyörgésünket meg ne vesd szükségünk idején. Hanem oltalmazz meg minket minden veszedelemtől, ó dicsőséges és áldott Szűz.
 
-[Capitulum Completorium]
+[Capitulum Completorium_]
 !Sir 24:24
 v. Én a szép szeretet anyja vagyok, és a félelemé és az ismereté és a szent reménységé.
 $Deo gratias

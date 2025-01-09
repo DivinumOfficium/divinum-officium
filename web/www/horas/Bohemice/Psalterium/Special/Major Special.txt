@@ -186,6 +186,53 @@ i Duchu Utěšiteli
 buď sláva všechen věků věk. 
 Amen.
 
+[HymnusM Day1 Laudes]
+v. Ó blesku slávy Otcovy, 
+jenž ve dne sluncem zazáříš,
+Tys světla svit, zdroj záření, 
+sám Den, jenž dni osvětluje: 
+_
+A pravé slunce, vyjdi již
+ó věčný jase v blýskání 
+paprsky Ducha svatého 
+již nalej v proudy našich žil.
+_
+Teď Otce prosme oběťmi, 
+Otce i mocné milosti,
+Otce i věčné oslavy, 
+ať kluzkou vinu vyhostí.
+_
+Ať v pracích řádných řídí nás,
+a zuby ďáblu vyláme; 
+a trudy v dobro obrátí, 
+našemu dílu požehná.
+_
+Ať mysl řídí, vládne jí 
+a tělo nadá čistotou, 
+víra ať teplem mocně plá, 
+jed bludný lži ji nezdeptá.
+_
+A Kristus nám bud pokrmem 
+a víra buď nám nápojem. 
+Radostně pijme střízlivou 
+záplavu Ducha svatého.
+_
+Tak v radosti ať projde den: 
+stud čistý bud jak svítání, 
+a víra jako poledne, 
+však soumrak ducha nezachmuř.
+_
+Hle, jitřenka už vychází, 
+s níž přijdiž k nám již světel Pán,
+Syn celý v lůně Otcově 
+a celý v Slově Otec sám.
+_
+Buď Bohu Otci sláva, čest, 
+i Synu, jemu rovnému, 
+i Duchu Utěšiteli 
+buď sláva všechen věků věk. 
+Amen.
+
 [Feria Versum 2]
 V. Ráno jsme naplněni tvým milosrdenstvím.
 R. Zajásali jsme a jsme potěšeni.
@@ -463,7 +510,7 @@ R. Aby tě střežili na všech tvých cestách.
 v. Kristus byl jednou obětován, aby na sebe vzal hříchy celého množství lidí, objeví se podruhé, aby přinesl spásu těm, kteří na něho čekají. 
 $Deo gratias
 
-[Responsory Quad5 Laudes]
+[Responsory Quad5 Laudes_]
 R.br. Vysvoboď od meče, * Bože, mou duši.
 R. Vysvoboď od meče, * Bože, mou duši.
 V. A z moci psů můj život.
@@ -523,7 +570,7 @@ R. Rozšířil proti mě zradu.
 v. Ty však, Hospodine zástupů, jenž spravedlivě soudíš, který zkoumáš srdce i ledví, kéž vidím tvoji pomstu nad nimi, neboť tobě svěřuji svou při, Hospodine, můj Bože.
 $Deo gratias
 
-[Responsory Quad5 Vespera]
+[Responsory Quad5 Vespera_]
 R.br. Ze lví tlamy * vysvoboď mě, Pane.
 R. Ze lví tlamy * vysvoboď mě, Pane.
 V. A z rohů jednorožců mou pokoru.
@@ -706,20 +753,8 @@ v. Uděl nám, svým služebníkům, prosíme, Pane Bože, stálé zdraví duše
 @Psalterium/Mariaant:Nativiti:s/.*V\./V\./s
 
 
-[Suffragium BMV] (rubrica cisterciensis)
-!K Panně Marii
+[Suffragium BMV AntL]
 Ant. Svatá Boží Rodičko, vždy Panno Maria, přimlouvej se za nás u Pána našeho Boha. (Allelúja, allelúja.)
-_
-@Psalterium/Mariaant:Postpentecost: s/.*V\./V./s s/(Per|Through|Skrz).*$/\n/
-(sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis dicitur)
-@Psalterium/Mariaant:Quadragesimae: s/.*V\./V./s  s/(Per|Through|Skrz).*$//
-(sed Adventus dicitur) 
-@Psalterium/Mariaant:Advent: s/.*V\./V./s s/(Per|Through|Skrz).*$//
-(sed Nativitatis aut Epiphaniæ aut post partum dicitur)
-@Psalterium/Mariaant:Nativiti: s/.*V\./V./s s/Amen.*$//
-(sed Paschali dicitur)
-@Psalterium/Mariaant:Paschalis: s/.*V\./V./s s/(Per|Through|Skrz).*$//
-
 
 [Suffragium DeJosephV]
 !Ke Svatému Josefovi
@@ -761,7 +796,6 @@ R. A do všech končin země jejich slova.
 _
 @:Suffragium DeApostolisV:7-8
 
-
 [Suffragium DeSSPNV]
 !O svatých Benediktovi, Bernardovi a Robertovi
 Ant. Svatí svou vírou přemohli říše <i>pekelné</i>, jednali spravedlivě a dosáhli zaslíbení <i>Božích</i>. (Alleluja, alleluja.)
@@ -776,7 +810,6 @@ v. Uděl, prosíme, všemohoucí Bože; abychom, když ctíme památku tvých sv
 !De SS. Benedicto, Bernardo et Roberto
 Ant. Těla Svatých jsou pohřbena v pokoji, a jejich jména budou žít navěky. (Alleluja, alleluja.)
 @:Suffragium DeSSPNV:3-8
-
 
 [Suffragium DePace]
 !Za mír

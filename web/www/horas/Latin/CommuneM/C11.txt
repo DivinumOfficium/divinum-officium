@@ -1,12 +1,17 @@
 @Commune/C11
 
-[Responsory Vespera]
+[Responsory Vespera_]
 R.br. Ave María, grátia plena, * Dóminus tecum.
 R. Ave María, grátia plena, * Dóminus tecum.
 V. Benedícta tu in muliéribus, et benedíctus fructus ventris tui
 R. Dóminus tecum.
 &Gloria
 R. Ave María, grátia plena, * Dóminus tecum.
+
+[Responsory Vespera]
+@:Responsory Vespera_
+(sed rubrica cisterciensis)
+@:Responsory Vespera_: s/^(V\..*)\,.*$/$1./m
 
 [AntMatutinumM]
 Favus distíllans * lábia tua, Sponsa, mel et lac sub lingua tua: † et odor vestimentórum tuórum sicut odor thuris.;;47

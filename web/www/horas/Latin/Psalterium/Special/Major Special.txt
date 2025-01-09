@@ -1080,7 +1080,7 @@ Amen.
 [Quad Versum 2]
 @:Quad Versum 3
 (sed rubrica cisterciensis)
-@:Quad Versum 2_C
+@Psalterium/Special/Minor Special:Versum Quad Sexta
 
 [Quad Vespera]
 !Joël 2:17
@@ -1144,12 +1144,17 @@ $Deo gratias
 (sed rubrica cisterciensis)
 @:Quad5 Laudes_C
 
-[Responsory Quad5 Laudes]
+[Responsory Quad5 Laudes_]
 R.br. Érue a frámea * Deus ánimam meam.
 R. Érue a frámea * Deus ánimam meam
 V. Et de manu canis únicam meam.
 R. Deus ánimam meam.
 R. Érue a frámea * Deus ánimam meam.
+
+[Responsory Quad5 Laudes]
+@:Responsory Quad5 Laudes_
+(sed rubrica cisterciensis)
+@:Responsory Quad5 Laudes_:1-4
 
 [Hymnus Quad5 Laudes]
 {:H-Lustrasex:}v. Lustra sex qui jam perégit,
@@ -1257,12 +1262,17 @@ R. Ampliávit advérsum me supplantatiónem.
 v. Tu autem, Dómine Sábaoth, qui júdicas juste, et probas renes et corda, vídeam ultiónem tuam ex eis: tibi enim revelávi causam meam, Dómine, Deus meus.
 $Deo gratias
 
-[Responsory Quad5 Vespera]
+[Responsory Quad5 Vespera_]
 R.br. De ore leónis * líbera me, Dómine.
 R. De ore leónis * líbera me, Dómine.
 V. Et a córnibus unicórnium humilitátem meam.
 R. Líbera me, Dómine.
 R. De ore leónis * líbera me, Dómine.
+
+[Responsory Quad5 Vespera]
+@:Responsory Quad5 Vespera_
+(sed rubrica cisterciensis)
+@:Responsory Quad5 Vespera_:1-4
 
 [Hymnus Quad5 Vespera]
 {:H-Vexillaregis:}v. Vexílla Regis pródeunt;
@@ -1605,19 +1615,8 @@ v. Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et cór
 (sed tempore post partum loco horum versuum dicuntur)
 @Psalterium/Mariaant:Nativiti:s/.*V\./V\./s
 
-[Suffragium BMV] (rubrica cisterciensis)
-!De Beata Maria
+[Suffragium BMV AntL]
 Ant. Sancta Dei Génitrix, Virgo semper María, intercéde pro nobis ad Dóminum Deum nostrum. (Allelúja, allelúja.)
-_
-@Psalterium/Mariaant:Postpentecost: s/.*V\./V./s s/(Per|Through).*$/\n/
-(sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis dicitur)
-@Psalterium/Mariaant:Quadragesimae: s/.*V\./V./s  s/(Per|Through).*$//
-(sed Adventus dicitur) 
-@Psalterium/Mariaant:Advent: s/.*V\./V./s s/(Per|Through).*$//
-(sed Nativitatis aut Epiphaniæ aut post partum dicitur)
-@Psalterium/Mariaant:Nativiti: s/.*V\./V./s s/Amen.*$//si
-(sed Paschali dicitur)
-@Psalterium/Mariaant:Paschalis: s/.*V\./V./s s/(Per|Through).*$//
 
 [Suffragium DeJosephV]
 !De sancto Joseph
@@ -1714,24 +1713,34 @@ _
 @:Suffragium Paschale
 
 [Suffragium Laudes] (rubrica cisterciensis)
-@:Suffragium BMV
-$Per eundem
-(sed post partum)
-$Amen
-(sed rubrica 1951 aut feria 4 aut feria 3 aut feria 7)
+@:Suffragium BMV:1
+@:Suffragium BMV AntL
 _
-(sed commune C1[01] omittuntur)
-(deinde rubrica 1951 aut feria 4 dicuntur)
+@Psalterium/Mariaant:Postpentecost: s/.*V\./V./s s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/
+(sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis dicitur)
+@Psalterium/Mariaant:Quadragesimae: s/.*V\./V./s  s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/
+(sed Adventus dicitur) 
+@Psalterium/Mariaant:Advent: s/.*V\./V./s s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/
+(sed Nativitatis aut Epiphaniæ aut post partum dicitur)
+@Psalterium/Mariaant:Nativiti: s/.*V\./V./s s/[ÁA]m[ée]n.*$/\n/si
+(sed Paschali dicitur)
+@Psalterium/Mariaant:Paschalis: s/.*V\./V./s s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/
+(deinde dicitur)
+@:Suffragium ConclusioBMV
+(sed rubrica 1951 aut feria 4 aut feria 3 aut feria 7 dicuntur)
+_
+(atque commune C10 aut commune C11 hi versus omittuntur)
+(atque rubrica 1951 aut feria 4 dicuntur semper)
 @:Suffragium DeJoseph
 $Per Dominum
 (sed rubrica 1951)
 _
-(deinde rubrica 1951 aut feria 3 dicuntur)
+(atque rubrica 1951 aut feria 3 dicuntur semper)
 @:Suffragium DeSSPN
 $Per Dominum
 (sed rubrica 1951)
 _
-(deinde rubrica 1951 aut feria 7 dicuntur)
+(atque rubrica 1951 aut feria 7 dicuntur semper)
 @:Suffragium DePace
 
 [Suffragium Vespera] (rubrica tridentina)
@@ -1756,34 +1765,38 @@ _
 @:Suffragium PaschaleV
 
 [Suffragium Vespera] (rubrica cisterciensis)
-!De Beata Maria
-@Psalterium/Mariaant:Postpentecost: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(Per|Through).*$/\n/s
+@:Suffragium BMV:1
+@:Suffragium BMV:s/.*$//m
 (sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis dicitur)
-@Psalterium/Mariaant:Quadragesimae: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(Per|Through).*$/\n/s
-(sed Adventus dicitur) 
-@Psalterium/Mariaant:Advent: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(Per|Through).*$/\n/s
+@Psalterium/Mariaant:Quadragesimae: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
+(sed Adventus dicitur)
+@Psalterium/Mariaant:Advent: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
 (sed Nativitatis aut Epiphaniæ aut post partum dicitur)
-@Psalterium/Mariaant:Nativiti: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/Amen.*$/\n/s
+@Psalterium/Mariaant:Nativiti: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/[ÁA]m[ée]n.*$/\n/s
 (sed Paschali dicitur)
-@Psalterium/Mariaant:Paschalis: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(Per|Through).*$/\n/s
-$Per eundem
-(sed post partum)
-$Amen
+@Psalterium/Mariaant:Paschalis: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
+(deinde dicitur)
+@:Suffragium ConclusioBMV
 (sed rubrica 1951 aut feria 3 aut feria 2 aut feria 6)
 _
-(sed commune C1[01] omittuntur)
-(deinde rubrica 1951 aut feria 3 dicuntur)
+(atque commune C10 aut commune C11 hi versus omittuntur)
+(atque rubrica 1951 aut feria 3 dicuntur semper)
 @:Suffragium DeJoseph
 $Per Dominum
 (sed rubrica 1951)
 _
-(deinde rubrica 1951 aut feria 2 dicuntur)
+(atque rubrica 1951 aut feria 2 dicuntur semper)
 @:Suffragium DeSSPN
 $Per Dominum
 (sed rubrica 1951)
 _
-(deinde rubrica 1951 aut feria 6 dicuntur)
+(atque rubrica 1951 aut feria 6 dicuntur semper)
 @:Suffragium DePace
+
+[Suffragium ConclusioBMV]
+$Per eumdem Christum
+(sed post partum omittitur)
+$Amen
 
 [Preces feriales Laudes]
 $Kyrie

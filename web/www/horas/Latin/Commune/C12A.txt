@@ -2,7 +2,7 @@
 Officium parvum Beatae Mariae Virginis
 
 [Rank]
-Officium Parvum Beatae Mariae Virginis tempore Adventus;;Simplex;;1
+Officium Parvum Beatae Mariae Virginis tempore Adventus et in Annuntiationis;;Simplex;;1
 
 [Rule]
 Ave only
@@ -14,6 +14,9 @@ no Te Deum
 
 [Ant Vespera]
 @Sancti/03-25
+
+[Capitulum Vespera]
+@:Capitulum Laudes
 
 [Versum 1]
 @Commune/C6:Versum 2
@@ -37,8 +40,12 @@ $Qui tecum
 [Invit]
 @Commune/C12
 
+[Ant Matutinum 9]
+Ángelus Dómini * nuntiávit Maríæ, et concépit de Spíritu Sancto.;;97
+
 [Ant Matutinum]
-@Commune/C11::s/Post partum.*\./Ángelus Dómini \* nuntiávit Maríæ, et concépit de Spíritu Sancto./
+@Commune/C11::1-3 s/7/6/
+@:Ant Matutinum 9
 
 [Nocturn 1 Versum]
 @Commune/C6:Versum 2
@@ -81,6 +88,8 @@ $Qui tecum
 @Tempora/Adv1-1:Responsory1
 
 [Minor final]
+
+#Oratio
 @Commune/C12:Pre oratio
 @:Oratio
 @Commune/C12:Minor final
@@ -186,7 +195,7 @@ _
 @:Ant 1
 
 [Special Completorium]
-@Commune/C12::s/(#Capitulum.).*/$1/s
+@Commune/C12::s/(#Capitulum Versus).*/$1\n/s
 @Sancti/03-25:Capitulum Laudes
 _
 @Psalterium/Mariaant:Advent:8-9
@@ -196,6 +205,7 @@ _
 &psalm(233)
 @Tempora/Adv1-0:Ant 2:s/^/Ant. /
 
+#Oratio
 @Commune/C12:Pre oratio
 @:Oratio
 
