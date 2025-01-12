@@ -220,6 +220,7 @@ sub resolve_refs {
     if ($merge_with_next && $it < $#t) {
       $merged_lines .= $line . ' ';
     } elsif ($it - 1 > 0 && $was_hancigitur == $it - 1) {
+
       # If we are looking at the line after &hancigitur
       # we merge the  result of the expansion of &hancigitur
       # (which in this case is probaly some spaces or newlines?),
