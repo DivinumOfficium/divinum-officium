@@ -85,6 +85,7 @@ sub resolve_refs {
 
   my @resolved_lines;    # Array of blocks expanded from lines.
   my $merged_lines;      # Preceding continued lines.
+  my $was_hancigitur = 0;
 
   #cycle by lines
   for (my $it = 0; $it < @t; $it++) {
@@ -95,6 +96,8 @@ sub resolve_refs {
     # Should this line be joined to the next? Strip off the continuation
     # character as we check.
     my $merge_with_next = ($line =~ s/~$//);
+    my $is_communicantes = ($line =~ /communicantes/);
+    my $is_hancigitur = ($line =~ /hancigitur/);
 
     # The first batch of transformations are performed on the current
     # input line only.
@@ -113,6 +116,26 @@ sub resolve_refs {
       if ($line !~ /\<input/i) {
         $line = resolve_refs($line, $lang);
       }    #for special chars
+    }
+
+    # If &hancigitur does not expand to the rubric explaining
+    # the text for Octaves of Easter and of Pentecostes
+    # we should merge with the next line.
+    # Otherwise, as before, to preserve the usual logic of rubrics.
+    $is_hancigitur = $is_hancigitur && !($line =~ /Sabbato/);
+
+    # In order to solve the communicantes issue, just remove
+    # the last <br /> and merge with next.
+    if ($is_communicantes || $is_hancigitur) {
+      $line =~ s/\<br\/\>$//g;
+      $merge_with_next = 1;
+    }
+
+    # But, then, we need the index for the current line
+    # in order to merge the result together with
+    # the line previous to &hancigitur.
+    if ($is_hancigitur) {
+      $was_hancigitur = $it;
     }
 
     #cross
@@ -196,6 +219,14 @@ sub resolve_refs {
     # Connect lines marked by tilde.
     if ($merge_with_next && $it < $#t) {
       $merged_lines .= $line . ' ';
+    } elsif ($it - 1 > 0 && $was_hancigitur == $it - 1) {
+
+      # If we are looking at the line after &hancigitur
+      # we merge the  result of the expansion of &hancigitur
+      # (which in this case is probaly some spaces or newlines?),
+      # together with the line previous to &hancigitur and
+      # the current line.
+      $resolved_lines[-1] .= $merged_lines . $line . ' ';
     } else {
       push @resolved_lines, $merged_lines . $line;
       $merged_lines = '';
