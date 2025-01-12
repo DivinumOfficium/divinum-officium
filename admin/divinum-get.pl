@@ -65,7 +65,7 @@ my $no_timestamp;
 
 my $help;
 
-my $USAGE = <<USAGE ;
+my $USAGE = <<USAGE;
 Establish divinumofficium web results for a given hour and a range of dates.
 Usage:
   divinum-get --prayer=PRAYER --version=VERSION [option..]

@@ -17,7 +17,7 @@ sub htmlHead {
   my ($horasjs) = "<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>\n" . horasjs() . '</SCRIPT>';
   $onload && ($onload = " onload=\"$onload\";");
 
-  print << "PrintTag";
+  print <<"PrintTag";
 Content-type: text/html; charset=utf-8
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -62,7 +62,7 @@ Content-type: text/html; charset=utf-8
 PrintTag
 
   if (our $whitebground) {
-    print << "PrintTag";
+    print <<"PrintTag";
     \@media (prefers-color-scheme: dark) {
       body {
         background: black;
@@ -79,7 +79,7 @@ PrintTag
       }
 PrintTag
   } else {
-    print << "PrintTag";
+    print <<"PrintTag";
     \@media (prefers-color-scheme: dark) {
       body {
         background: $dialogbackground;
@@ -104,7 +104,7 @@ PrintTag
 PrintTag
   }
 
-  print << "PrintTag";
+  print <<"PrintTag";
   </STYLE>
   <TITLE>$title</TITLE>
 $horasjs

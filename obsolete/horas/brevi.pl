@@ -211,7 +211,7 @@ for ($i = 1; $i <= $completed; $i++) { $hcolor[$i] = 'maroon'; }
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
 htmlHead($title, 2);
-print << "PrintTag";
+print <<"PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="startup();"> 
 <FORM ACTION="brevi.pl" METHOD=post TARGET=_self>
 PrintTag
@@ -238,7 +238,7 @@ if ($command =~ /setup/i) {
   $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
   horas($command);
 
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN=CENTER>
 <INPUT TYPE=SUBMIT NAME='button' VALUE='$hora completed' onclick="okbutton();">
 </P>
@@ -256,7 +256,7 @@ PrintTag
   $headline = setheadline();
   headline($title);
 
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=0 HEIGHT=$height><TR>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>Ordinarium</FONT></TD>
@@ -287,7 +287,7 @@ PrintTag
 #common widgets for main and hora
 if ($pmode =~ /(main|hora)/i) {
   if ($votive ne 'C9') {
-    print << "PrintTag";
+    print <<"PrintTag";
 <P ALIGN=CENTER><I>
 <A HREF=# onclick="hset('Matutinum');"><FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
 &nbsp;&nbsp; 
@@ -307,7 +307,7 @@ if ($pmode =~ /(main|hora)/i) {
 </I></P>
 PrintTag
   } else {
-    print << "PrintTag";
+    print <<"PrintTag";
 <P ALIGN=CENTER><I>
 <A HREF=# onclick="hset('Matutinum');"><FONT COLOR=$hcolor[1]>$horas[1]</FONT></A>
 &nbsp;&nbsp; 
@@ -324,7 +324,7 @@ PrintTag
   $ch3 = ($expand =~ /nothing/i) ? 'SELECTED' : '';
   $ch4 = ($expand =~ /skeleton/i) ? 'SELECTED' : '';
 
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN=CENTER>
 <SELECT NAME=expand SIZE=4 onchange="parchange();">
 <OPTION $ch1 VALUE='all'>all
@@ -340,7 +340,7 @@ PrintTag
     my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
     my $sel14 = ($testmode =~ /Common/i) ? 'SELECTED' : '';
 
-    print << "PrintTag";
+    print <<"PrintTag";
 &nbsp;&nbsp;&nbsp;
 Test: <SELECT NAME=testmode SIZE=4 onclick="parchange();">
 <OPTION $sel11 VALUE='regular'>Regular
@@ -359,7 +359,7 @@ PrintTag
   $sel3 = ($votive =~ /C9/) ? 'SELECTED' : '';
   $sel4 = ($votive =~ /C12/) ? 'SELECTED' : '';
 
-  print << "PrintTag";
+  print <<"PrintTag";
 &nbsp;&nbsp;&nbsp;
 <A HREF=# onclick="callkalendar();">Kalendarium</A>
 &nbsp;&nbsp;&nbsp;
@@ -399,7 +399,7 @@ PrintTag
     $buildscript =~ s/\n/<BR>/g;
     $buildscript =~ s/\_//g;
     $buildscript =~ s/\,\,\,/\&nbsp\;\&nbsp\;\&nbsp\;/g;
-    print << "PrintTag";
+    print <<"PrintTag";
 <TABLE BORDER=3 ALIGN=CENTER WIDTH=60% CELLPADDING=8><TR><TD ID=L$searchind>
 $buildscript
 </TD></TR><TABLE><BR>
@@ -413,7 +413,7 @@ if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
 
 $command =~ s/(pray|setup)//ig;
 
-print << "PrintTag";
+print <<"PrintTag";
 <INPUT TYPE=HIDDEN NAME=setup VALUE="$setupsave">
 <INPUT TYPE=HIDDEN NAME=command VALUE="$command">
 <INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
@@ -428,7 +428,7 @@ PrintTag
 sub headline {
   my $head = shift;
   if ($headline =~ /\!/) { $headline = $` . "<FONT SIZE=1>" . $' . "</FONT>"; }
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN=CENTER><FONT COLOR=$daycolor>$headline<BR></FONT>
 $comment<BR><BR>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
@@ -446,7 +446,7 @@ PrintTag
 #*** Javascript functions
 # the sub is called from htmlhead
 sub horasjs {
-  print << "PrintTag";
+  print <<"PrintTag";
 
 <SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
 

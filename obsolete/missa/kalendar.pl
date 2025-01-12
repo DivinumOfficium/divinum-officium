@@ -128,7 +128,7 @@ $title = "Ordo: $monthnames[$kmonth-1] $kyear";
 
 #*** generate HTML
 htmlHead($title, 2);
-print << "PrintTag";
+print <<"PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" >
 <FORM ACTION="kalendar.pl" METHOD=post TARGET=_self>
 <INPUT TYPE=HIDDEN NAME=setup VALUE="$setupsave">
@@ -163,7 +163,7 @@ for ($i = 1; $i <= 12; $i++) {
   print "<A HREF=# onclick=\"setkm($i)\">$mn</A>\n";
   if ($i < 12) { print "&nbsp;&nbsp;&nbsp;\n" }
 }
-print << "PrintTag";
+print <<"PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=$border WIDTH=90% CELLPADDING=3>
 <TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH><TR>
@@ -231,7 +231,7 @@ for ($cday = 1; $cday <= $to; $cday++) {
   }
   if (!$c1) { $c1 = "<P ALIGN=CENTER>_</P>"; }
   if (!$c2) { $c2 = "<P ALIGN=CENTER>_</P>"; }
-  print << "PrintTag";
+  print <<"PrintTag";
 <TR><TD ALIGN=CENTER><A HREF=# onclick="callbrevi(\'$date1\');">$d1</FONT></A></TD>
 <TD>$c1</TD>
 <TD>$c2</TD>
@@ -239,24 +239,24 @@ for ($cday = 1; $cday <= $to; $cday++) {
 </TR>
 PrintTag
 }
-print << "PrintTag";
+print <<"PrintTag";
 </TABLE><BR>
 PrintTag
 print option_selector("Version", "document.forms[0].submit();", $version, @versions);
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT><\P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT><\P>\n"; }
-print << "PrintTag";
+print <<"PrintTag";
 </FORM>
 </BODY></HTML>
 PrintTag
-print << "PrintTag";
+print <<"PrintTag";
 <P ALIGN=CENTER><A HREF="Ckalendar.pl">Compare Calendars</A>
 PrintTag
 
 #*** horasjs()
 # javascript functions called by htmlhead
 sub horasjs {
-  print << "PrintTag";
+  print <<"PrintTag";
 
 <SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
 

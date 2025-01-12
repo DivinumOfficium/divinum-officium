@@ -39,7 +39,7 @@ sub headline {
     if $vers =~ /1617|1930/ && $hora =~ /Matutinum/;
 
   if ($variant eq 'P') {
-    $output .= par_c(<< "PrintTag");
+    $output .= par_c(<<"PrintTag");
 <A HREF="Pofficium.pl?date1=$date1&command=prev&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 &darr;</A>
 $date1
@@ -47,7 +47,7 @@ $date1
 &uarr;</A>
 PrintTag
   } else {
-    $output .= par_c(<< "PrintTag");
+    $output .= par_c(<<"PrintTag");
 $compone
 &ensp;
 <A HREF="#" onclick="callmissa();">Sancta Missa</A>
@@ -68,7 +68,7 @@ PrintTag
 sub mainpage {
   my $height = floor($screenheight * 7 / 14);
   my $height2 = floor($height / 2);
-  return << "PrintTag";
+  return <<"PrintTag";
 <TABLE BORDER="0" HEIGHT="$height"><TR>
 <TD ALIGN="CENTER"><FONT COLOR="MAROON">Ordinarium</FONT></TD>
 <TD ALIGN="CENTER"><FONT COLOR="MAROON">Psalterium</FONT></TD>
@@ -94,7 +94,7 @@ PrintTag
 }
 
 sub setplures {
-  my $output = << "PrintTag";
+  my $output = <<"PrintTag";
 <H2>Elige horas</H2>
 <TABLE WIDTH="75%" CELLPADDING="5" ALIGN="CENTER" $background>
 PrintTag
@@ -107,7 +107,7 @@ PrintTag
   }
 
   $output .= "</TABLE>";
-  my $submit = << "SubmitTag";
+  my $submit = <<"SubmitTag";
 thisform = document.forms[0];
 thisform.command.value = "pray";
 for(i=0; i<thisform.elements.length; i++) {
@@ -124,7 +124,7 @@ SubmitTag
 
 # for Pofficium Options Sancta Missa Ordo
 sub pmenu {
-  return << "PrintTag";
+  return <<"PrintTag";
 <A HREF="Pofficium.pl?date1=$date1&command=setupparameters&pcommand=$command&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
 Options</A>&ensp;
 <A HREF="#" onclick="callmissa();">Sancta Missa</A>&ensp;
@@ -134,7 +134,7 @@ PrintTag
 
 #common end for programs
 sub hiddenfields {
-  my $output = << "PrintTag";
+  my $output = <<"PrintTag";
 <INPUT TYPE="HIDDEN" NAME="expandnum" VALUE="">
 <INPUT TYPE="HIDDEN" NAME="popup" VALUE="">
 <INPUT TYPE="HIDDEN" NAME="popuplang" VALUE="">
@@ -160,7 +160,7 @@ sub buildscript {
   s/[\n]+/<br\/>/g;
   s/\_//g;
   s/\,\,\,/\&ensp\;/g;
-  return << "PrintTag";
+  return <<"PrintTag";
 <TABLE $background BORDER="3" ALIGN="CENTER" WIDTH="60%" CELLPADDING="8"><TR><TD>
 $_
 </TD></TR><TABLE><br/>

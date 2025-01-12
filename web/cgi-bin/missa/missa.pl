@@ -157,7 +157,7 @@ if ($command =~ /setup(.*)/is) {
   #eval($setup{'parameters'});
   $background = ($whitebground) ? ' class="contrastbg"' : '';
   ordo();
-  print << "PrintTag";
+  print <<"PrintTag";
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
 PrintTag
 } else {    #mainpage
@@ -165,7 +165,7 @@ PrintTag
   $command = "";
   $height = floor($screenheight * 6 / 12);
   headline($title);
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=0 HEIGHT=$height><TR>
 <TD><IMG SRC="$htmlurl/missa.png" HEIGHT=$height></TD>
@@ -182,7 +182,7 @@ if ($pmode =~ /(main|missa)/i) {
   $csolemn = ($solemn) ? 'CHECKED' : '';
   @chv = splice(@chv, @chv);
   $ctext = ($pmode =~ /(main)/i) ? 'Sancta Missa' : 'Sancta Missa Persoluta';
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN=CENTER><FONT SIZE=+1><I>
 <LABEL FOR=rubrics>Rubrics : </LABEL><INPUT ID=rubrics TYPE=CHECKBOX NAME='rubrics' $crubrics Value=1  onclick="parchange()">
 &nbsp;&nbsp;&nbsp;
@@ -210,7 +210,7 @@ PrintTag
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
 $command =~ s/(pray|setup)//ig;
-print << "PrintTag";
+print <<"PrintTag";
 <INPUT TYPE=HIDDEN NAME=setupm VALUE="$setupsave">
 <INPUT TYPE=HIDDEN NAME=command VALUE="$command">
 <INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
@@ -231,7 +231,7 @@ sub headline {
   my $numsel = setmissanumber();
   $numsel = "<BR/><BR/>$numsel<BR/>" if $numsel;
   my $headline = html_dayhead(setheadline(), $dayname[2]);
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN="CENTER">$headline</P>
 <P ALIGN="CENTER"><FONT COLOR="MAROON" SIZE="+1"><B><I>$head</I></B>&nbsp;<FONT COLOR="RED" SIZE="+1">$version</FONT></FONT></P>
 <P ALIGN="CENTER"><A HREF="#" onclick="callcompare()">Compare</A>

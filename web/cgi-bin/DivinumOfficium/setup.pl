@@ -80,7 +80,7 @@ sub setuptable {
   my ($command, $title) = @_;
   $title =~ s/setupparameters/Options/i;
 
-  my $output = << "PrintTag";
+  my $output = <<"PrintTag";
 <H1 ALIGN=CENTER><FONT COLOR=MAROON><B><I>$title</I></B></FONT></H1>
 <TABLE BORDER=2 CELLPADDING=5 ALIGN=CENTER$background>
 PrintTag
@@ -114,7 +114,7 @@ PrintTag
     $output .= htmlInput("I$parpos", $parvalue, $parmode, $parpar, $parfunc, $parhelp);
     $output .= "</TD></TR>\n";
   }
-  $output .= << "PrintTag";
+  $output .= <<"PrintTag";
 </TABLE>
 <P ALIGN=CENTER>
 <INPUT TYPE=SUBMIT NAME='button' VALUE=OK>

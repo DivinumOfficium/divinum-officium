@@ -18,7 +18,7 @@ my @filters = (
 );
 my $filters = join(' ', @filters);
 
-my $USAGE = <<USAGE ;
+my $USAGE = <<USAGE;
 Run divinumofficium regression tests against a current version.
 Usage: divinum-replay [options] FILE...
 

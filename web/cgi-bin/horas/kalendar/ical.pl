@@ -4,7 +4,7 @@ use utf8;
 
 # prepare ical output
 sub ical_output {
-  my ($output) = << "EOH";
+  my ($output) = <<"EOH";
 Content-Type: text/calendar; charset=utf-8
 Content-Disposition: attachment; filename="$version1 - $kyear.ics"
 
@@ -27,7 +27,7 @@ EOH
     my $day = sprintf("%02i-%02i-%04i", $ymonth, $yday, $yyear);
     my ($e) = ordo_entry($day, $version1, '', 'winneronly');
     $e = abbreviate_entry($e);
-    $output .= << "EOE";
+    $output .= <<"EOE";
 BEGIN:VEVENT
 UID:$cday
 DTSTAMP:$dtstamp

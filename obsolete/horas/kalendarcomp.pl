@@ -119,7 +119,7 @@ if ($year2 !~ /none/i) {
 #*** print page
 #generate HTML
 htmlHead($title, 2);
-print << "PrintTag";
+print <<"PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" > 
 <FORM ACTION="kalendarcomp.pl" METHOD=post TARGET=_self>
 <H2 ALIGN=CENTER>$title</H2>
@@ -164,7 +164,7 @@ for ($i = 0; $i < $mdays[$month - 1]; $i++) {
   print "<TR><TD ALIGN=center>$j. </TD><TD ALIGN=center>$flink1</TD><TD>$name1</TD>"
     . "<TD></TD><TD ALIGN=center>$flink2</TD><TD>$name2</TD></TR>\n";
 }
-print << "PrintTag";
+print <<"PrintTag";
 </TABLE>
 <BR>
 </P>
@@ -177,7 +177,7 @@ if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
 
 $command =~ s/(pray|setup)//ig;
 
-print << "PrintTag";
+print <<"PrintTag";
 </FORM>
 </BODY></HTML>
 PrintTag
@@ -255,7 +255,7 @@ sub updaterank {
 #*** Javascript functions
 # the sub is called from htmlhead
 sub horasjs {
-  print << "PrintTag";
+  print <<"PrintTag";
 
 <SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
 

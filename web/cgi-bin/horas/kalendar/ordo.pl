@@ -107,7 +107,7 @@ sub html_header {
   my $vers = $version1;
   $vers .= ' / ' . $version2 if $compare;
 
-  my $output = << "PrintTag";
+  my $output = <<"PrintTag";
 <H1>
 <FONT COLOR="MAROON" SIZE="+1"><B><I>Divinum Officium</I></B></FONT>&nbsp;
 <FONT COLOR="RED" SIZE="+1">$vers</FONT>
