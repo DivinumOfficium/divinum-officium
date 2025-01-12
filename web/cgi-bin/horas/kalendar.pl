@@ -223,7 +223,7 @@ sub html_output {
     $command = "pray" . ($compare ? $1 : $command);    # Cofficium can't use Plures
   }
 
-  print << "PrintTag";
+  print <<"PrintTag";
 </P>
 <INPUT TYPE="HIDDEN" NAME="setup" VALUE="$setupsave">
 <INPUT TYPE="HIDDEN" NAME="date1" VALUE="$date1">

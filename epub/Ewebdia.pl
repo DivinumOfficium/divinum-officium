@@ -20,7 +20,7 @@ sub htmlHead {
   my $flag = shift;
   if (!$title) { $title = ' '; }
 
-  print << "PrintTag";
+  print <<"PrintTag";
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML><HEAD>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

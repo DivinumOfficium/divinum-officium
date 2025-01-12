@@ -108,7 +108,7 @@ $O1570 = maketable('1570');
 
 #*** generate HTML
 htmlHead($title, 2);
-print << "PrintTag";
+print <<"PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" > 
 <FORM ACTION="ordo.pl" METHOD=post TARGET=_new>
 <H1 ALIGN=CENTER>Officium Divinum : Ordo</H1>
@@ -127,7 +127,7 @@ PrintTag
 #*** horasjs()
 # javascript functions called by htmlhead
 sub horasjs {
-  print << "PrintTag";
+  print <<"PrintTag";
 <SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
 
 </SCRIPT>

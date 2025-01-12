@@ -327,7 +327,7 @@ if ($adjust) {
 
 #*** generate HTML head widgets
 htmlHead($title, 2);
-print << "PrintTag";
+print <<"PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND=\"$htmlurl/horasbg.jpg\"> 
 <FORM ACTION="edit.pl" METHOD=post TARGET=_self>
 <TABLE ALIGN=CENTER BORDER=1 CELLPADDING=8><TR>
@@ -597,7 +597,7 @@ print "</TABLE><BR>\n";
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
 
-print << "PrintTag";
+print <<"PrintTag";
 <INPUT TYPE=HIDDEN NAME=save VALUE='0'>
 <INPUT TYPE=HIDDEN NAME=setup VALUE="$setupsave">
 <INPUT TYPE=HIDDEN NAME=expand1 VALUE="$expand1">
@@ -614,7 +614,7 @@ PrintTag
 
 #*** javascript functions
 sub horasjs {
-  print << "PrintTag";
+  print <<"PrintTag";
 
 <SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
 

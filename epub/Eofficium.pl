@@ -231,7 +231,7 @@ for ($i = 1; $i <= $completed; $i++) { $hcolor[$i] = 'maroon'; }
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
 htmlHead($title, 2);
-print << "PrintTag";
+print <<"PrintTag";
 <BODY VLINK="black" LINK="black" STYLE="font-family:'Gentium Book Basic'; font-size:87%; line-height:130%;">
 PrintTag
 
@@ -255,7 +255,7 @@ if ($command =~ /setup/i) {
 
   horas($command);
 
-  print << "PrintTag";
+  print <<"PrintTag";
 PrintTag
 
 } else {    #mainpage
@@ -271,7 +271,7 @@ PrintTag
 #common widgets for main and hora
 if ($pmode =~ /(main|hora)/i) {
   if ($votive ne 'C9') {
-    print << "PrintTag";
+    print <<"PrintTag";
 <P ALIGN="center">
 <A HREF="$date1-1-Matutinum.html"><FONT COLOR="$hcolor[1]">$horas[1]</FONT></A>
 &nbsp;&nbsp;
@@ -291,7 +291,7 @@ if ($pmode =~ /(main|hora)/i) {
 </P>
 PrintTag
   } else {
-    print << "PrintTag";
+    print <<"PrintTag";
 <P ALIGN="center">
 <A HREF="$date1-1-Matutinum.html"><FONT COLOR="$hcolor[1]">$horas[1]</FONT></A>
 &nbsp;&nbsp;
@@ -310,7 +310,7 @@ if ($debug) { print "<P ALIGN=\"center\"><FONT COLOR=\"blue\">$debug</FONT><\P>\
 
 $command =~ s/(pray|setup)//ig;
 
-print << "PrintTag";
+print <<"PrintTag";
 </BODY></HTML>
 PrintTag
 
@@ -321,7 +321,7 @@ sub headline {
   my $h = ($hora =~ /(Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium)/i) ? $hora : '';
   my $daten = prevnext($date1, 1);
   my $datep = prevnext($date1, -1);
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN="center"><FONT COLOR="$daycolor">$headline<BR></FONT>
 $comment<BR><BR>
 <SPAN STYLE="font-size:113%; color:maroon;">$h</SPAN>&nbsp;&nbsp;&nbsp;
@@ -368,6 +368,6 @@ sub prevnext {
 #*** Javascript functions
 # the sub is called from htmlhead
 sub horasjs {
-  print << "PrintTag";
+  print <<"PrintTag";
 PrintTag
 }

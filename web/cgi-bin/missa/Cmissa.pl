@@ -150,7 +150,7 @@ $title = "Sancta Missa Comparison";
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
 htmlHead($title, 'startup()');
-print << "PrintTag";
+print <<"PrintTag";
 <P ALIGN="CENTER">
 <A HREF="Cmissa.pl?searchvalue=2&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Incipit]</A>&nbsp;&nbsp;
 <A HREF="Cmissa.pl?searchvalue=11&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Missa Catechumenorum]</A>&nbsp;&nbsp;
@@ -181,13 +181,13 @@ if ($command =~ /setup(.*)/is) {
   $head = $title;
   headline($head);
   load_languages_data($lang1, $lang2, $version, $missa);
-  print << "PrintTag";
+  print <<"PrintTag";
 <TABLE BORDER=0 WIDTH=80% ALIGN=CENTER><TR>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>$version1</FONT></TD><TD ALIGN=CENTER><FONT COLOR=MAROON>$version2</FONT></TD>
 </TR></TABLE>
 PrintTag
   ordo();
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN=CENTER>
 <INPUT TYPE=submit NAME='button' VALUE='Æquiparantia persoluta' onclick="okbutton();">
 </P>
@@ -202,7 +202,7 @@ PrintTag
   $height2 = floor($height / 2);
   $background = ($whitebground) ? ' class="contrastbg"' : '';
   headline($title);
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=0 HEIGHT=$height><TR>
 <TD><IMG SRC="$htmlurl/missa.png" HEIGHT=$height></TD>
@@ -214,7 +214,7 @@ PrintTag
 
 #common widgets for main and hora
 if ($pmode =~ /(main|hora)/i) {
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN=CENTER>
 <A HREF="missa.pl">1962 only</A>
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -233,7 +233,7 @@ PrintTag
     $buildscript =~ s/\n/<BR>/g;
     $buildscript =~ s/\_//g;
     $buildscript =~ s/\,\,\,/\&nbsp\;\&nbsp\;\&nbsp\;/g;
-    print << "PrintTag";
+    print <<"PrintTag";
 <TABLE BORDER=3 ALIGN=CENTER WIDTH=60% CELLPADDING=8><TR><TD ID=L$searchind>
 $buildscript
 </TD></TR><TABLE><BR>
@@ -245,7 +245,7 @@ PrintTag
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT><\P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT><\P>\n"; }
 $command =~ s/(pray|setup)//ig;
-print << "PrintTag";
+print <<"PrintTag";
 <INPUT TYPE=HIDDEN NAME=setupm VALUE="$setupsave">
 <INPUT TYPE=HIDDEN NAME=command VALUE="$command">
 <INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
@@ -261,7 +261,7 @@ PrintTag
 sub headline {
   my $head = shift;
   print "<P ALIGN=CENTER>" . html_dayhead(setheadline()) . "\n";
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN=CENTER>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
 &nbsp;&nbsp;&nbsp;&nbsp;

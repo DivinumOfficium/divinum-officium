@@ -8,7 +8,7 @@ sub horasjs {
   my $caller_flag = $caller || 0;
 
   if ($officium ne 'Pofficium.pl') {
-    $output .= << "PrintTag";
+    $output .= <<"PrintTag";
 
 //position
 function startup() {
@@ -83,7 +83,7 @@ function callcompare() {
 }
 PrintTag
   }
-  $output .= << "PrintTag";
+  $output .= <<"PrintTag";
 //to prevent inhearitance of popup
 function clearradio() {
   var a= document.forms[0].popup;

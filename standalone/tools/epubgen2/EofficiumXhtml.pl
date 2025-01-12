@@ -266,7 +266,7 @@ for ($i = 1; $i <= $completed; $i++) { $hcolor[$i] = 'maroon'; }
 htmlHead($title, 2);
 
 #note the whole content is wrapped in a <div> for XHTML standard compatibilty
-print << "PrintTag";
+print <<"PrintTag";
 <body><div>
 PrintTag
 
@@ -291,7 +291,7 @@ if ($command =~ /setup/i) {
 
   horas($command);
 
-  print << "PrintTag";
+  print <<"PrintTag";
 PrintTag
 
 } else {    #mainpage
@@ -307,7 +307,7 @@ PrintTag
 #common widgets for main and hora
 if ($pmode =~ /(main|hora)/i) {
   if ($votive ne 'C9') {
-    print << "PrintTag";
+    print <<"PrintTag";
 <p class="cen">
 <a href="$date1-1-Matutinum.html">Matutinum</a>
 &nbsp;&nbsp;
@@ -326,7 +326,7 @@ if ($pmode =~ /(main|hora)/i) {
 <a href="$date1-8-Completorium.html">Completorium</a>
 PrintTag
   } else {
-    print << "PrintTag";
+    print <<"PrintTag";
 <p class="cen">
 <a href="$date1-1-Matutinum.html">Matutinum</a>
 &nbsp;&nbsp;
@@ -339,12 +339,12 @@ PrintTag
   }
 
   if ($linkmissa) {
-    print << "PrintTag";
+    print <<"PrintTag";
 <br/>
 <a href="$date1-9-Missa.html">Missa</a>
 PrintTag
   }
-  print << "PrintTag";
+  print <<"PrintTag";
 </p>
 PrintTag
 }
@@ -355,7 +355,7 @@ if ($debug) { print "<P ALIGN=\"cen rd\">$debug</p>\n"; }
 
 $command =~ s/(pray|setup)//ig;
 
-print << "PrintTag";
+print <<"PrintTag";
 </div></body></html>
 PrintTag
 
@@ -378,7 +378,7 @@ sub headline {
     $daycolorclass = "rd";
   }
 
-  print << "PrintTag";
+  print <<"PrintTag";
 <p class="cen"><span class="$daycolorclass">$headline<br/></span>
 $comment<br/><br/>
 <span class="c">$h</span>&ensp;
@@ -405,13 +405,13 @@ $date1
 PrintTag
 
   if ($linkmissa) {
-    print << "PrintTag";
+    print <<"PrintTag";
 <br/>
 <a href="$date1-9-Missa.html">Missa</a>
 PrintTag
   }
 
-  print << "PrintTag";
+  print <<"PrintTag";
 </p>
 PrintTag
 

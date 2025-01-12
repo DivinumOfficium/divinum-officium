@@ -192,7 +192,7 @@ $title = "Sancta Missa";
 htmlHead($title, 2);
 
 #note the whole content is wrapped in a <div> for XHTML standard compatibilty
-print << "PrintTag";
+print <<"PrintTag";
 <body><div>
 PrintTag
 
@@ -204,14 +204,14 @@ headline($head);
 $only = 1;    # single-column
 ordo();
 
-print << "PrintTag";
+print <<"PrintTag";
 PrintTag
 
 #common end for programs
 if ($error) { print "<p class=\"cen rd\">$error</p>\n"; }
 if ($debug) { print "<P class=\"cen rd\">$debug</p>\n"; }
 
-print << "PrintTag";
+print <<"PrintTag";
 </div></body></html>
 PrintTag
 
@@ -233,7 +233,7 @@ sub headline {
     $daycolorclass = "rd";
   }
 
-  print << "PrintTag";
+  print <<"PrintTag";
 <p class="cen"><span class="$daycolorclass">$headline<br/></span>
 $comment<br/><br/>
 <span class="c">Missa</span>&ensp;

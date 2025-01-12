@@ -76,7 +76,7 @@ $setupsave =~ s/\"/\~24/g;
 
 #*** generate HTML head widgets
 htmlHead($title, 2);
-print << "PrintTag";
+print <<"PrintTag";
 <BODY VLINK=$visitedlink LINK=$link BACKGROUND=\"$htmlurl/horasbg.jpg\"> 
 <FORM ACTION="source.pl" METHOD=post TARGET=_self>
 <TABLE ALIGN=CENTER BORDER=1 CELLPADDING=8>
@@ -115,7 +115,7 @@ print "</FORM></BODY></HTML>\n";
 
 #*** javascript functions
 sub horasjs {
-  print << "PrintTag";
+  print <<"PrintTag";
 
 <SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
 

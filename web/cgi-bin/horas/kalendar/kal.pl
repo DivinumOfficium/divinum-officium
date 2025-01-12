@@ -155,7 +155,7 @@ sub html_header {
   my $vers = $version1;
   $vers .= ' / ' . $version2 if $compare;
 
-  my $output = << "PrintTag";
+  my $output = <<"PrintTag";
 <A ID="top"></A>
 <H1>
 <FONT COLOR="MAROON" SIZE="+1"><B><I>Kalendarium</I></B></FONT>&ensp;
