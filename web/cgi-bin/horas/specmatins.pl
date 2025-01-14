@@ -770,11 +770,11 @@ sub lectio : ScriptFunc {
       $w = $com{$lecnum};
 
       if ($w && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) {
-        setbuild2("Lectio$num in $loco loco ex $commune{Name}");
+        setbuild2("Lectio$num in $loco loco ex $commune{Officium}");
       }
     } elsif (exists($com{$lecnum})) {
       $w = $com{$lecnum};
-      if ($w && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) { setbuild2("Lectio$num ex $commune{Name}"); }
+      if ($w && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) { setbuild2("Lectio$num ex $commune{Officium}"); }
     }
 
     if ($w && contract_scripture($num)) {

@@ -1632,7 +1632,7 @@ sub precedence {
       $communetype = 'ex';
       %commune = %winner;
     }
-    $dayname[1] = $winner{Name};
+    $dayname[1] = $winner{Officium};
     $dayname[2] = '';
   }
 

@@ -616,7 +616,7 @@ sub getcommemoratio {
   } else {
     %c = {};
   }
-  if (!$rank) { $rank[0] = $w{Name}; }    #commemoratio from commune
+  if (!$rank) { $rank[0] = $w{Officium}; }    #commemoratio from commune
   my $o = $w{Oratio};
   if ($o =~ /N\./) { $o = replaceNdot($o, $lang); }
 

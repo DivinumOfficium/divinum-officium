@@ -479,7 +479,7 @@ sub getproprium {
 
     if ($w) {
       $w = replaceNdot($w, $lang);
-      my $n = $com{Name} || $cn;
+      my $n = $com{Officium} || $cn;
       $n =~ s/\n//g;
       if ($buildflag) { setbuild($n, $name, 'subst'); }
     }
