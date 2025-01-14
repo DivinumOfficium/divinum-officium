@@ -1,5 +1,5 @@
 [Pater secreto]
-/:”Pai Nosso” é dito silenciosamente até “E não nos deixeis cair em tentação:”.:/
+/:«Pai Nosso» é dito silenciosamente até «E não nos deixeis cair em tentação:».:/
 
 
 [Pater post]
@@ -22,7 +22,7 @@
 [Secus absolute]
 /:Caso contrário, a hora é iniciada diretamente da seguinte forma::/
 (sed rubrica ^Trident)
-/:Depois do hino:/ Te Deum laudamus /:ou recitado o último responsório, a hora começa diretamente da seguinte forma::/
+/:Depois do hino «Te Deum laudamus» ou recitado o último responsório, a hora começa diretamente da seguinte forma::/
 
 [Matutinum]
 !Pule o resto, a menos que ore %Laudes% separadamente.
@@ -38,7 +38,7 @@
 /:Depois disso é dito silenciosamente:/
 
 [PAC ad Completorium]
-/:Se logo após as Completas são rezadas as Matinas, então:/ Pai Nosso, Ave Maria /:e:/ Credo, /:são rezadas duas vezes, uma vez para o final do Ofício do dia anterior, e para o início do Ofício de nas próximas.:/
+/:Se logo após as Completas são rezadas as Matinas, então «Pai Nosso, Ave Maria» e «Credo,» são rezadas duas vezes, uma vez para o final do Ofício do dia anterior, e para o início do Ofício de nas próximas.:/
 
 [Martyrologium] (rubrica monastica)
 /:Então o Martirológio é lido em côro.:/

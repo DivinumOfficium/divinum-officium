@@ -37,7 +37,7 @@
 [Secus absolute]
 /:Secus absolute incipiuntur, ut sequitur::/
 (sed rubrica ^Trident)
-/:Dicto Hymno:/ Te Deum laudamus /:vel ultimo Responsorio, absolute dicitur Versus::/
+/:Dicto Hymno «Te Deum laudamus» vel ultimo Responsorio, absolute dicitur Versus::/
 
 [Matutinum]
 !Zbytek se vynechává, pokud se %Laudy% neříkají oddělení.
@@ -58,7 +58,7 @@
 /:Pak se říká potichu:/
 
 [PAC ad Completorium]
-/:Pokud po Kompletáři navazuje Matutinum, tehdy se dvakrát řekne:/ Pater noster, Ave Maria /:a:/ Credo, /:a sice jako konec předchozího Officia, a jako začátek Officia následujícího dne.:/
+/:Pokud po Kompletáři navazuje Matutinum, tehdy se dvakrát řekne «Pater noster, Ave Maria» a «Credo,» a sice jako konec předchozího Officia, a jako začátek Officia následujícího dne.:/
 
 [DefunctV]
 &Dominus_vobiscum
@@ -121,9 +121,9 @@
 /:Po jeho skončení se po celý rok, s výjimkou Čtvrtku a Pátku Svatého týdne, slavně zazpívá:/
 
 [sine Oremus]
-/:a bez:/ Orémus /:::/
+/:a bez «Orémus» ::/
 (sed rubrica altovadensis)
-/:a bez:/ Orémus /:pokračuje Hebdomadář.:/
+/:a bez «Orémus» pokračuje Hebdomadář.:/
 
 [Conclusio cisterciensis]
 /:A kdykoliv se po skončení Hodinky odchází z Chóru (pokud tedy nenavazuje Mše svatá, nebo po denním Officiu pak Officium Defunctorum, nebo Pohřební obřady, nebo Procesí, nebo Litaniæ, nebo Prosebné dny, atd.) říká se::/

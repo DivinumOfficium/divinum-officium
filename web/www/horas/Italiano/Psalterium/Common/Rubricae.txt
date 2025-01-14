@@ -28,7 +28,7 @@
 [Secus absolute]
 /:Altrimenti l'ora viene avviata direttamente come segue::/
 (sed rubrica ^Trident)
-/:Dopo l'inno:/ Te Deum laudamus /:oppure recitato l'ultimo responsorio, l'ora inizia direttamente così::/
+/:Dopo l'inno «Te Deum laudamus» oppure recitato l'ultimo responsorio, l'ora inizia direttamente così::/
 
 [Matutinum]
 !Si salta il resto, a meno che si preghino le %Lodi% separatamente.
@@ -44,7 +44,7 @@
 /: Successivamente si dice in silenzio:/
 
 [PAC ad Completorium]
-/:Se subito dopo Compieta si dice il Mattutino, allora:/ Padre Nostro, Ave Maria /:e:/ Credo, /:si dicono due volte, una volta ciascuno per la fine dell'Ufficio del giorno precedente e per l'inizio dell'Ufficio di il prossimo.:/
+/:Se subito dopo Compieta si dice il Mattutino, allora «Padre Nostro, Ave Maria» e «Credo,» si dicono due volte, una volta ciascuno per la fine dell'Ufficio del giorno precedente e per l'inizio dell'Ufficio di il prossimo.:/
 
 [DefunctV]
 &Dominus_vobiscum
@@ -57,7 +57,7 @@
 ! Dopo le Lodi del giorno, si dicono %Mattutino e Lodi dei Defunti%.
 
 [examen]
-/:Esame di coscienza o Padre nostro sotto voce.:/
+/:Esame di coscienza o «Padre nostro» sotto voce.:/
 
 [Preces flexis genibus]
 /:ci inginocchiamo:/

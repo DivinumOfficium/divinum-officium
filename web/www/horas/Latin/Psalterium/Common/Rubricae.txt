@@ -51,7 +51,7 @@
 [Secus absolute]
 /:Secus absolute incipiuntur, ut sequitur::/
 (sed rubrica ^Trident)
-/:Dicto Hymno:/ Te Deum laudamus /:vel ultimo Responsorio, absolute dicitur Versus::/
+/:Dicto Hymno «Te Deum laudamus» vel ultimo Responsorio, absolute dicitur Versus::/
 
 [Matutinum]
 !Reliqua omittuntur, nisi %Laudes% separandæ sint.
@@ -72,7 +72,7 @@
 /:Deinde dicitur secreto:/
 
 [PAC ad Completorium]
-/:Si post Completorium immediate sequatur Matutinum, tunc bis dicitur:/ Pater noster, Ave Maria /:et:/ Credo, /:pro fine videlicet Officii diei præcedentis, et pro initio Officii diei sequentis.:/
+/:Si post Completorium immediate sequatur Matutinum, tunc bis dicitur «Pater noster, Ave Maria» et «Credo,» pro fine videlicet Officii diei præcedentis, et pro initio Officii diei sequentis.:/
 
 [DefunctV]
 &Dominus_vobiscum
@@ -109,7 +109,7 @@
 /:In Capitulo legitur unum caput, vel pars capitis ex Regula S. Benedicti.:/
 
 [examen]
-/:Examen conscientiæ vel Pater Noster totum secreto.:/
+/:Examen conscientiæ vel «Pater Noster» totum secreto.:/
 
 [Preces flexis genibus]
 /:flexis genibus:/
@@ -140,9 +140,9 @@
 /:Quo finito per totum annum, excepta Feria v. et vj. majoris hebdomadæ, cantatur solemniter:/
 
 [sine Oremus]
-/:Et sine:/ Orémus /:::/
+/:Et sine «Orémus» ::/
 (sed rubrica altovadensis)
-/:Et sine:/ Orémus /:prosequitur Hebdomadarius.:/
+/:Et sine «Orémus» prosequitur Hebdomadarius.:/
 
 [Conclusio cisterciensis]
 /:Et quandocumque terminata Hora discendum est a Choro (nisi quando immediate subsequitur Missa aut cum Officio diei Officium Defunctorum, vel Sepultura, vel Processio, aut Litaniæ, ut in Rogationibus, etc.) dicitur::/

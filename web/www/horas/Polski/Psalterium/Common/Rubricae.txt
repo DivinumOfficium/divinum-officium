@@ -1,18 +1,18 @@
 [Pater secreto]
-/:„Ojcze nasz” cicho do „I nie wódź nas”.:/
+/:«Ojcze nasz» cicho do «I nie wódź nas.»:/
 
 
 [Pater totum secreto]
-/:„Ojcze nasz” cicho.:/
+/:«Ojcze nasz» cicho.:/
 
 [Credo secreto]
-/: „Wierzę” cicho do „Ciała zmartwychwstanie”. :/
+/:«Wierzę» cicho do «Ciała zmartwychwstanie».:/
 
 [Pater post]
-/:Odtąd po cichu odmawia się tylko „Ojcze nasz”, chyba że natychmiast nastąpi następna Godzina.:/
+/:Odtąd po cichu odmawia się tylko «Ojcze nasz», chyba że natychmiast nastąpi następna Godzina.:/
 
 [Pater post V]
-/:A jeśli w ten sposób zakończy się Oficjum, odmawia się po cichu tylko „Ojcze nasz”.:/
+/:A jeśli w ten sposób zakończy się Oficjum, odmawia się po cichu tylko «Ojcze nasz».:/
 
 [Secreto_]
 /:bezgłośnie:/
@@ -28,7 +28,7 @@
 [Secus absolute]
 /:W przeciwnym razie godzina rozpoczyna się bezpośrednio w następujący sposób::/
 (sed rubrica ^Trident)
-/:Po hymnie:/ Te Deum laudamus /:lub odmówieniu ostatniego responsorium, godzina rozpoczyna się bezpośrednio w następujący sposób::/
+/:Po hymnie «Te Deum laudamus» lub odmówieniu ostatniego responsorium, godzina rozpoczyna się bezpośrednio w następujący sposób::/
 
 [Matutinum]
 !Opuścić resztę, jeśli %Laudesy% nie są odmawiane osobno.
@@ -44,7 +44,7 @@
 /:Następnie mówi się cicho:/
 
 [PAC ad Completorium]
-/:Jeśli zaraz po kompletie odmawia się Jutrznię, wówczas dwa razy odmawia się:/ Ojcze nasz, Zdrowaś Maryjo /:i:/ Credo, /:odmawia się dwukrotnie, raz na zakończenie Oficjum dnia poprzedniego i na początek Oficjum Następny.:/
+/:Jeśli zaraz po kompletie odmawia się Jutrznię, wówczas dwa razy odmawia się «Ojcze nasz, Zdrowaś Maryjo» i «Credo,» odmawia się dwukrotnie, raz na zakończenie Oficjum dnia poprzedniego i na początek Oficjum Następny.:/
 
 [DefunctV]
 &Dominus_vobiscum
