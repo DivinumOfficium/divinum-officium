@@ -59,6 +59,8 @@ Content-type: text/html; charset=utf-8
       background: $dialogbackground;
     }
     .contrastbg { background: white; }
+    .nigra { color: black; }
+
 PrintTag
 
   if (our $whitebground) {
@@ -76,6 +78,7 @@ PrintTag
         background: #3F3F3F;
         color: white;
       }
+      .nigra {  color: white;  }
       }
 PrintTag
   } else {

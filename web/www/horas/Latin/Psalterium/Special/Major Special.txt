@@ -1559,7 +1559,7 @@ V. Mirificávit Dóminus Sanctos suos.
 R. Et exaudívit eos clamántes ad se.
 _
 !Oratio
-/:In hac oratione, ad litteram N. exprimitur nomen Titularis propriæ ecclesiæ, dummodo Titulus non sit Persona divina vel Mysterium Domini, aut de ipso ratione Festi factum non fuerit Officium vel Commemoratio, aut illius nomen non sit in eadem Suffragii Oratione expressum; ac nomina sanctorum Angelorum et sancti Joannis Baptistæ, si Titulares fuerint, præponuntur nomini sancti Joseph. In hisce autem omnibus casibus omittuntur verba «atque beáto N.».:/
+/:In hac oratione, ad litteram N. exprimitur nomen Titularis propriæ ecclesiæ, dummodo Titulus non sit Persona divina vel Mysterium Domini, aut de ipso ratione Festi factum non fuerit Officium vel Commemoratio, aut illius nomen non sit in eadem Suffragii Oratione expressum; ac nomina sanctorum Angelorum et sancti Joannis Baptistæ, si Titulares fuerint, præponuntur nomini sancti Joseph. In hisce autem omnibus casibus omittuntur verba «atque beáto N.»:/
 $Oremus  
 v. A cunctis nos, quǽsumus, Dómine, mentis et córporis defénde perículis: et, intercedénte beáta et gloriósa semper Vírgine Dei Genitríce María, cum beáto Joseph, beátis Apóstolis tuis Petro et Paulo, atque beáto~
 r. N. et ómnibus Sanctis, salútem nobis tríbue benígnus et pacem; ut, destrúctis adversitátibus et erróribus univérsis, Ecclésia tua secúra tibi sérviat libertáte.
@@ -1602,20 +1602,25 @@ $Per eumdem
 Ant. Crucem sanctam súbiit, qui inférnum confrégit; accínctus est poténtia, surréxit die tértia, allelúja.
 @:Suffragium Paschale:2-9
 
-[Suffragium BMV]
+[Suffragium BMV Ant]
 !De Beata Maria
-Ant. Sancta María succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam commemoratiónem.
+@Commune/C11:Ant 1_:s/^/Ant. / s/\* // s/festivitátem/commemoratiónem/
+(sed rubrica cisterciensis)
+@Commune/C11:Ant 1_:s/^/Ant. / s/\* // s/festivitátem/commemoratiónem/ s/femíneo/fœmíneo/
+
+[Suffragium BMV]
+@:Suffragium BMV Ant
 _
 (deinde dicuntur semper)
-V. Ora pro nobis sancta Dei Génitrix.
-R. Ut digni efficiámur promissiónibus Christi.
+@Commune/C11:Versum 0
 _
 $Oremus
-v. Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére, et gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
+@Commune/C11:Oratio:1 s/^/v. /
 (sed tempore post partum loco horum versuum dicuntur)
 @Psalterium/Mariaant:Nativiti:s/.*V\./V\./s
 
 [Suffragium BMV AntL]
+@:Suffragium BMV Ant:1
 Ant. Sancta Dei Génitrix, Virgo semper María, intercéde pro nobis ad Dóminum Deum nostrum. (Allelúja, allelúja.)
 
 [Suffragium DeJosephV]
@@ -1636,6 +1641,7 @@ V. Os justi meditábitur sapiéntiam. (Allelúja.)
 R. Et lingua ejus loquétur judícium. (Allelúja.)
 (sed commune C4 aut commune C5 loco hujus versus dicitur)
 @:Suffragium DeJosephV:4-5
+(deinde dicitur)
 _
 @:Suffragium DeJosephV:7-8
 
@@ -1713,7 +1719,6 @@ _
 @:Suffragium Paschale
 
 [Suffragium Laudes] (rubrica cisterciensis)
-@:Suffragium BMV:1
 @:Suffragium BMV AntL
 _
 @Psalterium/Mariaant:Postpentecost: s/.*V\./V./s s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/

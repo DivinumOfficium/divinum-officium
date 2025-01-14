@@ -561,7 +561,7 @@ V. Wunderbar hat Gott ausgestattet seine Heiligen.
 R. Und erhört sie, wenn sie zu ihm rufen.
 _
 !Oratio
-/:Bei N. wird der Patron der eigenen Kirche genannt, wenn er noch nicht in der Oration vorkommt, außer wenn die Kirche einer göttlicher Person oder einem Mysterium des Herrn geweiht ist, oder wenn das Offizium oder auch nur eine Kommemoration bereits vom Patron war. Die Namen der hl. Engel und des hl. Johannes des Täufers werden, wenn sie Patrone sind, vor dem hl. Joseph genannt. In all diesen Fällen fallen die Worte „und auch mit dem heiligen N.“ aus.:/
+/:Bei N. wird der Patron der eigenen Kirche genannt, wenn er noch nicht in der Oration vorkommt, außer wenn die Kirche einer göttlicher Person oder einem Mysterium des Herrn geweiht ist, oder wenn das Offizium oder auch nur eine Kommemoration bereits vom Patron war. Die Namen der hl. Engel und des hl. Johannes des Täufers werden, wenn sie Patrone sind, vor dem hl. Joseph genannt. In all diesen Fällen fallen die Worte «und auch mit dem heiligen N.» aus.:/
 $Oremus   
 v. Schirme uns, wir bitten dich, o Herr, gegen alle Gefahren von innen und von außen, und auf die Fürsprache der heiligen, glorreichen, stets unversehrten Jungfrau und Mutter Gottes Maria mit dem heiligen Joseph, mit deinen heiligen Aposteln Petrus und Paulus und auch mit dem heiligen ~
 r. N. und mit allen Heiligen, gewähre uns in deiner Güte Heil und Frieden, damit nach Überwindung aller Widerstände und Irrtümer deine Kirche dir in gesicherter Freiheit diene.
@@ -574,7 +574,7 @@ V. Wunderbar hat Gott ausgestattet seine Heiligen.
 R. Und erhört sie, wenn sie zu ihm rufen.
 _
 !Oratio
-/:Bei N. wird der Patron der eigenen Kirche genannt, wenn er noch nicht in der Oration vorkommt, außer wenn die Kirche einer göttlicher Person oder einem Mysterium des Herrn geweiht ist, oder wenn das Offizium oder auch nur eine Kommemoration bereits vom Patron war. Die Namen der hl. Engel und des hl. Johannes des Täufers werden, wenn sie Patrone sind, vor dem hl. Joseph genannt. In all diesen Fällen fallen die Worte „und auch mit dem heiligen N.“ aus. Wenn der Patron vor den anderen zu nennen ist, heißt es „des heiligen N., mit dem heiligen Joseph“ usw.:/
+/:Bei N. wird der Patron der eigenen Kirche genannt, wenn er noch nicht in der Oration vorkommt, außer wenn die Kirche einer göttlicher Person oder einem Mysterium des Herrn geweiht ist, oder wenn das Offizium oder auch nur eine Kommemoration bereits vom Patron war. Die Namen der hl. Engel und des hl. Johannes des Täufers werden, wenn sie Patrone sind, vor dem hl. Joseph genannt. In all diesen Fällen fallen die Worte «und auch mit dem heiligen N.» aus. Wenn der Patron vor den anderen zu nennen ist, heißt es «des heiligen N., mit dem heiligen Joseph» usw.:/
 $Oremus   
 v. Schirme uns, wir bitten dich, o Herr, gegen alle Gefahren von innen und von außen, und auf die Fürsprache des heiligen Joseph, mit deinen heiligen Aposteln Petrus und Paulus und auch mit dem heiligen ~
 r. N. und mit allen Heiligen, gewähre uns in deiner Güte Heil und Frieden, damit nach Überwindung aller Widerstände und Irrtümer deine Kirche dir in gesicherter Freiheit diene.
@@ -590,5 +590,10 @@ $Oremus
 v. O Gott, der du gewollt hast, dass für uns dein Sohn den Tod am Kreuzpfahl erleide, um die Gewalt des bösen Feindes von uns zu entfernen, verleihe uns, deinen Dienern, die Gnade, dass wir die huldvolle Wirkung seiner Auferstehung erfahren.
 $Per eumdem
 
+[Suffragium BMV Ant]
+!Gedächtnis Unserer Lieben Frau
+@Commune/C11:Ant 1_:s/^/Ant. / s/\* // s/deine heilige Festlichkeit/dein heiliges Gedächtnis/
+
 [Suffragium BMV AntL]
+@:Suffragium BMV Ant:1
 Ant. Heilige, allzeit jüngfräuliche Gottesgebärerin Maria, tritt ein für uns bei Gott unserem Herrn. (Alleluja, alleluja.)

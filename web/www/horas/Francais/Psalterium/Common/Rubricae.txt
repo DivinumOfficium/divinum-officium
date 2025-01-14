@@ -25,7 +25,7 @@
 [Secus absolute]
 /:Sinon, l'heure démarre directement comme suit ::/
 (sed rubrica ^Trident)
-/:Après l'hymne :/ Te Deum laudamus /:ou le dernier répons a été récité, l'heure commence directement comme suit ::/
+/:Après l'hymne  «Te Deum laudamus» ou le dernier répons a été récité, l'heure commence directement comme suit ::/
 
 [Matutinum]
 !Sauter le reste, à moins de prier %Laudes% séparément.
@@ -41,7 +41,7 @@
 /: Ensuite, il est dit silencieusement :/
 
 [PAC ad Completorium]
-/:Si juste après les Complies on dit Matines, alors:/ Notre Père, Je vous salue Marie /:et:/ Credo, /:sont dits deux fois, une fois pour la fin de l'Office de la veille et pour le début de l'Office de le suivant.:/
+/:Si juste après les Complies on dit Matines, alors «Notre Père, Je vous salue Marie» et «Credo,» sont dits deux fois, une fois pour la fin de l'Office de la veille et pour le début de l'Office de le suivant.:/
 
 [DefunctV]
 &Dominus_vobiscum

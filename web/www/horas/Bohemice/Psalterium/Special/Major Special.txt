@@ -739,21 +739,12 @@ $Per eumdem
 Ant. Kříž svatý podstoupil ten, který zničil podsvětí; mocí se opásal, jenž třetí den z mrtvých vstal, alleluja.
 @:Suffragium Paschale:2-9
 
-[Suffragium BMV]
+[Suffragium BMV Ant]
 !K Panně Marii
 Ant. Panno Maria, přispěj na pomoc ubohým, pomoz malodušným, utěš plačící, oroduj za lid, přimlouvej se za kněžstvo, pomáhej oddanému ženskému pokolení; aby všichni pociťovali tvou pomoc, kdož oslavují tvou svatou připomínku.
-_
-(deinde dicuntur semper)
-V. Oroduj za nás, svatá Boží Rodičko.
-R. Abychom hodni učiněni byli zaslíbení Kristových.
-_
-$Oremus
-v. Uděl nám, svým služebníkům, prosíme, Pane Bože, stálé zdraví duše i těla, a na slavnou přímluvu blahoslavené a neporušené Panny Marie vysvoboď nás z nynější strasti a dej nám dojíti věčně blaženosti. 
-(sed tempore post partum loco horum versuum dicuntur)
-@Psalterium/Mariaant:Nativiti:s/.*V\./V\./s
-
 
 [Suffragium BMV AntL]
+@:Suffragium BMV Ant:1
 Ant. Svatá Boží Rodičko, vždy Panno Maria, přimlouvej se za nás u Pána našeho Boha. (Allelúja, allelúja.)
 
 [Suffragium DeJosephV]
@@ -774,6 +765,7 @@ V. Ústa spravedlivého rozvažují moudré věci. (Alleluja.)
 R. A jeho jazyk mluví věci správné. (Alleluja.)
 (sed commune C4 aut commune C5 loco hujus versus dicitur)
 @:Suffragium DeJosephV:4-5
+(deinde dicitur)
 _
 @:Suffragium DeJosephV:7-8
 

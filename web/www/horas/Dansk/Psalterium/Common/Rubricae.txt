@@ -1,9 +1,9 @@
 [Pater secreto]
-/:«Fadervor« bedes stille indtil »Og led os ikke i fristelse:«.:/
+/:«Fadervor» bedes stille indtil «Og led os ikke i fristelse:».:/
 
 
 [Pater totum secreto]
-/:«Fadervor« bedes stille.:/
+/:«Fadervor» bedes stille.:/
 
 [Pater post]
 /:Derefter siges kun «Fadervor» lydløst, medmindre der straks følger en anden Time.:/
@@ -25,7 +25,7 @@
 [Secus absolute]
 /:Ellers startes timen direkte på følgende måde::/
 (sed rubrica ^Trident)
-/:Efter salmen:/ Te Deum laudamus /:eller sidste svarskrift er blevet reciteret, begynder timen direkte således::/
+/:Efter salmen «Te Deum laudamus» eller sidste svarskrift er blevet reciteret, begynder timen direkte således::/
 
 [Matutinum]
 !Spring resten over, medmindre du beder %Lauds% separat.
@@ -41,7 +41,7 @@
 /:Derefter siges stille:/
 
 [PAC ad Completorium]
-/:Hvis der lige efter Compline siges Matins, så:/ Fadervor, hilst Maria /:og:/ Credo, /:siges to gange, en gang hver for afslutningen af ​​kontoret den foregående dags embede og for begyndelsen af ​​embedet i den næste.:/
+/:Hvis der lige efter Compline siges Matins, så «Fadervor, hilst Maria» og «Credo,» siges to gange, en gang hver for afslutningen af ​​kontoret den foregående dags embede og for begyndelsen af ​​embedet i den næste.:/
 
 [DefunctV]
 &Dominus_vobiscum

@@ -160,6 +160,7 @@ sub resolve_refs {
     }
 
     # rubrics - small red
+    $line =~ s{«\s?(.*?)\s?»}{"<span class=\'nigra\'>$1</span>"}eg if $line =~ m{/:.*«.*».*:/};
     $line =~ s{/:(.*?):/}{setfont($smallfont, $1)}eg;
 
     # italic for mute vovels in hymns

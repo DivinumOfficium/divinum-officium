@@ -940,7 +940,7 @@ V. The Lord hath made his holy one wonderful:
 R. The Lord will hear me when I cry unto him. 
 _
 !Prayer
-/:At the letter N., the name of the Titular of the local church is said, if the title is not a divine person or a mystery of the Lord, and when the Office or a Commemoration was not already said of the Saint, and when the name is not already in the prayer. The names of the holy Angels and of St. John the Baptist, if they are titulars, are said before the name of St. Joseph. In all these cases, the words “blessed N.” are omitted.:/
+/:At the letter N., the name of the Titular of the local church is said, if the title is not a divine person or a mystery of the Lord, and when the Office or a Commemoration was not already said of the Saint, and when the name is not already in the prayer. The names of the holy Angels and of St. John the Baptist, if they are titulars, are said before the name of St. Joseph. In all these cases, the words «blessed N.» are omitted.:/
 $Oremus
 v. O Lord, we ask thee to save us from dangers to mind and to body: and, by the intercession of the blessed and glorious Virgin Mother of God, blessed Joseph, the blessed Apostles Peter and Paul, blessed~
 r. N. and all the Saints, to eliminate all enmity and errors, that thy Church may safely serve thee in freedom.
@@ -953,7 +953,7 @@ V. The Lord hath made his holy one wonderful:
 R. The Lord will hear me when I cry unto him. 
 _
 !Prayer
-/:At the letter N., the name of the Titular of the local church is said, if the title is not a divine person or a mystery of the Lord, and when the Office or a Commemoration was not already said of the Saint, and when the name is not already in the prayer. The names of the holy Angels and of St. John the Baptist, if they are titulars, are said before the name of St. Joseph. In all these cases, the words “blessed N.” are omitted.:/
+/:At the letter N., the name of the Titular of the local church is said, if the title is not a divine person or a mystery of the Lord, and when the Office or a Commemoration was not already said of the Saint, and when the name is not already in the prayer. The names of the holy Angels and of St. John the Baptist, if they are titulars, are said before the name of St. Joseph. In all these cases, the words «blessed N.» are omitted.:/
 $Oremus
 v. O Lord, we ask thee to save us from dangers to mind and to body: and, by the intercession of the blessed Joseph, the blessed Apostles Peter and Paul, blessed!~
 r. N. and all the Saints, to eliminate all enmity and errors, that thy Church may safely serve thee in freedom.
@@ -979,18 +979,9 @@ $Oremus
 v. O God, who didst send thy Son to suffer death for us upon the Cross, that thou mightest deliver us from the power of the enemy grant unto us thy servants to be made partakers of his Resurrection. 
 $Per eumdem
 
-[Suffragium BMV]
+[Suffragium BMV Ant]
 !Commemoration of the Blessed Virgin Mary. 
 Ant. O Holy Mary, be thou an help to the helpless, a strength to the fearful, a comfort to the sorrowful; pray for the people, plead for the clergy, make intercession for all women vowed to God may all that keep thine holy remembrance, feel the might of thine assistance. 
-_
-(deinde dicuntur semper)
-V. Pray for us, holy Mother of God. 
-R. That we may be made worthy of the promises of Christ. 
-_
-$Oremus 
-Grant, we beseech thee, O  Lord God, unto all thy servants, that they may continually enjoy soundness both of mind and of body, and by the glorious intercession of the Blessed Mary, always a Virgin, may be delivered from present sadness, and enter into the joy of thine eternal gladness. 
-(sed tempore post partum loco horum versuum dicuntur)
-@Psalterium/Mariaant:Nativiti:s/.*V\./V\./s
 
 [Suffragium DeJosephV]
 !Commemoration of St. Joseph 
@@ -1010,6 +1001,7 @@ V. The mouth of the righteous speaketh wisdom.
 R. And his tongue talketh judgment. 
 (sed commune C4 aut commune C5 loco hujus versus dicitur)
 @:Suffragium DeJosephV:4-5
+(deinde dicitur)
 _
 @:Suffragium DeJosephV:7-8
 
