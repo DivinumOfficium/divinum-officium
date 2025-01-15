@@ -1,5 +1,8 @@
+[Officium]
+In Vigilia S. Jacobi Ap.
+
 [Rank]
-In Vigilia S. Jacobi Ap.;;Vigilia;;1.5;;ex C1v
+;;Vigilia;;1.5;;ex C1v
 
 [Rule]
 ex C1v;
@@ -8,6 +11,11 @@ Preces feriales
 Versum Feria
 no Te Deum
 Laudes 2
+no Gloria
+Suffragium=Maria3;;
 
-[Oratio]
-@Commune/C1v:Oratio1:s/N\./Jacóbi/
+[Name]
+Jacóbi
+
+[Evangelium]
+@Commune/C1v

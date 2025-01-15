@@ -1,5 +1,8 @@
+[Officium]
+In Vigilia S. Matthæi Ap.
+
 [Rank]
-In Vigilia S. Matthæi Ap.;;Simplex;;1.5;;ex C1v
+;;Simplex;;1.5;;ex C1v
 
 [Rule]
 ex C1v;
@@ -8,9 +11,14 @@ Preces feriales
 Versum Feria
 no Te Deum
 Laudes 2
+no Gloria
+Suffr=Maria3;;Ecclesiæ;Papa
+
+[Name]
+Matthǽi
 
 [Oratio]
-@Commune/C1v:Oratio1:s/N\. Apóstoli tui/Matthǽi Apóstoli tui et Evangelístæ/
+@Commune/C1v:Oratio pro Evangelistae
 
 [Lectio1_]
 Léctio sancti Evangélii secúndum Lucam.
@@ -31,3 +39,14 @@ Itaque Dominus libenter ingreditur, et in ejus qui crediderit, recumbit affectu.
 
 [Lectio3]
 Et ideo qui animo jejunabant, murmurabant dicentes: Quare cum publicanis et peccatoribus  manducat et bibit? Serpentina vox ista est. Denique hanc primam vocem serpens emisit, dicens Evæ: Quid utique dixit Deus: Nolite manducare ex omni ligno? Ergo patris sui venena diffundunt, qui dicunt: Quid utique cum publicanis et peccatoribus manducat et bibit? Unde Dominus cum peccatoribus manducando, etiam cum gentilibus non prohibet nos inire convivium, dicens: Non egent qui sani sunt, medico, sed qui male habent.
+
+[Evangelium]
+Sequéntia ++ sancti Evangélii secúndum Lucam
+!Luc 5:27-32
+In illo témpore: Vidit Jesus publicánum nómine Levi, sedéntem ad telónium, et ait illi: Séquere me. Et relíctis ómnibus, surgens secútus est eum. Et fecit ei convívium magnum Levi in domo sua: et erat turba multa publicanórum et aliórum, qui cum illis erant discumbéntes. Et murmurábant pharisæi et scribæ eórum, dicéntes ad discípulos ejus: Quare cum publicánis et peccatóribus manducátis et bíbitis? Et respóndens Jesus, dixit ad illos: Non egent, qui sani sunt, médice, sed qui male habent. Non veni vocáre justos, sed peccatóres ad pœniténtiam.
+
+[Secreta]
+@Commune/C1v:Secreta pro Evangelistae
+
+[Postcommunio]
+@Commune/C1v:Postcommunio pro Evangelistae

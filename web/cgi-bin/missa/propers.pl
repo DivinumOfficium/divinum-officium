@@ -187,6 +187,11 @@ sub oratio {
   if (!$w && $commune) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
     $w = $com{$type};
+    if ($w =~ /N\./ && exists($w{Name})) {
+      my @name = split("\n", $w{Name});
+      @name = grep(/$type\=/, @name) unless $w{Name} !~ /\=/;
+      $w = replaceNdot($w, $lang, $name[0]);
+    }
     setbuild2("$commune Oratio") if $w;
   }
 
@@ -493,7 +498,11 @@ sub getcommemoratio {
   if (!$rank) { $rank[0] = $w{Officium}; }                    #commemoratio from commune
   my $o = $w{$type};
   if (!$o) { $o = $c{$type}; }
-  if ($o =~ /N\./) { replaceNdot($w, $lang); }
+  if ($o =~ /N\./ && exists($w{Name})) {
+      my @name = split("\n", $w{Name});
+      @name = grep(/$type\=/, @name) unless $w{Name} !~ /\=/;
+      $o = replaceNdot($o, $lang, $name[0]);
+  }
 
   if (!$o && $w{Rule} =~ /Oratio Dominica/i) {
     $wday =~ s/\-[0-9]/-0/;
