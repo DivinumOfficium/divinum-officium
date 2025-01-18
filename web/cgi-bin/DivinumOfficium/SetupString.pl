@@ -469,17 +469,7 @@ sub get_loadtime_inclusion($$$$$$$) {
   # self-reference.
   my $inclfile = $ftitle ? setupstring($lang, "$ftitle.txt", 'resolve@' => RESOLVE_WHOLEFILE) : $sections;
 
-  if ( $version !~ /Trident/i
-    && $section =~ /Gregem/i
-    && (my ($plural, $class, $name) = papal_commem_rule(${$sections}{'Rule'})))
-  {
-    my ($itemkey) = ($section =~ /(.*?)\s*Gregem/);
-    $text = papal_prayer($lang, $plural, $class, $name, $itemkey);
-  } else {
-
-    # Get text from reference, less any trailing blank lines.
-    ($text = ${$inclfile}{$section}) =~ s/\n+$/\n/s if (exists ${$inclfile}{$section});
-  }
+  ($text = ${$inclfile}{$section}) =~ s/\n+$/\n/s if (exists ${$inclfile}{$section});
 
   if ($text) {
     do_inclusion_substitutions($text, $substitutions);
