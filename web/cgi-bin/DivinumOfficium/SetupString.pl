@@ -521,9 +521,9 @@ sub setupstring($$%) {
     # Not yet in cache, so open it and add it.
     my ($base_sections, $new_sections) = ({}, {});
 
-    if ($lang eq 'English') {
+    if ($lang eq $main::langfb) {
 
-      # English layers on top of Latin.
+      # fallback langauage layers on top of Latin.
       my $baselang = $calledlang =~ /\.\.\/missa/ ? '../missa/Latin' : 'Latin';
       $base_sections = setupstring($baselang, $fname, 'resolve@' => RESOLVE_NONE);
     } elsif ($lang =~ /-/) {
@@ -534,8 +534,8 @@ sub setupstring($$%) {
       $base_sections = setupstring($temp, $fname, 'resolve@' => RESOLVE_NONE);
     } elsif ($lang && $lang ne 'Latin') {
 
-      # Other non-Latin languages layer on top of English.
-      my $baselang = $calledlang =~ /\.\.\/missa/ ? '../missa/English' : 'English';
+      # Other non-Latin languages layer on top of fallback language.
+      my $baselang = $calledlang =~ /\.\.\/missa/ ? "../missa/$main::langfb" : $main::langfb;
       $base_sections = setupstring($baselang, $fname, 'resolve@' => RESOLVE_NONE);
     }
 
@@ -708,7 +708,7 @@ sub officestring($$;$) {
 }
 
 #*** checkfile($lang, $filename)
-# substitutes English if no $lang item, Latin if no English
+# substitutes $main::langfb if no $lang item, Latin if no $main::langfb
 # if $lang contains dash, the part before the last dash is taken as a fallback recursively (till something exists)
 sub checkfile {
   my $lang = shift;
@@ -721,10 +721,8 @@ sub checkfile {
     my $temp = $lang;
     $temp =~ s/-[^-]+$//;
     return checkfile($temp, $file);
-  } elsif ($lang =~ /english/i) {
-    return "$datafolder/Latin/$file";
-  } elsif (-e "$datafolder/English/$file") {
-    return "$datafolder/English/$file";
+  } elsif (-e "$datafolder/$main::langfb/$file") {
+    return "$datafolder/$main::langfb/$file";
   } else {
     return "$datafolder/Latin/$file";
   }
