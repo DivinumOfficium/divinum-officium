@@ -122,7 +122,7 @@ sub resolve_refs {
     # the last <br /> and merge with next. For &hancigitur
     # we should merge with next both if &hancigitur
     # expands to a rubric or not.
-    if ($is_communicantes || $is_hancigitur ) {
+    if ($is_communicantes || $is_hancigitur) {
       $line =~ s/\<br\/\>$//g;
       $merge_with_next = 1;
 
