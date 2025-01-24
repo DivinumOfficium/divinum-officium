@@ -118,24 +118,24 @@ sub resolve_refs {
       }    #for special chars
     }
 
-    # If &hancigitur does not expand to the rubric explaining
-    # the text for Octaves of Easter and of Pentecostes
-    # we should merge with the next line.
-    # Otherwise, as before, to preserve the usual logic of rubrics.
-    $is_hancigitur = $is_hancigitur && !($line =~ /Sabbato/);
-
     # In order to solve the communicantes issue, just remove
-    # the last <br /> and merge with next.
+    # the last <br /> and merge with next. For &hancigitur
+    # we should merge with next both if &hancigitur
+    # expands to a rubric or not.
     if ($is_communicantes || $is_hancigitur) {
       $line =~ s/\<br\/\>$//g;
       $merge_with_next = 1;
-    }
 
-    # But, then, we need the index for the current line
-    # in order to merge the result together with
-    # the line previous to &hancigitur.
-    if ($is_hancigitur) {
-      $was_hancigitur = $it;
+      # If &hancigitur does not expand to the rubric explaining
+      # the text for Octaves of Easter and of Pentecostes
+      # we should merge with the next line and the one previous
+      # to &hancigitur. I don't know how, $line is already
+      # red at this point.
+      # TODO: How to make this general by checking whether
+      # we are looking to a real rubric?
+      if ($is_hancigitur && !($line =~ /red/)) {
+        $was_hancigitur = $it;
+      }
     }
 
     #cross
