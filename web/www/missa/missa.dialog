@@ -1,7 +1,8 @@
 [parameters]
 Pope nn,nn~>$pope~>Entry~>12;;
 Bishop nn,nn~>$bishop~>Entry~>12;;
-Language1~>$lang1~>Optionmenu~>languages;;
+Language for left column~>$lang1~>Optionmenu~>languages;;
+Fallback language~>$langfb~>Optionmenu~>languages~>16;;
 Contrast background~>$whitebground~>Checkbutton;;
 Text font~>$blackfont~>Entry~>12;;
 Small text~>$smallblack~>Entry~>12;;

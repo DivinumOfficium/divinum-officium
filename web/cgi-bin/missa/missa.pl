@@ -81,7 +81,7 @@ $q = new CGI;
 #get parameters
 getini('missa');    #files, colors
 
-our ($version, $lang1, $lang2, $column);
+our ($version, $lang1, $lang2, $langfb, $column);
 our %translate;     #translation of the skeleton label for 2nd language
 our $testmode;
 our $votive;
@@ -113,6 +113,7 @@ if ($command eq 'changeparameters') { getsetupvalue($command); }
 $version = check_version($version, $missa) || (error("Unknown version: $version") && 'Rubrics 1960 - 1960');
 $lang1 = check_language($lang1) || (error("Unknown language: $lang1") && 'Latin');
 $lang2 = check_language($lang2) || 'English';
+$langfb = check_language($langfb) || 'English';
 
 setcookies('missap', 'parameters');
 setcookies('missag', 'general');
@@ -152,7 +153,7 @@ if ($command =~ /setup(.*)/is) {
   $command =~ s/(pray|change|setup)//ig;
   $head = $title;
   headline($head);
-  load_languages_data($lang1, $lang2, $version, $missa);
+  load_languages_data($lang1, $lang2, $langfb, $version, $missa);
 
   #eval($setup{'parameters'});
   $background = ($whitebground) ? ' class="contrastbg"' : '';

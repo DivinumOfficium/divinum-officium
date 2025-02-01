@@ -21,6 +21,7 @@ my %_preces;
 my %_rubrics;
 my $alleluia_regexp;
 my $omit_regexp;
+my $fb_lang;
 
 ## private functions
 
@@ -109,7 +110,7 @@ sub translate {
   return $prefix . ($_translate{Latin}{$name} =~ s/\s*$//r || $name) if $lang =~ /Latin/;
 
   my $output =
-    $prefix . ($_translate{$lang}{$name} || $_translate{English}{$name} || $_translate{Latin}{$name} || $name);
+    $prefix . ($_translate{$lang}{$name} || $_translate{$main::langfb}{$name} || $_translate{Latin}{$name} || $name);
   $output =~ s/\s*$//r;
 }
 
@@ -122,7 +123,7 @@ sub prayer {
 
   my $prayer =
        $_prayers{"$lang$version"}{$name}
-    || $_prayers{"English$version"}{$name}
+    || $_prayers{"$fb_lang$version"}{$name}
     || $_prayers{"Latin$version"}{$name}
     || $name;
 
@@ -140,7 +141,7 @@ sub rubric {
   my $version = $main::version;
 
        $_rubrics{"$lang$version"}{$name}
-    || $_rubrics{"English$version"}{$name}
+    || $_rubrics{"$fb_lang$version"}{$name}
     || $_rubrics{"Latin$version"}{$name}
     || $name;
 }
@@ -153,17 +154,26 @@ sub prex {
   my $version = $main::version;
 
        $_preces{"$lang$version"}{$name}
-    || $_preces{"English$version"}{$name}
+    || $_preces{"$fb_lang$version"}{$name}
     || $_preces{"Latin$version"}{$name}
     || $name;
 }
 
-#*** load_languages_data($lang1, $lang2, $missaf)
+#*** load_languages_data($lang1, $lang2, $langfb, $version, $missaf)
 sub load_languages_data {
-  my ($lang1, $lang2, $version, $missaf) = @_;
-  my @langs = qw/Latin English/;
-  push(@langs, $lang1) unless $lang1 =~ /(?:Latin|English)$/;
-  push(@langs, $lang2) unless $lang2 =~ /(?:Latin|English)$/;
+  my ($lang1, $lang2, $langfb, $version, $missaf) = @_;
+
+  my @langs = ('Latin', $lang1, $lang2, $langfb);
+
+  # take unique values from @langs
+  @langs = do {
+    my %seen;
+    grep { !$seen{$_}++ } @langs;
+  };
+
+  # save fallabck lang for local module use
+  $fb_lang = $langfb;
+
   my $dir = $missaf ? 'Ordo' : 'Psalterium/Common';
 
   foreach my $lang (@langs) {

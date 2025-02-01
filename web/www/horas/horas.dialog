@@ -1,7 +1,8 @@
 [parameters]
 Priest~>$priest~>Checkbutton~>~>1;;
 Building script~>$building~>Checkbutton~>~>2;;
-Language 1~>$lang1~>Optionmenu~>languages~>3;;
+Language for left column~>$lang1~>Optionmenu~>languages~>3;;
+Fallback language~>$langfb~>Optionmenu~>languages~>20;;
 Pius XII Psalter~>$psalmvar~>Checkbutton~>~>4;;
 Use antique hymns~>$oldhymns~>Checkbutton~>~>15;;
 Hide verse numbers~>$nonumbers~>Checkbutton~>~>16;;
