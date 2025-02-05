@@ -119,7 +119,7 @@ sub oratio {
   if ($w =~ /N\./) {
     my $name;
 
-    if (exists($w{Name}) && !$votive) {
+    if (exists($w{Name})) {
       $name = $w{Name};
     } elsif (my ($plural, $class, $pname) = papal_rule($w{Rule})) {
       $name = $pname;
@@ -616,7 +616,7 @@ sub getcommemoratio {
   } else {
     %c = {};
   }
-  if (!$rank) { $rank[0] = $w{Name}; }    #commemoratio from commune
+  if (!$rank) { $rank[0] = $w{Officium}; }    #commemoratio from commune
   my $o = $w{Oratio};
   if ($o =~ /N\./) { $o = replaceNdot($o, $lang); }
 
@@ -716,6 +716,12 @@ sub vigilia_commemoratio {
 
   if ($w{Rank} =~ /Vigilia/i) {
     $w = $w{Oratio};
+
+    if (!$w && $w{Rank} =~ /(?:ex|vide) C1v/) {
+      my %com = columnsel($lang) ? %commune : %commune2;
+      $w = $com{Oratio};
+      $w = replaceNdot($w, $lang, $w{Name});
+    }
   } elsif (exists($w{'Oratio Vigilia'})) {
     $w = $w{'Oratio Vigilia'};
   }

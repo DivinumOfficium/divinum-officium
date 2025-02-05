@@ -1,5 +1,8 @@
+[Officium]
+In Vigilia S. Matthiæ Ap.
+
 [Rank]
-In Vigilia S. Matthiæ Ap.;;Vigilia;;1.5;;ex C1v
+;;Vigilia;;1.5;;ex C1v
 
 [Rule]
 ex C1v;
@@ -8,9 +11,13 @@ Preces feriales
 Versum Feria
 no Te Deum
 Laudes 2
+no Gloria
 
 [Comment]
 in Monastic 1930 Vigilia in Missa tantum
 
-[Oratio]
-@Commune/C1v:Oratio1:s/N\./Matthíæ/
+[Name]
+Matthíæ
+
+[Evangelium]
+@Commune/C1v

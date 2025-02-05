@@ -1,5 +1,8 @@
+[Officium]
+In Vigilia S. Andreæ Apostoli
+
 [Rank]
-In Vigilia S. Andreæ Apostoli;;Vigilia;;1.5;;ex C1v
+;;Vigilia;;1.5;;ex C1v
 
 [Rule]
 ex C1v;
@@ -8,9 +11,16 @@ Preces feriales
 Versum Feria
 no Te Deum
 Laudes 2
+no Gloria
+
+[Name]
+Andreas
 
 [Oratio]
-Quæsumus omnipotens Deus: ut beatus Andreas Apostolus, cujus prævenimus festivitatem, tuum pro nobis imploret auxilium; ut a nostris reatibus absoluti, a cunctis étiam periculis eruamur.
+@Commune/C1v:Oratio 2 loco
+
+[Oratio]
+Quǽsumus, omnípotens Deus: ut beátus Andréas Apóstolus, cujus prævenímus festivitátem, tuum pro nobis implóret auxílium; ut, a nostris reátibus absolúti, a cunctis étiam perículis eruámur.
 $Per Dominum
 
 [Lectio1]
@@ -27,3 +37,33 @@ Videamus sequentia. Ecce Agnus Dei. Hoc Joannes. Et audierunt eum duo discipuli 
 
 [Lectio3]
 Modo ergo quod illum sequuntur isti duo, non quasi non recessuri sequuntur, sed videre voluerunt ubi habitaret, et facere quod scriptum est: Limen ostiorum ejus exterat pes tuus: surge ad illum venire assidue, et erudire præceptis ejus. Ostendit eis ille ubi maneret: venerunt, et fuerunt cum illo. Quam beatum diem duxerunt, quam beatam noctem! Quis est, qui nobis dicat quæ audierint illi a Domino? Aedificemus et nosmetipsi in corde nostro, et faciamus domum, quo veniat ille, et doceat nos, et colloquatur nobis.
+
+[Introitus]
+!Matt 4:18; 4:19
+v. Dóminus secus mare Galilǽæ vidit duos fratres, Petrum et Andréam, et vocávit eos: Veníte post me: fáciam vos fíeri piscatóres hóminum.
+!Ps 18:2.
+Cœli enárrant glóriam Dei: et ópera mánuum ejus annúntiat firmaméntum.
+&Gloria
+v. Dóminus secus mare Galilǽæ vidit duos fratres, Petrum et Andréam, et vocávit eos: Veníte post me: fáciam vos fíeri piscatóres hóminum.
+
+[Graduale]
+!Ps 138:17-18
+Nimis honoráti sunt amíci tui, Deus: nimis confortátus est principátus eórum.
+V. Dinumerábo eos: et super arénam multiplicabúntur.
+
+[Evangelium]
+Sequéntia ++ ++ sancti Evangélii secúndum Joánnem
+!Joann 1:35-51
+In illo témpore: Stabat Joánnes, et ex discípulis ejus duo. Et respíciens Jesum ambulántem, dicit: Ecce Agnus Dei. Et audiérunt eum duo discípuli loquéntem, et secúti sunt Jesum. Convérsus autem Jesus, et videns eos sequéntes se, dicit eis: Quid quæritis? Qui dixérunt ei: Rabbi - quod dícitur interpretátum Magíster -, ubi hábitas? Dicit eis: Veníte et vidéte. Venérunt et vidérunt, ubi manéret, et apud eum mansérunt die illo: hora autem erat quasi décima. Erat autem Andréas, frater Simónis Petri, unus ex duóbus, qui audíerant a Joánne et secúti fúerant eum. Invénit hic primum fratrem suum Simónem, et dicit ei: Invénimus Messíam - quod est interpretátum Christus -. Et addúxit eum ad Jesum. Intúitus autem eum Jesus, dixit: Tu es Simon, fílius Jona: tu vocáberis Cephas, quod interpretátur Petrus. In crastínum vóluit exíre in Galilæam, et invénit Philíppum. Et dicit ei Jesus: Séquere me. Erat autem Philíppus a Bethsáida, civitáte Andréæ et Petri. Invénit Philíppus Nathánaël, et dicit ei: Quem scripsit Moyses in lege, et Prophétæ, invénimus Jesum, fílium Joseph, a Názareth. Et dixit ei Nathánaël: A Názareth potest áliquid boni esse? Dicit ei Philíppus: Veni et vide. Vidit Jesus Nathánaël veniéntem ad se, et dicit de eo: Ecce vere Israëlíta, in quo dolus non est. Dicit ei Nathánaël: Unde me nosti? Respóndit Jesus et dixit ei: Priúsquam te Philíppus vocáret, cum esses sub ficu, vidi te. Respóndit ei Nathánaël et ait: Rabbi, tu es Fílius Dei, tu es Rex Israël. Respóndit Jesus et dixit ei: Quia dixi tibi: Vidi te sub ficu, credis: majus his vidébis. Et dicit ei: Amen, amen, dico vobis, vidébitis cœlum apértum, et Angelos Dei ascendéntes et descendéntes supra Fílium hóminis.
+
+[Secreta]
+Sacrándum tibi, Dómine, munus offérimus: quo beáti Andréæ Apóstoli sollémnia recoléntes, purificatiónem quoque nostris méntibus implorámus.
+$Per Dominum
+
+[Communio]
+!Joann 1:41; 1:42
+Dicit Andréas Simóni fratri suo: Invénimus Messíam, qui dícitur Christus: et addúxit eum ad Jesum.
+
+[Postcommunio]
+Percéptis, Dómine, sacraméntis supplíciter exorámus: ut, intercedénte beáto Andréa Apostolo tuo, quæ pro illíus veneránda gérimus passióne, nobis profíciant ad medélam.
+$Per Dominum

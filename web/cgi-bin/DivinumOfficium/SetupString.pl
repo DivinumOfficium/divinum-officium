@@ -39,7 +39,7 @@ my %predicates = (
   tertia => sub { shift == 3 },
   longior => sub { shift == 1 },
   brevior => sub { shift == 2 },
-  'summorum pontificum' => sub { shift =~ /^Divino|1955|1960/ },
+  'summorum pontificum' => sub { shift =~ /^Divino|1955|196/ },
   feriali => sub { shift =~ /feria|vigilia/i; },
 );
 
@@ -461,8 +461,12 @@ sub get_loadtime_inclusion($$$$$$$) {
 
   # Adjust offices of apostles & martyrs in Paschaltide to use the special common.
   # Github #525: Safeguard against infinite loops: exclude Hymnus, Oratio, and Lectio which are partially copied from "extra Tempus Paschalis"
-  if ($dayname[0] =~ /Pasc/i && !$missa && $callerfname !~ /C[123]/ && $section !~ /Hymnus|Oratio|Lectio/i) {
-    $ftitle =~ s/(C[123])(?![p\d])/$1p/g;
+  if ( $dayname[0] =~ /Pasc/i
+    && !$missa
+    && $callerfname !~ /C[123]/
+    && $section !~ /Hymnus|Oratio|Lectio|Secreta|Postcommunio/i)
+  {
+    $ftitle =~ s/(C[123][abcd]*)(?![p\d])/$1p/g;
   }
 
   # Load the file to resolve the reference; if none specified, it's a
@@ -493,7 +497,7 @@ sub setupstring($$%) {
     $basedir =~ s/horas/missa/g;         # to infinite cycles github #525
   }
 
-  if ($fname =~ /Comment.txt$/) {
+  if ($fname =~ /Comment.txt$|C1[a-z]?/) {
     $basedir =~ s/missa/horas/g;         # missa uses comments from horas dir
   }
 
@@ -564,8 +568,13 @@ sub setupstring($$%) {
 
       if (@baserank) {
         my @newrank = split(';;', ${$new_sections}{Rank});
-        $baserank[0] = $newrank[0];
+        my $office = ${$new_sections}{Officium};
+        $baserank[0] = $office || $newrank[0];
         ${$new_sections}{Rank} = join(';;', @baserank);
+      } elsif (exists(${$new_sections}{Officium})) {
+        my @newrank = split(';;', ${$new_sections}{Rank});
+        $newrank[0] = ${$new_sections}{Officium};
+        ${$new_sections}{Rank} = join(';;', @newrank);
       }
 
     } else {
@@ -715,28 +724,33 @@ sub checkfile {
   my $file = shift;
   our $datafolder;
 
-  if (-e "$datafolder/$lang/$file") {
-    return "$datafolder/$lang/$file";
+  my $redirect = $datafolder =~ /missa/i && $file =~ /C1[a-z]?/ ? '/../horas' : '';
+
+  if (-e "$datafolder$redirect/$lang/$file") {
+    return "$datafolder$redirect/$lang/$file";
   } elsif ($lang =~ /-/) {
     my $temp = $lang;
     $temp =~ s/-[^-]+$//;
     return checkfile($temp, $file);
-  } elsif (-e "$datafolder/$main::langfb/$file") {
-    return "$datafolder/$main::langfb/$file";
+  } elsif (-e "$datafolder$redirect/$main::langfb/$file") {
+    return "$datafolder$redirect/$main::langfb/$file";
   } else {
-    return "$datafolder/Latin/$file";
+    return "$datafolder$redirect/Latin/$file";
   }
 }
 
 sub checklatinfile {
+
   my $file_ref = shift;
   my $file = $$file_ref;
   our $datafolder;
   my $txt = $file =~ s/\.txt$// ? '.txt' : '';
 
-  -e "$datafolder/Latin/$file.txt"
+  my $redirect = $datafolder =~ /missa/i && $file =~ /C1[a-z]?/ ? '/../horas' : '';
+
+  -e "$datafolder$redirect/Latin/$file.txt"
     || $file =~ s/(Sancti|Tempora|Commune)(?:M|OP)(.*)/$1$2/
-    && (-e "$datafolder/Latin/$file.txt")
+    && (-e "$datafolder$redirect/Latin/$file.txt")
     && ($$file_ref = "$file$txt");
 }
 

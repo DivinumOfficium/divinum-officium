@@ -183,7 +183,8 @@ sub occurrence {
 
     # prevent duplicate vigil of St. Mathias in leap years
     if ($day == 23 && $month == 2 && leapyear($year)) {
-      $sfile = subdirname('Sancti', $version) . (($sfile =~ /02-23o/) ? '' : ($sfile =~ /02-23/) ? '02-23r' : '');
+      $sfile = (($sfile =~ /02-23o/) ? '' : ($sfile =~ /02-23/) ? subdirname('Sancti', $version) . '02-23r' : $sfile);
+      @commemoentries = grep { $_ !~ /02-23o/ } @commemoentries;
     }
 
     $BMVSabbato = ($sfile =~ /v/ || $dayofweek !~ 6 || $transfervigil) ? 0 : 1;    # nicht sicher, ob das notwendig ist
@@ -414,6 +415,10 @@ sub occurrence {
     } else {
       $sanctoraloffice = 0;
     }
+  } elsif ($missa && $srank[1] eq 'Vigilia' && $trank[0] =~ /Advent/ && $trank[0] !~ /Quatt?uor/) {
+
+    # Vigil of St. Andrews and St. Thomas, Apostels, in Missa only
+    $sanctoraloffice = 1;
   } else {
     $sanctoraloffice = 0;
   }
@@ -1284,7 +1289,7 @@ sub extract_common {
       $commune .= 'p' if -e $paschal_fname;
     }
     $commune = subdirname('Commune', $version) . "$commune.txt" if ($commune);
-  } elsif ($common_field =~ /(ex|vide)\s*SanctiM?\/(.*)\s*$/i) {
+  } elsif ($common_field =~ /(ex|vide)\s*Sancti(?:M|OP)?\/(.*)\s*$/i) {
 
     # Another sanctoral office used as a pseudo-common.
     $communetype = $1;
@@ -1293,9 +1298,9 @@ sub extract_common {
   } elsif ($common_field =~ /(ex|vide)\s*(.*)\s*$/i) {
     $communetype = $1;
     my $name = $2;
-    $name =~ s/TemporaM?\///i;    # ensure consistency also for Monastic
+    $name =~ s/Tempora(?:M|OP)?\///i;    # ensure consistency also for Monastic
 
-    if ($name !~ /Sancti|Commune|Tempora/i) {
+    if ($name !~ /Sancti|Commune/i) {
       $commune = subdirname('Tempora', $version) . "$name.txt";
     } else {
       $commune = "$name.txt";
@@ -1632,7 +1637,7 @@ sub precedence {
       $communetype = 'ex';
       %commune = %winner;
     }
-    $dayname[1] = $winner{Name};
+    $dayname[1] = $winner{Officium};
     $dayname[2] = '';
   }
 

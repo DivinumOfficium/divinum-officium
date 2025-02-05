@@ -1,5 +1,8 @@
+[Officium]
+In Vigilia S. Thomæ Ap.
+
 [Rank]
-In Vigilia S. Thomæ Ap.;;Simplex;;1.5;;vide C1v
+;;Simplex;;1.5;;vide C1v
 
 [Rule]
 vide C1v;
@@ -8,6 +11,11 @@ Preces feriales
 Versum Feria
 no Te Deum
 Laudes 2
+no Gloria
+Suffr=Maria1;;
 
-[Oratio]
-@Commune/C1v::s/N\./Thomas/
+[Name]
+Thomæ
+
+[Evangelium]
+@Commune/C1v

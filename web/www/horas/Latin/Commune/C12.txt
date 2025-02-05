@@ -1,4 +1,4 @@
-[Name]
+[Officium]
 Officium parvum Beatæ Maríæ Virginis
 
 [Rank]
@@ -68,6 +68,11 @@ Et mortis hora súscipe.
 _
 @Psalterium/Doxologies:Nat: s/^/r. /
 
+[Hymnus minor]
+@:Hymnus minor_
+(sed rubrica 1570 aut rubrica monastica)
+@:HymnusM minor
+
 [HymnusM minor]
 
 #Hymnus
@@ -83,11 +88,6 @@ Et hora mortis súscipe.
 _
 @Psalterium/Doxologies:NatT: s/^/r. /
 
-[Hymnus minor]
-@:Hymnus minor_
-(sed rubrica 1570 aut rubrica monastica)
-@:HymnusM minor
-
 [Nocturn 1 Versum]
 @Commune/C6:Versum 2
 (sed rubrica cisterciensis)
@@ -102,11 +102,6 @@ _
 @Commune/C6:Versum 2
 (sed rubrica cisterciensis)
 @Commune/C10:Invit: s/^/V. / s/\*/\nR./
-
-[Benedictio]
-@Commune/C10
-(sed rubrica cisterciensis)
-@Commune/C10::3 s/Ipsa/Alma/
 
 [Lectio1]
 !Sir 24:11-13
@@ -136,8 +131,12 @@ R. Genuisti qui te fecit, et in æternum permanes Virgo.
 [Responsory3]
 @Commune/C11:Responsory7:s/festivitátem/commemoratiónem/ s/(R. Quia ex te ortus est sol justítiæ), (Christus, Deus noster.)/$1.\n&Gloria\nR. $2/
 
-[Minor final]
+[Benedictio]
+@Commune/C10
+(sed rubrica cisterciensis)
+@Commune/C10::3 s/Ipsa/Alma/
 
+[Minor final]
 #Conclusio
 &Dominus_vobiscum
 &Benedicamus_Domino
@@ -495,6 +494,16 @@ $Ave Maria
 $Credo
 (sed rubrica 1955 aut rubrica 196 aut rubrica cisterciensis omittitur)
 
+[Hymnus Completorium_C]
+v. Eníxa est puérpera,
+Quem Gábriel prædíxerat,
+Quem matris alvo géstiens,
+Clausus Joánnes sénserat.
+
+[Hymnus Completorium] (rubrica cisterciensis)
+@:Hymnus Completorium_C
+@:HymnusM minor:s/.*?\_/_/s
+
 [Ant Completorium]
 Ant. Sub tuum præsídium * confúgimus, sancta Dei Génetrix: nostras deprecatiónes ne despícias in necessitátibus, sed a perículis cunctis libera nos semper, Virgo gloriósa et benedícta.
 (sed tempore paschali)
@@ -514,16 +523,6 @@ R. Ut digni efficiámur promissiónibus Christi.
 @:Lectio3:1 s/17-//
 @:Lectio3:5 s/^20/v./
 $Deo gratias
-
-[Hymnus Completorium_C]
-v. Eníxa est puérpera,
-Quem Gábriel prædíxerat,
-Quem matris alvo géstiens,
-Clausus Joánnes sénserat.
-
-[Hymnus Completorium] (rubrica cisterciensis)
-@:Hymnus Completorium_C
-@:HymnusM minor:s/.*?\_/_/s
 
 [Oratio Completorium]
 v. Beátæ et gloriósæ semper Vírginis Maríæ, quǽsumus, Dómine, intercéssio gloriósa nos prótegat, et ad vitam perdúcat ætérnam.

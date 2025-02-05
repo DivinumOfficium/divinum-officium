@@ -1,13 +1,16 @@
-[Name]
+[Officium]
 Vigilia Apostolorum
 
-[Oratio]
+[Oratio 1 loco]
+Concédenos, te rogamos, omnipotente Dios, que la venerable solemnidad de tu bienaventurado Apóstol N., para la cual nos preparamos, aumente nuestra devoción y salud.
+$Per Dominum
+
+[Oratio 2 loco]
 Te suplicamos, omnipotente Dios, que el bienaventurado Apóstol N., cuya festividad prevenimos, implore tu auxilio en favor nuestro, de suerte que, libres de nuestras culpas, también nos veamos exentos de todos los peligros.
 $Per Dominum
 
-[Oratio1]
-Concédenos, te rogamos, omnipotente Dios, que la venerable solemnidad de tu bienaventurado Apóstol N., para la cual nos preparamos, aumente nuestra devoción y salud.
-$Per Dominum
+[Oratio pro Evangelistae]
+@:Oratio 1 loco:s/(Apóstol)/$1 y Evangelista/
 
 [Lectio1]
 Lectura del Santo Evangelio según San Juan.
@@ -23,3 +26,22 @@ Los preceptos del Señor son muchos, y no hay más que uno: muchos por la divers
 
 [Lectio3]
 Estos aman al prójimo, sí, pero, con todo, no consiguen aquellos premios sublimes de la caridad, porque el amor no lo ejercitan espiritualmente sino según la carne. Por lo cual, tras haber dicho el Señor: Este es mi precepto, que os améis lo unos a los otros; luego añadió: Como Yo os he amado. Como si dijera terminantemente: Amad con este mismo fin por el que Yo os he amado. En lo cual, debemos considerar atentamente, que el enemigo antiguo, procurando atraer nuestro pensamiento al amor de las cosas temporales, se sirve para nuestro mal de lo más débil que hay en las criaturas, tratando de arrebatarnos el bien que nosotros amamos.
+
+[Evangelium]
+Continuación ++ del Santo Evangelio según San Juan
+!Juan 15:12-16
+En aquel tiempo: Dijo Jesús a sus discípulos: El precepto mío es que os améis unos a otros, como yo os he amado. Nadie tiene amor más grande, que el que da su vida por sus amigos. Vosotros seréis mis amigos, si hacéis lo que yo os mando. Ya no os llamaré siervos, pues el siervo no sabe lo que hace su amo; os he llamado amigos porque os he hecho saber cuánto oí de mi Padre. No me habéis elegido vosotros a mí, sino que yo os he elegido y destinado para que vayáis y deis fruto, y vuestro fruto sea duradero, a fin de que cualquiera cosa que pidáis al Padre en mi nombre, os la conceda.
+
+[Secreta]
+Ofreciéndote estos sagrados misterios con reverencia de la alta dignidad del Apostolado, te rogamos, Señor, que por las oraciones del bienaventurado N., tu Apóstol, cuya fiesta prevenimos, pueda tu pueblo exponerte sus deseos y lograr lo que busca.
+$Per Dominum
+
+[Secreta pro Evangelistae]
+@:Secreta:s/(Apóstol)/$1 y Evangelista/
+
+[Postcommunio]
+Te suplicamos, Señor, que por la intervención del apóstol san N., los misterios celebrados hoy en honor suyo nos aprovechen para remedio de nuestros males.
+$Per Dominum
+
+[Postcommunio pro Evangelistae]
+@:Postcommunio:s/(Apóstol)/$1 y Evangelista/

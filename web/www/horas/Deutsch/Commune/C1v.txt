@@ -1,13 +1,16 @@
-[Name]
+[Officium]
 Vigilia Apostolorum
 
-[Oratio]
+[Oratio 1 loco]
+Gib, wir bitten dich, o allmächtiger Gott, daß die ehrwürdige Feierlichkeit Deines heiligen Apostels N., an dessen Vorabend wir stehen, unsere Hingabe und unser Heil stärke.
+$Per Dominum
+
+[Oratio 2 loco]
 Wir bitten dich, o allmächtiger Gott, daß der heilige Apostel N., von dessen Festtag wir die Vorfeier begehen, für uns deine Hilfe erbitte, damit wir, befreit von unseren Verschuldungen, auch von allen Gefahren befreit werden.
 $Per Dominum
 
-[Oratio1]
-Gib, wir bitten dich, o allmächtiger Gott, daß die ehrwürdige Feierlichkeit Deines heiligen Apostels N., an dessen Vorabend wir stehen, unsere Hingabe und unser Heil stärke.
-$Per Dominum
+[Oratio pro Evangelistae]
+@:Oratio 1 loco:s/(Apostels)/$1 und Evangelisten/
 
 [Lectio1]
 Lesung aus dem heiligen Evangelium nach Johannes.
@@ -23,3 +26,31 @@ Die Gebote des Herrn sind darum sowohl zahlreich, als auch eins; zahlreich infol
 
 [Lectio3]
 Diese nämlich lieben wohl den Nächsten und doch erreichen sie jenen erhabenen, der Liebe verheißenen Lohn nicht, weil sie ihre Liebestaten nicht aus übernatürlichen Gründen, sondern aus sinnlicher Neigung zuwenden. Daher hat der Herr, als er sagte: „Das ist mein Gebot, dass ihr einander liebet“, gleich hinzugefügt: „Wie ich euch liebe“, als ob er geradezu sagen wollte: Zu dem Zwecke und bis zu dem Grade sollt ihr lieben, wie ich euch liebe. Hierin müssen wir nun, geliebteste Brüder, genau darauf achten, dass der alte Feind, wenn er unseren Geist zur Liebe irdischer Dinge anzieht, gegen uns den schwächeren Nächsten aufreizt, damit dieser drangeht, das, was wir lieben, wegzunehmen.
+
+[Graduale]
+!Ps 91:13; 91:14
+v. Der Gerechte wird gedeihen wie ein Palmenbaum; er wird wachsen wie eine Zeder im Libanon. Wer im Haus des Herrn gepflanzt ist, der wird gedeihen in den Vorhöfen des Hauses unseres Gottes.
+!Ps 91:3
+v. Am Morgen deine Barmherzigkeit und in der Nacht deine Wahrheit zu verkünden.
+
+[Offertorium]
+!Ps 8:6-7
+v. Du hast ihn ein wenig geringer gemacht als die Engel, Su hast ihn mit Herrlichkeit und Ehre gekrönt und ihn über die Werke Deiner Hände gesetzt.
+
+[Secreta]
+Indem wir Dir diese heiligen Geheimnisse in Ehrfurcht vor der hohen Würde des Apostelamtes darbringen, bitten wir dich, o Herr, daß durch die Gebete des seligen N., deines Apostels, auf dessen Fest wir uns freuen, dein Volk immer seine Wünsche vor dich bringen und erlangen möge, was es sucht.
+$Per Dominum
+
+[Secreta pro Evangelistae]
+@:Secreta:s/(Apostels)/$1 und Evangelisten/
+
+[Communio]
+!Ps 20:6
+v. Seine Herrlichkeit ist groß in deinem Heil; Herrlichkeit und große Schönheit sollst du auf ihn legen.
+
+[Postcommunio]
+Wir bitten Dich, o Herr, sei besänftigt durch die Gebete deines heiligen Apostels N. und gewähre uns Verzeihung und unerschütterliche Hilfe.
+$Per Dominum
+
+[Postcommunio pro Evangelistae]
+@:Postcommunio:s/(Apostels)/$1 und Evangelisten/
