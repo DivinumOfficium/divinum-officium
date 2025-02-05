@@ -183,7 +183,7 @@ sub occurrence {
 
     # prevent duplicate vigil of St. Mathias in leap years
     if ($day == 23 && $month == 2 && leapyear($year)) {
-      $sfile =  (($sfile =~ /02-23o/) ? '' : ($sfile =~ /02-23/) ? subdirname('Sancti', $version) . '02-23r' : $sfile);
+      $sfile = (($sfile =~ /02-23o/) ? '' : ($sfile =~ /02-23/) ? subdirname('Sancti', $version) . '02-23r' : $sfile);
       @commemoentries = grep { $_ !~ /02-23o/ } @commemoentries;
     }
 
@@ -416,7 +416,7 @@ sub occurrence {
       $sanctoraloffice = 0;
     }
   } elsif ($missa && $srank[1] eq 'Vigilia' && $trank[0] =~ /Advent/ && $trank[0] !~ /Quatt?uor/) {
-    
+
     # Vigil of St. Andrews and St. Thomas, Apostels, in Missa only
     $sanctoraloffice = 1;
   } else {

@@ -461,7 +461,11 @@ sub get_loadtime_inclusion($$$$$$$) {
 
   # Adjust offices of apostles & martyrs in Paschaltide to use the special common.
   # Github #525: Safeguard against infinite loops: exclude Hymnus, Oratio, and Lectio which are partially copied from "extra Tempus Paschalis"
-  if ($dayname[0] =~ /Pasc/i && !$missa && $callerfname !~ /C[123]/ && $section !~ /Hymnus|Oratio|Lectio|Secreta|Postcommunio/i) {
+  if ( $dayname[0] =~ /Pasc/i
+    && !$missa
+    && $callerfname !~ /C[123]/
+    && $section !~ /Hymnus|Oratio|Lectio|Secreta|Postcommunio/i)
+  {
     $ftitle =~ s/(C[123][abcd]*)(?![p\d])/$1p/g;
   }
 
@@ -567,12 +571,11 @@ sub setupstring($$%) {
         my $office = ${$new_sections}{Officium};
         $baserank[0] = $office || $newrank[0];
         ${$new_sections}{Rank} = join(';;', @baserank);
-      } elsif(exists(${$new_sections}{Officium})) {
+      } elsif (exists(${$new_sections}{Officium})) {
         my @newrank = split(';;', ${$new_sections}{Rank});
         $newrank[0] = ${$new_sections}{Officium};
         ${$new_sections}{Rank} = join(';;', @newrank);
       }
-
 
     } else {
       $new_sections = $base_sections;
@@ -721,8 +724,8 @@ sub checkfile {
   my $file = shift;
   our $datafolder;
 
-  my $redirect =  $datafolder =~ /missa/i && $file =~ /C1[a-z]?/ ? '/../horas' : '';
-  
+  my $redirect = $datafolder =~ /missa/i && $file =~ /C1[a-z]?/ ? '/../horas' : '';
+
   if (-e "$datafolder$redirect/$lang/$file") {
     return "$datafolder$redirect/$lang/$file";
   } elsif ($lang =~ /-/) {
@@ -737,13 +740,14 @@ sub checkfile {
 }
 
 sub checklatinfile {
+
   my $file_ref = shift;
   my $file = $$file_ref;
   our $datafolder;
   my $txt = $file =~ s/\.txt$// ? '.txt' : '';
 
-  my $redirect =  $datafolder =~ /missa/i && $file =~ /C1[a-z]?/ ? '/../horas' : '';
-  
+  my $redirect = $datafolder =~ /missa/i && $file =~ /C1[a-z]?/ ? '/../horas' : '';
+
   -e "$datafolder$redirect/Latin/$file.txt"
     || $file =~ s/(Sancti|Tempora|Commune)(?:M|OP)(.*)/$1$2/
     && (-e "$datafolder$redirect/Latin/$file.txt")

@@ -716,7 +716,8 @@ sub vigilia_commemoratio {
 
   if ($w{Rank} =~ /Vigilia/i) {
     $w = $w{Oratio};
-    if(!$w && $w{Rank} =~ /(?:ex|vide) C1v/) {
+
+    if (!$w && $w{Rank} =~ /(?:ex|vide) C1v/) {
       my %com = columnsel($lang) ? %commune : %commune2;
       $w = $com{Oratio};
       $w = replaceNdot($w, $lang, $w{Name});
