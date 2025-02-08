@@ -36,9 +36,7 @@ sub psalmi_matutinum_monastic {
   my @psalmi = split("\n", $psalmi{"Daym$dayofweek"});
 
   if ($dayofweek == 5) {
-    if ( $rule =~ /Psalmi Dominica/i
-      || $commune{Rule} =~ /Psalmi Dominica/i)
-    {    # replace 92 99
+    if ($winner{'Ant Laudes'}) {    # replace 92 99
       $psalmi[4] =~ s/92!//;
       $psalmi[12] =~ s/.*99!//;
     } else {
