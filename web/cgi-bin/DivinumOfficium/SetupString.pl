@@ -26,6 +26,7 @@ my %subjects = (
   commune => sub { our $commune },
   votiva => sub { our $votive },
   officio => sub { $dayname[1]; },
+  ad => sub { our $missa ? 'missam' : our $hora; },
 );
 my %predicates = (
   tridentina => sub { shift =~ /Trident/ },
@@ -497,7 +498,7 @@ sub setupstring($$%) {
     $basedir =~ s/horas/missa/g;         # to infinite cycles github #525
   }
 
-  if ($fname =~ /Comment.txt$|C1[a-z]?/) {
+  if ($fname =~ /Comment.txt$|C1(?!\d)[a-z]?/) {
     $basedir =~ s/missa/horas/g;         # missa uses comments from horas dir
   }
 
