@@ -344,10 +344,10 @@ sub oratio {
     foreach $sf (@sf) {
 
       # No more than 3 commemorations TODO is this for all rubrics?
-      last if $ctotalnum > 3;
+      last if $ctotalnum > 2;
       @sf1 = split(',', $sf);
       my $i = ($dayofweek % @sf1);
-      $sf1[$i] = 'Maria3' if ($sf1[$i] =~ /Maria2/i && ($month > 2 || ($month == 2 && $day > 1)));
+      $sf1[$i] = 'Sanctorum' if ($sf1[$i] =~ /Maria2/i && ($month > 2 || ($month == 2 && $day > 1)));
       $retvalue .= "_\n" . delconclusio($sf{"$type $sf1[$i]"});
     }
   }
