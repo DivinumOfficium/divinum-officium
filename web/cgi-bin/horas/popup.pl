@@ -52,7 +52,7 @@ our $rule;                                    # $winner{Rank}
 our $communerule;                             # $commune{Rank}
 our $duplex;                                  #1= simplex 2=semiduplex, 3=duplex 0=rest
                                               #4 = duplex majus, 5=duplex II class 6=duplex I class 7=higher
-our ($lang1, $lang2);
+our ($lang1, $lang2, $langfb);
 
 #*** collect standard items
 require "$Bin/../DivinumOfficium/SetupString.pl";
@@ -102,7 +102,7 @@ $only = $lang1 && $lang1 =~ /^$lang2$/i;
 precedence();
 setsecondcol();
 
-load_languages_data($lang1, $lang2, $version, $missa);
+load_languages_data($lang1, $lang2, $langfb, $version, $missa);
 
 # We need to revert the masked parantheses at this point
 $popup =~ s/\&lpar/\(/;
