@@ -87,7 +87,7 @@ set_runtime_options('parameters');    # priest, lang1 ... etc
 
 $popup = strictparam('popup');
 
-if ($popup !~ /^[\$\&][\w ]+$/) {
+if ($popup !~ /^[\$\&][\&\w ]+$/) {
   print $q->header(
     -type => 'text/plain',
     -status => '400 Bad request',
