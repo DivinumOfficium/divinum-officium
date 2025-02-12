@@ -1,0 +1,13 @@
+[Lectio5]
+@Sancti/08-15t:Lectio4_:s/Dzisiaj rajski.*//
+
+[Lectio6]
+@Sancti/08-15t:Lectio4_:s/.*Dzisiaj rajski/Dzisiaj rajski/s s/$/~/
+@Sancti/08-15t:Lectio5_:s/ Jakże.*//
+
+[Lectio7]
+@Sancti/08-15t:Lectio5_:s/.*Jakże/Jakże/ s/$/~/
+@Sancti/08-15t:Lectio6_:s/ But this.*//
+
+[Lectio8]
+@Sancti/08-15t:Lectio6_:s/.*But this/But this/
