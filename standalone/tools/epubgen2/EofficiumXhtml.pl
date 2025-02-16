@@ -91,6 +91,7 @@ require "$Bin/specmatins.pl";
 
 if (-e "$Bin/monastic.pl") { require "$Bin/monastic.pl"; }
 require "$Bin/webdia.pl";
+require "$Bin/altovadum.pl";
 require "./Ewebdia.pl";
 require "$Bin/horasjs.pl";
 
@@ -121,7 +122,7 @@ getini('horas');    #files, colors
 $setupsave = strictparam('setup');
 $setupsave =~ s/\~24/\"/g;
 
-our ($lang1, $lang2, $expand, $column, $accented);
+our ($lang1, $lang2, $langfb, $expand, $column, $accented);
 our %translate;     #translation of the skeleton label for 2nd language
 
 #internal script, cookies
@@ -222,6 +223,7 @@ if ($flag) {
 }
 if (!$version) { $version = 'Rubrics 1960 - 1960'; }
 if (!$lang2) { $lang2 = 'English'; }
+if (!$langfb) { $langfb = 'English'; }
 $only = ($lang1 =~ $lang2) ? 1 : 0;
 
 precedence($date1);    #fills our hashes et variables
@@ -276,7 +278,7 @@ if ($command =~ /setup/i) {
   setuptable($command);
 
 } elsif ($command =~ /pray/) {
-  load_languages_data($lang1, $lang2, $version, $missa);
+  load_languages_data($lang1, $lang2, $langfb, $version, $missa);
   $pmode = 'hora';
   $command =~ s/(pray|change|setup)//ig;
   $title = $command;
