@@ -18,9 +18,10 @@ $nonumbers='0';;
 $nofancychars='0';;
 $noinnumbers='1';;
 $noflexa='0';;
+$langfb='English';;
 
 [parameterscheck]
-bbtbbtcccccccnnbbbbb
+bbtbbtcccccccnnbbbbbt
 
 [general]
 $expand='psalteria';;
