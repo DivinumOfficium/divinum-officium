@@ -41,6 +41,8 @@ sub monastic_major_responsory {
 
   # Monastic Responsories at Major Hours are usually identical to Roman at Tertia and Sexta
   if (!$resp) {
+    $key =~ s/Vespera/Breve Tertia/ if $version =~ /cist/i;
+    $key =~ s/Laudes/Breve Sexta/ if $version =~ /cist/i;
     $key =~ s/Vespera/Breve Sexta/;
     $key =~ s/Laudes/Breve Tertia/;
     ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1);
