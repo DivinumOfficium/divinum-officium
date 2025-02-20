@@ -9,6 +9,16 @@
 [HymnusM Vespera]
 @Commune/C2
 
+[Versum 1] (rubrica cisterciensis)
+V. Justi in perpétuum vivent, allelúia.
+R. Et apud Dóminum est merces eórum, allelúia.
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
 [Invit]
 @Commune/C2p
 
@@ -32,6 +42,15 @@
 ;;64
 ;;95
 @Commune/C1p::7 s/;;74/;;256;257;258/
+
+[Nocturn 1 Versum] (rubrica cisterciensis)
+@CommuneM/C3::s/\.$/, allelúia.$/g
+
+[Nocturn 2 Versum] (rubrica cisterciensis)
+@CommuneM/C3::s/\.$/, allelúia.$/g
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+@CommuneM/C3::s/\.$/, allelúia.$/g
 
 [Lectio1]
 De libro Sapiéntiæ
@@ -118,11 +137,26 @@ R. Rectos decet collaudátio, allelúja, allelúja.
 [HymnusM Laudes]
 @Commune/C2
 
+[Responsory Breve Tertia] (rubrica cisterciensis)
+R.br. Sancti tui, Dómine, benedícent te. Allelúja, allelúja.
+R. Sancti tui, Dómine, benedícent te. Allelúja, allelúja.
+V. Glóriam regni tui dicent, et poténtiam tuam loquéntur.
+R. Allelúja, allelúja.
+
+[Responsory Breve Sexta] (rubrica cisterciensis)
+R.br. Exúltent justi in conspéctu Dei, * Allelúia, allelúia.
+R. Exúltent justi in conspéctu Dei, * Allelúia, allelúia.
+V. Et delecténtur in lætítia.
+R. Allelúia, allelúia.
+
 [Ant Vespera 3]
 @Commune/C1p:Ant Vespera:1 s/$/;;109/
 @Commune/C1p:Ant Vespera:2 s/$/;;111/
 @Commune/C1p:Ant Vespera:3 s/$/;;112/
 @Commune/C1p:Ant Vespera:5 s/$/;;115/
+
+[Ant Vespera 3] (rubrica cisterciensis)
+@Commune/C1p:Ant Vespera
 
 [Lectio5 in 2 loco]
 @Commune/C2p:Lectio4 in 2 loco

@@ -4,6 +4,22 @@
 Psalmi Dominica
 Antiphonas horas
 
+[Versum 1] (rubrica cisterciensis)
+V. Justus germinábit sicut lílium.
+R. Et florébit in ætérnum ante Dóminum.
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant 2] (rubrica cisterciensis)
+@Commune/C2:Ant 3:s/me\./me, dicit Dóminus./
+
+[Ant 3] (rubrica cisterciensis)
+Hic est vere Martyr, * qui pro Christi nómine sánguinem suum fudit, qui minas júdicum non tímuit, nec terrénæ dignitátis glóriam quæsívit, sed ad coeléstia regna felíciter pervénit.
+
 [AntMatutinumM]
 Hic accípiet * benedictiónem a Dómino, et misericórdiam a Deo salutári suo; qui hæc est generátio quæréntium Dóminum;;23
 Lætábitur justus * in Dómino et sperábit in eo, et laudabúntur omnes recti corde;;63
@@ -120,11 +136,14 @@ R. Et laudabúntur omnes recti corde.
 [LectioE]
 @Commune/C2c
 
-[Ant Vespera 3]
+[Ant Vespera 3] 
 @Commune/C2:Ant Vespera:1 s/$/;;109/
 @Commune/C2:Ant Vespera:2 s/$/;;111/
 @Commune/C2:Ant Vespera:3 s/$/;;112/
 @Commune/C2:Ant Vespera:5 s/$/;;115/
+
+[Ant Vespera 3] (rubrica cisterciensis)
+@Commune/C2:Ant Vespera
 
 [Lectio5 in 2 loco]
 De Expositióne sancti Ambrósii Epíscopi in Psalmum centésimum décimum octávum

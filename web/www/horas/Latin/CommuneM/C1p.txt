@@ -4,6 +4,12 @@
 Psalmi Dominica
 Antiphonas horas
 
+[Ant 1] (rubrica cisterciensis)
+@Commune/C1p:Ant 2
+
+[Ant 2] (rubrica cisterciensis)
+@Commune/C1p:Ant 1:s/llelúja/llelúia/gi s/llelú[ij]a\./llelúia, allelúia./ s/Dómine,/Dómine, allelúia,/
+
 [Ant Matutinum]
 @Commune/C1p::1-3
 ;;46
@@ -54,3 +60,4 @@ _
 
 [Ant Vespera 3]
 @Commune/C1p::s/125/138/
+(sed rubrica cisterciensis omittitur)
