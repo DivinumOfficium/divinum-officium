@@ -182,7 +182,7 @@ sub occurrence {
     }
 
     # prevent duplicate vigil of St. Mathias in leap years
-    if ($day == 23 && $month == 2 && leapyear($year)) {
+    if (($day == 23 || $day == 22) && $month == 2 && leapyear($year)) {
       $sfile = (($sfile =~ /02-23o/) ? '' : ($sfile =~ /02-23/) ? subdirname('Sancti', $version) . '02-23r' : $sfile);
       @commemoentries = grep { $_ !~ /02-23o/ } @commemoentries;
     }
