@@ -4,6 +4,28 @@
 Psalmi Dominica
 Antiphonas horas
 
+[Ant Vespera] (rubrica cisterciensis)
+@Commune/C3::s/Omnes Sancti/Sancti Mártyres/ s/cæl/cœl/g
+
+[Versum 1] (rubrica cisterciensis)
+V. Justi in perpétuum vivent.
+R. Et apud Dóminum est merces eórum.
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant 1] (rubrica cisterciensis)
+Isti sunt sancti * qui pro testaménto Dei sua córpora tradidérunt, et in sánguine Agni lavérunt stolas suas.
+
+[Ant 2] (rubrica cisterciensis)
+Fulgébunt justi: * et tamquam scintíllæ in arundinéto discúrrent. Judicábunt natiónes, et regnábunt in ætérnum.
+
+[Ant Laudes]
+@Commune/C3:Ant Vespera:s/Omnes Sancti/Sancti Mártyres/ s/cæl/cœl/g
+
 [AntMatutinumM]
 Oculi Dómini * respexérunt in páuperes, † cum peccatóres arcus suos in eos inténderent.;;10
 Istorum est enim  * regnum cælórum, qui contempsérunt vitam mundi, et pervenérunt ad premia regni, et lavérunt stolas suas in sanguine Agni;;60
@@ -15,7 +37,13 @@ Beáti, * qui persecutiónem patiúntur propter justítiam, quóniam ipsórum es
 @Commune/C3:Nocturn 2 Versum
 
 [Nocturn 2 Versum] (rubrica cisterciensis)
-@:MM Capitulum:3-4
+@:MM Capitulum:s/.*[V℣]\./V./s
+
+[MM Capitulum]
+@Commune/C3:Capitulum Sexta
+_
+V. Justórum ánimæ in manu Dei sunt.
+R. Et non tanget illos torméntum mortis.
 
 [Nocturn 3 Versum] (rubrica cisterciensis)
 V. Gloriósus Deus in Sanctis suis.
@@ -112,6 +140,15 @@ R. Et non tanget illos torméntum mortis.
 
 [Ant Vespera 3]
 @Commune/C3::s/112/115/ s/111/112/ s/110/111/
+
+[Ant Vespera 3] (rubrica cisterciensis)
+Si coram homínibus * torménta passi sunt, spes electórum est immortális in ætérnum.
+Tamquam aurum in fornáce * probávit eléctos Dóminus, et quasi holocáusti hóstiam accépit illos.
+Istórum est enim * regnum cœlórum, qui contempsérunt vitam mundi, et pervenérunt ad præmia regni, et lavérunt stolas suas in sánguine Agni.
+Via Justórum * recta facta est, et iter Sanctórum præparátum est.
+
+[Ant 3] (rubrica cisterciensis)
+Tradidérunt * córpora sua ad supplícia: ídeo coronántur, et accípiunt palmas.
 
 [Lectio5 in 2 loco]
 Sermo sancti Joánnis Chrysóstomi
