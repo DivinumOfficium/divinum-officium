@@ -1,5 +1,33 @@
 @Commune/C7
 
+[Ant Vespera] (rubrica cisterciensis)
+Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suum.;;109
+Unguéntum effúsum * nomen tuum, ídeo adolescéntulæ dilexérunt te nimis.;;112
+Veni, * elécta mea, et ponam in te thronum meum, quia concupívit Rex spéciem tuam.;;121
+Nigra sum, * sed formósa, fíliæ Jerúsalem; ídeo diléxit me Rex, et introdúxit me in cubículum suum.;;126
+Pulchra es * et decóra, fília Jerúsalem, terríbilis ut castrórum ácies ordináta.
+
+[Ant Vespera] (tempore paschali et rubrica cisterciensis )
+Allelúia, * allelúia, allelúia.
+
+[Versum 1] (rubrica cisterciensis)
+@Commune/C6:Versum 2
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant Laudes] (rubrica cisterciensis)
+@:Ant Vespera:s/;;.*//g
+
+[Ant 2] (rubrica cisterciensis)
+@CommuneM/C6
+
+[Ant 3] (rubrica cisterciensis)
+@Commune/C7:Ant 1
+
 [Ant Matutinum 3N]
 Inventa bona margarita * dedit omnia sua, et comparavit eam
 
@@ -7,6 +35,12 @@ Inventa bona margarita * dedit omnia sua, et comparavit eam
 @Commune/C7:: s/95/84/ s/96/86/ s/97/95/
 @CommuneM/C6:AntMatutinumM:1-3
 ;;249;250;251
+
+[Nocturn 1 Versum] (rubrica cisterciensis)
+@Commune/C6:Versum 1
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+@CommuneM/C6
 
 [Lectio1]
 @CommuneM/C6:Lectio1 in 2 loco

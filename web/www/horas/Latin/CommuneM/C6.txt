@@ -1,5 +1,36 @@
 @Commune/C6
 
+[Ant Vespera] (rubrica cisterciensis)
+Hæc est Virgo sápiens, * et una de número prudéntum.;;109
+Hæc est Virgo sápiens, * quam Dóminus vigilántem invénit.;;112
+Invénta bona margaríta, * dedit ómnia sua, et comparávit eam.;;121
+Média nocte * clamor factus est: Ecce sponsus venit, exíte óbviam ei.;;126
+Tunc surrexérunt omnes * Vírgines illæ, et ornavérunt lámpades suas.
+
+[Ant Vespera] (tempore paschali et rubrica cisterciensis )
+Allelúia, * allelúia, allelúia.
+
+[Versum 1] (rubrica cisterciensis)
+@Commune/C6:Versum 2
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant Laudes] (rubrica cisterciensis)
+@:Ant Vespera:s/;;.*//g
+
+[Ant 1] (tempore paschali et rubrica cisterciensis )
+Veni, Sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in ætérnum. Allelúia, allelúia.
+
+[Ant 2] (rubrica cisterciensis)
+Símile est * regnum cœlórum sagénæ, missæ in mare, et ex omni génere píscium cóngreganti: quam, cum impléta esset, educéntes, et secus littus sedéntes, elegérunt bonos in vasa sua, malos autem foras misérunt.
+
+[Ant 3] (rubrica cisterciensis)
+Quinque prudéntes Vírgines * accepérunt óleum in vasis suis cum lampádibus: média autem nocte clamor factus est: Ecce sponsus venit, exite óbviam Christo Dómino.
+
 [AntMatutinumM]
 Unguéntum effúsum * nomen tuum; ideo adolescéntulæ dilexérunt te nimis;;96
 Pulchra es * et decóra fília Jerúsalem, terríbilis ut castrórum ácies ordináte;;97
@@ -9,6 +40,13 @@ Média nocte * clamor factus est: Ecce sponsus venit: exíte óbviam ei.;;249;25
 [Ant Matutinum]
 @Commune/C6:: s/95/84/ s/96/86/ s/97/95/
 @:AntMatutinumM
+
+[Nocturn 1 Versum] (rubrica cisterciensis)
+@Commune/C6:Versum 1
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+V. Elégit eam Dóminus.
+R. In hæreditátem sibi.
 
 [Lectio1]
 @Commune/C6::1-6 s/-31/-28/
