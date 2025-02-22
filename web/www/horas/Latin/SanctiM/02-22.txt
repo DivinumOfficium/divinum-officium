@@ -1,83 +1,58 @@
-@Sancti/02-22
+@SanctiM/01-18
 
 [Rank]
-In Cathedra S. Petri Apostoli Antiochiæ;;Duplex majus;;4;;ex CommuneM/C4
+In Cathedra S. Petri Apostoli;;Duplex majus;;4;;ex C4
 
-[Rank] (rubrica 196 aut rubrica 1930)
+[Rank] (rubrica 1963)
 In Cathedra S. Petri Apostoli;;Duplex;;3;;vide C4
 
+[Rank] (rubrica 1617)
+In Cathedra S. Petri Apostoli Antiochiæ;;Duplex majus;;4;;ex CommuneM/C4
+
 [Rule]
+Psalmi Dominica
 12 lectiones
 (sed rubrica 196 omittitur)
+Sub unica concl
 
-[Lectio4]
-!1 Pet 1:13-21
-13 Propter quod succíncti lumbos mentis vestræ, sóbrii, perfécte speráte in eam, quæ offértur vobis, grátiam, in revelatiónem Iesu Christi:
-14 quasi fílii obediéntiæ, non configuráti prióribus ignorántiæ vestræ desidériis:
-15 sed secúndum eum qui vocávit vos, Sanctum: et ipsi in omni conversatióne sancti sitis:
-16 quóniam scriptum est: Sancti éritis, quóniam ego sanctus sum.
-17 Et si patrem invocátis eum, qui sine acceptióne personárum iúdicat secúndum uniuscuiúsque opus, in timóre incolátus vestri témpore conversámini.
-18 Sciéntes quod non corruptibílibus auro vel argénto, redémpti estis de vana vestra conversatióne patérnæ traditiónis:
-19 sed pretióso sánguine quasi agni immaculáti Christi, et incontamináti:
-20 præcógniti quidem ante mundi constitutiónem, manifestáti autem novíssimis tempóribus propter vos,
-21 qui per ipsum fidéles estis in Deo, qui suscitávit eum a mórtuis, et dedit ei glóriam, ut fides vestra et spes esset in Deo:
+[Hymnus Matutinum]
+@Sancti/02-22:HymnusM Vespera
 
-[Responsory4]
-R. Dómine, † si tu es, jube me veníre ad te super aquas. Et exténdens manum apprehéndit eum, 
-* Et dixit Jesus : Modicæ fidei, quare dubitásti? 
-V. Cum que vidísset ventum válidum veniéntem, tímuit; et, cum cœpísset mergi, clamávit dicens: Dómine, salvum me fac.
-R. Et dixit Jesus : Modicæ fidei, quare dubitásti? 
+[Lectio3] (rubrica 1963)
 
-[Lectio5]
-@Sancti/01-18:Lectio4:s/Cujus.*//
+[Lectio5] (rubrica 1617)
+@Sancti/02-22:Lectio4:s/ergo/ígitur/
 
-[Responsory5]
-@Sancti/02-22:Responsory4
-
-[Lectio6]
-@Sancti/01-18:Lectio4:s/.*Cujus/Cujus/s s/$/~/
-@Sancti/01-18:Lectio5:s/Ad.*//
-
-[Responsory6]
-@Sancti/02-22:Responsory5
+[Lectio6] (rubrica 1617)
+@Sancti/02-22:Lectio5:s/Benedíctus.*//
 
 [Lectio94]
 @Sancti/01-18:Lectio4:s/Cujus autem.*//s
 @Sancti/01-18:Lectio5:s/.*(Ad hanc.*), et,.*/$1. /s
 @Sancti/01-18:Lectio6
 
-[Lectio7]
-@Sancti/01-18:Lectio5:s/.*Ad/Ad/
+[Lectio7] (rubrica 1617)
+@Sancti/02-22:Lectio5:s/.*Benedíctus/Benedíctus/ s/qui beatum Petrum Apóstolum in Ecclésia exaltári/qui exaltári in Ecclésia hoc/ s/conscénditur/ascénditur/ s/$/~/
+@Sancti/02-22:Lectio6:s/ Cum.*//
 
-[Responsory7]
-@Sancti/02-22:Responsory6
+[Lectio8] (rubrica 1617)
+@Sancti/02-22:Lectio6:s/.*Cum/Cum/
 
-[Lectio8]
-@Sancti/01-18:Lectio6
+[Lectio9] (rubrica 1617)
+@Sancti/02-22:Lectio7
 
-[Responsory8]
-@SanctiM/06-29
+[Lectio10] (rubrica 1617)
+@Sancti/02-22:Lectio8:s/ Et.*//
 
-[Lectio9]
-@Sancti/01-18:Lectio7:s/Sed Petrus.*//
-
-[Responsory9]
-@Sancti/02-22:Responsory7
-
-[Lectio10]
-@Sancti/01-18:Lectio7:s/.*Sed Petrus/Sed Petrus/s
-
-[Responsory10]
-@Sancti/02-22:Responsory8
-
-[Lectio11]
-@Sancti/01-18:Lectio8:s/O in.*//
+[Lectio11] (rubrica 1617)
+@Sancti/02-22:Lectio8:s/.* Et/Et/ s/$/~/
+@Sancti/02-22:Lectio9:s/ Transívit.*//
 
 [Responsory11]
 @SanctiM/06-29
 
-[Lectio12]
-@Sancti/01-18:Lectio8:s/.*O in/O in/
+[Lectio12] (rubrica 1617)
+@Sancti/02-22:Lectio9:s/.*Transívit/Transívit/
 
 [Responsory12]
 @SanctiM/06-29
