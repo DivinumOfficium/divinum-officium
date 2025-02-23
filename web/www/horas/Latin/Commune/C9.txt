@@ -5,6 +5,7 @@ Officium Defunctorum
 Psalmi Dominica
 Antiphonas horas
 Capitulum Versum 2 ad Laudes et Vesperas
+(sed rubrica cisterciensis omittitur)
 Omit Incipit Hymnus Capitulum Lectio Preces Capitulum Commemoratio Suffragium
 Special Conclusio
 Limit Benedictiones Oratio
@@ -26,6 +27,9 @@ R. Beáti mórtui qui in Dómino moriúntur.
 [Ant 1]
 Omne * quod dat mihi Pater, ad me véniet; et eum qui venit ad me, non eíciam foras.
 
+[Ant 1] (rubrica cisterciensis)
+Audívi * vocem de cœlo dicéntem: Beáti mórtui qui in Dómino moriúntur.
+
 [Oratio 1]
 @:Oratio_a_porta
 @:Oratio_Fid
@@ -35,6 +39,12 @@ $Pater noster Et
 _
 &psalm(145)
 (sed rubrica 1955 aut rubrica 1960 aut rubrica monastica aut die Omnium Defunctorum omittitur)
+$A porta inferi
+
+[Oratio_a_porta] (rubrica cisterciensis)
+$Pater totum secreto
+_
+&psalm(145)
 $A porta inferi
 
 [Oratio_Fid]

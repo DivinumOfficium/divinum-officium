@@ -4,3 +4,9 @@
 @Commune/C9
 Matutinum romanum
 Omit MLitany
+
+[Ant Vespera] (rubrica cisterciensis)
+@Commune/C9::s/Hei/Heu/
+
+[Ant Laudes] (rubrica cisterciensis)
+@Commune/C9::s/;;62/;;62;66/ s/;;150/;;148;149;150/
