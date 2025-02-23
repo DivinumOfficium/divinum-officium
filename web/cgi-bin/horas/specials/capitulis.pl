@@ -39,6 +39,13 @@ sub monastic_major_responsory {
 
   my ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1);
 
+  # CIST: the Cistercian rite has Responsoria prolixa for every Festum Serm. on j. Vespers. 
+  if ($version =~ /cist/i && $vespera == 1) {
+    my $key_cist = "Responsory $hora 1";
+    ($resp, $c) = getproprium($key_cist, $lang, $seasonalflag, 1);
+    ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1) if !$resp; 
+  }
+
   # Monastic Responsories at Major Hours are usually identical to Roman at Tertia and Sexta
   if (!$resp) {
     $key =~ s/Vespera/Breve Tertia/ if $version =~ /cist/i;
