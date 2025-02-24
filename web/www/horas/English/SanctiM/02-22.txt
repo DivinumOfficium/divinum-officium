@@ -1,26 +1,24 @@
-[Lectio5]
-@Sancti/01-18:Lectio4:s/At that.*//s
-
-[Lectio6]
-@Sancti/01-18:Lectio4:s/.*At that/At that/s s/$/~/
-@Sancti/01-18:Lectio5:s/O most.*//s
+[Lectio6] (rubrica 1617)
+@Sancti/02-22:Lectio5:s/Blessed be.*//
 
 [Lectio94]
 @Sancti/01-18:Lectio4:s/At that.*//s
 @Sancti/01-18:Lectio5:s/.*(O most.*). The.*/$1. /s
 @Sancti/01-18:Lectio6
 
-[Lectio7]
-@Sancti/01-18:Lectio5:s/.*O most/O most/s
+[Lectio7] (rubrica 1617)
+@Sancti/02-22:Lectio5:s/.*Blessed be/Blessed be/ s/qui beatum Petrum Apóstolum in Ecclésia exaltári/qui exaltári in Ecclésia hoc/ s/conscénditur/ascénditur/ s/$/~/
+@Sancti/02-22:Lectio6:s/ While.*//
 
-[Lectio9]
-@Sancti/01-18:Lectio7:s/Peter had.*//s
+[Lectio8] (rubrica 1617)
+@Sancti/02-22:Lectio6:s/.*While/While/
 
-[Lectio10]
-@Sancti/01-18:Lectio7:s/.*Peter had/Peter had/s
+[Lectio10] (rubrica 1617)
+@Sancti/02-22:Lectio8:s/ And upon.*//
 
-[Lectio11]
-@Sancti/01-18:Lectio8:s/God bless.*//s
+[Lectio11] (rubrica 1617)
+@Sancti/02-22:Lectio8:s/.* And upon/And upon/ s/$/~/
+@Sancti/02-22:Lectio9:s/ This power.*//
 
-[Lectio12]
-@Sancti/01-18:Lectio8:s/.*?God bless/God bless/s
+[Lectio12] (rubrica 1617)
+@Sancti/02-22:Lectio9:s/.*This power/This power/
