@@ -11,6 +11,11 @@ R. Hódie sciétis * Quia véniet Dóminus.
 &Gloria
 R. Hódie sciétis * Quia véniet Dóminus.
 
+[Responsory Vespera 1] (rubrica cisterciensis)
+<FONT COLOR=RED>Responsorium</FONT> O Juda et Jerúsalem, nolíte timére: * Cras egrediémini, et Dóminus erit vobíscum.
+V. Constántes estóte, vidébitis auxílium Dómini super vos.
+R. Cras egrediémini, et Dóminus erit vobíscum.
+
 [Responsory Vespera]
 @:Responsory Breve Tertia
 
@@ -18,6 +23,13 @@ R. Hódie sciétis * Quia véniet Dóminus.
 Elevámini, * portæ æternáles, † et introíbit Rex glóriæ.;;23
 In princípio * et ante sǽcula Deus erat Verbum: † ipse natus est nobis Salvátor mundi.;;96
 Nato * Dómino Angelórum chorus canébat, dicens: Salus Deo nostro, allelúja.;;98
+
+[Nocturn 2 Versum] (rubrica cisterciensis)
+V. Verbum caro factum est.
+R. Et habitávit in nobis.
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+@Sancti/12-25::s/, allel[uú][ij]a//gi
 
 [Ant Matutinum 3N]
 Párvulus * fílius hódie natus est nobis: † et vocábitur Deus, Fortis, allelúja, allelúja.
@@ -48,6 +60,12 @@ R. Descéndit de cælis Deus verus a Patre génitus, † introívit in úterum V
 * Et exívit per portem clausam † Deus et homo, Lux et vita, cónditor mundi.
 V. Tamquam sponsus † Dóminus procédens de thálamo suo.
 R. Et exívit per portem clausam † Deus et homo, Lux et vita, cónditor mundi.
+
+[Responsory4] (rubrica cisterciensis)
+<FONT COLOR=RED>Responsorium</FONT> Propter nímiam charitátem suam, qua diléxit nos Deus Pater, Fílium suum misit 
+* In similitúdinem carnis peccáti, ut omnes salváret.
+V. Ecce jam venit plenitúdo témporis, in quo misit Deus Fílium suum in terras, natum de Vírgine, factum sub lege.
+R. In similitúdinem carnis peccáti, ut omnes salváret.
 
 [Lectio5]
 @Sancti/12-25:Lectio4:s/Exsúltet .*//s
@@ -114,12 +132,19 @@ R. Hoc erat in princípio apud Deum.
 
 [Responsory TertiaM]
 @Sancti/12-25:Versum Nona
+(sed rubrica cisterciensis)
+@Sancti/12-25:Nocturn 1 Versum
 
 [Responsory SextaM]
 @Sancti/12-25:Versum 2
+(sed rubrica cisterciensis)
+@:Nocturn 2 Versum
 
 [Responsory NonaM]
 @Sancti/12-25:Versum Sexta
+(sed rubrica cisterciensis)
+@:Nocturn 3 Versum
 
 [Ant Vespera 3]
 @Sancti/12-25::s/.*;;131//
+(sed rubrica cisterciensis omittitur)

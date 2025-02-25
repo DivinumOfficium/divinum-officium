@@ -993,7 +993,8 @@ sub concurrence {
         && $cwrank[0] !~ /Dominica|feria|in.*octava/i)
 
       # on Christmas Eve and New Year's Eve, nothing of a preceding Sunday
-      || ($cwinner =~ /12-25|01-01/)
+      || ($cwinner =~ /12-25|01-01/ && $version !~ /cist/i)
+      # Cist: we need Comm. of S. Silvester on 01-01
 
       # in 1st Vespers of Duplex II. cl. also commemoration of any Duplex
       || ( $crank >= 5
