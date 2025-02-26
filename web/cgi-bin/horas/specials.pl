@@ -93,7 +93,7 @@ sub specials {
     ) {
       $skipflag = 1;
 
-      if ($item =~ /incipit/i && $version !~ /1955|196/) {
+      if ($item =~ /incipit/i && $version !~ /Cist|1955|196/) {
         $comment = 2;
         setbuild1($ite, 'limit');
       } else {
@@ -102,7 +102,7 @@ sub specials {
       }
       setcomment($label, 'Preces', $comment, $lang) if ($rule !~ /Omit.*? $ite mute/i);
 
-      if ($item =~ /incipit/i && $version !~ /1955|196/ && $winner !~ /C12/) {
+      if ($item =~ /incipit/i && $version !~ /Cist|1955|196/ && $winner !~ /C12/) {
         if ($hora eq 'Laudes') {
           push(@s, '/:' . translate('Si Laudes', $lang) . ':/');
         } else {
