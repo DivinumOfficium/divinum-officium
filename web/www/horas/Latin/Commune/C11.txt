@@ -15,6 +15,13 @@ Doxology=Nat
 @Commune/C7::3 s/121/126/
 @:Ant VesperaBMV:2
 
+[Ant Vespera] (rubrica cisterciensis)
+Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suum.;;109
+Unguéntum effúsum * nomen tuum, ídeo adolescéntulæ dilexérunt te nimis.;;112
+Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum.;;121
+Benedícta tu * in muliéribus, et benedíctus fructus ventris tui.;;126
+Pulchra es, et decóra, * fília Jerúsalem, terríbilis ut castrórum ácies ordináta.;;147
+
 [Ant VesperaBMV]
 Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me.;;112
 Speciósa * facta es et suávis in delíciis tuis, sancta Dei Génetrix.;;147
@@ -250,6 +257,9 @@ R. Ut digni efficiámur promissiónibus Christi.
 @Commune/C7:Ant Vespera:3 s/;;.*//
 @:Ant VesperaBMV:2 s/;;.*//
 
+[Ant Laudes] (rubrica cisterciensis)
+@:Ant Vespera:s/;;.*//g
+
 [Capitulum Laudes]
 !Sir 24:14
 v. Ab inítio et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi.
@@ -310,8 +320,18 @@ v. In platéis sicut cinnamómum et bálsamum aromatízans odórem dedi: quasi m
 v. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.
 $Deo gratias.
 
+[Capitulum Sexta] (rubrica cisterciensis)
+!Cant. 6:9.
+v. Vidérunt eam fíliæ Sion, et beátíssimam prædicavérunt: * et regínæ laudavérunt eam.
+$Deo gratias
+
 [Capitulum Nona]
 @:Lectio Prima
+$Deo gratias
+
+[Capitulum Nona] (rubrica cisterciensis)
+!Cant. 6:10.
+v. Quæ est ista, quæ progréditur quasi auróra consúrgens, § pulchra ut luna, elécta ut sol, * terríbilis ut castrórum ácies ordináta?
 $Deo gratias
 
 [Versum Nona]

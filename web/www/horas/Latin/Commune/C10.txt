@@ -10,7 +10,7 @@ Special Benedictio
 Special Lectio 3
 Doxology=Nat
 Antiphonas horas
-(rubrica tridentina) Psalmi Dominica
+(rubrica tridentina nisi rubrica cisterciensis) Psalmi Dominica
 
 [Hymnus Vespera]
 @Commune/C11
@@ -31,6 +31,10 @@ Regína cæli, * lætáre, allelúja; quia quem meruísti portáre, allelúja; r
 
 [Oratio]
 @Commune/C11
+(sed tempore Adventus et rubrica cisterciensis)
+@Commune/C12:Oratio 2
+(sed tempore nativitatis aut epiphaniæ aut post partum et rubrica cisterciensis)
+@Commune/C12:Oratio Tertia
 
 [Invit]
 Ave María, grátia plena, * Dóminus tecum.
@@ -59,8 +63,10 @@ Per Vírginem matrem concédat nobis Dóminus salútem et pacem.
 [Versum 0]
 @Commune/C11
 
-[Ant Laudes] (rubrica tridentina)
+[Ant Laudes] (rubrica tridentina aut rubrica cisterciensis)
 @Commune/C11
+(sed tempore paschali)
+Allelúia, * allelúia, allelúia.
 
 [Capitulum Laudes]
 @Commune/C11
@@ -77,7 +83,6 @@ R. Et benedíctus fructus ventris tui.
 
 [Ant 2_]
 Beáta Dei Génetrix, María, * Virgo perpétua, templum Dómini, sacrárium Spíritus Sancti, sola sine exémplo placuísti Dómino nostro Jesu Christo: ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu.
-
 
 [Ant 2]
 @:Ant 2_

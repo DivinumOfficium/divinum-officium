@@ -11,7 +11,16 @@ R. Ave María, grátia plena, * Dóminus tecum.
 [Responsory Vespera]
 @:Responsory Vespera_
 (sed rubrica cisterciensis)
-@:Responsory Vespera_: s/^(V\..*)\,.*$/$1./m
+@Commune/C6:Responsory Breve Tertia
+
+[Versum 1] (rubrica cisterciensis)
+@Commune/C11
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
 
 [AntMatutinumM]
 Favus distíllans * lábia tua, Sponsa, mel et lac sub lingua tua: † et odor vestimentórum tuórum sicut odor thuris.;;47
@@ -110,6 +119,8 @@ _
 
 [Responsory Laudes]
 @:Responsory Vespera
+(sed rubrica cisterciensis)
+@:Responsory Vespera_: s/^(V\..*)\,.*$/$1./m
 
 [Hymnus Laudes]
 @Commune/C10:HymnusM Laudes

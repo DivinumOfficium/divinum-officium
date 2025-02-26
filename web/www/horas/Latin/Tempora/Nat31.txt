@@ -7,7 +7,7 @@ Die septima post Nativitatem;;Duplex II classis;;5;;ex Sancti/12-25
 [Rule]
 ex Sancti/12-25;
 9 lectiones
-no secunda vesperas
+No secunda vespera
 
 [Ant Vespera]
 @Sancti/12-25:Ant Vespera 3
@@ -17,6 +17,12 @@ no secunda vesperas
 
 [Ant 1]
 @Sancti/12-25:Ant 3
+
+[Ant 1] (rubrica cisterciensis)
+@Tempora/Nat26
+
+[Ant 2] (rubrica cisterciensis)
+@Tempora/Nat26
 
 [Lectio1]
 De Epístola ad Romános

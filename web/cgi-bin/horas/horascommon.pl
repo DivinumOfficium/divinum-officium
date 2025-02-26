@@ -993,7 +993,10 @@ sub concurrence {
         && $cwrank[0] !~ /Dominica|feria|in.*octava/i)
 
       # on Christmas Eve and New Year's Eve, nothing of a preceding Sunday
-      || ($cwinner =~ /12-25|01-01/)
+      || ($cwinner =~ /12-25|01-01/ && $version !~ /cist/i) 
+      
+      # Cist: we need Comm. of S. Silvester on 31-12
+      || ($cwinner =~ /12-25/ && $version =~ /cist/i)
 
       # in 1st Vespers of Duplex II. cl. also commemoration of any Duplex
       || ( $crank >= 5
@@ -1763,7 +1766,7 @@ sub rankname {
         $rankname =~ s/Semiduplex //;
       }
     }
-  } elsif ($commune =~ /C10/) {    # Can;t use winner due 9/13/2025 DA
+  } elsif ($commune =~ /C10/) {    # Can't use winner due 9/13/2025 DA
     $rankname = $ranktable[1];     # Simplex - BMV Sabbato
   } elsif ($version =~ /196/ && $winner =~ /Pasc[07]-[1-6]/) {
     $rankname = "$t{'Dies Octavæ'} I. $t{classis}";    # Paschal & Pentecost Octave post 1960
