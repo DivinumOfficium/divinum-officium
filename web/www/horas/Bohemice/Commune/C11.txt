@@ -3,11 +3,11 @@ Jeho levice * je pod mou hlavou, a jeho pravice mě objímá.;;112
 Krásnou * ses stala a sladkou ve svých potěšeních, svatá Boží Rodičko.;;147
 
 [Ant Vespera] (rubrica cisterciensis)
-Když Král * seděl u svého stolu, můj nard vydával sladkou vůni.;;109
-Jeho levice * je pod mou hlavou, a jeho pravice mě objímá.;;112
+Když Král * seděl u svého stolu, můj nard vydával svou vůni.;;109
+Vylitá mast * je tvé jméno, proto si tě mladé dívky velice zamilovaly.;;112
 Jsem černá, * ale krásná, dcery Jerusalémské, proto si mě Král zamiloval, a uvedl mě do své ložnice.;;121
-Již zima přešla, * déšť přišel a zase odešel; vstaň, má přítelkyně, a pojď.;;126
-Krásnou * ses stala a sladkou ve svých potěšeních, svatá Boží Rodičko.;;147
+Požehnaná jsi * mezi ženami, a požehnaný plod života tvého.;;126
+Krásná jsi a zdobná, * dcero Jerusalémská, hrozná jako seřazená šik vojska.;;147
 
 [Hymnus Vespera]
 !První sloku tohoto hymnu zpíváme vkleče
@@ -100,6 +100,9 @@ After thy delivery thou still remainest a virgin; * undefiled Mother of God, pra
 [Versum 0]
 V. Oroduj za nás, svatá Boží Rodičko.
 R. Abychom hodni byli učinění zaslíbení Kristových.
+
+[Ant Laudes] (rubrica cisterciensis)
+@:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
 !Sir 24:14
