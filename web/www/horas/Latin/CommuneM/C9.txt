@@ -4,11 +4,7 @@
 @Commune/C9
 Matutinum romanum
 Omit MLitany
-
-[Rule] (rubrica cisterciensis)
-@Commune/C9
-Matutinum romanum
-Omit Incipit Invitatorium MLitany
+(rubrica cisterciensis) Omit Invitatorium
 
 [Ant Vespera] (rubrica cisterciensis)
 @Commune/C9::s/Hei mihi Dómine/Heu mihi/
