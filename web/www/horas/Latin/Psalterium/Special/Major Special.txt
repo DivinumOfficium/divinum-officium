@@ -1718,10 +1718,16 @@ _
 (atque tempore paschali loco horum versuum dicitur)
 @:Suffragium Paschale
 
+[Versum et Oratio Laudes]
+@Commune/C11:Versum 0
+_
+$Oremus
+@Commune/C11:Oratio:1 s/^/v. /
+
 [Suffragium Laudes] (rubrica cisterciensis)
 @:Suffragium BMV AntL
 _
-@Psalterium/Mariaant:Postpentecost: s/.*V\./V./s s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/
+@:Versum et Oratio Laudes
 (sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis dicitur)
 @Psalterium/Mariaant:Quadragesimae: s/.*V\./V./s  s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/
 (sed Adventus dicitur) 
@@ -1802,6 +1808,12 @@ _
 $Per eumdem Christum
 (sed post partum omittitur)
 $Amen
+
+[Suffragium ConclusioBMV] (rubrica cisterciensis)
+$Per eumdem 
+(sed post partum) $Qui tecum 
+(sed tempore post pentecosten) $Per Dominum
+
 
 [Preces feriales Laudes]
 $Kyrie
