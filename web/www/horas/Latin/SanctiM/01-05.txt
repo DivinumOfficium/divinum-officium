@@ -7,15 +7,26 @@ Doxology=Nat
 Psalmi Dominica
 Antiphonas horas
 Omit preces
+(rubrica cisterciensis) no prima vespera
 
 [Rule] (feria 1)
 ex SanctiM/01-01
+(sed rubrica cisterciensis) ex TemporaM/Nat1-0
 Doxology=Nat
 12 lectiones
 Psalmi Dominica
 Antiphonas horas
 Omit preces
 Lectio1 TempNat
+
+[Ant 1] (feria 1 et rubrica cisterciensis)
+@Tempora/Nat1-0
+
+[Versum 1] (feria 1 et rubrica cisterciensis)
+@Tempora/Nat1-0
+
+[Versum 2] (rubrica cisterciensis)
+@Tempora/Nat1-0
 
 [Ant Matutinum 3N] (feria 1)
 @SanctiM/01-01
