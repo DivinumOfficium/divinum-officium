@@ -40,9 +40,18 @@ i Otci, Duchu milosti
 po všechny věky věčnosti.
 Amen.
 
-[Versum 1]
+[Versum 1_]
 V. Králové Taršíše i ostrovů přinesou dary.
 R. Králové Arabů s Sáby přinesou oběti.
+
+[Versum 1C]
+V. Přicházejí všichni ze Sáby.
+R. Přinášejí zlato a kadidlo, a hlásají chválu Páně.
+
+[Versum 1]
+@:Versum 1_
+(sed rubrica cisterciensis)
+@:Versum 1C
 
 [Ant 1]
 Mudrci, * když uviděli hvězdu, řekli si společně: Je to znamení velikého Krále; pojďme jej navštívit, a obětujme mu dary, zlato, kadidlo a myrhu, alleluja.
@@ -222,6 +231,9 @@ Amen.
 V. Klaňte se Bohu, alleluja.
 R. Všichni jeho Andělé, slleluja.
 
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
 [Ant 2]
 Dnes * se k nebeskému Ženichu připojila Církev, neboť v Jordánu obmyl Kristus její přečiny. Mudrci s dary běží ke královské svatbě; a z vody proměněné ve víno se radují hodující, alleluja.
 
@@ -273,6 +285,9 @@ V. In His holy courts.
 R. Alleluia, Alleluia.
 &Gloria
 R. Worship the Lord. * Alleluia, Alleluia.
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
 
 [Ant 3]
 This day we keep a holiday in honour of three wonders, * this day a star led the wise men to the manger; this day at the marriage, water was made wine; this day was Christ, for our salvation, pleased to be baptized of John in Jordan. Alleluia.

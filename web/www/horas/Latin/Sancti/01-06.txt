@@ -53,12 +53,26 @@ Amen.
 [HymnusM Vespera]
 @:Hymnus Vespera:s/Crudélis Heródes, Deum.Regem/Hostis Heródes ímpie,\nChristum/s
 
-[Versum 1]
+[Versum 1_]
 V. Reges Tharsis et ínsulæ múnera ófferent.
 R. Reges Arabum et Saba dona addúcent.
 
-[Ant 1]
+[Versum 1C]
+V. Omnes de Saba vénient.
+R. Aurum et thus deferéntes, et laudem Dómini annuntiántes.
+
+[Versum 1]
+@:Versum 1_
+(sed rubrica cisterciensis)
+@:Versum 1C
+
+[Ant 1_]
 Magi vidéntes * stellam, dixérunt ad ínvicem: Hoc signum magni Regis est: eámus et inquirámus eum, et offerámus ei múnera, aurum, thus, et myrrham, allelúja.
+
+[Ant 1]
+@:Ant 1_
+(sed rubrica cisterciensis)
+@:Ant 1_:s/Magi vidéntes \* stellam,/Magi \* vidérunt stellam, et/i
 
 [Oratio]
 Deus, qui hodiérna die Unigénitum tuum géntibus stella duce revelásti: concéde propítius; ut qui jam te ex fide cognóvimus, usque ad contemplándam spéciem tuæ celsitúdinis perducámur.
@@ -310,6 +324,9 @@ R. Adoráte Dóminum, * Allelúja, allelúja.
 
 [Versum Nona]
 @:Versum 2
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
 
 [Ant 3]
 Tribus miráculis * ornátum diem sanctum cólimus: hódie stella Magos duxit ad præsépium: hódie vinum ex aqua factum est ad núptias: hódie in Jordáne a Joánne Christus baptizári vóluit, ut salváret nos, allelúja.

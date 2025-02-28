@@ -316,8 +316,14 @@ zpěv chvály pěje v každý čas.
 Amen.
 
 [Versum 2]
-V. All thy children shall be taught of the Lord.
-R. And great shall be the peace of thy children.
+V. Všechny tvé syny poučím o Hospodinu.
+R. A tví synové budou mít mnoho pokoje.
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
 
 [Ant 2]
 Osvěť nás, Pane, * příklady své rodiny, a směřuj naše kroky po cestě pokoje.
@@ -381,35 +387,13 @@ A Ježíš prospíval * moudrostí i věkem, a milostí u Boha i u lidí.;;121
 Podivovali se všichni * nad slovy milosti, jež vycházela z jeho úst, a pravili: Není to snad syn Josefův?;;126
 A pravili: * odkud pochází tato moudrost a moc? Není to snad syn tesařův?;;147
 
-[Commemoratio 1] (rubrica cisterciensis)
-!Připomínka Neděle v Oktávu Zjevení Páně
-Ant. Chlapec Ježíš zůstal v Jerusalémě; a jeho rodiče o tom nevěděli, a mysleli si, že je spolu s ostatními, takže jej hledali mezi příbuznými a známými.
-_
-V. Klanějte se jemu.
-R. Všichni jeho Andělé.
-_
-$Oremus
-v. Prosíme tě, Pane, prosby svého pokorně prosícího lidu následuj svou nebeskou laskavostí; aby viděl, co je třeba dělat, a na to, co viděl, i nabral sílu.
+[Commemoratio] (rubrica cisterciensis)
+!Připomínka neděle v Oktávu Zjevení Páně
+@Tempora/Epi1-0a:Oratio
 _
 !Připomínka Oktávu Zjevení Páně
 @Sancti/01-06:Oratio
-
-[Commemoratio 2] (rubrica cisterciensis)
-!Připomínka Neděle v Oktávu Zjevení Páně
-Ant. Chlapec Ježíš zůstal v Jerusalémě; a jeho rodiče o tom nevěděli, a mysleli si, že je spolu s ostatními, takže jej hledali mezi příbuznými a známými.
-_
-V. Klanějte se jemu.
-R. Všichni jeho Andělé.
-_
-$Oremus
-v. Prosíme tě, Pane, prosby svého pokorně prosícího lidu následuj svou nebeskou laskavostí; aby viděl, co je třeba dělat, a na to, co viděl, i nabral sílu.
-_
-!Připomínka Oktávu Zjevení Páně
-@Sancti/01-06:Oratio
-
-[Commemoratio 3] (rubrica cisterciensis)
-!Připomínka Neděle v Oktávu Zjevení Páně
-@Tempora/Epi1-0a:Oratio:s/V\. .*/V. Klanějte se jemu./ s/R\. .*/R. Všichni jeho Andělé./
+(sed die Epiphaniæ omittitur)
 
 [Ant 3]
 Maria však * zachovávala všechny tato slova, a rozjímala nad nimi ve svém srdci.
