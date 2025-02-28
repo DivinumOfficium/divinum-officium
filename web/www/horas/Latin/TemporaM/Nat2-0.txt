@@ -18,6 +18,21 @@ R. Allelúja, allelúja.
 &Gloria
 R. Adjutórium nostrum in nómine Dómini, * Allelúja, allelúja.
 
+[Responsory Vespera] (rubrica cisterciensis)
+R.br. Confitémini Dómino, * Et invocáte Nomen ejus.
+R. Confitémini Dómino, * Et invocáte Nomen ejus.
+V. Annuntiáte inter Gentes ópera ejus.
+R. Et invocáte Nomen ejus.
+
+[Versum 1] (rubrica cisterciensis)
+@Tempora/Nat2-0::s/, allel[uú][ij]a//ig
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
 [AntMatutinumM]
 Sanctum et terríbile * nomen ejus, inítium sapiéntiæ timor Dómini.;;84
 Omnis * qui invocáverit nomen Dómini, salvus erit.;;47
@@ -108,9 +123,15 @@ R. Et omnis lingua confiteátur.
 
 [Responsory TertiaM]
 @:Versum 1
+(sed rubrica cisterciensis)
+@Tempora/Nat2-0:Versum Tertia:s/, allel[uú][ij]a//ig
 
 [Responsory SextaM]
 @:Nocturn 3 Versum
+(sed rubrica cisterciensis)
+@:Nocturn 2 Versum
 
 [Responsory NonaM]
 @:Versum Sexta
+(sed rubrica cisterciensis)
+@:Nocturn 3 Versum

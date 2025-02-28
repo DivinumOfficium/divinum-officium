@@ -50,7 +50,7 @@ V. Sit nomen Dómini benedíctum, allelúja.
 R. Ex hoc nunc et usque in sǽculum, allelúja.
 
 [Ant 1]
-Fecit * mihi magna qui potens est, et sanctum nomen ejus, allelúja.
+Fecit * mihi magna qui potens est, et sanctum Nomen ejus, allelúja.
 
 [Oratio]
 Deus, qui unigénitum Fílium tuum constituísti humáni géneris Salvatórem, et Jesum vocári jussísti: concéde propítius; ut, cujus sanctum nomen venerámur in terris, ejus quoque aspéctu perfruámur in cælis. 
@@ -101,12 +101,24 @@ Cantáte Deo, * psalmum dícite nómini ejus: iter fácite ei, qui ascéndit sup
 V. Propter nomen tuum, Dómine, propitiáberis peccáto meo.
 R. Multum est enim.
 
+[Nocturn 1 Versum] (rubrica cisterciensis)
+@:Versum Tertia: s/[\,\.] al.*/./ig
+
 [Nocturn 2 Versum]
 V. Propter glóriam nóminis tui, Dómine, líbera nos.
 R. Et propítius esto peccátis nostris propter nomen tuum.
 
+[Nocturn 2 Versum] (rubrica cisterciensis)
+V. Bonum est confitéri Dómino.
+R. Et psállere nómini tuo, Altíssime.
+
 [Nocturn 3 Versum]
 @:Versum Tertia: s/[\,\.] al.*/./ig
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+V. Confitémini Dómino, et invocáte Nomen ejus.
+R. Annuntiáte inter Gentes ópera ejus.
+
 
 [Lectio1]
 De Actibus Apostolórum
@@ -235,6 +247,13 @@ Sitívit * ánima mea ad nomen sanctum tuum, Dómine.
 Benedíctum * nomen glóriæ tuæ sanctum, et laudábile, et superexaltátum in sǽcula.
 Júvenes et vírgines, * senes cum junióribus laudáte nomen Dómini, quia exaltátum est nomen ejus solíus.
 
+[Ant Laudes] (rubrica cisterciensis)
+Nomen tuum, Dómine, * decet sanctitudo in longitúdinem diérum.
+Oleum effúsum * Nomen tuum, ídeo adolescéntulæ dilexérunt te.
+Magnum est * Nomen meum, et honorábile in Géntibus, dicit Dóminus.
+Jesus Nazarénus * Rex Judæórum, Imperátor cœli, et Dóminus dominántium.
+Vincénti dabo * manna abscónditum, et Nomen novum scriptum, quod nemo scit, nisi qui áccipit.
+
 [Capitulum Laudes]
 !Phil 2:8-10
 v. Fratres: Christus humiliávit semetípsum, factus obédiens usque ad mortem, mortem autem crucis. Propter quod et Deus exaltávit illum, et donávit illi nomen, quod est super omne nomen, ut in nómine Jesu omne genu flectátur.
@@ -273,6 +292,9 @@ Amen.
 [Ant 2]
 Dedit se, * ut liberáret pópulum, et acquíreret sibi nomen ætérnum, allelúja.
 
+[Ant 2] (rubrica cisterciensis)
+Vocátum est * Nomen ejus Jesus, quod vocátum est ab Angelo, priúsquam in útero conciperétur.
+
 [Lectio Prima]
 !Col 3:17
 v. Omne quodcúmque fácitis in verbo, aut in ópere: ómnia in nómine Dómini Jesu Christi fácite, grátias agéntes Deo et Patri per ipsum.
@@ -302,6 +324,12 @@ R. Allelúja, allelúja.
 &Gloria
 R. Afférte Dómino glóriam et honórem, * Allelúja, allelúja.
 
+[Responsory Breve Sexta] (rubrica cisterciensis)
+R.br. Afférte Dómino * glóriam et honórem.
+R. Afférte Dómino * glóriam et honórem.
+V. Afférte Dómino glóriam nómini ejus.
+R. Glóriam et honórem.
+
 [Versum Sexta]
 V. Magnificáte Dóminum mecum, allelúja.
 R. Et exaltémus nomen ejus in idípsum, allelúja.
@@ -327,3 +355,7 @@ R. Qui fecit cælum et terram, allelúja.
 
 [Ant 3]
 Vocábis * nomen ejus Jesum; ipse enim salvum fáciet pópulum suum a peccátis eórum, allelúja.
+
+[Ant 3] (rubrica cisterciensis)
+Magníficet * omnis ánima Nomen tuum, Dómine, et cunctórum in eo spíritus exúltet, quóniam sanctum est, et potens depónere poténtes de sede, et exaltáre húmiles, allelúia.
+

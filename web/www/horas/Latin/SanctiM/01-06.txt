@@ -102,11 +102,16 @@ R. Hic est dies præclárus in quo Salvátor mundi appáruit, † quem prophét�
 V. Dies sanctificátus illúxit nobis: † veníte gentes et adoráte Dóminum.
 R. Cujus stellam Magi vidéntes gavísi sunt, et múnera ei obtulérunt.
 
-[Responsory TertiaM]
+[Responsory TertiaM] (nisi rubrica cisterciensis)
 @Sancti/01-06:Versum 1:s/\.$/, allelúja./gm
 
-[Responsory SextaM]
+[Capitulum Sexta] (rubrica cisterciensis)
+@Sancti/01-06::s/\: fílii.*|Zdaleka.*//
+
+[Responsory SextaM] (nisi rubrica cisterciensis)
 @Sancti/01-06:Versum Tertia
 
 [Responsory NonaM]
 @Sancti/01-06:Nocturn 3 Versum
+(sed rubrica cisterciensis)
+@Sancti/01-06:Nocturn 3 Versum:s/, allel[úu][ij]a//gi

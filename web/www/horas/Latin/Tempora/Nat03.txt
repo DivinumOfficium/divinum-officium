@@ -1,11 +1,25 @@
 [Rank]
 Ad Romános, cap. 6;;Feria;;1;;vide Sancti/01-01
-(sed rubrica 1955 aut rubrica 196 aut rubrica altovadensis)
+(sed rubrica 1955 aut rubrica 196)
 Die Tertia Januarii;;Feria;;1.2;;vide Sancti/01-01
+(sed rubrica altovadensis)
+Die Tertia Januarii;;Feria;;1.4;;vide Tempora/Nat1-0
 
 [Rule]
 vide Sancti/01-01
 Feria Te Deum
+
+[Ant Prima] (rubrica altovadensis)
+@Sancti/01-01:Ant Vespera:2
+
+[Ant Tertia] (rubrica altovadensis)
+@Sancti/01-01:Ant Vespera:3
+
+[Ant Sexta] (rubrica altovadensis)
+@Sancti/01-01:Ant Vespera:4
+
+[Ant Nona] (rubrica altovadensis)
+@Sancti/01-01:Ant Vespera:5
 
 [Lectio1]
 De Epístola ad Romános

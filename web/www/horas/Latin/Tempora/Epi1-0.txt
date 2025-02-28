@@ -17,6 +17,13 @@ Pastóres venérunt * festinántes, et invenérunt Maríam, et Joseph, et Infán
 Magi, intrántes domum, * invenérunt Púerum cum María, matre ejus.;;126
 Erat Pater ejus * et Mater mirántes super his quæ dicebántur de illo.;;147
 
+[Ant Vespera] (rubrica cisterciensis)
+Jacob autem * génuit Joseph virum Maríæ; de qua natus est Jesus, qui vocátur Christus.;;109
+Angelus Dómini * appáruit in somnis Joseph, dicens: Joseph, fili David, noli timére accípere Maríam cónjugem tuam; quod enim in ea natum est, de Spíritu Sancto est.;;112
+Pastóres venérunt * festinántes, et invenérunt Maríam, et Joseph, et Infántem pósitum in præsépio.;;121
+Mirabántur omnes * in verbis grátiæ, quæ procedébant de ore ipsíus, et decébant: Nonne hic est fílius Joseph?;;126
+Magi, intrántes domum, * invenérunt Púerum cum María, matre ejus.
+
 [Hymnus Vespera]
 v. O lux beáta cǽlitum
 Et summa spes mortálium,
@@ -147,6 +154,16 @@ Cum redírent, * remánsit puer Jesus in Jerúsalem, et non cognovérunt parént
 Non inveniéntes Jesum * regréssi sunt in Jerúsalem, requiréntes eum.;;97
 V. Pauper sum ego, et in labóribus a juventúte mea.
 R. Exaltátus autem humiliátus sum, et conturbátus.
+
+[Nocturn 1 Versum] (rubrica cisterciensis)
+V. Propter nos egénus factus est cum esset dives.
+R. Ut illíus inópia nos dívites essémus.
+
+[Nocturn 2 Versum] (rubrica cisterciensis)
+@:Responsory Tertia:8-9
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+@:Responsory Nona:8-9
 
 [Lectio1]
 De Epístola beáti Pauli Apóstoli ad Colossénses
@@ -317,6 +334,12 @@ Amen.
 V. Ponam univérsos fílios tuos doctos a Dómino.
 R. Et multitúdinem pacis fíliis tuis.
 
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
 [Ant 2]
 Illúmina nos, Dómine, * exémplis Famíliæ tuæ, et dírige pedes nostros in viam pacis.
 
@@ -375,6 +398,33 @@ Dixit mater Jesu * ad illum: Fili, quid fecísti nobis sic? Ecce pater tuus et e
 Descéndit Jesus * cum eis, et venit Názareth, et erat súbditus illis.;;121
 Et Jesus proficiébat * sapiéntia, et ætate, et grátia apud Deum et hómines.;;126
 Et dicébant: * Unde huic sapiéntia hæc, et virtútes? Nonne hic est fabri fílius?;;147
+
+[Commemoratio] (rubrica cisterciensis)
+!Commemoratio Dominicæ in Octava Epiphaniæ
+@Tempora/Epi1-0a:Oratio
+_
+!Commemoratio Octavæ Epiphaniæ 
+@Sancti/01-06:Oratio
+(sed die Epiphaniæ omittitur)
+
+[Commemoratio 3] (rubrica cisterciensis)
+!Commemoratio Dominicæ in Octava Epiphaniæ
+@Tempora/Epi1-0a:Oratio
+_
+!Commemoratio Octavæ Epiphaniæ 
+@Sancti/01-06:Oratio
+(sed die Baptismatis Domini omittitur)
+
+
+[Ant Vespera 3] (rubrica cisterciensis)
+Fili, * quid fecísti nobis sic? Ecce pater tuus et ego doléntes quærebámus te. Quid est quod me quærebátis? nesciebátis quia in his, quæ Patris mei sunt, opórtet me esse?;;109
+Descéndit Jesus * cum eis, et venit Názareth, et erat súbditus illis.;;112
+Et Jesus proficiébat * sapiéntia, et ætate, et grátia apud Deum et hómines.;;121
+Mirábantur omnes * in verbis grátiæ, quæ procedébat de ore ipsíus, et dicébant: Nonne hic est fílius Joseph?;;126
+Et dicébant: * Unde huic sapiéntia hæc, et virtútes? Nonne hic est fabri fílius?;;147
+
+[Ant Laudes] (rubrica cisterciensis)
+@:Ant Vespera 3:s/;;.*//g
 
 [Versum 3]
 @:Versum 2

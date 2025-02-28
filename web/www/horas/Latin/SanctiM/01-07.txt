@@ -1,4 +1,6 @@
 @Sancti/01-07
+[Rank]
+Secunda die infra Octavam Epiphaniæ;;Semiduplex;;1.4;;ex Sancti/01-06
 
 [Rule]
 Feria Te Deum
@@ -6,6 +8,7 @@ No prima Vespera
 Infra octavam Epiphaniæ Domini
 (sed rubrica 1963 omittitur)
 ex Sancti/01-06
+(sed rubrica cisterciensis) ex SanctiM/01-06
 3 Lectiones
 Doxology=Epi
 (rubrica 1963) Lectio1 tempora
@@ -53,3 +56,17 @@ Doxology=Epi
 @Sancti/01-06:Responsory6
 (sed feria 4 aut feria 7)
 @SanctiM/01-06:Responsory11
+
+[Versum 2] (rubrica cisterciensis)
+@SanctiM/01-06:Versum 1
+
+[Ant 2] (rubrica cisterciensis)
+@Sancti/01-06:Ant 1:s/Magi vidéntes \* stellam,/Magi \* vidérunt stellam, et/i s/, allel[úu][ij]a//
+
+[Versum 3] (rubrica cisterciensis)
+@SanctiM/01-06:Versum 1
+
+[Ant 3] (rubrica cisterciensis)
+@Sancti/01-06
+(sed feria 7)
+@Sancti/01-06:Ant 1

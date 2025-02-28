@@ -18,6 +18,11 @@ Apértis thesáuris suis * obtulérunt Magi Dómino aurum, thus, et myrrham, all
 Mária et flúmina * benedícite Dómino: hymnum dícite fontes Dómino, allelúja.
 Stella ista * sicut flamma corúscat, et Regem regum Deum demónstrat: Magi eam vidérunt, et magno Regi múnera obtulérunt.
 
+[Responsory Vespera 1] (rubrica cisterciensis)
+<FONT COLOR=RED>Responsorium</FONT> Illumináre, illumináre Jerúsalem, quia venit lux tua: * Et glória Dómini super te orta est.
+V. Et ambulábunt Gentes in lúmine tuo, et reges in splendóre ortus tui:
+R. Et glória Dómini super te orta est.
+
 [Hymnus Vespera]
 {:H-CrudelisHerodes:}v. Crudélis Heródes, Deum
 Regem veníre quid times?
@@ -48,12 +53,26 @@ Amen.
 [HymnusM Vespera]
 @:Hymnus Vespera:s/Crudélis Heródes, Deum.Regem/Hostis Heródes ímpie,\nChristum/s
 
-[Versum 1]
+[Versum 1_]
 V. Reges Tharsis et ínsulæ múnera ófferent.
 R. Reges Arabum et Saba dona addúcent.
 
-[Ant 1]
+[Versum 1C]
+V. Omnes de Saba vénient.
+R. Aurum et thus deferéntes, et laudem Dómini annuntiántes.
+
+[Versum 1]
+@:Versum 1_
+(sed rubrica cisterciensis)
+@:Versum 1C
+
+[Ant 1_]
 Magi vidéntes * stellam, dixérunt ad ínvicem: Hoc signum magni Regis est: eámus et inquirámus eum, et offerámus ei múnera, aurum, thus, et myrrham, allelúja.
+
+[Ant 1]
+@:Ant 1_
+(sed rubrica cisterciensis)
+@:Ant 1_:s/Magi vidéntes \* stellam,/Magi \* vidérunt stellam, et/i
 
 [Oratio]
 Deus, qui hodiérna die Unigénitum tuum géntibus stella duce revelásti: concéde propítius; ut qui jam te ex fide cognóvimus, usque ad contemplándam spéciem tuæ celsitúdinis perducámur.
@@ -241,6 +260,9 @@ Amen.
 V. Adoráte Deum, allelúja.
 R. Omnes Angeli ejus, allelúja.
 
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
 [Ant 2]
 Hódie * cælésti Sponso juncta est Ecclésia, quóniam in Jordáne lavit Christus ejus crímina: currunt cum munéribus Magi ad regáles núptias, et ex aqua facto vino lætántur convívæ, allelúja.
 
@@ -255,6 +277,12 @@ V. Reges Arabum et Saba dona addúcent.
 R. Allelúja, allelúja.
 &Gloria
 R. Reges Tharsis et ínsulæ múnera ófferent, * Allelúja, allelúja.
+
+[Responsory Breve Tertia] (rubrica cisterciensis)
+R.br. Dies sanctificátus, * Illúxit nobis.
+R. Dies sanctificátus, * Illúxit nobis.
+V. Veníte, Gentes, et adoráte Dóminum.
+R. Illúxit nobis.
 
 [Versum Tertia]
 V. Omnes de Saba vénient, allelúja.
@@ -272,6 +300,12 @@ V. Aurum et thus deferéntes.
 R. Allelúja, allelúja.
 &Gloria
 R. Omnes de Saba vénient, * Allelúja, allelúja.
+
+[Responsory Breve Sexta] (rubrica cisterciensis)
+R.br. Reges Tharsis et ínsulæ * Múnera ófferent.
+R. Reges Tharsis et ínsulæ * Múnera ófferent.
+V. Reges Arabum et Saba dona addúcent.
+R. Múnera ófferent.
 
 [Versum Sexta]
 @:Nocturn 3 Versum
@@ -291,5 +325,11 @@ R. Adoráte Dóminum, * Allelúja, allelúja.
 [Versum Nona]
 @:Versum 2
 
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
 [Ant 3]
 Tribus miráculis * ornátum diem sanctum cólimus: hódie stella Magos duxit ad præsépium: hódie vinum ex aqua factum est ad núptias: hódie in Jordáne a Joánne Christus baptizári vóluit, ut salváret nos, allelúja.
+
+[Ant 3] (rubrica cisterciensis)
+Ab Oriénte * venérunt Magi in Béthlehem adoráre Dóminum, et apértis thesáuris suis pretiósa múnera obtulérunt: aurum sicut Regi magno: thus sicut Deo vero: myrrham sepultúræ ejus.
