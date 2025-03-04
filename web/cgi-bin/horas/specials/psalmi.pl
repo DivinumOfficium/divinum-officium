@@ -279,7 +279,7 @@ sub psalmi_major {
       if (
         $rule =~ /Psalmi Dominica/
         || ($rule !~ /Psalmi Feria/i
-          && ($winner =~ /Sancti/i && $rank >= ($version =~ /cist/i ? 3 : 4) && $dayname[1] !~ /vigil/i))
+          && ($winner =~ /Sancti/i && $rank >= ($version =~ /cist/i ? 2.2 : 4) && $dayname[1] !~ /vigil/i))
       ) {
         $head = $version =~ /cist/i ? 'DaycF' : 'DaymF';
       } elsif ($dayofweek == 0 && $dayname[0] =~ /Pasc/i && $version !~ /cisterciensis/i) {

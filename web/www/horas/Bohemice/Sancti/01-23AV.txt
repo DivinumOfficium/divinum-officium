@@ -1,0 +1,42 @@
+[Rank]
+Zasnoubení Panny Marie se sv. Josefem (propria Bohemiæ);;MM. maj.;;4;;ex C11
+
+[Rule]
+ex C11
+Psalmi Dominica
+Antiphonas horas
+
+[Ant Vespera]
+@Sancti/09-08::s/Narození/Zasnoubení/ig
+
+[Responsory Vespera]
+@Sancti/09-08::s/Narození/Zasnoubení/ig
+
+[Versum 1]
+@Sancti/09-08:Versum 1:s/Narození/Zasnoubení/ig
+
+[Versum 2]
+@:Versum 1
+
+[Ant 1]
+@Sancti/09-08::s/Narození/Zasnoubení/ig
+
+[Oratio]
+Všemohoucí a přemírný Bože, jenž jsi Svatého Josefa, spravedlivého Syna Davidova, poskytl Blahoslavené Panně Marii, své Matce, za Manžela, a vyvolil si jej za svého Pěstouna; dej, prosíme, aby se na jeho prosby a pro jeho zásluhy těšila Církev pokojnému míru, a my abychom byli dovedeni k útěše věčného patření na Boha.
+$Qui vivis
+
+[Ant Laudes]
+@Sancti/09-08:Ant Vespera:s/Narození/Zasnoubení/ig s/;;.*//g
+
+[Ant 2]
+@Sancti/09-08::s/Narození/Zasnoubení/ig
+
+[Capitulum Sexta]
+!Sir 24:15-16
+v. A tak jsem na Siónu obdržela sídlo. Usadil mě v městě, které miloval jako mě, v Jerusalémě vykonávám svou moc. V lidu plném slávy jsem zapustila kořeny, v Pánově údělu je jeho dědictví, a v plnosti svatých se zdržuji.
+$Deo gratias.
+
+[Capitulum Nona]
+!Sir 24:19-20
+v. Na náměstích jsem voněla jako skořice a vonný balzám, jako nejjemnější myrha jsem šířila vůni.
+$Deo gratias.

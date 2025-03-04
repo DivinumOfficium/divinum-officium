@@ -178,14 +178,17 @@ sub martyrologium {
       }
     }
     my $prefix = "v. ";
+    # In Czech Martyrology, first two lines in each file are superfluous, therefore deleting.
+    my $line_c = 0;
 
     foreach my $line (@a) {
       if (length($line) > 3 && $line !~ /^\/\:/) {    # allowing /:rubrics:/ in Martyrology
-        $t .= "$prefix$line\n";
+        $t .= "$prefix$line\n" unless $lang =~ /Bohemice/i && $line_c < 3 && $line_c != 0;
       } else {
-        $t .= "$line\n";
+        $t .= "$line\n" unless $lang =~ /Bohemice/i && $line_c < 3;
       }
       $prefix = "r. ";
+      $line_c++;
 
       if ($mobile && $line =~ /\_/) {
         $t .= "$prefix$mobile";
@@ -211,6 +214,10 @@ sub luna {
     'Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno',
     'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre',
   );
+  my @months_cz = (
+    'ledna', 'února', 'března', 'dubna', 'května', 'června',
+    'července', 'srpna', 'září', 'října', 'listopadu', 'prosince',
+  );
   my @ordinals = (
     'prima', 'secúnda', 'tértia', 'quarta',
     'quinta', 'sexta', 'séptima', 'octáva',
@@ -234,6 +241,8 @@ sub luna {
     return ("Luna $ordinals[$dist-1]. Anno $year\n", ' ');
   } elsif ($lang =~ /Italiano/i) {
     return ("$day $months_it[$month - 1] $year, Luna $gday");
+  } elsif ($lang =~ /Česky/i) {
+    return ("Dne $day $months_cz[$month - 1] $year, $gday. dne stáří měsíce.");
   } else {
     return ("$months[$month - 1] $day$sfx1 $year. The $dist$sfx2 day of the Moon.", $months[$month - 1]);
   }
@@ -293,6 +302,10 @@ sub gregor {
     'Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno',
     'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre',
   );
+  my @months_cz = (
+    'ledna', 'února', 'března', 'dubna', 'května', 'června',
+    'července', 'srpna', 'září', 'října', 'listopadu', 'prosince',
+  );
   $day = $leapday || $day;    # recover English date in Leap Years
   my $sfx1 =
       ($day > 3 && $day < 21) ? 'th'
@@ -316,6 +329,8 @@ sub gregor {
     return ("L'année du Seigneur $year, le $gday$sfx2 jour de la Lune");
   } elsif ($lang =~ /Italiano/i) {
     return ("Anno del Signore $year, $day $months_it[$month - 1], Luna $gday");
+  } elsif ($lang =~ /Bohemice/i) {
+    return ("Léta Páně $year, $day. $months_cz[$month - 1], $gday. dne věku měsíce.");
   } else {
     return ("$months[$month - 1] $day$sfx1 $year, the $gday$sfx2 day of the Moon,", $months[$month - 1]);
   }

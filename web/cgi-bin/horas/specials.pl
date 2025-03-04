@@ -696,7 +696,10 @@ sub checksuffragium {
     || $version =~ /cist/i && $commune =~ /C1a?$/i
 
     # Altovadensis: max 3. collects
-    || $version =~ /altovadensis/i && $collectcount > 2;
+    || $version =~ /altovadensis/i && $collectcount > 2
+
+    # Altovadensis: limit at xij. Lect. et M.
+    || $version =~ /altovadensis/i && $rank > 2.5;
 
   if ($commemoratio && $seasonalflag) {
     my @r = split(';;', $commemoratio{Rank});

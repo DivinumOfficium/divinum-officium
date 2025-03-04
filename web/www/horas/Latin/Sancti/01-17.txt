@@ -1,9 +1,14 @@
 [Rank]
 S. Antonii Abbatis;;Duplex;;3;;vide C5
 
+[Rank] (rubrica cisterciensis)
+S. Antonii Abbatis;;Duplex;;1.2;;vide C5
+
 [Rule]
 vide C5;
 9 lectiones
+(sed rubrica cisterciensis) 
+3 lectiones
 
 [Oratio]
 @Commune/C5:Oratio1:s/N\./Antónii/

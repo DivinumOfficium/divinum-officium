@@ -4,9 +4,15 @@ Ss. Fabiani et Sebastiani Martyrum;;Duplex;;3;;vide C3
 [Rank] (rubrica innovata)
 Ss. Fabiani et Sebastiani Martyrum;;Duplex optional;;2;;vide C3
 
+[Rank] (rubrica cisterciensis)
+SS. Fabiani et Sebastiani, Martyrum;;iij. Lect. et M.;;1.2;;vide C3
+(sed rubrica altovadensis)
+SS. Fabiani et Sebastiani, Martyrum (propria Bohemiæ);;MM. min.;;3;;ex C3
+
 [Rule]
 vide C3;
 9 lectiones
+(rubrica altovadensis) Psalmi Dominica
 
 [Oratio]
 @Commune/C2::s/beáti N\. Mártyris tui atque Pontíficis/beatórum Mártyrum tuórum Fabiáni et Sebastiáni/
