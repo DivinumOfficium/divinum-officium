@@ -1,14 +1,29 @@
 [Rank]
 S. Agnetis Virginis et Martyris;;Duplex;;3;;vide C6
 
+[Rank] (rubrica cisterciensis)
+S. Agnetis, Virginis et Martyris;;xij. Lect. et M.;;2.3;;vide C6b
+
 [Rule]
 vide C6;
 9 lectiones
 Ant Vespera3=147
 in 1 Nocturno Lectiones ex Commune in 2 loco
 
-[Ant 1]
+[Ant Vespera] (rubrica cisterciensis)
+Ingréssa Agnes * turpitúdinis locum, Angelum Dómini præparátum invénit.;;109
+Mecum enim hábeo * custódem córporis mei, Angelum Dómini.;;112
+Annulo suo subarrhávit me * Dóminus meus Jesus Christus, et tamquam sponsam decorávit me coróna.;;121
+Benedíco te, * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis extínctus est a látere meo.;;126
+Congaudéte mecum * et congratulámini, quia cum his ómnibus lúcidas sedes accépi.;;146
+
+[Ant 1_]
 Beáta Agnes * in médio flammárum expansis mánibus orábat: Te déprecor, omnípotens, adorande, colende, Pater metuende, quia per sanctum Fílium tuum evasi minas sacrilegi tyranni, et carnis spurcítias immaculáto calle transívi: et ecce vénio ad te, quem amávi, quem quæsívi, quem semper optavi.
+
+[Ant 1]
+@:Ant 1_
+(sed rubrica cisterciensis)
+Christi Virgo * nec terróre concútitur, nec blandiméntis sedúcitur.
 
 [Oratio]
 Omnípotens sempitérne Deus, qui infírma mundi éligis, ut fórtia quæque confúndas: concéde propítius; ut, qui beátæ Agnétis Vírginis et Mártyris tuæ solémnia cólimus, ejus apud te patrocínia sentiámus.
@@ -102,21 +117,33 @@ R. Quia per Fílium tuum unigénitum evasi minas hóminum impiórum, et spurcít
 [Ant Laudes]
 @:Ant Vespera 3:s/;;.*//g
 
+[Ant Laudes] (rubrica cisterciensis)
+@:Ant Vespera:s/;;.*//g
+
 [Capitulum Laudes]
 @Commune/C7
 
 [Ant 2]
 Ecce, quod concupívi, * jam vídeo: quod sperávi, jam téneo: ipsi sum juncta in cælis, quem in terris pósita, tota devotióne diléxi.
 
+[Ant 2] (rubrica cisterciensis)
+@:Ant 1_
+
 [Capitulum Sexta]
 !Sir 51:4-5
 v. Liberásti me secúndum multitúdinem misericórdiæ nóminis tui a rugiéntibus, præparátis ad escam, de mánibus quæréntium ánimam meam, et de multis tribulatiónibus quæ circumdedérunt me.
 $Deo gratias
 
+[Capitulum Sexta] (rubrica cisterciensis)
+@Commune/C7
+
 [Capitulum Nona]
 !Sir 51:8; 51:12
 v. Laudábit usque ad mortem ánima mea Dóminum, quóniam éruis sustinéntes te, et líberas eos de manu angústiæ, Dómine, Deus noster.
 $Deo gratias
+
+[Capitulum Nona] (rubrica cisterciensis)
+@Commune/C7
 
 [Ant Vespera 3]
 Ingréssa Agnes * turpitúdinis locum, Angelum Dómini præparátum invénit.;;109
@@ -124,6 +151,9 @@ Mecum enim hábeo * custódem córporis mei, Angelum Dómini.;;110
 Anulo suo * subarrhávit me Dóminus meus Jesus Christus, et tamquam sponsam decorávit me coróna.;;111
 Benedíco te, * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo.;;112
 Congaudéte mecum * et congratulámini, quia cum his ómnibus lúcidas sedes accépi.;;147
+
+[Ant Vespera 3] (rubrica cisterciensis)
+@:Ant Vespera
 
 [Ant 3]
 Stans beáta Agnes * in médio flammæ, expánsis mánibus orábat ad Dóminum: Omnípotens, adoránde, colénde, treménde, benedíco te, et glorífico nomen tuum in ætérnum.

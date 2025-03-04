@@ -6,6 +6,9 @@ S. Agnetis Virginis et Martyris;;Duplex;;3.1;;vide C6
 [Rank] (rubrica divino)
 S. Agnetis Virginis et Martyris;;Duplex majus;;4;;ex C6
 
+[Rank] (rubrica cisterciensis)
+S. Agnetis, Virginis et Martyris;;xij. Lect. et M.;;2.3;;vide C6b
+
 [Rule] (rubrica 1963)
 vide C6;
 
@@ -37,8 +40,8 @@ Misit Dóminus * Angelum suum, et liberávit me de médio ignis, et non sum æst
 [Capitulum Laudes]
 @CommuneM/C7
 
-[Ant Vespera 3]
+[Ant Vespera 3] (nisi rubrica cisterciensis)
 @Sancti/01-21::s/112/126/ s/111/112/ s/110/111/
 
-[Ant 3]
+[Ant 3] (nisi rubrica cisterciensis)
 @Sancti/01-21:Ant 1

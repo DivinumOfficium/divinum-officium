@@ -98,6 +98,7 @@ sub hymnusmajor {
            $name =~ /Day0/i
         && ($name =~ /Laudes/i || $version =~ /cist/i)
         && ( $dayname[0] =~ /Epi[2-6]/
+          || $dayname[0] =~ /Epi1/i && $version =~ /cist/i
           || $dayname[0] =~ /Quadp/i
           || $winner{Rank} =~ /Novembris/i
           || ($winner{Rank} =~ /Octobris/i && $version !~ /cist/i))

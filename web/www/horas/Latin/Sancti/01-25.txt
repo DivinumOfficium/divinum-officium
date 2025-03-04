@@ -4,11 +4,21 @@ In Conversione S. Pauli Apostoli;;Duplex majus;;4;;ex Sancti/06-30
 [Rank] (rubrica innovata)
 In Conversione S. Pauli Apostoli;;Duplex Fest;;5;;ex Sancti/06-30
 
+[Rank] (rubrica cisterciensis)
+In Conversione S. Pauli Apostoli;;MM. maj.;;4.1;;ex Sancti/06-30
+
 [Rule]
 ex Sancti/06-30;
 9 lectiones
 Sub unica concl
 Psalm5Vespera=116
+
+[Ant Vespera] (rubrica cisterciensis)
+Ego plantávi, * Apollo rigávit, Deus autem increméntum dedit, allelúja.
+Grátia Dei * in me vácua non fuit, sed grátia ejus semper in me manet.
+Ter virgis cæsus sum, * semel lapidátus sum, ter naufrágium pértuli pro Christi nómine.
+Damásci, præpósitus * gentis Arétæ regis vóluit me comprehéndere: a frátribus per murum demíssus sum in sporta, et sic evási manus ejus in nómine Dómini.
+Libénter gloriábor * in infirmitátibus meis, ut inhábitet in me virtus Christi.
 
 [Hymnus Vespera]
 @Sancti/06-30:Hymnus Matutinum
@@ -18,6 +28,9 @@ Psalm5Vespera=116
 
 [Ant 1]
 Vade, Anania, * et quære Saulum: ecce enim orat: quia vas electiónis est mihi, ut portet nomen meum coram géntibus, et régibus, et fíliis Israël.
+
+[Ant 1] (rubrica cisterciensis)
+@Sancti/06-30
 
 [Oratio]
 Deus, qui univérsum mundum beáti Pauli Apóstoli prædicatióne docuísti: da nobis, quǽsumus; ut, qui ejus hódie Conversiónem cólimus, per ejus ad te exémpla gradiámur.
@@ -89,10 +102,16 @@ Ibat spirans et anhélans cædes: hoc est, mane rápiens. Nam et quando lapidát
 [Ant Laudes]
 @:Ant Vespera 3:s/;;.*//g
 
+[Ant Laudes] (rubrica cisterciensis)
+@:Ant Vespera:s/;;.*//g
+
 [Capitulum Laudes]
 !Act 9:1-2
 v. Saulus autem adhuc spirans minárum et cædis in discípulos Dómini, accéssit ad príncipem sacerdótum, et pétiit ab eo epístolas in Damáscum ad synagógas: ut si quos invenísset hujus viæ viros ac mulíeres, vinctos perdúceret in Jerúsalem.
 $Deo gratias
+
+[Ant 2] (rubrica cisterciensis)
+Evangélium meum, * quod evangelizátum est, non est a me, neque ab hómine accépi illud, sed per revelatiónem Dómini nostri Jesu Christi.
 
 [Lectio Prima]
 !Act 9:22
@@ -107,7 +126,7 @@ $Deo gratias
 @:Lectio Prima
 $Deo gratias
 
-[Ant Vespera 3]
+[Ant Vespera 3] (nisi rubrica cisterciensis)
 Ego plantávi, * Apóllo rigávit, Deus autem increméntum dedit. Allelúja.;;109
 Libénter gloriábor * in infirmitátibus meis, ut inhábitet in me virtus Christi.;;112
 Grátia Dei * in me vácua non fuit, sed grátia ejus semper in me manet.;;115
@@ -126,6 +145,6 @@ V. Tu es Petrus.
 R. Et super hanc petram ædificábo Ecclésiam meam.
 _
 $Oremus
-(sed rubrica 1960 aut rubrica monastica hæc versus omittuntur)
+(sed rubrica 1960 aut rubrica monastica nisi rubrica cisterciensis hæc versus omittuntur)
 v. Deus, qui beáto Petro Apóstolo tuo, collátis clávibus regni cæléstis, ligándi atque solvéndi pontifícium tradidísti: concéde; ut, intercessiónis ejus auxílio, a peccatórum nostrórum néxibus liberémur:
 $Qui vivis

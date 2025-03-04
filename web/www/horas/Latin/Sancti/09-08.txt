@@ -4,6 +4,9 @@ In Nativitate Beatæ Mariæ Virginis;;Duplex II classis cum Octava simplici;;5.1
 [Rank] (rubrica 196)
 In Nativitate Beatæ Mariæ Virginis;;Duplex II classis cum Octava simplici;;5;;ex C11
 
+[Rank] (rubrica cisterciensis)
+In Nativitate Beatæ Mariæ Virginis;;Serm maj. cum Octava;;6;;ex C11
+
 [Rule]
 ex C11;
 9 lectiones
@@ -18,12 +21,27 @@ Regáli ex progénie * María exórta refúlget; cujus précibus nos adjuvári, 
 Corde et ánimo * Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei Maríæ.;;126
 Cum jucunditáte * Nativitátem beátæ Maríæ celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum.;;147
 
+[Ant Vespera] (rubrica cisterciensis)
+Natívitas est hódie * sanctæ Maríæ Vírginis, cujus vita ínclita cunctas illústrat Ecclésias.;;109
+Cum jucunditáte * Nativitátem beátæ Maríæ celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum.;;112
+Regáli ex progénie * María exórta refúlget; cujus précibus nos adjuvári, mente et spíritu devotíssime póscimus.;;121
+Corde et ánimo * Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei Maríæ.;;126
+Natívitas gloriósæ * Vírginis Maríæ ex sémine Abrahæ, ortæ de tribu Juda, clara ex stirpe David.
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+<font color="red">Responsorium.</font> Beáta progénies, unde Christus natus est. * O quam gloriósa est mater, quæ cæli Regínam génuit!
+V. Regáli ex progénie María exórta refúlget.
+R. O quam gloriósa est mater, quæ cæli Regínam génuit!
+
 [Versum 1]
 V. Natívitas est hódie sanctæ Maríæ Vírginis.
 R. Cujus vita ínclita cunctas illústrat ecclésias.
 
 [Ant 1]
 Gloriósæ * Vírginis Maríæ ortum digníssimum recolámus, quæ et Genitrícis dignitátem obtinuit, et virginalem pudicítiam non amisit.
+
+[Ant 1] (rubrica cisterciensis)
+Natívitas tua, * Dei Génetrix Virgo, gáudium annuntiávit univérso mundo: ex te enim ortus est sol justítiæ, Christus Deus noster, qui solvens maledictiónem, dedit benedictiónem, et confúndens mortem, donávit nobis vitam sempitérnam.
 
 [Oratio]
 Fámulis tuis, quǽsumus, Dómine, cæléstis grátiæ munus impertíre: ut, quibus beátæ Vírginis partus éxstitit salútis exórdium; Nativitátis ejus votíva solémnitas pacis tríbuat increméntum.
@@ -131,14 +149,41 @@ Jacob autem génuit Joseph. Hunc locum objécit nobis Juliánus Augústus de dis
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g
 
+[Capitulum Laudes] (rubrica cisterciensis)
+@:Capitulum Tertia
+
 [Versum 2]
 @:Versum 1
 
 [Ant 2]
 Nativitátem hodiérnam * perpétuæ Vírginis Genetrícis Dei Maríæ solémniter celebrémus, qua celsitúdo throni procéssit, allelúja.
 
+[Capitulum Tertia] (rubrica cisterciensis)
+!Eccli. 24, 17-18
+v. Ego quasi vitis fructificávi suavitátem odóris: § et flores mei fructus honóris et honestátis. * Ego mater pulchræ dilectiónis, et timóris, et agnitiónis, et sanctæ spei.
+$Deo gratias
+
+[Capitulum Sexta] (rubrica cisterciensis)
+!Eccli. 24, 19-20
+v. Transíte ad me, omnes qui concupíscitis me, et a generatiónibus meis implémini: § spíritus enim meus super mel dulcis, et hæréditas mea super mel et favum: * memória mea in generatiónes sæculórum.
+$Deo gratias
+
+[Capitulum Nona] (rubrica cisterciensis)
+!Eccli. 24, 21-22
+v. Qui edunt me, adhuc esúrient: § et qui bibunt me, adhuc sítient. * Qui audit me, non confundétur: § et qui operántur in me, non peccábunt. * Qui elúcidant me, vitam ætérnam habébunt.
+$Deo gratias
+
+[Responsory Vespera] (rubrica cisterciensis)
+R.br. Natívitas tua, * Dei Génitrix Virgo. 
+R. Natívitas tua, * Dei Génitrix Virgo. 
+V. Gáudium annuntiávit univérso mundo.
+R. Dei Génitrix Virgo. 
+
 [Versum 3]
 @:Versum 1
 
 [Ant 3]
 Natívitas tua, * Dei Génetrix Virgo, gáudium annuntiávit univérso mundo: ex te enim ortus est sol justítiæ, Christus Deus noster: qui solvens maledictiónem, dedit benedictiónem; et confúndens mortem, donávit nobis vitam sempitérnam.
+
+[Ant 3] (rubrica cisterciensis)
+@Sancti/08-15t:Ant 1:s/quo/quæ/ s/\?/\,/ s/kam/jež/ s/když se převelice/a převelice se/

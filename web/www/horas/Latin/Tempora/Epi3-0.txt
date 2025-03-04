@@ -5,6 +5,9 @@ Dominica III Post Epiphaniam;;Semiduplex;;5
 9 lectiones
 Symbolum Athanasium
 
+[Ant 1] (rubrica cisterciensis)
+Fratres, * glorificáte, et portáte Dóminum in córpore vestro, allelúia.
+
 [Oratio]
 Omnípotens sempitérne Deus, infirmitátem nostram propítius réspice: atque, ad protegéndum nos, déxteram tuæ majestátis exténde.
 $Per Dominum
@@ -84,11 +87,19 @@ Et ecce leprosus veniens adorábat eum, dicens. Recte post prædicatiónem atque
 Et ait illi Jesus: Vide, némini díxeris. Et revéra quid erat necésse ut sermóne jactáret, quod corpore præferébat? Sed vade, osténde te sacerdoti. Varias ob causas mittit eum ad sacerdotem: primum propter humilitátem, ut sacerdótibus deferre honórem videátur. Erat enim lege præcéptum, ut, qui mundáti fúerant a lepra, offérrent múnera sacerdótibus. Deínde, ut mundátum vidéntes leprosum, aut créderent Salvatóri, aut non créderent: si créderent, salvaréntur; si non créderent, inexcusábiles forent. Et simul, ne, quod in eo sæpíssime criminabántur, legem viderétur infringere.
 &teDeum
 
-[Ant 2]
+[Ant 2_]
 Cum descendísset Jesus * de monte, ecce leprósus véniens adorábat eum, dicens: Dómine, si vis, potes me mundáre: et exténdens manum, tétigit eum, dicens: Volo, mundáre.
+
+[Ant 2]
+@:Ant 2_
+(sed rubrica cisterciensis)
+@:Ant 2_:s/Cum descendísset Jesus \*/Cum autem descendísset \* Jesus/
 
 [Ant 3]
 Dómine, * si vis, potes me mundáre: et exténdens manum, tétigit eum, dicens: Volo, mundáre.
 
 [Ant 3](rubrica 1960)
 Dómine, * si vis, potes me mundáre: et ait Jesus: Volo, mundáre.
+
+[Ant 3] (rubrica cisterciensis)
+Dómine, * puer meus jacet paralyticus in domo, et male torquétur. Amen dico tibi, ego véniam, et curábo eum.

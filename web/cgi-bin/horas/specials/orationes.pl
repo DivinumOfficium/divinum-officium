@@ -373,7 +373,7 @@ sub oratio {
             $key =
                 ($ic =~ /$sundaystring/i)
               ? ($version !~ /trident/i ? 3000 : 7100)
-              : $ccind + 9900;    # Sundays are all privilegde commemorations under DA
+              : $ccind + 9900;    # Sundays are all privileged commemorations under DA
             $cc{$key} = $ic;
             setbuild2("Commemorated from Concurrent: $key");
           }
