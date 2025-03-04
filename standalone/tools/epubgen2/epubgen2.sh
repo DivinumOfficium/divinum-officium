@@ -47,6 +47,8 @@ OPTIONS:
 
    -o PATH     The output directory. Defaults to "output".
 
+   -l LANG     The language for right side if required
+
    -f          If specified, use "fancy" characters: [℟ ℣ +︎ ✠ ✙︎]
 
 EOF
@@ -80,7 +82,7 @@ ALL_RUBRICS_NAME=("_1570" "_1910" "_DA" "_1955" "" "NC" "OP")
 YEAR_RE='^[0-9]+$'
 
 #parse parameters
-while getopts "hy:t:pvmr:c:o:f" OPTION
+while getopts "hy:t:pvmr:c:o:l:f" OPTION
 do
      case $OPTION in
          h)
@@ -135,7 +137,7 @@ do
              BLANG=$OPTARG
              #TODO: validate the value
              ;;
-		 f)
+		     f)
              NOFANCYCHARS=0
              ;;
          ?)
@@ -239,7 +241,7 @@ foreachHourInDay() {
 }
 
 foreachDayInMonth() {
-	DAYN=$(cal $MONTH $YEAR|egrep -v [a-z]|wc -w)
+	DAYN=$(cal $MONTH $YEAR|grep -E -v [a-z]|wc -w)
 	for DAY in $(seq -w $DAYN); do
 		formatFilename
 		$1
@@ -251,7 +253,7 @@ foreachDayInYear() {
 	for MONTH in $(seq -w 12); do
 		MONTH_NUM_INDEX=1+$MONTH_NUM_INDEX
 
-		DAYN=$(cal $MONTH $YEAR|egrep -v [a-z]|wc -w)
+		DAYN=$(cal $MONTH $YEAR|grep -E -v [a-z]|wc -w)
 		for DAY in $(seq -w $DAYN); do
 				formatFilename
 				$1
@@ -264,7 +266,7 @@ foreachHourInYear() {
 	for MONTH in $(seq -w 12); do
 		MONTH_NUM_INDEX=1+$MONTH_NUM_INDEX
 
-		DAYN=$(cal $MONTH $YEAR|egrep -v [a-z]|wc -w)
+		DAYN=$(cal $MONTH $YEAR|grep -E -v [a-z]|wc -w)
 		for DAY in $(seq -w $DAYN); do
 			for H in $(seq 0 $HORA_INDEX_LAST); do
 				formatFilename
@@ -290,7 +292,7 @@ foreachHourInRange() {
 		MONTH_NUM_INDEX=-1 #note we cannot count using MONTH, because it is zero padded (and bash consides it an octal literal)
 		for MONTH in $(seq -w 12); do
 			MONTH_NUM_INDEX=1+$MONTH_NUM_INDEX
-			DAYN=$(cal $MONTH $YEAR|egrep -v [a-z]|wc -w)
+			DAYN=$(cal $MONTH $YEAR|grep -E -v [a-z]|wc -w)
 			for DAY in $(seq -w $DAYN); do
 				for H in $(seq 0 $HORA_INDEX_LAST); do
 					formatFilename

@@ -224,9 +224,10 @@ if ($flag) {
 if (!$version) { $version = 'Rubrics 1960 - 1960'; }
 if (!$lang2) { $lang2 = 'English'; }
 if (!$langfb) { $langfb = 'English'; }
-$only = ($lang1 =~ $lang2) ? 1 : 0;
+$only = $lang1 eq $lang2;
 
 precedence($date1);    #fills our hashes et variables
+setsecondcol();
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;
 
