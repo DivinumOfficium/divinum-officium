@@ -178,6 +178,7 @@ sub martyrologium {
       }
     }
     my $prefix = "v. ";
+
     # In Czech Martyrology, first two lines in each file are superfluous, therefore deleting.
     my $line_c = 0;
 

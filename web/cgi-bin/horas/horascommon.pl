@@ -942,8 +942,11 @@ sub concurrence {
     my $flcrank =
       $version =~ /cist/i && $cwinner{Rank} =~ /Dominica/i
       ? 2
-      : $version =~ /trident/i
-      ? ($crank < 2.91 ? 2 : ($cwinner{Rank} =~ /Dominica/i ? 2.99 : ($crank < 4.9 && $crank != 4) ? 3 : $crank))
+      : $version =~ /trident/i ? (
+        $crank < 2.91
+        ? ($crank > 2 ? 2 : $crank)
+        : ($cwinner{Rank} =~ /Dominica/i ? 2.99 : ($crank < 4.9 && $crank != 4) ? 3 : $crank)
+      )
       : ($version =~ /divino/i && $cwinner{Rank} =~ /Dominica/i) ? 4.9
       : $crank;
 
@@ -993,8 +996,8 @@ sub concurrence {
         && $cwrank[0] !~ /Dominica|feria|in.*octava/i)
 
       # on Christmas Eve and New Year's Eve, nothing of a preceding Sunday
-      || ($cwinner =~ /12-25|01-01/ && $version !~ /cist/i) 
-      
+      || ($cwinner =~ /12-25|01-01/ && $version !~ /cist/i)
+
       # Cist: we need Comm. of S. Silvester on 31-12
       || ($cwinner =~ /12-25/ && $version =~ /cist/i)
 
