@@ -127,8 +127,11 @@ _
 [Responsory TertiaM] (nisi rubrica cisterciensis)
 @Commune/C1:Versum 1
 
-[Ant Vespera 3] (nisi rubrica cisterciensis)
+[Ant Vespera 3]
 @Sancti/01-25::s/125/138/
+
+[Ant Vespera 3] (rubrica cisterciensis)
+@Sancti/01-25:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;115/ s/_/;;125/ s/_//
 
 [Versum 3]
 @Sancti/06-30:Versum 1

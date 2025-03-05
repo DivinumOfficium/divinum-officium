@@ -6,7 +6,7 @@ Doxology=Nat
 Festum Domini
 
 [Responsory Vespera]
-@CommuneM/C11
+@CommuneM/C10n
 
 [Ant Matutinum 3N]
 Adórna * thálamum tuum, Sion, et súspice Regem Christum: † quem Virgo post partum, quem génuit, adorávit.
@@ -88,7 +88,7 @@ R. Et Anna vídua Christum agnóvit advenísse in terris.
 @Sancti/03-25:Responsory8
 
 [Responsory Laudes]
-@:Responsory Vespera
+@CommuneM/C11
 
 [Responsory TertiaM]
 @Commune/C6:Versum 1
@@ -98,3 +98,5 @@ R. Et Anna vídua Christum agnóvit advenísse in terris.
 
 [Responsory NonaM]
 @Commune/C6:Nocturn 3 Versum
+(sed rubrica cisterciensis)
+@CommuneM/C6:Nocturn 3 Versum

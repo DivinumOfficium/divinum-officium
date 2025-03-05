@@ -1,7 +1,7 @@
 [Rank]
 S. Agathæ Virginis et Martyris;;Duplex;;3.01;;vide C6
 
-[Rank] (rubrica 1570 aut rubrica 1617)
+[Rank] (rubrica 1570 aut rubrica 1617 aut rubrica cisterciensis)
 S. Agathæ Virginis et Martyris;;Semiduplex;;2.2;;vide C6
 
 [Rank] (rubrica 1930)
@@ -27,6 +27,9 @@ Qui me dignátus est * ab omni plaga curáre, et mamíllam meam meo péctori res
 
 [Ant 1]
 Stans beáta Agatha * in médio cárceris, expánsis mánibus orábat ad Dóminum: Dómine Jesu Christe, magíster bone, grátias tibi ago, qui me fecísti víncere torménta carníficum: jube me, Dómine, ad tuam immarcescíbilem glóriam felíciter perveníre.
+
+[Ant 1] (rubrica cisterciensis)
+Mentem sanctam, * spontáneum honórem Deo, et pátriæ liberatiónem.
 
 [Oratio]
 @Commune/C6::s/N\./Agathæ/
@@ -132,3 +135,6 @@ Paganórum * multitúdo fúgiens ad sepúlcrum Vírginis, tulérunt velum ejus c
 
 [Ant 3]
 @:Ant 1
+
+[Ant 3] (rubrica cisterciensis)
+@:Ant 2
