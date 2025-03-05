@@ -16,6 +16,9 @@ vide C6;
 ex C6;
 12 lectiones
 
+[Ant 1] (rubrica cisterciensis)
+Christi Virgo * nec terróre concútitur, nec blandiméntis sedúcitur.
+
 [AntMatutinumM]
 Christi Virgo * nec terróre concútitur, nec blandiméntis sedúcitur;;10
 Jam corpus ejus * córpori meo sociátum est, et sanguis ejus ornávit genas meas;;45
@@ -39,6 +42,9 @@ Misit Dóminus * Angelum suum, et liberávit me de médio ignis, et non sum æst
 
 [Capitulum Laudes]
 @CommuneM/C7
+
+[Ant 2] (sed rubrica cisterciensis)
+@Sancti/01-21:Ant 1
 
 [Ant Vespera 3] (nisi rubrica cisterciensis)
 @Sancti/01-21::s/112/126/ s/111/112/ s/110/111/
