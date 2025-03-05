@@ -35,15 +35,6 @@ our $Ck = 0;
 our $officium = 'Eofficium.pl';
 our $version = 'Rubrics 1960 - 1960';
 
-@versions = (
-  'Trident - 1570',
-  'Trident - 1910',
-  'Divino Afflatu - 1954',
-  'Reduced - 1955',
-  'Rubrics 1960 - 1960',
-  'Rubrica 1960 - 2020 USA/Rubrics 1960 Newcalendar',
-);
-
 #***common variables arrays and hashes
 #filled  getweek()
 our @dayname;    #0=Advn|Natn|Epin|Quadpn|Quadn|Pascn|Pentn 1=winner title|2=other title
@@ -98,6 +89,7 @@ require "$Bin/horasjs.pl";
 #require "$Bin/tfertable.pl";
 use lib "$Bin/../../../web/cgi-bin";
 use DivinumOfficium::LanguageTextTools qw(load_languages_data);
+use DivinumOfficium::RunTimeOptions qw(check_version check_language);
 
 binmode(STDOUT, ':encoding(utf-8)');
 
@@ -221,7 +213,7 @@ if ($flag) {
 
   #setcookies('horasgp', 'general');
 }
-if (!$version) { $version = 'Rubrics 1960 - 1960'; }
+$version = check_version($version) || 'Rubrics 1960 - 1960';
 if (!$lang2) { $lang2 = 'English'; }
 if (!$langfb) { $langfb = 'English'; }
 $only = $lang1 eq $lang2;
