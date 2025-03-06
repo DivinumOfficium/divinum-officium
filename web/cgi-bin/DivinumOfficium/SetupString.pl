@@ -212,6 +212,7 @@ sub get_dayname_for_condition {
   return 'Nicolai' if $month == 12 && $day == 6;
   return 'Nat28' if $month == 12 && $day == 28;
   return 'Nat29' if $month == 12 && $day == 29;
+  return 'doctorum' if ($dayname[1] =~ /Doctor/i || $dayname[2] =~ /Doctor/i);
   return '';
 }
 

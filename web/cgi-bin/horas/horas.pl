@@ -113,7 +113,7 @@ sub resolve_refs {
     $line =~ s/(\w)$/$&./ if ($line =~ /^Ant\./);
 
     #red prefix
-    if ($line =~ /^(R\.br\.|R\.|V\.|Ant\.|Benedictio\.|Absolutio\.)(.*)/) {
+    if ($line =~ /^(R\.br\.|R\.|V\.|Ant\.|Benedictio\.|Absolutio\.|Responsorium\.)(.*)/) {
       my $h = setvrbar($1);
       my $l = $2;
 

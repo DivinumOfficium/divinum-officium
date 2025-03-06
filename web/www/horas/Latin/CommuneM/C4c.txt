@@ -1,0 +1,27 @@
+@Commune/C4
+
+[Officium]
+Commune Conf. Pontificis Commemoratum in die Conf. Pont.
+
+[Ant 1]
+@Commune/C4:Ant 2
+(sed die doctorum)
+@Commune/C4:Ant 1
+
+[Versum 1]
+@CommuneM/C4:Nocturn 1 Versum
+
+[Versum 2]
+@:Versum 1
+
+[Versum 3]
+@:Versum 1
+
+[Ant 2]
+@Commune/C4:Ant 3
+
+[Ant 3]
+@Commune/C4:Ant 1
+
+[Commentarium]
+Used on: 01-27

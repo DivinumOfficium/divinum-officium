@@ -1,0 +1,25 @@
+@Commune/C6
+
+[Officium]
+Commune Virginum Commemoratum (equiv. C4a cum Ant 1 ex Communi)
+
+[Oratio]
+@Commune/C6b
+
+[Ant 1]
+@CommuneM/C6:Ant 1
+
+[Ant 2]
+@CommuneM/C6:Ant 3
+
+[Versum 1]
+@CommuneM/C6:Nocturn 1 Versum
+
+[Versum 2]
+@:Versum 1
+
+[Versum 3]
+@:Versum 1
+
+[Commentarium]
+Used on: 02-06
