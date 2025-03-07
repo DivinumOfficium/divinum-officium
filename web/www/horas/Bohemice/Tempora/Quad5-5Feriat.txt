@@ -1,0 +1,10 @@
+[Lectio1]
+@Tempora/Quad5-5Feria::s/$/~/
+@Tempora/Quad5-5Feria:Lectio2:s/ But.*//
+
+[Lectio2]
+@Tempora/Quad5-5Feria:Lectio2:s/.*But/But/ s/$/~/
+@Tempora/Quad5-5Feria:Lectio3
+
+[Lectio3]
+It may, however, be a question in what way he is called the high priest of that year, seeing that God appointed one person to be high priest, who was to be succeeded only at his death by another. But we are to understand that ambitious schemes and contentions among the Jews led to the appointment afterwards of more than one, and to their annual turn of service. For it is said also of Zacharias: And it came to pass that, while he executed the priest's office before God in the order of his course, according to the custom of the priest's office, his lot was to burn incense when he went into the temple of the Lord. (Luke 1:8-9) From which it is evident that there were more than one, and that each had his turn: for it was lawful for the high priest alone to place the incense on the altar. (Exodus 30:7) And perhaps also there were several in actual service in the same year, who were succeeded next year by several others, and that it fell by lot to one of them to burn incense.
