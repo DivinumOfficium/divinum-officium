@@ -1,0 +1,14 @@
+[Rank]
+sv. Lucia I., Papeže a Mučedníka
+
+[Rule]
+vide C2;
+OPapaM=Lucia;
+
+[Oratio]
+@Commune/C2:Oratio:s/N\./Lucia/
+(sed communi Summorum Pontificum dicitur)
+@Commune/C2:Oratio Gregem
+
+[Oratio] (rubrica cisterciensis)
+@Commune/C2:Oratio1:s/N\./Lucia/

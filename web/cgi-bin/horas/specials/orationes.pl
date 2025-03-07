@@ -53,7 +53,7 @@ sub oratio {
   }
 
   if ( ($rule =~ /Oratio Dominica/i && (!exists($winner{Oratio}) || $hora eq 'Vespera'))
-    || ($winner{Rank} =~ /Quattuor/i && $dayname[0] !~ /Pasc7/i && $version !~ /196/ && $hora eq 'Vespera'))
+    || ($winner{Rank} =~ /Quattuor/i && $dayname[0] !~ /Pasc7/i && $version !~ /196|cist/i && $hora eq 'Vespera'))
   {
     my $name = "$dayname[0]-0";
     if ($name =~ /(?:Epi1|Nat)/i && $version !~ /Monastic/) { $name = 'Epi1-0a'; }
