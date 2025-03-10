@@ -93,6 +93,7 @@ sub capitulum_minor {
   my ($resp, $vers, $comment);
 
   $name .= 'M' if ($version =~ /Monastic/);
+  $name =~ s/Quad/Quad3/ if $version =~ /Praedicatorum/ && $dayname[0] =~ /^Quad[34]/;
 
   if ($resp = $capit{"Responsory $name"}) {
     $resp =~ s/\s*$//;

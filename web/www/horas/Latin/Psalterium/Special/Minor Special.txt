@@ -7,7 +7,7 @@ $Deo gratias
 R.br. Inclína cor meum, Deus, * In testimónia tua.
 R. Inclína cor meum, Deus, * In testimónia tua.
 V. Avérte óculos meos, ne vídeant vanitátem: in via tua vivífica me.
-R. In testimónia tua. 
+R. In testimónia tua.
 &Gloria
 R. Inclína cor meum, Deus, * In testimónia tua.
 
@@ -24,12 +24,12 @@ v. Alter altérius ónera portáte, et sic adimplébitis legem Christi.
 $Deo gratias
 
 [Responsory breve Dominica Sexta]
-R.br. In ætérnum, Dómine, * Pérmanet verbum tuum. 
-R. In ætérnum, Dómine, * Pérmanet verbum tuum. 
+R.br. In ætérnum, Dómine, * Pérmanet verbum tuum.
+R. In ætérnum, Dómine, * Pérmanet verbum tuum.
 V. In sǽculum sǽculi véritas tua.
 R. Pérmanet verbum tuum.
 &Gloria
-R. In ætérnum, Dómine, * Pérmanet verbum tuum. 
+R. In ætérnum, Dómine, * Pérmanet verbum tuum.
 
 [Versum Dominica Sexta]
 V. Dóminus regit me, et nihil mihi déerit.
@@ -67,8 +67,8 @@ $Deo gratias
 R.br. Sana ánimam meam, * Quia peccávi tibi.
 R. Sana ánimam meam, * Quia peccávi tibi.
 V. Ego dixi: Dómine, miserére mei.
-R. Quia peccávi tibi. 
-&Gloria 
+R. Quia peccávi tibi.
+&Gloria
 R. Sana ánimam meam, * Quia peccávi tibi.
 
 [Versum Feria Tertia]
@@ -217,6 +217,67 @@ R. De láqueo venántium.
 &Gloria
 R. Ipse liberávit me * De láqueo venántium.
 
+[Responsory Quad Tertia] (rubrica Praedicatorum)
+R. Partícipem me fac, Deus, ómnium timéntium te.
+* Et custodiéntium mandáta tua.
+V. Aspice in me, et miserére mei secúndum judícium diligéntium nomen tuum.
+R. Et custodiéntium mandáta tua.
+&Gloria
+R. Partícipem me fac, Deus, ómnium timéntium te,
+_
+V. Dicet Dómino: Suscéptor meus es tu.
+R. Et refúgium meum, Deus meus.
+
+[Responsory Quad3 Tertia] (rubrica Praedicatorum)
+R. Bonum mihi, Dómine, quod humiliásti me.
+* Bonum mihi lex oris tui super mília auri, et argénti.
+V. Manus tuæ fecérunt me, et plasmavérunt me: da mihi intelléctum, ut discam mandáta tua. 
+R. Bonum mihi lex oris tui super mília auri, et argénti.
+&Gloria
+R. Bonum mihi, Dómine, quod humiliásti me.
+_
+@:Responsory Quad Tertia:8-9
+
+[Responsory Quad Sexta] (rubrica Praedicatorum)
+R. Ab omni via mala prohíbui pedes meos:
+* Ut custódiam mándata tua Dómine.
+V. A judíciis tuis non declinávi, quia tu legem posuísti mihi.
+R. Ut custódiam mándata tua Dómine.
+&Gloria
+R. Ab omni via mala prohíbui pedes meos.
+_
+@:Responsory Quad TertiaM_
+
+[Responsory Quad3 Sexta] (rubrica Praedicatorum)
+R. Servus tuus ego sum:
+* Da mihi intelléctum, Dómine.
+V. Ut discam mandáta tua.
+R. Da mihi intelléctum, Dómine.
+&Gloria
+R. Servus tuus ego sum.
+_
+@:Responsory Quad TertiaM_
+
+[Responsory Quad Nona] (rubrica Praedicatorum)
+R. Sépties in die laudem dixi tibi, Dómine Deus meus.
+* Ne perdas me.
+V. Errávi sicut ovis quæ períerat: * requíre servum tuum, Dómine, quia mandáta tua non sum oblítus.
+R. Ne perdas me.
+&Gloria
+R. Sépties in die laudem dixi tibi, Dómine Deus meus.
+_
+@:Versum Quad Tertia
+
+[Responsory Quad3 Nona] (rubrica Praedicatorum)
+R. Declára super nos, Deus:
+* Tuam misericórdiam.
+V. Declarátio sermónum tuórum dat intelléctum, Dómine.
+R. Tuam misericórdiam.
+&Gloria
+R. Declára super nos, Deus:, tuam misericórdiam.
+_
+@:Versum Quad Tertia
+
 [Versum Quad Tertia]
 V. Scápulis suis obumbrábit tibi.
 R. Et sub pennis ejus sperábis.
@@ -256,10 +317,15 @@ R. Non timébis a timóre noctúrno.
 (sed rubrica cisterciensis)
 @:Responsory Quad TertiaM_
 
-[Quad Nona]
+[Quad Nona_]
 !Isa 58:7
 v. Frange esuriénti panem tuum, et egénos vagósque induc in domum tuam: cum víderis nudum, óperi eum, et carnem tuam ne despéxeris.
 $Deo gratias
+
+[Quad Nona]
+@:Quad Nona_
+(sed rubrica Praedicatorum)
+@:Quad Nona_:s/\.$/, ait Dóminus omnípotens./m
 
 [Responsory breve Quad Nona]
 R.br. Scuto circúmdabit te * Véritas ejus.
@@ -522,7 +588,7 @@ Amen.
 @:Hymnus Nona:s/lumen/clarum/
 
 [Hymnus Completorium]
-v. Te lucis ante términum, 
+v. Te lucis ante términum,
 Rerum Creátor, póscimus,
 Ut pro tua cleméntia
 Sis præsul et custódia.
@@ -634,7 +700,7 @@ V. Custódi nos, Dómine, ut pupíllam óculi.
 R. Sub umbra alárum tuárum prótege nos.
 
 [Ant 4]
-Salva nos, * Dómine, vigilántes, custódi nos dormiéntes;  ut vigilémus cum Christo, et requiescámus in pace.
+Salva nos, * Dómine, vigilántes, custódi nos dormiéntes; ut vigilémus cum Christo, et requiescámus in pace.
 
 [Ant 4 Quad]
 Evígila super nos, * ætérne Salvátor, ne nos apprehéndat cállidus tentátor, quia tu nobis factus es sempitérnus adjútor.

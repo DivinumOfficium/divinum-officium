@@ -211,7 +211,7 @@ Te cordis ima cóncinant,
 te vox canóra cóncrepet,
 te díligat castus amor,
 te mens adóret sóbria,
-__
+_
 Ut cum profúnda cláuserit
 diem calígo nóctium,
 fides ténebras nésciat
@@ -1014,6 +1014,8 @@ $Deo gratias
 @:Quad Laudes_
 (sed rubrica cisterciensis)
 @:Quad Laudes_C
+(sed rubrica praedicatorum)
+@Psalterium/Special/Minor Special:Quad Tertia
 
 [Responsory Quad Laudes]
 R.br. Ipse liberávit me * de láqueo venántium.
@@ -1079,13 +1081,18 @@ Amen.
 
 [Quad Versum 2]
 @:Quad Versum 3
-(sed rubrica cisterciensis)
+(sed rubrica cisterciensis aut rubrica praedicatorum)
 @Psalterium/Special/Minor Special:Versum Quad Sexta
 
-[Quad Vespera]
+[Quad Vespera_]
 !Joël 2:17
 v. Inter vestíbulum et altáre plorábunt sacerdótes, minístri Dómini, et dicent: Parce, Dómine, parce pópulo tuo: et ne des hereditátem tuam in oppróbrium, ut dominéntur eis natiónes.
 $Deo gratias
+
+[Quad Vespera]
+@:Quad Vespera_
+(sed rubrica Praedicatorum)
+@Psalterium/Special/Minor Special:Quad Tertia
 
 [Responsory Quad Vespera]
 R.br. Scápulis suis * obumbrábit tibi.
