@@ -284,6 +284,7 @@ sub getordinarium {
   my @script;
 
   if ($Propers && (@script = do_read("$datafolder/Latin/Ordo/Propers.txt"))) {
+    $_ = "$_\n" for @script;
     return @script;
   }
   my $fname = 'Ordo';
