@@ -162,19 +162,36 @@ Sabbato = Intret orátio mea * in conspéctu tuo, Dómine.
 4 = Commendémus nosmetípsos * in multa patiéntia, in jejúniis multis, per arma justítiæ.
 5 = Per arma justítiæ * virtútis Dei commendémus nosmetípsos in multa patiéntia.
 
-[Quad5]
+[Quad5_]
 1 = Líbera me, Dómine, * et pone me juxta te: et cujúsvis manus pugnet contra me.
 2 = Judicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine, Deus meus.
 3 = Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi.
 4 =
 5 = Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ.
 
-[Quad5] (rubrica cisterciensis)
-1 = 
+[Quad5 OP1]
+1 = Animæ impiórum fremébant advérsum me: et gravátum est cor meum super eos.
+
+[Quad5 OP]
+@:Quad5 OP1
+@:Quad5_:2-5
+
+[Quad5 Cist2]
 2 = Vide, Dómine, * afflictiónem meam, quóniam eréctus est inimícus meus.
-3 = Judicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine, Deus meus.
-4 = Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi.
-5 = Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ.
+
+[Quad5 Cist]
+1 =
+@:Quad5 Cist2
+@:Quad5_:2
+@:Quad5_:3
+@:Quad5_:5
+
+[Quad5]
+@:Quad5_
+(sed rubrica cisterciensis)
+@:Quad5 Cist
+(sed rubrica praedicatorum)
+@:Quad5 OP
 
 [Pasch]
 Allelúja, * allelúja, allelúja.
