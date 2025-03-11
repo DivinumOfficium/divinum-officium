@@ -92,7 +92,7 @@ ALL_LANGUAGES_NAMES=(Czech Danish German English Spanish French Italian Latin La
 YEAR_RE='^[0-9]+$'
 
 #parse parameters
-while getopts "hy:t:pvmr:c:o:l:f:l:b" OPTION
+while getopts "hy:t:pvmr:c:o:l:b:f" OPTION
 do
      case $OPTION in
          h)
@@ -165,7 +165,7 @@ do
              done
              echo "Invalid base language." >&2; exit 1
              ;;
-		     f)
+         f)
              NOFANCYCHARS=0
              ;;
          ?)
@@ -377,10 +377,9 @@ outputMonthTOC() {
 
 printTOC_Header() {
   lang_codes=""
-  if [[ "$ALANG" != "Latin" ]]; then
+  if [[ "$ALANG" != "Latin" ]] || [[ "$ALANG" != "$BLANG" ]]; then
     lang_codes=" (${ALANG_CODE}"
-
-    if [[ "$BLANG" != "Latin" ]] && [[ "$BLANG" != "$ALANG" ]]; then
+    if [[ "$BLANG" != "$ALANG" ]]; then
       lang_codes="$lang_codes-${BLANG_CODE})"
     else
       lang_codes="$lang_codes)"
@@ -458,17 +457,10 @@ outputMonthOPFSpine() {
 
 #Expects the second part of the title as a parameter.
 printOPF_Header() {
-
-  lang_codes="<dc:language>$ALANG_CODE</dc:language>"
-  if [ "$BLANG" != "Latin" ]; then
-    lang_codes="$lang_codes
-<dc:language>$BLANG_CODE</dc:language>"
-  fi
-
   lang_disp=""
-  if [ "$ALANG" != "Latin" ]; then
+  if [[ "$ALANG" != "Latin" ]] || [[ "$ALANG" != "$BLANG}" ]]; then
     lang_disp=" ($ALANG"
-    if [[ "$BLANG" != "Latin" ]] && [[ "$BLANG" != "$ALANG" ]]; then
+    if [[ "$BLANG" != "$ALANG" ]]; then
       lang_disp="$lang_disp-$BLANG)"
     else
       lang_disp="$lang_disp)"
@@ -480,12 +472,20 @@ printf '<?xml version="1.0" encoding="utf-8"?>
   <metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <meta name="cover" content="cover"/><dc:date>'
 date +"%Y-%m-%dT%H:%M:%S:%z"
-printf "</dc:date><dc:title>Breviarium ${1}${lang_disp}</dc:title>
+printf "</dc:date><dc:title>Breviarium $1$lang_disp</dc:title>
 <dc:creator>Divinum Officium</dc:creator>
 <dc:publisher></dc:publisher>
 <dc:subject></dc:subject>
 <dc:description></dc:description>
-${lang_codes}
+<dc:created>"
+date +"%Y-%m-%dT%H:%M:%S:%z"
+printf "</dc:created>
+<dc:language>$ALANG_CODE</dc:language>"
+if [[ "$ALANG" != "$BLANG" ]]; then
+  printf "
+<dc:language>$BLANG_CODE</dc:language>"
+fi
+printf "
 <dc:identifier id=\"uuid_id\" opf:scheme=\"uuid\">f85e2f34-fa9b-4211-ad58-2c74dc43861f</dc:identifier>
 </metadata>
 <manifest>
@@ -718,20 +718,16 @@ createEPUBMonth() {
 
 createEPUBYear() {
   lang_name=""
-  lang_abbr=""
-  if [[ "$ALANG" != "Latin" ]]; then
+  if [[ "$ALANG" != "Latin" ]] || [[ "$ALANG" != "$BLANG" ]]; then
     lang_name=" ($ALANG"
-    lang_abbr=$ALANG_CODE
-
-    if [[ "$BLANG" != "Latin" ]]; then
+    if [[ "$BLANG" != "$ALANG" ]]; then
       lang_name="$lang_codes-$BLANG)"
-      lang_abbr="$ALANG_CODE-$BLANG_CODE"
     else
       lang_name="$lang_codes)"
     fi
   fi
-	OPF_FILENAME="breviarium$YEAR$RUBRICS_NAME$lang_abbr.opf"
-	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR$RUBRICS_NAME$lang_abbr.epub"
+	OPF_FILENAME="breviarium$YEAR$RUBRICS_NAME.opf"
+	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR$RUBRICS_NAME.epub"
 	TOC_FILENAME=$TOC_FILENAME_YEAR
 	TITLE="Divinum Officium$RUBRICS_NAME - $YEAR - $lang_name"
 
