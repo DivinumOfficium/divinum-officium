@@ -47,7 +47,10 @@ OPTIONS:
 
    -o PATH     The output directory. Defaults to "output".
 
-   -l LANG     The language for right side if required
+   -l LANG     The language for the left side if required. Defaults to Latin.
+                Valid Values: Bohemice Dansk Deutsch English Espanol Francais Italiano Latin Latin-Bea Magyar Polski Polski-Newer Portugues
+
+   -b LANG     The base language in which to display the office. Defaults to Latin.
 
    -f          If specified, use "fancy" characters: [℟ ℣ +︎ ✠ ✙︎]
 
@@ -58,8 +61,11 @@ EOF
 }
 
 #default values for input variables
+ALANG=Latin
 BLANG=Latin
-YEAR_FROM=`date +%Y`
+ALANG_CODE=la
+BLANG_CODE=la
+YEAR_FROM=$(date +%Y)
 YEAR_TO=$YEAR_FROM
 PRIEST='' #has to be empty or '&priest=yes'
 VOTIVE='' #='C12' for Parvum B.M.V.
@@ -79,10 +85,14 @@ ALL_RUBRICS_CODES=(1570 1888 1906 DA 1955 1960 Newcal 1617 1930 1963 1951 Altova
 ALL_RUBRICS=("Tridentine - 1570" "Tridentine - 1888" "Tridentine - 1906" "Divino Afflatu - 1954" "Reduced - 1955" "Rubrics 1960 - 1960" "Rubrics 1960 - 2020 USA" "Monastic - 1617" "Monastic - 1930" "Monastic - 1963" "Ordo Cisterciensis - 1951" "Ordo Cisterciensis - Abbatia B.M.V. de Altovado" "Ordo Praedicatorum - 1962")
 ALL_RUBRICS_NAME=(_1570 _1888 _1906 _DA _1955 "" _NC _M1617 _M1930 Monastic _Cist _Altovado _OP)
 
+# Languages
+ALL_LANGUAGES_CODES=(cs da de en es fr it la la-bea hu nl pl pt pl-new)
+ALL_LANGUAGES_NAMES=(Czech Danish German English Spanish French Italian Latin Latin-Bea Hungarian Dutch Polish Portuguese Polish-Newer)
+
 YEAR_RE='^[0-9]+$'
 
 #parse parameters
-while getopts "hy:t:pvmr:c:o:l:f" OPTION
+while getopts "hy:t:pvmr:c:o:l:b:f" OPTION
 do
      case $OPTION in
          h)
@@ -134,10 +144,28 @@ do
              #value is validated later
              ;;
          l)
-             BLANG=$OPTARG
-             #TODO: validate the value
+             # l for "Language" to be translated to
+             for i in $(seq 0 ${#ALL_LANGUAGES_NAMES[@]}); do
+                if [[ ${ALL_LANGUAGES_NAMES[$i]} == $OPTARG ]]; then
+                  BLANG=${ALL_LANGUAGES_NAMES[$i]}
+                  BLANG_CODE=${ALL_LANGUAGES_CODES[$i]}
+                  continue 2
+                fi
+             done
+             echo "Invalid target language." >&2; exit 1
              ;;
-		     f)
+         b)
+             # b for "Base" language (Latin is the default)
+             for i in $(seq 0 ${#ALL_LANGUAGES_NAMES[@]}); do
+               if [[ ${ALL_LANGUAGES_NAMES[$i]} == $OPTARG ]]; then
+                 ALANG=${ALL_LANGUAGES_NAMES[$i]}
+                 ALANG_CODE=${ALL_LANGUAGES_CODES[$i]}
+                 continue 2
+               fi
+             done
+             echo "Invalid base language." >&2; exit 1
+             ;;
+         f)
              NOFANCYCHARS=0
              ;;
          ?)
@@ -233,7 +261,6 @@ foreachMonthInYear() {
 }
 
 foreachHourInDay() {
-
 	for H in $(seq 0 $HORA_INDEX_LAST); do
 		formatFilename
 		$1
@@ -312,9 +339,9 @@ foreachHourInRange() {
 generateHour() {
 	echo -ne "Generating $FILENAME                \r" # with spaces to clean the line
 	if [[ ${H} -eq 8 && $MISSA ]]; then
-		$EMISSACMD "date=$DATE_SCRIPT&command=&version=$RUBRICS&lang2=$BLANG&nofancychars=$NOFANCYCHARS" > $WDIR/$FILENAME
+		$EMISSACMD "date=$DATE_SCRIPT&command=&version=$RUBRICS&lang1=$ALANG&lang2=$BLANG&nofancychars=$NOFANCYCHARS" > $WDIR/$FILENAME
 	else
-		$EOFFICCIUMCMD "date1=$DATE_SCRIPT&command=pray${HORAS_NAMES[${H}]}&version=$RUBRICS&testmode=regular&lang2=$BLANG&votive=$VOTIVE$PRIEST&linkmissa=$MISSA&nofancychars=$NOFANCYCHARS" > $WDIR/$FILENAME
+		$EOFFICCIUMCMD "date1=$DATE_SCRIPT&command=pray${HORAS_NAMES[${H}]}&version=$RUBRICS&testmode=regular&lang1=$ALANG&lang2=$BLANG&votive=$VOTIVE$PRIEST&linkmissa=$MISSA&nofancychars=$NOFANCYCHARS" > $WDIR/$FILENAME
 	fi
 }
 
@@ -349,9 +376,19 @@ outputMonthTOC() {
 }
 
 printTOC_Header() {
+  lang_codes=""
+  if [[ "$ALANG" != "Latin" ]] || [[ "$ALANG" != "$BLANG" ]]; then
+    lang_codes=" (${ALANG_CODE}"
+    if [[ "$BLANG" != "$ALANG" ]]; then
+      lang_codes="$lang_codes-${BLANG_CODE})"
+    else
+      lang_codes="$lang_codes)"
+    fi
+  fi
+
 	printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">
 <html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"la\">
-<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><title>Breviarium $YEAR-$MONTH$RUBRICS_NAME</title></head><body><div>"
+<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><title>Breviarium $YEAR-$MONTH$RUBRICS_NAME$lang_codes</title></head><body><div>"
 }
 printTOC_Footer() {
 	printf '</div></body></html>\n'
@@ -380,9 +417,9 @@ outputYearToFile() {
 		printf "<a href=\"#m$M\">$M</a> "
 	done
 
-	foreachMonthInYear outputMonthTOC
-	printTOC_Footer
-	exec 1>&6 6>&-
+  foreachMonthInYear outputMonthTOC
+  printTOC_Footer
+  exec 1>&6 6>&-
 }
 
 
@@ -420,18 +457,35 @@ outputMonthOPFSpine() {
 
 #Expects the second part of the title as a parameter.
 printOPF_Header() {
+  lang_disp=""
+  if [[ "$ALANG" != "Latin" ]] || [[ "$ALANG" != "$BLANG}" ]]; then
+    lang_disp=" ($ALANG"
+    if [[ "$BLANG" != "$ALANG" ]]; then
+      lang_disp="$lang_disp-$BLANG)"
+    else
+      lang_disp="$lang_disp)"
+    fi
+  fi
 
 printf '<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
   <metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <meta name="cover" content="cover"/><dc:date>'
 date +"%Y-%m-%dT%H:%M:%S:%z"
-printf "</dc:date><dc:title>Breviarium $1</dc:title>
+printf "</dc:date><dc:title>Breviarium $1$lang_disp</dc:title>
 <dc:creator>Divinum Officium</dc:creator>
 <dc:publisher></dc:publisher>
 <dc:subject></dc:subject>
 <dc:description></dc:description>
-<dc:language>la</dc:language>
+<dc:created>"
+date +"%Y-%m-%dT%H:%M:%S:%z"
+printf "</dc:created>
+<dc:language>$ALANG_CODE</dc:language>"
+if [[ "$ALANG" != "$BLANG" ]]; then
+  printf "
+<dc:language>$BLANG_CODE</dc:language>"
+fi
+printf "
 <dc:identifier id=\"uuid_id\" opf:scheme=\"uuid\">f85e2f34-fa9b-4211-ad58-2c74dc43861f</dc:identifier>
 </metadata>
 <manifest>
@@ -469,27 +523,27 @@ outputMonthToFileOPF() {
 	exec > "breviarium$YEAR-$MONTH$RUBRICS_NAME.opf"
 	TOC_FILENAME=$TOC_FILENAME_MONTH
 
-	printOPF_Header "$YEAR-$MONTH$RUBRICS_NAME"
-	outputMonthOPF
-	printOPF_Middle
-	outputMonthOPFSpine
-	printOPF_Footer
+  printOPF_Header "$YEAR-$MONTH$RUBRICS_NAME"
+  outputMonthOPF
+  printOPF_Middle
+  outputMonthOPFSpine
+  printOPF_Footer
 
-	exec 1>&6 6>&-
+  exec 1>&6 6>&-
 }
 
 outputYearToFileOPF() {
 	cd $WDIR
 	exec 6>&1
-	exec > "breviarium$YEAR$RUBRICS_NAME.opf"
+  exec > "breviarium$YEAR$RUBRICS_NAME.opf"
 
-	TOC_FILENAME=$TOC_FILENAME_YEAR
-	printOPF_Header "$YEAR$RUBRICS_NAME"
-	foreachMonthInYear outputMonthOPF
-	printOPF_Middle
-	foreachMonthInYear outputMonthOPFSpine
-	printOPF_Footer
-	exec 1>&6 6>&-
+  TOC_FILENAME=$TOC_FILENAME_YEAR
+  printOPF_Header "$YEAR$RUBRICS_NAME"
+  foreachMonthInYear outputMonthOPF
+  printOPF_Middle
+  foreachMonthInYear outputMonthOPFSpine
+  printOPF_Footer
+  exec 1>&6 6>&-
 }
 
 generateOPF() {
@@ -618,17 +672,16 @@ epubCleanup() {
 }
 
 packEPUB() {
-	cd $WDIR
-
+	cd "$WDIR"
 	#remove potentially existing epub
 	:>$EPUB_FILENAME
 	rm $EPUB_FILENAME
 
-	#mimetype goes first, uncompressed
-	zip -X0 $EPUB_FILENAME "mimetype"
+  #mimetype goes first, uncompressed
+  zip -q -X0 "$EPUB_FILENAME" "mimetype"
 
-	#then all other files
-	zip -Xur9D $EPUB_FILENAME META-INF/container.xml toc.ncx $TOC_FILENAME titlepage.xhtml about.xhtml content.opf s.css $COVER_FILENAME -@ <filelist
+  #then all other files
+  zip -q -Xur9D "$EPUB_FILENAME" META-INF/container.xml toc.ncx "$TOC_FILENAME" titlepage.xhtml about.xhtml content.opf s.css "$COVER_FILENAME" -@ <filelist
 }
 
 
@@ -656,27 +709,36 @@ createEPUBMonth() {
 	PLAYORDER_NUM=2
 	H=0
 	foreachDayInMonth outputTOCNCXEntry
-	initEPUB_End
+	initEPUB_End 1>&2 "${EPUB_FILENAME}.log"
 
-	makeEPUBfilelistMonth
-	packEPUB
+	makeEPUBfilelistMonth 1>&2 "${EPUB_FILENAME}.log"
+	packEPUB 1>&2 "${EPUB_FILENAME}.log"
 	#epubCleanup
 }
 
 createEPUBYear() {
+  lang_name=""
+  if [[ "$ALANG" != "Latin" ]] || [[ "$ALANG" != "$BLANG" ]]; then
+    lang_name=" ($ALANG"
+    if [[ "$BLANG" != "$ALANG" ]]; then
+      lang_name="$lang_codes-$BLANG)"
+    else
+      lang_name="$lang_codes)"
+    fi
+  fi
 	OPF_FILENAME="breviarium$YEAR$RUBRICS_NAME.opf"
 	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR$RUBRICS_NAME.epub"
 	TOC_FILENAME=$TOC_FILENAME_YEAR
-	TITLE="Divinum Officium$RUBRICS_NAME - $YEAR"
+	TITLE="Divinum Officium$RUBRICS_NAME - $YEAR - $lang_name"
 
 	initEPUB
 	PLAYORDER_NUM=0
 	H=0
 	foreachDayInYear outputTOCNCXEntry
-	initEPUB_End
+	initEPUB_End 1>&2 "${EPUB_FILENAME}.log"
 
-	makeEPUBfilelistYear
-	packEPUB
+	makeEPUBfilelistYear 1>&2 "${EPUB_FILENAME}.log"
+	packEPUB 1>&2 "${EPUB_FILENAME}.log"
 	epubCleanup
 }
 
@@ -695,25 +757,33 @@ createEPUBs() {
 
 convertMOBIMonth() {
 	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR-$MONTH$RUBRICS_NAME.epub"
-	$OPTIONAL_KINDLEGEN_PATH $EPUB_FILENAME
+	echo -ne "Converting $EPUB_FILENAME                \r" >> "${EPUBDIR}/kindlegen.log"
+	$OPTIONAL_KINDLEGEN_PATH $EPUB_FILENAME &>> "${EPUBDIR}/kindlegen.log"
+	echo -ne "Finished Converting $EPUB_FILENAME                \r" >> "${EPUBDIR}/kindlegen.log"
+  echo -ne "--------------------------------------------------\r" >> "${EPUBDIR}/kindlegen.log"
 }
 
 convertMOBIYear() {
 	EPUB_FILENAME="$EPUBDIR/breviarium$YEAR$RUBRICS_NAME.epub"
-	$OPTIONAL_KINDLEGEN_PATH $EPUB_FILENAME
+	echo -ne "Converting $EPUB_FILENAME                \r" >> "${EPUBDIR}/kindlegen.log"
+	$OPTIONAL_KINDLEGEN_PATH $EPUB_FILENAME &>> "${EPUBDIR}/kindlegen.log"
+	echo -ne "Finished Converting $EPUB_FILENAME                \r" >> "${EPUBDIR}/kindlegen.log"
+	echo -ne "--------------------------------------------------\r" >> "${EPUBDIR}/kindlegen.log"
 }
 
 createMOBIs() {
 	if [[ ! -e "$OPTIONAL_KINDLEGEN_PATH" ]]
 	then
-		echo "\033[1m:: KindleGen not found in $OPTIONAL_KINDLEGEN_PATH, skipping the conversion to of MOBI format. \033[0m"
+		echo "\033[1m:: KindleGen not found in ${OPTIONAL_KINDLEGEN_PATH}, skipping the conversion to of MOBI format. \033[0m"
 	else
+	  # clean up log file to start fresh...
+    :> "${EPUBDIR}/kindlegen.log"
 		echo -e "\033[1m:: Starting the conversion to MOBI format for each month\033[0m"
 		foreachMonthInRange convertMOBIMonth
 		echo -e "\033[1m:: Starting the conversion to MOBI format for each year\033[0m"
 		foreachYear convertMOBIYear
 		echo -e "\033[1m:: Finished the conversion to MOBI format\033[0m"
-	fi	
+	fi
 }
 
 #################################################################################################################
