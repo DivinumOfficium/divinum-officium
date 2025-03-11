@@ -8,6 +8,9 @@ Limit Benedictiones, Oratio
 Capitulum Versum 2 ad Laudes tantum
 Feria
 
+[Ant Laudes] (rubrica cisterciensis)
+@Tempora/Quad6-5::s/\n/_/smg s/_/;;50\n/ s/_/;;142\n/ s/_/;;62;66\n/ s/_/;;225\n/ s/$/;;148;149;150\n/s
+
 [Oratio]
 @Tempora/Quad6-5
 

@@ -12,25 +12,31 @@ Minores sine Antiphona
 Feria
 
 [Ant Vespera]
-I will take the cup of salvation; * and call upon the Name of the Lord.;;115
-With them * that hate peace I was peaceable; when I spoke unto them they fought against me without a cause.;;119
-O Lord, preserve me * from the wicked man.;;139
-Keep me * from the snare which they have laid for me, and the gins of the workers of iniquity.;;140
-I looked * on my right hand and beheld: but there was no man that would know me.;;141
+Kalich * spásy vezmu a budu vzývat jméno Páně.;;115
+S těmito, * kdo nenávidí mír, jsem byl mírumilovný: a když jsem s nimi mluvil, zbytečně mě napadali.;;119
+Od lidí * nepravých vysvoboď mne, Pane.;;139
+Chraň mě * od léčky, kterou na mě přichystali, a od pastí pachatelů nepravostí.;;140
+Pohlédl jsem * napravo, a viděl jsem, že tam nebyl nikdo, kdo by mě poznal.;;141
 
 [Oratio Matutinum]
-v. Look down, we beseech thee, O Lord, on this thy family, for which our Lord Jesus Christ did not hesitate to be delivered up into the hands of wicked men, and to suffer the torment of the Cross.
-!Finish silently
+v. Shlédni, prosíme, Pane, na tuto svou rodinu, pro niž náš Pán Ježíš Kristus neváhal vydat se v ruce zlých, a podstoupit kruté muky kříže.
+!V tichosti se dokončí
 $Qui tecum
 
+[Oratio Matutinum] (rubrica cisterciensis)
+v. Shlédni, prosíme, Pane, na tuto svou rodinu, pro niž náš Pán Ježíš Kristus neváhal vydat se v ruce zlých, a podstoupit kruté muky kříže.
+!A v tichosti všichni dokončí 
+$Qui tecum
+
+
 [Oratio]
-v. Christ became obedient for us unto death.
-!in secret
+v. Kristus se pro nás stal poslušným až k smrti.
+!v tichosti
 $Pater noster
-!lower voice
+!o něco hlasitěji
 _
 &psalm(50)
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica nisi rubrica cisterciensis omittitur)
 @:Oratio Matutinum
 
 [Prelude Vespera] (rubrica 1955 aut rubrica 1960)
@@ -179,21 +185,21 @@ R. That they might take Jesus by subtilty, and kill Him: they came out, as again
 R. The elders of the people consulted * That they might take Jesus by subtilty, and kill Him: they came out, as against a thief, with swords and staves.
 
 [Ant Laudes]
-O Lord, Thou shalt be justified * when Thou speakest, and be clear when Thou art judged.
-The Lord was brought as a lamb * to the slaughter, and He opened not His mouth.
-Mine heart is broken within me * all my bones tremble.
-O Lord, Thou hast spoken unto us * in thy strength, and in thy Holy Banquet.
-He was offered up because He willed it * and He bore our sins.
+Jsi spravedlivý, Pane, * ve svých výrocích, a zvítězíš, pokud budeš souzen.
+Pán * jako ovce na porážku byl veden, a neotevřel svá ústa.
+Zkroušeno jest * má srdce v mém nitru, roztřásly se všechny mé kosti.
+Byl povzbuzen * ve tvé ctnosti, a ve tvém svatém pokrmu, Pane.
+Byl obětován * neboť on sám to chtěl, a naše hříchy on sám nesl.
 
 [Versum 2]
-V. Mine own familiar friend, in whom I trusted;
-R. Which did eat of my bread, hath lifted up his heel against me.
+V. Člověk mého pokoje, v něhož doufám.
+R. Neboť jedl můj chléb, a přesto udělal svou zradu proti mě ještě větší.
 
 [Ant 2]
-Now he that betrayed Him * gave them a sign, saying: Whomsoever I shall kiss, That Same is He: hold Him fast.
+Zrádce pak * dal jim znamení, řka: Ten, kterého políbím, to je on, zadržte je
 
 [Ant 3]
-And, as they were eating * Jesus took bread, and blessed, and broke it, and gave to His disciples.
+Když večeřeli * vzal Ježíš chléb, dobrořečil, a lámal, a dal svým učedníkům.
 
 [Special Completorium]
 !Special Completorium
@@ -218,9 +224,9 @@ $Pater noster
 !lower voice
 _
 &psalm(50)
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica nisi rubrica cisterciensis omittitur)
 @:Oratio Matutinum
 (sed rubrica 1955 aut rubrica 1960 loco horum versuum dicuntur)
-v. Visit, we beseech thee, O Lord, this dwelling, and drive far from it the snares of the enemy. Let thy holy angels dwell herein to preserve us in peace and let thy blessing be always upon us.
-!Finish silently
+v. Navštiv, Pane, prosíme tě, tento příbytek, a veškeré úklady nepřítele od něj daleko odežeň; Tvoji svatí Andělé nechť se v něm zabydlí, aby nás v míru zachovali; a tvé požehnání ať s nám zůstává navždy.
+!Dokončí se potichu.
 $Per Dominum
