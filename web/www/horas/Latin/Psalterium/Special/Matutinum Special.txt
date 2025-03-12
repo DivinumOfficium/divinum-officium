@@ -29,8 +29,16 @@ Prope est jam Dóminus, * Veníte, adorémus.
 [Invit Quad]
 Non sit vobis vanum mane súrgere ante lucem: * Quia promísit Dóminus corónam vigilántibus.
 
-[Invit Quad5]
+[Invit Quad5_]
 Hódie, si vocem Dómini audiéritis, * Nolíte obduráre corda vestra.
+
+[Invit Quad5 OP]
+Adorémus Dóminum, * Qui nos redémit per crucem.
+
+[Invit Quad5]
+@:Invit Quad5_
+(sed rubrica Praedicatorum)
+@:Invit Quad5 OP
 
 [Invit Pasch]
 Surréxit Dóminus vere, * Allelúja.
@@ -409,6 +417,33 @@ Amen.
 @:Hymnus Quad:22
 @:Hymnus Quad:21
 @:Hymnus Quad:25-45
+
+[HymnusM Quad] (rubrica Praedicatorum)
+Summi largítor prǽmii,
+Spes qui es única mundi,
+Preces inténde servórum,
+Ad te devóte clamántium.
+_
+Nostra te consciéntia
+Grave offendísse monstra:
+Quam emúndes, supplicamus,
+Ab ómnibus piáculis.
+_
+Si rénuis, quis tríbuet?
+Indúlge, qui potens es:
+Te corde rogáre mundo
+Fac nos precámur, Dómine.
+_
+Ergo nunc accépta nostrum,
+Qui sacrásti jejúnium:
+Quo mýstuce paschália
+Capiámus sacraménta.
+_
+Summa nobis hoc cónferat
+In Deitáte Trínitas:
+In qua gloriátur unus
+Per cuncta sǽcula Deus.
+Amen.
 
 [Hymnus Quad]
 {:H-MatQuad:}v. Ex more docti mýstico
