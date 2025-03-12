@@ -1,0 +1,122 @@
+@Sancti/08-15t
+
+[Rank] (rubrica 1930)
+In Assumptione Beatæ Mariæ Virginis;;Duplex I classis cum Octava Communi;;7;;ex C11
+
+[Rule]
+12 lectiones
+Doxology=Nat
+
+[Responsory Vespera]
+@Sancti/08-15t:Responsory Sexta:1-6
+
+[AntMatutinumM]
+Sicut lætántium * ómnium nostrum habitátio est in te, † sancta Dei Génetrix.;;86
+
+[Ant Matutinum 3N]
+Hortus conclúsus * es Dei Génitrix, hortus conclúsus, fons signátus: † surge própera, amíca mea, et veni.
+
+[Ant Matutinum]
+@Sancti/08-15t::1-3
+@Sancti/08-15t::6-7
+@CommuneM/C11:AntMatutinumM:1
+@Sancti/08-15t::4-5
+@CommuneM/C11:AntMatutinumM:2
+@:AntMatutinumM:1
+@Sancti/08-15t::11-13
+@CommuneM/C11:AntMatutinumM:3
+@Sancti/08-15t::9-10
+;;249;250;251
+@Sancti/08-15t::14-15
+
+[Lectio1]
+@Sancti/08-15t:Lectio1:1-5 s/-4/-3/
+
+[Lectio2]
+@Sancti/08-15t:Lectio1:2 s/1-4/4-6/
+@Sancti/08-15t:Lectio1:6
+@Sancti/08-15t:Lectio2:2-3
+
+[Lectio3]
+@Sancti/08-15t:Lectio2:1 s/5-9/7-10/
+@Sancti/08-15t:Lectio2:4-6
+@Sancti/08-15t:Lectio3:2
+
+[Lectio4]
+@Sancti/08-15t:Lectio3:1 s/10-/11-/
+@Sancti/08-15t:Lectio3:3-8
+
+[Responsory4]
+R. Super salútem et omnem pulchritúdinem dilécta es a Dómino, † et Regína cælórum vocári digna es
+* Gaudent chori angelórum consórtes et concíves nostri.
+V. Sola namque sine exémplo placuísti fémina Christo.
+R. Gaudent chori angelórum consórtes et concíves nostri.
+
+[Lectio5]
+@Sancti/08-15t:Lectio4_:s/Hódie Eden.*//
+
+[Responsory5]
+@Commune/C11:Responsory6:s/.&Gloria.R./ */s
+
+[Lectio6]
+@Sancti/08-15t:Lectio4_:s/.*Hódie Eden/Hódie Eden/s s/$/~/
+@Sancti/08-15t:Lectio5_:s/ Ex qua.*//
+
+[Responsory6]
+@Commune/C11:Responsory8
+
+[Lectio7]
+@Sancti/08-15t:Lectio5_:s/.*Ex qua/Ex qua/ s/$/~/
+@Sancti/08-15t:Lectio6_:s/ Hanc.*//
+
+[Responsory7]
+@Commune/C11:Responsory3
+
+[Lectio8]
+@Sancti/08-15t:Lectio6_:s/.*Hanc/Hanc/
+
+[Responsory8]
+R. Ista est speciósa inter filias Jerúsalem, † sicut vidístis eam plenam caritáte et dilectióne
+* In cubílibus et in hortis arómatum.
+V. Ista est quæ ascéndit de desérto delíciis áffluens.
+R. In cubílibus et in hortis arómatum.
+
+[Lectio9]
+@Sancti/08-15t:Lectio7:s/ Verumtamen.*//
+
+[Responsory9]
+@Sancti/08-15:Responsory7
+
+[Lectio10]
+@Sancti/08-15t:Lectio7:s/.*Verumtamen/Verumtamen/s s/$/~/
+@Sancti/08-15t:Lectio8:s/ Audivimus.*//
+
+[Responsory10]
+@Sancti/08-15:Responsory8
+
+[Lectio11]
+@Sancti/08-15t:Lectio8:s/.*Audivimus/Audivimus/
+
+[Responsory11]
+R. Hódie María virgo cælos ascéndit: gaudéte
+* Quia cum Christo regnat in ætérnum.
+V. Assúmpta est María in cælum: † gaudent Angeli laudántes benedícunt Dóminum.
+R. Quia cum Christo regnat in ætérnum.
+
+[Lectio12]
+@Sancti/08-15t:Lectio9
+
+[Responsory12]
+@Commune/C11:Responsory7
+
+[Responsory Laudes]
+@Sancti/08-15t:Responsory Nona:s/._.*//s
+
+[Responsory TertiaM]
+@:Versum 1
+
+[Responsory SextaM]
+@Sancti/08-15t:Responsory Tertia:8-9
+
+[Responsory NonaM]
+@Sancti/08-15t:Responsory Sexta:8-9

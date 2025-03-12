@@ -1,0 +1,25 @@
+[Lectio5]
+@Sancti/08-15t:Lectio4_:s/This day the Eden.*//
+
+[Lectio6]
+@Sancti/08-15t:Lectio4_:s/.*This day the Eden/This day the Eden/s s/$/~/
+@Sancti/08-15t:Lectio5_:s/ From.*//
+
+[Lectio7]
+@Sancti/08-15t:Lectio5_:s/.*From/From/ s/$/~/
+@Sancti/08-15t:Lectio6_:s/ But this.*//
+
+[Lectio8]
+@Sancti/08-15t:Lectio6_:s/.*But this/But this/
+
+[Lectio9]
+@Sancti/08-15t:Lectio7:s/ Nevertheless.*//
+
+[Lectio10]
+@Sancti/08-15t:Lectio7:s/.*Nevertheless/Nevertheless/s s/$/~/
+@Sancti/08-15t:Lectio8:s/ We have heard.*//
+
+[Lectio11]
+@Sancti/08-15t:Lectio8:s/.*We have heard/We have heard/
+
+
