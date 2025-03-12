@@ -24,7 +24,7 @@ sub vernaculars {
 
 sub liturgical_color {
   $_ = shift;
-  return 'blue' if (/(?:Beat|Sanct)(?:ae|æ) Mari|B\. ?M\. ?V\./ && !/Vigil/);
+  return 'blue' if (/(?:Beat|Sanct)(?:ae|æ) Mari/ && !/Vigil/);
   return 'red' if (/(?:Vigilia Pentecostes|Quattuor Temporum Pentecostes|Decollatione|Martyr)/i);
   return 'grey' if (/(?:Defunctorum|Parasceve|Morte)/i);
   return 'black' if (/^In Vigilia Ascensionis|^In Vigilia Epiphaniæ/);
