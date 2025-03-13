@@ -766,7 +766,7 @@ sub getsuffragium {
   if ($version =~ /altovadensis/i && $collectcount == 2 && $commune !~ /C1[012]/) {
     $suffr =~ s/\n\!.*//s;
     my $conclBMV = $suffr{'Suffragium ConclusioBMV'};
-    $suffr =~ s/$/~\n$conclBMV/s;
+    $suffr =~ s/$/~\n$conclBMV/s unless $suffr =~ /\$Per eumdem|\$Qui tecum|\$Per Dominum/;
     setbuild1('Suffragium altovadense:', "limited to three collects total");
   }
 
