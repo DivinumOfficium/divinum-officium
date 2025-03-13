@@ -1855,8 +1855,13 @@ sub spell_var {
     $t = join('', @parts);
   } else {
     $t =~ s/Génetrix/Génitrix/g;
+    $t =~ s/Genetrí/Genitrí/g;
     $t =~ s/\bco(t[ií]d[ií])/quo$1/g;
     $t =~ s/(allelú)ja/$1ia/gi if $version =~ /cist/i;
+    $t =~ s/(c)(æ|ae)l/$1œl/gi if $version =~ /cist/i;
+    $t =~ s/(c)([aá]r[ií])(t|ss)/$1h$2$3/gi if $version =~ /cist/i;
+    $t =~ s/>aríssim/>haríssim/gi if $version =~ /cist/i;
+    $t =~ s/(A|a)b(i|í)ci/$1bj$2ci/gi if $version =~ /cist/i;
   }
   return $t;
 }

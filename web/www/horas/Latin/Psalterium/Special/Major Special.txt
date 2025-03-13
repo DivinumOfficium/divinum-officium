@@ -1789,14 +1789,14 @@ _
 @:Suffragium BMV Ant:2
 _
 @:Versum et Oratio BMV
-(sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis  loco horum versuum dicitur)
-@Psalterium/Mariaant:Quadragesimae: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
-(sed Adventus dicitur)
-@Psalterium/Mariaant:Advent: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
+(sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis loco horum versuum dicitur)
+@Psalterium/Mariaant:Quadragesimae: s/.*v\./Ant. / s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
+(sed Adventus loco horum versuum dicitur)
+@Psalterium/Mariaant:Advent: s/.*v\./Ant. / s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
 (sed Nativitatis aut Epiphaniæ aut post partum dicitur)
-@Psalterium/Mariaant:Nativiti: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/[ÁA]m[ée]n.*$/\n/s
-(sed Paschali dicitur)
-@Psalterium/Mariaant:Paschalis: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
+@Psalterium/Mariaant:Nativiti: s/.*v\./Ant. / s/[ÁA]m[ée]n.*$/\n/s
+(sed Paschali loco horum versuum dicitur)
+@Psalterium/Mariaant:Paschalis: s/.*v\./Ant. / s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s 
 (deinde dicitur)
 @:Suffragium ConclusioBMV
 (sed rubrica 1951 aut feria 3 aut feria 2 aut feria 6)
@@ -1821,10 +1821,13 @@ $Per eumdem Christum
 $Amen
 
 [Suffragium ConclusioBMV] (rubrica cisterciensis)
-$Per eumdem 
+$Per eumdem
 (sed post partum) $Qui tecum 
 (sed tempore post pentecosten) $Per Dominum
 
+[Comment] (rubrica cisterciensis)
+In Suffragium Vespera, the original regex included "s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg"
+However, this made the Antiphons very confusing and ugly, therefore deleting.
 
 [Preces feriales Laudes]
 $Kyrie

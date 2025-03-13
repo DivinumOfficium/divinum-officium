@@ -4,13 +4,15 @@ S. Aniceti Papæ et Martyris;;Simplex;;1.9;;vide C2
 [Rank] (rubrica 1960)
 S. Aniceti Papæ et Martyris;;Simplex;;1.1;;vide C2
 
+[Rank] (rubrica cisterciensis)
+S. Aniceti Papæ et Martyris;;Commemoratio;;1;;vide C2
+
 [Rule]
 vide C2;
 OPapaM=Anicétum;
 
 [Oratio]
-Deus qui nos beati Aniceti Martyris tui atque Pontificis annua solemnitate lætificas: concede propitius; ut cujus natalitia colimus, de ejusdem etiam protectione gaudeamus.
-$Per Dominum
+@Commune/C2:Oratio1:s/N./Anicéti/
 
 [Lectio93]
 Anicétus Syrus, imperatóre Marco Aurélio Antoníno, præfuit Ecclésiæ. Decrévit ne clérici comam nutrírent. Quínquies mense Decémbri ordinávit presbyteros decem et septem, diáconos quátuor, epíscopos per divérsa loca novem. Vixit in pontificátu annos octo, menses octo, dies vigínti quátuor. Propter Christi fidem martyrio coronátus, sepúltus est via Appia in cœmetério, quod póstea Callísti appellátum est, décimo quinto Kaléndas Majas.
