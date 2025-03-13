@@ -1623,10 +1623,7 @@ Ant. Crucem sanctam súbiit, qui inférnum confrégit; accínctus est poténtia,
 @:Suffragium BMV Ant
 _
 (deinde dicuntur semper)
-@Commune/C11:Versum 0
-_
-$Oremus
-@Commune/C11:Oratio:1 s/^/v. /
+@:Versum et Oratio BMV
 (sed tempore post partum loco horum versuum dicuntur)
 @Psalterium/Mariaant:Nativiti:s/.*V\./V\./s
 
@@ -1729,7 +1726,7 @@ _
 (atque tempore paschali loco horum versuum dicitur)
 @:Suffragium Paschale
 
-[Versum et Oratio Laudes]
+[Versum et Oratio BMV]
 @Commune/C11:Versum 0
 _
 $Oremus
@@ -1738,7 +1735,7 @@ $Oremus
 [Suffragium Laudes] (rubrica cisterciensis)
 @:Suffragium BMV AntL
 _
-@:Versum et Oratio Laudes
+@:Versum et Oratio BMV
 (sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis dicitur)
 @Psalterium/Mariaant:Quadragesimae: s/.*V\./V./s  s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/
 (sed Adventus dicitur) 
@@ -1787,9 +1784,12 @@ _
 @:Suffragium PaschaleV
 
 [Suffragium Vespera] (rubrica cisterciensis)
-@:Suffragium BMV:1
-@:Suffragium BMV:s/.*$//m
-(sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis dicitur)
+@:Suffragium BMV Ant:1
+(deinde dicuntur semper)
+@:Suffragium BMV Ant:2
+_
+@:Versum et Oratio BMV
+(sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis  loco horum versuum dicitur)
 @Psalterium/Mariaant:Quadragesimae: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
 (sed Adventus dicitur)
 @Psalterium/Mariaant:Advent: s/.*v\./Ant. / s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
