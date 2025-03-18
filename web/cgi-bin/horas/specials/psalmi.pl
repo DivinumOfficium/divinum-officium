@@ -414,7 +414,8 @@ sub psalmi_major {
   {
     @p = @psalmi;
   } elsif (($rule =~ /Psalmi Dominica/i || ($commune{Rule} && $commune{Rule} =~ /Psalmi Dominica/i))
-    && ($antiphones[0] !~ /\;\;\s*[0-9]+/))
+    && ($antiphones[0] !~ /\;\;\s*[0-9]+/)
+    && ($rule !~ /Psalmi Feria/i))
   {
     $prefix = translate("Psalmi, antiphonae", $lang) . ' ';
     my $h = $hora;
