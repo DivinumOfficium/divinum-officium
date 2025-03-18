@@ -1,0 +1,172 @@
+@Tempora/Quad6-4
+
+[Rule]
+Psalmi minores Dominica
+Antiphonas horas
+Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Preces Suffragium Conclusion
+Limit Benedictiones Oratio
+9 lectiones 1960
+Feria
+
+[Ant Matutinum]
+@Tempora/Quad6-4::1-3
+@Tempora/Quad6-4::14-15
+@Tempora/Quad6-4::6-13
+@Psalterium/Special/Major Special:Quad5 Versum 2_C:s/sperábam/sperávi/
+
+[Lectio1]
+@Tempora/Quad6-4::1-5 s/-5/-3/
+@Tempora/Quad6-4::8
+
+[Responsory1]
+R. In monte Olivéti orávit ad Patrem: Pater, si fíeri potest, tránseat a me calix iste. Spíritus quidem promptus est, caro autem infírma.
+* Fiat volúntas tua.
+V. Verúmtamen non sicut ego volo, sed sicut tu vis.
+R. Fiat volúntas tua.
+
+[Lectio2]
+@Tempora/Quad6-4:Lectio1:2 s/1-5/4-6/
+@Tempora/Quad6-4:Lectio1:6-7
+@Tempora/Quad6-4::2
+@Tempora/Quad6-4::6
+
+[Lectio3]
+@Tempora/Quad6-4:Lectio2:1 s/6-/7-/
+@Tempora/Quad6-4:Lectio2:3-6
+
+[Lectio4]
+Sermo sancti Leónis Papæ
+!Sermo 7 de Passione de passione Dómini
+Incipiéntes, dilectissimi, tractáre, divino intelligimus dispósitum fuisse consílio, ut sacrilegi Judæórum príncipes et impii sacerdotes, qui sæviéndi in Christum occasiones sæpe quæsiverant, nonnisi in solemnitáte paschali exercéndi furoris sui acciperent potestátem. Oportébat enim ut manifesto impleréntur efféctu, quæ diu fúerant figuráto promíssa mystério: et uno explerétur sacrifício variárum differéntia victimárum. Ut ergo umbræ céderent córpori et cessárent imágines sub præséntia veritátis: antiqua observántia novo exclúditur sacraménto. Hóstia in hóstiam transit, et sánguine sanguis aufértur: et legális festivitas, dum mutátur, implétur.
+
+[Responsory4]
+@Tempora/Quad6-4::1-2
+V.Fílius quidem hóminis vadit, sicut scriptum est de illo: væ autem hómini illi, per quem tradétur.
+@Tempora/Quad6-4::4
+
+[Lectio5]
+Incipiénte enim festivitáte paschali, qui ornáre templum, vasa mundáre, víctimas providére debúerant, in unum fácinus coniúrant: ut et nova mystéria non apprehénderent, et antiqua violárent. Providéntibus ergo ne in die sancto tumúltus orirétur, non festivitáti, sed facinori studebátur metuebántque, non ut pópulus non peccaret, sed ne Christus eváderet. At Iesus consilii sui certus, vetus testamentum consummábat et novum Pascha condébat. Et cum in Cáiphæ átrio tractarétur, quómodo Christus debéret occidi: ille Córporis et Sánguinis sui órdinans sacraméntum, docébat qualis Deo hóstia debéret offérri: nec traditóre submóto, ut ostenderétur nulla iniúria exasperátus.
+
+[Responsory5]
+@Tempora/Quad6-4:Responsory6
+
+[Lectio6]
+Dicens quoque, Unus vestrum me traditúrus est, notam sibi traditóris ac proditóris consciéntiam demonstrávit: non áspera, nec apérta ímpium increpatióne confúndens, sed leni ac tácita admonitióne convéniens: ut facilius corrigeret pænitúdo, quem nulla deformásset abiectio. Cur, infélix Juda, tanta benignitáte non úteris? Ecce parcit áusibus tuis Dóminus, et nulli te, nisi tibi, índicat Christus. Nec nomen tuum, nec persóna detégitur: sed veritátis et misericórdiæ verbo, cordis tui tantum arcána tangúntur. Non Apostólici órdinis honor, non sacramentorum tibi commúnio denegátur. Redi in integrum, et depósito furóre resipisce. Cleméntia invítat, salus pulsat: ad vitam te vita révocat.
+
+[Responsory6]
+@Tempora/Quad6-4:Responsory7
+&Gloria
+@Tempora/Quad6-4:Responsory7:1-2 s/\n//
+
+[Lectio7]
+Sermo sancti Joánnis Chrysostomi
+!Hom. I de proditione Judæ
+Tunc ábiit, inquit. Non invitátus a princípibus; sponte procéssit.  Unus de duódecim. Septuaginta discípulis tam interióra commissa sunt. Hæc erat catérva regális: de hoc choro Judas egréssus est. Judas, inquit, Iscariótes. Quid mihi ejus pátriam dicis? Utinam ipsum quoque nescire licuísset! Et dixit eis: Quid vultis mihi dare, et ego eum vobis tradam? O puniéndæ vocis temeritátem! Ideo Magister te divitias debére contémnere prædicábat? O crudelitátem! Dic, quæ causa proditiónis. Fórsitan quod tibi dæmonum trádidit potestátem, quod fecit languéntibus subvenire, quod mortuos suscitáre didicísti. O verbum totíus supérbiæ! Tradis eum, qui cuncta consérvat, qui dæmónibus imperat, cui obtémperant mária, cui omnes súbiacent potestátes.
+
+[Responsory7]
+@Tempora/Quad6-4:Responsory8
+
+[Lectio8]
+Quando Judas de traditióne tractábat. dicunt discípuli: Ubi vis parėmus tibi Pascha manducáre? Vide discípulos: vide discípulum. Isti sunt de præparatióne solliciti: ille Dominici sánguinis mercátor exsistit. Et illud quidem Pascha Judæórum discípuli præparábant: istud autem, quod nostrum est, ipse Christus constituit. Et dixit: Носest corpus meum, quod pro vobis tradétur. Hic est sanguis meus, qui pro multis effundétur. O Christi misericórdia! O Judæ deméntia! Ille eum paciscebátur, ut vénderet: Christus ei sánguinem, quem véndidit, offerébat, ut habéret remissiónem peccatórum, si tamen ímpius exsistere noluisset.  Nam sacrificii communicatiónem méruit, et pedes ejus lavit Christus: ut excusatiónem suæ malitiæ non habéret.
+
+[Responsory8]
+@Tempora/Quad6-4:Responsory9
+
+[Lectio9]
+Sed jam ad terribilem mensam cum débita reverentia, cum cóngrua vigilántia, opportunum tempus invitat. Nullus ibi Judas reperiátur, nullus malignus accédat: nec insídiæ mente condántur.  Nullus fictus accédat, nullus fucáto ánimo. Pura igitur sit mens, pura cogitátio: quia et sacrificium purum est. Dóminus quidem noster, corpus assúmptum ablatúrus óculis nostris et sidéribus illatúrus, in hac die sacraméntum Córporis et Sánguinis sui consecrávit: ut perénnis illa víctima viveret in memória, et semper præsens esset in grátia. Cum igitur ad reveréndum altáre ascéndis, sacrum Dei tui Corpus et Sánguinem fide réspice, honore miráre, mente continge, cordis manu súscipe et gustu interióri assúme.
+
+[Responsory9]
+R. Revelábunt cæli iniquitátem Judæ, et terra advérsus eum consúrget: et maniféstum erit peccátum illíus in die furóris Dómini:
+* Cum eis qui dixérunt Dómino Deo: Recéde a nobis, sciéntiam viárum tuárum nólumus.
+V. In diem perditiónis servábitur, et ad diem ultiónis ducétur.
+R. Cum eis qui dixérunt Dómino Deo: Recéde a nobis, sciéntiam viárum tuárum nólumus.
+&Gloria
+R. Revelábunt cæli iniquitátem Judæ, et terra advérsus eum consúrget: et maniféstum erit peccátum illíus in die furóris Dómini:
+
+[Oratio Matutinum]
+@Tempora/Quad6-4:Oratio Matutinum:1
+/:Non dicitur «Qui tecum,» neque «Amen,» neque «Benedicámus Dómino,» neque «Fidélium.» :/
+
+[Oratio]
+@:Oratio Matutinum
+
+[Ant Laudes]
+@Tempora/Quad6-4::s/\n/_/gs s/_/\n/ s/_/\n/ s/_/;;62\n/ s/_/\n/ s/$/;;148/
+
+[Preces ad Laudes]
+/:Repetita post Benedictus antiphona, duo Fratres stantes ante gradus altaris dicunt::/
+/:(Ad ea quæ sequuntur Fratres stant versi ad altare.):/
+Kýrie, eléison.
+/:Et choro respondente:/
+Kýrie, eléison,
+/:iterum illi duo Fratres dicunt::/
+Kýrie, eléison.
+/:Deinde alii duo Fratres stantes in medio chori dicunt::/
+Dómine, miserére.
+/:Et chorus respondet::/
+Christus Dóminus factus est obédiens usque ad mortem.
+/:Item Fratres ante gradus::/
+V. Qui passúrus advenísti propter nos.
+/:Et chorus dicit::/
+Christe, eléison.
+/:Item Fratres ante gradus::/
+V. Qui, expánsis in cruce mánibus, traxísti ómnia ad te sǽcula.
+/:Item chorus::/
+Christe, eléison.
+/:Item Fratres ante gradus::/
+V. Qui prophétice prompsísti: Ero mors tua, o mors!
+/:Item chorus::/
+Christe, eléison.
+/:Deinde Fratres in medio chori::/
+Dómine, miserére.
+/:Et chorus respondet::/
+Christus Dóminus factus est obédiens usque ad mortem.
+/:Item Fratres ante gradus::/
+Kýrie, eléison.
+/:Et chorus::/
+Kýrie, eléison.
+/:Et Fratres ante gradus::/
+Kýrie, eléison.
+/:Deinde Fratres in medio chori::/
+Dómine, miserére.
+/:Et chorus respondet::/
+Christus Dóminus factus est obédiens usque ad mortem.
+/:Item Fratres ante gradus dicunt alta voce::/
+Mortem autem crucis.
+/:Finito versu Mortem autem crucis prosternunt se omnes et dicunt Pater noster totum secreto.:/
+/:Deinde statim subiungitur:/
+
+[Ant Prima]
+Christus * factus est pro nobis obédiens usque ad mortem, mortem autem crucis.
+
+[LectioE]
+Evangelium Secundum Joannem
+!Cap. 13
+Ante diem festum Paschæ, sciens Jesus quia venit hora ejus, ut tránseat ex hoc mundo ad Patrem: cum dilexísset suos, qui erant in mundo, in finem diléxit eos.
+
+[Ant Tertia]
+@:Ant Prima
+
+[Ant Sexta]
+@:Ant Prima
+
+[Ant Nona]
+@:Ant Prima
+
+[Special Completorium]
+!Special Completorium
+_
+@:Ant Prima:s/^/Ant. /
+&psalm(4)
+
+&psalm(90)
+
+&psalm(133)
+@:Ant Prima:s/^/Ant. /
+
+&psalm(233)
+@:Ant Prima:s/^/Ant. /
+
+@:Oratio
+
+/:Hodie post Completorium benedictio non datur, omittitur ant. «Salve, Regina», nec aspergitur aqua benedicta.:/

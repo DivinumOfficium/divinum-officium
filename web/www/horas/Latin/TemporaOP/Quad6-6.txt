@@ -1,0 +1,138 @@
+@Tempora/Quad6-6r
+
+[Rule]
+Psalmi minores Dominica
+Antiphonas horas
+Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Preces Suffragium Conclusion Martyrologium De Officium Capituli
+Limit Benedictiones Oratio
+9 lectiones 1960
+Feria
+
+[Lectio1]
+@Tempora/Quad6-6:Lectio1:1
+@Tempora/Quad6-6:Lectio2:1-5 s/-6/-4/
+@Tempora/Quad6-6:Lectio2:8
+
+[Responsory1]
+R. Sepúlto Dómino, signátum est monuméntum: volvéntes lápidem ad óstium monuménti,
+* Ponéntes mílites, qui custodírent illud.
+V. Ne forte véniant discípuli ejus et furéntur eum et dicant plebi: Surréxit a mórtuis.
+R. Ponéntes mílites, qui custodírent illud.
+
+[Lectio2]
+!Lam 4:5-8
+@Tempora/Quad6-6:Lectio2:6-7
+7 Zain. Candidióres Nazarǽi eius nive, nitidióres lacte, rubicundióres ébore antíquo, sapphíro pulchrióres.
+8 Heth. Denigráta est super carbónes fácies eórum et non sunt cógniti in platéis: adhǽsit cutis eórum óssibus: áruit, et facta est quasi lignum.
+@Tempora/Quad6-6:Lectio2:8
+
+[Lectio3]
+!Lam 4:9-12
+9 Teth. Mélius fuit occísis gládio quam interféctis fame, quóniam isti extabuérunt consúmpti a sterilitáte terræ.
+10 Iod. Manus mulíerum misericórdium coxérunt fílios suos: facti sunt cibus eárum in contritióne fíliæ pópuli mei.
+11 Caph. Complévit Dóminus furórem suum, effúdit iram indignatiónis suæ: et succéndit ignem in Sion, et devorávit fundaménta eius.
+12 Lamed. Non credidérunt reges terræ, et univérsi habitatóres orbis, quóniam ingrederétur hostis et inimícus per portas Jerúsalem.
+@Tempora/Quad6-6:Lectio2:8
+
+[Responsory2]
+@Tempora/Quad6-6::s/surge/luge/ s/occísus est/est occísus/g
+
+[Responsory3]
+@Tempora/Quad6-6::1-2
+V. Ululáte, pastóres, et clamáte: aspérgite vos cínere.
+@Tempora/Quad6-6::4-6
+
+[Responsory4]
+@Tempora/Quad6-6::s/\* Nam/nam/ s/hódie/\n* Hódie/ s/Nam.*: h/H/
+
+[Responsory6]
+R. Caligavérunt óculi mei a fletu meo: quia elongatus est a me qui consolabátur me: vidéte, omnes pópuli,
+* Si est dolor similis sicut dolor meus.
+V. O vos omnes qui transitis per viam, attendite, et vidéte.
+R. Si est dolor similis sicut dolor meus.
+&Gloria
+R. Caligavérunt óculi mei a fletu meo: quia elongatus est a me qui consolabátur me: vidéte, omnes pópuli,
+
+[Lectio7]
+Sermo sancti Leónis Papa
+!Sermo 9 de Passione
+Perácto, dilectíssimi, Salvatóris triúmpho et consummátis dispensatiónibus, quas ómnia véteris testaménti elóquia nuntiárunt, lúgeat carnális Judæus, sed spiritális gáudeat Christiánus; et festívitas, quæ illis convérsa est in noctem, nobis corúscet in lucem. Quóniam crux Christi éadem est et credéntium glória et non credéntium pœna. Quamvis enim persequéntium furor nihil aliud in Dóminum maiestátis operátus sit, quam atrócem crudelitátem et immite supplícium: hac Dómini passióne vérior iustiórque lætándi est rátio quam doléndi.
+
+[Responsory7]
+R. Ecce quómodo móritur justus, et nemo pércipit corde: et viri justi tollúntur, et nemo consíderat: a fácie iniquitátis sublátus est justus,
+* Et erit in pace memória ejus.
+V. In pace factus est locus eius: et in Sion habitátio eius.
+R. Et erit in pace memória ejus.
+
+[Lectio8]
+Fúerit tunc discipulórum excusábilis pavor, nec in diffidéntiæ culpam Apostólicus maxror incíderit: quando, concurréntibus ad unum scelus Judæis Judæorumque principibus, superbus taurorum pinguium tumor et proterva vitulorum petulántia sæviébat; quando sub oculis ovium, Pastóris iusti sanguínem freméntium bestiárum rabies expetébat; quando dénique etiam ipse, qui pati venerat, de nostra naturæ communicatione dicebat: Tristis est anima mea usque ad mortem.
+
+[Lectio9]
+Nunc autem postquam tatis susceptione infirmicata virtutis, nulla fidelium maestitudine paschális est obscuránda solémnitas; nec cum tristítia nobis gestórum ordo recoléndus est: cum ita Dóminus usus sit malitia Judæórum, ut intentióne facinoris volúntas sit impléta miseréntis. Si autem in éxitu Israël de Ægypto agni sanguis fuit restitútio libertátis, et sacratíssima est facta festivitas, quæ per hostiam pécudis iram avérteret vastatóris: quanta pópulis christianis concipiénda sunt gáudia, pro quibus omnipotens Pater Fílio suo non pepercit, sed pro nobis ómnibus tradidit illum! Ut in occisióne Christi, Pascha esset verum et singuláre sacrificium: quo non ex dominatióne Pharaónis unus pópulus, sed ex diáboli captivitáte totus mundus erúitur.
+_
+/:Sine intervallo sequitur:/
+_
+@Tempora/Quad6-6:Lectio3:1-13 s/-11/-22/ s/Incipit//
+12 Príncipes manu suspénsi sunt: fácies senum non erubuérunt.
+13 Adolescéntibus impudíce abúsi sunt, et púeri in ligno corruérunt.
+14 Senes defecérunt de portis, iúvenes de choro psalléntium.
+15 Defécit gáudium cordis nostri: versus est in luctum chorus noster.
+16 Cécidit coróna cápitis nostri: væ nobis, quia peccávimus.
+17 Proptérea mœstum factum est cor nostrum: ídeo contenebráti sunt óculi nostri.
+18 Propter montem Sion quia dispériit, vulpes ambulavérunt in eo.
+19 Tu autem Dómine in ætérnum permanébis, sólium tuum in generatiónem et generatiónem.
+20 Quare in perpétuum obliviscéris nostri, derelínques nos in longitúdine diérum?
+21 Convérte nos Dómine ad te, et convertémur: ínnova dies nostros, sicut a princípio.
+22 Sed proíciens repulísti nos: irátus es contra nos veheménter.
+@Tempora/Quad6-6:Lectio3:14
+
+[Responsory9]
+R. Agnus Dei Christus immolátus est pro salúte mundi: nam de paréntis protoplásti fraude * Factor cóndolens, quando pomi noxiális morsu in mortem córruit, ipse lignum tunc notávit, 
+* Damna ligni ut sólveret.
+V. Lustris sex qui iam peráctis tempus implens córporis, se volénte natus ad hoc, passióni déditus, Agnus in crucis levátur immolándus stípite. 
+R. Damna ligni ut sólveret.
+&Gloria
+R. Agnus Dei Christus immolátus est pro salúte mundi: nam de paréntis protoplásti fraude * Factor cóndolens, quando pomi noxiális morsu in mortem córruit, ipse lignum tunc notávit, 
+
+[Oratio Matutinum]
+@TemporaOP/Quad6-4
+
+[Oratio 2]
+@TemporaOP/Quad6-4:Oratio
+
+[Ant Laudes]
+@Tempora/Quad6-6::s/\n/_/gs s/_/\n/ s/_/;;42\n/ s/_/;;62\n/ s/_/\n/ s/$/;;148/
+
+[Preces ad Laudes]
+@TemporaOP/Quad6-4
+
+[Ant Prima]
+@TemporaOP/Quad6-4
+
+[Ant Tertia]
+@:Ant Prima
+
+[Ant Sexta]
+@:Ant Prima
+
+[Ant Nona]
+@:Ant Prima
+
+[Oratio 3]
+@Tempora/Quad6-6r:Oratio Matutinum:1
+/:Non dicitur conclusio. Et sic terminatur hora. :/
+
+[Special Completorium]
+!Completorium dicitur tantum ab iis qui solemni vigiliæ paschali non intersunt.
+
+!Special Completorium
+_
+&psalm(4)
+
+&psalm(90)
+
+&psalm(133)
+
+&psalm(233)
+
+@:Oratio 3

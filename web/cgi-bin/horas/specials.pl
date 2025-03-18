@@ -238,13 +238,19 @@ sub specials {
       # Prime and Compline, but during the Triduum, we do it for those hours,
       # too. The test for this case is somewhat oblique.
       my $prime_or_compline = ($hora =~ /^(?:Prima|Completorium)$/i);
-      my $triduum = ($rule =~ /Limit.*?Oratio/);
+      my $triduum = ($rule =~ /Limit.*?Oratio/);    # $winner =~ /Quad6-[4-6]/
       my %oratio_params;
 
       # Skip the usual stuff at Prime and Compline in the Triduum.
       if ($prime_or_compline && $triduum) {
         $skipflag = 1;
         $oratio_params{special} = 1;
+      }
+
+      # Ordo Praedicatorum includes some kind of preces in Laudes due triduum
+      if ($triduum && $version =~ /Ordo Praedicatorum/ && $hora eq 'Laudes') {
+        my $w = columnsel($lang) ? \%winner : \%winner2;
+        push(@s, $w{'Preces ad Laudes'});
       }
 
       # Generate the prayer(s) together with the title.
