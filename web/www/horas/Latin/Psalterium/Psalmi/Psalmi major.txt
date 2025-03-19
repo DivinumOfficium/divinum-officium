@@ -388,6 +388,10 @@ In cýmbalis * benesonántibus laudáte Deum;;148;149;150
 @:DaymF Laudes:5 s/;;.*/;;50/ s/(.*)(\,.*);;/$1$2$2$2$2$2$2;;/m
 @:DaymF Laudes:2-5 s/.*;;/;;/gm s/99/117/
 
+[Cistercian Laudes] (tempore paschali)
+Allelúja, * allelúja, allelúja.;;50
+@:Monastic Laudes:2-5 s/.*;;/;;/gm
+
 [Daym6F Laudes]
 @:Monastic Laudes:1
 @:Monastic Laudes:2 s/$/(1-'7b')/

@@ -33,6 +33,7 @@ sub monastic_major_responsory {
   our ($hora, $winner, $vespera, $seasonalflag, $version);
 
   my $key = "Responsory $hora";
+  my $key_cist = "";
 
   # special case only once
   $key .= ' 1' if $winner =~ /12-25/ && $vespera == 1;    #($winner =~ /(?:12-25|Quadp[123]-0)/ && $vespera == 1);
@@ -41,8 +42,9 @@ sub monastic_major_responsory {
 
   # CIST: the Cistercian rite has Responsoria prolixa for every Festum Serm. on j. Vespers.
   if ($version =~ /cist/i && $vespera == 1) {
-    my $key_cist = "Responsory $hora 1";
+    $key_cist = "Responsory $hora 1";
     ($resp, $c) = getproprium($key_cist, $lang, $seasonalflag, 1);
+    $key_cist = "" unless ($resp);
     ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1) if !$resp;
   }
 
@@ -73,7 +75,7 @@ sub monastic_major_responsory {
 
   if ($resp) {
     my @resp = split("\n", $resp);
-    postprocess_short_resp(@resp, $lang);
+    postprocess_short_resp(@resp, $lang) unless $key_cist =~ /Responsory Vespera 1/;
     $resp = join("\n", @resp);
     $resp =~ s/\&gloria.*//gsi if $version =~ /cist/i;
   }

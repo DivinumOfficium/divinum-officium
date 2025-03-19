@@ -47,6 +47,10 @@ Dejte velebení * našemu Bohu;;226(1-32)
 ;;226(33-65)
 Činely * sladce znějícími chvalte Boha.;;148;149;150
 
+[Cistercian Laudes] (tempore paschali)
+Alleluja, * alleluja, alleluja.;;50
+@:Monastic Laudes:2-5 s/.*;;/;;/gm
+
 [Monastic Vespera]
 Řekl Pán * mému pánu: Seď po mé pravici.;;109
 Věrná * jsou všechna jeho přikázání: potvrzená na věky věkův.;;110

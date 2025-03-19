@@ -9,7 +9,7 @@ Antiphonas horas
 12 lectiones
 Psalmi Dominica
 
-[Versum 1]
+[Versum 1] (nisi rubrica cisterciensis)
 @Tempora/Pasc2-3:Responsory Tertia:s/.*_.//s
 
 [Ant Matutinum]
@@ -91,11 +91,12 @@ Psalmi Dominica
 [LectioE]
 @Tempora/Pasc2-3
 
-[Responsory TertiaM]
+[Responsory TertiaM] (nisi rubrica cisterciensis)
 @Tempora/Pasc2-3:Responsory Tertia:s/.*_.//s
 
-[Responsory SextaM]
+[Responsory SextaM] (nisi rubrica cisterciensis)
 @Tempora/Pasc2-3:Responsory Sexta:s/.*_.//s
 
-[Responsory NonaM]
+[Responsory NonaM] (nisi rubrica cisterciensis)
 @Tempora/Pasc2-3:Responsory Nona:s/.*_.//s
+
