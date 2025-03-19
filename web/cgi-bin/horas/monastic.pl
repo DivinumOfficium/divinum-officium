@@ -449,25 +449,20 @@ sub lectioE_required {
 #*** sub regula_vel_lectio_evangeli
 # for Ordo Praedicatorum
 sub regula_vel_evangelium {
-
   my $lang = shift;
 
-  my %b = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
-  my @b = split(/\n/, $b{'Nocturn 3'});
+  my @output = (prayer('Jube domne', $lang));
   my %r = %{setupstring($lang, 'Regula/OrdoPraedicatorum.txt')};
-  my $be;
-  my @output;
 
   if (lectioE_required()) {
-    $be = $b[3];
-    push(@output, lectioE($lang));
+    my %b = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
+    my @b = split /\n/, $b{'Nocturn 3'};
+    push @output, $b[1], '$Amen';
+    push @output, lectioE($lang);
   } else {
-    $be = $r{Benedictio};
-    push(@output, '_', $r{Incipit}, "v. $r{our $dayofweek}");
+    push @output, $r{Benedictio}, '$Amen';
+    push @output, "v. $r{our $dayofweek}";
   }
-
-  unshift(@output, "Benedictio. $be", '$Amen');
-  unshift(@output, "V. $b[1]");
 
   push @output, '$Tu autem', $r{'Finita lectione'};
   join("\n", @output);
