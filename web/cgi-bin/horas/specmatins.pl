@@ -78,7 +78,11 @@ sub invitatorium {
 
       # old Invitatorium2 = Quadp[123]-0
       s/ \*.*//;
-    } elsif ($dayname[0] =~ /Quad[56]/i && $winner =~ /tempora/i && $rule !~ /Gloria responsory/i && $version !~ /Praedicatorum/) {
+    } elsif ($dayname[0] =~ /Quad[56]/i
+      && $winner =~ /tempora/i
+      && $rule !~ /Gloria responsory/i
+      && $version !~ /Praedicatorum/)
+    {
 
       # old Invitatorium3
       s/&Gloria/\&Gloria2/;
