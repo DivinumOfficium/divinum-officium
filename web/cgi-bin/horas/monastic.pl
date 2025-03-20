@@ -424,26 +424,25 @@ sub lectioE {
     @e = split("\n", $missa{$s});
   }
 
-  my $begin = shift @e;
-  $begin =~ s/^(v. )?/v./;
+  my $begin = shift @e;          # take first line
+  $begin .= "\n" . shift(@e);    # add sigil
 
   if ($version =~ /^Monastic/) {
-    $begin =~ s/\++/++/;
-    $begin .= "\n" . shift(@e) . "\nR. " . translate("Gloria tibi Domine", $lang) . "\n";
-  } else {
-    $begin =~ s/\++//;    # in true begin should be shorted to eg. "Secundum Joannem"
-    shift @e;
+    $begin =~ s/\++/++/;         # correct crosses
+    $begin .= "\nR. " . translate("Gloria tibi Domine", $lang);
+  } else {    # Ordo Praedicatorum: take to last words ex. 'Secundum Joannem'
+    $begin =~ s/.*\s+(\p{Letter}+.?)\s+(\p{Letter}+)\.?\s*$/\1 \2/m;
   }
-  unshift(@e, $begin);
 
-  @e = grep { !/^!/ } @e;    # remove rubrics
-  $e[1] =~ s/^(v. )?/v./;
+  @e = grep { !/^!/ } @e;     # remove rubrics
+  $e[0] =~ s/^(v. )?/v. /;    # add initial to text
 
-  join("\n", @e);
+  join("\n", "v. $begin", @e);
 }
 
 sub lectioE_required {
-  our $rank > 2 || our $commune =~ /C10/;
+  our $dayname;
+  $dayname[1] !~ /Feria|octavam|vigil/ || our $winner =~ /Quadp3-3|Quad6-4|12-24|11-02/;
 }
 
 #*** sub regula_vel_lectio_evangeli
