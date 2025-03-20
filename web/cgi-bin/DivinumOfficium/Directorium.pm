@@ -250,7 +250,7 @@ sub transfered {
 sub check_coronatio {
   my ($day, $month) = @_;
 
-  $day == 20 && $month == 3 ? 'Votive/Coronatio' : '';
+  $day == 20 && $month == 3 ? 'Commune/Coronatio' : '';
 }
 
 #*** dirge($version, $hora, $day, $month, $year)
