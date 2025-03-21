@@ -5,6 +5,10 @@
 Psalmi Dominica
 Antiphonas horas
 
+
+[Hymnus Vespera] (rubrica cisterciensis)
+@Tempora/Pasc7-0:Hymnus Laudes
+
 [Ant Matutinum]
 @Tempora/Pasc7-0::1 s/47/1/
 ;;8
@@ -110,11 +114,18 @@ _
 [Ant Laudes]
 @Tempora/Pasc7-0:Ant Vespera:s/;;.*//
 
+[Hymnus Laudes] (rubrica cisterciensis)
+@Tempora/Pasc7-0:HymnusM Matutinum:21-46
+
 [Responsory TertiaM]
 @Tempora/Pasc7-0:Ant Matutinum:4-5
 
 [Responsory SextaM]
 @Tempora/Pasc7-0:Responsory Tertia:8-9
+(sed rubrica cisterciensis)
+@Tempora/Pasc7-0:Responsory Sexta:8-9
 
 [Responsory NonaM]
 @Tempora/Pasc7-0:Versum 1
+(sed rubrica cisterciensis)
+@Tempora/Pasc7-0:Responsory Tertia:8-9
