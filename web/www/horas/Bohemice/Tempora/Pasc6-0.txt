@@ -10,11 +10,6 @@ vide Tempora/Pasc5-4;
 Doxology=Asc
 StJamesRule=John,Rev
 
-[Capitulum Vespera]
-!1 Petrův 4:7-8
-v. Nejmilejší, buďte moudří a bděte na modlitbách. Především se mějte navzájem vroucně rádi, protože láska přikrývá mnohé hříchy.
-$Deo gratias
-
 [Ant 1]
 Až přijde * Utěšitel, kterého vám sešlu, co Ducha pravdy, který z Otce vychází, on bude vydávat svědectví o mě, alleluja.
 
@@ -22,21 +17,11 @@ Až přijde * Utěšitel, kterého vám sešlu, co Ducha pravdy, který z Otce v
 Všemohoucí, věčný Bože; učiň, abychom tobě vždy oddaně podřizovali svou vůli, a zároveň tvé Vznešenosti sloužili s upřímným srdcem. 
 $Per Dominum
 
-[Commemoratio 1]
-!Commemoration of the Octave of the Ascension
-Ant. O King of glory, Lord of hosts, * Who hast this day exalted thine Own Self, with great triumph, above all the heavens, leave us not orphans but send unto us the Promise of the Father, even the Spirit of truth. Alleluia.
-_
-(deinde dicitur)
-V. God is gone up with a shout, alleluia.
-R. And the Lord with the sound of a trumpet, alleluia.
-(sed rubrica tridentina loco huius versus dicitur)
-V. The Lord in heaven, alleluia.
-R. Hath prepared his throne, alleluia.
-(deinde dicitur)
-_
-$Oremus
-Grant, we beseech thee, Almighty God, that like as we do believe thine Only-Begotten Son our Saviour to have this day ascended into the heavens, so we may also in heart and mind thither ascend, and with Him continually dwell.
-$Per eumdem
+[Commemoratio]
+!Připomínka Oktávu Nanebevstoupení Páně
+@Tempora/Pasc5-4:Oratio
+(sed rubrica cisterciensis)
+@TemporaM/Pasc5-4:Oratio
 
 [Lectio1]
 Lesson from the first letter of St. John the Apostle
@@ -99,11 +84,13 @@ R. And when He is come, He will guide you into all truth. Alleluia.
 Then saith the Lord, as though in continuation "But when the Comforter is come, Whom I will send unto you from the Father, even the Spirit of truth, Which proceedeth from the Father, He shall testify of Me. And ye also shall bear witness, because ye have been with Me from the beginning." What connection hath this with the words: "Now have they both seen and hated both Me and My Father but that the word might be fulfilled that is written in their law They hated Me without a cause.” Is it that when the Comforter is come, even the Spirit of truth, He will confound by irrefragable testimony them who have both seen and hated both God the Son and God the Father? Yea, indeed, some there were who had seen and still hated, whom the testimony of the Comforter converted to the faith which worketh by love.
 &teDeum
 
-[Capitulum Laudes]
-@:Capitulum Vespera
+[Ant Laudes] (rubrica cisterciensis)
+Alleluja, * alleluja, alleluja.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
+[Capitulum Laudes]
+!1 Petrův 4:7-8
+v. Nejmilejší, buďte moudří a bděte na modlitbách. Především se mějte navzájem vroucně rádi, protože láska přikrývá mnohé hříchy.
+$Deo gratias
 
 [Capitulum Sexta]
 !1. Petrův 4:9-10
@@ -111,8 +98,8 @@ v. Buďte jeden k druhému pohostinní bez reptání. Navzájem si pomáhejte po
 $Deo gratias
 
 [Capitulum Nona]
-!1 Peter 4:11
-v. 4,11 Kdo má dar řeči, (ať si je vědom, že přednáší) slovo Boží. Kdo slouží, ať to dělá v síle, kterou udílí Bůh, aby ve všem byl oslavován Bůh skrze Ježíše Krista, našeho Pána.
+!1 Petrův 4:11
+v. Kdo má dar řeči, (ať si je vědom, že přednáší) slovo Boží. Kdo slouží, ať to dělá v síle, kterou udílí Bůh, aby ve všem byl oslavován Bůh skrze Ježíše Krista, našeho Pána.
 $Deo gratias
 
 [Ant 3]
