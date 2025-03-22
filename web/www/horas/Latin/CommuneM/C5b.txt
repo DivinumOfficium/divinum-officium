@@ -1,0 +1,86 @@
+@CommuneM/C5
+
+[Officium]
+@Commune/C5b
+
+[Oratio]
+@Commune/C5b
+
+[Lectio9]
+@Commune/C1:Lectio7
+
+[Lectio10]
+@Commune/C1:Lectio8:s/ Locus .*//s
+
+[Lectio11]
+@Commune/C1:Lectio8:s/.* Locus /Locus /s
+
+[Lectio12]
+@Commune/C1:Lectio9
+
+[LectioE]
+@Commune/C5b
+
+[Lectio9 in 2 loco]
+@Commune/C4:Lectio7 in 4 loco
+
+[Lectio10 in 2 loco]
+@Commune/C4:Lectio8 in 4 loco:s/ Alterum .*//s
+
+[Lectio11 in 2 loco]
+@Commune/C4:Lectio8 in 4 loco:s/.* Alterum /Alterum /s s/$/~/
+@Commune/C4:Lectio9 in 4 loco:s/ Videámus .*//s
+
+[Lectio12 in 2 loco]
+@Commune/C4:Lectio9 in 4 loco:s/.* Videámus /Videámus /s
+
+[Lectio9 in 3 loco]
+@Commune/C1:Lectio7 in 2 loco:s/ In hac .*//s
+
+[Lectio10 in 3 loco]
+@Commune/C1:Lectio7 in 2 loco:s/.* In hac /In hac /s s/$/~/
+@Commune/C1:Lectio8 in 2 loco:s/ Nemo .*//s
+
+[Lectio11 in 3 loco]
+@Commune/C1:Lectio8 in 2 loco:s/.* Nemo /Nemo /s s/$/~/
+@Commune/C1:Lectio9 in 2 loco:s/ Sciéndum .*//s
+
+[Lectio12 in 3 loco]
+@Commune/C1:Lectio9 in 2 loco:s/.* Sciéndum /Sciéndum /s
+
+[Lectio9 in 4 loco]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 16:13-19
+In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? Et réliqua.
+_
+Homilía sancti Bernárdi Abbátis
+!Declam. de verbis Evang. Ecce nos n. 1 et 2
+Fidélis sermo, et dignum omni acceptióne collóquium Simónis Petri et Jesu. Familiáris síquidem et amíca salúti obediéntia est; sed obediéntia firma et stábilis, quæ fundáta est super petram. Mélior est enim obediéntia quam víctimæ, et acquiéscere nolle, ut peccátum ariolándi est. Unde et vitæ quoque ipse Salvátor prætulit hanc virtútem, éligens magis ánimam pónere, quam obediéntiam non implére. Postrémo et ipsum nomen Jesu, quod est super omne nomen, et in quo fléctitur omne genu, Apóstolo teste, obediéntiæ remunerátio est.
+
+[Lectio10 in 4 loco]
+Libet proínde sacratíssimo huic interésse collóquio, et íntima cordis aure percípere, quæ dicúntur. Arbitror enim, verba lectiónis hujus ea esse, de quibus ad immortálem Sponsum a fínibus terræ clamat Ecclésia: Propter verba labiórum tuórum ego custodívi vias duras. Hæc nempe sunt verba, quæ contémptum mundi in univérso mundo, et voluntáriam persuasére homínibus paupertátem. Hæc sunt, quæ mónachis claustra replent, desérta anachorétis. Hæc, inquam, sunt verba, quæ Ægýptum spóliant, et óptima quæque ejus vasa dirípiunt. Hic sermo vivus et éfficax, convértens ánimas felíci æmulatióne sanctitátis, et veritátis promissióne fidéli.
+
+[Lectio11 in 4 loco]
+Dixit enim Simon Petrus ad Jesum: Ecce nos relíquimus ómnia. Bene, óptime, et non ad isipiéntiam tibi. Nam et mundus transit, et concupiscéntia ejus: et relínquere hæc magis éxpedit, quam relínqui. Ecce, imquit, nos relíquimus ómnia, et secúti sumus te. Nimírum quia exsultávit ut gigas ad curréndam viam, nec curréntem sequi póteras onerátus. Sed nec inútilis commutátio, pro eo, qui super ómina est, ómina reliquísse. Nam et simul cum eo donántur ómnia: et ubi apprehénderis eum, erit unus ipse ómnia in ómnibus, qui pro ipso ómnia reliquérunt.
+
+[Lectio12 in 4 loco]
+!Longe post prædicta (n. 35)
+Ait illi Jesus: Amen dico vobis. Verbum confirmatiónis præmíttitur; magnum nóveris esse, quod séquitur. In regeneratióne, inquit, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos. Consequémini, ait, quem sequímini, ut, cum ipse séderit, et vos páriter sedeátis. O séssio! quis mihi tríbuat, ut dignis éxprimam verbis, quod de sessióne hac cordis affectióne concípio? Immo, quis tríbuat mihi sessiónis hujus imperturbáta frui réquie, quam desídero, quam cúpio, quam requíro?
+
+[Lectio9 in 5 loco]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 16:13-19
+In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? Et réliqua.
+_
+Homilía sancti Joánnis Chrysóstomi Abbátis
+!Homil. 7 in Cap. 3, ad Rom.
+Si céntuplum hic non recípimus, nos ipsi in causa sumus, qui mútuum non damus illi, qui tantum réddere potest. Dic enim, quæso, quid magni dedit Petrus? nonne rete scissum tantum, et cálamum et hamum? Verum vicíssim illi Deus inivérsi orbis domos apéruit, terrámque simul et mare patefécit, dedítque, ut omnes illum in sua vocárent, immo, quæ sua erant, vénderent, et ad illíus pedes afférrent, ne in manus quidem tradéntes pecúniam; neque enim id audébant, tantum illi honórem una cum munificéntia tribuébant.
+
+[Lectio10 in 5 loco]
+Dices: At ille Petru erat. Quid tum, o bone? Non ista Petro tantum promíssa sunt: neque enim dixit: Tu vero, o Petre, céntuplum accípies solus; sed, Quisquis relíquerit domos, aut fratres, céntuplum accípiet. Personárum síquidem differéntiam non cognóscit; sed recte facta magis pensat. Grátiam enim habet Deus, et cum nobis debet, et cum solvit.
+
+[Lectio11 in 5 loco]
+Aspicit autem Deus creditóres suos libéntius, quam eos, qui nihil mútuo dedérunt: quibus vero plura debet, eos et plus díligit. Quámobrem, si perpétuam cum illo amicítiam iníre vis, vide, ut multum tibi débeat. Neque enim perínde delectátur suis debitóribus: fugit enim eos, quibus nihil debet; quibus vero debet, ad hos potíssimum accúrrit.
+
+[Lectio12 in 5 loco]
+Omnem ígitur lápidem movéntes, curémus Christum debitórem habére; hoc enim præsens tempus, fænerándi tempus est. Nunc scílicet in indigéntia Christus constitútus est: si jam illi nihil das mútuo, tuórum certe, cum hinc discésseris, níhilo opus habébit: hic enim sitis, hic ésurit: cave ígitur, illum ne despícias.

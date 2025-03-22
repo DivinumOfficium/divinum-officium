@@ -1,8 +1,15 @@
+[Officium]
+S. Petri Celestini Papæ et Confessoris
+(sed rubrica monastica)
+S. Petri Celestini Papæ et Confessoris O. N.
+
 [Rank]
-S. Petri Celestini Papæ et Confessoris;;Duplex;;3;;vide C4
+;;Duplex;;3;;vide C4b
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C4b
 
 [Rule]
-vide C4;
+vide C4b;
 9 lectiones
 
 [Ant 1]
@@ -24,15 +31,6 @@ Petrus, a nomine quo Pontifex est appellatus, Cælestinus dictus, honestis catho
 [Lectio94]
 Petrus, a nómine quo Póntifex est appellátus, Cælestínus dictus, honéstis catholicísque paréntibus Æsérniæ in Samnítibus natus, adolescéntiam vix ingréssus, ut ánimum a mundi illécebris custodíret, in solitúdinem secéssit. Ibi contemplatiónibus mentem nútriens, corpus in servitútem rédigens, férream caténam ad nudam carnem adhibébat. Congregatiónem, quæ póstea, Cælestinórum dicta est, sub régula sancti Benedícti instítuit. Hinc, quasi lucérna supra candelábrum pósita, cum abscóndi nequíret, (Romána Ecclésia diu viduáta pastóre) in Petri Cáthedram ignórans et absens adscítus, magna novitátis admiratióne non minus quam repentíno gáudio cunctos affécit. Cum autem in pontificátus sublimitáte collocátus, váriis disténtus curis, assuétis incúmbere meditatiónibus vix posse cognósceret, óneri páriter et honóri voluntárie cessit. Indeque priscam vitæ ratiónem répetens, obdormívit in Dómino, ejúsque pretiósam mortem crux præfúlgens in áëre ante cubículi óstium réddidit ámplius gloriósam. Miráculis multis tam vivens quam post óbitum cláruit; quibus rite examinátis, Clemens quintus anno postquam decéssit undécimo, eum Sanctórum número adscrípsit.
 &teDeum
-
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
 
 [Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
 @Commune/C4:Ant 3 summi Pontificis

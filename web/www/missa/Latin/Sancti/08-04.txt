@@ -1,12 +1,17 @@
+[Officium]
+S. Dominici Confessoris
+
 [Rank]
-S. Dominici Confessoris;;Duplex majus;;4;;vide C5
+;;Duplex majus;;4;;vide C5
+(sed rubrica 1963 aut rubrica 1617)
+;;Duplex;;3;;vide C5
 
 [Rule]
 vide C5
 Gloria
 
 [Introitus]
-@Commune/C4c
+@Commune/C5b
 
 [Oratio]
 Deus, qui Ecclésiam tuam beáti Domínici Confessóris tui illumináre dignátus es méritis et doctrínis: concéde; ut ejus intercessióne temporalibus non destituátur auxíliis, et spirituálibus semper profíciat increméntis.
@@ -26,7 +31,7 @@ Ad annuntiándum mane misericórdiam tuam, et veritátem tuam per noctem. Allel�
 Justus germinábit sicut lílium: et florébit in ætérnum ante Dóminum. Allelúja.
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
 Múnera tibi, Dómine, dicáta sanctífica: ut, méritis beáti Domínici Confessóris tui, nobis profíciant ad medélam.

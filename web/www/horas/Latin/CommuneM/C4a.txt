@@ -1,16 +1,13 @@
 @CommuneM/C4
 
 [Officium]
-Commune Doctorum Pontificis
+@Commune/C4a
 
 [Ant 1]
 @Commune/C4a
 
 [Oratio]
 @Commune/C4a
-
-[Oratio3]
-@Commune/C4:Oratio
 
 [Lectio1]
 @Commune/C4a:Lectio1:s/-5/-4/ s/5 .*//s

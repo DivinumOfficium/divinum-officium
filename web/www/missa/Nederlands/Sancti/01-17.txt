@@ -1,18 +1,8 @@
-[Rank]
-S. Antonii Abbatis;;Duplex;;3;;vide C4c
+[Officium]
+S. Antonii Abbatis
 
-[Rule]
-vide C4c;
-9 lectiones
-
-[Oratio]
-@Commune/C4c:Oratio:s/N\./Antonius/
+[Name]
+Antonius
 
 [Evangelium]
 @Commune/C5
-
-[Secreta]
-@Commune/C4c:Secreta:s/N\./Antonius/
-
-[Postcommunio]
-@Commune/C4c:Postcommunio:s/N\./Antonius/

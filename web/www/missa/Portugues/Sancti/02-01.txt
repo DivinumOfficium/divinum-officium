@@ -1,16 +1,13 @@
-[Rank]
-S. Ignatii Episcopi et Martyris;;Duplex;;3;;vide C2
-
-[Rank] (rubrica 1570)
-S. Ignatii Episcopi et Martyris;;Semiduplex;;2;;vide C2
-
-[Rule]
-Gloria
+[Officium]
+S. Ignatii Episcopi et Martyris
 
 [Comment]
 # 01 II – S. Inácio, Bispo e Mártir
 ! 3 classe
 ! Paramentos vermelhos
+
+[Name]
+Inácio
 
 [Introitus]
 !Gl 6:14
@@ -19,9 +16,6 @@ v. Longe esteja de mim gloriar-me nalguma coisa senão na Cruz de N. S. Jesus Cr
 Lembrai-Vos de David, Senhor, assim como da sua mansidão.
 &Gloria
 v. Longe esteja de mim gloriar-me nalguma coisa senão na Cruz de N. S. Jesus Cristo, pela qual o mundo foi crucificado para mim e eu para o mundo.
-
-[Oratio]
-@Commune/C2c:Oratio
 
 [Lectio]
 Lição da Ep.ª do B. Ap.º Paulo aos Romanos.
@@ -55,11 +49,5 @@ Naquele tempo, disse Jesus aos seus discípulos: «Se o grão de trigo, caindo n
 !Sl 8:6-7
 Vós o coroastes, Senhor, com glória e honras: Vós lhe concedestes domínio sobre as obras das vossas mãos.
 
-[Secreta]
-@Commune/C2c:Secreta
-
 [Communio]
 Sou o trigo de Cristo, que hei-de ser moído nos dentes das feras para me tornar em pão puríssimo.
-
-[Postcommunio]
-@Commune/C2c:Postcommunio

@@ -1,10 +1,5 @@
-[Rank]
-S. Petri Chrysologi Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDA
+[Officium]
+Sv. Petra Chrysologa, biskupa, vyznavače a Učitele Církve
 
 [Comment]
 # Sv. Petra Chrysologa, biskupa, vyznavače a Učitele Církve
@@ -13,7 +8,8 @@ CredoDA
 ✝ kolem 450 v Ravenně
 
 [Name]
-Petre Chrysologe
+Petr Chrysologus
+Secreta=Petra Chrysologa
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -39,9 +35,6 @@ Ty jsi kněz na věky podle řádu Melchisedechova. Aleluja.
 
 [Offertorium]
 @Commune/C4a:Offertorium
-
-[Secreta]
-@Commune/C4a:Secreta:s/N\./Petra Chrysologa/
 
 [Communio]
 !Mt 25,20; 25,21

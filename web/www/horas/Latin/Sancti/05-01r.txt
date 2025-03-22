@@ -1,8 +1,10 @@
-[Rank]
-S. Joseph Opificis;;Duplex I classis;;6;;
+[Officium]
+S. Joseph Opificis
 
-[Rank] (rubrica innovata)
-S. Joseph Opificis;;Duplex optional classis;;2;;
+[Rank]
+;;Duplex I classis;;6;;
+(sed rubrica innovata)
+;;Duplex optional classis;;2;;
 
 [Rule]
 proper

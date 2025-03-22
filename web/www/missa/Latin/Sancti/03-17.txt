@@ -1,5 +1,8 @@
+[Officium]
+S. Patricii Episcopi et Confessoris
+
 [Rank]
-S. Patricii Episcopi et Conf.;;Duplex;;3;;vide C4
+;;Duplex;;3;;vide C4
 
 [Rank](rubrica 196)
 S. Patricii Episcopi et Conf.;;Duplex;;2;;vide C4
@@ -8,9 +11,10 @@ S. Patricii Episcopi et Conf.;;Duplex;;2;;vide C4
 vide C4;
 Gloria
 
+[Name]
+Patrícium
+Postcommunio=Patrício
+
 [Oratio]
 Deus, qui ad prædicándam géntibus glóriam tuam beátum Patrícium Confessórem atque Pontíficem míttere dignátus es: ejus méritis et intercessióne concéde; ut, quæ nobis agénda prǽcipis, te miseránte adimplére possímus.
 $Per Dominum
-
-[Postcommunio]
-@Commune/C4:Postcommunio:s/N\./Patrício/

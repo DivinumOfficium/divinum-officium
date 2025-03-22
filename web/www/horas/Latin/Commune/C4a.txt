@@ -1,17 +1,26 @@
 @Commune/C4
 
 [Officium]
-Commune Doctore
+Commune Doctoris Pontificis
+
+[Missa]
+In medio
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+Psalm5 Vespera=116
+Psalm5 Vespera3=131
+Gloria
 
 [Ant 1]
 O Doctor óptime, * Ecclésiæ sanctæ lumen, beáte N., divínæ legis amátor, deprecáre pro nobis Fílium Dei.
 
 [Oratio]
-Concéde nos, quǽsumus, omnípotens Deus, beáti N. confessóris tui atque Pontíficis mónita et exémpla sectári: ut per terréstrium rerum contémptum ætérna gáudia consequámur.
-$Per Dominum
-
-[Oratio3]
-@Commune/C4:Oratio
+Deus, qui pópulo tuo ætérnæ salútis beátum N. minístrum tribuísti: præsta, quǽsumus; ut, quem Doctórem vitæ habúimus in terris, intercessórem habére mereámur in cœlis.
+(sed communi Summorum Pontificum)
+Deus, qui pópulo tuo ætérnæ salútis beátum N. minístrum tribuísti: præsta, quǽsumus; ut, quem Doctórem vitæ habúimus in terris, intercessórem habére mereámur in cælis.
+$Per Dominum.
 
 [Lectio1]
 De libro Ecclesiástici
@@ -107,3 +116,62 @@ Dicéndo enim, Vos estis sal terræ, osténdit univérsam hóminum infatuátam e
 [Lectio9 in 3 loco]
 Ne ígitur putétis, inquit, ad lévia vos ducéndos esse certámina, neque exiguárum rerum vobis ineúndam esse ratiónem. Vos estis sal terræ. Quid ígitur? Ipsine putrefácta medicáti sunt? Nequáquam: neque enim fíeri potest, ut ea quæ jam corrúpta sunt, salis perfricatióne reparéntur. Non ergo hoc fecérunt, sed ante renováta, sibíque trádita, atque ab illa jam putrédine liberáta, aspergébant sale, et in ea novitáte conservábant, quam a Dómino suscéperant. Liberáre quippe a putrédine peccatórum, Christi virtútis est: ut autem ad illa íterum non revertántur, Apostolórum curæ est ac labóris.
 &teDeum
+
+[Introitus]
+!Eccli 15:5
+v. In médio Ecclésiæ apéruit os ejus: et implévit eum Dóminus spíritu sapiéntiæ et intelléctus: stolam glóriæ índuit eum. (Allelúja, allelúja.)
+!Ps 91:2
+Bonum est confitéri Dómino: et psállere nómini tuo, Altíssime.
+&Gloria
+v. In médio Ecclésiæ apéruit os ejus: et implévit eum Dóminus spíritu sapiéntiæ et intelléctus: stolam glóriæ índuit eum. (Allelúja, allelúja.)
+
+[Lectio in 2 loco]
+Léctio libri Sapiéntiæ
+!Eccli 39:6-14
+Justus cor suum tradet ad vigilándum dilúculo ad Dóminum, qui fecit illum, et in conspéctu Altíssimi deprecábitur. Apériet os suum in oratióne, et pro delíctis suis deprecábitur. Si enim Dóminus magnus volúerit, spíritu intellegéntias replébit illum: et ipse tamquam imbres mittet elóquia sapiéntiæ suæ, et in oratióne confitébitur Dómino: et ipse díriget consílium ejus et disciplínam, et in abscónditis suis consiliábitur. Ipse palam fáciet disciplínam doctrínæ suæ, et in lege testaménti Dómini gloriábitur. Collaudábunt multi sapiéntiam ejus, et usque in sǽculum non delébitur. Non recédet memória ejus, et nomen ejus requirétur a generatióne in generatiónem. Sapiéntiam ejus enarrábunt gentes, et laudem ejus enuntiábit ecclésia.
+
+[Lectio]
+Léctio Epístolæ beáti Pauli Apóstoli ad Timótheum
+!2 Tim 4:1-8
+Caríssime: Testíficor coram Deo, et Jesu Christo, qui judicatúrus est vivos et mórtuos, per advéntum ipsíus et regnum ejus: prǽdica verbum, insta opportúne, importune: árgue, óbsecra, íncrepa in omni patiéntia, et doctrína. Erit enim tempus, cum sanam doctrínam non sustinébunt, sed ad sua desidéria, coacervábunt sibi magistros, pruriéntes áuribus, et a veritáte quidem audítum avértent, ad fábulas autem converténtur. Tu vero vígila, in ómnibus labóra, opus fac Evangelístæ, ministérium tuum ímple. Sóbrius esto. Ego enim jam delíbor, et tempus resolutiónis meæ instat. Bonum certámen certávi, cursum consummávi, fidem servávi. In réliquo repósita est mihi coróna justítiæ, quam reddet mihi Dóminus in illa die, justus judex: non solum autem mihi, sed et iis, qui díligunt advéntum ejus.
+
+[Graduale]
+!Ps 36:30-31
+Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium.
+V. Lex Dei ejus in corde ipsíus: et non supplantabúntur gressus ejus. 
+Allelúja, allelúja.
+!Eccli 45:9
+Amávit eum Dóminus, et ornávit eum: stolam glóriæ índuit eum. Allelúja.
+
+[GradualeP]
+Allelúja, allelúja.
+!Eccli 45:9
+Amávit eum Dóminus, et ornávit eum: stolam glóriæ índuit eum.
+!Osee 14:6
+Justus germinábit sicut lílium: et florébit in ætérnum ante Dóminum. Allelúja.
+
+[Tractus]
+!Ps 36:30-31
+Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium.
+V. Lex Dei ejus in corde ipsíus: et non supplantabúntur gressus ejus.
+!Ps 111:1-3
+Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis.
+V. Potens in terra erit semen ejus: generátio rectórum benedicétur.
+V. Glória et divítiæ in domo ejus: et justítia ejus manet in sǽculum sǽculi.
+
+[Evangelium]
+Sequéntia ++ sancti Evangélii secúndum Matthǽum
+!Matt 5:13-19
+In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Ad níhilum valet ultra, nisi ut mittátur foras, et conculcétur ab homínibus. Vos estis lux mundi. Non potest cívitas abscóndi supra montem pósita. Neque accéndunt lucérnam, et ponunt eam sub módio, sed super candelábrum, ut lúceat ómnibus, qui in domo sunt. Sic luceat lux vestra coram homínibus, ut vídeant ópera vestra bona, et gloríficent Patrem vestrum, qui in cœlis est. Nolíte putáre, quóniam veni sólvere legem aut prophétas: non veni sólvere, sed adimplére. Amen, quippe dico vobis, donec tránseat cœlum et terra, jota unum aut unus apex non præteríbit a lege, donec ómnia fiant. Qui ergo sólverit unum de mandátis istis mínimis, et docúerit sic hómines, mínimus vocábitur in regno cœlórum: qui autem fécerit et docúerit, hic magnus vocábitur in regno cœlórum.
+
+[Offertorium]
+!Ps 91:13
+Justus ut palma florébit: sicut cedrus, quæ in Líbano est, multiplicábitur. (Allelúja.)
+
+[Secreta]
+Sancti N. Pontíficis tui atque Doctóris nobis, Dómine, pia non desit orátio: quæ et múnera nostra concíliet; et tuam nobis indulgéntiam semper obtíneat.
+$Per Dominum
+
+[Postcommunio]
+Ut nobis, Dómine, tua sacrifícia dent salútem: beátus N. Póntifex tuus et Doctor egrégius, quǽsumus, precátor accédat.
+$Per Dominum

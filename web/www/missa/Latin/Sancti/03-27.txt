@@ -1,5 +1,10 @@
+[Officium]
+S. Joannis Damasceni Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Joannis Damasceni Confessoris;;Duplex;;3;;vide C5
+;;Duplex;;3;;vide C5a
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C5
 
 [Rule]
 Evangelium non appropriatum
@@ -20,7 +25,7 @@ Omnípotens sempitérne Deus, qui, ad cultum sacrárum imáginum asseréndum, be
 $Per Dominum
 
 [Lectio]
-@Commune/C2:Lectio
+@Commune/C2a:Lectio
 
 [Graduale]
 Deus, qui præcínxit me virtúte: et pósuit immaculátam viam meam.

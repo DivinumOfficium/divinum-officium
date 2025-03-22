@@ -1,9 +1,5 @@
-[Rank]
-S. Augustini Episcopi Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-vide C4;mtv
-Gloria
+[Officium]
+S. Agostinho de Cantorbéry, Bispo e Confessor
 
 [Comment]
 # 28 V – S. Agostinho de Cantorbéry, Bispo e Confessor
@@ -11,7 +7,7 @@ Gloria
 ! Paramentos brancos
 
 [Introitus]
-@Commune/C4d:Introitus
+@Commune/C4-1:Introitus
 
 [Oratio]
 Ó Deus, que pela pregação e milagres do B. Agostinho, vosso Confessor e Pontífice, Vos dignastes ilustrar com a luz da verdadeira fé a nação inglesa, concedei-nos por sua intercessão que os corações dos que andam transviados regressem à unidade da vossa fé, e sejamos concordes com vossa vontade.
@@ -23,23 +19,23 @@ Lição da Ep.ª do B. Ap.º Paulo aos Tessalonicenses.
 Meus irmãos: Tivemos confiança em o nosso Deus de vos pregar o Evangelho com muita solicitude, pois a nossa pregação não foi baseada nem no erro, nem em nenhuma intenção viciosa, nem na impostura, mas porque Deus nos julgou dignos de nos confiar o Evangelho. E, assim, falámos, não para agradar aos homens, mas a Deus, que perscruta os nossos corações. Com efeito, nunca a nossa linguagem (vós o sabeis e Deus é testemunha) serviu para adular, foi inspirada pela avareza, procurou a glória humana, ou a vossa ou a de outrem. Podíamos, como Apóstolos de Cristo, impor-nos a vós, mas tornamo-nos pequenos, como uma mãe que acaricia seus filhos. Assim, no nosso afecto por vós, desejamos ardentemente dar-vos, não somente o Evangelho de Deus, mas até a nossa própria vida, pois tanto vos tornastes caríssimos ao nosso coração! Decerto vos recordais, meus irmãos, do nosso trabalho e fadiga, porquanto trabalhámos dia e noite, a fim de não sermos onerosos a nenhum de vós, a quem pregamos o Evangelho de Deus.
 
 [Graduale]
-@Commune/C4d:Graduale
+@Commune/C4-1:Graduale
 
 [GradualeP]
-@Commune/C4d:GradualeP
+@Commune/C4-1:GradualeP
 
 [Evangelium]
 @Sancti/04-25:Evangelium
 
 [Offertorium]
-@Commune/C4d:Offertorium
+@Commune/C4-1:Offertorium
 
 [Secreta]
 Vos oferecemos, Senhor, este sacrifício na solenidade do B. Agostinho, vosso Pontífice e Confessor, suplicando-Vos humildemente que as ovelhas perdidas, tendo regressado ao único aprisco, se sustentem com este salutar alimento.
 $Per Dominum
 
 [Communio]
-@Commune/C4d:Communio
+@Commune/C4-1:Communio
 
 [Postcommunio]
 Saciados com a hóstia salutar, Senhor, Vos pedimos humildemente que pela intercessão dos sufrágios do B. Agostinho ela seja imolada em honra do vosso nome em todos os lugares e constantemente.

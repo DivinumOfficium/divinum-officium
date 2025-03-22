@@ -1,28 +1,14 @@
-[Rank]
-In Vigilia Ss. Simonis et Judæ Ap.;;Vigilia;;1.5;;ex C1v
-
-[Rule]
-ex C1v;
-no Gloria
-Suffragium=Maria3;Papa;Ecclesia;;
-
-[Introitus]
-@Commune/C3
+[Officium]
+In Vigilia Ss. Simonis et Judæ Apostolorum
 
 [Oratio]
 Wij vragen U, almachtige God, laat uw apostelen Simon en Judas, op wier glorierijk feest wij vooruitlopen, ons bij uw Majesteit voorkomen om uw weldaden te verkrijgen.
 $Per Dominum
 
-[Lectio]
-@Commune/C5b
-
 [Graduale]
 !Ps 78:10; 78:2
 Wreek, o Heer, het bloed van uw dienaren, dat vergoten werd. 
 V. De lijken van uw dienaren, o Heer, hebben zij tot aas geworpen voor de vogelen des hemels, de lichamen van uw getrouwen voor de wilde dieren op het veld.
-
-[Evangelium]
-@Commune/C2p
 
 [Offertorium]
 @Commune/C3a

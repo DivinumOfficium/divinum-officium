@@ -1,12 +1,19 @@
+[Officium]
+S. Titi Episcopi et Confessoris
+
 [Rank]
-S. Titi Episc. et Confessoris;;Duplex;;3;;vide C4
+;;Duplex;;3;;vide C4
 
 [Rule]
 vide C4;
 Gloria
 
+[Name]
+Titum
+Postcommunio=Tito
+
 [Introitus]
-@Commune/C2c
+@Commune/C2a
 
 [Oratio]
 Deus, qui beátum Titum Confessórem tuum atque Pontíficem apostólicis virtútibus decorásti: ejus méritis et intercessióne concéde; ut, juste et pie vivéntes in hoc sǽculo, ad cœléstem pátriam perveníre mereámur.
@@ -27,13 +34,7 @@ Sequéntia ++ sancti Evangélii secúndum Lucam
 In illo témpore: Designávit Dóminus et álios septuagínta duos: et misit illos binos ante fáciem suam in omnem civitátem et locum, quo erat ipse ventúrus. Et dicebat illis: Messis quidem multa, operárii autem pauci. Rogáte ergo Dóminum messis, ut mittat operários in messem suam. Ite: ecce, ego mitto vos sicut agnos inter lupos. Nolíte portáre sácculum neque peram neque calceaménta; et néminem per viam salutavéritis. In quamcúmque domum intravéritis, primum dícite: Pax huic dómui: et si ibi fúerit fílius pacis, requiéscet super illum pax vestra: sin autem, ad vos revertátur. In eádem autem domo manéte, edéntes et bibéntes quæ apud illos sunt: dignus est enim operárius mercéde sua. Nolíte transíre de domo in domum. Et in quamcúmque civitátem intravéritis, et suscéperint vos, manducáte quæ apponúntur vobis: et curáte infírmos, qui in illa sunt, et dícite illis: Appropinquávit in vos regnum Dei.
 
 [Offertorium]
-@Commune/C2b
-
-[Secreta]
-@Commune/C4
+@Commune/C2-1
 
 [Communio]
 @Commune/C4
-
-[Postcommunio]
-@Commune/C4::s/N\./Tito/

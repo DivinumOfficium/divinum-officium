@@ -1,5 +1,5 @@
-[Rank]
-Ss. Vincentii et Anastasii Martyrum;;Semiduplex;;2;;vide C3
+[Officium]
+Ss. Vincentii et Anastasii Martyrum
 
 [Rule]
 vide C3;
@@ -10,12 +10,12 @@ Gloria
 ! 3 classe
 ! Paramentos vermelhos
 
-[Introitus]
-@Commune/C3:Introitus
-
 [Oratio]
 Senhor, dignai-Vos ouvir as nossas súplicas, a fim de que, reconhecendo-nos réus diante de Vós pelas nossas iniquidades, sejamos livres delas por intercessão dos vossos B. B. Mártires Vicente e Anastácio.
 $Per Dominum
+
+[Introitus]
+@Commune/C3:Introitus
 
 [Lectio]
 @Commune/C3:Lectio

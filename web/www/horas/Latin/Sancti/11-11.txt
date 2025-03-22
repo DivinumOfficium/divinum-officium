@@ -1,5 +1,12 @@
+[Officium]
+S. Martini Episcopi et Confessoris
+
 [Rank]
-S. Martini Episcopi et Confessoris;;Duplex;;3;;vide C4
+;;Duplex;;3;;vide C4
+(sed rubrica monastica)
+;;Duplex II. classis;;5;;vide C4
+(sed rubrica 1617 aut rubrica 1930)
+;;Duplex majus;;4;;vide C4
 
 [Rule]
 vide C4;
@@ -115,7 +122,7 @@ R. Cælum dives ingréditur, hymnis cæléstibus honorátur.
 R. Cælum dives ingréditur, hymnis cæléstibus honorátur.
 
 [Versum 0]
-@Commune/C2::s/N\./Martíne/
+@Commune/C2a::s/N\./Martíne/
 
 [Ant Laudes]
 Dixérunt discípuli * ad beátum Martínum: Cur nos, pater, déseris, aut cui nos desolátos relínquis? Invádent enim gregem tuum lupi rapáces.

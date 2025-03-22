@@ -1,9 +1,5 @@
-[Rank]
-S. Paulini Episcopi et Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-vide C4;
-Gloria
+[Officium]
+S. Paulino, Bispo e Confessor
 
 [Comment]
 # 22 VI – S. Paulino, Bispo e Confessor
@@ -11,7 +7,7 @@ Gloria
 ! Paramentos brancos
 
 [Introitus]
-@Commune/C4d:Introitus
+@Commune/C4-1:Introitus
 
 [Oratio]
 Ó Deus, que àqueles que tudo abandonaram neste mundo para Vos seguirem prometestes o cêntuplo e a vida eterna, concedei-nos propício que, seguindo os exemplos do santo Pontífice Paulino, desprezemos sempre as coisas terrenas e aspiremos somente às celestiais.
@@ -32,7 +28,7 @@ Ninguém o igualou na observância das leis do Altíssimo. Aleluia, aleluia.
 Tu és sacerdote para sempre, segundo a ordem de Melquisedeque. Aleluia.
 
 [Evangelium]
-@Commune/C5b:Evangelium
+@Commune/C5-1:Evangelium
 
 [Offertorium]
 !Sl 88:21-22

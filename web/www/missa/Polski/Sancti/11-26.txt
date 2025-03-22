@@ -1,9 +1,5 @@
-[Rank]
-S. Silvesteri Abbatis Confessoris;;Duplex;;3;;vide C4c
-
-[Rule]
-vide C4c;
-Gloria
+[Officium]
+Św. Sylwestra Opata
 
 [Comment]
 # 26 XI – Św. Sylwestra, Opata
@@ -11,31 +7,33 @@ Gloria
 ! Szaty białe
 Św. Sylwester urodził się w Osimo w 1177 roku. Studiował prawo na uniwersytecie w Bolonii, a później został kanonikiem w rodzinnym mieście. Wstrząśnięty widokiem rozkładających się zwłok krewniaka, porzucił świat i został pustelnikiem. Gdy zgromadzili się przy nim uczniowie, założył nowy zakon oparty na regule św. Benedykta i kierował nim do śmierci w roku 1267. Zakon założony przez św. Sylwestra istnieje do dzisiaj pod nazwą Sylwestrynów.
 
+Wspomnienie św. Piotra z Aleksandrii, Biskupa i Męczennika. Św. Piotr, biskup Aleksandrii, potępił herezję Ariusza. Pewnej nocy ukazał mu się Chrystus w rozdartej szacie, która symbolizowała Kościół rozdarty przez herezje. Św. Piotr został ścięty 25 listopada 311 roku.
+
 [Introitus]
-@Commune/C4c:Introitus
+@Commune/C5b:Introitus
 
 [Oratio]
 Najłaskawszy Boże, gdy święty Opat Sylwester rozmyślał przy otwartym grobie nad znikomością tego świata, raczyłeś go powołać do pustelni i ozdobiłeś zasługami świętego życia; prosimy Cię pokornie, byśmy za jego przykładem, gardząc dobrami ziemskimi, zażywali wiecznego obcowania z Tobą.
 $Per Dominum
 
 [Lectio]
-@Commune/C4c:Lectio
+@Commune/C5b:Lectio
 
 [Graduale]
-@Commune/C4c:Graduale
+@Commune/C5b:Graduale
 
 [Evangelium]
-@Commune/C4c:Evangelium
+@Commune/C5b:Evangelium
 
 [Offertorium]
-@Commune/C4c:Offertorium
+@Commune/C5b:Offertorium
 
 [Secreta]
 Gdy z czcią składamy te dary boskiemu majestatowi Twojemu, błagamy Cię, Panie, abyśmy za przykładem św. Sylwestra, Opata, przez pobożne przygotowanie umysłu i czystość serca zasłużyli godnie przyjąć Ciało i Krew Syna Twojego: 
 $Qui tecum
 
 [Communio]
-@Commune/C4c:Communio
+@Commune/C5b:Communio
 
 [Postcommunio]
 Panie, gdy nas posiliłeś Boską ucztą, daj nam tak iść śladami świętego Opata Sylwestra, abyśmy wespół ze Świętymi otrzymali obfitą zapłatę w Królestwie Twojej chwały.

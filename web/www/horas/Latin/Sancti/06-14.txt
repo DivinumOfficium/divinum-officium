@@ -1,16 +1,21 @@
+[Officium]
+S. Basilii Magni, Episcopis Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Basilii Magni Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+;;Duplex;;3;;vide C4a
+(sed rubrica 1930)
+;;Duplex majus;;4;;vide C4a
 
 [Rule]
 vide C4a;mtv
 9 lectiones
 
 [Name]
-Basíli
+Basilíi
+Ant=Basíli
 
 [Oratio]
-Exáudi, quǽsumus, Dómine, preces nostras, quas in beáti Basilíi Confessóris tui atque Pontíficis solemnitáte deférimus: et, qui tibi digne méruit famulári, ejus intercedéntibus méritis, ab ómnibus nos absólve peccátis.
-$Per Dominum
+@Commune/C4-1
 
 [Lectio4]
 Basilíus, nobilis Cáppadox, Athénis una cum Gregório Nazianzéno, ejus amicíssimo, sæculáribus lítteris, deínde in monastério sacris mirabíliter erudítus, eum brevi cursum fecit ad omnem doctrínæ et morum excelléntiam, ut inde Magni cognómen invénerit.  Is ad prædicándum Jesu Christi Evangélium in Pontum accersítus, eam provínciam, a christiánis institútis aberrántem, ad viam salútis revocávit. Mox ab Eusébio Cæsaréæ epíscopo ad erudiéndam eam civitátem adjútor adhibétur: in cujus locum póstea succéssit.  Is Fílium Patri consubstantiálem esse in primis deféndit, ac Valéntem imperatórem, sibi irátum, miráculis ádeo flexit, ut, incumbéntem ad voluntátem ejiciéndi ipsum in exsílium, a senténtia discédere coégerit.

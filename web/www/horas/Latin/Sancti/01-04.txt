@@ -1,7 +1,10 @@
+[Officium]
+In Octava Ss. Innocentium
+
 [Rank]
-In Octava Ss. Innocentium;;Simplex;;1.4;;vide Sancti/12-28
+;;Simplex;;1.4;;vide Sancti/12-28
 (sed rubrica tridentina)
-In Octava Ss. Innocentium;;Duplex;;3.1;;ex Sancti/12-28
+;;Duplex;;3.1;;ex Sancti/12-28
 
 [Rule]
 vide Sancti/12-28;
@@ -9,6 +12,8 @@ Feria Te Deum
 Comkey=70
 9 lectiones
 Lectio1 TempNat
+Gloria
+Prefatio=Nat
 
 [Rule] (rubrica tridentina)
 ex Sancti/12-28;
@@ -18,6 +23,9 @@ Antiphonas Horas
 Feria Te Deum
 Psalm5 Vespera3=115
 Lectio1 TempNat
+Gloria
+Prefatio=Nat
+Credo
 
 [Ant 1] (rubrica cisterciensis)
 @SanctiM/12-28

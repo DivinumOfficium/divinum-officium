@@ -1,14 +1,13 @@
-[Rank]
-S. Brunonis Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+S. Brunonis Confessoris
 
 [Comment]
 # 06 X – S. Bruno, Confessor
 ! 3 classe
 ! Paramentos brancos
+
+[Name]
+Bruno
 
 [Introitus]
 @Commune/C5:Introitus
@@ -29,12 +28,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C5:Offertorium
 
-[Secreta]
-@Commune/C5:Secreta
-
 [Communio]
 @Commune/C5:Communio
-
-[Postcommunio]
-Ó Deus omnipotente, Vos imploramos, havendo nós recebido o alimento celestial, fazei que, por intercessão do B. Confessor Bruno, sejamos fortificados contra todas as adversidades.
-$Per Dominum

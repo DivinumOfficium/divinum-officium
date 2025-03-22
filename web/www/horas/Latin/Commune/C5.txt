@@ -1,7 +1,10 @@
 @Commune/C4
 
 [Officium]
-Commúne Confessóris non Pontíficis
+Commune Confessoris non pontificis
+
+[Missa]
+Os justi
 
 [Rule]
 Psalmi Dominica
@@ -19,15 +22,7 @@ Serve bone * et fidélis, intra in gáudium Dómini tui.
 Similábo eum * viro sapiénti, qui ædificávit domum suam supra petram.
 
 [Oratio]
-Deus, qui nos beáti N. Confessóris tui ánnua solemnitáte lætíficas: concéde propítius; ut cujus natalícia cólimus, étiam actiónes imitémur.
-$Per Dominum.
-
-[Oratio1]
-Intercéssio nos, quǽsumus, Dómine, beáti N. Abbátis comméndet: ut, quod nostris méritis non valémus, ejus patrocínio assequámur.
-$Per Dominum.
-
-[Oratio2]
-Adésto, Dómine, supplicatiónibus nostris, quas in beáti N. Confessóris tui solemnitáte deférimus: ut, qui nostræ justítiæ fidúciam non habémus, ejus, qui tibi plácuit, précibus adjuvémur.
+Deus, qui nos beati N. Confessoris tui annua solemnitate lætificas: concede propitius; ut, cuius natalitia colimus, etiam actiones imitemur.
 $Per Dominum.
 
 [Nocturn 2 Versum]
@@ -337,3 +332,60 @@ Dénique ex una decem mnas álius fecit, álius quinque. Fortásse iste moralia 
 [Lectio9 in 3 loco]
 Et hic póssumus decem mnas decem verba intellígere, id est, legis doctrínam; quinque autem mnas, magisteria disciplínæ. Sed legisperitum in ómnibus volo esse perféctum; non enim in sermóne, sed in virtúte est regnum Dei. Bene autem, quia de Judæis dicit, duo soli multiplicatam pecúniam deferunt, non útique æris, sed dispensatiónis usúris. Ália est enim pecúniæ fnebris, ália doctrínæ cæléstis usúra.
 &teDeum
+
+[Introitus]
+!Ps 36:30-31
+v. Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus. (Allelúja, allelúja.)
+!Ps 36:1
+Noli æmulári in malignántibus: neque zeláveris faciéntes iniquitátem.
+&Gloria
+v. Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus. (Allelúja, allelúja.)
+
+[Lectio]
+Léctio libri Sapiéntiæ
+!Eccli 31:8-11
+Beátus vir, qui invéntus est sine mácula, et qui post aurum non ábiit, nec sperávit in pecúnia et thesáuris. Quis est hic, et laudábimus eum? fecit enim mirabília in vita sua. Qui probátus est in illo, et perféctus est, erit illi glória ætérna: qui potuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: ídeo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum.
+
+[Graduale]
+!Ps 91:13; 91:14
+Justus ut palma florébit: sicut cedrus Líbani multiplicábitur in domo Dómini.
+!Ps 91:3
+Ad annuntiándum mane misericórdiam tuam, et veritátem tuam per noctem. Allelúja, allelúja
+!Ja 1:12
+Beátus vir, qui suffert tentatiónem: quóniam, cum probátus fúerit, accípiet corónam vitæ. Allelúja.
+
+[GradualeP]
+Allelúja, allelúja.
+!Jas 1:12.
+Beátus vir, qui suffert tentatiónem: quóniam, cum probátus fúerit, accípiet corónam vitæ. Allelúja.
+!Eccli 45:9
+Amávit eum Dóminus et ornávit eum: stolam glóriæ índuit eum. Allelúja.
+
+[Tractus]
+!Ps 91:13; 91:14
+Justus ut palma florébit: sicut cedrus Líbani multiplicábitur in domo Dómini.
+!Ps 91:3
+Ad annuntiándum mane misericórdiam tuam, et veritátem tuam per noctem.
+!Ps 111:1-3
+Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis.
+V. Potens in terra erit semen ejus: generátio rectórum benedicétur.
+V. Glória et divítiæ in domo ejus: et justítia ejus manet in sǽculum sǽculi.
+
+[Evangelium]
+Sequéntia ++ sancti Evangélii secúndum Lucam
+!Luc 12:35-40
+In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucernæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. Beáti servi illi, quos, cum vénerit dóminus, invénerit vigilántes: amen, dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam, si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti, quia, qua hora non putátis, Fílius hóminis véniet.
+
+[Offertorium]
+@Commune/C2
+
+[Secreta]
+Laudis tibi, Dómine, hóstias immolámus in tuórum commemoratióne Sanctórum: quibus nos et præséntibus éxui malis confídimus et futúris.
+$Per Dominum
+
+[Communio]
+@Commune/C4-1
+
+[Postcommunio]
+Refécti cibo potúque cœlésti, Deus noster, te súpplices exorámus: ut, in cujus hæc commemoratióne percépimus, ejus muniámur et précibus.
+$Per Dominum

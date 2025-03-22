@@ -1,7 +1,18 @@
-[Rank]
-S. Antonii de Padua Confessoris;;Duplex;;3;;vide C5
+[Officium]
+S. Antonii de Padua Confessoris
 (sed rubrica 195 aut rubrica 196)
-S. Antonii de Padua Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
+S. Antonii de Padua Confessoris et Ecclesiæ Doctoris
+
+[Rank]
+;;Duplex;;3;;vide C5
+(sed rubrica 1617)
+;;Semiduplex;;2.2;;vide C5
+(sed rubrica 1930)
+;;Simplex;;1.1;;vide C5
+(sed rubrica 195 aut rubrica 196)
+;;Duplex;;3;;vide C5a
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C5a
 
 [Rule]
 vide C5;

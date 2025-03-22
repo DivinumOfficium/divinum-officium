@@ -1,16 +1,19 @@
+[Officium]
+S. Didaci Confessoris
+
 [Rank]
-S. Didaci Confessoris;;Semiduplex;;2.2;;vide C5b
+;;Semiduplex;;2.2;;vide C5-1
+(sed rubrica innovata)
+;;Simplex;;1.1;;vide C5-1
 
 [Rule]
-vide C5b;
+vide C5-1;
 Gloria
+
+[Name]
+Dídaci
+Postcommunio=Dídaco
 
 [Oratio]
 Omnípotens sempitérne Deus, qui dispositióne mirábili infírma mundi éligis, ut fórtia quæque confúndas: concéde propítius humilitáti nostræ; ut, piis beáti Dídaci Confessóris tui précibus, ad perénnem in cœlis glóriam sublimári mereámur.
 $Per Dominum
-
-[Secreta]
-@Commune/C5b
-
-[Postcommunio]
-@Commune/C5b::s/N\./Dídaco/

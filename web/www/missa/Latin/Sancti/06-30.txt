@@ -1,5 +1,10 @@
+[Officium]
+In Commemoratione S. Pauli Apostoli
+
 [Rank]
-In Commemoratione Sancti Pauli Apostoli;;Duplex majus;;4;;ex C1
+;;Duplex majus;;4;;ex C1
+(sed rubrica 196 aut rubrica 1617)
+;;Duplex;;3;;vide C1
 
 [Rule]
 Evangelium non appropriatum
@@ -10,12 +15,7 @@ Prefatio=Apostolis
 Sub unica concl
 
 [Introitus]
-!2 Tim 1:12
-v. Scio, cui crédidi, et certus sum, quia potens est depósitum meum servare in illum diem, justus judex.
-!Ps 138:1-2
-Dómine, probásti me et cognovísti me: tu cognovísti sessiónem meam et resurrectiónem meam.
-&Gloria
-v. Scio, cui crédidi, et certus sum, quia potens est depósitum meum servare in illum diem, justus judex.
+@Sancti/01-25
 
 [Oratio]
 Deus, qui multitúdinem géntium beáti Pauli Apóstoli prædicatióne docuísti: da nobis, quǽsumus; ut, cujus natalícia cólimus, ejus apud te patrocínia sentiámus.
@@ -66,7 +66,7 @@ Ecclésiæ tuæ, quǽsumus, Dómine, preces et hóstias beáti Petri Apóstoli c
 $Per Dominum
 
 [Communio]
-@Commune/C5b
+@Commune/C5-1
 
 [Postcommunio]
 Percéptis, Dómine, sacraméntis: beáto Paulo Apóstolo tuo interveniénte, deprecámur; ut, quæ pro illíus celebráta sunt glória, nobis profíciant ad medélam.

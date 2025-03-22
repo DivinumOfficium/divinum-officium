@@ -1,15 +1,18 @@
-[Rank]
-S. Evaristi Papæ et Martyris;;Simplex;;1.2;;vide C2
+[Officium]
+S. Evaristi Papæ et Martyris
 
-[Rank] (rubrica 1960)
-S. Evaristi Papæ et Martyris;;Simplex;;1.1;;vide C2
+[Rank]
+;;Simplex;;1.2;;vide C2b
+(sed rubrica 1960)
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C2;
-OPapaM=Evarístum;
+vide C2b;
 
-[Oratio]
-@Commune/C2::s/N\./Evarísti/
+[Name]
+Evarísti
+(sed communi Summorum Pontificum)
+Evarístum
 
 [Lectio93]
 Evarístus, Græcus, ex Judæo patre, Trajano imperatóre, pontificátum gessit. Qui ecclesiárum titulos urbis Romæ presbyteris divísit, et ordinávit ut septem diáconi episcopum custodírent dum evangelicæ prædicatiónis officio fungerétur. Idem constítuit, ex traditióne apostolica, ut matrimónium publice celebrétur et sacerdotis benedíctio adhibeátur. Præfuit Ecclésiæ annos novem, menses tres, presbyteris decem et septem, diáconis duobus, epíscopis quindecim, quater mense Decembri, ordinatis. Martyrio coronátus, prope sepúlcrum Principis Apostolórum in Vaticano sepúltus est septimo Kalendas Novembris.

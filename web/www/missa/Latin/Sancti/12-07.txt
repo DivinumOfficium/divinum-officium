@@ -1,20 +1,24 @@
+[Officium]
+S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+;;Duplex;;3;;vide C4a
+(sed rubrica 1930)
+;;Duplex majus;;4;;vide C4a
+(sed rubrica cisterciensis)
+;;nihil;;0;;
 
 [Rule]
 vide C4a;
 Gloria
-CredoDa
+CredoDA
 no Vigil1960
 
 [Name]
-Ambrose
+Ambrósium
 
 [Introitus]
 @Commune/C4a
-
-[Oratio]
-@Commune/C4a:Oratio:s/N\./Ambrósii/
 
 [Commemoratio Oratio]
 !Commemoratio Vigiliæ Immaculatæ Conceptionis
@@ -36,7 +40,7 @@ Jurávit Dóminus, et non pænitébit eum: Tu es sacérdos in ætérnum, secúnd
 @Commune/C4a:Evangelium
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
 Omnípotens sempitérne Deus, múnera tuæ majestáti obláta, per intercessiónem beáti Ambrósii Confessóris tui atque Pontíficis, ad perpétuam nobis fac proveníre salútem.
@@ -48,7 +52,7 @@ Múnera nostra, Dómine, apud tuam cleméntiam immaculátæ Dei Genetrícis comm
 $Qui tecum
 
 [Communio]
-@Commune/C2c
+@Commune/C2
 
 [Postcommunio]
 Sacraménta salútis nostræ suscipiéntes, concéde, quǽsumus, omnípotens Deus: ut beáti Ambrósii Confessóris tui atque Pontíficis nos ubíque orátio ádjuvet; in cujus veneratióne hæc tuæ obtúlimus majestáti.

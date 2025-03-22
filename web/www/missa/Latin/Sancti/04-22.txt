@@ -1,19 +1,14 @@
+[Officium]
+SS. Soteris et Caji Summorum Pontificum et Martyrum
+
 [Rank]
-SS. Soteris et Caji Summorum Pontificum et Martyrum;;Semiduplex;;2.2;;vide C4b
+;;Semiduplex;;2.2;;vide C3b
 
 [Rule]
-vide C4b;
+vide C3b;
 Gloria
-OPapaeM=Sotérem et Cajum;
 
-[Lectio]
-@Commune/C4b
-
-[Evangelium]
-@Commune/C4b
-
-[Offertorium]
-@Commune/C4b
-
-[Communio]
-@Commune/C4b
+[Name]
+Sotéris et Caji
+(sed communi Summorum Pontificum)
+Sotérem et Cajum

@@ -1,10 +1,15 @@
+[Officium]
+S. Nicolai de Tolentino Confessoris
+
 [Rank]
-S. Nicolai de Tolentino Confessoris;;Duplex;;3;;vide C5b
+;;Duplex;;3;;vide C5-1
+(sed rubrica 1617)
+;;Semiduplex;;2.2;;vide C5-1
 
 [Rule]
-vide C5b;
+vide C5-1;
 9 lectiones
 
-[Oratio]
-Adésto, Dómine, supplicatiónibus nostris quas in beáti Nicolái Confessóris tui solemnitáte deférimus: ut qui nostræ justítiæ fidúciam non habémus, ejus qui tibi plácuit, précibus adjuvémur.
-$Per Dominum
+[Name]
+Nicolái
+Postcommunio=Nicoláo

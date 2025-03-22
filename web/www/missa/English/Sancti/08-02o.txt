@@ -1,24 +1,5 @@
-[Rank]
-S. Stephen pope and martyr;;Simplex;;1.1;;vide C2
+[Officium]
+S. Stephen Pope and Martyr
 
-[Rule]
-vide C2;
-Gloria
-
-[Oratio]
-!For St. Stephen I, Pope and Martyr
-@Commune/C2b:Oratio:s/N\./Stephen/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio Gregem
-
-[Secreta]
-!For St. Stephen I, Pope and Martyr
-@Commune/C2b:Secreta:s/N\./Stephen/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
-
-[Postcommunio]
-!For St. Stephen I, Pope and Martyr
-@Commune/C2b:Postcommunio:s/N\./Stephen/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio Gregem
+[Name]
+Stephen

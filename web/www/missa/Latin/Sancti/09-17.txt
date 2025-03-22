@@ -1,5 +1,10 @@
+[Officium]
+Impressionis Stigmatum S. Francisci
+
 [Rank]
-Impressionis Stigmatum S. Francisci;;Duplex;;3;;vide C5
+;;Duplex;;3;;vide C5
+(sed rubrica 196)
+;;Simplex;;1.1;;vide C5
 
 [Rule]
 vide C5;
@@ -35,7 +40,7 @@ Sequéntia ++ sancti Evangélii secúndum Matthǽum
 In illo témpore: Dixit Jesus discípulis suis: Si quis vult post me veníre, ábneget semetípsum, et tollat crucem suam, et sequátur me. Qui enim volúerit ánimam suam salvam fácere, perdet eam: qui autem perdíderit ánimam suam propter me, invéniet eam. Quid enim prodest hómini, si mundum univérsum lucrétur, ánimæ vero suæ detriméntum patiátur? Aut quam dabit homo commutatiónem pro ánima sua? Fílius enim hóminis ventúrus est in glória Patris sui cum Angelis suis: et tunc reddet unicuíque secúndum ópera ejus.
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
 Múnera tibi, Dómine, dicata sanctífica: et, intercedénte beáto Francísco, ab omni nos culpárum labe purífica.

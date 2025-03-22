@@ -1,14 +1,16 @@
-[Rank]
-S. Blasii Episcopi et Martyris;;Simplex;;1.1;;vide C2
+[Officium]
+S. Blasii Episcopi et Martyris
 
-[Rank] (rubrica innovata)
-S. Blasii Episcopi et Martyris;;Duplex optional;;2;;vide C2
+[Rank]
+;;Simplex;;1.1;;vide C2-1
+(sed rubrica innovata)
+;;Duplex optional;;2;;vide C2-1
 
 [Rule]
-vide C2;
+vide C2-1;
 
-[Oratio]
-@Commune/C2:Oratio1:s/N\./Blásii/
+[Name]
+Blásii
 
 [Lectio93]
 Blásius, Sebáste in Arménia cum virtútum laude floréret, ejúsdem civitátis epíscopus elígitur. Qui, quo témpore Diocletiánus insatiábilem crudelitátem in Christiános exercébat, se in spelúncam ábdidit montis Argǽi; ubi támdiu látuit, dum ab Agricolái prǽsidis milítibus venántibus deprehénsus et ad prǽsidem ductus, ejus jussu conjéctus est in víncula. Quo in loco multos ægrótos sanávit, qui ad Blásium, ejus fama sanctitátis addúcti, deferebántur. In illis puer fuit, qui, desperáta a médicis salúte, transvérsa spina fáucibus inhærénte, ánimam agébat. Prodúctus autem ad prǽsidem Blásius semel et íterum, cum nec blandítiis nec minis addúci posset, ut diis sacrificáret, primum virgis cæsus, deínde in equúleo férreis pectínibus dilaniátus est; postrémo, dempto cápite, illústre fídei testimónium Christo Dómino dedit, tértio Nonas Februárii.

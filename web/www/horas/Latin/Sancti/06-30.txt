@@ -1,8 +1,10 @@
-[Rank]
-In Commemoratione S. Pauli Apostoli;;Duplex majus;;4;;ex C1
+[Officium]
+In Commemoratione S. Pauli Apostoli
 
-[Rank] (rubrica 196 aut rubrica 1617)
-In Commemoratione S. Pauli Apostoli;;Duplex;;3;;vide C1
+[Rank]
+;;Duplex majus;;4;;ex C1
+(sed rubrica 196 aut rubrica 1617)
+;;Duplex;;3;;vide C1
 
 [Rule]
 ex C1;

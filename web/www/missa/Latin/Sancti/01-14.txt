@@ -1,20 +1,27 @@
-[Rank]
-S. Hilarii Episcopi Confessoris Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Officium]
+S. Hilarii Episcopi Confessoris Ecclesiæ Doctoris
+(sed rubrica 1570 aut rubrica 1617)
+S. Hilarii Episcopi Confessoris
 
-[Rank] (rubrica 1570)
-S. Hilarii Episcopi Confessoris;;Semiduplex;;2.2;;vide C4a
+[Rank]
+;;Duplex;;3;;vide C4a
+(sed rubrica 1570 aut rubrica 1617)
+;;Semiduplex;;2.2;;vide C4
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C4a
+(sed rubrica innovata)
+;;Duplex optional;;2;;vide C4a
 
 [Rule]
 vide C4a;
 Gloria
-CredoDa
+CredoDA
 
 [Name]
-Hilári
-
-[Oratio]
-@Commune/C4a:Oratio:s/N\./Hilárii/
-
-[Postcommunio]
-@Commune/C4a:Postcommunio:s/N\./Hilárius/
-
+Hilárium
+(sed rubrica 1570 aut rubrica 1617)
+Hilárii
+Secreta=Hilárii
+Postcommunio=Hilárius
+(sed rubrica 1570 aut rubrica 1617)
+Postcommunio=Hilário

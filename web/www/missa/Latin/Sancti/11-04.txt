@@ -1,11 +1,18 @@
+[Officium]
+S. Caroli Episcopi et Confessoris
+
 [Rank]
-S. Caroli Episcopi et Confessoris;;Duplex;;3;;vide C4
+;;Duplex;;3;;vide C4
 
 [Rule]
 vide C4;
 
+[Name]
+Caróli
+Postcommunio=Carólo
+
 [Introitus]
-@Commune/C2c
+@Commune/C2a
 
 [Oratio]
 Ecclésiam tuam, Dómine, sancti Caróli Confessóris tui atque Pontíficis contínua protectióne custódi: ut, sicut illum pastorális sollicitúdo gloriósum réddidit; ita nos ejus intercéssio in tuo semper fáciat amóre fervéntes.
@@ -27,13 +34,7 @@ Tu es sacérdos in ætérnum, secúndum órdinem Melchísedech. Allelúja.
 @Commune/C4
 
 [Offertorium]
-@Commune/C2b
-
-[Secreta]
-@Commune/C4
+@Commune/C2-1
 
 [Communio]
 @Commune/C4
-
-[Postcommunio]
-@Commune/C4::s/N\./Cárolo/

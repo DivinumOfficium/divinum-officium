@@ -1,18 +1,15 @@
+[Officium]
+S. Hermenegildi Martyris
+
 [Rank]
-S. Hermenegildi Martyris;;Semiduplex;;2.2;;vide C2
+;;Semiduplex;;2.2;;vide C2a
 
 [Rule]
-vide C2;
+vide C2a;
 
 [Oratio]
 Deus, qui beátum Hermenegíldum Mártyrem tuum cœlésti regno terrénum postpónere docuísti: da, quǽsumus, nobis; ejus exémplo cadúca despícere atque ætérna sectári.
 $Per Dominum.
 
 [Evangelium]
-@Commune/C2c
-
-[Secreta]
-@Commune/C2
-
-[Postcommunio]
 @Commune/C2

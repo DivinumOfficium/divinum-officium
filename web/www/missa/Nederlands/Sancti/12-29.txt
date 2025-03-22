@@ -1,14 +1,8 @@
-[Rank]
-S. Thomæ Episcopi et Martyris;;Duplex;;3;;vide C2
+[Officium]
+S. Thomæ Episcopi et Martyris
 
-[Rank] (rubrica 1570 aut 1888)
-S. Thomæ Episcopi et Martyris;;Semiduplex;;2.2;;vide C2
-
-[Rule]
-vide C2;
-Gloria
-Credo
-Prefatio=Nat
+[Name]
+Thomas
 
 [Introitus]
 !  
@@ -41,19 +35,13 @@ Ik ben de goede Herder. Ik ken mijn schapen en de mijnen kennen Mij. Alleluia.
 @Tempora/Pasc2-0
 
 [Offertorium]
-@Commune/C2a
-
-[Secreta]
-@Commune/C2b:Secreta:s/N\./Thomas/
+@Commune/C2a-1
 
 [Commemoratio Secreta]
 @Sancti/12-26
 
 [Communio]
 @Tempora/Pasc2-0
-
-[Postcommunio]
-@Commune/C2b:Postcommunio:s/N\./Thomas/
 
 [Commemoratio Postcommunio]
 @Sancti/12-26

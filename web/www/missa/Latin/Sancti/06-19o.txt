@@ -1,9 +1,17 @@
+[Officium]
+Ss. Gervasii et Protasii Martyrum
+
 [Rank]
-SS. Gervasii et Protasii Martyrum;;Simplex;;1.1;;vide C3
+;;Simplex;;1.1;;vide C3a-1
 
 [Rule]
-vide C3;
+vide C3a-1;
 Gloria
+
+[Name]
+Gervásii et Protásii
+Secreta=Gervásio et Protásio
+Postcommunio=Gervásio et Protásio
 
 [Introitus]
 !Ps 84:9
@@ -12,9 +20,6 @@ v. Loquétur Dóminus pacem in plebem suam: et super sanctos suos, et in eos, qu
 Benedixísti, Dómine, terram tuam, avertísti captivitátem Jacob. 
 &Gloria
 v. Loquétur Dóminus pacem in plebem suam: et super sanctos suos, et in eos, qui convertúntur ad ipsum.
-
-[Oratio]
-@Commune/C3b::s/N\. et N\./Gervásii et Protásii/
 
 [Lectio]
 Léctio Epístolæ beáti Petri Apóstoli
@@ -36,12 +41,6 @@ V. Hæc est vera fratérnitas, quæ vicit mundi crímina: Christum secúta est, 
 !Ps 31:11
 Lætámini in Dómino et exsultáte, justi: et gloriámini, omnes recti corde.
 
-[Secreta]
-@Commune/C3b::s/N\. et N\./Gervásii et Protásii/
-
 [Communio]
 !Ps 78:2; 78:11
 Posuérunt mortália servórum tuórum, Dómine, escas volatílibus cœli, carnes Sanctórum tuórum béstiis terræ: secúndum magnitúdinem bráchii tui pósside fílios morte punitórum.
-
-[Postcommunio]
-@Commune/C3b::s/N\. et N\./Gervásii et Protásii/

@@ -1,11 +1,17 @@
-[Rank]
-S. Francisci Xaverii Confessoris;;Duplex majus;;4;;vide C5
+[Officium]
+S. Francisci Xaverii Confessoris
 
-[Rank] (rubrica 1888)
-S. Francisci Xaverii Confessoris;;Duplex;;3;;vide C5
+[Rank]
+;;Duplex majus;;4;;vide C5-1
+(sed rubrica 1888)
+;;Duplex;;3;;vide C5-1
+(sed rubrica monastica)
+;;Simplex;;1.1;;vide C5-1
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;vide C5-1
 
 [Rule]
-vide C5;mtv
+vide C5-1;mtv
 9 lectiones;
 
 [Oratio]

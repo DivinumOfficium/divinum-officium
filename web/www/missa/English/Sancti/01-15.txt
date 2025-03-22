@@ -1,12 +1,8 @@
-[Rank]
-S. Pauli Primi Eremitae et Confessoris;;Duplex;;3;;vide C5
+[Officium]
+St. Paul the First Hermit, Confessor
 
-[Rule]
-vide C5;
-Gloria
-
-[Oratio]
-@Commune/C5:Oratio:s/N\./Paul/
+[Name]
+Paul
 
 [Lectio]
 Lesson from the letter of St. Paul the Apostle to the Philippians
@@ -26,8 +22,5 @@ Continuation + of the Holy Gospel according to Matthew
 !Matt 11:25-30
 At that time, Jesus spoke and said, I praise You, Father, Lord of heaven and earth, that You hid these things from the wise and prudent, and revealed them to little ones. Yes, Father, for such was Your good pleasure. All things have been delivered to Me by My Father; and no one knows the Son except the Father; nor does anyone know the Father except the Son, and him to whom the Son chooses to reveal Him. Come to Me, all you who labor and are burdened, and I will give you rest. Take My yoke upon you, and learn from Me, for I am meek and humble of heart; and you will find rest for your souls. For My yoke is easy, and My burden light.
 
-[Secreta]
-@Commune/C5
-
 [Communio]
-@Commune/C2p
+@Commune/C2ap

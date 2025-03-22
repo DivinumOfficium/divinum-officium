@@ -1,13 +1,16 @@
+[Officium]
+S. Petri Martyris
+
 [Rank]
-S. Petri Martyris;;Duplex;;3;;vide C2
+;;Duplex;;3;;vide C2a-1
 (sed rubrica 1617)
-S. Petri Martyris;;Semiduplex;;2.2;;vide C2
+;;Semiduplex;;2.2;;vide C2a-1
 
 [Rank] (rubrica cisterciensis)
 S. Petri, Martyris;;iij. Lect. et M.;;1.2;;vide C2
 
 [Rule]
-vide C2;
+vide C2a-1;
 9 lectiones
 
 [Oratio]
@@ -28,4 +31,4 @@ Petrus, Verónæ paréntibus Manichæórum hǽresi inféctis natus, ab ipsa pene
 &teDeum
 
 [Versum 0]
-@Commune/C2::s/N\./Petre/
+@Commune/C2a::s/N\./Petre/

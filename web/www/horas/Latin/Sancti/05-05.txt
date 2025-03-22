@@ -1,12 +1,19 @@
-[Rank]
-S. Pii V Papæ et Confessoris;;Duplex;;3;;vide C4
+[Officium]
+S. Pii V Papæ et Confessoris
 
-[Rank] (rubrica innovata)
-S. Pii V Papae et Confessoris;;Duplex optional;;2;;vide C4
+[Rank]
+;;Duplex;;3;;vide C4b
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C4b
+(sed rubrica innovata)
+;;Duplex optional;;2;;vide C4b
 
 [Rule]
 vide C4;mtv
 9 lectiones
+
+[Name]
+Pium
 
 [Ant 1] (rubrica divino aut rubrica 1955 aut rubrica 1960)
 @Commune/C4
@@ -28,17 +35,8 @@ Selímum Turcárum tyrannum multis elátum victoriis, ingénti comparáta classe
 Pius, Boschi in Insúbria natus, cum quatuórdecim esset annórum, órdinem Prædicatórum ingréssus est. Sacerdótio auctus, sacras conciónes plúribus in locis cum ingénti animárum fructu hábuit. Inquisitóris offícium diu fórtiter ac laudabíliter sustínuit, et a Paulo quarto ad Nepesínum et Sutrínum episcopátum promótus, post biénnium inter patres cardináles adscríptus est. A Pio quarto translátus ad ecclésiam Montis Regális in Subalpínis, diœcésim vísitans, abúsus représsit; et Romam revérsus, in gravíssimis negótiis expediéndis fuit occupátus. Mórtuo autem Pio, præter ómnium exspectatiónem eléctus Póntifex, nihil in vitæ ratióne, excépto exterióri hábitu, immutávit. Selímum Turcárum tyránnum, ingénti comparáta classe, ad Echínadas ínsulas non tam armis quam fusis précibus devícit. Dum vero novam in ipsos Turcas expeditiónem paráret, piíssime óbiit in Dómino, anno millésimo quingentésimo septuagésimo secúndo, ætátis suæ sexagésimo octávo. Corpus ejus in basílica sanctæ Maríæ majóris summa fidélium veneratióne cólitur. Eum Clemens Papa undécimus catálogo Sanctórum adscrípsit.
 &teDeum
 
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
-
 [Versum 0]
-@Commune/C2::s/N\./Pie/
+@Commune/C2a::s/N\./Pie/
 
 [Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
 @Commune/C4:Ant 3 summi Pontificis

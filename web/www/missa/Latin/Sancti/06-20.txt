@@ -1,10 +1,18 @@
+[Officium]
+S. Silverii Papæ et Martyris
+
 [Rank]
-S. Silverii Papæ et Martyri;;Simplex;;1.1;;vide C4b
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-OPapaM=Silvérium;
-vide C4b;
+vide C2b;
 Gloria
+
+[Name]
+Silvérii
+(sed communi Summorum Pontificum)
+Silvérium
+Postcommunio=Silvério
 
 [Lectio]
 Léctio Epístolæ beáti Judæ Apóstoli.

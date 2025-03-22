@@ -1,12 +1,8 @@
-[Rank]
-In Cathedra S. Petri Ap. Antiochiae;;Duplex majus;;4;;ex C4
+[Officium]
+In Cathedra S. Petri Ap. Antiochiae
 
-[Rule]
-ex C4;
-Gloria
-Credo
-Prefatio=Apostolis
-Sub unica conclusione
+[Officium] (rubrica 196 aut rubrica 1930)
+In Cathedra S. Petri Apostoli
 
 [Comment]
 # 22 II – Cadeira de S. Pedro em Roma
@@ -22,8 +18,7 @@ Lembrai-Vos de David, ó Senhor, e da sua grande solicitude.
 v. O Senhor fez com ele uma aliança de paz e proclamou-o príncipe, para que a dignidade sacerdotal lhe pertencesse eternamente.
 
 [Oratio]
-Ó Deus, que, entregando ao B. Pedro, vosso Apóstolo, as chaves do reino celestial, lhe destes a autoridade pontifícia de «ligar e de desligar», concedei-nos, por intercessão do seu auxílio, que sejamos livres das cadeias dos nossos pecados.
-$Qui vivis
+@Sancti/01-18
 _
 ! de S. Paulo
 Ó Deus, que ensinastes a multidão dos povos por meio da pregação do B. Ap.º Paulo, concedei-nos, Vos pedimos, que, honrando a sua memória, gozemos o seu patrocínio junto de Vós.
@@ -57,11 +52,6 @@ Tu és Pedro, e sobre esta pedra edificarei a minha Igreja.
 V. E as portas do inferno não prevalecerão contra ela: E dar-te-ei as chaves do reino dos céus.
 V. Tudo o que ligares sobre a terra será ligado nos céus.
 V. E tudo o que desligares sobre a terra será desligado nos céus.
-
-[Evangelium]
-Continuação ++ do santo Evangelho segundo S. Mateus.
-!Mt 16:13-19
-Naquele tempo, veio Jesus para os lados de Cesareia, de Filipe, e interrogou os discípulos, dizendo: «Quem dizem os homens que é o Filho do homem?». Eles responderam: «Uns dizem que é João Baptista; outros que é Elias; outros que é Jeremias ou algum dos Profetas». Disse-lhes Jesus: «Vós, porém, quem dizeis que Eu sou?». Então, Simão-Pedro, tomando a palavra, disse: «Vós sois o Cristo, Filho de Deus vivo!». Respondendo Jesus, disse-lhe: «Bem-aventurado és tu, Simão, filho de João, pois não foi a carne nem o sangue que te revelaram isso, mas meu Pai, que está nos céus. Pois Eu te digo que tu és Pedro e que sobre esta pedra edificarei a minha Igreja; e as portas do inferno não prevalecerão contra ela. Dar-te-ei as chaves do reino dos céus: tudo o que ligares na terra será ligado nos céus; e tudo o que desligares na terra será desligado nos céus».
 
 [Offertorium]
 !Mt 16:18-19

@@ -1,11 +1,12 @@
+[Officium]
+S. Gabrielis Archangeli
+
 [Rank]
-S. Gabrielis Archangeli;;Duplex majus;;4;;ex Sancti/05-08
-
-[Rank] (rubrica 196)
-S. Gabrielis Archangeli;;Duplex;;3;;ex Sancti/05-08
-
-[Rank] (rubrica innovata)
-S. Gabrielis Archangeli;;Duplex;;3.91;;ex Sancti/05-08
+;;Duplex majus;;4;;ex Sancti/05-08
+(sed rubrica 196)
+;;Duplex;;3;;ex Sancti/05-08
+(sed rubrica innovata)
+;;Duplex;;3.91;;ex Sancti/05-08
 
 [Rule]
 ex Sancti/05-08
@@ -163,6 +164,9 @@ R. Ecce eris tacens, et non poteris loqui usque in diem quo hæc fiant
 &Gloria
 R. Ecce eris tacens, et non poteris loqui usque in diem quo hæc fiant
 
+[Lectio94](rubrica innovata)
+@:Lectio4
+
 [Lectio7]
 Léctio sancti Evangélii secúndum Lucam
 !Luc 1:26-38
@@ -192,9 +196,6 @@ R. Quæ Gabrieli Archangeli dictis credidisti, dum Virgo Deum a hominem genuisti
 [Lectio9]
 Christus Dei virtus et dicitur et est, qui forti armato, qui suum atrium in pace custodire solebat, fortior superveniens, ipsum suo brachio debellavit: et sic ei vasa captivitatis potenter eripuit. Angelus vero fortitudo Dei appellatus est, vel quod hujusmodi meruerit, prærogativam officii, quo ejusdem nuntiaret adventum virtutis: vel quia virginem natura pavidam, simplicem, verecundam, de miraculi novitate ne expavesceret, confortare deberet; quod et fecit, Ne timeas, inquiens, Maria, invenisti enim gratiam apud Deum. Convenienter ítaque Gabriel ad hoc opus eligitur, immo quia tale illi negotium injungitur, recte tali nomine designatur.
 &teDeum
-
-[Lectio94](rubrica innovata)
-@:Lectio4
 
 [Ant Laudes]
 Ingresso Zacharia * templum Domini, apparuit ei Gabriel Angelus, stans a dextris altaris incensi.

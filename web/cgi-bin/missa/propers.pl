@@ -187,13 +187,14 @@ sub oratio {
   if (!$w && $commune) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
     $w = $com{$type};
-
-    if ($w =~ /N\./ && exists($w{Name})) {
-      my @name = split("\n", $w{Name});
-      @name = grep(/$type\=/, @name) unless $w{Name} !~ /\=/;
-      $w = replaceNdot($w, $lang, $name[0]);
-    }
     setbuild2("$commune Oratio") if $w;
+  }
+
+  if ($w =~ /N\./ && exists($w{Name})) {
+    my @name = split("\n", $w{Name});
+    @name = grep(/$type\=/, @name) unless $w{Name} !~ /$type\=/;
+    $name[0] =~ s/^.*?\=//;
+    $w = replaceNdot($w, $lang, $name[0]);
   }
 
   # Special processing for Common of Supreme Pontiffs.
@@ -502,7 +503,8 @@ sub getcommemoratio {
 
   if ($o =~ /N\./ && exists($w{Name})) {
     my @name = split("\n", $w{Name});
-    @name = grep(/$type\=/, @name) unless $w{Name} !~ /\=/;
+    @name = grep(/$type\=/, @name) unless $w{Name} !~ /$type\=/;
+    $name[0] =~ s/^.*?\=//;
     $o = replaceNdot($o, $lang, $name[0]);
   }
 
@@ -697,7 +699,7 @@ sub setalleluia {
 sub checksuffragium {
   if ($rule =~ /no suffragium/i) { return 0; }
   if (!$dayname[0] || $dayname[0] =~ /Quad5/i) { return 0; }    #christmas, passiontime omit
-  if ($winner =~ /sancti/i && $rank >= 3 && $seasonalflag) { return 0; }
+  if ($winner =~ /sancti/i && $rank >= 3 && $seasonalflag && $winner !~ /01-05/) { return 0; }
   if ($commemoratio =~ /sancti/i && $commemoratio{Rank} =~ /;duplex/i && $seasonalflag) { return 0; }
   if ($winner{Rank} =~ /octav/i && $winner{Rank} !~ /post Octavam/i) { return 0; }
   if ($duplex > 2 && $version !~ /trident/i && $seasonalflag) { return 0; }
@@ -761,7 +763,7 @@ sub replaceNdot {
 
   if ($name) {
     $name =~ s/[\r\n]//g;
-    $s =~ s/N\. (et|and|és) N\./$name/;
+    $s =~ s/N\. .*? N\./$name/;
     $s =~ s/N\./$name/;
   }
   return $s;
@@ -1015,7 +1017,7 @@ sub prefatio : ScriptFunc {
   my %pr = %{setupstring($lang, 'Ordo/Prefationes.txt')};
   my $name =
       ($version =~ /(1955|196)/ && $rule =~ /Prefatio1960=([a-z0-9]+)/i) ? $1
-    : ($rule =~ /Prefatio=([a-z0-9]+)/i) ? $1
+    : ($rule =~ /Prefatio=([a-z0-9]+)/i || $communerule =~ /Prefatio=([a-z0-9]+)/i) ? $1
     : ($dayname[0] =~ /Adv[1-4]/i) ? 'Adv'
     : (($month == 12 && $day > 24) || ($month == 1 && $day == 1)) ? 'Nat'
     : ($month == 1 && $day > 5 && $day < 14) ? 'Epi'
@@ -1025,7 +1027,7 @@ sub prefatio : ScriptFunc {
     : (($dayname[0] =~ /Pasc5/i && $dayofweek > 3) || $dayname[0] =~ /Pasc6/i) ? 'Asc'
     : ($dayname[0] =~ /Pasc7/i) ? 'Spiritu'
     : ($winner{Rank} =~ /Beata.*?Maria.*?Virg/i) ? 'Maria'
-    : ($communetpe =~ /^C1$/i) ? 'Apostolis'
+    : ($commune =~ /C1$/i || $version =~ /1955|196/ && $commune =~ /C[234]b/) ? 'Apostolis'
     : ($votive =~ /Defunct|C9/i) ? 'Defunctorum'
     : ($dayofweek == 0) ? 'Trinitate'
     : 'Communis';

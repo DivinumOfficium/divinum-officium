@@ -1,28 +1,14 @@
-[Rank]
-In Vigilia Ss. Simonis et Judæ Apostolorum;;Vigilia;;1.5;;ex C1v
-
-[Rule]
-ex C1v;
-no Gloria
-Suffragium=Maria3;Papa;Ecclesia;;
-
-[Introitus]
-@Commune/C3:Introitus
+[Officium]
+Vigile des Sts Simon et Jude, Apôtres
 
 [Oratio]
 Accordez-nous, nous vous en prions, Dieu tout-puissant, alors que nous devançons le jour glorieux de la naissance au ciel de vos Apôtres Simon et Jude, qu’ainsi ils nous préviennent eux-mêmes auprès de votre majesté pour nous obtenir vos bienfaits.
 $Per Dominum
 
-[Lectio]
-@Commune/C5b:Lectio
-
 [Graduale]
 !Ps 78:10; 78:2
 Vengez, Seigneur, le sang de vos Saits qui a été répandu.
 V. Ils ont livré les cadavres de vos serviteurs en pâture aux oiseaux du ciel, et la chair de vos fidèles aux bêtes de la terre.
-
-[Evangelium]
-@Commune/C3p:Evangelium
 
 [Offertorium]
 !Ps 149:5-6

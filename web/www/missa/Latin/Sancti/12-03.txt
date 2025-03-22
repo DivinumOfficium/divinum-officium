@@ -1,9 +1,22 @@
+[Officium]
+S. Francisci Xaverii Confessoris
+
 [Rank]
-S. Francisci Xaverii Confessoris;;Duplex majus;;4;;vide C5
+;;Duplex majus;;4;;vide C5-1
+(sed rubrica 1888)
+;;Duplex;;3;;vide C5-1
+(sed rubrica monastica)
+;;Simplex;;1.1;;vide C5-1
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;vide C5-1
 
 [Rule]
-vide C5;
+vide C5-1;
 Gloria
+
+[Name]
+Francísci
+Postcommunio=Francísco
 
 [Introitus]
 !Ps 118:46-47
@@ -24,13 +37,7 @@ $Per Dominum
 @Sancti/08-08
 
 [Offertorium]
-@Commune/C2c
-
-[Secreta]
-@Commune/C5b
+@Commune/C2
 
 [Communio]
-@Commune/C4d
-
-[Postcommunio]
-@Commune/C5b::s/N\./Francísco/
+@Commune/C4-1

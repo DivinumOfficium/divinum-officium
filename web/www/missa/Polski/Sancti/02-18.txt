@@ -1,8 +1,5 @@
-[Rank]
-S. Simeonis Faustini Episcopi et Martyris;;Simplex;;1.1;;vide C2
-
-[Rule]
-vide C2;
+[Officium]
+Św. Symeona Biskupa i Męczennika
 
 [Comment]
 # 18 II – Św. Symeona, Biskupa i Męczennika
@@ -10,11 +7,5 @@ vide C2;
 ! Szaty czerwone
 Św. Symeon, następca Apostoła Jana na stolicy biskupiej w Jerozolimie, został uwięziony za cesarza Trajana około roku 110. Rządził Kościołem jerozolimskim 40 lat.
 
-[Oratio]
-@Commune/C2c:Oratio:s/N\./Symeona/
-
-[Secreta]
-@Commune/C2c:Secreta:s/N\./Symeona/
-
-[Postcommunio]
-@Commune/C2c:Postcommunio:s/N\./Symeona/
+[Name]
+Symeona

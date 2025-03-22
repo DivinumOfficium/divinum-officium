@@ -1,18 +1,18 @@
+[Officium]
+S. Canuti Regis et Martyrum
+
 [Rank]
-S. Canuti Regis et Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2a-1
 (sed rubrica tridentina)
-S. Canuti Regis et Martyris;;Semiduplex;;2.2;;vide C2
+;;Semiduplex;;2.2;;vide C2a-1
 
 [Rule]
-vide C2;
+vide C2a-1;
 Gloria
+
+[Name]
+Postcommunio=Canúto
 
 [Oratio]
 Deus, qui ad illustrándam Ecclésiam tuam beátum Canútum regem martýrii palma et gloriósis miráculis decoráre dignátus es: concéde propítius; ut, sicut ipse Domínicæ passiónis imitátor fuit, ita nos, per ejus vestígia gradiéntes, ad gáudia sempitérna perveníre mereámur.
 $Per eumdem
-
-[Secreta]
-@Commune/C2a
-
-[Postcommunio]
-@Commune/C2a

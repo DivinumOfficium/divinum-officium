@@ -1,14 +1,15 @@
+[Officium]
+S. Thomæ Cantuariensis Episcopi et Martyris
+
 [Rank]
-S. Thomæ Cantuariensis Episcopi et Martyris;;Duplex;;3;;vide C2
-
-[Rank] (rubrica 1570 aut rubrica 1888 aut rubrica 1617)
-S. Thomæ Cantuariensis Episcopi et Martyris;;Semiduplex;;2.2;;vide C2
-
-[Rank] (rubrica 1960)
-S. Thomæ Cantuariensis Episcopi et Martyris;;Simplex;;1.1;;vide C2
+;;Duplex;;3;;vide C2-1
+(sed rubrica 1570 aut rubrica 1888 aut rubrica 1617)
+;;Semiduplex;;2.2;;vide C2-1
+(sed rubrica 196 aut rubrica 1930)
+;;Simplex;;1.1;;vide C2-1
 
 [Rule]
-vide C2;
+vide C2-1;
 9 lectiones
 
 [Ant Vespera]

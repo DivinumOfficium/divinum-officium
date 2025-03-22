@@ -13,11 +13,8 @@
 V. Justi in perpétuum vivent, allelúia.
 R. Et apud Dóminum est merces eórum, allelúia.
 
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
-[Versum 3] (rubrica cisterciensis)
-@:Versum 1
+[Oratio]
+@Commune/C2
 
 [Invit]
 @Commune/C2p
@@ -137,6 +134,9 @@ R. Rectos decet collaudátio, allelúja, allelúja.
 [HymnusM Laudes]
 @Commune/C2
 
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
 [Responsory Breve Tertia] (rubrica cisterciensis)
 R.br. Sancti tui, Dómine, benedícent te. Allelúja, allelúja.
 R. Sancti tui, Dómine, benedícent te. Allelúja, allelúja.
@@ -157,6 +157,9 @@ R. Allelúia, allelúia.
 
 [Ant Vespera 3] (rubrica cisterciensis)
 @Commune/C1p:Ant Vespera
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
 
 [Lectio5 in 2 loco]
 @Commune/C2p:Lectio4 in 2 loco
@@ -185,4 +188,4 @@ R. Allelúia, allelúia.
 @Commune/C2p:Lectio9 in 2 loco
 
 [LectioE in 2 loco]
-@Commune/C3pp:LectioE
+@Commune/C3p:LectioE

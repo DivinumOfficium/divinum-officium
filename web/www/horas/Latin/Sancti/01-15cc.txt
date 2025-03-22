@@ -1,8 +1,19 @@
+[Officium]
+S. Mauri Abbatis
+(sed rubrica 1930)
+S. Mauri Abbatis O. N.
+
 [Rank]
-S. Mauri Abbatis;;Simplex;;1.1;;vide C4
+;;Simplex;;1.1;;vide C5b
+(sed rubrica monastica)
+;;Duplex II. classis;;5;;ex C5b
 
 [Rule]
-vide C4;
+vide C5b;
+(rubrica monastica)12 lectiones
+
+[Name]
+Mauri
 
 [Versum 1]
 V. Os justi meditábitur sapiéntiam. 
@@ -10,10 +21,6 @@ R. Et lingua ejus loquétur judícium.
 
 [Ant 1]
 @Commune/C4:Ant 2
-
-[Oratio]
-v. Intercéssio nos, quǽsumus, Dómine, beáti Mauri Abbátis comméndet: ut, quod nostris méritis non valémus, ejus patrocínio assequámur.
-$Per Dominum
 
 [Lectio93]
 Maurus nobilis Romanus, puer a patre Eutychio Deo sub sancti Benedicti disciplína oblatus, brevi tantum divina grátia profecit, ut ipsi magistro admiratióni esset; qui illum sæpe, véluti regularis observantiæ et virtútum ómnium specimen, ceteris discípulis ad imitándum proponebat. Cujus adhuc adolescentis illud admirábilis obediéntiæ exemplum a sancto Gregório Papa commemorátur: nam, cum Placidus mónachus in lacum prolapsus, aquárum ímpetu raperétur, sancti Patris jussu accurrens Maurus, et super aquas incédens, socium capíllis apprehensum, ad terram attraxit. Missus in Gálliam ab eodem sancto Benedicto, célebri monasterio exstructo, cui annos quadragínta præfuit, monasticam disciplínam mirifice propagávit. Denique sanctitáte et miraculis clarus, septuagenario major migrávit in cælum, anno salútis quingentésimo sexagésimo quinto.

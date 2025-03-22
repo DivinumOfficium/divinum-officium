@@ -1,5 +1,12 @@
 [Officium]
-Commune Plurimorum Martyrum
+Commune Plurimorum Martyrum Pontificum
+
+[Missa]
+Intret in conspectu
+
+[Comment]
+# 13 – 1 Msza o Wielu Męczennikach – Intret
+Męczeństwo w oczach świata jest klęską. Jest to jednak klęska pozorna. W rzeczywistości męczennik pokonując próbę, na którą Bóg go wystawia, odnosi zwycięstwo nad swoimi przeciwnikami.
 
 [Ant Vespera]
 Wszyscy święci, * jakież męki wycierpieli, by pewnie dostąpić palmy męczeńskiej.
@@ -48,16 +55,8 @@ R. A chlubcie się wszyscy prawego serca.
 Tych jest bowiem * królestwo niebieskie, którzy pogardzili życiem świata i dostąpili nagrody obiecanej i omyli szaty swoje we Krwi Baranka.
 
 [Oratio]
-Boże, który dozwalasz nam obchodzić narodziny Świętych Męczenników Twoich N. i N., daj nam w ich gronie wieczną szczęśliwością się radować.
-$Per Dominum
-
-[Oratio1]
-Prosimy Cię, Panie, niechaj obchód świętych błogosławionych Męczenników i Biskupów N. i N. będzie nam obroną, a chwalebna ich modlitwa Tobie nas poleca.
-$Per Dominum
-
-[Oratio2]
-Boże, który uroczystością świętych Męczenników Twoich N. i N. corocznie nas uweselasz, dozwól łaskawie, aby przykłady tych, których zasługami się radujemy, pobudziły nas do dobrego.
-$Per Dominum
+Prosimy Cię, Panie, niech obchód uroczystości świętych Męczenników Twoich i Biskupów N. i N. zjedna nam opiekę, a dostojna ich modlitwa niech nas Tobie poleca.
+$Per Dominum.
 
 [Hymnus Matutinum]
 v. Dla Chrystusa przelaną krew
@@ -220,3 +219,62 @@ W królestwie niebieskiem * jest mieszkanie świętych, i odpoczynek ich na wiek
 
 [Ant 3]
 Radują się w niebie * dusze Świętych, którzy szli śladami Chrystusa: a że dla Jego miłości krew swą przelali, przeto z Chrystusem weselą się bez końca.
+
+[Introitus]
+!Ps 78:11-12; 78:10
+v. Niech jęk pojmanych dojdzie do Ciebie, Panie: naszym sąsiadom odpłać siedmiokroć w ich zanadrze, pomścij krew Twoich Świętych, którą wylano.
+!Ps 78:1
+Boże, poganie przyszli do Twego dziedzictwa, zbezcześcili Twój święty przybytek, Jeruzalem obrócili w ruiny.
+&Gloria
+v. Niech jęk pojmanych dojdzie do Ciebie, Panie: naszym sąsiadom odpłać siedmiokroć w ich zanadrze, pomścij krew Twoich Świętych, którą wylano.
+
+[Lectio]
+Czytanie z Księgi Mądrości.
+!Mdr 3:1-8
+Dusze sprawiedliwych są w ręku Boga i nie dosięgnie ich męka. Zdało się oczom głupich, że pomarli, zejście ich poczytano za nieszczęście i odejście od nas za unicestwienie, a oni trwają w pokoju. Choć nawet w ludzkim zrozumieniu doznali kaźni, nadzieja ich pełna jest nieśmiertelności. Po nieznacznym skarceniu dostąpią dóbr wielkich, Bóg ich bowiem doświadczył i znalazł ich godnymi siebie. Doświadczył ich, jak złoto w tyglu i przyjął jak całopalną ofiarę. W dzień nawiedzenia swego zajaśnieją i rozbiegną się jak iskry po ściernisku. Będą sądzić ludy, zapanują nad narodami, a Pan królować będzie nad nimi na wieki.
+
+[Graduale]
+!Wj 15:11
+Chwalebny jest Bóg w Swoich Świętych, przedziwny w majestacie, dokonuje cudów.
+!Wj 15:6
+V. Prawica Twoja, Panie, wsławiła się mocą; prawica Twoja zgniotła nieprzyjaciół. Alleluja, alleluja.
+!Syr 44:14
+Ciała Świętych pogrzebane spoczywają w pokoju, a sława ich żyje z pokolenia na pokolenia. Alleluja.
+
+[Tractus]
+!Wj 15:11
+Chwalebny jest Bóg w Swoich Świętych, przedziwny w majestacie, dokonuje cudów.
+!Wj 15:6
+V. Prawica Twoja, Panie, wsławiła się mocą; prawica Twoja zgniotła nieprzyjaciół.
+!Ps 125:5-6.
+Którzy sieją we łzach, żąć będą w radości.
+V. Idą i płaczą, niosąc ziarno na zasiew:
+V. Przyjdą z radością, niosąc swoje snopy.
+
+[Evangelium]
+Ciąg dalszy ++ Ewangelii świętej według Łukasza.
+!Łk 21:9-19
+!x! Wszystkie prześladowania, jakich doznają męczennicy, stanowią część długiej próby, którą Kościół przechodzi w oczekiwaniu na powrót  Chrystusa. Próba ta została zapowiedziana i stanowi stałą część życia Kościoła.
+Onego czasu: Rzekł Jezus uczniom swoim: «Gdy posłyszycie o walkach i rozruchach, nie trwóżcie się; potrzeba, aby to nastąpiło pierwej, a nie zaraz koniec». Wtedy mówił im: «Powstanie naród przeciw narodowi i królestwo przeciw królestwu. I miejscami będą wielkie trzęsienia ziemi, zarazy i głód, będą strachy i znaki wielkie z nieba.
+Ale przed tym wszystkim podniosą na was swe ręce i będą prześladować i wydawać do synagog i do więzienia, wodząc przed królów i namiestników dla imienia mego. A stanie się to wam na świadectwo.
+Postanówcie tedy w sercach waszych nie obmyślać, jak odpowiadać macie. Albowiem ja dam wam wymowę i mądrość, której się nie będą mogli oprzeć ani sprzeciwić wszyscy przeciwnicy wasi. A wydawać was będą rodzice i bracia, i krewni, i przyjaciele, i zabiją niejednego z was. I będziecie u wszystkich w nienawiści dla imienia mego, a nawet włos z głowy waszej nie zginie. Przez cierpliwość waszą zyskacie dusze wasze».
+
+[Offertorium]
+!Ps 67:36
+Przedziwny jest Bóg w Swoich Świętych: Bóg Izraela, sam Swojemu ludowi daje potęgę i siłę: błogosławiony Bóg, alleluja.
+
+[Offertorium] (tempore post Septuagesimam)
+!Ps 67:36
+Przedziwny jest Bóg w Swoich Świętych: Bóg Izraela, sam Swojemu ludowi daje potęgę i siłę: błogosławiony Bóg..
+
+[Secreta]
+Wysłuchaj, Panie, naszych próśb, które zanosimy czcząc pamięć Twoich Świętych, a skoro nie ufamy własnej sprawiedliwości, niech nas wspierają zasługi tych, którzy Tobie się podobali.
+$Per Dominum.
+
+[Communio]
+!Mdr 3:4-6
+Choć w mniemaniu ludzi zostali ukarani, to Bóg ich doświadczył: jak złoto w piecu ich wypróbował, jak ofiarę całopalną ich przyjął.
+
+[Postcommunio]
+Nasyceni zbawiennym Sakramentem prosimy Cię, Panie, aby wspierały nas modły tych, których uroczystość obchodzimy.
+$Per Dominum

@@ -1,15 +1,14 @@
-[Rank]
-S. Pauli Primi Eremitae et Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+Św. Pawła pierwszego pustelnika i Wyznawcy
 
 [Comment]
 # 15 I – Św. Pawła, Pierwszego Pustelnika, Wyznawcy
 ! 3 klasy
 ! Szaty białe
 Św. Paweł w 15 roku życia udał się na pustynię i tam przeżył 98 lat na modlitwie i surowej pokucie. Zmarł w roku 341. Św. Hieronim napisał jego życiorys, który pociągnął wielu czytelników do naśladowania świętego Pustelnika. Św. Paweł jest patronem Zakonu Paulinów.
+
+[Name]
+Pawła
 
 [Introitus]
 !Ps 91:13-14
@@ -19,12 +18,11 @@ Dobrze jest wysławiać Pana i śpiewać imieniu Twemu, o Najwyższy.
 &Gloria
 v. Sprawiedliwy zakwitnie jak palma, rozrośnie się jak cedr na Libanie, zasadzony w domu Pańskim, w przedsionkach Boga naszego.
 
-[Oratio]
-Boże, który co roku uweselasz nas uroczystością św. Pawła, Twojego Wyznawcy, spraw łaskawie, abyśmy naśladowali czyny tego, którego narodziny dla nieba obchodzimy. 
-$Per Dominum
-
 [Lectio]
-@Sancti/10-19:Lectio
+Czytanie z Listu świętego Pawła Apostoła do Filipian.
+!Flp 3:7-12
+!x! Celem wysiłków ascetów chrześcijańskich jest udział w śmierci i zmartwychwstaniu Chrystusa.
+Bracia: Ale to, co było mi zyskiem, ze względu na Chrystusa poczytałem za szkodę. I owszem, uznam wszystko za szkodę wobec wzniosłego poznania Jezusa Chrystusa, Pana mojego, dla którego porzuciłem wszystko, i uznam za gnój, byle Chrystusa pozyskać.  Oby znaleziono mię w Nim, nie z tą moją sprawiedliwością, która jest z Zakonu, ale z tą,  która płynie z wiary w Chrystusa Jezusa, ze sprawiedliwością, która jest z Boga przez wiarę. Ona to sprawi, że poznam Jego samego i potęgę Jego zmartwychwstania oraz uczestnictwo cierpień Jego przez upodobnienie do Jego śmierci, aby w jakikolwiek sposób dostąpić powstania z martwych. I to nie dlatego, jakobym to już osiągnął albo już stał się doskonałym, ale biegnę za tym, aby jakoś uchwycić to, w co sam zostałem uchwycony przez Chrystusa Jezusa.
 
 [Graduale]
 !Ps 91:13; 91:14
@@ -41,13 +39,6 @@ Sprawiedliwy wyrośnie jak lilia i kwitnąć będzie przed Panem na wieki. Allel
 !Ps 20:2-3
 Z potęgi Twej, Panie, weseli, się sprawiedliwy, i z pomocy Twojej bardzo się cieszy: spełniłeś pragnienie jego serca.
 
-[Secreta]
-@Commune/C5:Secreta
-
 [Communio]
 !Ps 63:11
 Sprawiedliwy weseli się w Panu i do Niego się ucieka, a wszyscy prawego serca się chlubią.
-
-[Postcommunio]
-Pokrzepieni niebieskim pokarmem i napojem, błagamy Cię pokornie, Boże nasz, niech nas bronią modlitwy tego, w którego święto przyjęliśmy te dary.
-$Per Dominum

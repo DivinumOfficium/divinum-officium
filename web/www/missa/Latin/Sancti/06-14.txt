@@ -1,5 +1,10 @@
+[Officium]
+S. Basilii Magni Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Basilii Magni Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+;;Duplex;;3;;vide C4a
+(sed rubrica 1930)
+;;Duplex majus;;4;;vide C4a
 
 [Rule]
 Evangelium non appropriatum
@@ -11,14 +16,13 @@ CredoDA
 Pio PP. V, anno 1568, Doctor universalis Ecclesiæ declaratus est
 
 [Name]
-Basili
+Basilíi
 
 [Introitus]
 @Commune/C4a
 
 [Oratio]
-Exáudi, quǽsumus, Dómine, preces nostras, quas in beáti Basilíi Confessóris tui atque Pontíficis sollemnitáte deférimus: et, qui tibi digne méruit famulári, ejus intercedéntibus méritis, ab ómnibus nos absólve peccátis.
-$Per Dominum
+@Commune/C4-1
 
 [Lectio]
 @Commune/C4a
@@ -37,13 +41,13 @@ Sequéntia ++ sancti Evangélii secúndum Lucam
 In illo témpore: Dixit Jesus turbis: Si quis venit ad me, et non odit patrem suum, et matrem, et uxórem, et fílios, et fratres, et soróres, adhuc autem et ánimam suam, non potest meus esse discípulus. Et qui non bájulat crucem suam, et venit post me, non potest meus esse discípulus. Quis enim ex vobis volens turrim ædificáre, non prius sedens cómputat sumptus, qui necessárii sunt, si hábeat ad perficiéndum; ne, posteáquam posúerit fundaméntum, et non potuerit perfícere, omnes, qui vident, incípiant illúdere ei, dicéntes: Quia hic homo cœpit ædificáre, et non pótuit consummáre? Aut quis rex itúrus commíttere bellum advérsus álium regem, non sedens prius cógitat, si possit cum decem mílibus occúrrere ei, qui cum vigínti mílibus venit ad se? Alióquin, adhuc illo longe agénte, legatiónem mittens, rogat ea, quæ pacis sunt. Sic ergo omnis ex vobis, qui non renúntiat ómnibus, quæ póssidet, non potest meus esse discípulus. Bonum est sal. Si autem sal evanúerit, in quo condiétur? Neque in terram neque in sterquilínium útile est, sed foras mittétur. Qui habet aures audiéndi, áudiat.
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
-@Commune/C4d:Secreta:s/N\./Basilíi/
+@Commune/C4-1
 
 [Communio]
 @Commune/C4
 
 [Postcommunio]
-@Commune/C4d:Postcommunio:s/N\./Basilíi/
+@Commune/C4-1

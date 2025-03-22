@@ -3,11 +3,11 @@
 [Officium]
 Commune unius Martyris Tempore Paschali
 
+[Missa]
+Protexisti
+
 [Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
+@Commune/C2
 
 [Hymnus Vespera]
 @Commune/C2
@@ -16,15 +16,6 @@ Psalm5 Vespera3=115
 @Commune/C2
 
 [Oratio]
-@Commune/C2
-
-[Oratio1]
-@Commune/C2
-
-[Oratio2]
-@Commune/C2
-
-[Oratio3]
 @Commune/C2
 
 [Invit]
@@ -135,3 +126,45 @@ Verum quia ita sine ista grátia non potest vivi, ut et mors in potestáte sit l
 [Lectio9 in 2 loco]
 Si manséritis in me, inquit, et verba mea in vobis mánserint: quodcúmque voluéritis petétis, et fiet vobis. Manéndo quippe in Christo, quid velle possunt, nisi quod cónvenit Christo? Quid velle possunt manéndo in Salvatóre, nisi quod non est aliénum a salúte? Áliud quippe vólumus quia sumus in Christo: et áliud vólumus quia sumus adhuc in hoc sǽculo. De mansióne namque hujus sǽculi nobis aliquándo subrépit, ut hoc petámus, quod nobis non expedíre nescímus. Sed absit ut fiat nobis, si manémus in Christo, qui non facit quando pétimus, nisi quod éxpedit nobis.
 &teDeum
+
+[Introitus]
+!Ps 63:3
+v. Protexísti me, Deus, a convéntu malignántium, allelúja: a multitúdine operántium iniquitátem, allelúja, allelúja.
+!Ps. 63:2
+Exáudi, Deus, oratiónem meam cum déprecor: a timóre inimíci éripe ánimam meam.
+&Gloria
+v. Protexísti me, Deus, a convéntu malignántium, allelúja: a multitúdine operántium iniquitátem, allelúja, allelúja.
+
+[Lectio]
+Léctio libri Sapiéntiæ
+!Sap 5:1-5
+Stabunt justi in magna constántia advérsus eos, qui se angustiavérunt et qui abstulérunt labóres eórum. Vidéntes turbabúntur timore horríbili, et mirabúntur in subitatióne insperátæ salútis, dicéntes intra se, poeniténtiam agéntes, et præ angústia spíritus geméntes: Hi sunt, quos habúimus aliquándo in derísum et in similitúdinem impropérii. Nos insensáti vitam illórum æstimabámus insániam, et finem illórum sine honóre: ecce, quómodo computáti sunt inter fílios Dei, et inter Sanctos sors illórum est.
+
+[Graduale]
+Allelúja, allelúja.
+!Ps 88:6
+Confitebúntur cœli mirabília tua, Dómine: étenim veritátem tuam in ecclésia sanctórum. Allelúja.
+!Ps 20:4
+Posuísti, Dómine, super caput ejus corónam de lápide pretióso. Allelúja.
+
+[Evangelium]
+Sequéntia ++ sancti Evangélii secúndum Joánnem
+!Joannes 15:1-7
+In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis vera: et Pater meus agrícola est. Omnem pálmitem in me non feréntem fructum, tollet eum: et omnem, qui fert fructum, purgábit eum, ut fructum plus áfferat. Jam vos mundi estis propter sermónem, quem locútus sum vobis. Manéte in me: et ego in vobis. Sicut palmes non potest ferre fructum a semetípso, nisi mánserit in vite: sic nec vos, nisi in me manséritis. Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Si quis in me non mánserit, mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Si manséritis in me, et verba mea in vobis mánserint: quodcúmque voluéritis, petétis, et fiet vobis.
+
+[Offertorium]
+!Ps 88:6
+Confitebúntur cœli mirabília tua, Dómine: et veritátem tuam in ecclésia sanctórum, allelúja, allelúja.
+
+[Secreta]
+@Commune/C2
+
+[Communio]
+!Ps 63:11
+Lætábitur justus in Dómino, et sperábit in eo: et laudabúntur omnes recti corde, allelúja, allelúja.
+
+[Postcommunio]
+@Commune/C2
+
+[Lectio in 2 loco]
+@Commune/C2a-1:Lectio

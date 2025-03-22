@@ -1,9 +1,5 @@
-[Rank]
-S. Januarii Episcopi et Sociorum Martyrum;;Duplex;;3;;vide C3b
-
-[Rule]
-vide C3b;
-9 lectiones
+[Officium]
+Św. Januarego Biskupa i Towarzyszy Męczenników
 
 [Comment]
 # 19 IX – Św. Januarego i Towarzyszy, Męczenników
@@ -13,30 +9,23 @@ vide C3b;
 
 Msza wspólna nr 15 Salus autem.
 
-[Introitus]
-@Commune/C3b:Introitus
+[Name]
+Januarego i Towarzyszy
 
-[Oratio]
-Boże, Ty co roku uweselasz nas uroczystością świętych Męczenników Twoich Januarego i Towarzyszy, spraw łaskawie, abyśmy zapalali się przykładami tych, których zasługi nas cieszą.
-$Per Dominum
+[Introitus]
+@Commune/C3a-1:Introitus
 
 [Lectio]
-@Commune/C3b:Lectio
+@Commune/C3a-1:Lectio
 
 [Graduale]
-@Commune/C3b:Graduale
+@Commune/C3a-1:Graduale
 
 [Evangelium]
 @Sancti/01-19:Evangelium
 
 [Offertorium]
-@Commune/C3b:Offertorium
-
-[Secreta]
-@Commune/C3b:Secreta
+@Commune/C3a-1:Offertorium
 
 [Communio]
-@Commune/C3b:Communio
-
-[Postcommunio]
-@Commune/C3b:Postcommunio
+@Commune/C3a-1:Communio

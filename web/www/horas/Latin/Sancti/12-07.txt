@@ -1,16 +1,20 @@
+[Officium]
+S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+;;Duplex;;3;;vide C4a
+(sed rubrica 1930)
+;;Duplex majus;;4;;vide C4a
+(sed rubrica cisterciensis)
+;;nihil;;0;;
 
 [Rule]
 vide C4a;mtv
 9 lectiones;
 
 [Name]
-Ambrósi
-
-[Oratio]
-Deus, qui pópulo tuo ætérnæ salútis beátum Ambrósium minístrum tribuísti: præsta, quǽsumus; ut, quem Doctórem vitæ habúimus in terris, intercessórem habére mereámur in cælis.
-$Per Dominum
+Ambrósium
+Ant=Ambrósi
 
 [Lectio1] (rubrica tridentina)
 @Commune/C4:Lectio1

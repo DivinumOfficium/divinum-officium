@@ -1,10 +1,5 @@
-[Rank]
-In Vigilia S. Laurentii Martyris;;Simplex;;1.5;;vide C2
-
-[Rule]
-vide C2;
-no Gloria
-Suffragium=Maria3;Papa;Ecclesia;;
+[Officium]
+Vigília de S. Lourenço, Mártir
 
 [Comment]
 # 9 VIII – Vigília de S. Lourenço, Mártir
@@ -36,7 +31,7 @@ Distribuiu liberalmente os seus bens pelos pobres: a sua justiça subsistirá em
 V. Sua descendência será poderosa na terra, pois a geração dos justos será abençoada.
 
 [Evangelium]
-@Commune/C2b:Evangelium
+@Commune/C2a:Evangelium
 
 [Offertorium]
 !Jb 16:20

@@ -1,15 +1,13 @@
-[Rank]
-S. Bedae Venerabilis Confessoris et Ecclesiae Doctoris;;Duplex majus;;4;;vide C4a
-
-[Rule]
-vide C4a;
-CPapaM=Joánnem;
-Gloria
+[Officium]
+S. Beda, Confessor e Doutor
 
 [Comment]
 # 27 V – S. Beda, Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
+
+[Name]
+Beda
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -33,11 +31,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C4a:Offertorium
 
-[Secreta]
-@Commune/C4a:Secreta
-
 [Communio]
 @Commune/C4a:Communio
-
-[Postcommunio]
-@Commune/C4a:Postcommunio

@@ -1,9 +1,5 @@
-[Rank]
-S. Apollinaris Episcopi et Mart;;Duplex;;3;;vide C2
-
-[Rule]
-vide C2;
-Gloria
+[Officium]
+S. Apolinário, Bispo e Mártir
 
 [Comment]
 # 23 VII – S. Apolinário, Bispo e Mártir
@@ -15,7 +11,7 @@ S. Libório, Bispo e Confessor
 ! Paramentos brancos
 
 [Introitus]
-@Commune/C2b:Introitus
+@Commune/C2a-1:Introitus
 
 [Oratio]
 Ó Deus, remunerador das almas fiéis, que consagrastes este dia com o martírio do B. Apolinário, vosso Sacerdote, fazei que estes vossos servos alcancem a indulgência das suas faltas, pelas preces daquele cuja venerável festa celebramos.

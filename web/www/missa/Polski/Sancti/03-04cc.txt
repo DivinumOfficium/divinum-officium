@@ -1,24 +1,5 @@
-[Rank]
+[Officium]
 Św. Lucjusza I Papieża i Męczennika
 
-[Rule]
-vide C2b;
-OPapaM=Lucjusza;
-
-[Comment]
-Św. Lucjusz rządził Kościołem w czasie srogich prześladowań w połowie III wieku, zaledwie przez kilka miesięcy. Zmarł w roku 254.
-
-[Oratio]
-@Commune/C2b:Oratio:s/N\./Lucjusza/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio Gregem
-
-[Secreta]
-@Commune/C2b::s/N\./Lucjusza/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b
-
-[Postcommunio]
-@Commune/C2b::s/N\./Lucjusza/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b
+[Name]
+Lucjusza

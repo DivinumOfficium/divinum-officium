@@ -1,12 +1,15 @@
+[Officium]
+S. Athanasii Episcopi Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Athanasii Confessoris Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+;;Duplex;;3;;vide C4a
 
 [Rule]
 Gloria
 CredoDA
 
 [Name]
-Athanase
+Athanásii
 
 [Introitus]
 !Eccli 15:5.
@@ -17,8 +20,7 @@ Bonum est confitéri Dómino: et psállere nómini tuo, Altíssime.
 v. In médio Ecclésiæ apéruit os ejus: et implévit eum Dóminus spíritu sapiéntiæ et intelléctus: stolam glóriæ índuit eum, allelúja, allelúja.
 
 [Oratio]
-Exáudi, quǽsumus, Dómine, preces nostras, quas in beáti Athanásii Confessóris tui atque Pontíficis solemnitáte deférimus: et, qui tibi digne méruit famulári, ejus intercedéntibus méritis, ab ómnibus nos absólve peccátis.
-$Per Dominum.
+@Commune/C4-1
 
 [Lectio]
 Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios.
@@ -50,11 +52,11 @@ In illo témpore: Dixit Jesus discípulis suis: Cum persequéntur vos in civitá
 Invéni David servum meum, óleo sancto meo unxi eum: manus enim mea auxiliábitur ei, et bráchium meum confortábit eum, allelúja.
 
 [Secreta]
-@Commune/C4d:Secreta:s/N\./Athanásii/
+@Commune/C4-1
 
 [Communio]
 !Matt 10:27
 Quod dico vobis in ténebris, dícite in lúmine, dicit Dóminus: et quod in aure audítis, prædicáte super tecta, allelúja.
 
 [Postcommunio]
-@Commune/C4d:Postcommunio:s/N\./Athanásii/
+@Commune/C4-1

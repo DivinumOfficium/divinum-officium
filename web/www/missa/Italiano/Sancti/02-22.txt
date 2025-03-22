@@ -1,12 +1,8 @@
-[Rank]
-In Cathedra S. Petri Ap. Antiochiae;;Duplex majus;;4;;ex C4
+[Officium]
+In Cathedra S. Petri Apostoli Antiochiae
 
-[Rule]
-ex C4;
-Gloria
-Credo
-Prefatio=Apostolis
-Sub unica conclusione
+[Officium] (rubrica 196 aut rubrica 1930)
+In Cathedra S. Petri Apostoli
 
 [Introitus]
 !Eccli 45:30.
@@ -17,8 +13,7 @@ Ricòrdati, Signore, di David e di tutta la pietà sua.
 v. Il Signore ha stabilito con lui un'alleanza di pace e ne ha fatto un principe: e così durerà per sempre la sua dignità sacerdotale.
 
 [Oratio]
-O Dio, che al tuo santo apostolo Pietro, consegnando le chiavi del regno dei cieli hai dato il potere pontificale di sciogliere e di legare: concedi, a noi, con l’aiuto della sua intercessione, di essere liberati dalle catene dei nostri peccati:
-$Qui vivis
+@Sancti/01-18
 _
 !Commemorazione di S. Paolo
 O Dio, che hai ammaestrato tutte le nazioni con la predicazione di san Paolo apostolo, concedi a noi, che ne celebriamo la memoria, di sentire presso di te il suo patrocinio.
@@ -52,11 +47,6 @@ Tu sei Pietro, e su questa pietra edificherò la mia Chiesa,
 V. e le porte degli inferi non prevarranno contro di essa. E ti darò le chiavi del regno dei cieli:
 V. tutto ciò che avrai legato sulla terra sarà legato anche nei cieli;
 V. e tutto ciò che avrai sciolto sulla terra sarà sciolto anche nei cieli.
-
-[Evangelium]
-Seguito ++ del Santo Vangelo secondo Matteo.
-!Matt 16:13-19
-In quel tempo, Gesù, venuto nella zona di Cesarea di Filippo, interrogava i suoi discepoli: «Chi dicono che sia il Figlio dell'uomo?». Ed essi risposero: «Alcuni Giovanni il Battista, altri Ella, altri ancora Geremia, o uno dei profeti». Disse loro Gesù: «Ma voi, chi dite che io sia?». Rispose Simon Pietro: «Tu sei il Cristo, il Figlio del Dio vivente». E Gesù, in risposta, gli disse: «Beato sei tu, Simone, figlio di Giona, poiché non la carne e il sangue te l'hanno rivelato, ma il Padre mio che è nei cieli. E io dico a te che tu sei Pietro, e su questa pietra edificherò la mia Chiesa, e le porte degli inferi non prevarranno contro di essa. E ti darò le chiavi del regno dei cieli: tutto ciò che avrai legato sulla terra sarà legato anche nei cieli, e tutto ciò che avrai sciolto sulla terra sarà sciolto anche nei cieli».
 
 [Offertorium]
 !Matt 16:18-19

@@ -1,21 +1,22 @@
+[Officium]
+S. Petri Damiani Episcopi Confessoris et Ecclesiæ Doctoris
+(sed rubrica 1930 aut rubrica 1963)
+S. Petri Damiani Episcopi, Confessoris et Ecclesiæ Doctoris O. N.
+
 [Rank]
-S. Petri Damiani Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+;;Duplex;;3;;vide C4a
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C4a
 
 [Rule]
-vide C4;
+vide C4a;
 Gloria
 CredoDA
 
 [Name]
-Petre
+Petri
+Postcommunio=Petrus
 
 [Oratio]
 Concéde nos, quǽsumus, omnípotens Deus: beáti Petri Confessóris tui atque Pontíficis mónita et exémpla sectári; ut per terréstrium rerum contémptum ætérna gáudia consequámur.
 $Per Dominum
-
-[Secreta]
-Sancti Petri Pontíficis tui atque Doctóris nobis, Dómine, pia non desit orátio, quæ et múnera nostra concíliet; et tuam nobis indulgéntiam semper obtíneat.
-$Per Dominum
-
-[Postcommunio]
-@Commune/C4a:Postcommunio:s/N\./Petrus/

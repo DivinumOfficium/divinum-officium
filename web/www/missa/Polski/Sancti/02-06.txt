@@ -1,9 +1,5 @@
-[Rank]
-S. Titi Episc. et Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-vide C4;
-Gloria
+[Officium]
+Św. Tytusa Biskupa i Wyznawcy
 
 [Comment]
 # 06 II – Św. Tytusa, Biskupa i Wyznawcy
@@ -14,6 +10,9 @@ Gloria
 Msza wspólna nr 18 Statuit
 
 Wspomnienie św. Doroty, Dziewicy i Męczennicy. Św. Dorota, której imię znaczy «dar Boga», została ścięta za wiarę w Cezarei Kapadockiej z początkiem IV wieku.
+
+[Name]
+Tytusa
 
 [Oratio]
 Boże, który ozdobiłeś św. Tytusa, Twego Wyznawcę i Biskupa, apostolskimi cnotami, spraw dla jego zasług i wstawiennictwa, abyśmy sprawiedliwie i pobożnie żyjąc na tym świecie, mogli dojść do niebieskiej ojczyzny.
@@ -26,10 +25,4 @@ $Per Dominum.
 @Sancti/04-25:Evangelium
 
 [Offertorium]
-@Commune/C2b
-
-[Secreta]
-@Commune/C4
-
-[Postcommunio]
-@Commune/C4::s/N\./Tytusa/
+@Commune/C2-1

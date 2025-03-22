@@ -1,9 +1,17 @@
+[Officium]
+Ss. Cyriaci, Largi et Smaragdi Martyrum
+
 [Rank]
-Ss. Cyriaci, Largi et Smaragdi Martyrum;;Semiduplex;;2.2;;vide C3
+;;Semiduplex;;2.2;;vide C3a-1
+(sed rubrica 1960)
+;;Simplex;;1.1;;vide C3a-1
 
 [Rule]
-vide C3;
+vide C3a-1;
 Gloria
+
+[Name]
+Cyríaci, Largi et Smarágdi
 
 [Introitus]
 !Ps 33:10-11
@@ -12,10 +20,6 @@ v. Timéte Dóminum, omnes sancti ejus, quóniam nihil deest timéntibus eum: d�
 Benedícam Dóminum in omni témpore: semper laus ejus in ore meo.
 &Gloria
 v. Timéte Dóminum, omnes sancti ejus, quóniam nihil deest timéntibus eum: dívites eguérunt et esuriérunt: inquiréntes autem Dóminum non defícient omni bono.
-
-[Oratio]
-Deus, qui nos ánnua sanctórum Mártyrum tuórum Cyriáci, Largi et Smarágdi sollemnitáte lætíficas: concéde propítius; ut, quorum natalítia cólimus, virtútem quoque passiónis imitémur.
-$Per Dominum
 
 [Lectio]
 Léctio Epístolæ beáti Pauli Apóstoli ad Thessalonicénses
@@ -52,7 +56,7 @@ In illo témpore: Dixit Jesus discípulis suis: Eúntes in mundum univérsum, pr
 Lætámini in Dómino et exsultáte, justi: et gloriámini, omnes recti corde.
 
 [Secreta]
-@Commune/C2a
+@Commune/C2a-1
 
 [Communio]
 !Marc 16:17; 16:18

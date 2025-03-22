@@ -1,9 +1,5 @@
-[Rank]
-S. Ignatii Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+Św. Ignacego Loyoli Wyznawcy
 
 [Comment]
 # 31 VII – Św. Ignacego Loyoli, Wyznawcy
@@ -26,7 +22,7 @@ Boże, który dla rozszerzenia większej chwały Twojego imienia przez św. Igna
 $Per Dominum
 
 [Lectio]
-@Commune/C2a:Lectio
+@Commune/C2a-1:Lectio
 
 [Graduale]
 @Commune/C5:Graduale

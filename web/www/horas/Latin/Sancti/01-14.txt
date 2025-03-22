@@ -1,32 +1,36 @@
+[Officium]
+S. Hilarii Episcopi Confessoris Ecclesiæ Doctoris
+(sed rubrica 1570 aut rubrica 1617)
+S. Hilarii Episcopi Confessoris
+
 [Rank]
-S. Hilarii Episcopi Confessoris Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
-
-[Rank] (rubrica 1570 aut rubrica 1617)
-S. Hilarii Episcopi Confessoris;;Semiduplex;;2.2;;vide C4a
-
-[Rank] (rubrica innovata)
-S. Hilarii Episcopi Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C4a
-
-[Rank] (rubrica cisterciensis)
-S. Hilarii, Episcopi, Confessoris et Ecclesiae Doctoris;;iij. Lect. et M.;;1.2;;vide C4a
+;;Duplex;;3;;vide C4a
+(sed rubrica 1570 aut rubrica 1617)
+;;Semiduplex;;2.2;;vide C4
+(sed rubrica 1963 aut rubrica cisterciensis)
+;;Simplex;;1.1;;vide C4a
+(sed rubrica innovata)
+;;Duplex optional;;2;;vide C4a
 
 [Rule]
 vide C4a;mtv
-9 lectiones 
+(sed rubrica 1570 aut rubrica 1617)
+vide C4;mtv
+9 lectiones
 
 [Name]
-Hilári
+Hilárium
+(sed rubrica 1570 aut rubrica 1617)
+Hilárii
+Ant=Hilári
 
-[Oratio]
-@Commune/C4:Oratio2:s/N\./Hilárium/
-
-[Responsory1] (sed non rubrica 1960)
+[Responsory1] (nisi rubrica 1960)
 @Tempora/Epi2-0:Responsory1
 
-[Responsory2] (sed non rubrica 1960)
+[Responsory2] (nisi rubrica 1960)
 @Tempora/Epi2-0:Responsory2
 
-[Responsory3] (sed non rubrica 1960)
+[Responsory3] (nisi rubrica 1960)
 @Tempora/Epi2-0:Responsory3
 
 [Lectio4]

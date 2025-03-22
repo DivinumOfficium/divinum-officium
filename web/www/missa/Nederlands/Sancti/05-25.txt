@@ -1,11 +1,8 @@
-[Rank]
-S. Gregorii VII Papæ Confessoris;;Duplex;;3;;vide C4b
+[Officium]
+S. Gregorii VII Papæ Confessoris
 
-[Rule]
-vide C4b;
-9 lectiones
-CPapaM=Urbanus;
-Gloria
+[Name]
+Gregorius
 
 [Introitus]
 @Commune/C4b
@@ -20,11 +17,5 @@ $Per Dominum
 [Evangelium]
 @Commune/C4b
 
-[Secreta]
-@Commune/C4
-
 [Communio]
 @Commune/C4b
-
-[Postcommunio]
-@Commune/C4:Postcommunio:s/N\./Gregorius/

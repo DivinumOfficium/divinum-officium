@@ -1,5 +1,10 @@
+[Officium]
+S. Francisci Confessoris
+
 [Rank]
-S. Francisci Confessoris;;Duplex majus;;4;;vide C5
+;;Duplex majus;;4;;vide C5
+(sed rubrica 1963)
+;;Duplex;;3;;vide C5
 
 [Rule]
 vide C5;
@@ -36,7 +41,7 @@ Sequéntia ++ sancti Evangélii secúndum Matthǽum
 In illo témpore: Respóndens Jesus, dixit: Confíteor tibi, Pater, Dómine cœli et terræ, quia abscondísti hæc a sapiéntibus et prudéntibus, et revelásti ea párvulis. Ita, Pater: quóniam sic fuit plácitum ante te. Omnia mihi trádita sunt a Patre meo. Et nemo novit Fílium nisi Pater: neque Patrem quis novit nisi Fílius, et cui volúerit Fílius reveláre. Veníte ad me, omnes, qui laborátis et oneráti estis, et ego refíciam vos. Tóllite jugum meum super vos, et díscite a me, quia mitis sum et húmilis corde: et inveniétis réquiem animábus vestris. Jugum enim meum suave est et onus meum leve.
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
 @Sancti/09-17

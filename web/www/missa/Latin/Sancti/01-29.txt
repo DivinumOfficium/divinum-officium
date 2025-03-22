@@ -1,5 +1,10 @@
+[Officium]
+S. Francisci Salesii Episcopi Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Francisci Salesii Episcopi Confessoris Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+;;Duplex;;3;;vide C4a
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C4a
 
 [Rule]
 vide C4a;
@@ -7,14 +12,10 @@ Gloria
 CredoDA
 
 [Name]
-Francísce
+Francíscum
+Secreta=Francísci
+Postcommunio=Francíscus
 
 [Oratio]
 Deus, qui ad animárum salútem beátum Francíscum Confessórem tuum atque Pontíficem ómnibus ómnia factum esse voluísti: concéde propítius; ut caritátis tuæ dulcédine perfúsi, ejus dirigéntibus mónitis ac suffragántibus méritis, ætérna gáudia consequámur.
 $Per Dominum
-
-[Secreta]
-@Commune/C4a:Secreta:s/N\./Francísci/
-
-[Postcommunio]
-@Commune/C4a:Postcommunio:s/N\./Francíscus/

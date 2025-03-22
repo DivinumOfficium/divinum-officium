@@ -1,13 +1,8 @@
-[Rank]
-St. Clement, Pope and Martyr;;Duplex;;3;;vide C2
+[Officium]
+St. Clement, Pope and Martyr
 
-[Rank] (rubrica 1570)
-St. Clement, Pope and Martyr;;Semiduplex;;2;;vide C2
-
-[Rule]
-vide C2;
-9 lectiones
-OPapaM=Clement;
+[Name]
+Clement
 
 [Ant Vespera]
 While St. Clement prayed, * there appeared unto him the Lamb of God.;;109
@@ -19,7 +14,7 @@ All the nations * round about believed in Christ the Lord.;;116
 [Ant 1]
 Let us all * pray Our Lord Jesus Christ to open a spring for those that own His Name.
 
-[Oratio]
+[Oratio] (nisi communi Summorum Pontificum)
 O God, Who dost gladden us by the yearly Feast-day of thine holy Martyr, Clement mercifully grant unto us who keep their birthday, the strength to imitate their patience under suffering.
 $Per Dominum
 

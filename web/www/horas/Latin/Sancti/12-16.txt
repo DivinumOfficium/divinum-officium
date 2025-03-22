@@ -1,14 +1,19 @@
-[Rank]
-S. Eusebii Episcopi et Martyris;;Semiduplex;;2.5;;vide C2
+[Officium]
+S. Eusebii Episcopi et Martyris
 (sed rubrica 1617)
-S. Eusebii Vercellensis Episcopi et Martyris;;Simplex;;1.1;;vide C2
+S. Eusebii Vercellensis Episcopi et Martyris
+
+[Rank]
+;;Semiduplex;;2.5;;vide C2-1
+(sed rubrica 1617)
+;;Simplex;;1.1;;vide C2-1
 
 [Rule]
-vide C2;
+vide C2-1;
 9 lectiones;
 
-[Oratio]
-@Commune/C2:Oratio1:s/N\./Eusébii/
+[Name]
+Eusébii
 
 [Lectio4]
 Eusebius, natióne Sardus, Romanæ urbis lector, post Vercellénsis epíscopus, ad hanc regéndam ecclésiam mérito est créditus divino eléctus judício: nam quem numquam ante constitúti electóres cognoverant, posthábitis civibus, simul ut vidérunt, et probavérunt; tantumque intérfuit, ut probarétur, quantum ut viderétur. Primus in Occidéntis partibus in eadem ecclésia eosdem monachos instituit esse quos clericos, ut esset in ipsis viris et contemptus rerum, et accurátio levitárum. Ariánis impietátibus ea tempestáte per Occidéntem longe lateque traductis, advérsus eas viríliter sic dimicávit, ut ejus invicta fides Libérium summum Pontificem ad vitæ solatium erigeret. Quare hic sciens in ipso fervére Spíritum Dei, cum ei significasset ut penes imperatórem una cum suis legátis patrocinium fidei susciperet, mox cum illis profectus est ad Constántium; apud quem enixius agens, quidquid legatióne petebátur, obtinuit, ut episcopórum nempe cœtus celebrarétur.
@@ -23,13 +28,13 @@ Quanta in eum tunc Arianórum crudelitas fúerit ac effrons inverecúndia, osten
 Eusébius, natióne Sardus, Románæ urbis lector, post Vercellénsis epíscopus, advérsus Arianísmum sic viríliter dimicávit, ut ejus invícta fides Libérium summum Pontíficem ad vitæ solátium erígeret. Pro ejúsdem fídei cathólicæ confessióne a Constántio príncipe Scythópolim missus fuit, ubi famem, sitim, vérbera divérsaque supplícia est perpéssus. Inde in Cappadóciam relegátus, exsílii rigóres tulit usque ad mortem ipsíus Constántii, post quam ad ecclésiam suam revérti permíssus est. Tunc lúgubres vestes Itália mutávit; ubi, postquam Psalmórum ómnium expurgátos a se commentários Orígenis édidit, Eusebiíque Cæsareénsis, quos vérterat de Græco in Latínum; ad immarcescíbilem glóriæ corónam, tantis ærúmnis proméritam, sub Valentiniáno et Valénte Vercéllis migrávit ad Dóminum.
 
 [Lectio7]
-@Commune/C2:Lectio7 in 4 loco
+@Commune/C2:Lectio7 in 2 loco
 
 [Lectio8]
-@Commune/C2:Lectio8 in 4 loco
+@Commune/C2:Lectio8 in 2 loco
 
 [Responsory8]
-@Commune/C2:Responsory8 non Effusorum
+@Commune/C2a:Responsory8 non Effusorum
 
 [Lectio9]
-@Commune/C2:Lectio9 in 4 loco
+@Commune/C2:Lectio9 in 2 loco

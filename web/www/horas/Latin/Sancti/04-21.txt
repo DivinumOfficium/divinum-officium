@@ -1,18 +1,20 @@
-[Rank]
-S. Anselmi Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Officium]
+S. Anselmi Episcopi Confessoris et Ecclesiæ Doctoris
+(sed rubrica monastica)
+S. Anselmi Episcopi, Confessoris et Ecclesiæ Doctoris, O. N.
 
-[Rank] (rubrica 1960)
-S. Anselmi Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Rank]
+;;Duplex;;3;;vide C4a
+(sed rubrica 1930)
+;;Duplex majus;;4;;vide C4a
 
 [Rule]
 vide C4a;
 9 lectiones
 
 [Name]
-Ansélme
-
-[Oratio]
-@Commune/C4:Oratio2:s/N\./Ansélmum/
+Ansélmum
+Ant=Ansélme
 
 [Lectio4]
 Ansélmus, Augustæ Prætoriæ in finibus Itáliæ, Gundulpho et Ermemberga, nobílibus et catholicis parentibus natus, a teneris annis assiduo litterarum studio, atque perfectióris vitæ desiderio, non obscurum futuræ sanctitatis et doctrinæ specimen dedit. Et licet juvenili ardore aliquando ad sæculi illecebras traheretur, brevi tamen in pristinam viam revocatus, patria et bonis omnibus derelictis, ad monasterium Beccense ordinis sancti Benedicti se contulit: ubi emissa regulari professione sub Herluino abbate observantissimo, et Lanfranco viro doctissimo, tanto animi fervore, et jugi studio in litteris et virtutibus assequendis profecit, ut mirum in modum tamquam sanctitatis et doctrinæ exemplar ab omnibus haberetur.

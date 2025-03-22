@@ -1,8 +1,5 @@
 @Sancti/01-18
 
-[Rank]
-In Festo Cathedræ S. Petri, qua in Romæ primum sedit;;Duplex;;4;;ex C4
-
 [Rule]
 12 lectiones
 Psalmi Dominica
@@ -23,7 +20,7 @@ R. Et dixit Jesus : Modicæ fidei, quare dubitásti?
 @Sancti/01-18:Responsory4
 
 [Lectio6]
-@Sancti/01-18:Lectio4:s/.* Cujus/Cujus/ s/$/~/
+@Sancti/01-18:Lectio4:s/.* Cujus/Cujus/s s/$/~/
 @Sancti/01-18:Lectio5:s/ Ad .*//
 
 [Responsory6]

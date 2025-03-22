@@ -1,10 +1,5 @@
-[Rank]
-S. Lini Papae et Martyris;;Semiduplex;;2;;vide C4b
-
-[Rule]
-OPapaM=Linum;
-vide C4b;
-Gloria
+[Officium]
+Św. Lina Papieża i Męczennika
 
 [Comment]
 # 23 IX – Św. Linusa, Papieża i Męczennika
@@ -12,11 +7,16 @@ Gloria
 ! Szaty czerwone
 Św. Linus był bezpośrednim następcą św. Piotra na stolicy rzymskiej. Zmarł około roku 79. Imię jego wymienia się w kanonie Mszy Świętej.
 
+Msza wspólna nr 8 Si diligis.
+
+Wspomnienie św. Tekli
+Św. Tekla, dziewica z Małej Azji, poniosła męczeństwo za Chrystusa około roku 100. Kult jej rozpoczął się w II wieku.
+
+[Name]
+Lina
+
 [Introitus]
 @Commune/C4b:Introitus
-
-[Oratio]
-@Commune/C4b:Oratio
 
 [Lectio]
 @Commune/C4b:Lectio
@@ -30,11 +30,5 @@ Gloria
 [Offertorium]
 @Commune/C4b:Offertorium
 
-[Secreta]
-@Commune/C4b:Secreta
-
 [Communio]
 @Commune/C4b:Communio
-
-[Postcommunio]
-@Commune/C4b:Postcommunio

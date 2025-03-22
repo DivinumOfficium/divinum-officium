@@ -1,34 +1,20 @@
+[Officium]
+S. Vincentii a Paulo Confessoris
+
 [Rank]
-S. Vincentii a Paulo Confessoris;;Duplex;;3;;vide C5
+;;Duplex;;3;;vide C5-1
 
 [Rule]
-vide C5
+vide C5-1
 Gloria
 
-[Introitus]
-@Commune/C5b
+[Name]
+Vincéntium
+Postcommunio=Vincéntio
 
 [Oratio]
 Deus, qui, ad evangelizándum paupéribus et ecclesiástici órdinis decórem promovéndum, beátum Vincéntium apostólica virtúte roborásti: præsta, quǽsumus; ut, cujus pia mérita venerámur, virtútum quoque instruámur exémplis.
 $Per Dominum
 
-[Lectio]
-@Commune/C5b
-
-[Graduale]
-@Commune/C5b
-
 [Evangelium]
 @Sancti/02-06
-
-[Offertorium]
-@Commune/C5b
-
-[Secreta]
-@Commune/C5b
-
-[Communio]
-@Commune/C5b
-
-[Postcommunio]
-@Commune/C5b::s/N\./Vincéntio/

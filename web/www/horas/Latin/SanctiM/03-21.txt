@@ -1,7 +1,10 @@
-[Rank]
-Transitus S. P. N. Benedicti Abbatis;;I class;;6;;vide C5c
+[Officium]
+Transitus S. P. N. Benedicti Abbatis
 (sed rubrica 1963)
-S. P. N. Benedicti Abbatis;;I class;;6;;vide C5c
+S. P. N. Benedicti Abbatis
+
+[Rank]
+;;Duplex I class;;6;;vide C5b
 
 [Rule]
 12 lectiones
@@ -222,7 +225,7 @@ V. Quibus ipse ait: † Hæc est via, qua diléctus Dómini Benedíctus cælos a
 R. Illi autem se nescíre proféssi sunt.
 
 [LectioE]
-@Commune/C4c
+@Commune/C5b
 
 [Ant Laudes]
 Fuit vir * vitæ venerábilis, grátia Benedíctus et nómine, qui ab ipso puerítiæ suæ témpore cor gerens seníle, ætátem móribus tránsiens, nulli ánimum voluptáti dedit.

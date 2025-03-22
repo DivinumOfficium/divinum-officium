@@ -1,9 +1,5 @@
-[Rank]
-S. Laurentii a Brundusio Confessoris;;Duplex;;3;;vide C5a
-
-[Rule]
-vide C5a;
-Gloria
+[Officium]
+S. Lourenço de Brindes, Confessor
 
 [Comment]
 # 21 VII – S. Lourenço de Brindes, Confessor
@@ -14,12 +10,9 @@ Santa Praxedes, Virgem
 ! Comemoração
 ! Paramentos brancos
 
+[Name]
+Lourenço
+
 [Oratio]
 Ó Deus, que para glória do vosso nome e salvação das almas ornastes o B. Lourenço, vosso Confessor, com o espírito de conselho e de fortaleza nas obras ainda as mais árduas, concedei-nos pela sua intercessão o mesmo espírito, a fim de conhecermos o que devemos praticar e de praticarmos o que houvermos conhecido.
 $Per Dominum
-
-[Secreta]
-@Commune/C4a:Secreta1:s/N\./Lourenço/
-
-[Postcommunio]
-@Commune/C4a:Postcommunio1:s/N\./Lourenço/

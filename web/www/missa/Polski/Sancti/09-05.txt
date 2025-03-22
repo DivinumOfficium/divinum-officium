@@ -1,9 +1,5 @@
-[Rank]
-S. Laurentii Justiniani Episcopi et Confessoris;;Semiduplex;;2;;vide C4
-
-[Rule]
-vide C4
-Gloria
+[Officium]
+Św. Wawrzyńca Justiniani Biskupa i Wyznawcy
 
 [Comment]
 # 05 IX – Św. Wawrzyńca Justiniani, Biskupa i Wyznawcy
@@ -12,6 +8,9 @@ Gloria
 Św. Wawrzyniec urodził się w Wenecji w roku 1381. Odrzuciwszy możliwość wygodnego i łatwego życia w świecie, wstąpił do klasztoru Kanoników Regularnych. W roku 1433 został biskupem Castello i założył w tej diecezji 15 klasztorów swojego zakonu. 5 września 1451 r. papież mianował go arcybiskupem patriarchą Grazu. Św. Wawrzyniec przeniósł stolicę metropolii do Wenecji, stając się w ten sposób pierwszym patriarchą weneckim. Napisał kilka dzieł z dziedziny mistyki. Zmarł w roku 1455.
 
 Msza wspólna nr 18 Statuit.
+
+[Name]
+Wawrzyńca
 
 [Introitus]
 @Commune/C4:Introitus
@@ -31,11 +30,5 @@ Msza wspólna nr 18 Statuit.
 [Offertorium]
 @Commune/C4:Offertorium
 
-[Secreta]
-@Commune/C4:Secreta
-
 [Communio]
 @Commune/C4:Communio
-
-[Postcommunio]
-@Commune/C4:Postcommunio

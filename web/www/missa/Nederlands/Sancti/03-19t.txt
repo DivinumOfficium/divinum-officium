@@ -1,18 +1,18 @@
-[Rank]
-S. Joseph Sponsi B.M.V. Confessoris;;Duplex;;3;;ex C5
+[Officium]
+S. Joseph Sponsi B.M.V. Confessoris
 
 [Rule]
 Gloria
 Prefatio=Joseph=Festivitate
 
 [Introitus]
-@Commune/C5b
+@Commune/C5-1
 
 [Oratio]
 @Sancti/03-19
 
 [Lectio]
-@Commune/C4c
+@Commune/C5b
 
 [Graduale]
 @Sancti/03-19
@@ -28,7 +28,7 @@ De rechtvaardige zal als een lelie opschieten en eeuwig bloeien voor de Heer. Al
 @Sancti/03-19
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
 @Sancti/03-19

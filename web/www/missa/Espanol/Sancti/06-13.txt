@@ -1,13 +1,14 @@
-[Rank]
-S. Antonii de Padua Confessoris;;Duplex;;3;;vide C5a
-
-[Rule]
-vide C5a;
-Gloria
+[Officium]
+S. Antonii de Padua Confessoris
 
 [Oratio_]
 Alégrese, ¡oh Dios!, tu Iglesia con la solemnidad que celebramos de tu santo confesor y doctor Antonio; a fin de que se vea siempre robustecida con los auxilios espirituales, y merezca disfrutar de los goces eternos.
 $Per Dominum
+
+[Oratio]
+@:Oratio_:s/ y Doctor//
+(sed rubrica 195 aut rubrica 196)
+@:Oratio_
 
 [Lectio]
 @Commune/C4a
@@ -19,3 +20,8 @@ $Qui vivis
 [Postcommunio_]
 Saciados, Señor, con los dones divinos, te suplicamos que, por los méritos e intercesión de tu santo confesor y doctor Antonio, sintamos los saludables efectos de este sacrificio.
 $Per Dominum
+
+[Postcommunio]
+@:Postcommunio_:s/ y Doctor//
+(sed rubrica 195 aut rubrica 196)
+@:Postcommunio_

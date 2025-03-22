@@ -1,14 +1,26 @@
+[Officium]
+S. Liborii Episcopi et Confessoris
+
 [Rank]
-S. Liborii Episcopi et Confessoris;;Simplex;;1.1;;vide C4
+;;Simplex;;1.1;;vide C4
+
+[Name]
+Libórii
+Postcommunio=Libório
+(sed feria 7 nisi rubrica 1955 nisi rubrica 196)
+Postcommunio=Libórii
 
 [Oratio]
-!S. Liborii Ep. et Conf.
-@Commune/C1v:Oratio:s/N\./Libórii/
+@Commune/C4
+(sed feria 7 nisi rubrica 1955 nisi rubrica 196)
+@Commune/C4-1
 
 [Secreta]
-!Pro S. Liborio
-@Commune/C4:Secreta
+@Commune/C4
+(sed feria 7 nisi rubrica 1955 nisi rubrica 196)
+@Commune/C4-1
 
 [Postcommunio]
-!Pro S. Liborio
-@Commune/C4:Postcommunio:s/N\./Libório/
+@Commune/C4
+(sed feria 7 nisi rubrica 1955 nisi rubrica 196)
+@Commune/C4-1

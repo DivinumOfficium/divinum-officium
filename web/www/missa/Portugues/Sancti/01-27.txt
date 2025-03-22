@@ -1,10 +1,5 @@
-[Rank]
-S. Joannis Chrysostomi Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a
-Gloria
-CredoDA
+[Officium]
+S. Joannis Chrysostomi Episcopi Confessoris Ecclesiae Doctoris
 
 [Comment]
 # 27 I – S. João Crisóstomo, Bispo Confessor e Doutor
@@ -12,14 +7,14 @@ CredoDA
 ! Paramentos brancos
 
 [Name]
-Joannes Chrisostome
-
-[Introitus]
-@Commune/C4a:Introitus
+João Crisóstomo
 
 [Oratio]
 Vos suplicamos, Senhor, que a graça celestial aumente a vossa Igreja, a qual quisestes ilustrar com os gloriosos méritos e ensinos do B. João Crisóstomo, vosso Confessor e Pontífice.
 $Per Dominum.
+
+[Introitus]
+@Commune/C4a:Introitus
 
 [Lectio]
 @Commune/C4a:Lectio
@@ -38,11 +33,5 @@ Bem-aventurado o varão que sofre com paciência a tentação, porque, quando ac
 [Offertorium]
 @Commune/C4a:Offertorium
 
-[Secreta]
-@Commune/C4a:Secreta
-
 [Communio]
 @Commune/C4a:Communio
-
-[Postcommunio]
-@Commune/C4a:Postcommunio

@@ -1,5 +1,12 @@
 [Officium]
-Common of a Confessor Bishop
+Commune Confessoris Pontificis
+
+[Missa]
+Statuit
+
+[Comment]
+# V den vyznavače biskupa
+Pán sám voli si svoje zástupce na zemi — biskupy a kněze — volaje je svou Milostí. Činí z nich knížata a pastýře svého lidu, aby mu vládli a vedli jej k zachování zákonů Božích. Kéž by všem těmto pastýřům zůstala důstojnost kněžská na věky, jako dnes slavenému biskupu! Lid křesťanský musí pro svůj vlastní prospěch modliti se o milost pro své duchovní vůdce a o povolání pro další pracovníky na vinici Páně!
 
 [Ant Vespera]
 Ejhle kněz veliký, * jenž za svých dnů zalíbil se Bohu, a shledán byl spravedlivým.
@@ -72,20 +79,8 @@ Jsi Kněz a Biskup, * jenž konal ctnostné skutky, dobrý pastýř uprostřed s
 v. Dej, prosíme, všemohoucí Bože, aby úctyhodná slavnost svatého N., tvého Vyznavače a Biskupa, rozmnožila naši zbožnost i spásu. 
 $Per Dominum.
 
-[Oratio1]
-v. Vyslyš Pane, prosíme, naše prosby, které přínášíme svatému N., Tvému Vyznavači a Biskupovi; a protože on si zasloužil tobě důstojně sloužit, pro jeho zásluhy a na jeho přímuvu nám odpušť všechny naše hříchy.
-$Per Dominum.
-
-[Oratio2]
-v. Bože, jenž jsi svému lidu udělil svatého N. za přisluhovatele věčné spásy, popřej, prosíme, abychom toho, jehož jsme učitelem života na zemi měli, zasloužili si přímluvcem na nebi míti.
-$Per Dominum.
-
-[Oratio9]
-Na stádce své, Pastýři věčný, usmířen shlédni a skrze svatého N., Mučedníka svého a Nejvyššího Velekněze, kterého jsi ustanovil za pastýře celé Církve, ochraňuj trvalou záštitou.
-$Per Dominum
-
-[Oratio91]
-v. Look forgivingly on thy flock, Eternal Shepherd, and keep it in thy constant protection, by the intercession of blessed N. and N. thy (Martyrs and) Sovereign Pontiffs, whom thou didst constitute Shepherds of the whole Church.
+[Oratio] (ad Missam)
+Dej, prosíme, všemohoucí Bože, aby úctyhodná slavnost svatého N., vyznavače tvého a biskupa, zbožnost naši rozmnožila i spásu.
 $Per Dominum
 
 [Invit]
@@ -325,22 +320,6 @@ Lesson from the book of Ecclesiasticus
 14 Their bodies are buried in peace, and their name liveth unto generation and generation.
 15 Let the people shew forth their wisdom, and the church declare their praise.
 
-[Lectio7 in 2 loco]
-From the Holy Gospel according to Matthew
-!Matt 16:13-19
-At that time: When Jesus came into the coasts of Caesarea Philippi, he asked his disciples, saying, Whom do men say that I the Son of man am? And so on.
-_
-A Homily by St. Leo the Pope
-!Sermo 2 in anniversario assumpt. suæ ante medium
-When the Lord, as we read in the Gospel, asked his disciples who did men, amid their diverse speculations, believe him the Son of Man to be, blessed Peter answered and said: Thou art the Christ, the Son of the living God. And the Lord answered and said unto him: Blessed art thou, Simon Bar-Jona: for flesh and blood hath not revealed it unto thee, but my Father, which is in heaven: and I say also unto thee: That thou art Peter, and upon this rock I will build my Church, and the gates of hell shall not prevail against it; and I will give unto thee the keys of the kingdom of heaven; and whatsoever thou shalt bind on earth shall be bound in heaven; and whatsoever thou shalt loose on earth shall be loosed in heaven. But the dispensation of truth perdures, and blessed Peter, persevering in the strength of the rock which he hath received, hath not relinquished the position he assumed at the helm of the Church.
-
-[Lectio8 in 2 loco]
-In the universal Church it is as if Peter were still saying every day: Thou art the Christ, the Son of the living God. For every tongue which confesseth the Lord is taught that confession by the teaching of Peter. This is the Faith that overcometh the devil and looseth the bonds of his prisoners. This is the Faith which maketh men free of the world and bringeth them to heaven, and the gates of hell are impotent to prevail against it. This is the rock which God hath fortified with such ramparts of salvation, that the contagion of heresy will never be able to infect it, nor idolatry and unbelief to overcome it. And therefore, dearly beloved, we celebrate today’s festival with reasonable obedience, that in my humble person he may be acknowledged and honoured who doth continue to care for all the shepherds as well as sheep entrusted unto him, and who doth lose none of his dignity even in an unworthy successor.
-
-[Lectio9 in 2 loco]
-When, therefore, we address our exhortations to your godly ears, believe ye that ye are hearing him speak whose office we are discharging. Yea, it is with his love for you that we warn you. And we preach unto you no other thing than that which he taught, entreating you as did he: Gird up the loins of your mind; be sober; be ye holy in all manner of living; pass the time of your sojourning here in the fear of God. My disciples, dearly beloved, ye are to me as the disciples of the Apostle Paul were to him, namely: My crown and joy; if so be that your faith, abide, still in all lowliness and holiness, like unto the first times of the Gospel. For although the whole Church, which is in all the world, should indeed abound in all the virtues, it becometh especially you among all others to excel in acts of piety, founded as ye be on the very citadel of the Apostolic Rock ye who have not only been redeemed with the rest of men by our Lord Jesus Christ, but who have been instructed by the blessed Apostle Peter far beyond all others.
-&teDeum
-
 [Lectio7 in 4 loco]
 The Lesson is taken from the Holy Gospel according to Matthew
 !Matt 19:27-29
@@ -356,3 +335,52 @@ Of the reprobate also we gather, from the words of the Lord, that there will be 
 [Lectio9 in 4 loco]
 And now that we have touched for a moment, with fear and just dread, upon these things, let us rather turn our hearing to the right joyful promises of our Lord and Saviour. Let us look what His so great, beautiful, and fatherly love will give to such as follow Him; not the reward of life everlasting only, but gifts exceeding precious in this life also. “Every one,” saith He, that hath forsaken houses, or brethren, or sisters, or father, or mother, or wife, or children, or lands, for My Name’s sake, shall receive an hundredfold, and shall inherit everlasting life.” For every one that shall forsake earthly affections and goods, to go and be Christ’s disciple, the further he goeth on in Christ’s love, the more shall he find who will rejoice to give him a place in their hearts, and to minister to him of their substance.
 &teDeum
+
+[Lectio]
+Čtení z knihy Sirachovcovi
+!Sir 44,16-27; 45,3-20
+!Dnes nám Církev předvádí obraz dokonalého kněze, jenž byl spravedlivý k Bohu a k těm, kdož mu byli svěření. Slova Epištoly připomínají nám úlohu kněží: Bohu obětovati a prostředkovati mezi Ním a lidem. Líbiti se Bohu není však pouze nutností pro kněžstvo, ale i pro každého křesťana; to pak může se státi pouze tehdy, když dáme Bohu, co Mu náleží, a bližnímu, k čemu jsme povinni přikázáním Lásky.
+Ejhle, kněz veliký, jenž Bohu ve dnech svých líbil se, a byl shledán mužem spravedlivým, že se stal v dobách hněvu spasitelem. Nebyl nalezen podobný jemu slávou, který by šetřil tak zákona Nejvyššího. Proto, jak se přísahou byl zavázal, dal mu Pán, že vzrostl národ jeho. Požehnání všech národů dal mu Hospodin, a jeho sliby na hlavu se mu snesly. Uznal, že mu přísluší požehnání, zachoval mu milosrdenství své, a našel milost před zrakem Hospodinovým. Slavným učinil ho před králi, a dal jemu korunu slávy. Učinil s ním smlouvu na věčné časy, udělil mu velekněžství, a rouchem nádherným oblažil ho, úřad kněžský aby konal, bohoslužbu, lidu svému aby žeh nal ve jménu Páně, a řádně kadidlo pálil mu v příjemnou vůni.
+
+[Graduale]
+!Sir 44,16
+Hle, kněz veliký, jenž ve dnech svých Bohu se líbil.
+!Sir 44,20
+Nikdo nebyl nalezen, jenž by podobně jako on zachovával zákon Nejvyššího.
+Aleluja, aleluja.
+!Ž 109,4
+Ty jsi kněz na věky podle řádu Melchisedechova. Aleluja.
+
+[GradualeP]
+Aleluja, aleluja
+!Ž 109,4
+Ty jsi kněz na věky podle řádu Melchisedechova. Aleluja.
+V. Tentoť jest kněz, jejž korunoval Pán. Aleluja.
+
+[Tractus]
+!Sir 44,16.
+Hle, kněz veliký, jenž ve dnech svých Bohu se líbil.
+!Sir 44,20
+Nikdo nebyl nalezen, jenž by podobně jako on zachovával zákon Nejvyššího.
+!Ž 111,1-3
+Blaze člověku, jenž se bojí Pána, jenž v přikázáních jeho libuje si velice.
+V. Mocné bude na zemi símě jeho; pokolení spravedlivých požehnáno bude.
+V. Sláva a bohatství v domě jeho a spravedlnost jeho zůstává na věky věkův.
+
+[Evangelium]
+Slova ++ sv. Evangelia podle Matouše.
+!Mt 25,14-23
+!Každý z nás dostal hřivny od Boha abychom jimi moudře hospodařili. Nezakopali jsme jich také do lhostejnosti a pohodlnosti? Chceme-li, aby Pán nás nazval dobrými a věrnými služebníky, jako dnes slaveného biskupa, pak užívejme s velkou pečlivostí všech svých schopností, jichž jsme nedostali pouze pro sebe, ale také k oslavě Boha a ku pomoci bližnímu!
+Za onoho času Pán Ježíš pověděl učedníkům svým: podobenství toto: „Člověk jeden odcházeje z domova, povolal k sobě služebníky své a odevzdal jim statek svůj. I dal jednomu pět hřiven, druhému dvě a jinému jednu, každému podle schopnosti jeho, a odcestoval ihned. Odešel pak ten, jenž obdržel pět hřiven, těžil jimi a vytěžil jiných pět hřiven. Taktéž i ten, jenž obdržel dvě, vyzískal dvě jiné. Ten však, který dostal jednu, odešed zakopal ji v zemi a skryl peníze pána svého. Po dlouhém čase pak přišel pán oněch služebníků a skládal účet s nimi. I přistoupil ten, jenž byl obdržel pět hřiven, a podal: jiných pět hřiven řka: ,Pane, pět hřiven odevzdal jsi mi, hle, jiných pět jsem vyzískal.‘ Řekl mu pán jeho: ,Dobře, služebníku dobrý a věrný, že jsi nad málem byl věrný, nad mnoha věcmi ustanovím tebe, vejdi v radost pána svého.‘ Přistoupiv pak i ten, kterýž byl obdržel dvě hřivny, řekl: ,Pane, dvě hřivny odevzdal jsi mi, hle, jiné dvě jsem vyzískal.‘ Řekl mu pán jeho: ,Dobře, služebníku dobrý a věrný, že jsi nad málem byl věrný, nad mnoha věcmi ustanovím tebe; vejdi v radost pána svého.‘“
+
+[Secreta]
+Svatí tvoji, prosíme, Pane, ať nás všudy potěšují, abychom zásluhy jejich velebíce, ochranu jejich pociťovali.
+$Per Dominum.
+
+[Communio]
+!Lk 12,42
+Věrný služebník a opatrný, jejž ustanovil pán nad čeledí svou, aby jim dával v čas míru pšenice. (Aleluja.)
+
+[Postcommunio]
+Uděl, prosíme, všemohoucí Bože, abychom za přijaté dary díky vzdávajíce, na přímluvu svatého N., vyznavače tvého a biskupa, ještě hojnějších dobrodiní dosáhli.
+$Per Dominum

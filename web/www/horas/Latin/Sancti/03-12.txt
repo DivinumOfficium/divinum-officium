@@ -1,8 +1,16 @@
-[Rank]
-S. Gregorii Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Officium]
+S. Gregorii Papæ Confessoris et Ecclesiæ Doctoris
+(sed rubrica monastica)
+S. Gregorii Magni Papæ, Confessoris et Ecclesiæ Doctoris, O. N.
 
-[Rank] (rubrica innovata)
-S. Gregorii Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3.91;;vide C4a
+[Rank]
+;;Duplex;;3;;vide C4a
+(sed communi Summorum Pontificum et ad missam)
+;;Duplex;;3;;vide C4b
+(sed rubrica 1930 aut rubrica 1963)
+;;II Class;;5;;ex C4a
+(sed rubrica innovata)
+;;Duplex;;3.91;;vide C4a
 
 [Rule]
 vide C4a;
@@ -28,7 +36,13 @@ Romam rédiens, Pelágio pestiléntia subláto, summo ómnium consénsu Póntife
 Ecclésiam ornávit sanctíssimis institútis et légibus. Apud sanctum Petrum coácta sýnodo, multa constítuit: in iis, Ut in Missa Kýrie eléison nóvies repeterétur: ut extra id tempus, quod continétur Septuagésima et Pascha, Alle­lúja dicerétur: ut adderétur in Cánone, Diésque nostros in tua pace dispónas. Litanías, Statiónes, et ecclesiásticum offícium auxit. Quátuor concíliis, Nicǽno, Constantinopolitáno, Ephesíno, Chalcedonénsi, tamquam quátuor Evangéliis honórem habéri vóluit. Epíscopis Sicíliæ, qui ex antíqua ecclesiárum consuetúdine Romam síngulis triénniis conveniébant, quinto quoque anno semel veníre indúlsit. Multos libros confécit: quos cum dictáret, testátus est Petrus diáconus, se Spíritum Sanctum colúmbæ spécie in ejus cápite sæpe vidísse. Admirabília sunt quæ dixit, fecit, scripsit, decrévit, præsértim infírma semper et ægra valetúdine. Qui dénique multis éditis miráculis, pontificátus anno décimo tértio, mense sexto, die décimo, quarto Idus Mártii, qui dies festus a Græcis étiam propter insígnem hujus Pontíficis sapiéntiam ac sanctitátem præcípuo honóre celebrátur, ad cæléstem beatitúdinem evocátus est. Cujus corpus sepúltum est in basílica sancti Petri, prope Secretárium.
 
 [Lectio7]
-@Commune/C4:Lectio7 in 2 loco
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 16:13-19
+In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? Et réliqua.
+_
+Homilía sancti Leónis Papæ
+!Sermo 2 in anniversario assumpt. suæ, ante medium
+Cum, sicut evangélica lectióne reserátum est, interrogásset Dóminus discípulos, quem ipsum (multis divérsa opinántibus) créderent; respondissétque beátus Petrus, dicens: Tu es Christus Fílius Dei vivi; Dóminus ait: Beátus es, Simon Bar-Jona, quia caro et sanguis non revelávit tibi, sed Pater meus, qui in cælis est: et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam. Et tibi dabo claves regni cælórum: et quodcúmque ligáveris super terram, erit ligátum et in cælis: et quodcúmque sólveris super terram, erit solútum et in cælis. Manet ergo disposítio veritátis, et beátus Petrus, in accépta fortitúdine petræ persevérans, suscépta Ecclésiæ gubernácula non relíquit.
 
 [Lectio7] (sed rubrica tridentina)
 Sequéntia sancti Evangélii
@@ -40,10 +54,11 @@ Homilía sancti Gregórii Papæ
 Considerándum nobis est, ut, qui una eadémque exhortatiónis voce non súfficit simul cunctos admonére, stúdeat síngulos, in quantum valet, instrúere, privátis locutiónibus ædificáre. Debémus namque pensáre contínuo, quod sanctis Apóstolis dícitur, et per Apóstolos nobis: Vos estis sal terræ. Si ergo sal sumus, condíre mentes fidélium debémus. Vos ígitur, qui pastóres estis, pensáte, quia Dei animália páscitis; de quibus profécto animálibus Deo per Psalmístam dícitur: Animália tua habitábunt in ea. Et sæpe vidémus, quod petra salis brutis animálibus antepónitur, ut ex éadem salis petra lámbere débeant, et meliorári. Quasi ergo inter bruta animália petra salis, debet esse sacérdos in pópulis. Curáre namque sacerdótem necésse est, quæ síngulis dicat, unumquémque quáliter admóneat: ut quisquis sacerdóti júngitur, quasi ex salis tactu ætérnæ vitæ sapóre condiátur.
 
 [Lectio8]
-@Commune/C4:Lectio8 in 2 loco
+In univérsa namque Ecclésia, Tu es Christus Fílius Dei vivi, quotídie Petrus dicit; et omnis lingua, quæ confitétur Dóminum, magistério hujus vocis imbúitur. Hæc fides diábolum vincit et captivórum ejus víncula dissólvit. Hæc érutos mundo, ínserit cælo, et portæ ínferi advérsus eam prævalére non possunt. Tanta enim divínitus soliditáte muníta est, ut eam neque hærética umquam corrúmpere právitas, nec pagána potúerit superáre perfídia. His ítaque modis, dilectíssimi, rationábile obséquio celebrétur hodiérna festívitas: ut in persóna humilitátis meæ ille intelligátur, ille honorétur, in quo et ómnium pastórum sollicitúdo, cum commendatárum sibi óvium custódia persevérat, et cujus étiam dígnitas in indígno heréde non déficit.
 
 [Lectio8] (sed rubrica tridentina)
 Sal étenim terræ non sumus, si corda audiéntium non condímus: quod profécto condiméntum ille veráciter próximo impéndit, qui prædicatiónis verbum non súbtrahit. Sed tunc vere áliis recta prædicámus, si dicta rebus et exémplis osténdimus. Nullum puto, fratres caríssimi, ab dliis majus præjudícium, quam a sacerdótibus tólerat Deus: quando eos, quos ad aliórum correctiónem pósuit, dare de se exémpla pravitátis cernit: quando ipsi peccámus, qui compéscere peccáta debúimus, nulla animárum lucra quǽrimus, ad nostra quotídie stúdia vacámus, terréna concupíscimus, humánam gldriam inténta mente captámus. Et quia eo ipso quo céteris præláti sumus, ad agénda quǽlibet majórem licéntiam habémus, suscéptæ benedictiónis ministérium vértimus ad ambitiónis arguméntum; Dei causam relínquimus, et ad terréna negótia vacámus; locum sanctitátis accípimus, et terrénis dctibus implicámur.
 
 [Lectio9]
-@Commune/C4:Lectio9 in 2 loco
+Cum ergo cohortatiónes nostras áuribus vestræ sanctitátis adhibémus, ipsum vobis, cujus vice fúngimur, loqui crédite: quia et illíus vos afféctu monémus, et non áliud vobis, quam quod dócuit, prædicámus; obsecrántes, ut succíncti lumbos mentis vestræ, castam et sóbriam vitam in Dei timóre ducátis. Coróna mea, sicut Apóstolus ait, et gáudium vos estis, si fides vestra, quæ ab inítio Evangélii in univérso mundo prædicáta est, in dilectióne et sanctitáte permánserit. Nam licet omnem Ecclésiam, quæ in toto est orbe terrárum, cunctis opórteat florére virtútibus; vos tamen præcípue inter céteros pópulos decet méritis pietátis excéllere, quos in ipsa apostólicæ petræ arce fundátos, et Dóminus noster Jesus Christus cum ómnibus redémit, et beátus Apóstolus Petrus præ ómnibus erudívit.
+&teDeum

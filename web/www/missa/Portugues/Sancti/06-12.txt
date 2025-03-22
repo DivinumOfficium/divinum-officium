@@ -1,17 +1,11 @@
-[Rank]
-S. Joannis a S. Facundo Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5
-Gloria
+[Officium]
+S. João de S. Facundo, Confessor
 
 [Comment]
 # 12 VI – S. João de S. Facundo, Confessor
 ! 3 classe
 ! Paramentos brancos
 
-! Comemoração dos S. S. Mártires Basilides e Outros
-! Paramentos vermelhos
 
 [Introitus]
 @Commune/C5:Introitus
@@ -32,11 +26,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C5:Offertorium
 
-[Secreta]
-@Commune/C5:Secreta
-
 [Communio]
 @Commune/C5:Communio
-
-[Postcommunio]
-@Commune/C5:Postcommunio

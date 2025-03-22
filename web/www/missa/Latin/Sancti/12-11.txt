@@ -1,9 +1,24 @@
-@Commune/C4b
+[Officium]
+S. Damasi Papæ et Confessoris
 
 [Rank]
-S. Damasi Papæ et Confessoris;;Semiduplex;;2.5;;vide C4b
+;;Semiduplex;;2.2;;vide C4
+(sed rubrica 196)
+;;Duplex;;3;;vide C4
+(sed rubrica innovata)
+;;Semiduplex;;2.5;;vide C4
+(sed rubrica monastica nisi rubrica 1617)
+;;Simplex;;1.1;;vide C4
 
 [Rule]
-OPapaC=Dámasum;
 vide C4;
 Gloria
+
+[Name]
+Dámaso
+(sed communi Summorum Pontificum)
+Dámasum
+
+[Oratio] (nisi communi Summorum Pontificum)
+Exáudi, Dómine, preces nostras: et interveniénte beáto Dámaso Confessóre tuo atque Pontífice, indulgéntiam nobis tríbue placátus et pacem.
+$Per Dominum

@@ -1,12 +1,18 @@
+[Officium]
+S. Marcelli Papæ et Martyris
+
 [Rank]
-S. Marcelli Papæ et Martyris;;Semiduplex;;2.2;;vide C2
+;;Semiduplex;;2.2;;vide C2b
 
 [Rank] (rubrica cisterciensis)
 S. Marcelli, Papæ et Martyris;;Commemoratio;;1;;vide C2
 
 [Rule]
-vide C2;
+vide C2b;
 9 lectiones
+
+[Name]
+Marcélli
 
 [Oratio]
 Preces pópuli tui, quǽsumus, Dómine, cleménter exáudi: ut beáti Marcélli Mártyris tui atque Pontíficis méritis adjuvémur, cujus passióne lætámur.
@@ -25,18 +31,6 @@ Quibus cógnitis, Maxéntius in eam ecclésiam catábuli bestias transférri, et
 Marcéllus Románus, a Constántio et Galério usque ad Maxéntium pontificátum gessit. Ejus hortátu Lucína, matróna Romána, bonórum suórum Dei Ecclésiam fecit herédem. Aucto in Urbe fidélium número, novos Títulos instítuit, et quasi álteras diœcéses distríbuit. Quare irátus Maxéntius, grávia supplícia minátur, nisi, depósito pontificátu, idólis immoláret. Acriter réstitit póntifex, ideóque missus fuit in catábulum, ut bestiárum, quæ públice alebántur, curam sustinéret. Novem menses ibi tradúxit, paróchias, quas præsens non póterat, vísitans per epístolas. Inde eréptus a cléricis, hospítio recípitur a beáta Lucína, in cujus ǽdibus ecclésiam dedicávit, ubi fidélibus prædicábat. Tunc Maxéntius in eam ecclésiam béstias catábuli transférri et a Marcéllo custodíri jubet: qui, loci fœditáte et ærúmnis afflíctus obdormívit in Dómino. Ejus corpus in cœmetério Priscíllæ via Salária a beáta Lucína sepúltum est die décima sexta januárii.
 &teDeum
 
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-
-[Lectio7] (rubrica tridentina)
-@Commune/C2
-
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
-[Lectio8] (rubrica tridentina)
-@Commune/C2
-
 [Responsory8]
 R. Dómine, prævenísti eum in benedictiónibus dulcédinis: 
 * Posuísti in cápite ejus corónam de lápide pretióso.
@@ -46,10 +40,4 @@ R. Posuísti in cápite ejus corónam de lápide pretióso.
 R. Posuísti in cápite ejus corónam de lápide pretióso.
 
 [Responsory8] (rubrica tridentina)
-@Commune/C2
-
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
-
-[Lectio9] (rubrica tridentina)
-@Commune/C2
+@Commune/C2a

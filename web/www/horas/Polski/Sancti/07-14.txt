@@ -1,11 +1,10 @@
-[Rank]
-Św. Bonawentury Biskupa Wyznawcy i Doktora Kościoła;;Duplex;;3;;vide C4a
-
-[Rank] (rubrica 1570)
-Św. Bonawentury Biskupa Wyznawcy;;Duplex;;3;;vide C4
+[Officium]
+Św. Bonawentury Biskupa Wyznawcy i Doktora Kościoła
+(sed rubrica 1570)
+Św. Bonawentury Biskupa Wyznawcy
 
 [Name]
-Bonawenturo
-
-[Oratio]
-@Commune/C4a:Oratio2:s/N\./Bonawenturę/
+Bonawenturę
+(sed rubrica 1570)
+Bonaventury
+Ant=Bonawenturo

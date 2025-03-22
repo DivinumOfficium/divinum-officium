@@ -1,5 +1,10 @@
+[Officium]
+S. Francisci Confessoris
+
 [Rank]
-S. Francisci Confessoris;;Duplex majus;;4;;vide C5
+;;Duplex majus;;4;;vide C5
+(sed rubrica 1963)
+;;Duplex;;3;;vide C5
 
 [Rule]
 vide C5;
@@ -32,4 +37,4 @@ Francíscus, Assísii in Umbria natus, patris exémplum secútus, a prima ætát
 @Sancti/02-24:Lectio9
 
 [Versum 0]
-@Commune/C2::s/N\./Pater Francísce/
+@Commune/C2a::s/N\./Pater Francísce/

@@ -19,13 +19,10 @@ Antiphonas horas
 Omit preces
 Lectio1 TempNat
 
-[Ant 1] (feria 1 et rubrica cisterciensis)
-@Tempora/Nat1-0
-
 [Versum 1] (feria 1 et rubrica cisterciensis)
 @Tempora/Nat1-0
 
-[Versum 2] (rubrica cisterciensis)
+[Ant 1] (feria 1 et rubrica cisterciensis)
 @Tempora/Nat1-0
 
 [Ant Matutinum 3N] (feria 1)
@@ -125,6 +122,9 @@ Possumus et aliter dicere: quod etiam eisdem verbis, juxta Hebraicam veritatem, 
 @Tempora/Nat1-0:Capitulum Sexta
 _
 @Sancti/12-25:Versum 2
+
+[Versum 2] (rubrica cisterciensis)
+@Tempora/Nat1-0
 
 [Responsory TertiaM]
 @SanctiM/12-25

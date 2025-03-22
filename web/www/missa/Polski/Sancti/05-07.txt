@@ -1,11 +1,17 @@
-[Rank]
-S. Stanislai Episcopi Martyri;;Duplex;;3;;vide C2
+[Officium]
+Św. Stanisława Biskupa i Męczennika
+
+[Name]
+Stanisław
+Secreta=Stanisława
+Postcommunio=Stanisława
 
 [Introitus]
-@Commune/C2p:Introitus
+@Commune/C2ap:Introitus
 
 [Oratio]
-@Sancti/05-08pl:Oratio
+Boże, za Twój Kościół zginął pod mieczami bezbożnych chwalebny Biskup Stanisław; spraw, prosimy, aby wszyscy, którzy wzywają jego pomocy, osiągnęli zbawienny skutek swojej prośby.
+$Per Dominum
 
 [Lectio]
 @Commune/C2p:Lectio
@@ -19,11 +25,9 @@ S. Stanislai Episcopi Martyri;;Duplex;;3;;vide C2
 [Offertorium]
 @Commune/C2p:Offertorium
 
-[Secreta]
-@Sancti/05-08pl:Secreta
-
 [Communio]
 @Commune/C2p:Communio
 
 [Postcommunio]
-@Sancti/05-08pl:Postcommunio
+Niech ta Komunia, o Panie, oczyści nas z grzechów i za przyczyną św. Stanisława, Twego Męczennika i Biskupa, stanie się dla nas niebieskim lekarstwem.
+$Per Dominum

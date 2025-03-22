@@ -1,20 +1,26 @@
+[Officium]
+S. Urbanis Papæ et Martyris
+
 [Rank]
-S. Urbanis Papæ et Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C2;
-OPapaM=Urbánum;
+vide C2b;
+Gloria
+
+[Name]
+Urbáno
+(sed rubrica 1960)
+Urbánum
 
 [Oratio]
 Da, quǽsumus, omnipotens Deus: ut qui beati Urbani Martyris tui atque Pontificis solemnia colimus, ejus apud te intercessionibus adjuvemur.
 $Per Dominum.
 
-[Oratio] (rubrica 1960)
-Deus, qui Ecclésiam tuam, in apostólicæ petræ soliditáte fundátam, ab infernárum éruis terróre portárum: præsta, quǽsumus; ut, intercedénte beáto Urbáno Mártyre tuo atque Summo Pontífice, in tua veritáte persístens, contínua securitáte muniátur.
-$Per Dominum.
-
-[Oratio] (rubrica divino)
-@Commune/C2:Oratio Gregem
+[Oratio] (communi Summorum Pontificum)
+@Commune/C2b:Oratio pro commemoratio
+(sed rubrica 196)
+@Commune/C2b
 
 [Lectio93]
 Urbanus Romanus, Alexandro Sevéro imperatóre, doctrina et vitæ sanctitáte multos ad Christi fidem convértit; in illis Valerianum, beátæ Cæcíliæ sponsum, et Tiburtium, Valeriáni fratrem, qui póstea martyrium forti animo subiérunt. Hic de bonis Ecclésiæ attributis scripsit his verbis: Ipsæ res fidelium, quæ Dómino offerúntur, non debent in alios usus quam ecclesiásticos et christianórum fratrum, vel indigéntium, converti; quia vota sunt fidelium, et pretia peccatórum, ac patrimónia páuperum. Sedit annos sex, menses septem, dies quatuor: ac martyrio coronátus, sepúltus est in cœmeterio Prætextati, octavo Kalendas Junii. Ordinatiónibus quinque habitis mense Decembri, creávit presbyteros novem, diaconos quinque, episcopos per diversa loca octo.

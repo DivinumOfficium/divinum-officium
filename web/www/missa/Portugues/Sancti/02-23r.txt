@@ -1,9 +1,5 @@
-[Rank]
-S. Petri Damiani;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4;
-Gloria
+[Officium]
+S. Petri Damiani
 
 [Comment]
 # 23 II – S. Pedro Damião, Bispo, Confessor e Doutor
@@ -11,7 +7,7 @@ Gloria
 ! Paramentos brancos
 
 [Name]
-Petre
+Pedro
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -35,11 +31,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C4a:Offertorium
 
-[Secreta]
-@Commune/C4a:Secreta
-
 [Communio]
 @Commune/C4a:Communio
-
-[Postcommunio]
-@Commune/C4a:Postcommunio

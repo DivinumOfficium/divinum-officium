@@ -1,10 +1,5 @@
-[Rank]
-S. Gregorii Nazianzeni Episcopi Confessoris Ecclasiae Doctorum;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDA
+[Officium]
+Św. Grzegorza z Nazjanzu Biskupa Wyznawcy i Doktora Kościoła
 
 [Comment]
 # 09 V – Św. Grzegorza z Nazjanzu, Biskupa, Wyznawcy i Doktora Kościoła
@@ -14,35 +9,7 @@ CredoDA
 w Cezarei, w Aleksandrii i w Atenach. W Atenach związał się przyjaźnią ze św. Bazylim. Obydwaj zostali później mnichami i biskupami. Św. Grzegorz został biskupem Nazjanzu, a później patriarchą w Konstantynopolu. Obronił swoje owieczki przed herezją ariańską, ale znużony ciągłymi sporami zrezygnował z urzędu patriarchy i usunął się do Nazjanzu, gdzie poświęcił się wyłącznie modlitwie i studiom teologii. Dzieła jego odznaczają się taką głębią, że nadano mu przydomek «Teologa» i zaliczono w poczet czterech wielkich Doktorów Kościoła Wschodniego. Św. Grzegorz zmarł około roku 390.
 
 [Name]
-Gregori
+Grzegorza
 
 [Introitus]
 @Commune/C4a:Introitus
-
-[Oratio]
-Boże, Tyś dał ludowi Swemu świętego Grzegorza za pośrednika zbawienia wiecznego, spraw, prosimy Cię, abyśmy mogli mieć orędownikiem w niebie tego, który na ziemi był dla nas mistrzem życia.
-$Per Dominum.
-
-[Lectio]
-@Commune/C4a:Lectio1
-
-[Graduale]
-@Commune/C4a:Graduale
-
-[GradualeP]
-@Commune/C4a:GradualeP
-
-[Evangelium]
-@Commune/C4a:Evangelium
-
-[Offertorium]
-@Commune/C4a:Offertorium
-
-[Secreta]
-@Commune/C4a:Secreta
-
-[Communio]
-@Commune/C4a:Communio
-
-[Postcommunio]
-@Commune/C4a:Postcommunio

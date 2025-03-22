@@ -1,22 +1,5 @@
-[Rank]
-S. Gregorii Nazianzeni Episcopi Confessoris Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDA
+[Officium]
+S. Gregorii Nazianzeni Episcopi Confessoris Ecclesiæ Doctoris
 
 [Name]
 Gregorius
-
-[Oratio]
-@Commune/C4a:Oratio:s/N\./Gregorius/
-
-[Lectio]
-@Commune/C4a:Lectio1
-
-[Secreta]
-@Commune/C4a:Secreta:s/N\./Gregorius/
-
-[Postcommunio]
-@Commune/C4a:Postcommunio:s/N\./Gregorius/

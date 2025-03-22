@@ -1,15 +1,17 @@
+[Officium]
+S. Nicolai de Tolentino Confessoris
+
 [Rank]
-S. Nicolai de Tolentino Confessoris;;Duplex;;3;;vide C5
+;;Duplex;;3;;vide C5-1
 (sed rubrica 1617)
-S. Nicolai de Tolentino Confessoris;;Semiduplex;;2.2;;vide C5
+;;Semiduplex;;2.2;;vide C5-1
 
 [Rule]
-vide C5;
+vide C5-1;
 9 lectiones
 
-[Oratio]
-Adésto, Dómine, supplicatiónibus nostris, quas in beáti Nicolái Confessóris tui solemnitáte deférimus: ut, qui nostræ justítiæ fidúciam non habémus, ejus qui tibi plácuit, précibus adjuvémur.
-$Per Dominum
+[Name]
+Nicolái
 
 [Lectio4]
 Nicolaus, Tolentinas a diuturno illíus civitátis domicílio appellatus, in oppido sancti Angeli in Piceno est natus piis paréntibus; qui, liberórum desidério Bárium voti causa profecti, ibique a sancto Nicoláo de futura prole confírmati, quem suscepérunt fílium de illíus nómine appellarunt. Is ab infántia multárum virtútum, sed abstinéntiæ in primis, specimen dedit. Nam anno vix septimo, beátum ipsum Nicolaum imitatus, complures hebdomadæ dies jejunare cœpit; eamque póstea consuetúdinem retinuit, solo pane et aqua contentus.

@@ -1,11 +1,5 @@
-[Rank]
-SS. Apostolorum Petri et Pauli;;Duplex I classis cum octava communi;;7;;ex C1
-
-[Rule]
-vide C1;
-Gloria
-Credo
-Prefatio=Apostolis
+[Officium]
+Śś. Apostołów Piotra i Pawła
 
 [Comment]
 # 29 VI – Świętych Piotra i Pawła, Apostołów
@@ -39,16 +33,9 @@ Ty jesteś Opoką, a na tej Opoce zbuduję Kościół mój. Alleluja.
 [Evangelium]
 @Commune/C4b:Evangelium
 
-[Offertorium]
-!Ps 44:17-18
-Ustanowisz ich książętami po całej ziemi: przez wszystkie pokolenia głosić będą Twe imię, o Panie.
-
 [Secreta]
 Panie, niech modlitwa apostolska towarzyszy darom, które składamy w ofierze Twojemu imieniu: dzięki niej racz nas oczyszczać i bronić.
 $Per Dominum
-
-[Communio]
-@Commune/C4b:Communio
 
 [Postcommunio]
 Panie, za przyczyną świętych Apostołów strzeż od wszelkich przeciwności tych, których posiliłeś niebieskim pokarmem.

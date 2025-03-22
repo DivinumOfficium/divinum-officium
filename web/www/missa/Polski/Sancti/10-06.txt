@@ -1,15 +1,14 @@
-[Rank]
-S. Brunonis Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+Św. Brunona Wyznawcy
 
 [Comment]
 # 06 X – Św. Brunona, Wyznawcy
 ! 3 klasy
 ! Szaty białe
 Św. Bruno urodził się w Kolonii w roku 1030. Odbywszy studia na uniwersytecie paryskim został kanonikiem w Kolonii, a potem w Reims. Porzuciwszy świat, założył w dzikim pustkowiu Chartreuse pod Grenoble surowy zakon Kartuzów poświęcony pokucie i modlitwie. Wezwany do Rzymu przez papieża Urbana II,  swojego dawnego ucznia, spędził tam cztery lata. Uzyskawszy pozwolenie powrotu do życia kontemplacyjnego, założył drugi klasztor swojego zakonu w La Torre w Kalabrii i tam zmarł 6 października 1101 roku.
+
+[Name]
+Brunona
 
 [Introitus]
 @Commune/C5:Introitus
@@ -30,12 +29,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C5:Offertorium
 
-[Secreta]
-@Commune/C5:Secreta
-
 [Communio]
 @Commune/C5:Communio
-
-[Postcommunio]
-Prosimy Cię, wszechmogący Boże, aby pokarm niebieski, któryśmy przyjęli, chronił nas od wszelkich przeciwności za wstawiennictwem świętego Brunona, Twojego Wyznawcy.
-$Per Dominum

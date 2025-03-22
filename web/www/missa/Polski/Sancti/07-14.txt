@@ -1,8 +1,7 @@
-[Rank]
-S. Bonaventurae Episcopi Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rank] (rubrica 1570)
-S. Bonaventurae Episcopi Confessoris;;Semiduplex;;2;;vide C4a
+[Officium]
+Św. Bonawentury Biskupa Wyznawcy i Doktora Kościoła
+(sed rubrica 1570)
+Św. Bonawentury Biskupa Wyznawcy
 
 [Comment]
 # 14 VII – Św. Bonawentury, Biskupa, Wyznawcy i Doktora Kościoła
@@ -12,9 +11,12 @@ Jan Fidanza urodził się w Bagnorea pod Viterbo w roku 1221. Wstąpiwszy do zak
 
 Msza wspólna nr 20 In medio, z wyjątkiem alleluja, antyfony na ofiarowanie, sekrety i pokomunii
 
-[Oratio]
-Boże, Tyś dał ludowi Swemu świętego Bonawenturę za pośrednika zbawienia wiecznego, spraw, prosimy Cię, abyśmy mogli mieć orędownikiem w niebie tego, który na ziemi był dla nas mistrzem życia.
-$Per Dominum
+[Name]
+Bonawenturę
+(sed rubrica 1570)
+Bonaventury
+Secreta=Bonaventury
+Postcommunio=Bonaventury
 
 [Graduale]
 !Ps 36:30-31
@@ -27,13 +29,5 @@ Pan przysiągł i nie pożałuje: Tyś kapłanem na wieki na wzór Melchizedeka.
 !Ps 88:25
 Z nim moja wierność i moja łaska; w moim imieniu moc jego wzrośnie.
 
-[Secreta]
-Prosimy Cię, Panie, niech doroczna uroczystość świętego Bonawentury, Twego Wyznawcy i Biskupa, uczyni nas godnymi Twojej miłości, a ta ofiara przebłagalna niech się przyczyni do jego niebieskiej chwały i wyjedna nam dary Twojej łaski.
-$Per Dominum
-
 [Communio]
 @Commune/C4a:Communio
-
-[Postcommunio]
-Boże, Ty nagradzasz dusze wierne, spraw, abyśmy dostąpili przebaczenia przez prośby świętego Bonawentury, Twego Wyznawcy i Biskupa, którego chwalebną uroczystość obchodzimy.
-$Per Dominum

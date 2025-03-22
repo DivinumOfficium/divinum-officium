@@ -1,8 +1,12 @@
-[Rank]
-S. Bonaventuræ Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Officium]
+S. Bonaventuræ Episcopi Confessoris et Ecclesiæ Doctoris
+(sed rubrica 1570)
+S. Bonaventuræ Episcopi Confessoris
 
-[Rank] (rubrica 1570)
-S. Bonaventuræ Episcopi Confessoris;;Semiduplex;;2.2;;vide C4
+[Rank]
+;;Duplex;;3;;vide C4a
+(sed rubrica 1570)
+;;Semiduplex;;2.2;;vide C4-1
 
 [Rule]
 vide C4a;mtv
@@ -14,14 +18,10 @@ vide C4;mtv
 Xysto PP. V, anno 1588, Doctor Seraphicus declaratus est
 
 [Name]
-Bonaventúra
-
-[Oratio]
-@Commune/C4:Oratio2:s/N\./Bonaventúram/
-
-[Oratio] (rubrica 1570)
-Deus, qui populo tuo æternæ salutis beatum Bonaventuram ministrum tribuisti: præsta quǽsumus; ut quem Doctorem vitæ habuimus in terris, intercessorem habere mereamur in cælis.
-$Per Dominum
+Bonaventúram
+(sed rubrica 1570)
+Bonaventúræ
+Ant=Bonaventúra
 
 [Lectio4]
 Bonaventúra, Balneorégii in Etrúria natus, a letháli morbo adhuc puer, beáti Francísci précibus, cujus religióni, si convaluísset, voto matris dicátus fúerat, evásit incólumis.  Itaque adoléscens, fratrum Minórum institútum amplécti vóluit, in quo ad eam doctrinæ præstántium Alexándro de Ales magístro pervénit, ut séptimo post anno Parísiis magistérii láuream adéptus, libros Sententiárum públice summa cum laude sit interpretátus, quos étiam præcláris póstea commentáriis illustrávit.  Nec sciéntiæ solum eruditióne, sed et morum integritáte vitæque innocéntia, humilitáte, mansuetúdine, terrenárum rerum contémptu et cæléstium desidério mirífice excélluit; dignus plane, qui tamquam perfectiónis exémplar haberétur, et a beáto Thoma Aquináte, cui summa caritáte conjúnctus erat, sanctus appellarétur.  Is enim, cum sancti Francísci vitam illum scribéntem comperísset: Sinámus, ait, Sanctum pro Sancto laboráre.

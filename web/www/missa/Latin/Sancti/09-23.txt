@@ -1,15 +1,18 @@
+[Officium]
+S. Lini Papæ et Martyris
+
 [Rank]
-S. Lini Papæ et Martyris;;Semiduplex;;2.2;;vide C2
-(sed communi Summorum Pontificum)
-S. Lini Papæ et Martyris;;Semiduplex;;2.2;;vide C4b
+;;Semiduplex;;2.2;;vide C2b-1
+(sed rubrica innovata aut rubrica 1963)
+;;Simplex;;1.1;;vide C2b-1
 
 [Rule]
-vide C2;
-(sed communi Summorum Pontificum)
-vide C4b;
-OPapaM=Linum;
+vide C2b-1;
 Gloria
 
-[Oratio]
-Deus, qui nos beáti Lini Mártyris tui atque Pontíficis ánnua solemnitáte lætíficas: concéde propítius; ut cujus natalítia cólimus, de eiúsdem étiam protectióne gaudeámus.
-$Per Dominum
+[Name]
+Lini
+(sed communi Summorum Pontificum)
+Linum
+Secreta=Lino
+Postcommunio=Lino

@@ -1,18 +1,21 @@
-[Rank]
-S. Urbani Papae et Martyris;;Simplex;;1.1;;vide C2
+[Officium]
+S. Urbano I, Papa e Martire
 
-[Rule]
-vide C2;
-Gloria
+[Name]
+Urbano
 
 [Oratio]
-O Dio, che liberi dal terrore delle potenze infernali la tua Chiesa, fondata sulla solidissima roccia apostolica.
-$Per Dominum
+Concedi, Dio onnipotente, che come celebriamo la solennità del tuo beato Martire e Pontefice Urbano, così siamo soccorsi dalla sua intercessione presso di te.
+$Per Dominum.
 
-[Secreta]
-O Signore, ricevi benigno questi doni, che lieti ti offriamo; e, per intercessione del beato Urbano, fa' che gioisca la tua Chiesa per l 'integrità della fede e sempre esulti per la pace dei tempi.
-$Per Dominum
+[Oratio] (communi Summorum Pontificum)
+Dio, che la tua Chiesa fondata sulla solidità della pietra apostolica, liberi del terrore delle porte degli inferi, concedi, che intercendete il beato Urbano tuo Martire e Sommo Ponteficie, persistendo nella tua verità, si difesa in continua sicurezza.
+$Per Dominum.
+(sed rubrica 196 loco horum versum dicitur)
+@Commune/C2b
 
-[Postcommunio]
-O Signore, moltiplica nella tua Chiesa lo spirito di grazia che le hai dato; affinché, per intercessione del beato Urbano martire tuo e sommo Pontefice, non manchi nel gregge l'ubbidienza al pastore e nel pastore la cura del gregge.
-$Per Dominum
+[Secreta] (communi Summorum Pontificum)
+@Commune/C2b:Secreta pro commemoratio
+
+[Postcommunio] (communi Summorum Pontificum)
+@Commune/C2b:Postcommunio pro commemoratio

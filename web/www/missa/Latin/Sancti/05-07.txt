@@ -1,13 +1,19 @@
+[Officium]
+S. Stanislai Episcopi et Martyris
+
 [Rank]
-S. Stanislai Episcopi Martyri;;Duplex;;3;;vide C2
+;;Duplex;;3;;vide C2-1
+(sed rubrica 1617)
+;;Semiduplex;;2.2;;vide C2-1
+
+[Rule]
+
+
+[Name]
+Stanisláus
+Secreta=Stanisláo
+Postcommunio=Stanisláo
 
 [Oratio]
 Deus, pro cujus honóre gloriósus Póntifex Stanisláus gládiis impiórum occúbuit: præsta, quǽsumus; ut omnes, qui ejus implórant auxílium, petitiónis suæ salutárem consequántur efféctum.
-$Per Dominum
-
-[Secreta]
-@Commune/C2b::s/N\./Stanisláo/
-
-[Postcommunio]
-Hæc nos commúnio, Dómine, purget a crímine: et, intercedénte beáto Stanisláo Mártyre tuo atque Pontifice, cœléstis remédii fáciat esse consórtes.
 $Per Dominum

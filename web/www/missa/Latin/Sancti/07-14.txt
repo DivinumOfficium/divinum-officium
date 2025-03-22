@@ -1,21 +1,26 @@
-[Rank]
-S. Bonaventuræ Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Officium]
+S. Bonaventuræ Episcopi Confessoris et Ecclesiæ Doctoris
+(sed rubrica 1570)
+S. Bonaventuræ Episcopi Confessoris
 
-[Rank] (rubrica 1570)
-S. Bonaventuræ Episcopi Confessoris;;Semiduplex;;2.2;;vide C4
+[Rank]
+;;Duplex;;3;;vide C4a
+(sed rubrica 1570)
+;;Semiduplex;;2.2;;vide C4-1
 
 [Rule]
 vide C4a;
 (sed rubrica 1570)
-vide C4
+vide C4-1
 Gloria
 CredoDA
 
-[Oratio]
-@Commune/C4a:Oratio:s/N\./Bonaventúræ/
-(sed rubrica 1570 dicuntur)
-Deus, qui populo tuo æternæ salutis beatum Bonaventuram ministrum tribuisti: præsta quǽsumus; ut quem Doctorem vitæ habuimus in terris, intercessorem habere mereamur in cælis.
-$Per Dominum
+[Name]
+Bonaventúram
+(sed rubrica 1570)
+Bonaventúræ
+Secreta=Bonaventúræ
+Postcommunio=Bonaventúræ
 
 [Graduale]
 !Ps 36:30-31
@@ -25,13 +30,13 @@ V. Lex Dei ejus in corde ipsíus: et non supplantabúntur gressus ejus. Allelúj
 Jurávit Dóminus, et non pœnitébit eum: Tu es sacérdos in ætérnum, secúndum órdinem Melchísedech. Allelúja.
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
-@Commune/C4d:Secreta:s/N\./Bonaventúræ/
+@Commune/C4-1
 
 [Communio]
 @Commune/C4
 
 [Postcommunio]
-@Commune/C4d:Postcommunio:s/N\./Bonaventúræ/
+@Commune/C4-1

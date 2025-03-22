@@ -1,8 +1,10 @@
-[Rank]
-SS. Apostolorum Petri et Pauli;;Duplex I classis cum octava communi;;6.5;;ex C1
+[Officium]
+SS. Apostolorum Petri et Pauli
 
-[Rank] (rubrica 196)
-SS. Apostolorum Petri et Pauli;;Duplex I classis;;6;;ex C1
+[Rank]
+;;Duplex I classis cum octava communi;;6.5;;ex C1
+(sed rubrica 196)
+;;Duplex I classis;;6;;ex C1
 
 [Rule]
 ex C1;

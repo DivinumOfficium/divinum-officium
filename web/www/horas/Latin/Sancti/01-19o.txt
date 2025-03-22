@@ -1,10 +1,13 @@
+[Officium]
+S. Canuti Regis et Martyrum
+
 [Rank]
-S. Canuti Regis et Martyrum;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2a-1
 (sed rubrica tridentina)
-S. Canuti Regis et Martyrum;;Semiduplex;;2.2;;vide C2
+;;Semiduplex;;2.2;;vide C2a-1
 
 [Rule]
-vide C2;
+vide C2a-1;
 (rubrica tridentina) 9 lectiones
 
 [Oratio]
@@ -19,3 +22,12 @@ His aliisque virtutibus imbutus, ad supremum perfectionis apicem sanctus rex pro
 
 [Lectio6]
 Sciens igitur rex, futurorum præscius, mortem sibi propter justitiam imminere; ea prænuntiata, ad ecclesiam sancti Albani Martyris Othoniæ, tamquam ad locum certaminis, profectus est: et sacramentis munitus, agonem suum Domino commendabat. Mox ibi adveniens conjuratorum multitudo, ecclesiæ ignem admovere, fores confringere et in eam irrumpere tentarunt. Quod cum perficere non possent, ad fenestras accedentes, saxa et sagittas in sanctum regem, flexis genibus pro inimicis orantem, magno impetu jaculari non cessarunt: donec lapidum et telorum ictibus, ac tandem lancea confossus, glorioso martyrio, ante altare extensis brachiis procumbens, coronatus est, sedente in apostolico throno Gregorio septimo. Multis postea miraculis Martyrem suum illustravit Deus. Nam gravi penuria et diversis calamitatibus oppressa Dania, patrati sacrilegii pœnas luit. Plures étiam variis languoribus afflicti, ad ejus tumulum remedium et incolumitatem consecuti sunt. Cumque regina sacrum ejus corpus noctu clam surripere, et alio transferre conaretur, emisso cælitus ingenti splendore perterrita, a proposito cessavit.
+
+[Lectio7]
+@Commune/C2-1
+
+[Lectio8]
+@Commune/C2-1
+
+[Lectio9]
+@Commune/C2-1

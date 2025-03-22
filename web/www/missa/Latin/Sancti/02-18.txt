@@ -1,14 +1,12 @@
+[Officium]
+S. Simeonis Episcopi et Martyris
+
 [Rank]
-S. Simeonis Faustini Episcopi et Martyris;;Simplex;;1.1;;vide C2c
+;;Simplex;;1.1;;vide C2
 
 [Rule]
-vide C2c;
+vide C2;
 
-[Oratio]
-@Commune/C2c:Oratio:s/N\./Simeónis/
-
-[Secreta]
-@Commune/C2c:Secreta:s/N\./Simeónis/
-
-[Postcommunio]
-@Commune/C2a:Postcommunio:s/N\./Simeóne/
+[Name]
+Simeónis
+Postcommunio=Simeóne

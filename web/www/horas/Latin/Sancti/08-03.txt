@@ -1,21 +1,27 @@
+[Officium]
+De Inventione S. Stephani Protomartyris
+
 [Rank]
-De Inventione S. Stephani Protomartyris;;Semiduplex;;2.2;;vide C2
+;;Semiduplex;;2.2;;vide Sancti/12-26
 
 [Rule]
-vide C2;
+vide Sancti/12-26;
 9 lectiones
 
 [Ant Vespera]
 @Sancti/12-26:Ant Laudes
 
 [Versum 1]
-@Commune/C2
+@Commune/C2a
 
 [Ant 1]
 @Sancti/12-26
 
 [Oratio]
 @Sancti/12-26::s/natalícia/Inventiónem/
+
+[Invit]
+@Commune/C2
 
 [Lectio1]
 De Actibus Apostolorum

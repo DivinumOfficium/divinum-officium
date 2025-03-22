@@ -1,15 +1,18 @@
+[Officium]
+S. Benedicti Abbatis
+
 [Rank]
-S. Benedicti Abbatis;;Duplex majus;;4;;vide C4c
+;;Duplex majus;;4;;vide C5b
+(sed rubrica 196)
+;;Duplex;;3;;vide C5b
+(sed rubrica innovata)
+;;Duplex;;3.91;;vide C5b
 
 [Rule]
-vide C4c;
+vide C5b;
 Gloria
 
-[Oratio]
-@Commune/C4c:Oratio:s/N\./Benedicti/
-
-[Secreta]
-@Commune/C4c:Secreta:s/N\./Benedicti/
-
-[Postcommunio]
-@Commune/C4c:Postcommunio:s/N\./Benedicti/
+[Name]
+Benedícti
+Secrata=Benedíctus
+Postcommunio=Benedíctus

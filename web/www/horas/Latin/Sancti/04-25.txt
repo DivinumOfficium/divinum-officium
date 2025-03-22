@@ -1,8 +1,12 @@
-[Rank]
-S. Marci Evangelistæ;;Duplex II classis;;5.1;;ex C1ap
+[Officium]
+S. Marci Evangelistæ
 
-[Rank] (rubrica 196)
-S. Marci Evangelistæ;;Duplex II classis;;5;;ex C1ap
+[Rank]
+;;Duplex II classis;;5.1;;ex C1ap
+(sed rubrica 196)
+;;Duplex II classis;;5;;ex C1ap
+(sed rubrica cisterciensis)
+;;Duplex majus;;4.1;;ex C1ap
 
 [Rule]
 ex C1a;

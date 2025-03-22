@@ -36,28 +36,16 @@ Qui vult veníre post me, * ábnegat semetípsum, et tollet crucem suam, et sequ
 @Commune/C2::4-9
 @:AntMatutinumM
 
-[Lectio1 non Pontificis]
-@Commune/C3:Lectio1
-
 [Lectio1]
 @Commune/C2:Lectio1:s/-24/-23/ :s/24 .*//s
-
-[Lectio2 non Pontificis]
-@Commune/C3:Lectio2
 
 [Lectio2]
 @Commune/C2:Lectio1:s/.*!/!/s s/17-24/24-27/ s/^17 .*24 /24 /sm s/$/~/
 @Commune/C2:Lectio2:s/!.*// s/28 .*//s
 
-[Lectio3 non Pontificis]
-@Commune/C3:Lectio3
-
 [Lectio3]
 @Commune/C2:Lectio2:s/25-31/28-32/ s/^25 .*28 /28 /sm s/$/~/
 @Commune/C2:Lectio3:s/!.*// s/33 .*//s
-
-[Lectio4 non Pontificis]
-@Commune/C3:Lectio4
 
 [Lectio4]
 @Commune/C2:Lectio3:s/32-/33-/ s/32 .*33 /33 /s
@@ -137,10 +125,7 @@ _
 V. Lætábitur justus in Dómino, et sperábit in eo.
 R. Et laudabúntur omnes recti corde.
 
-[LectioE]
-@Commune/C2c
-
-[Ant Vespera 3] 
+[Ant Vespera 3]
 @Commune/C2:Ant Vespera:1 s/$/;;109/
 @Commune/C2:Ant Vespera:2 s/$/;;111/
 @Commune/C2:Ant Vespera:3 s/$/;;112/
@@ -150,34 +135,33 @@ R. Et laudabúntur omnes recti corde.
 @Commune/C2:Ant Vespera
 
 [Lectio5 in 2 loco]
-De Expositióne sancti Ambrósii Epíscopi in Psalmum centésimum décimum octávum
-!Sermo 21, n. 7 et 8
-Príncipes persecúti sunt me gratis: et a verbis tuis trepidávit cor meum. Bene hoc Martyr dicit, quod injúste persecutiónum torménta sustineat; qui nihil rapúerit, nullum violentus oppresserit, nullius sánguinem fuderit, nullius torum putaverit esse violándum; qui nihil légibus debeat, et gravióra latronum sustinere cogátur supplícia; qui loquátur juste, et non audiátur; qui loquátur plena salútis, et impugnétur, ut possit dicere: Cum loquébar illis, impugnábant me gratis.
+@Commune/C2:Lectio4 in 2 loco:s/ Gratis.*//s
 
 [Lectio6 in 2 loco]
-Gratis ígitur persecutiónem pátitur, qui impugnátur sine crimine; impugnátur ut noxius cum sit in tali confessióne laudábilis; impugnátur quasi veneficus, qui in nómine Dómini gloriátur, cum pietas virtútum ómnium fundaméntum sit. Vere frustra impugnátur, qui apud ímpios et infidos impietátis arcessitur, cum fidei sit magister.
+@Commune/C2:Lectio4 in 2 loco:s/.* (Gratis)/$1/s s/$/~/s
+@Commune/C2:Lectio5 in 2 loco:s/ Verum.*//s
 
 [Lectio7 in 2 loco]
-Verum, qui gratis impugnátur, fortis debet esse et constans; quómodo ergo subtexuit: Et a verbis tuis trepidávit cor meum? Trepidare infirmitátis est, timoris atque formidinis. Sed est étiam infirmitas ad salútem, est étiam timor sanctórum: Timéte Dóminum, omnes sancti ejus; et, Beátus vir, qui timet Dóminum. Qua ratióne beatus? Quia in mandatis ejus cupit nimis.
+@Commune/C2:Lectio5 in 2 loco:s/.* (Verum)/$1/s s/$/~/s
 
 [Lectio8 in 2 loco]
-Pone ergo Mártyrem inter perícula constitútum, cum inde immánitas bestiárum ad incutiéndum terrórem ínfremat, aliúnde stridor candéntium laminárum et flamma fornácis ardéntis exæstuet; ex parte ália pérsonent tractus grávium catenárum, hinc cárnifex cruéntus assístat: Pone, inquam, circumspectántem ómnia plena supplíciis, deínde cogitántem mandáta divína, illum ignem perpétuum, illud sine fine incéndium perfidórum, illam pœnæ recrudescéntis ærúmnam; trepidáre corde, ne, dum præséntibus cedat, perpétuis se dedat exítiis; perturbári ánimo, dum futúri judícii rhomphæam illam terríbilem quadam conspéctus spécie contuétur. Nonne ad hanc trepidatiónem fidúciæ viri constántis, æquális in eúmdem concúrrit efféctum confidéntia cupiéntis ætérna, et divína trepidántis?
+@Commune/C2:Lectio6 in 2 loco
 
 [Lectio9 in 2 loco]
-@Commune/C2:Lectio7 in 4 loco:s/Nam .*//s
+@Commune/C2:Lectio7 in 2 loco:s/Nam .*//s
 
 [Lectio10 in 2 loco]
-@Commune/C2:Lectio7 in 4 loco:s/.* Nam /Nam /s s/$/~/
-@Commune/C2:Lectio8 in 4 loco:s/Quid vero .*//s
+@Commune/C2:Lectio7 in 2 loco:s/.* Nam /Nam /s s/$/~/
+@Commune/C2:Lectio8 in 2 loco:s/Quid vero .*//s
 
 [Lectio11 in 2 loco]
-@Commune/C2:Lectio8 in 4 loco:s/.* Quid vero /Quid vero /s
+@Commune/C2:Lectio8 in 2 loco:s/.* Quid vero /Quid vero /s
 
 [Lectio12 in 2 loco]
-@Commune/C2:Lectio9 in 4 loco:s/\&teDeum .*//s
+@Commune/C2:Lectio9 in 2 loco:s/\&teDeum .*//s
 
 [LectioE in 2 loco]
-@Commune/C2b:LectioE
+@Commune/C2-1:LectioE
 
 [Lectio9 in 3 loco]
 @Sancti/09-28:Lectio7:s/Ubíque .*//s
@@ -193,19 +177,19 @@ Pone ergo Mártyrem inter perícula constitútum, cum inde immánitas bestiárum
 @Sancti/09-28:Lectio9:s/\&teDeum .*//s
 
 [LectioE in 3 loco]
-@Commune/C2:LectioE
+@Commune/C2a:LectioE
 
 [Lectio9 in 4 loco]
-@Commune/C2:Lectio7 in 3 loco:s/Et quod .*//s
+@Commune/C2:Lectio7 in 4 loco:s/Et quod .*//s
 
 [Lectio10 in 4 loco]
-@Commune/C2:Lectio7 in 3 loco:s/.* Et quod /Et quod /s
+@Commune/C2:Lectio7 in 4 loco:s/.* Et quod /Et quod /s
 
 [Lectio11 in 4 loco]
-@Commune/C2:Lectio8 in 3 loco
+@Commune/C2:Lectio8 in 4 loco
 
 [Lectio12 in 4 loco]
-@Commune/C2:Lectio9 in 3 loco:s/\&teDeum .*//s
+@Commune/C2:Lectio9 in 4 loco:s/\&teDeum .*//s
 
 [LectioE in 4 loco]
-@Commune/C2a:LectioE
+@Commune/C2a-1:LectioE

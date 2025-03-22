@@ -1,7 +1,15 @@
+[Officium]
+S. Pii I Papæ et Martyris
+
 [Rank]
-S. Pii I Papæ et Martyris;;Simplex;;1.1;;vide C4b
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-OPapaM=Pium;
-vide C4b;
+vide C2b;
 Gloria
+
+[Name]
+Pii
+(sed communi Summorum Pontificum)
+Pium
+Postcommunio=Pio

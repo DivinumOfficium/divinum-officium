@@ -1,16 +1,17 @@
+[Officium]
+S. Andreæ Corsini Episcopi et Confessoris
+
 [Rank]
-S. Andreæ Corsini Episcopi et Confessoris;;Duplex;;3;;vide C4
+;;Duplex;;3;;vide C4
 
 [Rule]
 vide C4;
 Gloria
 
+[Name]
+Andréæ
+Postcommunio=Andréa
+
 [Oratio]
 Deus, qui in Ecclésia tua nova semper instáuras exémpla virtútum: da pópulo tuo beáti Andréæ Confessóris tui atque Pontíficis ita sequi vestígia; ut assequátur et prǽmia.
 $Per Dominum
-
-[Secreta]
-@Commune/C4
-
-[Postcommunio]
-@Commune/C4::s/N\./Andréa/

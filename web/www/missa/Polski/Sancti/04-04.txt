@@ -1,10 +1,5 @@
-[Rank]
-S. Isidori Episc. Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDa
+[Officium]
+Św. Izydora Biskupa Wyznawcy i Doktora Kościoła
 
 [Comment]
 # 04 IV – Św. Izydora, Biskupa, Wyznawcy i Doktora Kościoła
@@ -15,14 +10,10 @@ Izydor, brat św. Leandra, objął po nim biskupstwo w Sewilli około roku 600. 
 Msza wspólna nr 20 In medio.
 
 [Name]
-Isidore
+Izydora
 
 [Introitus]
 @Commune/C4a:Introitus
-
-[Oratio]
-Boże, Tyś dał ludowi Swemu świętego Izydora za pośrednika zbawienia wiecznego, spraw, prosimy Cię, abyśmy mogli mieć orędownikiem w niebie tego, który na ziemi był dla nas mistrzem życia.
-$Per Dominum.
 
 [Lectio]
 @Commune/C4a:Lectio
@@ -36,11 +27,5 @@ $Per Dominum.
 [Offertorium]
 @Commune/C4a:Offertorium
 
-[Secreta]
-@Commune/C4a:Secreta
-
 [Communio]
 @Commune/C4a:Communio
-
-[Postcommunio]
-@Commune/C4a:Postcommunio

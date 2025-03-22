@@ -1,17 +1,19 @@
-[Rank]
-SS. Cleti et Marcellini Paparum et Martyrum;;Semiduplex;;2.2;;vide C3
+[Officium]
+SS. Cleti et Marcellini Summorum Pontificum et Martyrum
 
-[Rank] (rubrica 1960)
-SS. Cleti et Marcellini Summorum Pontificum et Martyrum;;Semiduplex;;2.5;;vide C3
+[Rank]
+;;Semiduplex;;2.2;;vide C3b
+(sed rubrica 1960)
+;;Semiduplex;;2.5;;vide C3b
 
 [Rule]
-vide C3;
+vide C3b;
 9 lectiones
-OPapaeM=Cletum et Marcellínum;
 
-[Oratio]
-Beatórum Mártyrum, paritérque Pontíficum Cleti et Marcellíni nos Dómine fóveat pretiósa conféssio: et pia júgiter intercéssio tueátur.
-$Per Dominum
+[Name]
+Cleti et Marcellíni
+(sed communi Summorum Pontificum)
+Cletum et Marcellínum
 
 [Lectio4]
 Cletus Romanus, patre Æmiliano, de regione quinta, e vico Patricio, imperatoribus Vespasiano et Tito, Ecclesiam gubernavit. Is ex præcepto Principis Apostolorum in Urbe viginti quinque presbyteros ordinavit. Primus in litteris verbis illis usus est: Salutem et apostolicam benedictionem. Qui Ecclesia optime constituta, cum ei præfuísset annos duodecim, menses septem, dies duos, Domitiano imperatore, secunda post Neronem persecutione, martyrio coronatus est, et in Vaticano juxta corpus beati Petri sepultus.
@@ -27,12 +29,3 @@ Dignum et congruum est, fratres, ut post lætitiam Paschæ, quam in Ecclesia cel
 [Lectio94]
 Cletus Románus, imperatóribus Vespasiáno et Tito Ecclésiam gubernávit. Ex præcépto Príncipis Apostolórum in Urbe vigínti quinque presbýteros ordinávit. Primus in lítteris verbis illis usus est: Salútem et apostólicam benedictiónem. Ecclésia óptime constitúta, Domitiáno imperatóre, secúnda post Nerónem persecutióne, martýrio coronátus est, et in Vaticáno juxta corpus beáti Petri sepúltus. Marcellínus Románus, in immáni imperatóris Diocletiáni persecutióne Ecclésiæ præfuit. Multas pértulit angústias ob ímprobam eórum severitátem, qui eum redarguébant de nímia indulgéntia erga lapsos in idololatríam, quæque causa fuit, ut per calúmniam infamátus fúerit, quasi thus idólis adhibuísset. Verum hic beátus Póntifex in confessióne fídei, una cum tribus áliis Christiánis, Cláudio, Cyríno et Antoníno, cápite plexus est.
 &teDeum
-
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco

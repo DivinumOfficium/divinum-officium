@@ -1,38 +1,19 @@
-[Rank]
-S. Marii et Soc. Mart.;;Simplex;;1.1;;vide C3
-
-[Rule]
-vide C3;
-Gloria
+[Officium]
+S. Marii et Soc. Mart.
 
 [Comment]
 # 19 I – S. S. Mário e Outros Mártires
-
-[Introitus]
-@Commune/C3b:Introitus
 
 [Oratio]
 Ouvi, Senhor, as súplicas que o vosso povo Vos dirige sob o patrocínio dos vossos Santos; e dignai-Vos permitir que gozemos a vossa paz na vida presente e alcancemos o vosso auxílio na vida eterna.
 $Per Dominum
 
-[Lectio]
-@Commune/C3b:Lectio
-
-[Graduale]
-@Commune/C3b:Graduale
-
-[Evangelium]
-@Commune/C3b:Evangelium
-
 [Offertorium]
-@Commune/C3b:Offertorium
+@Commune/C3a-1:Offertorium
 
 [Secreta]
 Atendei, Senhor, às preces e às oblatas dos vossos fiéis, a fim de que Vos sejam agradáveis nesta festa dos vossos Santos e nos alcancem o auxílio da vossa bondade.
 $Per Dominum
-
-[Communio]
-@Commune/C3b:Communio
 
 [Postcommunio]
 Deixai-Vos aplacar, Senhor pela intercessão dos vossos Santos; e permiti, Vos rogamos, que estes auxílios, que agora celebrámos, nos sirvam de auxílio para a salvação eterna.

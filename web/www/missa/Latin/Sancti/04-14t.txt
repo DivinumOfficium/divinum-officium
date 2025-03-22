@@ -1,18 +1,21 @@
+[Officium]
+Ss. Tiburtii, Valeriani, et Maximi Martyrum
+
 [Rank]
-Ss. Tiburtii, Valeriani, et Maximi Martyrum;;Simplex;;1.1;;vide C3
+;;Simplex;;1.1;;vide C3a
 
 [Rule]
-vide C3;
+vide C3a;
 
 [Oratio]
 Præsta, quǽsumus, omnípotens Deus: ut, qui sanctórum Mártyrum tuórum Tibúrtii, Valeriáni et Máximi sollémnia cólimus; eórum étiam virtútes imitémur.
 $Per Dominum
 
 [Lectio]
-@Commune/C2p:Lectio
+@Commune/C2p
 
 [Evangelium]
-@Commune/C2p:Evangelium
+@Commune/C2p
 
 [Secreta]
 Hæc hóstia, quǽsumus, Dómine, quam sanctórum Mártyrum tuórum natalítia recenséntes offérimus: et víncula nostræ pravitátis absólvat, et tuæ nobis misericórdiæ dona concíliet.

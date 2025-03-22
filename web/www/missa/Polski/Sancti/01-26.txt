@@ -1,12 +1,5 @@
-[Rank]
-S. Polycarpi Episcopi et Martyris;;Duplex;;3;;vide C2
-
-[Rank] (rubrica 1570)
-S. Polycarpi Episcopi et Martyris;;Simplex;;1.1;;vide C2
-
-[Rule]
-vide C2;
-Gloria
+[Officium]
+Św. Polikarpa Biskupa i Męczennika
 
 [Comment]
 # 25 I – Św. Polikarpa, Biskupa i Męczennika
@@ -14,12 +7,15 @@ Gloria
 ! Szaty czerwone
 Św. Polikarp był uczniem św. Jana Apostoła, który go wyniósł na biskupstwo w Smyrnie. Napisał list do Filipian, dotąd zachowany. Opis jego męczeństwa zachował się w liście, który chrześcijanie ze Smyrny skierowali do innych gmin. Prokonsulowi, który mu kazał bluźnić Chrystusowi, św. Polikarp odpowiedział: «Osiemdziesiąt sześć lat służę Jemu, nigdy mi nie wyrządził krzywdy, jakże bym mógł bluźnić mojemu Królowi i Zbawcy?»
 
-[Introitus]
-@Commune/C2b:Introitus
+[Name]
+Polikarpa
 
 [Oratio]
 Boże, co roku uweselasz nas uroczystością świętego Polikarpa, Twojego Męczennika i Biskupa; spraw łaskawie, abyśmy cieszyli się opieką tego, którego urodziny dla nieba obchodzimy.
 $Per Dominum
+
+[Introitus]
+@Commune/C2a-1:Introitus
 
 [Lectio]
 Czytanie z Listu świętego Jana Apostoła.
@@ -29,20 +25,20 @@ Najmilsi: Każdy, kto nie jest sprawiedliwy i nie miłuje brata swego, nie jest 
 Nie dziwcie się, bracia, jeśli was świat nienawidzi. My wiemy, żeśmy przeszli ze śmierci do życia, bo miłujemy braci. Kto nie miłuje, trwa w śmierci. Każdy, kto nie miłuje brata swego, mordercą jest. A wiecie, że żaden morderca nie ma w sobie żywota wiecznego. Przez to poznaliśmy miłość Boga, że oddał za nas życie swoje i my winniśmy życie oddać za braci.
 
 [Graduale]
-@Commune/C2b:Graduale
+@Commune/C2-1:Graduale
 
 [Evangelium]
-@Commune/C2a:Evangelium
+@Commune/C2a-1:Evangelium
 
 [Offertorium]
-@Commune/C2b:Offertorium
+@Commune/C2-1:Offertorium
 
 [Secreta]
 Poświęć, Panie, złożone Ci dary i za przyczyną świętego Polikarpa Twego Męczennika i Biskupa, daj się nimi przebłagać i bądź nam przychylny.
 $Per Dominum
 
 [Communio]
-@Commune/C2b:Communio
+@Commune/C2-1:Communio
 
 [Postcommunio]
 Panie, niech ta Komunia oczyści nas z grzechów i za przyczyną świętego Polikarpa, Twego Męczennika i Biskupa, stanie się dla nas niebieskim lekarstwem.

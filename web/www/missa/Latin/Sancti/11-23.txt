@@ -1,14 +1,17 @@
+[Officium]
+S. Clementis Papæ et Martyris
+
 [Rank]
-S. Clementis Papæ et Martyris;;Duplex;;3;;vide C2
-(sed communi Summorum Pontificum)
-S. Clementis Papæ et Martyris;;Duplex;;3;;vide C4b
+;;Duplex;;3;;vide C2b
+(sed rubrica 1570 aut rubrica 1617)
+;;Semiduplex;;2.2;;vide C2b
 
 [Rule]
-OPapaM=Cleméntem;
-vide C2;
-(sed communi Summorum Pontificum)
-vide C4b;
+vide C2b;
 Gloria
+
+[Name]
+Cleméntem
 
 [Introitus]
 !Is 59:21; 56:7
@@ -18,17 +21,17 @@ Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis.
 &Gloria
 v. Dicit Dóminus: Sermónes mei, quos dedi in os tuum, non defícient de ore tuo: et múnera tua accépta erunt super altáre meum.
 
-[Oratio]
+[Oratio] (nisi communi Summorum Pontificum) 
 Deus, qui nos ánnua beáti Cleméntis Mártyris tui atque Pontíficis sollemnitáte lætíficas: concéde propítius; ut, cujus natalítia cólimus, virtútem quoque passiónis imitémur.
 $Per Dominum
 
 [Lectio]
 @Tempora/Pent23-0
 
-[Secreta]
+[Secreta] (nisi communi Summorum Pontificum)
 Múnera tibi, Dómine, obláta sanctífica: et, intercedénte beáto Cleménte Mártyre tuo atque Pontífice, per hæc nos a peccatórum nostrórum máculis emúnda.
 $Per Dominum
 
-[Postcommunio]
+[Postcommunio] (nisi communi Summorum Pontificum)
 Córporis sacri et pretiósi Sánguinis repléti libámine, quǽsumus, Dómine, Deus noster: ut, quod pia devotióne gérimus; intercedénte beáto Cleménte Mártyre tuo atque Pontífice, certa redemptióne capiámus.
 $Per Dominum

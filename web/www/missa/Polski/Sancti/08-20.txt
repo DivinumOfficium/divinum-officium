@@ -1,4 +1,4 @@
-[Rank]
+[Officium]
 Św. Bernarda Opata i Doktora Kościoła
 (sed rubrica 1570 aut rubrica 1617)
 Św. Bernarda Opata
@@ -13,34 +13,8 @@
 Msza wspólna nr 20 In medio
 
 [Name]
-Bernarde
-
-[Introitus]
-@Commune/C4a:Introitus
-
-[Oratio]
-Boże, Tyś dał ludowi Swemu świętego Bernarda za pośrednika zbawienia wiecznego, spraw, prosimy Cię, abyśmy mogli mieć orędownikiem w niebie tego, który na ziemi był dla nas mistrzem życia.
-$Per Dominum
-
-[Lectio]
-@Commune/C4a:Lectio1
-
-[Graduale]
-@Commune/C4a:Graduale
-
-[Evangelium]
-@Commune/C4a:Evangelium
-
-[Offertorium]
-@Commune/C4a:Offertorium
-
-[Secreta]
-Panie, niech nam nie zabraknie serdecznej modlitwy świętego Bernarda, Twego Biskupa i Doktora, która zaleci Tobie naszą ofiarę i wyjedna nam Twoje przebaczenie.
-$Per Dominum
-
-[Communio]
-@Commune/C4a:Communio
-
-[Postcommunio]
-Prosimy Cię, Panie, niech święty Bernard, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
-$Per Dominum
+Bernarda
+Secreta=Bernarda
+(sed rubrica 1570 aut rubrica 1617)
+Secreta=Bernard
+Postcommunio=Bernard

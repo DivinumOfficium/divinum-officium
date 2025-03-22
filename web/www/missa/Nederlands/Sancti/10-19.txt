@@ -1,19 +1,15 @@
-[Rank]
-S. Petri de Alcantara Confessoris;;Duplex;;3;;vide C5
+[Officium]
+S. Petri de Alcantara Confessoris
 
-[Rule]
-vide C5;
-Gloria
+[Name]
+Petrus
 
 [Introitus]
-@Commune/C5b
+@Commune/C5-1
 
 [Oratio]
 God, Gij hebt U gewaardigd uw heilige belijder Petrus te verheerlijken met de gave van een wonderbare boetvaardigheid en hoogste beschouwing. Wij vragen U, doe ons door de hulp van zijn verdiensten ons lichaam versterven en daardoor gemakkelijker het hemelse begrijpen.
 $Per Dominum
-
-[Lectio]
-@Sancti/01-15
 
 [Graduale]
 !Ps 36:30-31
@@ -24,16 +20,10 @@ Alleluia, alleluia.
 Gelukkig de man, die de Heer vreest en zich in zijn geboden ten zeerste verheugt. Alleluia.
 
 [Evangelium]
-@Commune/C5b
+@Commune/C5-1
 
 [Offertorium]
-@Commune/C5b
-
-[Secreta]
-@Commune/C5b
+@Commune/C5-1
 
 [Communio]
-@Commune/C5b
-
-[Postcommunio]
-@Commune/C5b:Postcommunio:s/N\./Petrus/
+@Commune/C5-1

@@ -1,15 +1,8 @@
-[Rank]
-S. Silvestri Papæ et Conf.;;Duplex;;3;;vide C4d
+[Officium]
+St Sylvestre Pape et Confesseur
 
-[Rule]
-OPapaC=Silvéstrum;
-vide C4d;
-Gloria
-Credo
-Prefatio=Nat
 
-[Oratio]
-@Commune/C4:Oratio:s/N\./Silvéstri/
+Silvéstro
 
 [Commemoratio Oratio]
 !Pro Octava Nativitatis.
@@ -35,16 +28,13 @@ V. J’ai trouvé David mon serviteur ; je l’ai oint de mon huile sainte. All�
 [Offertorium]
 @Commune/C4:Offertorium
 
-[Secreta]
+[Secreta] (nisi rubrica 196)
 Que le souvenir de vos Saints nous soit, ô Seigneur, en tous lieux, un sujet de joie, afin que nous ressentions la protection de ceux dont nous célébrons à nouveau les mérites.
 $Per Dominum
 
 [Commemoratio Secreta]
 !Pro Octava Nativitatis.
 @Sancti/12-25m3:Secreta
-
-[Postcommunio]
-@Commune/C4:Postcommunio:s/N\./Silvéstro/
 
 [Commemoratio Postcommunio]
 !Pro Octava Nativitatis.

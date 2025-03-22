@@ -1,8 +1,10 @@
-[Rank]
-S. Joachim Confessoris, Patris B. M. V.;;Duplex II classis;;5.1;;ex C5
+[Officium]
+S. Joachim Confessoris, Patris B. M. V.
 
-[Rank] (rubrica 196)
-S. Joachim Confessoris, Patris B. M. V.;;Duplex II classis;;5;;ex C5
+[Rank]
+;;Duplex II classis;;5.1;;ex C5
+(sed rubrica 196)
+;;Duplex II classis;;5;;ex C5
 
 [Rule]
 ex C5;mtv

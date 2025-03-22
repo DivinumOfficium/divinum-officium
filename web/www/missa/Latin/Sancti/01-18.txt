@@ -1,5 +1,8 @@
+[Officium]
+Cathedræ S. Petri Romæ
+
 [Rank]
-Cathedræ S. Petri;;Duplex majus;;4;;ex C4
+;;Duplex majus;;4;;ex C4
 
 [Rule]
 ex C4;
@@ -8,7 +11,7 @@ Credo
 !Prefatio Apostolis
 
 [Introitus]
-@Commune/C2c
+@Commune/C2a
 
 [Oratio]
 Deus, qui beáto Petro Apóstolo tuo, collátis clávibus regni cœléstis, ligándi atque solvéndi pontifícium tradidísti: concéde; ut, intercessiónis ejus auxílio, a peccatórum nostrórum néxibus liberémur:
@@ -32,7 +35,7 @@ $Per Dominum
 @Commune/Coronatio
 
 [Evangelium]
-@Commune/C4b
+@Commune/Coronatio
 
 [Offertorium]
 @Commune/Coronatio

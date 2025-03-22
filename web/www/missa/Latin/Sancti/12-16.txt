@@ -1,15 +1,16 @@
+[Officium]
+S. Eusebii Episcopi et Martyris
+(sed rubrica 1617)
+S. Eusebii Vercellensis Episcopi et Martyris
+
 [Rank]
-S. Eusebii Episcopi et Martyris;;Semiduplex;;2.5;;vide C2b
+;;Semiduplex;;2.5;;vide C2-1
+(sed rubrica 1617)
+;;Simplex;;1.1;;vide C2-1
 
 [Rule]
-vide C2b;
+vide C2-1;
 Gloria
 
-[Oratio]
-@Commune/C2b:Oratio:s/N\./Eusébii/
-
-[Secreta]
-@Commune/C2b:Secreta:s/N\./Eusébio/
-
-[Postcommunio]
-@Commune/C2b:Postcommunio:s/N\./Eusébio/
+[Name]
+Eusébii

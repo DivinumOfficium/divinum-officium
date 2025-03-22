@@ -1,10 +1,5 @@
-[Rank]
-S. Petri Canisii Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C5a
-
-[Rule]
-vide C5a;
-Gloria
-CredoDA
+[Officium]
+S. Pedro Canísio, Confessor e Doutor
 
 [Comment]
 # 27 IV – S. Pedro Canísio, Confessor e Doutor
@@ -12,7 +7,7 @@ CredoDA
 ! Paramentos brancos
 
 [Name]
-Petre
+Pedro
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -39,13 +34,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C4a:Offertorium
 
-[Secreta]
-@Commune/C4a:Secreta
-$Per Dominum.
-
 [Communio]
 @Commune/C4a:Communio
-
-[Postcommunio]
-@Commune/C4a:Postcommunio
-$Per Dominum

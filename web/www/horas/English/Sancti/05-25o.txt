@@ -1,17 +1,18 @@
-[Rank]
-St. Urban, Pope and Martyr;;Simplex;;1.1;;vide C2
+[Officium]
+St. Urban, Pope and Martyr
 
-[Rule]
-vide C2;
-OPapaM=Urban;
+[Name]
+Urban
 
 [Oratio]
 O Almighty God, of Whose blessed Martyr and Bishop Urban we do make solemn memorial, grant, we beseech thee, that we may be helpen of his prayers in thy presence.
 $Per Dominum.
 
-[Oratio] (rubrica 1960)
+[Oratio] (communi Summorum Pontificum)
 O God, Who firmly established Your Church upon the rock of the apostle and delivered her from the dreadful powers of hell, grant, we beseech You, that through the intercession of blessed Urban, Your Martyr and Supreme Pontiff, she may remain faithful to Your truth so as to be always safe under Your protection.
 $Per Dominum
+(sed rubrica 196 loco horum versum dicitur)
+@Commune/C2b
 
 [Lectio93]
 !For St. Urban, Pope and Martyr

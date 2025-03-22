@@ -1,5 +1,8 @@
+[Officium]
+Sexta die infra Octavam Ss. Apostolorum Petri et Pauli
+
 [Rank]
-Sexta die infra Octavam Ss. Petri et Pauli;;Semiduplex;;2;;vide C1
+;;Semiduplex;;2;;vide C1
 
 [Rule]
 Gloria
@@ -11,8 +14,7 @@ Suffr=Maria3;Ecclesiæ,Papa;;
 @Sancti/02-24
 
 [Oratio]
-Deus, qui hodiérnam diem Apostolórum tuórum Petri et Pauli martýrio consecrásti: da Ecclésiæ tuæ, eórum in ómnibus sequi præcéptum; per quos religiónis sumpsit exórdium.
-$Per Dominum
+@Sancti/06-29
 
 [Lectio]
 Léctio Actuum Apostolórum
@@ -27,7 +29,7 @@ V. Pro patribus tuis nati sunt tibi fílii: proptérea pópuli confitebúntur ti
 V. Rogavi pro te, Petre, ut non defíciat fides tua: et tu aliquándo convérsus confírma fratres tuos. Allelúja.
 
 [Evangelium]
-@Commune/C4c
+@Commune/C5b
 
 [Offertorium]
 !Ps 18:5
@@ -41,4 +43,4 @@ $Per Dominum
 @Sancti/02-24
 
 [Postcommunio]
-@Sancti/06-28r
+@Sancti/06-29

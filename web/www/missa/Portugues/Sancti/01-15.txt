@@ -1,14 +1,13 @@
-[Rank]
-S. Pauli Primi Eremitae et Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+S. Pauli Primi Eremitae et Confessoris
 
 [Comment]
 # 15 I – S. Paulo, 1.º Eremita, Confessor
 ! 3 classe
 ! Paramentos brancos
+
+[Name]
+Paulo
 
 [Introitus]
 !Sl 91:13-14
@@ -18,12 +17,10 @@ v. O justo florescerá, como a palmeira, e multiplicar-se-á, como o cedro do L�
 &Gloria
 v. O justo florescerá, como a palmeira, e multiplicar-se-á, como o cedro do Líbano, plantado na casa do Senhor e nos átrios da casa do nosso Deus.
 
-[Oratio]
-Ó Deus, que nos alegrais com a solenidade anual do B. Paulo, vosso Confessor, visto que celebramos o seu nascimento, concedei-nos propício que imitemos também as suas acções.
-$Per Dominum
-
 [Lectio]
-@Sancti/10-19:Lectio
+Lição da Ep.ª do B. Ap.º Paulo aos Filipenses.
+!Fl 3:7-12
+Meus irmãos: As cousas que considerava ganho tive-as depois como perda, meditando em Cristo. E, na verdade, considero tudo como perda, pelo melhor conhecimento que tenho de Jesus Cristo, meu Senhor, por amor de quem renunciei a todas as cousas, considerando-as como poeira, a fim de que ganhe a Cristo e me encontre com Ele, não com a minha própria justiça (a que vem da Lei), mas com aquela que nasce da fé em Jesus Cristo (a justiça que vem de Deus pela fé), para que o conheça a Ele, assim como ao mystério da sua Ressurreição, e tome parte nos seus sofrimentos, havendo-me confortado com sua morte, a fim de que possa de algum modo conseguir a ressurreição dos mortos. Não que eu a tenha alcançado, isto é, me haja tornado já perfeito; mas prossigo o caminho para ver se alcanço o fim para que fui predestinado por Jesus Cristo.
 
 [Graduale]
 !Sl 91:13; 91:14
@@ -39,9 +36,6 @@ O justo germinará, como o lírio, e florescerá eternamente na presença do Sen
 [Offertorium]
 !Sl 20:2-3
 Com o vosso poder, ó Senhor, se alegrará o justo, o qual exultará de alegria, vendo-se salvo por Vós. Concedestes-lhe, Senhor, o desejo da sua alma.
-
-[Secreta]
-@Commune/C5:Secreta
 
 [Communio]
 !Sl 63:11

@@ -1,15 +1,19 @@
+[Officium]
+S. Bonifatii Martyris
+
 [Rank]
-S. Bonifacii Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2a
 
 [Rule]
-vide C2;
+vide C2a;
+
+[Name]
+Bonifátii
+Postcommunio=Bonifátio
 
 [Oratio]
 Da, quǽsumus, omnípotens Deus: ut, qui beáti Bonifátii Mártyris tui sollémnia cólimus, ejus apud te intercessiónibus adjuvémur.
 $Per Dominum
 
-[Secreta]
-@Commune/C2
-
 [Postcommunio]
-@Commune/C2a:Postcommunio:s/N\./Bonifátio/
+@Commune/C2a-1

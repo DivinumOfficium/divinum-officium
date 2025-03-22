@@ -1,13 +1,17 @@
-[Rank]
-S. Clementis I Papæ et Martyris;;Duplex;;3;;vide C2
+[Officium]
+S. Clementis Papæ et Martyris
 
-[Rank] (rubrica 1570 aut rubrica 1617)
-S. Clementis Papæ et Martyris;;Semiduplex;;2.2;;vide C2
+[Rank]
+;;Duplex;;3;;vide C2b
+(sed rubrica 1570 aut rubrica 1617)
+;;Semiduplex;;2.2;;vide C2b
 
 [Rule]
-vide C2;
+vide C2b;
 9 lectiones
-OPapaM=Cleméntem;
+
+[Name]
+Cleméntem
 
 [Ant Vespera]
 Oránte * sancto Cleménte, appáruit ei Agnus Dei.;;109
@@ -19,7 +23,7 @@ Omnes gentes * per gyrum credidérunt Christo Dómino.;;116
 [Ant 1]
 Orémus omnes * ad Dóminum Jesum Christum, ut Confessóribus suis fontis venam apériat.
 
-[Oratio]
+[Oratio] (nisi communi Summorum Pontificum)
 Deus, qui nos ánnua beáti Cleméntis Mártyris tui atque Pontíficis solemnitáte lætíficas: concéde propítius; ut cujus natalítia cólimus, virtútem quoque passiónis imitémur.
 $Per Dominum
 
@@ -30,7 +34,7 @@ $Per Dominum
 @:Responsory1o
 
 [Responsory1] (rubrica divino aut rubrica 1955)
-@Commune/C2
+@Commune/C2a
 
 [Responsory1o]
 R. Oránte sancto Cleménte, appáruit ei Agnus Dei, 
@@ -45,7 +49,7 @@ R. De sub cujus pede fons vivus emánat: flúminis ímpetus lætíficat civitát
 @:Responsory2o
 
 [Responsory2] (rubrica divino aut rubrica 1955)
-@Commune/C2
+@Commune/C2a
 
 [Responsory2o]
 R. Omnes una voce dixérunt: Ora pro nobis, sancte Clemens; 
@@ -60,7 +64,7 @@ R. Ut digni efficiámur promissiónibus Christi.
 @:Responsory3o
 
 [Responsory3] (rubrica divino aut rubrica 1955)
-@Commune/C2
+@Commune/C2a
 
 [Responsory3o]
 R. Dedísti, Dómine, habitáculum Mártyri tuo Cleménti in mari, in modum templi marmórei angélicis mánibus præparátum: 
@@ -92,9 +96,6 @@ Quibus concitátus Trajánus, misit illuc qui Cleméntem, alligáta ad ejus coll
 Clemens, Románus, discípulus beáti Petri, septem Urbis regiónes divísit septem notáriis, síngulas síngulis attríbuens, qui passiónes Mártyrum et res ab eis gestas, diligentíssime conquisítas, lítteris mandárent. Multa scripsit et ipse accuráte et salutáriter, quibus christiánam religiónem illustrávit. Cum autem doctrína ac vitæ sanctitáte multos ad Christi fidem convérteret, a Trajáno imperatóre relegátus est trans mare Pónticum in solitúdine urbis Chersónæ, in qua duo míllia Christianórum réperit, qui ab eódem Trajáno condemnáti fúerant. Cum multos ibi infidéles, ad Christi fidem convertísset, jussu ejúsdem imperatóris alligáta ad ejus collum ánchora, in mare præcipitátus, martýrio coronátus est. Ejus corpus, Nicoláo primo Pontífice Romam translátum, in ecclésia, quæ ejus nómine ántea fúerat dicáta, honorífice recónditum est.
 &teDeum
 
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-
 [Lectio7] (rubrica tridentina)
 Léctio sancti Evangélii secúndum Matthǽum
 !Matt 24:42-45
@@ -104,15 +105,12 @@ Homilía sancti Hilárii Epíscopi
 !Comment. in Matth. Can 26
 Ut ignorántiam illam diéi ómnibus táciti, non sine útilis siléntii ratióne esse scirémus, vigiláre nos Dóminus propter advéntum furis admónuit, et oratiónum assiduitáte deténtos ómnibus præceptórum suórum opéribus inhærére. Furem enim esse osténdit zábulum, ad detrahénda ex nobis spólia pervígilem, et córporum nostrórum dómibus insidiántem: ut ea incuriósis nobis, et somno déditis, consiliórum suórum atque illecebrárum jáculis perfódiat. Parátos ígitur esse nos cónvenit: quia diéi ignorátio inténtam sollicitúdinem suspénsæ exspectatiónis exágitet.
 
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
 [Lectio8] (rubrica tridentina)
 !Can 27
 Quisnam est fidélis servus et prudens, quem constítuit Dóminus super famíliam suam? Quamquam in commúne nos ad indeféssam vigilántiæ curam adhortétur: speciálem tamen pópuli princípibus, id est, epíscopis, in exspectatióne adventúque suo sollicitúdinem mandat. Hunc enim servum fidélem atque prudéntem, præpósitum famíliæ signíficat, cómmoda atque utilitátes commíssi sibi pópuli curántem. Qui si dicto áudiens, et præcéptis obédiens erit, id est, si doctrínæ opportunitáte et veritáte infírma confírmet, disrúpta consólidet, depraváta convértat, et verbum vitæ in æternitátis cibum aléndæ famíliæ dispéndat, atque hæc agens, hisque ímmorans deprehendátur: glóriam a Dómino tamquam dispensátor fidélis et víllicus útilis consequétur, et super ómnia bona constituétur; id est, in Dei glória collocábitur, quia nihil sit ultra, quod mélius sit.
 
 [Versum 0]
-@Commune/C2::s/N\./Clemens/
+@Commune/C2a::s/N\./Clemens/
 
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g

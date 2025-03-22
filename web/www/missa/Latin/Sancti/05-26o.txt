@@ -1,22 +1,19 @@
+[Officium]
+S. Eleutherii Papæ et Martyris
+
 [Rank]
-S. Eleutherii Papæ et Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C2;
+vide C2b;
 Gloria
-OPapaM=Eleuthérium;
 
-[Oratio]
-@Commune/C2c:Oratio:s/N\./Eleuthérii/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b
+[Name]
+Eleuthérii
+(sed communi Summorum Pontificum)
+Eleuthérium
+Secreta=Eleuthérii
+Postcommunio=Eleuthério
 
-[Secreta]
-@Commune/C2c:Secreta:s/N\./Eleuthérii/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b
-
-[Postcommunio]
-@Commune/C2a:Postcommunio:s/N\./Eleuthério/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b
+[Postcommunio] (nisi communi Summorum Pontificum)
+@Commune/C2a-1

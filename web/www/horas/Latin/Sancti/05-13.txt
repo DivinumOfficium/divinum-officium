@@ -1,8 +1,12 @@
-[Rank]
-S. Roberti Bellarmino Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Officium]
+S. Roberti Bellarmino Episcopi Confessoris et Ecclesiæ Doctoris
 
-[Rank] (rubrica innovata)
-S. Roberti Bellarmino Episcopi Confessoris et Ecclesiae Doctoris;;Duplex optional;;1.1;;vide C4a
+[Rank]
+;;Duplex;;3;;vide C4a
+(sed rubrica innovata)
+;;Duplex optional;;1.1;;vide C4a
+(sed rubrica monastica)
+;;Simplex;;1.1;;vide C4a
 
 [Rule]
 vide C4a;mtv

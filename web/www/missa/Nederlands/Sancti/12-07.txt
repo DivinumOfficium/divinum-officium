@@ -1,20 +1,11 @@
-[Rank]
-S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDa
-no Vigil1960
+[Officium]
+S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris
 
 [Name]
-Ambrose
+Ambrosius
 
 [Introitus]
 @Commune/C4a
-
-[Oratio]
-@Commune/C4a:Oratio:s/N\./Ambrosius/
 
 [Commemoratio Oratio]
 !Commemoratio Vigiliæ Immaculatæ Conceptionis
@@ -37,7 +28,7 @@ De Heer heeft gezworen en het zal Hem niet berouwen: Gij zijt priester voor eeuw
 @Commune/C4a
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
 Almachtige, eeuwige God, mogen de gaven, die wij uw majesteit hebben opgedragen, door de voorspraak van uw heilige belijder en bisschop Ambrosius onze eeuwige zaligheid ten goede komen.
@@ -49,7 +40,7 @@ Moge, Heer, het gebed van de onbevlekte Moeder van God onze offergaven in uw goe
 $Qui tecum
 
 [Communio]
-@Commune/C2c
+@Commune/C2
 
 [Postcommunio]
 Bij het ontvangen van de geheimen van onze zaligheid vragen wij U, almachtige God, laat het gebed van uw heilige belijder en bisschop Ambrosius, op wiens feest wij dit offer uw Majesteit brengen, ons overal tot steun zijn.

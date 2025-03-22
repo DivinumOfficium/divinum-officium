@@ -1,15 +1,13 @@
-[Rank]
-S. Clementis Papae et Martyris;;Duplex;;3;;vide C4b
-
-[Rule]
-OPapaM=Cleméntem;
-vide C4b;
-Gloria
+[Officium]
+S. Clemente, Papa e Mártir
 
 [Comment]
 # 23 XI – S. Clemente, Papa e Mártir
 ! 3 classe
 ! Paramentos vermelhos
+
+[Name]
+Clemente
 
 [Introitus]
 !Is 59:21; 56:7
@@ -18,9 +16,6 @@ v. Disse o Senhor: Minhas palavras, que pus na vossa boca, não cessarão de est
 Bem-aventurado o varão que teme o Senhor: e cujo zelo é ardente no cumprimento dos seus mandamentos.
 &Gloria
 v. Disse o Senhor: Minhas palavras, que pus na vossa boca, não cessarão de estar nos vossos lábios; e então os dons, que apresentardes nos meus altares, ser-me-ão agradáveis.
-
-[Oratio]
-@Commune/C4b:Oratio
 
 [Lectio]
 @Tempora/Pent23-0:Lectio
@@ -34,11 +29,5 @@ v. Disse o Senhor: Minhas palavras, que pus na vossa boca, não cessarão de est
 [Offertorium]
 @Commune/C4b:Offertorium
 
-[Secreta]
-@Commune/C4b:Secreta
-
 [Communio]
 @Commune/C4b:Communio
-
-[Postcommunio]
-@Commune/C4b:Postcommunio

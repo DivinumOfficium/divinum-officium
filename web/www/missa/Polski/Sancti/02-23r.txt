@@ -1,9 +1,5 @@
-[Rank]
-S. Petri Damiani;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4;
-Gloria
+[Officium]
+Św. Piotra Damjana Biskupa i Wyznawcy
 
 [Comment]
 # 23 II – Św. Piotra Damiana, Biskupa, Wyznawcy i Doktora Kościoła
@@ -12,7 +8,7 @@ Gloria
 Św. Piotr urodził się w Rawennie w r. 1007. Z wdzięczności do brata, który ułatwił mu studia przybrał także jego imię Damian. Wstąpił do klasztoru Kamedułów w Fonte Avellana. Wybrany przeorem, z wielką gorliwością reformował życie zakonne. W r. 1057 został mianowany kardynałem-biskupem Ostii i odtąd współpracuje z papieżami w dziele reformy Kościoła. Zmarł w podróży 22 lutego 1072 r. Zostawił wiele listów, mów oraz innych pism.
 
 [Name]
-Petre
+Piotra
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -36,13 +32,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C4a:Offertorium
 
-[Secreta]
-Panie, niech nam nie zabraknie serdecznej modlitwy świętego Piotra, Twego Biskupa i Doktora, która zaleci Tobie naszą ofiarę i wyjedna nam Twoje przebaczenie.
-$Per Dominum.
-
 [Communio]
 @Commune/C4a:Communio
-
-[Postcommunio]
-Prosimy Cię, Panie, niech święty Piotr, Twój Biskup i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
-$Per Dominum

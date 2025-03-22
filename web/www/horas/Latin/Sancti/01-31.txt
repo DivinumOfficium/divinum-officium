@@ -1,8 +1,10 @@
-[Rank]
-S. Joannis Bosco Confessoris;;Duplex;;3;;vide C5
+[Officium]
+S. Joannis Bosco Confessoris
 
-[Rank] (rubrica 1963)
-S. Joannis Bosco Confessoris;;Memoria;;1.1;;vide C5
+[Rank]
+;;Duplex;;3;;vide C5
+(sed rubrica 1963)
+;;Memoria;;1.1;;vide C5
 
 [Rank] (rubrica cisterciensis)
 S. Joannis Bosco, Confessoris (1965);;Commemoratio;;1;;vide C5

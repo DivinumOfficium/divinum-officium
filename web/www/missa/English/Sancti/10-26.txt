@@ -1,10 +1,5 @@
-[Rank]
-St. Evaristus, Pope and Martyr;;Simplex;;1.2;;vide C4b
+[Officium]
+St. Evaristus, Pope and Martyr
 
-[Rule]
-OPapaM=Evaristus;
-vide C4b;
-Suffragium=Maria3;Papa;Ecclesia;;
-
-[Oratio]
-@Commune/C2c:Oratio:s/N\./Evaristus/
+[Name]
+Evaristus

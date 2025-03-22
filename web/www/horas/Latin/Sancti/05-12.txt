@@ -1,11 +1,13 @@
-[Rank]
-Ss. Nerei, Achillei et Domitillæ Virg. atque Pancratii Martyrum;;Semiduplex;;2.2;;vide C3
+[Officium]
+Ss. Nerei, Achillei et Domitillæ Virg. atque Pancratii Martyrum
 
-[Rank] (rubrica 1570 aut rubrica 1930 aut rubrica 1963)
-Ss. Nerei, Achillei et Pancratii Martyrum;;Simplex;;1.1;;vide C3
+[Rank]
+;;Semiduplex;;2.2;;vide C3a-1
+(sed rubrica 1570 aut rubrica 1930 aut rubrica 1963)
+;;Simplex;;1.1;;vide C3a-1
 
 [Rule]
-vide C3;
+vide C3a-1;
 9 lectiones
 
 [Oratio]

@@ -1,16 +1,13 @@
-[Rank]
-S. Gregorii VII Papae Confessoris;;Duplex;;3;;vide C4b
-
-[Rule]
-vide C4b;
-9 lectiones
-CPapaM=Urbánum;
-Gloria
+[Officium]
+S. Gregório VII, Papa e Confessor
 
 [Comment]
 # 25 V – S. Gregório VII, Papa e Confessor
 ! 3 classe
 ! Paramentos brancos
+
+[Name]
+Gregório
 
 [Introitus]
 @Commune/C4b:Introitus
@@ -31,11 +28,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C4b:Offertorium
 
-[Secreta]
-@Commune/C4:Secreta
-
 [Communio]
 @Commune/C4b:Communio
-
-[Postcommunio]
-@Commune/C4:Postcommunio

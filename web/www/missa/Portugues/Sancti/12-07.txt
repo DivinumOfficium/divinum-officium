@@ -1,11 +1,5 @@
-[Rank]
-S. Ambrosii Episcopi Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDa
-no Vigil1960
+[Officium]
+S. Ambrósio. Bispo Confessor e Doutor
 
 [Comment]
 # 07 XII – S. Ambrósio. Bispo Confessor e Doutor
@@ -13,13 +7,10 @@ no Vigil1960
 ! Paramentos brancos
 
 [Name]
-Ambrose
+Ambrósio
 
 [Introitus]
 @Commune/C4a:Introitus
-
-[Oratio]
-@Commune/C4a:Oratio
 
 [Lectio]
 @Commune/C4a:Lectio

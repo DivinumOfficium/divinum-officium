@@ -1,5 +1,10 @@
+[Officium]
+SS. Apostolorum Petri et Pauli
+
 [Rank]
-SS. Apostolorum Petri et Pauli;;Duplex I classis cum octava communi;;7;;ex C1
+;;Duplex I classis cum octava communi;;6.5;;ex C1
+(sed rubrica 196)
+;;Duplex I classis;;6;;ex C1
 
 [Rule]
 vide C1;
@@ -42,7 +47,8 @@ Hóstias, Dómine, quas nómini tuo sacrándas offérimus, apostólica prosequá
 $Per Dominum
 
 [Communio]
-@Commune/C4b
+@Commune/Coronatio
 
 [Postcommunio]
-@Sancti/06-28r
+Quos cœlésti, Dómine, aliménto satiásti: apostólicis intercessiónibus ab omni adversitáte custódi.
+$Per Dominum

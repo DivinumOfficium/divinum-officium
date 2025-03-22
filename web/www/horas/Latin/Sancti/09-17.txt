@@ -1,8 +1,10 @@
-[Rank]
-Impressionis Stigmatum S. Francisci;;Duplex;;3;;vide C5
+[Officium]
+Impressionis Stigmatum S. Francisci
 
-[Rank] (rubrica 196)
-Impressionis Stigmatum S. Francisci;;Simplex;;1.1;;vide C5
+[Rank]
+;;Duplex;;3;;vide C5
+(sed rubrica 196)
+;;Simplex;;1.1;;vide C5
 
 [Rule]
 vide C5;
@@ -68,10 +70,10 @@ Francíscus singulári privilégio retroáctis sæculis non concésso insignítu
 &teDeum
 
 [Lectio7]
-@Commune/C2:Lectio7 in 4 loco
+@Commune/C2:Lectio7 in 2 loco
 
 [Lectio8]
-@Commune/C2:Lectio8 in 4 loco
+@Commune/C2:Lectio8 in 2 loco
 
 [Responsory8]
 R. Mihi absit gloriari, nisi in cruce Dómini nostri Jesu Christi; 
@@ -82,7 +84,7 @@ R. Per quem mihi mundus crucifíxus est, et ego mundo.
 R. Per quem mihi mundus crucifíxus est, et ego mundo.
 
 [Lectio9]
-@Commune/C2:Lectio9 in 4 loco
+@Commune/C2:Lectio9 in 2 loco
 
 [Hymnus Laudes]
 @Commune/C5::s/Migrávit inter sidera/Christi recépit Stígmata/

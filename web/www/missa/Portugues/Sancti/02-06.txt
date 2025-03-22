@@ -1,14 +1,13 @@
-[Rank]
-S. Titi Episc. et Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-vide C4;
-Gloria
+[Officium]
+S. Titi Episc. et Confessoris
 
 [Comment]
 # 06 II – S. Tito, Bispo e Confessor
 ! 3 classe
 ! Paramentos brancos
+
+[Name]
+Tito
 
 [Oratio]
 Ó Deus, que ornastes o B. Tito, vosso Confessor e Pontífice, com as virtudes apostólicas, concedei-nos, pelos seus méritos e intercessão, que vivendo neste mundo justa e piamente, mereçamos alcançar a pátria celestial.
@@ -21,7 +20,4 @@ $Per Dominum.
 @Sancti/04-25:Evangelium
 
 [Offertorium]
-@Commune/C2b
-
-[Secreta]
-@Commune/C4
+@Commune/C2-1

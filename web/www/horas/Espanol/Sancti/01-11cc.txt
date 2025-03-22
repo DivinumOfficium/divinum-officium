@@ -1,9 +1,5 @@
-[Rank]
-San Higinio, Papa y Mártir;;Simplex;;1.1;;vide C2
+[Officium]
+San Higinio, Papa y Mártir
 
-[Rule]
-vide C2;
-OPapaM=Higinio;
-
-[Oratio] (rubrica tridentina)
-@Commune/C2::s/N\./Higinio/
+[Name]
+Higinio

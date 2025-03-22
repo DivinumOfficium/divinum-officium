@@ -1,20 +1,16 @@
-[Rank]
-S. Thomae Episcopi et Martyris;;Duplex;;3;;vide C2
-
-[Rank] (rubrica 1570 aut 1888)
-S. Thomae Episcopi et Martyris;;Semiduplex;;2;;vide C2
-
-[Rule]
-vide C2;
-Gloria
-Credo
-Prefatio=Nat
+[Officium]
+Sv. Tomáše z Canterbury, biskupa a mučedníka
 
 [Comment]
 # Sv. Tomáše z Canterbury, biskupa a mučedníka
 ! Připomínka
 ! Barva červená
 ✝ 1170
+
+[Name]
+Tomáš
+Secreta=Tomáše
+Postcommunio=Tomáše
 
 [Introitus]
 v. Radujme se všichni v Pánu, oslavujíce svátek na počest svatého Tomáše mučedníka, z jehož vitězného utrpení radují se Anděléva chválí Syna Božího.
@@ -51,10 +47,6 @@ V. Já jsem pastýř dobrý, a znám ovce své a znají mne mé. Aleluja.
 !Ž 20,4-5
 Položil jsi, Pane, na hlavu jeho korunu z kamení drahého; života žádal od tebe, i udělil jsi mu, aleluja.
 
-[Secreta]
-Dary tobě, Pane, obětované, posvěť a usmířen jimi na přímluvu svatého Tomáše, mučedníka svého a biskupa, na nás milostivě pohleď.
-$Per Dominum
-
 [Commemoratio Secreta]
 !Připomínka Narození Páně
 @Sancti/12-25m3:Secreta
@@ -62,10 +54,6 @@ $Per Dominum
 [Communio]
 !J 10,14
 Já jsem pastýř dobrý, a znám ovce své a znají mne mé.
-
-[Postcommunio]
-Toto přijímání, Pane, nechť nás očistí od hříchů a na přímluvu svatého Tomáše, mučedníka tvého a biskupa, nechť nás učiní účastny nebeského léku.
-$Per Dominum
 
 [Commemoratio Postcommunio]
 !Připomínka Narození Páně

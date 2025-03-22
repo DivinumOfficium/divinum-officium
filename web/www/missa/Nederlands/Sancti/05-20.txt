@@ -1,12 +1,8 @@
-[Rank]
-S. Bernardini Senensis Confessoris;;Semiduplex;;2.1;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+S. Bernardini Senensis Confessoris
 
 [Introitus]
-@Commune/C4c
+@Commune/C5b
 
 [Oratio]
 Heer Jezus, Gij hebt uw heilige belijder Bernardinus een buitengewone liefde voor uw heilige Naam gegeven. Wij vragen U, stort ons om zijn verdiensten en op zijn voorspraak genadig de geest van uw liefde in.
@@ -22,16 +18,10 @@ $Qui vivis
 @Commune/C5
 
 [Evangelium]
-@Commune/C4c
+@Commune/C5b
 
 [Offertorium]
-@Commune/C2c
-
-[Secreta]
-@Commune/C5
+@Commune/C2
 
 [Communio]
-@Commune/C4d
-
-[Postcommunio]
-@Commune/C5
+@Commune/C4-1

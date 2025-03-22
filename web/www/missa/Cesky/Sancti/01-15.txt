@@ -1,9 +1,5 @@
-[Rank]
-S. Pauli Primi Eremitae et Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+S. Pauli Primi Eremitae et Confessoris
 
 [Comment]
 # Sv. Pavla, prvního poustevníka a vyznavače
@@ -13,6 +9,9 @@ Gloria
 
 Připomínka sv. Maura
 
+[Name]
+Pavla
+
 [Introitus]
 !Ž 91,13-14
 v. Spravedlivý jako palma pokvete, jako cedr na Libanu poroste; vštípen v domě Páně, v síních domu Boha našeho.
@@ -20,10 +19,6 @@ v. Spravedlivý jako palma pokvete, jako cedr na Libanu poroste; vštípen v dom
 Sluší oslavovati Pána, opěvovati jméno tvé, Svrchovaný.
 &Gloria
 v. Spravedlivý jako palma pokvete, jako cedr na Libanu poroste; vštípen v domě Páně, v síních domu Boha našeho.
-
-[Oratio]
-Bože, jenž nás svatého Pavla, vyznavače svého, výroční slavností oblažuješ, popřej milostivě, abychom, jehož narozeniny slavíme,napodobovali také skutky.
-$Per Dominum
 
 [Lectio]
 Čtení z listu sv. Apoštola Pavla k Filippenským
@@ -46,9 +41,6 @@ Za onoho času promluviv Ježíš řekl: „Velebím tebe, Otče, Pane nebe i ze
 [Offertorium]
 !Ž 20,2-3
 Z moci tvé, Pane, radovati se bude spravedlivý a nad spásou tvou jásati bude velice; přání srdce jeho jsi mu vyplnil.
-
-[Secreta]
-@Commune/C5:Secreta
 
 [Communio]
 !Ž 63,11

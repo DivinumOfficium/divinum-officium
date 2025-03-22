@@ -1,9 +1,5 @@
-[Rank]
-S. Agapiti Martyris;;Simplex;;1.1;;vide C2
-
-[Rule]
-vide C2;
-Gloria
+[Officium]
+S. Agapito, Mártir
 
 [Comment]
 # 18 VIII – S. Agapito, Mártir
@@ -15,30 +11,30 @@ S. Roque, Confessor
 ! Paramentos brancos
 
 [Introitus]
-@Commune/C2a:Introitus
+@Commune/C2a-1:Introitus
 
 [Oratio]
 Que a vossa Igreja, ó Deus, rejubile com a confiança que lhe dão os sufrágios do B. Agapito, vosso Mártir, e que pelas suas gloriosas preces persevere na piedade e se conserve na paz.
 $Per Dominum
 
 [Lectio]
-@Commune/C2a:Lectio
+@Commune/C2-1:Lectio
 
 [Graduale]
-@Commune/C2a:Graduale
+@Commune/C2-1:Graduale
 
 [Evangelium]
 @Sancti/08-10:Evangelium
 
 [Offertorium]
-@Commune/C2a:Offertorium
+@Commune/C2-1:Offertorium
 
 [Secreta]
 Recebei, Senhor, as ofertas que Vos apresentamos na festa daquele por cuja protecção esperamos ser livres.
 $Per Dominum
 
 [Communio]
-@Commune/C2a:Communio
+@Commune/C2-1:Communio
 
 [Postcommunio]
 Saciastes, Senhor, a vossa família com os sacrossantos dons; e, Vos suplicamos, fortalecei-a sempre pela intercessão daquele cuja festa celebramos.

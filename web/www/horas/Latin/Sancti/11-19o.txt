@@ -1,12 +1,18 @@
+[Officium]
+S. Pontiani Papæ et Martyris
+
 [Rank]
-S. Pontiani Papæ et Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C4;
-OPapaM=Pontiánum;
+vide C2b;
 
-[Oratio]
-@Commune/C2::s/N\./Pontiáni/
+[Name]
+Pontiáni
+(sed communi Summorum Pontificum)
+Pontiánum
+Secreta=Pontiáni
+Postcommunio=Pontiáno
 
 [Lectio93]
 Pontianus, Romanus, præfuit Ecclésiæ Alexandro imperatóre; qui sanctum Pontificem, propter christianæ fidei confessiónem, in Sardiniam insulam cum Hippolyto presbytero relegávit. Ubi is, pro Christi fide multis calamitátibus afflíctus, tertio Kalendas Novembris e vita migrávit. Ejus corpus, Fabiáno Pontifice, cum clero Romam delátum, in cœmeterio Callísti via Appia sepelítur. Sedit annos quatuor, menses quatuor, dies viginti quinque. Fecit ordinatiónes duas mense Decembri, quibus creávit presbyteros sex, diaconos quinque, episcopos per diversa loca sex.

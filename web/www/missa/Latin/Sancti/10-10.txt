@@ -1,16 +1,19 @@
+[Officium]
+S. Francisci Borgiæ Confessoris
+
 [Rank]
-S. Francisci Borgiæ Confessoris;;Semiduplex;;2.2;;vide C4c
+;;Semiduplex;;2.2;;vide C5b
 
 [Rule]
-vide C4c;
+vide C5b;
 Gloria
 
 [Oratio]
-Dómine Jesu Christe, veræ humilitátis et exémplar et præmium: quǽsumus; ut, sicut beátum Francíscum in terréni honóris contémptu imitatórem tui gloriósum effecísti, ita nos ejúsdem imitatiónis et glóriæ tríbuas esse consórtes:
-$Qui vivis.
+Dómine Jesu Christe, veræ humilitátis et exémplar et prǽmium: quǽsumus; ut, sicut beátum Francíscum in terréni honóris contémptu imitatórem tui gloriósum effecísti, ita nos eiúsdem imitatiónis et glóriæ tríbuas esse consórtes:
+$Qui vivis
 
 [Secreta]
-@Commune/C4c:Secreta:s/N\. Abbas/Francíscus/
+@Commune/C5b:Secreta:s/N\. Abbas/Francíscus/
 
 [Postcommunio]
-@Commune/C4c:Postcommunio:s/N\. Abbas/Francíscus/
+@Commune/C5b:Postcommunio:s/N\. Abbas/Francíscus/

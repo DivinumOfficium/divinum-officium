@@ -1,17 +1,20 @@
+[Officium]
+S. Antonii Abbatis
+
 [Rank]
-S. Antonii Abbatis;;Duplex;;3;;vide C5
+;;Duplex;;3;;vide C5b
 
 [Rank] (rubrica cisterciensis)
 S. Antonii Abbatis;;Duplex;;1.2;;vide C5
 
 [Rule]
-vide C5;
+vide C5b;
 9 lectiones
 (sed rubrica cisterciensis) 
 3 lectiones
 
-[Oratio]
-@Commune/C5:Oratio1:s/N\./Antónii/
+[Name]
+Antónii
 
 [Lectio4]
 Antonius Ægyptius, nobílibus et christiánis paréntibus natus, quibus adoléscens orbátus est, cum ingréssus ecclésiam ex Evangelio audivísset: Si vis perfectus esse, vade, et vende ómnia quæ habes, et da paupéribus; tamquam ea sibi dicta essent, sic Christo Dómino obtemperándum existimávit. Itaque, véndita re familiari, pecúniam omnem paupéribus distríbuit. Quibus solutus impedimentis, cæléstis vitæ genus in terris cólere instituit. Sed cum in periculósum illud certamen descenderet, ad fidei præsidium, quo erat armatus, adhibéndum sibi putávit subsidium reliquárum virtútum; quarum tanto studio incénsus fuit, ut, quemcúmque vidéret áliqua virtútis laude excellentem, illum imitari studéret.

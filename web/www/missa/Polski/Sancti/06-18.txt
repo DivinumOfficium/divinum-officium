@@ -1,9 +1,5 @@
-[Rank]
-S. Ephraem Syri Confessoris et Ecclesiae Doctorem;;Duplex;;3;;vide C5a
-
-[Rule]
-vide C5a;
-Gloria
+[Officium]
+Św. Efrema Syryjczyka Wyznawcy i Doktora Kościoła
 
 [Comment]
 # 18 VI – Św. Efrema, Diakona, Wyznawcy i Doktora Kościoła
@@ -13,8 +9,13 @@ Gloria
 
 Msza wspólna nr 20 In medio, z wyjątkiem kolekty.
 
+Śś. Marka i Marcelina, Męczenników
+! Wspomnienie
+! Szaty czerwone
+Święci Marek i Marcelin ponieśli śmierć męczeńską w Rzymie w III wieku.
+
 [Name]
-Ephraem
+Efrema
 
 [Introitus]
 @Commune/C4a:Introitus
@@ -35,11 +36,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C4a:Offertorium
 
-[Secreta]
-@Commune/C4a:Secreta
-
 [Communio]
 @Commune/C4a:Communio
-
-[Postcommunio]
-@Commune/C4a:Postcommunio

@@ -1,13 +1,17 @@
+[Officium]
+S. Felicis de Valois Confessoris
+
 [Rank]
-S. Felicis de Valois Confessoris;;Duplex;;3;;vide C5b
+;;Duplex;;3;;vide C5-1
 
 [Rule]
-vide C5b;
+vide C5-1;
 Gloria
+
+[Name]
+Felícem
+Postcommunio=Felíce
 
 [Oratio]
 Deus, qui beátum Felícem Confessórem tuum ex erémo ad munus rediméndi captívos cǽlitus vocáre dignátus es: præsta, quǽsumus; ut per grátiam tuam ex peccatórum nostrórum captivitáte, eius intercessióne, liberáti, ad cæléstem pátriam perducámur.
 $Per Dominum
-
-[Postcommunio]
-@Commune/C5b::s/N\./Félice/

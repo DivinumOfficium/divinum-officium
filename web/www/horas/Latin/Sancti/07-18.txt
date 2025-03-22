@@ -1,8 +1,10 @@
-[Rank]
-S. Camilli de Lellis Confessoris;;Duplex;;3;;vide C5
+[Officium]
+S. Camilli de Lellis Confessoris
 
-[Rank] (rubrica innovata)
-S. Camilli de Lellis Confessoris;;Duplex optional;;2;;vide C5
+[Rank]
+;;Duplex;;3;;vide C5
+(sed rubrica innovata)
+;;Duplex optional;;2;;vide C5
 
 [Rule]
 vide C5;mtv

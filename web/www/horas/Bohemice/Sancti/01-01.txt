@@ -1,18 +1,8 @@
 [Rank]
 In Circumcisione Domini;;Duplex II classis;;5.1;;ex Sancti/12-25
 
-[Rank1960]
+[Rank] (rubrica 196)
 Die Octavae Nativitatis Domini;;Duplex I classis;;6;;ex Sancti/12-25
-
-[RankNewcal]
-Die Octavae Nativitatis Domini;;Duplex I classis;;6;;ex Sancti/12-25
-
-[Rule]
-ex Sancti/12-25;
-Psalmi Dominica
-Antiphonas Horas
-9 lectiones 1960
-no commemoratio
 
 [Ant Vespera]
 Jak podivuhodná směna! * Stvořitel lidského rodu přijal oduševnělé tělo a ráčil se naroditi z Panny; a tím, že se bez mužského semene stal člověkem, štědře nám nadělil své Božství.;;109
@@ -20,11 +10,6 @@ Když ses narodil, * to snad ani nelze říci: z Panny! Tehdy se naplnila Písma
 V keři, který uzřel Mojžíš * ohněm nestrávený, poznáváme tvé neporušené a chvályhodné panenství. Boží Rodičko, přimlouvej se za nás.;;121
 Vykvetl kořen Jesse, * vyšla hvězda z Jakuba. Panna porodila Spasitele, a my tě chválíme, Bože náš.;;126
 Hle, Maria * nám zrodila Spasitele. Když jej Jan uviděl, zvolal a řekl: „Hle, Beránek Boží, hle ten, který na sebe vzal hříchy světa, alleluja.“;;147
-
-[Capitulum Laudes]
-!Titus 2:11-12
-v. Zjevila se milost Boha, našeho Spasitele, všem lidem, který nás naučila zavrhnout bezbožnost a světské touhy, a střízlivě, spravedlivě a zbožně žít v tomto světě.
-$Deo gratias
 
 [Ant 1]
 Pro svou nesmírnou * lásku, kterou nás miloval Bůh, poslal svého Syna v podobě hříšného těla, alleluja.
@@ -154,6 +139,11 @@ R. She fed the Saviour of the world, The King of Angel hosts above, Jesus, our R
 [Lectio9]
 Among all that are born of women the Lord Jesus Christ stood alone in holiness. Fresh from His immaculate Birth, He felt no contagion from human corruption, and His heavenly Majesty drove it away. If we are to follow the letter and say that every male that openeth the womb is holy, how shall we explain that so many have been unrighteous? Was Ahab holy? Were the false prophets holy? Were they holy on whom Elijah justly called down fire from heaven? But He to Whom the sacred commandment of the law of God is mystically directed is the Holy One of Israel; Who also alone hath opened the secret womb of His holy Virgin-bride the Church, filling her with a sinless fruitfulness to give birth to Christian souls.
 &teDeum
+
+[Capitulum Laudes]
+!Titus 2:11-12
+v. Zjevila se milost Boha, našeho Spasitele, všem lidem, který nás naučila zavrhnout bezbožnost a světské touhy, a střízlivě, spravedlivě a zbožně žít v tomto světě.
+$Deo gratias
 
 [Ant 2]
 Podivuhodné tajemství * nám bylo dnes ukázáno: obnoveny jsou přirozenosti, Bůh se stal člověkem: tím, co byl, také zůstal, a čím nebyl, to na sebe vzal, a nestrpěl smísení <i>božské a lidské podstaty</i>, ani rozdělení.

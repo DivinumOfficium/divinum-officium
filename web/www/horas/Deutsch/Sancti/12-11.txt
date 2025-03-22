@@ -1,21 +1,10 @@
-[Rank]
-Hl. Damasus, Papst und Bekenner;;Semiduplex;;2.5;;vide C4
+[Officium]
+Hl. Damasus, Papst und Bekenner
 
-[Rank] (rubrica 196)
-Hl. Damasus, Papst und Bekenner;;Duplex;;3;;vide C4
+[Name]
+Damasus
 
-[Rank] (rubrica innovata)
-Hl. Damasus, Papst und Bekenner;;Semiduplex;;2.5;;vide C4
-
-[Rule]
-vide C4;
-9 lectiones;
-OPapaC=Damasus;
-Doxology=Nat
-Omit Preces
-Commemoratio3
-
-[Oratio]
+[Oratio] (nisi communi Summorum Pontificum)
 Erhöre, o Herr, unser Flehen, und auf die Fürsprache deines heiligen Bekenners und Bischofs Damasus gewähre und gnädigst Nachsicht und Segen.
 $Per Dominum
 

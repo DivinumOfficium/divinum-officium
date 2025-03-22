@@ -1,15 +1,5 @@
-[Rank]
-In Commemoratione Sancti Pauli Apostoli;;Duplex majus;;4;;ex C1
-
-[Rule]
-ex C1;
-Gloria
-CredoDA
-Prefatio=Apostolis
-Sub unica concl
-
-[Introitus]
-@Sancti/01-25
+[Officium]
+In Commemoratione Sancti Pauli Apostoli
 
 [Oratio]
 God, Gij hebt een menigte heidenen door de prediking van uw heilige apostel Paulus onderwezen. Wij vragen U, doe ons, die zijn geboortefeest vieren, de macht van zijn voorspraak bij U ondervinden.
@@ -48,9 +38,6 @@ V. Intercéde pro nobis ad Deum, qui te elégit.
 [Evangelium]
 @Sancti/06-11
 
-[Offertorium]
-@Sancti/01-25
-
 [Secreta]
 Heilig, Heer, door de gebeden van uw apostel Paulus de gaven van uw volk, opdat, wat U aangenaam is reeds door uw schepping, nog aangenamer wordt door de voorbede van onze voorspreker.
 $Per Dominum
@@ -61,7 +48,7 @@ Wij vragen U, Heer, moge de voorbede van de heilige apostel Petrus voor de gebed
 $Per Dominum
 
 [Communio]
-@Commune/C5b
+@Commune/C5-1
 
 [Postcommunio]
 Na het ontvangen van de Sacramenten bidden wij U, o Heer, door de voorspraak van uw heilige apostel Paulus, dat ons tot genezing mag strekken, wat wij voor zijn verheerlijking vieren.

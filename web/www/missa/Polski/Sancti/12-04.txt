@@ -1,10 +1,5 @@
-[Rank]
-S. Petri Chrysologi Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDA
+[Officium]
+Św. Piotra Chryzologa Biskupa, Wyznawcy i Doktora Kościoła
 
 [Comment]
 # 04 XII – Św. Piotra Chryzologa, Biskupa, Wyznawcy i Doktora Kościoła
@@ -13,7 +8,8 @@ CredoDA
 Niepospolity dar wymowy zjednał św. Piotrowi przydomek «Chryzologa», czyli «Złotoustego». Widzenie papieża Sykstusa III przyczyniło się do wyniesienia św. Piotra na stolicę biskupią w Rawennie w r. 433. Wspólnie z papieżem Leonem I bronił dogmatu o dwu naturach w Chrystusie przeciw monofizytom. Umarł w roku 450.
 
 [Name]
-Petre Chrysologe
+Piotra Chryzologa
+Postcommunio=Piotr Chryzolog
 
 [Introitus]
 @Commune/C4a:Introitus

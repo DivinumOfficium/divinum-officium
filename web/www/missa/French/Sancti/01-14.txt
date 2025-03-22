@@ -1,14 +1,15 @@
-[Rank]
-S. Hilarii Episcopi Confessoris Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDa
+[Officium]
+S. Hilaire Evêque et Confesseur Docteur de l'Eglise
+(sed rubrica 1570 aut rubrica 1617)
+S. Hilaire Evêque et Confesseur 
 
 [Name]
-Hilari
+Hilaire
 
-[Oratio]
+[Oratio] (nisi rubrica 1570 nisi rubrica 1617)
+Ô Dieu qui avez fait à votre peuple la grâce d’avoir le bienheureux Hilaire pour ministre du salut éternel, faites, nous vous en prions, que nous méritions d’avoir pour intercesseur dans les cieux celui qui nous a donné sur terre la doctrine de vie.
+$Per Dominum
+
+[Oratio] (rubrica 1570 aut rubrica 1617)
 Ô Dieu qui avez fait à votre peuple la grâce d’avoir le bienheureux Hilaire pour ministre du salut éternel, faites, nous vous en prions, que nous méritions d’avoir pour intercesseur dans les cieux celui qui nous a donné sur terre la doctrine de vie.
 $Per Dominum

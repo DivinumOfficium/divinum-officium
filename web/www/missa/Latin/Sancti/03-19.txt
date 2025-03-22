@@ -1,8 +1,12 @@
-[Rank]
-S. Joseph Sponsi B.M.V. Confessoris;;Duplex I classis;;6;;
+[Officium]
+S. Joseph Sponsi B.M.V. Confessoris
 
-[Rank] (rubrica 1570)
-S. Joseph Sponsi B.M.V. Confessoris;;Duplex;;3;;
+[Rank]
+;;Duplex I classis;;6.1;;
+(sed rubrica 1570)
+;;Duplex;;3;;
+(sed rubrica 1960 aut rubrica innovata)
+;;Duplex I classis;;6;;
 
 [Rule]
 Gloria
@@ -10,14 +14,14 @@ Credo
 Prefatio=Joseph=Festivitáte;
 
 [Introitus]
-@Commune/C5b
+@Commune/C5-1
 
 [Oratio]
 Sanctíssimæ Genetrícis tuæ Sponsi, quǽsumus, Dómine, méritis adjuvémur: ut, quod possibílitas nostra non óbtinet, ejus nobis intercessióne donétur:
 $Qui vivis
 
 [Lectio]
-@Commune/C4c
+@Commune/C5-1
 
 [Graduale]
 !Ps 20:4-5
@@ -43,7 +47,7 @@ Sequéntia ++ sancti Evangélii secúndum Matthǽum
 Cum esset desponsáta Mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu Sancto. Joseph autem, vir ejus, cum esset justus et nollet eam tradúcere, vóluit occúlte dimíttere eam. Hæc autem eo cogitánte, ecce, Angelus Dómini appáruit in somnis ei, dicens: Joseph, fili David, noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu Sancto est. Páriet autem fílium, et vocábis nomen ejus Jesum: ipse enim salvum fáciet pópulum suum a peccátis eórum.
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
 Débitum tibi, Dómine, nostræ réddimus servitútis, supplíciter exorántes: ut, suffrágiis beáti Joseph, Sponsi Genetrícis Fílii tui Jesu Christi, Dómini nostri, in nobis tua múnera tueáris, ob cujus venerándam festivitátem laudis tibi hóstias immolámus.

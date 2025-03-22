@@ -1,39 +1,17 @@
-[Rank]
-S. Vincentii a Paulo Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5
-Gloria
+[Officium]
+S. Vicente de Paulo, Confessor
 
 [Comment]
 # 19 VII – S. Vicente de Paulo, Confessor
 ! 3 classe
 ! Paramentos brancos
 
-[Introitus]
-@Commune/C5b:Introitus
+[Name]
+Vicente
 
 [Oratio]
 Ó Deus, que ornastes o B. Vicente com a coragem e as virtudes apostólicas para a evangelização dos pobres e para promover o decoro da ordem eclesiástica, permiti, Vos imploramos, que, honrando os seus piedosos méritos, sejamos instruídos com o exemplo de suas virtudes.
 $Per Dominum
 
-[Lectio]
-@Commune/C5b:Lectio
-
-[Graduale]
-@Commune/C5b:Graduale
-
 [Evangelium]
 @Sancti/04-25:Evangelium
-
-[Offertorium]
-@Commune/C5b:Offertorium
-
-[Secreta]
-@Commune/C5b:Secreta
-
-[Communio]
-@Commune/C5b:Communio
-
-[Postcommunio]
-@Commune/C5b:Postcommunio

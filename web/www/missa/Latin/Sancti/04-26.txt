@@ -1,34 +1,16 @@
+[Officium]
+SS. Cleti et Marcellini Summorum Pontificum et Martyrum
+
 [Rank]
-SS. Cleti et Marcellini Paparum et Martyrum;;Semiduplex;;2.5;;vide C4b
+;;Semiduplex;;2.2;;vide C3b
+(sed rubrica 1960)
+;;Semiduplex;;2.5;;vide C3b
 
 [Rule]
-OPapæM=Cletum et Marcellínum;
-vide C4b;
+vide C3b;
 Gloria
 
-[Introitus]
-@Commune/C4b
-
-[Oratio]
-@Sancti/04-26t:Oratio
-
-[Lectio]
-@Commune/C4b
-
-[Graduale]
-@Commune/C4b
-
-[Evangelium]
-@Commune/C4b
-
-[Offertorium]
-@Commune/C4b
-
-[Secreta]
-@Commune/C4b
-
-[Communio]
-@Commune/C4b
-
-[Postcommunio]
-@Commune/C4b
+[Name]
+Cleti et Marcellíni
+(sed communi Summorum Pontificum)
+Cletum et Marcellínum

@@ -1,10 +1,5 @@
-[Rank]
-S. Basilii Magni Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a
-Gloria
-CredoDA
+[Officium]
+S. Basílio Magno, Bispo Confessor e Doutor
 
 [Comment]
 # 14 VI – S. Basílio Magno, Bispo Confessor e Doutor
@@ -12,14 +7,10 @@ CredoDA
 ! Paramentos brancos
 
 [Name]
-Basili
+Basílio
 
 [Introitus]
 @Commune/C4a:Introitus
-
-[Oratio]
-Ouvi, Senhor, Vos suplicamos, as preces que Vos dirigimos na solenidade do B. Basílio vosso Confessor e Pontífice, e, pelos méritos e intercessão daquele que tão dignamente Vos serviu, concedei-nos o perdão dos nossos pecados.
-$Per Dominum
 
 [Lectio]
 @Commune/C4a:Lectio
@@ -40,14 +31,6 @@ Naquele tempo, disse Jesus às turbas: «Se alguém vem a mim e não despreza se
 !Sl 88:25
 A minha fidelidade e a minha misericórdia estarão com ele: e o seu poder elevar-se-á pelo meu nome.
 
-[Secreta]
-Que a festa anual do vosso santo Confessor e Pontífice Basílio nos torne agradáveis à vossa bondade, Vos suplicamos, Senhor, a fim de que a piedosa oferta desta vítima de expiação lhe aumente a felicidade, que goza como recompensa, e nos obtenha os dons da vossa graça.
-$Per Dominum
-
 [Communio]
 !Lc 12:42
 O servo fiel e prudente é destinado pelo Senhor para distribuir, oportunamente, na sua família a cada um a sua medida de trigo.
-
-[Postcommunio]
-Ó Deus, remunerador das almas fiéis, dignai-Vos permitir que pelas orações do B. Pontífice e Confessor Basílio, cuja veneranda festa celebramos, obtenhamos o perdão dos nossos pecados.
-$Per Dominum

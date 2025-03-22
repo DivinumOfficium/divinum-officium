@@ -1,10 +1,5 @@
-[Rank]
-S. Augustini Episcopi et Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDA
+[Officium]
+S. Augustini Episcopi et Confessoris et Ecclesiæ Doctoris
 
 [Name]
 Augustinus
@@ -33,11 +28,5 @@ Ik heb David gevonden, mijn dienstknecht, met heilige olie hem gezalfd. Alleluia
 [Offertorium]
 @Commune/C4a
 
-[Secreta]
-@Commune/C4a:Secreta:s/N\./Augustinus/
-
 [Communio]
 @Commune/C4
-
-[Postcommunio]
-@Commune/C4a:Postcommunio:s/N\./Augustinus/
