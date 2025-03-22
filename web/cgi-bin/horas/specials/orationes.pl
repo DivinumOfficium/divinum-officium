@@ -66,10 +66,14 @@ sub oratio {
   } else {
     $w = $w{Oratio};
   }
-  if ($hora eq 'Matutinum' && exists($winner{'Oratio Matutinum'})) { $w = $w{'Oratio Matutinum'}; }
-  if (!$w) { $w = $w{"Oratio $ind"}; }    # if none yet, look for Oratio of Vespers or Lauds according to ind
 
-  if (!$w) {                              # if none yet, look in commune.
+  if ($hora eq 'Matutinum' && exists($winner{'Oratio Matutinum'})) {
+    $w = $w{'Oratio Matutinum'};
+  } elsif (!$w || exists($winner{"Oratio $ind"})) {
+    $w = $w{"Oratio $ind"};
+  }    # if none yet, look for Oratio of Vespers or Lauds according to ind
+
+  if (!$w) {    # if none yet, look in commune.
     my %c = columnsel($lang) ? %commune : %commune2;
     my $i = $ind;
     $w = $c{"Oratio $i"};
@@ -79,11 +83,11 @@ sub oratio {
   if ($hora ne 'Matutinum') { setbuild($winner, "Oratio $ind", 'Oratio ord'); }
   my $i = $ind;
 
-  if (!$w) {                              # if none yet:
-    if ($i == 2) {                        # if Laudes, try 2nd Vespers
+  if (!$w) {    # if none yet:
+    if ($i == 2) {    # if Laudes, try 2nd Vespers
       $i = 3;
       $w = $w{"Oratio $i"};
-    } else {                              # if Vespers, try Laudes
+    } else {          # if Vespers, try Laudes
       $w = $w{'Oratio 2'};
     }
     if (!$w) { $i = 4 - $i; $w = $w{"Oratio $i"}; }    # or, try other Vesper
