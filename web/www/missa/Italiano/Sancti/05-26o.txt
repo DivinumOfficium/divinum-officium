@@ -1,24 +1,5 @@
-[Rank]
-S. Eleuterio
+[Officium]
+S. Eleuterio Papa e Mart.
 
-[Rule]
-vide C2;
-Gloria
-
-[Oratio]
-!Per S. Eleuterio
-@Commune/C2c:Oratio:s/N\./Eleuterio/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio Gregem
-
-[Secreta]
-!Per S. Eleuterio
-@Commune/C2c:Secreta:s/N\./Eleuterio/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
-
-[Postcommunio]
-!Per S. Eleuterio
-@Commune/C2c:Postcommunio:s/N\./Eleuterio/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio Gregem
+[Name]
+Eleuterio

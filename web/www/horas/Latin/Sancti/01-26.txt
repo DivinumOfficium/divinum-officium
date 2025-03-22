@@ -1,24 +1,19 @@
+[Officium]
+S. Polycarpi Episcopi et Martyris
+
 [Rank]
-S. Polycarpi Episcopi et Martyris;;Duplex;;3;;vide C2
-
-[Rank] (rubrica 1570 aut rubrica monastica aut rubrica 1962)
-S. Polycarpi Episcopi et Martyris;;Simplex;;1.1;;vide C2
-
-[Rank] (rubrica 1617)
-S. Polycarpi Episcopi et Martyris;;Semiduplex;;2.2;;vide C2
+;;Duplex;;3;;vide C2-1
+(sed rubrica 1570 aut rubrica monastica aut rubrica 1962)
+;;Simplex;;1.1;;vide C2-1
+(sed rubrica 1617)
+;;Semiduplex;;2.2;;vide C2-1
 
 [Rule]
-vide C2;
+vide C2-1;
 9 lectiones
 
-[Ant 1] (rubrica cisterciensis)
-@Commune/C2
-
-[Ant 2] (rubrica cisterciensis)
-@Commune/C2
-
-[Oratio]
-@Commune/C2:Oratio1:s/N\./Polycárpi/
+[Name]
+Polycárpi
 
 [Lectio4]
 Ex libro sancti Hierónymi Presbýteri de Scriptóribus ecclesiásticis
@@ -32,10 +27,10 @@ Polycárpus, Joánnis Apóstoli discípulus et ab eo Smyrnæ epíscopus ordinát
 @Sancti/07-13:Lectio6
 
 [Lectio7]
-@Commune/C2:Lectio7 in 3 loco
+@Commune/C2:Lectio7 in 4 loco
 
 [Lectio8]
-@Commune/C2:Lectio8 in 3 loco
+@Commune/C2:Lectio8 in 4 loco
 
 [Lectio9]
-@Commune/C2:Lectio9 in 3 loco
+@Commune/C2:Lectio9 in 4 loco

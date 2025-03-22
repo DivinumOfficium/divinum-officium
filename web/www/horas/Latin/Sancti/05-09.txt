@@ -1,8 +1,12 @@
-[Rank]
-S. Gregorii Nazianzeni Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Officium]
+S. Gregorii Nazianzeni Episcopi Confessoris et Ecclesiæ Doctoris
+(sed rubrica tridentina)
+S. Gregorii Nazianzeni Episcopi Confessoris
 
-[Rank] (rubrica tridentina)
-S. Gregorii Nazianzeni Episcopi et Confessoris;;Duplex;;3;;vide C4a
+[Rank]
+;;Duplex;;3;;vide C4a
+(sed rubrica tridentina)
+;;Duplex;;3;;vide C4
 
 [Rule]
 vide C4a;
@@ -12,10 +16,8 @@ vide C4a;
 Pio PP. V, anno 1568, Doctor universalis Ecclesiæ declaratus est
 
 [Name]
-Gregóri
-
-[Oratio]
-@Commune/C4:Oratio2:s/N\./Gregórium/
+Gregórium
+Ant=Gregóri
 
 [Lectio4]
 Gregórius, nobilis Cappadox, ex singulari divinárum Litterárum sciéntia Theólogi cognomen consecutus, Nazianzi in Cappadocia natus, Athenis in omni disciplinárum genere una cum sancto Basilío eruditus, ad stúdia sacrárum Litterárum se convértit; in quibus se in cœnobio per aliquot annos exercuérunt, illárum senténtiam non ex proprio ingenio, sed ex majórum ratióne et auctoritate interpretantes. Qui cum doctrina et vitæ sanctitáte florérent, vocáti ad munus prædicandæ evangelicæ veritátis, plurimos Jesu Christo fílios peperérunt.

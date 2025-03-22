@@ -1,13 +1,8 @@
-[Rank]
-S. Clementis Papae et Martyris;;Duplex;;3;;vide C2
+[Officium]
+S. Clementis Papae et Martyris
 
-[Rank] (rubrica 1570)
-S. Clementis Papae et Martyris;;Semiduplex;;2;;vide C2
-
-[Rule]
-vide C2;
-9 lectiones
-OPapaM=Clemente;
+[Name]
+Clemente
 
 [Ant Vespera]
 Mentre * san Clemente pregava, gli apparve l'Agnello di Dio.;;109
@@ -19,7 +14,7 @@ Tutte le genti * circonvicine credettero in Cristo Signore.;116
 [Ant 1]
 Preghiamo tutti * il Signore Gesù Cristo, che apra una sorgente d'acqua ai suoi Confessori.
 
-[Oratio]
+[Oratio] (nisi communi Summorum Pontificum)
 O Dio, che ci rallegri coll'annuale solennità del tuo beato Martire e Pontefice Clemente: concedi benigno, che, come ne celebriamo il natale, così ne imitiamo anche la fortezza nel martirio. 
 $Per Dominum
 

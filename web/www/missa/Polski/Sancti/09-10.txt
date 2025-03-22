@@ -1,9 +1,5 @@
-[Rank]
-S. Nicolai de Tolentino Confessoris;;Duplex;;3;;vide C5b
-
-[Rule]
-vide C5b;
-9 lectiones
+[Officium]
+Św. Mikołaja z Tolentynu Wyznawcy
 
 [Comment]
 # 10 IX – Św. Mikołaja z Tolentynu, Wyznawcy
@@ -11,24 +7,17 @@ vide C5b;
 ! Szaty białe
 Św. Mikołaj urodził się w Fermo (Italia) w roku 1245. Mając jedenaście lat pod wpływem kazania jednego z pustelników św. Augustyna wstąpił do tego zakonu. Żył świątobliwie najpierw w eremie Pessaro, a później w Tolentino i tam zmarł 10 września 1305 min.
 
-[Introitus]
-@Commune/C5b:Introitus
+[Name]
+Mikołaja
 
-[Oratio]
-Przychyl się, Panie, ku prośbom naszym, które zanosimy w uroczystość świętego Mikołaja, Twojego Wyznawcy, a skoro nie ufamy własnej sprawiedliwości, niech nas wspierają zasługi tego, który się Tobie podobał.
-$Per Dominum
+[Introitus]
+@Commune/C5-1:Introitus
 
 [Evangelium]
-@Commune/C5b:Evangelium
+@Commune/C5-1:Evangelium
 
 [Offertorium]
-@Commune/C5b:Offertorium
-
-[Secreta]
-@Commune/C5b:Secreta
+@Commune/C5-1:Offertorium
 
 [Communio]
-@Commune/C5b:Communio
-
-[Postcommunio]
-@Commune/C5b:Postcommunio
+@Commune/C5-1:Communio

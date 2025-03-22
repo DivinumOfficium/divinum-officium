@@ -1,8 +1,5 @@
-[Rank]
-S. Wenceslai Ducis et Martyris;;Semiduplex;;2;;vide C2
-
-[Rule]
-vide C2;
+[Officium]
+Św. Wacława Króla i Męczennika
 
 [Comment]
 # 28 IX – Św. Wacława, Księcia i Męczennika
@@ -13,7 +10,7 @@ vide C2;
 Msza wspólna nr 11 In virtute, z wyjątkiem kolekty
 
 [Introitus]
-@Commune/C2:Introitus
+@Commune/C2a:Introitus
 
 [Oratio]
 Boże, któryś przez palmę męczeństwa przeniósł świętego Wacława z ziemskiego władztwa do chwały niebieskiej, chroń nas za jego przyczyną od wszelkich przeciwności i daj nam radować się obcowaniem z nim.
@@ -31,11 +28,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C2:Offertorium
 
-[Secreta]
-@Commune/C2:Secreta
-
 [Communio]
 @Commune/C2:Communio
-
-[Postcommunio]
-@Commune/C2:Postcommunio

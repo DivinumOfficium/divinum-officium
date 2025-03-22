@@ -1,12 +1,17 @@
+[Officium]
+S. Felicis I Papæ et Martyris
+
 [Rank]
-S. Felicis I Papæ et Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C2;
-OPapaM=Felícem;
+vide C2b;
+Gloria
 
-[Oratio]
-@Commune/C2::s/N\./Felícis/
+[Name]
+Felícis
+(sed communi Summorum Pontificum)
+Felícem
 
 [Lectio93]
 Felix Románus, patre Constántio, Aureliáno imperatóre præfuit Ecclesiæ. Constítuit ut Missa supra memórias et sepúlcra Mártyrum celebrarétur. Qui cum mense Decémbri habuísset ordinatiónes duas, et creásset presbýteros novem, diáconos quinque, epíscopos per divérsa loca quinque, martyrio coronátus, via Aurelia sepélitur in basílica quam a se ædificátam dedicárat. Vixit in pontificátu annos duos, menses quátuor, dies vigínti novem.

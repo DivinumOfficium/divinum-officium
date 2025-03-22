@@ -1,13 +1,8 @@
-[Rank]
-S. Clementis I Papæ et Martyris;;Duplex;;3;;vide C2
+[Officium]
+S. Clementis I Papæ et Martyris
 
-[Rank] (rubrica 1570)
-S. Clementis Papæ et Martyris;;Semiduplex;;2;;vide C2
-
-[Rule]
-vide C2;
-9 lectiones
-OPapaM=Clemente;
+[Name]
+Clemente
 
 [Ant Vespera]
 Mientras oraba * san Clemente se le apareció el Cordero de Dios.;;109
@@ -19,7 +14,7 @@ Todos los pueblos * vecinos creyeron en Cristo el Señor.;;116
 [Ant 1]
 Oremos todos * a Jesucristo nuestro Señor, que abrió a sus Confesores el manantial de sus fuentes.
 
-[Oratio]
+[Oratio] (nisi communi Summorum Pontificum)
 !Oh Dios, que todos los años nos alegras con la fiesta de San Clemente, Pontífice y Mártir!; concédenos, al venerarla con nuestro culto, seguir su ejemplo, por la santidad de nuestra vida.
 $Per Dominum
 

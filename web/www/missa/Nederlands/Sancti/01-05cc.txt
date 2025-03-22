@@ -1,18 +1,5 @@
-[Rule]
-OPapaM=Telesforus;
-vide C2b;
+[Officium]
+S. Telesphori Papæ et Martyris
 
-[Oratio]
-@Commune/C2b:Oratio:s/N\./Telesforus/
-!De S. Maria
-@Commune/C10b:Oratio
-
-[Secreta]
-@Commune/C2b:Secreta:s/N\./Telesforus/
-!De S. Maria
-@Commune/C10:Secreta
-
-[Postcommunio]
-@Commune/C2c:Postcommunio:s/N\./Telesforus/
-!De S. Maria
-@Commune/C10:Postcommunio
+[Name]
+Telesphorus

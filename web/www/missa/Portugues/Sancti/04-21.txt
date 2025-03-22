@@ -1,22 +1,16 @@
-[Rank]
-S. Anselmi Episcopi Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDA
+[Officium]
+S. Anselmo, Bispo, Confessor e Doutor
 
 [Comment]
 # 21 IV – S. Anselmo, Bispo, Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
 
+[Name]
+Anselmo
+
 [Introitus]
 @Commune/C4a:Introitus
-
-[Oratio]
-Ó Deus, que ao vosso povo destinastes o B. Anselmo para ministro da eterna salvação, concedei-nos, Vos suplicamos, que, assim como o tivemos como Doutor durante a nossa vida na terra, assim gozemos a sua intercessão no céu.
-$Per Dominum.
 
 [Lectio]
 @Commune/C4a:Lectio
@@ -30,13 +24,5 @@ $Per Dominum.
 [Offertorium]
 @Commune/C4a:Offertorium
 
-[Secreta]
-Senhor, que a piedosa oração de Santo Anselmo vosso Pontífice e Doutor, nos não abandone, e que por ela as nossas ofertas Vos sejam agradáveis e alcancemos benigna e continuamente a vossa misericórdia.
-$Per Dominum.
-
 [Communio]
 @Commune/C4a:Communio
-
-[Postcommunio]
-Ó Senhor, dignai-Vos conceder-nos que o B. Anselmo, vosso Pontífice e ilustre Doutor, seja nosso intercessor perante Vós, a fim de que este sacrifício nos alcance a salvação.
-$Per Dominum

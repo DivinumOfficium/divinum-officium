@@ -1,8 +1,5 @@
-[Rank]
-S. Bonifacii Martyris;;Simplex;;1.1;;vide C2
-
-[Rule]
-vide C2;
+[Officium]
+Św. Bonifacego Męczennika
 
 [Comment]
 # 14 V – Św. Bonifacego, Męczennika
@@ -12,12 +9,9 @@ vide C2;
 
 Msza wspólna nr 16 Protexísti, z wyjątkiem Kolekty
 
+[Name]
+Bonifacego
+
 [Oratio]
 Daj, prosimy Cię, wszechmogący Boże, abyśmy obchodząc uroczystość św. Męczennika Twego Bonifacego doznali pomocy dzięki jego wstawiennictwu.
 $Per Dominum
-
-[Secreta]
-@Commune/C2p:Secreta2
-
-[Postcommunio]
-@Commune/C2p:Postcommunio3

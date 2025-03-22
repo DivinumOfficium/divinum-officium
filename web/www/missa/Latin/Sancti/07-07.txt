@@ -1,45 +1,29 @@
+[Officium]
+Ss. Cyrilli et Methodii Pont. et Conf.
+
 [Rank]
-Ss. Cyrilli et Methodii Pont. et Conf.;;Duplex;;3;;vide C4
+;;Duplex;;3;;vide C4-1
 
 [Rule]
 Evangelium non appropriatum
 Gloria
 
-[Introitus]
-@Commune/C4d
-
 [Oratio]
 Omnípotens sempitérne Deus, qui Slavóniæ gentes per beátos Confessóris tuos atque Pontífices Cyríllum et Methódium ad agnitiónem tui nóminis veníre tribuísti: præsta; ut, quorum festivitáte (commemoratióne) gloriámur, eórum consórtio copulémur.
 $Per Dominum
-
-[Lectio]
-@Commune/C4d
-
-[Graduale]
-@Commune/C4d
-
-[GradualeP]
-@Commune/C4d
-
-[Tractus]
-!Ps 111:1-3
-Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis.
-V. Potens in terra erit semen ejus: generátio rectórum benedicétur.
-V. Glória et divítiæ in domo ejus: et justítia ejus manet in sǽculum sǽculi.
 
 [Evangelium]
 @Sancti/02-06
 
 [Offertorium]
-@Commune/C3
+@Commune/C3::s/[\,\.]? al.*?$/./i
 
 [Secreta]
 Preces nostras, quǽsumus, Dómine, et tuórum réspice oblatiónes fidélium: ut tibi gratæ sint in tuórum festivitáte commemoratione Sanctórum, et nobis conferant tuæ propitiatiónis auxílium.
 $Per Dominum
 
 [Communio]
-!Matt 10:27
-Quod dico vobis in tenebris, dícite in lúmine, dicit Dóminus: et quod in aure audítis, prædicáte super tecta.
+@Commune/C3a-1
 
 [Postcommunio]
 Quǽsumus, omnípotens Deus: ut, qui nobis múnera dignáris præbére cœléstia, intercedéntibus sanctis tuis Cyríllo et Methódio, despícere terréna concédas.

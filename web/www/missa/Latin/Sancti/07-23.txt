@@ -1,12 +1,19 @@
+[Officium]
+S. Apollinaris Episcopi et Martyris
+
 [Rank]
-S. Apollinaris Episcopi et Martyris;;Duplex;;3;;vide C2
+;;Duplex;;3;;vide C2-1
+(sed rubrica 1570 aut rubrica 1617)
+;;Semiduplex;;2.2;;vide C2-1
+(sed rubrica 1930 aut rubrica 1962 aut rubrica 1963)
+;;Simplex;;1.1;;vide C2-1
 
 [Rule]
-vide C2;
+vide C2-1;
 Gloria
 
 [Introitus]
-@Commune/C2b
+@Commune/C2a-1
 
 [Oratio]
 Deus, fidélium remunerátor animárum, qui hunc diem beáti Apollináris Sacerdótis tui martýrio consecrásti: tríbue nobis, quǽsumus, fámulis tuis; ut, cujus venerándam celebrámus festivitátem, précibus ejus indulgéntiam consequámur.
@@ -18,7 +25,7 @@ Léctio Epístolæ beáti Petri Apóstoli
 Caríssimi: Senióres, qui in vobis sunt, obsecro, consénior et testis Christi passiónum: qui et ejus, quæ in futúro revelánda est, glóriæ communicátor: páscite qui in vobis est gregem Dei, providéntes non coácte, sed spontánee secúndum Deum: neque turpis lucri grátia, sed voluntárie: neque ut dominántes in cleris, sed forma facti gregis ex ánimo. Et cum apparúerit princeps pastórum, percipiétis immarcescíbilem glóriæ corónam. Simíliter adolescéntes, súbditi estóte senióribus. Omnes autem ínvicem humilitátem insinuáte: quia Deus supérbis resístit, humílibus autem dat grátiam. Humiliámini ígitur sub poténti manu Dei, ut vos exáltet in témpore visitatiónis: omnem sollicitúdinem vestram projiciéntes in eum, quóniam ipsi cura est de vobis. Sobrii estóte, et vigiláte: quia adversárius vester diábolus tamquam leo rúgiens círcuit, quærens quem dévoret: cui resístite fortes in fide: scientes eándem passiónem ei, quæ in mundo est, vestræ fraternitáti fíeri. Deus autem omnis grátiæ, qui vocávit nos in ætérnam suam glóriam in Christo Jesu, módicum passos ipse perfíciet, confirmábit solidabítque. Ipsi glória et impérium in sǽcula sæculórum. Amen.
 
 [Graduale]
-@Commune/C2c
+@Commune/C2
 
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Lucam
@@ -26,7 +33,7 @@ Sequéntia ++ sancti Evangélii secúndum Lucam
 In illo témpore: Facta est conténtio inter discípulos, quis eórum viderétur esse major. Dixit autem eis Jesus: Reges géntium dominántur eórum; et qui potestátem habent super eos, benéfici vocántur. Vos autem non sic: sed qui major est in vobis, fiat sicut minor: et qui præcéssor est, sicut ministrátor. Nam quis major est, qui recúmbit, an qui mínistrat? nonne qui recúmbit? Ego autem in médio vestrum sum, sicut qui mínistrat. Vos autem estis, qui permansístis mecum in tentatiónibus meis: et ego dispóno vobis, sicut dispósuii mihi Pater meus regnum, ut edátis et bibátis super mensam meam in regno meo: et sedeátis super thronos, judicántes duódecim tribus Israël.
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
 Réspice, Dómine, propítius super hæc múnera: quæ pro beáti Sacerdótis et Martyris tui Apollináris commemoratióne deférimus, et pro nostris offensiónibus immolámus.

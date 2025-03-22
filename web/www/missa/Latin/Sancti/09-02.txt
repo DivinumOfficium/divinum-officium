@@ -1,12 +1,15 @@
+[Officium]
+S. Stephani Hungariæ Regis Confessoris
+
 [Rank]
-S. Stephani Hungariæ Regis Confessoris;;Semiduplex;;2.2;;vide C5
+;;Semiduplex;;2.2;;vide C5
 
 [Rule]
 vide C5
 Gloria
 
 [Introitus]
-@Commune/C4c
+@Commune/C5b
 
 [Oratio]
 Concéde, quǽsumus, Ecclésiæ tuæ, omnípotens Deus: ut beátum Stéphanum Confessórem tuum, quem regnántem in terris propagatórem hábuit, propugnatórem habére mereátur gloriósum in cœlis.
@@ -18,14 +21,14 @@ Sequéntia ++ sancti Evangélii secúndum Lucam
 In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Homo quidam nóbilis ábiit in regionem longínquam accípere sibi regnum, et reverti. Vocátis autem decem servis suis, dedit eis decem mnas, et ait ad illos: Negotiámini, dum vénio. Cives autem ejus óderant eum: et misérunt legatiónem post illum, dicéntes: Nolumus hunc regnáre super nos. Et factum est, ut redíret accépto regno: et jussit vocári servos, quibus dedit pecúniam, ut sciret, quantum quisque negotiátus esset. Venit autem primus, dicens: Dómine, mna tua decem mnas acquisívit. Et ait illi: Euge, bone serve, quia in módico fuísti fidélis, eris potestátem habens super decem civitátes. Et alter venit, dicens: Dómine, mna tua fecit quinque mnas. Et huic ait: Et tu esto super quinque civitátes. Et alter venit, dicens: Dómine, ecce mna tua, quam hábui repósitam in sudário: tímui enim te, quia homo austérus es: tollis, quod non posuísti, et metis, quod non seminasti. Dicit ei: De ore tuo te júdico, serve nequam. Sciébas, quod ego homo austérus sum, tollens, quod non pósui, et metens, quod non seminávi: et quare non dedísti pecúniam meam ad mensam, ut ego véniens cum usúris útique exegíssem illam? Et astántibus dixit: Auferte ab illo mnam et date illi, qui decem mnas habet. Et dixérunt ei: Dómine, habet decem mnas. Dico autem vobis: Quia omni habénti dabitur, et abundábit: ab eo autem, qui non habet, et, quod habet, auferetur ab eo.
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
 Réspice, quas offérimus, hóstias, omnípotens Deus: et præsta; ut, qui passiónis Dominicæ mystéria celebrámus, imitémur quod ágimus.
 $Per eundem
 
 [Communio]
-@Commune/C4d
+@Commune/C4-1
 
 [Postcommunio]
 Præsta, quǽsumus, omnípotens Deus: ut beáti Stephani Confessóris tui fidem cóngrua devotióne sectémur; qui, pro ejúsdem fídei dilatatióne, de terréno regno ad cœléstis regni glóriam méruit perveníre.

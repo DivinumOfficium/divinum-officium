@@ -1,8 +1,10 @@
-[Rank]
-In Conversione S. Pauli Apostoli;;Duplex majus;;4;;ex Sancti/06-30
+[Officium]
+In Conversione S. Pauli Apostoli
 
-[Rank] (rubrica innovata)
-In Conversione S. Pauli Apostoli;;Duplex Fest;;5;;ex Sancti/06-30
+[Rank]
+;;Duplex majus;;4;;ex Sancti/06-30
+(sed rubrica innovata)
+;;Duplex Fest;;5;;ex Sancti/06-30
 
 [Rank] (rubrica cisterciensis)
 In Conversione S. Pauli Apostoli;;MM. maj.;;4.1;;ex Sancti/06-30
@@ -51,7 +53,7 @@ De Actibus Apostolórum
 5 Qui dixit: Quis es, dómine? Et ille: Ego sum Jesus, quem tu perséqueris: durum est tibi contra stímulum calcitráre.
 
 [Responsory1]
-@Sancti/06-30:Responsory1
+@Sancti/06-30
 
 [Lectio2]
 !Act 9:6-9
@@ -61,7 +63,7 @@ De Actibus Apostolórum
 9 Et erat ibi tribus diébus non videns, et non manducávit, neque bibit.
 
 [Responsory2]
-@Sancti/06-30:Responsory2
+@Sancti/06-30
 
 [Lectio3]
 !Act 9:10-16

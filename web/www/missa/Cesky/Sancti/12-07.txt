@@ -1,11 +1,5 @@
-[Rank]
-S. Ambrosii Episcopi Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDa
-no Vigil1960
+[Officium]
+Sv. Ambrože, biskupa, vyznavače a Učitele Církve
 
 [Comment]
 # Sv. Ambrože, biskupa, vyznavače a Učitele Církve
@@ -14,13 +8,10 @@ no Vigil1960
 ✝ 397 v Miláně
 
 [Name]
-Ambrose
+Ambrože
 
 [Introitus]
 @Commune/C4a:Introitus
-
-[Oratio]
-@Commune/C4a:Oratio:s/N\./Ambrože/
 
 [Commemoratio Oratio]
 !Svatvečer Neposkvrněného Početí Panny Marie

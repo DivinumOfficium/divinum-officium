@@ -1,16 +1,22 @@
 @Commune/C5
 
 [Officium]
-Commune Doctore non Pontificis
+Commune Doctoris non Pontificis
+
+[Missa]
+@Commune/C4a
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+Psalm5 Vespera=116
+Gloria
 
 [Ant 1]
 @Commune/C4a
 
 [Oratio]
-@Commune/C4:Oratio2
-
-[Oratio3]
-@Commune/C5:Oratio
+@Commune/C4a
 
 [Lectio1]
 @Commune/C4a
@@ -46,10 +52,45 @@ Commune Doctore non Pontificis
 @:Ant 1
 
 [Lectio7 in 4 loco]
-@Commune/C2
+@Commune/C2:Lectio7 in 2 loco
 
 [Lectio8 in 4 loco]
-@Commune/C2
+@Commune/C2:Lectio8 in 2 loco
 
 [Lectio9 in 4 loco]
 @Commune/C2
+
+[Introitus]
+@Commune/C4a
+
+[Lectio in 2 loco]
+@Commune/C4a
+
+[Lectio]
+@Commune/C4a
+
+[Graduale]
+@Commune/C4a
+
+[GradualeP]
+@Commune/C4a
+
+[Tractus]
+@Commune/C4a
+
+[Evangelium]
+@Commune/C4a
+
+[Offertorium]
+@Commune/C4a
+
+[Secreta]
+Sancti N. Confessóris tui atque Doctóris nobis, Dómine, pia non desit orátio: quæ et múnera nostra concíliet; et tuam nobis indulgéntiam semper obtíneat.
+$Per Dominum
+
+[Communio]
+@Commune/C4
+
+[Postcommunio]
+Ut nobis, Dómine, tua sacrifícia dent salútem: beátus N. Conféssor tuus et Doctor egrégius, quǽsumus, precátor accédat.
+$Per Dominum

@@ -1,18 +1,19 @@
+[Officium]
+S. Benedicti Abbatis
+
 [Rank]
-S. Benedicti Abbatis;;Duplex majus;;4;;vide C5
-
-[Rank] (rubrica 196)
-S. Benedicti Abbatis;;Duplex;;3;;vide C5
-
-[Rank] (rubrica innovata)
-S. Benedicti Abbatis;;Duplex;;3.91;;vide C5
+;;Duplex majus;;4;;vide C5b
+(sed rubrica 196)
+;;Duplex;;3;;vide C5b
+(sed rubrica innovata)
+;;Duplex;;3.91;;vide C5b
 
 [Rule]
-vide C5;
+vide C5b;
 9 lectiones;
 
-[Oratio]
-@Commune/C5:Oratio1:s/N\./Benedícti/
+[Name]
+Benedícti
 
 [Lectio1]
 @Commune/C4:Lectio1 in 2 loco
@@ -32,6 +33,11 @@ Sed cum multi ad eum quotídie discípuli convenírent, duódecim monastéria æ
 [Lectio6]
 Qui áliquot ménsibus ántequam e vita migráret, præmónuit discípulos, quo die esset moritúrus; ac sepúlcrum, in quo suum corpus condi vellet, sex diébus ántequam eo inferrétur, aperíri jussit: sextóque die deférri vóluit in ecclésiam; ubi, sumpta Eucharístia, sublátis in cælum óculis orans, inter manus discipulórum efflávit ánimam: quam duo mónachi eúntem in cælum vidérunt, pállio ornátum pretiosíssimo, circum eam fulgéntibus lampádibus, et claríssima et gravíssima spécie virum, stantem supra caput ipsíus, dicéntem audiérunt: Hæc est via, qua diléctus Dómini Benedíctus in cælum ascéndit.
 
+[Lectio94](rubrica innovata)
+@:Lectio4
+@:Lectio5
+@:Lectio6
+
 [Lectio7]
 @Commune/C1:Lectio7
 
@@ -46,8 +52,3 @@ Qui áliquot ménsibus ántequam e vita migráret, præmónuit discípulos, quo 
 
 [Lectio9]
 @Commune/C1:Lectio9
-
-[Lectio94](rubrica innovata)
-@:Lectio4
-@:Lectio5
-@:Lectio6

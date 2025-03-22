@@ -1,11 +1,13 @@
-[Rank]
-S. Laurentii Martyris;;Duplex II classis cum octava simplici;;5;;ex C2
+[Officium]
+S. Laurentii Martyris
 
-[Rank] (rubrica 196)
-S. Laurentii Martyris;;Duplex II classis;;5;;ex C2
+[Rank]
+;;Duplex II classis cum octava simplici;;5;;ex C2a
+(sed rubrica 196)
+;;Duplex II classis;;5;;ex C2a
 
 [Rule]
-ex C2
+ex C2a
 9 lectiones
 Psalmi Dominica
 Antiphonas horas
@@ -158,7 +160,7 @@ Sed vide ne tibi subrépat, ut teípsum velis interímere, sic intellegéndo, qu
 &teDeum
 
 [Versum 0]
-@Commune/C2::s/N\./Laurenti/
+@Commune/C2a::s/N\./Laurenti/
 
 [Ant Laudes]
 @:Ant Vespera

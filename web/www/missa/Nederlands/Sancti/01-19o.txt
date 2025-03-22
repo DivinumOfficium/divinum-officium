@@ -1,39 +1,9 @@
-[Rank]
-S. Canuti Regis et Martyrum;;Semiduplex;;2.2;;vide C2
+[Officium]
+S. Canuti Regis et Martyrum
 
-[Rule]
-vide C3;
-Gloria
-
-[Introitus]
-@Sancti/01-19
+[Name]
+Canutus
 
 [Oratio]
 God, Gij hebt ter verheerlijking van uw Kerk de heilige koning Canutus met de palm van het martelaarschap en heerlijke wonderen willen eren. Doe ons in uw goedheid in het voetspoor treden van hem, die een navolger was van zijn lijdende Meester, en laat ons daardoor tot het eeuwig geluk komen
 $Per eundem
-
-[Lectio]
-@Commune/C3b
-
-[Graduale]
-@Sancti/01-19
-
-[Tractus]
-@Sancti/01-19
-
-[Evangelium]
-@Sancti/01-19
-
-[Offertorium]
-@Sancti/01-19
-
-[Secreta]
-!Pro S. Canuto Regi Mart.
-@Commune/C2a:Secreta
-
-[Communio]
-@Commune/C3a
-
-[Postcommunio]
-!Pro S. Canuto Regi Mart.
-@Commune/C2a:Postcommunio:s/N\./Canutus/

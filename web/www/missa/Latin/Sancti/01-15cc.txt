@@ -1,14 +1,17 @@
+[Officium]
+S. Mauri Abbatis
+(sed rubrica 1930)
+S. Mauri Abbatis O. N.
+
 [Rank]
-S. Mauri Abbatis;;Simplex;;1.1;;vide C4
+;;Simplex;;1.1;;vide C5b
+(sed rubrica monastica)
+;;Duplex II. classis;;5;;ex C5b
 
 [Rule]
-vide C4;
+vide C5b;
 
-[Oratio]
-@Commune/C4c:Oratio:s/N\./Mauri/
-
-[Secreta]
-@Commune/C4c:Secreta:s/N\./Maurus/
-
-[Postcommunio]
-@Commune/C4c:Postcommunio:s/N\./Maurus/
+[Name]
+Mauri
+Secreta=Maurus
+Postcommunio=Maurus

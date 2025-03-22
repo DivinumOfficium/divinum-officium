@@ -1,23 +1,5 @@
-[Rank]
-S. Pontiani Papae et Martyris;;Simplex;;1.1;;vide C4b
+[Officium]
+S. Pontiano Papa e Martire
 
-[Rule]
-vide C4b;
-
-[Oratio]
-!Per San Pontiano Papa e Martire
-@Commune/C2c:Oratio:s/N\./Pontiano/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio Gregem
-
-[Secreta]
-!Per San Pontiano Papa e Martire
-@Commune/C2c:Secreta:s/N\./Pontiano/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
-
-[Postcommunio]
-!Per San Pontiano Papa e Martire
-@Commune/C2c:Postcommunio:s/N\./Pontiáno/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio Gregem
+[Name]
+Pontiano

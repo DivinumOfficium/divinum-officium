@@ -1,21 +1,15 @@
+[Officium]
+S. Telesphori Papæ et Martyris
+
 [Rank]
-S. Telesphori Papæ et Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2b-1
 
 [Rule]
-OPapaM=Telésphorum;
-vide C2b;
+vide C2b-1;
 
-[Oratio]
-@Commune/C2b:Oratio:s/N\./Telésphori/
-!De S. Maria
-@Commune/C10b:Oratio
-
-[Secreta]
-@Commune/C2b:Secreta:s/N\./Telésphoro/
-!De S. Maria
-@Commune/C10:Secreta
-
-[Postcommunio]
-@Commune/C2a:Postcommunio:s/N\./Telésphoro/
-!De S. Maria
-@Commune/C10:Postcommunio
+[Name]
+Telésphori
+(sed communi Summorum Pontificum)
+Telésphorum
+Secreta=Telésphoro
+Postcommunio=Telésphoro

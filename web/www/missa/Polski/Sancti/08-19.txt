@@ -1,8 +1,5 @@
-[Rank]
-S. Joannis Eudes Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-Gloria
+[Officium]
+Św. Jana Eudes Wyznawcy
 
 [Comment]
 # 19 VIII – Św. Jana Eudes, Wyznawcy
@@ -31,11 +28,5 @@ $Per eundem
 [Offertorium]
 @Commune/C5:Offertorium
 
-[Secreta]
-@Commune/C5:Secreta
-
 [Communio]
 @Commune/C5:Communio
-
-[Postcommunio]
-@Commune/C5:Postcommunio

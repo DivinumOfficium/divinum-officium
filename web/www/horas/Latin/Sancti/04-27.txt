@@ -1,5 +1,10 @@
+[Officium]
+S. Petri Canisii Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Petri Canisii Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
+;;Duplex;;3;;vide C5a
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C5a
 
 [Rule]
 vide C5a;mtv
@@ -9,7 +14,8 @@ vide C5a;mtv
 Pio PP. XI, anno 1925, Doctorem universalis Ecclesiæ declaratus est
 
 [Name]
-Petre
+Petrum
+Ant=Petre
 
 [Oratio]
 Deus, qui ad tuéndam cathólicam fidem beátum Petrum Confessórem tuum virtúte et doctrína roborásti: concéde propítius; ut ejus exémplis et mónitis errántes ad salútem resipíscant, et fidéles in veritátis confessióne persevérent.

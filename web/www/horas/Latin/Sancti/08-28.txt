@@ -1,12 +1,18 @@
+[Officium]
+S. Augustini Episcopi et Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Augustini Episcopi et Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+;;Duplex;;3;;vide C4a
+(sed rubrica 1930)
+;;Duplex majus;;4;;vide C4a
 
 [Rule]
 vide C4a;
 9 lectiones
 
 [Name]
-Augustíne
+Augustíno
+Ant=Augustíne
 
 [Oratio]
 Adésto supplicatiónibus nostris, omnípotens Deus: et, quibus fidúciam sperándæ pietátis indúlges, intercedénte beáto Augustíno Confessóre tuo atque Pontífice, consuétæ misericórdiæ tríbue benígnus efféctum.
@@ -26,4 +32,4 @@ Augustínus, Tagáste in Africa honéstis paréntibus natus, brevi æquálibus �
 &teDeum
 
 [Versum 0]
-@Commune/C2::s/N\./Augustíne/
+@Commune/C2a::s/N\./Augustíne/

@@ -1,7 +1,10 @@
-[Rank]
-Omnium Sanctorum Ordinis Nostri;;Duplex;;5;;vide C3
+[Officium]
+Omnium Sanctorum Ordinis Nostri
 (sed rubrica 1617)
-Omnium Sanctorum Monachorum Ordinis S.P. Benedicti;;Duplex II. classis;;5;;vide C3
+Omnium Sanctorum Monachorum Ordinis S.P. Benedicti
+
+[Rank]
+;;Duplex II. classis;;5;;vide C3
 
 [Rule]
 vide C3;
@@ -127,7 +130,7 @@ V. Sapiéntiam Sanctórum narrent pópuli, † et laudem eórum pronúntiet Eccl
 R. Et nómina eórum vivent in generatiónem et generatiónem.
 
 [LectioE]
-@Commune/C4c
+@Commune/C5b
 
 [Ant Laudes]
 Fulgébunt justi * sicut sol in regno Patris eórum, dicit Dóminus.

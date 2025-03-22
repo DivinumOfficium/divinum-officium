@@ -1,15 +1,16 @@
-[Rank]
-S. Urbani Papæ et Martyris;;Simplex;;1.1;;vide C2
+[Officium]
+S. Urbani Papæ et Martyris
 
-[Rule]
-vide C2;
-Gloria
+[Name]
+Urbanus
 
-[Oratio]
-@Commune/C4b:Oratio1:s/N\./Urbanus/
+[Oratio] (communi Summorum Pontificum)
+@Commune/C2b:Oratio pro commemoratio
+(sed rubrica 196)
+@Commune/C2b
 
-[Secreta]
-@Commune/C4b:Secreta1:s/N\./Urbanus/
+[Secreta] (communi Summorum Pontificum)
+@Commune/C2b:Secreta pro commemoratio
 
-[Postcommunio]
-@Commune/C4b:Postcommunio1:s/N\./Urbanus/
+[Postcommunio] (communi Summorum Pontificum)
+@Commune/C2b:Postcommunio pro commemoratio

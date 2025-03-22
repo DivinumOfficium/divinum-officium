@@ -1,12 +1,14 @@
-[Rank]
-S. Gregorii VII Papæ et Confessoris;;Duplex;;3;;vide C4
+[Officium]
+S. Gregorii VII Papæ et Confessoris
 (sed rubrica 1930 aut rubrica 1963)
-S. Gregorii VII Papæ et Confessoris O. N.;;Duplex;;3;;vide C4
+S. Gregorii VII Papæ et Confessoris O. N.
+
+[Rank]
+;;Duplex;;3;;vide C4b
 
 [Rule]
-vide C4;
+vide C4b;
 9 lectiones
-(commune Summorum Pontificum) In 3 Nocturno lectiones ex commune 2 loco
 
 [Ant 1]
 @Commune/C4

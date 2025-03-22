@@ -433,10 +433,10 @@ sub psalmi_major {
 
     # Cist: to get Sunday Psalms if "Psalmi Feria" rule is used,
     # e.g. on Sundays in Octaves.
-    if ( $dayofweek == 0 
-      && $rule =~ /Psalmi Feria/i 
-      && $version =~ /monastic/i 
-      && $hora eq 'Laudes') 
+    if ( $dayofweek == 0
+      && $rule =~ /Psalmi Feria/i
+      && $version =~ /monastic/i
+      && $hora eq 'Laudes')
     {
       @p = split("\n", $psalmi{'DayaC Laudes2'});
     }

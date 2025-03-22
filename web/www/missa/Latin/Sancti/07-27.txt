@@ -1,12 +1,12 @@
+[Officium]
+S. Pantaleonis Martyris
+
 [Rank]
-S. Pantaleonis Martyris;;Simplex;;1.1;;vide C2a
+;;Simplex;;1.1;;vide C2a-1
 
 [Rule]
-vide C2a;
+vide C2a-1;
 Gloria
 
-[Oratio]
-@Commune/C2a::s/N\./Pantaleóne/
-
-[Postcommunio]
-@Commune/C2a::s/N\./Pantaleóne/
+[Name]
+Pantaleóne

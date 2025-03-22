@@ -1,5 +1,8 @@
+[Officium]
+S. Liborii Episcopi et Confessoris
+
 [Rank]
-S. Liborii Episcopi et Confessoris;;Simplex;;1.1;;vide C4
+;;Simplex;;1.1;;vide C4
 
 [Rule]
 vide C4;
@@ -9,7 +12,5 @@ Libórii
 
 [Oratio]
 @Commune/C4
-(sed feria 7)
-@Commune/C4:Oratio1
-(sed rubrica 1955 aut rubrica 196)
-@Commune/C4
+(sed feria 7 nisi rubrica 1955 nisi rubrica 196)
+@Commune/C4-1

@@ -1,11 +1,10 @@
-[Rank]
-S. Bonaventuræ Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Officium]
+S. Bonaventuræ Episcopi Confessoris et Ecclesiæ Doctoris
+(sed rubrica 1570)
+S. Bonaventuræ Episcopi Confessoris
 
-[Rank] (rubrica 1570)
-S. Bonaventuræ Episcopi Confessoris;;Semiduplex;;2.2;;vide C4a
-
-[Oratio]
-@Commune/C4a:Oratio:s/N\./Bonaventura/
+[Name]
+Bonaventura
 
 [Graduale]
 !Ps 36:30-31
@@ -16,13 +15,7 @@ Alleluia, alleluia.
 De Heer heeft gezworen, en het zal Hem niet berouwen: Gij zijt priester voor eeuwig naar de wijze van Melchisech. Alleluia.
 
 [Offertorium]
-@Commune/C2c
-
-[Secreta]
-@Commune/C4d:Secreta:s/N\./Bonaventura/
+@Commune/C2
 
 [Communio]
 @Commune/C4
-
-[Postcommunio]
-@Commune/C4d:Postcommunio:s/N\./Bonaventura/

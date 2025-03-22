@@ -1,18 +1,35 @@
+[Officium]
+S. Urbanis Papæ et Martyris
+
 [Rank]
-S. Urbani Papæ et Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C2;
+vide C2b;
 Gloria
-OPapaM=Urbánum;
+
+[Name]
+Urbáno
+(sed rubrica 1960)
+Urbánum
+Secreta=Urbáno
+(sed rubrica tridentina)
+Secreta=Urbáni
+Postcommunio=Urbáni
+(sed rubrica tridentina)
+Postcommunio=Urbáno
 
 [Oratio]
-@Commune/C4b:Oratio1:s/N\./Urbáno/
-(sed rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4b:Oratio Gregem
+Da, quǽsumus, omnipotens Deus: ut qui beati Urbani Martyris tui atque Pontificis solemnia colimus, ejus apud te intercessionibus adjuvemur.
+$Per Dominum.
 
-[Secreta]
-@Commune/C4b:Secreta1:s/N\./Urbáno/
+[Oratio] (communi Summorum Pontificum)
+@Commune/C2b:Oratio pro commemoratio
+(sed rubrica 196)
+@Commune/C2b
 
-[Postcommunio]
-@Commune/C4b:Postcommunio1:s/N\./Urbáni/
+[Secreta] (communi Summorum Pontificum)
+@Commune/C2b:Secreta pro commemoratio
+
+[Postcommunio] (communi Summorum Pontificum)
+@Commune/C2b:Postcommunio pro commemoratio

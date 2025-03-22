@@ -1,14 +1,22 @@
+[Officium]
+S. Sabbæ Abbatis
+
 [Rank]
-S. Sabbæ Abbatis;;Simplex;;1.1;;vide C4c
+;;Simplex;;1.1;;vide C5b
 
 [Rule]
-vide C4c;
+vide C5b;
+
+[Name]
+Sabbæ
+Secreta=Sabbas
+Postcommunio=Sabbas
 
 [Oratio]
-@Commune/C4c:Oratio:s/N\./Sabbas/
+@Commune/C5b:Oratio:s/N\./Sabbas/
 
 [Secreta]
-@Commune/C4c:Secreta:s/N\./Sabbas/
+@Commune/C5b:Secreta:s/N\./Sabbas/
 
 [Postcommunio]
-@Commune/C4c:Postcommunio:s/N\./Sabbas/
+@Commune/C5b:Postcommunio:s/N\./Sabbas/

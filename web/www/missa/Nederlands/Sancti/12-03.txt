@@ -1,9 +1,8 @@
-[Rank]
-S. Francisci Xaverii Confessoris;;Duplex majus;;4;;vide C5
+[Officium]
+S. Francisci Xaverii Confessoris
 
-[Rule]
-vide C5;
-Gloria
+[Name]
+Franciscus
 
 [Introitus]
 !Ps 118:46-47
@@ -33,13 +32,7 @@ Gelukkig de man, die de beproeving verdraagt, want als hij de proef doorstaat, z
 @Sancti/08-08
 
 [Offertorium]
-@Commune/C2c
-
-[Secreta]
-@Commune/C5b
+@Commune/C2
 
 [Communio]
-@Commune/C4d
-
-[Postcommunio]
-@Commune/C5b:Postcommunio:s/N\./Franciscus/
+@Commune/C4-1

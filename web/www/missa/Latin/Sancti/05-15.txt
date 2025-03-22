@@ -1,11 +1,14 @@
+[Officium]
+S. Joannis Baptistæ de la Salle Confessoris
+
 [Rank]
-S. Joannis Baptistæ de la Salle Confessoris;;Duplex;;3;;vide C5
+;;Duplex;;3;;vide C5
 
 [Rule]
 Gloria
 
 [Introitus]
-@Commune/C4c
+@Commune/C5b
 
 [Oratio]
 Deus, qui, ad christiánam páuperum eruditiónem et ad juvéntam in via veritátis firmándam, sanctum Joánnem Baptístam Confessórem excitásti, et novam per eum in Ecclésia famíliam collegísti: concéde propítius; ut ejus intercessióne et exémplo, stúdio glóriæ tuæ in animárum salúte fervéntes, ejus in cœlis corónæ partícipes fíeri valeámus.
@@ -27,14 +30,7 @@ Sequéntia ++ sancti Evangélii secúndum Matthǽum.
 In illo témpore: Accessérunt discípuli ad Jesum, dicéntes: Quis, putas, major est in regno cœlórum? Et ádvocans Jesus párvulum, státuit eum in médio eórum et dixit: Amen, dico vobis, nisi convérsi fuéritis et efficiámini sicut párvuli, non intrábitis in regnum cœlórum. Quicumque ergo humiliáverit se sicut párvulus iste, hic est major in regno cœlórum. Et qui suscéperit unum párvulum talem in nómine meo, me súscipit.
 
 [Offertorium]
-@Commune/C2c
-
-[Secreta]
-Laudis tibi, Dómine, hóstias immolámus in tuórum commemoratióne Sanctórum: quibus nos et præséntibus éxui malis confídimus et futúris.
-$Per Dominum
+@Commune/C2
 
 [Communio]
-@Commune/C4d
-
-[Postcommunio]
-@Commune/C5
+@Commune/C4-1

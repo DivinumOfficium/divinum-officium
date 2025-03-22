@@ -1,9 +1,5 @@
-[Rank]
-S. Gregorii Barbadici Episcopi Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-vide C4;
-Gloria
+[Officium]
+Św. Grzegorza Barbarigo, Biskupa i Wyznawcy
 
 [Comment]
 # 17 VI – Św. Grzegorza Barbarigo, Biskupa i Wyznawcy
@@ -11,6 +7,9 @@ Gloria
 ! Szaty białe
 Św. Grzegorz Barbarigo urodził się w Wenecji 16 września 1525 r. Po świetnie ukończonych studiach prawniczych wstąpił do stanu duchownego. W roku 1657 papież Aleksander VII mianował go biskupem Bergamo, trzy lata później kardynałem, a w roku 1664 arcybiskupem Padwy. Św. Grzegorz gorliwie pracował nad wprowadzeniem w życie ustaw Soboru Trydenckiego. Szczególną opieką otaczał seminaria duchowne. W trosce o misje ufundował katedrę języków wschodnich i drukarnię wyposażoną w czcionki umożliwiające drukowanie w tych językach; aby zaś ulżyć nędzy ubogich wyzbył się sprzętów domowych i odzieży. Zmarł w Padwie 18 czerwca 1697 roku.
 Msza wspólna nr 9 Statuit, z wyjątkiem kolekty
+
+[Name]
+Grzegorz
 
 [Introitus]
 @Commune/C4:Introitus
@@ -31,11 +30,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C4:Offertorium
 
-[Secreta]
-@Commune/C4:Secreta
-
 [Communio]
 @Commune/C4:Communio
-
-[Postcommunio]
-@Commune/C4:Postcommunio

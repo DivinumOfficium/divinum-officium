@@ -1,5 +1,10 @@
+[Officium]
+S. Petri Canisii Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Petri Canisii Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
+;;Duplex;;3;;vide C5a
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C5a
 
 [Rule]
 vide C5a;
@@ -7,16 +12,10 @@ Gloria
 CredoDA
 
 [Name]
-Petre
+Petrum
+Secreta=Petri
+Postcommunio=Petrus
 
 [Oratio]
 Deus, qui ad tuéndam cathólicam fidem beátum Petrum Confessórem tuum virtúte et doctrína roborásti: concéde propítius; ut ejus exémplis et mónitis errántes ad salútem resipíscant, et fidéles in veritátis confessióne persevérent.
-$Per Dominum
-
-[Secreta]
-Sancti Petri Confessóris tui atque Doctóris nobis, Dómine, pia non desit orátio: quæ et múnera nostra concíliet; et tuam nobis indulgéntiam semper obtíneat.
-$Per Dominum.
-
-[Postcommunio]
-Ut nobis, Dómine, tua sacrifícia dent salútem: beátus Petrus Conféssor tuus et Doctor egrégius, quǽsumus, precátor accédat.
 $Per Dominum

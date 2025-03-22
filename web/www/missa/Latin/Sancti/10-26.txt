@@ -1,10 +1,16 @@
+[Officium]
+S. Evaristi Papæ et Martyris
+
 [Rank]
-S. Evaristi Papæ et Martyris;;Simplex;;1.2;;vide C4b
+;;Simplex;;1.2;;vide C2b
+(sed rubrica 1960)
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-OPapaM=Evarístum;
-vide C4b;
+vide C2b;
 Suffragium=Maria3;Papa;Ecclesia;;
 
-[Oratio]
-@Commune/C2c:Oratio:s/N\./Evarísti/
+[Name]
+Evarísti
+(sed communi Summorum Pontificum)
+Evarístum

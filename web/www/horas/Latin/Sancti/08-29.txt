@@ -1,11 +1,13 @@
-[Rank]
-In Decollatione S. Joannis Baptistæ;;Duplex majus;;4;;ex C2
+[Officium]
+In Decollatione S. Joannis Baptistæ
 
-[Rank] (rubrica 196 aut rubrica 1617)
-In Decollatione S. Joannis Baptistæ;;Duplex;;3;;vide C2
+[Rank]
+;;Duplex majus;;4;;ex C2a
+(sed rubrica 196 aut rubrica 1617)
+;;Duplex;;3;;vide C2a
 
 [Rule]
-ex C2;
+ex C2a;
 9 lectiones
 Psalmi Dominica
 Antiphonas Horas
@@ -67,7 +69,7 @@ Ex libro sancti Ambrósii Epíscopi de Virgínibus
 Quóniam beáti Joánnis Baptistæ non strictim prætereunda est recordátio, interest ut quis et a quibus et quam ob causam, quo modo et quo témpore sit occisus, advertere debeamus. Ab adúlteris justus occíditur, et a reis in judicem capitális sceleris pœna convértitur. Deínde præmium saltatricis, mors est Prophetæ. Postremo (quod étiam omnes bárbari horrére consuevérunt) inter epulas atque convivia consummandæ crudelitátis profertur edictum; et a convívio ad carcerem, de carcere ad convivium feralis flagitii circumfertur obsequium. Quanta in uno facínore sunt crimina!
 
 [Responsory4]
-@Commune/C2:Responsory2
+@Commune/C2a:Responsory2
 
 [Lectio5]
 Quis non, cum e convívio ad carcerem cursari vidéret, putaret Prophétam jussum esse dimitti? Quis, inquam, cum audísset natalem esse Herodis, solemne convivium, puellæ optiónem eligéndi quod vellet datam; missum ad Joánnem ob solutiónem non arbitrarétur? Quid crudelitáti cum deliciis? quid cum funéribus voluptati? Rápitur ad pœnam Prophéta convivali témpore, convivali præcépto, quo non cuperet vel absolvi: perímitur gládio, caput ejus affertur in disco. Hoc crudelitáti férculum debebátur, quo insatiáta épulis féritas vescerétur.
@@ -105,16 +107,16 @@ Homilía sancti Augustíni Epíscopi
 Cum sanctum Evangélium legerétur, crudele spectaculum ante óculos nostros constitutum est: caput sancti Joánnis in disco, feralis missus crudelitátis propter ódium veritátis. Puella saltat, et sævit mater; et inter lascivias et delicias convivántium témere jurátur, et ímpie, quod jurátur, implétur. Factum est Joánni, quod ipse prædixerat; de Dómino enim Jesu Christo dixerat: Illum oportet crescere, me autem minui. Iste minutus est in cápite, ille crevit in cruce. Odium péperit véritas. Non pótuit æquo animo tolerári quod homo Dei sanctus monebat; qui útique salútem eórum quærebat, quos sic monebat. Respondérunt illi mala pro bonis.
 
 [Responsory7]
-@Commune/C2:Responsory5
+@Commune/C2a:Responsory5
 
 [Lectio8]
 Quid enim ille diceret, nisi quo plenus erat? et quid illi respondérent, nisi quo pleni erant? Ille tríticum seminávit, sed spinas invénit. Dicebat regi: Non licet tibi habere uxórem fratris tui. Vincebat enim regem libído: tenebat apud se prohíbitam uxórem fratris sui. Sed eum tamen sic libebat, ut non sæviret; honorábat eum, a quo verum audiebat. Sed mulier detestábilis ódium concipiebat, quod aliquándo dato témpore páreret. Quando autem parturiebat, péperit filiam, filiam saltántem.
 
 [Responsory8]
-@Commune/C2:Responsory6
+@Commune/C2a:Responsory6
 
 [Versum 0]
-@Commune/C2::s/N\./Joánnes Baptísta/
+@Commune/C2a::s/N\./Joánnes Baptísta/
 
 [Ant Laudes]
 @:Ant Vespera

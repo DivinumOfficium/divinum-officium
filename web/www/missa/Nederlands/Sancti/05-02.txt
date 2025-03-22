@@ -1,18 +1,11 @@
-[Rank]
-S. Athanasii Confessoris Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-Gloria
-CredoDA
+[Officium]
+S. Athanasii Confessoris Ecclesiæ Doctoris
 
 [Name]
 Athanasius
 
 [Introitus]
 @Commune/C4a
-
-[Oratio]
-@Commune/C4d:Oratio:s/N\./Athanasius/
 
 [Lectio]
 Lezing uit de Brief van de heilige Apostel Paulus aan de Corínthiërs.
@@ -39,13 +32,7 @@ Gelukkig de man, die de beproeving doorstaat, want als hij de proef heeft doorst
 @Sancti/03-18
 
 [Offertorium]
-@Commune/C2b
-
-[Secreta]
-@Commune/C4d:Secreta:s/N\./Athanasius/
+@Commune/C2a
 
 [Communio]
-@Commune/C3b
-
-[Postcommunio]
-@Commune/C4d:Postcommunio:s/N\./Athanasius/
+@Commune/C3a-1

@@ -1,16 +1,17 @@
+[Officium]
+S. Antonini Episcopi et Confessoris
+
 [Rank]
-S. Antonini Episcopi Confessoris;;Duplex;;3;;vide C4
+;;Duplex;;3;;vide C4
 
 [Rule]
 vide C4;mtv
-9 lectiones
+Gloria
+
+[Name]
+Antoníni
+Postcommunio=Antoníno
 
 [Oratio]
 Sancti Antoníni, Dómine, Confessóris tui atque Pontíficis méritis adjuvémur: ut, sicut te in illo mirábilem prædicámus, ita in nos misericórdem fuísse gloriémur.
 $Per Dominum
-
-[Secreta]
-@Commune/C4
-
-[Postcommunio]
-@Commune/C4::s/N\./Antoníno/

@@ -1,10 +1,7 @@
-[Rank]
-S. Hilarii Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDa
+[Officium]
+Św. Hilarego Biskupa Wyznawcy Doktora Kościoła
+(sed rubrica 1570 aut rubrica 1617)
+Św. Hilarego Biskupa Wyznawcy 
 
 [Comment]
 # 14 I – Św. Hilarego, Biskupa, Wyznawcy i Doktora Kościoła
@@ -12,33 +9,6 @@ CredoDa
 ! Szaty białe
 Św. Hilary, biskup Poitiers, nieustannie gromił herezję ariańską w swoich kazaniach i przemówieniach synodalnych. Cesarz Konstancjusz, zwolennik arianizmu, dwukrotnie skazywał go na wygnanie. Oprócz innych dzieł św. Hilary napisał «Dwanaście ksiąg o Trójcy Przenajświętszej». Zmarł 13 stycznia 367 roku.
 
+
 [Name]
-Hilari
-
-[Introitus]
-@Commune/C4a:Introitus
-
-[Oratio]
-Boże, Tyś dał ludowi Swemu świętego Hilarego za pośrednika zbawienia wiecznego, spraw, prosimy Cię, abyśmy mogli mieć orędownikiem w niebie tego, który na ziemi był dla nas mistrzem życia.
-$Per Dominum.
-
-[Lectio]
-@Commune/C4a:Lectio
-
-[Graduale]
-@Commune/C4a:Graduale
-
-[Evangelium]
-@Commune/C4a:Evangelium
-
-[Offertorium]
-@Commune/C4a:Offertorium
-
-[Secreta]
-@Commune/C4a:Secreta
-
-[Communio]
-@Commune/C4a:Communio
-
-[Postcommunio]
-@Commune/C4a:Postcommunio
+Hilarego

@@ -1,11 +1,5 @@
-[Rank]
-In Conversione S. Pauli Apostoli;;Duplex majus;;4;;ex Sancti/06-30
-
-[Rule]
-ex Sancti/06-30;
-Gloria
-Credo
-Prefatio=Apostolis
+[Officium]
+In Conversione S. Pauli Apostoli
 
 [Introitus]
 !2 Tim 1:12
@@ -47,9 +41,6 @@ V. Verkondiger van de waarheid en leraar van de heidenen in geloof en waarheid.
 V. Door u hebben alle heidenen de genade van God leren kennen.
 V. Wees onze voorspreker bij God, die u heeft uitverkoren.
 
-[Evangelium]
-@Commune/C4c
-
 [Offertorium]
 !Ps 138:17
 Hoe hoog, o God, staan uw vrienden bij mij in ere, hoe machtig is hun heerschappij.
@@ -64,7 +55,7 @@ Wij vragen U, Heer, moge de voorbede van de heilige apostel Petrus voor de gebed
 $Per Dominum
 
 [Communio]
-@Commune/C5b
+@Commune/C5-1
 
 [Postcommunio]
 Geheiligd door uw heilsgeheim, vragen wij U, o Heer, dat ons nooit hoeft te ontbreken de voorbede van hem, die Gij ons tot beschermer en bestuurder hebt gegeven.

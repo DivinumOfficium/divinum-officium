@@ -1,8 +1,5 @@
-[Rank]
-Ss. Martyrum Machabaeorum;;Simplex;;1.1;;vide C3
-
-[Rule]
-vide C3;
+[Officium]
+S.S. Macabeus, Mártires
 
 [Comment]
 # 1 VIII – S.S. Macabeus, Mártires
@@ -26,7 +23,7 @@ V. É como o perfume suave espalhado na cabeça de Aarão, e que corre pela barb
 V. Esta é a verdadeira fraternidade que venceu os crimes do mundo: ela seguiu Cristo e por isso possuirá gloriosamente o reino do céu. Aleluia.
 
 [Evangelium]
-@Commune/C3b:Evangelium
+@Commune/C3a-1:Evangelium
 
 [Offertorium]
 !Sl 149:5-6

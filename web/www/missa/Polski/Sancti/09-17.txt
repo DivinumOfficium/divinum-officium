@@ -1,9 +1,5 @@
-[Rank]
-Impressionis Stigmatum S. Francisci;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-9 lectiones
+[Officium]
+Stygmatów Św. Franciszka
 
 [Comment]
 # 17 IX – Stygmatów św. Franciszka, Wyznawcy
@@ -17,7 +13,8 @@ Msza jak w dniu 4 października.
 @Sancti/10-04:Introitus
 
 [Oratio]
-@Sancti/10-04:Oratio
+Panie Jezu Chryste, który wśród wystygłego świata dla obudzenia w sercach naszych miłości Twojej, święte blizny męki Twojej na ciele błogosławionego Franciszka odnowiłeś, spraw, abyśmy przez zasługi i modlitwy jego, krzyż nasz mężnie dźwigali i czynili godne owoce pokuty:
+$Qui vivis
 
 [Lectio]
 @Sancti/10-04:Lectio
@@ -32,10 +29,8 @@ Msza jak w dniu 4 października.
 @Sancti/10-04:Offertorium
 
 [Secreta]
-@Sancti/10-04:Secreta
+Poświęć, Panie, złożone Ci dary i za przyczyną świętego Franciszka oczyść nas od wszelkiej zmazy przewinień.
+$Per Dominum
 
 [Communio]
 @Sancti/10-04:Communio
-
-[Postcommunio]
-@Sancti/10-04:Postcommunio

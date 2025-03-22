@@ -1,9 +1,16 @@
+[Officium]
+Ss. Marii, Marthæ, Audifacis, et Abachum Martyrum
+
 [Rank]
-Ss. Marii, Marthæ, Audifacis et Abachum Martyrum;;Simplex;;1.1;;vide C3
+;;Simplex;;1.1;;vide C3a
 
 [Rule]
-vide C3;
+vide C3a;
 Gloria
+
+[Oratio]
+Exáudi, Dómine, pópulum tuum cum Sanctórum tuórum patrocínio supplicántem: ut et temporális vitæ nos tríbuas pace gaudére; et ætérnæ reperíre subsídium.
+$Per Dominum
 
 [Introitus]
 !Ps 67:4
@@ -13,12 +20,8 @@ Exsúrgat Deus, et dissipéntur inimíci ejus: et fúgiant qui odérunt eum, a f
 &Gloria
 v. Justi epuléntur et exsúltent in conspéctu Dei et delecténtur in lætítia.
 
-[Oratio]
-Exáudi, Dómine, pópulum tuum cum Sanctórum tuórum patrocínio supplicántem: ut et temporális vitæ nos tríbuas pace gaudére; et ætérnæ reperíre subsídium.
-$Per Dominum
-
 [Lectio]
-@Commune/C3b
+@Commune/C3a-1
 
 [Graduale]
 !Sap 3:1; 3:2; 3:3

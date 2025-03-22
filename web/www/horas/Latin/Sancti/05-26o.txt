@@ -1,12 +1,18 @@
+[Officium]
+S. Eleutherii Papæ et Martyris
+
 [Rank]
-S. Eleutherii Papæ et Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C2;
-OPapaM=Eleuthérium;
+vide C2b;
 
-[Oratio]
-@Commune/C2::s/N\./Eleuthérii/
+[Name]
+Eleuthérii
+(sed communi Summorum Pontificum)
+Eleuthérium
+Secreta=Eleuthérii
+Postcommunio=Eleuthério
 
 [Lectio93]
 Eleutherius, Nicopoli in Græcia natus, Aniceti Pontificis diaconus, Commodo imperatóre, præfuit Ecclésiæ. Huic, inítio pontificatus, supplices litteræ venérunta Lucio Britannórum rege, ut se ac suos in Christianórum númerum reciperet. Quam ob rem Fugatium et Damianum, doctos et pios viros, misit in Britanniam, per quos rex et réliqui fidem susciperent. Hoc Pontifice, Irenæus Polycarpi discipulus, Romam veniens, ab eo benígne acceptus est. Quo témpore summa pace et quiete fruebátur Ecclésia Dei; ac per totum orbem terrárum, maxime Romæ, fides propagabátur. Vixit Eleutherius in pontificatu annos quindecim, dies viginti tres. Fecit ordinatiónes tres mense Decembri, quibus creávit presbyteros duodecim, diaconos octo, episcopos per diversa loca quindecim: sepúltusque est in Vaticano prope corpus sancti Petri.

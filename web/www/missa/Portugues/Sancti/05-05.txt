@@ -1,41 +1,14 @@
-[Rank]
-S. Pii V Papae Confessoris;;Duplex;;3;;vide C4b
-
-[Rule]
-Gloria
+[Officium]
+São Pio V, Papa e Confessor
 
 [Comment]
 # 05 V – São Pio V, Papa e Confessor
 ! 3 classe
 ! Paramentos brancos
 
-[Introitus]
-@Commune/C4b:Introitus
+[Name]
+Pio
 
 [Oratio]
 Ó Deus, que para esmagar os inimigos da vossa Igreja e reformar o culto divino Vos dignastes escolher o B. Pio para Sumo Pontífice, permiti que sejamos munidos com o socorro da sua protecção; e de tal modo nos liguemos ao vosso serviço que, depois de havermos triunfado das insídias de todos os inimigos, gozemos a alegria da eterna paz.
 $Per Dominum
-
-[Lectio]
-@Commune/C4b:Lectio
-
-[Graduale]
-@Commune/C4b:Graduale
-
-[GradualeP]
-@Commune/C4b:GradualeP
-
-[Evangelium]
-@Commune/C4b:Evangelium
-
-[Offertorium]
-@Commune/C4b:Offertorium
-
-[Secreta]
-@Commune/C4b:Secreta
-
-[Communio]
-@Commune/C4b:Communio
-
-[Postcommunio]
-@Commune/C4b:Postcommunio

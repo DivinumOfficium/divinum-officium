@@ -1,12 +1,15 @@
+[Officium]
+S. Augustini Episcopi et Confessoris
+
 [Rank]
-S. Augustini Episcopi Confessoris;;Duplex;;3;;vide C4
+;;Duplex;;3;;vide C4-1
 
 [Rule]
-vide C4;mtv
+vide C4-1;mtv
 Gloria
 
 [Introitus]
-@Commune/C4d
+@Commune/C4-1
 
 [Oratio]
 Deus, qui Anglórum gentes, prædicatióne et miráculis beáti Augustíni Confessóris tui atque Pontíficis, veræ fídei luce illustráre dignátus es: concéde; ut, ipso interveniénte, errántium corda ad veritátis tuæ rédeant unitátem, et nos in tua simus voluntáte concórdes.
@@ -18,23 +21,23 @@ Léctio Epístolæ beáti Pauli Apóstoli ad Thessalonicénses
 Fratres: Fidúciam habúimus in Deo nostro loqui ad vos Evangélium Dei in multa sollicitúdine. Exhortátio enim nostra non de erróre neque de immundítia neque in dolo, sed sicut probáti sumus a Deo, ut crederétur nobis Evangélium: ita lóquimur, non quasi homínibus placéntes, sed Deo, qui probat corda nostra. Neque enim aliquándo fuimus in sermóne adulatiónis, sicut scitis: neque in occasióne avarítiæ: Deus testis est: nec quæréntes ab homínibus glóriam, neque a vobis neque ab áliis; cum possémus vobis óneri esse ut Christi Apóstoli: sed facti sumus párvuli in médio vestrum, tamquam si nutrix fóveat fílios suos. Ita desiderántes vos, cúpide volebámus trádere vobis non solum Evangélium Dei, sed étiam ánimas nostras: quóniam caríssimi nobis facti estis. Mémores enim estis, fratres, labóris nostri et fatigatiónis: nocte ac die operántes, ne quem vestrum gravarémus, prædicávimus in vobis Evangélium Dei.
 
 [Graduale]
-@Commune/C4d
+@Commune/C4-1
 
 [GradualeP]
-@Commune/C4d
+@Commune/C4-1
 
 [Evangelium]
 @Sancti/02-06
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
 Sacrifícium tibi offérimus, Dómine, in sollemnitáte beáti Augustíni Pontíficis et Confessóris tui, humíliter deprecántes: ut oves, quæ periérunt, ad unum ovile revérsæ, hoc salutári pábulo nutriántur.
 $Per Dominum
 
 [Communio]
-@Commune/C4d
+@Commune/C4-1
 
 [Postcommunio]
 Hóstia salutári refécti: te, Dómine, súpplices exorámus; ut eadem, beáti Augustíni interveniénte suffrágio, in omni loco nómini tuo júgiter immolétur.

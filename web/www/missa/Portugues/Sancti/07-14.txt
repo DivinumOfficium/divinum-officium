@@ -1,17 +1,15 @@
-[Rank]
-S. Bonaventurae Episcopi Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rank] (rubrica 1570)
-S. Bonaventurae Episcopi Confessoris;;Semiduplex;;2;;vide C4a
+[Officium]
+São Boaventura, Bispo, Confessor e Doutor
+(sed rubrica 1570)
+S. Bonaventuræ Episcopi Confessoris
 
 [Comment]
 # 14 VII – São Boaventura, Bispo, Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
 
-[Oratio]
-Ó Deus, que ao vosso povo destinastes o B. Boaventura para ministro da eterna salvação, concedei-nos, Vos suplicamos, que, assim como o tivemos como Doutor durante a nossa vida na terra, assim gozemos a sua intercessão no céu.
-$Per Dominum
+[Name]
+Boaventura
 
 [Graduale]
 !Sl 36:30-31
@@ -23,13 +21,5 @@ O Senhor jurou, e não se arrependerá: tu és sacerdote para sempre segundo a o
 [Offertorium]
 A minha fidelidade e a minha misericórdia estarão com ele: e o seu poder exaltar-se-á pelo meu nome.
 
-[Secreta]
-Que a festa anual do vosso santo Confessor e Pontífice  N. nos torne agradáveis à vossa bondade, Vos suplicamos, Senhor, a fim de que a piedosa oferta desta vítima de expiação lhe aumente a felicidade, que goza como recompensa, e nos obtenha os dons da vossa graça.
-$Per Dominum
-
 [Communio]
 @Commune/C4a:Communio
-
-[Postcommunio]
-Ó Deus, remunerador das almas fiéis, dignai-Vos permitir que pelas orações do B. Pontífice e Confessor  N., cuja veneranda festa celebramos, obtenhamos o perdão dos nossos pecados.
-$Per Dominum

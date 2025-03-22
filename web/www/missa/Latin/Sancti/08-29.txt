@@ -1,8 +1,13 @@
+[Officium]
+In Decollatione S. Joannis Baptistæ
+
 [Rank]
-Decollatione S. Joannis Baptistæ;;Duplex majus;;4;;ex C2
+;;Duplex majus;;4;;ex C2a
+(sed rubrica 196 aut rubrica 1617)
+;;Duplex;;3;;vide C2a
 
 [Rule]
-ex C2;
+ex C2a;
 Gloria
 
 [Introitus]
@@ -37,7 +42,7 @@ Sequéntia ++ sancti Evangélii secúndum Marcum
 In illo témpore: Misit Heródes, ac ténuit Joánnem, et vinxit eum in cárcere propter Herodíadem, uxorem Philíppi fratris sui, quia dúxerat eam. Dicebat enim Joánnes Heródi: Non licet tibi habére uxórem fratris tui. Heródias autem insidiabátur illi, et volébat occídere eum, nec póterat. Heródes enim metuébat Joánnem, sciens eum virum justum et sanctum: et custodiébat eum, et audíto eo multa faciébat, et libénter eum audiébat. Et cum dies opportúnus accidísset, Heródes natális sui cœnam fecit princípibus et tribúnis et primis Galilææ. Cumque introísset fília ipsíus Herodíadis, et saltásset, et placuísset Heródi simúlque recumbéntibus; rex ait puéllæ: Pete a me, quod vis, et dabo tibi. Et jurávit illi: Quia quidquid petiéris dabo tibi, licet dimídium regni mei. Quæ cum exiísset, dixit matri suæ: Quid petam? At illa dixit: Caput Joánnis Baptístæ. Cumque introísset statim cum festinatióne ad regem, petívit dicens: Volo, ut protínus des mihi in disco caput Joánnis Baptístæ. Et contristátus est rex: propter jusjurándum et propter simul discumbéntes nóluit eam contristáre: sed misso spiculatóre, præcépit afférri caput ejus in disco. Et decollávit eum in cárcere. Et áttulit caput ejus in disco: et dedit illud puéllæ, et puella dedit matri suæ. Quo audíto, discípuli ejus venérunt et tulérunt corpus ejus: et posuérunt illud in monuménto.
 
 [Offertorium]
-@Commune/C5b
+@Commune/C5-1
 
 [Secreta]
 Múnera, quæ tibi, Dómine, pro sancti Martyris tui Joánnis Baptístæ passióne deférimus: quǽsumus; ut ejus obténtu nobis profíciant ad salútem.

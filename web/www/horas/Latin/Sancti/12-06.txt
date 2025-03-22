@@ -1,8 +1,16 @@
-[Rank]
-S. Nicolai Episcopi et Confessoris;;Duplex;;3;;vide C4
+[Officium]
+S. Nicolai Episcopi et Confessoris
 
-[Rank] (rubrica 1570 aut rubrica 1617)
-S. Nicolai Episcopi et Confessoris;;Semiduplex;;2.2;;vide C4
+[Rank]
+;;Duplex;;3;;vide C4
+(sed rubrica 1570 aut rubrica 1617)
+;;Semiduplex;;2.2;;vide C4
+(sed rubrica 1930 aut rubrica 1963)
+;;Simplex;;1.1;;vide C4
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;vide C4
+(sed rubrica altovadensis)
+;;Duplex I. classis;;6;;ex C4
 
 [Rule]
 vide C4;
@@ -26,4 +34,4 @@ Nicoláus, illústri loco Pátaræ in Lýcia natus, quarta et sexta féria ab in
 &teDeum
 
 [Versum 0]
-@Commune/C2::s/N\./Nicoláe/
+@Commune/C2a::s/N\./Nicoláe/

@@ -1,9 +1,8 @@
-[Rank]
-S. Gregorii Thaumaturgi Episcopi et Confessoris;;Semiduplex;;2;;vide C4
+[Officium]
+Św. Grzegorza Cudotwórcy Biskupa i Wyznawcy
 
-[Rule]
-vide C4;
-Gloria
+[Name]
+Grzegorza
 
 [Comment]
 # 17 XI – Św. Grzegorza Cudotwórcy, Biskupa i Wyznawcy
@@ -13,10 +12,6 @@ Gloria
 
 [Introitus]
 @Commune/C4:Introitus
-
-[Oratio]
-Spraw, prosimy Cię, wszechmogący Boże, aby chwalebna uroczystość świętego Grzegorza, Twego Wyznawcy i Biskupa, przysporzyła nam gorliwości i łaski do zbawienia.
-$Per Dominum
 
 [Lectio]
 @Commune/C4:Lectio
@@ -32,11 +27,5 @@ Onego czasu: Jezus odpowiadając swoim uczniom rzekł im «Miejcie wiarę w Boga
 [Offertorium]
 @Commune/C4:Offertorium
 
-[Secreta]
-@Commune/C4:Secreta
-
 [Communio]
 @Commune/C4:Communio
-
-[Postcommunio]
-@Commune/C4:Postcommunio

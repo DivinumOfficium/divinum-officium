@@ -1,11 +1,8 @@
-[Rank]
-St. Thomas of Canterbury, Bishop and Martyr;;Duplex;;3;;vide C2
+[Officium]
+St. Thomas of Canterbury, Bishop and Martyr
 
-[Rule]
-vide C2;
-Gloria
-Credo
-Prefatio=Nat
+[Name]
+Thomas
 
 [Introitus]
 !   
@@ -53,10 +50,6 @@ $Per eumdem
 [Communio]
 !John 10:14
 I am the Good Shepherd: and I know My sheep, and Mine know Me.
-
-[Postcommunio]
-May this Communion, O Lord, cleanse us from sin and, by the intercession of blessed Thomas, Your martyr and bishop, impart to us heavenly healing.
-$Per Dominum
 
 [Commemoratio Postcommunio]
 !For Octave of Nativity

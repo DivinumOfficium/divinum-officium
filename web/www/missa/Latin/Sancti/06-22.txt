@@ -1,12 +1,17 @@
+[Officium]
+S. Paulini Episcopi et Confessoris
+
 [Rank]
-S. Paulini Episcopi et Confessoris;;Duplex;;3;;vide C4
+;;Duplex;;3;;vide C4
+(sed rubrica innovata)
+;;Simplex;;1.1;;vide C4
 
 [Rule]
 vide C4;
 Gloria
 
 [Introitus]
-@Commune/C4d
+@Commune/C4-1
 
 [Oratio]
 Deus, qui ómnia pro te in hoc sǽculo relinquéntibus, céntuplum in futúro et vitam ætérnam promisísti: concéde propítius; ut, sancti Pontíficis Paulíni vestígiis inhæréntes, valeámus terréna despícere et sola cœléstia desideráre:
@@ -21,10 +26,10 @@ Fratres: Scitis grátiam Dómini nostri Jesu Christi, quóniam propter vos egén
 @Commune/C4
 
 [Evangelium]
-@Commune/C5b
+@Commune/C5-1
 
 [Offertorium]
-@Commune/C2b
+@Commune/C2-1
 
 [Secreta]
 Da nobis, Dómine, perféctæ caritátis sacrifícium, exémplo sancti Pontíficis Paulíni, cum altáris oblatióne conjúngere: et beneficéntiæ stúdio sempitérnam misericórdiam promeréri.

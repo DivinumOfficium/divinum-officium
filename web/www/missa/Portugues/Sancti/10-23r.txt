@@ -1,39 +1,32 @@
-[Rank]
-S. Antonii Mariae Claret Episcopi Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-vide C4;
-Gloria
+[Officium]
+S. António Maria Claret, Bispo e Confessor
 
 [Comment]
 # 23 X – S. António Maria Claret, Bispo e Confessor
 ! 3 classe
 ! Paramentos brancos
 
+[Name]
+António Maria
+
 [Introitus]
-@Commune/C4d:Introitus
+@Commune/C4-1:Introitus
 
 [Oratio]
 Ó Deus, que embelezastes o B. António Maria, vosso Confessor e Pontífice, com as virtudes apostólicas, e por ele fundastes na vossa Igreja novas congregações de clérigos e de virgens, concedei-nos, Vos suplicamos, que, esclarecidos com seus salutares conselhos e confortados com seus exemplos, consigamos com felicidade unirmo-nos convosco.
 $Per Dominum
 
 [Lectio]
-@Commune/C4d:Lectio
+@Commune/C4-1:Lectio
 
 [Graduale]
-@Commune/C4d:Graduale
+@Commune/C4-1:Graduale
 
 [Evangelium]
-@Commune/C4d:Evangelium
+@Commune/C4-1:Evangelium
 
 [Offertorium]
-@Commune/C4d:Offertorium
-
-[Secreta]
-@Commune/C4d:Secreta
+@Commune/C4-1:Offertorium
 
 [Communio]
-@Commune/C4d:Communio
-
-[Postcommunio]
-@Commune/C4d:Postcommunio
+@Commune/C4-1:Communio

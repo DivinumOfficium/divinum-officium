@@ -1,8 +1,15 @@
+[Officium]
+S. Callisti Papæ et Martyris
+
 [Rank]
-S. Callisti Papæ et Martyris;;Duplex;;3;;vide C4b
+;;Duplex;;3;;vide C2b
+(sed rubrica 1570)
+;;Semiduplex;;2.2;;vide C2b
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C4b;
+vide C2b;
 Gloria
 
 [Oratio]

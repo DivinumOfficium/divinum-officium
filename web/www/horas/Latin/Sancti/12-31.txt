@@ -1,26 +1,28 @@
-[Rank]
-S. Silvestri Papæ et Confessoris;;Duplex;;3;;vide C4
+[Officium]
+S. Silvestri Papæ et Confessoris
 
-[Rank] (rubrica 196)
-S. Silvestri Papæ et Confessoris;;Simplex;;1.1;;vide C4
+[Rank]
+;;Duplex;;3;;vide C4b
+(sed rubrica 196)
+;;Commemoratio;;2.9;;vide C4b
 
 [Rule]
-vide C4;
+vide C4b;
 9 lectiones
-OPapaC=Silvéstrum;
 Lectio1 OctNat
+
+[Name]
+Silvéstri
+(sed rubrica 196)
+Silvéstrum
 
 [Ant Vespera]
 @Sancti/12-25:Ant Vespera 3
 (sed rubrica cisterciensis)
 @Commune/C4
 
-[Oratio]
-Da, quǽsumus, omnípotens Deus: ut beáti Silvéstri Confessóris tui atque Pontíficis veneránda solémnitas, et devotiónem nobis áugeat et salútem.
-$Per Dominum.
-
-[Oratio] (rubrica 196)
-@Commune/C4:Oratio Gregem
+[Oratio] (nisi rubrica 196)
+@Commune/C4
 
 [Lectio4]
 Silvéster Románus, patre Rufíno, a prima ætáte óperam dedit Cyríno presbýtero; cujus doctrínam et mores egrégie imitátus est. Hic, sæviénte persecutióne, in Sorácte monte latitáverat; et trigésimum annum agens, présbyter sanctæ Románæ Ecclésiæ a Marcellíno Pontífice creátur. Quo in múnere cum omni laude cléricis áliis antecélleret, in Melchíadis póstea locum succéssit, imperatóre Constantíno, qui ántea pacem Ecclésiæ Christi lege pública déderat. Vix Ecclésiæ gubernácula tractánda suscéperat, Constantínum, jam Crucis signo cǽlitus illustrátum, et de hoste Maxéntio victórem, ad tuéndam propagandámque christiánam religiónem impénse fovit. Quem étiam, uti vetus Ecclésiæ Románæ refert tradítio, Apostolórum imágines recognóscere fecit, sacro baptísmate tinxit, et ab infidelitátis lepra mundávit.
@@ -34,19 +36,13 @@ Idem præscripsísse tráditur tempus ómnibus, qui ordínibus initiáti essent,
 [Lectio94]
 Silvéster Románus, patre Rufíno, sæviénte persecutióne, in Sorácte monte latitáverat; et trigésimum annum agens, présbyter sanctæ Románæ Ecclésiæ est creátus. Melchíade Pontífice vita functo, in ejus locum succéssit, imperatóre Constantíno, qui ántea pacem Ecclésiæ Christi lege pública déderat. Quem Silvéster ad tuéndam propagandámque religiónem ita fovit, ut imperátor multas eréxerit basílicas, eásque municicentíssime locupletárit. Hoc Pontífice hábitum est concílim Nicænum primum, ab ipso Silvéstro confirmátum, quo Aríus condemnátus fuit. Vitæ sanctitáte et in páuperes benignitáte insígnis, óbiit in pace et sepúltus es in cœmetério Priscíllæ.
 
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-(sed rubrica tridentina)
+[Lectio7] (rubrica tridentina)
 @Commune/C5
 
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-(sed rubrica tridentina)
+[Lectio8] (rubrica tridentina)
 @Commune/C5
 
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
-(sed rubrica tridentina)
+[Lectio9] (rubrica tridentina)
 @Commune/C5
 
 [Ant 3] (rubrica cisterciensis)

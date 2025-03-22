@@ -1,20 +1,24 @@
-[Rank]
-S. Cyrilli Episcopi Hierosolymitani Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Officium]
+S. Cyrilli Episcopi Hierosolymitani Confessoris et Ecclesiæ Doctoris
 
-[Rank](rubrica 196)
-S. Cyrilli Episcopi Hierosolymitani Ecclesiæ Doctoris;;Semiduplex;;2.1;;vide C4a
+[Rank]
+;;Duplex;;3;;vide C4a
+(sed rubrica 196)
+;;Semiduplex;;2.1;;vide C4a
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C4a
 
 [Rule]
 vide C4a;
 Gloria
-CredoDa
+CredoDA
 
 [Oratio]
 Da nobis, quǽsumus, omnípotens Deus, beáto Cyríllo Pontífice intercedénte: te solum verum Deum, et quem misísti Jesum Christum ita cognóscere; ut inter oves, quæ vocem ejus áudiunt, perpétuo connumerári mereámur.
 $Per eundem
 
 [Lectio]
-@Commune/C4a:Lectio1
+@Commune/C4a:Lectio in 2 loco
 
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Matthǽum

@@ -1,11 +1,5 @@
-[Rank]
-S. Ambrosii Episcopi Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDa
-no Vigil1960
+[Officium]
+Św. Ambrożego Biskupa Wyznawcy i Doktora Kościoła
 
 [Comment]
 # 07 XII – Św. Ambrożego, Biskupa, Wyznawcy i Doktora Kościoła
@@ -14,14 +8,11 @@ no Vigil1960
 Święty Ambroży był rządcą północnej Italii i prefektem Mediolanu. Jako katechumen został wybrany przez lud biskupem Mediolanu. 30 listopada 374 roku został ochrzczony, a 7 grudnia otrzymał sakrę biskupią. Dzielnie zwalczał herezję ariańską. Cesarza Teodozjusza skłonił do publicznej pokuty za rzeź w Tesalonikach. Pozyskał Kościołowi i ochrzcił św. Augustyna. Dzięki swoim pismom został uznany za jednego z czterech wielkich Doktorów Kościoła łacińskiego. Jest autorem wielu hymnów liturgicznych i organizatorem śpiewu kościelnego. Zmarł w noc Zmartwychwstania 4 kwietnia 397 roku.
 
 [Name]
-Ambrose
+Ambrożego
+Ant=Ambroży
 
 [Introitus]
 @Commune/C4a:Introitus
-
-[Oratio]
-Boże, Tyś dał ludowi Swemu św. Ambrożego za pośrednika zbawienia wiecznego, spraw, prosimy Cię, abyśmy mogli mieć orędownikiem w niebie tego, który na ziemi był dla nas mistrzem życia.
-$Per Dominum
 
 [Lectio]
 @Commune/C4a:Lectio

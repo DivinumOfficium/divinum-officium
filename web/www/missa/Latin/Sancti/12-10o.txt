@@ -1,14 +1,15 @@
+[Officium]
+S. Melchiadis Papæ et Martyris
+
 [Rank]
-S. Melchiades pope and martyr;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C2;
+vide C2b;
 
-[Oratio]
-@Commune/C2c::s/N\./Melchíadis/
-
-[Secreta]
-@Commune/C2c::s/N\./Melchíadis/
-
-[Postcommunio]
-@Commune/C2c::s/N\./Melchíadis/
+[Name]
+Melchíadis
+(sed communi Summorum Pontificum)
+Melchíadem
+Secreta=Melchíadis
+Postcommunio=Melchíade

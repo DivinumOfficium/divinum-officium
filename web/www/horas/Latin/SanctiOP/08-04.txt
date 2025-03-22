@@ -1,5 +1,8 @@
+[Officium]
+S. Dominici Confessoris Patris Nostri
+
 [Rank]
-S. Dominici Confessoris Patris Nostri;;;;6;;vide C4
+;;Duplex;;6;;vide C4
 
 [Rule]
 vide C4;
@@ -38,7 +41,7 @@ Ducat ad cæli gáudia.
 Amen.
 
 [Versum 1]
-@Commune/C2:Versum 0:s/N\./Domínice/
+@Commune/C2a:Versum 0:s/N\./Domínice/
 
 [Ant 1]
 Transit pauper ad regni sólium, dux ad sceptrum, victor ad prǽmium, mors in vitam, labor in ótium, præsens cedit luctus in gáudium.
@@ -87,7 +90,7 @@ Pernox cum Christo próprium non possidébat léctulum: post lacrimárum flúviu
 Sitiébat servus Christi martýrium, sicut sitit cervus ad aqua flúvium.;;14
 Migrans Pater fíliis, vitæ firmaméntum, paupertátis húmilis condit testaméntum.;;20
 Liber carnis vínculo cælum introívit, ubi pleno póculo gustat quod sitívit.;;23
-@Commune/C2:Versum 2
+@Commune/C2a:Versum 2
 
 [Lectio1]
 !1 Cor 1:20-25
@@ -257,7 +260,7 @@ R. Allelúja, allelúja.
 &Gloria
 R. Justum dedúxit Dóminus per vias rectas, * Allelúja, allelúja.
 _
-@Commune/C2:Versum 2
+@Commune/C2a:Versum 2
 
 [Capitulum Nona]
 !Mal 2:6

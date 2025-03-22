@@ -1,10 +1,17 @@
+[Officium]
+SS. Soteris et Caji Summorum Pontificum et Martyrum
+
 [Rank]
-SS. Soteris et Caji Summorum Pontificum et Martyrum;;Semiduplex;;2.2;;vide C3
+;;Semiduplex;;2.2;;vide C3b
 
 [Rule]
-vide C3;
+vide C3b;
 9 lectiones
-OPapaeM=Sotérem et Cajum;
+
+[Name]
+Sotéris et Caji
+(sed communi Summorum Pontificum)
+Sotérem et Cajum
 
 [Lectio4]
 Soter, Fundis in Campánia natus, sancívit ne sacræ vírgines vasa sacra et pallas attingerent, neve thuris ministerio in ecclésia uteréntur. Idem státuit ut Christi corpus in Cœna Dómini sumerétur ab ómnibus, iis exceptis, qui propter grave peccátum id fácere prohiberéntur. Sedit in pontificatu annos tres, menses undecim, dies decem et octo. Martyrio coronátur sub Marco Aurelio imperatóre, et in cœmeterio, quod póstea Callísti dictum est, sepelitur; more majórum mense Decembri creátis presbyteris decem et octo, diáconis novem, epíscopis per diversa loca undecim.
@@ -20,12 +27,3 @@ Dignum et congruum est, fratres, ut post lætítiam Paschæ, quam in Ecclésia c
 [Lectio94]
 Soter, Fundis in Campánia natus, sancívit ne sacræ vírgines vasa sacra et pallas attíngerent, neve thuris ministério in ecclésia uteréntur. Idem státuit, ut Christi corpus in Cena Dómini sumerétur ab ómnibus, iis excéptis, qui propter grave peccátum id fácere prohiberéntur. Martýrio coronátur sub Marco Aurélio imperatóre, sepúltus est in cœmetério, quod póstea Callísti dictum est. Cajus Dálmata ex génere Diocletiáni imperatóris, constítuit ut his órdinum et honórum grádibus in Ecclésia ad episcopátum ascenderétur: Ostiárii nempe, Lectóris, Exorcístæ, Acólythi, Subdiáconi, Diáconi, Presbýteri. Hic Diocletiáni crudelitátem in Christiános fúgiens, aliquámdiu in spelúnca delítuit; verum octo post annis una cum Gabíno fratre martýrii corónam consecútus, in cœmetério Callísti páriter sepúltus est.
 &teDeum
-
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco

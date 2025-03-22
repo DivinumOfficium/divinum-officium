@@ -1,10 +1,5 @@
-[Rank]
-S. Cajetani Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-9 lectiones
-Gloria
+[Officium]
+Św. Kajetana Wyznawcy
 
 [Comment]
 # 7 VIII – Św. Kajetana, Wyznawcy
@@ -13,6 +8,15 @@ Gloria
 Św. Kajetan urodził się w Vicenza w Italii roku 1480. Razem z Piotrem Carafa założył pierwsze zgromadzenie Kleryków Regularnych, nazwanych później Taatynami. Zakonnicy ci nie posiadali niczego i nie prosili o jałmużnę, zdając się całkowicie na łaskę Opatrzności (kolekta). Z powodu wielkiej gorliwości nazwano św. Kajetana «łowcą dusz». Zmarł on w Neapolu 7 sierpnia 1547 roku.
 
 Msza wspólna nr 21 Os iusti, z wyjątkiem kolekty, sekrety i pokomunii
+
+Św. Donata, Biskupa i Męczennika
+! Wspomnienie
+! Szaty czerwone
+Św. Donat, biskup Arezzo w Italii, poniósł śmierć męczeńską około roku 360.
+
+[Name]
+Kajetanowi
+Postcommunio=Kajetana
 
 [Introitus]
 @Commune/C5:Introitus
@@ -33,13 +37,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C5:Offertorium
 
-[Secreta]
-Prosimy Cię, wszechmogący Boże, aby nasza ofiara, którą w pokorze składamy Ci ku czci Twoich Świętych, była Tobie miła i oczyściła nasze dusze i ciała.
-$Per Dominum
-
 [Communio]
 @Commune/C5:Communio
-
-[Postcommunio]
-Prosimy Cię, wszechmogący Boże, aby pokarm niebieski, któryśmy przyjęli, chronił nas od wszelkich przeciwności za wstawiennictwem świętego Kajetana, Twojego Wyznawcy.
-$Per Dominum

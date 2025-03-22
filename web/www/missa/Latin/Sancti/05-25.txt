@@ -1,10 +1,19 @@
+[Officium]
+S. Gregorii VII Papæ et Confessoris
+(sed rubrica 1930 aut rubrica 1963)
+S. Gregorii VII Papæ et Confessoris O. N.
+
 [Rank]
-S. Gregorii VII Papæ Confessoris;;Duplex;;3;;vide C4b
+;;Duplex;;3;;vide C4b
 
 [Rule]
 vide C4b;
 9 lectiones
 Gloria
+
+[Name]
+Gregórium
+Postcommunio=Gregório
 
 [Introitus]
 @Commune/C4b
@@ -13,8 +22,8 @@ Gloria
 Deus, in te sperántium fortitúdo, qui beátum Gregórium Confessórem tuum atque Pontíficem, pro tuénda Ecclésiæ libertáte, virtúte constántiæ roborásti: da nobis, ejus exémplo et intercessióne, ómnia adversántia fórtiter superáre.
 $Per Dominum
 
-[Secreta]
+[Secreta] (nisi rubrica 196)
 @Commune/C4
 
-[Postcommunio]
-@Commune/C4::s/N\./Gregório/
+[Postcommunio] (nisi rubrica 196)
+@Commune/C4

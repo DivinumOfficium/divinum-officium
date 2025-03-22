@@ -1,7 +1,10 @@
+[Officium]
+In Octava S. Joannis Apostoli et Evangelistæ
+
 [Rank]
-In Octava S. Joannis Apostoli et Evangelistæ;;Simplex;;1.4;;vide Sancti/12-27
+;;Simplex;;1.4;;vide Sancti/12-27
 (sed rubrica tridentina)
-In Octava S. Joannis Apostoli et Evangelistæ;;Duplex;;3.2;;ex Sancti/12-27
+;;Duplex;;3.2;;ex Sancti/12-27
 
 [Rule]
 vide Sancti/12-27;
@@ -10,6 +13,8 @@ Comkey=70
 9 lectiones
 no secunda Vespera
 Lectio1 TempNat
+Gloria
+Prefatio=Apostolis
 
 [Rule] (rubrica tridentina)
 ex Sancti/12-27;
@@ -17,6 +22,9 @@ ex Sancti/12-27;
 Psalmi Dominica
 Antiphonas Horas
 Feria Te Deum
+Gloria
+Prefatio=Apostolis
+Credo
 
 [Commemoratio] (rubrica tridentina)
 @Sancti/12-28:Octava

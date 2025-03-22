@@ -1,5 +1,8 @@
+[Officium]
+S. Joannis Chrysostomi Episcopi Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Joannis Chrysostomi Episcopi Confessoris Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+;;Duplex;;3;;vide C4a
 
 [Rule]
 vide C4a
@@ -7,14 +10,16 @@ Gloria
 CredoDA
 
 [Name]
-Joannes Chrysostome
-
-[Introitus]
-@Commune/C4a
+Joánnis Chrysóstomi
+Secreta=Joánnis Chrysóstomi
+Postcommunio=Joánnes Chrysóstomus
 
 [Oratio]
 Ecclésiam tuam, quǽsumus, Dómine, grátia cœléstis amplíficet: quam beáti Joánnis Chrysóstomi Confessóris tui atque Pontíficis illustráre voluísti gloriósis méritis et doctrínis.
 $Per Dominum
+
+[Introitus]
+@Commune/C4a
 
 [Lectio]
 @Commune/C4a
@@ -40,11 +45,5 @@ V. Glória et divítiæ in domo ejus: et justítia ejus manet in sǽculum sǽcul
 [Offertorium]
 @Commune/C4a
 
-[Secreta]
-@Commune/C4a:Secreta:s/N\./Joánnis Chrysóstomi/
-
 [Communio]
 @Commune/C4
-
-[Postcommunio]
-@Commune/C4a:Postcommunio:s/N\./Joánnes Chrysóstomus/

@@ -1,11 +1,12 @@
+[Officium]
+S. Cyrilli Episc. Alexandrini Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Cyrilli Episc. Alexandrini Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
-
-[Rank] (rubrica 1963)
-S. Cyrilli Episc. Alexandrini Confessoris et Ecclesiæ Doctoris;;Simplex;;1.1;;vide C4
-
-[Rank] (rubrica innovata)
-S. Cyrilli Episc. Alexandrini Confessoris et Ecclesiæ Doctoris;;Duplex optional;;2;;vide C4a
+;;Duplex;;3;;vide C4a
+(sed rubrica innovata)
+;;Duplex optional;;2;;vide C4a
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C4a
 
 [Rule]
 vide C4a;mtv

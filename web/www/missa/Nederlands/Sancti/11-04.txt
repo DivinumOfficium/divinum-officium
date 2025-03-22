@@ -1,12 +1,11 @@
-[Rank]
-S. Caroli Episcopi et Confessoris;;Duplex;;3;;vide C4
+[Officium]
+S. Caroli Episcopi et Confessoris
 
-[Rule]
-vide C4;
-9 lectiones
+[Name]
+Carolus
 
 [Introitus]
-@Commune/C2c
+@Commune/C2a
 
 [Oratio]
 Behoed uw Kerk, o Heer, door de blijvende bescherming van uw heilige bisschop en belijder Carolus, opdat zijn voorspraak ons altijd doe branden van liefde tot U, zoals zijn herderlijke zorg hem de glorie heeft bereid.
@@ -28,13 +27,7 @@ Gij zijt priester voor eeuwig naar de wijze van Melchisedech. Alleluia.
 @Commune/C4
 
 [Offertorium]
-@Commune/C2b
-
-[Secreta]
-@Commune/C4
+@Commune/C2-1
 
 [Communio]
 @Commune/C4
-
-[Postcommunio]
-@Commune/C4:Postcommunio:s/N\./Carolus/

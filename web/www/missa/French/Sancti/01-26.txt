@@ -1,12 +1,12 @@
-[Rank]
-S. Polycarpi Episcopi et Martyris;;Duplex;;3;;vide C2
+[Officium]
+S. Polycarpi Episcopi et Martyris
 
-[Rank] (rubrica 1570)
-S. Polycarpi Episcopi et Martyris;;Simplex;;1.1;;vide C2
+[Name]
+Polycarpe
 
-[Rule]
-vide C2;
-Gloria
+[Oratio]
+O Dieu, qui nous donnez chaque année un nouveau sujet de joie par la solennité de votre Martyr et Pontife, le bienheureux Polycarpe, accordez-nous, dans votre miséricorde, de pouvoir ressentir les effets de la protection de celui dont nous célébrons la naissance.
+$Per Dominum
 
 [Introitus]
 !Dan 3:84; 3:87
@@ -15,10 +15,6 @@ v. Prêtres du Seigneur, bénissez le Seigneur ; saints et humbles de cœur, lou
 Œuvres du Seigneur, louez toutes le Seigneur, louez-le, et exaltez-le à jamais.
 &Gloria
 v. Prêtres du Seigneur, bénissez le Seigneur ; saints et humbles de cœur, louez Dieu.
-
-[Oratio]
-O Dieu, qui nous donnez chaque année un nouveau sujet de joie par la solennité de votre Martyr et Pontife, le bienheureux Polycarpe, accordez-nous, dans votre miséricorde, de pouvoir ressentir les effets de la protection de celui dont nous célébrons la naissance.
-$Per Dominum
 
 [Lectio]
 Léctio Epístolæ beáti Joánnis Apóstoli
@@ -41,7 +37,7 @@ V. Car vous l'avez prévenu des plus douces bénédictions.
 V. Vous avez placé sur sa tête une couronne de pierres précieuses.
 
 [Evangelium]
-@Commune/C2a:Evangelium
+@Commune/C2a-1:Evangelium
 
 [Offertorium]
 !Ps 88:21-22

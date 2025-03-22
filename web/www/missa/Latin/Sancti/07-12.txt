@@ -1,35 +1,24 @@
+[Officium]
+S. Joannis Gualberti Abbatis
+
 [Rank]
-S. Joannis Gualberti Abbatis;;Duplex;;3;;vide C5
+;;Duplex;;3;;vide C5
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C5
 
 [Rule]
 vide C5;
 Gloria
 
-[Introitus]
-@Commune/C4c
-
-[Oratio]
-@Commune/C4c:Oratio:s/N\./Joánnis Gualbérti/
-
-[Lectio]
-@Commune/C4c
-
-[Graduale]
-@Commune/C4c
+[Name]
+Joánnis
+Secreta=Joánnes
+Postcommunio=Joánnes
 
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Matthǽum
 !Matt 5:43-48
 In illo témpore: Dixit Jesus discípulis suis: Audístis, quia dictum est: Diliges próximum tuum, et ódio habébis inimícum tuum. Ego autem dico vobis: Dilígite inimícos vestros, benefácite his, qui odérunt vos, et oráte pro persequéntibus et calumniántibus vos, ut sitis fílii Patris vestri, qui in cœlis est: qui solem suum oriri facit super bonos et malos, et pluit super justos et injústos. Si enim dilígitis eos, qui vos díligunt, quam mercédem habébitis? nonne et publicáni hoc fáciunt? Et si salutavéritis fratres vestros tantum, quid ámplius fácitis? nonne et éthnici hoc fáciunt? Estóte ergo vos perfécti, sicut et Pater vester cœléstis perféctus est.
 
-[Offertorium]
-@Commune/C4c
-
-[Secreta]
-@Commune/C4c:Secreta:s/N\./Joánnis Gualbérti/
-
 [Communio]
 @Commune/C4
-
-[Postcommunio]
-@Commune/C4c:Postcommunio:s/N\./Joánnis Gualbérti/

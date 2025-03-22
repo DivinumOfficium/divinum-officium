@@ -1,39 +1,26 @@
+[Officium]
+S. Pii V Papæ et Confessoris
+
 [Rank]
-S. Pii V Papæ Confessoris;;Duplex;;3;;vide C4b
+;;Duplex;;3;;vide C4b
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C4b
+(sed rubrica innovata)
+;;Duplex optional;;2;;vide C4b
 
 [Rule]
 Gloria
 
-[Introitus]
-@Commune/C4b
+[Name]
+Pium
+Postcommunio=Pio
 
 [Oratio]
 Deus, qui, ad conteréndos Ecclésiæ tuæ hostes et ad divínum cultum reparándum, beátum Pium Pontíficem Máximum elígere dignátus es: fac nos ipsíus deféndi præsídiis et ita tuis inhærére obséquiis; ut, ómnium hóstium superátis insídiis, perpétua pace lætémur.
 $Per Dominum
 
-[Lectio]
-@Commune/C4b
-
-[Graduale]
-@Commune/C4b
-
-[Evangelium]
-@Commune/C4b
-
-[Offertorium]
-@Commune/C4b
-
-[Secreta]
+[Secreta] (nisi rubrica 196)
 @Commune/C4
 
-[Secreta] (rubrica 196)
-@Commune/C4b
-
-[Communio]
-@Commune/C4b
-
-[Postcommunio]
-@Commune/C4::s/N\./Pio/
-
-[Postcommunio] (rubrica 196)
-@Commune/C4b
+[Postcommunio] (nisi rubrica 196)
+@Commune/C4

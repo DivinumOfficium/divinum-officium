@@ -1,9 +1,5 @@
-[Rank]
-St. Hyginus, Pope and Martyr;;Simplex;;1.1;;vide C2
+[Officium]
+St. Hyginus, Pope and Martyr
 
-[Rule]
-vide C2;
-OPapaM=Hyginus;
-
-[Oratio] (rubrica tridentina)
-@Commune/C2::s/N\./Hyginus/
+[Name]
+Hyginus

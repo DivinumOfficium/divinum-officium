@@ -1,8 +1,15 @@
+[Officium]
+Ss. Tryphonis, Respicii, et Nymphæ Virg., Martyrum
+
 [Rank]
-Ss. Tryphonis, Respicii, and Nymphæ Martyrum;;Simplex;;1.1;;vide C3a
+;;Simplex;;1.1;;vide C3a
 
 [Rule]
 vide C3a;
+
+[Name]
+Tryphónis, Respícii et Nymphæ
+Postcommunio=Tryphóne, Respício et Nympha
 
 [Introitus]
 !Ps 33:18.
@@ -29,7 +36,7 @@ Allelúja, allelúja.
 Pretiósa in conspéctu Dómini mors Sanctórum ejus. Allelúja.
 
 [Evangelium]
-@Commune/C3b
+@Commune/C3a-1
 
 [Offertorium]
 !Ps 31:11
@@ -37,6 +44,3 @@ Lætámini in Dómino et exsultáte, justi: et gloriámini, omnes recti corde.
 
 [Communio]
 @Sancti/03-10
-
-[Postcommunio]
-@Commune/C3a::s/N\. et N\./Tryphóne, Respício et Nympha/

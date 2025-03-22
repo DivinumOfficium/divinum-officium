@@ -1,5 +1,10 @@
+[Officium]
+S. Camilli de Lellis Confessoris
+
 [Rank]
-S. Camilli de Lellis Confessoris;;Duplex;;3;;vide C5
+;;Duplex;;3;;vide C5
+(sed rubrica innovata)
+;;Duplex optional;;2;;vide C5
 
 [Rule]
 vide C5
@@ -21,13 +26,13 @@ $Per Dominum
 @Tempora/Pent02-0
 
 [Graduale]
-@Commune/C5b
+@Commune/C5-1
 
 [Evangelium]
 @Commune/C1v
 
 [Offertorium]
-@Commune/C5b
+@Commune/C5-1
 
 [Secreta]
 Hóstia immaculáta, qua illud Dómini nostri Jesu Christi imménsæ caritátis opus renovámus, sit, Deus Pater omnípotens, sancto Gamíllo intercedénte, contra omnes córporis et animæ infirmitates salutáre remedium, et in extrémo agóne solátium et tutéla.

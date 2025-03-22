@@ -765,10 +765,20 @@ sub replaceNdot {
     $name = $c{Name};
   }
 
-  if ($name) {
-    $name =~ s/[\r\n]//g;
-    $s =~ s/N\. (et|and|und|és) N\./$name/;
-    $s =~ s/N\./$name/;
+  # Safeguard against Secreta / Postcommunio from missa; switch for Doctor Antiphone
+  my @name = split("\n", $name);
+
+  if ($s =~ /^O\s/ && $name =~ /Ant\=/) {
+    @name = grep(/Ant\=/, @name);
+  } else {
+    @name = grep(/Oratio\=/, @name) unless $name !~ /Oratio\=/;
+  }
+  $name[0] =~ s/^.*?\=//;
+
+  if ($name[0]) {
+    $name[0] =~ s/[\r\n]//g;
+    $s =~ s/N\. (et|and|und|és) N\./$name[0]/;
+    $s =~ s/N\./$name[0]/;
   }
   return $s;
 }

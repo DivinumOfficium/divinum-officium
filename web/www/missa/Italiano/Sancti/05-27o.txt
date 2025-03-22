@@ -1,24 +1,5 @@
-[Rank]
-S. Joannis Papae et Martyris;;Simplex;;1.1;;vide C2
+[Officium]
+S. Giovanni Papa e Martire
 
-[Rule]
-vide C2;
-Gloria
-
-[Oratio]
-!Pro S. Joanne
-@Commune/C2b:Oratio:s/N\./Giovanni/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio Gregem
-
-[Secreta]
-!Pro S. Joanne
-@Commune/C2b:Secreta:s/N\./Giovanni/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
-
-[Postcommunio]
-!Pro S. Joanne
-@Commune/C2b:Postcommunio:s/N\./Giovanni/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio Gregem
+[Name]
+Giovanni

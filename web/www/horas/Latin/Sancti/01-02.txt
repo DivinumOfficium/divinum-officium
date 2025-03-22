@@ -1,13 +1,18 @@
+[Officium]
+In Octava S. Stephani Protomartyris
+
 [Rank]
-In Octava S. Stephani Protomartyris;;Simplex;;1.4;;vide Sancti/12-26
+;;Simplex;;1.4;;vide Sancti/12-26
 (sed rubrica tridentina)
-In Octava Sancti Stephani Protomartyris;;Duplex;;3.1;;ex Sancti/12-26
+;;Duplex;;3.1;;ex Sancti/12-26
 
 [Rule]
-vide Sancti/12-26
+vide Sancti/12-26;
 Feria Te Deum
 Comkey=70
 Lectio1 TempNat
+Gloria
+Prefatio=Nat
 
 [Rule] (rubrica tridentina)
 ex Sancti/12-26;
@@ -16,6 +21,9 @@ Psalmi Dominica
 Antiphonas Horas
 Feria Te Deum
 Psalm5 Vespera3=115
+Gloria
+Prefatio=Nat
+Credo
 
 [Oratio]
 Omnípotens sempitérne Deus, qui primítias Mártyrum in beáti Levítæ Stéphani sánguine dedicásti: tríbue quǽsumus; ut pro nobis intercéssor exsístat, qui pro suis étiam persecutóribus exorávit Dóminum nostrum Jesum Christum Fílium tuum: 

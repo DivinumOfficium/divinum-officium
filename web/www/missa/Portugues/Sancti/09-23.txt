@@ -1,19 +1,14 @@
-[Rank]
-S. Lini Papae et Martyris;;Semiduplex;;2;;vide C4b
-
-[Rule]
-OPapaM=Linum;
-vide C4b;
-Gloria
+[Officium]
+S. Lino, Papa e Mártir
 
 [Comment]
 # 23 IX – S. Lino, Papa e Mártir
 
+[Name]
+Lino
+
 [Introitus]
 @Commune/C4b:Introitus
-
-[Oratio]
-@Commune/C4b:Oratio
 
 [Lectio]
 @Commune/C4b:Lectio
@@ -27,11 +22,5 @@ Gloria
 [Offertorium]
 @Commune/C4b:Offertorium
 
-[Secreta]
-@Commune/C4b:Secreta
-
 [Communio]
 @Commune/C4b:Communio
-
-[Postcommunio]
-@Commune/C4b:Postcommunio

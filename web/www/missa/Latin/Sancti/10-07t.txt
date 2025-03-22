@@ -1,28 +1,21 @@
+[Officium]
+S. Marci Papæ Confessoris
+
 [Rank]
-S. Marci Papæ Confessoris;;Simplex;;1.1;;vide C4
-(sed communi Summorum Pontificum)
-S. Marci Papæ Confessoris;;Simplex;;1.1;;vide C4b
+;;Simplex;;1.1;;vide C4
 
 [Rule]
-vide C4;
-(sed communi Summorum Pontificum)
 vide C4b;
 Suffragium=Maria3;
-OPapaC=Marcum;
 
-[Oratio]
+
+[Oratio] (nisi rubrica 196)
 Exáudi, Dómine, preces nostras: et, interveniénte beáto Marco Confessóre tuo atque Pontífice, indulgéntiam nobis tríbue placátus et pacem.
 $Per Dominum
-(communi Summorum Pontificum loco huius versus dicitur)
-@Commune/C4b::s/N\./Marcum/
 
-[Secreta]
+[Secreta] (nisi rubrica 196)
 @Commune/C6b
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b
 
-[Postcommunio]
+[Postcommunio] (nisi rubrica 196)
 Da, quǽsumus, Dómine, fidélibus pópulis Sanctórum tuórum semper veneratióne lætari: et eórum perpétua supplicatióne muníri.
 $Per Dominum
-(communi Summorum Pontificum loco huius versus dicitur)
-@Commune/C4b

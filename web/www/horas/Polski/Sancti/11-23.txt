@@ -1,13 +1,8 @@
-[Rank]
-Św. Klemensa Papieża i Męczennika;;Duplex;;3;;vide C2
+[Officium]
+Św. Klemensa Papieża i Męczennika
 
-[Rank] (rubrica 1570)
-Św. Klemensa Papieża i Męczennika;;Semiduplex;;2;;vide C2
-
-[Rule]
-vide C2;
-9 lectiones
-OPapaM=Klemensa;
+[Name]
+Klemensa
 
 [Ant Vespera]
 Gdy modlił się * święty Klemens, objawił mu się Baranek Boży.;;109
@@ -19,7 +14,7 @@ Wszystkie narody * wokół uwierzyły Chrystusowi Panu.;;116
 [Ant 1]
 Prośmy wszyscy * Pana naszego, Jezusa Chrystusa, by źródło żywe wyznawcom swym otworzył.
 
-[Oratio]
+[Oratio] (nisi communi Summorum Pontificum)
 Boże, który corocznie nas uweselasz uroczystością świętego Klemensa, Męczennika Twego i Biskupa, spraw miłościwie, niech, czcząc jego narodzenie do życia wiecznego, naśladujemy stałość, z jaką poniósł męczeństwo.
 $Per Dominum
 

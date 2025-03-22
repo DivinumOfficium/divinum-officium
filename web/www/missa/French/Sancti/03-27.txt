@@ -1,10 +1,5 @@
-[Rank]
-S. Joannis Damasceni Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
-CredoDA
+[Officium]
+S. Joannis Damasceni Confessoris
 
 [Introitus]
 !Ps 72:24
@@ -19,7 +14,7 @@ Dieu tout-puissant et éternel, qui avez donné au bienheureux Jean une science 
 $Per Dominum
 
 [Lectio]
-@Commune/C2:Lectio
+@Commune/C2a:Lectio
 
 [Graduale]
 Le Dieu qui m’a ceint de force, et qui a rendu ma voie immaculée.

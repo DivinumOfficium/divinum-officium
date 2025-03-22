@@ -1,9 +1,5 @@
-[Rank]
-S. Silvesteri Abbatis Confessoris;;Duplex;;3;;vide C4c
-
-[Rule]
-vide C4c;
-Gloria
+[Officium]
+S. Silvestre, Abade
 
 [Comment]
 # 26 XI – S. Silvestre, Abade
@@ -11,30 +7,30 @@ Gloria
 ! Paramentos brancos
 
 [Introitus]
-@Commune/C4c:Introitus
+@Commune/C5b:Introitus
 
 [Oratio]
 Ó clementíssimo Deus, que Vos dignastes chamar à solidão o Santo Abade Silvestre quando meditava piedosamente em um túmulo aberto sobre a vaidade deste mundo, assim como o ornastes com os méritos de uma vida preclara, humildemente Vos suplicamos que, imitando o seu exemplo, desprezemos os bens terrenos, a fim de gozarmos eternamente a vossa companhia.
 $Per Dominum
 
 [Lectio]
-@Commune/C4c:Lectio
+@Commune/C5b:Lectio
 
 [Graduale]
-@Commune/C4c:Graduale
+@Commune/C5b:Graduale
 
 [Evangelium]
-@Commune/C4c:Evangelium
+@Commune/C5b:Evangelium
 
 [Offertorium]
-@Commune/C4c:Offertorium
+@Commune/C5b:Offertorium
 
 [Secreta]
 Senhor, Vos suplicamos, permiti que, oferecendo reverentemente à vossa divina majestade estes dons, nos tornemos imitadores do B. Abade Silvestre pela piedosa disposição da alma e pela pureza de coração, a fim de que mereçamos receber santamente o Corpo e o Sangue de vosso Filho.
 $Qui tecum
 
 [Communio]
-@Commune/C4c:Communio
+@Commune/C5b:Communio
 
 [Postcommunio]
 Havendo comparticipado do divino banquete, concedei-nos, Senhor, Vos suplicamos, que sigamos de tal sorte os passos do Santo Abade Silvestre que tenhamos com vossos Santos copiosa recompensa no reino da vossa glória.

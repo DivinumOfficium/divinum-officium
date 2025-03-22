@@ -1,9 +1,5 @@
-[Rank]
-S. Petri Nolasci Confessoris;;Duplex;;3;;vide C5b
-
-[Rule]
-vide C5b;
-Gloria
+[Officium]
+Św. Piotra Nolasco Wyznawcy
 
 [Comment]
 # 28 I – Św. Piotra Nolasco, Wyznawcy
@@ -11,32 +7,30 @@ Gloria
 ! Szaty białe
 Św. Piotr Nolasco założył pod wpływem objawienia Matki Bożej nowy zakon, którego celem było wykupywanie chrześcijan z niewoli muzułmańskiej. Zakonnicy zobowiązywali się specjalnym ślubem do osobistego oddania się w niewolę, jeżeli byłoby to potrzebne do uwolnienia jeńca. Św. Piotr umarł w Barcelonie 25 grudnia 1256 roku.
 
-[Introitus]
-@Commune/C5b:Introitus
+Wspomnienie św. Agnieszki, Dziewicy i Męczennicy. Drugie święto św. Agnieszki świadczy, jak wielki był jej kult w Rzymie.
 
 [Oratio]
 Boże, Tyś cudownie pouczył św. Piotra, by na wzór Twojej miłości obdarzył Twój Kościół nowym zgromadzeniem dla wykupu wiernych z niewoli; spraw za jego wstawiennictwem, abyśmy wykupieni z niewoli grzechu cieszyli się wiekuistą wolnością w niebieskiej ojczyźnie:
 $Qui vivis
 
+[Introitus]
+@Commune/C5-1:Introitus
+
 [Lectio]
-@Commune/C5b:Lectio
+@Commune/C5-1:Lectio
 
 [Graduale]
-@Commune/C5b:Graduale
+@Commune/C5-1:Graduale
 
 [Evangelium]
-@Commune/C5b:Evangelium
+@Commune/C5-1:Evangelium
 
 [Offertorium]
-@Commune/C5b:Offertorium
+@Commune/C5-1:Offertorium
 
 [Secreta]
 Wspominając Twoich Świętych, składamy Ci, Panie, ofiarę chwały i ufamy, że ona wybawi nas od złego teraz i w przyszłości.
 $Per Dominum
 
 [Communio]
-@Commune/C5b:Communio
-
-[Postcommunio]
-Pokrzepieni niebieskim pokarmem i napojem, błagamy Cię pokornie. Boże nasz, niech nas bronią modlitwy tego, w którego święto przyjęliśmy te dary.
-$Per Dominum
+@Commune/C5-1:Communio

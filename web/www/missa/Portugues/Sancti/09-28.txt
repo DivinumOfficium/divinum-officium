@@ -1,14 +1,11 @@
-[Rank]
-S. Wenceslai Ducis et Martyris;;Semiduplex;;2;;vide C2
-
-[Rule]
-vide C2;
+[Officium]
+S. Wenceslai Ducis et Martyris
 
 [Comment]
 # 28 IX – S. Venceslau, Mártir
 
 [Introitus]
-@Commune/C2:Introitus
+@Commune/C2a:Introitus
 
 [Oratio]
 Ó Deus, que pela palma do martírio trasladastes o B. Venceslau do principado terreno para a glória celestial, defendei-nos, pelas suas preces, de todas as adversidades e proporcionai-nos a alegria de compartilhar do seu glorioso destino.
@@ -26,11 +23,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C2:Offertorium
 
-[Secreta]
-@Commune/C2:Secreta
-
 [Communio]
 @Commune/C2:Communio
-
-[Postcommunio]
-@Commune/C2:Postcommunio

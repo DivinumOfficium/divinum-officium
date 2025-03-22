@@ -1,17 +1,17 @@
+[Officium]
+S. Norberti Episcopi et Confessoris
+
 [Rank]
-S. Norberti Episc. et Confessoris;;Duplex;;3;;vide C4
+;;Duplex;;3;;vide C4
 
 [Rule]
-vide C4b;
+vide C4;
 Gloria
+
+[Name]
+Norbértum
+Postcommunio=Norbérto
 
 [Oratio]
 Deus, qui beátum Norbértum Confessórem tuum atque Pontíficem verbi tui præcónem exímium effecísti, et per eum Ecclésiam tuam nova prole fœcundásti: præsta, quǽsumus; ut, ejúsdem suffragántibus méritis, quod ore simul et ópere dócuit, te adjuvánte, exercére valeámus.
 $Per Dominum
-
-[Secreta]
-Sancti tui, quǽsumus, Dómine, nos úbique lætíficant: ut, dum eórum mérita recólimus, patrocínia sentiámus.
-$Per Dominum
-
-[Postcommunio]
-@Commune/C4::s/N\./Norbérto/

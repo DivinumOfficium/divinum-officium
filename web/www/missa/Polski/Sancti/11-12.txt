@@ -1,10 +1,5 @@
-[Rank]
-S. Martini Papae et Martyris;;Semiduplex;;2;;vide C4b
-
-[Rule]
-OPapaM=Martínum;
-vide C4b
-Gloria
+[Officium]
+Sw. Marcina
 
 [Comment]
 # 12 XI – Św. Marcina I, Papieża i Męczennika
@@ -12,11 +7,11 @@ Gloria
 ! Szaty czerwone
 Św. Marcin I rządził Kościołem od roku 649 do 653. Potępił herezję monoteletów i wykluczył z Kościoła patriarchę Konstantynopola, który jej sprzyjał. Cesarz Konstans II kazał go uwięzić i zesłał na wygnanie do Chersonesu, gdzie Marcin zmarł w roku 655 wskutek zniesionych prześladowań.
 
+[Name]
+Marcina
+
 [Introitus]
 @Commune/C4b:Introitus
-
-[Oratio]
-@Commune/C4b:Oratio
 
 [Lectio]
 @Commune/C4b:Lectio
@@ -30,11 +25,5 @@ Gloria
 [Offertorium]
 @Commune/C4b:Offertorium
 
-[Secreta]
-@Commune/C4b:Secreta
-
 [Communio]
 @Commune/C4b:Communio
-
-[Postcommunio]
-@Commune/C4b:Postcommunio

@@ -1,11 +1,20 @@
-[Rank]
-S. Ignatii Episcopi et Martyris;;Duplex;;3;;vide C2
+[Officium]
+S. Ignatii Episcopi et Martyris
 
-[Rank] (rubrica 1570)
-S. Ignatii Episcopi et Martyris;;Semiduplex;;2.2;;vide C2
+[Rank]
+;;Duplex;;3.01;;vide C2
+(sed rubrica 1570)
+;;Semiduplex;;2.2;;vide C2
+(sed rubrica 1960)
+;;Duplex;;3;;vide C2
 
 [Rule]
+vide C2;
 Gloria
+
+[Name]
+Ignátii
+Postcommunio=Ignátio
 
 [Introitus]
 !Gal 6:14.
@@ -14,9 +23,6 @@ v. Mihi autem absit gloriári, nisi in Cruce Dómini nostri Jesu Christi: per qu
 Meménto, Dómine, David: et omnis mansuetúdinis ejus.
 &Gloria
 v. Mihi autem absit gloriári, nisi in Cruce Dómini nostri Jesu Christi: per quem mihi mundus crucifíxus est, et ego mundo.
-
-[Oratio]
-@Commune/C2c:Oratio:s/N\./Ignátii/
 
 [Lectio]
 Léctio Epistolæ beáti Pauli Apóstoli ad Romános
@@ -56,11 +62,5 @@ In illo témpore: Dixit Jesus discípulis suis: Amen, amen, dico vobis, nisi gra
 [Offertorium]
 @Commune/C1v
 
-[Secreta]
-@Commune/C2c:Secreta:s/N\./Ignátii/
-
 [Communio]
 Fruméntum Christi sum: déntibus bestiárum molar, ut panis mundus invéniar.
-
-[Postcommunio]
-@Commune/C2a:Postcommunio:s/N\./Ignátio/

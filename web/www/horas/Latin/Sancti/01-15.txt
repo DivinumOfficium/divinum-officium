@@ -1,19 +1,19 @@
+[Officium]
+S. Pauli Primi Eremitæ et Confessoris
+
 [Rank]
-S. Pauli Primi Eremitæ et Confessoris;;Duplex;;3;;vide C5
-
-[Rank] (rubrica 1570 aut rubrica 1617)
-S. Pauli Primi Eremitæ et Confessoris;;Semiduplex;;2.2;;vide C5
-
-[Rank] (rubrica monastica)
-S. Pauli Primi Eremitæ et Confessoris;;Memoria;;1.1;;vide C5
+;;Duplex;;3;;vide C5
+(sed rubrica 1570 aut rubrica 1617)
+;;Semiduplex;;2.2;;vide C5
+(sed rubrica 1930 aut rubrica 1963)
+;;Memoria;;1.1;;vide C5
 
 [Rule]
 vide C5;mtv
 9 lectiones
 
-[Oratio]
-Deus, qui nos beáti Pauli Confessóris tui ánnua solemnitáte lætíficas: concéde propítius; ut, cujus natalícia cólimus, étiam actiónes imitémur.
-$Per Dominum
+[Name]
+Pauli
 
 [Lectio4]
 Paulus, eremitárum auctor et magister, apud inferiórem Thebáidem natus, cum quindecim esset annórum, orbátus paréntibus est. Qui postea declinandæ causa persecutiónis Decii et Valeriáni, et Deo liberius inserviéndi, in eremi spelúncam se cóntulit: ubi, palma ei victum et vestítum præbente, vixit ad centésimum et décimum tertium annum, quo témpore ab Antonio nonagenario Dei admónitu invísitur. Quibus inter se, cum ántea non nossent, proprio nómine consalutántibus, et multa de regno Dei colloquéntibus, corvus, qui ántea semper Paulo dimidiátum panem attulerat, integrum détulit.

@@ -1,22 +1,25 @@
+[Officium]
+S. Petri Celestini Papæ et Confessoris
+
 [Rank]
-S. Petri Celestini Papæ Confessoris;;Duplex;;3;;vide C4b
+;;Duplex;;3;;vide C4b
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C4b
 
 [Rule]
 vide C4b;
 Gloria
 
+[Name]
+Petrum Cœlestínum
+Postcommunio=Petro Cœlestíno
+
 [Oratio]
 Deus, qui beátum Petrum Cœlestínum ad summi pontificátus ápicem sublimásti, quique illum humilitáti postpónere docuísti: concéde propítius; ut ejus exémplo cuncta mundi despícere, et ad promíssa humílibus præmia perveníre felíciter mereámur.
 $Per Dominum
 
-[Secreta]
+[Secreta] (nisi rubrica 196)
 @Commune/C4
 
-[Secreta] (rubrica 1960)
-@Commune/C4b
-
-[Postcommunio]
-@Commune/C4::s/N\./Petro Cœlestíno/
-
-[Postcommunio] (rubrica 1960)
-@Commune/C4b
+[Postcommunio] (nisi rubrica 196)
+@Commune/C4

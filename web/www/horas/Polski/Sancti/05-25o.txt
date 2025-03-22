@@ -1,14 +1,14 @@
-[Rank]
-Św. Urbana I, Papieża i Męczennika;;Simplex;;1.1;;vide C2
+[Officium]
+Św. Urbana I, Papieża i Męczennika
 
-[Rule]
-vide C2;
-OPapaM=Urbana;
+[Name]
+Urbana
 
 [Oratio]
 Spraw, prosimy Cię, Wszechmogący Boże, byśmy, obchodząc uroczystość błogosławionego Urbana Męczennika Twego i Papieża, zostali wspomożeni za jego przyczyną.
 $Per Dominum
 
-[Oratio] (rubrica 1960)
-Boże, Ty uwolniłeś Swój Kościół od grozy bram piekielnych, zakładając go na niewzruszonej opoce apostolskiej, spraw, aby za przyczyną świętego Urbana, Twojego Męczennika i Papieża trwał w Twej prawdzie i umacniał się wśród stałego bezpieczeństwa.
-$Per Dominum.
+[Oratio] (communi Summorum Pontificum)
+@Commune/C2b:Oratio pro commemoratio
+(sed rubrica 196)
+@Commune/C2b

@@ -1,12 +1,15 @@
+[Officium]
+S. Bernardini Senensis Confessoris
+
 [Rank]
-S. Bernardini Senensis Confessoris;;Semiduplex;;2.1;;vide C5
+;;Semiduplex;;2.2;;vide C5
 
 [Rule]
 vide C5;
 Gloria
 
 [Introitus]
-@Commune/C4c
+@Commune/C5b
 
 [Oratio]
 Dómine Jesu, qui beáto Bernardíno Confessóri tuo exímium sancti nóminis tui amórem tribuísti: ejus, quǽsumus, méritis et intercessióne, spíritum nobis tuæ dilectiónis benígnus infúnde:
@@ -24,16 +27,10 @@ Ad annuntiándum mane misericórdiam tuam, et veritátem tuam per noctem. Allel�
 Beátus vir, qui suffert tentatiónem: quóniam, cum probátus fúerit, accípiet corónam vitæ. Allelúja.
 
 [Evangelium]
-@Commune/C4c
+@Commune/C5b
 
 [Offertorium]
-@Commune/C2c
-
-[Secreta]
-@Commune/C5
+@Commune/C2
 
 [Communio]
-@Commune/C4d
-
-[Postcommunio]
-@Commune/C5
+@Commune/C4-1

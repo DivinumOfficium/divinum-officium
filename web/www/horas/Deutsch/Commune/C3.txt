@@ -1,5 +1,8 @@
 [Officium]
-Kommune mehrerer Martyrer
+Commune mehrerer Martyrer, Bischöfe
+
+[Missa]
+Intret in conspectu
 
 [Ant Vespera]
 O die Heiligen alle! * Was haben sie für Qualen ausgehalten, um gefahrlos zur Palme des Martyriums zu gelangen!
@@ -48,15 +51,7 @@ R. Seid glücklich alle, die ihr Treue ihm gehalten.
 Diesen gebührt doch * das Himmelreich, die das irdische Leben verachtet haben und gelangt sind zum Lohn im Königshaus und reingewaschen haben ihre Kleider im Blute des Lammes.
 
 [Oratio]
-O Gott, der du uns das Glück gewährst, deiner heiligen Martyrer N. und N. Eingang zum Leben zu feiern, verleihe uns die Gnade, daß wir uns in der ewigen Glückseligkeit an deren Gemeinschaft erfreuen.
-$Per Dominum
-
-[Oratio1]
 Laß, wir bitten dich, o Herr, deiner heiligen Martyrer und zugleich Bischöfe N. und N. Festlichkeit uns Schutz gewähren, und möge ihr ehrwürdiges Gebet uns ständig dir empfehlen.
-$Per Dominum
-
-[Oratio2]
-O Gott, der du uns durch das jährlich wiederkehrende Fest deiner heiligen Martyrer N. und N. Freude bereitest, gewähre uns die Gnade, daß wir, da wir uns an deren Verdiensten erfreuen, auch durch ihr Beispiel angefeuert werden.
 $Per Dominum
 
 [Hymnus Matutinum]
@@ -186,36 +181,6 @@ R. Denn Segen und Frieden ist gewährt den Lieblingen Gottes.
 &Gloria
 R. Denn Segen und Frieden ist gewährt den Lieblingen Gottes.
 
-[Lectio7]
-Léctio sancti Evangélii secúndum Lucam.
-!Luc 21:9-19
-In illo témpore: Dixit Jesus discípulis suis: Cum audiéritis prǽlia, et seditiónes, nolíte terréri: opórtet primum hæc fíeri, sed nondum statim finis. Et réliqua.
-_
-Homilía sancti Gregórii Papæ.
-!Homilia 35. in Evangel.
-Dóminus ac Redémptor noster peritúri mundi præcurréntia mala denúntiat, ut eo minus pertúrbent veniéntia, quo fúerint præscíta. Minus enim jácula fériunt, quæ prævidéntur: et nos tolerabílius mundi mala suscípimus, si contra hæc per præsciéntiae clípeum munímur. Ecce enim dicit: Cum audiéritis prǽlia et seditiónes, nolíte terréri: opórtet enim primum hæc fíeri, sed nondum statim finis. Pensánda sunt verba Redemptóris nostri, per quæ nos áliud intérius, áliud extérius passúros esse denúntiat; bella quippe ad hostes pértinent, seditiónes ad cives. Ut ergo nos índicet intérius exteriúsque turbári, áliud nos fatétur ab hóstibus, áliud a frátribus pérpeti.
-
-[Responsory7]
-R. Propter testaméntum Dómini, et leges patérnas, Sancti Dei perstitérunt in amóre fraternitátis:
-* Quia unus fuit semper spíritus in eis, et una fides.
-V. Ecce quam bonum et quam jucúndum habitáre fratres in unum.
-R. Quia unus fuit semper spíritus in eis, et una fides.
-
-[Lectio8]
-Sed his malis præveniéntibus, quia non statim finis sequátur, adjúngit: Surget gens contra gentem, et regnum advérsus regnum: et terræmótus magni erunt per loca, et pestiléntiæ, et fames, terrorésque de cælo: et signa magna erunt. Última tribulátio multis tribulatiónibus prævenítur: et per crebra mala, quæ prævéniunt, indicántur mala perpétua, quæ subsequéntur. Et ídeo post bella et seditiónes non statim finis: quia multa debent mala præcúrrere, ut malum váleant sine fine nuntiáre.
-
-[Responsory8]
-R. Sancti mei, qui in carne pósiti, certámen habuístis:
-* Mercédem labóris ego reddam vobis.
-V. Veníte benedícti Patris mei, percípite regnum.
-R. Mercédem labóris ego reddam vobis.
-&Gloria
-R. Mercédem labóris ego reddam vobis.
-
-[Lectio9]
-Sed cum tot signa perturbatiónis dicta sint, opórtet, ut eórum consideratiónem bréviter per síngula perstringámus: quia necésse est, ut ália e cælo, ália e terra, ália ab eleméntis, ália ab homínibus patiámur. Ait enim: Surget gens contra gentem, ecce perturbátio hóminum: erunt terræmótus magni per loca, ecce respéctus iræ désuper: erunt pestiléntiæ ecce inæquálitas córporum: erit fames, ecce sterílitas terræ: terrorésque de cælo et tempestátes, ecce inæquálitas áëris. Quia ergo ómnia consummánda sunt, ante consummatiónem ómnia perturbántur: et qui in cunctis delíquimus, in cunctis ferímur: ut impleátur quod dícitur, Et pugnábit pro eo orbis terrárum contra insensátos.
-&teDeum
-
 [Capitulum Laudes]
 !Weish 3,1-3
 v. Die Seelen der Gottesdiener befinden sich in der Hand Gottes, und nun kommt an sie keine Qual heran, die den Tod brächte. Es schien in den Augen der Toren, dass sie zugrunde gehen, und sie sind doch im Frieden.
@@ -297,27 +262,3 @@ Im himmlischen Königreich * ist der Heiligen Aufenthalt und auf ewig ihr Ausruh
 
 [Ant 3]
 Voll Freude sind im Himmel * die Seelen der Heiligen, die den Spuren Christi gefolgt sind; und da sie für ihn ihr Blut vergossen, deshalb jubeln sie mit Christus ohne Ende.
-
-[Lectio7 in 2 loco]
-Léctio sancti Evangélii secúndum Lucam.
-!Luc 6:17-23
-In illo témpore: Descéndens Jesus de monte, stetit in loco campéstri, et turba discipulórum ejus, et multitúdo copiósa plebis ab omni Judǽa, et Jerúsalem, et marítima, et Tyri, et Sidónis. Et réliqua.
-_
-Homilía sancti Ambrósii Epíscopi
-!Lib. 5. in Lucam. Cap. 6., post init.
-Advérte ómnia diligénter, quómodo et cum Apóstolis ascéndat et descéndat ad turbas. Quómodo enim turba nisi in húmili Christum vidéret? Non séquitur ad excélsa, non ascéndit ad sublímia. Dénique ubi descéndit, invénit infírmos: in excélsis enim infírmi esse non possunt. Hinc étiam Matthǽus docet in inferióribus débiles esse sanátos. Prius enim unusquísque sanándus est, ut paulátim virtútibus procedéntibus ascéndere possit ad montem; et ídeo quemque in inferióribus sanat, hoc est, a libídine révocat, injúriam cæcitátis avértit. Ad vúlnera nostra descéndit: ut usu quodam et cópia suæ natúræ, compartícipes nos fáciat esse regni cæléstis.
-
-[Lectio8 in 2 loco]
-Beáti páuperes, quia vestrum est regnum Dei. Quátuor tantum beatitúdines sanctus Lucas Domínicas posuit, octo vero sanctus Matthǽus: sed in illis octo istæ quátuor sunt, et in quátuor istis illæ octo. Hic enim quátuor velut virtútes ampléxus est cardináles: ille in illis octo mýsticum númerum reserávit. Pro octáva enim multi inscribúntur Psalmi: et mandátum áccipis octo illis partem dare fortásse benedictiónibus. Sicut enim spei nostræ octáva perféctio est, ita octáva summa virtútum est.
-
-[Responsory8 in 2 loco]
-R. Hæc est vera fratérnitas, quæ numquam pótuit violári certámine: qui effúso sánguine secúti sunt Dóminum:
-* Contemnéntes aulam régiam, pervenérunt ad regna cæléstia.
-V. Ecce quam bonum et quam jucúndum habitáre fratres in unum.
-R. Contemnéntes aulam régiam, pervenérunt ad regna cæléstia.
-&Gloria
-R. Contemnéntes aulam régiam, pervenérunt ad regna cæléstia.
-
-[Lectio9 in 2 loco]
-Sed prius quæ sunt amplióra videámus. Beáti, inquit, páuperes, quóniam vestrum est regnum Dei. Primam benedictiónem hanc utérque Evangelísta pósuit. Órdine enim prima est, et parens quædam generatióque virtútum: quia qui contempsérit sæculária, ipse merébitur sempitérna: nec potest quisquam méritum regni cæléstis adipísci, qui mundi cupiditáte pressus, emergéndi non habet facultátem.
-&teDeum

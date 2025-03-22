@@ -1,18 +1,5 @@
-[Rule]
-OPapaM=Telesforo;
-vide C2b;
+[Officium]
+S. Telesphori Papæ et Martyris
 
-[Oratio]
-@Commune/C2b:Oratio:s/N\./Telesforo/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Oratio Gregem
-
-[Secreta]
-@Commune/C2b:Secreta:s/N\./Telesforo/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Secreta Gregem
-
-[Postcommunio]
-@Commune/C2c:Postcommunio:s/N\./Telesforo/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Postcommunio Gregem
+[Name]
+Telesforo

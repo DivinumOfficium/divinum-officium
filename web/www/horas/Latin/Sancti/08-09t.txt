@@ -1,8 +1,10 @@
-[Rank]
-In Vigilia S. Laurentii Mart.;;Vigilia Simplex;;1.5
+[Officium]
+In Vigilia S. Laurentii Mart.
 
-[Rank] (rubrica 196)
-In Vigilia S. Laurentii Mart.;;Vigilia;;3
+[Rank]
+;;Vigilia Simplex;;1.5
+(sed rubrica 196)
+;;Vigilia;;3
 
 [Rule]
 Responsory Feria

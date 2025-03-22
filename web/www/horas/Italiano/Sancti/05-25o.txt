@@ -1,17 +1,18 @@
-[Rank]
+[Officium]
 S. Urbano I, Papa e Martire
 
-[Rule]
-vide C2;
-OPapaM=Urbano;
+[Name]
+Urbano
 
 [Oratio]
 Concedi, Dio onnipotente, che come celebriamo la solennità del tuo beato Martire e Pontefice Urbano, così siamo soccorsi dalla sua intercessione presso di te.
 $Per Dominum.
 
-[Oratio] (rubrica 1960)
+[Oratio] (communi Summorum Pontificum)
 Dio, che la tua Chiesa fondata sulla solidità della pietra apostolica, liberi del terrore delle porte degli inferi, concedi, che intercendete il beato Urbano tuo Martire e Sommo Ponteficie, persistendo nella tua verità, si difesa in continua sicurezza.
 $Per Dominum.
+(sed rubrica 196 loco horum versum dicitur)
+@Commune/C2b
 
 [Lectio93]
 !Per S. Urbano I Papa e Martire

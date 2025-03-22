@@ -1,9 +1,3 @@
-[Rank]
-S. Bonaventuræ Episcopi Confessoris;;Duplex;;3;;vide C4a
-
-[Rank] (rubrica 1570)
-S. Bonaventuræ Episcopi Confessoris;;Semiduplex;;2.2;;vide C4a
-
 [Rule]
 vide C4a;
 Gloria
@@ -25,13 +19,13 @@ CredoDA
 @Commune/C4a
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2a-1
 
 [Secreta]
-@Commune/C4d:Secreta:s/N\./Bonaventura/
+@Commune/C4-1:Secreta:s/N\./Bonaventura/
 
 [Communio]
 @Commune/C4
 
 [Postcommunio]
-@Commune/C4d:Postcommunio:s/N\./Bonaventura/
+@Commune/C4-1:Postcommunio:s/N\./Bonaventura/

@@ -1,45 +1,17 @@
-[Rank]
-S. Joannis Gualberti Abbatis;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+S. João Gualberto, Abade 
 
 [Comment]
 # 12 VII – S. João Gualberto, Abade 
 ! 3 classe
 ! Paramentos brancos
 
-Comemoração dos Santos Mártires Nabor e Félix
-! Comemoração
-! Paramentos vermelhos
 
-[Introitus]
-@Commune/C4c:Introitus
 
-[Oratio]
-Que a intercessão do B. Abade João nos favoreça junto de Vós, Senhor, Vos suplicamos, a fim de que aquilo que não podemos conseguir com os nossos méritos o alcancemos com seu patrocínio.
-$Per Dominum
-
-[Lectio]
-@Commune/C4c:Lectio
-
-[Graduale]
-@Commune/C4c:Graduale
+[Name]
+João
 
 [Evangelium]
 Continuação ++ do santo Evangelho segundo S. Mateus.
 !Mt 5:43-48
 Naquele tempo, disse Jesus aos seus discípulos: «Aprendestes o que vos ensinaram: «amareis o vosso próximo e aborreceis o vosso inimigo?». Pois Eu vos digo: amai os vossos inimigos; fazei bem àqueles que vos odeiam; rezai pelos que vos perseguem e caluniam, a fim de que sejais filhos do vosso Pai, que está nos céus, o qual faz nascer o sol para os maus e bons e chover para os justos e injustos. Se amais os que vos amam, que recompensa mereceis? Não procedem do mesmo modo os publicanos? Se saudais somente os vossos irmãos, que fazeis mais do que os outros? Não procedem assim os pagãos? Sede, portanto, perfeitos, como o vosso Pai celestial é perfeito».
-
-[Offertorium]
-@Commune/C4c:Offertorium
-
-[Secreta]
-@Commune/C4c:Secreta
-
-[Communio]
-@Commune/C4c:Communio
-
-[Postcommunio]
-@Commune/C4c:Postcommunio

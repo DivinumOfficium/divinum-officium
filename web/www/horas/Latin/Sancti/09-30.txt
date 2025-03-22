@@ -1,7 +1,10 @@
+[Officium]
+S. Hieronymi Presbyteris Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Hieronymi Presbyteris Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
+;;Duplex;;3;;vide C5a
 (sed rubrica 1930)
-S. Hieronymi Presbyteris Confessoris et Ecclesiæ Doctoris;;Duplex majus;;4;;vide C5a
+;;Duplex majus;;4;;vide C5a
 
 [Rule]
 vide C5a;
@@ -9,7 +12,8 @@ vide C5a;
 scriptura1960
 
 [Name]
-Hierónyme
+Hierónymum
+Ant=Hierónyme
 
 [Oratio]
 Deus, qui Ecclésiæ tuæ in exponéndis sacris Scriptúris beátum Hierónymum, Confessórem tuum, Doctórem máximum providére dignátus es: præsta, quǽsumus; ut, ejus suffragántibus méritis, quod ore simul et ópere dócuit, te adjuvánte, exercére valeámus.

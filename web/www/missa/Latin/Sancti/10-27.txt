@@ -1,20 +1,18 @@
-[Rank]
-In Vigilia Ss. Simonis et Judæ Ap.;;Vigilia;;1.5;;ex C1v
+[Officium]
+In Vigilia Ss. Simonis et Judæ Ap.
 
-[Rule]
-ex C1v;
-no Gloria
-Suffragium=Maria3;Papa;Ecclesia;;
+[Rank]
+;;Vigilia;;1.5;;ex C1v
 
 [Introitus]
-@Commune/C3:Introitus
+@Commune/C3
 
 [Oratio]
-Concéde, quǽsumus, omnípotens Deus: ut, sicut Apostolórum tuórum Simonis et Judæ gloriósa natalítia prævenímus; sic ad tua benefícia promerénda, majestátem tuam pro nobis ipsi prævéniant.
+Concede, quǽsumus, omnípotens Deus: ut, sicut Apostolórum tuórum Simónis et Judæ gloriósa natalícia prævenimus; sic ad tua benefícia promerenda, majestátem tuam pro nobis ipsi præveniant.
 $Per Dominum
 
 [Lectio]
-@Commune/C5b:Lectio
+@Commune/C5-1
 
 [Graduale]
 !Ps 78:10; 78:2
@@ -22,7 +20,7 @@ Vindíca, Dómine, sánguinem Sanctórum tuórum, qui effúsus est.
 V. Posuérunt mortália servórum tuórum, Dómine, escas volatílibus cœli: carnes Sanctórum tuórum béstiis terræ.
 
 [Evangelium]
-@Commune/C3p:Evangelium
+@Commune/C2ap
 
 [Offertorium]
 @Commune/C3a

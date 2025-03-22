@@ -1,13 +1,17 @@
+[Officium]
+Ss. Fabiani et Sebastiani Martyrum
+
 [Rank]
-Ss. Fabiani et Sebastiani Martyrum;;Duplex;;3;;vide C3
+;;Duplex;;3;;vide C3
+(sed rubrica innovata)
+;;Duplex optional;;2;;vide C3
 
 [Rule]
 vide C3;
 Gloria
 
 [Oratio]
-Infirmitátem nostram réspice, omnípotens Deus: et, quia pondus própriæ actiónis gravat, beatórum Mártyrum tuórum Fabiáni et Sebastiáni intercéssio gloriósa nos prótegat.
-$Per Dominum
+@Commune/C2::s/beáti N\. Mártyris tui atque Pontíficis/beatórum Mártyrum tuórum Fabiáni et Sebastiáni/
 
 [Lectio]
 Léctio Epístolæ beáti Pauli Apóstoli ad Hebrǽos
@@ -43,13 +47,11 @@ V. Veniéntes autem vénient cum exsultatióne, portántes manípulos suos.
 Lætámini in Dómino et exsultáte, justi: et gloriámini, omnes recti corde.
 
 [Secreta]
-Hóstias tibi, Dómine, beatórum Mártyrum tuórum Fabiáni et Sebastiáni dicátas méritis, benígnus assúme: et ad perpétuum nobis tríbue proveníre subsídium.
-$Per Dominum
+@Commune/C2::s/beáti N\. Mártyris tui atque Pontíficis/beatórum Mártyrum tuórum Fabiáni et Sebastiáni/
 
 [Communio]
 !Luc 6:18; 6:19
 Multitúdo languéntium, et qui vexabántur a spirítibus immúndis, veniébant ad eum: quia virtus de illo exíbat, et sanábat omnes.
 
 [Postcommunio]
-Refécti participatióne múneris sacri, quǽsumus, Dómine, Deus noster: ut, cujus exséquimur cultum, intercedéntibus sanctis Martýribus tuis Fabiáno et Sebastiáno, sentiámus efféctum.
-$Per Dominum
+@Commune/C2::s/intercedénte beáto N\. Mártyre tuo atque Pontífice/intercedéntibus sanctis Martýribus tuis Fabiáno et Sebastiáno/

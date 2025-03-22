@@ -14,17 +14,16 @@ Grátiam tuam, quǽsumus, Dómine, méntibus nostris infúnde: ut, qui, Angelo n
 $Per eundem
 
 [Oratio Maria2]
-!de S. Maria (vel ad libitum)
+!de S. Maria tempore post partum
 @Commune/C10b:Oratio
 
 [Secreta Maria2]
-!de S. Maria (vel ad libitum)
-@Commune/C2:Secreta
+!de S. Maria tempore post partum
+@Commune/C10b:Secreta
 
 [Postcommunio Maria2]
-!de S. Maria (vel ad libitum)
-Hæc nos commúnio, Dómine, purget a crímine: et, intercedénte beáta Vírgine Dei Genetríce María, cœléstis remédii fáciat esse consórtes. 
-$Per eundem
+!de S. Maria tempore post partum
+@Commune/C10b:Postcommunio
 
 [Oratio Maria3]
 !de S. Maria (vel ad libitum)

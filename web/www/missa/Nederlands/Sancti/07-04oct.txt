@@ -1,18 +1,8 @@
-[Rank]
-Sexta die infra Octavam Ss. Petri et Pauli;;Semiduplex;;2;;vide C1
-
-[Rule]
-Gloria
-CredoDA
-Prefatio=Apostolis
-Suffr=Maria3;Ecclesiæ,Papa;;
+[Officium]
+Sexta die infra Octavam Ss. Petri et Pauli.
 
 [Introitus]
 @Sancti/02-24
-
-[Oratio]
-God, Gij hebt deze dag geheiligd door het martelaarschap van uw apostelen Petrus en Paulus. Doe uw Kerk in alles de voorschriften volgen van hen, bij wie de oorsprong ligt van haar geloof.
-$Per Dominum
 
 [Lectio]
 @Tempora/Pasc7-3
@@ -26,7 +16,7 @@ Alleluia, alleluia.
 V. Ik heb voor u gebeden, Petrus, dat uw geloof niet zou bezwijken, en als gij u eenmaal bekeerd hebt, bevestig dan uw broeders. Alleluia.
 
 [Evangelium]
-@Commune/C4c
+@Commune/C5b
 
 [Offertorium]
 !Ps 18:5
@@ -38,6 +28,3 @@ $Per Dominum
 
 [Communio]
 @Sancti/02-24
-
-[Postcommunio]
-@Sancti/06-28r

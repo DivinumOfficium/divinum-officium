@@ -1,11 +1,10 @@
+[Officium]
+Ss. Vincentii et Anastasii Martyrum
+
 [Rank]
-Ss. Vincentii et Anastasii Martyrum;;Semiduplex;;2.2;;vide C3
-
-[Rank] (rubrica cisterciensis)
-SS. Vincentii et Anastasii, Martyrum;;Simplex;;1.2;;vide C3
-
-[Rank] (rubrica 1930 aut rubrica 1963)
-S. Vincentii Martyris;;Simplex;;1.1;;vide C2
+;;Semiduplex;;2.2;;vide C3
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;vide C3
 
 [Rule]
 vide C3;
@@ -13,15 +12,9 @@ vide C3;
 (sed rubrica cisterciensis)
 3 lectiones
 
-[Oratio_]
+[Oratio]
 Adésto, Dómine, supplicatiónibus nostris: ut, qui ex iniquitáte nostra reos nos esse cognóscimus, beatórum Mártyrum tuórum Vincéntii et Anastásii intercessióne liberémur.
 $Per Dominum
-
-[Oratio]
-@:Oratio_
-
-[Oratio] (rubrica 1930 aut 1963)
-@:Oratio_:s/beatórum Mártyrum tuórum Vincéntii et Anastásii/beáti Vincéntii Mártyris tui/
 
 [Lectio4]
 Vincentius, Oscæ in Hispánia citeriore natus, a prima ætate stúdiis déditus, sacras litteras a Valerio Cæsaraugustano episcopo didicit; cujus étiam partes suscépit prædicándi Evangélium, quod epíscopus, propter linguæ impediméntum, prædicatiónis officio fungi non poterat. Ea re ad Dacianum, provinciæ a Diocletiáno et Maximiáno præpositum, delata, Vincentius Cæsaraugustæ comprehénditur, et vinctus ad Dacianum Valéntiam adducitur. Ubi verbéribus et equuleo tortus, multis præséntibus, cum nulla aut tormentórum vi, aut acerbitate vel lenitate verbórum a proposito deterreri posset; in cratícula impositus, prunis ardéntibus suppositis, ac férreis unguibus excarnificatus, candentibúsque láminis exustus, íterum ducitur in carcerem stratum testáceis fragmentis, ut ejus nudum corpus, somno oppressum, a subjectis étiam testárum aculeis torquerétur.
@@ -37,4 +30,4 @@ Vincéntius, Oscæ in Hispánia citerióre natus, a prima ætáte stúdiis dédi
 &teDeum
 
 [Versum 0]
-@Commune/C2::s/N\./Vincénti/
+@Commune/C2a::s/N\./Vincénti/

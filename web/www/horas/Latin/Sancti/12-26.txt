@@ -1,18 +1,20 @@
-[Rank]
-S. Stephani Protomartyris;;Duplex II class cum octava simplici;;5.4;;ex C2
+[Officium]
+S. Stephani Protomartyris
 
-[Rank] (rubrica 196)
-S. Stephani Protomartyris;;Duplex II class;;5.4;;ex C2
+[Rank]
+;;Duplex II class cum octava simplici;;5.4;;ex C2a
+(sed rubrica 196)
+;;Duplex II class;;5.4;;ex C2a
 
 [Rule]
-ex C2;
+ex C2a;
 Psalmi Dominica
 Antiphonas horas
 9 lectiones
 no Psalm5
 
 [Versum 1]
-@Commune/C2
+@Commune/C2a
 
 [Versum 1] (rubrica cisterciensis)
 @CommuneM/C2
@@ -29,9 +31,6 @@ $Qui tecum
 @CommuneM/C3:Oratio proper
 v. Deus, qui nos annua ómnium sanctórum Mártyrum tuórum commemoratióne lætíficas: § concéde propítius; * ut, quorum gaudémus méritis, § accendámur examplis.
 $Per Dominum
-
-[Commemoratio 3] (rubrica cisterciensis)
-@:Commemoratio
 
 [Octava 1]
 @:Octava 3
@@ -147,7 +146,7 @@ Alii istum volunt esse Zacharíam, qui occísus est a Joas rege Judæ inter temp
 &teDeum
 
 [Versum 0]
-@Commune/C2::s/N\./Stéphane/
+@Commune/C2a::s/N\./Stéphane/
 
 [Ant Laudes]
 Lapidavérunt Stéphanum, * et ipse invocábat Dóminum, dicens: Ne státuas illis hoc peccátum.
@@ -238,6 +237,9 @@ Sepeliérunt Stéphanum * viri timoráti, et fecérunt planctum magnum super eum
 [Ant 3] (rubrica cisterciensis)
 Intuens in cœlum * beátus Stéphanus vidit glóriam Dei, et ait: Ecce vídeo cœlos apértos, et Fílium hóminis stantem a dextris Dei.
 
+[Commemoratio 3] (rubrica cisterciensis)
+@:Commemoratio
+
 [Octava 3]
 !Commemoratio Octavæ S. Stephani
 Ant. Sepeliérunt Stéphanum viri timoráti, et fecérunt planctum magnum super eum.
@@ -260,4 +262,3 @@ _
 $Oremus
 v. Da nobis, quǽsumus, Dómine, imitári quod cólimus: ut discámus et inimícos dilígere; quia ejus natalícia celebrámus, qui novit étiam pro persecutóribus exoráre Dóminum nostrum Jesum Christum Fílium tuum:
 $Qui tecum
-

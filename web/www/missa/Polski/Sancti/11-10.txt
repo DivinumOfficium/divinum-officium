@@ -1,15 +1,13 @@
-[Rank]
-S. Andreae Avellini Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+Św. Andrzeja z Awelinu, Wyznawcy
 
 [Comment]
 # 10 XI – Św. Andrzeja z Avellino, Wyznawcy
 ! 3 klasy
 ! Szaty białe
 Św. Andrzej urodził się na Sycylii w roku 1521. Ukończywszy studia prawnicze i teologiczne został kapłanem i występował jako adwokat w sądzie kościelnym. Gdy raz przytrafiło mu się drobne kłamstwo, porzucił adwokaturę i wstąpił do zakonu Teatynów, w którym oddał się pracy duszpasterskiej. Pracował jako misjonarz ludowy i kierownik dusz. Wyniszczony nieustanną pracą umarł nagle w Neapolu 10 listopada 1600 roku, gdy rozpoczynał Mszę świętą.
+
+Wspomnienie świętych Tryfona, Respicjusza i Nimfy, Męczenników. Święci Tryfon i Respicjusz ponieśli śmierć męczeńską w połowie II wieku. Św. Nimfa, dziewica, rodem z Sycylii, poniosła męczeństwo w Palermo.
 
 [Introitus]
 @Commune/C5:Introitus
@@ -30,11 +28,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C5:Offertorium
 
-[Secreta]
-@Commune/C5:Secreta
-
 [Communio]
 @Commune/C5:Communio
-
-[Postcommunio]
-@Commune/C5:Postcommunio

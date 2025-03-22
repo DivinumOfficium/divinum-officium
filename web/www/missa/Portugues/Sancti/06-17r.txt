@@ -1,14 +1,13 @@
-[Rank]
-S. Gregorii Barbadici Episcopi Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-vide C4;
-Gloria
+[Officium]
+S. Gregório Barbarigo, Bispo e Confessor
 
 [Comment]
 # 17 VI – S. Gregório Barbarigo, Bispo e Confessor
 ! 3 classe
 ! Paramentos brancos
+
+[Name]
+Gregório
 
 [Introitus]
 @Commune/C4:Introitus
@@ -29,11 +28,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C4:Offertorium
 
-[Secreta]
-@Commune/C4:Secreta
-
 [Communio]
 @Commune/C4:Communio
-
-[Postcommunio]
-@Commune/C4:Postcommunio

@@ -1,12 +1,15 @@
+[Officium]
+SS. Faustini et Jovitæ
+
 [Rank]
-SS. Faustini et Jovitæ;;Simplex;;1.1;;vide C3b
+;;Simplex;;1.1;;vide C3a-1
 
 [Rule]
-vide C3b;
+vide C3a-1;
 Gloria
 
-[Oratio]
-@Commune/C3b:Oratio:s/N\. et N\./Faustíni et Jovítæ/
+[Name]
+Faustíni et Jovítæ
 
 [Secreta]
 @Commune/C3

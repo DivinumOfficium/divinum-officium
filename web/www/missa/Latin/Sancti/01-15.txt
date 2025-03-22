@@ -1,18 +1,22 @@
-[Rank]
-S. Pauli Primi Eremitæ et Confessoris;;Duplex;;3;;vide C5
+[Officium]
+S. Pauli Primi Eremitæ et Confessoris
 
-[Rank] (rubrica 1570)
-S. Pauli Primi Eremitæ et Confessoris;;Semiduplex;;2.2;;vide C5
+[Rank]
+;;Duplex;;3;;vide C5
+(sed rubrica 1570 aut rubrica 1617)
+;;Semiduplex;;2.2;;vide C5
+(sed rubrica 1930 aut rubrica 1963)
+;;Memoria;;1.1;;vide C5
 
 [Rule]
 vide C5;
 Gloria
 
-[Introitus]
-@Commune/C5b
+[Name]
+Pauli
 
-[Oratio]
-@Commune/C5:Oratio:s/N\./Pauli/
+[Introitus]
+@Commune/C5-1
 
 [Lectio]
 Léctio Epístolæ beáti Pauli Apóstoli ad Philippénses
@@ -34,10 +38,7 @@ Sequéntia ++ sancti Evangélii secúndum Matthǽum
 In illo témpore: Respóndens Jesus, dixit: Confíteor tibi, Pater, Dómine coeli et terræ, quia abscondísti hæc a sapiéntibus et prudéntibus, et revelásti ea párvulis. Ita, Pater: quóniam sic fuit plácitum ante te. Omnia mihi trádita sunt a Patre meo. Et nemo novit Fílium nisi Pater: neque Patrem quis novit nisi Fílius, et cui volúerit Fílius reveláre. Veníte ad me, omnes, qui laborátis et oneráti estis, et ego refíciam vos. Tóllite jugum meum super vos, et díscite a me, quia mitis sum et húmilis corde: et inveniétis réquiem animábus vestris. Jugum enim meum suáve est et onus meum leve.
 
 [Offertorium]
-@Commune/C5b
-
-[Secreta]
-@Commune/C5
+@Commune/C5-1
 
 [Communio]
-@Commune/C2p
+@Commune/C2ap

@@ -1,15 +1,16 @@
+[Officium]
+S. Blasii Episcopi et Martyris
+
 [Rank]
-S. Blasii Episcopi;;Simplex;;1.1;;vide C2b
+;;Simplex;;1.1;;vide C2-1
+(sed rubrica innovata)
+;;Duplex optional;;2;;vide C2-1
 
 [Rule]
-vide C2b;
+vide C2-1;
 Gloria
 
-[Oratio]
-@Commune/C2b::s/N\./Blásii/
-
-[Secreta]
-@Commune/C2b::s/N\./Blásio/
-
-[Postcommunio]
-@Commune/C2b::s/N\./Blásio/
+[Name]
+Blásii
+Secrata=Blásio
+Postcommunio=Blásio

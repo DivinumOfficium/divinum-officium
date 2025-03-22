@@ -1,17 +1,17 @@
+[Officium]
+S. Ubaldi Episcopi et Confessoris
+
 [Rank]
-S. Ubaldi Episcopi Confessoris;;Semiduplex;;2.2;;vide C4
+;;Semiduplex;;2.2;;vide C4
 
 [Rule]
 vide C4;
 9 lectiones
 
+[Name]
+Ubáldi
+Postcommunio=Ubáldo
+
 [Oratio]
-Auxílium tuum nobis, Dómine, quǽsumus, placátus impénde: et, intercessióne beáti Ubaldi Confessóris tui atque Pontíficis, contra omnes diáboli nequítias déxteram super nos tuæ propitiatiónis exténde.
+Auxílium tuum nobis, Dómine, quǽsumus, placátus impénde: et, intercessióne beáti Ubáldi Confessóris tui atque Pontíficis, contra omnes diáboli nequítias déxteram super nos tuæ propitiatiónis exténde.
 $Per Dominum
-
-[Secreta]
-Sancti tui, quǽsumus, Dómine, nos ubíque lætíficent: ut, dum eórum mérita recólimus, patrocínia sentiámus.
-$Per Dominum
-
-[Postcommunio]
-@Commune/C4::s/N\./Ubáldo/

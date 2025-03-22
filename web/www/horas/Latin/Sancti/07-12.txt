@@ -1,13 +1,18 @@
+[Officium]
+S. Joannis Gualberti Abbatis
+
 [Rank]
-S. Joannis Gualberti Abbatis;;Duplex;;3;;vide C5
+;;Duplex;;3;;vide C5b
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C5b
 
 [Rule]
-vide C5;
+vide C5b;
 9 lectiones
 (rubrica numquam) no Lectio93
 
-[Oratio]
-@Commune/C5:Oratio1:s/N\./Joánnis/
+[Name]
+Joánnis
 
 [Lectio4]
 Joánnes Gualbertus, Floréntiæ nobili genere ortus, dum patri óbsequens rem militarem sequitur, Ugo, únicus ejus frater, occíditur a consanguíneo.  Quem cum solum et inérmem sancto Parasceves die Joánnes, armis ac milítibus stipatus, óbvium haberet, ubi néuter álterum poterat declináre, ob sanctæ crucis reveréntiam, quam homicida supplex, mortem jamjam subiturus, brácchiis signabat, vitam ei clementer indulget.  Hoste in fratrem recepto, próximum sancti Miniátis templum oratúrus ingréditur, ubi adoratam Crucifixi imáginem caput sibi fléctere cónspicit.  Quo mirábili facto permotus Joánnes, Deo exínde, étiam invíto patre, militare decernit, atque ibidem propriis sibi mánibus comam totondit, ac monasticum hábitum índuit : adeoque piis ac religiosis virtútibus brevi coruscat, ut multis se perfectiónis specimen ac normam præbéret ; ita ut, ejusdem loci abbate defuncto, communi ómnium voto in superiórem eligerétur.  At Dei famulus, cupiens subesse potius quam præesse, ad majora divina voluntáte servatus, ad Camaldulénsis eremi íncolam Romualdum proficíscitur, a quo cælicum sui institúti vaticinium áccipit ; tum suum ordinem sub regula sancti Benedicti apud Umbrosam vallem instituit.

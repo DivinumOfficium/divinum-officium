@@ -1,12 +1,15 @@
+[Officium]
+S. Martini Episcopi et Confessoris
+
 [Rank]
-S. Martini Episcopi et Confessoris;;Duplex;;3;;vide C4a
+;;Duplex;;3;;vide C4
 
 [Rule]
-vide C4a;
+vide C4;
 9 lectiones
 
 [Introitus]
-@Commune/C2c
+@Commune/C2a
 
 [Oratio]
 Deus, qui cónspicis, quia ex nulla nostra virtúte subsístimus: concéde propítius; ut, intercessióne beáti Martíni Confessóris tui atque Pontíficis, contra ómnia advérsa muniámur.
@@ -34,14 +37,14 @@ Sequéntia ++ sancti Evangélii secúndum Lucam
 In illo témpore: Dixit Jesus discípulis suis: Nemo lucérnam accéndit, et in abscóndito ponit, neque sub módio: sed supra candelábrum, ut, qui ingrediúntur, lumen vídeant. Lucérna córporis tui est óculus tuus. Si óculus tuus fúerit simplex, totum corpus tuum lúcidum erit: si autem nequam fúerit, étiam corpus tuum tenebrósum erit. Vide ergo, ne lumen, quod in te est, ténebræ sint. Si ergo corpus tuum totum lúcidum fúerit, non habens áliquam partem tenebrárum, erit lúcidum totum, et sicut lucérna fulgóris illuminábit te.
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
 Sanctífica, quǽsumus, Dómine Deus, hæc múnera, quæ in sollemnitáte sancti Antístitis tui Martíni offérimus: ut per ea vita nostra inter advérsa et próspera ubíque dirigátur.
 $Per Dominum
 
 [Communio]
-@Commune/C4d
+@Commune/C4-1
 
 [Postcommunio]
 Præsta, quǽsumus, Dómine, Deus noster: ut, quorum festivitáte votíva sunt sacraménta, eórum intercessióne salutária nobis reddántur.

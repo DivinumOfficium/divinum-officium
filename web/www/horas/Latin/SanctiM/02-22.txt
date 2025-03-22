@@ -1,16 +1,16 @@
 @SanctiM/01-18
 
+[Officium]
+In Cathedra S. Petri Apostoli Antiochiæ
+(sed rubrica 196 aut rubrica 1930 aut rubrica cisterciensis)
+In Cathedra S. Petri Apostoli
+
 [Rank]
-In Cathedra S. Petri Apostoli;;Duplex majus;;4;;ex C4
-
-[Rank] (rubrica 1963)
-In Cathedra S. Petri Apostoli;;Duplex;;3;;vide C4
-
-[Rank] (rubrica 1617)
-In Cathedra S. Petri Apostoli Antiochiæ;;Duplex majus;;4;;ex CommuneM/C4
-
-[Rank] (rubrica cisterciensis)
-In Cathedra S. Petri Apostoli;;Semiduplex;;2.6;;ex C4
+;;Duplex majus;;4;;ex C4
+(sed rubrica 1963)
+;;Duplex;;3;;vide C4
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.2;;ex C4
 
 [Rule]
 Psalmi Dominica
@@ -20,8 +20,6 @@ Sub unica concl
 
 [Hymnus Matutinum]
 @Sancti/02-22:HymnusM Vespera
-
-[Lectio3] (rubrica 1963)
 
 [Lectio5] (rubrica 1617)
 @Sancti/02-22:Lectio4:s/ergo/ígitur/

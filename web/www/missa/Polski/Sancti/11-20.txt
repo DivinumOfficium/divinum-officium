@@ -1,9 +1,5 @@
-[Rank]
-S. Felicis de Valois Confessoris;;Duplex;;3;;vide C5b
-
-[Rule]
-vide C5b;
-Gloria
+[Officium]
+Św. Feliksa Walezego Wyznawcy
 
 [Comment]
 # 20 XI – Św. Feliksa Walezego, Wyznawcy
@@ -12,30 +8,23 @@ Gloria
 Św. Feliks urodził się w 1127 roku. Razem ze św. Janem z Maty założył zakon Przenajświętszej Trójcy dla wykupu jeńców z niewoli muzułmańskiej. Zmarł w roku 1212.
 
 [Introitus]
-@Commune/C5b:Introitus
+@Commune/C5-1:Introitus
 
 [Oratio]
 Boże, który świętego Feliksa, Twego Wyznawcę, przez natchnienie niebieskie raczyłeś wezwać z pustelni do dzieła wykupu niewolników, spraw, prosimy Cię, niech za jego wstawiennictwem, a dzięki Twej łasce, wyzwoleni z niewoli naszych grzechów, dojdziemy do ojczyzny niebieskiej.
 $Per Dominum.
 
 [Lectio]
-@Commune/C5b:Lectio
+@Commune/C5-1:Lectio
 
 [Graduale]
-@Commune/C5b:Graduale
+@Commune/C5-1:Graduale
 
 [Evangelium]
-@Commune/C5b:Evangelium
+@Commune/C5-1:Evangelium
 
 [Offertorium]
-@Commune/C5b:Offertorium
-
-[Secreta]
-@Commune/C5b:Secreta
+@Commune/C5-1:Offertorium
 
 [Communio]
-@Commune/C5b:Communio
-
-[Postcommunio]
-Prosimy Cię, wszechmogący Boże, aby pokarm niebieski, któryśmy przyjęli, chronił nas od wszelkich przeciwności za wstawiennictwem świętego Feliksa, Twojego Wyznawcy.
-$Per Dominum
+@Commune/C5-1:Communio

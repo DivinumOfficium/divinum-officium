@@ -1,20 +1,26 @@
+[Officium]
+S. Stephani Protomartyris
+
 [Rank]
-S. Stephani Protomartyris;;Duplex II class cum octava simplici;;5.4;;ex C2
+;;Duplex II class cum octava simplici;;5.4;;ex C2a
+(sed rubrica 196)
+;;Duplex II class;;5.4;;ex C2a
 
 [Rule]
-ex C2;
+ex C2a;
 Gloria
 Credo
 Prefatio=Nat
+
+[Oratio1]
+Omnípotens sempitérne Deus, qui primítias Mártyrum in beati Levítæ Stephani sánguine dedicásti: tríbue, quǽsumus; ut pro nobis intercéssor exsístat, qui pro suis étiam persecutóribus exorávit Dóminum nostrum Jesum Christum, Fílium tuum:
+$Qui tecum
 
 [Introitus]
 @Sancti/08-03
 
 [Oratio]
-@Sancti/08-03
-
-[Oratio1]
-Omnípotens sempitérne Deus, qui primítias Mártyrum in beati Levítæ Stephani sánguine dedicásti: tríbue, quǽsumus; ut pro nobis intercéssor exsístat, qui pro suis étiam persecutóribus exorávit Dóminum nostrum Jesum Christum, Fílium tuum:
+Da nobis, quǽsumus, Dómine, imitári quod cólimus: ut discámus et inimícos dilígere; quia ejus natalícia celebrámus, qui novit étiam pro persecutóribus exoráre Dóminum nostrum Jesum Christum Fílium tuum:
 $Qui tecum
 
 [Commemoratio Oratio]

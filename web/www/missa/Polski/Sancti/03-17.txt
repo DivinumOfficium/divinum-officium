@@ -1,9 +1,5 @@
-[Rank]
-S. Patricii Episcopi et Conf.;;Duplex;;3;;vide C4
-
-[Rule]
-vide C4;
-Gloria
+[Officium]
+Św. Patrycego Biskupa i Wyznawcy
 
 [Comment]
 # 17 III – Św. Patryka, Biskupa i Wyznawcy
@@ -11,9 +7,9 @@ Gloria
 ! Szaty białe
 Św. Patryk, urodzony w Brytanii, jako mały chłopiec został porwany przez irlandzkich korsarzy. Po sześciu latach zbiegł z niewoli i wrócił do ojczyzny. Wstąpił do klasztoru i został kapłanem. Jako biskup-misjonarz wyruszył do Irlandii, aby pozyskać ją dla Chrystusa. W ciągu 30 lat działalności pokrył wyspę siecią kościołów i klasztorów. Umarł w r. 461. Jest patronem Irlandii.
 
+[Name]
+Patryka
+
 [Oratio]
 Boże, który raczyłeś posłać świętego Patryka, Twego Wyznawcę i Biskupa, by głosił poganom Twą chwałę; dla jego zasług i wstawiennictwa spraw, abyśmy za Twoim zmiłowaniem mogli wypełniać to, co nakazujesz nam czynić.
 $Per Dominum
-
-[Postcommunio]
-@Commune/C4:Postcommunio:s/N\./Patryka/

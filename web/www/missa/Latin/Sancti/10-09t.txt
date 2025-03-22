@@ -1,5 +1,10 @@
+[Officium]
+S. Dionysii Epíscopi, Rustici et Eleutherii Martyrum
+
 [Rank]
-S. Dionysii Episcopi, Rustici et Eleutherii Martyrum;;Semiduplex;;2.2;;vide C3
+;;Semiduplex;;2.2;;vide C3a
+(sed rubrica 196)
+;;Simplex;;1.1;;vide C3a
 
 [Rule]
 vide C3a;
@@ -15,8 +20,9 @@ Léctio Actuum Apostolórum.
 In diébus illis: Stans Paulus in médio Areopági, ait: Viri Atheniénses, per ómnia quasi superstitiosióres vos vídeo. Prætériens enim et videns simulácra vestra, invéni et aram, in qua scriptum erat: Ignóto Deo. Quod ergo ignorántes cólitis, hoc ego annúntio vobis. Deus, qui fecit mundum et ómnia, quæ in eo sunt, hic cœli et terræ cum sit Dóminus, non in manufáctis templis hábitat, nec mánibus humánis cólitur índigens áliquo, cum ipse det ómnibus vitam et inspiratiónem et ómnia: fecítque ex uno omne genus hóminum inhabitáre super univérsam fáciem terræ, defíniens statúta témpora et términos habitatiónis eórum, quærere Deum, si forte attréctent eum aut invéniant, quamvis non longe sit ab unoquóque nostrum. In ipso enim vívimus et movémur et sumus: sicut et quidam vestrórum poëtárum dixérunt: Ipsíus enim et genus sumus. Genus ergo cum simus Dei, non debémus æstimáre auro aut argénto aut lápidi, sculptúræ artis et cogitatiónis hóminis Divínum esse símile. Et témpora quidem hujus ignorántia despíciens Deus, nunc annúntiat homínibus, ut omnes úbique pœniténtiam agant, eo quod státuit diem, in quo judicatúrus est orbem in æquitáte, in viro, in quo státuit, fidem præbens ómnibus, súscitans eum a mórtuis. Cum audíssent autem resurrectiónem mortuórum, quidam quidem irridébant, quidam vero dixérunt: Audiámus te de hoc íterum. Sic Paulus exívit de médio eórum. Quidam vero viri adhæréntes ei, credidérunt: in quibus et Dionýsius Areopagíta, et múlier nómine Dámaris, et álii cum eis.
 
 [Evangelium]
-@Commune/C3b
-(sed rubrica 1570) @Commune/C3a
+@Commune/C3a-1
+(sed rubrica 1570)
+@Commune/C3a
 
 [Secreta]
 Obláta tibi, Dómine, múnera pópuli tui, pro tuórum honóre Sanctórum, súscipe propítius, quǽsumus: et eórum nos intercessióne sanctífica.

@@ -1,5 +1,10 @@
+[Officium]
+S. Matthæi Apostoli et Evangelistæ
+
 [Rank]
-S. Matthæi Apostoli et Evangelistæ;;Duplex II classis;;5.1;;ex C1a
+;;Duplex II classis;;5.1;;ex C1a
+(sed rubrica 196)
+;;Duplex II classis;;5;;ex C1a
 
 [Rule]
 ex C1a;
@@ -8,7 +13,7 @@ Credo
 Prefatio=Apostolis
 
 [Introitus]
-@Commune/C4c
+@Commune/C5b
 
 [Oratio]
 Beáti Apóstoli et Evangelístæ Matthǽi, Dómine, précibus adjuvémur: ut, quod possibílitas nostra non óbtinet, ejus nobis intercessióne donétur.

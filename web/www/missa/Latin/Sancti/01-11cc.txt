@@ -1,20 +1,17 @@
+[Officium]
+S. Hygini Papæ et Martyris
+
 [Rank]
-S. Hygini Papæ et Martyris;;Simplex;;1.1;;vide C4b
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C2c;
-(sed communi Summorum Pontificum)
-vide C4b;
+vide C2b;
 Prefatio=Epi 
-OPapaM=Hygínum;
 
-[Oratio]
-@Commune/C2c:Oratio:s/N\./Hygíni/
+
+[Name]
+Hygíni
 (sed communi Summorum Pontificum)
-@Commune/C4b:Oratio
-
-[Secreta] (rubrica tridentina)
-@Commune/C2c:Secreta:s/N\./Hygíno/
-
-[Postcommunio] (rubrica tridentina)
-@Commune/C2a:Postcommunio:s/N\./Hygíno/
+Hygínum
+Secreta=Hygíno
+Postcommunio=Hygíno

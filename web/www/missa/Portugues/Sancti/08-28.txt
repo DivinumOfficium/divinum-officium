@@ -1,10 +1,5 @@
-[Rank]
-S. Augustini Episcopi et Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDA
+[Officium]
+Santo Agostinho, Bispo, Confessor e Doutor
 
 [Comment]
 # 28 VIII – Santo Agostinho, Bispo, Confessor e Doutor
@@ -41,11 +36,5 @@ Encontrei o meu servo David e ungi-o com meu óleo sagrado. Aleluia.
 [Offertorium]
 @Commune/C4a:Offertorium
 
-[Secreta]
-@Commune/C4a:Secreta
-
 [Communio]
 @Commune/C4a:Communio
-
-[Postcommunio]
-@Commune/C4a:Postcommunio

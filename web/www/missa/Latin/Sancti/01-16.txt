@@ -1,21 +1,17 @@
+[Officium]
+S. Marcelli Papæ et Martyris
+
 [Rank]
-S. Marcelli Papæ et Martyris;;Semiduplex;;2.2;;vide C2
-(sed communi summorum pontificum)
-S. Marcelli Papæ et Martyris;;Semiduplex;;2.2;;vide C4b
+;;Semiduplex;;2.2;;vide C2b
 
 [Rule]
-vide C2;
-(sed communi summorum pontificum)
-vide C4b;
+vide C2b;
 Gloria
-Prefatio=Apostolis
+
+[Name]
+Marcélli
+Postcommunio=Marcéllo
 
 [Oratio]
 Preces pópuli tui, quǽsumus, Dómine, cleménter exáudi: ut beáti Marcélli Mártyris tui atque Pontíficis méritis adjuvémur, cujus passióne lætámur.
 $Per Dominum
-
-[Secreta]
-@Commune/C4b
-
-[Postcommunio]
-@Commune/C4b

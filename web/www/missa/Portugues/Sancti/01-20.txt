@@ -1,5 +1,5 @@
-[Rank]
-Ss. Fabiani et Sebastiani Martyrum;;Duplex;;3;;vide C3
+[Officium]
+Ss. Fabiani et Sebastiani Martyrum
 
 [Rule]
 vide C3;
@@ -10,12 +10,12 @@ Gloria
 ! 3 classe
 ! Paramentos vermelhos
 
-[Introitus]
-@Commune/C3:Introitus
-
 [Oratio]
 Ó Deus omnipotente, olhai para a nossa fraqueza, e, visto que estamos oprimidos sob o peso dos nossos pecados, fazei que sejamos protegidos pela gloriosa intercessão dos vossos B. B. Mártires Fabião e Sebastião.
 $Per Dominum
+
+[Introitus]
+@Commune/C3:Introitus
 
 [Lectio]
 Lição da Epístola do B. Ap.º Paulo aos Hebreus.

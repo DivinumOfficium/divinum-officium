@@ -1,16 +1,16 @@
-[Rank]
-S. Clementis Papae et Martyris;;Duplex;;3;;vide C4b
-
-[Rule]
-OPapaM=Cleméntem;
-vide C4b;
-Gloria
+[Officium]
+Św. Klemensa Papieża i Męczennika
 
 [Comment]
 # 23 XI – Św. Klemensa I, Papieża i Męczennika
 ! 3 klasy
 ! Szaty czerwone
 Św. Klemens, trzeci następca św. Piotra, rządził Kościołem od roku 88 do 97. Napisał list do Koryntian, który jest świadectwem znaczenia biskupa rzymskiego w pierwszym wieku. List jest przeniknięty troską o jedność chrześcijaństwa. Imię św. Klemensa wymienia się w kanonie Mszy świętej.
+
+Wspomnienie św. Felicyty, męczennicy. Św. Felicyta, męczennica rzymska została pochowana na cmentarzu Maksymina. Pamiątkę jej śmierci obchodzono w Rzymie już w V wieku.
+
+[Name]
+Klemensa
 
 [Introitus]
 !Iz 59:21; 56:7
@@ -20,8 +20,9 @@ Błogosławiony mąż, który boi się Pana i wielką radość znajduje w Jego n
 &Gloria
 v. Mówi Pan: Mowy moje, które włożyłem w twoje usta, nie odstąpią od ust twoich; a ofiary twoje miłe będą na moim ołtarzu.
 
-[Oratio]
-@Commune/C4b:Oratio
+[Oratio] (nisi communi Summorum Pontificum) 
+Boże, który corocznie nas uweselasz uroczystością świętego Klemensa, Męczennika Twego i Biskupa, spraw miłościwie, niech, czcząc jego narodzenie do życia wiecznego, naśladujemy stałość, z jaką poniósł męczeństwo.
+$Per Dominum
 
 [Lectio]
 @Tempora/Pent23-0:Lectio
@@ -35,11 +36,5 @@ v. Mówi Pan: Mowy moje, które włożyłem w twoje usta, nie odstąpią od ust 
 [Offertorium]
 @Commune/C4b:Offertorium
 
-[Secreta]
-@Commune/C4b:Secreta
-
 [Communio]
 @Commune/C4b:Communio
-
-[Postcommunio]
-@Commune/C4b:Postcommunio

@@ -1,14 +1,21 @@
 @Commune/C4
 
+[Officium]
+S. Laurentii Justiniani Episcopi et Confessoris
+
 [Rank]
-S. Laurentii Justiniani Episcopi et Confessoris;;Semiduplex;;2.2;;vide C4
+;;Semiduplex;;2.2;;vide C4
 
 [Rule]
 vide C4
 Gloria
 
+[Name]
+Lauréntii
+Postcommunio=Lauréntio
+
 [Introitus]
-@Commune/C2c
+@Commune/C2a
 
 [Oratio]
 @Commune/C4::s/N\./Lauréntii/
@@ -21,10 +28,3 @@ In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Homo péregre pr
 [Offertorium]
 !Ps 88:21-22
 Invéni David servum meum, óleo sancto meo unxi eum: manus enim mea auxiliábitur ei, et bráchium meum confortábit eum.
-
-[Secreta]
-Sancti tui, quǽsumus, Dómine, nos ubíque lætíficant: ut, dum eórum mérita recólimus, patrocínia sentiámus.
-$Per Dominum
-
-[Postcommunio]
-@Commune/C4::s/N\./Lauréntio/

@@ -1,16 +1,11 @@
-[Rank]
-Ss. Symphorosæ et Septem Filiorum Martyrum;;Simplex;;1.1;;vide C3
+[Officium]
+Ss. Symphorosæ et Septem Filiorum Martyrum
 
-[Rule]
-vide C3;
-Gloria
+[Name]
+Symphorosa en haar kinderen
 
 [Introitus]
 @Sancti/03-10
-
-[Oratio]
-!Ss. Symphorosæ et septem Filiorum ejus Mm
-@Commune/C3a:Oratio:s/N\. en N\./Symphorosa en haar kinderen/
 
 [Lectio]
 @Sancti/01-20
@@ -19,16 +14,10 @@ Gloria
 @Sancti/06-26
 
 [Evangelium]
-@Commune/C3b
+@Commune/C3a-1
 
 [Offertorium]
 @Sancti/01-20
 
-[Secreta]
-@Commune/C3a
-
 [Communio]
 @Sancti/03-10
-
-[Postcommunio]
-@Commune/C3a:Postcommunio:s/N\. en N\./Symphorosa en haar kinderen/

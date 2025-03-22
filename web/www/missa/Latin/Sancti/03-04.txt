@@ -1,10 +1,14 @@
+[Officium]
+S. Casimiri Confessoris
+
 [Rank]
-S. Casimiri Confessoris;;Semiduplex;;2.1;;vide C5
+;;Semiduplex;;2.2;;vide C5
+(sed rubrica 196)
+;;Duplex;;3;;vide C5
 
 [Rule]
 vide C5;
 Gloria
-(post Septuagesimam)Suffragium=Sanctorum;Papa,Ecclesiæ;;
 
 [Oratio]
 Deus, qui inter regáles delícias et mundi illécebras sanctum Casimírum virtúte constántiæ roborásti: quǽsumus; ut ejus intercessióne fidéles tui terréna despíciant, et ad cœléstia semper aspírent.

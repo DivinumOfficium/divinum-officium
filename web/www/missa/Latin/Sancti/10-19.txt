@@ -1,12 +1,19 @@
+[Officium]
+S. Petri de Alcantara Confessoris
+
 [Rank]
-S. Petri de Alcantara Confessoris;;Duplex;;3;;vide C5
+;;Duplex;;3;;vide C5-1
 
 [Rule]
-vide C5;
+vide C5-1;
 Gloria
 
+[Name]
+Petrum
+Postcommunio=Petro
+
 [Introitus]
-@Commune/C5b
+@Commune/C5-1
 
 [Oratio]
 Deus, qui beátum Petrum Confessórem tuum admirábilis pœniténtiæ et altíssimæ contemplatiónis múnere illustráre dignátus es: da nobis, quǽsumus; ut, ejus suffragántibus méritis, carne mortificáti, facílius cœléstia capiámus.
@@ -16,7 +23,7 @@ $Per Dominum
 @Sancti/01-15
 
 [Graduale]
-@Commune/C5b
+@Commune/C5-1
 
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Lucam
@@ -24,13 +31,7 @@ Sequéntia ++ sancti Evangélii secúndum Lucam
 In illo témpore: Dixit Jesus discípulis suis: Nolíte timére, pusíllus grex, quia complácuit Patri vestro dare vobis regnum. Véndite quæ possidétis, et date eleemósynam. Fácite vobis sácculos, qui non veteráscunt, thesáurum non deficiéntem in cœlis: quo fur non apprópiat, neque tínea corrúmpit. Ubi enim thesáurus vester est, ibi et cor vestrum erit.
 
 [Offertorium]
-@Commune/C5b
-
-[Secreta]
-@Commune/C5b
+@Commune/C5-1
 
 [Communio]
-@Commune/C5b
-
-[Postcommunio]
-@Commune/C5b:Postcommunio:s/N\./Petro/
+@Commune/C5-1

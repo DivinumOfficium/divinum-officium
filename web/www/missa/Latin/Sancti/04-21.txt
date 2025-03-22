@@ -1,16 +1,17 @@
+[Officium]
+S. Anselmi Episcopi Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Anselmi Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+;;Duplex;;3;;vide C4a
+(sed rubrica 1930)
+;;Duplex majus;;4;;vide C4a
 
 [Rule]
 vide C4a;
 Gloria
 CredoDA
 
-[Oratio]
-@Commune/C4a:Oratio:s/N\./Ansélmi/
-
-[Secreta]
-@Commune/C4a:Secreta:s/N\./Ansélmi/
-
-[Postcommunio]
-@Commune/C4a:Secreta:s/N\./Ansélmus/
+[Name]
+Ansélmum
+Secreta=Ansélmi
+Postcommunio=Ansélmus

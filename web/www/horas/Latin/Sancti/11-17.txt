@@ -1,18 +1,19 @@
+[Officium]
+S. Gregorii Thaumaturgi Episcopi et Confessoris
+
 [Rank]
-S. Gregorii Thaumaturgi Episcopi et Confessoris;;Semiduplex;;2.2;;vide C4
-
-[Rank] (rubrica 1570)
-S. Gregorii Thaumaturgi Episcopi et Confessoris;;Simplex;;1.1;;vide C4
-
-[Rank] (rubrica 196)
-S. Gregorii Thaumaturgi Episcopi et Confessoris;;Duplex;;3;;vide C4
+;;Semiduplex;;2.2;;vide C4
+(sed rubrica 1570)
+;;Simplex;;1.1;;vide C4
+(sed rubrica 196)
+;;Duplex;;3;;vide C4
 
 [Rule]
 vide C4;
 9 lectiones
 
-[Oratio]
-@Commune/C4::s/N\./Gregórii/
+[Name]
+Gregórii
 
 [Lectio4]
 Gregórius, Neocæsaréæ Ponti epíscopus, sanctitáte doctrinaque illustris, signis vero ac miraculis multo illustrior, quorum multitúdine atque præstántia Thaumatúrgus appellátus est, et sancti Basilíi testimonio cum Moyse, Prophetis et Apóstolis comparátus; montem, qui ecclésiæ ædificatiónem impediebat, oratióne álio tránstulit. Item palúdem, inter fratres causam discordiárum, exsiccávit. Lycum fluvium, perniciose agros inundántem, defixo ad ripam quo sustentabátur baculo, qui statim virentem crevit in árborem, coércuit, ut póstea ultra eum terminum non efflúxerit.

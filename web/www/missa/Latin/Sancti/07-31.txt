@@ -1,5 +1,10 @@
+[Officium]
+S. Ignatii Confessoris
+
 [Rank]
-S. Ignatii Confessoris;;Duplex;;3;;vide C5
+;;Duplex majus;;4;;vide C5
+(sed rubrica monastica)
+;;Duplex;;3;;vide C5
 
 [Rule]
 vide C5;
@@ -18,13 +23,13 @@ Deus, qui ad majórem tui nóminis glóriam propagándam, novo per beátum Igná
 $Per Dominum
 
 [Lectio]
-@Commune/C2a
+@Commune/C2a-1
 
 [Evangelium]
 @Sancti/02-06
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
 Adsint, Dómine Deus, oblatiónibus nostris sancti Ignátii benígna suffrágia: ut sacrosáncta mystéria, in quibus omnis sanctitátis fontem constituísti, nos quoque in veritáte sanctíficet.

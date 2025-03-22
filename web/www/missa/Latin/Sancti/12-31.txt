@@ -1,15 +1,25 @@
+[Officium]
+S. Silvestri Papæ et Confessoris
+
 [Rank]
-S. Silvestri Papæ et Conf.;;Duplex;;3;;vide C4d
+;;Duplex;;3;;vide C4b
+(sed rubrica 196)
+;;Commemoratio;;2.9;;vide C4b
 
 [Rule]
-OPapaC=Silvéstrum;
-vide C4d;
+vide C4b;
 Gloria
 Credo
 Prefatio=Nat
 
-[Oratio]
-@Commune/C4:Oratio:s/N\./Silvéstri/
+
+Silvéstri
+(sed rubrica 196)
+Silvéstrum
+Postcommunio=Silvéstro
+
+[Oratio] (nisi rubrica 196)
+@Commune/C4
 
 [Commemoratio Oratio]
 !Pro Octava Nativitatis.
@@ -35,16 +45,15 @@ V. Invéni David servum meum: óleo sancto meo unxi eum. Allelúja.
 [Offertorium]
 @Commune/C4:Offertorium
 
-[Secreta]
-Sancti tui nos, Dómine, quǽsumus, úbique lætíficent: ut, dum eórum mérita recólimus, patrocínia sentiámus.
-$Per Dominum
+[Secreta] (nisi rubrica 196)
+@Commune/C4
 
 [Commemoratio Secreta]
 !Pro Octava Nativitatis.
 @Sancti/12-25m3:Secreta
 
-[Postcommunio]
-@Commune/C4:Postcommunio:s/N\./Silvéstro/
+[Postcommunio] (nisi rubrica 196)
+@Commune/C4
 
 [Commemoratio Postcommunio]
 !Pro Octava Nativitatis.

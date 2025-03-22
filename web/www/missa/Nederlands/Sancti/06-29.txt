@@ -1,11 +1,5 @@
-[Rank]
-SS. Apostolorum Petri et Pauli;;Duplex I classis cum octava communi;;7;;ex C1
-
-[Rule]
-vide C1;
-Gloria
-Credo
-Prefatio=Apostolis
+[Officium]
+SS. Apostolorum Petri et Pauli
 
 [Introitus]
 !Act 12:11
@@ -35,15 +29,10 @@ Gij zijt Petrus en op deze steenrots zal Ik mijn Kerk bouwen. Alleluia.
 [Evangelium]
 @Commune/C4b
 
-[Offertorium]
-@Sancti/02-24
-
 [Secreta]
 Mogen, Heer, de offergaven, die wij ter verheerlijking van uw Naam opdragen, vergezeld gaan van de gebeden van uw apostelen, opdat wij daardoor vergiffenis en steun mogen ontvangen.
 $Per Dominum
 
-[Communio]
-@Commune/C4b
-
 [Postcommunio]
-@Sancti/06-28r
+Bewaar hen, o Heer, die Gij verzadigd hebt met hemelse spijs, door de tussenkomst van uw apostelen voor alle tegenslag. 
+$Per Dominum

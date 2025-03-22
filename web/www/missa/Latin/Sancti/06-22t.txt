@@ -1,15 +1,19 @@
+[Officium]
+S. Paulini Episcopi et Confessoris
+
 [Rank]
-S. Paulini Episcopi et Confessoris;;Duplex;;3;;vide C4
+;;Simplex;;1.1;;vide C4
 
 [Rule]
 vide C4;
 Gloria
 
-[Introitus]
-@Commune/C4d
+[Name]
+Paulíni
+Postcommunio=Paulíno
 
-[Oratio]
-@Sancti/06-22
+[Introitus]
+@Commune/C4-1
 
 [Lectio]
 @Sancti/06-22
@@ -18,16 +22,10 @@ Gloria
 @Commune/C4
 
 [Evangelium]
-@Commune/C5b
+@Commune/C5-1
 
 [Offertorium]
-@Commune/C2b
-
-[Secreta]
-@Sancti/06-22
+@Commune/C2-1
 
 [Communio]
 @Commune/C4
-
-[Postcommunio]
-@Sancti/06-22

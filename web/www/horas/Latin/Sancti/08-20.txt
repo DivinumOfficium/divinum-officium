@@ -1,26 +1,31 @@
-[Rank]
-S. Bernardi Abbatis et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
-(sed rubrica 1930)
-S. Bernardi, Abbatis et Ecclesiæ Doctoris, O. N.;;Duplex majus;;4;;vide C5a
-(sed rubrica 1963)
-S. Bernardi, Abbatis et Ecclesiæ Doctoris, O. N.;;Duplex;;3;;vide C5a
+[Officium]
+S. Bernardi Abbatis et Ecclesiæ Doctoris
+(sed rubrica 1930 aut rubrica 1963)
+S. Bernardi, Abbatis et Ecclesiæ Doctoris, O. N.
 (sed rubrica 1570 aut rubrica 1617)
-S. Bernardi Abbatis;;Duplex;;3;;vide C5
+S. Bernardi Abbatis
+
+[Rank]
+;;Duplex;;3;;vide C5a
+(sed rubrica 1930)
+;;Duplex majus;;4;;vide C5a
+(sed rubrica 1570 aut rubrica 1617)
+;;Duplex;;3;;vide C5b
 
 [Rule]
 vide C5a;
 (sed rubrica 1570 aut rubrica 1617)
-vide C5;
+vide C5b;
 9 lectiones
 
 [Comment]
 anno 1830, Doctor Ecclesiæ declaratus est
 
 [Name]
-Bernárde
-
-[Oratio]
-@Commune/C4:Oratio2:s/N\./Bernárdum/
+Bernárdum
+(sed rubrica 1570 aut rubrica 1617)
+Bernárdi
+Ant=Bernárde
 
 [Lectio4]
 Bernardus, Fontanis in Burgundia honesto loco natus, adolescens propter egregiam formam vehementer sollicitatus a mulieribus, numquam de sententia colendæ castitatis dimoveri potuit. Quas diaboli tentationes ut effugeret, duos et viginti annos natus, monasterium Cisterciense, unde hic ordo incepit, et quod tum sanctitate florebat, ingredi constituit Quo Bernardi consilio cognito, fratres summopere conati sunt eum a proposito deterrere: in quo ipse eloquentior ac felicior fuit. Nam sic eos aliosque multos in suam perduxit sententiam, ut cum eo triginta juvenes eamdem religionem susceperint. Monachus jejunio ita deditus erat, ut quoties sumendus esset cibus, toties tormentum subire videretur. In vigiliis étiam et orationibus mirifice se exercebat: et christianam paupertatem colens, quasi cælestem vitam agebat in terris, ab omni caducarum rerum cura et cupiditate alienam.

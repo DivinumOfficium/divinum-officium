@@ -1,16 +1,5 @@
-[Rank]
-S. Damasi Papae et confessoris;;Semiduplex;;2.5;;vide C4
+[Officium]
+S. Damasi Papae et confessoris
 
-[Rank] (rubrica 196)
-S. Damasi Papae et confessoris;;Duplex;;3;;vide C4
-
-[Rank] (rubrica innovata)
-S. Damasi Papae et confessoris;;Semiduplex;;2.5;;vide C4
-
-[Rule]
-vide C4;
-9 lectiones;
-OPapaC=Damasus;
-Doxology=Nat
-Omit Preces
-Commemoratio3
+[Name]
+Damasus

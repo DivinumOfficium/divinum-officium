@@ -1,14 +1,13 @@
+[Officium]
+S. Ægidii Abbatis
+
 [Rank]
-S. Ægidii Abbatis;;Simplex;;1.1;;vide C5
+;;Simplex;;1.1;;vide C5
 
 [Rule]
 vide C5;
 
-[Oratio]
-@Commune/C4c:Oratio:s/N\./Ægidii/
-
-[Secreta]
-@Commune/C4c:Secreta:s/N\./Ægidii/
-
-[Postcommunio]
-@Commune/C4c:Postcommunio:s/N\./Ægidii/
+[Name]
+Ægídii
+Secreta=Ægídius
+Postcommunio=Ægídius

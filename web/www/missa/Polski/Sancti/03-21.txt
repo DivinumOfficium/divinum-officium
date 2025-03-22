@@ -1,9 +1,5 @@
-[Rank]
-S. Benedicti Abbatis;;Duplex majus;;4;;vide C4c
-
-[Rule]
-vide Cc;
-Gloria
+[Officium]
+Św. Benedykta Opata
 
 [Comment]
 # 21 III – Św. Benedykta, Opata
@@ -11,12 +7,6 @@ Gloria
 ! Szaty białe
 Św. Benedykt urodził się w Nursji około roku 480. Rozpoczął studia w Rzymie, lecz idąc za głosem łaski Bożej przerwał je i usunął się na pustkowie w Subiaco. Przez dwa lata wiódł życie pustelnicze. Gdy zaczęli gromadzić się koło niego uczniowie, założył w okolicy dwanaście małych klasztorów. Później przeniósł się na Monte Cassino i w r. 529 założył tam klasztor, który stał się kolebką zakonu. Na Monte Cassino św. Benedykt napisał regułę, która do dzisiaj stanowi podstawę ascezy Benedyktynów, Cystersów, Trapistów, Sylwestrynów, Oliwetanów i Walombrozjanów oraz licznych zgromadzeń żeńskich. Ze względu na rolę, jaką klasztory benedyktyńskie spełniły w Europie, nazywa się św. Benedykta ojcem kultury zachodniej. Św. Benedykt zmarł 21 marca 547 r. na Monte Cassino. Msza o świętym Opacie została ułożona na jego święto. Dopiero później stała się Mszą wspólną.
 
-[Oratio]
-Prosimy Cię, Panie, niech nas Tobie poleca wstawiennictwo świętego Benedykta, Opata, abyśmy za jego przyczyną otrzymali to, czego nie zdołamy wyjednać naszymi zasługami.
-$Per Dominum
-
-[Secreta]
-@Commune/C4c:Secreta:s/N\./Benedykt/
-
-[Postcommunio]
-@Commune/C4c:Postcommunio:s/N\./Benedykta/
+[Name]
+Benedykta
+Secrata=Benedykt

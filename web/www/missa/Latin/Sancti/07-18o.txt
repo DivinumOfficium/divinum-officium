@@ -1,9 +1,16 @@
+[Officium]
+Ss. Symphorosæ et Septem Filiorum Martyrum
+
 [Rank]
-Ss. Symphorosæ et Septem Filiorum Martyrum;;Simplex;;1.1;;vide C3
+;;Simplex;;1.1;;vide C3a
 
 [Rule]
-vide C3;
+vide C3a;
 Gloria
+
+[Name]
+Symphorósæ et filiórum ejus
+Postcommunio=Symphorósa et fíliis ejus
 
 [Introitus]
 !Ps 33:18
@@ -13,9 +20,6 @@ Benedícam Dóminum in omni témpore: semper laus ejus in ore meo.
 &Gloria
 v. Clamavérunt justi, et Dóminus exaudívit eos: et ex ómnibus tribulatiónibus eórum liberávit eos.
 
-[Oratio]
-@Commune/C3a:Oratio:s/N\. et N\./Symphorósæ et filiórum ejus/
-
 [Lectio]
 @Sancti/01-20
 
@@ -23,16 +27,13 @@ v. Clamavérunt justi, et Dóminus exaudívit eos: et ex ómnibus tribulatiónib
 @Sancti/06-26
 
 [Evangelium]
-@Commune/C3b
+@Commune/C3a-1
 
 [Offertorium]
-@Commune/C3pp
+@Commune/C3p
 
 [Secreta]
 @Commune/C3a
 
 [Communio]
 @Sancti/03-10
-
-[Postcommunio]
-@Commune/C3a:Postcommunio:s/N\. et N\./Symphorósæ et fíliis ejus/

@@ -1,11 +1,13 @@
-[Rank]
-S. Didaci Confessoris;;Semiduplex;;2.2;;vide C5
+[Officium]
+S. Didaci Confessoris
 
-[Rank] (rubrica innovata)
-S. Didaci Confessoris;;Simplex;;1.1;;vide C5
+[Rank]
+;;Semiduplex;;2.2;;vide C5-1
+(sed rubrica innovata)
+;;Simplex;;1.1;;vide C5-1
 
 [Rule]
-vide C5;mtv
+vide C5-1;mtv
 9 lectiones
 
 [Oratio]

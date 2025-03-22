@@ -43,7 +43,7 @@ Latin,English,Čeština/Bohemice,Dansk,Deutsch,Español/Espanol,Français/Franca
 Tridentine - 1570,Tridentine - 1888,Tridentine - 1906,Divino Afflatu - 1954,Reduced - 1955,Rubrics 1960 - 1960,Rubrics 1960 - 2020 USA,Monastic - 1617/Monastic Tridentinum 1617,Monastic - 1930/Monastic Divino 1930,Monastic - 1963,Ordo Cisterciensis - 1951/Monastic Tridentinum Cisterciensis 1951,Ordo Cisterciensis - Abbatia B.M.V. de Altovado/Monastic Tridentinum Cisterciensis Altovadensis,Ordo Praedicatorum - 1962
 
 [votives]
-Hodie,Apostolorum/C1,Evangelistarum/C1a,Unius Martyris/C2,Plurimorum Martyrum/C3,Confessoris Pontificis/C4,Doctorum Pontificium/C4a,Confessoris non Pontificis/C5,Doctoris non Pontificis/C5a,Unam Virginum Martyrum/C6,Plures Virgines Martyres/C6a,Unam Virginum tantum/C6b,Unam non Virginum Martyrum/C7,Unam non Virginum nec Martyrum/C7a,Plures non Virgines Martyres/C7b,Dedicationis Ecclesiae/C8,Officium defunctorum/C9,Beata Maria in Sabbato/C10,Beatae Mariae Virginis/C11,Officium parvum Beatae Mariae Virginis/C12
+Hodie,Apostolorum/C1,Evangelistarum/C1a,Unius Martyris Pontificis/C2,Unius Martyris non Pontificis/C2a,Plurimorum Martyrum Pontificum/C3,Plurimorum Martyrum non Pontificum/C3a,Confessoris Pontificis/C4,Doctoris Pontificis/C4a,Plurium Confessorum Pontificum/C4c,Confessoris non Pontificis/C5,Doctoris non Pontificis/C5a,Abbatis/C5b,Plurium Confessorum non Pontificum/C5c,Unius Virginis Martyris/C6,Plurimorum Virginum Martyrum/C6a,Unius Virginis tantum/C6b,Unius non Virginis Martyris/C7,Unius non Virginis nec Martyris/C7a,Plurimorum non Virginum Martyrum/C7b,Dedicationis Ecclesiae/C8,Officium defunctorum/C9,Beata Maria in Sabbato/C10,Beatae Mariae Virginis/C11,Officium parvum Beatae Mariae Virginis/C12
 
 [psalmversion]
 accented,plain
@@ -55,23 +55,39 @@ Matutinum,Laudes,Prima,Tertia,Sexta,Nona,Vesperae,Completorium
 C1,Commune Apostolorum, 
 C1a,Commune Evangelistarum,
 C1p,Commune Apostolorum tempore Paschali, 
-C2,Commune Unius Martyris,
-C2p,Commune Unius Martyris tempore Paschali,
-C3,Commune Plurimorum Martyrum,
-C3p,Commune Plurimorum Martyrum tempore Paschali,
-C4,Commune Confessoris Pontificis,
-C4a,Commune Doctorum Pontificium,
-C5,Commune Confessoris non Pontificis,
-C5a,Commune Doctoris non Pontificis,
-C6,Commune unam Virginum, Martyrum,
-C6a,Commune plures Virgines,
-C6b,Commune unam Virginum tantum,
-C7,Commune non Virginum, Martyrum,
-C7a,Commune non Virginum, non Martyrum,
-C7b,Commune plures non Virgines, Martyres,
-C8,Commune Dedicationis Ecclesiae
-C9,Officium defunctorum
-C10,Beata Maria in Sabbato
+C2,Commune Unius Martyris Pontificis (Missa Statuit),
+C2-1,Commune Unius Martyris Pontificis (Missa Sacerdotes Dei),
+C2a,Commune Unius Martyris non Pontificis (Missa In virtute),
+C2a-1,Commune Unius Martyris non Pontificis (Missa Lætabitur),
+C2b,Commune Unius Martyris Summi Pontificis (Missa Si diligis),
+C2b-1,Commune Unius Martyris Summi Pontificis (Missa Si diligis),
+C2p,Commune Unius Martyris tempore Paschali (Missa Protexisti),
+C3,Commune Plurimorum Martyrum Pontificum (Missa Intret),
+C3a,Commune Plurimorum Martyrum non Pontificum (Missa Sapientiam),
+C3a-1,Commune Plurimorum Martyrum non Pontificum (Missa Salus autem),
+C3b,Commune Plurimorum Martyrum Summorum Pontificum (Missa Si diligis),
+C3p,Commune Plurimorum Martyrum tempore Paschali (Missa Sancti tui),
+C4,Commune Confessoris Pontificis (Missa Statuit),
+C4-1,Commune Confessoris Pontificis (Missa Sacerdotes Dei),
+C4a,Commune Doctorum Pontificium (Missa In medio),
+C4b,Commune Confessorum Summorum Pontificum (Missa Si diligis),
+C4b-1,Commune Confessorum Summorum Pontificum (Missa Si diligis),
+C4b-2,Commune Confessorum Summorum Pontificum (Missa Si diligis),
+C4c,Commune Confessorum Pontificum (Missa Statuit),
+C5,Commune Confessoris non Pontificis (Missa Os justi),
+C5-1,Commune Confessoris non Pontificis (Missa Justus),
+C5a,Commune Doctoris non Pontificis (Missa In medio),
+C5b,Commune Abbatum (Missa altera Os justi),
+C5c,Commune Confessorum non Pontificum (Missa Os justi),
+C6,Commune Unius Virginis Martyris,
+C6a,Commune Plurimorum Virginum Martyrum,
+C6b,Commune Unius Virginis tantum,
+C7,Commune Unius non Virginis Martyris,
+C7a,Commune Unius non Virginis nec Martyris,
+C7b,Commune Plurimorum non Virginum Martyrum,
+C8,Commune Dedicationis Ecclesiae,
+C9,Officium defunctorum,
+C10,Beata Maria in Sabbato,
 C11,Commune Beatae Mariae Virginis,
 C12,Officium parvum Beatae Mariae Virginis
 

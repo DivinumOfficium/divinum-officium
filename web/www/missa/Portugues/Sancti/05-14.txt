@@ -1,20 +1,14 @@
-[Rank]
-S. Bonifacii Martyris;;Simplex;;1.1;;vide C2
-
-[Rule]
-vide C2;
+[Officium]
+S. Bonifácio, Mártir
 
 [Comment]
 # 14 V – S. Bonifácio, Mártir
 ! Comemoração
 ! Paramentos vermelhos
 
+[Name]
+Bonifácio
+
 [Oratio]
 Ó Deus omnipotente, Vos rogamos, visto que celebramos a festa do vosso B. Mártir Bonifácio, concedei-nos que sejamos auxiliados com sua intercessão.
 $Per Dominum
-
-[Secreta]
-@Commune/C2p:Secreta2
-
-[Postcommunio]
-@Commune/C2p:Postcommunio3

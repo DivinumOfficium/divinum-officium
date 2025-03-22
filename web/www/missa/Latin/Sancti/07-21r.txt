@@ -1,16 +1,18 @@
+[Officium]
+S. Laurentii a Brundusio Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Laurentii a Brundusio Confessoris;;Duplex;;3;;vide C5a
+;;Duplex;;3;;vide C5a
 
 [Rule]
 vide C5a
 Gloria
 
+[Name]
+Lauréntio
+Secreta=Lauréntii
+Postcommunio=Lauréntius
+
 [Oratio]
 Deus, qui ad árdua quæque pro nóminis tui glória et animárum salúte beáto Lauréntio, Confessóri tuo atque Doctóri, spíritum sapiéntiæ et fortitúdinis contulísti: da nobis in eódem spíritu et agénda cognóscere; et cógnita, ejus intercessióne, perfícere. 
 $Per Dominum
-
-[Secreta]
-@Commune/C4a:Secreta1:s/N\./Lauréntii/
-
-[Postcommunio]
-@Commune/C4a:Postcommunio1:s/N\./Lauréntii/

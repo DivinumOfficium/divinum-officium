@@ -1,21 +1,10 @@
-[Rank]
+[Officium]
 S. Marc, Pape et Confesseur
 
-[Rule]
-vide C4;
-(sed communi Summorum Pontificum)
-vide C4b;
-Suffragium=Maria3;
-OPapaC=Marcum;
-
-[Oratio]
+[Oratio] (nisi rubrica 196)
 Exaucez, Seigneur, nos prières, et par l'intercession du bienheureux Marc, votre Confesseur et Pontife, daignez nous accorder l'indulgence et la paix.
 $Per Dominum
 
-[Secreta]
-Que vous soit agréable, Seigneur, l'offrande que votre peuple saint vous adresse en l'honneur de vos saints, dont il reconnaît avoir reçu secours dans sa tribulation.
-$Per Dominum
-
-[Postcommunio]
+[Postcommunio] (nisi rubrica 196)
 Accordez au peuple fidèle, Seigneur, de toujours se réjouir de la vénération de vos saints, et d'être munis de leur perpétuelle intercession.
 $Per Dominum

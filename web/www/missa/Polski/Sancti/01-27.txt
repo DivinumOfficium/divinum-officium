@@ -1,10 +1,5 @@
-[Rank]
-S. Joannis Chrysostomi Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a
-Gloria
-CredoDA
+[Officium]
+Św. Jana Chryzostoma Biskupa Wyznawcy Doktora Kościoła
 
 [Comment]
 # 27 I – Św. Jana Chryzostoma, Wyznawcy, Biskupa i Doktora Kościoła
@@ -13,14 +8,15 @@ CredoDA
 Św. Jan Chryzostom, urodzony około roku 354 w Antiochii, rozpoczął karierę urzędniczą. Wkrótce jednak porzucił ją i jako pustelnik oddał się ascezie i studiowaniu Pisma św. Następnie został kapłanem w Antiochii, wreszcie biskupem w Konstantynopolu. Dar wymowy zjednał mu przydomek Chryzostoma, to jest Złotoustego. Prześladowany przez cesarzową Eudoksję zmarł na wygnaniu w Poncie 14 września 407 roku. Relikwie jego spoczywają w bazylice św. Piotra w Rzymie.
 
 [Name]
-Joannes Chrisostome
-
-[Introitus]
-@Commune/C4a:Introitus
+Jana Złotoustego
+Postcommunio=Jan Złotousty
 
 [Oratio]
 Prosimy Cię, Panie, niech łaska niebieska daje wzrost Twojemu Kościołowi, który raczyłeś oświecić nauką i chwalebnymi zasługami św. Jana Złotoustego, Wyznawcy Twego i Biskupa.
 $Per Dominum.
+
+[Introitus]
+@Commune/C4a:Introitus
 
 [Lectio]
 @Commune/C4a:Lectio

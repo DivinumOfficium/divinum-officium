@@ -1,8 +1,13 @@
+[Officium]
+S. Georgii Martyris
+
 [Rank]
-S. Georgii Martyris;;Semiduplex;;2.2;;vide C2
+;;Semiduplex;;2.2;;vide C2a
+(sed rubrica 196)
+;;Simplex;;1.1;;vide C2a
 
 [Rule]
-vide C2;
+vide C2a;
 Gloria
 
 [Oratio]
@@ -10,7 +15,7 @@ Deus, qui nos beáti Geórgii Mártyris tui méritis et intercessióne lætífic
 $Per Dominum
 
 [Lectio]
-@Commune/C2a
+@Commune/C2a-1
 
 [Secreta]
 Múnera, Dómine, obláta sanctífica: et, intercedénte beáto Geórgio Mártyre tuo, nos per hæc a peccatórum nostrórum máculis emúnda.

@@ -1,20 +1,15 @@
-[Rank]
-S. Joannis Chrysostomi Episcopi Confessoris Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a
-Gloria
-CredoDA
+[Officium]
+S. Joannis Chrysostomi Episcopi Confessoris Ecclesiæ Doctoris
 
 [Name]
-Joannes Chrysostome
-
-[Introitus]
-@Commune/C4a
+Johannes Chrysostomus
 
 [Oratio]
 Wij vragen U, Heer, dat de hemelse genade uitbreiding mag geven aan uw Kerk, die Gij hebt willen doen schitteren door de heerlijke verdiensten van uw heilige belijder en bisschop Johannes Chrysostomus.
 $Per Dominum
+
+[Introitus]
+@Commune/C4a
 
 [Lectio]
 @Commune/C4a
@@ -40,11 +35,5 @@ V. Roem en rijkdom zijn in zijn huis en zijn gerechtigheid duurt eeuwig voort..
 [Offertorium]
 @Commune/C4a
 
-[Secreta]
-@Commune/C4a:Secreta:s/N\./Johannes Chrysostomus/
-
 [Communio]
 @Commune/C4
-
-[Postcommunio]
-@Commune/C4a:Postcommunio:s/N\./Johannes Chrysostomus/

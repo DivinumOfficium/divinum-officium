@@ -1,14 +1,11 @@
+[Officium]
+S. Hadriani Martyris
+
 [Rank]
-S. Hadriani Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2a
 
 [Rule]
-vide C2;
+vide C2a;
 
-[Oratio]
-@Commune/C2:Oratio:s/N\./Adriani/
-
-[Secreta]
-@Commune/C2
-
-[Postcommunio]
-@Commune/C2
+[Name]
+Hadriáni

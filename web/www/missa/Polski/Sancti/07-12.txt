@@ -1,9 +1,5 @@
-[Rank]
-S. Joannis Gualberti Abbatis;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+Św. Jana Gwalberta Opata
 
 [Comment]
 # 12 VII – Św. Jana Gwalberta, Opata
@@ -13,32 +9,12 @@ Gloria
 
 Msza wspólna nr 23 Os iusti, z wyjątkiem ewangelii.
 
-[Introitus]
-@Commune/C4c:Introitus
 
-[Oratio]
-Prosimy Cię, Panie, niech nas Tobie poleca wstawiennictwo świętego Jana, Opata, abyśmy za jego przyczyną otrzymali to, czego nie zdołamy wyjednać naszymi zasługami.
-$Per Dominum
 
-[Lectio]
-@Commune/C4c:Lectio
-
-[Graduale]
-@Commune/C4c:Graduale
+[Name]
+Jana
 
 [Evangelium]
 Ciąg dalszy ++ Ewangelii świętej według Mateusza.
 !Mt 5:43-48
 Onego czasu rzekł Jezus uczniom swoim: «Słyszeliście, że powiedziano: Będziesz miłował bliźniego twego, a w nienawiści będziesz miał nieprzyjaciela twego. A ja wam powiadam: Miłujcie nieprzyjacioły wasze, dobrze czyńcie tym, którzy was mają w nienawiści, a módlcie się za prześladujących i spotwarzających was. Abyście byli synami Ojca waszego, który jest w niebiesiech, który sprawia, że słońce Jego wschodzi nad dobrymi i złymi, a deszczem zrasza sprawiedliwych i nieprawych. Gdybyście bowiem miłowali tych, którzy was miłują, cóż za nagrodę mieć będziecie? Czyż i celnicy tego nie czynią? Albo jeżeli pozdrawiacie tylko braci waszych, cóż osobliwego czynicie? Czyż i poganie tak nie czynią? Bądźcież wy tedy doskonali, jako i Ojciec wasz niebieski doskonały jest.
-
-[Offertorium]
-@Commune/C4c:Offertorium
-
-[Secreta]
-@Commune/C4c:Secreta
-
-[Communio]
-@Commune/C4c:Communio
-
-[Postcommunio]
-@Commune/C4c:Postcommunio

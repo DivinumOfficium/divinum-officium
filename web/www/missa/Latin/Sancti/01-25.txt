@@ -1,5 +1,10 @@
+[Officium]
+In Conversione S. Pauli Apostoli
+
 [Rank]
-In Conversione S. Pauli Apostoli;;Duplex majus;;4;;ex Sancti/06-30
+;;Duplex majus;;4;;ex Sancti/06-30
+(sed rubrica innovata)
+;;Duplex Fest;;5;;ex Sancti/06-30
 
 [Rule]
 ex Sancti/06-30;
@@ -48,7 +53,7 @@ V. Per te omnes gentes cognovérunt grátiam Dei.
 V. Intercéde pro nobis ad Deum, qui te elégit.
 
 [Evangelium]
-@Commune/C4c
+@Commune/C5-1
 
 [Offertorium]
 !Ps 138:17
@@ -64,7 +69,7 @@ Ecclésiæ tuæ, quǽsumus, Dómine, preces et hóstias beáti Petri Apóstoli c
 $Per Dominum
 
 [Communio]
-@Commune/C5b
+@Commune/C5-1
 
 [Postcommunio]
  Sanctificáti, Dómine, salutári mystério: quǽsumus; ut nobis ejus non desit orátio, cujus nos donásti patrocínio gubernári.

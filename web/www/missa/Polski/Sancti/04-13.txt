@@ -1,8 +1,5 @@
-[Rank]
-S. Hermenegildi Martyris;;Semiduplex;;2;;vide C2
-
-[Rule]
-vide C2;
+[Officium]
+Św. Hermenegilda Męczennika
 
 [Comment]
 # 13 IV – Św. Hermenegilda, Męczennika
@@ -15,10 +12,4 @@ Boże, Ty nauczyłeś świętego Hermenegilda niżej cenić ziemskie królestwo 
 $Per Dominum
 
 [Evangelium]
-@Commune/C2c
-
-[Secreta]
-@Commune/C2p:Secreta2
-
-[Postcommunio]
-@Commune/C2p:Postcommunio2
+@Commune/C2

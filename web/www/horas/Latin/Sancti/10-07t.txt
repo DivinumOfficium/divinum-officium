@@ -1,11 +1,18 @@
+[Officium]
+S. Marci Papæ Confessoris
+
 [Rank]
-S. Marci Papæ Confessoris;;Simplex;;1.1;;vide C4
+;;Simplex;;1.1;;vide C4b
 
 [Rule]
-vide C4;
-OPapaC=Marcum;
+vide C4b;
 
-[Oratio]
+[Name]
+Marco
+(sed rubrica 196)
+Marcum
+
+[Oratio] (nisi rubrica 196)
 Exaudi, Domine, preces nostras: et, interveniente beato Marco, Confessore tuo atque Pontifice, indulgentiam nobis tribue placatus et pacem.
 $Per Dominum
 

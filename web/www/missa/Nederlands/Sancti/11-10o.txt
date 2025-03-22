@@ -1,8 +1,8 @@
-[Rank]
-Ss. Tryphonis, Respicii, and Nymphæ Martyrum;;Simplex;;1.1;;vide C3
+[Officium]
+Ss. Tryphonis, Respicii, and Nymphæ Martyrum
 
-[Rule]
-vide C3;
+[Name]
+Tryphon, Respicius en Nympha
 
 [Introitus]
 @Sancti/03-10
@@ -23,16 +23,10 @@ Alleluia, alleluia.
 Kostbaar is in de ogen des Heren de dood van zijn heiligen. Alleluia.
 
 [Evangelium]
-@Commune/C3b
+@Commune/C3a-1
 
 [Offertorium]
 @Sancti/01-20
 
-[Secreta]
-@Commune/C3a:Secreta
-
 [Communio]
 @Sancti/03-10
-
-[Postcommunio]
-@Commune/C3a:Postcommunio:s/N\. en N\./Tryphon, Respicius en Nympha/

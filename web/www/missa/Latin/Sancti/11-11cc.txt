@@ -1,11 +1,20 @@
+[Officium]
+S. Mennæ Martyris
+
 [Rank]
-S. Mennæ Mártyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2a-1
 
 [Rule]
-vide C2;
+vide C2a-1;
 
 [Name]
 Mennæ
 
 [Oratio]
-@Commune/C2::s/N\./Mennæ/
+@Commune/C2a
+
+[Secreta]
+@Commune/C2a
+
+[Postcommunio]
+@Commune/C2a

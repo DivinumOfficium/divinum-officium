@@ -1,12 +1,23 @@
+[Officium]
+S. Nicolai Episcopi et Confessoris
+
 [Rank]
-S. Nicolai Episcopi et Confessoris;;Duplex;;3;;vide C4
+;;Duplex;;3;;vide C4
+(sed rubrica 1570 aut rubrica 1617)
+;;Semiduplex;;2.2;;vide C4
+(sed rubrica 1930 aut rubrica 1963)
+;;Simplex;;1.1;;vide C4
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;vide C4
+(sed rubrica altovadensis)
+;;Duplex I. classis;;6;;ex C4
 
 [Rule]
 vide C4;
 Gloria
 
 [Introitus]
-@Commune/C2c
+@Commune/C2a
 
 [Oratio]
 Deus, qui beátum Nicoláum Pontíficem innúmeris decorásti miráculis: tríbue, quǽsumus; ut ejus méritis et précibus a gehénnæ incéndiis liberémur.
@@ -29,14 +40,14 @@ Justus ut palma florébit: sicut cedrus Líbani multiplicábitur. Allelúja.
 @Commune/C4:Evangelium
 
 [Offertorium]
-@Commune/C2c
+@Commune/C2
 
 [Secreta]
 Sanctífica, quǽsumus, Dómine Deus, hæc múnera, quæ in sollemnitáte sancti Antístitis tui Nicolái offérimus: ut per ea vita nostra inter advérsa et próspera úbique dirigátur.
 $Per Dominum
 
 [Communio]
-@Commune/C2c
+@Commune/C2
 
 [Postcommunio]
 Sacrifícia, quæ súmpsimus, Dómine, pro sollemnitáte sancti Pontíficis tui Nicolái, sempitérna nos protectióne consérvent.

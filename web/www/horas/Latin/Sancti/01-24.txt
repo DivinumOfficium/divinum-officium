@@ -1,24 +1,19 @@
+[Officium]
+S. Timothei Episcopi et Martyris
+
 [Rank]
-S. Timothei Episcopi et Martyris;;Duplex;;3;;vide C2
-
-[Rank] (rubrica 1570 aut rubrica monastica aut rubrica 1962)
-S. Timothei Episcopi et Martyris;;Simplex;;1.1;;vide C2
-
-[Rank] (rubrica 1617)
-S. Timothei Episcopi et Martyris;;Semiduplex;;2.2;;vide C2
+;;Duplex;;3;;vide C2
+(sed rubrica 1570 aut rubrica monastica aut rubrica 1962)
+;;Simplex;;1.1;;vide C2
+(sed rubrica 1617)
+;;Semiduplex;;2.2;;vide C2
 
 [Rule]
 vide C2;
 9 lectiones
 
-[Ant 1] (rubrica cisterciensis)
-@Commune/C2
-
-[Ant 2] (rubrica cisterciensis)
-@Commune/C2
-
-[Oratio]
-@Commune/C2::s/N\./Timóthei/
+[Name]
+Timóthei
 
 [Lectio4]
 Timótheus, Lystris in Lycaónia natus ex patre Gentili et matre Judǽa, christianam colebat religiónem, cum in ea loca venit Paulus Apóstolus. Qui fama commótus, quæ de Timóthei sanctitáte percrebúerat, ipsum adhibuit socium suæ peregrinatiónis: sed propter Judæos qui se ad Christum convérterant, sciéntes Timóthei patrem esse Gentilem, eum circúmdedit. Cum ígitur ambo Ephesum venissent, ibi ordinátus est epíscopus ab Apóstolo, ut eam ecclésiam gubernaret.

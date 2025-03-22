@@ -1,8 +1,5 @@
 @Sancti/03-12
 
-[Rank] (rubrica 1930 aut rubrica 1963)
-S. Gregorii Magni Papæ, Confessoris et Ecclesiæ Doctoris, O. N.;;II Class;;5;;ex C4a
-
 [Rule]
 ex C4a;
 12 lectiones
@@ -79,18 +76,18 @@ Duódecim * paupéribus ad mensam invitátis, † Angelum Dómini convívam tred
 @Sancti/03-12:Lectio6:s/.*Quátuor/Quátuor/s
 
 [Lectio9]
-@Commune/C4:Lectio7 in 2 loco:s/Manet.*//s
+@Sancti/03-12:Lectio7:s/Manet.*//s
 
 [Lectio10]
-@Commune/C4:Lectio7 in 2 loco:s/.*Manet/Manet/s s/$/~/
-@Commune/C4:Lectio8 in 2 loco:s/His.*//
+@Sancti/03-12:Lectio7:s/.*(Manet)/$1/s s/$/~/
+@Sancti/03-12:Lectio8:s/His.*//s
 
 [Lectio11]
-@Commune/C4:Lectio8 in 2 loco:s/.*His/His/s s/$/~/
-@Commune/C4:Lectio9 in 2 loco:s/Coróna.*//s
+@Sancti/03-12:Lectio8:s/.*(His)/$1/s s/$/~/
+@Sancti/03-12:Lectio9:s/Coróna.*//s
 
 [Lectio12]
-@Commune/C4:Lectio9 in 2 loco:s/.*Coróna/Coróna/s
+@Sancti/03-12:Lectio9:s/.*(Coróna)/$1/s
 
 [LectioE]
 @Commune/C4b

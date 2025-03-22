@@ -1,5 +1,5 @@
-[Rank]
-S. Joannis a Cruce Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C5a
+[Officium]
+Św. Jana od Krzyża Wyznawcy i Doktora Kościoła
 
 [Comment]
 # 24 XI – Św. Jana od Krzyża, Wyznawcy i Doktora Kościoła
@@ -7,23 +7,21 @@ S. Joannis a Cruce Confessoris et Ecclesiae Doctoris;;Duplex;;3;;vide C5a
 ! Szaty białe
 Jan d’Yepez urodził się koło Avili w Hiszpanii w roku 1542. Mając dwadzieścia lat wstąpił do zakonu Karmelitów. Stał się głównym pomocnikiem św. Teresy w reformie zakonu. Ukochał krzyż Chrystusa i prosił Boga, aby nigdy nie brakowało mu cierpienia. Modlitwa ta została wysłuchana. Jego reformatorska działalność sprowadziła nań liczne cierpienia. Św. Jan od Krzyża głosił konieczność całkowitego ogołocenia wewnętrznego, aby dojść do pełni zjednoczenia z Bogiem. Naukę swoją zawarł w książkach pisanych prozą i wierszem. Umarł w Ubeda w roku 1591.
 
-[Introitus]
-@Commune/C4a:Introitus
+Wspomnienie św. Chryzogona, męczennika. Św. Chryzogon poniósł męczeństwo w Akwilei z początkiem IV wieku. Jego imię wymienia się w kanonie Mszy świętej.
+
+[Name]
+Jana
+Postcommunio=Jan
 
 [Oratio_]
 Boże, który św. Jana, Twego Wyznawcę i Doktora, uczyniłeś szczególnym miłośnikiem Krzyża i zupełnego wyrzeczenia się siebie, daj nam, abyśmy wytrwale idąc za jego przykładem osiągnęli wiekuistą chwałę.
 $Per Dominum
+
+[Introitus]
+@Commune/C4a:Introitus
 
 [Oratio]
 @:Oratio_
 (sed rubrica tridentina)
 @:Oratio_:s/ i Doktora//
 
-
-[Secreta]
-Panie, niech nam nie zabraknie serdecznej modlitwy świętego Jana, Twego Wyznawcy i Doktora, która zaleci Tobie naszą ofiarę i wyjedna nam Twoje przebaczenie.
-$Per Dominum.
-
-[Postcommunio]
-Prosimy Cię, Panie, niech święty Jan, Twój Wyznawca i znamienity Doktor, wstawi się jako orędownik, aby ta ofiara Twoja dała nam zbawienie.
-$Per Dominum

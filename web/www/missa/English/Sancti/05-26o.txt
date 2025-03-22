@@ -1,24 +1,5 @@
-[Rank]
-S. Eleutherius pope and martyr;;Simplex;;1.1;;vide C2
+[Officium]
+St. Eleutherius, Pope and Martyr
 
-[Rule]
-vide C2;
-Gloria
-
-[Oratio]
-!Pro S. Eleutherio
-@Commune/C2c:Oratio:s/N\./Eleutherius/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio Gregem
-
-[Secreta]
-!Pro S. Eleutherio
-@Commune/C2c:Secreta:s/N\./Eleutherius/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
-
-[Postcommunio]
-!Pro S. Eleutherio
-@Commune/C2c:Postcommunio:s/N\./Eleutherius/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio Gregem
+[Name]
+Eleutherius

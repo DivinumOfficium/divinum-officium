@@ -1,16 +1,17 @@
+[Officium]
+S. Martini Papæ et Martyris
+
 [Rank]
-S. Martini Papæ et Martyris;;Semiduplex;;2.2;;vide C2
+;;Semiduplex;;2.2;;vide C2b-1
 
 [Rule]
-vide C2;
+vide C2b-1;
 9 lectiones
-OPapaM=Martínum;
 
 [Name]
-Martini
-
-[Oratio]
-@Commune/C2:Oratio1:s/N\./Martini/
+Martíni
+(sed communi Summorum Pontificum)
+Martínum
 
 [Lectio4]
 Martinus, Tuderti in Umbria natus, inítio pontificatus, et litteris et legatiónibus missis operam dedit, ut Paulum Constantinopolitanum patriarcham a nefaria hæresi ad catholicæ fidei veritátem revocaret. Qui, Constante imperatóre hæretico fretus, eo améntiæ progréssus fuerat, ut Sedis apostolicæ legatos varie in insulas relegarit. Quo ejus scélere commótus Pontifex, coacto Romæ concílio centum quinque episcopórum, eum condemnávit.

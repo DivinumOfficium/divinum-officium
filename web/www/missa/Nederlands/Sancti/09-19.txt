@@ -1,21 +1,11 @@
-[Rank]
-S. Januarii Episcopi et Sociorum Martyrum;;Duplex;;3;;vide C3b
+[Officium]
+S. Januarii Episcopi et Sociorum Martyrum
 
-[Rule]
-vide C3b;
-9 lectiones
-
-[Oratio]
-@Commune/C3b:Oratio:s/N.\ en N\./Januarius en Gezellen/
+[Name]
+Januarius en Gezellen
 
 [Evangelium]
 @Sancti/01-19
 
-[Secreta]
-@Commune/C3b:Secreta:s/N.\ en N\./Januarius en Gezellen/
-
 [Communio]
-@Commune/C3b
-
-[Postcommunio]
-@Commune/C3b:Postcommunio:s/N.\ en N\./Januarius en Gezellen/
+@Commune/C3a-1

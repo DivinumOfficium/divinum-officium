@@ -1,18 +1,22 @@
-[Rank]
-S. Urbano
+[Officium]
+S. Urbano I, Papa y Mártir
+
+
+[Name]
+Urbano
 
 [Oratio]
-!Para S. Urbano
-Mira con benevolencia, ¡oh Pastor eterno!, a tu grey, y por la intercesión de tu bienaventurado sumo pontífice Urbano, a quien has constituido pastor de toda la Iglesia, guárdala por siempre bajo tu protección.
-$Per Dominum
+Concédenos, te rogamos, Dios todopoderoso, que aquellos que celebramos la solemnidad de tu Mártir y Pontífice San Urbano podamos contar con su intercesión ante ti.
+$Per Dominum.
 
-[Secreta]
-!Para S. Urbano
-Acoge, Señor, benignamente, los dones que gozosos te ofrecemos, y concédenos por
-intercesión del bienaventurado Urbano, que tu Iglesia se regocije en la integridad de la fe, y goce siempre de tiempos bonancibles.
+[Oratio] (communi Summorum Pontificum)
+Oh Dios, que estableciste firmemente tu Iglesia sobre la roca del apóstol y la libraste de los terribles poderes del infierno, concédenos, te suplicamos, que por la intercesión del bienaventurado Urbano, tu mártir y sumo pontífice, ella permanezca fiel a tu verdad para estar siempre seguros bajo Tu protección.
 $Per Dominum
+(sed rubrica 196 loco horum versum dicitur)
+@Commune/C2b
 
-[Postcommunio]
-!Para S. Urbano
-Te suplicamos, Señor, infundas más cada vez en tu Iglesia et Espíritu, fuente de gracia, con que la has dotado, a fin de que por los ruegos de tu bienaventurado mártir y sumo pontifice Urbano, ni falte al pastor la obediencia de la grey, ni a la grey la vigilancia del pastor.
-$Per Dominum
+[Secreta] (communi Summorum Pontificum)
+@Commune/C2b:Secreta pro commemoratio
+
+[Postcommunio] (communi Summorum Pontificum)
+@Commune/C2b:Postcommunio pro commemoratio

@@ -1,19 +1,10 @@
-[Rank]
-S. Telesphori Papæ et Martyris;;Simplex;;1.1;;vide C2
+[Officium]
+S. Telesphori Papæ et Martyris
 
-[Rule] (communi summorum pontificum)
-OPapaM=Telésphorum;
+[Rank]
+;;Simplex;;1.1;;vide C2b-1
 
 [Name]
 Telésphori
-
-[Oratio]
-@Commune/C2:Oratio1 Gregem
-(sed rubrica tridentina aut rubrica 1930)
-@Commune/C2:Oratio1
-
-[Ant 1] (rubrica cisterciensis)
-@Commune/C2
-
-[Ant 2] (rubrica cisterciensis)
-@Commune/C2
+(sed communi Summorum Pontificum)
+Telésphorum

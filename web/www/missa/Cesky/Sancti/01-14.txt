@@ -1,10 +1,7 @@
-[Rank]
-S. Hilarii Episcopi Confessoris Ecclesiae Doctoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDa
+[Officium]
+S. Hilarii Episcopi Confessoris Ecclesiæ Doctoris
+(sed rubrica 1570 aut rubrica 1617)
+S. Hilarii Episcopi Confessoris
 
 [Comment]
 # Sv. Hilaria, biskupa, vyznavače a Učitele Církve,
@@ -12,35 +9,6 @@ CredoDa
 ! Barva bílá
 ✝ 367 v Poitiers
 
-Připomínka sv. Kněze a Mučedníka Felixe
 
 [Name]
-Hilari
-
-[Introitus]
-@Commune/C4a:Introitus
-
-[Oratio]
-@Commune/C4a:Oratio:s/N\./Hilaria/
-$Per Dominum.
-
-[Lectio]
-@Commune/C4a:Lectio
-
-[Graduale]
-@Commune/C4a:Graduale
-
-[Evangelium]
-@Commune/C4a:Evangelium
-
-[Offertorium]
-@Commune/C4a:Offertorium
-
-[Secreta]
-@Commune/C4a:Secreta:s/N\./Hilaria/
-
-[Communio]
-@Commune/C4a:Communio
-
-[Postcommunio]
-@Commune/C4a:Postcommunio:s/N\./Hilarius/
+Hilaria

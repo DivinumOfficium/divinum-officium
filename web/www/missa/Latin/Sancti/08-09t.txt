@@ -1,8 +1,13 @@
+[Officium]
+In Vigilia S. Laurentii Mart.
+
 [Rank]
-In Vigilia S. Laurentii Mart.;;Simplex;;1.5;;vide C2
+;;Vigilia Simplex;;1.5
+(sed rubrica 196)
+;;Vigilia;;3
 
 [Rule]
-vide C2;
+vide C2b;
 no Gloria
 Suffragium=Maria3;Papa;Ecclesia;;
 

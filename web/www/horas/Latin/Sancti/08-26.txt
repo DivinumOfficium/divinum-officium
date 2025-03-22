@@ -1,12 +1,17 @@
+[Officium]
+S. Zephyrini Papæ et Martyris
+
 [Rank]
-S. Zephyrini Papæ et Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C2;
+vide C2b;
 9 lectiones
-OPapaM=Zephyrínum;
 
-[Oratio]
+[Name]
+Zephyrínum
+
+[Oratio] (nisi communi Summorum Pontificum)
 Præsta, quǽsumus, omnipotens Deus: ut beati Zephyrini Martyris tui atque Pontificis, cujus gaudemus meritis, instruamur exemplis.
 $Per Dominum
 

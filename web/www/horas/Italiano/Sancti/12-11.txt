@@ -1,21 +1,10 @@
-[Rank]
-S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4
+[Officium]
+S. Damasi Papae et Confessoris
 
-[Rank] (rubrica 196)
-S. Damasi Papae et Confessoris;;Duplex;;3;;vide C4
+[Name]
+Damaso
 
-[Rank] (rubrica innovata)
-S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4
-
-[Rule]
-vide C4;
-9 lectiones;
-OPapaC=Damaso;
-Doxology=Nat
-Omit Preces
-Commemoratio3
-
-[Oratio]
+[Oratio] (nisi communi Summorum Pontificum)
 Esaudisci, Signore, le nostre preghiere: e, per intercessione del tuo beato Confessore e Pontefice Da-maso, accordaci, placato, il perdono e la pace. 
 $Per Dominum
 

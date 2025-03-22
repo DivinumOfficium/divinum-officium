@@ -1,8 +1,5 @@
-[Rank]
-S. Pii V Papae Confessoris;;Duplex;;3;;vide C4b
-
-[Rule]
-Gloria
+[Officium]
+Św. Piusa V Papieża i Wyznawcy
 
 [Comment]
 # 05 V – Św. Piusa V, Papieża i Wyznawcy
@@ -12,33 +9,9 @@ Michał Ghislieri, urodzony w Bosco w Lombardii 17 stycznia 1504 r., mając czte
 
 Msza wspólna nr 8 Si diligis, z wyjątkiem Kolekty
 
-[Introitus]
-@Commune/C4b:Introitus
+[Name]
+Piusa
 
 [Oratio]
 Boże, który raczyłeś wybrać św. Piusa na Najwyższego Pasterza dla poskromienia nieprzyjaciół Twojego Kościoła i odnowienia Twego kultu, spraw, niech doznając jego obrony i opieki tak trwamy w Twej służbie, iżbyśmy zwyciężywszy wszelkie zasadzki wrogów radowali się nieustannym pokojem.
 $Per Dominum
-
-[Lectio]
-@Commune/C4b:Lectio
-
-[Graduale]
-@Commune/C4b:Graduale
-
-[GradualeP]
-@Commune/C4b:GradualeP
-
-[Evangelium]
-@Commune/C4b:Evangelium
-
-[Offertorium]
-@Commune/C4b:Offertorium
-
-[Secreta]
-@Commune/C4b:Secreta
-
-[Communio]
-@Commune/C4b:Communio
-
-[Postcommunio]
-@Commune/C4b:Postcommunio

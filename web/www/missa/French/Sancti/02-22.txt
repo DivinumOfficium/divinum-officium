@@ -1,12 +1,8 @@
-[Rank]
-In Cathedra S. Petri Ap. Antiochiæ;;Duplex majus;;4;;ex C4
+[Officium]
+In Cathedra S. Petri Apostoli Antiochiæ
 
-[Rule]
-ex C4;
-Gloria
-Credo
-Prefatio=Apostolis
-Sub unica conclusione
+[Officium] (rubrica 196 aut rubrica 1930)
+In Cathedra S. Petri Apostoli
 
 [Introitus]
 !Eccli 45:30.
@@ -17,8 +13,7 @@ Souvenez-vous, Seigneur, de David et de toute sa douceur.
 v. Le Seigneur fit avec lui une alliance de paix et l’établit prince de son Eglise, en sorte qu’il possède à jamais la dignité du sacerdoce.
 
 [Oratio]
-Ô Dieu, qui, en confiant au Bienheureux Pierre, votre Apôtre, lesclefs du royaume céleste, lui avez donné l’autorité pontificale de lier et de délier ; faites que nous soyons délivrés des liens de nos péchés, par le secours de son intercession.
-$Qui vivis
+@Sancti/01-18
 _
 !Commemoratio S. Pauli
 Ô Dieu, qui avez instruit une multitude de nations par la prédication du B. Apôtre Paul, faites, nous vous en supplions, que, nous qui honorons sa mémoire, nous ressentons les effets de sa protection auprès de vous.
@@ -52,11 +47,6 @@ Tu es Pierre et sur cette pierre je bâtirai mon Église.
 V. Et les portes de l’enfer ne prévaudront point contre elle. Et je te donnerai les clefs du royaume des cieux.
 V. Et tout ce que tu lieras sur la terre sera lié aussi dans les cieux.
 V. Et tout ce que tu délieras sur la terre sera délié aussi dans les cieux.
-
-[Evangelium]
-Sequéntia ++ sancti Evangélii secúndum Matthǽum.
-!Matt 16:13-19
-En ce temps-là, Jésus vint aux environs de Césarée de Philippe, et il interrogeait ses disciples en disant : Que disent les hommes touchant le Fils de l’homme ? Ils lui répondirent : Les uns, qu’il est Jean-Baptiste ; les autres, Élie ; les autres, Jérémie, ou quelqu’un des prophètes. Jésus leur dit : Et vous, qui dites-vous que je suis ? Simon-Pierre, prenant la parole, dit : Vous êtes le Christ, le Fils du Dieu vivant. Jésus lui répondit : Tu es bienheureux, Simon, fils de Jonas, parce que ce n’est pas la chair et le sang qui t’ont révélé cela, mais mon Père qui est dans les cieux. Et moi, je te dis que tu es Pierre et que sur cette pierre je bâtirai mon Église, et les portes de l’enfer ne prévaudront point contre elle. Et je te donnerai les clefs du royaume des cieux ; et tout ce que tu lieras sur la terre sera lié aussi dans les cieux, et tout ce que tu délieras sur la terre sera délié dans les cieux.
 
 [Offertorium]
 !Matt 16:18-19

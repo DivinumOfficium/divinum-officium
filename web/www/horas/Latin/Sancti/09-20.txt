@@ -1,18 +1,20 @@
-[Rank]
-Ss. Eustachii et Sociorum Martyrum;;Duplex;;3;;vide C3
+[Officium]
+Ss. Eustachii et Sociorum Martyrum
 
-[Rank] (rubrica 1960 aut rubrica 1570 aut rubrica 1617)
-Ss. Eustachii et Sociorum Martyrum;;Simplex;;1.1;;vide C3
+[Rank]
+;;Duplex;;3;;vide C3a
+(sed rubrica 1960 aut rubrica 1570 aut rubrica 1617)
+;;Simplex;;1.1;;vide C3a
 
 [Rule]
-vide C3;
+vide C3a;
 (diede dicitur)
 9 lectiones
 (sed rubrica 1960 aut rubrica 1570 omittitur)
 Quorum Festum
 
-[Oratio]
-@Commune/C3::s/N\. et N\./Eustáchii et Sociórum ejus/
+[Name]
+Eustáchii et Sociórum ejus
 
 [Lectio4]
 Eustachius, qui et Placidus, genere, opibus et militari glória inter Romanos insígnis, sub Trajano imperatóre magistri militum titulum meruit.  Cum vero sese aliquándo in venatióne exercéret ac fugiéntem miræ magnitúdinis cervum insequerétur, vidit repénte inter consistentis feræ córnua excélsam atque fulgentem Christi Dómini e cruce pendentis imáginem.  Cujus voce ad immortalis vitæ prædam invitatus, una cum uxore Theopista ac duobus párvulis fíliis Agapito et Theopisto, christianæ milítiæ nomen dedit.

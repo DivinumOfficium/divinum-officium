@@ -1,22 +1,9 @@
-[Rule]
-OPapaM=Telésphorum;
-vide C2b;
+[Officium]
+S. Telesphori Papæ et Martyris
 
 [Comment]
 # Svatvečer Zjevení Páně
 Jinak bývá svatvečer velkých svátků obestřen smutkem pokání, dnešní den však nese na sobě radostný odlesk blízkých Vánoc. Také liturgická barva je bílá a ne fialová jako o jiných svatvečerech.
 
-[Oratio]
-@Commune/C2b:Oratio:s/N\./Telesfora/
-(sed communi Summorum Pontificum)
-@Commune/C4b:Oratio:s/N\./Telesfora/ Gregem
-
-[Secreta]
-@Commune/C2b:Secreta
-(sed communi Summorum Pontificum)
-@Commune/C4b:Secreta Gregem
-
-[Postcommunio]
-@Commune/C2c:Postcommunio
-(sed communi Summorum Pontificum)
-@Commune/C4b:Postcommunio Gregem
+[Name]
+Telesfora

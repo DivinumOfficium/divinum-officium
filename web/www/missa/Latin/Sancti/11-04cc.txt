@@ -1,15 +1,23 @@
+[Officium]
+Ss. Mart. Vitalis et Agricolæ
+
 [Rank]
-Ss. Vitalis et Agricola, Martyres;;Simplex;;1.1;;vide C3
+;;Simplex;;1.1;;vide C3a
 
 [Rule]
-vide C3;
+vide C3a;
+
+[Name]
+Vitális et Agrícolæ
+Secreta=Vitále et Agrícola
+Postcommunio=Vitále et Agrícola
 
 [Oratio]
 Præsta, quǽsumus, omnípotens Deus: ut, qui sanctórum Mártyrum tuórum Vitális et Agrícolæ sollémnia cólimus, eórum apud te intercessiónibus adjuvémur.
 $Per Dominum
 
 [Secreta]
-@Commune/C3b:Secreta:s/N\. et N\./Vitále et Agrícola/
+@Commune/C3a-1
 
 [Postcommunio]
-@Commune/C3b:Postcommunio:s/N\. et N\./Vitále et Agrícola/
+@Commune/C3a-1

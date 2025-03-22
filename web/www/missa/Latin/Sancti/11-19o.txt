@@ -1,24 +1,15 @@
+[Officium]
+S. Pontiani Papæ et Martyris
+
 [Rank]
-S. Pontiani Papæ et Martyris;;Simplex;;1.1;;vide C2c
-(sed communi Summorum Pontificum)
-S. Pontiani Papæ et Martyris;;Simplex;;1.1;;vide C4b
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C2c
+vide C2b;
+
+[Name]
+Pontiáni
 (sed communi Summorum Pontificum)
-vide C4b;
-
-[Oratio]
-@Commune/C2c:Oratio:s/N\./Pontiáni/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio
-
-[Secreta]
-@Commune/C2c:Secreta:s/N\./Pontiáni/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta
-
-[Postcommunio]
-@Commune/C2a:Postcommunio:s/N\./Pontiáno/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio
+Pontiánum
+Secreta=Pontiáni
+Postcommunio=Pontiáno

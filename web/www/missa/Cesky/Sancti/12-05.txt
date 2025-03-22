@@ -1,19 +1,11 @@
-[Rank]
-S. Sabbae Abbatis;;Simplex;;1.1;;vide C4c
-
-[Rule]
-vide C4c;
+[Officium]
+Sv. Sáby, opata
 
 [Comment]
 # Sv. Sáby, opata
 ✝ 532 u Jerusalema
 
-[Oratio]
-@Commune/C4c:Oratio:s/N\./Sáby/
-$Per Dominum
-
-[Secreta]
-@Commune/C4c:Secreta:s/N\./Sába/
-
-[Postcommunio]
-@Commune/C4c:Postcommunio:s/N\./Sába/
+[Name]
+Sáby
+Secreta=Sába
+Postcommunio=Sába

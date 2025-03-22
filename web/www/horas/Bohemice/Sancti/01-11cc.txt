@@ -1,18 +1,5 @@
-[Rank]
-sv. Hygina, Papeže a Mučedníka
+[Officium]
+Sv. Hygina, Papeže a Mučedníka
 
-[Rule]
-vide C2;
-OPapaM=Hygina;
-
-[Oratio]
-@Commune/C2:Oratio Gregem
-
-[Oratio] (rubrica tridentina)
-@Commune/C2::s/N\./Hygina/
-
-[Ant 1] (rubrica cisterciensis)
-@Commune/C2
-
-[Ant 2] (rubrica cisterciensis)
-@Commune/C2
+[Name]
+Hygina

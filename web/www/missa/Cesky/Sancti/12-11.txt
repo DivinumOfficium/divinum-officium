@@ -1,10 +1,5 @@
-[Rank]
-S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4b
-
-[Rule]
-OPapaC=Dámasum;
-vide C4;
-Gloria
+[Officium]
+Sv. Damasa, papeže a vyznavače
 
 [Comment]
 # Sv. Damasa, papeže a vyznavače
@@ -12,12 +7,11 @@ Gloria
 ! Bílá barva
 ✝ 384 v Římě
 
+[Name]
+Damasa
+
 [Introitus]
 @Commune/C4b:Introitus
-
-[Oratio]
-Vyslyš, Pane, prosby naše a na přímluvu svatého Damasa, vyznavače tvého a biskupa, uděl nám usmířen odpuštění a pokoj.
-$Per Dominum
 
 [Lectio]
 @Commune/C4b:Lectio
@@ -31,11 +25,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C4b:Offertorium
 
-[Secreta]
-@Commune/C4b:Secreta
-
 [Communio]
 @Commune/C4b:Communio
-
-[Postcommunio]
-@Commune/C4b:Postcommunio

@@ -1,19 +1,21 @@
-[Rank]
-S. Georgii Martyris;;Semiduplex;;2.2;;vide C2
+[Officium]
+S. Georgii Martyris
 
-[Rank] (rubrica 196)
-S. Georgii Martyris;;Simplex;;1.1;;vide C2
+[Rank]
+;;Semiduplex;;2.2;;vide C2a
+(sed rubrica 196)
+;;Simplex;;1.1;;vide C2a
 
 [Rank] (rubrica cisterciensis)
-S. Georgii, Martyris;;Commemoratio et M.;;1;;vide C2
+;;Commemoratio et M.;;1;;vide C2
 
 [Rank] (tempore paschali et rubrica altovadensis)
-S. Georgii, Martyris;;Commemoratio et M.;;1;;vide C2pc
+;;Commemoratio et M.;;1;;vide C2pc
 (sed tempore Octava Paschæ)
-S. Georgii, Martyris;;Commemoratio et M.;;1;;vide C2p
+;;Commemoratio et M.;;1;;vide C2p
 
 [Rule]
-vide C2;
+vide C2a;
 9 lectiones
 in 2 Nocturno Lectiones ex Commune in 2 loco
 

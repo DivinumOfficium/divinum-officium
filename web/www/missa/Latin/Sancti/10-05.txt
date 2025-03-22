@@ -1,15 +1,26 @@
+[Officium]
+Ss. Placidi et Sociorum Martyrum
+
 [Rank]
-Ss. Placidi et Sociorum Martyrum;;Simplex;;1.1;;vide C3b
+;;Simplex;;1.1;;vide C3a-1
+(sed rubrica 1930)
+;;Duplex II. classis;;5;;ex C3a-1
+(sed rubrica 1617)
+;;Duplex;;3;;ex C3a-1
 
 [Rule]
-vide C3b;
+vide C3a-1;
 Suffragium=Maria3;Papa;Ecclesia;;
 
+[Name]
+Plácidi et Sociórum ejus
+Postcommunio=Plácido et Sóciis ejus
+
 [Oratio]
-@Commune/C3a:Oratio:s/N\. et N\./Plácidi et Sociórum ejus/
+@Commune/C3a
 
 [Secreta]
-@Commune/C3:Secreta
+@Commune/C3
 
 [Postcommunio]
-@Commune/C3a:Postcommunio:s/N\. et N\./Plácido et Sóciis ejus/
+@Commune/C3a

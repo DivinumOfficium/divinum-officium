@@ -1,24 +1,10 @@
-[Rank]
-Św. Marka Papieża Wyznawcy;;Simplex;;1.1;;vide C4
+[Officium]
+Św. Marka Papieża Wyznawcy
 
-[Rule]
-vide C4;
-(sed communi Summorum Pontificum)
-vide C4b;
-Suffragium=Maria3;
-OPapaC=Marcum;
-
-[Comment]
-Św. Marek rządził Kościołem osiem miesięcy w roku 336. Jako następca św. Sylwestra kontynuował dzieło organizowania Kościoła, który niedawno uzyskał swobodę.
-
-[Oratio]
+[Oratio] (nisi rubrica 196)
 Wiekuisty Pasterzu, wejrzyj łaskawie na Swoją trzodę i otocz ją nieustanną opieką za przyczyną świętego Marka, Papieża, którego ustanowiłeś pasterzem całego Kościoła.
 $Per Dominum
 
-[Secreta]
-Złożywszy dary, prosimy Cię, Panie, oświeć łaskawie Twój Kościół, by trzodzie Twojej wszędzie sprzyjało powodzenie, a pasterze pod Twymi rządami starali się podobać Twojemu imieniu.
-$Per Dominum
-
-[Postcommunio]
+[Postcommunio] (nisi rubrica 196)
 Prosimy Cię, Panie, rządź miłościwie Twoim Kościołem, krzepionym przez święty pokarm, aby pod Twoim możnym panowaniem rosła wolność Kościoła, a związek jego z Tobą trwał niezachwiany.
 $Per Dominum

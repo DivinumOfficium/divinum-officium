@@ -1,15 +1,20 @@
-[Rank]
-S. Bedæ Venerabilis Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
+[Officium]
+S. Bedæ Venerabilis Confessoris et Ecclesiæ Doctoris
+(sed rubrica monastica)
+S. Bedæ Venerabilis, Confessoris et Ecclesiæ Doctoris, O. N.
 
-[Rank] (rubrica innovata)
-S. Bedae Venerabilis Confessoris et Ecclesiae Doctoris;;Duplex optional;;2;;vide C5a
+[Rank]
+;;Duplex;;3;;vide C5a
+(sed rubrica innovata)
+;;Duplex optional;;2;;vide C5a
 
 [Rule]
 vide C5a;mtv
 9 lectiones
 
 [Name]
-Beda
+Bedæ
+Ant=Beda
 
 [Oratio]
 Deus, qui Ecclésiam tuam beáti Bedæ Confessóris tui atque Doctóris eruditióne claríficas: concéde propítius fámulis tuis; ejus semper illustrári sapiéntia et méritis adjuvári.

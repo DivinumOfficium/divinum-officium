@@ -1,44 +1,30 @@
+[Officium]
+S. Leonis I Papæ Confessoris et Ecclesiæ Doctoris
+(sed rubrica 1570 aut rubrica 1617)
+S. Leonis I Papæ Confessoris
+
 [Rank]
-S. Leonis I Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4b
+;;Duplex;;3;;vide C4b-2
+(sed rubrica 1570 aut rubrica 1617)
+;;Duplex;;3;;vide C4-1
+(sed rubrica innovata)
+;;Duplex;;3.91;;vide C4b-2
 
 [Rule]
-vide C4b;
+vide C4b-2;mtv
+(sed rubrica 1570 aut rubrica 1617)
+vide C4;mtv
 Gloria
 CredoDA
-OPapaC=Leónem;
 
 [Name]
-Leone
+Leónem
+(sed nisi communi Summorum Pontificum)
+Leónis
+Secreta=Leónis
+Postcommunio=Leo
+(sed rubrica 1570 but rubrica 1617)
+Postcommunio=Leónis
 
-[Introitus]
-@Commune/C4b
-
-[Oratio]
-@Commune/C4b
-
-[Lectio]
-@Commune/C4b
-
-[Graduale]
-@Commune/C4b
-
-[GradualeP]
-@Commune/C4b
-
-[Tractus]
-@Commune/C4b
-
-[Evangelium]
-@Commune/C4b
-
-[Offertorium]
-@Commune/C4b
-
-[Secreta]
-@Commune/C4b
-
-[Communio]
-@Commune/C4b
-
-[Postcommunio]
-@Commune/C4b
+[Oratio] (nisi communi Summorum Pontificum)
+@Commune/C4-1
