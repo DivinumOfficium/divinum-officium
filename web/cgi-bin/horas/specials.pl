@@ -768,7 +768,7 @@ sub replaceNdot {
   # Safeguard against Secreta / Postcommunio from missa; switch for Doctor Antiphone
   my @name = split("\n", $name);
 
-  if ($s =~ /^O\s/ && $name =~ /Ant\=/) {
+  if ($s =~ /^[OÓ],?\s/ && $name =~ /Ant\=/) {
     @name = grep(/Ant\=/, @name);
   } else {
     @name = grep(/Oratio\=/, @name) unless $name !~ /Oratio\=/;
@@ -777,7 +777,7 @@ sub replaceNdot {
 
   if ($name[0]) {
     $name[0] =~ s/[\r\n]//g;
-    $s =~ s/N\. (et|and|und|és) N\./$name[0]/;
+    $s =~ s/N\. (et|and|und|és|a) N\./$name[0]/;
     $s =~ s/N\./$name[0]/;
   }
   return $s;
