@@ -1,0 +1,16 @@
+@TemporaOP/Pasc1-2
+
+[Rank]
+@Tempora/Pasc1-5
+
+[Lectio1]
+@Tempora/Pasc3-2::1-5 s/-5/-3/
+
+[Lectio2]
+@Tempora/Pasc3-2:Lectio1:2 s/1-5/4-6/
+@Tempora/Pasc3-2:Lectio1:6-7
+@Tempora/Pasc3-2::2
+
+[Lectio3]
+@Tempora/Pasc3-2:Lectio2:1 s/6-/7-/
+@Tempora/Pasc3-2:Lectio2:3-4

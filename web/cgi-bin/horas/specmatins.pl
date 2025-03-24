@@ -213,7 +213,7 @@ sub psalmi_matutinum {
     $prefix .= ' ' . translate('et Psalmi', $lang);
   }
 
-  if ($dayname[0] =~ /Pasc[1-6]/i && $votive !~ /C9|C12/) {
+  if ($dayname[0] =~ /Pasc[1-6]/i && $votive !~ /C9|C12/ && $version !~ /Praedicatorum/) {
     @psalmi = ant_matutinum_paschal(\@psalmi, $lang, length($w));
   }
 
@@ -320,10 +320,24 @@ sub psalmi_matutinum {
     }
     foreach my $i (3, 4, 8, 9, 13, 14) { $psalmi[$i] = $spec[$i]; }
 
-    if ((my $i = dayofweek2i()) == 1) {
-      ($psalmi[13], $psalmi[14]) = ($psalmi[3], $psalmi[4]);
-    } elsif ($i == 2) {
-      ($psalmi[13], $psalmi[14]) = ($psalmi[8], $psalmi[9]);
+    my $i = dayofweek2i();
+
+    if ($version =~ /Praedicatorum/ && $dayofweek) {
+
+      # rubrics at page 455 1962 Breviary
+      @spec = split("\n", $psalmi{"Pasch $i Versum"});
+      my $week = substr($dayname[0], -1);
+      $week -= 3 if $week > 3;
+      $week--;
+      my $ant = substr($psalmi[0], 0, index($psalmi[0], ';') - 1);
+      @psalmi = @psalmi[(5 * $week) .. (5 * $week + 2)];
+      $psalmi[0] = "$ant$psalmi[0]" if $week;
+    } else {
+      if ($i == 1) {
+        ($psalmi[13], $psalmi[14]) = ($psalmi[3], $psalmi[4]);
+      } elsif ($i == 2) {
+        ($psalmi[13], $psalmi[14]) = ($psalmi[8], $psalmi[9]);
+      }
     }
   }
 
@@ -1263,7 +1277,9 @@ sub gettype1960 {
       $type = LT1960_OCTAVEII;
     } elsif ($rank < 2 || $dayname[1] =~ /(feria|vigilia|die)/i) {
       $type = LT1960_FERIAL;
-    } elsif ($version !~ /Monastic/i && ($dayname[1] =~ /dominica.*?semiduplex/i || $winner =~ /Pasc1\-0/i)) {
+    } elsif ($version !~ /Monastic|Praedicatorum/i
+      && ($dayname[1] =~ /dominica.*?semiduplex/i || $winner =~ /Pasc1\-0/i))
+    {
       $type = LT1960_SUNDAY;
     } elsif ($rank < 5) {
       $type = LT1960_SANCTORAL;
@@ -1300,7 +1316,7 @@ sub responsory_gloria {
     ($num % $rpn == 0)                         # responsory after last lectio in nocturn
     ||                                         # or
     (
-      $version !~ /^Monastic/                  # for non Monastic
+      $version !~ /^Monastic|Praedicatorum/    # for non Monastic and OP
       && $num % $rpn == ($rpn - 1)             # before last
       && tedeum_required($num + 1)             # when there is Te Deum after last
     )

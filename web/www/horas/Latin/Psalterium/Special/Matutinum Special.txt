@@ -40,8 +40,13 @@ Adorémus Dóminum, * Qui nos redémit per crucem.
 (sed rubrica Praedicatorum)
 @:Invit Quad5 OP
 
-[Invit Pasch]
+[Invit Pasch_]
 Surréxit Dóminus vere, * Allelúja.
+
+[Invit Pasch]
+@:Invit Pasch_
+(sed rubrica praedicatorum)
+Allelúja, allelúja, * Allelúja.
 
 [Day0 Hymnus]
 {:H-MatDom1:}v. Nocte surgéntes vigilémus omnes,
@@ -592,6 +597,9 @@ Qui surrexísti a mórtuis,
 Cum Patre et Sancto Spíritu,
 In sempitérna sǽcula.
 Amen.
+
+[HymnusM Pasch] (rubrica praedicatorum)
+@Psalterium/Special/Major Special:HymnusM Pasch Laudes_
 
 [Hymnus Pasch]
 {:H-MatPasc:}v. Rex sempitérne Cǽlitum,
