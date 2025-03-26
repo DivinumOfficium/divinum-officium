@@ -3,11 +3,15 @@ In Apparitione S. Michaëlis Archangeli
 
 [Rank]
 ;;Duplex majus;;4;;
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;
 
 [Rule]
 proprium
 9 lectiones
-Psalmi Dominica
+Psalmi Dominica 
+(sed rubrica cisterciensis)
+Psalmi Feria
 Antiphonas horas
 (rubrica 1570) Una Antiphona
 Psalm5 Vespera=116
@@ -21,6 +25,9 @@ Dum præliarétur * Míchaël Archángelus cum dracóne, audíta est vox dicént
 Archángele Míchaël, * constítui te príncipem super omnes ánimas suscipiéndas.
 Angeli Dómini, * Dóminum benedícite in ætérnum.
 Angeli, Archángeli, * Throni et Dominatiónes, Principátus et Potestátes, Virtútes cælórum, laudáte Dóminum de cælis, allelúja.
+
+[Ant Vespera] (rubrica cisterciensis)
+Allelúia, * allelúia, allelúia.
 
 [Hymnus Vespera]
 v. Te, splendor et virtus Patris,
@@ -79,12 +86,21 @@ Qui trinus et unus Deus
 Exstat ante sǽcula.
 Amen.
 
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/08-06:Responsory Tertia
+
 [Versum 1]
 V. Stetit Angelus juxta aram templi.
 R. Habens thuríbulum áureum in manu sua.
 
+[Versum 1] (rubrica cisterciensis)
+@Sancti/05-08:Versum 3
+
 [Ant 1]
 Dum sacrum mystérium * cérneret Joánnes, Archángelus Míchaël tuba cécinit: Ignósce, Dómine, Deus noster, qui áperis librum, et solvis signácula ejus, allelúja.
+
+[Ant 1] (rubrica cisterciensis)
+Dum sacrum mystérium * cérneret Joánnes, Archángelus Míchaël tuba cécinit: Dignus es, Dómine, Deus noster, accípere librum, et aperíre signácula ejus, allelúia.
 
 [Oratio]
 Deus, qui, miro órdine, Angelórum ministéria hominúmque dispénsas: concéde propítius; ut, a quibus tibi ministrántibus in cælo semper assístitur, ab his in terra vita nostra muniátur. 
@@ -115,6 +131,18 @@ Angelus Archángelus Míchaël, * Dei núntius pro animábus justis, allelúja, 
 ;;102
 V. In conspéctu Angelórum psallam tibi, Deus meus, allelúja.
 R. Adorábo ad templum sanctum tuum, et confitébor nómini tuo, allelúja.
+
+[Nocturn 1 Versum]
+V. Stetit Angelus juxta aram templi, allelúja.
+R. Habens thuríbulum áureum in manu sua, allelúja.
+
+[Nocturn 2 Versum] (rubrica cisterciensis)
+V. Data sunt ei incénsa multa.
+R. Ut adoléret ea ante altáre áureum.
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+V. Ascéndit fumus arómatum in conspéctu Dómini.
+R. De manu Angeli.
 
 [Lectio1]
 De Daniéle Prophéta
@@ -236,6 +264,9 @@ R. Proptérea decórem índuit te Dóminus.
 v. Significávit Deus, quæ opórtet fíeri cito, loquens per Angelum suum servo suo Joánni, qui testimónium perhíbuit verbo Dei, et testimónium Jesu Christi, quæcúmque vidit.
 $Deo gratias
 
+[Responsory Laudes] (rubrica cisterciensis)
+@:Responsory Tertia
+
 [Hymnus Laudes]
 v. Christe, sanctórum decus Angelórum,
 Gentis humánæ Sator et Redémptor,
@@ -301,6 +332,9 @@ Glória mundo. Amen.
 
 [Versum 2]
 @:Versum 1
+
+[Versum 2] (rubrica cisterciensis)
+@:Responsory Nona:8-9:s/Deum/Dóminum/ s/Bohu/Hospodinu/
 
 [Ant 2]
 Factum est * siléntium in cælo, dum draco commítteret bellum; et Míchaël pugnávit cum eo, et fecit victóriam, allelúja.

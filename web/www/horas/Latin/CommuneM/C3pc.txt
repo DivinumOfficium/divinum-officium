@@ -1,0 +1,19 @@
+@CommuneM/C2p
+
+[Officium]
+Commune Plurium Martyrum Commemoratorum T.P.
+
+[Ant 1]
+@CommuneM/C2p:Ant 2
+
+[Ant 2]
+@CommuneM/C2p:Ant 1
+
+[Versum 1]
+@CommuneM/C3:Nocturn 1 Versum
+
+[Versum 2]
+@:Versum 1
+
+[Versum 3]
+@:Versum 1

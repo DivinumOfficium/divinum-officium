@@ -1,6 +1,9 @@
 [Rank]
 Inventione Sanctæ Crucis;;Duplex II classis;;5.2;;
 
+[Rank] (rubrica cisterciensis)
+Inventione Sanctæ Crucis;;Duplex;;4;;
+
 [Rule]
 proprium
 9 lectiones
@@ -15,6 +18,12 @@ Ecce Crucem Dómini, * fúgite, partes advérsæ, vicit leo de tribu Juda, radix
 Nos autem gloriári * opórtet in Cruce Dómini nostri Jesu Christi.
 Per signum Crucis * de inimícis nostris líbera nos, Deus noster.
 
+[Ant Vespera] (rubrica cisterciensis)
+Allelúia, * allelúia, allelúia.
+
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/05-03:Responsory Sexta:1-4
+
 [Hymnus Vespera]
 @Psalterium/Special/Major Special:Hymnus Quad5 Vespera
 
@@ -27,6 +36,9 @@ R. Cum Dóminus ad judicándum vénerit. (Allelúja.)
 
 [Ant 1]
 O Crux, * splendídior cunctis astris, mundo célebris, homínibus multum amábilis, sánctior univérsis: quæ sola fuísti digna portáre taléntum mundi, dulce lignum, dulces clavos, dúlcia ferens póndera; salva præséntem catérvam in tuis hódie láudibus congregátam. (Allelúja, allelúja.)
+
+[Ant 1] (rubrica cisterciensis)
+O Crux benedícta! * quia in te pepéndit Salvátor mundi, et in te triumphávit Rex Angelórum, allelúia.
 
 [Oratio]
 Deus, qui in præclára salutíferæ Crucis Inventióne, passiónis tuæ mirácula suscitásti: concéde; ut vitális ligni prétio, ætérnæ vitæ suffrágia consequámur:
@@ -169,8 +181,14 @@ R. Ut omnis qui credit in ipsum, non péreat, sed hábeat vitam ætérnam. (Alle
 v. Fratres: Hoc enim sentíte in vobis, quod et in Christo Jesu: qui, cum in forma Dei esset, non rapínam arbitrátus est esse se æquálem Deo: sed semetípsum exinanívit, formam servi accípiens, in similitúdinem hóminum factus, et hábitu invéntus ut homo.
 $Deo gratias.
 
+[Responsory Laudes] (rubrica cisterciensis)
+@Sancti/05-03:Responsory Tertia:1-4
+
 [Hymnus Laudes]
 @Psalterium/Special/Major Special:Hymnus Quad5 Laudes
+
+[HymnusM Laudes]
+@Psalterium/Special/Major Special:HymnusM Quad5 Laudes
 
 [Versum 2]
 V. Adorámus te, Christe, et benedícimus tibi. (Allelúja.)
@@ -178,6 +196,9 @@ R. Quia per Crucem tuam redemísti mundum. (Allelúja.)
 
 [Ant 2]
 Super ómnia * ligna cedrórum tu sola excélsior, in qua Vita mundi pepéndit, in qua Christus triumphávit, et mors mortem superávit in ætérnum. (Allelúja.)
+
+[Ant 2] (rubrica cisterciensis)
+Ecce Crucem Dómini, * fúgite, partes advérsæ, vicit Leo de tribu Juda, radix David, allelúia.
 
 [Lectio Prima]
 !Phil 2:8-9
@@ -227,3 +248,6 @@ R. Cum Dóminus ad judicándum vénerit, allelúja.
 
 [Ant 3]
 Crucem sanctam súbiit, * qui inférnum confrégit: accínctus est poténtia, surréxit die tértia. (Allelúja.)
+
+[Ant 3] (rubrica cisterciensis)
+O Crux splendídior * cunctis astris, mundo célebris, homínibus multum amábilis, sánctior univérsis; quæ sola fuísti digna portáre taléntum mundi, dulce lignum, dulces clavos, dúlcia ferens póndera; salva præséntem catérvam in tuis hódie láudibus congregátam. (Allelúia, allelúia, allelúia.)
