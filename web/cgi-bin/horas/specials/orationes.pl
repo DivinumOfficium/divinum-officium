@@ -321,7 +321,7 @@ sub oratio {
           }
 
           $key = 10000 - $key;    # reverse order
-          if ($version =~ /altovadensis/i && $key == 10000) { $key--; }   # For now..
+          #if ($version =~ /altovadensis/i && $key == 10000) { $key--; }   # For now..
           $ccind++;
           $cc{$key} = $c;
           setbuild2("Commemoratio: $key");

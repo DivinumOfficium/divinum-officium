@@ -1,16 +1,20 @@
 [Officium]
 S. Petri Celestini Papæ et Confessoris
-(sed rubrica monastica)
+(sed rubrica monastica nisi rubrica cisterciensis)
 S. Petri Celestini Papæ et Confessoris O. N.
 
 [Rank]
 ;;Duplex;;3;;vide C4b
 (sed rubrica 1963)
 ;;Simplex;;1.1;;vide C4b
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;vide C4-1
 
 [Rule]
 vide C4b;
 9 lectiones
+(sed rubrica cisterciensis)
+3 lectiones
 
 [Ant 1]
 @Commune/C4
@@ -18,6 +22,9 @@ vide C4b;
 [Oratio]
 Deus, qui beátum Petrum Cælestínum ad summi pontificátus ápicem sublimásti, quique illum humilitáti postpónere docuísti: concéde propítius; ut ejus exémplo cuncta mundi despícere, et ad promíssa humílibus prǽmia perveníre felíciter mereámur.
 $Per Dominum
+
+[Oratio] (rubrica cisterciensis)
+@Commune/C4-1:Oratio:s/N./Petri Cœlestíni/
 
 [Lectio4]
 Petrus, a nomine quo Pontifex est appellatus, Cælestinus dictus, honestis catholicisque parentibus Aeserniæ in Samnitibus natus, adolescentiam vix ingressus, ut ánimum a mundi illecebris custodiret, in solitudinem secessit. Ibi contemplationibus mentem mitriens, corpus in servitutem redigens, ferream catenam ad nudam carnem adhibebat. Congregationem, quæ postea Cælestinorum dicta est, sub regula sancti Benedicti instituit. Hinc quasi lucerna supra candelabrum posita, cum abscondi nequiret, (Romana Ecclesia diu viduata pastore) in Petri cathedram ignorans et absens ascitus, magna novitatis admiratione non minus quam repentino gaudio cunctos affecit. Cum autem in pontificatus sublimitate collocatus, variis distentus curis, assuitis incumbere meditationibus vix posse cognosceret, oneri pariter et honori voluntarie cessit. Indeque priscam vitæ rationem repetens, obdormivit in Domino, ejusque pretiosam mortem crux præfulgens in aëre ante cubiculi ostium reddidit amplius gloriosam. Miraculis multis tam vivens, quam post obitum claruit; quibus rite examinatis, Clemens quintus anno postquam decessit undecimo, sanctorum numero adscripsit.
