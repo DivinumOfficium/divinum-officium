@@ -1,0 +1,46 @@
+@TemporaOP/Pasc0-1
+
+[Rank]
+@Tempora/Pasc0-4
+
+[Ant Matutinum]
+@TemporaOP/Pasc0-1::1 s/4/14/
+;;15
+;;16
+@Psalterium/Special/Matutinum Special:MM Capitulum Pasch:5-6
+
+[Lectio1]
+@Tempora/Pasc0-4::s/ Et de.*//s
+
+[Responsory1]
+@TemporaOP/Pasc0-1
+
+[Lectio2]
+@Tempora/Pasc0-4:Lectio1:s/.*Et de/Et de/s s/$/~/
+@Tempora/Pasc0-4::s/ Unde.*//
+
+[Responsory2]
+@TemporaOP/Pasc0-1
+
+[Lectio3]
+@Tempora/Pasc0-4:Lectio2:s/.*Unde/Unde/s s/$/~/
+@Tempora/Pasc0-4::s/ Quæsívit.*//
+
+[Responsory3]
+@TemporaOP/Pasc0-1
+
+[Oratio]
+@Tempora/Pasc0-4
+
+[Ant 2]
+@Tempora/Pasc0-4
+
+[Ant 3]
+@Tempora/Pasc0-4
+
+[Oratio 3]
+@Tempora/Pasc0-4:Oratio
+_
+@TemporaOP/Pasc0-0:Post Oratio Vespera:1-2 s/R/Ant/ s/\n\*//
+_
+@Psalterium/Special/Major Special:Suffragium Paschale:3-8

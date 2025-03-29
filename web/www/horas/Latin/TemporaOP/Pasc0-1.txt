@@ -1,0 +1,60 @@
+[Rank]
+@Tempora/Pasc0-1
+
+[Rule]
+1 nocturn;
+Omit Hymnus Capitulum Preces Suffragium Commemoratio;
+Capitulum Versum 2 nisi ad Laudes;
+Psalmi Dominica;
+no prima vespera
+
+[Invit]
+@Psalterium/Special/Matutinum Special:Invit Pasch_
+
+[Ant Matutinum]
+Surréxit Christus et illúxit pópulo suo, quem redémit sánguine suo, allelúja.;;4
+;;5
+;;6
+@Psalterium/Special/Matutinum Special:MM Capitulum Pasch:5-6
+
+[Responsory1]
+@Tempora/Pasc0-1::1-2 s/\n\*// s/præcédet/\n* Præcédet/
+V. Cito euntes dicíte discípuli ejus et Petro quia surréxit Dóminus.
+@Tempora/Pasc0-1::2 s/.*præcédet/R. Præcédet/
+
+[Responsory2]
+@Tempora/Pasc0-5:Responsory1
+
+[Responsory3]
+@Tempora/Pasc0-4:Responsory2:1-5
+@TemporaOP/Pasc0-0:Responsory3:2
+
+[Oratio]
+@Tempora/Pasc0-1
+
+[Ant Laudes]
+@Tempora/Pasc0-0::1 s/$/;;92;99;62;210;148/
+
+[Ant 2]
+@Tempora/Pasc0-1:Ant 3:s/\? .*/?~/
+@Psalterium/Common/Prayers:Alleluia Duplex
+
+[Ant Prima]
+@Tempora/Pasc0-0:Ant Laudes:1
+
+[Ant Tertia]
+@Tempora/Pasc0-0:Ant Laudes:2
+
+[Ant Sexta]
+@Tempora/Pasc0-0:Ant Laudes:3
+
+[Ant Nona]
+@Tempora/Pasc0-0:Ant Laudes:5
+
+[Ant 3]
+Nonne sit opórtuit pati Christum, et intráre in glóriam suam? Allelúja.
+
+[Oratio 3]
+@Tempora/Pasc0-1:Oratio
+_
+@TemporaOP/Pasc0-0:Post Oratio Vespera

@@ -1,0 +1,50 @@
+[Rank]
+@Tempora/Pasc2-0
+
+[Rule]
+1 nocturn
+Antiphonas horas
+
+[Ant 1]
+@Tempora/Pasc2-0:Ant 1C
+
+[Oratio]
+@Tempora/Pasc2-0
+
+[Invit]
+@TemporaOP/Pasc1-0
+
+[Ant Matutinum]
+@TemporaOP/Pasc0-1::1 s/4/1/
+;;2
+;;3
+@Psalterium/Special/Matutinum Special:MM Capitulum Pasch:5-6
+
+[Lectio1]
+@Tempora/Pasc2-0:Lectio7:s/ Fecit.*//
+
+[Responsory1]
+@TemporaOP/Pasc3-0
+
+[Lectio2]
+@Tempora/Pasc2-0:Lectio7:s/.*(?=Fecit)//s s/$/~/
+@Tempora/Pasc2-0:Lectio8:s/ Sed.*//
+
+[Responsory2]
+@TemporaOP/Pasc1-1
+
+[Lectio3]
+@Tempora/Pasc2-0:Lectio8:s/.*(?=Sed)// s/$/~/
+@Tempora/Pasc2-0:Lectio9:s/ Non.*//
+
+[Responsory3]
+@TemporaOP/Pasc1-1
+
+[LectioE]
+@Tempora/Pasc2-0
+
+[Ant 2]
+@Tempora/Pasc2-0:Ant 3
+
+[Ant 3]
+@Tempora/Pasc2-0:Ant 1

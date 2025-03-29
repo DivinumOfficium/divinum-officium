@@ -62,13 +62,15 @@ sub specials {
     {
       my $cv2hora = $1;
 
+      next if $cv2hora =~ /nisi ad Laudes/i && $hora eq 'Laudes';
+
       unless (($cv2hora =~ /ad Laudes tantum/i && $hora ne 'Laudes')
         || ($cv2hora =~ /ad Laudes et Vesperas/i && $hora !~ /^(?:Laudes|Vespera)$/))
       {
         # Compline is a special case: there the Chapter is omitted, as the
         # verse appears later and is handled separately. That being so, we have
         # nothing to do here.
-        unless ($hora eq 'Completorium') {
+        if ($hora ne 'Completorium' || ($version =~ /Praedicatorum/ && $winner =~ /Pasc0/)) {
           my %c = columnsel($lang) ? %commune : %commune2;
           push(@s, '#' . translate('Versus in loco', $lang), $w{"Versum 2"} // $c{"Versum 2"}, '');
           setbuild1("Versus speciale in loco calpituli");

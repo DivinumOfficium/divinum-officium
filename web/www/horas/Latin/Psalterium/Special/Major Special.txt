@@ -1426,7 +1426,7 @@ Surréxit, ac Paráclito,
 In sempitérna sǽcula.
 Amen.
 
-[HymnusM Pasch Laudes]
+[HymnusM Pasch Laudes_]
 v. Auróra lucis rútilat,
 Cælum láudibus íntonat,
 Mundus exsúltans júbilat,
@@ -1458,6 +1458,53 @@ Cum Patr[e] et Sancto Spíritu,
 In sempitérna sǽcula.
 Amen.
 
+[HymnusM Pasch LaudesOP_]
+v. Sermóne blando Angelus
+Predíxit muliéribus:
+In Galilǽa Dóminus
+Vidéndus est quantócius.
+_
+Illæ dum pergunt cóncite
+Apóstolis hoc dícere,
+Vidéntes eum vívere,
+Osculántur pedes Dómini.
+_
+Quo ágnito discípuli
+In Galilǽam própere
+Pergunt vidére fáciem
+Desiderátam Dómini.
+_
+Claro pascháli gáudio
+Sol mundo nitet rádio,
+Cum Christum jam Apóstoli
+Visu cernunt corpóreo.
+_
+Osténsa sibi vúlnera,
+In Christi carne fúlgida,
+Resurrexísse Dóminum
+Voce faténtur pública.
+_
+Rex Christe clementíssime,
+Tu corda nostra pósside:
+Ut tibi laudes débitas
+Reddámus omni témpore.
+_
+Quǽsumus, Auctor ómnium,
+In hoc pascháli gáudio,
+Ab omni mortis ímpetu
+Tuum defénde pópulum.
+_
+Glória tibi Dómine,
+Qui surrexísti a mórtuis,
+Cum Patre et Sancto Spíritu
+In sempitérna sǽcula.
+Amen.
+
+[HymnusM Pasch Laudes]
+@:HymnusM Pasch Laudes_
+(sed rubrica praedicatorum)
+@:HymnusM Pasch LaudesOP_
+
 [Pasch Versum 2_]
 V. In resurrectióne tua, Christe, allelúja.
 R. Cæli et terra læténtur, allelúja.
@@ -1470,6 +1517,8 @@ R. Quia Dóminus regnávit a ligno, allelúia.
 @:Pasch Versum 2_
 (sed rubrica cisterciensis)
 @:Pasch Versum 2_C
+(sed rubrica praedicatorum)
+@Psalterium/Special/Minor Special:Versum Pasch Sexta_
 
 [Pasch Vespera]
 @:Pasch Laudes
@@ -1876,7 +1925,7 @@ V. Inténde ánimæ meæ, et líbera eam.
 R. Propter inimícos meos éripe me.
 
 [Pasch Versum 0]
-@:Pasch Versum 2
+@:Pasch Versum 2_
 
 [Asc Versum 0]
 V. Ascéndo ad Patrem meum et Patrem vestrum, allelúja.

@@ -451,13 +451,26 @@ _
 v. Christus resúrgens ex mórtuis jam non móritur, mors illi ultra non dominábitur. Quod enim mórtuus est peccáto, mórtuus est semel: quod autem vivit, vivit Deo.
 $Deo gratias
 
-[Responsory breve Pasch Tertia]
+[Responsory breve Pasch Tertia_]
 R.br. Surréxit Dóminus de sepúlcro, * Allelúja, allelúja.
 R. Surréxit Dóminus de sepúlcro, * Allelúja, allelúja.
 V. Qui pro nobis pepéndit in ligno.
 R. Allelúja, allelúja.
 &Gloria
 R. Surréxit Dóminus de sepúlcro, * Allelúja, allelúja.
+
+[Responsory breve Pasch TertiaOP_]
+R.br. Resurréxit Dóminus, * Allelúja, allelúja.
+R. Resurréxit Dóminus, * Allelúja, allelúja.
+V. Sicut dixit vobis.
+R. Allelúja, allelúja.
+&Gloria
+R. Resurréxit Dóminus, * Allelúja, allelúja.
+
+[Responsory breve Pasch Tertia]
+@:Responsory breve Pasch Tertia_
+(sed rubrica praedicatorum)
+@:Responsory breve Pasch TertiaOP_
 
 [Versum Pasch Tertia]
 V. Surréxit Dóminus vere, allelúja.
@@ -472,6 +485,10 @@ R. Qui pro nobis pepéndit in ligno, allelúja.
 v. Christus resurréxit a mórtuis primítiæ dormiéntium: quóniam quidem per hóminem mors, et per hóminem resurréctio mortuórum. Et sicut in Adam omnes moriúntur, ita et in Christo omnes vivificabúntur.
 $Deo gratias
 
+[Pasch Sexta] (rubrica praedicatorum)
+@Psalterium/Special/Prima Special:Pasch
+$Deo gratias
+
 [Responsory breve Pasch Sexta]
 R.br. Surréxit Dóminus vere, * Allelúja, allelúja.
 R. Surréxit Dóminus vere, * Allelúja, allelúja.
@@ -480,9 +497,14 @@ R. Allelúja, allelúja.
 &Gloria
 R. Surréxit Dóminus vere, * Allelúja, allelúja.
 
-[Versum Pasch Sexta]
+[Versum Pasch Sexta_]
 V. Gavísi sunt discípuli, allelúja.
 R. Viso Dómino, allelúja.
+
+[Versum Pasch Sexta] 
+@:Versum Pasch Sexta_
+(sed rubrica praedicatorum)
+@:Responsory Pasch TertiaM
 
 [Responsory Pasch SextaM]
 @:Versum Pasch Tertia
@@ -490,6 +512,11 @@ R. Viso Dómino, allelúja.
 [Pasch Nona]
 !1 Pet 3:18
 v. Christus semel pro peccátis nostris mórtuus est, justus pro injústis, ut nos offérret Deo, mortificátus quidem carne, vivificátus autem spíritu.
+$Deo gratias
+
+[Pasch Nona] (rubrica praedicatorum)
+!Col 3:4
+v. Cum autem Christus apparúerit, vita vestra, tunc et vos apparébitis cum ipso in glória.
 $Deo gratias
 
 [Responsory breve Pasch Nona]
@@ -500,9 +527,15 @@ R. Allelúja, allelúja.
 &Gloria
 R. Gavísi sunt discípuli, * Allelúja, allelúja.
 
+[Responsory breve Pasch Nona] (rubrica praedicatorum)
+@:Responsory breve Pasch Tertia_
+
 [Versum Pasch Nona]
 V. Mane nobíscum, Dómine, allelúja.
 R. Quóniam advesperáscit, allelúja.
+
+[Versum Pasch Nona] (rubrica praedicatorum)
+@:Versum Pasch Sexta_
 
 [Responsory Pasch NonaC_]
 V. Cognovérunt Dóminum, allelúia.

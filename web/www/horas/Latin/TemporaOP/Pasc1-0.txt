@@ -1,0 +1,50 @@
+[Rank]
+@Tempora/Pasc1-0
+
+[Rule]
+1 nocturn
+Antiphonas horas
+
+[Ant 1]
+@Tempora/Pasc1-0
+
+[Oratio]
+@Tempora/Pasc1-0
+
+[Invit]
+Allelúja, Surréxit Dóminus vere: * Veníte, adorémus, allelúja.
+
+[Ant Matutinum]
+@Tempora/Pasc0-0::1-3
+@Psalterium/Special/Matutinum Special:MM Capitulum Pasch:5-6
+
+[Lectio1]
+@Tempora/Pasc1-0:Lectio7:s/ Illud.*//
+
+[Responsory1]
+@TemporaOP/Pasc0-0
+
+[Lectio2]
+@Tempora/Pasc1-0:Lectio7:s/.*(?=Illud)//s s/$/~/
+@Tempora/Pasc1-0:Lectio8:s/ Qua.*//
+
+[Responsory2]
+@TemporaOP/Pasc0-0
+
+[Lectio3]
+@Tempora/Pasc1-0:Lectio8:s/.*(?=Qua)// s/ Et.*//
+
+[Responsory3]
+@TemporaOP/Pasc0-0
+
+[LectioE]
+@Tempora/Pasc1-0
+
+[Ant Laudes]
+@Tempora/Pasc0-0
+
+[Ant 2]
+@Tempora/Pasc1-0:Ant 3
+
+[Ant 3]
+@Tempora/Pasc1-3

@@ -116,9 +116,12 @@ sub Benedicamus_Domino : ScriptFunc {
   my $lang = shift;
   my $text = prayer('Benedicamus Domino', $lang);
 
-  if (($dayname[0] =~ /Pasc0/i && $hora =~ /(Laudes|Vespera)/i)
-    || Septuagesima_vesp())
-  {
+  if (
+    $hora =~ /(Laudes|Vespera)/i
+    && ( $dayname[0] =~ /Pasc0/i
+      || ($dayname[0] =~ /Pasc/ && $version =~ /Praedicatorum/ && ($rank > 3 || $winner eq 'C10'))
+      || Septuagesima_vesp())
+  ) {
     $text =~ s/\.\s*\n/". " . prayer('Alleluia Duplex', $lang) . "\n"/egr;
   } else {
     $text;
