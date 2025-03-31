@@ -313,7 +313,7 @@ sub oratio {
           my @cr = split(";;", $c{Rank});
 
           if ( $version =~ /trident/i && $version !~ /1906/ ) {
-            $keys = $cr[0] =~ /Vigilia Epi|$sundaystring/i
+            $key = $cr[0] =~ /Vigilia Epi|$sundaystring/i
                   ? ($version =~ /altovadensis/i ? 3000 : 2900)
                   : $cr[2] * 1000;
           } else {
@@ -321,7 +321,6 @@ sub oratio {
           }
 
           $key = 10000 - $key;    # reverse order
-          #if ($version =~ /altovadensis/i && $key == 10000) { $key--; }   # For now..
           $ccind++;
           $cc{$key} = $c;
           setbuild2("Commemoratio: $key");
