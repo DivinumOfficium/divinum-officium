@@ -23,6 +23,10 @@ sub capitulum_major {
     $capit = $capit{$name};
   }
 
+  if ($vespera == 1 && $version =~ /Ordo Praedicatorum/) {
+    $capit .= "\n_\n" . monastic_major_responsory($lang);
+  }
+
   setcomment($label, 'Source', $c, $lang);
   $capit;
 }
