@@ -5,6 +5,9 @@
 Psalmi Dominica
 Antiphonas horas
 
+[Ant Vespera] (rubrica cisterciensis)
+@Tempora/Pent01-0::1-4:s/in sæculórum sǽcula./in sǽcula sæculórum./
+
 [AntMatutinumM]
 Glória * et honor Deo in unitáte Trinitátis, † Patri et Fílio cum Sancto Spíritu, in sempitérna sǽcula.;;95
 In Patre * manet ætérnitas, in Fílio æquálitas, † in Spíritu Sancto æternitátis æqualitatísque connéxio.;;96
@@ -103,7 +106,7 @@ R. Tibi glória in sǽcula.
 [Responsory12]
 @Tempora/Pent01-0:Responsory8
 
-[Hymnus Laudes]
+[Hymnus Laudes] (nisi rubrica cisterciensis)
 @Tempora/Pent01-0:HymnusM Vespera
 
 [Responsory TertiaM]
@@ -114,3 +117,11 @@ R. Tibi glória in sǽcula.
 
 [Responsory NonaM]
 @Tempora/Pent01-0:Responsory Sexta:8-9
+
+[Responsory TertiaM] (rubrica cisterciensis)
+V. Benedíctus Dóminus Deus Israël.
+R. Qui facit mirabília solus.
+
+[Responsory SextaM] (rubrica cisterciensis)
+V. Benedícat nos Deus, Deus noster.
+R. Benedícat nos Deus.

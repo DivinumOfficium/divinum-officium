@@ -6,7 +6,7 @@ Psalmi Dominica
 Antiphonas horas
 Doxology=Nat
 
-[Ant Vespera]
+[Ant Vespera] (nisi rubrica cisterciensis)
 @Tempora/Pent01-4::1-4
 
 [AntMatutinumM]
@@ -115,3 +115,14 @@ R. Instítuit sui córporis et sánguinis Sacraméntum.
 
 [Ant Vespera 3]
 @Tempora/Pent01-4:Ant Vespera:s/127/147/
+
+[Responsory TertiaM] (rubrica cisterciensis)
+V. Miséricors et miserátor Dóminus.
+R. Escam dédit timéntibus se.
+
+[Responsory SextaM] (rubrica cisterciensis)
+V. Omnia a te expéctant, Dómine.
+R. Ut des illis escam in témpore.
+
+[Responsory NonaM] (rubrica cisterciensis)
+@Tempora/Pent01-4:Responsory Sexta:8-9:s/[,.] Allel[uú][ij]a//ig
