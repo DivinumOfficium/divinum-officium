@@ -1078,7 +1078,7 @@ sub lectio : ScriptFunc {
       $na = 9;
     }
 
-    if (contract_scripture($num, 1) && $version !~ /Monastic/i) {
+    if (contract_scripture($num, 1) && $version !~ /Monastic|Ordo Praedicatorum/i) {
       $na = 3;
     }
 
@@ -1277,7 +1277,7 @@ sub gettype1960 {
       $type = LT1960_OCTAVEII;
     } elsif ($rank < 2 || $dayname[1] =~ /(feria|vigilia|die)/i) {
       $type = LT1960_FERIAL;
-    } elsif ($version !~ /Monastic|Praedicatorum/i
+    } elsif ($version !~ /Monastic/i
       && ($dayname[1] =~ /dominica.*?semiduplex/i || $winner =~ /Pasc1\-0/i))
     {
       $type = LT1960_SUNDAY;

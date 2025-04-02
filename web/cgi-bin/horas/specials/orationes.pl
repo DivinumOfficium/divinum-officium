@@ -312,10 +312,11 @@ sub oratio {
         if ($c) {
           my @cr = split(";;", $c{Rank});
 
-          if ( $version =~ /trident/i && $version !~ /1906/ ) {
-            $key = $cr[0] =~ /Vigilia Epi|$sundaystring/i
-                  ? ($version =~ /altovadensis/i ? 3000 : 2900)
-                  : $cr[2] * 1000;
+          if ($version =~ /trident/i && $version !~ /1906/) {
+            $key =
+              $cr[0] =~ /Vigilia Epi|$sundaystring/i
+              ? ($version =~ /altovadensis/i ? 3000 : 2900)
+              : $cr[2] * 1000;
           } else {
             $key = 9000;    # concurrent office comes first under DA and also 1906
           }
