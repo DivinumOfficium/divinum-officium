@@ -1,7 +1,7 @@
 [Rank]
 Feria Quarta Majoris Hebdomadæ;;Feria privilegiata;;4.91
 
-[Rank] (rubrica 1955 aut rubrica 1960)
+[Rank] (rubrica 1955 aut rubrica 196)
 Feria Quarta Hebdomadæ Sanctæ;;Feria privilegiata;;7
 
 [Rule]
@@ -68,11 +68,16 @@ Omnes inimíci mei * audiérunt malum meum: Dómine, lætáti sunt, quóniam tu 
 Consílium * fecérunt inimíci mei, dicéntes: Conterámus eum de terra vivéntium.
 Ancílla dixit * Petro: Vere tu ex illis es: nam et loquéla tua maniféstum te facit.
 
-[Ant 2]
+[Ant 2_]
 Simon, dormis? * non potuísti una hora vigiláre mecum?
 
-[Ant 2] (rubrica cisterciensis)
+[Ant 2C]
 Tanto témpore * vobíscum eram docens vos in templo, et non me tenuístis, et ecce flagellátum dúcitis ad crucifigéndum.
+
+[Ant 2]
+@:Ant 2_
+(sed rubrica cisterciensis)
+@:Ant 2C
 
 [Oratio 2]
 Præsta, quǽsumus, omnípotens Deus: ut, qui nostris excéssibus incessánter afflígimur, per unigéniti Fílii tui passiónem liberémur:

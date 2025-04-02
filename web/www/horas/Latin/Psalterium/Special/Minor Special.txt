@@ -354,13 +354,24 @@ $Deo gratias
 (sed rubrica Praedicatorum)
 @Psalterium/Special/Major Special:Quad5 Vespera
 
-[Responsory breve Quad5 Tertia]
+[Responsory breve Quad5 Tertia_]
 R.br. Érue a frámea, * Deus, ánimam meam.
 R. Érue a frámea, * Deus, ánimam meam.
 V. Et de manu canis únicam meam.
 R. Deus, ánimam meam.
 &Gloria
 R. Érue a frámea, * Deus, ánimam meam.
+
+[Responsory breve Quad5 TertiaOP]
+@:Responsory breve Quad5 Tertia_:2-3 s/\* // s/V\./*/
+V. Salva me ex ore leónis, et a córnibus unicórnium humilitátem meam.~
+@:Responsory breve Quad5 Tertia_:3 s/V.//
+@:Responsory breve Quad5 Tertia_:2 s/\* //
+
+[Responsory breve Quad5 Tertia]
+@:Responsory breve Quad5 Tertia_
+(sed rubrica praedicatorum)
+@:Responsory breve Quad5 TertiaOP
 
 [Versum Quad5 Tertia]
 V. De ore leónis líbera me, Dómine.
@@ -391,13 +402,24 @@ $Deo gratias
 @Psalterium/Special/Prima Special:Quad5
 $Deo gratias
 
-[Responsory breve Quad5 Sexta]
+[Responsory breve Quad5 Sexta_]
 R.br. De ore leónis * Líbera me, Dómine.
 R. De ore leónis * Líbera me, Dómine.
 V. Et a córnibus unicórnium humilitátem meam.
 R. Líbera me, Dómine.
 &Gloria
 R. De ore leónis * Líbera me, Dómine.
+
+[Responsory breve Quad5 SextaOP]
+@:Responsory breve Quad5 Sexta_:2-3 s/\* // s/V\./*/
+@:Responsory Quad5 TertiaM_:s/.\nR. (.)/, \l$1/ s/$/~/
+@:Responsory breve Quad5 Sexta_:3 s/V.//
+@:Responsory breve Quad5 Sexta_:2 s/\* //
+
+[Responsory breve Quad5 Sexta]
+@:Responsory breve Quad5 Sexta_
+(sed rubrica praedicatorum)
+@:Responsory breve Quad5 SextaOP
 
 [Versum Quad5 Sexta]
 V. Ne perdas cum ímpiis, Deus, ánimam meam.
@@ -422,7 +444,7 @@ $Deo gratias
 (sed rubrica Praedicatorum)
 @:Quad5 Sexta_
 
-[Responsory breve Quad5 Nona]
+[Responsory breve Quad5 Nona_]
 R.br. Ne perdas cum ímpiis, * Deus ánimam meam.
 R. Ne perdas cum ímpiis, * Deus ánimam meam.
 V. Et cum viris sánguinum vitam meam.
@@ -430,21 +452,23 @@ R. Deus ánimam meam.
 &Gloria
 R. Ne perdas cum ímpiis, * Deus ánimam meam.
 
+[Responsory breve Quad5 NonaOP]
+R. Príncipes persecúti sunt me gratis, et a verbis tuis formidávit cor meum.
+* Lætábor ego super elóquia tua.
+V. Quasi qui invénit spólia multa. Lætábor ego super elóquia tua.
+R. Príncipes persecúti sunt me gratis, et a verbis tuis formidávit cor meum.
+
+[Responsory breve Quad5 Nona]
+@:Responsory breve Quad5 Nona_
+(sed rubrica praedicatorum)
+@:Responsory breve Quad5 NonaOP
+
 [Versum Quad5 Nona]
 V. Éripe me, Dómine, ab hómine malo.
 R. A viro iníquo éripe me.
 
 [Responsory Quad5 NonaM]
 @:Versum Quad5 Sexta
-
-[Responsory Quad5 Nona] (rubrica Praedicatorum)
-R. Príncipes persecúti sunt me gratis, et a verbis tuis formidávit cor meum.
-* Lætábor ego super elóquia tua.
-V. Quasi qui invénit spólia multa.
-R. Lætábor ego super elóquia tua.
-R. Príncipes persecúti sunt me gratis, et a verbis tuis formidávit cor meum.
-_
-@Psalterium/Special/Major Special:Quad5 Versum 2_
 
 [Pasch Tertia]
 !Rom 6:9-10

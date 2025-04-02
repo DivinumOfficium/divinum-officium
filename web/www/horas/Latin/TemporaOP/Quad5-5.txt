@@ -1,0 +1,17 @@
+@Tempora/Quad5-5Feria
+
+[Lectio1]
+@Tempora/Quad5-5Feria::s/ Temporália.*//
+
+[Responsory1]
+@TemporaOP/Quad5-2
+
+[Lectio2]
+@Tempora/Quad5-5Feria:Lectio1:s/.* (?=Temporália)//s s/$/~/
+@Tempora/Quad5-5Feria
+
+[Responsory2]
+@TemporaOP/Quad5-2
+
+[Responsory3]
+@TemporaOP/Quad5-2

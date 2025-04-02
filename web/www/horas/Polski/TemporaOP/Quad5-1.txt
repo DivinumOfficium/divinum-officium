@@ -1,0 +1,6 @@
+[Lectio2]
+@Tempora/Quad5-1::s/ Kiedy.*//
+
+[Lectio3]
+@Tempora/Quad5-1:Lectio2:s/.* (?=Kiedy)// s/$/~/
+@Tempora/Quad5-1::s/ Tak.*//

@@ -1,0 +1,23 @@
+@Tempora/Quad6-1
+
+[Lectio1]
+@Tempora/Quad6-1::s/ María.*//s
+
+[Responsory1]
+@TemporaOP/Quad6-0
+
+[Lectio2]
+@Tempora/Quad6-1:Lectio1:s/.* (?=María)//s s/$/~/
+@Tempora/Quad6-1::s/: erat.*/./
+
+[Responsory2]
+@Tempora/Quad6-0
+
+[Lectio3]
+@Tempora/Quad6-1:Lectio2:s/.*: (erat)/\u$1/s s/ Forte.*//
+
+[Responsory3]
+@Tempora/Quad6-0
+
+[Ant 3]
+@Tempora/Quad6-2

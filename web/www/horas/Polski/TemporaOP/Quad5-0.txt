@@ -1,0 +1,12 @@
+[In Finem Lectio]
+r. Tak mówi Pan Bóg: Nawróćcie się do mnie, a będziecie zbawieni.
+
+[Lectio2]
+@Tempora/Quad5-0::1 s/7-13/6-15/
+@Tempora/Quad5-0:Lectio1:8
+@Tempora/Quad5-0::2-8
+@Tempora/Quad5-0:Lectio3:2-3 s/, i.*/./
+@:In Finem Lectio
+
+[Lectio7]
+@Tempora/Quad5-0::s/ Prawda.*//
