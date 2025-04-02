@@ -46,8 +46,11 @@ sub monastic_major_responsory {
 
   # CIST: the Cistercian rite has Responsoria prolixa for every Festum Serm.
   # on j. Vespers. Of course, we need to limit it to Fest. Serm.
-  if ($version =~ /cist/i && $vespera == 1 && $rank >= 5) {
-    $key_cist = "Responsory $hora 1";
+  if ( $version =~ /cist/i
+    && $vespera == 1
+    && ( $rank >= 5 || $ctrank[2] >= 5 ) )
+  {
+    $key_cist = "Responsory Vespera 1";
     ($resp, $c) = getproprium($key_cist, $lang, $seasonalflag, 1);
     $key_cist = "" unless ($resp);
     ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1) if !$resp;
