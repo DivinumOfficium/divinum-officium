@@ -1,7 +1,7 @@
 [Rank]
 Sacratissimi Cordis Domini Nostri Jesu Christi;;Duplex majus;;4.01
 
-[Rank] (rubrica 1906)
+[Rank] (rubrica 1906 aut rubrica cisterciensis)
 Sacratissimi Cordis Domini Nostri Jesu Christi;;Duplex I. classis;;6.5
 
 [Rule]
@@ -155,6 +155,9 @@ Pone me * ut signáculum super cor tuum, ut signáculum super bráchium tuum.
 v. Ecce Deus Salvátor meus, fiduciáliter agam, et non timébo: quia fortitúdo mea et laus mea Dóminus, et factus est mihi in salútem. Hauriétis aquas in gáudio de fóntibus Salvatóris.
 $Deo gratias
 
+[Responsory Laudes] (rubrica cisterciensis)
+@:Responsory Nona
+
 [Hymnus Laudes]
 v. Cor, arca legem cóntinens
 Non servitútis véteris,
@@ -251,3 +254,18 @@ R. De fóntibus Salvatóris.
 
 [Ant 3]
 Ad Jesum autem cum veníssent * ut vidérunt eum jam mórtuum, non fregérunt ejus crura: sed unus mílitum láncea latus ejus apéruit, et contínuo exívit sanguis et aqua.
+
+[Responsory TertiaM] (rubrica cisterciensis)
+@:Responsory Tertia:8-9
+
+[Responsory SextaM] (rubrica cisterciensis)
+@:Responsory Sexta:8-9
+
+[Responsory NonaM] (rubrica cisterciensis)
+@:Responsory Nona:8-9
+
+[Ant Vespera 3] (rubrica cisterciensis)
+@:Ant Vespera:s/;;115/;;127/ s/;;111/;;115/
+
+[Responsory Vespera] (rubrica cisterciensis)
+@:Responsory Sexta

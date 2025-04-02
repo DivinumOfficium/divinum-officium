@@ -68,19 +68,13 @@ Eternal light * will shine over your saints, O Lord, and the eternity of times, 
 ;;96
 ;;98
 
-[Nocturn 2 Versum]
+[Nocturn 2 Versum] (nisi rubrica cisterciensis)
 V. Světlo věčné vzejde tvým Svatým, Pane, alleluja.
 R. A věčnost všech věků, alleluja.
 
-[Nocturn 2 Versum] (rubrica cisterciensis)
-@Commune/C1::s/\.$/, alleluja.$/g
-
-[Nocturn 3 Versum]
+[Nocturn 3 Versum] (nisi rubrica cisterciensis)
 V. Věčně trvající radost sestoupí na jejich hlavy, alleluja.
 R. Obdrží radost a štěstí, alleluja.
-
-[Nocturn 3 Versum] (rubrica cisterciensis)
-@Commune/C1::s/\.$/, alleluja.$/g
 
 [Responsory1]
 R. Blessed is the man that feareth the Lord, alleluia.

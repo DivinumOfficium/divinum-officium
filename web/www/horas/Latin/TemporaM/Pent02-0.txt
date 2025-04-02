@@ -4,15 +4,20 @@
 12 lectiones
 ex TemporaM/Pent01-4; 
 Doxology=Corp
+Psalmi Feria (rubrica cisterciensis)
 
 [Rule] (rubrica 196)
 12 lectiones
 
 [Ant Vespera] (rubrica tridentina aut rubrica divino)
 @TemporaM/Pent01-4:Ant Vespera 3
+(sed rubrica cisterciensis)
+@Tempora/Pent01-4
 
 [Responsory Vespera]
 @Tempora/Pent01-4:Responsory Tertia
+(sed rubrica cisterciensis)
+@Tempora/Pent01-4
 
 [Commemoratio] (rubrica 196)
 
@@ -119,6 +124,8 @@ Doxology=Corp
 
 [Responsory Laudes]
 @Tempora/Pent01-4:Responsory Sexta
+(sed rubrica cisterciensis)
+@Tempora/Pent01-4
 
-[Ant Vespera 3] (rubrica tridentina aut rubrica divino)
+[Ant Vespera 3] (rubrica tridentina aut rubrica divino nisi rubrica cisterciensis)
 @TemporaM/Pent01-4:Ant Vespera
