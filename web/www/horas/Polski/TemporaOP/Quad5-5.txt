@@ -1,0 +1,7 @@
+[Lectio1]
+@Tempora/Quad5-5Feria::s/ Bali.*//
+
+[Lectio2]
+@Tempora/Quad5-5Feria:Lectio1:s/.* (?=Bali)//s s/$/~/
+@Tempora/Quad5-5Feria
+

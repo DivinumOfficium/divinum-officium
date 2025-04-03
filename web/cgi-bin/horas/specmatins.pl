@@ -1062,7 +1062,7 @@ sub lectio : ScriptFunc {
   $w =~ s/¶//;               # remove ¶ mark if any
   $w =~ s/\&teDeum\n*//g;    # remove tedeum, will add if needed later
 
-  if ($rule !~ /Limit.*?Benedictio/i) {
+  unless ($rule =~ /Limit.*?Benedictio/i || exists($winner{'In Finem Lectio'})) {
 
     #add Tu autem before responsory
     my $tuautem = $expand =~ /all/ ? prayer('Tu autem', $lang) : '$Tu autem';

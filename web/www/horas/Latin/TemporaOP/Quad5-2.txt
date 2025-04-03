@@ -1,0 +1,25 @@
+@Tempora/Quad5-2
+
+[Lectio1]
+@Tempora/Quad5-2::s/ Manens.*//
+
+[Responsory1]
+@Tempora/Quad5-0:Responsory4:1-2
+V. Deus, Deus meus, réspice in me.
+@Tempora/Quad5-0:Responsory4:4
+
+[Lectio2]
+@Tempora/Quad5-2:Lectio1:s/.* (?=Manens)//s s/$/~/
+@Tempora/Quad5-2
+
+[Responsory2]
+@Tempora/Quad5-0:Responsory7:1-2
+V. Et qui inquirébant mala mihi, locúti sunt vanitátes: et dolos tota die meditabántur.
+@Tempora/Quad5-0:Responsory7:4
+
+[Responsory3]
+@Tempora/Quad5-1:Responsory1:1-2
+@Psalterium/Special/Major Special:Quad5 Versum 2_:s/\nR. (.)/ \l$1/
+@Tempora/Quad5-1:Responsory1:2 s/\*/R./
+&Gloria
+@Tempora/Quad5-1:Responsory1:1-2 s/\n/ /
