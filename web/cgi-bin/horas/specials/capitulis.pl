@@ -37,23 +37,15 @@ sub monastic_major_responsory {
   our ($hora, $winner, $vespera, $seasonalflag, $version);
 
   my $key = "Responsory $hora";
-  my $key_cist = "";
+  my ($resp, $c, $cistrv1f);
 
-  # special case only once
-  $key .= ' 1' if $winner =~ /12-25/ && $vespera == 1;    #($winner =~ /(?:12-25|Quadp[123]-0)/ && $vespera == 1);
+  # First Vespers can use special 'Responsory Vespera 1' (cist & OP)
+  ($resp, $c) = getproprium("$key 1", $lang, $seasonalflag, 1) if $vespera == 1;
 
-  my ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1);
-
-  # CIST: the Cistercian rite has Responsoria prolixa for every Festum Serm.
-  # on j. Vespers. Of course, we need to limit it to Fest. Serm.
-  if ( $version =~ /cist/i
-    && $vespera == 1
-    && ( $rank >= 5 || $ctrank[2] >= 5 ) )
-  {
-    $key_cist = "Responsory Vespera 1";
-    ($resp, $c) = getproprium($key_cist, $lang, $seasonalflag, 1);
-    $key_cist = "" unless ($resp);
-    ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1) if !$resp;
+  if ($resp) { # need to set flag for further use
+    $cistrv1f = $version =~ /Cist/
+  } else { # if it is not a case 'Responsory $hora'
+    ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1) unless $resp;
   }
 
   # Monastic Responsories at Major Hours are usually identical to Roman at Tertia and Sexta
@@ -83,7 +75,7 @@ sub monastic_major_responsory {
 
   if ($resp) {
     my @resp = split("\n", $resp);
-    postprocess_short_resp(@resp, $lang) unless $key_cist =~ /Responsory Vespera 1/;
+    postprocess_short_resp(@resp, $lang) unless $cistrv1f;
     $resp = join("\n", @resp);
     $resp =~ s/\&gloria.*//gsi if $version =~ /cist/i;
   }
