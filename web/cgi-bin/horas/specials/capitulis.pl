@@ -42,9 +42,9 @@ sub monastic_major_responsory {
   # First Vespers can use special 'Responsory Vespera 1' (cist & OP)
   ($resp, $c) = getproprium("$key 1", $lang, $seasonalflag, 1) if $vespera == 1;
 
-  if ($resp) { # need to set flag for further use
-    $cistrv1f = $version =~ /Cist/
-  } else { # if it is not a case 'Responsory $hora'
+  if ($resp) {    # need to set flag for further use
+    $cistrv1f = $version =~ /Cist/;
+  } else {        # if it is not a case 'Responsory $hora'
     ($resp, $c) = getproprium($key, $lang, $seasonalflag, 1) unless $resp;
   }
 
