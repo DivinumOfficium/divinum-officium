@@ -315,7 +315,7 @@ sub oratio {
           if ($version =~ /trident/i && $version !~ /1906/) {
             $key =
               $cr[0] =~ /Vigilia Epi|$sundaystring/i
-              ? ($version =~ /altovadensis/i ? 3000 : 2900)
+              ? ($version =~ /altovadensis/i ? 4900 : 2900)
               : $cr[2] * 1000;
           } else {
             $key = 9000;    # concurrent office comes first under DA and also 1906
@@ -418,7 +418,7 @@ sub oratio {
 
           if ($cr[0] =~ /Vigilia Epi|$sundaystring/i) {
             $key =
-              ($version !~ /trident/i || ($version =~ /1906/ && $cr[2] > 5))
+              ($version !~ /trident/i || $version =~ /altovadensis/i || ($version =~ /1906/ && $cr[2] > 5))
               ? 7000
               : 2900;    # under DA, all Sundays, in 1906, priviliged Sundays, are all privilegded commemorations
           } else {
@@ -485,7 +485,7 @@ sub oratio {
               $ccind++;
               $key =
                   ($ic =~ /$sundaystring/i)
-                ? ($version !~ /trident/i ? 3000 : 7100)
+                ? ($version !~ /trident/i || $version =~ /altovadensis/i ? 3000 : 7100)
                 : $ccind + 9900;    # Sundays are all privilegde commemorations under DA
               $cc{$key} = $ic;
               setbuild2("Commemorated: $key");
