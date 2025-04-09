@@ -9,6 +9,10 @@ Feria II post Ascensionem;;Feria;;1;;vide TemporaM/Pasc5-4
 [Rank] (rubrica tridentina nisi rubrica cisterciensis)
 Feria II infra Octavam Ascensionis;;Semiduplex;;2;;ex TemporaM/Pasc5-4
 
+[Rule]
+@TemporaM/Pasc5-5
+No prima Vespera
+
 [Oratio] (rubrica 196)
 @Tempora/Pasc6-0
 

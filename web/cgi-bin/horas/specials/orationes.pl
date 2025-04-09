@@ -203,7 +203,7 @@ sub oratio {
   our %cc = ();
   our $ccind = 0;
   our $octavcount = 0;
-  my $octavestring = '!.*?(O[ckt]ta|' . &translate("Octava", $lang) . ')';
+  my $octavestring = '!.*?(O[ckt]t[aá]|' . &translate("Octava", $lang) . ')';
   my $sundaystring = 'Dominic[aæ]|' . &translate("Dominica", $lang);
 
   %w = columnsel($lang) ? %winner : %winner2;    # prevent "contamination" from Oratio Dominica
@@ -397,8 +397,6 @@ sub oratio {
 
       foreach my $commemo (@centries) {
 
-        #setbuild2("Comm-$cv: $commemo");
-
         my $key = 0;    # let's start with lowest rank
         if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
         %c = %{officestring('Latin', $commemo, 0)};
@@ -441,7 +439,7 @@ sub oratio {
           if (exists($c{"Commemoratio $cv"})) {
             $c = getrefs($c{"Commemoratio $cv"}, $lang, $cv, $c{Rule});
           } elsif (exists($c{Commemoratio})
-            && ($cv != 3 || $commemo =~ /Tempora/i || $c{Commemoratio} =~ /!.*O[ckt]ta/i))
+            && ($cv != 3 || $commemo =~ /Tempora/i || $c{Commemoratio} =~ /$octavestring/i))
           {
             $c = getrefs($c{Commemoratio}, $lang, $cv, $c{Rule});
           } else {
@@ -477,15 +475,20 @@ sub oratio {
                   && $ic =~ /!.*?Vigil/i
                   && $commemo =~ /Sancti/i
                   && $commemo !~ /08\-14|06\-23|06\-28|08\-09/)
-                || ($rank >= 5 && $ic =~ /$octavestring/i && ($month != 12 || $day < 18))
+                || ( $rank >= 5
+                  && $ic =~ /$octavestring/i
+                  && ($month != 12 || $day < 18)
+                  && $version =~ /trident/i
+                  && $version !~ /cist/i
+                  && $commemo !~ /Pent02\-0/)
               ) {
                 next;
               }
               if ($ic !~ /^!/) { $ic = "!$ic"; }
               $ccind++;
               $key =
-                  ($ic =~ /$sundaystring/i)
-                ? ($version !~ /trident/i || $version =~ /altovadensis/i ? 3000 : 7100)
+                  ($ic =~ /$sundaystring/i) ? ($version !~ /trident/i || $version =~ /altovadensis/i ? 3000 : 7100)
+                : ($ic =~ /$octavestring/i) ? 7900
                 : $ccind + 9900;    # Sundays are all privilegde commemorations under DA
               $cc{$key} = $ic;
               setbuild2("Commemorated: $key");
