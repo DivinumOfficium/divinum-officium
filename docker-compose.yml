@@ -12,6 +12,6 @@ services:
       context: ./
       dockerfile: Dockerfile
     volumes:
-      - ./web:/var/www/web
+      - ./web:/var/www/web:Z
     ports:
       - 8080:80
