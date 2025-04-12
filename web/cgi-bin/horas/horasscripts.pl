@@ -193,9 +193,7 @@ sub psalm : ScriptFunc {
       || ($psnum == 115 && $version =~ /Monastic/);
   }
 
-  my $bea = $lang eq 'Latin' && $psalmvar || $lang eq 'Latin-Bea';
-
-  my @lines = do_read(checkfile($bea ? 'Latin-Bea' : $lang, "Psalterium/Psalmorum/Psalm$psnum.txt"));
+  my @lines = do_read(checkfile($lang, "Psalterium/Psalmorum/Psalm$psnum.txt"));
   return "Psalm$psnum not found" unless @lines;
 
   # Prepare title and source if canticle
@@ -207,7 +205,7 @@ sub psalm : ScriptFunc {
     shift(@lines) =~ /\(?(?<title>.*?) \* (?<source>.*?)\)?\s*$/;
     ($title, $source) = ($+{title}, $+{source});
     if ($v1) { $source =~ s/:\K.*/"$v1-$v2"/e; }
-  } elsif ($bea) {    # special handling for Bea's psalter
+  } elsif ($lang eq 'Latin-Bea') {    # special handling for Bea's psalter
 
     # remove Title if Psalm section does not start in the beginning
     shift(@lines) if $lines[0] =~ /^\(.*\)\s*$/ && $lines[1] =~ /^\d+\:(\d+)[a-z]?\s/ && $v1 > $1;

@@ -68,7 +68,6 @@ sub invitatorium {
   postprocess_ant($ant, $lang);
   my @ant = split('\*', $ant);
   my $ant2 = "Ant. $ant[1]";
-  $lang = 'Latin-Bea' if $lang eq 'Latin' && $psalmvar;
   my $fname = checkfile($lang, 'Psalterium/Invitatorium.txt');
 
   if (my @a = do_read($fname)) {
