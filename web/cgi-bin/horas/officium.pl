@@ -125,6 +125,12 @@ $lang1 = check_language($lang1) || (error("Unknown language: $lang1") && 'Latin'
 $lang2 = check_language($lang2) || 'English';
 $langfb = check_language($langfb) || 'English';
 
+# option Pius XII psalter changes Latin to Latin-Bea
+if ($psalmvar) {
+  $lang1 = 'Latin-Bea' if $lang1 eq 'Latin' && $lang2 ne 'Latin-Bea';
+  $lang2 = 'Latin-Bea' if $lang2 eq 'Latin' && $lang1 ne 'Latin-Bea';
+}
+
 our $plures = strictparam('plures');
 my @horas = ();
 
