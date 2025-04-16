@@ -1,8 +1,11 @@
-[Rank]
-Feria Sexta in Parasceve;;Feria privilegiata Duplex I classis;;7
+[Officium]
+Feria Sexta in Parasceve
 
-[Rank] (rubrica 1955 aut rubrica 1960)
-Feria Sexta in Passione et Morte Domini;;Feria privilegiata Duplex I classis;;7
+[Officium] (rubrica 1955 aut rubrica 196)
+Feria Sexta in Passione et Morte Domini
+
+[Rank]
+;;Feria privilegiata Duplex I classis;;7
 
 [Rule]
 Duplex
@@ -17,9 +20,6 @@ Minores sine Antiphona
 Feria
 
 [Ant Vespera]
-@Tempora/Quad6-4
-
-[Oratio Matutinum]
 @Tempora/Quad6-4
 
 [Oratio]
@@ -171,6 +171,9 @@ V. O vos omnes, qui transítis per viam, atténdite et vidéte.
 R. Si est dolor símilis sicut dolor meus.
 &Gloria
 R. Caligavérunt óculi mei a fletu meo: quia elongátus est a me, qui consolabátur me: Vidéte omnes pópuli, * Si est dolor símilis sicut dolor meus.
+
+[Oratio Matutinum]
+@Tempora/Quad6-4
 
 [Ant Laudes]
 Próprio * Fílio suo non pepércit Deus, sed pro nobis ómnibus trádidit illum.

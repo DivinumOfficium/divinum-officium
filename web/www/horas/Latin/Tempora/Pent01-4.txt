@@ -1,8 +1,11 @@
+[Officium]
+Festum Sanctissimi Corporis Christi
+
 [Rank]
-Festum Sanctissimi Corporis Christi;;Duplex I classis cum Octava privilegiata II ordinis;;7
+;;Duplex I classis cum Octava privilegiata II ordinis;;7
 
 [Rank] (rubrica 1960)
-Festum Sanctissimi Corporis Christi;;Duplex I classis;;7
+;;Duplex I classis;;7
 
 [Rule]
 9 lectiones
@@ -17,6 +20,23 @@ Miserátor Dóminus * escam dedit timéntibus se in memóriam suórum mirabíliu
 Cálicem salutáris * accípiam: et sacrificábo hóstiam laudis.;;115
 Sicut novéllæ olivárum, * Ecclésiæ fílii sint in circúitu mensæ Dómini.;;127
 Qui pacem * ponit fines Ecclésiæ, fruménti ádipe sátiat nos Dóminus.;;147
+
+[Ant Vespera] (rubrica cisterciensis)
+Mane nobíscum, Dómine, * quóniam advesperáscit, ut per te, nostrum viáticum, perducámur ad diem claritátis ætérnæ.;;109
+Recédant * legis vétera, dum nova supervéniunt: nam pro manna dato pátribus in desérto, Christus nobis sub spécie panis próprium Corpus dedit.;;110
+Figúram * agni typici términat verus Agnus, dum pro nostræ viæ solátio, sub panis ázymi spécie nobis datur.;;115
+Sibi nos * incórporat panis vitæ, si mente pura, fide firma, et charitáte perfécta, in ejus similitúdinem transformémur.;;127
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+Responsorium. Discúbuit Jesus, et discípuli ejus cum eo, et ait: Desidério desiderávi hoc Pascha manducáre vobíscum, ántequam pátiar: et accépto pane, grátias agens fregit, et dedit eis, * Dicens: Hoc est Corpus meum.
+V. Fecit Assuérus grande convívium cunctis princípibus, et púeris suis, ut osténderet divítias glóriæ regni sui.
+R. Dicens: Hoc est Corpus meum.
+
+[Responsory Vespera] (rubrica cisterciensis)
+R.br. Cibávit eos Dóminus *  ex ádipe fruménti.
+R. Cibávit eos Dóminus *  ex ádipe fruménti.
+V. Et de petra, melle saturávit eos.
+R. Ex ádipe fruménti.
 
 [Hymnus Vespera]
 {:H-Pangualingua:}v. Pange, lingua, gloriósi
@@ -68,8 +88,15 @@ Amen.
 V. Panem de cælo præstitísti eis, allelúja.
 R. Omne delectaméntum in se habéntem, allelúja.
 
+[Versum 1] (rubrica cisterciensis)
+V. Homo quidam fecit cœnam magnam.
+R. Et vocávit multos.
+
 [Ant 1]
 O quam suávis est, * Dómine, spíritus tuus, qui, ut dulcédinem tuam in fílios demonstráres, pane suavíssimo de cælo prǽstito, esuriéntes reples bonis, fastidiósos dívites dimíttens inánes.
+
+[Ant 1] (rubrica cisterciensis)
+Magníficat * Dei Patris, Virginísque Matris Unigénitum chorus cunctórum fidélium, quibus in peregrinatióne præsénti, ad suórum córdium consolatiónem, sub spécie panis et vini, dedit pretiósum Córporis et Sánguinis Sacraméntum.
 
 [Oratio]
 Deus, qui nobis sub Sacraménto mirábili passiónis tuæ memóriam reliquísti: tríbue, quǽsumus, ita nos Córporis, et Sánguinis tui sacra mystéria venerári; ut redemptiónis tuæ fructum in nobis júgiter sentiámus:
@@ -241,10 +268,23 @@ Pinguis est panis * Christi, et præbébit delícias régibus, allelúja.
 Sacerdótes sancti * incénsum et panes ófferunt Deo, allelúja.
 Vincénti dabo * manna abscónditum, et nomen novum, allelúja.
 
+[Ant Laudes] (rubrica cisterciensis)
+Laudet devóte * Dóminum præsens chorus, qui in suæ passiónis perénnem memóriam, seípsum præbet in cibum pópulo appropinquánti sibi.
+In mundi * primórdiis homo primus mortis escam suis pósteris propinávit, sed secúndus, qui de cœlo venit, mundis corde se tríbuit escam vitæ.
+Gustáte * cuncti fideles, quam dulcis est Dóminus, nobis Corpus suum hora tértia crucifíxum pro mundi salúte in salvíficum cibum tríbuens in Altári: omnes ipsum adorémus, qui venit salváre nos.
+O lux * meridiána, illúminans ómnia, irrádia corda nostra ad tanti Sacraménti mystéria cognoscénda.
+O pastor bone, * qui relíctis nonagínta novem óvibus in desérto, ad gregem ovem pérditam reportásti, pasce nos tui sacri Córporis aliménto.
+
 [Capitulum Laudes]
 !1 Cor 11:23-24
 v. Fratres: Ego enim accépi a Dómino quod et trádidi vobis, quóniam Dóminus Jesus, in qua nocte tradebátur, accépit panem, et grátias agens fregit, et dixit: Accípite et manducáte: hoc est corpus meum, quod pro vobis tradétur: hoc fácite in meam commemoratiónem.
 $Deo gratias
+
+[Responsory Laudes] (rubrica cisterciensis)
+R.br. Memóriam fecit mirabílium suórum, * Miserátor Dóminus.
+R. Memóriam fecit mirabílium suórum, * Miserátor Dóminus.
+V. Escam dedit timéntibus se.
+R. Miserátor Dóminus.
 
 [Hymnus Laudes]
 {:H-Verbumsupernum:}v. Verbum supérnum pródiens,
@@ -282,8 +322,15 @@ Amen.
 V. Pósuit fines tuos pacem, allelúja.
 R. Et ádipe fruménti sátiat te, allelúja.
 
+[Versum 2] (rubrica cisterciensis)
+V. Cibávit illos ex ádipe fruménti.
+R. Et de petra, melle saturávit eos.
+
 [Ant 2]
 Ego sum * panis vivus, qui de cælo descéndi: si quis manducáverit ex hoc pane, vivet in ætérnum, allelúja.
+
+[Ant 2] (rubrica cisterciensis)
+Benedíctus sit * Creátor, et Redémptor fidélium, qui memor testaménti sui sancti, quo promíserat datúrum se nobis, visitávit nos óriens ex alto: et in cruce moritúrus pro nobis, relíquit pignus amóris imménsi, donans nobis sui Córporis et Sánguinis pretiosíssimum Sacraméntum.
 
 [Lectio Prima]
 !1 Cor 11:27
@@ -334,55 +381,11 @@ R. Et ádipe fruménti sátiat te, allelúja.
 [Versum 3]
 @:Versum 1
 
-[Ant 3]
-O sacrum convívium, * in quo Christus súmitur: recólitur memória passiónis ejus: mens implétur grátia: et futúræ glóriæ nobis pignus datur, allelúja.
-
-[Ant Vespera] (rubrica cisterciensis)
-Mane nobíscum, Dómine, * quóniam advesperáscit, ut per te, nostrum viáticum, perducámur ad diem claritátis ætérnæ.;;109
-Recédant * legis vétera, dum nova supervéniunt: nam pro manna dato pátribus in desérto, Christus nobis sub spécie panis próprium Corpus dedit.;;110
-Figúram * agni typici términat verus Agnus, dum pro nostræ viæ solátio, sub panis ázymi spécie nobis datur.;;115
-Sibi nos * incórporat panis vitæ, si mente pura, fide firma, et charitáte perfécta, in ejus similitúdinem transformémur.;;127
-
-[Responsory Vespera 1] (rubrica cisterciensis)
-Responsorium. Discúbuit Jesus, et discípuli ejus cum eo, et ait: Desidério desiderávi hoc Pascha manducáre vobíscum, ántequam pátiar: et accépto pane, grátias agens fregit, et dedit eis, * Dicens: Hoc est Corpus meum.
-V. Fecit Assuérus grande convívium cunctis princípibus, et púeris suis, ut osténderet divítias glóriæ regni sui.
-R. Dicens: Hoc est Corpus meum.
-
-[Versum 1] (rubrica cisterciensis)
-V. Homo quidam fecit cœnam magnam.
-R. Et vocávit multos.
-
-[Ant 1] (rubrica cisterciensis)
-Magníficat * Dei Patris, Virginísque Matris Unigénitum chorus cunctórum fidélium, quibus in peregrinatióne præsénti, ad suórum córdium consolatiónem, sub spécie panis et vini, dedit pretiósum Córporis et Sánguinis Sacraméntum.
-
-[Ant Laudes] (rubrica cisterciensis)
-Laudet devóte * Dóminum præsens chorus, qui in suæ passiónis perénnem memóriam, seípsum præbet in cibum pópulo appropinquánti sibi.
-In mundi * primórdiis homo primus mortis escam suis pósteris propinávit, sed secúndus, qui de cœlo venit, mundis corde se tríbuit escam vitæ.
-Gustáte * cuncti fideles, quam dulcis est Dóminus, nobis Corpus suum hora tértia crucifíxum pro mundi salúte in salvíficum cibum tríbuens in Altári: omnes ipsum adorémus, qui venit salváre nos.
-O lux * meridiána, illúminans ómnia, irrádia corda nostra ad tanti Sacraménti mystéria cognoscénda.
-O pastor bone, * qui relíctis nonagínta novem óvibus in desérto, ad gregem ovem pérditam reportásti, pasce nos tui sacri Córporis aliménto.
-
-[Responsory Laudes] (rubrica cisterciensis)
-R.br. Memóriam fecit mirabílium suórum, * Miserátor Dóminus.
-R. Memóriam fecit mirabílium suórum, * Miserátor Dóminus.
-V. Escam dedit timéntibus se.
-R. Miserátor Dóminus.
-
-[Versum 2] (rubrica cisterciensis)
-V. Cibávit illos ex ádipe fruménti.
-R. Et de petra, melle saturávit eos.
-
-[Ant 2] (rubrica cisterciensis)
-Benedíctus sit * Creátor, et Redémptor fidélium, qui memor testaménti sui sancti, quo promíserat datúrum se nobis, visitávit nos óriens ex alto: et in cruce moritúrus pro nobis, relíquit pignus amóris imménsi, donans nobis sui Córporis et Sánguinis pretiosíssimum Sacraméntum.
-
-[Responsory Vespera] (rubrica cisterciensis)
-R.br. Cibávit eos Dóminus *  ex ádipe fruménti.
-R. Cibávit eos Dóminus *  ex ádipe fruménti.
-V. Et de petra, melle saturávit eos.
-R. Ex ádipe fruménti.
-
 [Versum 3] (rubrica cisterciensis)
 @:Versum 1
+
+[Ant 3]
+O sacrum convívium, * in quo Christus súmitur: recólitur memória passiónis ejus: mens implétur grátia: et futúræ glóriæ nobis pignus datur, allelúja.
 
 [Ant 3] (rubrica cisterciensis)
 O Sacraméntum * pietátis, o signum unitátis, o vínculum charitátis, nos in via refíciens sub aliéna spécie; post preséntis vitæ cursum réfice nos in pátria, jam reveláta fácie sine spécie média, allelúia.

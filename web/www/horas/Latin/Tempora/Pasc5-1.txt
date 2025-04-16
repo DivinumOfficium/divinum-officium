@@ -1,8 +1,11 @@
+[Officium]
+Feria Secunda in Rogationibus
+
 [Rank]
-Feria Secunda in Rogationibus;;Feria major;;2.1
+;;Feria major;;2.1
 
 [Rank] (rubrica 1930)
-Feria Secunda in Rogationibus;;Feria major;;4.9
+;;Feria major;;4.9
 
 [Rule]
 Una Antiphona
@@ -43,8 +46,8 @@ $Per Dominum.
 [Ant 3]
 Ipse enim Pater amat * vos, quia vos me amástis, et credidístis, allelúja.
 
-[Oratio 3]
-@Tempora/Pasc5-0:Oratio
-
 [Ant 3] (rubrica cisterciensis)
 @Tempora/Pasc1-1
+
+[Oratio 3]
+@Tempora/Pasc5-0:Oratio

@@ -1,14 +1,5 @@
 @Tempora/Pasc6-5
 
-[Rank]
-Feria VI post Octavam Ascensionis;;Semiduplex;;2.1;;ex TemporaM/Pasc5-4
-
-[Rank] (rubrica 1963)
-Feria VI post Ascensionem;;Feria;;1;;vide TemporaM/Pasc5-4
-
-[Rank] (rubrica tridentina nisi rubrica cisterciensis)
-Feria VI post Octavam Ascensionis;;Semiduplex;;2;;ex TemporaM/Pasc5-4
-
 [Rule]
 ex TemporaM/Pasc5-4;
 3 Lectiones
@@ -73,6 +64,12 @@ _
 (sed rubrica 1963)
 @TemporaM/Pasc5-5
 
+[Versum 2] (rubrica cisterciensis)
+@Tempora/Pasc6-0
+
+[Ant 2] (rubrica cisterciensis)
+@Tempora/Pasc6-0
+
 [Capitulum Sexta]
 @TemporaM/Pasc6-0
 (sed rubrica 1963)
@@ -83,14 +80,8 @@ _
 (sed rubrica 1963)
 @TemporaM/Pasc5-5
 
-[Ant 2] (rubrica cisterciensis)
-@Tempora/Pasc6-0
-
-[Versum 2] (rubrica cisterciensis)
-@Tempora/Pasc6-0
+[Versum 3] (rubrica cisterciensis)
+@:Versum 2
 
 [Ant 3] (rubrica cisterciensis)
 @Tempora/Pasc6-0
-
-[Versum 3] (rubrica cisterciensis)
-@:Versum 2

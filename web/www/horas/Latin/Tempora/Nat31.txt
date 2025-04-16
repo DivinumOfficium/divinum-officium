@@ -1,8 +1,14 @@
+[Officium]
+Die VII infra Octavam Nativitatis
+
+[Officium] (rubrica 196)
+Die septima post Nativitatem
+
 [Rank]
-Die VII infra Octavam Nativitatis;;Semiduplex;;2.1;;ex Sancti/12-25
+;;Semiduplex;;2.1;;ex Sancti/12-25
 
 [Rank] (rubrica 196)
-Die septima post Nativitatem;;Duplex II classis;;5;;ex Sancti/12-25
+;;Duplex II classis;;5;;ex Sancti/12-25
 
 [Rule]
 ex Sancti/12-25;
@@ -19,9 +25,6 @@ No secunda vespera
 @Sancti/12-25:Ant 3
 
 [Ant 1] (rubrica cisterciensis)
-@Tempora/Nat26
-
-[Ant 2] (rubrica cisterciensis)
 @Tempora/Nat26
 
 [Lectio1]
@@ -55,3 +58,6 @@ De Epístola ad Romános
 
 [Responsory3]
 @Sancti/12-25:Responsory4
+
+[Ant 2] (rubrica cisterciensis)
+@Tempora/Nat26

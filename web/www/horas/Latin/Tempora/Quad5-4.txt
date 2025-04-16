@@ -1,11 +1,12 @@
+[Officium]
+Feria Quinta infra Hebdomadam Passionis
+
 [Rank]
-Feria Quinta infra Hebdomadam Passionis;;Feria major;;2.1
-
-[Rank] (rubrica 1930)
-Feria Quinta infra Hebdomadam Passionis;;Feria major;;4.9
-
-[Rank] (rubrica 196)
-Feria Quinta infra Hebdomadam Passionis;;Feria major;;3.9
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Lectio1]
 Léctio sancti Evangélii secúndum Lucam
@@ -44,13 +45,13 @@ $Per Dominum
 [Ant 3_]
 Desidério desiderávi * hoc Pascha manducáre vobíscum, ántequam pátiar.
 
-[Ant 3C]
-Mittens hæc múlier * in corpus meum hoc unguéntum, ad sepeliéndum me fecit.
-
 [Ant 3]
 @:Ant 3_
 (sed rubrica cisterciensis aut rubrica praedicatorum)
 @:Ant 3C
+
+[Ant 3C]
+Mittens hæc múlier * in corpus meum hoc unguéntum, ad sepeliéndum me fecit.
 
 [Oratio 3]
 Esto, quǽsumus, Dómine, propítius plebi tuæ: ut, quæ tibi non placent, respuéntes, tuórum pótius repleántur delectatiónibus mandatórum.

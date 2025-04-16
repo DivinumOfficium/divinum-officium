@@ -1,8 +1,11 @@
-[Rank]
-In Ascensione Domini;;Duplex I classis cum Octava Privilegiata III classis;;7
+[Officium]
+In Ascensione Domini
 
-[Rank] (rubrica 1960)
-In Ascensione Domini;;Duplex I classis;;7
+[Rank]
+;;Duplex I classis cum Octava Privilegiata III classis;;7
+
+[Rank] (rubrica 196)
+;;Duplex I classis;;7
 
 [Rule]
 Psalmi Dominica
@@ -156,17 +159,6 @@ Nimis exaltátus est, * allelúja: super omnes deos, allelúja.;;96
 Dóminus in Sion, * allelúja: magnus et excélsus, allelúja.;;98
 Dóminus in cælo, * allelúja: parávit sedem suam, allelúja.;;102
 
-[Nocturn 1 Versum]
-@:Versum 1
-
-[Nocturn 2 Versum]
-V. Ascéndens Christus in altum, allelúja.
-R. Captívam duxit captivitátem, allelúja.
-
-[Nocturn 3 Versum]
-V. Ascéndo ad Patrem meum, et Patrem vestrum, allelúja.
-R. Deum meum, et Deum vestrum, allelúja.
-
 [Lectio1]
 Incipit liber Actuum Apostolórum
 !Act. 1:1-5
@@ -280,6 +272,9 @@ Increpáta ígitur eórum durítia, quid admonéndo dicat, audiámus: Eúntes in
 v. Primum quidem sermónem feci de ómnibus, o Theóphile, quæ cœpit Jesus fácere et docére usque in diem, qua præcípiens Apóstolis per Spíritum Sanctum, quos elégit, assúmptus est.
 $Deo gratias
 
+[Responsory Laudes] (rubrica cisterciensis)
+@:Responsory Breve Nona
+
 [Hymnus Laudes]
 @:Hymnus Vespera
 
@@ -345,6 +340,10 @@ R. Allelúja, allelúja.
 &Gloria
 R. Ascéndit Deus in jubilatióne, * Allelúja, allelúja.
 
+[Responsory TertiaM] (rubrica cisterciensis)
+V. Exaltáre, Dómine, in virtúte tua, allelúia.
+R. Cantábimus et psallémus virtútes tuas, allelúia.
+
 [Versum Tertia]
 @:Nocturn 2 Versum
 
@@ -361,6 +360,10 @@ R. Allelúja, allelúja.
 &Gloria
 R. Ascéndens Christus in altum, * Allelúja, allelúja.
 
+[Responsory SextaM] (rubrica cisterciensis)
+V. A summo cœlo egréssio ejus, allelúia.
+R. Et occúrsus ejus usque ad summum ejus, allelúia.
+
 [Versum Sexta]
 @:Nocturn 3 Versum
 
@@ -375,6 +378,10 @@ V. Deum meum, et Deum vestrum.
 R. Allelúja, allelúja.
 &Gloria
 R. Ascéndo ad Patrem meum, et Patrem vestrum, * Allelúja, allelúja.
+
+[Responsory NonaM] (rubrica cisterciensis)
+V. Non vos relínquam órphanos, allelúia.
+R. Véniam ad vos, et gaudébit cor vestrum, allelúia.
 
 [Versum Nona]
 @:Versum 2
@@ -403,17 +410,13 @@ $Oremus
 Concéde, quǽsumus, omnípotens Deus: ut, qui hodiérna die Unigénitum tuum, Redemptórem nostrum, ad cælos ascendísse crédimus; ipsi quoque mente in cæléstibus habitémus.
 $Per eumdem
 
-[Responsory Laudes] (rubrica cisterciensis)
-@:Responsory Breve Nona
+[Nocturn 1 Versum]
+@:Versum 1
 
-[Responsory TertiaM] (rubrica cisterciensis)
-V. Exaltáre, Dómine, in virtúte tua, allelúia.
-R. Cantábimus et psallémus virtútes tuas, allelúia.
+[Nocturn 2 Versum]
+V. Ascéndens Christus in altum, allelúja.
+R. Captívam duxit captivitátem, allelúja.
 
-[Responsory SextaM] (rubrica cisterciensis)
-V. A summo cœlo egréssio ejus, allelúia.
-R. Et occúrsus ejus usque ad summum ejus, allelúia.
-
-[Responsory NonaM] (rubrica cisterciensis)
-V. Non vos relínquam órphanos, allelúia.
-R. Véniam ad vos, et gaudébit cor vestrum, allelúia.
+[Nocturn 3 Versum]
+V. Ascéndo ad Patrem meum, et Patrem vestrum, allelúja.
+R. Deum meum, et Deum vestrum, allelúja.

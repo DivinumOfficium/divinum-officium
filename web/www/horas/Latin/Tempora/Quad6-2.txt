@@ -1,12 +1,52 @@
-[Rank]
-Feria Tertia Majoris Hebdomadæ;;Feria privilegiata;;6.9
+[Officium]
+Feria Tertia Majoris Hebdomadæ
 
-[Rank] (rubrica 1955 aut rubrica 1960)
-Feria Tertia Hebdomadæ Sanctæ;;Feria privilegiata;;7
+[Officium] (rubrica 1955 aut rubrica 196)
+Feria Tertia Hebdomadæ Sanctæ
+
+[Rank]
+;;Feria privilegiata;;6.9
+
+[Rank] (rubrica 1955 aut rubrica 196)
+;;Feria privilegiata;;7
 
 [Rule]
 Antiphonas horas
 Feria
+
+[Ant Laudes]
+Vide, Dómine, * et consídera, quóniam tríbulor: velóciter exáudi me.
+Discérne causam meam, * Dómine: ab hómine iníquo et dolóso éripe me.
+Dum tribulárer, * clamávi ad Dóminum de ventre ínferi, et exaudívit me.
+Dómine, vim pátior, * respónde pro me: quia néscio quid dicam inimícis meis.
+Dixérunt ímpii: * Opprimámus virum justum, quóniam contrárius est opéribus nostris.
+
+[Ant Laudes] (rubrica cisterciensis)
+Vide, Dómine, * et consídera, quóniam tríbulor: velóciter exáudi me.
+Discérne causam meam, * Dómine: ab hómine iníquo et dolóso éripe me.
+Dum tribulárer, * clamávi ad Dóminum de ventre ínferi, et exaudívit me.
+Dixérunt ímpii: * Opprimámus virum justum, quóniam contrárius est opéribus nostris.
+Potestátem hábeo * ponéndi ánimam meam, et íterum suméndi eam. 
+
+[Ant 2]
+Ante diem festum * Paschæ, sciens Jesus quia venit hora ejus, cum dilexísset suos, in finem diléxit eos.
+
+[Ant 2] (rubrica cisterciensis aut rubrica praedicatorum)
+Nemo * tollit a me ánimam meam, sed ego pono eam, et íterum sumo eam. 
+
+[Oratio 2]
+Omnípotens sempitérne Deus: da nobis ita Domínicæ passiónis sacraménta perágere; ut indulgéntiam percípere mereámur.
+$Per eumdem
+
+[Ant 3]
+Potestátem hábeo * ponéndi ánimam meam, et íterum suméndi eam.
+
+[Ant 3] (rubrica cisterciensis)
+Animæ impiórum * fremébant advérsum me, et gravátum est cor meum super eos.
+
+[Oratio 3]
+Tua nos misericórdia, Deus, et ab omni subreptióne vetustátis expúrget: et capáces sanctæ novitátis effíciat.
+$Per Dominum.
 
 [Lectio1]
 De Jeremía Prophéta
@@ -52,37 +92,3 @@ V. Júdica me, Dómine, secúndum justítiam meam, et secúndum innocéntiam mea
 R. Consumétur, Dómine, nequítia peccatórum, et díriges justum.
 &Gloria
 R. Synagóga populórum circumdedérunt me: et non réddidi retribuéntibus mihi mala. * Consumétur, Dómine, nequítia peccatórum, et díriges justum.
-
-[Ant Laudes]
-Vide, Dómine, * et consídera, quóniam tríbulor: velóciter exáudi me.
-Discérne causam meam, * Dómine: ab hómine iníquo et dolóso éripe me.
-Dum tribulárer, * clamávi ad Dóminum de ventre ínferi, et exaudívit me.
-Dómine, vim pátior, * respónde pro me: quia néscio quid dicam inimícis meis.
-Dixérunt ímpii: * Opprimámus virum justum, quóniam contrárius est opéribus nostris.
-
-[Ant Laudes] (rubrica cisterciensis)
-Vide, Dómine, * et consídera, quóniam tríbulor: velóciter exáudi me.
-Discérne causam meam, * Dómine: ab hómine iníquo et dolóso éripe me.
-Dum tribulárer, * clamávi ad Dóminum de ventre ínferi, et exaudívit me.
-Dixérunt ímpii: * Opprimámus virum justum, quóniam contrárius est opéribus nostris.
-Potestátem hábeo * ponéndi ánimam meam, et íterum suméndi eam. 
-
-[Ant 2]
-Ante diem festum * Paschæ, sciens Jesus quia venit hora ejus, cum dilexísset suos, in finem diléxit eos.
-
-[Ant 2] (rubrica cisterciensis aut rubrica praedicatorum)
-Nemo * tollit a me ánimam meam, sed ego pono eam, et íterum sumo eam. 
-
-[Oratio 2]
-Omnípotens sempitérne Deus: da nobis ita Domínicæ passiónis sacraménta perágere; ut indulgéntiam percípere mereámur.
-$Per eumdem
-
-[Ant 3]
-Potestátem hábeo * ponéndi ánimam meam, et íterum suméndi eam.
-
-[Ant 3] (rubrica cisterciensis)
-Animæ impiórum * fremébant advérsum me, et gravátum est cor meum super eos.
-
-[Oratio 3]
-Tua nos misericórdia, Deus, et ab omni subreptióne vetustátis expúrget: et capáces sanctæ novitátis effíciat.
-$Per Dominum.

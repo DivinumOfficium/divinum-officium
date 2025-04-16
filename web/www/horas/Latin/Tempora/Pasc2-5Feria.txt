@@ -1,5 +1,8 @@
+[Officium]
+Feria Sexta infra Hebdomadam II post Octavam Paschæ
+
 [Rank]
-Feria Sexta infra Hebdomadam II post Octavam Paschæ;;Feria;;1
+;;Feria;;1
 
 [Rule]
 Oratio Dominica
@@ -27,11 +30,11 @@ Feria Te Deum
 [Ant 2]
 Nonne sic opórtuit * pati Christum, et ita intráre in glóriam suam? allelúja.
 
+[Ant 2] (rubrica cisterciensis)
+@Tempora/Pasc1-5
+
 [Ant 3]
 @Tempora/Pasc2-0:Ant 1
 
 [Ant 3] (rubrica 1960)
 @Tempora/Pasc2-0:Ant 3
-
-[Ant 2] (rubrica cisterciensis)
-@Tempora/Pasc1-5

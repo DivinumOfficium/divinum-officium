@@ -1,8 +1,10 @@
-[Rank]
-In Octava Sanctissimi Corporis Christi;;Duplex majus;;6.3;;ex Tempora/Pent01-4
+[Officium]
+In Octava Sanctissimi Corporis Christi
 
-[Rank] (rubrica tridentina)
-In Octava Sanctissimi Corporis Christi;;Duplex majus;;4.9;;ex Tempora/Pent01-4
+[Rank]
+;;Duplex majus;;6.3;;ex Tempora/Pent01-4
+(sed rubrica tridentina nisi rubrica cisterciensis)
+;;Duplex majus;;4.9;;ex Tempora/Pent01-4
 
 [Rule]
 ex Tempora/Pent01-4

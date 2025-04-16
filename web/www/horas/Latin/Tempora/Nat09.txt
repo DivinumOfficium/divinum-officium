@@ -1,5 +1,8 @@
+[Officium]
+Ad Romános, cap. 13
+
 [Rank]
-Ad Romános, cap. 13;;Feria;;1;;vide Sancti/01-06
+;;Feria;;1;;vide Sancti/01-06
 
 [Rule]
 vide Sancti/01-06
@@ -14,6 +17,11 @@ De Epístola ad Romános
 3 nam príncipes non sunt timóri boni óperis, sed mali. Vis autem non timére potestátem? Bonum fac: et habébis laudem ex illa; 
 4 Dei enim miníster est tibi in bonum.
 
+[Responsory1] (rubrica 196)
+@SanctiM/01-07
+(sed rubrica 1960)
+@Sancti/01-06:Responsory1InfraOctavam
+
 [Lectio2]
 !Rom 13:4-7
 4 Si autem malum féceris, time: non enim sine causa gládium portat. Dei enim miníster est: vindex in iram ei, qui malum agit. 
@@ -21,23 +29,18 @@ De Epístola ad Romános
 6 Ideo enim et tribúta præstátis: minístri enim Dei sunt, in hoc ipsum serviéntes. 
 7 Réddite ómnibus débita: cui tribútum, tribútum: cui vectígal, vectígal: cui timórem, timórem: cui honórem, honórem.
 
-[Lectio3]
-!Rom 13:8-10
-8 Némini quidquam debeátis, nisi ut ínvicem diligátis: qui enim díligit próximum, legem implévit. 
-9 Nam, Non adulterábis, Non occídes, Non furáberis, Non falsum testimónium dices, Non concupísces: et si quod est áliud mandátum, in hoc verbo instaurátur: Díliges próximum tuum sicut teípsum. 
-10 Diléctio próximi malum non operátur. Plenitúdo ergo legis est diléctio.
-
-[Responsory1] (rubrica 196)
-@SanctiM/01-07
-(sed rubrica 1960)
-@Sancti/01-06:Responsory1InfraOctavam
-
 [Responsory2] (rubrica 196)
 @SanctiM/01-07
 (sed feria 7)
 @SanctiM/01-07:Responsory3
 (sed rubrica 1960)
 @Sancti/01-06
+
+[Lectio3]
+!Rom 13:8-10
+8 Némini quidquam debeátis, nisi ut ínvicem diligátis: qui enim díligit próximum, legem implévit. 
+9 Nam, Non adulterábis, Non occídes, Non furáberis, Non falsum testimónium dices, Non concupísces: et si quod est áliud mandátum, in hoc verbo instaurátur: Díliges próximum tuum sicut teípsum. 
+10 Diléctio próximi malum non operátur. Plenitúdo ergo legis est diléctio.
 
 [Responsory3] (rubrica 196)
 @SanctiM/01-07

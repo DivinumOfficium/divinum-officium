@@ -1,8 +1,8 @@
-[Rank]
-Neděle 2. po Svatém Duchu a v oktávu Těla Páně;;Semiduplex I classis;;5.9;;ex Tempora/Pent01-4
+[Officium]
+Neděle 2. po Svatém Duchu a v oktávu Těla Páně
 
-[Rank1960]
-Neděle 2. po Svatém Duchu;;Semiduplex I classis;;5.9
+[Officium] (rubrica 196 aut rubrica 1955)
+Neděle 2. po Svatém Duchu
 
 [Rule]
 9 lectiones
@@ -14,8 +14,15 @@ Doxology=Corp
 V. Krmil je jadrnou pšenicí. Alleluia.
 R. A medem ze skýly je nasytil. Alleluia.
 
+[Versum 1] (rubrica cisterciensis)
+V. Chléb z nebe dal jim.
+R. Chléb Andělů jedl člověk
+
 [Ant 1]
 Chlapec Samuel * sloužil Bohu před Elim, a slovo Páně bylo před ním drahé.
+
+[Ant 1] (rubrica cisterciensis)
+Poznali všichni * od Danu do Ber Šeby, že věrný Samuel je Prorok Páně.
 
 [Oratio]
 Svatý Bože, dej, ať jsme naplněni úctou a láskou k tobě; vždyť ty nás stále miluješ, staráš se o nás jako  Otec a nikdy nás nepřestáváš vést.
@@ -49,14 +56,13 @@ Lesson from the first book of Samuel
 [Lectio4]
 Z řeči sv. Jana Zlatoústého, Patriarchy konstantinopolského.
 !Z Řeči 60. k lidu z Antiochie.
-Protože Slovo řeklo: „Toto je mé Tělo,“ my to potvrzujeme i tomu věříme, a hledíme na ně zrakem intelektu. Kristus nám totiž nezanechal nic, co by dokázaly poznat naše smysly, avšak vše nám předal ve věcech, které jsou našim smyslům srozumitelné, a každý je chápe. Podobně je to ve křtu: skrze věc smyslům srozumitelnou, tedy vodu, je udělen tento dar. My však chápeme, co se ve skutečnosti stalo: zrození a obnovení. Kdybys tedy neměl tělo, dal by ti Pán všechny tyto dary prostě a nehmotně. Duše však je zaseta v těle, proto věci, které máme chápat, se musejí předávat tak, aby je mohly vnímat smysly. Kolikrát lidé říkají: „chtěl bych vidět, jak vypadá, jeho postavu, oděv, obuv“? Hle, zde jej vidíš, dotýkáš se jej, požíváš jej. Ty bys chtěl vidět jen jeho oděv. On ti však dovolí, abys nejen na něj pohlédl, ale dokonce jej snědl, dotkl se jej a přijal jej do svého nitra. 
+Protože Slovo řeklo: „Toto je mé Tělo,“ my to potvrzujeme i tomu věříme, a hledíme na ně zrakem intelektu. Kristus nám totiž nezanechal nic, co by dokázaly poznat naše smysly, avšak vše nám předal ve věcech, které jsou našim smyslům srozumitelné, a každý je chápe. Podobně je to ve křtu: skrze věc smyslům srozumitelnou, tedy vodu, je udělen tento dar. My však chápeme, co se ve skutečnosti stalo: zrození a obnovení. Kdybys tedy neměl tělo, dal by ti Pán všechny tyto dary prostě a nehmotně. Duše však je zaseta v těle, proto věci, které máme chápat, se musejí předávat tak, aby je mohly vnímat smysly. Kolikrát lidé říkají: „chtěl bych vidět, jak vypadá, jeho postavu, oděv, obuv“? Hle, zde jej vidíš, dotýkáš se jej, požíváš jej. Ty bys chtěl vidět jen jeho oděv. On ti však dovolí, abys nejen na něj pohlédl, ale dokonce jej snědl, dotkl se jej a přijal jej do svého nitra.
 
 [Lectio5]
-Nikdo k němu tedy nepřistupuj s nechutí či lhostejností, vždy k němu přistupujte se zápalem, vroucností a nadšením. Neboť když i Židé jedli beránka ve stoje, s botami na nohou, holemi v ruce a ve spěchu (Exod. xii). 11, o to více se sluší, abys ty byl ještě vynalézavější. Oni totiž měli namířeno pouze do Palestiny a proto se oblékali jako na cestu. Ty však musíš dojít až do nebe. Proto je třeba, abys byl ve všem bdělý, neboť nemalý trest je stanoven těm, kteří Tělo Páně  přijímají nehodně. Pomysli jen, o co snad jsi horší než jeho zrádce či ti, kteří jej ukřižovali. Také považ, zda ses také neprovinil proti Tělu a Krvi Kristově. Oni zabili nejsvětější Tělo, ty bys je však přijímal do nečisté duše po tom všem, co pro tebe udělal. Nebylo mu totiž dost státi se člověkem, nechat se pohlavky bíti a nakonec ukřižovati. Dokonce on sám, Bůh, se spojil s námi, a to nejen vírou, ale i ve skutečnosti nás učinil svým tělem. 
+Nikdo k němu tedy nepřistupuj s nechutí či lhostejností, vždy k němu přistupujte se zápalem, vroucností a nadšením. Neboť když i Židé jedli beránka ve stoje, s botami na nohou, holemi v ruce a ve spěchu (Exod. xii). 11, o to více se sluší, abys ty byl ještě vynalézavější. Oni totiž měli namířeno pouze do Palestiny a proto se oblékali jako na cestu. Ty však musíš dojít až do nebe. Proto je třeba, abys byl ve všem bdělý, neboť nemalý trest je stanoven těm, kteří Tělo Páně  přijímají nehodně. Pomysli jen, o co snad jsi horší než jeho zrádce či ti, kteří jej ukřižovali. Také považ, zda ses také neprovinil proti Tělu a Krvi Kristově. Oni zabili nejsvětější Tělo, ty bys je však přijímal do nečisté duše po tom všem, co pro tebe udělal. Nebylo mu totiž dost státi se člověkem, nechat se pohlavky bíti a nakonec ukřižovati. Dokonce on sám, Bůh, se spojil s námi, a to nejen vírou, ale i ve skutečnosti nás učinil svým tělem.
 
 [Lectio6]
-Anything be purer than that man ought to be, who eateth of this great Sacrifice Can sun-beam be clearer than that hand ought to be which breaketh this Flesh? that mouth, which is filled with that spiritual fire? that tongue, which is reddened by that Blood, awful exceedingly? That whereon the Angels quail to look, neither dare to gaze steadfastly upon It, because of the blinding glory that shineth therefrom, upon This we feed, with This we become one, and are made one body of Christ, and one flesh. "Who can utter the mighty acts of the Lord; who~
-can show forth all His praise?" (Ps. cv. 2.) Where is the shepherd which feedeth his flock with his own blood Nay, why should I say, shepherd Many mothers there be, who after all the pains of travail, give their own little ones to strangers to nurse. But so would not He, but feedeth us with His Own Blood, and maketh us to grow up in His Own substance.
+Anything be purer than that man ought to be, who eateth of this great Sacrifice Can sun-beam be clearer than that hand ought to be which breaketh this Flesh? that mouth, which is filled with that spiritual fire? that tongue, which is reddened by that Blood, awful exceedingly? That whereon the Angels quail to look, neither dare to gaze steadfastly upon It, because of the blinding glory that shineth therefrom, upon This we feed, with This we become one, and are made one body of Christ, and one flesh. „Who can utter the mighty acts of the Lord; who can show forth all His praise?“ (Ps. cv. 2.) Where is the shepherd which feedeth his flock with his own blood Nay, why should I say, shepherd Many mothers there be, who after all the pains of travail, give their own little ones to strangers to nurse. But so would not He, but feedeth us with His Own Blood, and maketh us to grow up in His Own substance.
 
 [Lectio7]
 Čtení svatého Evangelia podle Lukáše
@@ -68,7 +74,7 @@ Kázání sv. Řehoře Velikého, Papeže
 Nejdražší bratři, mezi požitky těla a srdce bývá veliký rozdíl v tom, že pokud nemáme tělesné požitky, velmi po nich začneme toužit. Pokud jich však máme příliš, přesytíme se jimi a nadále se nám pak zoškliví. Oproti tomu duchovní požitky se nám oškliví, pouze když je nemáme, avšak když je máme, toužíme po nich, takže ten, kdo jich má mnoho, po nich touží o to více, oč ten, komu se jich nedostává, by je chtěl požívat. Tělesné požitky nás v nedostatku lákají, v dostatku však odpuzují. Duchovní požitky nás v nedostatku nechávají chladnými, v dostatku nás však lákají. U tělesných požitků přichází po chuti sytost a ze sytosti se stává nechuť.
 
 [Lectio8]
-Chuť po požitcích duchovních sice také plodí sytost, ale ta plodí opět chuť. Když jsme jich totiž syti, roste v naší mysli touha, neboť oč více zažíváme jejich chuť, o to více poznáváme, že je vroucněji milujeme. Věci, které nemáme, nemůžeme milovat, neboť neznáme jejich chuť. Kdo by totiž dokázal milovat, co nezná? Proto nás Žalmista nabádá slovy: „Okuste a vizte, neboť sladký je Pán.“ (Ps. xxxiii. 9,) To je, jako kdyby jasně říkal: „Sladkost jeho neznáte, pokud ji neochutnáte, avšak pokrm života poznejte chutí srdce, abyste zakusili jeho sladkost a tak jej dokázali milovat.“ Takové požitky totiž člověk ztratil v okamžiku, kdy v ráji zhřešil. Vyšel ven, když zavřel svá ústa před pokrmem věčné sladkosti. 
+Chuť po požitcích duchovních sice také plodí sytost, ale ta plodí opět chuť. Když jsme jich totiž syti, roste v naší mysli touha, neboť oč více zažíváme jejich chuť, o to více poznáváme, že je vroucněji milujeme. Věci, které nemáme, nemůžeme milovat, neboť neznáme jejich chuť. Kdo by totiž dokázal milovat, co nezná? Proto nás Žalmista nabádá slovy: „Okuste a vizte, neboť sladký je Pán.“ (Ps. xxxiii. 9,) To je, jako kdyby jasně říkal: „Sladkost jeho neznáte, pokud ji neochutnáte, avšak pokrm života poznejte chutí srdce, abyste zakusili jeho sladkost a tak jej dokázali milovat.“ Takové požitky totiž člověk ztratil v okamžiku, kdy v ráji zhřešil. Vyšel ven, když zavřel svá ústa před pokrmem věčné sladkosti.
 
 [Responsory8]
 R. Jeden člověk připravil k večeři velikou hostinu, a v čas večeře poslal svého služebníka, aby vybídl pozvané, aby přišli.
@@ -108,11 +114,3 @@ $Deo gratias
 
 [Ant 3]
 Vyjdi rychle * do náměstí a ulic města; a přiveď všechny chudé a nemocné, slepá a chromé, aby se naplnil můj dům, alleluja.
-
-[Versum 1] (rubrica cisterciensis)
-V. Chléb z nebe dal jim.
-R. Chléb Andělů jedl člověk
-
-[Ant 1] (rubrica cisterciensis)
-Poznali všichni * od Danu do Ber Šeby, že věrný Samuel je Prorok Páně.
-

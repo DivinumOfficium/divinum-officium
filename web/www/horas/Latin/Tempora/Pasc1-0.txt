@@ -1,8 +1,11 @@
+[Officium]
+Dominica in Albis in Octava Paschæ
+
 [Rank]
-Dominica in Albis in Octava Paschæ;;Duplex majus I. classis;;6.91;;
+;;Duplex majus I. classis;;6.91;;
 
 [Rank] (rubrica 196)
-Dominica in Albis in Octava Paschæ;;Duplex I classis;;6;;
+;;Duplex I classis;;6;;
 
 [Rule]
 9 Lectiones
@@ -108,6 +111,9 @@ $Deo gratias
 [Ant 2]
 @:Ant 1
 
+[Ant 2] (rubrica cisterciensis)
+Post dies octo * jánuis clausis ingréssus Dóminus dixit eis: Pax vobis, allelúia, allelúia.
+
 [Capitulum Sexta]
 !1 Joann. 5:5-6
 v. Quis est autem qui vincit mundum, nisi qui credit quóniam Jesus est Fílius Dei? hic est, qui venit per aquam et sánguinem, Jesus Christus: non in aqua solum, sed in aqua et sánguine.
@@ -123,8 +129,5 @@ Post dies octo * jánuis clausis ingréssus Dóminus dixit eis: Pax vobis, allel
 (sed rubrica cisterciensis)
 @:Ant 3C
 
-[Ant 2] (rubrica cisterciensis)
-Post dies octo * jánuis clausis ingréssus Dóminus dixit eis: Pax vobis, allelúia, allelúia.
-
-[Ant 3C] 
+[Ant 3C]
 Multa quidem * et ália signa fecit Jesus in conspéctu discipulórum suórum, allelúia, quæ non sunt scripta in libro hoc, allelúia.

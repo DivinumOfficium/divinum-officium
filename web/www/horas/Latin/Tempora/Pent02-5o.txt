@@ -1,8 +1,11 @@
+[Officium]
+Sacratissimi Cordis Domini Nostri Jesu Christi
+
 [Rank]
-Sacratissimi Cordis Domini Nostri Jesu Christi;;Duplex majus;;4.01
+;;Duplex majus;;4.01
 
 [Rank] (rubrica 1906 aut rubrica cisterciensis)
-Sacratissimi Cordis Domini Nostri Jesu Christi;;Duplex I. classis;;6.5
+;;Duplex I. classis;;6.5
 
 [Rule]
 9 lectiones
@@ -17,6 +20,9 @@ Sanctificávi locum * istum, ut sit nomen meum ibi in sempitérnum, et permánea
 Et dixi: * Ergo sine causa justificávi cor meum, et lavi inter innocéntes manus meas, et fui flagellátus tota die;;111
 Secúndum multitúdinem * dolórum meórum in corde meo, consolatiónes tuæ lætificavérunt ánimam meam;;115
 Pone me * ut signáculum super cor tuum, ut signáculum super bráchium tuum;;129
+
+[Responsory Vespera] (rubrica cisterciensis)
+@:Responsory Sexta
 
 [Hymnus Vespera]
 @Tempora/Pent02-5:Hymnus Matutinum
@@ -216,6 +222,9 @@ _
 V. Pósuit fines tuos pacem.
 R. Et ádipe fruménti sátiat te.
 
+[Responsory TertiaM] (rubrica cisterciensis)
+@:Responsory Tertia:8-9
+
 [Capitulum Sexta]
 !Isa 12:4
 v. Dicétis in die illa: Confitémini Dómino, et invocáte nomen ejus: et mementate quóniam excélsum est nomen ejus.
@@ -231,6 +240,9 @@ R. Pósuit * Fines tuos pacem.
 _
 V. Dirupísti Dómine víncula mea.
 R. Tibi sacrificábo hóstiam laudis.
+
+[Responsory SextaM] (rubrica cisterciensis)
+@:Responsory Sexta:8-9
 
 [Capitulum Nona]
 !Isa 12:5
@@ -248,24 +260,15 @@ _
 V. Erit Dóminus nominátus in signum ætérnum.
 R. Quod non auferétur.
 
-[Versum 3]
-V. Hauriétis aquas in gáudio.
-R. De fóntibus Salvatóris.
-
-[Ant 3]
-Ad Jesum autem cum veníssent * ut vidérunt eum jam mórtuum, non fregérunt ejus crura: sed unus mílitum láncea latus ejus apéruit, et contínuo exívit sanguis et aqua.
-
-[Responsory TertiaM] (rubrica cisterciensis)
-@:Responsory Tertia:8-9
-
-[Responsory SextaM] (rubrica cisterciensis)
-@:Responsory Sexta:8-9
-
 [Responsory NonaM] (rubrica cisterciensis)
 @:Responsory Nona:8-9
 
 [Ant Vespera 3] (rubrica cisterciensis)
 @:Ant Vespera:s/;;115/;;127/ s/;;111/;;115/
 
-[Responsory Vespera] (rubrica cisterciensis)
-@:Responsory Sexta
+[Versum 3]
+V. Hauriétis aquas in gáudio.
+R. De fóntibus Salvatóris.
+
+[Ant 3]
+Ad Jesum autem cum veníssent * ut vidérunt eum jam mórtuum, non fregérunt ejus crura: sed unus mílitum láncea latus ejus apéruit, et contínuo exívit sanguis et aqua.

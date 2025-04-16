@@ -1,8 +1,14 @@
+[Officium]
+Die VI infra Octavam Nativitatis
+
+[Officium] (rubrica 196)
+Die sexta post Nativitatem
+
 [Rank]
-Die VI infra Octavam Nativitatis;;Semiduplex;;2.1;;ex Sancti/12-25
+;;Semiduplex;;2.1;;ex Sancti/12-25
 
 [Rank] (rubrica 196)
-Die sexta post Nativitatem;;Duplex II classis;;5;;ex Sancti/12-25
+;;Duplex II classis;;5;;ex Sancti/12-25
 
 [Rank] (rubrica cisterciensis)
 Die sexta post Nativitatem;;Duplex II classis;;2.9;;ex Tempora/Nat1-0
@@ -27,9 +33,6 @@ ex Tempora/Nat1-0
 
 [Ant 1] (rubrica cisterciensis)
 @Tempora/Nat1-0
-
-[Ant 2] (rubrica cisterciensis)
-@:Ant 1
 
 [Lectio1]
 De Epístola ad Romános
@@ -104,6 +107,9 @@ Non medíocre fídei tibi hoc videátur exémplum, quod vilis sit persóna past�
 [Lectio9]
 Nec contemnénda putes quasi vília verba pastórum. A pastóribus enim María fidem cólligit, a pastóribus pópulus ad Dei reveréntiam congregátur. Miráti étiam sunt omnes qui audiérunt, de iis, quæ dicebántur a pastóribus ad ipsos. Mária autem conservábat ómnia verba hæc, cónferens in corde suo. Discámus sanctæ Vírginis in ómnibus castitátem, quæ non minus ore pudíca quam córpore, arguménta fídei conferébat in corde.
 &teDeum
+
+[Ant 2] (rubrica cisterciensis)
+@:Ant 1
 
 [Responsory SextaM] (rubrica cisterciensis)
 @SanctiM/12-25:Nocturn 2 Versum

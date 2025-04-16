@@ -1,5 +1,8 @@
+[Officium]
+Sabbato Sancto
+
 [Rank]
-Sabbato Sancto;;Feria privilegiata Duplex I classis;;7
+;;Feria privilegiata Duplex I classis;;7
 
 [Rule]
 Psalmi minores Dominica
@@ -10,9 +13,6 @@ Limit Benedictiones Oratio(rubrica 1955 aut rubrica 196)
 Capitulum Versum 2 ad Laudes tantum
 Minores sine Antiphona
 Feria
-
-[Oratio Matutinum]
-@Tempora/Quad6-4
 
 [Ant Matutinum]
 In pace * in idípsum, dórmiam et requiéscam.;;4
@@ -163,6 +163,9 @@ V. Accedéntes príncipes sacerdótum ad Pilátum, petiérunt illum.
 R. Ponéntes mílites, qui custodírent illum.
 &Gloria
 R. Sepúlto Dómino, signátum est monuméntum, volvéntes lápidem ad óstium monuménti: * Ponéntes mílites, qui custodírent illum.
+
+[Oratio Matutinum]
+@Tempora/Quad6-4
 
 [Ant Laudes]
 O mors, * ero mors tua, morsus tuus ero, inférne.

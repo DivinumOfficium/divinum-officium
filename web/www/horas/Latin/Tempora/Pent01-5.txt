@@ -1,11 +1,15 @@
+[Officium]
+Feria Sexta infra octavam Corporis Christi
+
+[Officium] (rubrica 196 aut rubrica 1955)
+Feria VI infra Hebdomadam I post Octavam Pentecostes
+
 [Rank]
-Feria Sexta infra octavam Corporis Christi;;Semiduplex II class;;5.6;;ex Tempora/Pent01-4
-
-[Rank] (rubrica 196 aut rubrica 1955)
-Feria VI infra Hebdomadam I post Octavam Pentecostes;;Feria;;1
-
-[Rank] (rubrica tridentina)
-Feria Sexta infra Octavam Corporis Christi;;Semiduplex IIS class;;2.9;;ex Tempora/Pent01-4
+;;Semiduplex II class;;5.6;;ex Tempora/Pent01-4
+(sed rubrica tridentina nisi rubrica cisterciensis)
+;;Semiduplex IIS class;;2.9;;ex Tempora/Pent01-4
+(sed rubrica 196 aut rubrica 1955)
+;;Feria;;1
 
 [Rule]
 ex Tempora/Pent01-4;

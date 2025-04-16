@@ -1,8 +1,14 @@
+[Officium]
+Dominica de Passione
+
+[Officium] (rubrica 1955 aut rubrica 1960)
+Dominica I Passionis
+
 [Rank]
-Dominica de Passione;;I classis Semiduplex;;6.9
+;;I classis Semiduplex;;6.9
 
 [Rank] (rubrica 1955 aut rubrica 1960)
-Dominica I Passionis;;I classis Semiduplex;;6
+;;I classis Semiduplex;;6
 
 [Rule]
 9 lectiones
@@ -150,11 +156,20 @@ Ego * dæmónium non hábeo, sed honorífico Patrem meum, dicit Dóminus.
 [Ant Prima]
 Ego dæmónium non hábeo, * sed honorífico Patrem meum, dicit Dóminus.
 
+[Ant Prima] (rubrica cisterciensis)
+Abraham pater vester * exsultávit ut vidéret diem meum: vidit, et gavísus est.
+
 [Ant Tertia]
 Ego glóriam meam * non quæro: est qui quærat, et júdicet.
 
+[Ant Tertia] (rubrica cisterciensis)
+Judicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine Deus meus.
+
 [Ant Sexta]
 Amen, amen, dico vobis: * si quis sermónem meum serváverit, mortem non gustábit in ætérnum.
+
+[Ant Sexta] (rubrica cisterciensis)
+Pópule meus, * quid feci tibi, aut quid moléstus fui? Respónde mihi.
 
 [Capitulum Sexta]
 !Heb 9:13-14
@@ -164,22 +179,13 @@ $Deo gratias
 [Ant Nona]
 Tulérunt lápides * Judǽi, ut jácerent in eum: Jesus autem abscóndit se, et exívit de templo.
 
+[Ant Nona] (rubrica cisterciensis)
+Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ?
+
 [Capitulum Nona]
 !Heb 9:15
 v. Et ídeo novi testaménti mediátor est: ut, morte intercedénte, in redemptiónem eárum prævaricatiónum, quæ erant sub prióri testaménto, repromissiónem accípiant, qui vocáti sunt ætérnæ hereditátis in Christo Jesu, Dómino nostro.
 $Deo gratias
-
-[Ant Prima] (rubrica cisterciensis)
-Abraham pater vester * exsultávit ut vidéret diem meum: vidit, et gavísus est.
-
-[Ant Tertia] (rubrica cisterciensis)
-Judicásti, Dómine, * causam ánimæ meæ, defénsor vitæ meæ, Dómine Deus meus.
-
-[Ant Sexta] (rubrica cisterciensis)
-Pópule meus, * quid feci tibi, aut quid moléstus fui? Respónde mihi.
-
-[Ant Nona] (rubrica cisterciensis)
-Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ?
 
 [Ant 3]
 Abraham pater vester * exsultávit ut vidéret diem meum: vidit, et gavísus est.

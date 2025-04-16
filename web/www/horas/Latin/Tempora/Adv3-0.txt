@@ -1,11 +1,14 @@
+[Officium]
+Dominica III Adventus
+
 [Rank]
-Dominica III Adventus;;Semiduplex II. classis;;5.6
+;;Semiduplex II. classis;;5.6
 
 [Rank] (rubrica 1570 aut rubrica 1888)
-Dominica III Adventus;;Semiduplex II. classis;;6.1
+;;Semiduplex II. classis;;6.1
 
 [Rank] (rubrica 196)
-Dominica III Adventus;;Semiduplex;;6
+;;Semiduplex;;6.01
 
 [Rule]
 9 lectiones
@@ -14,12 +17,12 @@ Antiphonas horas
 [Ant Vespera]
 @:Ant Laudes
 
-[Ant Vespera](rubrica tridentina)
-@Psalterium/Psalmi/Psalmi major:Daya6 Vespera
-
 [Ant Vespera] (rubrica cisterciensis)
 @Psalterium/Psalmi/Psalmi major:Cistercian Ant Vespera:5
 @Psalterium/Psalmi/Psalmi major:Daya6 Vespera:3-5
+
+[Ant Vespera](rubrica tridentina)
+@Psalterium/Psalmi/Psalmi major:Daya6 Vespera
 
 [Ant 1]
 Ante me * non est formátus Deus, et post me non erit: quia mihi curvábitur omne genu, et confitébitur omnis lingua.

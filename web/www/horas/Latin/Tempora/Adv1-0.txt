@@ -1,5 +1,8 @@
+[Officium]
+Dominica I Adventus
+
 [Rank]
-Dominica I Adventus;;Semiduplex;;6.9
+;;Semiduplex;;6.9
 
 [Rule]
 9 lectiones
@@ -8,12 +11,12 @@ Antiphonas horas
 [Ant Vespera]
 @:Ant Laudes
 
-[Ant Vespera] (rubrica tridentina)
-@Psalterium/Psalmi/Psalmi major:Daya6 Vespera
-
 [Ant Vespera] (rubrica cisterciensis)
 @Psalterium/Psalmi/Psalmi major:Cistercian Ant Vespera:5
 @Psalterium/Psalmi/Psalmi major:Daya6 Vespera:3-5
+
+[Ant Vespera] (rubrica tridentina)
+@Psalterium/Psalmi/Psalmi major:Daya6 Vespera
 
 [Responsory Vespera 1] (rubrica cisterciensis)
 Responsorium. Missus est Gábriel Angelus ad Maríam Vírginem desponsátam Joseph, núntians ei verbum; et expavéscit Virgo de lúmine: ne tímeas, María, invenísti grátiam apud Dóminum: 

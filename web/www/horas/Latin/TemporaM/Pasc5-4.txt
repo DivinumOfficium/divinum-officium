@@ -1,8 +1,5 @@
 @Tempora/Pasc5-4
 
-[Rank]
-In Ascensione Domini;;Duplex I classis;;7
-
 [Rule]
 Psalmi Dominica
 Antiphonas horas
@@ -11,17 +8,6 @@ Doxology=Asc
 
 [Versum 1] (rubrica cisterciensis)
 @Tempora/Pasc5-4:Nocturn 2 Versum
-
-[Versum 2] (rubrica cisterciensis)
-@Tempora/Pasc5-4:Versum 1
-
-[Versum 3] (rubrica cisterciensis)
-@:Versum 1
-
-[AntMatutinumM]
-Elevámini, * elevámini, portæ æternáles: † et introíbit rex glóriæ, allelúja.;;23
-Exaltábor * in géntibus, et exaltábor in terra, allelúja.;;45
-Læténtur * cæli, et exsúltet terra, † quia venit Dóminus, allelúja.;;95
 
 [Ant Matutinum 3N]
 Illi autem profécti * prædicavérunt ubíque, Dómino cooperánte, et sermónem confirmánte sequéntibus signis, † allelúja, allelúja.
@@ -35,6 +21,11 @@ Illi autem profécti * prædicavérunt ubíque, Dómino cooperánte, et sermóne
 @:AntMatutinumM:3
 @Tempora/Pasc5-4::7-9
 ;;243;244;245
+
+[AntMatutinumM]
+Elevámini, * elevámini, portæ æternáles: † et introíbit rex glóriæ, allelúja.;;23
+Exaltábor * in géntibus, et exaltábor in terra, allelúja.;;45
+Læténtur * cæli, et exsúltet terra, † quia venit Dóminus, allelúja.;;95
 
 [Lectio1]
 @Tempora/Pasc5-4:Lectio1:1-5 s/-5/-3/
@@ -130,3 +121,9 @@ R. Parávit sedem suam.
 V. Allelúja, allelúja.
 &Gloria
 V. Dóminus in cælo, * Allelúja, allelúja.
+
+[Versum 2] (rubrica cisterciensis)
+@Tempora/Pasc5-4:Versum 1
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
