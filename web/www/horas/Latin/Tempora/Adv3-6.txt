@@ -1,8 +1,12 @@
-[Rank]
-Sabbato Quattuor Temporum in Adventu;;Feria major;;2.1
+[Officium]
+Sabbato Quattuor Temporum in Adventu
+(sed rubrica 196 aut rubrica 1930)
+Sabbato Quattuor Temporum Adventus
 
-[Rank] (rubrica 196 aut rubrica 1930)
-Sabbato Quattuor Temporum Adventus;;Feria major;;4.9
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 196 aut rubrica 1930)
+;;Feria major;;4.9
 
 [Oratio]
 Deus, qui cónspicis, quia ex nostra pravitáte afflígimur: concéde propítius; ut ex tua visitatióne consolémur:
@@ -46,6 +50,12 @@ R. Et révoca dispérsos in terram suam.
 [Ant Laudes] (rubrica cisterciensis)
 Roráte coeli désuper, * et nubes pluant Justum : aperiátur terra, et gérminet Salvatórem.
 
+[Ant 2]
+Quómodo fiet istud, * Angele Dei, quóniam virum non cognósco? Audi, María Virgo: Spíritus Sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi.
+
+[Ant 2] (rubrica cisterciensis)
+Omnis vallis implébitur, * et omnis mons, et collis humiliábitur, et vidébit omnis caro salutáre Dei.
+
 [Ant Prima] (rubrica cisterciensis)
 Consúrge, consúrge: * indúere fortitúdinem bráchium Dómini.
 
@@ -57,9 +67,3 @@ Exspectétur sicut plúvia * elóquium Dómini: et descéndat, sicut ros, super 
 
 [Ant Nona] (rubrica cisterciensis)
 Dabit ei Dóminus * sedem David patris ejus, et regnábit in ætérnum.
-
-[Ant 2]
-Quómodo fiet istud, * Angele Dei, quóniam virum non cognósco? Audi, María Virgo: Spíritus Sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi.
-
-[Ant 2] (rubrica cisterciensis)
-Omnis vallis implébitur, * et omnis mons, et collis humiliábitur, et vidébit omnis caro salutáre Dei.

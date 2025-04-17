@@ -1,5 +1,5 @@
-[Rank]
-Neděle Nejsvětější Trojice;;Duplex I classis;;6.5
+[Officium]
+Neděle Nejsvětější Trojice
 
 [Rule]
 9 lectiones
@@ -69,9 +69,6 @@ $Per Dominum
 [Invit]
 The True God is Unity in Trinity, and Trinity in Unity. * O come, let us worship.
 
-[HymnusM Matutinum]
-@:Hymnus Matutinum
-
 [Hymnus Matutinum]
 v. Ó nejvýš dobrý Otče všech,
 jenž uvádíš řad světů v běh,
@@ -88,6 +85,9 @@ i Synu jeho v kraji hvězd,
 i Duchu, který těší nás,
 zněj chvalozpěvů věčný hlas.
 Amen.
+
+[HymnusM Matutinum]
+@:Hymnus Matutinum
 
 [Ant Matutinum]
 Be present, O One Almighty God, * Father, Son, and Holy Ghost.;;8
@@ -151,7 +151,7 @@ R. And let all the ends of the earth fear Him.
 [Lectio4]
 Z Knihy víry, adresované Petrovi od Sv. Fulgentia, Biskupa [Ruspy]
 !Nalezeno ve spisech sv. Augustina, svazek. 3
-Víra, kterou svatí Patriarchové a Proroci přijali z božské moci ještě před Vtělením Syna Božího, kterou i svatí Apoštolové uslyšeli od samotného Pána přebývajícího v těle a vedeni Duchem svatým nejen slovem hlásali, ale také ku spasitelnému poučení příštích generací v písemné podobě zanechali, nás učí: je jeden Bůh v Trojici, tedy Bůh Otec, Syn a Duch svatý. Avšak Trojice by nebyla opravdová, pokud by se jedna a tatáž osoba nazývala Otec, Syn a Duch svatý. 
+Víra, kterou svatí Patriarchové a Proroci přijali z božské moci ještě před Vtělením Syna Božího, kterou i svatí Apoštolové uslyšeli od samotného Pána přebývajícího v těle a vedeni Duchem svatým nejen slovem hlásali, ale také ku spasitelnému poučení příštích generací v písemné podobě zanechali, nás učí: je jeden Bůh v Trojici, tedy Bůh Otec, Syn a Duch svatý. Avšak Trojice by nebyla opravdová, pokud by se jedna a tatáž osoba nazývala Otec, Syn a Duch svatý.
 
 [Responsory4]
 R. Who is so great a God as our God?
@@ -186,7 +186,7 @@ Za onoho času řekl Ježíš svým učedníkům: „Je mi dána veškerá moc n
 _
 Kázání sv. Řehože Naziánského, Patriarchy konstantinopolského
 !Pojednání o víře, za začátkem
-Kdo z Katolických Křesťanů by nevěděl, že Otec vpravdě je Otcem, Syn vpravdě je Synem a Duch svatý vpravdě je Duchem svatým? Proto také sám Pán řekl svým Apoštolům: „Jděte a křtěte všechny národy ve jménu Otce, Syna i Ducha svatého.“ Toto je dokonalá Trojice, která spočívá v jednotě, tedy v jediné podstatě, jak vyznáváme. My totiž nerozlišujeme Boha a jeho osoby podle vzhledu jejich těla, ale podle moci božské přirozenosti, která nespočívá ve hmotě, a věříme, že vyjmenované osoby opravdu existují a vyznáváme jednotu božství. 
+Kdo z Katolických Křesťanů by nevěděl, že Otec vpravdě je Otcem, Syn vpravdě je Synem a Duch svatý vpravdě je Duchem svatým? Proto také sám Pán řekl svým Apoštolům: „Jděte a křtěte všechny národy ve jménu Otce, Syna i Ducha svatého.“ Toto je dokonalá Trojice, která spočívá v jednotě, tedy v jediné podstatě, jak vyznáváme. My totiž nerozlišujeme Boha a jeho osoby podle vzhledu jejich těla, ale podle moci božské přirozenosti, která nespočívá ve hmotě, a věříme, že vyjmenované osoby opravdu existují a vyznáváme jednotu božství.
 
 [Responsory7]
 R. Bless we the Father, and the Son, and the Holy Ghost.
@@ -194,11 +194,11 @@ R. Bless we the Father, and the Son, and the Holy Ghost.
 V. Blessed art Thou, O Lord, in the firmament of heaven, and above all to be praised and glorified for ever.
 R. Let us praise and exalt Him above all for ever.
 
-[Lectio8a]
-Neříkáme, jak si někteří mysleli, že Boží Syn je částečným rozšířením z nějaké části jiné osoby, ani nepřijímáme, že by byl pouhým slovem bez účinku, jako zvuk hlasu, nýbrž věříme, že tři jména a tři osoby jsou jediného bytí, jediné Vznešenosti a moci. A proto vyznáváme jediného Boha, neboť jednota Vznešenosti nám zakazuje nazývat jej Bohy v množném čísle. Takže Otce a Syna společně jmenujeme, nazývati jej dvěma Bohy však nemůžeme a nesmíme. Ne, že by snad Syn Boží nebyl Bohem, on je dokonce pravý Bůh z pravého Boha, protože však víme, že Syn Boží pochází pouze ze samotného jediného Otce, mluvíme o jediném Bohu. Toto tedy předávali dále Proroci i Apoštolové, toto sám Pán vyučoval, když říkal: „Já a Otec jedno jsme.“ Slovo jedno, jak jsem již řekl, poukazuje na jednotu božství, slovem jsme poukazuje na více osob. Tak praví i Apoštol: „Jeden je Bůh Otec, z něhož všechno vychází, a my jsme v něm. A jediný Pán je Ježíš Kristus, skrze něhož všechno vychází, a my jsme skrze něho.“ Avšak ne všichni toto znají.
-
 [Lectio8](rubrica 1960)
 @:Lectio8a:s/It is.*//s
+
+[Lectio8a]
+Neříkáme, jak si někteří mysleli, že Boží Syn je částečným rozšířením z nějaké části jiné osoby, ani nepřijímáme, že by byl pouhým slovem bez účinku, jako zvuk hlasu, nýbrž věříme, že tři jména a tři osoby jsou jediného bytí, jediné Vznešenosti a moci. A proto vyznáváme jediného Boha, neboť jednota Vznešenosti nám zakazuje nazývat jej Bohy v množném čísle. Takže Otce a Syna společně jmenujeme, nazývati jej dvěma Bohy však nemůžeme a nesmíme. Ne, že by snad Syn Boží nebyl Bohem, on je dokonce pravý Bůh z pravého Boha, protože však víme, že Syn Boží pochází pouze ze samotného jediného Otce, mluvíme o jediném Bohu. Toto tedy předávali dále Proroci i Apoštolové, toto sám Pán vyučoval, když říkal: „Já a Otec jedno jsme.“ Slovo jedno, jak jsem již řekl, poukazuje na jednotu božství, slovem jsme poukazuje na více osob. Tak praví i Apoštol: „Jeden je Bůh Otec, z něhož všechno vychází, a my jsme v něm. A jediný Pán je Ježíš Kristus, skrze něhož všechno vychází, a my jsme skrze něho.“ Avšak ne všichni toto znají.
 
 [Responsory8]
 R. One Seraph cried unto another:
@@ -216,7 +216,7 @@ At that time: Jesus said unto His disciples Be ye merciful, as your Father also 
 _
 Homily by St. Augustine, Bishop of Hippo
 !15th Sermon on Matthew, Words of the Lord
-There are two works of mercy which free us, and which the Lord Himself hath briefly named in the Gospel "Forgive, and ye shall be forgiven give, and it shall be given unto you." "Forgive, and ye shall be forgiven”, such is the promise of pardon. "Give, and it shall be given unto you”, such is the promise of favour. As touching forgiveness thou hast trespasses which thou wouldest fain have forgiven, and them which have trespassed against thee, whom thou canst forgive. As touching favour, there are beggars that beg from thee, and thou art a beggar to God. When we pray, we are all beggars to God, standing at the door of the Great Householder, yea, falling down on our knees, and beseeching Him to give us somewhat and that somewhat is God Himself. What doth a beggar ask of thee Bread. And what dost thou ask of God but that Christ Who saith: "I am the Living Bread Which came down from heaven?" If ye will be forgiven, forgive ye. If ye will be pardoned, pardon ye. If ye will receive, "give, and it shall be given unto you."
+There are two works of mercy which free us, and which the Lord Himself hath briefly named in the Gospel „Forgive, and ye shall be forgiven give, and it shall be given unto you.“ „Forgive, and ye shall be forgiven”, such is the promise of pardon. „Give, and it shall be given unto you”, such is the promise of favour. As touching forgiveness thou hast trespasses which thou wouldest fain have forgiven, and them which have trespassed against thee, whom thou canst forgive. As touching favour, there are beggars that beg from thee, and thou art a beggar to God. When we pray, we are all beggars to God, standing at the door of the Great Householder, yea, falling down on our knees, and beseeching Him to give us somewhat and that somewhat is God Himself. What doth a beggar ask of thee Bread. And what dost thou ask of God but that Christ Who saith: „I am the Living Bread Which came down from heaven?“ If ye will be forgiven, forgive ye. If ye will be pardoned, pardon ye. If ye will receive, „give, and it shall be given unto you.“
 &teDeum
 
 [Lectio9](rubrica 1960)

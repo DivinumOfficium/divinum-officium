@@ -1,8 +1,12 @@
-[Rank]
-Feria VI Quattuor Temporum in Adventu;;Feria major;;2.1
+[Officium]
+Feria VI Quattuor Temporum in Adventu
+(sed rubrica 196 aut rubrica 1930)
+Feria VI Quattuor Temporum Adventus
 
-[Rank] (rubrica 196 aut rubrica 1930)
-Feria VI Quattuor Temporum Adventus;;Feria major;;4.9
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 196 aut rubrica 1930)
+;;Feria major;;4.9
 
 [Rule]
 Preces Feriales
@@ -49,6 +53,9 @@ R. Et splendor ejus cum eo.
 [Ant Laudes] (rubrica cisterciensis)
 Constántes estóte, * vidébitis auxílium Dómini super vos.
 
+[Ant 2]
+Ex quo facta est * vox salutatiónis tuæ in áuribus meis, exsultávit in gáudio infans in útero meo, allelúja.
+
 [Ant Prima] (rubrica cisterciensis)
 Ponent Dómino * glóriam, et laudem ejus in ínsulis nuntiábunt, quia ecce véniet, et non tardábit.
 
@@ -60,9 +67,6 @@ Deus a Líbano véniet, * et splendor ejus sicut lumen erit.
 
 [Ant Nona] (rubrica cisterciensis)
 Ego autem * ad Dóminum aspíciam, et exspectábo Deum, Salvatórem meum.
-
-[Ant 2]
-Ex quo facta est * vox salutatiónis tuæ in áuribus meis, exsultávit in gáudio infans in útero meo, allelúja.
 
 [Ant 3]
 Hoc est testimónium, * quod perhíbuit Joánnes: Qui post me venit, ante me factus est.

@@ -1,8 +1,11 @@
+[Officium]
+Sabbato in Vigilia Pentecostes
+
 [Rank]
-Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;6.9;;ex Tempora/Pasc5-4
+;;I classis Semiduplex;;6.9;;ex Tempora/Pasc5-4
 
 [Rank] (rubrica 1960)
-Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;6;;vide Tempora/Pasc5-4
+;;I classis Semiduplex;;6;;vide Tempora/Pasc5-4
 
 [Rank] (rubrica Newcal)
 Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;6;;vide Tempora/Pasc5-4
@@ -24,6 +27,11 @@ Doxology=Asc
 [Oratio]
 @Tempora/Pasc6-0
 
+[Lectio1]
+@:LectioJudae1
+(sed rubrica 1960)
+@:Lectio7
+
 [LectioJudae1]
 Incipit Epístola cathólica beáti Judæ Apóstoli
 !Judas 1:1-4
@@ -32,13 +40,13 @@ Incipit Epístola cathólica beáti Judæ Apóstoli
 3 Caríssimi, omnem sollicitúdinem fáciens scribéndi vobis de commúni vestra salúte, necésse hábui scríbere vobis: déprecans supercertári semel tráditæ sanctis fídei.
 4 Subintroiérunt enim quidam hómines (qui olim præscrípti sunt in hoc judícium) ímpii, Dei nostri grátiam transferéntes in luxúriam, et solum Dominatórem, et Dóminum nostrum Jesum Christum negántes.
 
-[Lectio1]
-@:LectioJudae1
-(sed rubrica 1960)
-@:Lectio7
-
 [Responsory1] (rubrica 1960)
 @Tempora/Pasc5-4:Responsory7
+
+[Lectio2]
+@:LectioJudae2
+(sed rubrica 1960)
+@:Lectio8
 
 [LectioJudae2]
 !Judas 1:5-8
@@ -47,13 +55,13 @@ Incipit Epístola cathólica beáti Judæ Apóstoli
 7 Sicut Sódoma, et Gomórrha, et finítimæ civitátes símili modo exfornicátæ, et abeúntes post carnem álteram, factæ sunt exémplum, ignis ætérni pœnam sustinéntes.
 8 Simíliter et hi carnem quidem máculant, dominatiónem autem spernunt, majestátem autem blasphémant.
 
-[Lectio2]
-@:LectioJudae2
-(sed rubrica 1960)
-@:Lectio8
-
 [Responsory2] (rubrica 1960)
 @Tempora/Pasc6-0:Responsory8
+
+[Lectio3]
+@:LectioJudae3
+(sed rubrica 1960)
+@:Lectio9
 
 [LectioJudae3]
 !Judas 1:9-13
@@ -62,11 +70,6 @@ Incipit Epístola cathólica beáti Judæ Apóstoli
 11 Væ illis, quia in via Cain abiérunt, et erróre Bálaam mercéde effúsi sunt, et in contradictióne Core periérunt!
 12 Hi sunt in épulis suis máculæ, convivántes sine timóre, semetípsos pascéntes, nubes sine aqua, quæ a ventis circumferéntur, árbores autumnáles, infructuósæ, bis mórtuæ, eradicátæ,
 13 fluctus feri maris, despumántes suas confusiónes, sídera errántia: quibus procélla tenebrárum serváta est in ætérnum.
-
-[Lectio3]
-@:LectioJudae3
-(sed rubrica 1960)
-@:Lectio9
 
 [Responsory3]
 @Tempora/Pasc5-4:Responsory3
@@ -79,15 +82,15 @@ Dum per sacratíssimum crucis signum vos suscépit in útero sancta mater Ecclé
 [Lectio5_]
 Accepístis et sýmbolum, protectiónem parturiéntis contra venéna serpéntis. In Apocalýpsi Joánnis Apóstoli scriptum est hoc, quod staret draco in conspéctu mulíeris, quæ paritúra erat, ut cum peperísset, natum ejus coméderet. Dracónem diábolum esse, nullus vestrum ignórat: mulíerem illam Vírginem Maríam significásse, quæ caput nostrum íntegra íntegrum péperit; quæ étiam ipsa figúram in se sanctæ Ecclésiæ demonstrávit: ut quómodo Fílium páriens, Virgo permánsit, ita et hæc omni témpore membra ejus páriat, et virginitátem non amíttat. Ipsas senténtias sacratíssimi sýmboli adjuvánte Dómino exponéndas suscépimus, ut, quid síngulæ contíneant, vestris sénsibus intimémus. Paráta sunt corda vestra, quia exclúsus est inimícus de córdibus vestris. 
 
-[Lectio5et6]
-Mundáta est domus, non remáneat inánis, ne cum vácuam desértor invénerit addúcat secum álios septem nequióres se, et efficiántur hóminis illíus posterióra, ut evangélium loquit, peióra prióribus.
-Mox cum exclúsus fúerit péssimus invásor, introducátur óptimus posséssor. Quis est invásor? Diábolus. Quid invásit? Hóminem, quem non fecit, ínsuper decépit. Promísit ei immortalitátem, et propinávit iniquitátem. 
-
 [Lectio5]
 @:Lectio5_
 (sed rubrica 1570)
 @:Lectio5_:s/$/~/s
 (rubrica 1570) @:Lectio5et6:1
+
+[Lectio5et6]
+Mundáta est domus, non remáneat inánis, ne cum vácuam desértor invénerit addúcat secum álios septem nequióres se, et efficiántur hóminis illíus posterióra, ut evangélium loquit, peióra prióribus.
+Mox cum exclúsus fúerit péssimus invásor, introducátur óptimus posséssor. Quis est invásor? Diábolus. Quid invásit? Hóminem, quem non fecit, ínsuper decépit. Promísit ei immortalitátem, et propinávit iniquitátem. 
 
 [Lectio6_]
 Huic vos renuntiáre proféssi estis: in qua professióne, non homínibus, sed Deo et Angelis ejus conscribéntibus dixístis, Renúntio. Renuntiáte non solum vócibus, sed étiam móribus: non tantum sono linguæ, sed et actu vitæ: nec tantum lábiis sonántibus, sed opéribus pronuntiántibus. Scitóte vos cum cállido, antíquo, et veternóso inimíco suscepísse certámen: non in vobis post renuntiatiónem invéniat ópera sua, non jure vos áttrahat in servitútem suam. Deprehénderis enim, et detégeris Christiáne, quando áliud agis, et áliud profitéris: fidélis in nómine, áliud demónstrans in ópere, non tenens promissiónis tuæ fidem: modo ingrédiens ecclésiam oratiónes fúndere, post módicum in spectáculis cum histriónibus impudíce clamáre. Quid tibi cum pompis diáboli, quibus renuntiásti?

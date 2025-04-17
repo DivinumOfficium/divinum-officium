@@ -1,5 +1,8 @@
+[Officium]
+Dominica Pentecostes
+
 [Rank]
-Dominica Pentecostes;;Duplex I Classis cum Octava privilegiata I ordinis;;7
+;;Duplex I Classis cum Octava privilegiata I ordinis;;7
 
 [Rule]
 1 Nocturn
@@ -183,15 +186,6 @@ Emítte Spíritum tuum, * et creabúntur: et renovábis fáciem terræ, allelúj
 V. Spíritus Dómini replévit orbem terrárum, allelúja.
 R. Et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja.
 
-[Nocturn 1 Versum] (rubrica cisterciensis)
-@Tempora/Pasc7-0:Ant Matutinum:4-5
-
-[Nocturn 2 Versum] (rubrica cisterciensis)
-@Tempora/Pasc7-0:Responsory Sexta:8-9
-
-[Nocturn 3 Versum] (rubrica cisterciensis)
-@Tempora/Pasc7-0:Responsory Tertia:8-9
-
 [Lectio1]
 Léctio sancti Evangélii secúndum Joánnem
 !Joannes 14:23-31
@@ -343,3 +337,12 @@ R. Magnália Dei, allelúja.
 
 [Ant 3]
 Hódie * compléti sunt dies Pentecóstes, allelúja: hódie Spíritus Sanctus in igne discípulis appáruit, et tríbuit eis charísmatum dona: misit eos in univérsum mundum prædicáre, et testificári: Qui credíderit et baptizátus fúerit, salvus erit, allelúja.
+
+[Nocturn 1 Versum] (rubrica cisterciensis)
+@Tempora/Pasc7-0:Ant Matutinum:4-5
+
+[Nocturn 2 Versum] (rubrica cisterciensis)
+@Tempora/Pasc7-0:Responsory Sexta:8-9
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+@Tempora/Pasc7-0:Responsory Tertia:8-9

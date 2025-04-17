@@ -1,11 +1,12 @@
+[Officium]
+Sabbato post Cineres
+
 [Rank]
-Sabbato post Cineres;;Feria major;;2.1
-
-[Rank] (rubrica 1930)
-Sabbato post Cineres;;Feria major;;4.9
-
-[Rank] (rubrica 196)
-Sabbato post Cineres;;Feria major;;3.9
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Rule]
 Preces Feriales

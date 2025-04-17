@@ -1,11 +1,12 @@
+[Officium]
+Feria Quinta infra Hebdomadam III in Quadragesima
+
 [Rank]
-Feria Quinta infra Hebdomadam III in Quadragesima;;Feria major;;2.1
-
-[Rank] (rubrica 1930)
-Feria Quinta infra Hebdomadam III in Quadragesima;;Feria major;;4.9
-
-[Rank] (rubrica 196)
-Feria Quinta infra Hebdomadam III in Quadragesima;;Feria major;;3.9
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Lectio1]
 @Tempora/Pasc7-6:Lectio1

@@ -1,7 +1,10 @@
+[Officium]
+Sanctissimi Nominis Jesu
+
 [Rank]
-Sanctissimi Nominis Jesu;;Duplex 2 class;;5;;
+;;Duplex 2 class;;5;;
 (sed rubrica cisterciensis)
-Sanctissimi Nominis Jesu;;Duplex majus;;4;;
+;;Duplex majus;;4;;
 
 [Rule]
 9 lectiones
@@ -96,29 +99,6 @@ Omnes gentes, * quascúmque fecísti, vénient, et adorábunt coram te, Dómine,
 Cantáte Dómino * et benedícite nómini ejus: annuntiáte de die in diem salutáre ejus.;;95
 Secúndum nomen tuum, * Deus, sic et laus tua in fines terræ: justítia plena est déxtera tua.;;96
 Cantáte Deo, * psalmum dícite nómini ejus: iter fácite ei, qui ascéndit super occásum, Dóminus nomen illi.;;97
-
-[Nocturn 1 Versum]
-V. Propter nomen tuum, Dómine, propitiáberis peccáto meo.
-R. Multum est enim.
-
-[Nocturn 1 Versum] (rubrica cisterciensis)
-@:Versum Tertia: s/[\,\.] al.*/./ig
-
-[Nocturn 2 Versum]
-V. Propter glóriam nóminis tui, Dómine, líbera nos.
-R. Et propítius esto peccátis nostris propter nomen tuum.
-
-[Nocturn 2 Versum] (rubrica cisterciensis)
-V. Bonum est confitéri Dómino.
-R. Et psállere nómini tuo, Altíssime.
-
-[Nocturn 3 Versum]
-@:Versum Tertia: s/[\,\.] al.*/./ig
-
-[Nocturn 3 Versum] (rubrica cisterciensis)
-V. Confitémini Dómino, et invocáte Nomen ejus.
-R. Annuntiáte inter Gentes ópera ejus.
-
 
 [Lectio1]
 De Actibus Apostolórum
@@ -358,4 +338,26 @@ Vocábis * nomen ejus Jesum; ipse enim salvum fáciet pópulum suum a peccátis 
 
 [Ant 3] (rubrica cisterciensis)
 Magníficet * omnis ánima Nomen tuum, Dómine, et cunctórum in eo spíritus exúltet, quóniam sanctum est, et potens depónere poténtes de sede, et exaltáre húmiles, allelúia.
+
+[Nocturn 1 Versum]
+V. Propter nomen tuum, Dómine, propitiáberis peccáto meo.
+R. Multum est enim.
+
+[Nocturn 1 Versum] (rubrica cisterciensis)
+@:Versum Tertia: s/[\,\.] al.*/./ig
+
+[Nocturn 2 Versum]
+V. Propter glóriam nóminis tui, Dómine, líbera nos.
+R. Et propítius esto peccátis nostris propter nomen tuum.
+
+[Nocturn 2 Versum] (rubrica cisterciensis)
+V. Bonum est confitéri Dómino.
+R. Et psállere nómini tuo, Altíssime.
+
+[Nocturn 3 Versum]
+@:Versum Tertia: s/[\,\.] al.*/./ig
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+V. Confitémini Dómino, et invocáte Nomen ejus.
+R. Annuntiáte inter Gentes ópera ejus.
 

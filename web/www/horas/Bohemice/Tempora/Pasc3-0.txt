@@ -1,10 +1,13 @@
-[Rank]
-Dominica III post Pascha;;Semiduplex;;5;;
+[Officium]
+Dominica III post Pascha
 
 [Rule]
 9 Lectiones
 Duplex
 Una Antiphona
+
+[Ant 1 Cist]
+Mám ještě jiné ovce, * které nejsou z tohoto ovčince; a je třeba, abych je přivedl, aby slyšely můj hlas, a byl už jen jeden ovčinec a jeden pastýř, alleluja.
 
 [Ant 1]
 Už jen krátký čas, * a neuvidíte mě, praví Pán; a opět krátký čas, a uvidíte mě, neboť odcházím k Otci, alleluja, alleluja.
@@ -13,6 +16,10 @@ Už jen krátký čas, * a neuvidíte mě, praví Pán; a opět krátký čas, a
 Bože, jenž bloudícím ukazuješ světlo své pravdy, aby se mohli vrátit na cestu spravedlnosti; dej všem, kteří se považují za Kristovy následovníky, aby zavrhli to, co je tomuto jménu nepřátelské, a následovali to, co je vhodné.
 $Per Dominum
 
+[Commemoratio]
+!Commemoratio for the Octave of St. Joseph
+@Tempora/Pasc2-3:Oratio
+
 [Lectio1]
 Lesson from the book of Revelation
 !Rev 1:1-6
@@ -20,8 +27,7 @@ Lesson from the book of Revelation
 3 Blessed is he, that readeth and heareth the words of this prophecy; and keepeth those things which are written in it; for the time is at hand.
 4 John to the seven churches which are in Asia. Grace be unto you and peace from him that is, and that was, and that is to come, and from the seven spirits which are before his throne,
 5 And from Jesus Christ, who is the faithful witness, the first begotten of the dead, and the prince of the kings of the earth, who hath loved us, and washed us from our sins in his own blood,
-6 And hath made us a kingdom, and priests to God and his Father, to him be glory~
-and empire for ever and ever. Amen.
+6 And hath made us a kingdom, and priests to God and his Father, to him be glory and empire for ever and ever. Amen.
 
 [Responsory1]
 R. Thou art worthy, O Lord, to take the book, and to open the seals thereof; alleluia: because thou wast slain, and hast redeemed us to God,
@@ -144,10 +150,3 @@ $Deo gratias
 
 [Ant 3]
 Amen pravím vám, * že vy budete plakat a naříkat, zatímco svět se bude radovat, vy sice budete smutní, ale váš smutek se obrátí v jásot, alleluja.
-
-[Commemoratio]
-!Commemoratio for the Octave of St. Joseph
-@Tempora/Pasc2-3:Oratio
-
-[Ant 1 Cist]
-Mám ještě jiné ovce, * které nejsou z tohoto ovčince; a je třeba, abych je přivedl, aby slyšely můj hlas, a byl už jen jeden ovčinec a jeden pastýř, alleluja.

@@ -1,7 +1,5 @@
-[Rank]
-Svaté Rodiny Ježíš, Marie a Josefa;;Duplex majus;;3.9
-(sed rubrica 1960)
-Svaté Rodiny Ježíš, Marie a Josefa;;Duplex II classis;;5
+[Officium]
+Svaté Rodiny Ježíš, Marie a Josefa
 
 [Ant Vespera]
 Jakub pak * zrodil Josefa, muže Marie; z níž se narodil Ježíš, jenž byl nazýván Kristus.;;109
@@ -75,6 +73,14 @@ $Qui vivis
 !Commemoratio Sunday in Octava Epiphaniae
 @Tempora/Epi1-0a:Oratio:s/V\. .*/V. All they from Saba shall come. Alleluia./ s/R\. .*/R. They shall bring gold and incense. Alleluia./
 
+[Commemoratio] (rubrica cisterciensis)
+!Připomínka neděle v Oktávu Zjevení Páně
+@Tempora/Epi1-0a:Oratio
+_
+!Připomínka Oktávu Zjevení Páně
+@Sancti/01-06:Oratio
+(sed die Epiphaniæ omittitur)
+
 [Invit]
 Christ, Son of God, subject to Mary and Joseph, * O come, let us worship Him.
 
@@ -104,10 +110,10 @@ prožívá mládí, ukryt zrakům světa,
 v tesařské práci po bok se mu staví
 jako druh pravý.
 _
-„Ať zvlhnou potem" řekl, „moje údy,
+„Ať zvlhnou potem“ řekl, „moje údy,
 nežli mé tělo zaleje proud rudý,
 i tuto obět národům všem k štěstí
-rád chci přinésti."
+rád chci přinésti.“
 _
 Blažená Matka dlí u Syna svého,
 dlí u snoubence předobrá choť jeho,
@@ -322,9 +328,6 @@ R. A tví synové budou mít mnoho pokoje.
 [Versum 2] (rubrica cisterciensis)
 @:Versum 1
 
-[Versum 3] (rubrica cisterciensis)
-@:Versum 1
-
 [Ant 2]
 Osvěť nás, Pane, * příklady své rodiny, a směřuj naše kroky po cestě pokoje.
 
@@ -387,13 +390,8 @@ A Ježíš prospíval * moudrostí i věkem, a milostí u Boha i u lidí.;;121
 Podivovali se všichni * nad slovy milosti, jež vycházela z jeho úst, a pravili: Není to snad syn Josefův?;;126
 A pravili: * odkud pochází tato moudrost a moc? Není to snad syn tesařův?;;147
 
-[Commemoratio] (rubrica cisterciensis)
-!Připomínka neděle v Oktávu Zjevení Páně
-@Tempora/Epi1-0a:Oratio
-_
-!Připomínka Oktávu Zjevení Páně
-@Sancti/01-06:Oratio
-(sed die Epiphaniæ omittitur)
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
 
 [Ant 3]
 Maria však * zachovávala všechny tato slova, a rozjímala nad nimi ve svém srdci.

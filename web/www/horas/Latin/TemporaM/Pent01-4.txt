@@ -9,11 +9,6 @@ Doxology=Nat
 [Ant Vespera] (nisi rubrica cisterciensis)
 @Tempora/Pent01-4::1-4
 
-[AntMatutinumM]
-Benignitátem * fecit Dóminus, † et terra nostra dedit fructum suum.;;84
-Memor * Christus Dóminus sciéntium eum, † fruménto et vino stabilívit eos.;;86
-Dóminus * in Sion magnus: † Móyses et Aaron in sacerdótibus ejus.;;98
-
 [Ant Matutinum 3N]
 Caro mea * vere est cibus, et sanguis meus vere est potus. † Qui mandúcat carnem meam, et bibit sánguinem meum, habet vitam ætérnam, † dicit Dóminus.
 
@@ -26,6 +21,11 @@ Caro mea * vere est cibus, et sanguis meus vere est potus. † Qui mandúcat car
 @Tempora/Pent01-4::9-10
 ;;272;214;273
 @Tempora/Pent01-4::14-15
+
+[AntMatutinumM]
+Benignitátem * fecit Dóminus, † et terra nostra dedit fructum suum.;;84
+Memor * Christus Dóminus sciéntium eum, † fruménto et vino stabilívit eos.;;86
+Dóminus * in Sion magnus: † Móyses et Aaron in sacerdótibus ejus.;;98
 
 [Lectio1]
 @Tempora/Pent01-4
@@ -107,22 +107,22 @@ R. Instítuit sui córporis et sánguinis Sacraméntum.
 [Responsory TertiaM]
 @:Versum 1
 
-[Responsory SextaM]
-@Tempora/Pent01-4:Responsory Tertia:8-9
-
-[Responsory NonaM]
-@Tempora/Pent01-4:Responsory Sexta:8-9
-
-[Ant Vespera 3]
-@Tempora/Pent01-4:Ant Vespera:s/127/147/
-
 [Responsory TertiaM] (rubrica cisterciensis)
 V. Miséricors et miserátor Dóminus.
 R. Escam dédit timéntibus se.
+
+[Responsory SextaM]
+@Tempora/Pent01-4:Responsory Tertia:8-9
 
 [Responsory SextaM] (rubrica cisterciensis)
 V. Omnia a te expéctant, Dómine.
 R. Ut des illis escam in témpore.
 
+[Responsory NonaM]
+@Tempora/Pent01-4:Responsory Sexta:8-9
+
 [Responsory NonaM] (rubrica cisterciensis)
 @Tempora/Pent01-4:Responsory Sexta:8-9:s/[,.] Allel[uú][ij]a//ig
+
+[Ant Vespera 3]
+@Tempora/Pent01-4:Ant Vespera:s/127/147/

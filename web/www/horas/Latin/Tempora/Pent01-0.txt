@@ -1,8 +1,11 @@
+[Officium]
+Dominica Sanctissimæ Trinitatis
+
 [Rank]
-Dominica Sanctissimæ Trinitatis;;Duplex I classis;;6.5
+;;Duplex I classis;;6.5
 
 [Rank] (rubrica tridentina)
-Festum Sanctissimæ Trinitatis;;Duplex II classis;;5.9
+;;Duplex II classis;;5.9
 
 [Rule]
 9 lectiones
@@ -26,6 +29,9 @@ Ex quo ómnia, * per quem ómnia, in quo ómnia: ipsi glória in sǽcula.;;116
 Responsorium. Honor, * virtus, et potéstas, et impérium sit Trinitáti in Unitáte, Unitáti in Trinitáte. * In perénni sæculórum témpore.
 V. Trinitáti lux perénnis, Unitáti sit decus pérpetim.
 R. In perénni sæculórum témpore.
+
+[Responsory Vespera] (rubrica cisterciensis)
+@:Responsory Sexta:1-6
 
 [Hymnus Vespera]
 {:H-VespFeria:}v. Jam sol recédit ígneus:
@@ -371,9 +377,6 @@ _
 V. Sit nomen Dómini benedíctum.
 R. Ex hoc nunc, et usque in sǽculum.
 
-[Responsory Vespera] (rubrica cisterciensis)
-@:Responsory Sexta:1-6
-
 [Versum 3]
 V. Benedíctus es, Dómine, in firmaménto cæli.
 R. Et laudábilis et gloriósus in sǽcula.
@@ -394,3 +397,6 @@ _
 $Oremus
 Deus, in te sperántium fortitúdo, adésto propítius invocatiónibus nostris: et, quia sine te nihil potest mortális infírmitas, præsta auxílium grátiæ tuæ; ut, in exsequéndis mandátis tuis, et voluntáte tibi et actióne placeámus.
 $Per Dominum
+
+[Officium] (rubrica tridentina)
+Festum Sanctissimæ Trinitatis

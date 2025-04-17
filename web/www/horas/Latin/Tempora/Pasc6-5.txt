@@ -1,14 +1,18 @@
 @Tempora/Pasc6-0
 (sed rubrica 1960 aut rubrica cisterciensis omittitur)
 
+[Officium]
+Feria VI post Octavam Ascensionis
+
+[Officium] (rubrica 196 aut rubrica 1955)
+Feria VI infra Hebdomadam post Ascensionem
+
 [Rank]
-Feria VI post Octavam Ascensionis;;Semiduplex;;2.1;;ex Tempora/Pasc5-4
-
-[Rank] (rubrica 196 aut rubrica 1955)
-Feria VI infra Hebdomadam post Ascensionem;;Feria;;1;;vide Tempora/Pasc5-4
-
-[Rank] (rubrica tridentina)
-Feria VI post Octavam Ascensionis;;Semiduplex;;2;;ex Tempora/Pasc5-4
+;;Semiduplex;;2.1;;ex Tempora/Pasc5-4
+(sed rubrica tridentina nisi rubrica cisterciensis)
+;;Semiduplex;;2;;ex Tempora/Pasc5-4
+(sed rubrica 196 aut rubrica 1955)
+;;Feria;;1;;vide Tempora/Pasc5-4
 
 [Rule]
 ex Tempora/Pasc5-4;
@@ -55,12 +59,6 @@ Salvátor noster, caríssimi, si non in nostra carne diábolum triumphávit, se 
 @:Lectio4_:s/$/~/s
 (rubrica 1570) @:InIllo
 
-[InIllo]
-In illo ítaque nostri géneris córpore nos Christi mors vivificávit, nos resurréctio eréxit, nos ascénsio consecrávit. In illo nostræ oríginis córpore cæléstibus regnis arrham nostræ conditiónis impósuit.
-
-[DeVitiis]
-De vítiis nostris scalam nobis fácimus, si vítia ipsa calcámus. Nam cum bonitátis auctóre non ascéndit malítia, nec cum Fílio Vírginis libído atque luxúria.
-
 [Lectio5_]
 @:InIllo
 (rubrica 1570 hæc versus omittitur)
@@ -103,3 +101,9 @@ Ille ergo testimónium perhibébit de me, et vos testimónium perhibébitis: dab
 
 [Commemoratio 3]
  
+
+[DeVitiis]
+De vítiis nostris scalam nobis fácimus, si vítia ipsa calcámus. Nam cum bonitátis auctóre non ascéndit malítia, nec cum Fílio Vírginis libído atque luxúria.
+
+[InIllo]
+In illo ítaque nostri géneris córpore nos Christi mors vivificávit, nos resurréctio eréxit, nos ascénsio consecrávit. In illo nostræ oríginis córpore cæléstibus regnis arrham nostræ conditiónis impósuit.

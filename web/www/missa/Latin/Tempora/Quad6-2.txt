@@ -1,8 +1,14 @@
-[Rank]
-Feria Tertia Majoris Hebdomadæ;;Feria privilegiata;;6.9
+[Officium]
+Feria Tertia Majoris Hebdomadæ
 
-[Rank](rubrica 1955 aut rubrica 196)
-Feria Tertia Hebdomadæ Sanctæ;;Feria privilegiata;;6.9
+[Officium] (rubrica 1955 aut rubrica 196)
+Feria Tertia Hebdomadæ Sanctæ
+
+[Rank]
+;;Feria privilegiata;;6.9
+
+[Rank] (rubrica 1955 aut rubrica 196)
+;;Feria privilegiata;;7
 
 [Rule]
 no Gloria
@@ -32,7 +38,7 @@ In diébus illis: Dixit Jeremías: Dómine, demonstrásti mihi, et cognóvi: tun
 Ego autem, dum mihi molésti essent, induébam me cilício, et humiliábam in jejúnio ánimam meam: et orátio mea in sinu meo convertétur.
 V. Júdica, Dómine, nocéntes me, expúgna impugnántes me: apprehénde arma et scutum, et exsúrge in adjutórium mihi.
 
-[Evangelium] 
+[Evangelium]
 (rubrica 1955 aut rubrica 1960 dicitur)
 @Tempora/Quad6-0r:Munda Cor Passionis
 _

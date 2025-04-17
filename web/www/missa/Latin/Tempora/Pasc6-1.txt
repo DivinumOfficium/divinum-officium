@@ -1,7 +1,17 @@
 @Tempora/Pasc5-4
 
+[Officium]
+Feria II infra Octavam Ascensionis
+
+[Officium] (rubrica 196 aut rubrica 1955)
+Feria II post Ascensionem
+
 [Rank]
-Feria II infra Octavam Ascensionis;;Semiduplex;;2.1;;ex Tempora/Pasc5-4
+;;Semiduplex;;2.1;;ex Tempora/Pasc5-4
+(sed rubrica tridentina nisi rubrica cisterciensis)
+;;Semiduplex;;2;;ex Tempora/Pasc5-4
+(sed rubrica 196 aut rubrica 1955)
+;;Feria;;1;;vide Tempora/Pasc5-4
 
 [Rule]
 Evangelium non appropriatum

@@ -1,22 +1,15 @@
 @Tempora/Nat29
 
+[Officium] (rubrica 1963)
+Die V infra Octavam Nativitatis
+
 [Rank] (rubrica 1963)
-Die V infra Octavam Nativitatis;;Duplex II classis;;5;;ex Sancti/12-25
+;;Semiduplex II classis;;5;;ex Sancti/12-25
 
 [Rule]
 3 lectiones
 Psalmi Dominica
 Antiphonas horas
-
-[Commemoratio 2] (rubrica tridentina nisi rubrica altovadensis)
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-@Sancti/12-28:Octava
-
-[Commemoratio 3] (rubrica tridentina nisi rubrica altovadensis)
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-@Sancti/12-28:Octava
 
 [Ant Matutinum]
 @TemporaM/Nat1-0tt
@@ -46,3 +39,13 @@ Vidéntes autem cognovérunt de verbo, quod dictum erat illis de Púero hoc. Et 
 [MM Capitulum]
 @Psalterium/Special/Matutinum Special:MM Capitulum Nat:1-4
 @Sancti/12-25:Versum 2
+
+[Commemoratio 2] (rubrica tridentina nisi rubrica altovadensis)
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava
+
+[Commemoratio 3] (rubrica tridentina nisi rubrica altovadensis)
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava

@@ -1,8 +1,14 @@
+[Officium]
+Die V infra Octavam Nativitatis
+
+[Officium] (rubrica 196)
+Die quinta post Nativitatem
+
 [Rank]
-Die V infra Octavam Nativitatis;;Semiduplex;;2.1;;ex Sancti/12-25
+;;Semiduplex;;2.1;;ex Sancti/12-25
 
 [Rank] (rubrica 196)
-Die quinta post Nativitatem;;Duplex II classis;;5;;ex Sancti/12-25
+;;Duplex II classis;;5;;ex Sancti/12-25
 
 [Rule]
 ex Sancti/12-25;
@@ -19,19 +25,6 @@ ex Sancti/12-25;
 
 [Ant 1] (rubrica cisterciensis)
 @Tempora/Nat26
-
-[Ant 2] (rubrica cisterciensis)
-@Tempora/Nat26
-
-[Commemoratio 2] (rubrica tridentina nisi rubrica altovadensis)
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-@Sancti/12-28:Octava
-
-[Commemoratio 3] (rubrica tridentina nisi rubrica altovadensis)
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-@Sancti/12-28:Octava
 
 [Lectio1]
 Incipit Epístola beáti Pauli Apóstoli ad Romános
@@ -70,3 +63,16 @@ Incipit Epístola beáti Pauli Apóstoli ad Romános
 
 [Responsory3]
 @Sancti/12-25:Responsory4
+
+[Ant 2] (rubrica cisterciensis)
+@Tempora/Nat26
+
+[Commemoratio 2] (rubrica tridentina nisi rubrica altovadensis)
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava
+
+[Commemoratio 3] (rubrica tridentina nisi rubrica altovadensis)
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava

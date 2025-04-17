@@ -1,5 +1,15 @@
+[Officium]
+Feria Tertia infra Octavam Corporis Christi
+
+[Officium] (rubrica 196 aut rubrica 1955)
+Feria III infra Hebdomadam II post Octavam Pentecostes
+
 [Rank]
-Feria Tertia infra Octavam Corporis Christi;;Semiduplex II class;;5;;ex Tempora/Pent01-4
+;;Semiduplex II class;;5.6;;ex Tempora/Pent01-4
+(sed rubrica tridentina nisi rubrica cisterciensis)
+;;Semiduplex IIS class;;2.9;;ex Tempora/Pent01-4
+(sed rubrica 196 aut rubrica 1955)
+;;Feria;;1
 
 [Rule]
 ex Tempora/Pent01-4;

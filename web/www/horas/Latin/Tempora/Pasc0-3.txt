@@ -1,8 +1,11 @@
+[Officium]
+Die IV infra octavam Paschæ
+
 [Rank]
-Die IV infra octavam Paschæ;;Semiduplex I classis;;6.9;;ex Pasc0-0
+;;Semiduplex I classis;;6.9;;ex Pasc0-0
 
 [Rank] (rubrica cisterciensis)
-Die IV infra octavam Paschæ;;Semiduplex I classis;;5.9;;ex Pasc0-0
+;;Semiduplex I classis;;5.9;;ex Pasc0-0
 
 [Rule]
 ex Pasc0-0;
@@ -57,10 +60,10 @@ Míttite in déxteram * navígii rete, et inveniétis, allelúja.
 [Ant 3_]
 Dixit Jesus * discípulis suis: Afférte de píscibus, quos prendidístis nunc. Ascéndit autem Simon Petrus, et traxit rete in terram plenum magnis píscibus, allelúja.
 
-[Ant 3C]
-Hoc jam tértio * manifestávit se Jesus, postquam resurréxit a mórtuis, allelúja.
-
 [Ant 3]
 @:Ant 3_
 (sed rubrica cisterciensis)
 @:Ant 3C
+
+[Ant 3C]
+Hoc jam tértio * manifestávit se Jesus, postquam resurréxit a mórtuis, allelúja.

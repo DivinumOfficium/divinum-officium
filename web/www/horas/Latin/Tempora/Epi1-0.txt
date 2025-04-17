@@ -1,7 +1,10 @@
+[Officium]
+Sanctæ Familiæ Jesu Mariæ Joseph
+
 [Rank]
-Sanctæ Familiæ Jesu Mariæ Joseph;;Duplex majus;;5.61
+;;Duplex majus;;5.61
 (sed rubrica 1960)
-Sanctæ Familiæ Jesu Mariæ Joseph;;Duplex II classis;;5
+;;Duplex II classis;;5
 
 [Rule]
 9 lectiones
@@ -82,6 +85,14 @@ $Qui vivis
 [Commemoratio]
 !Commemoratio Dominicæ in Octava Epiphaniæ
 @Tempora/Epi1-0a:Oratio:s/V\. .*/V. Omnes de Saba vénient, allelúja./ s/R\. .*/R. Aurum et thus deferéntes, allelúja./
+
+[Commemoratio] (rubrica cisterciensis)
+!Commemoratio Dominicæ in Octava Epiphaniæ
+@Tempora/Epi1-0a:Oratio
+_
+!Commemoratio Octavæ Epiphaniæ 
+@Sancti/01-06:Oratio
+(sed die Epiphaniæ omittitur)
 
 [Invit]
 Christum Dei Fílium, Maríæ et Joseph súbditum, * Veníte, adorémus.
@@ -283,6 +294,9 @@ Descéndit Jesus * cum eis, et venit Názareth, et erat súbditus illis.
 Et Jesus proficiébat * sapiéntia, et ætáte, et grátia apud Deum et hómines.
 Et dicébant: * Unde huic sapiéntia hæc, et virtútes? Nonne hic est fabri fílius?
 
+[Ant Laudes] (rubrica cisterciensis)
+@:Ant Vespera 3:s/;;.*//g
+
 [Capitulum Laudes]
 !Luc 2:51
 v. Descéndit Jesus cum María et Joseph, et venit Názareth: et erat súbditus illis.
@@ -335,9 +349,6 @@ V. Ponam univérsos fílios tuos doctos a Dómino.
 R. Et multitúdinem pacis fíliis tuis.
 
 [Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
-[Versum 3] (rubrica cisterciensis)
 @:Versum 1
 
 [Ant 2]
@@ -399,13 +410,21 @@ Descéndit Jesus * cum eis, et venit Názareth, et erat súbditus illis.;;121
 Et Jesus proficiébat * sapiéntia, et ætate, et grátia apud Deum et hómines.;;126
 Et dicébant: * Unde huic sapiéntia hæc, et virtútes? Nonne hic est fabri fílius?;;147
 
-[Commemoratio] (rubrica cisterciensis)
-!Commemoratio Dominicæ in Octava Epiphaniæ
-@Tempora/Epi1-0a:Oratio
-_
-!Commemoratio Octavæ Epiphaniæ 
-@Sancti/01-06:Oratio
-(sed die Epiphaniæ omittitur)
+[Ant Vespera 3] (rubrica cisterciensis)
+Fili, * quid fecísti nobis sic? Ecce pater tuus et ego doléntes quærebámus te. Quid est quod me quærebátis? nesciebátis quia in his, quæ Patris mei sunt, opórtet me esse?;;109
+Descéndit Jesus * cum eis, et venit Názareth, et erat súbditus illis.;;112
+Et Jesus proficiébat * sapiéntia, et ætate, et grátia apud Deum et hómines.;;121
+Mirábantur omnes * in verbis grátiæ, quæ procedébat de ore ipsíus, et dicébant: Nonne hic est fílius Joseph?;;126
+Et dicébant: * Unde huic sapiéntia hæc, et virtútes? Nonne hic est fabri fílius?;;147
+
+[Versum 3]
+@:Versum 2
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant 3]
+María autem * conservábat ómnia verba hæc, cónferens in corde suo.
 
 [Commemoratio 3] (rubrica cisterciensis)
 !Commemoratio Dominicæ in Octava Epiphaniæ
@@ -414,20 +433,3 @@ _
 !Commemoratio Octavæ Epiphaniæ 
 @Sancti/01-06:Oratio
 (sed die Baptismatis Domini omittitur)
-
-
-[Ant Vespera 3] (rubrica cisterciensis)
-Fili, * quid fecísti nobis sic? Ecce pater tuus et ego doléntes quærebámus te. Quid est quod me quærebátis? nesciebátis quia in his, quæ Patris mei sunt, opórtet me esse?;;109
-Descéndit Jesus * cum eis, et venit Názareth, et erat súbditus illis.;;112
-Et Jesus proficiébat * sapiéntia, et ætate, et grátia apud Deum et hómines.;;121
-Mirábantur omnes * in verbis grátiæ, quæ procedébat de ore ipsíus, et dicébant: Nonne hic est fílius Joseph?;;126
-Et dicébant: * Unde huic sapiéntia hæc, et virtútes? Nonne hic est fabri fílius?;;147
-
-[Ant Laudes] (rubrica cisterciensis)
-@:Ant Vespera 3:s/;;.*//g
-
-[Versum 3]
-@:Versum 2
-
-[Ant 3]
-María autem * conservábat ómnia verba hæc, cónferens in corde suo.

@@ -1,11 +1,15 @@
+[Officium]
+In Octava Ascensionis
+
+[Officium] (rubrica 196 aut rubrica 1955)
+Feria V post Ascensionem
+
 [Rank]
-In Octava Ascensionis;;Duplex majus;;4.2;;ex Tempora/Pasc5-4
-
-[Rank] (rubrica 1570)
-In Octava Ascensionis;;Duplex;;3.1;;ex Tempora/Pasc5-4
-
-[Rank] (rubrica 196 aut 1955)
-Feria V infra Hebdomadam post Ascensionem;;Feria;;1;;vide Tempora/Pasc5-4
+;;Duplex majus;;4.2;;ex Tempora/Pasc5-4
+(sed rubrica 1570)
+;;Duplex;;3.1;;ex Tempora/Pasc5-4
+(sed rubrica 196 aut rubrica 1955)
+;;Feria;;1;;vide Tempora/Pasc5-4
 
 [Rule]
 ex Tempora/Pasc5-4;

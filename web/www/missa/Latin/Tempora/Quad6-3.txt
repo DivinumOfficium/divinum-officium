@@ -1,8 +1,14 @@
-[Rank]
-Feria Quarta Majoris Hebdomadæ;;Feria privilegiata;;6.9
+[Officium]
+Feria Quarta Majoris Hebdomadæ
 
-[Rank](rubrica 1955 aut rubrica 196)
-Feria Quarta Hebdomadæ Sanctæ;;Feria privilegiata;;6.9
+[Officium] (rubrica 1955 aut rubrica 196)
+Feria Quarta Hebdomadæ Sanctæ
+
+[Rank]
+;;Feria privilegiata;;6.9
+
+[Rank] (rubrica 1955 aut rubrica 196)
+;;Feria privilegiata;;7
 
 [Rule]
 no Gloria

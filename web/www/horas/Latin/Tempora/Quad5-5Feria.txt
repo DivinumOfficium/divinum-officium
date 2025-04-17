@@ -1,11 +1,12 @@
+[Officium]
+Feria Sexta infra Hebdomadam Passionis
+
 [Rank]
-Feria Sexta infra Hebdomadam Passionis;;Feria major;;2.1
-
-[Rank] (rubrica 1930)
-Feria Sexta infra Hebdomadam Passionis;;Feria major;;4.9
-
-[Rank] (rubrica 196)
-Feria Sexta infra Hebdomadam Passionis;;Feria major;;3.9
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Lectio1]
 Léctio sancti Evangélii secúndum Joánnem

@@ -574,6 +574,7 @@ sub setupstring($$%) {
       if (@baserank) {
         my @newrank = split(';;', ${$new_sections}{Rank});
         my $office = ${$new_sections}{Officium};
+        $office =~ s/\s+$//;
         $baserank[0] = $office || $newrank[0];
         ${$new_sections}{Rank} = join(';;', @baserank);
       } elsif (exists(${$new_sections}{Officium})) {

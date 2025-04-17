@@ -1,11 +1,14 @@
+[Officium]
+Dominica IV Adventus
+
 [Rank]
-Dominica IV Adventus;;Semiduplex II. classis;;5.6
+;;Semiduplex II. classis;;5.6
 
 [Rank] (rubrica 1570 aut rubrica 1888)
-Dominica IV Adventus;;Semiduplex II. classis;;6.1
+;;Semiduplex II. classis;;6.1
 
 [Rank] (rubrica 196)
-Dominica IV Adventus;;Semiduplex;;6
+;;Semiduplex;;6.01
 
 [Rule]
 9 lectiones
@@ -14,12 +17,12 @@ Antiphonas horas
 [Ant Vespera]
 @:Ant Laudes
 
-[Ant Vespera](rubrica tridentina)
-@Psalterium/Psalmi/Psalmi major:Daya6 Vespera
-
 [Ant Vespera] (rubrica cisterciensis)
 @Psalterium/Psalmi/Psalmi major:Cistercian Ant Vespera:5
 @Psalterium/Psalmi/Psalmi major:Daya6 Vespera:3-5
+
+[Ant Vespera](rubrica tridentina)
+@Psalterium/Psalmi/Psalmi major:Daya6 Vespera
 
 [Oratio]
 Excita, quǽsumus, Dómine, poténtiam tuam, et veni: et magna nobis virtúte succúrre; ut per auxílium grátiæ tuæ, quod nostra peccáta præpédiunt, indulgéntia tuæ propitiatiónis accéleret:

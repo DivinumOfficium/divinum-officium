@@ -1,11 +1,14 @@
+[Officium]
+Dominica Infra Octavam Nativitatis
+
 [Rank]
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
+;;Semiduplex;;5;;ex Sancti/12-25
 
 [Rank] (rubrica 196)
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5.4;;ex Sancti/12-25
+;;Semiduplex;;5.4;;ex Sancti/12-25
 
 [Rank] (rubrica tridentina)
-Dominica Infra Octavam Nativitatis;;Semiduplex;;2.93;;ex Sancti/12-25
+;;Semiduplex;;2.93;;ex Sancti/12-25
 
 [Rule]
 9 lectiones
@@ -42,12 +45,6 @@ $Qui tecum
 @Sancti/12-26:Octava
 @Sancti/12-27:Octava
 @Sancti/12-28:Octava
-
-[Nocturn 2 Versum] (rubrica cisterciensis)
-@SanctiM/12-25
-
-[Nocturn 3 Versum] (rubrica cisterciensis)
-@SanctiM/12-25
 
 [Responsory3](rubrica 1960)
 @Sancti/12-25:Responsory4
@@ -146,3 +143,9 @@ Puer Jesus * proficiébat ætáte et sapiéntia coram Deo et homínibus.
 @Sancti/12-26:Octava
 @Sancti/12-27:Octava
 @Sancti/12-28:Octava
+
+[Nocturn 2 Versum] (rubrica cisterciensis)
+@SanctiM/12-25
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+@SanctiM/12-25

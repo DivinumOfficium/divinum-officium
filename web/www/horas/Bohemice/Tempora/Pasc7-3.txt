@@ -1,11 +1,5 @@
-[Rank]
-Feria Quarta Quattuor Temporum;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[Rank1960]
-Feria Quarta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[RankNewcal]
-Feria IV post Pentecostes;;Feria;;1;;
+[Officium]
+Feria Quarta Quattuor Temporum
 
 [Rule]
 ex Pasc7-0;
@@ -15,6 +9,10 @@ Antiphonas horas
 Hymnus Tertia
 Feria Te Deum 
 no93
+
+[Oratio]
+Mysli naše, prosíme, Pane, ať osvítí Utěšitel, který z tebe vychází; a uvede je do veškeré pravdy, jak slíbil tvůj Syn.
+$Qui tecum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. They were all filled with the Holy Ghost. Alleluia.\nR. And began to speak. Alleluia./s
@@ -54,10 +52,6 @@ Já jsem Chléb živý, * a sestoupil jsem z nebe, praví Pán. Alleluja, Allelu
 
 [Ant 2] (rubrica cisterciensis)
 Já jsem Chléb živý, * a sestoupil jsem z nebe; pokud bude někdo jíst z tohoto chleba, bude žít navěky: a chléb, který já dávám, je mé tělo <i>vydané</i> za život světa, alleluja, alleluja.
-
-[Oratio]
-Mysli naše, prosíme, Pane, ať osvítí Utěšitel, který z tebe vychází; a uvede je do veškeré pravdy, jak slíbil tvůj Syn.
-$Qui tecum eiusdem
 
 [Ant 3]
 I am the Living Bread Which came down from heaven; * if any man eat of this Bread, he shall live for ever, and the Bread that I will give is My Flesh, Which I will give for the life of the world. Alleluia.

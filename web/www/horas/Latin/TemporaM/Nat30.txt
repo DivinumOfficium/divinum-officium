@@ -1,7 +1,10 @@
 @Tempora/Nat30
 
+[Officium] (rubrica 1963)
+Die VI infra Octavam Nativitatis
+
 [Rank] (rubrica 1963)
-Die VI infra Octavam Nativitatis;;II classis;;5;;ex Sancti/12-25
+;;Semiduplex II classis;;5;;ex Sancti/12-25
 
 [Rule]
 Psalmi Dominica
@@ -9,24 +12,6 @@ Antiphonas horas
 
 [Ant Vespera]
 @Sancti/12-25:Ant Vespera 3:s/.*;;129/;;131/
-
-[Commemoratio 2] (rubrica altovadensis)
-@Sancti/12-25:Octava
-
-[Commemoratio 3] (rubrica altovadensis)
-@Sancti/12-25:Octava
-
-[Commemoratio 2] (rubrica tridentina nisi rubrica altovadensis)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-@Sancti/12-28:Octava
-
-[Commemoratio 3] (rubrica tridentina nisi rubrica altovadensis)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-@Sancti/12-28:Octava
 
 [Ant Matutinum]
 @TemporaM/Nat1-0tt
@@ -54,3 +39,21 @@ Antiphonas horas
 [MM Capitulum]
 @Psalterium/Special/Matutinum Special:MM Capitulum Nat:1-4
 @Sancti/12-25:Versum 2
+
+[Commemoratio 2] (rubrica altovadensis)
+@Sancti/12-25:Octava
+
+[Commemoratio 2] (rubrica tridentina nisi rubrica altovadensis)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava
+
+[Commemoratio 3] (rubrica altovadensis)
+@Sancti/12-25:Octava
+
+[Commemoratio 3] (rubrica tridentina nisi rubrica altovadensis)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava

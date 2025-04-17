@@ -1,8 +1,13 @@
-[Rank]
-Dominica II Post Pentecosten infra Octavam Corporis Christi;;Semiduplex I classis;;5.9;;ex Tempora/Pent01-4
+[Officium]
+Dominica II Post Pentecosten infra Octavam Corporis Christi
 
-[Rank] (rubrica 196)
-Dominica II Post Pentecosten;;Semiduplex I classis;;5
+[Officium] (rubrica 196 aut rubrica 1955)
+Dominica II Post Pentecosten
+
+[Rank]
+;;Semiduplex I classis;;5.9;;ex Tempora/Pent01-4
+(sed rubrica 196 aut rubrica 1955)
+;;Semiduplex I classis;;5
 
 [Rule]
 9 lectiones
@@ -17,8 +22,15 @@ Doxology=Corp
 V. Cibávit illos ex ádipe fruménti, allelúja.
 R. Et de petra, melle saturávit eos, allelúja.
 
+[Versum 1] (rubrica cisterciensis)
+V. Panem cœli dedit eis.
+R. Panem Angelórum manducávit homo.
+
 [Ant 1]
 Puer Sámuel * ministrábat ante Deum coram Heli, et sermo Dómini erat pretiósus cum eo.
+
+[Ant 1] (rubrica cisterciensis)
+Cognovérunt omnes * a Dan usque Bersabée, quod fidélis Sámuel Prophéta esset Dómini.
 
 [Oratio]
 Sancti nóminis tui, Dómine, timórem páriter et amórem fac nos habére perpétuum: quia nunquam tua gubernatióne destítuis, quos in soliditáte tuæ dilectiónis instítuis.
@@ -96,6 +108,9 @@ $Deo gratias
 V. Panem cæli dedit eis, allelúja.
 R. Panem Angelórum manducávit homo, allelúja.
 
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
 [Ant 2]
 Homo quidam * fecit cenam magnam, et vocávit multos: et misit servum suum hora cenæ dícere invitátis ut venírent, quia ómnia paráta sunt, allelúja.
 
@@ -117,13 +132,3 @@ $Deo gratias
 
 [Ant 3]
 Exi cito * in platéas et vicos civitátis: et páuperes ac débiles, cæcos et claudos compélle intráre, ut impleátur domus mea, allelúja.
-
-[Versum 1] (rubrica cisterciensis)
-V. Panem cœli dedit eis.
-R. Panem Angelórum manducávit homo.
-
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
-[Ant 1] (rubrica cisterciensis)
-Cognovérunt omnes * a Dan usque Bersabée, quod fidélis Sámuel Prophéta esset Dómini.

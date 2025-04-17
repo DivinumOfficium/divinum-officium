@@ -1,5 +1,8 @@
+[Officium]
+Ad Romános, cap. 16
+
 [Rank]
-Ad Romános, cap. 16;;Feria;;1;;vide Sancti/01-06
+;;Feria;;1;;vide Sancti/01-06
 (sed rubrica 1955 aut rubrica 196)
 @Tempora/Epi1-0b
 
@@ -20,6 +23,11 @@ De Epístola ad Romános
 [Lectio1] (rubrica 1960)
 @Tempora/Epi1-0a
 
+[Responsory1] (rubrica 196)
+@SanctiM/01-07
+(sed rubrica 1960)
+@Sancti/01-06
+
 [Lectio2]
 !Rom 16:17-19
 17 Rogo autem vos fratres, ut observétis eos qui dissensiónes et offendícula, præter doctrínam, quam vos didicístis, fáciunt, et declináte ab illis.
@@ -28,6 +36,13 @@ De Epístola ad Romános
 
 [Lectio2] (rubrica 1960)
 @Tempora/Epi1-0a:Lectio2
+
+[Responsory2] (rubrica 196)
+@SanctiM/01-07
+(sed feria 7)
+@SanctiM/01-07:Responsory3
+(sed rubrica 1960)
+@Sancti/01-06
 
 [Lectio3]
 !Rom 16:21-24
@@ -38,18 +53,6 @@ De Epístola ad Romános
 
 [Lectio3] (rubrica 1960)
 @Tempora/Epi1-0a:Lectio3
-
-[Responsory1] (rubrica 196)
-@SanctiM/01-07
-(sed rubrica 1960)
-@Sancti/01-06
-
-[Responsory2] (rubrica 196)
-@SanctiM/01-07
-(sed feria 7)
-@SanctiM/01-07:Responsory3
-(sed rubrica 1960)
-@Sancti/01-06
 
 [Responsory3] (rubrica 196)
 @SanctiM/01-07

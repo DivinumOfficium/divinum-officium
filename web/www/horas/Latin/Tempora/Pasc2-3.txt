@@ -1,5 +1,8 @@
+[Officium]
+Patrocinii St. Joseph Confessoris Sponsi B.M.V. Confessoris
+
 [Rank]
-Patrocinii St. Joseph Confessoris Sponsi B.M.V. Confessoris;;Duplex I classis;;6.5;;
+;;Duplex I classis;;6.5;;
 
 [Rank] (rubrica Newcal)
 @Tempora/Pasc2-3Feria:Rank
@@ -23,6 +26,9 @@ Allelúia, * allelúia, allelúia.
 
 [Responsory Vespera 1] (rubrica cisterciensis)
 @Sancti/03-19
+
+[Responsory Vespera] (rubrica cisterciensis)
+@:Responsory Sexta
 
 [Hymnus Vespera]
 @Sancti/03-19:Hymnus Vespera
@@ -57,18 +63,6 @@ R. Et pérfice eam, allelúja.
 Consúrgens Joseph, * accépit Púerum et Matrem ejus, et venit in terram Israël: et habitávit in civitáte quæ vocátur Názareth, allelúja;;14
 ;;20
 ;;23
-V. Invocávi Dóminum, Patrem Dómini mei, allelúja.
-R. Ut non derelínquat me in die tribulatiónis, allelúja.
-
-[Nocturn 1 Versum]
-V. Confitébor nómini tuo, allelúja.
-R. Quóniam adjútor et protéctor factus es mihi, allelúja.
-
-[Nocturn 2 Versum]
-V. Réspice de cælo, et vide, et vísita víneam istam, allelúja.
-R. Et pérfice eam, allelúja.
-
-[Nocturn 3 Versum]
 V. Invocávi Dóminum, Patrem Dómini mei, allelúja.
 R. Ut non derelínquat me in die tribulatiónis, allelúja.
 
@@ -252,9 +246,6 @@ _
 V. Plantátus in domo Dómini, allelúja.
 R. In átriis domus Dei nostri, allelúja.
 
-[Responsory Vespera] (rubrica cisterciensis)
-@:Responsory Sexta
-
 [Versum 3]
 V. Sub umbra illíus, quem desideráveram, sedi, allelúja.
 R. Et fructus ejus dulcis gútturi meo, allelúja.
@@ -264,3 +255,15 @@ R. Et fructus ejus dulcis gútturi meo, allelúja.
 
 [Ant 3]
 Fili, quid fecísti * nobis sic? Ecce pater tuus et ego doléntes quærebámus te, allelúja.
+
+[Nocturn 1 Versum]
+V. Confitébor nómini tuo, allelúja.
+R. Quóniam adjútor et protéctor factus es mihi, allelúja.
+
+[Nocturn 2 Versum]
+V. Réspice de cælo, et vide, et vísita víneam istam, allelúja.
+R. Et pérfice eam, allelúja.
+
+[Nocturn 3 Versum]
+V. Invocávi Dóminum, Patrem Dómini mei, allelúja.
+R. Ut non derelínquat me in die tribulatiónis, allelúja.

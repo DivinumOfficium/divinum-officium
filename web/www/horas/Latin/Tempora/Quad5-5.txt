@@ -1,8 +1,11 @@
+[Officium]
+Septem Dolorum Beatæ Mariæ Virginis
+
 [Rank]
-Septem Dolorum Beatæ Mariæ Virginis;;Duplex majus;;4
+;;Duplex majus;;4
 
 [Rank] (rubrica 1960)
-Septem Dolorum Beatæ Mariæ Virginis;;Commemoratio;;1
+;;Commemoratio;;1
 
 [Rule]
 Psalmi Dominica
@@ -314,6 +317,9 @@ _
 V. Fácies mea intúmuit a fletu.
 R. Et pálpebræ meæ caligavérunt.
 
+[Responsory TertiaM] (rubrica cisterciensis)
+@:Responsory Tertia:2-3:s/\* D/d/ s/\* Z/z/ s/V./R./ s/R./V./
+
 [Capitulum Sexta]
 !Isa 53:5
 v. Ipse vulnerátus est propter iniquitátes nostras, attrítus est propter scélera nostra: disciplína pacis nostræ super eum, et livóre ejus sanáti sumus.
@@ -330,6 +336,9 @@ _
 V. Deus vitam meam annuntiávi tibi.
 R. Posuísti lácrimas meas in conspéctu tuo.
 
+[Responsory SextaM] (rubrica cisterciensis)
+@:Responsory Tertia:8-9
+
 [Capitulum Nona]
 !Isa 53:8
 v. Generatiónem ejus quis enarrábit, quia abscíssus est de terra vivéntium; propter scelus pópuli mei percússi eum.
@@ -345,12 +354,6 @@ R. Deus vitam meam * Annuntiávi tibi.
 _
 V. Ora pro nobis Virgo dolorosíssima.
 R. Ut digni efficiámur promissiónibus Christi.
-
-[Responsory TertiaM] (rubrica cisterciensis)
-@:Responsory Tertia:2-3:s/\* D/d/ s/\* Z/z/ s/V./R./ s/R./V./
-
-[Responsory SextaM] (rubrica cisterciensis)
-@:Responsory Tertia:8-9
 
 [Responsory NonaM] (rubrica cisterciensis)
 @:Responsory Sexta:8-9

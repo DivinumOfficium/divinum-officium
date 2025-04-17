@@ -1,13 +1,7 @@
 @TemporaM/Pasc5-5
 
 [Rank]
-Sabbato infra Octavam Ascensionis;;Semiduplex;;2.1;;ex TemporaM/Pasc5-4
-
-[Rank] (rubrica 196)
-Sabbato post Ascensionem;;Feria;;1;;vide TemporaM/Pasc5-5
-
-[Rank] (rubrica tridentina nisi rubrica cisterciensis)
-Sabbato infra Octavam Ascensionis;;Semiduplex;;2;;ex TemporaM/Pasc5-4
+@Tempora/Pasc5-6
 
 [Ant Matutinum]
 @Tempora/Pasc5-4::3 s/;;.*//
