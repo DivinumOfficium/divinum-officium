@@ -35,8 +35,8 @@ sub psalmi_matutinum_monastic {
   my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi/Psalmi matutinum.txt')};
   my @psalmi = split("\n", $psalmi{"Daym$dayofweek"});
 
-  if ($dayofweek == 5) {
-    if ($winner{'Ant Laudes'}) {    # replace 92 99
+  if ($dayofweek == 5) {                   # replace 92 99
+    if ($winner{'Ant Laudes'} || $communetype eq 'ex' && $commune{'Ant Laudes'}) {
       $psalmi[4] =~ s/92!//;
       $psalmi[12] =~ s/.*99!//;
     } else {
