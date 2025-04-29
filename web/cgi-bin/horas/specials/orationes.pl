@@ -603,7 +603,7 @@ sub getcommemoratio {
   if ($rank[3] =~ /(ex|vide)\s+(.*)\s*$/i) {
     my $file = $2;
     if ($w{Rule} =~ /Comex=(.*?);/i && $rank < 5) { $file = $1; }
-    if ($file =~ /^C[1-3](?![v\d])/ && $dayname[0] =~ /Pasc/i) { $file .= 'p'; }
+    if ($file =~ /^C[1-3](?![v\d])/ && $dayname[0] =~ /Pasc/i) { $file =~ s/p?$/p/; }
     $file = "$file.txt";
     if ($file =~ /^C/) { $file = subdirname('Commune', $version) . "$file"; }
     %c = %{setupstring($lang, $file)};
@@ -612,7 +612,7 @@ sub getcommemoratio {
 
       # allow daisy-chained Commune references to the second-level
       $file = $2;
-      if ($file =~ /^C[1-3](?![v\d])/ && $dayname[0] =~ /Pasc/i) { $file .= 'p'; }
+      if ($file =~ /^C[1-3](?![v\d])/ && $dayname[0] =~ /Pasc/i) { $file =~ s/p?$/p/; }
       $file = "$file.txt";
       if ($file =~ /^C/) { $file = subdirname('Commune', $version) . "$file"; }
       my %c2 = %{setupstring($lang, $file)};
