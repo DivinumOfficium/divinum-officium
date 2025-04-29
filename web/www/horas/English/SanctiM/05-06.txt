@@ -1,0 +1,9 @@
+[Lectio6]
+@Sancti/05-06:Lectio5:s/ Tertullian.*//
+
+[Lectio7]
+@Sancti/05-06:Lectio5:s/.* (?=Tertullian)// s/$/~/
+@Sancti/05-06:Lectio6:s/ The first.*//
+
+[Lectio8]
+@Sancti/05-06:Lectio6:s/.* (?=The first)//
