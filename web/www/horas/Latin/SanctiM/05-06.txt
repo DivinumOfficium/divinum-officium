@@ -1,0 +1,46 @@
+@Sancti/05-06
+
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Sancti/12-27::1-5 s/-5/-3/
+
+[Lectio2]
+@Sancti/12-27::1 s/6-10/4-7/
+@Sancti/12-27:Lectio1:6-7
+@Sancti/12-27::2-3
+
+[Lectio3]
+@Sancti/12-27:Lectio2:1 s/6-/8-/
+@Sancti/12-27:Lectio2:4-6
+
+[Lectio4]
+@Sancti/12-27:Lectio3:s/-5/-6/ s/.$/:~/
+et in hoc scimus quóniam in ipso sumus.
+6 Qui dicit se in ipso manére, debet, sicut ille ambulávit, et ipse ambuláre.
+
+[Lectio5]
+@Sancti/05-06:Lectio4
+
+[Lectio6]
+@Sancti/05-06:Lectio5:s/ Refert.*//
+
+[Lectio7]
+@Sancti/05-06:Lectio5:s/.* (?=Refert)// s/$/~/
+@Sancti/05-06:Lectio6:s/ Primus.*//
+
+[Lectio8]
+@Sancti/05-06:Lectio6:s/.* (?=Primus)//
+
+[Lectio9]
+@Sancti/05-06:Lectio7
+
+[Lectio10]
+Quod autem intérrogat Dóminus, et, illa peténte, respóndit: Quid vis? non venit de ignorántia: sed ex ejus persóna dícitur, qui flagellándus et crucifigéndus erat. Quómodo et in hæmorrhoísa: Quis me tétigit? Et de Lázaro: Ubi posuístis eum? In véteri quoque testaménto: Adam, ubi es? Et: Descéndens vidébo si juxta clamórem, qui venit ad me, perfíciant: sin autem non est, ut sciam. Póstulat autem mater filiórum Zebedæi erróre mulíebri et pietátis afféctu, nésciens quid péteret. Nec mirum si ista arguátur imperétiæ, cum de Petro dicátur, quando tria vult fácere tabernácula, nésciens quid díceret.
+
+[Lectio11]
+@Sancti/05-06:Lectio8
+
+[Lectio12]
+@Sancti/05-06:Lectio9

@@ -7,14 +7,16 @@
 Hosánna * fílio David: † benedíctus, qui venit in nómine Dómini, Rex Israël: † Hosánna in excélsis.;;269;270;271
 
 [Lectio1]
-@Tempora/Quad6-0:Lectio1:s/-17/-15/ s/16 .*//s
+@Tempora/Quad6-0:Lectio1:1-6 s/-17/-15/
 
 [Lectio2]
-@Tempora/Quad6-0:Lectio1:s/12-17/16-19/ s/12.*16/16/s
-@Tempora/Quad6-0:Lectio2:s/!.*// s/20 .*//s
+@Tempora/Quad6-0:Lectio1:2 s/12-17/16-19/
+@Tempora/Quad6-0:Lectio1:7-8
+@Tempora/Quad6-0:Lectio2:2-3
 
 [Lectio3]
-@Tempora/Quad6-0:Lectio2:s/18-/20-/ s/18.*20/20/s
+@Tempora/Quad6-0:Lectio2:1 s/18-/20-/
+@Tempora/Quad6-0:Lectio2:4-6
 
 [Lectio4]
 @Tempora/Quad6-0:Lectio3
