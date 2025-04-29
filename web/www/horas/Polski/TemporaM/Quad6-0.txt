@@ -1,11 +1,11 @@
 [Ant Matutinum 3N]
-Hosanna * synowi Dawidowemu: † błogosławiony, który idzie w imię Pańskie, Król Izraela: Hosanna na wysokościach.
+Hosanna * synowi Dawidowemu: † błogosławiony, który idzie w imię Pańskie, Król Izraela: Hosanna na wysokościach.;;269;270;271
 
 [Lectio9]
 @Tempora/Quad6-0:Lectio7:s/Na tej .*//s
 
 [Lectio10]
-@Tempora/Quad6-0:Lectio7:s/.* Na tej /Na tej /s
+@Tempora/Quad6-0:Lectio7:s/.* Na tej /Na tej /s s/$/~/
 @Tempora/Quad6-0:Lectio8:s/A figure .*//s
 
 [LectioE]
