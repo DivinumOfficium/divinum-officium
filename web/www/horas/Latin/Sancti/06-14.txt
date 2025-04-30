@@ -5,6 +5,8 @@ S. Basilii Magni, Episcopis Confessoris et Ecclesiæ Doctoris
 ;;Duplex;;3;;vide C4a
 (sed rubrica 1930)
 ;;Duplex majus;;4;;vide C4a
+(sed rubrica cisterciensis)
+;;Duplex majus;;1.2;;vide C4a
 
 [Rule]
 vide C4a;mtv

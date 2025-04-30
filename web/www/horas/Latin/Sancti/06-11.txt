@@ -5,6 +5,8 @@ S. Barnabæ Apostoli
 ;;Duplex majus;;4;;ex C1
 (sed rubrica 196)
 ;;Duplex;;3;;vide C1
+(sed rubrica cisterciensis)
+;;Duplex majus;;4.1;;ex C1
 
 [Rule]
 ex C1;
