@@ -1,0 +1,17 @@
+[Lectio3]
+@Tempora/Pasc2-3::s/-49/-45/ s/ Then.*//s
+
+[Lectio4]
+@Tempora/Pasc2-3:Lectio3:s/44-/45-/ s/.* Then/45 Then/s
+
+[Lectio7]
+@Tempora/Pasc2-3:Lectio6:s/Therefore.*//s
+
+[Lectio8]
+@Tempora/Pasc2-3:Lectio6:s/.* Therefore/Therefore/s
+
+[Lectio11]
+@Tempora/Pasc2-3:Lectio9:s/It is.*//s
+
+[Lectio12]
+@Tempora/Pasc2-3:Lectio9:s/.*It is/It is/s

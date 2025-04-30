@@ -1,0 +1,25 @@
+@Sancti/07-16
+
+[Rule]
+12 lectiones
+
+[Lectio5]
+@Sancti/07-16:Lectio4
+
+[Lectio6]
+@Sancti/07-16:Lectio5:s/ Nec.*//
+
+[Lectio7]
+@Sancti/07-16:Lectio5:s/.* (?=Nec)//
+
+[Responsory7]
+@Commune/C11:Responsory6
+
+[Lectio8]
+@Sancti/07-16:Lectio6
+
+[Responsory8]
+@Sancti/09-08:Responsory5:s/Nativitátem/Commemoratiónem/
+
+[Responsory9]
+@Commune/C11:Responsory7:s/sanctam festivitátem/solemnem Commemoratiónem/

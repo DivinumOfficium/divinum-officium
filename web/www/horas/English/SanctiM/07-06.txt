@@ -1,0 +1,23 @@
+[Lectio5]
+@Sancti/07-06:Lectio4:s/ Ye have.*//
+
+[Lectio6]
+@Sancti/07-06:Lectio4:s/.* (?=Ye have)//s s/$/~/
+@Sancti/07-06:Lectio5:s/ Blessed.*//
+
+[Lectio7]
+@Sancti/07-06:Lectio5:s/.* (?=Blessed)// s/$/~/
+@Sancti/07-06:Lectio6:s/ What place.*//
+
+[Lectio8]
+@Sancti/07-06:Lectio6:s/.* (?=What place)//
+
+[Lectio10]
+@Sancti/07-06:Lectio8:s/ But.*//
+
+[Lectio11]
+@Sancti/07-06:Lectio8:s/.* (?=But)// s/$/~/
+@Sancti/07-06:Lectio9:s/ And.*//
+
+[Lectio12]
+@Sancti/07-06:Lectio9:s/.* (?=And)//

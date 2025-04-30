@@ -1,0 +1,10 @@
+[Lectio5]
+@Sancti/07-01t:Lectio4:s/ The.*//
+
+[Lectio6]
+@Sancti/07-01t:Lectio4:s/.* (?=The)//s s/$/~/
+@Sancti/07-01t:Lectio5:s/ This is he whose.*//
+
+[Lectio7]
+@Sancti/07-01t:Lectio5:s/.* (?=This is he whose)//
+

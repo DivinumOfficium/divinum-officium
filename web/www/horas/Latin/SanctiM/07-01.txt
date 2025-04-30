@@ -1,0 +1,117 @@
+@Sancti/07-01
+
+[Rank]
+Pretiosissimi Sanguinis Domini Nostri Jesu Christi;;Duplex II classis;;5;;
+
+[Rule]
+12 lectiones
+
+[Responsory Vespera]
+@Sancti/07-01:Responsory Tertia
+
+[AntMatutinumM]
+Sanguis * Jesu Christi, Fílii Dei, emúndat nos.;;115
+Prétio * empti estis: nolíte fíeri servi hóminum.;;119
+Unus mílitum * láncea latus ejus apéruit, et contínuo exívit Sanguis et aqua.;;140
+
+[Ant Matutinum 3N]
+Tórcular * calcávi solus, et de géntibus non est vir mecum.
+
+[Ant Matutinum]
+@Sancti/07-01::1-3 s/;;3/;;4/
+@Sancti/07-01::11-13
+@Sancti/07-01::4-5
+@Sancti/07-01::6-8
+@:AntMatutinumM
+@Sancti/07-01::9-10
+;;246;247;248
+@Sancti/07-01::14-15
+
+[Lectio1]
+@Sancti/07-01::1-6 s/-15/-14/
+
+[Lectio2]
+@Sancti/07-01:Lectio2:1 s/16-22/15-18/
+@Sancti/07-01:Lectio1:7
+@Sancti/07-01:Lectio2:2-4
+
+[Lectio3]
+@Sancti/07-01:Lectio2:1 s/16-/19-/
+@Sancti/07-01:Lectio2:5-8
+
+[Lectio4]
+@Sancti/07-01:Lectio3
+
+[Responsory4]
+@Sancti/07-01:Responsory Nona:2-3:s/ \* (.)/\l$1/ s/V./*/
+@Sancti/07-01:Responsory Nona:8-9:s/\.\nR. (.)/, \l$1/
+@Sancti/07-01:Responsory Nona:3:s/V./R./
+
+[Lectio5]
+@Sancti/07-01:Lectio4
+
+[Responsory5]
+@Sancti/07-01:Responsory4
+
+[Lectio6]
+@Sancti/07-01:Lectio5:s/ Si enim.*//
+
+[Responsory6]
+@Sancti/07-01:Responsory5
+
+[Lectio7]
+@Sancti/07-01:Lectio5:s/.* (?=Si enim)// s/ Latus.*// s/$/~/
+Mortuo enim, ait, Jesu, et adhuc in cruce pendente, approximat miles, latus lancea percussit, et exinde aqua fluxit et Sanguis : unum baptismatis symbolum, aliud sacramenti. Ideo non ait: Exiit Sanguis et aqua; sed exiit aqua primum et Sanguis, quia primum baptismate diluimur et postea mysterio dedicamur.~
+@Sancti/07-01:Lectio5:s/.* (?=Latus)// s/$/~/
+@Sancti/07-01:Lectio6:s/ Ex his.*//
+
+[Responsory7]
+@Sancti/07-01:Responsory6
+
+[Lectio8]
+@Sancti/07-01:Lectio6:s/.*(?=Ex his)// s/ - Recurrénte.*//
+
+[Responsory8]
+R. Gratificavit † nos Deus in dilecto Filio suo:
+* In quo habemus redemptionem per Sanguinem ejus in remissionem peccatorum.
+V. Ecce venit plenitudo temporis, in quo misit Deus Filium suum in terras.
+R. In quo habemus redemptionem per Sanguinem ejus in remissionem peccatorum.
+
+[Lectio9]
+@Sancti/07-01:Lectio7
+
+[Responsory9]
+@Sancti/07-01:Responsory7
+
+[Lectio10]
+@Sancti/07-01:Lectio8
+
+[Responsory10]
+@Sancti/07-01:Responsory8
+
+[Lectio11]
+@Sancti/07-01:Lectio9:s/ Hoc.*//
+
+[Responsory11]
+@Tempora/Pasc3-0:Responsory1:s/, allelúja//gs
+
+[Lectio12]
+@Sancti/07-01:Lectio9:s/.* (?=Hoc)//
+
+[Responsory12]
+R. Ecce † vox Sánguinis Fílii tui, fratris nostri, de terra clamat ad te, Dómine.
+* Benedícta terra, quæ apéruit os suum, et suscépit Sánguinem Redemptóris.
+V. Hæc est Sánguinis aspérsio, mélius loquens quam Abel. 
+R. Benedícta terra, quæ apéruit os suum, et suscépit Sánguinem Redemptóris.
+
+[Responsory Laudes]
+@Sancti/07-01:Responsory Nona
+
+[Responsory TertiaM]
+@Sancti/07-01:Responsory Tertia:8-9
+
+[Responsory SextaM]
+@Sancti/07-01:Responsory Sexta:8-9
+
+[Responsory NonaM]
+@Sancti/07-01:Responsory Nona:8-9
