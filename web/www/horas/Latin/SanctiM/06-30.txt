@@ -3,6 +3,9 @@
 [Ant Vespera]
 @Sancti/06-30::s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;115/ s/_/;;138/ s/_//
 
+[Ant Vespera] (rubrica cisterciensis)
+@Sancti/06-30:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;115/ s/_/;;125/ s/_//
+
 [Hymnus Vespera]
 @:HymnusM Matutinum
 

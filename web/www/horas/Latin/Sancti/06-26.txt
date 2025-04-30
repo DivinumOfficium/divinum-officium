@@ -3,7 +3,7 @@ Ss. Joannis et Pauli Martyrum
 
 [Rank]
 ;;Duplex;;3;;vide C3
-(sed rubrica 1570 aut rubrica 1617)
+(sed rubrica 1570 aut rubrica 1617 aut rubrica cisterciensis)
 ;;Semiduplex;;2.2;;vide C3
 (sed rubrica 1930 aut rubrica 1963)
 ;;Simplex;;1.1;;vide C3
@@ -12,9 +12,13 @@ Ss. Joannis et Pauli Martyrum
 vide C3;
 9 lectiones
 scriptura1960
+Psalmi Dominica (rubrica cisterciensis) 
 
 [Ant 1]
 Astitérunt * justi ante Dóminum, et ab invicem non sunt separáti: cálicem Dómini biberunt, et amici Dei appelláti sunt.
+
+[Ant 1] (rubrica cisterciensis)
+Gaudent in cœlis * ánimæ Sanctórum, qui Christi vestígia sunt secúti: et quia pro ejus amóre sánguinem suum fudérunt, ídeo cum Christo exúltant sine fine.
 
 [Oratio]
 Quǽsumus, omnípotens Deus: ut nos gemináta lætítia hodiérnæ festivitátis excípiat, quæ de beatórum Joánnis et Pauli glorificatióne procédit; quos éadem fides et pássio vere fecit esse germános.
@@ -83,7 +87,7 @@ Verum quod sequitur: Quóniam quæ in ténebris dixistis, in lúmine dicéntur; 
 Duo autem sunt genera persecutórum: unum palam sæviéntium, álterum ficte fraudulenterque blandiéntium. Contra utrumque nos munire atque institúere volens Salvator, et supra ab hypócrisi pharisæórum attendere, et hic a carnificum cæde præcipit non timére; quia videlicet, post mortem nec horum crudelitas nec illórum valeat simulátio durare. Nonne quinque pásseres veneunt dipondio? Si minutíssima, inquit, animália, et quæ quólibet per áëra ferúntur volatília, Deus oblivísci non potest; vos, qui ad imáginem facti estis Creatoris, non debetis terreri ab his qui occídunt corpus; quia, qui irrationabília animália gubernat, rationabília curare non désinit.
 &teDeum
 
-[Ant Laudes]
+[Ant Laudes] (nisi rubrica cisterciensis)
 Paulus et Joánnes * dixérunt Juliáno: Nos unum Deum cólimus, qui fecit cælum et terram.
 Paulus et Joánnes * dixérunt Terentiáno: Si tuus dóminus est Juliánus, habéto pacem cum illo: nobis álius non est, nisi Dóminus Jesus Christus.
 Joánnes et Paulus, * agnoscéntes tyránnidem Juliáni, facultátes suas paupéribus erogáre cœpérunt.
@@ -93,7 +97,7 @@ Joánnes et Paulus * dixérunt ad Gallicánum: Fac votum Deo cæli, et eris vict
 [Ant 2]
 Isti sunt Sancti, * qui pro Christi amóre minas hóminum contempsérunt: sancti Mártyres in regno cælórum exsúltant cum Angelis. O quam pretiósa est mors Sanctórum, qui assídue assístunt ante Dóminum, et ab ínvicem non sunt separáti!
 
-[Ant Vespera 3]
+[Ant Vespera 3] (nisi rubrica cisterciensis)
 Paulus et Joánnes * dixérunt Juliáno: Nos unum Deum cólimus, qui fecit cælum et terram.;;109
 Paulus et Joánnes * dixérunt Terentiáno: Si tuus dóminus est Juliánus, habéto pacem cum illo: nobis álius non est, nisi Dóminus Jesus Christus.;;110
 Joánnes et Paulus, * agnoscéntes tyránnidem Juliáni, facultátes suas paupéribus erogáre cœpérunt.;;111

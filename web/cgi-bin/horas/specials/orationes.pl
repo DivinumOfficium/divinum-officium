@@ -745,7 +745,7 @@ sub vigilia_commemoratio {
   my $a = $p{"Feria Ant 2"};       #$p{"Day$dayofweek Ant 2"};
   my $v = $p{"Feria Versum 2"};    #$p{"Day$dayofweek Versum 2"};
   $a =~ s/\s*\*\s*/ /;
-  $w = $c . "Ant. $a" . "_\n$v" . "_\n\$Oremus\n$w";
+  $w = $c . "Ant. $a" . "_\n$v" . "_\n\$Oremus\nv. $w";
   return $w;
 }
 

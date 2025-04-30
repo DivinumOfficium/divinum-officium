@@ -469,7 +469,7 @@ sub get_loadtime_inclusion($$$$$$$) {
   if ( $dayname[0] =~ /Pasc/i
     && !$missa
     && $callerfname !~ /C[123]/
-    && $section !~ /Hymnus|Oratio|Lectio|Secreta|Postcommunio/i)
+    && $section !~ /Hymnus|Oratio|Lectio|Secreta|Postcommunio|Versum/i)
   {
     $ftitle =~ s/(C[123][abcd]*)(?![p\d])/$1p/g;
   }

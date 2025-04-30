@@ -1,6 +1,6 @@
 [Officium]
 S. Antonii de Padua Confessoris
-(sed rubrica 195 aut rubrica 196)
+(sed rubrica 195 aut rubrica 196 aut rubrica altovadensis)
 S. Antonii de Padua Confessoris et Ecclesiæ Doctoris
 
 [Rank]
@@ -13,12 +13,15 @@ S. Antonii de Padua Confessoris et Ecclesiæ Doctoris
 ;;Duplex;;3;;vide C5a
 (sed rubrica 1963)
 ;;Simplex;;1.1;;vide C5a
+(sed rubrica altovadensis)
+;;Semiduplex;;2.2;;vide C5a
 
 [Rule]
 vide C5;
 (sed rubrica 195 aut rubrica 196)
 vide C5a;
 9 lectiones
+Psalmi Dominica (rubrica altovadensis)
 
 [Comment]
 Pio PP. XII, anno 1946, Doctor Ecclesiæ declaratus est
@@ -28,7 +31,7 @@ Antóni
 
 [Oratio]
 @:OratioText:s/ atque Doctóris//
-(sed rubrica 195 aut rubrica 196)
+(sed rubrica 195 aut rubrica 196 aut rubrica altovadensis)
 @:OratioText
 
 [OratioText]
