@@ -3,3 +3,27 @@ Tertia die infra Octavam S. P. N. Benedicti Abbatis
 
 [Rank]
 ;;Semiduplex;;2;;ex SanctiM/07-11M
+
+[Rule]
+3 lectio
+
+[Ant Matutinum]
+@SanctiM/07-11M::1 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@SanctiM/07-11M::2 s/;;.*//
+
+[Lectio1]
+Incipit liber secundus Dialogorum sancti Gregórii Papæ
+!_
+Fuit vir vitae venerabilis, gratia Benedíctus et nomine, ab ipso pueritiæ suæ tempore cor gerens senile. Ætatem quippe moribus transiens, nulli animi voluptati dedit: sed dum in hac terra adhuc esset, quo temporaliter libere uti potuisset, despexit jam quasi aridum mundum cum flore. Qui liberiori genere ex provincia Núrsiæ ortus, Romæ liberalibus litterárum studiis traditus fuerat. Sed cum in eis multos ire per abrupta vitiorum cerneret, eum, quem quasi in ingressu mundi posuérat, retraxit pedem: ne, si quid de scientia ejus attingeret, ipse quoque in immane præcipitium totus iret. Despectis itaque litterarum studiis, relicta domo rebúsque patris, soli Deo placere desiderans, sanctæ conversationis habitum quæsivit. Recessit igitur scienter nescius, et sapienter indocta.
+
+[Lectio2]
+!Cap. 1
+Hic ítaque cum jam relictis litterarum studiis petere deserta decrevisset, nutrix, quæ hunc arctius amabat, sola secúta est. Cumque ad locum veníssent, qui dicitur Enfide, multísque honestioribus viris pro caritáte se illic detinentibus in beáti Petri ecclesia demorarentur, prædicta nutrix illíus ad purgandum triticum a vicinis muliéribus præstari sibi capistérium pétiit: quod super mensam incaute derelictum, casu accidénte fractum est sic, ut in duábus pártibus invenirétur divísum. Quod mox rédiens nutrix illíus ut ita invenit, vehementíssime flere cœpit, quia vas, quod præstitum acceperat, fractum vidébat. Benedíctus autem, religiósus et pius puer, cum nutrícem suam flere conspiceret, ejus dolóri compássus, ablátis secum utrísque fracti capistérii pártibus, sese cum lacrimis in oratiónem dedit: qui ab oratióne surgens, ita juxta se vas sanum réperit, ut in eo inveníri fractúræ nulla vestígia potuíssent: moxque nutrícem suam blande consolátus, ei sanum capistérium réddidit, quod fractum túlerat.
+
+[Lectio3]
+Quæ res eódem loco a cunctis est ágnita, atque in tanta admiratióne hábita, ut hoc ipsum capistérium ejus loci íncolæ in ecclésiæ ingréssu suspénderent: quátenus præséntes et secutúri omnes agnoscerent, a quanta Benedíctus puer conversatiónis grátia et perfectióne cœpísset: quod annis multis illic ante ómnium óculos fuit, et usque ad hæc Langobardórum témpora super fores ecclésiæ pepéndit.

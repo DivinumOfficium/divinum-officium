@@ -1,0 +1,42 @@
+@Sancti/07-03oct
+
+[Rule]
+3 lectio
+
+[Ant Matutinum]
+@Commune/C1::1 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@Commune/C1::2 s/;;.*//
+
+[Lectio1]
+@Sancti/07-03oct:Lectio4
+
+[Lectio2]
+@Sancti/07-03oct:Lectio5
+
+[Lectio3]
+@Sancti/07-03oct:Lectio6
+
+[MM Capitulum]
+!Sir 44:14-15
+v. Córpora ipsórum in pace sepúlta sunt, et nomen eórum vivit in generatiónem et generatiónem. † Sapiéntiam ipsórum narrent pópuli, * et laudem eórum núntiet ecclésia.
+$Deo gratias
+_
+V. Annuntiavérunt inter gentes glóriam Dómini.
+R. In ómnibus pópulis mirabília ejus.
+
+[Responsory Laudes]
+@Commune/C1:Responsory Breve Sexta
+
+[Responsory Vespera]
+@Commune/C1:Responsory Breve Tertia
+
+[Versum 3]
+@Commune/C1:Nocturn 2 Versum
+
+[Ant 3]
+@Sancti/07-03oct:Ant 1

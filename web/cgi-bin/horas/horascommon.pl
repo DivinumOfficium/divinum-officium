@@ -1798,8 +1798,8 @@ sub rankname {
     $rankname = $ranktable[$i];                             # 'Semiduplex/iij.L.' - all other Octaves pre Divino
   } elsif ($version =~ /Divino/ && $latname =~ /^In Octava|infra Octavam|post Octavam Asc|Vigilia Pent/i) {
     $rankname = ($rank < 2)
-      ? $ranktable[1]                                                                            # 'Simplex'
-      : ($rank < 3 && $latname !~ /Asc|Nat|Cord/i || $latname =~ /post|Joan/) ? $ranktable[2]    # 'Semiduplex'
+      ? $ranktable[1]                                                                              # 'Simplex'
+      : ($rank < 3 && ($latname !~ /Asc|Nat|Cord/i || $latname =~ /post|Joan/)) ? $ranktable[2]    # 'Semiduplex'
       : ($rank < 3) ? "$ranktable[2] III. $t{ordinis}"                # 'Semiduplex III. ordinis'
       : ($rank < 5 && $latname !~ /Asc|Nat|Cord/i) ? $ranktable[4]    # 'Duplex majus'
       : ($rank < 5) ? "$ranktable[4] III. $t{ordinis}"                # 'Duplex majus III. ordinis'

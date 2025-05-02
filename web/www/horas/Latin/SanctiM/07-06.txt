@@ -1,0 +1,40 @@
+@Sancti/07-06
+
+[Rule]
+12 lectiones
+
+[Versum 1]
+@SanctiM/07-03oct
+
+[Responsory Vespera]
+@Commune/C1:Responsory Breve Tertia
+
+[Lectio5]
+@Sancti/07-06:Lectio4:s/ Vos.*//
+
+[Lectio6]
+@Sancti/07-06:Lectio4:s/.* (?=Vos)//s s/$/~/
+@Sancti/07-06:Lectio5:s/ Beáti.*//
+
+[Lectio7]
+@Sancti/07-06:Lectio5:s/.* (?=Beáti)// s/$/~/
+@Sancti/07-06:Lectio6:s/ Quisnam.*//
+
+[Lectio8]
+@Sancti/07-06:Lectio6:s/.* (?=Quisnam)//
+
+[Lectio9]
+@Sancti/07-06:Lectio7
+
+[Lectio10]
+@Sancti/07-06:Lectio8:s/ Navícula.*//
+
+[Lectio11]
+@Sancti/07-06:Lectio8:s/.* (?=Navícula)// s/$/~/
+@Sancti/07-06:Lectio9:s/ Quarta.*//
+
+[Lectio12]
+@Sancti/07-06:Lectio9:s/.* (?=Quarta)//
+
+[Responsory Laudes]
+@Commune/C1:Responsory Breve Sexta
