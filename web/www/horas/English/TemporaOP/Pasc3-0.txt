@@ -1,0 +1,11 @@
+[Lectio1]
+@Tempora/Pasc3-0:Lectio7:s/ And thus.*//
+
+[Lectio2]
+@Tempora/Pasc3-0:Lectio8:s/.*, He/ He// s/ Again.*//
+
+[Lectio3]
+@Tempora/Pasc3-0:Lectio8:s/.*(?=Again)// s/$/~/
+@Tempora/Pasc3-0:Lectio9:s/ A .*/./
+
+
