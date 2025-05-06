@@ -1,0 +1,40 @@
+[Rank]
+@Tempora/Pasc3-5
+
+[Rule]
+no Te Deum
+
+[Lectio1]
+De libro Apocalýpsis beáti Joánnis Apóstoli
+!Apo 21:10-12
+10 Et sústulit me in spíritu in montem magnum et altum, et osténdit mihi civitátem sanctam Jerúsalem descendéntem de cælo a Deo,
+11 habéntem claritátem Dei: et lumen eius símile lápidi pretióso tamquam lápidi jáspidis, sicut crystállum.
+12 Et habébat murum magnum, et altum, habéntem portas duódecim: et in portis ángelos duódecim, et nómina inscrípta, quæ sunt nómina duódecim tríbuum filiórum Israël.
+
+[Responsory1]
+@Tempora/Pasc3-0:Responsory4
+
+[Lectio2]
+!Apo 21:18-20
+18 Et erat structúra muri eius ex lápide jáspide: ipsa vero cívitas aurum mundum símile vitro mundo.
+19 Et fundaménta muri civitátis omni lápide pretióso ornáta. Fundaméntum primum, jaspis: secúndum, sapphírus: tértium, calcedónius: quartum, smarágdus:
+20 quintum, sardónyx: sextum, sárdius: séptimum, chrysólithus: octávum, berýllus: nonum, topázius: décimum, chrysóprasus: undécimum, hyacínthus: duodécimum, amethýstus.
+
+[Responsory2]
+@Tempora/Pasc3-0:Responsory5:s/fortem,//
+
+[Lectio3]
+!Apo 21:21-23
+21 Et duódecim portæ, duódecim margarítæ sunt, per síngulas: et síngulæ portæ erant ex síngulis margarítis: et platéa civitátis aurum mundum, tamquam vitrum perlúcidum.
+22 Et templum non vidi in ea: Dóminus enim Deus omnípotens templum illíus est, et Agnus.
+23 Et cívitas non eget sole neque luna ut lúceant in ea, nam cláritas Dei illuminávit eam, et lucérna eius est Agnus.
+
+[Responsory3]
+@Tempora/Pasc3-1:Responsory2:1-5
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. / s/(, a.*)./$1$1./
+
+[Ant 2]
+@Tempora/Pasc3-0:Ant 3
+
+[Ant 3]
+@Tempora/Pasc3-2Feria:Ant 1

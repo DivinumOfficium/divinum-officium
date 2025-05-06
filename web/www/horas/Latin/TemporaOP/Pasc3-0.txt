@@ -1,0 +1,49 @@
+[Rank]
+@Tempora/Pasc3-0
+
+[Rule]
+1 nocturn
+Antiphonas horas
+
+[Ant 1]
+@Tempora/Pasc3-0:Ant 1C
+
+[Oratio]
+@Tempora/Pasc3-0
+
+[Invit]
+@TemporaOP/Pasc1-0
+
+[Ant Matutinum]
+@TemporaOP/Pasc0-1::1 s/4/1/
+;;2
+;;3
+@Psalterium/Special/Matutinum Special:MM Capitulum Pasch:5-6
+
+[Lectio1]
+@Tempora/Pasc3-0:Lectio7:s/ Ac.*//
+
+[Responsory1]
+@Tempora/Pasc3-0
+
+[Lectio2]
+@Tempora/Pasc3-0:Lectio8:s/ Módicum et.*//
+
+[Responsory2]
+@TemporaOP/Pasc1-1
+
+[Lectio3]
+@Tempora/Pasc3-0:Lectio8:s/.*(?=Módicum et)// s/$/~/
+@Tempora/Pasc3-0:Lectio9:s/: In.*/./
+
+[Responsory3]
+@TemporaOP/Pasc1-1
+
+[LectioE]
+@Tempora/Pasc3-0
+
+[Ant 2]
+@Tempora/Pasc3-0:Ant 1
+
+[Ant 3]
+Iterum autem * vidébo vos, et gaudébit cor vestrum, allelúia, et gáudium vestrum nemo tollet a vobis, allelúia.

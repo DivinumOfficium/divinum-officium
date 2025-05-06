@@ -1277,6 +1277,7 @@ sub gettype1960 {
     } elsif ($rank < 2 || $dayname[1] =~ /(feria|vigilia|die)/i) {
       $type = LT1960_FERIAL;
     } elsif ($version !~ /Monastic/i
+      && ($version !~ /1962/ || $winner !~ /Pasc.-0/)
       && ($dayname[1] =~ /dominica.*?semiduplex/i || $winner =~ /Pasc1\-0/i))
     {
       $type = LT1960_SUNDAY;

@@ -1,0 +1,60 @@
+[Rank]
+@Tempora/Pasc4-0
+
+[Rule]
+1 nocturn
+Antiphonas horas
+
+[Responsory Vespera 1]
+@Tempora/Pasc4-0:Responsory1
+&Gloria
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. / s/(, a.*)./$1$1./
+
+[Ant 1]
+@Tempora/Pasc3-2Feria:Ant 1
+
+[Oratio]
+@Tempora/Pasc4-0
+
+[Invit]
+@TemporaOP/Pasc1-0
+
+[Ant Matutinum]
+@TemporaOP/Pasc0-1::1 s/4/1/
+;;2
+;;3
+@Psalterium/Special/Matutinum Special:MM Capitulum Pasch:5-6
+
+[Lectio1]
+@Tempora/Pasc4-0:Lectio7:s/: qua.*/./
+
+[Responsory1]
+@Tempora/Pasc4-0
+
+[Lectio2]
+@Tempora/Pasc4-0:Lectio7:s/.*: qua/Qua (cena)/s s/$/~/
+@Tempora/Pasc4-0:Lectio8:s/ Sed.*//
+
+[Responsory2]
+@Tempora/Pasc4-0
+
+[Lectio3]
+@Tempora/Pasc4-0:Lectio8:s/.*(?=Sed)// s/$/~/
+@Tempora/Pasc4-0:Lectio9:s/ Consolátor.*//
+
+[Responsory3]
+R. Narrábo nomen tuum frátribus meis, allelúja: in médio Ecclésiæ
+* Laudábo te, allelúja, allelúja. 
+V. Confitébor tibi in ecclésiæ magna, pópulo gravi.
+R. Laudábo te, allelúja, allelúja. 
+&Gloria
+R. Allelúja, allelúja.
+
+[LectioE]
+@Tempora/Pasc4-0
+
+[Ant 2]
+@Tempora/Pasc4-0:Ant 3
+
+[Ant 3]
+@Tempora/Pasc4-1

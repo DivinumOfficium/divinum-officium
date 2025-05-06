@@ -1,0 +1,33 @@
+[Rank]
+@Tempora/Pasc4-2
+
+[Rule]
+no Te Deum
+
+[Lectio1]
+@Tempora/Pasc4-4
+
+[Responsory1]
+@Tempora/Pasc4-0:Responsory5
+
+[Lectio2]
+@Tempora/Pasc4-4
+
+[Responsory2]
+R. In ecclésiis benedícite Deo, Dómino de fóntibus Israël,
+* Allelúja, allelúja.
+V. Cantáte Dómino cánticum novum: cantáte Dómino, omnis terra.
+R. Allelúja, allelúja.
+
+[Lectio3]
+@Tempora/Pasc4-4::1-4 s/-10/-8/
+
+[Responsory3]
+@Tempora/Pasc4-0:Responsory6:1-5
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+
+[Ant 2]
+@TemporaOP/Pasc4-1
+
+[Ant 3]
+@TemporaOP/Pasc4-1

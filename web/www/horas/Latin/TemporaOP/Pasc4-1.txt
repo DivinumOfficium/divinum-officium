@@ -1,0 +1,33 @@
+[Rank]
+@Tempora/Pasc4-1
+
+[Rule]
+no Te Deum
+
+[Lectio1]
+@Tempora/Pasc4-0::1-6 s/-6/-4/
+
+[Responsory1]
+@Tempora/Pasc4-0
+
+[Lectio2]
+@Tempora/Pasc4-0:Lectio1:2 s/1-6/5-8/
+@Tempora/Pasc4-0:Lectio1:7-8
+@Tempora/Pasc4-0::2-4
+
+[Responsory2]
+@Tempora/Pasc4-0
+
+[Lectio3]
+@Tempora/Pasc4-0::1 s/12-16/9-12/
+@Tempora/Pasc4-0:Lectio2:5-7
+@Tempora/Pasc4-0::2
+
+[Responsory3]
+@TemporaOP/Pasc4-0
+
+[Ant 2]
+Adhuc multa hábeo * vobis dícere, sed non potéstis portáre modo: cum autem vénerit ille Spíritus veritátis, docébit vos omnem veritátem, allelúia.
+
+[Ant 3]
+Ille me clarificábit, * quia de meo accípiet, et annuntiábit vobis, allelúia.

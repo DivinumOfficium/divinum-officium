@@ -1,0 +1,37 @@
+[Rank]
+@Tempora/Pasc4-3
+
+[Rule]
+no Te Deum
+
+[Lectio1]
+De Epístola prima beáti Petri Apóstoli
+@Tempora/Pasc5-1r:Lectio3:1-3 s/-17/-12/
+
+[Responsory1]
+@Tempora/Pasc4-0:Responsory7
+
+[Lectio2]
+@Tempora/Pasc5-1r:Lectio3:1 s/11-17/13-16/
+@Tempora/Pasc5-1r:Lectio3:4-7
+
+[Responsory2]
+@TemporaM/Pasc4-0:Responsory11:s/Introívimus/Introíbimus/
+
+[Lectio3]
+!1 Pet 2:17-20
+17 Omnes honoráte: fraternitátem dilígite: Deum timéte: regem honorificáte.
+18 Servi, súbditi estóte in omni timóre dóminis, non tantum bonis et modéstis, sed étiam dýscolis.
+19 Hæc est enim grátia, si propter Dei consciéntiam sústinet quis tristítias, pátiens iniúste.
+20 Quæ enim est glória, si peccántes, et colaphizáti suffértis? sed si bene faciéntes patiénter sustinétis, hæc est grátia apud Deum.
+
+[Responsory3]
+@TemporaM/Pasc4-0:Responsory12
+&Gloria
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. / s/(, a.*)./$1$1./
+
+[Ant 2]
+@TemporaOP/Pasc4-1
+
+[Ant 3]
+@TemporaOP/Pasc4-1
