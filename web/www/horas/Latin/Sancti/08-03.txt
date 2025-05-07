@@ -3,6 +3,8 @@ De Inventione S. Stephani Protomartyris
 
 [Rank]
 ;;Semiduplex;;2.2;;vide Sancti/12-26
+(sed rubrica cisterciensis)
+;;Commemoratio;;1;;vide Sancti/12-26
 
 [Rule]
 vide Sancti/12-26;
@@ -13,6 +15,9 @@ vide Sancti/12-26;
 
 [Versum 1]
 @Commune/C2a
+
+[Versum 1] (rubrica cisterciensis)
+@CommuneM/C2a
 
 [Ant 1]
 @Sancti/12-26
@@ -108,8 +113,14 @@ Alii istum volunt esse Zacharíam, qui occisus est a Joas rege Judæ inter templ
 [Versum 2]
 @Sancti/12-26
 
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
 [Ant 2]
 @:Ant 1
+
+[Ant 2] (rubrica cisterciensis)
+@Sancti/12-26
 
 [Lectio Prima]
 @Sancti/12-26

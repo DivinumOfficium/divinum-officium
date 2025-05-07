@@ -5,10 +5,13 @@ S. Dominici Confessoris
 ;;Duplex majus;;4;;vide C5
 (sed rubrica 1963 aut rubrica 1617)
 ;;Duplex;;3;;vide C5
+(sed rubrica cisterciensis)
+;;Duplex;;2.2;;vide C5
 
 [Rule]
 vide C5;mtv
 9 lectiones
+Psalmi Dominica
 
 [Oratio]
 Deus, qui Ecclésiam tuam beáti Domínici Confessóris tui illumináre dignátus es méritis et doctrínis: concéde; ut ejus intercessióne temporálibus non destituátur auxíliis, et spirituálibus semper profíciat increméntis.
