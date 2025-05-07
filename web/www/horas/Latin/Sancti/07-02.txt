@@ -4,6 +4,9 @@ In Visitatione Beatæ Mariæ Virginis;;Duplex II classis;;5.1;;ex C11
 [Rank] (rubrica 196)
 In Visitatione Beatæ Mariæ Virginis;;Duplex II classis;;5;;ex C11
 
+[Rank] (rubrica cisterciensis)
+In Visitatione Beatæ Mariæ Virginis;;Duplex I classis;;6;;ex C11
+
 [Rule]
 ex C11;
 9 lectiones
@@ -19,6 +22,11 @@ Ut audívit * salutatiónem Maríæ Elísabeth, exsultávit infans in útero eju
 Benedícta * tu inter mulíeres, et benedíctus fructus ventris tui.;;126
 Ex quo facta est * vox salutatiónis tuæ in áuribus meis, exsultávit infans in útero meo, allelúja.;;147
 
+[Responsory Vespera 1] (rubrica cisterciensis)
+Responsorium.  Magníficat ánima mea Dóminum: et exsultávit spíritus meus in Deo, salutári meo. * Quia respéxit humilitátem ancíllæ suæ. 
+V. Ecce enim ex hoc beátam me dicent omnes generatiónes.
+R. Quia respéxit humilitátem ancíllæ suæ. 
+
 [Versum 1]
 V. Benedícta tu in muliéribus.
 R. Et benedíctus fructus ventris tui.
@@ -26,9 +34,16 @@ R. Et benedíctus fructus ventris tui.
 [Ant 1]
 Beáta es, * María, quæ credidísti: perficiéntur in te quæ dicta sunt tibi a Dómino, allelúja.
 
+[Ant 1] (rubrica cisterciensis)
+O quanta vis * amóris illibátæ tunc mentem accénderat Vírginis, ut in Spíritu sancto rapta jubiláret: Magnificat ánima mea Dóminum.
+
 [Oratio]
 Fámulis tuis, quǽsumus, Dómine, cæléstis grátiæ munus impertíre: ut, quibus beátæ Vírginis partus éxstitit salútis exórdium; Visitatiónis ejus votíva solémnitas, pacis tríbuat increméntum.
 $Per Dominum
+
+[Oratio] (rubrica cisterciensis)
+Omnípotens sempitérne Deus, qui ex abundántia charitátis, beátam Maríam tuo Fílio fœcúndátam ad salutatiónem Elísabeth inspirásti: § præsta quæsumus; * ut per ejus Visitatiónem donis cœléstibus repleámur, § et ab ómnibus adversitátibus eruámur.
+$Per eumdem
 
 [Invit]
 Visitatiónem Vírginis Maríæ celebrémus: * Christum ejus Fílium adorémus Dóminum.
@@ -136,11 +151,45 @@ Non enim sola familiaritátis est causa quod diu mansit, sed étiam tanti vatis 
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g
 
+[Ant Laudes] (rubrica cisterciensis)
+In Maríæ * Vírginis útero paráta sedes tua, Deus, a sæculo.
+Júbilet Deo * omnis terra, et cœlestis Hierarchía sérviat ei.
+Fecit Dóminus *  poténtiam in bráchio suo, dispérsit supérbos mente cordis sui.
+Depósuit poténtes * de sede, et exaltávit húmiles.
+Esuriéntes implévit bonis * et dívites dimísit inánes.
+
+[Capitulum Laudes] (rubrica cisterciensis)
+!Cant. 2.
+v. Ecce iste venit sáliens in móntibus, § transíliens colles: * símilis est diléctus meus cápreæ, hinnulóque cervórum.
+$Deo gratias
+
 [Versum 2]
 @:Versum 1
 
 [Ant 2]
 Cum audísset * salutatiónem Maríæ Elísabeth, exclamávit voce magna et dixit: Unde hoc mihi, ut véniat Mater Dómini mei ad me? Allelúja.
 
+[Ant 2] (rubrica cisterciensis)
+Benedíctus * Dóminus, Deus Israël, quia visitávit, et fecit redemptiónem plebis suæ, sicut locútus est per os sanctórum
+
 [Versum 3]
 @:Versum 1
+
+[Capitulum Sexta] (rubrica cisterciensis)
+!Cant. 2.
+v. Surge, própera, amíca mea, colúmba mea, formósa mea, et veni. * Jam enim hiems tránsiit, § imber ábiit, et recéssit. * Flores apparuérunt in terra nostra, § tempus putatiónis advénit.
+$Deo gratias
+
+[Capitulum Nona] (rubrica cisterciensis)
+!Cant. 2.
+v. Vox túrturis audíta est in terra nostra: § ficus prótulit grossos suos: * víneæ floréntes dedérunt odórem suum.
+$Deo gratias
+
+[Responsory Vespera] (rubrica cisterciensis)
+R.br. Visitátio tua, * Dei Génitrix Virgo.
+R. Visitátio tua, * Dei Génitrix Virgo.
+V. Gáudium annuntiávit univérso mundo. 
+R.br. Dei Génitrix Virgo.
+
+[Ant 3] (rubrica cisterciensis)
+Magníficet * Dóminum totum genus fidélium, cóncrepet harmónica laude cohors Angélica in Maríæ gáudia.

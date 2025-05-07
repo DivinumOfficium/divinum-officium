@@ -4,6 +4,9 @@ Septima die infra Octavam Ss. Apostolorum Petri et Pauli
 [Rank]
 ;;Semiduplex;;2;;ex C1
 
+[Rank] (rubrica cisterciensis)
+;;Semiduplex;;1;;vide C1
+
 [Rule]
 ex C1;
 9 lectiones
@@ -33,3 +36,9 @@ Cum enim idem Simon se Christum diceret, et tamquam filium ad patrem asseret vol
 
 [Ant 2]
 @Sancti/07-03oct
+
+[Ant 1] (rubrica cisterciensis)
+@Sancti/07-03oct:Ant 2
+
+[Ant 2] (rubrica cisterciensis)
+@Sancti/07-03oct:Ant 1

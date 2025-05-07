@@ -3,6 +3,10 @@ S. Henrici Imperatoris Confessoris
 
 [Rank]
 ;;Semiduplex;;2.2;;vide C5
+(sed rubrica 1951)
+;;Simplex;;1.2;;vide C5
+(sed rubrica altovadensis)
+;;Simplex;;3;;ex C5
 
 [Rule]
 vide C5;mtv

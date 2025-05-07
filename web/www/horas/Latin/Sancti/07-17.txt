@@ -3,7 +3,7 @@ S. Alexii Confessoris
 
 [Rank]
 ;;Semiduplex;;2.2;;vide C5
-(sed rubrica 1570 aut rubrica 1617 aut rubrica 1960)
+(sed rubrica 1570 aut rubrica 1617 aut rubrica 1960 aut rubrica cisterciensis)
 ;;Simplex;;1.1;;vide C5
 
 [Rule]
@@ -12,6 +12,12 @@ vide C5;
 
 [Name]
 Aléxii
+
+[Ant 1] (rubrica 1951)
+@CommuneM/C5:Ant 2
+
+[Ant 2] (rubrica 1951)
+@CommuneM/C5:Ant 1
 
 [Lectio4]
 Aléxius, Romanórum nobilíssimus, propter exímium Jesu Christi amórem prima nocte nuptiárum peculiari Dei mónitu relínquens intactam sponsam, illustrium orbis terræ ecclesiárum peregrinatiónem suscépit. Quibus in itinéribus cum ignotus septémdecim annos fuísset, aliquándo apud Edessam, Syriæ urbem, per imáginem sanctíssimæ Maríæ Vírginis, ejus nómine divulgato, inde navi discessit. Ad portum Romanum appulsus, a patre suo tamquam alienus pauper hospítio accipitur; apud quem, ómnibus incógnitus, cum decem et septem annos vixísset, relícto scripto sui nóminis, sánguinis, ac totius vitæ cursus, migrávit in cælum, Innocentio primo summo Pontifice.

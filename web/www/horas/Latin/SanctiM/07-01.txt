@@ -2,9 +2,15 @@
 
 [Rank]
 Pretiosissimi Sanguinis Domini Nostri Jesu Christi;;Duplex II classis;;5;;
+(sed rubrica cisterciensis)
+Pretiosissimi Sanguinis Domini Nostri Jesu Christi;;Duplex II classis;;4.1;;
 
 [Rule]
 12 lectiones
+Psalmi Dominica
+
+[Ant Vespera]  (rubrica cisterciensis)
+@Sancti/07-01::1-4
 
 [Responsory Vespera]
 @Sancti/07-01:Responsory Tertia
@@ -107,11 +113,11 @@ R. Benedícta terra, quæ apéruit os suum, et suscépit Sánguinem Redemptóris
 [Responsory Laudes]
 @Sancti/07-01:Responsory Nona
 
-[Responsory TertiaM]
+[Responsory TertiaM] (nisi rubrica cisterciensis)
 @Sancti/07-01:Responsory Tertia:8-9
 
-[Responsory SextaM]
+[Responsory SextaM] (nisi rubrica cisterciensis)
 @Sancti/07-01:Responsory Sexta:8-9
 
-[Responsory NonaM]
+[Responsory NonaM] (nisi rubrica cisterciensis)
 @Sancti/07-01:Responsory Nona:8-9

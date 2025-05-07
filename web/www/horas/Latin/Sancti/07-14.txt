@@ -7,6 +7,8 @@ S. Bonaventuræ Episcopi Confessoris
 ;;Duplex;;3;;vide C4a
 (sed rubrica 1570)
 ;;Semiduplex;;2.2;;vide C4-1
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;vide C4a
 
 [Rule]
 vide C4a;mtv
