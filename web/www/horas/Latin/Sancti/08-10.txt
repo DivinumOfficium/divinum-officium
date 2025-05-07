@@ -5,6 +5,8 @@ S. Laurentii Martyris
 ;;Duplex II classis cum octava simplici;;5;;ex C2a
 (sed rubrica 196)
 ;;Duplex II classis;;5;;ex C2a
+(sed rubrica cisterciensis)
+;;Duplex II classis;;4;;ex C2a
 
 [Rule]
 ex C2a
@@ -20,6 +22,13 @@ Lauréntius * bonum opus operátus est, qui per signum crucis cæcos illuminávi
 Adhǽsit * ánima mea post te, quia caro mea igne cremáta est pro te, Deus meus.
 Misit Dóminus * Angelum suum, et liberávit me de médio ignis, et non sum æstuátus.
 Beátus Lauréntius * orábat, dicens: Grátias tibi ago, Dómine, quia jánuas tuas íngredi mérui.
+
+[Ant Vespera] (rubrica cisterciensis)
+Lauréntius * bonum opus operátus est, qui per signum crucis cæcos illuminávit.
+Lauréntius * ingréssus est Martyr, et conféssus est nomen Dómini Jesu Christi.
+Adhǽsit * ánima mea post te, quia caro mea igne cremáta est pro te, Deus meus.
+Misit Dóminus * Angelum suum, et liberávit me de médio ignis, et non sum æstuátus.
+Ego me óbtuli * sacrifícium Deo in odórem suavitátis.
 
 [Ant 1]
 Levíta Lauréntius * bonum opus operátus est, qui per signum crucis cæcos illuminávit, et thesáuros Ecclésiæ dedit paupéribus.
@@ -174,6 +183,9 @@ $Deo gratias
 V. Dispérsit, dedit paupéribus.
 R. Justítia ejus manet in sǽculum sǽculi.
 
+[Versum 2] (rubrica cisterciensis)
+@CommuneM/C2
+
 [Ant 2]
 In cratícula * te Deum non negávi, et ad ignem applicátus te Christum conféssus sum: probásti cor meum, et visitásti nocte: igne me examinásti, et non est invénta in me iníquitas.
 
@@ -204,6 +216,9 @@ $Deo gratias
 [Versum 3]
 V. Levíta Lauréntius bonum opus operátus est.
 R. Qui per signum crucis cæcos illuminávit.
+
+[Versum 3] (rubrica cisterciensis)
+@CommuneM/C2
 
 [Ant 3]
 Beátus Lauréntius, * dum in cratícula superpósitus urerétur, ad impiíssimum tyránnum dixit: Assátum est jam, versa et mandúca; nam facultátes Ecclésiæ, quas requíris, in cæléstes thesáuros manus páuperum deportavérunt.
