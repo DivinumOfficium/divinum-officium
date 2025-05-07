@@ -4,6 +4,9 @@ Sexta die infra Octavam Ss. Apostolorum Petri et Pauli
 [Rank]
 ;;Semiduplex;;2;;vide C1
 
+[Rank] (rubrica cisterciensis)
+;;Semiduplex;;1;;vide C1
+
 [Rule]
 vide C1;
 9 lectiones
@@ -42,3 +45,9 @@ Non ita cælum splendéscit quando radios sol demittit, quemádmodum Romanórum 
 
 [Ant 2]
 @Sancti/07-03oct
+
+[Ant 1] (rubrica cisterciensis)
+@Sancti/07-03oct:Ant 2
+
+[Ant 2] (rubrica cisterciensis)
+@Sancti/07-03oct:Ant 1

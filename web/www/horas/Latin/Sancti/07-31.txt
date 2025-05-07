@@ -5,6 +5,8 @@ S. Ignatii Confessoris
 ;;Duplex majus;;4;;vide C5
 (sed rubrica monastica)
 ;;Duplex;;3;;vide C5
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;vide C5
 
 [Rule]
 vide C5;
@@ -13,6 +15,9 @@ vide C5;
 [Oratio]
 Deus, qui ad majórem tui nóminis glóriam propagándam, novo per beátum Ignátium subsídio militántem Ecclésiam roborásti: concéde; ut, ejus auxílio et imitatióne certántes in terris, coronári cum ipso mereámur in cælis.
 $Per Dominum
+
+[Oratio] (rubrica cisterciensis)
+@Commune/C5-1::s/N\./Ignátii/
 
 [Lectio4]
 Ignatius, natióne Hispanus, nobili genere Loyolæ in Cantabria natus, primo catholici regis aulam, deínde milítiam secutus est. In propugnatióne Pampelonénsi accepto vulnere gráviter decumbens, ex fortuita piórum librórum lectióne, ad Christi Sanctorúmque sectanda vestígia mirabíliter exársit. Ad montem Serrátum profectus, ante aram beátæ Vírginis suspénsis armis, noctem éxcubans, sacræ milítiæ tirocinium pósuit. Inde, ut erat indútus sacco, traditis antea mendíco pretiósis vestibus, Manresam secessit; ubi, emendicato pane et aqua víctitans, exceptisque diébus Dominicis, jejunans, aspera catena cilicióque carnem domans, humi cubans, et férreis se flagellis cruentans, per annum commorátus est, claris adeo illustratiónibus a Deo recreatus, ut póstea dicere sólitus sit: Si sacræ Litteræ non exstarent, se tamen pro fide mori parátum ex iis solum, quæ sibi Manresæ patefécerat Dóminus. Quo témpore, homo litterárum plane rudis, admirábilem illum compósuit exercitiórum librum, Sedis apostolicæ judício et ómnium utilitate comprobátum.

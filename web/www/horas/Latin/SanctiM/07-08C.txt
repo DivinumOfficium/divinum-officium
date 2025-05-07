@@ -1,0 +1,75 @@
+[Officium]
+B. Eugenii III., Papæ et Confessoris
+
+[Rank]
+;;Semiduplex;;2.2;;ex C4
+
+[Rule]
+ex C4;
+Psalmi Dominica
+Antiphonas horas
+12 lectiones
+
+[Oratio]
+Da, quæsumus, omnípotens Deus, beáti Eugénii, Confessóris tui atque Pontíficis intercessióne, ut toto tibi corde famulémur; * quia nulla nobis prævalébit hostílitas, § si in te veráciter confidámus.
+$Per Dominum.
+
+[Commemoratio]
+!Commemoratio S. Theobaldi, Abbatis
+@Commune/C5:Oratio proper
+v. Deus, qui nos cónspicis ex nostra infirmitáte defícere: § adésto propítius; * atque intercedénte beáto Theobáldo, Abbáte, in ómnibus actiónibus nostris et aspirándo nos prævéni, et adjuvándo custódi; § ut cuncta nostra orátio et operátio a te semper incípiat, et per te cœpta finiátur. *
+$Per Dominum
+
+[Ant 3]
+@Commune/C4:Ant 3 summi Pontificis
+
+[Ant Matutinum]
+@CommuneM/C4
+
+
+[Lectio1]
+@Commune/C4a::s/-5/-4/ s/5.*//s
+
+[Lectio2]
+@Commune/C4a:Lectio1:s/1-5/4-7/ s/1.*5/5/s
+@Commune/C4a:Lectio2:s/!.*// s/8.*//s
+
+[Lectio3]
+@Commune/C4a:Lectio2:s/6-10/8-10/ s/6.*8/8/s
+
+[Lectio4]
+@Commune/C4a:Lectio3
+
+[Lectio5]
+@Sancti/03-12:Lectio4
+
+[Lectio6]
+@Sancti/03-12:Lectio5:s/Missis.*//s
+
+[Lectio7]
+@Sancti/03-12:Lectio5:s/.*Missis/Missis/s s/$/~/
+@Sancti/03-12:Lectio6:s/Quátuor.*//s
+
+[Lectio8]
+@Sancti/03-12:Lectio6:s/.*Quátuor/Quátuor/s
+
+[Lectio9]
+@Sancti/04-11:Lectio7:s/Manet.*//s
+
+[Lectio10]
+@Sancti/04-11:Lectio7:s/.*Manet/Manet/s s/$/~/
+@Sancti/04-11:Lectio8:s/His.*//
+
+[Lectio11]
+@Sancti/04-11:Lectio8:s/.*His/His/s s/$/~/
+@Sancti/04-11:Lectio9:s/Coróna.*//s
+
+[Lectio12]
+@Sancti/04-11:Lectio9:s/.*Coróna/Coróna/s
+
+[LectioE]
+v. Sequentia Sancti Evangelii secundum Joannem
+!Matt 16:13-19
+In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? At illi dixérunt: Alii Joánnem Baptístam, alii autem Elíam, alii vero Jeremíam aut unum ex prophétis. Dicit illis Jesus: Vos autem quem me esse dícitis? Respóndens Simon Petrus, dixit: Tu es Christus, Fílius Dei vivi. Respóndens autem Jesus, dixit ei: Beátus es, Simon Bar Jona: quia caro et sanguis non revelávit tibi, sed Pater meus, qui in cœlis est. Et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam. Et tibi dabo claves regni cœlórum. Et quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis.
+
+

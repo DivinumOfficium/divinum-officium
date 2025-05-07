@@ -7,6 +7,8 @@ S. Apollinaris Episcopi et Martyris
 ;;Semiduplex;;2.2;;vide C2-1
 (sed rubrica 1930 aut rubrica 1962 aut rubrica 1963)
 ;;Simplex;;1.1;;vide C2-1
+(sed rubrica cisterciensis)
+;;Commemoratio;;1;;vide C2-1
 
 [Rule]
 vide C2-1;

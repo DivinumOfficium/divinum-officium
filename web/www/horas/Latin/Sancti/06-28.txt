@@ -1,12 +1,19 @@
 [Officium]
 S. Irenæi Episcopi et Martyris
+(sed rubrica altovadensis)
+S. Irenæi, Episcopi, Martyris et Ecclesiæ Doctoris (1965)
 
 [Rank]
 ;;Duplex;;3;;vide C2
+(sed rubrica altovadensis)
+;;Commemoratio et M.;;1;;vide C2
 
 [Rule]
 vide C2;
 9 lectiones
+
+[Ant 1] (rubrica cisterciensis)
+@Commune/C4a::s/N\./Irenæe/
 
 [Oratio]
 Deus, qui beáto Irenǽo Mártyri tuo atque Pontífici tribuísti, ut et veritáte doctrínæ expugnáret hǽreses, et pacem Ecclésiæ felíciter confirmáret: da, quǽsumus, plebi tuæ in sancta religióne constántiam; et pacem tuam nostris concéde tempóribus.
