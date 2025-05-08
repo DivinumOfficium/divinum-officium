@@ -433,21 +433,21 @@ sub process_conditional_lines {
   return @output;
 }
 
-#*** do_inclusion_substitutions(\$text, $substitutions)
-# Performs substitutions on $text, where $substitutions contains the
-# substitutions in the syntax of the @ directive.
+#*** do_inclusion_substitutions(\$text, $subs)
+# Performs manipulation in text from 'include' directive:
+# (de)select line(s) (numbered from 1!) or substitute text
 sub do_inclusion_substitutions(\$$) {
-  my ($text, $substitutions) = @_;
+  my ($text, $subs) = @_;
 
-  # substitute text or select line(s) (numbered from 1!)
-  while (($substitutions =~ m{(?:s/([^/]*)/([^/]*)/([gism]*))|(?:(\d+)(-\d+)?)}g)) {
-    if ($4) {
-      my ($s) = $4 - 1;
-      my ($l) = $5 ? -$5 - $s : 1;
-      my (@t) = split(/\n/, $$text);
-      $$text = join("\n", splice(@t, $s, $l)) . "\n";
+  while ($subs =~ m{(?:s/(?<s>[^/]*)/(?<r>[^/]*)/(?<f>[gism]*))|(?:(?<n>\!?)(?<b>\d+)(-(?<e>\d+))?)}g) {
+    if ($+{b}) {
+      my $s = $+{b} - 1;
+      my $l = $+{e} ? $+{e} - $s : 1;
+      my @t1 = split(/\n/, $$text);
+      my @t2 = splice(@t1, $s, $l);
+      $$text = join("\n", $+{n} ? @t1 : @t2) . "\n";
     } else {
-      eval "\$\$text =~ s/$1/$2/$3";
+      eval "\$\$text =~ s/$+{s}/$+{r}/$+{f}";
     }
   }
 }
