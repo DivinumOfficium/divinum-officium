@@ -941,6 +941,7 @@ sub getrefs {
       do_inclusion_substitutions($v, $substitutions);
       do_inclusion_substitutions($o, $substitutions);
       $a =~ s/\s*\*\s*/ /;
+      $before ||= "!" . translate('Commemoratio', $lang) . " $s{Officium}";
       $w = $before . "\nAnt. $a\n" . "_\n$v" . "_\n$o" . "_\n$after";
       next;
     }

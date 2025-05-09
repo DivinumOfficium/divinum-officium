@@ -470,6 +470,7 @@ sub occurrence {
         $commemoratio = '';
         $comrank = 0;
         @commemoentries = ();
+        $officename[2] = '';
       } else {
         $officename[2] =~ s/:/ ad Laudes \& Matutinum:/
           if $srank[2] >= 5 && $cr[2] < 2 && $srank[0] !~ /infra octavam/i;
@@ -507,6 +508,11 @@ sub occurrence {
 
     if (!$officename[2] && ($saint{'Commemoratio 2'} || $saint{'Commemoratio'})) {
       ($_) = split(/\n/, $saint{'Commemoratio 2'} || $saint{'Commemoratio'});
+
+      if (/\@([a-z0-9\/\-]+?)\:/isx) {
+        my %s = %{setupstring('Latin', "$1.txt")};
+        $_ = "!Commemoratio " . $s{'Officium'};
+      }
       $officename[2] = "Commemoratio: $_" if (s/^!Commemoratio //);
       $officename[2] =~ s/:/ ad Laudes tantum:/ if ($srank[2] >= 5 && $saint{'Commemoratio 2'} || $version =~ /196/);
     }
@@ -993,6 +999,7 @@ sub concurrence {
       # in 1st Vespers of Duplex I. cl. only commemoration of Feria major, Dominica (major), 8va privilegiata and Duplex II./I. cl
       || ( $crank >= 6
         && !($rank == 1.15 || $rank == 2.1 || $rank == 2.99 || $rank == 3.9 || $rank >= 4.2)
+        && $version !~ /cist/i
         && $cwrank[0] !~ /Dominica|feria|in.*octava/i)
 
       # on Christmas Eve and New Year's Eve, nothing of a preceding Sunday
@@ -1001,7 +1008,7 @@ sub concurrence {
       # Cist: we need Comm. of S. Silvester on 31-12
       || ($cwinner =~ /12-25/ && $version =~ /cist/i)
 
-      # in 1st Vespers of Duplex II. cl. also commemoration of any Duplex
+      # in 1st Vespers of Duplex II. cl. (Cist: Serm. maj. & min.) also commemoration of any Duplex
       || ( $crank >= 5
         && !($rank == 1.15 || $rank == 2.1 || $rank >= 2.99)
         && $cwrank[0] !~ /Dominica|feria|in.*octava/i)
@@ -1177,8 +1184,8 @@ sub concurrence {
 
     # In Occurence (i.e. today): Simplex end after None.
     $ranklimit =
-        ($wrank[0] =~ /Dominica|feria|in.*octava/i) ? 2
-      : $rank >= 6 ? ($version !~ /trident/i ? 4.2 : $version !~ /cist/i ? 3.1 : 2.1)
+        ($wrank[0] =~ /Dominica|feria|in.*octava/i || $version =~ /cist/i) ? 2
+      : $rank >= 6 ? ($version !~ /trident/i ? 4.2 : 3.1)
       : $rank >= 5 ? 2.1
       : 2;
     @comentries = ();
