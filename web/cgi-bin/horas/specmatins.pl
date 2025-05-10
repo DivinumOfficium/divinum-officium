@@ -246,7 +246,8 @@ sub psalmi_matutinum {
   if ( $rule =~ /9 lectio/i
     && !gettype1960()
     && $rank >= 2
-    && !($dayofweek > 0 && $version =~ /trident/i && $winner{Rank} =~ /Dominica (?!infra.*Epi)/i))
+    && !($dayofweek > 0 && $version =~ /trident/i && $winner{Rank} =~ /Dominica (?!infra.*(?:Nat|Epi))/i)
+  )
   {
     setbuild2("9 lectiones");
 
