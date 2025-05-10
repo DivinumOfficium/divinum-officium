@@ -246,8 +246,7 @@ sub psalmi_matutinum {
   if ( $rule =~ /9 lectio/i
     && !gettype1960()
     && $rank >= 2
-    && !($dayofweek > 0 && $version =~ /trident/i && $winner{Rank} =~ /Dominica (?!infra.*(?:Nat|Epi))/i)
-  )
+    && !($dayofweek > 0 && $version =~ /trident/i && $winner{Rank} =~ /Dominica (?!infra.*(?:Nat|Epi))/i))
   {
     setbuild2("9 lectiones");
 
@@ -300,44 +299,28 @@ sub psalmi_matutinum {
 
   # Here we begin the logic for an office of three lessons. On nine-lesson days
   # we've already returned.
-  my @spec;
+  my $vers;
+  my $vn = dayofweek2i();
 
   if ($dayname[0] =~ /Pasc[1-6]/i && $version !~ /Trident/i && $votive !~ /C9|C12/) {    #??? ex
     if ($version =~ /196/ && $name eq 'Asc') {
       my %r = %{setupstring($lang, 'Tempora/Pasc5-4.txt')};
-
-      #@spec = split("\n", $r{'Ant Matutinum'});
-      @spec = split("\n", $r{'Nocturn 1 Versum'});
-      unshift(@spec, '') for 1 .. 3;
-      push(@spec, '') for 1 .. 3;
-      push(@spec, split("\n", $r{'Nocturn 2 Versum'}));
-      push(@spec, '') for 1 .. 3;
-      push(@spec, split("\n", $r{'Nocturn 3 Versum'}));
+      $vers = $r{"Nocturn $vn Versum"};
       setbuild("Pasc5-4", 'Versus ex Festo', 'subst');
     } else {
-      @spec = split("\n", $psalmi{"Pasch Ant Dominica"});
+      $vers = $psalmi{"Pasch $vn Versum"};
       setbuild("Psalmi matutinum", 'Versus ex Pasch Ant Dominica', 'subst');
     }
-    foreach my $i (3, 4, 8, 9, 13, 14) { $psalmi[$i] = $spec[$i]; }
 
-    my $i = dayofweek2i();
-
-    if ($version =~ /Praedicatorum/ && $dayofweek) {
+    if ($version =~ /Praedicatorum/ && $dayofweek && $winner !~ /Pasc5-4/) {
 
       # rubrics at page 455 1962 Breviary
-      @spec = split("\n", $psalmi{"Pasch $i Versum"});
       my $week = substr($dayname[0], -1);
       $week -= 3 if $week > 3;
       $week--;
       my $ant = substr($psalmi[0], 0, index($psalmi[0], ';') - 1);
       @psalmi = @psalmi[(5 * $week) .. (5 * $week + 2)];
       $psalmi[0] = "$ant$psalmi[0]" if $week;
-    } else {
-      if ($i == 1) {
-        ($psalmi[13], $psalmi[14]) = ($psalmi[3], $psalmi[4]);
-      } elsif ($i == 2) {
-        ($psalmi[13], $psalmi[14]) = ($psalmi[8], $psalmi[9]);
-      }
     }
   }
 
@@ -350,43 +333,46 @@ sub psalmi_matutinum {
   my @psalm_indices = (0, 1, 2);
 
   if ($version =~ /trident/i) {
+
     if ($rule !~ /1 nocturn/i) {
       push(@psalm_indices, 3, 4, 5);
     }
-    @spec = ($psalmi[6], $psalmi[7]);
+
+    if ($votive !~ /C9|C12/) {
+      $vers = "$psalmi[6]\n$psalmi[7]";
+    } else {
+      $vers = "$psalmi[13]\n$psalmi[14]";
+    }
 
     if ($dayofweek == 6 && $rule =~ /ex C10/i) {
-      @spec = split("\n", $psalmi{"BMV Versum"});
+      $vers = $psalmi{"BMV Versum"};
 
       # In the office of the BVM on Saturday under the Tridentine rubrics, Psalm 99
       # is replaced by Psalm 91, as the former is said at Lauds.
       $psalm_indices[1] = 8;
     }
 
-    if ($name =~ /^(?:Adv|Quad5?|Pasch)$/) {
-      my $i = $dayofweek;
-      $i -= 3 if $i > 3;
-      @spec = split("\n", $psalmi{"$name $i Versum"});
+    if ($name =~ /^(?:Adv|Quad5?|Pasch)$/ && $votive !~ /C9|C12/) {
+      $vers = $psalmi{"$name $vn Versum"};
     }
-  }
-
-  if (@psalmi > 9) {
-    push(@psalm_indices, 5, 6, 7, 10, 11, 12);
-
-    # Versum for 3 lectiones is variable
-    @spec = ($psalmi[13], $psalmi[14]);
+  } elsif (!$vers) {
+    $vers = "$psalmi[13]\n$psalmi[14]";
     setbuild2('Ord Versus per annum');
     $comment = 5;
   }
 
+  if (@psalmi > 9) {
+    push(@psalm_indices, 5, 6, 7, 10, 11, 12);
+  }
+
   if ($month == 12 && $day == 24) {
-    @spec = split("\n", $psalmi{"Nat24 Versum"});
+    $vers = $psalmi{"Nat24 Versum"};
     setbuild2('Subst Versus Nat24');
     $comment = 1;
   }
 
   if ($dayname[0] =~ /Pasc[07]/i) {
-    @spec = ($psalmi[3], $psalmi[4]);
+    $vers = "$psalmi[3]\n$psalmi[4]";
     setbuild2('Subst Versus for de tempore');
     $comment = 2;
   }
@@ -400,7 +386,7 @@ sub psalmi_matutinum {
     setbuild1("3 psalms 3 lectiones");
   }
 
-  push(@psalm_indices, @spec[0, 1]);
+  push(@psalm_indices, split("\n", $vers));
 
   nocturn(1, $lang, \@psalmi, @psalm_indices);
   lectiones(0, $lang);
