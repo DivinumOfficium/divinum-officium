@@ -1,8 +1,11 @@
 [Officium]
-Officium Beatæ Mariæ Virginis in Sabbato
+Sanctæ Mariæ Sabbato
+
+[Missa]
+Salve Sancta Parens (a Trinitate usque ad Adventum)
 
 [Rank]
-Sanctæ Mariæ Sabbato;;Simplex;;1.3;;vide C10
+;;Simplex;;1.3;;vide C10
 
 [Rule]
 vide C10
@@ -11,6 +14,9 @@ Special Lectio 3
 Doxology=Nat
 Antiphonas horas
 (rubrica tridentina nisi rubrica cisterciensis) Psalmi Dominica
+Gloria
+Suffr=Spiritu;Ecclesiæ,Papa;;
+Prefatio=Maria=veneratione;
 
 [Hymnus Vespera]
 @Commune/C11
@@ -31,10 +37,6 @@ Regína cæli, * lætáre, allelúja; quia quem meruísti portáre, allelúja; r
 
 [Oratio]
 @Commune/C11
-(sed tempore Adventus et rubrica cisterciensis)
-@Commune/C12:Oratio 2
-(sed tempore nativitatis aut epiphaniæ aut post partum et rubrica cisterciensis)
-@Commune/C12:Oratio Tertia
 
 [Invit]
 Ave María, grátia plena, * Dóminus tecum.
@@ -196,3 +198,27 @@ Ex libro Officiórum S. Ambrósii Epíscopi
 !Lib. 1, cap. 18
 Bonus regéndæ castitátis pudor est comes, qui primus, in ipso cognitiónis ingréssu, Dómini Matrem comméndat legéntibus, et tamquam testis lócuples dignam quæ ad tale munus eligerétur ástruit: quod in cubículo, quod sola, quod salutáta ab Angelo tacet et mota est in intróitu ejus, quod ad virílis sexus spéciem peregrínam turbátur aspéctus Vírginis. Itaque, quamvis esset húmilis præ verecúndia tamen non resalutávit, nec ullum respónsum rétulit, nisi ubi de suscipiénda Dómini generatióne cognóvit; ut qualitátem efféctus dísceret, non ut sermónem refélleret.
 &teDeum
+
+[Introitus]
+@Commune/C11
+
+[Lectio]
+@Commune/C11
+
+[Graduale]
+@Commune/C11
+
+[Evangelium]
+@Commune/C11
+
+[Offertorium]
+@Commune/C11
+
+[Secreta]
+@Commune/C11
+
+[Communio]
+@Commune/C11
+
+[Postcommunio]
+@Commune/C11

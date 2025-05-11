@@ -1429,16 +1429,12 @@ sub precedence {
 
   $C10 = 'C10';
 
-  if ($missa) {
-    $C10 .=
-        ($dayname[0] =~ /Adv/i) ? 'a'
-      : ($month == 1 || ($month == 2 && $day == 1)) ? 'b'
-      : ($dayname[0] =~ /(Epi|Quad)/i) ? 'c'
-      : ($dayname[0] =~ /Pasc/i) ? 'Pasc'
-      : '';
-  } else {
-    $C10 .= ($month == 1 || ($month == 2 && $day == 1)) ? 'n' : '';
-  }
+  $C10 .=
+      ($dayname[0] =~ /Adv/i) ? 'a'
+    : ($month == 1 || ($month == 2 && $day == 1)) ? 'b'
+    : ($dayname[0] =~ /(Epi|Quad)/i) ? 'c'
+    : ($dayname[0] =~ /Pasc/i) ? 'Pasc'
+    : '';
 
   ### Get the relevant Office and Commemorations
   if ($hora =~ /vespera|completorium/i && $votive !~ /C12/i) {
