@@ -1,5 +1,5 @@
-[Officium]
-Commune confessoris doctoris Paschal time; In medio
+[Name]
+Commun d'un confesseur Docteur Temps Pascal; In medio
 
 [Rule]
 Gloria
@@ -14,9 +14,6 @@ $Per Dominum.
 [Lectio]
 @Commune/C5a:Lectio
 
-[Lectio1]
-@Commune/C5a:Lectio1
-
 [Graduale]
 @Commune/C5a:Graduale
 
@@ -26,17 +23,20 @@ $Per Dominum.
 [Offertorium]
 @Commune/C5a:Offertorium
 
-[Secreta]
+[Secreta] !Pro Doctore pontifice
 @Commune/C5a:Secreta
 
-[Secreta1]
+[Secreta1] Pro Doctore non Pontifice.
 @Commune/C5a:Secreta1
 
 [Communio]
 @Commune/C5a:Communio
 
-[Postcommunio]
+[Postcommunio] Pro Doctore Pontifice.
 @Commune/C5a:Postcommunio
 
-[Postcommunio1]
+[Postcommunio1] Pro Doctore non Pontifice.
 @Commune/C5a:Postcommunio1
+
+[Lectio1]
+@Commune/C5a:Lectio1
