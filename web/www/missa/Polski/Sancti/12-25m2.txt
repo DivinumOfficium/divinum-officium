@@ -1,5 +1,8 @@
+[Officium]
+In Nativitatis Domini in aurora
+
 [Rank]
-In Nativitatis Domini in aurora;;Duplex I Classis;;6.5
+;;Duplex I Classis;;6.5
 
 [Rule]
 Gloria
@@ -74,5 +77,4 @@ $Per eundem
 
 [Commemoratio Postcommunio]
 !Wspomnienie św. Anastazji
-Nasyciłeś, Panie, rodzinę Twoją świętymi darami: wzmacniaj nas stale za wstawiennictwem tej, której uroczystość obchodzimy.
-$Per Dominum
+@Commune/C6b:Postcommunio

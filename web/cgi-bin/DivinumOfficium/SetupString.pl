@@ -169,7 +169,8 @@ sub get_tempus_id {
       : ($month == 1 || ($month == 2 && ($day == 1 || $day == 2 && !$vesp_or_comp))) ? 'post Epiphaniam post partum'
       : ($month == 2) ? 'post Epiphaniam'
       : 'post Pentecosten'
-    : /^Quadp(\d)/ && ($1 < 3 || $dayofweek < 3) ? ($month == 1 || $day == 1 || ($day == 2 && !$vesp_or_comp))
+    : /^Quadp(\d)/ && ($1 < 3 || $dayofweek < 3)
+    ? ($month == 1 || ($month == 2 && ($day == 1 || $day == 2 && !$vesp_or_comp)))
       ? 'Septuagesimæ post partum'
       : 'Septuagesimæ'
     : /^Quad(\d)/ && $1 < 5 ? 'Quadragesimæ'
@@ -502,7 +503,7 @@ sub setupstring($$%) {
     $basedir =~ s/horas/missa/g;         # to infinite cycles github #525
   }
 
-  if ($fname =~ /Comment.txt$|C[1-5](?!\d)[a-z]?/) {
+  if ($fname =~ /Comment.txt$|C[1-5](?![3-9])[a-z]?/) {
     $basedir =~ s/missa/horas/g;         # missa uses comments from horas dir
   }
 

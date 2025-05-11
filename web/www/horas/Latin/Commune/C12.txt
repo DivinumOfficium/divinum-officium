@@ -2,7 +2,7 @@
 Officium parvum Beatæ Maríæ Virginis
 
 [Rank]
-Officium Parvum Beatæ Maríæ Virginis;;Simplex;;1;;ex C11
+;;Simplex;;1;;ex C11
 
 [Rule]
 ex C11;
@@ -188,7 +188,7 @@ $Deo gratias
 @Commune/C10:Ant 2_:s/femíneo/fœmíneo/
 
 [Oratio 2]
-v. Deus, qui de beátæ Maríæ Vírginis útero Verbum tuum, Angelo nuntiánte, carnem suscípere voluísti: præsta supplícibus tuis; ut, qui vere eam Genetrícem Dei crédimus, ejus apud te intercessiónibus adjuvémur.
+Deus, qui de beátæ Maríæ Vírginis útero Verbum tuum, Angelo nuntiánte, carnem suscípere voluísti: præsta supplícibus tuis; ut, qui vere eam Genetrícem Dei crédimus, ejus apud te intercessiónibus adjuvémur.
 $Per eumdem
 
 [Special Prima]
@@ -297,8 +297,7 @@ _
 $Deo gratias
 
 [Oratio Tertia]
-v. Deus, qui salútis ætérnæ, beátæ Maríæ virginitáte fecúnda, humáno géneri prǽmia præstitísti: tríbue, quǽsumus; ut ipsam pro nobis intercédere sentiámus, per quam merúimus auctórem vitæ suscípere, Dóminum nostrum Jesum Christum Fílium tuum:
-$Qui tecum
+@Sancti/01-01:Oratio
 
 [Special Sexta]
 @:Minor intro

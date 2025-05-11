@@ -18,13 +18,13 @@ R. Nuntiávit Maríæ.
 [Versum 1] (rubrica cisterciensis)
 @Commune/C11
 
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
 [Ant 1] (rubrica cisterciensis)
 @Commune/C11:Ant 3
 (sed tempore paschali)
 @:Ant 1_Pasch
+
+[Lectio21]
+!from tempora
 
 [Responsory3]
 @Commune/C12
@@ -46,13 +46,13 @@ R. In delíciis tuis, sancta Dei Génetrix.
 [Responsory Laudes] (rubrica cisterciensis)
 @CommuneM/C11
 
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
 [Ant 2] (rubrica cisterciensis)
 @Commune/C11::s/, allel[uú][ij]a//i
 (sed tempore paschali)
 @Commune/C10:Ant 1_Pasch
-
-[Lectio21]
-!from tempora
 
 [Ant Prima]
 @Commune/C7:Ant Vespera:1

@@ -1,5 +1,8 @@
+[Officium]
+In Nativitatis Domini in aurora
+
 [Rank]
-In Nativitatis Domini in aurora;;Duplex I Classis;;6.5
+;;Duplex I Classis;;6.5
 
 [Rule]
 Gloria
@@ -66,5 +69,4 @@ $Per eundem
 
 [Commemoratio Postcommunio]
 !Спомин св. Анастасії
-Господи, Ти наситив сім'ю Твою святими Дарами: укріпи нас, просимо, заступництвом тієї, чиє торжество святкуємо.
-$Per Dominum
+@Commune/C6b:Postcommunio
