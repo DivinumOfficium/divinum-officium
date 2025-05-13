@@ -1,0 +1,48 @@
+@Commune/C10
+
+[Missa]
+Vultum tuum (a Nativitate usque ad Purificationem)
+
+[Ant 1]
+@Sancti/01-01:Ant 3
+
+[Oratio]
+@Sancti/01-01
+
+[Ant Laudes] (rubrica tridentina)
+@Sancti/01-01:Ant Vespera:s/;;.*//g
+
+[Ant 2]
+@Sancti/01-01:Ant 2
+
+[Introitus]
+!Ps 44:13; 44:15; 44:16
+v. Vultum tuum deprecabúntur omnes dívites plebis: adducéntur Regi Vírgines post eam: próximæ ejus adducéntur tibi in lætítia et exsultatióne.
+!Ps 44:2
+Eructávit cor meum verbum bonum: dico ego ópera mea Regi.
+&Gloria
+v. Vultum tuum deprecabúntur omnes dívites plebis: adducéntur Regi Vírgines post eam: próximæ ejus adducéntur tibi in lætítia et exsultatióne.
+
+[Lectio]
+@Sancti/12-25m2
+
+[Graduale]
+!Ps 44:3; 44:2
+Speciósus forma præ fíliis hóminum: diffúsa est grátia in lábiis tuis.
+V. Eructávit cor meum verbum bonum: dico ego ópera mea Regi: lingua mea cálamus scribæ velóciter scribéntis. Allelúja, allelúja.
+V. Post partum, Virgo, invioláta permansísti: Dei Génetrix, intercéde pro nobis. Allelúja.
+
+[Tractus]
+@:Graduale:s/\s+Al.*//s
+_
+@Commune/C11::s/^.*?\s(\!)//s
+
+[Evangelium]
+@Sancti/12-25m2
+
+[Offertorium]
+Felix namque es, sacra Virgo María, et omni laude digníssima: quia ex te ortus est sol justítiæ, Christus, Deus noster.
+
+[Postcommunio]
+Hæc nos commúnio, Dómine, purget a crímine: et, intercedénte beáta Vírgine Dei Genetríce María, cœléstis remédii fáciat esse consórtes.
+$Per eundem
