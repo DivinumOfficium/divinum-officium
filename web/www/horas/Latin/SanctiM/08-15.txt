@@ -1,8 +1,14 @@
 @SanctiM/08-15t
 
+[Rank] (rubrica cisterciensis)
+In Assumptione Beatæ Mariæ Virginis;;Duplex I classis cum Octava Communi;;6;;ex C11
+
 [Rule]
 12 lectiones
 Doxology=Nat
+
+[Versum 1] (rubrica cisterciensis)
+@CommuneM/C10:Versum 1a
 
 [Hymnus Vespera]
 @Sancti/08-15:Hymnus Vespera:s/Jesu, tibi sit glória/Glória tibi, Dómine/
@@ -52,15 +58,38 @@ Doxology=Nat
 
 [Capitulum Laudes]
 @Sancti/08-15
+(sed rubrica cisterciensis)
+@Sancti/08-15t
 
 [Hymnus Laudes]
 @Sancti/08-15
+(sed rubrica cisterciensis)
+@Commune/C11
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Responsory Laudes] (rubrica cisterciensis)
+@CommuneM/C11
+
+[Responsory TertiaM] (rubrica cisterciensis)
+@Sancti/08-15t:Versum 1
 
 [Capitulum Sexta]
 @Sancti/08-15
+(sed rubrica cisterciensis)
+@Sancti/01-23AV
 
 [Capitulum Nona]
 @Sancti/08-15
+(sed rubrica cisterciensis)
+@Sancti/01-23AV
 
-[Hymnus Vespera 3]
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/08-15t:Responsory Tertia
+
+[Hymnus Vespera 3] (nisi rubrica cisterciensis)
 @Commune/C11:Hymnus Vespera
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
