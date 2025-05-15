@@ -18,6 +18,9 @@ R. Nuntiávit Maríæ.
 [Versum 1] (rubrica cisterciensis)
 @Commune/C11
 
+[Versum 1a]
+@:MM Capitulum:s/.*_//s
+
 [Ant 1] (rubrica cisterciensis)
 @Commune/C11:Ant 3
 (sed tempore paschali)
