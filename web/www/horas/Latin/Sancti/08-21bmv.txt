@@ -6,6 +6,21 @@ ex Sancti/08-15;
 9 lectiones
 No secunda vespera
 
+[Ant Vespera] (rubrica cisterciensis)
+@Sancti/08-15t::s/;;.*//g
+
+[Ant 1] (rubrica cisterciensis)
+@Sancti/08-16bmv
+
+[Ant 2] (rubrica cisterciensis)
+@Sancti/08-16bmv
+
+[Versum 1] (rubrica cisterciensis)
+@SanctiM/08-15
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
 [Lectio1]
 De Canticis Canticorum
 !Song 7:1-5
