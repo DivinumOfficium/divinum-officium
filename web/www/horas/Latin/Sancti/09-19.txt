@@ -5,6 +5,8 @@ S. Januarii Episcopi et Sociorum Martyrum
 ;;Duplex;;3;;vide C3a-1
 (sed rubrica 1617)
 ;;Semiduplex;;2.2;;vide C3a-1
+(sed rubrica cisterciensis)
+;;Commemoratio;;1;;vide C3a-1
 
 [Rule]
 vide C3a-1;
@@ -13,6 +15,12 @@ Quorum Festum
 
 [Name]
 Januárii et Sociórum ejus
+
+[Versum 1] (rubrica altovadensis)
+@Commune/C3:Nocturn 2 Versum
+
+[Versum 2] (rubrica altovadensis)
+@:Versum 1
 
 [Lectio4]
 Januarius, Benevénti epíscopus, Diocletiáno et Maximiáno in Christiános sæviéntibus, ad Timotheum Campaniæ præsidem ob christianæ fidei professiónem Nolam perducitur. Ibi, ejus constántia varie tentata, in ardentem fornacem conjéctus, ita illæsus evasit, ut ne vestiméntum aut capillum quidem flamma violáverit. Hinc præses, accénsus iracúndia, Mártyris corpus imperat usque eo dístrahi, quoad nervórum compages artuumque solvántur. Festus interea ejus diaconus et Desiderius lector, comprehénsi vinctique, una cum episcopo ante rhedam præsidis Puteleos pertrahúntur, et in eumdem carcerem, in quo Sosius Misenas et Próculus Puteolánus diáconus, Eutyches et Acutius láici, ad bestias damnati, detinebántur, simul conjiciúntur.

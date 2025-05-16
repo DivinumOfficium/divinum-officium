@@ -7,6 +7,12 @@
 12 lectiones
 Psalmi Dominica
 
+[Ant Vespera] (rubrica cisterciensis)
+@Sancti/09-29
+
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/08-06:Responsory Laudes
+
 [Hymnus Matutinum]
 @:HymnusM Vespera
 
@@ -102,17 +108,31 @@ R. Fidélis sermo, et omni acceptióne dignus: † Míchaël Archángelus qui pu
 V. Gaudent Angeli lætántur Archángeli de Michaéle Dei núntio.
 R. Grátia Dei ille victor in cælis éxstitit et ille hostis antíquus pátuit ruínæ magnæ.
 
+[Ant Laudes] (rubrica cisterciensis)
+@Sancti/09-29:Ant Vespera
+
 [Responsory Laudes]
 @Sancti/05-08:Responsory Nona:s/._.*//s
+(sed rubrica cisterciensis)
+@Sancti/05-08:Responsory Tertia:s/._.*//s
 
 [Responsory TertiaM]
 @:Versum 1
+(sed rubrica cisterciensis)
+@Sancti/05-08:Nocturn 1 Versum:s/, all?el[uú][ij]a//g
 
 [Responsory SextaM]
 @Sancti/05-08:Responsory Tertia:s/.*_.//s
+(sed rubrica cisterciensis)
+@Sancti/05-08:Nocturn 2 Versum:s/, all?el[uú][ij]a//g
 
 [Responsory NonaM]
 @:Versum 3
+(sed rubrica cisterciensis)
+@Sancti/05-08:Nocturn 3 Versum:s/, all?el[uú][ij]a//g
 
-[Ant Vespera 3]
+[Ant Vespera 3] (nisi rubrica cisterciensis)
 @Sancti/05-08:Ant Vespera:s/\.$/;;109/ s/\.$/;;110/ s/\.$/;;111/ s/\.$/;;137/
+
+[Ant 3] (rubrica cisterciensis)
+@Sancti/09-29
