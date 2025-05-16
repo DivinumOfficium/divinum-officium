@@ -833,9 +833,9 @@ sub getitem {
 
   #if ($type =~ /(Introitus|Offertorium|Communio)/) {
   if ($dayname[0] =~ /Pasc/i) {
-    $w =~ s/\((Allel.*?)\)/$1/ig;
+    $w =~ s/\((Al+[eé].*?)\)/$1/ig;
   } else {
-    $w =~ s/\(Allel.*?\)//ig;
+    $w =~ s/\(Al+[eé].*?\)//ig;
   }
 
   # To deal with Allelujas written in Cyrillic.
