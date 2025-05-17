@@ -4,6 +4,9 @@ In Exaltatione Sanctæ Crucis;;Duplex majus;;4;;ex Sancti/05-03
 [Rank] (rubrica 196)
 In Exaltatione Sanctæ Crucis;;Duplex II classis;;5.5;;ex Sancti/05-03
 
+[Rank] (rubrica cisterciensis)
+In Exaltatione Sanctæ Crucis;;Duplex II classis;;3;;ex Sancti/05-03
+
 [Rule]
 ex Sancti/05-03
 Domini
@@ -13,9 +16,26 @@ Antiphonas horas
 Psalm5 Vespera=116
 Festum Domini
 
+[Ant Vespera] (rubrica cisterciensis)
+Nos autem * gloriári opórtet in Cruce Dómini nostri Jesu Christi.
+Salva nos, Christe Salvátor, * per virtútem Crucis: qui salvásti Petrum in mari, miserére nobis.
+Tuam Crucem * adorámus, Dómine, tuam gloriósam recólimus passiónem: miserére nostri, qui passus es pro nobis.
+Ecce Crucem Dómini, * fúgite, partes advérsæ, vicit Leo de tribu Juda, radix David, allelúia.
+Per signum Crucis * de inimícis nostris líbera nos, Deus noster.
+
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/05-03:Responsory Sexta:s/._.*//s s/, allelúja//g s/(et benedícimus tibi:? \* )?Allelúja/* Et benedícimus tibi/g s/\. \*/./
+
+[Ant 1] (rubrica cisterciensis)
+Crux fidélis, * inter omnes arbor una nóbilis, nulla silva talem profert, fronde, flore, gérmine: dulce lignum, dulces clavos, dulce pondus sústinet.
+
 [Oratio]
 Deus, qui nos hodiérna die Exaltatiónis sanctæ Crucis ánnua solemnitáte lætíficas: præsta, quǽsumus; ut, cujus mystérium in terra cognóvimus, ejus redemptiónis prǽmia in cælo mereámur.
 $Per eumdem
+
+[Commemoratio 1] (rubrica 1951)
+!Commemoratio diei infra Octavam Nativitatis B.M.V.
+@Sancti/09-08:Oratio
 
 [Invit]
 Christum Regem pro nobis in Cruce exaltátum, * Veníte, adorémus.
@@ -100,6 +120,11 @@ R. Quia Dóminus regnávit a ligno.
 
 [Ant Laudes]
 @Sancti/05-03:Ant Vespera
+(sed rubrica cisterciensis)
+@:Ant Vespera
+
+[Responsory Laudes] (rubrica cisterciensis)
+@Sancti/05-03:Responsory Tertia:s/._.*//s s/, allelúja//g s/(erit in cælo,? \* )?Allelúja/* Erit in cælo/g s/\. \*/./
 
 [Responsory Tertia]
 @Sancti/05-03::s/, allelúja//g s/(erit in cælo,? \* )?Allelúja/* Erit in cælo/g s/\. \*/./

@@ -1,8 +1,12 @@
 [Officium]
 S. Pii X Papæ Confessoris
+(sed rubrica cisterciensis)
+S. Pii X., Papæ et Confessoris (1965)
 
 [Rank]
 ;;Duplex;;3;;vide C4b
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;vide C4b
 
 [Rule]
 vide C4b;mtv
@@ -41,5 +45,5 @@ Contra hos ergo vígilat tótidem inculcáta ista vox Christi, quos Apóstolos g
 Mérito dícitur Petro: díligis me, et respóndet, amo te, eíque refértur, pasce agnos meos, et hoc íterum, hoc tértio. Ubi étiam demonstrátur unum atque idem esse amórem et dilectiónem; nam étiam Dóminus novíssime non ait, díligis me, sed amas me. Non ergo nos, sed ipsum amémus, et in pascéndis óvibus ejus ea quæ sunt ejus, non ea quæ sunt nostra, quærámus. Néscio enim quo inexplicábili modo, quisquis seípsum, non Deum amat, non se amat: et quisquis Deum, non seípsum, amat, ipse se amat. Qui enim non potest vívere de se, móritur útique amándo se: non ergo se amat, qui ne vivat se amat.
 &teDeum
 
-[Ant 3]
+[Ant 3] (nisi rubrica cisterciensis)
 @Commune/C4:Ant 3 summi Pontificis
