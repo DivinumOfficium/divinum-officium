@@ -212,7 +212,7 @@ sub psalmi_matutinum {
     $prefix .= ' ' . translate('et Psalmi', $lang);
   }
 
-  if ($dayname[0] =~ /Pasc[1-6]/i && $votive !~ /C9|C12/ && $version !~ /Praedicatorum/) {
+  if ($dayname[0] =~ /Pasc[1-6]/i && $votive !~ /C9|C12/ && ($version !~ /Praedicatorum/ || $winner =~ /Tempora/)) {
     @psalmi = ant_matutinum_paschal(\@psalmi, $lang, length($w));
   }
 
@@ -1342,7 +1342,7 @@ sub ant_matutinum_paschal {
       }
     }
   } else {
-    if ($dayname[0] =~ /Pasc[1-5]/i && $dayname[1] =~ /Dominica/) {
+    if ($dayname[0] =~ /Pasc[1-5]/i && $dayname[1] =~ /Dominica/ && $version !~ /Praedicatorum/) {
       my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi/Psalmi matutinum.txt')};
       my @a = split("\n", $psalmi{Pasch0});
 

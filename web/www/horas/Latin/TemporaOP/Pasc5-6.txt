@@ -1,0 +1,29 @@
+[Officium]
+@Tempora/Pasc5-6
+
+[Rule]
+no Te Deum
+
+[Lectio1]
+@Tempora/Pasc1-2:Lectio1:1-6 s/-8/-4/
+
+[Responsory1]
+R. Exaltáre, Dómine, allelúja.
+* In virtúte tua, allelúja.
+R. Cantábimus et psallémus.
+R. In virtúte tua, allelúja.
+
+[Lectio2]
+@Tempora/Pasc1-2:Lectio1:2 s/1-/5-/
+@Tempora/Pasc1-2:Lectio1:7-10
+
+[Responsory2]
+@Tempora/Pasc5-4:Responsory5:1-3 s/\n\* (.*?), (.*?)\n(.*)/$1,\n* \u$2\n$3R. \u$2/s
+
+[Lectio3]
+@Tempora/Pasc1-2:Lectio1:2 s/1-8/9-13/
+@TemporaM/Pasc7-0:Lectio2:3-5
+@TemporaM/Pasc7-0:Lectio3:2-3
+
+[Ant 2]
+@TemporaOP/Pasc5-5
