@@ -1,0 +1,65 @@
+[Officium]
+SS. Ursulae et Sociarum, Virginum et Martyrum
+
+[Rank]
+;;Semiduplex;;2.2;;ex C6
+
+[Rule]
+ex C6;
+
+[Ant Vespera]
+Hæc est quæ nescívit, * thorum in delícto, habébit fructum in respectióne animárum sanctárum;;109
+Unguéntum effúsum * nomen tuum, ídeo adolescéntulæ dilexérunt te nimis.;;112
+Média nocte * clamor factus est: Ecce sponsus venit, exíte óbviam ei.;;121
+Vírginum chorus * laudáte Dóminum in cœlis, allelúia.;;126
+Tunc surrexérunt omnes * Vírgines illæ, et ornavérunt lámpades suas.;;
+
+[Responsory Vespera]
+R.br. Unguéntum effúsum * nomen tuum.
+R. Unguéntum effúsum * nomen tuum.
+V. Ideo adolescéntulæ dilexérunt te nimis.
+R. Nomen tuum.
+
+[Hymnus Vespera]
+@Commune/C6:Hymnus Vespera:1-9:s/pergis/pascis/
+_
+@Commune/C6:Hymnus Vespera:21-25:s/Virtus, honor, laus/Laus, honor, virtus/ s/cum/et/
+
+[Hymnus Matutinum]
+@Commune/C6:Hymnus Vespera:1-9:s/pergis/pascis/
+_
+@Commune/C6:Hymnus Vespera:21-25:s/Virtus, honor, laus/Laus, honor, virtus/ s/cum/et/
+
+[Versum 1]
+@Commune/C6a
+
+[Ant 1]
+@Commune/C6a
+
+[Oratio]
+Da nobis, quǽsumus, Dómine, Deus noster, sanctárum Vírginum et Mártyrum tuárum Ursulæ et Sociárum ejus palmas incessábili devotióne venerári: ut, quas digna mente non póssumus celebráre, humílibus saltem frequentémus obséquiis.
+$Per Dominum
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
+
+[Responsory Laudes]
+@:Responsory Vespera
+
+[Hymnus Laudes]
+@Commune/C6:Hymnus Vespera:11-25:s/tendis/pergis/ s/súpplices/lárgius/ s/ut addas/adáuge/ s/Virtus, honor, laus/Laus, honor, virtus/ s/cum/et/
+
+[Versum 2]
+@Commune/C6a
+
+[Ant 2]
+@CommuneM/C3:Ant 3:s/ali/aly/g s/byli korunováni/byly korunovány/
+
+[Capitulum Nona]
+@Commune/C6b
+
+[Versum 3]
+@Commune/C6a
+
+[Ant 3]
+@CommuneM/C7b:Ant 1
