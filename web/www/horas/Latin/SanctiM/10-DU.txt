@@ -95,6 +95,9 @@ R. Et ea, quæ sub ipso erant, replébant templum.
 @Sancti/10-DU::1-30
 @:Doxology
 
+[Responsory Laudes] (rubrica cisterciensis)
+@Sancti/10-DU:Responsory Tertia
+
 [Responsory TertiaM]
 @Sancti/10-DU:Responsory Tertia:s/.*_.//s
 
@@ -103,3 +106,6 @@ R. Et ea, quæ sub ipso erant, replébant templum.
 
 [Responsory NonaM]
 @Sancti/10-DU:Versum 2
+
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/10-DU:Responsory Sexta

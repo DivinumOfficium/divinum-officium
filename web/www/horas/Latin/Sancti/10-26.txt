@@ -5,6 +5,8 @@ S. Evaristi Papæ et Martyris
 ;;Simplex;;1.2;;vide C2b
 (sed rubrica 1960)
 ;;Simplex;;1.1;;vide C2b
+(sed rubrica cisterciensis)
+;;Commemoratio;;1;;vide C2b
 
 [Rule]
 vide C2b;

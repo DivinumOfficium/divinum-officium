@@ -1,5 +1,7 @@
 [Rank]
 S. Hedwigis Viduæ;;Semiduplex;;2.2;;vide C7a
+(sed rubrica cisterciensis)
+S. Hedwigis, Viduæ O.N.;;Simplex;;1.2;;vide C7a
 
 [Rule]
 vide C7a
@@ -8,6 +10,10 @@ vide C7a
 [Oratio]
 Deus, qui beátam Hedwígem a sǽculi pompa ad húmilem tuæ crucis sequélam toto corde transíre docuísti: concéde; ut ejus méritis et exémplo discámus peritúras mundi calcáre delícias, et in ampléxu tuæ crucis ómnia nobis adversántia superáre:
 $Qui vivis
+
+[Oratio] (rubrica cisterciensis)
+Tuórum corda fidélium, Deus miserátor, illústra: et beátæ Hedwígis précibus gloriósis, fac nos próspera mundi despícere, et cœlésti semper consolatióne gaudére.
+$Per Dominum
 
 [Invit]
 @Commune/C7::s/ N/ Hedwígis/
