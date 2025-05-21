@@ -11,8 +11,16 @@ Doxology=Nat
 Ipsa Virgo Virginum
 (sed rubrica 196 omittitur)
 
+[Responsory Vespera 1] (rubrica cisterciensis)
+R. Quam pulchra es, amíca mea, quam pulchra es et suávis! óculi tui columbárum:
+* Absque eo quod intrínsecus latet.
+V. Sicut vitta coccínea lábia tua, et elóquium tuum dulce.
+R. Absque eo quod intrínsecus latet.
+
 [Ant 1]
 @Commune/C10:Ant 2_:s/Christo:.*/Christo, allelúja./
+(sed rubrica cisterciensis)
+@Commune/C10:Ant 2_
 
 [Oratio]
 Deus, qui beátam Maríam semper Vírginem, Spíritus Sancti habitáculum, hodiérna die in templo præsentári voluísti: præsta, quǽsumus; ut, ejus intercessióne, in templo glóriæ tuæ præsentári mereámur.
@@ -39,6 +47,18 @@ Quid ergo éxsequar cibórum parsimóniam, officiórum redundantiam: álterum ul
 
 [Ant 2]
 @Commune/C11
+
+[Commemoratio 2] (rubrica cisterciensis)
+@SanctiM/11-21M:Oratio:s/N\./Columbáni/
+
+[Ant Sexta] (rubrica cisterciensis)
+@Sancti/09-08:Ant Vespera:4
+
+[Capitulum Sexta] (rubrica cisterciensis)
+@Sancti/01-23AV
+
+[Capitulum Nona] (rubrica cisterciensis)
+@Sancti/01-23AV
 
 [Ant 3]
 @:Ant 1

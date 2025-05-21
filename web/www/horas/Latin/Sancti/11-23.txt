@@ -3,7 +3,7 @@ S. Clementis Papæ et Martyris
 
 [Rank]
 ;;Duplex;;3;;vide C2b
-(sed rubrica 1570 aut rubrica 1617)
+(sed rubrica 1570 aut rubrica 1617 aut rubrica cisterciensis)
 ;;Semiduplex;;2.2;;vide C2b
 
 [Rule]
@@ -117,6 +117,9 @@ Quisnam est fidélis servus et prudens, quem constítuit Dóminus super família
 
 [Ant 2]
 Cum iter ad mare cepísset, * pópulus voce magna clamábat: Dómine Jesu Christe, salva illum; et Clemens cum lácrimis dicébat: Súscipe, Pater, spíritum meum.
+
+[Ant 2] (rubrica cisterciensis)
+Orémus omnes * ad Dóminum Jesum Christum, ut osténdat nobis Mártyris sui corpus.
 
 [Ant Vespera 3]
 @:Ant Vespera:s/116/115/

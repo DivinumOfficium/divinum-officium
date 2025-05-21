@@ -5,10 +5,16 @@ S. Caroli Episcopi et Confessoris
 ;;Duplex;;3;;vide C4
 (sed rubrica monastica)
 ;;Simplex;;1.1;;vide C4
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.2;;vide C4
 
 [Rule]
 vide C4;
 9 lectiones
+(rubrica cisterciensis) Psalmi Dominica
+
+[Versum 3] (die Caroli et rubrica cisterciensis)
+@CommuneM/C4:Nocturn 1 Versum
 
 [Oratio]
 Ecclésiam tuam, Dómine, sancti Cároli Confessóris tui atque Pontíficis contínua protectióne custódi: ut, sicut illum pastorális sollicitúdo gloriósum réddidit; ita nos ejus intercéssio in tuo semper fáciat amóre fervéntes.

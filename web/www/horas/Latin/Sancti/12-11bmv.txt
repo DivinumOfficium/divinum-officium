@@ -4,3 +4,8 @@ De IV die infra Octavam Concept. Immac. Beatæ Mariæ Virginis;;Semiduplex;;2.19
 [Rule]
 vide Sancti/12-08;
 Doxology=Nat
+(rubrica cisterciensis) Psalmi Feria
+
+[Ant Vespera] (rubrica cisterciensis)
+@Sancti/12-08::s/;;.*//g
+
