@@ -2,6 +2,7 @@
 
 [Rule]
 12 lectiones
+(rubrica cisterciensis) Psalmi Dominica
 
 [AntMatutinumM]
 Dum sacraménta * offérret beátus Martínus, † globus ígneus appáruit super caput ejus.;;20
@@ -87,5 +88,5 @@ R. Et rosa fulget in Gállia.
 [Lectio12]
 @Sancti/11-11:Lectio8:s/.* Illa /Illa /s
 
-[Ant Vespera 3]
+[Ant Vespera 3] (nisi rubrica cisterciensis)
 @Sancti/11-11:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//
