@@ -11,24 +11,24 @@ $REGULAR_VERSUS
 (sed tempore Nativitatis)
 V. Verbum caro factum est, alleluja.
 (sed die Sabbato Sancto)
-V. Vespere autem sabbati, quae lucescit in prima sabbati, alleluia.
+V. Vespere autem sabbati, quae lucescit in prima sabbati, alleluja.
 (sed tempore Octava Paschæ)
-V. Haec dies quam fecit Dominus, alleluia.
+V. Haec dies quam fecit Dominus, alleluja.
 (sed tempore Octava Ascensionis)
-V. Ascendit Deus in jubilatione, alleluia.
+V. Ascendit Deus in jubilatione, alleluja.
 (sed tempore Octava Pentecostes)
-V. Spiritus Domini replevit orbem terrarum, alleluia.
+V. Spiritus Domini replevit orbem terrarum, alleluja.
 _
 (sed tempore Nativitatis)
 V. Et habitavit in nobis, alleluja
 (sed die Sabbato Sancto)
-R. Venit Maria Magdalene, et altera Maria, videre sepulcrum, alleluia.
+R. Venit Maria Magdalene, et altera Maria, videre sepulcrum, alleluja.
 (sed tempore Octava Paschæ)
-R. Exsultemus et laetemur in ea, alleluia.
+R. Exsultemus et laetemur in ea, alleluja.
 (sed tempore Octava Ascensionis)
-R. Et Dominus in voce tubae, alleluia.
+R. Et Dominus in voce tubae, alleluja.
 (sed tempore Octava Pentecostes)
-R. Et hoc quod continet omnia, scientiam habet vocis, alleluia.
+R. Et hoc quod continet omnia, scientiam habet vocis, alleluja.
 
 [Versus Ante Prandium]
 @:Versus Ante:s/\$REGULAR_VERSUS/V. Oculi omnium, * in te sperant, Domine, et tu das escam illorum in tempore opportuno. Aperis tu manum tuam, et imples omne animal benedictione./
@@ -74,24 +74,24 @@ $REGULAR_VERSUS1
 (sed tempore Nativitatis)
 V. Notum fecit Dominus, alleluja. 
 (sed die Sabbato Sancto)
-V. Vespere autem sabbati, quae lucescit in prima sabbati, alleluia.
+V. Vespere autem sabbati, quae lucescit in prima sabbati, alleluja.
 (sed tempore Octava Paschæ)
-V. Haec dies quam fecit Dominus, alleluia.
+V. Haec dies quam fecit Dominus, alleluja.
 (sed tempore Octava Ascensionis)
-V. Ascendens Christus in altum, alleluia.
+V. Ascendens Christus in altum, alleluja.
 (sed tempore Octava Pentecostes)
-V. Repleti sunt omnes Spiritu sancto, alleluia.
+V. Repleti sunt omnes Spiritu sancto, alleluja.
 $REGULAR_VERSUS2
 (sed tempore Nativitatis)
 R. Salutare suum, alleluja.
 (sed die Sabbato Sancto)
-R. Venit Maria Magdalene, et altera Maria, videre sepulcrum, alleluia.
+R. Venit Maria Magdalene, et altera Maria, videre sepulcrum, alleluja.
 (sed tempore Octava Paschæ)
-R. Exsultemus et laetemur in ea, alleluia.
+R. Exsultemus et laetemur in ea, alleluja.
 (sed tempore Octava Ascensionis)
-R. Captivam duxit captivitatem, alleluia.
+R. Captivam duxit captivitatem, alleluja.
 (sed tempore Octava Pentecostes)
-R. Et coeperunt loqui, alleluia.
+R. Et coeperunt loqui, alleluja.
 
 [Versus Post Prandium]
 @:Versus Post:s/\$REGULAR_VERSUS1/V. Confiteantur tibi, Domine, omnia opera tua./ s/\$REGULAR_VERSUS2/R. Et Sancti tui benedicant tibi./
