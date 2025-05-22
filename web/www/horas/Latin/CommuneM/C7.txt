@@ -7,26 +7,11 @@ Veni, * elécta mea, et ponam in te thronum meum, quia concupívit Rex spéciem 
 Nigra sum, * sed formósa, fíliæ Jerúsalem; ídeo diléxit me Rex, et introdúxit me in cubículum suum.;;126
 Pulchra es * et decóra, fília Jerúsalem, terríbilis ut castrórum ácies ordináta.
 
-[Ant Vespera] (tempore paschali et rubrica cisterciensis )
+[Ant Vespera] (tempore paschali et rubrica cisterciensis)
 Allelúia, * allelúia, allelúia.
 
 [Versum 1] (rubrica cisterciensis)
 @Commune/C6:Versum 2
-
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
-[Versum 3] (rubrica cisterciensis)
-@:Versum 1
-
-[Ant Laudes] (rubrica cisterciensis)
-@:Ant Vespera:s/;;.*//g
-
-[Ant 2] (rubrica cisterciensis)
-@CommuneM/C6
-
-[Ant 3] (rubrica cisterciensis)
-@Commune/C7:Ant 1
 
 [Ant Matutinum 3N]
 Inventa bona margarita * dedit omnia sua, et comparavit eam
@@ -127,6 +112,21 @@ R. Proptérea datum est tibi regnum cælórum.
 @Commune/C7:Capitulum Sexta
 _
 @CommuneM/C6::s/.*_.//s
+
+[Ant Laudes] (rubrica cisterciensis)
+@:Ant Vespera:s/;;.*//g
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant 2] (rubrica cisterciensis)
+@CommuneM/C6
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant 3] (rubrica cisterciensis)
+@Commune/C7:Ant 1
 
 [Lectio5 in 2 loco]
 @Commune/C7:Lectio4 in 2 loco

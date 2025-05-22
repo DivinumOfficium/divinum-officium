@@ -1,33 +1,90 @@
 @Commune/C6
 
 [Officium]
-Commune Plurimorum Virginum Martyrum
+Commune Virginum tantum
 
-[Versum 1]
-V. Adducéntur Regi Vírgines post eam.
-R. Próximæ ejus afferéntur tibi.
-
-[Ant 1]
-Prudéntes vírgines, * aptáte vestras lámpades: ecce sponsus venit, exíte óbviam ei.
+[Missa]
+Dilexisti
 
 [Oratio]
-Da nobis, quǽsumus, Dómine Deus noster, sanctárum Vírginum et Mártyrum tuárum N. et N. palmas incessábili devotióne venerári: ut quas digna mente non póssumus celebráre, humílibus saltem frequentémus obséquiis.
+@Commune/C7a:: s/N\./N. Vírginis tuæ/
+
+[Hymnus Matutinum Virgo tantum]
+{:H-Virginisproles:}v. Vírginis Proles, Opiféxque Matris,
+Virgo quem gessit, peperítque Virgo:
+Vírginis festum cánimus beátæ,
+Accipe votum.
+
+[Hymnus Matutinum]
+@:Hymnus Matutinum Virgo tantum
+_
+@Commune/C6::16-25
+
+[HymnusM Matutinum]
+@Commune/C6::1-4
+@Commune/C6::15-25
+
+[Responsory1]
+R. Veni, elécta mea, et ponam in te thronum meum
+* Quia concupívit Rex spéciem tuam.
+V. Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna.
+R. Quia concupívit Rex spéciem tuam.
+
+[Lectio Prima]
+!Sap 4:1
+v. O quam pulchra est casta generátio cum claritáte! Immortális est enim memória illíus, quóniam apud Deum nota est, et apud hómines.
+
+[Capitulum Nona]
+@:Lectio Prima
+$Deo gratias
+
+[Introitus]
+!Ps 44:8
+v. Dilexísti justítiam, et odísti iniquitátem: proptérea unxit te Deus, Deus tuus, óleo lætítiæ præ consórtibus tuis. (Allelúja, allelúja.)
+!Ps 44:2
+Eructávit cor meum verbum bonum: dico ego ópera mea Regi.
+&Gloria
+v. Dilexísti justítiam, et odísti iniquitátem: proptérea unxit te Deus, Deus tuus, óleo lætítiæ præ consórtibus tuis. (Allelúja, allelúja.)
+
+[Lectio]
+Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios
+!2 Cor 10:17-18; 11:1-2
+Fratres: Qui gloriátur, in Dómino gloriétur. Non enim, qui seípsum comméndat, ille probátus est; sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáte me: æmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro vírginem castam exhibére Christo.
+
+[Graduale]
+!Ps 44:5
+Spécie tua et pulchritúdine tua inténde, próspere procéde et regna.
+V. Propter veritátem et mansuetúdinem et justítiam: et dedúcet te mirabíliter déxtera tua. 
+Allelúja, allelúja.
+!Ps 44:15-16
+Adducéntur Regi Vírgines post eam: próximæ ejus afferéntur tibi in lætítia. Allelúja.
+
+[Tractus]
+!Ps 44:5
+Spécie tua et pulchritúdine tua inténde, próspere procéde et regna.
+V. Propter veritátem et mansuetúdinem et justítiam: et dedúcet te mirabíliter déxtera tua.
+_
+!Tractus
+!Ps 44:11-12
+Audi, fília, et vide, et inclína aurem tuam: quia concupívit Rex spéciem tuam.
+!Ps 44:13; 44:10
+Vultum tuum deprecabúntur omnes dívites plebis: fíliæ regum in honóre tuo.
+!Ps 44:15-16
+Adducéntur Regi Vírgines post eam: próximæ ejus afferéntur tibi. 
+V. Afferéntur in lætítia et exsultatióne: adducéntur in templum Regis.
+
+[Offertorium]
+!Ps 44:10
+Fíliæ regum in honóre tuo, ástitit regína a dextris tuis in vestítu deauráto, circúmdata varietáte. (Allelúja.)
+
+[Secreta]
+Accépta tibi sit, Dómine, sacrátæ plebis oblátio pro tuórum honóre Sanctórum: quorum se méritis de tribulatióne percepísse cognóscit auxílium.
 $Per Dominum
 
-[Nocturn 1 Versum]
-@Commune/C6:Versum 1
+[Communio]
+!Matt 25:4-6
+Quinque prudéntes vírgines accepérunt óleum in vasis suis cum lampádibus: média autem nocte clamor factus est: Ecce, sponsus venit: exíte óbviam Christo Dómino. (Allelúja.)
 
-[Versum 2]
-@:Versum 1
-
-[Ant 2]
-@:Ant 1
-
-[Versum Nona]
-@Commune/C6:Versum 2
-
-[Versum 3]
-@:Versum 1
-
-[Ant 3]
-@:Ant 1
+[Postcommunio]
+Satiásti, Dómine, famíliam tuam munéribus sacris: ejus, quǽsumus, semper interventióne nos réfove, cujus sollémnia celebrámus.
+$Per Dominum

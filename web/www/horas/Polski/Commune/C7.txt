@@ -1,3 +1,9 @@
+[Officium]
+Commune Unius non Virginis Martyris
+
+[Missa]
+Me exspectaverunt (altera)
+
 [Ant Vespera]
 Kiedy Król był * w pokoju swoim, spikanard wydał wdzięczną wonność.;;109
 Za tobą pobieżymy * do wonności olejków twoich; Panienki umiłowały cię bardzo.;;112
@@ -33,8 +39,7 @@ Teraz, i przez wszystkie wieki wieków.
 Amen.
 
 [Oratio]
-Boże, który między innemi potęgi Twojej cudami, słabe niewiasty chwałą męczeństwa ozdobiłeś, dozwól łaskawie, abyśmy, którzy błogosławionej N. Męczennicy Twojej narodziny obchodzimy, jej przykłady naśladując, do Ciebie się zbliżali.
-$Per Dominum.
+@Commune/C6::s/Dziewicy i // s/N\./N./
 
 [Invit]
 Chwalmy Boga naszego, * Cześć oddając błogosławionej N..
@@ -88,3 +93,15 @@ $Deo gratias.
 
 [Ant 3]
 Rękę swoją * otworzyła ubogiemu, a dłonie swe ściągnęła ku biednemu, i chleba próżnując nie jadła.
+
+[GradualeP]
+Alleluja, alleluja.
+!Ps 44:5
+W chwale i piękności swojej wystąp, walcz zwycięsko i króluj. Alleluja.
+V. W obronie wiary i sprawiedliwości niech cudów dokona Twoja prawica. Alleluja.
+
+[Secreta]
+@Commune/C6::s/Dziewicy i // s/N\./N./
+
+[Postcommunio]
+@Commune/C6::s/Dziewicy i // s/N\./N./

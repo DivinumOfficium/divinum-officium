@@ -1,36 +1,44 @@
-@Commune/C6
+@Commune/C6-1
 
 [Officium]
-Commune Virginum tantum
+Commune Plurium Virginum Martyrum
+
+[Versum 1]
+V. Adducéntur Regi Vírgines post eam.
+R. Próximæ ejus afferéntur tibi.
+
+[Ant 1]
+Prudéntes vírgines, * aptáte vestras lámpades: ecce sponsus venit, exíte óbviam ei.
 
 [Oratio]
-@Commune/C7a:: s/N\./N. Vírginis tuæ/
+Da nobis, quǽsumus, Dómine Deus noster, sanctárum Vírginum et Mártyrum tuárum N. et N. palmas incessábili devotióne venerári: ut quas digna mente non póssumus celebráre, humílibus saltem frequentémus obséquiis.
+$Per Dominum
 
-[Hymnus Matutinum Virgo tantum]
-{:H-Virginisproles:}v. Vírginis Proles, Opiféxque Matris,
-Virgo quem gessit, peperítque Virgo:
-Vírginis festum cánimus beátæ,
-Accipe votum.
+[Nocturn 1 Versum]
+@Commune/C6:Versum 1
 
-[Hymnus Matutinum]
-@:Hymnus Matutinum Virgo tantum
-_
-@Commune/C6::16-25
+[Versum 2]
+@:Versum 1
 
-[HymnusM Matutinum]
-@Commune/C6::1-4
-@Commune/C6::15-25
+[Ant 2]
+@:Ant 1
 
-[Responsory1]
-R. Veni, elécta mea, et ponam in te thronum meum
-* Quia concupívit Rex spéciem tuam.
-V. Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna.
-R. Quia concupívit Rex spéciem tuam.
+[Versum Nona]
+@Commune/C6:Versum 2
 
-[Lectio Prima]
-!Sap 4:1
-v. O quam pulchra est casta generátio cum claritáte! Immortális est enim memória illíus, quóniam apud Deum nota est, et apud hómines.
+[Versum 3]
+@:Versum 1
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
+[Ant 3]
+@:Ant 1
+
+[Lectio]
+@Commune/C6a-1
+
+[Secreta]
+Inténde, quǽsumus, Dómine, múnera altáribus tuis pro sanctárum Vírginum et Mártyrum tuárum N. et N. festivitáte propósita: ut, sicut per hæc beáta mystéria illis glóriam contulísti; ita nobis indulgéntiam largiáris.
+$Per Dominum
+
+[Postcommunio]
+Præsta nobis, quǽsumus, Dómine, intercedéntibus sanctis Virgínibus et Martýribus tuis N. et N.: ut, quod ore contíngimus, pura mente capiámus.
+$Per Dominum
