@@ -1,8 +1,12 @@
-[Rank]
-S. Cæciliæ Virginis et Martyris;;Duplex;;3;;vide C6
+[Officium]
+S. Cæciliæ Virginis et Martyris
 
-[Rank] (rubrica 1570 aut rubrica 1617)
-S. Cæciliæ Virginis et Martyris;;Semiduplex;;2.2;;vide C6
+[Rank]
+;;Duplex;;3;;vide C6
+(sed rubrica 1570 aut rubrica 1617)
+;;Semiduplex;;2.2;;vide C6
+(sed rubrica 1930)
+;;Duplex majus;;4;;vide C6
 
 [Rule]
 vide C6;

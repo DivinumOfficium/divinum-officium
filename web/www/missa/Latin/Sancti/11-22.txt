@@ -1,19 +1,23 @@
+[Officium]
+S. Cæciliæ Virginis et Martyris
+
 [Rank]
-S. Cæciliæ Virginis et Martyris;;Duplex;;3;;vide C6
+;;Duplex;;3;;vide C6
+(sed rubrica 1570 aut rubrica 1617)
+;;Semiduplex;;2.2;;vide C6
+(sed rubrica 1930)
+;;Duplex majus;;4;;vide C6
 
 [Rule]
 vide C6;
 Gloria
-
-[Introitus]
-@Commune/C6
 
 [Oratio]
 Deus, qui nos ánnua beátæ Cæcíliæ Vírginis et Mártyris tuæ sollemnitáte lætíficas: da, ut, quam venerámur offício, étiam piæ conversatiónis sequámur exémplo.
 $Per Dominum
 
 [Lectio]
-@Commune/C6a
+@Commune/C6-1
 
 [Graduale]
 !Ps 44:11; 44:12
@@ -23,18 +27,9 @@ Allelúja, allelúja.
 !Matt 25:4; 25:6
 Quinque prudéntes vírgines accepérunt óleum in vasis suis cum lampádibus: média autem nocte clamor factus est: Ecce, sponsus venit: exíte óbviam Christo Dómino. Allelúja.
 
-[Evangelium]
-@Commune/C6
-
-[Offertorium]
-@Commune/C6
-
 [Secreta]
 Hæc hóstia, Dómine, placatiónis et laudis, quǽsumus: ut, intercedénte beáta Cæcília Vírgine et Mártyre tua, nos propitiatióne tua dignos semper effíciat.
 $Per Dominum
 
-[Communio]
-@Commune/C6
-
 [Postcommunio]
-@Commune/C6b
+@Commune/C6a

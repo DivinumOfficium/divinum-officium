@@ -1,15 +1,14 @@
+[Officium]
+S. Dorothæ Virginis et Martyris
+
 [Rank]
-S. Dorothæ Virginis et Martyris;;Simplex;;1.1;;vide C6a
+;;Simplex;;1.1;;vide C6-1
 
 [Rule]
-vide C6a;
+vide C6-1;
 Gloria
 
-[Oratio]
-@Commune/C6a:Oratio1:s/N\./Dorothéa/
-
-[Secreta]
-@Commune/C6a:Secreta1:s/N\./Dorótheæ/
-
-[Postcommunio]
-@Commune/C6a:Postcommunio1:s/N\./Dorótheæ/
+[Name]
+Doróthea
+Secreta=Dorótheæ
+Postcommunio=Doróthea

@@ -1,10 +1,14 @@
+[Officium]
+S. Barbaræ Virginis et Martyris
+
 [Rank]
-S. Barbaræ Virginis et Martyris;;Simplex;;1.1;;vide C6
+;;Simplex;;1.1;;vide C6
 (sed rubrica altovadensis)
-S. Barbaræ Virginis et Martyris;;Duplex;;3;;ex C6
+;;Duplex;;3;;ex C6
 
 [Rule]
 vide C6;
 
-[Oratio]
-@Commune/C6::s/N\./Bárbaræ/
+[Name]
+Bárbaræ
+Postcommunio=Bárbara

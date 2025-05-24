@@ -1,14 +1,12 @@
+[Officium]
+S. Appolloniæ Virginis et Martyris
+
 [Rank]
-S. Appolloniæ Virginis et Martyris;;Simplex;;1.1;;vide C6
+;;Simplex;;1.1;;vide C6
 
 [Rule]
 vide C6;
 
-[Oratio]
-@Commune/C6::s/N\./Appollóniæ/
-
-[Secreta]
-@Commune/C6::s/N\./Appollóniæ/
-
-[Postcommunio]
-@Commune/C6::s/N\./Appollóniæ/
+[Name]
+Apollóniæ
+Postcommunio=Apollónia

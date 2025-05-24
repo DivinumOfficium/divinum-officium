@@ -1,15 +1,11 @@
-[Rank]
-St. Sabina
+[Officium]
+St. Sabina, Martyr
 
-[Oratio]
-@Commune/C6:Oratio:s/N\./Sabina/
+[Name]
+Sabina
 
 [Secreta]
-!For St. Sabina
-Graciously accept the sacrificial gifts offered You, O Lord, through the merits of blessed Sabina, Your Virgin and Martyr, and grant they may prove an unfailing aid for us.
-$Per Dominum
+@Commune/C6-1::s/Virgin and // s/N\./N./
 
 [Postcommunio]
-!For St. Sabina
-We who have been refreshed by the richness of Your divine sacrament, beseech You, O Lord our God, that through the intercession of blessed Sabina, Your Virgin and Martyr, we may forevermore abide in its participation.
-$Per Dominum
+@Commune/C6-1::s/Virgin and // s/N\./N./

@@ -1,14 +1,19 @@
-[Rank]
-S. Monicæ Viduæ;;Duplex;;3;;vide C7a
+[Officium]
+S. Monicæ Viduæ
 
-[Rank] (rubrica 1570)
-S. Monicæ Viduæ;;Simplex;;1.1;;vide C7a
+[Rank]
+;;Duplex;;3;;vide C7a
+(sed rubrica 1570 aut rubrica monastica)
+;;Simplex;;1.1;;vide C7a
 
 [Rule]
 vide C7a;
 9 lectiones
 
-[Oratio]
+[Name]
+Mónicæ
+
+[Oratio] (nisi rubrica cisterciensis)
 Deus, mæréntium consolátor et in te sperántium salus, qui beátæ Mónicæ pias lácrimas in conversióne fílii sui Augustíni misericórditer suscepísti: da nobis utriúsque intervéntu; peccáta nostra deploráre, et grátiæ tuæ indulgéntiam inveníre.
 $Per Dominum
 

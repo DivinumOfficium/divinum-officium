@@ -1,16 +1,14 @@
+[Officium]
+S. Barbaræ Virginis et Martyris
+
 [Rank]
-S. Barbaræ Virginis et Martyris;;Simplex;;1.1;;vide C6
+;;Simplex;;1.1;;vide C6
+(sed rubrica altovadensis)
+;;Duplex;;3;;ex C6
 
 [Rule]
 vide C6;
 
-[Oratio]
-Deus, qui inter cétera poténtiæ tuæ mirácula étiam in sexu frágili victóriam martýrii contulísti: concéde propítius; ut, qui beátæ Bárbaræ Vírginis et Mártyris tuæ natalícia cólimus, per ejus ad te exémpla gradiámur.
-$Per Dominum
-
-[Secreta]
-Súscipe, Dómine, múnera, quæ in beátæ Bárbaræ Vírginis et Mártyris tuæ sollemnitáte deférimus: cujus nos confídimus patrocínio liberári.
-$Per Dominum
-
-[Postcommunio]
-@Commune/C6::s/N\./Bárbara/
+[Name]
+Bárbaræ
+Postcommunio=Bárbara

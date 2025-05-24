@@ -1,12 +1,19 @@
+[Officium]
+S. Agnetis Virginis et Martyris
+
 [Rank]
-S. Agnetis Virginis et Martyris;;Duplex;;3.1;;vide C6
+;;Duplex;;3;;vide C6-1
+(sed rubrica 1930)
+;;Duplex majus;;4;;ex C6-1
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.2;;vide C6-1
 
 [Rule]
-vide C6;
+vide C6-1;
 Gloria
 
 [Introitus]
-@Commune/C6a
+@Commune/C6-1
 
 [Oratio]
 Omnípotens sempitérne Deus, qui infírma mundi éligis, ut fórtia quæque confúndas: concéde propítius; ut, qui beátæ Agnétis Vírginis et Mártyris tuæ sollémnia cólimus, ejus apud te patrocínia sentiámus.
@@ -38,7 +45,7 @@ Hóstias, Dómine, quas tibi offérimus, propítius súscipe: et, intercedénte 
 $Per Dominum
 
 [Communio]
-@Commune/C6b
+@Commune/C6a
 
 [Postcommunio]
 @Commune/C5

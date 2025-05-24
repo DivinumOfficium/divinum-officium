@@ -1,8 +1,12 @@
-[Rank]
-S. Franciscæ Viduæ Romanæ;;Duplex;;3;;vide C7a
+[Officium]
+S. Franciscæ Romanæ Viduæ
+(sed rubrica monastica)
+S. Franciscæ Romanæ Viduæ O. N.
 
-[Rank](rubrica 1960)
-S. Franciscæ Viduæ Romanæ;;Duplex;;2.1;;vide C7a
+[Rank]
+;;Duplex;;3;;vide C7a
+(sed rubrica monastica)
+;;Simplex;;1.1;;vide C7a
 
 [Rule]
 vide C7a;

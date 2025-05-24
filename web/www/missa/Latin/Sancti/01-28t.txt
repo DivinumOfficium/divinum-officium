@@ -1,25 +1,26 @@
+[Officium]
+S. Agnetis Virginis et Martyris secundo
+
 [Rank]
-S. Agnetis Virginis et Martyris secundo;;Commemoratio;;1.1;;vide C6b
+;;Simplex;;1.1;;vide C6-1
 
 [Rule]
-vide C6b;
+vide C6-1;
 
 [Introitus]
-!Ps 44:13; 44:15; 44:16
-v. Vultum tuum deprecabúntur omnes dívites plebis: adducántur Regi Vírgines post eam: próximæ ejus adducántur tibi in lætítia et exsultatióne.
-!Ps 44:2
-Eructávit cor meum verbum bonum: dico ego ópera mea Regi.
-&Gloria
-v. Vultum tuum deprecabúntur omnes dívites plebis: adducántur Regi Vírgines post eam: próximæ ejus adducántur tibi in lætítia et exsultatióne.
+@Commune/C10b
 
 [Oratio]
 Deus, qui nos ánnua beátæ Agnetis Vírginis et Martyris tuæ sollemnitáte lætíficas: da, quǽsumus; ut, quam venerámur officio, étiam piæ conversatiónis sequámur exémplo.
 $Per Dominum
 
-[Evangelium]
+[Lectio]
 @Commune/C6a
 
-[Offertorium]
+[Graduale]
+@Commune/C6a
+
+[Tractus]
 @Commune/C6a
 
 [Secreta]
@@ -27,8 +28,7 @@ Super has, quǽsumus, Dómine, hóstias benedíctio copiósa descéndat: quæ et
 $Per Dominum
 
 [Communio]
-!Matt 13:45-46
-Símile est regnum cœlórum hómini negotiatóri, quærénti bonas margarítas: invénta autem una pretiósa margaríta, dedit ómnia sua, et comparávit eam.
+@Commune/C6a-1
 
 [Postcommunio]
 Súmpsimus, Dómine, celebritátis ánnuæ votiva sacraménta: præsta, quǽsumus; ut et temporális vitæ nobis remédia prǽbeant et ætérnæ.

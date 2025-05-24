@@ -1,16 +1,14 @@
+[Officium]
+S. Emerentianæ Virgini et Martyris
+
 [Rank]
-S. Emerentianæ Virgini et Martyris;;Simplex;;1.1;;vide C6
+;;Simplex;;1.1;;vide C6-1
 
 [Rule]
-vide C6;
+vide C6-1;
 Gloria
 Suffragium=Maria2;Ecclesiæ,Papa;;
 
-[Oratio]
-@Commune/C6a:Oratio1:s/N\./Emerentiána/
-
-[Secreta]
-@Commune/C6a:Secreta1:s/N\./Emerentiánæ/
-
-[Postcommunio]
-@Commune/C6a:Postcommunio1:s/N\./Emerentiánæ/
+[Name]
+Emerentiána
+Secreta=Emerentiánæ

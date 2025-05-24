@@ -1,15 +1,13 @@
+[Officium]
+S. Margaritæ, Virg. et Mart.
+
 [Rank]
-S. Margaritæ, Virg. et Mart.;;Simplex;;1.1;;vide C6
+;;Simplex;;1.1;;vide C6-1
 
 [Rule]
 vide C6;
 Gloria
 
-[Oratio]
-@Commune/C6a:Oratio1:s/N\./Margaríta/
-
-[Secreta]
-@Commune/C6a:Secreta1:s/N\./Margarítæ/
-
-[Postcommunio]
-@Commune/C6a:Postcommunio1:s/N\./Margarítæ/
+[Name]
+Margaríta
+Secreta=Margarítæ

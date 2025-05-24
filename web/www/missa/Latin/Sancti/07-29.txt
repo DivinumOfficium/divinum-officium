@@ -1,14 +1,19 @@
-@Commune/C6b
+@Commune/C6a
+
+[Officium]
+S. Marthæ Virginis
 
 [Rank]
-S. Marthæ Virginis;;Semiduplex;;2.2;;vide C6
+;;Semiduplex;;2.2;;vide C6a
+(sed rubrica 196)
+;;Duplex;;3;;vide C6a
 
 [Rule]
-vide C6;
+vide C6a;
 Gloria
 
-[Oratio]
-@Commune/C6b::s/N\./Marthæ/
+[Name]
+Marthæ
 
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Lucam

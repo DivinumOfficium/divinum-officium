@@ -1,24 +1,14 @@
-[Rank]
-S. Caeciliae Virginis et Martyris;;Duplex;;3;;vide C6
-
-[Rule]
-vide C6;
-Gloria
+[Officium]
+Santa Cecília, Virgem e Mártir
 
 [Comment]
 # 22 XI – Santa Cecília, Virgem e Mártir
 ! 3 classe
 ! Paramentos vermelhos
 
-[Introitus]
-@Commune/C6
-
 [Oratio]
 Ó Deus, que nos alegrais com a solenidade anual da B. Cecília, vossa Virgem e Mártir, dignai-Vos permitir que, honrando-a com estes cultos, imitemos também os exemplos da sua piedosa vida.
 $Per Dominum
-
-[Lectio]
-@Commune/C6a
 
 [Graduale]
 ! Ps 44:11; 44:12
@@ -28,18 +18,9 @@ V. Com a vossa glória e com vossa formosura caminhai, triunfai e reinai. Alelui
 !Mt 25:4; 25:6
 As cinco virgens prudentes tomaram óleo em seus vasos para suas lâmpadas. No meio da noite uma voz soou: eis que chega o esposo: ide ao encontro de Cristo, Senhor. Aleluia.
 
-[Evangelium]
-@Commune/C6
-
-[Offertorium]
-@Commune/C6
-
 [Secreta]
 Que esta hóstia de propiciação e de louvor, Senhor, Vos rogamos, nos torne sempre dignos da vossa misericórdia, pela intercessão da B. Cecília, vossa Virgem e Mártir.
 $Per Dominum
-
-[Communio]
-@Commune/C6b:Communio
 
 [Postcommunio]
 Saciastes, Senhor, a vossa família com vossos sacratíssimos dons; e dignai-Vos favorecer-nos sempre, Vos imploramos, pela intercessão daquela cuja festa celebramos.

@@ -1,15 +1,22 @@
+[Officium]
+S. Agathæ Virginis et Martyris
+
 [Rank]
-S. Agathæ Virginis et Martyris;;Duplex;;3;;vide C6
-
-[Rank] (rubrica 1570)
-S. Agathæ Virginis et Martyris;;Semiduplex;;2.2;;vide C6
-
-[Rank] (rubrica 1960)
-S. Agathæ Virginis et Martyris;;Semiduplex;;2.1;;vide C6
+;;Duplex;;3.01;;vide C6
+(sed rubrica 1570 aut rubrica 1617 aut rubrica cisterciensis)
+;;Semiduplex;;2.2;;vide C6
+(sed rubrica 1930)
+;;Duplex majus;;4;;ex C6
+(sed rubrica 196)
+;;Duplex;;3;;vide C6
 
 [Rule]
 vide C6;
 Gloria
+
+[Name]
+Agathæ
+Postcommunio=Agatha
 
 [Introitus]
 v. Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Agathæ Vírginis et Martyris: de cujus passióne gaudent Angeli et colláudant Fílium Dei.
@@ -17,9 +24,6 @@ v. Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Aga
 Eructávit cor meum verbum bonum: dico ego ópera mea Regi. 
 &Gloria
 v. Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Agathæ Vírginis et Martyris: de cujus passióne gaudent Angeli et colláudant Fílium Dei.
-
-[Oratio]
-@Commune/C6:Oratio:s/N\./Agathæ/
 
 [Lectio]
 Léctio Epístolæ beáti Pauli Apóstoli ad Corinthios
@@ -37,23 +41,19 @@ Loquébar de testimóniis tuis in conspéctu regum, et non confundébar. Allelú
 !Ps 45:6 et 5
 Adjuvábit eam Deus vultu suo: Deus in médio ejus, non commovébitur.
 V. Flúminis impetus lætíficat civitátem Dei: sanctificávit tabernáculum suum Altíssimus.
+_
+!Tractus
 !Ps 125:5-6
 Qui séminant in lácrimis, in gáudio metent.
 V. Eúntes ibant et fiébant, mitténtes semina sua.
 V. Veniéntes autem vénient cum exsultatióne, portántes manípulos suos.
 
 [Evangelium]
-@Commune/C6a:Evangelium1
+@Commune/C6-1:Evangelium 2 loco
 
 [Offertorium]
 !Ps 44:15.
 Afferéntur Regi Vírgines post eam: próximæ ejus afferéntur tibi.
 
-[Secreta]
-@Commune/C6:Secreta:s/N\./Agathæ/
-
 [Communio]
 Qui me dignátus est ab omni plaga curáre et mamíllam meam meo péctori restitúere, ipsum ínvoco Deum vivum.
-
-[Postcommunio]
-@Commune/C6:Postcommunio:s/N\./Agatha/

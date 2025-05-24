@@ -1,34 +1,41 @@
+[Officium]
+S. Luciæ Virginis et Martyris
+
 [Rank]
-S. Luciæ Virginis et Martyris;;Duplex;;3;;ex C6b
+;;Duplex;;3;;vide C6
+(sed rubrica 1930)
+;;Duplex majus;;4;;ex C6
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.2;;ex C6
 
 [Rule]
-vide C6b;
+vide C6;
 Gloria
 
+[Name]
+Lúciæ Vírginis et Mártyris tuæ
+
 [Introitus]
-@Commune/C6b
+@Commune/C6a
 
 [Oratio]
-@Commune/C6b::s/N\./Luciæ/
+@Commune/C7a
 
 [Lectio]
-@Commune/C6b
+@Commune/C6a
 
 [Graduale]
 @Sancti/07-21
 
 [Evangelium]
-@Commune/C6a
-
-[Offertorium]
-@Commune/C6
+@Commune/C6-1
 
 [Secreta]
-@Commune/C6b::s/N\./Luciæ/
+@Commune/C6a
 
 [Communio]
 !Ps 118:161-162
 Príncipes persecúti sunt me gratis, et a verbis tuis formidávit cor meum: lætábor ego super elóquia tua, quasi qui invénit spólia multa.
 
 [Postcommunio]
-@Commune/C6b::s/N\./Luciæ/
+@Commune/C6a

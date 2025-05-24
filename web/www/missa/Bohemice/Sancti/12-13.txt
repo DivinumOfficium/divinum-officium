@@ -1,5 +1,5 @@
-[Rank]
-S. Luciae Virginis et Martyris;;Duplex;;3;;ex C6b
+[Officium]
+S. Luciae Virginis et Martyris
 
 [Comment]
 # Sv. Lucie, panny a mučednice
@@ -7,11 +7,8 @@ S. Luciae Virginis et Martyris;;Duplex;;3;;ex C6b
 ! Červená barva
 ✝ 304 v Syrakusách
 
-[Introitus]
-@Commune/C6b
-
-[Oratio]
-@Commune/C6b:Oratio:s/N\./Lucie/
+[Name]
+Lucie, panny a mučednice
 
 [Graduale]
 !Ž 44,8
@@ -21,19 +18,6 @@ Aleluja, aleluja.
 !Ž 44,3
 V. Rozlita je milost na rtech tvých, proto požehnal ti Bůh na věky, aleluja.
 
-[Evangelium]
-@Sancti/12-13::Evangelium
-
-[Offertorium]
-!Ž 44,15-16
-Panny přivádějí se s ní ke Králi, družky její přivádějí se k tobě za jásotu a radosti; uvádějí se do svatyně Krále Pána.
-
-[Secreta]
-@Commune/C6b:Secreta
-
 [Communio]
 !Ž 118,161-162
 Knížata pronásledovala mne bez příčiny, avšak jenom slov tvých bálo se srdce mé; já radovati se budu z řečí tvých jako ten,kdo našel hojnou kořist.
-
-[Postcommunio]
-@Commune/C6b:Postcommunio

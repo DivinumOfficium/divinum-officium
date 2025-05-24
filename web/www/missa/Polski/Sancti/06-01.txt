@@ -1,9 +1,5 @@
-[Rank]
-S. Angelae Mericiae Virginis;;Duplex;;3;;vide C6b
-
-[Rule]
-vide C6;
-Gloria
+[Officium]
+Św. Anieli Merici Dziewicy
 
 [Comment]
 # 01 VI – Św. Anieli Merici, Dziewicy
@@ -13,34 +9,13 @@ Gloria
 
 Msza wspólna nr 26 Dilexisti, z wyjątkiem kolekty
 
-[Introitus]
-@Commune/C6b:Introitus
-
 [Oratio]
 Boże, Tyś chciał, by dzięki św. Anieli zakwitł w Kościele Twoim nowy zakon dziewic Tobie poświęconych; daj nam za jej przyczyną prowadzić życie anielskie, abyśmy, wyzbywając się wszystkiego co ziemskie, zasłużyli na pełnię wiekuistych radości.
 $Per Dominum
 
-[Lectio]
-@Commune/C6b:Lectio
-
-[Graduale]
-@Commune/C6b:Graduale
-
-[GradualeP]
-@Commune/C6bp:Graduale
-
-[Evangelium]
-@Commune/C6b:Evangelium
-
-[Offertorium]
-@Commune/C6b:Offertorium
-
 [Secreta]
 Ofiara, którą Tobie, Panie, składamy czcząc pamięć świętej Anieli, niech nam wybłaga przebaczenie naszych nieprawości i zjedna dary Twej łaski.
 $Per Dominum
-
-[Communio]
-@Commune/C6b:Communio
 
 [Postcommunio]
 Niebieskim pokarmem posileni, pokornie prosimy Cię, Panie, abyśmy za przykładem i przez modlitwy św. Anieli oczyszczeni z wszelkiej zmazy, duszą i ciałem podobali się Tobie.

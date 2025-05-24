@@ -1,9 +1,5 @@
-[Rank]
-S. Scholasticae Virginis;;Duplex;;3;;vide C6b
-
-[Rule]
-vide C6b;
-Gloria
+[Officium]
+Św. Scholastyki Panny
 
 [Comment]
 # 10 II – Św. Scholastyki 
@@ -11,30 +7,6 @@ Gloria
 ! Szaty białe
 Siostra św. Benedykta, opata, żyła jako dziewica poświęcona Bogu w pobliżu Monte Cassino. Grzegorz Wielki zapisał w swoich Dialogach kilka szczegółów z jej życia, a także to, że św. Benedykt widział jej duszę unoszącą się do nieba w postaci gołębicy. Działo się to przed rokiem 547. Benedyktynki czczą ją jako swoją patronkę.
 
-[Introitus]
-@Commune/C6b:Introitus
-
 [Oratio]
 Boże, który dla ukazania drogi niewinności sprawiłeś, że dusza św. Dziewicy Twojej Scholastyki wstąpiła do nieba w postaci gołębicy: przez jej zasługi i prośby daj nam prowadzić tak niewinne życie, byśmy zasłużyli na wejście do wiecznej radości.
 $Per Dominum.
-
-[Lectio]
-@Commune/C6b:Lectio
-
-[Graduale]
-@Commune/C6b:Graduale
-
-[Evangelium]
-@Commune/C6b:Evangelium
-
-[Offertorium]
-@Commune/C6b:Offertorium
-
-[Secreta]
-@Commune/C6b:Secreta
-
-[Communio]
-@Commune/C6b:Communio
-
-[Postcommunio]
-@Commune/C6b:Postcommunio

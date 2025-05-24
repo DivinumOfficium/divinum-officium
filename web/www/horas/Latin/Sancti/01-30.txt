@@ -1,15 +1,18 @@
-[Rank]
-S. Martinæ Virginis et Martyris;;Semiduplex;;2.2;;vide C6
+[Officium]
+S. Martinæ Virginis et Martyris
 
-[Rank] (sed rubrica 1962)
-S. Martinæ Virginis et Martyris;;Semiduplex;;1.1;;vide C6
+[Rank]
+;;Semiduplex;;2.2;;vide C6
+(sed rubrica 1962)
+;;Simplex;;1.1;;vide C6
 
 [Rule]
 vide C6;
 9 lectiones
 
-[Oratio]
-@Commune/C6::s/N\./Martínæ/
+[Name]
+Martínæ
+Postcommunio=Martína
 
 [Hymnus Matutinum]
 v. Martínæ célebri pláudite nómini,

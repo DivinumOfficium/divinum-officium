@@ -1,15 +1,26 @@
+[Officium]
+S. Luciæ Virginis et Martyris
+
 [Rank]
-S. Luciæ Virginis et Martyris;;Duplex;;3;;vide C6
+;;Duplex;;3;;vide C6
+(sed rubrica 1930)
+;;Duplex majus;;4;;ex C6
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.2;;ex C6
 
 [Rule]
 vide C6;
 9 lectiones;
 Doxology=Nat
 Commemoratio3
+in 3 Nocturno Lectiones ex Commune in 2 loco;
 
 [Rule] (rubrica 1570)
 vide C6;
 9 lectiones;
+
+[Name]
+Lúciæ Vírginis et Mártyris tuæ
 
 [Ant Vespera]
 Oránte sancta Lúcia, * appáruit ei beáta Agatha, et consolabátur ancíllam Christi.;;109
@@ -22,7 +33,7 @@ Soror mea, Lúcia, * virgo Deo devóta, quid a me petis, quod ipsa póteris præ
 In tua patiéntia * possedísti ánimam tuam, Lúcia, sponsa Christi: odísti quæ in mundo sunt, et coruscas cum Angelis: sánguine proprio inimícum vicisti.
 
 [Oratio]
-@Commune/C7a::s/N\./Lúciæ Vírginis et Mártyris tuæ/
+@Commune/C7a
 
 [Lectio4]
 Lúcia virgo Syracusana, genere et christiana fide ab infántia nobilis, una cum matre Eutychia, quæ sánguinis fluxu laborabat, Cátanam ad venerándum corpus beátæ Agathæ venit: quæ ad ejus sepúlcrum cum suppliciter orasset, Agathæ intercessióne matri sanitátem impetrávit. Statim vero matrem exorávit, ut quam dotem sibi datura esset, Christi paupéribus tribui paterétur. Ut ígitur Syracusas rediit, omnem pecúniam, quam ex facultátibus venditis redegerat, paupéribus distríbuit.
@@ -56,20 +67,11 @@ R. Et Dóminus ómnium diléxit eam.
 [Lectio94]
 Lúcia virgo Syracusána, génere et christiána fide nóbilis, Cátanæ ad beátæ Agathæ sepúlcrum, Eutýchiæ matris, sánguinis fluxu laborántis, sanitátem impetrávit. Mox bona ómnia quæ in dotem esset acceptúra, a matre impetráta, paupéribus distríbuit. Quare apud Paschásium præféctum, quod Christiána esset, accusáta, nec blandítiis nec minis addúci pótuit, ut idólis sacrificáret. Tunc Paschásius ira inflammátus, Lúciam eo trahi jussit, ubi ejus virgínitas violarétur; sed divínitus factum est, ut firma Virgo ita consísteret, ut nulla vi de loco dimovéri posset. Quam ob rem præféctus circum ipsam ignem accéndi imperávit; sed cum ne flamma quidem eam lǽderet, multis torméntis excruciátæ guttur gládio transfígitur. Quo vúlnere accépto, Lúcia, prædícens Ecclésiæ tranquillitátem, quæ futúra erat Diocletiáno et Maximiáno mórtuis, idibus decémbris spíritum Deo réddidit. Cujus corpus Syracúsis sepúltum, deínde Constantinópolim, postrémo Venétias translátum est.
 
-[Lectio7]
-@Commune/C7
-
 [Responsory7]
 @Commune/C6:Responsory4
 
-[Lectio8]
-@Commune/C7
-
 [Responsory8]
 @Commune/C6:Responsory5
-
-[Lectio9]
-@Commune/C7
 
 [Versum 0]
 @Commune/C6::s/N\./Lúcia/

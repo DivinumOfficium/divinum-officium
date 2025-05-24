@@ -1,14 +1,14 @@
+[Officium]
+S. Agathæ Virginis et Martyris
+
 [Rank]
-S. Agathæ Virginis et Martyris;;Duplex;;3.01;;vide C6
-
-[Rank] (rubrica 1570 aut rubrica 1617 aut rubrica cisterciensis)
-S. Agathæ Virginis et Martyris;;Semiduplex;;2.2;;vide C6
-
-[Rank] (rubrica 1930)
-S. Agathæ Virginis et Martyris;;Duplex majus;;4;;ex C6
-
-[Rank] (rubrica 196)
-S. Agathæ Virginis et Martyris;;Duplex;;3;;vide C6
+;;Duplex;;3.01;;vide C6
+(sed rubrica 1570 aut rubrica 1617 aut rubrica cisterciensis)
+;;Semiduplex;;2.2;;vide C6
+(sed rubrica 1930)
+;;Duplex majus;;4;;ex C6
+(sed rubrica 196)
+;;Duplex;;3;;vide C6
 
 [Rule]
 vide C6;
@@ -17,6 +17,10 @@ Psalm5 Vespera=116
 Psalm5 Vespera3=147
 in 1 Nocturno Lectiones ex Commune in 2 loco;
 in 3 Nocturno Lectiones ex Commune in 3 loco;
+
+[Name]
+Agathæ
+Postcommunio=Agatha
 
 [Ant Vespera]
 Quis es tu, * qui venísti ad me curáre vúlnera mea? Ego sum Apóstolus Christi: nihil in me dúbites, fília.
@@ -30,9 +34,6 @@ Stans beáta Agatha * in médio cárceris, expánsis mánibus orábat ad Dóminu
 
 [Ant 1] (rubrica cisterciensis)
 Mentem sanctam, * spontáneum honórem Deo, et pátriæ liberatiónem.
-
-[Oratio]
-@Commune/C6::s/N\./Agathæ/
 
 [Ant Matutinum]
 Ingénua sum, * et ex spectábili génere, ut omnis parentéla mea testátur.;;1

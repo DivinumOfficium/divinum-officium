@@ -1,39 +1,11 @@
-[Rank]
-S. Gertrudis Virginis;;Duplex;;3;;vide C6b
-
-[Rule]
-vide C6b;
-Gloria
+[Officium]
+S. Gertrudes, Virgem
 
 [Comment]
 # 16 XI – S. Gertrudes, Virgem
 ! 3 classe
 ! Paramentos brancos
 
-[Introitus]
-@Commune/C6b:Introitus
-
 [Oratio]
 Ó Deus, que para Vós preparastes uma morada agradável no coração da B. Virgem Gertrudes, atendendo aos seus méritos e intercessão, apagai misericordiosamente as máculas do nosso coração e concedei-nos o gozo da sua companhia.
 $Per Dominum
-
-[Lectio]
-@Commune/C6b:Lectio
-
-[Graduale]
-@Commune/C6b:Graduale
-
-[Evangelium]
-@Commune/C6b:Evangelium
-
-[Offertorium]
-@Commune/C6b:Offertorium
-
-[Secreta]
-@Commune/C6b:Secreta
-
-[Communio]
-@Commune/C6b:Communio
-
-[Postcommunio]
-@Commune/C6b:Postcommunio
