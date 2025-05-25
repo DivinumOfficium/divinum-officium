@@ -1,0 +1,41 @@
+[Rank]
+S. Petri de Alcantara Confessoris;;Duplex;;3;;vide C5
+
+[Rule]
+vide C5;
+Gloria
+
+[Comment]
+# Sv. Petra z Alkantary, vyznavače
+! 3 třída
+! Barva bílá
+✝ 1562 v Arenas ve Španělsku
+
+[Introitus]
+@Commune/C5b:Introitus
+
+[Oratio]
+Bože, jenž jsi ráčil svatého Petra, Vyznavače svého, ozářiti darem obdivuhodné kajícnosti a nejvyššího zření, dej nám, prosíme, abychom, pro jeho přímluvné zásluhy, tělem jsouce umrtveni, tím spíše chápali nebeské věci.
+$Per Dominum
+
+[Lectio]
+@Sancti/01-15:Lectio
+
+[Graduale]
+@Commune/C5b:Graduale
+
+[Evangelium]
+@Commune/C5b:Evangelium
+
+[Offertorium]
+@Commune/C5b:Offertorium
+
+[Secreta]
+@Commune/C5b:Secreta
+$Per Dominum
+
+[Communio]
+@Commune/C5b:Communio
+
+[Postcommunio]
+@Commune/C5b:Postcommunio
