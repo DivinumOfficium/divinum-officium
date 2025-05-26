@@ -7,6 +7,7 @@ S. Praxedis Virginis
 [Rule]
 vide C6a;
 Gloria
+Evangelium non appropriatum
 
 [Name]
 Praxédis
@@ -17,8 +18,14 @@ Praxédis
 [Lectio]
 @Commune/C6a-1
 
+[Evangelium]
+@Commune/C6-1
+
 [Graduale]
 @Commune/C7
+
+[Offertorium]
+@Commune/C6-1
 
 [Communio]
 @Commune/C6a-1
