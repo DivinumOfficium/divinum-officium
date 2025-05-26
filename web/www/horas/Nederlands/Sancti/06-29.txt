@@ -1,6 +1,86 @@
 [Officium]
 SS. Apostolorum Petri et Pauli
 
+[Rank]
+;;Duplex I classis cum octava communi;;6.5;;ex C1
+(sed rubrica 196)
+;;Duplex I classis;;6;;ex C1
+
+[Rule]
+ex C1;
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+nor commemoratio
+Psalm5 Vespera=116
+Psalm5 Vespera3=138
+
+[Ant Vespera]
+Petrus en Johannes * gingen op naar de tempel tegen het negende uur, het uur van het gebed.
+Zilver en goud * heb ik niet, maar wat ik heb, geef ik u.
+De engel sprak tegen Petrus: * Doe uw mantel om en volg mij.
+De Heer * heeft zijn engel gezonden en mij bevrijd uit de hand van Herodes, alleluia.
+Gij zijt Petrus, * en op deze steenrots zal Ik mijn Kerk bouwen.
+
+[Hymnus Vespera]
+{:H-Decoralux:}v. Het heerlijk stralend licht der eeuwigheid doorbrak
+Met zaligende gloed de goudgeboren dag,
+Die met de kroon de vorsten der apost'len siert
+En zondaars 't vrije pad des hemels openstelt.
+_
+Der wereld Leraar en die waakt aan 's hemels poort,
+Vad'ren van Rome, rechters van der volk'ren schaar;
+De een door 't scherpe zwaard, de ander op het kruis gedood,
+Werden gelauwerkranst in 's hemels vorstenkring.
+_
+O zalig Rome! Tot een heiligdom gewijd
+Door 't luist'rijk bloed der beide prinsen. Door dit bloed
+In purpergloed gezet munt gij in schoonheid uit
+Ver boven alles, wat aan pracht de wereld biedt.
+_
+Aan U, Drievuldigheid, zij immerdurende eer, 
+En heerlijkheid en macht en blijde jubelzang, 
+Die in uw wezenseenheid over alles heerst; 
+Door 't wereldrijk en in der eeuwen eeuwigheid.
+Amen.
+
+[Ant 1]
+@Sancti/02-22
+
 [Oratio]
-God, Gij hebt deze dag geheiligd door het martelaarschap van uw apostelen Petrus en Paulus. Doe uw Kerk in alles de voorschriften volgen van hen, bij wie de oorsprong ligt van haar geloof.
+God, Gij hebt deze dag geheiligd door het martelaarschap van uw Apostelen Petrus en Paulus. Doe uw Kerk in alles de voorschriften volgen van hen, bij wie de oorsprong ligt van haar geloof.
 $Per Dominum
+
+[Octava 1]
+!Commemoratio Octavæ Ss. Apóstoli 
+Ant. Petrus Apostolus, * et Paulus doctor Gentium, ipsi nos docuerunt legem tuam, Domine.
+_
+V. Constítues eos príncipes super omnem terram.
+R. Mémores erunt nóminis tui, Dómine. 
+_
+$Oremus 
+God, Gij hebt deze dag geheiligd door het martelaarschap van uw Apostelen Petrus en Paulus. Doe uw Kerk in alles de voorschriften volgen van hen, bij wie de oorsprong ligt van haar geloof.
+$Per Dominum
+
+[Versum 0]
+V. Gij zijt Petrus.
+R. En op deze steenrots zal Ik mijn Kerk bouwen.
+
+[Ant Laudes]
+@:Ant Vespera
+
+[Capitulum Laudes]
+!Act 12:1-3
+v. Koning Herodes legde de hand op enige leden der Kerk om hen te mishandelen. Jacobus nu, de broeder van Johannes, doodde hij met het zwaard. Toen hij zag, dat dit de Joden behaagde, liet hij ook Petrus gevangen nemen.
+$Deo gratias
+
+[Ant 2]
+@Sancti/02-22
+
+[Ant Vespera 3]
+@Commune/C1
+(sed rubrica cisterciensis)
+@:Ant Vespera
+
+[Ant 3]
+Heden * besteeg Simon Petrus het kruishout, alleluia; heden ging de sleuteldrager van het rijk vol vreugde op naar Christus; heden boog de apostel Paulus, het licht der wereld, het hoofd en werd voor de naam van Christus met het martelaarschap bekroond, alleluia.
