@@ -11,8 +11,16 @@ Doxology=Nat
 Ipsa Virgo Virginum
 (sed rubrica 196 omittitur)
 
+[Responsory Vespera 1] (rubrica cisterciensis)
+R. Quam pulchra es, amíca mea, quam pulchra es et suávis! óculi tui columbárum:
+* Absque eo quod intrínsecus latet.
+V. Sicut vitta coccínea lábia tua, et elóquium tuum dulce.
+R. Absque eo quod intrínsecus latet.
+
 [Ant 1]
 @Commune/C10:Ant 2_:s/Christo:.*/Christo, allelúja./
+(sed rubrica cisterciensis)
+@Commune/C10:Ant 2_
 
 [Oratio]
 Deus, qui beátam Maríam semper Vírginem, Spíritus Sancti habitáculum, hodiérna die in templo præsentári voluísti: præsta, quǽsumus; ut, ejus intercessióne, in templo glóriæ tuæ præsentári mereámur.
@@ -26,7 +34,7 @@ Jóachim lectíssimam illam ac summis láudibus dignam mulíerem Annam matrimón
 [Lectio5]
 Ex libro sancti Ambrósii Epíscopi de Virgínibus
 !Liber 2, post initium.
-Talis fuit Maria, ut ejus uníus vita ómnium sit disciplína. Si ígitur auctor non dísplicet, opus probémus; ut, quæcúmque sibi ejus exoptat præmium, imitétur exemplum. Quantæ in una vírgine spécies virtútum émicant! Secretum verecúndiæ, vexíllum fidei, devotiónis obsequium; virgo intra domum, comes ad ministérium, mater ad templum. O quántis illa virgínibus occurret! quantas complexa, ad Dóminum trahet, dicens: Hæc torum fílii mei, hæc thálamos nuptiales immaculáto servávit pudóre!
+Talis fuit Maria, ut ejus uníus vita ómnium sit disciplína. Si ígitur auctor non dísplicet, opus probémus; ut, quæcúmque sibi ejus exoptat præmium, imitétur exemplum. Quantæ in una vírgine spécies virtútum émicant! Secretum verecúndiæ, vexíllum fidei, devotiónis obsequium; virgo intra domum, comes ad ministérium, mater ad templum. O quantis illa virgínibus occurret! quantas complexa, ad Dóminum trahet, dicens: Hæc torum fílii mei, hæc thálamos nuptiales immaculáto servávit pudóre!
 
 [Lectio6]
 Quid ergo éxsequar cibórum parsimóniam, officiórum redundantiam: álterum ultra natúram superfuísse, álterum pene ipsi natúræ defuísse? Illic nulla intermissa témpora, hic congeminatos jejúnio dies. Et, si quando reficiéndi successísset volúntas, cibus plerumque obvius, qui mortem arcéret, non delicias ministraret. Dormire non prius cupiditas quam necessitas fuit; et tamen, cum quiésceret corpus, vigilaret animus, qui frequenter in somnis aut lecta répetit, aut somno interrupta continuat, aut dispósita gerit, aut gerenda prænuntiat.
@@ -39,6 +47,18 @@ Quid ergo éxsequar cibórum parsimóniam, officiórum redundantiam: álterum ul
 
 [Ant 2]
 @Commune/C11
+
+[Commemoratio 2] (rubrica cisterciensis)
+@SanctiM/11-21M:Oratio:s/N\./Columbáni/
+
+[Ant Sexta] (rubrica cisterciensis)
+@Sancti/09-08:Ant Vespera:4
+
+[Capitulum Sexta] (rubrica cisterciensis)
+@Sancti/01-23AV
+
+[Capitulum Nona] (rubrica cisterciensis)
+@Sancti/01-23AV
 
 [Ant 3]
 @:Ant 1

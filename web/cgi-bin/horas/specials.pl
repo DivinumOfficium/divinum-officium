@@ -707,6 +707,9 @@ sub checksuffragium {
     # Cistercian: minor Feasts of Apostles
     || $version =~ /cist/i && $commune =~ /C1a?$/i
 
+    # Cistercian: S. Augustine and Decollatio S. J.
+    || $version =~ /cist/i && $winner =~ /08-2[89]/i
+
     # Altovadensis: max 3. collects
     || $version =~ /altovadensis/i && $collectcount > 2
 

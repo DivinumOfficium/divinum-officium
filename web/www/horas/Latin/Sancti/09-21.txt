@@ -5,6 +5,8 @@ S. Matthæi Apostoli et Evangelistæ
 ;;Duplex II classis;;5.1;;ex C1a
 (sed rubrica 196)
 ;;Duplex II classis;;5;;ex C1a
+(sed rubrica cisterciensis)
+;;Duplex II classis;;4;;ex C1a
 
 [Rule]
 ex C1a;

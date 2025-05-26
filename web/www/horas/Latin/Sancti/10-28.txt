@@ -1,10 +1,14 @@
 [Officium]
 Ss. Simonis et Judæ Apostolorum
+(sed rubrica cisterciensis)
+SS. Apostolorum Simonis et Judæ 
 
 [Rank]
 ;;Duplex 2 classis;;5.1;;ex C1
 (sed rubrica 196)
 ;;Duplex 2 classis;;5;;ex C1
+(sed rubrica cisterciensis)
+;;Duplex 2 classis;;4;;ex C1
 
 [Rule]
 ex C1;
@@ -49,3 +53,6 @@ Cáritas ergo est fructus noster, quam defínit Apóstolus, De corde puro, et co
 [Lectio9]
 Quis autem bene gaudet, qui bonum non díligit unde gaudet? Quis pacem veram, nisi cum illo potest habére, quem veráciter díligit? Quis est longánimis in bono ópere perseveránter manéndo, nisi férveat diligéndo? Quis est benígnus, nisi díligat cui opitulátur? Quis bonus, nisi diligéndo efficiátur? Quis salúbriter fidélis, nisi ea fide quæ per dilectiónem operátur? Quis utíliter mansuétus, cui non diléctio moderétur? Quis ab eo cóntinet unde turpátur, nisi díligat unde honestátur? Mérito ítaque Magíster bonus dilectiónem sic sæpe comméndat, tamquam sola præcipiénda sit, sine qua non possunt prodésse cétera bona, et quæ non potest habéri sine céteris bonis, quibus homo effícitur bonus.
 &teDeum
+
+[Ant 2] (rubrica cisterciensis)
+@Commune/C1:Ant 2 duo

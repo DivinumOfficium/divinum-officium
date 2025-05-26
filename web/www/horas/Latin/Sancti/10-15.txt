@@ -3,6 +3,8 @@ S. Teresiæ Virginis
 
 [Rank]
 ;;Duplex;;3;;vide C6a
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;vide C6b
 
 [Rule]
 vide C6a;
@@ -11,7 +13,7 @@ vide C6a;
 [Name]
 Terésiæ
 
-[Hymnus Vespera]
+[Hymnus Vespera] (nisi rubrica cisterciensis)
 v. Regis supérni núntia,
 Domum patérnam déseris,
 Terris, Terésa, bárbaris
@@ -33,7 +35,7 @@ Tibíque, sancta Trínitas,
 Nunc et per omne sǽculum.
 Amen.
 
-[Hymnus Matutinum]
+[Hymnus Matutinum] (nisi rubrica cisterciensis)
 @:Hymnus Vespera
 
 [Lectio4]
@@ -52,10 +54,10 @@ Terésia, piis nobilibúsque paréntibus Abulæ in Hispánia nata, adhuc puéllu
 [Versum 0]
 @Commune/C6::s/N\./Terésia/
 
-[Capitulum Laudes]
+[Capitulum Laudes] (nisi rubrica cisterciensis)
 @Commune/C6
 
-[Hymnus Laudes]
+[Hymnus Laudes] (nisi rubrica cisterciensis)
 v. Hæc est dies, qua cándidæ
 Instar colúmbæ, cǽlitum
 Ad sacra templa spíritus

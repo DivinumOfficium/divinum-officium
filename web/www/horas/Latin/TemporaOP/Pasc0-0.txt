@@ -50,14 +50,14 @@ Prima=53
 [Post Oratio Vespera]
 R. Christus resúrgens ex mórtuis, jam non móritur, mors illi ultra non dominábitur: 
 * Quod enim vivit, vivit Deo, allelúja, allelúja.
-V. Dicant nunc Judæi quómodo mílites custodiéntes sepúlcrum perdidérunt Regem ad lápidis positiónem. Quare non servábant Petram justítia? Aut sepúltum reddant, aut resurgéntem adó- rent, nobiscum dicéntes.
+V. Dicant nunc Judæi quómodo mílites custodiéntes sepúlcrum perdidérunt Regem ad lápidis positiónem. Quare non servábant Petram justítia? Aut sepúltum reddant, aut resurgéntem adórent, nobiscum dicéntes.
 R. Quod enim vivit, vivit Deo, allelúja, allelúja.
 _
 @Psalterium/Special/Major Special:Suffragium Paschale:3-8
 _
 @Commune/C10:Ant 1_Pasch:s/^/Ant. /
 _
-@Commune/C11:Versum 0:s/\.(?! )/, allelúia./g
+@Commune/C11:Versum 0:s/\.(?! )/, allelúja./g
 
 @Psalterium/Mariaant:Advent:12
 

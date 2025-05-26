@@ -1,0 +1,37 @@
+[Officium]
+@Tempora/Pasc5-5
+
+[Rule]
+no Te Deum
+
+[Lectio1]
+@Tempora/Pasc1-1:Lectio1:1-7 s/-8/-5/
+
+[Responsory1]
+@Tempora/Pasc6-0:Responsory8:1-3 s/\.\s*\n\* (.)/: \l$1/ s/, a(\S+)/,\n* A\1/
+@Psalterium/Common/Prayers:Alleluia Simplex:s/^, (.)/R. \u$1/
+
+[Lectio2]
+@Tempora/Pasc1-1:Lectio1:2 s/1-8/6-9/
+@Tempora/Pasc1-1:Lectio1:8-10
+@Tempora/Pasc1-1:Lectio2:2
+
+[Responsory2]
+@Tempora/Pasc5-4:Responsory6
+
+[Lectio3]
+@Tempora/Pasc1-1:Lectio2:!2 s/9-/10-/
+
+[Responsory3]
+R. Non relínquam vos órphanos, allelúja: vado et vénio ad vos:
+* Et gaudébit cor vestrum, allelúja. allelúja.
+V. Ego rogábo Patrem, et álium Paráclitum dabit vobis.
+R. Et gaudébit cor vestrum, allelúja. allelúja.
+&Gloria
+R. Allelúja. allelúja.
+
+[Ant 2]
+Rogábo Patrem meum, et álium Paráclitum dabit vobis, allelúja.
+
+[Ant 3]
+Eúntes in mundum univérsum prædicáte Evangélium omni creatúræ: qui credíderit et baptizátus fúerit, salvus erit, allelúja: qui vero non credíderit, condemnábitur, allelúja.

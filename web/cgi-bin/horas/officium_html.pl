@@ -33,7 +33,7 @@ sub headline {
   # add warning for uncompleted versions
   $output .=
     "<H2><FONT COLOR='RED' SIZE='+1'>Please note that the database for this version ($vers) is still incomplete and under construction.</FONT></H2>\n"
-    if ($vers =~ /1962/ || $vers =~ /Cist/ && $month > 7);
+    if ($vers =~ /1962/);
   $output .=
     "<H2><FONT COLOR='RED'>Please note that 'Ad Matutinum' for this version ($vers) is still incomplete and under construction.</FONT></H2>\n"
     if $vers =~ /1617|1930|Cist/ && $hora =~ /Matutinum/;

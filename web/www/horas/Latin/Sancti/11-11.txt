@@ -5,12 +5,15 @@ S. Martini Episcopi et Confessoris
 ;;Duplex;;3;;vide C4
 (sed rubrica monastica)
 ;;Duplex II. classis;;5;;vide C4
-(sed rubrica 1617 aut rubrica 1930)
+(sed rubrica 1617 aut rubrica 1930 aut rubrica cisterciensis)
 ;;Duplex majus;;4;;vide C4
 
 [Rule]
 vide C4;
 9 lectiones
+
+[Ant Vespera] (rubrica cisterciensis)
+@:Ant Laudes
 
 [Ant 1]
 O beátum virum, * cujus ánima paradísum póssidet! Unde exsúltant Ángeli, lætántur Archángeli, chorus Sanctórum proclámat, turba Vírginum invítat: Mane nobíscum in ætérnum.
@@ -133,6 +136,9 @@ Martínus * Ábrahæ sinu lætus excípitur: Martínus, hic pauper et módicus, 
 
 [Ant 2]
 @:Ant 1
+
+[Ant 2] (rubrica cisterciensis)
+O quantus luctus ómnium! * quanta præcípue laménta Monachórum, et Vírginum! quia et pium est gaudére Martíno et pium est flere Martínum.
 
 [Ant Vespera 3]
 @:Ant Laudes

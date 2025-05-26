@@ -4,6 +4,9 @@ In Exaltatione Sanctæ Crucis;;Duplex majus;;4;;ex Sancti/05-03
 [Rank] (rubrica 196)
 In Exaltatione Sanctæ Crucis;;Duplex II classis;;5.5;;ex Sancti/05-03
 
+[Rank] (rubrica cisterciensis)
+In Exaltatione Sanctæ Crucis;;Duplex II classis;;3;;ex Sancti/05-03
+
 [Rule]
 ex Sancti/05-03
 Domini
@@ -13,9 +16,26 @@ Antiphonas horas
 Psalm5 Vespera=116
 Festum Domini
 
+[Ant Vespera] (rubrica cisterciensis)
+Nos autem * gloriári opórtet in Cruce Dómini nostri Jesu Christi.
+Salva nos, Christe Salvátor, * per virtútem Crucis: qui salvásti Petrum in mari, miserére nobis.
+Tuam Crucem * adorámus, Dómine, tuam gloriósam recólimus passiónem: miserére nostri, qui passus es pro nobis.
+Ecce Crucem Dómini, * fúgite, partes advérsæ, vicit Leo de tribu Juda, radix David, allelúia.
+Per signum Crucis * de inimícis nostris líbera nos, Deus noster.
+
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/05-03:Responsory Sexta:s/._.*//s s/, allelúja//g s/(et benedícimus tibi:? \* )?Allelúja/* Et benedícimus tibi/g s/\. \*/./
+
+[Ant 1] (rubrica cisterciensis)
+Crux fidélis, * inter omnes arbor una nóbilis, nulla silva talem profert, fronde, flore, gérmine: dulce lignum, dulces clavos, dulce pondus sústinet.
+
 [Oratio]
 Deus, qui nos hodiérna die Exaltatiónis sanctæ Crucis ánnua solemnitáte lætíficas: præsta, quǽsumus; ut, cujus mystérium in terra cognóvimus, ejus redemptiónis prǽmia in cælo mereámur.
 $Per eumdem
+
+[Commemoratio 1] (rubrica 1951)
+!Commemoratio diei infra Octavam Nativitatis B.M.V.
+@Sancti/09-08:Oratio
 
 [Invit]
 Christum Regem pro nobis in Cruce exaltátum, * Veníte, adorémus.
@@ -72,7 +92,7 @@ Chósroas, Persárum rex, extrémis Phocæ impérii tempóribus, Ægýpto et Afr
 Quibus cládibus fractus Chósroas, in fuga, qua traícere Tigrim parábat, Medársen fílium sócium regni desígnat. Sed eam contuméliam cum Síroës, Chósroæ major natu fílius, ferret atróciter, patri simul et fratri necem machinátur; quam paulo post utríque ex fuga retrácto áttulit, regnúmque ab Heraclío impetrávit quibúsdam accéptis conditiónibus, quarum ea prima fuit, ut Crucem Christi Dómini restitúeret. Ergo Crux, quatuórdecim annis postquam vénerat in potestátem Persárum, recépta est. Quam rédiens Jerosólymam Heraclíus solémni celebritáte suis húmeris rétulit in eum montem, quo eam Salvátor túlerat.
 
 [Lectio6]
-Quod factum illústri miráculo commendátum est. Nam Heraclíus, ut erat auro et gemmis ornátus, insístere coáctus est in porta, quæ ad Calváriæ montem ducébat. Quo enim magis prógredi conabátur, eo magis retinéri videbátur. Cumque ea re et ipse Heraclíus et réliqui omnes obstupéscerent; Zacharías, Jerosolymórum antístes, Vide, inquit, imperátor, ne isto triumpháli ornátu, in Cruce ferénda parum Jesu Christi paupertátem et humilitátem imitére. Tum Heraclíus, abjécto amplíssimo vestítu detractísque cálceis ac plebéio amíctu indútus, réliquum viæ fácile confécit, et in eódem Calváriæ loco Crucem státuit, unde fúerat a Persis asportáta. Itaque Exaltatiónis sanctæ Crucis solémnitas, quæ hac die quotánnis celebrabátur, illústrior habéri cœpit ob ejus rei memóriam, quod ibídem fúerit repósita ab Heraclío, ubi Salvatóri primum fúerat constitúta.
+Quod factum illústri miráculo commendátum est. Nam Heraclíus, ut erat auro et gemmis ornátus, insístere coáctus est in porta, quæ ad Calváriæ montem ducébat. Quo enim magis prógredi conabátur, eo magis retinéri videbátur. Cumque ea re et ipse Heraclíus et réliqui omnes obstupéscerent; Zacharías, Jerosolymórum antístes, Vide, inquit, imperátor, ne isto triumpháli ornátu, in Cruce ferénda parum Jesu Christi paupertátem et humilitátem imitére. Tum Heraclíus, abjécto amplíssimo vestítu detractísque cálceis ac plebéjo amíctu indútus, réliquum viæ fácile confécit, et in eódem Calváriæ loco Crucem státuit, unde fúerat a Persis asportáta. Itaque Exaltatiónis sanctæ Crucis solémnitas, quæ hac die quotánnis celebrabátur, illústrior habéri cœpit ob ejus rei memóriam, quod ibídem fúerit repósita ab Heraclío, ubi Salvatóri primum fúerat constitúta.
 
 [Lectio94]
 Sancta Crux Dómini, ab Hélena in monte Calváriæ collocáta índeque a Chósroa Persárum rege abláta, ab Heraclío imperatóre, post trinam victóriam in Persas obténtam, recépta est, et suis húmeris in eum montem reláta, quo eam Salvátor túlerat. Quod factum illústri miráculo commendátum est. Nam Heraclíus, ut erat auro et gemmis ornátus, insístere coáctus est in porta, quæ ad Calváriæ montem ducébat. Quo enim magis prógredi conabátur, eo magis retinéri videbátur. Cumque ea re et ipse Heraclíus et réliqui omnes obstupéscerent, Zacharías, Jerosolymórum antístes, Vide, inquit, imperátor, ne isto triumpháli ornátu in Cruce ferénda parum Jesu Christi paupertátem et humilitátem imitére. Tunc Heraclíus, abjécto amplíssimo vestítu detractísque cálceis ac plebéjo amíctu indútus, réliquum viæ fácile confécit. Itaque Exaltatiónis sanctæ Crucis solémnitas, quæ hac die quotánnis celebrabátur, ob ejus rei memóriam illústrior habéri cœpit.
@@ -100,6 +120,11 @@ R. Quia Dóminus regnávit a ligno.
 
 [Ant Laudes]
 @Sancti/05-03:Ant Vespera
+(sed rubrica cisterciensis)
+@:Ant Vespera
+
+[Responsory Laudes] (rubrica cisterciensis)
+@Sancti/05-03:Responsory Tertia:s/._.*//s s/, allelúja//g s/(erit in cælo,? \* )?Allelúja/* Erit in cælo/g s/\. \*/./
 
 [Responsory Tertia]
 @Sancti/05-03::s/, allelúja//g s/(erit in cælo,? \* )?Allelúja/* Erit in cælo/g s/\. \*/./

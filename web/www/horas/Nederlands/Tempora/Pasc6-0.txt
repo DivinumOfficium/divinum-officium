@@ -3,3 +3,46 @@ Dominica infra Octavam Ascensionis
 
 [Officium] (rubrica 196 aut rubrica 1955)
 Dominica post Ascensionem
+
+[Rank]
+;;Semiduplex;;5;;ex Tempora/Pasc5-4
+(sed rubrica 196 aut rubrica1955)
+;;Semiduplex;;5;;vide Tempora/Pasc5-4
+
+[Rule]
+ex Tempora/Pasc5-4; 
+(rubrica tridentina aut rubrica divino) 9 lectiones
+Doxology=Asc
+StJamesRule=John,Rev
+
+[Versum 1]
+@Tempora/Pasc5-4:Versum 2
+
+[Oratio]
+Almachtige, eeuwige God, laat ons altijd vol toewijding onze wil naar U richten en uw majesteit oprecht dienen.
+$Per Dominum
+
+[Commemoratio]
+!Commemoratio Octavæ Ascensionis
+@Tempora/Pasc5-4:Oratio
+(sed rubrica cisterciensis)
+@TemporaM/Pasc5-4:Oratio
+
+[Capitulum Laudes]
+!1 Petri 4:7-8
+v. Zeergeliefden, weest bedachtzaam en waakt onder gebeden, draagt elkander vóór alles een wederzijdse en bestendige liefde toe, want de liefde bedekt een menigte zonden.
+$Deo gratias
+
+[Versum 2]
+@Tempora/Pasc5-4:Versum 1
+(sed rubrica tridentina)
+@:Versum 1
+
+[Ant 2]
+@:Ant 1
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+Dit heb ik u gezegd, * opdat ge, wanneer de tijd ervan gekomen is, u zult herinneren, dat Ik het u gezegd heb, alleluia.

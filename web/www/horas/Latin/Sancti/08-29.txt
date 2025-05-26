@@ -3,7 +3,7 @@ In Decollatione S. Joannis Baptistæ
 
 [Rank]
 ;;Duplex majus;;4;;ex C2a
-(sed rubrica 196 aut rubrica 1617)
+(sed rubrica 196 aut rubrica 1617 aut rubrica cisterciensis)
 ;;Duplex;;3;;vide C2a
 
 [Rule]
@@ -22,11 +22,18 @@ Puéllæ saltánti * imperávit mater: Nihil áliud petas, nisi caput Joánnis.
 Arguébat * Heródem Joánnes propter Herodíadem, quam túlerat fratri suo Philíppo uxórem.
 Da mihi in disco * caput Joánnis Baptístæ. Et contristátus est rex propter jusjurándum.
 
+[Ant Vespera] (rubrica cisterciensis)
+Heródes enim ténuit * et ligávit Joánnem et pósuit in cárcerem propter Herodíadem.
+Puéllæ saltánti * imperávit mater: Nihil áliud petas, nisi caput Joánnis.
+Arguébat * Heródem Joánnes propter Herodíadem, quam túlerat fratri suo Philíppo uxórem.
+Dómine mi rex, * da mihi in disco caput Joánnis Baptístæ.
+Da mihi in disco * caput Joánnis Baptístæ. Et contristátus est rex propter jusjurándum.
+
 [Ant 1]
 Misso Heródes * spiculatóre, præcépit amputári caput Joánnis in cárcere. Quo audíto, discípuli ejus venérunt, et tulérunt corpus ejus, et posuérunt illud in monuménto.
 
 [Oratio]
-Sancti Joánnis Baptístæ Præcursóris et Martýris tui, quǽsumus, Dómine, veneránda festívitas: salutáris auxílii nobis præstet efféctum:
+Sancti Joánnis Baptístæ Præcursóris et Mártyris tui, quǽsumus, Dómine, veneránda festívitas: salutáris auxílii nobis præstet efféctum:
 $Qui vivis
 
 [Lectio1]
@@ -124,5 +131,14 @@ Quid enim ille diceret, nisi quo plenus erat? et quid illi respondérent, nisi q
 [Ant 2]
 @:Ant 1
 
+[Ant Vespera 3] (rubrica cisterciensis)
+@:Ant Vespera:1
+@:Ant Vespera:2
+@:Ant Vespera:4
+@:Ant Vespera:5
+
 [Ant 3]
 Misit rex incrédulus * minístros detestábiles, et amputári jussit caput Joánnis Baptístæ.
+
+[Ant 3] (rubrica cisterciensis)
+Perpétuis * nos, Dómine, sancti Joánnis Baptístæ tuére præsídiis; et quanto fragilióres sumus, tanto magis necessáriis attólle suffrágiis.

@@ -1,2 +1,37 @@
 [Officium]
 Dominica IV Adventus
+
+[Rank]
+;;Semiduplex II. classis;;5.6
+
+[Rank] (rubrica 1570 aut rubrica 1888)
+;;Semiduplex II. classis;;6.1
+
+[Rank] (rubrica 196)
+;;Semiduplex;;6.01
+
+[Rule]
+9 lectiones
+Antiphonas horas
+
+[Ant Vespera] (nisi rubrica tridentina)
+@:Ant Laudes
+
+[Oratio]
+Wij vragen, Heer, wek uw macht op en kom, en sta ons bij met uw grote kracht, opdat door de hulp van uw genade uw genadige vergeving bespoedige wat onze zonden tegenhouden.
+$Qui vivis
+
+[Ant Laudes]
+Steekt de bazuin * op Sion, want de dag des Heren is nabij: zie, Hij zal komen om ons te verlossen, alleluia, alleluia.
+Zie, komen * zal de Verlangde van alle volken: en met heerlijkheid zal vervuld worden het Huis des Heren, alleluia.
+Wat krom is, * zal recht worden en wat hobbelig is, tot effen wegen: kom, Heer, en wil niet toeven, alleluia.
+De Heer zal komen, * snelt Hem tegemoet, en zegt: Groot is zijn heerschappij, en aan zijn rijk zal geen einde komen: God, de Sterke, de Heerser, de Vredevorst, alleluia, alleluia.
+Uw almachtig woord, * Heer, zal komen van de koninklijke troon, alleluia.
+
+[Capitulum Laudes]
+!1 Cor 4:1-2
+v. Broeders, zo moet de mens ons beschouwen als dienaren van Christus en beheerders van de geheimen Gods. Welnu, van de beheerders wordt veresit, dat zij allen trouw bevonden worden.
+$Deo gratias
+
+[Ant Vespera 3]
+@:Ant Laudes

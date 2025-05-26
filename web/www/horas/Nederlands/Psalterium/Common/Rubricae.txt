@@ -1,0 +1,82 @@
+[Pater secreto]
+/:«Our Father» is said silently until «And lead us not into temptation:».:/
+
+
+[Pater totum secreto]
+/:«Our Father» is said completely in silence.:/
+
+[Credo secreto]
+/:«Credo» is said silently until «The resurrection of the body.»:/
+
+[Pater post]
+/:Thereafter, only « Pater Noster » is said silently, unless another Hour follows immediately.:/
+
+[Pater post V]
+/:And if thus the Office is ended, only « Pater Noster » is said silently.:/
+
+[Secreto_]
+/:silently:/
+
+[Secreto_C]
+/:In choir, after the Little Office of Our Lady has been finished, is said silently::/
+
+[Secreto a Laudibus]
+/:If Matins and Lauds are separated, then is said silently::/
+(sed rubrica monastica)
+/:On Simplex feasts and on ferial days, and if Matins are separate from Lauds, one begins in silence::/
+
+[Clara voce_]
+/:Thereafter, with hearable voice, the Versicle is said::/
+
+[Secus absolute]
+/:Otherwise, the hour is started directly as follows::/
+(sed rubrica ^Trident)
+/:After the hymn «Te Deum laudamus» or the last responsory has been recited, the hour begins directly as follows::/
+
+[Matutinum]
+!Skip the rest, unless praying %Lauds% separately.
+(sed rubrica tridentina)
+!After the hymn Te Deum laudamus or the ninth or third responsory has been recited, one begins directly with the %Laudes%, with the exception of Christmas Night: in this one prays the Oratio and then the Christmas mass is celebrated as it is stated at the appropriate place.
+
+[Matutinum] (rubrica monastica)
+!Skip the rest, unless praying %Lauds% separately.
+(sed rubrica tridentina aut rubrica divino)
+!Skip the rest in Offices of 12 lessons, unless praying %Lauds% separately. On Simplex feasts and on ferial days (be it with three or one reading) the following is always prayed.
+
+[Deinde secreto]
+/:Thereafter is said silently:/
+
+[PAC ad Completorium]
+/:If right after Compline, Matins is said, then «Our Father, Hail Mary» and «Credo,» are said twice, once each for end of the Office of the previous day, and for the beginning of the Office of the next.:/
+
+[DefunctV]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! After Vespers of the day, %Vespers of the Dead% are said.
+
+[DefunctM]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! After Lauds of the day, %Matins and Lauds of the Dead% are said.
+
+[Martyrologium] (rubrica monastica)
+/:Then the Martyrology is read in Choir.:/
+(sed rubrica cisterciensis)
+/:Here Prime ends. Thereafter, the Martyrology is read in the Chapter Hall without blessing. Outside the convent, the Martyrology is not read but one immediately continues with « Pretiósa. » as below.:/
+
+[Regula] (rubrica monastica)
+/:Even outside of Choir, it is laudible to read the Holy Regula; otherwise, the Short Reading is prayed:/
+(sed rubrica cisterciensis)
+/:In private recitation, here follows the Short Reading all year round.:/
+
+[Regula ante] (rubrica cisterciensis)
+/:In the Chapter Hall, a chapter or parts of a chapter from the Rule of S. Benedict is read.:/
+
+[examen]
+/:There follows an examination of conscience, or the Our Father said silently.:/
+
+[Preces flexis genibus]
+/:kneel:/
+
+[Antiphona]
+/:intoned solely when the office is chanted:/

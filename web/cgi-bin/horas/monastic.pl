@@ -418,7 +418,7 @@ sub lectioE {
     } else {
       $w = $winner;
     }
-    $w =~ s/M//g;    # there is no corresponding folder missa/latin/SanctiM
+    $w =~ s/(?:M|OP)//g;    # there is no corresponding folder in missa for M or OP
     $s =~ s/(?:LectioE)?/Evangelium/;
     my %missa = %{setupstring("../missa/$lang", $w)};
     @e = split("\n", $missa{$s});
@@ -442,7 +442,7 @@ sub lectioE {
 
 sub lectioE_required {
   our $dayname;
-  $dayname[1] !~ /Feria|octavam|vigil/ || our $winner =~ /Quadp3-3|Quad6-4|12-24|11-02/;
+  $dayname[1] !~ /Feria|octavam|vigil|in albis/i || our $winner =~ /Quadp3-3|Quad6-4|12-24|11-02/;
 }
 
 #*** sub regula_vel_lectio_evangeli

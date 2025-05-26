@@ -122,7 +122,7 @@ sub translate_cz : ScriptFunc {
   $line =~ s/Bechinensis/bechyňský/ig;
   $line =~ s/Capellensis/z Kapliček/ig;
   $line =~ s/Vorder Heuraffl|Heuraffel|Hayraffl|Hayraffa/Přední Výtoň/ig;
-  $line =~ s/in Capella/v Kapličkách/g;
+  $line =~ s/in Capell[an]/v Kapličkách/g;
   $line =~ s/de Capella/z Kapliček/g;
   $line =~ s/in capella prima/v první kapli/ig;
   $line =~ s/in capella/v kapli/ig;

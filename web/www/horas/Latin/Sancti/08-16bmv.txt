@@ -6,6 +6,21 @@ ex Sancti/08-15;
 9 lectiones
 No prima Vespera
 
+[Ant Vespera] (rubrica cisterciensis)
+@Sancti/08-15t::s/;;.*//g
+
+[Ant 1] (rubrica cisterciensis)
+Paradísi porta * per Evam cunctis clausa est, et per Maríam Vírginem íterum patefácta est, allelúia.
+
+[Ant 2] (rubrica cisterciensis)
+@Commune/C10
+
+[Versum 1] (rubrica cisterciensis)
+@SanctiM/08-15
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
 [Lectio1]
 De Canticis Canticorum
 !Cant 2:1-7

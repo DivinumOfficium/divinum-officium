@@ -1,0 +1,111 @@
+@Tempora/Pasc5-4
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+3 lectiones
+
+[Ant Vespera]
+Ascéndens Christus in altum, captívam duxit captivitátem, dedit dona homínibus, allelúja.;;112;116;145;146;147
+
+[Capitulum Laudes]
+@Tempora/Pasc5-4
+
+[Responsory Vespera 1]
+@Tempora/Pasc5-4::s/\*/\n*/
+&Gloria
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. / s/,.*/./
+
+[Hymnus Vespera]
+@:HymnusM Matutinum
+
+[Oratio]
+@TemporaOP/Pasc5-3:Oratio 2
+
+[Oratio 2]
+@Tempora/Pasc5-4:Oratio
+
+[Ant 41]
+@Psalterium/Special/Minor Special:Ant 4 Asc
+
+[HymnusM Matutinum]
+@:Hymnus Matutinum:!26-35 s/Cui mors.*ómnium:/Quo mors solúta déperit,\nDatur triúmphum grátiæ.\n_\nScandens tribúnal déxteræ\nPatris, potéstas ómnium\nColláta Jesu cǽlitus,\nQuæ non erat humánitus:/s s/Peccat caro, mundat/Culpat caro, purgat/ s/Sis ipse/Tu esto/ s/prǽmium,/prǽditum:/
+
+[Ant Matutinum]
+@Tempora/Pasc5-4::1-3
+
+[Lectio1]
+@Tempora/Pasc5-4:Lectio7
+
+[Responsory1]
+@Tempora/Pasc5-4:Responsory1:1-3 s/\n\* (.*?): (.*?)\n(.*)/\l$1:\n* \u$2\n$3R. \u$2/s
+
+[Lectio2]
+@Tempora/Pasc5-4:Lectio8
+
+[Responsory2]
+@Tempora/Pasc5-4:Responsory2:1-3 s/\n\* (.*?), (.*?)\n(.*)/\l$1,\n* \u$2\n$3R. \u$2/s
+
+[Lectio3]
+@Tempora/Pasc5-4:Lectio9
+
+[Responsory3]
+@TemporaM/Pasc5-4:Responsory11
+&Gloria
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. / s/(, a.*)./$1$1./
+
+[HymnusM Laudes]
+v. Tu, Christe, nostrum gáudium,
+Manens Olýmpo prǽditum:
+Mundi regis qui fábricam,
+Mundána vincens gáudia.
+_
+Hinc te precántes quǽsumus,
+Ignósce culpis ómnibus
+Et corda sursum súbleva
+Ad te supérna grátia.
+_
+Ut cum repénte cœperis
+Clarére nube Júdicis,
+Pœnas repéllas débitas,
+Reddas corónas pérditas.
+_
+Tu esto nostrum gáudium,
+Qui es futúrus prǽmium:
+Sit nostra in te glória,
+Per cuncta semper sǽcula.
+_
+Glória tibi, Dómine,
+Qui scandis supra sídera,
+Cum Patre, et Sancto Spíritu,
+In sempitérna sǽcula.
+Amen.
+
+[Responsory Breve Tertia]
+R.br. Eleváta est, magnificéntia tua, * Allelúja, allelúja.
+R. Eleváta est, magnificéntia tua, * Allelúja, allelúja.
+V. Super cælos, Deus, allelúja.
+R. Allelúja, allelúja.
+&Gloria
+R. Eleváta est, magnificéntia tua, * Allelúja, allelúja.
+
+[Versum Tertia]
+@:Versum 1_
+
+[Responsory Breve Sexta]
+@Tempora/Pasc5-4:Responsory Breve Tertia
+
+[Versum Sexta]
+@:Nocturn 2 Versum_
+
+[Responsory Breve Nona]
+@Tempora/Pasc5-4:Responsory Breve Sexta
+
+[Versum Nona]
+@Tempora/Pasc5-4:Responsory2:3 s/, (.)/.\nR. \u$1/
+
+[Ant Vespera 3]
+@Tempora/Pasc5-4:Ant Vespera:1 s/$/;;109;110;111;112;116/
+
+[Oratio 3]
+@Tempora/Pasc5-4:Oratio

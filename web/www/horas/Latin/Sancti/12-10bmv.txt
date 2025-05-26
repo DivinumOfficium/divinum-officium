@@ -5,6 +5,10 @@ De III die infra Octavam Conceptionis Immaculatæ Beatæ Mariæ Virginis;;Semidu
 vide Sancti/12-08;
 9 lectiones;
 Doxology=Nat
+(rubrica cisterciensis) Psalmi Feria
+
+[Ant Vespera] (rubrica cisterciensis)
+@Sancti/12-08::s/;;.*//g
 
 [Lectio4]
 Ex Bulla dogmatica Pii Papæ IX

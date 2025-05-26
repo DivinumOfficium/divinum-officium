@@ -1,0 +1,32 @@
+@Sancti/10-02
+
+[Officium]
+SS. Angelorum Custodum Septembris
+
+[Rank]
+;;Serm. maj.;;6
+
+[Responsory Vespera 1]
+@Sancti/10-02:Responsory8:1-4:s/R. /Responsorium. /
+
+[Ant Laudes]
+Angelis suis * Deus mandávit de te, ut custódiant te in ómnibus viis tuis.
+Laudémus Dóminum, * quem laudant Angeli, quem Chérubim et Séraphim, Sanctus, Sanctus, Sanctus proclámant.
+Angeli eórum * semper vident fáciem Patris mei, qui est in cælis.
+Angeli Dómini * Dóminum benedícite in ætérnum.
+Laudáte Deum, * omnes Angeli ejus: laudáte eum, omnes Virtútes ejus.
+
+[Responsory Laudes]
+@Sancti/05-08:Responsory Tertia:s/._.*//s
+
+[Responsory TertiaM]
+@Sancti/05-08:Nocturn 1 Versum:s/, all?el[uú][ij]a//g
+
+[Responsory SextaM]
+@Sancti/05-08:Responsory Tertia:s/.*_.//s
+
+[Responsory NonaM]
+@:Versum 3
+
+[Responsory Vespera]
+@Sancti/05-08:Responsory Sexta:s/._.*//s

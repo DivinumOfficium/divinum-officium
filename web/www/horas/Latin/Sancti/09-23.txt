@@ -5,6 +5,8 @@ S. Lini Papæ et Martyris
 ;;Semiduplex;;2.2;;vide C2b-1
 (sed rubrica innovata aut rubrica 1963)
 ;;Simplex;;1.1;;vide C2b-1
+(sed rubrica cisterciensis)
+;;Commemoratio;;1;;vide C2b-1
 
 [Rule]
 vide C2b-1;

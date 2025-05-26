@@ -1,0 +1,41 @@
+[Officium]
+Dominica III Post Pentecosten infra Octavam SSmi Cordis D.N.J.C
+
+[Rank]
+;;Semiduplex;;5;;ex Tempora/Pent02-5
+
+[Rule]
+ex Tempora/Pent02-5;
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+Symbolum Athanasium
+Doxology=Heart
+
+[Versum 1]
+V. De barmhartige Heer stelde zijn wonderwerken tot een gedachtenis.
+R. Hij gaf spijs aan die Hem vrezen.
+
+[Ant 1]
+Allen erkenden * van Dan tot Betsabe, dat Samuël een vertrouwbaar profeet was  van de Heer.
+
+[Oratio]
+@Tempora/Pent02-5:Oratio3
+
+[Commemoratio]
+!Commemoratio de Octava SSmi Cordis Jesu
+@Tempora/Pent02-5:Oratio
+
+[Capitulum Laudes]
+!1 Pet 5:6-7
+v. Zeergeliefden, vernedert u onder Gods machtige hand, opdat Hij u verheffe ten tijde van zijn komst; werpt op hem al zijn bekommernis, want Hij draagt zorg voor u.
+$Deo gratias
+
+[Versum 2]
+@Tempora/Pent02-5:Versum 1
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+Welke vrouw * die tien drachmen bezit en er één van verliest, steekt niet een lamp aan, veegt het huis en zoekt zorgvuldig tot zij ze vindt?

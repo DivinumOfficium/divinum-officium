@@ -5,17 +5,23 @@ S. Caroli Episcopi et Confessoris
 ;;Duplex;;3;;vide C4
 (sed rubrica monastica)
 ;;Simplex;;1.1;;vide C4
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.2;;vide C4
 
 [Rule]
 vide C4;
 9 lectiones
+(rubrica cisterciensis) Psalmi Dominica
+
+[Versum 3] (die Caroli et rubrica cisterciensis)
+@CommuneM/C4:Nocturn 1 Versum
 
 [Oratio]
 Ecclésiam tuam, Dómine, sancti Cároli Confessóris tui atque Pontíficis contínua protectióne custódi: ut, sicut illum pastorális sollicitúdo gloriósum réddidit; ita nos ejus intercéssio in tuo semper fáciat amóre fervéntes.
 $Per Dominum
 
 [Lectio4]
-Cárolus, Mediolani nobili Borromæórum família natus, quanta futurus esset sanctitáte conspicuus, divina lux super pariéntis matris cubiculum noctu coruscans præsignávit. A puerítia clericali milítiæ adscriptus, abbatía postmodum insignítus, patrem admonuit ne réditus in rem familiarem converteréntur; quorum ipse nactus administratiónem, quidquid supérerat, expendebat in páuperes. Adoléscens liberálibus disciplinis Papíæ operam dedit. Castitátem adeo coluit, ut impudícas étiam mulieres, ad labefáctandam ejus pudicítiam pluries immissas, invicta constántia fugaverit. Vigesimum tertium ætátis annum agens, a Pio quarto ejus avunculo in sacrum cardinalium collegium cooptatus, insígni pietátis ac virtútum ómnium splendore præluxit. Mox ab eodem Mediolanénsis archiepíscopus creatus, in eo plurimam operam adhibuit, ut, juxta sacrosanctum Tridentinum concílium, quod ejus potíssimum sollicitúdine jam tum fuerat absolutum, ecclésiam sibi commissam compóneret; atque, ut depravatos plebis suæ mores reformaret, præter iteratam sæpius synodórum celebratiónem, seípsum exímiæ sanctitátis præbuit exemplar. In profligandis hæreticis e partibus Rhætórum et Helvetiórum, quorum plurimos ad christianam fidem convértit, maxime laborávit.
+Cárolus, Mediolani nobili Borromæórum família natus, quanta futurus esset sanctitáte conspicuus, divina lux super pariéntis matris cubiculum noctu coruscans præsignávit. A puerítia clericali milítiæ adscriptus, abbatía postmodum insignítus, patrem admonuit ne réditus in rem familiarem converteréntur; quorum ipse nactus administratiónem, quidquid supérerat, expendebat in páuperes. Adoléscens liberálibus disciplinis Papíæ operam dedit. Castitátem adeo coluit, ut impudícas étiam mulieres, ad labefactándam ejus pudicítiam pluries immissas, invicta constántia fugaverit. Vigesimum tertium ætátis annum agens, a Pio quarto ejus avunculo in sacrum cardinalium collegium cooptatus, insígni pietátis ac virtútum ómnium splendore præluxit. Mox ab eodem Mediolanénsis archiepíscopus creatus, in eo plurimam operam adhibuit, ut, juxta sacrosanctum Tridentinum concílium, quod ejus potíssimum sollicitúdine jam tum fuerat absolutum, ecclésiam sibi commissam compóneret; atque, ut depravatos plebis suæ mores reformaret, præter iteratam sæpius synodórum celebratiónem, seípsum exímiæ sanctitátis præbuit exemplar. In profligandis hæreticis e partibus Rhætórum et Helvetiórum, quorum plurimos ad christianam fidem convértit, maxime laborávit.
 
 [Lectio5]
 Hujus viri caritas præcipue enituit, cum, Uritano principatu véndito, prétium univérsum, ad quadragínta aureórum millia, una die in páuperes erogávit. Nec minore pietáte viginti millia, quæ sibi fúerant legata, distríbuit. Ecclesiásticos proventus, quibus ab avunculo copiose fuerat cumulátus, dimísit, nonnullis retentis, quibus ad proprios usus et egenórum necessitates utebátur. Quo témpore pestis Mediolani grassabátur, domesticam supellectilem, ne relícto sibi lectulo, in eosdem alendos cóntulit, super nuda in pósterum tábula decumbens; eoque morbo laborántes sédulo invisens, paterno reficiebat afféctu, et Ecclésiæ sacraménta propriis ipse mánibus administrans, mirum in modum solabátur. Humillimis interim precibus reconciliator accédens, publica supplicatióne indicta, fune sibi ad collum alligato, nudis pédibus étiam offendiculo cruentátis, crucem bájulans, semetípsum pro peccátis pópuli hóstiam offerens, divinam indignatiónem avértere satagebat. Ecclesiásticæ libertátis fuit acerrimus propugnator. Disciplinæ vero restituéndæ sollícitus, a seditiosis, dum oratióni insísteret, torménti bellici laxáta rota, igneo glóbulo percússus, divina virtúte servátur illæsus.

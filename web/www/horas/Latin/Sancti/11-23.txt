@@ -3,7 +3,7 @@ S. Clementis Papæ et Martyris
 
 [Rank]
 ;;Duplex;;3;;vide C2b
-(sed rubrica 1570 aut rubrica 1617)
+(sed rubrica 1570 aut rubrica 1617 aut rubrica cisterciensis)
 ;;Semiduplex;;2.2;;vide C2b
 
 [Rule]
@@ -16,7 +16,7 @@ Cleméntem
 [Ant Vespera]
 Oránte * sancto Cleménte, appáruit ei Agnus Dei.;;109
 Non meis méritis * ad vos me misit Dóminus, vestris corónis partícipem fíeri.;;110
-Vidi supra montem * Agnum stántem, de sub cujus pede fons vivus emánat.;;111
+Vidi supra montem * Agnum stantem, de sub cujus pede fons vivus emánat.;;111
 De sub cujus pede * fons vivus emánat: flúminis ímpetus lætíficat civitátem Dei.;;112
 Omnes gentes * per gyrum credidérunt Christo Dómino.;;116
 
@@ -39,7 +39,7 @@ $Per Dominum
 [Responsory1o]
 R. Oránte sancto Cleménte, appáruit ei Agnus Dei, 
 * De sub cujus pede fons vivus emánat: flúminis ímpetus lætíficat civitátem Dei.
-V. Vidi supra montem Agnum stántem.
+V. Vidi supra montem Agnum stantem.
 R. De sub cujus pede fons vivus emánat: flúminis ímpetus lætíficat civitátem Dei.
 
 [Lectio2] (rubrica tridentina)
@@ -117,6 +117,9 @@ Quisnam est fidélis servus et prudens, quem constítuit Dóminus super família
 
 [Ant 2]
 Cum iter ad mare cepísset, * pópulus voce magna clamábat: Dómine Jesu Christe, salva illum; et Clemens cum lácrimis dicébat: Súscipe, Pater, spíritum meum.
+
+[Ant 2] (rubrica cisterciensis)
+Orémus omnes * ad Dóminum Jesum Christum, ut osténdat nobis Mártyris sui corpus.
 
 [Ant Vespera 3]
 @:Ant Vespera:s/116/115/

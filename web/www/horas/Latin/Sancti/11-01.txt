@@ -23,6 +23,18 @@ Redemísti nos, * Dómine Deus, in sánguine tuo ex omni tribu, et lingua, et p�
 Benedícite Dóminum * omnes elécti ejus: ágite dies lætítiæ, et confitémini illi.
 Hymnus * ómnibus Sanctis ejus: fíliis Israël, pópulo appropinquánti sibi: glória hæc est ómnibus sanctis ejus.
 
+[Ant Vespera] (rubrica cisterciensis)
+Sanctórum sicut áquilæ * juvéntus renovábitur, florébunt sicut lílium in civitáte Dómini.
+Lux perpétua * lucébit Sanctis tuis, et ætérnitas témporum, allelúia.
+Vox lætítiæ * in tabernáculis justórum, allelúia, allelúia, allelúia.
+Beáti mundo corde: * quóniam ipsi Deum vidébunt.
+Sancti per fidem * vicérunt regna, operáti sunt justítiam, adépti sunt repromissiónes.
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+Responsorium. Beáta vere mater Ecclésia, quam sic honor divínæ dignatiónis illúminat, quam victoriosórum gloriósus Mártyrum sanguis exórnat, * Quam inviolátæ confessiónis cándida índuit virgínitas. 
+V. Flóribus ejus nec rosæ, nec lília desunt. 
+R. Quam inviolátæ confessiónis cándid índuit virgínitas. 
+
 [Hymnus Vespera]
 {:H-PlacareChriste:}v. Placáre, Christe, sérvulis,
 Quibus Patris cleméntiam
@@ -100,6 +112,9 @@ Amen.
 [Ant 1]
 Ángeli, * Archángeli, Throni et Dominatiónes, Principátus et Potestátes, Virtútes cælórum, Chérubim atque Séraphim, Patriárchæ et Prophétæ, sancti legis Doctóres, Apóstoli, omnes Christi Mártyres, sancti Confessóres, Vírgines Dómini, Anachorítæ, Sanctíque omnes, intercédite pro nobis.
 
+[Ant 1] (rubrica cisterciensis)
+Salvátor mundi * salva nos omnes: sancta Dei Génitrix, Virgo semper María, ora pro nobis: précibus quoque sanctórum Apostolórum, Mártyrum et Confessórum, atque sanctárum Vírginum supplíciter pétimus, ut a malis ómnibus eruámur, bonísque ómnibus nunc et semper pérfrui mereámur.
+
 [Oratio]
 Omnípotens sempitérne Deus, qui nos ómnium Sanctórum tuórum mérita sub una tribuísti celebritáte venerári: quǽsumus; ut desiderátam nobis tuæ propitiatiónis abundántiam, multiplicátis intercessóribus, largiáris.
 $Per Dominum
@@ -128,7 +143,7 @@ Qui dilígitis Dóminum, * lætámini in Dómino, et confitémini memóriæ sanc
 De libro Apocalýpsis beáti Joánnis Apóstoli
 !Apo 4:2-8
 2 Et ecce sedes pósita erat in cælo, et supra sedem sedens.
-3 Et qui sedébat símilis erat aspéctui lápidis iáspidis, et sárdinis: et iris erat in circúitu sedis símilis visióni smarágdinæ.
+3 Et qui sedébat símilis erat aspéctui lápidis jáspidis, et sárdinis: et iris erat in circúitu sedis símilis visióni smarágdinæ.
 4 Et in circúitu sedis sedília vigínti quátuor: et super thronos vigínti quátuor senióres sedéntes, circumamícti vestiméntis albis, et in capítibus eórum corónæ áureæ.
 5 Et de throno procedébant fúlgura, et voces, et tonítrua: et septem lámpades ardéntes ante thronum, qui sunt septem spíritus Dei.
 6 Et in conspéctu sedis tamquam mare vítreum símile crystállo: et in médio sedis, et in circúitu sedis quátuor animália plena óculis ante et retro.
@@ -218,6 +233,13 @@ R. Ut digni eficiámur promissiónibus Christi.
 [Ant Laudes]
 @:Ant Vespera
 
+[Ant Laudes] (rubrica cisterciensis)
+@CommuneM/C3:Ant 2
+@Commune/C3:Ant 3
+@CommuneM/C1:Ant 3
+@CommuneM/C1:Ant Vespera:4:s/;;.*//
+@CommuneM/C1:Ant Vespera:5
+
 [Capitulum Laudes]
 !Apo 7:2-3
 v. Ecce ego Joánnes vidi álterum Angelum ascendéntem ab ortu solis, habéntem signum Dei vivi: et clamávit voce magna quátuor Ángelis, quibus datum est nocére terræ et mari, dicens: Nolíte nocére terræ et mari, neque arbóribus, quoadúsque signémus servos Dei nostri in fróntibus eórum.
@@ -287,8 +309,16 @@ Sancto simul Paráclito,
 In sæculórum sǽcula.
 Amen.
 
-[Ant 2]
+[Ant 2_]
 Te gloriósus * Apostolórum chorus, te Prophetárum laudábilis númerus, te Mártyrum candidátus laudat exércitus, te omnes Sancti et elécti voce confiténtur unánimes, beáta Trínitas, unus Deus.
+
+[Ant 2C]
+Beáti estis * Sancti Dei omnes, qui meruístis consórtes fíeri cæléstium virtútum, et pérfrui ætérnæ claritátis glória: idéoque precámur, ut mémores nostri, intercédere dignémini pro nobis ad Dóminum Deum nostrum.
+
+[Ant 2]
+@:Ant 2_
+(sed rubrica cisterciensis)
+@:Ant 2C
 
 [Lectio Prima]
 !Apo 7:12
@@ -305,3 +335,6 @@ $Deo gratias
 
 [Ant 3]
 O quam gloriósum est regnum * in quo cum Christo gaudent omnes Sancti, amícti stolis albis sequúntur Agnum quocúmque íerit!
+
+[Ant 3] (rubrica cisterciensis)
+@:Ant 2_

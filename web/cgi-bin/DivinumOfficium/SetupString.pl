@@ -210,6 +210,8 @@ sub get_dayname_for_condition {
       $month == 11
       && ($day == 2 || ($day == 3 && $dayofweek == 1) || ($day == 1 && day_of_week(11, 1, $year) != 6 && $vesp_or_comp))
     );
+  return 'Malachiae' if $month == 11 && $day == 3;
+  return 'Caroli' if $month == 11 && $day == 4;
   return 'Nicolai' if $month == 12 && $day == 6;
   return 'Nat28' if $month == 12 && $day == 28;
   return 'Nat29' if $month == 12 && $day == 29;

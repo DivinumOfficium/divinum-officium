@@ -6,6 +6,10 @@ vide Sancti/12-08;
 9 lectiones;
 Doxology=Nat
 No prima Vespera
+(rubrica cisterciensis) Psalmi Feria
+
+[Ant Vespera] (rubrica cisterciensis)
+@Sancti/12-08::s/;;.*//g
 
 [Lectio4]
 Ex Bulla dogmatica Pii Papæ IX

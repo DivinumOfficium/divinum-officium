@@ -7,11 +7,15 @@ Ss. Euphemiæ, Luciæ et Geminiani Martyrum
 [Rule]
 vide C3;
 
-[Versum 1]
+[Versum 1] (nisi rubrica altovadensis)
 @Commune/C3:Versum 2
+(sed rubrica cisterciensis)
+@Commune/C3:Nocturn 2 Versum
 
 [Ant 1]
 @Commune/C3:Ant 3
+(sed rubrica cisterciensis)
+@Commune/C3:Ant Vespera:4
 
 [Oratio]
 Præsta, Dómine, précibus nostris cum exsultatióne provéntum: ut sanctórum Mártyrum Euphémiæ, Lúciæ et Geminiáni, quorum diem passiónis ánnua devotióne recólimus, étiam fídei constántiam subsequámur.
@@ -20,8 +24,12 @@ $Per Dominum
 [Lectio93]
 Euphemia, Lúcia et Geminianus, in persecutióne Diocletiáni, non eodem loco, sed eodem die, martyrio coronáti sunt. Euphemia Virgo apud Chalcédonem, Prisco proconsule, varia tormentórum genera, virgárum, equulei, rotárum, ignis constanter passa; demum béstiis objecta, una ex iis morsum sancto corpori infigente, ceteris pedes ejus lambéntibus, immaculátum spíritum Deo réddidit. Lúcia, vidua Romana, a fílio Eutropio quod Christum multos annos coluísset accusata, in ollam pice ac plumbo ferventuem dimittitur; unde incólumis evadens, cum ferro plumboque oneráta per Urbem ducerétur, Geminianum, nóbilem virum, constántia fidei et martyrii ad Christum convértit. Quem étiam cum multis aliis ad fidem perductis, varie tortum, gloriosi martyrii, abscisso cápite, socium hábuit. Quorum córpora Maxima, mulier christiana, honorifice sepelívit.
 
-[Versum 2]
+[Versum 2] (nisi rubrica altovadensis)
 @Commune/C3:Versum 1
+(sed rubrica cisterciensis)
+@Commune/C3:Nocturn 2 Versum
 
 [Ant 2]
 @Commune/C3:Ant 1
+(sed rubrica cisterciensis)
+@Commune/C3:Ant Vespera:5

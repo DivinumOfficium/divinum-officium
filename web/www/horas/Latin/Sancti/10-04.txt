@@ -5,10 +5,13 @@ S. Francisci Confessoris
 ;;Duplex majus;;4;;vide C5
 (sed rubrica 1963)
 ;;Duplex;;3;;vide C5
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.2;;vide C5
 
 [Rule]
 vide C5;
 9 lectiones
+(rubrica cisterciensis) Psalmi Dominica
 
 [Oratio]
 Deus, qui Ecclésiam tuam beáti Francísci méritis fœtu novæ prolis amplíficas: tríbue nobis; ex ejus imitatióne, terréna despícere, et cæléstium donórum semper participatióne gaudére.
@@ -24,7 +27,7 @@ Cum autem illud ex Evangélio audísset: Nolíte possidére aurum, neque argént
 Multis ígitur exstrúctis suæ famíliæ domicíliis, se in solitúdinem montis Alvérni cóntulit; ubi quadragínta diérum, propter honórem sancti Michaélis Archángeli, jejúnio inchoáto, festo die Exaltatiónis sanctæ Crucis, ei Séraphim crucifíxi effígiem inter alas cóntinens appáruit; qui ejus et mánibus, et pédibus, et láteri vestígia clavórum impréssit. Quæ sanctus Bonaventúra, cum Alexándri quarti summi Pontíficis prædicatióni interésset, narrásse Pontíficem a se visa esse, lítteris commendávit. His insígnibus summi in eum Christi amóris, máximam habébat ómnium admiratiónem. Ac biénnio post, gráviter ægrótans, deférri vóluit in ecclésiam sanctæ Maríæ Angelórum; ut, ubi grátiæ spíritum a Deo accéperat, ibi spíritum vitæ rédderet. Eo in loco fratres ad paupertátem ac patiéntiam, et sanctæ Románæ Ecclésiæ fidem servándam cohortátus, Psalmum illum pronúntians, Voce mea ad Dóminum clamávi; in eo versículo, Me exspéctant justi, donec retríbuas mihi, efflávit ánimam quarto Nonas Octóbris. Quem, miráculis clarum, Gregórius nonus Póntifex máximus in Sanctórum númerum adscrípsit.
 
 [Lectio94]
-Francíscus, Assísii in Umbria natus, patris exémplum secútus, a prima ætáte mercatúram fecit. Grávi morbo corréptus, cum convaluísset, cœpit ardéntius cólere caritátis offícia, et patri id indígne ferénti, bona ómnia cessit, subjúngens sibi in pósterum majórem facultátem fore dicéndi: Pater noster, qui es in cælis. Cum autem ex Evangélio apostólicæ paupertátis mónita audísset, detráctis cálceis et una conténtus túnica, cum duódecim sócios adhibuísset, órdinem Minórum instítuit; quem, a summo Pontífice Innocéntio tértio, cǽlitus admónito, confirmátum, mirífice propagávit. Mox in solitúdinem montis Alvérni se cóntulit, ibíque, die Exaltatiónis sanctæ Crucis a Séraphim crucifíxi effígiem inter alas præ se ferénte, sacra accépit stígmata; in ejus mánibus, pédibus et látere clavórum et lánceæ vestígiis apparéntibus. Biénnio post gráviter ægrótans, in ecclésia sanctæ Maríæ Angelórum, ubi grátiæ spíritum a Deo accéperat, fratres ad paupertátem, patiéntiam et sanctæ Románæ Ecclésiæ fidem servándam hortátus, piíssime ánimam efflávit quarto nonas octóbris.
+Francíscus, Assísii in Umbria natus, patris exémplum secútus, a prima ætáte mercatúram fecit. Gravi morbo corréptus, cum convaluísset, cœpit ardéntius cólere caritátis offícia, et patri id indígne ferénti, bona ómnia cessit, subjúngens sibi in pósterum majórem facultátem fore dicéndi: Pater noster, qui es in cælis. Cum autem ex Evangélio apostólicæ paupertátis mónita audísset, detráctis cálceis et una conténtus túnica, cum duódecim sócios adhibuísset, órdinem Minórum instítuit; quem, a summo Pontífice Innocéntio tértio, cǽlitus admónito, confirmátum, mirífice propagávit. Mox in solitúdinem montis Alvérni se cóntulit, ibíque, die Exaltatiónis sanctæ Crucis a Séraphim crucifíxi effígiem inter alas præ se ferénte, sacra accépit stígmata; in ejus mánibus, pédibus et látere clavórum et lánceæ vestígiis apparéntibus. Biénnio post gráviter ægrótans, in ecclésia sanctæ Maríæ Angelórum, ubi grátiæ spíritum a Deo accéperat, fratres ad paupertátem, patiéntiam et sanctæ Románæ Ecclésiæ fidem servándam hortátus, piíssime ánimam efflávit quarto nonas octóbris.
 &teDeum
 
 [Lectio7]

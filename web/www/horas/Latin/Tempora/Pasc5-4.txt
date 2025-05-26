@@ -30,7 +30,7 @@ Pacem meam do vobis, * allelúia: pacem relínquo vobis, allelúia.
 Viri Galilǽi, * quid aspícitis in cœlum? hic Jesus qui assúmptus est a vobis in cœlum, sic véniet, allelúia.
 Sic véniet * quemadmodum vidístis eum eúntem in cœlum, allelúia.
 
-[Responsory Vespera 1] (rubrica cisterciensis)
+[Responsory Vespera 1] (rubrica cisterciensis aut rubrica praedicatorum)
 Responsorium. Omnis pulchritúdo Dómini exaltáta est super sídera: spécies ejus in núbibus cœli: * Et nomen ejus in ætérnum pérmanet, allelúia.
 V. A summo cœlo egréssio ejus, et occúrsus ejus usque ad summum ejus:
 R. Et nomen ejus in ætérnum pérmanet, allelúia.
@@ -89,9 +89,18 @@ Sit nostra in te glória,
 Per cuncta semper sǽcula.
 Amen.
 
-[Versum 1]
+[Versum 1_]
 V. Ascéndit Deus in jubilatióne, allelúja.
 R. Et Dóminus in voce tubæ, allelúja.
+
+[Versum 1OP]
+V. Eleváta est, magnificéntia tua, allelúja.
+R. Super cælos, Deus, allelúja.
+
+[Versum 1]
+@:Versum 1_
+(sed rubrica praedicatorum)
+@:Versum 1OP
 
 [Ant 1]
 Pater, * manifestávi nomen tuum homínibus quos dedísti mihi: nunc autem pro eis rogo, non pro mundo, quia ad te vénio, allelúja.
@@ -413,10 +422,20 @@ $Per eumdem
 [Nocturn 1 Versum]
 @:Versum 1
 
-[Nocturn 2 Versum]
+[Nocturn 2 Versum_]
 V. Ascéndens Christus in altum, allelúja.
 R. Captívam duxit captivitátem, allelúja.
 
-[Nocturn 3 Versum]
+[Nocturn 2 Versum]
+@:Nocturn 2 Versum_
+(sed rubrica praedicatorum)
+@:Versum 1_
+
+[Nocturn 3 Versum_]
 V. Ascéndo ad Patrem meum, et Patrem vestrum, allelúja.
 R. Deum meum, et Deum vestrum, allelúja.
+
+[Nocturn 3 Versum]
+@:Nocturn 3 Versum_
+(sed rubrica praedicatorum)
+@:Nocturn 2 Versum_
