@@ -1,16 +1,18 @@
-[Rank]
-Ss. Perpetuæ et Felicitatis Martyrum;;Duplex;;3;;vide C7b
+[Officium]
+Ss. Perpetuæ et Felicitatis Martyrum
 
-[Rank] (rubrica innovata)
-Ss. Perpetuæ et Felicitatis Martyrum;;Duplex;;3.91;;vide C7b
+[Rank]
+;;Duplex;;3;;vide C7b
+(rubrica innovata)
+;;Duplex;;3.91;;vide C7b
 
 [Rule]
 vide C7b;
 9 lectiones
 Quarum festum
 
-[Oratio]
-@Commune/C7b::s/N\. et N\./Perpétuæ et Felicitátis/
+[Name]
+Perpétuæ et Felicitátis
 
 [Invit]
 @Commune/C7b::s/N\. et N\./Perpétuæ et Felicitátis./

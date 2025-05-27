@@ -1,5 +1,10 @@
+[Officium]
+S. Mariæ Magdalenæ Pœnitentis
+
 [Rank]
-S. Mariæ Magdalenæ Pœnitentis;;Duplex;;3;;vide C7
+;;Duplex;;3;;vide C7a
+(sed rubrica 1930)
+;;Duplex majus;;4;;ex C7a
 
 [Rule]
 vide C7;
@@ -7,7 +12,7 @@ Gloria
 CredoDA
 
 [Introitus]
-@Commune/C6a
+@Commune/C6-1
 
 [Oratio]
 Beátæ Maríæ Magdalénæ, quǽsumus, Dómine, suffrágiis adjuvémur: cujus précibus exorátus, quatriduánum fratrem Lázarum vivum ab ínferis resuscitásti:
@@ -32,14 +37,14 @@ Sequéntia ++ sancti Evangélii secúndum Lucam
 In illo témpore: Rogábat Jesum quidam de pharisǽis, ut manducáret cum illo. Et ingréssus domum pharisǽi, discúbuit. Et ecce múlier, quæ erat in civitáte peccátrix, ut cognóvit, quod accubuísset in domo pharisǽi, áttulit alabástrum unguénti: et stans retro secus pedes ejus, lácrimis cœpit rigáre pedes ejus, et capíllis cápitis sui tergébat, et osculabátur pedes ejus, et unguénto ungébat. Videns autem pharisǽus, qui vocáverat eum, ait intra se, dicens: Hic si esset Prophéta, sciret útique, quæ et qualis est múlier, quæ tangit eum: quia peccátrix est. Et respóndens Jesus, dixit ad illum: Simon, hábeo tibi áliquid dícere. At ille ait: Magíster, dic. Duo debitóres erant cuidam fœneratóri: unus debébat denários quingéntos, et álius quinquagínta. Non habéntibus illis, unde rédderent, donávit utrísque. Quis ergo eum plus díligit? Respóndens Simon, dixit: Æstimo, quia is, cui plus donávit. At ille dixit ei: Recte judicásti. Et convérsus ad mulíerem, dixit Simóni: Vides hanc mulíerem? Intrávi in domum tuam, aquam pédibus meis non dedísti: hæc autem lácrimis rigávit pedes meos et capíllis suis tersit. Osculum mihi non dedísti: hæc autem, ex quo intrávit, non cessávit osculári pedes meos. Oleo caput meum non unxísti: hæc autem unguénto unxit pedes meos. Propter quod dico tibi: Remittúntur ei peccáta multa, quóniam diléxit multum. Cui autem minus dimíttitur, minus díligit. Dixit autem ad illam: Remittúntur tibi peccáta. Et cœpérunt, qui simul accumbébant, dícere intra se: Quis est hic, qui étiam peccáta dimíttit? Dixit autem ad mulíerem: Fides tua te salvam fecit: vade in pace.
 
 [Offertorium]
-@Commune/C6b
+@Commune/C6a
 
 [Secreta]
 Múnera nostra, quǽsumus. Dómine, beátæ Maríæ Magdalénæ gloriósa mérita tibi reddant accépta: cujus oblatiónis obséquium unigénitus Fílius tuus cleménter suscépit impénsum:
 $Qui tecum
 
 [Communio]
-@Commune/C6a
+@Commune/C6-1
 
 [Postcommunio]
 Sumpto, quǽsumus, Dómine, único ac salutári remédio, Córpore et Sánguine tuo pretióso: ab ómnibus malis, sanctæ Maríæ Magdalénæ patrocíniis, eruámur:

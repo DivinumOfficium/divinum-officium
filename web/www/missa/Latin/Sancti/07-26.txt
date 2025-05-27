@@ -1,5 +1,12 @@
+[Officium]
+S. Annæ Matris B.M.V.
+
 [Rank]
-S. Annæ Matris B.M.V.;;Duplex II classis;;5.1;;ex C7a
+;;Duplex II classis;;5.1;;ex C7a
+(sed rubrica 196)
+;;Duplex II classis;;5;;ex C7a
+(sed rubrica 1617)
+;;Duplex;;3;;ex C7a
 
 [Rule]
 vide C7a;
@@ -17,24 +24,18 @@ v. Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Ann
 Deus, qui beátæ Annæ grátiam conférre dignatus es, ut Genetrícis unigéniti Fílii tui mater effici mererétur: concéde propítius; ut, cujus sollémnia celebrámus, ejus apud te patrocíniis adjuvémur.
 $Per eundem
 
-[Lectio]
-@Commune/C7a
-
 [Graduale]
 @Sancti/07-22
 
-[Evangelium]
-@Commune/C6a
-
 [Offertorium]
-@Commune/C6b
+@Commune/C6a
 
 [Secreta]
 Sacrifíciis præséntibus, quǽsumus, Dómine, placatus inténde: ut per intercessiónem beátæ Annæ, quæ Genetrícis Fílii tui, Dómini nostri Jesu Christi, mater éxstitit, et devotióni nostræ profíciant et salúti.
 $Per eundem
 
 [Communio]
-@Commune/C6a:Offertorium
+@Commune/C6-1:Offertorium
 
 [Postcommunio]
 Cœléstibus sacraméntis vegetáti, quǽsumus, Dómine, Deus noster: ut, intercessióne beátæ Annæ, quam Genetrícis Fílii tui matrem esse voluísti, ad ætérnam salútem perveníre mereámur.

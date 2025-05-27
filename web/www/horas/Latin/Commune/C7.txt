@@ -1,7 +1,10 @@
 @Commune/C6
 
 [Officium]
-Commune non Virginum Martyrum
+Commune Unius non Virginis Martyris
+
+[Missa]
+Me exspectaverunt (altera)
 
 [Ant Vespera]
 Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suavitátis.;;109
@@ -166,3 +169,36 @@ Per mulíerem vicit, per mulíerem superátus est. Hoc illíus ántea telum erat
 Fuit ili corpus imbecíllum, et obnóxius sexus injúriæ; verúmtamen ómnium horum imbecillitátem advéniens grátia occultávit. Nihil enim est,
 nihil plane poténtius est co, qui magno cum stúdio Dei timórem hábeat in mente defíxum; sed quamvis ignes, quamvis ferrum, quamvis béstias, quamvis
 áliud quidvis minêntur hostes, ómnia nullo negótio contémnit; quod útique Beáta ista étiam fecit.
+
+[Introitus]
+@Commune/C6-1
+
+[Graduale]
+!Ps 44:8
+Dilexísti justítiam, et odísti iniquitátem. 
+V. Proptérea unxit te Deus, Deus tuus, óleo lætítiæ. 
+Allelúja, allelúja.
+!Ps 44:5
+V. Spécie tua et pulchritúdine tua inténde, próspere procéde et regna. Allelúja.
+
+[GradualeP]
+Allelúja, allelúja.
+!Ps 44:5
+Spécie tua et pulchritúdine tua inténde, próspere procéde et regna. Allelúja.
+V. Propter veritátem et mansuetúdinem et justítiam: et dedúcet te mirabíliter déxtera tua. Allelúja.
+
+[Evangelium]
+@Commune/C6-1
+
+[Offertorium]
+@Commune/C6-1
+
+[Secreta]
+@Commune/C6::s/Vírginis et // s/N\./N./
+
+[Communio]
+!Ps 118:161-162
+Príncipes persecúti sunt me gratis, et a verbis tuis formidávit cor meum: lætábor ego super elóqui tua, quasi qui invénit spólia multa. (Allelúja.)
+
+[Postcommunio]
+@Commune/C6::s/Vírgine et // s/N\./N./

@@ -1,17 +1,16 @@
+[Officium]
+S. Theclæ Virginis et Martyris
+
 [Rank]
-S. Theclæ Virginis et Martyris;;Simplex;;1.1;;vide C6
+;;Simplex;;1.1;;vide C6
 
 [Rule]
 vide C6;
 
+[Name]
+Theclæ
+Postcommunio=Thecla
+
 [Oratio]
 Da, quǽsumus, omnípotens Deus: ut, qui beátæ Theclæ Vírginis et Mártyris tuæ natalítia cólimus; et ánnua sollemnitáte lætémur, et tantæ fídei proficiámus exémplo.
 $Per Dominum
-
-[Secreta]
-!Pro S. Thecla Virg. et Mart.
-@Commune/C6:Secreta:s/N\./Theclæ/
-
-[Postcommunio]
-!Pro S. Thecla Virg. et Mart.
-@Commune/C6:Postcommunio:s/N\./Thecla/

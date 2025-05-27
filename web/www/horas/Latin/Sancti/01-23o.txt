@@ -1,11 +1,15 @@
+[Officium]
+S. Emerentianæ Virgini et Martyris
+
 [Rank]
-S. Emerentianæ Virgini et Martyris;;Simplex;;1.1;;vide C6
+;;Simplex;;1.1;;vide C6-1
 
 [Rule]
-vide C6;
+vide C6-1;
 
-[Oratio]
-@Commune/C6:Oratio1:s/N\./Emerentiána/
+[Name]
+Emerentiána
+Secreta=Emerentiánæ
 
 [Lectio93]
 Emerentiána virgo Romana, collactanea beátæ Agnetis, adhuc catechumena, fide et caritate flagrans, furéntes in Christiános idolórum cultores cum vehementius accusaret, a concitáta multitúdine lapidibus óbruta est. Quæ in cruciátibus orans ad sepúlcrum sanctæ Agnetis, proprio sánguine, quem pro Christo constanter effudit, baptizata, ánimam Deo réddidit.

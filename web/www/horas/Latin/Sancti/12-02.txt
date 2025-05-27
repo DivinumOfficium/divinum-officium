@@ -1,15 +1,25 @@
-[Rank]
-S. Bibianæ Virginis et Martyris;;Semiduplex;;2.2;;vide C6
+[Officium]
+S. Bibianæ Virginis et Martyris
 
-[Rank] (rubrica 1570)
-S. Bibianæ Virginis et Martyris;;Simplex;;1.1;;vide C6
+[Rank]
+;;Semiduplex;;2.2;;vide C6-1
+(sed rubrica 1570 aut rubrica monastica)
+;;Simplex;;1.1;;vide C6-1
+(sed rubrica cisterciensis)
+;;Simplex;;1;;vide C6-1
 
 [Rule]
-vide C6;
+vide C6-1;
 9 lectiones
+in 3 Nocturno Lectiones ex Commune in 2 loco;
+
+[Name]
+Bibiána
+Secreta=Bibiánæ
+Postcommunio=Bibiána
 
 [Oratio]
-Deus, ómnium largítor bonórum, qui in fámula tua Bibiána cum virginitátis flore martýrii palmam coniunxísti: mentes nostras ejus intercessióne tibi caritáte conjúnge; ut, amótis perículis, prǽmia consequámur ætérna.
+Deus, ómnium largítor bonórum, qui in fámula tua Bibiána cum virginitátis flore martýrii palmam conjunxísti: mentes nostras ejus intercessióne tibi caritáte conjúnge; ut, amótis perículis, prǽmia consequámur ætérna.
 $Per Dominum
 
 [Lectio4]
@@ -24,12 +34,3 @@ Nihil autem proficiente Rufina, quæ, præter dolosa verba, illam quotidie verbe
 [Lectio94]
 Bibiána virgo Romána, nóbili génere nata, christiána fide nobílior fuit. Ejus enim paréntes, Flaviánus et Dafrósa, sub Juliáno Apóstata martýrium subiérunt. Tum Bibiána ejúsque soror Demétria, bonis ómnibus exspoliátæ et ab Aproniáno, Urbis prætóre, blandítiis et minis tentátæ, ut a recta fide declinárent, prætóris impietátem constantíssime detestátæ sunt. Quo in agóne Demétria, ob óculos Bibiánæ repénte córruens, óbiit in Dómino. Bibiána autem Rufínæ mulíeri vaférrimæ seducénda tráditur; sed, ejus superátis insídiis, prætóris astus delúsit. Quare hujus jussu plumbátis cæsa est, donec ánimam efflávit. Ejus sacrum corpus, bíduo cánibus objéctum, illǽsum tamen divínitus servátum, Joánnes présbyter sepelívit noctu juxta sepúlcrum soróris et matris ad palátium Liciniánum, ubi nunc exstat ecclésia Deo, sanctæ Bibiánæ nómine, dicáta.
 &teDeum
-
-[Lectio7]
-@Commune/C7
-
-[Lectio8]
-@Commune/C7
-
-[Lectio9]
-@Commune/C7

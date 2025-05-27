@@ -1,9 +1,5 @@
-[Rank]
-S. Margaritae Reginae viduae;;Semiduplex;;2;;vide C7a
-
-[Rule]
-vide C7a;
-Gloria
+[Officium]
+Św. Małgorzaty, Królowej Szkockiej
 
 [Comment]
 # 10 VI – Św. Małgorzaty, Królowej Szkockiej, Wdowy
@@ -14,30 +10,6 @@ Gloria
 
 Msza wspólna nr 29 Cognovi, z wyjątkiem kolekty.
 
-[Introitus]
-@Commune/C7a:Introitus
-
 [Oratio]
 Boże, któryś świętą królową Małgorzatę uczynił godną podziwu dla jej niezwykłej miłości ku ubogim, daj, aby za jej wstawiennictwem i przykładem stale wzrastała w naszych sercach miłość ku Tobie.
 $Per Dominum
-
-[Lectio]
-@Commune/C7a:Lectio
-
-[Graduale]
-@Commune/C7a:Graduale
-
-[Evangelium]
-@Commune/C7a:Evangelium
-
-[Offertorium]
-@Commune/C7a:Offertorium
-
-[Secreta]
-@Commune/C7a:Secreta
-
-[Communio]
-@Commune/C7a:Communio
-
-[Postcommunio]
-@Commune/C7a:Postcommunio

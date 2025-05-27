@@ -1,12 +1,8 @@
-[Rank]
-S. Agathæ Virginis et Martyris;;Duplex;;3;;vide C6
+[Officium]
+S. Agathæ Virginis et Martyris
 
-[Rank] (rubrica 1570)
-S. Agathæ Virginis et Martyris;;Semiduplex;;2.2;;vide C6
-
-[Rule]
-vide C6;
-Gloria
+[Name]
+Agatha
 
 [Introitus]
 v. Laten wij ons allen in de Heer verheugen, nu wij de feestdag vieren van de heilige Agatha, maagd en martelares, want over haar lijden verheugen zich de engelen en prijzen de Zoon van God.
@@ -14,9 +10,6 @@ v. Laten wij ons allen in de Heer verheugen, nu wij de feestdag vieren van de he
 Een heerlijk lied welt op in mijn hart. De Koning wijd ik mijn zang.
 &Gloria
 v. Laten wij ons allen in de Heer verheugen, nu wij de feestdag vieren van de heilige Agatha, maagd en martelares, want over haar lijden verheugen zich de engelen en prijzen de Zoon van God.
-
-[Oratio]
-@Commune/C6:Oratio:s/N\./Agatha/
 
 [Lectio]
 Lezing uit de Brief van de heilige Apostel Paulus aan de Corinthiërs
@@ -35,23 +28,16 @@ Voor koningen heb ik over uw voorschriften gesproken, en ik heb er mij niet over
 !Ps 45:6 en 5
 God zal haar helpen met zijn aanschijn. God is in haar midden, zij zal niet wankelen.
 V. Een krachtige stroom verblijdt de stad Gods. De Allerhoogste heeft zijn woonplaats geheiligd.
+_
+!Tractus
 !Ps 125:5-6
 Wie met tranen zaaien, zullen met gejubel maaien.
 V. Wenend trekken zij op, terwijl zij hun zaad uitstrooien.
 V. Maar juichen zullen zij wederkeren, met hun garven beladen.
 
-[Evangelium]
-@Commune/C6a:Evangelium1
-
 [Offertorium]
 !Ps 44:15
 Jonkvrouwen worden in haar gevolg tot de Koning geleid. Haar gezellinnen worden tot U gebracht.
 
-[Secreta]
-@Commune/C6:Secreta:s/N\./Agatha/
-
 [Communio]
 Die zich gewaardigd heeft al mijn wonden te genezen en mijn borst weer heeft geheeld, Hem roep ik aan, de levende God.
-
-[Postcommunio]
-@Commune/C6:Postcommunio:s/N\./Agatha/

@@ -1,9 +1,5 @@
-[Rank]
-S. Elisabeth Reg. Portugaliae Viduae;;Semiduplex;;2;;vide C7a
-
-[Rule]
-vide C7a;
-Gloria
+[Officium]
+Św. Elżbiety Królowej Portugalskiej, Wdowy
 
 [Comment]
 # 8 VII – Św. Elżbiety, Królowej i Wdowy
@@ -13,30 +9,6 @@ Gloria
 
 Msza wspólna nr 29 Cognovi, z wyjątkiem kolekty
 
-[Introitus]
-@Commune/C7a:Introitus
-
 [Oratio]
 Najłaskawszy Boże, który wśród innych wspaniałych darów obdarzyłeś świętą królową Elżbietę przywilejem uśmierzania gróźb wojny, daj nam za jej wstawiennictwem po spokojnym życiu doczesnym, o co kornie błagamy, dojść do wiekuistych radości.
 $Per Dominum
-
-[Lectio]
-@Commune/C7a:Lectio
-
-[Graduale]
-@Commune/C7a:Graduale
-
-[Evangelium]
-@Commune/C7a:Evangelium
-
-[Offertorium]
-@Commune/C7a:Offertorium
-
-[Secreta]
-@Commune/C7a:Secreta
-
-[Communio]
-@Commune/C7a:Communio
-
-[Postcommunio]
-@Commune/C7a:Postcommunio

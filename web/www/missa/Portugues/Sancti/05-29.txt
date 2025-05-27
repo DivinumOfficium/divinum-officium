@@ -1,9 +1,5 @@
-[Rank]
-S. Mariae Magdalenae de Pazzis Virginis;;Semiduplex;;2.1;;vide C6
-
-[Rule]
-vide C6;
-Gloria
+[Officium]
+S. Maria Madalena de Pazzi, Virgem
 
 [Comment]
 # 29 V – S. Maria Madalena de Pazzi, Virgem
@@ -32,11 +28,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C6:Offertorium
 
-[Secreta]
-@Commune/C6:Secreta
-
 [Communio]
 @Commune/C6:Communio
-
-[Postcommunio]
-@Commune/C6:Postcommunio

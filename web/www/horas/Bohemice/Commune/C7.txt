@@ -1,3 +1,9 @@
+[Officium]
+Commune Unius non Virginis Martyris
+
+[Missa]
+Me exspectaverunt (altera)
+
 [Ant Vespera]
 While the King sitteth at his table, * my spikenard sendeth forth the smell thereof;;109
 We will run after thee, * in the savour of thy good ointments. The virgins love them exceedingly.;;112
@@ -33,8 +39,7 @@ jak nyní, tak i v každý čas.
 Amen.
 
 [Oratio]
-Bože, jenž jsi mezi ostatními zázraky své moci také slabému pohlaví propůjčil vítězství Mučedníků, popřej milostivě, abychom Svaté N., tvé Panny a Mučednice, narozeniny slavíce, podle jejího příkladu k tobě spěli. 
-$Per Dominum.
+@Commune/C6::s/Panny a // s/N\./N./
 
 [Invit]
 For the confession of Blessed N. * Let us praise our God.
@@ -110,3 +115,9 @@ $Deo gratias.
 
 [Ant 3]
 Svou ruku * otvírá bezmajetnému, a svou dlaň natahuje k chudákovi, a svůj chléb nikdy nejí v zahálce.
+
+[Secreta]
+@Commune/C6::s/Panny a //i s/N\./N./
+
+[Postcommunio]
+@Commune/C6::s/Panny a //i s/N\./N./

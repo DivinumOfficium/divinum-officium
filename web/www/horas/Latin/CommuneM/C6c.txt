@@ -3,23 +3,23 @@
 [Officium]
 Commune Virginum Commemoratum
 
-[Oratio]
-@Commune/C6b
-
-[Ant 1]
-@CommuneM/C6:Ant 2
-
-[Ant 2]
-@CommuneM/C6:Ant 3
+[Commentarium]
+Used on: 
 
 [Versum 1]
 @CommuneM/C6:Nocturn 1 Versum
 
+[Ant 1]
+@CommuneM/C6:Ant 2
+
+[Oratio]
+@Commune/C6a
+
 [Versum 2]
 @:Versum 1
 
+[Ant 2]
+@CommuneM/C6:Ant 3
+
 [Versum 3]
 @:Versum 1
-
-[Commentarium]
-Used on: 

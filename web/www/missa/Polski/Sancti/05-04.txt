@@ -1,8 +1,5 @@
-[Rank]
-S. Monicae Viduae;;Duplex;;3;;vide C7a
-
-[Rule]
-Gloria
+[Officium]
+Św. Moniki Wdowy
 
 [Comment]
 # 04 V – Św. Moniki, Wdowy
@@ -10,33 +7,9 @@ Gloria
 ! Szaty białe
 Św. Monika, urodzona w Tagaście, w północnej Afryce, około roku 330, poślubiła poganina o gwałtownym charakterze, którego u schyłku jego życia pozyskała dla wiary chrześcijańskiej swoją łagodnością i cierpliwością. Odtąd główną jej troską stało się nawrócenie syna Augustyna, który ulegał wpływom heretyków i prowadził grzeszne życie. Swoimi łzami i modlitwami wyprosiła nawrócenie syna, który z czasem został biskupem i jednym z wielkich Doktorów Kościoła. Św. Monika dożyła jego Chrztu i wkrótce potem zmarła w Ostii w 387 r. Jest wzorem żony i matki chrześcijańskiej, która troszczy się również o dobro duchowe rodziny.
 
-[Introitus]
-@Commune/C7a:Introitus
+[Name]
+Moniki
 
-[Oratio]
+[Oratio] (nisi rubrica cisterciensis)
 Boże, pocieszycielu zasmuconych i nadziejo ufających Tobie, któryś miłosiernie przyjął rzewne łzy św. Moniki, udzielając łaski nawrócenia jej synowi Augustynowi; daj nam za przyczyną ich obojga opłakiwać nasze grzechy i znaleźć przebaczenie dzięki Twej łasce.
 $Per Dominum
-
-[Lectio]
-@Commune/C7a:Lectio1
-
-[Graduale]
-@Commune/C7a:Graduale
-
-[GradualeP]
-@Commune/C7a:GradualeP
-
-[Evangelium]
-@Tempora/Pent15-0:Evangelium
-
-[Offertorium]
-@Commune/C7a:Offertorium
-
-[Secreta]
-@Commune/C7a:Secreta
-
-[Communio]
-@Commune/C7a:Communio
-
-[Postcommunio]
-@Commune/C7a:Postcommunio

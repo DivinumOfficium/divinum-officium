@@ -1,5 +1,8 @@
+[Officium]
+S. Birgittæ Viduæ
+
 [Rank]
-S. Birgittæ Viduæ;;Duplex;;3;;vide C7a
+;;Duplex;;3;;vide C7a
 
 [Rule]
 vide C7a;
@@ -10,10 +13,4 @@ Dómine, Deus noster, qui beátæ Birgíttæ per Fílium tuum unigénitum secret
 $Per eundem
 
 [Lectio]
-@Commune/C7a:Lectio1
-
-[Secreta]
-@Commune/C6b
-
-[Postcommunio]
-@Commune/C6b
+@Commune/C7a:Lectio 2 loco

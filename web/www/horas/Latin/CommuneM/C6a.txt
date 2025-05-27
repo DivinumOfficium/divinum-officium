@@ -3,30 +3,23 @@
 [Officium]
 @Commune/C6a
 
-[Versum 1]
-@Commune/C6a
-
-[Ant 1]
-@Commune/C6a
-
 [Oratio]
 @Commune/C6a
 
-[Nocturn 1 Versum]
-@Commune/C6:Versum 1
+[HymnusM Matutinum]
+@Commune/C6a
 
-[Versum 2]
-@:Versum 1
+[Responsory1]
+@Commune/C6a
 
-[Ant 2]
-@:Ant 1
+[MM Capitulum]
+@Commune/C6:Capitulum Sexta
+_
+@CommuneM/C6::s/.*_.//s
+
+[Lectio Prima]
+@Commune/C6a
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
-
-[Versum 3]
-@:Versum 1
-
-[Ant 3]
-@:Ant 1

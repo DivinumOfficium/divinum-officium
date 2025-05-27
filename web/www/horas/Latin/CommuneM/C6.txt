@@ -7,29 +7,14 @@ Invénta bona margaríta, * dedit ómnia sua, et comparávit eam.;;121
 Média nocte * clamor factus est: Ecce sponsus venit, exíte óbviam ei.;;126
 Tunc surrexérunt omnes * Vírgines illæ, et ornavérunt lámpades suas.
 
-[Ant Vespera] (tempore paschali et rubrica cisterciensis )
+[Ant Vespera] (tempore paschali et rubrica cisterciensis)
 Allelúia, * allelúia, allelúia.
 
 [Versum 1] (rubrica cisterciensis)
 @Commune/C6:Versum 2
 
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
-[Versum 3] (rubrica cisterciensis)
-@:Versum 1
-
-[Ant Laudes] (rubrica cisterciensis)
-@:Ant Vespera:s/;;.*//g
-
-[Ant 1] (tempore paschali et rubrica cisterciensis )
+[Ant 1] (tempore paschali et rubrica cisterciensis)
 Veni, Sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in ætérnum. Allelúia, allelúia.
-
-[Ant 2] (rubrica cisterciensis)
-Símile est * regnum cœlórum sagénæ, missæ in mare, et ex omni génere píscium congregánti: quam, cum impléta esset, educéntes, et secus littus sedéntes, elegérunt bonos in vasa sua, malos autem foras misérunt.
-
-[Ant 3] (rubrica cisterciensis)
-Quinque prudéntes Vírgines * accepérunt óleum in vasis suis cum lampádibus: média autem nocte clamor factus est: Ecce sponsus venit, exite óbviam Christo Dómino.
 
 [AntMatutinumM]
 Unguéntum effúsum * nomen tuum; ideo adolescéntulæ dilexérunt te nimis;;96
@@ -132,6 +117,21 @@ _
 V. Dilexísti justítiam, et odísti iniquitátem:
 R. Proptérea unxit te Deus, Deus tuus, óleo lætítiæ.
 
+[Ant Laudes] (rubrica cisterciensis)
+@:Ant Vespera:s/;;.*//g
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant 2] (rubrica cisterciensis)
+Símile est * regnum cœlórum sagénæ, missæ in mare, et ex omni génere píscium cóngreganti: quam, cum impléta esset, educéntes, et secus littus sedéntes, elegérunt bonos in vasa sua, malos autem foras misérunt.
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant 3] (rubrica cisterciensis)
+Quinque prudéntes Vírgines * accepérunt óleum in vasis suis cum lampádibus: média autem nocte clamor factus est: Ecce sponsus venit, exite óbviam Christo Dómino.
+
 [Lectio1 in 2 loco]
 @Commune/C6::1-5 s/-7/-3/
 
@@ -171,7 +171,7 @@ R. Proptérea unxit te Deus, Deus tuus, óleo lætítiæ.
 @CommuneM/C7:Lectio12
 
 [LectioE in 2 loco]
-@Commune/C6a:LectioE
+@Commune/C6b:LectioE
 
 [Lectio9 in 3 loco]
 @Commune/C6:Lectio7 in 3 loco:s/ sub med./ n. 3/ s/Quibus.*//

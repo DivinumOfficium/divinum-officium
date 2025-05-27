@@ -1,11 +1,16 @@
+[Officium]
+S. Dorotheæ Virginis et Martyris
+
 [Rank]
-S. Dorotheæ Virginis et Martyris;;Simplex;;1.1;;vide C6
+;;Simplex;;1.1;;vide C6-1
 
 [Rule]
-vide C6;
+vide C6-1;
 
-[Oratio]
-@Commune/C6:Oratio1:s/N\./Doróthea/
+[Name]
+Doróthea
+Secreta=Dorótheæ
+Postcommunio=Doróthea
 
 [Lectio93]
 Doróthea virgo, ex Cæsaréa Cappadociæ, propter Christi confessiónem ab Apricio præside comprehensa, Chrystæ et Callistæ soróribus, quæ a fide defécerant, tradita est, ut eam a propósito removérent. Sed contra factum est; nam eas Doróthea ad cultum christianæ religiónis redúxit, propter quam étiam martyrium suscepérunt. Quare Virgo equuleo diu torta et palmis cæsa, ad extremum cápitis damnata, duplicatam virginitátis et martyrii palmam accepit.

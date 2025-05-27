@@ -1,16 +1,18 @@
+[Officium]
+S. Sabinæ Martyris
+
 [Rank]
-S. Sabinæ Martyris;;Simplex;;1.1;;vide C7
+;;Simplex;;1.1;;vide C7
 
 [Rule]
 vide C7;
 
-[Oratio]
-@Commune/C6:Oratio:s/N\./Sabinæ/
+[Name]
+Sabínæ
+Postcommunio=Sabína
 
 [Secreta]
-Hóstias tibi, Dómine, beátæ Sabínæ Mártyris tuæ dicátas méritis, benígnus assúme: et ad perpétuum nobis tríbue proveníre subsídium.
-$Per Dominum
+@Commune/C6-1::s/Vírginis et // s/N\./N./
 
 [Postcommunio]
-Divíni muneris largitáte satiáti, quǽsumus, Dómine, Deus noster: ut, intercedénte beáta Sabína Mártyre tua, in ejus semper participatióne vivámus.
-$Per Dominum
+@Commune/C6-1::s/Vírginis et // s/N\./N./

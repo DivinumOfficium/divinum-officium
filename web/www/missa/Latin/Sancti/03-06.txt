@@ -1,18 +1,26 @@
-[Rank]
-Ss. Perpetuæ et Felicitatis Martyrum;;Duplex;;3;;vide C6a
+[Officium]
+Ss. Perpetuæ et Felicitatis Martyrum
 
-[Rank](rubrica 1960)
-Ss. Perpetuæ et Felicitatis Martyrum;;Duplex;;2.1;;vide C6a
+[Rank]
+;;Duplex;;3;;vide C7b
+(rubrica innovata)
+;;Duplex;;3.91;;vide C7b
 
 [Rule]
-vide C6a;
+vide C7b;
 Gloria
 
-[Oratio]
-@Commune/C6a:Oratio:s/N\. et N\./Perpétuæ et Felicitátis/
+[Name]
+Perpétuæ et Felicitátis
 
-[Secreta]
-@Commune/C6a:Secreta:s/N\. et N\./Perpétuæ et Felicitátis/
+[Graduale] (rubrica 1960)
+@Commune/C6-1
+
+[Tractus] (rubrica 1960)
+@Commune/C6-1
+
+[Communio] (rubrica 1960)
+@Commune/C6-1
 
 [Postcommunio]
 Mýsticis, Dómine, repléti sumus votis et gáudiis: præsta, quǽsumus; ut intercessiónibus sanctárum Mártyrum tuárum Perpétuæ et Felicitátis, quæ temporáliter ágimus, spirituáliter consequámur.

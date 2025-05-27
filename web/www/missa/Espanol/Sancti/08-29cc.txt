@@ -1,17 +1,15 @@
-[Rank]
-Sta. Sabina
+[Officium]
+Sta. Sabina, Mártir
+
+[Name]
+Sabina
 
 [Oratio]
-!Por Sta. Sabina
 ¡Oh Dios!, que, entre otras maravillas de tu poder, has dado fuerzas a débiles mujeres para que consiguiesen la victoria del martirio; concédenos propicio que, al celebrar el nacimiento para el el cielo de tu santa virgen y mártir Sabina, vayamos a ti siguiendo sus ejemplos.
 $Per Dominum
 
 [Secreta]
-!Por Sta. Sabina
-Recibe, Señor, benigno las hostias que te ofrecemos por los méritos de tu santa virgen y mártir Sabina, y concédenos nos sirvan de ayúda para la eternidad.
-$Per Dominum
+@Commune/C6-1::s/virgen y // s/N\./N./
 
 [Postcommunio]
-!Por Sta. Sabina
-Nosotros, refrescados por la riqueza de tu divino sacramento, te rogamos, Señor Dios nuestro, que por la intercesión de la bienaventurada Sabina, tu Virgen y Mártir, gocemos por siempre de su participación.
-$Per Dominum
+@Commune/C6-1::s/virgen y // s/N\./N./

@@ -43,7 +43,7 @@ Latin,English,Čeština/Bohemice,Čeština - Schaller/Cesky-Schaller,Dansk,Deuts
 Tridentine - 1570,Tridentine - 1888,Tridentine - 1906,Divino Afflatu - 1954,Reduced - 1955,Rubrics 1960 - 1960,Rubrics 1960 - 2020 USA,Monastic - 1617/Monastic Tridentinum 1617,Monastic - 1930/Monastic Divino 1930,Monastic - 1963,Ordo Cisterciensis - 1951/Monastic Tridentinum Cisterciensis 1951,Ordo Cisterciensis - Abbatia B.M.V. de Altovado/Monastic Tridentinum Cisterciensis Altovadensis,Ordo Praedicatorum - 1962
 
 [votives]
-Hodie,Apostolorum/C1,Evangelistarum/C1a,Unius Martyris Pontificis/C2,Unius Martyris non Pontificis/C2a,Plurimorum Martyrum Pontificum/C3,Plurimorum Martyrum non Pontificum/C3a,Confessoris Pontificis/C4,Doctoris Pontificis/C4a,Plurium Confessorum Pontificum/C4c,Confessoris non Pontificis/C5,Doctoris non Pontificis/C5a,Abbatis/C5b,Plurium Confessorum non Pontificum/C5c,Unius Virginis Martyris/C6,Plurimorum Virginum Martyrum/C6a,Unius Virginis tantum/C6b,Unius non Virginis Martyris/C7,Unius non Virginis nec Martyris/C7a,Plurimorum non Virginum Martyrum/C7b,Dedicationis Ecclesiae/C8,Officium defunctorum/C9,Beata Maria in Sabbato/C10,Beatae Mariae Virginis/C11,Officium parvum Beatae Mariae Virginis/C12
+Hodie,Apostolorum/C1,Evangelistarum/C1a,Unius Martyris Pontificis/C2,Unius Martyris non Pontificis/C2a,Plurium Martyrum Pontificum/C3,Plurium Martyrum non Pontificum/C3a,Confessoris Pontificis/C4,Doctoris Pontificis/C4a,Plurium Confessorum Pontificum/C4c,Confessoris non Pontificis/C5,Doctoris non Pontificis/C5a,Abbatis/C5b,Plurium Confessorum non Pontificum/C5c,Unius Virginis Martyris/C6,Unius Virginis tantum/C6a,Plurium Virginum Martyrum/C6b,Unius non Virginis Martyris/C7,Unius non Virginis nec Martyris/C7a,Plurium non Virginum Martyrum/C7b,Dedicationis Ecclesiae/C8,Officium defunctorum/C9,Beata Maria in Sabbato/C10,Beatae Mariae Virginis/C11,Officium parvum Beatae Mariae Virginis/C12
 
 [psalmversion]
 accented,plain
@@ -62,11 +62,11 @@ C2a-1,Commune Unius Martyris non Pontificis (Missa Lætabitur),
 C2b,Commune Unius Martyris Summi Pontificis (Missa Si diligis),
 C2b-1,Commune Unius Martyris Summi Pontificis (Missa Si diligis),
 C2p,Commune Unius Martyris tempore Paschali (Missa Protexisti),
-C3,Commune Plurimorum Martyrum Pontificum (Missa Intret),
-C3a,Commune Plurimorum Martyrum non Pontificum (Missa Sapientiam),
-C3a-1,Commune Plurimorum Martyrum non Pontificum (Missa Salus autem),
-C3b,Commune Plurimorum Martyrum Summorum Pontificum (Missa Si diligis),
-C3p,Commune Plurimorum Martyrum tempore Paschali (Missa Sancti tui),
+C3,Commune Plurium Martyrum Pontificum (Missa Intret),
+C3a,Commune Plurium Martyrum non Pontificum (Missa Sapientiam),
+C3a-1,Commune Plurium Martyrum non Pontificum (Missa Salus autem),
+C3b,Commune Plurium Martyrum Summorum Pontificum (Missa Si diligis),
+C3p,Commune Plurium Martyrum tempore Paschali (Missa Sancti tui),
 C4,Commune Confessoris Pontificis (Missa Statuit),
 C4-1,Commune Confessoris Pontificis (Missa Sacerdotes Dei),
 C4a,Commune Doctorum Pontificium (Missa In medio),
@@ -79,12 +79,14 @@ C5-1,Commune Confessoris non Pontificis (Missa Justus),
 C5a,Commune Doctoris non Pontificis (Missa In medio),
 C5b,Commune Abbatum (Missa altera Os justi),
 C5c,Commune Confessorum non Pontificum (Missa Os justi),
-C6,Commune Unius Virginis Martyris,
-C6a,Commune Plurimorum Virginum Martyrum,
-C6b,Commune Unius Virginis tantum,
-C7,Commune Unius non Virginis Martyris,
-C7a,Commune Unius non Virginis nec Martyris,
-C7b,Commune Plurimorum non Virginum Martyrum,
+C6,Commune Unius Virginis Martyris (Missa Loquebar),
+C6-1,Commune Unius Virginis Martyris (Missa Me expectaverunt),
+C6a,Commune Unius Virginis tantum (Missa Dilexisti),
+C6a-1,Commune Unius Virginis tantum (Missa Vultum tuum),
+C6b,Commune Plurium Virginum Martyrum (Missa Me expectaverunt),
+C7,Commune Unius non Virginis Martyris (Missa Me expectaverunt),
+C7a,Commune Unius non Virginis nec Martyris (Missa Cognovi),
+C7b,Commune Plurium non Virginum Martyrum (Missa Me expectaverunt),
 C8,Commune Dedicationis Ecclesiae,
 C9,Officium defunctorum,
 C10,Beata Maria in Sabbato,
