@@ -1,6 +1,9 @@
 [Officium]
 Officium Defunctorum
 
+[Missa]
+Missa Defunctorum quotidianis: Requiem aeternam
+
 [Ant Vespera]
 Zalíbím se Hospodinu * v zemi živých.;;114
 Běda mně, Hospodine, * neboť můj pobyt zde je velmi dlouhý.;;119
@@ -22,10 +25,6 @@ $Qui vivis
 
 [Oratio1]
 v. Vysvoboď, prosíme, Pane, duši svého služebníka N., aby zemřelý světu žil pro tebe; a to, co pro křehkost těla v lidském jednání spáchal, ty slitováním své přemilosrdné laskavosti očisti.
-$Per Dominum
-
-[Oratio2]
-v. Bože, Hospodine odpuštění; dej duším svých služebníků a služebnic, jejichž výroční den uložení do hrobu si připomínáme, stolec občerstvení, blaženost spočinutí a světelnou jasnost.
 $Per Dominum
 
 [Invit]
@@ -56,7 +55,7 @@ R. A duše svých ubohých nenech upadnout v zapomnění.
 
 [Lectio1]
 !Job 7:16-21
-16  Ušetři mě, Hospodine, vždyť mé dny jsou jen závan větru.
+16 Ušetři mě, Hospodine, vždyť mé dny jsou jen závan větru.
 17 Co je člověk, že ho tak ceníš, že si ho všímáš?
 18 Každého jitra ho zkoušíš, každou chvíli ho zkoumáš.
 19 Kdy už mě necháš o samotě, kdy mi dáš pokoj, abych aspoň slinu moh' polknout?
@@ -199,6 +198,14 @@ R. Až přijdeš svět soudit ohněm.
 $Requiem
 R. Vysvoboď mě, Hospodine, od smrti věčné v onen hrozný den; * Až otřesou se nebesa i země, * až přijdeš svět soudit ohněm.
 
+[Responsory91]
+R. Vysvoboď mne, Hospodine, od cest pekelných, neboť jsi roztříštil bronzové brány; a navštívil podsvětí, a daroval jim světlo, aby tě viděli;
+* neboť byli pod trestem temnot.
+V. Volali a pravili: Ty jsi přišel, náš Vykupiteli!
+R. Neboť byli pod trestem temnot.
+$Requiem
+R. Neboť byli pod trestem temnot.
+
 [Conclusio]
 V. Odpočinutí věčné dej jim, Pane.
 R. A světlo věčné ať jim svítí.
@@ -215,10 +222,6 @@ Všechno, co dýchá, * ať chválí Hospodina.;;150
 [Ant 2]
 Já jsem * vzkříšení a život; kdo ve mě věří, i kdyby zemřel, bude žít; a každý, kdo žije a věří ve mě, nikdy nezemře.
 
-[Responsory91]
-R. Vysvoboď mne, Hospodine, od cest pekelných, neboť jsi roztříštil bronzové brány; a navštívil podsvětí, a daroval jim světlo, aby tě viděli;
-* neboť byli pod trestem temnot.
-V. Volali a pravili: Ty jsi přišel, náš Vykupiteli!
-R. Neboť byli pod trestem temnot.
-$Requiem
-R. Neboť byli pod trestem temnot.
+[Oratio2]
+v. Bože, Hospodine odpuštění; dej duším svých služebníků a služebnic, jejichž výroční den uložení do hrobu si připomínáme, stolec občerstvení, blaženost spočinutí a světelnou jasnost.
+$Per Dominum

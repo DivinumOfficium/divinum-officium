@@ -1,11 +1,5 @@
-
 [Ant 1] (rubrica cisterciensis)
 Slyšel jsem * hlas z nebe, který pravil: Blažení mrtví, kteří umírají v Pánu.
-
-[Ant Laudes] (rubrica cisterciensis)
-@Commune/C9:Ant Laudes_:1-3 s/;;62/;;62;66/ 
-Vysvobodil jsi, Hospodine, * mou duši, aby nezahynula.;;222
-@Commune/C9:Ant Laudes_:5 s/;;150/;;148;149;150/
 
 [Oratio_Cist]
 v. Bože, jemuž vlastní jest vždy se smilovat a ušetřit: buď milostiv duším svých služebníků a služebnic, a odpusť všechny jejich hříchy; aby vysvobozeny z pout smrtelnosti zasloužily si přejít do života věčného. 
@@ -50,7 +44,7 @@ $Requiem
 @Commune/C9::1:s/; proto.*/./
 @Commune/C9::1-2:s/.*; proto/* Proto/ s/vznešenost.* Abys/Vznešenost, abys/s 
 @Commune/C9::3:s/očisti\./očisti, neboť před tebou samotným jsem zhřešil./
-@Commune/C9::1-2:s/.*; proto/* Proto/ s/vznešenost.* Abys/Vznešenost, abys/s 
+@Commune/C9::1-2:s/.*; proto/* Proto/ s/vznešenost.* Abys/Vznešenost, abys/s
 
 [Lectio9] (rubrica cisterciensis)
 !2. kniha Makabejská, 12:43-46
@@ -59,3 +53,7 @@ $Requiem
 45 Ale on myslel na nádhernou odměnu, která je uchována těm, kdo zemřou ve zbožnosti,
 46 a to byla opravdu svatá a zbožná myšlenka. Proto dal vykonat smírnou oběť za mrtvé, aby byli zbaveni hříchu.
 
+[Ant Laudes] (rubrica cisterciensis)
+@Commune/C9:Ant Laudes_:1-3 s/;;62/;;62;66/ 
+Vysvobodil jsi, Hospodine, * mou duši, aby nezahynula.;;222
+@Commune/C9:Ant Laudes_:5 s/;;150/;;148;149;150/

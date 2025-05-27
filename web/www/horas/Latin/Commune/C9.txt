@@ -1,6 +1,9 @@
 [Officium]
 Officium Defunctorum
 
+[Missa]
+Missa Defunctorum quotidianis: Requiem aeternam
+
 [Rule]
 Psalmi Dominica
 Antiphonas horas
@@ -12,6 +15,12 @@ Limit Benedictiones Oratio
 Requiem gloria
 Votive nocturn
 9 lectiones
+
+[Rule] (ad missam)
+no Gloria
+no Credo
+Prefatio=Defunctorum
+Sequentia
 
 [Ant Vespera]
 Placébo Dómino * in regióne vivórum.;;114
@@ -51,10 +60,6 @@ $Qui vivis
 
 [Oratio1]
 v. Absólve, quǽsumus Dómine, ánimam fámuli tui N., ut defúnctus sǽculo tibi vivat: et quæ per fragilitátem carnis humána conversatióne commísit, tu vénia misericordíssimæ pietátis abstérge.
-$Per Dominum
-
-[Oratio2]
-v. Deus indulgentiárum Dómine: da animábus famulórum famularúmque tuárum, quorum anniversárium depositiónis diem commemorámus, refrigérii sedem, quiétis beatitúdinem, et lúminis claritátem.
 $Per Dominum
 
 [Invit]
@@ -228,6 +233,14 @@ R. Dum véneris judicáre sǽculum per ignem.
 $Requiem
 R. Líbera me, Dómine, de morte ætérna in die illa treménda, * Quando cæli movéndi sunt et terra, * Dum véneris judicáre sǽculum per ignem.
 
+[Responsory91]
+R. Líbera me, Dómine, de viis inférni, qui portas ǽreas confregísti: et visitásti inférnum, et dedísti eis lumen, ut vidérent te:
+* Qui erant in pœnis tenebrárum.
+V. Clamántes et dicéntes: Advenísti, Redémptor noster.
+R. Qui erant in pœnis tenebrárum.
+$Requiem
+R. Qui erant in pœnis tenebrárum.
+
 [Conclusio]
 V. Réquiem ætérnam dona eis, Dómine.
 R. Et lux perpétua lúceat eis.
@@ -264,13 +277,164 @@ $A porta inferi
 _
 @:Oratio_Fid
 
+[Oratio2]
+v. Deus indulgentiárum Dómine: da animábus famulórum famularúmque tuárum, quorum anniversárium depositiónis diem commemorámus, refrigérii sedem, quiétis beatitúdinem, et lúminis claritátem.
+$Per Dominum
+
 [Versum 3]
 @:Versum 1
 
-[Responsory91]
-R. Líbera me, Dómine, de viis inférni, qui portas ǽreas confregísti: et visitásti inférnum, et dedísti eis lumen, ut vidérent te:
-* Qui erant in pœnis tenebrárum.
-V. Clamántes et dicéntes: Advenísti, Redémptor noster.
-R. Qui erant in pœnis tenebrárum.
-$Requiem
-R. Qui erant in pœnis tenebrárum.
+[Introitus]
+!4 Esdr 2:34; 2:35
+v. Réquiem ætérnam dona eis, Dómine: et lux perpétua lúceat eis.
+!Ps 64:2-3
+Te decet hymnus, Deus, in Sion, et tibi reddétur votum in Jerúsalem: exáudi oratiónem meam, ad te omnis caro véniet.
+v. Réquiem ætérnam dona eis, Dómine: et lux perpétua lúceat eis.
+
+[Oratio] (ad missam)
+Fidélium, Deus, ómnium Cónditor et Redémptor: animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum; ut indulgéntiam, quam semper optavérunt, piis supplicatiónibus consequántur:
+$Qui vivis
+
+[Oratio1] (ad missam)
+Deus, qui inter apostólicos Sacerdótes fámulos tuos pontificáli seu sacerdotáli fecísti dignitáte vigére: præsta, quǽsumus; ut eórum quoque perpétuo aggregéntur consórtio.
+$Per Dominum
+
+[Oratio2] (ad missam)
+Deus, véniæ largítor et humánæ salútis amátor: quǽsumus cleméntiam tuam; ut nostræ congregatiónis fratres, propínquos et benefactóres, qui ex hoc sǽculo transiérunt, beáta María semper Vírgine intercedénte cum ómnibus Sanctis tuis, ad perpétuæ beatitúdinis consórtium perveníre concédas.
+$Per Dominum.
+
+[Lectio]
+Léctio libri Apocalýpsis beáti Joánnis Apóstoli
+!Apoc 14:13
+In diébus illis: Audívi vocem de cœlo, dicéntem mihi: Scribe: Beáti mórtui, qui in Dómino moriúntur. Amodo jam dicit Spíritus, ut requiéscant a labóribus suis: ópera enim illórum sequúntur illos.
+
+[Graduale]
+!4 Esdr 2:34-35
+Réquiem ætérnam dona eis, Dómine: et lux perpétua lúceat eis.
+!Ps 111:7.
+V. In memória ætérna erit justus: ab auditióne mala non timébit.
+_
+!Tractus
+Absólve, Dómine, ánimas ómnium fidélium ab omni vínculo delictórum.
+V. Et grátia tua illis succurrénte, mereántur evádere judícium ultiónis.
+V. Et lucis ætérnæ beatitúdine pérfrui.
+
+[Sequentia]
+Dies iræ, dies illa
+Solvet sæclum in favílla:
+Teste David cum Sibýlla.
+_
+Quantus tremor est futúrus,
+Quando judex est ventúrus,
+Cuncta stricte discussúrus!
+_
+Tuba mirum spargens sonum
+Per sepúlcra regiónum,
+Coget omnes ante thronum.
+_
+Mors stupébit et natúra,
+Cum resúrget creatúra,
+Judicánti responsúra.
+_
+Liber scriptus proferétur,
+In quo totum continétur,
+Unde mundus judicétur.
+_
+Judex ergo cum sedébit,
+Quidquid latet, apparébit:
+Nil inúltum remanébit.
+_
+Quid sum miser tunc dictúrus?
+Quem patrónum rogatúrus,
+Cum vix justus sit secúrus?
+_
+Rex treméndæ majestátis,
+Qui salvándos salvas gratis,
+Salva me, fons pietátis.
+_
+Recordáre, Jesu pie,
+Quod sum causa tuæ viæ:
+Ne me perdas illa die.
+_
+Quærens me, sedísti lassus:
+Redemísti Crucem passus:
+Tantus labor non sit cassus.
+_
+Juste judex ultiónis,
+Donum fac remissiónis
+Ante diem ratiónis.
+_
+Ingemísco, tamquam reus:
+Culpa rubet vultus meus:
+Supplicánti parce, Deus.
+_
+Qui Maríam absolvísti,
+Et latrónem exaudísti,
+Mihi quoque spem dedísti.
+_
+Preces meæ non sunt dignæ:
+Sed tu bonus fac benígne,
+Ne perénni cremer igne.
+_
+Inter oves locum præsta,
+Et ab hœdis me sequéstra,
+Státuens in parte dextra.
+_
+Confutátis maledíctis,
+Flammis ácribus addíctis:
+Voca me cum benedíctis.
+_
+Oro supplex et acclínis,
+Cor contrítum quasi cinis:
+Gere curam mei finis.
+_
+Lacrimósa dies illa,
+Qua resúrget ex favílla
+Judicándus homo reus.
+_
+Huic ergo parce, Deus:
+Pie Jesu Dómine,
+Dona eis réquiem.
+Amen.
+
+[Evangelium]
+Sequéntia ++ sancti Evangélii secúndum Joánnem
+!Joannes 6:51-55
+In illo témpore: Dixit Jesus turbis Judæórum: Ego sum panis vivus, qui de cœlo descéndi. Si quis manducáverit ex hoc pane, vivet in ætérnum: et panis, quem ego dabo, caro mea est pro mundi vita. Litigábant ergo Judǽi ad ínvicem, dicéntes: Quómodo potest hic nobis carnem suam dare ad manducándum? Dixit ergo eis Jesus: Amen, amen, dico vobis: nisi manducavéritis carnem Fílii hóminis et bibéritis ejus sánguinem, non habébitis vitam in vobis. Qui mánducat meam carnem et bibit meum sánguinem, habet vitam ætérnam: et ego resuscitábo eum in novíssimo die.
+
+[Offertorium]
+Dómine Jesu Christe, Rex glóriæ, líbera ánimas ómnium fidélium defunctórum de pœnis inférni et de profúndo lacu: líbera eas de ore leónis, ne absórbeat eas tártarus, ne cadant in obscúrum: sed sígnifer sanctus Míchaël repræséntet eas in lucem sanctam: 
+* Quam olim Abrahæ promisísti et sémini ejus.
+V. Hóstias et preces tibi, Dómine, laudis offérimus: tu súscipe pro animábus illis, quarum hódie memóriam fácimus: fac eas, Dómine, de morte transíre ad vitam. 
+* Quam olim Abrahæ promisísti et sémini ejus.
+
+[Secreta]
+Hóstias, quǽsumus, Dómine, quas tibi pro animábus famulórum famularúmque tuárum offérimus, propitiátus inténde: ut, quibus fídei christiánæ méritum contulísti, dones et prǽmium.
+$Per Dominum
+
+[Secreta1]
+Súscipe, Dómine, quǽsumus, pro animábus famulórum tuórum Pontíficum seu Sacerdótum, quas offérimus, hóstias: ut, quibus in hoc sǽculo pontificále seu sacerdotále donásti méritum, in cœlésti regno Sanctórum tuórum júbeas jungi consórtio.
+$Per Dominum
+
+[Secreta2]
+Deus, cujus misericórdiæ non est númerus, súscipe propítius preces humilitátis nostræ: et animábus fratrum, propinquórum et benefactórum nostrórum, quibus tui nóminis dedísti confessiónem, per hæc sacraménta salútis nostræ, cunctórum remissiónem tríbue peccatórum.
+$Per Dominum.
+
+[Communio]
+!4 Esdr 2:35; 2:34
+Lux ætérna lúceat eis, Dómine: 
+* Cum Sanctis tuis in ætérnum: quia pius es.
+V. Requiem ætérnam dona eis, Dómine: et lux perpétua lúceat eis. 
+* Cum Sanctis tuis in ætérnum: quia pius es.
+
+[Postcommunio]
+Animábus, quǽsumus, Dómine, famulórum famularúmque tuárum orátio profíciat supplicántium: ut eas et a peccátis ómnibus éxuas, et tuæ redemptiónis fácias esse partícipes:
+$Qui vivis
+
+[Postcommunio1]
+Prosit, quǽsumus, Dómine, animábus famulórum tuórum Pontíficum seu Sacerdótum misericórdiæ tuæ imploráta cleméntia: ut ejus, in quo speravérunt et credidérunt, ætérnum cápiant, te miseránte, consórtium.
+$Per Dominum
+
+[Postcommunio2]
+Præsta, quǽsumus, omnípotens et miséricors Deus: ut ánimæ fratrum, propinquórum et benefactórum nostrórum, pro quibus hoc sacrifícium laudis tuæ obtúlimus majestáti; per hujus virtútem sacraménti a peccátis ómnibus expiátæ, lucis perpétuæ, te miseránte, recípiant beatitúdinem.
+$Per Dominum
