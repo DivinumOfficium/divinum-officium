@@ -505,7 +505,7 @@ sub setupstring($$%) {
     $basedir =~ s/horas/missa/g;         # to infinite cycles github #525
   }
 
-  if ($fname =~ /Comment.txt$|C[1-7](?![3-9])[a-z]?/) {
+  if ($fname =~ /Comment.txt$|C\d(?![3-9])[a-z]?/) {
     $basedir =~ s/missa/horas/g;         # missa uses comments from horas dir
   }
 

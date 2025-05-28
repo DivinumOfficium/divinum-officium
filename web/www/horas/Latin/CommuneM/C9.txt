@@ -12,14 +12,12 @@ Omit MLitany
 [Ant 1] (rubrica cisterciensis)
 Audívi vocem * de cœlo dicéntem: Beáti mórtui qui in Dómino moriúntur.
 
-[Ant Laudes] (rubrica cisterciensis)
-@Commune/C9:Ant Laudes_:1-3 s/;;62/;;62;66/ 
-Eruísti, Dómine, * ánimam meam ne períret.;;222
-@Commune/C9:Ant Laudes_:5 s/;;150/;;148;149;150/
-
 [Oratio 1] (rubrica cisterciensis)
 @:Oratio_a_porta
 @:Oratio_Cist:s/§/†/g
+
+[Oratio Matutinum] (rubrica cisterciensis)
+@:Oratio 1
 
 [Oratio_Cist]
 v. Deus, cui próprium est miseréri semper et párcere: § propitiáre animábus famulórum famularúmque tuárum, et ómnia eórum peccáta dimítte; * ut mortalitátis vínculis absolútæ, transíre mereántur ad vitam. § 
@@ -82,10 +80,11 @@ $Requiem
 [Responsory91] (rubrica cisterciensis)
 @Commune/C9:Responsory9
 
-[Oratio Matutinum] (rubrica cisterciensis)
-@:Oratio 1
+[Ant Laudes] (rubrica cisterciensis)
+@Commune/C9:Ant Laudes_:1-3 s/;;62/;;62;66/ 
+Eruísti, Dómine, * ánimam meam ne períret.;;222
+@Commune/C9:Ant Laudes_:5 s/;;150/;;148;149;150/
 
 [Oratio 2] (rubrica cisterciensis)
 @:Oratio_a_porta:s/145/129/s
 @:Oratio_Cist:s/§/†/g
-

@@ -19,51 +19,17 @@ Allelúia, * allelúia, allelúia.;;109
 ;;111
 ;;147
 
-[Responsorium] (rubrica cisterciensis)
-<font color="red">Responsorium.</font> Terríbilis est locus iste: non est hic áliud nisi domus Dei et porta caeli: * Vere étenim Dóminus est in loco isto, et ego nesciébam.
-V. Cumque evigilásset Jacob a somno, ait: 
-* Vere étenim Dóminus est in loco isto, et ego nesciébam.
-
 [Versum 1] (rubrica cisterciensis)
 @Commune/C8:Nocturn 2 Versum
 
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
-[Versum 3] (rubrica cisterciensis)
-@:Versum 1
-
 [Ant 1] (rubrica cisterciensis)
 Pax æterna * ab ætérno Patre, huic domui pax perénnis, Verbum Patris sit pax huic dómui, pacem pius consolátor huic præstet dómui.
-
-[Ant Laudes] (tempore paschali et rubrica cisterciensis)
-Allelúia, * allelúia, allelúia.
-
-[Ant Sexta] (rubrica cisterciensis)
-@Commune/C8:Ant Vespera:5
-
-[Responsory Breve Sexta] (rubrica cisterciensis)
-@:Responsory Breve Nona
-
-[Ant Nona] (rubrica cisterciensis)
-@Commune/C8:Ant Vespera:4
 
 [AntMatutinumM]
 Introíbo * in domum tuam, Dómine, † et adorábo ad templum sanctum tuum.;;5
 Dóminus * in templo sancto suo, † Dóminus in cælo sedes ejus.;;10
 Adoráte * Dóminum in aula sancta ejus.;;28
 Beáti, * qui hábitant in domo tua, Dómine; † in sǽcula sæculórum laudábunt te.;;83
-
-[Nocturn 1 Versum] (rubrica cisterciensis)
-V. Fundáta est domus Dómini.
-R. Supra vérticem móntium.
-
-[Nocturn 2 Versum] (rubrica cisterciensis)
-@Commune/C8:Versum 3
-
-[Nocturn 3 Versum] (rubrica cisterciensis)
-V. Beáti, qui hábitant in domo tua, Dómine.
-R. In sæcula sæculórum laudábunt te.
 
 [Ant Matutinum]
 @:AntMatutinumM:1-2
@@ -77,6 +43,17 @@ R. In sæcula sæculórum laudábunt te.
 @Commune/C8::6 s/87/95/
 @Commune/C8::9
 @Commune/C8::5 s/86/260;261;262/
+
+[Nocturn 1 Versum] (rubrica cisterciensis)
+V. Fundáta est domus Dómini.
+R. Supra vérticem móntium.
+
+[Nocturn 2 Versum] (rubrica cisterciensis)
+@Commune/C8:Versum 3
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+V. Beáti, qui hábitant in domo tua, Dómine.
+R. In sæcula sæculórum laudábunt te.
 
 [Lectio1]
 @Commune/C8::1-5 s/-5/-3/
@@ -160,10 +137,33 @@ R. Et audívi vocem de throno dicéntem: Ecce tabernáculam Dei cum homínibus, 
 _
 @Commune/C8:Versum Tertia
 
+[Responsorium] (rubrica cisterciensis)
+<font color=”red”>Responsorium.</font> Terríbilis est locus iste: non est hic áliud nisi domus Dei et porta caeli: * Vere étenim Dóminus est in loco isto, et ego nesciébam.
+V. Cumque evigilásset Jacob a somno, ait: 
+* Vere étenim Dóminus est in loco isto, et ego nesciébam.
+
+[Ant Laudes] (tempore paschali et rubrica cisterciensis)
+Allelúia, * allelúia, allelúia.
+
 [Capitulum Laudes]
 @Commune/C8
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant Sexta] (rubrica cisterciensis)
+@Commune/C8:Ant Vespera:5
+
+[Responsory Breve Sexta] (rubrica cisterciensis)
+@:Responsory Breve Nona
 
 [Responsory SextaM]
 @Commune/C8:Versum Tertia
 (sed rubrica cisterciensis)
 @Commune/C8:Versum 3
+
+[Ant Nona] (rubrica cisterciensis)
+@Commune/C8:Ant Vespera:4
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
