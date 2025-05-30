@@ -1,26 +1,6 @@
 [Officium]
 Dominica Sanctissimæ Trinitatis
 
-[Officium] (rubrica tridentina)
-Festum Sanctissimæ Trinitatis
-
-[Rank]
-;;Duplex I classis;;6.5
-
-[Rank] (rubrica tridentina)
-;;Duplex II classis;;5.9
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Symbolum Athanasium
-No Commemoration
-No suffragium
-Psalm5 Vespera=116
-Psalm5 Vespera3=113
-Prima=53
-
 [Ant Vespera]
 Eer aan U, Drieëenheid * aan elkander gelijk, één Godheid, vóór alle eeuwen, en nu en voor immer.;;109
 Lof en eeuwige glorie * zij aan God de Vader en de Zoon, alsmede aan de Heilige Helper uit de eeuwen der eeuwen.;;110
@@ -67,16 +47,10 @@ $Oremus
 God, kracht van hen, die op U hopen, luister welwillend naar onze aanroepingen en, omdat wij, zwakke stervelingen, zonder U niets vermogen, bied ons hulp met uw genade, opdat wij door het onderhouden van uw geboden U met wil en daad behagen.
 $Per Dominum
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
 [Capitulum Laudes]
 !Rom 11:33
 v. O afgrond van rijkdom en wijsheid en kennis van God, hoe ondoorgrondelijk zijn toch zijn raadsbesluiten, hoe onnaspeurlijk zijn wegen!
 $Deo gratias
-
-[Versum 2]
-@:Versum 1
 
 [Versum 3]
 V. Gezegend zijt Gij, o Heer, aan het uitspansel des hemels.
