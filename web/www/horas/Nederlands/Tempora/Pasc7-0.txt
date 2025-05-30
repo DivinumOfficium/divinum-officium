@@ -1,16 +1,6 @@
 [Officium]
 Dominica Pentecostes
 
-[Rank]
-;;Duplex I Classis cum Octava privilegiata I ordinis;;7
-
-[Rule]
-1 Nocturn
-Psalmi Dominica;
-Antiphonas horas
-Hymnus Tertia
-Prima=53
-
 [Ant Vespera]
 Toen was aangebroken * de dag van het Pinksterfeest, waren allen tezamen op dezelfde plaats, alleluia.
 De Geest des Heren * heeft het aardrijk vervuld, alleluia.
@@ -56,9 +46,6 @@ Verrees, en ook de Middelaar,
 Door aller eeuwen eeuwen heen.
 Amen.
 
-[HymnusM Vespera]
-@:Hymnus Vespera:s/díceris Paráclitus/Paráclitus díceris/ s/Altíssimi donum Dei/Donum Dei Altíssimi/ s/Dígitus patérnæ déxteræ/Dextræ Dei tu dígitus/ s/Teque/Te/
-
 [Versum 1]
 V. Allen werden vervuld van de Heilige Geest, alleluia.
 R. En begonnen te spreken, alleluia.
@@ -70,22 +57,10 @@ Ik zal u niet * als wezen achterlaten, alleluia. Ik ga, maar kom tot u terug, al
 God, op deze dag hebt Gij de harten van uw gelovigen door de verlichting van de Heilige Geest onderwezen. Doe ons door diezelfde Geest de waarheid smaken en ook altijd van zijn troost genieten.
 $Per Dominum eiusdem
 
-[Ant Laudes]
-@:Ant Vespera:s/;.*//
-
 [Capitulum Laudes]
 !Act. 2:1-2
 v. Toen was aangebroken de dag van het Pinksterfeest, waren alle leerlingen tezamen op dezelfde plaats; en plotseling kwam er een gedruis van de hemel als van een hevige windvlaag en vervulde het gehele huis, waar zij vergaderd waren.
 $Deo gratias
-
-[Versum 2]
-@:Versum 1
-
-[Ant 2]
-Accípite * Spíritum Sanctum: quorum remiséritis peccáta, remittúntur eis, allelúja.
-
-[Ant Vespera 3]
-@:Ant Vespera:s/;.*//
 
 [Versum 3]
 V. In verschillende talen verkondigden de apostelen, alleluia.
