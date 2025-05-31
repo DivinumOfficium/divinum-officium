@@ -437,7 +437,7 @@ sub lectioE {
   @e = grep { !/^!/ } @e;     # remove rubrics
   $e[0] =~ s/^(v. )?/v. /;    # add initial to text
 
-  join("\n", "v. $begin", @e);
+  join("\n", "v. $begin", join(' ', @e));
 }
 
 sub lectioE_required {
