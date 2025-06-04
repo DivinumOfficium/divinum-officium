@@ -1,0 +1,32 @@
+@Tempora/Pasc7-4
+
+[Invit]
+@Tempora/Pasc7-0:Responsory Nona:1 s/R.br. //
+
+[Ant Matutinum]
+@Tempora/Pasc7-0::1 s/$/;67;103/
+@Tempora/Pasc7-0:Versum 1
+
+[Lectio1]
+@Tempora/Pasc7-4::s/ Quibus.*//
+
+[Responsory1]
+@Tempora/Pasc7-1
+
+[Lectio2]
+@Tempora/Pasc7-4:Lectio1:s/.* (?=Quibus)//s s/$/~/
+@Tempora/Pasc7-4::s/ Nec.*//
+
+[Responsory2]
+@TemporaOP/Pasc7-1
+
+[Lectio3]
+@Tempora/Pasc7-4:Lectio2:s/.* (?=Nec)// s/$/~/
+@Tempora/Pasc7-4::s/ Quæ.*//
+
+[Responsory3]
+@TemporaM/Pasc7-3::1-2 s/\*/* Allelúja.\nV./s s/, †.*/./
+@Psalterium/Common/Prayers:Alleluia:1 s/v/R/
+
+[Ant Laudes]
+@Tempora/Pasc7-0:Ant Vespera:1 s/$/;;92;99;62;210;148/ s/Cum/Dum/

@@ -9,7 +9,7 @@ no Te Deum
 
 [Responsory1]
 @Tempora/Pasc6-0:Responsory8:1-3 s/\.\s*\n\* (.)/: \l$1/ s/, a(\S+)/,\n* A\1/
-@Psalterium/Common/Prayers:Alleluia Simplex:s/^, (.)/R. \u$1/
+@Psalterium/Common/Prayers:Alleluia:1 s/v/R/
 
 [Lectio2]
 @Tempora/Pasc1-1:Lectio1:2 s/1-8/6-9/
