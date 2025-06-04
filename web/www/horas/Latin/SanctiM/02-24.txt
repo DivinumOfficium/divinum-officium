@@ -19,17 +19,25 @@
 
 [Lectio5]
 @Commune/C1:Lectio4 in 2 loco:s/Sacraméntum .*//s
+(sed rubrica cisterciensis)
+@CommuneM/C1
 
 [Lectio6]
 @Commune/C1:Lectio4 in 2 loco:s/.* Sacraméntum /Sacraméntum /s s/$/~/
 @Commune/C1:Lectio5 in 2 loco:s/Duódecim ergo.*//s
+(sed rubrica cisterciensis)
+@CommuneM/C1
 
 [Lectio7]
 @Commune/C1:Lectio5 in 2 loco:s/.* Duódecim ergo/Duódecim ergo/s s/$/~/
 @Commune/C1:Lectio6 in 2 loco:s/Non solum .*//s
+(sed rubrica cisterciensis)
+@CommuneM/C1
 
 [Lectio8]
 @Commune/C1:Lectio6 in 2 loco:s/.* Non solum /Non solum /s
+(sed rubrica cisterciensis)
+@CommuneM/C1
 
 [Lectio9]
 @Sancti/02-24:Lectio7:s/Tóllite .*//s
@@ -43,3 +51,5 @@
 
 [Lectio12]
 @Sancti/02-24:Lectio9
+(sed rubrica cisterciensis)
+@Sancti/02-24:Lectio9:s/Nam, qui .*//
