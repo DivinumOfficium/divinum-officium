@@ -46,7 +46,7 @@ sub invitatorium {
   my $ant = chompd($invit[$i]);
   my ($w, $c);
 
-  if ( $version =~ /Monastic/i
+  if ( $version =~ /Monastic|Praedicatorum/i
     && $dayofweek
     && $winner =~ /Pasc/
     && $winner !~ /Pasc[07]/

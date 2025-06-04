@@ -1,0 +1,34 @@
+@Tempora/Pasc7-5
+
+[Invit]
+@Tempora/Pasc7-0:Responsory Nona:1 s/R.br. //
+
+[Ant Matutinum]
+@Tempora/Pasc7-0::2 s/67/47;67;103/
+@Tempora/Pasc7-0:Versum 3
+
+[Responsory1]
+@Tempora/Pasc7-2:Responsory2:1-4
+
+[Lectio2]
+@Tempora/Pasc7-5::s/Magnus .*//
+
+[Responsory2]
+@Tempora/Pasc7-2:Responsory1:1-2
+@Tempora/Pasc7-4:Responsory2:1 s/R/V/ s/:.*/ sedéntes./
+@Tempora/Pasc7-2:Responsory1:2 s/\*/R./
+
+[Lectio3]
+@Tempora/Pasc7-5:Lectio2:s/.* (?=Magnus)// s/$/~/
+@Tempora/Pasc7-5::s/ Et.*//
+
+[Responsory3]
+@Tempora/Pasc7-5:Responsory2:1-4
+&Gloria
+@Psalterium/Common/Prayers:Alleluia Duplex: s/^/R. /
+
+[Ant Laudes]
+@Tempora/Pasc7-0:Ant Vespera:1 s/$/;;92;99;62;210;148/ s/Cum/Dum/
+
+[Ant 3]
+@Tempora/Pent18-0

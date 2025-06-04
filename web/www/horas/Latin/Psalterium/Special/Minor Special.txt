@@ -602,7 +602,7 @@ Noscámus atque Fílium,
 Teque utriúsque Spíritum
 Credámus omni témpore.
 _
-Deo Patri sit glória,
+* Deo Patri sit glória,
 Et Fílio, qui a mórtuis
 Surréxit, ac Paráclito,
 In sæculórum sǽcula.
@@ -740,17 +740,10 @@ Amen.
 _
 @Psalterium/Doxologies:AscT
 
-[Hymnus Completorium Pent Dox] (rubrica Ordo Praedicatorum)
-Sit laus Patri cum Fílio,
-Sancto simul Paráclito:
-Nobísque mittat Fílius
-Charisma Sancti Spíritus.
-Amen.
-
 [Hymnus Completorium Pent] (rubrica Ordo Praedicatorum)
 @Tempora/Pasc5-4:HymnusM Vespera:1-20
 @Tempora/Pasc7-0:Hymnus Laudes:26-30
-@:Hymnus Completorium Pent Dox
+*
 
 [Lectio Completorium]
 !1 Pet 5:8-9
