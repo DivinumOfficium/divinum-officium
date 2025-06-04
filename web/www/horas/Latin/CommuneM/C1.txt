@@ -25,8 +25,26 @@ Gaudéte * et exsultáte, quia nómina vestra scripta sunt in cælis, dicit Dóm
 @:AntMatutinumM:3
 @:AntMatutinumM:4
 
+[Ant Matutinum] (rubrica cisterciensis)
+In omnem terram * exívit sonus eórum, et in fines orbis terræ verba eórum.;;18
+Hæc est generátio * quæréntium Dóminum, quæréntium fáciem Dei Jacob.;;23
+Verbo * Dómini cœli firmáti sunt: et spíritu oris ejus omnis virtus eórum.;;32
+Clamavérunt justi, * et Dóminus exaudívit eos.;;33
+Constítues eos * príncipes super omnem terram: mémores erunt nóminis tui, Dómine.;;44
+Príncipes populórum * congregáti sunt cum Deo Ábraham.;;46
+Dedísti hereditátem * timéntibus nomen tuum, Dómine.;;60
+Annuntiavérunt * ópera Dei, et facta ejus intellexérunt.;;63
+Beáti, * quos elegísti, Dómine, habitábunt in átriis tuis.;;64
+Peccatórum * confríngam córnua, et exaltabúntur córnua justi.;;74
+Lux orta est * justo, rectis corde lætítia, allelúja.;;96
+Custodiébant * testimónia ejus, et præcépta ejus, allelúja.;;98
+In patiéntia vestra * possidébitis ánimas vestras.;;253;254;255
+
 [Lectio1]
 @Commune/C1:Lectio1:s/-5/-4/ :s/5 .*//s
+
+[Lectio1] (rubrica cisterciensis)
+@Commune/C1:Lectio1:1-6
 
 [Lectio2]
 @Commune/C1:Lectio1:s/.*!/!/s s/-5/-7/ s/1-/5-/ s/^1 .*5 /5 /sm
@@ -39,57 +57,118 @@ Gaudéte * et exsultáte, quia nómina vestra scripta sunt in cælis, dicit Dóm
 [Lectio4]
 @Commune/C1:Lectio3:s/10-/11-/ s/10 .*11 /11 /s
 
+[Lectio4] (rubrica cisterciensis)
+@Commune/C1:Lectio3:s/10-/11-/ s/10 .*11 /11 /s s/-15/-14/ s/15 .*//
+
 [Responsory4]
 R. Fuérunt sine queréla ante Dóminum, et ab ínvicem non sunt separáti;
 * Cálicem Dómini bibérunt et amíci Dei facti sunt.
 V. Tradidérunt córpora sua ad supplícia: † ídeo coronántur et accípiunt palmam.
 R. Cálicem Dómini bibérunt et amíci Dei facti sunt.
 
+[Responsory4] (rubrica cisterciensis)
+R. O quam pulchri super montes pedes: 
+* Annuntiántium pacem, annuntiántium bona!
+V. In omnem terram exívit sonus eórum: et in fines orbis terræ verba eórum.
+R. Annuntiántium pacem, annuntiántium bona!
+&Gloria
+R. Annuntiántium pacem, annuntiántium bona!
+
 [Lectio5]
 @Commune/C1:Lectio4
+(sed rubrica cisterciensis)
+@Commune/C1:Lectio4 in 2 loco:s/Sacraméntum magnum.*//
 
 [Responsory5]
 @Commune/C1:Responsory4
+(sed rubrica cisterciensis)
+@:Responsory8_
 
 [Lectio6]
 @Commune/C1:Lectio5:s/Quales .*//s
 
+[Lectio6] (rubrica cisterciensis)
+@Commune/C1:Lectio4 in 2 loco:s/.*Sacraméntum magnum/Sacraméntum magnum/s s/$/~/
+@Commune/C1:Lectio5 in 2 loco:s/Respondéret ergo .*//s
+
 [Responsory6]
 @Commune/C1:Responsory5
+(sed rubrica cisterciensis)
+@Commune/C1:Responsory6
 
 [Lectio7]
 @Commune/C1:Lectio5:s/.* Quales /Quales /s s/$/~/
 @Commune/C1:Lectio6:s/Et .*//s
 
+[Lectio7] (rubrica cisterciensis)
+@Commune/C1:Lectio5 in 2 loco:s/.*Duódecim ergo sedes/Duódecim ergo sedes/s s/$/~/
+@Commune/C1:Lectio6 in 2 loco:s/Non solum ergo .*//s
+
 [Responsory7]
 @Commune/C1:Responsory6
+(sed rubrica cisterciensis)
+@:Responsory12_
 
 [Lectio8]
 @Commune/C1:Lectio6:s/.* Et /Et /s
 
-[Responsory8]
+[Lectio8] (rubrica cisterciensis)
+@Commune/C1:Lectio6 in 2 loco:s/.* Non solum ergo/Non solum ergo/s s/Partes enim mundi .*//s
+
+[Responsory8_]
 R. Constítues eos príncipes super omnem terram: † mémores erunt nóminis tui, Dómine,
 * In omni progénie et generatióne.
 V. Nimis honoráti sunt amíci tui, Deus; nimis confortátus est principátus eorum.
 R. In omni progénie et generatióne.
 
+[Responsory8]
+@:Responsory8_
+(sed rubrica cisterciensis)
+@:Responsory11_:s/In .* verba eórum/Candidióres nive, nitidióres lacte, rubicundióres ébore antíquo/
+
 [Responsory9]
 @Commune/C1:Responsory7
+
+[Responsory9] (rubrica cisterciensis)
+R. In omnem terram exívit sonus eórum: 
+* Et in fines orbis terræ verba eórum.
+V. Non sunt loquélæ neque sermónes, quorum non audiántur voces eórum.
+R. Et in fines orbis terræ verba eórum.
 
 [Responsory10]
 @Commune/C1:Responsory8
 
-[Responsory11]
+[Responsory11_]
 R. Qui sunt isti, qui ut nubes volant,
 * Et quasi colúmbæ ad fenéstras suas?
-V. In omnem terram exívit sonus eorum, † et in fines orbis terræ verba eórum.
+V. In omnem terram exívit sonus eórum, † et in fines orbis terræ verba eórum.
 R. Et quasi colúmbæ ad fenéstras suas?
 
-[Responsory12]
+[Responsory11]
+@:Responsory11_
+
+[Responsory11] (rubrica cisterciensis)
+R. Vos estis, qui permansístis mecum in tentatiónibus meis, dicit Dóminus, et ego dispóno vobis regnum:
+* Ut edátis, et bibátis super mensam meam in regno meo, et sedeátis super thronos judicántes duódecim tribus Israël.
+V. Non vos me elegístis, sed ego elégi vos, et pósui vos:
+R. Ut edátis, et bibátis super mensam meam in regno meo, et sedeátis super thronos judicántes duódecim tribus Israël.
+
+[Responsory12_]
 R. Non sunt loquélæ neque sermónes, quorum non audiántur voces eórum
 * In omnem terram exívit sonus eórum, † et in fines orbis terræ verba eórum.
 V. Nimis honoráti sunt amíci tui Deus, nimis confortátus est principátus eárum.
 R. In omnem terram exívit sonus eórum, † et in fines orbis terræ verba eórum.
+
+[Responsory12]
+@:Responsory12_
+
+[Responsory12] (rubrica cisterciensis)
+R. Vos estis lux mundi, dicit Dóminus:
+* Qui in patiéntia vestra possidébitis ánimas vestras.
+V. Et ego dispóno vobis, sicut dispósuit mihi Pater meus regnum:
+R. Qui in patiéntia vestra possidébitis ánimas vestras.
+&Gloria
+R. Qui in patiéntia vestra possidébitis ánimas vestras.
 
 [MM Capitulum]
 @:Capitulum Sexta

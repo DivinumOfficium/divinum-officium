@@ -4,6 +4,92 @@ Commune Apostolorum
 [Ant 1] (rubrica cisterciensis)
 Hle já vás posílám * jako ovce mezi vlky, praví Pán. Buďte prozíraví jako hadi, ale bezelstní jako holubice.
 
+[Ant Matutinum] (rubrica cisterciensis)
+Do celé země * vyšel jejich hlas, a až na konec světa jejich slova.;;18
+Hle, to je pokolení * těch, kdo hledají Hospodina, kdo hledají tvář Boha Jákobova.;;23
+Slovem Hospodinovým * byla upevněna nebesa, a dechem úst jeho všechna jejich moc.;;32
+Spravedliví volali, * a Hospodin je vyslyšel.;;33
+Ustanovíš je * knížaty nad celou zemí, pamětlivi budou tvého jména, Hospodine.;;44
+Knížata národů * se shromáždila k Bohu Abrahamovu.;;46
+Dal jsi dědictví * těm, kdo se bojí tvého jména, Hospodine.;;60
+Hlásali * skutky Boží a pochopili jeho činy.;;63
+Blahoslavení * které sis vyvolil, Hospodine, budou přebývat ve tvých nádvořích.;;64
+Zlomím rohy * hříšníků, a budou vyvýšeny rohy spravedlivých.;;74
+Světlo zazářilo * spravedlivému, a radost těm, kdo jsou upřímného srdce.;;96
+Zachovávali * jeho svědectví a jeho přikázání.;;98
+Ve své trpělivostí * zachránite si své duše.;;253;254;255
+
+[Responsory4] (rubrica cisterciensis)
+R. Ó, jak krásné jsou na horách nohy 
+* Těch, kdo ohlašují mír, kdo ohlašují dobré věci!
+V. Do celé země vyšel jejich hlas; a až do končin okrsku zemského jejich slova.
+R. Těch, kdo ohlašují mír, kdo ohlašují dobré věci!
+&Gloria
+R. Těch, kdo ohlašují mír, kdo ohlašují dobré věci!
+
+[Responsory8_]
+R. Ustanovuješ je knížaty nad celou zemí, † pamětlivi budou tvého jména, Hospodine,
+* V každém rodu a pokolení.
+V. Převelice uctěni jsou tví přátelé, Bože; převelice je upevněna jejich vláda.
+R. V každém rodu a pokolení.
+
+[Responsory8]
+@:Responsory8_
+(sed rubrica cisterciensis)
+@:Responsory11_:s/Do celé .* slova/Bělostnější než sníh, zářivější než mléko, rudší než stará slonovina/
+
+[Responsory9] (rubrica cisterciensis)
+R. Do celé země vyšel jejich hlas. a až na konec světa jejich slova.
+* A až na konec světa jejich slova.
+V. Není řečí ani slov, jež by nebyly slyšet v jejich hlasech.
+R. A až na konec světa jejich slova.
+
+[Responsory11_]
+R. Kdopak jsou ti, kteří letí jako oblak,
+* A jako holubice ke svým oknům?
+V. Do celé země vyšel jejich hlas; a až do končin okrsku zemského jejich slova.
+R. A jako holubice ke svým oknům?
+
+[Responsory11]
+@:Responsory11_
+
+[Responsory11] (rubrica cisterciensis)
+R. Vy jste ti, kdo se mnou zůstali v mých pokušeních, praví Pán, a já vám svěřuji království:
+* Abyste jedli a pili u mého stolu v mém království, a seděli na trůnech, soudíce dvanáct kmenů Israele.
+V. Ne vy jste si vyvolili mne, ale já jsem si vyvolil vás a ustanovil vás.
+R. Abyste jedli a pili u mého stolu v mém království, a seděli na trůnech, soudíce dvanáct kmenů Israele.
+
+[Responsory12_]
+R. Není řečí ani slov, jež by nebyly slyšet v jejich hlasech: 
+* Do celé země se rozlehl jejich hlas a až na konec světa jejich slova.
+V. Převelice uctěni jsou tví přátelé, Bože; převelice je upevněna jejich vláda.
+R. Do celé země se rozlehl jejich hlas * a až na konec světa jejich slova.
+
+[Responsory12]
+@:Responsory12_
+
+[Responsory12] (rubrica cisterciensis)
+R. Vy jste světlo světa, praví Pán:
+* A ve své trpělivosti si zachráníte své duše.
+V. A já vám svěřuji království, jako je můj Otec svěřil mně:
+R. A ve své trpělivosti si zachráníte své duše.
+&Gloria
+R. A ve své trpělivosti si zachráníte své duše.
+
+[Lectio5] (rubrica cisterciensis)
+@Commune/C1:Lectio4 in 2 loco:s/Význam této.*//
+
+[Lectio6] (rubrica cisterciensis)
+@Commune/C1:Lectio4 in 2 loco:s/.*Význam této číslice/Význam této číslice/s s/$/~/
+@Commune/C1:Lectio5 in 2 loco:s/Zástup mu tedy .*//s
+
+[Lectio7] (rubrica cisterciensis)
+@Commune/C1:Lectio5 in 2 loco:s/.*Pohleďme tedy na dvanáct/Pohleďme tedy na dvanáct/s s/$/~/
+@Commune/C1:Lectio6 in 2 loco:s/Bude tam tedy .*//s
+
+[Lectio8] (rubrica cisterciensis)
+@Commune/C1:Lectio6 in 2 loco:s/.* Bude tam tedy/Bude tam tedy/s s/Známe totiž čtyři .*//s
+
 [Ant 2] (rubrica cisterciensis)
 Až budete stát * před králi a místodržícími, nepřemýšlejte předem, jak byste odpovídali; v onu hodinu vám totiž bude dáno, co máte říct.
 

@@ -8,41 +8,31 @@ Tehdy spravedliví * stanou ve velké důvěře před těmi, kteří je sužoval
 Bože, jenž nás rozradostňuješ každoroční slavností svých Apoštolů Filipa a Jakuba: uděl, prosíme, abychom, když se radujeme z jejich zásluh, byli též poučováni jejich příklady.
 $Per Dominum
 
+[Lectio5]
+@Sancti/05-01:Lectio4:s/Když přijali .*//
+
+[Lectio6]
+@Sancti/05-01:Lectio4:s/.*Když přijali/Když přijali/
+
+[Lectio7]
+@Sancti/05-01:Lectio5:s/Když však .*//
+
+[Lectio8]
+@Sancti/05-01:Lectio6:s/.* Když mu bylo/Když mu bylo/ s/ těmito slovy.*co činí.“/./ s/ v sedmém roce .*/./
+
+[Lectio9]
+@Sancti/05-01:Lectio7:s/Pán praví.*//
+
+[Lectio10]
+@Sancti/05-01:Lectio7:s/.* Pán praví/Pán praví/s s/$/~/
+@Sancti/05-01:Lectio8:s/Avšak co znamená .*//
+
+[Lectio11]
+@Sancti/05-01:Lectio8:s/.* Avšak co znamená/Avšak co znamená/
+
 [Ant 2]
 Oni jsou * dvě olivy a dva svícny, které svítí před Pánem; mají moc uzavřít nebe oblaky i otevřít jeho brány, neboť jejich jazyky se staly klíči nebeskými, alleluja.
 
 [Ant 3]
 Ať se nesouží * vaše srdce, ani nebojí; Věříte v Boha, věřte i ve mě, v domě mého Otce je mnoho příbytků, alleluja, alleluja.
 
-[Lectio3]
-@Tempora/Pasc2-3::s/49/45/ s/ Then Joseph.*//s
-
-[Lectio4]
-@Tempora/Pasc2-3:Lectio3:s/44-49/45-49/ s/44.* (Then Joseph)/45 $1/s
-
-[Lectio7]
-@Tempora/Pasc2-3:Lectio6:s/Therefore.*//s
-
-[Responsory7]
-R. Hear, my voice, with which I have cried to thee: 
-* Have mercy on me and hear me.
-V. Be thou my helper, forsake me not.
-R. Have mercy on me and hear me.
-
-[Lectio8]
-@Tempora/Pasc2-3:Lectio6:s/.*(Therefore)/$1/s
-
-[Lectio11]
-@Tempora/Pasc2-3:Lectio9:s/Neque.*//s
-
-[Responsory11]
-@Sancti/03-19:Responsory5
-
-[Lectio12]
-@Tempora/Pasc2-3:Lectio9:s/.*(Neque)/$1/s
-
-[Lectio11]
-@Tempora/Pasc2-3:Lectio9:s/It is.*//s
-
-[Lectio12]
-@Tempora/Pasc2-3:Lectio9:s/.*(It is)/$1/s
