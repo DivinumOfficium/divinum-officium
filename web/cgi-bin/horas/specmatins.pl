@@ -526,8 +526,11 @@ sub lectiones {
 
   my @a = get_absolutio_et_benedictiones($num, $lang);
 
-  if ($rule !~ /Limit.*?Benedictio/i && ($version =~ /Cist/i 
-   && $rule =~ /Matutinum Romanum/i)) {
+  if (
+    $rule !~ /Limit.*?Benedictio/i
+    && ( $version =~ /Cist/i
+      && $rule =~ /Matutinum Romanum/i)
+  ) {
     push(@s, "\$rubrica Pater secreto") unless $rule =~ /sine absolutio/i;
     push(@s, "\$Pater noster Et") unless $rule =~ /sine absolutio/i;
     push(@s, "Absolutio. $a[0]", '$Amen') unless $version =~ /^Ordo Praedicatorum|Cist/ || $rule =~ /sine absolutio/i;
