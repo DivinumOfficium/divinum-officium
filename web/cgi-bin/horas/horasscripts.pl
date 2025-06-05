@@ -150,8 +150,9 @@ sub handleverses {
 
     # Discussion #4504: For Breviarum Romanum style
     # ‡ marks mediant for Breviarum Romanum but flexa for Antiphonale
+    # Following space to safeguard against /:‡:/ which needs to remain unchanged
     # flexa removed for Breviarum Romanum display
-    s/‡(.*?)\*\s*/*$1/g if $noflexa;
+    s/‡\s+(.*?)\*\s*/* $1/g if $noflexa;
     s/†\s*//g if $noflexa;
 
     # Discussion #4504: For Antiphonale style
