@@ -1733,7 +1733,7 @@ sub rankname {
   my $rankname;
 
   if ( ($latname !~ /(?:Die|Feria|Sabbato|^In Octava)/i)
-    && ($winner !~ /Pasc[07]/ || $dayofweek == 0 || $latname !~ /Pasc|Pent/))
+    && ($winner !~ /Pasc[07]-[1-6]/ || $dayofweek == 0))
   {
     my $i = $rank;
 
