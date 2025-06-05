@@ -47,7 +47,8 @@ sub gethymn {
   if ($version !~ /1960/ && $hymn =~ /\*/) {    # doxology needed
     my ($dox, $dname) = doxology($lang);
     if ($dname) { $hymn =~ s/\*.*/$dox/s }
-    $section .= " {Doxology: $dname}" if ($dname && $section && ($dayname[0] !~ /Pasc7/ || $hora ne 'Tertia'));
+    $section .= " {Doxology: $dname}"
+      if ($dname && $section && ($dayname[0] !~ /Pasc7/ || ($hora ne 'Tertia' && $hora ne 'Vespera')));
   }
 
   $hymn =~ s/^(?:v\.\s*)?(\p{Lu})/v. $1/;       # add initial
