@@ -4,14 +4,6 @@ In Conceptione Immaculata Beatæ Mariæ Virginis;;Duplex I classis cum octava co
 [Rank] (rubrica 196)
 In Conceptione Immaculata Beatæ Mariæ Virginis;;Duplex I classis;;6.01;;ex C11
 
-[Rule]
-ex C11;
-Psalmi Dominica
-9 lectiones;
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-
 [Ant Vespera]
 Geheel schoon * zijt Gij, Maria, en de smet der erfzonde is niet in U.;;109
 Uw gewaad * is wit als sneeuw en uw gelaat is als de zon.;;112
@@ -30,29 +22,10 @@ Alle geslachten * zullen Mij zalig prijzen, want Hij, de Machtige, heeft grote d
 God, Gij hebt door de Onbevlekte Ontvangenis van de heilige Maagd uw Zoon een waardig verblijf bereid. Wij vragen U, die haar met vooruitzicht op de dood van uw Zoon voor ieder vlek hebt behoed, doe ook ons door haar voorspraak rein tot U komen.
 $Per eumdem
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
 [Capitulum Laudes]
 !Prov 8:22-24
 v. De Heer bezat Mij bij de aanvang zijner wegen, voor dat Hij iets maakte van den beginne af. Van eeuwigheid ben Ik gevormd, van oudsher, eer de aarde bestond. Er waren nog geen oceanen, en reeds was Ik ontvangen.
 $Deo gratias
-
-[Versum 2]
-@:Versum 1
-
-[Versum Tertia]
-@:Nocturn 2 Versum
-
-[Versum Sexta]
-@:Nocturn 3 Versum
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Heden is een twijg * ontsproten uit de wortel van Jesse, heden is Maria ontvangen zonder enige zondesmet, heden werd door Haar de kop van de oude slang verpletterd, alleluia.
