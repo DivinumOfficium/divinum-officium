@@ -402,15 +402,35 @@ sub lectioE {
   my $lang = shift;
 
   my @e;
-  my %w = (columnsel($lang)) ? %winner : %winner2;
+  my %w = columnsel($lang) ? %winner : %winner2;
+  my %com = columnsel($lang) ? %commune : %commune2;
+  my $win = $winner; $win =~ s/(?:M|OP)//g; # no M or OP folder in missa
+  my %missa = %{setupstring("../missa/$lang", $win)};
 
-  if (exists($w{LectioE})) {    #** set evangelium
+  if (exists($w{LectioE})) {    #** get evangelium from Winner
     @e = split("\n", $w{LectioE});
+  } elsif (exists($missa{Evangelium})) {  #** get evangelium from missa
+    @e = split("\n", $missa{Evangelium});
+  } elsif (exists($com{LectioE})) {    #** get evangelium from Common
+    @e = split("\n", $com{LectioE});
+  } elsif (exists($com{Evangelium})) {    #** same as before, other hash
+    @e = split("\n", $com{Evangelium});
   }
 
-  if (!$e[0] || ($e[0] =~ s/^@//)) {
+  if ($e[0] =~ s/^@//) {
 
-    # if the Evangelium is missing in the Sanctoral or is just a cross-reference
+    # if the Evangelium is just a cross-reference
+    my ($w, $s) = split(/:/, $e[0]);
+
+    if ($w) {$w .= '.txt';} 
+
+    my %ref = %{setupstring($lang, $w)};
+    @e = split("\n", $ref{$s});
+  }
+
+  if (!$e[0]) {
+
+    # if the Evangelium is missing in the Sanctoral 
     my ($w, $s) = split(/:/, $e[0]);
 
     if ($w) {
