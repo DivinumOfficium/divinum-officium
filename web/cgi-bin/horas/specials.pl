@@ -610,7 +610,7 @@ sub getseant {
 
   my $key = sprintf("seant%02i-%02i", $month, $day);
 
-  if (my ($d) = get_stransfer($year, $version, $key)) {
+  if (my ($d) = get_from_directorium('stransfer', $version, $year, $key)) {
     my %w = %{setupstring($lang, "Tempora/$d.txt")};
     $w = $w{'Ant 3'};
   }
