@@ -417,18 +417,19 @@ sub lectioE {
     @e = split("\n", $com{Evangelium});
   }
 
-  if ($e[0] =~ s/^@//) {
+  if ($version =~ /Please keep it here for now/ && $e[0] =~ s/^@//) {
 
     # if the Evangelium is just a cross-reference
     my ($w, $s) = split(/:/, $e[0]);
 
     if ($w) {$w .= '.txt';} 
 
+    if (!$ref{$s}) {$s =~ s/(?:LectioE)?/Evangelium/;}
     my %ref = %{setupstring($lang, $w)};
     @e = split("\n", $ref{$s});
   }
 
-  if (!$e[0]) {
+  if (!$e[0] || $e[0] =~ s/^@//) {
 
     # if the Evangelium is missing in the Sanctoral 
     my ($w, $s) = split(/:/, $e[0]);
