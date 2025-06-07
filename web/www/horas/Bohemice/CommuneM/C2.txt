@@ -116,3 +116,18 @@ R. Kterou zaslíbil Bůh těm, kteří jej milují.
 
 [Ant 3] (rubrica cisterciensis)
 On je pravý Svědek, * jenž pro Kristovo jméno prolil svou krev, který se nebál hrozeb soudců, ani nehledal slávu pozemské důstojnosti, ale šťastně došel do nebeského království.
+
+[Lectio9 in 4 loco]
+@Commune/C2:Lectio7 in 4 loco:s/A co vám .*//s
+
+[Lectio10 in 4 loco]
+@Commune/C2:Lectio7 in 4 loco:s/.* A co vám /A co vám /s 
+
+[Lectio10 in 4 loco] (rubrica cisterciensis)
+@Commune/C2:Lectio7 in 4 loco:s/.* A co vám /A co vám /s s/$/~/
+@Commune/C2:Lectio8 in 4 loco:s/Proto přikázal.*//
+
+[Lectio11 in 4 loco]
+@Commune/C2:Lectio8 in 4 loco
+(sed rubrica cisterciensis)
+@Commune/C2:Lectio8 in 4 loco:s/.*Proto přikázal/Proto přikázal/

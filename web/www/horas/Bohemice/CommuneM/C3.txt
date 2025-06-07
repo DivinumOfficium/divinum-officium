@@ -21,23 +21,131 @@ Zazáří spravedliví: * a jako jiskry v rákosí se rozběhnou. Budou soudit n
 @Commune/C3:Ant Vespera:s/Všichni Svatí/Svatí Mučedníci/ 
 
 [Ant MatutinumM]
-Oculi Dómini * respexérunt in páuperes, † cum peccatóres arcus suos in eos inténderent.;;10
-For theirs is the Kingdom of heaven * who love not their lives in this world, and have attained unto the reward of the Kingdom, and have washed their robes in the blood of the Lamb.;;60
-The blood * of the holy Martyrs was poured for Christ on earth, therefore they have obtained eternal rewards.;;63
-Avenge, O Lord, the blood of thy saints, which is shed over the Earth;;78
-Beati, * qui persecutionem patiuntur propter iustitiam, quoniam ipsorum est regnum coelorum;;259;254;255
+Oči Páně * pohlédly na chudé, † když na ně hříšníci napínali své luky.;;10
+Takových je totiž * království nebeské, neboť zavrhli světský život, ale dosáhli odměny království a svá roucha omyli v krvi Beránkově.;;60
+Krev svatých mučedníků * byla prolita na zemi pro Krista, proto obdrželi věčnou odměnu.;;63
+Pomsti, Pane, * krev svých Svatých, která je prolévána po zemi.;;78
+Blahoslavení, * kdo trpí pronásledování pro spravedlnost, neboť jejich jest království nebeské.;;259;254;255
+
+[Ant Matutinum] (rubrica cisterciensis)
+Podél proudů vod * zasadil vinici spravedlivých, a v zákoně Páně byla jejich vůle.;;1
+Hlásali * přikázání Páně a usazeni jsou na jeho svaté hoře.;;2
+@Commune/C2::4:s/svého svatého/své svaté/
+Ať se radují všichni, * kteří v tebe doufají, Hospodine, neboť ty žehnáš spravedlivým; štítem své dobré vůle jsi je korunoval.;;5
+@Commune/C2::6:s/jej/je/
+Svatým, kteří jsou na jeho zemi, * ukázal všechny své podivuhodné záměry mezi nimi.;;15
+@:Ant Vespera 3:4:s/$/;;23/
+Spravedliví však * budou žít navěky, a u Hospodina je jejich odměna.;;32
+Duše spravedlivých však * jsou v rukou Božích, a nedotknou se jich útrapy smrti.;;33
+Zazáří spravedliví * jako slunce v království jejich Otce, alleluja.;;45
+@Commune/C3::4:s/;1/;6/
+@Commune/C3:Ant Vespera 3:2:s/;;110/;;78/
+@Sancti/06-26:Ant 2:s/$/;;259;254;255/
 
 [Nocturn 3 Versum] (rubrica cisterciensis)
 V. Slavný je Bůh ve svých Svatých.
 R. Podivuhodný ve své Vznešenosti.
 
-[Responsory12]
-R. But the souls of the just are in the hand of God, and the torment of death shall not touch them. In the sight of the unwise they seemed to die
-* But they are in peace.
-V. God hath tried them, and found them worthy of himself.
-R. But they are in peace.
+[Lectio5]
+@Commune/C3:Lectio4:s/Svátky Mučedníků .*//s
+
+[Lectio6]
+@Commune/C3:Lectio4:s/.* Svátky Mučedníků /Svátky Mučedníků /s s/$/~/
+@Commune/C3:Lectio5:s/Avšak i Apoštol .*//s
+
+[Lectio7]
+@Commune/C3:Lectio5:s/.* Avšak i Apoštol /Avšak i Apoštol /s
+
+[Lectio8]
+@Commune/C3:Lectio6
+
+[Lectio9]
+@Commune/C3:Lectio7:s/Měli bychom .*//s
+
+[Lectio10]
+@Commune/C3:Lectio7:s/.* Měli bychom /Měli bychom /s s/$/~/
+@Commune/C3:Lectio8:s/Poslední .*//s
+(sed rubrica cisterciensis)
+@Commune/C3:Lectio8:s/, a království .*/.“/s
+
+[Lectio11]
+@Commune/C3:Lectio8:s/.* Poslední /Poslední /s s/$/~/
+@Commune/C3:Lectio9:s/Pán totiž praví.*//s
+
+[Lectio12]
+@Commune/C3:Lectio9:s/.* Pán totiž praví/Pán totiž praví/s s/\&teDeum .*//s
+
+[Responsory4_]
+R. Svatí skrze víru přemohli království, vykonali spravedlivé skutky, dosáhli vyplnění zaslíbení, a stali se silnými ve válce;
+* A všichni vydali svědectvím víry.
+V. Tábory cizinců vyplenili, unikli ostří meče.
+R. A všichni vydali svědectvím víry.
+
+[Responsory4C]
+R. Tvoji Svatí, Hospodine, podivuhodně došli na konec cesty, zachovali tvá přikázání, 
+* Aby shledáni byli nezranění v mocných vodách, objevila se suchá země; a v Rudém moři cesta bez překážek.
+V. Tvou vítěznou ruku chválili a spolu s tím opěvovali, Hospodine, tvé svaté jméno.
+R. Aby shledáni byli nezranění v mocných vodách, objevila se suchá země; a v Rudém moři cesta bez překážek.
+
+[Responsory4]
+@:Responsory4_
+(sed rubrica cisterciensis)
+@:Responsory4C
+
+[Responsory7] (rubrica cisterciensis)
+@Commune/C3:Responsory7:1-2
+V. Jejich paměť nebude opuštěna, a jejich jméno zůstane slavným navěky;
+@Commune/C3:Responsory7:4
+
+[Responsory8] (rubrica cisterciensis)
+R. Spravedliví však žijí navěky, jejich odměna je u Pána a Nejvyšší o ně pečuje;
+* A proto obdrží velkolepé království z ruky Páně.
+V. Bůh je vyzkoušel a shledal je hodnými sebe.
+R. A proto obdrží velkolepé království z ruky Páně.
 &Gloria
-R. But they are in peace.
+R. A proto obdrží velkolepé království z ruky Páně.
+
+[Responsory11_]
+R. Těla Svatých byla pohřbena v pokoji,
+* A jejich jména budou žít od pokolení do pokolení.
+V. Moudrost Svatých budou vyprávět národy, a jejich chválu bude pronášet celá Církev.
+R. A jejich jména budou žít od pokolení do pokolení.
+
+[Responsory11C]
+R. Duše spravedlivých jsou v rukou Božích, 
+* A nedotknou se jich již muka smrti. 
+V. Zdáli se být mrtví v očích lidí pošetilých, oni ovšem přebývají v pokoji.
+R. A nedotknou se jich již muka smrti. 
+
+[Responsory12]
+R. Duše spravedlivých jsou v rukou Božích, a nedotknou se jich již muka smrti. Zdáli se být mrtví v očích lidí pošetilých, 
+* Oni ovšem přebývají v pokoji.
+V. Bůh je pouze zkoušel a shledal, že ho jsou hodni.
+R. Oni ovšem přebývají v pokoji.
+&Gloria
+R. Oni ovšem přebývají v pokoji.
+
+[Lectio9 in 2 loco]
+@Commune/C3:Lectio7 in 2 loco:s/Proto také .*//s
+
+[Lectio10 in 2 loco]
+@Commune/C3:Lectio7 in 2 loco:s/.* Proto také /Proto také /s
+
+[Lectio9 in 3 loco]
+@Sancti/06-26:Lectio7
+(sed rubrica cisterciensis)
+@Sancti/06-26:Lectio7:s/Smysl je.*//
+
+[Lectio10 in 3 loco]
+@Sancti/06-26:Lectio8:s/Nebojte se .*//s
+
+[Lectio11 in 3 loco]
+@Sancti/06-26:Lectio8:s/.* Nebojte se /Nebojte se /s
+
+[Lectio12 in 3 loco]
+@Sancti/06-26:Lectio9:s/\&teDeum .*//s
+(sed rubrica cisterciensis)
+@Sancti/06-26:Lectio9:s/Neprodávají.*//
 
 [MM Capitulum]
 @Commune/C3:Capitulum Sexta

@@ -125,3 +125,18 @@ R. Vyprali si své oděvy,
 * A do běla si je vyprali v krvi Beránkově, Alleluja, alleluja, alleluja.
 V. Tito jsou, kdo přišli z velikého soužení, a vyprali si své oděvy:
 R. A do běla si je vyprali v krvi Beránkově, Alleluja, alleluja, alleluja.
+
+[Lectio9 in 4 loco]
+@Commune/C2:Lectio7 in 4 loco:s/A co vám .*//s
+
+[Lectio10 in 4 loco]
+@Commune/C2:Lectio7 in 4 loco:s/.* A co vám /A co vám /s 
+
+[Lectio10 in 4 loco] (rubrica cisterciensis)
+@Commune/C2:Lectio7 in 4 loco:s/.* A co vám /A co vám /s s/$/~/
+@Commune/C2:Lectio8 in 4 loco:s/Proto přikázal.*//
+
+[Lectio11 in 4 loco]
+@Commune/C2:Lectio8 in 4 loco
+(sed rubrica cisterciensis)
+@Commune/C2:Lectio8 in 4 loco:s/.*Proto přikázal/Proto přikázal/
