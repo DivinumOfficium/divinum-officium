@@ -762,7 +762,7 @@ sub lectio : ScriptFunc {
       !$w
     && $winner =~ /sancti/i
     && $commune =~ /^C/
-    && ( ($communetype =~ /^ex/i && $rank > 3)
+    && ( ($communetype =~ /^ex/i && ($rank > 3 || ($version =~ /Cist/i && $rank > 2.2)))
       || ($rule =~ /in (\d) Nocturno Lectiones ex/i && $1 eq $nocturn))
   ) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
