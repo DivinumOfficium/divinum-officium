@@ -399,50 +399,49 @@ sub brevis_monastic {
 }
 
 sub lectioE {
+
   my $lang = shift;
 
   my @e;
   my %w = columnsel($lang) ? %winner : %winner2;
   my %com = columnsel($lang) ? %commune : %commune2;
-  my $win = $winner; $win =~ s/(?:M|OP)//g; # no M or OP folder in missa
+  my $win = $winner;
+
+  $win =~ s/(?:M|OP)//g;    # no M or OP folder in missa
   my %missa = %{setupstring("../missa/$lang", $win)};
 
-  if (exists($w{LectioE})) {    #** get evangelium from Winner
-    @e = split("\n", $w{LectioE});
-  } elsif (exists($missa{Evangelium})) {  #** get evangelium from missa
+  if (exists($w{Evangelium})) {    #** get evangelium from Winner
+    @e = split("\n", $w{Evangelium});
+  } elsif (exists($missa{Evangelium})) {    #** get evangelium from missa
     @e = split("\n", $missa{Evangelium});
-  } elsif (exists($com{LectioE})) {    #** get evangelium from Common
-    @e = split("\n", $com{LectioE});
-  } elsif (exists($com{Evangelium})) {    #** same as before, other hash
+  } elsif (exists($com{Evangelium})) {      #** get evangelium from Common
     @e = split("\n", $com{Evangelium});
-  }
-
-  if ($version =~ /Please keep it here for now/ && $e[0] =~ s/^@//) {
-
-    # if the Evangelium is just a cross-reference
-    my ($w, $s) = split(/:/, $e[0]);
-
-    if ($w) {$w .= '.txt';} 
-
-    if (!$ref{$s}) {$s =~ s/(?:LectioE)?/Evangelium/;}
-    my %ref = %{setupstring($lang, $w)};
-    @e = split("\n", $ref{$s});
   }
 
   if (!$e[0] || $e[0] =~ s/^@//) {
 
-    # if the Evangelium is missing in the Sanctoral 
-    my ($w, $s) = split(/:/, $e[0]);
+    # if the Evangelium is missing in the Sanctoral or is just a cross-reference
+    my ($wref, $s) = split(/:/, $e[0]);
 
-    if ($w) {
-      $w .= '.txt';
+    if ($wref) {
+      $wref .= '.txt';
     } else {
-      $w = $winner;
+      $wref = $winner;
     }
-    $w =~ s/(?:M|OP)//g;    # there is no corresponding folder in missa for M or OP
-    $s =~ s/(?:LectioE)?/Evangelium/;
-    my %missa = %{setupstring("../missa/$lang", $w)};
-    @e = split("\n", $missa{$s});
+    $s ||= 'Evangelium';
+    my %wref = %{setupstring($lang, $wref)};
+    $wref =~ s/(?:M|OP)//g;    # there is no corresponding folder in missa for M or OP
+    my %mref = %{setupstring("../missa/$lang", $wref)};
+
+    if (exists($wref{$s})) {    #** get evangelium from Winner
+      @e = split("\n", $wref{$s});
+    } elsif (exists($mref{$s})) {    #** get evangelium from missa
+      @e = split("\n", $mref{$s});
+    } else {
+
+      # Add empty Gospel to avoid formatting issues
+      @e = ('Sequéntia ++ sancti Evangélii secúndum /:...:/', '!...', 'In illo témpore: /:...:/');
+    }
   }
 
   my $begin = shift @e;          # take first line

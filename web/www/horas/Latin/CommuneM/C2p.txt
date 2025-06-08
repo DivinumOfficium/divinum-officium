@@ -259,26 +259,6 @@ R. Allelúia, allelúia.
 [Lectio12 in 2 loco]
 @Commune/C2p:Lectio9 in 2 loco
 
-[LectioE in 2 loco]
-@Commune/C3p:LectioE
+[Evangelium in 2 loco]
+@Commune/C3p:Evangelium
 
-[Lectio9 in 4 loco]
-@Commune/C2:Lectio7 in 4 loco:s/Et quod .*//s
-
-[Lectio10 in 4 loco]
-@Commune/C2:Lectio7 in 4 loco:s/.* Et quod /Et quod /s 
-
-[Lectio10 in 4 loco] (rubrica cisterciensis)
-@Commune/C2:Lectio7 in 4 loco:s/.* Et quod /Et quod /s s/$/~/
-@Commune/C2:Lectio8 in 4 loco:s/Idcírco.*//
-
-[Lectio11 in 4 loco]
-@Commune/C2:Lectio8 in 4 loco
-(sed rubrica cisterciensis)
-@Commune/C2:Lectio8 in 4 loco:s/.*Idcírco/Idcírco/
-
-[Lectio12 in 4 loco]
-@Commune/C2:Lectio9 in 4 loco:s/\&teDeum .*//s
-
-[LectioE in 4 loco]
-@Commune/C2a-1:LectioE
