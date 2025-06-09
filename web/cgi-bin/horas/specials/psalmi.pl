@@ -90,17 +90,23 @@ sub psalmi_minor {
     if ($hora eq 'Completorium' && $dayofweek == 6 && $winner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat/) {
       $i = 12;
     }
-    if ($rule =~ /Psalmi\s*(minores)*\s*Dominica/i || $communerule =~ /Psalmi\s*(minores)*\s*Dominica/i) { $i = 0; }
-    if ($version =~ /1955|1960/ && $rule =~ /horas1960 feria/i) { $i = 2 * $dayofweek; }
-    if ($version =~ /1955|1960/ && $winner =~ /Sancti/i && $rank < 5) { $i = 2 * $dayofweek; }
 
-    #if ($winner =~ /tempora/i && $dayofweek > 0 && $winner{Rank} =~ /Dominica/i && $rank < 6
-    #  && $dayname[0] !~ /Nat/i) {$i = 2 * $dayofweek;}  #anticipated Sunday
-    if ( $version =~ /19(?:55|60)/
-      && ($winner =~ /sancti/i || $winner =~ /Nat[23]/i)
-      && $rank < 6
-      && $hora ne 'Completorium')
+    if ( $rule =~ /Psalmi\s*(minores)*\s*Dominica/i
+      || $communerule =~ /Psalmi\s*(minores)*\s*Dominica/i && $rule !~ /Psalmi\s*(?:minores)*\s*ex Psalterio/i)
     {
+      $i = 0;
+    }
+
+    if (
+      $version =~ /19(?:55|60)/
+      && (
+           $rule =~ /horas1960 feria/i
+        || ($winner =~ /Sancti/i && $rank < 5)
+        || ( ($winner =~ /sancti/i || $winner =~ /Nat[23]/i)
+          && $rank < 6
+          && $hora ne 'Completorium')
+      )
+    ) {
       $i = 2 * $dayofweek;
     }
 
@@ -175,7 +181,7 @@ sub psalmi_minor {
   if ($hora ne 'Completorium') {
     my ($w, $c) = getproprium("Ant $hora", $lang, 0, 1);
 
-    if (!$w) {
+    if (!$w && $rule !~ /Psalmi\s*(?:minores)*\s*ex Psalterio/i) {
       ($w, $c) = getanthoras($lang);
     }
 
@@ -184,8 +190,9 @@ sub psalmi_minor {
       $comment = $c;
     }
 
-    if (($rule =~ /Psalmi\s*(?:minores)*\s*Dominica/i || $communerule =~ /Psalmi\s*(?:minores)*\s*Dominica/i)
-      && $version !~ /Trident/i)
+    if ( ($rule =~ /Psalmi\s*(?:minores)*\s*Dominica/i || $communerule =~ /Psalmi\s*(?:minores)*\s*Dominica/i)
+      && $version !~ /Trident/i
+      && $rule !~ /Psalmi\s*(?:minores)*\s*ex Psalterio/i)
     {
       $feastflag = 1;
     }
