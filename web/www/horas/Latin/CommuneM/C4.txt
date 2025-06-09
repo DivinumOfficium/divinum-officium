@@ -56,6 +56,10 @@ R. Qui in diébus suis plácuit Deo, et invéntus est justus.
 @Commune/C4::7-9
 @:AntMatutinumM:2-5
 
+[Ant Matutinum] (rubrica cisterciensis)
+@CommuneM/C2::1-12
+Amávit eum Dóminus, * et ornávit eum: stolam glóriæ índuit eum, et ad portas paradísi coronávit eum.;;256;257;258
+
 [Lectio1]
 @Commune/C4:Lectio1:s/-7/-4/ s/5 .*//s
 
@@ -64,11 +68,29 @@ R. Qui in diébus suis plácuit Deo, et invéntus est justus.
 8 Diáconos simíliter pudícos, non bilíngues, non multo vino déditos, non turpe lucrum sectántes:
 9 habéntes mystérium fídei in consciéntia pura.
 
+[Lectio2] (rubrica cisterciensis)
+@Commune/C4:Lectio1:s/.*5 /!1 Tim 3:5-9\n5 /s
+
 [Lectio3]
 @Commune/C4:Lectio2
 
+[Lectio3] (rubrica cisterciensis)
+!1 Tim 4:12-16
+12 Exémplum esto fidélium in verbo, in conversatióne, in charitáte, in fide, in castitáte.
+13 Dum vénio, atténde lectióni, exhortatióni, et doctrínæ.
+14 Noli neglígere grátiam, quæ in te est, quæ data est tibi per prophetíam, cum impositióne mánuum presbytérii.
+15 Hæc meditáre, in his esto: ut proféctus tuus maniféstus sit ómnibus.
+16 Atténde tibi, et doctrínæ: insta in illis. Hoc enim fáciens, et teípsum salvum fácies, et eos qui te áudiunt.
+
 [Lectio4]
 @Commune/C4:Lectio3
+
+[Lectio4] (rubrica cisterciensis)
+!1 Tim 6:13-16
+13 Præcípio tibi coram Deo, qui vivíficat ómnia, et Christo Jesu, qui testimónium réddidit sub Póntio Piláto, bonam confessiónem,
+14 ut serves mandátum sine mácula, irreprehensíbile usque in advéntum Dómini nostri Jesu Christi,
+15 quem suis tempóribus osténdet beátus et solus potens, Rex regum, et Dóminus dominántium:
+16 qui solus habet immortalitátem, et lucem inhábitat inaccessíbilem: quem nullus hóminum vidit, sed nec vidére potest: cui honor, et impérium sempitérnum. Amen.
 
 [Responsory4]
 R. Ecce vere Isrælíta, in quo dolus non est invéntus: † qui probátus repértus est sacérdos magnus
@@ -76,10 +98,16 @@ R. Ecce vere Isrælíta, in quo dolus non est invéntus: † qui probátus repé
 V. Státuit ei Dóminus testaméntum sempitérnum, † et dedit illi sacerdótium magnum.
 R. Juxta órdinem Melchísedech.
 
+[Responsory4] (rubrica cisterciensis)
+R. Iste Sanctus digne in memóriam vértitur hóminum, qui ad gáudium tránsiit Angelórum; 
+* Quia in hac peregrinatióne solo córpore constitútus, cogitatióne et aviditáte in illa ætérna pátria conversátus est.
+V. Vínculis carnis absolútus taléntum, sibi créditum Dómino suo duplicátum reportávit.
+R. Quia in hac peregrinatióne solo córpore constitútus, cogitatióne et aviditáte in illa ætérna pátria conversátus est.
+
 [Lectio5]
 @Commune/C4:Lectio4
 
-[Responsory5]
+[Responsory5] (nisi rubrica cisterciensis)
 @Commune/C4:Responsory4
 
 [Lectio6]
@@ -87,16 +115,32 @@ R. Juxta órdinem Melchísedech.
 
 [Responsory6]
 @Commune/C4:Responsory5
+(sed rubrica cisterciensis)
+@Commune/C4:Responsory4
 
 [Lectio7]
 @Commune/C4:Lectio6:s/ Dúplici .*//s
 
-[Responsory7]
+[Responsory7] (nisi rubrica cisterciensis)
 @Commune/C4:Responsory6
 
 [Lectio8]
 @Commune/C4:Lectio6:s/.* Dúplici /Dúplici /s s/$/~/
 Lauda ergo post perículum, prǽdica secúrum. Lauda navigántis felicitátem, sed cum pervénit ad portum; lauda ducis virtútem, sed cum perdúctus est ad triúmphum.
+
+[Lectio5] (rubrica cisterciensis)
+Sermo sancti Máximi Epíscopi
+!Ex Homilia 59. quae est 2. de S. Eusebio.
+Beáti Patris N. mérita jam in tuto pósita secúri magnificémus: qui gubernáculum fídei viríliter tenens, ánchoram spei tranquílla jam in statióne compósuit, et plenam cœléstibus divítiis et ætérnis mércibus navem optáto in líttore collocávit: qui contra omnes adversários scutum timóris Dei támdiu infatigabíliter ténuit, donec ad victóriam perveníret.
+	
+[Lectio6] (rubrica cisterciensis)
+Quid enim fuit totus vitæ illíus cursus, nisi uníus cum vígili hoste conflíctus? Quantis hic cæcis a via veritátis errántibus, et de summa jam in profúndum rupe pendéntibus, amíssum réddidit visum, et illum, quo Christus viderétur, reparávit intúitum?
+	
+[Lectio7] (rubrica cisterciensis)
+Quantórum áuribus surdis, et infidelitátis obturatióne damnátis, ad percipiéndam vocem cœléstium mandatórum, pretiósum infúdit audítum, ut vocánti Deo ad misericórdiam respondérent per obediéntiam? Quantos intrínsecus vulnerátos, Angélici oris arte et oratiónum, ab infirmitáte curávit?
+
+[Lectio8] (rubrica cisterciensis)
+Quantos per longam incúriam peccáti labe resolútos, et quadam lepræ contagióne perfúsos, castigatiónibus et exhortatiónibus expiándo, Deo in se operánte mundávit? Quantórum ánimas vivéntes in córpore, jam defúnctas, et delictórum mole óbrutas ac sepúltas, ad emendatiónem tamquam ad lucem vocándo, Deo resuscitávit; ut Dómini sui admirándus imitátor, jam mórtuas Deo, e contrário mortíficet vitáli morte peccáto?
 
 [Responsory8]
 R. Justum dedúxit Dóminus per vias rectas, † et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum;
@@ -104,11 +148,23 @@ R. Justum dedúxit Dóminus per vias rectas, † et osténdit illi regnum Dei, e
 V. Custodívit eum ab inimícis et a seductóribus tutávit illum.
 R. Honestávit illum in labóribus suis.
 
+[Responsory8] (rubrica cisterciensis)
+R. Fidélis namque, ac prudens dispensátor in magni patrisfamílias domo constitútus erat, 
+* Ut consérvis suis in témpore mensúram trítici erogáret.
+V. Pro salúte, et augménto gregis sibi commíssi cura pervígili sollícitus erat:
+R. Ut consérvis suis in témpore mensúram trítici erogáret.
+
 [Lectio9]
 @Commune/C4:Lectio7:s/ Ecce .*//s
 
 [Responsory9]
 @Commune/C4:Responsory7
+
+[Responsory9] (rubrica cisterciensis)
+R. Magnificávit eum in conspéctu regum,
+* Et dedit illi corónam glóriæ.
+V. Státuit illi testaméntum sempitérnum, et beatificávit illum.
+R. Et dedit illi corónam glóriæ.
 
 [Lectio10]
 @Commune/C4:Lectio7:s/.* Ecce /Ecce /s s/$/~/
@@ -116,6 +172,12 @@ R. Honestávit illum in labóribus suis.
 
 [Responsory10]
 @Commune/C4:Responsory8
+
+[Responsory10] (rubrica cisterciensis)
+R. Justum dedúxit Dóminus per vias rectas, † et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum;
+* Honestávit illum in labóribus suis.
+V. Magnificávit eum in conspéctu regum, et dedit illi corónam glóriæ.
+R. Honestávit illum in labóribus suis.
 
 [Lectio11]
 @Commune/C4:Lectio8:s/.* Sed homo /Sed homo /s
@@ -126,14 +188,22 @@ R. Iste sanctus digne in memóriam vértitur hóminum, qui ad gáudium tránsiit
 V. Vínculis carnis absolútus taléntum, sibi créditum Dómino suo duplicátum reportávit.
 R. In illa ætérna pátria conversátus est.
 
+[Responsory11] (rubrica cisterciensis)
+@CommuneM/C5:Responsory11_
+
 [Lectio12]
 @Commune/C4:Lectio9
+(sed rubrica cisterciensis)
+@Commune/C4:Lectio9:s/Et sunt.*//
 
 [Responsory12]
 R. Elégit te Dóminus sacerdótem sibi
 * Ad sacrificándum ei hóstiam laudis.
 V. Ímmola Deo sacrifícium laudis, et redde Altíssimo vota tua.
 R. Ad sacrificándum ei hóstiam laudis.
+
+[Responsory12] (rubrica cisterciensis)
+@Commune/C4:Responsory8
 
 [MM Capitulum]
 @Commune/C4:Capitulum Sexta
