@@ -59,6 +59,8 @@ R. Qui in diébus suis plácuit Deo, et invéntus est justus.
 [Ant Matutinum] (rubrica cisterciensis)
 @CommuneM/C2::1-12
 Amávit eum Dóminus, * et ornávit eum: stolam glóriæ índuit eum, et ad portas paradísi coronávit eum.;;256;257;258
+(sed tempore paschali)
+Allelúia, * allelúia, allelúia.;;256;257;258
 
 [Lectio1]
 @Commune/C4:Lectio1:s/-7/-4/ s/5 .*//s
@@ -103,6 +105,9 @@ R. Iste Sanctus digne in memóriam vértitur hóminum, qui ad gáudium tránsiit
 * Quia in hac peregrinatióne solo córpore constitútus, cogitatióne et aviditáte in illa ætérna pátria conversátus est.
 V. Vínculis carnis absolútus taléntum, sibi créditum Dómino suo duplicátum reportávit.
 R. Quia in hac peregrinatióne solo córpore constitútus, cogitatióne et aviditáte in illa ætérna pátria conversátus est.
+
+[Responsory4] (tempore paschali et rubrica cisterciensis)
+@CommuneM/C1p:Responsory11
 
 [Lectio5]
 @Commune/C4:Lectio4
@@ -154,6 +159,9 @@ R. Fidélis namque, ac prudens dispensátor in magni patrisfamílias domo consti
 V. Pro salúte, et augménto gregis sibi commíssi cura pervígili sollícitus erat:
 R. Ut consérvis suis in témpore mensúram trítici erogáret.
 
+[Responsory8] (tempore paschali et rubrica cisterciensis)
+@Tempora/Pasc0-2:Responsory2
+
 [Lectio9]
 @Commune/C4:Lectio7:s/ Ecce .*//s
 
@@ -204,6 +212,14 @@ R. Ad sacrificándum ei hóstiam laudis.
 
 [Responsory12] (rubrica cisterciensis)
 @Commune/C4:Responsory8
+
+[Responsory12] (tempore paschali et rubrica cisterciensis)
+R. In diadémate cápitis Aaron lápides pretiósi fulgébant,
+* Dum perficerétur opus Dei, * Allelúia, allelúia, allelúia.
+V. Coróna áurea super caput ejus, expréssa signo sanctitátis.
+R. Dum perficerétur opus Dei.
+&Gloria
+R. Allelúia, allelúia, allelúia.
 
 [MM Capitulum]
 @Commune/C4:Capitulum Sexta

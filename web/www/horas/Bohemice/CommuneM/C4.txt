@@ -27,6 +27,8 @@ Let your loins * be girt, and lamps burning in your hands.;;256;257;258
 [Ant Matutinum] (rubrica cisterciensis)
 @CommuneM/C2::1-12
 Hospodin si jej zamiloval * a ozdobil jej; štolou slávy jej oděl, a při branách ráje jej korunoval.;;256;257;258
+(sed tempore paschali)
+Alleluja, * alleluja, alleluja.;;256;257;258
 
 [Lectio2]
 @Commune/C4:Lectio1:s/.*5 /!1 Tim 3:5-9\n5 /s
@@ -92,6 +94,9 @@ R. Tento Svatý se právem vtisknul do paměti lidí, když odešel k radosti an
 V. Jeho tělesná pouta byla rozvázána, a talent, který mu byl svěřen, Hospodinu přinesl dvojnásobný.
 R. Neboť v tomto putování byl upevněn pouze tělem, svým poznáním i touhami již přebýval v oné věčné vlasti.
 
+[Responsory4] (tempore paschali et rubrica cisterciensis)
+@CommuneM/C1p:Responsory11
+
 [Responsory8]
 R. Spravedlivého vedl Hospodin pro správných cestách, a ukázal mu království Boží, a dal mu poznat svaté věci; 
 * Uctil jej v jeho útrapách.
@@ -103,6 +108,9 @@ R. On byl totiž jako věrný a moudrý správce ustanoven v domě velkého hosp
 * Aby svým spoluslužebníkům vydával po měřici pšenice.
 V. Ku spáse a rozmnožení stádce sobě svěřeného v přebdělé péči byl velmi starostliv;
 R. Aby svým spoluslužebníkům vydával po měřici pšenice.
+
+[Responsory8] (tempore paschali et rubrica cisterciensis)
+@Tempora/Pasc0-2:Responsory2
 
 [Responsory9] (rubrica cisterciensis)
 R. Vyvýšil jej před zraky králů,
@@ -122,17 +130,28 @@ R. Tento Svatý se právem vtisknul do paměti lidí, když odešel k radosti an
 V. Jeho tělesná pouta byla rozvázána, a talent, který mu byl svěřen, Hospodinu přinesl dvojnásobný.
 R. již přebýval v oné věčné vlasti.
 
+[Responsory11] (rubrica cisterciensis)
+@CommuneM/C5:Responsory11_
+
 [Responsory12]
-R. The Lord has chosen you to be his priest 
-* To offer to him the sacrifice of praise.
-V. Offer to God the sacrifice of praise: and pay thy vows to the most High.
-R. To offer to him the sacrifice of praise.
+R. Vyvolil si jej Hospodin za svého kněze, 
+* Aby mu přinášel oběť chvály.
+V. Obětuj Bohu oběť chvály, a vzdej Nejvyššímu svou přísahu.
+R. Aby mu přinášel oběť chvály
 
 [Responsory12] (rubrica cisterciensis)
 @Commune/C4:Responsory8
 
+[Responsory12] (tempore paschali et rubrica cisterciensis)
+R. Na koruně na hlavě Áaronově se blyštěly drahé kameny,
+* Když vykonával služby Boží, * Alleluja, alleluja, alleluja.
+V. Zlatá koruna na jeho hlavě, jasné znamení svatosti.
+R. Když vykonával služby Boží.
+&Gloria
+R. Alleluja, alleluja, alleluja.
+
 [MM Capitulum]
 @Commune/C4:Capitulum Sexta
 _
-V. The righteous shall grow as the lily.
-R. Yea, he shall flourish in the presence of the Lord for ever.
+V. Spravedlivý poroste jako lilium.
+R. A rozkvete navěky před Hospodinem.
