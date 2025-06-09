@@ -24,34 +24,112 @@ The Lord * sanctified him in his faith, and meekness, and showed him his glory.;
 The just man * shall spring as the lily: and will flower forever before the Lord.;;97
 Let your loins * be girt, and lamps burning in your hands.;;256;257;258
 
+[Ant Matutinum] (rubrica cisterciensis)
+@CommuneM/C2::1-12
+Hospodin si jej zamiloval * a ozdobil jej; štolou slávy jej oděl, a při branách ráje jej korunoval.;;256;257;258
+
 [Lectio2]
 @Commune/C4:Lectio1:s/.*5 /!1 Tim 3:5-9\n5 /s
-8 Deacons in like manner chaste, not double tongued, not given to much wine, not greedy of filthy lucre: 
-9 Holding the mystery of faith in a pure conscience.
+8 Totéž platí o jáhnech: mají to být lidé důstojní, ne obojetní v řeči, ne oddaní vínu, ne lační špinavého zisku,
+9 kteří uchovávají tajemné pravdy víry v čistém svědomí.
+
+[Lectio2] (rubrica cisterciensis)
+@Commune/C4:Lectio1:s/.*5 /!1 Tim 3:5-9\n5 /s
+
+[Lectio3] (rubrica cisterciensis)
+!1 Tim 4:12-16
+12 Buď pro věřící vzorem v řeči i v chování, v lásce, ve víře a v čistotě.
+13 Než přijdu, věnuj se čtení, napomínání, vyučování.
+14 Nenech v sobě ležet ladem Boží dar, který ti byl dán prorockým vnuknutím a vzkládáním rukou starších.
+15 Vezmi si to k srdci a v tom žij, aby tvé pokroky byly všem zřejmé.
+16 Dávej si pozor sám na sebe i na to, čemu učíš. Buď v tom vytrvalý. Když si tak budeš počínat, povede to ke spáse jak tebe, tak tvé posluchače.
+
+[Lectio4] (rubrica cisterciensis)
+!1 Tim 6:13-16
+13 Před Bohem, který všemu dává život, a před Kristem Ježíšem, který před Ponciem Pilátem vydal slavnostní svědectví, ti nařizuji:
+14 Uchovej nauku bez poskvrny a bez úhony až do slavného příchodu našeho Pána Ježíše Krista.
+15 Ten příchod nám ukáže ve svůj čas blahoslavený a jediný Panovník, Král králů a Pán pánů.
+16 On jediný má nesmrtelnost a přebývá v nepřístupném světle. Nikdo z lidí ho neviděl, ani uvidět nemůže. Jemu buď čest a vláda navěky! Amen.
+
+[Lectio5] (rubrica cisterciensis)
+Řeč svatého Maxima Biskupa
+!Z Homilie 59., jež jest druhá o sv. Eusebiovi.
+Zásluhy blaženého Otce N. již bezpečně uložené i my bezpečně vychvalujme; kormidlo víry neboť statečně držel, kotvu naděje již spustil do klidného přístavu, a loď plnou nebeských pokladů a věčného zboží přivedl k vytouženému pobřeží; štít bázně Boží proti všem nepřátelům on neúnavně držel tak dlouho, dokud nedošel vítězství. 	
+
+[Lectio6] (rubrica cisterciensis)
+Jaký však byl celý průběh jeho života, nežli souboj jednoho člověka s bdělým nepřítelem? Kolika on slepým, jež zbloudili z cesty pravdy a z nejvyššího útesu již visí nad hlubinou, navrátil zrak, který byli pozbyli, a napravil jejich pohled, aby uzřeli Krista?	
+
+[Lectio7] (rubrica cisterciensis)
+Kolika uším hluchých a ucpávkou nevěrnosti odsouzených vlil předrahý sluch, takže uslyšeli hlas nebeských přikázání, aby na volání Boží k milosrdenství odpověděli poslušností? Kolik vnitřně zraněných jakoby andělskými ústy a modlitbami z nemoci uzdravil? 	
+
+[Lectio8] (rubrica cisterciensis)
+Kolik takových, jež pro dlouhou nedbalost upadli do zkázy hříchu, a jakoby prožráni byli nákazou lepry, pak svým káráním a povzbuzováním napravil, a Božím působením v sobě očistil? Kolik duší, jež žily sice v těle, ale byli již mrtvé, tíhou hříchů přemožené a pohřbené, svým povoláním k nápravě jako ke světlu, Bohu vzkřísil; aby obdivuhodný napodobitel svého Pána duše již mrtvé Bohu <i>přivedl,</i> a naopak umrtvil v nich smrt hříchu?
+
+[Lectio9]
+@Commune/C4:Lectio7:s/ Podívejme .*//s
+
+[Lectio10]
+@Commune/C4:Lectio7:s/.* Podívejme /Podívejme /s s/$/~/
+@Commune/C4:Lectio8:s/ Avšak tento .*//s
+
+[Lectio11]
+@Commune/C4:Lectio8:s/.* Avšak tento /Avšak tento /s
+
+[Lectio12]
+@Commune/C4:Lectio9
+(sed rubrica cisterciensis)
+@Commune/C4:Lectio9:s/A jsou i tací.*//
 
 [Responsory4]
-R. Behold an Israelite indeed, in whom there is found no guile: 
-* According to the Order of Melchisedech.
-V. He made an everlasting covenant with him, and gave him the great priesthood.
-R. According to the Order of Melchisedech.
+R. Ejhle, pravý Israelita, v němž nebyla nalezena lest; byl vyzkoušen a shledán veleknězem: 
+* Podle řádu Melchisedechova.
+V. Ustanvil mu Hospodin věčnou smlouvu, a dal mu velekněžství.
+R. Podle řádu Melchisedechova.
+
+[Responsory4] (rubrica cisterciensis)
+R. Tento Svatý se právem vtisknul do paměti lidí, když odešel k radosti andělské; 
+* Neboť v tomto putování byl upevněn pouze tělem, svým poznáním i touhami již přebýval v oné věčné vlasti.
+V. Jeho tělesná pouta byla rozvázána, a talent, který mu byl svěřen, Hospodinu přinesl dvojnásobný.
+R. Neboť v tomto putování byl upevněn pouze tělem, svým poznáním i touhami již přebýval v oné věčné vlasti.
 
 [Responsory8]
-R. The Lord guided the just in right paths, and showed him the kingdom of God, and gave him the knowledge of the holy things, 
-* He made him honourable in his labours.
-V. She kept him safe from his enemies, and she defended him from seducers.
-R. He made him honourable in his labours.
+R. Spravedlivého vedl Hospodin pro správných cestách, a ukázal mu království Boží, a dal mu poznat svaté věci; 
+* Uctil jej v jeho útrapách.
+V. Bránil jej před nepřáteli, a od svůdníků jej ochránil.
+R. Uctil jej v jeho útrapách.
 
-[Responsory11]
-R. This a saint whose memory is deservedly preserved among men, who has passed into the joys of the angels; whose body alone was in this pilgrimage of life, in his thoughts and desires, 
-* His conversation was with that eternal country.
-V. Set free from the chains of the body, he rendered to the Lord double the talents which had been loaned to him.
-R. His conversation was with that eternal country. 
+[Responsory8] (rubrica cisterciensis)
+R. On byl totiž jako věrný a moudrý správce ustanoven v domě velkého hospodáře, 
+* Aby svým spoluslužebníkům vydával po měřici pšenice.
+V. Ku spáse a rozmnožení stádce sobě svěřeného v přebdělé péči byl velmi starostliv;
+R. Aby svým spoluslužebníkům vydával po měřici pšenice.
+
+[Responsory9] (rubrica cisterciensis)
+R. Vyvýšil jej před zraky králů,
+* A dal mu korunu slávy.
+V. Ustanovil mu věčné svědectví, a blahoslavil jej.
+R. A dal mu korunu slávy.
+
+[Responsory10] (rubrica cisterciensis)
+R. Spravedlivého vedl Hospodin pro správných cestách, a ukázal mu království Boží, a dal mu poznat svaté věci; 
+* Uctil jej v jeho útrapách.
+V. Vyvýšil jej před zraky králů, a dal mu korunu slávy.
+R. Uctil jej v jeho útrapách.
+
+[Responsory11] 
+R. Tento Svatý se právem vtisknul do paměti lidí, když odešel k radosti andělské; neboť v tomto putování byl upevněn pouze tělem, svým poznáním i touhami 
+* již přebýval v oné věčné vlasti.
+V. Jeho tělesná pouta byla rozvázána, a talent, který mu byl svěřen, Hospodinu přinesl dvojnásobný.
+R. již přebýval v oné věčné vlasti.
 
 [Responsory12]
 R. The Lord has chosen you to be his priest 
 * To offer to him the sacrifice of praise.
 V. Offer to God the sacrifice of praise: and pay thy vows to the most High.
 R. To offer to him the sacrifice of praise.
+
+[Responsory12] (rubrica cisterciensis)
+@Commune/C4:Responsory8
 
 [MM Capitulum]
 @Commune/C4:Capitulum Sexta
