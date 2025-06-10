@@ -1,42 +1,24 @@
 @CommuneM/C5
 
-[Officium]
-@Commune/C5b
-
-[Oratio]
-@Commune/C5b
-
-[Lectio1] (rubrica cisterciensis)
-@CommuneM/C4:Lectio1 in 2 loco
-
-[Lectio2] (rubrica cisterciensis)
-@CommuneM/C4:Lectio2 in 2 loco
-
-[Lectio3] (rubrica cisterciensis)
-@CommuneM/C4:Lectio3 in 2 loco
-
-[Lectio4] (rubrica cisterciensis)
-@CommuneM/C4:Lectio4 in 2 loco
-
 [Lectio9]
 @Commune/C1:Lectio7
 (sed rubrica cisterciensis)
-@Commune/C1:Lectio7:s/Jesus autem.*//
+@Commune/C1:Lectio7:s/Ježíš jim.*//
 
 [Lectio10]
-@Commune/C1:Lectio8:s/ Locus .*//s
+@Commune/C1:Lectio8:s/ To místo .*//s
 (sed rubrica cisterciensis)
-@Commune/C1:Lectio7:s/.*Jesus autem/Jesus autem/
+@Commune/C1:Lectio7:s/.*Ježíš jim/Ježíš jim/
 
 [Lectio11]
-@Commune/C1:Lectio8:s/.* Locus /Locus /s
+@Commune/C1:Lectio8:s/.* To místo /To místo /s
 (sed rubrica cisterciensis)
-@Commune/C1:Lectio8:s/ Locus .*//s
+@Commune/C1:Lectio8:s/ To místo .*//s
 
 [Lectio12]
 @Commune/C1:Lectio9
 (sed rubrica cisterciensis)
-@Commune/C1:Lectio8:s/.* Locus /Locus /s
+@Commune/C1:Lectio8:s/.* To místo /To místo /s
 
 [Evangelium]
 @Commune/C5b
@@ -55,23 +37,23 @@
 @Commune/C4:Lectio9 in 4 loco:s/.* Videámus /Videámus /s
 
 [Lectio9 in 3 loco]
-@Commune/C1:Lectio7 in 2 loco:s/ In hac .*//s
+@Commune/C1:Lectio7 in 2 loco:s/ Pán nás .*//s
 
 [Lectio10 in 3 loco]
-@Commune/C1:Lectio7 in 2 loco:s/.* In hac /In hac /s s/$/~/
-@Commune/C1:Lectio8 in 2 loco:s/ Nemo .*//s
+@Commune/C1:Lectio7 in 2 loco:s/.* Pán nás /Pán nás /s s/$/~/
+@Commune/C1:Lectio8 in 2 loco:s/ Ovšem .*//s
 
 [Lectio11 in 3 loco]
-@Commune/C1:Lectio8 in 2 loco:s/.* Nemo /Nemo /s s/$/~/
-@Commune/C1:Lectio9 in 2 loco:s/ Sciéndum .*//s
+@Commune/C1:Lectio8 in 2 loco:s/.* Ovšem /Ovšem /s s/$/~/
+@Commune/C1:Lectio9 in 2 loco:s/ Musíme tedy .*//s
 
 [Lectio12 in 3 loco]
-@Commune/C1:Lectio9 in 2 loco:s/.* Sciéndum /Sciéndum /s
+@Commune/C1:Lectio9 in 2 loco:s/.* Musíme tedy /Musíme tedy /s
 
 [Evangelium in 3 loco]
-Léctio sancti Evangélii secúndum Matthǽum
-!Matt 19:27-29
-In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Jesus autem dixit illis: Amen dico vobis, quod vos, qui secúti estis me, in regeneratióne cum séderit Fílius hóminis in sede Majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. Et omnis qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros propter nomen meum, céntuplum accípiet, et vitam ætérnam possidébit.
+Čtení svatého Evangelia podle Matouše.
+!Mat 19:27-29
+Za onoho času řekl Petr Ježíšovi: Hle, opustili jsme vše a následujeme tebe. Co tedy bude s námi? Ježíš jim odpověděl: „Amen, pravím vám: Až Syn člověka zasedne na svůj slavný trůn při obnovení světa, usednete také vy, kteří jste mě následovali, na dvanáct trůnů jako soudci dvanácti israelských kmenů. A každý, kdo opustil domy nebo bratry nebo sestry nebo otce nebo matku nebo děti nebo pole kvůli mně, dostane stokrát víc a za podíl bude mít život věčný.
 
 [Lectio9 in 4 loco]
 Léctio sancti Evangélii secúndum Matthǽum

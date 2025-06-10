@@ -406,6 +406,10 @@ sub lectioE {
   my %w = columnsel($lang) ? %winner : %winner2;
   my %com = columnsel($lang) ? %commune : %commune2;
   my $win = $winner;
+  my $evang = "Evangelium";
+
+  if ($rule =~ qr/in 3 Nocturno Lectiones ex Commune in (\d+) loco/i) {
+      $evang .= " in $1 loco";}
 
   $win =~ s/(?:M|OP)//g;    # no M or OP folder in missa
   my %missa = %{setupstring("../missa/$lang", $win)};
@@ -414,6 +418,8 @@ sub lectioE {
     @e = split("\n", $w{Evangelium});
   } elsif (exists($missa{Evangelium})) {    #** get evangelium from missa
     @e = split("\n", $missa{Evangelium});
+  } elsif (exists($com{$evang})) {      #** get evangelium in ? loco from Common
+    @e = split("\n", $com{$evang});
   } elsif (exists($com{Evangelium})) {      #** get evangelium from Common
     @e = split("\n", $com{Evangelium});
   }

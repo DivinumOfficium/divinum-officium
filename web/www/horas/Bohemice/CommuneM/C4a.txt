@@ -38,11 +38,11 @@ R. Alleluja, alleluja, alleluja.
 @Commune/C4a:Lectio7 in 3 loco
 
 [Lectio10 in 3 loco]
-@Commune/C4a:Lectio8 in 3 loco:s/ Igitur .*//s
+@Commune/C4a:Lectio8 in 3 loco:s/ Tedy ten.*//s
 
 [Lectio11 in 3 loco]
-@Commune/C4a:Lectio8 in 3 loco:s/.* Igitur /Igitur /s s/$/~/s
-@Commune/C4a:Lectio9 in 3 loco:s/ Non ergo .*//s
+@Commune/C4a:Lectio8 in 3 loco:s/.* Tedy ten/Tedy ten/s s/$/~/s
+@Commune/C4a:Lectio9 in 3 loco:s/ Ani to tak .*//s
 
 [Lectio12 in 3 loco]
-@Commune/C4a:Lectio9 in 3 loco:s/.* Non ergo /Non ergo /s
+@Commune/C4a:Lectio9 in 3 loco:s/.* Ani to tak /Ani to tak /s
