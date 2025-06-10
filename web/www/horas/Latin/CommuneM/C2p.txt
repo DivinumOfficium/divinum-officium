@@ -40,11 +40,26 @@ R. Et apud Dóminum est merces eórum, allelúia.
 ;;95
 @Commune/C1p::7 s/;;74/;;256;257;258/
 
+[Ant Matutinum] (rubrica cisterciensis)
+Allelúia, * allelúia, Allelúia.;;1
+;;2
+;;4
+;;5
+;;8
+;;10
+Allelúia, * allelúia, Allelúia.;;14
+;;20
+;;23
+;;63
+;;64
+;;91
+Allelúia, * allelúia, Allelúia.;;256;257;258
+
 [Nocturn 1 Versum] (rubrica cisterciensis)
 @CommuneM/C3::s/\.$/, allelúia.$/g
 
 [Nocturn 2 Versum] (rubrica cisterciensis)
-@CommuneM/C3::s/\.$/, allelúia.$/g
+@CommuneM/C3::s/\.$/, allelúia./gm
 
 [Nocturn 3 Versum] (rubrica cisterciensis)
 @CommuneM/C3::s/\.$/, allelúia.$/g
@@ -76,35 +91,71 @@ De libro Sapiéntiæ
 20 sumet scutum inexpugnábile æquitátem.
 21 Acuet autem duram iram in lánceam, et pugnábit cum illo orbis terrárum contra insensátos.
 
+[Responsory1] (rubrica cisterciensis)
+@CommuneM/C1p:Responsory11
+
+[Responsory2] (rubrica cisterciensis)
+@Commune/C2
+
+[Responsory3] (rubrica cisterciensis)
+@CommuneM/C2:Responsory6
+
 [Responsory4]
 @Tempora/Pasc0-2:Responsory2:1-4
 
 [Lectio5]
 @Commune/C2p:Lectio4
+(sed rubrica cisterciensis)
+@Commune/C2p:Lectio4 in 2 loco
+
+[Responsory5] (rubrica cisterciensis)
+@CommuneM/C1p:Responsory7
 
 [Lectio6]
 @Commune/C2p:Lectio5:s/Éadem .*//s
+(sed rubrica cisterciensis)
+@Commune/C2p:Lectio5 in 2 loco:s/Inexpugnábilem.*//
 
 [Responsory6]
 @Commune/C2p:Responsory5
+(sed rubrica cisterciensis)
+@Commune/C1p:Responsory2
 
 [Lectio7]
 @Commune/C2p:Lectio5:s/.* Éadem /Éadem /s
 
+[Lectio7] (rubrica cisterciensis)
+@Commune/C2p:Lectio5 in 2 loco:s/.*Inexpugnábilem/Inexpugnábilem/ s/$/~/
+@Commune/C2p:Lectio6 in 2 loco:s/Pretiósa mors.*//
+
 [Responsory7]
 @Commune/C2p:Responsory6
 
+[Responsory7] (rubrica cisterciensis)
+R. Justórum ánimæ in manu Dei sunt,
+* Et non tanget illos torméntum mortis, allelúia, allelúia. 
+V. Visi sunt óculis insipiéntium mori, illi autem sunt in pace.
+R. Et non tanget illos torméntum mortis, allelúia, allelúia. 
+
 [Lectio8]
 @Commune/C2p:Lectio6
+(sed rubrica cisterciensis)
+@Commune/C2p:Lectio6 in 2 loco:s/.*Pretiósa mors/Pretiósa mors/
 
 [Responsory8]
 R. Lætábitur justus in Dómino, et sperábit in eo, et laudabúntur
 * Omnes recti corde, allelúja, allelúja.
 V. Lætamini in Dómino et exsultáte, justi, et gloriámini.
-R. Omnes recti corde, allelúja, allelúja.	
+R. Omnes recti corde, allelúja, allelúja.
+
+[Responsory8] (rubrica cisterciensis)
+@CommuneM/C1p:Responsory9
 
 [Lectio9]
 @Commune/C2p:Lectio7
+
+[Responsory9] (rubrica cisterciensis)
+@CommuneM/C1p:Responsory3
 
 [Lectio10]
 @Commune/C2p:Lectio8:s/Sed cum .*//s
@@ -112,6 +163,8 @@ R. Omnes recti corde, allelúja, allelúja.
 [Lectio11]
 @Commune/C2p:Lectio8:s/.* Sed cum /Sed cum /s s/$/~/
 @Commune/C2p:Lectio9:s/Numquid .*//s
+(sed rubrica cisterciensis)
+@Commune/C2p:Lectio9:s/Secúndum hoc .*//s
 
 [Responsory11]
 R. Fulgébunt justi sicut lílium:
@@ -119,14 +172,33 @@ R. Fulgébunt justi sicut lílium:
 V. Justi autem in perpétuum vivent, et apud Dóminum est merces eórum.
 R. Et sicut rosæ in Jéricho florébunt ante Dóminum, allelúja.
 
+[Responsory11] (rubrica cisterciensis)
+@:Responsory12_
+
 [Lectio12]
 @Commune/C2p:Lectio9:s/.* Numquid /Numquid /s
+(sed rubrica cisterciensis)
+@Commune/C2p:Lectio9:s/.* Secúndum hoc /Secúndum hoc /s
 
-[Responsory12]
+[Responsory12_]
 R. Gaudéte, justi, in Dómino, allelúja:
 * Rectos decet collaudátio, allelúja, allelúja.
 V. Cantáte ei cánticum novum: bene psállite ei in vociferatióne.
 R. Rectos decet collaudátio, allelúja, allelúja.
+
+[Responsory12C]
+R. Lavérunt stolas suas,
+* Et cándidas eas fecérunt in sánguine Agni, Allelúia, allelúia, allelúia.
+V. Isti sunt qui venérunt ex magna tribulatióne, et lavérunt stolas suas:
+R. Et cándidas eas fecérunt in sánguine Agni, Allelúia, allelúia, allelúia.
+
+[Responsory12]
+@:Responsory12_
+(sed rubrica cisterciensis)
+@:Responsory12C
+
+[Evangelium] (rubrica cisterciensis)
+@Commune/C2p
 
 [Hymnus Laudes]
 @Commune/C2
@@ -187,5 +259,6 @@ R. Allelúia, allelúia.
 [Lectio12 in 2 loco]
 @Commune/C2p:Lectio9 in 2 loco
 
-[LectioE in 2 loco]
-@Commune/C3p:LectioE
+[Evangelium in 2 loco]
+@Commune/C3p:Evangelium
+

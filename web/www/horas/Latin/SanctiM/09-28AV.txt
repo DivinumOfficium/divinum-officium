@@ -7,3 +7,41 @@ S. Wenceslai, Ducis, Martyris et Patroni Principalis Regni Bohemiæ;;MM. maj.;;4
 ex C2;
 12 lectiones
 Psalmi Dominica
+
+[Name]
+Invit=Wencesláum
+Lectio=Wenceslái
+
+[Oratio]
+@Sancti/09-28
+
+[Lectio5]
+@Sancti/09-28:Lectio4:s/\; quare,.*/./
+
+[Lectio6]
+@Sancti/09-28:Lectio4:s/.*quare, tyránnici/Quare tyránnici/ s/$/~/
+@Sancti/09-28:Lectio5:s/Miti ánimo.*//
+
+[Lectio7]
+@Sancti/09-28:Lectio5:s/.*Miti ánimo/Miti ánimo/ s/$/~/
+@Sancti/09-28:Lectio6:s/Cum in Germániam.*//
+
+[Lectio8]
+@Sancti/09-28:Lectio6:s/.*Cum in Germániam/Cum in Germániam/
+
+[Lectio9]
+Léctio sancti Evangélii secúndum Matthæum. 
+!Mat 16.
+In illo témpore: Dixit Jesus discípulis suis: Si quis vult veníre post me, ábneget semetípsum, et tollat crucem suam et sequátur me. Et réliqua.
+_
+Homilía Beáti Gregórii Papæ.
+Duóbus modis crux tóllitur, aut cum per abstinéntiam afflígitur corpus aut per compassiónem próximi afflígitur ánimus. Pensémus quáliter utróque modo Paulus crucem suam túlerat, qui dicébat: Castígo corpus meum, et in servitútem rédigo, ne forte prædicans áliis, ipse réprobus effíciar.
+	
+[Lectio10]
+Ecce, in afflictióne córporis audívimus crucem carnis, audiámus nunc in compassióne próximi crucem mentis; Ait enim: Quis infirmátur, et ego non infírmor? quis scandalizátur, et ego non uror? perféctus quippe Prædicátor, ut exémplum daret abstinéntiæ, crucem portábat in córpore: et quia trahébat in se damna infirmitátis aliénæ, crucem portábat in corde.
+
+[Lectio11]
+Sed quia ipsis virtútibus quædam vítia juxta sunt, dicéndum nobis est: quod vítium abstinéntiam carnis et quod obsídeat compassiónem mentis, e vicíno namque abstinéntiam carnis nonnúnquam vana glória óbsidet: quia dum tenúitas in córpore, dum palos in vultu respícitur, virtus patefácta laudátur, et tanto se celérius foras fundit, quanto ad humános óculos per osténsum palórem exit.
+
+[Lectio12]
+Compassiónem vero ánimi plerúmque óbsidet píetas falsa: ut hanc nonnúnquam ad condescéndendum vítiis pértrahat: cum ad culpas quisque non débeat compassiónem exercére, sed zelum: Compássio quippe hómini, et rectitúdo vítiis debétur, ut in uno eodémque hómine diligámus bonum, quod factum est, persequámur mala, quæ fecit: ne dum culpas incáute remíttimus, non jam per charitátem cómpati‚ sed per negligéntiam condescéndere videámur.

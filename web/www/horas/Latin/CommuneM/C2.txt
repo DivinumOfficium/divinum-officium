@@ -9,20 +9,8 @@ Antiphonas horas
 V. Justus germinábit sicut lílium.
 R. Et florébit in ætérnum ante Dóminum.
 
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
-[Versum 3] (rubrica cisterciensis)
-@:Versum 1
-
 [Ant 1] (rubrica cisterciensis)
 Beátus vir, * qui suffert tentatiónem: quia cum probátus fúerit, accípiet corónam vitæ, quam repromísit Deus his, qui díligunt eum.
-
-[Ant 2] (rubrica cisterciensis)
-@Commune/C2:Ant 3:s/me\./me, dicit Dóminus./
-
-[Ant 3] (rubrica cisterciensis)
-Hic est vere Martyr, * qui pro Christi nómine sánguinem suum fudit, qui minas júdicum non tímuit, nec terrénæ dignitátis glóriam quæsívit, sed ad coeléstia regna felíciter pervénit.
 
 [AntMatutinumM]
 Hic accípiet * benedictiónem a Dómino, et misericórdiam a Deo salutári suo; qui hæc est generátio quæréntium Dóminum;;23
@@ -36,59 +24,118 @@ Qui vult veníre post me, * ábnegat semetípsum, et tollet crucem suam, et sequ
 @Commune/C2::4-9
 @:AntMatutinumM
 
+[Ant Matutinum] (rubrica cisterciensis)
+Beátus vir, * qui in lege Dómini meditátur, volúntas ejus pérmanet die ac nocte; et ómnia quæcúmque fáciet, semper prosperabúntur.;;1
+Beátus * iste Sanctus, qui confísus est in Dómino, prædicávit præcéptum Dómini, constitútus est in monte sancto ejus.;;2
+Invocántem * exaudívit Dóminus sanctum suum: Dóminus exaudívit eum, et constítuit eum in pace.;;4
+Scuto bonæ voluntátis * tuæ coronásti eum Dómine.;;5
+Dómine, Dóminus noster, * quam admirábile est nomen tuum in univérsa terra! quia glória et honóre coronásti Sanctum tuum, et constituísti eum super ópera mánuum tuárum.;;8
+Justus Dóminus, * et justítiam diléxit: æquitátem vidit vultus ejus.;;10
+Dómine, * iste Sanctus habitábit in tabernáculo tuo: operátus est justítiam tuam, requiéscet in monte sancto tuo.;;14
+Vitam * pétiit a te, et tribuísti ei, Dómine: glóriam et magnum decérem imposuísti super eum, posuísti in cápite ejus corónam de lápide pretióso.;;20
+Hic accípiet * benedictiónem a Dómino, et misericórdiam a Deo salutári suo: quia hæc est generátio quæréntium Dóminum.;;23
+Lætábitur justus * in Dómino et sperábit in eo, et laudabúntur omnes recti corde;;63
+Beátus * quem elegísti Dómine, habitábit in átriis tuis;;64
+Justus ut palma * florébit: sicut cedrus Líbani multiplicábitur;;91
+Nisi granum fruménti * cadens in terram, mórtuum fúerit; ipsum solum manet.;;256;257;258
+
 [Lectio1]
 @Commune/C2:Lectio1:s/-24/-23/ :s/24 .*//s
+
+[Lectio1] (rubrica cisterciensis)
+@Commune/C2:Lectio1:s/-24/-21/ :s/22 .*//s
 
 [Lectio2]
 @Commune/C2:Lectio1:s/.*!/!/s s/17-24/24-27/ s/^17 .*24 /24 /sm s/$/~/
 @Commune/C2:Lectio2:s/!.*// s/28 .*//s
 
+[Lectio2] (rubrica cisterciensis)
+@Commune/C2:Lectio1:s/.*!/!/s s/17-24/22-24/ s/^17 .*22 /22 /sm
+
 [Lectio3]
 @Commune/C2:Lectio2:s/25-31/28-32/ s/^25 .*28 /28 /sm s/$/~/
 @Commune/C2:Lectio3:s/!.*// s/33 .*//s
 
+[Lectio3] (rubrica cisterciensis)
+@Commune/C2:Lectio2:s/25-31/25-28/ s/29 .*//s
+
 [Lectio4]
 @Commune/C2:Lectio3:s/32-/33-/ s/32 .*33 /33 /s
 
-[Responsory4]
+[Lectio4] (rubrica cisterciensis)
+@Commune/C2:Lectio2:s/25-31/29-32/ s/^25 .*29 /29 /sm s/$/~/
+@Commune/C2:Lectio3:s/!.*// s/33 .*//s
+
+[Responsory4_]
 R. Pósuit corónam cápiti meo, et circúmdedit me vestiménto salútis,
 * Ad expugnándas Gentes et omnes inimícos.
 V. Júdica, Dómine, nocéntes me, expúgna impugnántes me, apprehénde arma et scutum, et exsúrge in adjutórium mihi.
 R. Ad expugnándas Gentes et omnes inimícos.
 
+[Responsory4]
+@:Responsory4_
+(sed rubrica cisterciensis)
+@:Responsory4C
+
+[Responsory4C]
+R. Hic est vir, qui non est derelíctus a Deo in die certáminis sui, et ipse conculcávit caput serpéntis antíqui:
+* Modo coronátus est, quia fidéliter vixit in mandátis Dómini.
+V. Quis est hic, et laudábimus eum? fecit enim mirabília in vita sua.
+R. Modo coronátus est, quia fidéliter vixit in mandátis Dómini.
+&Gloria
+R. Modo coronátus est, quia fidéliter vixit in mandátis Dómini.
+
 [Lectio5]
 @Commune/C2:Lectio4:s/Quod autem .*//s
+(sed rubrica cisterciensis)
+@Commune/C2:Lectio4:s/Audi Psalmístam .*//s
 
 [Responsory5]
 @Commune/C2:Responsory4
+(sed rubrica cisterciensis)
+@Commune/C2:Responsory6
 
 [Lectio6]
 @Commune/C2:Lectio4:s/.* Quod autem /Quod autem /s s/$/~/
+(sed rubrica cisterciensis omittitur)
 @Commune/C2:Lectio5:s/Quod enim .*//s
 
 [Responsory6]
 @Commune/C2:Responsory5
+(sed rubrica cisterciensis)
+@:Responsory12_:s/ a Deo salutári suo//
 
 [Lectio7]
 @Commune/C2:Lectio5:s/.* Quod enim /Quod enim /s
 
 [Responsory7]
 @Commune/C2:Responsory6
+(sed rubrica cisterciensis)
+@Commune/C2:Responsory8
 
 [Lectio8]
 @Commune/C2:Lectio6
+(sed rubrica cisterciensis)
+@Commune/C2:Lectio6:s/Hujus perféctæ.*//s
 
-[Responsory8]
-R. Posuísti, Dómine, super cápite ejus corónam de lápide pretióso:
+[Responsory8_]
+R. Posuísti, Dómine, super caput ejus corónam de lápide pretióso:
 * Vitam pétiit a te, et tribuísti ei in sǽculum sǽculi.
 V. Desidérium ánimæ ejus tribuísti ei, et voluntáte labiórum ejus non fraudásti eum.
 R. Vitam pétiit a te, et tribuísti ei in sǽculum sǽculi.
+
+[Responsory8]
+@:Responsory8_
+(sed rubrica cisterciensis)
+@:Responsory4_
 
 [Lectio9]
 @Commune/C2:Lectio7:s/Quæ autem .*//s
 
 [Responsory9]
 @Commune/C2:Responsory7
+(sed rubrica cisterciensis)
+@Commune/C2:Responsory5:s/Quóniam .* posuísti/Posuísti/
 
 [Lectio10]
 @Commune/C2:Lectio7:s/.* Quæ autem /Quæ autem /s
@@ -98,20 +145,31 @@ R. Vitam pétiit a te, et tribuísti ei in sǽculum sǽculi.
 
 [Responsory10]
 @Commune/C2:Responsory8
+(sed rubrica cisterciensis)
+@:Responsory8_
 
 [Lectio11]
 @Commune/C3:Lectio8
+(sed rubrica cisterciensis)
+@Commune/C2:Lectio8:s/Deléctet ergo .*//
 
-[Responsory11]
+[Responsory11_]
 R. Glória et honóre coronásti eum, Dómine, et constituísti eum super ópera mánuum tuárum:
 * Ómnia subjecísti sub pédibus ejus.
 V. Quóniam prævenísti eum in benedictiónibus dulcédinis, posuísti in cápite ejus corónam de lápide pretióso.
 R. Ómnia subjecísti sub pédibus ejus.
 
+[Responsory11]
+@:Responsory11_
+(sed rubrica cisterciensis)
+@Commune/C2:Responsory8 non Effusorum
+
 [Lectio12]
 @Commune/C3:Lectio9:s/\&teDeum .*//s
+(sed rubrica cisterciensis)
+@Commune/C2:Lectio8:s/.*Deléctet ergo/Deléctet ergo/
 
-[Responsory12]
+[Responsory12_]
 R. Beátus vir, qui suffert tentatiónem: quóniam cum probátus fúerit, accípiet corónam vitæ, 
 * Quam repromísit Deus diligéntibus se.
 V. Hic accípiet benedictiónem a Dómino, et misericórdiam a Deo salutári suo.
@@ -119,11 +177,22 @@ R. Quam repromísit Deus diligéntibus se.
 &Gloria
 R. Quam repromísit Deus diligéntibus se.
 
+[Responsory12]
+@:Responsory12_
+(sed rubrica cisterciensis)
+@:Responsory11_
+
 [MM Capitulum]
 @Commune/C2:Capitulum Sexta
 _
 V. Lætábitur justus in Dómino, et sperábit in eo.
 R. Et laudabúntur omnes recti corde.
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant 2] (rubrica cisterciensis)
+@Commune/C2:Ant 3:s/me\./me, dicit Dóminus./
 
 [Ant Vespera 3]
 @Commune/C2:Ant Vespera:1 s/$/;;109/
@@ -133,6 +202,12 @@ R. Et laudabúntur omnes recti corde.
 
 [Ant Vespera 3] (rubrica cisterciensis)
 @Commune/C2:Ant Vespera
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant 3] (rubrica cisterciensis)
+Hic est vere Martyr, * qui pro Christi nómine sánguinem suum fudit, qui minas júdicum non tímuit, nec terrénæ dignitátis glóriam quæsívit, sed ad coeléstia regna felíciter pervénit.
 
 [Lectio5 in 2 loco]
 @Commune/C2:Lectio4 in 2 loco:s/ Gratis.*//s
@@ -160,8 +235,8 @@ R. Et laudabúntur omnes recti corde.
 [Lectio12 in 2 loco]
 @Commune/C2:Lectio9 in 2 loco:s/\&teDeum .*//s
 
-[LectioE in 2 loco]
-@Commune/C2-1:LectioE
+[Evangelium in 2 loco]
+@Commune/C2-1
 
 [Lectio9 in 3 loco]
 @Sancti/09-28:Lectio7:s/Ubíque .*//s
@@ -176,8 +251,8 @@ R. Et laudabúntur omnes recti corde.
 [Lectio12 in 3 loco]
 @Sancti/09-28:Lectio9:s/\&teDeum .*//s
 
-[LectioE in 3 loco]
-@Commune/C2a:LectioE
+[Evangelium in 3 loco]
+@Commune/C2a
 
 [Lectio9 in 4 loco]
 @Commune/C2:Lectio7 in 4 loco:s/Et quod .*//s
@@ -185,11 +260,17 @@ R. Et laudabúntur omnes recti corde.
 [Lectio10 in 4 loco]
 @Commune/C2:Lectio7 in 4 loco:s/.* Et quod /Et quod /s
 
+[Lectio10 in 4 loco] (rubrica cisterciensis)
+@Commune/C2:Lectio7 in 4 loco:s/.* Et quod /Et quod /s s/$/~/
+@Commune/C2:Lectio8 in 4 loco:s/Idcírco.*//
+
 [Lectio11 in 4 loco]
 @Commune/C2:Lectio8 in 4 loco
+(sed rubrica cisterciensis)
+@Commune/C2:Lectio8 in 4 loco:s/.*Idcírco/Idcírco/
 
 [Lectio12 in 4 loco]
 @Commune/C2:Lectio9 in 4 loco:s/\&teDeum .*//s
 
-[LectioE in 4 loco]
-@Commune/C2a-1:LectioE
+[Evangelium in 4 loco]
+@Commune/C2a-1

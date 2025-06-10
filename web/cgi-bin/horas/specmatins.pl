@@ -526,16 +526,12 @@ sub lectiones {
 
   my @a = get_absolutio_et_benedictiones($num, $lang);
 
-  if (
-    $rule !~ /Limit.*?Benedictio/i
-    && ( $version =~ /Cist/i
-      && $rule =~ /Matutinum Romanum/i)
-  ) {
+  if ($rule !~ /Limit.*?Benedictio/i && $version !~ /Cist/i) {
     push(@s, "\$rubrica Pater secreto") unless $rule =~ /sine absolutio/i;
     push(@s, "\$Pater noster Et") unless $rule =~ /sine absolutio/i;
-    push(@s, "Absolutio. $a[0]", '$Amen') unless $version =~ /^Ordo Praedicatorum|Cist/ || $rule =~ /sine absolutio/i;
-  } else {
-    push(@s, "\$Pater totum secreto") unless $version =~ /Cist/i && $rule !~ /Matutinum Romanum/i;
+    push(@s, "Absolutio. $a[0]", '$Amen') unless $version =~ /^Ordo Praedicatorum/ || $rule =~ /sine absolutio/i;
+  } elsif ($version !~ /Cist/i || $rule =~ /Matutinum Romanum/i) {
+    push(@s, "\$Pater totum secreto");
   }
   push(@s, "\n");
 
@@ -766,7 +762,7 @@ sub lectio : ScriptFunc {
       !$w
     && $winner =~ /sancti/i
     && $commune =~ /^C/
-    && ( ($communetype =~ /^ex/i && $rank > 3)
+    && ( ($communetype =~ /^ex/i && ($rank > 3 || ($version =~ /Cist/i && $rank > 2.2)))
       || ($rule =~ /in (\d) Nocturno Lectiones ex/i && $1 eq $nocturn))
   ) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
@@ -1096,7 +1092,7 @@ sub lectio : ScriptFunc {
     } else {
 
       #      if ($version =~ /monastic/i && $dayofweek != 0 && $month == 1 && $day > 6 && $day < 13) {
-##        die $w{"Rank"};
+      ##        die $w{"Rank"};
       #        $na += 4 if ($dayofweek == 2 || $dayofweek == 5);
       #
       #        if ($dayofweek == 3) {    # Saturday dont work due C10 || $dayofweek == 6 ) {

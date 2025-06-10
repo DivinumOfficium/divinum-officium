@@ -5,8 +5,129 @@ R. A pokvete navěky před Hospodinem.
 [Ant 1] (rubrica cisterciensis)
 Blaze muži, * který trpí pokušení, neboť až bude vyzkoušen, přijme korunu života, kterou zaslíbil Bůh těm, kteří jej milují.
 
+[Ant Matutinum] (rubrica cisterciensis)
+Blaze muži, * jenž rozjímá o zákoně Hospodinově, jehož vůle trvá ve dne i v noci; a všechno, cokoli koná, bude mít vždy úspěch.;;1
+Blažen * tento Svatý, jenž důvěřoval v Hospodina, hlásal jeho přikázání a byl ustanoven na jeho svaté hoře.;;2
+Když jej vzýval, * vyslyšel Hospodin, svého svatého: Hospodin jej vyslyšel a ustanovil jej v pokoji.;;4
+Štítem své dobré vůle * jsi ho korunoval, Hospodine.;;5
+Hospodine, náš Pane, * jak podivuhodné je tvé jméno po vší zemi! neboť slávou a ctí jsi korunoval svého Svatého a ustanovil jsi jej nad dílem svých rukou.;;8
+Spravedlivý je Hospodin, * a miluje spravedlnost: jeho tvář spatřila rovnost.;;10
+Hospodine, * tento Svatý bude přebývat v tvém stánku: konal tvou spravedlnost, spočine na tvé svaté hoře.;;14
+O život * prosil tě, a tys mu jej udělil, Hospodine: slávu a velikou vznešenost jsi na něj vložil, položil jsi na jeho hlavu korunu z drahokamu.;;20
+Tento přijme * požehnání od Hospodina a milosrdenství od Boha, svého Spasitele: neboť toto je pokolení těch, kdo hledají Hospodina.;;23
+Zaradoval se spravedlivý * v Hospodinu a doufal v něho, a budou chváleni všichni, kdo jsou přímého srdce.;;63
+Blaze tomu, * koho sis vyvolil, Hospodine, bude přebývat ve tvých nádvořích.;;64
+Spravedlivý pokvete jako palma: * jako cedr libanonský se rozmnoží.;;91
+Jestliže zrno pšenice * nepadne do země a nezemře, zůstává pouhým zrnem.;;256;257;258
+
+[Responsory4_]
+R. Postavil mi korunu na hlavu, a oděl mě oděvem spásy,
+* K vítězství nad Pohany a všemi nepřáteli.
+V. Suď, Hospodine, ty, kdo mi škodí, pobij ty, kteří proti mě bojují, chop se zbraní a štítu, a povstaň mi na pomoc.
+R. K vítězství nad Pohany a všemi nepřáteli.
+
+[Responsory4C]
+R. Toto je muž, kterého Bůh neopustil v den jeho zápasu, a on pošlapal hlavu odvěkého hada;
+* A hned byl korunován, protože věrně žil dle přikázání Páně.
+V. Kdopak to je, abychom jej chválili? Konal totiž podivuhodné věci ve svém životě.
+R. A hned byl korunován, protože věrně žil dle přikázání Páně.
+&Gloria
+R. A hned byl korunován, protože věrně žil dle přikázání Páně.
+
+[Responsory4]
+@:Responsory4_
+(sed rubrica cisterciensis)
+@:Responsory4C
+
+[Responsory6]
+@Commune/C2:Responsory5
+(sed rubrica cisterciensis)
+@:Responsory12_:s/ od Boha, svého Spasitele//
+
+[Responsory8_]
+R. Postavil jsi mu, Hospodine, na hlavu korunu z drahých kamenů:
+* Život od tebe žádal, a ty jsi mu jej udělil na věky věkův.
+V. To, po čem toužila jeho duše, jsi mu udělil, Hospodine, a vůli jeho rtů jsi mu nezpronevěřil.
+R. Život od tebe žádal, a ty jsi mu jej udělil na věky věkův.
+
+[Responsory8]
+@:Responsory8_
+(sed rubrica cisterciensis)
+@:Responsory4_
+
+[Responsory9]
+@Commune/C2:Responsory7
+(sed rubrica cisterciensis)
+@Commune/C2:Responsory5:s/Neboť .* položil/Položil/
+
+[Responsory11_]
+R. Slávou a ctí jsi jej korunoval, Hospodine, a ustanovil jsi jej nad dílem svých rukou:
+* Všechno jsi položil k jeho nohám.
+V. Neboť jsi jej předcházel sladkým požehnáním; postavil jsi mu na hlavu korunu z drahých kamenů.
+R. Všechno jsi položil k jeho nohám.
+
+[Responsory12_]
+R. Blažen je muž, jež trpí pokušení; neboť až bude vyzkoušen, přijme korunu života, 
+* Kterou zaslíbil Bůh těm, kteří jej milují.
+V. On přijme požehnání od Hospodina, a milosrdenství od Boha, svého Spasitele.
+R. Kterou zaslíbil Bůh těm, kteří jej milují.
+&Gloria
+R. Kterou zaslíbil Bůh těm, kteří jej milují.
+
+[Responsory12]
+@:Responsory12_
+
+[Lectio5]
+@Commune/C2:Lectio4:s/Ovšem jak je .*//s
+(sed rubrica cisterciensis)
+@Commune/C2:Lectio4:s/Poslechni si Žalmistu.*//s
+
+[Lectio6]
+@Commune/C2:Lectio4:s/.* Ovšem jak je /Ovšem jak je /s s/$/~/
+(sed rubrica cisterciensis omittitur)
+@Commune/C2:Lectio5:s/Co tedy .*//s
+
+[Lectio7]
+@Commune/C2:Lectio5:s/.* Co tedy /Co tedy /s
+
+[Lectio8]
+@Commune/C2:Lectio6
+(sed rubrica cisterciensis)
+@Commune/C2:Lectio6:s/S pohledem .*//s
+
+[Lectio9]
+@Commune/C2:Lectio7:s/Který jazyk .*//s
+
+[Lectio10]
+@Commune/C2:Lectio7:s/.* Který jazyk /Který jazyk /s
+
+[Lectio11]
+@Commune/C3:Lectio8
+(sed rubrica cisterciensis)
+@Commune/C2:Lectio8:s/Mysl ať tedy .*//
+
+[Lectio12]
+@Commune/C3:Lectio9:s/\&teDeum .*//s
+(sed rubrica cisterciensis)
+@Commune/C2:Lectio8:s/.*Mysl ať tedy/Mysl ať tedy/
+
 [Ant 2] (rubrica cisterciensis)
 @Commune/C2:Ant 3:s/mě\./mě, praví Pán./
 
 [Ant 3] (rubrica cisterciensis)
 On je pravý Svědek, * jenž pro Kristovo jméno prolil svou krev, který se nebál hrozeb soudců, ani nehledal slávu pozemské důstojnosti, ale šťastně došel do nebeského království.
+
+[Lectio9 in 4 loco]
+@Commune/C2:Lectio7 in 4 loco:s/A co vám .*//s
+
+[Lectio10 in 4 loco]
+@Commune/C2:Lectio7 in 4 loco:s/.* A co vám /A co vám /s 
+
+[Lectio10 in 4 loco] (rubrica cisterciensis)
+@Commune/C2:Lectio7 in 4 loco:s/.* A co vám /A co vám /s s/$/~/
+@Commune/C2:Lectio8 in 4 loco:s/Proto přikázal.*//
+
+[Lectio11 in 4 loco]
+@Commune/C2:Lectio8 in 4 loco
+(sed rubrica cisterciensis)
+@Commune/C2:Lectio8 in 4 loco:s/.*Proto přikázal/Proto přikázal/
