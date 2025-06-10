@@ -1,9 +1,40 @@
 @Sancti/03-12
 
+[Officium]
+S. Gregorii <i>Magni</i>, Papæ, Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Gregorii <i>Magni</i>, Papæ, Confessoris et Ecclesiæ Doctoris;;II Class;;3;;ex C4a
+;;Duplex;;3;;ex C4a
 
 [Rule]
 ex C4a;
 12 lectiones
 Psalmi Dominica
+
+[Lectio5]  
+Gregórius Magnus, Románus, Gordiáni Senatóris fílius, adoléscens philosóphiæ ópe­ram dedit, et prætório offício functus, patre mórtuo, sex monastéria in Sicília ædificávit, Romæ séptimum sancti Andreæ nómine in suis ædibus, ubi Mónachi vitam proféssus, postéa Abbas fuit. Mox Diáconus Cardinális creátus, Constantinópolim a Pelágio Pontífice ad Tibérium Constantínum imperatórem legátus míttitur. 
+	
+[Lectio6]
+Ibi Eutychium Patriárcham, qui scrípserat contra veram ac tractábilem córporum resurrectiónem, ita convícit, ut ejus librum Imperátor in ignem injíceret. Quare Eutychius, instánte morte, pellem manus suæ tenébat, dicens: Confíteor quia omnes in hac carne resurgémus. Pelágio pestiléntia subláto, Póntifex elígitur: quem honórem ne accíperet, aliéno vestítu in spelúnca delítuit: ubi deprehénsus indício igneæ colúmnæ, consecrátur. 
+	
+[Lectio7]
+Peregrínos quotídie ad mensam adhibébat: in quibus et Angelum, et Dóminum Angelórum peregríni fácie accépit. Páuperes et urbános et extérnos, quorum númerum descríptum habébat, benígne sustentábat. Cathólicam fidem multis locis labefactátam restítuit. Missis in Británniam doctis et sanctis viris Augustíno et áliis mónachis, ínsulam ad Jesu Christi fidem convértit. Joánnis Patriárchæ Constantinopolitáni audáciam fregit, qui sibi universális Ecclésiæ Epíscopi nomen arrogábat. 
+	
+[Lectio8]
+Maurítium imperatórem, eos qui mílites fuíssent, mónachos fiéri prohibéntem, a senténtia detérruit. Ecclésiam ornávit sanctíssimis institútis et légibus. Multos libros confécit: quos cum dictáret, testátus est Petrus Diáconus, se Spíritum sanctum colúmbæ spécie in ejus cápite sæpe vidísse. Deníque multis éditis miráculis, ad cœléstem beatitúdinem evocátus est.
+
+[Lectio9]
+@Sancti/03-12:Lectio7:s/Vos ígitur.*//
+
+[Lectio10]
+@Sancti/03-12:Lectio7:s/.* Vos ígitur/Vos ígitur/ s/Curáre namque.*//
+
+[Lectio11]
+@Sancti/03-12:Lectio7:s/.*Curáre namque/Curáre namque/s s/$/~/s
+@Sancti/03-12:Lectio8:s/Nullum puto.*//s 
+
+[Lectio12]
+@Sancti/03-12:Lectio8:s/.*Nullum puto/Nullum puto/s s/Et quia eo.*//
+
+
+

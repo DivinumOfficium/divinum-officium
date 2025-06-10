@@ -111,12 +111,16 @@ R. Quia in hac peregrinatióne solo córpore constitútus, cogitatióne et avidi
 
 [Lectio5]
 @Commune/C4:Lectio4
+(sed rubrica cisterciensis)
+@:Lectio5 in 2 loco
 
 [Responsory5] (nisi rubrica cisterciensis)
 @Commune/C4:Responsory4
 
 [Lectio6]
 @Commune/C4:Lectio5
+(sed rubrica cisterciensis)
+@:Lectio6 in 2 loco
 
 [Responsory6]
 @Commune/C4:Responsory5
@@ -125,6 +129,8 @@ R. Quia in hac peregrinatióne solo córpore constitútus, cogitatióne et avidi
 
 [Lectio7]
 @Commune/C4:Lectio6:s/ Dúplici .*//s
+(sed rubrica cisterciensis)
+@:Lectio7 in 2 loco
 
 [Responsory7] (nisi rubrica cisterciensis)
 @Commune/C4:Responsory6
@@ -133,19 +139,8 @@ R. Quia in hac peregrinatióne solo córpore constitútus, cogitatióne et avidi
 @Commune/C4:Lectio6:s/.* Dúplici /Dúplici /s s/$/~/
 Lauda ergo post perículum, prǽdica secúrum. Lauda navigántis felicitátem, sed cum pervénit ad portum; lauda ducis virtútem, sed cum perdúctus est ad triúmphum.
 
-[Lectio5] (rubrica cisterciensis)
-Sermo sancti Máximi Epíscopi
-!Ex Homilia 59. quae est 2. de S. Eusebio.
-Beáti Patris N. mérita jam in tuto pósita secúri magnificémus: qui gubernáculum fídei viríliter tenens, ánchoram spei tranquílla jam in statióne compósuit, et plenam cœléstibus divítiis et ætérnis mércibus navem optáto in líttore collocávit: qui contra omnes adversários scutum timóris Dei támdiu infatigabíliter ténuit, donec ad victóriam perveníret.
-	
-[Lectio6] (rubrica cisterciensis)
-Quid enim fuit totus vitæ illíus cursus, nisi uníus cum vígili hoste conflíctus? Quantis hic cæcis a via veritátis errántibus, et de summa jam in profúndum rupe pendéntibus, amíssum réddidit visum, et illum, quo Christus viderétur, reparávit intúitum?
-	
-[Lectio7] (rubrica cisterciensis)
-Quantórum áuribus surdis, et infidelitátis obturatióne damnátis, ad percipiéndam vocem cœléstium mandatórum, pretiósum infúdit audítum, ut vocánti Deo ad misericórdiam respondérent per obediéntiam? Quantos intrínsecus vulnerátos, Angélici oris arte et oratiónum, ab infirmitáte curávit?
-
 [Lectio8] (rubrica cisterciensis)
-Quantos per longam incúriam peccáti labe resolútos, et quadam lepræ contagióne perfúsos, castigatiónibus et exhortatiónibus expiándo, Deo in se operánte mundávit? Quantórum ánimas vivéntes in córpore, jam defúnctas, et delictórum mole óbrutas ac sepúltas, ad emendatiónem tamquam ad lucem vocándo, Deo resuscitávit; ut Dómini sui admirándus imitátor, jam mórtuas Deo, e contrário mortíficet vitáli morte peccáto?
+@:Lectio8 in 2 loco
 
 [Responsory8]
 R. Justum dedúxit Dóminus per vias rectas, † et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum;
@@ -281,3 +276,24 @@ Quod, si cóntuens longam Dei patiéntiam, quæ in proféctum humánæ salútis 
 
 [Evangelium in 2 loco]
 @Commune/C4-1:Evangelium
+
+[Comment]
+Lectiones 1..4 in 3 loco: 
+Aliæ Lectiones ex Communi Confessoris Pontificis ex Breviario Cisterciensi (pag. 87*)
+
+[Lectio1 in 3 loco]
+De Epístola beáti Pauli Apóstoli ad Titum.
+!Cap. 1: 7-9
+Opórtet Epíscopum sine crímine esse, sicut Dei dispensatórem: non supérbum, non iracúndum, non vinoléntum, non percussórem, non turpis lucri cúpidum: sed hospitálem, benígnum, sóbrium, justum, sanctum, continéntem, amplecténtem eum, qui secúndum doctrínam est, fidélem sermónem: ut potens sit exhortári in doctrína sana, et eos, qui contradícunt‚ argúere.	
+
+[Lectio2 in 3 loco]
+!Cap. 1: 10-11,13
+Sunt enim multi étiam inobediéntes vaníloqui, et seductóres: máxime qui de circumcisióne sunt: quos opórtet redárgui: qui univérsas domos subvértunt, docéntes quæ non opórtet‚ turpis lucri grátia. Quam ob causam íncrepa illos dure, ut sani sint in fide, non intendéntes Judáicis fábulis, et mandátis hóminum, aversántium se a veritáte.
+	
+[Lectio3 in 3 loco]
+!Cap. 2, 1-6
+Tu autem lóquere quæ decent sanam doctrínam: Senes ut sóbrii sint, pudíci, prudéntes, sani in fide, in dilectióne, in patiéntia: Anus simíliter in hábitu sancto, non criminatríces, non multo vino serviéntes, bene docéntes: ut prudéntiam dóceant adolescéntulas, ut viros suos ament, fílios suos díligant, prudéntes, castas, sóbrias, domus curam habéntes, benígnas, súbditas viris suis, ut non blasphemétur verbum Dei: Júvenes simíliter hortáre ut sóbrii sint.
+	
+[Lectio4 in 3 loco]
+!Cap. 2,7-8,14
+In ómnibus teípsum præbe exémplum bonórum óperum, in doctrína, in integritáte, in gravitáte, verbum sanum, irreprehensíbile: ut is, qui ex advérso est, vereátur, nihil habens malum dícere de nobis. Fidélis sermo est: et de his volo te confirmáre: ut curent bonis opéribus præésse qui credunt Deo. Hæc sunt bona, et utília homínibus.

@@ -48,6 +48,24 @@ sub monastic_major_responsory {
     # on j. Vespers. Of course, we need to limit it to Fest. Serm.
     $cistrv1f = $rank >= 5 || $ctrank[2] >= 5;
     $resp = '' unless $cistrv1f;
+
+    if ($resp =~ /N\./) { 
+      my %w = columnsel($lang) ? %winner : %winner2;
+      my $saint_name = $w{Name};
+
+      if ($saint_name) {
+        my @name = split("\n", $saint_name);
+        if ($name =~ /Resp.*\=/) {
+          @name = grep(/Resp.*\=/, @name);
+        }
+        $name[0] =~ s/^.*?\=//;
+        if ($name[0]) {
+          $name[0] =~ s/[\r\n]//g;
+          $resp =~ s/N\. .*? N\./$name[0]/;
+          $resp =~ s/N\./$name[0]/;
+        }
+      }
+    }
   }
 
   if (!$resp) {    # 'Responsory $hora'

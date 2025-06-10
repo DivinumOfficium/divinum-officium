@@ -57,6 +57,9 @@ V. Misit Dóminus manum suam, et tétigit os ejus:
 (sed tempore paschali)
 R. Allelúia, allelúia, allelúia.
 
+[Evangelium] (rubrica cisterciensis)
+@Commune/C4a
+
 [Ant 3]
 @Commune/C4a
 
@@ -85,3 +88,19 @@ R. Allelúia, allelúia, allelúia.
 
 [Lectio12 in 3 loco]
 @Commune/C4a:Lectio9 in 3 loco:s/.* Non ergo /Non ergo /s
+
+[Comment]
+Lectiones in 4 loco: 
+Aliæ Lectiones Pro Doctoribus ex Breviario Cisterciensi (pag. 96*)
+
+[Lectio9 in 4 loco]
+@CommuneM/03-12C:Lectio9
+
+[Lectio10 in 4 loco]
+@CommuneM/03-12C:Lectio10
+
+[Lectio11 in 4 loco]
+@CommuneM/03-12C:Lectio11
+
+[Lectio12 in 4 loco]
+@CommuneM/03-12C:Lectio12

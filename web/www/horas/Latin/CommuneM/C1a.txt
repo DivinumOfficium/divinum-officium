@@ -35,10 +35,15 @@
 
 [Lectio5]
 @Commune/C1a:Lectio4:s/Per contemplatiónem.*//s
+(sed rubrica cisterciensis)
+@Commune/C1a:Lectio4:s/Fácies ítaque.*//s
 
 [Lectio6]
 @Commune/C1a:Lectio4:s/.*Per contemplatiónem/Per contemplatiónem/s s/$/~/
 @Commune/C1a:Lectio5:s/Quátuor ergo fácies uni sunt: quia notítia.*//
+
+[Lectio6] (rubrica cisterciensis)
+@Commune/C1a:Lectio4:s/.*Fácies ítaque/Fácies ítaque/s
 
 [Lectio7]
 @Commune/C1a:Lectio5:s/.*Quátuor ergo fácies uni sunt: quia notítia/Quátuor ergo fácies uni sunt: quia notítia/s s/$/~/
@@ -59,6 +64,8 @@
 
 [Lectio12]
 @Commune/C1a:Lectio9
+(sed rubrica cisterciensis)
+@Commune/C1a:Lectio9:s/Ei ergo.*//
 
 [Evangelium]
 @Sancti/10-18
