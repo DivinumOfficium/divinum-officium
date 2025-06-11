@@ -10,7 +10,7 @@ use FindBin qw($Bin);
 use lib "$Bin/..";
 use DivinumOfficium::Scripting qw(dispatch_script_function parse_script_arguments);
 use DivinumOfficium::Date qw(getweek leapyear geteaster get_sday nextday day_of_week monthday);
-use DivinumOfficium::Directorium qw(get_kalendar get_transfer get_tempora transfered );
+use DivinumOfficium::Directorium qw(get_from_directorium transfered );
 
 sub error {
   my $t = shift;
@@ -63,7 +63,7 @@ sub occurrence {
   my @officename = ($weekname, '', '');
 
   # look for permanent Transfers assigned to the day of the year (as of 2023-5-22 only 12-12n in Newcal version)
-  my $transfertemp = get_tempora($version, $sday);
+  my $transfertemp = get_from_directorium('tempora', $version, $sday);
 
   if ($transfertemp && $transfertemp !~ /tempora/i) {
     $transfertemp = subdirname('Sancti', $version) . "$transfertemp";    # add path to Sancti folder if necessary
@@ -72,7 +72,7 @@ sub occurrence {
   }
 
   # get annual transfers if applicable depending on the day of Easter
-  my $transfers = get_transfer($year, $version, $sday);
+  my $transfers = get_from_directorium('transfer', $version, $sday, $year);
   my @transfers = split("~", $transfers);
 
   foreach $transfer (@transfers) {
@@ -106,7 +106,7 @@ sub occurrence {
     $tday = subdirname('Tempora', $version) . "$weekname" . (($weekname !~ /Nat/i) ? "-$dayofweek" : "");
 
     # look for permanent Transfers assigned to the Temporal, most prominently the Ferias in the Octaves of S. Joseph, Corpus Christi, Ssmi Cordis
-    $tfile = get_tempora($version, $tday) || $tday;
+    $tfile = get_from_directorium('tempora', $version, $tday) || $tday;
 
     if ($transfertemp && $transfertemp =~ /tempora/i && !transfered($transfertemp, $year, $version)) {
 
@@ -152,7 +152,7 @@ sub occurrence {
   } else {
 
     #handle Sanctoral
-    my $kalentries = get_kalendar($version, $sday);
+    my $kalentries = get_from_directorium('kalendar', $version, $sday);
     @commemoentries = split("~", $kalentries);
 
     foreach $kalentry (@commemoentries) {
@@ -613,7 +613,7 @@ sub occurrence {
         $officename[2] =~ s/:/ ad Laudes tantum:/
           if $srank[2] < 4.2
           && $srank[2] != 2.1
-          && $trank[0] !~ /infra octavam|cinerum|majoris hebd|in Octava|Albis/i
+          && $trank[0] !~ /infra octavam|cinerum|majoris hebd|in Octava|Albis|Quattuor Temporum Pentecostes/i
           && $tname !~ /Adv|Quad/i;
       } elsif ($laudesonly) {
         $officename[2] =~ s/:/ $laudesonly:/;

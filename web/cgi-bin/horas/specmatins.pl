@@ -6,7 +6,7 @@ use utf8;
 # Divine Office Matins subroutines
 use FindBin qw($Bin);
 use lib "$Bin/..";
-use DivinumOfficium::Directorium qw(get_stransfer hymnmerge hymnshift);
+use DivinumOfficium::Directorium qw(get_from_directorium hymnmerge hymnshift);
 
 # Defines ScriptFunc and ScriptShortFunc attributes.
 use DivinumOfficium::Scripting;
@@ -155,6 +155,8 @@ sub nocturn {
 
   # versus can be text or reference (number)
   my (@vs) = ($select[-1] =~ /^\d+$/ ? (@{$psalmi}[$select[-2]], @{$psalmi}[$select[-1]]) : ($select[-2], $select[-1]));
+  ensure_single_alleluia(\$vs[0], $lang) if alleluia_required($dayname[0], $votive);
+  ensure_single_alleluia(\$vs[1], $lang) if alleluia_required($dayname[0], $votive);
   push(@s, "\n", @vs, "\n");
 }
 
@@ -224,6 +226,8 @@ sub psalmi_matutinum {
 
     if ($wa) {
       if ($ind == 12 && $dayname[0] =~ /Pasc/i) {
+
+        # Special case for transferred Annuniciation in T.P.
         $psalmi[10] =~ s/^.*?;;/$wa;;/;
       } else {
         $psalmi[$ind] =~ s/^.*?;;/$wa;;/;
@@ -629,7 +633,7 @@ sub lectio : ScriptFunc {
 
       my $tfile =
         subdirname('Tempora', $version) . sprintf("Nat%02i", $day) . ($version =~ /Trident/i ? "o.txt" : ".txt");
-      my $t = get_tempora($version, $tfile);
+      my $t = get_from_directorium('tempora', $version, $tfile);
       $tfile = $t || $tfile;
 
       %temp = %{officestring($lang, $tfile)};
@@ -1337,9 +1341,17 @@ sub ant_matutinum_paschal {
         $psalmi[10] = alleluia_ant($lang) . $psalmi[10];
       }
     } elsif ($winner !~ /tempora/i) {    # each nocturn under single antiphonas apart Ascension
+      my $perNoct = $version =~ /Monastic/ ? 8 : 5;
+
       foreach my $i (0 .. 3) {
-        $psalmi[$i * 5 + 1] =~ s/.*;;/;;/;
-        $psalmi[$i * 5 + 2] =~ s/.*;;/;;/;
+        $psalmi[$i * $perNoct + 1] =~ s/.*;;/;;/;
+        $psalmi[$i * $perNoct + 2] =~ s/.*;;/;;/;
+
+        if ($version =~ /Monastic/) {
+          $psalmi[$i * $perNoct + 3] =~ s/.*;;/;;/;
+          $psalmi[$i * $perNoct + 4] =~ s/.*;;/;;/;
+          $psalmi[$i * $perNoct + 5] =~ s/.*;;/;;/;
+        }
       }
     }
   } else {
@@ -1370,7 +1382,7 @@ sub initiarule {
 
   my $key = sprintf("%02i-%02i", $month, $day);
 
-  return get_stransfer($year, $version, $key);
+  return get_from_directorium('stransfer', $version, $key, $year);
 }
 
 #*** resolveitable(\%w, $file, $lang)
