@@ -148,13 +148,23 @@ sub psalmi_matutinum_monastic {
       $prefix .= ' ' . translate('et Psalmi', $lang);
     }
 
+    if ($dayname[0] =~ /Pasc[1-6]/i && $votive !~ /C9|C12/ && ($version !~ /Praedicatorum/ || $winner =~ /Tempora/)) {
+      @psalmi = ant_matutinum_paschal(\@psalmi, $lang, length($w));
+    }
+
     if ($rule =~ /Ant Matutinum ([0-9]+) special/i) {
       my $ind = $1;
       my %wa = (columnsel($lang)) ? %winner : %winner2;
       my $wa = $wa{"Ant Matutinum $ind"};
 
       if ($wa) {
-        $psalmi[$ind - 1] =~ s/^.*?;;/$wa;;/;
+        if ($ind == 12 && $dayname[0] =~ /Pasc/i) {
+
+          # Special case for transferred Annuniciation in T.P.
+          $psalmi[8] =~ s/^.*?;;/$wa;;/;
+        } else {
+          $psalmi[$ind] =~ s/^.*?;;/$wa;;/;
+        }
       }
     }
     setbuild1("Antiphonas et Psalmi", "ex Proprium aut Communem");
@@ -219,7 +229,15 @@ sub psalmi_matutinum_monastic {
 
     # the Absolutio and the Benedictions are taken depending on the day of the week;
   }
-  $psalmi[14] = $psalmi[15] = '' if ($rule !~ /12 lectiones/);
+  $psalmi[14] = $psalmi[15] = ''
+    if (
+      $rule !~ /12 lectiones/
+      && !(
+           (($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
+        && $dayname[1] !~ /feria|sabbato|infra octavam/i
+        && $rule !~ /3 lectiones/i
+      )
+    );
   nocturn(2, $lang, \@psalmi, (8 .. 15));
 
   # In case of Matins of 3 nocturns with 12 lessons:
@@ -326,7 +344,8 @@ sub absolutio_benedictio {
     $ben = $a[3 - ($i == 3)];
   }
 
-  push(@s, "\n", '$Pater noster_', '_');
+  push(@s, "\$rubrica Pater secreto");
+  push(@s, "\$Pater noster Et");
   push(@s, "Absolutio. $abs", '$Amen', "\n");
   push(@s, prayer('Jube domne', $lang));
   push(@s, "Benedictio. $ben", '$Amen', '_');
@@ -409,7 +428,8 @@ sub lectioE {
   my $evang = "Evangelium";
 
   if ($rule =~ qr/in 3 Nocturno Lectiones ex Commune in (\d+) loco/i) {
-      $evang .= " in $1 loco";}
+    $evang .= " in $1 loco";
+  }
 
   $win =~ s/(?:M|OP)//g;    # no M or OP folder in missa
   my %missa = %{setupstring("../missa/$lang", $win)};
@@ -418,7 +438,7 @@ sub lectioE {
     @e = split("\n", $w{Evangelium});
   } elsif (exists($missa{Evangelium})) {    #** get evangelium from missa
     @e = split("\n", $missa{Evangelium});
-  } elsif (exists($com{$evang})) {      #** get evangelium in ? loco from Common
+  } elsif (exists($com{$evang})) {          #** get evangelium in ? loco from Common
     @e = split("\n", $com{$evang});
   } elsif (exists($com{Evangelium})) {      #** get evangelium from Common
     @e = split("\n", $com{Evangelium});
