@@ -6,7 +6,7 @@ use utf8;
 # Divine Office Matins subroutines
 use FindBin qw($Bin);
 use lib "$Bin/..";
-use DivinumOfficium::Directorium qw(get_stransfer hymnmerge hymnshift);
+use DivinumOfficium::Directorium qw(get_from_directorium hymnmerge hymnshift);
 
 # Defines ScriptFunc and ScriptShortFunc attributes.
 use DivinumOfficium::Scripting;
@@ -629,7 +629,7 @@ sub lectio : ScriptFunc {
 
       my $tfile =
         subdirname('Tempora', $version) . sprintf("Nat%02i", $day) . ($version =~ /Trident/i ? "o.txt" : ".txt");
-      my $t = get_tempora($version, $tfile);
+      my $t = get_from_directorium('tempora', $version, $tfile);
       $tfile = $t || $tfile;
 
       %temp = %{officestring($lang, $tfile)};
@@ -1370,7 +1370,7 @@ sub initiarule {
 
   my $key = sprintf("%02i-%02i", $month, $day);
 
-  return get_stransfer($year, $version, $key);
+  return get_from_directorium('stransfer', $version, $key, $year);
 }
 
 #*** resolveitable(\%w, $file, $lang)

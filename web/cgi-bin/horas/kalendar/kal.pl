@@ -112,7 +112,7 @@ sub kalendar_entry {
   my ($date, $ver) = @_;
 
   $date = substr($date, 0, 5);
-  my @kalentries = split('~', get_kalendar($ver, $date));
+  my @kalentries = split('~', get_from_directorium('kalendar', $ver, $date));
   return '' unless @kalentries;
 
   my $s = shift @kalentries;
