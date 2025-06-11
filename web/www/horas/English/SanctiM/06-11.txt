@@ -1,0 +1,11 @@
+[Lectio7]
+@Sancti/06-11:Lectio6:s/Nevertheless.*//
+
+[Lectio8]
+@Sancti/06-11:Lectio6:s/.* (?=Nevertheless)//
+
+[Lectio9]
+@Sancti/06-11:Lectio7:s/By this.*//s
+
+[Lectio10]
+@Sancti/06-11:Lectio7:s/.* (?=By this)//s
