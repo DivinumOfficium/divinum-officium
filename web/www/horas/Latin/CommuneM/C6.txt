@@ -18,13 +18,43 @@ Veni, Sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in æt
 
 [AntMatutinumM]
 Unguéntum effúsum * nomen tuum; ideo adolescéntulæ dilexérunt te nimis;;96
-Pulchra es * et decóra fília Jerúsalem, terríbilis ut castrórum ácies ordináte;;97
-Accínxit * fortitúdine lumbos suos, et roborávit bráchium suum; ideóque lucérna ejus non exstinguétur in sempitérnum;;98
+Pulchra es * et decóra fília Jerúsalem, terríbilis ut castrórum ácies ordináta.;;97
+Accínxit * fortitúdine lumbos suos, et roborávit bráchium suum; ideóque lucérna ejus non exstinguétur in sempitérnum.;;98
 Média nocte * clamor factus est: Ecce sponsus venit: exíte óbviam ei.;;249;250;251
 
 [Ant Matutinum]
 @Commune/C6:: s/95/84/ s/96/86/ s/97/95/
 @:AntMatutinumM
+
+[Ant Matutinum] (rubrica cisterciensis)
+O quam pulchra * est casta generátio cum claritáte!;;8
+Nigra sum, * sed formósa, fíliæ Jerúsalem; ídeo diléxit me Rex, et introdúxit me in cubículum suum.;;18
+Pulchra es * et decóra fília Jerúsalem, terríbilis ut castrórum ácies ordináta.;;23
+Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna.;;44
+Adjuvábit eam * Deus vultu suo: Deus in médio ejus, non commovébitur.;;45
+Hæc est quæ nescívit, * thorum in delícto, habébit fructum in respectióne animárum sanctárum.;;47
+Unguéntum effúsum * nomen tuum; ideo adolescéntulæ dilexérunt te nimis.;;84
+Revértere, * revértere, Sunamítis; revértere, ut intueámur te.;;86
+Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suum.;;95
+Símile est regnum cælórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam.;;96
+Veniénte sponso, * prudens Virgo præparáta introívit cum eo ad núptias.;;97
+Veni * elécta mea, et ponam in te thronum meum, quia concupívit Rex spéciem tuam.;;98
+Prudéntes Vírgines, * aptáte vestras lámpades: ecce sponsus venit, exíte óbviam ei.;;249;250;251
+
+[Ant Matutinum] (tempore paschali et rubrica cisterciensis)
+Allelúia, * allelúia, Allelúia;;8
+;;18
+;;23
+;;44
+;;45
+;;47
+Allelúia, * allelúia, Allelúia;;84
+;;86
+;;95
+;;96
+;;97
+;;98
+Allelúia, * allelúia, Allelúia;;249;250;251
 
 [Nocturn 1 Versum] (rubrica cisterciensis)
 @Commune/C6:Versum 1
@@ -45,6 +75,23 @@ R. In hæreditátem sibi.
 
 [Lectio4]
 @Commune/C6:Lectio3
+(sed rubrica cisterciensis)
+@Commune/C6:Lectio3:s/36-40/36-38/ s/39.*//s
+
+[Responsory1] (rubrica cisterciensis)
+@Commune/C6:Responsory2:1-2
+@:MM Capitulum:3
+@Commune/C6:Responsory2:4
+
+[Responsory2] (rubrica cisterciensis)
+@Commune/C6:Responsory3:1-2
+@Commune/C6:Responsory5:3
+@Commune/C6:Responsory3:4
+
+[Responsory3] (rubrica cisterciensis)
+@Commune/C6:Responsory4:1-2
+V. Audi fília, et vide, et inclína aurem tuam: et oblivíscere pópulum tuum, et domum patris tui:
+@Commune/C6:Responsory4:4
 
 [Responsory4]
 R. Hæc est Virgo prudens, 
@@ -52,27 +99,51 @@ R. Hæc est Virgo prudens,
 V. Hæc est Virgo sapiens, et una de número prudéntum.
 R. Quæ veniénte Sponso accépit óleum in vasis suis, et ornátis lampádibus introívit cum eo ad núptias.
 
+[Responsory4] (rubrica cisterciensis)
+R. Quinque prudéntes vírgines accepérunt óleum in vasis suis,
+* Cum lampádibus.
+V. Média autem nocte clamor factus est: Ecce, sponsus venit: exíte óbviam ei.
+R. Cum lampádibus.
+&Gloria
+R. Cum lampádibus.
+
 [Lectio5]
 @Commune/C6:Lectio4:s/ E c.*/ /
 
 [Responsory5]
 @Commune/C6:Responsory4
 
+[Responsory5] (rubrica cisterciensis)
+@Commune/C6:Responsory5:1-2
+@Commune/C6:Responsory3:3:s/tuis,.*/tuis:/
+@Commune/C6:Responsory5:4
+
 [Lectio6]
-@Commune/C6:Lectio4:s/.* E c/E c/ s/$/~/s
+@Commune/C6:Lectio4:s/.* E c/E c/s s/$/~/s
 @Commune/C6:Lectio5:s/. Nam.*/. /
 
 [Responsory6]
 @Commune/C6:Responsory5
 
+[Responsory6] (rubrica cisterciensis)
+R. Veni Sponsa Christi, áccipe corónam, quam tibi Dóminus præparávit,
+* Pro cujus amóre sánguinem tuum fudísti, et cum Ángelis in paradísum introísti.
+V. Veni, elécta mea, et ponam in te thronum meum;  quia concupívit Rex spéciem tuam.
+R. Pro cujus amóre sánguinem tuum fudísti, et cum Ángelis in paradísum introísti.
+
 [Lectio7]
 @Commune/C6:Lectio5:s/.* Nam /Nam /
 
-[Responsory7]
+[Responsory7] (nisi rubrica cisterciensis)
 R. Prudéntes vírgines, aptáte vestras lámpades.
 * Ecce sponsus venit, exíte óbviam ei.
 V. Média nocte clamor factus est:
 R. Ecce sponsus venit, exíte óbviam ei.
+
+[Responsory7] (rubrica cisterciensis)
+@Commune/C6::1-2
+V. Accínxit fortitúdine lumbos suos, et roborávit bráchium suum:
+@Commune/C6::4
 
 [Lectio8]
 @Commune/C6:Lectio6
@@ -80,11 +151,21 @@ R. Ecce sponsus venit, exíte óbviam ei.
 [Responsory8]
 @Commune/C6:Responsory6
 
+[Responsory8] (rubrica cisterciensis)
+R. Afferéntur Regi Vírgines post eam, próximæ ejus afferéntur tibi,
+* In lætítia et exsultatióne.
+V. Prudéntes Vírgines, aptáte lámpades vestras: ecce sponsus venit, exíte óbviam ei:
+R. In lætítia et exsultatióne.
+&Gloria
+R. In lætítia et exsultatióne.
+
 [Lectio9]
 @Commune/C6:Lectio7:s/. Ecce.*/. /
 
 [Responsory9]
 @Commune/C6:Responsory7
+(sed rubrica cisterciensis)
+@:Responsory12_
 
 [Lectio10]
 @Commune/C6:Lectio7:s/.*vacuétur. Ecce /Ecce /s s/$/~/s
@@ -92,6 +173,12 @@ R. Ecce sponsus venit, exíte óbviam ei.
 
 [Responsory10]
 @Commune/C6:Responsory8
+
+[Responsory10] (rubrica cisterciensis)
+R. Veni, elécta mea, et ponam in te thronum meum:
+* Quia concupívit Rex spéciem tuam.
+V. Surge, própera, amíca mea, veni de Líbano, et coronáberis.
+R. Quia concupívit Rex spéciem tuam.
 
 [Lectio11]
 @Commune/C6:Lectio8:s/.* Sed sc/Sed sc/
@@ -102,14 +189,35 @@ R. Índuit me Dóminus vestiménto salútis, et induménto lætítiæ circúmded
 V. Quasi sponsum decorátum coróna et quasi sponsam ornátam monílibus suis.
 R. Decorávit me coróna. 
 
+[Responsory11] (rubrica cisterciensis)
+R. Surge, própera, amíca mea, et veni: jam enim hiems tránsiit, imber ábiit et recéssit:
+* Flores apparuérunt in terra.
+V. Vox túrturis audíta est in terra nostra, ficus prótulit grossos suos.
+R. Flores apparuérunt in terra.
+
 [Lectio12]
 @Commune/C6:Lectio9
+(sed rubrica cisterciensis)
+@Commune/C6:Lectio9:s/Sunt namque.*//
+
+[Responsory12_]
+R. Símile est regnum cælórum decem virgínibus, quæ accipiéntes lámpadas suas
+* Exiérunt óbviam sponso et sponsæ.
+V. Quinque autem ex eis erunt fátue, et quinque prudéntes.
+R. Exiérunt óbviam sponso et sponsæ.
+
+[Responsory12C]
+R. Audi, fília, et vide, et inclína aurem tuam, et oblivíscere pópulum tuum, et domum Patris tui, et concupíscet Rex spéciem tuam:
+* Quóniam ipse est Dóminus Deus tuus.
+V. Induit te Dóminus vestiméntis salútis, et induménto lætítiæ circúmdedit te:
+R. Quóniam ipse est Dóminus Deus tuus.
+&Gloria
+R. Quóniam ipse est Dóminus Deus tuus.
 
 [Responsory12]
-R.br. Símile est regnum cælórum decem virgínibus, qui accipiéntes lámpadas suas
-* Exiérunt óbviam sponso et sponsæ
-V. Quinque autem ex eis erunt fátue, et quinque prudéntes
-R. Exiérunt óbviam sponso et sponsæ
+@:Responsory12_
+(sed rubrica cisterciensis)
+@:Responsory12C
 
 [MM Capitulum]
 @Commune/C7:Capitulum Sexta
@@ -147,13 +255,20 @@ Quinque prudéntes Vírgines * accepérunt óleum in vasis suis cum lampádibus:
 
 [Lectio5 in 2 loco]
 @Commune/C6:Lectio4 in 2 loco
+(sed rubrica cisterciensis)
+@Commune/C6:Lectio4 in 2 loco:s/Gaudet .*//
 
 [Lectio6 in 2 loco]
 @Commune/C6:Lectio5 in 2 loco:s/est. S.*/est. /
+(sed rubrica cisterciensis)
+@Commune/C6:Lectio4 in 2 loco:s/.* Gaudet/Gaudet/s
 
 [Lectio7 in 2 loco]
 @Commune/C6:Lectio5 in 2 loco:s/.* est. S/S/ s/$/~/s
 @Commune/C6:Lectio6 in 2 loco:s/. Neque.*/. /
+
+[Lectio7 in 2 loco] (rubrica cisterciensis)
+@Commune/C6:Lectio5 in 2 loco:s/.* Neque inánis/Neque inánis/ s/Sunt enim.*//
 
 [Lectio8 in 2 loco]
 @Commune/C6:Lectio6 in 2 loco:s/.*t. Neque /Neque /
@@ -224,3 +339,24 @@ Postea vero, quam surrexérunt, id est, in resurrectióne a mórtuis, cœpérunt
 
 [Lectio12 in 5 loco]
 Sint in vobis quinque prudéntes ad istam prudéntiam quinárii númeri pertinéntes. Véniet enim hora, et quando nescímus, véniet. Sic clausit Evangélium: Vigiláte, quia nescítis diem neque horam. Corde vígila, fide vígila, spe vígila, caritáte vígila, opéribus vígila: et quando córpore dormíveris, véniet tempus ut surgas. Cum autem surréxeris, præpara lámpades. Tunc non exstinguántur, tunc interióre consciéntiæ óleo vegeténtur: tunc sponsus ille incorpóreis néxibus amplectátur, tunc te introdúcat in domum, ubi numquam dórmias, ubi nunquam possit tua lampas exstíngui. Hódie vero laborámus, et lámpades nostræ inter ventos sæculi hujus tentationésque flúctuant; sed árdeat in róbore flamma nostra, ut ventus tentatiónis áugeat ignem pótius, quam exstínguat.
+
+[Comment]
+Aliæ Lectiones Pro Virginibus ex Brev. Cist., pag. 145*
+
+[Lectio9 in 6 loco]
+Léctio sancti Evangélii secúndum Matthæum.
+!Lk 25:1-13
+In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Simile erit regnum coelórum decem virgínibus, quæ, accipiéntes lampades suas, exiérunt obviam sponso et sponsæ. Et réliqua.
+_
+Homilía sancti Joánnis Chrysóstomi.
+!Homilía 79. in Matth.
+Magna quædam de virginitáte disserúerat dicens: Sunt eunuchi, qui seipsos castravérunt propter regnum coelórum; et, Qui potest cápere, cápiat. Nec ignorábat, de virginitáte magnam esse vulgo existimatiónem, quippe cum sit ea res natúra sublímis: quod inde patet, quia neque in véteri Testaménto a priscis illis sanctísque viris culta fuit, et in novo nulla legis necessitáte jubétur. Non enim id imperávit, sed fidélium voluntáti permísit.
+	
+[Lectio10 in 6 loco]
+Quóniam ígitur et magna res erat, ac de ea apud multos magna erat existimátio, ne quis, ea perfécta, se totum perfécisse putáret ac cetera negligeret, hanc parábolam pósuit; ut osténderet, virginitátem, quamvis cetera hábeat, si misericórdiæ bonis carúerit, cum fornicatóribus éjici. Ac mérito quidem inhumánum ac misericórdia caréntem cum illis cóllocat; fornicátor enim córporum, istæ vero pecuniárum cupiditáte vincúntur.
+	
+[Lectio11 in 6 loco]
+Non est autem córporum et pecúniæ par cupíditas; sed ácrior multo atque veheméntior illa córporum est. Quanto ígitur cum imbecillióre luctántur, tanto minus vénia dignæ sunt, si vincántur. Idcírco etiam fátuas appellávit; quóniam, majóri certámine superáto, in facíliore totum perdidérunt.
+	
+[Lectio12 in 6 loco]
+Lámpades autem hoc loco illud ipsum virginitátis domum appéllat et sanctimóniæ puritátem; óleum vero benignitátem, eleemósynam, impénsum indigéntibus auxílium. Tardánte autem sponso dormitavérunt omnes, et dormiérunt. Non parvum témporis rursus spátium interjéctum osténdit, ut discípulos, regnum ipsíus mox futúrum exspectántes, ab ea opinióne dedúceret; id enim illi sperábant: quaprópter crebro ab hujúsmodi eos spe révocat.
