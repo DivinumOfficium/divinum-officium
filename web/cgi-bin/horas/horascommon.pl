@@ -613,7 +613,7 @@ sub occurrence {
         $officename[2] =~ s/:/ ad Laudes tantum:/
           if $srank[2] < 4.2
           && $srank[2] != 2.1
-          && $trank[0] !~ /infra octavam|cinerum|majoris hebd|in Octava|Albis/i
+          && $trank[0] !~ /infra octavam|cinerum|majoris hebd|in Octava|Albis|Quattuor Temporum Pentecostes/i
           && $tname !~ /Adv|Quad/i;
       } elsif ($laudesonly) {
         $officename[2] =~ s/:/ $laudesonly:/;
