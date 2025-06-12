@@ -1,0 +1,24 @@
+@Tempora/Pent01-3
+
+[Lectio1]
+@Tempora/Pent01-3::s/: sic .*/./
+
+[Responsory1]
+@Tempora/Pent01-3:Responsory3
+
+[Lectio2]
+@Tempora/Pent01-3:Lectio1:2 s/12-14/14-16/
+@Tempora/Pent01-3:Lectio1:5 s/ .*: (sic)/ \u$1/
+@Tempora/Pent01-3::2-3 s/ Qui.*//
+
+[Responsory2]
+@Tempora/Pent01-3:Responsory1
+
+[Lectio3]
+@Tempora/Pent01-3:Lectio2:!2 s/ .*(?= Qui)// s/12-14/14-16/
+@Tempora/Pent01-3::2-3
+
+[Responsory3]
+@Tempora/Pent03-2Feria:Responsory2:1-2 s/\n\*// s/:/:\n* /
+V. Oro, Dómine, ut fiat spíritus tuus duplex in me. At ille inquit: Si víderis, quando tollar a te, erit tibi quod petísti.
+@Tempora/Pent03-2Feria:Responsory2:2 s/.*: /R. /
