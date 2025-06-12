@@ -1,0 +1,165 @@
+@Tempora/Pent01-0
+
+[Ant Vespera]
+O beáta * et benedícta et gloriósa Trínitas: Pater et Fílius et Spíritus Sanctus.;;112;116;145;146;147
+
+[Responsory Vespera 1]
+@TemporaM/Pent01-0:Responsory8:1-2 s/ uni/ Uni/g
+V. Trinitáti lux perénnis, Unitáti sit decus pérpetim.
+@TemporaM/Pent01-0:Responsory8:2 s/\*/R./
+&Gloria
+@TemporaM/Pent01-0:Responsory8:2 s/\*/R./
+
+[HymnusM Vespera]
+Adésto sancta Trínitas,
+Par splendor, una Déitas
+Quae exstas rerum ómnium
+Sine fine princípium.
+_
+Te caelórum milítia
+Laudat, adórat, praédicat,
+Tríplexque mundi máchina
+Benedícit per saécula.
+/: Ad duo priores versus sequentis strophæ genflectitur: :/
+_
+Adsumus et nos cérnui
+Te adorántes fámuli:
+Vota precésque súpplicum
+Hymnis junge caeléstium.
+_
+Unum te lumen crédimus,
+Quod et ter idem cólimus:
+Alph[a] et Oméga quem dícimus,
+Te laudat omnis spíritus.
+_
+Laus Patri sit ingénito
+Laus ejus Unigénito:
+Laus sit sancto Spirítui,
+Trino Deo et símplici.
+Amen.
+
+[HymnusM Matutinum]
+@:HymnusM Vespera
+
+[Ant Matutinum]
+@Tempora/Pent01-0::1-12
+Una ígitur Pater, Logos, Paraclitúsque substántia est: o beáta Trínitas.;;97
+@Tempora/Pent01-0::14-15
+
+[Responsory1]
+@Tempora/Pent01-0:Responsory3
+
+[Lectio2]
+@Tempora/Pasc3-2:Lectio1:s/,.*/,/ s/1.*?:/1 Vidi,/ s/2 .*:// s/-5/-6,8/
+@Tempora/Pasc3-2:Lectio2:2
+@Tempora/Pasc3-2:Lectio2:4 s/.*?: // s/.*?: // s/^/8 /
+
+[Lectio3]
+De Epístola prima beáti Joánnis Apóstoli
+!1 Joann 5:4-7
+4 Omne quod natum est ex Deo, vincit mundum: et hæc est victória, quæ vincit mundum, fides nostra.
+5 Quis est, qui vincit mundum, nisi qui credit quóniam Jesus est Fílius Dei?
+6 Hic est, qui venit per aquam et sánguinem, Jesus Christus: non in aqua solum, sed in aqua et sánguine. Et Spíritus est, qui testificátur quóniam Christus est véritas.
+7 Quóniam tres sunt, qui testimónium dant in cælo: Pater, Verbum, et Spíritus Sanctus: et hi tres unum sunt.
+
+[Responsory3]
+@Tempora/Pent01-0:Responsory4
+&Gloria
+@Tempora/Pent01-0:Responsory4:2 s/.*, (.)/R. \u$1/
+
+[Responsory4]
+@Tempora/Pent01-0:Responsory6:3 s/:.*/:/
+@Tempora/Pent01-0:Responsory6:2
+@Tempora/Pent01-0:Versum 0:s/\nR. // s/V/R/
+@Tempora/Pent01-0:Responsory6:2:s/\*/R./
+
+[Responsory5]
+@TemporaM/Pent01-0:Responsory4
+
+[Responsory6]
+@TemporaM/Pent01-0:Responsory8:1-2
+@:Responsory Vespera 1:3
+@TemporaM/Pent01-0:Responsory8:2 s/\*/R./
+
+[Responsory7]
+@Tempora/Pent01-0:Responsory5:1-3 s/\n\* (.)/\l$1/ s/ in /\n* In /
+@Tempora/Pent01-0:Responsory5:1-2 s/\n\* (.)/\l$1/ s/.* in /\nR. In /
+
+[Lectio8]
+@Tempora/Pent01-0:Lectio8a:s/Non .*//
+
+[Responsory8]
+@Tempora/Pent01-0:Responsory7:1-3 s/\n\* L/l/ s/ in/\n* In/ s/ in s/.\nR. In s/
+
+[Lectio9]
+@Tempora/Pent01-0:Lectio8a:s/.* (?=Non)//
+
+[Responsory9]
+R. Summæ Trinitáti, simplici Deo, una divínitas, æquális glória, coætérna maiéstas, Patri, Prolique, sanctóque Flámini:
+* Qui totum subdit suis orbem légibus.
+V. Præstet nobis grátiam Déitas beáta Patris, ac Nati, paritérque Spíritus almi.
+R. Qui totum subdit suis orbem légibus.
+
+[HymnusM Laudes]
+O Trínitas laudábilis,
+Et Unitas mirábilis:
+In símplici substántia
+Virtus manens intérmina!
+_
+Tu cáritas, tu púritas,
+Tu pax et immortálitas,
+Patris, Nati, Parácliti
+Decóre pollens pérpeti.
+_
+Fides, coróna súpplicum
+In te pie fidéntium:
+Extérge sordes méntium,
+Sorti misértus páuperum.
+_
+Laus Patri sit ingénito,
+Laus ejus Unigénito:
+Laus sit Sancto Spirítui,
+Trino Deo et símplici.
+Amen.
+
+[Versum 2]
+@Tempora/Pent01-0:Responsory Nona:8-9
+
+[Responsory Tertia]
+@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Tempora/Pent01-0::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Tempora/Pent01-0::7-9
+
+[Responsory Sexta]
+@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Tempora/Pent01-0::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Tempora/Pent01-0::7-9
+
+[Responsory Nona]
+@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Tempora/Pent01-0::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Tempora/Pent01-0::7-9
+
+[Ant Vespera 3]
+@Tempora/Pent01-0:Ant Vespera:1 s/(?:;;.*)?$/;;109;110;111;112;116/
