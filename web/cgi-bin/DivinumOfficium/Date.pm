@@ -40,7 +40,7 @@ sub getweek {
 
   my $ordtime = 6 + 7 - day_of_week(6, 1, $year);
 
-  if ($month == 1 && $day < ($ordtime - $tomorrow)) {
+  if ($month == 1 && $t < $ordtime) {
     return sprintf("Nat%02i", $tDay);
   }
 
