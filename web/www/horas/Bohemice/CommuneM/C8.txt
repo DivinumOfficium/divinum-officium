@@ -13,6 +13,36 @@ The Lord is in his holy temple, the Lord’s throne is in heaven.;;10
 Adore ye the Lord in his holy court.;;28
 Blessed are they that dwell in thy house, O Lord: they shall praise thee for ever and ever.;;83
 
+[Ant Matutinum] (rubrica cisterciensis)
+Zvedněte brány, * své průchody, knížata, a pozdvihněte se, brány věčné.;;23
+Přistoupím * k Oltáři Božímu, k Bohu, jenž dává radost mému mládí.;;42
+Zasvětil * Hospodin svůj svatostánek.;;45
+Hospodin mi bude * Bohem, a tento kámen bude nazván domem Božím.;;46
+Vystavěl * Mojžíš oltář Hospodinu, svému Bohu.;;47
+Toto je zajisté * dům Boží a brána nebes.;;64
+Jákob uviděl žebřík, * jehož vrchol se dotýkal nebes, a Anděly sestupující, a řekl: Vpravdě je toto místo svaté.;;83
+Vztyčil Jákob * kámen jako sloup a vylil na něj olej.;;86
+Chrám Páně * je svatý, je to stavba Boží, je to Boží dílo.;;87
+Kdo přebývá * v ochraně Nejvyššího, spočine v záštitě Boha nebeského.;;90
+Požehnaná * je sláva Páně z jeho svatého místa.;;95
+Jakmile procitnul * Jákob ze sna, řekl:  Vpravdě je Hospodin na tomto místě.;;98
+Základy * tohoto chrámu položil Bůh na své moudrosti, a v něm Hospodina z nebes společně chváli Andělé; třebaže se do něj opřou větry či rozvodní řeky, nemohou jím nikterak pohnout; základy má totiž na skále.;;260;261;262
+
+[Ant Matutinum] (tempore paschali et rubrica cisterciensis)
+Alleluja, * alleluja, Alleluja.;;23
+;;42
+;;45
+;;46
+;;47
+;;64
+Alleluja, * alleluja, Alleluja.;;83
+;;86
+;;87
+;;90
+;;95
+;;98
+Alleluja, * alleluja, Alleluja.;;260;261;262
+
 [Nocturn 1 Versum] (rubrica cisterciensis)
 V. Základy má dům Páně.
 R. Nad vycholky hor.
@@ -24,34 +54,75 @@ R. Nad vycholky hor.
 V. Blažení, kdo přebývají ve tvém domě, Pane.
 R. Na věky věkův tě budou chválit.
 
+[Lectio3] (rubrica cisterciensis)
+@Commune/C8:Lectio1:s/1-5/4-6/ s/1.*4/4/s
+@Commune/C8:Lectio2:2:s/, protože.*/./s
+
+[Lectio4]
+@Commune/C8:Lectio3
+(sed rubrica cisterciensis)
+@Commune/C8:Lectio2:1-3:s/-9/-7/ s/6 .*Kněží/6 Kněží/s
+
+[Responsory3] (rubrica cisterciensis)
+@Tempora/111-0:Responsory4:1-2
+V. Kdo se rozpomínáte na Hospodina, nemlčte, a nepřecházejte jej v tichosti.
+@Tempora/111-0:Responsory4:4
+
+[Responsory4_]
+R. Strašné je toto místo! Toto je zajisté dům Boží a brána nebes;
+* Opravdu tedy přebývá Hospodin na tomto místě, a já jsem to nevěděl.
+V. Jákob uviděl ve snu žebřík, jehož vrchol se dotýkal nebes, a Anděly sestupující i vystupující po něm, a řekl: 
+R. Opravdu tedy přebývá Hospodin na tomto místě, a já jsem to nevěděl.
 
 [Responsory4]
-R. How terrible is this place! This is no other but the house of God, and the gate of heaven.
-* Indeed the Lord is in this place, and I knew it not.
-V. Jacob saw in his sleep a ladder standing upon the earth, and the top thereof touching heaven: the angels also of God ascending and descending by it.
-R. Indeed the Lord is in this place, and I knew it not.
+@:Responsory4_
+(sed rubrica cisterciensis)
+@:Responsory4C
 
 [Lectio5]
-@Commune/C8:Lectio4:s/And therefore.*//
+@Commune/C8:Lectio4:s/A proto,.*//
 
 [Lectio6]
-@Commune/C8:Lectio4:3 s/.*(And therefore)/$1/ s/$/~/
-@Commune/C8:Lectio5:s/For even.*//
+@Commune/C8:Lectio4:3 s/.*(A proto,)/$1/ s/$/~/
+@Commune/C8:Lectio5:s/Tak jako.*//
 
 [Lectio7]
-@Commune/C8:Lectio5:s/.*(For even)/$1/
+@Commune/C8:Lectio5:s/.*(Tak jako)/$1/
+
+[Responsory5] (rubrica cisterciensis)
+R. Viděl jsem bránu do města otevřenou na Východ, a jména Apoštolů i Beránka na ní napsaná:
+* A nad jejími zdmi postavenou andělskou stráž.
+V. Viděl jsem svaté město nový Jerusalém, nachystaný jako nevěsta ozdobená pro svého muže.
+R. A nad jejími zdmi postavenou andělskou stráž.
+
+[Responsory6] (rubrica cisterciensis)
+R. Když Jákob vyšel ze své země, uviděl slávu Boží, a řekl:
+* Jak strašné je toto místo! Zajisté to musí být dům Boží a brána nebes.
+V. Vpravdě je Hospodin na tomto místě, a já jsem to nevěděl.
+R. Jak strašné je toto místo! Zajisté to musí být dům Boží a brána nebes.
+
+[Responsory7] (rubrica cisterciensis)
+@Tempora/Quad2-0:Responsory6:1-2
+V. Pokud Hospodin, můj Bůh, bude se mnou na této cestě, po které kráčím, a bude mě střežit,
+@Tempora/Quad2-0:Responsory6:4
 
 [Responsory8]
-R. How lovely are thy tabernacles, O Lord of hosts! My soul longeth and fainteth
-* For the courts of the Lord.
-V. They that dwell in thy house, O Lord they shall praise thee for ever and ever.
-R. For the courts of the Lord.
+R. Jak líbezné jsem tvé stánky, Hospodine zástupů! Touží a chřadne duše má
+* Po síních Hospodinových.
+V. Kdož přebývají v tvém domě, Hospodine, navěky tě budou chválit.
+R. Po síních Hospodinových.
+
+[Responsory8] (rubrica cisterciensis)
+R. Můj dům bude se nazývat domem modlitby, praví Hospodin; 
+* V něm každý, kdo prosí, dostane; a kdo hledá, nalezne; a kdo tluče, tomu bude otevřeno.
+@Commune/C8:Responsory5:3
+R. V něm každý, kdo prosí, dostane; a kdo hledá, nalezne; a kdo tluče, tomu bude otevřeno.
 
 [Lectio10]
-@Commune/C8:Lectio8:s/Zacchaeus, .*//s
+@Commune/C8:Lectio8:s/Zacheus .*//s
 
 [Lectio11]
-@Commune/C8:Lectio8:s/.* Zacchaeus, /Zacchaeus, /s
+@Commune/C8:Lectio8:s/.* Zacheus /Zacheus /s
 
 [Responsory11]
 R. Blessed art thou in the holy temple of thy glory that has been built
@@ -59,13 +130,17 @@ R. Blessed art thou in the holy temple of thy glory that has been built
 V. Bless this house that I have built.
 R. To the praise and glory of your name O Lord.
 
+[Responsory11] (rubrica cisterciensis)
+@Tempora/Pent01-3:Responsory3
+
 [Responsory12]
 R. I saw the holy city, the new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband.
 *And I heard a great voice from the throne, saying: Behold the tabernacle of God with men, and he will dwell with them.
 V. And they shall be his people; and God himself with them shall be their God.
 R. And I heard a great voice from the throne, saying: Behold the tabernacle of God with men, and he will dwell with them.
 
-[Responsorium] (rubrica cisterciensis)
-<font color=» red» >Responsorium.</font> Hrozné je toto místo, avšak není to nic jiného než dům Boží a brána nebeská. * Vpravdě je totiž Hospodin na tomto místě, ale já jsem to nevěděl.
-V. Jakmile procitnul Jákob ze sna, řekl: 
-* Vpravdě je totiž Hospodin na tomto místě, ale já jsem to nevěděl.
+[Responsory12] (rubrica cisterciensis)
+R. Vpravdě blažená matka Církev, již takto osvěcuje čest božského úradku, již takto zdobí slavná krev vítězných Mučedníků;
+* Již vyznání neporušeného panenství odělo v bělostný háv.
+V. Mezi jejími květy nechybí růže ani lilie.
+R. Již vyznání neporušeného panenství odělo v bělostný háv.
