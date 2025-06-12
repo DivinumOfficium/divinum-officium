@@ -86,6 +86,7 @@ sub latin_uppercase {
 sub findkalentry {
   my ($entry, $ver) = @_;
   our $winner = subdirname('Sancti', $ver) . "$entry.txt";
+  $version = $ver;
   my %saint = %{setupstring('Latin', "$winner")};
 
   my @srank = split(";;", $saint{Rank});

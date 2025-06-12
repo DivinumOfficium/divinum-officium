@@ -539,7 +539,7 @@ sub lectiones {
   }
   push(@s, "\n");
 
-  my $rpn = ($rule =~ /12 lectio/) ? 4 : ($rule !~ /Lectio brevis/) ? 3 : 1;    # readings per nocturn
+  my $rpn = ($num && $rule =~ /12 lectio/) ? 4 : ($rule !~ /Lectio brevis/) ? 3 : 1;    # readings per nocturn
   $num ||= 1;
 
   for my $i (1 .. $rpn) {                                                       # push all the lectios
@@ -611,9 +611,10 @@ sub lectio : ScriptFunc {
   }
   my %w = (columnsel($lang)) ? %winner : %winner2;
 
-  if ($num < 4 && $version =~ /trident/i && $winner{Rank} =~ /Dominica/i && $month != 12 && $dayofweek > 0) {
-    my $inum = $num + 6;
+  if ($num < 4 && $version =~ /trident|monastic.*divino/i && $winner{Rank} =~ /Dominica/i && $month != 12 && $dayofweek > 0) {
+    my $inum = $num + ($version =~ /Monastic/ ? 8 : 6);
     $w{"Lectio$num"} = $w{"Lectio$inum"};
+    $w{"Lectio$num"} .= $w{"Lectio12"} if $inum == 11;
     setbuild2("Lectiones I Nocturno de Homilia Dominicæ anticipiata") if $num == 1;
   }
 
