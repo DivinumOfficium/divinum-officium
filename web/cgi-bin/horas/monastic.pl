@@ -206,10 +206,11 @@ sub psalmi_matutinum_monastic {
   nocturn(1, $lang, \@psalmi, (0 .. 7));
 
   if (
-    ($rule =~ /12 lectiones/
-    || ( (($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
-      && $dayname[1] !~ /feria|sabbato|infra octavam/i
-      && $rule !~ /3 lectiones/i))
+    (
+      $rule =~ /12 lectiones/ || ((($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
+        && $dayname[1] !~ /feria|sabbato|infra octavam/i
+        && $rule !~ /3 lectiones/i)
+    )
     && !($dayofweek > 0 && $winner{Rank} =~ /Dominica (?!infra.*(?:Nat|Epi))/i)
   ) {
     lectiones(1, $lang);    # first Nocturn of 4 lessons (
@@ -240,22 +241,24 @@ sub psalmi_matutinum_monastic {
   }
   $psalmi[14] = $psalmi[15] = ''
     if (
-      ($rule !~ /12 lectiones/
-      && !(
-           (($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
-        && $dayname[1] !~ /feria|sabbato|infra octavam/i
-        && $rule !~ /3 lectiones/i
-      ))
+      (
+        $rule !~ /12 lectiones/ && !(
+             (($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
+          && $dayname[1] !~ /feria|sabbato|infra octavam/i
+          && $rule !~ /3 lectiones/i
+        )
+      )
       || ($dayofweek > 0 && $winner{Rank} =~ /Dominica (?!infra.*(?:Nat|Epi))/i)
     );
   nocturn(2, $lang, \@psalmi, (8 .. 15));
 
   # In case of Matins of 3 nocturns with 12 lessons:
   if (
-    ($rule =~ /12 lectiones/
-    || ( (($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
-    && $dayname[1] !~ /feria|sabbato|infra octavam/i
-    && $rule !~ /3 lectiones/i))
+    (
+      $rule =~ /12 lectiones/ || ((($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
+        && $dayname[1] !~ /feria|sabbato|infra octavam/i
+        && $rule !~ /3 lectiones/i)
+    )
     && !($dayofweek > 0 && $winner{Rank} =~ /Dominica (?!infra.*(?:Nat|Epi))/i)
   ) {
     lectiones(2, $lang);    # lessons 5 – 8
