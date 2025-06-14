@@ -110,9 +110,10 @@ sub psalmi_matutinum_monastic {
     setbuild("$src", "$name $i Versum", 'subst');
   }
 
-  if ($version =~ /Cist/i 
+  if ( $version =~ /Cist/i
     && $winner !~ /^Tempora/
-    && $winner{Rule} =~ /3 lectio|(ex|vide) C10/i) {
+    && $winner{Rule} =~ /3 lectio|(ex|vide) C10/i)
+  {
     my %com = columnsel($lang) ? %commune : %commune2;
     ($psalmi[6], $psalmi[7]) = split("\n", $com{"Nocturn 1 Versum"});
     setbuild("$commune", "Nocturn 1 Versum", 'subst');

@@ -714,7 +714,7 @@ sub lectio : ScriptFunc {
   }
   my $w = $w{"Lectio$num"};
 
-  if ($nocturn == 1 && $rule =~ /Lectio1 Quad/i && $dayname[0] !~ /Quad\d/i) {
+  if ($nocturn == 1 && $rule =~ /Lectio1 Quad/i && $dayname[0] !~ /Quad(\d|p3\-[3456])/i) {
 
     # For some Saints, the assigned I nocturn readings (from Commune) are valid in Quadragesima only;
     # in Septuag/Paschaltide, these get the Lessons from the occurent scripture instead (e.g., 04-13)
@@ -894,7 +894,7 @@ sub lectio : ScriptFunc {
       # Monastic: Commemoratio Sancti unless Sunday outranking duplex or Feast of 1st class (or octave) on a Feria
       || ( $rule =~ /12 lectio/i
         && $num == 12
-        && $version != /Cist/i
+        && $version !~ /Cist/i
         && !(($rank > 5.5 && $dayofweek && !homilyflag) || ($winner{Rank} =~ /Dominica/i && $rank > 3)))
     )
 
@@ -915,7 +915,7 @@ sub lectio : ScriptFunc {
       $L9winnerflag = 1;
     }
 
-    $j0 = ($num == 12) ? 9 : 7;    # where to look for Homily
+    $j0 = $homilyflag ? 1 : ($num == 12) ? 9 : 7;    # where to look for Homily
 
     if ( ($commemoratio =~ /tempora/i && $commemoratio !~ /Nat(29|30|31)/i || $commemoratio =~ /01\-05\./)
       && ($homilyflag == 1 || exists($commemoratio{"Lectio$j0"}))

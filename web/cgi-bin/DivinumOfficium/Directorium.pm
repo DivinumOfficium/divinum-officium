@@ -131,7 +131,7 @@ sub load_transfer {
     foreach (@lines) {
       my ($line, $ver) = split(/\s*;;\s*/);
 
-      if (!$ver || ($ver =~ $_data{$version}{transfer})) {
+      if (!$ver || ($ver =~ $_data{$version}{lc($type)})) {
         push(@transfer, split(/=/, $line, 2));
       }
     }
@@ -224,8 +224,10 @@ sub dirge {
     $hora =~ /Laudes/i
     ? get_sday($month, $day, $year)
     : nextday($month, $day, $year);
-  my $dirgeline = get_from_directorium('transfer', $version, 'dirge1', $year) . ' '
-    . get_from_directorium('transfer', $version, 'dirge2', $year);
+  my $dirgeline =
+      get_from_directorium('transfer', $version, 'dirge1', $year) . ' '
+    . get_from_directorium('transfer', $version, 'dirge2', $year) . ' '
+    . get_from_directorium('transfer', $version, 'dirge3', $year);
   $dirgeline =~ /$sday/;
 }
 
