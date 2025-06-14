@@ -180,7 +180,7 @@ $Deo gratias
 [Versum 2]
 @Commune/C10
 (sed rubrica cisterciensis)
-@CommuneM/C10:MM Capitulum:s/.*(V\.)/$1/s
+@CommuneM/C10:MM Capitulum_:s/.*(V\.)/$1/s
 
 [Ant 2]
 @Commune/C10
