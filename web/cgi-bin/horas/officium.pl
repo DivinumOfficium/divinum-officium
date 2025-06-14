@@ -33,7 +33,6 @@ $error = '';
 $debug = '';
 
 our $Ck = 0;
-our $notes = 0;
 our $missa = 0;
 our $officium = substr($0, rindex($0, '/') + 1);
 our $Ck = substr($officium, 0, 1) eq 'C';
@@ -171,7 +170,6 @@ our $testmode = strictparam('testmode');
 if (!$testmode) { $testmode = strictparam('testmode1'); }
 if ($testmode !~ /(Season|Saint|Common)/i) { $testmode = 'regular'; }
 our $expandnum = strictparam('expandnum');
-$notes = strictparam('notes');
 
 $only = !$Ck && ($lang1 eq $lang2);
 

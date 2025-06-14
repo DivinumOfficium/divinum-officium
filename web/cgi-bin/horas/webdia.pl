@@ -504,14 +504,6 @@ sub setcell {
     if (columnsel($lang)) {
       $searchind++ if ($text !~ /{omittitur}/);
       print "<TR>";    # unless $officium =~ /Eofficium/;
-
-      if ($notes && $text =~ /\{\:(.*?)\:\}/) {
-        my $notefile = $1;
-        $notefile =~ s/^pc/p/;
-        my $colspan = ($only) ? 1 : 2;
-        print "<TR><TD COLSPAN='$colspan' WIDTH='100%' VALIGN='MIDDLE' ALIGN='CENTER'>\n"
-          . "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH='80%'></TD></TR>\n";
-      }
     }
     print "<TD VALIGN='TOP' WIDTH='$width%'"
       . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID='$hora$searchind'") . ">";
