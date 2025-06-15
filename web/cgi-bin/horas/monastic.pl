@@ -110,9 +110,10 @@ sub psalmi_matutinum_monastic {
     setbuild("$src", "$name $i Versum", 'subst');
   }
 
-  if ($version =~ /Cist/i 
+  if ( $version =~ /Cist/i
     && $winner !~ /^Tempora/
-    && $winner{Rule} =~ /3 lectio|(ex|vide) C10/i) {
+    && $winner{Rule} =~ /3 lectio|(ex|vide) C10/i)
+  {
     my %com = columnsel($lang) ? %commune : %commune2;
     ($psalmi[6], $psalmi[7]) = split("\n", $com{"Nocturn 1 Versum"});
     setbuild("$commune", "Nocturn 1 Versum", 'subst');
@@ -206,15 +207,17 @@ sub psalmi_matutinum_monastic {
   nocturn(1, $lang, \@psalmi, (0 .. 7));
 
   if (
-    $rule =~ /12 lectiones/
-    || ( (($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
-      && $dayname[1] !~ /feria|sabbato|infra octavam/i
-      && $rule !~ /3 lectiones/i)
+    (
+      $rule =~ /12 lectiones/ || ((($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
+        && $dayname[1] !~ /feria|sabbato|infra octavam/i
+        && $rule !~ /3 lectiones/i)
+    )
+    && !($dayofweek > 0 && $winner{Rank} =~ /Dominica (?!infra.*(?:Nat|Epi))/i)
   ) {
     lectiones(1, $lang);    # first Nocturn of 4 lessons (
   } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i
     && monthday($day, $month, $year, ($version =~ /196/) + 0, 0) !~ /^11[1-5]\-/
-    && $winner{Rank} !~ /vigil|quat(t?)uor|infra octavam|post octavam asc/i
+    && $winner{Rank} !~ /vigil|quat(t?)uor|infra octavam|post octavam asc|Dominica/i
     && ($winner{Rank} !~ /secunda.*roga/i || $version =~ /196/)
     && $rule !~ /3 lectiones/)
   {
@@ -239,21 +242,25 @@ sub psalmi_matutinum_monastic {
   }
   $psalmi[14] = $psalmi[15] = ''
     if (
-      $rule !~ /12 lectiones/
-      && !(
-           (($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
-        && $dayname[1] !~ /feria|sabbato|infra octavam/i
-        && $rule !~ /3 lectiones/i
+      (
+        $rule !~ /12 lectiones/ && !(
+             (($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
+          && $dayname[1] !~ /feria|sabbato|infra octavam/i
+          && $rule !~ /3 lectiones/i
+        )
       )
+      || ($dayofweek > 0 && $winner{Rank} =~ /Dominica (?!infra.*(?:Nat|Epi))/i)
     );
   nocturn(2, $lang, \@psalmi, (8 .. 15));
 
   # In case of Matins of 3 nocturns with 12 lessons:
   if (
-    $winner{Rule} =~ /12 lectiones/
-    || ( (($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
-      && $dayname[1] !~ /feria|sabbato|infra octavam/i
-      && $rule !~ /3 lectiones/i)
+    (
+      $rule =~ /12 lectiones/ || ((($rank >= 4 && $version =~ /divino/i) || ($rank >= 2 && $version =~ /trident/i))
+        && $dayname[1] !~ /feria|sabbato|infra octavam/i
+        && $rule !~ /3 lectiones/i)
+    )
+    && !($dayofweek > 0 && $winner{Rank} =~ /Dominica (?!infra.*(?:Nat|Epi))/i)
   ) {
     lectiones(2, $lang);    # lessons 5 – 8
 

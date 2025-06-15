@@ -780,10 +780,18 @@ sub html_dayhead {
   my $output = setfont(liturgical_color($head), $head);
 
   if ($subhead) {
-    ($pre, $main) = split(/: /, $subhead, 2);
-    $output .= "<br/>\n<SPAN STYLE=\"font-size:82%; color:maroon;\"><I>$pre";
-    $output .= ": " . setfont(liturgical_color($main, ''), $main) if $main;
-    $output .= "</I></SPAN>\n";
+    my ($pre, $main) = split(/: /, $subhead, 2);           # Split the pre-position from office title
+    my ($main, $vespera) = split(/\<br\/\>/, $main, 2);    # Split any Vespers information
+    $main =~ s/\(Scriptura ut in\: (.*)\)//;               # Save any Scripture transfer information
+    my $scripturaUt = $1;
+    $output .= "<br/>\n<I><SPAN STYLE=\"font-size:82%;\"><SPAN STYLE=\"color:maroon;\">$pre";
+    $output .= ":</SPAN> " . setfont(liturgical_color($main, ''), $main) if $main;
+    $output .= "<br/><SPAN STYLE=\"color:maroon;\">$vespera<\SPAN>" if $vespera;
+    $output .=
+      "<br/><SPAN STYLE=\"color:maroon;\">Scriptura ut in <\SPAN>"
+      . setfont(liturgical_color($scripturaUt, ''), $scripturaUt)
+      if $scripturaUt && $hora eq 'Matutinum';
+    $output .= "</SPAN></I>\n";
   }
   $output =~ s/\s\&\s/ &amp; /;    # HTML - ampersand
   $output;

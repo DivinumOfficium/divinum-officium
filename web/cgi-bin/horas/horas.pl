@@ -347,11 +347,14 @@ sub setlink {
       my @args = (parse_script_arguments($arg_string), $lang);
       my @fulltext = split("\n", dispatch_script_function($function_name, @args));
 
+      shift @fulltext unless $fulltext[0];
+
       if ($function_name eq 'psalm') {
 
         # Canticles
-        $fulltext[0] =~ s/.*?I\>([\w\s]+?)\<.*/$1/u;    # remove formatting
-        $fulltext[1] =~ s/\!(.*)$/ \($1\)/;             # reformat Biblica source
+        #$fulltext[0] =~ s/.*?I\>([\w\s]+?)\<.*/$1/u;    # remove formatting
+        $fulltext[0] =~ s/\!([\w\s]+?)/$1/u;    # remove formatting
+        $fulltext[1] =~ s/\!(.*)$/ \($1\)/;     # reformat Biblica source
         $name = $fulltext[0] . $fulltext[1];
       } else {
 

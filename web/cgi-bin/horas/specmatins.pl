@@ -539,10 +539,10 @@ sub lectiones {
   }
   push(@s, "\n");
 
-  my $rpn = ($rule =~ /12 lectio/) ? 4 : ($rule !~ /Lectio brevis/) ? 3 : 1;    # readings per nocturn
+  my $rpn = ($num && $rule =~ /12 lectio/) ? 4 : ($rule !~ /Lectio brevis/) ? 3 : 1;    # readings per nocturn
   $num ||= 1;
 
-  for my $i (1 .. $rpn) {                                                       # push all the lectios
+  for my $i (1 .. $rpn) {                                                               # push all the lectios
     my $l = ($num - 1) * $rpn + $i;
     $i = 0 if $rule =~ /Lectio brevis sine absolutio/;
 
@@ -611,9 +611,15 @@ sub lectio : ScriptFunc {
   }
   my %w = (columnsel($lang)) ? %winner : %winner2;
 
-  if ($num < 4 && $version =~ /trident/i && $winner{Rank} =~ /Dominica/i && $month != 12 && $dayofweek > 0) {
-    my $inum = $num + 6;
+  if ( $num < 4
+    && $version =~ /trident|monastic.*divino/i
+    && $winner{Rank} =~ /Dominica/i
+    && $month != 12
+    && $dayofweek > 0)
+  {
+    my $inum = $num + ($version =~ /Monastic/ ? 8 : 6);
     $w{"Lectio$num"} = $w{"Lectio$inum"};
+    $w{"Lectio$num"} .= $w{"Lectio12"} if $inum == 11;
     setbuild2("Lectiones I Nocturno de Homilia Dominicæ anticipiata") if $num == 1;
   }
 
@@ -708,7 +714,7 @@ sub lectio : ScriptFunc {
   }
   my $w = $w{"Lectio$num"};
 
-  if ($nocturn == 1 && $rule =~ /Lectio1 Quad/i && $dayname[0] !~ /Quad\d/i) {
+  if ($nocturn == 1 && $rule =~ /Lectio1 Quad/i && $dayname[0] !~ /Quad(\d|p3\-[3456])/i) {
 
     # For some Saints, the assigned I nocturn readings (from Commune) are valid in Quadragesima only;
     # in Septuag/Paschaltide, these get the Lessons from the occurent scripture instead (e.g., 04-13)
@@ -888,7 +894,7 @@ sub lectio : ScriptFunc {
       # Monastic: Commemoratio Sancti unless Sunday outranking duplex or Feast of 1st class (or octave) on a Feria
       || ( $rule =~ /12 lectio/i
         && $num == 12
-        && $version != /Cist/i
+        && $version !~ /Cist/i
         && !(($rank > 5.5 && $dayofweek && !homilyflag) || ($winner{Rank} =~ /Dominica/i && $rank > 3)))
     )
 
@@ -909,7 +915,7 @@ sub lectio : ScriptFunc {
       $L9winnerflag = 1;
     }
 
-    $j0 = ($num == 12) ? 9 : 7;    # where to look for Homily
+    $j0 = $homilyflag ? 1 : ($num == 12) ? 9 : 7;    # where to look for Homily
 
     if ( ($commemoratio =~ /tempora/i && $commemoratio !~ /Nat(29|30|31)/i || $commemoratio =~ /01\-05\./)
       && ($homilyflag == 1 || exists($commemoratio{"Lectio$j0"}))
@@ -1397,12 +1403,14 @@ sub resolveitable {
   my (%winit, @file, $lim, $start, $i);
 
   if ($file !~ /\~B$/ || !$initia) {  # ==> !( ~B && $initia ); unless there is a conflict between a B rule and a initia
-    $file =~ s/~[AB]$//;              # remove ~A or ~B from the end of the string
-    @file = split('~', $file);        # gather the transfered intias
-    $lim = 3;                         # in general, allow up to 3 transferals
-    $start = 1;                       # in general, start at 1
+    my $replace = $file =~ /\~R$/ ? 1 : 0;    # if we have a ~R(eplace) rule
+    $file =~ s/~[ABR]$//;                     # remove ~A(fter) or ~B(efore) or ~R(eplace) from the end of the string
+    @file = split('~', $file);                # gather the transfered intias
+    $lim = 3;                                 # in general, allow up to 3 transferals
+    $start = 1;                               # in general, start at 1
 
-    if ($initia) {                    # if we have a inita on the day already (so we put the transferred afterwards)
+    if ($initia && !$replace)
+    {    # if we have an (unreplaced) inita on the day already (so we put the transferred afterwards)
       $start = (@file < 2) ? 3 : 2;    # if we have one transferred place it no. at 3; otherwise at 2&3
 
       if ($rule !~ /(9|12) lectiones/i && $winner =~ /Sancti/i) {
@@ -1410,7 +1418,7 @@ sub resolveitable {
         $start = 1;
       }    # in a sanctoral of 3 lessons, only one transfer is allowed; and placed at the beginning
     }
-    $i = 1;
+    $i = 1;    # here $i is used as a counter for how many files are transferred
 
     while (@file && $i <= $lim) {    # while we have more transferals and stay in the limit
       $file = shift(@file);
@@ -1423,8 +1431,9 @@ sub resolveitable {
       $start++;
     }
 
-    while ($start <= 3)
-    { # only in case we put transfers "before", also transfer the remaining parts of the last initia (apparently this can only happen with a single transfer as well, so we can use $i equal to $start ???)
+    $i = 2;    # from here $i is used as a counter for which Lectio$i gets appended
+
+    while ($start <= 3) { # only in case we put transfers "before", also transfer the remaining parts of the last initia
 
       #$w{"Lectio$start"} = $winit{"Lectio$i"};
       #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = $winit{"Responsory$i"};}

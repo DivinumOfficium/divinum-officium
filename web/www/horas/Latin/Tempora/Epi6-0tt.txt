@@ -1,14 +1,15 @@
 @Tempora/Epi6-0
 
 [Officium]
-Dominica VI Post Epiphaniam
+De Dominica VI Post Epiphaniam
 
 [Rank]
-;;Simplex;;1.3
+;;Simplex;;1.5
 
 [Rule]
 3 lectiones
 Symbolum Athanasium
+No prima vespera
 
 [Lectio1]
 @Tempora/Epi6-0:Lectio7

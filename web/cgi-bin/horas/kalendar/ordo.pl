@@ -21,9 +21,12 @@ sub ordo_entry {
   $c2 = $dayname[2];
 
   ($h1, $h2) = split(/: /, $c2, 2);
+  $h2 =~ s/(\(Scriptura ut in\: .*\))//;
+  my $scripturaUt = $1;
   ($c2, $h1, $h2) = ('', '', $h1) unless $h2;
   $c2 = setfont($smallblack, "$h1:") if $h1;
   $c2 .= "<I>" . setfont(liturgical_color($h2), " $h2") . "</I>" if $h2;
+  $c2 .= "<I>" . setfont($smallblack, " $scripturaUt") . "</I>" if $scripturaUt;
 
   if ($c2 && @commemoentries > 1) {
     for my $ind (1 .. @commemoentries - 1) {
@@ -37,12 +40,13 @@ sub ordo_entry {
   $c2 =~ s/Hebdomadam/Hebd/i;
   $c2 =~ s/Quadragesima/Quadr/i;
 
-  if ( $version !~ /196/
-    && $winner =~ /Sancti/
-    && exists($winner{Lectio1})
-    && $winner{Lectio1} !~ /\@Commune/i
-    && $winner{Lectio1} !~ /\!(Matt|Marc|Luc|Joannes)\s+[0-9]+\:[0-9]+\-[0-9]+/i)
-  {
+  if (
+    $version !~ /196/ && $winner =~ /Sancti/ && (exists($winner{Lectio1})
+      && $winner{Lectio1} !~ /\@Commune/i
+      && $winner{Lectio1} !~ /\!(Matt|Marc|Luc|Joannes)\s+[0-9]+\:[0-9]+\-[0-9]+/i)
+    || ($winner{Rule} =~ /In 1 nocturno lectiones ex commune/i
+      && !($winner{Rule} =~ /Lectio1 Quad/i && $dayname[0] !~ /Quad(\d|p3\-[3456])/i))
+  ) {
     $c1 .= setfont($smallfont, " *L1*");
   }
 
