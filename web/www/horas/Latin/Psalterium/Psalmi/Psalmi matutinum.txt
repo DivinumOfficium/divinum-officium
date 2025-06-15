@@ -565,7 +565,7 @@ Quia mirabília * fecit Dóminus;;97
 Jubiláte * Deo omnis terra;;99!Bonum est * confitéri Dómino;;91
 ;;100
 
-[Daym6]
+[Daym6_]
 Clamor meus * ad te véniat, Deus;;101
 ;;102
 Bénedic, * ánima mea Dómino;;103(1-24)
@@ -580,6 +580,17 @@ De necessitátibus meis * éripe me, Dómine;;106(1-24)
 ;;106(25-43)
 Confitébor * Dómino nimis in ore meo;;107
 ;;108
+
+[Daym6C]
+@:Daym6_:1-6
+V. Quærite Dóminum, et confirmámini.
+R. Quærite fáciem ejus semper.
+@:Daym6_:9-14
+
+[Daym6]
+@:Daym6_
+(sed rubrica cisterciensis)
+@:Daym6C
 
 [Daym Pasch]
 Jesum qui crucifíxus est * quǽritis, allelúja; non est hic: surréxit enim, sicut dixit vobis, allelúja.

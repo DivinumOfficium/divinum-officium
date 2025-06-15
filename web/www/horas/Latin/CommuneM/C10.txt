@@ -26,6 +26,9 @@ R. Nuntiávit Maríæ.
 (sed tempore paschali)
 @:Ant 1_Pasch
 
+[Nocturn 1 Versum] (rubrica cisterciensis)
+@Commune/C6:Versum 1
+
 [Lectio21]
 !from tempora
 
@@ -35,13 +38,39 @@ R. Nuntiávit Maríæ.
 [Lectio11]
 !from tempora
 
-[MM Capitulum]
+[Lectio1] (rubrica cisterciensis)
+@Sancti/07-02:Lectio1:s/1-7/1-5/ s/6.*//s
+
+[Lectio2] (rubrica cisterciensis)
+Sermo sancti Bernárdi Abbátis.
+!Ex Serm. 2. de Virgine Deipara‚ alias, de Aquæductu.
+Altius intuémini, fratres mei, quanto devotiónis afféctu a nobis Mariam volúerit honorári, qui totius boni plenitúdinem pósuit in María: ut proinde si quid spei in nobis est, si quid grátiæ, si quid salútis, ab ea novérimus redundáre, quæ ascéndit delíciis áffluens. Hortus plane deliciárum, quem non modo affláverit véniens‚ sed et perfláverit supervéniens auster ille divínus, ut úndique fluant et áffluant arómata ejus‚ charísmata scílicet gratiárum.
+
+[Responsory2] (rubrica cisterciensis)
+@Commune/C11:Responsory3
+
+[Lectio3] (rubrica cisterciensis)
+Tolle corpus hoc soláre, quod illúminat mundum, ubi dies? Tolle Mariam hanc maris stellam, maris útique magni et spatiósi, quid nisi calígo invólvens, et umbra mortis, ac densíssimæ ténebræ relinquúntur? Totis ergo medúllis córdium, totis præcordiórum afféctibus‚ et votis ómnibus Mariam hanc venerémur: quia sic est volúntas ejus, qui totum nos habére vóluit per Maríam.
+
+[MM Capitulum_]
 !Eccli 24:26-28
 v. Transíte ad me, omnes qui concupíscitis me, et a generatiónibus meis implémini: spíritus enim meus super mel dulcis, et heréditas mea super mel et favum: memória mea in generatióne sæculórum.
 $Deo gratias
 _
 V. Speciósa facta es et suávis.
 R. In delíciis tuis, sancta Dei Génetrix.
+
+[MM CapitulumC]
+!Eccli. 24, 18
+v. Ego mater pulchræ dilectiónis, et timóris, et agnitiónis, et sanctæ spei.
+$Deo gratias
+_
+@Commune/C6:Nocturn 2 Versum
+
+[MM Capitulum]
+@:MM Capitulum_
+(sed rubrica cisterciensis)
+@:MM CapitulumC
 
 [Responsory Laudes]
 @:Responsory Vespera
