@@ -535,7 +535,6 @@ sub occurrence {
           %tscrip = %{officestring('Latin', $tsfile)};
           $tsrank = $tscrip{Rank} || $tscrip{Scriptura};
           $tsrank =~ s/\s*;;.*|\s*$//s;
-          $initia = ($tscrip{Lectio1} =~ /!.*? 1\:1\-/) ? 1 : 0;
           $officename[2] = "Tempora: $trank[0] (Scriptura ut in: $tsrank)";
         } else {
           $officename[2] = "Scriptura: $trank[0]";
@@ -690,6 +689,23 @@ sub occurrence {
       my %s = %{setupstring('Latin', $sname)};
       if ($s{Rank} =~ /Vigil/i && exists($s{Commemoratio})) { $commemorated = $sname; }
       if ($s{Rank} =~ /Vigil/i && exists($s{"Commemoratio 2"})) { $commemorated = $sname; }
+    }
+
+    if (!$officename[2]) {
+
+      my $ittable = initiarule($month, $day, $year);
+
+      if ($ittable && $ittable !~ /\~[A]$/) {
+
+        # If we have transferred scripture which is not coming "after" the actual day's
+        # we put the source of the transferred Letio1 into the headline
+        my @tsfile = split('~', $ittable);
+        my $tsfile = subdirname('Tempora', $version) . $tsfile[0] . ".txt";
+        %tscrip = %{officestring('Latin', $tsfile)};
+        $tsrank = $tscrip{Rank} || $tscrip{Scriptura};
+        $tsrank =~ s/\s*;;.*|\s*$//s;
+        $officename[2] = "Scriptura ut in: $tsrank";
+      }
     }
   }
 
