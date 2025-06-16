@@ -179,7 +179,7 @@ sub psalmi_minor {
 
   #look for special from proprium the tempore of sancti
   if ($hora ne 'Completorium') {
-    my ($w, $c) = getproprium("Ant $hora", $lang, 0, 1);
+    my ($w, $c) = getproprium("Ant $hora", $lang, 0);
 
     if (!$w && $rule !~ /Psalmi\s*(?:minores)*\s*ex Psalterio/i) {
       ($w, $c) = getanthoras($lang);
@@ -376,7 +376,7 @@ sub psalmi_major {
     } elsif (!exists($w{'Ant Vespera'})
       && ($communetype =~ /ex/ || ($version =~ /Trident/i && $winner =~ /Sancti/i)))
     {
-      ($w, $c) = getproprium('Ant Vespera 3', $lang, 1, 1);
+      ($w, $c) = getproprium('Ant Vespera 3', $lang, 1);
       setbuild2("Antiphona $commune");
     }
   }
@@ -394,7 +394,7 @@ sub psalmi_major {
   } elsif (($communetype && $communetype =~ /ex/)
     || ($version =~ /Trident/i && $hora eq 'Laudes' && $winner =~ /Sancti/))
   {
-    ($w, $c) = getproprium("Ant $hora", $lang, 1, 1);
+    ($w, $c) = getproprium("Ant $hora", $lang, 1);
     setbuild2("Antiphona $commune");
   }
   if ($w) { @antiphones = split("\n", $w); $comment = $c; }
@@ -402,7 +402,7 @@ sub psalmi_major {
   my @p;
 
   #Psalmi de dominica
-  if (($rule =~ /Psalmi Dominica/i || ($commune{Rule} && $commune{Rule} =~ /Psalmi Dominica/i))
+  if ( ($rule =~ /Psalmi Dominica/i || ($commune{Rule} && $commune{Rule} =~ /Psalmi Dominica/i))
     && ($antiphones[0] !~ /\;\;\s*[0-9]+/)
     && ($rule !~ /Psalmi Feria/i))
   {

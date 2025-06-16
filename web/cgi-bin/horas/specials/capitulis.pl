@@ -14,7 +14,7 @@ sub capitulum_major {
 
   setbuild('Psalterium/Special/Major Special', $name, 'Capitulum ord');
 
-  my ($capit, $c) = getproprium($name, $lang, 1, 1);
+  my ($capit, $c) = getproprium($name, $lang, 1);
 
   if (!$capit) {
     my %capit = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
@@ -39,7 +39,7 @@ sub monastic_major_responsory {
   my ($resp, $c, $cistrv1f);
 
   # First Vespers can use special 'Responsory Vespera 1' (cist & OP)
-  ($resp, $c) = getproprium("$key 1", $lang, 1, 1) if $vespera == 1;
+  ($resp, $c) = getproprium("$key 1", $lang, 1) if $vespera == 1;
 
   if ($resp && $version =~ /Cist/) {
 
@@ -70,7 +70,7 @@ sub monastic_major_responsory {
   }
 
   if (!$resp) {    # 'Responsory $hora'
-    ($resp, $c) = getproprium($key, $lang, 1, 1) unless $resp;
+    ($resp, $c) = getproprium($key, $lang, 1) unless $resp;
   }
 
   # Monastic Responsories at Major Hours are usually identical to Roman at Tertia and Sexta
@@ -79,13 +79,13 @@ sub monastic_major_responsory {
     $key =~ s/Laudes/Breve Sexta/ if $version =~ /cist/i;
     $key =~ s/Vespera/Breve Sexta/;
     $key =~ s/Laudes/Breve Tertia/;
-    ($resp, $c) = getproprium($key, $lang, 1, 1);
+    ($resp, $c) = getproprium($key, $lang, 1);
   }
 
   # For backwards compatability, look for the legacy "R.br & Versicle" if necessary
   if (!$resp) {
     $key =~ s/Breve //;
-    ($resp, $c) = getproprium($key, $lang, 1, 1);
+    ($resp, $c) = getproprium($key, $lang, 1);
   }
 
   # If no proper Responsory, take it from Psalterium
@@ -141,12 +141,12 @@ sub capitulum_minor {
     # use Laudes for Tertia apart C12
     my $key = "Capitulum $hora";
     $key =~ s/Tertia/Laudes/ if ($hora eq 'Tertia' && $votive !~ /C12/);
-    my ($w, $c) = getproprium($key, $lang, 1, 1);
+    my ($w, $c) = getproprium($key, $lang, 1);
 
     if ($w && $w !~ /\_\nR\.br/) {    # add responsory if missing
       $name = "Responsory $hora";
       $name .= 'M' if ($version =~ /Monastic/);    # getproprium subsitutes Nocturn 123 Versum only from Commune
-      my ($wr, $cr) = getproprium($name, $lang, 1, 1);
+      my ($wr, $cr) = getproprium($name, $lang, 1);
 
       if (!$wr) {
 
@@ -167,11 +167,11 @@ sub capitulum_minor {
             Sexta => 'Versum Sexta',      #	getproprium substitutes Nocturn 3 Versum only from Commune
             Nona => 'Versum Nona',        #	getproprium substitutes Versum 2 only from Commune
           );
-          ($wr, $cr) = getproprium("Responsory Breve $hora", $lang, 1, 1);
+          ($wr, $cr) = getproprium("Responsory Breve $hora", $lang, 1);
           $wr =~ s/\s*$/\n\_\n/ if $wr;
         }
 
-        ($vers, $cvers) = getproprium($replace{$hora}, $lang, 1, 1);
+        ($vers, $cvers) = getproprium($replace{$hora}, $lang, 1);
         $wr .= $vers;
       }
       $resp = $wr || $resp;

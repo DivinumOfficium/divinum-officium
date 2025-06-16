@@ -58,7 +58,7 @@ sub invitatorium {
   } else {
 
     #look for special from proprium the tempore or sancti
-    ($w, $c) = getproprium("Invit", $lang, 1, 1);
+    ($w, $c) = getproprium("Invit", $lang, 1);
     if ($w) { $ant = chompd($w); $comment = $c; }
     setcomment($label, 'Source', $comment, $lang, translate('Antiphona', $lang));
   }
@@ -114,15 +114,15 @@ sub hymnusmatutinum {
   my $hymn = '';
   my $name = 'Hymnus';
   $name .= checkmtv($version, \%winner) unless (exists($winner{'Hymnus Matutinum'}));
-  my ($h, $c) = getproprium("$name Matutinum", $lang, 1, 1);
+  my ($h, $c) = getproprium("$name Matutinum", $lang, 1);
 
   if ($h) {
     if (hymnshift($version, $day, $month, $year)) {  # if 1st Vesper hymn has been omitted due to concurrent II. Vespers
-      my ($h1, $c1) = getproprium("$name Vespera", $lang, 1, 1);
+      my ($h1, $c1) = getproprium("$name Vespera", $lang, 1);
       $h = $h1;
       setbuild2("Hymnus shifted");
     } elsif (hymnmerge($version, $day, $month, $year)) {    # if also 2nd Vesper been omitted
-      my ($h1, $c1) = getproprium("$name Vespera", $lang, 1, 1);
+      my ($h1, $c1) = getproprium("$name Vespera", $lang, 1);
       $h =~ s/^(v. )//;
       $h1 =~ s/\_(?!.*\_).*/\_\n$h/s;    # find the Doxology as last verse since e.g. Venantius(05-18) has a proper one
       $h = $h1;
@@ -1565,7 +1565,7 @@ sub getantmatutinum {
   }
 
   # Look up proper AntMatutinum and return if none
-  my ($wprop, $cprop) = getproprium('Ant Matutinum', $lang, $flag, 1);
+  my ($wprop, $cprop) = getproprium('Ant Matutinum', $lang, $flag);
   return unless $wprop;
 
   my $w = $wprop;    # for Backwards compatibility pass through if target is met
@@ -1578,7 +1578,7 @@ sub getantmatutinum {
       push(@w, shift(@wprop)) for 1 .. $ppN;    # pass-through psalm lines for nocturn if they exist
       last unless $noc;                         # for 3 lectio, no versicle to be appended;
 
-      my ($vers, $cvers) = getproprium("Nocturn $noc Versum", $lang, 1, 1);
+      my ($vers, $cvers) = getproprium("Nocturn $noc Versum", $lang, 1);
       my @vers = split("\n", $vers);
       push(@w, @vers);                          # add "interspersed" Versicle
     }
