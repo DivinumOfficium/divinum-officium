@@ -301,7 +301,7 @@ sub psalmi_matutinum_monastic {
   }
 
   # end 2nd nocturn in ferial office
-  my ($w, $c) = getproprium('MM Capitulum', $lang, 0, 1);
+  my ($w, $c) = getproprium('MM Capitulum', $lang, 0);
 
   if (!$w && $commune) {
     my %c = (columnsel($lang)) ? %commune : %commune2;

@@ -61,7 +61,7 @@ sub gethymn {
 }
 
 sub hymnusmajor {
-  our ($hora, $version, $vespera, @dayname, %winner, $day, $month, $year, $seasonalflag);
+  our ($hora, $version, $vespera, @dayname, %winner, $day, $month, $year);
   my $lang = shift;
   my $hymn = '';
   my $name = 'Hymnus';
@@ -84,13 +84,13 @@ sub hymnusmajor {
   my $cr = 0;
 
   if ($hora eq 'Vespera' && $vespera == 3) {
-    ($hymn, $cr) = getproprium("$name 3", $lang, $seasonalflag, 1);
+    ($hymn, $cr) = getproprium("$name 3", $lang, 1);
   }
 
   if ($version =~ /cist/i && $hora =~ /Vespera/i && $winner{Rule} =~ /C[45]/ && $winner{Rule} =~ /Hac die/i) {
     $name = "Hymnus Vespera Hac die";
   }
-  if (!$hymn) { ($hymn, $cr) = getproprium("$name", $lang, $seasonalflag, 1); }
+  if (!$hymn) { ($hymn, $cr) = getproprium("$name", $lang, 1); }
 
   if (!$hymn) {
     $name = gettempora('Hymnus major') . " $hora";

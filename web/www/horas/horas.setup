@@ -19,9 +19,10 @@ $nofancychars='0';;
 $noinnumbers='1';;
 $noflexa='1';;
 $langfb='English';;
+$testmode='Proper';;
 
 [parameterscheck]
-bbtbbbtcccccnnbbbbbt
+bbtbbbtcccccnnbbbbbtt
 
 [general]
 $expand='tota';;

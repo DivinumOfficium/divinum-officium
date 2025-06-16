@@ -29,8 +29,8 @@ sub psalmi {
 sub psalmi_minor {
   my $lang = shift;
   our (
-    $version, $hora, $dayofweek, $winner, %winner, @dayname, $rule, $communerule,
-    $rank, $laudes, $testmode, $day, $year, %winner2, $label,
+    $version, $hora, $dayofweek, $winner, %winner, @dayname, $rule,
+    $communerule, $rank, $laudes, $day, $year, %winner2, $label,
   );
   my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi/Psalmi minor.txt')};
   my (@psalmi, $ant, $psalms, $prefix);
@@ -136,7 +136,7 @@ sub psalmi_minor {
     }
   }
 
-  if ($winner =~ /tempora/i || $testmode =~ /seasonal/i || $dayname[0] =~ /pasc/i) {
+  if ($winner =~ /tempora/i || $dayname[0] =~ /pasc/i) {
 
     my $ind =
         $hora eq 'Prima' ? ($version =~ /cist/i ? 1 : 0)
@@ -179,7 +179,7 @@ sub psalmi_minor {
 
   #look for special from proprium the tempore of sancti
   if ($hora ne 'Completorium') {
-    my ($w, $c) = getproprium("Ant $hora", $lang, 0, 1);
+    my ($w, $c) = getproprium("Ant $hora", $lang, 0);
 
     if (!$w && $rule !~ /Psalmi\s*(?:minores)*\s*ex Psalterio/i) {
       ($w, $c) = getanthoras($lang);
@@ -267,11 +267,10 @@ sub psalmi_major {
   my $lang = shift;
 
   our (
-    $version, $hora, $rule, $psalmnum1, $psalmnum2,
-    $laudes, $rank, $winner, $dayofweek, $vespera,
-    @dayname, $duplex, $commune, $testmode, %winner,
-    $month, $day, $year, %winner2, $communetype,
-    $antecapitulum, $antecapitulum2, %commune, $votive, $label,
+    $version, $hora, $rule, $psalmnum1, $psalmnum2, $laudes,
+    $rank, $winner, $dayofweek, $vespera, @dayname, $duplex,
+    $commune, %winner, $month, $day, $year, %winner2,
+    $communetype, $antecapitulum, $antecapitulum2, %commune, $votive, $label,
   );
   if ($version =~ /monastic/i && $hora eq 'Laudes' && $rule !~ /matutinum romanum/i) { $psalmnum1 = $psalmnum2 = -1; }
   my %psalmi = %{setupstring($lang, 'Psalterium/Psalmi/Psalmi major.txt')};
@@ -312,15 +311,6 @@ sub psalmi_major {
         }
       }
     }
-  } elsif ($version =~ /Trident/
-    && $testmode =~ /seasonal/i
-    && $winner =~ /Sancti/
-    && $rank >= 2
-    && $rank < 5
-    && !exists($winner{'Ant Laudes'}))
-  {    #ferial office
-    @psalmi = split("\n", $psalmi{"Daya$dayofweek $name"});
-    setbuild('Psalterium/Psalmi/Psalmi major', "Daya$dayofweek $name", 'Psalmi ord');
   } elsif ($version =~ /trident/i) {
     my $dow =
       ($hora eq 'Laudes' && $dayname[0] =~ /Pasc/i) ? 'P'
@@ -386,7 +376,7 @@ sub psalmi_major {
     } elsif (!exists($w{'Ant Vespera'})
       && ($communetype =~ /ex/ || ($version =~ /Trident/i && $winner =~ /Sancti/i)))
     {
-      ($w, $c) = getproprium('Ant Vespera 3', $lang, 1, 1);
+      ($w, $c) = getproprium('Ant Vespera 3', $lang, 1);
       setbuild2("Antiphona $commune");
     }
   }
@@ -404,7 +394,7 @@ sub psalmi_major {
   } elsif (($communetype && $communetype =~ /ex/)
     || ($version =~ /Trident/i && $hora eq 'Laudes' && $winner =~ /Sancti/))
   {
-    ($w, $c) = getproprium("Ant $hora", $lang, 1, 1);
+    ($w, $c) = getproprium("Ant $hora", $lang, 1);
     setbuild2("Antiphona $commune");
   }
   if ($w) { @antiphones = split("\n", $w); $comment = $c; }
@@ -412,15 +402,7 @@ sub psalmi_major {
   my @p;
 
   #Psalmi de dominica
-  if ( $version =~ /Trident/
-    && $testmode =~ /seasonal/i
-    && $winner =~ /Sancti/
-    && $rank >= 2
-    && $rank < 5
-    && !exists($winner{'Ant Laudes'}))
-  {
-    @p = @psalmi;
-  } elsif (($rule =~ /Psalmi Dominica/i || ($commune{Rule} && $commune{Rule} =~ /Psalmi Dominica/i))
+  if ( ($rule =~ /Psalmi Dominica/i || ($commune{Rule} && $commune{Rule} =~ /Psalmi Dominica/i))
     && ($antiphones[0] !~ /\;\;\s*[0-9]+/)
     && ($rule !~ /Psalmi Feria/i))
   {

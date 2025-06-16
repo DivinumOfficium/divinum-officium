@@ -40,10 +40,10 @@ sub headline {
 
   if ($variant eq 'P') {
     $output .= par_c(<<"PrintTag");
-<A HREF="Pofficium.pl?date1=$date1&command=prev&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
+<A HREF="Pofficium.pl?date1=$date1&command=prev&version=$version&lang2=$lang2&votive=$votive">
 &darr;</A>
 $date1
-<A HREF="Pofficium.pl?date1=$date1&command=next&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
+<A HREF="Pofficium.pl?date1=$date1&command=next&version=$version&lang2=$lang2&votive=$votive">
 &uarr;</A>
 PrintTag
   } else {
@@ -125,7 +125,7 @@ SubmitTag
 # for Pofficium Options Sancta Missa Ordo
 sub pmenu {
   return <<"PrintTag";
-<A HREF="Pofficium.pl?date1=$date1&command=setupparameters&pcommand=$command&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">
+<A HREF="Pofficium.pl?date1=$date1&command=setupparameters&pcommand=$command&version=$version&lang2=$lang2&votive=$votive">
 Options</A>&ensp;
 <A HREF="#" onclick="callmissa();">Sancta Missa</A>&ensp;
 <A HREF="#" onclick="callkalendar();">Ordo</A>

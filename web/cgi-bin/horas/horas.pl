@@ -492,7 +492,7 @@ sub canticum {
 
   if ($hora eq 'Completorium') {
     push(@s, '#' . translate(substr($item, 1), $lang));
-    my ($w, $c) = getproprium("Ant 4$vespera", $lang, 1);
+    my ($w, $c) = getproprium("Ant 4$vespera", $lang);
 
     if ($w) {
       setbuild1($ite, 'special');

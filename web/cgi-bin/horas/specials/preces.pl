@@ -8,14 +8,14 @@ sub preces {
   my $item = shift;
 
   our (
-    $winner, %winner, $rule, $duplex, $seasonalflag, @dayname,
+    $winner, %winner, $rule, $duplex, @dayname,
     $version, $commemoratio, %commemoratio, @commemoentries, $hora, $dayofweek,
   );
 
   return 0
     if ( $winner =~ /C12/i
       || $rule =~ /Omit.*? Preces/i
-      || ($duplex > 2 && $seasonalflag)
+      || ($duplex > 2)
       || $dayname[0] =~ /Pasc[67]/i);
 
   our $precesferiales = 0;
