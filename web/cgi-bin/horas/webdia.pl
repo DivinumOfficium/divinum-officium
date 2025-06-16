@@ -462,18 +462,18 @@ sub setvrbar {
 # replace %Laudes% etc. with html link
 sub activate_links {
   my ($text, $lang) = @_;
-  our ($date1, $caller, $version, $testmode, $lang2, $votive, $hora, $command);
+  our ($date1, $caller, $version, $lang2, $votive, $hora, $command);
   local ($_) = $$text;
 
   if ($officium =~ /Pofficium/i) {
     if ($hora =~ /Matutinum/i) {
-      s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=$caller&command=prayLaudes&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$1</A>}i;
+      s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=$caller&command=prayLaudes&version=$version&lang2=$lang2&votive=$votive">$1</A>}i;
     } elsif ($hora =~ /Vespera/i) {
-      s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayVespera&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$1</A>}i;
+      s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayVespera&version=$version&lang2=$lang2&votive=$votive">$1</A>}i;
     } elsif ($hora =~ /Laudes/i) {
-      s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayMatutinum&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$1</A>}i;
+      s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayMatutinum&version=$version&lang2=$lang2&votive=$votive">$1</A>}i;
     } elsif ($command =~ /Appendix/i) {
-      s{%(.*?)%}{qq(<A HREF="Pofficium.pl?date1=$date1&caller=1&command=Appendix $1&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">) . translate($1, $lang) . '</A>'}ie;
+      s{%(.*?)%}{qq(<A HREF="Pofficium.pl?date1=$date1&caller=1&command=Appendix $1&version=$version&lang2=$lang2&votive=$votive">) . translate($1, $lang) . '</A>'}ie;
     }
   } else {
     if ($hora =~ /Matutinum/i) {
@@ -695,7 +695,7 @@ sub selectables {
 #*** selectable_p
 # generate signle select from .dialog for Poffice
 sub selectable_p {
-  my ($dialog, $curvalue, $date1, $version, $lang2, $votive, $testmode, $title) = @_;
+  my ($dialog, $curvalue, $date1, $version, $lang2, $votive, $title) = @_;
   $title ||= ucfirst($dialog);
   if ($dialog eq 'votives') { $curvalue ||= 'Hodie' }
   my @output = ("<TR><TD ALIGN='CENTER'>$title");
@@ -705,9 +705,10 @@ sub selectable_p {
     my ($text, $name) = split(/\//);
     $name ||= $text;
     my $href =
-        "Pofficium.pl?date1=$date1&version="
+        "Pofficium.pl?date1=$date1"
+      . "&version="
       . ($dialog eq 'versions' ? $name : $version)
-      . "&testmode=$testmode&lang2="
+      . "&lang2="
       . ($dialog eq 'languages' ? $name : $lang2)
       . "&votive="
       . ($dialog eq 'votives' ? $name : $votive);
@@ -718,7 +719,7 @@ sub selectable_p {
 }
 
 sub horas_menu {
-  my ($completed, $date1, $version, $lang2, $votive, $testmode) = @_;
+  my ($completed, $date1, $version, $lang2, $votive) = @_;
   my @horas = gethoras($votive eq 'C9');
   push(@horas, 'Omnes', 'Plures') if ($0 !~ /Cofficium/);
 
@@ -731,8 +732,7 @@ sub horas_menu {
     my $onclick = '';
 
     if ($0 =~ /Pofficium/) {
-      $href = qq("Pofficium.pl?date1=$date1&command=pray$_)
-        . qq(&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive");
+      $href = qq("Pofficium.pl?date1=$date1&command=pray$_) . qq(&version=$version&lang2=$lang2&votive=$votive");
     } else {
       $onclick = qq(onclick="hset('$_');");
     }
@@ -755,8 +755,7 @@ sub horas_menu {
 
   my $a =
     ($0 =~ /Pofficium/)
-    ? qq(HREF="Pofficium.pl?date1=$date1&command=Appendix Index)
-    . qq(&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive")
+    ? qq(HREF="Pofficium.pl?date1=$date1&command=Appendix Index) . qq(&version=$version&lang2=$lang2&votive=$votive")
     : qq(HREF="#" onclick="appendix('Index')");
   $output .= qq(\n<A $a><FONT COLOR=$colour>Appendix</FONT></A>\n) if ($0 !~ /Cofficium/);
   $a = qq(HREF="#" onclick="callkalendar('kalendar')");

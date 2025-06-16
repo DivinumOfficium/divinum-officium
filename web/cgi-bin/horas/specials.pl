@@ -697,8 +697,8 @@ sub checksuffragium {
     || $version !~ /cist/i && $dayname[0] =~ /Adv|Quad5/i
 
     # All Duplex (MM. maj.) Saints (except Patr. S. Joseph)
-    || ($winner =~ /sancti/i && $rank >= $ranklimit && $seasonalflag)
-    || ($winner =~ /tempora/i && $duplex > 2 && $seasonalflag)
+    || ($winner =~ /sancti/i && $rank >= $ranklimit)
+    || ($winner =~ /tempora/i && $duplex > 2)
 
     # Octaves
     || ($winner{Rank} =~ /octav/i && $winner{Rank} !~ /post Octavam/i)
@@ -716,7 +716,7 @@ sub checksuffragium {
     # Altovadensis: limit at xij. Lect. et M.
     || $version =~ /altovadensis/i && $rank > 2.5;
 
-  if ($commemoratio && $seasonalflag) {
+  if ($commemoratio) {
     my @r = split(';;', $commemoratio{Rank});
 
     return 0

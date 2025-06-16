@@ -18,7 +18,8 @@ Large font~>$largefont~>Entry~>12~>10;;
 Small red~>$smallfont~>Entry~>12~>11;;
 Title font~>$titlefont~>Entry~>12~>12;;
 Screen height~>$screenheight~>Entry~>12~>13;;
-Text width percent~>$textwidth~>Entry~>12~>14
+Text width percent~>$textwidth~>Entry~>12~>14;;
+Testmode~>$testmode~>Optionmenu~>testmodes~>21
 
 [general]
 Expand~>$expand~>Optionmenu~>expansions;;
@@ -106,3 +107,6 @@ C12,Officium parvum Beatae Mariae Virginis
 4=Dominica ordinaria
 5=II class (Dominica Feast)
 6=I class (Dominica, Feria, Feast)
+
+[testmodes]
+Proper,Temporal,Sanctoral
