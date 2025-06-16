@@ -700,8 +700,13 @@ sub lectio : ScriptFunc {
     if ($file) { %w = resolveitable(\%w, $file, $lang); }
   }
 
-  #StJamesRule
-  if ($num < 4 && $rule =~ /StJamesRule=([a-z,]+)\s/i)    #was also: && $version !~ /1961/
+  # StJamesRule: should rather be called St. Apostles or St. James and St. Johns rule:
+  # On May 1st and 6th, if occuring scripture is from the respective Apostle, then it's read
+  # instead of the assigned Incipit which is a repeat from Dom. IV post Pasc and Dom infra 8vam Asc
+  # If these Sundays happen to fall on the day after the Apostle's feast, then Scripture is taken  from
+  # the following Monday such that there is no repeat of readings. Since May 3 and May 8 have
+  # proper 1st Nocturn readings, (at least before 1960) the Monday readings are impeded anyway
+  if ($num < 4 && $rule =~ /StJamesRule=((?:1 )?[a-z,\|á]+)\s/i)    #was also: && $version !~ /1961/
   {
     %w = StJamesRule(\%w, $lang, $num, $1);
   }
@@ -806,8 +811,7 @@ sub lectio : ScriptFunc {
       || ($num == 4 && $rule =~ /12 lect/i && exists($scriptura{"Lectio3"}))
     )                                                   # or for Monastic if we have to split the lessons at the ¶ mark
     && ($version !~ /trident/i || $rank < 5)
-    )
-  {                                                     # but not in Tridentinum Duplex II. vel I. classis
+  ) {                                                   # but not in Tridentinum Duplex II. vel I. classis
     %w = (columnsel($lang)) ? %scriptura : %scriptura2;
     $w = $w{"Lectio$num"};
 
@@ -900,8 +904,7 @@ sub lectio : ScriptFunc {
 
     # Simplex: also look when last lectio has been diverged to Lectio 4
     || (($ltype1960 == LT1960_SANCTORAL || $rank < 2) && $winner =~ /Sancti/i && $num == 4)
-    )
-  {    # 9th lesson diverged to Legend of Commemorated Saint
+  ) {    # 9th lesson diverged to Legend of Commemorated Saint
     %w = (columnsel($lang)) ? %winner : %winner2;
     my $L9winnerflag = 0;
 
@@ -1514,14 +1517,22 @@ sub StJamesRule {
   my $key;
 
   if ($w{Rank} =~ /Dominica/i && prevdayl1($s)) {
+
+    # On Dominica IV post Pascha & infra 8vam Ascensionis, if the previous day has had the incipit
+    # already, then read from Monday instead.
     my $kd = "$dayname[0]-1";
     if ($ordostatus =~ /Ordo/i) { return $kd; }
     %w1 = %{setupstring($lang, subdirname('Tempora', $version) . "$kd.txt");};
+    setbuild2("subst: Incipit from $s replaced by Monday readings to avoid repeat");
   }
 
-  if ($w{Rank} =~ /Jacobi/ && $scriptura{Lectio1} =~ /!.*?($s) /i) {
+  if ($w{Rank} =~ /Jacobi|Joannis/ && $scriptura{Lectio1} =~ /!.*?($s) /i) {
+
+    # On Ss. Philippi et Jacobi, App & S. Joannis ante portam Latinam, if occuring scripture is
+    # from the Apostel's epistels or revelation, then it is read
     if ($ordostatus =~ /Ordo/) { $s = $scriptura; $s =~ s/(Tempora\/|\.txt)//gi; return $s; }
     %w1 = columnsel($lang) ? %scriptura : %scriptura2;
+    setbuild2("subs: Incipit from $1 replaced by occuring scripture") if $num == 1;
   }
   if (!exists($w1{"Lectio$num"})) { return %w; }
   $w{"Lectio$num"} = $w1{"Lectio$num"};
