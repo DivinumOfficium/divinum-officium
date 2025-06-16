@@ -317,7 +317,7 @@ sub psalmi_matutinum_monastic {
   push(@s, "!!Capitulum", $w, "\n");    # print Capitulum, V.R.
 }
 
-#*** monstic_lectio3($w, $lang)
+#*** monastic_lectio3($w, $lang)
 # return the legend if appropriate
 sub monastic_lectio3 {
   my $w = shift;
@@ -359,9 +359,9 @@ sub absolutio_benedictio {
     $ben = $a[3 - ($i == 3)];
   }
 
-  push(@s, "\$rubrica Pater secreto");
-  push(@s, "\$Pater noster Et");
-  push(@s, "Absolutio. $abs", '$Amen', "\n");
+  push(@s, "\$rubrica Pater secreto") unless $version =~ /Cist/i;
+  push(@s, "\$Pater noster Et") unless $version =~ /Cist/i;
+  push(@s, "Absolutio. $abs", '$Amen', "\n") unless $version =~ /Cist/i;
   push(@s, prayer('Jube domne', $lang));
   push(@s, "Benedictio. $ben", '$Amen', '_');
 }
