@@ -671,16 +671,14 @@ sub lectio : ScriptFunc {
   if ($nocturn == 1 && $version !~ /monastic/i && $winner !~ /C12/) {
     my $file = initiarule($month, $day, $year);
     if ($file) { %w = resolveitable(\%w, $file, $lang); }
-  }
+  } elsif ($num < 4 && $rule =~ /StJamesRule=((?:1 )?[a-z,\|á]+)\s/i) {
 
-  # StJamesRule: should rather be called St. Apostles or St. James and St. Johns rule:
-  # On May 1st and 6th, if occuring scripture is from the respective Apostle, then it's read
-  # instead of the assigned Incipit which is a repeat from Dom. IV post Pasc and Dom infra 8vam Asc
-  # If these Sundays happen to fall on the day after the Apostle's feast, then Scripture is taken  from
-  # the following Monday such that there is no repeat of readings. Since May 3 and May 8 have
-  # proper 1st Nocturn readings, (at least before 1960) the Monday readings are impeded anyway
-  if ($num < 4 && $rule =~ /StJamesRule=((?:1 )?[a-z,\|á]+)\s/i)    #was also: && $version !~ /1961/
-  {
+    # StJamesRule: should rather be called St. Apostles or St. James and St. Johns rule:
+    # On May 1st and 6th, if occuring scripture is from the respective Apostle, then it's read
+    # instead of the assigned Incipit which is a repeat from Dom. IV post Pasc and Dom infra 8vam Asc
+    # If these Sundays happen to fall on the day after the Apostle's feast, then Scripture is taken  from
+    # the following Monday such that there is no repeat of readings. Since May 3 and May 8 have
+    # proper 1st Nocturn readings, (at least before 1960) the Monday readings are impeded anyway
     %w = StJamesRule(\%w, $lang, $num, $1);
   }
 
@@ -1418,7 +1416,7 @@ sub resolveitable {
       $start++;
     }
   } else {    # when there is a conflict of a ~B transfer and an inita itself
-    $file =~ s/~[AB]$//;
+    $file =~ s/~[ABR]$//;
     @file = split('~', $file);
     $lim = 1;      # in general allow 1 transfer and
     $start = 2;    # put the actual days in second place
@@ -1507,6 +1505,7 @@ sub StJamesRule {
     %w1 = columnsel($lang) ? %scriptura : %scriptura2;
     setbuild2("subs: Incipit from $1 replaced by occuring scripture") if $num == 1;
   }
+
   if (!exists($w1{"Lectio$num"})) { return %w; }
   $w{"Lectio$num"} = $w1{"Lectio$num"};
   return %w;

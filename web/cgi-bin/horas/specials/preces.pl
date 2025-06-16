@@ -8,8 +8,8 @@ sub preces {
   my $item = shift;
 
   our (
-    $winner, %winner, $rule, $duplex, @dayname,
-    $version, $commemoratio, %commemoratio, @commemoentries, $hora, $dayofweek,
+    $winner, %winner, $rule, $duplex, @dayname, $version,
+    $commemoratio, %commemoratio, @commemoentries, $hora, $dayofweek,
   );
 
   return 0
