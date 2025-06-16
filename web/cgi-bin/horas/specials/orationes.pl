@@ -162,8 +162,7 @@ sub oratio {
         || ( $version =~ /Ordo Praedicatorum/
           && ($rank < 3 || $dayname[1] =~ /Vigil/)
           && $winner !~ /12-24|Pasc|01-0[2-5]/)
-        )
-      {    # OP ferial office
+      ) {    # OP ferial office
         if ($horamajor && $version !~ /Ordo Praedicatorum/) {
           push(@s, '$Kyrie');
           push(@s, '$Pater noster Et', "_") unless $winner =~ /C12/;
