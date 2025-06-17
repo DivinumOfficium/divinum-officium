@@ -1,0 +1,79 @@
+@Tempora/Pent02-5
+
+[Ant Vespera]
+Laudáte Dóminum, quóniam confirmáta est super nos misericórdia ejus.;;112;116;145;146;147
+
+[Responsory Vespera 1]
+@TemporaM/Pent02-5:Responsory11
+
+[Capitulum Laudes]
+@Tempora/Pent02-5::s/Fratres: //
+
+[Ant 41]
+Hauriétis aquas in gáudio, allelúja, de fóntibus Salvatóris, allelúja, allelúja.
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0::s/r. //
+
+[Lectio1]
+@Tempora/Pent02-5
+@:In Finem Lectio
+
+[Lectio2]
+@Tempora/Pent02-5
+@:In Finem Lectio
+
+[Lectio3]
+@Tempora/Pent02-5
+@:In Finem Lectio
+
+[Responsory9]
+@TemporaM/Pent02-5:Responsory11
+
+[Responsory Tertia]
+@Tempora/Pent02-5::1 s/\* (.)/ \l$1/ s/$/~/
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
+@Tempora/Pent02-5::2 s/\* (.)/ \l$1/ s/$/~/
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
+@Tempora/Pent02-5::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Tempora/Pent02-5::2 s/\* (.)/ \l$1/ s/$/~/
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
+_
+@Tempora/Pent02-5::8-9
+
+[Responsory Sexta]
+@Tempora/Pent02-5::1 s/\* (.)/ \l$1/ s/$/~/
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
+@Tempora/Pent02-5::2 s/\* (.)/ \l$1/ s/$/~/
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
+@Tempora/Pent02-5::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Tempora/Pent02-5::2 s/\* (.)/ \l$1/ s/$/~/
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
+_
+@Tempora/Pent02-5::8-9
+
+[Responsory Nona]
+@Tempora/Pent02-5::1 s/\* (.)/ \l$1/ s/$/~/
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
+@Tempora/Pent02-5::2 s/\* (.)/ \l$1/ s/$/~/
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
+@Tempora/Pent02-5::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Tempora/Pent02-5::2 s/\* (.)/ \l$1/ s/$/~/
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
+_
+@Tempora/Pent02-5::8-9
+
+[Ant Vespera 3]
+@Tempora/Pent02-5:Ant Laudes:1 s/(?:;;.*)?$/;;109;110;115;127;147/
+
+[Versum 3]
+@:Versum 1
+
+[Ant 43]
+@:Ant 41
