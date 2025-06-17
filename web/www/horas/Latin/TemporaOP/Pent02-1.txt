@@ -1,0 +1,12 @@
+@Tempora/Pent02-1
+
+[Lectio1]
+@Tempora/Pent02-0::1-4 s/-3/-2/
+
+[Lectio2]
+@Tempora/Pent02-0::1 s/4-6/3-4/
+@Tempora/Pent02-0:Lectio1:5
+@Tempora/Pent02-0::2 s/: .*/./
+
+[Lectio3]
+@Tempora/Pent02-0:Lectio2:s/ .*: (.)/ \u$1/
