@@ -208,6 +208,23 @@ _
 V. Justórum ánimæ in manu Dei sunt.
 R. Et non tanget illos torméntum mortis.
 
+[Comment]
+Section for Office of 3-Lessons (Simplex)
+
+[Lectio1S]
+@CommuneM/C2p:Lectio1
+
+[Responsory1S]
+@Commune/C3:Responsory3:1-2
+V. Immánia enim pro Christo in suis corpóribus pertulérunt torménta:
+@Commune/C3:Responsory3:4
+
+[Responsory2S]
+@Commune/C3:Responsory5
+
+[Responsory3S]
+@Commune/C3:Responsory8 in 2 loco
+
 [Ant Vespera 3]
 @Commune/C3::s/112/115/ s/111/112/ s/110/111/
 

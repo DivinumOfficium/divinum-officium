@@ -239,10 +239,24 @@ R. Qui, dum sæculi pompam contémpsit, ætérnæ vitæ conjúnctus est.
 &Gloria
 R. Allelúia, allelúia.
 
+[Comment]
+For Office of 3 Lessons (Simplex)
+
+[Lectio1S]
+@CommuneM/C5:Lectio3 in 2 loco
+
+[Responsory3S]
+@:Responsory12
+
 [MM Capitulum]
 @Commune/C5:Capitulum Sexta
 _
 @CommuneM/C4::s/.*_.//s
+
+[MM Capitulum] (rubrica cisterciensis)
+@Commune/C5:Capitulum Nona
+_
+@Commune/C5:Nocturn 3 Versum
 
 [Lectio1 in 2 loco]
 @Commune/C5:Lectio1 in 2 loco:s/-14/-12/ s/13 .*//s

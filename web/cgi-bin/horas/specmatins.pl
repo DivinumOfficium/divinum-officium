@@ -570,7 +570,7 @@ sub lectio : ScriptFunc {
       # Pre-1960: Sanctoral simplex feast
       # (unless monastic in Nativitytide and Epiphany => prevent the former Octave days of Stephanus, Joannes, Innocents)
       || (
-           $version !~ /196/
+           $version !~ /196|Cist/
         && $rule !~ /1 et 2 lectiones/i
         && $winner =~ /Sancti/i
         && $rank < 2
