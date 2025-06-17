@@ -32,11 +32,29 @@ Descéndi * in hortum nucum, ut vidérem poma convállium, † et inspícerem, s
 @:AntMatutinumM:3
 ;;249;250;251
 
+[Ant Matutinum] (rubrica cisterciensis)
+Ecce tu pulchra es, * amíca mea, ecce tu pulchra es; óculi tui columbárum.;;8
+Sicut lílium * inter spinas, sic amíca mea inter fílias.;;18
+Favus distíllans * lábia tua, Sponsa, et odor vestimentórum tuórum sicut odor thuris.;;23
+Emissiónes tuæ * paradísus malórum punicórum, cum pomórum frúctibus.;;44
+Fons hortórum, * púteus aquárum vivéntium, quæ fluunt ímpetu de Líbano.;;45
+Véniat * diléctus meus in hortum suum, et cómedat fructum pomórum suórum.;;47
+Veni * in hortum meum, soror mea sponsa, méssui myrrham meam cum aromátibus meis.;;84
+Comédi favum * cum melle meo, bibi vinum meum cum lacte meo.;;86
+Anima mea * liquefácta est, ut diléctus locútus est: quæsívi, et non invéni illum; vocávi, et non respóndit mihi: invenérunt me custódes civitátis, percussérunt me, et vulneravérunt me, tulérunt pállium meum custódes murórum: fíliæ Jerúsalem, nuntiáte dilécto, quia amóre lángueo.;;95
+Talis est * diléctus meus, et ipse est amícus meus, fíliæ Jerúsalem.;;96
+Descéndi * in hortum nucum, ut vidérem poma convállium, et inspícerem, si floruísset vínea, et germinássent mala púnica: revértere, tevértere, Sulamítis, revértere, revértere, ut intueámur te.;;97
+Hortus conclúsus es, * Dei Génitrix, hortus conclúsus, fons signátus: surge própera, amíca mea, et veni.;;98
+Regáli ex progénie * María exórta refúlget; cujus précibus nos adjuvári, mente et spíritu devotíssime póscimus.;;249;250;251
+
+[Ant Matutinum] (tempore paschali et rubrica cisterciensis)
+@CommuneM/C6
+
 [Lectio2]
 @Commune/C11:Lectio2:s/-25/-22/ :s/23 .*//s
 
 [Lectio3]
-@Commune/C11:Lectio2:s/18-25/23-25; 34/ :s/23 .*//s
+@Commune/C11:Lectio2:s/18-25/23-25; 34/ :s/.*23 /23 /s
 @Commune/C11:Lectio3:s/!.*// s/35 .*//s
 
 [Lectio4]
@@ -73,7 +91,7 @@ R. Et vidéntes eam fíliæ Sion, beatíssimam prædicavérunt, dicéntes: Ungu�
 [Responsory8]
 R. Diffúsa est grátia in lábiis tuis,
 * Proptérea benedíxit te Deus in ætérnum.
-V. Myrrha et gutta et cásia a vestiméntis tuis, a grádibus ebúrneis, ex quibus delectavérunt te fíliæ regum in hoóre tuo.
+V. Myrrha et gutta et cásia a vestiméntis tuis, a grádibus ebúrneis, ex quibus delectavérunt te fíliæ regum in honóre tuo.
 R. Proptérea benedíxit te Deus in ætérnum. 
 
 [Lectio9]

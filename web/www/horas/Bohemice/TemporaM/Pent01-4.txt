@@ -1,3 +1,114 @@
+[AntMatutinumM] (rubrica cisterciensis)
+Vezměte * oběti a vstupte do předsíně Hospodinovy, a klanějte se mu v jeho svatém chrámě.;;95
+Slitovník * a milosrdný Hospodin naplňuje dobrými věcmi tvou touhu.;;102
+Vyvádíš chléb * ze země, a víno rozradostňuje srdce lidské.;;103
+
+[Ant Matutinum 3N]
+Tělo mé * vpravdě je pokrm, a má krev vpravdě je nápoj. † Kdo jí mé tělo a pije mou krev, má život věčný, † praví Pán.
+(sed rubrica cisterciensis)
+Moudrost * zbudovala sobě dům, smísila víno, a prostřela stůl, alleluja.
+
+[Responsory2] (rubrica cisterciensis)
+R. Vyvedl vás Hospodin silnou rukou ze země egyptské;
+* Jenž vyvedl ze skály prameny vody, a živil vás manou na poušti.
+Nikoliv Mojžíš vám dal chléb z nebe, nýbrž můj Otec vám dává pravý chléb z nebe.
+R. Jenž vyvedl ze skály prameny vody, a živil vás manou na poušti.
+
+[Responsory3] (rubrica cisterciensis)
+R. Melchisedech, Král Salemu, Kněz Nejvyššího Boha, když přinesl chléb a víno, předznamenal tím Tělo Kristovo,
+* Svatou oběť, neposkvrněný obětní dar.
+V. Vstoupil Ježíš pro nás podle řádu Melchisedechova, a jednou obětoval sám sebe:
+R. Svatou oběť, neposkvrněný obětní dar.
+
+[Responsory4] (rubrica cisterciensis)
+@Tempora/Pent01-4:Responsory3
+
+[Lectio5]
+@Tempora/Pent01-4:Lectio4
+(sed rubrica cisterciensis)
+@Tempora/Pent01-4:Lectio4:s/Své tělo.*//
+
+[Lectio6]
+@Tempora/Pent01-4:Lectio5:s/Věřící .*//s
+(sed rubrica cisterciensis)
+@Tempora/Pent01-4:Lectio4:s/.* (Své tělo)/$1/
+
+[Lectio7]
+@Tempora/Pent01-4:Lectio5:s/.* (Věřící)/$1/s
+(sed rubrica cisterciensis)
+@Tempora/Pent01-4:Lectio5:s/Věřící .*//s
+
+[Lectio8]
+@Tempora/Pent01-4:Lectio6
+(sed rubrica cisterciensis)
+@Tempora/Pent01-4:Lectio5:s/.* (Věřící)/$1/s
+
+[Responsory5] (rubrica cisterciensis)
+R. Kdo jí mé Tělo a pije mou Krev, zůstává ve mně a já v něm;
+* Mé Tělo je totiž pravý pokrm, a má Krev je pravý nápoj.
+V. Jezte, přátelé, pijte a opíjejte se, nejdražší;
+R. Mé Tělo je totiž pravý pokrm, a má Krev je pravý nápoj.
+
+[Responsory6] (rubrica cisterciensis)
+@Tempora/Pent01-4:Responsory8:1-2
+V. Ve mně je milost každé cesty a pravdy, ve mně je každá naděje života a ctnosti.
+@Tempora/Pent01-4:Responsory8:4
+
+[Responsory7] (rubrica cisterciensis)
+R. Když ještě večeřeli, vzal Ježíš chléb, požehnal, a lámal, a dal svým učedníkům, a řekl: Vezměte a jezte:
+* Toto je mé tělo.
+V. Když viděli synové Israele manu na poušti, podivili se a říkali: Co je to?
+R. Toto je mé tělo.
+
+[Responsory8_]
+R. V jednom chlebu a jednom těle jsme mnozí;
+* Všichni máme účast na jednom chlebu a jednom kalichu.
+V. Připravil jsi to ve své sladkosti, Bože, chudákovi, jenž dáváš přebývat v jednom domě lidem stejné mysli.
+R. Všichni máme účast na jednom chlebu a jednom kalichu.
+
+[Responsory8C]
+@Tempora/Pent01-4:Responsory5:1-2
+V. Pojďte a jezte můj chléb, a pijte víno, které jsem vám smísil.
+@Tempora/Pent01-4:Responsory5:4
+
+[Responsory8]
+@:Responsory8_
+(sed rubrica cisterciensis)
+@:Responsory8C
+
+[Responsory10] (rubrica cisterciensis)
+R. Andělským pokrmem živíš svůj lid, Hospodine, a chléb z nebe nám dáváš, který má v sobě každé potěšení;
+* Ukazujíc tvou podstatu a sladkost, kterou chováš ke svým dětem;
+V. Hospodine, jenž dáváš život světu, vždy nám dávej svůj pravý chléb:
+R. Ukazujíc tvou podstatu a sladkost, kterou chováš ke svým dětem;
+
+[Lectio9]
+@Tempora/Pent01-4:Lectio7:s/A proto Pán .*//s
+
+[Lectio10]
+@Tempora/Pent01-4:Lectio7:s/.* (A proto Pán)/$1/s s/$/~/
+@Tempora/Pent01-4:Lectio8:s/A proto, pokud .*//s
+
+[Lectio11]
+@Tempora/Pent01-4:Lectio8:s/.* (A proto, pokud)/$1/s
+
+[Lectio12]
+@Tempora/Pent01-4:Lectio9
+(sed rubrica cisterciensis)
+@Tempora/Pent01-4:Lectio9:s/Pokud tedy.*//
+
+[Responsory11] (rubrica cisterciensis)
+R. Když uviděla Královna ze Sáby moudrost Šalamounovu, dům, který vystavěl, pokrmy jeho stolu, a jejich oděvy;
+* V údivu řekla: Blažení tvoji služebníci, neboť naslouchají tvé moudrosti.
+V. Královna Jihu přišla z konce země, aby naslouchala moudrosti Šalamounově.
+R. V údivu řekla: Blažení tvoji služebníci, neboť naslouchají tvé moudrosti.
+
+[Responsory12] (rubrica cisterciensis)
+R. Radujme se a jásejme, a vzdejme slávu Bohu, neboť přišla svatba Beránkova, a jeho manželka se připravila.
+* Blažení, kdo jsou pozváni na svatební hostinu.
+V. Xerxes před svatbou i zásnubami vystrojil Ester velkolepou hostinu.
+R. Blažení, kdo jsou pozváni na svatební hostinu.
+
 [Responsory TertiaM] (rubrica cisterciensis)
 V. Milosrdný a slitovný Hospodin.
 R. Pokrm dal těm, kdo se ho bojí.
