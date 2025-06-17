@@ -24,8 +24,16 @@ Pone me * ut signáculum super cor tuum, ut signáculum super bráchium tuum;;12
 [Responsory Vespera] (rubrica cisterciensis)
 @:Responsory Sexta
 
+[Doxology_]
+Decus Parénti, et Fílio,
+Sanctóque sit Spirítui,
+Quibus potéstas, glória,
+Regnúmque in omne est sǽculum.
+Amen.
+
 [Hymnus Vespera]
-@Tempora/Pent02-5:Hymnus Matutinum
+@Tempora/Pent02-5:Hymnus Matutinum:1-25
+@:Doxology_
 
 [Versum 1]
 V. Ignem veni míttere in terram.
@@ -42,7 +50,12 @@ $Per Dominum
 Christum pro nobis passum, * Veníte adorémus.
 
 [Hymnus Matutinum]
-@Tempora/Pent02-5:Hymnus Vespera
+@Tempora/Pent02-5:Hymnus Vespera:1-25
+Hoc Christe nobis, hoc Pater,
+Hoc sancte dona Spiritus,
+Quibus potéstas, glória,
+Regnúmque in omne est sǽculum.
+Amen.
 
 [Ant Matutinum]
 Quid est homo quia magníficas eum, aut quid appónis erga eum cor tuum?;;8
@@ -165,36 +178,8 @@ $Deo gratias
 @:Responsory Nona
 
 [Hymnus Laudes]
-v. Cor, arca legem cóntinens
-Non servitútis véteris,
-Sed grátiæ, sed véniæ,
-Sed et misericórdiæ.
-_
-Cor, sanctuárium novi
-Intemerátum fœ́deris,
-Templum vetústo sánctius,
-Velúmque scisso utílius.
-_
-Te vulnerátum cáritas
-Ictu paténti vóluit,
-Amóris invisíbilis
-Ut venerémur vúlnera.
-_
-Hoc sub amóris sýmbolo
-Passus cruénta, et mýstica,
-Utrúmque sacrifícium
-Christus sacérdos óbtulit.
-_
-Quis non amántem rédamet?
-Quis non redémptus díligat,
-Et corde in isto séligat
-Ætérna tabernácula?
-_
-Decus Parénti, et Fílio,
-Sanctóque sit Spirítui,
-Quibus potéstas, glória
-Regnúmque in omne est sǽculum.
-Amen.
+@Tempora/Pent02-5:Hymnus Laudes:1-25
+@:Doxology_
 
 [Versum 2]
 V. Vere languóres nostros ipse tulit.
