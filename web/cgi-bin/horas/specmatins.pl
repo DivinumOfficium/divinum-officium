@@ -508,7 +508,7 @@ sub lectiones {
     push(@s, "\$Pater noster Et") unless $rule =~ /sine absolutio/i;
     push(@s, "Absolutio. $a[0]", '$Amen') unless $version =~ /^Ordo Praedicatorum/ || $rule =~ /sine absolutio/i;
   } elsif ($version !~ /Cist/i || $rule =~ /Matutinum Romanum/i) {
-    push(@s, "\$Pater totum secreto");
+    push(@s, "\$Pater totum secreto") unless $version =~ /Cist/i && $votive =~ /C12/;
   }
   push(@s, "\n");
 
