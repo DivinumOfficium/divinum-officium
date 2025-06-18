@@ -13,15 +13,12 @@ S. Antonii de Padua Confessoris et Ecclesiæ Doctoris
 ;;Duplex;;3;;vide C5a
 (sed rubrica 1963)
 ;;Simplex;;1.1;;vide C5a
-(sed rubrica altovadensis)
-;;Semiduplex;;2.2;;vide C5a
 
 [Rule]
 vide C5;
 (sed rubrica 195 aut rubrica 196)
 vide C5a;
 9 lectiones
-(rubrica altovadensis) Psalmi Dominica
 
 [Comment]
 Pio PP. XII, anno 1946, Doctor Ecclesiæ declaratus est
@@ -48,7 +45,7 @@ $Per Dominum
 @Commune/C5:Lectio3 in 2 loco
 
 [Lectio4]
-Antónius, Ulyssipóne in Lusitánia honéstis ortus paréntibus, et ab iis pie educátus, adoléscens, institútum canonicórum regulárium suscépit. Sed, cum córpora beatórum quinque Mártyrum fratrum Minórum Conímbriam transferéntur, qui paulo ante apud Marróchium pro Christi fide passi erant, martýrii desidério incénsus ad Franciscánum órdinam transívit.  Mox eódem ardóre impúlsus, ad Saracénos ire perréxit; sed, advérsa valetúdine afflíctus et redíre coáctus, cum navi ad Hispániæ líttora ténderet, ventórum vi in Sicíliam delátus est.
+Antónius, Ulyssipóne in Lusitánia honéstis ortus paréntibus, et ab iis pie educátus, adoléscens, institútum canonicórum regulárium suscépit. Sed, cum córpora beatórum quinque Mártyrum fratrum Minórum Conímbriam transferéntur, qui paulo ante apud Marróchium pro Christi fide passi erant, martýrii desidério incénsus ad Franciscánum órdinam transívit. Mox eódem ardóre impúlsus, ad Saracénos ire perréxit; sed, advérsa valetúdine afflíctus et redíre coáctus, cum navi ad Hispániæ líttora ténderet, ventórum vi in Sicíliam delátus est.
 
 [Lectio5]
 Assísium e Sicília ad capítulum generále venit: inde in erémum montis Pauli in Æmília secéssit, ubi divínis contemplatiónibus, jejúniis et vigíliis diu vacávit. Póstea, sacris ordínibus initiátus et ad prædicándum Evangélium missus, dicéndi sapiéntia et cópia tantum profécit, tantámque sui admiratiónem commóvit, ut eum summus Póntifex aliquándo concionántem áudiens, arcam Testaménti appellárit. In primis vero hǽreses summa vi profligávit, ideóque perpétuus hæreticórum málleus est vocátus.
@@ -59,6 +56,3 @@ Primus ex suo ordine, ob doctrínæ præstántiam, Bonóniæ et álibi sacras l�
 [Lectio94]
 Antónius, Ulyssipóne in Lusitánia honéstis piísque ortus paréntibus, adoléscens institútum canonicórum regulárium suscépit; sed, martýrii desidério incénsus, ad Franciscánum órdinem transívit. Ad Saracénos missus, et advérsa valetúdine redíre coáctus, vi ventórum in Sicíliam delátus est. Mox sacris ordínibus initiátus et prædicatóris múnere fungens, tantam sui admiratiónem commóvit, ut ad sacras lítteras interpretándas Bonóniæ et álibi vocátus sit, fratrum suórum stúdiis fúerit præféctus, et arca Testaménti atque hǽresum málleus merúerit appellári. Multis autem peragrátis provínciis, anno ante óbitum Patávium venit, ubi illústria sanctitátis suæ monuménta relíquit. Méritis et miráculis clarus obdormívit in Dómino idibus júnii, anno salútis millésimo ducentésimo trigésimo primo, ætátis suæ trigésimo sexto, et a summo Pontífice Pio duodécimo universális Ecclésiæ Doctor fuit declarátus.
 &teDeum
-
-[Ant 3] (rubrica altovadensis)
-@Commune/C5

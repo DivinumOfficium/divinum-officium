@@ -1,1 +1,36 @@
 @Sancti/06-13
+
+[Officium] (rubrica cisterciensis)
+S. Antonii de Padua, Confessoris et Ecclesiæ Doctoris
+
+[Rank] (rubrica altovadensis)
+;;Semiduplex;;2.2;;ex C5
+
+[Rule] (rubrica altovadensis)
+ex C5;
+12 lectiones
+Psalmi Dominica
+
+[Comment]
+This Cistercian Holy Office stems from times before he was declared Doctor of Church, therefore everything is C5, only [Ant 1] from Commune Doctorum.
+[Ant 3] is from Commune Confessorum, because next day is S. Basil, Doctor of Church, and we need to avoid the same Antiphons.
+
+[Ant 1] (rubrica cisterciensis)
+@Commune/C4a::s/N\./Antóni/
+
+[Lectio5] (rubrica cisterciensis)
+@Sancti/06-13:Lectio4:s/Mox eódem.*//
+
+[Lectio6] (rubrica cisterciensis)
+@Sancti/06-13:Lectio4:s/.*(Mox eódem)/$1/ s/$/~/
+@Sancti/06-13:Lectio5:s/Póstea, sacris.*//
+
+[Lectio7] (rubrica cisterciensis)
+@Sancti/06-13:Lectio5:s/.*(Póstea, sacris)/$1/ s/$/~/
+@Sancti/06-13:Lectio6:s/Multis vero.*//
+
+[Lectio8] (rubrica cisterciensis)
+@Sancti/06-13:Lectio6:s/.*(Multis vero)/$1/
+
+[Ant 3] (rubrica altovadensis)
+@Commune/C5

@@ -352,7 +352,7 @@ Dej nám * pomoc, Hospodine, v soužení.;;59;60
 Cožpak nebude * má duše poddána Bohu?;;61;63
 Dobrořečte, * národy, našemu Bohu.;;65;67
 V. Bože, svůj život jsem ti vyznal.
-R. Mé slzy jsi vložil před svou tvář.
+R. Postavil sis mé slzy před svou tvář.
 
 [Daya4]
 Pane Bože, * pospěš mi na pomoc.;;68;69
@@ -420,7 +420,7 @@ V. Zaradovali se učedníci, allelúja.
 R. Když spatřili Pána, allelúja.
 
 [Daym0]
-Hospodin * se král raduje z tvé moci.;;20
+Hospodine, * v tvé moci se raduje král.;;20
 ;;21
 Hospodin je můj pastýř, * nic mi neschází: na pastvách mě usadil.;;22
 ;;23
@@ -485,7 +485,7 @@ Alleluja , * alleluja , alleluja .
 V. Učedníci se zaradovali, allelúja.
 R. Když spatřili Pána, allelúja.
 
-[Daym1]
+[Daym1_]
 Spravedlivým náleží * chvála.;;32
 ;;33
 Bojuj * proti těm, kdo na mě útočí.;;34
@@ -501,7 +501,18 @@ Uzdrav, Hospodine, * duši mou, neboť jsem zhřešil proti tobě.;;40
 Srdce mé * vychrlilo dobré slovo.;;43
 ;;44
 
-[Daym2]
+[Daym1C]
+@:Daym1_:1-6
+V. Zalíbení měj v Hospodinu.
+R. A on ti splní tvá tajná přání.
+@:Daym1_:9-14
+
+[Daym1]
+@:Daym1_
+(sed rubrica cisterciensis)
+@:Daym1C
+
+[Daym2_]
 Jsi pomocník * v souženích.;;45
 ;;46
 Veliký je Pán * a velmi chvályhodný.;;47
@@ -510,14 +521,24 @@ Bůh bohů * promluvil, Pán.;;49
 ;;51
 V. Přines Bohu oběť chvály.
 R. A Nejvyššímu splň své sliby.
-Pán odvrátil * zajetí svého lidu.;;52
+Pán navrátil * zajatce svého lidu.;;52
 ;;53
 Věnuj mi pozornost * a vyslyš mě.;;54
 ;;55
 Suďte spravedlivě, * synové lidskí.;;57
 ;;58
 
-[Daym3]
+[Daym2C]
+@:Daym2_:1-2
+Dobře * poslouchejte, kdo přebýváte na zemi.;;47
+@:Daym2_:4-14
+
+[Daym2]
+@:Daym2_
+(sed rubrica cisterciensis)
+@:Daym2C
+
+[Daym3_]
 Dej nám, Hospodine, * pomoc v soužení.;;59
 ;;60
 Dobrořečte, * národy, našemu Bohu.;;61
@@ -533,6 +554,21 @@ Pane, Bože, * pospěš mi na pomoc.;;69
 Jak dobrý je * Bůh k Israeli.;;71
 ;;72
 
+[Daym3C]
+@:Daym3_:1-6
+V. Svěř <i>nás,</i> Hospodine, své moci.
+R. Potvrď to, Bože, co jsi v nás způsobil.
+@:Daym3_:9-10
+Budiž mi, * Hospodine, Bohem a ochráncem.;;69
+;;70
+Uchopil jsi, * Hospodine, mou pravici.;;71
+;;72
+
+[Daym3]
+@:Daym3_
+(sed rubrica cisterciensis)
+@:Daym3C
+
 [Daym4]
 Vysvobodil jsi hůl * svého dědictví.;;73
 ;;74
@@ -544,15 +580,15 @@ V. Bože, tvá cesta je svatá.
 R. Kdo je veliký Bůh jako náš Bůh?
 Jásejte Bohu, * našemu pomocníku.;;79
 ;;80
-Ty jsi jediný * Nejvyšší nade všechnu zemi.;;81
+Ty jediný jsi Svrchovaný * nad celou zemí.;;81
 ;;82
 Požehnal jsi, * Hospodine, svou zem.;;83
 ;;84
 
-[Daym5]
-Nakloň, Hospodine, * své ucho ke mně a vyslyš mě.;;85
+[Daym5_]
+Nakloň, Hospodine, * svůj sluch, a vyslyš mě.;;85
 ;;86
-Požehnaný jsi, * Hospodine, navěky.;;88(2-19)
+Požehnaný je * Hospodin navěky.;;88(2-19)
 ;;88(20-53)
 Buď vyvýšen, * ty, jenž soudíš zemi.;;92!75
 ;;93
@@ -560,24 +596,34 @@ V. Ať vejde má modlitba před tvou tvář, Hospodine.
 R. Nakloň své ucho k mé prosbě.
 Zpívejte Pánu * a velebte jeho jméno.;;95
 ;;96
-Neboť divy * učinil Pán.;;97
+Neboť podivuhodné věci * učinil Pán.;;97
 ;;98
-Jásejte * Bohu, celá země.;;99
-Dobré je * chválit Pána.;;91
+Jásejte * Bohu, celá země.;;99!Dobré je * chválit Pána.;;91
 ;;100
+
+[Daym5C]
+@:Daym5_:1-6
+V. Blažen je člověk, kterého ty vzděláváš, Hospodine.
+R. A o svém zákoně jej učíš.
+@:Daym5_:9-14
+
+[Daym5]
+@:Daym5_
+(sed rubrica cisterciensis)
+@:Daym5C
 
 [Daym6_]
 Můj nářek * kéž dojde k tobě, Bože.;;101
 ;;102
 Dobrořeč, * duše má, Hospodinu.;;103(1-24)
 ;;103(25-35)
-Ať se raduje srdce * těch, kdo hledají Pána.;;104(1-22)
+Ať se raduje srdce * těch, kdo hledají Hospodina.;;104(1-22)
 ;;104(23-45)
 V. Hospodine, vyslyš mou modlitbu.
 R. A můj nářek kéž k tobě dojde.
 Navštiv nás, * Hospodine, ve své spáse.;;105(1-31)
 ;;105(32-48)
-Ze všech mých soužení * vysvoboď mě, Hospodine.;;106(1-24)
+Ode všech mých potřeb * vysvoboď mě, Hospodine.;;106(1-24)
 ;;106(25-43)
 Vyznávat * budu Pána velice svými ústy.;;107
 ;;108

@@ -1,0 +1,41 @@
+[Officium]
+sv. Barnabáše, Apoštola
+
+[Lectio5]
+@Sancti/06-11:Lectio4
+(sed rubrica cisterciensis)
+@Sancti/06-11:Lectio4:s/V tomto povzbuzování.*//
+
+[Lectio6]
+@Sancti/06-11:Lectio5
+(sed rubrica cisterciensis)
+@Sancti/06-11:Lectio5:s/Když vykonali.*//
+
+[Lectio7]
+@Sancti/06-11:Lectio6:s/Pak Barnabáš.*//
+
+[Lectio7] (rubrica cisterciensis)
+@Sancti/06-11:Lectio5:s/.*(Když vykonali)/$1/s s/$/~/
+@Sancti/06-11:Lectio6:s/Tak tedy přišli.*// 
+
+[Lectio8]
+@Sancti/06-11:Lectio6:s/.* (?=Pak Barnabáš)//
+(sed rubrica cisterciensis)
+@Sancti/06-11:Lectio6:s/.*(Tak tedy přišli)/$1/ s/Jeho tělo.*//
+
+[Lectio9]
+@Sancti/06-11:Lectio7:s/Mnohé .*//s
+
+[Lectio10]
+@Sancti/06-11:Lectio7:s/.* (?=Mnohé)//s
+
+[Lectio11]
+@Sancti/06-11:Lectio8
+(sed rubrica cisterciensis)
+@Sancti/06-11:Lectio8:s/Také jim.*//
+
+[Lectio12] (rubrica cisterciensis)
+@Sancti/06-11:Lectio8:s/.*(Také jim)/$1/ s/$/~/
+@Sancti/06-11:Lectio9:s/.*(Zastyďme)/$1/
+
+

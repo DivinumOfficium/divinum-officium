@@ -8,7 +8,7 @@ Feria VI = Dóminum, Deum nostrum, * Veníte, adorémus.
 Sabbato = Pópulus Dómini, et oves páscuæ ejus: * Veníte, adorémus.
 Invit 1 = Adorémus Dóminum, * Quóniam ipse fecit nos.
 
-[Invit Trid]
+[Invit Trid_]
 Dominica=Adorémus Dóminum, * Qui fecit nos.
 Feria II=Veníte, * Exsultémus Dómino.
 Feria III=Jubilémus Deo, * Salutári nostro.
@@ -16,6 +16,17 @@ Feria IV=In manu tua, Dómine, * Omnes fines terræ.
 Feria V=Dóminum, qui fecit nos, * Veníte, adorémus.
 Feria VI=Adorémus Dóminum, * Quóniam ipse fecit nos.
 Sabbato=Dóminum, Deum nostrum, * Veníte, adorémus.
+
+[Invit TridC]
+@:Invit Trid_:1-4
+@:Invit Trid_:6:s/VI=/V=/
+@:Invit Trid_:5:s/V=/VI=/
+@:Invit Trid_:7
+
+[Invit Trid]
+@:Invit Trid_
+(sed rubrica cisterciensis)
+@:Invit TridC
 
 [ ]
 Invit monastic same as Trid, but preceeded by psalm #3
@@ -114,6 +125,9 @@ Patríque compar Únice,
 Cum Spíritu Paráclito
 Regnans per omne sǽculum.
 Amen.
+
+[Day0 Hymnus1M] (rubrica cisterciensis)
+@Psalterium/Special/Major Special:HymnusM Day0 Laudes hiemalis_
 
 [Day0 Hymnus1]
 {:H-MatDom4:}v. Primo die, quo Trínitas
@@ -662,7 +676,7 @@ R. In omni témpore.
 &Gloria
 R. Benedícam Dóminum * In omni témpore.
 
-[MM LB2]
+[MM LB2_]
 !Prov 3:19-20
 v. Dóminus sapiéntia fundávit terram: stabilívit cælos prudéntia. Sapiéntia illíus erupérunt abýssi, et nubes rore concréscunt.
 $Tu autem
@@ -674,7 +688,19 @@ R. Salvum me fac.
 &Gloria
 R. Deus, in nómine tuo * salvum me fac.
 
-[MM LB3]
+[MM LB2C]
+@:MM LB2_:1-4
+R.br. Miserére mei, Deus, * Miserére mei. 
+R. Miserére mei, Deus, * Miserére mei. 
+V. Quóniam in te confídit ánima mea.
+R. Miserére mei. 
+
+[MM LB2]
+@:MM LB2_
+(sed rubrica cisterciensis)
+@:MM LB2C
+
+[MM LB3_]
 !Sap 1:1-2
 v. Dilígite justítiam, qui judicátis terram. Sentíte de Dómino in bonitáte, et in simplicitáte cordis quǽrite illum: quóniam invenítur ab his qui non tentant illum, appáret autem eis qui fidem habent in illum.
 $Tu autem
@@ -686,7 +712,19 @@ R. Non confúndar in ætérnum.
 &Gloria
 R. In te, Dómine, sperávi: * non confúndar in ætérnum.
 
-[MM LB4]
+[MM LB3C]
+@:MM LB3_:1-4
+R.br. Mirábilis Deus, * In sanctis suis.
+R. Mirábilis Deus, * In sanctis suis. 
+V. Ipse dabit virtútem et fortitúdinem plebi suæ.
+R. In sanctis suis. 
+
+[MM LB3]
+@:MM LB3_
+(sed rubrica cisterciensis)
+@:MM LB3C
+
+[MM LB4_]
 !Sap 3:9
 v. Qui confídunt in illo intélligent veritátem, et fidéles in dilectióne acquiéscent illi: quóniam donum et pax est eléctis ejus.
 $Tu autem
@@ -697,6 +735,18 @@ V. Jubiláte Deo Jacob.
 R. Adjutóri nostro.
 &Gloria
 R. Exsultáte Deo, * adjutóri nostro.
+
+[MM LB4C]
+@:MM LB4_:1-4
+R.br. Confitébimur tibi, Deus, * Confitébimur tibi.
+R. Confitébimur tibi, Deus, * Confitébimur tibi.
+V. Et invocábimus nomen tuum.
+R. Confitébimur tibi.
+
+[MM LB4]
+@:MM LB4_
+(sed rubrica cisterciensis)
+@:MM LB4C
 
 [MM LB5]
 !Sap 1:6-7
@@ -710,12 +760,11 @@ R. In ætérnum cantábo.
 &Gloria
 R. Misericórdias tuas Dómine * in ætérnum cantábo.
 
-[MM LB6]
+[MM LB6_]
 !Eccl 12:2-3
 v. Bénefac justo, et invénies retributiónem magnam: et si non ab ipso, certe a Dómino. Non est enim ei bene qui assíduus est in malis, et eleemósynas non danti: quóniam et Altíssimus ódio habet peccatóres, et misértus est pœniténtibus.
 $Tu autem
 _
-
 R.br. Dómine, * exáudi oratiónem meam.
 R. Dómine, * exáudi oratiónem meam.
 V. Et clamor meus ad te véniat.
@@ -723,7 +772,19 @@ R. Exáudi oratiónem meam.
 &Gloria
 R. Dómine, * exáudi oratiónem meam.
 
-[MM Capitulum]
+[MM LB6C]
+@:MM LB6_:1-4
+R.br. Misericórdia Dómini * Super timéntes eum.
+R. Misericórdia Dómini * Super timéntes eum.
+V. Ab ætérno et usque in ætérnum.
+R. Super timéntes eum.
+
+[MM LB6]
+@:MM LB6_
+(sed rubrica cisterciensis)
+@:MM LB6C
+
+[MM Capitulum_]
 !1 Cor 16:13-14
 v. Vigiláte, state in fide, viríliter ágite, et confortámini. Ómnia vestra in caritáte fiant.
 $Deo gratias
@@ -731,13 +792,43 @@ _
 V. Beáti qui hábitant in domo tua, Dómine.
 R. In sǽcula sæculórum laudábunt te.
 
-[MM Capitulum Adv]
+[Nocturn 2 Versum Feria6]
+V. Dóminus in Sion magnus.
+R. Et excélsus super omnes pópulos.
+
+[Nocturn 2 Versum Sabbato]
+V. Misit verbum suum, et sanávit eos.
+R. Et erípuit eos de interitiónibus eórum.
+
+[MM Capitulum]
+@:MM Capitulum_
+(sed rubrica cisterciensis)
+@:MM Capitulum_:1-4
+@Psalterium/Special/Minor Special:Versum Dominica Tertia
+(sed feria 3)
+@Psalterium/Psalmi/Psalmi matutinum:Daya3:7-8
+(sed feria 4)
+@Psalterium/Psalmi/Psalmi matutinum:Daya4:7-8
+(sed feria 5)
+@Tempora/Epi1-0:Versum 1
+(sed feria 6)
+@:Nocturn 2 Versum Feria6
+(sed feria 7)
+@:Nocturn 2 Versum Sabbato
+
+[MM Capitulum Adv_]
 !Titus 2:12-13
 v. Sóbrie, et juste, et pie vivámus in hoc sǽculo, exspectántes beátam spem, et advéntum glóriæ magni Dei, et Salvatóris nostri Jesu Christi.
 $Deo gratias
 _
 V. Veni, Dómine, et noli tardáre.
 R. Reláxa facínora plebi tuæ.
+
+[MM Capitulum Adv]
+@:MM Capitulum Adv_
+(sed rubrica cisterciensis)
+@:MM Capitulum Adv_:1-4
+@:Adv 0 Versum
 
 [MM Capitulum Nat]
 !Isa 9:6
