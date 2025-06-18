@@ -81,8 +81,11 @@ R. Annuntiántium pacem, annuntiántium bona!
 
 [Responsory5]
 @Commune/C1:Responsory4
-(sed rubrica cisterciensis)
-@:Responsory8_
+
+[Responsory5] (rubrica cisterciensis)
+@:Responsory8_:1-2
+V. Cæli enárrant glóriam Dei, et ópera mánuum ejus annúntiat firmaméntum.
+@:Responsory8_:4
 
 [Lectio6]
 @Commune/C1:Lectio5:s/Quales .*//s

@@ -485,7 +485,7 @@ R. Viso Dómino, allelúja.
 [Cantm Fest]
 ;;246;247;248
 
-[Daym1]
+[Daym1_]
 Rectos decet * collaudátio;;32
 ;;33
 Expúgna * impugnántes me;;34
@@ -501,7 +501,18 @@ Sana Dómine * ánimam meam, quia peccávi tibi;;40
 Eructávit * cor meum verbum bonum;;43
 ;;44
 
-[Daym2]
+[Daym1C]
+@:Daym1_:1-6
+V. Delectáre in Dómino.
+R. Et dabit tibi petitiónes cordis tui.
+@:Daym1_:9-14
+
+[Daym1]
+@:Daym1_
+(sed rubrica cisterciensis)
+@:Daym1C
+
+[Daym2_]
 Adjútor * in tribulatiónibus;;45
 ;;46
 Magnus Dóminus * et laudábilis nimis;;47
@@ -517,7 +528,17 @@ Inténde in me * et exáudi me;;54
 Justa judicáte * fílii hóminum;;57
 ;;58
 
-[Daym3]
+[Daym2C]
+@:Daym2_:1-2
+Auribus * percípite qui habitátis orbem.;;47
+@:Daym2_:4-14
+
+[Daym2]
+@:Daym2_
+(sed rubrica cisterciensis)
+@:Daym2C
+
+[Daym3_]
 Da nobis Dómine * auxílium de tribulatióne;;59
 ;;60
 Benedícite, * gentes, Deum nostrum;;61
@@ -532,6 +553,21 @@ Dómine * Deus in adjutórium meum inténde;;69
 ;;70
 Quam bonus * Israël Deus;;71
 ;;72
+
+[Daym3C]
+@:Daym3_:1-6
+V. Manda, Deus, virtúti tuæ.
+R. Confírma hoc, Deus, quod operátus es in nobis.
+@:Daym3_:9-10
+Esto mihi, * Dómine, in Deum protectórem.;;69
+;;70
+Tenuísti, * Dómine, manum déxteram meam.;;71
+;;72
+
+[Daym3]
+@:Daym3_
+(sed rubrica cisterciensis)
+@:Daym3C
 
 [Daym4]
 Liberásti virgam * hereditátis tuæ;;73
@@ -549,10 +585,10 @@ Tu solus * altíssimus super omnem terram;;81
 Benedixísti * Dómine terram tuam;;83
 ;;84
 
-[Daym5]
+[Daym5_]
 Inclína Dómine, * aurem tuam, et exáudi me;;85
 ;;86
-Benedíctus, * Dóminus in ætérnum;;88(2-19)
+Benedíctus * Dóminus in ætérnum;;88(2-19)
 ;;88(20-53)
 Exaltáre, * qui júdicas terram;;92!75
 ;;93
@@ -564,6 +600,17 @@ Quia mirabília * fecit Dóminus;;97
 ;;98
 Jubiláte * Deo omnis terra;;99!Bonum est * confitéri Dómino;;91
 ;;100
+
+[Daym5C]
+@:Daym5_:1-6
+V. Beátus homo, quem tu erudíeris Dómine.
+R. Et de lege tua docúeris eum.
+@:Daym5_:9-14
+
+[Daym5]
+@:Daym5_
+(sed rubrica cisterciensis)
+@:Daym5C
 
 [Daym6_]
 Clamor meus * ad te véniat, Deus;;101

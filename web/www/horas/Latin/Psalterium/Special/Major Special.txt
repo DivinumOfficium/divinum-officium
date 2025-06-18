@@ -94,7 +94,7 @@ Cum Spíritu Paráclito,
 Nunc et per omne sǽculum.
 Amen.
 
-[HymnusM Day0 Laudes hiemalis]
+[HymnusM Day0 Laudes hiemalis_]
 v. Ætérne rerum Cónditor,
 Noctem diémque qui regis,
 Et témporum das témpora,
@@ -141,7 +141,9 @@ Cum Spíritu Paráclito,
 Et nunc et in perpétuum.
 Amen.
 
-[HymnusM Day0 Laudes hiemalis] (rubrica cisterciensis)
+[HymnusM Day0 Laudes hiemalis] 
+@:HymnusM Day0 Laudes hiemalis_
+(sed rubrica cisterciensis)
 @:HymnusM Day1 Laudes
 
 [Dominica Versum 2]

@@ -1,3 +1,50 @@
+[Invit]
+Dominica = Hospodinu, jenž nás stvořil, * Pojďte se poklonit.
+Feria II = Pojďte, * Zajásejme Hospodinu.
+Feria III = Jásejme Bohu, * Našemu Spasiteli.
+Feria IV = Bohu velkému, Hospodinu, * Pojďte se poklonit.
+Feria V = Králi velkému, Hospodinu, * Pojďte se poklonit.
+Feria VI = Hospodinu, Bohu našemu, * Pojďte se poklonit.
+Sabbato = Lide Hospodinův, a ovce jeho pastvy: * Pojďte se poklonit.
+Invit 1 = Klaňme se Hospodinu, * Neboť on nás stvořil.
+
+[Invit Trid]
+Dominica=Klaňme se Hospodinu, * Který nás stvořil.
+Feria II=Pojďte, * Zajásejme Hospodinu.
+Feria III=Jásejme Bohu, * Našemu Spasiteli.
+Feria IV=Ve tvé ruce, Hospodine, * Jsou všechny končiny země.
+Feria V=Hospodinu, který nás stvořil, * Pojďte se poklonit.
+Feria VI=Hospodinu, který nás stvořil, * Pojďte se poklonit.
+Sabbato=Hospodinu, Bohu našemu, * Pojďte se poklonit.
+
+[Invit Adv]
+Králi, jenž přijde, Hospodinu, * Pojďte se poklonit.
+
+[Invit Adv3]
+Blízko je již Hospodin, * Pojďte se poklonit.
+
+[Invit Quad]
+Abyste zbytečně nevstávali ráno před ůsvitem: * Hospodin totiž slíbil korunu bdícím.
+
+[Invit Quad5_]
+Dnes, pokud uslyšíte hlas Hospodinův, * Nezatvrzuje srdce svá.
+
+[Invit Quad5 OP]
+Klaňme se Hospodinu, * Jenž nás vykoupil skrze kříž.
+
+[Invit Quad5]
+@:Invit Quad5_
+(sed rubrica Praedicatorum)
+@:Invit Quad5 OP
+
+[Invit Pasch_]
+Pán vpravdě vstal z mrtvých, * Alleluja.
+
+[Invit Pasch]
+@:Invit Pasch_
+(sed rubrica praedicatorum aut rubrica cisterciensis)
+Alleluja, alleluja, * Alleluja.
+
 [Day0 Hymnus]
 v. V noci vstávejme, bděme všichni stejně,
 posvátné žalmy stále rozjímejme
@@ -14,3 +61,219 @@ Otce i Syna i Ducha svatého,
 jemuž vždy hřímá slávu světů množství
 z vesmíru všeho.
 Amen.
+
+[Day0 Hymnus1M] (rubrica cisterciensis)
+@Psalterium/Special/Major Special:HymnusM Day0 Laudes hiemalis_
+
+[MM LB Pasch]
+!Oseáš 6:1-3
+v. Pojďte, navraťme se k Hospodinu, neboť on nás zranil, a uzdraví nás; udeřil, a obváže nás. Obživí nás po dvou dnech, třetího dne nás vzkřísí a budeme žít před jeho tváří. Poznávejme, snažme se poznat Hospodina.
+$Tu autem
+_
+@Psalterium/Special/Minor Special:Responsory breve Pasch Nona
+
+[MM LB1]
+!Lam 2:19
+v. Vstaň, chval <i>Boha</i> v noci na začátku hlídek: vylej jako vodu své srdce před Hospodinovou tváří: pozdvihni k němu své ruce.
+$Tu autem
+_
+R.br. Budu velebit Hospodina * v každém čase.
+R. Budu velebit Hospodina * v každém čase.
+V. Vždy jeho chvála v mých ústech.
+R. V každém čase.
+&Gloria
+R. Budu velebit Hospodina * v každém čase.
+
+[MM LB2_]
+!Přís. 3:19-20
+v. Hospodin moudrostí založil zemi, rozumností upevnil nebesa. Jeho moudrostí vytryskly hlubiny a oblaka rosou skrápějí zemi.
+$Tu autem
+_
+R.br. Bože, ve jménu svém * zachraň mě.
+R. Bože, ve jménu svém * zachraň mě.
+V. A ve svém milosrdenství mě vysvoboď.
+R. Zachraň mě.
+&Gloria
+R. Bože, ve jménu svém * zachraň mě.
+
+[MM LB2C]
+@:MM LB2_:1-4
+R.br. Smiluj se nade mnou, Bože, * Smiluj se nade mnou.
+R. Smiluj se nade mnou, Bože, * Smiluj se nade mnou.
+V. Neboť v tebe doufá má duše.
+R. Smiluj se nade mnou.
+
+[MM LB2]
+@:MM LB2_
+(sed rubrica cisterciensis)
+@:MM LB2C
+
+[MM LB3_]
+!Sap 1:1-2
+v. Milujte spravedlnost, kteří soudíte zemi. Mějte o Hospodinu dobré smýšlení a v prostotě srdce ho hledejte: neboť se dává nalézt těm, kdo ho nepokoušejí, a zjevuje se těm, kdo v něho věří.
+$Tu autem
+_
+R.br. V tebe, Hospodine, jsem doufal: * nebudu zahanben navěky.
+R. V tebe, Hospodine, jsem doufal: * nebudu zahanben navěky.
+V. Ve své spravedlnosti mě vysvoboď a vytrhni.
+R. Nebudu zahanben navěky.
+&Gloria
+R. V tebe, Hospodine, jsem doufal: * nebudu zahanben navěky.
+
+[MM LB3C]
+@:MM LB3_:1-4
+R.br. Podivuhodný je Bůh, * Ve svých svatých.
+R. Podivuhodný je Bůh, * Ve svých svatých.
+V. On sám dává moc a sílu svému lidu.
+R. Ve svých svatých.
+
+[MM LB3]
+@:MM LB3_
+(sed rubrica cisterciensis)
+@:MM LB3C
+
+[MM LB4_]
+!Sap 3:9
+v. Ti, kdo v něho důvěřují, pochopí pravdu, a věrní spočinou v lásce k němu: neboť milost a pokoj patří jeho vyvoleným.
+$Tu autem
+_
+R.br. Jásejte Bohu, * naší spáse.
+R. Jásejte Bohu, * naší spáse.
+V. Plesejte Bohu Jákobovu.
+R. Naší spáse.
+&Gloria
+R. Jásejte Bohu, * naší spáse.
+
+[MM LB4C]
+@:MM LB4_:1-4
+R.br. Budeme tě chválit, Bože, * Budeme tě chválit.
+R. Budeme tě chválit, Bože, * Budeme tě chválit.
+V. A vzývat budeme tvé jméno.
+R. Budeme tě chválit.
+
+[MM LB4]
+@:MM LB4_
+(sed rubrica cisterciensis)
+@:MM LB4C
+
+[MM LB5]
+!Sap 1:6-7
+v. Neboť duch moudrosti je laskavý a neodpustí rouhači z jeho úst: neboť Bůh je svědek jeho ledví, pravý zkoumatel jeho srdce a posluchač jeho jazyka. Neboť Duch Hospodinův naplňuje celý svět, a ten, který všechno zahrnuje, zná každé slovo.
+$Tu autem
+_
+R.br. O tvém milosrdenství, Hospodine, * Budu zpívat navěky.
+R. O tvém milosrdenství, Hospodine, * Budu zpívat navěky.
+V. Po všechna pokolení a národy.
+R. Budu zpívat navěky.
+&Gloria
+R. O tvém milosrdenství, Hospodine, * Budu zpívat navěky.
+
+[MM LB6_]
+!Eccl 12:2-3
+v. Prokazuj dobro spravedlivému a obdržíš velkou odměnu: a i kdyby ne od něj, jistě od Hospodina. Není dobře tomu, kdo setrvává ve zle a kdo nedává almužny: neboť i Nejvyšší nenávidí hříšníky a slitovává se nad kajícími.
+$Tu autem
+_
+R.br. Hospodine, * vyslyš mou modlitbu.
+R. Hospodine, * vyslyš mou modlitbu.
+V. Ať k tobě přijde můj křik.
+R. Vyslyš mou modlitbu.
+&Gloria
+R. Hospodine, * vyslyš mou modlitbu.
+
+[MM LB6C]
+@:MM LB6_:1-4
+R.br. Milosrdenství Hospodina * Spočívá nad těmi, kdo se ho bojí.
+R. Milosrdenství Hospodina * Spočívá nad těmi, kdo se ho bojí.
+V. Od věků a navěky.
+R. Spočívá nad těmi, kdo se ho bojí.
+
+[MM LB6]
+@:MM LB6_
+(sed rubrica cisterciensis)
+@:MM LB6C
+
+[MM Capitulum_]
+!1 Kor 16:13-14
+v. Bděte, pevní ve víře, jednejte mužně a buďte silní. Všechno ať se mezi vámi děje v lásce.
+$Deo gratias
+_
+V. Blaze těm, kdo přebývají v tvém domě, Hospodine.
+R. Navěky tě budou chválit.
+
+[Nocturn 2 Versum Feria6]
+V. Hospodin na Siónu je veliký.
+R. A vznešený nade všechny národy.
+
+[Nocturn 2 Versum Sabbato]
+V. Seslal své slovo a uzdravil je.
+R. A vysvobodil je ode všech jejich těžkých neduhů.
+
+[MM Capitulum]
+@:MM Capitulum_
+(sed rubrica cisterciensis)
+@:MM Capitulum_:1-4
+@Psalterium/Special/Minor Special:Versum Dominica Tertia
+(sed feria 3)
+@Psalterium/Psalmi/Psalmi matutinum:Daya3:7-8
+(sed feria 4)
+@Psalterium/Psalmi/Psalmi matutinum:Daya4:7-8
+(sed feria 5)
+@Tempora/Epi1-0:Versum 1
+(sed feria 6)
+@:Nocturn 2 Versum Feria6
+(sed feria 7)
+@:Nocturn 2 Versum Sabbato
+
+[MM Capitulum Adv]
+!Titus 2:12-13
+v. Střízlivě, spravedlivě a zbožně žijme v tomto věku, očekávajíce blahoslavenou naději a příchod slávy velikého Boha a našeho Spasitele Ježíše Krista.
+$Deo gratias
+_
+V. Přijď, Pane, a neotálej.
+R. Odpusť hříchy svému lidu.
+
+[MM Capitulum Adv]
+@:MM Capitulum Adv_
+(sed rubrica cisterciensis)
+@:MM Capitulum Adv_:1-4
+@:Adv 0 Versum
+
+[MM Capitulum Nat]
+!Isa 9:6
+v. Neboť chlapec se nám narodil, syn nám byl dán, na jeho ramenou spočinula vláda: a bude se nazývati jeho jméno: Podivuhodný, Rádce, Bůh, Silný, Otec budoucího věku, Kníže pokoje.
+$Deo gratias
+_
+V. Uzřely všechny končiny země, alleluja.
+R. Spásu našeho Boha, alleluja.
+
+[MM Capitulum Epi]
+!Isa 60:4-5
+v. Tvoji synové přijdou zdaleka a tvé dcery povstanou po tvém boku. Tehdy uvidíš a budeš zářit; srdce tvé se podiví a rozšíří: neboť se k tobě obrátí množství moře a síla národů k tobě přijde.
+$Deo gratias
+_
+V. Tři jsou dary, které přinesli Mudrci Pánu.
+R. Zlato, kadidlo a myrhu.
+
+[MM Capitulum Quad]
+!Isa 1:16-18
+v. Obmyjte se, buďte čistí: odstraňte zlo svých myšlenek od mých očí: přestaňte páchat nepravosti, učte se konat dobro: hledejte právo, pomozte utlačenému, suďte sirotka, braňte vdovu. A pojďte, a vyjasněme si to – praví Hospodin.
+$Deo gratias
+_
+V. Na rukou tě ponesou.
+R. Abys snad nenarazil nohou svou o kámen.
+
+[MM Capitulum Quad5]
+!Jer 11:18-19
+v. Ty pak, Hospodine, jsi mi to zjevil a já jsem poznal: tehdy jsi mi ukázal jejich úmysly. A já jsem byl jako tichý beránek, který je veden na porážku.
+$Deo gratias
+_
+V. Vysvoboď mě, Hospodine, od zlého člověka.
+R. Od nepravého muže mě vyprosť.
+
+[MM Capitulum Pasch]
+!Rom 6:4
+v. Pohřbeni jsme byli s ním ve křtu ve smrt: aby tak, jak Kristus vstal z mrtvých skrze slávu Otcovu, tak i my chodili v novosti života.
+$Deo gratias
+_
+V. Vstal z mrtvých Pán, alleluja.
+R. Jak vám řekl, alleluja.

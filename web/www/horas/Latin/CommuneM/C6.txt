@@ -206,7 +206,7 @@ R. Símile est regnum cælórum decem virgínibus, quæ accipiéntes lámpadas s
 V. Quinque autem ex eis erunt fátue, et quinque prudéntes.
 R. Exiérunt óbviam sponso et sponsæ.
 
-[Responsory12C]
+[Responsory12Cist]
 R. Audi, fília, et vide, et inclína aurem tuam, et oblivíscere pópulum tuum, et domum Patris tui, et concupíscet Rex spéciem tuam:
 * Quóniam ipse est Dóminus Deus tuus.
 V. Induit te Dóminus vestiméntis salútis, et induménto lætítiæ circúmdedit te:
@@ -217,13 +217,18 @@ R. Quóniam ipse est Dóminus Deus tuus.
 [Responsory12]
 @:Responsory12_
 (sed rubrica cisterciensis)
-@:Responsory12C
+@:Responsory12Cist
 
 [MM Capitulum]
 @Commune/C7:Capitulum Sexta
 _
 V. Dilexísti justítiam, et odísti iniquitátem:
 R. Proptérea unxit te Deus, Deus tuus, óleo lætítiæ.
+
+[MM Capitulum] (rubrica cisterciensis)
+@Commune/C6:Capitulum Sexta
+_
+@Commune/C6:Nocturn 2 Versum
 
 [Ant Laudes] (rubrica cisterciensis)
 @:Ant Vespera:s/;;.*//g

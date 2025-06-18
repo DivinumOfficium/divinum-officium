@@ -134,8 +134,15 @@ sub hymnusmatutinum {
     my %hymn = %{setupstring($lang, 'Psalterium/Special/Matutinum Special.txt')};
     $name = gettempora('Hymnus matutinum');
     $name = ($name) ? "Hymnus $name" : "Day$dayofweek Hymnus";
+    if ($name =~ /Day[1-6] Hymnus/i && $version =~ /Cist/i) {
+      $name = "Day0 Hymnus";
+    }
     $comment = ($name) ? 1 : 5;
-    if ($name =~ /^Day0 Hymnus$/i && ($month < 4 || ($monthday && $monthday =~ /^1[0-9][0-9]\-/))) { $name .= '1'; }
+    if ($name =~ /^Day0 Hymnus$/i 
+      && ($month < 4 
+        || (($monthday && $monthday =~ /^1[0-9][0-9]\-/ && $version !~ /Cist/i) || ($monthday && $monthday =~ /^1[1-9][0-9]\-/ && $version =~ /Cist/i))
+         ))
+        { $name .= '1'; }
     setbuild("Psalterium/Special/Matutinum Special", $name, 'Hymnus ord');
 
   }
@@ -894,6 +901,7 @@ sub lectio : ScriptFunc {
     if ( ($commemoratio =~ /tempora/i && $commemoratio !~ /Nat(29|30|31)/i || $commemoratio =~ /01\-05\./)
       && ($homilyflag == 1 || exists($commemoratio{"Lectio$j0"}))
       && $comrank > 1
+      && $version !~ /Cist/i
       && ($rank > 4 || ($rank >= 3 && $version =~ /Trident/i) || $homilyflag == 1))
 
       #  || exists($commemoratio{Lectio1}) removed as it results in a wrong commemoration of Die infra 8vam (e.g., 2024-04-23)
@@ -951,6 +959,7 @@ sub lectio : ScriptFunc {
       && $commemoratio{Rank} =~ /S\. /i
       && ($winner !~ /tempora/i || $winner{Rank} < 5)
       && ($version !~ /1955/ || $comrank > 4)
+      && $version !~ /Cist/i
       && $cflag)
     {
       %w = (columnsel($lang)) ? %commemoratio : %commemoratio2;
