@@ -1163,7 +1163,7 @@ sub lectio : ScriptFunc {
   #handle parentheses in non Latin
   if ($lang !~ /Latin/i) {
     process_inline_alleluias(\$w, $dayname[0] =~ /Pasc/);
-    $w =~ s/\((.*?[.,\d].*?)\)/parenthesised_text($1)/eg;
+    $w =~ s/\(([^(]*?[.,\d][^(]*?)\)/parenthesised_text($1)/eg;
   }
 
   $w = replaceNdot($w, $lang);
