@@ -782,7 +782,8 @@ sub lectio : ScriptFunc {
       || ($num == 4 && $rule =~ /12 lect/i && exists($scriptura{"Lectio3"}))
     )                                                   # or for Monastic if we have to split the lessons at the ¶ mark
     && ($version !~ /trident/i || $rank < 5)
-  ) {                                                   # but not in Tridentinum Duplex II. vel I. classis
+    )
+  {                                                     # but not in Tridentinum Duplex II. vel I. classis
     %w = (columnsel($lang)) ? %scriptura : %scriptura2;
     $w = $w{"Lectio$num"};
 
@@ -875,7 +876,8 @@ sub lectio : ScriptFunc {
 
     # Simplex: also look when last lectio has been diverged to Lectio 4
     || (($ltype1960 == LT1960_SANCTORAL || $rank < 2) && $winner =~ /Sancti/i && $num == 4)
-  ) {    # 9th lesson diverged to Legend of Commemorated Saint
+    )
+  {    # 9th lesson diverged to Legend of Commemorated Saint
     %w = (columnsel($lang)) ? %winner : %winner2;
     my $L9winnerflag = 0;
 
@@ -1154,7 +1156,7 @@ sub lectio : ScriptFunc {
   #handle parentheses in non Latin
   if ($lang !~ /Latin/i) {
     process_inline_alleluias(\$w, $dayname[0] =~ /Pasc/);
-    $w =~ s/\((.*?[.,\d].*?)\)/parenthesised_text($1)/eg;
+    $w =~ s/\(([^(]*?[.,\d][^(]*?)\)/parenthesised_text($1)/eg;
   }
 
   $w = replaceNdot($w, $lang);
