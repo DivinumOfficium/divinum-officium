@@ -1,7 +1,35 @@
 @Sancti/06-14
 
+[Rule] (rubrica 1617 aut rubrica 1930)
+12 lectiones
+
 [Responsory1]
 @CommuneM/C4:Responsory10
 
 [Ant 3] (nisi rubrica cisterciensis)
 @Commune/C4a:Ant 1:s/N\./Basíli/
+
+[Lectio5]
+@Sancti/06-14:Lectio4
+
+[Lectio6]
+@Sancti/06-14:Lectio5:s/ Quibus.*//
+
+[Lectio7]
+@Sancti/06-14:Lectio5:s/.* (?=Quibus)// s/$/~/
+@Sancti/06-14:Lectio6:s/ Virginitátem.*//
+
+[Lectio8]
+@Sancti/06-14:Lectio6:s/.* (?=Virginitátem)//
+
+[Lectio9]
+@Sancti/06-14:Lectio7
+
+[Lectio10]
+Paulo autem univérsus mundus crucifíxus erat, et ipse mundo. Sic, qui veheménter cupiditáte sequéndi Christum tenétur, ad nihil ámplius hujus vitæ convérti potest: non ad paréntum aut cognatórum amórem, ubi præcéptis Dómini contrárius fúerit; (tunc enim occasiónem habet illud: Si quis venit ad me, et non ódio habet patrem suum et matrem et réliqua); non ad humánum timórem, ut propter ipsum subtrahámus áliquid utílium, id quod perpetrárunt Sancti, qui dixérunt: Obedíre opórtet Deo magis quam homínibus.
+
+[Lectio11]
+@Sancti/06-14:Lectio8
+
+[Lectio12]
+@Sancti/06-14:Lectio9
