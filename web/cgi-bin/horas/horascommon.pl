@@ -691,7 +691,7 @@ sub occurrence {
       if ($s{Rank} =~ /Vigil/i && exists($s{"Commemoratio 2"})) { $commemorated = $sname; }
     }
 
-    if (!$officename[2]) {
+    if (!($officename[2] || $missa)) {
 
       my $ittable = initiarule($month, $day, $year);
 
