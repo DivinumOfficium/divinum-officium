@@ -56,8 +56,8 @@ sub psalmi_matutinum_monastic {
   }
 
   #** special antiphons for not Quad weekdays
-  if ((($dayofweek > 0 && $dayname[0] !~ /Quad/i)
-    || $winner =~ /Pasc6-0/) && $version != /Cist/i)
+  if ((($dayofweek > 0 && $dayname[0] !~ /Quad/i) || $winner =~ /Pasc6-0/)
+    && $version != /Cist/i)
   {
     my $start = ($dayname[0] =~ /Pasc|Nat[23]\d/i) ? 0 : 8;
     my @p;

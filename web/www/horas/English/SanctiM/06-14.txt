@@ -1,0 +1,9 @@
+[Lectio6]
+@Sancti/06-14:Lectio5:s/ These.*//
+
+[Lectio7]
+@Sancti/06-14:Lectio5:s/.* (?=These)// s/$/~/
+@Sancti/06-14:Lectio6:s/ His.*//
+
+[Lectio8]
+@Sancti/06-14:Lectio6:s/.* (?=His)//
