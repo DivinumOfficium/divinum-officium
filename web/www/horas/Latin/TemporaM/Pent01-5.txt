@@ -2,13 +2,12 @@
 
 [Rule]
 ex TemporaM/Pent01-4;
-3 Lectiones
+3 Lectiones (nisi rubrica cisterciensis)
 Doxology=Corp
 Feria Te Deum
 Psalmi Feria (rubrica cisterciensis)
 
 [Rule] (rubrica 196)
- 
 
 [Ant Vespera]  (rubrica tridentina aut rubrica divino)
 @Tempora/Pent01-4::1-4
@@ -28,7 +27,32 @@ Psalmi Feria (rubrica cisterciensis)
 ;;
 ;;
 
-[Lectio1]
+[Ant Matutinum] (rubrica cisterciensis)
+Novus Abel, * Christus, hóstiam gratam pro nobis ófferens Deo Patri, novum dedicávit in suo Sánguine testaméntum.;;85
+;;86
+Ædificávit Noë * altáre Dómino, ófferens super illud holocáusta: odoratúsque Dóminus odórem suavitátis, benedíxit ei.;;88(2-19)
+;;88(20-53)
+Introdúcens Joseph fratres suos, instrúxit convívium, et appósito pane comédit, et bibit cum eis.;;92
+;;93
+@TemporaM/Pent01-4:Responsory TertiaM
+Allelúia, * allelúia, allelúia.
+;;
+;;
+;;
+;;
+;;
+
+[MM LB] (rubrica cisterciensis)
+!Psalm 77:23-25
+v. Mandávit Dóminus núbibus désuper: * et jánuas cæli apéruit. Et pluit illis manna ad manducándum: * et panem cæli dedit eis. Panem Angelórum manducávit homo, * cibária misit eis in abundántia.
+$Tu autem
+_
+R.br. Panis iste verus est, * Qui de cælo descéndit.
+R. Panis iste verus est, * Qui de cælo descéndit.
+V. Et dat vitam mundo.
+R. Qui de cælo descéndit.
+
+[Lectio1] 
 @Tempora/Pent01-5:Lectio7
 
 [Responsory1]
@@ -52,3 +76,5 @@ Psalmi Feria (rubrica cisterciensis)
 $Deo gratias
 _
 @Tempora/Pent01-4:Versum 2
+(sed rubrica cisterciensis)
+@TemporaM/Pent01-4:Responsory SextaM

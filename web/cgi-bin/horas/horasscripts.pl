@@ -257,6 +257,7 @@ sub psalm : ScriptFunc {
   $output .= "\n" . join("\n", @lines) . "\n";
   $output .= "\&Gloria\n" unless $psnum == 210 || $nogloria;
   $output =~ s/\$ant/Ant. $antline/g if $psnum == 94;
+  $output =~ s/94C/94/ if $psnum == "94C";
   $output;
 }
 

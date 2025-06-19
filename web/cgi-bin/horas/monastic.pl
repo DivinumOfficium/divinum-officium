@@ -229,12 +229,24 @@ sub psalmi_matutinum_monastic {
       brevis_monastic($lang);
 
       # on a ferial day in "Summer", we have just a Lectio brevis
+ 
     } elsif (exists($winner{Lectio94}) || exists($winner{Lectio4})) {
       legend_monastic($lang);
 
       # on a III. class feast in "Summer", we have the contracted Saint's legend
     }
     push(@s, "\n");
+   } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i
+    && $winner{Rank} !~ /quat(t?)uor|Dominica/i
+    && $rule !~ /(3|12) lectiones/
+    && $version =~ /Cist/i)
+  {
+    # CIST: days within Octaves and Vigils need Lectio brevis + R.br. as well
+
+    if ($winner =~ /Tempora/i || $winner{Rank} =~ /Vigil/i) { 
+      brevis_monastic($lang);
+      push(@s, "\n");
+    }
   } else {
     lectiones(0, $lang);
 
@@ -409,8 +421,11 @@ sub brevis_monastic {
   my $lang = shift;
   absolutio_benedictio($lang);
   my $lectio;
+  my %w = columnsel($lang) ? %winner : %winner2;
 
-  if ($commune =~ /C10/) {
+  if ($version =~ /Cist/i && $w{"MM LB"}) {
+    $lectio = $w{"MM LB"};
+  } elsif ($commune =~ /C10/) {
     my %c = (columnsel($lang)) ? %commune : %commune2;
     my $name = getC10readingname();
     my @resp = split(/\n/, $c{'Responsory3'});
