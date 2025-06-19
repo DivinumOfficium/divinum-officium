@@ -110,6 +110,7 @@ sub psalmi_matutinum_monastic {
     setbuild("$src", "$name $i Versum", 'subst');
   }
 
+  #** CIST: change of versicle for Simplex feast (iij. Lect. et M.)
   if ( $version =~ /Cist/i
     && $winner !~ /^Tempora/
     && $winner{Rule} =~ /3 lectio|(ex|vide) C10/i)
@@ -194,12 +195,13 @@ sub psalmi_matutinum_monastic {
         my $p = $p[$i];
         if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
 
-        if ($i == 0 || $i == 8) {
+        if ($i == 0 || $i == 8 
+          || ($version =~ /Cist/i && ($i == 2 || $i == 4 ))) {
           $p = "$p[$i]$p";
         }
         $psalmi[$i] = $p;
       }
-      setbuild1("Antiphonas", "per Octavam cum Psalmi de Feria currentæ");
+      setbuild1("Antiphonas", "per Octavam cum Psalmis de Feria currentæ");
     }
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
