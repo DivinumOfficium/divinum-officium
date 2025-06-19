@@ -602,10 +602,10 @@ Jásejte * Bohu, celá země.;;99!Dobré je * chválit Pána.;;91
 ;;100
 
 [Daym5C]
-@:Daym5_:1-6
+@:Daym5_:1-6:s/92.*/92/
 V. Blažen je člověk, kterého ty vzděláváš, Hospodine.
 R. A o svém zákoně jej učíš.
-@:Daym5_:9-14
+@:Daym5_:9-14:s/99.*/99/
 
 [Daym5]
 @:Daym5_
