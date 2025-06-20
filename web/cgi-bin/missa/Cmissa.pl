@@ -30,7 +30,7 @@ use DivinumOfficium::LanguageTextTools
 $error = '';
 $debug = '';
 
-our $Ck = 0;
+our $Ck = 1;
 our $NewMass = 1;
 our $missa = 1;
 our $officium = 'Cmissa.pl';
@@ -93,7 +93,7 @@ require "$Bin/propers.pl";
 binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
-our ($version1, $version2, $lang1, $lang2, $expand, $column, $accented);
+our ($version1, $version2, $lang1, $lang2, $langfb, $expand, $column, $accented);
 our %translate;    #translation of the skeleton label for 2nd language
 
 #get parameters
@@ -138,18 +138,21 @@ $expandnum = strictparam('expandnum');
 
 $only = ($lang1 eq $lang2 && $version1 eq $version2) ? 1 : 0;
 
-$version = $version1;
-precedence($winner);    #fills our hashes et variables
+#*** print pages (setup, hora=pray, mainpage)
+#generate HTML
+htmlHead($title, 'startup()');
+
+$version = $version2;
+precedence();    #fills our hashes et variables
 setsecondcol();
+$version = $version1;
+precedence();    #fills our hashes et variables
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;
 
 #prepare main pages
 $title = "Sancta Missa Comparison";
 
-#*** print pages (setup, hora=pray, mainpage)
-#generate HTML
-htmlHead($title, 'startup()');
 print <<"PrintTag";
 <P ALIGN="CENTER">
 <A HREF="Cmissa.pl?searchvalue=2&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Incipit]</A>&nbsp;&nbsp;
@@ -180,7 +183,7 @@ if ($command =~ /setup(.*)/is) {
   $background = ($whitebground) ? ' class="contrastbg"' : '';
   $head = $title;
   headline($head);
-  load_languages_data($lang1, $lang2, $version, $missa);
+  load_languages_data($lang1, $lang2, $langfb, $version, $missa);
   print <<"PrintTag";
 <TABLE BORDER=0 WIDTH=80% ALIGN=CENTER><TR>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>$version1</FONT></TD><TD ALIGN=CENTER><FONT COLOR=MAROON>$version2</FONT></TD>

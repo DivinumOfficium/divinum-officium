@@ -748,7 +748,8 @@ sub horas_menu {
 
   # For Cistercian version (not to complicate other versions) added the option to click on next day's Lauds
   if ($version =~ /Cist/i) {
-    $output .= qq(\n<A HREF=# onclick="prevnext(1);hset('Matutinum')"><FONT COLOR=$colour>Matutinum crastinum</FONT></A>\n)
+    $output .=
+      qq(\n<A HREF=# onclick="prevnext(1);hset('Matutinum')"><FONT COLOR=$colour>Matutinum crastinum</FONT></A>\n)
       if ($0 !~ /Cofficium/);
     $output .= '&nbsp;&nbsp;';
     $output .= qq(\n<A HREF=# onclick="prevnext(1);hset('Laudes')"><FONT COLOR=$colour>Laudes crastinæ</FONT></A>\n)
