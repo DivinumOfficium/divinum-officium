@@ -1,0 +1,28 @@
+[Lectio5]
+@Sancti/08-01:Lectio4:s/\. Eudocia.*//
+
+[Lectio6]
+@Sancti/08-01:Lectio4:s/.*\. (?=Eudocia)// s/$/~/
+@Sancti/08-01:Lectio5:s/ From .*//
+
+[Lectio7]
+@Sancti/08-01:Lectio5:s/.* (?=From)// s/$/~/
+@Sancti/08-01:Lectio6:s/ Among .*//
+
+[Lectio8]
+@Sancti/08-01:Lectio6:s/.* (?=Among)//
+
+[Lectio9]
+@Sancti/08-01:Lectio7:s/ Concerning .*//
+
+[Lectio10]
+@Sancti/08-01:Lectio7:s/.* (?=Concerning )//s s/ It .*//
+
+[Lectio11]
+@Sancti/08-01:Lectio7:s/.* (?=It )//s s/$/~/
+@Sancti/08-01:Lectio8:s/ If, .*//
+
+[Lectio12]
+@Sancti/08-01:Lectio8:s/.* (?=If,)//
+
+

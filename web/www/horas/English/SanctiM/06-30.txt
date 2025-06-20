@@ -1,0 +1,22 @@
+[Lectio3]
+@Sancti/06-30:Lectio2:!2-4 s/5-8/8-11/
+@Sancti/06-30::2-4 s/\. And.*//
+
+[Lectio4]
+@Sancti/06-30:Lectio3:!2-3 s/ .*?(?= And)//
+
+[Lectio5]
+@Sancti/06-30:Lectio4:s/ Listen.*//
+
+[Lectio6]
+@Sancti/06-30:Lectio4:s/.* (?=Listen)//
+
+[Lectio10]
+@Sancti/06-30:Lectio8:s/And.*//
+
+[Lectio11]
+@Sancti/06-30:Lectio8:s/.* (?=And)// s/$/~/
+@Sancti/06-30:Lectio9:s/ When.*//
+
+[Lectio12]
+@Sancti/06-30:Lectio9:s/.* (?=When)//

@@ -1,1 +1,19 @@
 @Sancti/08-04
+
+[Name]
+Domínici
+
+[Rule] (nisi rubrica 1963)
+12 lectiones
+
+[Lectio5]
+@Sancti/08-04:Lectio4
+
+[Lectio6]
+@Sancti/08-04:Lectio5:s/Romam rédiens.*//
+
+[Lectio7]
+@Sancti/08-04:Lectio5:s/.* (?=Romam rédiens)//
+
+[Lectio8]
+@Sancti/08-04:Lectio6
