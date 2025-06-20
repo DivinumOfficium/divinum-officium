@@ -100,7 +100,7 @@ sub build_comment_line_xhtml() {
 getini('missa');    #files, colors
 $setupsave = strictparam('setup');
 $setupsave =~ s/\~24/\"/g;
-our ($lang1, $lang2, $column);
+our ($version, $lang1, $lang2, $langfb, $column);
 our %translate;     #translation of the skeleton label for 2nd language
 
 if (!$setupsave) {
@@ -197,7 +197,7 @@ print <<"PrintTag";
 <body><div>
 PrintTag
 
-load_languages_data($lang1, $lang2, $version, $missa);
+load_languages_data($lang1, $lang2, $langfb, $version, $missa);
 $head = $title;
 $headline = setheadline();
 headline($head);

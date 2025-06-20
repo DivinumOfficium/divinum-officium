@@ -45,8 +45,9 @@ sub horas {
 
   if ($Ck) {
     $version = $version2;
-    load_languages_data($lang1, $lang2, $version, $missa);
+    load_languages_data($lang1, $lang2, $langfb, $version, $missa);
     precedence();
+    setsecondcol();
   }
 
   if (!$only) {

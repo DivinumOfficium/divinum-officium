@@ -162,6 +162,7 @@ sub specials {
     }
 
     if ($item =~ /invitatorium/i) {
+
       # CIST: between Most Holy Trinity and All Saints, Psalm 94 is prayed instead of Invitatory on Ferias incl. in Octaves
       if ($version =~ /Cist/i 
         && $winner{Rank} =~ /Feria|Vigilia|Sabbato infra oct/i
@@ -170,8 +171,9 @@ sub specials {
         {
           push(@s, "\&psalm('94C')", "\n");
           setbuild('Psalterium/Special/Matutinum Special', 'Psalmus 94 loco Invitatorii in Æstate', 'Invitatorium ord');
+        } else { 
+          invitatorium($lang); 
         }
-      else { invitatorium($lang); }
       next;
     }
 
