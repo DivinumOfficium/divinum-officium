@@ -1192,7 +1192,8 @@ sub lectiones_ex3_fiunt4 {
       my $cc = $scrip{"Lectio$l0"};
       push(@scrips, $cc);
     } else {
-      my @splits = split("¶\n", $scrip{"Lectio$l0"});
+      $scrip{"Lectio$l0"} =~ /(¶\s)/s;
+      my @splits = split($1, $scrip{"Lectio$l0"});
       push(@scrips, @splits);
     }
   }
