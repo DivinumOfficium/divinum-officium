@@ -229,21 +229,21 @@ sub psalmi_matutinum_monastic {
       brevis_monastic($lang);
 
       # on a ferial day in "Summer", we have just a Lectio brevis
- 
+
     } elsif (exists($winner{Lectio94}) || exists($winner{Lectio4})) {
       legend_monastic($lang);
 
       # on a III. class feast in "Summer", we have the contracted Saint's legend
     }
     push(@s, "\n");
-   } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i
+  } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i
     && $winner{Rank} !~ /quat(t?)uor|Dominica/i
     && $rule !~ /(3|12) lectiones/
     && $version =~ /Cist/i)
   {
     # CIST: days within Octaves and Vigils need Lectio brevis + R.br. as well
 
-    if ($winner =~ /Tempora/i || $winner{Rank} =~ /Vigil/i) { 
+    if ($winner =~ /Tempora/i || $winner{Rank} =~ /Vigil/i) {
       brevis_monastic($lang);
       push(@s, "\n");
     }

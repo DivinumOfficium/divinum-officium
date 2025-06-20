@@ -134,15 +134,22 @@ sub hymnusmatutinum {
     my %hymn = %{setupstring($lang, 'Psalterium/Special/Matutinum Special.txt')};
     $name = gettempora('Hymnus matutinum');
     $name = ($name) ? "Hymnus $name" : "Day$dayofweek Hymnus";
+
     if ($name =~ /Day[1-6] Hymnus/i && $version =~ /Cist/i) {
       $name = "Day0 Hymnus";
     }
     $comment = ($name) ? 1 : 5;
-    if ($name =~ /^Day0 Hymnus$/i 
-      && ($month < 4 
-        || (($monthday && $monthday =~ /^1[0-9][0-9]\-/ && $version !~ /Cist/i) || ($monthday && $monthday =~ /^1[1-9][0-9]\-/ && $version =~ /Cist/i))
-         ))
-        { $name .= '1'; }
+
+    if (
+      $name =~ /^Day0 Hymnus$/i
+      && (
+        $month < 4
+        || ( ($monthday && $monthday =~ /^1[0-9][0-9]\-/ && $version !~ /Cist/i)
+          || ($monthday && $monthday =~ /^1[1-9][0-9]\-/ && $version =~ /Cist/i))
+      )
+    ) {
+      $name .= '1';
+    }
     setbuild("Psalterium/Special/Matutinum Special", $name, 'Hymnus ord');
 
   }
