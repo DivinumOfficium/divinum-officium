@@ -8,6 +8,8 @@ Feria V infra Hebdomadam II post Octavam Pentecostes
 ;;Duplex majus;;6.3;;ex Tempora/Pent01-4
 (sed rubrica tridentina nisi rubrica cisterciensis)
 ;;Duplex majus;;4.9;;ex Tempora/Pent01-4
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.2;;ex Tempora/Pent01-4
 (sed rubrica 196 aut rubrica 1955)
 ;;Feria;;1
 

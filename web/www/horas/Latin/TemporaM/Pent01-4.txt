@@ -31,7 +31,7 @@ Sapiéntia * ædificávit sibi domum, míscuit vinum, et pósuit mensam, allelú
 @Tempora/Pent01-4::11-13
 @:AntMatutinumM
 @:Responsory SextaM
-;;272;214;273
+Sapiéntia * ædificávit sibi domum, míscuit vinum, et pósuit mensam, allelúia.;;272;214;273
 @:Responsory NonaM
 
 [AntMatutinumM]
@@ -76,7 +76,9 @@ V. Locútus est pópulus contra Dóminum: † Anima nostra náuseat super cibo i
 R. Quómodo potest hic nobis dare carnem suam ad manducándum?
 
 [Responsory4] (rubrica cisterciensis)
-@Tempora/Pent01-4:Responsory3
+@Tempora/Pent01-4:Responsory3:1-2
+V. Cumque surrexísset et accepísset cibum, confortátus est in Spíritu sancto:
+@Tempora/Pent01-4:Responsory3:4
 
 [Lectio5]
 @Tempora/Pent01-4:Lectio4

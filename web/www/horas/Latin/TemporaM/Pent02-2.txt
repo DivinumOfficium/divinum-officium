@@ -2,7 +2,7 @@
 
 [Rule]
 ex TemporaM/Pent01-4;
-3 Lectiones
+3 Lectiones (nisi rubrica cisterciensis)
 Doxology=Corp
 Feria Te Deum
 Psalmi Feria (rubrica cisterciensis)
@@ -27,6 +27,12 @@ Psalmi Feria (rubrica cisterciensis)
 ;;
 ;;
 ;;
+
+[Ant Matutinum] (rubrica cisterciensis)
+@TemporaM/Pent01-5
+
+[MM LB] (rubrica cisterciensis)
+@TemporaM/Pent01-5
 
 [Lectio1]
 @Tempora/Pent02-2:Lectio7

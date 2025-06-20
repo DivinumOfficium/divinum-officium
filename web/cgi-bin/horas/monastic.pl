@@ -56,8 +56,7 @@ sub psalmi_matutinum_monastic {
   }
 
   #** special antiphons for not Quad weekdays
-  if ((($dayofweek > 0 && $dayname[0] !~ /Quad/i) || $winner =~ /Pasc6-0/)
-    && $version != /Cist/i)
+  if (($dayofweek > 0 && $dayname[0] !~ /Quad/i) || $winner =~ /Pasc6-0/)
   {
     my $start = ($dayname[0] =~ /Pasc|Nat[23]\d/i) ? 0 : 8;
     my @p;
@@ -190,18 +189,27 @@ sub psalmi_matutinum_monastic {
     if (exists($winner{'Ant Matutinum'})) {
       my ($w, $c) = getantmatutinum($lang);
       my @p = split("\n", $w);
+      my $skip = "";
 
       for (my $i = 0; $i < @p; $i++) {
         my $p = $p[$i];
         if ($psalmi[$i] =~ /;;(.*)/s) { $p = ";;$1"; }
 
-        if ($i == 0 || $i == 8 
-          || ($version =~ /Cist/i && ($i == 2 || $i == 4 ))) {
+        if ($i == 0 || $i == 8 ) {
           $p = "$p[$i]$p";
+        } elsif ($version =~ /Cist/i && ($i == 2 || $i == 4 )) {
+          # CIST: there are three Ant. for first Nocturn
+            if ($i == 4 && ($dayofweek == 1 || $dayofweek == 4)) {
+            # CIST: on Monday, Psalm 36 is divided and the Ant. can't be placed inbetween.
+            # Same on Thursday.
+              $skip = 1; }
+            else { $p = "$p[$i]$p"; }
+        } elsif ($version =~ /Cist/i && $i == 5 && $skip) {
+              $p = "$p[$i-1]$p";
         }
         $psalmi[$i] = $p;
       }
-      setbuild1("Antiphonas", "per Octavam cum Psalmis de Feria currentæ");
+      setbuild1("Antiphonas", "per Octavam cum Psalmis de Feria");
     }
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
@@ -447,6 +455,7 @@ sub brevis_monastic {
   }
   $lectio =~ s/&Gloria1?/&Gloria1/;
   $lectio =~ s/&Gloria.*//s if $version =~ /Cist/i;
+  if ($lectio) {$lectio = "#Lectio brevis\n$lectio"}
   push(@s, $lectio);
 }
 

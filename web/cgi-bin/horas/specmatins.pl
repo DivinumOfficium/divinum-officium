@@ -103,7 +103,7 @@ sub invitatorium {
 
     push(@s, $_);
   } else {
-    $error .= "$fname cannnot open";
+    $error .= "$fname cannot open";
   }
 }
 

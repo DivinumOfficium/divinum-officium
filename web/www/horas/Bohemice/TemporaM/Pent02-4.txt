@@ -1,0 +1,26 @@
+[Lectio6]
+@Tempora/Pent02-4:Lectio5: s/Neboť .*//
+
+[Lectio7]
+@Tempora/Pent02-4:Lectio5: s/.*(Neboť )/$1/
+
+[Lectio8]
+@Tempora/Pent02-4:Lectio6
+(sed rubrica cisterciensis)
+@Tempora/Pent02-4:Lectio6:s/.*(Ve starém)/$1/
+
+[Lectio9]
+@Tempora/Pent02-4:Lectio7: s/Podobným .*//
+
+[Lectio10]
+@Tempora/Pent02-4:Lectio7: s/.*(Podobným)/$1/s
+
+[Lectio11]
+@Tempora/Pent02-4:Lectio8
+(sed rubrica cisterciensis)
+@Tempora/Pent02-4:Lectio8:s/Kdy tedy.*//
+
+[Lectio12] (rubrica cisterciensis)
+@Tempora/Pent02-4:Lectio8:s/.*(Kdy tedy)/$1/ s/$/~/
+@Tempora/Pent02-4:Lectio9:s/nemoci\..*/nemoci./
+
