@@ -30,15 +30,16 @@ Sanctus, * Sanctus, Sanctus, Dóminus Deus omnípotens, † qui erat, et qui est
 @Tempora/Pent01-0:Lectio1:1-5 s/-4/-3/
 
 [Lectio2]
-@Tempora/Pent01-0:Lectio1:s/1-4/4-6/ s/1 .*4 /4 /s
+@Tempora/Pent01-0::1 s/5-8/4-6/
+@Tempora/Pent01-0:Lectio1:6
 @Tempora/Pent01-0:Lectio2:2-3
 
 [Lectio3]
-@Tempora/Pent01-0:Lectio2:s/5-8/7-9/ s/5 .*7 /7 /s
+@Tempora/Pent01-0:Lectio2:!2-3 s/5-8/7-9/
 @Tempora/Pent01-0:Lectio3:2
 
 [Lectio4]
-@Tempora/Pent01-0:Lectio3:s/9-/10-/ s/9 .*//
+@Tempora/Pent01-0:Lectio3:!2 s/9-/10-/
 
 [Responsory4]
 R. Glória Patri, genitǽque Proli, † et tibi compar utriúsque semper Spíritus alme, Deus unus,
