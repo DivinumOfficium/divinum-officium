@@ -73,7 +73,7 @@ Et quómodo córpora trium puerórum ignis non exússit, sed camínus in rorem v
 @Tempora/Pasc7-2:Lectio2:s/ Fuérunt.*//s
 
 [Lectio11]
-@Tempora/Pasc7-2:Lectio2:s/.*(Fuérunt)/$1/s s/$/~/
+@Tempora/Pasc7-2:Lectio2:s/.*(?=Fuérunt)//
 
 [Lectio12]
 @Tempora/Pasc7-2:Lectio3

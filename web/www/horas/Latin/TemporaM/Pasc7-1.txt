@@ -69,11 +69,11 @@ Jam quid respóndit, audístis, magnum miráculum. Omnes, qui áderant, unam lin
 @Tempora/Pasc7-1:Lectio1:s/ Quod.*//s
 
 [Lectio10]
-@Tempora/Pasc7-1:Lectio1:s/.*(Quod)/$1/s s/$/~/
-@Tempora/Pasc7-1:Lectio2:s/ Hoc.*//s
+@Tempora/Pasc7-1:Lectio1:s/.*(?=Quod)//s s/$/~/
+@Tempora/Pasc7-1:Lectio2:s/ Hoc.*//
 
 [Lectio11]
-@Tempora/Pasc7-1:Lectio2:s/.*(Hoc)/$1/s s/$/~/
+@Tempora/Pasc7-1:Lectio2:s/.*(?=Hoc)//
 
 [Lectio12]
 @Tempora/Pasc7-1:Lectio3
