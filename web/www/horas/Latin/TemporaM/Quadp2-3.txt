@@ -1,1 +1,10 @@
 @Tempora/Quadp2-3
+
+[Lectio3]
+@Tempora/Quadp2-3::s/\n(3 )/ ¶\n$1/
+
+[Responsory3]
+@TemporaM/Quadp2-0:Responsory11
+
+[Responsory4]
+@Tempora/Quadp2-1:Responsory1
