@@ -1,1 +1,7 @@
 @Tempora/Epi4-4
+
+[Lectio2]
+@Tempora/Epi4-4::s/\n(9 )/ ¶\n$1/
+
+[Responsory4]
+@Tempora/Epi2-5:Responsory3
