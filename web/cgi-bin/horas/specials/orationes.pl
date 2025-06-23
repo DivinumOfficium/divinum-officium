@@ -725,7 +725,7 @@ sub vigilia_commemoratio {
   my %w = %{setupstring($lang, $fname)};
   my @wrank = split(';;', $w{Rank});
 
-  if ($w{Rank} =~ /Vigilia/i) {
+  if ($w{Rank} =~ /Vigili/i) {
     $w = $w{Oratio};
 
     if (!$w && $w{Rank} =~ /(?:ex|vide) C1v/) {
@@ -738,7 +738,7 @@ sub vigilia_commemoratio {
   }
   if (!$w) { return ''; }
   my $c = "!" . &translate('Commemoratio', $lang) . ": " . &translate("Vigilia", $lang) . "\n";
-  if ($w{Rank} =~ /Vigilia/i) { $c =~ s/\:.*/: $wrank[0]/; }
+  if ($w{Rank} =~ /Vigili/i) { $c =~ s/\:.*/: $wrank[0]/; }
   if ($w =~ /(\!.*?\n)(.*)/s) { $c = $1; $w = $2; }
   my %p = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
   my $a = $p{"Feria Ant 2"};       #$p{"Day$dayofweek Ant 2"};
