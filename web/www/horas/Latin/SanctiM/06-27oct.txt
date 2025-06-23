@@ -1,8 +1,8 @@
 @Sancti/06-27oct
 
 [Rule]
-3 lectio
-(rubrica Cisterciensis) Psalmi Feria
+3 lectio (nisi rubrica cisterciensis)
+(rubrica cisterciensis) Psalmi Feria
 
 [Ant Matutinum]
 @Sancti/06-24::5 s/;;.*//
@@ -12,6 +12,15 @@
 ;;
 ;;
 @Sancti/06-24::6 s/;;.*//
+
+[Ant Matutinum] (rubrica cisterciensis)
+@SanctiM/06-25oct
+
+[MM LB] (rubrica cisterciensis)
+@SanctiM/06-25oct
+
+[MM Capitulum] (rubrica cisterciensis)
+@SanctiM/06-25oct
 
 [Lectio1]
 Sermo sancti Bedæ venerábilis Presbyteri
