@@ -89,7 +89,7 @@ sub invitatorium {
       s/\$ant2\s*(?=\$)//s;
     } elsif (!$w
       && $dayofweek == 1
-      && $winner =~ /Tempora/
+      && !($winner{Invit} || $commune{Invit})
       && ($dayname[0] =~ /(Epi|Pent|Quadp)/i || ($dayname[0] =~ /Quad/i && $version =~ /Trident|Monastic/i)))
     {
       # old Invitatorium4
