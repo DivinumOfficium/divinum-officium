@@ -1,7 +1,29 @@
 @Sancti/06-26
 
+[Rule] (rubrica cisterciensis) 
+ex C3;
+12 lectiones
+Psalmi Dominica
+in 3 Nocturno Lectiones ex Commune in 3 loco;
+
 [Oratio]
 @Sancti/06-26
+
+[Lectio5] (rubrica cisterciensis)
+@Sancti/06-26:Lectio4
+
+[Lectio6] (rubrica cisterciensis)
+@Sancti/06-26:Lectio5:s/Qui, ut.*//
+
+[Lectio7] (rubrica cisterciensis)
+@Sancti/06-26:Lectio5:s/.*(Qui, ut)/$1/ s/$/~/
+@Sancti/06-26:Lectio6:s/Verum eórum.*//
+
+[Lectio8] (rubrica cisterciensis)
+@Sancti/06-26:Lectio6:s/.*(Verum eórum)/$1/
+
+[Responsory8] (rubrica cisterciensis)
+@CommuneM/C3
 
 [Ant 2]
 @Sancti/06-26

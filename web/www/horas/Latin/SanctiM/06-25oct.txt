@@ -1,8 +1,8 @@
 @Sancti/06-25oct
 
 [Rule]
-3 lectio
-(rubrica Cisterciensis) Psalmi Feria
+3 lectio (nisi rubrica cisterciensis)
+(rubrica cisterciensis) Psalmi Feria
 
 [Ant Matutinum]
 @Sancti/06-24::1 s/;;.*//
@@ -13,6 +13,24 @@
 ;;
 @Sancti/06-24::2
 
+[Ant Matutinum] (rubrica cisterciensis)
+@Sancti/06-24::1:s/;;.*//
+;;
+@SanctiM/06-24:AntMatutinumM:1:s/;;.*//
+;;
+@SanctiM/06-24:AntMatutinumM:2:s/;;.*//
+;;
+@Sancti/06-24:Versum 1
+
+[MM LB] (rubrica cisterciensis)
+!Jer 1:9-10
+v. Et misit Dóminus manum suam, et tétigit os meum: et dixit Dóminus ad me: Ecce dedi verba mea in ore tuo: Ecce constítui te hódie super gentes, et super regna, ut evéllas, et déstruas, et dispérdas, et díssipes, et ædífices, et plantes.
+$Tu autem
+_
+R.br. Ipse præíbit ante illum * In spíritu et virtúte Elíæ.
+R. Ipse præíbit ante illum * In spíritu et virtúte Elíæ.
+V. Paráre Dómino plebem perféctam.
+R. In spíritu et virtúte Elíæ.
 
 [Lectio1]
 Sermo sancti Máximi Epíscopi
@@ -24,3 +42,8 @@ Hic est, caríssimi, de quo prodictum est: Vox clamántis in desérto: Paráte v
 
 [Lectio3]
 Hic ergo Zacharíæ justíssimo sacerdóti, cum multa esset ætáte provéctus, et sterilitáte seníssimæ cónjugis successiónem votívi gérminis desperásset, omnipoténtis Dei cura per Angelum promíttitur nascitúrus. Et bene seníssimis paréntibus novus fílius datur, qui senescénti labentíque mundo Unigénitum Dei ad spem futuræ juventútis osténderet. Quid illud, quantóque est stupóre mirándum, quod Zacharías ipse, dum præcursórem salutáris Verbi concipiéndum seníli alvo paulo tárdius créderet, silentio repentínæ taciturnitátis obmútuit, nec prístinum loquéndi recepísset usum, nisi nomen púeri, quo vocándus esset, clausi oris ei víncula relaxásset? Atque ita factum est, ut os sacerdotále, quod trepidátio colligáverat dubitantis, méritum fílii nascéntis absolveret, et reparáta patris lingua infántis glóriam testarétur.
+
+[MM Capitulum] (rubrica cisterciensis)
+@Sancti/06-24:Capitulum Sexta
+_
+@Sancti/06-24:Ant Matutinum:9-10

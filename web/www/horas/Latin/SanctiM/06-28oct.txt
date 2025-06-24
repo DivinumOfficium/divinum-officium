@@ -1,7 +1,7 @@
 @Sancti/06-28oct
 
 [Rule]
-3 lectio
+3 lectio (nisi rubrica cisterciensis)
 (rubrica Cisterciensis) Psalmi Feria
 
 [Ant Matutinum]
@@ -12,6 +12,15 @@
 ;;
 ;;
 @Sancti/06-24::8 s/;;.*//
+
+[Ant Matutinum] (rubrica cisterciensis)
+@SanctiM/06-25oct
+
+[MM LB] (rubrica cisterciensis)
+@SanctiM/06-25oct
+
+[MM Capitulum] (rubrica cisterciensis)
+@SanctiM/06-25oct
 
 [Lectio1]
 Sermo sancti Augustini Episcopi

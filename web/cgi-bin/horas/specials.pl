@@ -165,7 +165,7 @@ sub specials {
 
       # CIST: between Most Holy Trinity and All Saints, Psalm 94 is prayed instead of Invitatory on Ferias incl. in Octaves
       if ( $version =~ /Cist/i
-        && $winner{Rank} =~ /Feria|Vigilia|Sabbato infra oct/i
+        && $winner{Rank} =~ /Feria|Vigilia|infra oct/i
         && $dayname[0] =~ /Pent|Epi/i
         && $month > 5
         && $month < 11)

@@ -258,14 +258,13 @@ sub psalmi_matutinum_monastic {
   } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i
     && $winner{Rank} !~ /quat(t?)uor|Dominica/i
     && $rule !~ /(3|12) lectiones/
-    && $version =~ /Cist/i)
+    && $version =~ /Cist/i
+    && ($winner =~ /Tempora/i || $winner{Rank} =~ /Vigil|infra Oct/i))
   {
     # CIST: days within Octaves and Vigils need Lectio brevis + R.br. as well
-
-    if ($winner =~ /Tempora/i || $winner{Rank} =~ /Vigil/i) {
-      brevis_monastic($lang);
-      push(@s, "\n");
-    }
+    brevis_monastic($lang);
+    push(@s, "\n");
+    setbuild2("Lectio Brevis de Feria (Rubrica Cisterciensis)");
   } else {
     lectiones(0, $lang);
 
