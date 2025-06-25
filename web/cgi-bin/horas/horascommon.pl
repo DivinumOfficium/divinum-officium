@@ -350,7 +350,7 @@ sub occurrence {
   if (
     $version =~ /Trid/i
     && (($trank[2] < 5.1 && $trank[2] > 4.2 && $trank[0] =~ /Dominica/i && $version !~ /altovadensis/i)
-      || $trank[0] =~ /infra octavam Corp/i)
+      || ($trank[0] =~ /infra octavam Corp/i && $version !~ /Cist/i))
   ) {
 
     # before Divino: Dominica minor and infra 8vam CC is outranked by any Duplex
