@@ -12,10 +12,12 @@ Incomincia il primo libro dei Re
 2 Ed ebbe due mogli, una chiamata Anna e l'altra Fenenna. Fenenna poi ebbe dei figli, ma Anna non ne aveva. 
 3 Or quest'uomo nei giorni stabiliti, dalla sua città saliva a Silo per adorare e sacrificare al Signore degli eserciti. E là c'erano i due figli di Eli, Ofni e Finees sacerdoti del Signore.
 
-[Responsory1]
+[Responsory1_]
 R. Preparate i vostri cuori al Signore, e servite a lui solo; 
 * Ed egli vi libererà dalle mani dei vostri nemici.
 V. Convertitevi a lui con tutto il vostro cuore, e togliete di mezzo a voi gli dèi stranieri.
+(sed rubrica cisterciensis)
+V. Togliete di mezzo a voi gli dèi stranieri.
 R. Ed egli vi libererà dalle mani dei vostri nemici.
 
 [Lectio2]
@@ -26,7 +28,7 @@ R. Ed egli vi libererà dalle mani dei vostri nemici.
 7 E faceva così tutti gli anni, allorché, ritornato il tempo, salivano al tempio del Signore, e così la provocava. Ed ella piangeva e non prendeva cibo. 
 8 Onde Elcana suo marito le disse; Anna, perché piangi? perché non mangi? e perché è afflitto il tuo cuore? Non ti son io qualcosa di meglio di dieci figli?
 
-[Responsory2]
+[Responsory2_]
 R. Iddio ascolta tutti; egli mandò il suo Angelo, e mi tolse dalle pecore di mio padre; 
 * E mi unse coll'unzione della sua misericordia.
 V. Il Signore, che mi strappò dalla bocca del leone, mi liberò anche dagli artigli della bestia. 
@@ -38,10 +40,33 @@ R. E mi unse coll'unzione della sua misericordia.
 10 Anna, avendo il cuore amareggiato, pregò il Signore piangendo dirottamente, 
 11 e fece voto, dicendo; Signore degli eserciti, se ti volgerai a mirare l'afflizione della tua serva, e ti ricorderai di me, e non ti dimenticherai della tua serva, ma darai ad essa tua serva un figlio maschio, io lo consacrerò al Signore per tutti i giorni della sua vita, e il rasoio non toccherà la sua testa.
 
-[Responsory3]
+[Responsory3_]
 R. Il Signore, che mi strappò dalla bocca del leone e mi liberò dagli artigli della bestia, 
 * Egli mi strapperà pure dalle mani dei miei nemici.
 V. Iddio mandò la sua misericordia e la sua verità; strappò l'anima mia di mezzo ai giovani leoni.
 R. Egli mi strapperà pure dalle mani dei miei nemici.
 &Gloria
 R. Egli mi strapperà pure dalle mani dei miei nemici.
+
+[Responsory3C]
+R. Io ti tolsi dalla casa di tuo padre, dice il Signore, e ti scelsi per pascolare il gregge del mio popolo, a fui con te in ogni cosa ovunque andasti,
+* Rafforzando per sempre il tuo regno.
+V. E ho reso grande il tuo nome, come quello dei grandi che sono sulla terra. 
+R. Rafforzando per sempre il tuo regno.
+&Gloria
+R. Rafforzando per sempre il tuo regno.
+
+[Responsory1]
+@:Responsory1_
+(sed rubrica cisterciensis)
+@:Responsory2_
+
+[Responsory2]
+@:Responsory2_
+(sed rubrica cisterciensis)
+@:Responsory3_
+
+[Responsory3]
+@:Responsory3_
+(sed rubrica cisterciensis)
+@:Responsory3C

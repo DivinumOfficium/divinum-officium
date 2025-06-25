@@ -12,7 +12,7 @@ Lesson from the first book of Samuel
 17 Then Heli said to her: Go in peace: and the God of Israel grant thee thy petition, which thou hast asked of him.
 18 And she said: Would to God thy handmaid may find grace in thy eyes.
 
-[Responsory1]
+[Responsory1_]
 R. Saul hath slain his thousands, and David his ten thousands.
 * Because the hand of the Lord was with him, he smote the Philistine, and took away the reproach from Israel.
 V. Is not this David? Did they not sing one to another of him in dances, saying: Saul hath slain his thousands, and David his ten thousands?
@@ -26,7 +26,7 @@ R. Because the hand of the Lord was with him, he smote the Philistine, and took 
 21 And Elcana her husband went up, and all his house, to offer to the Lord the solemn sacrifice, and his vow.
 22 But Anna went not up: for she said to her husband: I will not go till the child be weaned, and till I may carry him, that he may appear before the Lord, and may abide always there.
 
-[Responsory2]
+[Responsory2_]
 R. Ye mountains of Gilboa, let there be no dew, neither let there be rain upon you
 * For there are the mighty of Israel fallen.
 V. All ye mountains that stand round about, the Lord look upon you but let Him pass by Gilboa
@@ -41,10 +41,25 @@ R. For there are the mighty of Israel fallen.
 27 For this child did I pray, and the Lord hath granted me my petition, which I asked of him.
 28 Therefore I also have lent him to the Lord all the days of his life, he shall be lent to the Lord. And they adored the Lord there.
 
-[Responsory3]
+[Responsory3_]
 R. Thus saith the Lord: I took thee out of thy father's house, and appointed thee to be ruler over My people, over Israel.
 * And I was with thee whithersoever thou wentest, to establish thy kingdom for ever.
 V. And I have made thee a great name, like unto the name of the great men that are in the earth, and have caused thee to rest from all thine enemies.
 R. And I was with thee whithersoever thou wentest, to establish thy kingdom for ever.
 &Gloria
 R. And I was with thee whithersoever thou wentest, to establish thy kingdom for ever.
+
+[Responsory1]
+@:Responsory1_
+(sed rubrica cisterciensis)
+@:Responsory2_
+
+[Responsory2]
+@:Responsory2_
+(sed rubrica cisterciensis)
+@Tempora/Pent01-3:Responsory2_
+
+[Responsory3]
+@:Responsory3_
+(sed rubrica cisterciensis)
+@Tempora/Pent03-2Feria:Responsory1_

@@ -1,11 +1,16 @@
 [Officium]
 úterý v třetím týdnu po Svatodušním Oktávu
 
-[Responsory1]
+[Responsory1_]
 R. Hospodine, pokud se obrátí tvůj lid, a bude se modlit ve tvém svatostánku;
 * Ty jej vyslyš z nebe, Hospodine, a vysvoboď je z rukou jejich nepřátel.
 V. Pokud proti tobě zhřešil tvůj lid, a obrátí se a bude konat pokání, přijde a bude se modlit na tomto místě.
 R. Ty jej vyslyš z nebe, Hospodine, a vysvoboď je z rukou jejich nepřátel.
+
+[Responsory1]
+@:Responsory1_
+(sed rubrica cisterciensis)
+@Tempora/Pent03-1Feria:Responsory1_
 
 [Lectio2]
 @Tempora/Pent03-2
@@ -15,6 +20,12 @@ R. Stalo se, když Hospodin uchvátil Eliáše ve vichru do nebe;
 * Eliseus volal a pravil: Otče můj, otče můj, vůz Israele, a jeho vozataj.
 V. Když vyšli a začali spolu mluvit, hle, ohnivý vůz a ohniví koně je navzájem rozdělili, a Eliáš ve vichřici vystoupil do nebe.
 R. Eliseus volal a pravil: Otče můj, otče můj, vůz Israele, a jeho vozataj.
+
+[Responsory2] (rubrica cisterciensis)
+R. Stalo se, když Hospodin uchvátil Eliáše ve vichru do nebe, Eliseus zvolal a pravil: 
+* Otče můj, otče můj, vůz Israele, a jeho vozataj.
+V. Když spolu vyšli a začali rozmlouvat, hle, ohnivý vůz a ohniví koně je navzájem rozdělili, a Eliseus zvolal:
+R. Otče můj, otče můj, vůz Israele, a jeho vozataj.
 
 [Lectio3]
 @Tempora/Pent03-2

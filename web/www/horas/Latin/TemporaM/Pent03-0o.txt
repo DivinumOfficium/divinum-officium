@@ -19,11 +19,17 @@
 [Lectio3]
 @Tempora/Pent03-0:Lectio2:s/22-/23-/ s/22 .*23 /23 /s
 
+[Lectio3] (rubrica cisterciensis)
+@Tempora/Pent03-0:Lectio2:s/22-25/24-26/ s/22 .* Et comédit /24 Et comédit /s
+@Tempora/Pent03-0:Lectio3:2
+
 [Responsory3]
 @Tempora/Pent01-1:Responsory3
 
 [Lectio4]
 @Tempora/Pent03-0:Lectio3
+(sed rubrica cisterciensis)
+@Tempora/Pent03-0:Lectio3:s/26-// s/26 .*//
 
 [Responsory4]
 @Tempora/Pent03-1Feria:Responsory1
@@ -55,12 +61,16 @@
 
 [Lectio9]
 @Tempora/Pent03-0:Lectio7:s/Quamvis .*//s
+(sed rubrica cisterciensis)
+@Tempora/Pent03-0:Lectio7:s/dedignári:.*/dedignári./s
 
 [Responsory9]
 @Tempora/Pent01-3:Responsory1
 
 [Lectio10]
 @Tempora/Pent03-0:Lectio7:s/.* Quamvis /Quamvis /s s/$/~/
+(sed rubrica cisterciensis)
+@Tempora/Pent03-0:Lectio7:s/.* sed áliud/Sed áliud/s s/$/~/
 @Tempora/Pent03-0:Lectio8:s/Præpónunt .*//s
 
 [Responsory10]
