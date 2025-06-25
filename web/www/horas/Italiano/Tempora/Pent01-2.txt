@@ -16,7 +16,7 @@ Dal primo libro dei Re
 17 Allora Eli le disse; Va in pace, e il Dio di Israele ti accordi la domanda che gli hai fatta. 
 18 Ed ella rispose; Voglia il cielo che la sua serva trovi grazia negli occhi tuoi.
 
-[Responsory1]
+[Responsory1_]
 R. Saul ne uccise mille, e David diecimila; 
 * Perché la mano del Signore era con lui; uccise il Filisteo, e cancellò la vergogna di Israele.
 V. Questi non è forse David, del quale cantavano in coro dicendo; Saul ne uccise mille, e David diecimila? 
@@ -30,7 +30,7 @@ R. Perché la mano del Signore era con lui; uccise il Filisteo, e cancellò la v
 21 Poi Elcana suo marito salì con tutta la sua famiglia per immolare al Signore l'ostia solenne 
 22 e Anna non vi salì, dicendo a suo marito; Non verrò finché il bimbo sia slattato, allora lo condurrò affinché si presenti dinanzi al Signore, e vi rimanga poi per sempre.
 
-[Responsory2]
+[Responsory2_]
 R. Monti di Gelboe, non cada più su di voi né rugiada né pioggia, 
 * Là dove son caduti i forti d'Israele.
 V. Il Signore visiti tutti i monti che sono all'intorno, ma oltrepassi Gelboe.
@@ -45,10 +45,25 @@ R. Là dove son caduti i forti d'Israele.
 27 Pregavo per (avere) questo bambino, e il Signore ha esaudito la grazia che gli domandai. 
 28 Perciò io pure l'ho donato al Signore per tutti i giorni che egli sarà consacrato al Signore. E adorarono ivi il Signore.
 
-[Responsory3]
+[Responsory3_]
 R. Io ti tolsi dalla casa di tuo padre, dice il Signore, e ti scelsi per pascolare il gregge del mio popolo; 
 * E fui con te in ogni cosa ovunque andasti, rafforzando per sempre il tuo regno.
 V. E ho reso grande il tuo nome, come quello dei grandi che sono sulla terra; e t'ho data la pace con tutti i tuoi nemici. 
 R. E fui con te in ogni cosa ovunque andasti, rafforzando per sempre il tuo regno.
 &Gloria
 R. E fui con te in ogni cosa ovunque andasti, rafforzando per sempre il tuo regno.
+
+[Responsory1]
+@:Responsory1_
+(sed rubrica cisterciensis)
+@:Responsory2_
+
+[Responsory2]
+@:Responsory2_
+(sed rubrica cisterciensis)
+@Tempora/Pent01-3:Responsory2_
+
+[Responsory3]
+@:Responsory3_
+(sed rubrica cisterciensis)
+@Tempora/Pent03-2Feria:Responsory1

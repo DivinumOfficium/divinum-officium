@@ -62,7 +62,7 @@ sub ensure_single_alleluia {
   my ($text_ref, $lang) = @_;
 
   # Add a single 'alleluia', unless it's already there.
-  $$text_ref =~ s/\p{P}?\s*$/ ", " . lc(alleluia($lang)) . '.'/e unless $$text_ref =~ /$alleluia_regexp\p{P}?\)?\s*$/;
+  $$text_ref =~ s/\p{P}?\s*$/ ", " . lc(alleluia($lang)) . '.'/e unless $$text_ref =~ /$alleluia_regexp\p{P}?\)?\s*$/ || !$$text_ref;
 }
 
 #*** ensure_double_alleluia($text, $lang)

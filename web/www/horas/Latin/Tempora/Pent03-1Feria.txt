@@ -10,11 +10,24 @@ Oratio Dominica
 [Lectio1]
 @Tempora/Pent03-1
 
-[Responsory1]
+[Responsory1_]
 R. Recordáre, Dómine, testaménti tui, et dic Angelo percutiénti: Cesset jam manus tua, 
 * Ut non desolétur terra, et ne perdas omnem ánimam vivam.
 V. Ego sum qui peccávi, ego qui iníque egi: isti qui oves sunt, quid fecérunt? Avertátur, óbsecro, furor tuus, Dómine, a pópulo tuo.
+(sed rubrica cisterciensis)
+V. Quiéscat, Dómine, ira tua a pópulo tuo, et a civitáte sancta tua:
 R. Ut non desolétur terra, et ne perdas omnem ánimam vivam.
+
+[Responsory1C]
+R. Planxit autem David planctu magno super Saül, et fílios ejus, et dixit: Quómodo cecidérunt fortes in bello,
+* Et periérunt arma béllica; ínclyti Israël, flete.
+V. Montes Gélboë, nec ros nec plúvia super vos descéndant, ubi cecidérunt vulneráti multi:
+R. Et periérunt arma béllica; ínclyti Israël, flete.
+
+[Responsory1] 
+@:Responsory1_
+(sed rubrica cisterciensis)
+@:Responsory1C
 
 [Lectio2]
 @Tempora/Pent03-1
