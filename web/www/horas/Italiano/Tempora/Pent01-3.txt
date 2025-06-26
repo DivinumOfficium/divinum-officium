@@ -33,7 +33,7 @@ R. Benedici e santifica per sempre questa casa, o Dio d'Israele.
 [Responsory2]
 @:Responsory2_
 (sed rubrica cisterciensis)
-@:Responsory3
+@:Responsory3_
 
 [Lectio3]
 !1 Sam 2:18-21
@@ -42,10 +42,15 @@ R. Benedici e santifica per sempre questa casa, o Dio d'Israele.
 20 Ed Eli benedisse Elcana e sua moglie dicendogli; Il Signore ti dia prole da questa donna in ricompensa di quello che hai donato al Signore. Ed essi se ne ritornarono a casa loro. 
 21 Il Signore adunque visitò Anna, che divenne madre e diede alla luce tre figli e due figlie. E il fanciullo Samuele si faceva grande presso il Signore.
 
-[Responsory3]
+[Responsory3_]
 R. Ascolta, o Signore, l'inno e la preghiera che oggi il tuo servo innalza al tuo cospetto, affinché i tuoi occhi siano rivolti e le tue orecchie aperte, 
 * Sopra questa casa giorno e notte.
 V. Rimira, o Signore, dal tuo santuario e dall'eccelsa abitazione dei cieli.
 R. Sopra questa casa giorno e notte.
 &Gloria
 R. Sopra questa casa giorno e notte.
+
+[Responsory3]
+@:Responsory3_
+(sed rubrica cisterciensis)
+@Tempora/Pent01-1:Responsory1_
