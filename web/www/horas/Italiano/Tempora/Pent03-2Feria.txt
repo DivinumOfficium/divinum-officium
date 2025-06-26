@@ -1,17 +1,28 @@
 [Officium]
 Feria tertia infra Hebdomadam III post Octavam Pentecostes
 
-[Responsory1]
+[Responsory1_]
 R. Signore, se il tuo popolo si sarà convertito e avrà pregato nel tuo santuario:
 * Tu lo esaudirai dal cielo, o Signore, e liberali dalle mani dei loro nemici.
 V. Se il tuo popolo avrà peccato contro di te, e convertitosi avrà fatto penitenza, e sarà venuto a pregare in codesto loco.
 R. Tu lo esaudirai dal cielo, o Signore, e liberali dalle mani dei loro nemici.
+
+[Responsory1]
+@:Responsory1_
+(sed rubrica cisterciensis)
+@Tempora/Pent03-1Feria:Responsory1_
 
 [Responsory2]
 R. Ed avvenne che, mentre il Signore trasportava Elia in cielo per mezzo del turbine,
 * Eliseo esclamava dicendo: Padre mio, padre mio, cocchio di Israele e sua auriga.
 V. E mentre avanzavano e parlavano camminando, ecco il cocchio di fuoco e i cavalli di fuoco li separarono l'uno dall'altro, ed Elio salì in cielo per mezzo del turbine.
 R. Eliseo esclamava dicendo: Padre mio, padre mio, cocchio di Israele e sua auriga.
+
+[Responsory2] (rubrica cisterciensis)
+R. Ed avvenne che, mentre il Signore trasportava Elia in cielo per mezzo del turbine, Eliseo esclamava dicendo: 
+* Padre mio, padre mio, cocchio di Israele e sua auriga.
+V. E mentre avanzavano e parlavano camminando, ecco il cocchio di fuoco e i cavalli di fuoco li separarono l'uno dall'altro, Eliseo esclamava dicendo: 
+R. Padre mio, padre mio, cocchio di Israele e sua auriga.
 
 [Responsory3]
 @Tempora/Pent01-2:Responsory3
