@@ -1,1 +1,7 @@
 @Tempora/112-1
+
+[Lectio2]
+@Tempora/112-1::s/\n(7 )/ ¶\n$1/
+
+[Responsory4]
+@Tempora/111-2:Responsory3

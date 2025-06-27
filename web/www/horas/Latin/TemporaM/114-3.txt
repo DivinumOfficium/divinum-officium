@@ -1,1 +1,7 @@
 @Tempora/114-3
+
+[Lectio3]
+@Tempora/114-3::s/\n(10.*?\.) /\n$1¶ /
+
+[Responsory4]
+@Tempora/111-0:Responsory3
