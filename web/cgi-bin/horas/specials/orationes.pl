@@ -655,7 +655,15 @@ sub getcommemoratio {
   my $a = $w{"Ant $ind"};
 
   if (!$a || ($winner =~ /Epi1\-0a|01-12t/ && $hora eq 'Vespera' && $vespera == 3)) {
-    $a = $w{'Ant ' . (4 - $ind)};
+    if ($wday !~ /Epi[2-6]-0/) {
+      $a = $w{'Ant ' . (4 - $ind)};
+    } else {
+
+      # GitHub #4579:
+      # In case of Sundays in Epiphanytide, the Ferial antiphone is taken to commemorate it
+      my %v = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
+      $a = $v{"Feria Ant 3"};
+    }
   }
   if (!$a) { $a = $c{"Ant $ind"}; }
   my $name = $w{Name};
