@@ -28,6 +28,17 @@ Tórcular * calcávi solus, et de géntibus non est vir mecum.
 ;;246;247;248
 @Sancti/07-01::14-15
 
+[Ant Matutinum] (rubrica cisterciensis)
+@Sancti/07-01::1-3:s/;;3/;;4/
+@Sancti/07-01::7-8:s/;;29/;;22/ s/;;63/;;29/
+@:AntMatutinumM:1:s/;;115/;;42/
+@Sancti/07-01::11:s/;;7/;;5/
+@Sancti/07-01::6:s/;;22/;;63/
+@Sancti/07-01::12-13:s/;;87/;;73/ s/;;93/;;87/
+Hæc est * Sánguinis aspérsio mélius loquens quam Abel.;;93
+@:AntMatutinumM:2:s/;;119/;;97/
+;;246;247;248
+
 [Lectio1]
 @Sancti/07-01::1-6 s/-15/-14/
 
@@ -73,10 +84,10 @@ Mortuo enim, ait, Jesu, et adhuc in cruce pendente, approximat miles, latus lanc
 @Sancti/07-01:Lectio6:s/.*(?=Ex his)// s/ - Recurrénte.*//
 
 [Responsory8]
-R. Gratificavit † nos Deus in dilecto Filio suo:
-* In quo habemus redemptionem per Sanguinem ejus in remissionem peccatorum.
-V. Ecce venit plenitudo temporis, in quo misit Deus Filium suum in terras.
-R. In quo habemus redemptionem per Sanguinem ejus in remissionem peccatorum.
+R. Gratificávit † nos Deus in dilécto Fílio suo:
+* In quo habémus redemptiónem per Sánguinem ejus in remissiónem peccatórum.
+V. Ecce venit plenitúdo témporis, in quo misit Deus Fílium suum in terras.
+R. In quo habémus redemptiónem per Sánguinem ejus in remissiónem peccatórum.
 
 [Lectio9]
 @Sancti/07-01:Lectio7
@@ -94,7 +105,7 @@ R. In quo habemus redemptionem per Sanguinem ejus in remissionem peccatorum.
 @Sancti/07-01:Lectio9:s/ Hoc.*//
 
 [Responsory11]
-@Tempora/Pasc3-0:Responsory1:s/, allelúja//gs
+@Tempora/Pasc3-0:Responsory1:s/, allel[uú][ij]a//gs
 
 [Lectio12]
 @Sancti/07-01:Lectio9:s/.* (?=Hoc)//
