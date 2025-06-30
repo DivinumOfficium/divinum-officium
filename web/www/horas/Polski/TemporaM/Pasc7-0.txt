@@ -15,10 +15,10 @@
 @Tempora/Pasc1-2:Lectio2:2-3
 
 [Lectio9]
-@Tempora/Pasc7-0:Lectio1:s/ Toteż.*//s
+@Tempora/Pasc7-0:Lectio1:s/ Kto.*//s
 
 [Lectio10]
-@Tempora/Pasc7-0:Lectio1:s/.*(Toteż)/$1/s s/$/~/
+@Tempora/Pasc7-0:Lectio1:s/.*(Kto)/$1/s s/$/~/
 @Tempora/Pasc7-0:Lectio2:s/ Prawdziwie.*//s
 
 [Lectio11]

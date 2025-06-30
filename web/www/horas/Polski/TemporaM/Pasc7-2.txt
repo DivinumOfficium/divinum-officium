@@ -1,8 +1,8 @@
 [Lectio9]
-@Tempora/Pasc7-2:Lectio1:s/ Nie.*//s
+@Tempora/Pasc7-2:Lectio1:s/ Nikt.*//s
 
 [Lectio10]
-@Tempora/Pasc7-2:Lectio1:s/.*(Nie)/$1/s s/$/~/
+@Tempora/Pasc7-2:Lectio1:s/.*(Nikt)/$1/s s/$/~/
 @Tempora/Pasc7-2:Lectio2:s/ Byli.*//s
 
 [Lectio11]
