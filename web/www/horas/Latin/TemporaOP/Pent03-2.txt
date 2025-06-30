@@ -14,9 +14,9 @@
 13 Ingrediéntes urbem, statim inveniétis eum ántequam ascéndat excélsum ad vescéndum, neque enim comesúrus est pópulus donec ille véniat: quia ipse benedícit hóstiæ, et deínceps cómedunt qui vocáti sunt. Nunc ergo conscéndite, quia hódie reperiétis eum.
 
 [Responsory2]
-@Tempora/Pent01-2:Responsory1:1-2 s/\* (.*,) (.)/\l$1\n* \u$2/
-@Tempora/Pent01-2:Responsory1:3 s/\?/ in míllibus suis?/
-@Tempora/Pent01-2:Responsory1:2 s/\* .*, (.)/R. \u$1/
+@Tempora/Pent01-2:Responsory1_:1-2 s/\* (.*,) (.)/\l$1\n* \u$2/
+@Tempora/Pent01-2:Responsory1_:3 s/\?/ in míllibus suis?/
+@Tempora/Pent01-2:Responsory1_:2 s/\* .*, (.)/R. \u$1/
 
 [Lectio3]
 @Tempora/Pent02-6
