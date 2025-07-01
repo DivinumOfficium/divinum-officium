@@ -181,7 +181,11 @@ sub psalmi_minor {
   if ($hora ne 'Completorium') {
     my ($w, $c) = getproprium("Ant $hora", $lang, 0);
 
-    if (!$w && $rule !~ /Psalmi\s*(?:minores)*\s*ex Psalterio/i) {
+    if (!$w
+      && $rule !~ /Psalmi\s*(?:minores)*\s*ex Psalterio/i
+      && !($version =~ /1955|196/ && $rank < 6 && $dayofweek > 0))
+    {
+      # Cum nostra hac ætate limited the proper Antiphones from Prime to None to Duplex I. cl.
       ($w, $c) = getanthoras($lang);
     }
 
@@ -192,11 +196,12 @@ sub psalmi_minor {
 
     if ( ($rule =~ /Psalmi\s*(?:minores)*\s*Dominica/i || $communerule =~ /Psalmi\s*(?:minores)*\s*Dominica/i)
       && $version !~ /Trident/i
-      && $rule !~ /Psalmi\s*(?:minores)*\s*ex Psalterio/i)
+      && $rule !~ /Psalmi\s*(?:minores)*\s*ex Psalterio/i
+      && !($version =~ /1955|196/ && $rank < 6 && $dayofweek > 0))
     {
       $feastflag = 1;
     }
-    if ($version =~ /1960/ && $rank < 6) { $feastflag = 0; }
+    if ($version =~ /1955|1960/ && $rank < 6) { $feastflag = 0; }
     if ($winner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat|Pasc6/i) { $feastflag = 0; }
 
     if ($feastflag) {
