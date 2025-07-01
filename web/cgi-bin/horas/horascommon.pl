@@ -48,7 +48,6 @@ sub occurrence {
   my $sfile = '';
   my $tfile = '';
   my $weekname = '';
-  my $BMVSabbato = 0;
 
   if ($tomorrow) {
     $sday = nextday($month, $day, $year);
@@ -189,8 +188,6 @@ sub occurrence {
       @commemoentries = grep { $_ !~ /02-23o/ } @commemoentries;
     }
 
-    $BMVSabbato = ($sfile =~ /v/ || $dayofweek !~ 6 || $transfervigil) ? 0 : 1;    # nicht sicher, ob das notwendig ist
-
     if (checklatinfile(\$sfile)) {
       $sname = "$sfile.txt";
       if ($caller && $hora =~ /(Matutinum|Laudes)/i) { $sname =~ s/11-02t/11-02/; }    # special for All Souls day
@@ -201,7 +198,6 @@ sub occurrence {
 
       if ($tomorrow) {
         $svesp = 1;
-        $BMVSabbato = ($srank[2] < 1.4 && $version !~ /196/ && $dayofweek == 6 && !$transfervigil);
 
         if ( $version !~ /196|Trident/
           && $hora =~ /Completorium/i
@@ -329,22 +325,28 @@ sub occurrence {
       @commemoentries = ();
     }
 
-    # In Festo Sanctae Mariae Sabbato according to the rubrics.
-    if ($testmode ne 'Sanctoral' && $BMVSabbato && $trank[2] < 1.4 && $srank[2] < 1.4) {
-      unless ($tomorrow) {
-        $scriptura = $tname;
-      }
+  }
 
-      if ($trank[2] == 1.15) {
-        $tname =~ s/\.txt$//;
-        unshift(@commemoentries, $tname);
-        $commemoratio = $tname;
-        $comrank = $trank[2];
-      }
-      $tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Simplex;;1.3;;vide $C10";
-      $tname = subdirname('Commune', $version) . "$C10.txt";
-      @trank = split(";;", $trank);
+  # In Festo Sanctae Mariae Sabbato according to the rubrics.
+  if ( $dayofweek == 6
+    && $trank[2] < 1.4
+    && $srank[2] < 1.4
+    && !$transfervigil
+    && (!$tommorow || $version =~ /196/)
+    && $testmode ne 'Sanctoral')
+  {
+    $scriptura = $tname unless $tomorrow;
+
+    if ($trank[2] == 1.15) {
+      $tname =~ s/\.txt$//;
+      unshift(@commemoentries, $tname);
+      $commemoratio = $tname;
+      $comrank = $trank[2];
     }
+
+    $tempora{Rank} = $trank = "Sanctæ Mariæ Sabbato;;Simplex;;1.3;;vide $C10";
+    $tname = subdirname('Commune', $version) . "$C10.txt";
+    @trank = split(";;", $trank);
   }
 
   if (
