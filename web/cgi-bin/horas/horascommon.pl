@@ -438,8 +438,8 @@ sub occurrence {
       $comrank = 5.6;
     } elsif (($srank[2] < 7 && $sname !~ /01-01/)
       && ($trank[2] >= ($srank[2] >= 5 ? 2.1 : 1.5) || ($version =~ /cist/i && $trank[2] == 1.15))
-      && !($srank[0] =~ /Sangu/i && $trank[0] =~ /Cord/i))
-    {    # incl. github #2950
+      && !($srank[0] =~ /Sangu/i && $trank[0] =~ /Cor[dp]/i))
+    {    # incl. github #2950 #4586
       unshift(@commemoentries, $tname);
       $commemoratio = $tname;
       $comrank = $trank[2];
@@ -1005,6 +1005,9 @@ sub concurrence {
       || ( $rank >= ($version =~ /cist/i ? 7 : $version =~ /trident/i ? 6 : 5)
         && $winner !~ /feria|in.*octava/i
         && $crank < 2.1)
+
+      # no commemoration of Precious Blood on the Feast of the Sacred Heart: Github #4586
+      || ($winner =~ /Pent02-5/ && $cwinner =~ /07-01\./)
     ) {
       $dayname[2] .= "<br/>Vespera de præcedenti; nihil de sequenti";
       $cwinner = '';
@@ -1046,11 +1049,18 @@ sub concurrence {
       $vespera = 1;
       $cvespera = 3;
 
-      if (($comrank == 1.15 || $comrank == 2.1 || $comrank == 2.99 || $comrank == 3.9) && $cwinner !~ /12-25|01-01/)
-      {    # privilidged Feria, Dominica, or infra 8vam
+      if ( ($comrank == 1.15 || $comrank == 2.1 || $comrank == 2.99 || $comrank == 3.9)
+        && $cwinner !~ /12-25|01-01/
+        && !($cwinner =~ /07-01/ && $trank[0] =~ /Sangu|Cor[dp]/))
+      {
+        # privilidged Feria, Dominica, or infra 8vam only
+        # no Commemoration of the Octaves of Ssmi Corporis and Ssmi Cordis on Precious Blood #4586
         $dayname[2] .= "<br/>Vespera de sequenti; commemoratio de off. priv. tantum";
       } else {
         $dayname[2] .= "<br/>Vespera de sequenti; nihil de præcedenti";
+        $commemoratio = '';
+        $comrank = 0;
+        @commemoentries = ();
       }
       $rank = $crank;
       $commune = $ccommune;
