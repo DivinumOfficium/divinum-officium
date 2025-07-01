@@ -41,6 +41,7 @@ our $officium = 'Cmissa.pl';
   'Sarum',
   'Dominican',
   'Tridentine - 1570',
+  'Divino Afflatu - 1939',
   'Divino Afflatu - 1954',
   'Rubrics 1960 - 1960',
   'Rubrics 1967',
@@ -49,7 +50,7 @@ our $officium = 'Cmissa.pl';
 %ordos = split(
   ',',
   "Mozarabic,OrdoM,Sarum,OrdoS,Ambrosian,OrdoA,Dominican,OrdoOP,Tridentine - 1570,Ordo,"
-    . "Divino Afflatu - 1954,Ordo,Rubrics 1960 - 1960,Ordo,Rubrics 1967,Ordo67,New Mass,OrdoN",
+    . "Divino Afflatu - 1939,Ordo,Divino Afflatu - 1954,Ordo,Rubrics 1960 - 1960,Ordo,Rubrics 1967,Ordo67,New Mass,OrdoN",
 );
 
 #***common variables arrays and hashes

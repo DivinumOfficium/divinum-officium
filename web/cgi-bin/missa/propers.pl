@@ -219,7 +219,7 @@ sub oratio {
   my $sub_unica_conc =
        $commemoratio{Rule} =~ /Sub unica conclusione in commemoratione/i
     || $winner{Rule} =~ /Sub unica concl(usione)?\s*$/mi
-    || (world_mission_sunday() && $version !~ /1954/);
+    || (world_mission_sunday() && $version !~ /Divino/);
 
   if ($sub_unica_conc) {
     if ($version !~ /196/) {
@@ -423,6 +423,8 @@ sub getcc {
 }
 
 sub world_mission_sunday {
+
+  # Instituted by Pope Pius XI. in 1926
   $version =~ /Divino|1955|196/
     && $winner{Rank} =~ /Dominica/i
     && monthday($day, $month, $year, 1, 0) eq '104-0';

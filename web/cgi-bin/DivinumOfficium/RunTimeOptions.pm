@@ -56,7 +56,7 @@ use constant LEGACY_MISSA_VERSION_NAMES => {
 
   # safeguard switch from horas to missa
   'Monastic Tridentinum 1617' => 'Tridentine - 1570',
-  'Monastic Divino 1930' => 'Divino Afflatu - 1954',
+  'Monastic Divino 1930' => 'Divino Afflatu - 1939',
   'Monastic - 1963' => 'Rubrics 1960 - 1960',
   'Monastic Tridentinum Cisterciensis 1951' => 'Tridentine - 1910',
   'Monastic Tridentinum Cisterciensis Altovadensis' => 'Reduced - 1955',
