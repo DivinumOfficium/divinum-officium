@@ -40,7 +40,7 @@ my %predicates = (
   tertia => sub { shift == 3 },
   longior => sub { shift == 1 },
   brevior => sub { shift == 2 },
-  'summorum pontificum' => sub { shift =~ /^Divino|1955|196/ },
+  'summorum pontificum' => sub { shift =~ /194[2-9]]|195[45]|196/ },
   feriali => sub { shift =~ /feria|vigilia/i; },
 );
 
