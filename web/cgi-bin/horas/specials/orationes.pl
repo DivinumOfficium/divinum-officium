@@ -415,7 +415,7 @@ sub oratio {
 
           if ($cr[0] =~ /Vigilia Epi|$sundaystring/i) {
             $key =
-              ($version !~ /trident/i || $version =~ /altovadensis/i || ($version =~ /1906/ && $cr[2] > 5))
+              ($version !~ /trident/i || ($version =~ /1906/ && $cr[2] > 5))
               ? 7000
               : 2900;    # under DA, all Sundays, in 1906, priviliged Sundays, are all privilegded commemorations
           } else {
