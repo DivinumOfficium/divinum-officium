@@ -146,7 +146,9 @@ sub handleverses {
       s{\(\d+[a-z]?\)}{/:$&:/};
     }
 
-    s{(\(.*?\))}{/:$&:/};       # text in () as rubrics
+    s/\(fit reverentia\)// if $version =~ /cist/i;    # no (fit reverentia) in Cistercian
+
+    s{(\(.*?\))}{/:$&:/};                             # text in () as rubrics
 
     # Discussion #4504: For Breviarum Romanum style
     # ‡ marks mediant for Breviarum Romanum but flexa for Antiphonale

@@ -383,10 +383,17 @@ sub absolutio_benedictio {
   } else {
     my %ben = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
     my $i = dayofweek2i();
+    my %w = (columnsel($lang)) ? %winner : %winner2;
     @a = split(/\n/, $ben{"Nocturn $i"});
     my @abs = split(/\n/, $ben{Absolutiones});
     $abs = $abs[dayofweek2i() - 1];
     $ben = $a[3 - ($i == 3)];
+
+    # CIST: some days have their proper Benedictio
+    if (exists($w{Benedictio}) && $version =~ /Cist/i) {
+      $ben = $w{Benedictio};
+      setbuild2('Special Benedictio ex proprio');
+    }
   }
 
   push(@s, "\$rubrica Pater secreto") unless $version =~ /Cist/i;
