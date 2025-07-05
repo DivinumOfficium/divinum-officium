@@ -23,53 +23,17 @@ $Per Dominum
 [Ant 3]
 @Commune/C4:Ant 3 summi Pontificis
 
-[Ant Matutinum]
-@CommuneM/C4
-
-
-[Lectio1]
-@Commune/C4a::s/-5/-4/ s/5.*//s
-
-[Lectio2]
-@Commune/C4a:Lectio1:s/1-5/4-7/ s/1.*5/5/s
-@Commune/C4a:Lectio2:s/!.*// s/8.*//s
-
-[Lectio3]
-@Commune/C4a:Lectio2:s/6-10/8-10/ s/6.*8/8/s
-
-[Lectio4]
-@Commune/C4a:Lectio3
-
 [Lectio5]
-@Sancti/03-12:Lectio4
-
+Eugénius hujus nóminis tértius, Bernárdus ántea dictus, pátria Pisánus fuit. Exácta adolescéntia, clericáli milítiæ nomen dedit, et sacerdótio póstea initiátus, ob egrégias ánimi dotes inter Canónicos Metropolitánæ Pisánæ cooptári méruit. Sancti Bernárdi, qui tunc Pisas advénerat, exémplo illéctus, eidem sese instituéndum dedit, atque in Claraválle monásticum índuit hábitum. Tanti viri disciplína ádeo profécit, ut primum Farfénsi Monastério ab eo praepósitus, deínde Abbas Cœnóbii sanctórum Vincéntii et Anastásii ad Aquas Sálvias ab Innocéntio secúndo Summo Pontífice eléctus fúerit. Quo in obeúndo múnere, cum sanctimóniae ac prudéntiæ miro splendóre inclaruísset, a Cardinálibus post Lúcii secúndi óbitum, cunctis suffrágiis Póntifex Máximus creátus est. Vix autem ab ínito Pontificátu, perduéllium turbis Ecclésiæ Románæ principátum evértere adniténtibus semel atque íterum ab Urbe discédere cógitur, sedatáque deínde tempestáte, íterum ad eam, summo honóre, et bonórum gratulatióne regréditur.
+	
 [Lectio6]
-@Sancti/03-12:Lectio5:s/Missis.*//s
+Vitérbii cómmorans, Angliæ Legátos, Scótiæ, Germániæ, Hispániæ et Gálliæ excépit, beáto Petro in ejus persóna obediéntiam et obséquium profiténtes: itémque nonnúllos Arméniæ Epíscopos, qui ínsuper Metropolitáni ac gentis suæ nómine, de gravióribus Orientális Ecclésiæ negótiis ejus exquisivérunt senténtiam. Proféctus in Gálliam, Concília Rhemis ac Tréviris celebrávit, in quibus Eónis et Gilbérti Porretáni proscrípsit erróres, aliáque plura sapiénter constítuit ad cleri disciplínam, et Ecclésiæ libertátem. Cœnóbia deínde Claravallénse ac Cisterciénse una cum sancto Bernárdo invísit, præcláris ubíque sanctæ conversatiónis exémplis relíctis. Ab eódem Bernárdo salutária mónita exquisívit ad Ecclésiam administrándam, et Apostólicæ Sedis jura protuénda; ille vero ei pretiósum librum de Consideratióne dedit, quo Pontíficis Principísque praerogatívae et offícia cœlésti sapiéntia declarántur. Litterárum quoque cultor exímius, cum Theologíæ ac jurisprudéntiæ reformávit stúdia, tum Académicos, uti vocant, gradus instítuit quo adolescéntium ánimos alacrióres rédderet. 
 
 [Lectio7]
-@Sancti/03-12:Lectio5:s/.*Missis/Missis/s s/$/~/
-@Sancti/03-12:Lectio6:s/Quátuor.*//s
+Singulári pacis fovéndæ cupiditáte curas omnes inténdit ut discórdias Pisános inter et Lucénses compóneret. Decórem Domus Dei summópere diléxit: nam et Basílicam Liberiánam pulchrióri decorávit ornátu, et ália templa quamplúra aut refécit, aut pretiósis donis ditávit: Vaticánæ autem Basílicae quartam oblatiónum partem sibi de more competéntem, praeter décimam jam a sancto Leóne nono Apostolórum Príncipi attribútam, elargítus est. Henrícum imperatórem, Catholicórum príncipum nóbile exémplar, Sanctórum in album rétulit. Tandem Tíbure, quo aestívos calóres vitándi causa ab Urbe concésserat, gravi morbo implícitus, mortem justórum oppétiit octávo Idus Julii, anno millésimo centésimo quinquagésimo tértio, postquam in Petri Cáthedra sedísset annos octo, et menses quátuor. Corpus Romam delátum, cónditum fuit in Vaticáno, una cum sancti Gregórii tértii, et beáti Petri Levítæ exúviis. Sacrum porro cultum jam tunc miraculórum accedénte fulgóre, ei exhíbitum, et in áliis quoque regiónibus, ad hæc usque témpora vigéntem, Summus Póntifex Pius nonus, ex Sacrórum Rítuum Congregatiónis consúlto, ratum hábuit et confirmávit. 
 
 [Lectio8]
-@Sancti/03-12:Lectio6:s/.*Quátuor/Quátuor/s
-
-[Lectio9]
-@Sancti/04-11:Lectio7:s/Manet.*//s
-
-[Lectio10]
-@Sancti/04-11:Lectio7:s/.*Manet/Manet/s s/$/~/
-@Sancti/04-11:Lectio8:s/His.*//
-
-[Lectio11]
-@Sancti/04-11:Lectio8:s/.*His/His/s s/$/~/
-@Sancti/04-11:Lectio9:s/Coróna.*//s
-
-[Lectio12]
-@Sancti/04-11:Lectio9:s/.*Coróna/Coróna/s
-
-[Evangelium]
-Sequentia + Sancti Evangelii secundum Joannem
-!Mat. 16:13-19
-In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? At illi dixérunt: Alii Joánnem Baptístam, alii autem Elíam, alii vero Jeremíam aut unum ex prophétis. Dicit illis Jesus: Vos autem quem me esse dícitis? Respóndens Simon Petrus, dixit: Tu es Christus, Fílius Dei vivi. Respóndens autem Jesus, dixit ei: Beátus es, Simon Bar Jona: quia caro et sanguis non revelávit tibi, sed Pater meus, qui in cœlis est. Et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam. Et tibi dabo claves regni cœlórum. Et quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis.
-
+Ex Epístola sancti Bernárdi Abbátis ad Eugénium tértium. 
+!Quæ est ad Dominum Papam Eugenium prima.
+Loquar ad Dóminum meum. Jam enim fílium dícere non áudeo, quia fílius in patrem, pater mutátus est in fílium. Qui post me venit, ante me factus est: sed non invídeo, quia quod mihi déerat, in eo me habére confido, qui non solum post me, sed étiam per me venit. Nam si dignáris, quodámmodo per Evangélium ego te génui. Quæ est ergo spes nostra, et gáudium nostrum, et coróna glóriæ? Nonne vos ante Deum? Dénique fílius sápiens glória est patris. Amodo tamen non vocáberis fílius, sed vocábitur tibi nomen novum, quod os Dómini nominávit. Hæc est mutátio déxteræ Excélsi, et multi in mutatióne ista gaudébunt. Nam, quemádmodum olim Abram in Abraham, Jacob in Israël, et, ut de tuis magis prædecessóribus tibi propónam, sicut Simon in Cepham, Saulus in Paulum: sic fílius meus Bernárdus in Patrem meum Eugénium, læta prorsus et útili, ut sperámus, translatióne promótus est. Dígitus Dei est iste, súscitans de púlvere egénum, et de stércore érigens páuperem, ut sédeat cum princípibus, et sólium glóriæ téneat. Súperest, ut facta hac mutatióne tui, ipsa quoque quæ tibi commíssa est, Dómini tui Sponsa mutétur in mélius, et jam nequáquam Sárai, sed Sara de cétero nominétur. Intéllige quæ dico: dabit enim tibi Dóminus intelléctum. 
 
