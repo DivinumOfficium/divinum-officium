@@ -15,20 +15,19 @@ vide C5b;
 [Name]
 Mauri
 
-[Versum 1]
-V. Os justi meditábitur sapiéntiam. 
-R. Et lingua ejus loquétur judícium.
+[Versum 1] (nisi rubrica monastica)
+@Commune/C5:Nocturn 2 Versum
 
 [Ant 1]
 @Commune/C4:Ant 2
 
-[Lectio93]
+[Lectio93] (nisi rubrica monastica)
 @SanctiM/01-15t:Lectio5:s/$/~/
 @SanctiM/01-15t:Lectio6:s/$/~/
 @SanctiM/01-15t:Lectio8
 &teDeum
 
-[Versum 2]
+[Versum 2] (nisi rubrica monastica)
 @Commune/C5:Versum 1
 
 [Ant 2]
