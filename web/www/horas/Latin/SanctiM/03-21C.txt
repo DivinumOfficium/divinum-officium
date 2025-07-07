@@ -2,11 +2,14 @@
 S. P. N. Benedicti, Abbatis
 
 [Rank]
-;;Serm. min.;;5;;vide C5
+;;Serm. min.;;5;;ex C5b
 
 [Rule]
 12 lectiones
 Psalmi Dominica
+
+[Name]
+Benedícti
 
 [Ant Vespera]
 Iste Sanctus * digne in memóriam vértitur hóminum, qui ad gáudium tránsiit Angelórum; quia in hac peregrinatióne solo córpore constitútus, cogitatióne et aviditáte in illa aetérna patria, conversátus est.
@@ -15,7 +18,8 @@ Amávit eum Dóminus, * et ornávit eum: Stolam glóriæ induit eum, et ad porta
 Iste cognóvit * justítiam, et vidit mirabília magna, et exorávit Altíssimum, et invéntus est in número Sanctórum.
 
 [Responsory Vespera 1]
-Responsorium. Sanctus Benedíctus plus appétiit mala mundi pérpeti, quam laudes, * Malens pro Deo labóribus fatigári, quam vitæ hujus favóribus extólli. Allelúia.
+R. Sanctus Benedíctus plus appétiit mala mundi pérpeti, quam laudes, 
+* Malens pro Deo labóribus fatigári, quam vitæ hujus favóribus extólli. Allelúia.
 V. Divína namque prævéntus grátia, magis ac magis ad supérna ánimo suspirábat:
 R. Malens pro Deo labóribus fatigári, quam vitæ hujus favóribus extólli. Allelúia.
 
@@ -58,13 +62,16 @@ Sanctíssime * Conféssor Dómini, Monachórum pater et dux, Benedícte, interc�
 Excita, Dómine, in Ecclésia tua Spíritum, cui beátus Benedíctus, Abbas, servívit: ut, eódem nos repléti, studeámus amáre quod amávit, et ópere exercére quod dócuit.
 $Per Dominum
 
+[Invit]
+Justus florébit in domo Dómini plantátus: * Gaudeámus et exultémus in ejus sacra solemnitáte.
+
 [Hymnus Matutinum]
-Quidquid antíqui cecinére vates,
+Quidquid antíqui cecinére Vates,
 Quidquid ætérne moniménta legis,
 Cóntinet nobis celebránda summi
-Vita Monàrchæ.
+Vita Monárchæ.
 _
-Extulit Móysen péetas benígnum,
+Extulit Móysen píetas benígnum,
 Inclitum proles Abraham decórat,
 Isaac sponsæ decus et sevéri
 Jussa paréntis.
@@ -85,29 +92,20 @@ Spíritus alme, Deus unus,
 omni Témpore sæcli.
 Amen.
 
-[Ant Matutinum]
-Fuit vir * vitæ venerábilis, grátia Benedíctus et nómine.;;1
-Ab ipso * puerítiæ suæ témpore cor gerens seníle, ætátem móribus tránsiens, † nulli ánimum voluptáti dedit.;;2
-Liberióri génere * ex província Núrsiæ ortus, † Romæ liberálibus stúdiis tráditus fúerat.;;4
-Dum in hac terra adhuc esset, * quo temporáliter líbere adhuc uti potuísset, † jam, quasi áridum mundum cum flore despéxit.;;5
+[Ant Matutinum] (nisi tempore paschali)
+Fuit vir vitæ venerábilis, * grátia Benedíctus et nómine.;;1
+Ab ipso puerítiæ * suæ témpore cor gerens seníle, ætátem móribus tránsiens, nulli ánimum voluptáti dedit.;;2
+Dum in hac terra adhuc esset, * quo temporáliter líbere adhuc uti potuísset, jam, quasi áridum mundum cum flore despéxit.;;4
+Núrsiæ * província ortus, Romæ liberálibus litterárum stúdiis tráditus a paréntibus fúerat.;;5
 Relícta domo * rebúsque patris, soli Deo placére cúpiens, † sanctæ conversatiónis hábitum quæsívit.;;8
 Recéssit ígitur * sciénter nésciens, et sapiénter indóctus.;;10
-V. Amávit eum Dóminus, et ornávit eum.
-R. Stolam glóriæ índuit eum.
-Benedíctus * in dies magis augebátur divína grátia, † ut étiam prophético spiritu ventúra prædíceret.;;14
-Huic, * dum erémum péteret, Románus mónarchus obviávit: † cujus cum desidérium cognovísset, et secrétum ténuit, et adjutórium impéndit.;;20
-Tantam grátiam * ei virtus dívina contúlerat, † ut sub uno solis rádio omnem mundum colléctum conspíceret.;;23
-Pater sanctus * dum inténtam oculórum áciem in splendóre corúscæ lucis habére, viderétur, † vidit Germáni ánimam Capuáni epíscopi in sphæra ígnea ab Angelis in cælum deférri.;;95
-Iníto consílio * fratres venénum vino miscuére: † quo obláto, signum crucis édidit: et vas pestíferi potus sic confráctum est, ac si pro signo lápidem dedísset.;;96
-Tunc ad locum * diléctæ solitúdinis rédiit; † et solus in supérni inspectatóris óculis habitávit secum.;;97
-V. Os justi meditábitur sapiéntiam.
-R. Et lingua ejus loquétur judícium.
-Benedíctum * prophéticis condecorémus cánticis, † qui tam fulsit prophetía, quam et doctrínæ grátia.;;256;257;258
-V. Lex Dei ejus in corde ipsíus.
-R. Et non supplantabúntur gressus ejus.
-
-[Lectio1]
-@Commune/C4:Lectio1 in 2 loco:s/-5/-4/ s/5 .*//s
+Hic ítaque * cum jam relíctis litterárum stúdiis pétere desérta decrevísset, nutrix quæ hunc árctius amábat, secúta est.;;14
+Prædícta * nutrix illíus ad purgándum tríticum a vicínis muliéribus præstári sibi capistérium pétiit, quod casu accidénte fractum est.;;20
+Compássus * nutríci oratiónem fudit Benedíctus puer cum láctymis, et capistérium reparávit.;;23
+Benedíctus Dei fámulus * magnum fecit miráculum, fudit preces ad Dóminum, et rejúnxit capistérium.;;63
+Huic, dum erémum péteret, * Románus mónarchus obviávit: cujus cum desidérium cognovísset, et secrétum ténuit, et adjutórium impéndit.;;64
+Cumque * in specu pósito submítti panem diábolus conspíceret, jactávit lápidem, et tintinábulum fregit.;;91
+Sanctimoniális autem fœmina, * cum negántis verba audísset, oratiónem fudit et inundátio plúviæ erúpit.;;256;257;258
 
 [Responsory1]
 R. Fuit vir vitæ venerábilis grátia Benedíctus et nómine, † ab ipso puerítæ suæ témpore cor gerens seníle
@@ -115,56 +113,44 @@ R. Fuit vir vitæ venerábilis grátia Benedíctus et nómine, † ab ipso puer�
 V. Recéssit ígitur sciénter néscius et sapiénter indóctus.
 R. Ætátem quippe móribus tránsiens nulli ánimum voluptáti dedit.
 
-[Lectio2]
-@Commune/C4:Lectio1 in 2 loco:s/1-5/5-7/ s/1.*5/5/s
-@Commune/C4:Lectio2 in 2 loco:2-3
-
 [Responsory2]
+R. Beátus Benedíctus fámulus Dómini magnum fecit miráculum, fudit preces ad Dóminum, 
+* Et resolidávit confráctum capistérium.
+V. Benedíctus puer, cum nutrícem suam flere conspíceret, ejus dolóri compássus est.
+R. Et resolidávit confráctum capistérium.
+
+[Responsory3]
+R. Inito consílio venénum vino miscuére: quo obláto ex more ad benedicéndum Patri, vir Dei signo Crucis édidit, et vas pestíferi potus ita confráctum est,
+* Ac si pro signo lápidem dedísset.
+V. Intelléxit prótinus vir Dei, quia potum mortis habúerat, quod portáre non póterat signum vitæ.
+R. Ac si pro signo lápidem dedísset.
+
+[Responsory4]
 R. Sanctus Benedíctus plus appétiit mala mundi pérpeti quam laudes; † pro Deo labóribus fatigári,
 * Quam vitæ hujus favóribus extólli.
 V. Divína namque prævéntus grátia magis ac magis ad supérna ánimo suspirábat.
 R. Quam vitæ hujus favóribus extólli.
 
-[Lectio3]
-@Commune/C4:Lectio2 in 2 loco:s/6-9/8-11/ s/6.*8/8/s
-@Commune/C4:Lectio3 in 2 loco:2-3
-
-[Responsory3]
-R. Inito consílio venénum vino miscuére: † quo obláto ex more ad benedicéndum Patri, vir Dei signo crucis édidit, † et vas pestíferi potus ita confráctum est,
-* Ac si pro signo lápidem dedísset.
-V. Intelléxit prótinus vir dei quia potum mortis habúerat, † quod portáre non póterat signum vitæ.
-R. Ac si pro signo lápidem dedísset.
-
-[Lectio4]
-@Commune/C4:Lectio3 in 2 loco:s/10-/12-/ s/10.*12/12/s
-
-[Responsory4]
-R. Dómine, non aspícias peccáta mea, sed fidem hujus hóminis, † qui rogat resuscitári fílium suum: † et redde in hoc corpúsculum ánimam quam tulísti. † Et compléta oratióne revíxit:
-* Et sanum réddidit patri suo.
-V. Et regrediénte ánima corpúsculum omne contrémuit, † et sub óculis ómnium qui áderant, vivus appáruit.
-R. Et sanum réddidit patri suo.
-
 [Lectio5]
 @Sancti/03-21:Lectio4:s/Sed .*//s
 
 [Responsory5]
-R. O laudánda sancti Benedícti mérita gloriósa, qui dum pro Christo pátriam mundíque sprevit pompam, † adéptus ómnium contubérnium Beatórum
-* Et párticeps factus præmiórum æternórum.
-V. Inter choros confessórum spléndidum póssidet locum, † ubi ipsum fontem ómnium intuétur bonórum.
-R. Et párticeps factus præmiórum æternórum.
+R. Dómine, non aspícias peccáta mea, sed fidem hujus hóminis, qui rogat resuscitári fílium suum: et redde in hoc corpúsculum ánimam quam tulísti. Et compléta oratióne revíxit:
+* Et sanum réddidit patri suo.
+V. Et regrediénte ánima corpúsculum omne contrémuit, † et sub óculis ómnium qui áderant, vivus appáruit.
+R. Et sanum réddidit patri suo.
 
 [Lectio6]
-@Sancti/03-21:Lectio4:s/.* Sed/Sed/s s/$/~/
-@Sancti/03-21:Lectio5:s/Póstea.*//s
+@Sancti/03-21:Lectio4:s/.*(Sed)/$1/s
 
 [Responsory6]
-R. Cum sanctus Benedíctus in cella consísteret, † elevátis sursum óculis, vidit soróris suæ ánimam de córpore ejus egréssam,
+R. Cumque sanctus Benedíctus in cella consísteret, elevátis sursum óculis, vidit soróris suæ ánimam de córpore ejus egréssam,
 * In colúmbæ spécie cæli secréta penetráre.
-V. Qui tantæ ejus glóriæ congáudens omnipoténti Deo grátias rétulit, † ejúsque óbitum frátribus denuntiávit.
+V. Qui tantæ ejus glóriæ congáudens omnipoténti Deo grátias rétulit, ejúsque óbitum frátribus denuntiávit.
 R. In colúmbæ spécie cæli secréta penetráre.
 
 [Lectio7]
-@Sancti/03-21:Lectio5:s/.* Póstea/Póstea/s
+@Sancti/03-21:Lectio5:s/Quare .*//s
 
 [Responsory7]
 R. Intempéstæ noctis hora vir dei instans vigíliis assíduæ oratiónis, velut sub uno solis radio,
@@ -173,7 +159,8 @@ V. Vidénti enim Creatórem angústa est omnis creatúra.
 R. Omnem mundum colléctum conspexit.
 
 [Lectio8]
-@Sancti/03-21:Lectio6
+@Sancti/03-21:Lectio5:s/.* (Quare)/$1/s s/Quod ubi.*// s/$/~/
+@Sancti/03-21:Lectio6:s/ánimam: .*/ánimam./
 
 [Responsory8]
 R. Pater sanctus dum inténtam oculórum áciem in splendóre corúscæ lucis habére viderétur, † vidit Germáni ánimam Capuáni epíscopi
@@ -182,43 +169,46 @@ V. Factúmque est, ut reverendíssimum virum Germánum epíscopum is qui missus 
 R. In sphæra ígnea ab angelis in cælum deférri.
 
 [Lectio9]
-Ecce nos relíquimus ómnia, et secúti sumus te. Solémne verbum, magna promíssio, opus sanctum, dignum benedictióne: relínquere ómnia, et sequi Christum. Hæc sunt verba voluntárie persuasória paupertátis, quæ monastéria genuérunt, quæ claustra mónachis, anachorétis silvas copiósius replevérunt. Hæc enim sunt, de quibus psallit Ecclésia: Propter verba labiórum tuórum ego custodívi vias duras; perceptúra requiem pro labóre, pro paupertáte divítias, pro tribulatióne mercédem. Magnum revéra est relínquere ómnia, sed majus Christum sequi, cum multos ómnia reliquísse, nec Christum secútos fuísse legámus. Hoc opus, hic labor est, hic salútis humánæ summa consístit; nec Christum póssumus sequi, nisi ómnia relinquámus, quia exsúltat ut gigas ad curréndam viam, et onerátus eum sequi non potest.
+Léctio sancti Evangélii secúndum Matthǽum. 
+!Mat. 19:27-29
+In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Et réliqua.
+_
+Homilía venerábilis Bedæ Presbýteri.
+!Homil. in Natali S. Ben.
+Perféctus ille est, qui ábiens véndit ómnia quæ habet, et dat paupéribus, ac véniens séquitur Christum; habébit enim thesáurum non deficiéntem in cœlis. Unde bene, interrogánte Petro, dixit tálibus Jesus: Amen dico vobis, quod vos qui secúti estis me, in regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël.
+	
+[Lectio10]
+In hac quippe vita pro ejus nómine laborántes, in ália præmium speráre dócuit, id est, in regeneratióne; cum vidélicet in vitam immortálem fuérimus resurgéndo regeneráti, qui in vitam cadúcam mortáliter erámus géniti. Et justa prorsus retribútio, ut, qui hic pro Christo humánæ glóriam celsitúdinis neglexérunt, illic a Christo júdices glorificáti singuláriter cum eo assídeant qui a sequéndis ejus vestígiis nulla ratióne póterant avélli.
+	
+[Lectio11]
+Nemo autem putet duódecim tantum Apóstolos, quia pro Juda prævaricánte Matthias eléctus est, tunc esse judicatúros: sicut nec duódecim solæ sunt tribus Israël judicándæ: alióquin tribus Levi, quæ tertiadécima est, injudicáta recédet. Et Paulus, qui tertiusdécimus est Apóstolus, judicándi sorte privábitur? cum ipse dicat: Nescítis quóniam ángelos judicábimus, quanto magis sæculária?
+	
+[Lectio12]
+Sciéndum namque est, omnes, qui ad exémplum Apostolórum, sua reliquérunt ómnia et secúti sunt Christum, júdices cum eo ventúros, sicut étiam omne mortálium genus esse judicándum. Quia enim duodenário sæpe número solet in Scriptúris univérsitas designári, per duódecim sedes Apostolórum ómnium numerósitas judicántium, et, per duódecim tribus Israël, univérsitas eórum qui judicándi sunt, osténditur.
 
 [Responsory9]
-R. Sanctíssime Conféssor Christi Benedícte monachórum Pater et Dux:
-* Intercéde pro nostra omniúmque salúte.
-V. Devótæ plebi súbveni sancta intercessióne, † ut tuis adjúta précibus regna cæléstia consequátur.
-R. Intercéde pro nostra omniúmque salúte.
-
-[Lectio10]
-Ecce, inquit, nos relíquimus ómnia, non solum facultátes mundi, sed et ánimi quoque cupiditátes: neque enim relínquit ómia, qui retínuit vel seípsum; immo vero nihil prodest, sine seípso cétera reliquísse, quandóquidem nullum áliud onus est grávius hómini, quam homo ipse. Quis enim tyránnus crudélior, quæ sǽvior potéstas hómini, quam hóminis ipsíus volúntas? Séquitur: Quid ergo erit nobis? Jam ómnia relíquit Petrus, jam non solum séquitur, sed et diu secútus est; et nunc primum intérrogat, quidnam sit acceptúrus. Quid est, Petre? Nonne obediéntiam promisísti in auris auditióne, non in pacti conventióne? Sed audíte jam, quid loquátur Dóminus Deus, et atténdite spem, in qua mundo fluctuánte speráre debémus: Sedébitis, ait Dóminus, ait Véritas. Solémnis séssio, grata quies, plena sufficiéntia.
-
-[Responsory10]
-R. Ipso anno, quo de hac vita erat exitúrus, † quibúsdam discípulis secum conversántibus, quibúsdam longe manéntibus,
+R. Eódem vere anno, quo de hac vita erat exitúrus, quibúsdam discípulis secum conversántibus, quibúsdam longe manéntibus,
 * Sanctíssimi sui óbitus denuntiávit diem.
 V. Præséntibus indicens, ut audíta per siléntium tégerent: † abséntibus índicans, quod vel quale eis signum fíeret quando ejus ánima de córpore exíret.
 R. Sanctíssimi sui óbitus denuntiávit diem.
 
-[Lectio11]
-Sed ne magnæ promissiónis dulcédinem longánimis expectátio contorquéret, mentis nostræ mobilitátem sermónem témperat dulcióri. Novit enim ipse figméntum nostrum, quóniam dilatiónis moras pusillanímitas nostra non sústinet; ideóque benignitáte sua huic quoque obviat cogitatióni, et occúrrit étiam ex hac parte, dicens: Et omnis, qui relíquerit domum, aut patrem, aut matrem, aut fratrum, aut uxórem, aut agros, aut fílios, propter nomen meum, céntuplum accípiet, et vitam ætérnam possidébit. Obstrúctum est certe os loquéntium iníqua. Jamque confundántur omnes iníqua agéntes supervácue. Habémus enim promissiónem vitæ hujus, quæ nunc est, páriter et futúræ, manifestúmque est præséntis témprois esse céntupli promissiónem, ex eo nimírum quod séquitur: Et vitam ætérnam possidébit.
-
-[Responsory11]
-R. Sexto die portári se in oratório a discípulis fecit, † ibíque éxitum suum domínicis sacraméntis munívit,
+[Responsory10]
+R. Sexto namque die portári se in Oratórium a discípulis suis fecit, ibíque éxitum suum Domínicis sacraméntis munívit; 
 * Atque inter discipulórum manus expirávit.
-V. Cumque per síngulos dies lánguor ingravésceret, eréctis in cælum mánibus stetit.
+V. Cumque per síngulos dies languor ingravésceret, eréctis in cœlum mánibus stetit.
 R. Atque inter discipulórum manus expirávit.
 
-[Lectio12]
-Qui ergo nondum céntuplum accepérunt, scruténtur corda sua, et univésa mánuum suárum stúdia diligénter exáminent; nec dúbium, quib invéniant ángulum et diversórium, quod Salvátor non novit. Sed quid est céntuplum istud, nisi consolatiónes visitationésque et primítiæ Spíritus, qui super mel dulcis est, nisi testimónium consciéntiæ nostræ, nisi læta et jucundíssima justórum expectátio, nisi memória abundántiæ suavitátis Dei, et magna vere multitúdo dulcédinis ejus, quam nec expértis necésse est dícere, nec inexpértis illis verbis exprímere quiquam potest? Cui vero sic speciáliter totus evangélicæ lectiónis excursus assignári potest, quemádmodum Patri et Magístro nostro beátro Benedícto? Hic a puerítia mundum cum fíore relíquit, et curréntem Christum cursu rapidíssimo secútus est, nec déstitit, donec consequerétur.
-
-[Responsory12]
+[Responsory11]
 R. Via, recto oriéntis trámite ab ejus cella in cælum usque tendebátur; † cui venerándo hábitu vir désuper clarus assístens, cujus esset via, quam cérnerent, inquisívit:
 * Illi autem se nescíre proféssi sunt.
 V. Quibus ipse ait: † Hæc est via, qua diléctus Dómini Benedíctus cælos ascéndit.
 R. Illi autem se nescíre proféssi sunt.
 
+[Responsory12]
+@CommuneM/C5
+
 [Evangelium]
-@CommuneM/C1
+@Commune/C5b
 
 [Ant Laudes]
 Eléctus * a frátribus invítus obtínuit, quod sciénter scivit se illórum móribus conveníre non posse.

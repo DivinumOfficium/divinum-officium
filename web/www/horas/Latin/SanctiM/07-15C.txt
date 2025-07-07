@@ -1,0 +1,44 @@
+[Officium]
+S. Henrici, Imperatoris et Confessoris
+
+[Rank]
+;;Simplex;;1.2;;vide C5
+(sed rubrica altovadensis)
+;;Duplex;;3;;ex C5
+
+[Rule]
+vide C5;mtv
+in 1 Nocturno Lectiones ex Commune in 2 loco;
+12 lectiones
+(sed rubrica 1951)
+3 lectiones
+
+[Oratio]
+@Sancti/07-15
+
+[Lectio2] (rubrica 1951)
+@Sancti/07-15:Lectio4:s/$/~/
+@Sancti/07-15:Lectio5:s/Divína autem.*//
+
+[Responsory2] (rubrica 1951)
+@CommuneM/C5:Responsory5
+
+[Lectio3] (rubrica 1951)
+@Sancti/07-15:Lectio5:s/.*Divína autem/Divína/ s/$/~/
+@Sancti/07-15:Lectio6
+
+[Responsory3] (rubrica 1951)
+@CommuneM/C5:Responsory6
+
+[Lectio5]
+@Sancti/07-15:Lectio4:s/Episcopátum .*//
+
+[Lectio6]
+@Sancti/07-15:Lectio4:s/.*(Episcopátum)/$1/ s/$/~/
+@Sancti/07-15:Lectio5:s/Nihil sine.*//
+
+[Lectio7]
+@Sancti/07-15:Lectio5:s/.*(Nihil sine)/$1/
+
+[Lectio8]
+@Sancti/07-15:Lectio6

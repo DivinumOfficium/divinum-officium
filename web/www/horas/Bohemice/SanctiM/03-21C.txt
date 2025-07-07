@@ -1,6 +1,9 @@
 [Officium]
 Našeho Svatého Otce Benedikta, Opata
 
+[Name]
+Benedikta
+
 [Ant Vespera]
 Tento Svatý * se právem vtiskl do paměti lidí, neboť odešel do radosti Andělů; neboť v tomto putování v těle pouze přebýval, myšlením a touhou se obracel k oné věčné vlasti.
 Spravedlivého vedl Hospodin * po přímých cestách, a ukázal mu království Boží, a dal mu poznat to, co znají Svatí: poctil ho útrapami, a jeho dílo dokončil.
@@ -8,7 +11,8 @@ Zamiloval si jej Hospodin * a ozdobil jej. Štolu slávy mu oblékl, a při bran
 Tento poznal * spravedlnost, a uzřel veliké zázraky, a modlil se k Nejvyššímu, a shledán byl v počtu Svatých.
 
 [Responsory Vespera 1]
-Responsorium. Svatý Benedikt více toužil vytrpět zla světa, než chvály, * Radši chtěl být pro Boha sužován útrapami, než potěšeními tohoto života být povzbuzován. Alleluja.
+R. Svatý Benedikt více toužil vytrpět zla světa, než chvály, 
+* Radši chtěl být pro Boha sužován útrapami, než potěšeními tohoto života být povzbuzován. Alleluja.
 V. Božská milost jej totiž předcházela, a čím dál tím více svých duchem vzdychal k nebesům:
 R. Radši chtěl být pro Boha sužován útrapami, než potěšeními tohoto života být povzbuzován. Alleluja.
 
@@ -51,149 +55,147 @@ Přesvatý * Vyznavači Páně, otče a vůcče Mnichů, Benedikte, přimlouvej 
 Vzbuď, Pane, ve své Církvi Ducha, jemuž svatý Benedikt, Opat, sloužil: abychom, jím také naplněni, snažili se milovat, co on miloval, a skutky vykonávat to, co vyučoval.
 $Per Dominum
 
+[Invit]
+Spravedlivý rozkvete, zasazen v domě Hospodinově; * Radujme se a jásejme v jeho posvátné slavnosti.
+
 [Hymnus Matutinum]
-v. All that the ancient prophets preached,
-and all that the books of the divine Law tell us
-of holiness, is contained in the life of the great patriarch
-which we are now extolling.
+v. Cokoliv pěli dávní Prorokové,
+Cokoliv v dávných příkazech zákona,
+Obsáhne pro nás, jejž máme slaviti,
+Život Opata.
 _
-Moses was celebrated for his meekness;
-Abraham for his being father of all believers;
-Isaac for the beauty of his bride,
-and his obedience to the trying commands of his father.
+Mojžíše zdobí zbožnost dobrých lidí,
+Abraháma zas přeslavné potomsto,
+Isáka krása nevěsty, i přísné
+Příkazy otci.
 _
-The sublime patriarch of our family was richly laden
-with every virtue; and in his
-Single person represented
-Isaac, Moses, and Abraham.
+On též byl ctnostmi mnohými obtížen,
+Vznešený řádů našich Patriarcha,
+Isáka, Mojžíše i Abraháma, 
+V srdci svém spojil.
 _
-May he have a loving care of those
-whom he has delivered from this stormy world,
-and lead them with prosperous gales to the port
-where thee is no fear that can ruffle peace and repose.
+On sám ty, které světa bouře smetly,
+Zde zbožným pláčem k životu navrátil, 
+Mír pak z místa, kde strach býti nemůže,
+V pokoji přines'.
 _
-Glory be to the Father, and to the Son that is begotten of him!
-To thee, also, O Spirit of love,
-coequal with them, one God,
-be glory for endless ages.
+Sláva buď Otci, zrozenému Synu, 
+I tobě, rovný oběma odvěků,
+Vznešený Duchu, jeden Bože,
+Po vše časy a věky.
 Amen.
 
-[Ant Matutinum]
-There was a man of venerable life, blessed by grace, and blessed in name.;;1
-From his younger years he carried always the mind of an old man; for his age was inferior to his virtue: he rejected all vain pleasures.;;2
-He was born in the province of Nursia, and studied the liberal arts at Rome.;;4
-And though he were in the world, and might freely have enjoyed such commodities as it yieldeth, yet did he nothing esteem it, nor the vanities thereof.;;5
-Forsaking his father's house and wealth, desiring only to please God, he sought for some place, where he might attain to the desire of his holy purpose:;;8
-He departed therefore, instructed with learned ignorance, and furnished with unlearned wisdom.;;10
-V. The Lord loved him and beautified him.
-R. He clothed him with a robe of glory.
-Benedict grew daily in the grace of God, so that, being granted the gift of prophecy, he foretold things to come.;;14
-When he was seeking the desert he met the monk Romanus, who, knowing his desire, kept his secret and gave him help.;;20
-Ant.: Through the divine power he was granted the great grace to see the whole world gathered together under one ray of sunlight.;;23
-While the holy father stood attentively beholding the brightness of that glittering light, he saw the soul of Germanus, Bishop of Capua carried up to heaven by the angels in a fiery globe.;;95
-Taking counsel together, the brothers agreed to poison his wine: but when it was offered he made the sign of the cross, and straightway the glass broke in pieces, as though the sign of the cross had been a stone thrown against it.;;96
-And then he returned back to the wilderness which so much he loved, and dwelt alone with himself, in the sight of his Creator.;;97
-V. The mouth of the righteous speaketh wisdom.
-R. And his tongue talketh judgment.
-Ant.: Let us adorn Benedict with prophetic canticles, who shone with prophecy as much as with grace of learning.;;256;257;258
-V. The law of his God is in his heart.
-R. None of his steps shall slide.
+[Ant Matutinum] (nisi tempore paschali)
+Byl to muž ctihodného života, * milostí požehnaný <i>(Benedictus)</i> i jménem.;;1
+Od samého svého dětství * měl srdce starce, svůj věk převyšoval svým chováním, a nepodvolil svého ducha žádným potěšením.;;2
+Dokud byl ještě na této zemi, * i na to, co ještě svobodně mohl používat, již shlížel jako na vyprahlý svět s květy.;;4
+Vzešel * z provincie Nursie, a v Římě, kam jej rodiče poslali, obdržel klasické vzdělání.;;5
+Opustil dům * i majetek otce, a v touze zalíbit se pouze Bohu, hledal hábit svatého obracení.;;8
+Odešel tedy do ústraní, * věděl vše, zároveň však nic, byl moudrý, jako by však nebyl.;;10
+On tedy, * když již zakončil svá akademická studia, a rozhodl se zamířit do pustiny, a kojná, která jej velmi milovala, jej následovala.;;14
+Zmíněná * jeho kojná si na promývání obilí půjčila od žen v sousedství džbán k tomu určený, a ten se nešťastnou náhodou rozbil.;;20
+V soucitu * s kojnou proléval chlapec Benedikt modlitbu spolu se slzami, a džbán opravil.;;23
+Služebník Boží Benedikt * vykonal veliký zázrak, vylil své prosby k Pánu, a znovu spojil rozbitý džbán.;;63
+Když se vydal do poustevny, * přišel mu do cesty mnich Roman; a když poznal jeho touhu, zachoval tajemství, a poskytl pomoc.;;64
+A když * ďábel zjistil, že mu, ukrytému v jeskyni, nosil chléb, hodil kamenem a rozbil zvon.;;91
+Svatá řeholnice však, * když uslyšela slova odmítnutí, vylila svou modlitbu, a spustila se průtrž mračen.;;256;257;258
 
 [Responsory1]
-V. There was a man of venerable life, blessed by grace, and blessed in name, for he was called Benedict. From his younger years, he always had the mind of an old man
-* For his age was inferior to his virtue.
-R. In this way he departed, instructed with learned ignorance, and furnished with unlearned wisdom.
-V. For his age was inferior to his virtue.
+R. Byl to muž, ctihodného života, milostí požehnaný <i>(Benedictus)</i> i jménem. Od samého období jeho dětství měl srdce starce,
+* Svůj věk převyšoval svým chováním, a nepodvolil svého ducha žádným potěšením.
+V. Odešel tedy do ústraní, věděl vše, zároveň však nic, byl moudrý, jako by však nebyl.
+R. Svůj věk převyšoval svým chováním, a nepodvolil svého ducha žádným potěšením.
 
 [Responsory2]
-R. St Benedict desiring rather the miseries of the world than the praises of men: rather to be wearied with labor for God's sake
-* Than to be exalted with transitory commendation.
-V. For filled greatly with divine grace, his soul aspired to even higher things.
-R. Than to be exalted with transitory commendation. 
+R. Blažený Benedikt, služebník Páně, vykonal veliký zázrak, vylil své prosby k Pánu,
+* A znovu spojil rozbitý džbán na promývání obilí.
+V. Chlapec Benedikt, když uviděl, že jeho kojná pláče, byl pohnut její bolestí.
+R. A znovu spojil rozbitý džbán na promývání obilí.
 
 [Responsory3]
-R. Taking counsel together, they agreed to poison his wine: according to the custom, offered to the Abbot to bless, he made the sign of the cross, and straightway the glass broke in pieces
-* As though the sign of the cross had been a stone thrown against it.
-R. The man of God by and by perceived that the glass had in it the drink of death, which could not endure the sign of life.
-V. As though the sign of the cross had been a stone thrown against it.
+R. Poradili se a přimísili mu jed do vína; a nabídli jej jako obvykle k požehnání Otci, muž Boží učinil znamení Kříže, a nádoba smrtonosného nápoje praskla,
+* Jako by ji namísto znamení Kříže uhodil kamenem.
+R. Pochopil hned muž Boží, že měl před sebou nápoj smrti, který nedokázal snést znamení života.
+V. Jako by ji namísto znamení Kříže uhodil kamenem.
 
 [Responsory4]
-R. Behold not, O Lord, my sins, but the faith of this man, who desires to have his son raised to life, and restore that soul to the body which you have made. And when the prayer was ended he revived.
-* And he gave him back to his father healthy.
-V. And the soul returned again, and therewith the child's body began to tremble in such sort that all which were present beheld it.
-R. And he gave him back to his father healthy.
+R. Svatý Benedikt více toužil vytrpět zla světa, než chvály, 
+* Radši chtěl být pro Boha sužován útrapami, než potěšeními tohoto života být povzbuzován.
+V. Božská milost jej totiž předcházela, a čím dál tím více svých duchem vzdychal k nebesům:
+R. Radši chtěl být pro Boha sužován útrapami, než potěšeními tohoto života být povzbuzován. 
 
 [Lectio5]
-@Sancti/03-21:Lectio4:s/At last.*//s
+@Sancti/03-21:Lectio4:s/Avšak.*//s
 
 [Responsory5]
-R. O praise the glorious merits of St Benedict who for Christ left his fatherland and the pomp of the world, and arrived at the companionship of all the blessed
-* And was made a partaker of eternal rewards.
-V. He holds a splendid place among the chorus of confessors, where he gazes upon the font of all good
-R. And was made a partaker of eternal rewards.
+R. Pane, nehleď na mé hříchy, ale na víru tohoto člověka, který žádá vzkříšení svého syna: a navrať do tohoto tělíčka duši, kterou jsi vzal. A když Benedikt dokončil svou modlitbu, chlapec ožil, 
+* A zdravého jej navrátil jeho otci.
+V. A když vstupovala duše zpět, celé tělíčko se zachvělo, a před očima všech, kteří tam byli, chlapec najednou ožil. 
+R. A zdravého jej navrátil jeho otci.
 
 [Lectio6]
-@Sancti/03-21:Lectio4:s/.* At last/At last/s s/$/~/
-@Sancti/03-21:Lectio5:s/Afterwards.*//s
+@Sancti/03-21:Lectio4:s/.* Avšak/Avšak/s
 
 [Responsory6]
-R. When St Benedict was standing in his cell, lifted his eyes he saw the soul of his sister which was departed from her body
-* Ascend into heaven in the likeness of a dove.
-V. Rejoicing much to see her great glory, with hymns and praise he gave thanks to almighty God, and imparted the news of her death to his monks.
-R. Ascend into heaven in the likeness of a dove.
+R. A když svatý Benedikt seděl ve své cele, zdvihl oči vzhůru a viděl duši své sestry, jak vyšla z jejího těla, 
+* V podobě holubice pronikla do nebeských tajemství.
+V. On se zaradoval z tak veliké její slávy, vzdal díky všemohoucímu Bohu a oznámil bratřím její odchod. 
+R. V podobě holubice pronikla do nebeských tajemství.
 
 [Lectio7]
-@Sancti/03-21:Lectio5:s/.* Afterwards/Afterwards/s
+@Sancti/03-21:Lectio5:s/Den za dnem.*//s
 
 [Responsory7]
-R. The man of God, keeping vigil in the dark hours of the night with assiduous prayer, under one beam of the sun
-* Saw the whole world gathered together.
-V. For he who sees the creator all created things seems small.
-R. Saw the whole world gathered together.
+R. Když nastala temná noc a muž Boží usilovně prodléval na modlitbách, jako by na něj svítil paprsek slunce, 
+* Hleděl na celý svět najednou. 
+V. Kdo však uzřel Stvořitele, nedostatečné mu je všechno stvoření.
+R. Hleděl na celý svět najednou. 
+
+[Lectio8]
+@Sancti/03-21:Lectio5:s/.*(Den za dnem)/$1/s s/Jednu takovou.*// s/$/~/
+@Sancti/03-21:Lectio6:s/duši; .*/duši./
 
 [Responsory8]
-R. While the venerable father stood attentively beholding the brightness of that glittering light, he saw the soul of Germanus, Bishop of Capua,
-* Carried up by Angels into heaven in a fiery globe.
-V. It was discovered that the reverent man Germanus had departed this life at that very instant.
-R. Carried up by Angels into heaven in a fiery globe.
+R. Svatý otec, když se zdálo, že upřel veškerou sílu svých očí do světelné záře, viděl duši Germána, kapuánského Biskupa, 
+* V ohnivé kouli viděl, jak jej Andělé odnášejí do nebe.
+V. A stalo se, že za nejdůstojnějším mužem Biskupem Germánem vyslali člověka, který když tam přišel, nalezl jej již zesnulého.
+R. V ohnivé kouli viděl, jak jej Andělé odnášejí do nebe.
 
 [Lectio9]
-Sermon of St Peter Damian
-!Sermon 9; for S. Benedict
-Behold, we have forsaken all and followed thee. Solemn word, mighty undertaking, a holy work and one worthy of blessing, to leave all things and follow Christ. These are the persuasive words of voluntary poverty, which have brought forth monasteries, and filled the cloister with monks and the woods with anchorites. These are the words of which the Church sings: 'By the word of thy lips I have kept me from the paths of the destroyer.' We shall receive rest for our labour, riches for our poverty, a reward for our tribulation. It is a great thing to forsake all, but to follow Christ is a greater; for we read of many who have left all but who have not followed Christ. This is our task, this our labour; in this lies the essence of human salvation; nor can we follow Christ unless we forsake all, for He rejoices as a strong man to run a race, and he who bears a load cannot follow.
-
-[Responsory9]
-R. O Benedict, Most holy confessor of Christ, father and leader of monks,
-* Intercede for us and the salvation of all.
-V. Assist your devoted people with holy intercession so that with the help of your prayers they may reach the heavenly kingdom.
-R. Intercede for us and the salvation of all.
+Čtení svatého Evangelia podle Matouše.
+!Mat. 19:27-29
+Za onoho času řekl Petr Ježíšovi: Hle, opustili jsme vše a následujeme tebe. Co tedy bude s námi? A ostatní.
+_
+Homilie ctihodného Bédy Kněze.
+!Homilie k Narození Sv. Benedikta.
+Dokonalý je ten, kdo na odchodu prodá vše, co má, a rozdá chudým, pak přijde a následuje Krista. Bude totiž mít nepomíjející poklad v nebi. Proto zcela správně říká Ježíš toto, když se ptá Petra: „Amen pravím vám, že vy, kteří mě následujete, na oplátku, až bude Syn člověka sedět na trůnu své vznešenosti, budete i vy sedět na dvanácti trůnech a soudit dvanáct kmenů Israele.“ 	
 
 [Lectio10]
-'Behold' he says, 'we have forsaken all' not only the riches of this world but the desires of the soul too; for he who holds on to the self has not forsaken all. And it is useless to abandon other things if we do not abandon ourselves, since man's heaviest burden is man himself. What tyrant is more cruel to man, what power more savage, than his own will? Under its sway you can never rest or sit at your ease, and the more it wearies you in enforcing obedience to itself, the more it goads and stings and weighs you down, being unmindful of kindness and a stranger to mercy. This is the nature of self-will: the more obedient its subject, the more cruelly is he bound in its chains. 'What shall we have therefore?' Peter has forsaken all; not only is he following, he has followed for a long time; and now for the first time he asks what he will receive. What, Peter? Did you not promise obedience to the voice? You made no contract with the Lord. But listen to what the Lord God says, and await that hope in which, in this uncertain world, we must confide.' 'You shall sit', says the Lord who is Truth. Splendid sitting, welcome rest, full sufficiency.
-
-[Responsory10]
-R. In the year that was to be the last of his life, while some of his disciples were talking with him and some remained further away,
-* The most holy man foretold the day of his death.
-V. He bound them to strict secrecy, some others, he only informed of the special sign they would receive at the time of his death.
-R. The most holy man foretold the day of his death.
+Pán nás učí, že v tomto životě sice trpíme pro jeho jméno, v tom dalším však můžeme doufat v odměnu, totiž ve znovuzrození. Tehdy tedy budeme vzkříšením opět zrozeni v nesmrtelný život, my, kteří jsme se narodili v život smrtelný a porušitelný. Je to tedy spravedlivá odměna, aby ti, kteří zde pro Krista pohrdli vznešeností lidské slávy, pak v nebi byli Kristem oslaveni jako soudci, a jedinečným způsobem s ním zasedli ti, které žádným způsobem nebylo možné odradit od následování jeho kroků.	
 
 [Lectio11]
-But lest our long awaiting should mar the sweetness of His promise, He controls the restlessness of our minds with a sweeter word. For he knows our weakness; He knows that our cowardice cannot brook delays; in His loving kindness He meets this problem and counteracts it, saying: 'And everyone that has forsaken house, or brethren, or sisters, or father, or mother, or wife, or children, or lands for my name's sake, shall receive a hundredfold, and shall inherit everlasting life.' “The mouth of them that speak lies shall be stopped'; now all they who transgress without cause are ashamed. For we have promise of the life that now is, as well as of that which is to come; and it is clear that the promise of receiving a hundred-fold applies to this life, since the words which follow are 'and shall inherit everlasting life'.
-
-[Responsory11]
-R. On the sixth day, he had his disciples carry him into the oratory where he received the sacraments our Lord to gain strength for his approaching end
-* Then, in the arms of his disciples he breathed his last
-V. While for several days sickness had wasted his remaining energy, he stood with hands outstretched to heaven
-R. Then, in the arms of his disciples he breathed his last
+Ovšem nemysleme si, že pouze dvanáctero Apoštolů (neboť za zrádce Jidáše byl zvolen Matěj) bude v onen čas soudit, tak jako ani nebudou soudit pouze dvanáct kmenů israelských. V tom případě by totiž kmen Leviho, který je třináctý, zůstal nesouzen. A Pavel, který je třináctým Apoštolem, byl by údělu soudce zbaven? I když sám říká: „Nevíte že budeme soudit anděly, čím spíše bytosti pozemské?“	
 
 [Lectio12]
-Those who have not yet received the hundredfold reward must scrutinize their hearts and diligently examine all the work of their hands; they will certainly find some corner or lodging-place unknown to the Saviour. And what is our hundredfold reward but the consolations, the visitations and the first fruits of the Spirit, sweeter than honey; the witness of our consciences; the joyous and lovely expectation of the just, the memory of God's abundant sweetness, the great multitude of His delights, of which there is no need to tell those who have known them, just as it is impossible to describe them to those who have not known them. There is no one to whom all this exposition of our text better applies than to our father and master St. Benedict. He forsook the world and all its flowers in boyhood to run with strong strides after the running Christ; and he did not rest until he had caught up with Him.
+Musíme tedy vědět, že všichni, kteří podle příkladu Apoštolů opustili vše, co mají, a následovali Krista, se stanou soudci spolu s ním, stejně jako všechno smrtelné pokolení bude souzeno. Neboť číslo dvanáct se v Písmu často používá pro označení veškerenstva. Dvanácti stolicemi Apoštolskými míní se veškerý počet soudců, a dvanácti kmeny israelskými míní se veškeré lidstvo, které bude souzeno. 
 
-[Responsory12]
-R. A straight road stretched eastwards from his cell until it reached up into heaven. And there in the brightness stood a man of majestic appearance, who asked them, Do you know who passed this way?
-* They declared that they did not know.
-V. This, he told them, is the road taken by blessed Benedict, the Lord's beloved, when he ascended to heaven.
-R. They declared that they did not know.
+[Responsory9]
+R. Tentýž pak rok, v němž měl odejít z tohoto života‚ některým učedníkům, kteří s ním přebývali, a také některým, kteří přebývali daleko; 
+* Oznámil den své přesvaté smrti.
+V. Přítomným kladl na srdce, aby to, co slyšeli, uchovali v tajnosti: těm vzdáleným ukázal, co nebo jaké znamení jim bude dáno, až jeho duše vyjde z těla.
+R. Oznámil den své přesvaté smrti.
+
+[Responsory10]
+R. Šestého dne pak požádal učedníky, aby jej přinesli do Oratoře, a tam se na svou smrt připravil svátostmi Páně; 
+* A uprostřed hrstky svých učedníků vydechl naposledy.
+V. Když se jeho nemoc každým dnem zhoršovala, postavil se s rukama nataženýma k nebi.
+R. A uprostřed hrstky svých učedníků vydechl naposledy.
+
+[Responsory11]
+R. Cesta, přímo směrem na východ, se z jeho cely táhla až do nebe: Přistoupil k ní z nebe jasný muž ctihodného vzezření‚ a ptal se, čí je ta cesta, na kterou hledí;
+* Oni však přiznali, že nevědí. 
+V. On jim tedy řekl: „Toto je cesta, po které miláček Páně Benedikt vystoupil do nebe.
+R. Oni však přiznali, že nevědí.
 
 [Ant Laudes]
 Volbu * bratří jen nerad přijal, protože dobře věděl, že jejich mravům se přizpůsobit nedokáže.
@@ -244,7 +246,7 @@ $Deo gratias
 
 [Ant Vespera 3]
 Byl mužem * ctihodného života, milostí Požehnaný i jménem.
-Vzešel * z provincie Nursie, do Říma jej rodiče poslali, aby obdržel klasické vzdělání.
+Vzešel * z provincie Nursie, a v Římě, kam jej rodiče poslali, obdržel klasické vzdělání.
 Opustil dům * i majetek otce, a v touze zalíbit se pouze Bohu, hledal hábit svatého obracení.
 Odešel tedy do ústraní, * věděl vše, zároveň však nic, byl moudrý, jako by však nebyl.
 
