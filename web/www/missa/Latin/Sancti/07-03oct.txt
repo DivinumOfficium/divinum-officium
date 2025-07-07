@@ -1,3 +1,5 @@
+(rubrica tridentina)@Sancti/07-04oct
+
 [Officium]
 Quinta die infra Octavam Ss. Apostolorum Petri et Pauli
 
@@ -8,6 +10,20 @@ Quinta die infra Octavam Ss. Apostolorum Petri et Pauli
 ex Sancti/06-29;
 Gloria
 CredoDA
+Prefatio=Apostolis
+Suffr=Maria3;Ecclesiæ,Papa;;
 
 [Oratio]
+@Sancti/06-29
+
+[Comment]
+In Divino Afflatu, when the next day is impeded by the Octave of SSmi Cordis (e.g. 2025) or a Sunday, the proper last gospel from the Octave of the Apostels is said on this day.
+
+[Evangelium] (rubrica divino et feria 7 aut rubrica divino et feria 5 et tempore Octava SSmi Cordis)
+@Commune/C5b
+
+[Secreta]
+@Sancti/07-04oct
+
+[Postcommunio]
 @Sancti/06-29

@@ -1175,19 +1175,51 @@ sub Communio_Populi : ScriptFunc {
 }
 
 sub Ultimaev : ScriptFunc {
+
   my $lang = shift;
   my ($t, %p);
 
-  if ( $version =~ /(1955|196)/
-    || !exists($commemoratio{Evangelium})
-    || $commemoratio{Rule} =~ /Evangelium non appropriatum/)
-  {
+  my %win = columnsel($lang) ? %winner : %winner2;
+  our @commemoentries;
+  my (%com, %comlat);
+
+  foreach my $commemo (@commemoentries) {
+    if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
+    %comlat = %{setupstring('Latin', $commemo)};
+    %com = $lang eq 'Latin' ? %comlat : %{setupstring($lang, $commemo)};
+    if (exists($com{Evangelium}) && $com{Rule} !~ /Evangelium non appropriatum/i) { last; }
+  }
+
+  # Before Divino Afflatu, only Sundays, Ferias with proper Gospel and Vigil were commemorated
+  # No more proper Last Gospel after 1955
+  if (
+    $version =~ /(1955|196)/
+    || (
+      !exists($win{'Ultima Evangelium'})
+      && ( !exists($com{Evangelium})
+        || $com{Rule} =~ /Evangelium non appropriatum/
+        || ($version =~ /Trident/i && $comlat{Rank} !~ /Dominica|Feria|Vigil/))
+    )
+  ) {
+
+    # Initium S. Joannis
     return '' if $Propers;
     our %prayers;
     $t = prayer('Ultima Evangelium', $lang);
+  } elsif (!exists($win{'Ultima Evangelium'})) {
+
+    # Commemorated Last Gospel
+    my $comm = translate_label('Commemoratio', $lang);
+    my @comrank = split(";;", $com{Rank});
+
+    $comm =~ s/\s$//;
+
+    $t = $com{Evangelium};
+    $t =~ s/\!/!$comm $comrank[0]\n!/s;
   } else {
-    %p = (columnsel($lang)) ? %commemoratio : %commemoratio2;
-    $t = $p{Evangelium};
+
+    # Proper Last Gospel (e.g. 12-25 and Pent01-0) always takes precedence
+    $t = $win{'Ultima Evangelium'};
   }
 
   if ($t && $t !~ /^\s*$/) {
