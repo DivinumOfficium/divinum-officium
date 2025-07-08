@@ -1191,9 +1191,10 @@ sub Ultimaev : ScriptFunc {
   }
 
   # Before Divino Afflatu, only Sundays, Ferias with proper Gospel and Vigil were commemorated
-  # No more proper Last Gospel after 1955
+  # No more proper Last Gospel after 1955, except for the 3rd Mass of Christmas
   if (
-    $version =~ /(1955|196)/
+       $version =~ /196/
+    || ($version =~ /1955/ && $winner !~ /12-25/)
     || (
       !exists($win{'Ultima Evangelium'})
       && ( !exists($com{Evangelium})
