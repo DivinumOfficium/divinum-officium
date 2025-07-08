@@ -6,3 +6,25 @@ Secunda die infra Octavam S. P. N. Stephani, Abbatis
 
 [Rule]
 Psalmi Feria
+
+[Ant Matutinum]
+@CommuneM/C5:Ant 1
+;;
+@CommuneM/C2::12:s/;;.*//
+;;
+@Commune/C4:Ant 3
+;;
+Allelúia, * allelúia, allelúia.
+
+[Benedictio]
+Cujus festum cólimus, § ipse intercédat pro nobis ad Dóminum. §
+
+[MM LB]
+!Eccli. 50:6-7
+v. Quasi stella matutína in médio nébulæ, § et quasi luna plena in diébus suis lucet. * Et quasi sol refúlgens, sic ille effúlsit in templo Dei. § Et circa illum plantátio cedri in monte Líbano, * sic circa illum stetérunt quasi rami palmæ.
+$Tu autem
+_
+R.br. Justus, * Ut palma florébit.
+R. Justus, * Ut palma florébit.
+V. Sicut cedrus Líbani multiplicábitur.
+R. Ut palma florébit.

@@ -1,0 +1,21 @@
+[Lectio7]
+@Sancti/07-22:Lectio6:s/ Když však hledáme.*//
+
+[Lectio8]
+@Sancti/07-22:Lectio6:s/.* Když však hledáme/Když však hledáme/
+
+[Lectio9]
+@Sancti/07-22:Lectio7:s/Věděla.*//
+
+[Lectio10]
+@Sancti/07-22:Lectio7:s/.*Věděla/Věděla/s s/$/~/
+@Sancti/07-22:Lectio8:s/Když.*//
+
+[Lectio11]
+@Sancti/07-22:Lectio8:s/.* Když/Když/
+
+[Lectio12]
+@Sancti/07-22:Lectio9
+
+[Responsory12]
+@CommuneM/C7::s/N\./Marie Magdaléna/

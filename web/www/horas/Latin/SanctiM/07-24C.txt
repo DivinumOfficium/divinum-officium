@@ -2,12 +2,30 @@
 B. Balduini, Abbatis et Confessoris
 
 [Rank]
-;;iij. Lect. et M.;;1.2;;vide C5
+;;iij. Lect. et M.;;1.2;;vide C5b
 
 [Rule]
-vide C5;mtv
+vide C5b;mtv
+3 lectiones
+
+[Name]
+Balduíni
 
 [Oratio]
 Deus, qui per beátum Balduínum, Abbátem, Ecclésiam tuam mirabíliter illustráre dignátus es: * concéde nobis fámulis tuis: § ut, quem Patrónum venerámur in terris, intercessórem habére mereámur in cœlis.
 $Per Dominum
 
+[Lectio1]
+@Commune/C5
+
+[Lectio2]
+Balduínus nóbili génere ortus, Rainárdi, Cassinénsis Abbátis ac sanctæ Románæ Ecclésiæ Cardinális frater germánus, mónachus Clarævallénsis, sancti Patris Bernárdi discípulus, et ab eo speciáli amóris prærogatíva diléctus, vir fuit singulári sanctitátis opinióne célebris‚ atque ab eódem sancto Doctóre Monastério sancti Pastóris‚ Ordinis Cisterciénsis in diœcési Reatína præféctus. Postquam beátus Abbas decem annos illud Cœnóbium rexísset, ac piíssimis móribus et Angélicæ conversatiónis exémplo mónachos suæ curæ commíssos informásset, sanctis opéribus et miráculis clarus ad cœlos evolávit, anno salútis millésimo centésimo quadragésimo, et in Cathedráli Reatína honorifice sepúltus, summa veneratióne cólitur.
+
+[Responsory2]
+@CommuneM/C5:Responsory3
+
+[Lectio3]
+Extat officiosíssima sancti Bernárdi Abbátis epístola ad beátum Balduínum‚ tunc recénter ad Itáliam transmíssum, in qua hæc inter ália habet sanctus Pater: Sicut mater únicum amat fílium, ita te diligébam hæréntem láteri meo, placéntem cordi meo. Díligam et abséntem ne solátium meum ex te, et te non vídear dilexísse. Eras pernecessárius mihi; atque hinc vel máxime claret, quam sincére te díligam. Hódie nempe non te caruíssem, si quæsivíssem quæ mea sunt: nunc autem vides, quod, spretis utilitátibus meis, tuis compéndiis non invídi, ponens te útique ibi, unde aliquándo transponáris super ómnia bona Dómini tui.
+
+[Responsory3]
+@CommuneM/C5:Responsory12

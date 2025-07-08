@@ -3,12 +3,55 @@
 [Rank]
 sv. Marie Magdalény, Kajícnice;;MM. maj.;;5.1;;ex C7a
 
+[Name]
+Marie Magdalény
+
 [Ant Vespera]
 Mé srdce plane, * toužím vidět svého Pána; hledám, ale nenalézám, kam jej položili, alleluja.;;109
 Alleluja, * koho hledáš, ženo? Alleluja! Živého mezi mrtvými? Alleluja, alleluja.;;112
 Alleluja, * neplač, Maria, alleluja: Pán vstal z mrtvých, alleluja, alleluja.;;121
 Maria tedy * pomazala nohy Ježíšovy, a utřela je svými vlasy, a dům byl naplněn vůní masti.;;126
 Přišla Maria * a zvěstovala učedníkům: „viděla jsem Pána!” Alleluja.
+
+[Responsory1]
+R. Marie Magdaléna a druhá Marie vyšly za úsvitu ke hrobu, a Anděl jim řekl: Ten, kterého hledáte, zde není, vstal z mrtvých jak řekl,
+* Jde před vámi do Galileje, a tam jej uvidíte.
+V. Rychle běžte a řekněte jeho učedníkům, a Petrovi, že Pán vstal z mrtvých;
+R. Jde před vámi do Galileje, a tam jej uvidíte.
+
+[Responsory4]
+R. Když přešla Sobota, Marie Magdaléna, a Marie, matka Jakubova, a Salome koupily vonné masti,
+* Aby přišly a pomazaly Ježíše.
+V. A brzo ráno prvný den v týdnu přišly ke hrobu, a slunce již vyšlo;
+R. Aby přišly a pomazaly Ježíše.
+
+[Lectio5]
+@Sancti/07-22:Lectio4:s/Proto se .*//
+
+[Lectio6]
+@Sancti/07-22:Lectio5:s/Milovaného .*//s
+
+[Lectio7]
+@Sancti/07-22:Lectio5:s/.* (Milovaného)/$1/s s/$/~/
+@Sancti/07-22:Lectio6:s/Když však hledáme.*// s/; hledal .* jeho stopy//
+
+[Lectio8]
+@Sancti/07-22:Lectio6:s/.* (Když však hledáme)/$1/
+
+[Lectio12]
+@Sancti/07-22:Lectio9:s/Neměl snad .* čistý.“//
+
+[Responsory9]
+R. Odnesli mého Pána, a nevím, kam jej položili; Anděl jí řekl: 
+* Neplač, Marie, vstal z mrtvých, jak řekl, jde před vámi do Galileje, tam jej uvidíte.
+V. Když tedy plakala, naklonila se, a nahlédla do hrobu; a uviděla dva Anděle bíle oděné, kteří tam seděli, a řekli jí:
+R. Neplač, Marie, vstal z mrtvých, jak řekl, jde před vámi do Galileje, tam jej uvidíte.
+
+[Responsory12]
+R. A brzo ráno první den v týdnu přišly k hrobu,
+* A slunce již vyšlo.
+V. Marie Magdaléna, a Marie, matka Jakubova, a Salome přišly za úsvitu ke hrobu,
+R. A slunce již vyšlo.
 
 [MM Capitulum]
 @Commune/C7a:Capitulum Sexta

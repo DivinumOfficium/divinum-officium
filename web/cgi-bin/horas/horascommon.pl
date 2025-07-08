@@ -1889,7 +1889,6 @@ sub spell_var {
     $t =~ s/(c)([aá]r[ií])(t|ss)/$1h$2$3/gi if $version =~ /cist/i;
     $t =~ s/>aríssim/>haríssim/gi if $version =~ /cist/i;
     $t =~ s/(A|a)b(i|í)ci/$1bj$2ci/gi if $version =~ /cist/i;
-    $t =~ s/§/†/gi if $version =~ /cist/i;
   }
   return $t;
 }
