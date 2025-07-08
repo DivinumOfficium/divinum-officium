@@ -794,7 +794,7 @@ sub replaceNdot {
   if ($name[0]) {
     $name[0] =~ s/[\r\n]//g;
     $s =~ s/N\. .*? N\./$name[0]/;
-    $s =~ s/N\./$name[0]/;
+    $s =~ s/N\./$name[0]/g;
   }
   return $s;
 }

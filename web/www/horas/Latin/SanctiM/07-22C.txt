@@ -5,6 +5,10 @@ S. Mariæ Magdalenæ Pœnitentis;;MM. maj.;;4;;ex C7a
 
 [Rule]
 Antiphonas horas
+12 lectiones
+
+[Name]
+Maríæ Magdalénæ
 
 [Ant Vespera]
 Ardens est cor meum, * desídero vidére Dóminum meum: quæro, et non invénio, ubi posuérunt eum, allelúia.;;109
@@ -18,6 +22,106 @@ Venit María * núntians discípulis, quia vidi Dóminum, allelúia.
 
 [Ant 1]
 @Tempora/Pasc0-4:Ant 2
+
+[Ant Matutinum]
+@Commune/C6::9:s/;;97/;;8/
+@CommuneM/C6::2-5
+@CommuneM/C6::8:s/;;86/;;47/
+@CommuneM/C6::10:s/;;96/;;84/
+@CommuneM/C6:Ant Vespera:3:s/;;121/;;86/
+@CommuneM/C6:Ant 2:s/$/;;95/
+@CommuneM/C6::12:s/;;98/;;96/
+@Tempora/Quad5-4:Ant 2:s/$/;;97/
+@Tempora/Quad5-4:Ant 3C:s/$/;;98/
+@Tempora/093-5:Ant 2:s/$/;;249;250;251/
+
+[Lectio1]
+@SanctiM/07-22
+
+[Lectio2]
+@SanctiM/07-22
+
+[Lectio3]
+@SanctiM/07-22
+
+[Lectio4]
+@SanctiM/07-22
+
+[Responsory1]
+R. María Magdaléne, et áltera María ibant dilúculo ad monuméntum, et dicit illis Angelus: Quem quǽritis non est hic, surréxit sicut locútus est:
+* Præcédet vos in Galilǽam, ibi eum vidébitis.
+V. Cito eúntes dícite discípulis ejus, et Petro, quia surréxit Dóminus:
+R. Præcédet vos in Galilǽam, ibi eum vidébitis.
+
+[Responsory2]
+@CommuneM/C6:Responsory1
+
+[Responsory3]
+@CommuneM/C6:Responsory2
+
+[Responsory4]
+R. Dum transísset Sábbatum, María Magdaléne, et María Jacóbi, et Salóme emérunt arómata,
+* Ut veniéntes úngerent Jesum.
+V. Et valde mane una Sabbatórum véniunt ad monuméntum, orto jam sole:
+R. Ut veniéntes úngerent Jesum.
+
+[Lectio5]
+@Sancti/07-22:Lectio4:s/Unde .*//
+
+[Lectio6]
+@Sancti/07-22:Lectio5:s/Diléctum .*//s
+
+[Lectio7]
+@Sancti/07-22:Lectio5:s/.* (Diléctum )/$1/ s/$/~/
+@Sancti/07-22:Lectio6:s/Quæréntes.*// s/; per .* exquírat//
+
+[Lectio8]
+@Sancti/07-22:Lectio6:s/.* (Quæréntes)/$1/
+
+[Responsory5]
+@CommuneM/C6:Responsory3
+
+[Responsory6]
+@CommuneM/C6:Responsory11
+
+[Responsory7]
+@CommuneM/C6:Responsory5
+
+[Responsory8]
+@CommuneM/C7
+
+[Lectio9]
+@SanctiM/07-22
+
+[Lectio10]
+@SanctiM/07-22
+
+[Lectio11]
+@SanctiM/07-22
+
+[Lectio12]
+@Sancti/07-22:Lectio9:s/Hæc enim .* mundus sum.//
+
+[Responsory9]
+R. Tulérunt Dóminum meum, et néscio, ubi posuérunt eum: ait ei Angelus: 
+* Noli flére, Maria, surréxit sicut dixit, præcédet vos in Galilǽam, ibi eum vidébitis.
+V. Dum ergo fleret, inclinávit se, et prospéxit in monuméntum: et vidit duos Angelos in albis, sedéntes, qui dicunt ei.
+R. Noli flére, Maria, surréxit sicut dixit, præcédet vos in Galilǽam, ibi eum vidébitis.
+
+[Responsory10]
+@CommuneM/C6
+
+[Responsory11]
+@CommuneM/C6:Responsory12
+
+[Responsory12]
+R. Et valde mane una Sabbatórum véniunt ad monuméntum,
+* Orto jam sole.
+V. María Magdaléne, et María Jacóbi, et Salóme venérunt dilúculo ad monuméntum,
+R. Orto jam sole.
+
+[Evangelium]
+@Tempora/Quad5-4
 
 [MM Capitulum]
 @Commune/C7a:Capitulum Sexta
