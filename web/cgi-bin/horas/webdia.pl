@@ -495,6 +495,7 @@ sub setcell {
   my $text = shift;
   my $lang = shift;
   my $width = ($only) ? 100 : 50;
+  my $fontcolor = "black";
 
   return unless ($text && $text !~ /^[_\s]+$/);
   $text = resolve_refs($text, $lang);
@@ -516,6 +517,8 @@ sub setcell {
 
   suppress_alleluia(\$text) if ($dayname[0] =~ /Quadp|Quad[1-5]|Quad6-[0-5]/i && ($missa || !Septuagesima_vesp()));
 
+  if (our $whitebground) { $fontcolor = "white"; }
+
   $text =~ s/\<br\/\>\s*\<br\/\>/\<br\/\>/ig;
   if ($lang =~ /Latin/i) { $text = spell_var($text); }
 
@@ -527,14 +530,17 @@ sub setcell {
 
   # $text =~ s/\{\:.*?\:\}(<br/>)*\s*//g;
   $text =~ s/\{\:.*?\:\}//sg;
-  $text =~ s/\`//g;                                      #`
-  $text =~ s/\s([»!?;:])/&nbsp;$1/g;                     # no-break space before punctutation (mostly French)
+  $text =~ s/\`//g;                     #`
+  $text =~ s/\s([»!?;:])/&nbsp;$1/g;    # no-break space before punctutation (mostly French)
+  $text =~ s/\s([*§†])/&nbsp;$1/g
+    if $version =~ /cist/i;             # no-break space before break characters (style of Cistercian books)
   $text =~ s/«\s/«&nbsp;/g unless $lang eq 'Deutsch';    # no-break space after begin quote
   $text =~ s/\s\&\s/ &amp; /;                            # HTML - Ampersand;
   $text =~
     s/↊|\&\#x218a\;/<span style='color:grey; display:inline-block; transform: rotate(180deg) translate(-40%, 15%);'>2<\/span><span style='color:grey; display:inline-block; transform: translate(-100%, 16%);'>.<\/span>/gu;
   $text =~
-    s{§|†}{<svg viewBox="-10 0 547 800" style="height: 0.8em;"><path d="M139,258C90,258 36,230 36,175C36,149 64,103 94,103C109,103 120,108 131,119C141,129 149,137 155,144C173,165 225,170 251,170C289,170 330,161 374,144L462,110C463,111 464,113 464,115C464,120 459,128 449,139C437,152 420,169 399,188C306,272 250,332 232,367C215,400 206,428 206,451C206,501 252,514 293,514C371,514 439,453 475,388C492,405 501,415 501,418C484,468 456,511 417,547C371,584 327,604 285,606C279,606 273,606 267,607C198,607 150,588 121,550C102,525 92,499 92,472C92,437 109,400 144,363C214,289 273,237 324,208C309,213 296,218 286,222C227,246 178,258 139,258ZM263,773C228,773 200,745 200,710C200,674 227,647 263,647C299,647 325,675 325,710C325,744 298,773 263,773Z"/></svg>}gu if $version =~ /cist/i;
+    s{§|†}{<svg viewBox="-10 0 547 800" style="height: 0.8em;"><path fill="$fontcolor" d="M139,258C90,258 36,230 36,175C36,149 64,103 94,103C109,103 120,108 131,119C141,129 149,137 155,144C173,165 225,170 251,170C289,170 330,161 374,144L462,110C463,111 464,113 464,115C464,120 459,128 449,139C437,152 420,169 399,188C306,272 250,332 232,367C215,400 206,428 206,451C206,501 252,514 293,514C371,514 439,453 475,388C492,405 501,415 501,418C484,468 456,511 417,547C371,584 327,604 285,606C279,606 273,606 267,607C198,607 150,588 121,550C102,525 92,499 92,472C92,437 109,400 144,363C214,289 273,237 324,208C309,213 296,218 286,222C227,246 178,258 139,258ZM263,773C228,773 200,745 200,710C200,674 227,647 263,647C299,647 325,675 325,710C325,744 298,773 263,773Z"/></svg>}gu
+    if $version =~ /cist/i;
   $text =~ s/§/†/gi if $version !~ /cist/i;
 
   if ($Ck) {
