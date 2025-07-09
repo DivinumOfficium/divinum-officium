@@ -36,7 +36,7 @@ sub headline {
     if ($vers =~ /1962/);
   $output .=
     "<H2><FONT COLOR='RED'>Please note that 'Ad Matutinum' for this version ($vers) is still incomplete and under construction.</FONT></H2>\n"
-    if ($vers =~ /1617|1930/ || ($vers =~ /Cist/i && ($month < 6 || $month > 6))) && $hora =~ /Matutinum/;
+    if ($vers =~ /1617|1930/ || ($vers =~ /Cist/i && ($month < 6 || $month > 7))) && $hora =~ /Matutinum/;
 
   if ($variant eq 'P') {
     $output .= par_c(<<"PrintTag");

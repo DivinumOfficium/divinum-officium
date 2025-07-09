@@ -17,12 +17,20 @@
 
 [Lectio8]
 @Sancti/07-25:Lectio6
+(sed rubrica cisterciensis)
+@Sancti/07-25:Lectio6:s/, ubi summa .* natális// s/, qui trans.* ipse/; ipse tamen/ s/déderit/dedit/
 
 [Lectio9]
 @Sancti/07-25:Lectio7:s/Quod ígitur.*//s
+(sed rubrica cisterciensis)
+@Sancti/07-25:Lectio7:s/Hac enim.*//s
 
 [Lectio10]
 @Sancti/07-25:Lectio7:s/.* Quod ígitur/Quod ígitur/s s/$/~/
+@Sancti/07-25:Lectio8:s/Volébant .*//s
+
+[Lectio10] (rubrica cisterciensis)
+@Sancti/07-25:Lectio7:s/.* Vólumus/Vólumus/s s/$/~/
 @Sancti/07-25:Lectio8:s/Volébant .*//s
 
 [Lectio11]
@@ -30,3 +38,5 @@
 
 [Lectio12]
 @Sancti/07-25:Lectio9
+(sed rubrica cisterciensis)
+@Sancti/07-25:Lectio9:s/Pérspice autem.*//
