@@ -17,6 +17,12 @@ Annæ
 Deus, qui beátæ Annæ grátiam conferre dignátus es, ut Genitrícis Unigéniti Fílii tui Mater éffici mererétur, § concéde propítius: * ut cujus solémnia celebrámus, § ejus apud te patrocíniis adjuvémur.
 $Per eumdem
 
+[Responsory Vespera 1] (rubrica altovadensis)
+R. Beáta progénies, unde María nata est.
+* O quam gloriósa est mater, quæ cæli Regínam génuit!
+V. Regáli ex progénie María exórta refúlget.
+R. O quam gloriósa est mater, quæ cæli Regínam génuit!
+
 [Hymnus Vespera]
 v. Orbis exúltans célebret hoc festum, 
 Prósequens Annam matrem Matris Christi, 
@@ -47,9 +53,6 @@ Amen.
 [Ant 1]
 Gaude, * mater magnæ prolis, ex te enim procéssit rútillans stella summi solis.
 
-[Invit]
-Christum regem, Filium David, * Venite adoremus.
-
 [Hymnus Matutinum]
 v. Fœcúnda radix Isai 
 Florem pudícum gérminat, 
@@ -72,21 +75,18 @@ Cum Spíritu Paráclito,
 Et nunc, et in perpétuum.
 Amen.
 
-[Lectio4]
-Sermo sancti Leónis, Papæ
-!#
-Semper quidem, dilectíssimi, divérsis modis multísque mensúris humáno géneri bónitas divína consúluit, et plúrima providéntiæ suæ múnera ómnibus retro sǽculis cleménter impértiit; sed in novíssimis tempóribus omnem abundántiam sólitæ benignitátis excéssit, quando in Christo, ipsa ad peccatóres misericórdia, ipsa ad errántes véritas, ipsa ad mórtuos vita descéndit: ut Verbum illud coætérnum et coæquále Genitóri in unitátem Deitátis suæ natúram nostræ humilitátis assúmeret, et Deus de Deo natus, idem étiam homo de hómine nascerétur.  Hinc idem Dóminus per Isaíam: Ecce virgo, inquit, in útero accípiet, et páriet fílium, et vocábitur nomen ejus Emmánuel: quod interpretátur, Nobíscum Deus. Et íterum: Exiet virga de radíce Jesse, et flos de radíce ejus ascéndet. In qua virga non dúbie beáta Virgo María prædícta est, quæ de Jesse et David stirpe progénita, et Spíritu Sancto fecundáta, novum florem carnis humánæ, útero quidem matérno, sed partu est eníxa virgíneo.
+[Lectio5]
+@Sancti/07-26:Lectio4:s/Mérito.*//
 
-[Responsory1]
-R. O clara stirps Davídica, micans quasi jubar solis
-* Ex qua prodiérunt Jóachim et Anna, mérito fulgéntes præcípuo.
-V. Nóbilis vere dignáque progénies, univérso mundo valde gratiósa.
-R. Ex qua prodiérunt Jóachim et Anna, mérito fulgéntes præcípuo.
+[Lectio6]
+@Sancti/07-26:Lectio4:s/.*(Mérito)/$1/s
 
-[MM Capitulum]
-@:Capitulum Sexta
-_
-@Commune/C3:Responsory Tertia:s/.*_.//s
+[Lectio7]
+@Sancti/07-26:Lectio5:s/Cónsonam.*//
+
+[Lectio8]
+@Sancti/07-26:Lectio5:s/.*(Cónsonam)/$1/ s/$/~/
+@Sancti/07-26:Lectio6:s/peperísti;.*/peperísti./
 
 [Hymnus Laudes]
 v. Claræ diéi gáudiis
