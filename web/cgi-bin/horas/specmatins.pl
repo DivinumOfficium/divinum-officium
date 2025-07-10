@@ -893,7 +893,10 @@ sub lectio : ScriptFunc {
     %w = (columnsel($lang)) ? %winner : %winner2;
     my $L9winnerflag = 0;
 
-    if (($w{Rank} =~ /Simplex/i || ($version =~ /1955/ && $rank == 1.5)) && exists($w{'Lectio94'}) && $version !~ /Cist/i) {
+    if ( ($w{Rank} =~ /Simplex/i || ($version =~ /1955/ && $rank == 1.5))
+      && exists($w{'Lectio94'})
+      && $version !~ /Cist/i)
+    {
       setbuild2("Last lectio Commemoratio ex Legenda historica (#94)");
       $w = $w{'Lectio94'};
       $L9winnerflag = 1;

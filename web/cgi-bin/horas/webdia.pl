@@ -535,11 +535,12 @@ sub setcell {
   $text =~ s/\s\&\s/ &amp; /;                            # HTML - Ampersand;
   $text =~
     s/↊|\&\#x218a\;/<span style='color:grey; display:inline-block; transform: rotate(180deg) translate(-40%, 15%);'>2<\/span><span style='color:grey; display:inline-block; transform: translate(-100%, 16%);'>.<\/span>/gu;
-  my $cist_flex = 1;   # 1 .. from Psalterium - 2 .. from Breviarium Cist.
-  # Cistercian flexa from large choir Psalterium/Antiphonale Cisterciense (1952/1903)
+  my $cist_flex = 1;    # 1 .. from Psalterium - 2 .. from Breviarium Cist.
+                        # Cistercian flexa from large choir Psalterium/Antiphonale Cisterciense (1952/1903)
   $text =~
     s{§|†}{<svg viewBox="-10 0 547 800" style="height: 0.8em;"><path fill="currentColor" d="M139,258C90,258 36,230 36,175C36,149 64,103 94,103C109,103 120,108 131,119C141,129 149,137 155,144C173,165 225,170 251,170C289,170 330,161 374,144L462,110C463,111 464,113 464,115C464,120 459,128 449,139C437,152 420,169 399,188C306,272 250,332 232,367C215,400 206,428 206,451C206,501 252,514 293,514C371,514 439,453 475,388C492,405 501,415 501,418C484,468 456,511 417,547C371,584 327,604 285,606C279,606 273,606 267,607C198,607 150,588 121,550C102,525 92,499 92,472C92,437 109,400 144,363C214,289 273,237 324,208C309,213 296,218 286,222C227,246 178,258 139,258ZM263,773C228,773 200,745 200,710C200,674 227,647 263,647C299,647 325,675 325,710C325,744 298,773 263,773Z"/></svg>}gu
     if $version =~ /cist/i && $cist_flex != 2;
+
   # Cistercian flexa from Breviarium Cisterciense (1951)
   $text =~
     s{§|†}{<svg viewBox="-10 0 661 1000" style="height: 1em; vertical-align: middle;"><path fill="currentColor" d="M130 634c-13 -26 -20 -52 -19 -79c0 -109 72 -168 157 -226c74 -46 149 -96 209 -159c-56 29 -135 44 -238 44c-41 0 -106 -22 -122 -62c-4 -10 -3 -21 2 -34c6 -15 18 -32 36 -32c12 0 36 10 47 15c14 6 28 13 44 19c35 20 93 31 133 31c46 0 90 -17 129 -40 c5 -3 8 -4 11 -5c1 -1 3 -1 4 -1c4 0 6 4 8 11c3 11 2 19 -3 25c-53 64 -111 129 -174 183c-21 20 -40 38 -56 56c-48 45 -88 107 -88 174c0 82 40 173 135 173c59 0 91 -54 117 -100c4 -7 6 -13 8 -21c6 -12 8 -26 8 -40c1 -9 1 -15 2 -20c0 -4 0 -11 -2 -21 c0 -10 -1 -16 -2 -19c0 -3 -1 -9 -2 -20s-3 -17 -3 -18c35 19 59 48 69 87c5 19 5 39 0 61c-11 50 -52 103 -95 128c-33 15 -65 20 -101 20c-56 0 -123 -25 -163 -64c-21 -18 -38 -41 -51 -66zM293 854c0 -27 24 -48 50 -50c28 0 47 23 49 50c0 26 -18 49 -45 49 c-30 0 -54 -17 -54 -49z"/></svg>}gu
