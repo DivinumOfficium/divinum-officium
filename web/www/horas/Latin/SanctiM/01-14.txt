@@ -1,1 +1,24 @@
 @Sancti/01-14
+
+[Lectio5]
+@Sancti/01-14:Lectio4:s/Itaque.*//s
+
+[Lectio6]
+@Sancti/01-14:Lectio4:s/.*(Itaque)/$1/s s/$/~/
+@Sancti/01-14:Lectio5:s/Verum.*//s
+
+[Lectio7]
+@Sancti/01-14:Lectio5:s/.*(Verum)/$1/s
+
+[Lectio8]
+@Sancti/01-14:Lectio6beginning
+
+[Lectio9]
+@Commune/C4a:Lectio7 in 2 loco
+
+[Lectio10]
+@Commune/C4a:Lectio8 in 2 loco:s/$/~/
+@Commune/C4a:Lectio9 in 2 loco:s/Verum.*//s
+
+[Lectio11]
+@Commune/C4a:Lectio9 in 2 loco:s/.*(Verum)/$1/s

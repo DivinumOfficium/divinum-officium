@@ -368,6 +368,10 @@ sub occurrence {
     %saint = %{setupstring('Latin', $sname)};
     $srank = $saint{Rank};
     @srank = split(";;", $srank);
+  } elsif ($dayname[0] =~ /Adv|Quad/ && $srank[2] > 6 && $saint{Rule} !~ /Patronus/) {
+
+    # Making sure Duplex I. classis only outranks Major Sundays (after 1897) or Ferias when it is allowed by the rubrics
+    $srank[2] = 6.01;
   }
 
   if ($tname =~ /Epi1\-0/i && $srank[2] == 5.6) {
@@ -596,7 +600,7 @@ sub occurrence {
       $laudesonly = ($missa) ? '' : ($climit1960 == 2) ? ' ad Laudes tantum' : '';
     }
 
-    if ($winner =~ /Epi1\-0a/ && ($hora =~ /laudes/i || $vespera == 3)) {
+    if ($winner =~ /Epi1\-0a/ && ($hora =~ /laudes/i || ($vespera == 3 && $day != 12))) {
       unshift(@commemoentries, 'Sancti/01-06.txt');
       $commemoratio = 'Sancti/01-06.txt';
       $comrank = 5.6;
@@ -785,6 +789,11 @@ sub concurrence {
 
     # after Divino Afflatu, the Sundays from Septuag to Judica and in Albis gave way at 2nd Vespers in concurrence to a Duplex II. cl. (Cist: MM. maj.)
     $rank = $wrank[2] = $version =~ /divino/i ? 4.9 : 3.9;
+  } elsif ($wrank[0] =~ /In Octava/i && ($rank > 5 || $wrank[0] =~ /Asc|Nat|Cord/i)) {
+
+    # Dies Octavae privilegiatae (post-Divino) and Octavae Festorum Domini, si primaria fuerint et solemniora (pre-Divino)
+    # give way at 2nd Vespers to Duplex I. et II. classis only!
+    $rank = $wrank[2] = 4.99;
   }
 
   if ( $cwrank[0] =~ /Dominica/i
