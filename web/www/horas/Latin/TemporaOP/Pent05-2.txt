@@ -1,0 +1,22 @@
+@Tempora/Pent05-2
+
+[Lectio1]
+@Tempora/Pent04-0::1
+@Tempora/Pent04-1:Lectio2
+
+[Responsory1]
+@TemporaOP/Pent01-2
+
+[Lectio2]
+@Tempora/Pent04-1:Lectio3:s/ Erit.*//
+
+[Responsory2]
+@TemporaOP/Pent03-2:Responsory2
+
+[Lectio3]
+!1 Reg 17:36-37
+36 Erit ígitur et Philisthǽus hic incircumcísus quasi unus ex eis. Nunc vadam, et áuferam oppróbrium pópuli: quóniam quis est iste Philisthǽus incircumcísus, qui ausus est maledícere exercítui Dei vivéntis?
+37 Et ait David: Dóminus qui erípuit me de manu leónis, et de manu ursi, ipse me liberábit de manu Philisthǽi hujus.
+
+[Responsory3]
+@TemporaOP/Pent03-2:Responsory3
