@@ -1,0 +1,13 @@
+[Lectio5]
+@Sancti/08-20:Lectio4:s/ As a monk.*//
+
+[Lectio6]
+@Sancti/08-20:Lectio4:s/.* (?=As a monk)// s/$/~/
+@Sancti/08-20:Lectio5:s/ Being.*//
+
+[Lectio7]
+@Sancti/08-20:Lectio5:s/.* (?=Being)// s/$/~/
+@Sancti/08-20:Lectio6:1 s/ In .*//
+
+[Ant 3] (nisi rubrica 1617)
+@Commune/C4a:Ant 1:s/N\./Bernard/

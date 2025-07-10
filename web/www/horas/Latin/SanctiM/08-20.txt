@@ -1,6 +1,9 @@
 @Sancti/08-20
 
-[Hymnus Vespera]
+[Rule] (nisi rubrica 1963)
+12 lectiones
+
+[Hymnus Vespera] (rubrica 1930)
 v. Jam Regína discúbuit,
 Sedens post Unigénitum:
 Nardus odórem tríbuit,
@@ -37,10 +40,52 @@ Et Bernárdi felícitas
 Manent in cæli cúria.
 Amen.
 
-[Responsory1]
+[Responsory1] (rubrica 1963)
 @Commune/C4a:Responsory8
 
-[Hymnus Laudes]
+[Lectio1] (rubrica 1617)
+@CommuneM/C5:Lectio1 in 2 loco
+
+[Lectio2] (rubrica 1617)
+@CommuneM/C5:Lectio2 in 2 loco
+
+[Lectio3] (rubrica 1617)
+@CommuneM/C5:Lectio3 in 2 loco
+
+[Lectio4] (rubrica 1617)
+@CommuneM/C5:Lectio4 in 2 loco
+
+[Lectio5]
+@Sancti/08-20:Lectio4:s/ Mónachus.*//
+
+[Lectio6]
+@Sancti/08-20:Lectio4:s/.* (?=Mónachus)// s/$/~/
+@Sancti/08-20:Lectio5:s/ Abbas.*//
+
+[Lectio7]
+@Sancti/08-20:Lectio5:s/.* (?=Abbas)// s/$/~/
+@Sancti/08-20:Lectio6:1 s/ In .*//
+
+[Lectio8]
+@Sancti/08-20:Lectio6:s/.* (?=In )//
+
+[Lectio8] (rubrica 1617)
+@Sancti/08-20:Lectio6:1 s/.* (?=In )// s/~//
+
+[Lectio9] (rubrica 1617)
+@SanctiM/07-11M::s/, et cétera.*/./
+
+[Lectio10] (rubrica 1617)
+@SanctiM/07-11M
+
+[Lectio11] (rubrica 1617)
+@SanctiM/07-11M::s/ Et .*//
+
+[Lectio12] (rubrica 1617)
+@SanctiM/07-11M:Lectio11:s/.* (?=Et )// s/$/~/
+@SanctiM/07-11M::s/: ejus.*/./
+
+[Hymnus Laudes] (rubrica 1930)
 v. Lacte quondam profluéntes,
 Ite, montes vos procul:
 Ite, colles, fusa quondam
@@ -84,8 +129,8 @@ Ut fuit, nunc et per ævum
 Compar semper glória.
 Amen.
 
-[Ant 2]
+[Ant 2] (rubrica 1930)
 Bernárdus, * Doctor mellífluus, amícus Sponsi, Vírginis Matris præco miríficus, in clara valle pastor effúlsit claríssimus.
 
-[Ant 3]
+[Ant 3] (nisi rubrica 1617)
 @Commune/C4a:Ant 1:s/N\./Bernárde/
