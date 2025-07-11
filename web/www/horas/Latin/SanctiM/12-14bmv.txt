@@ -1,0 +1,49 @@
+@Sancti/12-14bmv
+
+[Rule]
+@SanctiM/12-09bmv
+(feria 4) no93
+(nisi feria 3)No secunda vespera
+
+[Ant Matutinum_]
+@Sancti/12-08:Ant Matutinum:7 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+@Sancti/12-08:Ant Matutinum:8 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+
+[Ant Matutinum] 
+@:Ant Matutinum_
+(sed feria 3 aut feria 5 aut feria 6)
+@SanctiM/12-12bmv:Ant Matutinum_
+
+[Lectio1]
+Ex Bulla dogmatica Pii Papæ IX
+_
+Hunc eximium singularemque Virginis triumphum, excellentissimamque innocentiam, puritatem, sanctitatem, eiusque ab omni peccati labe integritatem, atque ineffabilem cælestium omnium gratiarum, virtutum, ac privilegiorum copiam, et magnitudinem iidem Patres videiunt tum in arca illa Noe, quæ divinitus constituta a communi totius mundi naufragio plane salva et incolumis
+evasit; tum in scala illa, quam de terra ad cælum usque pertingere vidit Iacob, cuius gradibus Angeli Dei ascendebant et descendebant, cuiusque vertici ipse initebatur Dominus, tum in rubo illo, quem in loco sancto Moyses undique ardere ac inter crepitantes ignis flammas non iam comburi aut iacturam vel minimam pati, sed pulchre virescere ac florescere conspexit; tum in illa inexpugnabili turre a facie inimici, ex qua mille clypei pendent, omnisque armatura fortium; tum in horto concluso, qui nescit violari neque corrumpi ullis insidiarum fraudibus; tum in corusca illa Dei civitate, cuius fundamenta in montibus sanctis; tum in augustissimo illo Dei templo, quod divinis refulgens splendoribus plenum est gloria Domini; tum in aliis eiusdem generis omnino plurimis, quibus excelsa in Deiparæ dignitatem, eiusque illibatam innocentiam, et nulli umquam nævo obnoxiam sanctitatem insigniter prænunciatam fuisse Patres tradiderunt.
+
+[Lectio2]
+Ad hanc eandem divinorum munerum veluti summam, originalemque Virginis, de qua natus est Iesus, integritatem describendam iidem Prophetarum adhibentes eloquia non aliter ipsam augustam Virginem concelebrarunt, ac uti columbam mundam, et sanctam Ierusalem, et excelsum Dei thronum, et arcam sanctificationis et domum, quam sibi æterna ædificavit Sapientia, et Reginam illam, quæ deliciis affluens et innixa super Dilectum suum, ex ore Altissimi providit omnino perfecta, speciosa ao penitus cara Deo, et nullo umquam labis nævo maculata.
+
+[Lectio3]
+Cum vero ipsi Patres, Ecclesiæque scriptores animo menteque reputarent, beatissimam Virginem ab Angelo Giabriele sublimissimam Dei Matris dignitatem ei nuntiante, ipsius Dei nomine et iussu gratia plenam fuisse nuncupatam, docuerunt hac singulari sollemnique salutatione numquam alias audita ostendi, Deiparam fuisse omnium divinarum gratiarum sedem, omnibusque divini Spiritus charismatibus exornatam, immo eorundem charismatum infinitum prope thesaurum, abyssumque inexhaustam, adeo ut numquam maledicto obnoxia, et una cum Filio perpetuæ benedictionis particeps ab Elisabeth divino acta Sipiritu audire meruerit benedicta tu inter mulieres, et benedictus fructus ventris tui. Hinc non luculenta minus quam concors eorumdem sententia, gloriosissimam Virginem, cui fecit magna qui potens est, ea cælestium omnium ineffabile Dei miraculum, immo omnium miraculorum apex, ac digna Dei mater exstiterit, et ad Deum ipsum, pro ratione creatæ naturæ, quam proxime accedens omnibus, qua humanis, qua angelicis præconiis celsior evaserit.
+
+[Responsory1]
+@SanctiM/12-09bmv
+
+[Responsory2]
+@SanctiM/12-09bmv
+
+[Responsory3]
+@SanctiM/12-09bmv
+
+[MM Capitulum]
+@SanctiM/12-09bmv

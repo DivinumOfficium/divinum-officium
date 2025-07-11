@@ -1,0 +1,45 @@
+@Sancti/12-10bmv
+
+[Rule]
+@SanctiM/12-09bmv
+
+[Ant Matutinum_]
+@Sancti/12-08:Ant Matutinum:3 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+@Sancti/12-08:Ant Matutinum:4 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+
+[Ant Matutinum]
+@:Ant Matutinum_
+(sed feria 2)
+@SanctiM/12-09bmv
+
+[Lectio1]
+@Sancti/12-10bmv:Lectio4:s/$/~/
+@Sancti/12-10bmv:Lectio5:s/Enim.*//s
+
+[Lectio2]
+@Sancti/12-10bmv:Lectio5:s/.*(Enim)/$1/s
+
+[Lectio3]
+@Sancti/12-10bmv:Lectio6
+
+[Responsory1]
+@SanctiM/12-09bmv
+
+[Responsory2]
+@SanctiM/12-09bmv
+
+[Responsory3]
+@SanctiM/12-09bmv
+
+[MM Capitulum]
+@SanctiM/12-09bmv
