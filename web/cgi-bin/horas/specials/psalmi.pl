@@ -183,8 +183,9 @@ sub psalmi_minor {
 
     if (!$w
       && $rule !~ /Psalmi\s*(?:minores)*\s*ex Psalterio/i
-      && !($version =~ /1955|196/ && $rank < 6 && $dayofweek > 0))
+      && !($version =~ /1955|1960/ && $rank < 6 && $dayofweek > 0))
     {
+      #
       # Cum nostra hac ætate limited the proper Antiphones from Prime to None to Duplex I. cl.
       ($w, $c) = getanthoras($lang);
     }
