@@ -421,7 +421,7 @@ sub legend_monastic {
 
   $str =~ s/&teDeum\s*//;
   $str =~ s/^(?=\p{Letter})/v. /;
-  push(@s, $str, '$Tu autem', '_');
+  push(@s, '#Lectio unica', $str, '$Tu autem', '_');
 
   my $resp = '';
 
