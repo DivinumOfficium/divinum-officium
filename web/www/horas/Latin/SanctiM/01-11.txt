@@ -2,7 +2,7 @@
 
 [Rule]
 @SanctiM/01-07
-(die Baptismatis Domini)No secunda vespera
+(die Baptismatis Domini aut feria 7) No secunda vespera
 
 [Ant Matutinum]
 @Sancti/01-06:Ant Matutinum:8 s/;;\d+//
