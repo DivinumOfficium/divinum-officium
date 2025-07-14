@@ -270,7 +270,11 @@ sub oratio {
           if ($ic !~ /^!/) { $ic = "!$ic"; }
           $ccind++;
           my $key = ($ic =~ /$sundaystring/i)
-            ? ($version !~ /trident/i ? 3000 : 7100)    # Sundays are all privilegde commemorations under DA
+            ? (
+              $version !~ /trident(?!.*Altovadensis)/i
+              ? 3000
+              : 7100
+            )    # Sundays are all privilegde commemorations under DA
             : ($ic =~ /$octavestring/i) ? $ccind + 7900
             : $ccind + 9900;
           $cc{$key} = $ic;
@@ -313,14 +317,15 @@ sub oratio {
 
           if ($version =~ /trident/i && $version !~ /1906/) {
             $key =
-              $cr[0] =~ /Vigilia Epi|$sundaystring/i
+                ($cr[0] =~ /$sundaystring/i || $cwinner =~ /01-05\.txt/)
               ? ($version =~ /altovadensis/i ? 4900 : 2900)
               : $cr[2] * 1000;
           } else {
-            $key = 9000;    # concurrent office comes first under DA and also 1906
+            $key =
+              $c{Rule} =~ /infra Octavam Epi/i ? 5600 : 9000;    # concurrent office comes first under DA and also 1906
           }
 
-          $key = 10000 - $key;    # reverse order
+          $key = 10000 - $key;                                   # reverse order
           $ccind++;
           $cc{$key} = $c;
           setbuild2("Commemoratio: $key");
@@ -379,7 +384,7 @@ sub oratio {
             $ccind++;
             $key =
                 ($ic =~ /$sundaystring/i)
-              ? ($version !~ /trident/i ? 3000 : 7100)
+              ? ($version !~ /Trident(?!.*Altovadensis)/i ? 3000 : 7100)
               : $ccind + 9900;    # Sundays are all privileged commemorations under DA
             $cc{$key} = $ic;
             setbuild2("Commemorated from Concurrent: $key");
@@ -413,9 +418,9 @@ sub oratio {
         if ($c) {
           my @cr = split(";;", $c{Rank});
 
-          if ($cr[0] =~ /Vigilia Epi|$sundaystring/i) {
+          if ($cr[0] =~ /$sundaystring/i || $commemo =~ /01-05\.txt/) {
             $key =
-              ($version !~ /trident/i || ($version =~ /1906/ && $cr[2] > 5))
+              ($version !~ /trident(?!.*Altovadensis)/i || ($version =~ /1906/ && $cr[2] > 5))
               ? 7000
               : 2900;    # under DA, all Sundays, in 1906, priviliged Sundays, are all privilegded commemorations
           } else {
@@ -486,7 +491,7 @@ sub oratio {
               if ($ic !~ /^!/) { $ic = "!$ic"; }
               $ccind++;
               $key =
-                  ($ic =~ /$sundaystring/i) ? ($version !~ /trident/i || $version =~ /altovadensis/i ? 3000 : 7100)
+                  ($ic =~ /$sundaystring/i) ? ($version !~ /trident(?!.*Altovadensis)/i ? 3000 : 7100)
                 : ($ic =~ /$octavestring/i) ? 7900
                 : $ccind + 9900;    # Sundays are all privilegde commemorations under DA
               $cc{$key} = $ic;
