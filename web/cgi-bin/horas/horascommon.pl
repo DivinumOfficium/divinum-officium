@@ -600,7 +600,9 @@ sub occurrence {
       $laudesonly = ($missa) ? '' : ($climit1960 == 2) ? ' ad Laudes tantum' : '';
     }
 
-    if ($winner =~ /Epi1\-0a/ && ($hora =~ /laudes/i || ($vespera == 3 && $day != 12))) {
+    if ( ($winner =~ /Epi1\-0a/ || ($winner =~ /Epi1\-0/ && $version =~ /altovadensis/i))
+      && ($hora =~ /laudes/i || ($vespera == 3 && $day != 12)))
+    {
       unshift(@commemoentries, 'Sancti/01-06.txt');
       $commemoratio = 'Sancti/01-06.txt';
       $comrank = 5.6;
