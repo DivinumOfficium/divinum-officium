@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/alpine:3.14 as gitinfo
+FROM public.ecr.aws/docker/library/alpine:latest as gitinfo
 
 RUN apk add git
 COPY .git /build/
