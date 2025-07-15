@@ -1,0 +1,39 @@
+@SanctiM/08-10
+
+[Officium]
+@Sancti/08-17t
+
+[Rank]
+@Sancti/08-17t
+
+[Rule]
+12 lectiones
+
+[Oratio]
+@Sancti/08-17t
+
+[Lectio5]
+@Sancti/08-17t:Lectio4
+
+[Lectio6]
+@Sancti/08-17t:Lectio5:s/ In .*//
+
+[Lectio7]
+@Sancti/08-17t:Lectio5:s/.* (?=In )// s/$/~/
+@Sancti/08-17t:Lectio6:s/ Triduum autem.*//
+
+[Lectio8]
+@Sancti/08-17t:Lectio6:s/.* (?=Triduum autem)//
+
+[Lectio9]
+@Sancti/08-17t:Lectio7:s/ Quod si illam.*//
+
+[Lectio10]
+@Sancti/08-17t:Lectio7:s/.* (?=Quod si illam)//s s/$/~/
+@Sancti/08-17t:Lectio8:s/ Enigmati.*//
+
+[Lectio11]
+@Sancti/08-17t:Lectio8:s/.* (?=Enigmati)//
+
+[Lectio12]
+@Sancti/08-17t:Lectio9

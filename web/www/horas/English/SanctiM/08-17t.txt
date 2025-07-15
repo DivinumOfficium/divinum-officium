@@ -1,0 +1,19 @@
+[Lectio6]
+@Sancti/08-17t:Lectio5:s/ During .*//
+
+[Lectio7]
+@Sancti/08-17t:Lectio5:s/.* (?=During )// s/$/~/
+@Sancti/08-17t:Lectio6:s/ These.*//
+
+[Lectio8]
+@Sancti/08-17t:Lectio6:s/.* (?=These)//
+
+[Lectio9]
+@Sancti/08-17t:Lectio7:s/ And thus.*//
+
+[Lectio10]
+@Sancti/08-17t:Lectio7:s/.* (?=And)//s s/$/~/
+@Sancti/08-17t:Lectio8:s/ This.*//
+
+[Lectio11]
+@Sancti/08-17t:Lectio8:s/.* (?=This)//
