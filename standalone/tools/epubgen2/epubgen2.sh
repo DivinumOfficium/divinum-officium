@@ -47,7 +47,7 @@ OPTIONS:
 
    -o PATH     The output directory. Defaults to "output".
 
-   -l LANG     The language for the left side if required. Defaults to Latin.
+   -l LANG     The language for the right side if required. Defaults to Latin.
                 Valid Values: Bohemice Dansk Deutsch English Espanol Francais Italiano Latin Latin-Bea Magyar Polski Polski-Newer Portugues
 
    -b LANG     The base language in which to display the office. Defaults to Latin.

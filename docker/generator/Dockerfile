@@ -3,6 +3,7 @@ FROM        perl:5.28-slim as final
 LABEL maintainer="Stepan Srubar <breviarium@srubarovi.cz>"
 
 # Install packages
+FROM debian:latest
 RUN apt-get update && apt-get install -y \
     libcgi-session-perl \
     bsdmainutils \
