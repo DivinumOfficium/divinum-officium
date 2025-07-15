@@ -1,0 +1,20 @@
+
+[Lectio5]
+@Sancti/08-22t:Lectio4:s/ But.*//
+
+[Lectio6]
+@Sancti/08-22t:Lectio4:s/.* (?=But)//s s/$/~/
+@Sancti/08-22t:Lectio5:s/ Again.*//
+
+[Lectio7]
+@Sancti/08-22t:Lectio5:s/.* (?=Again)//
+
+[Lectio9]
+@Sancti/08-22t:Lectio7:s/ Nor.*//
+
+[Lectio10]
+@Sancti/08-22t:Lectio7:s/.* (?=Nor)//s s/$/~/
+@Sancti/08-22t:Lectio8:s/ But .*//
+
+[Lectio11]
+@Sancti/08-22t:Lectio8:s/.* (?=But)//
