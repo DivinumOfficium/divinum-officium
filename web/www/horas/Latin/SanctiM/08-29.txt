@@ -1,4 +1,74 @@
 @Sancti/08-29
 
+[Rule] (nisi rubrica 196)
+12 lectiones
+
 [Ant 1] (rubrica cisterciensis)
 @:Ant Vespera:3
+
+[Lectio1]
+@SanctiM/06-24
+
+[Lectio2]
+@SanctiM/06-24
+
+[Lectio3]
+@SanctiM/06-24
+
+[Lectio4]
+@SanctiM/06-24
+
+[Responsory4]
+R. Metuébat * Heródes Joánnem,
+* Sciens eum virum justum et sanctum: et custodiébat eum.
+V. Et audíto eo, multa faciébat, et libénter eum audiébat.
+R. Sciens eum virum justum et sanctum: et custodiébat eum.
+
+[Lectio5]
+@Sancti/08-29:Lectio4
+
+[Responsory5]
+@Commune/C2a:Responsory2
+
+[Lectio6]
+@Sancti/08-29:Lectio5:s/Rápitur .*//
+
+[Responsory6]
+@Sancti/08-29:Responsory5
+
+[Lectio7]
+@Sancti/08-29:Lectio5:s/.* (?=Rápitur)// s/$/~/
+@Sancti/08-29:Lectio6:s/ Et, .*//
+
+[Responsory7]
+@CommuneM/C2:Responsory4_
+
+[Lectio8]
+@Sancti/08-29:Lectio6:s/.* (?=Et,)//
+
+[Responsory8]
+@Sancti/08-29:Responsory6
+
+[Lectio9]
+@Sancti/08-29:Lectio7:s/ Factum .*//
+
+[Responsory9]
+@Commune/C2:Responsory5
+
+[Lectio10]
+@Sancti/08-29:Lectio7:s/.* (?=Factum)//s
+
+[Responsory10]
+@Commune/C2:Responsory6
+
+[Lectio11]
+@Sancti/08-29:Lectio8:s/ Vincebat .*//
+
+[Responsory11]
+@CommuneM/C2:Responsory8_
+
+[Lectio12]
+@Sancti/08-29:Lectio9:s/.* (?=Vincebat)//
+
+[Responsory12]
+@Commune/C2:Responsory7
