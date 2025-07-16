@@ -791,7 +791,7 @@ sub concurrence {
 
     # after Divino Afflatu, the Sundays from Septuag to Judica and in Albis gave way at 2nd Vespers in concurrence to a Duplex II. cl. (Cist: MM. maj.)
     $rank = $wrank[2] = $version =~ /divino/i ? 4.9 : 3.9;
-  } elsif ($wrank[0] =~ /In Octava/i && ($rank > 5 || $wrank[0] =~ /Asc|Nat|Cord/i)) {
+  } elsif ($wrank[0] =~ /(?<!Albis )In Octava/i && ($rank > 5 || $wrank[0] =~ /Asc|Nat|Cord/i)) {
 
     # Dies Octavae privilegiatae (post-Divino) and Octavae Festorum Domini, si primaria fuerint et solemniora (pre-Divino)
     # give way at 2nd Vespers to Duplex I. et II. classis only!
