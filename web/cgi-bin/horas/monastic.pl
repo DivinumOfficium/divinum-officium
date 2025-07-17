@@ -308,8 +308,8 @@ sub psalmi_matutinum_monastic {
     my ($ant, $p) = split(/;;/, $psalmi[16]);
     my %w = (columnsel($lang)) ? %winner : %winner2;
 
-    if (exists($w{"Ant Matutinum 3N"})) {
-      my @t = split("\n", $w{"Ant Matutinum 3N"});
+    if (exists($w{'Ant Matutinum 3N'}) || exists($commune{'Ant Matutinum 3N'})) {
+      my @t = split("\n", $w{'Ant Matutinum 3N'} || $commune{'Ant Matutinum 3N'});
       for (my $i = 0; $i <= $#t; $i++) { $psalmi[16 + $i] = $t[$i]; }
       my ($p1);
       ($ant, $p1) = split(/;;/, $psalmi[16]);

@@ -1,0 +1,15 @@
+[Lectio5]
+@Sancti/09-15t:Lectio4:s/ Tyś .*//
+
+[Lectio6]
+@Sancti/09-15t:Lectio4:s/.* (?=Tyś)//s s/$/~/
+@Sancti/09-15t:Lectio5:s/ Przez Ciebie raduje.*//
+
+[Lectio7]
+@Sancti/09-15t:Lectio5:s/.* (?=Przez Ciebie raduje)//
+
+[Lectio9]
+@Sancti/09-15t:Lectio7:s/ Gdy tedy .*//
+
+[Lectio10]
+@Sancti/09-15t:Lectio7:s/.* (?=Gdy tedy)//s

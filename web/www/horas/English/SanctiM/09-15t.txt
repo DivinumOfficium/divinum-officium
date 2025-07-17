@@ -1,0 +1,15 @@
+[Lectio5]
+@Sancti/09-15t:Lectio4:s/ Thou .*//
+
+[Lectio6]
+@Sancti/09-15t:Lectio4:s/.* (?=Thou)//s
+@Sancti/09-15t:Lectio5:s/ Through thee there.*//
+
+[Lectio7]
+@Sancti/09-15t:Lectio5:s/.* (?=Through thee there)//
+
+[Lectio9]
+@Sancti/09-15t:Lectio7:s/ Wonder .*//
+
+[Lectio10]
+@Sancti/09-15t:Lectio7:s/.* (?=Wonder)//s

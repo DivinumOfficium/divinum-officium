@@ -17,16 +17,31 @@ Doxology=Nat
 [Lectio3]
 @Sancti/08-22t
 
-[Lectio4]
+[Lectio4o]
 Sermo sancti Cyrilli Epíscopi Alexandrini.
 !Homilia contra Nestorium.
-Hilarem video cœtum Sanctorum omnium, qui convenerunt promptis animis, a sancta et Dei Matre Maria semper Virgine convocati. Laus et gloria sit tibi sancta Trinitas, quæ omnes nos ad hanc celebritatem convocasti. Sit étiam tibi sancta Dei Mater laus. Tu enim es pretiosa margarita orbis terrarum: tu lampas inexstinguibilis, corona virginitatis, sceptrum orthodoxæ fidei, templum indissolubile continens eum qui nusquam contineri potest, Mater et Virgo; per quam benedictus, qui venit in nomine Domini, in sanctis Evangeliis nominatur.
+Hilarem video hodie cœtum fidelium omnium, qui convenerunt promptis animis, a sancta et Dei Matre Maria semper Virgine convocati. Laus et gloria sit tibi sancta Trinitas, quod omnes nos ad hanc celebritatem convocaris. Sit étiam tibi sancta Dei Mater laus. Tu enim es pretiosa margarita orbis terrarum: tu lucerna inextincti luminis, corona virginitatis, sceptrum orthodoxæ fidei, templum indissolubile continens eum qui nusquam contineri potest, Mater et Virgo: tu benedicta inter inter mulieres, ejus parens qui benedictus venit in nomine domini.
+
+[Lectio4]
+@:Lectio4o
+(sed rubrica 1888 aut rubrica 1906 dicitur)
+@:Lectio4o:s/hodie cœtum fidelium/cœtum Sanctorum/ s/quod/quæ/ s/convocaris/convocasti/ s/lucerna inextincti luminis/lampas inexstinguibilis/ s/: tu benedicta inter inter mulieres, ejus parens qui benedictus venit in nomine domini/; per quam benedictus, qui venit in nomine Domini, in sanctis Evangeliis nominatur/
+
+[Lectio5o]
+Per te Trinitas sanctificatur: per te crux pretiosa dicitur, et adoratur in toto orbe terrarum. Per te exsultat cælum, lætantur Angeli et Archangeli, fugantur dæmones, et homo ipse ad cælum revocatur. Omnis creatura idolorum errore detenta, conversa est ad notitiam veritatis, et fideles homines ad sanctum baptisma pervenerunt, atque in toto orbe terrarum constructæ sunt ecclesiæ.
 
 [Lectio5]
-Per te Trinitas sanctificatur: per te crux pretiosa celebratur et adoratur in toto orbe terrarum. Per te exsultat cælum, lætantur Angeli et Archangeli, fugantur dæmones, et homo ipse ad cælum revocatur. Per te omnis creatura idolorum errore detenta, conversa est ad agnitionem veritatis, et fideles homines ad sanctum baptisma pervenerunt, atque in toto orbe terrarum constructæ sunt ecclesiæ.
+@:Lectio5o
+(sed rubrica 1888 aut rubrica 1906)
+@:Lectio5o:s/dicitur,/celebratur/ s/Omnis/Per te omnis/ s/notitiam/agnitionem/
+
+[Lectio6o]
+Te adjutrice gentes veniunt ad pœnitentiam. Quid plura? Per te unigenitus Dei Filius vera illa lux effulsit sedentibus in tenebris et umbra mortis. Te Prophetæ prænuntiarunt, te apostoli summis laudibus celebrarut.. Quisnam poterit tuarum laudum præconia explicare, Maria Mater et Virgo? Hanc, fratres dilectissimi, celebremus, ejus Filium Ecclesiæ sponsum immaculatum adorantes: cui honor et gloria in sæcula sæculorum. Amen.
 
 [Lectio6]
-Te adjutrice gentes veniunt ad pœnitentiam. Quid plura? Per te unigenitus Dei Filius vera illa lux effulsit sedentibus in tenebris et umbra mortis. Per te Prophetæ prænuntiarunt, per te Apostoli salutem Gentibus prædicarunt. Quisnam poterit tuarum laudum præconia explicare, Maria Mater et Virgo? Hanc, fratres dilectissimi, celebremus, ejus Filium Ecclesiæ sponsum immaculatum adorantes: cui honor et gloria in sæcula sæculorum. Amen.
+@:Lectio6o
+(sed rubrica 1888 aut rubrica 1906)
+@:Lectio6o:s/Te (?=Prophetæ)/Per te / s/te apostoli summis laudibus celebrarut./per te Apostoli salutem Gentibus prædicarunt/
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Matthǽum.
