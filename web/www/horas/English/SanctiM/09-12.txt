@@ -1,0 +1,11 @@
+[Lectio5]
+@Sancti/09-12:Lectio4:s/ The .*//
+
+[Lectio6]
+@Sancti/09-12:Lectio4:s/.* (?=The)//s
+
+[Lectio10]
+@Sancti/09-12:Lectio8:s/ Even .*//
+
+[Lectio11]
+@Sancti/09-12:Lectio8:s/.* (?=Even)//

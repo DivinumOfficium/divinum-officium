@@ -1,0 +1,28 @@
+@Sancti/09-09bmv
+
+[Rule]
+Psalmi Dominica
+Doxology=Nat
+
+[Ant Matutinum]
+@Commune/C11:Ant MatutinumBMV:1 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@Commune/C11:Ant MatutinumBMV:2 s/;;.*//
+
+[Lectio1]
+@Sancti/09-09bmv:Lectio4
+
+[Lectio2]
+@Sancti/09-09bmv:Lectio5
+
+[Lectio3]
+@Sancti/09-09bmv:Lectio6
+
+[MM Capitulum]
+@CommuneM/C10:MM Capitulum_:1-3
+_
+@Commune/C6:Versum 2

@@ -1,0 +1,29 @@
+@SanctiM/09-08
+
+[Rank]
+@Sancti/09-15t
+
+[Lectio5]
+@Sancti/09-15t:Lectio4o:s/ Tu enim .*//
+
+[Lectio6]
+@Sancti/09-15t:Lectio4o:s/.* (?=Tu enim)//s s/$/~/
+@Sancti/09-15t:Lectio5o:s/ Per te exsultat.*//
+
+[Lectio7]
+@Sancti/09-15t:Lectio5o:s/.* (?=Per te exsultat)//
+
+[Lectio8]
+@Sancti/09-15t:Lectio6o
+
+[Lectio9]
+@Sancti/09-15t:Lectio7:s/ Hæc .*//
+
+[Lectio10]
+@Sancti/09-15t:Lectio7:s/.* (?=Hæc)//s
+
+[Lectio11]
+@Sancti/09-15t:Lectio8
+
+[Lectio12]
+@Sancti/09-15t:Lectio9

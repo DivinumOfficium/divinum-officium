@@ -82,8 +82,8 @@ R. O quam gloriósa est Virgo, quæ cæli Regem génuit!
 @Commune/C11:Lectio6:s/Ave .*//s
 
 [Responsory7]
-@Commune/C11:Responsory6:1-3
-R. Et vidéntes eam fíliæ Sion, beatíssimam prædicavérunt, dicéntes: Unguéntum effúsum nomen tuum.
+@Commune/C11:Responsory6:1-3 s/: \*/: †/
+@Commune/C11:Responsory6:2 s/\*/R./ s/: \*/: †/
 
 [Lectio8]
 @Commune/C11:Lectio6:s/.* Ave /Ave /s

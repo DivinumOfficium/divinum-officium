@@ -1,0 +1,39 @@
+@Sancti/09-12
+
+[Rule]
+12 lectiones
+Ipsa Virgo Virginum
+Psalmi Dominica
+Antiphonas horas
+Doxology=Nat
+BMV
+
+[Lectio5]
+@Sancti/09-12:Lectio4:s/ Ipsa est .*//
+
+[Lectio6]
+@Sancti/09-12:Lectio4:s/.* (?=Ipsa est)//s
+
+[Lectio7]
+@Sancti/09-12:Lectio5
+
+[Responsory7]
+@CommuneM/C11
+
+[Lectio8]
+@Sancti/09-12:Lectio6
+
+[Lectio9]
+@Sancti/09-12:Lectio7
+
+[Responsory9]
+@Sancti/09-12:Responsory7
+
+[Lectio10]
+@Sancti/09-12:Lectio8:s/ Ante .*//
+
+[Lectio11]
+@Sancti/09-12:Lectio8:s/.* (?=Ante)//
+
+[Lectio12]
+@Sancti/09-12:Lectio9

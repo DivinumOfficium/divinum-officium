@@ -1,0 +1,28 @@
+@Sancti/09-12bmv
+
+[Rule]
+Psalmi Dominica
+
+[Ant Matutinum]
+@Commune/C6:Ant Matutinum:5 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@CommuneM/C11:AntMatutinumM:1 s/;;.*//
+
+[Lectio1]
+@Sancti/09-12bmv:Lectio4
+
+[Lectio2]
+@Sancti/09-12bmv:Lectio5
+
+[Lectio3]
+@Sancti/09-12bmv:Lectio6
+
+[MM Capitulum]
+@CommuneM/C10:MM Capitulum_:1-3
+_
+@Commune/C6:Versum 2
+
