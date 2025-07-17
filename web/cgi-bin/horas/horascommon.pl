@@ -876,7 +876,7 @@ sub concurrence {
     || ($cwinner{Rank} =~ /C10/i && $winner{Rank} =~ /C1[01]/i)
 
     # no 1st Vespers of Easter after 1955
-    || ($version =~ /19(?:55|6)|altovadensis/i && $cwinner{Rank} =~ /Dominica Resurrectionis|Patrocinii S. Joseph/i)
+    || ($version =~ /19(?:55|6)/i && $cwinner{Rank} =~ /Dominica Resurrectionis|Patrocinii S. Joseph/i)
 
     # TODO: last condition should be made obsolete and handled via database
     || ($version =~ /19(?:55|6)/
