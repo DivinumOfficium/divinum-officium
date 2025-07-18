@@ -271,10 +271,11 @@ sub oratio {
           $ccind++;
           my $key = ($ic =~ /$sundaystring/i)
             ? (
-              $version !~ /trident(?!.*Altovadensis)/i
-              ? 3000
-              : 7100
-            )    # Sundays are all privilegde commemorations under DA
+              $version !~ /trident/i
+              ? 3000                                  # Sundays are all privilegde commemorations under DA
+              : $version !~ /altovadensis/i ? 7100    # Dom. min.
+              : 6100                                  # Sundays are below MM.maj. commemorations for Altovado
+            )
             : ($ic =~ /$octavestring/i) ? $ccind + 7900
             : $ccind + 9900;
           $cc{$key} = $ic;
@@ -318,7 +319,9 @@ sub oratio {
           if ($version =~ /trident/i && $version !~ /1906/) {
             $key =
                 ($cr[0] =~ /$sundaystring/i || $cwinner =~ /01-05\.txt/)
-              ? ($version =~ /altovadensis/i ? 4900 : 2900)
+              ? $version =~ /altovadensis/i
+                ? 3900    # Sundays are below MM.maj. commemorations for Altovado
+                : 2900    # Dominica min.
               : $cr[2] * 1000;
           } else {
             $key =
@@ -382,10 +385,14 @@ sub oratio {
             }
             if ($ic !~ /^!/) { $ic = "!$ic"; }
             $ccind++;
-            $key =
-                ($ic =~ /$sundaystring/i)
-              ? ($version !~ /Trident(?!.*Altovadensis)/i ? 3000 : 7100)
-              : $ccind + 9900;    # Sundays are all privileged commemorations under DA
+            $key = ($ic =~ /$sundaystring/i)
+              ? (
+                $version !~ /Trident/i
+                ? 3000                                  # Sundays are all privileged commemorations under DA
+                : $version !~ /altovadensis/i ? 7100    # Dom. min.
+                : 6100                                  # Sundays are below MM.maj. commemorations for Altovado
+              )
+              : $ccind + 9900;
             $cc{$key} = $ic;
             setbuild2("Commemorated from Concurrent: $key");
           }
@@ -419,12 +426,17 @@ sub oratio {
           my @cr = split(";;", $c{Rank});
 
           if ($cr[0] =~ /$sundaystring/i || $commemo =~ /01-05\.txt/) {
+
+            # under DA, all Sundays, in 1906, priviliged Sundays, are all privilegded commemorations
+            # for Altovado: Sundays are below MM.maj. commemorations
             $key =
-              ($version !~ /trident(?!.*Altovadensis)/i || ($version =~ /1906/ && $cr[2] > 5))
-              ? 7000
-              : 2900;    # under DA, all Sundays, in 1906, priviliged Sundays, are all privilegded commemorations
+                ($version !~ /trident/i || ($version =~ /1906/ && $cr[2] > 5)) ? 7000
+              : $version =~ /altovadensis/i ? 3900
+              : 2900;
           } else {
-            $key = $cr[2] * 1000;    # rank depending on the type of commemoration to be made
+
+            # rank depending on the type of commemoration to be made
+            $key = $cr[2] * 1000;
           }
           $ccind++;
           $key = 10000 - $key + $ccind;    # reverse order
@@ -490,10 +502,15 @@ sub oratio {
               }
               if ($ic !~ /^!/) { $ic = "!$ic"; }
               $ccind++;
-              $key =
-                  ($ic =~ /$sundaystring/i) ? ($version !~ /trident(?!.*Altovadensis)/i ? 3000 : 7100)
+              $key = ($ic =~ /$sundaystring/i)
+                ? (
+                  $version !~ /trident/i
+                  ? 3000                                  # Sundays are all privilegde commemorations under DA
+                  : $version !~ /altovadensis/i ? 7100    # Dom. min.
+                  : 6100                                  # Sundays are below MM.maj. commemorations for Altovado
+                )
                 : ($ic =~ /$octavestring/i) ? 7900
-                : $ccind + 9900;    # Sundays are all privilegde commemorations under DA
+                : $ccind + 9900;
               $cc{$key} = $ic;
               setbuild2("Commemorated: $key");
             }
