@@ -318,7 +318,7 @@ sub oratio {
           if ($version =~ /trident/i && $version !~ /1906/) {
             $key =
                 ($cr[0] =~ /$sundaystring/i || $cwinner =~ /01-05\.txt/)
-              ? ($version =~ /altovadensis/i ? 4900 : 2900)
+              ? ($version =~ /altovadensis/i ? 3900 : 2900)
               : $cr[2] * 1000;
           } else {
             $key =
@@ -384,7 +384,7 @@ sub oratio {
             $ccind++;
             $key =
                 ($ic =~ /$sundaystring/i)
-              ? ($version !~ /Trident(?!.*Altovadensis)/i ? 3000 : 7100)
+              ? ($version !~ /Trident/i ? 3000 : 7100)
               : $ccind + 9900;    # Sundays are all privileged commemorations under DA
             $cc{$key} = $ic;
             setbuild2("Commemorated from Concurrent: $key");
