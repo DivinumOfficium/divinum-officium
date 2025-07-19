@@ -38,6 +38,54 @@ R. Nuntiávit Maríæ.
 [Lectio11]
 !from tempora
 
+[Lectio1] (mense 4 aut mense 5 aut mense 6 aut mense 7 aut mense 8 aut mense 9 aut mense 10)
+(nisi mense 4 et mense 6) De Canticis canticorum
+1617 only
+(sed mense 4)
+@Sancti/07-02
+(sed mense 5)
+@Sancti/07-02:Lectio3
+(sed mense 6)
+@Sancti/08-18bmv
+(sed mense 7)
+@Sancti/08-18bmv:Lectio3
+(sed mense 8)
+@:Lectio1_8
+(sed mense 9)
+@Sancti/08-19bmv:Lectio2
+(sed mense 10)
+@Sancti/08-21bmv:Lectio2:1-5 s/-13/-9/
+
+[Lectio2] (mense 4 aut mense 5 aut mense 6 aut mense 7 aut mense 8 aut mense 9 aut mense 10)
+__1617 only__
+(sed mense 4)
+@Sancti/07-02
+(sed mense 5)
+@Sancti/07-22:Lectio1:!1
+(sed mense 6)
+@Sancti/08-18bmv
+(sed mense 7)
+@:Lectio2_7
+(sed mense 8)
+@Sancti/08-19bmv:Lectio1:!1
+(sed mense 9)
+@Sancti/08-19bmv:Lectio3
+(sed mense 10)
+@Sancti/08-21bmv:Lectio2:!2-5 s/6-/10-/
+
+[Lectio2_7]
+!Cant 5:1-3
+1 Véniat diléctus meus in hortum suum, et cómedat fructum pomórum suórum. Veni in hortum meum soror mea sponsa, méssui myrrham meam cum aromátibus meis: comédi favum cum melle meo, bibi vinum meum cum lacte meo: comédite amíci, et bíbite, et inebriámini caríssimi.
+2 Ego dórmio, et cor meum vígilat. Vox dilécti mei pulsántis: Aperi mihi soror mea, amíca mea, colúmba mea, immaculáta mea: quia caput meum plenum est rore, et cincínni mei guttis nóctium.
+3 Exspoliávi me túnica mea, quómodo índuar illa? lavi pedes meos, quómodo inquinábo illos?
+
+[Lectio1_8]
+!Cant 5:4-7
+4 Diléctus meus misit manum suam per forámen, et venter meus intrémuit ad tactum ejus.
+5 Surréxi ut aperírem dilécto meo: manus meæ stillavérunt myrrham, et dígiti mei pleni myrrha probatíssima.
+6 Péssulum óstii mei apérui dilécto meo, at ille declináverat, atque transíerat. Anima mea liquefácta est, ut locútus est: quæsívi, et non invéni illum: vocávi, et non respóndit mihi.
+7 Invenérunt me custódes qui circúmeunt civitátem: percussérunt me, et vulneravérunt me. Tulérunt pállium meum mihi custódes murórum.
+
 [Lectio1] (rubrica cisterciensis)
 @Sancti/07-02:Lectio1:s/1-7/1-5/ s/6.*//s
 
