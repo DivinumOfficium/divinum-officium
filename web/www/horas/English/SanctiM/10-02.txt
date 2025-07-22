@@ -1,0 +1,19 @@
+[Lectio5]
+@Sancti/10-02:Lectio4:s/ The .*//
+
+[Lectio6]
+@Sancti/10-02:Lectio4:s/.* (?=The)//s
+
+[Lectio9]
+@Sancti/10-02:Lectio7:s/ Us.*//
+
+[Lectio10]
+@Sancti/10-02:Lectio7:s/.* (?=Us)//s s/$/~/
+@Sancti/10-02:Lectio8:s/ And therefore .*//
+
+[Lectio11]
+@Sancti/10-02:Lectio8:s/.* (?=And therefore)// s/$/~/
+@Sancti/10-02:Lectio9:s/ From .*//
+
+[Lectio12]
+@Sancti/10-02:Lectio9:s/.* (?=From)//

@@ -1,5 +1,104 @@
 @Sancti/10-02
 
+[Rule] (rubrica 1930)
+12 lectiones
+
+[AntMatutinumM]
+Stetit Angelus * juxta aram templi, habens thuríbulum áureum in manu sua.;;95
+Mitte, Dómine, * Angelum bonum ante nos in timóre bráchii tui, ut métuant qui odérunt nos.;;97
+Angelus meus * vobíscum est, dicit Dóminus: ipse autem exquíret ánimas vestras.;;98
+
+[Ant Matutinum 3N]
+Ecce ego * mitto Angelum meum, qui præparábit viam meam ante fáciem tuam.
+
+[Ant Matutinum]
+@Sancti/10-02::1-3
+@Sancti/10-02::6-8
+@Sancti/10-02::4-5
+@Sancti/10-02::11 s/95/89/
+@:AntMatutinumM:1
+@Sancti/10-02::12
+@:AntMatutinumM:2-3
+@Sancti/10-02::13
+@Sancti/10-02::9-10
+;;266;267;268
+@Sancti/10-02::14-15
+
+[Lectio1]
+@Sancti/10-02:Lectio1:
+
+[Lectio2]
+@Sancti/10-02:Lectio2
+
+[Lectio3]
+!Zach 1:13-16
+13 Et respóndit Dóminus ángelo qui loquebátur in me verba bona, verba consolatória.
+14 Et dixit ad me ángelus qui loquebátur in me: Clama, dicens: Hæc dicit Dóminus exercítuum: Zelátus sum Jerúsalem et Sion zelo magno.
+15 Et ira magna ego iráscor super gentes opuléntas, quia ego irátus sum parum, ipsi vero adiuvérunt in malum.
+16 Proptérea hæc dicit Dóminus: Revértar ad Jerúsalem in misericórdiis, et domus mea ædificábitur in ea, ait Dóminus exercítuum, et perpendículum extendétur super Jerúsalem.
+
+[Lectio4]
+@Sancti/10-02:Lectio3
+
+[Responsory4]
+R. Vidit Jacob † scalam stantem super terram, et cacúmen illíus tangens cælum, Ángelosque Dei ascendéntes per eam Dóminum inníxum scalæ, dicéntem sibi:
+* Ego sum Dóminus Deus tuus et protéctor tuus quóniam perréxeris.
+V. Ivérunt Jacob óbviam Angeli Dei, quos, cum vidísset. ait: Castra Dei sunt hæc, per quæ auxiliátor mihi Deus, dicens.
+R. Ego sum Dóminus Deus tuus et protéctor tuus quóniam perréxeris.
+
+[Lectio5]
+@Sancti/10-02:Lectio4:s/ Summa .*//
+
+[Responsory5]
+@Sancti/10-02:Responsory4
+
+[Lectio6]
+@Sancti/10-02:Lectio4:s/.* (?=Summa)//s
+
+[Responsory6]
+@Sancti/10-02:Responsory5
+
+[Lectio7]
+@Sancti/10-02:Lectio5
+
+[Responsory7]
+@Sancti/10-02:Responsory6
+
+[Lectio8]
+@Sancti/10-02:Lectio6
+
+[Responsory8]
+@Sancti/05-08:Responsory2
+
+[Lectio9]
+@Sancti/10-02:Lectio7:s/ Reverténdum.*//
+
+[Responsory9]
+@Sancti/10-02:Responsory7
+
+[Lectio10]
+@Sancti/10-02:Lectio7:s/.* (?=Reverténdum)//s s/$/~/
+@Sancti/10-02:Lectio8:s/ Ideo .*//
+
+[Responsory10]
+@Sancti/10-02:Responsory8
+
+[Lectio11]
+@Sancti/10-02:Lectio8:s/.* (?=Ideo)// s/$/~/
+@Sancti/10-02:Lectio9:s/ Ergo .*//
+
+[Responsory11]
+R. Si audíeris † vocem meam, et féceris ómnia quæ loquor, inimícus ero inimícis tuis, et affligéntes te afflígam.
+* Præcedétque te Angelus meus.
+V. Et introdúcet te in terram, quam promísi pátribus tuis.
+R. Præcedétque te Angelus meus.
+
+[Lectio12]
+@Sancti/10-02:Lectio9:s/.* (?=Ergo et)//
+
+[Responsory12]
+@Sancti/05-08:Responsory3
+
 [Responsory Vespera]
 @Sancti/05-08:Responsory Sexta
 
