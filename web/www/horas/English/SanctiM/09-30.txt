@@ -1,0 +1,24 @@
+[Lectio5]
+@Sancti/09-30:Lectio4:s/ Then,.*//
+
+[Lectio6]
+@Sancti/09-30:Lectio4:s/.* (?=Then)// s/$/~/
+@Sancti/09-30:Lectio5:s/ He was .*//
+
+[Lectio7]
+@Sancti/09-30:Lectio5:s/.* (?=He was)//
+
+[Lectio9]
+@Sancti/09-30:Lectio7:s/ In .*//
+
+[Lectio10]
+@Sancti/09-30:Lectio7:s/.* (?=In)//s
+@Sancti/09-30:Lectio8:s/ Here .*//
+
+[Lectio11]
+@Sancti/09-30:Lectio8:s/.* (?=Here)// s/$/~/
+@Sancti/09-30:Lectio9:s/ Till .*//
+
+[Lectio12]
+@Sancti/09-30:Lectio9:s/.* (?=Till)// s/$/~/
+Quod autem sequitur: Jota unum aut unus apex non praeteribit a lege, donec omnia fiant; ex figura litterae ostenditur,quod etiam quae minima putantur in lege, sacramentis spiritualibus plena sint, et omnia recapitulentur in Evangelio.
