@@ -12,7 +12,7 @@ RUN echo "  \"commit\": \"`git rev-parse HEAD`\"," >> /build/buildinfo
 RUN echo "  \"branch\": \"`git rev-parse --abbrev-ref HEAD`\"" >> /build/buildinfo
 RUN echo "}" >> /build/buildinfo
 
-# Final container (copies in /out/buildinfo when done)
+# Final container
 FROM public.ecr.aws/docker/library/perl:5.42-slim AS final
 
 # Set envs
