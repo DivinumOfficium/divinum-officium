@@ -1,0 +1,18 @@
+@Sancti/07-26
+
+[Rule]
+12 lectiones
+
+[Lectio5]
+@Sancti/07-26:Lectio4:s/ Congáudeat.*//
+
+[Lectio6]
+@Sancti/07-26:Lectio4:s/.* (?=Congáudeat)//s s/$/~/
+@Sancti/07-26:Lectio5:s/ Cónsonam.*//
+
+[Lectio7]
+@Sancti/07-26:Lectio5:s/.* (?=Cónsonam)// s/$/~/
+@Sancti/07-26:Lectio6:s/ Nos .*//
+
+[Lectio8]
+@Sancti/07-26:Lectio6:s/.* (?=Nos)//

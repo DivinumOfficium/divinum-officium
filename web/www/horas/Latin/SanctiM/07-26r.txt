@@ -6,6 +6,15 @@ Ss. Joachim et Annæ Parentum B.M.V.
 (sed rubrica 1930)
 ;;Duplex II. classis;;5;;ex C3
 
+[Rule] (rubrica 1930)
+12 lectiones
+
+[Ant 1]
+Benedictiónem * ómnium géntium dedit illi Dóminus, et testaméntum suum confirmávit super cápita eórum.
+
+[Versum 1]
+@Commune/C3
+
 [Ant Vespera]
 @:Ant Laudes
 
@@ -16,7 +25,7 @@ De cujus puerpério,
 Salus procéssit hóminis.
 _
 Hæc prolem devotíssime
-Petiit a Patre lúminum,
+Pétiit a Patre lúminum,
 Et méruit digníssime
 Maríam decus vírginum.
 _
@@ -41,7 +50,7 @@ Deus, qui sanctos Jóachim et Annam glorióse Matris Unigéniti tui paréntes el
 $Per eumdem
 
 [Invit]
-Christum regem, Fílium David, * Venite adoremus.
+Christum regem, Fílium David, * Veníte adorémus.
 
 [Hymnus Matutinum]
 Gaude, mater Anna,
@@ -70,16 +79,163 @@ Spirítui Sancto
 Tribus honor unus.
 Amen.
 
+[Ant Matutinum 3N]
+@Tempora/Adv3-1:Ant 2
+
+[AntMatutinumM]
+Beáti, * quóniam confísi sunt Dómino.;;2
+Glóriam * et magnum decórem imposuísti super eos.;;20
+Recordátus est * Dóminus misericórdiæ suæ, et veritátis suæ dómui Israël.;;97
+
+[Ant Matutinum]
+@Commune/C3::1
+@:AntMatutinumM:1
+@Commune/C2::4 s/sanctum/Sanctos/ s/suum/suos/
+@Commune/C2::5-7 s/eum/eos/g
+@Commune/C2::8 s/Habitábit/Habitábunt/
+@:AntMatutinumM:2
+@Sancti/11-01::5
+@Sancti/01-01::6
+@Sancti/08-06::12
+@:AntMatutinumM:3
+;;249;250;251
+
+[Lectio1]
+!Jer 33:12-14
+12 Hæc dicit Dóminus exercítuum: Adhuc erit in loco isto desérto, absque hómine et absque juménto, et in cunctis civitátibus ejus, habitáculum pastórum accubántium gregum.
+13 In civitátibus montuósis, et in civitátibus campéstribus, et in civitátibus quæ ad austrum sunt, et in terra Béniamin, et in circúitu Jerúsalem, et in civitátibus Juda, adhuc transíbunt greges ad manum numerántis, ait Dóminus.
+14 Ecce dies véniunt, dicit Dóminus, et suscitábo verbum bonum quod locútus sum ad domum Israël et ad domum Juda.
+
 [Responsory1]
-R. O clara stirps Davídica, micans quasi jubar solis
+R. Adhuc † módicum et con summábitur indignátio:
+* Et in illa die auferétur onus de húmero nostro, et jugum de collo nostro.
+V. Vídeant páuperes et læténtur: quǽrite Dóminum, et vivet ánima vestra.
+R. Et in illa die auferétur onus de húmero nostro, et jugum de collo nostro.
+
+[Lectio2]
+!Jer 33:15-17
+15 In diébus illis et in témpore illo germináre fáciam David germen justítiæ, et fáciet judícium et justítiam in terra.
+16 In diébus illis salvábitur Juda, et Jerúsalem habitábit confidénter: et hoc est nomen quod vocábunt eum: Dóminus justus noster.
+17 Quia hæc dicit Dóminus: Non interíbit de David vir qui sédeat super thronum domus Israël.
+
+[Responsory2]
+R. Ecce † radix Jesse ascéndet in salútem populórum, ipsum Gentes deprecabúntur:
+* Et erit nomen ejus gloriósum.
+V. Deus a Líbano véniet, et Sanctus de monte umbróso et condénso.
+R. Et erit nomen ejus gloriósum.
+
+[Lectio3]
+!Jer 33:19-22
+19 Et factum est verbum Dómini ad Jeremíam, dicens:
+20 Hæc dicit Dóminus: Si írritum potest fíeri pactum meum cum die, et pactum meum cum nocte, ut non sit dies et nox in témpore suo,
+21 et pactum meum írritum esse póterit cum David servo meo, ut non sit ex eo fílius qui regnet in throno ejus, et Levítæ et sacerdótes minístri mei.
+22 Sícuti enumerári non possunt stellæ cæli, et metíri aréna maris, sic multiplicábo semen David servi mei, et Levítas minístros meos.
+
+[Responsory3]
+R. Quare tardas, † Dómine? veni, et líbera pópulum tuum!
+* Te enim exspéctat omnis Israël.
+V. Veni, Dómine, et noli tardáre, reláxa facínora plebi tuæ.
+R. Te enim exspéctat omnis Israël.
+
+[Lectio4]
+!Jer 33:23-26
+23 Et factum est verbum Dómini ad Jeremíam, dicens:
+24 Numquid non vidísti quid pópulus hic locútus sit, dicens: Duæ cognatiónes quas elégerat Dóminus abiéctæ sunt: et pópulum meum despexérunt, eo quod non sit ultra gens coram eis?
+25 Hæc dicit Dóminus: Si pactum meum inter diem et noctem, et leges cælo et terræ non pósui:
+26 équidem et semen Jacob et David servi mei proíciam, ut non assúmam de sémine ejus príncipes séminis , Isaac, et Jacob: redúcam enim conversiónem eórum, et miserébor eis.
+
+[Responsory4]
+R. O clara † stirps Davídica, micans quasi jubar solis
 * Ex qua prodiérunt Jóachim et Anna, mérito fulgéntes præcípuo.
 V. Nóbilis vere dignáque progénies, univérso mundo valde gratiósa.
 R. Ex qua prodiérunt Jóachim et Anna, mérito fulgéntes præcípuo.
 
-[Lectio4]
-Sermo sancti Leónis, Papæ
-!#
-Semper quidem, dilectíssimi, divérsis modis multísque mensúris humáno géneri bónitas divína consúluit, et plúrima providéntiæ suæ múnera ómnibus retro sǽculis cleménter impértiit; sed in novíssimis tempóribus omnem abundántiam sólitæ benignitátis excéssit, quando in Christo, ipsa ad peccatóres misericórdia, ipsa ad errántes véritas, ipsa ad mórtuos vita descéndit: ut Verbum illud coætérnum et coæquále Genitóri in unitátem Deitátis suæ natúram nostræ humilitátis assúmeret, et Deus de Deo natus, idem étiam homo de hómine nascerétur.  Hinc idem Dóminus per Isaíam: Ecce virgo, inquit, in útero accípiet, et páriet fílium, et vocábitur nomen ejus Emmánuel: quod interpretátur, Nobíscum Deus. Et íterum: Exiet virga de radíce Jesse, et flos de radíce ejus ascéndet. In qua virga non dúbie beáta Virgo María prædícta est, quæ de Jesse et David stirpe progénita, et Spíritu Sancto fecundáta, novum florem carnis humánæ, útero quidem matérno, sed partu est eníxa virgíneo.
+[Lectio5]
+Sermo sancti Joánnis Damascéni
+!Orátio 1 in Dormitionem B.M.V.
+Joáchim et Anna paréntes fuérunt Vírginis beatíssimæ. Cum Joáchim a Dómino Deo tamquam ovis deducerétur, nullis eórum quæ óptima sunt, carébat.  vero nemo me putet dícere, quæ plúrimis placent ac quibus avidiórum hóminum ánimus perpétuo solet inhiáre, quæ tamen natúra sua neque durabília sunt, neque meliórem præstáre norunt hóminem,a quo tenéntur, licet eídem áffluant quavis abundántia. Tália reperiúntur esse hujus mundi voluptátes, quæ sane vim firmam stabilémque habére néqueunt, sed raptim décidunt atque de more vix non eádem, qua nascúntur hora, étiam dilabúntur.
+
+[Responsory5]
+R. O felix Jóachim, † genuísti prolem, quæ paritúra erat mundi Redemptórem :
+* Gaude, et pro nobis preces pórrigas Regínæ cælórum.
+V. Felix Pater felicióris fíliæ, quæ Unigénitum Dei de se prótulit incarnátum.
+R. Gaude, et pro nobis preces pórrigas Regínæ cælórum.
+
+[Lectio6]
+Absint hæc a nobis; mínime convénit nos istis movéri, neque talis est pars timéntium Dóminum. Ea demum profécto bona sunt, quæ vere ab homínibus íntegri consílii quærúntur et adamántur, quæ in ætérnum manent, atque simul divínam majestátem obléctant, et fructum matúrum suis generábunt possessóribus. Cujúsmodi bona, inquam, appárent virtútes, quæ fructum in témpore suo, id est, vitam ætérnam in sǽculo futúro dabunt ómnibus, qui hic eos digne colúerint, in eásque pro víribus óperam suam contúlerint. Labor quippe præcédit, sequétur felícitas ætérna.
+
+[Responsory6]
+R. Beáti, † et multo honóre digni, quorum pórtio Deus est:
+* Quibus a princípio preparátum est regnum, quorum ánimæ in manu Dei sunt.
+V. Clamavérunt justi, et Dóminus exáudi-vit eos: et ex ómnibus tribulatiónibus eórum liberávit eos.
+R. Quibus a princípio preparátum est regnum, quorum ánimæ in manu Dei sunt.
+
+[Lectio7]
+Jóachim cogitatiónes suas intus páscere solébat in loco páscuæ, id est, in contemplatióne sacrórum eloquiórum commorabátur. Refovébat ánimam suam super aquam reflectiónis grátiæ divínæ, atque hac se geréndi norma mentem suam ab illícitis rebus plane declínans, ad sémitas justítiæ dirigebát. Anna vero conjux non minus morum, quam matrimónii vínculo, cum ipso copulabátur.
+
+[Responsory7]
+R. Venerábiles † ac Deo digni Jóachim et Anna beátam Maríam genuérunt,
+* Et magnas sine intermissióne Dómino grátias reddébant.
+V. Gloriósi paréntes múnere supérno ditáti sunt: Christi Salvatóris invioláta Genitríce.
+R. Et magnas sine intermissióne Dómino grátias reddébant.
+
+[Lectio8]
+!Ex libro 4 de fide orthod., c. 15.
+Jóachim ergo venerándam illam et summis laúdibus dignam mulíerem Annam matrimónio sibi conjúnxerat. Verum, quemádmodum prisca illa Anna, cum sterilitátis morbo laboráret, facto voto, per promissiónem Samuélem génuit, hæc símili modo per obsecratiónem et divínam promissiónem accépit Deíparam. Quare nullum in maternitátis honóre detriméntum pátiens, Anna nulli ex claris matrónis impar vidébitur.  grátia, nam hoc sonat Annæ vocábulum, Dóminam parit: sic enim Maríæ nomen explanátur; vere nempe ómnium rerum conditárum Dómina facta est, cum Conditóris mater éxstitit.
+
+R. Nóbilis † et mire salutáris, venerábilis Anna, fructus tuus est Virgo María:
+* Mater Dómini, solámen mundi, umbráculum deféssis, ac spes miserórum.
+V. Gaude et lætáre, beáta parens, nam proles tua est.
+R. Mater Dómini, solámen mundi, umbráculum deféssis, ac spes miserórum.
+
+[Lectio9]
+@Sancti/09-08:Lectio7:1-4
+Homilía sancti Leónis Papæ
+!Sermo XXIV; de Nativ. Dómini 4; cap. 1 et 2
+Semper quidem, dilectíssimi, divérsis modis multísque mensúris humáno géneri bónitas divína consúluit, et plúrima providéntiæ suæ múnera ómnibus retro sǽculis cleménter impértiit; sed in novíssimis tempóribus omnem abundántiam sólitæ benignitátis excéssit, quando in Christo, ipsa ad peccatóres misericórdia, ipsa ad errántes véritas, ipsa ad mórtuos vita descéndit: ut Verbum illud coætérnum et coæquále Genitóri in unitátem Deitátis suæ natúram nostræ humilitátis assúmeret, et Deus de Deo natus, idem étiam homo de hómine nascerétur.
+
+[Responsory9]
+R. Dispósui † testaméntum eléctis meis, jurávi David, servo meo:
+* Usque in ætérnum præparábo semen tuum.
+V. Ædificábo in generatiónem et generatiónem sedem tuam.
+R. Usque in ætérnum præparábo semen tuum.
+
+[Lectio10]
+Promíssum quidem hoc a cons stitutióne mundi, et multis significatiónibus rerum atque verbórum semper fúerat prophetátum; sed quantam hóminum portiónem figúræ illæ ac mystéria obumbráta salvárent, nisi longa et occúlta promíssa advéntu suo Christus impléret! Et quod tunc paucis credéntibus prófuit faciéndum, innúmeris jam fidélibus prodésset efféctum. Jam ergo nos non signis neque imagínibus ad fidem dedúcimur, sed evangélica história confirmáti, quod factum crédimus, adorámus; accedéntibus ad eruditiónem nostram prophéticis instruméntis, ut nullo modo habeámus ambíguum, quod tantis oráculis scimus esse prædíctum.
+
+[Responsory10]
+R. Exórtum est † in ténebris lumen rectis corde:
+* Miséricors, et miserátor, et justus Dóminus.
+V. Rectam fecit viam justórum, et præparávit iter Sanctórum.
+R. Miséricors, et miserátor, et justus Dóminus.
+
+[Lectio11]
+Tinc enim est, quod Dóminus Abrahæ ait: In sémine tuo benedicéntur omnes gentes. Hinc David promissiónem Dei prophético spíritu canit, dicens: Jurávit Dóminus David veritátem, et non frustrábitur eam: De fructu ventris tui ponam super sedem tuam. Hinc idem Dóminus per Isaíam: Ecce virgo, inquit, in útero accípiet, et páriet fílium, et vocábitur nomen ejus Emmánuel: quod interpretátur, Nobíscum Deus. Et íterum: Exiet virga de radíce Jesse, et flos de radíce ejus ascéndet. In qua virga non dúbie beáta Virgo María prædícta est, quæ de Jesse et David stirpe progénita, et Spíritu Sancto fecundáta, novum florem carnis humánæ, útero quidem matérno, sed partu est eníxa virgíneo.
+
+[Responsory11]
+R. O quam † dulcis est píestas Dómini, quæ venerábiles Jósachim et Annam ex præsénti ærúmna in cæli transvéxit cúriam,
+* Ubi cum sacra Vírgine María sine fine Deum colláudant.
+V. Suscípite, beáti digníque Deo, precum libámina, qui in cæli glóriam estis transláti.
+R. Ubi cum sacra Vírgine María sine fine Deum colláudant.
+
+[Lectio12]
+Exsúltent ergo justi in Domi no, et in laudem Dei corda credéntium, et mirabília ejus confiteántur fílii hóminum: quóniam in hoc præcípue Dei ópere humílitas nostra cognóscit, quanti eam suus cónditor æstimárit. Qui cum orígini humánæ multum déderit, quod nos ad imáginem suam fecit, reparatióni nostræ longe ámplius tríbuit, cum servíli formæ ipse se Dóminus coaptávit. Quamvis enim ex una eadémque pietáte sit, quidquid creatúræ Creátor impéndit, minus tamen mirum est, hóminem ad divína profícere, quam Deum ad humána descéndere.
+
+[Responsory12]
+R. In circúitu tuo, † Dómine, lumen est, quod numquam defíciet, ubi constituísti lucidíssimas mansiónes
+* Ibi requiéscunt Sanctórum ánimæ.
+V. Magnus Dóminus et laudábilis nimis, in civitáte Dei nostri, in monte sancto ejus.
+R. Ibi requiéscunt Sanctórum ánimæ.
+
+[Evangelium]
+@Sancti/09-08
+
+[Lectio4] (rubrica 1963)
+@:Lectio9:2-4 s/Homilía/Sermo/ s/$/~/
+@:Lectio11:s/.* (?=Hinc)//
+
+[Responsory1] (rubrica 1963)
+@:Responsory4
 
 [MM Capitulum]
 @:Capitulum Sexta
@@ -87,15 +243,15 @@ _
 @Commune/C3:Nocturn 2 Versum
 
 [Ant Laudes]
-Nomen sempitérnum * dabo Sanctis meis dicit Dóminus gáudium et lætítiam obtinébunt in ætérnum.
-Justi confitebúntur * nómini tuo, et habitábunt recti cum vultu tuo.
-Dabo Sanctis meis * locum nominátum in regno Patris mei, dicit Dóminus.
+Nomen sempitérnum * dabo Sanctis meis dicit Dóminus, † gáudium et lætítiam obtinébunt in ætérnum.
+Justi * confitebúntur nómini tuo, † et habitábunt recti cum vultu tuo.
+Dabo * Sanctis meis locum nominátum in regno Patris mei, dicit Dóminus.
 Sancti spíritus * et ánimæ justórum, hymnum dícite Deo, allelúja.
-Sapiéntiam * Sanctórum narrant pópuli, et laudes eórum pronúntiat omnis ecclésia.
+Sapiéntiam * Sanctórum narrant pópuli, † et laudes eórum pronúntiat omnis ecclésia.
 
 [Capitulum Laudes]
 !Isa 56:1
-v. Hæc dicit Dóminus: Custodíte judícium, et fácite justítiam, quia juxta est salus mea ut véniat, et justítia mea ut revelétur.
+v. Hæc dicit Dóminus: Custodíte judícium, et fácite justítiam: † quia juxta est salus mea ut véniat, * et justítia mea ut revelétur.
 $Deo gratias
 
 [Hymnus Laudes]
@@ -125,12 +281,12 @@ Ego sum * Deus patrum vestrórum, dicit Dóminus: videns vidi afflictiónem póp
 
 [Capitulum Sexta]
 !Isa 56:7
-v. Addúcam eos in montem sanctum meum, et lætificábo eos in domo oratiónis meæ: holocáusta eórum et víctimæ eórum placébunt mihi super altári meo.
+v. Addúcam eos in montem sanctum meum, et lætificábo eos in domo oratiónis meæ: † holocáusta eórum et víctimæ eórum * placébunt mihi super altári meo.
 $Deo gratias
 
 [Capitulum Nona]
 !Eccl 2:19
-v. Qui timent Dóminum inquírent quæ beneplácita sunt ei, et qui díligunt eum replebúntur lege ipsíus.
+v. Qui timent Dóminum inquírent quæ beneplácita sunt ei, † et qui díligunt eum, * replebúntur lege ipsíus.
 $Deo gratias
 
 [Versum 3]
@@ -138,3 +294,4 @@ $Deo gratias
 
 [Ant 3]
 Inclyta stirps Jesse * virgam prodúxit hmœ́nam de qua procéssit flos miro plenus odóre.
+
