@@ -1,0 +1,31 @@
+[Officium]
+Secunda die infra Octavam Ss. Apostolorum Petri et Pauli
+
+[Rank]
+;;Semiduplex;;2;;vide C1
+
+[Rule]
+vide C1;
+9 lectiones
+no prima vespera
+
+[Versum 1]
+@Commune/C1:Nocturn 2 Versum
+
+[Ant 1]
+@Sancti/07-03oct
+
+[Oratio]
+@Sancti/06-29
+
+[Versum 2]
+@Commune/C1:Versum 1
+
+[Ant 2]
+@Sancti/07-03oct
+
+[Ant 1] (rubrica cisterciensis)
+@Sancti/07-03oct:Ant 2
+
+[Ant 2] (rubrica cisterciensis)
+@Sancti/07-03oct:Ant 1
