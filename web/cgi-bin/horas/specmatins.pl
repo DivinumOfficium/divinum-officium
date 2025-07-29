@@ -800,6 +800,10 @@ sub lectio : ScriptFunc {
     && ($version !~ /trident/i || $rank < 5)
   ) {                                                   # but not in Tridentinum Duplex II. vel I. classis
     %w = (columnsel($lang)) ? %scriptura : %scriptura2;
+
+    my $infile = initiarule($month, $day, $year);
+    if ($infile && $winner !~ /C12/) { %w = resolveitable(\%w, $infile, $lang); }
+
     $w = $w{"Lectio$num"};
 
     if ($version =~ /monastic/i && $rule =~ /12 lectiones/i && ($version !~ /1963/ || $rule =~ /Lectio1 tempora/i)) {

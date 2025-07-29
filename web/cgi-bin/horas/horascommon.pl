@@ -522,7 +522,7 @@ sub occurrence {
       my %scrip = %{officestring('Latin', $tname)};
 
       if (
-          !exists($saint{"Lectio1"})
+           !(exists($saint{"Lectio1"}) && ($saint{Rule} !~ /Lectio1 Quad/i || $dayname[0] =~ /Quad(\d|p3\-[3456])/i))
         && exists($scrip{Lectio1})
         && $scrip{Lectio1} !~ /evangelii/i
         && ( $saint{Rank} !~ /\;\;ex /
